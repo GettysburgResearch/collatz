@@ -1,0 +1,65 @@
+13944 EXIT configurations
+
+== landing cycles of exit templates ==
+   10512  cycle through 5/7  (p=4, a=2, subcritical/positive)
+    1664  cycle through 1  (p=2, a=1, subcritical/positive)
+     640  cycle through -1  (p=1, a=1, SUPERcritical/NEGATIVE)
+     600  cycle through -136  (p=11, a=7, SUPERcritical/NEGATIVE)
+     528  cycle through -10  (p=3, a=2, SUPERcritical/NEGATIVE)
+
+== negative landings: 1768 ==
+  seed A 7^(k+0) #  exits A 7^(k+0) #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 1 #  exits A 7^(k+0) 1 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 2 #  exits A 7^(k+0) 2 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 3 #  exits A 7^(k+0) 3 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 4 #  exits A 7^(k+0) 4 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 5 #  exits A 7^(k+0) 5 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 6 #  exits A 7^(k+0) 6 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 7^(k+0) 7 #  exits A 7^(k+0) 7 #
+      template rho = -13, lands {'tau': 4, 'odd_trans': 2, 'cycle': (Fraction(-10, 1), Fraction(-5, 1), Fraction(-7, 1)), 'p': 3, 'a': 2, 'neg': True}
+  seed A 0 7^(k+0) #  exits A 7 6 7^(k-2) 0 1 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 1 #  exits A 7 6 7^(k-2) 1 2 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 2 #  exits A 7 6 7^(k-2) 2 3 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 3 #  exits A 7 6 7^(k-2) 3 4 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 4 #  exits A 7 6 7^(k-2) 4 5 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 5 #  exits A 7 6 7^(k-2) 5 6 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 6 #  exits A 7 6 7^(k-2) 6 7 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 0 7^(k+0) 7 #  exits A 7 6 7^(k-2) 7 0 1 #
+      template rho = -77, lands {'tau': 11, 'odd_trans': 3, 'cycle': (Fraction(-1, 1),), 'p': 1, 'a': 1, 'neg': True}
+  seed A 1 7^(k+0) #  exits A 1 7^(k+0) #
+      template rho = -61, lands {'tau': 0, 'odd_trans': 0, 'cycle': (Fraction(-136, 1), Fraction(-68, 1), Fraction(-34, 1), Fraction(-17, 1), Fraction(-25, 1), Fraction(-37, 1), Fraction(-55, 1), Fraction(-82, 1), Fraction(-41, 1), Fraction(-61, 1), Fraction(-91, 1)), 'p': 11, 'a': 7, 'neg': True}
+  seed A 1 7^(k+0) 1 #  exits A 1 7^(k+0) 1 #
+      template rho = -61, lands {'tau': 0, 'odd_trans': 0, 'cycle': (Fraction(-136, 1), Fraction(-68, 1), Fraction(-34, 1), Fraction(-17, 1), Fraction(-25, 1), Fraction(-37, 1), Fraction(-55, 1), Fraction(-82, 1), Fraction(-41, 1), Fraction(-61, 1), Fraction(-91, 1)), 'p': 11, 'a': 7, 'neg': True}
+  seed A 1 7^(k+0) 2 #  exits A 1 7^(k+0) 2 #
+      template rho = -61, lands {'tau': 0, 'odd_trans': 0, 'cycle': (Fraction(-136, 1), Fraction(-68, 1), Fraction(-34, 1), Fraction(-17, 1), Fraction(-25, 1), Fraction(-37, 1), Fraction(-55, 1), Fraction(-82, 1), Fraction(-41, 1), Fraction(-61, 1), Fraction(-91, 1)), 'p': 11, 'a': 7, 'neg': True}
+  seed A 1 7^(k+0) 3 #  exits A 1 7^(k+0) 3 #
+      template rho = -61, lands {'tau': 0, 'odd_trans': 0, 'cycle': (Fraction(-136, 1), Fraction(-68, 1), Fraction(-34, 1), Fraction(-17, 1), Fraction(-25, 1), Fraction(-37, 1), Fraction(-55, 1), Fraction(-82, 1), Fraction(-41, 1), Fraction(-61, 1), Fraction(-91, 1)), 'p': 11, 'a': 7, 'neg': True}
+
+== best composite (seed -> exit -> landing) densities ==
+   (need > log_3 2 = 0.630929...; in-system part alone is 2/3)
+    1/  1 = 1.00000 (SUPER)  B 6 7^(k+0) # -> rho=-23 -> cycle at -136 (cycle density 7/11)
+    3/  4 = 0.75000 (SUPER)  A 4 3^(k+0) # -> rho=-3/7 -> cycle at 5/7 (cycle density 2/4)
+    3/  4 = 0.75000 (SUPER)  A 6 7^(k+0) # -> rho=-23 -> cycle at -136 (cycle density 7/11)
+    2/  3 = 0.66667 (SUPER)  A 3 2^(k+0) # -> rho=10/7 -> cycle at 5/7 (cycle density 2/4)
+    6/  9 = 0.66667 (SUPER)  A 3 7^(k+0) # -> rho=-61 -> cycle at -136 (cycle density 7/11)
+    4/  6 = 0.66667 (SUPER)  B 2 1^(k+0) # -> rho=10/7 -> cycle at 5/7 (cycle density 2/4)
+    2/  3 = 0.66667 (SUPER)  B 2 7^(k+0) # -> rho=-61 -> cycle at -136 (cycle density 7/11)
+    4/  6 = 0.66667 (SUPER)  B 5 7^(k+0) # -> rho=-37 -> cycle at -136 (cycle density 7/11)
+    2/  3 = 0.66667 (SUPER)  C 0 7^(k+0) # -> rho=-82 -> cycle at -136 (cycle density 7/11)
+    4/  6 = 0.66667 (SUPER)  C 3 7^(k+0) # -> rho=-61 -> cycle at -136 (cycle density 7/11)
+    2/  3 = 0.66667 (SUPER)  C 5 7^(k+0) # -> rho=-37 -> cycle at -136 (cycle density 7/11)
+    5/  8 = 0.62500 (sub)  C 1 7^(k+0) # -> rho=-66 -> cycle at -136 (cycle density 7/11)

@@ -1,0 +1,17 @@
+expanding identities found (theorem says 0): 0
+contracting identities found (expected >0): 84
+   N(k)=(1*2^{1k}+0)/1, Delta=-1, S(k)=[1, 1, 1, 1, 1, 1]
+   N(k)=(1*2^{1k}+0)/1, Delta=-2, S(k)=[2, 2, 2, 2, 2, 2]
+   N(k)=(2*2^{1k}+0)/1, Delta=-1, S(k)=[1, 1, 1, 1, 1, 1]
+   N(k)=(2*2^{1k}+0)/1, Delta=-2, S(k)=[2, 2, 2, 2, 2, 2]
+   N(k)=(3*2^{1k}+0)/1, Delta=-1, S(k)=[1, 1, 1, 1, 1, 1]
+   N(k)=(3*2^{1k}+0)/1, Delta=-2, S(k)=[2, 2, 2, 2, 2, 2]
+   N(k)=(4*2^{1k}+0)/1, Delta=-1, S(k)=[1, 1, 1, 1, 1, 1]
+   N(k)=(4*2^{1k}+0)/1, Delta=-2, S(k)=[2, 2, 2, 2, 2, 2]
+   N(k)=(5*2^{1k}+0)/1, Delta=-1, S(k)=[1, 1, 1, 1, 1, 1]
+   N(k)=(5*2^{1k}+0)/1, Delta=-2, S(k)=[2, 2, 2, 2, 2, 2]
+
+OK: no expanding single-parameter schema identity in range.
+Lemma A (c >= 0): PASS
+Lemma B (c <= S*3^{S-1}): PASS
+Lemma B' (c/2^S <= (S/2)*max suffix multiplier): PASS
