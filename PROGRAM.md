@@ -179,3 +179,25 @@ dynamics itself can regenerate supercritical structure it was not given.
 - `experiments/splice_search.py` — exit-template census (13,944 exits).
 - `experiments/rigidity_check.py` — identity search + Lemmas A/B/B′ checks.
 - `experiments/results/` — logs of all of the above.
+
+## 7. Addendum: the counterexample this route actually reaches
+
+`experiments/z2adic_counterexample.py` constructs, via the Terras
+bijection applied to the parity word of the −17 cycle with aperiodic
+defects (period-173 forcing, `gcd(173,11)=1`), an explicit computable
+2-adic integer `Z` such that:
+
+* the shortcut orbit of `Z` has parity density ≥ 7/11 > log₃2 forever
+  (verified exactly for 2000 steps: density 0.639);
+* `Z` lies on no rational cycle template (its parity vector has no
+  period — proved, not just checked);
+* every truncation `Z mod 2^B` is a **positive integer** whose orbit
+  realizes an exact supercritical certificate of length `B`
+  (at `B = 2000`: 1995 bits → 2021 bits, strictly expanding).
+
+**`Z` is a counterexample to the 2-adic Collatz conjecture, produced by
+this route.** The Collatz conjecture proper is exactly the statement
+that no such point lies in `ℤ` — i.e. that the non-terminating binary
+expansion of every such `Z` is genuinely non-terminating. The rigidity
+dichotomy shows schema-structured constructions can never force
+termination of the expansion; that is the precise content left open.
