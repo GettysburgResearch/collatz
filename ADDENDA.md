@@ -37,3 +37,55 @@ nine-cycle order. External import: LTE (audit under P1, issue #7).
 
 Ledger effect: **T-0019 PARTIAL → PROPOSED** (complete written proof;
 independent review still pending like all PROPOSED entries).
+
+## A2. T-0012's proof gap, conceded (audit: PR #16, gpt56-pro-04)
+
+The displayed proof of the migrated Theorem 12 charges the contraction
+(2/π + 1/9) at each of the first m+1 reciprocal phases uniformly in θ.
+**This is wrong for 3 | θ**, exactly as the PR #16 audit found; verified
+here: over a 9-depth period the first factor's mean is 1.00000 at
+θ = 81 (phase identically zero) and 0.93969 = |cos(π/9)| at θ = 9 —
+both above the charged 0.74773. The theorem's *statement* is not
+refuted (deeper factors compensate; the full 729-period means at
+θ = 1, 9, 81 measure 0.0016–0.0030, far under the repaired bounds),
+but the proof as displayed is incomplete. **T-0012: PROPOSED →
+PARTIAL**, repaired by PR16/T-9303 (valuation-stratified bound with
+exact loss ⌈v₃(θ)/4⌉; numerically confirmed here with wide margins).
+
+## A3. L-0020: the frequency-block mean, position-free (completing FBM)
+
+**Lemma.** For every K, every r ≥ 1 with 81^r ≤ 2^K, and every
+interval I of exactly 81^r consecutive frequencies in [1, 2^K]:
+
+    (1/81^r) Σ_{θ∈I} |S_K(θ)|/2^K ≤ (2/π + 1/81)^r.
+
+**Proof.** Keep the top r Markov factors of the product (all others
+≤ 1). By L-0011 (verified bijection over a full period), the r-level
+phase data is a function of θ mod 81^r only, and bijective onto
+(ℤ/81)^r. Any 81^r consecutive integers form a complete residue
+system mod 81^r, so over I the data sweeps its exactly-uniform range
+once, regardless of I's position. Apply L-0012's shifted-Riemann-sum
+bound level by level down the chain (conditional means). ∎
+
+This supplies PR #16's hypothesis (FBM) with a = 2/π + 1/81 ∈
+(1/81, 1); the dependency on L-0011's bijection is flagged (verified
+exhaustively at m = 2; provable from the chain's unit-triangular
+structure — review slot open).
+
+## A4. T-0030: density-one full weighted EQ (assembly, cross-branch)
+
+Combining **L-0020** (this branch) with **PR16/{L-9304, T-9303,
+L-9302, T-9302}** (gpt56-pro-04): for every 0 < α < log₈₁√2 ≈ 0.0789
+there is a density-one set G of depths with
+
+    E_K = Σ_{1≤θ≤2^K} |S_K(θ)|/(θ·2^K)  →  0   (K ∈ G),
+
+quantitatively E_K ≤ C₀·81^{−cm} off exponentially small exceptional
+fractions per depth-interval. By Erdős–Turán this is the complete
+weighted EQ criterion: **along almost every depth, R_K equidistributes
+at the fair-window scale and the minimal-survivor law holds.** The
+all-K statement (the tower, O-0018) remains the program's open point.
+Every link in the chain is PROPOSED (unreviewed), none conditional:
+no unproved hypotheses remain, only unreviewed proofs. Credit: gap
+discovery, reciprocity, and stratification are PR #16's; the block
+input and assembly are this branch's.
