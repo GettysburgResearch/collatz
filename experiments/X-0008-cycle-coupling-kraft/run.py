@@ -121,8 +121,7 @@ def verify_cycle_tower() -> list[tuple]:
     return rows
 
 
-def verify_kraft() -> tuple[Fraction, Fraction, Fraction, Fraction]:
-    code = [(0,), (1, 0), (1, 1, 0), (1, 1, 1)]
+def kraft_data(code: list[tuple[int, ...]]) -> tuple[Fraction, Fraction, Fraction, Fraction]:
     kraft = sum(Fraction(1, 2 ** len(w)) for w in code)
     tilted = sum(Fraction(3 ** sum(w), 4 ** len(w)) for w in code)
     expected_length = sum(Fraction(len(w), 2 ** len(w)) for w in code)
@@ -131,6 +130,11 @@ def verify_kraft() -> tuple[Fraction, Fraction, Fraction, Fraction]:
         Fraction(1, 2 ** len(w)) * Fraction(3 ** sum(w), 2 ** len(w))
         for w in code
     )
+    for w in code:
+        fair = Fraction(1, 2 ** len(w))
+        biased = Fraction(3 ** sum(w), 4 ** len(w))
+        multiplier = Fraction(3 ** sum(w), 2 ** len(w))
+        assert biased / fair == multiplier
     assert kraft == 1
     assert tilted == 1
     assert expected_multiplier == 1
@@ -140,6 +144,18 @@ def verify_kraft() -> tuple[Fraction, Fraction, Fraction, Fraction]:
     assert abs(mean_log - exact_formula) < 1e-15
     assert mean_log < 0
     return kraft, tilted, expected_length, expected_odds
+
+
+def verify_kraft() -> tuple[Fraction, Fraction, Fraction, Fraction]:
+    codes = [
+        [(0,), (1,)],
+        [(0,), (1, 0), (1, 1)],
+        [(0, 0), (0, 1), (1, 0), (1, 1)],
+        [(0,), (1, 0), (1, 1, 0), (1, 1, 1)],
+    ]
+    for code in codes:
+        kraft_data(code)
+    return kraft_data(codes[-1])
 
 
 def main() -> None:
