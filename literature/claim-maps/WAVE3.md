@@ -23,8 +23,8 @@ All references are branch-qualified. Verdicts do not promote native statuses.
 | `T-0021` finite-library transition obstruction | KNOWN — COROLLARY, reduction pending audit | Skolem--Mahler--Lech / power-sum finiteness | Expose exact recurrence, coefficients, degeneracies, effectivity boundary |
 | `L-0023` quadratic stage defect | KNOWN — EXACT REINTERPRETATION | `LIT-KTHM-0030`: divided exponential converging to `-(7/4)log_2 3` | Replace opaque recurrence by explicit log target |
 | `L-0024` odometer law | FOLKLORE / STANDARD | `2`-adic isometry and LTE | Independent index/modulus audit |
-| `T-0024` information surplus | INTERNAL PROPOSED THEOREM | no direct literature antecedent located | Surplus must be converted into a causal router, not only counted |
-| 256-transition macro | OPEN NATIVE FRONTIER | resembles transducer synthesis plus `p`-adic digit generation | Exact low-bit routing and one ordinary marked initialization |
+| `T-0024` information surplus | INTERNAL PROPOSED THEOREM + EXTERNAL ROUTER CRITERION | `LIT-KTHM-0033`: Krieger/MacDonald turn entropy surplus into finite-memory embedding after an SFT reduction | Build stationary normalized legal-transition SFT; prove mixing, entropy, periodic-point, and visible-output conditions |
+| 256-transition macro | OPEN NATIVE FRONTIER | symbolic embedding or Hall-type routing plus `p`-adic digit generation | Exact arithmetic legality and one ordinary marked initialization remain after symbolic routing |
 
 ## PR #16 (`ADEL/...`)
 
@@ -75,6 +75,7 @@ This is not a literature solution; it is the correct completion boundary. The mo
 - combinatorics of stammering words;
 - exact carry/height inequalities;
 - spine changes of measure;
-- `p`-adic automata classification.
+- `p`-adic automata classification;
+- symbolic embedding/zero-error coding after stationary finite-state reduction.
 
 No existing theorem currently verifies the adaptive hypotheses needed for the final ordinary-integer step.
