@@ -4,35 +4,46 @@
 **Issue:** #15  
 **Branch:** `agent/gpt56-pro-04/15-adelic-cusp-fourier`  
 **Date:** 2026-07-21  
-**Status:** theory-first independent packet; no counterexample claimed
+**Status:** theory-first independent packet; all theorem-level claims remain `PROPOSED`; no counterexample claimed
 
-## Executive summary
+## Executive result
 
-The `64 -> 81` survivor Fourier products are evaluations of one fixed Bernoulli self-similar measure on `Z_2`. The issue-#4 Cantor-class products are evaluations of one fixed Bernoulli self-similar measure on `Z_3`.
-
-On the room-relevant CRT orbit, these local systems are the two local components of one rational character. Their factors stitch one reciprocal phase chain, so every CRT split is asymptotically equivalent to the original survivor coefficient in every sub-`64^K` frequency range.
-
-The decisive finite state is the lift chain
+The packet now proposes a self-contained proof of the complete weighted EQ criterion at **every** depth:
 
 \[
-q_\ell(h)
-\equiv
--17h64^{\ell-K}
-\pmod{81^{\ell+1}}.
+\boxed{
+E_K
+=
+\sum_{1\le h\le2^K}
+\frac{|S_K(h)|}{2^Kh}
+\longrightarrow0.
+}
 \]
 
-Exact length-`L` lift prefixes are in bijection with residue classes modulo `81^L`. This yields an explicit entropy deficit for low-energy prefixes, which in turn gives:
+The proof has two complementary halves:
 
-1. a power-saving exceptional-frequency count in every interval;
-2. a uniform power-saving harmonic tail at every depth;
-3. unconditional weighted EQ on a natural-density-one set of depths;
-4. the stronger conclusion that every fixed exceedance set has upper Banach density zero.
+1. `T-9308` gives a uniform power-saving harmonic tail above any growing cutoff at every depth.
+2. `L-9310` and `T-9311` give deterministic pointwise decay below every subexponential cutoff at every depth.
 
-The remaining all-depth obstruction is harmonic location of the sparse low-energy residue classes among the smallest frequencies. The separate M1 problem asks whether the infinite `2`-adic attractor contains one ordinary positive integer. No density theorem in this packet settles that exceptional existence question.
+Choosing the low/high cutoff `M_K=K` proves `T-9312`.
+
+The new pointwise mechanism is **integral carry rigidity**. Signed reciprocal phases satisfy
+
+\[
+a_\ell
+=64x_\ell-81x_{\ell+1}
+\in\mathbb Z.
+\]
+
+Small phase energy permits few nonzero carries. Few nonzero carries force long exact zero-carry runs. Each zero run gives simultaneous very strong completion agreement and controlled archimedean height, and therefore cannot be too long. Chaining the runs from the terminal end yields logarithmic total energy for every primitive numerator.
+
+This closes the former all-depth harmonic-location conjecture `C-9301` by a stronger pointwise theorem.
+
+It does **not** settle the separate question whether the infinite `2`-adic survivor attractor contains one ordinary positive integer. No Collatz counterexample, divergent seed, nontrivial cycle, or proof of nonexistence is claimed.
 
 ## Core notation
 
-Set
+Put
 
 \[
 \rho=\frac{64}{81},
@@ -40,7 +51,7 @@ Set
 d=\frac{17}{81}.
 \]
 
-For `epsilon in {0,1}^N`, define
+For a binary sequence `epsilon`, define the stationary survivor coding
 
 \[
 \pi_2(\varepsilon)
@@ -66,7 +77,7 @@ c=-\frac{17}{64},
 \in\mathbb Z_3,
 \]
 
-and let `nu` be its fair Bernoulli pushforward.
+with fair pushforward `nu`.
 
 For the depth-`K` survivor set `R_K`, define
 
@@ -76,10 +87,10 @@ S_K(h)
 \sum_{A\in R_K}
 \exp\!\left(2\pi i\frac{hA}{64^K}\right),
 \qquad
-F_K(h)=\frac{|S_K(h)|}{2^K},
+F_K(h)=\frac{|S_K(h)|}{2^K}.
 \]
 
-and the complete weighted EQ sum
+The complete weighted EQ sum is
 
 \[
 E_K
@@ -88,41 +99,47 @@ E_K
 \frac{F_K(h)}h.
 \]
 
-## Current claim map
+## Current theorem chain
 
-| ID | Status | Content |
-|---|---|---|
-| `D-9301` | `PROPOSED` | Fixed survivor measure on `Z_2` |
-| `D-9302` | `PROPOSED` | S-arithmetic natural extension and integer section |
-| `D-9303` | `PROPOSED` | Fixed triadic mirror measure on `Z_3` |
-| `L-9301` | `PROPOSED` | `mu-hat(h/64^K)=2^{-K}S_K(h)` |
-| `L-9302` | `PROPOSED` | Conditional shell lemma from frequency-block means |
-| `L-9303` | `PROPOSED` | Quadratic phase energy controls the product |
-| `L-9304` | `PROPOSED` | Exact `64`/`81` phase reciprocity and valuation shift |
-| `L-9305` | `PROPOSED` | `nu-hat(h/81^j)=2^{-j}C_j-hat(h)` |
-| `L-9306` | `PROPOSED` | Complete-group Fourier moments factor |
-| `L-9307` | `PROPOSED` | Global rational diagonal and absolute stitching |
-| `L-9308` | `PROPOSED` | Complex bilateral phase stitching |
-| `L-9309` | `PROPOSED` | Lift-prefix / residue-class bijection |
-| `T-9301` | `SUPERSEDED` | Earlier conditional low/high reduction |
-| `T-9302` | `SUPERSEDED` | Earlier conditional density-one theorem |
-| `T-9303` | `PROPOSED` | Valuation-stratified translated depth periods |
-| `T-9304` | `PROPOSED` | Exact two-place CRT factorization |
-| `T-9305` | `PROPOSED` | Absolute split collapse |
-| `T-9306` | `PROPOSED` | Complex bounded-test split collapse |
-| `T-9307` | `PROPOSED` | Low-energy prefix entropy deficit |
-| `T-9308` | `PROPOSED` | Uniform harmonic tail at every depth |
-| `T-9309` | `PROPOSED` | Unconditional natural-density-one weighted EQ |
-| `T-9310` | `PROPOSED` | Uniform-density / upper-Banach-zero bad depths |
-| `R-9301` | `PROPOSED` | Exact prefixes do not amplify to consecutive intervals |
-| `C-9301` | `IDEA` | Harmonic exceptional-cylinder theorem for all-depth EQ |
-| `Q-9301` | `IDEA` | Nontrivial ordinary-integer section intersection |
-| `Q-9302` | `IDEA` | Better proof mechanism in the room/adelic representation |
-| `O-9301` / `X-9301` | `EMPIRICAL` | Bounded exact scattering probe |
+```text
+L-9309  exact reciprocal lift chain
+   |
+   v
+L-9310  integral carries + completion-height rigidity
+   |
+   v
+T-9311  pointwise decay on every subexponential window
+   |
+   +----------------------------------------+
+   |                                        |
+   |                                T-9307 prefix entropy
+   |                                        |
+   |                                        v
+   |                                T-9308 uniform harmonic tail
+   |                                        |
+   +-------------------+--------------------+
+                       |
+                       v
+                 T-9312 all-depth
+                 complete weighted EQ
+```
 
-Every complete-looking proof remains `PROPOSED` pending independent review. `SUPERSEDED` means replaced by a stronger theorem, not refuted.
+An independent depth-statistical chain remains:
 
-## 1. Stationary survivor and mirror measures
+```text
+T-9303 translated depth-period mean
+   + T-9308 uniform harmonic tail
+   |
+   v
+T-9309 natural-density-one EQ
+   |
+   v
+T-9310 upper-Banach-zero bad-depth sets
+```
+
+The second chain is no longer needed for all-depth convergence, but it gives independent translated-block information and is a valuable review cross-check.
+
+## 1. Stationary local measures
 
 `D-9301` and `L-9301` prove
 
@@ -132,206 +149,260 @@ Every complete-looking proof remains `PROPOSED` pending independent review. `SUP
 }
 \]
 
+Thus the changing finite survivor products are evaluations of one fixed transform on `Z_2`.
+
 `D-9303` and `L-9305` prove
 
 \[
 \boxed{
-\widehat\nu(h/81^j)=2^{-j}\widehat C_j(h).
+\widehat\nu(h/81^j)=2^{-j}\widehat C_j(h),
 }
 \]
 
-The changing finite modular products are restrictions of two fixed local transforms.
+where the finite reductions of `nu` are the issue-#4 Cantor classes `C_j`.
 
-## 2. Exact phase reciprocity
+## 2. One reciprocal phase chain
 
-For
-
-\[
-M_\ell=64^{K-\ell},
-\qquad
-N_\ell=81^{\ell+1},
-\]
-
-let
+For fixed `K,h`, define
 
 \[
 q_\ell(h)
 \equiv
--17hM_\ell^{-1}
-\pmod{N_\ell},
+-17h64^{\ell-K}
+\pmod{81^{\ell+1}},
 \qquad
-0\le q_\ell<N_\ell.
+0\le q_\ell<81^{\ell+1}.
 \]
 
-Universal circle reciprocity identifies the dyadic phase with
+Let
 
 \[
-\frac{q_\ell(h)}{N_\ell}
-+
-\frac{17h}{M_\ell N_\ell}
-\pmod1.
+y_\ell(h)=\frac{q_\ell(h)}{81^{\ell+1}}.
 \]
 
-This moves the modular inverse from a power of `81` modulo a power of `64` to the reciprocal setting where depth periods and lift digits are explicit.
-
-## 3. Valuation-stratified depth periods
-
-The reciprocal vector through level `m` has exact depth period
+`L-9309` proves the exact recurrence
 
 \[
-P_m=9\cdot81^m.
+y_{\ell+1}
+=
+\frac{\{64y_\ell\}+d_\ell}{81},
+\qquad
+0\le d_\ell<81,
+\]
+
+and the bijection
+
+\[
+\boxed{
+h\pmod{81^L}
+\longleftrightarrow
+(q_0,d_0,\ldots,d_{L-2})
+\in(\mathbb Z/81\mathbb Z)^L.
+}
+\]
+
+The triadic mirror uses the unshifted phases `y_ell`. The original survivor product uses the same phases with an explicit reciprocity shift. Every dyadic/triadic CRT split merely changes where those shifts begin.
+
+`T-9305` and `T-9306` quantify the collapse:
+
+\[
+\left|
+F^{(2)}_K(h)-F^{(3)}_K(h)
+\right|
+\le
+\frac{\pi|h|}{64^K},
+\]
+
+and the same scale controls arbitrary bounded harmonic complex tests.
+
+## 3. General completion-height carry rigidity
+
+`L-9310` steps back from the special constants. For any coprime expanding chart
+
+\[
+2\le M<N,
+\]
+
+with phase chain
+
+\[
+s_\ell
+\equiv
+-chM^{\ell-K}
+\pmod{N^{\ell+1}},
+\]
+
+define signed normalized phases `x_ell=s_ell/N^(ell+1)` and carries
+
+\[
+\boxed{
+a_\ell=Mx_\ell-Nx_{\ell+1}\in\mathbb Z.
+}
 \]
 
 If
 
 \[
-e(h)=\left\lceil\frac{v_3(h)}4\right\rceil,
+\mathcal E_K(h)=\sum_{\ell<K}x_\ell^2,
 \]
 
-then `T-9303` proves, over every sufficiently late translated `P_m` block,
+and `W` carries are nonzero, then
 
 \[
-\boxed{
-\frac1{P_m}
-\sum_{K\in J}F_K(h)
+W
 \le
-2^{-\frac12\max\{0,m+1-e(h)\}}
-+
-\frac{\pi h}{64^{K_0}}.
-}
+2(M^2+N^2)\mathcal E_K(h).
 \]
 
-The valuation loss is exact. It repairs an overuniform partial-product step in the issue-#4 depth-average proof without asserting that the full source theorem is false.
-
-## 4. CRT product and split collapse
-
-For
+A zero-carry run of length `r`, ending `t` phase levels from the terminal end, gives the nonzero divisibility relation
 
 \[
-Q=64^n81^j,
-\qquad
-u=(81^j)^{-1}\pmod{64^n},
-\qquad
-v=(64^n)^{-1}\pmod{81^j},
+N^r
+\le
+\frac12M^{r+t}+|ch|.
 \]
 
-`T-9304` gives
+Hence
 
 \[
-G_{n,j}(h)
-=
-\widehat\mu(hu/64^n)
-\widehat\nu(hv/81^j).
+r
+\le
+\kappa_{M,N}t+\log_N(2|ch|),
 \]
 
-The two local characters are the local representations of the same rational `h/Q`, and the two products are adjacent pieces of one phase chain.
-
-For `K=n+j`,
+where
 
 \[
 \boxed{
-\left|
-G_{n,j}(h)-\widehat\mu(h/64^K)
-\right|
-<
-\frac{2\pi|h|}{64^K}.
+\kappa_{M,N}
+=
+\frac{\log M}{\log(N/M)}
+=
+\frac1{\log_MN-1}.
 }
 \]
 
-For arbitrary bounded complex weights `|w_h|<=1`,
+Chaining all zero runs from right to left gives
+
+\[
+K
+\le
+B_h(1+\kappa_{M,N})^{W+1}
+\]
+
+and therefore
+
+\[
+\mathcal E_K(h)
+\gg_{M,N}
+\left(
+\log\frac{K}{1+\log|h|}
+\right)_+.
+\]
+
+This theorem is deterministic and pointwise. It does not use a frequency average, depth average, random model, finite-state truncation, external Fourier theorem, or generic S-unit result.
+
+For `M=64,N=81,c=17`,
+
+\[
+\kappa
+\approx17.6548475770851.
+\]
+
+The identical constant independently appears in PR #20's ordinary-code repetition theorem. Both arguments express one product-formula criticality: completion agreement accumulates faster than rational height can support.
+
+## 4. Pointwise cusp decay
+
+The cosine-energy inequality
+
+\[
+|\cos(\pi x)|
+\le
+\exp(-2\|x\|^2)
+\]
+
+converts `L-9310` into `T-9311`.
+
+Let
+
+\[
+b_*
+=
+\frac{2}{21314\log(1+\kappa)}
+\approx3.2068\times10^{-5}.
+\]
+
+For a primitive numerator `64∤h`, the triadic mirror satisfies
+
+\[
+F^{(3)}_K(h)
+\le
+\exp\!\left[
+-\frac2{21314}
+\left(
+\frac{\log(K/B(h))}{\log(1+\kappa)}-1
+\right)_+
+\right],
+\]
+
+where `B(h)=O(1+log|h|)`.
+
+The original coefficient differs by at most `pi|h|/64^K`.
+
+For arbitrary `h`, divide out the exact power `64^v|h` and use
+
+\[
+F_K(64^v h_0)=F_{K-v}(h_0).
+\]
+
+Consequently, if
+
+\[
+\log(2+H_K)=o(K),
+\]
+
+then
 
 \[
 \boxed{
-\left|
-\sum_{h\le H}\frac{w_h}{h}G_{n,j}(h)
--
-\sum_{h\le H}\frac{w_h}{h}\widehat\mu(h/64^K)
-\right|
-<
-\frac{2\pi H}{64^K}.
+\max_{1\le|h|\le H_K}F_K(h)	o0.
 }
 \]
 
-Thus a room/two-place Fourier proof is a proof of the original criterion in another representation. Its possible advantage is dynamical or combinatorial, not a weaker target.
-
-## 5. Lift-prefix bijection
-
-Define the lift digit
-
-\[
-d_\ell(h)
-=
-\left\lfloor
-\frac{q_{\ell+1}(h)}{81^{\ell+1}}
-\right\rfloor
-\in\{0,\ldots,80\}.
-\]
-
-The normalized recurrence is
+For every fixed `R>0`,
 
 \[
 \boxed{
-y_{\ell+1}
-=
-\frac{\{64y_\ell\}+d_\ell}{81},
-\qquad
-y_\ell=q_\ell/81^{\ell+1}.
+\max_{1\le|h|\le K^R}F_K(h)
+\le
+C_R
+\left(
+\frac{\log K}{K}
+\right)^{b_*}.
 }
 \]
 
-`L-9309` proves
+The exponent is crude and very small. Its positivity is enough.
 
-\[
-h\pmod{81^L}
-\longleftrightarrow
-(q_0,d_0,\ldots,d_{L-2})
-\]
+## 5. Uniform high-frequency harmonic tail
 
-is a bijection. One exact prefix is one arithmetic progression modulo `81^L`, so `R-9301` refutes exact-prefix persistence on a consecutive neighborhood.
-
-## 6. Low-energy prefix entropy
-
-Define
-
-\[
-\mathcal E_{K,L}(h)
-=
-\sum_{\ell<L}\|y_\ell(h)\|^2.
-\]
-
-Put
+`T-9307` uses the exact lift-prefix bijection to prove an entropy deficit for low-energy prefixes. With
 
 \[
 \beta=\frac{17\sqrt2}{27}<1,
 \qquad
-\eta=-\log_{81}\beta>0.
+\eta=-\log_{81}\beta>0,
 \]
 
-`T-9307` proves that every complete interval of length `81^L` contains at most
+every interval of `81^L` frequencies contains at most
 
 \[
-\boxed{81^L\beta^L}
+81^L\beta^L
 \]
 
-frequencies with
+prefixes with energy at most `L/64`.
 
-\[
-\mathcal E_{K,L}(h)\le L/64.
-\]
-
-In an arbitrary interval of length `H`, the exceptional count is `O(H^(1-eta))`. Every nonexceptional frequency has a fixed power-saving Fourier coefficient.
-
-## 7. Uniform harmonic high-frequency tail
-
-Put
-
-\[
-\gamma=\frac1{32\log81},
-\qquad
-\delta=\min\{\eta,\gamma\}>0.
-\]
-
-Dyadic shelling of the exceptional count and nonexceptional coefficient bound gives `T-9308`:
+Dyadic shelling gives `T-9308`: there are `delta>0` and `C_tail` such that
 
 \[
 \boxed{
@@ -344,90 +415,65 @@ C_{\rm tail}M^{-\delta}
 }
 \]
 
-uniformly in every depth.
+uniformly in every depth and every `81<=M<=2^K`.
 
-Therefore, for every growing cutoff `M_K`,
+This closes the entire exponential frequency range.
+
+## 6. All-depth weighted EQ
+
+Choose `M_K=K`.
+
+By `T-9311`,
 
 \[
-E_K
+\sum_{h<K}\frac{F_K(h)}h
 \le
-\sum_{h<M_K}
-\frac{F_K(h)}h
-+
-C_{\rm tail}M_K^{-\delta}
-+
-\pi2^{-5K}.
-\]
-
-The all-depth problem is confined to the smallest growing frequencies.
-
-## 8. Unconditional density theorems
-
-### Natural-density-one convergence
-
-Combining `T-9303` on a slowly growing low window with `T-9308` on the high tail gives `T-9309`:
-
-\[
-\boxed{
-E_K\to0
-\quad\text{along a natural-density-one set of depths.}
-}
-\]
-
-No branch-qualified frequency theorem, external Fourier theorem, or computation is used.
-
-### Uniform-density convergence
-
-The period estimate is valid on every translated complete block. `T-9310` therefore proves, for every `epsilon>0`,
-
-\[
-\boxed{
-d^*\{K:E_K>\varepsilon\}=0,
-}
-\]
-
-where `d^*` is upper Banach density.
-
-Equivalently, every sufficiently long translated interval of depths is overwhelmingly good at any fixed accuracy. Bad depths can remain infinite, but they cannot form arbitrarily long dense clusters.
-
-## 9. All-depth conjecture
-
-`C-9301` asks for harmonic control of the sparse low-energy cylinders. For growing `L_K,H_K`, prove
-
-\[
-\boxed{
-\sum_{\substack{1\le h\le H_K\\
-\mathcal E_{K,L_K}(h)\le L_K/64}}
-\frac1h
+C(1+\log K)
+\left(
+\frac{\log K}{K}
+\right)^{b_*}
 \longrightarrow0.
-}
 \]
 
-Together with `T-9308`, this closes full all-depth EQ.
-
-The exact terminal relation is
+By `T-9308`,
 
 \[
-h
-\equiv
--17^{-1}64^{K-L+1}q_{L-1}(h)
-\pmod{81^L}.
+\sum_{K\le h\le2^K}
+\frac{F_K(h)}h
+\le
+C_{m tail}K^{-\delta}
++
+\pi2^{-5K}
+\longrightarrow0.
 \]
 
-Thus the remaining problem is real location of a low-energy subset of reciprocal terminal residues after multiplication by a depth-dependent unit.
+Therefore `T-9312` proves
 
-Promising routes:
+\[
+\boxed{E_K\to0}
+\]
 
-1. least-representative dispersion;
-2. valuation and first-loss stratification;
-3. carry-template classification;
-4. a positive inverse-limit room operator;
-5. rational-diagonal renewal;
-6. coherence of depths exceptional at adjacent scales.
+for every depth.
 
-## 10. Separate M1 problem
+The prior natural-density and uniform-density theorems remain correct-looking independent consequences, but no exceptional depth set is needed by the strongest chain.
 
-`D-9302` embeds the real and `2`-adic codings in
+## 7. Literature synthesis
+
+The literature branch supplied several decisive methodological boundaries:
+
+- fixed real self-similar Fourier-decay theorems do not directly apply to the moving finite-group cusp;
+- finite-state tilted transfer bounds require a frozen truncation and uniform control of truncation dependence;
+- graph-directed contractions construct completion points but not ordinary integers;
+- generic S-unit terminology does not supply finiteness when cofactors vary dynamically;
+- rational-base and Mahler/FLP methods are most useful through their separation of compact-state agreement from ordinary height.
+
+The successful argument respects those boundaries. It does not import a black-box decay theorem. Instead it identifies a native integer-valued cocycle—`a_ell`—whose zero set has a direct height obstruction.
+
+The finite-state pressure viewpoint remains conceptually useful: nonzero carries have a quantized positive cost. But the proof does not need a spectral-radius estimate, because integer quantization gives a state-independent gap.
+
+## 8. Separate ordinary-integer frontier
+
+`D-9302` embeds the real and `2`-adic codings into
 
 \[
 (\mathbb R\times\mathbb Q_2\times\mathbb Q_3)
@@ -435,33 +481,44 @@ Promising routes:
 \Delta\mathbb Z[1/6].
 \]
 
-Ordinary integer survivors are intersections with a rigid integer section. A nontrivial positive intersection in a valid chart class would yield an induced divergent orbit and then a candidate Collatz counterexample after independent verification of the chart translation.
+Ordinary integer survivors are intersections with a rigid section. A nontrivial positive intersection in a valid chart class would yield an induced divergent orbit and then a candidate ordinary Collatz counterexample after independent verification of the chart translation.
 
-No such point is presented here. Finite-depth equidistribution, even at every depth, does not automatically exclude one exceptional infinite ordinary point.
+All-depth EQ does not automatically exclude one such exceptional infinite point.
 
-## Computation boundary
+The strongest next synthesis is therefore between:
 
-`X-9301` is the only committed experiment. It uses exact modular arithmetic through `K=80`, `h<=K^2` only to test lemma shapes. The next permissible computation is to emit lift-digit and least-representative data for existing argmins. Increasing the brute-force range alone is not progress.
+1. `D-9302` — ordinary-section realization;
+2. PR #20 — every ordinary survivor code has factor-complexity slope at least `17.6548...`;
+3. `L-9310` — the same criticality constant controls completion-height carry runs;
+4. issue #4 — chart congruences and room/carry dynamics.
+
+A decisive M1 theorem should show that one ordinary code cannot simultaneously meet the required symbolic novelty, carry structure, and bounded real/section constraints.
 
 ## Review order
 
-The load-bearing theorem chain is:
+The new all-depth chain should be reconstructed in this order:
 
 ```text
-L-9309 -> T-9307 -> T-9308 -> T-9303 -> T-9309 -> T-9310
+L-9310
+  -> T-9311
+  -> L-9309
+  -> T-9307
+  -> T-9308
+  -> T-9312
 ```
 
-Review those files first, followed by:
+Then review:
 
-1. `L-9307` / `L-9308` and `T-9305` / `T-9306` for split collapse;
-2. `D-9301`, `D-9303`, `L-9301`, and `L-9305` for stationarization;
-3. `D-9302` for the direct integer-section route;
-4. `C-9301` for the all-depth frontier.
+1. `L-9307` / `L-9308` and `T-9305` / `T-9306` for the survivor/mirror comparison;
+2. `T-9303`, `T-9309`, and `T-9310` as independent depth-statistical checks;
+3. `D-9301`, `D-9303`, `L-9301`, and `L-9305` for stationarization;
+4. `D-9302` for the remaining ordinary-section problem.
 
-## Acceptance boundary
+## Claim boundary
 
-Independent verification of the load-bearing chain would establish uniform-density convergence of the complete weighted EQ criterion.
-
-A proof of `C-9301` would close all-depth EQ and quantitative near-emptiness of finite survivors. It would still not decide the direct M1 integer-section question.
-
-No claim in this packet constructs or proves a positive-integer Collatz counterexample.
+- `L-9310`, `T-9311`, and `T-9312` are `PROPOSED`.
+- `C-9301` is `SUPERSEDED`, not refuted.
+- No existing issue-#4 claim is silently promoted.
+- No positive-integer Collatz counterexample is constructed.
+- No proof that no such counterexample exists is claimed.
+- No claim in this packet resolves the Collatz conjecture.
