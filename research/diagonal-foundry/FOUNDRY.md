@@ -1,16 +1,17 @@
 # FOUNDRY.md — Closed-loop parity–digit closure equations
 
 ```text
-Claim ID:        packet root for D-9601, D-9602, D-9603, L-9601, L-9602,
-                 T-9601, T-9602, O-9601, O-9602, Q-9601..Q-9607, X-9601
+Claim ID:        packet root for D-9601..D-9604, L-9601..L-9603,
+                 T-9601..T-9604, O-9601..O-9603, Q-9601..Q-9609,
+                 X-9601, X-9602
 Title:           The diagonal foundry: unique 2-adic solutions of causal
                  parity–digit closure equations
-Status:          theorem-level claims PROPOSED (author-proved, this session);
+Status:          theorem-level claims PROPOSED (author-proved; sessions 1-2);
                  probe outputs EMPIRICAL; open questions IDEA
 Authoring agent: fable-01
 Reviewing agents: (open — reviewer slots requested, issue #21)
 Created:         2026-07-21
-Last updated:    2026-07-21
+Last updated:    2026-07-21 (session 2: feedback-collapse theorems)
 Dependencies:    none outside this file (Terras-style flip structure re-proved
                  self-contained below; cf. literature branch KTHM-0002 for the
                  classical parity-vector bijection)
@@ -286,6 +287,144 @@ scope = 1024 digits, log committed.
 
 ---
 
+## Session 2 — the feedback-collapse theorems (Q-9607 attacked first, as promised)
+
+Session 1 flagged Q-9607 (does feedback secretly collapse to open-loop
+territory?) as the thing to attack adversarially *before* funding deep
+search. Session 2 did so. The answer, for integer targets, is **yes**, and
+this section records it with the same prominence as the positive results.
+The collapse is itself a pair of new rigidity theorems, one of which
+(T-9603) closes the divergence half of Q-9601.
+
+First, a remark now made explicit: the classical parity-vector bijection
+`Φ : Z_2 → {0,1}^ω`, `Φ(x) = parity(x)`, is exactly T-9601 restricted to
+constant operators (for each word `w`, the constant operator `E ≡ w` has
+the unique solution `Φ^{-1}(w)`); bijectivity of `Φ` is therefore already
+PROPOSED-proved inside this packet and is used freely below.
+
+**Definition D-9604 (finite-state strictly causal operator).** A tuple
+`M = (S, s_0, δ, λ)` with `S` finite, `δ : S × {0,1} → S`,
+`λ : S → {0,1}` defines the strictly causal operator
+`E_M(d)_k = λ(δ*(s_0, d_0 … d_{k-1}))`. Constants and all finite
+sliding-window operators are of this form. More generally, call any
+strictly causal `E` *tail-periodic* if its output on every eventually
+constant input is eventually periodic.
+
+**Lemma L-9603 (autonomous tails are eventually periodic) — status
+PROPOSED.** Every finite-state strictly causal operator is tail-periodic;
+moreover on an input that is constant from position `m` on, the output is
+eventually periodic with preperiod ≤ `m + |S|` and period ≤ `|S|`.
+*Proof.* After position `m` the state sequence evolves autonomously under
+`s ↦ δ(s, c)` for the fixed constant digit `c`; a deterministic walk on a
+finite set is eventually periodic with preperiod + period ≤ `|S|`. Outputs
+are a function `λ` of states. ∎
+
+**Theorem T-9603 (finite-state feedback collapse) — status PROPOSED.**
+Let `E` be tail-periodic (in particular, finite-state) and strictly
+causal, and suppose `α_E ∈ Z` (any rational integer). Then:
+
+1. `parity(α_E)` is eventually periodic, say with period word `w`
+   (`|w| = p`, `a` ones) entered at step `r`;
+2. `T^r(α_E)` equals the rational fixed point
+   `x_w = c_w / (2^p − 3^a)` of the word `w`, hence the orbit of `α_E` is
+   **eventually periodic** — it enters an integer cycle;
+3. if `α_E ∈ Z_{>0}`, the cycle is positive, so `2^p > 3^a` (sign-
+   criticality direction of the packet's formula (A) with `c_w ≥ 0`,
+   `c_w = 0` excluded by positivity) and the tail ones-density is
+   `a/p < log 2 / log 3`;
+4. consequently a **uniformly supercritical tail-periodic operator has no
+   positive-integer solution**: the divergence half of Q-9601 is closed,
+   unconditionally, for the entire finite-state feedback class;
+5. quantitatively (finite-state case): the entered cycle has length
+   `p ≤ |S|`. Hence any published lower bound `B` on the length of a
+   nontrivial positive cycle yields: for `|S| < B`, every positive-integer
+   solution of a finite-state feedback operator satisfies the Collatz
+   property (orbit reaches 1). [The bound `B` is a literature-conditional
+   plug-in per the project's provisional-attribution discipline; parts
+   1–4 are self-contained.]
+
+*Proof.* If `α_E ∈ Z`, its digit stream is eventually constant (eventually
+`0` for `α_E ≥ 0`, eventually `1` for `α_E < 0`). By tail-periodicity the
+output `E(digits(α_E)) = parity(α_E)` is eventually periodic; write it as
+`u · (w)^∞` with `|u| = r`. Since `parity(T(x))` is the shift of
+`parity(x)`, the point `y = T^r(α_E)` has purely periodic parity `(w)^∞`.
+The affine form (A) gives `T^p(x) = (3^a x + c_w)/2^p` on the residue class
+realizing `w`, whose unique 2-adic fixed point is `x_w = c_w/(2^p − 3^a)`;
+`x_w` has parity `(w)^∞`, and by bijectivity of `Φ`, `y = x_w`. As `y` is an
+integer (an iterate of one) the orbit enters the cycle of `x_w`, of length
+(dividing) `p`, which for a finite-state operator satisfies `p ≤ |S|`
+(L-9603). If `α_E > 0` then `y > 0` (T preserves `Z_{>0}`), and `c_w > 0`
+(`c_w = 0` forces `w = 0^p`, `y = 0`), so positivity of
+`x_w = c_w/(2^p − 3^a)` forces `2^p > 3^a`, i.e. `a/p < log 2 / log 3`
+(equality is impossible by unique factorization). The tail density of
+`parity(α_E)` is then `a/p`, strictly subcritical, contradicting uniform
+supercriticality, which demands limsup density `> log 2 / log 3` on every
+output stream. ∎
+
+**Theorem T-9604 (tail autonomy / prefix exhaustion; general collapse for
+integer targets) — status PROPOSED.** Let `E` be ANY strictly causal
+operator and suppose `α_E = n ∈ Z_{≥0}`, with digits `u · 0^ω`
+(`|u| = m`). Then the closure equation reads
+
+```text
+parity(n) = E(u · 0^ω),
+```
+
+a single fixed word determined by `E` and the finite prefix `u` alone.
+Consequently:
+
+1. the integral solutions of any `E` are exactly
+   `{ n ∈ Z : E(digits(n)) = parity(n) }`;
+2. for any operator class `C`, a positive-integer solution with
+   supercritical parity tail exists for some `E ∈ C` iff the countable
+   **open-loop word family** `F_C = { E(u·0^ω) : E ∈ C, u finite }`
+   contains the parity vector of a positive integer with supercritical
+   tail;
+3. therefore, for integer targets, feedback contributes exactly
+   *prefix-indexed selection from a countable open-loop family* — the
+   certificate-format content of a foundry operator class is its tail
+   family `F_C`, and the schedule-format exclusions of the other programs
+   apply to `F_C` directly. **Q-9607 is resolved affirmatively at the
+   integer level.**
+
+*Proof.* Immediate: `digits(n) = u·0^ω` is one specific input, so the
+right-hand side of the closure equation is one specific word; (1)–(3) are
+restatements. ∎ — The proof is trivial in hindsight; the point of
+recording it as a theorem is programmatic honesty: a positive integer has
+finite digit support, so *feedback dies when the digits do*. Divergence
+certificates cannot be conjured from the feedback loop; they live in the
+autonomous tails.
+
+**What survives, restated honestly.** The foundry retains three genuine
+functions after the collapse: (i) *canonicalization* (T-9601: one
+candidate per operator, existence free) — unaffected; (ii) *uniform
+rigidity*: theorems like T-9603 quantify over an entire operator class at
+once and subsume the corresponding one-word open-loop exclusions (the
+finite-state theorem covers, in one statement, every eventually-periodic-
+tail schedule with bounded machine complexity — one level above the
+single-periodic-word exclusions); (iii) *2-adic dynamics of the closed
+loop* (locking, L-9602), which is new mathematics even though it cannot by
+itself emit integers. What the collapse removes is any hope that clever
+feedback *generates* divergent integers beyond what its autonomous tail
+family already encodes. Q-9606 is revised accordingly (below).
+
+**Observation O-9603 (exhaustive small-machine census; EMPIRICAL).**
+X-9602 enumerates ALL finite-state strictly causal operators with
+`|S| ≤ 3` (17,626 machines) and builds each `α_E` exactly. T-9603 predicts
+every integral hit enters an integer cycle of parity period ≤ 3 — only
+`{0}`, `{1,2}`, `{−1}`, `{−5,−7,−10}` — with positive hits subcritical.
+Census outcome: 13,650 machines have integral solutions realizing exactly
+15 distinct integers `{0, ±1, 2, −2, −3, ±4, ±5, −7, ±10, −14, 20}`;
+every positive hit (`1, 2, 4, 5, 10, 20`) reaches the trivial cycle, every
+negative hit reaches `−1` or the `−5` cycle, and no aperiodic-tail hit
+exists — 100% consistent with the theorem. Each hit re-verified at 512
+digits with an independent closure replay. The preperiodic entries
+(`4, 5, 10, 20`) exhibit prefix-steering concretely: the feedback walks an
+integer down a T-chain into the cycle. Log committed under
+`experiments/X-9602-finite-state-census/results/`.
+
+---
+
 ## Dependency audit
 
 - L-9601: self-contained (elementary 2-adic induction). The classical
@@ -353,36 +492,41 @@ floats on the critical path):
 
 ## Remaining uncertainty
 
-- The author has proved L-9601/T-9601/T-9602 in one session; the proofs are
-  short and elementary, but per README §7 they enter as PROPOSED and await
-  independent reconstruction. The most error-prone points to review: the
-  `i ≤ k` range in (F) (off-by-one), the direction of the limsup inequality
-  in T-9602, and the exact statement of strict causality at bit 0.
-- Whether feedback genuinely changes the integrality landscape — rather than
-  every integral `α_E` secretly arising already from a constant operator
-  (trivially, `E' ≡ parity(α_E)` is a constant operator with the same
-  solution; the *content* of Q-9607 is whether *structured, finitely
-  describable* feedback classes reach integers that *no comparably simple
-  open-loop schedule* reaches) — is open and is the program's honest risk.
+- All theorem-level claims (L-9601..L-9603, T-9601..T-9604) are
+  author-proved only (PROPOSED); per README §7 they await independent
+  reconstruction. Most error-prone review points: the `i ≤ k` range in (F)
+  (off-by-one); the limsup direction in T-9602; in T-9603, the
+  identification `y = x_w` via Φ-bijectivity and the `c_w = 0` edge case;
+  in L-9603, the preperiod/period bookkeeping.
+- The session-1 uncertainty ("does feedback genuinely change the
+  integrality landscape?") is now resolved negatively for integer targets
+  (T-9604). The corresponding uncertainty one level up is Q-9608 (can an
+  aperiodic machine-tail family realize a supercritical integer parity
+  vector?), on which nothing is currently known in either direction.
 
 ## Suggested next attack
 
-For a verifier: reconstruct T-9601 from L-9601(2)+(3) alone, then audit
-X-9601's incremental update (the `m_i += 3^{a_i} 2^{k-i}` step) against (F).
-For a builder: attack Q-9601 (finite-memory feedback) — the smallest
-genuinely new question — or Q-9606 (self-reinforcing-zeros design), the
-program's heart.
+For a verifier: reconstruct T-9601 from L-9601(2)+(3) alone; audit
+X-9601's incremental update (the `m_i += 3^{a_i} 2^{k-i}` step) against
+(F); reconstruct T-9603 from L-9603 + Φ-bijectivity + formula (A) — it is
+a one-page argument. For a builder: Q-9608 is the sharpest open target —
+suggested first move: characterize which aperiodic words a deterministic
+one-counter machine can emit autonomously on constant input (counter
+excursion structure constrains them), then test that family against the
+positivity/subcriticality forcing used in T-9603(3).
 
 ---
 
 ## Open questions
 
-- **Q-9601 (IDEA).** *Finite-memory frontier.* Does there exist a
-  finite-state strictly causal transducer `E` (output bit = function of the
-  last `m` digits and a finite control state) with `α_E ∈ Z_{>0}`? The
-  closed loop is not finite-state, so no current exclusion answers this.
-  A negative theorem here would be a genuinely new rigidity result one
-  level above CLAUDE/T-0011-style automatic-schedule exclusions.
+- **Q-9601 (SUPERSEDED by T-9603, session 2).** *Finite-memory frontier.*
+  Resolved: finite-state `E` with `α_E ∈ Z_{>0}` exist in abundance
+  (X-9602 census: 6 positive integers realized with ≤ 3 states), but ALL
+  of them have eventually cyclic orbits with cycle length ≤ `|S|`
+  (T-9603); the divergence half is closed unconditionally — no uniformly
+  supercritical tail-periodic operator has a positive-integer solution.
+  What remains of Q-9601 is exactly the classical nontrivial-cycle
+  existence problem, on which feedback confers no new power.
 - **Q-9602 (IDEA).** *Rationality classification.* For which `E` is `α_E`
   rational? Constants with eventually periodic output give exactly the
   classical rational itineraries; L-9602 shows non-constant operators can
@@ -408,24 +552,42 @@ program's heart.
   necessary conditions on `E` for `α_E ∈ Z_{>0}` (the output code of an
   integral solution must clear them). Deliverable: a filter test on
   operator families run *before* any integrality search.
-- **Q-9606 (IDEA — program heart).** *Self-reinforcing-zeros design.* Find
-  an operator family `{E_θ}` and a monotonicity/contraction structure in
-  which the presence of zero digits in the prefix drives the feedback
-  toward parities whose forced next digit is again 0 — and prove a
-  fixed-point theorem in `θ` forcing an eventually-zero digit stream while
-  keeping `Out(E_θ)` uniformly supercritical. Tension to beat: supercritical
-  parity density pushes value growth, while eventual digit-zero demands an
-  integer; the design space is exactly the operators that pay the growth in
-  parity while hiding it from the digits. No claim that this is possible;
-  this is the ambitious open end.
-- **Q-9607 (IDEA — honest-risk question).** *Collapse test.* Is there a
-  reduction theorem of the form: if `α_E ∈ Z_{>0}` for a finite-memory
-  (resp. polynomial-time) `E`, then `parity(α_E)` is already realized in an
-  excluded open-loop class (eventually periodic / automatic / low
-  factor-complexity)? A proof would collapse Q-9601 into occupied
-  territory and must be looked for *first*, adversarially, before deep
-  search is funded. (First data points cut both ways: the solved feedback
-  instances so far — O-9601, L-9602 — all landed on rationals realizable by
-  constant operators, mildly supporting collapse; the hashed/anti-correlated
-  probes produce streams with no visible open-loop structure — O-9602 —
-  mildly against. Neither is proof.)
+- **Q-9606 (REVISED after T-9604 — design question, honest form).**
+  *Tail-family design.* T-9604 shows an integral solution's parity tail is
+  an autonomous (open-loop) word from the operator's tail family, so
+  "self-reinforcing zeros" cannot be a feedback phenomenon at the integer
+  level. The honest surviving design question: which *countable,
+  finitely-describable tail families* `F_C` can contain the parity vector
+  of a positive integer with supercritical tail? This is the operator-class
+  uniformization of the repository's realization frontier (the constant
+  singleton families are the occupied one-word questions; T-9603 settles
+  every eventually-periodic family at once). Concrete next class: Q-9608.
+- **Q-9607 (SUPERSEDED — resolved YES by T-9603/T-9604, session 2).**
+  *Collapse test.* Feedback DOES collapse for integer targets: a positive
+  integer has finite digit support, so the operator's response beyond the
+  last 1-digit is autonomous, and the certificate-format content of any
+  operator class is its open-loop tail family (T-9604). The program's
+  divergence ambitions are hereby formally re-scoped from "design feedback"
+  to "prove family-level rigidity / find a realizable tail family"
+  (Q-9606, Q-9608). Recorded as a refutation-flavored result per README
+  §17.12: the failed hope is preserved, labeled, and load-bearing for the
+  re-scoped program.
+- **Q-9608 (IDEA — new frontier after the collapse).** *One level above
+  finite-state.* Extend T-9603's family-level rigidity beyond
+  tail-periodic operators: deterministic one-counter and pushdown
+  machines are the smallest classes whose autonomous tails can be
+  aperiodic (e.g. indicator words of Beatty-like or polynomially-spaced
+  positions). Prove: no one-counter autonomous tail is the parity vector
+  of a positive integer with supercritical tail — or locate the exact
+  machine class where family-level rigidity first fails. Note the contact
+  point: sufficiently rich tail families meet the Sturmian/S-adic open
+  frontier of issue #4 from below; a rigidity theorem here would be new
+  and would compose with PR #20's complexity barriers.
+- **Q-9609 (IDEA).** *Closed-loop 2-adic dynamics for its own sake.*
+  T-9604 does not collapse the non-integer regime: on genuinely infinite
+  digit streams the feedback acts forever. Classify locking (L-9602's
+  phenomenon): which operator families have finitely many attracting
+  rational solutions, and is there an operator-space analogue of
+  sign-criticality? Honestly labeled: not directly counterexample-bearing,
+  but it is the part of the foundry where feedback is genuinely new
+  mathematics, and rigidity tools proved here may transfer to Q-9608.

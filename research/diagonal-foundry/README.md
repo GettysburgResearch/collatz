@@ -20,14 +20,30 @@ frontier above the constants is structurally open.
 
 ## Files
 
-- `FOUNDRY.md` — the mathematical packet: definitions D-9601..D-9603,
+- `FOUNDRY.md` — the mathematical packet: definitions D-9601..D-9604,
   flip lemma L-9601, foundry theorem T-9601, supercritical criterion
-  T-9602, solved instances O-9601 / L-9602 / O-9602, gap audit,
-  adversarial tests, open questions Q-9601..Q-9607. All theorem-level
-  claims are **PROPOSED** (author-proved this session, awaiting
+  T-9602, solved instances O-9601 / L-9602 / O-9602, and the session-2
+  **feedback-collapse theorems**: L-9603, T-9603 (finite-state feedback
+  collapse — no divergence from tail-periodic operators, unconditionally),
+  T-9604 (tail autonomy — for integer targets, feedback reduces to
+  prefix-steering over an open-loop tail family; Q-9607 resolved YES),
+  census observation O-9603, open questions Q-9601..Q-9609. All
+  theorem-level claims are **PROPOSED** (author-proved, awaiting
   independent review; reviewer slots open).
 - `experiments/X-9601-foundry-probe/` — exact builder + independent replay
   verifier + probe battery, with committed log.
+- `experiments/X-9602-finite-state-census/` — exhaustive census of all
+  17,626 strictly causal transducers with ≤ 3 states: 13,650 integral
+  hits, 15 distinct integers, 100% T-9603-consistent.
+
+## Program state after session 2
+
+The honest headline: the collapse risk flagged in session 1 (Q-9607) is
+now a proved collapse for integer targets. The live frontier is
+family-level rigidity one class above finite-state (Q-9608: one-counter /
+pushdown autonomous tails), the tail-family design question (Q-9606,
+revised), and the closed-loop 2-adic dynamics (Q-9609), which feedback
+does still own.
 
 ## Status honesty
 
