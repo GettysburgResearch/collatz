@@ -6,6 +6,10 @@ Conway's “unpredictable iterations” introduced generalized piecewise-affine 
 
 This is not an undecidability theorem for the single standard `3x+1` map. It shows that broad syntactic classes containing Collatz-like maps can encode undecidable behavior.
 
+## Exact binary–ternary computation inside the standard map
+
+Stérin and Woods define a quasi-cellular automaton that exactly simulates standard Collatz evolution and prove that its binary/ternary geometry embeds a base-3-to-base-2 conversion algorithm. Their finite-state-transducer viewpoint is a direct predecessor for mixed-radix carry analysis, but it does not provide nontermination or finite-boundary closure. [@SterinWoods2020]
+
 ## Exact standard-map rewriting
 
 Yolcu, Aaronson, and Heule construct a mixed binary–ternary string-rewrite system and prove that its termination is equivalent to the standard Collatz conjecture. They also obtain automated termination certificates for proper subsystems while the full system remains unresolved. [@YolcuAaronsonHeule2023]

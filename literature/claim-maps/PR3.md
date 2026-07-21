@@ -35,7 +35,7 @@
 | `PR3/Q-0004` multi-chart transition groupoid | `OPEN — NO LOCATED THEOREM` | Measure rigidity and generalized rewriting are only analogies. |
 | `PR3/Q-0005` finite versus adic closure | `OPEN — CLASSICAL WARNING` | Bernstein–Lagarias confirms the naturality of `2`-adic encodings; it does not turn an adic point into an ordinary integer. [@BernsteinLagarias1996] |
 | `PR3/Q-0006` independent verification | `PROCESS CLAIM` | Requires repository review, not literature matching. |
-| `PR3/Q-0007` vertical macro-tile closure | `OPEN — NO LOCATED THEOREM` | AYH termination technology may provide proof methods, not an existing solution. |
+| `PR3/Q-0007` vertical macro-tile closure | `OPEN — NO LOCATED THEOREM` | AYH termination technology and the Stérin–Woods binary/ternary CQCA provide exact neighboring representations, not an existing closure theorem. [@YolcuAaronsonHeule2023; @SterinWoods2020] |
 | `PR3/Q-0008` parameterized `S`-unit schemas | `OPEN — LITERATURE INTERFACE` | Future pass should compare exact equations to Evertse–Schlickewei–Schmidt style `S`-unit results; no application is asserted here. |
 | `PR3/Q-0009` structured code geometry | `OPEN — NO LOCATED THEOREM` | Preimage trees count different objects. |
 | `PR3/Q-0010` growing geometry under tensor amplification | `OPEN — NO LOCATED THEOREM` | Internal algebraic/combinatorial target. |
@@ -45,3 +45,4 @@
 - `KTHM-0001`–`KTHM-0003`: parity cylinders, parity/residue bijection, and exact tracking.
 - `KTHM-0004`: order formulas for `2`- and `3`-adic precision calculations.
 - `KTHM-0013`: tree-density theorems, primarily as a warning not to identify preimage growth with collision-fiber growth.
+- `KTHM-0014`: exact binary/ternary transducer context for carry-geometry comparisons.

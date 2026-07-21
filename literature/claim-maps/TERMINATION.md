@@ -14,6 +14,7 @@ Yolcu, Aaronson, and Heule construct a finite string-rewrite system on mixed bin
 | Termination implies Collatz convergence | `KNOWN — EXACT` | Black-box import KTHM-0012. |
 | Collatz convergence implies rewrite termination | `KNOWN — EXACT` | Black-box import KTHM-0012; check the quantified initial-string language. |
 | Automated matrix/arctic interpretation experiments | `PARTIAL OVERLAP` | AYH already studies such interpretations and proves limitations for a unary system; local experiments may extend or reproduce that work. |
+| Binary/ternary transducer or carry semantics | `PARTIAL OVERLAP` | Stérin–Woods give an exact quasi-cellular-automaton simulation and base-conversion theorem; a local rule crosswalk is still required. [@SterinWoods2020] |
 | Any claim that generalized Collatz undecidability obstructs this standard system | `MISAPPLIED / HYPOTHESES FAIL` | Conway/Kurtz–Simon concern classes of generalized piecewise-affine maps, not the fixed standard map. [@Conway1972; @KurtzSimon2007] |
 
 ## Required review artifacts

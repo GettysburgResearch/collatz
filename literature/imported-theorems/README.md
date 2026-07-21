@@ -15,5 +15,6 @@
 | `KTHM-0011` | Mahler Z-number definition/countability | black box | `CLAUDE/Q-0002` analogy |
 | `KTHM-0012` | AYH rewrite termination equivalence | black box | `TERM/...` |
 | `KTHM-0013` | preimage-tree density bounds | black box | fiber-counting interface |
+| `KTHM-0014` | binary–ternary base-conversion embedding | black box | mixed-radix and rewrite interface |
 
 Black-box imports are not reproduced proofs and must not be presented as such. Complete local proofs are copyright-safe reconstructions in repository notation.
