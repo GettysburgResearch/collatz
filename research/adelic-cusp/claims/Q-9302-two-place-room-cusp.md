@@ -1,32 +1,35 @@
-# Q-9302 — Two-place room-cusp decay
+# Q-9302 — Two-place room-cusp proof mechanism
 
 **Claim ID:** Q-9302  
-**Title:** Can a short CRT frequency orbit sample enough of the stationary two-place spectral mass to close the room discrepancy?  
+**Title:** Can the equivalent two-place formulation yield a proof mechanism unavailable in the one-place presentation?  
 **Status:** IDEA  
 **Authoring agent:** `gpt56-pro-04`  
 **Reviewing agents:** none  
 **Created:** 2026-07-21  
 **Last updated:** 2026-07-21  
-**Dependencies:** `T-9304`, `L-9306`; branch-qualified room-position interface for the final survivor transfer  
-**Scope:** newest issue-#4 room/Cantor EQ frontier  
+**Dependencies:** `T-9304`, `L-9306`, `L-9307`, `T-9305`  
+**Scope:** issue-#4 room/Cantor EQ frontier after exact split collapse  
 **Related counterexample candidates:** none
 
-## Statement
+## Exact reduction already proved
 
 For `n,j >= 1`, put
 
 \[
-Q=64^n81^j,
+K=n+j,
 \qquad
+Q=64^n81^j,
+\]
+
+\[
 u=(81^j)^{-1}\pmod{64^n},
 \qquad
 v=(64^n)^{-1}\pmod{81^j}.
 \]
 
-For `H<Q`, define the restricted two-place discrepancy sum
+Define
 
 \[
-\boxed{
 \mathcal D_{n,j}(H)
 =
 \sum_{1\le h\le H}
@@ -35,177 +38,171 @@ For `H<Q`, define the restricted two-place discrepancy sum
 \widehat\mu\!\left(\frac{hu}{64^n}\right)
 \widehat\nu\!\left(\frac{hv}{81^j}\right)
 \right|.
-} \tag{1}
+\tag{1}
 \]
 
-The open target is to identify a room-relevant family
+`L-9307` proves that the two local character classes are the components of the same rational character
 
 \[
-(n_k,j_k,H_k),
-\qquad
-n_k+j_k\longrightarrow\infty,
+r=\frac hQ,
 \]
 
-for which
+and that the two local products stitch one contiguous reciprocal phase chain. `T-9305` then proves
 
 \[
 \boxed{
-\mathcal D_{n_k,j_k}(H_k)\longrightarrow0.
-} \tag{2}
-\]
-
-More ambitiously, prove a quantitative estimate uniform whenever
-
-\[
-H\le Q^{\delta}
-\]
-
-for some fixed `delta>0`, or in the exact frequency regime required by the issue-#4 room recursion.
-
-If the branch-qualified position-rigidity bijection has displacement at most `D_j` joint-modulus slots, `T-9304` gives the weighted transfer error
-
-\[
-\sum_{h\le H}
-\frac1h
 \left|
-\frac{S_{n+j}(h)}{2^{n+j}}-G_{n,j}(h)
+\mathcal D_{n,j}(H)
+-
+\sum_{1\le h\le H}
+\frac1h\frac{|S_K(h)|}{2^K}
 \right|
-\le
-\boxed{
-\frac{2\pi D_jH}{Q}.
-} \tag{3}
+<
+\frac{2\pi H}{64^K}.
+}
+\tag{2}
 \]
 
-Thus `(2)` plus
+Consequently, whenever
 
 \[
-\boxed{
-D_jH/Q\longrightarrow0
-} \tag{4}
+H=o(64^K),
+\tag{3}
 \]
 
-would transfer two-place cusp decay to the actual deeper survivor coefficients, conditional on that position interface.
+the two-place absolute-Fourier target is asymptotically equivalent to the original one-place EQ target, uniformly in the split.
 
-## Definitions
-
-The map underlying `(1)` is the short orbit
+In particular, for the issue-#4 range
 
 \[
-\boxed{
+H=2^K,
+\]
+
+the discrepancy between the two criteria is at most
+
+\[
+2\pi2^{-5K}.
+\tag{4}
+\]
+
+Thus the open problem is **not** whether `(1)` is a weaker decay statement. It is not. The open problem is whether the two-place dynamics offers a better way to prove the same statement.
+
+## Reframed research question
+
+Can one exploit the fixed product measure
+
+\[
+\mu\otimes\nu
+\quad\text{on}\quad
+\mathbb Z_2\times\mathbb Z_3
+\]
+
+and the global rational diagonal
+
+\[
 h\longmapsto
-(hu\pmod{64^n},
- hv\pmod{81^j}),
-\qquad1\le h\le H.
-} \tag{5}
+\frac h{64^n81^j}
 \]
 
-Over the complete range `h mod Q`, this map is a bijection onto the product dual group, and `L-9306` factors every absolute moment. Over a short interval, it is a thin arithmetic diagonal whose discrepancy is the whole problem.
+to prove the equivalent weighted decay by a mechanism that is invisible in either local product alone?
 
-The phrase *room-relevant* refers to parameter choices for which the issue-#4 product-rigidity/room recursion compares the actual depth-`n+j` survivor positions with the CRT product at the interval scale being counted.
+A successful answer must use more than the pointwise absolute factorization. `T-9305` proves that the latter merely repackages the original phase chain.
 
-## Motivation
+## What remains genuinely new
 
-The newest issue-#4 work shows that the finite survivor set has an exact core/Cantor product structure up to a controlled real displacement. `D-9303` through `L-9306` identify the fixed local measures and prove that global spectral correlation vanishes completely.
+### 1. Signed transfer operators
 
-Therefore the residual difficulty is sharply localized:
-
-> A low-height integer interval does not sample the product dual group independently. It follows one coupled CRT orbit determined by the inverse pair `(u,v)`.
-
-A theorem for `(5)` would directly engage the room process rather than returning to the earlier one-place worst-frequency wall.
-
-## Proposed proof routes
-
-### Route A — restricted-orbit large sieve
-
-Prove a large-sieve inequality adapted to the graph
+The absolute products collapse, but complex phases need not. Construct a transfer operator retaining the phase of
 
 \[
-\{(hu,hv):1\le h\le H\}
+\widehat\mu(h/Q)\widehat\nu(h/Q)
 \]
 
-against the product spectral weights
+across neighboring frequencies or room transitions. Signed cancellation between frequencies could beat the copy barrier even though pointwise magnitudes are equivalent.
+
+A useful output would be a rigorous estimate for a smoothed sum
 
 \[
-|\widehat\mu(a/64^n)|^2
-|\widehat\nu(b/81^j)|^2.
+\sum_h w(h/H)
+\widehat\mu(h/Q)
+\widehat\nu(h/Q),
 \]
 
-The complete second moment is exactly `2^(-(n+j))` by `L-9306`. The missing ingredient is a nonconcentration estimate showing that a short graph cannot pass through a disproportionate amount of this mass.
+with a kernel adapted to the positivity-native room recursion.
 
-### Route B — two-place phase-energy inequality
+### 2. Bilateral inverse theorem
 
-Write both factors as cosine products. Seek a deterministic inequality
+`L-9307` identifies a single reciprocal phase chain indexed by
 
 \[
-|G_{n,j}(h)|
-\le
-\exp\bigl(-c(\mathcal E_2(h)+\mathcal E_3(h))\bigr),
+0\le\ell<K.
 \]
 
-then prove that every low-height `h` has logarithmic **combined** phase energy. A resonance lost at the `2`-adic place may be forced, by the product formula and the CRT inverse relation, to generate loss at the `3`-adic place.
+A split merely decides which indices are read at the `3`-adic place and which are read through dyadic reciprocity. Prove that a low-energy chain has a bounded-complexity bilateral carry description, then classify those descriptions.
 
-This route is the two-place version of `L-9303` and may succeed even when either local energy alone is small.
+The target is now sharper than the earlier vague combined-energy proposal:
 
-### Route C — solenoid renewal
+> Low energy on one stitched chain should force exact `64`- or `81`-divisibility, a periodic carry template, or amplification to a forbidden full frequency block.
 
-View `(u,v)` as a finite reduction of one rational orbit in the dual `{2,3}` solenoid. Prove a renewal or shrinking-target theorem for the first `H` multiples of that orbit, with constants uniform in `n,j`.
+### 3. Hyperbolic solenoid renewal
 
-The theorem must be arithmetic and quantitative. Generic unique ergodicity after taking `H` comparable to the full period is not enough.
+The character pair is not an arbitrary CRT graph. It is the local image of one global rational `h/Q`. Under the hyperbolic action induced by `81/64`, its two local coordinates move in opposite directions.
 
-### Route D — room recursion plus positivity
+Seek a quantitative renewal theorem for this rational diagonal that controls how often the digit mask is nearly annihilated along a finite bilateral orbit. The theorem must be uniform in rational height and strong enough for the initial segment `1<=h<=H`.
 
-Use the issue-#4 room transition law directly. Instead of bounding `(1)` termwise, derive cancellation or entropy growth across room digits. The stationary measures identify the local transition kernels; positivity of the counting recursion may allow a transfer-operator proof that avoids absolute Fourier sums altogether.
+### 4. Room recursion with positivity
+
+Issue #4 shows that the base-`81` room digits are wrap counts of the `H`-orbit and that the finite marginals form an inverse-limit tower. Fourier absolute values may remain the wrong language below the fair window.
+
+Use the stationary local measures to write the exact tower kernel, but prove contraction directly for interval counts, relative entropy, or a positive transfer operator. Such a proof could solve the equivalent EQ criterion without passing through `(1)` term by term.
 
 ## What would count as progress
 
-1. A power-saving upper bound for `(1)` in any nontrivial family with `H` growing polynomially.
-2. A restricted `L^2` theorem showing
-   \[
-   \sum_{h\le H}|G_{n,j}(h)|^2
-   \le H^{1-\epsilon}+o(H)
-   \]
-   in a room-relevant range.
-3. A combined phase-energy lower bound for every `h<=H`.
-4. A proof that large joint coefficients force a structured subprogression whose mass contradicts one local block theorem.
-5. A rigorous obstruction showing that a proposed range of `(2)` is impossible because of exact self-similar copies; this would still sharpen the route.
+1. A signed or smoothed two-place estimate not reducible to the pointwise triangle inequality of `T-9305`.
+2. A low-energy inverse theorem for the stitched reciprocal chain.
+3. A positive transfer-operator contraction for the room tower.
+4. A theorem showing that exceptional depths across adjacent scales force an impossible bilateral carry template.
+5. A rigorous obstruction proving that every two-place signed strategy also collapses to the one-place wall; this would close the method branch honestly.
 
-## What would falsify the motivating mechanism
+## What is now ruled out
 
-- An explicit infinite parameter family with `D_jH/Q -> 0` but `D_(n,j)(H)` bounded below away from zero due to coherent local resonances.
-- A proof that every short orbit `(5)` can remain trapped in high spectral mass despite the full-group moment law.
-- A room displacement necessarily too large for `(4)` in every frequency range where `(2)` could be proved.
+The following is no longer a viable claim of progress by itself:
 
-Any such result would refute this particular two-place Fourier transfer, not EQ or Collatz.
+- proving decay of `D_(n,j)(H)` in a sub-`64^K` range without recognizing that the same proof has simultaneously established the original EQ weighted decay;
+- treating the two local absolute factors as independent sources of energy;
+- using full-group moment factorization alone to infer short-orbit decay;
+- invoking the branch-qualified room-position map merely to transfer absolute Fourier magnitudes, because `T-9305` supplies a direct phase-level comparison for that purpose.
 
 ## Dependency audit
 
-- `T-9304` supplies the pointwise two-place coefficient and conditional position transfer.
-- `L-9306` supplies exact full-group moment factorization.
-- The target `(2)` is open and is not used as a premise elsewhere.
-- The final implication to actual survivor positions is conditional on the branch-qualified room-position theorem.
-- No external large-sieve, mixing, or renewal theorem is asserted to apply.
+- `T-9304` supplies the exact product coefficient.
+- `L-9306` supplies full-group moment factorization.
+- `L-9307` supplies the global rational diagonal and phase stitching.
+- `T-9305` proves the weighted equivalence `(2)`.
+- The research routes above are open and are not used as premises elsewhere.
+- No external large-sieve, mixing, renewal, or rigidity theorem is asserted to apply.
 
 ## Gap audit
 
-- Full-group moment factorization does not imply restricted-orbit sampling.
-- The orbit length `H` may be much shorter than either local period.
-- The two local coefficient arrays are highly singular and self-similar.
-- A weighted Fourier sum may still be the wrong proof template below the fair window; issue #4's copy barrier remains relevant.
-- Equation `(3)` controls coefficient transfer, not directly interval counts; the appropriate discrepancy lemma must still be supplied.
-- Parameters `n,j,H` must be matched exactly to the live room recursion before any claimed quantitative consequence.
+- Equivalence of targets gives no decay theorem.
+- Complex signed sums may not interact favorably with the positive counting recursion.
+- The room tower does not close at any fixed modulus.
+- A hyperbolic orbit theorem must handle low rational height and a singular Bernoulli measure, not Haar-generic points.
+- A proof for density-one depths would not close the all-depth criterion.
+- None of these routes decides whether the infinite survivor attractor contains one ordinary positive integer.
 
 ## Adversarial tests
 
-1. At `H=Q-1`, the orbit is essentially the full product group and `L-9306` applies; this is too long for the target.
-2. At `H=1`, a single resonant coefficient can be large; no decay should be expected without growing `H` or local energy.
-3. Frequencies divisible by powers of `64` or `81` create exact local self-similarity and must be separated before any uniform estimate.
-4. If `D_jH` is comparable to `Q`, the position-transfer error `(3)` is order one and the route correctly fails.
-5. Any theorem proved only after averaging the starting point of the interval does not automatically control the initial segment required by `(1)`.
+1. At `H=1`, one coefficient can remain large; any theorem must exploit growth of the frequency set or orbit length.
+2. Frequencies divisible by powers of `64` or `81` generate exact trivial factors and must be normalized before an inverse theorem.
+3. Full-group Parseval is compatible with a highly exceptional initial interval.
+4. A split-dependent claimed gain contradicts `T-9305` unless it comes from a genuinely split-dependent proof tool rather than the value of the target.
+5. Signed cancellation that disappears after taking absolute values cannot be inserted silently into an Erdős--Turán argument; the smoothing/counting interface must be written explicitly.
 
 ## Remaining uncertainty
 
-The correct room-relevant scaling of `n,j,H` should be frozen jointly with issue #4's current recursion notation. The most promising analytic object is the combined phase energy, but it may still be defeated by exact copy frequencies.
+The most promising route is a bilateral low-energy inverse theorem followed by frequency-block amplification. The positivity-native room transfer operator is a serious alternative because the existing copy barrier may make every absolute-Fourier proof inefficient even after stationarization.
 
 ## Suggested next attack
 
-Derive the exact two local phase recurrences for the same numerator `h` and eliminate `h` between them. Search for a product-formula inequality showing that simultaneous low energy forces a large power of `2` or `3` to divide `h`. For polynomial-height `h`, logarithmically many simultaneous resonances would then be impossible.
+Derive the exact carry recurrence for the common phases `q_ell(h)` across the split and classify maximal intervals on which the carries remain unchanged. This is the correct starting point for either a signed transfer operator or exceptional-frequency amplification.
