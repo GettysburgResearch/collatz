@@ -25,6 +25,10 @@ All mathematical claims on the active research branch await independent review.
 | T-0005 | Theorem | Exponentially large mildly supercritical collision fibers exist | PROPOSED | `claims/theorems/T-0005-signature-tail-amplification.md` | L-0001, L-0005, T-0002 |
 | O-0005 | Observation | A 339-branch mildly supercritical depth-44 chart | PROPOSED | `claims/observations/O-0005-339-branch-signature-chart.md` | L-0005, T-0002, T-0005, X-0003 |
 | X-0003 | Experiment | Equal-signature classes and odd-tail collision charts through `m=8` | EMPIRICAL | `experiments/X-0003-signature-tail-fibers/` | L-0005, L-0006, T-0005 |
+| L-0007 | Lemma | Exact tensor law for inverse-root offset geometry | PROPOSED | `claims/lemmas/L-0007-offset-tensor-law.md` | L-0005, L-0006 |
+| L-0008 | Lemma | Arbitrary-precision two-word atomic collision codes | PROPOSED | `claims/lemmas/L-0008-high-precision-atomic-codes.md` | L-0005, L-0006 |
+| T-0006 | Theorem | Geometry-preserving collision-code amplification | PROPOSED | `claims/theorems/T-0006-geometry-preserving-amplification.md` | L-0005--L-0008, T-0005 |
+| X-0004 | Experiment | Exact offset-tensor and geometry-preservation checks | EMPIRICAL | `experiments/X-0004-offset-tensor/` | L-0007, L-0008, T-0006 |
 | Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0003, T-0004 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
@@ -33,7 +37,8 @@ All mathematical claims on the active research branch await independent review.
 | Q-0006 | Open question | Independent verification of the active contribution | IDEA | `OPEN_PROBLEMS.md` | all above |
 | Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003 |
 | Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004 |
-| Q-0009 | Open question | Structured collision codes and closure-quality geometry | IDEA | `OPEN_PROBLEMS.md` | L-0006, T-0005, O-0005 |
+| Q-0009 | Open question | Structured collision codes and closure-quality geometry | IDEA | `OPEN_PROBLEMS.md` | L-0006, T-0005, O-0005, T-0006 |
+| Q-0010 | Open question | Growing geometry under tensor amplification | IDEA | `OPEN_PROBLEMS.md` | L-0007, L-0008, T-0006 |
 
 ## Relationship among the main finite theorems
 
@@ -44,6 +49,9 @@ All mathematical claims on the active research branch await independent review.
 - `L-0005` identifies collision fibers with equal inverse-signature parity codes.
 - `L-0006` supplies a 3-adic precision budget for composing such codes.
 - `T-0005` proves that branching and supercritical drift can be designed separately and resolves unbounded fiber cardinality.
+- `L-0007` transports the exact inverse-root geometry through code composition.
+- `L-0008` supplies arbitrary precision on demand.
+- `T-0006` combines these to amplify any useful finite alphabet while preserving all already witnessed local geometry.
 
 ## Status note
 
