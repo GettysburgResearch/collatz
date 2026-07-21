@@ -16,7 +16,7 @@ Related counterexample candidates: none
 Put
 
 \[
-R_0(x)=\left\lfloor\frac x2\right\rfloor,
+R_0(x)=\left\lfloor\frac{x}{2}\right\rfloor,
 \qquad
 R_1(x)=\left\lceil\frac{3x}{2}\right\rceil
 \qquad(x\ge0).
@@ -127,7 +127,7 @@ Choose one of the \(2^Lx\) depth-\(L\) descendants uniformly and record only its
 
 \[
 \boxed{
-\mathbb P_x([w])=rac{R_w(x)}{2^Lx}.
+\mathbb P_x([w])=\frac{R_w(x)}{2^Lx}.
 }
 \tag{7}
 \]
@@ -212,7 +212,7 @@ This criterion carries an explicit ordinary boundary marker at every finite stag
 The even parents are \(2,4,\ldots,2\lfloor x/2\rfloor\). Rule (3) gives their branch-zero children the ranks
 
 \[
-1,2,\ldots,\left\lfloor\frac x2\right\rfloor,
+1,2,\ldots,\left\lfloor\frac{x}{2}\right\rfloor,
 \]
 
 proving the branch-zero claim.
@@ -267,7 +267,7 @@ If \(j=2k\), rule (3) contains the child \((0,k)\), whose rank is \(j/2=T(j)\). 
 whose rank is
 
 \[
-3k-1=rac{3j+1}{2}=T(j).
+3k-1=\frac{3j+1}{2}=T(j).
 \]
 
 This proves (9)--(10). Iteration proves the ordinary-spine statement. Applying the same branch maps to the full population \([j]\) proves (11).
