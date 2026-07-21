@@ -15,33 +15,35 @@ Related counterexample candidates: none
 
 Let \(G=(V,E)\) be a finite directed graph. Associate to every vertex \(i\in V\) a positive integer \(v_i\), representing the negative phase \(-v_i\).
 
-For every edge \(e:i	o j\), suppose there are positive integers
+For every edge \(e:i\to j\), suppose there are positive integers
 
 \[
-u_e,\qquad L_e\ge1,\qquad a_e\ge0\]
+u_e,\qquad L_e\ge1,\qquad a_e\ge0
+\]
 
 such that
 
 \[
-oxed{
+\boxed{
 T^{L_e}(-u_e)=-v_j,
 }
-	ag{1}
+\tag{1}
 \]
 
 and the return word contains exactly \(a_e\) odd steps. Put
 
 \[
 M_e=2^{L_e},\qquad N_e=3^{a_e},\qquad
-\lambda_e=rac{N_e}{M_e}.
-	ag{2}
+\lambda_e=\frac{N_e}{M_e}.
+\tag{2}
 \]
 
 At phase \(i\), use the quotient coordinate
 
 \[
 n=q-v_i.
-	ag{3}\]
+\tag{3}
+\]
 
 The edge cylinder and edge map are
 
@@ -49,16 +51,17 @@ The edge cylinder and edge map are
 \mathcal C_e
 =
 \{q\in\mathbb Z:q\equiv v_i-u_e\pmod{M_e}\},
-	ag{4}
+\tag{4}
 \]
 
 \[
-oxed{
+\boxed{
 F_e(q)
-=N_erac{q-v_i+u_e}{M_e}
+=N_e\frac{q-v_i+u_e}{M_e}
 =\lambda_eq+\lambda_e(u_e-v_i).
 }
-	ag{5}
+\tag{5}
+\]
 
 Then:
 
@@ -67,26 +70,27 @@ Then:
 For every \(q\in\mathcal C_e\),
 
 \[
-oxed{
+\boxed{
 T^{L_e}(q-v_i)=F_e(q)-v_j.
 }
-	ag{6}
+\tag{6}
+\]
 
 ### 2. Graph-directed counterexample criterion
 
 For each vertex \(i\), let \(S_i\subseteq\mathbb Z\) be a set of quotients satisfying \(q>v_i\). Suppose there is a deterministic edge selector on the disjoint phase space
 
 \[
-\mathcal S=igsqcup_{i\in V}\{i\}	imes S_i
+\mathcal S=\bigsqcup_{i\in V}\{i\}\times S_i
 \]
 
-such that whenever edge \(e:i	o j\) is selected at \(q\in S_i\),
+such that whenever edge \(e:i\to j\) is selected at \(q\in S_i\),
 
 \[
 q\in\mathcal C_e,
 \qquad
 F_e(q)\in S_j.
-	ag{7}
+\tag{7}
 \]
 
 If, in addition, every infinite selected graph path has unbounded quotient values, then every state \((i,q)\in\mathcal S\) yields a positive-integer Collatz counterexample \(q-v_i\).
@@ -96,19 +100,20 @@ If, in addition, every infinite selected graph path has unbounded quotient value
 Assume every directed cycle \(C\) in \(G\) satisfies
 
 \[
-oxed{
+\boxed{
 \Lambda(C):=\prod_{e\in C}\lambda_e>1.
 }
-	ag{8}
+\tag{8}
 \]
 
-Then there exist positive phase weights \(w_i>0\), a number \(\eta>1\), and a finite threshold \(Q\) such that for every edge \(e:i	o j\) and every \(q\ge Q\),
+Then there exist positive phase weights \(w_i>0\), a number \(\eta>1\), and a finite threshold \(Q\) such that for every edge \(e:i\to j\) and every \(q\ge Q\),
 
 \[
-oxed{
+\boxed{
 w_jF_e(q)>w_iq.
 }
-	ag{9}
+\tag{9}
+\]
 
 Consequently, under (7), any selected orbit that begins above \(Q\) is unbounded, even when some individual edges are locally subcritical.
 
@@ -117,14 +122,15 @@ Consequently, under (7), any selected orbit that begins above \(Q\) is unbounded
 Suppose
 
 \[
--v_0	o-v_1	o\cdots	o-v_{\ell-1}	o-v_0
+-v_0\to-v_1\to\cdots\to-v_{\ell-1}\to-v_0
 \]
 
 is a nonzero negative Collatz cycle, and group one full circuit into a block with total length \(L\), odd count \(a\), \(M=2^L\), and \(N=3^a\). Then
 
 \[
-oxed{N>M.}
-	ag{10}
+\boxed{N>M.}
+\tag{10}
+\]
 
 Thus every ordinary negative cycle supplies a directed cycle with positive logarithmic weight. It is a natural expanding spine for a multi-target renewal grammar.
 
@@ -167,16 +173,16 @@ Put
 There are finitely many simple directed cycles. By (8), their mean logarithmic weights are positive. Choose
 
 \[
-0<arepsilon<\min_Crac1{|C|}\sum_{e\in C}\ell_e.
-	ag{11}
+0<\varepsilon<\min_C\frac1{|C|}\sum_{e\in C}\ell_e.
+\tag{11}
 \]
 
 Consider the finite system of difference inequalities
 
 \[
-p_i-p_j\le\ell_e-arepsilon
-\qquad(e:i	o j).
-	ag{12}
+p_i-p_j\le\ell_e-\varepsilon
+\qquad(e:i\to j).
+\tag{12}
 \]
 
 It is feasible: summing the right-hand sides around any directed cycle gives a positive number by (11), so the standard difference-constraint obstruction—a negative directed cycle—is absent.
@@ -184,14 +190,14 @@ It is feasible: summing the right-hand sides around any directed cycle gives a p
 Choose one solution and set
 
 \[
-w_i=e^{p_i},\qquad\eta=e^arepsilon>1.
+w_i=e^{p_i},\qquad\eta=e^\varepsilon>1.
 \]
 
 Equation (12) is equivalent to
 
 \[
-\lambda_erac{w_j}{w_i}\ge\eta.
-	ag{13}
+\lambda_e\frac{w_j}{w_i}\ge\eta.
+\tag{13}
 \]
 
 Write
@@ -203,16 +209,18 @@ b_e=\lambda_e(u_e-v_i).
 Then
 
 \[
+\begin{aligned}
 w_jF_e(q)
-=\lambda_erac{w_j}{w_i}(w_iq)+w_jb_e
-\ge\eta w_iq-B,
-	ag{14}
+&=\lambda_e\frac{w_j}{w_i}(w_iq)+w_jb_e\\
+&\ge\eta w_iq-B,
+\end{aligned}
+\tag{14}
 \]
 
 where
 
 \[
-B=\max_{e:i	o j}|w_jb_e|<\infty.
+B=\max_{e:i\to j}|w_jb_e|<\infty.
 \]
 
 Choose \(Q\) so large that
@@ -228,14 +236,14 @@ y_{t+1}\ge\eta y_t-B,
 \qquad y_t=w_{i_t}q_t,
 \]
 
-so, after increasing \(Q\) once more if needed, \(y_t	o\infty\). Since the phase weights are bounded above and below, \(q_t	o\infty\).
+so, after increasing \(Q\) once more if needed, \(y_t\to\infty\). Since the phase weights are bounded above and below, \(q_t\to\infty\).
 
 ### Negative-cycle product
 
 Let one full negative cycle begin and end at \(-v\), with affine constant \(B>0\). The finite affine formula gives
 
 \[
--v=rac{-Nv+B}{M}.
+-v=\frac{-Nv+B}{M}.
 \]
 
 Therefore
@@ -274,7 +282,7 @@ Negative Collatz cycles are ideal spines because their own cycle products are au
 
 ## Adversarial tests
 
-`X-0006` verifies the edge formula on the recorded one-target charts. A future `X-0007` should build explicit phase graphs from negative cycles and solve the finite potential inequalities exactly or with rational certificates.
+`X-0006` verifies the edge formula on the recorded one-target charts. `X-0008` supplies exact cycle-padded edges that can be used in future phase graphs.
 
 ## Remaining uncertainty
 
@@ -282,4 +290,4 @@ The finite theorem appears complete. No graph satisfying the arithmetic coverage
 
 ## Suggested next attack
 
-Use the negative 11-cycle containing \(-61\) and \(-136\), or the negative 3-cycle containing \(-5,-7,-10\), as the spine. Enumerate finite side returns to cycle phases, group them into macro-edges, and search for a deterministic cylinder graph whose every cycle has positive mean and whose survivor set contains one explicit positive quotient.
+Use the negative eleven-cycle, negative three-cycle, and negative fixed phase as graph vertices. Combine the cycle-padded towers of `T-0015` with pressure scoring from `T-0016`, and seek a deterministic survivor grammar whose every realizable cycle has positive mean and whose accepted language contains one explicit positive quotient.
