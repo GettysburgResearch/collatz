@@ -21,11 +21,11 @@ n/2,&n\equiv0\pmod2,\\
 \end{cases}
 $$
 
-For `d >= 0`, define the forbidden and safe sets
+For an integer `d >= 0`, define the forbidden and safe sets
 
 $$
 F_d=\{n\in\mathbb Z_{>0}:T^j(n)\in\{1,2\}
-\text{ for some }0\le j\le d\},
+\text{ for some }j\in\{0,\ldots,d\}\},
 $$
 
 $$
@@ -37,8 +37,8 @@ least-significant-digit-first order. A word is canonical exactly when it is
 nonempty and ends in `1`.
 
 For a finite forbidden set `F`, its **canonical tail component** means the two
-left quotients reached after a prefix can no longer be a prefix of an encoding
-in `F`:
+left quotients reached after a prefix is not a prefix—including equality—of
+any encoding in `F`:
 
 - the residual after a prefix ending in `0`;
 - the residual after a prefix ending in `1`.
@@ -48,7 +48,7 @@ and to the ending-`1` residual on `1`.
 
 The **sink-stripped boundary** is the subgraph induced by all other states of
 the minimal complete DFA for the canonical encodings of
-`Z_(>0) \ F`.
+$\mathbb Z_{>0}\setminus F$.
 
 ## Definitions
 
@@ -82,8 +82,8 @@ encoding are restated here.
 
 ## Gap audit
 
-- Membership in all finite `S_d` is not asserted to produce an ordinary
-  integer in their infinite intersection.
+- Nonemptiness of every fixed-depth `S_d` is not asserted to imply
+  nonemptiness of their infinite intersection.
 - A finite word is never treated as an infinite 2-adic stream.
 - "Tail" refers to DFA input behavior, not to a tail of a Collatz orbit.
 

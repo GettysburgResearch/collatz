@@ -10,8 +10,8 @@ Counterexample status: none
 This packet audits the proposed use of finite-horizon safety automata as
 examples for automata learning or PDR-style widening.
 
-The central correction is simple but structural: every finite safety language
-is cofinite. Its minimal DFA therefore has an inevitable recurrent
+The central correction is simple but structural: every fixed-depth safety
+language is cofinite. Its minimal DFA therefore has an inevitable recurrent
 two-state component accepting all sufficiently long canonical words. That
 component cannot be retained by a safe forward-invariant language because it
 contains all sufficiently large powers of two.

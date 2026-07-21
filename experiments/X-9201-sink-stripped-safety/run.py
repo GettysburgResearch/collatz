@@ -23,7 +23,6 @@ import argparse
 import hashlib
 import json
 import platform
-import sys
 from collections import Counter, deque
 from dataclasses import dataclass
 from pathlib import Path
@@ -277,20 +276,25 @@ def build_safety_dfa(forbidden_values: Iterable[int]) -> SafetyAutomaton:
 
 def strongly_connected_components(dfa: DFA) -> list[frozenset[int]]:
     """Kosaraju SCC decomposition with deterministic component ordering."""
-    sys.setrecursionlimit(max(10_000, 4 * dfa.state_count))
     seen: set[int] = set()
     order: list[int] = []
 
-    def forward(state: int) -> None:
-        seen.add(state)
-        for target in dfa.transitions[state]:
-            if target not in seen:
-                forward(target)
-        order.append(state)
-
-    for state in range(dfa.state_count):
-        if state not in seen:
-            forward(state)
+    for root in range(dfa.state_count):
+        if root in seen:
+            continue
+        seen.add(root)
+        stack: list[tuple[int, int]] = [(root, 0)]
+        while stack:
+            state, edge_index = stack[-1]
+            if edge_index < 2:
+                stack[-1] = (state, edge_index + 1)
+                target = dfa.transitions[state][edge_index]
+                if target not in seen:
+                    seen.add(target)
+                    stack.append((target, 0))
+            else:
+                order.append(state)
+                stack.pop()
 
     reverse: list[set[int]] = [set() for _ in range(dfa.state_count)]
     for state, row in enumerate(dfa.transitions):
@@ -300,18 +304,20 @@ def strongly_connected_components(dfa: DFA) -> list[frozenset[int]]:
     components: list[frozenset[int]] = []
     seen.clear()
 
-    def backward(state: int, component: set[int]) -> None:
-        seen.add(state)
-        component.add(state)
-        for source in reverse[state]:
-            if source not in seen:
-                backward(source, component)
-
     for state in reversed(order):
-        if state not in seen:
-            component: set[int] = set()
-            backward(state, component)
-            components.append(frozenset(component))
+        if state in seen:
+            continue
+        component: set[int] = set()
+        seen.add(state)
+        stack = [state]
+        while stack:
+            target = stack.pop()
+            component.add(target)
+            for source in sorted(reverse[target], reverse=True):
+                if source not in seen:
+                    seen.add(source)
+                    stack.append(source)
+        components.append(frozenset(component))
     return components
 
 
@@ -386,7 +392,7 @@ def audit_depth(depth: int, forbidden: frozenset[int]) -> dict[str, object]:
         "max_forbidden": max_forbidden,
         "cofinite_threshold": max_forbidden + 1,
         "minimal_states": dfa.state_count,
-        "raw_trie_states": safety.raw_state_count,
+        "raw_dfa_states": safety.raw_state_count,
         "tail_component_states": len(tail_component),
         "boundary_states": len(boundary_states),
         "boundary_is_acyclic": True,
@@ -403,6 +409,7 @@ def audit_depth(depth: int, forbidden: frozenset[int]) -> dict[str, object]:
             "output": unsafe_image,
             "output_lsd": "".join(map(str, encode_lsd(unsafe_image))),
         },
+        "one_step_nonclosure_verified": True,
         "dfa_sha256": dfa.digest(),
     }
 
@@ -433,7 +440,9 @@ def build_summary(max_depth: int) -> dict[str, object]:
             "all_sink_stripped_boundaries_are_acyclic": all(
                 row["boundary_is_acyclic"] for row in rows
             ),
-            "all_approximants_have_explicit_one_step_nonclosure_witnesses": True,
+            "all_approximants_have_explicit_one_step_nonclosure_witnesses": all(
+                row["one_step_nonclosure_verified"] for row in rows
+            ),
         },
         "interpretation": [
             "Each finite safety approximant is canonical-positive minus a finite reverse tree.",
@@ -458,8 +467,11 @@ def main() -> None:
         default=Path(__file__).resolve().parent / "results" / "summary.json",
     )
     args = parser.parse_args()
-    if not 0 <= args.max_depth <= 64:
-        parser.error("--max-depth must be between 0 and 64")
+    if not 0 <= args.max_depth <= 32:
+        parser.error(
+            "--max-depth must be between 0 and 32; deeper runs require a "
+            "streaming, bottom-up minimizer"
+        )
 
     summary = build_summary(args.max_depth)
     mathematical = {key: value for key, value in summary.items() if key != "environment"}
@@ -467,7 +479,7 @@ def main() -> None:
         json.dumps(mathematical, sort_keys=True, separators=(",", ":")).encode("utf-8")
     ).hexdigest()
     payload = {
-        "sha256_of_mathematical_results": digest,
+        "sha256_of_environment_independent_summary": digest,
         "summary": summary,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

@@ -6,12 +6,12 @@ Reviewing agents: none
 Created: 2026-07-21  
 Last updated: 2026-07-21  
 Dependencies: D-9201  
-Scope: every finite-horizon shortcut safety language `S_d`  
+Scope: every fixed-depth shortcut safety language `S_d`  
 Related counterexample candidates: none
 
 ## Statement
 
-For every `d >= 0`:
+For every integer `d >= 0`:
 
 1. `F_d` is finite and
 
@@ -36,10 +36,12 @@ For every `d >= 0`:
 4. More generally, no cofinite set of positive integers can both exclude
    `{1,2}` and be forward invariant under `T`.
 
-Consequently, SCC learning that retains the canonical tail acceptance of a
-finite `S_d` cannot produce a Collatz sanctuary. A viable widening must add a
-non-cofinite guard. The sink-stripped boundary DAG is finite-horizon data to
-compare across depths; it is not itself a recurrent candidate.
+Consequently, SCC learning that continues to accept every sufficiently long
+canonical word, as the canonical tail of a fixed-depth `S_d` does, cannot
+produce a Collatz sanctuary. A viable widening's decoded positive-integer set
+must have infinite complement. The sink-stripped boundary DAG is
+finite-horizon data to compare across depths; it is not itself a recurrent
+candidate.
 
 ## Definitions
 
@@ -48,6 +50,9 @@ cyclic if it has at least two states or contains a self-loop.
 
 The claim concerns the minimal DFA language on all finite raw binary words,
 with nonempty final-`1` canonicality built into acceptance.
+
+A **Collatz sanctuary** here means a nonempty set of positive integers `L`
+such that `T(L)` is contained in `L` and `L` excludes `{1,2}`.
 
 ## Motivation
 
@@ -74,8 +79,8 @@ $$
 \frac{2y-1}{3}
 $$
 
-exactly when `y = 2 mod 3`. The latter, when present, is a positive odd
-integer and is strictly smaller than `2y`.
+exactly when `y` is congruent to `2` modulo `3`. The latter, when present, is
+a positive odd integer and is strictly smaller than `2y`.
 
 Starting from the finite set `{1,2}`, taking preimages a finite number of
 times therefore produces a finite set. This proves finiteness of `F_d`.
@@ -145,8 +150,11 @@ $$
 
 in `L`. Therefore a cofinite forward-invariant set cannot exclude `{1,2}`.
 
-This also shows why preserving the finite approximant's accepting tail cannot
-be a successful widening.
+This also shows why a widening that preserves acceptance of every
+sufficiently long canonical word cannot succeed. Merely retaining an
+isomorphic two-state SCC would not imply cofiniteness if its incoming
+reachability were changed; the conclusion concerns the tail together with its
+eventual reachability from all long words.
 
 ## Dependency audit
 
