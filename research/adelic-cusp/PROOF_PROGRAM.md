@@ -1,357 +1,389 @@
-# Proof program: from unconditional density-one EQ to the all-depth and M1 frontiers
+# Proof program: from all-depth weighted EQ to the ordinary-integer frontier
 
 **Agent:** `gpt56-pro-04`  
 **Issue:** #15  
-**Status:** research program; every unproved step is labeled
+**Status:** research program; every theorem-level step remains `PROPOSED` pending independent review
 
-## 1. Exact theorem boundary
+## 1. New theorem boundary
 
-The active self-contained chain is
-
-```text
-L-9309  exact lift-prefix / residue-class bijection
-   |
-   v
-T-9307  exponential entropy deficit for low-energy prefixes
-   |
-   v
-T-9308  uniform harmonic high-frequency tail at every depth
-   |
-   +------------------------------+
-   |                              |
-   v                              v
-all-depth low/high reduction   T-9303 valuation-stratified
-                               low-frequency depth periods
-                                  |
-                                  v
-                            T-9309 unconditional
-                            density-one full EQ
-```
-
-The split/room chain is
+The packet's strongest self-contained chain is now
 
 ```text
-D-9303 fixed Z_3 mirror
+L-9309  exact reciprocal lift chain
    |
    v
-L-9305 moving-character identity
+L-9310  integral carries + completion-height rigidity
    |
-   + L-9301 fixed Z_2 survivor
    v
-T-9304 exact CRT product
+T-9311  pointwise cusp decay on every subexponential window
    |
-   +-----------------------------+
-   |                             |
-   v                             v
-L-9306 full-group moments    L-9307/L-9308 stitched phase chain
-                                 |
-                                 v
-                          T-9305/T-9306 split collapse
+   +--------------------------------+
+   |                                |
+   |                         T-9307 prefix entropy
+   |                                |
+   |                                v
+   |                         T-9308 uniform harmonic tail
+   |                                |
+   +---------------+----------------+
+                   |
+                   v
+             T-9312 all-depth
+             complete weighted EQ
 ```
 
-The direct counterexample-format chain is separate:
-
-```text
-D-9301 survivor attractor
-   |
-   v
-D-9302 adelic natural extension and integer section
-   |
-   v
-Q-9301 nontrivial ordinary-integer intersection
-```
-
-## 2. What is already closed
-
-### 2.1 The exponential frequency range
-
-`T-9308` proves, uniformly in every depth,
+The exact conclusion is
 
 \[
-\sum_{M\le h\le2^K}
-\frac{F_K(h)}h
-\le
-C M^{-\delta}
-+
-\pi2^{-5K}
-\]
-
-for one explicit `delta>0` and every growing cutoff `M`.
-
-Therefore all-depth EQ no longer requires a frequency-block theorem or a pointwise attack on exponentially many frequencies. Only the smallest growing window remains.
-
-### 2.2 Density-one full EQ
-
-`T-9309` combines the uniform tail with the exact depth-period estimate `T-9303`. It proves
-
-\[
-E_K\to0
-\]
-
-along a natural-density-one set of depths with no external mathematical hypothesis.
-
-The exceptional depth set can be infinite. Density one is not all-depth convergence.
-
-### 2.3 Naive exact-prefix amplification
-
-`L-9309` proves that a length-`L` exact lift prefix is one residue class modulo `81^L`. `R-9301` therefore refutes the claim that one exact prefix persists on a consecutive Euclidean neighborhood.
-
-Any surviving amplification theorem must use:
-
-- approximate-cylinder unions;
-- transference from arithmetic progressions;
-- harmonic location of many sparse classes;
-- or a nonlinear positive operator.
-
-### 2.4 Independent local spectral gain
-
-`L-9307` and `L-9308` prove that the dyadic and triadic factors are adjacent pieces of one phase chain. `T-9305` and `T-9306` show that every split is equivalent to the original coefficient in sub-`64^K` ranges, even against arbitrary bounded harmonic tests.
-
-A multi-place proof may still be easier, but its target is not weaker.
-
-## 3. Exact state variable
-
-For fixed depth `K`, define
-
-\[
-q_\ell(h)
-\equiv
--17h64^{\ell-K}
-\pmod{81^{\ell+1}},
-\qquad
-0\le q_\ell<81^{\ell+1},
-\]
-
-and
-
-\[
-y_\ell(h)=
-\frac{q_\ell(h)}{81^{\ell+1}}.
-\]
-
-The lift digit
-
-\[
-d_\ell(h)
+E_K
 =
-\left\lfloor
-\frac{q_{\ell+1}(h)}{81^{\ell+1}}
-\right\rfloor
-\in\{0,\ldots,80\}
+\sum_{1\le h\le2^K}
+\frac{|S_K(h)|}{2^Kh}
+\longrightarrow0
 \]
 
-gives the exact recurrence
+for every depth `K`.
+
+The previous density-one and uniform-density theorems remain independent quantitative shadows:
+
+```text
+T-9303 translated depth-period mean
+   + T-9308 uniform harmonic tail
+   |
+   v
+T-9309 natural-density-one EQ
+   |
+   v
+T-9310 upper-Banach-zero exceedance sets
+```
+
+## 2. What closed the all-depth wall
+
+### 2.1 Integral phase carries
+
+For signed reciprocal phases
+
+\[
+x_\ell
+=
+\frac{s_\ell}{81^{\ell+1}},
+\]
+
+the exact adjacent relation is
 
 \[
 \boxed{
-y_{\ell+1}
-=
-\frac{\{64y_\ell\}+d_\ell}{81}.}
-\tag{1}
-\]
-
-For every `L`, the map
-
-\[
-h\pmod{81^L}
-\longleftrightarrow
-(q_0,d_0,\ldots,d_{L-2})
-\]
-
-is a bijection.
-
-This finite exact state—not an informal random model—is the common object underneath:
-
-- the issue-#4 Markov decomposition;
-- the triadic Cantor classes;
-- the room tower;
-- the depth-period arithmetic;
-- and the proposed all-depth inverse theorem.
-
-## 4. Offense A: harmonic location of exceptional cylinders
-
-`T-9307` gives, in every interval of length `H`, at most
-
-\[
-O(H^{1-\eta})
-\]
-
-frequencies whose first `floor(log_81 H)` phases have energy at most the fixed threshold.
-
-Counting is not enough near the origin. The all-depth target requires a harmonic-location theorem of the form
-
-\[
-\sum_{h\in\mathcal B_K(H)}
-\frac1h
-\le
-H^{-c}
-\quad\text{or at least }o(1),
-\tag{2}
-\]
-
-where `B_K(H)` is the exceptional low-energy set in `[1,H]`.
-
-### Proposed stratification
-
-For each exceptional prefix record:
-
-1. `v_3(h)` and any exact initial zero phases;
-2. the first level with distance at least a chosen threshold;
-3. the lift-digit word up to that level;
-4. the terminal residue `q_(L-1)`;
-5. the least positive representative of its class modulo `81^L`.
-
-Seek a theorem saying that many low-energy classes cannot all have anomalously small least representatives.
-
-### Exact terminal relation
-
-A length-`L` prefix reconstructs
-
-\[
-h
-\equiv
--17^{-1}64^{K-L+1}q_{L-1}
-\pmod{81^L}.
-\tag{3}
-\]
-
-Thus harmonic location is a problem about the real sizes of the representatives of a low-energy subset of terminal reciprocal residues after multiplication by one unit.
-
-This is a finite, explicit target. It is also where individual-orbit arithmetic re-enters.
-
-## 5. Offense B: carry-template inverse theorem
-
-The flagship all-depth inverse theorem should be stated as follows.
-
-> **Carry-template inverse theorem, tentative.** Every polynomial-height frequency whose phase energy stays `O(log K)` admits a bounded-complexity lift-digit description. Every such description either:
-> 1. reduces by an exact power of `64`;
-> 2. loses levels through an exact power of `81`;
-> 3. is arithmetically impossible;
-> 4. or belongs to an approximate-cylinder family whose harmonic mass violates the entropy/location bounds.
-
-The exact dyadic representatives also satisfy
-
-\[
-17h
-=
-81^{\ell+1}s_\ell
-+
-64^{K-\ell}m_\ell.
-\tag{4}
-\]
-
-Eliminating `h` between separated levels produces four-term `{2,3}`-unit relations. A specialized effective height gap—not a bare citation to the general S-unit theorem—could force the divisibility or finite-template alternatives.
-
-## 6. Offense C: exceptional-depth coherence
-
-`T-9309` produces a zero-density exceptional depth set by Markov's inequality. To upgrade to all-depth EQ, exploit overlap between scales.
-
-If one depth is bad for several adjacent `m`, then it must contain coherent low-frequency mass in nested windows
-
-\[
-81^{\alpha m}.
-\]
-
-At the same time:
-
-- `T-9307` says low-energy prefixes are sparse;
-- `T-9308` removes frequencies outside those windows;
-- `T-9303` says such behavior is rare across complete depth periods;
-- the room first marginal contracts over the period-9 twist.
-
-The proposed theorem is:
-
-> A depth exceptional at `r` adjacent scales determines a carry word of complexity `O(r)` whose arithmetic height is exponentially smaller than its required modulus.
-
-Classify or rule out those words.
-
-## 7. Offense D: positive room-tower operator
-
-Issue #4's room walk does not close at any fixed modulus: the marginal at level `m` is driven by joint information at level `m+1`.
-
-Absolute Fourier majorants are vulnerable to exact copies. A positivity-native route should:
-
-1. write the exact inverse-limit kernel on `Z_3` using `D-9303`;
-2. retain the deterministic period-9 twist;
-3. choose a positive observable—interval mass, relative entropy, or room imbalance;
-4. prove one-period contraction;
-5. bound the information flux imported from the next tower level by less than that contraction.
-
-This may prove the harmonic-location theorem without controlling individual Fourier coefficients.
-
-## 8. Offense E: rational-diagonal renewal
-
-The CRT local pair is the image of one rational `h/Q` in the dual S-arithmetic solenoid. Under multiplication by `81/64`, its local coordinates move hyperbolically.
-
-A viable theorem must be quantitative and low-height:
-
-> Every nonzero rational character of numerator at most `K^A` accumulates logarithmic Bernoulli-mask energy over the relevant finite bilateral orbit.
-
-Generic Haar mixing or unique ergodicity is insufficient. The measure is singular and the orbit is a prescribed rational diagonal.
-
-The product formula
-
-\[
-|\beta|_\infty|\beta|_2|\beta|_3=1
-\]
-
-suggests a conservation law: prolonged resonance at one place must create height or complexity elsewhere. Making that effective is the dynamical offense.
-
-## 9. Direct offense on M1
-
-The open intersection is
-
-\[
-\Phi(\Omega)\cap\mathcal I.
-\]
-
-### Constructive route
-
-A candidate requires:
-
-1. an exact infinite digit rule;
-2. proof that its `2`-adic sum is one ordinary positive integer;
-3. proof of the chart congruence;
-4. independent reconstruction of the induced-to-Collatz lift.
-
-Compatible finite prefixes may converge only to a `2`-adic ghost.
-
-### Rigidity route
-
-Assume a nontrivial integer intersection and construct an invariant or empirical object from its orbit. Only after proving entropy or a second invariance can measure rigidity engage.
-
-Neither density-one nor all-depth finite equidistribution automatically settles this existence question.
-
-## 10. Computation boundary
-
-`X-9301` remains the only computation. It uses exact modular arithmetic through `K=80`, `h<=K^2` only to falsify lemma shapes.
-
-The next permissible computation is to emit exact lift-digit and least-representative data for existing argmins. It must serve a stated harmonic-location or carry-template lemma. Increasing the brute-force depth alone is not progress.
-
-## 11. Falsification criteria
-
-Revise or abandon a route if:
-
-1. an explicit polynomial-height family has bounded energy along infinitely many depths;
-2. low-energy residue classes can be proved to concentrate at the origin with nonvanishing harmonic mass;
-3. the lift-prefix bijection or local character crosswalk is inconsistent with the live subsystem;
-4. the room tower imports information at least as fast as every available marginal contraction;
-5. exceptional-depth carry words have unbounded irreducible complexity;
-6. a nontrivial integer-section point is constructed, in which case priority shifts to adversarial candidate verification.
-
-## 12. Best next theorem
-
-The highest-leverage theorem is now a **harmonic exceptional-cylinder bound**:
-
-\[
-\boxed{
-\sum_{\substack{1\le h\le H\\
-\mathcal E_{K,L}(h)\le L/64}}
-\frac1h
-=o(1)
+a_\ell
+=64x_\ell-81x_{\ell+1}
+\in\mathbb Z.
 }
 \]
 
-for a growing `L` tied to `H`, uniformly in `K` in the all-depth regime.
+This integer-valued cocycle was hidden when the lift recurrence was read only through its base-`81` digit.
 
-Combined with `T-9308`, this would close full all-depth EQ. A proof may proceed through terminal-residue location, carry-template classification, the positive room tower, or rational-diagonal renewal. The packet now exposes all four representations of the same finite obstruction.
+### 2.2 Energy counts nonzero carries
+
+If
+
+\[
+\mathcal E_K(h)=\sum_{\ell<K}x_\ell^2,
+\]
+
+then
+
+\[
+\#\{a_\ell\ne0\}
+\le
+21314\mathcal E_K(h).
+\]
+
+Thus a large Fourier coefficient, which requires small energy, forces only a few nonzero carries.
+
+### 2.3 Zero carries are height-rigid
+
+A zero-carry run satisfies
+
+\[
+s_{\ell+r}=64^r s_\ell.
+\]
+
+For a primitive numerator `64∤h`, the ordinary integer
+
+\[
+64^{K-\ell}s_\ell+17h
+\]
+
+is nonzero and divisible by
+
+\[
+81^{\ell+r+1}.
+\]
+
+Its archimedean size gives
+
+\[
+81^r
+\le
+\frac12 64^{r+t}+17|h|,
+\qquad
+t=K-\ell-r.
+\]
+
+Hence
+
+\[
+r
+\le
+\kappa t+\log_{81}(34|h|),
+\qquad
+\kappa
+=
+\frac{\log64}{\log(81/64)}.
+\]
+
+### 2.4 Terminal chaining
+
+Reading all zero runs from right to left gives
+
+\[
+K
+\le
+B(h)(1+\kappa)^{W+1},
+\]
+
+where `W` is the number of nonzero carries and `B(h)=O(1+log|h|)`.
+
+Therefore
+
+\[
+\mathcal E_K(h)
+\gg
+\left(
+\log\frac{K}{1+\log|h|}
+\right)_+.
+\]
+
+This is the missing deterministic pointwise energy theorem.
+
+### 2.5 Low/high harmonic complementarity
+
+`T-9311` converts the energy bound into pointwise Fourier decay below a polynomial cutoff. `T-9308` controls the harmonic tail above it. The cutoff `M_K=K` makes both contributions vanish.
+
+No inverse-limit marginal closure or Borel--Cantelli interchange is needed.
+
+## 3. Generalization beyond `64 -> 81`
+
+`L-9310` is formulated for every coprime expanding chart
+
+\[
+2\le M<N.
+\]
+
+Its intrinsic criticality constant is
+
+\[
+\boxed{
+\kappa_{M,N}
+=
+\frac{\log M}{\log(N/M)}
+=
+\frac1{\log_MN-1}.
+}
+\]
+
+The general theorem says:
+
+1. signed phases have integral carries `Mx_l-Nx_(l+1)`;
+2. nonzero carries cost quadratic energy;
+3. zero-carry runs give completion agreement of order `M^(r+t)` but rational height only `N^r`;
+4. the mismatch forces logarithmically many nonzero carries.
+
+This creates a reusable theorem interface for the whole collision-fiber ladder. To derive Fourier decay at another rung, one only needs a digit mask with a quantitative loss away from its annihilator.
+
+## 4. Literature synthesis
+
+The literature audit was decisive primarily through its **non-application boundaries**.
+
+### Rational-base addresses and Mahler/FLP
+
+The useful principle is not a transferred interval-width constant. It is the decoupling between:
+
+- strong agreement in a completion;
+- controlled rational/archimedean height;
+- one common symbolic itinerary.
+
+`L-9310` makes that decoupling exact at every zero-carry run.
+
+### Finite-state tilted operators
+
+`LIT-KTHM-0026` shows how a frozen finite-state additive process yields pressure and large deviations. The inverse-limit room tower, however, does not close at any fixed modulus.
+
+The integral carry cocycle bypasses the truncation problem. A nonzero carry has a state-independent integer gap, so one does not need a uniform spectral estimate over growing state spaces.
+
+### Self-similar Fourier decay
+
+Fixed real self-similar theorems remained methodological neighbors because the cusp characters escape nonarchimedeanly. The new proof stays entirely within the exact finite chain and therefore needs no transference theorem.
+
+### S-unit and recurrence language
+
+The proof does not invoke a generic S-unit theorem. It exposes one concrete nonzero integer divisible by a large power of `N` and bounds its ordinary height directly.
+
+## 5. Cross-program unification with PR #20
+
+PR #20 proves, conditionally on ordinary-integer realization, that repeated output factors satisfy
+
+\[
+\ell
+<
+(\log_{64}81-1)t+\log_{64}A.
+\]
+
+Equivalently, ordinary survivor codes require factor-complexity slope at least
+
+\[
+\frac1{\log_{64}81-1}
+=
+\kappa.
+\]
+
+`L-9310` independently produces the same constant for zero-carry runs.
+
+This is not a coincidence. Both arguments periodically or multiplicatively continue a local pattern, obtaining:
+
+1. very high `2`-adic agreement;
+2. a rational approximant of controlled odd denominator;
+3. a nonzero ordinary numerator squeezed between divisibility and height.
+
+The next M1 theorem should exploit this shared criticality rather than treat code complexity and phase energy as unrelated obstructions.
+
+## 6. Remaining direct M1 problem
+
+The exact open intersection is
+
+\[
+\Phi(\Omega)\cap\mathcal I,
+\]
+
+from `D-9302`.
+
+A nontrivial point would give an ordinary integer whose every tail remains integral under
+
+\[
+A_{k+1}
+=
+\frac{81A_k-17\varepsilon_k}{64}.
+\]
+
+The real/ordinary orbit identity is
+
+\[
+A_k
+=
+(81/64)^k(A-x_\infty)
++x_\infty(\sigma^k\varepsilon).
+\]
+
+All-depth weighted EQ does not automatically exclude one exceptional infinite code.
+
+## 7. Proposed next theorem: complexity–carry incompatibility
+
+The highest-leverage next target is a theorem of the following form.
+
+> **Complexity–carry incompatibility, tentative.** A binary itinerary whose every tail realizes an ordinary integer must either:
+> 1. contain an early repeated factor violating the PR #20 height bound;
+> 2. generate a long zero-carry phase segment violating `L-9310`;
+> 3. inject fresh symbolic information at a positive rate that is incompatible with the bounded real tail and chart congruences.
+
+The first two alternatives are now quantitatively understood. The third is the remaining entropy-to-arithmetic interface.
+
+### Suggested state variables
+
+For a length-`L` code block record:
+
+1. its factor-complexity class;
+2. the ordinary tail value `A_k` modulo `64^L`;
+3. the reciprocal integral carries `a_ell`;
+4. the terminal residue modulo `81^L`;
+5. the rational approximant numerator and odd denominator;
+6. the room-wrap word from issue #4.
+
+A finite relation among these objects should be proof-carrying: every transition must include exact divisibility and height certificates.
+
+## 8. Three possible M1 offenses
+
+### Offense A — return-word pressure
+
+Use return words of the survivor code rather than exact repeated factors. PR #20 bounds the first return time of every long factor. Combine that with carry-energy cost to prove that every return-word decomposition has pressure strictly above the binary information budget.
+
+This is where the finite-state cycle-mean and tilted-transfer infrastructure may become useful, after the exact return states are frozen.
+
+### Offense B — directive-to-output complexity transfer
+
+Issue #4 leaves S-adic or stack-like directive systems alive. Prove that bounded carry memory and finite control cannot emit output factor complexity with slope at least `kappa` unless they introduce a positive density of genuinely fresh arithmetic bits.
+
+Then show those bits force nonzero reciprocal carries, whose cumulative height contradicts ordinary-section boundedness.
+
+### Offense C — room/carry duality at one ordinary point
+
+The room walk is the `3`-adic mirror of the reciprocal phase chain. At the level of finite sets it mixes; at one ordinary point it is deterministic.
+
+Show that an ordinary section point would make the room digits simultaneously:
+
+- too recurrent, by bounded real tail;
+- too complex, by PR #20;
+- and too energetic, by `L-9310`.
+
+A quantitative three-way incompatibility would settle `Q-9301`.
+
+## 9. Review and falsification program
+
+Review the all-depth result before building further theory.
+
+### Load-bearing order
+
+```text
+L-9310
+  -> T-9311
+  -> L-9309
+  -> T-9307
+  -> T-9308
+  -> T-9312
+```
+
+### Independent checks
+
+- reconstruct the zero-run modulus directly from the signed phase congruence;
+- verify the primitive zero-numerator exclusion;
+- replay the right-to-left zero-run recurrence;
+- compare the pointwise theorem with direct products for bounded `K,h`;
+- reconstruct the arbitrary-interval entropy bound in `T-9307`;
+- check that the low/high cutoff leaves neither a gap nor an overlap error.
+
+### Falsification criteria
+
+Revise the chain if any of the following occurs:
+
+1. a primitive phase chain has a zero-carry run violating `L-9310(16)`;
+2. the carry-energy inequality misses a signed-representative wrap;
+3. the survivor/mirror comparison has an incorrect index or sign affecting magnitudes;
+4. the high-tail shell argument uses a prefix length exceeding the ambient depth;
+5. a polynomial-window coefficient violates the displayed pointwise envelope after all constants are applied.
+
+## 10. Computation boundary
+
+The proof does not depend on computation.
+
+Permissible next computation should serve the M1 interface, not accumulate more favorable EQ data. Useful outputs include:
+
+- exact return words and reciprocal carries for PR #20 near-extremizers;
+- room-wrap words aligned with repeated output factors;
+- certified finite transition graphs for complexity–carry states;
+- exact cycle-mean or pressure certificates;
+- independent replay of every claimed ordinary numerator/denominator identity.
+
+## 11. Acceptance boundary
+
+Independent verification of `L-9310`, `T-9311`, `T-9307`, `T-9308`, and `T-9312` would establish the complete weighted EQ criterion at every depth.
+
+Independent verification of issue #4's downstream counting interfaces would then establish its proposed every-depth fair-window and minimal-survivor consequences.
+
+Neither result alone decides the existence of one infinite ordinary survivor. That remains the direct M1 frontier.
