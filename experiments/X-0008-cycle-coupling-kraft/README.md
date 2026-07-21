@@ -11,7 +11,7 @@ Status: `EMPIRICAL` verification of proposed exact claims `T-0014`, `T-0015`, `T
 2. Does valuation acceleration give the stated one-mismatch formula?
 3. Do the complementary phases of the negative eleven-cycle enter the negative eleven-cycle, negative three-cycle, or fixed phase according to one finite atlas?
 4. Do complete circuits of the negative eleven-cycle generate exact geometric towers of padded return edges?
-5. Do complete parity prefix codes satisfy the two exact Kraft identities and negative typical logarithmic drift?
+5. Do complete parity prefix codes satisfy the two exact Kraft identities, likelihood-ratio identity, and negative typical logarithmic drift?
 
 ## Method
 
@@ -32,11 +32,12 @@ Status: `EMPIRICAL` verification of proposed exact claims `T-0014`, `T-0015`, `T
 - verifies the two grouped base transfer families from phase `-136`;
 - checks the exact signed displacement formula;
 - confirms that the two tower types first become supercritical at padding levels `45` and `21`;
-- verifies the ordinary and tilted Kraft identities on the complete nonuniform prefix code
+- verifies the ordinary and tilted Kraft identities on several complete prefix codes;
+- verifies the likelihood-ratio identity word by word;
+- checks the exact expected odd count and logarithmic drift formula, including the nonuniform code
   ```text
-  0, 10, 110, 111;
+  0, 10, 110, 111.
   ```
-- checks the exact expected odd count and logarithmic drift formula.
 
 ## Command
 
@@ -62,7 +63,7 @@ all cycle-coupling and Kraft checks passed
 ## Digests
 
 ```text
-81af5dcaa6beadbc43a16081979642c86991276271d08a3d63c7d1b3e9fabb46  run.py
+b3afb57d63826d23b797b6d676f781b13aa0609be68ea8140042b4c815a4081e  run.py
 442337a8811fe26c07a3816ad0fb623d2f88d0f7d18f32deaeb7292230097d23  results/summary.txt
 ```
 
