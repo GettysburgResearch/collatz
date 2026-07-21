@@ -1,70 +1,18 @@
-# Q-9302 — Two-place and room mechanisms after all-depth EQ
+# Q-9302 — Fixed-room and active-cylinder mechanisms after all-depth EQ
 
 **Claim ID:** Q-9302  
-**Title:** Can the room/adelic representation help resolve the remaining ordinary-integer section or sharpen the all-depth theorem?  
+**Title:** Can fixed-room coherence or active-cylinder nonstabilization exclude every remaining ordinary point?  
 **Status:** IDEA  
 **Authoring agent:** `gpt56-pro-04`  
-**Reviewing agents:** none  
 **Created:** 2026-07-21  
 **Last updated:** 2026-07-21  
-**Dependencies:** `D-9302`, `T-9304`, `L-9306`--`L-9310`, `T-9305`--`T-9312`; issue-#4 room crosswalk  
-**Scope:** post-EQ ordinary-section, sharper-rate, and proof-mechanism frontier  
+**Dependencies:** `D-9302`, `D-9303`, `L-9310`, `L-9311`, `T-9312`--`T-9314`; issue-#4 and PR #20 crosswalks  
+**Scope:** post-EQ ordinary-section frontier  
 **Related counterexample candidates:** none
 
-## 1. Exact split equivalence already proved
+## 1. Weighted EQ is no longer the open target
 
-For a split
-
-\[
-K=n+j,
-\qquad
-Q=64^n81^j,
-\]
-
-put
-
-\[
-u=(81^j)^{-1}\pmod{64^n},
-\qquad
-v=(64^n)^{-1}\pmod{81^j}.
-\]
-
-The normalized CRT coefficient is
-
-\[
-G_{n,j}(h)
-=
-\widehat\mu(hu/64^n)
-\widehat\nu(hv/81^j).
-\]
-
-`L-9307` and `L-9308` prove that these are the two local components of one rational character and that the factors stitch one reciprocal phase chain.
-
-`T-9305` and `T-9306` give, for every bounded harmonic test and every `H`,
-
-\[
-\left|
-\sum_{h\le H}\frac{w_h}{h}G_{n,j}(h)
--
-\sum_{h\le H}\frac{w_h}{h}
-\widehat\mu(h/64^K)
-\right|
-<
-\frac{2\pi H}{64^K}.
-\tag{1}
-\]
-
-Thus a two-place Fourier proof in every sub-`64^K` range proves the original one-place statement simultaneously.
-
-## 2. Weighted EQ is no longer the open target
-
-`L-9310` discovers the integral signed-phase carry
-
-\[
-a_\ell=64x_\ell-81x_{\ell+1}\in\mathbb Z.
-\]
-
-Its completion-height rigidity gives `T-9311`, uniform pointwise decay on every subexponential numerator window. Together with the uniform entropy tail `T-9308`, this gives `T-9312`:
+`T-9312` proposes
 
 \[
 \sum_{1\le h\le2^K}
@@ -74,21 +22,19 @@ Its completion-height rigidity gives `T-9311`, uniform pointwise decay on every 
 
 at every depth.
 
-Accordingly, this open question is no longer “can the two-place representation prove weighted EQ?” The packet already proposes such a proof without requiring room-tower closure.
+The two-place, room, and triadic representations remain useful, but another absolute-Fourier decay estimate no longer advances the main theorem frontier.
 
-## 3. Reframed research question
+The unresolved question is the ordinary section
 
-Can the fixed product measure, rational diagonal, room-wrap coding, and completion-height carries provide one of the following genuinely new outputs?
+\[
+\Phi(\Omega)\cap\mathcal I.
+\]
 
-1. an ordinary-integer nonintersection theorem for `D-9302`;
-2. a constructive nontrivial integer-section point, which would require immediate adversarial verification;
-3. substantially sharper pointwise or harmonic rates than the tiny exponent in `T-9311`;
-4. a general theorem for other `M -> N` collision-fiber rungs;
-5. a structural bridge between PR #20's output factor complexity and the arithmetic carries of `L-9310`.
+A single coherent ordinary point may coexist with very strong finite-depth equidistribution.
 
-## 4. Most promising route: complexity–carry incompatibility
+## 2. Method closure: the criticality constants do not contradict
 
-PR #20 and `L-9310` independently produce the same criticality constant
+PR #20's repetition theorem and `L-9310`'s phase-carry theorem produce the same constant
 
 \[
 \kappa
@@ -96,96 +42,174 @@ PR #20 and `L-9310` independently produce the same criticality constant
 \frac1{\log_{64}81-1}.
 \]
 
-PR #20 says a hypothetical ordinary survivor code must have output factor-complexity slope at least `kappa`.
-
-`L-9310` says prolonged zero-carry behavior is bounded by the same `kappa` through completion-height separation.
-
-A decisive theorem should show that one ordinary itinerary cannot simultaneously:
-
-1. introduce fresh output factors at the required rate;
-2. satisfy all integral tail recurrences;
-3. obey the room and chart congruences;
-4. keep the real companion coordinate in its bounded interval;
-5. avoid both repeated-factor and zero-carry height contradictions.
-
-This is the proposed **complexity–carry incompatibility theorem**.
-
-## 5. Candidate proof mechanisms
-
-### A. Return-word pressure
-
-Replace exact repeated factors by return words. Freeze a finite state carrying:
-
-- return-word class;
-- ordinary tail residue;
-- reciprocal carry;
-- room-wrap digit;
-- terminal `81`-adic residue.
-
-Use a cycle-mean or tilted-transfer certificate only after the state and truncation error are exact. The target is to prove that every infinite path has information/carry cost above the binary budget.
-
-### B. Positive room operator for one itinerary
-
-The finite-set room walk mixes, but an ordinary point defines one deterministic wrap sequence. Construct a positive observable that detects simultaneous recurrence and arithmetic carry cost along that single sequence.
-
-The inverse-limit tower remains real; the goal is no longer to close its marginals for EQ, but to show that one section orbit cannot remain inside the admissible safety kernel.
-
-### C. Adelic shrinking-target rigidity
-
-In `D-9302`, an ordinary point lies on a symbolic stable leaf with zero third coordinate. Under multiplication by `81/64`, the local coordinates expand and contract in opposite directions.
-
-Seek a quantitative theorem saying that an orbit meeting the ordinary section at every shift must generate either a forbidden repetition or an impossible carry-height chain.
-
-Generic measure rigidity is insufficient; the proof must use the shared symbolic itinerary.
-
-### D. General `M -> N` chart theorem
-
-`L-9310` already applies to every coprime expanding pair. Add a digit-mask spectral gap and ordinary-section complexity theorem to obtain a reusable collision-fiber result at every ladder rung.
-
-## 6. What is now ruled out as progress by itself
-
-The following no longer advances the main theorem frontier alone:
-
-- proving another absolute two-place weighted decay estimate equivalent to `T-9312`;
-- treating the two local absolute factors as independent;
-- using complete-group Parseval to infer short-orbit behavior;
-- invoking a fixed-real self-similar theorem without a moving-character bridge;
-- closing only a finite room marginal while ignoring the deeper tower;
-- citing generic S-unit or measure-rigidity language without constructing its exact hypotheses.
-
-## 7. Dependency audit
-
-- `D-9302` supplies the exact ordinary section.
-- `T-9304`, `L-9307`, and `L-9308` supply the stationary two-place rational diagonal.
-- `T-9305` and `T-9306` prove split equivalence.
-- `L-9310` supplies completion-height carry rigidity.
-- `T-9312` changes the research target from EQ closure to the ordinary section.
-- PR #20 supplies an independent branch-qualified complexity obstruction; it is not imported as a proved dependency here.
-- Every route in this file is open and is not a premise of another theorem.
-
-## 8. Gap audit
-
-- All-depth finite-set EQ does not exclude one exceptional infinite ordinary point.
-- High output complexity alone does not contradict ordinary realization.
-- Carry energy for frequency characters is not yet a theorem about the digit itinerary of one ordinary survivor.
-- A finite-state pressure proof must control state growth and truncation uniformly.
-- A constructive section point could be a `2`-adic ghost unless ordinary integrality and the chart translation are proved exactly.
-
-## 9. Suggested next attack
-
-Build the smallest exact return-word/carry state that simultaneously sees:
+`L-9311` proves why. A repeated itinerary factor is itself an exact zero-carry chain in the difference of two ordinary tail orbits:
 
 \[
-(A_k\bmod64^L,
-\text{return word},
-\text{room word},
-\text{reciprocal carry template}).
+64D_{i+1}=81D_i.
 \]
 
-Then seek a finite cycle-mean certificate showing that every cycle either:
+The repetition-height inequality is therefore another completion-height bound. `R-9302` records the resulting method closure:
 
-1. violates the PR #20 repetition-height bound;
-2. violates `L-9310`'s completion-height bound;
-3. leaves the ordinary-section safety kernel.
+> Comparing the two matching `kappa` values double-counts one arithmetic mechanism and does not yield an incompatibility theorem.
 
-That would convert the shared criticality constant into a direct M1 obstruction.
+A final proof must introduce a new coupling invariant.
+
+## 3. Exact coupling: fixed-room coherence
+
+`T-9313` supplies that invariant.
+
+For a hypothetical ordinary room `A` and its tail states `A_j`,
+
+\[
+\boxed{
+81^jA
+=
+64^jA_j
++
+17\sum_{t=0}^{j-1}
+\varepsilon_t81^{j-1-t}64^t.
+}
+\tag{1}
+\]
+
+The quotient is the same fixed room `A` for every `j`.
+
+The reversed past word places `A_j mod81^j` in the triadic class set `C_j`; the future word places `A_j` in the survivor attractor; and the real companion forces
+
+\[
+\boxed{
+(81/64)^j(A-1)+1
+\le A_j
+\le(81/64)^jA.
+}
+\tag{2}
+\]
+
+Conversely, a coherent integral path satisfying `(1)` reconstructs an ordinary survivor exactly.
+
+This is the first interface in the packet that simultaneously sees:
+
+- symbolic past;
+- symbolic future;
+- ordinary integrality at every shift;
+- bounded real companion coordinate;
+- and one invariant room.
+
+## 4. Finite exclusion and asymptotic target
+
+Let
+
+\[
+m_j=\min(C_j\setminus\{0,1\}),
+\]
+
+and
+
+\[
+B_j
+=
+\min\left\{
+64^j,
+\left\lceil m_j(64/81)^j\right\rceil
+\right\}.
+\]
+
+`T-9313` proves that every nontrivial ordinary room satisfies
+
+\[
+A\ge B_j
+\]
+
+for every `j`.
+
+The exact meet-in-the-middle computation `X-9303` gives
+
+\[
+B_{44}
+=
+227578060273510610973552811001603322347312502177488333909527505984
+>2^{217}.
+\]
+
+Hence `T-9314` excludes every nontrivial room through `2^217`.
+
+The decisive asymptotic theorem is now simply
+
+\[
+\boxed{B_j\to\infty.}
+\tag{3}
+\]
+
+Any rate of divergence closes the ordinary section.
+
+## 5. Why unconditional Cantor minima may be stronger than necessary
+
+The number `m_j` minimizes over every past word, including words that cannot be extended to a coherent future survivor or to the same fixed room at earlier depths.
+
+Define the coherent depth-`j` minimum by restricting to classes that lie on some finite path satisfying all predecessor equations and future survivor constraints. A proof that this coherent minimum grows faster than `(81/64)^j` is sufficient and may be substantially easier than bounding all of `C_j`.
+
+The fixed-room quotient should be used as early as possible rather than discarded after obtaining class membership.
+
+## 6. Active-cylinder formulation
+
+PR #20's `T-9409` proves that an infinite stack directive selects one nested `2`-adic initial cylinder. It is ordinary exactly when the newly appended cylinder blocks eventually vanish.
+
+The natural cross-program target is:
+
+> Identify the appended active-cylinder blocks with fixed-room past/future data, then prove that a coherent positive itinerary has infinitely many nonzero blocks.
+
+This would convert the ordinary-section problem into an explicit nonstabilization theorem.
+
+## 7. Candidate proof mechanisms
+
+### A. Coherent branch-and-bound
+
+Construct a tree whose states contain:
+
+\[
+(A_j\bmod81^j,
+A_j\bmod64^L,
+\text{past word},
+\text{future cylinder},
+A).
+\]
+
+Prune a state when `(2)` misses the standard representative or when the future cylinder is empty. Seek a symbolic invariant proving every fixed room dies at finite depth.
+
+### B. Return-word fixed-room pressure
+
+A recurrence of a coherent state produces the orbit-difference zero-carry chain from `L-9311`. Prove that fixed-room coherence forces such a recurrence before its local height permits it.
+
+### C. Block-tail sign or valuation
+
+Derive a recurrence for the new nested-cylinder blocks and show an eventually zero tail would force either:
+
+- a forbidden stationary ghost;
+- a negative real context;
+- an impossible `3`-adic valuation;
+- or an eventually periodic ordinary itinerary.
+
+### D. General `M -> N` fixed-room theorem
+
+Generalize `T-9313` and the finite certificate to every expanding collision chart. A ladder rung with a provable divergent `B_j` would provide a complete ordinary-section result and may reveal the missing invariant for `64 -> 81`.
+
+## 8. What no longer counts as progress by itself
+
+- another equivalent absolute two-place Fourier estimate;
+- comparing the two `kappa` constants without a coupling lemma;
+- high output factor complexity alone;
+- closure of one finite room marginal;
+- compatible finite prefixes without least-representative stabilization;
+- generic S-unit or measure-rigidity terminology without exact hypotheses.
+
+## 9. Gap audit
+
+- `T-9314` is finite, however large its exclusion bound.
+- The computed unconditional minima need not describe the coherent minima.
+- Active-cylinder nonstabilization is proved only for the stationary ghost interface, not the fully steered ordinary itinerary.
+- Translation from an induced room to an original Collatz seed remains branch-qualified.
+- No ordinary point, divergent seed, cycle, or resolution is claimed.
+
+## 10. Suggested next attack
+
+Build the coherent past/future tree at modest depth and record the exact reason each low room dies. The theory target is to turn the observed pruning reason into one monotone invariant proving `(3)` without enumerating all `2^j` past words.
