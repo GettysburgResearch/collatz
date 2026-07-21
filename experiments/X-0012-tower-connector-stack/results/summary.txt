@@ -3,5 +3,6 @@ verified exact binary-to-ternary tail replacements
 verified 1024 canonical connector families
 same-type t->t+1 seeds: [(5, 2241439, 1168, 22), (6, 865722, 451, 22), (7, 577148, 300, 22), (8, 1782866, 929, 22)]
 verified growing inverse-prefix order obstruction
+verified nonlinear Hensel escalator prefixes
 verified bounded-tail finite-ray decomposition
 all tower-connector-stack checks passed
