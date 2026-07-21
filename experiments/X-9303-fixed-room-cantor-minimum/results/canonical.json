@@ -1,0 +1,118 @@
+{
+  "arithmetic": "exact integers; meet-in-the-middle subset sums modulo 81^j",
+  "depths": [
+    2,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44
+  ],
+  "experiment_id": "X-9303",
+  "records": [
+    {
+      "class_count": 4,
+      "depth": 2,
+      "lower_bound_bits": 10,
+      "minimizing_low_to_high_word": "01",
+      "minimum_nontrivial_class": 1539,
+      "ordinary_survivor_lower_bound": 961
+    },
+    {
+      "class_count": 16,
+      "depth": 4,
+      "lower_bound_bits": 20,
+      "minimizing_low_to_high_word": "0110",
+      "minimum_nontrivial_class": 2383182,
+      "ordinary_survivor_lower_bound": 928832
+    },
+    {
+      "class_count": 256,
+      "depth": 8,
+      "lower_bound_bits": 40,
+      "minimizing_low_to_high_word": "10111110",
+      "minimum_nontrivial_class": 4015726019317,
+      "ordinary_survivor_lower_bound": 609991404608
+    },
+    {
+      "class_count": 4096,
+      "depth": 12,
+      "lower_bound_bits": 59,
+      "minimizing_low_to_high_word": "100101111010",
+      "minimum_nontrivial_class": 7745040532946438479,
+      "ordinary_survivor_lower_bound": 458525144289123392
+    },
+    {
+      "class_count": 65536,
+      "depth": 16,
+      "lower_bound_bits": 80,
+      "minimizing_low_to_high_word": "1111000101000011",
+      "minimum_nontrivial_class": 31177943755603150186720162,
+      "ordinary_survivor_lower_bound": 719393899965748065464321
+    },
+    {
+      "class_count": 1048576,
+      "depth": 20,
+      "lower_bound_bits": 101,
+      "minimizing_low_to_high_word": "11101011100111101010",
+      "minimum_nontrivial_class": 183137981992672789856320246948114,
+      "ordinary_survivor_lower_bound": 1646939047692556889060463877184
+    },
+    {
+      "class_count": 16777216,
+      "depth": 24,
+      "lower_bound_bits": 121,
+      "minimizing_low_to_high_word": "010100001100101010110011",
+      "minimum_nontrivial_class": 616431866106193419523900917483999725787,
+      "ordinary_survivor_lower_bound": 2160548420233502287324095092543320065
+    },
+    {
+      "class_count": 268435456,
+      "depth": 28,
+      "lower_bound_bits": 138,
+      "minimizing_low_to_high_word": "1100001101110000111000010001",
+      "minimum_nontrivial_class": 220422580197839216603920929896230046533050529,
+      "ordinary_survivor_lower_bound": 301102821246860782043524300556171127673793
+    },
+    {
+      "class_count": 4294967296,
+      "depth": 32,
+      "lower_bound_bits": 160,
+      "minimizing_low_to_high_word": "11010100111110101101111000011110",
+      "minimum_nontrivial_class": 1479769702071961854629158235799956101310457246875767,
+      "ordinary_survivor_lower_bound": 787830326455343423425612714064909652775473916992
+    },
+    {
+      "class_count": 68719476736,
+      "depth": 36,
+      "lower_bound_bits": 178,
+      "minimizing_low_to_high_word": "010010101100011111000001100111100000",
+      "minimum_nontrivial_class": 1519641182210369797721998095793259669023951096326786586374,
+      "ordinary_survivor_lower_bound": 315325750596341996022021216051785967279650273706901504
+    },
+    {
+      "class_count": 1099511627776,
+      "depth": 40,
+      "lower_bound_bits": 201,
+      "minimizing_low_to_high_word": "0110010011100100111001110011001110110010",
+      "minimum_nontrivial_class": 31856257905806248893920404619279477051575173645281264571492219834,
+      "ordinary_survivor_lower_bound": 2576279411994003681635204120992985532069833032047566298815552
+    },
+    {
+      "class_count": 17592186044416,
+      "depth": 44,
+      "lower_bound_bits": 218,
+      "minimizing_low_to_high_word": "01100011100001111110011011010001110000110110",
+      "minimum_nontrivial_class": 7220252188262239184305599554690421895921563960360483237559093394744562,
+      "ordinary_survivor_lower_bound": 227578060273510610973552811001603322347312502177488333909527505984
+    }
+  ],
+  "results_sha256": "0ae0ccf0df779ffe4dc8b4d2a4f91471033cdf84b47738d9f79d6b7c85f43add",
+  "schema_version": 1
+}
