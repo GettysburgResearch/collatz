@@ -37,12 +37,16 @@ All mathematical claims on the active research branch await independent review.
 | T-0009 | Theorem | Renewal-code counterexample criterion and finite complete-code obstruction | PROPOSED | `claims/theorems/T-0009-renewal-code-criterion.md` | D-0001, L-0001, T-0008 |
 | T-0010 | Theorem | Fractional-window confinement and normalized aspect ratio | PROPOSED | `claims/theorems/T-0010-fractional-window-aspect-ratio.md` | T-0008 |
 | L-0011 | Lemma | Common odd-tail aspect-ratio tax | PROPOSED | `claims/lemmas/L-0011-odd-tail-aspect-ratio-tax.md` | L-0005, T-0005, T-0010 |
+| L-0012 | Lemma | Inverse signatures are exactly negative return targets | PROPOSED | `claims/lemmas/L-0012-signatures-are-negative-targets.md` | L-0001, L-0005, T-0008 |
+| T-0013 | Theorem | Multi-target negative-return criterion and phase-potential expansion | PROPOSED | `claims/theorems/T-0013-graph-directed-return-criterion.md` | D-0001, L-0001, T-0009 |
 | O-0006 | Observation | Exact aspect-ratio audit of the recorded collision charts | EMPIRICAL | `claims/observations/O-0006-recorded-chart-aspect-ratios.md` | O-0001--O-0005, T-0010, L-0011, X-0006 |
-| X-0006 | Experiment | Negative-shadow, renewal, and aspect-ratio checks | EMPIRICAL | `experiments/X-0006-shadow-return/` | T-0008--T-0010, L-0011 |
-| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0010 |
+| O-0007 | Observation | Four-branch `2048 -> 2187` chart at the negative cycle phase `-136` | PROPOSED | `claims/observations/O-0007-negative-136-cycle-chart.md` | L-0001, L-0003, T-0002, T-0008, T-0010, X-0007 |
+| X-0006 | Experiment | Negative-shadow, signature-target, renewal, and aspect-ratio checks | EMPIRICAL | `experiments/X-0006-shadow-return/` | T-0008--T-0010, L-0011--L-0012 |
+| X-0007 | Experiment | Exact normalized-aspect census through depth 22 | EMPIRICAL | `experiments/X-0007-aspect-census/` | L-0003, T-0010, O-0007 |
+| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0013 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013 |
 | Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008 |
 | Q-0006 | Open question | Independent verification | IDEA | `OPEN_PROBLEMS.md` | all above |
 | Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009 |
@@ -51,15 +55,17 @@ All mathematical claims on the active research branch await independent review.
 | Q-0010 | Resolved question | Growing complete dyadic projection | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | L-0009, L-0010, T-0007 |
 | Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007, T-0010 |
 | Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009 |
-| Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006 |
+| Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006, O-0007 |
 
 ## Relationship among the latest results
 
 - `T-0008` identifies every positive collision chart with a negative coalescence family and replaces the lifted digit map by the intrinsic signed equation `Nq = Mq' + a`.
+- `L-0012` proves that an inverse signature is exactly the negative return target modulo the output radix; collision-code algebra and negative-preimage languages are one object.
 - `T-0009` turns variable negative returns into a direct counterexample certificate, while proving that a finite one-target complete all-supercritical code is impossible.
-- `T-0010` shows that every stationary return chain is simultaneously a controlled real rounding orbit trapped in a circle arc of length `diameter(D)/(N-M)`.
-- `L-0011` proves that long common odd tails can collapse this normalized window exponentially even while preserving branch offsets.
-- `O-0006` demonstrates that branch richness and normalized real control width can move in opposite directions.
+- `T-0010` shows that every stationary return chain is a controlled real rounding orbit trapped in a circle arc of length `diameter(D)/(N-M)`.
+- `L-0011` proves that long common odd tails can collapse this normalized window exponentially.
+- `T-0013` permits compensated locally contracting edges when every reachable directed grammar cycle has positive multiplier; negative cycles supply natural expanding spines.
+- `O-0007` is the cleanest current spine chart: target `-136`, radices `2048 -> 2187`, and signed digits `{0,2,4,5}`.
 
 ## Status note
 
