@@ -1,5 +1,5 @@
 {
-  "arithmetic": "exact integers; meet-in-the-middle subset sums modulo 81^j",
+  "arithmetic": "exact integers; meet-in-the-middle subset sums modulo 81^j; direct survivor replay",
   "depths": [
     2,
     4,
@@ -12,107 +12,155 @@
     32,
     36,
     40,
-    44
+    44,
+    46
   ],
   "experiment_id": "X-9303",
   "records": [
     {
+      "chronological_survivor_word": "10",
       "class_count": 4,
       "depth": 2,
+      "final_tail_class": 1539,
       "lower_bound_bits": 10,
       "minimizing_low_to_high_word": "01",
       "minimum_nontrivial_class": 1539,
+      "minimum_nontrivial_survivor": 961,
       "ordinary_survivor_lower_bound": 961
     },
     {
+      "chronological_survivor_word": "0110",
       "class_count": 16,
       "depth": 4,
+      "final_tail_class": 2383182,
       "lower_bound_bits": 20,
       "minimizing_low_to_high_word": "0110",
       "minimum_nontrivial_class": 2383182,
+      "minimum_nontrivial_survivor": 928832,
       "ordinary_survivor_lower_bound": 928832
     },
     {
+      "chronological_survivor_word": "01111101",
       "class_count": 256,
       "depth": 8,
+      "final_tail_class": 4015726019317,
       "lower_bound_bits": 40,
       "minimizing_low_to_high_word": "10111110",
       "minimum_nontrivial_class": 4015726019317,
+      "minimum_nontrivial_survivor": 609991404608,
       "ordinary_survivor_lower_bound": 609991404608
     },
     {
+      "chronological_survivor_word": "010111101001",
       "class_count": 4096,
       "depth": 12,
+      "final_tail_class": 7745040532946438479,
       "lower_bound_bits": 59,
       "minimizing_low_to_high_word": "100101111010",
       "minimum_nontrivial_class": 7745040532946438479,
+      "minimum_nontrivial_survivor": 458525144289123392,
       "ordinary_survivor_lower_bound": 458525144289123392
     },
     {
+      "chronological_survivor_word": "1100001010001111",
       "class_count": 65536,
       "depth": 16,
+      "final_tail_class": 31177943755603150186720162,
       "lower_bound_bits": 80,
       "minimizing_low_to_high_word": "1111000101000011",
       "minimum_nontrivial_class": 31177943755603150186720162,
+      "minimum_nontrivial_survivor": 719393899965748065464321,
       "ordinary_survivor_lower_bound": 719393899965748065464321
     },
     {
+      "chronological_survivor_word": "01010111100111010111",
       "class_count": 1048576,
       "depth": 20,
+      "final_tail_class": 183137981992672789856320246948114,
       "lower_bound_bits": 101,
       "minimizing_low_to_high_word": "11101011100111101010",
       "minimum_nontrivial_class": 183137981992672789856320246948114,
+      "minimum_nontrivial_survivor": 1646939047692556889060463877184,
       "ordinary_survivor_lower_bound": 1646939047692556889060463877184
     },
     {
+      "chronological_survivor_word": "110011010101001100001010",
       "class_count": 16777216,
       "depth": 24,
+      "final_tail_class": 616431866106193419523900917483999725787,
       "lower_bound_bits": 121,
       "minimizing_low_to_high_word": "010100001100101010110011",
       "minimum_nontrivial_class": 616431866106193419523900917483999725787,
+      "minimum_nontrivial_survivor": 2160548420233502287324095092543320065,
       "ordinary_survivor_lower_bound": 2160548420233502287324095092543320065
     },
     {
+      "chronological_survivor_word": "1000100001110000111011000011",
       "class_count": 268435456,
       "depth": 28,
+      "final_tail_class": 220422580197839216603920929896230046533050529,
       "lower_bound_bits": 138,
       "minimizing_low_to_high_word": "1100001101110000111000010001",
       "minimum_nontrivial_class": 220422580197839216603920929896230046533050529,
+      "minimum_nontrivial_survivor": 301102821246860782043524300556171127673793,
       "ordinary_survivor_lower_bound": 301102821246860782043524300556171127673793
     },
     {
+      "chronological_survivor_word": "01111000011110110101111100101011",
       "class_count": 4294967296,
       "depth": 32,
+      "final_tail_class": 1479769702071961854629158235799956101310457246875767,
       "lower_bound_bits": 160,
       "minimizing_low_to_high_word": "11010100111110101101111000011110",
       "minimum_nontrivial_class": 1479769702071961854629158235799956101310457246875767,
+      "minimum_nontrivial_survivor": 787830326455343423425612714064909652775473916992,
       "ordinary_survivor_lower_bound": 787830326455343423425612714064909652775473916992
     },
     {
+      "chronological_survivor_word": "000001111001100000111110001101010010",
       "class_count": 68719476736,
       "depth": 36,
+      "final_tail_class": 1519641182210369797721998095793259669023951096326786586374,
       "lower_bound_bits": 178,
       "minimizing_low_to_high_word": "010010101100011111000001100111100000",
       "minimum_nontrivial_class": 1519641182210369797721998095793259669023951096326786586374,
+      "minimum_nontrivial_survivor": 315325750596341996022021216051785967279650273706901504,
       "ordinary_survivor_lower_bound": 315325750596341996022021216051785967279650273706901504
     },
     {
+      "chronological_survivor_word": "0100110111001100111001110010011100100110",
       "class_count": 1099511627776,
       "depth": 40,
+      "final_tail_class": 31856257905806248893920404619279477051575173645281264571492219834,
       "lower_bound_bits": 201,
       "minimizing_low_to_high_word": "0110010011100100111001110011001110110010",
       "minimum_nontrivial_class": 31856257905806248893920404619279477051575173645281264571492219834,
+      "minimum_nontrivial_survivor": 2576279411994003681635204120992985532069833032047566298815552,
       "ordinary_survivor_lower_bound": 2576279411994003681635204120992985532069833032047566298815552
     },
     {
+      "chronological_survivor_word": "01101100001110001011011001111110000111000110",
       "class_count": 17592186044416,
       "depth": 44,
+      "final_tail_class": 7220252188262239184305599554690421895921563960360483237559093394744562,
       "lower_bound_bits": 218,
       "minimizing_low_to_high_word": "01100011100001111110011011010001110000110110",
       "minimum_nontrivial_class": 7220252188262239184305599554690421895921563960360483237559093394744562,
+      "minimum_nontrivial_survivor": 227578060273510610973552811001603322347312502177488333909527505984,
       "ordinary_survivor_lower_bound": 227578060273510610973552811001603322347312502177488333909527505984
+    },
+    {
+      "chronological_survivor_word": "0110110111101001010000011100110000101010111011",
+      "class_count": 70368744177664,
+      "depth": 46,
+      "final_tail_class": 13995580641937679806861747515838198945935546006963182029787326398035667034,
+      "lower_bound_bits": 228,
+      "minimizing_low_to_high_word": "1101110101010000110011100000101001011110110110",
+      "minimum_nontrivial_class": 13995580641937679806861747515838198945935546006963182029787326398035667034,
+      "minimum_nontrivial_survivor": 275396778563393867136351926990265018601508986973296055235244496661568,
+      "ordinary_survivor_lower_bound": 275396778563393867136351926990265018601508986973296055235244496661568
     }
   ],
-  "results_sha256": "0ae0ccf0df779ffe4dc8b4d2a4f91471033cdf84b47738d9f79d6b7c85f43add",
-  "schema_version": 1
+  "results_sha256": "f2c4dd9b0c436c9450c03424b27d80366865f54bb8c286944a35047d0662c9bc",
+  "schema_version": 2
 }
