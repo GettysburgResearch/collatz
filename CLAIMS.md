@@ -112,6 +112,7 @@ Author of record: claude-01; independent-reviewer slots open.
 | L-0015 | periodic-chain fixed point | A period-p skeleton pattern `(d_i,u_i)` composes to `C₀ ↦ αC₀+β`, `α = (N/M)^{Σu} ≠ 1`, so it has a unique rational fixed point; periodic chains exist iff it lifts integrally. Search p ≤ 3, u ≤ 5, all four charts (636,350 patterns): **zero** integral chains of any sign | PROPOSED | `skeleton_rigidity.py` | `SKELETON.md` §3 |
 | L-0016 | union-bound obstruction | No union bound over frequencies converts T-0012 into an all-K statement: summed exceptional densities diverge like `Σ(81κ₂)^m`, factor ≈ 60.6/scale; the interchange requires joint (θ,K) structure | PROPOSED | — (computation from T-0012's statement) | `EQ-INTERCHANGE.md` §1 |
 | L-0017 | (Λ) as twisted pair separation | `(Λ) ⟸ Σ_{A≠A′∈R_K} 64^K/dist ≲ 4^K`; pair differences stratify exactly as `Δ = 64^{t₀}·(81^{−t₀} mod 64^{K−t₀})·Δ′` — self-similar copies rotated by the odd unit `81^{−t₀}`; the twist is precisely where individual-orbit structure enters ((Λ) is wall-adjacent) | PROPOSED (identities; the separation bound itself remains open) | — | `EQ-INTERCHANGE.md` §9 |
+| L-0018 | room-walk transition law | Room digits of pos(A) = wrap counts of successive H-steps; exact driver `r′ ≡ (ε − A′)·64^{−(K−1)} mod 81`, twist cycling ⟨64⟩ mod 81 (period 9). EQ final form: wrap-count equidistribution of H-orbits over R_K | PROPOSED (derivation + 6144-cell exact verification) | inline (session 9 report) | `EQ-INTERCHANGE.md` §21 |
 
 ## Theorems
 

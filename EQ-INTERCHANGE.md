@@ -440,3 +440,28 @@ position, twisted by 64^{−n} — the same odd-unit twist as L-0017 and
 Ĉ's phases, now in its final habitat. EQ ⟺ equidistribution of the
 room digits over A ∈ R_K at the law's depth. Next iteration: the
 walk's exact transition law and its mixing.
+
+---
+
+# P2 deep-dive VI: the room walk in final form (L-0018)
+
+*Loop iteration 5.*
+
+## 21. The transition law
+
+One H-step A = 64B + ε ↦ A′ wraps `r′ = ⌊(81B+ε)/64^{K−1}⌋` times,
+and positions telescope exactly: `pos(A) = (r′ + pos(A′))/81 −
+ε/(81·64^{K−1})`. Hence **the base-81 digits of a survivor's position
+are the wrap counts of its successive H-steps** (within the bounded
+drift), with the exact single-level driver
+
+    r′ ≡ (ε − A′)·64^{−(K−1)}  (mod 81),
+
+verified for all 1024 elements of R₁₀ over 6 levels, zero
+exceptions. The twist 64^{−(K−i)} cycles through the AP-subgroup
+⟨64⟩ mod 81 = 1+9ℤ (period 9 — the T-0012 lemma's habitat). **EQ in
+final form: the wrap counts of H-orbits over R_K equidistribute
+mod 81** — a skew product over a 9-periodic twist cycle driven by
+the orbit's mod-81 trace. Every prior mask funnels here; the mixing
+of this one explicit walk is the remaining content of EQ, and the
+program's residual open point in its most concrete shape yet.
