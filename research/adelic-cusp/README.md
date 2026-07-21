@@ -58,12 +58,14 @@ E_K=\sum_{1\le\theta\le2^K}\frac{F_K(\theta)}{\theta}.
 | `D-9301` | `PROPOSED` | One fixed self-similar survivor measure on `Z_2` |
 | `L-9301` | `PROPOSED` | Exact moving-character identity `mu-hat(theta/64^K)=2^{-K}S_K(theta)` |
 | `L-9302` | `PROPOSED` | Weighted shell lemma: block means force an exponentially small high-frequency tail |
+| `L-9303` | `PROPOSED` | Squared phase energy gives a deterministic Fourier-product bound |
 | `T-9301` | `PROPOSED` | Polynomial-window maximal decay is sufficient for full EQ |
 | `T-9302` | `PROPOSED` | The two issue-#4 block means imply full EQ along density-one depths |
 | `D-9302` | `PROPOSED` | Exact `{2,3,infinity}`-solenoid natural extension and integer section |
 | `C-9301` | `IDEA` | Logarithmic cusp-scattering theorem sufficient for all-depth EQ |
+| `O-9301` / `X-9301` | `EMPIRICAL` | Exact bounded scattering census through `K=80`, `theta<=K^2` |
 
-`PROPOSED` means that a complete-looking argument is supplied here but has not received independent repository review. `T-9302` is explicitly conditional on the branch-qualified issue-#4 block-mean claims; this packet does not promote those inputs.
+`PROPOSED` means that a complete-looking argument is supplied here but has not received independent repository review. `T-9302` is explicitly conditional on the branch-qualified issue-#4 block-mean claims; this packet does not promote those inputs. The experiment is not a dependency of any proof-level claim.
 
 ## What is genuinely new here
 
@@ -71,7 +73,7 @@ E_K=\sum_{1\le\theta\le2^K}\frac{F_K(\theta)}{\theta}.
 2. **Weighted-shell compression.** Existing block averages dispose of all but a polynomial-size numerator window.
 3. **Two-axis synthesis.** Frequency averaging plus depth averaging yields the full weighted EQ target on density-one depths.
 4. **Adelic natural extension.** The real coding, 2-adic coding, and ordinary-integer obstruction become one diagonal-intersection problem for a hyperbolic S-arithmetic automorphism.
-5. **A sharply weakened flagship lemma.** Only logarithmically many uniformly nondegenerate cosine factors are needed for each polynomially small numerator.
+5. **A sharply weakened flagship lemma.** Only logarithmically many uniformly nondegenerate cosine factors—or merely logarithmic total squared phase energy—are needed for each polynomially small numerator.
 
 ## Relation to existing work
 
@@ -88,7 +90,7 @@ The first target is `C-9301`. Prove that for some fixed `A,c,delta>0`, every
 1\le |\theta|\le K^A
 \]
 
-has at least `c log K` phase positions whose distance from an integer is at least `delta`. This gives polynomial Fourier decay in the only low-frequency window still needed by `T-9301`.
+has at least `c log K` phase positions whose distance from an integer is at least `delta`. This gives polynomial Fourier decay in the only low-frequency window still needed by `T-9301`. The more flexible alternative from `L-9303` is a lower bound of order `log K` for the total squared phase distance.
 
 Three possible proof mechanisms are developed in `PROOF_PROGRAM.md`:
 
@@ -96,7 +98,7 @@ Three possible proof mechanisms are developed in `PROOF_PROGRAM.md`:
 2. an S-unit/carry height argument for scattered near-degeneracies;
 3. a quantitative shrinking-target theorem on the adelic solenoid.
 
-Computation, if used at all, should be a small exact-arithmetic adversarial probe to choose or refute constants. Long orbit scans are not part of this program.
+`X-9301` supplies one small exact-arithmetic adversarial probe to choose or refute lemma shapes. Long orbit scans are not part of this program.
 
 ## Review order
 
@@ -104,9 +106,11 @@ Computation, if used at all, should be a small exact-arithmetic adversarial prob
 2. `claims/L-9302-weighted-shell-tail.md`
 3. `claims/T-9301-polynomial-window-reduction.md`
 4. `claims/T-9302-density-one-full-eq.md`
-5. `claims/D-9302-adelic-natural-extension.md`
-6. `claims/C-9301-logarithmic-cusp-scattering.md`
-7. `PROOF_PROGRAM.md`
+5. `claims/L-9303-phase-energy-product.md`
+6. `claims/D-9302-adelic-natural-extension.md`
+7. `claims/C-9301-logarithmic-cusp-scattering.md`
+8. `PROOF_PROGRAM.md`
+9. `../../experiments/X-9301-cusp-scattering/README.md`
 
 ## Acceptance boundary
 
