@@ -1,0 +1,100 @@
+{
+  "exact_records": [
+    {
+      "bitlength_exponent_decimal": "1.187186858316",
+      "bitlength_exponent_fraction": "14454/12175",
+      "error_v2": 14454,
+      "pade_order": 1,
+      "period_length": 2,
+      "reduced_height_bits": 12175,
+      "word": [
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.146169292235",
+      "bitlength_exponent_fraction": "55368/48307",
+      "error_v2": 55368,
+      "pade_order": 2,
+      "period_length": 2,
+      "reduced_height_bits": 48307,
+      "word": [
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.132212270199",
+      "bitlength_exponent_fraction": "122742/108409",
+      "error_v2": 122742,
+      "pade_order": 3,
+      "period_length": 2,
+      "reduced_height_bits": 108409,
+      "word": [
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.053723849372",
+      "bitlength_exponent_fraction": "6296/5975",
+      "error_v2": 56664,
+      "pade_order": 1,
+      "period_length": 3,
+      "reduced_height_bits": 53775,
+      "word": [
+        17,
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.039496578394",
+      "bitlength_exponent_fraction": "222840/214373",
+      "error_v2": 222840,
+      "pade_order": 2,
+      "period_length": 3,
+      "reduced_height_bits": 214373,
+      "word": [
+        17,
+        17,
+        18
+      ]
+    }
+  ],
+  "experiment_id": "X-9408",
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "universal block Pade theorem",
+      "irrationality for all period-two or period-three words",
+      "irrationality or rationality for period length at least four",
+      "balanced nonperiodic stack frontier",
+      "Collatz conjecture"
+    ],
+    "proved_by_finite_computation": [
+      "frozen common-denominator cancellations",
+      "frozen first-error valuation identities",
+      "frozen denominator-unit checks",
+      "frozen reduced rational heights"
+    ]
+  },
+  "research_question": "Do block Gaussian-binomial common denominators cross the rationality threshold for periodic stack words of period two and three?",
+  "schema_version": 1,
+  "theoretical_limiting_exponents": {
+    "1": "1.419591945535779",
+    "2": "1.104127068750050",
+    "3": "1.025260849553618",
+    "4": "0.993714361875045",
+    "5": "0.977941118035759",
+    "6": "0.968927835841881"
+  },
+  "threshold_classification": {
+    "certified_above_one_period_lengths": [
+      1,
+      2,
+      3
+    ],
+    "universal_bound_below_one_from_period_length": 4
+  }
+}
