@@ -7,7 +7,7 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch now contains eight mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
+The active branch contains nine mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
 
 There is currently **no positive-integer Collatz counterexample** in the repository.
 
@@ -23,7 +23,7 @@ n/2,&n\text{ even},\\[1mm]
 \end{cases}
 \]
 
-A length-\(L\), weight-\(a\) parity word \(w\) acts affinely:
+For a length-\(L\), weight-\(a\) physical parity word \(w\),
 
 \[
 T^L(n)=\frac{3^an+B(w)}{2^L}
@@ -33,345 +33,341 @@ on one residue class modulo \(2^L\).
 
 ## Research arc before the current session
 
-The repository already contains proposed exact results on:
+The branch already contains proposed results giving:
 
-- finite collision fibers and induced partial radix maps;
-- mixed-radix string rewrites and finite-horizon carry pumps;
-- complete collision-fiber recursion;
-- inverse-signature collision codes;
+- exact finite collision atlases and sparse collision fibers;
+- induced partial radix maps;
+- universal finite-horizon carry pumping;
+- dual real/2-adic coding and an aperiodicity obstruction;
+- the exact run-length/cofactor skeleton;
+- inverse-signature collision codes and a composition algebra;
 - exponentially unbounded mildly supercritical branch count;
 - arbitrary finite 3-adic precision;
-- preservation of finite alphabet geometry under code tensors;
+- geometry-preserving tensor amplification;
 - complete collision-alphabet projection modulo \(2^b\) for every \(b\);
-- negative-template return systems
-  \[
-  Nq=Mq'+a;
-  \]
-- variable-length renewal criteria and finite-code obstructions;
-- normalized real aspect ratio;
-- multi-target graph potentials;
-- exact coupling to moving negative phases;
-- negative-cycle padding towers;
-- Collatz–Kraft pressure and negative typical drift of complete renewal coverage.
+- negative-template rational-base returns;
+- graph-directed expansion with compensated local contraction;
+- exact synchronous coupling to moving negative phases;
+- cycle-padded mismatch towers;
+- the Collatz–Kraft pressure law;
+- the rounded-phase martingale and phase-escape Doob transform.
 
-These results remove branch count, finite precision, local pumping, and finite-scale modular correction as principal scarcities. They do **not** provide one ordinary starting value with an infinite expanding trajectory.
+These results remove finite branch count, finite precision, local carry pumping, and finite-scale modular correction as principal scarcities. They do **not** produce one infinite ordinary trajectory.
 
-# Principal local representation
+# Four exact representations of one physical state
 
-## T-0014 — Synchronous difference/phase coupling
+The repository now uses four compatible views.
 
-Write a physical state as
+## 1. Physical integer
 
-\[
-n=q-v,
-\qquad v\ge1.
-\]
+The ordinary state is \(n>0\).
 
-With
+## 2. Finite interval gauge
+
+Choose any \(v\ge1\), put
 
 \[
-p=q\bmod2,
-\qquad
-r=v\bmod2,
-\qquad
-e=p\oplus r=n\bmod2,
+q=v+n,
 \]
 
-one shortcut step is exactly
+and represent \(n\) by the finite interval
 
 \[
-q'=\frac{3^eq+p}{2},
-\qquad
-v'=\frac{3^ev+(2p-1)r}{2},
+I=[v,q),
+\qquad |I|=n.
 \]
 
-and
+## 3. Negative phase coupling
+
+The lower endpoint \(v\) is the magnitude of a moving negative reference phase. The physical state is
 
 \[
-T(q-v)=q'-v'.
+n=q-v.
 \]
 
-Even \(q\) means synchronization with the ordinary negative orbit; odd \(q\) is a complementary mismatch.
+## 4. Ordered particle population
 
-If \(q=2^km\) with \(m\) odd, the first \(k\) steps synchronize and the next step is the first mismatch. This gives a complete renewal partition indexed by \(\nu_2(q)\).
-
-## T-0015 — Negative-cycle padding towers
-
-A negative cycle of length \(\ell\), odd count \(a\), and multiplier
+Put
 
 \[
-\Lambda=\frac{3^a}{2^\ell}>1
+x=v-1.
 \]
 
-turns every fixed mismatch/recovery type into a countable tower:
+The shifted phase \(x\) is the size of a finite ordered particle population.
 
-\[
-L_t=L_0+t\ell,
-\qquad
-a_t=a_0+ta,
-\qquad
-\lambda_t=\lambda_0\Lambda^t.
-\]
+The current session proves that these are not merely analogous descriptions. They fit into one exact finite rewrite system.
 
-The natural grammar state is therefore:
+# L-0014 — Collatz as finite-interval renormalization
+
+Let \(I=[v,q)\) have positive length \(n=q-v\).
+
+If \(n\) is even, define
 
 \[
 \boxed{
-\text{finite negative phase type}
-+
-\text{one nonnegative padding counter}.
-}
-\]
-
-`O-0008` records the complete one-mismatch complement atlas of the negative eleven-cycle.
-
-## T-0016 — Collatz–Kraft pressure
-
-For every complete parity prefix code,
-
-\[
-\sum_w2^{-|w|}=1
-\]
-
-and
-
-\[
-\sum_w\frac{3^{a(w)}}{4^{|w|}}=1.
-\]
-
-Thus, under fair cylinder probabilities,
-
-\[
-\mathbb E\left[\frac{3^{a(w)}}{2^{|w|}}\right]=1,
-\]
-
-while, for finite mean length,
-
-\[
-\mathbb E[\log\lambda]
+\mathcal R_0(I)
 =
-\frac12\log(3/4)\,\mathbb E[|w|]
-<0.
-\]
-
-The multiplier is exactly the likelihood ratio between Bernoulli odd probability \(3/4\) and fair parity.
-
-Complete broad coverage is therefore the wrong target: every positive-growth survivor language is Haar-null and exceptional.
-
-# New session: rounded phase martingale
-
-## L-0013 — Physical parity removes the XOR
-
-Let
-
-\[
-e=T^t(n)\bmod2
-\]
-
-be the physical parity. The moving negative phase has the exact rounded update
-
-\[
-\boxed{
-S_0(v)=\left\lceil\frac v2\right\rceil,
-\qquad
-S_1(v)=\left\lfloor\frac{3v}{2}\right\rfloor.
+[\lceil v/2\rceil,\lceil q/2\rceil).
 }
 \]
 
-Thus
-
-\[
-v_{t+1}=S_{e_t}(v_t).
-\]
-
-The quotient update is
-
-\[
-q'=
-\begin{cases}
-(q+(v\bmod2))/2,&e=0,\\[1mm]
-(3q+1-(v\bmod2))/2,&e=1.
-\end{cases}
-\]
-
-Most importantly,
+If \(n\) is odd, define
 
 \[
 \boxed{
-S_0(v)+S_1(v)=2v.
-}
-\]
-
-Every physical parity word drives an exact integer-valued rounded phase shadow independent of the magnitude of the accompanying quotient.
-
-## T-0017 — Fair phase absorption
-
-Under independent fair physical parity bits,
-
-\[
-V_{t+1}=S_{E_t}(V_t)
-\]
-
-is a nonnegative martingale:
-
-\[
-\mathbb E[V_{t+1}\mid V_t]=V_t.
-\]
-
-It is absorbed at phase \(1\) almost surely.
-
-This supplies a second exact conservation law beside `T-0016`.
-
-## Exact phase–Kraft identity
-
-For every finite complete physical-parity prefix code \(\mathcal W\),
-
-\[
-\boxed{
-\sum_{w\in\mathcal W}
-2^{-|w|}\bigl(S_w(v)-1\bigr)
+\mathcal R_1(I)
 =
-v-1.
+[\lfloor3v/2\rfloor,\lceil3q/2\rceil).
 }
-\]
-
-Consequently, the fair mass of codewords ending at phase at least \(H\) satisfies
-
-\[
-\sum_{S_w(v)\ge H}2^{-|w|}
-\le
-\frac{v-1}{H-1}.
-\]
-
-High negative phases are necessarily supported by a thin set of parity cylinders.
-
-## Finite complete graph rigidity
-
-Suppose a finite graph of exact phase-return words has a complete outgoing prefix code at every vertex. Let
-
-\[
-P(i,j)
-=
-\sum_{e:i\to j}2^{-|w_e|}.
 \]
 
 Then
 
 \[
-P(v_i-1)=(v_i-1).
+\boxed{|\mathcal R_{n\bmod2}(I)|=T(n).}
 \]
 
-Every recurrent communicating class of such a complete finite graph is phase \(1\). A nontrivial recurrent multi-phase construction must therefore be incomplete and exceptional, infinite-state, or equipped with an unbounded stack/counter.
+Thus shortcut Collatz is exactly the cardinality evolution of one finite integer interval under parity-selected contraction or outward-rounded dilation.
 
-This strengthens the one-target obstruction of `T-0009`.
+## Gauge freedom
 
-## Exact phase escape transform
+The initial lower endpoint is arbitrary.
 
-Put
+### Fixed gauge
 
 \[
-h(v)=v-1.
+v_0=1,
+\qquad q_0=n_0+1
 \]
 
-For \(v>1\), define
+implies
+
+\[
+v_t=1,
+\qquad q_t=T^t(n_0)+1.
+\]
+
+### Diagonal gauge
+
+\[
+v_0=n_0+1,
+\qquad q_0=2n_0+1
+\]
+
+implies
+
+\[
+v_t=T^t(n_0)+1,
+\qquad q_t=2T^t(n_0)+1.
+\]
+
+In this gauge, phase height \(v_t-1\) is exactly the physical Collatz state.
+
+This corrects an important strategic ambiguity:
+
+> phase growth is not gauge invariant; interval length is the physical invariant.
+
+A negative-cycle gauge is useful only when it makes the finite endpoint grammar more structured.
+
+# T-0018 — Critical ordered-particle completion
+
+Define
+
+\[
+R_0(x)=\lfloor x/2\rfloor,
+\qquad
+R_1(x)=\lceil3x/2\rceil.
+\]
+
+They satisfy
+
+\[
+R_0(x)+R_1(x)=2x.
+\]
+
+This harmonic identity has an exact local combinatorial realization.
+
+For \(k\ge1\), give each particle two children:
+
+\[
+2k\longmapsto(0,k),(1,3k),
+\]
+
+\[
+2k-1\longmapsto(1,3k-2),(1,3k-1).
+\]
+
+For the ordered root population
+
+\[
+[x]=\{1,\ldots,x\},
+\]
+
+the branch-zero children are exactly
+
+\[
+[\lfloor x/2\rfloor],
+\]
+
+and the branch-one children are exactly
+
+\[
+[\lceil3x/2\rceil].
+\]
+
+Every parent has exactly two children. Hence after \(L\) levels:
+
+\[
+\sum_{|w|=L}R_w(x)=2^Lx.
+\]
+
+## Escape transform as a uniform descendant
+
+Choosing one depth-\(L\) descendant uniformly gives branch-word probability
 
 \[
 \boxed{
-\mathbb Q_v(e)
-=
-\frac{h(S_e(v))}{2h(v)}.
+\mathbb P_x([w])=rac{R_w(x)}{2^Lx}.
 }
 \]
 
-For a finite parity word \(w\),
+For phase \(v=x+1\), this equals the Doob escape measure from `T-0017`:
 
 \[
-\boxed{
-\mathbb Q_v([w])
-=
-2^{-|w|}
-\frac{S_w(v)-1}{v-1}.
-}
+\mathbb P_x([w])=\mathbb Q_{x+1}([w]).
 \]
 
-This is the exact Doob transform that conditions the fair rounded phase away from absorption.
+The phase martingale is therefore the size-biased branch projection of a completely finite, mass-conserving particle rewrite tree.
 
-Its physically odd probability is
+# Ordinary Collatz is a distinguished marked spine
+
+Each particle \(j\) has one distinguished child:
 
 \[
-\boxed{
-\mathbb Q_v(e=1)
-=
+\chi(j)=
 \begin{cases}
-3/4,&v\text{ odd},\\[1mm]
-3/4+\dfrac1{4(v-1)},&v\text{ even}.
+(0,j/2),&j\text{ even},\\[1mm]
+(1,(3j+1)/2),&j\text{ odd}.
 \end{cases}
+\]
+
+Its child rank is exactly
+
+\[
+T(j).
+\]
+
+Iterating distinguished children from one finite root \(j\) gives the ordinary shortcut-Collatz trajectory of \(j\).
+
+For the rightmost root population \([j]\), if \(w_L(j)\) is its physical parity prefix, then
+
+\[
+\boxed{
+R_{w_L(j)}(j)=T^L(j).
 }
 \]
 
-Therefore phase survival automatically biases physical parity at or above the Collatz growth tilt.
+This identifies the ordinary-versus-adic obstruction precisely:
+
+- an **unmarked escape path** is a branch through a growing population;
+- an **ordinary spine** is one permanently marked finite-root lineage;
+- the first does not imply the second.
+
+A valid string-rewrite counterexample certificate must preserve the marker through the distinguished child indefinitely.
+
+# T-0019 — Exact ordinary-spine likelihoods
 
 Let
 
 \[
-\gamma=\frac34\log3-\log2>0.
+n_{t+1}=T(n_t),
+\qquad e_t=n_t\bmod2,
+\qquad A_L=\sum_{t<L}e_t.
 \]
 
-Under the escape transform,
+For the ordinary parity prefix
 
 \[
-\mathbb E_{\mathbb Q}
-\left[
-\log\left(\frac{3^e}{2}\right)
-\middle|v
-\right]
-\ge\gamma.
+w_L=e_0\cdots e_{L-1},
 \]
 
-The phase itself also has uniformly positive logarithmic drift. Almost every escape-transform path has:
-
-- exponentially growing phase magnitude;
-- exponentially growing formal Collatz multiplier.
-
-This does **not** yet imply an ordinary positive Collatz orbit. It identifies the correct exceptional symbolic measure.
-
-# Three measures on one parity language
-
-A finite physical parity word \(w\) now carries three exact weights.
-
-### Fair cylinder mass
+the diagonal phase-escape weight is
 
 \[
-\mu_{\mathrm{fair}}(w)=2^{-|w|}.
-\]
-
-### Collatz growth tilt
-
-\[
-\mu_{\mathrm{growth}}(w)
+\boxed{
+\mathbb Q_{n_0+1}([w_L])
 =
-2^{-|w|}
-\frac{3^{a(w)}}{2^{|w|}}.
+\frac{n_L}{2^Ln_0}.
+}
 \]
 
-### Phase escape tilt
+Relative to fair parity, the likelihood ratio is exactly the physical growth factor:
 
 \[
-\mu_{\mathrm{escape}}(w)
+\frac{\mathbb Q([w_L])}{2^{-L}}=rac{n_L}{n_0}.
+\]
+
+Relative to the \(3/4\)-odd Collatz growth tilt,
+
+\[
+\boxed{
+\frac{\mathbb Q([w_L])}{3^{A_L}/4^L}
 =
-2^{-|w|}
-\frac{S_w(v)-1}{v-1}.
+\frac{2^Ln_L}{3^{A_L}n_0}
+=
+\prod_{\substack{t<L\\n_t\text{ odd}}}
+\left(1+\frac1{3n_t}\right).
+}
 \]
 
-The first likelihood ratio is the Collatz multiplier. The second is the phase endpoint ratio.
-
-At odd phases, the growth and escape one-step tilts coincide exactly. At even phase \(v\), their physically odd probabilities differ by only
+Equivalently,
 
 \[
-\frac1{4(v-1)}.
+\log\frac{n_L}{n_0}
+=
+A_L\log3-L\log2
++
+\sum_{\substack{t<L\\n_t\text{ odd}}}
+\log\left(1+\frac1{3n_t}\right).
 \]
 
-Thus the negative-phase survival problem and the positive-growth pressure problem are two views of nearly the same exceptional language.
+If the odd-state reciprocal sum converges, phase escape and the \(3/4\)-growth tilt are asymptotically comparable along that ordinary spine.
+
+## Marked-spine rarity
+
+The root population \([n_0]\) has \(2^Ln_0\) depth-\(L\) descendants.
+
+The one distinguished descendant of the specified root \(n_0\) has mass
+
+\[
+\boxed{\frac1{2^Ln_0}.}
+\]
+
+There is one distinguished ordinary descendant per root particle, so the mass of **all** distinguished ordinary lineages is exactly
+
+\[
+\boxed{2^{-L}.}
+\]
+
+This does not depend on how rapidly their endpoints grow.
+
+Therefore the phase-escape transform solves an unmarked population-bias problem, not the marked ordinary-boundary problem.
+
+# Strategic correction
+
+The preceding sessions sought an entropy-thin, pressure-positive escape language. That remains useful, but it is only one layer.
+
+The sharper target is now a **two-layer marked rewrite grammar**.
+
+## Population layer
+
+Prove regeneration, positive graph pressure, or a phase potential for an unmarked finite population or interval.
+
+## Marker layer
+
+Carry one finite marked particle and force it through the distinguished child at every step.
+
+Only the marker layer certifies that the construction begins from one ordinary positive integer rather than from an unmarked or adic escape path.
 
 # Computational state
 
@@ -382,8 +378,9 @@ Thus the negative-phase survival problem and the positive-growth pressure proble
 - `X-0005`: complete dyadic projection through \(b=5\).
 - `X-0006`: negative-template identities, renewal equations, and aspect ratios.
 - `X-0007`: exact aspect-ratio census and the negative-136 chart.
-- `X-0008`: synchronous coupling, cycle-padding towers, complement atlas, and Collatz–Kraft checks.
-- `X-0009`: rounded phase coupling, phase–Kraft identities, escape-transform path weights, drift bounds, and exact fair absorption distributions.
+- `X-0008`: synchronous coupling, padding towers, and Collatz–Kraft identities.
+- `X-0009`: rounded phase martingale and escape transform.
+- `X-0010`: finite interval gauges, particle partitions, mass conservation, distinguished ordinary spines, and exact likelihood identities.
 
 All programs use exact Python integers and the standard library only.
 
@@ -391,26 +388,17 @@ All programs use exact Python integers and the standard library only.
 
 The project still lacks a **finite-boundary regeneration theorem**.
 
-The sharp current target is:
+The strongest current construction target is:
 
-> Construct a finitely generated exact return grammar that approximates the phase escape transform, has positive graph-cycle growth, and contains one explicitly certified ordinary finite quotient.
+> Build a finite or pushdown two-layer rewrite grammar whose unmarked interval/population layer regenerates with positive growth, whose marked finite-root particle is always sent through the distinguished child, and whose marked ranks are proved unbounded.
 
-This requires all of:
-
-1. exact phase and cylinder closure;
-2. an incomplete entropy-thin survivor language;
-3. padding counters or another unbounded finite-memory mechanism;
-4. positive pressure and graph-cycle products;
-5. one ordinary finite accepted boundary, not merely a 2-adic path.
+This formulation directly contains one ordinary finite starting integer and no longer leaves the boundary condition to a later adic audit.
 
 # Immediate priorities
 
-1. **Escape-transform approximation.** Build finite or pushdown return graphs whose edge frequencies approximate
-   \[
-   \mathbb Q_v(e)=\frac{S_e(v)-1}{2(v-1)}.
-   \]
-2. **Phase-136 pushdown model.** Combine the eleven-cycle padding towers with the escape likelihood and search for a closed high-padding component.
-3. **Ordinary-boundary theorem.** Develop a finite certificate that an exceptional accepted parity language contains one ordinary quotient.
-4. **Three-pressure audit.** Rank candidate grammars by fair mass, Collatz growth tilt, phase escape tilt, and deterministic cycle multipliers.
-5. **Multi-mismatch compression.** Use the rounded phase maps rather than the larger quotient-parity semigroup.
-6. **Independent audit.** Reconstruct `L-0013`, `T-0017`, and `X-0009`, especially martingale absorption, graph rigidity, and the Doob drift bounds.
+1. **Marked boundary substitution.** Search for parameterized particle blocks in which the unmarked population reproduces and the distinguished marker moves to a larger copy of the same boundary type.
+2. **Endpoint-string grammar.** Rewrite finite binary lower and upper endpoints from `L-0014`; use a negative-cycle lower gauge while retaining an explicit upper-boundary marker.
+3. **Population/marker potentials.** Combine phase pressure for the unmarked layer with a separate monotone potential for the marked rank.
+4. **Cycle-padding with a marker.** Revisit `T-0015`: determine how the ordinary distinguished child moves through a padded negative-cycle population, not only how the unmarked phase transfers.
+5. **Measure-guided search.** Use `T-0019` to rank ordinary prefixes, but reject every proposal that lacks a deterministic marker rule.
+6. **Independent audit.** Reconstruct `L-0014`, `T-0018`, `T-0019`, and `X-0010`, especially endpoint roundings, the odd-parent right child, and the distinction between branch mass and marked-spine mass.
