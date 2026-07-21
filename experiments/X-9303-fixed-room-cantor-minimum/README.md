@@ -1,7 +1,7 @@
-# X-9303 — Exact fixed-room Cantor minimum certificate
+# X-9303 — Exact dual minimum-survivor certificate
 
 **Experiment ID:** X-9303  
-**Status:** INTERNAL EXACT COMPUTATION / EMPIRICAL artifact  
+**Status:** INTERNAL EXACT COMPUTATION  
 **Agent:** `gpt56-pro-04`  
 **Issue:** #15  
 **Associated claims:** `T-9313`, `T-9314`  
@@ -21,26 +21,27 @@ C_j
 \right\},
 \]
 
-what is the exact least standard representative other than the two trivial classes `0` and `1`?
-
-`T-9313` proves that if a nontrivial ordinary survivor has initial room `A`, then for every depth `j`
+compute
 
 \[
-A
-\ge
-B_j
-:=
-\min\left\{
-64^j,
-\left\lceil
-m_j(64/81)^j
-\right\rceil
-\right\},
-\qquad
-m_j=\min(C_j\setminus\{0,1\}).
+m_j=\min(C_j\setminus\{0,1\})
 \]
 
-Thus any exact computation of `m_j` supplies an independently replayable finite exclusion certificate.
+exactly.
+
+`T-9313` proves the exact duality
+
+\[
+\boxed{
+M_j
+:=
+\min(R_j\setminus\{0,1\})
+=
+\left\lceil m_j(64/81)^j\right\rceil,
+}
+\]
+
+where `R_j` is the standard depth-`j` survivor set. Thus the triadic subset-sum minimum gives the exact first nontrivial survivor without scanning all `2^j` starting residues.
 
 ## Algorithm
 
@@ -53,71 +54,93 @@ g_r
 \pmod{81^j}.
 \]
 
-A direct scan costs `2^j` storage and work. The committed script splits the generators into two halves:
+The verifier:
 
-1. enumerate and sort all right-half subset sums;
-2. enumerate left-half sums in Gray-code order;
-3. for each left sum, use binary search to find the least positive combined residue;
-4. exclude the two trivial residues `0` and `1`;
-5. reconstruct and replay one minimizing binary word.
+1. splits the generators into two halves;
+2. enumerates and sorts all right-half subset sums;
+3. enumerates left-half sums in Gray-code order;
+4. uses binary search for the least positive modular complement;
+5. excludes the trivial residues `0` and `1`;
+6. reconstructs one minimizing low-to-high triadic word;
+7. reverses it into chronological survivor order;
+8. reconstructs the starting room from the exact fixed-room identity;
+9. replays all survivor steps and verifies the final tail class.
 
-The work is `O(2^(j/2) log 2^(j/2))` and the storage is `O(2^(j/2))`.
+The work is `O(2^(j/2) log 2^(j/2))` and storage is `O(2^(j/2))`.
 
-For depths through `16`, the script also performs an independent direct enumeration and requires exact agreement.
+For depths through `16`, the script independently performs direct full class enumeration and requires exact agreement.
 
 ## Replay
 
 ```bash
-python3 -B -m py_compile experiments/X-9303-fixed-room-cantor-minimum/run.py
+python3 -B -m py_compile \
+  experiments/X-9303-fixed-room-cantor-minimum/run.py
 python3 -B experiments/X-9303-fixed-room-cantor-minimum/run.py \
   --check-results \
   experiments/X-9303-fixed-room-cantor-minimum/results/canonical.json
 ```
 
-The depth-44 checkpoint sorts `2^22 = 4,194,304` exact integer subset sums. It is intentionally a bounded exact computation, not a large stochastic search.
+The depth-46 checkpoint sorts `2^23 = 8,388,608` exact integer right-half sums. It is bounded deterministic computation, not random sampling.
 
-## Frozen result
+## Frozen depth-46 result
 
-At depth `44`,
-
-\[
-m_{44}
-=
-7220252188262239184305599554690421895921563960360483237559093394744562,
-\]
-
-and therefore
+The least nontrivial triadic class is
 
 \[
-\boxed{
-B_{44}
+m_{46}
 =
-227578060273510610973552811001603322347312502177488333909527505984
->2^{217}.
-}
+13995580641937679806861747515838198945935546006963182029787326398035667034.
 \]
 
 One minimizing low-to-high triadic word is
 
 ```text
-01100011100001111110011011010001110000110110
+1101110101010000110011100000101001011110110110
 ```
 
-The canonical payload SHA-256 is
+The reversed chronological survivor word is
 
 ```text
-0ae0ccf0df779ffe4dc8b4d2a4f91471033cdf84b47738d9f79d6b7c85f43add
+0110110111101001010000011100110000101010111011
+```
+
+Its exact starting room—and the exact minimum of `R_46 \ {0,1}`—is
+
+\[
+\boxed{
+M_{46}
+=
+275396778563393867136351926990265018601508986973296055235244496661568
+>2^{227}.
+}
+\]
+
+The replay ends at the ordinary tail `m_46` after exactly 46 valid steps.
+
+Canonical payload SHA-256:
+
+```text
+f2c4dd9b0c436c9450c03424b27d80366865f54bb8c286944a35047d0662c9bc
 ```
 
 ## Interpretation
 
-Subject to independent reconstruction of `T-9313`, the exact result excludes every nontrivial ordinary survivor room below `B_44`.
+Subject to independent reconstruction of `T-9313`, the result is both:
 
-It does not prove that the sequence `B_j` tends to infinity, although the frozen values rise rapidly. Proving unbounded growth of `B_j`, or the stronger expected scale near `32^j`, would close the fixed-room ordinary-section problem.
+- an exact finite minimum-survivor theorem at depth 46;
+- an exclusion of every nontrivial infinite ordinary survivor room through `2^227`.
+
+The monotone sequence
+
+\[
+M_j=\min(R_j\setminus\{0,1\})
+\]
+
+satisfies `M_(j+1)>=M_j`. Proving `M_j -> infinity` would close the ordinary-section problem.
 
 ## Limitations
 
-- The computation is finite and ends at depth `44`.
-- Meet-in-the-middle proves the exact minimum at the selected depths but does not supply an asymptotic theorem.
-- The result concerns the induced `64 -> 81` ordinary room. Translation to an original Collatz starting value remains branch-qualified.
+- The computation is finite and ends at depth `46`.
+- Meet-in-the-middle proves exact selected-depth minima but no asymptotic growth theorem.
+- Translation to an original Collatz starting value remains branch-qualified.
 - No ordinary survivor, divergent seed, nontrivial cycle, or Collatz resolution is claimed.
