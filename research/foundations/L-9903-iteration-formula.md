@@ -3,11 +3,11 @@
 ```text
 Claim ID:      L-9903
 Title:         Exact affine iteration formula for T with sharp two-sided remainder bounds
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p3
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v3 (adversarial review 2026-07-21: PASS)
 Created:       2026-07-21
-Last updated:  2026-07-21
+Last updated:  2026-07-21 (status upgraded after independent adversarial review)
 Dependencies:  NOTATION.md (D-9902 shortcut map T, D-9906 parity vector v_i and a_k)
 Scope:         All n in Z^+ and all k >= 0; word-level statements over all of {0,1}^k.
 Related counterexample candidates: none
@@ -313,7 +313,7 @@ $\rho_k(n) \le 2^{k-a}(3^a - 2^a)$, hence
 $$\frac{\rho_k(n)}{2^k} \;\le\; \frac{2^{\,k-a}\,(3^a - 2^a)}{2^k}
 \;=\; \frac{3^a - 2^a}{2^a} \;=\; \left(\tfrac32\right)^{a} - 1 .$$
 (Equivalently $(3/2)^a\big(1 - (2/3)^a\big) = (3/2)^a - 1$; the two expressions in the
-task statement agree.) Therefore
+Statement above agree.) Therefore
 $T^k(n) \le 3^a n/2^k + (3/2)^a - 1$. $\blacksquare$
 
 *(Note the upper bound is uniform in $k$ for fixed $a$: the additive error depends only on
@@ -534,7 +534,7 @@ What this covers, adversarially:
 - L-9903.4/.5 in exact-arithmetic equivalent forms on the whole Part-1 range.
 
 **No corrections were needed:** every bound and both equality characterizations hold
-exactly as stated in the task; the finite search found no counterexample to any sub-claim.
+exactly as stated above; the finite search found no counterexample to any sub-claim.
 
 ## Remaining uncertainty
 
