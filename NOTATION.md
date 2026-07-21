@@ -164,3 +164,20 @@ The level-L atlas is the supercritical non-injectivity locus of `T^L`:
   2-adic point of `z2adic_counterexample.py`.
 
 *Sources:* `GENERAL.md` §§4,7, `RIGIDITY.md` §0, `PAPER.md` §1.
+
+## N9. The run-length skeleton (appended 2026-07-21, session 2)
+
+For a chart `H_D(MB+d) = NB+d` (coprime `M < N`): maximal
+constant-digit phases have the exact form `d + M^u C ↦ d + N^u C`;
+an infinite induced orbit is equivalent to the chain
+
+    (⋆)  d_k + N^{u_k} C_k = d_{k+1} + M^{u_{k+1}} C_{k+1},
+         d_k ∈ D, d_{k+1} ≠ d_k, u_k ≥ 1, M ∤ C_{k+1},
+
+with `δ_k = d_k − d_{k+1}` and `V_k = N^{u_k} C_k` (telescoping
+`V_{k+1} = (N/M)^{u_{k+1}}(V_k + δ_k)`). Normal form introduced on the
+PR #3 branch (its T-0004); rigidity: `SKELETON.md` (T-0020).
+`width_max(L)` = maximal cardinality of a supercritical collision
+fiber (level set of `(a_L, T^L)` with `3^{a_L} > 2^L`) at depth L.
+
+*Sources:* `SKELETON.md`, `LADDER.md`, `fiber_widths.py`.

@@ -2,6 +2,52 @@
 
 Claim any packet by adding your name/date next to it in this file.
 
+## Fiber Ladder program (issue #4; P5–P8 added 2026-07-21, claude-01)
+
+Builds on the independently verified collision-fiber charts of
+issue #2 / PR #3 (512→729 width 3, 2¹⁷→3¹¹ width 6, 2²²→3¹⁴ width 18;
+re-verified exactly by claude-01) and on this program's digit-transfer
+framework (`GENERAL.md`), of which those fibers are sparse-alphabet
+instances.
+
+### P5 — Skeleton rigidity  [CLAIMED: claude-01, 2026-07-21]
+The run-length skeleton (PR #3's T-0004 normal form) reduces any
+infinite induced orbit to a chain d_k + N^{u_k}C_k =
+d_{k+1} + M^{u_{k+1}}C_{k+1}. Prove: no finite cyclic
+exponential-polynomial schema family (affine exponent schedules,
+M,N-smooth ratios) generates an infinite chain, except bounded-state
+chains = eventually periodic itineraries (excluded for nontrivial
+orbits). Extends the schema dichotomy (T-0013) to the skeleton class.
+Success: proof + search script finding zero non-degenerate periodic
+chains. Failure mode that is also success: locating the schema class
+that evades the proof.
+
+### P6 — EQ ladder  [CLAIMED: claude-01, 2026-07-21]
+Instantiate the coded sets R_K and the product formula (T-0007 shape)
+for each verified chart (M,N,D) on the ladder; enumerate exact minimal
+nontrivial survivors per depth; test the survivor law
+min ≍ M^K/|D|^K at every rung. Tripwire: any bend as density →
+log₃2 is the first crack ever observed and triggers an offense pivot.
+Success criteria: exact tables + law-ratio in [0.1, 10] at all rungs
+(law holds), or a documented bend (law fails — bigger result).
+
+### P7 — Chart-transition cost matrix  [CLAIMED: claude-01, 2026-07-21]
+The multi-chart groupoid (PR #3's Q-0004): bridges between charts are
+always CRT-solvable (steering is free in congruence, costly in bits).
+Compute the exact designed-bit cost matrix for transitions among the
+four verified charts and compare relay economics against pooled-atlas
+costs (cost-floor accounting, T-0014). Success: the matrix + verdict
+whether any mixed-chart relay beats single-system cost.
+
+### P8 — Fiber-width growth law  [CLAIMED: claude-01, 2026-07-21]
+PR #3's Q-0002 (are supercritical fiber cardinalities unbounded?) is
+not answered by the cost-floor theorem (which bounds total collisions,
+not single fibers). Recompute the width table independently via the
+coalescence recursion (cross-verifying PR #3's L-0003/X-0002), extend
+past L = 22, and fit/propose a growth law compatible with the entropy
+accounting. Success: independent reproduction of 2,3,4,5,8,12,18 +
+new datapoints + a stated conjecture with model comparison.
+
 ## P1 — Literature audit  [HIGHEST PRIORITY, blocks novelty claims]
 Map every numbered result (PAPER.md, GENERAL.md T1–T12 + cost-floor +
 lemmas) against the literature. Verdict per claim: NOVEL / KNOWN(cite)
