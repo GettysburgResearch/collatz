@@ -1,0 +1,30 @@
+== Theorem 7: product formula ==
+  K=4: product == direct sum on 25 random frequencies: True
+  K=7: product == direct sum on 25 random frequencies: True
+  K=10: product == direct sum on 25 random frequencies: True
+
+== full worst-case scan (all theta) ==
+  K=2: max |S|/2^K = 0.998795 at theta=64 (v81: 0; scanned 4095)
+  K=3: max |S|/2^K = 0.998795 at theta=4096 (v81: 0; scanned 262143)
+  K=4: max |S|/2^K = 0.998795 at theta=262144 (v81: 0; scanned 2396745)
+
+== survivor-range scan: |theta| <= 2^K ==
+K   max|S|/2^K   argmax    mean|S|/2^K   ET-sum
+ 6  5.007e-01        33  6.396e-02  0.3670
+ 8  2.978e-01        37  2.862e-02  0.1608
+10  4.516e-01       807  9.858e-03  0.1932
+12  2.983e-01      1344  4.247e-03  0.0293
+14  2.528e-01       820  1.853e-03  0.0177
+16  3.005e-01      5696  7.304e-04  0.0063
+
+== cascade lemma verification ==
+  2000 random frequencies, delta=1/8: run-length distribution {1: 6865, 2: 1670, 3: 400, 4: 100, 5: 36, 6: 4, 7: 2}
+  cascade bound violations: 0
+
+== adversarial 81-power frequencies ==
+  theta = 1*81^15: |S|/2^K = 8.4462e-01
+  theta = 5*81^14: |S|/2^K = 7.3354e-01
+  theta = 1*81^14: |S|/2^K = 5.4861e-01
+  theta = 5*81^7: |S|/2^K = 2.3011e-01
+  theta = 7*81^13: |S|/2^K = 2.2516e-01
+  (survivor-range max at K=16 for comparison: see table above)
