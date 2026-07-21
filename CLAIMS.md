@@ -43,19 +43,27 @@ All mathematical claims on the active research branch await independent review.
 | O-0007 | Observation | Four-branch `2048 -> 2187` chart at the negative cycle phase `-136` | PROPOSED | `claims/observations/O-0007-negative-136-cycle-chart.md` | L-0001, L-0003, T-0002, T-0008, T-0010, X-0007 |
 | X-0006 | Experiment | Negative-shadow, signature-target, renewal, and aspect-ratio checks | EMPIRICAL | `experiments/X-0006-shadow-return/` | T-0008--T-0010, L-0011--L-0012 |
 | X-0007 | Experiment | Exact normalized-aspect census through depth 22 | EMPIRICAL | `experiments/X-0007-aspect-census/` | L-0003, T-0010, O-0007 |
-| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0013 |
+| T-0014 | Theorem | Exact synchronous negative-phase coupling and valuation acceleration | PROPOSED | `claims/theorems/T-0014-synchronous-negative-phase-coupling.md` | D-0001, T-0008 |
+| T-0015 | Theorem | Cycle-padded one-mismatch return towers | PROPOSED | `claims/theorems/T-0015-cycle-padded-mismatch-towers.md` | T-0013, T-0014 |
+| T-0016 | Theorem | Collatz–Kraft martingale and renewal-code pressure | PROPOSED | `claims/theorems/T-0016-collatz-kraft-martingale.md` | D-0001, T-0009, T-0013 |
+| O-0008 | Observation | Complement-basin atlas and padded towers of the negative eleven-cycle | PROPOSED | `claims/observations/O-0008-negative-cycle-complement-atlas.md` | T-0014, T-0015, O-0007, X-0008 |
+| X-0008 | Experiment | Negative-cycle coupling, padded returns, and Kraft checks | EMPIRICAL | `experiments/X-0008-cycle-coupling-kraft/` | T-0014--T-0016, O-0008 |
+| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0016 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013 |
-| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0015 |
+| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016 |
 | Q-0006 | Open question | Independent verification | IDEA | `OPEN_PROBLEMS.md` | all above |
 | Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009 |
 | Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0008 |
 | Q-0009 | Open question | Structured collision codes and closure-quality geometry | PARTIAL | `OPEN_PROBLEMS.md` | L-0006, T-0005--T-0007 |
 | Q-0010 | Resolved question | Growing complete dyadic projection | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | L-0009, L-0010, T-0007 |
 | Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007, T-0010 |
-| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009 |
+| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0016 |
 | Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006, O-0007 |
+| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008 |
+| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016 |
+| Q-0016 | Open question | Multi-mismatch complement automaton | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008 |
 
 ## Relationship among the latest results
 
@@ -63,9 +71,11 @@ All mathematical claims on the active research branch await independent review.
 - `L-0012` proves that an inverse signature is exactly the negative return target modulo the output radix; collision-code algebra and negative-preimage languages are one object.
 - `T-0009` turns variable negative returns into a direct counterexample certificate, while proving that a finite one-target complete all-supercritical code is impossible.
 - `T-0010` shows that every stationary return chain is a controlled real rounding orbit trapped in a circle arc of length `diameter(D)/(N-M)`.
-- `L-0011` proves that long common odd tails can collapse this normalized window exponentially.
-- `T-0013` permits compensated locally contracting edges when every reachable directed grammar cycle has positive multiplier; negative cycles supply natural expanding spines.
-- `O-0007` is the cleanest current spine chart: target `-136`, radices `2048 -> 2187`, and signed digits `{0,2,4,5}`.
+- `T-0013` permits compensated locally contracting edges when every reachable directed grammar cycle has positive multiplier.
+- `T-0014` resolves the negative-shadow mechanism one shortcut step at a time: even difference means synchronized shadowing, odd difference means a complementary phase mismatch.
+- `T-0015` proves that one negative cycle turns each finite mismatch type into a countable geometric tower indexed by a cycle-padding counter.
+- `T-0016` identifies the exact conservation law of complete renewal languages: fair Kraft mass and `3/4`-tilted mass both equal one, while the typical logarithmic multiplier is negative.
+- `O-0008` exhibits the finite complement-basin control graph of the negative eleven-cycle and its exact padded transfer families.
 
 ## Status note
 
