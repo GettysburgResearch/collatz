@@ -7,7 +7,7 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch contains six mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
+The active branch contains seven mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
 
 There is currently **no positive-integer Collatz counterexample** in the repository.
 
@@ -31,304 +31,399 @@ T^L(n)=\frac{3^an+B(w)}{2^L}
 
 on one residue class modulo \(2^L\).
 
-The repository has developed three mutually equivalent finite descriptions of useful Collatz blocks:
+The repository has developed four compatible finite descriptions:
 
 1. positive collision fibers;
-2. partial induced radix maps;
-3. negative-template return families.
+2. induced partial radix maps;
+3. negative-template rational-base returns;
+4. synchronous coupling to a moving negative phase.
 
-The third is now the principal global viewpoint.
+The fourth is now the most local and structurally transparent representation.
 
-## Results from the first five sessions
+## Established finite resources
 
-The branch already contains:
+The branch already contains proposed results giving:
 
-- exact finite collision atlases and sparse collision fibers;
-- induced maps
-  \[
-  H_D(MB+d)=NB+d;
-  \]
+- exact finite collision atlases and sparse fibers;
+- induced maps \(H_D(MB+d)=NB+d\);
 - universal finite-horizon carry pumping;
 - exact 2-adic/real coding and an aperiodicity obstruction;
 - the run-length skeleton
   \[
   d_k+N^{u_k}C_k=d_{k+1}+M^{u_{k+1}}C_{k+1};
   \]
-- inverse-signature collision codes and an exact composition algebra;
+- inverse-signature collision codes and composition algebra;
 - exponentially unbounded mildly supercritical fiber cardinality;
-- the exact 339-branch chart `O-0005`;
+- the 339-branch chart `O-0005`;
 - arbitrary finite 3-adic precision;
 - geometry-preserving tensor amplification;
-- complete collision-alphabet projection modulo \(2^b\) for every \(b\).
+- complete alphabet projection modulo \(2^b\) for every \(b\);
+- exact negative-shadow and graph-directed return criteria;
+- normalized real aspect-ratio constraints.
 
-These results remove branch count, finite precision, local pumping, and finite-scale dyadic correction as principal scarcities. They do **not** provide one infinite ordinary trajectory.
+These remove branch count, finite precision, local pumping, and finite-scale dyadic correction as principal scarcities. They do **not** produce one infinite ordinary trajectory.
 
-# New principal framework: negative shadows
+# Negative shadows and renewal systems
 
-## T-0008 — Every collision chart is a negative return system
+## T-0008 — Negative-template duality
 
-Suppose
+Every collision chart
 
 \[
-T^L(MQ+r_i)=NQ+s,
-\qquad
-M=2^L,
-\qquad
-N=3^a.
+T^L(MQ+r_i)=NQ+s
 \]
 
-Define
+has exact negative templates
 
 \[
 u_i=M-r_i,
-\qquad
-v=N-s.
+\qquad v=N-s
 \]
 
-Then the same finite block satisfies
+satisfying
 
 \[
-\boxed{
 T^L(-u_i)=-v
-}
 \]
 
-and, more generally,
+and
+
+\[
+T^L(Mq-u_i)=Nq-v.
+\]
+
+At a positive boundary \(n=Nq-v\), the intrinsic return equation is
+
+\[
+Nq=Mq'+a,
+\qquad a\in\{v-u_i\}.
+\]
+
+Thus collision codes are signed rational-base return languages in the ordinary negative Collatz graph.
+
+## T-0009 — Variable-length renewal criterion
+
+If negative templates of possibly different lengths return to one target, each supplies a dyadic quotient cylinder and an exact affine return map. A deterministic forward-invariant selector with unbounded positive quotients gives a Collatz counterexample.
+
+A finite one-target family that covers all sufficiently large quotients must contain the all-even contracting return. Hence a successful construction must use an infinite regular language, a proper survivor set, multiple phases, or compensated contracting edges.
+
+## T-0013 — Graph-directed returns
+
+A finite graph of negative phases permits locally contracting edges when every reachable directed grammar cycle has product multiplier greater than one. A finite phase potential then converts the cycle condition into uniform weighted expansion above one threshold.
+
+The missing part remains arithmetic and symbolic: construct an invariant accepted cylinder language containing one ordinary quotient.
+
+# New session: exact synchronous phase coupling
+
+## T-0014 — Difference/phase conjugacy
+
+For a positive phase magnitude \(v\), define
+
+\[
+P(v)=
+\begin{cases}
+v/2,&v\text{ even},\\
+(3v-1)/2,&v\text{ odd},
+\end{cases}
+\]
+
+so that \(T(-v)=-P(v)\), and define the complementary phase map
+
+\[
+C(v)=
+\begin{cases}
+3v/2,&v\text{ even},\\
+(v+1)/2,&v\text{ odd}.
+\end{cases}
+\]
+
+Write the physical state as
+
+\[
+n=q-v.
+\]
+
+Let
+
+\[
+p=q\bmod2,
+\qquad r=v\bmod2,
+\qquad e=p\oplus r.
+\]
+
+Then one shortcut step is exactly
 
 \[
 \boxed{
-T^L(Mq-u_i)=Nq-v
+q'=\frac{3^eq+p}{2},
+\qquad
+v'=\frac{3^ev+(2p-1)r}{2},
 }
 \]
 
-for every integer \(q\).
-
-Thus the positive collision fiber is exactly an affine family of shadows of several ordinary negative integers coalescing to one negative target.
-
-At a positive chart boundary write
+with
 
 \[
-n(q)=Nq-v.
+T(q-v)=q'-v'.
 \]
 
-The next return block is selected by the intrinsic signed equation
+This gives a precise interpretation:
+
+- **even difference \(q\):** parity remains aligned, the phase follows its genuine negative orbit \(P\);
+- **odd difference \(q\):** the first carry mismatch occurs, and the phase takes the complementary branch \(C\).
+
+Thus the negative-shadow system is not an imposed encoding. It is the natural dynamics of the difference between an ordinary orbit and a moving negative reference orbit.
+
+## Exact valuation acceleration
+
+If
 
 \[
-\boxed{
-Nq_t=Mq_{t+1}+a_t,
+q=2^km,
+\qquad m\text{ odd},
+\]
+
+then the first \(k\) steps are synchronized. Put
+
+\[
+A_v(k)=\sum_{j=0}^{k-1}(P^j(v)\bmod2).
+\]
+
+After the synchronized segment,
+
+\[
+q_k=3^{A_v(k)}m,
 \qquad
-a_t\in A:=\{v-u_i\}.
-}
+v_k=P^k(v).
 \]
 
-This is a rational-base \(N/M\) return system with a finite signed alphabet. The separate lifting congruence of the earlier induced coordinate is absorbed into the integral quotient equation.
-
-A finite itinerary obeys the exact address identity
+The next step is the first mismatch:
 
 \[
-N^kq_0-M^kq_k
-=
-\sum_{t=0}^{k-1}
-a_tN^{k-1-t}M^t.
-\]
-
-An infinite admissible chain above an explicit growth threshold gives a divergent positive Collatz trajectory.
-
-## L-0012 — Inverse signatures are negative targets
-
-For a parity word \(w\), put
-
-\[
-M=2^L,
-\qquad
-N=3^a,
-\qquad
-\sigma(w)=M^{-1}B(w)\pmod N.
-\]
-
-The negative return identity
-
-\[
-T^L(-u)=-v
-\]
-
-is equivalent to
-
-\[
-B(w)+Mv=Nu,
-\]
-
-and hence to
-
-\[
-\boxed{
-v\equiv-\sigma(w)\pmod N.
-}
-\]
-
-Therefore the inverse-signature codes from `L-0005`--`T-0007` are exactly finite negative-preimage fibers of one negative target. The code-composition algebra and the negative renewal graph are the same construction viewed from opposite ends.
-
-# Variable-length renewal systems
-
-## T-0009 — Renewal-code counterexample criterion
-
-Let negative templates return to one target at possibly different depths:
-
-\[
-T^{L_i}(-u_i)=-v,
-\]
-
-with \(a_i\) odd steps. On the cylinder
-
-\[
-q\equiv v-u_i\pmod{2^{L_i}},
-\]
-
-the exact quotient map is
-
-\[
-\boxed{
-F_i(q)=3^{a_i}\frac{q-v+u_i}{2^{L_i}}.
-}
-\]
-
-If one can exhibit a nonempty set of ordinary quotients above \(v\), a deterministic return selector, forward invariance, and strict growth on every selected branch, then every starting quotient in that set yields a positive Collatz counterexample.
-
-This is now a direct finite-certificate target: construct an infinite but finitely generated renewal language, or a finite graph of negative targets, with one explicit ordinary starting quotient.
-
-## Finite complete one-target obstruction
-
-A finite one-target return family covering every sufficiently large integer quotient cannot have every branch supercritical.
-
-Reason: its finite union of dyadic cylinders is clopen in \(\mathbb Z_2\). Since all sufficiently large ordinary integers are dense in \(\mathbb Z_2\), the union must cover the target quotient \(q=v\). The branch covering that point has
-
-\[
-u_i=2^{L_i}v,
-\qquad
-a_i=0,
-\]
-
-so it is the all-even contracting return.
-
-Consequently a successful return construction must use at least one of:
-
-- an infinite regular code with an exceptional 2-adic boundary path;
-- a proper invariant survivor set rather than all large quotients;
-- several negative targets or charts;
-- compensated grammar cycles containing locally subcritical returns.
-
-This explains structurally why a finite stationary all-expanding table has not emerged.
-
-# Real geometry of the return system
-
-## T-0010 — Fractional-window law
-
-For an infinite signed return chain
-
-\[
-Nq_t=Mq_{t+1}+a_t,
-\qquad
-\beta=N/M,
-\qquad
-\rho=M/N,
-\]
-
-there is a real constant \(C\) such that
-
-\[
-\boxed{
-q_t=C\beta^t+x_t,
-}
+(q,v)
+\longmapsto
+\left(
+\frac{3^{G_v(k)}m+1}{2},
+C(P^k(v))
+\right),
 \]
 
 where
 
 \[
-x_t=
-\frac1N
-\sum_{j\ge0}a_{t+j}\rho^j.
+G_v(k)=A_v(k)+1-(P^k(v)\bmod2).
 \]
 
-The error is a convex combination of the normalized digits:
+This is a complete countable renewal partition indexed only by the ordinary valuation \(k=\nu_2(q)\).
+
+# Negative cycles as phase-plus-counter systems
+
+## T-0015 — Cycle-padded mismatch towers
+
+Let \(v_0\) lie on a negative cycle of period \(\ell\), odd count \(a\), and multiplier
 
 \[
-\frac{\min A}{N-M}
-\le x_t\le
-\frac{\max A}{N-M}.
+\Lambda=\frac{3^a}{2^\ell}>1.
 \]
 
-Since \(q_t\) is integral, the multiplicative fractional-part orbit
+Fix a mismatch phase type \(k_0\pmod\ell\) and a bounded synchronized recovery from its complement phase to a selected target phase. Prepending \(t\) complete synchronized cycle circuits gives an exact return edge of length
 
 \[
-\{C(N/M)^t\}
+L_t=L_0+t\ell
 \]
 
-must remain forever in a fixed circle arc of length at most
+and odd count
 
 \[
-\boxed{
-\Delta=
-\frac{\operatorname{diam}A}{N-M}
-=
-\frac{\operatorname{diam}D}{N-M}.
-}
+a_t=a_0+ta.
 \]
 
-The new dimensionless quantity \(\Delta\) is the chart's **normalized aspect ratio**. It measures real rounding freedom and is independent of raw branch count.
-
-## L-0011 — Common odd-tail aspect tax
-
-For a collision core of length \(L\), residue span \(W\), and a common odd tail of length \(k\), the final aspect ratio is exactly
+Its multiplier satisfies
 
 \[
 \boxed{
-\Delta_k
-=
-\frac{W/2^L}{2^k(\lambda_k-1)},
+\lambda_t=\lambda_0\Lambda^t.
 }
 \]
 
-where \(\lambda_k=N_k/M_k\).
+The cylinders for different \(t\) are disjoint because they have different exact valuations. Every fixed mismatch type therefore generates a countable geometric tower and becomes supercritical after finitely many padding levels.
 
-If the final expansion margin satisfies \(\lambda_k\ge1+\varepsilon\), then
+This reveals the natural grammar state:
 
 \[
-\Delta_k<2^{-k}/\varepsilon.
+\boxed{
+\text{finite negative phase type}
++
+\text{one nonnegative cycle-padding counter}.
+}
 \]
 
-Thus the earlier separation of branching from drift is algebraically correct but incomplete for closure: a long post-merger tail can make the real control window exponentially narrow while leaving all branch offsets unchanged.
+## O-0008 — Complement atlas of the negative eleven-cycle
 
-## O-0006 — Exact aspect audit
+Write the negative eleven-cycle in phase magnitudes as
 
-The principal recorded stationary charts have:
+\[
+136\to68\to34\to17\to25\to37\to55\to82\to41\to61\to91\to136.
+\]
 
-```text
-chart    branches    diameter/(N-M)
-O-0001       2       5.88235294118e-2
-O-0002       3       9.21658986175e-3
-O-0003       6       1.08518719479e-4
-O-0004      18       1.59683351312e-4
-O-0005     339       3.25606084224e-9
-```
+It has multiplier
 
-The 339-branch chart is symbolically rich but has a stationary real window more than seven orders of magnitude narrower than the original two-branch chart.
+\[
+\Lambda=2187/2048.
+\]
 
-The complete-dyadic-projection examples contract still more sharply. Their exact aspect ratios for \(b=1,\ldots,5\) are approximately
+After one complementary mismatch and bounded synchronized recovery:
 
-```text
-2.17e-5, 2.29e-12, 5.44e-30, 1.10e-93, 4.72e-264.
-```
+- seven phase types enter the negative three-cycle at phase \(7\);
+- four phase types return to the eleven-cycle at phase \(34\).
 
-This does not refute those charts. It corrects the optimization objective.
+The complement hierarchy is
+
+\[
+\text{eleven-cycle}
+\longrightarrow
+\{\text{eleven-cycle},\text{three-cycle}\}
+\longrightarrow
+\text{fixed phase }1.
+\]
+
+From phase \(136\), the grouped base transfers are:
+
+### To phase 7
+
+\[
+T^9(q-136)=q'-7
+\]
+
+on seven residue classes modulo \(512\), with signed equation
+
+\[
+27q=512q'+\alpha
+\]
+
+and
+
+\[
+\alpha\in\{-9,-18,-36,-216,-144,-96,-64\}.
+\]
+
+These towers first become supercritical after \(45\) complete cycle paddings.
+
+### Back to phase 34
+
+\[
+T^{13}(q-136)=q'-34
+\]
+
+on four residue classes modulo \(8192\), with
+
+\[
+2187q=8192q'+\alpha
+\]
+
+and
+
+\[
+\alpha\in\{-1152,-6912,-4608,-3072\}.
+\]
+
+These towers first become supercritical after \(21\) paddings.
+
+The exact atlas is finite, but no rule yet keeps one ordinary orbit inside its high-padding branches forever.
+
+# New conservation law: Collatz–Kraft pressure
+
+## T-0016 — Two measures on one prefix language
+
+Let \(\mathcal W\) be a complete prefix-free parity renewal code. For a codeword \(w\), put
+
+\[
+L=L(w),
+\qquad a=a(w),
+\qquad \lambda(w)=\frac{3^a}{2^L}.
+\]
+
+Completeness gives the Bernoulli identity
+
+\[
+\sum_{w\in\mathcal W}p^{a(w)}(1-p)^{L(w)-a(w)}=1.
+\]
+
+At \(p=1/2\),
+
+\[
+\sum_w2^{-L(w)}=1.
+\]
+
+At \(p=3/4\),
+
+\[
+\sum_w\frac{3^{a(w)}}{4^{L(w)}}=1.
+\]
+
+Therefore, under fair 2-adic cylinder probabilities,
+
+\[
+\boxed{\mathbb E_{1/2}[\lambda]=1.}
+\]
+
+Moreover,
+
+\[
+\boxed{
+\lambda(w)=
+\frac{\mu_{3/4}([w])}{\mu_{1/2}([w])}.
+}
+\]
+
+The real Collatz multiplier is exactly the likelihood ratio between the \(3/4\)-odd and fair parity measures.
+
+When the mean return length is finite,
+
+\[
+\mathbb E_{1/2}[a]=\frac12\mathbb E_{1/2}[L]
+\]
+
+and
+
+\[
+\boxed{
+\mathbb E_{1/2}[\log\lambda]
+=\frac12\log(3/4)\,\mathbb E_{1/2}[L]<0.
+}
+\]
+
+Thus a complete renewal code has mean multiplier one but strictly negative typical logarithmic growth. Every positive-growth survivor language is Haar-null.
+
+## Graph pressure matrices
+
+For return edges \(e:i\to j\), define
+
+\[
+\mathcal A_s(i,j)
+=
+\sum_{e:i\to j}2^{-L_e}\lambda_e^s.
+\]
+
+Then:
+
+- \(\mathcal A_0\) measures fair 2-adic cylinder coverage;
+- \(\mathcal A_1\) measures the \(3/4\)-odd tilted mass;
+- a complete outgoing prefix code makes both row-stochastic;
+- a candidate exceptional grammar should be scored by both pressure operators, not branch count or cycle multiplier alone.
+
+This identifies the true construction target as an **entropy-thin, pressure-positive exceptional language containing one ordinary finite boundary**.
 
 # Computational state
 
 - `X-0001`: consecutive collision bundles.
-- `X-0002`: complete finite collision fibers through depth 22.
+- `X-0002`: complete finite fibers through depth 22.
 - `X-0003`: inverse-signature construction and the 339-branch chart.
 - `X-0004`: offset tensors and arbitrary-precision atomic codes.
 - `X-0005`: complete dyadic projection through \(b=5\).
-- `X-0006`: negative-template identities for `O-0001`--`O-0005`, all 339 committed offsets, signed address equations, the finite renewal obstruction witness, and exact aspect-ratio checks.
+- `X-0006`: negative-template identities, renewal equations, and aspect ratios.
+- `X-0007`: exact aspect-ratio census and the negative-136 chart.
+- `X-0008`: synchronous coupling, valuation acceleration, every eleven-cycle complement phase, padded towers, direct physical iteration, and Kraft identities.
 
 All programs use exact Python integers and the standard library only.
 
@@ -336,18 +431,23 @@ All programs use exact Python integers and the standard library only.
 
 The project still lacks a **finite-boundary regeneration theorem**.
 
-The strongest current formulations are:
+The strongest current construction target is:
 
-1. construct a regular infinite negative-template renewal code with a positive forward-invariant quotient set;
-2. construct a finite multi-target negative return graph whose accepted grammar cycles have net expansion;
-3. close finitely many run-length/cofactor schemas;
-4. build a graph-directed rounding system whose effective normalized windows stay macroscopic while its 2-adic boundary is one ordinary finite integer.
+> Build a finitely generated exceptional grammar whose control state is a finite negative phase plus a cycle-padding stack, whose accepted graph has positive real pressure and cycle growth, and whose language contains one explicitly certified ordinary positive quotient.
+
+This requires all of:
+
+1. exact cylinder and phase closure;
+2. padding counters that remain above edge-specific growth thresholds;
+3. prevention or compensation of descent to contracting phases;
+4. an ordinary finite boundary, not merely a 2-adic path;
+5. positive graph growth despite negative typical drift of complete coverage.
 
 # Immediate priorities
 
-1. **Negative preimage automata.** Build the reverse Collatz tree of a small negative target or negative cycle, recording return depth, odd count, signed displacement, and cylinder.
-2. **Regular renewal language.** Seek a finitely generated infinite return code whose only uncovered 2-adic path is the zero shadow, or whose selected survivor set contains one explicit ordinary quotient.
-3. **Multi-target graph.** Use target changes to route around the all-even contracting boundary branch forced by `T-0009`.
-4. **Macroscopic aspect ratio.** Search near critical pairs \(2^L\approx3^a\) for negative coalescence fibers whose displacement diameter is comparable to \(N-M\).
-5. **Co-designed drift.** Insert expansion before complete coalescence or between return decisions, rather than appending one very long common odd tail.
-6. **Independent audit.** Reconstruct `T-0008`--`T-0010`, `L-0011`--`L-0012`, and `X-0006`, especially extension to negative residue classes, the renewal obstruction, and the real-window calculation.
+1. **Padding-stack substitution.** Search for a finite rule on mismatch types that maps accepted high-padding edges to accepted high-padding edges.
+2. **Multi-mismatch automaton.** Treat failure of the synchronized recovery congruence as another phase transition rather than discarding it.
+3. **Pressure-directed pruning.** Compute \(\mathcal A_0\), \(\mathcal A_1\), cycle products, and phase potentials for every candidate subgrammar.
+4. **Ordinary survivor certificate.** Develop a theorem showing that a finitely generated exceptional language contains one finite ordinary quotient.
+5. **Complement hierarchy.** Determine whether transitions to the three-cycle and fixed phase can be repaired by later high-padding eleven-cycle returns.
+6. **Independent audit.** Reconstruct `T-0014`--`T-0016`, `O-0008`, and `X-0008`, especially the exact pair conjugacy, padding congruence, and Kraft differentiation.
