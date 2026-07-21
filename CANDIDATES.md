@@ -2,57 +2,80 @@
 
 Last updated: 2026-07-21
 
-There is currently **no candidate positive integer** and no finite symbolic construction proved to define an infinite positive-integer Collatz trajectory.
+There is currently **no candidate positive integer**, no regular sanctuary, and
+no finite symbolic construction proved to define an infinite positive-integer
+Collatz trajectory.
 
-## Candidate-adjacent mechanisms
+## Literature-informed boundary
 
-The collision charts `O-0001` through `O-0008` are conditional counterexample mechanisms. An infinite accepted orbit beginning from one ordinary finite state would lift to a positive Collatz counterexample, but no such orbit has been established.
+The literature-review branch and PR #12 change the interpretation of the
+marked interval/particle route.
 
-The repository now supplies abundant finite and symbolic resources:
+`L-0015` proves that regular finite endpoint or population languages have
+regular ordinary marker projections. `T-0020` proves that finitely many regular
+phase domains with fixed finite Collatz blocks compile to a one-step regular
+sanctuary.
 
-- universal finite-horizon stack amplification;
-- exponentially unbounded supercritical branch count;
-- arbitrary finite 3-adic precision;
-- preservation of finite alphabet geometry;
-- complete projection modulo \(2^b\) for every \(b\);
-- exact negative-template return interpretations;
-- graph-directed expansion with compensated local contraction;
-- exact synchronous coupling to moving negative phases;
-- countable cycle-padded return towers;
-- renewal-pressure and Kraft conservation laws;
-- a phase-survival Doob transform with positive symbolic drift;
-- an exact finite-interval lift;
-- a critical particle completion whose distinguished spine is ordinary Collatz.
+Therefore:
 
-None receives a `K-####` identifier because none selects one finite starting state that survives indefinitely.
+> A finite-state regular marked interval, marked-particle, carry-phase, or
+> negative-target grammar is not a new existential class. It belongs to the
+> exact regular-sanctuary program already implemented in PR #12.
 
-## Current preferred candidate format: two-layer marked rewrite grammar
+Finite decoration may produce a clearer certificate, but it does not bypass the
+ordinary marker problem.
 
-A future candidate should consist of one finite interval or particle population together with one distinguished marker.
+## Current preferred candidate format: counter-stack marked sanctuary
 
-### Layer 1 — unmarked population or interval
+A future candidate should carry one explicitly finite ordinary marker together
+with one genuinely unbounded memory component.
 
-The unmarked layer may use:
+A useful abstract state is
 
-- a finite interval
-  
-  \[
-  [v,q),
-  \qquad q-v=n;
-  \]
-- an ordered population
-  
-  \[
-  [x]=\{1,\ldots,x\};
-  \]
-- negative-cycle phases and padding counters;
-- collision-code or mixed-radix macro-tiles.
+\[
+(i,t,\rho,n),
+\]
 
-This layer should regenerate and carry a positive growth, pressure, or phase potential.
+where:
+
+- \(i\) is a finite negative phase or macro-rule type;
+- \(t\ge0\) is an unbounded cycle-padding or valuation counter;
+- \(\rho\) is a finite low-order residue/carry obligation;
+- \(n\) is one ordinary marked positive integer.
+
+A certified edge should have the form
+
+\[
+(i,t,\rho,n)
+\longmapsto
+(j,t+\Delta_e,\rho',T^{b_e(t)}(n)).
+\]
+
+Unlike a finite-state regular grammar, the block length and next residue
+obligation may depend on the unbounded counter.
+
+### Layer 1 — unmarked regenerative structure
+
+The auxiliary layer may use:
+
+- negative-cycle padding towers from `T-0015`;
+- collision-code or mixed-radix relays;
+- an ordered particle population from `T-0018`;
+- graph-cycle potentials and tilted/escape pressure;
+- a unary stack encoding valuation fuel.
+
+It must prove regeneration and positive full-cycle growth.
 
 ### Layer 2 — marked ordinary spine
 
-One finite root particle \(j_0\) is marked. Every rewrite must send it through the distinguished child
+One finite root \(n_0\) is marked. Every macro-edge must replay the exact
+shortcut trajectory and send the marker to
+
+\[
+T^{b_e(t)}(n).
+\]
+
+In the particle completion, the one-step distinguished child is
 
 \[
 \chi(j)=
@@ -62,65 +85,38 @@ One finite root particle \(j_0\) is marked. Every rewrite must send it through t
 \end{cases}
 \]
 
-The marked ranks are therefore exactly
+The marker must remain explicit at every finite stage.
 
-\[
-j_0,T(j_0),T^2(j_0),\ldots.
-\]
+## What would still count as a regular-sanctuary candidate
 
-The grammar must prove that this marked lineage is defined forever and unbounded.
+Any proposal with all of the following should be compiled through `T-0020`
+and checked by PR #12 rather than treated as a separate route:
 
-This format certifies the ordinary starting integer at the beginning rather than trying to recover it later from an unmarked or adic escape path.
+1. finitely many phases;
+2. regular canonical marker domains;
+3. finitely many fixed block lengths;
+4. rational finite-state extraction of the marker;
+5. exact block closure among those regular domains.
 
-## Equivalent endpoint format
+Such a proposal is valuable only if the compiled sanctuary DFA passes the exact
+certificate checker.
 
-By `L-0014`, a candidate may instead carry finite endpoints
+## What genuinely exceeds the regular class
 
-\[
-I_t=[v_t,q_t)
-\]
+At least one of the following is required:
 
-with exact rewrites
+- an unbounded pushdown stack;
+- an unbounded padding/valuation counter;
+- variable block lengths controlled by that memory;
+- a genuinely nonregular ordinary survivor language;
+- a non-rational marker/configuration coupling.
 
-\[
-[v,q)
-\mapsto
-[\lceil v/2\rceil,\lceil q/2\rceil)
-\]
+The negative eleven-cycle padding towers are currently the cleanest source of
+such unbounded memory.
 
-for even length and
+## Exact search scores
 
-\[
-[v,q)
-\mapsto
-[\lfloor3v/2\rfloor,\lceil3q/2\rceil)
-\]
-
-for odd length.
-
-The physical Collatz state is the finite interval length
-
-\[
-n_t=q_t-v_t.
-\]
-
-A negative-cycle gauge may simplify the lower endpoint, but the upper endpoint or marked boundary must remain explicit.
-
-## Equivalent phase graph plus padding stack
-
-A candidate may still use:
-
-1. finite negative phase targets \(-v_i\);
-2. mismatch/recovery types;
-3. cycle-padding counters;
-4. exact return towers;
-5. graph-cycle or phase-potential expansion.
-
-However, every accepted return edge must also specify how the distinguished ordinary marker is transported. Unmarked phase closure is not enough.
-
-## Exact path weights
-
-For a physical parity word \(w\), a candidate grammar may use the following search scores.
+For a physical parity word \(w\), auxiliary search may track:
 
 ### Fair cylinder mass
 
@@ -144,52 +140,55 @@ For a physical parity word \(w\), a candidate grammar may use the following sear
 2^{-|w|}\frac{S_w(v)-1}{v-1}.
 \]
 
-### Ordinary marked-spine mass
+### Fully marked descendant mass
 
-For root population \([n_0]\), the one marked descendant of the specified root has mass
+For one specified root in a population of size \(n_0\),
 
 \[
 \mu_{\mathrm{marked}}(L)=\frac1{2^Ln_0}.
 \]
 
-The escape and growth weights rank unmarked populations. Only the marked layer certifies one ordinary finite trajectory.
+The first three weights guide exceptional-language search. None replaces exact
+marked-rank replay.
 
-## Leading finite testbeds
+## Leading testbeds
 
-### Critical particle completion
+### Negative eleven-cycle counter tower
 
-`T-0018` is now the most direct string-rewrite testbed. Adjacent parent pairs produce one branch-zero and three branch-one children, while a distinguished marker follows the physical Collatz child.
+`O-0008` and `T-0015` provide finitely many mismatch types and an unbounded
+cycle-padding counter. This is the leading nonregular candidate architecture.
 
-### O-0008 — negative eleven-cycle padding towers
+### Critical ordered-particle completion
 
-The unmarked phase-plus-counter structure is rich and exact. The next task is to lift every tower edge to the marked particle layer.
+`T-0018` supplies a finite local rewrite and an explicit ordinary marker. It is
+the preferred marker layer for any counter-stack grammar.
 
-### O-0007 — stationary negative-136 chart
+### Regular controls
 
-The chart
+Every bounded counter truncation and every finite-state approximation should be
+compiled through `L-0015`/`T-0020` and submitted to PR #12's exact verifier.
+This gives concrete counterexample words and maximal safe kernels when the
+approximation fails.
 
-\[
-M=2048,
-\qquad N=2187,
-\qquad A=\{0,2,4,5\}
-\]
+### Large finite repair alphabets
 
-remains the cleanest stationary signed-radix gauge.
-
-### O-0005 — large finite repair alphabet
-
-The 339-branch chart may be useful as a rare unmarked repair component, but it still needs an ordinary marker transport rule.
+`O-0005` and the dyadic-projection charts remain possible rare repair
+components, but they require a counter-compatible marker transport theorem.
 
 ## Non-negotiable candidate checks
 
 A future `K-####` file must prove:
 
 - one finite positive starting integer exists explicitly;
-- every selected word agrees with the unique deterministic Collatz trajectory;
-- the marker is sent through the distinguished child forever;
-- the population/interval and marker rules remain compatible;
-- no inverse-limit or nonordinary 2-adic point is substituted for the marker;
+- every selected macro-word agrees with the unique deterministic Collatz
+  trajectory;
+- the marker is transported exactly forever;
+- the counter/stack update is total on the accepted state set;
+- the counter never becomes invalid or negative;
+- every next residue/carry obligation is satisfied;
+- no inverse-limit or nonordinary adic point is substituted for the marker;
 - positivity holds at every physical boundary;
-- every reachable grammar cycle has justified net growth, including repair edges;
-- pressure or escape claims are not substituted for marked-rank growth;
-- the marked trajectory is unbounded or otherwise avoids the terminal cycle forever.
+- every reachable grammar cycle has justified net growth, including repairs;
+- pressure, attractor, or escape statements are not substituted for marked-rank
+  growth;
+- the trajectory is unbounded or permanently avoids the terminal cycle.
