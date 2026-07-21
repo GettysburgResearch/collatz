@@ -15,7 +15,7 @@ def fail(message: str) -> None:
     raise SystemExit(f"LITERATURE WAVE-3 CHECK FAILED: {message}")
 
 
-expected = {f"LIT-KTHM-{n:04d}" for n in range(28, 33)}
+expected = {f"LIT-KTHM-{n:04d}" for n in range(28, 34)}
 found: dict[str, Path] = {}
 for path in sorted(IMPORTS.glob("LIT-KTHM-*.md")):
     match = re.match(r"(LIT-KTHM-\d{4})", path.name)
@@ -41,6 +41,7 @@ required = [
     LIT / "topic-notes" / "causal-foundry-and-padic-automata.md",
     LIT / "topic-notes" / "padic-logarithm-stage-bulk.md",
     LIT / "topic-notes" / "collatz-spine-many-to-one.md",
+    LIT / "topic-notes" / "entropy-surplus-symbolic-router.md",
     ROOT / "reports" / "gpt56-pro-03" / "2026-07-21-7-literature-audit-wave3.md",
 ]
 for path in required:
@@ -75,6 +76,7 @@ markers = {
     "LIT-KTHM-0030": ("lambda/8", "m+1", "transcendental", "preload"),
     "LIT-KTHM-0031": ("N(K)=N(K-2)+N(K-3)", "rho^3=rho+1", "log_2(rho)", "0.405685"),
     "LIT-KTHM-0032": ("many-to-one", "m(u)/m(root)", "ordinary integer"),
+    "LIT-KTHM-0033": ("Krieger", "periodic-point", "stationary mixing SFT", "ordinary marked state"),
 }
 for ident, needles in markers.items():
     text = found[ident].read_text(encoding="utf-8")
