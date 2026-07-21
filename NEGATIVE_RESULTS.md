@@ -10,13 +10,7 @@ The periodic shortcut parity word
 (100)^\omega
 \]
 
-formally reconstructs the 2-adic rational \(1/5\), which lies on the cycle
-
-\[
-\frac15\to\frac45\to\frac25\to\frac15.
-\]
-
-This is a genuine cycle of the 2-adic extension, not a positive-integer Collatz counterexample.
+formally reconstructs the 2-adic rational \(1/5\), not a positive-integer counterexample.
 
 **Consequence:** an infinite rewrite loop is insufficient until its starting word is proved finite and canonical.
 
@@ -40,7 +34,7 @@ Pre-repository exploratory work found locally expanding rewrite gadgets whose ex
 
 ## N-0005 — The high-order boundary grows at the ratio N/M, not N
 
-For an infinite induced orbit,
+For an infinite stationary induced orbit,
 
 \[
 A_t=C(N/M)^t+O(1).
@@ -58,7 +52,7 @@ Hence base-\(M\) word length grows with slope
 
 Sparse fibers and inverse-signature codes are much richer than consecutive collision runs.
 
-**Consequence:** searches and theorems should operate on full fibers or codes, not intervals alone.
+**Consequence:** searches and theorems should operate on full fibers, codes, or negative return languages—not intervals alone.
 
 ## N-0007 — Unbounded alphabet cardinality is not finite closure
 
@@ -74,13 +68,62 @@ The finite CRT odd tail can make an inverse code supercritical while preserving 
 
 ## N-0009 — Preserving fixed geometry is not growing geometry
 
-`T-0006` embeds any finite collision alphabet into arbitrarily large supercritical fibers while preserving:
+`T-0006` embeds any finite collision alphabet into arbitrarily large supercritical fibers while preserving its existing modular projections, consecutive subblocks, difference set, and finite local patterns.
 
-- every already witnessed modular projection;
-- every consecutive subblock;
-- the entire original difference set;
-- any finite collection of local arithmetic patterns.
+The useful scale remains fixed while a hypothetical orbit's boundary grows.
 
-This is a strict strengthening of cardinality growth, but the preserved useful scale remains fixed while a hypothetical orbit's finite boundary grows without bound.
+**Consequence:** arbitrary precision and preservation of a fixed relay library are insufficient by themselves.
 
-**Consequence:** neither arbitrary precision nor preservation of a fixed finite relay library is sufficient by itself. The next theorem must make closure-relevant geometry grow with construction depth, reinterpret sparse tensor offsets as a finite moving-boundary address system, or establish a vertical relay that is genuinely scale independent.
+## N-0010 — A finite complete one-target all-supercritical renewal code is impossible
+
+`T-0009` proves the following. Let finitely many negative templates return to one target \(-v\), and suppose their dyadic cylinders cover every sufficiently large ordinary quotient. The finite union is clopen in \(\mathbb Z_2\) and contains a dense set, so it also contains the target quotient \(q=v\).
+
+The branch covering \(q=v\) must satisfy
+
+\[
+u=2^Lv,\qquad a=0,\]
+
+and is therefore the all-even contracting return with multiplier \(2^{-L}\).
+
+**Consequence:** an all-expanding construction cannot be a finite complete stationary return table around one target. It must use an infinite but finitely generated renewal language, a proper survivor set, several targets, or compensated subcritical edges.
+
+## N-0011 — Long common drift tails can destroy normalized control width
+
+`L-0011` gives the exact aspect ratio after appending a common all-odd tail of length \(k\):
+
+\[
+\Delta_k
+=
+\frac{W/2^L}{2^k(\lambda_k-1)},
+\]
+
+where \(W\) is the unchanged core offset diameter and \(\lambda_k\) is the final expansion ratio.
+
+If \(\lambda_k\ge1+arepsilon\), then
+
+\[
+\Delta_k<2^{-k}/arepsilon.
+\]
+
+**Consequence:** branching and drift are algebraically separable but not geometrically independent. Long post-merger tails can make the stationary real rounding window exponentially narrow.
+
+## N-0012 — Rich symbolic geometry can coexist with a microscopic real window
+
+`O-0006` records:
+
+```text
+O-0001: 2 branches,   aspect ~= 5.88e-2
+O-0005: 339 branches, aspect ~= 3.26e-9
+```
+
+The complete-dyadic-projection examples fall to aspect ratio about `4.72e-264` by `b=5`.
+
+By `T-0010`, an infinite stationary orbit must trap one fractional-part orbit \(\{C(N/M)^t\}\) in an arc of precisely this normalized width.
+
+**Consequence:** branch count, low-order modular correction, and real control width are separate resources and may move in opposite directions.
+
+## N-0013 — Positive local edges do not replace a graph-cycle audit
+
+In a multi-target return grammar, some local edges may be contracting. `T-0013` shows that what matters asymptotically is the multiplier of every directed grammar cycle, together with a phase-potential certificate.
+
+**Consequence:** neither rejecting every locally subcritical edge nor accepting a graph because its favored cycle expands is sound. The full selected graph must have positive cycle mean, or arithmetic constraints must prove that nonpositive cycles are unreachable.
