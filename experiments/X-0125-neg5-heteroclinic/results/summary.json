@@ -1,0 +1,487 @@
+{
+  "template": "110",
+  "fp": -5,
+  "rows": [
+    {
+      "ex": "1",
+      "m": 6,
+      "ok": true,
+      "best": {
+        "n0": 59,
+        "n1": 89,
+        "growth": 1.5084745762711864,
+        "v2_n0_plus5": 6,
+        "v2_n1_plus5": 1,
+        "depth_delta": -5,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 9,
+      "ok": true,
+      "best": {
+        "n0": 507,
+        "n1": 761,
+        "growth": 1.5009861932938855,
+        "v2_n0_plus5": 9,
+        "v2_n1_plus5": 1,
+        "depth_delta": -8,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 12,
+      "ok": true,
+      "best": {
+        "n0": 4091,
+        "n1": 6137,
+        "growth": 1.5001222195062331,
+        "v2_n0_plus5": 12,
+        "v2_n1_plus5": 1,
+        "depth_delta": -11,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 15,
+      "ok": true,
+      "best": {
+        "n0": 32763,
+        "n1": 49145,
+        "growth": 1.5000152611177242,
+        "v2_n0_plus5": 15,
+        "v2_n1_plus5": 1,
+        "depth_delta": -14,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 18,
+      "ok": true,
+      "best": {
+        "n0": 262139,
+        "n1": 393209,
+        "growth": 1.5000019073850133,
+        "v2_n0_plus5": 18,
+        "v2_n1_plus5": 1,
+        "depth_delta": -17,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 21,
+      "ok": true,
+      "best": {
+        "n0": 2097147,
+        "n1": 3145721,
+        "growth": 1.5000002384191475,
+        "v2_n0_plus5": 21,
+        "v2_n1_plus5": 1,
+        "depth_delta": -20,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 6,
+      "ok": true,
+      "best": {
+        "n0": 59,
+        "n1": 134,
+        "growth": 2.2711864406779663,
+        "v2_n0_plus5": 6,
+        "v2_n1_plus5": 0,
+        "depth_delta": -6,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 9,
+      "ok": true,
+      "best": {
+        "n0": 507,
+        "n1": 1142,
+        "growth": 2.252465483234714,
+        "v2_n0_plus5": 9,
+        "v2_n1_plus5": 0,
+        "depth_delta": -9,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 12,
+      "ok": true,
+      "best": {
+        "n0": 4091,
+        "n1": 9206,
+        "growth": 2.250305548765583,
+        "v2_n0_plus5": 12,
+        "v2_n1_plus5": 0,
+        "depth_delta": -12,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 15,
+      "ok": true,
+      "best": {
+        "n0": 32763,
+        "n1": 73718,
+        "growth": 2.2500381527943105,
+        "v2_n0_plus5": 15,
+        "v2_n1_plus5": 0,
+        "depth_delta": -15,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 18,
+      "ok": true,
+      "best": {
+        "n0": 262139,
+        "n1": 589814,
+        "growth": 2.2500047684625333,
+        "v2_n0_plus5": 18,
+        "v2_n1_plus5": 0,
+        "depth_delta": -18,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 21,
+      "ok": true,
+      "best": {
+        "n0": 2097147,
+        "n1": 4718582,
+        "growth": 2.250000596047869,
+        "v2_n0_plus5": 21,
+        "v2_n1_plus5": 0,
+        "depth_delta": -21,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "111",
+      "m": 6,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "111",
+      "m": 9,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "111",
+      "m": 12,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "111",
+      "m": 15,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "111",
+      "m": 18,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "111",
+      "m": 21,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "101",
+      "m": 6,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "101",
+      "m": 9,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "101",
+      "m": 12,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "101",
+      "m": 15,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "101",
+      "m": 18,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "101",
+      "m": 21,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111",
+      "m": 6,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111",
+      "m": 9,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111",
+      "m": 12,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111",
+      "m": 15,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111",
+      "m": 18,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111",
+      "m": 21,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111010",
+      "m": 6,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111010",
+      "m": 9,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111010",
+      "m": 12,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111010",
+      "m": 15,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111010",
+      "m": 18,
+      "ok": false,
+      "reason": "incompatible"
+    },
+    {
+      "ex": "1111010",
+      "m": 21,
+      "ok": false,
+      "reason": "incompatible"
+    }
+  ],
+  "growing": 12,
+  "depth_destroyed": 12,
+  "depth_preserved_or_gained": 0,
+  "best_preserve": [],
+  "best_destroy": [
+    {
+      "ex": "11",
+      "m": 21,
+      "ok": true,
+      "best": {
+        "n0": 2097147,
+        "n1": 4718582,
+        "growth": 2.250000596047869,
+        "v2_n0_plus5": 21,
+        "v2_n1_plus5": 0,
+        "depth_delta": -21,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 21,
+      "ok": true,
+      "best": {
+        "n0": 2097147,
+        "n1": 3145721,
+        "growth": 1.5000002384191475,
+        "v2_n0_plus5": 21,
+        "v2_n1_plus5": 1,
+        "depth_delta": -20,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 18,
+      "ok": true,
+      "best": {
+        "n0": 262139,
+        "n1": 589814,
+        "growth": 2.2500047684625333,
+        "v2_n0_plus5": 18,
+        "v2_n1_plus5": 0,
+        "depth_delta": -18,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 18,
+      "ok": true,
+      "best": {
+        "n0": 262139,
+        "n1": 393209,
+        "growth": 1.5000019073850133,
+        "v2_n0_plus5": 18,
+        "v2_n1_plus5": 1,
+        "depth_delta": -17,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 15,
+      "ok": true,
+      "best": {
+        "n0": 32763,
+        "n1": 73718,
+        "growth": 2.2500381527943105,
+        "v2_n0_plus5": 15,
+        "v2_n1_plus5": 0,
+        "depth_delta": -15,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 15,
+      "ok": true,
+      "best": {
+        "n0": 32763,
+        "n1": 49145,
+        "growth": 1.5000152611177242,
+        "v2_n0_plus5": 15,
+        "v2_n1_plus5": 1,
+        "depth_delta": -14,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 12,
+      "ok": true,
+      "best": {
+        "n0": 4091,
+        "n1": 9206,
+        "growth": 2.250305548765583,
+        "v2_n0_plus5": 12,
+        "v2_n1_plus5": 0,
+        "depth_delta": -12,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 12,
+      "ok": true,
+      "best": {
+        "n0": 4091,
+        "n1": 6137,
+        "growth": 1.5001222195062331,
+        "v2_n0_plus5": 12,
+        "v2_n1_plus5": 1,
+        "depth_delta": -11,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "11",
+      "m": 9,
+      "ok": true,
+      "best": {
+        "n0": 507,
+        "n1": 1142,
+        "growth": 2.252465483234714,
+        "v2_n0_plus5": 9,
+        "v2_n1_plus5": 0,
+        "depth_delta": -9,
+        "periods_after": 0
+      },
+      "fp": -5
+    },
+    {
+      "ex": "1",
+      "m": 9,
+      "ok": true,
+      "best": {
+        "n0": 507,
+        "n1": 761,
+        "growth": 1.5009861932938855,
+        "v2_n0_plus5": 9,
+        "v2_n1_plus5": 1,
+        "depth_delta": -8,
+        "periods_after": 0
+      },
+      "fp": -5
+    }
+  ],
+  "conclusion": "For -5 template (110): record whether supercritical excursions can grow archimedean size without destroying v2(n+5) shadowing depth."
+}
