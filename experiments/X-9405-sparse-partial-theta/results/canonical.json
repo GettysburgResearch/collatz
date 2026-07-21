@@ -1,0 +1,143 @@
+{
+  "balanced_prefixes": {
+    "1": {
+      "code_prefix_bits": 1038,
+      "context_bits": 978,
+      "context_least_rep_bits": 978,
+      "last_height": 18
+    },
+    "12": {
+      "code_prefix_bits": 73896,
+      "context_bits": 73836,
+      "context_least_rep_bits": 73833,
+      "last_height": 209
+    },
+    "2": {
+      "code_prefix_bits": 2988,
+      "context_bits": 2928,
+      "context_least_rep_bits": 2926,
+      "last_height": 36
+    },
+    "3": {
+      "code_prefix_bits": 5856,
+      "context_bits": 5796,
+      "context_least_rep_bits": 5795,
+      "last_height": 53
+    },
+    "4": {
+      "code_prefix_bits": 9642,
+      "context_bits": 9582,
+      "context_least_rep_bits": 9580,
+      "last_height": 70
+    },
+    "6": {
+      "code_prefix_bits": 20076,
+      "context_bits": 20016,
+      "context_least_rep_bits": 20016,
+      "last_height": 105
+    },
+    "8": {
+      "code_prefix_bits": 34290,
+      "context_bits": 34230,
+      "context_least_rep_bits": 34230,
+      "last_height": 140
+    }
+  },
+  "experiment_id": "X-9405",
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "universal sparse-series normal form",
+      "universal Theta(n^2) theorem",
+      "p-adic irrationality or transcendence of the partial-theta value",
+      "nonexistence of an ordinary stack context or Collatz counterexample"
+    ],
+    "proved_by_finite_computation": [
+      "frozen sparse-series/cylinder congruences",
+      "frozen balanced-prefix congruences",
+      "frozen support-position bounds",
+      "frozen exact finite factor-complexity profiles"
+    ]
+  },
+  "research_question": "Does the active stack cylinder equal a sparse p-adic partial-theta series, and what is the exact factor-complexity class of its support word?",
+  "schema_version": 1,
+  "series_cylinder_equivalence": {
+    "maximum_prefix_bits": 672,
+    "schedules": 336
+  },
+  "support_exponent_bounds": {
+    "1": {
+      "boundary": 10,
+      "lower": 10,
+      "upper": 10
+    },
+    "128": {
+      "boundary": 1272665,
+      "lower": 1244864,
+      "upper": 1318016
+    },
+    "16": {
+      "boundary": 18916,
+      "lower": 18520,
+      "upper": 19600
+    },
+    "2": {
+      "boundary": 173,
+      "lower": 173,
+      "upper": 182
+    },
+    "200": {
+      "boundary": 3114902,
+      "lower": 3046700,
+      "upper": 3225800
+    },
+    "32": {
+      "boundary": 77882,
+      "lower": 76208,
+      "upper": 80672
+    },
+    "4": {
+      "boundary": 976,
+      "lower": 958,
+      "upper": 1012
+    },
+    "64": {
+      "boundary": 315955,
+      "lower": 309088,
+      "upper": 327232
+    },
+    "8": {
+      "boundary": 4454,
+      "lower": 4364,
+      "upper": 4616
+    }
+  },
+  "support_factor_complexity": {
+    "gap_increment_bound": 162,
+    "profiles": {
+      "1024": {
+        "T9406_lower": 0,
+        "exact_factor_complexity": 2226,
+        "ratio_over_n2": "0.002122879028",
+        "universal_upper": 1049601
+      },
+      "2048": {
+        "T9406_lower": 0,
+        "exact_factor_complexity": 7772,
+        "ratio_over_n2": "0.001852989197",
+        "universal_upper": 4196353
+      },
+      "4096": {
+        "T9406_lower": 1637,
+        "exact_factor_complexity": 28870,
+        "ratio_over_n2": "0.001720786095",
+        "universal_upper": 16781313
+      },
+      "512": {
+        "T9406_lower": 0,
+        "exact_factor_complexity": 721,
+        "ratio_over_n2": "0.002750396729",
+        "universal_upper": 262657
+      }
+    }
+  }
+}
