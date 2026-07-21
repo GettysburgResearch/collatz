@@ -37,7 +37,7 @@ python3 -B experiments/X-9404-active-cylinders/run.py \
 Canonical SHA-256:
 
 ```text
-4d091805197c6a500a00324c0c9e48f01e601e4024d31800d31783d017b6a041
+73a878073e3e8e39e6e950ad0e4585c522cd7fe1794639dc5b015a3b5115be3f
 ```
 
 ## Frozen scope
