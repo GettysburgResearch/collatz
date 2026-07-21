@@ -34,7 +34,9 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
 | `Q-9302` | Open question | `IDEA` | Two-place and room mechanisms for the ordinary-section frontier | `D-9302`, `T-9304`, `L-9306`--`L-9310`, `T-9305`--`T-9312` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
+| `O-9302` | Observation | `EMPIRICAL` | Bounded carry counts and zero-run census | `X-9302` |
 | `X-9301` | Experiment | `EMPIRICAL` | Exact cusp-scattering probe through depth 80 | standard-library exact modular arithmetic |
+| `X-9302` | Experiment | `EMPIRICAL` | Exact completion-height carry audit through depth 80 | standard-library exact modular arithmetic and fractions |
 
 ## Status boundary
 
@@ -50,7 +52,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 - `BLOCK_MEAN_AUDIT.md` records why the original uniform partial-product reading of issue #4's Theorem 12 needs valuation correction. It does not change that branch's claim status.
 - `Q-9301` remains open. All-depth finite-set EQ does not automatically decide whether the infinite `2`-adic attractor contains one ordinary positive integer.
 - No positive integer, divergent orbit, cycle, or Collatz counterexample is claimed.
-- `O-9301` is finite empirical evidence only. It is not a premise of any proof-level claim.
+- `O-9301` and `O-9302` are finite empirical evidence only. Neither is a premise of a proof-level claim.
 
 ## Main implication graph
 
