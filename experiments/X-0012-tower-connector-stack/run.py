@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Exact checks for L-0016--L-0019 and T-0021.
+"""Exact checks for L-0016--L-0019 and T-0021--T-0022.
 
 The experiment reconstructs the four self-return mismatch towers at phase -34
 of the negative eleven-cycle, verifies their binary-to-ternary tail replacement,
-constructs every finite mixed-radix connector in a bounded census, checks the
-growing-prefix order obstruction and Hensel escalator, and confirms the
-finite-ray decomposition for bounded high tails.
+constructs every finite mixed-radix connector in a bounded census, and checks
+the finite-ray decomposition for bounded high tails.
 """
 
 from __future__ import annotations
@@ -141,7 +140,8 @@ def connector(left: Tower, right: Tower) -> tuple[int, int]:
     assert numerator % modulus == 0
     theta = numerator // modulus
     assert 0 <= eta < modulus
-    assert theta >= 0
+    assert 0 <= theta < 3**left.G
+    assert ((1 << right.K) * theta - (left.B - right.A)) % (3**left.G) == 0
     return eta, theta
 
 
@@ -265,6 +265,54 @@ def verify_hensel_escalator() -> None:
                 assert low_connector == (-omega_mod(typ, t, H)) % (1 << H)
 
 
+def verify_hensel_budget_window() -> None:
+    """Check the concrete C=7 schedule from T-0022."""
+    C_budget = 7
+    for typ in TYPES:
+        # Begin just below a power of two so the certified prefix grows on the
+        # first update, then continue for a few exact all-height steps.
+        t = (1 << 15) - 64
+        previous_low: int | None = None
+        previous_H: int | None = None
+        saw_growth = False
+
+        for _ in range(6):
+            H = t.bit_length() - 1 - C_budget - typ.r + 1
+            assert H >= 1
+            jump = 1 << (H + typ.r - 1)
+            assert t / (1 << (C_budget + 1)) < jump <= t / (1 << C_budget)
+
+            t_next = t + jump
+            left = tower(typ, t)
+            right = tower(typ, t_next)
+
+            # Exact integer comparison for the positive free-tail slope.
+            assert 3**left.G > 1 << right.K
+
+            low = (-omega_mod(typ, t, H)) % (1 << H)
+            low_next = (-omega_mod(typ, t_next, H)) % (1 << H)
+            assert low_next == low
+
+            # This is the actual connector seed reduced to its certified prefix.
+            modulus = 1 << H
+            low_actual = (
+                (right.A - left.B)
+                * pow(pow(3, left.G, modulus), -1, modulus)
+            ) % modulus
+            assert low_actual == low
+
+            if previous_H is not None and previous_low is not None:
+                assert H >= previous_H
+                assert low % (1 << previous_H) == previous_low
+                saw_growth |= H > previous_H
+
+            previous_H = H
+            previous_low = low
+            t = t_next
+
+        assert saw_growth
+
+
 def verify_bounded_tail_rays() -> None:
     tails = (0, 1, 5)
     for typ in TYPES:
@@ -299,6 +347,9 @@ def main() -> None:
 
     verify_hensel_escalator()
     print("verified nonlinear Hensel escalator prefixes")
+
+    verify_hensel_budget_window()
+    print("verified Hensel prefix and tail-growth budget window")
 
     verify_bounded_tail_rays()
     print("verified bounded-tail finite-ray decomposition")
