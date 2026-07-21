@@ -1,0 +1,15 @@
+== Part 1: skeleton extraction on exact induced orbits ==
+  64->81       40 random coded orbits: all phase and chain equations exact (196 links)
+  512->729     40 random coded orbits: all phase and chain equations exact (233 links)
+  2^17->3^11   40 random coded orbits: all phase and chain equations exact (278 links)
+  2^22->3^14   40 random coded orbits: all phase and chain equations exact (314 links)
+[PASS] skeleton normal form verified on 1021 chain links
+
+== Part 2: periodic-chain search (p <= 3, u <= 5) ==
+  64->81            50 patterns: integer fixed points   0; expanding+positive+coprime 0; contracting+positive 0; nonpositive 0
+  512->729         900 patterns: integer fixed points   0; expanding+positive+coprime 0; contracting+positive 0; nonpositive 0
+  2^17->3^11     15750 patterns: integer fixed points   0; expanding+positive+coprime 0; contracting+positive 0; nonpositive 0
+  2^22->3^14    619650 patterns: integer fixed points   0; expanding+positive+coprime 0; contracting+positive 0; nonpositive 0
+[PASS] no expanding positive coprime periodic chain in range -- every expanding fixed point is nonpositive (the skeleton sign-criticality pattern)
+
+ALL CHECKS PASS

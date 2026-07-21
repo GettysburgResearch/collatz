@@ -1,0 +1,15 @@
+free bridge words: j = 16 steps, all 2^16 classes per chart; critical density log_3 2 = 0.63093
+binomial null: P(density > crit) = 0.10506
+
+64->81       supercritical-free fraction 0.10506 (null 0.10506, ratio 1.000);  max density 16/16 = 1.0000
+512->729     supercritical-free fraction 0.10506 (null 0.10506, ratio 1.000);  max density 16/16 = 1.0000
+2^17->3^11   supercritical-free fraction 0.10506 (null 0.10506, ratio 1.000);  max density 16/16 = 1.0000
+2^22->3^14   supercritical-free fraction 0.10506 (null 0.10506, ratio 1.000);  max density 16/16 = 1.0000
+
+Economics: per-fiber designed costs (L - log2|D|)/L per step:
+  64->81       0.8333 bits/step
+  512->729     0.8239 bits/step
+  2^17->3^11   0.8479 bits/step
+  2^22->3^14   0.8105 bits/step
+Convexity: any relay cycle's per-step cost >= min over rungs (all >= 0.80 here) -- far above the pooled-atlas floor 0.05004 (T-0014); bridges add reachability, not economy.
+ALL CHECKS PASS
