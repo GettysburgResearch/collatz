@@ -14,14 +14,16 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9305` | Lemma | `PROPOSED` | Moving-character triadic Fourier identity | `D-9303` |
 | `L-9306` | Lemma | `PROPOSED` | Full-group absolute moments factor exactly | `T-9304`; CRT; Parseval for `p=2` |
 | `L-9307` | Lemma | `PROPOSED` | Global rational diagonal and bilateral phase stitching | `L-9301`, `L-9305`, `T-9304`; circle reciprocity |
+| `L-9308` | Lemma | `PROPOSED` | Complex bilateral phase stitching | `L-9307`; local character conventions |
 | `T-9301` | Conditional theorem | `PROPOSED` | Polynomial-window reduction to all-depth EQ | `L-9301`, `L-9302`; branch-qualified frequency block mean |
 | `T-9302` | Conditional theorem | `PROPOSED` | Density-one full EQ from frequency blocks and exact depth periods | `L-9302`, `T-9303`; branch-qualified frequency block mean only |
 | `T-9303` | Theorem | `PROPOSED` | Valuation-stratified fixed-frequency depth-period decay | `L-9304`; exact cosine-grid second moment |
 | `T-9304` | Theorem | `PROPOSED` | Stationary two-place CRT Fourier factorization | `L-9301`, `L-9305`; CRT |
 | `T-9305` | Theorem | `PROPOSED` | Split collapse and weighted discrepancy equivalence | `L-9307`; cosine Lipschitz and product telescoping |
+| `T-9306` | Theorem | `PROPOSED` | Complex coefficient and bounded test-sequence equivalence | `L-9308`; complex-mask Lipschitz and telescoping |
 | `C-9301` | Conjecture | `IDEA` | Logarithmic cusp scattering | `L-9301`, `L-9303`, `T-9301` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Two-place proof mechanism after target equivalence | `T-9304`, `L-9306`, `L-9307`, `T-9305` |
+| `Q-9302` | Open question | `IDEA` | Two-place proof mechanism after target equivalence | `T-9304`, `L-9306`--`L-9308`, `T-9305`, `T-9306` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `X-9301` | Experiment | `EMPIRICAL` | Exact cusp-scattering probe through depth 80 | standard-library exact modular arithmetic |
 
@@ -30,10 +32,10 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 - Every complete-looking argument authored in this packet enters as `PROPOSED` pending independent review.
 - `T-9301` remains conditional on the branch-qualified issue-#4 frequency-block theorem.
 - Revised `T-9302` no longer assumes issue #4's depth-block theorem. `T-9303` reconstructs a uniform complete-period estimate with the exact `v_3(theta)` loss; only the frequency-block input remains external.
-- `D-9303`, `L-9305`, `T-9304`, `L-9306`, `L-9307`, and `T-9305` are self-contained. The ordered-position consequence of `T-9304` remains explicitly conditional on the branch-qualified issue-#4 room/CRT comparison.
-- `T-9305` directly compares the **absolute Fourier criteria** of the CRT product and the actual depth-`K` survivor product. In every range `H=o(64^K)`, no branch-qualified position theorem is needed for that magnitude-level equivalence.
+- `D-9303`, `L-9305`--`L-9308`, and `T-9304`--`T-9306` are self-contained. The ordered-position consequence of `T-9304` remains explicitly conditional on the branch-qualified issue-#4 room/CRT comparison.
+- `T-9305` compares the absolute Fourier criteria directly. `T-9306` strengthens this to the complex coefficients and every bounded harmonic test sequence. In ranges `H=o(64^K)`, neither comparison needs a branch-qualified position theorem.
 - `BLOCK_MEAN_AUDIT.md` records why the original uniform partial-product reading of issue #4's Theorem 12 needs valuation correction. It does not change that branch's claim status.
-- `C-9301`, `Q-9301`, and reframed `Q-9302` are open. `Q-9302` now asks for a genuinely new proof mechanism, not for a weaker decay target.
+- `C-9301`, `Q-9301`, and reframed `Q-9302` are open. `Q-9302` now asks for a genuinely better proof mechanism, not for a different absolute or bounded-linear-test target.
 - No positive integer, divergent orbit, cycle, or Collatz counterexample is claimed.
 - `O-9301` is finite empirical evidence only. It is not a premise of any proof-level claim.
 
@@ -50,9 +52,11 @@ The latest issue-#4 interchange packet defines Cantor classes `C_j`, their trans
 
 - issue-#4 `C_j` recursion = the reductions of `D-9303`;
 - issue-#4 finite Cantor product = `L-9305`;
-- exact CRT transform of `R_n x C_j` = the main theorem `T-9304`;
+- exact CRT transform of `R_n x C_j` = `T-9304`;
 - complete-frequency absolute moments = `L-9306`;
 - the two CRT local characters are one global rational diagonal and their factors stitch one phase chain = `L-9307`;
-- every sub-`64^K` harmonic absolute-Fourier sum for the CRT split is asymptotically equal to the original EQ sum, uniformly in the split = `T-9305`;
-- transfer from the CRT set to the **ordered positions** of `R_(n+j)` remains branch-qualified for geometric statements, but it is not needed for `T-9305`'s magnitude comparison;
-- `Q-9302` isolates the remaining methodological question: can signed dynamics, a bilateral inverse theorem, or a positive room transfer operator prove the equivalent criterion?
+- the same stitching holds before taking moduli = `L-9308`;
+- every sub-`64^K` harmonic absolute-Fourier sum for a CRT split is asymptotically equal to the original EQ sum, uniformly in the split = `T-9305`;
+- every bounded signed harmonic test of the complex CRT coefficients is likewise asymptotically equal to the original complex survivor test = `T-9306`;
+- transfer from the CRT set to the **ordered positions** of `R_(n+j)` remains branch-qualified for geometric statements, but is not needed for these Fourier-coefficient comparisons;
+- `Q-9302` isolates the remaining methodological question: can the hyperbolic representation make the common chain easier to control through a nonlinear positive operator, inverse theorem, or renewal argument?
