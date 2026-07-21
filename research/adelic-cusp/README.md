@@ -8,47 +8,29 @@
 
 ## Thesis
 
-The depth-dependent Fourier products in the active `64 -> 81` survivor program are evaluations of **one fixed Bernoulli self-similar measure on `Z_2`** at the moving characters
+The depth-dependent Fourier products in the active `64 -> 81` survivor program are evaluations of **one fixed Bernoulli self-similar measure on `Z_2`** at moving rational characters. The issue-#4 Cantor-class products are likewise evaluations of **one fixed Bernoulli self-similar measure on `Z_3`**.
+
+The two local systems are not independent on the room-relevant CRT orbit. They are local components of one rational character
 
 \[
-q_{K,\theta}=\frac{\theta}{64^K}.
+r=\frac h{64^n81^j},
 \]
 
-The survivor range is therefore an adelic cusp: the same rational character tends to zero in the real absolute value while escaping in the `2`-adic absolute value. This stationarization is exact.
+and their factors stitch one reciprocal phase chain. Consequently, every CRT split is asymptotically equivalent to the original EQ coefficient—both in absolute value and against arbitrary bounded harmonic tests—in every range `H=o(64^K)`.
 
-The frequency-block mean proposed on issue #4 makes the weighted Erdős--Turán tail above `81^M` exponentially small. Hence full EQ does not require a pointwise estimate for every `theta<=2^K`; a polynomial-size low-frequency window is sufficient.
+Thus the multi-place formulation does not define a weaker target. Its value is methodological: the hyperbolic, room, or inverse-limit representation may make the **same carry chain** easier to control.
 
-A second pass audited the perpendicular depth-average claim. Multiplication by a frequency divisible by `3` collapses initial phase grids. `L-9304` and `T-9303` reconstruct the depth-period estimate with the exact loss
-
-\[
-\left\lceil\frac{v_3(\theta)}4\right\rceil.
-\]
-
-Summing the valuation strata proves the complete weighted EQ criterion along density-one depths using only the frequency-block theorem as an external input.
-
-A third pass stationarized issue #4's room/Cantor side. The finite Cantor classes `C_j` are reductions of **one fixed Bernoulli self-similar measure on `Z_3`**, and the exact CRT comparison transform factors through the fixed product measure on
-
-\[
-\mathbb Z_2\times\mathbb Z_3.
-\]
-
-A fourth pass now closes the apparent split freedom. `L-9307` proves that the dyadic survivor factors and triadic Cantor factors are adjacent portions of **one reciprocal phase chain** attached to the same global rational character. `T-9305` proves that, in every frequency range `H=o(64^K)`, the original EQ sum, its triadic mirror, and every two-place CRT split differ by at most `O(H/64^K)`.
-
-Thus the two-place target is not a weaker theorem. Its remaining value is methodological: signed transfer operators, bilateral inverse theorems, solenoid renewal, or positivity-native room dynamics may still prove the equivalent criterion more effectively.
-
-## Fixed notation
+## Fixed measures
 
 Set
 
 \[
 \rho=\frac{64}{81},
 \qquad
-d=\frac{17}{81},
-\qquad
-J_\varepsilon(x)=\rho x+d\varepsilon.
+d=\frac{17}{81}.
 \]
 
-For a binary sequence `epsilon`, define
+For `epsilon in {0,1}^N`, define
 
 \[
 \pi_2(\varepsilon)=
@@ -56,9 +38,9 @@ For a binary sequence `epsilon`, define
 \in\mathbb Z_2,
 \]
 
-and let `mu` be its fair Bernoulli pushforward.
+and let `mu` be the fair Bernoulli pushforward.
 
-For the triadic mirror put
+For the triadic mirror set
 
 \[
 \lambda=\frac{81}{64},
@@ -76,7 +58,7 @@ and define
 
 with fair Bernoulli pushforward `nu`.
 
-For the depth-`K` survivor set `R_K`, let
+For the depth-`K` survivor set `R_K`, put
 
 \[
 S_K(\theta)=
@@ -86,7 +68,7 @@ S_K(\theta)=
 F_K(\theta)=\frac{|S_K(\theta)|}{2^K}.
 \]
 
-The active EQ target is
+The all-depth EQ target is
 
 \[
 E_K=
@@ -95,89 +77,87 @@ E_K=
 \longrightarrow0.
 \]
 
-## Results in this packet
+## Claim map
 
 | ID | Status | Content |
 |---|---|---|
-| `D-9301` | `PROPOSED` | One fixed self-similar survivor measure on `Z_2` |
-| `D-9302` | `PROPOSED` | Exact `{2,3,infinity}`-solenoid natural extension and integer section |
-| `D-9303` | `PROPOSED` | One fixed self-similar triadic mirror measure whose reductions are `C_j` |
-| `L-9301` | `PROPOSED` | `mu-hat(theta/64^K)=2^{-K}S_K(theta)` exactly |
-| `L-9302` | `PROPOSED` | Frequency-block means force an exponentially small weighted tail |
-| `L-9303` | `PROPOSED` | Squared phase energy controls the survivor product |
-| `L-9304` | `PROPOSED` | Exact `64`/`81` phase reciprocity and valuation shift |
-| `L-9305` | `PROPOSED` | `nu-hat(h/81^j)=2^{-j}C_j-hat(h)` exactly |
-| `L-9306` | `PROPOSED` | Every complete-group absolute Fourier moment factors |
-| `L-9307` | `PROPOSED` | One global rational diagonal and one stitched reciprocal phase chain |
+| `D-9301` | `PROPOSED` | Fixed self-similar survivor measure on `Z_2` |
+| `D-9302` | `PROPOSED` | `{2,3,infinity}`-solenoid natural extension and integer section |
+| `D-9303` | `PROPOSED` | Fixed triadic mirror measure whose reductions are `C_j` |
+| `L-9301` | `PROPOSED` | `mu-hat(theta/64^K)=2^{-K}S_K(theta)` |
+| `L-9302` | `PROPOSED` | Frequency-block means force an exponentially small harmonic tail |
+| `L-9303` | `PROPOSED` | Squared phase energy controls `F_K` |
+| `L-9304` | `PROPOSED` | Exact `64`/`81` phase reciprocity and valuation loss |
+| `L-9305` | `PROPOSED` | `nu-hat(h/81^j)=2^{-j}C_j-hat(h)` |
+| `L-9306` | `PROPOSED` | Full-group absolute Fourier moments factor exactly |
+| `L-9307` | `PROPOSED` | Global rational diagonal and absolute bilateral phase stitching |
+| `L-9308` | `PROPOSED` | Complex bilateral phase stitching |
 | `T-9301` | `PROPOSED` | Polynomial-window maximal decay suffices for all-depth EQ |
-| `T-9302` | `PROPOSED` | Frequency blocks plus `T-9303` imply full EQ on density-one depths |
-| `T-9303` | `PROPOSED` | Complete depth periods contract after exact `v_3` losses |
+| `T-9302` | `PROPOSED` | Full weighted EQ on density-one depths, conditional only on frequency blocks |
+| `T-9303` | `PROPOSED` | Valuation-stratified complete depth-period decay |
 | `T-9304` | `PROPOSED` | Exact two-place CRT transform factorization |
-| `T-9305` | `PROPOSED` | Every CRT split is weighted-equivalent to the original EQ criterion |
-| `C-9301` | `IDEA` | Logarithmic cusp scattering sufficient for all-depth EQ |
-| `Q-9301` | `IDEA` | Nontrivial ordinary-integer intersection in the adelic natural extension |
-| `Q-9302` | `IDEA` | Can two-place dynamics prove the equivalent criterion by a new mechanism? |
-| `O-9301` / `X-9301` | `EMPIRICAL` | Exact bounded scattering census through `K=80`, `theta<=K^2` |
+| `T-9305` | `PROPOSED` | Absolute split collapse and weighted criterion equivalence |
+| `T-9306` | `PROPOSED` | Complex coefficient and bounded test-sequence equivalence |
+| `C-9301` | `IDEA` | Logarithmic phase-energy/scattering theorem |
+| `Q-9301` | `IDEA` | Nontrivial integer-section intersection |
+| `Q-9302` | `IDEA` | Can the equivalent two-place representation yield a better proof mechanism? |
+| `O-9301` / `X-9301` | `EMPIRICAL` | Bounded exact scattering census through `K=80`, `theta<=K^2` |
 
-`PROPOSED` means that a complete-looking argument is supplied but has not received independent repository review. `T-9301` and `T-9302` remain conditional on the branch-qualified frequency-block theorem. The depth-period component of `T-9302` is proved locally in `T-9303`.
+All proof-looking claims remain `PROPOSED` pending independent review. No native issue-#4 status is changed.
 
-The main CRT factorization in `T-9304`, the phase stitching in `L-9307`, and the magnitude comparison in `T-9305` are self-contained. Ordered-position consequences remain separate from absolute Fourier equivalence.
+## Principal exact results
 
-## What is genuinely new here
-
-1. **Survivor stationarization.** The varying finite products are one fixed `Z_2` transform sampled on a rational cusp.
-2. **Weighted-shell compression.** Frequency blocks remove all but a polynomial-size numerator window.
-3. **Exact `2`--`3` reciprocity.** A power-of-`64` phase is a reciprocal residue modulo a power of `81` plus a fully explicit circle shift.
-4. **Valuation-stratified depth decay.** Divisibility by `81` removes phase levels, but the loss is exact and summable.
-5. **One-input density-one synthesis.** Conditional only on the frequency-block theorem, full weighted EQ holds on density-one depths for
-   \[
-   \alpha<\log_{81}\sqrt2\approx0.0788662.
-   \]
-6. **Triadic stationarization.** The Cantor classes are finite quotients of one fixed `Z_3` measure.
-7. **Two-place factorization.** The CRT product is one coefficient of `mu x nu`.
-8. **Full-group decorrelation.** Every complete-dual absolute moment factors; the obstruction is only the short rational diagonal.
-9. **Global rational diagonal.** The CRT inverse pair is simply the two local representation classes of
-   \[
-   h/(64^n81^j).
-   \]
-10. **Bilateral phase stitching.** The triadic factor supplies the low indices and the dyadic factor supplies the high indices of one reciprocal chain.
-11. **Split collapse.** For `K=n+j`,
-   \[
-   \left|
-   |G_{n,j}(h)|-F_K(h)
-   \right|
-   <\frac{2\pi|h|}{64^K}.
-   \]
-   Hence every weighted split target with `H=o(64^K)` is equivalent to the original EQ sum.
-12. **Adelic integer section.** The direct M1 problem is a diagonal-intersection question in a hyperbolic S-arithmetic solenoid.
-
-## Block-mean audit
-
-`BLOCK_MEAN_AUDIT.md` records an asymmetric verdict.
-
-- Issue #4's Theorem-11 interface says “every full block,” matching the hypothesis needed by `L-9302`.
-- The Theorem-12 subgroup period is correct, but its displayed first-factor proof is not uniform when `3|theta`.
-- `T-9303` supplies a self-contained valuation-corrected replacement for the depth-period interface.
-
-No issue-#4 claim status is changed by this packet.
-
-## Relation to issue #4's room walk
-
-The current `EQ-INTERCHANGE.md` identifies:
-
-- a core `R_n` modulo `64^n`;
-- Cantor classes `C_j` modulo `81^j`;
-- a position-rigid CRT product;
-- base-`81` room digits equal to wrap counts of successive `H`-steps;
-- an inverse-limit marginal tower that does not close at fixed modulus.
-
-The stationary crosswalk is
+### Stationary survivor identity
 
 \[
-2^{-n}S_n(a)=\widehat\mu(a/64^n),
-\qquad
-2^{-j}\widehat C_j(b)=\widehat\nu(b/81^j).
+\widehat\mu(\theta/64^K)=2^{-K}S_K(\theta).
 \]
+
+The changing finite modular products are one fixed transform sampled along a cusp.
+
+### Weighted-shell compression
+
+Under the issue-#4 arbitrary-full-block frequency mean, the weighted tail above `81^M` is `O(a^M)`. Hence all-depth EQ follows from polynomial decay in any fixed positive polynomial numerator window.
+
+### Valuation-corrected depth averaging
+
+For
+
+\[
+P_m=9\cdot81^m,
+\qquad
+e(\theta)=\left\lceil\frac{v_3(\theta)}4\right\rceil,
+\]
+
+every complete depth period satisfies
+
+\[
+\frac1{P_m}
+\sum_{K\in J}F_K(\theta)
+\le
+2^{-\frac12\max\{0,m+1-e(\theta)\}}
++
+\frac{\pi\theta}{64^{K_0}}.
+\]
+
+Summing the valuation strata gives density-one full EQ for every
+
+\[
+\alpha<\log_{81}\sqrt2
+\approx0.0788662,
+\]
+
+conditional only on the frequency-block theorem.
+
+### Fixed triadic mirror
+
+The admissible classes `C_j` are reductions of `nu`, and
+
+\[
+\widehat\nu(h/81^j)=2^{-j}\widehat C_j(h).
+\]
+
+### Exact CRT product
 
 For
 
@@ -189,7 +169,7 @@ u=(81^j)^{-1}\pmod{64^n},
 v=(64^n)^{-1}\pmod{81^j},
 \]
 
-`T-9304` gives
+the normalized CRT coefficient is
 
 \[
 G_{n,j}(h)=
@@ -197,7 +177,18 @@ G_{n,j}(h)=
 \widehat\nu(hv/81^j).
 \]
 
-`L-9307` strengthens the interpretation:
+Every complete-dual absolute moment factors. In particular,
+
+\[
+\frac1Q
+\sum_{h\bmod Q}|G_{n,j}(h)|^2
+=
+2^{-(n+j)}.
+\]
+
+### One global rational diagonal
+
+The local characters satisfy
 
 \[
 \frac{hu}{64^n}
@@ -211,91 +202,169 @@ G_{n,j}(h)=
 \pmod{\mathbb Z_3}.
 \]
 
-The two factors are therefore local views of one global rational character. Their phases stitch the same chain, and `T-9305` proves
+They are not arbitrary coupled frequencies; they are the two local classes of one rational.
+
+### Bilateral phase stitching
+
+For `K=n+j`, define
+
+\[
+M_\ell=64^{K-\ell},
+\qquad
+N_\ell=81^{\ell+1},
+\]
+
+\[
+q_\ell(h)
+\equiv
+-17hM_\ell^{-1}
+\pmod{N_\ell},
+\qquad
+\delta_\ell(h)=
+\frac{17h}{M_\ell N_\ell}.
+\]
+
+The triadic product uses the unshifted phases for all `ell`; the dyadic product uses the shifted phases for all `ell`; a CRT split uses unshifted phases for `ell<j` and shifted phases for `ell>=j`.
+
+This holds for the full complex Bernoulli masks, not only their moduli.
+
+### Split collapse
+
+For every split,
 
 \[
 \left|
-\sum_{h\le H}\frac{|G_{n,j}(h)|}{h}
+G_{n,j}(h)
 -
-\sum_{h\le H}\frac{F_K(h)}h
+\widehat\mu(h/64^K)
+\right|
+<
+\frac{2\pi|h|}{64^K}.
+\]
+
+For arbitrary complex tests `a_h`,
+
+\[
+\left|
+\sum_{h\le H}
+a_h
+\left(
+G_{n,j}(h)-
+\widehat\mu(h/64^K)
+\right)
+\right|
+\]
+
+is bounded by an explicit split-uniform constant times
+
+\[
+\sum_{h\le H}|a_h|h.
+\]
+
+In particular, for `a_h=w_h/h`, `|w_h|<=1`,
+
+\[
+\left|
+\sum_{h\le H}
+\frac{w_h}{h}G_{n,j}(h)
+-
+\sum_{h\le H}
+\frac{w_h}{h}
+\widehat\mu(h/64^K)
 \right|
 <
 \frac{2\pi H}{64^K}.
 \]
 
-The remaining room frontier is no longer “prove a different two-place decay theorem.” It is “use the two-place or room representation to prove the equivalent original criterion by a genuinely new mechanism.”
-
-## Relation to external literature and other branches
-
-- The product formula and frequency-block mean are taken branch-qualified from issue #4.
-- Draft PR #13 correctly warns that fixed real self-similar Fourier theorems do not directly cover these nonarchimedean cusp characters.
-- The fixed local measures now exist, but no external theorem is imported without checking its precise hypotheses.
-- Draft PR #3's fractional-window law is compatible with the solenoid orbit identity, but is not a proof dependency for the local Fourier claims.
-- No claim here constructs or rules out a positive integer in the survivor attractor.
-
-## Main research offenses
-
-### Offense A — all-depth cusp energy
-
-Prove that every
+At the EQ cutoff `H=2^K`, this error is below
 
 \[
-1\le|\theta|\le K^A
+2\pi2^{-5K}.
 \]
 
-has logarithmic phase energy. This closes all-depth EQ through `T-9301`.
+## Relation to issue #4's room tower
 
-### Offense B — bilateral low-energy inverse theorem
+The current room program proves that base-`81` room digits are wrap counts of successive `H`-steps and that finite marginals form an inverse-limit tower: modulus `81^m` is driven by information at modulus `81^(m+1)`.
 
-The split chain is
+The stationarization identifies the fixed local measures under that tower. The split-collapse theorems then show:
+
+- the room/Cantor absolute target is exactly the old EQ target asymptotically;
+- the same is true for every bounded signed harmonic test;
+- a new proof must exploit a nonlinear positive operator, a carry inverse theorem, or hyperbolic renewal—not merely multiply two local coefficients.
+
+Ordered-position rigidity remains useful for geometric and recursive counting statements. It is not needed for the direct coefficient comparisons above.
+
+## Research offenses
+
+### A. Carry-template inverse theorem
+
+For
 
 \[
-q_\ell(h)
-\equiv
--17h64^{\ell-K}
-\pmod{81^{\ell+1}}.
+y_\ell=rac{q_\ell}{81^{\ell+1}},
 \]
 
-Show that low energy forces one of:
+the lift recurrence is
 
-1. exact `64`-power reduction;
-2. exact `81`-valuation loss;
-3. a bounded-complexity periodic carry template;
-4. amplification to a full frequency block forbidden by the frequency-block mean.
+\[
+y_{\ell+1}
+=
+\frac{\{64y_\ell\}+j_\ell}{81},
+\qquad
+j_\ell\in\{0,\ldots,80\}.
+\]
 
-### Offense C — signed or positive room transfer
+Prove that a polynomial-height low-energy path has bounded-complexity lift digits and must:
 
-Absolute values collapse to the old target. Retain complex phases across frequencies, or work directly with the positive room-counting recursion. Seek contraction of a signed kernel, relative entropy, or a positivity-native transfer operator on the inverse-limit tower.
+1. reduce by an exact power of `64` or `81`;
+2. belong to an arithmetically impossible template; or
+3. persist on enough nearby frequencies to contradict the arbitrary-block mean.
 
-### Offense D — exceptional-depth coherence
+### B. Positive room-tower operator
 
-Characterize depths bad across several adjacent `81`-adic annuli. The valuation-corrected proof forces coherent low-energy grids at such depths; eliminate that coherence to upgrade density-one EQ toward all-depth EQ.
+Write the exact inverse-limit kernel and prove contraction of interval mass, relative entropy, or room imbalance after a full period-9 twist, while controlling information imported from the next tower level.
 
-`X-9301` remains the only computation in this packet. Long scans are not part of the program.
+### C. Hyperbolic rational-diagonal renewal
+
+Use the solenoid action of `81/64` to prove logarithmic mask energy for every low-height rational character. Generic mixing is not enough; constants must be uniform in rational height.
+
+### D. Exceptional-depth coherence
+
+A depth exceptional across adjacent `81`-adic scales must defeat the valuation-period mean, the frequency-block tail, and the room marginal contraction simultaneously. Expose the resulting coherent carry word and eliminate it.
+
+### E. Direct M1 intersection
+
+Determine whether the symbolic stable leaf meets the ordinary-integer section outside `0` and `1`. EQ does not settle this question.
+
+## Computation boundary
+
+`X-9301` is the only computation in this packet. It uses exact modular arithmetic through `K=80`, `theta<=K^2` to falsify lemma shapes. The next permissible extension is to emit lift-digit paths for existing argmins; increasing the depth bound alone is not progress.
 
 ## Review order
 
 1. `claims/L-9307-global-rational-phase-stitching.md`
 2. `claims/T-9305-split-collapse-weighted-equivalence.md`
-3. `claims/L-9301-moving-character-identity.md`
-4. `claims/D-9303-stationary-triadic-mirror.md`
-5. `claims/L-9305-triadic-moving-character.md`
-6. `claims/T-9304-two-place-crt-factorization.md`
-7. `claims/L-9306-full-group-moment-factorization.md`
-8. `claims/L-9304-phase-reciprocity.md`
-9. `claims/T-9303-valuation-stratified-depth-mean.md`
-10. `claims/T-9302-density-one-full-eq.md`
-11. `claims/L-9302-weighted-shell-tail.md`
-12. `claims/T-9301-polynomial-window-reduction.md`
-13. `claims/Q-9302-two-place-room-cusp.md`
-14. `claims/D-9302-adelic-natural-extension.md`
-15. `PROOF_PROGRAM.md`
-16. `../../experiments/X-9301-cusp-scattering/README.md`
+3. `claims/L-9308-complex-bilateral-stitching.md`
+4. `claims/T-9306-complex-test-sequence-equivalence.md`
+5. `claims/L-9301-moving-character-identity.md`
+6. `claims/D-9303-stationary-triadic-mirror.md`
+7. `claims/L-9305-triadic-moving-character.md`
+8. `claims/T-9304-two-place-crt-factorization.md`
+9. `claims/L-9306-full-group-moment-factorization.md`
+10. `claims/L-9304-phase-reciprocity.md`
+11. `claims/T-9303-valuation-stratified-depth-mean.md`
+12. `claims/T-9302-density-one-full-eq.md`
+13. `claims/L-9302-weighted-shell-tail.md`
+14. `claims/T-9301-polynomial-window-reduction.md`
+15. `claims/Q-9302-two-place-room-cusp.md`
+16. `claims/D-9302-adelic-natural-extension.md`
+17. `PROOF_PROGRAM.md`
+18. `../../experiments/X-9301-cusp-scattering/README.md`
 
 ## Acceptance boundary
 
-A proof of `C-9301`, together with an independently verified frequency-block mean, would close the all-depth EQ discrepancy target. It would prove quantitative near-emptiness of finite survivors, not nonexistence of an exceptional infinite ordinary integer.
+A proof of `C-9301`, together with an independently verified frequency-block mean, would close all-depth EQ and prove quantitative near-emptiness of finite survivors. It would not exclude one exceptional infinite ordinary integer.
 
-A proof using the room or two-place representation automatically proves the same original criterion by `T-9305`; it must not be advertised as an independent weaker target.
+A two-place or room proof automatically proves the same original criterion by `T-9305` and `T-9306`; it must not be presented as a separate weaker target.
 
-A direct nontrivial point in the integer section of `D-9302` would instead supply an M1 witness and, after the existing chart translation is independently checked, a candidate divergent Collatz orbit. No such point is presented here.
+A nontrivial point in the integer section of `D-9302` would instead supply an M1 witness and, after the chart translation is independently checked, a candidate divergent Collatz orbit. No such point is presented here.
