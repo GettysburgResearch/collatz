@@ -28,7 +28,7 @@ and define its real Collatz multiplier
 \tag{1}
 \]
 
-Assume that the cylinders \([w]\) partition the full binary sequence space up to a null set for every Bernoulli product measure with parameter \(0<p<1\). This holds for every finite complete prefix code and for the usual countable complete renewal codes.
+Assume that the cylinders \([w]\) partition the full binary sequence space up to a null set for every Bernoulli product measure with parameter \(0<p<1\). This holds for every finite complete prefix code and for the usual countable complete renewal codes whose omitted boundary set is null for every such measure.
 
 Then:
 
@@ -156,7 +156,7 @@ Then:
 
 - \(\mathcal A_0\) records fair 2-adic cylinder mass;
 - \(\mathcal A_1\) records the \(3/4\)-odd tilted mass;
-- if the outgoing edges at each phase form a complete prefix code, both matrices are row-stochastic;
+- if the outgoing edges at each phase form a prefix partition complete for both Bernoulli measures, both matrices are row-stochastic;
 - an incomplete candidate grammar should be judged by both pressure radii
   \[
   \rho(\mathcal A_0)
@@ -195,13 +195,20 @@ which is (4). Since
 
 this is equivalent to (5). The same calculation gives (6).
 
-Under (7), differentiate (2) at \(p=1/2\). Termwise differentiation is justified by the finite first moment. We obtain
+For (8), expose an infinite fair Bernoulli bit sequence and let \(L\) be the first time at which its prefix belongs to \(\mathcal W\). Prefix-freeness makes \(L\) a stopping time, completeness makes it finite almost surely, and (7) gives \(\mathbb E[L]<\infty\). If \(X_j\in\{0,1\}\) is the \(j\)-th bit, then
 
 \[
-0=\sum_w2^{-L(w)+1}\bigl(2a(w)-L(w)\bigr),
+M_n=\sum_{j=1}^n(X_j-1/2)
 \]
 
-which is equivalent to (8). Therefore
+is a martingale with bounded increments. The optional-stopping theorem at the integrable stopping time \(L\) gives
+
+\[
+0=\mathbb E[M_L]
+=\mathbb E[a-L/2].
+\]
+
+This is exactly (8). Therefore
 
 \[
 \begin{aligned}
@@ -228,7 +235,7 @@ For a graph-directed complete code, the same cylinder decomposition gives the ph
 P(i,j)=\mathcal A_0(i,j).
 \]
 
-The identities (3)--(4) applied at each phase make \(\mathcal A_0\) and \(\mathcal A_1\) row-stochastic. Equation (12) follows by applying (9) at each phase and averaging with \(\pi\). ∎
+The identities (3)--(4) applied at each phase make \(\mathcal A_0\) and \(\mathcal A_1\) row-stochastic. Equation (12) follows by applying the stopped-martingale parity balance at each phase and averaging with \(\pi\). ∎
 
 ## Corollaries
 
@@ -284,7 +291,7 @@ and verifies the likelihood-ratio identity word by word.
 
 Construct a finite or countable subgrammar for which:
 
-1. the fair pressure \(\rho(\mathcal A_0)\) is small enough to isolate an exceptional survivor language;
+1. the fair pressure \(ho(\mathcal A_0)\) is small enough to isolate an exceptional survivor language;
 2. the tilted pressure and every realizable grammar cycle support positive real growth;
 3. the accepted transducer has an explicit ordinary finite boundary state.
 
