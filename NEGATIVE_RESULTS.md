@@ -203,3 +203,51 @@ The Doob transform of `T-0017` conditions the phase away from absorption and giv
 Its paths are symbolic parity paths and naturally define 2-adic states.
 
 **Consequence:** positive escape and growth pressure do not by themselves produce an ordinary integer. The finite-versus-adic boundary problem remains logically separate and must be certified explicitly.
+
+## N-0019 — Phase growth is gauge dependent
+
+`L-0014` represents the same physical state \(n\) by any finite interval
+
+\[
+[v,v+n).
+\]
+
+Two extreme exact gauges are:
+
+\[
+v_t=1
+\]
+
+for every \(t\), and
+
+\[
+v_t=T^t(n)+1.
+\]
+
+Thus one gauge has a fixed phase while another phase grows exactly with the physical state.
+
+**Consequence:** phase growth alone is not a physical invariant. A phase method is useful only when it controls the finite interval length or carries an explicit ordinary boundary marker.
+
+## N-0020 — Unmarked escape mass is not marked-spine mass
+
+`T-0018` realizes the escape transform as a uniform descendant in a critical particle tree. Along an ordinary trajectory starting at \(n_0\), `T-0019` gives branch-cylinder mass
+
+\[
+\frac{n_L}{2^Ln_0}.
+\]
+
+But the one distinguished descendant certifying the specified finite root has mass only
+
+\[
+\frac1{2^Ln_0}.
+\]
+
+The endpoint population factor \(n_L\) belongs to the unmarked branch, not to the ordinary marker.
+
+**Consequence:** an escaping or pressure-positive population grammar can still contain no certified ordinary spine. A successful proof must transport a marker through the distinguished child at every step.
+
+## N-0021 — Auxiliary particle descendants are not physical Collatz children
+
+The critical completion of `T-0018` gives every particle two descendants so that branch populations conserve mass. Only one child is distinguished as the ordinary Collatz child.
+
+**Consequence:** auxiliary descendants may support martingales, pressure, and regeneration, but they cannot be substituted for the deterministic physical trajectory. Every candidate must keep the distinguished and auxiliary layers visibly separate.
