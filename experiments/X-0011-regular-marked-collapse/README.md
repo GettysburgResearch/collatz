@@ -51,8 +51,8 @@ The script:
    \]
    to all canonical positive integers;
 4. proves exact shortcut closure of that compiled DFA;
-5. computes its maximal safe kernel and proves that no canonical word reaches
-   the kernel;
+5. computes its maximal raw-state safe kernel and proves that no canonical
+   positive word reaches the kernel—so it is semantically empty;
 6. verifies fixed-block normalization on the terminal two-cycle control.
 
 ## Command
@@ -72,14 +72,10 @@ verified finite-block normalization on 2-value control
 all regular-marked-collapse checks passed
 ```
 
+Here “empty safe kernel” means **no canonical positive word reaches the raw
+safe-state set**; the raw set itself need not be literally empty.
+
 The checked-in copy is `results/summary.txt`.
-
-## Digests
-
-```text
-e3a50c781eea5478f608e60d6649fe01bcf1dd0328338b99c53e4bd7fe80295a  run.py
-35fabea6af906ce581787f8e8906996c1838f82a2dda1b6ad7cf7c95091dcc2c  results/summary.txt
-```
 
 ## Interpretation
 
