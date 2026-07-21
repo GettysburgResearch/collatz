@@ -16,7 +16,7 @@ The repository has moved beyond a collection of finite amplifiers. Several indep
 
 This convergence is mathematically significant. It replaces the vague phrase “finite prefixes do not imply an integer” by explicit stabilization, block-digit, carry, or marked-spine criteria.
 
-Wave 3 adds five reusable results, `LIT-KTHM-0028` through `LIT-KTHM-0032`, and the following strategic connections.
+Wave 3 adds six reusable results, `LIT-KTHM-0028` through `LIT-KTHM-0033`, and the following strategic connections.
 
 ## 1. Diagonal Foundry = conjugacy plus a strict `2`-adic contraction
 
@@ -71,7 +71,31 @@ Thus the “quadratic Hensel bulk” is not an arbitrary nonlinear word: it is t
 
 **Immediate gain:** the branch can replace a generic square-and-add target by a log-digit generator, use fast `2`-adic logarithm algorithms, and record the exact nonrational target. This does **not** solve the forward precision-generation problem: an ordinary marked grammar still has to manufacture new digits rather than preload the completed logarithm.
 
-## 3. PR #19 is a countable, strongly separated `2`-adic IFS
+## 3. PR #3's bit surplus has a symbolic-embedding target
+
+`PR3/T-0024` proves that one full stage generates about `14.29*2^m` residual bits while the next connector depth costs about `11.04*2^m`, leaving a positive exponential surplus. The theorem correctly notes that large bit length does not force the correct low bits.
+
+Krieger's embedding theorem supplies the rigorous symbolic version of
+
+```text
+entropy surplus + periodic compatibility -> finite-memory embedding
+```
+
+when the target is a mixing shift of finite type. MacDonald's zero-error refinement handles embedding through a prescribed sliding-block observation.
+
+This suggests a concrete shortening of the missing 256-transition macro:
+
+1. factor out the explicit odometer and logarithm digits;
+2. encode normalized legal connector transitions as a stationary finite graph;
+3. prove that graph is mixing;
+4. encode the demand process as a lower-entropy subshift;
+5. verify periodic-point counts and any visible-output condition;
+6. invoke symbolic embedding theory to obtain a finite-memory router;
+7. separately prove one ordinary arithmetic initialization.
+
+**Nonapplication:** the current scale-dependent counter-stack is not yet a stationary SFT. Scalar information surplus alone does not imply a symbolic embedding, Hall expansion, or correct low bits.
+
+## 4. PR #19 is a countable, strongly separated `2`-adic IFS
 
 The recursive H-cylinder formula gives inverse maps
 
@@ -101,11 +125,11 @@ and the number of positive H-survivors up to `X` is at most
 O(X^(log_2 rho)).
 ```
 
-This is substantially stronger than the currently proposed `X exp(-c sqrt(log X))` upper bound in `H/T-9501`. It follows from exact cylinder separation and a self-contained residue recurrence; Mauldin--Urbanski and the `p`-adic path-set literature provide the natural framework.
+This is substantially stronger than the currently proposed `X exp(-c sqrt(log X))` upper bound in `H/T-9501`. It follows from exact cylinder separation and a self-contained residue recurrence; Mauldin--Urbański and the `p`-adic path-set literature provide the natural framework.
 
 **Required native action:** independently check that the recursive cylinder maps are oriented exactly as above, then replace or strengthen the existing counting theorem rather than keeping both as unrelated estimates.
 
-## 4. PR #16 is a deterministic nonarchimedean Erdős--Kahane argument
+## 5. PR #16 is a deterministic nonarchimedean Erdős--Kahane argument
 
 The all-depth EQ chain is structurally close to the Erdős--Kahane method, but is sharper and more arithmetic:
 
@@ -128,7 +152,7 @@ A reading-level audit of `L-9309`, `T-9307`, `T-9308`, `L-9310`, `T-9311`, and `
 
 **Verdict:** `ADEL/T-9312` is a serious, plausibly publishable native theorem if independently reconstructed. It closes weighted finite-depth EQ, not the exceptional ordinary-integer intersection.
 
-## 5. PR #20's repetition theorem belongs to the `p`-adic stammering/product-formula family
+## 6. PR #20's repetition theorem belongs to the `p`-adic stammering/product-formula family
 
 `PADIC/T-9401` constructs an eventually periodic rational approximant, combines very high `2`-adic agreement with a small archimedean denominator, and obtains a contradiction unless the code is trivial. This is a specialized and unusually clean member of the Diophantine “stammering expansion” family.
 
@@ -140,7 +164,7 @@ Ridout's `p`-adic Roth theorem and Adamczewski--Bugeaud's work on real/`p`-adic 
 
 No located theorem can be quoted verbatim without deriving the native rational function and height bounds. The current exact-repeat proof should remain self-contained.
 
-## 6. PR #3's critical particle is an exact size-biased spine
+## 7. PR #3's critical particle is an exact size-biased spine
 
 `PR3/T-0018` and `PR3/T-0019` define a mass-conserving binary tree whose distinguished-child transition is exactly the shortcut Collatz map, and whose endpoint law is a Doob size bias. This is the deterministic counterpart of the spine/many-to-one method of Lyons--Pemantle--Peres and Hardy--Harris.
 
@@ -154,7 +178,7 @@ The literature contributes a mature toolbox:
 
 It does not supply the missing ordinary-spine construction. The best next use is to search for a martingale or entropy identity that couples the exact spine law to the connector/Hensel precision budget.
 
-## 7. Cross-program synthesis
+## 8. Cross-program synthesis
 
 Three constants/phenomena recur independently:
 
@@ -172,9 +196,10 @@ The decisive open problem is to make this schema work for the **adaptive, nonper
 
 1. Independently review PR #16's six-claim EQ chain before building more Fourier theory.
 2. Add the explicit logarithm formula to PR #3 and redesign the bulk generator around log digits rather than generic squaring.
-3. Prove the H-ghost residue recurrence and dimension theorem independently; use it to replace the weaker count.
-4. Extend PR #20 from exact repetitions to stammering/symmetric patterns using a native product-formula or Subspace Theorem reduction.
-5. Classify finite-state Foundry operators via van der Put coefficients and test whether their unique fixed points must be rational only in degenerate/open-loop cases.
-6. Form a cross-program `completion-height` packet rather than creating another isolated branch.
+3. Normalize PR #3's legal stage relation and test the Krieger/MacDonald symbolic-router hypotheses.
+4. Prove the H-ghost residue recurrence and dimension theorem independently; use it to replace the weaker count.
+5. Extend PR #20 from exact repetitions to stammering/symmetric patterns using a native product-formula or Subspace Theorem reduction.
+6. Classify finite-state Foundry operators via van der Put coefficients and test whether their unique fixed points must be rational only in degenerate/open-loop cases.
+7. Form a cross-program `completion-height` packet rather than creating another isolated branch.
 
 No located source constructs the required ordinary integer, and no statement in this wave resolves the Collatz conjecture.
