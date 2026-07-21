@@ -1,0 +1,47 @@
+X-9601 foundry probe    K = 1024 digits, working precision 1032 bits
+uniqueness spot-check stages: [1, 2, 3, 5, 13, 64, 100, 512, 1022]
+
+--- constant-operator validation gates (open-loop corner, known answers) ---
+ const (100)^w: digit-density 513/1024 = 0.5010   parity-density 342/1024 = 0.3340   max-0-run 2 (end 5)   terminal-0-run 0   [GATE-EXACT-MATCH]
+                first 48 digits : 101100110011001100110011001100110011001100110011
+                first 48 parity : 100100100100100100100100100100100100100100100100
+   const (1)^w: digit-density 1024/1024 = 1.0000   parity-density 1024/1024 = 1.0000   max-0-run 0 (end -1)   terminal-0-run 0   [GATE-EXACT-MATCH]
+                first 48 digits : 111111111111111111111111111111111111111111111111
+                first 48 parity : 111111111111111111111111111111111111111111111111
+  const (10)^w: digit-density 1/1024 = 0.0010   parity-density 512/1024 = 0.5000   max-0-run 1023 (end 1023)   terminal-0-run 1023   [GATE-EXACT-MATCH]
+                first 48 digits : 100000000000000000000000000000000000000000000000
+                first 48 parity : 101010101010101010101010101010101010101010101010
+ const (110)^w: digit-density 1023/1024 = 0.9990   parity-density 683/1024 = 0.6670   max-0-run 1 (end 2)   terminal-0-run 0   [GATE-EXACT-MATCH]
+                first 48 digits : 110111111111111111111111111111111111111111111111
+                first 48 parity : 110110110110110110110110110110110110110110110110
+
+--- feedback probes (closed loop) ---
+    quine e0=1: digit-density 1024/1024 = 1.0000   parity-density 1024/1024 = 1.0000   max-0-run 0 (end -1)   terminal-0-run 0   [GATE-EXACT-MATCH]
+                first 48 digits : 111111111111111111111111111111111111111111111111
+                first 48 parity : 111111111111111111111111111111111111111111111111
+    quine e0=0: digit-density 0/1024 = 0.0000   parity-density 0/1024 = 0.0000   max-0-run 1024 (end 1023)   terminal-0-run 1024   [GATE-EXACT-MATCH]
+                first 48 digits : 000000000000000000000000000000000000000000000000
+                first 48 parity : 000000000000000000000000000000000000000000000000
+      antizero: digit-density 516/1024 = 0.5039   parity-density 508/1024 = 0.4961   max-0-run 12 (end 152)   terminal-0-run 2
+                first 48 digits : 100110001011011111010111100000101110011001001110
+                first 48 parity : 101100111010010000010100001111101000110011011000
+ prefix-parity: digit-density 0/1024 = 0.0000   parity-density 0/1024 = 0.0000   max-0-run 1024 (end 1023)   terminal-0-run 1024   [GATE-EXACT-MATCH]
+                first 48 digits : 000000000000000000000000000000000000000000000000
+                first 48 parity : 000000000000000000000000000000000000000000000000
+   thermo 7/10: digit-density 512/1024 = 0.5000   parity-density 1023/1024 = 0.9990   max-0-run 2 (end 2)   terminal-0-run 0   [GATE-EXACT-MATCH]
+                first 48 digits : 100101010101010101010101010101010101010101010101
+                first 48 parity : 101111111111111111111111111111111111111111111111
+   thermo 9/10: digit-density 512/1024 = 0.5000   parity-density 1023/1024 = 0.9990   max-0-run 2 (end 2)   terminal-0-run 0   [GATE-EXACT-MATCH]
+                first 48 digits : 100101010101010101010101010101010101010101010101
+                first 48 parity : 101111111111111111111111111111111111111111111111
+    window-xor: digit-density 500/1024 = 0.4883   parity-density 510/1024 = 0.4980   max-0-run 10 (end 479)   terminal-0-run 0
+                first 48 digits : 111001101001001110011100000110011011001010000100
+                first 48 parity : 111011111001101110111101100011111110111100010010
+ rand 'x9601a': digit-density 522/1024 = 0.5098   parity-density 492/1024 = 0.4805   max-0-run 11 (end 621)   terminal-0-run 2
+                first 48 digits : 101111000100011001001110101101101000111111001001
+                first 48 parity : 100111000110100110111011110100111101110010100011
+ rand 'x9601b': digit-density 513/1024 = 0.5010   parity-density 532/1024 = 0.5195   max-0-run 8 (end 80)   terminal-0-run 1
+                first 48 digits : 111111101100110000110000101110110010110011010101
+                first 48 parity : 111111100110110110010110101100010101010101001111
+
+All gates exact, all replays verified, all spot-checks passed.
