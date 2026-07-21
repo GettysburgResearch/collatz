@@ -1,0 +1,8 @@
+Valuation-fuel automaton near -5: search for walks that grow archimedean size while regenerating v2(n+5) depth (divergence certificate shape).
+explored=2044 fuel_states=273 max_size_bucket=24
+regenerative_growth_events=111 unbounded_proxy=0
+  REGEN n=3065 -10-> 2299 v2=8 size=11 steps=2
+  REGEN n=11513 -10-> 8635 v2=6 size=13 steps=2
+  REGEN n=22265 -10-> 16699 v2=6 size=14 steps=2
+  REGEN n=23033 -10-> 17275 v2=7 size=14 steps=2
+  REGEN n=23801 -10-> 17851 v2=6 size=14 steps=2

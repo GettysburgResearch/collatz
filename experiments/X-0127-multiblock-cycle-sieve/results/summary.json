@@ -1,0 +1,210 @@
+{
+  "checked": 21786,
+  "family_stats": {
+    "concat2": {
+      "checked": 3249,
+      "divisible": 20
+    },
+    "concat3": {
+      "checked": 17576,
+      "divisible": 40
+    },
+    "sandwich": {
+      "checked": 850,
+      "divisible": 8
+    },
+    "powers": {
+      "checked": 111,
+      "divisible": 22
+    }
+  },
+  "lib_sizes": {
+    "super": 17,
+    "sub": 40,
+    "critical": 0
+  },
+  "nontrivial_hits": [],
+  "verified_nontrivial": [],
+  "trivial_hits_count": 16,
+  "trivial_examples": [
+    {
+      "word": "1010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "1",
+        "010"
+      ]
+    },
+    {
+      "word": "101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "1",
+        "01010"
+      ]
+    },
+    {
+      "word": "0101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "01",
+        "01"
+      ]
+    },
+    {
+      "word": "010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "01",
+        "0101"
+      ]
+    },
+    {
+      "word": "01010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "010",
+        "10101"
+      ]
+    },
+    {
+      "word": "10101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "101",
+        "01010"
+      ]
+    },
+    {
+      "word": "0101010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "01010",
+        "10101"
+      ]
+    },
+    {
+      "word": "1010101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "concat2",
+      "parts": [
+        "10101",
+        "01010"
+      ]
+    },
+    {
+      "word": "101010101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "concat3",
+      "parts": [
+        "1010",
+        "1010",
+        "1010"
+      ]
+    },
+    {
+      "word": "010101010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "concat3",
+      "parts": [
+        "0101",
+        "0101",
+        "0101"
+      ]
+    },
+    {
+      "word": "10101010101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "powers",
+      "parts": [
+        "10"
+      ],
+      "k": 7
+    },
+    {
+      "word": "1010101010101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "powers",
+      "parts": [
+        "10"
+      ],
+      "k": 8
+    },
+    {
+      "word": "101010101010101010",
+      "n": 1,
+      "trivial": true,
+      "verified": true,
+      "family": "powers",
+      "parts": [
+        "10"
+      ],
+      "k": 9
+    },
+    {
+      "word": "01010101010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "powers",
+      "parts": [
+        "01"
+      ],
+      "k": 7
+    },
+    {
+      "word": "0101010101010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "powers",
+      "parts": [
+        "01"
+      ],
+      "k": 8
+    },
+    {
+      "word": "010101010101010101",
+      "n": 2,
+      "trivial": true,
+      "verified": true,
+      "family": "powers",
+      "parts": [
+        "01"
+      ],
+      "k": 9
+    }
+  ],
+  "conclusion": "Typed multi-block cycle sieve over short concatenations, super/sub sandwiches, and powers; nontrivial verified hits would be K-candidates."
+}

@@ -12,8 +12,9 @@ Date: 2026-07-21
 | Classical Schottky | Closed (`T-0103`) |
 | Atomic / general chronological tensor filled growth | Closed (`T-0104`, **`T-0105`**) |
 | Weight≥3 dense suffixes as filled-growth escape | Closed by `T-0105` (comb gaps) |
-| **Algebraic cycle hunt** | **OPEN / active** — baseline `O-0103` |
-| **Heteroclinic adelic** | **OPEN / active** — baseline `O-0104` |
+| Algebraic cycle hunt | **OPEN** — empty through MITM \(L=37\) (`O-0106`) + multiblock (`O-0109`) |
+| Heteroclinic adelic | **OPEN** — model B on −17 (`O-0107`) |
+| **Valuation-fuel regenerative divergence** | **OPEN / active** — `D-FUEL-*`, `C-0104`, `O-0108` |
 | Non-concatenative splice | Weak so far (`X-0123`) |
 
 ## Headline theorems
@@ -22,12 +23,15 @@ Date: 2026-07-21
 - `T-0104` — atomic tensor freeze
 - **`T-0105` — general Minkowski tensor freeze** (any integer \(E\))
 
-## Active baselines
+## Active baselines / new observations
 
 - `O-0103` / `X-0121` — no nontrivial cycles through \(L=16\)
-- `X-0126` — convergent-L sieve through \(L=24\): 0 nontrivial hits
-- `O-0104` / `X-0122` — heteroclinic CRT gluing baselines
-- `O-0105` / `X-0125` — −5 template: all growing excursions destroy \(v_2(n+5)\)
-- Directions claimed: `D-CYCLE-*`, `D-HETEROCLINIC-*`
+- `O-0106` / `X-0129` — MITM empty on convergent \((L,a)\) through \(L=37\) (trunc. \(41,49\))
+- `O-0109` / `X-0127` — short multi-block / sandwich / power families empty
+- `O-0105` / `X-0125` — −5 model-A: growing excursions destroy \(v_2(n+5)\)
+- **`O-0107` / `X-0128`** — −17 model-B: mild repair + **local grow+keep**; deep growth burns
+- **`O-0108` / `X-0131`/`X-0132`** — iterated grow+keep and dip/repair **stall** (≤+2 bits)
+- `C-0104` — fuel tradeoff working conjecture
+- Directions claimed: `D-CYCLE-*`, `D-HETEROCLINIC-*`, **`D-FUEL-*`**
 
 ## No K-candidate

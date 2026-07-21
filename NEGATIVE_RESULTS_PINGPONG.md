@@ -28,6 +28,9 @@ Packet-local note (does not modify contested root `NEGATIVE_RESULTS.md`).
 Classical Schottky closed under `T-0103`. Atomic growing geometry closed under `T-0104`.
 | N-P20 | All chronological Minkowski tensors freeze sub-scale filled radius (`T-0105`). |
 | N-P21 | Cycle census L≤16 only trivial {1,2} (`O-0103`). |
+| N-P22 | MITM cycle builder empty through convergent L=37 (`O-0106`). |
+| N-P23 | Short multi-block / sandwich / power cycle families empty (`O-0109`). |
+| N-P24 | Iterated grow+keep and scheduled dip/repair stall on −17 (`O-0108`, `X-0132`). |
 
-Residual: weight\(\ge3\) high-precision dense suffixes, non-concatenative amplification,
-heteroclinic/adelic, or cycle hunt.
+Residual open: covering-system cycle sieves; mixed-template / morphic fuel engines
+(`D-FUEL-*`, `C-0104`); elevating deep-burn half of fuel tradeoff to a lemma.

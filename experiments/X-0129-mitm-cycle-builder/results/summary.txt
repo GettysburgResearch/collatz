@@ -1,0 +1,32 @@
+MITM modular cycle builder near log3(2) convergents; nontrivial hits would be K-candidates.
+configs=30 nontrivial_configs=0 total_nontrivial=0
+L=16 a=8 mode=mitm pairs=256 hits=2 nont=0
+L=16 a=9 mode=mitm pairs=255 hits=0 nont=0
+L=16 a=10 mode=mitm pairs=247 hits=0 nont=0
+L=17 a=8 mode=mitm pairs=511 hits=0 nont=0
+L=17 a=9 mode=mitm pairs=511 hits=0 nont=0
+L=17 a=10 mode=mitm pairs=502 hits=0 nont=0
+L=19 a=9 mode=mitm pairs=1023 hits=0 nont=0
+L=19 a=10 mode=mitm pairs=1023 hits=0 nont=0
+L=19 a=11 mode=mitm pairs=1013 hits=0 nont=0
+L=20 a=10 mode=mitm pairs=1024 hits=2 nont=0
+L=20 a=11 mode=mitm pairs=1023 hits=0 nont=0
+L=20 a=12 mode=mitm pairs=1013 hits=0 nont=0
+L=24 a=13 mode=mitm pairs=4095 hits=0 nont=0
+L=24 a=14 mode=mitm pairs=4083 hits=0 nont=0
+L=24 a=15 mode=mitm pairs=4017 hits=0 nont=0
+L=29 a=16 mode=mitm pairs=32752 hits=0 nont=0
+L=29 a=17 mode=mitm pairs=32647 hits=0 nont=0
+L=29 a=18 mode=mitm pairs=32192 hits=0 nont=0
+L=30 a=16 mode=mitm pairs=32767 hits=0 nont=0
+L=30 a=17 mode=mitm pairs=32752 hits=0 nont=0
+L=30 a=18 mode=mitm pairs=32647 hits=0 nont=0
+L=37 a=21 mode=mitm pairs=524097 hits=0 nont=0
+L=37 a=22 mode=mitm pairs=523128 hits=0 nont=0
+L=37 a=23 mode=mitm pairs=519252 hits=0 nont=0
+L=41 a=24 mode=mitm_truncated pairs=802298 hits=0 nont=0
+L=41 a=25 mode=mitm_truncated pairs=796313 hits=0 nont=0
+L=41 a=23 mode=mitm_truncated pairs=803628 hits=0 nont=0
+L=49 a=28 mode=mitm_truncated pairs=245506 hits=0 nont=0
+L=49 a=29 mode=mitm_truncated pairs=230556 hits=0 nont=0
+L=49 a=30 mode=mitm_truncated pairs=177126 hits=0 nont=0

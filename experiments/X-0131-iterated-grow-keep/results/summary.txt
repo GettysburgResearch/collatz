@@ -1,0 +1,11 @@
+Iterate grow+keep / repair moves on -17 with depth floor; escapes with +10 bits while holding depth would support a fuel-regenerative divergence certificate.
+seeds=120 escaped=0 max_bit_gain=2 stalled=120
+  seed_m=22 bit_gain=2 depth:26->5 best_n=258280271
+  seed_m=11 bit_gain=1 depth:13->5 best_n=14735
+  seed_m=11 bit_gain=1 depth:14->3 best_n=17479
+  seed_m=11 bit_gain=1 depth:15->8 best_n=52463
+  seed_m=11 bit_gain=1 depth:16->5 best_n=69967
+  seed_m=22 bit_gain=1 depth:22->11 best_n=4478959
+  seed_m=22 bit_gain=1 depth:23->12 best_n=8957935
+  seed_m=22 bit_gain=1 depth:24->2 best_n=19131859
+  (no +10-bit escapes holding depth floor)
