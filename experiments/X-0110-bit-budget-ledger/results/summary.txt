@@ -1,0 +1,13 @@
+From Z, first block of length L taxes L bits and yields an odd-step image AP. Every subsequent block of length L' then taxes exactly L' bits (mg=2^{L'}). Odd image moduli do not increase free 2-adic parameter rank. Total tax along a schedule equals total parity length when starting from Z and never meeting a pre-aligned 2-power port.
+transport checks: 30/30 have tax2==L (all=True)
+pair tax table:
+  pairs=1 tax=14 ok=True
+  pairs=2 tax=28 ok=True
+  pairs=3 tax=42 ok=True
+  pairs=4 tax=56 ok=True
+  pairs=5 tax=70 ok=True
+survivor vs v2 budget samples:
+  n=47 steps=3 v2(n-47)=None bounded=True
+  n=16431 steps=2 v2(n-47)=14 bounded=True
+  n=32815 steps=2 v2(n-47)=15 bounded=True
+  n=49199 steps=2 v2(n-47)=14 bounded=True

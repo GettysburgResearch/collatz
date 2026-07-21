@@ -1,0 +1,425 @@
+{
+  "transport_law": {
+    "samples": [
+      {
+        "schedule": [
+          "1",
+          "1"
+        ],
+        "tax1": 1,
+        "tax2": 1,
+        "len_w2": 1,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 2,
+        "sum_lens": 2
+      },
+      {
+        "schedule": [
+          "1",
+          "11"
+        ],
+        "tax1": 1,
+        "tax2": 2,
+        "len_w2": 2,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 3,
+        "sum_lens": 3
+      },
+      {
+        "schedule": [
+          "1",
+          "110"
+        ],
+        "tax1": 1,
+        "tax2": 3,
+        "len_w2": 3,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 4,
+        "sum_lens": 4
+      },
+      {
+        "schedule": [
+          "1",
+          "101"
+        ],
+        "tax1": 1,
+        "tax2": 3,
+        "len_w2": 3,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 4,
+        "sum_lens": 4
+      },
+      {
+        "schedule": [
+          "1",
+          "011"
+        ],
+        "tax1": 1,
+        "tax2": 3,
+        "len_w2": 3,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 4,
+        "sum_lens": 4
+      },
+      {
+        "schedule": [
+          "1",
+          "111"
+        ],
+        "tax1": 1,
+        "tax2": 3,
+        "len_w2": 3,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 4,
+        "sum_lens": 4
+      },
+      {
+        "schedule": [
+          "1",
+          "1110"
+        ],
+        "tax1": 1,
+        "tax2": 4,
+        "len_w2": 4,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 5,
+        "sum_lens": 5
+      },
+      {
+        "schedule": [
+          "1",
+          "1101"
+        ],
+        "tax1": 1,
+        "tax2": 4,
+        "len_w2": 4,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 5,
+        "sum_lens": 5
+      },
+      {
+        "schedule": [
+          "1",
+          "1011"
+        ],
+        "tax1": 1,
+        "tax2": 4,
+        "len_w2": 4,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 5,
+        "sum_lens": 5
+      },
+      {
+        "schedule": [
+          "1",
+          "0111"
+        ],
+        "tax1": 1,
+        "tax2": 4,
+        "len_w2": 4,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 5,
+        "sum_lens": 5
+      },
+      {
+        "schedule": [
+          "1",
+          "1111"
+        ],
+        "tax1": 1,
+        "tax2": 4,
+        "len_w2": 4,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 5,
+        "sum_lens": 5
+      },
+      {
+        "schedule": [
+          "1",
+          "11110"
+        ],
+        "tax1": 1,
+        "tax2": 5,
+        "len_w2": 5,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 6,
+        "sum_lens": 6
+      },
+      {
+        "schedule": [
+          "1",
+          "11101"
+        ],
+        "tax1": 1,
+        "tax2": 5,
+        "len_w2": 5,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 6,
+        "sum_lens": 6
+      },
+      {
+        "schedule": [
+          "1",
+          "11011"
+        ],
+        "tax1": 1,
+        "tax2": 5,
+        "len_w2": 5,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 6,
+        "sum_lens": 6
+      },
+      {
+        "schedule": [
+          "1",
+          "10111"
+        ],
+        "tax1": 1,
+        "tax2": 5,
+        "len_w2": 5,
+        "tax2_equals_len_w2": true,
+        "post1_odd": true,
+        "total_tax": 6,
+        "sum_lens": 6
+      }
+    ],
+    "checked": 30,
+    "tax2_equals_L_count": 30,
+    "all_tax2_equals_L": true
+  },
+  "nested": {
+    "pair_tax_table": [
+      {
+        "pairs": 1,
+        "ok": true,
+        "total_tax": 14,
+        "expected_min": 14,
+        "final_M_v2": 0
+      },
+      {
+        "pairs": 2,
+        "ok": true,
+        "total_tax": 28,
+        "expected_min": 28,
+        "final_M_v2": 0
+      },
+      {
+        "pairs": 3,
+        "ok": true,
+        "total_tax": 42,
+        "expected_min": 42,
+        "final_M_v2": 0
+      },
+      {
+        "pairs": 4,
+        "ok": true,
+        "total_tax": 56,
+        "expected_min": 56,
+        "final_M_v2": 0
+      },
+      {
+        "pairs": 5,
+        "ok": true,
+        "total_tax": 70,
+        "expected_min": 70,
+        "final_M_v2": 0
+      }
+    ],
+    "survivor_budget_relation": [
+      {
+        "n": 47,
+        "steps": 3,
+        "v2_n_minus_47": null,
+        "steps_le_v2_budget": true
+      },
+      {
+        "n": 16431,
+        "steps": 2,
+        "v2_n_minus_47": 14,
+        "steps_le_v2_budget": true
+      },
+      {
+        "n": 32815,
+        "steps": 2,
+        "v2_n_minus_47": 15,
+        "steps_le_v2_budget": true
+      },
+      {
+        "n": 49199,
+        "steps": 2,
+        "v2_n_minus_47": 14,
+        "steps_le_v2_budget": true
+      }
+    ]
+  },
+  "demos": {
+    "from_Z_then_mild": {
+      "ok": true,
+      "rows": [
+        {
+          "word": "1",
+          "mu": "3/2",
+          "pre_M": 1,
+          "pre_R": 0,
+          "tax_bits": 1,
+          "mg": 2,
+          "M_thin": 2,
+          "post_M": 3,
+          "post_R": 2,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "101",
+          "mu": "9/8",
+          "pre_M": 3,
+          "pre_R": 2,
+          "tax_bits": 3,
+          "mg": 8,
+          "M_thin": 24,
+          "post_M": 27,
+          "post_R": 20,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "1",
+          "mu": "3/2",
+          "pre_M": 27,
+          "pre_R": 20,
+          "tax_bits": 1,
+          "mg": 2,
+          "M_thin": 54,
+          "post_M": 81,
+          "post_R": 71,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        }
+      ],
+      "total_tax_bits": 5,
+      "final_M": 81,
+      "final_R": 71,
+      "sum_word_lengths": 5
+    },
+    "drain_pair_3": {
+      "ok": true,
+      "rows": [
+        {
+          "word": "1111010",
+          "mu": "243/128",
+          "pre_M": 1,
+          "pre_R": 0,
+          "tax_bits": 7,
+          "mg": 128,
+          "M_thin": 128,
+          "post_M": 243,
+          "post_R": 91,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "1101110",
+          "mu": "243/128",
+          "pre_M": 243,
+          "pre_R": 91,
+          "tax_bits": 7,
+          "mg": 128,
+          "M_thin": 31104,
+          "post_M": 59049,
+          "post_R": 175,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "1111010",
+          "mu": "243/128",
+          "pre_M": 59049,
+          "pre_R": 175,
+          "tax_bits": 7,
+          "mg": 128,
+          "M_thin": 7558272,
+          "post_M": 14348907,
+          "post_R": 334,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "1101110",
+          "mu": "243/128",
+          "pre_M": 14348907,
+          "pre_R": 334,
+          "tax_bits": 7,
+          "mg": 128,
+          "M_thin": 1836660096,
+          "post_M": 3486784401,
+          "post_R": 2805772459,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "1111010",
+          "mu": "243/128",
+          "pre_M": 3486784401,
+          "pre_R": 2805772459,
+          "tax_bits": 7,
+          "mg": 128,
+          "M_thin": 446308403328,
+          "post_M": 847288609443,
+          "post_R": 455448657421,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        },
+        {
+          "word": "1101110",
+          "mu": "243/128",
+          "pre_M": 847288609443,
+          "pre_R": 455448657421,
+          "tax_bits": 7,
+          "mg": 128,
+          "M_thin": 108452942008704,
+          "post_M": 205891132094649,
+          "post_R": 145631843064625,
+          "v2_pre_M": 0,
+          "v2_post_M": 0,
+          "post_M_odd": true,
+          "alpha_odd_unit_mod_high_2": true
+        }
+      ],
+      "total_tax_bits": 42,
+      "final_M": 205891132094649,
+      "final_R": 145631843064625,
+      "sum_word_lengths": 42
+    }
+  },
+  "conclusion": "From Z, first block of length L taxes L bits and yields an odd-step image AP. Every subsequent block of length L' then taxes exactly L' bits (mg=2^{L'}). Odd image moduli do not increase free 2-adic parameter rank. Total tax along a schedule equals total parity length when starting from Z and never meeting a pre-aligned 2-power port."
+}

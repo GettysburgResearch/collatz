@@ -1,0 +1,7 @@
+Residues mod 2^L biject with length-L words, so finite CRT Schottky with L<=A is a subshift of the deterministic shortcut graph. Expanding certificates reduce to Markov subsets with odd-density > log2/log3 — the classical supercritical subshift problem.
+threshold log2/log3=0.630930
+A=6 supercritical simple cycles=0 / 2
+A=8 supercritical simple cycles=0
+survivors stay odds_only=0 grow=0 best=None
+survivors stay full=5000 grow=653
+best odd run=(12, 4095)

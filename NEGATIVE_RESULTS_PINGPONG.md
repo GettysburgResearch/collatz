@@ -12,5 +12,9 @@ Packet-local note (does not modify contested root `NEGATIVE_RESULTS.md`).
 | N-P05 | All pure power-of-two image-port constraints thin uniquely (`L-0105`). |
 | N-P06 | Mild greedy supercritical walks die by depth 20 for tested libraries (`O-0101`). |
 | N-P07 | Syracuse modular disjoint ping-pong not found mod 27 (`X-0107`). |
+| N-P08 | Odd image moduli do not regenerate free 2-adic parameters (`L-0106`). |
+| N-P09 | Expanding periodic block schedules realize only negative rational fixed points (`L-0107`). |
+| N-P10 | Forward finite CRT / dyadic automata have out-degree one — no Schottky branching (`L-0108`). |
+| N-P11 | Compact inverse IFS on \(\{g_0,g_1\}\) impossible; pure \(g_1\to-1\) (`L-0109`). |
 
-These are features, not bugs: they carve the residual surface for `C-0101`.
+Classical Schottky geometry for this packet is largely closed. Residual hope is non-classical (bridges, adelic scaffolds, complementary-domain Möbius).
