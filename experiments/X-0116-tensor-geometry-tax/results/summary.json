@@ -1,0 +1,374 @@
+{
+  "seed": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "seed_filled_radius": 3,
+  "seed_coverage": {
+    "1": 2,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4,
+    "8": 4,
+    "9": 4,
+    "10": 4,
+    "11": 4,
+    "12": 4
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "p": 5,
+      "K_odd": true,
+      "K_bitlen": 155,
+      "Lp": 163,
+      "cum_L": 169,
+      "cum_a": 5,
+      "|D|": 8,
+      "filled_radius": 3,
+      "coverage": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8
+      },
+      "log_mu": -111.64881207129021
+    },
+    {
+      "stage": 2,
+      "p": 6,
+      "K_odd": true,
+      "K_bitlen": 477,
+      "Lp": 487,
+      "cum_L": 656,
+      "cum_a": 6,
+      "|D|": 16,
+      "filled_radius": 3,
+      "coverage": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8
+      },
+      "log_mu": -448.11287671531545
+    },
+    {
+      "stage": 3,
+      "p": 7,
+      "K_odd": true,
+      "K_bitlen": 1447,
+      "Lp": 1459,
+      "cum_L": 2115,
+      "cum_a": 7,
+      "|D|": 32,
+      "filled_radius": 3,
+      "coverage": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8
+      },
+      "log_mu": -1458.3160008636075
+    },
+    {
+      "stage": 4,
+      "p": 8,
+      "K_odd": true,
+      "K_bitlen": 4362,
+      "Lp": 4375,
+      "cum_L": 6490,
+      "cum_a": 8,
+      "|D|": 64,
+      "filled_radius": 3,
+      "coverage": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8
+      },
+      "log_mu": -4489.7363035247
+    },
+    {
+      "stage": 5,
+      "p": 9,
+      "K_odd": true,
+      "K_bitlen": 13108,
+      "Lp": 13123,
+      "cum_L": 19613,
+      "cum_a": 9,
+      "|D|": 128,
+      "filled_radius": 3,
+      "coverage": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8
+      },
+      "log_mu": -13584.808141724194
+    },
+    {
+      "stage": 6,
+      "p": 10,
+      "K_odd": true,
+      "K_bitlen": 39351,
+      "Lp": 39367,
+      "cum_L": 58980,
+      "cum_a": 10,
+      "|D|": 256,
+      "filled_radius": 3,
+      "coverage": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8
+      },
+      "log_mu": -40870.83458653889
+    }
+  ],
+  "freeze": {
+    "1": {
+      "seed_cov": 2,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "max_cov": 2,
+      "grew_after_freeze": false
+    },
+    "2": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_cov": 4,
+      "grew_after_freeze": false
+    },
+    "3": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_cov": 4,
+      "grew_after_freeze": false
+    },
+    "4": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_cov": 4,
+      "grew_after_freeze": false
+    },
+    "5": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_cov": 4,
+      "grew_after_freeze": false
+    },
+    "6": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_cov": 4,
+      "grew_after_freeze": false
+    },
+    "7": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "max_cov": 8,
+      "grew_after_freeze": false
+    },
+    "8": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "max_cov": 8,
+      "grew_after_freeze": false
+    },
+    "9": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "max_cov": 8,
+      "grew_after_freeze": false
+    },
+    "10": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "max_cov": 8,
+      "grew_after_freeze": false
+    },
+    "11": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "max_cov": 8,
+      "grew_after_freeze": false
+    },
+    "12": {
+      "seed_cov": 4,
+      "freeze_stage": 1,
+      "cov_at_freeze_and_after": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "max_cov": 8,
+      "grew_after_freeze": false
+    }
+  },
+  "radii_trajectory": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "radius_grew": false,
+  "any_mod_grew_after_freeze": false,
+  "seed2_radii": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+  ],
+  "seed2_radius_grew": false,
+  "seed2_any_mod_grew_after_freeze": false,
+  "tax_proxy_cum_L_last": 58980,
+  "conclusion": "Under atomic chronological tensoring, filled difference radius stays equal to the seed radius (sparse spikes do not fill), and coverage mod 2^b does not grow after cum_L >= b."
+}

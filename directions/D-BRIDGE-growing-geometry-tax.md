@@ -20,6 +20,18 @@ tensor amplification. These are the same escape hatch in different dialects:
 > that subsequent taxes do not force the nested cylinder intersection outside
 > \(\mathbb Z_{>0}\).
 
+## Update from `grok45-01` (PR #11 continuation)
+
+**Partial negative resolution of the atomic branch of `Q-0010`:**
+
+- `T-0104` proves that T-0006-style atomic chronological tensoring
+  **freezes** filled difference radius whenever \(R(D_0)<2^{L_0}\)
+  (true of `O-0005`: \(934<2^{44}\)) and freezes deep dyadic coverage.
+- `L-0112` / `X-0118`: all weight-one precision-\(p\ge2\) suffixes have
+  filled radius \(0\).
+- Residual escape inside concatenation: **dense weight-\(\ge2\)** high-precision
+  suffixes (`C-0103`).
+
 ## Why this belongs in an Issue
 
 It touches two active ledgers. Do not silently edit either packet’s root files.

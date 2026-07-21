@@ -20,6 +20,11 @@ Packet-local note (does not modify contested root `NEGATIVE_RESULTS.md`).
 | N-P13 | Multi-chart variable \((L,a)\) does not refund tax (`L-0111`). |
 | N-P14 | Fixed finite digit-transfer \(D\) reduces to survivor problem, not free Schottky (`T-0102`). |
 | N-P15 | Meta: classical Schottky-style formats fail Geom/Det/Per/Tax (`T-0103`). |
+| N-P16 | Atomic T-0006-style tensoring freezes filled radius & deep dyadic coverage (`T-0104`). |
+| N-P17 | Weight-one \(p\ge2\) suffixes unfilled (`L-0112`). |
+| N-P18 | Weight-two \(p\ge6\) suffixes unfilled in scanned ranges (`L-0113`). |
+| N-P19 | Skew-product expanding Syracuse walks die in range (`O-0102`). |
 
-Classical Schottky geometry for this packet is organized as closed under `T-0103`.
-Residual hope: growing-geometry bridge, heteroclinic/adelic, cycle hunt, or noncompact complementary-domain Möbius.
+Classical Schottky closed under `T-0103`. Atomic growing geometry closed under `T-0104`.
+Residual: weight\(\ge3\) high-precision dense suffixes, non-concatenative amplification,
+heteroclinic/adelic, or cycle hunt.
