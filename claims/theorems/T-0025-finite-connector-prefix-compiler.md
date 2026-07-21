@@ -6,6 +6,7 @@ Status: `PROPOSED`
 Authoring agent: `gpt56-pro-01`  
 Reviewing agents: none yet  
 Created: 2026-07-22  
+Last updated: 2026-07-22  
 Dependencies: `L-0022`--`L-0027`, `O-0009`, `O-0010`  
 Scope: connector-control data for the corrected phase-`-34` 256-step stage  
 Related counterexample candidates: none
@@ -21,104 +22,126 @@ Q_m=11\left(2^m+2^{m-8}+1\right)
 and let
 
 \[
-x_m=[3^{-7\cdot2^m}]_{Q_m}.
+\boxed{x_m=[3^{-7\cdot2^m}]_{Q_m}.}
+\tag{1}
 \]
 
 From the finite initial state
 
 \[
 \boxed{(m_0,x_{m_0})}
-\tag{1}
+\tag{2}
 \]
 
 there is a uniform deterministic finite-integer algorithm that, for every \(m\ge m_0\), produces:
 
-1. the exact inverse prefix \(x_m\) to precision \(Q_m\);
-2. every normalized source prefix \(\omega_{m,j}\) for
-   \[
-   0\le j\le256;
-   \]
-3. every canonical connector seed \(\eta_{m,j}^{i\to k}\) among the four source and target tower types;
-4. every bounded connector cap \(\theta_{m,j}^{i\to k}\);
-5. the periodic rational-frontier state from `O-0009`;
-6. the eight-bit odometer state \(j\);
-7. the finite quadratic bulk prefix from `L-0023` and `O-0010`;
-8. the next finite stage state \((m+1,x_{m+1})\).
+1. the exact first-target inverse prefix \(x_m\) to precision \(Q_m\);
+2. the full Newton workspace \(\widetilde x_m\) to precision \(2Q_m\);
+3. every normalized source prefix needed at all 256 positions of stage \(m\);
+4. every canonical connector seed among the four source and target tower types;
+5. every bounded connector cap;
+6. the periodic rational-frontier state from `O-0009`;
+7. the eight-bit odometer state;
+8. the finite quadratic/logarithmic bulk prefix from `L-0023` and `O-0010`;
+9. the next finite stage state \((m+1,x_{m+1})\).
 
 No bit of an infinite 2-adic word is part of the initial data.
 
 ## Explicit compiler
 
-At stage \(m\):
-
-### A. Generate all within-stage inverse powers
-
-Put
+At stage \(m\), put
 
 \[
 B=2^m,
 \qquad
-d=2^{m-8}.
+d=2^{m-8},
+\qquad
+N_m=3^{7B}.
 \]
 
-From \(x_m=3^{-7B}\pmod{2^{Q_m}}\), compute the finite unit
+### A. Lift the stage-start inverse to full workspace precision
+
+Compute
 
 \[
-a_m=3^{-7d}\pmod{2^{Q_m}}.
+\boxed{
+\widetilde x_m
+\equiv
+x_m(2-N_mx_m)
+\pmod{2^{2Q_m}}.
+}
+\tag{3}
 \]
 
 Then
 
 \[
 \boxed{
-3^{-7(B+jd)}
-\equiv
-x_ma_m^j
-\pmod{2^{Q_m}}
+N_m\widetilde x_m
+\equiv1
+\pmod{2^{2Q_m}}.
 }
-\tag{2}
+\tag{4}
 \]
 
-for \(0\le j\le256\).
+The full workspace is necessary: the target depths of later connectors exceed \(Q_m\), although all remain below \(2Q_m\).
 
-The four periodic core residues \(\mu\), finite source constants, and target anchors turn (2) into the exact \(\omega\), \(\eta\), and \(\theta\) values by `L-0022` and equation (12) of `L-0027`.
+### B. Generate every within-stage inverse power
 
-### B. Advance the scale
-
-Square the modulus base:
-
-\[
-N_{m+1}=N_m^2,
-\qquad
-N_m=3^{7B}.
-\]
-
-Apply the Newton rule of `L-0027`:
-
-\[
-y_m=x_m^2\pmod{2^{Q_m}},
-\]
-
-\[
-\widehat y_m
-\equiv
-y_m(2-N_m^2y_m)
-\pmod{2^{2Q_m}},
-\]
+Compute the finite odd unit
 
 \[
 \boxed{
-x_{m+1}=[\widehat y_m]_{Q_{m+1}}.}
-\tag{3}
+a_m=[3^{-7d}]_{2Q_m}.}
+\tag{5}
 \]
 
-Because
+For
 
 \[
-Q_{m+1}=2Q_m-11,
+t_{m,j}=B+jd,
+\qquad0\le j\le256,
 \]
 
-this produces the full next precision with eleven spare Newton bits.
+we have, at every requested precision \(K\le2Q_m\),
+
+\[
+\boxed{
+3^{-7t_{m,j}}
+\equiv
+\widetilde x_ma_m^j
+\pmod{2^K}.
+}
+\tag{6}
+\]
+
+Multiplication by the fixed unit \(3^{-7}\) gives \(3^{-G_{t_{m,j}}}\). The finite tower anchors then give every connector seed and cap through equations (16)–(17) of `L-0027`.
+
+### C. Advance the scale
+
+The next base is
+
+\[
+N_{m+1}=N_m^2.
+\]
+
+Since \(\widetilde x_m^2\) is an inverse of \(N_{m+1}\) modulo \(2^{2Q_m}\), define
+
+\[
+\boxed{
+x_{m+1}
+=[\widetilde x_m^2]_{Q_{m+1}}.}
+\tag{7}
+\]
+
+The precision identity
+
+\[
+\boxed{Q_{m+1}=2Q_m-11}
+\tag{8}
+\]
+
+shows that this supplies the full next prefix with exactly eleven spare Newton bits.
 
 ## Consequence: the state-space reduction
 
@@ -130,13 +153,13 @@ The previous candidate state was written
 
 with an apparently independent unbounded connector word \(W\).
 
-The theorem shows that \(W\) is a **derived proof track**. It is generated from \(m\), finite tower control, and the finite Newton prefix \(x_m\). It is not an independent choice and need not be preloaded from a completion point.
+The theorem shows that \(W\) is a **derived proof track**. It is generated from \(m\), finite tower control, \(x_m\), and the temporary finite workspace \(\widetilde x_m\). It is not an independent choice and need not be preloaded from a completion point.
 
 The load-bearing candidate state may therefore be reduced conceptually to
 
 \[
 \boxed{(i,m,j,z,n)}
-\tag{4}
+\tag{9}
 \]
 
 plus deterministic finite arithmetic workspace, where:
@@ -151,9 +174,9 @@ All connector-control words are checkable outputs of the compiler.
 
 ## Proof
 
-`L-0027` proves the exact stage precision, Newton transition, and connector formula at the stage boundary. Equation (2) is finite modular exponentiation of one odd unit and gives every within-stage source inverse.
+`L-0027` proves the exact exponent schedule, full Newton lift, stage-depth bound, within-stage inverse factorization, connector formula, and next-stage transition.
 
-For each tower type, the finite recovery residue is periodic with period dividing sixteen. The stage jump \(d=2^{m-8}\) is divisible by those periods for all sufficiently large \(m\), while the finitely many smaller scales can be incorporated into the initial state. The remaining anchors and caps are finite formulas in the tower data.
+For each tower type, the finite recovery residue is periodic with period dividing sixteen. The stage jump \(d=2^{m-8}\) is divisible by those periods for all sufficiently large \(m\); the finitely many smaller scales can be incorporated into the initial state.
 
 `O-0009` supplies the rational frontier; `O-0010` identifies the moving bulk; `L-0024` supplies the finite odometer. Every operation—addition, multiplication, squaring, modular reduction by a power of two, and exact division after a proved congruence—acts on finite ordinary words. Induction on \(m\) proves the claim.
 
@@ -162,8 +185,9 @@ For each tower type, the finite recovery residue is periodic with period dividin
 The connector-control side of `Q-0020` no longer has a finite-versus-adic ambiguity:
 
 - the required finite prefix is exact;
-- the next prefix is computed from the current finite prefix;
-- precision nearly doubles at each stage;
+- every deeper within-stage prefix comes from the same finite Newton workspace;
+- the next stage prefix is computed from the current stage state;
+- precision nearly doubles at each scale;
 - no left-infinite input is invoked;
 - every cap and carry has a direct finite certificate.
 
@@ -197,4 +221,4 @@ Thus the sole uncontrolled infinite channel is now the ordinary residual/marker 
 
 ## Adversarial tests
 
-`X-0013` reconstructs the compiler independently. It checks Newton generation, the exact eleven-bit slack, all sixteen boundary connector seeds, within-stage inverse powers, and agreement with direct modular inversion.
+`X-0013` reconstructs the compiler independently. It checks the full Newton workspace, the deepest within-stage connectors, the exact eleven-bit slack, all source/target connector formulas, and agreement with direct modular inversion.
