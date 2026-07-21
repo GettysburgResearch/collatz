@@ -7,19 +7,23 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch contains five mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
+The active branch contains six mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
 
 There is currently **no positive-integer Collatz counterexample** in the repository.
 
-## Fixed framework
+## Fixed map and affine calculus
 
-For the shortcut map
+The shortcut map is
 
 \[
-T(n)=\begin{cases}n/2,&n\text{ even},\\(3n+1)/2,&n\text{ odd},\end{cases}
+T(n)=
+\begin{cases}
+n/2,&n\text{ even},\\[1mm]
+(3n+1)/2,&n\text{ odd}.
+\end{cases}
 \]
 
-a length-\(L\), weight-\(a\) parity word has exact affine action
+For a length-\(L\), weight-\(a\) parity word \(w\),
 
 \[
 T^L(n)=\frac{3^an+B(w)}{2^L}
@@ -27,134 +31,323 @@ T^L(n)=\frac{3^an+B(w)}{2^L}
 
 on one residue class modulo \(2^L\).
 
-A finite collision fiber
+The repository has developed three mutually equivalent finite descriptions of useful Collatz blocks:
 
-\[
-T^L(2^Lq+r+d)=3^aq+s\qquad(d\in D)
-\]
+1. positive collision fibers;
+2. partial induced radix maps;
+3. negative-template return families.
 
-induces
+The third is now the principal global viewpoint.
 
-\[
-H_D(2^LB+d)=3^aB+d.
-\]
+## Results from the first five sessions
 
-One invariant congruence class lifts exactly to ordinary positive Collatz integers. An infinite admissible orbit from one finite lifted state would be a counterexample.
-
-## Results before the current session
-
-The repository already contains:
+The branch already contains:
 
 - exact finite collision atlases and sparse collision fibers;
+- induced maps
+  \[
+  H_D(MB+d)=NB+d;
+  \]
 - universal finite-horizon carry pumping;
-- dual 2-adic/real coding and an aperiodicity obstruction;
-- the exact run-length/cofactor skeleton
+- exact 2-adic/real coding and an aperiodicity obstruction;
+- the run-length skeleton
   \[
   d_k+N^{u_k}C_k=d_{k+1}+M^{u_{k+1}}C_{k+1};
   \]
-- inverse-signature collision codes;
+- inverse-signature collision codes and an exact composition algebra;
 - exponentially unbounded mildly supercritical fiber cardinality;
-- an exact 339-branch chart with full projection modulo 16 and a long difference interval;
-- exact tensor transport preserving any fixed finite alphabet geometry;
-- arbitrary finite 3-adic precision from explicit atomic codes.
+- the exact 339-branch chart `O-0005`;
+- arbitrary finite 3-adic precision;
+- geometry-preserving tensor amplification;
+- complete collision-alphabet projection modulo \(2^b\) for every \(b\).
 
-These remove alphabet size, local pumping, and finite precision as principal scarcities.
+These results remove branch count, finite precision, local pumping, and finite-scale dyadic correction as principal scarcities. They do **not** provide one infinite ordinary trajectory.
 
-## New session: complete dyadic projection at arbitrary scale
+# New principal framework: negative shadows
 
-### L-0009 — Universal one-hot signature correction
+## T-0008 — Every collision chart is a negative return system
 
-Let \(\mathcal U\) be any finite family of binary words of common length \(L\) and weight \(a\). For any \(p\ge a+1\), append a length
-
-\[
-S=2\cdot3^{p-1}
-\]
-
-weight-one suffix. Since \(2\) generates \((\mathbb Z/3^p\mathbb Z)^\times\), the position of that single one can be chosen independently for every prefix so that every completed word has the same affine constant modulo \(3^p\).
-
-Thus **every fixed-length, fixed-weight prefix family can be completed into one exact inverse collision code without discarding any prefix choices**.
-
-### L-0010 — Fixed-weight prefixes carry all dyadic residues
-
-For every \(b\ge1\), take all \(2^b\) binary patterns in the first \(b\) positions and add compensating ones in positions \(b,\ldots,2b-1\) so that every word has total weight \(b\).
-
-The map
+Suppose
 
 \[
-x\longmapsto B(u_x)\pmod{2^b}
+T^L(MQ+r_i)=NQ+s,
+\qquad
+M=2^L,
+\qquad
+N=3^a.
 \]
 
-is bijective. The proof is triangular: modulo \(2^{j+1}\), the next bit is determined because its coefficient is an odd multiple of \(2^j\).
-
-### T-0007 — Complete dyadic projection theorem
-
-Combine the two constructions:
-
-1. begin with the \(2^b\) fixed-weight prefixes of `L-0010`;
-2. correct all signatures with `L-0009` at precision \(b+1\);
-3. choose a finite CRT root and append the shortest forced all-odd tail making the block supercritical.
-
-The resulting finite supercritical collision fiber has exactly \(2^b\) branches and offset alphabet \(D_b\) satisfying
+Define
 
 \[
-\boxed{D_b\bmod2^b=\mathbb Z/2^b\mathbb Z.}
+u_i=M-r_i,
+\qquad
+v=N-s.
 \]
 
-The expansion ratio can simultaneously be kept in
+Then the same finite block satisfies
 
 \[
-1<N/M\le3/2.
+\boxed{
+T^L(-u_i)=-v
+}
 \]
 
-This is the first proposed theorem giving closure-relevant alphabet geometry that genuinely grows without bound.
+and, more generally,
 
-## Exact computation
+\[
+\boxed{
+T^L(Mq-u_i)=Nq-v
+}
+\]
 
-`X-0005` directly constructs and verifies the theorem for \(1\le b\le5\). It checks every corrected parity word, every common inverse output, every forced odd tail, and complete residue projection. The tested branch counts are
+for every integer \(q\).
+
+Thus the positive collision fiber is exactly an affine family of shadows of several ordinary negative integers coalescing to one negative target.
+
+At a positive chart boundary write
+
+\[
+n(q)=Nq-v.
+\]
+
+The next return block is selected by the intrinsic signed equation
+
+\[
+\boxed{
+Nq_t=Mq_{t+1}+a_t,
+\qquad
+a_t\in A:=\{v-u_i\}.
+}
+\]
+
+This is a rational-base \(N/M\) return system with a finite signed alphabet. The separate lifting congruence of the earlier induced coordinate is absorbed into the integral quotient equation.
+
+A finite itinerary obeys the exact address identity
+
+\[
+N^kq_0-M^kq_k
+=
+\sum_{t=0}^{k-1}
+a_tN^{k-1-t}M^t.
+\]
+
+An infinite admissible chain above an explicit growth threshold gives a divergent positive Collatz trajectory.
+
+## L-0012 — Inverse signatures are negative targets
+
+For a parity word \(w\), put
+
+\[
+M=2^L,
+\qquad
+N=3^a,
+\qquad
+\sigma(w)=M^{-1}B(w)\pmod N.
+\]
+
+The negative return identity
+
+\[
+T^L(-u)=-v
+\]
+
+is equivalent to
+
+\[
+B(w)+Mv=Nu,
+\]
+
+and hence to
+
+\[
+\boxed{
+v\equiv-\sigma(w)\pmod N.
+}
+\]
+
+Therefore the inverse-signature codes from `L-0005`--`T-0007` are exactly finite negative-preimage fibers of one negative target. The code-composition algebra and the negative renewal graph are the same construction viewed from opposite ends.
+
+# Variable-length renewal systems
+
+## T-0009 — Renewal-code counterexample criterion
+
+Let negative templates return to one target at possibly different depths:
+
+\[
+T^{L_i}(-u_i)=-v,
+\]
+
+with \(a_i\) odd steps. On the cylinder
+
+\[
+q\equiv v-u_i\pmod{2^{L_i}},
+\]
+
+the exact quotient map is
+
+\[
+\boxed{
+F_i(q)=3^{a_i}\frac{q-v+u_i}{2^{L_i}}.
+}
+\]
+
+If one can exhibit a nonempty set of ordinary quotients above \(v\), a deterministic return selector, forward invariance, and strict growth on every selected branch, then every starting quotient in that set yields a positive Collatz counterexample.
+
+This is now a direct finite-certificate target: construct an infinite but finitely generated renewal language, or a finite graph of negative targets, with one explicit ordinary starting quotient.
+
+## Finite complete one-target obstruction
+
+A finite one-target return family covering every sufficiently large integer quotient cannot have every branch supercritical.
+
+Reason: its finite union of dyadic cylinders is clopen in \(\mathbb Z_2\). Since all sufficiently large ordinary integers are dense in \(\mathbb Z_2\), the union must cover the target quotient \(q=v\). The branch covering that point has
+
+\[
+u_i=2^{L_i}v,
+\qquad
+a_i=0,
+\]
+
+so it is the all-even contracting return.
+
+Consequently a successful return construction must use at least one of:
+
+- an infinite regular code with an exceptional 2-adic boundary path;
+- a proper invariant survivor set rather than all large quotients;
+- several negative targets or charts;
+- compensated grammar cycles containing locally subcritical returns.
+
+This explains structurally why a finite stationary all-expanding table has not emerged.
+
+# Real geometry of the return system
+
+## T-0010 — Fractional-window law
+
+For an infinite signed return chain
+
+\[
+Nq_t=Mq_{t+1}+a_t,
+\qquad
+\beta=N/M,
+\qquad
+\rho=M/N,
+\]
+
+there is a real constant \(C\) such that
+
+\[
+\boxed{
+q_t=C\beta^t+x_t,
+}
+\]
+
+where
+
+\[
+x_t=
+\frac1N
+\sum_{j\ge0}a_{t+j}\rho^j.
+\]
+
+The error is a convex combination of the normalized digits:
+
+\[
+\frac{\min A}{N-M}
+\le x_t\le
+\frac{\max A}{N-M}.
+\]
+
+Since \(q_t\) is integral, the multiplicative fractional-part orbit
+
+\[
+\{C(N/M)^t\}
+\]
+
+must remain forever in a fixed circle arc of length at most
+
+\[
+\boxed{
+\Delta=
+\frac{\operatorname{diam}A}{N-M}
+=
+\frac{\operatorname{diam}D}{N-M}.
+}
+\]
+
+The new dimensionless quantity \(\Delta\) is the chart's **normalized aspect ratio**. It measures real rounding freedom and is independent of raw branch count.
+
+## L-0011 — Common odd-tail aspect tax
+
+For a collision core of length \(L\), residue span \(W\), and a common odd tail of length \(k\), the final aspect ratio is exactly
+
+\[
+\boxed{
+\Delta_k
+=
+\frac{W/2^L}{2^k(\lambda_k-1)},
+}
+\]
+
+where \(\lambda_k=N_k/M_k\).
+
+If the final expansion margin satisfies \(\lambda_k\ge1+\varepsilon\), then
+
+\[
+\Delta_k<2^{-k}/\varepsilon.
+\]
+
+Thus the earlier separation of branching from drift is algebraically correct but incomplete for closure: a long post-merger tail can make the real control window exponentially narrow while leaving all branch offsets unchanged.
+
+## O-0006 — Exact aspect audit
+
+The principal recorded stationary charts have:
 
 ```text
-2, 4, 8, 16, 32.
+chart    branches    diameter/(N-M)
+O-0001       2       5.88235294118e-2
+O-0002       3       9.21658986175e-3
+O-0003       6       1.08518719479e-4
+O-0004      18       1.59683351312e-4
+O-0005     339       3.25606084224e-9
 ```
 
-The corresponding corrected core lengths are
+The 339-branch chart is symbolically rich but has a stationary real window more than seven orders of magnitude narrower than the original two-branch chart.
+
+The complete-dyadic-projection examples contract still more sharply. Their exact aspect ratios for \(b=1,\ldots,5\) are approximately
 
 ```text
-8, 22, 60, 170, 496.
+2.17e-5, 2.29e-12, 5.44e-30, 1.10e-93, 4.72e-264.
 ```
 
-All computations use exact Python integers and the standard library only.
+This does not refute those charts. It corrects the optimization objective.
 
-## Strategic consequence
+# Computational state
 
-For arbitrarily large \(b\), every possible low-order correction modulo \(2^b\) is represented by some induced digit. Low-order modular freedom is therefore not a finite-scale accident.
+- `X-0001`: consecutive collision bundles.
+- `X-0002`: complete finite collision fibers through depth 22.
+- `X-0003`: inverse-signature construction and the 339-branch chart.
+- `X-0004`: offset tensors and arbitrary-precision atomic codes.
+- `X-0005`: complete dyadic projection through \(b=5\).
+- `X-0006`: negative-template identities for `O-0001`--`O-0005`, all 339 committed offsets, signed address equations, the finite renewal obstruction witness, and exact aspect-ratio checks.
 
-This sharply advances the run-length target. In
+All programs use exact Python integers and the standard library only.
 
-\[
-d_k+N^{u_k}C_k=d_{k+1}+M^{u_{k+1}}C_{k+1},
-\]
-
-the alphabet can now supply every desired dyadic residue correction up to an arbitrarily chosen scale.
-
-However, modular solvability is not yet a uniform positive relay. The selected next digit must also:
-
-- keep the next cofactor positive;
-- enforce the required exact divisibility depth;
-- preserve the lifting congruence;
-- fit one finite aperiodic schema for all future stages.
-
-## Central unresolved step
+# Central unresolved step
 
 The project still lacks a **finite-boundary regeneration theorem**.
 
-The strongest next target is now:
+The strongest current formulations are:
 
-> Convert complete dyadic projection into a finite family of uniform positive run-length/cofactor relays, or prove a finite aperiodic macro-grammar that uses the modular correction digits while preserving one ordinary finite high-order boundary.
+1. construct a regular infinite negative-template renewal code with a positive forward-invariant quotient set;
+2. construct a finite multi-target negative return graph whose accepted grammar cycles have net expansion;
+3. close finitely many run-length/cofactor schemas;
+4. build a graph-directed rounding system whose effective normalized windows stay macroscopic while its 2-adic boundary is one ordinary finite integer.
 
-## Immediate priorities
+# Immediate priorities
 
-1. Derive a one-step cofactor relay theorem using complete projection modulo \(2^b\), with quantitative positivity bounds.
-2. Determine whether bounded cofactor ratios can be maintained by choosing \(b\) as a function of the current boundary scale.
-3. Compress that adaptive choice into finitely many schemas or an aperiodic substitution.
-4. Combine dyadic correction with variable collision charts to preserve lifting congruences.
-5. Independently audit `L-0009`, `L-0010`, and `T-0007`, especially the triangular bijection, signature correction, positivity, and tail promotion.
+1. **Negative preimage automata.** Build the reverse Collatz tree of a small negative target or negative cycle, recording return depth, odd count, signed displacement, and cylinder.
+2. **Regular renewal language.** Seek a finitely generated infinite return code whose only uncovered 2-adic path is the zero shadow, or whose selected survivor set contains one explicit ordinary quotient.
+3. **Multi-target graph.** Use target changes to route around the all-even contracting boundary branch forced by `T-0009`.
+4. **Macroscopic aspect ratio.** Search near critical pairs \(2^L\approx3^a\) for negative coalescence fibers whose displacement diameter is comparable to \(N-M\).
+5. **Co-designed drift.** Insert expansion before complete coalescence or between return decisions, rather than appending one very long common odd tail.
+6. **Independent audit.** Reconstruct `T-0008`--`T-0010`, `L-0011`--`L-0012`, and `X-0006`, especially extension to negative residue classes, the renewal obstruction, and the real-window calculation.
