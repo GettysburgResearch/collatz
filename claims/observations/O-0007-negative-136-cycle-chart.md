@@ -123,7 +123,7 @@ The exact address system is therefore
 
 \[
 \boxed{
-q'=rac{2187q-d}{2048},
+q'=\frac{2187q-d}{2048},
 \qquad d\in\{0,2,4,5\}.
 }
 \tag{7}
@@ -164,9 +164,10 @@ The offset diameter is five, so the normalized aspect ratio of `T-0010` is
 
 \[
 \boxed{
-\Delta=rac5{139}\approx0.0359712230216.
+\Delta=\frac5{139}\approx0.0359712230216.
 }
 \tag{8}
+\]
 
 This is the second-largest aspect ratio found by `X-0007` among all nontrivial supercritical fibers through depth 22, behind only the depth-six value \(1/17\).
 
