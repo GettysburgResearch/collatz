@@ -1,64 +1,88 @@
 # Q-9408 — Active steering on the demand-tree coordinates
 
 Claim ID: Q-9408  
-Title: Can the moving high quotient regenerate the six-bit demand lift forever from one ordinary context?  
-Status: IDEA / primary next target  
+Title: Can the unique active stack cylinder stabilize at one ordinary context?  
+Status: PARTIAL / reduced by L-9406 and T-9409  
 Authoring agent: `gpt56-complexity-01`  
 Created: 2026-07-21  
-Dependencies: D-9403, L-9405, T-9407, T-9408  
+Last updated: 2026-07-21  
+Dependencies: D-9403, L-9405, T-9407, T-9408, L-9406, T-9409  
 Scope: the nonstationary issue-#4 stack recurrence
 
-## Question
+## Resolved active transition
 
-The stationary same-stage interface is now exact:
-
-```text
-- demand is a full 64-ary tree automorphism;
-- fixed-context matching has one compatible ghost stage;
-- no positive ordinary stationary pair exists.
-```
-
-An active stack stage instead consumes a demanded residue block, passes the
-remaining high quotient through an odd `81`-power multiplier, adds a carry,
-and changes the target height.
-
-Can one write this update as an exact transition
+L-9406 writes every exact transition from height `m` to height `n` as
 
 ```text
-(m_t, x_t, a_t, y_t)
-  ->
-(m_(t+1), x_(t+1), a_(t+1), y_(t+1)),
+x=r_(m,n)+64^(9n+1)*y,
+x'=81^(9m+1)*y+k_(m,n).
 ```
 
-where
+The unused high quotient therefore moves by an odd affine `2`-adic isometry.
+If the next context is required to lie in one future residue cylinder, exactly
+one class of `y` is selected. No stage creates multiple compatible quotient
+branches or refunds consumed precision.
+
+## Resolved finite schedule structure
+
+T-9409 proves that every finite height directive
 
 ```text
-- a_t is the next base-64 demand lift digit;
-- y_t is the unconsumed high quotient;
-- m_(t+1)-m_t is the 17/18 directive step;
+m_0,m_1,...,m_K
 ```
 
-and then prove either:
+selects exactly one initial cylinder
 
-1. **conservation/obstruction:** every future lift digit was already encoded in
-   the initial `2`-adic high quotient, so an infinite path from an ordinary
-   finite context is impossible; or
-2. **regeneration/construction:** the arithmetic update creates the required
-   next lift digit from bounded present data, yielding a genuine ordinary
-   infinite tower?
+```text
+x_0=R_K mod Q_K,
+Q_K=product_(i=1)^K 64^(9m_i+1).
+```
 
-## Exact deliverables
+An infinite directive selects exactly one `2`-adic initial context. It is an
+ordinary nonnegative integer iff the least representatives `R_K` eventually
+stabilize.
 
-1. Derive the quotient-and-carry transition with no asymptotic notation.
-2. Freeze digit orientation and all moduli.
-3. Prove how the first mismatch depth changes under one stage.
-4. Separate transported preloaded bits from newly determined carry bits.
-5. Test all finite truncations with an exact verifier.
-6. Do not infer ordinary existence from compatible finite roots.
+For `17/18` increments the number of fixed initial binary digits is bounded by
+
+```text
+54*K*m_0+459*K*(K+1)+6K
+ <= log_2 Q_K
+ <=54*K*m_0+486*K*(K+1)+6K.
+```
+
+Thus finite CRT steering consumes quadratic initial precision, independently of
+raw zero-padding complexity.
+
+## Remaining question
+
+Define the new block digit
+
+```text
+a_K=(R_(K+1)-R_K)/Q_K,
+0<=a_K<64^(9m_(K+1)+1).
+```
+
+Can one prove that infinitely many `a_K` are nonzero for every admissible
+balanced directive?  A yes answer rules out an ordinary initial context for the
+stack architecture.  Conversely, an admissible directive with eventually zero
+`a_K` would yield one ordinary context satisfying every stage and would become
+a candidate counterexample interface after positivity and chart lifting are
+checked.
+
+## Exact next deliverables
+
+1. Derive a recurrence for `a_K` from the quotient carry `k_(m,n)`.
+2. Relate `a_K=0` to the terminal context produced by the previous finite
+   cylinder.
+3. Search for a valuation, sign, or modular obstruction to long zero tails.
+4. Compare the block-digit sequence with the Sturmian/Ostrowski directive and
+   the PR #16 low-energy carry cylinders.
+5. Keep the distinction between computationally compact digit generation and
+   eventual digit termination.
 
 ## Falsification criteria
 
-A proposed conservation law is false if an exact finite transition increases
-the first mismatch depth without consuming matching high-quotient precision.
-A proposed construction is incomplete unless one finite positive initial
-context replays every stage without an inverse-limit definition.
+A proposed nonstabilization law is false if one exact finite prefix admits a
+provably permanent zero block tail. A proposed construction is incomplete
+unless the least representatives stabilize at one finite positive integer and
+its entire lifted Collatz orbit replays exactly.
