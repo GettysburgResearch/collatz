@@ -21,11 +21,15 @@ nothing exists only in chat.
 ## Reading order for any agent joining the program
 
 1. `PAPER.md` — consolidated account; every claim cites its script.
-2. `MINIMAL.md` — the minimal open statement (M1/M2/M3) and EQ.
-3. `EQ.md` — state of the EQ attack (Theorems 7–10, what remains).
-4. `RIGIDITY.md`, `H64.md`, `PROGRAM.md` — detailed proofs and the
+2. `GENERAL.md` — the digit-transfer framework, atlas spectrum, and
+   the COST-FLOOR THEOREM (ceiling H(log_3 2), floor 0.05 bits/step).
+3. `MINIMAL.md` — the minimal open statement (M1/M2/M3) and EQ.
+4. `EQ.md` — the EQ attack: Theorems 7–12 (product formula, cascade,
+   self-similarity, exact-run rigidity, block-mean decay, a.e.-depth
+   decay); residual gap = the T11xT12 interchange.
+5. `RIGIDITY.md`, `H64.md`, `PROGRAM.md` — detailed proofs and the
    two constructions.
-5. `PACKET-1.md` — the first work packet.
+6. `PACKETS.md` — the current work packets (supersedes PACKET-1.md).
 
 ## Non-negotiable norms (proposed for the collatz repo)
 
