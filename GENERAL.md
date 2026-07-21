@@ -154,3 +154,11 @@ of ≥ 0.05·(steps) bits forever with a one-time budget of log₂(n) bits —
 the framework now states Collatz's defense as a single quantitative
 principle, *the entropy toll*, uniform across every formulation
 discovered in this program.
+
+**Final datapoint (L = 30, strong peak, sampled 1/16 of classes):**
+`|D_30| ≈ 71.49M`, γ_30 = 0.8697, cost 3.91 bits; collision fraction
+0.664 (continuing the slow rise 0.36 → 0.66). Peak-subsequence cost
+slope from L = 19 to 30: 0.067 bits/level — between the proved floor
+slope 0.050 and the small-L transient, converging downward as the
+fraction saturates: fully consistent with ceiling `H(log₃2) = 0.94996`
+and asymptotic per-step cost `1 − H(log₃2) = 0.05004`.
