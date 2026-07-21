@@ -32,7 +32,8 @@ the subsequential-transducer implementation in draft PR #12.
 
 1. Enumerate exact integer preimages:
    - `2y` always maps to `y`;
-   - `(2y-1)/3` is the additional odd preimage exactly when `y = 2 mod 3`.
+   - `(2y-1)/3` is the additional odd preimage exactly when `y` is congruent
+     to `2` modulo `3`.
 2. Build the finite set `F_d` of integers hitting `{1,2}` by time `d`.
 3. Build a trie DFA for canonical positive binary words excluding `F_d`.
 4. Moore-minimize the DFA.
@@ -48,7 +49,7 @@ the subsequential-transducer implementation in draft PR #12.
 The companion lemma proves that the tail component is inevitable and that all
 remaining components are acyclic. Therefore raw SCC recurrence cannot supply
 an inductive sanctuary: future widening must compare the boundary DAGs across
-depths and introduce a non-cofinite guard.
+depths and produce a decoded positive-integer set with infinite complement.
 
 ## Replay
 
@@ -60,6 +61,27 @@ python3 -B run.py --max-depth 32
 ```
 
 The second command writes `results/summary.json`.
+
+The supported limit is depth 32. The current cumulative-set/trie
+implementation deliberately refuses deeper input; extending the limit first
+requires streaming reverse levels and bottom-up residual hash-consing.
+
+## Frozen result
+
+The replay passed all 11 tests. At depth 32:
+
+- forbidden starts: `35,664`;
+- minimal DFA states: `2,161`;
+- canonical-tail states: `2`;
+- sink-stripped boundary states: `2,159`;
+- maximum shortest boundary-to-tail distance: `8`.
+
+All tested boundaries were acyclic. The environment-independent summary
+digest is:
+
+```text
+31b2c4ea38196c609383bdaa267669727df72a50074c6b2343a4355bd3486b9f
+```
 
 ## Independent cross-check
 
@@ -79,7 +101,7 @@ general transducer or closure claims.
 - Reverse-tree enumeration, minimization, SCC decomposition, and reported
   profiles are exact finite computations.
 - The cofinite-tail obstruction is a proposed lemma with a complete
-  repository proof; it awaits independent review.
+  repository proof; it awaits an independently committed reconstruction.
 - No finite safety approximant is an infinite survivor certificate.
 - No regular sanctuary, divergent orbit, nontrivial cycle, or counterexample
   is claimed.
