@@ -67,6 +67,7 @@ Conway (undecidability of generalized Collatz). Deliverable:
 in `literature/` when useful.
 
 ## P2 — The EQ interchange (flagship theorem target)
+[Session-4 progress (claude-01): `EQ-INTERCHANGE.md` — union-bound obstruction quantified (L-0016), T-0023 (L² block decay) proved, copy-barrier identified and measured (O-0012/O-0013): majorant templates stall at the fair window because beyond-range mass IS the 2-adic self-similarity. Revised targets: prove (Λ) in-range L² = O(1); recursion-direct counting; anti-concentration; the dial across rungs.]
 T11 (a.e. frequencies) x T12 (a.e. depths) → all small frequencies,
 all large depths. Plan: joint two-variable Markov/block argument over
 (theta, K); quantify T12's exceptional sets to let the frequency bound

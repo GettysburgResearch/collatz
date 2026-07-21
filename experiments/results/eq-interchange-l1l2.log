@@ -1,0 +1,35 @@
+K= 8: |S_K(1)|/2^K = 1.721e-02
+   block m=0: L1 mean 0.03662 in [0.62427, 0.64897]? N;  L2 mean 0.00619 <= 0.51235? Y
+   range (theta <= 2^8): L1 mass 7.3278  L2 mass 9.7022e-01  lambda_K = log2(L2)/K = -0.0055
+K= 9: |S_K(1)|/2^K = 9.436e-02
+   block m=0: L1 mean 0.01556 in [0.62427, 0.64897]? N;  L2 mean 0.00138 <= 0.51235? Y
+   range (theta <= 2^9): L1 mass 8.9366  L2 mass 8.9690e-01  lambda_K = log2(L2)/K = -0.0174
+K=10: |S_K(1)|/2^K = 1.001e-01
+   block m=0: L1 mean 0.01424 in [0.62427, 0.64897]? N;  L2 mean 0.00107 <= 0.51235? Y
+   range (theta <= 2^10): L1 mass 10.0943  L2 mass 8.9685e-01  lambda_K = log2(L2)/K = -0.0157
+K=11: |S_K(1)|/2^K = 5.351e-05
+   block m=0: L1 mean 0.01157 in [0.62427, 0.64897]? N;  L2 mean 0.00157 <= 0.51235? Y
+   range (theta <= 2^11): L1 mass 14.4081  L2 mass 9.1148e-01  lambda_K = log2(L2)/K = -0.0122
+K=12: |S_K(1)|/2^K = 3.561e-06
+   block m=0: L1 mean 0.00521 in [0.62427, 0.64897]? N;  L2 mean 0.00029 <= 0.51235? Y
+   range (theta <= 2^12): L1 mass 17.3977  L2 mass 8.8049e-01  lambda_K = log2(L2)/K = -0.0153
+K=13: |S_K(1)|/2^K = 1.126e-04
+   block m=0: L1 mean 0.00233 in [0.62427, 0.64897]? N;  L2 mean 0.00004 <= 0.51235? Y
+   block m=1: L1 mean 0.00281 in [0.38972, 0.42116]? N;  L2 mean 0.00011 <= 0.26250? Y
+   range (theta <= 2^13): L1 mass 22.8419  L2 mass 8.7628e-01  lambda_K = log2(L2)/K = -0.0147
+K=14: |S_K(1)|/2^K = 1.820e-03
+   block m=0: L1 mean 0.00144 in [0.62427, 0.64897]? N;  L2 mean 0.00002 <= 0.51235? Y
+   block m=1: L1 mean 0.00187 in [0.38972, 0.42116]? N;  L2 mean 0.00007 <= 0.26250? Y
+   range (theta <= 2^14): L1 mass 30.3664  L2 mass 1.0370e+00  lambda_K = log2(L2)/K = +0.0037
+K=15: |S_K(1)|/2^K = 4.205e-07
+   block m=0: L1 mean 0.00082 in [0.62427, 0.64897]? N;  L2 mean 0.00002 <= 0.51235? Y
+   block m=1: L1 mean 0.00119 in [0.38972, 0.42116]? N;  L2 mean 0.00005 <= 0.26250? Y
+   range (theta <= 2^15): L1 mass 38.1543  L2 mass 1.1082e+00  lambda_K = log2(L2)/K = +0.0099
+K=16: |S_K(1)|/2^K = 2.348e-04
+   block m=0: L1 mean 0.00062 in [0.62427, 0.64897]? N;  L2 mean 0.00001 <= 0.51235? Y
+   block m=1: L1 mean 0.00075 in [0.38972, 0.42116]? N;  L2 mean 0.00003 <= 0.26250? Y
+   range (theta <= 2^16): L1 mass 47.8673  L2 mass 1.1093e+00  lambda_K = log2(L2)/K = +0.0094
+
+lambda_K sequence: K=8:-0.0055, K=9:-0.0174, K=10:-0.0157, K=11:-0.0122, K=12:-0.0153, K=13:-0.0147, K=14:+0.0037, K=15:+0.0099, K=16:+0.0094
+|S_K(1)| geometric mean per-level rate over K=8..16: 0.5846
+MEASUREMENT COMPLETE
