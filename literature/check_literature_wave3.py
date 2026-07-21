@@ -33,6 +33,7 @@ if missing:
 required = [
     LIT / "LIVE_REPO_REVIEW_WAVE3.md",
     LIT / "SOURCE_LEDGER_WAVE3.md",
+    LIT / "UNVERIFIED-WAVE3.md",
     LIT / "references-wave3.bib",
     LIT / "claim-maps" / "WAVE3.md",
     LIT / "topic-notes" / "completion-height-principle.md",
@@ -40,6 +41,7 @@ required = [
     LIT / "topic-notes" / "causal-foundry-and-padic-automata.md",
     LIT / "topic-notes" / "padic-logarithm-stage-bulk.md",
     LIT / "topic-notes" / "collatz-spine-many-to-one.md",
+    ROOT / "reports" / "gpt56-pro-03" / "2026-07-21-7-literature-audit-wave3.md",
 ]
 for path in required:
     if not path.is_file():
@@ -93,5 +95,5 @@ for needle in (
 
 print("LITERATURE WAVE-3 CHECK PASSED")
 print(f"Wave-3 imported theorem notes: {len(expected)}")
-print(f"Wave-3 required review/map/topic files: {len(required)}")
+print(f"Wave-3 required review/map/topic/report files: {len(required)}")
 print(f"Unique bibliography keys across all waves: {len(keys)}")
