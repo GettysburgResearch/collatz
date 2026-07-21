@@ -13,8 +13,8 @@ Status: `EMPIRICAL` verification of proposed exact claims `L-0026`, `L-0027`, `T
    \[
    Q_{m+1}=2Q_m-11?
    \]
-4. Can Newton inversion generate the complete next inverse prefix without reading an infinite 2-adic word?
-5. Do the generated inverse prefixes reproduce every stage-boundary connector seed among the four self-return tower types?
+4. Can one Newton lift generate enough finite precision for every connector in the current stage and the next-stage prefix?
+5. Do the generated inverses reproduce the deepest within-stage connector seeds among all four source and target tower types?
 6. Is the quadratic moving bulk the finite approximation to
    \[
    -\frac74\log_2(3)
@@ -35,12 +35,13 @@ Status: `EMPIRICAL` verification of proposed exact claims `L-0026`, `L-0027`, `T
   \]
 - verifies the exact stage precision recurrence
   \[
-  Q_{m+1}=2Q_m-11
+  Q_{m+1}=2Q_m-11;
   \]
-  for `m=8,...,11`;
-- generates the next inverse prefix with one Newton step applied to the squared modulus;
-- compares the generated word with direct modular inversion;
-- reconstructs all sixteen source/target connector seeds at each tested stage from the generated inverse prefix;
+- lifts the stage-start inverse from `Q_m` to the full `2*Q_m` Newton workspace;
+- proves that this workspace covers the deepest connector target in the 256-step stage;
+- generates the next-stage inverse by squaring the full workspace and truncating;
+- compares every generated inverse with direct modular inversion;
+- reconstructs all sixteen source/target connector seeds at representative first, internal, near-boundary, and deepest stage positions;
 - computes the 2-adic logarithm series modulo powers of two;
 - checks
   \[
@@ -60,7 +61,7 @@ python3 experiments/X-0013-montgomery-newton-compiler/run.py
 
 ```text
 verified offset Montgomery precision lifts
-verified cycle-aligned Newton compiler and eleven-bit slack
+verified full Newton workspace, deepest connectors, and eleven-bit slack
 verified 2-adic logarithmic bulk and exact convergence rate
 all Montgomery-Newton compiler checks passed
 ```
@@ -73,7 +74,7 @@ The experiment separates two questions that had been conflated.
 
 ### Connector-control precision
 
-This is now finite-word computable. Newton lifting nearly doubles the prefix length, and the negative-cycle geometry asks for exactly eleven fewer bits than the full doubled precision.
+This is now finite-word computable. One Newton lift doubles the stage-start inverse precision. The resulting finite workspace contains every within-stage connector inverse, and its square contains the complete next-stage prefix. The negative-cycle geometry asks for exactly eleven fewer bits than the full doubled precision.
 
 ### Ordinary residual realization
 
