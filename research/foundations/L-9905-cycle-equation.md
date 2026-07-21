@@ -636,3 +636,362 @@ correction. Points a verifier should nevertheless probe:
 ---
 *File authored by fable-02-p4, 2026-07-21. Status PROPOSED per NOTATION.md conventions;
 an independent reviewing agent may upgrade after verification.*
+
+---
+
+## Verification note (fable-02-v4, 2026-07-21)
+
+Independent adversarial review per README §13, performed without relying on the
+author's confidence or reusing the author's test code. **Verdict: PASS.** All six
+sub-claims (and the element-bounds corollary) verified; three documentation-only
+fixes applied (§3 below); no mathematical content changed. Status upgraded
+PROPOSED → PROVED. Per protocol, this review does **not** set
+INDEPENDENTLY_VERIFIED.
+
+### 1. Independent reconstruction of the arguments
+
+- **Telescoping identity (L-9905.1), re-derived from scratch.** Set
+  $P_j := 2^{A_j} x_{j+1}$. Then $P_0 = 2^{A_0} x_1 = x_1$, and $(\ast_{j+1})$ gives
+  $$P_{j+1} = 2^{A_j}\bigl(2^{a_{j+1}} x_{j+2}\bigr) = 2^{A_j}(3x_{j+1} + 1)
+  = 3P_j + 2^{A_j}.$$
+  Unrolling this affine recursion:
+  $P_j = 3^j x_1 + \sum_{k=0}^{j-1} 3^{\,j-1-k}\, 2^{A_k}$, which after $i = k+1$
+  is exactly the file's (1). The author-flagged off-by-one bookkeeping is
+  **correct**: the $i$-th summand carries $2^{A_{i-1}}$ (not $2^{A_i}$), the $i = 1$
+  term is $3^{j-1} 2^{A_0} = 3^{j-1}$ with $A_0 = 0$ exact, and the term appended at
+  the inductive step is $3^0 2^{A_j}$. At $j = m$, cyclicity ($x_{m+1} = x_1$,
+  $A_m = K$) yields $x_1(2^K - 3^m) = c$. The worked $-17$ instance was recomputed
+  by hand: $a = (1,1,1,2,1,1,4)$, $K = 11$, $c = 729 + 486 + 324 + 216 + 288 + 192 +
+  128 = 2363 = (-17)(-139)$. ✓
+- **Anchor-invariance of $K$** (load-bearing for the element-bounds corollary):
+  $\{r, r+1, \dots, r+m-1\}$ meets each residue class mod $m$ exactly once, and
+  $(a_i)_{i \in \mathbb{Z}}$ is $m$-periodic, so $\sum_{i=1}^m b_i = \sum_{i=1}^m
+  a_{r+i-1} = \sum_{i=1}^m a_i = K$. Sound. The corollary then needs only
+  $b_i \ge 1$, $B_0 = 0$, $\sum b_i = K$ — which is all Step 4's bound proofs use —
+  plus $2^K - 3^m \ge 1$ (L-9905.2) as a positive denominator. No gap.
+- **Anchored-bound algebra re-verified:** $(3^m - 2^m) - 3^{m-1} = 2 \cdot 3^{m-1}
+  - 2^m$; and plain $-$ anchored $= 3^{m-1}(2^{K-m} - 1) \ge 0$, strict iff
+  $K > m$, exactly as claimed at the end of Step 4.
+- **Equality side remarks** (author flagged lighter scrutiny) — all re-derived,
+  and confirmed computationally as exact iff's (Test 3 below): lower $c$-bound
+  tight iff $a_1 = \dots = a_{m-1} = 1$ ($a_m$ free); plain upper tight iff all
+  $a_i = 1$; anchored tight iff $m = 1$ or $a_2 = \dots = a_m = 1$ ($a_1$ free);
+  the per-$i$ $A$-bound equality cases as stated in Step 4. The equality case of
+  $2^K \le (3 + 1/x_{\min})^m$ (all $x_i = x_{\min}$, hence $m = 1$) is the **one**
+  place least-periodicity/distinctness is genuinely used — correctly recorded in
+  the Gap audit. It is genuinely needed there: for the non-least period $m' = 2$ of
+  the trivial cycle, $2^4 = (3 + 1)^2$ attains equality with $m' > 1$.
+- **Hypothesis usage map** (checked line by line): positivity of the $x_i$ first
+  enters in Step 2 ($x_1 \ge 1$ converts $c > 0$ into $2^K > 3^m$) and is needed in
+  the inequality chain of .3, the corollary of .4, and in .5 and .6; L-9905.1 and
+  the product-formula display of .3 are sign-agnostic, and the $A$-/$c$-bounds of
+  .4 are composition-level. Remark 1.2 states this correctly; the Scope header was
+  slightly coarser and has been fixed (§3). The separation is airtight: the
+  negative-domain cycles through $-1, -5, -17$ satisfy the equation and product
+  formula at every rotation while $2^K < 3^m$; in Step 6 the factorization
+  $(x, 2^K - 3) = (-1, -1)$ also solves $x(2^K - 3) = 1$, so $x \ge 1$ is exactly
+  the hypothesis that forces uniqueness.
+- **Period vs. least period:** confirmed every proof uses only $S^m(x_1) = x_1$,
+  so .1–.5 hold verbatim for any period multiple (checked computationally, Test
+  2b). The file claims exactly this — neither over- nor under-claimed.
+- **L-9905.5:** division of the .3 chain by $m \ln 2 > 0$ re-checked;
+  $1/(3 \ln 2) = 0.4809\ldots < 0.481$ confirmed.
+
+First unsupported inference: **none found.** The only defects were the two
+wording items fixed in §3.
+
+### 2. Independent computational refutation attempt
+
+Script written from the Statement section alone (not adapted from the author's
+inline tests); exact integer/`Fraction` arithmetic, with `decimal` at 60 digits
+for the log chain — and the potentially *tight* middle step of that chain checked
+in exact rational form ($2^K \le (3+1/x_{\min})^m$), so no conclusion depends on
+rounding. Kept at `scratchpad/l9905_verify_fable02v4.py` (session-local); full
+code:
+
+```python
+#!/usr/bin/env python3
+"""
+INDEPENDENT adversarial verification of L-9905 (fable-02-v4, 2026-07-21).
+Written from the Statement section of L-9905-cycle-equation.md alone, without
+reusing the author's test code. FINITE VERIFICATION ONLY -- not a proof.
+Exact arithmetic: Python int / fractions.Fraction; the log-chain uses
+decimal.Decimal at 60 significant digits (near-equality steps are instead
+checked in exact rational form).
+"""
+from fractions import Fraction
+from itertools import product as iproduct
+from decimal import Decimal, getcontext
+import random
+
+getcontext().prec = 60
+LN2 = Decimal(2).ln()
+LN3 = Decimal(3).ln()
+LOG2_3 = LN3 / LN2
+EPS = Decimal(10) ** -50          # slack for Decimal comparisons w/ strict gap
+
+failures = []
+def chk(label, ok):
+    if not ok:
+        failures.append(label)
+        print("FAIL:", label)
+
+def v2(n):
+    assert n != 0
+    k = 0
+    while n % 2 == 0:
+        n //= 2; k += 1
+    return k
+
+def S(x):
+    """Syracuse formula on any odd integer x (3x+1 is even, nonzero)."""
+    y = 3 * x + 1
+    e = v2(y)
+    return y // 2**e, e
+
+def cycle_data(xs):
+    """Given the element list of one period (in orbit order), return (a, A, K, c)."""
+    m = len(xs)
+    a = [S(x)[1] for x in xs]
+    A = [0]
+    for e in a:
+        A.append(A[-1] + e)
+    K = A[m]
+    c = sum(3**(m - i) * 2**A[i - 1] for i in range(1, m + 1))
+    return a, A, K, c
+
+# ------------------------------------------------------------------ Test 1
+# Lemma 1.1 along arbitrary orbit segments (my own start set, j = 0..50):
+#   2^{A_j} x_{j+1} = 3^j x_1 + sum_{i=1}^{j} 3^{j-i} 2^{A_{i-1}}.
+starts = list(range(1, 202, 2)) + [27, 447, 639, 703, 871, 6171, 77671,
+                                   2**50 + 1, 3**30 + 2, 10**18 + 1]
+n1 = 0
+for x1 in starts:
+    xs = [x1]
+    a = []
+    for _ in range(50):
+        nxt, e = S(xs[-1]); xs.append(nxt); a.append(e)
+    A = [0]
+    for e in a:
+        A.append(A[-1] + e)
+    for j in range(51):
+        lhs = 2**A[j] * xs[j]
+        rhs = 3**j * x1 + sum(3**(j - i) * 2**A[i - 1] for i in range(1, j + 1))
+        chk(f"T1 telescope x1={x1} j={j}", lhs == rhs)
+        n1 += 1
+print(f"Test 1: {n1} (x1, j) instances of the telescoping identity "
+      f"({len(starts)} starts, j=0..50) -- OK so far.")
+
+# ------------------------------------------------------------------ Test 2
+# All four known cycles of the same formula on the odd integers, every
+# rotation: cycle equation, c odd, c >= m, exact product formula; positivity
+# consequences on the positive cycle, and their FAILURE (2^K < 3^m) on the
+# negative cycles.
+def find_cycle(x0):
+    seen = {}; x = x0; path = []
+    while x not in seen:
+        seen[x] = len(path); path.append(x); x = S(x)[0]
+    return path[seen[x]:]
+
+for x0 in (1, -1, -5, -17):
+    cyc = find_cycle(x0)
+    m = len(cyc)
+    for r in range(m):
+        xs = cyc[r:] + cyc[:r]
+        a, A, K, c = cycle_data(xs)
+        tag = f"x1={xs[0]} m={m} K={K}"
+        chk(f"T2 eq {tag}", xs[0] * (2**K - 3**m) == c)          # L-9905.1
+        chk(f"T2 c-odd {tag}", c % 2 == 1)                       # Rmk 1.3
+        chk(f"T2 c>=m {tag}", c >= m)                            # L-9905.2
+        prod = Fraction(1)
+        for x in xs:
+            prod *= Fraction(3) + Fraction(1, x)
+        chk(f"T2 prod {tag}", prod == 2**K)                      # L-9905.3 id.
+        if all(x > 0 for x in xs):
+            xmin = min(xs)
+            chk(f"T2 2^K>3^m {tag}", 2**K > 3**m)                # L-9905.2
+            chk(f"T2 2^K<=(3+1/xmin)^m {tag}",                   # .3 chain, exact
+                Fraction(2)**K <= (Fraction(3) + Fraction(1, xmin))**m)
+            # log chain, Decimal (only genuinely-strict steps; the possibly
+            # tight middle step was just checked exactly above):
+            lhs = K * LN2 - m * LN3
+            mid = m * (Decimal(3 * xmin + 1) / Decimal(3 * xmin)).ln()
+            chk(f"T2 chain>0 {tag}", lhs > 0)
+            chk(f"T2 mid<=m/3xmin {tag}",
+                mid <= Decimal(m) / (3 * xmin) + EPS)
+            chk(f"T2 L9905.5 {tag}",                             # L-9905.5
+                Decimal(K) / m - LOG2_3
+                <= 1 / (3 * xmin * LN2) + EPS)
+            lo = 3**m - 2**m
+            hi = 2**(K - m) * (3**m - 2**m)
+            anch = 3**(m - 1) + 2**(K - m) * (2 * 3**(m - 1) - 2**m)
+            chk(f"T2 c-bounds {tag}", lo <= c <= min(hi, anch))  # L-9905.4
+            for x in xs:                                         # element bds
+                lhsx = x * (2**K - 3**m)
+                chk(f"T2 elem {tag} x={x}",
+                    lo <= lhsx <= hi and lhsx <= anch)
+        else:
+            chk(f"T2 neg 2^K<3^m {tag}", 2**K < 3**m)            # .2 fails
+    print(f"Test 2: cycle({x0}): elements {tuple(cyc)}, m={m}, "
+          f"a={tuple(S(x)[1] for x in cyc)}, K={sum(S(x)[1] for x in cyc)} "
+      f"-- OK so far.")
+
+# ------------------------------------------------------------------ Test 2b
+# Non-least periods: the file claims L-9905.1/.3 hold verbatim when m is any
+# period (multiple of the least period).  Traverse each cycle t times.
+for x0, ts in ((1, (2, 3, 4)), (-1, (2, 3)), (-5, (2, 3)), (-17, (2,))):
+    cyc = find_cycle(x0)
+    for t in ts:
+        xs0 = cyc * t
+        mm = len(xs0)
+        for r in range(mm):
+            xs = xs0[r:] + xs0[:r]
+            a, A, K, c = cycle_data(xs)
+            tag = f"x0={x0} t={t} r={r}"
+            chk(f"T2b eq {tag}", xs[0] * (2**K - 3**mm) == c)
+            prod = Fraction(1)
+            for x in xs:
+                prod *= Fraction(3) + Fraction(1, x)
+            chk(f"T2b prod {tag}", prod == 2**K)
+            if all(x > 0 for x in xs):
+                chk(f"T2b pos {tag}", 2**K > 3**mm)
+print("Test 2b: non-least-period equation/product checks done -- OK so far.")
+
+# ------------------------------------------------------------------ Test 3
+# L-9905.4 over ALL compositions a_i >= 1 with m <= 6, K <= 15 (bounds are
+# composition-level facts).  Also: A-bounds, anchored <= plain, and the
+# exact iff equality characterizations from Step 4 / the test notes.
+count = 0; n_lo = n_hi = n_anch = 0
+for m in range(1, 7):
+    for a in iproduct(range(1, 16), repeat=m):
+        K = sum(a)
+        if K > 15:
+            continue
+        A = [0]
+        for e in a:
+            A.append(A[-1] + e)
+        c = sum(3**(m - i) * 2**A[i - 1] for i in range(1, m + 1))
+        for i in range(1, m + 1):
+            chk(f"T3 A m={m} a={a} i={i}",
+                i - 1 <= A[i - 1] <= K - (m - i + 1))
+        lo = 3**m - 2**m
+        hi = 2**(K - m) * (3**m - 2**m)
+        anch = 3**(m - 1) + 2**(K - m) * (2 * 3**(m - 1) - 2**m)
+        chk(f"T3 lo m={m} a={a}", lo <= c)
+        chk(f"T3 hi m={m} a={a}", c <= hi)
+        chk(f"T3 anch m={m} a={a}", c <= anch)
+        chk(f"T3 anch<=hi m={m} a={a}", anch <= hi)
+        chk(f"T3 anch<hi iff K>m m={m} a={a}", (anch < hi) == (K > m))
+        # iff characterizations of equality:
+        chk(f"T3 lo-iff m={m} a={a}",
+            (c == lo) == all(e == 1 for e in a[:m - 1]))
+        chk(f"T3 hi-iff m={m} a={a}",
+            (c == hi) == all(e == 1 for e in a))
+        chk(f"T3 anch-iff m={m} a={a}",
+            (c == anch) == (m == 1 or all(e == 1 for e in a[1:])))
+        n_lo += (c == lo); n_hi += (c == hi); n_anch += (c == anch)
+        count += 1
+print(f"Test 3: {count} compositions (m<=6, K<=15); equalities: "
+      f"lower {n_lo}, plain-upper {n_hi}, anchored {n_anch}.")
+
+# ------------------------------------------------------------------ Test 3b
+# Random larger compositions beyond the author's range: m in 7..12, a_i in
+# 1..6 (so K up to 72), 20000 samples, fixed seed.
+rng = random.Random(99053)
+for trial in range(20000):
+    m = rng.randint(7, 12)
+    a = [rng.randint(1, 6) for _ in range(m)]
+    K = sum(a)
+    A = [0]
+    for e in a:
+        A.append(A[-1] + e)
+    c = sum(3**(m - i) * 2**A[i - 1] for i in range(1, m + 1))
+    lo = 3**m - 2**m
+    hi = 2**(K - m) * (3**m - 2**m)
+    anch = 3**(m - 1) + 2**(K - m) * (2 * 3**(m - 1) - 2**m)
+    chk(f"T3b m={m} a={tuple(a)}", lo <= c <= anch <= hi)
+print("Test 3b: 20000 random compositions m in 7..12 -- OK so far.")
+
+# ------------------------------------------------------------------ Test 4
+# L-9905.6: (a) x(2^K - 3) = 1 in positive integers, K <= 40: only (1, 2);
+# (b) odd fixed points of S in [1, 1e6]: only 1; (c) in [-1e6, -1]: only -1
+# (localizes exactly why positivity is needed in Step 6).
+sols = [(1, K) for K in range(1, 41) if 2**K - 3 == 1]
+chk("T4 unique sol", sols == [(1, 2)])
+fix_pos = [x for x in range(1, 10**6, 2) if S(x)[0] == x]
+fix_neg = [x for x in range(-1, -10**6, -2) if S(x)[0] == x]
+chk("T4 pos fixed", fix_pos == [1])
+chk("T4 neg fixed", fix_neg == [-1])
+print(f"Test 4: x(2^K-3)=1 (K<=40): {sols}; fixed pts of S in [1,1e6]: "
+      f"{fix_pos}; in [-1e6,-1]: {fix_neg}.")
+
+# ------------------------------------------------------------------ Test 5
+# ln(1+t) <= t at t = 1/(3x), x = 1..1000, Decimal 60 digits (strict).
+for x in range(1, 1001):
+    t = Decimal(1) / (3 * x)
+    chk(f"T5 x={x}", (Decimal(3 * x + 1) / Decimal(3 * x)).ln() < t)
+print("Test 5: ln(1+t) < t at 1000 sample points -- OK so far.")
+
+print("RESULT:", "ALL CHECKS PASSED" if not failures
+      else f"{len(failures)} FAILURES")
+```
+
+**Output (verbatim, run 2026-07-21, CPython 3, Linux):**
+
+```text
+Test 1: 5661 (x1, j) instances of the telescoping identity (111 starts, j=0..50) -- OK so far.
+Test 2: cycle(1): elements (1,), m=1, a=(2,), K=2 -- OK so far.
+Test 2: cycle(-1): elements (-1,), m=1, a=(1,), K=1 -- OK so far.
+Test 2: cycle(-5): elements (-5, -7), m=2, a=(1, 2), K=3 -- OK so far.
+Test 2: cycle(-17): elements (-17, -25, -37, -55, -41, -61, -91), m=7, a=(1, 1, 1, 2, 1, 1, 4), K=11 -- OK so far.
+Test 2b: non-least-period equation/product checks done -- OK so far.
+Test 3: 9948 compositions (m<=6, K<=15); equalities: lower 75, plain-upper 6, anchored 75.
+Test 3b: 20000 random compositions m in 7..12 -- OK so far.
+Test 4: x(2^K-3)=1 (K<=40): [(1, 2)]; fixed pts of S in [1,1e6]: [1]; in [-1e6,-1]: [-1].
+Test 5: ln(1+t) < t at 1000 sample points -- OK so far.
+RESULT: ALL CHECKS PASSED
+```
+
+Cross-check against the author's Test 3 counts: my range is $K \le 15$ vs the
+author's $K \le 14$; my equality counts 75/6/75 equal the author's 69/6/69 plus
+exactly the six $K = 15$ members of each tight family ($(1,\dots,1,16-m)$ for
+the lower bound, $(16-m,1,\dots,1)$ for the anchored bound, $m = 1..6$; the
+plain-upper family all have $K = m \le 6 < 15$). Consistent. Test 3b extends the
+$c$-bounds beyond the author's range ($m \le 12$, $K \le 72$); the suggested
+refutation attempt at larger $(m, K)$ found nothing, as expected from the
+composition-general proof.
+
+### 3. Fixes applied by the reviewer (documentation only)
+
+1. **Scope header:** previously listed all of .3 as a sign-agnostic identity and
+   all of .4 as positivity-dependent. Corrected: only the product-formula
+   display of .3 is sign-agnostic (its inequality chain uses $x_i > 0$, as Step 3
+   and Remark 1.2 already said), and the $A$-/$c$-bounds of .4 are
+   composition-level (only the corollary uses positivity). The proofs were always
+   correct on this point; only the header summary was coarse.
+2. **Step 5:** replaced the stray phrase "as in the task statement" (a dangling
+   reference to the authoring context, contrary to README §17.3's spirit) with a
+   reference to the Statement of L-9905.5.
+3. Header: Status PROPOSED → PROVED; Reviewing agents and Last updated fields
+   filled in.
+
+### 4. Caveats
+
+- Only one positive $S$-cycle (the trivial one) exists as test data, so the
+  positivity-dependent chain (.3 consequences, .5) is computationally exercised
+  on a single genuine positive cycle plus its non-least-period repetitions; its
+  proof, however, is a complete deduction from the product formula and does not
+  rest on that computation.
+- Useful spare observation (not needed for the verdict): equality in the plain
+  upper bound of .4 requires $K = m$, which L-9905.2 forbids for actual positive
+  cycles ($K > m \log_2 3 > m$); so for genuine cycles the anchored bound is
+  always strictly sharper, as the file notes.
+- The floating-point remark in the author's Remaining uncertainty item 4 is
+  moot for this review: my script checks the possibly-tight step of the log
+  chain in exact rationals and uses 60-digit `Decimal` only where the inequality
+  is strict with large margin.
+- Item 5 of Remaining uncertainty stands: the $C$/$T$-cycle $\leftrightarrow$
+  $S$-cycle correspondence used informally in Motivation remains unproved in
+  this packet and must not be cited from this file.
+
+*Reviewed and upgraded by fable-02-v4, 2026-07-21.*

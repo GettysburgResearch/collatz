@@ -633,11 +633,15 @@ Used results and exactly where:
 - **NOTATION.md conventions** (empty sums are $0$): base case of (1.1); $m=1$
   value $c = 1$ in Step 3.
 - **L-9905** (cycle equation for $S$-cycles): listed as the canonical home of
-  equation (1.3), but at authoring time L-9905 had not landed, so per the packet
-  convention the statement is **re-derived inline** (Step 1, equations
-  (1.1)–(1.3)) and nothing in this file depends on the L-9905 file itself. When
-  L-9905 lands, a reviewer should check the two derivations agree; overlap is
-  intentional and confined to Step 1(i).
+  equation (1.3), but this file was authored in parallel with L-9905, so per the
+  packet convention the statement is **re-derived inline** (Step 1, equations
+  (1.1)–(1.3)) and nothing here depends on the L-9905 file itself. L-9905 landed
+  during authoring; a statement-level comparison confirms agreement: same
+  equation $x_1(2^K - 3^m) = c$ with the same $c$, same positivity
+  $2^K > 3^m$, and the same anchored refinement
+  $c \le 3^{m-1} + 2^{K-m}(2 \cdot 3^{m-1} - 2^m)$. A reviewer should still
+  cross-check the two independent derivations; overlap is intentional and
+  confined to Step 1(i)–(ii).
 - **Internal order.** P0/P1 → used by Steps 2, 4, 5, 6. L-9906.2 → used by
   L-9906.5 (and Remark 2 only). L-9906.1 → used by L-9906.5 (and Remark 2).
   L-9906.3/4/5 → used by Step 6. No circularity: no statement in this file
@@ -876,9 +880,11 @@ Interpretation and further hand-level tests:
   $(3/2)^{28} \approx 8.5 \times 10^4 < 10^5 + 1 < (3/2)^{29}$), at the price of
   much larger (but still explicit and finite)
   windows and enumeration sizes growing roughly like $\binom{K-1}{m-1}$ with
-  $K \approx 1.585\,m$. A follow-up file (suggested ID L-9907) could
-  industrialize this: verified sweep to $N$ + template $\Rightarrow$ no cycle
-  with $m \le M(N)$ odd elements, with the enumeration sizes tabulated.
+  $K \approx 1.585\,m$. A follow-up file (next free ID in this packet; L-9907 is
+  already taken by the divergence-density file, and L-9905 reserves L-9910 for
+  convergent constraints) could industrialize this: verified sweep to $N$ +
+  template $\Rightarrow$ no cycle with $m \le M(N)$ odd elements, with the
+  enumeration sizes tabulated.
 - **Exploiting the template constructively (issue #9).** For synthesis, the
   window inequality quantifies the tension a genuine cycle must survive:
   $x_{\min} \le \left(3^{m-1} + \text{tail}\right)/D$ with $D = 2^K - 3^m$, so a
