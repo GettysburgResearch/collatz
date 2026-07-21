@@ -20,45 +20,107 @@ The repository now supplies abundant finite and symbolic resources:
 - exact synchronous coupling to moving negative phases;
 - countable cycle-padded return towers;
 - renewal-pressure and Kraft conservation laws;
-- an exact phase-survival Doob transform with positive symbolic Collatz drift.
+- a phase-survival Doob transform with positive symbolic drift;
+- an exact finite-interval lift;
+- a critical particle completion whose distinguished spine is ordinary Collatz.
 
 None receives a `K-####` identifier because none selects one finite starting state that survives indefinitely.
 
-## Current preferred candidate format: escape-weighted phase graph plus padding stack
+## Current preferred candidate format: two-layer marked rewrite grammar
 
-A future candidate may consist of:
+A future candidate should consist of one finite interval or particle population together with one distinguished marker.
 
-1. a finite set of negative phase targets
-   \[
-   -v_i;
-   \]
-2. a finite control graph of mismatch/recovery types;
-3. one or more nonnegative cycle-padding counters;
-4. exact return towers
-   \[
-   T^{L_e(t)}(q-v_i)=F_{e,t}(q)-v_j;
-   \]
-5. exact dyadic cylinders describing the admissible values of \(q\);
-6. a deterministic stack or substitution rule mapping every accepted state to another accepted state;
-7. one explicit finite quotient \(q_0>v_i\) initializing the grammar;
-8. a phase-potential or cycle-product certificate showing that every reachable grammar cycle expands;
-9. a pressure audit distinguishing the exceptional accepted language from complete renewal coverage;
-10. an escape-likelihood audit comparing selected edge frequencies with
-    \[
-    \mathbb Q_v(e)=\frac{S_e(v)-1}{2(v-1)}.
-    \]
+### Layer 1 — unmarked population or interval
 
-The positive starting integer is
+The unmarked layer may use:
+
+- a finite interval
+  
+  \[
+  [v,q),
+  \qquad q-v=n;
+  \]
+- an ordered population
+  
+  \[
+  [x]=\{1,\ldots,x\};
+  \]
+- negative-cycle phases and padding counters;
+- collision-code or mixed-radix macro-tiles.
+
+This layer should regenerate and carry a positive growth, pressure, or phase potential.
+
+### Layer 2 — marked ordinary spine
+
+One finite root particle \(j_0\) is marked. Every rewrite must send it through the distinguished child
 
 \[
-n_0=q_0-v_i.
+\chi(j)=
+\begin{cases}
+(0,j/2),&j\text{ even},\\[1mm]
+(1,(3j+1)/2),&j\text{ odd}.
+\end{cases}
 \]
 
-`T-0014` supplies the exact one-step phase/difference dynamics. `L-0013` gives the rounded physical-parity phase maps. `T-0015` supplies cycle-padding towers. `T-0013` supplies graph expansion, `T-0016` supplies fair and growth pressure, and `T-0017` supplies phase escape pressure.
+The marked ranks are therefore exactly
 
-## Three exact path weights
+\[
+j_0,T(j_0),T^2(j_0),\ldots.
+\]
 
-For a physical parity word \(w\), a candidate grammar should record:
+The grammar must prove that this marked lineage is defined forever and unbounded.
+
+This format certifies the ordinary starting integer at the beginning rather than trying to recover it later from an unmarked or adic escape path.
+
+## Equivalent endpoint format
+
+By `L-0014`, a candidate may instead carry finite endpoints
+
+\[
+I_t=[v_t,q_t)
+\]
+
+with exact rewrites
+
+\[
+[v,q)
+\mapsto
+[\lceil v/2\rceil,\lceil q/2\rceil)
+\]
+
+for even length and
+
+\[
+[v,q)
+\mapsto
+[\lfloor3v/2\rfloor,\lceil3q/2\rceil)
+\]
+
+for odd length.
+
+The physical Collatz state is the finite interval length
+
+\[
+n_t=q_t-v_t.
+\]
+
+A negative-cycle gauge may simplify the lower endpoint, but the upper endpoint or marked boundary must remain explicit.
+
+## Equivalent phase graph plus padding stack
+
+A candidate may still use:
+
+1. finite negative phase targets \(-v_i\);
+2. mismatch/recovery types;
+3. cycle-padding counters;
+4. exact return towers;
+5. graph-cycle or phase-potential expansion.
+
+However, every accepted return edge must also specify how the distinguished ordinary marker is transported. Unmarked phase closure is not enough.
+
+## Exact path weights
+
+For a physical parity word \(w\), a candidate grammar may use the following search scores.
 
 ### Fair cylinder mass
 
@@ -82,78 +144,41 @@ For a physical parity word \(w\), a candidate grammar should record:
 2^{-|w|}\frac{S_w(v)-1}{v-1}.
 \]
 
-A complete broad grammar has negative typical Collatz logarithmic drift and fair phase absorption at \(1\). A viable candidate must be incomplete, exceptional, pressure-positive, and arithmetically nonempty in ordinary integers.
+### Ordinary marked-spine mass
 
-## Equivalent negative-return graph format
-
-More generally, a candidate may use a finite-state or regular infinite language of negative return templates
+For root population \([n_0]\), the one marked descendant of the specified root has mass
 
 \[
-T^{L_e}(-u_e)=-v_j
+\mu_{\mathrm{marked}}(L)=\frac1{2^Ln_0}.
 \]
 
-with exact cylinders and maps
-
-\[
-q\equiv v_i-u_e\pmod{2^{L_e}},
-\qquad
-F_e(q)=3^{a_e}\frac{q-v_i+u_e}{2^{L_e}}.
-\]
-
-It must define a deterministic forward-invariant family of ordinary quotient sets, contain one explicit ordinary quotient, and certify unbounded growth.
-
-## Equivalent run-length format
-
-`T-0004` gives another candidate description by one finite initial triple
-
-\[
-(d_0,u_0,C_0)
-\]
-
-and a rigorously closed infinite chain
-
-\[
-d_k+N^{u_k}C_k
-=d_{k+1}+M^{u_{k+1}}C_{k+1}.
-\]
-
-The negative-shadow equation
-
-\[
-Nq=Mq'+a
-\]
-
-is often the simpler first-order representation of the same boundary transport.
+The escape and growth weights rank unmarked populations. Only the marked layer certifies one ordinary finite trajectory.
 
 ## Leading finite testbeds
 
-### O-0008 — complement atlas of the negative eleven-cycle
+### Critical particle completion
 
-The finite control states are the eleven cycle phases. One mismatch followed by synchronized recovery either returns to the eleven-cycle or descends to the negative three-cycle. Complete cycle padding gives countable exact edge towers.
+`T-0018` is now the most direct string-rewrite testbed. Adjacent parent pairs produce one branch-zero and three branch-one children, while a distinguished marker follows the physical Collatz child.
 
-This is the leading phase-plus-counter prototype. The next version should choose tower edges according to the phase escape likelihood rather than fair frequency.
+### O-0008 — negative eleven-cycle padding towers
+
+The unmarked phase-plus-counter structure is rich and exact. The next task is to lift every tower edge to the marked particle layer.
 
 ### O-0007 — stationary negative-136 chart
 
-The fixed-phase chart has
+The chart
 
 \[
 M=2048,
 \qquad N=2187,
-\qquad A=\{0,2,4,5\}.
+\qquad A=\{0,2,4,5\}
 \]
 
-Digit zero is one full circuit of the negative eleven-cycle. This remains the cleanest stationary signed-radix testbed.
+remains the cleanest stationary signed-radix gauge.
 
 ### O-0005 — large finite repair alphabet
 
-The 339-branch chart has rich finite modular geometry but a stationary aspect ratio of only about
-
-\[
-3.26\cdot10^{-9}.
-\]
-
-It may be useful as a rare repair component rather than a stationary grammar.
+The 339-branch chart may be useful as a rare unmarked repair component, but it still needs an ordinary marker transport rule.
 
 ## Non-negotiable candidate checks
 
@@ -161,10 +186,10 @@ A future `K-####` file must prove:
 
 - one finite positive starting integer exists explicitly;
 - every selected word agrees with the unique deterministic Collatz trajectory;
-- the selector and every padding-counter update are defined forever;
-- no inverse-limit or nonordinary 2-adic point is substituted for an integer;
-- positivity holds at every phase boundary;
+- the marker is sent through the distinguished child forever;
+- the population/interval and marker rules remain compatible;
+- no inverse-limit or nonordinary 2-adic point is substituted for the marker;
+- positivity holds at every physical boundary;
 - every reachable grammar cycle has justified net growth, including repair edges;
-- the exceptional language actually contains the stated ordinary start;
-- positive escape or tilted pressure is converted into actual ordinary trajectory growth;
-- the trajectory is unbounded or otherwise avoids the terminal cycle forever.
+- pressure or escape claims are not substituted for marked-rank growth;
+- the marked trajectory is unbounded or otherwise avoids the terminal cycle forever.
