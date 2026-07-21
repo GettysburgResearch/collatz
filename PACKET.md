@@ -25,7 +25,9 @@ Date: 2026-07-21
 ## Active baselines
 
 - `O-0103` / `X-0121` — no nontrivial cycles through \(L=16\)
-- `O-0104` / `X-0122` — heteroclinic CRT gluing measurements
+- `X-0126` — convergent-L sieve through \(L=24\): 0 nontrivial hits
+- `O-0104` / `X-0122` — heteroclinic CRT gluing baselines
+- `O-0105` / `X-0125` — −5 template: all growing excursions destroy \(v_2(n+5)\)
 - Directions claimed: `D-CYCLE-*`, `D-HETEROCLINIC-*`
 
 ## No K-candidate
