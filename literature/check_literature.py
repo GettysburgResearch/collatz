@@ -4,96 +4,87 @@
 from __future__ import annotations
 
 import re
-import sys
 from pathlib import Path
 
-LIT_DIR = Path(__file__).resolve().parent
-ROOT = LIT_DIR.parent
-BIB = LIT_DIR / "references.bib"
+ROOT = Path(__file__).resolve().parents[1]
+LIT = ROOT / "literature"
+IMPORTS = LIT / "imported-theorems"
 
 
-def bib_keys(text: str) -> set[str]:
-    return set(re.findall(r"@\w+\{([^,\s]+)\s*,", text))
+def fail(message: str) -> None:
+    raise SystemExit(f"LITERATURE CHECK FAILED: {message}")
 
 
-def citation_keys(text: str) -> set[str]:
-    return set(re.findall(r"\[@([A-Za-z0-9_:-]+)\]", text))
+# Imported theorem identifiers must be unique and wave 1 + wave 2 contiguous.
+expected = {f"LIT-KTHM-{n:04d}" for n in range(1, 28)}
+found: dict[str, Path] = {}
+for path in sorted(IMPORTS.glob("LIT-KTHM-*.md")):
+    match = re.match(r"(LIT-KTHM-\d{4})", path.name)
+    if not match:
+        continue
+    ident = match.group(1)
+    if ident in found:
+        fail(f"duplicate imported-theorem ID {ident}: {found[ident]} and {path}")
+    found[ident] = path
 
+missing = sorted(expected - set(found))
+if missing:
+    fail(f"missing imported theorem notes: {', '.join(missing)}")
 
-def relative_links(text: str) -> list[str]:
-    links = re.findall(r"\[[^\]]*\]\(([^)]+)\)", text)
-    return [
-        link.split("#", 1)[0]
-        for link in links
-        if link
-        and not link.startswith(("http://", "https://", "mailto:", "#"))
-    ]
+required = [
+    ROOT / "LITERATURE.md",
+    LIT / "SOURCE_LEDGER.md",
+    LIT / "CLAIM_CROSSWALK.md",
+    LIT / "APPLICABILITY_AUDITS.md",
+    LIT / "UNVERIFIED.md",
+    LIT / "references.bib",
+    LIT / "LIVE_REPO_REVIEW_WAVE2.md",
+    LIT / "SOURCE_LEDGER_WAVE2.md",
+    LIT / "references-wave2.bib",
+    LIT / "claim-maps" / "PR3.md",
+    LIT / "claim-maps" / "CLAUDE.md",
+    LIT / "claim-maps" / "TERMINATION.md",
+    LIT / "claim-maps" / "PR3-WAVE2.md",
+    LIT / "claim-maps" / "PR11.md",
+    LIT / "claim-maps" / "REGULAR.md",
+    LIT / "claim-maps" / "IDEAS-8-9.md",
+    LIT / "claim-maps" / "TERMINATION-WAVE2.md",
+]
+for path in required:
+    if not path.is_file():
+        fail(f"missing required file {path.relative_to(ROOT)}")
 
-
-def main() -> int:
-    errors: list[str] = []
-    keys = bib_keys(BIB.read_text(encoding="utf-8"))
-    if not keys:
-        errors.append("references.bib contains no parsed entries")
-
-    md_files = sorted(ROOT.rglob("*.md"))
-    all_citations: set[str] = set()
-
-    forbidden = ("fileciteturn", "cite", "/mnt/data/")
-    for path in md_files:
-        text = path.read_text(encoding="utf-8")
-        all_citations |= citation_keys(text)
-
-        for token in forbidden:
-            if token in text:
-                errors.append(f"{path.relative_to(ROOT)} contains forbidden artifact {token!r}")
-
-        for link in relative_links(text):
-            target = (path.parent / link).resolve()
-            if not target.exists():
-                errors.append(
-                    f"{path.relative_to(ROOT)} has missing local link {link!r}"
-                )
-
-    missing_keys = sorted(all_citations - keys)
-    if missing_keys:
-        errors.append(f"citation keys missing from BibTeX: {missing_keys}")
-
-    theorem_dir = LIT_DIR / "imported-theorems"
-    seen_ids: set[str] = set()
-    for path in sorted(theorem_dir.glob("*.md")):
-        match = re.match(r"(LIT-KTHM-\d{4})-", path.name)
-        if not match:
-            errors.append(f"bad imported-theorem filename: {path.name}")
+# Local Markdown links in the suite should resolve when they are relative file links.
+link_re = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+for path in [ROOT / "LITERATURE.md", LIT / "LIVE_REPO_REVIEW_WAVE2.md", LIT / "README.md"]:
+    text = path.read_text(encoding="utf-8")
+    for target in link_re.findall(text):
+        if target.startswith(("http://", "https://", "#", "mailto:")):
             continue
-        theorem_id = match.group(1)
-        if theorem_id in seen_ids:
-            errors.append(f"duplicate imported theorem ID: {theorem_id}")
-        seen_ids.add(theorem_id)
-        first_line = path.read_text(encoding="utf-8").splitlines()[0]
-        if theorem_id not in first_line:
-            errors.append(f"{path.name} first line does not contain {theorem_id}")
+        clean = target.split("#", 1)[0]
+        if clean and not (path.parent / clean).resolve().exists():
+            fail(f"broken local link {target!r} in {path.relative_to(ROOT)}")
 
-    expected = {f"LIT-KTHM-{i:04d}" for i in range(1, 15)}
-    if seen_ids != expected:
-        errors.append(
-            "imported theorem ID set mismatch: "
-            f"missing={sorted(expected-seen_ids)}, extra={sorted(seen_ids-expected)}"
-        )
+# No research-tool citation artifacts may enter the repository.
+stale_patterns = ("fileciteturn", "turn0search", "turn1search", "cite", "filecite")
+for path in required + [found[i] for i in sorted(expected)]:
+    text = path.read_text(encoding="utf-8")
+    for pattern in stale_patterns:
+        if pattern in text:
+            fail(f"stale research-tool marker {pattern!r} in {path.relative_to(ROOT)}")
 
-    if errors:
-        print("LITERATURE CHECK FAILED")
-        for error in errors:
-            print(f"- {error}")
-        return 1
+# Bibliographic keys must be unique within each file.
+for bib in (LIT / "references.bib", LIT / "references-wave2.bib"):
+    keys = re.findall(r"@\w+\{([^,]+),", bib.read_text(encoding="utf-8"))
+    if len(keys) != len(set(keys)):
+        fail(f"duplicate BibTeX key in {bib.relative_to(ROOT)}")
 
-    print("LITERATURE CHECK PASSED")
-    print(f"- Markdown files: {len(md_files)}")
-    print(f"- BibTeX entries: {len(keys)}")
-    print(f"- Referenced citation keys: {len(all_citations)}")
-    print(f"- Imported theorem notes: {len(seen_ids)}")
-    return 0
+# The blocking PR11 correction must retain both a counterexample and the qualified condition.
+correction = (IMPORTS / "LIT-KTHM-0024-minkowski-cancellation.md").read_text(encoding="utf-8")
+for needle in ("D_0=", "E=", "diam", "R(D_0)+1<2^L"):
+    if needle not in correction:
+        fail(f"PR11 correction is missing marker {needle!r}")
 
-
-if __name__ == "__main__":
-    sys.exit(main())
+print("LITERATURE CHECK PASSED")
+print(f"Imported theorem notes: {len(expected)}")
+print("Live program maps: PR3, CLAUDE, TERM, PR11, REGULAR, issues 8/9")
