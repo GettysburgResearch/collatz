@@ -17,9 +17,10 @@ Equivalent current formats include:
 3. a signed rational-base return chain;
 4. a graph of negative return phases;
 5. a finite phase plus a cycle-padding stack;
-6. a phase-escape subgrammar with one ordinary accepted quotient.
+6. a finite endpoint-interval grammar;
+7. a two-layer particle grammar carrying one distinguished ordinary spine.
 
-Finite experiments, inverse-limit points, large alphabets, complete modular projection, positive symbolic pressure, and phase escape in the Doob measure are insufficient without the ordinary boundary.
+Finite experiments, inverse-limit points, large alphabets, complete modular projection, positive symbolic pressure, and unmarked phase escape are insufficient without the marked ordinary boundary.
 
 ## Q-0002 — Analytic fiber growth
 
@@ -46,14 +47,14 @@ Status: `IDEA`
 
 Construct exact bridges among collision charts and negative phases, including changes of:
 
-- affine gauge;
+- affine or interval gauge;
 - target phase;
 - quotient coordinate;
 - padding counter;
 - run-length cofactor;
-- finite boundary.
+- marked finite boundary.
 
-`T-0017` adds a new obstruction: a finite complete recurrent phase graph collapses to phase \(1\). The successful graph must be incomplete and exceptional or have an unbounded state component.
+A finite complete recurrent phase graph collapses to phase \(1\). The successful graph must be incomplete and exceptional, have an unbounded state component, and preserve the ordinary marker.
 
 ## Q-0005 — Finite versus adic closure
 
@@ -61,7 +62,7 @@ Status: `IDEA`
 
 Give a usable criterion deciding when an aperiodic finitely generated parity or return language contains one ordinary nonnegative integer rather than only a 2-adic point.
 
-The current language may carry positive Collatz pressure and positive phase-escape pressure while still lacking an ordinary member.
+`T-0018` sharpens the target: an ordinary integer is represented by a finite marked root particle and its distinguished lineage. Develop a grammar-level criterion ensuring that this marker is preserved indefinitely.
 
 ## Q-0006 — Independent verification
 
@@ -72,18 +73,22 @@ Independently reconstruct the active branch, now especially:
 - `T-0014` and `L-0013`, including both phase coordinate systems;
 - the padding congruence and towers in `T-0015`;
 - the two Kraft identities and pressure law in `T-0016`;
-- martingale absorption and phase–Kraft identities in `T-0017`;
-- finite complete graph rigidity;
-- the Doob escape probabilities and drift bounds;
-- exact reproduction of `X-0008` and `X-0009`.
+- martingale absorption and the Doob transform in `T-0017`;
+- interval endpoint roundings and gauge statements in `L-0014`;
+- the ordered child partitions and distinguished odd child in `T-0018`;
+- the escape/growth/marked-spine mass distinction in `T-0019`;
+- exact reproduction of `X-0008` through `X-0010`.
 
 ## Q-0007 — Vertical macro-tile closure
 
 Status: `IDEA`
 
-Build a finite collection of exact mixed-radix or negative-return tiles whose outputs remain parseable while the ordinary boundary grows at the correct aperiodic rate.
+Build a finite collection of exact mixed-radix, endpoint, or negative-return tiles whose outputs remain parseable while the ordinary boundary grows at the correct aperiodic rate.
 
-The rounded phase representation suggests using physical parity and a phase-survival weight rather than raw carry states.
+The current preferred form is a two-layer tile:
+
+- an unmarked population or interval rewrite;
+- a marked distinguished boundary particle.
 
 ## Q-0008 — Parameterized S-unit skeleton schemas
 
@@ -95,7 +100,7 @@ Find finitely many positive schemas closed under
 d+N^uC=d'+M^{u'}C'.
 \]
 
-The construction must preserve exact valuation, positivity, phase transitions, and one finite start.
+The construction must preserve exact valuation, positivity, phase transitions, and one finite marked start.
 
 ## Q-0009 — Structured collision codes
 
@@ -112,7 +117,7 @@ Still open:
 
 - growing difference intervals with useful bounds;
 - macroscopic normalized displacement width;
-- scale-independent relays;
+- scale-independent marked relays;
 - direct quotient/cofactor closure.
 
 ## Q-0010 — Growing complete dyadic projection
@@ -138,9 +143,8 @@ Required output:
 - prescribed exact valuation;
 - positive next quotient in a controlled range;
 - compatible phase transition;
-- closure under finitely many schemas.
-
-The phase–Kraft law warns that high-phase or high-growth corrections must occupy a thin cylinder set.
+- closure under finitely many schemas;
+- preservation of the distinguished ordinary marker.
 
 ## Q-0012 — Infinite regular negative-template renewal code
 
@@ -151,9 +155,9 @@ Construct a finitely generated exact return language satisfying:
 1. deterministic cylinder selection;
 2. forward phase closure;
 3. positive growth on every realizable grammar cycle;
-4. one explicit ordinary accepted quotient.
+4. one explicit finite marked ordinary quotient.
 
-A complete broad cover is impossible. The target is a thin exceptional language.
+A complete broad cover is impossible. The target is a thin exceptional language with a certified ordinary spine.
 
 ## Q-0013 — Macroscopic aspect-ratio systems
 
@@ -162,10 +166,10 @@ Status: `IDEA`
 For a chart define
 
 \[
-\Delta=\frac{\operatorname{diam}D}{N-M}.
+\Delta=rac{\operatorname{diam}D}{N-M}.
 \]
 
-Construct a family or graph-directed cycle whose effective normalized displacement windows remain macroscopic while expansion and phase escape remain sufficient.
+Construct a family or graph-directed cycle whose effective normalized displacement windows remain macroscopic while expansion, phase escape, and marked-boundary transport remain sufficient.
 
 ## Q-0014 — Finite phase plus cycle-padding stack closure
 
@@ -177,9 +181,8 @@ Use the negative eleven-cycle towers to build a pushdown rule satisfying:
 2. padding above edge-specific growth thresholds;
 3. avoidance or compensation of descent to phase \(1\);
 4. one finite ordinary initialization;
-5. infinite deterministic block generation.
-
-`T-0017` suggests weighting tower choices by phase escape likelihood, not fair cylinder mass.
+5. infinite deterministic block generation;
+6. explicit transport of the distinguished particle through every padded block.
 
 ## Q-0015 — Pressure-positive ordinary survivor language
 
@@ -199,7 +202,7 @@ For a candidate return graph track:
 \sum_{e:i\to j}2^{-L_e}\lambda_e,
 \]
 
-and the phase escape edge factor
+and the phase escape factor
 
 \[
 \frac{v_j-1}{v_i-1}.
@@ -209,9 +212,10 @@ Construct a subgrammar with:
 
 - small fair mass;
 - positive deterministic cycle growth;
-- positive Collatz tilted pressure;
-- persistent phase escape;
-- one ordinary finite accepted state.
+- positive tilted/escape pressure;
+- one ordinary finite marked lineage.
+
+`T-0019` warns that unmarked pressure can be positive even though the required marked lineage remains exponentially thin.
 
 ## Q-0016 — Multi-mismatch complement automaton
 
@@ -225,11 +229,11 @@ S_0(v)=\lceil v/2\rceil,
 S_1(v)=\lfloor3v/2\rfloor.
 \]
 
-Compress periodic negative-cycle excursions into counters and determine whether a pressure-positive pushdown component closes.
+Compress periodic negative-cycle excursions into counters and determine whether a pressure-positive pushdown component closes while preserving a marked ordinary spine.
 
 ## Q-0017 — Arithmetic approximation to the phase escape transform
 
-Status: `IDEA` / primary new target
+Status: `IDEA`
 
 The exact escape transition probabilities are
 
@@ -239,16 +243,53 @@ The exact escape transition probabilities are
 \frac{S_e(v)-1}{2(v-1)}.
 \]
 
-They give physical odd probability at least \(3/4\) and uniformly positive phase and Collatz log drift.
+They give positive unmarked phase and Collatz log drift. Construct an exact return grammar approximating this transform.
 
-Construct an exact return grammar that approximates this transform while retaining one ordinary finite boundary.
+The session `T-0018`--`T-0019` adds a non-negotiable qualification:
+
+> the escape transform governs branch populations, not the single marked ordinary descendant.
 
 Concrete tasks:
 
 1. define a finite or pushdown phase partition;
-2. choose exact negative-template words whose empirical branch frequencies approximate \(\mathbb Q\);
+2. choose exact negative-template words approximating \(\mathbb Q\);
 3. certify graph-cycle growth;
-4. prove the accepted cylinders are forward invariant;
-5. exhibit one explicit ordinary quotient in the accepted language.
+4. prove forward invariance of accepted populations;
+5. add a deterministic distinguished-child rule;
+6. exhibit one explicit finite marked quotient.
 
-This problem is the current bridge between the symbolic escape measure and an actual counterexample certificate.
+## Q-0018 — Marked ordinary-spine rewrite grammar
+
+Status: `IDEA` / primary new target  
+Dependencies: `L-0014`, `T-0018`, `T-0019`
+
+Construct a finite-state, substitutional, or pushdown two-layer grammar.
+
+### Population layer
+
+A finite interval or ordered population is rewritten using exact local rules. This layer should regenerate, grow, or admit a positive phase/pressure potential.
+
+### Marker layer
+
+One finite root particle is marked. At each rewrite it must be sent through
+
+\[
+\chi(j)=
+\begin{cases}
+(0,j/2),&j\text{ even},\\[1mm]
+(1,(3j+1)/2),&j\text{ odd}.
+\end{cases}
+\]
+
+The grammar must prove that the marked ranks remain defined forever and are unbounded.
+
+Desired certificate:
+
+1. one explicit finite initial interval and marker;
+2. a finite family of parameterized rewrite schemas;
+3. exact regeneration of the unmarked population;
+4. deterministic preservation of the marker;
+5. a monotone marked-rank or graph potential;
+6. no appeal to a left-infinite or inverse-limit boundary.
+
+A solution of this problem would be a direct string-rewrite Collatz counterexample certificate.
