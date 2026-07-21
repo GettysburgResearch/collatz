@@ -173,3 +173,73 @@ object from compatible addresses.
 **Consequence:** an attractor may contain no ordinary positive integer and does
 not replace exact dyadic selection, a finite marker, or deterministic Collatz
 replay.
+
+## N-0021 — Finite connector existence is universal and therefore weak evidence
+
+`L-0017` proves that every phase-aligned finite sequence of padded tower edges
+has a nonempty ordinary dyadic cylinder of exact realizations. Pairwise connector
+search cannot fail: odd powers of three are invertible modulo every power of two.
+
+**Consequence:** arbitrarily deep finite schedules do not distinguish a genuine
+infinite ordinary stack from a compatible 2-adic address.
+
+## N-0022 — Fixed periodic counter control cannot supply growing connector prefixes
+
+`L-0018` uses
+
+\[
+\operatorname{ord}_{2^K}(3^a)=2^{K-2}
+\]
+
+for odd \(a\). The period of the required inverse-power prefix grows with the
+requested binary precision.
+
+**Consequence:** a fixed periodic residue table in the padding counter cannot
+control the tower at all heights.
+
+## N-0023 — A bounded high-tail library with affine counter updates cannot diverge
+
+`T-0021` shows that finitely many fixed ordinary high tails together with
+finitely many affine rules \(t'=ct+d\) can satisfy the exact connector equations
+at only finitely many heights. After freezing periodic finite cores, an infinite
+family would give a nondegenerate power-sum equation, contradicting the imported
+Skolem–Mahler–Lech corollary.
+
+**Consequence:** the high tail itself must be an unbounded data stack; the unary
+padding counter alone is not enough.
+
+## N-0024 — The 128-step lane is a one-connector precursor, not residual closure
+
+The immediate connector tail has slope \(3^{G_n}/2^{K_{n+1}}\), but the residual
+available after parsing the following connector is
+
+\[
+z_{n+1}=
+\frac{3^{G_n}z_n+\theta_n-\eta_{n+1}}{2^{K_{n+2}}}.
+\]
+
+The true residual slope is therefore \(3^{G_n}/2^{K_{n+2}}\). The 128-step
+schedule eventually loses residual capacity after this second cylinder cost;
+`T-0023` and `L-0024` replace it with the corrected 256-step stage.
+
+**Consequence:** budget calculations must pay every future cylinder consumed by
+the claimed regenerated state, not only the next visible connector.
+
+## N-0025 — Positive stage surplus is not yet an arithmetic routing theorem
+
+`T-0024` proves that a corrected 256-transition stage has more than \(3\cdot2^m\)
+residual bits of rigorous surplus after paying the complete next-stage precision
+increase. `L-0023` also gives the exact quadratic bulk update
+
+\[
+u_{m+1}=u_m+2^{m+1}u_m^2.
+\]
+
+But a positive bit budget does not force the residual to have the exact next
+binary prefix. Nested Hensel prefixes naturally define a 2-adic limit unless the
+new bits are generated forward from one finite ordinary stack.
+
+**Consequence:** the remaining theorem is exact routing, not more growth:
+construct a finite stage substitution that converts surplus into the required
+frontier, quadratic-bulk, and residual-cylinder bits while transporting the
+ordinary marker.
