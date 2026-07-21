@@ -48,34 +48,36 @@ All mathematical claims on the active research branch await independent review.
 | T-0016 | Theorem | Collatz–Kraft martingale and renewal-code pressure | PROPOSED | `claims/theorems/T-0016-collatz-kraft-martingale.md` | D-0001, T-0009, T-0013 |
 | O-0008 | Observation | Complement-basin atlas and padded towers of the negative eleven-cycle | PROPOSED | `claims/observations/O-0008-negative-cycle-complement-atlas.md` | T-0014, T-0015, O-0007, X-0008 |
 | X-0008 | Experiment | Negative-cycle coupling, padded returns, and Kraft checks | EMPIRICAL | `experiments/X-0008-cycle-coupling-kraft/` | T-0014--T-0016, O-0008 |
-| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0016 |
+| L-0013 | Lemma | Physical parity drives the rounded phase pair | PROPOSED | `claims/lemmas/L-0013-rounded-physical-phase.md` | D-0001, T-0014 |
+| T-0017 | Theorem | Phase–Kraft martingale, complete-graph rigidity, and escape transform | PROPOSED | `claims/theorems/T-0017-phase-kraft-escape-transform.md` | L-0013, T-0013, T-0016 |
+| X-0009 | Experiment | Rounded phase, phase–Kraft, and escape-transform checks | EMPIRICAL | `experiments/X-0009-phase-kraft-escape/` | L-0013, T-0017 |
+| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0017 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0015 |
-| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0017 |
+| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016, T-0017 |
 | Q-0006 | Open question | Independent verification | IDEA | `OPEN_PROBLEMS.md` | all above |
 | Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009 |
 | Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0008 |
 | Q-0009 | Open question | Structured collision codes and closure-quality geometry | PARTIAL | `OPEN_PROBLEMS.md` | L-0006, T-0005--T-0007 |
 | Q-0010 | Resolved question | Growing complete dyadic projection | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | L-0009, L-0010, T-0007 |
 | Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007, T-0010 |
-| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0016 |
+| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0017 |
 | Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006, O-0007 |
-| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008 |
-| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016 |
-| Q-0016 | Open question | Multi-mismatch complement automaton | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008 |
+| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, T-0017 |
+| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016, T-0017 |
+| Q-0016 | Open question | Multi-mismatch complement automaton | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, L-0013 |
+| Q-0017 | Open question | Arithmetic approximation to the phase escape transform | IDEA | `OPEN_PROBLEMS.md` | L-0013, T-0017 |
 
 ## Relationship among the latest results
 
-- `T-0008` identifies every positive collision chart with a negative coalescence family and replaces the lifted digit map by the intrinsic signed equation `Nq = Mq' + a`.
-- `L-0012` proves that an inverse signature is exactly the negative return target modulo the output radix; collision-code algebra and negative-preimage languages are one object.
-- `T-0009` turns variable negative returns into a direct counterexample certificate, while proving that a finite one-target complete all-supercritical code is impossible.
-- `T-0010` shows that every stationary return chain is a controlled real rounding orbit trapped in a circle arc of length `diameter(D)/(N-M)`.
-- `T-0013` permits compensated locally contracting edges when every reachable directed grammar cycle has positive multiplier.
-- `T-0014` resolves the negative-shadow mechanism one shortcut step at a time: even difference means synchronized shadowing, odd difference means a complementary phase mismatch.
-- `T-0015` proves that one negative cycle turns each finite mismatch type into a countable geometric tower indexed by a cycle-padding counter.
-- `T-0016` identifies the exact conservation law of complete renewal languages: fair Kraft mass and `3/4`-tilted mass both equal one, while the typical logarithmic multiplier is negative.
-- `O-0008` exhibits the finite complement-basin control graph of the negative eleven-cycle and its exact padded transfer families.
+- `T-0014` gives the exact quotient/phase coupling.
+- `L-0013` removes its XOR in physical parity: the phase follows `ceil(v/2)` or `floor(3v/2)`.
+- `T-0015` turns negative-cycle synchronization into countable padding towers.
+- `T-0016` identifies the Collatz multiplier as the fair-to-`3/4` likelihood ratio and proves negative typical drift for complete renewal codes.
+- `T-0017` proves the fair phase is absorbed at `1`, gives the exact phase–Kraft identity, rules out nontrivial recurrent finite complete phase graphs, and constructs the positive-drift phase-survival Doob transform.
+- The Collatz growth tilt and phase escape tilt are two exact likelihood ratios on the same physical parity language.
+- The remaining task is to realize an escape-transform-like exceptional grammar with one ordinary finite accepted quotient.
 
 ## Status note
 
