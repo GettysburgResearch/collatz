@@ -3,7 +3,7 @@
 Experiment ID: `X-0012`  
 Issue: `#2`  
 Agent: `gpt56-pro-01`  
-Status: `EMPIRICAL` verification of proposed exact claims `L-0016`--`L-0024`, `T-0022`--`T-0023`, `O-0009`, and the finite algebra used by `T-0021`
+Status: `EMPIRICAL` verification of proposed exact claims `L-0016`--`L-0025`, `T-0022`--`T-0024`, `O-0009`, and the finite algebra used by `T-0021`
 
 ## Research questions
 
@@ -14,7 +14,8 @@ Status: `EMPIRICAL` verification of proposed exact claims `L-0016`--`L-0024`, `T
 5. Can exact order-sized nonlinear counter jumps preserve a normalized connector prefix by Hensel lifting?
 6. Can the negative cycle pay for both the current connector and the next residual-stack cylinder?
 7. What exact finite-control structure appears at one dyadic scale?
-8. Does fixing the high tail leave only finitely many affine-geometric counter rays?
+8. Does one full corrected scale stage generate more residual information than the next connector precision consumes?
+9. Does fixing the high tail leave only finitely many affine-geometric counter rays?
 
 ## Programs
 
@@ -87,7 +88,16 @@ The stage audit verifies:
   \]
 - positive exact residual slope for the `C=8` schedule;
 - asymptotic residual contraction of the earlier `C=7` schedule;
-- the exact 256-step, eight-bit odometer stage from `L-0024`.
+- the exact 256-step, eight-bit odometer stage from `L-0024`;
+- the exact full-stage source and denominator sums;
+- the rigorous information-surplus bound from `T-0024`;
+- the integer-power margin certificates
+  
+  \[
+  3^{53}>2^{84},
+  \qquad
+  3^{41}<2^{65}.
+  \]
 
 ## Regression anchors
 
@@ -131,8 +141,8 @@ The combined checked-in output is `results/summary.txt`.
 
 ```text
 29d9fab85678830eb9496f718a7ada2faa61e35c87dbd26c23d2689e0b320385  run.py
-9dcb670b2da24e4cfa1eb27c86c263e65e04b66003708b20f732928e24fabe93  stage.py
-15b4cc2aca8582f37013f58edeb31c528b1d8324d07572af4a25d9cd636a5e0d  results/summary.txt
+d42a28e4744c718d583fbef56802b1310d21025386867487d7f6bab729095ce2  stage.py
+8591c5eeaedbc6ebda5a7fda0df49ee36218caac86498c79dd3fd2fbd6cc6936  results/summary.txt
 ```
 
 ## Interpretation
@@ -149,7 +159,7 @@ At stage boundaries the connector stack splits into three tracks:
 2. an eight-bit odometer/carry controller;
 3. one odd moving bulk word satisfying a quadratic Hensel recurrence.
 
-This is the cleanest current candidate architecture for a genuinely nonregular marked stack grammar.
+The full-stage calculation then proves a rigorous residual bit-length surplus after paying the next-stage connector-precision demand. The remaining obstruction is exact low-bit routing and one ordinary marked initialization, not an asymptotic shortage of growth or information.
 
 ## Limitations
 
@@ -158,4 +168,5 @@ This is the cleanest current candidate architecture for a genuinely nonregular m
 - Nested Hensel prefixes naturally define a 2-adic limit and are not an ordinary-marker certificate.
 - Positive residual slope applies only after exact integrality of the next residual transition.
 - Same-precision quadratic updates do not manufacture missing higher bits.
+- Bit-length surplus does not imply the correct low bits.
 - No forward self-regenerating stack language or positive-integer counterexample is constructed.
