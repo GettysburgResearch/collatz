@@ -100,3 +100,59 @@ sum-product/Fourier-decay-of-self-similar-measures configuration
 (Bourgain-style; Li–Sahlsten, Solomyak): the sharpest available tools,
 and the exact point where this program hands off to modern harmonic
 analysis.
+
+## Progress: Theorems 9 and 10 (`experiments/eq_progress.py`)
+
+**Correction to Theorem 8's threshold.** The exact ladder
+`s_t = 81·s_{t+1}` between consecutive degenerate levels is forced when
+`64δ₁ + 81δ₂ < 1` (symmetric case: `δ < 1/145`), not `δ < 64/145` as
+first stated; at looser δ the ladder holds only sometimes (observed).
+All downstream statements below use the corrected deep-degeneracy
+threshold `δ = 1/146`.
+
+**Theorem 9 (self-similarity; sharp global maximum — proved).**
+(a) `S_K(64^j θ′) = 2^j·S_{K−j}(θ′)` exactly (top j factors are 1).
+(b) `max_{θ≠0} |S_K(θ)|/2^K = cos(π/64)`, attained at `θ = 64^{K−1}u`:
+after factoring out 64^j by (a), the top level of the reduced problem
+has nonzero phase with denominator 64, giving a factor ≤ cos(π/64);
+θ = 64^{K−1} attains it. (Exhaustively confirmed at K = 2, 3.)
+
+**Theorem 10 (exact-run rigidity — proved; 0 violations over the full
+survivor range at K = 16).** Let `0 < |θ| ≤ 2^K` and let a
+deep-degenerate run occupy levels `t₀..t₀+L−1` in the interior zone
+(`64^{K−t₀} > 2·17·2^K`, i.e. t₀+L below ≈ 5K/6). The cascade ladder
+gives `s_{t₀+i} = 81^{L−1−i}σ`. If the ladder is sub-modulus
+(`|81^{t₀+L}σ| < 64^{K−t₀}/2`), then the defining congruence holds with
+both sides below half the modulus and is therefore an **integer
+equation**: `17θ = ±81^{t₀+L}σ`. Since 17 ∤ 81^j, this forces `17 | σ`
+and
+
+    t₀ + L ≤ log₈₁(17|θ|) ≤ log₈₁(17·2^K) ≈ 0.158·K.
+
+*Every clean (sub-modulus) adversarial structure in the survivor range
+is confined to the first ~0.158K levels.* Scan of all θ ≤ 2^16: 0
+violations of the equation, 0 violations of confinement.
+
+**The remaining branch, measured.** What Theorem 10 does not cover are
+deep runs with huge ladder values (σ comparable to the modulus). Census
+at δ = 1/146 over all θ ≤ 2^16: interior deep runs of length ≥ 2:
+128 huge of length 2, 9 exact of length 2, 1 huge of length 3 — total
+138 against the pure-chance expectation ≈ 160, with maximum length 3
+against a cascade-permitted maximum an order larger. **The huge branch
+is populated at exactly the generic Poisson rate with no adversarial
+excess.** The worst survivor-range frequencies (|S|/2^K ≈ 0.30 at
+K = 16) owe their size to many independent single-level near-misses —
+extreme-value statistics over 2^K draws — not to any coherent
+structure.
+
+**Status of EQ after the attack.** Proved: product formula (T7),
+corrected cascade (T8), sharp global maximum and self-similarity (T9),
+exact-run rigidity and 0.158K-confinement of all sub-modulus
+adversaries (T10), finiteness of analytic coincidences (T6/SML), and
+decay of the Erdős–Turán sum in the survivor range (numerics,
+0.367 → 0.0063). Open: excluding *chance-level* clustering in the huge
+branch — a statement of pure extreme-value/equidistribution type with,
+by T10, no arithmetic structure left to exploit. EQ is thus reduced to
+a structureless large-deviation estimate: the adversary provably cannot
+be arithmetic; it can only be lucky, and the census shows luck runs at
+exactly its fair rate.
