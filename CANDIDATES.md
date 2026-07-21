@@ -2,23 +2,57 @@
 
 Last updated: 2026-07-21
 
-There is currently **no candidate positive integer** and no finite symbolic construction that has been shown to define an infinite positive-integer Collatz trajectory.
+There is currently **no candidate positive integer** and no finite symbolic construction proved to define an infinite positive-integer Collatz trajectory.
 
 ## Candidate-adjacent mechanisms
 
-The induced maps in `O-0001` through `O-0005` are counterexample mechanisms only in the following conditional sense:
+The collision charts `O-0001` through `O-0007` are conditional counterexample mechanisms. An infinite admissible orbit beginning from one ordinary finite state would lift to a positive Collatz counterexample, but no such orbit has been established.
 
-> An infinite admissible orbit beginning from one finite integer in the specified lifting congruence class would lift to a positive Collatz counterexample by `T-0002`.
+The repository has proved or proposed abundant finite resources:
 
-No such infinite orbit has been proved.
-
-`L-0004` gives finite-horizon stack amplifiers for every nontrivial chart. `T-0005` gives exponentially unbounded supercritical fiber cardinality. `T-0006` now gives arbitrarily large supercritical extensions of any finite collision alphabet while preserving all of its already witnessed local geometry.
+- universal finite-horizon stack amplification;
+- exponentially unbounded supercritical branch count;
+- arbitrary finite 3-adic precision;
+- preservation of any fixed finite alphabet geometry;
+- complete projection modulo \(2^b\) for every \(b\);
+- exact negative-template return interpretations;
+- a graph-directed expansion criterion allowing compensated local contraction.
 
 None receives a `K-####` identifier because none selects one finite starting state that survives indefinitely.
 
-`O-0005` remains the richest explicit base chart: 339 induced digits, full projection modulo 16, a seven-term consecutive run, and a centered interval inside its difference set. By `T-0006`, these resources can be preserved inside arbitrarily large finite charts. They remain construction resources, not evidence that a particular starting state is a counterexample.
+## Current preferred candidate format: negative-template renewal graph
 
-`T-0004` gives a sharper candidate format. A future candidate may be specified by one finite initial triple
+A future candidate may consist of:
+
+1. a finite set of negative phase targets
+   \[
+   -v_i;
+   \]
+2. a finite-state or regular infinite language of negative return templates
+   \[
+   T^{L_e}(-u_e)=-v_j;
+   \]
+3. exact edge cylinders and quotient maps
+   \[
+   q\equiv v_i-u_e\pmod{2^{L_e}},
+   \qquad
+   F_e(q)=3^{a_e}\frac{q-v_i+u_e}{2^{L_e}};
+   \]
+4. a deterministic forward-invariant family of ordinary quotient sets \(S_i\);
+5. one explicit finite quotient \(q_0\in S_i\) with \(q_0>v_i\);
+6. either strict growth on every selected edge, or a `T-0013` phase-potential certificate proving positive multiplier on every reachable grammar cycle.
+
+The corresponding positive starting integer is
+
+\[
+n_0=q_0-v_i.
+\]
+
+This format automatically supplies exact deterministic Collatz blocks. The missing proof obligations are ordinary-integer existence, infinite cylinder closure, positivity, and graph-cycle expansion.
+
+## Equivalent run-length format
+
+`T-0004` gives an equivalent candidate description by one finite initial triple
 
 \[
 (d_0,u_0,C_0)
@@ -31,6 +65,46 @@ d_k+N^{u_k}C_k
 =d_{k+1}+M^{u_{k+1}}C_{k+1}.
 \]
 
-Such a chain must additionally satisfy the lifting congruence of its active collision chart and must be proved to remain in ordinary positive integers.
+The negative-shadow equation
 
-A future candidate file must satisfy every requirement in the project README, especially existence, integrality, positivity, infinite consistency, and exact translation to deterministic Collatz dynamics.
+\[
+Nq=Mq'+a
+\]
+
+is often the simpler first-order representation of the same boundary transport.
+
+## Leading finite testbeds
+
+### O-0007 — negative 11-cycle phase chart
+
+The chart centered at \(-136\) has
+
+\[
+M=2048,
+\qquad N=2187,
+\qquad A=\{0,2,4,5\},
+\]
+
+with digit zero equal to one full circuit of a supercritical negative 11-cycle. It is the cleanest small graph-directed testbed.
+
+### O-0005 — large finite side alphabet
+
+The 339-branch chart retains extensive finite modular and difference geometry, but its stationary normalized aspect ratio is only about
+
+\[
+3.26\cdot10^{-9}.
+\]
+
+It may be more useful as a rare repair component in a multi-chart grammar than as a stationary chart.
+
+## Non-negotiable candidate checks
+
+A future `K-####` file must prove:
+
+- one finite positive starting integer exists explicitly;
+- every selected word agrees with the unique deterministic Collatz trajectory;
+- the selector is defined forever on the stated invariant set;
+- no inverse-limit or nonordinary 2-adic point is silently substituted for an integer;
+- positivity holds at every phase boundary;
+- every reachable grammar cycle has justified net growth, including repair edges;
+- the trajectory is unbounded or otherwise avoids the terminal cycle forever.
