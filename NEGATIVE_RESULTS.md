@@ -173,3 +173,33 @@ For the negative eleven-cycle, some base transfers require padding levels \(21\)
 `O-0008` follows a complementary mismatch only when the next difference is divisible by the full synchronized recovery power. If that congruence fails, another mismatch occurs before the selected target phase is reached.
 
 **Consequence:** the finite complement-basin table is a skeleton, not a complete selector. Closure requires a multi-mismatch automaton or a proof that accepted states always satisfy every recovery congruence.
+
+## N-0017 — A finite complete recurrent phase graph collapses to phase 1
+
+`T-0017` proves that the rounded phase
+
+\[
+S_0(v)=\lceil v/2\rceil,
+\qquad
+S_1(v)=\lfloor3v/2\rfloor
+\]
+
+is a fair nonnegative martingale and is absorbed at \(1\) almost surely.
+
+For every finite complete physical-parity prefix code,
+
+\[
+\sum_w2^{-|w|}(S_w(v)-1)=v-1.
+\]
+
+A finite complete graph of exact phase-return words therefore has no recurrent communicating class at phase magnitude greater than one.
+
+**Consequence:** adding finitely many negative targets does not rescue a complete broad grammar. Nontrivial recurrence must be incomplete and exceptional, infinite-state, or equipped with an unbounded counter.
+
+## N-0018 — Positive escape pressure is still not an ordinary boundary
+
+The Doob transform of `T-0017` conditions the phase away from absorption and gives physical odd probability at least \(3/4\), uniformly positive phase drift, and uniformly positive formal Collatz multiplier drift.
+
+Its paths are symbolic parity paths and naturally define 2-adic states.
+
+**Consequence:** positive escape and growth pressure do not by themselves produce an ordinary integer. The finite-versus-adic boundary problem remains logically separate and must be certified explicitly.
