@@ -100,3 +100,57 @@ constraint provably thins, and determine whether the ~3-bit cost floor
 is a theorem (Collatz survives, quantitatively) or an artifact of small
 L (the hunt continues at L = 65 with 0.05 bits/step). Either resolution
 of the cost-floor question is a fundamental result about the problem.
+
+## 7. Resolution of the cost-floor question (Pushes 1–3 executed)
+
+**Cost-floor theorem (proved).** `D_L` contains only supercritical
+residues, so `|D_L| ≤ Σ_{3^a>2^L} C(L,a) ≤ poly(L)·2^{H(δ_L)L}` with
+`δ_L = a_min/L → log₃2`. Hence
+
+    cost(L) = (1−γ_L)·L ≥ (1 − H(δ_L))·L − O(log L),
+    per-step cost ≥ 1 − H(log₃2) = 0.05004 bits/step asymptotically,
+    γ_L ≤ H(log₃2) = 0.94996 + o(1)  <  1.
+
+**The γ → 1 hope is dead by entropy alone**: the atlas hierarchy can
+never become cost-free, and the ceiling is exactly the binary entropy
+of the critical density.
+
+**Achievability (measured).** The collision fraction
+`|D_L| / Σ C(L, supercritical)` is Θ(1) and slowly rising: 0.36 (L=6)
+→ 0.55 (L=11) → 0.62 (L=19) → 0.64 (L=28). The fraction model
+`cost(L) = L − log₂(f_L·ΣC)` reproduces every measured cost (e.g.
+L = 28: predicted 4.08, measured 4.08 exactly; sampled |D_28| ≈
+15.82M over 1/8 of value-classes). The naive uniform-birthday model is
+wrong by ~5 bits of intercept (values of T^L concentrate); its slope
+happened to match at small L, which briefly suggested a 0.100 slope —
+corrected here.
+
+**Capacity interpretation (the unification).** The count of
+supercritical windows is the classical large-deviation quantity
+`2^{H(log₃2)L}`; the theorem says the best symbolic subsystem's fuel
+cost is bounded below by **the large-deviation rate of supercriticality
+itself**, and the measured Θ(1) collision fraction says the atlas
+achieves it up to constants. *No symbolic structure beats the entropy
+bound; the collision mechanism recovers everything else.* This is the
+structural twin of Theorem 5 (no free statistics) and the free-fuel
+nulls (no free dynamics): no free entropy either.
+
+**Survivor law at the new levels (Push 2, `survivors_atlas.py`,
+`survivors_atlas_mixed.py`).** Best-first minimal-survivor search:
+at L = 6 the atlas search independently reproduces the known record
+integers (444, 828854, 5545014; ratio → 8.000 = law). At L = 11
+(never previously searched; mixed strata 3⁷/3⁸/3⁹, law base
+2048/308 = 6.65): depth-4 champion n = **54 = 2·27** — the classical
+27 excursion rediscovered as the atlas extremal — and the law holds
+through depth 9 (min 12,428,088 ≈ 6.14/block, within extreme-value
+fluctuation of 6.65). No bending anywhere.
+
+**Consequence for the original goal.** Combining: (i) cost per step is
+provably ≥ 0.05 bits at every atlas level; (ii) survivors obey the
+equidistribution law at every level searched; (iii) all statistical,
+analytic, and schema routes are closed by T1–T12. The hunt's honest
+status: divergence would require an integer that pays an entropy toll
+of ≥ 0.05·(steps) bits forever with a one-time budget of log₂(n) bits —
+the framework now states Collatz's defense as a single quantitative
+principle, *the entropy toll*, uniform across every formulation
+discovered in this program.
