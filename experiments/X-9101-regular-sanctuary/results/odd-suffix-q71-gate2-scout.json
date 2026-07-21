@@ -1,0 +1,471 @@
+{
+  "batch_history": [
+    {
+      "gate": 2,
+      "longest_full_witness_length": 73,
+      "model_number_cumulative": 1,
+      "model_number_this_run": 1,
+      "new_implications": 2,
+      "product_states": 805,
+      "relation_edges": 11,
+      "shortest_full_witness_length": 72,
+      "violating_endpoint_pairs": 2
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 72,
+      "model_number_cumulative": 2,
+      "model_number_this_run": 2,
+      "new_implications": 1,
+      "product_states": 716,
+      "relation_edges": 16,
+      "shortest_full_witness_length": 72,
+      "violating_endpoint_pairs": 1
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 72,
+      "model_number_cumulative": 3,
+      "model_number_this_run": 3,
+      "new_implications": 1,
+      "product_states": 718,
+      "relation_edges": 19,
+      "shortest_full_witness_length": 72,
+      "violating_endpoint_pairs": 1
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 114,
+      "model_number_cumulative": 4,
+      "model_number_this_run": 4,
+      "new_implications": 5,
+      "product_states": 2164,
+      "relation_edges": 94,
+      "shortest_full_witness_length": 72,
+      "violating_endpoint_pairs": 5
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 75,
+      "model_number_cumulative": 5,
+      "model_number_this_run": 5,
+      "new_implications": 2,
+      "product_states": 2108,
+      "relation_edges": 407,
+      "shortest_full_witness_length": 72,
+      "violating_endpoint_pairs": 2
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 73,
+      "model_number_cumulative": 6,
+      "model_number_this_run": 6,
+      "new_implications": 2,
+      "product_states": 1716,
+      "relation_edges": 348,
+      "shortest_full_witness_length": 72,
+      "violating_endpoint_pairs": 2
+    }
+  ],
+  "batches_before_run": 0,
+  "batches_cumulative": 6,
+  "batches_this_run": 6,
+  "bounded_or_incomplete": true,
+  "candidate_requires_odd_and_lift_verification": true,
+  "config": {
+    "gate": 2,
+    "max_models": 100,
+    "odd_offset": 1,
+    "solver_seed": 0,
+    "state_count": 71,
+    "time_limit_seconds": 10.0
+  },
+  "corresponding_shortcut_lift_gate": 3,
+  "covers_shortcut_gate_zero": false,
+  "disclaimer": "This is an incomplete bounded run in one declared odd-suffix spine/gate partition. It is not UNSAT, not a convergence result, and says nothing about other gates, larger suffix DFAs, or template-external languages.",
+  "elapsed_seconds": 10.016,
+  "elapsed_seconds_cumulative": 10.016,
+  "elapsed_seconds_this_run": 10.016,
+  "independently_checkable_unsat_proof_emitted": false,
+  "last_odd_verification": {
+    "accepted_witness_lsd": "110110010101010000000101001000100001100100100110110010100110001100011001",
+    "closure_input_lsd": "110110010101010000000101001000100001100100100110110010100110001100011001",
+    "closure_output_lsd": "100101111111110000001111011001100010011101101000101111101001010010100111",
+    "product_states": 1716,
+    "reason": "language is not forward invariant",
+    "relation_edges": 348,
+    "valid": false
+  },
+  "last_suffix_candidate": {
+    "accepting": [
+      2
+    ],
+    "alphabet": [
+      0,
+      1
+    ],
+    "bit_order": "lsd_first",
+    "start": 0,
+    "transitions": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        14,
+        4
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        16,
+        0
+      ],
+      [
+        17,
+        3
+      ],
+      [
+        18,
+        6
+      ],
+      [
+        19,
+        3
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        12,
+        21
+      ],
+      [
+        22,
+        4
+      ],
+      [
+        6,
+        23
+      ],
+      [
+        24,
+        5
+      ],
+      [
+        25,
+        8
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        27,
+        3
+      ],
+      [
+        28,
+        7
+      ],
+      [
+        29,
+        3
+      ],
+      [
+        0,
+        30
+      ],
+      [
+        31,
+        18
+      ],
+      [
+        32,
+        11
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        34,
+        9
+      ],
+      [
+        5,
+        35
+      ],
+      [
+        9,
+        36
+      ],
+      [
+        37,
+        19
+      ],
+      [
+        38,
+        34
+      ],
+      [
+        3,
+        39
+      ],
+      [
+        40,
+        8
+      ],
+      [
+        41,
+        40
+      ],
+      [
+        0,
+        42
+      ],
+      [
+        43,
+        20
+      ],
+      [
+        44,
+        40
+      ],
+      [
+        35,
+        45
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        47,
+        19
+      ],
+      [
+        0,
+        48
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        50,
+        4
+      ],
+      [
+        51,
+        16
+      ],
+      [
+        0,
+        52
+      ],
+      [
+        53,
+        0
+      ],
+      [
+        1,
+        54
+      ],
+      [
+        55,
+        0
+      ],
+      [
+        56,
+        12
+      ],
+      [
+        0,
+        57
+      ],
+      [
+        3,
+        58
+      ],
+      [
+        59,
+        0
+      ],
+      [
+        60,
+        20
+      ],
+      [
+        61,
+        0
+      ],
+      [
+        1,
+        62
+      ],
+      [
+        42,
+        63
+      ],
+      [
+        64,
+        0
+      ],
+      [
+        65,
+        17
+      ],
+      [
+        66,
+        0
+      ],
+      [
+        1,
+        67
+      ],
+      [
+        3,
+        68
+      ],
+      [
+        69,
+        4
+      ],
+      [
+        70,
+        4
+      ],
+      [
+        2,
+        2
+      ]
+    ]
+  },
+  "learned_implications": [
+    {
+      "input_suffix_lsd": "10000000000000000000000000000000000000000000000000000000000000000000001",
+      "output_suffix_lsd": "01000000000000000000000000000000000000000000000000000000000000000000011"
+    },
+    {
+      "input_suffix_lsd": "010000000000000000000000000000000000000000000000000000000000000000000001",
+      "output_suffix_lsd": "000000000000000000000000000000000000000000000000000000000000000000011"
+    },
+    {
+      "input_suffix_lsd": "10100000000000000000000000000000000000000000000000000000000000000000001",
+      "output_suffix_lsd": "00010000000000000000000000000000000000000000000000000000000000000000011"
+    },
+    {
+      "input_suffix_lsd": "10100000000000000000000000000000000000000000010000000000000000000000001",
+      "output_suffix_lsd": "00010000000000000000000000000000000000000000110000000000000000000000011"
+    },
+    {
+      "input_suffix_lsd": "10100000000000000000000000000000000000000000010000000000000001000000001",
+      "output_suffix_lsd": "00010000000000000000000000000000000000000000110000000000000011000000011"
+    },
+    {
+      "input_suffix_lsd": "010100000000000000000000000000000000000000000010000000000000001000000001",
+      "output_suffix_lsd": "0000000000000000000000000000000000000000110000000000000011000000011"
+    },
+    {
+      "input_suffix_lsd": "0101000000000000000000000000000000000000000000100000000000000010000000000001",
+      "output_suffix_lsd": "00000000000000000000000000000000000000001100000000000000110000000000011"
+    },
+    {
+      "input_suffix_lsd": "01010000000000000000000000000000000000000000001000000000000000100000000000001",
+      "output_suffix_lsd": "000000000000000000000000000000000000000011000000000000001100000000000011"
+    },
+    {
+      "input_suffix_lsd": "01010000000000000000000000000000000000000000001000000000000000100000000000000000000000000000000000000000000000001",
+      "output_suffix_lsd": "000000000000000000000000000000000000000011000000000000001100000000000000000000000000000000000000000000000011"
+    },
+    {
+      "input_suffix_lsd": "10011100010001100010001000000111001111101011111110011100110101101011001",
+      "output_suffix_lsd": "01101010110010010110011000001010110111000011111101101011000001000010111"
+    },
+    {
+      "input_suffix_lsd": "10011100110010001100010001000000111001111101011111110011100110101101011001",
+      "output_suffix_lsd": "01101011001110010010110011000001010110111000011111101101011000001000010111"
+    },
+    {
+      "input_suffix_lsd": "10110010101010000000101001000100001100100100110110010100110001100011001",
+      "output_suffix_lsd": "00101111111110000001111011001100010011101101000101111101001010010100111"
+    },
+    {
+      "input_suffix_lsd": "101100101010100000001010010001000011001001001010110010100110001100011001",
+      "output_suffix_lsd": "001011111111100000011110110011000100111011011111001111101001010010100111"
+    }
+  ],
+  "learned_implications_before_run": 0,
+  "learned_implications_cumulative": 13,
+  "learned_implications_this_run": 13,
+  "logical_signature": {
+    "gate": 2,
+    "odd_offset": 1,
+    "solver_seed": 0,
+    "state_count": 71
+  },
+  "map_classification": "standard_3n_plus_1_search",
+  "models_checked": 6,
+  "models_checked_cumulative": 6,
+  "models_checked_this_run": 6,
+  "program": "conditional-odd-suffix-floor-cegis",
+  "resume_source": null,
+  "resumed": false,
+  "schema": "x-9101-odd-suffix-cegis-v1",
+  "scope": "one conditional q-state odd-suffix spine/gate partition; at q=71 suffix gate h maps to shortcut gate h+1; this structured lift does not cover shortcut gate 0 or every generic q=72 machine; the q=71 interpretation depends on L-9111 and its external premise",
+  "solver_reason": "canceled",
+  "status": "time_limit",
+  "suffix_gate": 2
+}

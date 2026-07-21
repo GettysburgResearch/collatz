@@ -70,6 +70,24 @@ amplifier programs.
     cross-indexed its independent reverse-tree reconstruction and cofinite-tail
     obstruction.  Its sink-stripped inter-depth interface now replaces raw
     within-depth SCC mining in the recommended PDR path.
+22. Separated exact learned closure clauses from source-run accounting and
+    implemented a portable, integrity-checked implication bank. Every importer
+    recomputes `T(w)`; source status is retained only as provenance.
+23. Derived L-9111's conditional 71-state odd-suffix normal form, implemented
+    its exact `U`-based CEGIS lane, and required the unchanged shortcut verifier
+    to approve every lifted candidate.
+24. Audited shortcut-to-suffix clause transport. This caught 44 one-step
+    outputs with additional low zeros, including two with more than one; the
+    importer now strips all low zeros, validates even-source identities, and
+    checks every odd-source normalized `U` image.
+25. Ran matched bounded seeded scouts for raw gate 3 and structured suffix gate
+    2, preserving imported and locally learned ledgers separately.
+26. Replaced PR #14's still-ambiguous Boolean inter-depth comparison with
+    L-9112's first-hit-colored Moore chain. Adversarial review corrected its
+    prefix-closure tail proof and Moore-output compatibility statement.
+27. Designed the first product probe for that secondary lane: popcount parity
+    is the smallest recurrent nonslender feature not covered by the cylinder or
+    finite-lasso obstructions; adjacent-`11` parity is the next control.
 
 ## New results
 
@@ -100,6 +118,13 @@ amplifier programs.
 - `L-9110`: semantic maximal kernels are monotone under right-congruence
   refinement, so an empty fine-skeleton kernel remains empty under every
   literal deterministic quotient.
+- `L-9111`: conditional on the external verified range, a nonempty safe
+  `U`-invariant suffix language needs at least 71 states; equality forces an
+  exhaustive exact-distance suffix spine and gate `2,...,70`.
+- `L-9112`: first-hit-colored finite-safety Moore automata form a canonical
+  strict refinement chain. Bare colored skeletons express only finite or
+  cofinite languages; reachable products with recurrent features retain exact
+  refinement maps.
 
 All remain `PROPOSED` pending independent reconstruction.
 
@@ -107,7 +132,7 @@ All remain `PROPOSED` pending independent reconstruction.
 
 `X-9101` produced these observations:
 
-- 57 tests pass in the current extended suite.
+- 76 tests pass in the current extended suite.
 - The transducer matches direct shortcut arithmetic for every
   `1 <= n < 100000`.
 - The verifier accepts the `3n-1` control cycle `{5,7,10}`.
@@ -134,6 +159,26 @@ All remain `PROPOSED` pending independent reconstruction.
   implications in 22 batches, and stopped at a cumulative 120.062-second time
   boundary.  Its status is `time_limit`, not UNSAT; artifact SHA-256 is
   `b6a58a043c734bd755963e3abe7083d4404886b94cf0c087dbc11e5c8cd9499b`.
+- The portable 213-clause bank has canonical payload digest
+  `7dcbd52449aac567300bab540cfe10663c5c2e6b732660f6060b8dceae58e3bb`
+  and formatted-file SHA-256
+  `32846c490bcb38d932ec30121ba106547b3604cb45a77e236a026f613d4c53cd`.
+- A seeded raw 72-state gate-3 scout checked two models, learned three local
+  clauses in addition to 213 imports, and stopped at 20.016 seconds with
+  `time_limit`; artifact SHA-256 is
+  `e25484c28e61cff666a408d3c2eaf5e6ef654a91fbd0532f146a0d0c55b4ad81`.
+- The suffix diagnostic checked four models, learned ten clauses, and returned
+  solver-level UNSAT for its five-state engine-only space; artifact SHA-256 is
+  `a8c2b842039a9697e7f79685826dba49c52ff384c224d1dc4b24fc0cb7abfc92`.
+- The unseeded q=71 suffix-gate-2 scout checked six models and learned 13
+  clauses before its 10.016-second `time_limit`; artifact SHA-256 is
+  `34d5e528bad84951686adcfc4fbe00620483fd491f2037360e502dc5b31cb826`.
+- The 213 normalized suffix clauses are all unique and nontrivial, with digest
+  `ea4dc231df8840bfe8369702b45b2bc1ba4f6bdc9a158da170b8c8a0bf8ce1cc`.
+  The seeded suffix-gate-2 scout checked five models, learned 11 local clauses,
+  and stopped at 20.125 seconds with 224 clauses enforced and status
+  `time_limit`; artifact SHA-256 is
+  `13ff21ba4f71b1b206c7a538bbff7f94a68d6fac7412001920b51a4e2ae4de07`.
 
 These bounded failures are not evidence for Collatz convergence.
 
@@ -149,10 +194,15 @@ unless they already contain a nontrivial cycle.  At the exact floor, L-9109
 provides substantially stronger solver symmetry breaking than a generic
 length guard.
 
+The main lane is now the 71-state suffix floor, seeded by every exact reusable
+obstruction and aimed at extracting a proof pattern rather than merely running
+longer. The secondary lane is L-9112's recurrent-feature product chain, with
+popcount parity as its smallest probe.
+
 ## Candidate counterexamples
 
-None.  There is no `K-####`, no standard-Collatz invariant language, and no
-ordinary integer claimed to avoid 1.
+None. No standard-Collatz invariant language was found or claimed, no
+`K-####` record exists, and no ordinary integer is claimed to avoid 1.
 
 ## Failed approaches
 
@@ -164,6 +214,12 @@ ordinary integer claimed to avoid 1.
 - Raw SCC mining inside a fixed finite safety approximant is now structurally
   rejected by PR #14's proposed cofinite-tail lemma; only sink-stripped
   inter-depth boundary structure remains interesting in that lane.
+- Bare first-hit-colored safety skeletons are also rejected as direct infinite
+  templates: every accepting set is finite or cofinite. They are retained only
+  as feature coordinates in recurrent products.
+- Naively removing one bit from a stored odd shortcut output was rejected:
+  44 of the 213 frozen outputs require further acceleration before they become
+  odd-suffix clauses.
 - Strict growth was not made the primary lane: for block lengths 1 and 2 it
   collapses to an impossible indefinitely all-odd pattern.  Closure-only
   remains the broader target.
@@ -186,6 +242,10 @@ ordinary integer claimed to avoid 1.
   external verified range.
 - L-9110 applies only to literal transition-homomorphic quotients; it does not
   exclude refinements, feature products, or independently redesigned machines.
+- L-9111 is conditional and covers only the structured suffix lift, not raw
+  gate 0 or every generic 72-state transition table.
+- L-9112's strict chain does not imply eventual stabilization or a nonempty
+  product kernel; its synthesis power is empirical.
 - The subsequential terminal-output convention is easy to reverse; explicit
   boundary tests cover `1`, `5`, and `7`, and the differential route checks the
   global canonical input/output contract, but a separately authored
@@ -197,9 +257,9 @@ ordinary integer claimed to avoid 1.
 - A CEGIS timeout or model limit is incomplete.  Even solver-level UNSAT is not
   promoted because the current prototype emits no independently checkable
   proof artifact.
-- The committed 72-state scout covers gate 0 only.  Gates 3 through 71 and the
-  combined gate partition remain unsearched; gates 1 and 2 conflict with the
-  exact-floor `11` constraints.
+- The committed scouts cover only raw gates 0 and 3 and suffix gate 2 under
+  bounded configurations. Gates 1 and 2 conflict with the raw exact-floor
+  `11` constraints; every other partition remains open.
 - Unrestricted automaton existence and `T*` reachability are not claimed
   decidable.
 
@@ -219,7 +279,10 @@ ordinary integer claimed to avoid 1.
 - `research/regular-sanctuary/claims/L-9108-finite-lasso-obstruction.md`
 - `research/regular-sanctuary/claims/L-9109-exact-floor-normal-form.md`
 - `research/regular-sanctuary/claims/L-9110-quotient-monotonicity.md`
+- `research/regular-sanctuary/claims/L-9111-odd-suffix-floor.md`
+- `research/regular-sanctuary/claims/L-9112-depth-colored-residual-refinement.md`
 - `experiments/X-9101-regular-sanctuary/README.md`
+- `experiments/X-9101-regular-sanctuary/.gitattributes`
 - `experiments/X-9101-regular-sanctuary/.gitignore`
 - `experiments/X-9101-regular-sanctuary/automata.py`
 - `experiments/X-9101-regular-sanctuary/transducer.py`
@@ -234,18 +297,25 @@ ordinary integer claimed to avoid 1.
 - `experiments/X-9101-regular-sanctuary/test_odd_core.py`
 - `experiments/X-9101-regular-sanctuary/spine_cegis.py`
 - `experiments/X-9101-regular-sanctuary/test_spine_cegis.py`
+- `experiments/X-9101-regular-sanctuary/odd_suffix_cegis.py`
+- `experiments/X-9101-regular-sanctuary/test_odd_suffix_cegis.py`
 - `experiments/X-9101-regular-sanctuary/requirements.txt`
 - `experiments/X-9101-regular-sanctuary/requirements-search.txt`
 - `experiments/X-9101-regular-sanctuary/results/control-3n-minus-1.json`
 - `experiments/X-9101-regular-sanctuary/results/summary.json`
 - `experiments/X-9101-regular-sanctuary/results/spine-cegis-diagnostic.json`
 - `experiments/X-9101-regular-sanctuary/results/spine-q72-gate0-scout.json`
+- `experiments/X-9101-regular-sanctuary/results/spine-q72-gate0-bank.json`
+- `experiments/X-9101-regular-sanctuary/results/spine-q72-gate3-seeded-scout.json`
+- `experiments/X-9101-regular-sanctuary/results/odd-suffix-cegis-diagnostic.json`
+- `experiments/X-9101-regular-sanctuary/results/odd-suffix-q71-gate2-scout.json`
+- `experiments/X-9101-regular-sanctuary/results/odd-suffix-q71-gate2-seeded-scout.json`
 - this report
 
 ## Claims affected
 
 - `D-9101` — new, `PROPOSED`
-- `L-9101` through `L-9110` — new, `PROPOSED`
+- `L-9101` through `L-9112` — new, `PROPOSED`
 - `X-9101` — new, `EMPIRICAL`
 
 These are namespaced high-number reservations pending integrator
@@ -255,17 +325,15 @@ reconciliation.  No canonical root ledger was edited.
 
 1. Independently reconstruct the transducer table and product-graph closure
    proof from the statements, then replay the JSON control certificate.
-2. Resume the exact-floor checkpoint and run gate partitions `0,3,...,71`
-   under common solver versions, seeds, limits, and artifact hashes.
-3. Coordinate with PR #14: compare canonical fingerprints or embeddings of
-   sink-stripped boundary DAGs across depths, then use any recurring motif to
-   refine, augment, or redesign a non-cofinite skeleton rather than literally
-   quotienting an empty-kernel one.
-4. Implement PDR-style refinement: infer a candidate regular subset from
-   finite safety levels and immediately test it for exact inductiveness.
+2. Cover suffix gates `2,...,70` from the common normalized bank and raw gates
+   `0,3,...,71` as the broader control, preserving separate accounting.
+3. Compress recurring exact clauses into a human obstruction for the suffix
+   normal form; do not substitute cumulative timeout for proof.
+4. Coordinate with PR #14 through L-9112's canonical colored projections, and
+   test popcount-parity then adjacent-`11`-parity products.
 5. Use low-residue filters only with a genuinely branching high-bit tail, and
    reject every accepting-continuation cone exposed by L-9107.
-6. Search nonslender odd-core automata through the seven-state totalized `U`
+6. Search other nonslender odd-core automata through the seven-state totalized `U`
    transducer, then lift and verify every conjecture with the standard checker.
 7. Add proof logging or a separately authored verifier before promoting any
    solver-level negative result.
@@ -274,12 +342,12 @@ reconciliation.  No canonical root ledger was edited.
 ## Handoff
 
 - **HANDOFF FROM:** `gpt56-regular-01`
-- **HANDOFF TO:** verifier for `L-9101`--`L-9110`; automata researcher for the next synthesis pass
+- **HANDOFF TO:** verifier for `L-9101`--`L-9112`; automata researcher for the next synthesis pass
 - **CURRENT CLAIM OR CANDIDATE:** no candidate; proposed checker lemmas and experiment `X-9101`
 - **BLOCKING STEP:** discover a structured transition skeleton whose maximal safe kernel is nonempty
-- **FILES TO READ:** `research/regular-sanctuary/SEMANTICS.md`, then `verify.py`, `spine_cegis.py`, and the test suite
+- **FILES TO READ:** `research/regular-sanctuary/SEMANTICS.md`, then `verify.py`, `spine_cegis.py`, `odd_suffix_cegis.py`, and the test suite
 - **FAILED ATTEMPTS:** all raw skeletons through four states; every one-/two-state core behind the frozen 72-bit guard
-- **MOST PROMISING NEXT MOVE:** resume exact-floor gate partitions while building a nonslender odd-core synthesizer; exact-check every proposal in the base map
+- **MOST PROMISING NEXT MOVE:** cover the 71-state suffix gates from the portable obstruction bank and extract a finite proof pattern; in parallel probe popcount-colored refinement products
 - **MAIN RISK:** finite-horizon structure fails to stabilize, or every divergent orbit (if one exists) has no regular sanctuary
 - **WHAT WOULD FALSIFY THE CURRENT APPROACH:** a proof excluding all regular forward-invariant safe languages, or persistent structured-search UNSAT across a theoretically exhaustive template class
 - **POSSIBLE ORGANIZATIONAL IMPROVEMENT:** keep general unclaimed directions in issues and give every executable research program a namespaced README, certificate checker, frozen output, and explicit bounded-failure contract

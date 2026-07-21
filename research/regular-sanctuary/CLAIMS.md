@@ -210,6 +210,49 @@ also `h'`-expressible, so their semantic maximal kernels satisfy
 `K_h subset K_(h')`.  An empty kernel on a fine skeleton therefore cannot be
 repaired by a literal deterministic quotient or transition-stable SCC merge.
 
+## L-9111 - conditional odd-suffix floor
+
+- **Claim ID:** L-9111
+- **Title:** A fully accelerated odd sanctuary needs at least 71 suffix states, with a complete spine at equality
+- **Status:** PROPOSED
+- **Authoring agent:** gpt56-regular-01
+- **Reviewing agents:** none
+- **Created:** 2026-07-21
+- **Last updated:** 2026-07-21
+- **Dependencies:** D-9101, L-9104, L-9106, L-9109, external verification below `2^71`
+- **Scope:** complete DFAs reading the suffix after the forced low odd bit
+- **Related candidates:** none
+- **Full record:** [`claims/L-9111-odd-suffix-floor.md`](claims/L-9111-odd-suffix-floor.md)
+
+Write every odd canonical word uniquely as `1x`, and let a `p`-state DFA read
+only `x`. Adjoining one zero-loop state recognizes the dyadic saturation with
+exactly `p+1` raw states. Conditional on the verified range, `p>=71`. At
+equality the 71 suffix-prefix states are exact-distance and exhaustive; the
+singleton semantic gate is one of `r_2,...,r_70`. This is a necessary normal
+form for a structured lift, not a claim about every raw 72-state machine.
+
+## L-9112 - depth-colored residual refinement
+
+- **Claim ID:** L-9112
+- **Title:** First-hit colors turn finite safety automata into a canonical refinement chain
+- **Status:** PROPOSED
+- **Authoring agent:** gpt56-regular-01
+- **Reviewing agents:** none
+- **Created:** 2026-07-21
+- **Last updated:** 2026-07-21
+- **Dependencies:** D-9101 and L-9110; external verification below `2^71` only for the conditional `d<=69` corollary
+- **Scope:** finite canonical words and every finite shortcut-safety horizon
+- **Related candidates:** none
+- **Full record:** [`claims/L-9112-depth-colored-residual-refinement.md`](claims/L-9112-depth-colored-residual-refinement.md)
+
+Minimal Boolean safety DFAs need not refine one another. Retaining each word's
+first-hit depth yields Moore skeletons `H_d` with canonical strict surjections
+`H_(d+1) -> H_d`; their inverse fibers are exact inter-depth split objects.
+The bare skeletons express only finite or cofinite semantic languages, so they
+cannot directly host an infinite sanctuary. Their sound use is as feature
+coordinates in reachable products `R product H_d` with a genuinely recurrent
+noncofinite skeleton `R`.
+
 ## X-9101 — exact checker, structural tooling, and bounded searches
 
 - **Claim ID:** X-9101
@@ -229,17 +272,22 @@ repaired by a literal deterministic quotient or transition-stable SCC merge.
 The baseline reproduced the `3n-1` control, found no nonempty safe kernel among
 all 66,282 labeled standard-map skeletons through four states, and found none
 for every one- and two-state core behind the specified 72-bit guard.  The
-extended suite contains 57 tests, including exact odd-core/lift checks and
-differential agreement between two closure routes on all 5,898 complete DFA
+extended suite contains 76 tests, including exact odd-core/suffix-lift checks,
+portable-bank validation, and differential agreement between two closure
+routes on all 5,898 complete DFA
 candidates (746 labeled skeletons through three states, each with every
 accepting mask).  A two-session, gate-0 exact-floor scout checked and
 rejected 22 proposed 72-state machines and learned 213 exact implications
 before its 120.062-second cumulative time boundary.  This is a bounded result
-with status `time_limit`, not UNSAT.
+with status `time_limit`, not UNSAT. A seeded raw gate-3 scout checked two
+models and learned three additional clauses; a seeded 71-state suffix-gate-2
+scout checked five models and learned 11 additional clauses. Both stopped at
+20-second soft boundaries and found no candidate.
 
 ## Gap audit
 
-- No positive standard-Collatz language or `K-####` exists.
+- No such standard-Collatz language was found or claimed; no `K-####` record
+  exists.
 - In-session adversarial reconstruction found and repaired checker bugs.  The
   second preimage/inclusion route shares the project's `preimage_dfa` builder
   and author, so no independent reviewer artifact has entered the repository.
@@ -255,8 +303,12 @@ with status `time_limit`, not UNSAT.
   exact 72-state floor.
 - L-9110 excludes only literal quotients of an empty-kernel skeleton;
   refinements, feature products, and transition redesigns remain available.
+- L-9111 is conditional and covers only exact-floor suffix lifts, not raw gate
+  0 or every generic 72-state table.
+- L-9112's colored skeletons grow strictly and directly express only finite or
+  cofinite languages; product synthesis remains an open empirical direction.
 - The optional CEGIS solver emits no independently checkable UNSAT proof, and
-  the committed 72-state artifact covers only gate 0 for two bounded sessions.
+  every committed scout remains explicitly bounded and partition-specific.
 - No bounded failure is extrapolated to arbitrary regular languages.
 - The first safety approximants are finite-horizon objects and do not determine
   an ordinary integer surviving forever.

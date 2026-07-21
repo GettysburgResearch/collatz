@@ -180,6 +180,43 @@ def lift_odd_dfa_to_shortcut(odd_dfa: DFA) -> DFA:
     return DFA(tuple(transitions), accepting, skip_state).minimized()
 
 
+def lift_odd_suffix_dfa_to_shortcut(suffix_dfa: DFA) -> DFA:
+    """Lift a DFA reading the suffix after the first odd bit.
+
+    Every odd canonical LSD-first word has the unique form ``1x``.  This
+    convention lets ``suffix_dfa`` read only ``x``: the empty suffix denotes
+    the integer one, while every longer canonical suffix ends in one.  The
+    returned DFA recognizes the dyadic saturation
+
+        ``{0**k + (1,) + x : k >= 0 and suffix_dfa accepts x}``.
+
+    The first input one moves directly to ``suffix_dfa.start`` without being
+    consumed by that machine.  Unlike :func:`lift_odd_dfa_to_shortcut`, this
+    constructor deliberately does not minimize: an exact-floor search needs
+    the raw ``suffix_dfa.state_count + 1`` state accounting.  Call
+    ``.minimized()`` explicitly when only language size matters.
+
+    If the suffix start state accepts, the lift contains the forbidden powers
+    of two.  The constructor preserves that fact so the standard verifier can
+    reject it; it does not silently enforce safety.
+    """
+
+    offset = 1
+    skip_state = 0
+    transitions: list[tuple[int, int]] = [
+        (skip_state, offset + suffix_dfa.start)
+    ]
+    transitions.extend(
+        (
+            offset + suffix_dfa.step(state, 0),
+            offset + suffix_dfa.step(state, 1),
+        )
+        for state in range(suffix_dfa.state_count)
+    )
+    accepting = frozenset(offset + state for state in suffix_dfa.accepting)
+    return DFA(tuple(transitions), accepting, skip_state)
+
+
 def transduce_odd_word(
     word: Sequence[int] | str,
     *,

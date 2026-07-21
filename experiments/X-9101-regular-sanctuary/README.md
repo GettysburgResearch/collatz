@@ -29,19 +29,36 @@ must pass exact finite-product closure before it can become a candidate.
   verifier, but it deliberately shares `preimage_dfa`, data types, and author;
   it is differential validation, not an independent review artifact.
 - `odd_core.py` — seven-state totalized transducer for
-  `U(odd_part(n))` and an exact lift from an odd DFA `O` to `0* O`.
+  `U(odd_part(n))`, an exact lift from an odd DFA `O` to `0* O`, and the raw
+  one-state suffix lift used for exact-floor state accounting.
 - `search.py` — labeled-skeleton enumeration and guarded-core search.
 - `spine_cegis.py` — optional Z3 proposal engine for the conditional exact-
-  floor spine/gate normal form. The standard checker remains the arbiter.
+  floor spine/gate normal form, including portable exact implication banks.
+  The standard checker remains the arbiter.
+- `odd_suffix_cegis.py` — optional Z3 proposal engine for L-9111's structured
+  71-state suffix normal form. It checks `U` exactly and then requires the
+  unchanged shortcut verifier to accept the one-state lift.
 - `check_certificate.py` — Python-standard-library-only JSON certificate verifier.
 - `run.py` — deterministic baseline driver.
 - `test_regular_sanctuary.py`, `test_independent_check.py`,
-  `test_odd_core.py`, `test_spine_cegis.py` — adversarial regression suites.
+  `test_odd_core.py`, `test_spine_cegis.py`, `test_odd_suffix_cegis.py` —
+  adversarial regression suites.
 - `results/control-3n-minus-1.json` — known-cycle positive-control certificate.
 - `results/summary.json` — frozen original baseline.
 - `results/spine-cegis-diagnostic.json` — five-state solver-engine diagnostic.
 - `results/spine-q72-gate0-scout.json` — checkpoint after two bounded gate-0
   exact-floor scout sessions.
+- `results/spine-q72-gate0-bank.json` — portable bank of the 213 exact
+  implications learned by that frozen scout; source status is retained only
+  as non-authoritative provenance and is not target accounting or evidence.
+- `results/spine-q72-gate3-seeded-scout.json` — bounded raw gate-3 scout seeded
+  by the portable bank.
+- `results/odd-suffix-cegis-diagnostic.json` — five-state suffix-engine
+  diagnostic.
+- `results/odd-suffix-q71-gate2-scout.json` — bounded unseeded suffix gate-2
+  scout.
+- `results/odd-suffix-q71-gate2-seeded-scout.json` — separate bounded suffix
+  gate-2 scout seeded by the normalized shortcut bank.
 
 ## Software environment
 
@@ -53,26 +70,29 @@ must pass exact finite-product closure before it can become a candidate.
 - deterministic solver seed `0`; soft-deadline model counts remain machine-
   and solver-version-dependent because exact verification and witness batching
   finish atomically after each solver call
+- `.gitattributes` pins committed result JSON to LF so documented formatted-
+  file hashes do not depend on checkout line-ending conversion
 
 ## Replay commands
 
 From this directory, the trusted checker and test discovery run as:
 
 ~~~text
-python -B -m py_compile automata.py transducer.py verify.py independent_check.py odd_core.py search.py run.py check_certificate.py spine_cegis.py test_regular_sanctuary.py test_independent_check.py test_odd_core.py test_spine_cegis.py
+python -B -m py_compile automata.py transducer.py verify.py independent_check.py odd_core.py search.py run.py check_certificate.py spine_cegis.py odd_suffix_cegis.py test_regular_sanctuary.py test_independent_check.py test_odd_core.py test_spine_cegis.py test_odd_suffix_cegis.py
 python -B -m unittest -v
 python -B check_certificate.py results/control-3n-minus-1.json --allow-nonstandard-control
 python -B run.py --exhaustive-states 4 --approximation-depth 20
 ~~~
 
-With the pinned optional Z3 dependency installed, all 57 tests pass.  In a
-standard-library-only environment, 51 pass and the six synthesis tests skip.
+With the pinned optional Z3 dependency installed, all 76 tests pass. In a
+standard-library-only environment, 61 pass and the 15 synthesis tests skip.
 
 The optional search dependency and engine diagnostic are:
 
 ~~~text
 python -m pip install -r requirements-search.txt
 python -B spine_cegis.py --dry-diagnostic --seed 0 --result results/spine-cegis-diagnostic-replay.json
+python -B odd_suffix_cegis.py --dry-diagnostic --seed 0 --result results/odd-suffix-cegis-diagnostic-replay.json
 ~~~
 
 The committed 72-state gate-0 checkpoint was produced by two consecutive
@@ -93,9 +113,32 @@ Copy-Item results/spine-q72-gate0-scout.json results/spine-q72-gate0-working.jso
 python -B spine_cegis.py --states 72 --gate 0 --seed 0 --max-models 100 --time-limit 60 --resume results/spine-q72-gate0-working.json --checkpoint results/spine-q72-gate0-working.json --result results/spine-q72-gate0-working.json
 ~~~
 
-Likewise, direct diagnostic replays should use an ignored
-`results/spine-cegis-diagnostic-replay.json` output if the committed diagnostic
-hash is to remain stable.
+Exporting the exact implications is deterministic. Models, batches, elapsed
+time, and candidates are omitted; source status remains only as
+non-authoritative provenance and is never a target conclusion:
+
+~~~text
+python -B spine_cegis.py --export-bank results/spine-q72-gate0-scout.json results/spine-q72-gate0-bank-replay.json
+~~~
+
+The two seeded scouts were produced with the same logical bank but cover
+different search spaces: raw gate 3 permits transitions back to its start
+state, whereas the suffix lift keeps work transitions inside its 71-state
+copy. Their configured soft-budget commands were:
+
+~~~text
+python -B spine_cegis.py --states 72 --gate 3 --seed 0 --max-models 100 --time-limit 20 --import-bank results/spine-q72-gate0-bank.json --result results/spine-q72-gate3-seeded-scout-replay.json
+python -B odd_suffix_cegis.py --states 71 --gate 2 --seed 0 --max-models 100 --time-limit 20 --import-shortcut-bank results/spine-q72-gate0-bank.json --result results/odd-suffix-q71-gate2-seeded-scout-replay.json
+~~~
+
+The historical unseeded suffix scout used:
+
+~~~text
+python -B odd_suffix_cegis.py --states 71 --gate 2 --seed 0 --max-models 100 --time-limit 10 --result results/odd-suffix-q71-gate2-scout-replay.json
+~~~
+
+All replay outputs use ignored `*-replay.json` names so the committed artifact
+hashes remain stable.
 
 The original baseline's platform-independent mathematical-result digest is:
 
@@ -109,7 +152,7 @@ Its full environment-bound summary digest is
 ## Frozen original baseline
 
 - Direct standard-transducer comparison: every `1 <= n < 100000`.
-- Original regression suite: 29 tests; current extended suite: 57 tests.
+- Original regression suite: 29 tests; current extended suite: 76 tests.
 - Finite safety approximants: depths 0 through 20.
 - Labeled raw transition skeletons:
   - 1 state: 1;
@@ -147,6 +190,15 @@ The additional tests establish finite, replayable agreement boundaries:
   complete candidates in total, including exact failure reasons and witnesses;
 - malformed terminal behavior and noncanonical transducer output are rejected
   even when the defect lies outside a candidate's accepted language;
+- the raw suffix lift agrees with odd-part membership below 10,000, exposes an
+  accepting empty suffix as the forbidden powers of two, and preserves the
+  known `3n-1` suffix cycle as a positive control;
+- every portable bank clause is rechecked as an exact canonical `w -> T(w)`
+  image, with integrity, provenance, cross-gate accounting, and source-free
+  resume covered adversarially;
+- all 213 frozen shortcut clauses normalize to exact nontrivial suffix
+  `x -> U(1x)[1:]` clauses; tests specifically catch the invalid shortcut of
+  dropping only one zero from an even output;
 - CEGIS tests exercise batched exact implications, mandatory final
   verification, strict checkpoint validation, resume accounting, and explicit
   timeout/model-limit result boundaries.
@@ -171,6 +223,59 @@ and not evidence against other gates, larger automata, or template-external
 regular languages. Its value is operational: every failed proposal becomes a
 sound constraint that can be checkpointed and resumed.
 
+### Portable obstruction bank
+
+The portable gate-0 bank contains exactly the same 213 mathematical
+implications but deliberately omits the source model tables, batches, elapsed
+time, and candidate. Source status is retained only as non-authoritative
+provenance; it is never credited as target accounting, evidence, or a solver
+conclusion. Every importer recomputes each exact `T` image before using it.
+The bank's canonical payload digest is
+`7dcbd52449aac567300bab540cfe10663c5c2e6b732660f6060b8dceae58e3bb`;
+its formatted-file SHA-256 is
+`32846c490bcb38d932ec30121ba106547b3604cb45a77e236a026f613d4c53cd`.
+
+The matched raw 72-state gate-3 scout imported all 213 clauses, checked two
+models, learned three further clauses in two batches, and stopped at its
+20.016-second soft boundary with 216 clauses enforced. Its status is
+`time_limit`, not UNSAT, and its SHA-256 is
+`e25484c28e61cff666a408d3c2eaf5e6ef654a91fbd0532f146a0d0c55b4ad81`.
+
+### Conditional odd-suffix lane
+
+L-9111 removes the forced dyadic-saturation state before synthesis. A
+71-state suffix DFA at the conditional floor lifts to exactly 72 raw states;
+suffix gates `2,...,70` map to raw gates `3,...,71`. This is a structured
+subspace: it excludes raw gate 0 and generic machines whose work transitions
+return to the saturation state.
+
+The five-state suffix diagnostic checked four models, learned ten clauses,
+and returned solver-level `solver_unsat` for that engine-only space. It emits
+no independent UNSAT proof. Its SHA-256 is
+`a8c2b842039a9697e7f79685826dba49c52ff384c224d1dc4b24fc0cb7abfc92`.
+
+The unseeded q=71, suffix-gate-2 scout checked six models and learned 13 exact
+clauses in 10.016 seconds. Its status is `time_limit`, and its SHA-256 is
+`34d5e528bad84951686adcfc4fbe00620483fd491f2037360e502dc5b31cb826`.
+
+For a dyadically saturated candidate, each full shortcut clause can be
+normalized by stripping **all** initial LSD zeros from both sides and then
+removing the forced odd marker. In the frozen bank, all 213 inputs are odd;
+44 one-step outputs contain low zeros and two contain more than one. The 213
+unique nontrivial suffix clauses have canonical digest
+`ea4dc231df8840bfe8369702b45b2bc1ba4f6bdc9a158da170b8c8a0bf8ce1cc`.
+Every pair is independently checked against the exact `U` transducer.
+
+The separately seeded q=71 gate-2 scout imported all 213 normalized clauses,
+checked five models, learned 11 further clauses in five batches, and stopped
+at its 20.125-second soft boundary with 224 clauses enforced. It found no
+candidate; `time_limit` remains incomplete. Its SHA-256 is
+`13ff21ba4f71b1b206c7a538bbff7f94a68d6fac7412001920b51a4e2ae4de07`.
+
+The raw gate-3 and suffix gate-2 scouts share a gate correspondence but are
+not equivalent search spaces or a controlled speed benchmark. Their value is
+that the same exact obstruction knowledge now crosses both representations.
+
 ## What is rigorous versus empirical
 
 The source implements finite graph algorithms. Given a certificate, the
@@ -192,8 +297,12 @@ parameters but make no claim about larger automata or unbounded search.
 - The preimage route shares the project's `preimage_dfa` constructor and is
   not a separately authored checker.
 - The optional solver emits no independently checkable UNSAT proof artifact.
-- The committed 72-state search is a two-minute gate-0 scout, not an exhaustive
-  partition result.
+- The committed raw searches are a two-minute gate-0 scout and a 20-second
+  seeded gate-3 scout, not exhaustive partition results.
+- The 71-state suffix lane is conditional on the external verified range and
+  covers only a structured subset of raw exact-floor machines.
+- SHA-256 makes bank provenance tamper-evident, not cryptographically signed;
+  logical safety instead comes from recomputing every imported exact image.
 - A bounded empty kernel or a long sequence of rejected models does not support
   Collatz convergence.
 - Safety approximants certify only finite orbit windows.
@@ -203,11 +312,18 @@ parameters but make no claim about larger automata or unbounded search.
 
 ## Next experiment
 
-Resume the exact-floor checkpoint and run the gate partitions `0,3,...,71`
-with a common solver version, seeds, and limits, publishing a separate integrity
-hash for each artifact; gates 1 and 2 are already inconsistent with the forced
-`11` prefix. In parallel, synthesize nonslender odd-core DFAs
-through the seven-state `U` transducer, lift every proposal to `0* O`, and make
-the unchanged shortcut checker the final arbiter. A proof-producing solver or
-separately authored verifier is required before promoting any negative solver
-claim.
+Use the portable bank to cover suffix gates `2,...,70` first, because this
+removes one forced state and checks closure under the smaller fully accelerated
+transducer. Run raw gates `0,3,...,71` as the broader control, preserving local
+versus imported accounting in every artifact. Share only independently
+revalidated exact implications across partitions. Retain source status only as
+non-authoritative provenance; never credit it or source model counts to the
+target run.
+
+The primary mathematical objective is now to compress recurring learned
+clauses into a human proof obstruction for the 71-state suffix normal form,
+not merely accumulate timeouts. In parallel, implement L-9112's colored
+refinement products with popcount parity as the first genuinely recurrent
+nonslender feature. Every positive proposal still returns to the unchanged
+shortcut checker. A proof-producing solver or separately authored verifier is
+required before promoting any negative solver claim.

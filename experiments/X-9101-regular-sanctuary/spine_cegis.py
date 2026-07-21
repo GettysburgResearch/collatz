@@ -31,6 +31,7 @@ proof artifact.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -53,6 +54,13 @@ from verify import VerificationResult, terminal_relation, verify_candidate
 
 
 SCHEMA = "x-9101-spine-cegis-v2"
+BANK_SCHEMA = "x-9101-spine-implication-bank-v1"
+BANK_SEMANTICS = {
+    "map": "shortcut_3n+1",
+    "domain": "canonical_positive_finite_binary",
+    "bit_order": "lsd_first",
+    "obligation": "accepted_w_implies_accepted_T_w",
+}
 INCOMPLETE_DISCLAIMER = (
     "A time-limited, model-limited, or solver-unknown run is incomplete and is "
     "not an UNSAT proof, a convergence result, or evidence against larger/"
@@ -139,9 +147,18 @@ class LearnedImplication:
 @dataclass(frozen=True)
 class LoadedCheckpoint:
     learned: tuple[LearnedImplication, ...]
+    imported: tuple[LearnedImplication, ...]
     models_checked_cumulative: int
     elapsed_seconds_cumulative: float
     batch_history: tuple[dict[str, int], ...]
+    bank_imports: tuple[dict[str, object], ...]
+
+
+@dataclass(frozen=True)
+class ImplicationBank:
+    implications: tuple[LearnedImplication, ...]
+    bank_sha256: str
+    provenance: dict[str, object]
 
 
 def _require_z3():
@@ -186,6 +203,52 @@ def _atomic_json_write(path: Path, payload: dict[str, object]) -> None:
                 os.unlink(temporary_name)
             except FileNotFoundError:
                 pass
+
+
+def _canonical_json_bytes(value: object) -> bytes:
+    return json.dumps(
+        value,
+        ensure_ascii=True,
+        separators=(",", ":"),
+        sort_keys=True,
+    ).encode("utf-8")
+
+
+def _portable_display_path(path: Path) -> str:
+    """Avoid serializing an environment-specific absolute workspace path."""
+
+    return path.name if path.is_absolute() else path.as_posix()
+
+
+def _sha256_bytes(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
+
+
+def _sha256_file(path: Path) -> str:
+    return _sha256_bytes(path.read_bytes())
+
+
+def _ordered_implications(
+    implications: Iterable[LearnedImplication],
+) -> list[LearnedImplication]:
+    return sorted(
+        implications,
+        key=lambda item: (
+            len(item.input_word),
+            item.input_word,
+            len(item.output_word),
+            item.output_word,
+        ),
+    )
+
+
+def _implication_digest(implications: Iterable[LearnedImplication]) -> str:
+    items = [item.to_dict() for item in _ordered_implications(implications)]
+    return _sha256_bytes(_canonical_json_bytes(items))
+
+
+def _bank_payload_digest(payload_without_digest: dict[str, object]) -> str:
+    return _sha256_bytes(_canonical_json_bytes(payload_without_digest))
 
 
 def _verification_dict(result: VerificationResult) -> dict[str, object]:
@@ -279,6 +342,9 @@ def _checkpoint_payload(
     elapsed_seconds_before_run: float,
     learned: Iterable[LearnedImplication],
     learned_before_run: int,
+    imported: Iterable[LearnedImplication],
+    imported_before_run: int,
+    bank_imports: Sequence[dict[str, object]],
     batch_history: Sequence[dict[str, int]],
     batches_before_run: int,
     resume_source: str | None,
@@ -287,6 +353,7 @@ def _checkpoint_payload(
     solver_reason: str | None = None,
 ) -> dict[str, object]:
     learned_list = list(learned)
+    imported_list = list(imported)
     bounded = status in {
         "running",
         "model_limit",
@@ -312,11 +379,13 @@ def _checkpoint_payload(
         # The unsuffixed fields are retained as this-run aliases for simple
         # consumers; cumulative fields make resumed work explicit.
         "models_checked": models_checked_this_run,
+        "models_checked_before_run": models_checked_before_run,
         "models_checked_this_run": models_checked_this_run,
         "models_checked_cumulative": (
             models_checked_before_run + models_checked_this_run
         ),
         "elapsed_seconds": round(elapsed_seconds_this_run, 6),
+        "elapsed_seconds_before_run": round(elapsed_seconds_before_run, 6),
         "elapsed_seconds_this_run": round(elapsed_seconds_this_run, 6),
         "elapsed_seconds_cumulative": round(
             elapsed_seconds_before_run + elapsed_seconds_this_run, 6
@@ -327,6 +396,15 @@ def _checkpoint_payload(
         "learned_implications_this_run": len(learned_list) - learned_before_run,
         "learned_implications_cumulative": len(learned_list),
         "learned_implications": [item.to_dict() for item in learned_list],
+        # Imported obligations are exact T-images but are not credited to this
+        # partition's models or batches.  Keeping the ledgers disjoint prevents
+        # portable banks from importing another run's untrusted accounting.
+        "imported_implications_before_run": imported_before_run,
+        "imported_implications_this_run": len(imported_list) - imported_before_run,
+        "imported_implications_cumulative": len(imported_list),
+        "imported_implications": [item.to_dict() for item in imported_list],
+        "enforced_implications_cumulative": len(learned_list) + len(imported_list),
+        "implication_bank_imports": list(bank_imports),
         "batches_before_run": batches_before_run,
         "batches_this_run": len(batch_history) - batches_before_run,
         "batches_cumulative": len(batch_history),
@@ -370,6 +448,76 @@ def _checkpoint_nonnegative_int(data: dict[str, object], field: str) -> int:
     return value
 
 
+def _parse_implication_items(
+    raw_items: object, machine, *, label: str
+) -> list[LearnedImplication]:
+    if not isinstance(raw_items, list):
+        raise ValueError(f"{label} must be a list")
+    implications: list[LearnedImplication] = []
+    seen: set[tuple[Word, Word]] = set()
+    for raw in raw_items:
+        if not isinstance(raw, dict):
+            raise ValueError(f"{label} contains a malformed implication")
+        if set(raw) != {"input_lsd", "output_lsd"}:
+            raise ValueError(f"{label} implication fields are invalid")
+        input_word = _canonical_checkpoint_word(
+            raw.get("input_lsd"), "input_lsd"
+        )
+        output_word = _canonical_checkpoint_word(
+            raw.get("output_lsd"), "output_lsd"
+        )
+        if machine.transduce(input_word) != output_word:
+            raise ValueError(f"{label} implication is not an exact T image")
+        key = (input_word, output_word)
+        if key in seen:
+            raise ValueError(f"{label} contains a duplicate implication")
+        seen.add(key)
+        implications.append(LearnedImplication(input_word, output_word))
+    return implications
+
+
+def _is_sha256(value: object) -> bool:
+    return (
+        isinstance(value, str)
+        and len(value) == 64
+        and all(character in "0123456789abcdef" for character in value)
+    )
+
+
+def _validate_logical_signature(raw: object) -> dict[str, object]:
+    fields = {
+        "state_count",
+        "gate",
+        "force_zero_loop",
+        "force_11_prefix",
+        "solver_seed",
+    }
+    if not isinstance(raw, dict) or set(raw) != fields:
+        raise ValueError("implication provenance logical signature is malformed")
+    state_count = raw["state_count"]
+    gate = raw["gate"]
+    zero_loop = raw["force_zero_loop"]
+    prefix = raw["force_11_prefix"]
+    seed = raw["solver_seed"]
+    if type(state_count) is not int or state_count < 2:
+        raise ValueError("implication provenance state_count is invalid")
+    if gate is not None and (type(gate) is not int or not 0 <= gate < state_count):
+        raise ValueError("implication provenance gate is invalid")
+    if type(zero_loop) is not bool or type(prefix) is not bool:
+        raise ValueError("implication provenance normal-form flags are invalid")
+    if prefix and not zero_loop:
+        raise ValueError("implication provenance normal-form flags are incoherent")
+    if type(seed) is not int or seed < 0:
+        raise ValueError("implication provenance solver seed is invalid")
+    return {
+        "state_count": state_count,
+        "gate": gate,
+        "force_zero_loop": zero_loop,
+        "force_11_prefix": prefix,
+        "solver_seed": seed,
+    }
+
+
 def _load_checkpoint_state(
     path: Path, config: SpineSearchConfig, transducer=None
 ) -> LoadedCheckpoint:
@@ -404,35 +552,41 @@ def _load_checkpoint_state(
             raise ValueError(
                 f"checkpoint displayed config disagrees on logical field {field}"
             )
-    raw_items = data.get("learned_implications")
-    if not isinstance(raw_items, list):
-        raise ValueError("checkpoint has no learned implication list")
-
     machine = shortcut_transducer() if transducer is None else transducer
-    learned: list[LearnedImplication] = []
-    seen: set[tuple[Word, Word]] = set()
-    for raw in raw_items:
-        if not isinstance(raw, dict):
-            raise ValueError("malformed checkpoint implication")
-        input_word = _canonical_checkpoint_word(
-            raw.get("input_lsd"), "input_lsd"
-        )
-        output_word = _canonical_checkpoint_word(
-            raw.get("output_lsd"), "output_lsd"
-        )
-        if machine.transduce(input_word) != output_word:
-            raise ValueError("checkpoint implication is not an exact T image")
-        key = (input_word, output_word)
-        if key in seen:
-            raise ValueError("checkpoint contains a duplicate learned implication")
-        seen.add(key)
-        learned.append(LearnedImplication(input_word, output_word))
+    learned = _parse_implication_items(
+        data.get("learned_implications"),
+        machine,
+        label="checkpoint learned_implications",
+    )
 
     declared_learned = _checkpoint_nonnegative_int(
         data, "learned_implications_cumulative"
     )
     if declared_learned != len(learned):
         raise ValueError("checkpoint learned implication count is inconsistent")
+
+    imported = _parse_implication_items(
+        data.get("imported_implications", []),
+        machine,
+        label="checkpoint imported_implications",
+    )
+    declared_imported = _checkpoint_nonnegative_int(
+        data, "imported_implications_cumulative"
+    )
+    if declared_imported != len(imported):
+        raise ValueError("checkpoint imported implication count is inconsistent")
+    local_keys = {(item.input_word, item.output_word) for item in learned}
+    imported_keys = {(item.input_word, item.output_word) for item in imported}
+    if local_keys & imported_keys:
+        raise ValueError("checkpoint local and imported implication ledgers overlap")
+    declared_enforced = data.get(
+        "enforced_implications_cumulative", len(learned) + len(imported)
+    )
+    if (
+        type(declared_enforced) is not int
+        or declared_enforced != len(learned) + len(imported)
+    ):
+        raise ValueError("checkpoint enforced implication count is inconsistent")
 
     models_checked = _checkpoint_nonnegative_int(
         data, "models_checked_cumulative"
@@ -485,7 +639,7 @@ def _load_checkpoint_state(
         if batch["gate"] >= config.state_count:
             raise ValueError("checkpoint batch gate is outside the DFA")
         if config.gate is not None and batch["gate"] != config.gate:
-            raise ValueError("checkpoint batch gate disagrees with fixed partition")
+            raise ValueError("checkpoint batch gate does not match its fixed partition")
         if batch["new_implications"] != batch["violating_endpoint_pairs"]:
             raise ValueError("checkpoint batch implication count is inconsistent")
         if batch["shortest_witness_length"] > batch["longest_witness_length"]:
@@ -506,17 +660,273 @@ def _load_checkpoint_state(
     if batches and batches[-1]["model_number_cumulative"] > models_checked:
         raise ValueError("checkpoint batch model number exceeds checked models")
 
+    raw_bank_imports = data.get("implication_bank_imports", [])
+    if not isinstance(raw_bank_imports, list):
+        raise ValueError("checkpoint implication_bank_imports must be a list")
+    bank_imports: list[dict[str, object]] = []
+    bank_digests: set[str] = set()
+    bank_fields = {
+        "bank_sha256",
+        "bank_file_sha256",
+        "source_checkpoint_sha256",
+        "source_checkpoint_schema",
+        "source_logical_signature",
+        "source_status",
+        "declared_implications",
+        "new_implications",
+        "duplicate_implications",
+    }
+    allowed_statuses = {
+        "running",
+        "model_limit",
+        "time_limit",
+        "solver_unknown",
+        "solver_unsat",
+        "verified_candidate",
+    }
+    for raw_import in raw_bank_imports:
+        if not isinstance(raw_import, dict) or set(raw_import) != bank_fields:
+            raise ValueError("checkpoint contains malformed bank provenance")
+        for field in (
+            "bank_sha256",
+            "bank_file_sha256",
+            "source_checkpoint_sha256",
+        ):
+            if not _is_sha256(raw_import[field]):
+                raise ValueError(f"checkpoint bank provenance {field} is invalid")
+        bank_sha = raw_import["bank_sha256"]
+        if bank_sha in bank_digests:
+            raise ValueError("checkpoint repeats an implication bank")
+        bank_digests.add(bank_sha)
+        if raw_import["source_checkpoint_schema"] != SCHEMA:
+            raise ValueError("checkpoint bank source schema is invalid")
+        signature = _validate_logical_signature(
+            raw_import["source_logical_signature"]
+        )
+        if raw_import["source_status"] not in allowed_statuses:
+            raise ValueError("checkpoint bank source status is invalid")
+        counts: dict[str, int] = {}
+        for field in (
+            "declared_implications",
+            "new_implications",
+            "duplicate_implications",
+        ):
+            value = raw_import[field]
+            if type(value) is not int or value < 0:
+                raise ValueError(f"checkpoint bank provenance {field} is invalid")
+            counts[field] = value
+        if (
+            counts["new_implications"] + counts["duplicate_implications"]
+            != counts["declared_implications"]
+        ):
+            raise ValueError("checkpoint bank provenance counts are inconsistent")
+        bank_imports.append(
+            {
+                **raw_import,
+                "source_logical_signature": signature,
+            }
+        )
+    if sum(item["new_implications"] for item in bank_imports) != len(imported):
+        raise ValueError("checkpoint bank provenance does not account for imports")
+
     return LoadedCheckpoint(
-        tuple(learned), models_checked, float(elapsed), tuple(batches)
+        tuple(learned),
+        tuple(imported),
+        models_checked,
+        float(elapsed),
+        tuple(batches),
+        tuple(bank_imports),
     )
 
 
 def load_checkpoint(
     path: Path, config: SpineSearchConfig, transducer=None
 ) -> list[LearnedImplication]:
-    """Load validated learned obligations from a matching checkpoint."""
+    """Load every validated obligation enforced by a matching checkpoint.
 
-    return list(_load_checkpoint_state(path, config, transducer).learned)
+    Locally learned obligations come first, followed by portable imports.  The
+    private state loader retains the two ledgers separately for accounting.
+    """
+
+    loaded = _load_checkpoint_state(path, config, transducer)
+    return [*loaded.learned, *loaded.imported]
+
+
+def _config_from_checkpoint_data(data: dict[str, object]) -> SpineSearchConfig:
+    raw = data.get("config")
+    fields = {
+        "state_count",
+        "gate",
+        "force_zero_loop",
+        "force_11_prefix",
+        "solver_seed",
+        "max_models",
+        "time_limit_seconds",
+    }
+    if not isinstance(raw, dict) or set(raw) != fields:
+        raise ValueError("checkpoint config is malformed")
+    signature = _validate_logical_signature(
+        {field: raw[field] for field in SpineSearchConfig(3).logical_signature()}
+    )
+    max_models = raw["max_models"]
+    if max_models is not None and (type(max_models) is not int or max_models < 1):
+        raise ValueError("checkpoint max_models is invalid")
+    time_limit = raw["time_limit_seconds"]
+    if time_limit is not None and (
+        isinstance(time_limit, bool)
+        or not isinstance(time_limit, (int, float))
+        or time_limit <= 0
+    ):
+        raise ValueError("checkpoint time_limit_seconds is invalid")
+    return SpineSearchConfig(
+        **signature,
+        max_models=max_models,
+        time_limit_seconds=None if time_limit is None else float(time_limit),
+    )
+
+
+def export_implication_bank(checkpoint_path: Path, bank_path: Path) -> dict[str, object]:
+    """Export only universally sound closure obligations from a checkpoint.
+
+    Model counts, batches, elapsed time, candidates, and solver conclusions are
+    deliberately excluded.  They are not needed to reuse ``w -> T(w)`` across
+    gate partitions and are not trusted by an importing search.
+    """
+
+    raw = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+    if not isinstance(raw, dict):
+        raise ValueError("checkpoint root must be an object")
+    config = _config_from_checkpoint_data(raw)
+    loaded = _load_checkpoint_state(checkpoint_path, config)
+    status = raw.get("status")
+    allowed_statuses = {
+        "running",
+        "model_limit",
+        "time_limit",
+        "solver_unknown",
+        "solver_unsat",
+        "verified_candidate",
+    }
+    if status not in allowed_statuses:
+        raise ValueError("checkpoint status is invalid for bank provenance")
+
+    implications = _ordered_implications((*loaded.learned, *loaded.imported))
+    implication_dicts = [item.to_dict() for item in implications]
+    source = {
+        "checkpoint_sha256": _sha256_file(checkpoint_path),
+        "checkpoint_schema": SCHEMA,
+        "logical_signature": config.logical_signature(),
+        "status": status,
+        "locally_learned_implications": len(loaded.learned),
+        "inherited_imported_implications": len(loaded.imported),
+    }
+    payload: dict[str, object] = {
+        "schema": BANK_SCHEMA,
+        "program": "exact-floor-spine-cegis",
+        "semantics": BANK_SEMANTICS,
+        "source": source,
+        "implication_count": len(implications),
+        "implications_sha256": _implication_digest(implications),
+        "implications": implication_dicts,
+    }
+    payload["bank_sha256"] = _bank_payload_digest(payload)
+    _atomic_json_write(bank_path, payload)
+    return payload
+
+
+def load_implication_bank(path: Path, transducer=None) -> ImplicationBank:
+    """Load a portable bank, validating integrity and every exact T-image."""
+
+    raw_bytes = path.read_bytes()
+    raw = json.loads(raw_bytes.decode("utf-8"))
+    root_fields = {
+        "schema",
+        "program",
+        "semantics",
+        "source",
+        "implication_count",
+        "implications_sha256",
+        "implications",
+        "bank_sha256",
+    }
+    if not isinstance(raw, dict) or set(raw) != root_fields:
+        raise ValueError("implication bank root is malformed")
+    if raw["schema"] != BANK_SCHEMA or raw["program"] != "exact-floor-spine-cegis":
+        raise ValueError("implication bank schema or program mismatch")
+    if raw["semantics"] != BANK_SEMANTICS:
+        raise ValueError("implication bank semantics mismatch")
+    bank_sha = raw["bank_sha256"]
+    if not _is_sha256(bank_sha):
+        raise ValueError("implication bank payload digest is malformed")
+    unsigned = dict(raw)
+    del unsigned["bank_sha256"]
+    if _bank_payload_digest(unsigned) != bank_sha:
+        raise ValueError("implication bank payload digest mismatch")
+
+    source = raw["source"]
+    source_fields = {
+        "checkpoint_sha256",
+        "checkpoint_schema",
+        "logical_signature",
+        "status",
+        "locally_learned_implications",
+        "inherited_imported_implications",
+    }
+    if not isinstance(source, dict) or set(source) != source_fields:
+        raise ValueError("implication bank source provenance is malformed")
+    if not _is_sha256(source["checkpoint_sha256"]):
+        raise ValueError("implication bank source checkpoint digest is malformed")
+    if source["checkpoint_schema"] != SCHEMA:
+        raise ValueError("implication bank source checkpoint schema is invalid")
+    signature = _validate_logical_signature(source["logical_signature"])
+    allowed_statuses = {
+        "running",
+        "model_limit",
+        "time_limit",
+        "solver_unknown",
+        "solver_unsat",
+        "verified_candidate",
+    }
+    if source["status"] not in allowed_statuses:
+        raise ValueError("implication bank source status is invalid")
+    for field in (
+        "locally_learned_implications",
+        "inherited_imported_implications",
+    ):
+        if type(source[field]) is not int or source[field] < 0:
+            raise ValueError(f"implication bank source {field} is invalid")
+
+    machine = shortcut_transducer() if transducer is None else transducer
+    implications = _parse_implication_items(
+        raw["implications"], machine, label="implication bank"
+    )
+    declared = raw["implication_count"]
+    if type(declared) is not int or declared != len(implications):
+        raise ValueError("implication bank count is inconsistent")
+    if (
+        source["locally_learned_implications"]
+        + source["inherited_imported_implications"]
+        != declared
+    ):
+        raise ValueError("implication bank source counts are inconsistent")
+    if not _is_sha256(raw["implications_sha256"]):
+        raise ValueError("implication bank implication digest is malformed")
+    if _implication_digest(implications) != raw["implications_sha256"]:
+        raise ValueError("implication bank implication digest mismatch")
+    ordered_dicts = [item.to_dict() for item in _ordered_implications(implications)]
+    if raw["implications"] != ordered_dicts:
+        raise ValueError("implication bank entries are not canonically ordered")
+
+    provenance = {
+        "bank_sha256": bank_sha,
+        "bank_file_sha256": _sha256_bytes(raw_bytes),
+        "source_checkpoint_sha256": source["checkpoint_sha256"],
+        "source_checkpoint_schema": source["checkpoint_schema"],
+        "source_logical_signature": signature,
+        "source_status": source["status"],
+        "declared_implications": declared,
+    }
+    return ImplicationBank(tuple(implications), bank_sha, provenance)
 
 
 def run_spine_cegis(
@@ -525,6 +935,7 @@ def run_spine_cegis(
     checkpoint_path: Path | None = None,
     result_path: Path | None = None,
     resume_path: Path | None = None,
+    implication_bank_paths: Sequence[Path] = (),
 ) -> dict[str, object]:
     """Run exact-oracle CEGIS within one declared spine/gate partition."""
 
@@ -533,21 +944,53 @@ def run_spine_cegis(
     loaded = (
         _load_checkpoint_state(resume_path, config, transducer)
         if resume_path is not None
-        else LoadedCheckpoint((), 0, 0.0, ())
+        else LoadedCheckpoint((), (), 0, 0.0, (), ())
     )
     learned = list(loaded.learned)
+    imported = list(loaded.imported)
     batch_history = list(loaded.batch_history)
+    bank_imports = list(loaded.bank_imports)
     models_checked_before_run = loaded.models_checked_cumulative
     elapsed_seconds_before_run = loaded.elapsed_seconds_cumulative
     learned_before_run = len(learned)
+    imported_before_run = len(imported)
     batches_before_run = len(batch_history)
     # Preserve the user-supplied path rather than embedding an environment-
     # specific absolute workspace path in a result intended for version control.
-    resume_source = None if resume_path is None else resume_path.as_posix()
-    learned_keys = {
+    resume_source = (
+        None if resume_path is None else _portable_display_path(resume_path)
+    )
+    enforced_keys = {
         (item.input_word, item.output_word) for item in learned
     }
-    for implication in learned:
+    enforced_keys.update(
+        (item.input_word, item.output_word) for item in imported
+    )
+    known_bank_digests = {item["bank_sha256"] for item in bank_imports}
+    for bank_path in implication_bank_paths:
+        bank = load_implication_bank(bank_path, transducer)
+        if bank.bank_sha256 in known_bank_digests:
+            continue
+        new_count = 0
+        duplicate_count = 0
+        for implication in bank.implications:
+            key = (implication.input_word, implication.output_word)
+            if key in enforced_keys:
+                duplicate_count += 1
+                continue
+            enforced_keys.add(key)
+            imported.append(implication)
+            new_count += 1
+        bank_imports.append(
+            {
+                **bank.provenance,
+                "new_implications": new_count,
+                "duplicate_implications": duplicate_count,
+            }
+        )
+        known_bank_digests.add(bank.bank_sha256)
+
+    for implication in (*learned, *imported):
         encoding.add_implication(implication)
 
     started = time.monotonic()
@@ -565,6 +1008,9 @@ def run_spine_cegis(
             elapsed_seconds_before_run=elapsed_seconds_before_run,
             learned=learned,
             learned_before_run=learned_before_run,
+            imported=imported,
+            imported_before_run=imported_before_run,
+            bank_imports=bank_imports,
             batch_history=batch_history,
             batches_before_run=batches_before_run,
             resume_source=resume_source,
@@ -664,11 +1110,11 @@ def run_spine_cegis(
                 primary_seen = True
             implication = LearnedImplication(input_word, output_word)
             key = (implication.input_word, implication.output_word)
-            if key in learned_keys:
+            if key in enforced_keys:
                 raise AssertionError(
                     "exact relation repeated an already-enforced closure violation"
                 )
-            learned_keys.add(key)
+            enforced_keys.add(key)
             batch.append(implication)
 
         if not primary_seen:
@@ -710,6 +1156,9 @@ def run_spine_cegis(
                     elapsed_seconds_before_run=elapsed_seconds_before_run,
                     learned=learned,
                     learned_before_run=learned_before_run,
+                    imported=imported,
+                    imported_before_run=imported_before_run,
+                    bank_imports=bank_imports,
                     batch_history=batch_history,
                     batches_before_run=batches_before_run,
                     resume_source=resume_source,
@@ -745,6 +1194,20 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--result", type=Path)
     parser.add_argument("--resume", type=Path)
     parser.add_argument(
+        "--import-bank",
+        action="append",
+        type=Path,
+        default=[],
+        help="import a portable exact implication bank; may be repeated",
+    )
+    parser.add_argument(
+        "--export-bank",
+        nargs=2,
+        type=Path,
+        metavar=("CHECKPOINT", "BANK"),
+        help="export validated implications without running synthesis",
+    )
+    parser.add_argument(
         "--dry-diagnostic",
         action="store_true",
         help="run a five-state engine diagnostic, not a scientific search",
@@ -754,6 +1217,22 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = _parser().parse_args(argv)
+    if args.export_bank is not None:
+        checkpoint_path, bank_path = args.export_bank
+        payload = export_implication_bank(checkpoint_path, bank_path)
+        print(
+            json.dumps(
+                {
+                    "status": "implication_bank_exported",
+                    "path": bank_path.as_posix(),
+                    "bank_sha256": payload["bank_sha256"],
+                    "implication_count": payload["implication_count"],
+                },
+                indent=2,
+                sort_keys=True,
+            )
+        )
+        return 0
     config = (
         diagnostic_config(args.seed)
         if args.dry_diagnostic
@@ -773,6 +1252,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             checkpoint_path=args.checkpoint,
             result_path=args.result,
             resume_path=args.resume,
+            implication_bank_paths=args.import_bank,
         )
     except RuntimeError as exc:
         print(json.dumps({"status": "missing_optional_dependency", "error": str(exc)}))

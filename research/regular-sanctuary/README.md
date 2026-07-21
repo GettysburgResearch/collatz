@@ -25,7 +25,7 @@ No such language is claimed here.  This contribution establishes an exact
 laboratory for stating, checking, synthesizing, and refuting bounded regular
 sanctuary candidates.
 
-## First-session results
+## Current results
 
 The experiment under
 [`experiments/X-9101-regular-sanctuary`](../../experiments/X-9101-regular-sanctuary/)
@@ -38,7 +38,7 @@ provides:
 5. the maximal safe accepting set for any fixed DFA transition skeleton;
 6. exact finite-horizon safety approximants;
 7. a Python-standard-library-only JSON certificate checker;
-8. 57 regression tests in the current extended suite, including a known
+8. 76 regression tests in the current extended suite, including a known
    `3n-1` nontrivial cycle;
 9. exact bounded searches over all labeled one- through four-state skeletons;
 10. an initial structured search behind a 72-bit length guard;
@@ -46,7 +46,11 @@ provides:
 12. a second preimage/inclusion closure route, exhaustively differential-tested
     against the primary verifier on all 5,898 labeled DFAs through three states;
 13. a checkpointable exact-floor CEGIS driver whose every proposed automaton
-    is adjudicated by the unchanged exact verifier.
+    is adjudicated by the unchanged exact verifier;
+14. a portable, individually revalidated bank of exact closure implications
+    with source and target accounting kept separate;
+15. a conditional 71-state odd-suffix CEGIS lane with exact `U` checking and
+    mandatory final verification of its raw shortcut lift.
 
 All one- through four-state standard-Collatz skeletons had empty maximal safe
 kernels.  Every one- and two-state transition core behind the fixed 72-bit
@@ -59,9 +63,16 @@ proposed 72-state machines, learning 213 concrete closure implications.  Its
 status is `time_limit`, not UNSAT.  Exact verification may finish after a
 solver deadline; the frozen checkpoint makes subsequent work cumulative.
 
+Those 213 clauses now form a portable logical bank. A bounded raw gate-3 scout
+imported the bank, checked two models, and learned three further clauses before
+its 20.016-second soft boundary. A separate structured suffix-gate-2 scout
+normalized all 213 clauses through the exact odd map, checked five models, and
+learned 11 more before its 20.125-second soft boundary. Both statuses are
+`time_limit`; neither is an UNSAT result or evidence for convergence.
+
 ## Structural constraints added after adversarial review
 
-Five further proposed lemmas sharply narrow the target without claiming that
+Seven further proposed lemmas sharply narrow the target without claiming that
 arbitrary regular sanctuaries are impossible:
 
 - `L-9106` gives an existence equivalence with regular odd languages invariant
@@ -81,6 +92,13 @@ arbitrary regular sanctuaries are impossible:
 - `L-9110` proves that maximal semantic kernels are monotone under
   right-congruence refinement.  An empty kernel on a fine skeleton cannot be
   repaired by literally quotienting or transition-stably merging its states.
+- `L-9111` removes the forced dyadic state at the conditional exact floor: a
+  safe `U`-invariant suffix language needs at least 71 states, and equality
+  forces a complete suffix spine with gate `2,...,70`.
+- `L-9112` replaces noncanonical comparisons between independently minimized
+  Boolean safety DFAs by a strict chain of first-hit-colored Moore refinements.
+  Bare colored skeletons are only finite/cofinite; their useful role is as
+  exact features in products with a genuinely recurrent skeleton.
 
 Thus a genuinely new counterexample family must be sought in a nonslender,
 branching language with unbounded high-bit dependence, unless the computation
@@ -115,6 +133,13 @@ At exactly 72 states, L-9109 supplies stronger symmetry breaking than a
 generic guard: exact BFS spine distances, upper-Hessenberg transitions, a
 semantically singleton accepting gate, and forced low transitions.  Above 72
 states, spine exhaustion and the zero-loop conclusion no longer follow.
+
+L-9111 exploits L-9109's forced zero loop by splitting off the dyadic state.
+Every odd word is uniquely `1x`; a 71-state DFA reads only `x`, and adjoining
+one zero-loop state produces a raw 72-state shortcut DFA. This covers suffix
+gates `2,...,70`, corresponding to raw gates `3,...,71`, but it is a structured
+subspace: raw gate 0 and work-state transitions back to the added state remain
+outside it.
 
 ## Why this direction is not covered by active no-go results
 
@@ -160,13 +185,15 @@ minimal-DFA component is the inevitable two-state canonical tail, and that
 stripping this tail leaves a DAG.  Its depth-0-through-20 state counts exactly
 reproduce X-9101's frozen sequence without importing this branch's transducer.
 
-This complements rather than duplicates L-9110.  L-9201 removes a specific
+This complements rather than duplicates L-9110. L-9201 removes a specific
 finite-horizon false signal; L-9110 says a literal quotient cannot repair an
-empty fine-skeleton maximal kernel.  The shared next interface is to compare
-sink-stripped boundary DAGs across depths, compose any learned motif with a
-genuinely non-cofinite recurrent guard, and submit the result immediately to
-X-9101's exact closure verifier.  Neither proposed lemma is promoted by the
-cross-check.
+empty fine-skeleton maximal kernel. L-9112 now supplies the missing inter-depth
+map: retain exact first-hit colors, and `H_(d+1)` projects canonically and
+strictly onto `H_d`. The bare colored machines still express only finite or
+cofinite semantic languages, so their boundary fibers must be paired with a
+genuinely recurrent feature. Popcount parity is the smallest first control.
+Every resulting product returns immediately to X-9101's exact closure
+verifier. None of the proposed lemmas is promoted by these cross-checks.
 
 See https://github.com/gfreund123/collatz/pull/14.
 
@@ -176,31 +203,35 @@ See https://github.com/gfreund123/collatz/pull/14.
 2. [`CLAIMS.md`](CLAIMS.md) for exact statuses and dependency boundaries.
 3. The [experiment README](../../experiments/X-9101-regular-sanctuary/README.md).
 4. `verify.py` for the standard-library-only checker core.
-5. `independent_check.py`, `odd_core.py`, and `spine_cegis.py` for the new
-   differential, accelerated, and synthesis layers.
-6. The four `test_*.py` modules for adversarial controls.
-7. `results/summary.json` and `results/spine-q72-gate0-scout.json` for the
-   frozen baseline and resumable exact-floor scout.
+5. `independent_check.py`, `odd_core.py`, `spine_cegis.py`, and
+   `odd_suffix_cegis.py` for the differential, accelerated, and synthesis
+   layers.
+6. The five `test_*.py` modules for adversarial controls.
+7. `results/summary.json`, `results/spine-q72-gate0-bank.json`, and the scout
+   artifacts listed in the experiment README for frozen empirical boundaries.
 
 ## Next attacks
 
-1. Generate deeper safety approximants and minimize them; mine recurring SCC
-   features only after stripping the cofinite canonical tail identified by PR
-   #14.  Compare boundary DAGs across depths and use motifs for refinements,
-   products, or redesigned skeletons; a literal quotient cannot repair an
-   empty maximal kernel.
-2. Resume the exact-floor CEGIS checkpoint and cover gate partitions
-   `0,3,...,71` under identical, explicitly bounded configurations.  Gates 1
-   and 2 conflict with the forced initial `11` spine.
-3. Search nonslender odd-core automata through the seven-state `U` transducer;
-   lift every proposal to `0* O` and recheck it under the base shortcut map.
-4. Add low-residue filters after the length spine only when a branching
+1. Cover suffix gates `2,...,70` from the common normalized obstruction bank,
+   keeping imported clauses, local clauses, models, and time separate. Search
+   for a finite combinatorial obstruction recurring across gates rather than
+   treating a long sequence of timeouts as evidence.
+2. Run raw partitions `0,3,...,71` as the broader control. Gates 1 and 2
+   conflict with the forced initial `11` spine. Share only revalidated exact
+   clauses across partitions, never solver conclusions.
+3. Implement the L-9112 colored refinement chain and test popcount parity
+   products at depths `8,12,16,20,24`, followed by adjacent-`11` parity. A
+   proper nonempty canonical-tail fiber is the first interesting signal; any
+   proposal still needs the base shortcut verifier.
+4. Search other nonslender odd-core automata through the seven-state `U`
+   transducer; lift every proposal to `0* O` and recheck it under the base map.
+5. Add low-residue filters after the length spine only when a branching
    high-bit machine prevents acceptance of a whole cylinder.
-5. Extend maximal-safe-kernel synthesis to cyclic phase covers without
+6. Extend maximal-safe-kernel synthesis to cyclic phase covers without
    composing a large transducer for `T^B`.
-6. Add proof logging or a separately authored checker before treating any
+7. Add proof logging or a separately authored checker before treating any
    solver-level UNSAT report as more than a bounded computational observation.
-7. Request independent reconstruction of `L-9101` through `L-9110` before any
+8. Request independent reconstruction of `L-9101` through `L-9112` before any
    status promotion, including the external slender-language decomposition.
 
 ## Literature boundary

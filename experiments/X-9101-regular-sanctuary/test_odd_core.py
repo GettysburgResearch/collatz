@@ -17,6 +17,7 @@ from odd_core import (
     direct_fully_accelerated_odd,
     direct_odd_core_map,
     lift_odd_dfa_to_shortcut,
+    lift_odd_suffix_dfa_to_shortcut,
     odd_core_transducer,
     odd_part,
     transduce_odd_word,
@@ -207,6 +208,39 @@ class OddCoreLiftTests(unittest.TestCase):
                     lifted.accepts_canonical(encode_lsd(image)),
                     (value, image),
                 )
+
+
+class OddSuffixLiftTests(unittest.TestCase):
+    def test_suffix_lift_accepts_exactly_by_stripped_odd_word(self) -> None:
+        suffix_dfa = finite_language_dfa(("1", "01", "101"))
+        lifted = lift_odd_suffix_dfa_to_shortcut(suffix_dfa)
+        self.assertEqual(lifted.state_count, suffix_dfa.state_count + 1)
+
+        for value in range(1, 10_000):
+            odd_word = encode_lsd(odd_part(value))
+            expected = suffix_dfa.accepts_raw(odd_word[1:])
+            observed = lifted.accepts_canonical(encode_lsd(value))
+            self.assertEqual(observed, expected, value)
+
+    def test_accepting_empty_suffix_exposes_trivial_cycle(self) -> None:
+        suffix_dfa = universal_dfa()
+        lifted = lift_odd_suffix_dfa_to_shortcut(suffix_dfa)
+        result = verify_candidate(lifted, shortcut_transducer())
+        self.assertFalse(result.valid)
+        self.assertEqual(
+            result.reason,
+            "semantic language contains a forbidden trivial-cycle word",
+        )
+        self.assertTrue(lifted.accepts_canonical(encode_lsd(1)))
+        self.assertTrue(lifted.accepts_canonical(encode_lsd(2)))
+
+    def test_minus_one_suffix_cycle_is_a_positive_control(self) -> None:
+        # Full odd words 101 and 111 become suffixes 01 and 11.
+        suffix_dfa = finite_language_dfa(("01", "11"))
+        lifted = lift_odd_suffix_dfa_to_shortcut(suffix_dfa)
+        result = verify_candidate(lifted, shortcut_transducer(-1))
+        self.assertTrue(result.valid, result.to_dict())
+        self.assertEqual(decode_lsd(result.accepted_witness), 5)
 
 
 if __name__ == "__main__":

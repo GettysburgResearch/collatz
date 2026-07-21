@@ -440,7 +440,104 @@ transition stable and defines a genuine quotient.  Refining states, adding
 features, taking products, or redesigning transitions creates a different
 search space and remains open.
 
-## 13. Scope cautions
+## 13. Conditional odd-suffix normal form and clause transport
+
+Every odd canonical word is uniquely `1x`, where
+
+$$
+x\in\mathcal C_{\mathrm{suf}}
+=\{\epsilon\}\cup\{0,1\}^*1.
+$$
+
+Let a complete `p`-state DFA `A` read only `x`, and define `O_A` to contain
+the odd values whose suffixes it accepts. Adjoin a new state `s` with
+
+$$
+\delta(s,0)=s,\qquad \delta(s,1)=r_0,
+$$
+
+where `r_0` is the start of `A`; retain every transition of `A` and do not
+make `s` accepting. Under canonical semantics this raw `p+1` state lift
+recognizes exactly `Sat_2(O_A)`. It deliberately remains unminimized because
+the state count is part of the conditional floor argument.
+
+If `O_A` is nonempty, excludes `1`, and is `U`-invariant, L-9106 makes the
+lift a shortcut sanctuary. Conditional on verification below `2^71`, L-9104
+therefore gives `p+1>=72`, or `p>=71`. At equality, translating L-9109 gives
+71 exhaustive exact-distance suffix states, upper-Hessenberg transitions, a
+forced first suffix edge `r_0 --1--> r_1`, and a singleton semantic gate
+`r_h` with `2<=h<=70`. These are necessary conditions only. The structured
+lift excludes raw gate 0 and does not cover generic work transitions returning
+to `s`.
+
+Exact shortcut implications can be transported into this representation.
+For a canonical word `w`, let `odd(w)` delete **all** initial LSD zeros and let
+
+$$
+\sigma(w)=\operatorname{odd}(w)[1:]
+$$
+
+delete the forced odd marker. Membership in any saturated language `0* O`
+depends only on `sigma(w)`. Hence every necessary shortcut clause
+
+$$
+w\in L\Longrightarrow T(w)\in L
+$$
+
+induces the necessary suffix clause
+
+$$
+\sigma(w)\in X\Longrightarrow\sigma(T(w))\in X.
+$$
+
+For even `w` this is a saturation identity. For odd `w`, the odd part of
+`T(w)` is exactly `U(w)`. It is essential to remove every low zero from the
+output: deleting only the one division already built into the shortcut map is
+wrong whenever `nu_2(3w+1)>1`. The importer first rechecks the full exact
+`w -> T(w)` image. It validates even-source clauses as odd-part identities and
+rechecks odd-source pairs against the separate exact odd-core transducer.
+Imported and locally learned ledgers remain separate, and neither source
+model accounting nor solver conclusion is transported. Source status is kept
+only as non-authoritative provenance.
+
+## 14. Depth-colored refinement features
+
+Let `tau(n)` be the first shortcut time at which `n` reaches `{1,2}`, or
+infinity if it never does. At horizon `d`, color a canonical word by its exact
+`tau` when `tau<=d`, by `star_d` otherwise, and color every noncanonical word
+`bot`. Let `H_d` be the minimal reachable Moore machine for this coloring.
+
+The color truncation that fixes `bot,0,...,d` and identifies `d+1` and
+`star_(d+1)` with `star_d` proves that the right congruence of `H_(d+1)`
+refines that of `H_d`. The canonical map
+
+$$
+\pi_{d+1,d}([w]_{d+1})=[w]_d
+$$
+
+is a surjective transition homomorphism compatible with color truncation. It
+is strict at every depth: `2^(d+2)` has first-hit time `d+1`, so its word is in
+the shallow final-`1` tail but remains a distinguished deep boundary state.
+
+For fixed `d`, the set of values with `tau<=d` is finite and has maximum
+`2^(d+1)`. Outside the finite prefix closure of their encodings, residuals
+depend only on the final bit. Thus `H_d` has a two-state cyclic tail and an
+acyclic boundary. Any accepting set on the bare skeleton either accepts the
+final-`1` tail state, making its semantic language cofinite, or rejects it,
+making the language finite. The first alternative is unsafe because it
+contains large powers of two; the second can be invariant only by containing
+an eventual cycle. Conditional on verification below `2^71`, its maximal
+kernel is empty through `d=69`.
+
+The colored chain is therefore a feature generator, not a direct sanctuary
+template. For a fixed genuinely recurrent skeleton `R`, the reachable products
+`R product H_d` retain canonical projections obtained by restricting
+`id_R product pi_(d+1,d)`, so L-9110 gives monotone maximal kernels. Popcount
+parity is the smallest first control: it is recurrent, nonslender, noncofinite,
+and not determined by any fixed low-bit cylinder. Every nonempty product
+kernel must still pass the unchanged exact shortcut verifier.
+
+## 15. Scope cautions
 
 - Fixed-DFA and fixed-block verification is decidable; unrestricted existence
   over all automaton sizes is not claimed decidable.
@@ -452,6 +549,8 @@ search space and remains open.
   high-bit languages remain open.
 - Empty fine-skeleton kernels exclude their literal quotients by L-9110, not
   refinements, augmentations, or independently designed automata.
+- The 71-state suffix floor and the `d<=69` colored-kernel corollary are
+  conditional on the external verified range; candidate verification is not.
 - BFS witnesses are shortest by length and LSD-first lexicographic order, not
   necessarily numerically least.
 - A regular sanctuary is stronger than a lone divergent orbit; Collatz falsity
