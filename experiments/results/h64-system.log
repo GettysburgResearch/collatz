@@ -1,0 +1,35 @@
+== S1: six-step collision ==
+[PASS] B_u = 146, B_v = 65
+[PASS] residues: 14 realizes u, 15 realizes v
+[PASS] T^6(64q+14) = T^6(64q+15) = 81q+20 (q = 0..299)
+[PASS] supercritical: 3^4/2^6 = 81/64 > 1
+== S2: conjugacy and the induced map H ==
+[PASS] Y-coordinate: 64Z -> 81Z and 64Z+17 -> 81Z with Z = 17q+6
+[PASS] H-step == T^6 on lifted integers; class 6 mod 17 invariant; A strictly grows (212 random valid A)
+== S3: the four collision charts ==
+[PASS] four charts: collisions exact, B_u - B_v = 81, adjacent residues
+[PASS] chart classes mod 17 = [6, 0, 8, 3]
+  collision census (a = odd count, t = translation): a=1,t=1: 1 pairs, a=1,t=2: 1 pairs, a=1,t=4: 1 pairs, a=1,t=5: 1 pairs, a=1,t=8: 1 pairs, a=1,t=10: 1 pairs, a=2,t=1: 5 pairs, a=2,t=2: 4 pairs, a=2,t=3: 1 pairs, a=2,t=4: 2 pairs, a=2,t=5: 2 pairs, a=3,t=1: 8 pairs, a=3,t=2: 3 pairs, a=4,t=1: 4 pairs
+[PASS] adjacent (t=1) supercritical (a=4) collisions: exactly the four charts at residues [14, 18, 54, 60]
+[PASS] no supercritical collisions with a >= 5 at L=6
+== S4: no fixed-length translation collision inside H ==
+[PASS] no two {0,1}-words of equal length m <= 8 with 81^m | C_u - C_v
+== S5/S6: mixed-radix rewrite and the nine-column carry cycle ==
+[PASS] string rewrite realizes H exactly (2000 random A)
+[PASS] carry 19-cycle mod 81 has length 9: 1,19,37,55,73,10,28,46,64
+[PASS] W-hat digits 15,29,43,57,7,22,36,50,0: carry 1 traverses, emits 0^9, returns as carry 1
+== S7: stack amplifier with full Collatz lift ==
+[PASS] amplifier identities (7.2),(7.3) exact (m <= 3, random x)
+[PASS] FULL COLLATZ LIFT: T^{6(9m+1)}(n) matches the amplifier (m <= 3, x == chart class)
+== S8: regeneration residues and a steered 3-stage tower ==
+[PASS] (8.2): regeneration residue exists and is unique; x' integral and expanding
+[PASS] explicit steered tower: S_1(x1) -H^10-> S_2(x2) -H^19-> 81^18(81 x2 + 1)
+[PASS] tower lift: T^174 on the 180-bit Collatz integer matches
+== S9: boundary slope ==
+[PASS] CF of log_64 81 begins [1;17,1,1,1,8,1,2] (got [1, 17, 1, 1, 1, 8, 1, 2])
+[PASS] log_64 81 irrational (81^q = 64^p impossible)
+== free validity in the H-system ==
+  7354 valid seeds A == 6 mod 17, digit in {0,1}: run-length distribution {1: 7124, 2: 223, 3: 7}
+[PASS] free continuation ~ Geometric(1/32): mean extra steps 0.0322 vs 1/31 = 0.0323
+
+ALL CHECKS PASS
