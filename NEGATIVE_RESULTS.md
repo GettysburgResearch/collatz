@@ -81,7 +81,9 @@ The useful scale remains fixed while a hypothetical orbit's boundary grows.
 The branch covering \(q=v\) must satisfy
 
 \[
-u=2^Lv,\qquad a=0,\]
+u=2^Lv,
+\qquad a=0,
+\]
 
 and is therefore the all-even contracting return with multiplier \(2^{-L}\).
 
@@ -99,10 +101,10 @@ and is therefore the all-even contracting return with multiplier \(2^{-L}\).
 
 where \(W\) is the unchanged core offset diameter and \(\lambda_k\) is the final expansion ratio.
 
-If \(\lambda_k\ge1+arepsilon\), then
+If \(\lambda_k\ge1+\varepsilon\), then
 
 \[
-\Delta_k<2^{-k}/arepsilon.
+\Delta_k<2^{-k}/\varepsilon.
 \]
 
 **Consequence:** branching and drift are algebraically separable but not geometrically independent. Long post-merger tails can make the stationary real rounding window exponentially narrow.
@@ -118,12 +120,56 @@ O-0005: 339 branches, aspect ~= 3.26e-9
 
 The complete-dyadic-projection examples fall to aspect ratio about `4.72e-264` by `b=5`.
 
-By `T-0010`, an infinite stationary orbit must trap one fractional-part orbit \(\{C(N/M)^t\}\) in an arc of precisely this normalized width.
-
 **Consequence:** branch count, low-order modular correction, and real control width are separate resources and may move in opposite directions.
 
 ## N-0013 — Positive local edges do not replace a graph-cycle audit
 
-In a multi-target return grammar, some local edges may be contracting. `T-0013` shows that what matters asymptotically is the multiplier of every directed grammar cycle, together with a phase-potential certificate.
+In a multi-target return grammar, some local edges may be contracting. `T-0013` shows that what matters asymptotically is the multiplier of every reachable directed grammar cycle, together with a phase-potential certificate.
 
-**Consequence:** neither rejecting every locally subcritical edge nor accepting a graph because its favored cycle expands is sound. The full selected graph must have positive cycle mean, or arithmetic constraints must prove that nonpositive cycles are unreachable.
+**Consequence:** neither rejecting every locally subcritical edge nor accepting a graph because its favored cycle expands is sound.
+
+## N-0014 — Complete renewal coverage has negative typical logarithmic growth
+
+For a complete binary parity prefix code, `T-0016` proves
+
+\[
+\sum_w2^{-|w|}\frac{3^{a(w)}}{2^{|w|}}=1.
+\]
+
+Thus the fair-Haar mean multiplier is one. But when the mean return length is finite,
+
+\[
+\mathbb E_{1/2}[\log\lambda]
+=
+\frac12\log(3/4)\,\mathbb E_{1/2}[L]<0.
+\]
+
+Almost every 2-adic quotient in a complete renewal system has negative block Lyapunov drift.
+
+**Consequence:** a divergent grammar cannot be a typical broad cover. It must select an entropy-thin, Haar-null exceptional language. Haar-null does not imply empty, so this is a design constraint rather than a refutation.
+
+## N-0015 — Cycle padding buys expansion with exponentially narrow cylinders
+
+`T-0015` turns a fixed mismatch type into a tower indexed by \(t\), with
+
+\[
+\lambda_t=\lambda_0\Lambda^t,
+\qquad
+L_t=L_0+t\ell.
+\]
+
+The fair cylinder mass simultaneously decreases as
+
+\[
+2^{-L_t}=2^{-L_0}(2^{-\ell})^t.
+\]
+
+For the negative eleven-cycle, some base transfers require padding levels \(21\) or \(45\) before becoming supercritical.
+
+**Consequence:** eventual edge expansion is abundant, but high-padding branches are extremely 2-adically specific. A successful stack grammar must regenerate the required valuations exactly; merely observing eventual supercriticality is weak.
+
+## N-0016 — A one-mismatch complement atlas is not a closed automaton
+
+`O-0008` follows a complementary mismatch only when the next difference is divisible by the full synchronized recovery power. If that congruence fails, another mismatch occurs before the selected target phase is reached.
+
+**Consequence:** the finite complement-basin table is a skeleton, not a complete selector. Closure requires a multi-mismatch automaton or a proof that accepted states always satisfy every recovery congruence.
