@@ -326,3 +326,80 @@ Next iterations: (i) the Ĉ_j product formula written out and its
 pairing with S tested for cancellation; (ii) the enhancement-decay
 lemma (fixed-point cluster thinning); (iii) the same refinement at
 the other ladder rungs (T-0025 makes it generic).
+
+---
+
+# P2 deep-dive IV: the Ĉ product formula and product rigidity
+
+*Same packet, fourth session (loop iteration 2). New claims T-0027,
+T-0028, O-0016, O-0017. Companion: `experiments/eq_joint_discrepancy.py`
+(→ `results/eq-joint-discrepancy.log`).*
+
+## 15. T-0027: the Cantor transform is the mirror product
+
+Unrolling C_j's lifting recursion through the character sum:
+
+    Ĉ_j(ψ) = Σ_{x∈C_j} e(ψx/81^j)
+           = Π_{i=1}^{j} (1 + e(−17·64^{−i}ψ / 81^{j−i+1})),
+
+with 64^{−i} the inverse mod 81^{j−i+1} — **the exact 81-adic mirror
+of T-0007**: same constant 17, same 64/81-orbit, places exchanged.
+(Verified: max |direct − product| = 9×10⁻⁸ over 160 samples, j ≤ 4.)
+
+## 16. T-0028: product rigidity of the survivor sets
+
+Measured first (O-0016): D*(CRT(R_n × C_j)) equals D*(R_{n+j}) to
+every printed digit — e.g. D*(R₁₀×C₂) = D*(R₁₂) = 0.003613,
+D*(R₁₀×C₃) = D*(R₁₂×C₁) = D*(R₁₃) = 0.002204 — and the joint set
+*improves* on both marginals (n = 10: 0.0449 alone → 0.0022 at
+j = 3). Explanation, then verified at element level:
+
+**Theorem (statement).** For every split K = n + j, each A ∈ R_K
+satisfies the exact identity `81^j A = 64^j A* + 17 c_w + r·64^K`
+where A* ∈ R_n is its j-fold H-image, w its low-j digit word (c_w the
+word constant), and r ∈ [0, 81^j) the room index; consequently A's
+normalized position is `(r + position(A*) + O(64^{−n}))/81^j`: **the
+coarse structure of R_K at scale 81^{−j} is the room process, and the
+fine structure inside each room is an exact translate of R_n.**
+Sorted-embedding comparison (element-by-element, exact
+cross-multiplied arithmetic): positions of R_{n+j} and CRT(R_n × C_j)
+agree within ~one joint-modulus slot (max 1.03 slots over all tested
+(n,j), with 1024–4096 exact equalities per set). Status: the
+per-element identity is proved (it is the coding identity read
+archimedeanly); the full order-isomorphism corollary needs the
+(room ↔ Cantor-class) bijection lemma per A*-fiber — written as
+PARTIAL pending that lemma.
+
+**Why it matters.** (i) The S–Ĉ pairing question of §12 has a
+positive answer at the set level: the product does not degrade
+equidistribution — it *is* the deeper set. (ii) EQ's core becomes a
+statement about the **room process alone**: the fine structure is
+recursively identical, so all new equidistribution content at each
+scale is the room walk — an 81-adic process driven by the same
+17·(64/81)-orbit, now isolated as a single object. (iii) The
+self-similar-measure literature interface (Li–Sahlsten/Solomyak,
+already flagged in MINIMAL.md) now has the product structure explicit
+rather than heuristic.
+
+## 17. O-0017: the enhancement is a boundary effect
+
+Mask-6 enhancement profile across n = 10…16: at fixed β the
+enhancement dies as the sample count grows — share of C₁ classes at
+β = 0.95: 0.058 → 0.023 (n = 10 → 16, samples 139 → 2357); at
+β = 1.0 uniform (0.0247) already by n = 11. The enhancement is
+carried by the first ~10²–10³ survivors (the fixed-point cluster),
+not by a persistent β-range: **Mask 6's o(1) is a bounded-count
+boundary effect** — the strongest empirical evidence yet that the
+mask is provable, since bounded-count effects vanish automatically at
+the law's scale.
+
+## 18. Loop queue after deep-dive IV
+
+1. Prove the (room ↔ class) bijection lemma → upgrade T-0028's
+   corollary from PARTIAL.
+2. The room process: write its exact transition law (it is
+   NOT i.i.d.; it is the 81-adic shift of the 17-orbit) and attack
+   its equidistribution directly — this is now the single object
+   carrying EQ.
+3. Bounded-count formalization of O-0017 → the enhancement-decay
+   lemma → Mask 6 with explicit o(1).
