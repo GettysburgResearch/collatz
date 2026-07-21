@@ -33,24 +33,33 @@ All mathematical claims on the active research branch await independent review.
 | L-0010 | Lemma | Fixed-weight prefixes biject onto every dyadic residue | PROPOSED | `claims/lemmas/L-0010-dyadic-prefix-bijection.md` | L-0001 |
 | T-0007 | Theorem | Supercritical fibers with complete projection modulo `2^b` | PROPOSED | `claims/theorems/T-0007-complete-dyadic-projection.md` | L-0005, L-0009, L-0010, T-0002, T-0005 |
 | X-0005 | Experiment | Exact complete-dyadic-projection construction through `b=5` | EMPIRICAL | `experiments/X-0005-dyadic-projection/` | L-0009, L-0010, T-0007 |
-| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0003, T-0004 |
+| T-0008 | Theorem | Every collision chart is a negative-template signed rational-base return system | PROPOSED | `claims/theorems/T-0008-negative-shadow-rational-base.md` | D-0001, L-0001, T-0002 |
+| T-0009 | Theorem | Renewal-code counterexample criterion and finite complete-code obstruction | PROPOSED | `claims/theorems/T-0009-renewal-code-criterion.md` | D-0001, L-0001, T-0008 |
+| T-0010 | Theorem | Fractional-window confinement and normalized aspect ratio | PROPOSED | `claims/theorems/T-0010-fractional-window-aspect-ratio.md` | T-0008 |
+| L-0011 | Lemma | Common odd-tail aspect-ratio tax | PROPOSED | `claims/lemmas/L-0011-odd-tail-aspect-ratio-tax.md` | L-0005, T-0005, T-0010 |
+| O-0006 | Observation | Exact aspect-ratio audit of the recorded collision charts | EMPIRICAL | `claims/observations/O-0006-recorded-chart-aspect-ratios.md` | O-0001--O-0005, T-0010, L-0011, X-0006 |
+| X-0006 | Experiment | Negative-shadow, renewal, and aspect-ratio checks | EMPIRICAL | `experiments/X-0006-shadow-return/` | T-0008--T-0010, L-0011 |
+| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0010 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, O-0001--O-0005 |
-| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009 |
+| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008 |
 | Q-0006 | Open question | Independent verification | IDEA | `OPEN_PROBLEMS.md` | all above |
-| Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003 |
-| Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004 |
-| Q-0009 | Open question | Structured collision codes and closure-quality geometry | IDEA | `OPEN_PROBLEMS.md` | L-0006, T-0005, O-0005, T-0006 |
+| Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009 |
+| Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0008 |
+| Q-0009 | Open question | Structured collision codes and closure-quality geometry | PARTIAL | `OPEN_PROBLEMS.md` | L-0006, T-0005--T-0007 |
 | Q-0010 | Resolved question | Growing complete dyadic projection | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | L-0009, L-0010, T-0007 |
-| Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007 |
+| Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007, T-0010 |
+| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009 |
+| Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006 |
 
 ## Relationship among the latest results
 
-- `L-0009` is a universal finite signature-completion mechanism.
-- `L-0010` constructs fixed-weight prefixes carrying every residue modulo `2^b`.
-- `T-0007` combines them with a finite odd drift tail to produce mildly supercritical collision fibers with complete projection modulo arbitrarily large powers of two.
-- The remaining problem is to convert this modular correction freedom into a uniform finite-boundary relay, not merely one-step solvability.
+- `T-0008` identifies every positive collision chart with a negative coalescence family and replaces the lifted digit map by the intrinsic signed equation `Nq = Mq' + a`.
+- `T-0009` turns variable negative returns into a direct counterexample certificate, while proving that a finite one-target complete all-supercritical code is impossible.
+- `T-0010` shows that every stationary return chain is simultaneously a controlled real rounding orbit trapped in a circle arc of length `diameter(D)/(N-M)`.
+- `L-0011` proves that long common odd tails can collapse this normalized window exponentially even while preserving branch offsets.
+- `O-0006` demonstrates that branch richness and normalized real control width can move in opposite directions.
 
 ## Status note
 
