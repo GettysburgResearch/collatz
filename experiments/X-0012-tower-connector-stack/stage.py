@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage-boundary checks for L-0021--L-0023 and O-0009."""
+"""Stage-boundary checks for L-0021--L-0024, T-0023, and O-0009."""
 
 from __future__ import annotations
 
@@ -118,9 +118,99 @@ def verify_stage_odometer_frontier_bulk() -> None:
             assert v2_nonzero((u_next - u) % (1 << N)) == m + 1
 
 
+def residual_connector(left, middle, right) -> tuple[int, int]:
+    """Return canonical z and z' for two consecutive connector tiles."""
+    _, theta = CORE.connector(left, middle)
+    eta_next, _ = CORE.connector(middle, right)
+    modulus = 1 << right.K
+    z = (
+        (eta_next - theta)
+        * pow(pow(3, left.G, modulus), -1, modulus)
+    ) % modulus
+    numerator = 3**left.G * z + theta - eta_next
+    assert numerator % modulus == 0
+    z_next = numerator // modulus
+    assert z_next >= 0
+    return z, z_next
+
+
+def verify_corrected_residual_budget() -> None:
+    for typ in CORE.TYPES:
+        # At this height C=8 has positive two-connector slope, while C=7
+        # already has the asymptotically wrong sign.
+        t = 1 << 12
+
+        jump8 = 1 << (t.bit_length() - 1 - 8)
+        t1 = t + jump8
+        jump8_next = 1 << (t1.bit_length() - 1 - 8)
+        t2 = t1 + jump8_next
+        left = CORE.tower(typ, t)
+        middle = CORE.tower(typ, t1)
+        right = CORE.tower(typ, t2)
+        assert 3**left.G > 1 << right.K
+
+        z0, z1 = residual_connector(left, middle, right)
+        _, theta = CORE.connector(left, middle)
+        eta_next, _ = CORE.connector(middle, right)
+        assert (
+            3**left.G * z0 + theta - eta_next
+            == (1 << right.K) * z1
+        )
+
+        for y in (0, 1, 3):
+            z = z0 + (1 << right.K) * y
+            zp = z1 + 3**left.G * y
+            assert (
+                3**left.G * z + theta - eta_next
+                == (1 << right.K) * zp
+            )
+
+        jump7 = 1 << (t.bit_length() - 1 - 7)
+        bad_right = CORE.tower(typ, t + 2 * jump7)
+        assert 3**left.G < 1 << bad_right.K
+
+
+def verify_256_stage_odometer() -> None:
+    for typ in CORE.TYPES:
+        for m in (13, 14):
+            H = m - typ.r - 7
+            assert H >= 1
+            precision = H + 10
+            start = 1 << m
+            jump = 1 << (m - 8)
+            base = CORE.omega_mod(typ, start, precision)
+
+            for j in range(1, 257):
+                current = CORE.omega_mod(
+                    typ,
+                    start + j * jump,
+                    precision,
+                )
+                difference = (current - base) % (1 << precision)
+                assert v2_nonzero(difference) == H + v2_nonzero(j)
+
+            # Check representative two-connector slopes throughout and across
+            # the stage boundary.
+            for j in (0, 1, 127, 253, 254, 255):
+                t = start + j * jump
+                t1 = t + jump
+                if j == 255:
+                    jump2 = jump * 2
+                else:
+                    jump2 = jump
+                t2 = t1 + jump2
+                assert 3**CORE.tower(typ, t).G > 1 << CORE.tower(typ, t2).K
+
+
 def main() -> None:
     verify_stage_odometer_frontier_bulk()
     print("verified stage odometer, periodic frontier, and quadratic bulk")
+
+    verify_corrected_residual_budget()
+    print("verified corrected C=8 residual-stack budget and C=7 failure")
+
+    verify_256_stage_odometer()
+    print("verified exact 256-step residual-stack stage")
     print("all stage-boundary checks passed")
 
 
