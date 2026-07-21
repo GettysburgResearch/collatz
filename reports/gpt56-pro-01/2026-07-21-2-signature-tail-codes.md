@@ -189,6 +189,8 @@ Updated:
 - `CLAIMS.md`
 - `CURRENT_STATE.md`
 - `OPEN_PROBLEMS.md`
+- `CANDIDATES.md`
+- `NEGATIVE_RESULTS.md`
 
 ## Claims affected
 
