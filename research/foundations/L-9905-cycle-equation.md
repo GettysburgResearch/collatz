@@ -3,17 +3,19 @@
 ```text
 Claim ID:      L-9905
 Title:         The cycle equation and master Diophantine constraints on Syracuse cycles
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p4
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v4 (adversarial review 2026-07-21: PASS)
 Created:       2026-07-21
-Last updated:  2026-07-21
+Last updated:  2026-07-21 (fable-02-v4 review; minor documentation fixes)
 Dependencies:  research/foundations/NOTATION.md (D-9904, D-9908; also D-9903, D-9905 for
                the trivial cycle, and the empty-sum/empty-product conventions)
 Scope:         All S-cycles on the positive odd integers (D-9908), every m >= 1,
-               including the trivial cycle. Sub-claims L-9905.1 and L-9905.3 are proved
-               as algebraic identities valid for cycles of the same formula on any
-               nonzero odd integers; positivity (L-9905.2, .4, .5, .6) uses x_i > 0.
+               including the trivial cycle. L-9905.1 and the product-formula display of
+               L-9905.3 are algebraic identities valid for cycles of the same formula
+               on any nonzero odd integers; the inequality chain of .3, the corollary
+               of .4, and sub-claims .2, .5, .6 use x_i > 0. The A- and c-bounds of .4
+               are composition-level facts using only a_i >= 1, A_0 = 0, sum a_i = K.
 Related counterexample candidates: none
 ```
 
@@ -307,7 +309,7 @@ Divide the chain of L-9905.3,
 $$0 \;<\; K\ln 2 - m\ln 3 \;\le\; m\ln\!\left(1 + \frac{1}{3x_{\min}}\right) \;\le\; \frac{m}{3\,x_{\min}},$$
 by the positive quantity $m \ln 2$:
 $$0 \;<\; \frac{K}{m} - \log_2 3 \;\le\; \frac{1}{\ln 2}\,\ln\!\left(1 + \frac{1}{3x_{\min}}\right) \;\le\; \frac{1}{3\, x_{\min}\, \ln 2}.$$
-(The last quantity is $\frac{1}{3 x_{\min} m \ln 2} \cdot m$, as in the task statement.)
+(This is the bound displayed in the Statement of L-9905.5.)
 So $K/m$ is a rational strictly above $\log_2 3$ within distance
 $\frac{1}{3\ln 2}\cdot\frac{1}{x_{\min}} < \frac{0.481}{x_{\min}}$ — an $O(1/x_{\min})$
 one-sided approximation, uniform in $m$. Since a nontrivial cycle is known (by finite
