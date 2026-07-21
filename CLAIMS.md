@@ -51,33 +51,38 @@ All mathematical claims on the active research branch await independent review.
 | L-0013 | Lemma | Physical parity drives the rounded phase pair | PROPOSED | `claims/lemmas/L-0013-rounded-physical-phase.md` | D-0001, T-0014 |
 | T-0017 | Theorem | Phase–Kraft martingale, complete-graph rigidity, and escape transform | PROPOSED | `claims/theorems/T-0017-phase-kraft-escape-transform.md` | L-0013, T-0013, T-0016 |
 | X-0009 | Experiment | Rounded phase, phase–Kraft, and escape-transform checks | EMPIRICAL | `experiments/X-0009-phase-kraft-escape/` | L-0013, T-0017 |
-| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0017 |
+| L-0014 | Lemma | Exact finite-interval renormalization and gauge freedom | PROPOSED | `claims/lemmas/L-0014-finite-interval-gauge.md` | D-0001, L-0013 |
+| T-0018 | Theorem | Critical ordered-particle completion and ordinary marked spine | PROPOSED | `claims/theorems/T-0018-critical-particle-completion.md` | L-0013, T-0017 |
+| T-0019 | Theorem | Exact ordinary-spine escape and growth likelihood identities | PROPOSED | `claims/theorems/T-0019-ordinary-spine-likelihood.md` | L-0001, T-0016--T-0018 |
+| X-0010 | Experiment | Finite interval, particle completion, and ordinary-spine checks | EMPIRICAL | `experiments/X-0010-interval-particle-spine/` | L-0014, T-0018, T-0019 |
+| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0019 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0017 |
-| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016, T-0017 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0019 |
+| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016--T-0019 |
 | Q-0006 | Open question | Independent verification | IDEA | `OPEN_PROBLEMS.md` | all above |
-| Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009 |
+| Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009, T-0018 |
 | Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0008 |
 | Q-0009 | Open question | Structured collision codes and closure-quality geometry | PARTIAL | `OPEN_PROBLEMS.md` | L-0006, T-0005--T-0007 |
 | Q-0010 | Resolved question | Growing complete dyadic projection | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | L-0009, L-0010, T-0007 |
 | Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007, T-0010 |
-| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0017 |
+| Q-0012 | Open question | Infinite regular negative-template renewal code | IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0019 |
 | Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006, O-0007 |
-| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, T-0017 |
-| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016, T-0017 |
+| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, T-0017--T-0019 |
+| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016--T-0019 |
 | Q-0016 | Open question | Multi-mismatch complement automaton | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, L-0013 |
-| Q-0017 | Open question | Arithmetic approximation to the phase escape transform | IDEA | `OPEN_PROBLEMS.md` | L-0013, T-0017 |
+| Q-0017 | Open question | Arithmetic approximation to the phase escape transform | IDEA | `OPEN_PROBLEMS.md` | L-0013, T-0017--T-0019 |
+| Q-0018 | Open question | Marked ordinary-spine rewrite grammar | IDEA | `OPEN_PROBLEMS.md` | L-0014, T-0018, T-0019 |
 
 ## Relationship among the latest results
 
 - `T-0014` gives the exact quotient/phase coupling.
 - `L-0013` removes its XOR in physical parity: the phase follows `ceil(v/2)` or `floor(3v/2)`.
-- `T-0015` turns negative-cycle synchronization into countable padding towers.
-- `T-0016` identifies the Collatz multiplier as the fair-to-`3/4` likelihood ratio and proves negative typical drift for complete renewal codes.
-- `T-0017` proves the fair phase is absorbed at `1`, gives the exact phase–Kraft identity, rules out nontrivial recurrent finite complete phase graphs, and constructs the positive-drift phase-survival Doob transform.
-- The Collatz growth tilt and phase escape tilt are two exact likelihood ratios on the same physical parity language.
-- The remaining task is to realize an escape-transform-like exceptional grammar with one ordinary finite accepted quotient.
+- `T-0017` proves the fair phase is absorbed at `1` and constructs the phase-survival Doob transform.
+- `L-0014` identifies the phase as a gauge for the lower endpoint of one finite interval whose length is the physical Collatz state.
+- `T-0018` realizes the phase martingale as a critical ordered-particle rewrite and identifies ordinary Collatz as one distinguished finite-root spine.
+- `T-0019` compares fair, `3/4`-growth, escape, and fully marked-spine weights exactly along an ordinary trajectory.
+- The remaining task is no longer merely an escape-transform-like language: it is a two-layer grammar with an expanding unmarked population and a permanently certified marked ordinary spine.
 
 ## Status note
 
