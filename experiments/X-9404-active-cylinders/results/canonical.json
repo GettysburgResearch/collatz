@@ -1,0 +1,129 @@
+{
+  "balanced_schedule": {
+    "directive": "Fibonacci 0/1 mapped to increments 17/18",
+    "first_24_increments": [
+      17,
+      18,
+      17,
+      17,
+      18,
+      17,
+      18,
+      17,
+      17,
+      18,
+      17,
+      17,
+      18,
+      17,
+      18,
+      17,
+      17,
+      18,
+      17,
+      18,
+      17,
+      17,
+      18,
+      17
+    ],
+    "nonzero_new_blocks_at_recorded_depths": 9,
+    "prefix_records": {
+      "1": {
+        "cylinder_bits": 978,
+        "last_height": 18,
+        "least_representative_bit_length": 978,
+        "least_representative_is_zero": false
+      },
+      "12": {
+        "cylinder_bits": 73836,
+        "last_height": 209,
+        "least_representative_bit_length": 73833,
+        "least_representative_is_zero": false
+      },
+      "16": {
+        "cylinder_bits": 128508,
+        "last_height": 279,
+        "least_representative_bit_length": 128507,
+        "least_representative_is_zero": false
+      },
+      "2": {
+        "cylinder_bits": 2928,
+        "last_height": 36,
+        "least_representative_bit_length": 2926,
+        "least_representative_is_zero": false
+      },
+      "20": {
+        "cylinder_bits": 198192,
+        "last_height": 349,
+        "least_representative_bit_length": 198190,
+        "least_representative_is_zero": false
+      },
+      "24": {
+        "cylinder_bits": 282888,
+        "last_height": 418,
+        "least_representative_bit_length": 282888,
+        "least_representative_is_zero": false
+      },
+      "3": {
+        "cylinder_bits": 5796,
+        "last_height": 53,
+        "least_representative_bit_length": 5795,
+        "least_representative_is_zero": false
+      },
+      "4": {
+        "cylinder_bits": 9582,
+        "last_height": 70,
+        "least_representative_bit_length": 9580,
+        "least_representative_is_zero": false
+      },
+      "6": {
+        "cylinder_bits": 20016,
+        "last_height": 105,
+        "least_representative_bit_length": 20016,
+        "least_representative_is_zero": false
+      },
+      "8": {
+        "cylinder_bits": 34230,
+        "last_height": 140,
+        "least_representative_bit_length": 34230,
+        "least_representative_is_zero": false
+      }
+    }
+  },
+  "experiment_id": "X-9404",
+  "finite_grid": {
+    "maximum_cylinder_bits": 672,
+    "member_replays": 5440,
+    "perturbation_replays": 435696,
+    "quotient_isometry_pairs": 5440,
+    "schedules": 1360
+  },
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "universal active cylinder theorem",
+      "nonstabilization for every infinite directive",
+      "nonexistence of an ordinary M1 witness or Collatz counterexample"
+    ],
+    "proved_by_finite_computation": [
+      "frozen edge residue/carry identities",
+      "frozen finite-cylinder membership and perturbation failures",
+      "frozen balanced-schedule nested cylinders and precision bounds"
+    ]
+  },
+  "research_question": "Does active stack steering select exactly one initial residue cylinder, with odd-affine preservation of unused quotient precision?",
+  "schema_version": 1,
+  "small_exhaustive_uniqueness": {
+    "cases": {
+      "0_to_0": {
+        "modulus": 64,
+        "unique_residue": 0
+      },
+      "1_to_0": {
+        "modulus": 64,
+        "unique_residue": 48
+      }
+    },
+    "contexts_scanned": 128
+  }
+}
