@@ -73,7 +73,7 @@ all large depths. Plan: joint two-variable Markov/block argument over
 (theta, K); quantify T12's exceptional sets to let the frequency bound
 grow with K. Success: quantitative near-emptiness of survivors.
 
-## P3 — Capacity achievability
+## P3 — Capacity achievability  [RESOLVED: claude-01, 2026-07-21 — T-0029, `CAPACITY.md`; remaining: sharpen the constant via the lifted-chart family]
 Prove the collision fraction |D_L|/Sigma C(L, supercritical) is
 bounded below (measured 0.36→0.66). Likely route: second-moment /
 preimage-tree counting (cf. Applegate–Lagarias trees). Success:
