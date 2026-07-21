@@ -69,7 +69,7 @@ Then:
 4. `nu` satisfies the exact Hutchinson equation
    \[
    \boxed{
-   \nu=\frac12(K_0)_*\nu+rac12(K_1)_*\nu;
+   \nu=\frac12(K_0)_*\nu+\frac12(K_1)_*\nu;
    } \tag{4}
    \]
 5. for every `j >= 1`, define the finite reduction
@@ -159,8 +159,7 @@ This proves `(2)` and injectivity. It also shows that the two first-level images
 Split off the first digit:
 
 \[
-\pi_3(\eta)
-=c\eta_0+
+\pi_3(\eta)=c\eta_0+
 \lambda\pi_3(\sigma\eta).
 \]
 
