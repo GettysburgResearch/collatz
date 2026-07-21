@@ -76,7 +76,7 @@ markers = {
     "LIT-KTHM-0030": ("lambda/8", "m+1", "transcendental", "preload"),
     "LIT-KTHM-0031": ("N(K)=N(K-2)+N(K-3)", "rho^3=rho+1", "log_2(rho)", "0.405685"),
     "LIT-KTHM-0032": ("many-to-one", "m(u)/m(root)", "ordinary integer"),
-    "LIT-KTHM-0033": ("Krieger", "periodic-point", "stationary mixing SFT", "ordinary marked state"),
+    "LIT-KTHM-0033": ("Krieger", "periodic-point", "mixing target SFT", "ordinary marked state"),
 }
 for ident, needles in markers.items():
     text = found[ident].read_text(encoding="utf-8")
