@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage-boundary checks for L-0021--L-0024, T-0023, and O-0009."""
+"""Stage-boundary checks for L-0021--L-0024, T-0023--T-0024, and O-0009."""
 
 from __future__ import annotations
 
@@ -202,6 +202,27 @@ def verify_256_stage_odometer() -> None:
                 assert 3**CORE.tower(typ, t).G > 1 << CORE.tower(typ, t2).K
 
 
+def verify_stage_information_surplus() -> None:
+    assert 3**53 > 2**84
+
+    B = 1 << 16
+    d = B // 256
+    source_sum = sum(B + j * d for j in range(256))
+    future_sum = sum(B + i * d for i in range(2, 257)) + (2 * B + 2 * d)
+    assert source_sum == Fraction(767, 2) * B
+    assert future_sum == Fraction(98689, 256) * B
+
+    gamma_lower = (
+        Fraction(7 * 767, 2) * Fraction(84, 53)
+        - Fraction(11 * 98689, 256)
+    )
+    precision_demand = Fraction(2827, 256)
+    surplus_lower = gamma_lower - precision_demand
+    assert gamma_lower == Fraction(191801, 13568)
+    assert surplus_lower == Fraction(20985, 6784)
+    assert surplus_lower > 3
+
+
 def main() -> None:
     verify_stage_odometer_frontier_bulk()
     print("verified stage odometer, periodic frontier, and quadratic bulk")
@@ -211,6 +232,9 @@ def main() -> None:
 
     verify_256_stage_odometer()
     print("verified exact 256-step residual-stack stage")
+
+    verify_stage_information_surplus()
+    print("verified full-stage information surplus")
     print("all stage-boundary checks passed")
 
 
