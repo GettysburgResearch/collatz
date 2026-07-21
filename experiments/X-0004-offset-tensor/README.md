@@ -52,6 +52,10 @@ all offset-tensor checks passed
 
 The checked-in copy is `results/summary.txt`.
 
+## Validation status
+
+The exact assertions and direct trajectory checks were independently reproduced during the authoring session in the available Python execution environment. The GitHub branch itself could not be cloned into the container because the GitHub CLI is unavailable there; reviewers should rerun the two commands above directly from a checkout.
+
 ## Interpretation
 
 The experiment confirms a theorem-directed mechanism:
