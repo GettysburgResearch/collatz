@@ -1,14 +1,18 @@
 # Current integrated state
 
 Last updated: 2026-07-21  
-Integrator status: provisional bootstrap by `gpt56-pro-01`  
-Active issue: `#2 — Bootstrap exact collision-rewrite research program`
+Integrator status: provisional synthesis by `gpt56-pro-01`  
+Active issue: `#2 — Bootstrap exact collision-rewrite research program`  
+Active draft PR: `#3 — Bootstrap exact collision-rewrite research program`
 
 ## Project maturity
 
-This is the first mathematical contribution after repository initialization. No claim has yet received independent review. All finite theorems and identities below are therefore recorded as `PROPOSED`, even where the author supplies a complete algebraic proof and exact executable checks.
+The repository now contains two mathematical research sessions on one branch.
+No claim has yet received independent review. Complete-looking finite theorems
+and identities are therefore recorded as `PROPOSED`.
 
-There is currently **no positive-integer Collatz counterexample** in the repository.
+There is currently **no positive-integer Collatz counterexample** in the
+repository.
 
 ## Fixed framework
 
@@ -22,121 +26,323 @@ n/2,&n\text{ even},\\
 \end{cases}
 \]
 
-Parity words are chronological. Digit strings used for rewrite systems are low-order first. `NOTATION.md` is authoritative for this packet.
+Parity words are chronological. Digit strings used for rewrite systems are
+low-order first. `NOTATION.md` is authoritative.
 
-## Strongest proposed finite results
-
-### L-0001 — Parity-affine formula
-
-A length-\(L\) parity word with \(a\) odd steps acts as
+For a length-\(L\) parity word with \(a\) odd steps,
 
 \[
 T^L(n)=\frac{3^a n+B}{2^L}
 \]
 
-on the integers realizing that word.
+on its residue class.
 
-### T-0001 — Collision-bundle conjugacy
+## Main conceptual advance: collision fibers, not only intervals
 
-A width-\(m\) consecutive collision
+The first session studied consecutive collision bundles. `T-0002` shows that
+consecutiveness is irrelevant.
 
-\[
-T^L(2^Lq+r+j)=3^aq+s,
-\qquad0\le j<m,
-\]
-
-with \(3^a>2^L\), induces the partial expanding radix map
+Suppose
 
 \[
-H(2^LB+j)=3^aB+j.
+T^L(2^Lq+r+d)=3^aq+s
+\qquad(d\in D)
 \]
 
-One explicit congruence class of \(H\)-states lifts back to ordinary positive integers. An infinite admissible finite-integer orbit of \(H\) would be a Collatz counterexample.
+for a finite, possibly sparse digit set \(D\). If \(3^a>2^L\), then the
+fiber induces the partial expanding radix map
 
-### O-0001 — Width two
+\[
+\boxed{
+H_D(2^LB+d)=3^aB+d,
+\qquad d\in D.
+}
+\]
+
+One explicit invariant congruence class of induced states lifts exactly to
+ordinary positive Collatz integers. An infinite admissible finite-integer orbit
+of \(H_D\) would be a Collatz counterexample.
+
+`T-0001` is the special case in which \(D\) is an initial interval.
+
+## Exact collision-fiber recursion
+
+`L-0003` gives an exact recursion for every residue's affine data. If
+
+\[
+a_L(r)=\#\text{ odd steps},
+\qquad s_L(r)=T^L(r),
+\]
+
+then even residues inherit the data of \(r/2\). For an odd residue \(2k+1\),
+write
+
+\[
+3k+2=2^Lq+u.
+\]
+
+Then
+
+\[
+a_{L+1}(2k+1)=1+a_L(u),
+\]
+
+\[
+s_{L+1}(2k+1)=3^{a_L(u)}q+s_L(u).
+\]
+
+Collision fibers are exactly the level sets of \((a_L,s_L)\). All tables
+through depth \(L\) can be generated in total \(O(2^L)\) arithmetic work.
+This reframes fiber growth as an exact even/odd coalescence process.
+
+## Strongest exact charts currently recorded
+
+### O-0001 — Two-branch `64 -> 81` chart
 
 \[
 T^6(64q+14)=T^6(64q+15)=81q+20.
 \]
 
-This induces
+It induces
 
 \[
-H(64B+j)=81B+j,
-\qquad j\in\{0,1\},
+H(64B+d)=81B+d,
+\qquad D=\{0,1\},
 \]
 
 on the lifting class \(A\equiv6\pmod{17}\).
 
-### O-0002 — Width three
+### O-0002 — Three-branch `512 -> 729` chart
 
 \[
-T^9(512q+124+j)=729q+182,
-\qquad0\le j\le2.
+T^9(512q+124+d)=729q+182,
+\qquad D=\{0,1,2\}.
 \]
 
-This induces
+A short exact carry tile is
 
 \[
-H(512B+j)=729B+j,
-\qquad j\in\{0,1,2\}.
+R_1L_{361}L_0\longrightarrow L_2L_2R_1.
 \]
 
-### O-0003 — Width six
+It is locally interesting but does not vertically close by itself.
+
+### O-0003 — Six consecutive branches at depth 17
 
 \[
-T^{17}(131072q+9090+j)=177147q+12302,
-\qquad0\le j\le5.
+T^{17}(131072q+9090+d)=177147q+12302,
+\qquad0\le d\le5.
 \]
 
-This induces
+### O-0004 — Eighteen sparse branches at depth 22
+
+Let
 
 \[
-H(131072B+j)=177147B+j,
-\qquad0\le j\le5.
+D=\{0,16,20,21,32,34,35,40,42,49,68,69,70,78,79,92,93,94\}.
 \]
 
-### L-0002 — Finite-horizon stack amplifier
-
-For the width-two chart there is a nine-digit base-64 carry block \(W\) such that
+Then
 
 \[
-H^{9m+1}(L_1W^m(x))=81^{9m}(81x+1)
+\boxed{
+T^{22}(4194304q+621248+d)=4782969q+708587
+\qquad(d\in D).
+}
 \]
 
-for every \(m\ge0\) and every finite nonnegative high-order context \(x\). This certifies arbitrarily long finite admissible segments but not one infinite trajectory.
+The induced chart is
+
+\[
+H(4194304B+d)=4782969B+d,
+\qquad d\in D,
+\]
+
+with lifting class
+
+\[
+A\equiv87339\pmod{588665}.
+\]
+
+Its expansion ratio is approximately \(1.1403486729\), while its base-radix
+boundary grows at only approximately one new digit per 116 induced steps. The
+combination of a richer alphabet and slow boundary motion is a new macro-tile
+target.
+
+## Universal local amplification
+
+`L-0004` generalizes the nine-column stack of `L-0002`.
+
+For any coprime radices \(M<N\), every closed carry path
+
+\[
+R_cX\longrightarrow ER_c
+\]
+
+can be pumped horizontally:
+
+\[
+R_cX^m\longrightarrow E^mR_c.
+\]
+
+If an induced alphabet contains \(0\) and a nonzero digit \(j\), let \(k\) be
+the least positive integer with
+
+\[
+M^kj\equiv j\pmod N.
+\]
+
+Then there is a finite block \(W_j\) satisfying
+
+\[
+R_jW_j\longrightarrow L_0^kR_j,
+\]
+
+and
+
+\[
+H_D^{km+1}(L_jW_j^m(x))=N^{km}(Nx+j).
+\]
+
+Therefore **every nontrivial collision fiber has exact finite-horizon stack
+amplifiers**. Local pumping is universal; the hard step is finite vertical
+closure.
+
+## Global structure of any hypothetical induced orbit
+
+### T-0003 — Dual adic/real coding
+
+For an infinite induced orbit with least digits \(d_t\), input radix \(M\),
+output radix \(N\), and \(c=N-M\),
+
+\[
+A_0=\frac{c}{N}\sum_{t\ge0}d_t\left(\frac MN\right)^t
+\]
+
+holds exactly in \(\mathbb Q_2\).
+
+In the real topology, define
+
+\[
+x_t=\frac{c}{N}\sum_{j\ge0}d_{t+j}\left(\frac MN\right)^j.
+\]
+
+Then
+
+\[
+A_t=C\left(\frac NM\right)^t+x_t
+\]
+
+for one \(C>0\), with \(x_t\) bounded between the minimum and maximum digits.
+Thus the base-\(M\) word length has asymptotic slope
+
+\[
+\lim_{t\to\infty}\frac{\ell_t}{t}
+=\log_M(N/M).
+\]
+
+The digit itinerary of a nontrivial ordinary-integer orbit cannot be eventually
+periodic. A successful grammar must generate genuinely aperiodic boundary
+motion.
+
+### T-0004 — Run-length skeleton
+
+Every maximal constant-digit phase has the exact form
+
+\[
+d+M^uC
+\longmapsto
+ d+N^uC.
+\]
+
+At the next digit change, an infinite orbit is equivalent to an infinite chain
+
+\[
+\boxed{
+d_k+N^{u_k}C_k
+=d_{k+1}+M^{u_{k+1}}C_{k+1},
+}
+\]
+
+where \(d_k\in D\), \(d_{k+1}\ne d_k\), \(u_k\ge1\), and
+\(M\nmid C_k\).
+
+This is the new global target: construct a finite family of cofactor schemas
+closed under these exact `S`-unit carry transitions, together with the lifting
+congruence. Individual huge starting values are secondary.
 
 ## Computational state
 
-`X-0001` exhaustively enumerates all consecutive collision bundles for every \(1\le L\le17\). It finds supercritical bundles beginning at length 6 and maximum widths
+### X-0001 — Consecutive bundles through depth 17
+
+The best consecutive widths found were
 
 ```text
-L=6..8:  2
-L=9..13: 3
+L=6..8:   2
+L=9..13:  3
 L=14..16: 5
-L=17:    6
+L=17:     6
 ```
 
-This finite observation suggests studying collision alphabets as a family rather than committing exclusively to the first `64 -> 81` chart.
+### X-0002 — Complete fibers through depth 22
+
+The best full-fiber cardinalities are
+
+```text
+L=6..8:    2
+L=9..10:   3
+L=11..13:  4
+L=14..16:  5
+L=17..18:  8
+L=19..21: 12
+L=22:      18
+```
+
+`X-0002` uses the exact recursion of `L-0003`, cross-checks every direct trace
+through depth 12, verifies the eighteen-branch identity and lifting equations,
+reconstructs universal carry pumping, and checks the run-length skeleton on
+exact finite trajectories.
+
+These finite observations do not establish unbounded cardinality or an
+infinite admissible orbit.
 
 ## Central unresolved step
 
-The project does not yet possess a **finite-word regeneration theorem**.
+The project still lacks a **finite-boundary regeneration theorem**.
 
-The exact target is a finite collection of word schemas \(F_i(k)\) and deterministic induced-map derivations
+The strongest current formulation is to construct either:
 
-\[
-F_i(k)\Longrightarrow^*F_{i+1}(k+\delta_i)
-\]
+1. a finite macro-tile grammar whose emitted rows close vertically and whose
+   high-order boundary remains an ordinary finite word; or
+2. a finite family of run-length/cofactor schemas closed under
 
-whose schema types cycle and whose total parameter gain is positive. The construction must begin from one finite word in the required lifting congruence class.
+   \[
+   d_k+N^{u_k}C_k
+   =d_{k+1}+M^{u_{k+1}}C_{k+1},
+   \]
 
-Compatible finite prefixes, an infinite parity string, or a radix-adic fixed point are insufficient.
+   with an aperiodic but finitely generated exponent schedule.
+
+Compatible finite prefixes, a periodic adic tiling, or a point in an inverse
+limit remain insufficient.
 
 ## Immediate research priorities
 
-1. Independently reconstruct `L-0001`, `T-0001`, and the three explicit charts.
-2. Analyze carry grammars for the width-three and width-six charts.
-3. Search for multi-chart transitions rather than requiring one chart to repair its own boundary.
-4. Prove either a finite regeneration grammar or a nonexistence theorem for a precisely defined grammar class.
-5. Maintain an explicit finite-word versus adic-object audit on every proposed construction.
+1. **Coalescence algebra.** Use `L-0003` to construct analytic families of
+   sparse fibers, rather than merely enumerating them. Determine whether
+   supercritical fiber cardinalities are unbounded.
+2. **Macro-tile atlas.** Build carry-cycle graphs for the width-3, width-8, and
+   width-18 alphabets. Search for vertical relays among several pumped tiles,
+   not one self-repairing block.
+3. **Run-length schemas.** Seek parameterized positive solutions of the
+   `S`-unit skeleton, with cofactors transported by a finite collection of
+   exact formulas.
+4. **Aperiodic boundary control.** Use the exact slope
+   \(\log_M(N/M)\) to organize two-length or `S`-adic schedules. Fixed-period
+   travelling stacks cannot suffice.
+5. **Multi-chart transitions.** Permit designated transitions between
+   collision charts when one chart creates a cofactor or boundary suited to
+   another.
+6. **Finite-versus-adic audit.** Every construction must explicitly prove that
+   one ordinary finite starting word, not only an inverse-limit object, follows
+   the entire infinite grammar.
