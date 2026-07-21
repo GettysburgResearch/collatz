@@ -1,0 +1,18 @@
+X-9301 exact cusp-scattering probe
+python=3.13.5
+arithmetic=exact modular integers; no floating-point Fourier values
+theta_bound=K^2
+thresholds=1/146,1/64,1/32,1/16,1/8
+K=8 theta_max=64 delta=1/146:min=7:argmin=19 delta=1/64:min=6:argmin=7 delta=1/32:min=5:argmin=7 delta=1/16:min=4:argmin=14 delta=1/8:min=4:argmin=7
+K=12 theta_max=144 delta=1/146:min=10:argmin=111 delta=1/64:min=10:argmin=5 delta=1/32:min=8:argmin=15 delta=1/16:min=8:argmin=15 delta=1/8:min=5:argmin=55
+K=16 theta_max=256 delta=1/146:min=14:argmin=42 delta=1/64:min=14:argmin=8 delta=1/32:min=11:argmin=233 delta=1/16:min=10:argmin=86 delta=1/8:min=6:argmin=115
+K=20 theta_max=400 delta=1/146:min=17:argmin=27 delta=1/64:min=16:argmin=64 delta=1/32:min=14:argmin=152 delta=1/16:min=13:argmin=97 delta=1/8:min=9:argmin=205
+K=24 theta_max=576 delta=1/146:min=22:argmin=64 delta=1/64:min=20:argmin=64 delta=1/32:min=18:argmin=494 delta=1/16:min=15:argmin=251 delta=1/8:min=11:argmin=128
+K=32 theta_max=1024 delta=1/146:min=28:argmin=137 delta=1/64:min=26:argmin=824 delta=1/32:min=25:argmin=137 delta=1/16:min=21:argmin=253 delta=1/8:min=13:argmin=495
+K=40 theta_max=1600 delta=1/146:min=36:argmin=111 delta=1/64:min=34:argmin=1133 delta=1/32:min=31:argmin=391 delta=1/16:min=27:argmin=626 delta=1/8:min=20:argmin=877
+K=48 theta_max=2304 delta=1/146:min=44:argmin=640 delta=1/64:min=42:argmin=375 delta=1/32:min=39:argmin=89 delta=1/16:min=33:argmin=375 delta=1/8:min=23:argmin=626
+K=56 theta_max=3136 delta=1/146:min=51:argmin=2976 delta=1/64:min=49:argmin=319 delta=1/32:min=45:argmin=2823 delta=1/16:min=38:argmin=929 delta=1/8:min=28:argmin=929
+K=64 theta_max=4096 delta=1/146:min=56:argmin=1650 delta=1/64:min=54:argmin=171 delta=1/32:min=51:argmin=342 delta=1/16:min=45:argmin=684 delta=1/8:min=33:argmin=3922
+K=72 theta_max=5184 delta=1/146:min=66:argmin=395 delta=1/64:min=64:argmin=329 delta=1/32:min=59:argmin=1306 delta=1/16:min=51:argmin=4958 delta=1/8:min=37:argmin=925
+K=80 theta_max=6400 delta=1/146:min=74:argmin=1765 delta=1/64:min=70:argmin=3034 delta=1/32:min=65:argmin=1765 delta=1/16:min=60:argmin=55 delta=1/8:min=44:argmin=911
+results_sha256=61e51931c4d034c5bc5a643c74d48532a2d70fe0fc662a4ff1899d735b21fb83
