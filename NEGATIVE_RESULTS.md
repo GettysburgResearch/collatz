@@ -4,250 +4,172 @@ Last updated: 2026-07-21
 
 ## N-0001 — A periodic parity string may define only a 2-adic rational
 
-The periodic shortcut parity word
+The periodic shortcut word \((100)^\omega\) reconstructs the 2-adic rational
+\(1/5\), not a positive-integer counterexample.
 
-\[
-(100)^\omega
-\]
-
-formally reconstructs the 2-adic rational \(1/5\), not a positive-integer counterexample.
-
-**Consequence:** an infinite rewrite loop is insufficient until its starting word is proved finite and canonical.
+**Consequence:** an infinite rewrite loop needs a proved finite canonical start.
 
 ## N-0002 — Arbitrarily long finite admissibility is not infinite closure
 
-`L-0002` and `L-0004` give parameterized finite-horizon stacks. Taking larger parameters does not select one fixed finite integer with infinitely many steps.
+Parameterized stack amplifiers give arbitrarily long finite trajectories without
+selecting one fixed member that survives forever.
 
-**Consequence:** local stack amplification is universal and cannot be treated as near-resolution by itself.
+**Consequence:** a uniform all-height regeneration theorem is required.
 
 ## N-0003 — Local expansion can be lost during boundary repair
 
-Pre-repository exploratory work found locally expanding rewrite gadgets whose exact repair phases became subcritical.
+An expanding local gadget may become subcritical after its complete repair
+cycle.
 
-**Consequence:** every proposed grammar must account for the multiplier of the full regeneration cycle.
+**Consequence:** audit the multiplier of every full grammar cycle.
 
-## N-0004 — A nontrivial induced orbit cannot have eventually periodic digits
+## N-0004 — Nontrivial ordinary induced orbits cannot have eventually periodic digits
 
-`T-0003` rules out eventually periodic least-digit itineraries for any nontrivial ordinary-integer induced orbit.
+`T-0003` excludes eventually periodic least-digit itineraries for nontrivial
+ordinary induced orbits.
 
-**Consequence:** fixed-period travelling stacks and purely periodic carry tilings cannot solve finite closure.
+**Consequence:** fixed-period travelling stacks do not solve closure.
 
-## N-0005 — The high-order boundary grows at the ratio N/M, not N
+## N-0005 — Boundary growth uses \(N/M\), not \(N\)
 
-For an infinite stationary induced orbit,
+For a stationary induced orbit,
 
 \[
 A_t=C(N/M)^t+O(1).
 \]
 
-Hence base-\(M\) word length grows with slope
+**Consequence:** the finite boundary moves slowly and aperiodically.
 
-\[
-\log_M(N/M).
-\]
+## N-0006 — Consecutive width understates the alphabet
 
-**Consequence:** grammars must track a slowly moving, aperiodic boundary.
+Sparse collision fibers and inverse-signature codes are much richer than
+consecutive runs.
 
-## N-0006 — Consecutive width understates the available alphabet
+**Consequence:** search full fibers and codes, not intervals alone.
 
-Sparse fibers and inverse-signature codes are much richer than consecutive collision runs.
+## N-0007 — Unbounded branch count is not finite closure
 
-**Consequence:** searches and theorems should operate on full fibers, codes, or negative return languages—not intervals alone.
+`T-0005` gives exponentially large supercritical fibers without an infinite
+ordinary orbit.
 
-## N-0007 — Unbounded alphabet cardinality is not finite closure
+**Consequence:** record size is not a proxy for a counterexample.
 
-`T-0005` proves exponentially unbounded mildly supercritical fiber cardinality without producing an infinite orbit.
+## N-0008 — A common odd tail is a drift resource, not a repair parameter
 
-**Consequence:** record size is no longer a meaningful proxy for distance to a counterexample.
+A CRT odd tail changes the multiplier while preserving branch offsets.
 
-## N-0008 — A common odd tail changes drift, not the branching core
-
-The finite CRT odd tail can make an inverse code supercritical while preserving branch count and inverse-root offsets exactly.
-
-**Consequence:** the tail is a drift resource, not a free vertical-boundary repair parameter.
+**Consequence:** it does not freely fix lifting or boundary closure.
 
 ## N-0009 — Preserving fixed geometry is not growing geometry
 
-`T-0006` embeds any finite collision alphabet into arbitrarily large supercritical fibers while preserving its existing modular projections, consecutive subblocks, difference set, and finite local patterns.
+`T-0006` preserves any fixed finite alphabet geometry under amplification, but
+the useful scale remains fixed.
 
-The useful scale remains fixed while a hypothetical orbit's boundary grows.
-
-**Consequence:** arbitrary precision and preservation of a fixed relay library are insufficient by themselves.
+**Consequence:** an unbounded boundary needs unbounded or scale-independent
+structure.
 
 ## N-0010 — A finite complete one-target all-supercritical renewal code is impossible
 
-`T-0009` proves the following. Let finitely many negative templates return to one target \(-v\), and suppose their dyadic cylinders cover every sufficiently large ordinary quotient. The finite union is clopen in \(\mathbb Z_2\) and contains a dense set, so it also contains the target quotient \(q=v\).
+A finite cylinder cover of every sufficiently large quotient is clopen and must
+include the target boundary point. Its return is the all-even contracting edge.
 
-The branch covering \(q=v\) must satisfy
-
-\[
-u=2^Lv,
-\qquad a=0,
-\]
-
-and is therefore the all-even contracting return with multiplier \(2^{-L}\).
-
-**Consequence:** an all-expanding construction cannot be a finite complete stationary return table around one target. It must use an infinite but finitely generated renewal language, a proper survivor set, several targets, or compensated subcritical edges.
+**Consequence:** use an incomplete survivor, multiple targets, or compensated
+contracting edges.
 
 ## N-0011 — Long common drift tails can destroy normalized control width
 
-`L-0011` gives the exact aspect ratio after appending a common all-odd tail of length \(k\):
+The exact aspect ratio after a common odd tail of length \(k\) is
 
 \[
-\Delta_k
-=
-\frac{W/2^L}{2^k(\lambda_k-1)},
+\Delta_k=
+\frac{W/2^L}{2^k(\lambda_k-1)}.
 \]
 
-where \(W\) is the unchanged core offset diameter and \(\lambda_k\) is the final expansion ratio.
+**Consequence:** symbolic branching and real rounding freedom may move in
+opposite directions.
 
-If \(\lambda_k\ge1+\varepsilon\), then
+## N-0012 — Rich symbolic geometry may have a microscopic real window
 
-\[
-\Delta_k<2^{-k}/\varepsilon.
-\]
+The 339-branch chart has much smaller normalized aspect ratio than the original
+two-branch chart.
 
-**Consequence:** branching and drift are algebraically separable but not geometrically independent. Long post-merger tails can make the stationary real rounding window exponentially narrow.
-
-## N-0012 — Rich symbolic geometry can coexist with a microscopic real window
-
-`O-0006` records:
-
-```text
-O-0001: 2 branches,   aspect ~= 5.88e-2
-O-0005: 339 branches, aspect ~= 3.26e-9
-```
-
-The complete-dyadic-projection examples fall to aspect ratio about `4.72e-264` by `b=5`.
-
-**Consequence:** branch count, low-order modular correction, and real control width are separate resources and may move in opposite directions.
+**Consequence:** branch count, modular correction, and real control width are
+separate resources.
 
 ## N-0013 — Positive local edges do not replace a graph-cycle audit
 
-In a multi-target return grammar, some local edges may be contracting. `T-0013` shows that what matters asymptotically is the multiplier of every reachable directed grammar cycle, together with a phase-potential certificate.
+A graph may contain contracting edges. What matters is every reachable cycle
+and a phase-potential certificate.
 
-**Consequence:** neither rejecting every locally subcritical edge nor accepting a graph because its favored cycle expands is sound.
+**Consequence:** audit the full selected graph.
 
 ## N-0014 — Complete renewal coverage has negative typical logarithmic growth
 
-For a complete binary parity prefix code, `T-0016` proves
+`T-0016` gives mean multiplier one but negative mean log multiplier under fair
+complete renewal coverage.
 
-\[
-\sum_w2^{-|w|}\frac{3^{a(w)}}{2^{|w|}}=1.
-\]
-
-Thus the fair-Haar mean multiplier is one. But when the mean return length is finite,
-
-\[
-\mathbb E_{1/2}[\log\lambda]
-=
-\frac12\log(3/4)\,\mathbb E_{1/2}[L]<0.
-\]
-
-Almost every 2-adic quotient in a complete renewal system has negative block Lyapunov drift.
-
-**Consequence:** a divergent grammar cannot be a typical broad cover. It must select an entropy-thin, Haar-null exceptional language. Haar-null does not imply empty, so this is a design constraint rather than a refutation.
+**Consequence:** a divergent language must be an entropy-thin exception.
 
 ## N-0015 — Cycle padding buys expansion with exponentially narrow cylinders
 
-`T-0015` turns a fixed mismatch type into a tower indexed by \(t\), with
+Padding gives
 
 \[
-\lambda_t=\lambda_0\Lambda^t,
-\qquad
-L_t=L_0+t\ell.
+\lambda_t=\lambda_0\Lambda^t
 \]
 
-The fair cylinder mass simultaneously decreases as
+while fair cylinder mass decays exponentially in \(t\).
 
-\[
-2^{-L_t}=2^{-L_0}(2^{-\ell})^t.
-\]
-
-For the negative eleven-cycle, some base transfers require padding levels \(21\) or \(45\) before becoming supercritical.
-
-**Consequence:** eventual edge expansion is abundant, but high-padding branches are extremely 2-adically specific. A successful stack grammar must regenerate the required valuations exactly; merely observing eventual supercriticality is weak.
+**Consequence:** the padding valuation must be regenerated exactly.
 
 ## N-0016 — A one-mismatch complement atlas is not a closed automaton
 
-`O-0008` follows a complementary mismatch only when the next difference is divisible by the full synchronized recovery power. If that congruence fails, another mismatch occurs before the selected target phase is reached.
+Failure of the recovery congruence causes another mismatch before the selected
+target.
 
-**Consequence:** the finite complement-basin table is a skeleton, not a complete selector. Closure requires a multi-mismatch automaton or a proof that accepted states always satisfy every recovery congruence.
+**Consequence:** build the full multi-mismatch or counter system.
 
 ## N-0017 — A finite complete recurrent phase graph collapses to phase 1
 
-`T-0017` proves that the rounded phase
+The rounded phase is a fair nonnegative martingale absorbed at \(1\). A finite
+complete exact phase graph has no recurrent class above phase \(1\).
+
+**Consequence:** nontrivial phase recurrence is incomplete, exceptional, or
+infinite-state.
+
+## N-0018 — Positive escape pressure is not an ordinary boundary
+
+The phase-survival Doob transform has positive symbolic growth but naturally
+describes parity paths and completion points.
+
+**Consequence:** one finite ordinary marker must be certified separately.
+
+## N-0019 — Finite-phase regular marked grammars are not a new existential class
+
+`L-0015` proves that regular finite interval and population languages have
+regular ordinary marker projections.
+
+`T-0020` proves that finitely many regular phase domains with fixed finite
+Collatz blocks normalize to one regular one-step sanctuary:
 
 \[
-S_0(v)=\lceil v/2\rceil,
-\qquad
-S_1(v)=\lfloor3v/2\rfloor
+K=
+\bigcup_e\bigcup_{0\le k<b_e}T^k(D_e).
 \]
 
-is a fair nonnegative martingale and is absorbed at \(1\) almost surely.
+This includes regular marked interval grammars, regular marked-particle
+grammars, finite carry-phase covers, and finite negative-target graphs whenever
+marker extraction is rational.
 
-For every finite complete physical-parity prefix code,
+**Consequence:** do not duplicate PR #12 under new decoration. A genuinely new
+marked-spine route needs an unbounded counter/stack, variable block lengths, a
+nonregular survivor, or non-rational marker coupling.
 
-\[
-\sum_w2^{-|w|}(S_w(v)-1)=v-1.
-\]
+## N-0020 — Graph-directed attractor existence is not ordinary realization
 
-A finite complete graph of exact phase-return words therefore has no recurrent communicating class at phase magnitude greater than one.
+Standard graph-directed contraction theory constructs a compact completion
+object from compatible addresses.
 
-**Consequence:** adding finitely many negative targets does not rescue a complete broad grammar. Nontrivial recurrence must be incomplete and exceptional, infinite-state, or equipped with an unbounded counter.
-
-## N-0018 — Positive escape pressure is still not an ordinary boundary
-
-The Doob transform of `T-0017` conditions the phase away from absorption and gives physical odd probability at least \(3/4\), uniformly positive phase drift, and uniformly positive formal Collatz multiplier drift.
-
-Its paths are symbolic parity paths and naturally define 2-adic states.
-
-**Consequence:** positive escape and growth pressure do not by themselves produce an ordinary integer. The finite-versus-adic boundary problem remains logically separate and must be certified explicitly.
-
-## N-0019 — Phase growth is gauge dependent
-
-`L-0014` represents the same physical state \(n\) by any finite interval
-
-\[
-[v,v+n).
-\]
-
-Two extreme exact gauges are:
-
-\[
-v_t=1
-\]
-
-for every \(t\), and
-
-\[
-v_t=T^t(n)+1.
-\]
-
-Thus one gauge has a fixed phase while another phase grows exactly with the physical state.
-
-**Consequence:** phase growth alone is not a physical invariant. A phase method is useful only when it controls the finite interval length or carries an explicit ordinary boundary marker.
-
-## N-0020 — Unmarked escape mass is not marked-spine mass
-
-`T-0018` realizes the escape transform as a uniform descendant in a critical particle tree. Along an ordinary trajectory starting at \(n_0\), `T-0019` gives branch-cylinder mass
-
-\[
-\frac{n_L}{2^Ln_0}.
-\]
-
-But the one distinguished descendant certifying the specified finite root has mass only
-
-\[
-\frac1{2^Ln_0}.
-\]
-
-The endpoint population factor \(n_L\) belongs to the unmarked branch, not to the ordinary marker.
-
-**Consequence:** an escaping or pressure-positive population grammar can still contain no certified ordinary spine. A successful proof must transport a marker through the distinguished child at every step.
-
-## N-0021 — Auxiliary particle descendants are not physical Collatz children
-
-The critical completion of `T-0018` gives every particle two descendants so that branch populations conserve mass. Only one child is distinguished as the ordinary Collatz child.
-
-**Consequence:** auxiliary descendants may support martingales, pressure, and regeneration, but they cannot be substituted for the deterministic physical trajectory. Every candidate must keep the distinguished and auxiliary layers visibly separate.
+**Consequence:** an attractor may contain no ordinary positive integer and does
+not replace exact dyadic selection, a finite marker, or deterministic Collatz
+replay.
