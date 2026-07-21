@@ -1,0 +1,8 @@
+reconstructed |D| = 339 (claimed 339): MATCH
+affine identity exact for all 339 branches at q in {1, 2, 7, 1e6, 1e18+7}
+residues mod 16 covered: 16/16 (MATCH)
+[-x, x] in D-D up to x = 934 (claimed >= 934): MATCH
+density 28/44 = 0.63636 = 7/11 (the L=22 rung doubled); expansion 3^28/2^44 = 1.3003950957
+width datapoint: log2(339)/44 = 0.1910 (C-0003 slope from L=22 record: log2(339/18)/22 = 0.1925)
+K=2: |R_2| = 114921 = 339^2 exact; min nontrivial = 8441624899005574032208; law = 2.69302e+21; ratio = 3.135
+ALL CHECKS PASS

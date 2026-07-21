@@ -111,3 +111,46 @@ surviving format** — consistent with every rigidity theorem to date
 3. P2 (EQ interchange) untouched this session — next mathematical
    deep-dive, now with four rungs of dial data.
 4. Independent review slots for T-0020/T-0021/L-0015 open (M-0003).
+
+## 6. Session-3 update: abundance is theirs, the ceiling is the question
+
+PR #3's third session (its L-0005/L-0006/T-0005/O-0005) changes §3's
+landscape:
+
+* **Their T-0005** (pending review): supercritical fiber widths are
+  *exponentially unbounded* — an inverse-signature construction giving
+  fibers of width `≥ ⌈C(3m,m)/3^m⌉ ≈ 2^{1.17m}` at depth
+  `3m + k, k ≈ 2.42m`, asymptotic slope **0.2159**, expansion in
+  (1, 3/2]. If it survives review, C-0003's unboundedness half is
+  resolved affirmatively, and the finite-size slope 0.19 must bend
+  *up* toward ≥ 0.216 at large L.
+* **Their O-0005, independently verified here** (X-0029,
+  `chart339_verify.py`): the 339-branch chart at L = 44 — offset set
+  reconstructed from scratch with this program's machinery (exactly
+  339 elements, diameter 17207, all 16 residues mod 16, `D−D ⊇
+  [−934, 934]`), affine identity exact to `q = 10¹⁸+7`. Width
+  datapoint: `log₂339/44 = 0.1910` — the C-0003 curve, fitted at
+  L ≤ 26, holds at L = 44 (record-to-record slope 22→44: 0.1925).
+  Fifth ladder rung: K = 2 survivor cell exact, ratio 3.135 — in
+  band. **The tripwire still has not fired.**
+
+**The new sharp question (Q-0006, width-slope ceiling).** Let
+`c_w := limsup_L log₂ width_max(L) / L`. Now known:
+`0.2159 ≤ c_w` (their T-0005 family, pending review) and trivially
+`c_w ≤ H(7/11) ≈ 0.9457` (stratum count). Single-fiber per-step cost
+is `1 − c_w`; the pooled-atlas floor is `1 − H(log₃2) = 0.05004`
+(T-0014). So the entire single-fiber-vs-pooled economics of §4
+collapses into one number: **can `c_w` approach the entropy ceiling
+`H(log₃2) = 0.94996`?** If yes, single fibers become as cheap as
+pooled atlases and the offense regains a structured alphabet with
+atlas-grade economics; if `c_w` is bounded away, single-fiber
+grammars are permanently uncompetitive and the S-adic-through-pooled
+route is alone. Note the direction of the gap: the independence
+heuristic (each odd inverse step surviving with probability 1/3)
+predicts width slope ≈ H(δ) − δlog₂3 < 0 at supercritical densities —
+*negative*; observed reality is +0.19 and their construction forces
+≥ 0.216. Fiber concentration beats the independence model by ≥ 0.28
+bits/level; the mechanism (signature clustering, their L-0006 algebra)
+is now the object to bound from above. Literature interface: width =
+within-stratum preimage multiplicity of `T^L` — Applegate–Lagarias
+preimage-tree territory (P1, issue #7).

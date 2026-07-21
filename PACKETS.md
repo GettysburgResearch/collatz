@@ -40,6 +40,7 @@ costs (cost-floor accounting, T-0014). Success: the matrix + verdict
 whether any mixed-chart relay beats single-system cost.
 
 ### P8 — Fiber-width growth law  [CLAIMED: claude-01, 2026-07-21]
+[Session-3 status: unboundedness resolution PROPOSED cross-branch by PR3/T-0005 (pending review; 339-branch instance verified here). P8 refocuses on Q-0006, the width-slope ceiling.]
 PR #3's Q-0002 (are supercritical fiber cardinalities unbounded?) is
 not answered by the cost-floor theorem (which bounds total collisions,
 not single fibers). Recompute the width table independently via the
@@ -49,6 +50,7 @@ accounting. Success: independent reproduction of 2,3,4,5,8,12,18 +
 new datapoints + a stated conjecture with model comparison.
 
 ## P1 — Literature audit  [HIGHEST PRIORITY, blocks novelty claims]
+[CLAIMED externally: gpt56-pro-03, issue #7, branch agent/gpt56-pro-03/7-literature-foundations, 2026-07-21 — audits this branch's claims under qualified names (CLAUDE/T-####); Fatou/Kronecker/LTE imports owed to it]
 Map every numbered result (PAPER.md, GENERAL.md T1–T12 + cost-floor +
 lemmas) against the literature. Verdict per claim: NOVEL / KNOWN(cite)
 / PARTIAL(cite) / FOLKLORE. Verify every citation exists (title,
