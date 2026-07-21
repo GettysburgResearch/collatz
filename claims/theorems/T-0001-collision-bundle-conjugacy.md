@@ -126,6 +126,7 @@ A_{t+1}=H(A_t)
 such that
 
 - \(A_0\equiv h\pmod c\);
+- \(A_0\ge M\);
 - \(n(A_0)>0\);
 - \(A_t\bmod M\in D\) for every \(t\ge0\);
 
@@ -137,7 +138,7 @@ Moreover, whenever \(A_t\ge M\), writing \(A_t=MB_t+j_t\) gives \(B_t\ge1\) and
 A_{t+1}=A_t+cB_t>A_t.
 \]
 
-Thus any such orbit that never lies among the one-digit fixed states \(D\) is strictly increasing at block boundaries.
+Thus any such orbit is strictly increasing at block boundaries.
 
 ## Definitions
 
@@ -280,7 +281,7 @@ we obtain \(n(A')=Nq+s\). Hence (8) holds.
 
 ### Infinite criterion
 
-Iterating (8) shows that the positive integer \(n(A_0)\) follows the induced orbit for successive blocks of \(L\) deterministic shortcut steps. If the induced orbit is infinite and admissible at every stage, the corresponding Collatz trajectory cannot reach the terminal cycle. If its boundary states are strictly increasing, it is unbounded. Either conclusion gives a counterexample. ∎
+Iterating (8) shows that the positive integer \(n(A_0)\) follows the induced orbit for successive blocks of \(L\) deterministic shortcut steps. Since \(A_0\ge M\), every state has a quotient \(B_t\ge1\), and (6) gives \(A_{t+1}>A_t\). Hence \(A_t\to\infty\), and the linear lifting formula (7) gives \(n(A_t)\to\infty\). The positive Collatz trajectory is therefore unbounded and is a counterexample. ∎
 
 ## Dependency audit
 
@@ -292,8 +293,7 @@ Iterating (8) shows that the positive integer \(n(A_0)\) follows the induced orb
 
 - The theorem is conditional: it does **not** prove an infinite admissible \(H\)-orbit exists.
 - An infinite sequence of compatible residues in the inverse limit is not automatically a finite positive starting integer.
-- Positivity of \(n(A_0)\) is an explicit hypothesis.
-- The one-digit states \(j\in D\) are fixed by \(H\); they need not satisfy the lifting congruence and are explicitly excluded from the growth conclusion when necessary.
+- Positivity of \(n(A_0)\) and the nontrivial boundary condition \(A_0\ge M\) are explicit hypotheses.
 - Every induced step is deterministic because the least base-\(M\) digit selects a unique branch.
 
 ## Adversarial tests
