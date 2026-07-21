@@ -12,13 +12,14 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9303` | Lemma | `PROPOSED` | Phase energy controls the survivor Fourier product | `L-9301`; elementary cosine inequality |
 | `L-9304` | Lemma | `PROPOSED` | Exact 2–3 phase reciprocity and valuation shift | elementary modular arithmetic; LTE reproved locally |
 | `L-9305` | Lemma | `PROPOSED` | Moving-character triadic Fourier identity | `D-9303` |
+| `L-9306` | Lemma | `PROPOSED` | Full-group absolute moments factor exactly | `T-9304`; CRT; Parseval for `p=2` |
 | `T-9301` | Conditional theorem | `PROPOSED` | Polynomial-window reduction to all-depth EQ | `L-9301`, `L-9302`; branch-qualified frequency block mean |
 | `T-9302` | Conditional theorem | `PROPOSED` | Density-one full EQ from frequency blocks and exact depth periods | `L-9302`, `T-9303`; branch-qualified frequency block mean only |
 | `T-9303` | Theorem | `PROPOSED` | Valuation-stratified fixed-frequency depth-period decay | `L-9304`; exact cosine-grid second moment |
 | `T-9304` | Theorem | `PROPOSED` | Stationary two-place CRT Fourier factorization | `L-9301`, `L-9305`; CRT |
 | `C-9301` | Conjecture | `IDEA` | Logarithmic cusp scattering | `L-9301`, `L-9303`, `T-9301` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Two-place room-cusp decay | `T-9304`; branch-qualified room-position interface |
+| `Q-9302` | Open question | `IDEA` | Two-place room-cusp decay | `T-9304`, `L-9306`; branch-qualified room-position interface |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `X-9301` | Experiment | `EMPIRICAL` | Exact cusp-scattering probe through depth 80 | standard-library exact modular arithmetic |
 
@@ -27,7 +28,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 - Every complete-looking argument authored in this packet enters as `PROPOSED` pending independent review.
 - `T-9301` remains conditional on the branch-qualified issue-#4 frequency-block theorem.
 - Revised `T-9302` no longer assumes issue #4's depth-block theorem. `T-9303` reconstructs a uniform complete-period estimate with the exact `v_3(theta)` loss; only the frequency-block input remains external.
-- `D-9303`, `L-9305`, and the main factorization in `T-9304` are self-contained. The position-rigidity consequence of `T-9304` is explicitly conditional on the branch-qualified issue-#4 room/CRT comparison.
+- `D-9303`, `L-9305`, `T-9304`, and `L-9306` are self-contained. The position-rigidity consequence of `T-9304` is explicitly conditional on the branch-qualified issue-#4 room/CRT comparison.
 - `BLOCK_MEAN_AUDIT.md` records why the original uniform partial-product reading of issue #4's Theorem 12 needs valuation correction. It does not change that branch's claim status.
 - `C-9301`, `Q-9301`, and `Q-9302` are open. No positive integer, divergent orbit, cycle, or Collatz counterexample is claimed.
 - `O-9301` is finite empirical evidence only. It is not a premise of any proof-level claim.
@@ -46,4 +47,6 @@ The newest issue-#4 interchange packet defines Cantor classes `C_j`, their trans
 - issue-#4 `C_j` recursion = the reductions of `D-9303`;
 - issue-#4 finite Cantor product = `L-9305`;
 - exact CRT transform of `R_n x C_j` = the main theorem `T-9304`;
-- transfer from that CRT set to the actual archimedean positions of `R_(n+j)` remains branch-qualified and is used only through an explicit conditional inequality.
+- complete-frequency absolute moments = `L-9306`;
+- transfer from that CRT set to the actual archimedean positions of `R_(n+j)` remains branch-qualified and is used only through an explicit conditional inequality;
+- `Q-9302` isolates the remaining short-orbit problem after full-group correlation has factored away.
