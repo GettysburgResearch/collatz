@@ -1,0 +1,23 @@
+verified bundle: L=6 r=14 width=2 a=4 M=64 N=81 s=20
+verified bundle: L=9 r=124 width=3 a=6 M=512 N=729 s=182
+verified bundle: L=17 r=9090 width=6 a=11 M=131072 N=177147 s=12302
+verified 64->81 nine-column carry cycle and stack amplifier
+
+maximal supercritical consecutive bundles through L=17:
+L= 1: none
+L= 2: none
+L= 3: none
+L= 4: none
+L= 5: none
+L= 6: count=    4 max_width=2 first_r=14 a=4 s=20
+L= 7: count=    5 max_width=2 first_r=54 a=5 s=107
+L= 8: count=    6 max_width=2 first_r=54 a=6 s=161
+L= 9: count=   28 max_width=3 first_r=108 a=6 s=161
+L=10: count=   36 max_width=3 first_r=108 a=7 s=242
+L=11: count=  129 max_width=3 first_r=108 a=7 s=121
+L=12: count=  175 max_width=3 first_r=108 a=8 s=182
+L=13: count=  231 max_width=3 first_r=364 a=9 s=890
+L=14: count=  786 max_width=5 first_r=1698 a=9 s=2051
+L=15: count= 1084 max_width=5 first_r=1698 a=10 s=3077
+L=16: count= 1461 max_width=5 first_r=1698 a=11 s=4616
+L=17: count= 4897 max_width=6 first_r=9090 a=11 s=12302
