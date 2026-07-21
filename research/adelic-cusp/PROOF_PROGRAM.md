@@ -4,12 +4,12 @@
 **Issue:** #15  
 **Status:** research program; every unproved step is labeled
 
-## 1. Exact boundary after this packet
+## 1. Exact boundary after the current packet
 
-The packet separates the problem into the following implication graph:
+The one-place route is
 
 ```text
-D-9301  fixed Z_2 measure
+D-9301  fixed Z_2 survivor measure
    |
    v
 L-9301  moving-character identity
@@ -27,112 +27,181 @@ T-9301 polynomial-window reduction
    ^
    |
 L-9302 weighted shell tail  <--- frequency block mean (branch-qualified)
+```
 
-frequency block mean + depth block mean
+The density-one route is
+
+```text
+L-9304 exact phase reciprocity
    |
+   v
+T-9303 valuation-stratified depth periods
+   |
+   + frequency block mean
    v
 T-9302 full weighted EQ on density-one depths
 ```
 
-The all-depth EQ problem is now concentrated in one sentence:
+The room/Cantor route is now
 
-> Exclude a polynomial-height rational character whose phase energy stays `O(log K)` at infinitely many depths.
+```text
+D-9303 fixed Z_3 mirror measure
+   |
+   v
+L-9305 triadic moving-character identity
+   |
+   + L-9301
+   v
+T-9304 exact CRT product factorization
+   |
+   +-----------------------------+
+   |                             |
+   v                             v
+L-9306 full-group moments    L-9307/L-9308 one stitched phase chain
+                                 |
+                                 v
+                          T-9305/T-9306 split collapse
+```
 
-The direct M1 problem is concentrated in a different sentence:
+The split-collapse theorems prove that in every range
+
+\[
+H=o(64^K),
+\]
+
+the original survivor coefficients, the triadic mirror coefficients, and every CRT split are equivalent—both in magnitude and against arbitrary bounded harmonic tests—up to `O(H/64^K)`.
+
+Therefore the all-depth EQ problem is concentrated in one sentence:
+
+> Exclude a polynomial-height rational character whose common reciprocal phase chain has only `O(log K)` energy at infinitely many depths.
+
+The direct M1 problem remains different:
 
 > Determine whether the symbolic stable leaf `Phi(Omega)` meets the ordinary-integer section `I` outside the two trivial endpoints.
 
-These are related by duality but should not be conflated. EQ can hold while one exceptional M1 point survives.
+EQ can hold while one exceptional M1 point survives. These objectives must not be conflated.
 
-## 2. Offense A: exceptional-frequency amplification
+## 2. What split collapse rules out
 
-### Target inverse lemma
-
-Prove a statement of the following form.
-
-> **Exceptional-frequency amplification, tentative.** There are constants `u,v>0` such that if
-> \[
-> 1\le\theta\le K^A,
-> \qquad
-> F_K(\theta)\ge K^{-u},
-> \]
-> then there is an interval `I` of at least `K^v` consecutive numerators near a controlled affine image of `theta` for which
-> \[
-> \frac1{|I|}\sum_{h\in I}F_K(h)
-> \ge K^{-O(u)}.
-> \]
-
-If `I` contains a full `81^r` block with `r` proportional to `log K`, the frequency block mean gives exponential decay in `r`, contradicting the lower bound for suitable constants.
-
-### Why this might be true
-
-By `L-9303`, a large coefficient forces
+`L-9307` and `L-9308` show that the two local CRT character classes are the images of one rational
 
 \[
-\sum_t x_{K,t}(\theta)^2=O(\log K).
+r=\frac h{64^n81^j}
 \]
 
-Most levels therefore have very small phase distance. A small perturbation of the numerator preserves a phase whenever the exact modular increment stays inside its available margin. The obstacle is that the sensitivity changes with `t`; ordinary Euclidean closeness of numerators is not enough.
-
-The desired proof should build an interval through the common carry coordinates rather than through a naive Lipschitz estimate.
-
-### Proposed robustness-or-loss dichotomy
-
-For each level, record both
+and that their Bernoulli factors stitch the chain
 
 \[
-x_{K,t}(\theta)
+q_\ell(h)
+\equiv
+-17h64^{\ell-K}
+\pmod{81^{\ell+1}},
+\qquad
+0\le\ell<K.
+\tag{1}
 \]
 
-and its distance from the boundary of a chosen degeneracy window. Then prove:
+`T-9305` and `T-9306` imply the following methodological restrictions.
 
-1. either at least `c log K` levels lie in boundary annuli, in which case their moderate cosine losses already prove polynomial decay;
-2. or a large collection of degenerate levels has robust margins, and their exact congruences persist for a structured block of nearby numerators.
+1. **No weaker absolute target.** Proving decay of the two-place absolute product in the EQ range already proves the original EQ criterion.
+2. **No different bounded signed target.** Every bounded harmonic test of the complex two-place coefficients is asymptotically the corresponding one-place test.
+3. **No independent local-energy heuristic.** The local factors are adjacent pieces of one chain, not independent samples.
+4. **Full-group moments are insufficient.** The complete dual group factors, but the rational diagonal may still be exceptional.
+5. **Position transfer is not the missing Fourier step.** Ordered-position rigidity remains important geometrically, but the absolute and complex coefficient comparisons are now direct.
 
-The second case should create forbidden block mass.
+A two-place proof can still be valuable. Its value must come from a better representation of the **same chain**, not from a weaker conclusion.
 
-### Main danger
+## 3. Offense A: bilateral low-energy inverse theorem
 
-The intersection of the stability congruences may be one thin arithmetic progression rather than a consecutive interval. A successful lemma may therefore need to apply the issue-#4 block mean after a multiplicative change of variable or after grouping several adjacent scales. No such transference is presently proved.
+### Target statement
 
-## 3. Offense B: S-unit carry height
+Prove a finite theorem of the following form.
 
-For every phase, `C-9301` gives the exact equation
+> **Bilateral low-energy inverse theorem, tentative.** There are constants `A,C,c>0` such that if
++> \[
++> 1\le h\le K^A
++> \]
++> and the phase energy of `(1)` is at most `C log K`, then one of the following holds:
++> 1. `h` has an exact `64`-power reduction;
++> 2. `h` has an exact `81`-valuation loss;
++> 3. the carry sequence belongs to one of finitely many bounded-complexity templates;
++> 4. a full block of at least `K^c` nearby frequencies inherits comparable low energy.
+
+The first two outcomes reduce the problem to smaller parameters. The fourth contradicts the frequency-block mean for suitable constants. The third becomes a finite classification problem.
+
+### Exact carry recurrence
+
+Let
 
 \[
-17\theta
-=81^{t+1}s_t+64^{K-t}m_t. \tag{1}
+y_\ell(h)=\frac{q_\ell(h)}{81^{\ell+1}}.
 \]
 
-Adjacent signed representatives satisfy
+Reduction of `(1)` from level `ell+1` to level `ell` gives
 
 \[
-s_t\equiv81s_{t+1}\pmod{64^{K-t-1}}. \tag{2}
+q_{\ell+1}
+\equiv64q_\ell
+\pmod{81^{\ell+1}}.
 \]
 
-A low-energy exception has many `s_t` small relative to `64^(K-t)`. The proposed arithmetic strategy is:
+Writing the new lift digit as `j_ell in {0,...,80}` yields
 
-1. choose a logarithmic set of well-separated levels;
-2. eliminate `theta` between their equations `(1)`;
-3. obtain a family of exact four-term `{2,3}`-unit relations;
-4. prove a height gap: unless the relations fall into one of finitely many degenerate templates, at least one normalized `s_t` is macroscopic;
-5. classify the degenerate templates and show that a polynomially bounded positive `theta` cannot follow one for all selected levels.
+\[
+\boxed{
+y_{\ell+1}
+=
+\frac{\{64y_\ell\}+j_\ell}{81}.
+}
+\tag{2}
+\]
 
-### Candidate specialized height lemma
+This is the deterministic chain underneath the Markov decompositions in issue #4. A low-energy exception is a path of `(2)` that spends too much time near the annihilator of the Bernoulli mask.
 
-A useful statement would be:
+### Robustness-or-loss dichotomy
 
-> Given `L` separated levels and a common nonzero integer `theta`, the equations `(1)` cannot all have
-> \[
-> |s_t|\le64^{K-t}/L^C
-> \]
-> unless `theta` is divisible by a power of `81` or `64` whose size is exponential in `L`.
+For every level record:
 
-Since `theta <= K^A`, an exponential divisibility conclusion with `L` proportional to `log K` would close the target.
+- the distance of `y_ell` from an integer;
+- the distance from the boundary of a chosen degeneracy window;
+- the lift digit `j_ell`;
+- the carry discarded by `{64 y_ell}`.
 
-### What must not happen
+Seek a dichotomy:
 
-Invoking the general phrase “S-unit theorem” is not enough. Classical finiteness theorems often provide no effective uniform bound in the moving exponents `K,t`. The packet needs a specialized, quantitative argument using the two-term structure and the exact gcd facts
+1. at least `c log K` levels lie in boundary annuli, and their moderate cosine loss proves polynomial decay;
+2. many degenerate levels have robust margins, and the corresponding carry constraints persist under a structured frequency perturbation.
+
+The perturbation set may be an arithmetic progression rather than a consecutive interval. A successful proof must include a transference from that progression to the arbitrary-block frequency theorem or combine several scales until a full block appears.
+
+## 4. Offense B: specialized `{2,3}` height gap
+
+The dyadic signed representatives satisfy exact equations
+
+\[
+17h
+=
+81^{\ell+1}s_\ell
++
+64^{K-\ell}m_\ell.
+\tag{3}
+\]
+
+A low-energy path has many `s_ell` small relative to `64^(K-ell)`. Choose logarithmically many separated levels and eliminate `h` between their equations. This produces exact four-term `{2,3}`-unit relations.
+
+The desired specialized lemma is:
+
+> If `(3)` is simultaneously very small at `L` separated levels, then `h` is divisible by a power of `64` or `81` exponential in `L`, unless the carries lie in one of finitely many explicitly classifiable templates.
+
+For
+
+\[
+h\le K^A,
+\]
+
+an exponential divisibility conclusion with `L` proportional to `log K` closes the energy target.
+
+Invoking the phrase “S-unit theorem” is not enough. The proof needs effective uniformity in the moving exponents and must exploit
 
 \[
 \gcd(64,81)=1,
@@ -140,48 +209,63 @@ Invoking the general phrase “S-unit theorem” is not enough. Classical finite
 17\nmid64\cdot81.
 \]
 
-## 4. Offense C: an adelic shrinking-target theorem
+## 5. Offense C: positive room-tower transfer
 
-`D-9302` places the coding in
+Issue #4 now identifies the base-`81` room digits as wrap counts of successive `H`-steps. The first marginal contracts empirically, but reconstruction at modulus `81` requires joint information at modulus `81^2`, and in general every level is driven by the next. This is an inverse-limit skew product.
 
-\[
-\mathbb X_S
-=(\mathbb R\times\mathbb Q_2\times\mathbb Q_3)/\Delta\mathbb Z[1/6]
-\]
+Absolute Fourier products may be a poor proof language below the fair window because exact copies defeat majorants. The alternative program is:
 
-under the hyperbolic automorphism `alpha` induced by `81/64`.
+1. write the exact tower kernel on `Z_3` using `D-9303`;
+2. preserve the deterministic period-9 twist from multiplication by `64`;
+3. define a positive observable measuring interval mass, relative entropy, or room imbalance;
+4. prove contraction after one full twist period while controlling the information imported from the next tower level;
+5. iterate without closing at a false finite modulus.
 
-On the dual side, `L-9301` samples one fixed measure along rational characters with:
+A useful theorem would bound the information flux from level `m+1` to level `m` by less than the proven nine-step marginal contraction.
 
-- small real height `theta/64^K`;
-- large 2-adic height;
-- correlated 3-adic rotation through powers of `81`.
+## 6. Offense D: hyperbolic renewal on the rational diagonal
 
-### Desired dynamical theorem
-
-Prove uniform nonconcentration for low-height rational characters entering a shrinking neighborhood of the annihilator of the digit difference at too many times.
-
-A deliberately concrete formulation is:
-
-> For some `A,c>0`, every nonzero rational character with numerator at most `K^A` spends total squared distance at least `c log K` from the annihilator over its first `K` inverse iterates.
-
-This is exactly the energy version of `C-9301`.
-
-### Why generic rigidity does not automatically apply
-
-The coded measure lies on a symbolic stable leaf with third coordinate fixed at zero. A hypothetical integer witness is one orbit, not a positive-entropy invariant measure. Standard measure-rigidity, mixing, and real self-similar Fourier-decay theorems therefore remain analogies until their hypotheses are reconstructed in this S-arithmetic setting with constants uniform in the cusp height.
-
-### Product-formula hope
-
-The action expands at the real and 2-adic places and contracts at the 3-adic place:
+`D-9302` places the system in
 
 \[
-|\beta|_\infty\,|\beta|_2\,|\beta|_3=1.
+(\mathbb R\times\mathbb Q_2\times\mathbb Q_3)
+/
+\Delta\mathbb Z[1/6]
 \]
 
-A character that is simultaneously too resonant in the 2-adic phase and too low in real height may be forced to acquire 3-adic complexity. Turning that conservation law into a quantitative return bound is the conceptual reason to retain all three places.
+under multiplication by `81/64`.
 
-## 5. Direct offense on M1
+The CRT character pair is the local image of one rational `h/Q`, not an arbitrary point of the product dual. A dynamical theorem should therefore be stated directly on this rational diagonal:
+
+> Every nonzero rational character of numerator at most `K^A` accumulates at least `c log K` total mask energy along the relevant finite bilateral orbit.
+
+Generic mixing is insufficient. The measure is singular, the orbit has low rational height, and the constants must be uniform in the cusp parameters.
+
+The product formula
+
+\[
+|\beta|_\infty|\beta|_2|\beta|_3=1
+\]
+
+suggests a conservation principle: prolonged resonance at one expanding place must generate complexity at another place or in the real height. Turning that principle into a quantitative return bound is the conceptual dynamical target.
+
+## 7. Exceptional-depth coherence
+
+`T-9302` proves full weighted EQ on a density-one set of depths. The remaining exceptional set may still be infinite.
+
+A depth bad at several adjacent scales must simultaneously defeat:
+
+- the valuation-stratified period averages;
+- the frequency-block tail estimate;
+- the exact room-tower contraction at its first marginal.
+
+The proposed inverse theorem is:
+
+> Multi-scale exceptional depths force a coherent bounded-height carry word across several adjacent `81`-adic annuli.
+
+Once such a word is exposed, either classify it arithmetically or amplify it to excessive frequency-block mass.
+
+## 8. Direct offense on M1
 
 The exact open intersection is
 
@@ -189,69 +273,52 @@ The exact open intersection is
 \Phi(\Omega)\cap\mathcal I.
 \]
 
-Two opposite programs are legitimate.
-
 ### Constructive program
 
-Seek a finitely generated but nonautomatic itinerary whose solenoid point lies in the integer section. Any candidate must provide:
+Seek a finitely generated but nonautomatic itinerary whose solenoid point lies in the integer section. A candidate must include:
 
 1. an exact infinite digit rule;
-2. proof that its 2-adic sum is one ordinary positive integer;
+2. proof that its `2`-adic sum is one ordinary positive integer;
 3. proof of the required chart congruence;
-4. an independent reconstruction of the induced-to-Collatz translation.
+4. independent reconstruction of the induced-to-Collatz translation.
 
-The branch literature audit already warns that compatible finite prefixes can converge only to a 2-adic ghost. The third-coordinate section test in `D-9302` makes that failure visible but does not prevent it.
+Compatible prefixes alone may converge to a `2`-adic ghost.
 
 ### Rigidity program
 
-Assume a nontrivial integer intersection and form empirical measures of its `alpha`-orbit in `X_S`. Determine whether the shared symbolic itinerary forces:
+Assume a nontrivial integer intersection and construct an invariant or empirical object from its orbit. Determine whether the shared itinerary forces positive entropy, a second multiplicatively independent invariance, or concentration on a forbidden rational subsolenoid.
 
-- positive entropy at one expanding place;
-- simultaneous invariance under a second multiplicatively independent action;
-- or a forbidden concentration on a rational subsolenoid.
+No such consequence is presently proved. Measure rigidity cannot engage until the invariant object and its hypotheses are explicit.
 
-None of these consequences is currently proved. Producing the invariant object is the prerequisite before measure rigidity can engage.
+## 9. Computation boundary
 
-## 6. Minimal exact computation
+Computation remains limited to lemma discovery and falsification.
 
-Computation is limited to lemma discovery and falsification.
-
-The first probe should scan only
+`X-9301` scans
 
 \[
 K\le80,
 \qquad
-1\le\theta\le K^2,
+1\le h\le K^2
 \]
 
-using exact modular arithmetic. For fixed rational thresholds `delta`, record:
+with exact modular arithmetic. The next permissible extension is to emit complete carry and lift-digit paths for selected worst cases. Merely increasing the depth bound is not a research result.
 
-- the minimum number of `delta`-scattered levels;
-- the minimizing numerator;
-- the complete signed carry path for the worst cases.
+## 10. Falsification criteria
 
-The count is exact; no floating-point Fourier magnitude is needed. The purposes are:
+Revise or abandon the corresponding route if any of the following occurs:
 
-1. refute an overstrong fixed-threshold claim quickly;
-2. identify recurrent carry templates for a proposed height lemma;
-3. decide whether fixed-threshold scattering or quadratic energy is the more stable target.
+1. an explicit polynomial-height family has bounded phase energy along infinitely many depths;
+2. one exceptional frequency remains isolated and defeats every amplification mechanism while respecting the block mean;
+3. the issue-#4 frequency-block theorem fails the arbitrary-consecutive-block quantifier;
+4. the character or word-order crosswalk is inconsistent with the live subsystem;
+5. the room tower imports information at a rate at least as large as every available marginal contraction;
+6. a direct nontrivial integer-section point is constructed, in which case priority shifts immediately to adversarial verification.
 
-Even perfect behavior through depth `80` is only `EMPIRICAL`. The output must never be cited as evidence that all-depth EQ holds.
+## 11. Best next theorem
 
-## 7. Falsification criteria
+The highest-leverage next result is now:
 
-This program should be revised or abandoned if any of the following occurs:
+> **Carry-template inverse theorem.** Every polynomial-height low-energy chain `(q_ell)` admits a bounded-complexity lift-digit description. Every such description either reduces by an exact power of `64` or `81`, is arithmetically impossible, or persists on enough nearby frequencies to contradict the arbitrary-block mean.
 
-1. an exact polynomial-height family has bounded phase energy along infinitely many symbolic depths;
-2. a single exceptional frequency can remain isolated, defeating every plausible amplification lemma while respecting the block mean;
-3. the issue-#4 block means fail the arbitrary-consecutive-block quantifiers required by `L-9302` or `T-9302`;
-4. the stationary character identity uses a different digit order from the live subsystem;
-5. a direct nontrivial integer-section point is constructed, in which case the priority shifts immediately from EQ to adversarial verification of that candidate.
-
-## 8. Best next theorem
-
-The highest-leverage next result is not a broad mixing theorem. It is the following finite, exact inverse statement:
-
-> **Low-energy inverse theorem.** Every polynomial-height pair `(K,theta)` with phase energy `O(log K)` admits a bounded-complexity carry description, and every such description either forces `theta=0`, reduces by an exact power of `64`, or amplifies to a full `81^r` block of comparably low energy.
-
-The first two outcomes are harmless; the third contradicts the frequency block mean. Proving this theorem would close `C-9301` in an energy form and therefore close all-depth EQ through `T-9301`.
+This theorem would close `C-9301` in energy form and therefore close all-depth EQ through `T-9301`. The split-collapse results guarantee that it may be proved in whichever of the dyadic, triadic, room, or solenoid representations makes the carry structure most transparent.
