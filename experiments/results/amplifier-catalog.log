@@ -1,0 +1,38 @@
+== sign--criticality theorem, all words length <= 14 ==
+[PASS] sign(x_w) <=> criticality for all 32752 words (p<=14)
+[PASS] fixed point realizes parity word w^inf (all words p<=14)
+    supercritical (negative) cycles: 6333, subcritical (positive): 26419
+
+== integer negative cycles as amplifiers ==
+  cycle -1: p=1, a=1, 3^a/2^p = 3/2 (SUPERcritical), density a/p = 1/1
+[PASS] cycle -1 amplifier identity T^p(2^p q + v) = 3^a q + v', all phases
+  cycle -5: p=3, a=2, 3^a/2^p = 9/8 (SUPERcritical), density a/p = 2/3
+[PASS] cycle -5 amplifier identity T^p(2^p q + v) = 3^a q + v', all phases
+  cycle -17: p=11, a=7, 3^a/2^p = 2187/2048 (SUPERcritical), density a/p = 7/11
+[PASS] cycle -17 amplifier identity T^p(2^p q + v) = 3^a q + v', all phases
+[PASS] density comparison: 7/11 > log_3 2 > 15/24 i.e. 3^7>2^11 and 3^15<2^24
+[PASS] -5 density 2/3 > log_3 2 (3^2 > 2^3)
+
+== the -17 phase system (11 phases, base 2048 -> 2187) ==
+[PASS] -17 system: 11x11 transition table, one residue per ordered pair
+[PASS] -17 macro step == exactly 11 shortcut steps (9 random configs)
+[PASS] -17 subsystem: |d| <= 119 < 139 = 2187-2048  => q' > q for ALL q >= 1
+[PASS] -17 subsystem growth verified on table
+[PASS] -17 subsystem: periodic schedules force q = 0 (|q0|<=5000 scan)
+
+== the -1 system is totally rigid ==
+[PASS] -1 system: only rule is A O_0 -> A N_0 (q must be even each step)
+
+== supply of DEEP supercritical templates (rational cycles) ==
+  least-dense supercritical words (closest to critical from above):
+    density 7/11 = 0.63636  word 11111110000  x_w = -2059/139
+    density 7/11 = 0.63636  word 11111101000  x_w = -2123/139
+    density 7/11 = 0.63636  word 11111011000  x_w = -2219/139
+    density 7/11 = 0.63636  word 11110111000  x_w = -17
+    density 7/11 = 0.63636  word 11101111000  x_w = -2579/139
+    density 7/11 = 0.63636  word 11011111000  x_w = -2903/139
+    density 7/11 = 0.63636  word 10111111000  x_w = -3389/139
+    density 7/11 = 0.63636  word 01111111000  x_w = -4118/139
+[PASS] den >= log_3 2 for all supercritical (i.e. no density < log32 seen)
+
+ALL CHECKS PASS

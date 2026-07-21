@@ -1,0 +1,19 @@
+Z mod 2^2000 computed; designed parity vector verified for 2000 steps
+odd steps A(B) = 1278 of 2000: density 0.63900 > log_3 2 = 0.63093
+growth of the truncation certificate: 3^A/2^B = 2^25.6
+  n = Z mod 2^500: positive integer, 500 bits; T^500(n) has 508 bits; odd 320/500 supercritical: True
+  n = Z mod 2^1000: positive integer, 1000 bits; T^1000(n) has 1013 bits; odd 639/1000 supercritical: True
+  n = Z mod 2^1500: positive integer, 1500 bits; T^1500(n) has 1520 bits; odd 959/1500 supercritical: True
+  n = Z mod 2^2000: positive integer, 1995 bits; T^2000(n) has 2021 bits; odd 1278/2000 supercritical: True
+parity vector has no period <= 400 (and none at all, by gcd(173,11)=1):
+  => Z lies on no rational cycle template; its orbit never cycles
+binary expansion of Z (first 2000 bits): 1197 ones, 803 zeros
+  longest runs: 340 ones, 10 zeros  (no sign of terminating: Z is a 2-adic integer, not visibly an element of ZZ)
+
+CONCLUSION: Z is an explicit, computable divergent point of the
+shortcut Collatz map on ZZ_2 -- a counterexample to 2-adic Collatz
+constructed along the rewrite route (riding the -17 cycle with
+aperiodic defects).  Its integer truncations realize exact
+supercritical certificates of every finite length.  By the
+rigidity dichotomy, no schema-structured refinement can place
+such a point in ZZ; that placement is the Collatz conjecture.

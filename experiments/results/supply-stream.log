@@ -1,0 +1,25 @@
+== E1: exact validity tree for A0 = 81^N * 1 ==
+  t=1: 64/256 = 0.250000   (theorem: 1/4 = 0.25)
+  t=2: 128 classes mod 2^14; conditional d_2 = 0.031250  (generic 1/32 = 0.03125)
+  t=3: 256 classes mod 2^20; conditional d_3 = 0.031250  (generic 1/32 = 0.03125)
+  t=4: 512 classes mod 2^26; conditional d_4 = 0.031250  (generic 1/32 = 0.03125)
+  t=5: 1024 classes mod 2^32; conditional d_5 = 0.031250  (generic 1/32 = 0.03125)
+  t=6: 2048 classes mod 2^38; conditional d_6 = 0.031250  (generic 1/32 = 0.03125)
+
+== E1: exact validity tree for A0 = 81^N * 5 ==
+  t=1: 0/256 = 0.000000   (theorem: 1/4 = 0.25)
+  t=2: 0 classes mod 2^14; conditional d_2 = 0.000000  (generic 1/32 = 0.03125)
+
+== E2: H-runs of actual amplifier outputs 81^{9m}(81x+1) ==
+  12000 outputs: run distribution {0: 11250, 1: 727, 2: 23}
+  mean run 0.06442; first-step theorem predicts P(run>=1) = 1/4 exactly for x=0 (odd outputs)
+  x=0: P(run>=1) = 0.25000
+  x=1: P(run>=1) = 0.00000
+
+== E3: static base-64 digit frequencies of 81^k (middle digits) ==
+  3200654 middle digits; freq(digit in {0,1}) = 0.031073; expected 0.031250 +- 0.000097 (1.82 sigma)
+  chi-square over 64 digits: 73.2 (df=63, mean 63, sd ~ 11.2)
+
+== E4: demand-agreement (coset-conditioned) ==
+  4000 stages, x == 15 mod 16: valuation distribution {0: 3001, 1: 988, 2: 11}
+  P(v>=1) = 0.24975; conditioned null: agreement mod 64 needs the remaining 2 bits of the digit -> 1/4 = 0.25; then 1/64 per further digit

@@ -1,0 +1,12 @@
+== Theorem 1: H-rigidity ==
+[PASS] affine form and bound 0 <= 17C <= 81^S (3000 random words)
+[PASS] no expanding H-identity on exp-poly families in range
+== Theorem 2: coding V_inf ~ {0,1}^N ==
+[PASS] every {0,1}-word codes a unique residue (60 random words, k<=8)
+[PASS] periodic codes = rational fixed points 17C/(81^p-64^p), all p<=6
+[PASS] direct: integer valid periodic points in 0..4 are exactly {0,1}
+== Theorem 3: 2-automaticity of regeneration residues ==
+[PASS] r_{m,m+17} mod 64^j periodic in m with exact period 2^{6j-4} (j=1: 4, j=2: 256)
+[PASS] stage-gap frequency of 18 = 0.654848 irrational (from transcendental slope); Cobham: not k-automatic
+
+ALL CHECKS PASS

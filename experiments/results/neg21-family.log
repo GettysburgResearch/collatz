@@ -1,0 +1,6 @@
+A 6 7^k #  <->  n(k) = 8^{k+2} - 21
+bridge: -21 -> -31 -> -46 -> -23 -> -34 (on the -17 cycle), parities 1101
+LEMMA T^{4+11j}(8^{k+2}-21) = 27*3^{7j}*2^{3k+2-11j} - 34: PASS
+k=33: 66/103 odd = 0.64078 > log_3 2; bits 105 -> 107 (EXPANDS); 3^66 > 2^103: True
+two-stage composite: 73/114 = 0.64035, supercritical: True, bits 186 -> 188
+ALL CHECKS PASS

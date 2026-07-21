@@ -1,0 +1,43 @@
+K  |R_K|    min nontrivial      32^K (model)   ratio  bucket-chi2(63)
+ 2        4  9.610e+02  1.024e+03    0.938      92.0
+ 3        8  7.232e+03  3.277e+04    0.221      72.0
+ 4       16  9.288e+05  1.049e+06    0.886      88.0
+ 5       32  1.678e+07  3.355e+07    0.500      68.0
+ 6       64  2.046e+09  1.074e+09    1.905      56.0
+ 7      128  2.018e+10  3.436e+10    0.587     116.0
+ 8      256  6.100e+11  1.100e+12    0.555     102.0
+ 9      512  9.098e+12  3.518e+13    0.259      73.0
+10     1024  1.541e+15  1.126e+15    1.368      90.1
+11     2048  6.737e+15  3.603e+16    0.187     276.6
+12     4096  4.585e+17  1.153e+18    0.398      57.1
+13     8192  1.060e+19  3.689e+19    0.287      12.2
+14    16384  2.354e+20  1.181e+21    0.199      27.9
+15    32768  2.015e+22  3.778e+22    0.533     295.1
+16    65536  7.194e+23  1.209e+24    0.595       5.4
+17   131072  1.767e+25  3.869e+25    0.457       7.7
+18   262144  6.619e+26  1.238e+27    0.535       3.9
+19   524288  4.649e+28  3.961e+28    1.174      27.7
+20  1048576  1.647e+30  1.268e+30    1.299       7.2
+
+== survivors at K = 20 (all integers < 64^20 valid 20 steps) ==
+ten smallest nontrivial survivors:
+  A = 1646939047692556889060463877184  (101 bits, fair window 16.8 steps, actual run 20, class 10 mod 17)
+  A = 4883088549987248410804042596352  (102 bits, fair window 17.0 steps, actual run 20, class 10 mod 17)
+  A = 6274631863697008748653453508608  (103 bits, fair window 17.2 steps, actual run 20, class 2 mod 17)
+  A = 7935849609852660358586513235008  (103 bits, fair window 17.2 steps, actual run 20, class 10 mod 17)
+  A = 8180379958492643576571394530368  (103 bits, fair window 17.2 steps, actual run 20, class 11 mod 17)
+  A = 8630111186835902794090036727808  (103 bits, fair window 17.2 steps, actual run 20, class 1 mod 17)
+  A = 10355582983668770442850077889473  (104 bits, fair window 17.3 steps, actual run 20, class 12 mod 17)
+  A = 11466379254076660661547981205505  (104 bits, fair window 17.3 steps, actual run 20, class 5 mod 17)
+  A = 12283716945958066638750003225537  (104 bits, fair window 17.3 steps, actual run 20, class 1 mod 17)
+  A = 12514138428534833756639641723841  (104 bits, fair window 17.3 steps, actual run 20, class 16 mod 17)
+max run/fair-window among 200 smallest: 1.188
+chart-class survivors (mod 17 in {6,0,8,3}): 246664/1048574 = 0.2352 (expected 4/17 = 0.2353)
+smallest chart-class survivor: A = 20813873872535705615182438993920 (class 0)
+
+small-element counts (EQ test): #R_K below 64^{K*f}:
+  f=0.50:        2  (equidistribution predicts          0.0)
+  f=0.70:        2  (equidistribution predicts          0.0)
+  f=0.85:        4  (equidistribution predicts          4.0)
+  f=0.95:    16397  (equidistribution predicts      16384.0)
+  f=1.00:  1048576  (equidistribution predicts    1048576.0)

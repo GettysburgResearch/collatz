@@ -1,0 +1,19 @@
+== Theorem 9: self-similarity and sharp maximum ==
+  (a) S_K(64^j t')/2^K = S_(K-j)(t')/2^(K-j): True
+  (b) global max == cos(pi/64) = 0.998795 (exhaustive K=2,3): True
+
+== Theorem 10: exact-run rigidity in the survivor range ==
+  K=16: margin level (interior zone) t < 13; exact-zone bound 0.158K = 2.5
+  scanned all theta <= 2^16: run lengths {1: 152932, 2: 35844, 3: 8325, 4: 2001, 5: 435, 6: 109, 7: 27, 8: 6, 9: 1}
+  interior runs violating the exact ladder: 35424
+  interior sub-modulus runs violating 17*theta = 81^(t0+L)*sigma: 0
+  interior runs confined to <= log_81(17*2^K): True
+  interior HUGE-ladder runs (the open branch): 124248
+
+== anchor structure of the worst survivor-range frequencies ==
+  theta=  7209: |S|/2^K=0.3005  runs: [t0=0,L=2H], [t0=3,L=1EH], [t0=6,L=2H], [t0=10,L=1EH], [t0=12,L=1EH], [t0=15,L=1EH]
+  theta=  5696: |S|/2^K=0.3005  runs: [t0=0,L=1EH], [t0=2,L=1EH], [t0=5,L=2H], [t0=9,L=1EH], [t0=11,L=1EH], [t0=14,L=1EH]
+  theta=  4209: |S|/2^K=0.2112  runs: [t0=0,L=3H], [t0=4,L=2H], [t0=7,L=1EH], [t0=9,L=1EH], [t0=11,L=2H], [t0=15,L=1EH]
+  theta= 52624: |S|/2^K=0.1430  runs: [t0=0,L=3H], [t0=8,L=1EH], [t0=10,L=4H]
+  theta= 17325: |S|/2^K=0.1406  runs: [t0=0,L=7H], [t0=8,L=1EH], [t0=10,L=2H], [t0=13,L=1EH], [t0=15,L=1EH]
+  (E = exact ladder, S = sub-modulus, H = huge; boundary zone starts at t = 13)
