@@ -201,7 +201,203 @@ further iteration around the trivial cycle would put `1` or `2` into
 Fixed blocks may compress a description or suggest phase automata, but they do
 not enlarge the existential class of regular sanctuaries.
 
-## 7. Finite-horizon safety automata
+## 7. Odd-core equivalence
+
+For odd `n`, define
+
+$$
+U(n)=\frac{3n+1}{2^{\nu_2(3n+1)}}.
+$$
+
+Regular shortcut sanctuaries exist exactly when regular nonempty odd languages
+`O` with `U(O) subset O` and `1 notin O` exist.
+
+In one direction, intersect a shortcut sanctuary `L` with the regular language
+of odd canonical words.  The intersection is nonempty because repeated
+shortcut halving takes every positive integer to its odd part.  For odd
+`n in L`, the value `U(n)` occurs after `nu_2(3n+1)` shortcut steps, so it
+remains in the odd core.
+
+Conversely, dyadically saturate an odd language:
+
+$$
+\operatorname{Sat}_2(O)=\{2^k n:k\geq0,\ n\in O\}.
+$$
+
+Its LSD-first language is the regular language `0* O`.  Even members map one
+level down the saturation, while for odd `n`
+
+$$
+T(n)=2^{\nu_2(3n+1)-1}U(n).
+$$
+
+Thus the saturation is shortcut invariant and excludes `{1,2}` exactly when
+`O` excludes `1`.  This is an existence equivalence, not a claim that every
+unsaturated `L` equals the saturation of its odd core.
+
+The experiment now implements a seven-state transducer for the totalized map
+`U(odd_part(n))` and an exact DFA lift for `0* O`.  Odd-core search remains
+conjecture-generation machinery: every proposed lift is passed back to the
+unchanged standard shortcut verifier, which remains the certificate boundary.
+
+## 8. Dyadic-cylinder basin density
+
+Every residue class modulo every fixed power of two contains infinitely many
+integers reaching a power of two.
+
+Fix `A>0`, `0<=r<2^A`, and write `n=r+2^Aq`.  The first `A` parity decisions
+are fixed by `r`.  If `a` of them are odd, then
+
+$$
+T^A(n)=3^a q+s,
+\qquad s=T^A(r),
+$$
+
+where `T(0)=0` is used only for this formula.  If `a=0`, then `r=s=0` and a
+power-of-two `q` works.  If `a>0`, inspect the last odd step: immediately after
+it the constant trajectory is `2 modulo 3`, and all remaining halvings keep it
+nonzero modulo three.  Hence `s` is a unit modulo `3^a`.
+
+The residue 2 generates the units modulo `3^a`; equivalently its order is
+`2*3^(a-1)`.  Choose arbitrarily large `k` with
+`2^k=s modulo 3^a` and put
+
+$$
+q=\frac{2^k-s}{3^a}.
+$$
+
+For large `k`, this is nonnegative and `T^A(n)=2^k`.  The case `A=0` is the
+set of all positives and already contains every power of two.
+
+Therefore no sanctuary contains all sufficiently large integers in even one
+dyadic cylinder.  This excludes eventual fixed-modulus predicates and DFA
+states accepting every high-bit continuation.  It does not exclude arbitrary
+regular languages, which may retain branching dependence on unboundedly high
+bits.
+
+## 9. Finite-lasso obstruction
+
+Consider, up to a finite exceptional set, a finite union of exact rays
+
+$$
+R_i=\{A_i+B_i2^{h_i k}:k\geq K_i\},
+$$
+
+with positive integer values, `h_i>=1`, `B_i>0`, and rational coefficients of
+odd denominator.  If the union is shortcut invariant, every orbit in it is
+eventually periodic.
+
+Parity on each ray is constant for large `k`, say `epsilon_i`.  The image tail
+has the form
+
+$$
+C_i+D_i2^{h_i k},
+\qquad D_i=\frac{3^{\epsilon_i}}2B_i.
+$$
+
+If this image ray meets a target ray infinitely often, their 2-adic limits
+force equality of their constant terms.  Removing powers of two from the
+remaining equality gives
+
+$$
+\operatorname{unit}_2(B_j)
+=3^{\epsilon_i}\operatorname{unit}_2(B_i).
+$$
+
+This permits an image ray to split among several target rays.  Along a
+nonperiodic orbit, all values are distinct.  Finite-intersection source-target
+pairs can therefore occur only finitely often; every sufficiently late
+transition obeys the displayed unit relation.  A finite set of positive
+rational unit parts cannot undergo infinitely many multiplications by three,
+so the orbit would eventually contain only even steps.  A positive integer
+admits only finitely many consecutive halvings, a contradiction.
+
+The classical decomposition of every slender regular language into finitely
+many `u v* w` components turns each component into such a ray:
+
+$$
+[uv^kw]=[u]-\frac{2^{|u|}[v]}{2^{|v|}-1}
++2^{k|v|}\left(2^{|u|}[w]
++\frac{2^{|u|}[v]}{2^{|v|}-1}\right).
+$$
+
+Consequently a nonempty safe slender regular sanctuary would already contain
+a nontrivial positive cycle.  This corollary does not apply to a general
+nonslender DFA, and a single pumped lasso inside a branching language need not
+be invariant by itself.
+
+## 10. Conditional exact-floor normal form
+
+Assume every positive integer below `2^71` reaches the trivial cycle, and let a
+72-state complete raw DFA recognize a nonempty sanctuary.  Its least accepted
+integer has a canonical word
+
+$$
+w=b_0b_1\cdots b_{70}1
+$$
+
+of length exactly 72.  It is odd, since an even least member would map to a
+smaller member.  If `alpha=nu_2(3m+1)>=2`, then the odd iterate
+
+$$
+U(m)=\frac{3m+1}{2^{\alpha}}<m,
+$$
+
+again contradicting minimality.  Hence `alpha=1`, `m=3 modulo 4`, and the LSD
+prefix is `b_0b_1=11`.
+
+Let `q_i` be the state after the first `i` of the initial 71 bits, for
+`0<=i<=71`.  A repeated `q_i=q_j` would allow deletion of the intervening
+block while retaining the final `1`, producing a shorter canonical accepted
+word.  Thus these 72 prefix states are distinct and exhaust the machine.  The
+final `1` is an accepting gate `a=delta(q_71,1)` back to one of them.
+
+In fact `q_i` has graph distance exactly `i` from the start.  A shorter word
+reaching `q_i`, followed by `b_i...b_70 1`, would be a canonical accepted word
+of length below 72.  Therefore every transition from `q_i` targets some `q_j`
+with `j<=i+1`, while the spine label `b_i` advances from `q_i` to `q_(i+1)`.
+
+If any accepting state `f` has a canonical preimage `v1`, the state after `v`
+is some `q_i`.  Replacing `v` by the spine prefix of length `i` gives an
+accepted canonical word of length `i+1<=72`; hence `i=71` and `f=a`.
+Deleting raw accepting states without canonical preimages therefore preserves
+the semantic language and leaves the singleton acceptor `{a}`.  In particular,
+`delta(q_i,1)!=a` for `i<71`.
+
+Exhaustion also writes `delta(q_0,0)=q_j`.  If `j>=1`, then
+
+$$
+0b_jb_{j+1}\cdots b_{70}1
+$$
+
+follows the spine suffix into the accepting gate.  Shortcut closure deletes
+its first zero and accepts a canonical word of length `72-j<=71`, a
+contradiction.  Therefore `delta(q_0,0)=q_0`, and the whole semantic language
+has the saturated form `0* O` from the odd-core lemma.
+
+The `11` prefix gives `delta(q_0,1)=q_1` and `delta(q_1,1)=q_2`.  The other
+edge from `q_1` cannot also reach `q_2`: if it did, replacing the second bit of
+the least word by zero would accept the canonical 72-bit integer `m-2`.
+Therefore `delta(q_1,0)!=q_2`.
+
+This normal form is necessary only at the exact conditional floor.  It is not
+sufficient for sanctuary closure, the singleton acceptor is a semantics-
+preserving normalization rather than a forced raw mask, and the initial `11`
+is asserted only for the least accepted integer.
+
+The experiment encodes precisely these necessary transition constraints in a
+CEGIS loop.  Z3 proposes a complete transition table; the standard exact
+verifier remains the mandatory arbiter.  After a closure failure, the program
+recomputes the complete terminal endpoint relation and records one shortest
+concrete arithmetic implication `w in L => T(w) in L` for every violating
+endpoint pair.  These implications are necessary for every candidate and are
+safe to replay from a strictly validated checkpoint.  A timeout or model limit
+is explicitly incomplete.  The solver deadline is soft because exact checking
+and witness batching finish atomically.  Even a solver-level UNSAT report is
+not a proof artifact because this prototype does not emit independently
+checkable solver proofs.
+
+## 11. Finite-horizon safety automata
 
 Let
 
@@ -216,16 +412,46 @@ cycle during the first `d+1` inspected orbit states.  Any sanctuary is a subset
 of every `S_d`.
 
 These automata do not establish infinite survival.  Their minimized strongly
-connected structure is intended as data from which to conjecture a smaller
-inductive language; every conjecture must return to the exact closure checker.
+connected structure may suggest new features or transition designs, but
+L-9110 shows that a literal quotient cannot repair an empty maximal kernel on
+the finer skeleton.  Every redesigned conjecture must return to the exact
+closure checker.
 
-## 8. Scope cautions
+## 12. Quotient monotonicity
+
+Let `h'` and `h` be reachable-state maps of finite deterministic skeletons,
+with `h'` refining `h`.  Equivalently, a surjective transition homomorphism
+`pi` satisfies `h=pi composed with h'`.  Every accepting set `F` on the coarse
+skeleton pulls back to `pi^(-1)(F)` on the fine skeleton and expresses exactly
+the same canonical language.
+
+It follows that every sanctuary expressible on `h` is expressible on `h'`.
+Writing `K_h` for the largest semantic sanctuary kernel available on a
+skeleton,
+
+$$
+K_h\subseteq K_{h'}.
+$$
+
+Thus, once L-9103 computes an empty maximal kernel on a fine safety-
+approximant skeleton, no literal deterministic quotient of that skeleton can
+make it nonempty.  This applies to SCC merging only when the partition is
+transition stable and defines a genuine quotient.  Refining states, adding
+features, taking products, or redesigning transitions creates a different
+search space and remains open.
+
+## 13. Scope cautions
 
 - Fixed-DFA and fixed-block verification is decidable; unrestricted existence
   over all automaton sizes is not claimed decidable.
 - Finite words only are admitted.  An infinite LSD stream is a 2-adic object
   and need not encode any positive integer.
 - A failed bounded search excludes only its declared skeleton/template class.
+- Fixed dyadic cylinders and finite-lasso/slender templates are now excluded
+  by L-9107 and L-9108 within their exact stated scopes; nonslender regular
+  high-bit languages remain open.
+- Empty fine-skeleton kernels exclude their literal quotients by L-9110, not
+  refinements, augmentations, or independently designed automata.
 - BFS witnesses are shortest by length and LSD-first lexicographic order, not
   necessarily numerically least.
 - A regular sanctuary is stronger than a lone divergent orbit; Collatz falsity

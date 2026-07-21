@@ -80,10 +80,15 @@ returned a longer witness.
 
 ## Remaining uncertainty
 
-In-session adversarial review produced a committed shortest-witness regression,
-but no separate independent-checker artifact has entered the repository.
+In-session adversarial review produced a committed shortest-witness regression.
+A second preimage/complement/inclusion route now agrees with the primary
+endpoint-relation route on every labeled DFA through three states and every
+accepting mask.  It imports the shared `verify.preimage_dfa` constructor,
+project data types, and transducer and has the same author, so it is
+differential validation rather than independent reconstruction.
 
 ## Suggested next attack
 
-Implement regular-image construction and DFA inclusion independently, then
-compare its result and shortest witnesses with `terminal_relation`.
+Reimplement the preimage or image construction under separate authorship, then
+compare its decision and shortest witnesses with both committed routes without
+sharing the current product-automaton helpers.

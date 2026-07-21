@@ -38,14 +38,53 @@ provides:
 5. the maximal safe accepting set for any fixed DFA transition skeleton;
 6. exact finite-horizon safety approximants;
 7. a Python-standard-library-only JSON certificate checker;
-8. 29 regression tests, including a known `3n-1` nontrivial cycle;
+8. 57 regression tests in the current extended suite, including a known
+   `3n-1` nontrivial cycle;
 9. exact bounded searches over all labeled one- through four-state skeletons;
-10. an initial structured search behind a 72-bit length guard.
+10. an initial structured search behind a 72-bit length guard;
+11. a seven-state fully accelerated odd-core transducer and exact `0* O` lift;
+12. a second preimage/inclusion closure route, exhaustively differential-tested
+    against the primary verifier on all 5,898 labeled DFAs through three states;
+13. a checkpointable exact-floor CEGIS driver whose every proposed automaton
+    is adjudicated by the unchanged exact verifier.
 
 All one- through four-state standard-Collatz skeletons had empty maximal safe
 kernels.  Every one- and two-state transition core behind the fixed 72-bit
 guard also had an empty kernel.  These are bounded negative computations only.
 They are not evidence for Collatz convergence.
+
+The first exact-floor scout covered only accepting gate `0`: two sessions with
+configured 60-second soft solver budgets checked and exactly rejected 22
+proposed 72-state machines, learning 213 concrete closure implications.  Its
+status is `time_limit`, not UNSAT.  Exact verification may finish after a
+solver deadline; the frozen checkpoint makes subsequent work cumulative.
+
+## Structural constraints added after adversarial review
+
+Five further proposed lemmas sharply narrow the target without claiming that
+arbitrary regular sanctuaries are impossible:
+
+- `L-9106` gives an existence equivalence with regular odd languages invariant
+  under `U(n)=(3n+1)/2^nu_2(3n+1)`; dyadic saturation is the regular language
+  `0* O`.
+- `L-9107` proves that every fixed low-bit residue cylinder contains
+  infinitely many values in the trivial basin.  Full cylinders and eventual
+  fixed-modulus tails are therefore dead search templates.
+- `L-9108` proves that a forward-invariant finite union of affine-geometric
+  binary rays has only eventually periodic orbits.  Via the classical
+  slender-regular decomposition, a safe slender sanctuary would already
+  certify a nontrivial positive cycle.
+- `L-9109` shows conditionally that a candidate exactly at the 72-state floor
+  has no structural slack: its least accepted word begins `11`, a 71-edge
+  prefix spine exhausts all states, the last `1` is an accepting gate, and the
+  start-state `0` transition is forced to loop.
+- `L-9110` proves that maximal semantic kernels are monotone under
+  right-congruence refinement.  An empty kernel on a fine skeleton cannot be
+  repaired by literally quotienting or transition-stably merging its states.
+
+Thus a genuinely new counterexample family must be sought in a nonslender,
+branching language with unbounded high-bit dependence, unless the computation
+is directly hunting a nontrivial cycle.
 
 ## Conditional 72-state floor for standard-map searches
 
@@ -62,14 +101,20 @@ Small DFAs remain valuable for testing the verifier and generalized maps.  The
 serious search space is therefore structured rather than blindly random:
 
 - a hard length spine followed by a small recurrent core;
-- residue-cylinder automata selecting low binary digits;
-- unions of a small number of cylinders with a shared tail machine;
+- odd-core automata with an explicit dyadic-saturation zero loop;
+- low-residue filters followed by a genuinely branching high-bit tail machine,
+  never a full or eventually full residue cylinder;
 - phase covers `T(L_i) subset L_(i+1)` using the base transducer;
 - finite-horizon safety automata followed by automata-learning or PDR-style
-  widening and exact inductiveness checks.
+  refinement/augmentation and exact inductiveness checks.
 
 The 72-bit guard is search pruning only.  A future candidate's soundness must
 come entirely from exact nonemptiness, safety, and closure verification.
+
+At exactly 72 states, L-9109 supplies stronger symmetry breaking than a
+generic guard: exact BFS spine distances, upper-Hessenberg transitions, a
+semantically singleton accepting gate, and forced low transitions.  Above 72
+states, spine exhaustion and the zero-loop conclusion no longer follow.
 
 ## Why this direction is not covered by active no-go results
 
@@ -84,7 +129,9 @@ describe a whole structured family of counterexample seeds, not merely one
 aperiodic divergent orbit.  Failure of every bounded template considered here
 would refute only those templates.
 
-## Live overlap with PR #11
+## Live overlaps
+
+### PR #11 — affine parity-block construction
 
 Draft PR #11 appeared during this session.  Its `C-0101` proposes a finite
 automaton whose edges are Collatz parity blocks and whose accepted infinite run
@@ -93,15 +140,35 @@ different certificate: a regular language of **finite canonical integer
 encodings**, every accepted member of which is closed under the full shortcut
 map.  Neither checker verifies the other's seed-existence or closure obligation.
 
-PR #11's `L-0105`/`L-0106` power-of-two port-thinning and bit-budget results are
-relevant warnings for future residue-cylinder templates, but they are not used
-as dependencies here and their status remains branch-qualified.  They concern
-one arithmetic-progression parameter line, not arbitrary regular languages of
-finite integers.  PR #11's cycle-hunt direction also overlaps issue #9; that
-handoff has been cross-linked for reconciliation rather than silently
-duplicated.
+An audit of PR #11's later margin-persistence statement found a cancellation
+counterexample: for `L>=2`, taking `D_0={0,2^L-1}` and adding the next digit
+block `{0,2^L}` creates differences `+/-1` even though the old radius is zero.
+The posted repair is the stronger sufficient condition
+`diam(D_0)+R(D_0)+1<2^L`, plus a still-needed persistence argument across all
+stages.  This program does not use the affected statement as a dependency.
+PR #11's cycle-hunt direction also overlaps issue #9; that handoff remains
+cross-linked for reconciliation rather than silently duplicated.
 
 See https://github.com/gfreund123/collatz/pull/11.
+
+### PR #14 — sink-stripped safety boundaries
+
+PR #14 appeared during the final integration pass and independently rebuilt
+the finite safety languages from integer reverse trees.  Its proposed L-9201
+proves that every fixed-depth approximant is cofinite, that its only cyclic
+minimal-DFA component is the inevitable two-state canonical tail, and that
+stripping this tail leaves a DAG.  Its depth-0-through-20 state counts exactly
+reproduce X-9101's frozen sequence without importing this branch's transducer.
+
+This complements rather than duplicates L-9110.  L-9201 removes a specific
+finite-horizon false signal; L-9110 says a literal quotient cannot repair an
+empty fine-skeleton maximal kernel.  The shared next interface is to compare
+sink-stripped boundary DAGs across depths, compose any learned motif with a
+genuinely non-cofinite recurrent guard, and submit the result immediately to
+X-9101's exact closure verifier.  Neither proposed lemma is promoted by the
+cross-check.
+
+See https://github.com/gfreund123/collatz/pull/14.
 
 ## Read order
 
@@ -109,29 +176,43 @@ See https://github.com/gfreund123/collatz/pull/11.
 2. [`CLAIMS.md`](CLAIMS.md) for exact statuses and dependency boundaries.
 3. The [experiment README](../../experiments/X-9101-regular-sanctuary/README.md).
 4. `verify.py` for the standard-library-only checker core.
-5. `test_regular_sanctuary.py` for adversarial controls.
-6. `results/summary.json` for the frozen first run.
+5. `independent_check.py`, `odd_core.py`, and `spine_cegis.py` for the new
+   differential, accelerated, and synthesis layers.
+6. The four `test_*.py` modules for adversarial controls.
+7. `results/summary.json` and `results/spine-q72-gate0-scout.json` for the
+   frozen baseline and resumable exact-floor scout.
 
 ## Next attacks
 
-1. Generate deeper safety approximants and minimize them; mine recurring
-   strongly connected quotients as candidate inductive widenings.
-2. Search three- and four-state cores behind the 72-bit guard using symmetry
-   reduction, CEGIS, or SAT rather than labeled brute force.
-3. Add residue-cylinder templates that retain selected low bits after the
-   length spine.
-4. Extend maximal-safe-kernel synthesis to cyclic phase covers without
+1. Generate deeper safety approximants and minimize them; mine recurring SCC
+   features only after stripping the cofinite canonical tail identified by PR
+   #14.  Compare boundary DAGs across depths and use motifs for refinements,
+   products, or redesigned skeletons; a literal quotient cannot repair an
+   empty maximal kernel.
+2. Resume the exact-floor CEGIS checkpoint and cover gate partitions
+   `0,3,...,71` under identical, explicitly bounded configurations.  Gates 1
+   and 2 conflict with the forced initial `11` spine.
+3. Search nonslender odd-core automata through the seven-state `U` transducer;
+   lift every proposal to `0* O` and recheck it under the base shortcut map.
+4. Add low-residue filters after the length spine only when a branching
+   high-bit machine prevents acceptance of a whole cylinder.
+5. Extend maximal-safe-kernel synthesis to cyclic phase covers without
    composing a large transducer for `T^B`.
-5. Request independent reconstruction of `L-9101` through `L-9104` before any
-   status promotion.
+6. Add proof logging or a separately authored checker before treating any
+   solver-level UNSAT report as more than a bounded computational observation.
+7. Request independent reconstruction of `L-9101` through `L-9110` before any
+   status promotion, including the external slender-language decomposition.
 
 ## Literature boundary
 
 Relevant primary sources include Caucal--Rispal's synchronized transducer
 construction, Shallit--Wilson's finite-automata treatment of `3x+1`, and
-Barina's verification below `2^71`.  Exact attribution and novelty positioning
-remain provisional pending the repository-wide audit in issue #7.
+Barina's verification below `2^71`.  Păun--Salomaa supplies one primary source
+for the slender-regular decomposition used only in L-9108's corollary.  Exact
+attribution and novelty positioning remain provisional pending the repository-
+wide audit in issue #7.
 
 - https://doi.org/10.1007/978-3-031-81202-6_8
 - https://cs.uwaterloo.ca/~shallit/Papers/wilson.pdf
 - https://doi.org/10.1007/s11227-025-07337-0
+- https://doi.org/10.1016/0166-218X(94)00014-5
