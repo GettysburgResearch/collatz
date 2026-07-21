@@ -26,5 +26,8 @@ Packet-local note (does not modify contested root `NEGATIVE_RESULTS.md`).
 | N-P19 | Skew-product expanding Syracuse walks die in range (`O-0102`). |
 
 Classical Schottky closed under `T-0103`. Atomic growing geometry closed under `T-0104`.
+| N-P20 | All chronological Minkowski tensors freeze sub-scale filled radius (`T-0105`). |
+| N-P21 | Cycle census L≤16 only trivial {1,2} (`O-0103`). |
+
 Residual: weight\(\ge3\) high-precision dense suffixes, non-concatenative amplification,
 heteroclinic/adelic, or cycle hunt.

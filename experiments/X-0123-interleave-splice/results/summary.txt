@@ -1,0 +1,11 @@
+Interleave/splice finds finite growing AB patterns (often with empty bridge), but period depth remains tiny — same tax/drain pressure as concat unless a true non-concatenative state is added.
+1/11: nhits=20 sample=[{'bridge': '', 'n0': 7, 'n_final': 26, 'growth': 3.7142857142857144, 'mu_prod': 3.375}, {'bridge': '0', 'n0': 9, 'n_final': 17, 'growth': 1.8888888888888888, 'mu_prod': 1.6875}]
+101/1: nhits=20 sample=[{'bridge': '', 'n0': 9, 'n_final': 17, 'growth': 1.8888888888888888, 'mu_prod': 1.6875}, {'bridge': '0', 'n0': 1, 'n_final': 2, 'growth': 2.0, 'mu_prod': 0.84375}]
+1111010/1101110: nhits=20 sample=[{'bridge': '', 'n0': 47, 'n_final': 175, 'growth': 3.723404255319149, 'mu_prod': 3.60406494140625}, {'bridge': '0', 'n0': 31919, 'n_final': 57523, 'growth': 1.8021554559979949, 'mu_prod': 1.802032470703125}]
+11/101: nhits=20 sample=[{'bridge': '', 'n0': 7, 'n_final': 20, 'growth': 2.857142857142857, 'mu_prod': 2.53125}, {'bridge': '0', 'n0': 43, 'n_final': 56, 'growth': 1.302325581395349, 'mu_prod': 1.265625}]
+1111/101: nhits=20 sample=[{'bridge': '', 'n0': 31, 'n_final': 182, 'growth': 5.870967741935484, 'mu_prod': 5.6953125}, {'bridge': '0', 'n0': 47, 'n_final': 137, 'growth': 2.9148936170212765, 'mu_prod': 2.84765625}]
+  depth 1/11: periods=4 L=3
+  depth 101/1: periods=4 L=4
+  depth 1111010/1101110: periods=1 L=14
+  depth 11/101: periods=3 L=5
+  depth 1111/101: periods=2 L=7

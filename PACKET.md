@@ -1,44 +1,31 @@
-# Packet: Affine ping-pong / Schottky certificates
+# Packet: Affine ping-pong / Schottky + new paths
 
 Agent: `grok45-01`  
 Branch: `cursor/affine-pingpong-schottky-a643`  
 PR: https://github.com/gfreund123/collatz/pull/11  
 Date: 2026-07-21
 
-## Mission link
+## Paths
 
-Counterexample certificates via Schottky / ping-pong — largely collapsed into
-accounting + growing-geometry obstructions; bridge to collision fibers.
+| Path | Status |
+|---|---|
+| Classical Schottky | Closed (`T-0103`) |
+| Atomic / general chronological tensor filled growth | Closed (`T-0104`, **`T-0105`**) |
+| Weight≥3 dense suffixes as filled-growth escape | Closed by `T-0105` (comb gaps) |
+| **Algebraic cycle hunt** | **OPEN / active** — baseline `O-0103` |
+| **Heteroclinic adelic** | **OPEN / active** — baseline `O-0104` |
+| Non-concatenative splice | Weak so far (`X-0123`) |
 
 ## Headline theorems
 
-| ID | Claim |
-|---|---|
-| T-0101 | Unified precision accounting |
-| T-0102 | Digit-transfer inherits Schottky obstructions |
-| T-0103 | Classical Schottky meta-obstruction (Geom/Det/Per/Tax) |
-| **T-0104** | **Atomic chronological tensoring freezes filled geometry** (negative branch of external Q-0010) |
+- `T-0101`…`T-0103` — accounting + classical Schottky meta-obstruction
+- `T-0104` — atomic tensor freeze
+- **`T-0105` — general Minkowski tensor freeze** (any integer \(E\))
 
-## Key lemmas (selected)
+## Active baselines
 
-`L-0101`–`L-0111` classical Schottky; **`L-0112`** weight-one unfilled;
-**`L-0113`** weight-two high-\(p\) unfilled (empirical).
-
-## Conjectures
-
-- `C-0101` — non-classical escape hatches only
-- `C-0103` — high-precision suffixes stay unfilled as \(p\to\infty\)
-
-## Directions
-
-- Heteroclinic / cycle handoffs
-- **Bridge:** `directions/D-BRIDGE-growing-geometry-tax.md` (updated with T-0104)
-
-## Experiments
-
-`X-0101`–`X-0119`. Notable: `X-0116` radius freeze; `X-0118`/`X-0119` suffix density.
+- `O-0103` / `X-0121` — no nontrivial cycles through \(L=16\)
+- `O-0104` / `X-0122` — heteroclinic CRT gluing measurements
+- Directions claimed: `D-CYCLE-*`, `D-HETEROCLINIC-*`
 
 ## No K-candidate
-
-Classical Schottky closed under T-0103; atomic growing geometry closed under T-0104;
-residual = dense high-weight high-precision suffixes or non-concatenative methods.

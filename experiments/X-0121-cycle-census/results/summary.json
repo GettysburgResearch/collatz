@@ -1,0 +1,212 @@
+{
+  "census": {
+    "Lmax": 16,
+    "subcritical_words": 112892,
+    "divisible": 16,
+    "nontrivial_positive_integer_hits": [
+      {
+        "word": "01",
+        "L": 2,
+        "a": 1,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "0101",
+        "L": 4,
+        "a": 2,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "010101",
+        "L": 6,
+        "a": 3,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "01010101",
+        "L": 8,
+        "a": 4,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "0101010101",
+        "L": 10,
+        "a": 5,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "010101010101",
+        "L": 12,
+        "a": 6,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "01010101010101",
+        "L": 14,
+        "a": 7,
+        "n": 2,
+        "verified": true
+      },
+      {
+        "word": "0101010101010101",
+        "L": 16,
+        "a": 8,
+        "n": 2,
+        "verified": true
+      }
+    ],
+    "trivial_hits": [
+      {
+        "word": "10",
+        "L": 2,
+        "a": 1,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "1010",
+        "L": 4,
+        "a": 2,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "101010",
+        "L": 6,
+        "a": 3,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "10101010",
+        "L": 8,
+        "a": 4,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "1010101010",
+        "L": 10,
+        "a": 5,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "101010101010",
+        "L": 12,
+        "a": 6,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "10101010101010",
+        "L": 14,
+        "a": 7,
+        "n": 1,
+        "verified": true
+      },
+      {
+        "word": "1010101010101010",
+        "L": 16,
+        "a": 8,
+        "n": 1,
+        "verified": true
+      }
+    ],
+    "trivial_count": 8,
+    "by_La_nonzero": {
+      "L2a1": {
+        "words": 2,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L4a2": {
+        "words": 6,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L6a3": {
+        "words": 20,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L8a4": {
+        "words": 70,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L10a5": {
+        "words": 252,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L12a6": {
+        "words": 924,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L14a7": {
+        "words": 3432,
+        "divisible": 2,
+        "positive_int": 2
+      },
+      "L16a8": {
+        "words": 12870,
+        "divisible": 2,
+        "positive_int": 2
+      }
+    }
+  },
+  "near_critical_samples": [
+    {
+      "L": 11,
+      "a": 6,
+      "den": 1319,
+      "words": 462,
+      "divisible": 0
+    },
+    {
+      "L": 12,
+      "a": 7,
+      "den": 1909,
+      "words": 792,
+      "divisible": 0
+    },
+    {
+      "L": 13,
+      "a": 8,
+      "den": 1631,
+      "words": 1287,
+      "divisible": 0
+    },
+    {
+      "L": 14,
+      "a": 8,
+      "den": 9823,
+      "words": 3003,
+      "divisible": 0
+    },
+    {
+      "L": 15,
+      "a": 9,
+      "den": 13085,
+      "words": 5005,
+      "divisible": 0
+    },
+    {
+      "L": 16,
+      "a": 10,
+      "den": 6487,
+      "words": 8008,
+      "divisible": 0
+    }
+  ],
+  "extra_hits_L17_20": [],
+  "conclusion": "No nontrivial positive integer cycle found through L=16 full census plus selective L=17..20. Trivial n=1 occurrences recorded separately."
+}

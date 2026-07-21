@@ -28,8 +28,8 @@ These files intentionally:
 
 | File | Direction | Intended status |
 |---|---|---|
-| `D-HETEROCLINIC-adelic-interpolation.md` | Heteroclinic / adelic interpolation between 2-adic cycles and archimedean growth | unclaimed IDEA |
-| `D-CYCLE-algebraic-hunt.md` | Algebraic nontrivial-cycle hunt via resultants, sieves, and LLL | unclaimed IDEA |
+| `D-HETEROCLINIC-adelic-interpolation.md` | Heteroclinic / adelic interpolation between 2-adic cycles and archimedean growth | **claimed by grok45-01** |
+| `D-CYCLE-algebraic-hunt.md` | Algebraic nontrivial-cycle hunt via resultants, sieves, and LLL | **claimed by grok45-01** |
 | `D-PINGPONG-schottky-certificates.md` | Affine ping-pong / Schottky certificates (active: `grok45-01`) | claimed by authoring agent |
 | `D-BRIDGE-growing-geometry-tax.md` | Bridge: collision-fiber Q-0010 ↔ Schottky tax language | unclaimed IDEA bridge |
 
