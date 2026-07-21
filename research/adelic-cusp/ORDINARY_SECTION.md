@@ -14,7 +14,7 @@ The proposed complexity--carry contradiction does not close by comparing its two
 64D_{i+1}=81D_i.
 \]
 
-Its repetition-height inequality is therefore the same completion-versus-height mechanism as `L-9310`'s reciprocal phase-carry theorem. The common constant
+Its repetition-height inequality is the same completion-versus-height mechanism as `L-9310`'s reciprocal phase-carry theorem. The common constant
 
 \[
 \kappa
@@ -24,9 +24,9 @@ Its repetition-height inequality is therefore the same completion-versus-height 
 \frac{\log64}{\log(81/64)}
 \]
 
-is not an incompatibility. `R-9302` records this method closure explicitly.
+is not an incompatibility. `R-9302` records this method closure.
 
-The missing theorem must couple the two cocycles through the same ordinary point.
+The missing theorem must couple both cocycles through the same ordinary point.
 
 ## 2. Fixed-room coherence
 
@@ -51,7 +51,7 @@ P_j
 \varepsilon_t81^{j-1-t}64^t.
 \]
 
-`T-9313` proves the exact invariant
+`T-9313` proves
 
 \[
 \boxed{
@@ -79,9 +79,9 @@ The real companion gives
 }
 \]
 
-Thus a nontrivial ordinary survivor is exactly one coherent sequence of nontrivial `C_j` classes whose standard representatives remain in a critical moving window and whose room quotient never changes.
+Conversely, coherent integral fixed-room equations reconstruct the ordinary survivor series exactly.
 
-## 3. Finite exclusion certificates
+## 3. Exact finite duality
 
 Let
 
@@ -89,79 +89,114 @@ Let
 m_j=\min(C_j\setminus\{0,1\}),
 \]
 
-and
+and let
 
 \[
-B_j
-=
-\min\left\{
-64^j,
-\left\lceil m_j(64/81)^j\right\rceil
-\right\}.
+M_j=\min(R_j\setminus\{0,1\})
 \]
 
-`T-9313` proves that every nontrivial ordinary room satisfies
+be the exact first nontrivial depth-`j` survivor.
 
-\[
-A\ge B_j
-\]
-
-for every `j`.
-
-`X-9303` computes `m_j` exactly by meet-in-the-middle modular subset sums. At depth `44`,
-
-\[
-B_{44}
-=
-227578060273510610973552811001603322347312502177488333909527505984
->2^{217}.
-\]
-
-`T-9314` therefore excludes every nontrivial ordinary survivor room through `2^217`, subject to independent replay of the exact finite certificate.
-
-## 4. The exact remaining theorem
-
-The infinite problem is now:
+`T-9313` proves the constructive identity
 
 \[
 \boxed{
-B_j\longrightarrow\infty.
+M_j
+=
+\left\lceil m_j(64/81)^j\right\rceil.
 }
 \]
 
-This is enough to exclude every fixed room `A>=2`.
+The minimizing triadic word is reversed into chronological survivor order; the fixed-room identity reconstructs the starting room; direct recurrence replay ends at the minimizing triadic class.
 
-Equivalent formulations include:
+The sequence is monotone:
 
-1. no fixed `A>=2` supports coherent integral tails satisfying the fixed-room equation at every depth;
-2. the least nontrivial standard representative of `C_j` cannot stay below `O((81/64)^j)` along an infinite coherent path;
-3. the nested active-cylinder blocks associated with the same ordinary point cannot eventually terminate;
-4. every bounded room eventually leaves the past/future intersection window.
+\[
+\boxed{M_{j+1}\ge M_j,}
+\]
 
-The expected random scale is much larger—roughly `32^j` after rescaling—but the theorem needs only divergence.
+because every survivor valid for `j+1` steps is valid for `j` steps.
 
-## 5. Highest-value next attacks
+The ordinary-section problem is equivalent to
 
-### A. Coherent minimum, not unconditional minimum
+\[
+\boxed{M_j\longrightarrow\infty.}
+\]
 
-`m_j` minimizes over all `2^j` past words. A genuine ordinary path also requires future survivorship and compatibility with every earlier depth. Prove a lower bound for the **coherent** minimum, which may be much easier than controlling all of `C_j`.
+## 4. Exact depth-46 certificate
+
+`X-9303` computes `m_j` by meet-in-the-middle modular subset sums and replays the corresponding survivor exactly.
+
+At depth `46`,
+
+\[
+\boxed{
+M_{46}
+=
+275396778563393867136351926990265018601508986973296055235244496661568
+>2^{227}.
+}
+\]
+
+The chronological minimizing word is
+
+```text
+0110110111101001010000011100110000101010111011
+```
+
+and the replay ends at
+
+\[
+13995580641937679806861747515838198945935546006963182029787326398035667034.
+\]
+
+`T-9314` therefore excludes every nontrivial infinite ordinary survivor room through `2^227`, subject to independent replay.
+
+Frozen digest:
+
+```text
+f2c4dd9b0c436c9450c03424b27d80366865f54bb8c286944a35047d0662c9bc
+```
+
+## 5. Exact remaining theorem
+
+The infinite problem is now simply
+
+\[
+\boxed{M_j\longrightarrow\infty.}
+\]
+
+Equivalent formulations are:
+
+1. no fixed `A>=2` supports coherent integral tails at every depth;
+2. no bounded starting room belongs to every finite survivor set;
+3. the nested active-cylinder blocks associated with one ordinary point cannot eventually terminate;
+4. every bounded room eventually leaves the fixed-room past/future intersection.
+
+The expected random scale is much larger than what the theorem needs. Any divergence, however slow, closes the ordinary section.
+
+## 6. Highest-value next attacks
+
+### A. Extendible minimum
+
+`M_j` minimizes over every finite survivor prefix. A genuine infinite path must also admit extensions forever. Define the least **extendible** depth-`j` survivor and prove that it diverges. This may expose stronger pruning than the unconditional minimum.
 
 ### B. Active-cylinder block nonstabilization
 
-PR #20's `T-9409` says an infinite directive selects one nested `2`-adic cylinder and is ordinary exactly when its newly appended blocks eventually vanish. Identify those blocks with the fixed-room representatives here and prove infinitely many are nonzero.
+PR #20's active-cylinder theorem says an infinite directive is ordinary exactly when its appended cylinder blocks eventually vanish. Identify those blocks with the fixed-room path and prove infinitely many are nonzero.
 
 ### C. First-return height gain
 
-Use `L-9311` to turn any recurrence of a coherent past/future state into a zero-carry orbit difference. Show that coherence forces a recurrence before the local height budget permits it.
+Use `L-9311` to turn any recurrence of a bounded coherent state into a zero-carry orbit difference. Prove that bounded-room coherence forces recurrence before the local height budget permits it.
 
-### D. Sign or product-formula certificate
+### D. Monotone minimum recursion
 
-The fixed-room numerator is an explicit ordinary integer at every depth. Seek a sign, valuation, or factorization invariant that cannot remain compatible with the critical moving window.
+Find an exact recursion or lower-envelope operator for `M_j`, retaining enough residue information to prove it cannot stabilize. This would turn the finite MITM data into a universal theorem.
 
-## 6. Status boundary
+## 7. Status boundary
 
 - All-depth weighted EQ is proposed in `T-9312`.
-- The fixed-room characterization is proposed in `T-9313`.
-- The bounded exclusion is proposed in `T-9314` and depends on exact finite computation.
+- Fixed-room coherence and exact minimum duality are proposed in `T-9313`.
+- The exact depth-46 minimum and bounded exclusion are proposed in `T-9314` and depend on bounded exact computation.
 - No all-room nonintersection theorem is claimed.
 - No ordinary Collatz counterexample, divergent seed, nontrivial cycle, or resolution is claimed.
