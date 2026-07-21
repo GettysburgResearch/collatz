@@ -7,9 +7,12 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch contains nine mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
+The active branch now contains ten mathematical research sessions. No claim has
+received the repository's independent review, so complete-looking finite
+theorems remain `PROPOSED`.
 
-There is currently **no positive-integer Collatz counterexample** in the repository.
+There is currently **no positive-integer Collatz counterexample**, no regular
+sanctuary, and no closed counter-stack grammar in the repository.
 
 ## Fixed map
 
@@ -23,382 +26,314 @@ n/2,&n\text{ even},\\[1mm]
 \end{cases}
 \]
 
-For a length-\(L\), weight-\(a\) physical parity word \(w\),
+For a chronological parity word \(w\) of length \(L\) and weight \(a\),
 
 \[
 T^L(n)=\frac{3^an+B(w)}{2^L}
 \]
 
-on one residue class modulo \(2^L\).
+on one canonical residue class modulo \(2^L\).
 
-## Research arc before the current session
+## Existing finite resources
 
-The branch already contains proposed results giving:
+Earlier sessions provide:
 
-- exact finite collision atlases and sparse collision fibers;
+- complete finite collision-fiber recursions;
 - induced partial radix maps;
-- universal finite-horizon carry pumping;
-- dual real/2-adic coding and an aperiodicity obstruction;
-- the exact run-length/cofactor skeleton;
-- inverse-signature collision codes and a composition algebra;
+- sparse and consecutive supercritical collision charts;
+- mixed-radix carry rewrites and finite-horizon pumps;
+- inverse-signature collision codes;
 - exponentially unbounded mildly supercritical branch count;
-- arbitrary finite 3-adic precision;
+- arbitrary finite \(3\)-adic precision;
 - geometry-preserving tensor amplification;
 - complete collision-alphabet projection modulo \(2^b\) for every \(b\);
-- negative-template rational-base returns;
-- graph-directed expansion with compensated local contraction;
-- exact synchronous coupling to moving negative phases;
+- negative-template rational-base return systems;
+- finite and graph-directed return criteria;
+- normalized real-window and aspect-ratio constraints;
+- synchronous coupling to moving negative phases;
 - cycle-padded mismatch towers;
-- the Collatz–Kraft pressure law;
-- the rounded-phase martingale and phase-escape Doob transform.
+- fair, growth-tilted, and phase-escape Kraft identities.
 
-These results remove finite branch count, finite precision, local carry pumping, and finite-scale modular correction as principal scarcities. They do **not** produce one infinite ordinary trajectory.
+These are exact finite resources. None selects one ordinary positive state that
+survives forever.
 
-# Four exact representations of one physical state
+## Finite intervals and marked particles
 
-The repository now uses four compatible views.
+### L-0014 — finite interval renormalization
 
-## 1. Physical integer
-
-The ordinary state is \(n>0\).
-
-## 2. Finite interval gauge
-
-Choose any \(v\ge1\), put
+Every ordinary state \(n>0\) can be represented by a finite interval
 
 \[
-q=v+n,
+[v,q),
+\qquad q-v=n.
 \]
 
-and represent \(n\) by the finite interval
+The exact interval rules are
 
 \[
-I=[v,q),
-\qquad |I|=n.
+[v,q)
+\longmapsto
+\left[
+\left\lceil\frac v2\right\rceil,
+\left\lceil\frac q2\right\rceil
+\right)
 \]
 
-## 3. Negative phase coupling
-
-The lower endpoint \(v\) is the magnitude of a moving negative reference phase. The physical state is
+for even length and
 
 \[
-n=q-v.
+[v,q)
+\longmapsto
+\left[
+\left\lfloor\frac{3v}{2}\right\rfloor,
+\left\lceil\frac{3q}{2}\right\rceil
+\right)
 \]
 
-## 4. Ordered particle population
+for odd length. The new interval length is \(T(n)\).
 
-Put
+### T-0018 — ordered particle completion
+
+With
 
 \[
-x=v-1.
+R_0(x)=\lfloor x/2\rfloor,
+\qquad
+R_1(x)=\lceil3x/2\rceil,
 \]
 
-The shifted phase \(x\) is the size of a finite ordered particle population.
+the identity \(R_0(x)+R_1(x)=2x\) has a finite two-child ordered-particle
+rewrite. Uniform descendants realize the phase-escape measure.
 
-The current session proves that these are not merely analogous descriptions. They fit into one exact finite rewrite system.
+One distinguished child has rank exactly \(T(j)\), so a finite marked root
+generates the ordinary shortcut-Collatz trajectory as a marked spine.
 
-# L-0014 — Collatz as finite-interval renormalization
+### T-0019 — marked versus unmarked likelihood
 
-Let \(I=[v,q)\) have positive length \(n=q-v\).
-
-If \(n\) is even, define
+For an ordinary trajectory \(n_t\) with parity prefix \(w_L\),
 
 \[
-\boxed{
-\mathcal R_0(I)
+\mathbb Q_{n_0+1}([w_L])
 =
-[\lceil v/2\rceil,\lceil q/2\rceil).
-}
+\frac{n_L}{2^Ln_0}.
 \]
 
-If \(n\) is odd, define
+The branch population gains the factor \(n_L\), but the one fully marked
+descendant of the specified root has mass only
 
 \[
-\boxed{
-\mathcal R_1(I)
+\frac1{2^Ln_0}.
+\]
+
+Positive unmarked escape pressure therefore does not establish an accepted
+ordinary spine.
+
+# Literature review incorporated
+
+The branch
+
+```text
+agent/gpt56-pro-03/4-literature-audit
+```
+
+and draft PR #13 were inspected before the present continuation.
+
+## What is standard infrastructure
+
+The imported suite identifies as standard and reusable:
+
+- subsequential/rational images of regular languages;
+- exact closure of one fixed DFA by finite reachability;
+- greatest safe kernels of finite relations;
+- short canonical witness bounds;
+- rational-base address identities;
+- positive cycle-mean phase potentials;
+- clopen-cover obstructions;
+- finite-state tilted transfer bounds;
+- compact graph-directed attractors.
+
+The live review's central advice for PR #3 is:
+
+> Treat graph expansion as solved infrastructure. Concentrate on an exact
+> arithmetic selector, an invariant survivor set, one ordinary quotient, and
+> exact block replay.
+
+A compact attractor or compatible completion path remains insufficient because
+it may contain no ordinary integer.
+
+## Neighboring exact tool
+
+PR #12 supplies a large exact regular-sanctuary laboratory:
+
+- canonical LSD-first finite-word semantics;
+- the exact shortcut subsequential transducer;
+- product-graph closure and concrete witnesses;
+- maximal safe accepting-state kernels;
+- short canonical witnesses;
+- certificate checking independent of synthesis.
+
+The present session proves precisely when the marked-particle route belongs to
+that existing program.
+
+# New session: regular-collapse boundary
+
+## L-0015 — regular interval and marker projection
+
+Encode finite endpoints synchronously in LSD-first binary. For a regular
+endpoint-pair language \(G\), define
+
+\[
+\operatorname{Len}(G)
 =
-[\lfloor3v/2\rfloor,\lceil3q/2\rceil).
-}
+\{\operatorname{bin}_{\rm LSD}(q-v):
+\operatorname{conv}(v,q)\in G\}.
 \]
 
 Then
 
 \[
-\boxed{|\mathcal R_{n\bmod2}(I)|=T(n).}
+\boxed{\operatorname{Len}(G)\text{ is effectively regular}.}
 \]
 
-Thus shortcut Collatz is exactly the cardinality evolution of one finite integer interval under parity-selected contraction or outward-rounded dilation.
-
-## Gauge freedom
-
-The initial lower endpoint is arbitrary.
-
-### Fixed gauge
+The proof uses the two-state binary addition relation
 
 \[
-v_0=1,
-\qquad q_0=n_0+1
+v_i+n_i+c_i=q_i+2c_{i+1},
 \]
 
-implies
+regular projection, right quotient by \(0^*\), and canonical intersection.
+
+Fixed and diagonal interval gauges preserve regularity. Regular
+population/marker configuration languages have regular marked-rank
+projections.
+
+## T-0020 — finite-phase regular block collapse
+
+Let finitely many regular phase languages \(L_i\) be covered by regular edge
+domains \(D_e\), with fixed block lengths \(b_e\), and suppose
 
 \[
-v_t=1,
-\qquad q_t=T^t(n_0)+1.
+T^{b_e}(D_e)\subseteq L_{\tau(e)}.
 \]
 
-### Diagonal gauge
-
-\[
-v_0=n_0+1,
-\qquad q_0=2n_0+1
-\]
-
-implies
-
-\[
-v_t=T^t(n_0)+1,
-\qquad q_t=2T^t(n_0)+1.
-\]
-
-In this gauge, phase height \(v_t-1\) is exactly the physical Collatz state.
-
-This corrects an important strategic ambiguity:
-
-> phase growth is not gauge invariant; interval length is the physical invariant.
-
-A negative-cycle gauge is useful only when it makes the finite endpoint grammar more structured.
-
-# T-0018 — Critical ordered-particle completion
-
-Define
-
-\[
-R_0(x)=\lfloor x/2\rfloor,
-\qquad
-R_1(x)=\lceil3x/2\rceil.
-\]
-
-They satisfy
-
-\[
-R_0(x)+R_1(x)=2x.
-\]
-
-This harmonic identity has an exact local combinatorial realization.
-
-For \(k\ge1\), give each particle two children:
-
-\[
-2k\longmapsto(0,k),(1,3k),
-\]
-
-\[
-2k-1\longmapsto(1,3k-2),(1,3k-1).
-\]
-
-For the ordered root population
-
-\[
-[x]=\{1,\ldots,x\},
-\]
-
-the branch-zero children are exactly
-
-\[
-[\lfloor x/2\rfloor],
-\]
-
-and the branch-one children are exactly
-
-\[
-[\lceil3x/2\rceil].
-\]
-
-Every parent has exactly two children. Hence after \(L\) levels:
-
-\[
-\sum_{|w|=L}R_w(x)=2^Lx.
-\]
-
-## Escape transform as a uniform descendant
-
-Choosing one depth-\(L\) descendant uniformly gives branch-word probability
+If the phase languages are nonempty and avoid \(1,2\), then
 
 \[
 \boxed{
-\mathbb P_x([w])=rac{R_w(x)}{2^Lx}.
+K=
+\bigcup_e\bigcup_{0\le k<b_e}T^k(D_e)
 }
 \]
 
-For phase \(v=x+1\), this equals the Doob escape measure from `T-0017`:
+is a nonempty one-step regular sanctuary.
 
-\[
-\mathbb P_x([w])=\mathbb Q_{x+1}([w]).
-\]
+Conversely every regular sanctuary is a one-phase instance.
 
-The phase martingale is therefore the size-biased branch projection of a completely finite, mass-conserving particle rewrite tree.
-
-# Ordinary Collatz is a distinguished marked spine
-
-Each particle \(j\) has one distinguished child:
-
-\[
-\chi(j)=
-\begin{cases}
-(0,j/2),&j\text{ even},\\[1mm]
-(1,(3j+1)/2),&j\text{ odd}.
-\end{cases}
-\]
-
-Its child rank is exactly
-
-\[
-T(j).
-\]
-
-Iterating distinguished children from one finite root \(j\) gives the ordinary shortcut-Collatz trajectory of \(j\).
-
-For the rightmost root population \([j]\), if \(w_L(j)\) is its physical parity prefix, then
+Therefore:
 
 \[
 \boxed{
-R_{w_L(j)}(j)=T^L(j).
+\text{finite phases + regular domains + fixed finite blocks}
+\iff
+\text{regular sanctuary}
 }
 \]
 
-This identifies the ordinary-versus-adic obstruction precisely:
+at the level of existence.
 
-- an **unmarked escape path** is a branch through a growing population;
-- an **ordinary spine** is one permanently marked finite-root lineage;
-- the first does not imply the second.
+### Marked-grammar consequence
 
-A valid string-rewrite counterexample certificate must preserve the marker through the distinguished child indefinitely.
+A finite-phase regular marked interval, marked particle, carry-phase, or
+negative-target grammar with rational marker extraction and fixed exact block
+replay compiles effectively to the regular-sanctuary class of PR #12.
 
-# T-0019 — Exact ordinary-spine likelihoods
+Finite endpoint decoration and finite phase labels may simplify a certificate,
+but they do not enlarge its existential power.
 
-Let
+## X-0011 — exact compilation bridge
 
-\[
-n_{t+1}=T(n_t),
-\qquad e_t=n_t\bmod2,
-\qquad A_L=\sum_{t<L}e_t.
-\]
+The standard-library-only experiment implements:
 
-For the ordinary parity prefix
+- endpoint-pair DFAs;
+- exact difference projection with one carry bit;
+- high-zero removal by right quotient;
+- canonical determinization;
+- the exact shortcut transducer;
+- concrete closure witnesses;
+- maximal safe-state kernels.
 
-\[
-w_L=e_0\cdots e_{L-1},
-\]
-
-the diagonal phase-escape weight is
-
-\[
-\boxed{
-\mathbb Q_{n_0+1}([w_L])
-=
-\frac{n_L}{2^Ln_0}.
-}
-\]
-
-Relative to fair parity, the likelihood ratio is exactly the physical growth factor:
-
-\[
-\frac{\mathbb Q([w_L])}{2^{-L}}=rac{n_L}{n_0}.
-\]
-
-Relative to the \(3/4\)-odd Collatz growth tilt,
-
-\[
-\boxed{
-\frac{\mathbb Q([w_L])}{3^{A_L}/4^L}
-=
-\frac{2^Ln_L}{3^{A_L}n_0}
-=
-\prod_{\substack{t<L\\n_t\text{ odd}}}
-\left(1+\frac1{3n_t}\right).
-}
-\]
-
-Equivalently,
-
-\[
-\log\frac{n_L}{n_0}
-=
-A_L\log3-L\log2
-+
-\sum_{\substack{t<L\\n_t\text{ odd}}}
-\log\left(1+\frac1{3n_t}\right).
-\]
-
-If the odd-state reciprocal sum converges, phase escape and the \(3/4\)-growth tilt are asymptotically comparable along that ordinary spine.
-
-## Marked-spine rarity
-
-The root population \([n_0]\) has \(2^Ln_0\) depth-\(L\) descendants.
-
-The one distinguished descendant of the specified root \(n_0\) has mass
-
-\[
-\boxed{\frac1{2^Ln_0}.}
-\]
-
-There is one distinguished ordinary descendant per root particle, so the mass of **all** distinguished ordinary lineages is exactly
-
-\[
-\boxed{2^{-L}.}
-\]
-
-This does not depend on how rapidly their endpoints grow.
-
-Therefore the phase-escape transform solves an unmarked population-bias problem, not the marked ordinary-boundary problem.
+It verifies random finite endpoint languages, multiple gauges, the infinite
+fixed-gauge all-positive control, exact closure, semantic emptiness of the safe
+kernel, and fixed-block normalization.
 
 # Strategic correction
 
-The preceding sessions sought an entropy-thin, pressure-positive escape language. That remains useful, but it is only one layer.
+The previous broad target included finite-state, substitutional, and pushdown
+marked-particle grammars. `T-0020` separates them.
 
-The sharper target is now a **two-layer marked rewrite grammar**.
+A **regular finite-state** marked grammar is already the PR #12 problem. A
+finite graph of fixed macro-blocks is also already the PR #12 problem.
 
-## Population layer
+The route becomes genuinely new only with at least one unbounded or nonregular
+ingredient:
 
-Prove regeneration, positive graph pressure, or a phase potential for an unmarked finite population or interval.
+1. a pushdown stack;
+2. an unbounded cycle-padding or valuation counter;
+3. variable block lengths not reducible to finite phases;
+4. a nonregular arithmetic survivor;
+5. a non-rational marker/configuration coupling.
 
-## Marker layer
-
-Carry one finite marked particle and force it through the distinguished child at every step.
-
-Only the marker layer certifies that the construction begins from one ordinary positive integer rather than from an unmarked or adic escape path.
-
-# Computational state
-
-- `X-0001`: consecutive collision bundles.
-- `X-0002`: complete finite fibers through depth 22.
-- `X-0003`: inverse-signature construction and the 339-branch chart.
-- `X-0004`: offset tensors and arbitrary-precision atomic codes.
-- `X-0005`: complete dyadic projection through \(b=5\).
-- `X-0006`: negative-template identities, renewal equations, and aspect ratios.
-- `X-0007`: exact aspect-ratio census and the negative-136 chart.
-- `X-0008`: synchronous coupling, padding towers, and Collatz–Kraft identities.
-- `X-0009`: rounded phase martingale and escape transform.
-- `X-0010`: finite interval gauges, particle partitions, mass conservation, distinguished ordinary spines, and exact likelihood identities.
-
-All programs use exact Python integers and the standard library only.
+This prevents duplicate search under interval, particle, phase, carry, and
+regular-language notation.
 
 # Central unresolved step
 
-The project still lacks a **finite-boundary regeneration theorem**.
+The strongest current target is a **counter-stack marked sanctuary**.
 
-The strongest current construction target is:
+Use a state of the form
 
-> Build a finite or pushdown two-layer rewrite grammar whose unmarked interval/population layer regenerates with positive growth, whose marked finite-root particle is always sent through the distinguished child, and whose marked ranks are proved unbounded.
+\[
+(i,t,\rho,n),
+\]
 
-This formulation directly contains one ordinary finite starting integer and no longer leaves the boundary condition to a later adic audit.
+where:
+
+- \(i\) is finite negative-phase control;
+- \(t\ge0\) is an unbounded cycle-padding counter;
+- \(\rho\) is a finite low-order residue obligation;
+- \(n\) is one explicitly marked ordinary positive integer.
+
+A certified transition should have the form
+
+\[
+(i,t,\rho,n)
+\longmapsto
+(j,t+\Delta_e,\rho',T^{b_e(t)}(n))
+\]
+
+and prove:
+
+1. exact cylinder selection;
+2. stack/counter nonnegativity;
+3. closure of the residue obligation;
+4. positive graph-cycle growth above an explicit threshold;
+5. one finite initial marked configuration;
+6. no substitution of a \(2\)-adic inverse-limit path for the marker.
+
+This class is not compiled away by `T-0020` because the block length and residue
+obligation depend on unbounded memory.
 
 # Immediate priorities
 
-1. **Marked boundary substitution.** Search for parameterized particle blocks in which the unmarked population reproduces and the distinguished marker moves to a larger copy of the same boundary type.
-2. **Endpoint-string grammar.** Rewrite finite binary lower and upper endpoints from `L-0014`; use a negative-cycle lower gauge while retaining an explicit upper-boundary marker.
-3. **Population/marker potentials.** Combine phase pressure for the unmarked layer with a separate monotone potential for the marked rank.
-4. **Cycle-padding with a marker.** Revisit `T-0015`: determine how the ordinary distinguished child moves through a padded negative-cycle population, not only how the unmarked phase transfers.
-5. **Measure-guided search.** Use `T-0019` to rank ordinary prefixes, but reject every proposal that lacks a deterministic marker rule.
-6. **Independent audit.** Reconstruct `L-0014`, `T-0018`, `T-0019`, and `X-0010`, especially endpoint roundings, the odd-parent right child, and the distinction between branch mass and marked-spine mass.
+1. **Padding-counter transition law.** Derive the exact next valuation and odd
+   quotient after a cycle-padded mismatch, retaining a free high quotient.
+2. **Residue automaton over a unary counter.** Prove periodic dependence of the
+   low-order obligation on the padding height and encode it in finite control.
+3. **Counter update synthesis.** Seek edges with
+   \(t'\ge t-\!C\), preferably \(t'=t+\Delta\), and positive full-cycle growth.
+4. **Marked interoperability.** Keep the ordinary particle marker explicit and
+   replay every macro-edge through the distinguished child of `T-0018`.
+5. **Regular controls.** Compile every finite-state approximation through
+   `L-0015` and submit it to PR #12 rather than maintaining a duplicate verifier.
+6. **Independent audit.** Reconstruct `L-0015`, `T-0020`, and `X-0011`,
+   especially high-zero canonicalization and terminal-cycle exclusion.
