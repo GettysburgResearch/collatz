@@ -7,7 +7,7 @@
 **Reviewing agents:** none  
 **Created:** 2026-07-21  
 **Last updated:** 2026-07-21  
-**Dependencies:** `L-9309`; elementary exponential moments and the cosine-energy inequality of `L-9303`  
+**Dependencies:** `L-9309`; elementary exponential moments; `L-9303` for the Fourier corollary  
 **Scope:** uniform approximate-cylinder counting for the all-depth inverse program  
 **Related counterexample candidates:** none
 
@@ -19,17 +19,16 @@ Fix integers
 K\ge L\ge1.
 \]
 
-For each integer `h`, use the reciprocal phases from `L-9309` and put
+For every integer `h`, use the reciprocal phases from `L-9309` and put
 
 \[
 y_\ell(h)=
 \frac{q_\ell(h)}{81^{\ell+1}},
 \qquad
 0\le\ell<L,
-\tag{1}
 \]
 
-with circle distance
+where circle distance is
 
 \[
 \|y\|=
@@ -43,7 +42,7 @@ Define the length-`L` prefix energy
 =
 \sum_{\ell=0}^{L-1}
 \|y_\ell(h)\|^2.
-\tag{2}
+\tag{1}
 \]
 
 Put
@@ -51,10 +50,9 @@ Put
 \[
 \boxed{
 \beta=
-\frac{17\sqrt2}{27}
-<1,
+\frac{17\sqrt2}{27}<1,
 }
-\tag{3}
+\tag{2}
 \]
 
 and
@@ -63,7 +61,7 @@ and
 \boxed{
 \eta=-\log_{81}\beta>0.
 }
-\tag{4}
+\tag{3}
 \]
 
 Numerically,
@@ -88,21 +86,21 @@ h\in I:
 \le
 81^L\beta^L.
 }
-\tag{5}
+\tag{4}
 \]
 
 Equivalently, low-energy length-`L` prefixes occupy at most a `beta^L` fraction of every complete `81^L` frequency block.
 
 ### Arbitrary-interval corollary
 
-Let `I` be any interval of `H>=81` consecutive integers and put
+Let `I` be any interval of `H>=81` consecutive integers and set
 
 \[
 L=\lfloor\log_{81}H\rfloor.
-\tag{6}
+\tag{5}
 \]
 
-Then
+Assume `L<=K`. Then
 
 \[
 \boxed{
@@ -112,21 +110,14 @@ h\in I:
 \le\frac L{64}
 \right\}
 \le
-C_*H^{1-\eta},
+81H^{1-\eta}.
 }
-\tag{7}
-\]
-
-where one valid absolute constant is
-
-\[
-C_*=82\cdot81^\eta.
-\tag{8}
+\tag{6}
 \]
 
 ### Fourier corollary for the triadic mirror
 
-For all frequencies outside the exceptional set in `(7)`,
+For every frequency outside the exceptional set in `(6)`,
 
 \[
 \boxed{
@@ -136,41 +127,39 @@ For all frequencies outside the exceptional set in `(7)`,
 \le
 \exp(-L/32).
 }
-\tag{9}
+\tag{7}
 \]
 
-Thus, in every interval of length `H`, all but `O(H^(1-eta))` frequencies have at least a fixed power of `H` decay in the triadic mirror coefficient:
+Hence, for an absolute constant `C`, all but `O(H^(1-eta))` frequencies in an interval of length `H` satisfy
 
 \[
-\exp(-L/32)
+\left|
+\widehat\nu\!\left(\frac h{81^K}\right)
+\right|
 \le
-C'H^{-1/(32\log81)}
-\tag{10}
+CH^{-1/(32\log81)}.
+\tag{8}
 \]
 
-for an absolute constant `C'`.
-
-By `T-9305` and `T-9306`, the same conclusion transfers to the dyadic survivor and every CRT split up to their explicit `O(|h|/64^K)` coefficient errors.
+By `T-9305` and `T-9306`, analogous estimates transfer to the dyadic survivor and every CRT split with their explicit `O(|h|/64^K)` comparison errors.
 
 ## Definitions
 
 The prefix energy uses the **unshifted reciprocal phases**. It is exactly the quadratic energy of the first `L` factors of the triadic mirror product.
 
-The theorem is uniform in the ambient depth `K`: only the unit twist `64^(-K)` changes, and `L-9309` proves that the lift-prefix map remains a bijection for every fixed `K`.
+The theorem is uniform in the ambient depth `K`: the unit twist `64^(-K)` only permutes the lift-prefix tuples, by `L-9309`.
 
-The logarithms in `(4)`, `(6)`, and `(10)` are natural unless the base is displayed.
+All logarithms are natural unless a base is displayed.
 
 ## Motivation
 
-`R-9301` shows that one exact prefix is too sparse to create a consecutive exceptional block. The next question is whether a low-energy **union** of exact prefixes can be large.
+`R-9301` shows that one exact prefix is too sparse to create a consecutive exceptional block. The next question is whether the **union** of low-energy exact prefixes can be large.
 
-`T-9307` gives the first quantitative answer. Low-energy prefixes lose an explicit exponential factor per level in every complete block. This is a self-contained energy version of the average-contraction philosophy, derived directly from the lift-digit bijection.
-
-The result does not prove the maximal all-depth theorem: a power-small exceptional set can still contain the first few or harmonically most expensive frequencies. It does prove that any obstruction is combinatorially sparse at every scale and gives a concrete entropy budget for the next inverse theorem.
+This theorem gives a quantitative answer. Low-energy prefixes lose a fixed exponential factor per level in every complete residue block. The result does not yet prove all-depth EQ, because a power-small exceptional set may still contain the harmonically most expensive small frequencies. It does give a uniform entropy budget for the remaining inverse problem.
 
 ## Proof
 
-### Step 1: a uniform one-level exponential-moment bound
+### Step 1: one-level exponential-moment bound
 
 For real `phi`, consider the shifted `81`-point grid
 
@@ -187,7 +176,7 @@ The set
 \{x\in\mathbb R/\mathbb Z:\|x\|<1/4\}
 \]
 
-is an arc of length `1/2`. An arc of length `1/2` contains at most `41` points of an equally spaced `81`-point grid. Therefore at least `40` grid points satisfy
+is an arc of length `1/2`. Such an arc contains at most `41` points of an equally spaced `81`-point grid. Therefore at least `40` grid points satisfy
 
 \[
 \|x\|\ge1/4.
@@ -207,23 +196,17 @@ For every `s>0`,
 \frac{41}{81}
 +
 \frac{40}{81}e^{-s/16}.
-\tag{11}
+\tag{9}
 \]
 
 Choose
 
 \[
 s=16\log4.
-\tag{12}
+\tag{10}
 \]
 
-Then
-
-\[
-e^{-s/16}=1/4,
-\]
-
-so the right side of `(11)` is
+Then `e^(-s/16)=1/4`, so the right side of `(9)` is
 
 \[
 \boxed{
@@ -232,12 +215,12 @@ so the right side of `(11)` is
 =
 \frac{17}{27}.
 }
-\tag{13}
+\tag{11}
 \]
 
 ### Step 2: iterate through the lift-digit bijection
 
-Let `h` be uniform on any interval of `81^L` consecutive integers. Such an interval is a complete residue system modulo `81^L`.
+Let `h` be uniform on any interval of `81^L` consecutive integers. This is a complete residue system modulo `81^L`.
 
 By `L-9309`, the tuple
 
@@ -251,7 +234,7 @@ is uniform on
 (\mathbb Z/81\mathbb Z)^L.
 \]
 
-Equivalently, `q_0` is uniform modulo `81`, and at each later level the lift digit `d_ell` is conditionally uniform on `{0,...,80}`.
+Equivalently, `q_0` is uniform modulo `81`, and each later lift digit is conditionally uniform on `{0,...,80}`.
 
 The normalized recurrence is
 
@@ -259,9 +242,10 @@ The normalized recurrence is
 y_{\ell+1}
 =
 \frac{\{64y_\ell\}+d_\ell}{81}.
+\tag{12}
 \]
 
-Conditioned on the history, equation `(11)` applies with a shift determined by `y_ell`. Iterating conditional expectations gives
+Conditioned on the preceding lift data, `(9)` applies with a shift determined by `y_ell`. Iterating conditional expectations gives
 
 \[
 \boxed{
@@ -272,19 +256,19 @@ Conditioned on the history, equation `(11)` applies with a shift determined by `
 \le
 \kappa^L.
 }
-\tag{14}
+\tag{13}
 \]
 
 ### Step 3: low-energy large deviation
 
-If
+On the event
 
 \[
 \mathcal E_{K,L}(h)
 \le L/64,
 \]
 
-then
+we have
 
 \[
 \exp(-s\mathcal E_{K,L}(h))
@@ -292,13 +276,7 @@ then
 \exp(-sL/64).
 \]
 
-Markov's inequality applied to the nonnegative random variable
-
-\[
-\exp(-s\mathcal E_{K,L})
-\]
-
-gives
+Markov's inequality therefore gives
 
 \[
 \begin{aligned}
@@ -314,10 +292,10 @@ gives
 \exp(s/64)\kappa
 \right)^L.
 \end{aligned}
-\tag{15}
+\tag{14}
 \]
 
-Using `(12)` and `(13)`,
+Using `(10)` and `(11)`,
 
 \[
 \exp(s/64)
@@ -337,47 +315,52 @@ so
 \beta.
 \]
 
-Multiplying the probability bound by `81^L` proves `(5)`.
+Multiplying the probability bound by `81^L` proves `(4)`.
 
 ### Step 4: arbitrary intervals
 
-Let `L` be `(6)`. Then
+Let `L` be `(5)` and put
 
 \[
-81^L\le H<81^{L+1}.
+B=81^L.
 \]
 
-Partition `I` into at most `81` complete blocks of length `81^L` and one final remainder. The remainder is contained in another interval of length `81^L`. Applying `(5)` to each gives
+Then
 
 \[
-\#\{\text{low energy in }I\}
+B\le H<81B.
+\]
+
+Partition `I` into at most `80` complete blocks of length `B` and one remainder. Enlarge the remainder, if nonempty, to an interval of exactly `B` consecutive integers. Applying `(4)` to every block gives
+
+\[
+\#\{\text{low energy frequencies in }I\}
 \le
-82\cdot81^L\beta^L.
-\tag{16}
+81B\beta^L.
+\tag{15}
 \]
 
 Since
 
 \[
-\beta^L=(81^L)^{-\eta}
-\]
-
-and
-
-\[
-81^L>H/81,
+\beta^L=B^{-\eta},
 \]
 
 we have
 
 \[
-81^L\beta^L
-=(81^L)^{1-\eta}
-\le
-81^\eta H^{1-\eta}.
+B\beta^L=B^{1-\eta}.
 \]
 
-This proves `(7)` and `(8)`.
+Also `0<eta<1` and `B<=H`, so
+
+\[
+B^{1-\eta}
+\le
+H^{1-\eta}.
+\]
+
+Substitution into `(15)` proves `(6)`.
 
 ### Step 5: Fourier decay outside the exceptional set
 
@@ -389,7 +372,7 @@ By `L-9305`, the triadic coefficient is a product of cosine factors with phase d
 \exp(-2\|x\|^2),
 \]
 
-gives
+gives, after discarding all factors beyond level `L-1`,
 
 \[
 \left|
@@ -398,10 +381,8 @@ gives
 \le
 \exp\!\left(
 -2\mathcal E_{K,L}(h)
-\right),
+\right).
 \]
-
-after discarding all factors beyond level `L-1`.
 
 Outside the exceptional set,
 
@@ -409,37 +390,44 @@ Outside the exceptional set,
 \mathcal E_{K,L}(h)>L/64,
 \]
 
-so `(9)` follows. Equation `(10)` is the consequence of `(6)`. QED.
+which proves `(7)`.
+
+Finally,
+
+\[
+L\ge
+\frac{\log H}{\log81}-1,
+\]
+
+so `(8)` follows after multiplying by the absolute factor `e^(1/32)`. QED.
 
 ## Dependency audit
 
-- `L-9309` supplies exact conditional uniformity of the lift digits in every complete block.
-- The one-level estimate `(11)` is proved in this file.
+- `L-9309` supplies exact conditional uniformity of the lift digits on complete residue blocks.
+- The one-level estimate `(9)` is proved here.
 - `L-9303` supplies the cosine-energy inequality used only for the Fourier corollary.
-- `T-9305` and `T-9306` provide optional transfer to other representations.
 - No branch-qualified frequency theorem, computation, or external large-deviation theorem is used.
 
 ## Gap audit
 
-- A power-small exceptional set may still contain all very small frequencies, so `(7)` does not prove the harmonic EQ sum tends to zero.
-- The constants are deliberately crude; optimizing them does not resolve the maximal obstruction.
+- A power-small exceptional set may still contain the smallest frequencies, so the theorem alone does not prove the harmonic EQ sum tends to zero.
+- The constants are deliberately crude; their positivity, not optimization, is the structural point.
 - The theorem controls the first `L` reciprocal phases, not arbitrary scattered subsets of levels.
-- Uniformity holds on complete residue blocks; arbitrary intervals are handled by covering, which loses only a constant.
-- The result gives no pointwise theorem for every frequency.
+- The result is a count theorem, not a harmonic-location theorem.
 - No conclusion about the M1 integer-section problem follows.
 
 ## Adversarial tests
 
-1. At `L=1`, the statement is a direct count over the `81` possible values of `q_0`.
-2. The bound is invariant under the period-9 unit twist `64^(-K) mod81^L` because that twist only permutes the lift tuples.
-3. Frequencies divisible by `81` contribute some zero initial phases, but form correspondingly sparse prefix classes and are included in the entropy count.
-4. If `H=81^L`, the arbitrary-interval argument reduces to the complete-block theorem.
-5. The exceptional-count estimate can exceed `1` for tiny `L`; it remains a valid upper bound.
+1. At `L=1`, the theorem is a direct count over the `81` values of `q_0`.
+2. The period-9 unit twist `64^(-K)` only permutes the lift tuples.
+3. Frequencies divisible by `81` create zero initial phases but occupy correspondingly sparse residue classes.
+4. If `H=81^L`, the arbitrary-interval proof reduces to the complete-block theorem.
+5. The exceptional-count bound may be numerically crude for small `L`; it remains valid.
 
 ## Remaining uncertainty
 
-The proof is complete-looking. Independent review should check the `41/40` grid split, the conditional-independence interpretation of `L-9309`, and the direction of Markov's inequality in `(15)`.
+The proof is complete-looking. Independent review should check the `41/40` grid split, the conditional-expectation iteration, the direction of Markov's inequality, and the corrected monotonicity step in the arbitrary-interval argument.
 
 ## Suggested next attack
 
-Stratify the low-energy prefixes by their earliest nondegenerate level and by `81`-adic valuation. The objective is to prove that the power-small exceptional residue classes cannot all cluster near the smallest positive frequencies. A harmonic-location theorem of that type, combined with `(7)`, would be a genuine route from almost-all polynomial-window decay to the full weighted criterion.
+Stratify the low-energy prefixes by valuation, first nondegenerate level, and terminal residue. The goal is a harmonic-location theorem showing that the power-small exceptional residue classes cannot all have unusually small least positive representatives.
