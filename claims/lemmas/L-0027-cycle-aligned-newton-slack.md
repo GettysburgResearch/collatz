@@ -1,11 +1,12 @@
 # L-0027 — Cycle-aligned Newton doubling with one-cycle slack
 
 Claim ID: `L-0027`  
-Title: Exact finite-word generation of the next dyadic-stage inverse prefix  
+Title: Exact finite-word generation of every connector inverse in one dyadic stage  
 Status: `PROPOSED`  
 Authoring agent: `gpt56-pro-01`  
 Reviewing agents: none yet  
 Created: 2026-07-22  
+Last updated: 2026-07-22  
 Dependencies: `L-0016`, `L-0024`, `L-0026`  
 Scope: the four phase-`-34` self-return towers of the negative eleven-cycle  
 Related counterexample candidates: none
@@ -51,12 +52,10 @@ s_m=B_m+d_m.
 \tag{3}
 \]
 
-Define the exact connector precision
+Define the first-target connector precision
 
 \[
-\boxed{
-Q_m=K_{s_m}=11(s_m+1).
-}
+\boxed{Q_m=K_{s_m}=11(s_m+1).}
 \tag{4}
 \]
 
@@ -69,15 +68,28 @@ s_{m+1}=2s_m
 and therefore
 
 \[
-\boxed{
-Q_{m+1}=2Q_m-11.
-}
+\boxed{Q_{m+1}=2Q_m-11.}
 \tag{5}
 \]
 
-Thus ordinary Newton doubling to \(2Q_m\) bits produces exactly eleven more bits than the next stage requires. The slack equals one complete negative-cycle block.
+A Newton lift from \(Q_m\) to \(2Q_m\) bits therefore supplies the entire next-stage first-target precision with exactly eleven spare bits.
 
-## Moving inverse
+Moreover every target depth inside stage \(m\) is at most
+
+\[
+K_{2B_m}=11(2B_m+1),
+\]
+
+and
+
+\[
+\boxed{K_{2B_m}<2Q_m.}
+\tag{6}
+\]
+
+Thus the same full Newton lift contains every connector inverse required anywhere in the current 256-transition stage.
+
+## Moving inverse and full Newton workspace
 
 Put
 
@@ -91,140 +103,175 @@ so that
 
 \[
 \boxed{N_{m+1}=N_m^2.}
-\tag{6}
+\tag{7}
 \]
 
 Let
 
 \[
-\boxed{
-x_m=[N_m^{-1}]_{Q_m}}
-\tag{7}
+\boxed{x_m=[N_m^{-1}]_{Q_m}}
+\tag{8}
 \]
 
 be the least nonnegative inverse of \(N_m\) modulo \(2^{Q_m}\).
 
-Define
+First perform the ordinary Newton lift of the **same** inverse:
 
 \[
-y_m=x_m^2\pmod{2^{Q_m}},
-\tag{8}
-\]
-
-and perform one Newton lift for the squared modulus:
-
-\[
-\widehat y_m
+\boxed{
+\widetilde x_m
 \equiv
-y_m\bigl(2-N_m^2y_m\bigr)
+x_m(2-N_mx_m)
 \pmod{2^{2Q_m}}.
+}
 \tag{9}
 \]
 
-Then:
+Then
 
-### 1. Exact next inverse prefix
+\[
+\boxed{
+N_m\widetilde x_m
+\equiv1
+\pmod{2^{2Q_m}}.
+}
+\tag{10}
+\]
+
+The complete next-stage inverse prefix is obtained by squaring and truncating:
 
 \[
 \boxed{
 x_{m+1}
 =
-[\widehat y_m]_{Q_{m+1}}.}
-\tag{10}
-\]
-
-In particular,
-
-\[
-\boxed{
-N_{m+1}x_{m+1}\equiv1\pmod{2^{Q_{m+1}}}.
-}
+[\widetilde x_m^2]_{Q_{m+1}}.}
 \tag{11}
 \]
 
-### 2. No completion oracle
-
-Every quantity in (8)–(10) is a finite ordinary integer. Starting with one finite pair
+Indeed,
 
 \[
-(m_0,x_{m_0}),
+\boxed{
+N_{m+1}x_{m+1}
+\equiv1
+\pmod{2^{Q_{m+1}}}.
+}
+\tag{12}
 \]
 
-iteration of (8)–(10) generates every later inverse prefix exactly. No digit of an infinite 2-adic inverse is assumed as input.
+The distinction between \(x_m\) and \(\widetilde x_m\) is essential. The shorter word \(x_m\) suffices for the first connector only; the full \(2Q_m\)-bit Newton workspace is what supplies the deeper connectors later in the stage.
 
-### 3. Exact connector-seed compilation
+## Exact compilation of every within-stage inverse
 
-Let tower type \(i\) be the source at height \(B_m\), and type \(j\) the target at height \(s_m\). Write their anchors as
+For
 
 \[
-B_i(B_m),
-\qquad
-A_j(s_m).
+t_{m,j}=B_m+jd_m,
+\qquad0\le j\le256,
+\]
+
+put
+
+\[
+\boxed{
+a_m=[3^{-7d_m}]_{2Q_m}.}
+\tag{13}
+\]
+
+Then at every precision \(K\le2Q_m\),
+
+\[
+\boxed{
+3^{-7t_{m,j}}
+\equiv
+\widetilde x_m a_m^j
+\pmod{2^K}.
+}
+\tag{14}
 \]
 
 Since
 
 \[
-G_{B_m}=7(B_m+1),
+G_{t_{m,j}}=7(t_{m,j}+1),
 \]
 
-we have
-
-\[
-3^{-G_{B_m}}
-\equiv
-3^{-7}x_m
-\pmod{2^{Q_m}}.
-\]
-
-Therefore the canonical connector seed is the finite residue
+the inverse needed by a connector from this source is
 
 \[
 \boxed{
-\eta_m^{i\to j}
+3^{-G_{t_{m,j}}}
+\equiv
+3^{-7}\widetilde x_m a_m^j
+\pmod{2^K}.
+}
+\tag{15}
+\]
+
+Let tower type \(i\) be the source at height \(t_{m,j}\), and type \(k\) the target at height \(t_{m,j+1}\). Write their anchors as
+
+\[
+B_i(t_{m,j}),
+\qquad
+A_k(t_{m,j+1}),
+\]
+
+and put
+
+\[
+K=K_{t_{m,j+1}}.
+\]
+
+The canonical connector seed is therefore the finite residue
+
+\[
+\boxed{
+\eta_{m,j}^{i\to k}
 =
 \left[
-\bigl(A_j(s_m)-B_i(B_m)\bigr)
-3^{-7}x_m
-\right]_{Q_m}.
+\bigl(A_k(t_{m,j+1})-B_i(t_{m,j})\bigr)
+3^{-7}\widetilde x_m a_m^j
+\right]_K.
 }
-\tag{12}
+\tag{16}
 \]
 
-The corresponding cap is
+Its cap is
 
 \[
 \boxed{
-\theta_m^{i\to j}
+\theta_{m,j}^{i\to k}
 =
 \frac{
-B_i(B_m)+3^{7(B_m+1)}\eta_m^{i\to j}-A_j(s_m)
-}{2^{Q_m}}.
+B_i(t_{m,j})
++3^{7(t_{m,j}+1)}\eta_{m,j}^{i\to k}
+-A_k(t_{m,j+1})
+}{2^K}.
 }
-\tag{13}
+\tag{17}
 \]
 
-Equations (10), (12), and (13) generate all sixteen stage-boundary source/target connector tiles by finite arithmetic.
+Equations (9), (13), and (16)–(17) generate all sixteen source/target connector tiles at every one of the 256 stage positions by finite arithmetic.
 
-### 4. Within-stage compilation
+## No completion oracle
 
-For
+Every quantity above is a finite ordinary integer. Starting with one finite pair
 
 \[
-t_{m,j}=B_m+j d_m,
-\qquad0\le j\le256,
+(m_0,x_{m_0}),
 \]
 
-we have
+iteration of
 
 \[
-3^{-7t_{m,j}}
-=
-3^{-7B_m}
-\left(3^{-7d_m}\right)^j.
+x_m
+\longmapsto
+\widetilde x_m
+\longmapsto
+x_{m+1}
 \]
 
-The finite controller \(j\in\{0,\ldots,255\}\), together with modular exponentiation of the finite odd unit \(3^{-7d_m}\), therefore generates every connector inverse occurring inside the stage from the same finite prefix state \(x_m\).
+generates every later connector-control word exactly. No digit of an infinite 2-adic inverse is assumed as input.
 
 ## Proof
 
@@ -261,49 +308,40 @@ Q_{m+1}
 
 proving (5).
 
-Now \(x_m^2\) is an inverse of \(N_m^2=N_{m+1}\) modulo \(2^{Q_m}\). Applying the Newton specialization of `L-0026` to the odd number \(N_{m+1}\) lifts that inverse to precision \(2Q_m\). Truncation to the smaller precision
+Also
 
 \[
-Q_{m+1}=2Q_m-11
+2Q_m-K_{2B_m}
+=22(B_m+d_m+1)-11(2B_m+1)
+=22d_m+11>0,
 \]
 
-preserves the inverse congruence, proving (10)–(11).
+which proves (6).
 
-The connector congruence is
+Equation (9) is the Newton specialization of `L-0026`; it proves (10). Since \(\widetilde x_m^2\) is an inverse of \(N_m^2=N_{m+1}\) modulo \(2^{2Q_m}\), and
 
 \[
-B_i(B_m)+3^{G_{B_m}}\eta
-\equiv
-A_j(s_m)
-\pmod{2^{Q_m}}.
+Q_{m+1}<2Q_m,
 \]
 
-Multiplying by the finite inverse
+truncation proves (11)–(12).
+
+Finally,
 
 \[
-3^{-G_{B_m}}
-=3^{-7}N_m^{-1}
+3^{-7t_{m,j}}
+=3^{-7B_m}(3^{-7d_m})^j,
 \]
 
-proves (12); division gives (13). The within-stage statement is the displayed exponent factorization. ∎
+which proves (14). Multiplication by \(3^{-7}\) gives (15). Substitution in the connector congruence proves (16), and exact division gives (17). ∎
 
 ## General cycle-aligned principle
 
-The identity
+For a negative cycle of length \(\ell\), a doubling scale with precision
 
 \[
-Q_{m+1}=2Q_m-11
-\]
-
-is not an accidental numerical fit. For a cycle of length \(\ell\), any run-length tower whose precision is
-
-\[
-Q_m=\ell(s_m+1)
-\]
-
-and whose scale parameter doubles,
-
-\[
+Q_m=\ell(s_m+1),
+\qquad
 s_{m+1}=2s_m,
 \]
 
@@ -317,9 +355,11 @@ Newton lifting doubles binary precision, leaving exactly one cycle block of \(\e
 
 ## Strategic consequence
 
-`L-0023` isolated a quadratic moving bulk but left precision growth as an apparent oracle problem. The present lemma resolves that problem for the connector-control track:
+The entire connector-prefix track is now a finite proof object generated forward from the current finite prefix. The corrected compiler has enough precision for:
 
-> The entire next-stage inverse prefix is generated from the current finite prefix by one exact Newton lift and one square, with eleven bits of slack.
+1. every connector in the current 256-step stage;
+2. the first connector of the next stage;
+3. eleven additional certificate bits.
 
 The unresolved problem is no longer how to know the next connector bits. It is how to make the **ordinary physical residual** land in those computed connector cylinders forever.
 
@@ -331,4 +371,4 @@ The unresolved problem is no longer how to know the next connector bits. It is h
 
 ## Adversarial tests
 
-`X-0013` verifies (5), (10)–(13), and all sixteen source/target connector compilations for several dyadic stages. Direct modular inversion and direct connector construction agree exactly.
+`X-0013` verifies (5)–(17) for several dyadic stages and representative stage positions, including the deepest connectors. Direct modular inversion and direct connector construction agree exactly.
