@@ -199,3 +199,41 @@ statement — the same irreducible core, now isolated to a finite list
 per scale. The five equivalent masks of that core: smallest survivors ↔
 pointwise small-frequency Fourier ↔ pair separation of R_K ↔ digit
 runs of `81^{−t}`-multiples ↔ 2-adic Z-numbers for 81/64.
+
+## Theorem 12: fixed-frequency decay for almost every depth (`experiments/eq_theorem12.py` — ALL PASS)
+
+**AP-subgroup lemma (proved).** `⟨64⟩ mod 81^j = 1 + 9ℤ/81^j` exactly —
+an arithmetic progression — because 64 = 1+9·7 with v₃(63) = 2, so 64
+topologically generates 1+9ℤ₃. (Set equality verified to j = 4;
+order+containment, which imply equality, to j = 8.) No character sums
+are needed anywhere: the relevant multiplicative orbit is a perfect
+step-9 AP.
+
+**Theorem 12.** Fix any frequency θ ≠ 0. As the depth K varies over one
+period 9·81^m, the variable `64^{−K}` sweeps the AP uniformly, and the
+Theorem-11 Markov decomposition applies verbatim to its base-81 digits:
+
+    mean_{K ∈ period} |S_K(θ)|/2^K ≤ (2/π + 1/9)^{m+1} ≤ 0.748^{m+1}
+
+(measured: 0.639, 0.407 at m = 0, 1 — again tracking (2/π)^{m+1}).
+Hence by Markov's inequality, **for every fixed θ,
+|S_K(θ)|/2^K → 0 along a set of depths K of density 1**, with power
+rate outside power-small exceptional sets.
+
+**Corollary.** For every fixed B, along density-1 depths
+`max_{θ≤B}|S_K(θ)|/2^K ≤ K^{−c}` simultaneously: **R_K equidistributes
+at every fixed archimedean scale for almost every K.** Observed
+pointwise at θ = 1: |S_K(1)|/2^K falls from 1.7×10⁻² (K = 8) to
+~10⁻¹⁶ (K = 60), empirical rate 0.554 per level.
+
+**Where EQ stands after Theorems 11 + 12.** Proved: exponential decay
+of |S_K|/2^K (i) for almost all frequencies at every scale (T11), and
+(ii) for every fixed frequency at almost all depths (T12) — the two
+averaged versions of EQ, both with the same effectively-i.i.d. constant
+2/π. Together with T9/T10 (no arithmetic adversaries) the residual gap
+is now a pure "all-K, all-small-θ simultaneously" statement — a
+Borel–Cantelli-type interchange along the explicit AP orbit — with no
+arithmetic structure, no adversarial mechanism, and empirically rapid
+decay everywhere probed. Full EQ (and through it, quantitative
+near-emptiness of survivors) is within one quantitative-interchange
+lemma of closing; that lemma is the residual open point of the program.

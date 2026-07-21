@@ -1,0 +1,22 @@
+== Pillar 1: <64> mod 81^j = 1 + 9Z ==
+  j=1: orbit == AP 1+9Z mod 81^1  (order 9)
+  j=2: orbit == AP 1+9Z mod 81^2  (order 729)
+  j=3: orbit == AP 1+9Z mod 81^3  (order 59049)
+  j=4: orbit == AP 1+9Z mod 81^4  (order 4782969)
+  j=5: ord(64) = 81^5/9 and 64 == 1 mod 9 => equality
+  j=6: ord(64) = 81^6/9 and 64 == 1 mod 9 => equality
+  j=8: ord(64) = 81^8/9 and 64 == 1 mod 9 => equality
+
+== Pillar 2: K-averaged partial products, fixed theta ==
+  theta= 1 m=0: K-avg over period 9 = 0.63938  vs bound 0.74773  OK
+  theta= 1 m=1: K-avg over period 729 = 0.40704  vs bound 0.55910  OK
+  theta= 5 m=0: K-avg over period 9 = 0.63218  vs bound 0.74773  OK
+  theta= 5 m=1: K-avg over period 729 = 0.40247  vs bound 0.55910  OK
+  theta=37 m=0: K-avg over period 9 = 0.63938  vs bound 0.74773  OK
+  theta=37 m=1: K-avg over period 729 = 0.40704  vs bound 0.55910  OK
+
+== pointwise |S_K(1)|/2^K across K (observational) ==
+  K=8:1.7e-02, K=12:3.6e-06, K=16:2.3e-04, K=20:4.6e-07, K=24:3.2e-08, K=28:5.1e-09, K=32:1.9e-08, K=36:7.0e-12, K=40:2.5e-16, K=44:1.8e-11, K=48:2.0e-10, K=52:1.1e-17, K=56:1.9e-14, K=60:7.9e-16
+  empirical per-level decay: 0.5539  (2/pi = 0.6366)
+
+ALL CHECKS PASS -- Theorem 12 verified
