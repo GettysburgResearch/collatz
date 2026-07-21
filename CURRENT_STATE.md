@@ -7,14 +7,11 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch now contains ten mathematical research sessions. No claim has
-received the repository's independent review, so complete-looking finite
-theorems remain `PROPOSED`.
+The active branch now contains eleven mathematical research sessions. No claim has received the repository's independent review, so complete-looking finite theorems remain `PROPOSED`.
 
-There is currently **no positive-integer Collatz counterexample**, no regular
-sanctuary, and no closed counter-stack grammar in the repository.
+There is currently **no positive-integer Collatz counterexample**, no regular sanctuary, and no closed counter-stack grammar in the repository.
 
-## Fixed map
+## Fixed map and exact finite blocks
 
 The shortcut map is
 
@@ -32,308 +29,443 @@ For a chronological parity word \(w\) of length \(L\) and weight \(a\),
 T^L(n)=\frac{3^an+B(w)}{2^L}
 \]
 
-on one canonical residue class modulo \(2^L\).
+on one residue class modulo \(2^L\).
 
-## Existing finite resources
+The branch has developed mutually compatible descriptions in terms of:
 
-Earlier sessions provide:
+1. finite collision fibers;
+2. induced mixed-radix maps;
+3. negative-template return systems;
+4. moving negative phases;
+5. finite interval and marked-particle lifts;
+6. counter-controlled negative-cycle towers.
 
-- complete finite collision-fiber recursions;
-- induced partial radix maps;
+## Established resources before the latest session
+
+The repository already contains proposed exact results giving:
+
 - sparse and consecutive supercritical collision charts;
-- mixed-radix carry rewrites and finite-horizon pumps;
-- inverse-signature collision codes;
-- exponentially unbounded mildly supercritical branch count;
-- arbitrary finite \(3\)-adic precision;
-- geometry-preserving tensor amplification;
-- complete collision-alphabet projection modulo \(2^b\) for every \(b\);
-- negative-template rational-base return systems;
-- finite and graph-directed return criteria;
-- normalized real-window and aspect-ratio constraints;
-- synchronous coupling to moving negative phases;
-- cycle-padded mismatch towers;
-- fair, growth-tilted, and phase-escape Kraft identities.
+- inverse-signature collision codes and exact composition laws;
+- exponentially unbounded supercritical branch count;
+- arbitrary finite 3-adic precision;
+- complete alphabet projection modulo \(2^b\) for every \(b\);
+- mixed-radix carry pumping and finite-horizon stacks;
+- negative-shadow rational-base returns;
+- graph-directed growth and pressure criteria;
+- a phase-survival martingale and Doob transform;
+- a finite interval lift of every ordinary Collatz orbit;
+- a critical particle completion whose distinguished spine is ordinary Collatz;
+- a proof that finite-phase regular marked grammars collapse to the regular-sanctuary class already handled by PR #12.
 
-These are exact finite resources. None selects one ordinary positive state that
-survives forever.
+These results remove branch count, finite precision, local expansion, finite-state closure checking, and ordinary-marker semantics as conceptual mysteries. They do not produce one infinite ordinary trajectory.
 
-## Finite intervals and marked particles
+# Latest session: exact Hensel counter-stack architecture
 
-### L-0014 — finite interval renormalization
+The literature-informed boundary from PR #13 and PR #12 was enforced strictly: the new work uses an unbounded padding scale and an unbounded ordinary high tail. It is not another finite-state sanctuary in disguise.
 
-Every ordinary state \(n>0\) can be represented by a finite interval
+## 1. Exact tower replacement
+
+Fix one cycle-padded mismatch type from `T-0015`. Write
 
 \[
-[v,q),
-\qquad q-v=n.
+k_t=k_0+\ell t,
+\qquad
+g_t=g_0+at,
 \]
 
-The exact interval rules are
+and choose the least odd residue \(\mu_t\) satisfying
 
 \[
-[v,q)
+3^{g_t}\mu_t\equiv-1\pmod{2^{r+1}}.
+\]
+
+Define
+
+\[
+A_t=2^{k_t}\mu_t,
+\qquad
+K_t=k_t+r+1,
+\]
+
+\[
+B_t=3^b\frac{3^{g_t}\mu_t+1}{2^{r+1}},
+\qquad
+G_t=g_t+b.
+\]
+
+`L-0016` proves the exact ordinary-tail identity
+
+\[
+\boxed{
+A_t+2^{K_t}h
 \longmapsto
-\left[
-\left\lceil\frac v2\right\rceil,
-\left\lceil\frac q2\right\rceil
-\right)
+B_t+3^{G_t}h
+}
 \]
 
-for even length and
+for every ordinary integer \(h\ge0\). The same finite high tail is preserved while one binary block is replaced by one ternary block.
+
+For the four phase-34 self-return types of the negative eleven-cycle, the finite recovery cores \(\mu_t\) have periods
 
 \[
-[v,q)
-\longmapsto
-\left[
-\left\lfloor\frac{3v}{2}\right\rfloor,
-\left\lceil\frac{3q}{2}\right\rceil
-\right)
+16,\ 8,\ 4,\ 2.
 \]
 
-for odd length. The new interval length is \(T(n)\).
+## 2. Universal canonical connectors
 
-### T-0018 — ordered particle completion
+Let a source instance have block data \((A,K,B,G)\) and a target instance have binary anchor \(\bar A\) and depth \(\bar K\). `L-0017` proves that there is one unique canonical tile
+
+\[
+\boxed{
+B+3^G\eta
+=
+\bar A+2^{\bar K}\theta
+}
+\]
+
+with
+
+\[
+0\le\eta<2^{\bar K},
+\qquad
+0\le\theta<3^G.
+\]
+
+For every \(z\ge0\),
+
+\[
+\eta+2^{\bar K}z
+\longmapsto
+\theta+3^Gz.
+\]
+
+Hence every finite phase-aligned tower schedule has infinitely many ordinary finite realizations. Failure to find a finite connector is never the obstruction.
+
+## 3. What finite or periodic memory cannot do
+
+`L-0018` proves, for odd \(a\),
+
+\[
+\operatorname{ord}_{2^K}(3^a)=2^{K-2}.
+\]
+
+Therefore no fixed counter period can preserve the inverse-power prefix at growing precision.
+
+`T-0021` proves a stronger all-height obstruction. If tower type, high tail, and affine counter rule
+
+\[
+t'=ct+d
+\]
+
+are chosen from finite libraries, then exact tower-to-tower transitions occur at only finitely many heights. On a progression freezing the periodic cores, a hypothetical infinite family would solve a nondegenerate power-sum equation
+
+\[
+C\alpha^n-E\beta^n+D=0
+\]
+
+with multiplicatively independent powers of three and two, contradicting PR #13's imported theorem `LIT-KTHM-0008`.
+
+The padding counter cannot be the sole unbounded memory. The ordinary high tail must carry genuine data.
+
+## 4. Hensel prefix lane
+
+Define
+
+\[
+\omega_t=
+\frac{\mu_t+3^{-g_t}}{2^{r+1}}
+\in\mathbb Z_2.
+\]
+
+`L-0019` proves that a requested prefix length \(H\) is preserved by the exact nonlinear jump
+
+\[
+\Delta_H=2^{H+r-1}:
+\]
+
+\[
+\omega_{t+\Delta_H}
+\equiv
+\omega_t
+\pmod{2^H}.
+\]
+
+The low connector seed is target-independent:
+
+\[
+\eta\equiv-\omega_t\pmod{2^H}
+\]
+
+once the target anchor is divisible by \(2^H\).
+
+This gives a genuine append-only Hensel lane, but nested prefixes alone still define a completion object rather than an ordinary starting integer.
+
+## 5. Connector truncation normal form
+
+For a target tower with anchor
+
+\[
+\bar A=2^{\bar k}\bar\mu,
+\qquad
+\bar K=\bar k+\bar r+1,
+\]
+
+`L-0022` proves
+
+\[
+\boxed{
+\eta
+=
+[\!-\omega_t\!]_{\bar k}
++2^{\bar k}d,
+\qquad
+0\le d<2^{\bar r+1}.
+}
+\]
+
+Thus an arbitrarily long connector seed is one source-dependent inverse-prefix stream plus at most six target-control bits. The unbounded target forest collapses to one stack word and bounded finite control.
+
+## 6. One-connector precursor versus true residual stack
+
+`T-0022` and `L-0020`--`L-0021` establish a valid **one-connector precursor**. A 128-step dyadic stage preserves a growing prefix and expands the immediate high-tail height.
+
+However the next connector must also be parsed. If consecutive connector tiles are \((\eta_n,\theta_n)\), the true residual satisfies
+
+\[
+\boxed{
+ z_{n+1}
+=
+\frac{3^{G_n}z_n+	heta_n-\eta_{n+1}}
+{2^{K_{n+2}}}.
+}
+\]
+
+The relevant slope is therefore
+
+\[
+\frac{3^{G_n}}{2^{K_{n+2}}},
+\]
+
+not \(3^{G_n}/2^{K_{n+1}}\).
+
+`T-0023` proves that the 128-step lane eventually contracts this true residual. The corrected lane uses
+
+\[
+H(t)=\lfloor\log_2t\rfloor-r-7,
+\]
+
+\[
+\Delta(t)=2^{\lfloor\log_2t\rfloor-8}.
+\]
+
+For all sufficiently large heights,
+
+\[
+3^{G_n}>2^{K_{n+2}},
+\]
+
+so the residual-stack slope is greater than one.
+
+## 7. Exact 256-step stage
+
+`L-0024` writes the corrected schedule as
+
+\[
+t_{m,j}=2^m+j2^{m-8},
+\qquad0\le j\le256.
+\]
+
+One stage consists of exactly 256 equal counter jumps, followed by scale doubling:
+
+\[
+t_{m,256}=t_{m+1,0}.
+\]
 
 With
 
 \[
-R_0(x)=\lfloor x/2\rfloor,
+H_m=m-r-7,
+\]
+
+the exact odometer law is
+
+\[
+\boxed{
+\nu_2(\omega_{m,j}-\omega_{m,0})
+=H_m+\nu_2(j).
+}
+\]
+
+The control state is therefore finite: an eight-bit binary odometer over one slowly growing immutable low prefix.
+
+## 8. Periodic frontier and quadratic moving bulk
+
+At dyadic stage boundaries, the four normalized connector frontiers converge to the explicit rational 2-adic values
+
+\[
+\frac{19}{243},
+\quad
+\frac{38}{81},
+\quad
+\frac{76}{243},
+\quad
+\frac{638}{729}.
+\]
+
+Their connector-prefix streams have exact periods
+
+\[
+162,\ 54,\ 162,\ 486.
+\]
+
+Thus the stable frontier is finite-state periodic.
+
+`L-0023` isolates the remaining moving bulk. Put
+
+\[
+y_m=3^{-7\,2^m},
 \qquad
-R_1(x)=\lceil3x/2\rceil,
+u_m=rac{y_m-1}{2^{m+2}}.
 \]
 
-the identity \(R_0(x)+R_1(x)=2x\) has a finite two-child ordered-particle
-rewrite. Uniform descendants realize the phase-escape measure.
-
-One distinguished child has rank exactly \(T(j)\), so a finite marked root
-generates the ordinary shortcut-Collatz trajectory as a marked spine.
-
-### T-0019 — marked versus unmarked likelihood
-
-For an ordinary trajectory \(n_t\) with parity prefix \(w_L\),
-
-\[
-\mathbb Q_{n_0+1}([w_L])
-=
-\frac{n_L}{2^Ln_0}.
-\]
-
-The branch population gains the factor \(n_L\), but the one fully marked
-descendant of the specified root has mass only
-
-\[
-\frac1{2^Ln_0}.
-\]
-
-Positive unmarked escape pressure therefore does not establish an accepted
-ordinary spine.
-
-# Literature review incorporated
-
-The branch
-
-```text
-agent/gpt56-pro-03/4-literature-audit
-```
-
-and draft PR #13 were inspected before the present continuation.
-
-## What is standard infrastructure
-
-The imported suite identifies as standard and reusable:
-
-- subsequential/rational images of regular languages;
-- exact closure of one fixed DFA by finite reachability;
-- greatest safe kernels of finite relations;
-- short canonical witness bounds;
-- rational-base address identities;
-- positive cycle-mean phase potentials;
-- clopen-cover obstructions;
-- finite-state tilted transfer bounds;
-- compact graph-directed attractors.
-
-The live review's central advice for PR #3 is:
-
-> Treat graph expansion as solved infrastructure. Concentrate on an exact
-> arithmetic selector, an invariant survivor set, one ordinary quotient, and
-> exact block replay.
-
-A compact attractor or compatible completion path remains insufficient because
-it may contain no ordinary integer.
-
-## Neighboring exact tool
-
-PR #12 supplies a large exact regular-sanctuary laboratory:
-
-- canonical LSD-first finite-word semantics;
-- the exact shortcut subsequential transducer;
-- product-graph closure and concrete witnesses;
-- maximal safe accepting-state kernels;
-- short canonical witnesses;
-- certificate checking independent of synthesis.
-
-The present session proves precisely when the marked-particle route belongs to
-that existing program.
-
-# New session: regular-collapse boundary
-
-## L-0015 — regular interval and marker projection
-
-Encode finite endpoints synchronously in LSD-first binary. For a regular
-endpoint-pair language \(G\), define
-
-\[
-\operatorname{Len}(G)
-=
-\{\operatorname{bin}_{\rm LSD}(q-v):
-\operatorname{conv}(v,q)\in G\}.
-\]
-
-Then
-
-\[
-\boxed{\operatorname{Len}(G)\text{ is effectively regular}.}
-\]
-
-The proof uses the two-state binary addition relation
-
-\[
-v_i+n_i+c_i=q_i+2c_{i+1},
-\]
-
-regular projection, right quotient by \(0^*\), and canonical intersection.
-
-Fixed and diagonal interval gauges preserve regularity. Regular
-population/marker configuration languages have regular marked-rank
-projections.
-
-## T-0020 — finite-phase regular block collapse
-
-Let finitely many regular phase languages \(L_i\) be covered by regular edge
-domains \(D_e\), with fixed block lengths \(b_e\), and suppose
-
-\[
-T^{b_e}(D_e)\subseteq L_{\tau(e)}.
-\]
-
-If the phase languages are nonempty and avoid \(1,2\), then
+Then \(u_m\) is an odd 2-adic unit and satisfies the exact quadratic recurrence
 
 \[
 \boxed{
-K=
-\bigcup_e\bigcup_{0\le k<b_e}T^k(D_e)
+ u_{m+1}
+=u_m+2^{m+1}u_m^2.
 }
 \]
 
-is a nonempty one-step regular sanctuary.
+The full boundary stack therefore has three tracks:
 
-Conversely every regular sanctuary is a one-phase instance.
+1. a periodic rational frontier;
+2. an eight-bit odometer;
+3. one quadratic Hensel bulk word.
 
-Therefore:
+The recurrence computes the next bulk at every precision already known. It does not by itself generate missing higher bits.
+
+## 9. Exact cycle-margin certificates
+
+`L-0025` proves without decimal approximations that
 
 \[
 \boxed{
-\text{finite phases + regular domains + fixed finite blocks}
-\iff
-\text{regular sanctuary}
+\frac5{53}
+<
+7\log_2 3-11
+<
+\frac4{41}.
 }
 \]
 
-at the level of existence.
+The proof uses the integer inequalities
 
-### Marked-grammar consequence
+\[
+3^{53}>2^{84},
+\qquad
+3^{41}<2^{65}.
+\]
 
-A finite-phase regular marked interval, marked particle, carry-phase, or
-negative-target grammar with rational marker extraction and fixed exact block
-replay compiles effectively to the regular-sanctuary class of PR #12.
+These certify simultaneously:
 
-Finite endpoint decoration and finite phase labels may simplify a certificate,
-but they do not enlarge its existential power.
+- the one-connector 128-step gain;
+- the corrected two-connector 256-step gain;
+- the eventual failure of the 128-step residual budget.
 
-## X-0011 — exact compilation bridge
+## 10. Full-stage information surplus
 
-The standard-library-only experiment implements:
+For one full corrected 256-transition stage, `T-0024` computes the aggregate residual slope exactly. If \(B=2^m\), then
 
-- endpoint-pair DFAs;
-- exact difference projection with one carry bit;
-- high-zero removal by right quotient;
-- canonical determinization;
-- the exact shortcut transducer;
-- concrete closure witnesses;
-- maximal safe-state kernels.
+\[
+\log_2\Lambda_m
+=
+\Gamma B+O(1),
+\]
 
-It verifies random finite endpoint languages, multiple gauges, the infinite
-fixed-gauge all-positive control, exact closure, semantic emptiness of the safe
-kernel, and fixed-block normalization.
+with
 
-# Strategic correction
+\[
+\Gamma\approx14.2888644
+\]
 
-The previous broad target included finite-state, substitutional, and pushdown
-marked-particle grammars. `T-0020` separates them.
+and rigorous lower bound
 
-A **regular finite-state** marked grammar is already the PR #12 problem. A
-finite graph of fixed macro-blocks is also already the PR #12 problem.
+\[
+\Gamma>
+\frac{191801}{13568}.
+\]
 
-The route becomes genuinely new only with at least one unbounded or nonregular
-ingredient:
+The increase in connector precision from one scale to the next is exactly
 
-1. a pushdown stack;
-2. an unbounded cycle-padding or valuation counter;
-3. variable block lengths not reducible to finite phases;
-4. a nonregular arithmetic survivor;
-5. a non-rational marker/configuration coupling.
+\[
+\frac{2827}{256}B
+\approx11.043B.
+\]
 
-This prevents duplicate search under interval, particle, phase, carry, and
-regular-language notation.
+After paying this entire cost, the rigorous surplus coefficient is still greater than
+
+\[
+\frac{20985}{6784}>3.
+\]
+
+Hence one full late stage has exponentially more residual bit-length than the next connector-precision increase consumes.
+
+This removes information supply as the principal scarcity. Large bit-length does not, however, imply the correct low bits.
+
+# Exact computation
+
+`X-0012` independently checks:
+
+- all four tower-core periods;
+- binary-to-ternary tail replacement;
+- 1,024 canonical connector families and direct two-block replay;
+- Hensel prefix preservation and inverse-order obstruction;
+- rational frontier periods and fingerprints;
+- quadratic bulk recurrence;
+- the 128-step precursor and its residual failure;
+- the corrected 256-step stage and positive residual slopes;
+- the exact stage sums and information-surplus bounds.
+
+The two scripts use exact Python integers, fractions, and the standard library only.
 
 # Central unresolved step
 
-The strongest current target is a **counter-stack marked sanctuary**.
+The project still lacks a **finite-boundary regeneration theorem**.
 
-Use a state of the form
+The strongest current state format is
 
 \[
-(i,t,\rho,n),
+\boxed{
+(i,m,j,W,z,n),
+}
 \]
 
 where:
 
-- \(i\) is finite negative-phase control;
-- \(t\ge0\) is an unbounded cycle-padding counter;
-- \(\rho\) is a finite low-order residue obligation;
-- \(n\) is one explicitly marked ordinary positive integer.
+- \(i\) is one of finitely many tower/mismatch types;
+- \(m\) is the unbounded dyadic scale;
+- \(j\in\{0,\ldots,255\}\) is the finite odometer state;
+- \(W\) is the finite inverse-prefix/quadratic-bulk stack;
+- \(z\) is the ordinary residual high tail;
+- \(n\) is one explicitly marked ordinary Collatz integer.
 
-A certified transition should have the form
+The missing theorem must prove one 256-transition stage macro that:
 
-\[
-(i,t,\rho,n)
-\longmapsto
-(j,t+\Delta_e,\rho',T^{b_e(t)}(n))
-\]
+1. routes every exact connector cylinder;
+2. updates \(W\) by the quadratic Hensel law and appends new correct bits;
+3. keeps the residual recurrence integral and above its growth threshold;
+4. transports the marked integer through the deterministic Collatz blocks;
+5. returns the same finite syntactic tracks at scale \(m+1\);
+6. starts from one finite ordinary state.
 
-and prove:
+The stage has enough growth and information capacity. Exact low-bit routing and ordinary initialization are now the sole load-bearing obstruction.
 
-1. exact cylinder selection;
-2. stack/counter nonnegativity;
-3. closure of the residue obligation;
-4. positive graph-cycle growth above an explicit threshold;
-5. one finite initial marked configuration;
-6. no substitution of a \(2\)-adic inverse-limit path for the marker.
+## Immediate priorities
 
-This class is not compiled away by `T-0020` because the block length and residue
-obligation depend on unbounded memory.
-
-# Immediate priorities
-
-1. **Padding-counter transition law.** Derive the exact next valuation and odd
-   quotient after a cycle-padded mismatch, retaining a free high quotient.
-2. **Residue automaton over a unary counter.** Prove periodic dependence of the
-   low-order obligation on the padding height and encode it in finite control.
-3. **Counter update synthesis.** Seek edges with
-   \(t'\ge t-\!C\), preferably \(t'=t+\Delta\), and positive full-cycle growth.
-4. **Marked interoperability.** Keep the ordinary particle marker explicit and
-   replay every macro-edge through the distinguished child of `T-0018`.
-5. **Regular controls.** Compile every finite-state approximation through
-   `L-0015` and submit it to PR #12 rather than maintaining a duplicate verifier.
-6. **Independent audit.** Reconstruct `L-0015`, `T-0020`, and `X-0011`,
-   especially high-zero canonicalization and terminal-cycle exclusion.
+1. **Stage router.** Convert the 256 exact connector tiles into one proof-producing stack transducer.
+2. **Precision spending.** Use part of the stage surplus to compute one longer quadratic-bulk prefix.
+3. **Residual congruence.** Prove an invariant ordinary cylinder for the exact \(z\)-recurrence.
+4. **Marked replay.** Carry one explicit ordinary marker through every tower block.
+5. **Bounded controls.** Compile every finite truncation through `T-0020` and PR #12; only the symbolic all-height proof counts as new progress.
+6. **Independent audit.** Reconstruct `L-0016`--`L-0025`, `T-0021`--`T-0024`, `O-0009`, and `X-0012`, paying special attention to the 128-versus-256 correction.
