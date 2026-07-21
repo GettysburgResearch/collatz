@@ -578,3 +578,264 @@ exactly as stated above; the finite search found no counterexample to any sub-cl
 ---
 
 *Signed: fable-02-p3, 2026-07-21.*
+
+---
+
+## Verification note (fable-02-v3, 2026-07-21)
+
+Independent adversarial review per README §13, performed without relying on the author's
+confidence, script, or intermediate calculations. **Verdict: PASS.** Status upgraded
+PROPOSED → PROVED (not INDEPENDENTLY_VERIFIED — that requires a further reviewer per
+project rules; this note records one full independent reconstruction plus one independent
+computational refutation attempt by the same reviewing agent).
+
+### What was reconstructed from scratch
+
+- **L-9903.1.** Re-derived the induction in cleared-denominator form. Base $k=0$ uses only
+  $a_0 = 0$ (empty sum) and $\rho_0 = 0$. Both parity cases of the step check: for $v=1$,
+  $2^{k+1}T^{k+1}(n) = 2^k(3m+1) = 3(3^a n + \rho) + 2^k = 3^{a+1}n + (3\rho + 2^k)$,
+  matching $a_{k+1} = a+1$, $\rho_{k+1} = 3\rho + 2^k$. Sound.
+- **L-9903.2.** Re-derived the append-induction: appending $w_k$ raises every earlier
+  $s_i$ by exactly $w_k$ (matching the factor $3^{w_k}$ applied to the whole sum) and the
+  new $i = k$ term has $s_k = 0$, contributing $w_k 2^k$. The prefix-consistency
+  observation ($r_0,\dots,r_k$ identical for $w$ and its prefix $w'$) is correct since
+  $r_{i+1}$ consults only $w_0,\dots,w_i$. The telescoping
+  $s_i = a_k - a_{i+1}$ checks directly from D-9906. Sound.
+- **L-9903.3(ii) adjacent-swap lemma — the flagged riskiest step — reconstructed
+  completely independently.** With $w_p = 0$, $w_{p+1} = 1$, $w'$ the swap, and
+  $s := \#\{j > p+1 : w_j = 1\}$, I partitioned the closed-form sum into four classes and
+  verified each:
+  (a) terms at $q < p$: $s_q$ counts ones at positions $> q$, and the swap preserves the
+  multiset of entries on $\{p, p+1\}$ (exactly one $1$ before and after), so
+  $s_q(w') = s_q(w)$ — the author's invariance claim is correct;
+  (b) terms at $q > p+1$: untouched entries, invariant;
+  (c) the moved one: $s_{p+1}(w) = s$, and $s_p(w') = [\,w'_{p+1} = 1\,] + s = 0 + s = s$
+  because the vacated position $p+1$ holds a $0$ in $w'$ — the flagged identity
+  $s_{p+1}(w) = s_p(w')$ holds with no off-by-one; the term changes
+  $3^s 2^{p+1} \to 3^s 2^p$;
+  (d) positions $p$ (in $w$) and $p+1$ (in $w'$) carry zeros, contributing nothing.
+  Net: $\rho(w') - \rho(w) = -3^s 2^p$, exactly the claimed sign and magnitude. Hand
+  checks: $w = (0,1)$: $2 \to 1 = 2 - 3^0 2^0$; $w = (0,1,1)$: $10 \to 7 = 10 - 3^1 2^0$.
+- **L-9903.3(iii).** The "no $01$ factor $\Rightarrow$ ones-first" structure step
+  re-derived: no-$01$ means $w_p = 0 \Rightarrow w_{p+1} = 0$, so the zero positions form
+  an upward-closed set, forcing $1^a 0^{k-a}$; dual argument for no-$10$. Termination
+  re-derived via the moment $\mu(w) = \sum_{w_i = 1} i$: each $01 \to 10$ swap decreases
+  $\mu$ by exactly $1$ and $\mu \ge 0$, so sorting terminates (dually $\mu \le (k-1)a$
+  bounds the increasing direction; the author's cruder bound $\mu \le ka$ also suffices).
+  Strict monotonicity of $\rho$ along a nonempty terminating chain gives both bounds and
+  the uniqueness of both extremizers. The geometric evaluations
+  $\rho(1^a 0^{k-a}) = 3^a - 2^a$ and $\rho(0^{k-a}1^a) = 2^{k-a}(3^a - 2^a)$ re-derived
+  by telescoping $(3-2)\sum_{i=0}^{a-1} 3^{a-1-i}2^i$. Sound. (Minor observation, no fix
+  needed: the parenthetical "since $\mu$ on $W_{k,a}$ is maximized there" in the Maximum
+  paragraph is asserted without proof, but the alternative bound the author supplies in
+  the same sentence is trivially true and suffices for termination.)
+- **L-9903.4.** Both bounds re-derived from .1 + .3; the collapse
+  $2^{k-a}(3^a - 2^a)/2^k = (3/2)^a - 1$ is $k$-free as claimed; the $a = 0$ case of the
+  sharper lower bound is the trivial $0 \le \rho$.
+- **L-9903.5.** Both directions re-derived from the cleared identity
+  $2^K T^K(n) = 3^{a}n + \rho$ (forward: substitute $T^K(n) = n$; backward: the equation
+  forces $2^K T^K(n) = 2^K n$, and multiplication by $2^K$ is injective). The side remarks
+  check: $2^K = 3^a$ is impossible for $K \ge 1$; $\rho > 0$ with $n \ge 1$ forces
+  $2^K > 3^a$, i.e. $a < \gamma K$. Note (not a defect): the equivalence also holds
+  vacuously at $K = 0$ (both sides identities), so the $K \ge 1$ restriction is safe.
+- **R-9903-A.** Re-derived: subtracting the two cleared identities for $m \equiv n \pmod{2^{k+1}}$
+  (same word by inductive hypothesis, hence same $a, \rho$ by .2) gives
+  $T^k(m) - T^k(n) = 3^a(m-n)/2^k = 3^a \cdot 2t$, even, so $v_k$ agrees; the injectivity
+  branch gives $3^a(2t+1)$, odd. Cardinality closes the bijection. Circularity check:
+  R-9903-A uses .1/.2 only, and .1–.5 never use R-9903-A — confirmed by rereading each
+  proof.
+- **Edge cases checked:** $k = 0$ in every sub-claim; $a = 0$ and $a = k$ in .3/.4 (bounds
+  coincide at $3^k - 2^k$ when $a = k$; the $a \ge 1$ bound formulas even remain true at
+  $a = 0$, reading $0 \le \rho \le 0$); length-1 words ($W_{1,1} = \{(1)\}$,
+  $\rho = 1 = 3 - 2$); the swap machinery is vacuous for $k \le 1$ exactly as the Gap
+  audit says.
+
+### Independent computational refutation attempt (finite verification, not proof)
+
+Script written from the statements alone (independent structure from the author's), exact
+integer arithmetic only:
+`/tmp/claude-0/-home-user-collatz/114bdecf-6016-53ed-8de1-7dbb35adc114/scratchpad/refute_L9903_v3.py`.
+Reproduced in full:
+
+```python
+#!/usr/bin/env python3
+# Independent adversarial refutation attempt for L-9903.
+# Verifier: fable-02-v3, 2026-07-21. Written from the claim statements alone,
+# NOT from the author's script. Exact integer arithmetic only (no floats).
+
+from itertools import product
+
+def T(n):
+    return n // 2 if n % 2 == 0 else (3 * n + 1) // 2
+
+def rho_rec(w):
+    r = 0
+    for i, b in enumerate(w):
+        r = (3 ** b) * r + b * (2 ** i)
+    return r
+
+def rho_closed(w):
+    k = len(w)
+    return sum((3 ** sum(w[i + 1:])) * (2 ** i) for i in range(k) if w[i] == 1)
+
+def word_of(n, k):
+    w, m = [], n
+    for _ in range(k):
+        w.append(m & 1)
+        m = T(m)
+    return tuple(w)
+
+# ---------------- A: word level, |w| <= 15 ----------------
+LMAX = 15
+n_words = n_swaps = 0
+for k in range(LMAX + 1):
+    tables = {}
+    for w in product((0, 1), repeat=k):
+        r = rho_rec(w)
+        assert r == rho_closed(w), ("closed form", w)
+        tables.setdefault(sum(w), {})[w] = r
+        n_words += 1
+        for p in range(k - 1):
+            if w[p] == 0 and w[p + 1] == 1:            # 01 factor at p
+                wl = list(w); wl[p], wl[p + 1] = 1, 0
+                s = sum(w[p + 2:])
+                assert rho_rec(tuple(wl)) == r - (3 ** s) * (2 ** p), ("swap", w, p)
+                n_swaps += 1
+        if all(not (w[p] == 0 and w[p + 1] == 1) for p in range(k - 1)):
+            a = sum(w)
+            assert w == (1,) * a + (0,) * (k - a), ("01-free structure", w)
+        if all(not (w[p] == 1 and w[p + 1] == 0) for p in range(k - 1)):
+            a = sum(w)
+            assert w == (0,) * (k - a) + (1,) * a, ("10-free structure", w)
+    for a, tab in tables.items():
+        if a == 0:
+            assert set(tab.values()) == {0}, (k, a)
+            continue
+        lo = 3 ** a - 2 ** a
+        hi = (2 ** (k - a)) * lo
+        vals = tab.values()
+        assert min(vals) == lo and max(vals) == hi, ("bounds", k, a)
+        assert [w for w, r in tab.items() if r == lo] == [(1,) * a + (0,) * (k - a)], ("argmin", k, a)
+        assert [w for w, r in tab.items() if r == hi] == [(0,) * (k - a) + (1,) * a], ("argmax", k, a)
+print(f"A: {n_words} words (|w| <= {LMAX}): recursion==closed form; bounds+unique "
+      f"extremizers per (k,a); swap lemma exact on {n_swaps} '01' factors; structure lemma.")
+
+# ---------------- B: integer level, n <= 5000, k <= 50 ----------------
+NMAX, KMAX = 5000, 50
+fixed_pairs = []
+near_miss = None
+pairs = 0
+for n in range(1, NMAX + 1):
+    m, a, rho = n, 0, 0
+    w = []
+    for k in range(KMAX + 1):
+        assert (2 ** k) * m == (3 ** a) * n + rho, ("L1", n, k)          # L-9903.1
+        assert rho == rho_closed(tuple(w)), ("L2", n, k)                 # L-9903.2
+        assert (rho == 0) == (a == 0), ("L3 zero", n, k)                 # L-9903.3
+        assert rho >= 3 ** a - 2 ** a, ("L3 lower", n, k)
+        assert rho * (2 ** a) <= (2 ** k) * (3 ** a - 2 ** a), ("L3 upper", n, k)
+        # L-9903.4 cleared forms (plain lower, sharper lower, upper)
+        assert (3 ** a) * n <= (2 ** k) * m, ("L4 low", n, k)
+        assert (3 ** a) * n + (3 ** a - 2 ** a) <= (2 ** k) * m, ("L4 low sharp", n, k)
+        assert (2 ** a) * (2 ** k) * m <= (2 ** a) * (3 ** a) * n + (2 ** k) * (3 ** a - 2 ** a), ("L4 up", n, k)
+        if k >= 1:                                                       # L-9903.5 iff
+            lhs_eq = (m == n)
+            rhs_eq = (n * (2 ** k - 3 ** a) == rho)
+            assert lhs_eq == rhs_eq, ("L5", n, k)
+            if lhs_eq:
+                fixed_pairs.append((n, k))
+            elif a >= 1:
+                gap = abs(n * (2 ** k - 3 ** a) - rho)
+                if near_miss is None or gap < near_miss[0]:
+                    near_miss = (gap, n, k)
+        pairs += 1
+        v = m & 1
+        w.append(v)
+        rho = (3 ** v) * rho + v * (2 ** k)
+        a += v
+        m = T(m)
+print(f"B: L-9903.1/.2/.3/.4/.5 hold on all {pairs} pairs (n <= {NMAX}, k <= {KMAX}).")
+assert all(n in (1, 2) and k % 2 == 0 for (n, k) in fixed_pairs)
+assert {n for n, _ in fixed_pairs} == {1, 2}
+print(f"   T^K(n)=n census: {len(fixed_pairs)} pairs, all with n in {{1,2}} and K even "
+      f"(trivial T-cycle), each satisfying n(2^K-3^a)=rho; smallest near-miss margin "
+      f"|n(2^K-3^a)-rho| among non-returns with a>=1: {near_miss[0]} at (n,K)=({near_miss[1]},{near_miss[2]}).")
+
+# ---------------- C: Terras bijection, k <= 15 ----------------
+for k in range(LMAX + 1):
+    seen = {}
+    for n in range(1, 2 ** k + 1):
+        wn = word_of(n, k)
+        assert wn not in seen, ("injectivity", k, n, seen[wn])
+        seen[wn] = n
+    assert len(seen) == 2 ** k, ("surjectivity", k)
+print(f"C: residue-word map {{1..2^k}} -> {{0,1}}^k is a bijection for every k <= {LMAX}.")
+
+# ---------------- D: envelope tightness on realizers ----------------
+for k in range(1, 13):
+    inv = {word_of(n, k): n for n in range(1, 2 ** k + 1)}
+    for a in range(1, k + 1):
+        n_hi = inv[(0,) * (k - a) + (1,) * a]
+        n_lo = inv[(1,) * a + (0,) * (k - a)]
+        r_hi = rho_rec(word_of(n_hi, k))
+        r_lo = rho_rec(word_of(n_lo, k))
+        assert r_hi * (2 ** a) == (2 ** k) * (3 ** a - 2 ** a), (k, a)   # error exactly (3/2)^a - 1
+        assert r_lo == 3 ** a - 2 ** a, (k, a)
+print("D: on integer realizers of 0^{k-a}1^a and 1^a0^{k-a} (k <= 12) the envelope's "
+      "additive error is exactly (3/2)^a - 1 resp. (3^a-2^a)/2^k: both bounds attained.")
+
+# ---------------- E: explicit trivial-cycle checks ----------------
+for (n, K, expect) in [(1, 2, True), (2, 2, True), (1, 1, False), (2, 1, False),
+                       (1, 4, True), (2, 6, True), (1, 3, False)]:
+    m, a, rho = n, 0, 0
+    for k in range(K):
+        v = m & 1
+        rho = (3 ** v) * rho + v * (2 ** k)
+        a += v
+        m = T(m)
+    assert (m == n) == expect == (n * (2 ** K - 3 ** a) == rho), (n, K)
+print("E: L-9903.5 both directions confirmed explicitly on n in {1,2}, K in {1,...,6}.")
+
+print("ALL CHECKS PASSED — no counterexample to any sub-claim of L-9903 found.")
+```
+
+Output (run 2026-07-21, python3, Linux, ~4.7 s):
+
+```text
+A: 65535 words (|w| <= 15): recursion==closed form; bounds+unique extremizers per (k,a); swap lemma exact on 212993 '01' factors; structure lemma.
+B: L-9903.1/.2/.3/.4/.5 hold on all 255000 pairs (n <= 5000, k <= 50).
+   T^K(n)=n census: 50 pairs, all with n in {1,2} and K even (trivial T-cycle), each satisfying n(2^K-3^a)=rho; smallest near-miss margin |n(2^K-3^a)-rho| among non-returns with a>=1: 2 at (n,K)=(1,1).
+C: residue-word map {1..2^k} -> {0,1}^k is a bijection for every k <= 15.
+D: on integer realizers of 0^{k-a}1^a and 1^a0^{k-a} (k <= 12) the envelope's additive error is exactly (3/2)^a - 1 resp. (3^a-2^a)/2^k: both bounds attained.
+E: L-9903.5 both directions confirmed explicitly on n in {1,2}, K in {1,...,6}.
+ALL CHECKS PASSED — no counterexample to any sub-claim of L-9903 found.
+```
+
+Coverage beyond the author's tests: words to length 15 (author: 14); the swap lemma's
+exact difference $-3^s 2^p$ tested individually at every "$01$" factor of every word
+(212,993 instances — the author only tested its corollary, the min/max); the structure
+lemma ("$01$-free $\Rightarrow$ ones-first" and dual) tested directly; $n \le 5000$,
+$k \le 50$ (author: 3000/40); the sharper lower bound of .4 tested in cleared form; a
+census confirming the only returns $T^K(n) = n$ in range are the trivial-cycle elements
+$\{1, 2\}$ at even $K$, each satisfying the .5 Diophantine equation, with the nearest
+miss among non-returns at margin 2.
+
+### Fixes made (cosmetic only)
+
+1. Two phrases referring to the author's out-of-repo authoring context ("the task
+   statement" in L-9903.4's proof; "as stated in the task" in Adversarial tests) were
+   reworded to refer to this file's Statement, per README §17.3 (no reliance on
+   inaccessible context). No mathematical content changed.
+2. Header: Status PROPOSED → PROVED; reviewer recorded.
+
+### Residual caveats
+
+- No mathematical gaps found; the first-unsupported-inference search came up empty. The
+  only proof-side observation is the unproved (but unneeded) parenthetical noted above in
+  L-9903.3(iii) Maximum.
+- All computational checks are finite verification, never proof; the universal statements
+  rest on the symbolic proofs, which I reconstructed in full.
+- Per project rules this single review supports PROVED only; a second independent agent
+  would be needed for INDEPENDENTLY_VERIFIED.
+
+*Signed: fable-02-v3, 2026-07-21.*
