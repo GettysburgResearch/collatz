@@ -3,7 +3,7 @@
 Last updated: 2026-07-21  
 Maintainer for this revision: `gpt56-pro-01`
 
-This file fixes the conventions used by the active collision-rewrite and negative-renewal packet. Later work should state explicitly when it departs from them.
+This file fixes the conventions used by the active collision-rewrite, negative-renewal, interval, and marked-particle packet. Later work should state explicitly when it departs from them.
 
 ## Shortcut Collatz map
 
@@ -303,6 +303,140 @@ v'=\frac{3^ev+(2p-1)r}{2}.
 
 If \(q\) is even, \(v'=P(v)\) and the orbit shadows the negative phase. If \(q\) is odd, \(v'=C(v)\) and a mismatch occurs.
 
+## Rounded physical-parity phase maps
+
+Using physical parity
+
+\[
+e=n\bmod2,
+\]
+
+the lower phase follows
+
+\[
+S_0(v)=\left\lceil\frac v2\right\rceil,
+\qquad
+S_1(v)=\left\lfloor\frac{3v}{2}\right\rfloor.
+\]
+
+They satisfy
+
+\[
+S_0(v)+S_1(v)=2v.
+\]
+
+For a word \(w=e_0\cdots e_{L-1}\), write
+
+\[
+S_w=S_{e_{L-1}}\circ\cdots\circ S_{e_0}.
+\]
+
+The escape-transform cylinder weight is
+
+\[
+\mathbb Q_v([w])
+=2^{-|w|}\frac{S_w(v)-1}{v-1}
+\qquad(v>1).
+\]
+
+## Finite interval gauge
+
+Represent a positive physical state \(n\) by a finite interval
+
+\[
+I=[v,q),
+\qquad q-v=n,
+\qquad v\ge1.
+\]
+
+For even length,
+
+\[
+\mathcal R_0([v,q))
+=
+[\lceil v/2\rceil,\lceil q/2\rceil).
+\]
+
+For odd length,
+
+\[
+\mathcal R_1([v,q))
+=
+[\lfloor3v/2\rfloor,\lceil3q/2\rceil).
+\]
+
+The new interval length is exactly \(T(n)\).
+
+Two canonical gauges are:
+
+- fixed lower endpoint: \(v=1,\ q=n+1\);
+- diagonal: \(v=n+1,\ q=2n+1\).
+
+In the diagonal gauge, \(v-1=n\).
+
+## Ordered particle completion
+
+Put
+
+\[
+x=v-1.
+\]
+
+Define branch population maps
+
+\[
+R_0(x)=\left\lfloor\frac x2\right\rfloor,
+\qquad
+R_1(x)=\left\lceil\frac{3x}{2}\right\rceil.
+\]
+
+For an ordered root population
+
+\[
+[x]=\{1,\ldots,x\},
+\]
+
+each parent has two children:
+
+\[
+2k\longmapsto(0,k),(1,3k),
+\]
+
+\[
+2k-1\longmapsto(1,3k-2),(1,3k-1).
+\]
+
+The branch-\(e\) children form exactly \([R_e(x)]\). After \(L\) levels there are \(2^Lx\) descendants in total.
+
+A uniformly selected descendant has branch-word law
+
+\[
+\frac{R_w(x)}{2^{|w|}x}
+=
+\mathbb Q_{x+1}([w]).
+\]
+
+## Distinguished ordinary spine
+
+One child of each particle is marked as physical:
+
+\[
+\chi(j)=
+\begin{cases}
+(0,j/2),&j\text{ even},\\[1mm]
+(1,(3j+1)/2),&j\text{ odd}.
+\end{cases}
+\]
+
+Its rank is \(T(j)\). Iterating \(\chi\) from one finite root particle gives the ordinary shortcut-Collatz trajectory of that root.
+
+Terminology:
+
+- **escape path:** an unmarked branch of the phase/population tree;
+- **ordinary spine:** a marked finite-root lineage following \(\chi\).
+
+The terms must not be interchanged.
+
 ## Valuation and cycle-padding notation
 
 The ordinary binary valuation is
@@ -335,7 +469,7 @@ a_t=a_0+ta,
 
 ## Prefix-code and pressure notation
 
-For a finite or countable binary prefix code \(\mathcal W\), the fair cylinder mass of \(w\) is
+For a finite or countable binary prefix code \(\mathcal W\), the fair cylinder mass is
 
 \[
 \mu_{1/2}([w])=2^{-|w|}.
@@ -363,7 +497,7 @@ For graph edges \(e:i\to j\), define pressure matrices
 \sum_{e:i\to j}2^{-L_e}\lambda_e^s.
 \]
 
-`A_0` measures fair 2-adic coverage. `A_1` measures tilted Collatz mass.
+\(\mathcal A_0\) measures fair 2-adic coverage. \(\mathcal A_1\) measures tilted Collatz mass.
 
 ## Real and 2-adic conventions
 
@@ -379,7 +513,8 @@ The same formal digit series may be interpreted in \(\mathbb Q_2\) and in \(\mat
 For a signed stationary return chain, the normalized aspect ratio is
 
 \[
-\Delta=rac{\operatorname{diam}A}{N-M}.
+\Delta=
+\frac{\operatorname{diam}A}{N-M}.
 \]
 
 ## Finite words versus adic objects
@@ -396,4 +531,5 @@ No candidate may be promoted unless it proves:
 4. integrality and positivity at every boundary;
 5. an infinite selector or grammar defined forever;
 6. justified net growth on every reachable grammar cycle;
-7. unboundedness or permanent avoidance of the terminal cycle.
+7. preservation of the distinguished ordinary spine;
+8. unboundedness or permanent avoidance of the terminal cycle.
