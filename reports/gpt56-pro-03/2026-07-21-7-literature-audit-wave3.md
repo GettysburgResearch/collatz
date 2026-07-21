@@ -54,7 +54,25 @@ Added:
 - `LIT-KTHM-0030`;
 - `padic-logarithm-stage-bulk.md`.
 
-### 3. H ghosts as a separated countable IFS
+### 3. Symbolic embedding route for PR #3's information surplus
+
+`PR3/T-0024` proves a positive exponential bit surplus but does not route the low bits. Krieger's embedding theorem and MacDonald's zero-error sliding-block extension give a precise next reduction:
+
+```text
+normalize legal stage transitions into a stationary mixing SFT
++ prove entropy and periodic-point compatibility
++ preserve the required visible output
+=> finite-memory symbolic router.
+```
+
+Arithmetic legality and one ordinary marked initialization remain separate native obligations.
+
+Added:
+
+- `LIT-KTHM-0033`;
+- `entropy-surplus-symbolic-router.md`.
+
+### 4. H ghosts as a separated countable IFS
 
 The recursive exact-cylinder map defines pairwise disjoint `2`-adic branches with contraction exponents `3r+2`. The residue count obeys
 
@@ -80,7 +98,7 @@ Added:
 
 - `LIT-KTHM-0031`.
 
-### 4. PR #16 as deterministic nonarchimedean Erdős--Kahane
+### 5. PR #16 as deterministic nonarchimedean Erdős--Kahane
 
 The all-depth EQ proof uses the classical methodological chain “large Fourier coefficient implies many near-integral phases,” but replaces generic parameter transversality by exact integral carries and an ordinary height contradiction. Existing real self-similar Fourier theorems remain non-applicable as black boxes.
 
@@ -104,7 +122,7 @@ Added:
 - `erdos-kahane-carry-rigidity.md`;
 - wave-3 claim map and live review.
 
-### 5. PR #20 and p-adic stammering methods
+### 6. PR #20 and p-adic stammering methods
 
 The repetition theorem is a specialized product-formula argument: an eventually periodic approximant has small global height but agrees to very high `2`-adic precision. Ridout and Adamczewski--Bugeaud supply the natural next literature for fractional powers and symmetric patterns, but no source is directly applicable without a native rational-base reduction.
 
@@ -112,7 +130,7 @@ Added:
 
 - `completion-height-principle.md`.
 
-### 6. PR #3's critical particle as a size-biased spine
+### 7. PR #3's critical particle as a size-biased spine
 
 The mass-conserving particle tree and Doob endpoint law are an exact deterministic spine construction. Lyons--Pemantle--Peres and Hardy--Harris supply many-to-one, martingale, entropy, and spine-change tools. They do not solve marked ordinary closure.
 
@@ -164,11 +182,12 @@ The best current claims have credible publication potential after independent re
 
 - `literature/LIVE_REPO_REVIEW_WAVE3.md`
 - `literature/SOURCE_LEDGER_WAVE3.md`
+- `literature/UNVERIFIED-WAVE3.md`
 - `literature/references-wave3.bib`
 - `literature/check_literature_wave3.py`
 - `literature/claim-maps/WAVE3.md`
-- `literature/imported-theorems/LIT-KTHM-0028-*` through `0032-*`
-- five wave-3 topic notes
+- `literature/imported-theorems/LIT-KTHM-0028-*` through `0033-*`
+- six wave-3 topic notes
 - this report
 
 ## Validation status
@@ -185,10 +204,11 @@ python3 literature/check_literature_wave3.py
 
 1. Independently reconstruct PR #16's all-depth EQ chain before further extension.
 2. Add the logarithm identification to PR #3 and redesign its bulk generator around explicit log digits.
-3. Independently prove the H IFS recurrence and replace the weaker count if it passes.
-4. Extend PR #20's exact-repeat theorem to fractional powers or symmetric patterns.
-5. Classify small finite-state Foundry operators through van der Put coefficients.
-6. Create one cross-program completion-height packet after repository consolidation.
+3. Normalize PR #3's legal stage relation and test Krieger/MacDonald router hypotheses.
+4. Independently prove the H IFS recurrence and replace the weaker count if it passes.
+5. Extend PR #20's exact-repeat theorem to fractional powers or symmetric patterns.
+6. Classify small finite-state Foundry operators through van der Put coefficients.
+7. Create one cross-program completion-height packet after repository consolidation.
 
 ## Candidate counterexamples
 
@@ -200,4 +220,5 @@ None proposed or promoted.
 - The exact valuation of the PR #3 logarithmic approximation should be independently recomputed.
 - The PR #16 chain has not received a full independent proof reconstruction.
 - Mahler's transcendence theorem identifies the completed logarithm but says nothing about digit-generation complexity.
+- The current PR #3 stage system is not yet a stationary SFT, so Krieger's theorem is only a target criterion.
 - No literature result found supplies ordinary integrality of any selected completion point.
