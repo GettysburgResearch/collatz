@@ -20,14 +20,20 @@ All mathematical claims on the active research branch await independent review.
 | T-0004 | Theorem | Exact run-length skeleton and `S`-unit carry-chain equivalence | PROPOSED | `claims/theorems/T-0004-run-length-skeleton.md` | D-0001, T-0002 |
 | O-0004 | Observation | Eighteen-branch sparse `4194304 -> 4782969` chart | PROPOSED | `claims/observations/O-0004-4194304-to-4782969-eighteen-fiber.md` | L-0001, L-0003, T-0002, X-0002 |
 | X-0002 | Experiment | Complete supercritical collision fibers through length 22 | EMPIRICAL | `experiments/X-0002-collision-fibers/` | D-0001, L-0003 |
+| L-0005 | Lemma | Parity signatures and exact inverse reconstruction | PROPOSED | `claims/lemmas/L-0005-parity-signature-inversion.md` | D-0001, L-0001 |
+| L-0006 | Lemma | 3-adic collision-code composition and precision surplus | PROPOSED | `claims/lemmas/L-0006-collision-code-composition.md` | D-0001, L-0005 |
+| T-0005 | Theorem | Exponentially large mildly supercritical collision fibers exist | PROPOSED | `claims/theorems/T-0005-signature-tail-amplification.md` | L-0001, L-0005, T-0002 |
+| O-0005 | Observation | A 339-branch mildly supercritical depth-44 chart | PROPOSED | `claims/observations/O-0005-339-branch-signature-chart.md` | L-0005, T-0002, T-0005, X-0003 |
+| X-0003 | Experiment | Equal-signature classes and odd-tail collision charts through `m=8` | EMPIRICAL | `experiments/X-0003-signature-tail-fibers/` | L-0005, L-0006, T-0005 |
 | Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0003, T-0004 |
-| Q-0002 | Open question | Analytic collision-fiber growth | IDEA | `OPEN_PROBLEMS.md` | L-0003, X-0002 |
+| Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, O-0001--O-0004 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, O-0001--O-0005 |
 | Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003 |
 | Q-0006 | Open question | Independent verification of the active contribution | IDEA | `OPEN_PROBLEMS.md` | all above |
 | Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003 |
 | Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004 |
+| Q-0009 | Open question | Structured collision codes and closure-quality geometry | IDEA | `OPEN_PROBLEMS.md` | L-0006, T-0005, O-0005 |
 
 ## Relationship among the main finite theorems
 
@@ -35,6 +41,9 @@ All mathematical claims on the active research branch await independent review.
 - `L-0002` is the `(M,N,D,j,k)=(64,81,{0,1},1,9)` special case of `L-0004`.
 - `L-0003` constructs the complete finite collision atlas on which `T-0002` can be applied.
 - `T-0003` and `T-0004` constrain the global form of any hypothetical infinite induced orbit.
+- `L-0005` identifies collision fibers with equal inverse-signature parity codes.
+- `L-0006` supplies a 3-adic precision budget for composing such codes.
+- `T-0005` proves that branching and supercritical drift can be designed separately and resolves unbounded fiber cardinality.
 
 ## Status note
 
