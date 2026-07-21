@@ -113,6 +113,7 @@ Author of record: claude-01; independent-reviewer slots open.
 | L-0016 | union-bound obstruction | No union bound over frequencies converts T-0012 into an all-K statement: summed exceptional densities diverge like `Σ(81κ₂)^m`, factor ≈ 60.6/scale; the interchange requires joint (θ,K) structure | PROPOSED | — (computation from T-0012's statement) | `EQ-INTERCHANGE.md` §1 |
 | L-0017 | (Λ) as twisted pair separation | `(Λ) ⟸ Σ_{A≠A′∈R_K} 64^K/dist ≲ 4^K`; pair differences stratify exactly as `Δ = 64^{t₀}·(81^{−t₀} mod 64^{K−t₀})·Δ′` — self-similar copies rotated by the odd unit `81^{−t₀}`; the twist is precisely where individual-orbit structure enters ((Λ) is wall-adjacent) | PROPOSED (identities; the separation bound itself remains open) | — | `EQ-INTERCHANGE.md` §9 |
 | L-0018 | room-walk transition law | Room digits of pos(A) = wrap counts of successive H-steps; exact driver `r′ ≡ (ε − A′)·64^{−(K−1)} mod 81`, twist cycling ⟨64⟩ mod 81 (period 9). EQ final form: wrap-count equidistribution of H-orbits over R_K | PROPOSED (derivation + 6144-cell exact verification) | inline (session 9 report) | `EQ-INTERCHANGE.md` §21 |
+| L-0019 | one-level contraction | Exact: `|ŵ_K(ψ)| ≤ |cos(πψ·64^{−(K−1)}/81)|·|R̂_{K−1}(64^{−(K−1)}ψ)|` (code split uniform-independent); shift always a unit, cycling the period-9 AP; 9-cycle cosine product < 1 for every ψ ≠ 0 = the per-period contraction a closed recursion would give | PROPOSED | inline (session 10) | `EQ-INTERCHANGE.md` §22 |
 
 ## Theorems
 
@@ -189,6 +190,8 @@ Q-0001 (M1) specifies exactly what an integer candidate must satisfy.
 | O-0015 | Depth-j Cantor mask: small-Z enhancement magnifies with j (~47× at j = 2, Z = 64^{0.9n}, n = 12), converges to uniform at full range as n grows (share/(2/81)²: 3.2 → 0.7 from n = 12 → 14) — fixed-point clustering with measurable decay | EMPIRICAL | `eq_cantor_classes.py` → `eq-cantor-classes.log` | `EQ-INTERCHANGE.md` §13 |
 | O-0016 | Joint-set discrepancy equals the deeper set's (D*(R_n × C_j) = D*(R_{n+j}) to all digits; joint improves both marginals 20×) — set-level cancellation in the S–Ĉ pairing | EMPIRICAL (explained by T-0028) | `eq_joint_discrepancy.py` → `eq-joint-discrepancy.log` | `EQ-INTERCHANGE.md` §16 |
 | O-0017 | Mask-6 enhancement is a bounded-count boundary effect: dies with sample growth at fixed β (0.058 → 0.023 at β = 0.95, n = 10 → 16), uniform at β = 1 by n = 11 — carried by the first ~10²–10³ survivors | EMPIRICAL | `eq_joint_discrepancy.py` | `EQ-INTERCHANGE.md` §17 |
+| O-0018 | **The tower obstruction** (exact): A mod 81 needs `(A′ + r′·64^{K−1} − ε) mod 81²` — the mod-81^j marginal is driven by 81^{j+1} data below; the walk is an inverse-limit skew product, the mirror of the M2 digit wall (dual via T-0027). EQ needs an averaged argument beating the tower, or measure-rigidity input (Q-0005) | EMPIRICAL (identity verified exactly; obstruction statement rigorous) | inline (session 10) | `EQ-INTERCHANGE.md` §23 |
+| O-0019 | The first marginal mixes: mod-81 Fourier coefficients of R_K fall 0.231 → 0.0088 (K = 8 → 16), TV 0.221 → 0.0080, ≈ CLT rate 2^{−K/2} — the walk's first marginal empirically resolved; open = joint/deep digits (the tower) | EMPIRICAL | inline (session 10) | `EQ-INTERCHANGE.md` §24 |
 
 ## Refutations
 

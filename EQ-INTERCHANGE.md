@@ -465,3 +465,56 @@ mod 81** — a skew product over a 9-periodic twist cycle driven by
 the orbit's mod-81 trace. Every prior mask funnels here; the mixing
 of this one explicit walk is the remaining content of EQ, and the
 program's residual open point in its most concrete shape yet.
+
+---
+
+# P2 deep-dive VII: the marginal tower (final push of the day)
+
+*New claims L-0019, O-0018, O-0019.*
+
+## 22. The one-level contraction identity (L-0019)
+
+Over A ∈ R_K, the code split (ε, A′) is exactly uniform-independent
+(each A′ ∈ R_{K−1} has exactly the two preimages ε ∈ {0,1}), and the
+first wrap is the affine image r ≡ (ε − A′)·u_K (mod 81),
+u_K = 64^{−(K−1)}. Hence the wrap-marginal's mod-81 Fourier
+coefficients satisfy, **exactly**:
+
+    ŵ_K(ψ) = cos(π ψ u_K / 81) · R̂_{K−1}(−u_K ψ)  ·  e(phase),
+
+|ŵ_K(ψ)| ≤ |cos(πψu_K/81)|·|R̂_{K−1}(u_K ψ)|, where R̂_n(ψ) is the
+mod-81 Fourier coefficient of the representatives of R_n. The shift
+u_K is always a unit, cycling the period-9 AP-subgroup ⟨64⟩ mod 81;
+for every ψ ≠ 0 the 9-cycle cosine product
+Π_{i<9}|cos(πψ64^{−i}/81)| is a computable constant < 1 — the
+per-period contraction a closed recursion would deliver. (Verified in
+data: TV chain 0.088 → 0.060 → 0.036 across one level's stages at
+K = 12.)
+
+## 23. The tower obstruction (O-0018), stated exactly
+
+The recursion does **not** close at modulus 81: reconstructing
+A mod 81 from the level below requires
+`(A′ + r′·64^{K−1} − ε) mod 81²` (verified exactly at K = 12, all
+elements) — the modulus-81 marginal of R_K is driven by
+modulus-81² joint data of (R_{K−1}, wrap). Inductively the walk is an
+**inverse-limit skew product**: every finite-modulus marginal is
+driven one level deeper in the 81-adic tower, with the driving data
+twisted through the AP cycle. This is the mirror image, in final
+form, of the 2-adic digit-supply wall (M2): neither tower closes at
+finite level, and each is the other's Fourier dual (T-0027). A proof
+of EQ must either (i) beat the tower with an averaged/joint argument
+whose per-level loss is smaller than the 9-cycle cosine gain of §22,
+or (ii) import genuinely new input (the Furstenberg/measure-rigidity
+interface of Q-0005 — this is where it would bite).
+
+## 24. The first marginal mixes (O-0019, EMPIRICAL)
+
+Measured across K = 8…16: max mod-81 Fourier coefficient of R_K's
+representatives falls 0.231 → 0.0088 and TV imbalance 0.221 → 0.0080,
+consistent with root-N (CLT-type) mixing ≈ 2^{−K/2}. **The walk's
+first marginal is empirically resolved** — it mixes, fast; what
+remains open is joint/deep-digit equidistribution, i.e. the tower.
+Every unconditional statement of this program now has its obstruction
+named: the tower of §23, with the contraction of §22 as the measured
+(and partially proved) force working against it.
