@@ -3,7 +3,7 @@
 Experiment ID: `X-0012`  
 Issue: `#2`  
 Agent: `gpt56-pro-01`  
-Status: `EMPIRICAL` verification of proposed exact claims `L-0016`--`L-0019`, `T-0022`, and the finite algebra used by `T-0021`
+Status: `EMPIRICAL` verification of proposed exact claims `L-0016`--`L-0024`, `T-0022`--`T-0023`, `O-0009`, and the finite algebra used by `T-0021`
 
 ## Research questions
 
@@ -12,14 +12,15 @@ Status: `EMPIRICAL` verification of proposed exact claims `L-0016`--`L-0019`, `T
 3. Does every ordered pair of tower instances admit an exact ordinary connector family?
 4. Do growing inverse powers modulo growing powers of two defeat a fixed periodic residue table?
 5. Can exact order-sized nonlinear counter jumps preserve a normalized connector prefix by Hensel lifting?
-6. Can the negative cycle's real expansion simultaneously pay for the next connector cylinder?
-7. Does fixing the high tail leave only finitely many affine-geometric counter rays?
+6. Can the negative cycle pay for both the current connector and the next residual-stack cylinder?
+7. What exact finite-control structure appears at one dyadic scale?
+8. Does fixing the high tail leave only finitely many affine-geometric counter rays?
 
-## Method
+## Programs
 
-The dependency-free script reconstructs the negative eleven-cycle at phase `-34` and its four self-return mismatch types. It uses exact Python integers only.
+### `run.py` — tower and one-connector layer
 
-It verifies:
+The core script reconstructs the negative eleven-cycle at phase `-34` and its four self-return mismatch types. It verifies:
 
 - the core periods
   
@@ -50,19 +51,47 @@ It verifies:
   \omega_{t+2^{H+r-1}}
   \equiv
   \omega_t
-  \pmod{2^H}
+  \pmod{2^H};
   \]
-  
-  for all four tower types over several starting heights and `1 <= H <= 20`;
-- the target-independent low connector prefix from `L-0019`;
-- the concrete `C=7` schedule of `T-0022`, including nested actual connector prefixes and the exact integer inequality
+- the target-independent low connector prefix;
+- the one-connector `C=7` height-growth window;
+- the exact dyadic-ray decomposition for a finite high-tail library.
+
+### `stage.py` — residual-stack and scale-stage layer
+
+The stage audit verifies:
+
+- the exact 128-step precursor odometer;
+- the four rational stage-frontier limits
   
   \[
-  3^{G_t}>2^{K_{t^+}};
+  19/243,\quad38/81,\quad76/243,\quad638/729;
   \]
-- the exact dyadic-ray decomposition obtained when the high tail is restricted to a finite library.
+- their exact binary periods
+  
+  ```text
+  162, 54, 162, 486;
+  ```
+- the quadratic moving-bulk recurrence
+  
+  \[
+  u_{m+1}=u_m+2^{m+1}u_m^2;
+  \]
+- the corrected residual recurrence
+  
+  \[
+  z_{n+1}
+  =
+  \frac{3^{G_n}z_n+	heta_n-\eta_{n+1}}
+  {2^{K_{n+2}}};
+  \]
+- positive exact residual slope for the `C=8` schedule;
+- asymptotic residual contraction of the earlier `C=7` schedule;
+- the exact 256-step, eight-bit odometer stage from `L-0024`.
 
-The same-type `t=0 -> t=1` canonical connector seeds are recorded as regression anchors:
+## Regression anchors
+
+The same-type `t=0 -> t=1` canonical connector seeds are:
 
 ```text
 k0=5: eta=2241439 theta=1168 next_K=22
@@ -71,26 +100,39 @@ k0=7: eta=577148  theta=300  next_K=22
 k0=8: eta=1782866 theta=929  next_K=22
 ```
 
-## Command
+The first twenty LSD-first bits of the four stage-frontier connector limits are:
+
+```text
+k0=5: 11111001110011001010
+k0=6: 01011101101011001111
+k0=7: 00111110011100110010
+k0=8: 01001010001011001100
+```
+
+## Commands
 
 ```bash
 python3 -m py_compile experiments/X-0012-tower-connector-stack/run.py
 python3 experiments/X-0012-tower-connector-stack/run.py
+python3 -m py_compile experiments/X-0012-tower-connector-stack/stage.py
+python3 experiments/X-0012-tower-connector-stack/stage.py
 ```
 
-## Expected final line
+## Expected final lines
 
 ```text
 all tower-connector-stack checks passed
+all stage-boundary checks passed
 ```
 
-The checked-in output is `results/summary.txt`.
+The combined checked-in output is `results/summary.txt`.
 
 ## Digests
 
 ```text
 29d9fab85678830eb9496f718a7ada2faa61e35c87dbd26c23d2689e0b320385  run.py
-a37ecd5c52cbfdd8b405890c77d75bd574bb5d1200742d6506e363a1c6177c46  results/summary.txt
+9dcb670b2da24e4cfa1eb27c86c263e65e04b66003708b20f732928e24fabe93  stage.py
+15b4cc2aca8582f37013f58edeb31c528b1d8324d07572af4a25d9cd636a5e0d  results/summary.txt
 ```
 
 ## Interpretation
@@ -99,13 +141,21 @@ The tower counter is only a scale parameter. The exact memory channel is the arb
 
 Every finite tower schedule is connectable, so finite-depth compatibility is universal and carries little evidentiary weight. Restricting the high tail to finitely many values leaves only finitely many dyadic counter rays; `T-0021` uses a nondegenerate power-sum theorem to show that fixed affine counter updates cannot join such rays at all heights.
 
-`L-0019` identifies the first exact nonlinear alternative. Advancing the counter by the exact multiplicative order preserves a requested low prefix of the normalized connector stack. `T-0022` proves that a logarithmically growing prefix can be preserved while the free-tail slope remains greater than one. This creates a genuine arithmetic construction window, but the stable prefix is only logarithmic in the linear tower depth and still must be generated by a finite forward stack rule.
+The one-connector `C=7` lane preserves growing Hensel prefixes and expands the immediate high-tail height, but `T-0023` shows that it contracts the true residual after the next connector is parsed. The corrected `C=8` lane uses 256 finite-control steps per scale and has positive residual-stack slope.
+
+At stage boundaries the connector stack splits into three tracks:
+
+1. a finite periodic rational frontier;
+2. an eight-bit odometer/carry controller;
+3. one odd moving bulk word satisfying a quadratic Hensel recurrence.
+
+This is the cleanest current candidate architecture for a genuinely nonregular marked stack grammar.
 
 ## Limitations
 
 - The experiment checks finite identities only.
 - It does not verify the Skolem–Mahler–Lech step in `T-0021`; that is imported as `LIT-KTHM-0008` from PR #13.
 - Nested Hensel prefixes naturally define a 2-adic limit and are not an ordinary-marker certificate.
-- Positive free-tail slope grows already available data; it does not create the missing infinite tail from one finite start.
-- It does not construct a forward self-regenerating stack language.
-- No positive-integer counterexample is proposed.
+- Positive residual slope applies only after exact integrality of the next residual transition.
+- Same-precision quadratic updates do not manufacture missing higher bits.
+- No forward self-regenerating stack language or positive-integer counterexample is constructed.
