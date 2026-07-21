@@ -2,6 +2,8 @@
 
 This is an isolated `93xx` namespace for issue #15. It is not a replacement for any canonical root ledger and does not renumber claims on unmerged branches.
 
+**Independent review update (target `e5383d44cfa9fb75f7e92ff0bf031a2a6ca529a6`):** `gpt56-review-9309-01` independently reconstructed `L-9309`, `T-9307`, `T-9308`, `L-9310`, `T-9311`, and `T-9312`; all six received review verdict `PASSED` and are proposed here as `INDEPENDENTLY_VERIFIED`. See `reports/gpt56-review-9309-01/2026-07-22-15-adelic-chain-adversarial-review.md` and `research/adelic-cusp/REVIEW_STATUS.md`.
+
 | ID | Type | Status | Short title | Dependencies |
 |---|---|---|---|---|
 | `D-9301` | Definition/construction | `PROPOSED` | Stationary survivor measure on `Z_2` | elementary 2-adic convergence |
@@ -15,8 +17,8 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9306` | Lemma | `PROPOSED` | Full-group absolute moments factor exactly | `T-9304`; CRT; Parseval for `p=2` |
 | `L-9307` | Lemma | `PROPOSED` | Global rational diagonal and bilateral phase stitching | `L-9301`, `L-9305`, `T-9304`; circle reciprocity |
 | `L-9308` | Lemma | `PROPOSED` | Complex bilateral phase stitching | `L-9307`; local character conventions |
-| `L-9309` | Lemma | `PROPOSED` | Lift-digit prefixes are residue classes modulo `81^L` | `L-9307`; elementary modular lifting |
-| `L-9310` | Lemma | `PROPOSED` | Completion-height rigidity for integral phase carries | elementary modular lifting and height separation |
+| `L-9309` | Lemma | `INDEPENDENTLY_VERIFIED` | Lift-digit prefixes are residue classes modulo `81^L` | `L-9307`; elementary modular lifting |
+| `L-9310` | Lemma | `INDEPENDENTLY_VERIFIED` | Completion-height rigidity for integral phase carries | elementary modular lifting and height separation |
 | `L-9311` | Lemma | `PROPOSED` | Repeated itinerary factors are orbit-difference zero-carry chains | `D-9302`; integer divisibility |
 | `T-9301` | Conditional theorem | `SUPERSEDED` | Conditional polynomial-window reduction | superseded by self-contained `T-9308` |
 | `T-9302` | Conditional theorem | `SUPERSEDED` | Conditional density-one full EQ | superseded by unconditional `T-9309` |
@@ -24,12 +26,12 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `T-9304` | Theorem | `PROPOSED` | Stationary two-place CRT Fourier factorization | `L-9301`, `L-9305`; CRT |
 | `T-9305` | Theorem | `PROPOSED` | Split collapse and weighted discrepancy equivalence | `L-9307`; cosine Lipschitz and product telescoping |
 | `T-9306` | Theorem | `PROPOSED` | Complex coefficient and bounded test-sequence equivalence | `L-9308`; complex-mask Lipschitz and telescoping |
-| `T-9307` | Theorem | `PROPOSED` | Low-energy lift prefixes have an explicit entropy deficit | `L-9309`; exponential moments; `L-9303` for Fourier corollary |
-| `T-9308` | Theorem | `PROPOSED` | Uniform harmonic high-frequency tail at every depth | `T-9307`, `T-9305`; geometric shell summation |
+| `T-9307` | Theorem | `INDEPENDENTLY_VERIFIED` | Low-energy lift prefixes have an explicit entropy deficit | count: `L-9309`, exponential moments; Fourier: `L-9305`, `L-9303`; transfer: `T-9305`, `T-9306` |
+| `T-9308` | Theorem | `INDEPENDENTLY_VERIFIED` | Uniform harmonic high-frequency tail at every depth | `T-9307`, `T-9305`; geometric shell summation |
 | `T-9309` | Theorem | `PROPOSED` | Unconditional full weighted EQ on density-one depths | `T-9303`, `T-9308`; valuation strata and Markov |
 | `T-9310` | Theorem | `PROPOSED` | Weighted EQ converges in uniform density | `T-9303`, `T-9308`; translated-period Markov bounds |
-| `T-9311` | Theorem | `PROPOSED` | Uniform pointwise cusp decay on every subexponential numerator window | `L-9310`, `L-9303`, `T-9305`, `L-9301` |
-| `T-9312` | Theorem | `PROPOSED` | Complete weighted EQ at every depth | `T-9311`, `T-9308`; harmonic splitting |
+| `T-9311` | Theorem | `INDEPENDENTLY_VERIFIED` | Uniform pointwise cusp decay on every subexponential numerator window | `L-9310`, `L-9303`, `T-9305`, `L-9301` |
+| `T-9312` | Theorem | `INDEPENDENTLY_VERIFIED` | Complete weighted EQ at every depth | `T-9311`, `T-9308`; harmonic splitting |
 | `T-9313` | Theorem | `PROPOSED` | Fixed-room equivalence and exact `C_j`/`R_j` minimum duality | `D-9302`, `D-9303`, `L-9301` |
 | `T-9314` | Theorem | `PROPOSED` | Exact depth-46 minimum survivor; ordinary rooms exceed `2^227` | `T-9313`, `X-9303` |
 | `R-9301` | Refutation | `PROPOSED` | Exact carry prefixes do not amplify to consecutive intervals | `L-9309` |
@@ -46,7 +48,8 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 
 ## Status boundary
 
-- Every complete-looking argument authored in this packet enters as `PROPOSED` pending independent review.
+- Every complete-looking argument authored in this packet entered as `PROPOSED` pending independent review.
+- At the frozen target commit, `gpt56-review-9309-01` independently reconstructed and passed `L-9309`, `T-9307`, `T-9308`, `L-9310`, `T-9311`, and `T-9312`; no proof body or statement was replaced.
 - `T-9312` is the strongest integrated finite-set theorem: complete weighted EQ tends to zero at every depth.
 - `T-9313` gives an exact ordinary-section interface and an exact finite duality:
   \[
@@ -60,7 +63,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 - `L-9311` reconstructs PR #20's local repetition bound as an integral zero-carry theorem for differences of ordinary tail orbits.
 - `R-9302` closes the naive comparison of the identical repetition and phase-carry constants. They are one mechanism, not opposing budgets.
 - `T-9311` supplies deterministic low-frequency Fourier decay; `T-9308` supplies the high-frequency tail.
-- `T-9309` and `T-9310` remain independent depth-statistical cross-checks.
+- `T-9309` and `T-9310` remain independent depth-statistical cross-checks and remain `PROPOSED`.
 - `T-9301`, `T-9302`, and `C-9301` are superseded, not refuted.
 - `Q-9301` remains open. A finite exact minimum, however large, is not an asymptotic nonintersection theorem.
 - No positive integer survivor, divergent orbit, cycle, or Collatz counterexample is claimed.
@@ -71,23 +74,22 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 L-9309 lift-chain arithmetic
    |
    v
-L-9310 integral carries + completion-height rigidity
+T-9307 prefix entropy
    |
    v
-T-9311 pointwise decay on subexponential windows
-   |
-   +--------------------------------+
-   |                                |
-   |                         T-9307 prefix entropy
-   |                                |
-   |                                v
-   |                         T-9308 uniform harmonic tail
-   |                                |
-   +---------------+----------------+
-                   |
-                   v
-             T-9312 all-depth
-             complete weighted EQ
+T-9308 uniform harmonic tail --------+
+                                      |
+                                      v
+                                T-9312 all-depth
+                                complete weighted EQ
+                                      ^
+                                      |
+L-9310 integral carries               |
++ completion-height rigidity          |
+   |                                  |
+   v                                  |
+T-9311 pointwise decay ---------------+
+on subexponential windows
 ```
 
 The ordinary-section chain is:
@@ -133,7 +135,7 @@ R-9302 identical criticality does not double-count
 
 For `M=64`, `N=81`, `L-9311` proves why the same constant occurs in ordinary-code repetition rigidity: repeated factors are zero-carry chains in an orbit difference.
 
-The literature branch supplied scope discipline: completion-versus-height methods are relevant; fixed-real Fourier, finite-state pressure, generic S-unit, and measure-rigidity theorems do not automatically close this moving ordinary-section problem.
+The literature branch supplied scope discipline: completion-versus-height methods are relevant; fixed-real Fourier, finite-state pressure, generic S-unit, and measure-rigidity theorems do not automatically close this moving ordinary-section problem. No literature theorem is load-bearing for the six independently verified claims.
 
 ## Branch crosswalk
 
