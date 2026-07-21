@@ -3,12 +3,11 @@
 Last updated: 2026-07-21  
 Maintainer for this revision: `gpt56-pro-01`
 
-This file fixes the conventions used by the active collision-rewrite packet.
-Later work should state explicitly when it departs from them.
+This file fixes the conventions used by the active collision-rewrite and negative-renewal packet. Later work should state explicitly when it departs from them.
 
 ## Shortcut Collatz map
 
-Throughout the current packet,
+Throughout the packet,
 
 \[
 T(n)=
@@ -18,24 +17,18 @@ n/2,&n\text{ even},\\[1mm]
 \end{cases}
 \]
 
-This map has the same positive-integer termination question as the ordinary
-Collatz map: the ordinary odd step \(3n+1\) is immediately followed by a
-forced division by two.
-
-Unless a claim says otherwise, all Collatz variables are ordinary nonnegative
-or positive integers, not `2`-adic integers and not rational `2`-adic points.
+The map is used on all ordinary integers when studying negative templates. Unless a claim says otherwise, a claimed counterexample variable is an ordinary positive integer, not a 2-adic or rational point.
 
 ## Parity words
 
-A length-\(L\) parity word is written
+A length-\(L\) parity word is
 
 \[
 w=t_0t_1\cdots t_{L-1},
 \qquad t_i\in\{0,1\},
 \]
 
-in **chronological order**. Thus \(t_0\) is the parity of the starting value,
-and \(t_i\) is the parity immediately before the \((i+1)\)-st shortcut step.
+in chronological order. Thus \(t_0\) is the starting parity.
 
 Define
 
@@ -51,15 +44,15 @@ B(w)=
 2^j3^{\sum_{i=j+1}^{L-1}t_i}.
 \]
 
-`L-0001` proves
+Then
 
 \[
 T^L(n)=\frac{3^{a(w)}n+B(w)}{2^L}
 \]
 
-for every integer following the word \(w\).
+for every integer following \(w\).
 
-## Affine residue tables
+## Affine residue tables and collision fibers
 
 For \(0\le r<2^L\), define
 
@@ -74,8 +67,7 @@ s_L(r)=T^L(r).
 Then
 
 \[
-T^L(2^Lq+r)=3^{a_L(r)}q+s_L(r)
-\qquad(q\ge0).
+T^L(2^Lq+r)=3^{a_L(r)}q+s_L(r).
 \]
 
 A collision fiber is a level set of
@@ -84,36 +76,21 @@ A collision fiber is a level set of
 r\longmapsto(a_L(r),s_L(r)).
 \]
 
-## Collision-fiber parameters
-
-For a collision fiber of length \(L\) with \(a\) odd steps, write
+For a fiber of length \(L\) and odd count \(a\), write
 
 \[
 M=2^L,
 \qquad N=3^a.
 \]
 
-The fiber is **supercritical** when
+It is **supercritical** when \(N>M\).
 
-\[
-N>M.
-\]
-
-Choose an anchor \(r\) and a finite digit set
-
-\[
-D\subseteq\{0,1,\ldots,M-1\}
-\]
-
-such that \(r+D\subseteq\{0,1,\ldots,M-1\}\) and
+Choose an anchor \(r\) and offsets \(D\) such that
 
 \[
 T^L(Mq+r+d)=Nq+s
-\qquad(q\ge0,\ d\in D).
+\qquad(d\in D).
 \]
-
-The canonical experimental anchor is \(r=\min F\), where \(F\) is the
-untranslated fiber. Then \(0\in D\).
 
 Define
 
@@ -123,44 +100,56 @@ c=N-M,
 \qquad h=s-r.
 \]
 
-The affine coordinate of `T-0002` is
+The older induced coordinate is
 
 \[
-\Phi(n)=cn+\kappa.
+\Phi(n)=cn+\kappa,
 \]
 
-The induced partial radix map is
+with partial map
 
 \[
 H_D(MB+d)=NB+d,
-\qquad d\in D.
 \]
 
-Its invariant lifting class is
+invariant class
 
 \[
 A\equiv h\pmod c,
 \]
 
-and the corresponding Collatz integer is
+and lift
 
 \[
 \nu(A)=\frac{NA-\kappa}{c}.
 \]
 
-`T-0001` uses the older symbol \(d=Ms-Nr\) for the constant now denoted
-\(\kappa\). New files use \(d\) for an actual digit.
+## Inverse signatures and collision codes
 
-## Digit constructors and word orientation
+For a length-\(L\), weight-\(a\) word, its inverse signature is
 
-For radix \(M\), define
+\[
+\sigma(w)=2^{-L}B(w)\pmod{3^a}.
+\]
+
+A finite fixed-length, fixed-weight family whose constants agree modulo \(3^p\) is a parity collision code of precision \(p\). Its precision surplus is \(p-a\).
+
+For chronological concatenation \(uv\),
+
+\[
+B(uv)=3^{a(v)}B(u)+2^{|u|}B(v).
+\]
+
+## Digit constructors and mixed-radix words
+
+For radix \(M\),
 
 \[
 L_d(x)=Mx+d,
 \qquad0\le d<M.
 \]
 
-For radix \(N\), define
+For radix \(N\),
 
 \[
 R_c(x)=Nx+c,
@@ -174,53 +163,40 @@ L_{d_0}L_{d_1}\cdots L_{d_k}\#
 =L_{d_0}(L_{d_1}(\cdots L_{d_k}(0)\cdots)).
 \]
 
-Thus the represented integer is
-
-\[
-d_0+Md_1+\cdots+M^kd_k.
-\]
-
-For a low-order-first word \(U=(u_0,\ldots,u_{k-1})\), write
+For a low-order-first word \(U=(u_0,\ldots,u_{k-1})\),
 
 \[
 [U]_M=\sum_{i=0}^{k-1}u_iM^i.
 \]
 
-The mixed-radix normalization rule is
+The normalization rule is
 
 \[
 R_cL_x\longrightarrow L_eR_q,
-\qquad Nx+c=Mq+e,
+\qquad Nx+c=Mq+e.
 \]
 
-with \(0\le e<M\), \(0\le q<N\).
-
-A closed carry path
+A closed path
 
 \[
 R_cX\longrightarrow ER_c
 \]
 
-is called a **carry macro-tile**. It may be repeated horizontally, but that
-alone does not prove vertical closure of an induced orbit.
+is a carry macro-tile. Horizontal pumping alone does not prove vertical closure.
 
 ## Run-length skeleton
 
-For a nonzero integer \(z\), define
+For a nonzero integer \(z\), define divisibility by powers of the whole radix:
 
 \[
 \operatorname{ord}_M(z)
 =\max\{u\ge0:M^u\mid z\}.
 \]
 
-This is divisibility by powers of the whole radix \(M\), not the usual prime
-valuation unless \(M\) itself is prime.
-
 A maximal constant-digit phase begins at
 
 \[
 A=d+M^uC,
-\qquad d\in D,
 \qquad M\nmid C,
 \]
 
@@ -231,43 +207,193 @@ H_D^t(A)=d+N^tM^{u-t}C
 \qquad(0\le t\le u).
 \]
 
-The sequence of triples \((d,u,C)\) is the **run-length skeleton** of the
-induced orbit.
+The sequence \((d,u,C)\) is the run-length skeleton.
+
+## Negative templates and signed returns
+
+A negative template is a positive magnitude \(u\) such that
+
+\[
+T^L(-u)=-v
+\]
+
+for a selected negative target magnitude \(v\).
+
+A collision fiber with residues \(r_i\) and output \(s\) gives
+
+\[
+u_i=M-r_i,
+\qquad v=N-s.
+\]
+
+At phase \(-v_i\), write a positive physical state as
+
+\[
+n=q-v_i.
+\]
+
+An edge \(e:i\to j\) based on
+
+\[
+T^{L_e}(-u_e)=-v_j
+\]
+
+has cylinder
+
+\[
+q\equiv v_i-u_e\pmod{2^{L_e}}
+\]
+
+and quotient map
+
+\[
+F_e(q)=3^{a_e}\frac{q-v_i+u_e}{2^{L_e}}.
+\]
+
+For a stationary chart, the intrinsic signed return equation is
+
+\[
+Nq=Mq'+a,
+\qquad a=v-u.
+\]
+
+## Negative phase and complementary phase maps
+
+For a positive phase magnitude \(v\), define
+
+\[
+P(v)=
+\begin{cases}
+v/2,&v\text{ even},\\[1mm]
+(3v-1)/2,&v\text{ odd},
+\end{cases}
+\]
+
+so that
+
+\[
+T(-v)=-P(v).
+\]
+
+Define the complementary map
+
+\[
+C(v)=
+\begin{cases}
+3v/2,&v\text{ even},\\[1mm]
+(v+1)/2,&v\text{ odd}.
+\end{cases}
+\]
+
+For the coupled state \(n=q-v\), put
+
+\[
+p=q\bmod2,
+\qquad r=v\bmod2,
+\qquad e=p\oplus r.
+\]
+
+One exact step is
+
+\[
+q'=\frac{3^eq+p}{2},
+\qquad
+v'=\frac{3^ev+(2p-1)r}{2}.
+\]
+
+If \(q\) is even, \(v'=P(v)\) and the orbit shadows the negative phase. If \(q\) is odd, \(v'=C(v)\) and a mismatch occurs.
+
+## Valuation and cycle-padding notation
+
+The ordinary binary valuation is
+
+\[
+\nu_2(q)=\max\{k\ge0:2^k\mid q\}.
+\]
+
+For a negative phase \(v\), define the odd count along \(k\) negative-phase steps by
+
+\[
+A_v(k)=\sum_{j=0}^{k-1}(P^j(v)\bmod2).
+\]
+
+If \(v\) lies on a negative cycle of period \(\ell\) with \(a\) odd phases, its cycle multiplier is
+
+\[
+\Lambda=\frac{3^a}{2^\ell}>1.
+\]
+
+A padding counter \(t\ge0\) records \(t\) complete synchronized cycle circuits before a fixed mismatch type. Return towers then have
+
+\[
+L_t=L_0+t\ell,
+\qquad
+a_t=a_0+ta,
+\qquad
+\lambda_t=\lambda_0\Lambda^t.
+\]
+
+## Prefix-code and pressure notation
+
+For a finite or countable binary prefix code \(\mathcal W\), the fair cylinder mass of \(w\) is
+
+\[
+\mu_{1/2}([w])=2^{-|w|}.
+\]
+
+The \(3/4\)-odd tilted mass is
+
+\[
+\mu_{3/4}([w])
+=\frac{3^{a(w)}}{4^{|w|}}.
+\]
+
+The real block multiplier is their likelihood ratio:
+
+\[
+\lambda(w)=\frac{3^{a(w)}}{2^{|w|}}
+=\frac{\mu_{3/4}([w])}{\mu_{1/2}([w])}.
+\]
+
+For graph edges \(e:i\to j\), define pressure matrices
+
+\[
+\mathcal A_s(i,j)
+=
+\sum_{e:i\to j}2^{-L_e}\lambda_e^s.
+\]
+
+`A_0` measures fair 2-adic coverage. `A_1` measures tilted Collatz mass.
 
 ## Real and 2-adic conventions
 
-For an induced orbit, put
+For a stationary induced orbit, put
 
 \[
 \rho=M/N,
-\qquad\lambda=N/M.
+\qquad \lambda=N/M.
 \]
 
-The series
+The same formal digit series may be interpreted in \(\mathbb Q_2\) and in \(\mathbb R\), but the limiting identities are different. Every claim must state the topology used.
+
+For a signed stationary return chain, the normalized aspect ratio is
 
 \[
-\frac{N-M}{N}\sum_{t\ge0}d_t\rho^t
+\Delta=rac{\operatorname{diam}A}{N-M}.
 \]
-
-may be interpreted in both \(\mathbb Q_2\) and \(\mathbb R\). The coefficients
-are the same, but the limiting identities are different. Claims must state the
-topology being used.
 
 ## Finite words versus adic objects
 
-A **finite canonical word** contains finitely many digits and a terminal marker
-`#`. It represents one ordinary nonnegative integer.
+A **finite canonical word** contains finitely many digits and a terminal marker `#`. It represents one ordinary nonnegative integer.
 
-A left-infinite or nonterminating digit string may represent an element of a
-radix-adic completion. Compatibility of all finite suffixes does not imply that
-the resulting object is an ordinary finite positive integer.
+A left-infinite or nonterminating digit string may represent a radix-adic object. Compatibility of all finite suffixes does not imply an ordinary finite positive integer.
 
-No candidate may be promoted to a Collatz counterexample unless it proves all
-of the following:
+No candidate may be promoted unless it proves:
 
-1. the starting object is one finite positive integer;
-2. every claimed rewrite step agrees with the deterministic Collatz trajectory;
-3. the infinite argument never relies on an unproved infinite left tail;
-4. integrality and positivity hold at every required boundary;
-5. the trajectory avoids the known terminal cycle forever or is
-   unbounded/nonperiodic as claimed.
+1. one finite positive starting integer;
+2. exact agreement with the deterministic Collatz trajectory;
+3. no unproved infinite left tail;
+4. integrality and positivity at every boundary;
+5. an infinite selector or grammar defined forever;
+6. justified net growth on every reachable grammar cycle;
+7. unboundedness or permanent avoidance of the terminal cycle.
