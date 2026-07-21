@@ -1,6 +1,6 @@
 # Claim ledger
 
-Last updated: 2026-07-21  
+Last updated: 2026-07-22  
 All mathematical claims on the active research branch await independent review.
 
 | ID | Type | Title | Status | File | Dependencies |
@@ -74,36 +74,43 @@ All mathematical claims on the active research branch await independent review.
 | T-0024 | Theorem | Full 256-step stage has exponential precision surplus | PROPOSED | `claims/theorems/T-0024-stage-information-surplus.md` | T-0023, L-0024 |
 | L-0025 | Lemma | Exact rational sandwich for the negative-cycle bit margin | PROPOSED | `claims/lemmas/L-0025-exact-cycle-margin-sandwich.md` | none |
 | X-0012 | Experiment | Tower replacement, connector, Hensel, residual-stage, and surplus checks | EMPIRICAL | `experiments/X-0012-tower-connector-stack/` | L-0016--L-0025, T-0021--T-0024, O-0009 |
-| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0024 |
+| L-0026 | Lemma | Offset Montgomery precision lifting for connector tiles | PROPOSED | `claims/lemmas/L-0026-offset-montgomery-lift.md` | L-0017, L-0022 |
+| L-0027 | Lemma | Cycle-aligned Newton doubling with exact eleven-bit slack | PROPOSED | `claims/lemmas/L-0027-cycle-aligned-newton-slack.md` | L-0016, L-0024, L-0026 |
+| O-0010 | Observation | Quadratic stage bulk converges to a 2-adic logarithm | PROPOSED | `claims/observations/O-0010-two-adic-logarithmic-bulk.md` | L-0023, L-0027 |
+| T-0025 | Theorem | Uniform finite-word compiler for 256-stage connector control | PROPOSED | `claims/theorems/T-0025-finite-connector-prefix-compiler.md` | L-0022--L-0027, O-0009, O-0010 |
+| T-0026 | Theorem | Residual Montgomery zipper criterion | PROPOSED | `claims/theorems/T-0026-residual-montgomery-zipper.md` | L-0017, L-0026, T-0023, T-0025 |
+| X-0013 | Experiment | Offset Montgomery, Newton compiler, and logarithmic-bulk checks | EMPIRICAL | `experiments/X-0013-montgomery-newton-compiler/` | L-0026, L-0027, T-0025, O-0010 |
+| Q-0001 | Open question | Finite-boundary regeneration | IDEA | `OPEN_PROBLEMS.md` | T-0002--T-0026 |
 | Q-0002 | Resolved question | Analytic collision-fiber growth | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | T-0005 |
 | Q-0003 | Open question | Carry grammar for the width-three chart | IDEA | `OPEN_PROBLEMS.md` | O-0002, L-0004 |
-| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0024 |
-| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016--T-0024 |
+| Q-0004 | Open question | Multi-chart transition groupoid | IDEA | `OPEN_PROBLEMS.md` | T-0002, T-0008, T-0009, T-0013--T-0026 |
+| Q-0005 | Open question | Finite versus adic closure criterion | IDEA | `OPEN_PROBLEMS.md` | T-0003, T-0008, T-0016--T-0026 |
 | Q-0006 | Open question | Independent verification | IDEA | `OPEN_PROBLEMS.md` | all above |
 | Q-0007 | Open question | Vertical macro-tile closure | IDEA | `OPEN_PROBLEMS.md` | L-0004, T-0003, T-0009, T-0018, T-0020 |
 | Q-0008 | Open question | Parameterized `S`-unit skeleton schemas | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0008 |
 | Q-0009 | Open question | Structured collision codes and closure-quality geometry | PARTIAL | `OPEN_PROBLEMS.md` | L-0006, T-0005--T-0007 |
 | Q-0010 | Resolved question | Growing complete dyadic projection | PROPOSED RESOLUTION | `OPEN_PROBLEMS.md` | L-0009, L-0010, T-0007 |
 | Q-0011 | Open question | Convert dyadic correction freedom into vertical closure | IDEA | `OPEN_PROBLEMS.md` | T-0004, T-0007, T-0010 |
-| Q-0012 | Open question | Infinite negative-template renewal code beyond finite regular collapse | NARROWED IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0024 |
+| Q-0012 | Open question | Infinite negative-template renewal code beyond finite regular collapse | NARROWED IDEA | `OPEN_PROBLEMS.md` | T-0008, T-0009, T-0014--T-0026 |
 | Q-0013 | Open question | Macroscopic aspect-ratio collision systems | IDEA | `OPEN_PROBLEMS.md` | T-0010, L-0011, O-0006, O-0007 |
-| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, T-0017--T-0024 |
-| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016--T-0024 |
+| Q-0014 | Open question | Finite phase plus cycle-padding stack closure | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, T-0017--T-0026 |
+| Q-0015 | Open question | Pressure-positive ordinary survivor language | IDEA | `OPEN_PROBLEMS.md` | T-0013, T-0016--T-0026 |
 | Q-0016 | Open question | Multi-mismatch complement automaton | IDEA | `OPEN_PROBLEMS.md` | T-0014, T-0015, O-0008, L-0013 |
-| Q-0017 | Open question | Arithmetic approximation to the phase escape transform | IDEA | `OPEN_PROBLEMS.md` | L-0013, T-0017--T-0024 |
-| Q-0018 | Open question | Marked ordinary-spine rewrite grammar | NARROWED IDEA | `OPEN_PROBLEMS.md` | L-0014, T-0018--T-0024 |
-| Q-0019 | Open question | Hensel counter-stack marked sanctuary beyond regular collapse | IDEA / PRIMARY | `OPEN_PROBLEMS.md` | T-0015, T-0020--T-0024 |
-| Q-0020 | Open question | Route full-stage surplus into exact next-prefix and residual congruence | IDEA / PRIMARY | `OPEN_PROBLEMS.md` | L-0022--L-0025, T-0023, T-0024 |
+| Q-0017 | Open question | Arithmetic approximation to the phase escape transform | IDEA | `OPEN_PROBLEMS.md` | L-0013, T-0017--T-0026 |
+| Q-0018 | Open question | Marked ordinary-spine rewrite grammar | NARROWED IDEA | `OPEN_PROBLEMS.md` | L-0014, T-0018--T-0026 |
+| Q-0019 | Open question | Hensel counter-stack marked sanctuary beyond regular collapse | IDEA / PRIMARY | `OPEN_PROBLEMS.md` | T-0015, T-0020--T-0026 |
+| Q-0020 | Open question | Route full-stage surplus into exact residual congruence | NARROWED / PRIMARY | `OPEN_PROBLEMS.md` | L-0026, L-0027, T-0024--T-0026 |
+| Q-0021 | Open question | Self-feeding ordinary Montgomery quotient | IDEA / SOLE ARITHMETIC CHANNEL | `OPEN_PROBLEMS.md` | T-0025, T-0026 |
 
 ## Relationship among the latest results
 
-- `L-0016` converts every padded negative-cycle return into an exact binary-block-to-ternary-block replacement preserving one arbitrary ordinary high tail.
-- `L-0017` proves every finite tower schedule has canonical connector tiles and infinitely many ordinary finite realizations; finite compatibility is therefore not the blocker.
-- `T-0021` excludes finite high-tail libraries with affine counter updates, and `L-0018` excludes fixed-period all-height inverse-prefix control.
-- `L-0019` supplies exact nonlinear Hensel jumps. `T-0022` and `L-0020`--`L-0021` are valid one-connector precursors, but `T-0023` proves that true residual regeneration must pay the next two cylinder depths.
-- The corrected lane is the 256-step stage of `L-0024`: a periodic frontier, an eight-bit odometer, and the quadratic moving bulk of `L-0023`.
-- `T-0024` proves that one full corrected stage has exponential residual bit-length surplus after paying the entire next-stage connector-precision increase.
-- The remaining load-bearing theorem is arithmetic routing: turn that surplus into the exact low bits of the next quadratic bulk and residual cylinder, from one finite marked ordinary initialization.
+- `L-0016`--`T-0024` supply exact padded tower replacements, finite connectors, corrected 256-step staging, positive residual slope, and full-stage information surplus.
+- `L-0026` identifies every connector and residual divisibility equation as an offset Montgomery reduction whose quotient is the next precision-lifting state.
+- `L-0027` proves the exact cycle alignment `Q_(m+1)=2Q_m-11`; Newton doubling generates the full next inverse prefix and leaves one complete eleven-bit negative-cycle block of slack.
+- `O-0010` identifies the quadratic bulk limit as `-(7/4) log_2(3)` and proves exact one-bit-per-stage convergence.
+- `T-0025` removes the connector word `W` as an independent infinite object: every frontier, inverse prefix, cap, and odometer word is generated from finite stage data.
+- `T-0026` isolates the only uncontrolled channel as the ordinary residual zipper `psi_n + N_n y_n = rho_(n+1) + 2^(D_(n+1)) y_(n+1)`.
+- The remaining load-bearing theorem is an ordinary self-feeding Montgomery quotient with one finite marked initialization. Computing the required residues is no longer the issue; physically realizing them forever is.
 
 ## Status note
 
