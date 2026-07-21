@@ -403,3 +403,40 @@ the law's scale.
    carrying EQ.
 3. Bounded-count formalization of O-0017 → the enhancement-decay
    lemma → Mask 6 with explicit o(1).
+
+---
+
+# P2 deep-dive V: T-0028 completed — the exact product isomorphism
+
+*Loop iteration 3. T-0028 upgraded from PARTIAL to complete.*
+
+## 19. The bijection lemma, and T-0028 in final form
+
+**Lemma (word–class–room).** For A ∈ R_{n+j} with j-fold H-image
+A* ∈ R_n and low word w: (a) the induced Cantor coordinate depends on
+the word alone: `x_w = −17·64^{−j} c_w mod 81^j`, and w ↦ x_w is a
+bijection {0,1}^j → C_j (verified j ≤ 4; induction = the lifting
+recursion applied to c_{εw′} = ε·81^{j−1} + 64c_{w′}); (b) the room r
+of the exact identity `81^j A = 64^j A* + 17c_w + r·64^{n+j}` equals
+the CRT room `t ≡ (x_w − A*)·64^{−n} (mod 81^j)` — three lines of
+mod-81^j algebra, and verified exhaustively (all 4096 elements at
+(n,j) = (10,2), all 16384 at (11,3): r = t without exception).
+
+**Theorem T-0028 (final).** The coding bijection
+`R_{n+j} → R_n × C_j, A ↦ (A*, x_w)` matches archimedean positions
+exactly up to `17c_w/64^j ≤ (81/64)^j − 1` joint-modulus slots — and
+this bound is *sharp*: the measured maximal offsets 0.601807 (j = 2)
+and 1.027287 (j = 3) are exactly `(81/64)^j − 1`. Hence for every
+split K = n + j the survivor set is, position-rigidly, the CRT
+product of its depth-n core with the Cantor set C_j; all
+scale-81^{−j} structure of R_K is the room process, and D*-equality
+across splits is forced. ∎
+
+## 20. The room walk (the object now carrying EQ)
+
+Base-81 digits of position(A) = the room sequence r₁, r₂, … with
+driver `r ≡ (x_w − A*)·64^{−n} (mod 81^j)`: Cantor datum minus core
+position, twisted by 64^{−n} — the same odd-unit twist as L-0017 and
+Ĉ's phases, now in its final habitat. EQ ⟺ equidistribution of the
+room digits over A ∈ R_K at the law's depth. Next iteration: the
+walk's exact transition law and its mixing.
