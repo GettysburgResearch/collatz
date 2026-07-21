@@ -22,6 +22,7 @@ from odd_suffix_cegis import (
     SCHEMA,
     OddSuffixEncoding,
     OddSuffixSearchConfig,
+    SuffixImplication,
     diagnostic_config,
     load_checkpoint,
     run_odd_suffix_cegis,
@@ -202,6 +203,24 @@ class OddSuffixCegisTests(unittest.TestCase):
         )
         export_implication_bank(checkpoint, bank)
         return bank
+
+    def test_prefix_trie_batch_asserts_the_same_clauses(self) -> None:
+        config = OddSuffixSearchConfig(state_count=6, gate=3, solver_seed=3)
+        implications = (
+            SuffixImplication((1, 0, 1), (0, 1)),
+            SuffixImplication((1, 1, 0, 1), (0, 0, 1)),
+        )
+        sequential = OddSuffixEncoding(config)
+        baseline = len(sequential.solver.assertions())
+        for implication in implications:
+            sequential.add_implication(implication)
+        batched = OddSuffixEncoding(config)
+        batched.add_implications_batch(implications)
+
+        self.assertEqual(
+            [str(item) for item in sequential.solver.assertions()[baseline:]],
+            [str(item) for item in batched.solver.assertions()[baseline:]],
+        )
 
     def test_symbolic_model_obeys_complete_suffix_normal_form(self) -> None:
         config = OddSuffixSearchConfig(state_count=6, gate=3, solver_seed=3)

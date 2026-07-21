@@ -38,7 +38,7 @@ provides:
 5. the maximal safe accepting set for any fixed DFA transition skeleton;
 6. exact finite-horizon safety approximants;
 7. a Python-standard-library-only JSON certificate checker;
-8. 76 regression tests in the current extended suite, including a known
+8. 104 regression tests in the current extended suite, including a known
    `3n-1` nontrivial cycle;
 9. exact bounded searches over all labeled one- through four-state skeletons;
 10. an initial structured search behind a 72-bit length guard;
@@ -50,7 +50,14 @@ provides:
 14. a portable, individually revalidated bank of exact closure implications
     with source and target accounting kept separate;
 15. a conditional 71-state odd-suffix CEGIS lane with exact `U` checking and
-    mandatory final verification of its raw shortcut lift.
+    mandatory final verification of its raw shortcut lift;
+16. prefix-trie batching that shares common LSD-prefix solver expressions while
+    preserving exact implication semantics;
+17. a durable paired census over all 69 structured suffix/raw gate pairs, with
+    every proposed transition table replayable without Z3;
+18. a reset-pattern audit quantifying the concrete-clause bank's exponential
+    fixed-gate blind spot;
+19. a local ripple-carry circuit for 1-preferred minimum-length spine words.
 
 All one- through four-state standard-Collatz skeletons had empty maximal safe
 kernels.  Every one- and two-state transition core behind the fixed 72-bit
@@ -70,9 +77,25 @@ normalized all 213 clauses through the exact odd map, checked five models, and
 learned 11 more before its 20.125-second soft boundary. Both statuses are
 `time_limit`; neither is an UNSAT result or evidence for convergence.
 
+The paired generation-zero census completed all 138 partitions with a one-
+model quota.  Every model was exactly rejected, 1,855 local implication
+instances were recorded, and no partition stalled.  No partition is eliminated
+by this bounded evidence.
+
+The reset-pattern audit proves that concrete antecedent accumulation is badly
+mismatched to the fixed-gate family: the frozen 224-clause corpus has 1,692
+distinct length-71 factors, and 69 targeted additions raise this only to 1,760,
+versus `2^68 = 295147905179352825856` factors needed for complete coverage at
+one gate.  All distinguished spines are exact countermodels, not sanctuaries.
+
+The minimum-word circuit is solver-UNSAT at suffix gate 2 and satisfiable at
+gates 3 through 70, where all 68 frozen models are exactly rejected.  The
+solver result alone is not promoted.  L-9114's separate carry induction proves
+that gate 2 is impossible in the exact-distance suffix normal form.
+
 ## Structural constraints added after adversarial review
 
-Seven further proposed lemmas sharply narrow the target without claiming that
+Nine further proposed lemmas sharply narrow the target without claiming that
 arbitrary regular sanctuaries are impossible:
 
 - `L-9106` gives an existence equivalence with regular odd languages invariant
@@ -99,6 +122,11 @@ arbitrary regular sanctuaries are impossible:
   Boolean safety DFAs by a strict chain of first-hit-colored Moore refinements.
   Bare colored skeletons are only finite/cofinite; their useful role is as
   exact features in products with a genuinely recurrent skeleton.
+- `L-9113` constructs `2^(q-3)` reset-pattern models at every fixed suffix gate
+  and proves an exponential coverage lower bound for concrete antecedent
+  clauses.  Symbolic transition cubes and arithmetic proofs lie outside it.
+- `L-9114` uses the exact output-length budget and ripple-carry arithmetic to
+  eliminate suffix gate 2.  It does not eliminate generic raw gate 3.
 
 Thus a genuinely new counterexample family must be sought in a nonslender,
 branching language with unbounded high-bit dependence, unless the computation
@@ -111,9 +139,11 @@ impossible for a genuine standard-Collatz sanctuary given the currently
 published verified range.
 
 Every nonempty `q`-state candidate DFA, under this program's semantic
-canonicalization, accepts a canonical word of length at most `q`.  Published
-computation verifies convergence for every positive integer below `2^71`.
-Consequently, a genuine sanctuary DFA must have at least 72 states.
+canonicalization, accepts a canonical word of length at most `q`.  Barina's
+2025 article states that the project verified every positive integer strictly
+below `2^71` and reports that limit in Section 6.  This is exactly the strict
+range used here: a word of length at most 71 has value `<2^71`.  Consequently,
+a genuine sanctuary DFA must have at least 72 states.
 
 Small DFAs remain valuable for testing the verifier and generalized maps.  The
 serious search space is therefore structured rather than blindly random:
@@ -140,6 +170,10 @@ one zero-loop state produces a raw 72-state shortcut DFA. This covers suffix
 gates `2,...,70`, corresponding to raw gates `3,...,71`, but it is a structured
 subspace: raw gate 0 and work-state transitions back to the added state remain
 outside it.
+
+L-9114 removes suffix gate 2, leaving active structured suffix gates
+`3,...,70`, corresponding to structured raw gates `4,...,71`.  Generic raw
+gate 3 remains open.
 
 ## Why this direction is not covered by active no-go results
 
@@ -203,22 +237,23 @@ See https://github.com/gfreund123/collatz/pull/14.
 2. [`CLAIMS.md`](CLAIMS.md) for exact statuses and dependency boundaries.
 3. The [experiment README](../../experiments/X-9101-regular-sanctuary/README.md).
 4. `verify.py` for the standard-library-only checker core.
-5. `independent_check.py`, `odd_core.py`, `spine_cegis.py`, and
-   `odd_suffix_cegis.py` for the differential, accelerated, and synthesis
-   layers.
-6. The five `test_*.py` modules for adversarial controls.
-7. `results/summary.json`, `results/spine-q72-gate0-bank.json`, and the scout
-   artifacts listed in the experiment README for frozen empirical boundaries.
+5. `independent_check.py`, `odd_core.py`, `spine_cegis.py`,
+   `odd_suffix_cegis.py`, `paired_gate_census.py`, `reset_spine.py`, and
+   `symbolic_minimum.py` for the differential, accelerated, synthesis, census,
+   and symbolic-proof layers.
+6. The eight `test_*.py` modules for adversarial controls.
+7. `results/summary.json`, `results/spine-q72-gate0-bank.json`, and the census,
+   reset-spine, symbolic-minimum, and scout artifacts listed in the experiment
+   README for frozen empirical boundaries.
 
 ## Next attacks
 
-1. Cover suffix gates `2,...,70` from the common normalized obstruction bank,
-   keeping imported clauses, local clauses, models, and time separate. Search
-   for a finite combinatorial obstruction recurring across gates rather than
-   treating a long sequence of timeouts as evidence.
-2. Run raw partitions `0,3,...,71` as the broader control. Gates 1 and 2
-   conflict with the forced initial `11` spine. Share only revalidated exact
-   clauses across partitions, never solver conclusions.
+1. Iterate the 1-preferred minimum-word image constraint at suffix gates
+   `3,...,70`, and learn minimized symbolic transition-cube nogoods whose exact
+   arithmetic witnesses cover many reset patterns at once.
+2. Deepen raw partitions `0,3,...,71` only as the broader control. Gates 1 and
+   2 conflict with the forced initial `11` spine. Share only revalidated exact
+   clauses across generations, never solver conclusions.
 3. Implement the L-9112 colored refinement chain and test popcount parity
    products at depths `8,12,16,20,24`, followed by adjacent-`11` parity. A
    proper nonempty canonical-tail fiber is the first interesting signal; any
@@ -231,7 +266,7 @@ See https://github.com/gfreund123/collatz/pull/14.
    composing a large transducer for `T^B`.
 7. Add proof logging or a separately authored checker before treating any
    solver-level UNSAT report as more than a bounded computational observation.
-8. Request independent reconstruction of `L-9101` through `L-9112` before any
+8. Request independent reconstruction of `L-9101` through `L-9114` before any
    status promotion, including the external slender-language decomposition.
 
 ## Literature boundary

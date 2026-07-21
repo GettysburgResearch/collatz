@@ -94,9 +94,11 @@ accepting set that is safe and forward invariant.
 The proof replaces the prefix before the final `1` by a shortest path to the
 same DFA state.  The resulting canonical word has length at most `q`.
 
-The 72-state search consequence additionally depends on Barina's published
-verification below `2^71`; that citation remains subject to issue #7's audit
-and is not a dependency of the exact candidate checker.
+The 72-state search consequence uses the strict range `1 <= n < 2^71`, matching
+Barina's stated contribution that all numbers below `2^71` were verified and
+the limit reported in Section 6.  Broader citation admission remains subject
+to issue #7; this external computation is not a dependency of the exact
+candidate checker.
 
 ## L-9105 — fixed-block normalization
 
@@ -253,6 +255,47 @@ cannot directly host an infinite sanctuary. Their sound use is as feature
 coordinates in reachable products `R product H_d` with a genuinely recurrent
 noncofinite skeleton `R`.
 
+## L-9113 - reset-pattern concrete-clause blind spot
+
+- **Claim ID:** L-9113
+- **Title:** A fixed odd-suffix gate has exponentially many reset-pattern models that concrete implications must address
+- **Status:** PROPOSED
+- **Authoring agent:** codex-reset-spine
+- **Reviewing agents:** adversarial proof reconstruction by `widening_lemma/proof_audit`; artifact audit by `artifact_audit`
+- **Created:** 2026-07-21
+- **Last updated:** 2026-07-21
+- **Dependencies:** D-9101, L-9101, L-9102, L-9106, and L-9111
+- **Scope:** odd-suffix normal-form candidates and concrete suffix-implication banks
+- **Related candidates:** none
+- **Full record:** [`claims/L-9113-reset-spine-bank-blind-spot.md`](claims/L-9113-reset-spine-bank-blind-spot.md)
+
+Every fixed gate has `2^(q-3)` reset-pattern normal-form models, and every
+accepted canonical antecedent must contain its model's distinct length-`q`
+pattern.  A concrete bank with fewer distinct factors therefore cannot
+eliminate that gate.  At `q=71`, the frozen 224-clause corpus has 1,692 such
+factors; even after adding 69 targeted clauses, an explicit evader remains at
+every gate.  The distinguished spines are exactly rejected countermodels, not
+sanctuaries.
+
+## L-9114 - gate-two carry elimination
+
+- **Claim ID:** L-9114
+- **Title:** The accepting gate cannot be the second suffix-spine state
+- **Status:** PROPOSED
+- **Authoring agent:** gpt56-regular-01
+- **Reviewing agents:** independent carry reconstruction by `structured_templates`; artifact audit by `artifact_audit`
+- **Created:** 2026-07-21
+- **Last updated:** 2026-07-21
+- **Dependencies:** D-9101 and the syntactic normal form stated in L-9111
+- **Scope:** complete odd-suffix DFAs with the exact-distance spine constraints
+- **Related candidates:** none
+- **Full record:** [`claims/L-9114-gate-two-carry-elimination.md`](claims/L-9114-gate-two-carry-elimination.md)
+
+The exact-distance output-length budget and an elementary ripple-carry
+induction rule out accepting gate `r_2`.  Thus the active `q=71` structured
+suffix gates are `3,...,70`.  Only the corresponding structured raw-gate-3
+lift is excluded; generic raw gate-3 machines remain outside the theorem.
+
 ## X-9101 — exact checker, structural tooling, and bounded searches
 
 - **Claim ID:** X-9101
@@ -272,9 +315,9 @@ noncofinite skeleton `R`.
 The baseline reproduced the `3n-1` control, found no nonempty safe kernel among
 all 66,282 labeled standard-map skeletons through four states, and found none
 for every one- and two-state core behind the specified 72-bit guard.  The
-extended suite contains 76 tests, including exact odd-core/suffix-lift checks,
-portable-bank validation, and differential agreement between two closure
-routes on all 5,898 complete DFA
+extended suite contains 104 tests, including exact odd-core/suffix-lift
+checks, portable-bank validation, trie-batched implication equivalence, and
+differential agreement between two closure routes on all 5,898 complete DFA
 candidates (746 labeled skeletons through three states, each with every
 accepting mask).  A two-session, gate-0 exact-floor scout checked and
 rejected 22 proposed 72-state machines and learned 213 exact implications
@@ -283,6 +326,16 @@ with status `time_limit`, not UNSAT. A seeded raw gate-3 scout checked two
 models and learned three additional clauses; a seeded 71-state suffix-gate-2
 scout checked five models and learned 11 additional clauses. Both stopped at
 20-second soft boundaries and found no candidate.
+
+The paired generation-zero census completed all 138 suffix/raw partitions,
+exactly rejected all 138 one-model proposals, recorded 1,855 local implication
+instances, and had no zero-model stall.  Every planned partition has one
+rejected proposal, but none is eliminated.  The
+reset-spine audit finds only 1,692 distinct length-71 factors in the 224-clause
+corpus versus `2^68` required to cover any fixed gate by concrete antecedents.
+The symbolic minimum-word artifact records gate 2 as solver-UNSAT and 68
+exactly rejected satisfiable countermodels at gates 3 through 70; only L-9114's
+separate carry proof eliminates gate 2.
 
 ## Gap audit
 
@@ -307,6 +360,10 @@ scout checked five models and learned 11 additional clauses. Both stopped at
   0 or every generic 72-state table.
 - L-9112's colored skeletons grow strictly and directly express only finite or
   cofinite languages; product synthesis remains an open empirical direction.
+- L-9113 bounds concrete antecedent-factor coverage only.  Symbolic transition
+  clauses and direct arithmetic contradictions lie outside its scope.
+- L-9114 assumes the exact-floor suffix normal form.  It does not exclude
+  larger suffix DFAs or generic raw gate-3 machines.
 - The optional CEGIS solver emits no independently checkable UNSAT proof, and
   every committed scout remains explicitly bounded and partition-specific.
 - No bounded failure is extrapolated to arbitrary regular languages.

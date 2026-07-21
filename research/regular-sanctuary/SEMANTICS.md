@@ -500,6 +500,13 @@ Imported and locally learned ledgers remain separate, and neither source
 model accounting nor solver conclusion is transported. Source status is kept
 only as non-authoritative provenance.
 
+L-9113 constructs reset-pattern spines showing an exponential blind spot
+specific to concrete antecedent clauses; symbolic transition clauses and
+arithmetic contradictions lie outside its bound.  L-9114 then applies the
+exact-distance output-length budget and ripple-carry arithmetic to the
+1-preferred minimum-length word, ruling out gate 2.  The remaining structured
+suffix search range is `3,...,70`.
+
 ## 14. Depth-colored refinement features
 
 Let `tau(n)` be the first shortcut time at which `n` reaches `{1,2}`, or

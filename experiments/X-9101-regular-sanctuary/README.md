@@ -38,11 +38,18 @@ must pass exact finite-product closure before it can become a candidate.
 - `odd_suffix_cegis.py` — optional Z3 proposal engine for L-9111's structured
   71-state suffix normal form. It checks `U` exactly and then requires the
   unchanged shortcut verifier to accept the one-state lift.
+- `paired_gate_census.py` — durable generation-barrier coordinator for the 69
+  structured suffix/raw gate pairs, with Z3-free exact artifact replay.
+- `reset_spine.py` — standard-library-only reset-pattern construction and
+  concrete-clause coverage audit for L-9113.
+- `symbolic_minimum.py` — Boolean ripple-carry and local distance-budget model
+  for the 1-preferred minimum-length word used by L-9114.
 - `check_certificate.py` — Python-standard-library-only JSON certificate verifier.
 - `run.py` — deterministic baseline driver.
 - `test_regular_sanctuary.py`, `test_independent_check.py`,
-  `test_odd_core.py`, `test_spine_cegis.py`, `test_odd_suffix_cegis.py` —
-  adversarial regression suites.
+  `test_odd_core.py`, `test_spine_cegis.py`, `test_odd_suffix_cegis.py`,
+  `test_paired_gate_census.py`, `test_reset_spine.py`, and
+  `test_symbolic_minimum.py` — adversarial regression suites.
 - `results/control-3n-minus-1.json` — known-cycle positive-control certificate.
 - `results/summary.json` — frozen original baseline.
 - `results/spine-cegis-diagnostic.json` — five-state solver-engine diagnostic.
@@ -59,6 +66,12 @@ must pass exact finite-product closure before it can become a candidate.
   scout.
 - `results/odd-suffix-q71-gate2-seeded-scout.json` — separate bounded suffix
   gate-2 scout seeded by the normalized shortcut bank.
+- `results/paired-gate-census-generation0.json` — complete 138-partition
+  one-model census with every model exactly replayable.
+- `results/reset-spine-q71-bank-blind-spot.json` — exact q=71 concrete-factor
+  coverage and 69-gate reset-spine audit.
+- `results/symbolic-minimum-q71-gates2-70.json` — local carry/distance models
+  for all structured suffix gates.
 
 ## Software environment
 
@@ -78,14 +91,17 @@ must pass exact finite-product closure before it can become a candidate.
 From this directory, the trusted checker and test discovery run as:
 
 ~~~text
-python -B -m py_compile automata.py transducer.py verify.py independent_check.py odd_core.py search.py run.py check_certificate.py spine_cegis.py odd_suffix_cegis.py test_regular_sanctuary.py test_independent_check.py test_odd_core.py test_spine_cegis.py test_odd_suffix_cegis.py
+python -B -m py_compile automata.py transducer.py verify.py independent_check.py odd_core.py search.py run.py check_certificate.py spine_cegis.py odd_suffix_cegis.py paired_gate_census.py reset_spine.py symbolic_minimum.py test_regular_sanctuary.py test_independent_check.py test_odd_core.py test_spine_cegis.py test_odd_suffix_cegis.py test_paired_gate_census.py test_reset_spine.py test_symbolic_minimum.py
 python -B -m unittest -v
 python -B check_certificate.py results/control-3n-minus-1.json --allow-nonstandard-control
+python -S -B reset_spine.py --validate results/reset-spine-q71-bank-blind-spot.json
+python -S -B symbolic_minimum.py --validate results/symbolic-minimum-q71-gates2-70.json
+python -S -B paired_gate_census.py --validate results/paired-gate-census-generation0.json
 python -B run.py --exhaustive-states 4 --approximation-depth 20
 ~~~
 
-With the pinned optional Z3 dependency installed, all 76 tests pass. In a
-standard-library-only environment, 61 pass and the 15 synthesis tests skip.
+With the pinned optional Z3 dependency installed, all 104 tests pass. In a
+standard-library-only environment, 77 pass and the 27 synthesis tests skip.
 
 The optional search dependency and engine diagnostic are:
 
@@ -137,6 +153,16 @@ The historical unseeded suffix scout used:
 python -B odd_suffix_cegis.py --states 71 --gate 2 --seed 0 --max-models 100 --time-limit 10 --result results/odd-suffix-q71-gate2-scout-replay.json
 ~~~
 
+The paired generation-zero wave used four workers, a 30-second watchdog, a
+one-model quota per partition, and no local-clause sharing across partitions.
+The other two scientific audits use deterministic q=71 parameters:
+
+~~~text
+python -B paired_gate_census.py --output results/paired-gate-census-generation0-replay.json --watchdog 30 --workers 4
+python -B reset_spine.py --output results/reset-spine-q71-bank-blind-spot-replay.json
+python -B symbolic_minimum.py --states 71 --gate-min 2 --gate-max 70 --seed 0 --timeout 10 --result results/symbolic-minimum-q71-gates2-70-replay.json
+~~~
+
 All replay outputs use ignored `*-replay.json` names so the committed artifact
 hashes remain stable.
 
@@ -152,7 +178,7 @@ Its full environment-bound summary digest is
 ## Frozen original baseline
 
 - Direct standard-transducer comparison: every `1 <= n < 100000`.
-- Original regression suite: 29 tests; current extended suite: 76 tests.
+- Original regression suite: 29 tests; current extended suite: 104 tests.
 - Finite safety approximants: depths 0 through 20.
 - Labeled raw transition skeletons:
   - 1 state: 1;
@@ -201,7 +227,16 @@ The additional tests establish finite, replayable agreement boundaries:
   dropping only one zero from an even output;
 - CEGIS tests exercise batched exact implications, mandatory final
   verification, strict checkpoint validation, resume accounting, and explicit
-  timeout/model-limit result boundaries.
+  timeout/model-limit result boundaries;
+- prefix-trie batching is formula-equivalent to asserting each implication
+  separately in both raw and suffix encodings;
+- paired-census tests cover outside-in scheduling, process isolation, atomic
+  checkpoints, implementation provenance, strict replay, and resealed
+  tampering without instantiating Z3;
+- reset-spine tests exhaust the required-factor lemma through `q=7` and replay
+  all 69 exact countermodels and explicit bank evaders;
+- symbolic-minimum tests cover small gate-2 UNSAT instances, satisfiable path
+  replay, canonical nested schemas, state-count binding, and digest tampering.
 
 ## Exact-floor CEGIS observations
 
@@ -276,6 +311,60 @@ The raw gate-3 and suffix gate-2 scouts share a gate correspondence but are
 not equivalent search spaces or a controlled speed benchmark. Their value is
 that the same exact obstruction knowledge now crosses both representations.
 
+### Paired generation-zero census
+
+The durable coordinator paired suffix `(q=71,h)` with raw `(q=72,h+1)` for
+every `h=2,...,70`, scheduled outside-in.  Generation zero used four workers,
+a 30-second per-partition watchdog, solver seed 0, and a one-model quota.  Each
+partition began from the same 213-clause bank; no locally learned clause crossed
+the generation barrier.
+
+All 138 partitions produced one model.  The unchanged primary verifier and the
+preimage route exactly rejected all 138, reconstructing 1,855 local implication
+instances: 895 in suffix partitions and 960 in raw partitions.  There were no
+zero-model stalls and no candidates.  Every status is still
+`bounded_model_quota`; the artifact eliminates no partition.
+
+The plan SHA-256 is
+`9eac8ad6777cb6f3e5fe8101d22de3a3563446c7744f024c99c0450f65f6edf3`,
+the semantic SHA-256 is
+`3f8718a960f74daa0e4838c049626235e3dcd9030ed5772696257e5872e5e946`,
+the payload SHA-256 is
+`f5e076e07a58652c3fd5567bab4017b59612b9bc867a97af77a9d898f30f6078`,
+and the formatted-file SHA-256 is
+`5506b97bf990f568136ea6e18f691749abe6cadc046cc84ee1e28726b0cbf723`.
+The no-Z3 validator replays every table, verification, relation batch, and
+implementation hash.
+
+### Reset-pattern concrete-clause audit
+
+The frozen corpus contains 213 imported and 11 local implications, with 2,170
+length-71 factor occurrences and 1,692 distinct factors.  L-9113 proves that a
+concrete antecedent bank needs `2^68 = 295147905179352825856` distinct factors
+to cover one fixed gate's reset-pattern family.  Adding all 69 distinguished
+targeted implications raises the corpus only to 1,760 factors, and an explicit
+factor-avoiding normal-form model remains at every gate.  Separately, all 69
+distinguished spines are exactly rejected by both odd-core and shortcut-lift
+verification.  No sanctuary is reported and no gate is eliminated.
+
+The semantic SHA-256 is
+`7851e9d0888e20e631206e66e2b373f69df3fb31f7bf45aeb92a04847d293e16`;
+the formatted-file SHA-256 is
+`3c32409080649bd02cf7ce1dd090e3e16dd1ac1ce958d8accc5d777354590dcd`.
+
+### Symbolic minimum-word audit
+
+The local ripple-carry/distance constraint is solver-UNSAT at gate 2 and
+satisfiable at all 68 gates from 3 through 70.  Every satisfiable model is
+reconstructed and exactly rejected by both odd-core and shortcut-lift
+verification; no candidate is reported.  Solver UNSAT remains corroboration,
+not a proof artifact.  L-9114's separate carry induction eliminates gate 2.
+
+The payload SHA-256 is
+`8273c8a3b3879c242323c8467d431f4f2713b46a596d47f9d2a753362c74a3b3`;
+the formatted-file SHA-256 is
+`5f6ed1ec31d890082819026c28634786072673060cc0275fc6a31bb9537eab57`.
+
 ## What is rigorous versus empirical
 
 The source implements finite graph algorithms. Given a certificate, the
@@ -297,10 +386,15 @@ parameters but make no claim about larger automata or unbounded search.
 - The preimage route shares the project's `preimage_dfa` constructor and is
   not a separately authored checker.
 - The optional solver emits no independently checkable UNSAT proof artifact.
-- The committed raw searches are a two-minute gate-0 scout and a 20-second
-  seeded gate-3 scout, not exhaustive partition results.
+- Generation zero touches suffix gates `2,...,70` and raw gates `3,...,71`, but
+  only at a one-model quota.  These bounded statuses eliminate no partition.
+  Raw gate 0 remains represented only by the earlier bounded scout.
 - The 71-state suffix lane is conditional on the external verified range and
   covers only a structured subset of raw exact-floor machines.
+- L-9113 constrains concrete antecedent-factor coverage only; symbolic clauses
+  and arithmetic arguments are outside its lower bound.
+- L-9114 excludes only gate 2 inside the exact-distance suffix normal form, not
+  larger suffix automata or generic raw gate-3 machines.
 - SHA-256 makes bank provenance tamper-evident, not cryptographically signed;
   logical safety instead comes from recomputing every imported exact image.
 - A bounded empty kernel or a long sequence of rejected models does not support
@@ -312,18 +406,17 @@ parameters but make no claim about larger automata or unbounded search.
 
 ## Next experiment
 
-Use the portable bank to cover suffix gates `2,...,70` first, because this
-removes one forced state and checks closure under the smaller fully accelerated
-transducer. Run raw gates `0,3,...,71` as the broader control, preserving local
-versus imported accounting in every artifact. Share only independently
-revalidated exact implications across partitions. Retain source status only as
-non-authoritative provenance; never credit it or source model counts to the
-target run.
+Apply the distance-budget construction to the first two or three `U` images of
+the 1-preferred minimum-length word at suffix gates `3,...,70`.  In parallel,
+extract and minimize symbolic transition-cube nogoods from exact closure
+failures so that one independently checkable arithmetic witness blocks many
+reset patterns at once.  Keep raw gates `0,3,...,71` as the broader control,
+and share revalidated clauses only across explicit generation barriers.
 
-The primary mathematical objective is now to compress recurring learned
-clauses into a human proof obstruction for the 71-state suffix normal form,
-not merely accumulate timeouts. In parallel, implement L-9112's colored
-refinement products with popcount parity as the first genuinely recurrent
-nonslender feature. Every positive proposal still returns to the unchanged
-shortcut checker. A proof-producing solver or separately authored verifier is
-required before promoting any negative solver claim.
+The primary mathematical objective is to extend L-9114's carry contradiction,
+not accumulate concrete clauses whose exponential blind spot is quantified by
+L-9113.  The secondary lane remains L-9112's colored refinement products with
+popcount parity as the first genuinely recurrent nonslender feature.  Every
+positive proposal still returns to the unchanged shortcut checker.  A proof-
+producing solver or separately authored verifier is required before promoting
+any negative solver claim.

@@ -160,7 +160,8 @@ accepting-state restriction.
 - L-9104 supplies an accepted word of length at most the state count.
 - L-9106 identifies the odd iterate `U(m)` inside a shortcut sanctuary.
 - The number 72 and every contradiction involving length at most 71 are
-  conditional on Barina's published verification:
+  conditional on the strict `n<2^71` premise audited in L-9104 from Barina's
+  contribution statement and Section 6:
   https://doi.org/10.1007/s11227-025-07337-0.
 - Citation admission remains pending issue #7.
 

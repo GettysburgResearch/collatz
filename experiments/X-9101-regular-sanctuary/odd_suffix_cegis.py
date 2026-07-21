@@ -410,6 +410,32 @@ class OddSuffixEncoding:
             )
         )
 
+    def add_implications_batch(
+        self, implications: Sequence[SuffixImplication]
+    ) -> None:
+        """Assert implications with one shared LSD-prefix expression trie."""
+
+        expressions: dict[Word, object] = {(): self.z3.IntVal(0)}
+
+        def shared_run(suffix: Word):
+            prefix: Word = ()
+            for bit in suffix:
+                next_prefix = prefix + (bit,)
+                if next_prefix not in expressions:
+                    expressions[next_prefix] = self.z3.Select(
+                        self.delta[bit], expressions[prefix]
+                    )
+                prefix = next_prefix
+            return expressions[prefix]
+
+        for implication in implications:
+            self.solver.add(
+                self.z3.Implies(
+                    shared_run(implication.input_suffix) == self.gate,
+                    shared_run(implication.output_suffix) == self.gate,
+                )
+            )
+
     def extract_candidate(self, model) -> DFA:
         transitions = tuple(
             tuple(
@@ -870,8 +896,7 @@ def run_odd_suffix_cegis(
     }
     if len(learned_keys) != len(imported) + len(learned):
         raise ValueError("imported and locally learned implications overlap")
-    for implication in imported + learned:
-        encoding.add_implication(implication)
+    encoding.add_implications_batch(tuple(imported + learned))
     batches = list(loaded.batch_history)
     models_before = loaded.models_checked_cumulative
     elapsed_before = loaded.elapsed_seconds_cumulative
@@ -1019,9 +1044,8 @@ def run_odd_suffix_cegis(
         if not primary_seen:
             raise AssertionError("primary odd closure witness is absent from relation")
 
-        for implication in batch:
-            learned.append(implication)
-            encoding.add_implication(implication)
+        learned.extend(batch)
+        encoding.add_implications_batch(batch)
         full_lengths = [1 + len(item.input_suffix) for item in batch]
         batches.append(
             {

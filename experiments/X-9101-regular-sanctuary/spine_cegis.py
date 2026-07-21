@@ -317,6 +317,39 @@ class SpineEncoding:
             )
         )
 
+    def add_implications_batch(
+        self, implications: Sequence[LearnedImplication]
+    ) -> None:
+        """Assert implications while sharing every common word prefix.
+
+        The portable banks contain many long words with common LSD-first
+        prefixes.  Rebuilding a separate nested ``Select`` expression for
+        every endpoint is logically harmless but needlessly expensive in a
+        multi-gate census.  This trie cache is local to one assertion batch;
+        it changes only expression construction, never the asserted clauses.
+        """
+
+        expressions: dict[Word, object] = {(): self.z3.IntVal(0)}
+
+        def shared_run(word: Word):
+            prefix: Word = ()
+            for bit in word:
+                next_prefix = prefix + (bit,)
+                if next_prefix not in expressions:
+                    expressions[next_prefix] = self.z3.Select(
+                        self.delta[bit], expressions[prefix]
+                    )
+                prefix = next_prefix
+            return expressions[prefix]
+
+        for implication in implications:
+            self.solver.add(
+                self.z3.Implies(
+                    shared_run(implication.input_word) == self.gate,
+                    shared_run(implication.output_word) == self.gate,
+                )
+            )
+
     def extract_candidate(self, model) -> DFA:
         transitions = tuple(
             tuple(
@@ -990,8 +1023,7 @@ def run_spine_cegis(
         )
         known_bank_digests.add(bank.bank_sha256)
 
-    for implication in (*learned, *imported):
-        encoding.add_implication(implication)
+    encoding.add_implications_batch((*learned, *imported))
 
     started = time.monotonic()
     models_checked = 0
@@ -1123,9 +1155,8 @@ def run_spine_cegis(
                 "recomputed exact terminal relation"
             )
 
-        for implication in batch:
-            learned.append(implication)
-            encoding.add_implication(implication)
+        learned.extend(batch)
+        encoding.add_implications_batch(batch)
 
         witness_lengths = [len(item.input_word) for item in batch]
         batch_history.append(

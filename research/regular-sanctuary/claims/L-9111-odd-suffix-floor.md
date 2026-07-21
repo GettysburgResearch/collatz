@@ -196,11 +196,9 @@ No 71-state suffix candidate is known.
 
 ## Suggested next attack
 
-Encode the 71-state suffix spine directly and use the fully accelerated odd
-map for counterexample-guided implications.  Lift every proposed suffix DFA by
-the construction above and require the unchanged shortcut verifier to accept
-before reporting a candidate. Normalize every reusable shortcut implication
-by stripping all initial LSD zeros from both sides before removing the forced
-odd marker, and revalidate the resulting pair against `U`; a one-bit slice is
-unsound when the shortcut output is still even. Cover suffix gates `2,...,70`
-from the shared exact bank and look for a gate-independent finite obstruction.
+L-9113 shows that antecedent-by-antecedent concrete-bank coverage is
+exponentially mismatched to reset-pattern spines, while L-9114 eliminates gate
+2 by a direct carry argument.  Continue gates `3,...,70` with symbolic
+transition-cube nogoods or iterated minimum-word image constraints.  Lift every
+proposal to the unchanged shortcut verifier, and revalidate every reusable
+arithmetic implication against the exact fully accelerated odd map.

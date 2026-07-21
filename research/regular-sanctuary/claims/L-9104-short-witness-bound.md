@@ -52,8 +52,14 @@ a forbidden cycle state in the sanctuary, a contradiction.
 ## Dependency audit
 
 - The first paragraph uses only D-9101 and finite graph reachability.
-- The 72-state corollary additionally cites Barina's published verification:
+- The 72-state corollary uses the strict range `1 <= n < 2^71`.  Barina's
+  2025 article lists as a contribution that the project verified **all numbers
+  below `2^71`**, Section 6 reports that verification limit, and Table 10 states
+  the exclusive range explicitly:
   https://doi.org/10.1007/s11227-025-07337-0
+  https://link.springer.com/article/10.1007/s11227-025-07337-0/tables/10
+- No assertion about the endpoint `n=2^71` is needed: a canonical word of
+  length at most 71 always represents a value strictly below `2^71`.
 - Citation admission remains pending issue #7.
 
 ## Gap audit

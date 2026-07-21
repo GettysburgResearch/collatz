@@ -13,6 +13,7 @@ from automata import shortest_canonical_word
 from spine_cegis import (
     BANK_SCHEMA,
     INCOMPLETE_DISCLAIMER,
+    LearnedImplication,
     SCHEMA,
     SpineEncoding,
     SpineSearchConfig,
@@ -97,6 +98,24 @@ class SpineConfigurationTests(unittest.TestCase):
 
 @unittest.skipUnless(HAS_Z3, "optional z3-solver is not installed")
 class SpineCegisTests(unittest.TestCase):
+    def test_prefix_trie_batch_asserts_the_same_clauses(self) -> None:
+        config = SpineSearchConfig(state_count=5, gate=3, solver_seed=3)
+        implications = (
+            LearnedImplication((1, 1, 0, 1), (1, 0, 1)),
+            LearnedImplication((1, 1, 1, 1), (1, 0, 0, 1)),
+        )
+        sequential = SpineEncoding(config)
+        baseline = len(sequential.solver.assertions())
+        for implication in implications:
+            sequential.add_implication(implication)
+        batched = SpineEncoding(config)
+        batched.add_implications_batch(implications)
+
+        self.assertEqual(
+            [str(item) for item in sequential.solver.assertions()[baseline:]],
+            [str(item) for item in batched.solver.assertions()[baseline:]],
+        )
+
     def test_symbolic_model_obeys_complete_spine_normal_form(self) -> None:
         config = SpineSearchConfig(state_count=5, solver_seed=3)
         encoding = SpineEncoding(config)

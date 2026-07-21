@@ -88,6 +88,22 @@ amplifier programs.
 27. Designed the first product probe for that secondary lane: popcount parity
     is the smallest recurrent nonslender feature not covered by the cylinder or
     finite-lasso obstructions; adjacent-`11` parity is the next control.
+28. Replaced per-clause solver construction with prefix-trie batching in both
+    CEGIS lanes and added formula-equivalence regressions.
+29. Ran a fresh paired generation-zero census over every structured suffix gate
+    `2,...,70` and raw control gate `3,...,71`, with a one-model quota and an
+    explicit no-sharing generation barrier.
+30. Derived L-9113's reset-pattern family and corrected an initially false
+    terminal-window conjecture to the required contiguous-factor theorem.  The
+    resulting fixed-gate lower bound is `2^(q-3)` concrete antecedent factors.
+31. Derived L-9114's ripple-carry contradiction for suffix gate 2, encoded the
+    same necessary constraint as a local Boolean circuit, and independently
+    reconstructed the proof including its small boundary cases.
+32. Froze and replayed the paired census, reset-spine audit, and symbolic
+    minimum-word audit without Z3.
+33. Hardened the paired provenance to pin the redundant preimage checker and
+    hardened symbolic replay to bind canonical candidate schemas and state
+    counts to artifact scope; regenerated the paired artifact from scratch.
 
 ## New results
 
@@ -125,14 +141,21 @@ amplifier programs.
   strict refinement chain. Bare colored skeletons express only finite or
   cofinite languages; reachable products with recurrent features retain exact
   refinement maps.
+- `L-9113`: every fixed suffix gate has `2^(q-3)` reset-pattern normal-form
+  models.  A smaller concrete antecedent-factor bank cannot eliminate the gate;
+  symbolic cubes and arithmetic contradictions lie outside this bound.
+- `L-9114`: the accepting gate cannot be `r_2` in the exact-distance suffix
+  normal form.  This excludes only the corresponding structured raw-gate-3
+  lift, not generic raw gate-3 machines.
 
-All remain `PROPOSED` pending independent reconstruction.
+All remain `PROPOSED` pending repository review and explicit status promotion.
 
 ### Exact bounded computation
 
 `X-9101` produced these observations:
 
-- 76 tests pass in the current extended suite.
+- 104 tests pass in the current extended suite.  With site packages disabled,
+  77 pass and the 27 optional-synthesis tests skip.
 - The transducer matches direct shortcut arithmetic for every
   `1 <= n < 100000`.
 - The verifier accepts the `3n-1` control cycle `{5,7,10}`.
@@ -179,6 +202,29 @@ All remain `PROPOSED` pending independent reconstruction.
   and stopped at 20.125 seconds with 224 clauses enforced and status
   `time_limit`; artifact SHA-256 is
   `13ff21ba4f71b1b206c7a538bbff7f94a68d6fac7412001920b51a4e2ae4de07`.
+- The paired generation-zero census completed all 138 suffix/raw partitions.
+  All 138 one-model proposals were exactly rejected, producing 1,855 local
+  implication instances (895 suffix and 960 raw), with zero stalls and zero
+  candidates.  The plan, semantic, payload, and formatted-file SHA-256 values
+  are respectively
+  `9eac8ad6777cb6f3e5fe8101d22de3a3563446c7744f024c99c0450f65f6edf3`,
+  `3f8718a960f74daa0e4838c049626235e3dcd9030ed5772696257e5872e5e946`,
+  `f5e076e07a58652c3fd5567bab4017b59612b9bc867a97af77a9d898f30f6078`,
+  and `5506b97bf990f568136ea6e18f691749abe6cadc046cc84ee1e28726b0cbf723`.
+- The reset-spine audit found 1,692 distinct length-71 factors in the frozen
+  224-clause corpus and 1,760 after 69 targeted additions, versus `2^68`
+  required to cover one fixed gate's family.  All 69 distinguished spines were
+  exactly rejected; no gate was eliminated.  Semantic SHA-256 is
+  `7851e9d0888e20e631206e66e2b373f69df3fb31f7bf45aeb92a04847d293e16`;
+  formatted-file SHA-256 is
+  `3c32409080649bd02cf7ce1dd090e3e16dd1ac1ce958d8accc5d777354590dcd`.
+- The symbolic minimum-word artifact records one gate-2 solver-UNSAT necessary
+  constraint and 68 satisfiable countermodels, all exactly rejected, with zero
+  candidates.  Payload SHA-256 is
+  `8273c8a3b3879c242323c8467d431f4f2713b46a596d47f9d2a753362c74a3b3`;
+  formatted-file SHA-256 is
+  `5f6ed1ec31d890082819026c28634786072673060cc0275fc6a31bb9537eab57`.
+  Solver UNSAT is corroboration only; L-9114's carry induction is the proof.
 
 These bounded failures are not evidence for Collatz convergence.
 
@@ -194,10 +240,13 @@ unless they already contain a nontrivial cycle.  At the exact floor, L-9109
 provides substantially stronger solver symmetry breaking than a generic
 length guard.
 
-The main lane is now the 71-state suffix floor, seeded by every exact reusable
-obstruction and aimed at extracting a proof pattern rather than merely running
-longer. The secondary lane is L-9112's recurrent-feature product chain, with
-popcount parity as its smallest probe.
+The main lane is now gates `3,...,70` of the 71-state suffix floor.  L-9113
+shows that accumulating concrete antecedents is exponentially mismatched to a
+large normal-form family, while L-9114 demonstrates the better pattern: combine
+the exact-distance budget with arithmetic carries to eliminate a gate.  The
+next primary probe is two or three iterated minimum-word images plus minimized
+symbolic transition-cube nogoods.  The secondary lane remains L-9112's
+recurrent-feature product chain, with popcount parity as its smallest probe.
 
 ## Candidate counterexamples
 
@@ -220,6 +269,10 @@ None. No standard-Collatz invariant language was found or claimed, no
 - Naively removing one bit from a stored odd shortcut output was rejected:
   44 of the 213 frozen outputs require further acceleration before they become
   odd-suffix clauses.
+- Unstructured concrete antecedent accumulation is not a viable exhaustive
+  fixed-gate strategy: L-9113 requires `2^68` distinct factors at q=71 for its
+  reset-pattern family.  Concrete witnesses remain useful inputs to symbolic
+  cube learning.
 - Strict growth was not made the primary lane: for block lengths 1 and 2 it
   collapses to an impossible indefinitely all-odd pattern.  Closure-only
   remains the broader target.
@@ -231,8 +284,9 @@ None. No standard-Collatz invariant language was found or claimed, no
 - The preimage/inclusion route is algorithmically distinct from the endpoint
   relation but reuses `verify.preimage_dfa`; it is not an independent checker
   or reviewer.
-- The external `2^71` result and literature positioning remain subject to
-  issue #7's audit.
+- Barina's contribution statement and Section 6 were checked for the exact
+  strict premise `n<2^71`; broader literature admission and positioning remain
+  subject to issue #7's audit.
 - L-9108's slender corollary additionally depends on the external classical
   decomposition into finitely many `u v* w` components; its finite-ray theorem
   is stated and proved separately.
@@ -246,6 +300,10 @@ None. No standard-Collatz invariant language was found or claimed, no
   gate 0 or every generic 72-state transition table.
 - L-9112's strict chain does not imply eventual stabilization or a nonempty
   product kernel; its synthesis power is empirical.
+- L-9113 bounds only concrete antecedent-factor coverage, not symbolic proof
+  complexity or direct arithmetic arguments.
+- L-9114 assumes the exact-distance suffix normal form.  It does not exclude
+  larger suffix DFAs or generic raw gate-3 machines.
 - The subsequential terminal-output convention is easy to reverse; explicit
   boundary tests cover `1`, `5`, and `7`, and the differential route checks the
   global canonical input/output contract, but a separately authored
@@ -257,9 +315,10 @@ None. No standard-Collatz invariant language was found or claimed, no
 - A CEGIS timeout or model limit is incomplete.  Even solver-level UNSAT is not
   promoted because the current prototype emits no independently checkable
   proof artifact.
-- The committed scouts cover only raw gates 0 and 3 and suffix gate 2 under
-  bounded configurations. Gates 1 and 2 conflict with the raw exact-floor
-  `11` constraints; every other partition remains open.
+- Generation zero has one exactly rejected proposal in every structured suffix
+  gate `2,...,70` and paired raw gate `3,...,71`, but its one-model quotas
+  eliminate no partition.  Raw gate 0 remains only a bounded scout; raw gates
+  1 and 2 conflict with the exact-floor `11` constraints.
 - Unrestricted automaton existence and `T*` reachability are not claimed
   decidable.
 
@@ -281,6 +340,8 @@ None. No standard-Collatz invariant language was found or claimed, no
 - `research/regular-sanctuary/claims/L-9110-quotient-monotonicity.md`
 - `research/regular-sanctuary/claims/L-9111-odd-suffix-floor.md`
 - `research/regular-sanctuary/claims/L-9112-depth-colored-residual-refinement.md`
+- `research/regular-sanctuary/claims/L-9113-reset-spine-bank-blind-spot.md`
+- `research/regular-sanctuary/claims/L-9114-gate-two-carry-elimination.md`
 - `experiments/X-9101-regular-sanctuary/README.md`
 - `experiments/X-9101-regular-sanctuary/.gitattributes`
 - `experiments/X-9101-regular-sanctuary/.gitignore`
@@ -299,6 +360,12 @@ None. No standard-Collatz invariant language was found or claimed, no
 - `experiments/X-9101-regular-sanctuary/test_spine_cegis.py`
 - `experiments/X-9101-regular-sanctuary/odd_suffix_cegis.py`
 - `experiments/X-9101-regular-sanctuary/test_odd_suffix_cegis.py`
+- `experiments/X-9101-regular-sanctuary/paired_gate_census.py`
+- `experiments/X-9101-regular-sanctuary/test_paired_gate_census.py`
+- `experiments/X-9101-regular-sanctuary/reset_spine.py`
+- `experiments/X-9101-regular-sanctuary/test_reset_spine.py`
+- `experiments/X-9101-regular-sanctuary/symbolic_minimum.py`
+- `experiments/X-9101-regular-sanctuary/test_symbolic_minimum.py`
 - `experiments/X-9101-regular-sanctuary/requirements.txt`
 - `experiments/X-9101-regular-sanctuary/requirements-search.txt`
 - `experiments/X-9101-regular-sanctuary/results/control-3n-minus-1.json`
@@ -310,12 +377,15 @@ None. No standard-Collatz invariant language was found or claimed, no
 - `experiments/X-9101-regular-sanctuary/results/odd-suffix-cegis-diagnostic.json`
 - `experiments/X-9101-regular-sanctuary/results/odd-suffix-q71-gate2-scout.json`
 - `experiments/X-9101-regular-sanctuary/results/odd-suffix-q71-gate2-seeded-scout.json`
+- `experiments/X-9101-regular-sanctuary/results/paired-gate-census-generation0.json`
+- `experiments/X-9101-regular-sanctuary/results/reset-spine-q71-bank-blind-spot.json`
+- `experiments/X-9101-regular-sanctuary/results/symbolic-minimum-q71-gates2-70.json`
 - this report
 
 ## Claims affected
 
 - `D-9101` — new, `PROPOSED`
-- `L-9101` through `L-9112` — new, `PROPOSED`
+- `L-9101` through `L-9114` — new, `PROPOSED`
 - `X-9101` — new, `EMPIRICAL`
 
 These are namespaced high-number reservations pending integrator
@@ -325,10 +395,11 @@ reconciliation.  No canonical root ledger was edited.
 
 1. Independently reconstruct the transducer table and product-graph closure
    proof from the statements, then replay the JSON control certificate.
-2. Cover suffix gates `2,...,70` from the common normalized bank and raw gates
-   `0,3,...,71` as the broader control, preserving separate accounting.
-3. Compress recurring exact clauses into a human obstruction for the suffix
-   normal form; do not substitute cumulative timeout for proof.
+2. Apply two or three iterated minimum-word image constraints at suffix gates
+   `3,...,70`, preserving exact arithmetic replay.
+3. Extract minimized symbolic transition-cube nogoods from exact closure
+   failures; benchmark whether each cube covers exponentially many reset
+   patterns instead of accumulating concrete antecedents.
 4. Coordinate with PR #14 through L-9112's canonical colored projections, and
    test popcount-parity then adjacent-`11`-parity products.
 5. Use low-residue filters only with a genuinely branching high-bit tail, and
@@ -342,12 +413,12 @@ reconciliation.  No canonical root ledger was edited.
 ## Handoff
 
 - **HANDOFF FROM:** `gpt56-regular-01`
-- **HANDOFF TO:** verifier for `L-9101`--`L-9112`; automata researcher for the next synthesis pass
+- **HANDOFF TO:** verifier for `L-9101`--`L-9114`; automata researcher for the next symbolic synthesis pass
 - **CURRENT CLAIM OR CANDIDATE:** no candidate; proposed checker lemmas and experiment `X-9101`
 - **BLOCKING STEP:** discover a structured transition skeleton whose maximal safe kernel is nonempty
-- **FILES TO READ:** `research/regular-sanctuary/SEMANTICS.md`, then `verify.py`, `spine_cegis.py`, `odd_suffix_cegis.py`, and the test suite
-- **FAILED ATTEMPTS:** all raw skeletons through four states; every one-/two-state core behind the frozen 72-bit guard
-- **MOST PROMISING NEXT MOVE:** cover the 71-state suffix gates from the portable obstruction bank and extract a finite proof pattern; in parallel probe popcount-colored refinement products
+- **FILES TO READ:** `research/regular-sanctuary/SEMANTICS.md`, claims L-9113/L-9114, then `symbolic_minimum.py`, `paired_gate_census.py`, and the test suite
+- **FAILED ATTEMPTS:** all raw skeletons through four states; every one-/two-state core behind the frozen 72-bit guard; exhaustive fixed-gate coverage by concrete antecedent clauses
+- **MOST PROMISING NEXT MOVE:** iterate the minimum-word carry constraint and learn minimized symbolic transition-cube nogoods on suffix gates `3,...,70`; in parallel probe popcount-colored refinement products
 - **MAIN RISK:** finite-horizon structure fails to stabilize, or every divergent orbit (if one exists) has no regular sanctuary
 - **WHAT WOULD FALSIFY THE CURRENT APPROACH:** a proof excluding all regular forward-invariant safe languages, or persistent structured-search UNSAT across a theoretically exhaustive template class
 - **POSSIBLE ORGANIZATIONAL IMPROVEMENT:** keep general unclaimed directions in issues and give every executable research program a namespaced README, certificate checker, frozen output, and explicit bounded-failure contract
