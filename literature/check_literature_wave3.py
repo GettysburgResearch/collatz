@@ -87,7 +87,7 @@ review = (LIT / "LIVE_REPO_REVIEW_WAVE3.md").read_text(encoding="utf-8")
 for needle in (
     "ordinary positive integer",
     "No located source constructs",
-    "independently review PR #16",
+    "Independently review PR #16",
     "completion-height",
 ):
     if needle not in review:
