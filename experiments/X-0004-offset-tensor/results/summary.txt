@@ -1,0 +1,6 @@
+verified L-0008 for precisions 1..8
+level=1 words=4 length=26 weight=3 precision=3
+level=2 words=8 length=81 weight=4 precision=4
+level=3 words=16 length=244 weight=5 precision=5
+verified finite odd-tail promotion: prefix_length=26 tail=37 branches=4
+all offset-tensor checks passed
