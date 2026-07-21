@@ -1,0 +1,23 @@
+Odd-run highway ladder: measure whether nested CRT odd-run constraints produce sustained forward growth / divergent survivors.
+highway_survivors_300=0 max_highway_peak=136510.280 max_evergreen_peak=81998.658
+  k=1 n=27 hwy_g=1.519 peak=170.963 below@59 trivial=True
+  k=3 n=31 hwy_g=3.452 peak=148.903 below@56 trivial=True
+  k=5 n=2047 hwy_g=7.597 peak=311.904 below@58 trivial=True
+  k=7 n=8191 hwy_g=17.088 peak=415.708 below@43 trivial=True
+  k=9 n=26623 hwy_g=38.445 peak=1997.484 below@65 trivial=True
+  k=11 n=131071 hwy_g=86.498 peak=5992.267 below@100 trivial=True
+  k=13 n=376831 hwy_g=194.620 peak=32394.615 below@154 trivial=True
+  k=15 n=1212415 hwy_g=437.894 peak=57590.320 below@105 trivial=True
+  k=17 n=4849663 hwy_g=985.261 peak=14397.571 below@104 trivial=True
+  k=19 n=33554431 hwy_g=2216.838 peak=136510.280 below@146 trivial=True
+  LADDER k=3 mod~2^3 n=31 odd_run=5 peak=148.903 below@56
+  LADDER k=5 mod~2^5 n=703 odd_run=6 peak=178.168 below@81
+  LADDER k=7 mod~2^7 n=2047 odd_run=11 peak=311.904 below@58
+  LADDER k=9 mod~2^9 n=8191 odd_run=13 peak=415.708 below@43
+  LADDER k=11 mod~2^11 n=26623 odd_run=11 peak=1997.484 below@65
+  LADDER k=13 mod~2^13 n=131071 odd_run=17 peak=5992.267 below@100
+  EVER n=10485759 k=20 odd_run=21 peak=81998.658 below@175
+  EVER n=15728639 k=20 odd_run=20 peak=54665.770 below@173
+  EVER n=20971519 k=20 odd_run=22 peak=40999.327 below@173
+  EVER n=30408703 k=20 odd_run=20 peak=36443.846 below@104
+  EVER n=31457279 k=20 odd_run=21 peak=27332.884 below@170

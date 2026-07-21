@@ -10,28 +10,20 @@ Date: 2026-07-21
 | Path | Status |
 |---|---|
 | Classical Schottky | Closed (`T-0103`) |
-| Atomic / general chronological tensor filled growth | Closed (`T-0104`, **`T-0105`**) |
-| Weight≥3 dense suffixes as filled-growth escape | Closed by `T-0105` (comb gaps) |
-| Algebraic cycle hunt | **OPEN** — empty through MITM \(L=37\) (`O-0106`) + multiblock (`O-0109`) |
-| Heteroclinic adelic | **OPEN** — model B on −17 (`O-0107`) |
-| **Valuation-fuel regenerative divergence** | **OPEN / active** — `D-FUEL-*`, `C-0104`, `O-0108` |
-| Non-concatenative splice | Weak so far (`X-0123`) |
+| Chronological tensor filled growth | Closed (`T-0105`) |
+| 2-adic valuation fuel (deep-burn) | **Closed** (`L-0114`) |
+| 2-adic fuel regeneration | Residual / stalled (`O-0108`, `C-0104`(3)) |
+| Algebraic cycle hunt | Residual — empty through MITM \(L=37\) |
+| **Odd-run highway ladder** | **OPEN** — spikes then return (`O-0111`) |
+| **Mixed-modulus growth ladder** | **OPEN** — delayed return (`O-0112`) |
+| **3-adic hybrid shadow** | **OPEN / active** — grow+preserve (`O-0110`) |
 
-## Headline theorems
+## Headline results this loop
 
-- `T-0101`…`T-0103` — accounting + classical Schottky meta-obstruction
-- `T-0104` — atomic tensor freeze
-- **`T-0105` — general Minkowski tensor freeze** (any integer \(E\))
-
-## Active baselines / new observations
-
-- `O-0103` / `X-0121` — no nontrivial cycles through \(L=16\)
-- `O-0106` / `X-0129` — MITM empty on convergent \((L,a)\) through \(L=37\) (trunc. \(41,49\))
-- `O-0109` / `X-0127` — short multi-block / sandwich / power families empty
-- `O-0105` / `X-0125` — −5 model-A: growing excursions destroy \(v_2(n+5)\)
-- **`O-0107` / `X-0128`** — −17 model-B: mild repair + **local grow+keep**; deep growth burns
-- **`O-0108` / `X-0131`–`X-0133`** — iterated / dip-repair / mixed-template fuel **stall** (≤+5 bits; no +10 escape)
-- `C-0104` — fuel tradeoff working conjecture
-- Directions claimed: `D-CYCLE-*`, `D-HETEROCLINIC-*`, **`D-FUEL-*`**
+- **`L-0114`** — deep 2-adic shadowing collapses under non-fixing excursions
+- `O-0110` — 3-adic grow+preserve exists; iteration ≤+3 bits
+- `O-0111` / `O-0112` — highway / mixed-modulus ladders: huge peaks, always return
 
 ## No K-candidate
+
+Checked: mixed-modulus “survivors” at 400 steps all hit \(\{1,2\}\) by ~500.

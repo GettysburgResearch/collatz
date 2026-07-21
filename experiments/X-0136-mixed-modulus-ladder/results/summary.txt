@@ -1,0 +1,19 @@
+Corrected mixed-modulus ladder: concatenate supercritical blocks under 2^L (+ optional 3/5) CRT; look for non-trivial forward survivors.
+stages=11 max_affine=283387333.428 max_peak=55905166006.266 nontriv=8
+  stage 0: L=6 a=6 aff_g=1.139e+01 real=1.142e+01 mod_bits=9 odd_mod=5
+  stage 1: L=12 a=12 aff_g=1.297e+02 real=1.298e+02 mod_bits=15 odd_mod=5
+  stage 2: L=18 a=18 aff_g=1.478e+03 real=1.478e+03 mod_bits=21 odd_mod=5
+  stage 3: L=24 a=24 aff_g=1.683e+04 real=1.683e+04 mod_bits=27 odd_mod=5
+  stage 4: L=30 a=30 aff_g=1.918e+05 real=1.918e+05 mod_bits=33 odd_mod=5
+  stage 5: L=36 a=36 aff_g=2.184e+06 real=2.184e+06 mod_bits=39 odd_mod=5
+  stage 6: L=42 a=42 aff_g=2.488e+07 real=2.488e+07 mod_bits=45 odd_mod=5
+  stage 7: L=48 a=48 aff_g=2.834e+08 real=2.834e+08 mod_bits=51 odd_mod=5
+  stage 8: L=48 a=48 aff_g=2.834e+08 real=2.834e+08 mod_bits=51 odd_mod=5
+  stage 9: L=48 a=48 aff_g=2.834e+08 real=2.834e+08 mod_bits=51 odd_mod=5
+  stage 10: EXTINCT
+  EVAL L=48 aff=2.834e+08 n=17169973579350015 peak=55905166006.266 trivial=False
+  EVAL L=48 aff=2.834e+08 n=17169973579350015 peak=55905166006.266 trivial=False
+  EVAL L=48 aff=2.834e+08 n=5348024557502463 peak=6894087884.425 trivial=False
+  EVAL L=48 aff=2.834e+08 n=5348024557502463 peak=6894087884.425 trivial=False
+  EVAL L=48 aff=2.834e+08 n=20547673299877887 peak=3930831984.816 trivial=False
+  EVAL L=48 aff=2.834e+08 n=10696049115004927 peak=3447043942.212 trivial=False

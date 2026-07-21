@@ -31,6 +31,10 @@ Classical Schottky closed under `T-0103`. Atomic growing geometry closed under `
 | N-P22 | MITM cycle builder empty through convergent L=37 (`O-0106`). |
 | N-P23 | Short multi-block / sandwich / power cycle families empty (`O-0109`). |
 | N-P24 | Iterated grow+keep and scheduled dip/repair stall on −17 (`O-0108`, `X-0132`). |
+| N-P25 | Deep 2-adic shadowing burns to \(v_2(\kappa)-L\) (`L-0114`). |
+| N-P26 | Odd-run highways spike then return to trivial cycle (`O-0111`). |
+| N-P27 | Mixed-modulus length-48 ladders delay return but still return (`O-0112`). |
+| N-P28 | Iterated 3-adic grow+keep stalls at ≤+3 bits (`O-0110` / `X-0138`). |
 
-Residual open: covering-system cycle sieves; mixed-template / morphic fuel engines
-(`D-FUEL-*`, `C-0104`); elevating deep-burn half of fuel tradeoff to a lemma.
+Residual open: mixed \(v_2\)/\(v_3\) engines; return-bound theorems after highways
+(`D-RETURN-*`); completing cycle MITM at \(L=49\).

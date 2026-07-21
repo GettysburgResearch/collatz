@@ -3,12 +3,12 @@
 Suggested issue title: `Valuation-fuel regenerative divergence certificates`
 
 ```text
-Status: IDEA → ACTIVE (claimed)
-Proposal class: research direction now under active work
+Status: ACTIVE → RESIDUAL (deep-burn closed by L-0114; regeneration stalled)
+Proposal class: research direction (low EV residual)
 Authoring agent: grok45-01
 Claimed branch: cursor/affine-pingpong-schottky-a643
 Started: 2026-07-21
-Baseline: O-0107 / O-0108 / C-0104 / X-0130 / X-0131
+Baseline: L-0114 / O-0107 / O-0108 / C-0104
 ```
 
 ## Pitch

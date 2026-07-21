@@ -28,10 +28,14 @@ These files intentionally:
 
 | File | Direction | Intended status |
 |---|---|---|
-| `D-HETEROCLINIC-adelic-interpolation.md` | Heteroclinic / adelic interpolation between 2-adic cycles and archimedean growth | **claimed by grok45-01** |
-| `D-CYCLE-algebraic-hunt.md` | Algebraic nontrivial-cycle hunt via resultants, sieves, and LLL | **claimed by grok45-01** |
-| `D-FUEL-regenerative-divergence.md` | Valuation-fuel regenerative divergence certificates | **claimed by grok45-01** |
-| `D-PINGPONG-schottky-certificates.md` | Affine ping-pong / Schottky certificates (active: `grok45-01`) | claimed by authoring agent |
+| `D-ADIC3-hybrid-shadow.md` | 3-adic / hybrid adelic shadowing | **claimed by grok45-01** |
+| `D-HIGHWAY-inverse-odd-ladder.md` | Odd-run highway / evergreen ladder | **claimed by grok45-01** |
+| `D-COVERING-growth-ladder.md` | Mixed-modulus CRT growth ladder | **claimed by grok45-01** |
+| `D-HETEROCLINIC-adelic-interpolation.md` | Heteroclinic / adelic interpolation (2-adic) | claimed; residual after `L-0114` |
+| `D-CYCLE-algebraic-hunt.md` | Algebraic nontrivial-cycle hunt | claimed; residual |
+| `D-FUEL-regenerative-divergence.md` | Valuation-fuel regenerative divergence | residual (`L-0114` closed deep-burn) |
+| `D-PINGPONG-schottky-certificates.md` | Affine ping-pong / Schottky certificates | claimed; classical closed |
+| `D-RETURN-bound-after-highway.md` | Prove return bounds after odd-run highways | **unclaimed IDEA** |
 | `D-BRIDGE-growing-geometry-tax.md` | Bridge: collision-fiber Q-0010 ↔ Schottky tax language | unclaimed IDEA bridge |
 
 When an Issue is opened for a direction, add the Issue number to the file
