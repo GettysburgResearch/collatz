@@ -102,7 +102,7 @@ This ratio has the exact product expansion
 \frac{2^Ln_L}{3^{A_L}n_0}
 =
 \prod_{\substack{0\le t<L\\n_t\text{ odd}}}
-\left(1+\frac1{3n_t}\right).
+\left(1+\frac{1}{3n_t}\right).
 }
 \tag{4}
 \]
@@ -118,7 +118,7 @@ The ordinary physical growth satisfies
 A_L\log3-L\log2
 +
 \sum_{\substack{0\le t<L\\n_t\text{ odd}}}
-\log\left(1+\frac1{3n_t}\right).
+\log\left(1+\frac{1}{3n_t}\right).
 }
 \tag{5}
 \]
@@ -131,7 +131,7 @@ If
 
 \[
 \sum_{\substack{t\ge0\\n_t\text{ odd}}}
-\frac1{n_t}<\infty,
+\frac{1}{n_t}<\infty,
 \tag{6}
 \]
 
@@ -153,7 +153,7 @@ The distinguished ordinary lineage of the single root particle \(n_0\) contribut
 
 \[
 \boxed{
-\frac1{2^Ln_0}.
+\frac{1}{2^Ln_0}.
 }
 \tag{7}
 \]
@@ -197,7 +197,7 @@ which proves (1)--(2). Dividing by \(3^{A_L}/4^L\) gives (3).
 At an even state,
 
 \[
-\frac{n_{t+1}}{n_t}=rac12.
+\frac{n_{t+1}}{n_t}=\frac{1}{2}.
 \]
 
 At an odd state,
@@ -207,8 +207,8 @@ At an odd state,
 =
 \frac{3n_t+1}{2n_t}
 =
-\frac32
-\left(1+\frac1{3n_t}\right).
+\frac{3}{2}
+\left(1+\frac{1}{3n_t}\right).
 \]
 
 Multiplying these one-step identities proves (4), and taking logarithms proves (5).
@@ -217,7 +217,7 @@ If (6) holds, then
 
 \[
 \sum_{n_t\text{ odd}}
-\log\left(1+\frac1{3n_t}\right)
+\log\left(1+\frac{1}{3n_t}\right)
 \]
 
 converges absolutely because
@@ -249,7 +249,7 @@ Growing endpoint populations are favored.
 The one distinguished descendant that certifies the finite ordinary root receives mass
 
 \[
-\frac1{2^Ln_0}.
+\frac{1}{2^Ln_0}.
 \]
 
 The factor \(n_L\) disappears when the endpoint particle itself must be the distinguished boundary marker.
