@@ -17,6 +17,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9308` | Lemma | `PROPOSED` | Complex bilateral phase stitching | `L-9307`; local character conventions |
 | `L-9309` | Lemma | `PROPOSED` | Lift-digit prefixes are residue classes modulo `81^L` | `L-9307`; elementary modular lifting |
 | `L-9310` | Lemma | `PROPOSED` | Completion-height rigidity for integral phase carries | elementary modular lifting and height separation |
+| `L-9311` | Lemma | `PROPOSED` | Repeated itinerary factors are orbit-difference zero-carry chains | `D-9302`; integer divisibility |
 | `T-9301` | Conditional theorem | `SUPERSEDED` | Conditional polynomial-window reduction | superseded by self-contained `T-9308` |
 | `T-9302` | Conditional theorem | `SUPERSEDED` | Conditional density-one full EQ | superseded by unconditional `T-9309` |
 | `T-9303` | Theorem | `PROPOSED` | Valuation-stratified fixed-frequency depth-period decay | `L-9304`; exact cosine-grid second moment |
@@ -29,30 +30,35 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `T-9310` | Theorem | `PROPOSED` | Weighted EQ converges in uniform density | `T-9303`, `T-9308`; translated-period Markov bounds |
 | `T-9311` | Theorem | `PROPOSED` | Uniform pointwise cusp decay on every subexponential numerator window | `L-9310`, `L-9303`, `T-9305`, `L-9301` |
 | `T-9312` | Theorem | `PROPOSED` | Complete weighted EQ at every depth | `T-9311`, `T-9308`; harmonic splitting |
+| `T-9313` | Theorem | `PROPOSED` | Ordinary survivors are fixed-room coherent past/future paths | `D-9302`, `D-9303`; exact tail iteration |
+| `T-9314` | Theorem | `PROPOSED` | Exact depth-44 certificate excludes ordinary rooms through `2^217` | `T-9313`, `X-9303` |
 | `R-9301` | Refutation | `PROPOSED` | Exact carry prefixes do not amplify to consecutive intervals | `L-9309` |
+| `R-9302` | Refutation | `PROPOSED` | Matching repetition/carry criticalities do not contradict | `L-9310`, `L-9311` |
 | `C-9301` | Historical conjecture | `SUPERSEDED` | Harmonic control of low-energy cylinders | superseded by `L-9310`, `T-9311`, `T-9312` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Two-place and room mechanisms for the ordinary-section frontier | `D-9302`, `T-9304`, `L-9306`--`L-9310`, `T-9305`--`T-9312` |
+| `Q-9302` | Open question | `IDEA` | Two-place and room mechanisms for the ordinary-section frontier | `D-9302`, `T-9304`, `L-9306`--`L-9311`, `T-9305`--`T-9314` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `O-9302` | Observation | `EMPIRICAL` | Bounded carry counts and zero-run census | `X-9302` |
+| `O-9303` | Observation | `INTERNAL EXACT COMPUTATION` | Exact past-class minima through depth 44 | `X-9303` |
 | `X-9301` | Experiment | `EMPIRICAL` | Exact cusp-scattering probe through depth 80 | standard-library exact modular arithmetic |
 | `X-9302` | Experiment | `EMPIRICAL` | Exact completion-height carry audit through depth 80 | standard-library exact modular arithmetic and fractions |
+| `X-9303` | Experiment | `INTERNAL EXACT COMPUTATION` | Meet-in-the-middle past-class minimum certificate | exact modular subset sums |
 
 ## Status boundary
 
 - Every complete-looking argument authored in this packet enters as `PROPOSED` pending independent review.
-- `T-9312` is the packet's strongest integrated theorem: the complete weighted EQ criterion tends to zero at **every** depth.
-- `T-9311` supplies the formerly missing deterministic low-frequency input: every subexponential numerator window has uniform pointwise decay.
-- `L-9310` is the arithmetic source. Signed reciprocal phases have integral carries; few nonzero carries force long zero-carry runs, and every such run violates a completion-height bound beyond a logarithmic threshold.
-- `T-9308` remains the complementary high-frequency theorem, uniform in every depth.
-- `T-9309` and `T-9310` remain useful independent average and translated-block consequences. They are logically weaker than `T-9312`, but preserve quantitative information about depth statistics and provide adversarial cross-checks.
-- `T-9301` and `T-9302` remain correct-looking historical implications but are superseded by stronger self-contained results.
-- `C-9301` is superseded, not refuted: the harmonic-location conjecture is replaced by the stronger pointwise carry-rigidity theorem.
-- `L-9309` proves exact lift-prefix uniformity and sparsity. `R-9301` refutes only the naive claim that one exact prefix persists on a consecutive neighborhood.
-- `BLOCK_MEAN_AUDIT.md` records why the original uniform partial-product reading of issue #4's Theorem 12 needs valuation correction. It does not change that branch's claim status.
-- `Q-9301` remains open. All-depth finite-set EQ does not automatically decide whether the infinite `2`-adic attractor contains one ordinary positive integer.
+- `T-9312` is the packet's strongest integrated finite-set theorem: the complete weighted EQ criterion tends to zero at **every** depth.
+- `T-9313` is the new exact ordinary-section interface. A hypothetical ordinary point is one fixed-room coherent path whose reversed past lies in `C_j`, whose future remains in the survivor attractor, and whose standard representative stays in an `O((81/64)^j)` window.
+- `T-9314` is a genuine but finite ordinary-section exclusion: subject to exact replay, every nontrivial ordinary room exceeds `2^217`.
+- `L-9311` reconstructs PR #20's local repetition bound as an integral zero-carry theorem for differences of ordinary tail orbits.
+- `R-9302` closes the naive plan of comparing the identical repetition and phase-carry criticality constants. They are the same completion-height mechanism, not opposing budgets.
+- `T-9311` supplies the deterministic low-frequency Fourier input; `T-9308` supplies the complementary high-frequency tail.
+- `T-9309` and `T-9310` remain independent quantitative depth-statistical cross-checks.
+- `T-9301`, `T-9302`, and `C-9301` are superseded, not refuted.
+- `BLOCK_MEAN_AUDIT.md` records why the original uniform partial-product reading of issue #4's Theorem 12 needs valuation correction.
+- `Q-9301` remains open. The finite lower bound in `T-9314` is not an asymptotic nonintersection theorem.
 - No positive integer, divergent orbit, cycle, or Collatz counterexample is claimed.
-- `O-9301` and `O-9302` are finite empirical evidence only. Neither is a premise of a proof-level claim.
+- `X-9303` is exact finite computation; it is not an asymptotic proof.
 
 ## Main implication graph
 
@@ -82,34 +88,37 @@ T-9311 pointwise decay on subexponential windows
              complete weighted EQ
 ```
 
-The independent depth-statistical chain remains:
+The ordinary-section chain is now:
 
 ```text
-T-9303 translated depth-period mean
-   + T-9308 uniform harmonic tail
+D-9302 integral tails + bounded real companion
+   + D-9303 triadic past classes
    |
    v
-T-9309 natural-density-one EQ
+T-9313 fixed-room past/future equivalence
+   |
+   + X-9303 exact depth-44 class minimum
    |
    v
-T-9310 uniform-density EQ
+T-9314 no nontrivial ordinary room <= 2^217
+   |
+   v
+Q-9301 asymptotic fixed-room nonintersection
 ```
 
-The direct M1 route remains separate:
+The cross-program method audit is:
 
 ```text
-D-9301 survivor coding
+L-9311 orbit-difference zero-carry chain
+   + L-9310 reciprocal-character zero-carry chain
    |
    v
-D-9302 adelic integer section
-   |
-   v
-Q-9301 nontrivial ordinary-integer intersection
+R-9302 identical criticality does not double-count
 ```
 
 ## Generalization and literature crosswalk
 
-`L-9310` is stated for every coprime expanding chart `M<N`, not only `64 -> 81`. Its criticality constant is
+`L-9310` is stated for every coprime expanding chart `M<N`. Its criticality constant is
 
 \[
 \kappa_{M,N}
@@ -119,7 +128,7 @@ Q-9301 nontrivial ordinary-integer intersection
 \frac1{\log_MN-1}.
 \]
 
-For `M=64`, `N=81`, this is the same constant independently found in PR #20's ordinary-code repetition rigidity. The two proofs share one product-formula mechanism: excessive completion agreement plus controlled rational height forces equality, and the primitive numerator excludes equality.
+For `M=64`, `N=81`, `L-9311` proves directly why the same constant occurs in ordinary-code repetition rigidity: repeated factors are exact zero-carry chains in an orbit difference.
 
 The literature branch supplied the correct methodological boundaries:
 
@@ -128,23 +137,25 @@ The literature branch supplied the correct methodological boundaries:
 - fixed real self-similar Fourier theorems do not directly control the moving cusp;
 - generic S-unit language does not apply without fixed multiplicative cofactors.
 
-`L-9310` stays inside those boundaries and uses only exact native arithmetic.
+The new fixed-room theorem remains exact native arithmetic.
 
 ## Branch crosswalk
 
 The notation `CLAUDE/T11` and `CLAUDE/T12` refers descriptively to the block-frequency and block-depth results called Theorems 11 and 12 in `EQ.md` on `claude/collatz-migration-math-osr370`. An integrator must preserve branch qualification until the ledgers are reconciled.
 
-The issue-#4 room/Cantor crosswalk remains:
+The issue-#4 room/Cantor crosswalk is:
 
 - issue-#4 `C_j` recursion = the reductions of `D-9303`;
 - issue-#4 finite Cantor product = `L-9305`;
 - exact CRT transform of `R_n x C_j` = `T-9304`;
 - complete-frequency absolute moments = `L-9306`;
 - the two local characters stitch one global reciprocal chain = `L-9307`/`L-9308`;
-- sub-`64^K` absolute and bounded harmonic tests collapse to the original survivor tests = `T-9305`/`T-9306`;
+- sub-`64^K` harmonic tests collapse to the original survivor tests = `T-9305`/`T-9306`;
 - exact lift data are a permutation of residues modulo `81^L` = `L-9309`;
 - low-energy approximate prefixes have an entropy deficit = `T-9307`;
 - integral carries force pointwise low-frequency decay = `L-9310`/`T-9311`;
 - the entropy tail and pointwise low window assemble into all-depth EQ = `T-9312`;
+- one ordinary itinerary has a fixed room across all past/future splittings = `T-9313`;
+- depth-44 exact minimization yields the bounded ordinary-room exclusion = `T-9314`;
 - ordered-position transfer remains branch-qualified for downstream geometric statements;
-- `Q-9302` now concerns whether the room/adelic representation helps with the remaining ordinary-integer section, sharper rates, or cross-program complexity rigidity.
+- `Q-9302` now targets asymptotic fixed-room exclusion, active-cylinder nonstabilization, and sharper ordinary-section couplings.
