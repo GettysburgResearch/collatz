@@ -8,7 +8,7 @@ There is currently **no candidate positive integer** and no finite symbolic cons
 
 The collision charts `O-0001` through `O-0008` are conditional counterexample mechanisms. An infinite accepted orbit beginning from one ordinary finite state would lift to a positive Collatz counterexample, but no such orbit has been established.
 
-The repository now supplies abundant finite resources:
+The repository now supplies abundant finite and symbolic resources:
 
 - universal finite-horizon stack amplification;
 - exponentially unbounded supercritical branch count;
@@ -19,11 +19,12 @@ The repository now supplies abundant finite resources:
 - graph-directed expansion with compensated local contraction;
 - exact synchronous coupling to moving negative phases;
 - countable cycle-padded return towers;
-- renewal-pressure and Kraft conservation laws.
+- renewal-pressure and Kraft conservation laws;
+- an exact phase-survival Doob transform with positive symbolic Collatz drift.
 
 None receives a `K-####` identifier because none selects one finite starting state that survives indefinitely.
 
-## Current preferred candidate format: phase graph plus padding stack
+## Current preferred candidate format: escape-weighted phase graph plus padding stack
 
 A future candidate may consist of:
 
@@ -32,16 +33,20 @@ A future candidate may consist of:
    -v_i;
    \]
 2. a finite control graph of mismatch/recovery types;
-3. one or more nonnegative cycle-padding counters \(t\);
+3. one or more nonnegative cycle-padding counters;
 4. exact return towers
    \[
    T^{L_e(t)}(q-v_i)=F_{e,t}(q)-v_j;
    \]
 5. exact dyadic cylinders describing the admissible values of \(q\);
-6. a deterministic stack or substitution rule that maps every accepted state to another accepted state;
+6. a deterministic stack or substitution rule mapping every accepted state to another accepted state;
 7. one explicit finite quotient \(q_0>v_i\) initializing the grammar;
 8. a phase-potential or cycle-product certificate showing that every reachable grammar cycle expands;
-9. a pressure audit distinguishing the exceptional accepted language from typical complete renewal coverage.
+9. a pressure audit distinguishing the exceptional accepted language from complete renewal coverage;
+10. an escape-likelihood audit comparing selected edge frequencies with
+    \[
+    \mathbb Q_v(e)=\frac{S_e(v)-1}{2(v-1)}.
+    \]
 
 The positive starting integer is
 
@@ -49,7 +54,35 @@ The positive starting integer is
 n_0=q_0-v_i.
 \]
 
-`T-0014` gives the exact one-step phase/difference dynamics. `T-0015` supplies the cycle-padding towers. `T-0013` supplies graph expansion, and `T-0016` supplies the fair and tilted pressure operators.
+`T-0014` supplies the exact one-step phase/difference dynamics. `L-0013` gives the rounded physical-parity phase maps. `T-0015` supplies cycle-padding towers. `T-0013` supplies graph expansion, `T-0016` supplies fair and growth pressure, and `T-0017` supplies phase escape pressure.
+
+## Three exact path weights
+
+For a physical parity word \(w\), a candidate grammar should record:
+
+### Fair cylinder mass
+
+\[
+\mu_{\mathrm{fair}}(w)=2^{-|w|}.
+\]
+
+### Collatz growth tilt
+
+\[
+\mu_{\mathrm{growth}}(w)
+=
+2^{-|w|}\frac{3^{a(w)}}{2^{|w|}}.
+\]
+
+### Phase escape tilt
+
+\[
+\mu_{\mathrm{escape}}(w)
+=
+2^{-|w|}\frac{S_w(v)-1}{v-1}.
+\]
+
+A complete broad grammar has negative typical Collatz logarithmic drift and fair phase absorption at \(1\). A viable candidate must be incomplete, exceptional, pressure-positive, and arithmetically nonempty in ordinary integers.
 
 ## Equivalent negative-return graph format
 
@@ -67,7 +100,7 @@ q\equiv v_i-u_e\pmod{2^{L_e}},
 F_e(q)=3^{a_e}\frac{q-v_i+u_e}{2^{L_e}}.
 \]
 
-It must define a deterministic forward-invariant family of ordinary quotient sets \(S_i\), contain one explicit \(q_0\in S_i\), and certify unbounded growth.
+It must define a deterministic forward-invariant family of ordinary quotient sets, contain one explicit ordinary quotient, and certify unbounded growth.
 
 ## Equivalent run-length format
 
@@ -90,7 +123,7 @@ The negative-shadow equation
 Nq=Mq'+a
 \]
 
-is often the simpler first-order representation of the same transport.
+is often the simpler first-order representation of the same boundary transport.
 
 ## Leading finite testbeds
 
@@ -98,7 +131,7 @@ is often the simpler first-order representation of the same transport.
 
 The finite control states are the eleven cycle phases. One mismatch followed by synchronized recovery either returns to the eleven-cycle or descends to the negative three-cycle. Complete cycle padding gives countable exact edge towers.
 
-This is the leading phase-plus-counter prototype, but its supercritical thresholds are high and no closed stack rule is known.
+This is the leading phase-plus-counter prototype. The next version should choose tower edges according to the phase escape likelihood rather than fair frequency.
 
 ### O-0007 — stationary negative-136 chart
 
@@ -122,16 +155,6 @@ The 339-branch chart has rich finite modular geometry but a stationary aspect ra
 
 It may be useful as a rare repair component rather than a stationary grammar.
 
-## Pressure obligations
-
-For graph edges \(e:i\to j\), a candidate should record
-
-\[
-\mathcal A_s(i,j)=\sum_{e:i\to j}2^{-L_e}\lambda_e^s.
-\]
-
-The fair matrix \(\mathcal A_0\) measures 2-adic cylinder mass; the tilted matrix \(\mathcal A_1\) measures Collatz growth weight. A complete broad cover has negative typical logarithmic drift by `T-0016`, so a valid counterexample must live in an exceptional pressure-positive language.
-
 ## Non-negotiable candidate checks
 
 A future `K-####` file must prove:
@@ -143,4 +166,5 @@ A future `K-####` file must prove:
 - positivity holds at every phase boundary;
 - every reachable grammar cycle has justified net growth, including repair edges;
 - the exceptional language actually contains the stated ordinary start;
+- positive escape or tilted pressure is converted into actual ordinary trajectory growth;
 - the trajectory is unbounded or otherwise avoids the terminal cycle forever.
