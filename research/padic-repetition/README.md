@@ -1,141 +1,125 @@
-# 2-adic repetition rigidity and complexity-criticality
+# Ordinary-section rigidity for the `64 -> 81` stack
 
 **Agent:** `gpt56-complexity-01`  
 **Issue:** #18  
 **Branch:** `agent/gpt56-complexity-01/18-padic-repetition-rigidity`  
-**Status:** independent `94xx` theory packet; all theorem-level claims are
+**Status:** independent `94xx` theory program; all theorem-level claims are
 `PROPOSED` pending adversarial review
 
-## Purpose
+## Mission
 
-Issue #4 reduces one direct counterexample route to the existence of a
-positive ordinary integer in the `64 -> 81` survivor attractor. Existing work
-has exact finite amplifiers and excludes periodic, automatic,
-fixed-substitution, and finite cyclic exponential-polynomial certificate
-formats, but leaves a Sturmian/Ostrowski/nonstationary S-adic frontier.
+Issue #4 isolates one direct counterexample route: find a positive ordinary
+integer in the binary `64 -> 81` survivor attractor. Existing work supplies
+exact finite amplifiers and rules out periodic, automatic, fixed-substitution,
+and finite cyclic exponential-polynomial certificate formats, while leaving a
+Sturmian/Ostrowski/nonstationary S-adic stack frontier.
 
-This packet attacks that frontier from the ordinary-integer side. It asks what
-the **actual emitted digit code of one ordinary integer** must look like. The
-load-bearing mechanism is an elementary product-formula squeeze:
+This packet studies that frontier from the ordinary-integer section. It now has
+five layers:
 
-1. replace an early repeated factor by periodic continuation;
-2. obtain an odd-denominator rational with tightly bounded ordinary height;
-3. use the long common prefix to obtain extreme `2`-adic closeness;
-4. show a nonzero cross numerator would be both divisible by, and smaller than,
-   the same large power of the source radix.
+1. repetition and rational-height rigidity for one ordinary survivor code;
+2. complexity transfer and near-critical chart information demand;
+3. exact stack-demand trees and stationary ghost stages;
+4. active one-cylinder fuel conservation;
+5. a sparse `2`-adic partial-theta normal form for the unique infinite context.
 
-No probabilistic model, solver, orbit scan, Fourier-decay theorem, or unmerged
-claim is a proof dependency.
+No result here constructs a Collatz counterexample or proves that none exists.
 
-## Binary `64 -> 81` code
+---
 
-For a binary sequence `eps=(eps_n)_(n>=0)`, define
+## Packet 1 — repetition rigidity
 
-```text
-Phi(eps) = (17/81) * sum_(n>=0) eps_n*(64/81)^n  in Z_2.
-```
-
-The first packet proves:
-
-- `D-9401` — binary code, indexing, and factor complexity;
-- `L-9401` — exact eventually periodic rational and odd denominator
-  `<81^(r+s)`;
-- `L-9402` — exact first-difference valuation `v_2=6m`;
-- `T-9401` — early repeated-factor obstruction;
-- `T-9402` — factor-complexity barrier.
-
-Put
+For `eps in {0,1}^N`, define
 
 ```text
-delta = log_64(81)-1 = 0.056641667147...,
-kappa = 1/delta       = 17.654847577085... .
+Phi(eps)
+ =(17/81)*sum_(n>=0)eps_n*(64/81)^n
+ in Z_2.
 ```
 
-If `A=Phi(eps)>1` is an ordinary integer and equal length-`ell` factors begin
-at `r<t`, then
+`L-9401` and `L-9402` prove:
+
+- an eventually periodic code with preperiod `r` and period `s` has an odd
+  reduced denominator `<81^(r+s)` and real value in `[0,1]`;
+- if two codes first differ at position `m`, then
+  ```text
+  v_2(Phi(eps)-Phi(eta))=6m.
+  ```
+
+If `A=Phi(eps)>1` is an ordinary integer and equal length-`ell` factors begin at
+`r<t`, `T-9401` gives
 
 ```text
-ell < delta*t + log_64(A).
+ell < (log_64(81)-1)*t + log_64(A).                 (1)
 ```
 
-Consequently,
+Consequently `T-9402` proves
 
 ```text
-p_eps(ell) > (ell-log_64(A))/delta,
-liminf p_eps(ell)/ell >= kappa.
+liminf p_eps(ell)/ell
+ >=1/(log_64(81)-1)
+ =17.654847577085... .                              (2)
 ```
 
-A nontrivial M1 witness therefore cannot have a Sturmian, quasi-Sturmian, or
-other output code with lower linear complexity slope below `17.654847...`.
+Thus a nontrivial ordinary survivor cannot have a Sturmian, quasi-Sturmian, or
+other output code below that lower linear-complexity slope.
 
-## Second packet: local and cross-chart consequences
+### Local copy-overlap
 
-### Ordinary tail states and copy-overlap
-
-`L-9404` proves that every shifted tail represents the exact next ordinary
-chart state. `T-9403` therefore applies the repetition theorem locally.
-If the tail at orbit time `r` begins with a word `U` followed by a copied
-prefix of length `b`, then
+Every shifted code tail represents the exact later ordinary state. If a tail at
+state `A_r` begins with a word `U` followed by a copied prefix of length `b`,
+`T-9403` gives
 
 ```text
-b < delta*|U| + log_64(A_r).
+b < (log_64(81)-1)*|U| + log_64(A_r).               (3)
 ```
 
-Thus any regeneration architecture that repeatedly copies more than `5.664%`
-of a long block must keep the current ordinary marker height on the same scale
-as the copied block. A long square prefix `UU` is impossible once `|U|`
-dominates `log_64(A_r)`.
+This is a stage-local adversarial test for marked or copied regeneration.
 
-The same theorem gives a two-parameter novelty statement: if
+---
+
+## Packet 2 — complexity transfer and criticality
+
+### Bounded finite-state output
+
+For a deterministic non-erasing sequential transducer with `Q` states and
+maximum emitted block length `B`, `T-9404` proves
 
 ```text
-ell >= delta*T + log_64(A),
+p_output(n)<=Q*B*p_directive(n).                    (4)
 ```
 
-then all length-`ell` factors beginning at positions `0,...,T` are distinct.
-
-### Finite-state directive-to-output transfer
-
-`T-9404` proves that a non-erasing deterministic sequential transducer with
-`Q` states and maximum emitted block length `B` satisfies
+A Sturmian or quasi-Sturmian directive can emit an ordinary binary survivor
+only if
 
 ```text
-p_output(n) <= Q*B*p_directive(n).
+Q*B>=18.                                            (5)
 ```
 
-Therefore a Sturmian or quasi-Sturmian directive can produce an ordinary
-binary survivor only if
+A fixed-radius letter-to-letter coding is impossible.
 
-```text
-Q*B >= 18.
-```
+### General expanding digit charts
 
-If the transducer state is determined by bounded input context, the state
-factor disappears asymptotically; a fixed-radius letter-to-letter coding is
-impossible outright.
-
-### Complexity-criticality across the collision ladder
-
-`D-9402`, `L-9403`, and `T-9405` generalize the argument to
+For
 
 ```text
 H_D(MB+d)=NB+d,
 M=2^L,
 N>M odd,
-D subset {0,...,M-1}.
+D subset {0,...,M-1},
 ```
 
-Every aperiodic ordinary chart code satisfies
+`T-9405` proves that every aperiodic ordinary chart code satisfies
 
 ```text
-liminf p_d(ell)/ell
-  >= 1/(log_M(N)-1)
-  = log_(N/M)(M).
+liminf p_d(n)/n
+ >=1/(log_M(N)-1)
+ =log_(N/M)(M).                                     (6)
 ```
 
 Illustrative required slopes:
 
-| chart ratio | required lower slope |
+| chart ratio | lower slope |
 |---|---:|
 | `64 -> 81` | `17.654847577085...` |
 | `512 -> 729` | `17.654847577085...` |
@@ -143,100 +127,354 @@ Illustrative required slopes:
 | `2^22 -> 3^14` | `116.110298602604...` |
 | `2^44 -> 3^28` | `116.110298602604...` |
 
-This is the **complexity-criticality law**: approaching multiplier `1` may
-improve collision economics, but forces a rapidly increasing information
-requirement on any one ordinary aperiodic digit code.
+This is the **complexity-criticality law**: multiplier ratios closer to one may
+improve finite collision economics while demanding much more information from
+one ordinary aperiodic code.
 
-## Important negative result: raw complexity does not close the stack route
+### Negative result: padding inflates raw complexity
 
-The naive hope that a Sturmian directive automatically yields a linearly
-complex output is false when output blocks have unbounded length.
-
-`T-9406` considers
+`T-9406` proves that
 
 ```text
-y = 1 0^(g_0) 1 0^(g_1) 1 0^(g_2) ...
+y=1 0^(g_0) 1 0^(g_1) 1 0^(g_2) ...
 ```
 
-with strictly increasing gaps and bounded positive increments. It proves
+with strictly increasing gaps and bounded positive gap increments has
 
 ```text
-p_y(n) = Omega(n^2).
+p_y(n)=Omega(n^2).
 ```
 
-For the idealized issue-#4 stack output, `m_(j+1)-m_j in {17,18}` gives gap
-increments `{153,162}` and hence an explicit quadratic lower bound. `R-9401`
-records the resulting refutation:
+The idealized `17/18` stack has gap increments `{153,162}`. Therefore a
+Sturmian directive can generate quadratically complex raw output merely through
+long padding. `R-9401` records the failure of the unrestricted
+“low-complexity directive => low-complexity output” shortcut.
 
-> a low-complexity directive need not produce a low-complexity output when a
-> counter is allowed to emit increasingly long runs.
+---
 
-Therefore T-9402 alone does **not** close the active unbounded stack route.
-The surviving target is sharper: distinguish padding complexity from genuinely
-fresh arithmetic carry/residue information.
+## Packet 3 — demand tree and stationary ghosts
 
-## Current frontier
+The exact same-stage stack demand is
 
-The packet now separates three regimes.
+```text
+D(m)=17*81^(-(9m+2))-81^(-1).                       (7)
+```
 
-1. **Bounded state and bounded output:** quantitative transfer is proved;
-   Sturmian implementations below the resource threshold are excluded.
-2. **Exact copied regeneration:** the local overlap budget of T-9403 supplies a
-   height-sensitive obstruction.
-3. **Unbounded counter/run-length output:** raw factor complexity can be
-   quadratic and is not enough. A new height-normalized, run-collapsed, or
-   carry-information invariant is required.
+### Demand isometry
 
-Potential connections:
+`L-9405` proves
 
-- **Issue #4:** compare stack height, emitted zero padding, and fresh supply
-  digits against the criticality requirement.
-- **PR #3:** instrument marked grammars with current marker height, copied block
-  length, overlap, finite state count, and counter growth.
-- **PR #16:** determine whether sparse low-energy carry cylinders imply a
-  product-formula approximant with small arithmetic description, even when raw
-  output complexity is large.
-- **Issue #9:** apply the general height method to repeated affine summaries in
-  compressed valuation words.
+```text
+v_2(D(n)-D(m))=4+v_2(n-m).                          (8)
+```
 
-## Verification
+Hence
 
-Two dependency-free experiments are committed.
+```text
+D/16:Z_2 -> Z_2
+```
 
-### X-9401
+is a bijective isometry. At base-`64` depth `j`,
 
-Checks the binary periodic formula, first-difference valuation, overlapping
-repetition combinatorics, and illustrative factor-complexity profiles.
+```text
+m mod 2^(6j-4)
+  <->
+all demand residues 0 mod 16 modulo 64^j.           (9)
+```
 
-Canonical SHA-256:
+Every parent has exactly `64` children realizing all next digits once. One new
+demand digit is a permutation of six new binary stage bits: the **six-bit lift
+law**.
+
+### Stationary matching and ghost stages
+
+For fixed `x=15 mod 16`, compare
+
+```text
+81^(9m)*(81x+1)
+```
+
+with `D(m)`. `T-9407` proves that their difference divided by `16` is another
+`Z_2` isometry. Exactly one matching stage class exists at every finite depth,
+with exact conditioned rates `1/4` for the first base-64 digit and `1/64` for
+every additional digit.
+
+The matching locus is
+
+```text
+X(m)
+ =17*81^(-(18m+3))
+  -81^(-(9m+2))
+  -81^(-1).                                         (10)
+```
+
+It is a scaled isometry onto `15+16Z_2`, but `X(m)<0` in the real embedding for
+every ordinary `m>=0`. Positive ordinary contexts therefore have arbitrarily
+deep compatible stationary matches whose limit is a nonordinary **ghost
+stage**, not one positive height.
+
+### No-reuse windows
+
+For positive stage increments bounded by `C`, `T-9408` proves that every
+
+```text
+floor((2^(6j-4)-1)/C)+1                             (11)
+```
+
+consecutive depth-`j` demand residues are distinct. With `C=18`, the window
+lengths are
+
+```text
+15, 911, 58,255, ...
+```
+
+at depths `2,3,4,...`.
+
+---
+
+## Packet 4 — active quotient fuel and one cylinder
+
+For height `m`, put
+
+```text
+ell_m=9m+1,
+M_m=64^(ell_m),
+A_m=81^(ell_m),
+c_m=(M_m+17)/81.
+```
+
+### One-stage quotient conjugacy
+
+For a transition from height `m` to height `n`, `L-9406` finds one admissible
+residue `r_(m,n) mod M_n`. Writing
+
+```text
+x=r_(m,n)+M_n*y
+```
+
+gives the exact next context
+
+```text
+x'=A_m*y+k_(m,n).                                   (12)
+```
+
+Because `A_m` is odd,
+
+```text
+v_2(x'(y)-x'(z))=v_2(y-z).                          (13)
+```
+
+The unused high quotient is transported isometrically. Future obligations
+select more quotient digits; they do not create several compatible classes or
+refund consumed precision.
+
+### Finite-tower cylinder
+
+For any prescribed finite height schedule
+
+```text
+m_0,m_1,...,m_K,
+```
+
+`T-9409` proves that exactly one initial cylinder works:
+
+```text
+x_0=R_K mod Q_K,
+Q_K=product_(i=1)^K 64^(9m_i+1).                   (14)
+```
+
+Every member of that cylinder realizes the schedule integrally, and no other
+context does.
+
+For an infinite directive the nested cylinders determine exactly one
+
+```text
+x_0^* in Z_2.
+```
+
+Let `R_K` be the least representative in `[0,Q_K)`. Then
+
+```text
+x_0^* is an ordinary nonnegative integer
+ iff R_K eventually stabilizes.                     (15)
+```
+
+Equivalently, with
+
+```text
+a_K=(R_(K+1)-R_K)/Q_K,
+```
+
+ordinary closure is eventual zero of the new cylinder blocks.
+
+For `17/18` increments, a `K`-stage tower fixes quadratically many initial
+binary digits:
+
+```text
+54*K*m_0+459*K*(K+1)+6K
+ <=log_2 Q_K
+ <=54*K*m_0+486*K*(K+1)+6K.                        (16)
+```
+
+---
+
+## Packet 5 — sparse partial-theta normal form
+
+The cylinder inverse system has a direct forward expression.
+
+For stage lengths
+
+```text
+ell_t=9m_t+1
+```
+
+and boundaries
+
+```text
+h_0=0,
+h_t=sum_(i<t)ell_i,
+```
+
+place a binary `1` exactly at every `h_t`. `L-9407` proves that the exact formal
+stack state is
+
+```text
+A_*(m)
+ =(17/81)*sum_(t>=0)(64/81)^h_t
+ in Z_2.                                             (17)
+```
+
+After removing the first stage, put
+
+```text
+H_0=0,
+H_j=sum_(1<=i<=j)ell_i.
+```
+
+The unique initial context satisfies
+
+```text
+x_0^*
+ =-1/81
+  +17/81^(ell_0+1)*sum_(j>=0)(64/81)^H_j.           (18)
+```
+
+Finite truncations of (18) are exactly the cylinders in (14). Hence the
+block-tail problem is the special-value problem:
+
+```text
+is the value in (18) one ordinary nonnegative integer?               (19)
+```
+
+### Exact coefficient class
+
+For increasing bounded-increment heights, `T-9410` proves that the coefficient
+word in (17) has
+
+```text
+p(n)=Theta(n^2),                                    (20)
+```
+
+while the support positions grow quadratically and the number of ones in the
+first `N` digits is `Theta(sqrt(N))`. The corresponding formal power series is
+nonrational.
+
+For mechanical `17/18` directives, the exponents have a quadratic main term
+plus an irrational-rotation floor-sum perturbation. The coefficient word is not
+Sturmian, and the exponent ratio tends to one. Thus neither a linear-complexity
+Sturmian-digit theorem nor a fixed-ratio Hadamard-gap theorem applies without a
+new reduction.
+
+`Q-9409` freezes the remaining value-theory target:
+
+```text
+prove sum_(j>=0)(64/81)^H_j notin Q inside Q_2,
+```
+
+or at least prove that its affine value (18) is not an ordinary integer, for
+every admissible balanced directive.
+
+See `SPARSE_PARTIAL_THETA.md` for the detailed synthesis and hypothesis audit.
+
+---
+
+## Verification artifacts
+
+All experiments use the Python standard library and exact arithmetic.
+
+### `X-9401`
+
+Binary periodic-height, first-difference, and overlap checks.
 
 ```text
 c19c075ceaf0883e989e8050028f29cfd58740e1ce507e15f380242f753d5086
 ```
 
-### X-9402
+### `X-9402`
 
-Checks general chart formulas, 39,360 first-difference pairs, 128 finite-state
-transducers, all 256 binary radius-one local maps, the growing-gap factor
-construction, and criticality constants across five chart ratios.
-
-Canonical SHA-256:
+General chart formulas, 39,360 first-difference pairs, finite-state transfer,
+all radius-one binary local maps, and criticality constants.
 
 ```text
 a7903f3ea552cf7e96884832473b9bb4c86ec99be3da47e58ab4017f9e51f79b
 ```
 
-Finite checks validate interfaces only. The universal results remain written
-proofs awaiting independent reconstruction.
+### `X-9403`
 
-## Review priorities
+Demand permutations, six-bit lifts, stationary matching trees, ghost stages,
+and schedule novelty.
 
-1. Reconstruct the denominator exponent and first-difference valuation in
-   `L-9403`.
-2. Audit the `t+ell` common-prefix argument and the shifted-state use in
-   `T-9403`.
-3. Audit the factor-key count in `T-9404`, especially variable block offsets.
-4. Audit the aperiodic zero-numerator case in `T-9405`.
-5. Audit the eligible-gap count and exactly-two-one construction in `T-9406`.
-6. Search for a stronger invariant that does not count long zero padding as
-   free arithmetic information.
+```text
+1a2908bab06d6ae0db096a9516b87b953eb4f96823fdb2ea0ab71fa0686d1962
+```
+
+### `X-9404`
+
+Active one-cylinder recursion, quotient isometry, perturbation failures, and a
+24-stage balanced prefix fixing `282,888` initial bits.
+
+```text
+73a878073e3e8e39e6e950ad0e4585c522cd7fe1794639dc5b015a3b5115be3f
+```
+
+### `X-9405`
+
+Sparse-series/cylinder equivalence, balanced prefixes, quadratic support
+bounds, and exact finite factor-complexity profiles.
+
+```text
+df2543be76c294397dcce6819c1d4551a811407a7835b7d2e1997866b0283c67
+```
+
+Finite checks validate frozen interfaces only. Universal statements rest on
+the written proofs and remain `PROPOSED` pending independent reconstruction.
+
+---
+
+## Review order
+
+1. `claims/L-9407-stack-partial-theta-normal-form.md`
+2. `claims/T-9410-stack-support-quadratic-complexity.md`
+3. `claims/L-9406-active-quotient-conjugacy.md`
+4. `claims/T-9409-finite-tower-cylinder.md`
+5. `claims/T-9407-stationary-matching-ghost.md`
+6. `claims/L-9405-demand-tree-isometry.md`
+7. `SPARSE_PARTIAL_THETA.md`
+8. `Q-9409-quadratic-lacunary-value.md`
+9. `experiments/X-9405-sparse-partial-theta/run.py`
+
+## Current frontier
+
+The exact stack route is now reduced to a special-value dichotomy.
+
+```text
+Obstruction:
+  prove the sparse partial-theta context is never an ordinary integer.
+
+Construction:
+  produce an admissible directive for which it is an ordinary positive context,
+  then verify every later context and the Collatz chart lift.
+```
+
+No compatible finite prefix, ghost stage, formal series, or nonzero finite
+block sequence is by itself a counterexample.
