@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Exact checks for L-0016--L-0018 and T-0021.
+"""Exact checks for L-0016--L-0019 and T-0021.
 
 The experiment reconstructs the four self-return mismatch towers at phase -34
 of the negative eleven-cycle, verifies their binary-to-ternary tail replacement,
-constructs every finite mixed-radix connector in a bounded census, and checks
-the finite-ray decomposition for bounded high tails.
+constructs every finite mixed-radix connector in a bounded census, checks the
+growing-prefix order obstruction and Hensel escalator, and confirms the
+finite-ray decomposition for bounded high tails.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
-from math import gcd
 
 
 def T(n: int) -> int:
@@ -233,6 +233,38 @@ def verify_inverse_prefix_nonperiodicity() -> None:
         assert pow(3, 7 * period, 1 << K) != 1
 
 
+def core_mu(typ: TowerType, t: int) -> int:
+    modulus = 1 << (typ.r + 1)
+    g = typ.g0 + 7 * t
+    return (-pow(pow(3, g, modulus), -1, modulus)) % modulus
+
+
+def omega_mod(typ: TowerType, t: int, H: int) -> int:
+    """omega_t=(mu_t+3^-g_t)/2^(r+1) modulo 2^H."""
+    g = typ.g0 + 7 * t
+    precision = H + typ.r + 1
+    modulus = 1 << precision
+    zeta = pow(pow(3, g, modulus), -1, modulus)
+    small_modulus = 1 << (typ.r + 1)
+    mu = (-pow(pow(3, g, small_modulus), -1, small_modulus)) % small_modulus
+    assert (mu + zeta) % small_modulus == 0
+    return ((mu + zeta) >> (typ.r + 1)) % (1 << H)
+
+
+def verify_hensel_escalator() -> None:
+    for typ in TYPES:
+        for t in (0, 1, 5):
+            for H in range(1, 21):
+                jump = 1 << (H + typ.r - 1)
+                assert core_mu(typ, t + jump) == core_mu(typ, t)
+                assert omega_mod(typ, t + jump, H) == omega_mod(typ, t, H)
+
+                edge = tower(typ, t)
+                inverse = pow(pow(3, edge.G, 1 << H), -1, 1 << H)
+                low_connector = (-edge.B * inverse) % (1 << H)
+                assert low_connector == (-omega_mod(typ, t, H)) % (1 << H)
+
+
 def verify_bounded_tail_rays() -> None:
     tails = (0, 1, 5)
     for typ in TYPES:
@@ -264,6 +296,9 @@ def main() -> None:
 
     verify_inverse_prefix_nonperiodicity()
     print("verified growing inverse-prefix order obstruction")
+
+    verify_hensel_escalator()
+    print("verified nonlinear Hensel escalator prefixes")
 
     verify_bounded_tail_rays()
     print("verified bounded-tail finite-ray decomposition")
