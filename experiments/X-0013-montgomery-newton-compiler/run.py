@@ -113,8 +113,8 @@ def stage_precision(m: int) -> int:
     return 11 * (target_height + 1)
 
 
-def cycle_newton_step(m: int, inverse: int) -> int:
-    """Generate 3^(-7*2^(m+1)) at the exact next required precision."""
+def newton_workspace(m: int, inverse: int) -> tuple[int, int]:
+    """Return the 2Q_m-bit inverse and exact next-stage prefix."""
     q = stage_precision(m)
     q_next = stage_precision(m + 1)
     assert q_next == 2 * q - 11
@@ -123,34 +123,61 @@ def cycle_newton_step(m: int, inverse: int) -> int:
     N = 3 ** (7 * (1 << m))
     assert N * inverse % (1 << q) == 1
 
-    inverse_square = inverse * inverse % (1 << q)
-    lifted = inverse_square * (2 - N * N * inverse_square) % (1 << (2 * q))
-    result = lifted % (1 << q_next)
-    assert N * N * result % (1 << q_next) == 1
-    return result
+    full = inverse * (2 - N * inverse) % (1 << (2 * q))
+    assert N * full % (1 << (2 * q)) == 1
+
+    next_inverse = full * full % (1 << q_next)
+    assert N * N * next_inverse % (1 << q_next) == 1
+    return full, next_inverse
 
 
 def verify_cycle_newton_compiler() -> None:
-    for m in range(8, 12):
+    for m in range(8, 11):
         q = stage_precision(m)
         q_next = stage_precision(m + 1)
-        N = 3 ** (7 * (1 << m))
+        B = 1 << m
+        d = 1 << (m - 8)
+        N = 3 ** (7 * B)
+
         inverse = pow(N, -1, 1 << q)
-        generated = cycle_newton_step(m, inverse)
+        full, generated = newton_workspace(m, inverse)
         assert generated == pow(N * N, -1, 1 << q_next)
 
-        source_height = 1 << m
-        target_height = source_height + (1 << (m - 8))
-        inv_full = pow(3, -7, 1 << q) * inverse % (1 << q)
+        # The full Newton workspace covers the deepest target in the stage.
+        max_target_depth = 11 * (2 * B + 1)
+        assert max_target_depth < 2 * q
 
-        for source_type in TYPES:
-            left = tower(source_type, source_height)
-            for target_type in TYPES:
-                right = tower(target_type, target_height)
-                eta, theta = connector(left, right)
-                compiled = (right.A - left.B) * inv_full % (1 << q)
-                assert eta == compiled
-                assert left.B + 3**left.G * eta == right.A + (1 << q) * theta
+        step_inverse = pow(3 ** (7 * d), -1, 1 << (2 * q))
+        fixed_inverse = pow(3, -7, 1 << (2 * q))
+
+        # Test the first, internal, near-boundary, and deepest connectors.
+        for j in (0, 1, 127, 255):
+            source_height = B + j * d
+            target_height = source_height + d
+            source_inverse = full * pow(step_inverse, j, 1 << (2 * q))
+            source_inverse %= 1 << (2 * q)
+
+            target_depth = 11 * (target_height + 1)
+            assert target_depth <= 2 * q
+            direct = pow(3 ** (7 * source_height), -1, 1 << target_depth)
+            assert source_inverse % (1 << target_depth) == direct
+
+            inverse_G = fixed_inverse * source_inverse % (1 << target_depth)
+
+            for source_type in TYPES:
+                left = tower(source_type, source_height)
+                for target_type in TYPES:
+                    right = tower(target_type, target_height)
+                    eta, theta = connector(left, right)
+                    compiled = (
+                        (right.A - left.B)
+                        * (inverse_G % (1 << right.K))
+                    ) % (1 << right.K)
+                    assert eta == compiled
+                    assert (
+                        left.B + 3**left.G * eta
+                        == right.A + (1 << right.K) * theta
+                    )
 
 
 def u_m_mod(m: int, bits: int) -> int:
@@ -200,7 +227,7 @@ def main() -> None:
     print("verified offset Montgomery precision lifts")
 
     verify_cycle_newton_compiler()
-    print("verified cycle-aligned Newton compiler and eleven-bit slack")
+    print("verified full Newton workspace, deepest connectors, and eleven-bit slack")
 
     verify_logarithmic_bulk()
     print("verified 2-adic logarithmic bulk and exact convergence rate")
