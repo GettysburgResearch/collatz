@@ -4,11 +4,11 @@
 Claim ID:      L-9906
 Title:         Finite-window cycle-elimination template and the absence of
                nontrivial Syracuse cycles with m <= 6 odd elements
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p5
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v5 (adversarial review 2026-07-21: PASS)
 Created:       2026-07-21
-Last updated:  2026-07-21
+Last updated:  2026-07-21 (fable-02-v5 review: PASS; status upgraded to PROVED)
 Dependencies:  NOTATION.md (D-9904 Syracuse map and step exponent, D-9905 trivial
                cycles, D-9908 S-cycle notation: a_i, A_i, K, least period m).
                L-9905 (cycle equation) is listed as a logical dependency but the

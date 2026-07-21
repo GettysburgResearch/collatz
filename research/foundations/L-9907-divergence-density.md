@@ -3,11 +3,11 @@
 ```text
 Claim ID: L-9907
 Title: Parity-density threshold for divergent trajectories (the gamma = log_3 2 criterion)
-Status: PROPOSED
+Status: PROVED
 Authoring agent: fable-02-p6
-Reviewing agents: (none yet)
+Reviewing agents: fable-02-v6 (adversarial review 2026-07-21: PASS)
 Created: 2026-07-21
-Last updated: 2026-07-21
+Last updated: 2026-07-21 (adversarial review appended; minor fix at (2.4))
 Dependencies: NOTATION.md (D-9902 shortcut map T; D-9906 parity vector v_i, a_k;
               D-9907 bounded/unbounded/divergent). Related: L-9901 (orbit trichotomy,
               parallel file), L-9903 — all overlaps with those files are re-proved
@@ -248,8 +248,11 @@ $$a_k \log_2 3 \;\ge\; k - \log_2 n - E_{t_0} - k\delta
 \;=\; k(1 - \delta) - C(\delta, n). \tag{2.3}$$
 Dividing by $k \log_2 3 > 0$ and using $1/\log_2 3 = \gamma$:
 $$\frac{a_k}{k} \;\ge\; (1-\delta)\,\gamma \;-\; \frac{C(\delta,n)}{k \log_2 3}
-\qquad\text{for all } k \ge t_0. \tag{2.4}$$
-Now take $\liminf_k$: for any $\eta > 0$ choose $k_1 \ge t_0$ with
+\qquad\text{for all } k \ge \max(t_0, 1). \tag{2.4}$$
+(The $\max(\cdot,1)$ is a reviewer fix, fable-02-v6: when $t_0 = 0$ the division by
+$k$ requires $k \ge 1$. Inequality (2.3) itself holds for all $k \ge t_0$ including
+$k = t_0 = 0$, where it reads $0 \ge -C(\delta,n)$.)
+Now take $\liminf_k$: for any $\eta > 0$ choose $k_1 \ge \max(t_0, 1)$ with
 $C(\delta,n)/(k\log_2 3) < \eta$ for all $k \ge k_1$ (possible since $C$ is a constant);
 then $a_k/k > (1-\delta)\gamma - \eta$ for all $k \ge k_1$, so
 $\liminf_k a_k/k \ge (1-\delta)\gamma - \eta$; as $\eta > 0$ was arbitrary,
@@ -858,3 +861,392 @@ substance, and every step is elementary and written out.
 ---
 
 Signed: fable-02-p6, 2026-07-21.
+
+---
+
+## Verification note (fable-02-v6, 2026-07-21)
+
+**Verdict: PASS (with one minor fix applied inline). Status upgraded PROPOSED → PROVED
+per NOTATION.md Conventions and README §7.** Independent adversarial review per README
+§13: all claims restated independently, every proof reconstructed from NOTATION.md
+definitions alone before comparing against the file, and an independent falsification
+harness (written from the claim statements, not from the author's Test section) run in
+exact arithmetic. Not marked INDEPENDENTLY_VERIFIED — that upgrade belongs to the
+integrator / a further reviewer per project convention.
+
+### 1. Independent restatement (what I verified is claimed)
+
+- **.1** Envelope $T^k(n) \ge 3^{a_k}n/2^k$ for all $n \in \mathbb{Z}^+$, $k \ge 0$;
+  $\limsup a_k/k > \gamma \Rightarrow$ unbounded; $\liminf a_k/k > \gamma \Rightarrow$
+  divergent.
+- **.2** Divergent $\Rightarrow \liminf a_k/k \ge \gamma$, with explicit
+  $a_k\log_2 3 \ge k(1-\delta) - C(\delta,n)$ for $k \ge t_0(\delta,n)$.
+- **.3** For integer orbits: eventually periodic (hence bounded) XOR divergent;
+  so unbounded $\iff$ divergent on $\mathbb{Z}^+$; caveat box delimits scope.
+- **.4** The two-sided chain and the refinement (4.2); boundary $\liminf = \gamma$
+  quarantined as Q-9902.
+- **.5** $n \equiv -1 \pmod{2^j} \iff v_0 = \dots = v_{j-1} = 1$, and then
+  $T^j(n) = 3^j(n+1)/2^j - 1 > (3/2)^j n$.
+
+### 2. Full independent reconstruction of L-9907.2 (the critical item)
+
+Redone from scratch before reading Steps 3–8, then diffed against the file.
+
+- *Step identity.* For odd $x$: $(3x/2)(1 + \tfrac{1}{3x}) = 3x/2 + 1/2 = (3x+1)/2 =
+  T(x)$, so $\log_2 T(x) = \log_2 x + \log_2 3 - 1 + \varepsilon(x)$ with
+  $\varepsilon(x) = \log_2(1 + \tfrac{1}{3x})$; $x \ge 1$ gives
+  $\varepsilon(x) \in (0, \log_2\tfrac43]$, decreasing in $x$. Even case:
+  $\log_2 T(x) = \log_2 x - 1$. Verified.
+- *Telescoping.* $\sum_{i=0}^{k-1}(\log_2 T^{i+1} - \log_2 T^i)$ has exactly $k$ terms
+  (no off-by-one: $i = 0, \dots, k-1$ covers precisely the steps from $n$ to $T^k(n)$);
+  collecting gives (2.1) with $E_k \le a_k \log_2\tfrac43$. Verified, and the
+  exponentiated form checked exactly in $\mathbb{Q}$ (harness check A).
+- *$M(\delta)$.* $M \ge \tfrac{1}{3(2^\delta - 1)} \Rightarrow \tfrac{1}{3M} \le
+  2^\delta - 1 \Rightarrow \varepsilon(M) \le \delta$; $M \ge 1$. Verified (check G,
+  2000 random $\delta$). One cosmetic remark: $\varepsilon$ is *defined* in this file
+  for odd $x$, but Step 3 evaluates it at $M(\delta)$, which can be even (e.g.
+  $M(0.5) = 1$ is odd but $M(0.01) = 48$ is even); harmless, since the defining formula
+  $\log_2(1 + \tfrac{1}{3x})$ and its monotonicity make sense for all real $x > 0$, and
+  Step 5 only ever applies the bound at odd orbit values. No fix needed.
+- *$t_0$ and finiteness of $E_{t_0}$.* Divergence (definition applied with bound
+  $M(\delta)$) makes $\{t : T^s(n) \ge M(\delta)\ \forall s \ge t\}$ a nonempty subset
+  of $\mathbb{Z}_{\ge 0}$; least element $t_0$ exists. $E_{t_0}$ is a finite sum of at
+  most $t_0$ terms each $\le \log_2\tfrac43$ — finite by construction, not assumption.
+  Verified.
+- *Split (2.2).* For $k \ge t_0$, every index in the tail sum has $T^i(n)$ odd (that is
+  $v_i = 1$) **and** $\ge M(\delta)$ (that is $i \ge t_0$ — this is where the *whole
+  tail*, not just infinitely many indices, is needed, i.e. where divergence rather than
+  unboundedness is consumed); at most $k - t_0$ terms, each $\le \delta$. Empty at
+  $k = t_0$. Verified.
+- *Conclusion.* Rearranging (2.1): $a_k \log_2 3 = k + \log_2 T^k(n) - \log_2 n - E_k
+  \ge k - \log_2 n - E_{t_0} - k\delta = k(1-\delta) - C(\delta,n)$ using
+  $\log_2 T^k(n) \ge 0$ for $k \ge t_0$ (Step 6). I confirmed (2.3) also holds at the
+  edge $k = t_0$, including $t_0 = 0$. Division by $k\log_2 3$ requires $k \ge 1$: this
+  is the **one defect found** — (2.4) as originally written said "for all
+  $k \ge t_0$", which divides by $k = 0$ when $t_0 = 0$ (e.g. any $\delta \ge
+  \log_2\tfrac43$ has $M(\delta) = 1$, forcing $t_0 = 0$). Trivial to repair; fixed
+  inline to $k \ge \max(t_0, 1)$, with the $\liminf$ step's $k_1$ adjusted to match.
+  No downstream statement changes: the Statement's quantitative claim is (2.3), which
+  was and remains correct for all $k \ge t_0$.
+- *$\delta \to 0$.* For each **fixed** $\delta$ the $k$-liminf is completed, yielding
+  the $\delta$-free number $L := \liminf a_k/k \ge (1-\delta)\gamma$; then
+  $\sup_{\delta}$ over the resulting constants gives $L \ge \gamma$. No interchange of
+  limits; no monotonicity in $\delta$ is used or needed. Verified.
+- *Hunted for and not found:* limsup/liminf confusion (none — F1/F2 inline proofs are
+  correct and used in the right places); silently assumed monotonicity (none); the
+  bounded-$a_k$ case (needs no separate treatment: (2.3) itself shows $a_k$ bounded is
+  incompatible with the hypotheses for large $k$, consistently — and (2.1) shows a
+  bounded-$a_k$ orbit has $\log_2 T^k \to -\infty$, contradicting divergence);
+  telescoping off-by-one (none).
+
+### 3. Checks on .1, .3, .4, .5
+
+- **.1** Induction verified; base $k = 0$ is equality via $a_0 = 0$. Positivity enters
+  exactly where the inductive bound $3^{a_k}n/2^k > 0$ is multiplied by $1/2$ resp.
+  $3/2$ (order-preserving only for positive quantities), and again in (1.2) where
+  $n \ge 1 > 0$ makes $n \cdot 3^{k\eta} \to \infty$. The strictness parenthetical
+  (strict once one odd step occurred) propagates correctly. (i) concludes only
+  unboundedness and says so; (ii)'s $\eta = (\ell - \gamma)/2$ arithmetic checks:
+  $\ell - \eta = \gamma + \eta$.
+- **.3** Pigeonhole complete: the negation of divergence is correctly computed
+  ($\exists B$ with $T^k(n) \le B$ infinitely often); integrality + positivity confine
+  those values to the finite set $\{1, \dots, B\}$; a repeated value plus determinism
+  (induction stated) yields $T^{k+p} = T^k$ for all $k \ge k_1$; division with
+  remainder collapses the orbit to a finite set — so bounded and eventually periodic.
+  Exclusivity of (a)/(b) proved, not assumed. The corollary chain unbounded
+  $\Rightarrow$ (b) and divergent $\Rightarrow$ unbounded is sound.
+  **Caveat box:** I re-derived the rational correction independently: for $x = p/q$ in
+  lowest terms, $q$ odd, parity of $x$ = parity of $p$ (2-adically, $q^{-1}$ is odd);
+  even case $T(x) = (p/2)/q$; odd case $T(x) = \tfrac{(3p+q)/2}{q}$ with $3p + q$ even,
+  and after cancellation the denominator still divides $q$ (it can drop, e.g. to $q/3$).
+  So the orbit lives in $\tfrac1q\mathbb{Z} \cap (0,\infty)$, which meets every $[0,B]$
+  in a finite set, and the pigeonhole survives verbatim. The box's claimed genuine
+  failure modes (non-rational $\mathbb{Z}_2$ points have no archimedean magnitude;
+  diagonal/multi-orbit constructions break determinism propagation; unproven
+  integrality breaks (P2)) are each correct, and the box **does not overclaim** — it
+  narrows the folklore warning rather than weakening the safeguard, and the operational
+  rule is stated conservatively.
+- **.4 / .4-R** (4.1) is exactly (2.1) divided by $k\log_2 3$ ($k \ge 1$). $E_k/k \to
+  0$ under divergence: correct ($\limsup \le \delta$ for every $\delta$, via (2.2)).
+  The sandwich is applied to sequences bounded for large $k$ with a genuine $o(1)$
+  perturbation; the $\eta$-argument and the extraction
+  $\liminf(\gamma + \gamma x_k) = \gamma + \gamma\liminf x_k$ (constant $\gamma > 0$)
+  are valid; (4.2) follows, and with $\log_2 T^k(n) \ge 0$ (integrality) it re-proves
+  .2. Note divergence is genuinely needed for $E_k/k \to 0$: on the trivial cycle
+  $(1,2)$, $E_k/k \to \tfrac12\log_2\tfrac43 \ne 0$ — so (4.2) is correctly restricted
+  to divergent orbits.
+- **.5** Both inductions verified including $j = 1$ bases; integrality of
+  $(n+1)/2^j$ is exactly the hypothesis $2^j \mid n+1$; the step's parity claim
+  ($3^j \cdot 2m - 1$ odd) and the converse's extraction ($3^j$ odd $\Rightarrow
+  2 \mid (n+1)/2^j$) are correct. Corollaries (Mersenne evaluation, strict rise
+  factor, exactness of the residue class) check out.
+
+### 4. Negation / strengthening attempts
+
+- Tried to break (2.3) computationally in the one regime where it is unconditionally
+  testable: $\delta > \log_2(4/3)$ forces $M(\delta) = 1$, hence $t_0 = 0$ and
+  $C = \log_2 n$ for **every** integer orbit (no divergence needed for these $\delta$).
+  600 orbits, $k \le 2000$: no violation (check H). A single failure would have
+  refuted the $\varepsilon$-management wholesale.
+- Tried to manufacture an envelope violation among supercritical windows: none in
+  180,000 exact envelope checks and all probed windows with $a_k/k > \gamma$ (checks
+  E, F; the supercritical test $3^{a_k} > 2^k$ done in exact integers).
+- Strengthening: .2 cannot be improved to strict inequality by these methods (the
+  file says so, Q-9902); I confirm the obstruction — (2.5) approaches $\gamma$ only in
+  the limit, and no step produces a $k$-uniform strict gap. I found no way to weaken
+  the divergence hypothesis to unboundedness in .2 directly (the tail-vs-infinitely
+  often distinction at (2.2) is real), consistent with the file's own remark.
+- **First unsupported inference: none found.** The only defect was the $k = 0$
+  division edge at (2.4), fixed above; it invalidated no conclusion.
+- Confirmed: the file nowhere asserts that divergent orbits exist; Q-9902 is phrased
+  neutrally ("does there exist ... and if so ..."), labeled OPEN, with no conjectured
+  answer — compliant with D-9909 neutrality.
+
+### 5. Independent computational harness (exact arithmetic; finite verification, not proof)
+
+Script written from the claim statements alone (not adapted from the author's Test
+section); stored at the session scratchpad as `v6_l9907_check.py`. Highlights beyond
+the author's tests: the glider forward direction is checked **exhaustively** for all
+$j \le 22$ and all $n \equiv -1 \pmod{2^j}$ with $n < 2^{24}$ (16,777,212 orbits), the
+envelope is checked exactly for all $n \le 3000$, $k \le 60$, and (2.3) is stress-tested
+unconditionally in the $M(\delta) = 1$ regime.
+
+```python
+#!/usr/bin/env python3
+# Independent adversarial verification harness for L-9907 (agent fable-02-v6).
+# Written from the claim STATEMENTS alone, not from the author's test script.
+# Exact integer/Fraction arithmetic wherever the claim is exact; floats only
+# with explicit margins. Finite verification, never proof.
+
+from fractions import Fraction
+import math
+import random
+
+random.seed(20260721)
+LOG2_3 = math.log2(3)
+GAMMA = 1.0 / LOG2_3
+
+def T(x: int) -> int:
+    return x >> 1 if x % 2 == 0 else (3 * x + 1) >> 1
+
+# Check A -- exact telescoping identity (2.1), exponentiated form, in Q:
+#   T^k(n) * 2^k == n * 3^{a_k} * prod_{i<k, v_i=1} (1 + 1/(3 T^i(n)))
+# plus float cross-check of log form, plus exact (strict) envelope.
+def check_A():
+    cases = [(n, k) for n in range(1, 121) for k in (1, 7, 33)]
+    cases += [(random.randint(1, 10**15), random.randint(1, 250))
+              for _ in range(300)]
+    for n, k in cases:
+        xs = [n]
+        for _ in range(k):
+            xs.append(T(xs[-1]))
+        vs = [x % 2 for x in xs[:k]]
+        ak = sum(vs)
+        prod = Fraction(1)
+        for i in range(k):
+            if vs[i]:
+                prod *= (1 + Fraction(1, 3 * xs[i]))
+        assert Fraction(xs[k]) * 2**k == Fraction(n) * 3**ak * prod, (n, k)
+        assert xs[k] * 2**k >= 3**ak * n, (n, k)
+        if ak >= 1:  # strictness after >=1 odd step
+            assert xs[k] * 2**k > 3**ak * n, (n, k)
+        Ek = sum(math.log2(1 + 1 / (3 * xs[i])) for i in range(k) if vs[i])
+        assert abs((math.log2(xs[k]) - math.log2(n))
+                   - (ak * LOG2_3 - k + Ek)) < 1e-6, (n, k)
+    print(f"A PASS: exact telescoping + exact (strict) envelope + log form, "
+          f"{len(cases)} cases (n<=1e15, k<=250).")
+
+# Check B -- glider lemma L-9907.5 EXHAUSTIVELY: for every j <= 22 and every
+# n < 2^24 with n == -1 (mod 2^j): first j parities all 1 and
+# T^j(n) == 3^j*(n+1)/2^j - 1.
+def check_B():
+    NMAX = 1 << 24
+    total = 0
+    for j in range(1, 23):
+        p3 = 3**j
+        step = 1 << j
+        mmax = NMAX >> j          # n = m*2^j - 1 < 2^24  <=>  m <= 2^(24-j)
+        for m in range(1, mmax + 1):
+            x = m * step - 1
+            for _ in range(j):
+                if x & 1 == 0:
+                    raise AssertionError(("parity", j, m))
+                x = (3 * x + 1) >> 1
+            if x != p3 * m - 1:
+                raise AssertionError(("formula", j, m))
+            total += 1
+    print(f"B PASS: glider forward direction exhaustive, j<=22, "
+          f"all n = -1 mod 2^j below 2^24 ({total} orbits).")
+
+# Check C -- converse/exactness of .5: maximal initial all-ones run length
+# equals nu_2(n+1) (exhaustive small range + random sample).
+def check_C():
+    def run_len(n, cap=64):
+        r, x = 0, n
+        while r < cap and x & 1:
+            r += 1
+            x = (3 * x + 1) >> 1
+        return r
+    def nu2(t):
+        v = 0
+        while t % 2 == 0:
+            v += 1
+            t //= 2
+        return v
+    for n in range(1, 20001):
+        assert run_len(n) == min(nu2(n + 1), 64), n
+    for _ in range(4000):
+        n = random.randint(1, 10**12)
+        assert run_len(n) == min(nu2(n + 1), 64), n
+    print("C PASS: initial all-ones run == nu_2(n+1), n<=20000 exhaustive "
+          "+ 4000 random n <= 1e12.")
+
+# Check D -- T^j(2^j - 1) == 3^j - 1 for j <= 25, exact.
+def check_D():
+    for j in range(1, 26):
+        x = 2**j - 1
+        for _ in range(j):
+            assert x & 1, j
+            x = (3 * x + 1) >> 1
+        assert x == 3**j - 1, j
+    print("D PASS: T^j(2^j-1) == 3^j-1 for 1 <= j <= 25.")
+
+# Check E -- lower envelope exact for all n <= 3000, all k <= 60:
+#   T^k(n) * 2^k >= 3^{a_k} * n  (integers, no floats).
+def check_E():
+    for n in range(1, 3001):
+        x, a = n, 0
+        for k in range(1, 61):
+            a += x & 1
+            x = T(x)
+            assert x * 2**k >= 3**a * n, (n, k)
+    print("E PASS: envelope exact for n <= 3000, k <= 60 (180000 checks).")
+
+# Check F -- probe .1(i): find (n,k) with a_k/k > gamma (exact test:
+# 3^{a_k} > 2^k) and confirm the envelope holds and the bound itself
+# exceeds n (so T^k(n) > n), all in exact integers.
+def check_F():
+    printed = 0
+    for n in [27, 31, 41, 47, 63, 71, 91, 97, 103, 255, 447, 639, 703, 871]:
+        x, a = n, 0
+        for k in range(1, 101):
+            a += x & 1
+            x = T(x)
+            if 3**a > 2**k:                      # a_k/k > gamma, exact
+                assert x * 2**k >= 3**a * n, (n, k)   # envelope
+                assert 3**a * n > n * 2**k            # bound itself > n
+                assert x > n                          # so the value exceeds n
+                if k >= 10 and printed < 5:
+                    env = 3**a * n / 2**k
+                    print(f"  n={n:>4} k={k:>3} a_k={a:>3} a_k/k={a/k:.4f}"
+                          f" > gamma; envelope={env:.1f} <= T^k(n)={x}"
+                          f" and T^k(n) > n")
+                    printed += 1
+                    break
+    print("F PASS: supercritical windows verified exactly "
+          "(a_k/k > gamma via 3^a > 2^k; envelope holds; value > n).")
+
+# Check G -- Step 3 constant M(delta) = ceil(1/(3(2^d-1))) satisfies
+# log2(1 + 1/(3M)) <= delta, for 2000 random delta in (0,1).
+def check_G():
+    for _ in range(2000):
+        d = random.uniform(1e-6, 0.999999)
+        M = math.ceil(1 / (3 * (2**d - 1)))
+        assert M >= 1
+        assert math.log2(1 + 1 / (3 * M)) <= d + 1e-15, (d, M)
+    print("G PASS: M(delta) bound for 2000 random delta in (0,1).")
+
+# Check H -- inequality (2.3) is directly testable WITHOUT divergence when
+# delta > log2(4/3) ~ 0.4150 (then M(delta)=1, t_0=0, C=log2 n, and the
+# Step 5-7 argument needs no divergence hypothesis):
+#   a_k * log2 3 >= k(1-delta) - log2 n   for ALL k >= 1, every integer orbit.
+# A single failure would refute the epsilon-management. Margin -1e-9.
+def check_H():
+    # delta strictly above log2(4/3) ~ 0.4150375 so that M(delta) = 1 holds
+    # in float arithmetic too (at delta = log2(4/3) exactly, M = ceil(1) = 1
+    # in exact reals, but float rounding of 2**delta can give ceil = 2).
+    for d in (0.4151, 0.42, 0.5, 0.75):
+        M = math.ceil(1 / (3 * (2**d - 1)))
+        assert M == 1, (d, M)
+        for _ in range(150):
+            n = random.randint(1, 10**9)
+            x, a = n, 0
+            for k in range(1, 2001):
+                a += x & 1
+                x = T(x)
+                assert a * LOG2_3 >= k * (1 - d) - math.log2(n) - 1e-9, \
+                    (d, n, k)
+    print("H PASS: (2.3) with t_0=0, C=log2 n for delta in "
+          "{0.4151,0.42,0.5,0.75}; 150 orbits each, k <= 2000.")
+
+# Check I -- caveat-box rational remark: parity-by-numerator extension keeps
+# denominators dividing q; cycle (1/5 -> 4/5 -> 2/5 -> 1/5) exact.
+def check_I():
+    def Tq(x: Fraction) -> Fraction:
+        assert x.denominator % 2 == 1
+        return x / 2 if x.numerator % 2 == 0 else (3 * x + 1) / 2
+    x = Fraction(1, 5)
+    seq = [x]
+    for _ in range(3):
+        seq.append(Tq(seq[-1]))
+    assert seq == [Fraction(1, 5), Fraction(4, 5), Fraction(2, 5),
+                   Fraction(1, 5)]
+    for _ in range(200):
+        q = random.choice([3, 5, 7, 9, 11, 15, 21, 27, 45, 105])
+        x = Fraction(random.randint(1, 10**6), q)
+        for _ in range(300):
+            assert q % x.denominator == 0, (q, x)
+            x = Tq(x)
+    print("I PASS: rational cycle exact; denominators divide q along 200 "
+          "random odd-denominator orbits (300 steps).")
+
+if __name__ == "__main__":
+    check_A(); check_C(); check_D(); check_E()
+    check_F(); check_G(); check_H(); check_I()
+    check_B()   # last: the heavy exhaustive sweep
+    print("ALL CHECKS PASS (finite verification only; not proof).")
+```
+
+Output (command: `python3 v6_l9907_check.py`), verbatim:
+
+```text
+A PASS: exact telescoping + exact (strict) envelope + log form, 660 cases (n<=1e15, k<=250).
+C PASS: initial all-ones run == nu_2(n+1), n<=20000 exhaustive + 4000 random n <= 1e12.
+D PASS: T^j(2^j-1) == 3^j-1 for 1 <= j <= 25.
+E PASS: envelope exact for n <= 3000, k <= 60 (180000 checks).
+  n=  27 k= 10 a_k=  8 a_k/k=0.8000 > gamma; envelope=173.0 <= T^k(n)=182 and T^k(n) > n
+  n=  31 k= 10 a_k=  8 a_k/k=0.8000 > gamma; envelope=198.6 <= T^k(n)=206 and T^k(n) > n
+  n=  41 k= 10 a_k=  7 a_k/k=0.7000 > gamma; envelope=87.6 <= T^k(n)=91 and T^k(n) > n
+  n=  47 k= 10 a_k=  7 a_k/k=0.7000 > gamma; envelope=100.4 <= T^k(n)=103 and T^k(n) > n
+  n=  63 k= 10 a_k=  7 a_k/k=0.7000 > gamma; envelope=134.6 <= T^k(n)=137 and T^k(n) > n
+F PASS: supercritical windows verified exactly (a_k/k > gamma via 3^a > 2^k; envelope holds; value > n).
+G PASS: M(delta) bound for 2000 random delta in (0,1).
+H PASS: (2.3) with t_0=0, C=log2 n for delta in {0.4151,0.42,0.5,0.75}; 150 orbits each, k <= 2000.
+I PASS: rational cycle exact; denominators divide q along 200 random odd-denominator orbits (300 steps).
+B PASS: glider forward direction exhaustive, j<=22, all n = -1 mod 2^j below 2^24 (16777212 orbits).
+ALL CHECKS PASS (finite verification only; not proof).
+```
+
+### 6. Fixes applied and residual caveats
+
+**Fix applied (the only one):** (2.4) originally quantified "for all $k \ge t_0$",
+which divides by $k = 0$ when $t_0 = 0$; changed to $k \ge \max(t_0, 1)$ with a
+flagged parenthetical, and the subsequent $k_1$ adjusted. (2.3) and the Statement's
+quantitative claim were already correct as written.
+
+**Caveats (documented, no action needed):**
+1. Step 3 evaluates $\varepsilon$ at $M(\delta)$, which may be even, whereas
+   $\varepsilon$ was introduced "for odd $x$"; the defining formula is monotone on all
+   of $(0,\infty)$, so the argument is sound; a pedantic rewrite would define
+   $\varepsilon$ on $\mathbb{R}_{>0}$.
+2. At $\delta = \log_2(4/3)$ exactly, $M(\delta) = \lceil 1 \rceil = 1$ in exact
+   reals, but float evaluation of $2^\delta$ can yield $M = 2$; irrelevant to the
+   proof (any $M \ge \lceil 1/(3(2^\delta-1)) \rceil$ works), noted here only because
+   my harness initially tripped on it.
+3. All computational content above is finite verification, never proof (README §10,
+   §17.2).
+4. Confirmed: the file makes no claim that divergent orbits exist, and Q-9902 remains
+   neutral and OPEN. The caveat box's operational rule should be treated as binding by
+   downstream divergence programs.
+
+Signed: fable-02-v6, 2026-07-21.
