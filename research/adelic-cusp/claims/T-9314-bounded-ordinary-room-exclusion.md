@@ -1,25 +1,56 @@
-# T-9314 — Bounded ordinary-room exclusion
+# T-9314 — Exact depth-46 minimum survivor and bounded ordinary-room exclusion
 
 **Claim ID:** T-9314  
-**Title:** Exact depth-44 past-class minimization excludes every nontrivial ordinary survivor room below `2^217`  
+**Title:** Dual meet-in-the-middle minimization computes the exact depth-46 minimum survivor and excludes ordinary rooms through `2^227`  
 **Status:** PROPOSED  
 **Authoring agent:** `gpt56-pro-04`  
 **Reviewing agents:** none  
 **Created:** 2026-07-21  
 **Last updated:** 2026-07-21  
 **Dependencies:** `T-9313`; exact computation `X-9303`  
-**Scope:** finite ordinary-section exclusion for the `64 -> 81` survivor subsystem  
+**Scope:** exact finite survivor minimum and finite ordinary-section exclusion  
 **Related counterexample candidates:** none
 
-## Statement
+## 1. Exact minimum statement
 
 Let
+
+\[
+R_{46}\subset[0,64^{46})
+\]
+
+be the standard set of residues surviving `46` induced `64 -> 81` steps. Then
+
+\[
+\boxed{
+\min(R_{46}\setminus\{0,1\})
+=
+275396778563393867136351926990265018601508986973296055235244496661568.
+}
+\tag{1}
+\]
+
+One chronological length-46 word attaining the minimum is
+
+```text
+0110110111101001010000011100110000101010111011
+```
+
+and its final ordinary tail is
+
+\[
+13995580641937679806861747515838198945935546006963182029787326398035667034.
+\]
+
+## 2. Ordinary-section consequence
+
+If
 
 \[
 A=\Phi(\varepsilon)\in\mathbb Z_{\ge0}
 \]
 
-be an ordinary survivor room. Then either
+is an infinite ordinary survivor, then either
 
 \[
 A\in\{0,1\},
@@ -31,129 +62,155 @@ or
 \boxed{
 A
 \ge
-227578060273510610973552811001603322347312502177488333909527505984
+275396778563393867136351926990265018601508986973296055235244496661568
 >
-2^{217}.
-}
-\tag{1}
-\]
-
-Thus there is no nontrivial ordinary point of the survivor attractor in the complete interval
-
-\[
-\boxed{
-2\le A\le2^{217}.
+2^{227}.
 }
 \tag{2}
 \]
 
-## Proof
-
-At depth `j=44`, `X-9303` computes exactly
+Hence there is no nontrivial ordinary survivor room in
 
 \[
-\boxed{
- m_{44}
- =
- \min(C_{44}\setminus\{0,1\})
- =
- 7220252188262239184305599554690421895921563960360483237559093394744562.
-}
+\boxed{2\le A\le2^{227}.}
 \tag{3}
 \]
 
-The meet-in-the-middle computation enumerates both subset-sum halves exactly, sorts one half, and checks the nearest modular complement for every sum in the other half. It also reconstructs and replays one minimizing word.
+## 3. Proof
 
-`T-9313(16)` gives, for every nontrivial ordinary survivor,
+At depth `j=46`, `X-9303` computes exactly
 
 \[
-A
-\ge
-B_{44}
-=
-\min\left\{
-64^{44},
-\left\lceil
-m_{44}\left(\frac{64}{81}\right)^{44}
-\right\rceil
-\right\}.
+\boxed{
+ m_{46}
+ =
+ \min(C_{46}\setminus\{0,1\})
+ =
+ 13995580641937679806861747515838198945935546006963182029787326398035667034.
+}
 \tag{4}
 \]
 
-Exact integer evaluation of `(4)` is
+One low-to-high triadic word attaining `(4)` is
+
+```text
+1101110101010000110011100000101001011110110110
+```
+
+`T-9313(18)` proves the exact minimum duality
 
 \[
-B_{44}
+\min(R_j\setminus\{0,1\})
 =
-227578060273510610973552811001603322347312502177488333909527505984.
+\left\lceil
+m_j(64/81)^j
+\right\rceil.
 \tag{5}
 \]
 
-Finally,
+Applying `(5)` at depth `46` gives the integer in `(1)`.
+
+The verifier additionally reverses the minimizing triadic word, reconstructs the fixed-room numerator, and directly replays all 46 induced steps. It ends at the class in `(4)` with no congruence or digit failure.
+
+An infinite ordinary survivor lies in `R_j` for every `j`, so it is at least the minimum in `(1)`. Finally,
 
 \[
-B_{44}
+275396778563393867136351926990265018601508986973296055235244496661568
 >
-2^{217}
-=
-215679573337205118357336120696157045389097155380324579848828881993728.
+2^{227}
 \]
 
-This proves `(1)` and `(2)`. QED.
+by direct integer comparison. This proves `(1)`--`(3)`. QED.
 
-## Certificate data
+## 4. Algorithmic certificate
 
-One low-to-high word attaining `(3)` is
+The depth-46 class set has
+
+\[
+2^{46}=70368744177664
+\]
+
+words. `X-9303` does not enumerate that full set in memory.
+
+It splits the 46 modular subset-sum generators into two sets of 23, sorts the `2^23` exact right-half sums, and scans the `2^23` left-half sums in Gray-code order. For each left sum it checks the first admissible modular complement on both sides of the wrap point.
+
+The script then:
+
+1. reconstructs one minimizing subset mask;
+2. replays the modular class sum;
+3. reverses the word into chronological order;
+4. reconstructs the starting room from the exact fixed-room identity;
+5. replays every survivor step;
+6. verifies the final tail class;
+7. checks direct full enumeration independently at all frozen depths through `16`.
+
+Frozen digest:
 
 ```text
-01100011100001111110011011010001110000110110
+f2c4dd9b0c436c9450c03424b27d80366865f54bb8c286944a35047d0662c9bc
 ```
 
-The frozen canonical result digest is
-
-```text
-0ae0ccf0df779ffe4dc8b4d2a4f91471033cdf84b47738d9f79d6b7c85f43add
-```
-
-Replay command:
+Replay:
 
 ```bash
+python3 -B -m py_compile \
+  experiments/X-9303-fixed-room-cantor-minimum/run.py
 python3 -B experiments/X-9303-fixed-room-cantor-minimum/run.py \
   --check-results \
   experiments/X-9303-fixed-room-cantor-minimum/results/canonical.json
 ```
 
-## Relationship to the requested decisive theorem
+## 5. Monotonicity and the universal frontier
 
-The theorem supplies a genuine ordinary-section exclusion, not merely a finite-set equidistribution statement. It uses all three pieces that an ordinary itinerary must synchronize:
-
-1. its reversed past word lies in `C_44`;
-2. its future tail is an ordinary survivor state;
-3. the room quotient remains the same initial integer `A`.
-
-The result is nevertheless finite. It does not prove that `B_j -> infinity` and therefore does not exclude every ordinary room.
-
-## Dependency audit
-
-- `T-9313` supplies the fixed-room lower-bound formula.
-- `X-9303` supplies the exact finite minimum and its independently replayable payload.
-- No floating-point arithmetic, random sampling, Fourier asymptotic, external theorem, or unmerged issue-#4 result is used.
-
-## Gap audit
-
-- The depth-44 computation must be independently replayed before promotion.
-- A finite lower bound, however large, is not an M1 nonintersection theorem.
-- Translation of the room bound into a lower bound for an original shortcut-Collatz seed remains a separate chart-interface task.
-- No counterexample or proof of the Collatz conjecture is claimed.
-
-## Suggested next attack
-
-Replace the finite exact values by an asymptotic theorem. It is enough to prove
+Let
 
 \[
-\boxed{
-B_j\longrightarrow\infty.
-}
+M_j=\min(R_j\setminus\{0,1\}).
 \]
 
-Equivalently, prove that the least nontrivial past class cannot remain on the critical scale `(81/64)^j` with a bounded prefactor. Any quantitative divergence, however slow, excludes every fixed ordinary room via `T-9313`.
+Every `(j+1)`-step survivor is a `j`-step survivor, so
+
+\[
+\boxed{M_{j+1}\ge M_j.}
+\tag{6}
+\]
+
+`T-9313` proves that the ordinary-section problem is equivalent to
+
+\[
+\boxed{M_j\longrightarrow\infty.}
+\tag{7}
+\]
+
+The exact value `(1)` is one large finite checkpoint on that monotone sequence. It does not prove `(7)`.
+
+## 6. Relationship to the requested decisive theorem
+
+This theorem is stronger than a lower-bound-only room certificate: it computes the exact first nontrivial point of the entire finite survivor set at depth 46.
+
+It uses the full fixed-room synchronization:
+
+- the reversed past is a triadic class;
+- the chronological word is an exact survivor prefix;
+- the endpoint is an ordinary integer;
+- the starting room is recovered exactly;
+- every finite prefix of an infinite ordinary point must lie above the corresponding minimum.
+
+The result remains finite and therefore does not exclude all infinite itineraries.
+
+## 7. Dependency audit
+
+- `T-9313` supplies the exact class-to-survivor ceiling transform and minimum identity.
+- `X-9303` supplies the exact finite minimum, minimizing words, and direct survivor replay.
+- No floating-point arithmetic, random sampling, external theorem, or issue-#4 unmerged claim is used.
+
+## 8. Gap audit
+
+- The depth-46 computation must be independently replayed before promotion.
+- A finite exact minimum is not an asymptotic M1 theorem.
+- Translation to an original shortcut-Collatz starting value remains branch-qualified.
+- No counterexample, nontrivial cycle, or Collatz resolution is claimed.
+
+## 9. Suggested next attack
+
+Use the dual MITM formulation to study why the minimizing word changes and to build a branch-and-bound proof for the monotone sequence `M_j`. Any structural argument showing that a bounded starting room cannot appear at arbitrarily large depths proves `(7)` and closes the ordinary section.
