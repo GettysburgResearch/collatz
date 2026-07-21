@@ -7,11 +7,11 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch contains seven mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
+The active branch now contains eight mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
 
 There is currently **no positive-integer Collatz counterexample** in the repository.
 
-## Fixed map and affine calculus
+## Fixed map
 
 The shortcut map is
 
@@ -23,7 +23,7 @@ n/2,&n\text{ even},\\[1mm]
 \end{cases}
 \]
 
-For a length-\(L\), weight-\(a\) parity word \(w\),
+A length-\(L\), weight-\(a\) parity word \(w\) acts affinely:
 
 \[
 T^L(n)=\frac{3^an+B(w)}{2^L}
@@ -31,388 +31,347 @@ T^L(n)=\frac{3^an+B(w)}{2^L}
 
 on one residue class modulo \(2^L\).
 
-The repository has developed four compatible finite descriptions:
+## Research arc before the current session
 
-1. positive collision fibers;
-2. induced partial radix maps;
-3. negative-template rational-base returns;
-4. synchronous coupling to a moving negative phase.
+The repository already contains proposed exact results on:
 
-The fourth is now the most local and structurally transparent representation.
-
-## Established finite resources
-
-The branch already contains proposed results giving:
-
-- exact finite collision atlases and sparse fibers;
-- induced maps \(H_D(MB+d)=NB+d\);
-- universal finite-horizon carry pumping;
-- exact 2-adic/real coding and an aperiodicity obstruction;
-- the run-length skeleton
-  \[
-  d_k+N^{u_k}C_k=d_{k+1}+M^{u_{k+1}}C_{k+1};
-  \]
-- inverse-signature collision codes and composition algebra;
-- exponentially unbounded mildly supercritical fiber cardinality;
-- the 339-branch chart `O-0005`;
+- finite collision fibers and induced partial radix maps;
+- mixed-radix string rewrites and finite-horizon carry pumps;
+- complete collision-fiber recursion;
+- inverse-signature collision codes;
+- exponentially unbounded mildly supercritical branch count;
 - arbitrary finite 3-adic precision;
-- geometry-preserving tensor amplification;
-- complete alphabet projection modulo \(2^b\) for every \(b\);
-- exact negative-shadow and graph-directed return criteria;
-- normalized real aspect-ratio constraints.
+- preservation of finite alphabet geometry under code tensors;
+- complete collision-alphabet projection modulo \(2^b\) for every \(b\);
+- negative-template return systems
+  \[
+  Nq=Mq'+a;
+  \]
+- variable-length renewal criteria and finite-code obstructions;
+- normalized real aspect ratio;
+- multi-target graph potentials;
+- exact coupling to moving negative phases;
+- negative-cycle padding towers;
+- Collatz–Kraft pressure and negative typical drift of complete renewal coverage.
 
-These remove branch count, finite precision, local pumping, and finite-scale dyadic correction as principal scarcities. They do **not** produce one infinite ordinary trajectory.
+These results remove branch count, finite precision, local pumping, and finite-scale modular correction as principal scarcities. They do **not** provide one ordinary starting value with an infinite expanding trajectory.
 
-# Negative shadows and renewal systems
+# Principal local representation
 
-## T-0008 — Negative-template duality
+## T-0014 — Synchronous difference/phase coupling
 
-Every collision chart
-
-\[
-T^L(MQ+r_i)=NQ+s
-\]
-
-has exact negative templates
-
-\[
-u_i=M-r_i,
-\qquad v=N-s
-\]
-
-satisfying
+Write a physical state as
 
 \[
-T^L(-u_i)=-v
+n=q-v,
+\qquad v\ge1.
 \]
 
-and
-
-\[
-T^L(Mq-u_i)=Nq-v.
-\]
-
-At a positive boundary \(n=Nq-v\), the intrinsic return equation is
-
-\[
-Nq=Mq'+a,
-\qquad a\in\{v-u_i\}.
-\]
-
-Thus collision codes are signed rational-base return languages in the ordinary negative Collatz graph.
-
-## T-0009 — Variable-length renewal criterion
-
-If negative templates of possibly different lengths return to one target, each supplies a dyadic quotient cylinder and an exact affine return map. A deterministic forward-invariant selector with unbounded positive quotients gives a Collatz counterexample.
-
-A finite one-target family that covers all sufficiently large quotients must contain the all-even contracting return. Hence a successful construction must use an infinite regular language, a proper survivor set, multiple phases, or compensated contracting edges.
-
-## T-0013 — Graph-directed returns
-
-A finite graph of negative phases permits locally contracting edges when every reachable directed grammar cycle has product multiplier greater than one. A finite phase potential then converts the cycle condition into uniform weighted expansion above one threshold.
-
-The missing part remains arithmetic and symbolic: construct an invariant accepted cylinder language containing one ordinary quotient.
-
-# New session: exact synchronous phase coupling
-
-## T-0014 — Difference/phase conjugacy
-
-For a positive phase magnitude \(v\), define
-
-\[
-P(v)=
-\begin{cases}
-v/2,&v\text{ even},\\
-(3v-1)/2,&v\text{ odd},
-\end{cases}
-\]
-
-so that \(T(-v)=-P(v)\), and define the complementary phase map
-
-\[
-C(v)=
-\begin{cases}
-3v/2,&v\text{ even},\\
-(v+1)/2,&v\text{ odd}.
-\end{cases}
-\]
-
-Write the physical state as
-
-\[
-n=q-v.
-\]
-
-Let
+With
 
 \[
 p=q\bmod2,
-\qquad r=v\bmod2,
-\qquad e=p\oplus r.
+\qquad
+r=v\bmod2,
+\qquad
+e=p\oplus r=n\bmod2,
 \]
 
-Then one shortcut step is exactly
+one shortcut step is exactly
 
 \[
-\boxed{
 q'=\frac{3^eq+p}{2},
 \qquad
 v'=\frac{3^ev+(2p-1)r}{2},
-}
 \]
 
-with
+and
 
 \[
 T(q-v)=q'-v'.
 \]
 
-This gives a precise interpretation:
+Even \(q\) means synchronization with the ordinary negative orbit; odd \(q\) is a complementary mismatch.
 
-- **even difference \(q\):** parity remains aligned, the phase follows its genuine negative orbit \(P\);
-- **odd difference \(q\):** the first carry mismatch occurs, and the phase takes the complementary branch \(C\).
+If \(q=2^km\) with \(m\) odd, the first \(k\) steps synchronize and the next step is the first mismatch. This gives a complete renewal partition indexed by \(\nu_2(q)\).
 
-Thus the negative-shadow system is not an imposed encoding. It is the natural dynamics of the difference between an ordinary orbit and a moving negative reference orbit.
+## T-0015 — Negative-cycle padding towers
 
-## Exact valuation acceleration
-
-If
+A negative cycle of length \(\ell\), odd count \(a\), and multiplier
 
 \[
-q=2^km,
-\qquad m\text{ odd},
+\Lambda=\frac{3^a}{2^\ell}>1
 \]
 
-then the first \(k\) steps are synchronized. Put
+turns every fixed mismatch/recovery type into a countable tower:
 
 \[
-A_v(k)=\sum_{j=0}^{k-1}(P^j(v)\bmod2).
-\]
-
-After the synchronized segment,
-
-\[
-q_k=3^{A_v(k)}m,
+L_t=L_0+t\ell,
 \qquad
-v_k=P^k(v).
-\]
-
-The next step is the first mismatch:
-
-\[
-(q,v)
-\longmapsto
-\left(
-\frac{3^{G_v(k)}m+1}{2},
-C(P^k(v))
-\right),
-\]
-
-where
-
-\[
-G_v(k)=A_v(k)+1-(P^k(v)\bmod2).
-\]
-
-This is a complete countable renewal partition indexed only by the ordinary valuation \(k=\nu_2(q)\).
-
-# Negative cycles as phase-plus-counter systems
-
-## T-0015 — Cycle-padded mismatch towers
-
-Let \(v_0\) lie on a negative cycle of period \(\ell\), odd count \(a\), and multiplier
-
-\[
-\Lambda=\frac{3^a}{2^\ell}>1.
-\]
-
-Fix a mismatch phase type \(k_0\pmod\ell\) and a bounded synchronized recovery from its complement phase to a selected target phase. Prepending \(t\) complete synchronized cycle circuits gives an exact return edge of length
-
-\[
-L_t=L_0+t\ell
-\]
-
-and odd count
-
-\[
-a_t=a_0+ta.
-\]
-
-Its multiplier satisfies
-
-\[
-\boxed{
+a_t=a_0+ta,
+\qquad
 \lambda_t=\lambda_0\Lambda^t.
-}
 \]
 
-The cylinders for different \(t\) are disjoint because they have different exact valuations. Every fixed mismatch type therefore generates a countable geometric tower and becomes supercritical after finitely many padding levels.
-
-This reveals the natural grammar state:
+The natural grammar state is therefore:
 
 \[
 \boxed{
 \text{finite negative phase type}
 +
-\text{one nonnegative cycle-padding counter}.
+\text{one nonnegative padding counter}.
 }
 \]
 
-## O-0008 — Complement atlas of the negative eleven-cycle
+`O-0008` records the complete one-mismatch complement atlas of the negative eleven-cycle.
 
-Write the negative eleven-cycle in phase magnitudes as
+## T-0016 — Collatz–Kraft pressure
 
-\[
-136\to68\to34\to17\to25\to37\to55\to82\to41\to61\to91\to136.
-\]
-
-It has multiplier
+For every complete parity prefix code,
 
 \[
-\Lambda=2187/2048.
-\]
-
-After one complementary mismatch and bounded synchronized recovery:
-
-- seven phase types enter the negative three-cycle at phase \(7\);
-- four phase types return to the eleven-cycle at phase \(34\).
-
-The complement hierarchy is
-
-\[
-\text{eleven-cycle}
-\longrightarrow
-\{\text{eleven-cycle},\text{three-cycle}\}
-\longrightarrow
-\text{fixed phase }1.
-\]
-
-From phase \(136\), the grouped base transfers are:
-
-### To phase 7
-
-\[
-T^9(q-136)=q'-7
-\]
-
-on seven residue classes modulo \(512\), with signed equation
-
-\[
-27q=512q'+\alpha
+\sum_w2^{-|w|}=1
 \]
 
 and
 
 \[
-\alpha\in\{-9,-18,-36,-216,-144,-96,-64\}.
+\sum_w\frac{3^{a(w)}}{4^{|w|}}=1.
 \]
 
-These towers first become supercritical after \(45\) complete cycle paddings.
-
-### Back to phase 34
+Thus, under fair cylinder probabilities,
 
 \[
-T^{13}(q-136)=q'-34
+\mathbb E\left[\frac{3^{a(w)}}{2^{|w|}}\right]=1,
 \]
 
-on four residue classes modulo \(8192\), with
+while, for finite mean length,
 
 \[
-2187q=8192q'+\alpha
-\]
-
-and
-
-\[
-\alpha\in\{-1152,-6912,-4608,-3072\}.
-\]
-
-These towers first become supercritical after \(21\) paddings.
-
-The exact atlas is finite, but no rule yet keeps one ordinary orbit inside its high-padding branches forever.
-
-# New conservation law: Collatz–Kraft pressure
-
-## T-0016 — Two measures on one prefix language
-
-Let \(\mathcal W\) be a complete prefix-free parity renewal code. For a codeword \(w\), put
-
-\[
-L=L(w),
-\qquad a=a(w),
-\qquad \lambda(w)=\frac{3^a}{2^L}.
-\]
-
-Completeness gives the Bernoulli identity
-
-\[
-\sum_{w\in\mathcal W}p^{a(w)}(1-p)^{L(w)-a(w)}=1.
-\]
-
-At \(p=1/2\),
-
-\[
-\sum_w2^{-L(w)}=1.
-\]
-
-At \(p=3/4\),
-
-\[
-\sum_w\frac{3^{a(w)}}{4^{L(w)}}=1.
-\]
-
-Therefore, under fair 2-adic cylinder probabilities,
-
-\[
-\boxed{\mathbb E_{1/2}[\lambda]=1.}
-\]
-
-Moreover,
-
-\[
-\boxed{
-\lambda(w)=
-\frac{\mu_{3/4}([w])}{\mu_{1/2}([w])}.
-}
-\]
-
-The real Collatz multiplier is exactly the likelihood ratio between the \(3/4\)-odd and fair parity measures.
-
-When the mean return length is finite,
-
-\[
-\mathbb E_{1/2}[a]=\frac12\mathbb E_{1/2}[L]
-\]
-
-and
-
-\[
-\boxed{
-\mathbb E_{1/2}[\log\lambda]
-=\frac12\log(3/4)\,\mathbb E_{1/2}[L]<0.
-}
-\]
-
-Thus a complete renewal code has mean multiplier one but strictly negative typical logarithmic growth. Every positive-growth survivor language is Haar-null.
-
-## Graph pressure matrices
-
-For return edges \(e:i\to j\), define
-
-\[
-\mathcal A_s(i,j)
+\mathbb E[\log\lambda]
 =
-\sum_{e:i\to j}2^{-L_e}\lambda_e^s.
+\frac12\log(3/4)\,\mathbb E[|w|]
+<0.
 \]
 
-Then:
+The multiplier is exactly the likelihood ratio between Bernoulli odd probability \(3/4\) and fair parity.
 
-- \(\mathcal A_0\) measures fair 2-adic cylinder coverage;
-- \(\mathcal A_1\) measures the \(3/4\)-odd tilted mass;
-- a complete outgoing prefix code makes both row-stochastic;
-- a candidate exceptional grammar should be scored by both pressure operators, not branch count or cycle multiplier alone.
+Complete broad coverage is therefore the wrong target: every positive-growth survivor language is Haar-null and exceptional.
 
-This identifies the true construction target as an **entropy-thin, pressure-positive exceptional language containing one ordinary finite boundary**.
+# New session: rounded phase martingale
+
+## L-0013 — Physical parity removes the XOR
+
+Let
+
+\[
+e=T^t(n)\bmod2
+\]
+
+be the physical parity. The moving negative phase has the exact rounded update
+
+\[
+\boxed{
+S_0(v)=\left\lceil\frac v2\right\rceil,
+\qquad
+S_1(v)=\left\lfloor\frac{3v}{2}\right\rfloor.
+}
+\]
+
+Thus
+
+\[
+v_{t+1}=S_{e_t}(v_t).
+\]
+
+The quotient update is
+
+\[
+q'=
+\begin{cases}
+(q+(v\bmod2))/2,&e=0,\\[1mm]
+(3q+1-(v\bmod2))/2,&e=1.
+\end{cases}
+\]
+
+Most importantly,
+
+\[
+\boxed{
+S_0(v)+S_1(v)=2v.
+}
+\]
+
+Every physical parity word drives an exact integer-valued rounded phase shadow independent of the magnitude of the accompanying quotient.
+
+## T-0017 — Fair phase absorption
+
+Under independent fair physical parity bits,
+
+\[
+V_{t+1}=S_{E_t}(V_t)
+\]
+
+is a nonnegative martingale:
+
+\[
+\mathbb E[V_{t+1}\mid V_t]=V_t.
+\]
+
+It is absorbed at phase \(1\) almost surely.
+
+This supplies a second exact conservation law beside `T-0016`.
+
+## Exact phase–Kraft identity
+
+For every finite complete physical-parity prefix code \(\mathcal W\),
+
+\[
+\boxed{
+\sum_{w\in\mathcal W}
+2^{-|w|}\bigl(S_w(v)-1\bigr)
+=
+v-1.
+}
+\]
+
+Consequently, the fair mass of codewords ending at phase at least \(H\) satisfies
+
+\[
+\sum_{S_w(v)\ge H}2^{-|w|}
+\le
+\frac{v-1}{H-1}.
+\]
+
+High negative phases are necessarily supported by a thin set of parity cylinders.
+
+## Finite complete graph rigidity
+
+Suppose a finite graph of exact phase-return words has a complete outgoing prefix code at every vertex. Let
+
+\[
+P(i,j)
+=
+\sum_{e:i\to j}2^{-|w_e|}.
+\]
+
+Then
+
+\[
+P(v_i-1)=(v_i-1).
+\]
+
+Every recurrent communicating class of such a complete finite graph is phase \(1\). A nontrivial recurrent multi-phase construction must therefore be incomplete and exceptional, infinite-state, or equipped with an unbounded stack/counter.
+
+This strengthens the one-target obstruction of `T-0009`.
+
+## Exact phase escape transform
+
+Put
+
+\[
+h(v)=v-1.
+\]
+
+For \(v>1\), define
+
+\[
+\boxed{
+\mathbb Q_v(e)
+=
+\frac{h(S_e(v))}{2h(v)}.
+}
+\]
+
+For a finite parity word \(w\),
+
+\[
+\boxed{
+\mathbb Q_v([w])
+=
+2^{-|w|}
+\frac{S_w(v)-1}{v-1}.
+}
+\]
+
+This is the exact Doob transform that conditions the fair rounded phase away from absorption.
+
+Its physically odd probability is
+
+\[
+\boxed{
+\mathbb Q_v(e=1)
+=
+\begin{cases}
+3/4,&v\text{ odd},\\[1mm]
+3/4+\dfrac1{4(v-1)},&v\text{ even}.
+\end{cases}
+}
+\]
+
+Therefore phase survival automatically biases physical parity at or above the Collatz growth tilt.
+
+Let
+
+\[
+\gamma=\frac34\log3-\log2>0.
+\]
+
+Under the escape transform,
+
+\[
+\mathbb E_{\mathbb Q}
+\left[
+\log\left(\frac{3^e}{2}\right)
+\middle|v
+\right]
+\ge\gamma.
+\]
+
+The phase itself also has uniformly positive logarithmic drift. Almost every escape-transform path has:
+
+- exponentially growing phase magnitude;
+- exponentially growing formal Collatz multiplier.
+
+This does **not** yet imply an ordinary positive Collatz orbit. It identifies the correct exceptional symbolic measure.
+
+# Three measures on one parity language
+
+A finite physical parity word \(w\) now carries three exact weights.
+
+### Fair cylinder mass
+
+\[
+\mu_{\mathrm{fair}}(w)=2^{-|w|}.
+\]
+
+### Collatz growth tilt
+
+\[
+\mu_{\mathrm{growth}}(w)
+=
+2^{-|w|}
+\frac{3^{a(w)}}{2^{|w|}}.
+\]
+
+### Phase escape tilt
+
+\[
+\mu_{\mathrm{escape}}(w)
+=
+2^{-|w|}
+\frac{S_w(v)-1}{v-1}.
+\]
+
+The first likelihood ratio is the Collatz multiplier. The second is the phase endpoint ratio.
+
+At odd phases, the growth and escape one-step tilts coincide exactly. At even phase \(v\), their physically odd probabilities differ by only
+
+\[
+\frac1{4(v-1)}.
+\]
+
+Thus the negative-phase survival problem and the positive-growth pressure problem are two views of nearly the same exceptional language.
 
 # Computational state
 
@@ -423,7 +382,8 @@ This identifies the true construction target as an **entropy-thin, pressure-posi
 - `X-0005`: complete dyadic projection through \(b=5\).
 - `X-0006`: negative-template identities, renewal equations, and aspect ratios.
 - `X-0007`: exact aspect-ratio census and the negative-136 chart.
-- `X-0008`: synchronous coupling, valuation acceleration, every eleven-cycle complement phase, padded towers, direct physical iteration, and Kraft identities.
+- `X-0008`: synchronous coupling, cycle-padding towers, complement atlas, and Collatz–Kraft checks.
+- `X-0009`: rounded phase coupling, phase–Kraft identities, escape-transform path weights, drift bounds, and exact fair absorption distributions.
 
 All programs use exact Python integers and the standard library only.
 
@@ -431,23 +391,26 @@ All programs use exact Python integers and the standard library only.
 
 The project still lacks a **finite-boundary regeneration theorem**.
 
-The strongest current construction target is:
+The sharp current target is:
 
-> Build a finitely generated exceptional grammar whose control state is a finite negative phase plus a cycle-padding stack, whose accepted graph has positive real pressure and cycle growth, and whose language contains one explicitly certified ordinary positive quotient.
+> Construct a finitely generated exact return grammar that approximates the phase escape transform, has positive graph-cycle growth, and contains one explicitly certified ordinary finite quotient.
 
 This requires all of:
 
-1. exact cylinder and phase closure;
-2. padding counters that remain above edge-specific growth thresholds;
-3. prevention or compensation of descent to contracting phases;
-4. an ordinary finite boundary, not merely a 2-adic path;
-5. positive graph growth despite negative typical drift of complete coverage.
+1. exact phase and cylinder closure;
+2. an incomplete entropy-thin survivor language;
+3. padding counters or another unbounded finite-memory mechanism;
+4. positive pressure and graph-cycle products;
+5. one ordinary finite accepted boundary, not merely a 2-adic path.
 
 # Immediate priorities
 
-1. **Padding-stack substitution.** Search for a finite rule on mismatch types that maps accepted high-padding edges to accepted high-padding edges.
-2. **Multi-mismatch automaton.** Treat failure of the synchronized recovery congruence as another phase transition rather than discarding it.
-3. **Pressure-directed pruning.** Compute \(\mathcal A_0\), \(\mathcal A_1\), cycle products, and phase potentials for every candidate subgrammar.
-4. **Ordinary survivor certificate.** Develop a theorem showing that a finitely generated exceptional language contains one finite ordinary quotient.
-5. **Complement hierarchy.** Determine whether transitions to the three-cycle and fixed phase can be repaired by later high-padding eleven-cycle returns.
-6. **Independent audit.** Reconstruct `T-0014`--`T-0016`, `O-0008`, and `X-0008`, especially the exact pair conjugacy, padding congruence, and Kraft differentiation.
+1. **Escape-transform approximation.** Build finite or pushdown return graphs whose edge frequencies approximate
+   \[
+   \mathbb Q_v(e)=\frac{S_e(v)-1}{2(v-1)}.
+   \]
+2. **Phase-136 pushdown model.** Combine the eleven-cycle padding towers with the escape likelihood and search for a closed high-padding component.
+3. **Ordinary-boundary theorem.** Develop a finite certificate that an exceptional accepted parity language contains one ordinary quotient.
+4. **Three-pressure audit.** Rank candidate grammars by fair mass, Collatz growth tilt, phase escape tilt, and deterministic cycle multipliers.
+5. **Multi-mismatch compression.** Use the rounded phase maps rather than the larger quotient-parity semigroup.
+6. **Independent audit.** Reconstruct `L-0013`, `T-0017`, and `X-0009`, especially martingale absorption, graph rigidity, and the Doob drift bounds.
