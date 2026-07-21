@@ -138,3 +138,111 @@ quantitative statement about proof templates.
 EMPIRICAL-conditional (O-0013) except its rigorous skeleton; §5
 O-0012 EMPIRICAL. The exponent bookkeeping in §4 deserves independent
 re-derivation (M-0003 slot open).*
+
+---
+
+# P2 deep-dive II: the room recursion, an unconditional bound, and the sixth mask
+
+*Same packet, second session. New claims T-0024, L-0017, O-0014.
+Companion: `experiments/eq_recursion_count.py`
+(→ `results/eq-recursion-count.log`).*
+
+## 7. The room recursion (T-0024)
+
+**Lemma (pullback identity).** Let 0 < Y with 81Y/64 + 1 < 64^{K−1}
+(the one-room regime — all near-emptiness regimes qualify). Then the
+map A ↦ (A′, ε), ε = A mod 64 ∈ {0,1}, A′ = 81·(A−ε)/64 + ε, is a
+bijection
+
+    {A ∈ R_K : 0 < A ≤ Y}  ≅  ⊔_{ε∈{0,1}} {A′ ∈ R_{K−1} :
+        0 < A′ ≤ 81(Y−ε)/64 + ε,  A′ ≡ ε (mod 81)}.
+
+*Proof.* Validity of A forces its low digit ε ∈ {0,1}; B = (A−ε)/64
+satisfies A′ = 81B + ε ∈ R_{K−1} (one H-step), and in the stated
+regime no mod-64^{K−1} reduction occurs, so A′ is the integer 81B+ε —
+whence the **free congruence** A′ ≡ ε (mod 81) and the interval bound.
+Inverse: B = (A′−ε)/81 (integral by the congruence), A = 64B + ε. ∎
+(Beyond the regime, children wrap into rooms r ≥ 1 with classes
+ε − r·64^{K−1} mod 81 — general form verified exactly in the script:
+144/144 cells, both forms.)
+
+**Theorem T-0024 (unconditional near-window bound).** For every
+ε ∈ (0, 1),
+
+    #{A ∈ R_K : 0 < A ≤ 64^{(1−ε)K}}  ≤  2^{K−j},
+    j = ⌊εK/log₆₄81⌋ − 1  =  (0.9455… ε − o(1))K.
+
+*Proof.* Iterate the Lemma, discarding the congruence (the two
+ε-classes are disjoint subsets of the depth-(K−1) interval count, so
+their sum is at most the unrestricted count) and enlarging the
+interval Y ↦ 81Y/64 + 1 each step. After j steps in the one-room
+regime — which persists precisely while 81^{j+1}Y ≲ 64^K, i.e.
+j ≤ εK/log₆₄81 − 1 — the count is at most #(R_{K−j} ∩ anything)
+≤ 2^{K−j}. ∎ (Checked at K = 10, 12, 14, ε = 0.1…0.9: no violation.)
+
+This is the program's **first unconditional quantitative statement
+toward near-emptiness**: survivors below 64^{(1−ε)K} number at most
+2^{K(1−0.9455ε)} — exponentially fewer than |R_K| for every ε > 0.
+It is far from the law's 2^{K(1−6ε)} (all the distance lies in the
+discarded congruences), but it is a strict, free-standing theorem
+where previously there was only the trivial 2^K.
+
+## 8. The sixth mask, and where the factor 6 lives
+
+Keeping the congruences instead of discarding them, the recursion
+composes to: **if interval-restricted R_n equidistributes mod 81
+(classes {0,1} jointly owning 2/81 + o(1)), then
+count(K, 64^{(1−ε)K}) ≈ (2/81)^{j}·2^{K−j} = 2^{K(1−(6−o(1))ε)}** —
+the exact equidistribution law. So EQ's irreducible core acquires a
+sixth equivalent mask, and the most elementary one yet:
+
+> **(Mask 6)** For Z in the near-window range, R_n ∩ (0, Z] occupies
+> the residue classes {0, 1} mod 81 with frequency 2/81 + o(1).
+
+No Fourier analysis, no products — a congruence-counting statement
+about the coded sets, in which the entire factor 6 = log₂64 vs
+log₂(81/2)-per-level gap between T-0024 and the law is the
+equidistribution content. Measured (O-0014): at full range the mask
+holds to 3×10⁻³; at small Z the classes {0,1} are genuinely
+**enhanced 2–3×** (share 0.086 at n = 12, Z = 64^{0.9n}, sample 35;
+0.058 at n = 14) — the smallest survivors cluster near the trivial
+fixed points {0,1} (which are ≡ 0, 1 mod 81). The mask's o(1) is
+therefore honest work at small Z, not bookkeeping: any proof must see
+the enhancement die off as Z grows through the window.
+
+## 9. (Λ) as twisted pair separation (L-0017)
+
+Expanding |S_K(θ)|² over pairs and summing over 0 < θ ≤ 2^K with the
+Dirichlet kernel bound ‖D‖ ≤ min(2^K, ½‖Δ/64^K‖⁻¹):
+
+    Σ_{0<θ≤2^K} (|S_K(θ)|/2^K)²  ≤  1 + 2^{−2K} Σ_{A≠A′∈R_K}
+        min(2^K, 64^K/(2·dist(A, A′))),
+
+so (Λ) is implied by the **pair-separation bound**
+Σ_{A≠A′} 64^K/dist(A,A′) ≲ 4^K. The pair differences stratify
+exactly by the first differing digit t₀: every difference is
+
+    Δ = 64^{t₀} · (81^{−t₀} mod 64^{K−t₀}) · Δ′,
+
+with Δ′ a depth-(K−t₀) code difference at t₀′ = 0 — a rescaled copy
+**rotated by the odd unit 81^{−t₀}**. Without the twist, pair
+separation would be exactly self-similar and (Λ) would follow by
+recursion; the twist is the precise point where individual-orbit
+structure (the archimedean size of 2-adic representatives of
+81-power inverses) enters. (Λ) is thus wall-adjacent — equivalent in
+difficulty to the equidistribution of the twisted copies — and its
+measured truth (O-0012: mass ∈ [0.88, 1.11]) is another face of the
+same coin as Mask 6. The honest priority order is therefore:
+**Mask 6 (congruence form) first** — it is finite, combinatorial,
+and its small-Z enhancement is already understood mechanically.
+
+## 10. Standing after deep-dive II
+
+Unconditional: T-0024 (the first near-window count bound), T-0023,
+L-0016, the exact recursion identities. Conditional/equivalent forms
+of the core, now six masks deep, with Mask 6 (mod-81 interval
+equidistribution) as the recommended attack surface. The copy
+barrier (§4) explains *why* harmonic templates stall; the room
+recursion (§7) is the positivity-native replacement, and every future
+improvement is now measured by how much of the discarded congruence
+information it recovers — from 0.9455ε (none) toward 6ε (all).

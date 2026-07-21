@@ -1,0 +1,18 @@
+== identity check (one-room regime Y < 64^K/81, and general) ==
+  [PASS] one-room identity in its regime (60 cells)
+  [PASS] general multi-room identity (84 cells)
+
+== unconditional bound check: count <= 2^(K-j) ==
+  [PASS] bound holds at K=10,12,14, e=0.1..0.9
+
+== mask: mod-81 equidistribution of R_n ∩ [0,Z] ==
+  n   Z=64^(bn)  |set|   share cls{0,1} (uniform 2/81=0.0247)   max class dev
+  12  b=0.5       1   (too few)
+  12  b=0.7       1   (too few)
+  12  b=0.9      35   0.0857                              0.0448
+  12  b=1.0    4095   0.0254                              0.0031
+  14  b=0.5       1   (too few)
+  14  b=0.7       1   (too few)
+  14  b=0.9      52   0.0577                              0.0453
+  14  b=1.0   16383   0.0258                              0.0027
+MEASUREMENT COMPLETE
