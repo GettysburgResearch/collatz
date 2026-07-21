@@ -2,56 +2,43 @@
 
 Claim ID: `C-0101`  
 Title: Existence of an aperiodic integer Schottky automaton certifying a divergent Collatz orbit  
-Status: `IDEA` (severely restricted by `L-0105`–`L-0109`)  
+Status: `IDEA` (classical subclasses closed by `T-0103`)  
 Authoring agent: `grok45-01`  
 Reviewing agents: none yet  
 Created: 2026-07-21  
 Last updated: 2026-07-21  
-Dependencies: `D-0102`, `D-0103`, `L-0101`–`L-0109`  
-Scope: speculative existence claim; most naive subclasses now refuted  
+Dependencies: `T-0101`, `T-0102`, `T-0103`, `L-0101`–`L-0111`  
+Scope: speculative; classical formats refuted; escape hatches only  
 Related counterexample candidates: none yet
 
 ## Statement
 
-There exists a finite certificate \(\mathcal{A}\) in some Schottky-like format
-such that a single ordinary positive integer realizes an infinite
-height-expanding aperiodic Collatz run.
+There exists some certificate format producing an ordinary positive divergent
+Collatz orbit. Under the scoped name “Schottky-like,” only non-classical
+escape hatches remain open inside this packet.
 
-## Present status after the continuation session
+## Classical closure
 
-The following subclasses are **refuted or reduced**:
+See **`T-0103`** (Geom / Det / Per / Tax trichotomy). Detailed subclass table:
 
 | Subclass | Verdict | Why |
 |---|---|---|
-| Compact positive IFS of supercritical inverses | Refuted | `L-0101` |
-| Compact infinity-chart IFS | Refuted | `L-0102` |
-| Periodic expanding block schedules | Refuted for \(\mathbb Z_{>0}\) | `L-0103`, `L-0107` |
-| Pure power-of-two port calculus with growing towers | Unique 2-adic point; expanding periodic case negative | `L-0105`, `L-0107` |
-| Odd-modulus “precision regeneration” | Does not regenerate free parameters | `L-0106` |
-| Forward finite CRT automata mod \(2^A\) | No branching; deterministic functional graph | `L-0108` |
-| Compact inverse IFS on \(\{g_0,g_1\}\) | Refuted | `L-0109` |
+| Compact positive / infinity IFS | Refuted | L-0101, L-0102, L-0109 |
+| Expanding periodic / eventually periodic schedules | Refuted for \(\mathbb Z_{>0}\) | T-0101(D), L-0107 |
+| Morphic / S-adic schedules as tax evasion | Refuted | L-0110 |
+| Multi-chart variable \((L,a)\) as tax evasion | Refuted | L-0111 |
+| Pure 2-power ports / odd regen | Refuted | L-0105, L-0106 |
+| Forward finite CRT mod \(2^A\) | No branching | L-0108 |
+| Fixed finite digit-transfer \(D\) Schottky | Reduces to survivor problem | T-0102 |
 
-## Residual forms still open inside this packet
+## Escape hatches (still open)
 
-1. **Bridge to collision fibers:** Schottky-style free semigroups on
-   multi-digit charts with growing geometry (`Q-0010` in the other packet).
-2. **Non-classical domains:** unbounded cones, adelic/heteroclinic scaffolds
-   (`directions/D-HETEROCLINIC-*`), or other state beyond affine \(\mathbb R\).
-3. **Complementary-domain free-group ping-pong on \(\mathbb{RP}^1\)** with
-   accelerated inverses — still only weakly probed (`X-0109`).
-
-## Motivation
-
-Keeps an explicit living conjecture so the packet does not pretend the
-mission is closed, while advertising that classical Schottky is largely dead.
-
-## Proof or construction
-
-None.
+1. Growing prepaid state / growing geometry — bridge `directions/D-BRIDGE-growing-geometry-tax.md`
+2. Heteroclinic / adelic scaffolds — `directions/D-HETEROCLINIC-*`
+3. Algebraic cycle hunt (not Schottky divergence) — `directions/D-CYCLE-*`
+4. Complementary-domain free-group ping-pong on \(\mathbb{RP}^1\) (weakly open)
 
 ## Suggested next attack
 
-Stop searching classical IFS / finite dyadic CRT formats. Either:
-- open a bridge issue with the collision-fiber growing-geometry program; or
-- pursue the heteroclinic / cycle directions already handed off; or
-- attempt a serious complementary-domain Möbius argument on \(\mathbb{RP}^1\).
+Do not invent another classical Schottky subclass. Open the bridge issue or
+claim a handoff direction.

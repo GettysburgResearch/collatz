@@ -1,0 +1,158 @@
+{
+  "tax_trials_ok": 40,
+  "tax_equals_sumL": 40,
+  "tax_all_equal": true,
+  "fp_trials_super": 8,
+  "fp_all_negative": true,
+  "fp_neg_count": 8,
+  "cylinder": {
+    "L": 14,
+    "r": 47,
+    "hits_verified": 32,
+    "expected": 32,
+    "spurious_others": 0
+  },
+  "mechanical": {
+    "alpha": "7/11",
+    "sched_prefix": [
+      "101",
+      "1111010",
+      "101",
+      "1111010",
+      "1111010",
+      "101",
+      "1111010",
+      "1111010"
+    ],
+    "tax": {
+      "ok": true,
+      "total_tax": 64,
+      "sum_L": 64,
+      "equal": true,
+      "final_M_odd": true
+    },
+    "concat_L": 64
+  },
+  "samples_tax": [
+    {
+      "ok": true,
+      "total_tax": 35,
+      "sum_L": 35,
+      "equal": true,
+      "final_M_odd": true,
+      "words": [
+        "001",
+        "0010110",
+        "00111",
+        "01000000",
+        "0111",
+        "00100111"
+      ]
+    },
+    {
+      "ok": true,
+      "total_tax": 26,
+      "sum_L": 26,
+      "equal": true,
+      "final_M_odd": true,
+      "words": [
+        "011",
+        "111",
+        "1110",
+        "11",
+        "110010",
+        "11000000"
+      ]
+    },
+    {
+      "ok": true,
+      "total_tax": 24,
+      "sum_L": 24,
+      "equal": true,
+      "final_M_odd": true,
+      "words": [
+        "101",
+        "01100",
+        "10",
+        "0110110",
+        "1",
+        "010001"
+      ]
+    },
+    {
+      "ok": true,
+      "total_tax": 6,
+      "sum_L": 6,
+      "equal": true,
+      "final_M_odd": true,
+      "words": [
+        "10001",
+        "1"
+      ]
+    },
+    {
+      "ok": true,
+      "total_tax": 24,
+      "sum_L": 24,
+      "equal": true,
+      "final_M_odd": true,
+      "words": [
+        "010111",
+        "1010001",
+        "10110000",
+        "111"
+      ]
+    }
+  ],
+  "samples_fp": [
+    {
+      "words": [
+        "111101"
+      ],
+      "mu": "243/64",
+      "fp": "-227/179",
+      "negative": true
+    },
+    {
+      "words": [
+        "1",
+        "1111"
+      ],
+      "mu": "243/32",
+      "fp": "-1",
+      "negative": true
+    },
+    {
+      "words": [
+        "1",
+        "1",
+        "01",
+        "11110"
+      ],
+      "mu": "2187/512",
+      "fp": "-2903/1675",
+      "negative": true
+    },
+    {
+      "words": [
+        "110010",
+        "1",
+        "11"
+      ],
+      "mu": "729/512",
+      "fp": "-2053/217",
+      "negative": true
+    },
+    {
+      "words": [
+        "11",
+        "11",
+        "0010",
+        "11"
+      ],
+      "mu": "2187/1024",
+      "fp": "-3611/1163",
+      "negative": true
+    }
+  ]
+}

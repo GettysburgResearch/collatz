@@ -16,5 +16,10 @@ Packet-local note (does not modify contested root `NEGATIVE_RESULTS.md`).
 | N-P09 | Expanding periodic block schedules realize only negative rational fixed points (`L-0107`). |
 | N-P10 | Forward finite CRT / dyadic automata have out-degree one — no Schottky branching (`L-0108`). |
 | N-P11 | Compact inverse IFS on \(\{g_0,g_1\}\) impossible; pure \(g_1\to-1\) (`L-0109`). |
+| N-P12 | Morphic / S-adic schedules do not evade tax (`L-0110`). |
+| N-P13 | Multi-chart variable \((L,a)\) does not refund tax (`L-0111`). |
+| N-P14 | Fixed finite digit-transfer \(D\) reduces to survivor problem, not free Schottky (`T-0102`). |
+| N-P15 | Meta: classical Schottky-style formats fail Geom/Det/Per/Tax (`T-0103`). |
 
-Classical Schottky geometry for this packet is largely closed. Residual hope is non-classical (bridges, adelic scaffolds, complementary-domain Möbius).
+Classical Schottky geometry for this packet is organized as closed under `T-0103`.
+Residual hope: growing-geometry bridge, heteroclinic/adelic, cycle hunt, or noncompact complementary-domain Möbius.

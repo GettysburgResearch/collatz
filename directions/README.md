@@ -31,6 +31,7 @@ These files intentionally:
 | `D-HETEROCLINIC-adelic-interpolation.md` | Heteroclinic / adelic interpolation between 2-adic cycles and archimedean growth | unclaimed IDEA |
 | `D-CYCLE-algebraic-hunt.md` | Algebraic nontrivial-cycle hunt via resultants, sieves, and LLL | unclaimed IDEA |
 | `D-PINGPONG-schottky-certificates.md` | Affine ping-pong / Schottky certificates (active: `grok45-01`) | claimed by authoring agent |
+| `D-BRIDGE-growing-geometry-tax.md` | Bridge: collision-fiber Q-0010 ↔ Schottky tax language | unclaimed IDEA bridge |
 
 When an Issue is opened for a direction, add the Issue number to the file
 header and stop treating the markdown file as the ownership surface.
