@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""X-9303: exact meet-in-the-middle minima for the triadic past classes."""
+"""X-9303: exact dual meet-in-the-middle minima for survivor rooms."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from collections.abc import Iterator, Sequence
 from pathlib import Path
 
 
-DEFAULT_DEPTHS = (2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44)
+DEFAULT_DEPTHS = (2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 46)
 
 
 def parse_depths(text: str) -> tuple[int, ...]:
@@ -140,7 +140,6 @@ def minimum_nontrivial_class(depth: int) -> tuple[int, str]:
         for position in range(depth)
     )
 
-    # Independent exact replay of the recorded word.
     replay = sum(
         generator
         for position, generator in enumerate(generators)
@@ -160,12 +159,47 @@ def direct_minimum(depth: int) -> int:
     return min(value for value in values if value > 1)
 
 
-def record_for_depth(depth: int) -> dict[str, int | str]:
-    minimum, word = minimum_nontrivial_class(depth)
-    numerator = minimum * 64**depth
+def starting_room_and_replay(
+    depth: int,
+    final_class: int,
+    low_to_high_word: str,
+) -> tuple[int, str]:
+    """Convert the minimizing past class to a chronological survivor and replay it."""
+
+    chronological_word = low_to_high_word[::-1]
+    digits = [int(character) for character in chronological_word]
+    prefix_polynomial = 17 * sum(
+        digit * 81 ** (depth - 1 - position) * 64**position
+        for position, digit in enumerate(digits)
+    )
+    numerator = 64**depth * final_class + prefix_polynomial
     denominator = 81**depth
-    scaled_lower_bound = (numerator + denominator - 1) // denominator
-    ordinary_lower_bound = min(64**depth, scaled_lower_bound)
+    if numerator % denominator:
+        raise AssertionError("fixed-room numerator is not divisible by 81^depth")
+    starting_room = numerator // denominator
+
+    expected = (final_class * 64**depth + denominator - 1) // denominator
+    if starting_room != expected:
+        raise AssertionError("fixed-room value is not the monotone ceiling transform")
+    if not (1 < starting_room < 64**depth):
+        raise AssertionError("nontrivial starting room is outside the standard range")
+
+    state = starting_room
+    for digit in digits:
+        if state % 64 != digit:
+            raise AssertionError("chronological word does not match the room digit")
+        state = (81 * state - 17 * digit) // 64
+    if state != final_class:
+        raise AssertionError("survivor replay does not end at the minimizing class")
+
+    return starting_room, chronological_word
+
+
+def record_for_depth(depth: int) -> dict[str, int | str]:
+    minimum, low_to_high_word = minimum_nontrivial_class(depth)
+    starting_room, chronological_word = starting_room_and_replay(
+        depth, minimum, low_to_high_word
+    )
 
     if depth <= 16 and minimum != direct_minimum(depth):
         raise AssertionError("meet-in-the-middle and direct minima disagree")
@@ -174,17 +208,23 @@ def record_for_depth(depth: int) -> dict[str, int | str]:
         "depth": depth,
         "class_count": 1 << depth,
         "minimum_nontrivial_class": minimum,
-        "minimizing_low_to_high_word": word,
-        "ordinary_survivor_lower_bound": ordinary_lower_bound,
-        "lower_bound_bits": ordinary_lower_bound.bit_length(),
+        "minimizing_low_to_high_word": low_to_high_word,
+        "chronological_survivor_word": chronological_word,
+        "final_tail_class": minimum,
+        "minimum_nontrivial_survivor": starting_room,
+        "ordinary_survivor_lower_bound": starting_room,
+        "lower_bound_bits": starting_room.bit_length(),
     }
 
 
 def canonical_payload(depths: Sequence[int]) -> dict[str, object]:
     return {
         "experiment_id": "X-9303",
-        "schema_version": 1,
-        "arithmetic": "exact integers; meet-in-the-middle subset sums modulo 81^j",
+        "schema_version": 2,
+        "arithmetic": (
+            "exact integers; meet-in-the-middle subset sums modulo 81^j; "
+            "direct survivor replay"
+        ),
         "depths": list(depths),
         "records": [record_for_depth(depth) for depth in depths],
     }
