@@ -8,8 +8,8 @@ trajectory.
 
 ## Candidate-adjacent mechanisms
 
-The induced maps in `O-0001` through `O-0004` are counterexample mechanisms
-only in the following conditional sense:
+The induced maps in `O-0001` through `O-0005` are counterexample mechanisms only
+in the following conditional sense:
 
 > An infinite admissible orbit beginning from one finite integer in the
 > specified lifting congruence class would lift to a positive Collatz
@@ -18,8 +18,15 @@ only in the following conditional sense:
 No such infinite orbit has been proved.
 
 `L-0004` proves that every nontrivial collision fiber has parameterized
-finite-horizon stack amplifiers. These families are not assigned `K-####`
-identifiers because no single member is claimed to survive indefinitely.
+finite-horizon stack amplifiers. `T-0005` proves that mildly supercritical
+collision fibers can have exponentially growing cardinality. Neither result is
+assigned a `K-####` identifier because neither selects one finite member that
+survives indefinitely.
+
+`O-0005` is currently the richest explicit chart: 339 induced digits, full
+projection modulo 16, and a centered interval inside its difference set. These
+are construction resources, not evidence that any particular starting state is
+a counterexample.
 
 `T-0004` gives a sharper candidate format. A future candidate may be specified
 by one finite initial triple
