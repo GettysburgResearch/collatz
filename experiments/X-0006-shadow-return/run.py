@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact checks for T-0008, T-0009, T-0010, and L-0011."""
+"""Exact checks for T-0008--T-0010 and L-0011--L-0012."""
 
 from __future__ import annotations
 
@@ -21,6 +21,17 @@ def trace(n: int, length: int) -> tuple[tuple[int, ...], int]:
     return tuple(bits), x
 
 
+def affine_constant(word: tuple[int, ...]) -> int:
+    total = sum(word)
+    seen = 0
+    value = 0
+    for j, bit in enumerate(word):
+        if bit:
+            seen += 1
+            value += (1 << j) * 3 ** (total - seen)
+    return value
+
+
 def verify_chart(
     name: str,
     length: int,
@@ -37,14 +48,22 @@ def verify_chart(
     templates = [M - r for r in residues]
     digits = [v - u for u in templates]
 
+    signatures: set[int] = set()
     for residue, template in zip(residues, templates):
         bits, output = trace(-template, length)
         assert sum(bits) == odd_steps
         assert output == -v
 
+        constant = affine_constant(bits)
+        assert constant + M * v == N * template
+        signature = (pow(M, -1, N) * constant) % N
+        assert signature == (-v) % N
+        signatures.add(signature)
+
         for quotient in (0, 1, 2, 7):
             assert trace(M * quotient - template, length)[1] == N * quotient - v
 
+    assert len(signatures) == 1
     width = max(residues) - min(residues)
     assert max(digits) - min(digits) == width
     aspect = Fraction(width, gap)
@@ -86,17 +105,6 @@ def verify_address(
     )
     assert left == right
     return quotients, digits
-
-
-def affine_constant(word: tuple[int, ...]) -> int:
-    total = sum(word)
-    seen = 0
-    value = 0
-    for j, bit in enumerate(word):
-        if bit:
-            seen += 1
-            value += (1 << j) * 3 ** (total - seen)
-    return value
 
 
 def prefix_family(b: int) -> list[tuple[int, ...]]:
