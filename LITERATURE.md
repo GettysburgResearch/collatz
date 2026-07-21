@@ -70,7 +70,7 @@ diam(D0) + R(D0) + 1 < 2^L,
 
 which must hold at every iterated stage.
 
-## Wave 3 — completion-height and ordinary-marker convergence
+## Wave 3 — completion height and ordinary-marker convergence
 
 The live branches now converge on a much sharper common statement:
 
@@ -82,7 +82,7 @@ infinite directive
 
 Growth, branch count, exact finite connectors, and finite information budget are no longer the main conceptual scarcities. The remaining obstacle is causal low-bit regeneration from one finite ordinary state.
 
-Wave 3 adds `LIT-KTHM-0028` through `LIT-KTHM-0032`:
+Wave 3 adds `LIT-KTHM-0028` through `LIT-KTHM-0033`:
 
 1. **Foundry fixed points.** Bernstein--Lagarias conjugacy plus strict causality make `Phi o E` a `1/2`-Lipschitz contraction. `FOUNDRY/T-9601` is therefore a known corollary/elegant repackaging; the native frontier is integrality of the unique fixed point.
 2. **`p`-adic automata boundary.** Anashin's van der Put criterion supplies the right taxonomy for finite-state causal operators, without implying rationality or ordinary integrality.
@@ -97,6 +97,7 @@ Wave 3 adds `LIT-KTHM-0028` through `LIT-KTHM-0032`:
    ```
    so the ghost dimension is `log_2(rho)=0.405685...`, where `rho^3=rho+1`. Subject to an independent orientation check, this strengthens the proposed H-survivor count to `O(X^0.405686)`.
 5. **Critical particle spine.** PR #3's ordered-particle completion is an exact deterministic size-biased spine/many-to-one construction. The branching literature supplies martingale and entropy tools, not the missing marked ordinary closure.
+6. **Entropy-surplus router.** Krieger's embedding theorem and MacDonald's zero-error sliding-block extension give a precise route from PR #3's aggregate information surplus to a finite-memory symbolic router—after the scale-dependent arithmetic transition system is normalized into a stationary mixing SFT and its periodic-point/visible-output conditions are verified.
 
 ### All-depth EQ positioning
 
@@ -142,9 +143,9 @@ No located theorem currently verifies the adaptive hypotheses needed for the fin
 - [`literature/SOURCE_LEDGER.md`](literature/SOURCE_LEDGER.md), [`SOURCE_LEDGER_WAVE2.md`](literature/SOURCE_LEDGER_WAVE2.md), and [`SOURCE_LEDGER_WAVE3.md`](literature/SOURCE_LEDGER_WAVE3.md) — only located sources, with inspection level.
 - [`literature/CLAIM_CROSSWALK.md`](literature/CLAIM_CROSSWALK.md) — internal branch overlap.
 - [`literature/APPLICABILITY_AUDITS.md`](literature/APPLICABILITY_AUDITS.md) — automaticity, SML, Fatou, Mahler, Fourier, and rigidity checks.
-- [`literature/UNVERIFIED.md`](literature/UNVERIFIED.md) — honest gaps.
+- [`literature/UNVERIFIED.md`](literature/UNVERIFIED.md) and [`UNVERIFIED-WAVE3.md`](literature/UNVERIFIED-WAVE3.md) — honest gaps.
 - [`literature/claim-maps/`](literature/claim-maps/) — branch-qualified verdicts, including `WAVE3.md`.
-- [`literature/imported-theorems/`](literature/imported-theorems/) — 32 atomic statements/proofs/black-box boundaries.
+- [`literature/imported-theorems/`](literature/imported-theorems/) — 33 atomic statements/proofs/black-box boundaries.
 - [`literature/topic-notes/`](literature/topic-notes/) — reusable research maps.
 - [`literature/references.bib`](literature/references.bib), [`references-wave2.bib`](literature/references-wave2.bib), and [`references-wave3.bib`](literature/references-wave3.bib) — bibliographic records.
 - [`literature/check_literature.py`](literature/check_literature.py), [`check_literature_wave2.py`](literature/check_literature_wave2.py), and [`check_literature_wave3.py`](literature/check_literature_wave3.py) — mechanical integrity checks.
