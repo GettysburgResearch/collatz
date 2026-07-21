@@ -14,42 +14,34 @@ Attempt the decisive theorem that no infinite itinerary can simultaneously:
 3. remain in the bounded real companion section;
 4. avoid both repetition-height and reciprocal carry-height contradictions.
 
-The session pushed the argument as far as the current exact interfaces support.
+The universal contradiction did not close. The session did close one misleading route, derive an exact ordinary-section equivalence, discover an exact dual minimum formula, and compute the exact first nontrivial depth-46 survivor above `2^227`.
 
-## 1. First attempted synthesis: compare the two criticality constants
+## 1. The two criticality constants are one mechanism
 
-PR #20 proves a repetition/factor-complexity obstruction with
+PR #20's repetition obstruction and PR #16's reciprocal phase-carry obstruction contain the same constant
 
 \[
 \kappa
 =
-\frac1{\log_{64}81-1}.
-\]
-
-PR #16 proves a reciprocal phase-carry obstruction with
-
-\[
-\kappa
+\frac1{\log_{64}81-1}
 =
 \frac{\log64}{\log(81/64)}.
 \]
 
-These are the same number. The initial hypothesis was that the ordinary itinerary might be forced to spend more than one binary bit budget by satisfying both constraints.
+The initial hypothesis was that satisfying both constraints might overspend one information budget. Exact reconstruction shows otherwise.
 
-That hypothesis does not survive exact reconstruction.
+## 2. `L-9311`: repetition is an orbit-difference zero-carry chain
 
-## 2. New exact result: repetition is an orbit-difference zero-carry chain
-
-Let `A_k` be the ordinary integral tail orbit of a hypothetical survivor. If two length-`ell` factors begin at `r<t`, define
+Let `A_k` be the ordinary integral tail orbit of a hypothetical survivor. If equal length-`ell` factors begin at `r<t`, define
 
 \[
 D_i=A_{r+i}-A_{t+i}.
 \]
 
-During the common factor, subtracting the two tail recurrences gives
+During the common factor,
 
 \[
-64D_{i+1}=81D_i.
+\boxed{64D_{i+1}=81D_i.}
 \]
 
 Hence
@@ -58,9 +50,7 @@ Hence
 D_i=64^{\ell-i}81^iu
 \]
 
-for one nonzero integer `u`. The repeated factor is exactly a zero-carry chain in an integral difference cocycle.
-
-The local height bound follows immediately:
+for one nonzero integer `u`. Therefore
 
 \[
 64^\ell
@@ -69,7 +59,7 @@ The local height bound follows immediately:
 (81/64)^{t-r}A_r,
 \]
 
-so
+which gives
 
 \[
 \ell
@@ -77,15 +67,11 @@ so
 (\log_{64}81-1)(t-r)+\log_{64}A_r.
 \]
 
-This independently reconstructs PR #20's local repetition theorem and explains the identical criticality constant.
+This independently reconstructs PR #20's local repetition theorem. The repetition and reciprocal-carry inequalities are two completion-height bounds on different zero-carry cocycles.
 
-### Methodological conclusion
+`R-9302` records the method closure: matching `kappa` values are not opposing budgets, so their numerical comparison cannot prove nonexistence.
 
-The repetition and reciprocal-carry inequalities are not opposing constraints. They are two uses of the same completion-height mechanism on different cocycles. High symbolic novelty and many nonzero carries can coexist.
-
-`R-9302` therefore closes the naive numerical comparison route. A final theorem needs a new invariant that couples the two cocycles through the same ordinary point.
-
-## 3. New exact coupling: the fixed-room invariant
+## 3. `T-9313`: the fixed-room invariant
 
 For a hypothetical ordinary room
 
@@ -93,7 +79,7 @@ For a hypothetical ordinary room
 A=\Phi(\varepsilon),
 \]
 
-let `A_j` be the ordinary tail after `j` digits and define
+let `A_j` be its ordinary tail after `j` digits and define
 
 \[
 P_j
@@ -102,35 +88,29 @@ P_j
 \varepsilon_t81^{j-1-t}64^t.
 \]
 
-Iteration of the tail recurrence gives
+Iteration gives
+
+\[
+\boxed{81^jA=64^jA_j+P_j.}
+\]
+
+The quotient is the same fixed integer `A` at every depth.
+
+Reverse the past word. Its triadic coordinate lies in `C_j`, and `A_j mod81^j` is exactly that coordinate. The future word simultaneously puts `A_j` in the infinite survivor attractor.
+
+The bounded real companion gives
 
 \[
 \boxed{
-81^jA=64^jA_j+P_j.
-}
-\]
-
-This quotient is the same fixed integer `A` at every depth.
-
-Reverse the past word. Its triadic coordinate lies in the depth-`j` class set `C_j`, and
-
-\[
-A_j\pmod{81^j}
-\]
-
-is exactly that coordinate. The future word simultaneously puts `A_j` in the infinite survivor attractor.
-
-The real companion gives the moving window
-
-\[
 (81/64)^j(A-1)+1
 \le A_j
 \le(81/64)^jA.
+}
 \]
 
-Conversely, any coherent sequence of ordinary integers satisfying the fixed-room equation reconstructs the original `2`-adic survivor series. Thus `T-9313` is an exact equivalence, not only a necessary condition.
+Conversely, coherent ordinary integers satisfying the fixed-room equations reconstruct the tail recurrence and the original survivor series in `Z_2`. This is an exact equivalence.
 
-## 4. Finite certificate theorem
+## 4. Exact finite duality
 
 Let
 
@@ -138,73 +118,132 @@ Let
 m_j=\min(C_j\setminus\{0,1\})
 \]
 
-in standard representatives and define
-
-\[
-B_j
-=
-\min\left\{
-64^j,
-\left\lceil m_j(64/81)^j\right\rceil
-\right\}.
-\]
-
-Every nontrivial ordinary survivor satisfies
-
-\[
-A\ge B_j
-\]
-
-for every depth.
-
-This gives a finite, exact, replayable ordinary-section certificate.
-
-## 5. Exact meet-in-the-middle computation
-
-`X-9303` computes `m_j` as a modular subset-sum minimum. It uses a meet-in-the-middle split, Gray-code subset-sum generation, sorting, and exact nearest-complement search.
-
-The frozen checkpoints reach depth `44`. At that depth,
-
-\[
-m_{44}
-=
-7220252188262239184305599554690421895921563960360483237559093394744562,
-\]
-
 and
 
 \[
-\boxed{
-B_{44}
+M_j=\min(R_j\setminus\{0,1\}).
+\]
+
+For `c in C_j`, reverse its low-to-high word into chronological survivor order. The fixed-room formula gives
+
+\[
+A(c)
 =
-227578060273510610973552811001603322347312502177488333909527505984
->2^{217}.
+\frac{64^jc+P_j}{81^j}
+=
+c(64/81)^j+X_j,
+\]
+
+where the nontrivial finite real prefix satisfies
+
+\[
+0<X_j<1.
+\]
+
+Since `A(c)` is integral,
+
+\[
+\boxed{A(c)=\lceil c(64/81)^j\rceil.}
+\]
+
+The word maps are bijective, so
+
+\[
+\boxed{
+M_j
+=
+\left\lceil m_j(64/81)^j\right\rceil.
 }
 \]
 
-Therefore `T-9314` excludes every nontrivial ordinary survivor room through `2^217`, subject to independent replay.
+This is an exact minimum-survivor identity, not merely a lower bound.
+
+The sequence `M_j` is nondecreasing because `R_(j+1) subset R_j` as ordinary finite survivor sets. The ordinary-section problem is equivalent to
+
+\[
+\boxed{M_j\to\infty.}
+\]
+
+## 5. `X-9303`: exact depth-46 minimum
+
+The class set is a modular subset-sum system. `X-9303` uses a `23+23` meet-in-the-middle split:
+
+1. enumerate and sort `2^23` exact right-half sums;
+2. scan `2^23` left-half sums in Gray-code order;
+3. test the nearest admissible modular complement on both sides of the wrap point;
+4. exclude the trivial classes `0,1`;
+5. reconstruct a minimizing word;
+6. reverse it into chronological order;
+7. reconstruct the starting room;
+8. replay all 46 survivor steps;
+9. compare independently with full enumeration through depth 16.
+
+The exact triadic minimum is
+
+\[
+m_{46}
+=
+13995580641937679806861747515838198945935546006963182029787326398035667034.
+\]
+
+A low-to-high minimizing word is
+
+```text
+1101110101010000110011100000101001011110110110
+```
+
+and the chronological word is
+
+```text
+0110110111101001010000011100110000101010111011
+```
+
+The exact starting room is
+
+\[
+\boxed{
+M_{46}
+=
+275396778563393867136351926990265018601508986973296055235244496661568
+>2^{227}.
+}
+\]
+
+Direct replay ends at the class `m_46` after exactly 46 valid induced steps.
 
 Frozen digest:
 
 ```text
-0ae0ccf0df779ffe4dc8b4d2a4f91471033cdf84b47738d9f79d6b7c85f43add
+f2c4dd9b0c436c9450c03424b27d80366865f54bb8c286944a35047d0662c9bc
 ```
 
-## 6. Why the universal contradiction did not close
+## 6. `T-9314`: bounded ordinary-section exclusion
 
-The remaining asymptotic statement is
+Every infinite ordinary survivor belongs to every finite survivor set `R_j`. Therefore it is at least `M_46` unless it is one of the two trivial rooms `0,1`.
+
+Consequently there is no nontrivial ordinary survivor room in
 
 \[
-B_j\to\infty.
+2\le A\le2^{227}.
 \]
 
-The computation strongly suggests far faster growth, but finite values do not prove it.
+This is a genuine ordinary-section exclusion, not a finite-set discrepancy consequence. It remains finite.
 
-The unconditional minimum `m_j` ranges over all past words. A genuine ordinary path is much more constrained: it must be coherent at every earlier depth and admit an infinite future survivor. This suggests that the **coherent** minimum, rather than the full minimum of `C_j`, is the right next object.
+## 7. Why the universal theorem remains open
 
-No currently proved interface forces its divergence.
+The exact remaining statement is
 
-## 7. New files
+\[
+M_j\to\infty.
+\]
+
+The computation gives one large monotone checkpoint but not asymptotic divergence. A bounded nondecreasing sequence of finite minimum survivors would eventually stabilize, producing one fixed ordinary room with arbitrarily long valid prefixes and hence an infinite itinerary.
+
+No current invariant rules out that stabilization universally.
+
+The likely sharper object is the least **extendible** depth-`j` survivor: finite validity alone includes words with no infinite continuation.
+
+## 8. Files added
 
 - `research/adelic-cusp/claims/L-9311-orbit-difference-carry-duality.md`
 - `research/adelic-cusp/claims/T-9313-fixed-room-past-future-equivalence.md`
@@ -222,41 +261,42 @@ Updated:
 - `research/adelic-cusp/claims/Q-9302-two-place-room-cusp.md`
 - PR #16 metadata and cross-program comments
 
-## 8. Claim effects
+## 9. Claim effects
 
 Added:
 
 - `L-9311` — `PROPOSED`;
 - `T-9313`, `T-9314` — `PROPOSED`;
 - `R-9302` — `PROPOSED`;
-- `O-9303`, `X-9303` — exact finite computation.
+- `O-9303`, `X-9303` — internal exact finite computation.
 
 No issue-#4 or PR #20 claim is promoted or altered.
 
-## 9. Review priorities
+## 10. Review priorities
 
 1. Reconstruct the fixed-room identity and converse in `T-9313`.
 2. Check the reversed-word indexing in the `C_j` congruence.
-3. Check the two-case derivation of `A>=B_j`.
-4. Replay `X-9303`, especially the modular wrap and exclusion of classes `0,1`.
-5. Reconstruct `L-9311` and confirm that it exactly recovers the local repetition inequality.
-6. Confirm that `R-9302` is scoped only to the naive proof route.
+3. Check the exact ceiling transform `A(c)=ceil(c(64/81)^j)`.
+4. Check that this transform preserves minima.
+5. Replay `X-9303`, especially modular wrap handling and exclusion of `0,1`.
+6. Reconstruct the direct survivor replay at depth 46.
+7. Reconstruct `L-9311` and confirm the local repetition inequality.
+8. Confirm that `R-9302` refutes only the naive comparison route.
 
-## 10. Highest-value next theorem
+## 11. Highest-value next theorem
 
-Define the coherent subset of `C_j` consisting of past classes that:
+Prove that the monotone exact minima
 
-- survive all predecessor equations;
-- admit an integral future tail;
-- preserve one fixed room;
-- and stay in the critical archimedean window.
+\[
+M_j=\min(R_j\setminus\{0,1\})
+\]
 
-Prove that the least nontrivial coherent representative divided by `(81/64)^j` tends to infinity.
+tend to infinity.
 
-That theorem would exclude every fixed ordinary room and close `Q-9301`.
+A promising route is to classify extendible children of low finite survivors and prove that every bounded branch eventually dies. An equivalent active-cylinder route is to prove that the appended nested-cylinder blocks cannot become eventually zero along a positive coherent itinerary.
 
 ## Status boundary
 
-This session did not prove the universal nonintersection theorem requested. It did prove the strongest exact reduction found, close one misleading incompatibility route, and obtain a new explicit ordinary-section exclusion through `2^217`.
+This session did not prove universal ordinary-section nonintersection. It did derive the exact equivalence and minimum duality, close one misleading proof route, and compute an exact ordinary-section exclusion through `2^227`.
 
 No ordinary survivor, divergent Collatz seed, nontrivial cycle, or resolution is claimed.
