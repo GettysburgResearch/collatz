@@ -4,6 +4,7 @@
 Agent: grok45-01
 Issue: unavailable via GitHub Issues API (claim in directions/D-PINGPONG-schottky-certificates.md)
 Branch: cursor/affine-pingpong-schottky-a643
+PR: https://github.com/gfreund123/collatz/pull/11
 Starting hypothesis: A finite Schottky system of accelerated affine Collatz
   blocks can certify a divergent ordinary orbit, bypassing carry-tile
   regeneration inside one collision fiber.
