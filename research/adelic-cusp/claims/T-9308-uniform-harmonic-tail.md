@@ -16,7 +16,8 @@
 Let
 
 \[
-F^{(2)}_K(h)=rac{|S_K(h)|}{2^K},
+F^{(2)}_K(h)=
+\frac{|S_K(h)|}{2^K},
 \qquad
 F^{(3)}_K(h)=
 \left|
@@ -28,7 +29,8 @@ F^{(3)}_K(h)=
 Use the constants from `T-9307`:
 
 \[
-\beta=rac{17\sqrt2}{27},
+\beta=
+\frac{17\sqrt2}{27},
 \qquad
 \eta=-\log_{81}\beta>0.
 \tag{2}
@@ -37,7 +39,8 @@ Use the constants from `T-9307`:
 Put
 
 \[
-\gamma=rac1{32\log81},
+\gamma=
+\frac1{32\log81},
 \qquad
 \delta=\min\{\eta,\gamma\}>0.
 \tag{3}
@@ -53,7 +56,7 @@ Numerically,
 \delta=\gamma.
 \]
 
-Then there is an absolute constant `C_tail` such that, for every `K>=1` and every integer cutoff
+There is an absolute constant `C_tail` such that, for every `K>=1` and every integer cutoff
 
 \[
 81\le M\le2^K,
@@ -117,7 +120,7 @@ C_{\rm tail}M_K^{-\delta}
 \tag{7}
 \]
 
-Consequently, full all-depth EQ follows from **any** proof that the weighted low-frequency sum below one growing cutoff tends to zero.
+Consequently, full all-depth EQ follows from any proof that the weighted low-frequency sum below one growing cutoff tends to zero.
 
 A sufficient maximal condition is
 
@@ -136,13 +139,13 @@ with
 \tag{8}
 \]
 
-In particular, polynomial decay on a polynomial window proves all-depth EQ **without** importing issue #4's frequency-block theorem.
+In particular, polynomial decay on a polynomial window proves all-depth EQ without importing issue #4's frequency-block theorem.
 
 ## Definitions
 
-The cutoff tail in `(4)` begins at `M`. If `M>2^K`, the sum is empty and the claim is trivial.
+The cutoff tail in `(4)` begins at `M`. If `M>2^K`, the sum is empty.
 
-The constant `gamma` is the Fourier-decay exponent supplied outside the low-energy exceptional prefixes in `T-9307`:
+The exponent `gamma` comes from the nonexceptional bound in `T-9307`:
 
 \[
 e^{-L/32}
@@ -163,36 +166,34 @@ The exponent `delta` is the smaller of:
 
 ## Motivation
 
-`L-9302` previously removed the high-frequency tail by assuming the branch-qualified arbitrary-block mean from issue #4. `T-9307` provides a different input: every interval has a power-saving count of low-energy frequencies, and every other frequency has a power-saving coefficient bound.
+`L-9302` originally removed the high-frequency tail under a branch-qualified block-mean hypothesis. `T-9307` supplies a stronger self-contained input: every interval has a power-saving count of low-energy frequencies, and every other frequency has a power-saving coefficient bound.
 
-On a shell `[X,2X)`, harmonic weights convert both savings directly into
+On a shell `[X,2X)`, harmonic weights turn those two facts into
 
 \[
 O(X^{-\eta})+O(X^{-\gamma}).
 \]
 
-These bounds are summable over dyadic shells. The resulting tail theorem is self-contained and uniform in depth.
-
-This materially changes the proof frontier. The only all-depth obstruction lies in a growing set of the **smallest** frequencies; the exponential range no longer requires an external average theorem.
+These bounds are summable over dyadic shells. The resulting theorem closes the exponential frequency range uniformly at every depth.
 
 ## Proof
 
 ### Step 1: one dyadic shell for the triadic mirror
 
-Fix a real `X>=81` and let
+Fix `X>=81` and let
 
 \[
 I_X=
 \{h\in\mathbb Z:X\le h<2X\}.
 \]
 
-Its cardinality is at most `X+1`; enlarging by an absolute constant has no effect below. Apply `T-9307` to an interval of length comparable with `X`, with
+Put
 
 \[
 L=\lfloor\log_{81}X\rfloor.
 \]
 
-The exceptional set
+Apply `T-9307` to an interval containing `I_X` whose length is comparable with `X`. The exceptional set
 
 \[
 \mathcal B_X=
@@ -203,7 +204,7 @@ h\in I_X:
 \right\}
 \]
 
-has size
+satisfies
 
 \[
 |\mathcal B_X|
@@ -212,7 +213,7 @@ C_*X^{1-\eta}.
 \tag{9}
 \]
 
-Every exceptional coefficient is at most `1`. Since `h>=X`, its total weighted contribution is at most
+Since every coefficient is at most `1` and every `h in I_X` is at least `X`,
 
 \[
 \sum_{h\in\mathcal B_X}
@@ -222,7 +223,7 @@ C_*X^{-\eta}.
 \tag{10}
 \]
 
-For every nonexceptional `h`, `T-9307(9)` gives
+For every nonexceptional `h`, `T-9307` gives
 
 \[
 F^{(3)}_K(h)
@@ -252,30 +253,25 @@ There are at most `X+1` such frequencies and each harmonic weight is at most `1/
 \sum_{h\in I_X\setminus\mathcal B_X}
 \frac{F^{(3)}_K(h)}h
 \le
-C_1X^{-\gamma}
+C_1X^{-\gamma}.
 \tag{12}
 \]
 
-for an absolute `C_1`.
-
-Combining `(10)` and `(12)`,
+Thus
 
 \[
 \boxed{
 \sum_{X\le h<2X}
 \frac{F^{(3)}_K(h)}h
 \le
-C_2
-\left(
-X^{-\eta}+X^{-\gamma}
-\right)
+C_2\left(X^{-\eta}+X^{-\gamma}\right)
 \le
 2C_2X^{-\delta}.
 }
 \tag{13}
 \]
 
-The bound is uniform in `K` whenever the shell is contained in `h<=2^K`. The prefix length satisfies `L<K` automatically because
+The bound is uniform in `K` whenever the shell lies inside `h<=2^K`. The required prefix length satisfies `L<K` because
 
 \[
 \log_{81}(2^K)<K.
@@ -283,13 +279,7 @@ The bound is uniform in `K` whenever the shell is contained in `h<=2^K`. The pre
 
 ### Step 2: sum the shells
 
-Cover
-
-\[
-[M,2^K]
-\]
-
-by dyadic shells with left endpoints
+Cover `[M,2^K]` by dyadic shells with left endpoints
 
 \[
 X_r=2^rM,
@@ -304,9 +294,7 @@ stopping at the final nonempty shell. Equation `(13)` gives
 \sum_{M\le h\le2^K}
 \frac{F^{(3)}_K(h)}h
 &\le
-2C_2
-\sum_{r\ge0}
-(2^rM)^{-\delta}\\
+2C_2\sum_{r\ge0}(2^rM)^{-\delta}\\
 &=
 \frac{2C_2}{1-2^{-\delta}}
 M^{-\delta}.
@@ -323,7 +311,7 @@ C_{\rm tail}
 
 ### Step 3: transfer to the survivor product
 
-`T-9305(4)` gives
+`T-9305` gives
 
 \[
 \left|
@@ -337,9 +325,7 @@ After dividing by `h` and summing over at most `2^K` frequencies,
 
 \[
 \sum_{h=1}^{2^K}
-\frac{
-|F^{(2)}_K(h)-F^{(3)}_K(h)|
-}{h}
+\frac{|F^{(2)}_K(h)-F^{(3)}_K(h)|}{h}
 \le
 \frac{\pi2^K}{64^K}
 =
@@ -359,11 +345,10 @@ If the low-frequency maximum is `epsilon_K`, then
 \sum_{1\le h<M_K}
 \frac{F^{(2)}_K(h)}h
 \le
-\varepsilon_K
-\left(1+\log M_K\right).
+\varepsilon_K(1+\log M_K).
 \]
 
-Condition `(8)` makes this vanish, while `(6)` makes the two tail errors vanish. QED.
+Condition `(8)` makes the low term vanish, while `(6)` makes both tail errors vanish. QED.
 
 ## Dependency audit
 
@@ -375,10 +360,9 @@ Condition `(8)` makes this vanish, while `(6)` makes the two tail errors vanish.
 
 ## Gap audit
 
-- The theorem still leaves a growing low-frequency window.
+- The theorem leaves a growing low-frequency window.
 - A sparse exceptional set can contain the smallest frequencies, so count bounds alone do not close the low part.
-- The exponent `delta` is crude and small; its positivity, not optimization, is the structural result.
-- The transfer error is negligible only because the EQ range is far below `64^K`.
+- The exponent `delta` is crude; its positivity, not optimization, is the structural point.
 - No pointwise all-frequency decay follows.
 - The M1 integer-section question remains independent.
 
@@ -386,14 +370,14 @@ Condition `(8)` makes this vanish, while `(6)` makes the two tail errors vanish.
 
 1. If `M=81`, the estimate is finite but the constant may be crude.
 2. If `M=2^K`, the tail contains one frequency and the theorem remains valid.
-3. The dyadic-shell sum converges because `delta>0`; without the entropy saving or pointwise saving it would diverge.
-4. A hypothetical exceptional frequency `h=1` is not controlled by the tail theorem, exactly matching the remaining obstruction.
-5. At `H=2^K`, the survivor/mirror transfer error is exactly of scale `2^(-5K)`.
+3. The shell sum converges because `delta>0`.
+4. A hypothetical exceptional frequency `h=1` is deliberately not controlled by the tail theorem.
+5. At the full EQ cutoff, the survivor/mirror transfer error has scale `2^{-5K}`.
 
 ## Remaining uncertainty
 
-The proof is complete-looking. Independent review should check the passage from `T-9307`'s arbitrary-interval statement to `(9)`, and the uniformity condition `L<=K` on the largest shell.
+The proof is complete-looking. Independent review should check the passage from `T-9307`'s arbitrary-interval statement to `(9)` and the uniform condition `L<K` on the largest shell.
 
 ## Suggested next attack
 
-Combine this tail theorem with `T-9303`'s valuation-stratified depth averages. That removes the final branch-qualified frequency-block dependency and yields a completely self-contained density-one full-EQ theorem in `T-9309`.
+Combine this tail theorem with `T-9303` for density results, and attack the harmonic location of the sparse exceptional classes for the all-depth theorem.
