@@ -7,23 +7,19 @@ Active draft PR: `#3`
 
 ## Project maturity
 
-The active branch contains four mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
+The active branch contains five mathematical research sessions. No claim has yet received independent review, so complete-looking finite theorems and identities remain `PROPOSED`.
 
 There is currently **no positive-integer Collatz counterexample** in the repository.
 
 ## Fixed framework
 
-The shortcut map is
+For the shortcut map
 
 \[
-T(n)=
-\begin{cases}
-n/2,&n\text{ even},\\
-(3n+1)/2,&n\text{ odd}.
-\end{cases}
+T(n)=\begin{cases}n/2,&n\text{ even},\\(3n+1)/2,&n\text{ odd},\end{cases}
 \]
 
-Parity words are chronological. Mixed-radix words are low-order first. For a length-\(L\), weight-\(a\) parity word,
+a length-\(L\), weight-\(a\) parity word has exact affine action
 
 \[
 T^L(n)=\frac{3^an+B(w)}{2^L}
@@ -31,207 +27,134 @@ T^L(n)=\frac{3^an+B(w)}{2^L}
 
 on one residue class modulo \(2^L\).
 
-## Collision fibers and induced maps
-
-If a finite digit set \(D\) satisfies
+A finite collision fiber
 
 \[
-T^L(2^Lq+r+d)=3^aq+s
-\qquad(d\in D),
+T^L(2^Lq+r+d)=3^aq+s\qquad(d\in D)
 \]
 
-then `T-0002` induces
+induces
 
 \[
 H_D(2^LB+d)=3^aB+d.
 \]
 
-One invariant congruence class of induced states lifts exactly to ordinary positive Collatz integers. An infinite admissible orbit beginning from one finite lifted state would be a counterexample.
+One invariant congruence class lifts exactly to ordinary positive Collatz integers. An infinite admissible orbit from one finite lifted state would be a counterexample.
 
-## Finite collision atlas
+## Results before the current session
 
-`L-0003` gives an exact \(O(2^L)\) recursion for all pairs
+The repository already contains:
 
-\[
-(a_L(r),T^L(r)).
-\]
+- exact finite collision atlases and sparse collision fibers;
+- universal finite-horizon carry pumping;
+- dual 2-adic/real coding and an aperiodicity obstruction;
+- the exact run-length/cofactor skeleton
+  \[
+  d_k+N^{u_k}C_k=d_{k+1}+M^{u_{k+1}}C_{k+1};
+  \]
+- inverse-signature collision codes;
+- exponentially unbounded mildly supercritical fiber cardinality;
+- an exact 339-branch chart with full projection modulo 16 and a long difference interval;
+- exact tensor transport preserving any fixed finite alphabet geometry;
+- arbitrary finite 3-adic precision from explicit atomic codes.
 
-`X-0002` enumerates complete supercritical fibers through depth 22. The largest finite census chart recorded there has eighteen branches.
+These remove alphabet size, local pumping, and finite precision as principal scarcities.
 
-## Inverse-signature construction
+## New session: complete dyadic projection at arbitrary scale
 
-For a word \(w\) of length \(L\), weight \(a\), define
+### L-0009 — Universal one-hot signature correction
 
-\[
-\sigma(w)=2^{-L}B(w)\pmod{3^a}.
-\]
-
-`L-0005` proves that equal signatures are exactly the congruence needed to invert several parity words from one common output.
-
-A CRT choice of common output congruent to \(-1\pmod{2^k}\) appends \(k\) forced odd steps. Thus:
-
-- the inverse code supplies branching;
-- the common finite odd tail supplies supercritical drift.
-
-## Collision-code composition
-
-For chronological concatenation,
+Let \(\mathcal U\) be any finite family of binary words of common length \(L\) and weight \(a\). For any \(p\ge a+1\), append a length
 
 \[
-B(uv)=3^{a(v)}B(u)+2^{|u|}B(v).
+S=2\cdot3^{p-1}
 \]
 
-`L-0006` turns this into a finite 3-adic precision budget. High-surplus suffix codes can absorb independent prefix choices.
+weight-one suffix. Since \(2\) generates \((\mathbb Z/3^p\mathbb Z)^\times\), the position of that single one can be chosen independently for every prefix so that every completed word has the same affine constant modulo \(3^p\).
 
-## T-0005 — Exponentially unbounded supercritical fibers
+Thus **every fixed-length, fixed-weight prefix family can be completed into one exact inverse collision code without discarding any prefix choices**.
 
-If
+### L-0010 — Fixed-weight prefixes carry all dyadic residues
+
+For every \(b\ge1\), take all \(2^b\) binary patterns in the first \(b\) positions and add compensating ones in positions \(b,\ldots,2b-1\) so that every word has total weight \(b\).
+
+The map
 
 \[
-2^k-1>3^a,
-\qquad
-3^{a+k}>2^{L+k},
+x\longmapsto B(u_x)\pmod{2^b}
 \]
 
-then a supercritical collision fiber exists with at least
+is bijective. The proof is triangular: modulo \(2^{j+1}\), the next bit is determined because its coefficient is an odd multiple of \(2^j\).
+
+### T-0007 — Complete dyadic projection theorem
+
+Combine the two constructions:
+
+1. begin with the \(2^b\) fixed-weight prefixes of `L-0010`;
+2. correct all signatures with `L-0009` at precision \(b+1\);
+3. choose a finite CRT root and append the shortest forced all-odd tail making the block supercritical.
+
+The resulting finite supercritical collision fiber has exactly \(2^b\) branches and offset alphabet \(D_b\) satisfying
 
 \[
-\left\lceil\frac{\binom La}{3^a}\right\rceil
+\boxed{D_b\bmod2^b=\mathbb Z/2^b\mathbb Z.}
 \]
 
-branches.
-
-Taking \(L=3m\), \(a=m\), and the shortest supercritical tail gives
+The expansion ratio can simultaneously be kept in
 
 \[
-|D_m|
-\gtrsim
-\frac1{\sqrt m}\left(\frac94\right)^m
+1<N/M\le3/2.
 \]
 
-while the expansion factor remains in \((1,3/2]\). Large mildly supercritical alphabets are therefore abundant by proposed theorem.
+This is the first proposed theorem giving closure-relevant alphabet geometry that genuinely grows without bound.
 
-## O-0005 — Exact 339-branch chart
+## Exact computation
 
-`X-0003` verifies
+`X-0005` directly constructs and verifies the theorem for \(1\le b\le5\). It checks every corrected parity word, every common inverse output, every forced odd tail, and complete residue projection. The tested branch counts are
+
+```text
+2, 4, 8, 16, 32.
+```
+
+The corresponding corrected core lengths are
+
+```text
+8, 22, 60, 170, 496.
+```
+
+All computations use exact Python integers and the standard library only.
+
+## Strategic consequence
+
+For arbitrarily large \(b\), every possible low-order correction modulo \(2^b\) is represented by some induced digit. Low-order modular freedom is therefore not a finite-scale accident.
+
+This sharply advances the run-length target. In
 
 \[
-T^{44}(17592186044416q+8952950628352+d)
-=22876792454961q+11642373114938
+d_k+N^{u_k}C_k=d_{k+1}+M^{u_{k+1}}C_{k+1},
 \]
 
-for a reproducible 339-element offset set. Its exact finite geometry includes:
+the alphabet can now supply every desired dyadic residue correction up to an arbitrarily chosen scale.
 
-- every residue class modulo 16;
-- a seven-term consecutive run;
-- \([-934,934]\subseteq D-D\).
+However, modular solvability is not yet a uniform positive relay. The selected next digit must also:
 
-## New session: exact geometry transport
-
-### L-0007 — Offset tensor law
-
-For a prefix code \(U\) of weight \(a_1\) and a suffix code \(V\) whose precision is at least \(a_1+a_2\), the inverse-root alphabets satisfy
-
-\[
-\boxed{
-D_{UV}=D_U+2^{L_1}E_V.
-}
-\]
-
-This is an exact mixed-radix Minkowski sum. It implies product cardinality and preserves every difference, modular projection, consecutive run, and difference interval already witnessed in the prefix alphabet.
-
-### L-0008 — Arbitrary precision on demand
-
-For every \(p\ge1\), the two weight-one parity words with their unique odd steps at positions
-
-\[
-0,\qquad 2\cdot3^{p-1}
-\]
-
-have affine constants differing by a number of exact 3-adic valuation \(p\):
-
-\[
-v_3\left(2^{2\cdot3^{p-1}}-1\right)=p.
-\]
-
-Thus finite collision codes possess an explicit unbounded precision reservoir.
-
-### T-0006 — Geometry-preserving amplification
-
-Starting from any finite collision code \(U_0\), append atomic suffix codes of increasing precision. After \(n\) stages:
-
-\[
-|U_n|=|U_0|2^n,
-\]
-
-and the inverse-root alphabet contains a translated copy of the original alphabet. Its difference set contains \(D_0-D_0\).
-
-A finite odd tail can then make the chart supercritical without changing the offset geometry.
-
-Consequently `O-0005` embeds into arbitrarily large exact supercritical fibers that still cover every residue modulo 16, retain a seven-term run, and contain \([-934,934]\) in their difference sets.
-
-This is stronger than cardinality growth, but still preserves only **fixed finite geometry**. It does not make the useful scale grow with the boundary.
-
-## Universal local amplification
-
-`L-0004` proves that every nontrivial collision chart has exact finite-horizon carry pumps. Local amplification is universal; it does not imply vertical closure.
-
-## Global form of any hypothetical induced orbit
-
-`T-0003` gives the exact 2-adic coding
-
-\[
-A_0=\frac{N-M}{N}\sum_{t\ge0}d_t\left(\frac MN\right)^t
-\]
-
-and the real asymptotic law
-
-\[
-A_t=C(N/M)^t+O(1).
-\]
-
-The base-\(M\) boundary grows at slope \(\log_M(N/M)\), and a nontrivial ordinary-integer orbit cannot have an eventually periodic digit itinerary.
-
-`T-0004` gives the run-length skeleton
-
-\[
-d_k+N^{u_k}C_k
-=d_{k+1}+M^{u_{k+1}}C_{k+1}.
-\]
-
-This remains the cleanest scale-independent global target.
-
-## Computational state
-
-- `X-0001`: consecutive supercritical bundles through depth 17.
-- `X-0002`: complete supercritical fibers through depth 22.
-- `X-0003`: inverse-signature classes, finite odd tails, and the 339-branch chart.
-- `X-0004`: arbitrary-precision atomic codes, exact offset tensors, cardinality doubling, inherited geometry, and finite tail promotion.
-
-All programs use exact Python integers and the standard library only.
+- keep the next cofactor positive;
+- enforce the required exact divisibility depth;
+- preserve the lifting congruence;
+- fit one finite aperiodic schema for all future stages.
 
 ## Central unresolved step
 
 The project still lacks a **finite-boundary regeneration theorem**.
 
-A solution must construct one ordinary finite starting state and prove either:
+The strongest next target is now:
 
-1. a finite aperiodic macro-tile grammar whose rows close vertically; or
-2. a finite family of positive cofactor schemas closed under the run-length equations and lifting congruences.
+> Convert complete dyadic projection into a finite family of uniform positive run-length/cofactor relays, or prove a finite aperiodic macro-grammar that uses the modular correction digits while preserving one ordinary finite high-order boundary.
 
-The following are now known to be insufficient by themselves:
+## Immediate priorities
 
-- large alphabet cardinality;
-- universal finite-horizon pumps;
-- arbitrary 3-adic precision;
-- preservation of any fixed finite amount of alphabet geometry;
-- compatible finite prefixes or adic inverse limits.
-
-## Immediate research priorities
-
-1. **Growing geometry.** Construct code families whose modular coverage or difference intervals increase with code depth at a rate relevant to boundary motion.
-2. **Tensorable relay tiles.** Use `L-0007` to preserve and combine exact vertical relay gadgets, not merely digit sets.
-3. **Run-length closure.** Convert the large difference intervals of `O-0005` into uniform positive cofactor transformations.
-4. **Variable charts.** Use one branching core with several finite odd tails and lifting gauges to manage boundary changes.
-5. **Aperiodic address system.** Investigate whether the odd normalized offsets of `L-0008` can encode a finite moving-boundary address grammar.
-6. **Independent audit.** Reconstruct `L-0005` through `T-0006`, especially inverse uniqueness, precision consumption, tensor orientation, and preservation of offsets under tail promotion.
+1. Derive a one-step cofactor relay theorem using complete projection modulo \(2^b\), with quantitative positivity bounds.
+2. Determine whether bounded cofactor ratios can be maintained by choosing \(b\) as a function of the current boundary scale.
+3. Compress that adaptive choice into finitely many schemas or an aperiodic substitution.
+4. Combine dyadic correction with variable collision charts to preserve lifting congruences.
+5. Independently audit `L-0009`, `L-0010`, and `T-0007`, especially the triangular bijection, signature correction, positivity, and tail promotion.
