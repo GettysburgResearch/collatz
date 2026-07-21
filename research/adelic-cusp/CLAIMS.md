@@ -25,8 +25,9 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `T-9307` | Theorem | `PROPOSED` | Low-energy lift prefixes have an explicit entropy deficit | `L-9309`; exponential moments; `L-9303` for Fourier corollary |
 | `T-9308` | Theorem | `PROPOSED` | Uniform harmonic high-frequency tail at every depth | `T-9307`, `T-9305`; geometric shell summation |
 | `T-9309` | Theorem | `PROPOSED` | Unconditional full weighted EQ on density-one depths | `T-9303`, `T-9308`; valuation strata and Markov |
+| `T-9310` | Theorem | `PROPOSED` | Weighted EQ converges in uniform density | `T-9303`, `T-9308`; translated-period Markov bounds |
 | `R-9301` | Refutation | `PROPOSED` | Exact carry prefixes do not amplify to consecutive intervals | `L-9309` |
-| `C-9301` | Conjecture | `IDEA` | Logarithmic cusp scattering / all-depth low-frequency control | `L-9301`, `L-9303`, `T-9308` |
+| `C-9301` | Conjecture | `IDEA` | Harmonic control of low-energy cylinders for all-depth EQ | `L-9301`, `L-9303`, `L-9309`, `T-9307`, `T-9308` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
 | `Q-9302` | Open question | `IDEA` | Two-place proof mechanism after target equivalence | `T-9304`, `L-9306`--`L-9309`, `T-9305`--`T-9308`, `R-9301` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
@@ -37,13 +38,14 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 - Every complete-looking argument authored in this packet enters as `PROPOSED` pending independent review.
 - `T-9301` remains a correct-looking conditional implication, but `T-9308` supplies a stronger self-contained tail and low/high reduction. It is therefore `SUPERSEDED`, not refuted.
 - `T-9302` remains a correct-looking conditional density-one synthesis, but `T-9309` proves the same full weighted conclusion without the frequency-block hypothesis. It is therefore `SUPERSEDED`, not refuted.
-- `T-9309` is the packet's strongest integrated theorem: the complete weighted EQ criterion holds along a natural-density-one set of depths with no external mathematical hypothesis.
+- `T-9309` proves natural-density-one convergence of the complete weighted EQ criterion with no external mathematical hypothesis.
+- `T-9310` strengthens this: for every fixed `epsilon>0`, the exceedance set `{K:E_K>epsilon}` has upper Banach density zero. The convergence is uniform over translations of long depth intervals.
 - `T-9308` is uniform in every depth and removes the whole frequency range above any growing cutoff with a power-saving harmonic tail.
 - `T-9307` is the combinatorial source of that tail: low-energy lift prefixes occupy at most a fixed fraction `beta^L` of every complete `81^L` block and a power-small fraction of every interval.
 - `L-9309` proves exact lift-prefix uniformity and sparsity. `R-9301` refutes only the naive claim that one exact prefix persists on a consecutive neighborhood; approximate-cylinder and harmonic-location arguments remain open.
-- `D-9303`, `L-9305`--`L-9309`, `T-9303`--`T-9309`, and `R-9301` are self-contained except where a file explicitly labels a branch-qualified optional consequence.
+- `D-9303`, `L-9305`--`L-9309`, `T-9303`--`T-9310`, and `R-9301` are self-contained except where a file explicitly labels a branch-qualified optional consequence.
 - `BLOCK_MEAN_AUDIT.md` records why the original uniform partial-product reading of issue #4's Theorem 12 needs valuation correction. It does not change that branch's claim status.
-- `C-9301`, `Q-9301`, and `Q-9302` remain open. The all-depth obstruction is now confined to a growing set of the smallest frequencies and the zero-density exceptional depth set.
+- `C-9301`, `Q-9301`, and `Q-9302` remain open. The all-depth obstruction is now confined to harmonic location of sparse low-energy classes and an upper-Banach-zero exceptional depth set.
 - No positive integer, divergent orbit, cycle, or Collatz counterexample is claimed.
 - `O-9301` is finite empirical evidence only. It is not a premise of any proof-level claim.
 
@@ -61,11 +63,13 @@ T-9308 uniform harmonic tail at every depth
    +---------------------------+
    |                           |
    v                           v
-all-depth low/high target   T-9303 depth-period low-window mean
+all-depth low/high target   T-9303 translated depth-period low-window mean
                                |
                                v
-                         T-9309 unconditional
-                         density-one full EQ
+                         T-9309 natural-density-one EQ
+                               |
+                               v
+                         T-9310 uniform-density EQ
 ```
 
 The direct M1 route remains separate:
@@ -88,7 +92,7 @@ The average-theorem audit remains useful historically:
 
 - the written `CLAUDE/T11` interface supports the conditional `L-9302`/`T-9301` route, pending independent proof review;
 - the displayed `CLAUDE/T12` proof mechanism is not uniform in frequencies divisible by `3`, so `T-9303` replaced that dependency;
-- neither external interface is needed by the new `T-9308`/`T-9309` chain.
+- neither external interface is needed by the new `T-9308`--`T-9310` chain.
 
 The issue-#4 room/Cantor crosswalk is:
 
@@ -101,5 +105,6 @@ The issue-#4 room/Cantor crosswalk is:
 - exact length-`L` lift data are a permutation of residues modulo `81^L` = `L-9309`;
 - exact-prefix Euclidean interval amplification is false = `R-9301`;
 - low-energy approximate prefixes have an explicit entropy deficit = `T-9307`;
-- ordered-position transfer remains branch-qualified for geometric statements, but is not needed for the coefficient and tail theorems;
-- `Q-9302` now targets harmonic location of the sparse exceptional cylinders, positive room operators, carry-template inversion, or hyperbolic renewal.
+- uniform translated-period estimates imply upper-Banach-zero bad-depth sets = `T-9310`;
+- ordered-position transfer remains branch-qualified for geometric statements, but is not needed for the coefficient, tail, or density theorems;
+- `Q-9302` now targets harmonic location of sparse exceptional cylinders, positive room operators, carry-template inversion, or hyperbolic renewal.
