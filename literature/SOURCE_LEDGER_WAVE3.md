@@ -112,9 +112,30 @@ Only sources actually located during wave 3 appear here. “Inspected” disting
 
 **Native use:** methodology/positioning for `ADEL/T-9307`–`T-9312`; hypotheses do not directly cover the fixed nonarchimedean moving-character cusp.
 
+## S39 — Krieger, embedding into a mixing topological Markov chain
+
+**Record:** Wolfgang Krieger, *On the subsystems of topological Markov chains*, Ergodic Theory and Dynamical Systems 2 (1982), no. 2, 195–202. DOI `10.1017/S0143385700001516`.
+
+**Inspected:** publisher abstract and bibliographic record.
+
+**Located content:** a lower-entropy expansive Cantor system embeds into a mixing topological Markov chain when its least-period point counts do not exceed those of the target. For subshifts this is the classical entropy-plus-periodic-point embedding criterion.
+
+**Native use:** `LIT-KTHM-0033`; a potential route from PR #3's bit surplus to an actual symbolic router after the arithmetic stage relation is encoded as a stationary mixing SFT.
+
+## S40 — MacDonald, zero-error coding through sliding block codes
+
+**Record:** Sophie MacDonald, *Encoding subshifts through sliding block codes*, Ergodic Theory and Dynamical Systems 44 (2024), no. 4, 1091–1115. DOI `10.1017/S0143385723000325`; arXiv `2210.08150`.
+
+**Inspected:** publisher abstract and arXiv metadata.
+
+**Located content:** necessary and sufficient conditions for a lower-entropy subshift to embed into a mixing SFT while remaining injective through a prescribed surjective sliding block code; explicitly framed in the spirit of zero-error information theory.
+
+**Native use:** the correct stronger model when a PR #3 router must preserve both a hidden connector state and a visible residue/output projection.
+
 ## Inspection cautions
 
 - No source above proves that a completion point selected by an infinite Collatz directive is an ordinary integer.
 - Real self-similar Fourier theorems are not silently transferred to `Z_2` or to the triangular cusp.
 - General IFS dimension theory is used as context; the H-ghost theorem has a local proof.
 - The Foundry contraction corollary does not classify which fixed points are rational or integral.
+- Entropy surplus alone does not invoke Krieger's theorem: the native connector system must first be a stationary mixing SFT and satisfy periodic-point/observation conditions.
