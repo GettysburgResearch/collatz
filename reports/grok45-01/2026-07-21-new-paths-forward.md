@@ -26,6 +26,7 @@ This session pushed three forward surfaces:
 | `O-0108` / `X-0131` | Iterated grow+keep stalls (max \(+2\) bits, \(0\) escapes) |
 | `X-0132` | Scheduled dip/repair: max \(1\) epoch, max \(+2\) bits |
 | `X-0130` | Coarse fuel automaton: regen events, no \(+8\) size-bucket proxy |
+| `X-0133` | Mixed −5/−17 dual-depth fuel: max \(+5\) bits, still no \(+10\) escape |
 
 ## Methodological fix
 

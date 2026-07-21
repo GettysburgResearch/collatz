@@ -20,9 +20,15 @@ mild, and hold (`template`) moves that enforce a depth floor
 - **\(0\) escapes** with \(+10\) bits while holding the floor;
 - all frontiers eventually stalled (no legal grow+keep/repair/hold extension).
 
+## Follow-up scans
+
+- `X-0132` scheduled dip/repair: max \(1\) epoch, max \(+2\) bits.
+- `X-0133` mixed \(-5\)/\(-17\) dual-depth \(\max(v_2(n+5),v_2(n+17))\):
+  max bit gain improved to \(+5\), still **\(0\)** \(+10\)-bit escapes.
+
 ## Interpretation
 
-`O-0107`’s local grow+keep events are real but, in this alphabet and floor,
-do **not** constitute a regenerative divergence engine. Next fuel-search
-moves: enlarge the excursion alphabet, allow controlled depth dips with
-scheduled repair, or change charts (\(-5\) vs \(-17\) vs mixed templates).
+`O-0107`’s local grow+keep events are real but, in these alphabets and
+floors, do **not** constitute a regenerative divergence engine. Next:
+morphic / automatic large alphabets, or a lemma elevating the deep-burn
+half of `C-0104`.

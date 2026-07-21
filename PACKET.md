@@ -30,7 +30,7 @@ Date: 2026-07-21
 - `O-0109` / `X-0127` — short multi-block / sandwich / power families empty
 - `O-0105` / `X-0125` — −5 model-A: growing excursions destroy \(v_2(n+5)\)
 - **`O-0107` / `X-0128`** — −17 model-B: mild repair + **local grow+keep**; deep growth burns
-- **`O-0108` / `X-0131`/`X-0132`** — iterated grow+keep and dip/repair **stall** (≤+2 bits)
+- **`O-0108` / `X-0131`–`X-0133`** — iterated / dip-repair / mixed-template fuel **stall** (≤+5 bits; no +10 escape)
 - `C-0104` — fuel tradeoff working conjecture
 - Directions claimed: `D-CYCLE-*`, `D-HETEROCLINIC-*`, **`D-FUEL-*`**
 

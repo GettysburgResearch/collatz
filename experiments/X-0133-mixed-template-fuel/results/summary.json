@@ -1,0 +1,170 @@
+{
+  "depth_floor": 2,
+  "seeds": 160,
+  "escapes": 0,
+  "max_bit_gain": 5,
+  "best": [
+    {
+      "seed": 16379,
+      "chart0": "5",
+      "m": 12,
+      "bit_gain": 5,
+      "best_depth": 7,
+      "escaped": false
+    },
+    {
+      "seed": 67108859,
+      "chart0": "5",
+      "m": 24,
+      "bit_gain": 5,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 32751,
+      "chart0": "17",
+      "m": 11,
+      "bit_gain": 5,
+      "best_depth": 4,
+      "escaped": false
+    },
+    {
+      "seed": 1048571,
+      "chart0": "5",
+      "m": 18,
+      "bit_gain": 4,
+      "best_depth": 6,
+      "escaped": false
+    },
+    {
+      "seed": 67108847,
+      "chart0": "17",
+      "m": 22,
+      "bit_gain": 4,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 251,
+      "chart0": "5",
+      "m": 6,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 8175,
+      "chart0": "17",
+      "m": 11,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 4194287,
+      "chart0": "17",
+      "m": 22,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 8388591,
+      "chart0": "17",
+      "m": 22,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 16777199,
+      "chart0": "17",
+      "m": 22,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 33554415,
+      "chart0": "17",
+      "m": 22,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 8589934575,
+      "chart0": "17",
+      "m": 33,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 17179869167,
+      "chart0": "17",
+      "m": 33,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 34359738351,
+      "chart0": "17",
+      "m": 33,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 68719476719,
+      "chart0": "17",
+      "m": 33,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 128849018863,
+      "chart0": "17",
+      "m": 33,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 137438953455,
+      "chart0": "17",
+      "m": 33,
+      "bit_gain": 3,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 81915,
+      "chart0": "5",
+      "m": 12,
+      "bit_gain": 2,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 2097147,
+      "chart0": "5",
+      "m": 18,
+      "bit_gain": 2,
+      "best_depth": 3,
+      "escaped": false
+    },
+    {
+      "seed": 3145723,
+      "chart0": "5",
+      "m": 18,
+      "bit_gain": 2,
+      "best_depth": 4,
+      "escaped": false
+    }
+  ],
+  "escape_samples": [],
+  "conclusion": "Mixed -5/-17 fuel search with dual-depth max(v2(n+5),v2(n+17)); +10-bit escapes holding depth floor would challenge C-0104."
+}
