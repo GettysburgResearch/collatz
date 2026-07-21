@@ -1,0 +1,148 @@
+{
+  "constants": {
+    "2^17_to_3^11": {
+      "M": 131072,
+      "N": 177147,
+      "beta_log_M_N": "1.025563971054866",
+      "delta": "0.025563971054866",
+      "kappa_reciprocal_delta": "39.117553288328"
+    },
+    "2^22_to_3^14": {
+      "M": 4194304,
+      "N": 4782969,
+      "beta_log_M_N": "1.008612500458918",
+      "delta": "0.008612500458918",
+      "kappa_reciprocal_delta": "116.110298602604"
+    },
+    "2^44_to_3^28": {
+      "M": 17592186044416,
+      "N": 22876792454961,
+      "beta_log_M_N": "1.008612500458918",
+      "delta": "0.008612500458918",
+      "kappa_reciprocal_delta": "116.110298602604"
+    },
+    "512_to_729": {
+      "M": 512,
+      "N": 729,
+      "beta_log_M_N": "1.056641667147437",
+      "delta": "0.056641667147437",
+      "kappa_reciprocal_delta": "17.654847577085"
+    },
+    "64_to_81": {
+      "M": 64,
+      "N": 81,
+      "beta_log_M_N": "1.056641667147438",
+      "delta": "0.056641667147438",
+      "kappa_reciprocal_delta": "17.654847577085"
+    }
+  },
+  "experiment_id": "X-9402",
+  "finite_state_transfer": {
+    "directive": "Fibonacci fixed point 0->01, 1->0",
+    "directive_length": 700,
+    "machines": 128,
+    "max_factor_to_QB_envelope": "1.000000000000",
+    "sequential_inequalities": 896,
+    "sliding_inequalities": 1792,
+    "sliding_radius_1_maps": 256
+  },
+  "first_difference": {
+    "2^17_to_3^11": {
+      "distinct_pairs": 32640,
+      "valuation_max": 52,
+      "valuation_min": 0
+    },
+    "2^22_to_3^14": {
+      "distinct_pairs": 3240,
+      "valuation_max": 67,
+      "valuation_min": 0
+    },
+    "2^44_to_3^28": {
+      "distinct_pairs": 120,
+      "valuation_max": 132,
+      "valuation_min": 0
+    },
+    "512_to_729": {
+      "distinct_pairs": 3240,
+      "valuation_max": 28,
+      "valuation_min": 0
+    },
+    "64_to_81": {
+      "distinct_pairs": 120,
+      "valuation_max": 18,
+      "valuation_min": 0
+    }
+  },
+  "increasing_gap_output": {
+    "C": 162,
+    "finite_scales": {
+      "10000": {
+        "constructed_distinct_factors": 27993,
+        "constructed_ratio_over_n": "2.799300000",
+        "proved_uniform_lower_bound": 19995,
+        "selected_gaps": 7
+      },
+      "20000": {
+        "constructed_distinct_factors": 103987,
+        "constructed_ratio_over_n": "5.199350000",
+        "proved_uniform_lower_bound": 87989,
+        "selected_gaps": 13
+      },
+      "40000": {
+        "constructed_distinct_factors": 415974,
+        "constructed_ratio_over_n": "10.399350000",
+        "proved_uniform_lower_bound": 367977,
+        "selected_gaps": 26
+      },
+      "80000": {
+        "constructed_distinct_factors": 1631949,
+        "constructed_ratio_over_n": "20.399362500",
+        "proved_uniform_lower_bound": 1535952,
+        "selected_gaps": 51
+      }
+    },
+    "gap_increment_set": [
+      153,
+      162
+    ],
+    "interpretation": "finite replay of the two-one factor construction; the theorem, not these scales, proves Omega(n^2)"
+  },
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "the universal complexity-criticality theorem",
+      "existence or nonexistence of an ordinary survivor",
+      "closure or impossibility of the active S-adic stack grammar",
+      "any theorem about all collision alphabets without the written proof"
+    ],
+    "proved_by_finite_computation": [
+      "the frozen periodic-rational formula cases",
+      "the frozen first-difference valuation cases",
+      "the frozen sequential/sliding-block factor-count inequalities",
+      "the frozen increasing-gap two-one factor construction"
+    ]
+  },
+  "periodic_height": {
+    "2^17_to_3^11": {
+      "cases": 7140,
+      "max_reduced_denominator_ratio": "0.000012912243"
+    },
+    "2^22_to_3^14": {
+      "cases": 1560,
+      "max_reduced_denominator_ratio": "0.000000553197"
+    },
+    "2^44_to_3^28": {
+      "cases": 210,
+      "max_reduced_denominator_ratio": "0.000000000000"
+    },
+    "512_to_729": {
+      "cases": 1560,
+      "max_reduced_denominator_ratio": "0.003011799926"
+    },
+    "64_to_81": {
+      "cases": 210,
+      "max_reduced_denominator_ratio": "0.029807636219"
+    }
+  },
+  "research_question": "How does ordinary-integer repetition rigidity scale across expanding digit charts, and what finite-state resources are needed to transfer a low-complexity directive into a survivor code?",
+  "schema_version": 1
+}
