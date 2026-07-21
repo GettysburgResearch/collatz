@@ -1,0 +1,9 @@
+K=5 single-step cycles expanding~0 contracting~2
+Odd edges use asymptotic 3/2, not exact affine ratios; expanding cycles here are NECESSARY-condition candidates only.
+block automaton edges=68 expanding symbolic cycles=2
+concat returns mod 2^K: 1 / 2 checked
+
+best expanding single-step (heuristic mu):
+block cycle examples:
+  words=['1111010', '1101110'] prod=59049/16384
+  words=['1101110', '1111010'] prod=59049/16384

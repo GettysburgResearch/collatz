@@ -1,0 +1,4 @@
+blocks=502 supercritical odd-image=105
+Every supercritical block regenerates 2-adic residue coverage in its image AP (odd step), AND simultaneously collapses to a constant class mod 3^j for j<=a. Precision regeneration in the 2-adic direction is real at the residue level, but L-0105 still taxes parameters when the next edge needs a 2-power port. The open constructive move is to stay inside odd-modulus ports long enough to expand height without re-entering 2-power constraints, or to buy more binary digits than each tax consumes.
+longest super-only walk={'n0': 2559, 'steps': 5, 'final': 448928}
+constant mod 3^j examples=15

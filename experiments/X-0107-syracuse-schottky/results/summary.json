@@ -1,0 +1,183 @@
+{
+  "modular_pingpong_mod27": {
+    "expanding_ks": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "disjoint_hits": [],
+    "overlap_table": [
+      {
+        "k1": 2,
+        "k2": 3,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 2,
+        "k2": 4,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 2,
+        "k2": 5,
+        "overlap": 12,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 2,
+        "k2": 6,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 2,
+        "k2": 7,
+        "overlap": 12,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 3,
+        "k2": 4,
+        "overlap": 12,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 3,
+        "k2": 5,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 3,
+        "k2": 6,
+        "overlap": 12,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 3,
+        "k2": 7,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 4,
+        "k2": 5,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 4,
+        "k2": 6,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 4,
+        "k2": 7,
+        "overlap": 12,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 5,
+        "k2": 6,
+        "overlap": 12,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 5,
+        "k2": 7,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      },
+      {
+        "k1": 6,
+        "k2": 7,
+        "overlap": 11,
+        "u1": 18,
+        "u2": 18
+      }
+    ]
+  },
+  "auto_mod16": {
+    "M": 16,
+    "edges": 12,
+    "expanding_edges": 8,
+    "expanding_cycles": 3,
+    "examples": [
+      {
+        "ks": [
+          2
+        ],
+        "states": [
+          1,
+          1
+        ],
+        "sample_start": 1
+      },
+      {
+        "ks": [
+          5
+        ],
+        "states": [
+          5,
+          5
+        ],
+        "sample_start": 53
+      },
+      {
+        "ks": [
+          7
+        ],
+        "states": [
+          5,
+          5
+        ],
+        "sample_start": 213
+      }
+    ],
+    "lifted_periodic_k_schedules": [],
+    "lifted_count": 0
+  },
+  "auto_mod32": {
+    "M": 32,
+    "edges": 19,
+    "expanding_edges": 11,
+    "expanding_cycles": 1,
+    "examples": [
+      {
+        "ks": [
+          2
+        ],
+        "states": [
+          1,
+          1
+        ],
+        "sample_start": 1
+      }
+    ],
+    "lifted_periodic_k_schedules": [],
+    "lifted_count": 0
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "blocks": 502,
+  "supercritical_with_odd_image": 105,
+  "notes": [
+    "Odd image moduli make residues mod 2^k surjective (regenerate residues), but imposing the next word constraint still selects an index-2^{L'} sublattice of the parameter line (L-0105 again)."
+  ],
+  "auto_odd_containment_examples": [
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    },
+    {
+      "word": "1",
+      "target_mod": 3,
+      "target_r": 2,
+      "mu": "3/2",
+      "auto_contained": true
+    }
+  ],
+  "constant_mod_3j_examples": [
+    {
+      "word": "1",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "3/2",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "11",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "9/4",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "110",
+      "mod": 3,
+      "constant_residue": 1,
+      "mu": "9/8",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "101",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "9/8",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "011",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "9/8",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "111",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "27/8",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "1110",
+      "mod": 3,
+      "constant_residue": 1,
+      "mu": "27/16",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "1101",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "27/16",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "1011",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "27/16",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "0111",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "27/16",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "1111",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "81/16",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "11110",
+      "mod": 3,
+      "constant_residue": 1,
+      "mu": "81/32",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "11101",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "81/32",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "11011",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "81/32",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    },
+    {
+      "word": "10111",
+      "mod": 3,
+      "constant_residue": 2,
+      "mu": "81/32",
+      "note": "image AP is CONSTANT mod 3^j for j<=a; odd-port auto edge"
+    }
+  ],
+  "interpretation": "Every supercritical block regenerates 2-adic residue coverage in its image AP (odd step), AND simultaneously collapses to a constant class mod 3^j for j<=a. Precision regeneration in the 2-adic direction is real at the residue level, but L-0105 still taxes parameters when the next edge needs a 2-power port. The open constructive move is to stay inside odd-modulus ports long enough to expand height without re-entering 2-power constraints, or to buy more binary digits than each tax consumes.",
+  "walks": {
+    "max_n": 3000,
+    "longest_super_only_walk": {
+      "n0": 2559,
+      "steps": 5,
+      "final": 448928
+    }
+  }
+}

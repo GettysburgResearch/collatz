@@ -1,0 +1,22 @@
+Lmax = 14
+total words = 32766
+affine lift checks = 131064
+supercritical = 6333
+mild supercritical (mu<=1.5) = 2434
+
+smallest log_mu supercritical:
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00001111111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00010111111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00011011111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00011101111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00011110111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00011111011
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00011111101
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00011111110
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00100111111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00101011111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00101101111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00101110111
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00101111011
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00101111101
+  L=11 a=7 mu=2187/2048 log_mu=0.065667 word=00101111110

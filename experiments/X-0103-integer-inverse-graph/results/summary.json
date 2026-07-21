@@ -1,0 +1,33 @@
+{
+  "Lmax": 9,
+  "blocks": 1013,
+  "ports": 1013,
+  "transitions": 0,
+  "expanding_self_loops": 0,
+  "expanding_self_loop_examples": [],
+  "two_cycle_candidates_checked": 0,
+  "two_cycle_hits": 0,
+  "two_cycle_examples": [],
+  "distinct_expanding_two_cycles": 0,
+  "distinct_expanding_two_cycle_examples": [],
+  "periodic_trap_examples": [],
+  "greedy_walks": {
+    "n_max": 5000,
+    "steps": 30,
+    "survivors_with_growth": 0,
+    "best": null
+  },
+  "projective_probe": {
+    "mild_blocks": 103,
+    "alternation_hits": 1,
+    "examples": [
+      {
+        "n0": 743,
+        "word1": "1",
+        "word2": "110",
+        "final": 3577,
+        "growth": 4.814266487213997
+      }
+    ]
+  }
+}
