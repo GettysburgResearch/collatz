@@ -1,0 +1,112 @@
+{
+  "constants": {
+    "delta_log64_81_minus_1": "0.05664166714743768",
+    "kappa_reciprocal": "17.65484757708509"
+  },
+  "experiment_id": "X-9401",
+  "first_difference_valuation": {
+    "distinct_pairs_checked": 4607,
+    "duplicate_presentations": 146,
+    "eventual_code_presentations": 98,
+    "max_first_difference": 5
+  },
+  "illustrative_factor_complexity": {
+    "fibonacci": {
+      "complexity": {
+        "1": 2,
+        "16": 17,
+        "2": 3,
+        "32": 33,
+        "4": 5,
+        "64": 65,
+        "8": 9
+      },
+      "max_profile_ratio": 2.0,
+      "prefix_length": 16384,
+      "prefix_sha256": "98a1b9157aaa0622af34e8cd8bc209e97d6032f7815a62a764d809520f62dbf5"
+    },
+    "period_doubling": {
+      "complexity": {
+        "1": 2,
+        "16": 24,
+        "2": 3,
+        "32": 48,
+        "4": 6,
+        "64": 96,
+        "8": 12
+      },
+      "max_profile_ratio": 2.0,
+      "prefix_length": 16384,
+      "prefix_sha256": "e629d247415048d90d0a4cbb84450972a829c74ff9ae580d9232df513fcb4c0b"
+    },
+    "pseudorandom_seed_9401": {
+      "complexity": {
+        "1": 2,
+        "16": 14437,
+        "2": 4,
+        "32": 16353,
+        "4": 16,
+        "64": 16321,
+        "8": 256
+      },
+      "max_profile_ratio": 902.3125,
+      "prefix_length": 16384,
+      "prefix_sha256": "4bf1c423e8b4a4e558f98edacb06769a5a1e0a475cfbc4f90bb6681717ec100b"
+    },
+    "thue_morse": {
+      "complexity": {
+        "1": 2,
+        "16": 46,
+        "2": 4,
+        "32": 94,
+        "4": 10,
+        "64": 190,
+        "8": 22
+      },
+      "max_profile_ratio": 2.96875,
+      "prefix_length": 16384,
+      "prefix_sha256": "898c99cd4336bf4b0b96bb13cbe0bff40ae48723d1606e0dd224dd6969459d38"
+    }
+  },
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "existence or nonexistence of a nontrivial ordinary survivor",
+      "T-9401 for arbitrary infinite codes",
+      "T-9402 for arbitrary infinite codes",
+      "a directive-to-output complexity transfer theorem"
+    ],
+    "proved_by_finite_computation": [
+      "the frozen finite formula test range",
+      "the frozen finite first-difference sample",
+      "the frozen finite repetition-prefix census"
+    ]
+  },
+  "parameters": {
+    "combinatorial_word_length": 11,
+    "period_max": 6,
+    "prefix_max": 6,
+    "profile_ell": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "profile_length": 16384
+  },
+  "periodic_height": {
+    "cases": 16002,
+    "one_value_representations": 42,
+    "zero_value_representations": 42
+  },
+  "repetition_prefix_combinatorics": {
+    "maximum_shared_prefix": 11,
+    "overlapping_instances": 12606,
+    "repeated_factor_instances": 94206,
+    "word_length": 11,
+    "words_exhausted": 2048
+  },
+  "schema_version": 1
+}
