@@ -1,0 +1,18 @@
+== Lemma A: Markov decomposition (exact) ==
+  (s0, j0, j1) over one full period of 531441 thetas: 531441 distinct tuples of 531441 -- bijection: True
+
+== Lemma B: shifted Riemann sums of |cos| ==
+  max over shifts = 0.636660; bound 2/pi + 1/81 = 0.648965; 2/pi = 0.636620
+
+== Theorem 11: block means of the true partial products ==
+  m=0: exact block mean 0.636660  vs bound 0.648965   (OK)
+  m=1: exact block mean 0.405310  vs bound 0.421156   (OK)
+  m=2: exact block mean 0.258028  vs bound 0.273316   (OK)
+  m=3: sampled block mean 0.164975 (n=40000) vs bound 0.177373   (OK)
+  m=4: sampled block mean 0.104795 (n=40000) vs bound 0.115109   (OK)
+
+== full |S_K|/2^K block means (all K factors, K=16) ==
+  m=0: mean over theta in [1,81] = 0.000619 <= 0.648965: True
+  m=1: mean over theta in [1,6561] = 0.000750 <= 0.421156: True
+
+ALL CHECKS PASS -- Theorem 11 verified

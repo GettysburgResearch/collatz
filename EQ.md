@@ -156,3 +156,46 @@ by T10, no arithmetic structure left to exploit. EQ is thus reduced to
 a structureless large-deviation estimate: the adversary provably cannot
 be arithmetic; it can only be lucky, and the census shows luck runs at
 exactly its fair rate.
+
+## Theorem 11: block-mean exponential decay (`experiments/eq_theorem11.py` — ALL PASS)
+
+**Lemma A (Markov decomposition — proved, verified exactly).** Over any
+full period of `81^{m+1}` consecutive frequencies, the phase data
+`(s₀, j₀, …, j_{m−1})` — where `s_{t+1} ≡ 64s_t (mod 81^{t+1})` and
+`j_t = ⌊s_{t+1}/81^{t+1}⌋` — is **exactly uniform and independent** on
+`(ℤ/81)^{m+1}` (bijection verified over all 531,441 frequencies of a
+period at m = 2). Equivalently the phases follow the Markov chain
+`y_{t+1} = ({64y_t} + j_t)/81` with fresh uniform digits.
+
+**Lemma B (contraction — proved).** Every shifted Riemann sum
+`(1/81)Σ_j |cos(π(j+φ)/81)| ≤ 2/π + 1/81 = 0.64897` (variation bound;
+measured max 0.63666).
+
+**Theorem 11.** For every full `81^{m+1}`-block B inside the survivor
+range: `mean_{θ∈B} |S_K(θ)|/2^K ≤ (2/π + 1/81)^{m+1}` — unconditional
+exponential decay of the block mean. Verified against true phases:
+exact means 0.63666, 0.40531, 0.25803 at m = 0,1,2 — equal to
+`(2/π)^{m+1}` to four digits, so the chain is effectively i.i.d. and
+the bound is essentially sharp.
+
+**Corollary (EQ for almost all frequencies).** By Markov's inequality,
+in every block the fraction of frequencies with
+`|S_K(θ)|/2^K > 0.806^{m+1}` is at most `0.806^{m+1}`: at every scale,
+all but an exponentially small fraction of frequencies have
+exponentially small Fourier coefficient. **EQ holds almost everywhere
+with exponential strength, provably.**
+
+**What this does not give, precisely.** For counting at scale
+`64^{−εK}`, the block at frequency size `81^m` contributes mean·count ≈
+`2^K(81·0.649)^m`, which grows in m: one cosine factor per level cannot
+beat 81 frequencies per level. The missing decay must come from the
+deeper factors (t > m), which over a size-`81^m` block do *not*
+equidistribute — they are individual digit data of the specific small
+frequencies. The residual gap of EQ is therefore exactly: **pointwise
+bounds at the O(1) smallest frequencies of each scale** (e.g. the
+single explicit product `|S_K(1)|/2^K = Π_t|cos(π·17·81^{−(t+1)}
+mod 64^{K−t}/64^{K−t})|`), each equivalent to an individual-orbit digit
+statement — the same irreducible core, now isolated to a finite list
+per scale. The five equivalent masks of that core: smallest survivors ↔
+pointwise small-frequency Fourier ↔ pair separation of R_K ↔ digit
+runs of `81^{−t}`-multiples ↔ 2-adic Z-numbers for 81/64.
