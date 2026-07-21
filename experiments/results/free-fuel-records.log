@@ -1,0 +1,13 @@
+scan n odd <= 2000000: 4 successive records of L*(n)/log2(n)
+        n     L*    ratio   exact check
+        3      3    1.893   3^2 > 2^3: True
+        7      6    2.137   3^4 > 2^6: True
+        9      7    2.208   3^5 > 2^7: True
+       27     63   13.250   3^40 > 2^63: True
+
+reference: n=27 has L* = 63, ratio 13.250
+
+VERDICT: record ratios grow very slowly with the search bound
+(consistent with bounded-constant / random-model behaviour);
+no family with ratio -> infinity, which is what a surviving
+(tower-format) certificate would need to seed.

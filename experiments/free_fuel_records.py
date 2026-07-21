@@ -70,7 +70,7 @@ def main(N=2_000_000):
         print(f"{n:>9}  {L:>5}  {r:7.3f}   3^{A} > 2^{L}: {ok}"
               f"{'  (extends?! investigate)' if ext else ''}")
     print()
-    n27, _ = records[0] if records else (None, None)
+    _ = records[0] if records else None
     L27, _ = horizon(27)
     print(f"reference: n=27 has L* = {L27}, ratio {L27/log2(27):.3f}")
     print()

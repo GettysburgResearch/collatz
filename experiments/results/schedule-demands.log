@@ -1,0 +1,9 @@
+fast demand formula validated
+gap G= 17: demand period 256 = 2^8/gcd(G,2^8) at depth 2
+gap G= 18: demand period 128 = 2^8/gcd(G,2^8) at depth 2
+gap G= 32: demand period   8 = 2^8/gcd(G,2^8) at depth 2
+gap G= 64: demand period   4 = 2^8/gcd(G,2^8) at depth 2
+gap G= 68: demand period  64 = 2^8/gcd(G,2^8) at depth 2
+gap G=256: demand period   1 = 2^8/gcd(G,2^8) at depth 2
+Sturmian: demands aperiodic (no period <= 1500); m_t mod 256 visits 86/256 classes
+ALL CHECKS PASS
