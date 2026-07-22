@@ -1,11 +1,12 @@
 # Q-9413 — Period-ten special-vector irrationality
 
 Claim ID: `Q-9413`  
-Title: Can the native period-ten coefficient vector be excluded more cheaply than full ten-dimensional independence?  
+Title: Can the first native-uncovered fixed-period stack value be excluded by its low-dimensional or combined-moment structure?  
 Status: `IDEA / PRIMARY FIXED-PERIOD TARGET`  
 Authoring agent: `gpt56-complexity-01`  
 Created: 2026-07-22  
-Dependencies: `L-9412`, `L-9413`, `L-9414`, `T-9417`, `R-9406`, `R-9407`  
+Last updated: 2026-07-22  
+Dependencies: `L-9415`, `L-9418`, `T-9422`, `R-9407`, `R-9408`, `R-9410`  
 Scope: primitive positive periodic stack words of minimal period ten
 
 ## Exact starting point
@@ -23,123 +24,175 @@ Theta(m;W^infinity)
  =sum_(j=0)^9 C_j f_R(Z lambda^j).                    (1)
 ```
 
-The ten points are in distinct `R^Z`-orbits.
-
-The Väänänen–Wallisser full-independence condition applies through nine points
-and fails at ten. This does not decide (1), whose coefficient vector is fixed by
-the transfer polynomial.
-
-## Route A — one-phase elimination
-
-Use
+The ten points lie in distinct `R^Z`-orbits. The selected value is also
 
 ```text
-alpha_j=f_R(Z lambda^j), 0<=j<=8,
-beta=f_R(Z lambda^9).
+F_W(X),
+X=T^(9m),
 ```
 
-Extract the dimension-nine quantitative source estimate in the valuation form
+where
 
 ```text
-v_2(a_0+sum_(j=0)^8 a_(j+1)alpha_j)
- <=(omega_9+o(1))log_2 H(a).                          (2)
+F_W(X)=P_W(X)+aX^10F_W(qX).                           (2)
 ```
 
-`L-9413` gives scalar approximants to `beta` with exponent
+The exact source-independent delayed-window family reaches exponent
 
 ```text
-tau=9/log_2(81)=1.419591945535779... .                (3)
+max mu_10^delay
+ =0.994896616714...<1,                                (3)
 ```
 
-By `L-9414`, condition
+and `R-9410` gives the exact uniform ceiling
 
 ```text
-omega_9<tau                                             (4)
+mu_10^delay(alpha)<4997/5000.                         (4)
 ```
 
-would prove full independence after adding `beta`, and in particular
-irrationality of (1).
+Period ten is therefore a small but genuine new-method boundary.
+
+## Closed Route A — published nine-phase measure plus one scalar phase
+
+`L-9414` showed that a nine-phase measure with exponent `omega_9` could be
+combined with the scalar phase exponent
+
+```text
+tau=9/log_2(81)=1.419591945535...                     (5)
+```
+
+only if `omega_9<tau`.
+
+`R-9408` transcribes the actual Väänänen--Wallisser measure:
+
+```text
+omega_9=2318.657271149... .                           (6)
+```
+
+Thus the published full-direction measure cannot bootstrap dimension nine to
+ten. This route is closed, not merely uncomputed.
+
+## Closed Route B — scalar aligned adjacent orders
+
+`R-9407`, using the branch-qualified exact rank formula of PR #34, proves that
+even a zero-cofactor-cost scalar adjacent-order construction has period-ten
+ceiling
+
+```text
+log_81(64)*113/110
+ =0.972205393003...<1.                                (7)
+```
+
+Scalar aligned neighboring orders therefore cannot be the breakthrough.
+
+## Closed Route C — move one equal-phase cancellation window
+
+`L-9418` permits an independent delayed zero window and improves the native
+fixed-period theorem from three to nine. `R-9410` proves (4) for every delay.
+No additional window movement within that root-product architecture reaches
+period ten.
+
+## Live Route 1 — native homogeneous order two
+
+`L-9415` eliminates the polynomial inhomogeneity from (2) and gives
+
+```text
+P_W(qX)F_W(X)
+-[P_W(X)+aX^10P_W(qX)]F_W(qX)
++a q^10 X^10 P_W(X)F_W(q^2X)=0.                       (8)
+```
+
+The function is entire, nonpolynomial, and formally nonrational. Rationality at
+one physical point propagates down its `q`-orbit:
+
+```text
+F_W(x) in Q
+ -> F_W(q^n x) in Q for every n>=0.                   (9)
+```
 
 ### Deliverable
 
-Transcribe the source's exact measure, including all height conventions, into
-(2) and decide (4). Qualitative independence is not enough.
-
-## Route B — the native two-dimensional `q`-difference orbit
-
-Define the scalar periodic-tail function in the starting-height variable:
+Prove, natively or from a fully inspected source theorem,
 
 ```text
-F_W(X)=Theta(m;W^infinity),
-X=T^(9m).
+dim_Q span{F_W(x),F_W(qx)}>=2                         (10)
 ```
 
-`L-9408` gives the first-order skew equation
+for the physical rational point. Equation (9) then makes `F_W(x)` irrational.
+Every source application must explicitly check:
 
 ```text
-F_W(X)
- =P_W(X)+T^e X^10 F_W(lambda X).                      (5)
+- the finite place and |q|_2<1;
+- the rational coefficient polynomials in (8);
+- all singular and nonvanishing conditions along the orbit;
+- the required analytic or formal solution class;
+- the global-height parameter at the archimedean and 2-adic places.
 ```
 
-Equivalently,
+A complex theorem or an abstract mention of `q`-functional equations is not an
+application.
 
-```text
-[1      ]   [1       0       ][1             ]
-[F_W(X)] = [P_W(X) T^e X^10 ][F_W(lambda X)].         (6)
-```
+## Live Route 2 — direct combined-moment Padé
 
-The native target is therefore one value in a two-dimensional homogeneous
-`q`-difference system, despite its ten-phase diagonalization.
-
-### Deliverable
-
-Construct a Padé or determinant theorem directly for (6), or verify a source
-theorem whose hypotheses cover this triangular system. The exact coefficient
-polynomial `P_W` must remain visible.
-
-Matala-aho's work on Diophantine approximation for `q`-functional equations is
-a high-priority source lead, but no black-box application is claimed before its
-full hypotheses are inspected.
-
-## Route C — combined-moment Padé
-
-The block coefficients of (1) are
+The native block coefficients are
 
 ```text
 u_N
- =R^[N(N-1)/2] Z^N P_W(X lambda^N).                   (7)
+ =R^[N(N-1)/2] Z^N P_W(X lambda^N).                   (11)
 ```
 
-A direct scalar Padé system for the sequence `(u_N)` can spend one degree of
-freedom per **combined** coefficient, rather than cancelling ten phases
-separately.
+A direct scalar Padé system for `(u_N)` spends one condition per **combined**
+coefficient rather than cancelling ten phases separately.
 
-The naive exact linear solve has severe height growth, so a useful construction
-must expose structure:
+### Deliverable
+
+Construct a structured denominator whose exact convolution with (11):
+
+1. cancels a linearly growing interval of combined coefficients;
+2. has a proved nonzero first survivor;
+3. has an odd evaluated denominator;
+4. has an exact common denominator or reduced-height bound;
+5. gives limiting exponent greater than one.
+
+The transfer polynomial `P_W` must remain visible. Promising mechanisms are:
 
 ```text
-- a Christoffel or q-orthogonal transform of the pure Tschakaloff moments;
-- symbolic maximal-minor factors;
-- a phase-sensitive Hermite–Padé system;
-- or a Cartier/q-Lucas recurrence with controlled global height.
+- a Christoffel transform of the pure Tschakaloff moment system;
+- a phase-sensitive Hermite--Padé matrix;
+- symbolic maximal-minor or cyclotomic factors;
+- a q-Lucas/Cartier recurrence for the residual moment state;
+- a filtered modular Padé lattice with a proof-producing short affine vector.
 ```
 
-## Route D — period-uniform objective
+## Live Route 3 — completion-height determinant
 
-A fixed period-ten theorem is a milestone, not the end. The balanced
-nonperiodic `17/18` directive is approached by standard words whose lengths grow.
-Every successful construction should report its dependence on period `r` and
-Padé order `n`.
+Combine several shifted values, errors, or nearest-integer/carry states into one
+ordinary integer `N_n` satisfying
 
-The desired endpoint is a lower bound that remains useful as `r->infinity`.
+```text
+v_2(N_n)>log_2|N_n|.                                  (12)
+```
 
-## Closed shortcuts
+The ordinary numerator must be proved nonzero. PR #16's appended block
+coordinate and PR #33's exact cylinder recurrence are possible nonvanishing and
+height interfaces; neither is currently a proof dependency.
 
-- Full-independence import stops at nine (`R-9406`).
-- Unequal phasewise root allocation is closed by `T-9416`.
-- Scalar adjacent-order Casoratians remain below one at period ten even with
-  zero cofactor-height cost (`R-9407`).
-- Cancelling only `O(1)` additional blocks cannot change a quadratic exponent.
+## Period-uniform objective
+
+A fixed period-ten theorem is a milestone, not the final stack result. The
+balanced nonperiodic `17/18` directive is approached by standard words whose
+lengths grow. Every successful construction must report its dependence on
+
+```text
+period r,
+Padé order n,
+transfer-polynomial height,
+first surviving valuation,
+reduced global height.
+```
+
+The desired endpoint is a bound whose constants deteriorate slowly enough to
+survive adjacent standard-word periods tending to infinity.
 
 ## Success criteria
 
@@ -151,15 +204,31 @@ the result through arbitrary finite prefixes.
 ### Construction
 
 If one word instead yields eventual active-cylinder stabilization, reconstruct
-the exact ordinary context, prove positivity at every stage, check the chart
+its exact ordinary context, prove positivity at every stage, check the chart
 class modulo `17`, replay the full Collatz lift, and only then create a
 `K-####` candidate.
 
 ## Falsification criteria
 
-- A source theorem is not applicable until every place and height convention is
-  checked.
+- The published one-phase measure route is already closed by `R-9408`.
+- Delayed equal-phase root products are already closed by `R-9410`.
 - A determinant with no nonvanishing proof is not an approximant.
 - Pre-reduction height is not reduced height.
 - Bounded numerical Padé orders are evidence only.
 - A period-ten theorem alone does not settle the growing S-adic frontier.
+
+## Immediate next experiment
+
+Build the exact combined-moment convolution matrix for representative primitive
+`{17,18}` period-ten words. Before a broad search, compute:
+
+```text
+- symbolic rank and maximal-minor gcds;
+- 2-adic row filtration;
+- 3-adic/archimedean coefficient height;
+- the first affine short-vector obstruction;
+- dependence on cyclic and reversal class.
+```
+
+The first invariant that is uniform across the primitive classes should become
+the next theorem target.
