@@ -15,7 +15,7 @@ def fail(message: str) -> None:
     raise SystemExit(f"LITERATURE WAVE-7 CHECK FAILED: {message}")
 
 
-expected = {f"LIT-KTHM-{n:04d}" for n in range(48, 52)}
+expected = {f"LIT-KTHM-{n:04d}" for n in range(48, 53)}
 found: dict[str, Path] = {}
 for path in sorted(IMPORTS.glob("LIT-KTHM-*.md")):
     match = re.match(r"(LIT-KTHM-\d{4})", path.name)
@@ -75,6 +75,7 @@ markers = {
     "LIT-KTHM-0049": ("all distinct", "infinite sequential", "ABSTRACT STATE", "Nonconsequences"),
     "LIT-KTHM-0050": ("477424", "quotient", "3^[A(B)]", "coherent infinite"),
     "LIT-KTHM-0051": ("233", "792", "0,138", "local minima"),
+    "LIT-KTHM-0052": ("184", "292", "92", "167385996821689"),
 }
 for ident, needles in markers.items():
     text = found[ident].read_text(encoding="utf-8")
