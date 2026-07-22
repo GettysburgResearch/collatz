@@ -11,9 +11,12 @@ Relative to the frozen phase-34 tower identities:
 5. the output residue of `k` uniquely decodes the next tower type;
 6. the complete next counter is a deterministic partial affine quotient;
 7. every legal complement-counter step above `t=3744`, `k=256` at least doubles the counter;
-8. one forever-defined finite state `(t_0,i_0,k_0)` would give an explicit positive unbounded physical Collatz orbit;
-9. compatible completions form a Haar-null, Hausdorff-dimension-zero set;
-10. eventual local type periods at most `58` select irrational completions.
+8. one forever-defined finite state would give an explicit positive unbounded physical Collatz orbit;
+9. the complement basis is unimodular, and the consecutive physical boundary words recover `k` and the toll `b_i` exactly;
+10. the valuation of the single physical integer `n+34` intrinsically recovers the height and type;
+11. compatible completions form a Haar-null, Hausdorff-dimension-zero set;
+12. eventual local type periods at most `58` select irrational completions;
+13. every hypothetical infinite path must introduce infinitely many globally new odd primes into the physical boundary shifts.
 
 ## Remaining assumptions and nonconsequences
 
@@ -33,22 +36,40 @@ For every finite type word there is one exact counter cylinder and infinitely ma
 
 The next type is a six-bit output of `k`, but the next-scale divisibility uses `Theta(t)` additional low bits. A lasso in the type or low-residue projection is not a finite integer orbit unless an exact lift invariant is proved.
 
-### 5. Zero dimension
+### 5. Trusted metadata is no longer an issue
+
+`L-8504` removes any need to trust an externally supplied stage index or type. The valuation
+
+\[
+\nu_2(n+34)=11t+5+i
+\]
+
+recovers both from the physical integer, and the odd boundary word recovers `k`. This strengthens verification but does not prove the recovered state remains legal forever.
+
+### 6. Unimodularity is not closure
+
+The determinant-one matrix exposes the exact top coordinate and the narrow Farey cone. It does not make the next point land in the following unimodular cone. That landing is precisely the unsolved divisibility condition.
+
+### 7. Fresh primes are necessary, not sufficient
+
+`T-8505` excludes every fixed finite prime support and proves infinitely many globally new odd prime divisors. It does not generate those primes at the correct stages or prove that they satisfy the moving binary cylinders. A successful invariant must manufacture their exact arithmetic positions causally.
+
+### 8. Zero dimension
 
 A zero-dimensional compact set may contain isolated ordinary integers. `T-8502` is a pressure diagnosis, not nonexistence.
 
-### 6. Period cutoff
+### 9. Period cutoff
 
 `T-8503` excludes minimal eventual periods through `58`. Failure of the source theorem's numerical hypothesis at `59` neither constructs nor suggests a rational completion.
 
-### 7. Physical positivity
+### 10. Physical positivity
 
 Positivity is conditional only on a forever-defined state with `k_0>=256`. It is not inferred from a `2`-adic completion.
 
-### 8. No preloaded infinite data
+### 11. No preloaded infinite data
 
 The packet initializes no logarithm digits, future type word, or inverse-limit counter. The inverse carry is updated from finite integers. The missing complement quotient must also be finite and explicit.
 
-### 9. No candidate identifier
+### 12. No candidate identifier
 
-No `K-85xx` object exists until one finite tuple is accompanied by an all-time inductive invariant and independent physical replay.
+No `K-85xx` object exists until one finite physical integer is accompanied by an all-time inductive invariant and independent physical replay.
