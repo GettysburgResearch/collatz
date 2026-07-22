@@ -147,21 +147,21 @@ Thus
 tau = 01101001...
 ```
 
-with zero-based indexing. The two symbols at positions `5` and `6` are both zero:
+with zero-based indexing. The two symbols at positions `1` and `2` are both one:
 
 ```text
-tau[5:7] = 00.
+tau[1:3] = 11.
 ```
 
 Applying `mu^m` to this occurrence gives, for every `m>=0`,
 
 \[
 \boxed{
-\tau[5\cdot2^m:6\cdot2^m]
+\tau[2^m:2\cdot2^m]
 =
-\mu^m(0)
+\mu^m(1)
 =
-\tau[6\cdot2^m:7\cdot2^m].
+\tau[2\cdot2^m:3\cdot2^m].
 }
 \tag{11}
 \]
@@ -171,7 +171,7 @@ The repeated factors in `(11)` have
 \[
 \ell_m=2^m,
 \qquad
-t_m=6\cdot2^m.
+t_m=2\cdot2^m.
 \tag{12}
 \]
 
@@ -180,27 +180,25 @@ Therefore
 \[
 \ell_m-\delta t_m
 =
-(1-6\delta)2^m.
+(1-2\delta)2^m.
 \tag{13}
 \]
 
 The coefficient is positive. Indeed,
 
 \[
-6\delta<1
+2\delta<1
 \iff
-\left(\frac{81}{64}\right)^6<64
+\left(\frac{81}{64}\right)^2<64
 \iff
-81^6<64^7.
+81^2<64^3.
 \tag{14}
 \]
 
-The last inequality follows immediately from
+The last inequality is immediate:
 
 \[
-81<128=2^7:
-\qquad
-81^6<2^{42}=64^7.
+81^2=6561<262144=64^3.
 \tag{15}
 \]
 
@@ -208,7 +206,7 @@ Hence `(13)` tends to `+infinity`, and the efficient-recurrence obstruction appl
 
 ## 4. Shift and complement closure
 
-Let `s>=0` be fixed. For sufficiently large `m`, the shifted word
+Let `s>=0` be fixed. For every sufficiently large `m` with `2^m>s`, the shifted word
 
 \[
 \sigma^s\tau
@@ -217,9 +215,9 @@ Let `s>=0` be fixed. For sufficiently large `m`, the shifted word
 contains the same two factors at starts
 
 \[
-r_m=5\cdot2^m-s,
+r_m=2^m-s,
 \qquad
-t_m=6\cdot2^m-s.
+t_m=2\cdot2^m-s.
 \tag{16}
 \]
 
@@ -228,7 +226,7 @@ Then
 \[
 \ell_m-\delta t_m
 =
-(1-6\delta)2^m+\delta s
+(1-2\delta)2^m+\delta s
 \longrightarrow+\infty.
 \tag{17}
 \]
