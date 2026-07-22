@@ -31,6 +31,20 @@ most-significant boundary/length,
 proof hash for the emitted stage word.
 ```
 
+## Newly closed subarchitecture
+
+Live PR #34 `L-9915` proves that finite control plus one **additively updated** counter, observed only through zero and finitely many fixed residues, emits an ultimately periodic word even when the counter has positive drift. Combined with the centered lasso firewall, that restricted architecture cannot close this target.
+
+Therefore a viable `Q-8201` machine must use at least one genuinely unbounded operation or observation outside that theorem, such as:
+
+- exact quotient magnitude or most-significant digit;
+- a modulus changing with the stage base;
+- multiplication/division with exact unbounded remainder;
+- a nonlinear arithmetic update;
+- or more than one independent unbounded register.
+
+This is not permission to preload future digits: the top-boundary operation must remain causal.
+
 ## Promising coupling
 
 PR #3 contains an ordinary quadratic/formal-group bulk generator capable of producing new low bits causally. The exact next experiment should not merely count its bit surplus. It should express the word-pair residue `y_0(v)` as a certified affine or polynomial functional of that bulk and prove the same finite integer supplies the subsequent top boundary.
@@ -45,4 +59,4 @@ A positive result requires:
 - positivity and `k_n>=1`;
 - independent verification.
 
-A `Z_2` limit, modular cycle, finite prefix, or arbitrary future-digit oracle is not a solution.
+A `Z_2` limit, modular cycle, finite prefix, ultimately periodic additive-counter output, or arbitrary future-digit oracle is not a solution.
