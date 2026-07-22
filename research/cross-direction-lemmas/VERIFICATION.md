@@ -262,13 +262,19 @@ received nonauthoring cold review and remain `PROPOSED`.
 | Local `T-9817`, `T-9820`; frozen corrected `PR3` connector algebra | `T-9825` applies exact LTE to the four stabilized schedule factors, extends the fixed affine `J/Z` chart through `m-6` bits, identifies its parity-controlled first boundary bit, and bounds high cancellation to at most one third-symbol lane. | The code is same-scale and grows only linearly while the room quotient samples an exponentially moving top window; no cap transition or room avoidance follows. |
 | Local `T-9821` combined-moment minors and evaluated error | `T-9826` derives checkerboard Cramer signs, one-signed real error coefficients, and the exact ladder `v_2(R_m-R_n)=E_n` for all `m>n`. | Pairwise nonproportionality is automatic, but the distance-height consequence is a lower bound; the required quadratic primitive-height upper bound remains open. |
 | Local `T-9823`, `L-9801`; `PR35` only for the physical `4 -> 5` specialization | `T-9827` extracts one positive odd carry per maximal run, proves exact dyadic and odd-place zipper laws, reconstructs every compatible positive chain, and gives nested initial-carry blocks with an eventual-zero ordinary-realization criterion. | Stabilization is characterized, not proved or disproved.  The theorem neither constructs nor excludes a positive chart survivor. |
+| Frozen `PR33/L-9701`--`L-9706`, `T-9703`--`T-9705` at `c9d62bc`; frozen `PR3/L-0028`, `T-0027` at `f274dfe`; Evertse 1984 Corollary 1 | `T-9828` independently reconstructs signed quotient extinction, connector endpoint heights, primitive normalization, outside-`{2,3}` content, nondegeneracy, projective separation, and the exact primary-source theorem map. | The closure is source-qualified: the corrected tower and physical-overlap identities retain their native `PROPOSED` status, and the signed all-integer extension specifically requires `PR3/L-0028`. |
+| Local `T-9827`; elementary geometric rationalization and one-sided Morse--Hedlund | `T-9829` proves that an eventually periodic run tail forces a rational carry of the wrong sign or magnitude below one, then transfers aperiodicity to both phase and run-length words with `p(n)>=n+1`. | Aperiodic automatic, morphic, Sturmian, and arbitrary schedules remain open; the real and 2-adic sparse sums are identified only after periodicity gives one rational expression. |
+| Local `T-9827`, `T-9829`; Luca--Ouaknine--Worrell Theorem 2; Bugeaud--Laurent; Ooto; Lopez--Stoll | `R-9810` telescopes a mechanical run tail, splits its real shadow into two reciprocal Beatty series with offsets differing by half the irrational rotation, and maps the normalized real value `c+S` to the complex Hecke--Mahler theorem. | The carry uses the separate `Q_2` limit. Ooto's canonical-digit and unweighted sparse-Beatty theorems do not match the signed varying-unit series, and the exact `2 -> 3` example shows completion equality can fail. Sturmian run exclusion remains open. |
+| Local `L-9901`, `T-9805`; Evertse--Schlickewei--Schmidt Theorem 1.1 | `L-9902` states the characteristic-zero hypothesis, sums the quantitative solution capacity over fixed coefficient/common-group classes, and gives one primitive, nondegenerate `{2}`-unit tuple in every increasing coordinate count. | Fixed endpoint support, zero endpoint exponent, bounded or subpower gcd, and point separation do not replace a fixed equation dimension; a contradiction must overfill one term-count bin. |
+| Local `T-9821`, `T-9824`, `T-9826`; frozen `PR20/L-9408`, `L-9410`, `Q-9413` at `14f06d2` | `T-9830` homogenizes the positive Schur quotients, isolates exact prime-to-six Cramer cores, proves real convergence of the evaluated pair, and derives exact 2- and 3-adic distance ladders. | The raw pair is cubic. Quadratic primitive height is equivalent to an almost-total cubic gcd at primes at least five; no lower or upper bound of that size is proved, and lacunary subsequences are not excluded by the adjacent-order floor. |
 
 Live-source reconciliation after this table found `PR3/T-0039` compatible
 with the moving-high-window boundary of `T-9825`; `PR20/R-9410` and `T-9422`
 close a different delayed Pade family only through period nine; and
 `PR35/T-8809` independently recovers the earlier two-symbol support floors.
-The proposed global exclusion in live `PR33/T-9705` uses a separate
-connector-free Evertse proof chain and is not imported or promoted here.
+The proposed global exclusion in live `PR33/T-9705` is now independently
+reconstructed in source-qualified `T-9828`; its frozen physical interfaces are
+not promoted beyond their native status.
 
 ## New-claim audit matrix
 
@@ -331,6 +337,11 @@ connector-free Evertse proof chain and is not imported or promoted here.
 | `T-9825` | cap low-bit lane, integrating reviewer, and independent period/completion reviewers | all four LTE endpoints, sharp product defect, connector precision, affine inverse, boundary-bit sign, lane multiplicities, the live top-twelve crosswalk, and 4096-block universal-fiber count were reconstructed | the growing chart does not transport either coordinate across scales or force branching of the distinguished source |
 | `T-9826` | period-ten lane, integrating reviewer, and independent cap/completion reviewers | Cramer replacement signs, bordered determinant parity, separation of real and 2-adic limits, exact radius increment, ultrametric equality, and rational-height consequence were reconstructed | nonproportionality is no substitute for the missing primitive-height upper bound |
 | `T-9827` | completion/run-carry lane, integrating reviewer, independent formula auditor, and period/cap reviewers | maximal-run indexing, zipper signs, first odd-prime exception, converse reconstruction, composed cylinder, nesting, stabilization equivalence, mixed-radix block formula, and `4/5` specialization were reconstructed | eventual zero blocks remain an exact criterion rather than an established outcome |
+| `T-9828`, `L-9900`, `L-9901` | cap/connector lane, primary-source lane, signed-completion lane, and integrating reviewer | Evertse pp. 226--228, all-integer source scope, cap/co-cap signs, endpoint exponents, gcd cap 216, fixed `c=1`, proper subsums, 258-coordinate indexing, valuation separator, bounded/subpower normalization, the sharp `Theta<d(1-gamma)` gate, and its boundary family were independently reconstructed | the conclusion is conditional on the frozen corrected-stage and physical-overlap identities; the abstract lemmas still require fixed rank, nondegeneracy, and normalized endpoint exponent below one |
+| `T-9829` | completion/run-carry lane, integrating reviewer, and independent cap cold reviewer | arbitrary-tail carry formula, even period selection, simultaneous real/2-adic rationalization, strict alternating bound, preperiod caveat, phase/run periodicity equivalence, and both Morse--Hedlund floors were reconstructed | no argument yet treats genuinely aperiodic low-complexity schedules |
+| `R-9810` | completion/Sturmian lane, integrating reviewer, and primary-source audit | mechanical telescoping, even/odd Beatty split, offset-lattice separation, archimedean theorem mapping, p-adic digit-scope mismatch, and the exact `2 -> 3` cross-place example were reconstructed | no audited source proves irrationality of the `Q_2` Beatty-series value; the desired Sturmian exclusion remains open |
+| `L-9902` | cap/arithmetic lane, integrating reviewer, and independent period cold reviewer | ESS characteristic-zero scope, capacity summation, common-group qualification, the one-positive growing-dimension tuple, its rank-one normalization, and bounded/subpower-gcd variants were checked | the lemma is a scope boundary, not a global quantitative theorem; only multiplicity within a fixed term-count bin can contradict ESS |
+| `T-9830` | period-ten lane, integrating reviewer, and independent cap cold reviewer | Schur endpoint selectors, homogeneous prime-to-six cores, Cramer exponents, evaluated integrality and endpoint valuations, real convergence, raw cubic height, gcd equivalence, and both distance ladders were reconstructed | the outside-prime cubic gcd remains entirely open; the height floor controls consecutive or nonlacunary orders, not arbitrary sparse subsequences |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -769,6 +780,72 @@ divisibility from maximal-run parity: level `N` need not make `q_N` odd, while
 membership at level `N+1` does.  The example `U=4,V=5,ell_0=ell_1=1` with
 `q_0=1` versus `q_0=5 mod4` checks the distinction.
 
+For `T-9828`, the source PDF was inspected at original resolution.  Evertse's
+page 227 Corollary 1 has exactly the primitive integer zero-sum and
+outside-prime product used here, with `n=257`, `c=1`, `d=1/50`, and
+`S_0={2,3}`; page 228 confirms the two primitive representatives per rational
+projective point.  Independently, the endpoint height was rebuilt as
+`2827/256+161341/10496=1083/41`, giving current and next ratios
+`2166/346819` and `4332/346819`.  Their sum is strictly below `1/50`.
+Reviewers separately checked the one-positive proper-subsum argument, gcd cap
+216, norm loss, and disjoint intervals `[E_m-3,E_m+3]`.  Primitive-height
+divergence already supplies infinitely many projective points; the intervals
+are a stronger explicit certificate.  The negative quotient
+branch was traced to frozen `PR3/L-0028` because `T-0027` alone states only the
+nonnegative canonical domain.  `L-9900` then abstracts these exact gates into
+a fixed-rank moving-endpoint lemma.  `L-9901` allows an unbounded gcd with
+exponent `gamma`: the exact marginal gate is `Theta<d(1-gamma)`, and the
+three-coordinate family `(GN,-G(N-1),-G)` proves the strict boundary
+`Theta=1-gamma` cannot be admitted from marginal data alone.
+
+For `T-9829`, composition from an arbitrary run index recovered the shifted
+carry series.  An eventually periodic length tail was doubled when necessary
+to synchronize the alternating signs, turning the series at both places into
+`B/(1-r^L)`.  Its real alternating value has sign `sigma_K` and magnitude
+below one, so the carry has sign `-sigma_K` and magnitude below
+`V^(-ell_K)`.  Review deliberately takes the contradiction at the first tail
+carry: affine backward propagation through a preperiod can cancel a rational
+denominator.  Periodic switch indicators then prove equivalence of ultimate
+phase periodicity and eventual run periodicity, and the one-sided
+Morse--Hedlund argument supplies both `n+1` complexity floors.
+
+For `R-9810`, the mechanical length telescope gives
+`S_j=hj+floor(j alpha+beta)`.  Splitting the alternating real shadow at even
+and odd indices produces reciprocal Beatty offsets `beta` and
+`gamma=h+alpha+beta` at rotation `theta=2(h+alpha)`, with
+`gamma-beta=theta/2` outside `Z theta+Z`.  Luca--Ouaknine--Worrell therefore
+proves transcendence of the real value after finite offset normalization.
+After integer and zero-offset normalization the exact theorem input is
+`c+S(b,theta,A,v)`, with algebraic `c,v`, rather than weights fixed at
+`(1,-1)`.  Review separately checked that this says nothing about the `Q_2`
+carry.  In
+the exact `2 -> 3` chart with `M_0=2`, the same rational partial sums converge
+to `6` in `Q_2` but to a real number in `[0,3]`.  Ooto's relevant theorems
+start either from canonical nonperiodic digit words or from unweighted sparse
+Beatty sums; neither covers the alternating terms with varying units
+`V^(-S_j)`.
+
+For `L-9902`, the quantitative ESS theorem was replayed only in
+characteristic zero and after freezing dimension, coefficients, and one
+common multiplicative group.  The tuple
+`(2^(n-1),-1,-2,...,-2^(n-2),-1)` has one positive coordinate, gcd one,
+outside-`{2}` endpoint budget one, and unbounded height, but supplies only one
+solution at each new dimension.  Its normalized vector belongs to a rank-one
+cyclic group separately for each `n`; this is far below the fixed-`n` ESS
+capacity and cannot be summed into a contradiction.  The characteristic-zero
+hypothesis is essential: Frobenius gives infinitely many rank-one solutions
+over `F_p(t)`.
+
+For `T-9830`, positive Schur expansions were homogenized at `64/81`; the
+constant and leading coefficients make every core `G_(n,k)` prime to six.
+The common clearing factor gives integral evaluated pairs with gcd also prime
+to six, while `A_n(1)->H_infinity>0` and `B_n(1)->1` prevent additive size
+collapse.  Consequently the raw cubic height can become quadratic only
+through an almost-total cubic gcd at primes at least five.  Independent
+distance calculations recover both the earlier exact 2-adic radius and the
+new 3-adic ladder; the resulting half-error floor is deliberately restricted
+to consecutive or asymptotically adjacent orders.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -860,6 +937,23 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `T-9827` does not turn full finite run compatibility into an ordinary
   survivor.  It identifies eventual zero carry blocks as the exact missing
   condition without proving that they occur or fail.
+- `T-9828` does not independently prove the frozen PR #3 tower and physical-
+  overlap interfaces.  It validates the signed arithmetic and Evertse closure
+  conditional on those exact source identities.
+- `T-9829` excludes ultimately periodic phase and run schedules, not all
+  automatic, morphic, bounded-aperiodic, or low-complexity schedules.
+- `L-9900`--`L-9901` require a fixed coordinate count and nondegenerate zero
+  sums.  Their endpoint-budget inequalities do not apply to growing-term-count
+  equations or families with proper vanishing subsums.
+- `R-9810` does not exclude Sturmian maximal-run schedules.  It proves only
+  that the available real Hecke--Mahler transcendence theorem cannot be
+  transferred to the required 2-adic carry value.
+- `L-9902` does not give a growing-term-count ESS exclusion; it shows exactly
+  why one tuple in each new dimension evades every fixed-term-count capacity
+  bound.
+- `T-9830` does not prove period-ten irrationality or a quadratic primitive-
+  height bound.  It isolates the missing almost-total cubic gcd at primes at
+  least five and a nonlacunary height floor.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -1351,3 +1445,33 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     carry to be positive and odd, and retain `v_p(q_0)` in the first
     odd-place identity.  Recompose the cylinder and block formula before
     applying `L-9801`; stabilization is a criterion, not a conclusion.
+71. For `T-9828`, `L-9900`, and `L-9901`, read Evertse's original Corollary 1, keep
+    `n=257` distinct from 258 coordinates, cite `PR3/L-0028` for signed
+    all-integer domains, derive both endpoint exponents before adding them,
+    absorb normalization into primitive height, and prove infinitely many
+    primitive points.  For unbounded gcd exponent `gamma`, verify the factor
+    `1-gamma`, the joint invariant `Xi`, and the strict boundary example.  Do
+    not promote the frozen physical source identities.
+72. For `T-9829`, shift the carry formula to the first periodic-tail run,
+    double an odd run period to synchronize signs, and identify real and
+    2-adic values only through the resulting rational geometric expression.
+    Do not propagate nonintegrality backwards across the preperiod.  For the
+    complexity corollary, move periodic phase tails to a complete run boundary
+    before comparing switch gaps.
+73. For `R-9810`, telescope mechanical lengths before splitting even and odd
+    terms.  Normalize both Beatty offsets without losing their distinction
+    modulo `Z theta+Z`, and apply Luca--Ouaknine--Worrell only to the real
+    value.  Check the exact `2 -> 3` completion counterexample and do not treat
+    Ooto's canonical-digit theorem as a theorem about exponent gaps.
+74. For `L-9902`, freeze the coordinate count, coefficient vector, and one
+    common multiplicative group over a characteristic-zero field before
+    applying ESS.  Recount the growing-
+    dimension tuple, verify one-positive nondegeneracy and rank-one normalized
+    membership, and do not sum separate finite bounds over infinitely many
+    dimensions.
+75. For `T-9830`, rederive both Schur endpoint degrees, the homogeneous
+    prime-to-six cores, all Cramer exponents, the evaluated integrality and
+    endpoint valuations, and the real convergence bounds.  Distinguish raw
+    cubic height from reduced height, require any cubic cancellation at primes
+    at least five, and apply the two-place distance floor only to consecutive
+    or nonlacunary orders.

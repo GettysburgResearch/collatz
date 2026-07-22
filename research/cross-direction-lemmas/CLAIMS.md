@@ -111,6 +111,9 @@ repository review.
 | R-9806 | Refutation | Delayed one-hot events leave a positive-dimensional formal exceptional Cantor set despite a power-saving ordinary count | PROPOSED | L-9826, L-9883, L-9885, L-9896 |
 | R-9807 | Refutation | The summed native Pade vector has no staggered scalar-allocation gain; equal allocation is uniquely optimal | PROPOSED | PR20/L-9408, L-9411, T-9416 |
 | L-9899 | Lemma | Positive solution-cone extreme rays are rational only for the full positive component and otherwise have a natural boundary | PROPOSED | Issue #24/T-9702; L-9823; Polya--Carlson; elementary reconstruction |
+| L-9900 | Lemma | A subunit outside-prime budget on two moving endpoints forbids an infinite fixed-rank family of nondegenerate zero sums | PROPOSED | Evertse 1984 Corollary 1; T-9828 as exact specialization |
+| L-9901 | Lemma | Fixed-rank zero sums remain Evertse-finite under multiple moving endpoints and subcritical primitive-height loss | PROPOSED | L-9900; Evertse 1984 Corollary 1 |
+| L-9902 | Lemma | Quantitative S-unit capacity is term-count-binned and cannot exclude one nondegenerate tuple at each increasing coordinate count | PROPOSED | L-9901, T-9805; Evertse--Schlickewei--Schmidt Theorem 1.1 |
 | T-9801 | Theorem | Every ordinary binary-chart itinerary has an explicit linear factor-complexity floor, giving a finite certificate for critical equality languages | PROPOSED | elementary binary-chart recurrence; PR16/T-9315 only for the conditional centered crosswalk; live overlap PR16/T-9318 and PR35/T-8803 |
 | T-9802 | Theorem | The final tower symbol translates every stabilized head correction by one of four fixed sixty-fourth-modulus offsets | PROPOSED | L-9821, L-9898; frozen PR3/T-0027, L-0016, L-0017 |
 | T-9803 | Theorem | Adjacent two-hot lifts have an exact correlation law, and libraries of at most 62 fixed templates cannot cover every formal exposure phase | PROPOSED | L-9826, L-9883, L-9885, L-9896, R-9806 |
@@ -125,6 +128,7 @@ repository review.
 | T-9811 | Theorem | Ridout's exact three-place theorem forces every hypothetical fixed corrected-stage room to be transcendental | PROPOSED / SOURCE-QUALIFIED CONDITIONAL CONSEQUENCE | PR3/O-0011, L-0032, T-0033; Ridout's theorem |
 | T-9812 | Theorem | The native periodic stack function has formal two-shift rank two and an exact nonzero physical q-Casoratian | PROPOSED | PR20/L-9408, L-9415 |
 | R-9809 | Refutation | Denominator descent does not identify rational 2-adic tails with their bounded positive real shadows | PROPOSED / SOURCE-CONFIRMED PROOF-CHAIN REFUTATION | historical PR20/L-9416, L-9417, T-9418--T-9421; live PR20/R-9409 |
+| R-9810 | Refutation | Archimedean Hecke--Mahler transcendence does not determine the 2-adic Sturmian maximal-run carry | PROPOSED / SOURCE-CONFIRMED METHOD BOUNDARY | T-9827, T-9829; Luca--Ouaknine--Worrell Theorem 2; Bugeaud--Laurent; Ooto; Lopez--Stoll |
 | T-9813 | Theorem | Three-symbol room addresses are exact quotients of cap-head cells, and eventual rooms inject into a computable coarse-cell survivor set | PROPOSED | T-9806, T-9809, L-9821; PR3/L-0031; PR33/L-9702 |
 | T-9814 | Theorem | Adjacent corrected stages have path-incidence endpoint rank, while composition removes every internal boundary | PROPOSED | T-9805, T-9810; PR3/L-0031, L-0032, T-0032 |
 | T-9815 | Theorem | Every period-one stack tail and its first q-shift are Q-linearly independent with an explicit 2-adic measure | PROPOSED | T-9812; PR20/L-9408, L-9415; Amou--Matala-aho--Vaananen Theorem 5.1 |
@@ -140,5 +144,8 @@ repository review.
 | T-9825 | Theorem | The cap base-cell and connector-word chart freezes one low bit per scale, with an exact parity boundary and one-lane high-cancellation ceiling | PROPOSED | T-9817, T-9820; corrected PR3 connector algebra |
 | T-9826 | Theorem | Canonical combined-moment Pade approximants have checkerboard signs, one-signed real errors, and exact pairwise 2-adic distances | PROPOSED | T-9821 |
 | T-9827 | Theorem | Maximal binary-chart runs transport one positive odd carry through exact dyadic and odd-place cylinders, with ordinary realization equivalent to block stabilization | PROPOSED | T-9823, L-9801; PR35 for the 4/5 specialization |
+| T-9828 | Theorem | The frozen corrected 256-stage interface excludes every signed ordinary completion by a source-audited Evertse argument | PROPOSED / SOURCE-QUALIFIED CONDITIONAL RECONSTRUCTION | frozen PR33/L-9701--L-9706, T-9703--T-9705; frozen PR3/L-0028, T-0027; Evertse 1984 Corollary 1 |
+| T-9829 | Theorem | Every eventually periodic maximal-run schedule forces an impossible rational tail carry, and both symbolic words have complexity at least `n+1` | PROPOSED | T-9827; T-9823 for coding setup; one-sided Morse--Hedlund |
+| T-9830 | Theorem | Combined-moment Pade minors retain a cubic prime-to-six core, and quadratic primitive height is exactly an almost-total outside-prime gcd problem | PROPOSED | T-9821, T-9824, T-9826; frozen PR20/L-9408, L-9410, Q-9413 |
 
 No `K-####` candidate is proposed.

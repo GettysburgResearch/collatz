@@ -156,6 +156,9 @@ dependency.
 | [`R-9806`](claims/R-9806-survivor-one-hot-exceptional-cantor-set.md) | PR #16 global survivor order | The formal all-delay avoiding set is a positive-dimensional Haar-null Cantor set, while ordinary depths with fewer than `s` delayed competitors obey a power-saving count. |
 | [`R-9807`](claims/R-9807-pade-special-vector-allocation-ceiling.md) | PR #20 period-ten frontier | The summed native vector has exactly the minimum allocated zero window; its exact scalar-allocation functional is uniquely maximized by equal allocation and remains subcritical at period ten. |
 | [`L-9899`](claims/L-9899-solution-cone-natural-boundary-rays.md) | Issue #24 solution cone | Extreme rays are component indicators; every proper positive ray has a natural boundary, so continuation of the distinguished ray through one arc is equivalent to Collatz. |
+| [`L-9900`](claims/L-9900-two-endpoint-evertse-budget.md) | Reusable fixed-rank arithmetic bridge | Any fixed-rank nondegenerate zero-sum family with fixed internal prime support, bounded primitive loss, growing raw height, and total moving-endpoint exponent below one is finite by Evertse. |
+| [`L-9901`](claims/L-9901-multi-endpoint-subpower-evertse-budget.md) | General moving-endpoint arithmetic bridge | With gcd exponent `gamma` and total endpoint exponent `Theta`, the sharp marginal Evertse gate is `Theta<d(1-gamma)`, or `Theta<1-gamma` for some `d<1`; an explicit boundary family proves strictness. |
+| [`L-9902`](claims/L-9902-rank-binned-ess-capacity.md) | Quantitative S-unit scope boundary | ESS capacity must be summed within characteristic-zero, fixed-dimension, fixed-coefficient, common-group bins; a primitive one-positive `{2}`-unit family with one tuple in every increasing dimension shows that perfect endpoint budgets do not replace fixed term count. |
 | [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16/PR #20/PR #35 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; live PR #16 and PR #35 now independently recover its principal specializations, while its finite certificate excludes entire low-complexity equality subshifts. |
 | [`T-9802`](claims/T-9802-cap-head-final-symbol-rigidity.md) | PR #33/PR #3 cap-chain bridge | The fourth head symbol only translates the correction by cells `(0,3,53,1)Q/64`; at least 192 of 256 words are uniformly large, and every late hypothetical cap chain has at most 64 cusp-admissible head words. |
 | [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
@@ -170,6 +173,7 @@ dependency.
 | [`T-9811`](claims/T-9811-fixed-room-rational-or-transcendental.md) | PR #3 fixed-room/Ridout bridge | The native real, binary, and ternary approximation factors match Ridout's projective theorem with targets `(C,0,infinity)` exactly, so every hypothetical fixed corrected-stage room is transcendental. |
 | [`T-9812`](claims/T-9812-native-order-two-casoratian.md) | PR #20 native q-difference frontier | The periodic stack solution and its first q-shift are independent over `Q(X)`; their solution Casoratian is positive over the reals and has exact physical valuation `54(m+d_1)+6` at `2`. |
 | [`R-9809`](claims/R-9809-cross-completion-denominator-descent.md) | PR #20 denominator-descent audit | Refutes the historical proof bridge in `T-9418`--`T-9421`: fixed denominators belong to rational 2-adic tails, while compact positivity bounds belong to separate real shadows; live PR #20 now independently confirms the mismatch and withdraws the affected claims. |
+| [`R-9810`](claims/R-9810-sturmian-hecke-mahler-cross-place-gap.md) | PR #35/Sturmian carry audit | The mechanical maximal-run carry is a 2-adic difference of reciprocal Beatty series. Its real shadow is transcendental by Hecke--Mahler theory, but exact chart examples show the two completion limits can differ; the missing input is genuinely p-adic Beatty-series irrationality. |
 | [`T-9813`](claims/T-9813-room-address-cap-cell-alignment.md) | PR #3/PR #33 room-cap bridge | The three-symbol room address is exactly the cap-head correction modulo its coarse width; the realized fourth-symbol cells form four-element fibers, and eventual rooms inject into an explicit survivor set of liminf size at most 64. |
 | [`T-9814`](claims/T-9814-overlap-incidence-rank.md) | PR #3 adjacent-stage S-unit frontier | Retained stages have path-incidence endpoint rank `<=1+(h+1)s`; composing them removes internal boundaries and leaves exact fresh-prime ambient rank `2f+1`, independent of block length. |
 | [`T-9815`](claims/T-9815-period-one-padic-linear-independence-measure.md) | PR #20 native q-difference frontier | A sourced finite-place theorem makes every period-one pair `F(x),F(qx)` Q-linearly independent with explicit exponent `96.8590845...`; exact source inequalities show why the audited criteria stop at longer periods. |
@@ -185,6 +189,9 @@ dependency.
 | [`T-9825`](claims/T-9825-growing-cap-lowbit-affine-code.md) | PR #3/PR #33 cap low-bit frontier | The fixed affine `J/Z` chart grows from six bits to `m-6` bits, its first omitted bit is exactly the base-cell parity, and at most one third-symbol lane can cancel three or more Newton-carry bits. |
 | [`T-9826`](claims/T-9826-canonical-pade-ultrametric-ladder.md) | PR #20 canonical combined-moment frontier | Denominator coefficients have checkerboard sign, real errors are one-signed, and the canonical rational approximants have exact pairwise 2-adic distances, making nonproportionality automatic. |
 | [`T-9827`](claims/T-9827-maximal-run-odd-carry-zipper.md) | PR #35/general binary-chart one-root frontier | Maximal runs transport one positive odd carry through exact dyadic and odd-place zipper laws; nested carry blocks stabilize exactly when one ordinary root realizes the infinite schedule. |
+| [`T-9828`](claims/T-9828-evertse-stage-closure-audit.md) | PR #33 corrected-stage closure | A primary-source and native-arithmetic reconstruction verifies the fixed-rank Evertse contradiction, including signed co-caps, endpoint height, primitive normalization, nondegeneracy, and projective separation. |
+| [`T-9829`](claims/T-9829-eventually-periodic-run-exclusion.md) | PR #35/general binary-chart low-complexity frontier | Every eventually periodic maximal-run schedule rationalizes the two-place carry series; the forced tail carry is impossible, and both the phase and run words obey `p(n)>=n+1`. |
+| [`T-9830`](claims/T-9830-pade-outside-prime-cubic-gcd.md) | PR #20 period-ten height frontier | Positive Schur quotients leave a cubic prime-to-six specialization core; after evaluation, quadratic primitive height is equivalent to an almost-total cubic gcd supported at primes at least five, while exact 2- and 3-adic distance ladders impose a consecutive-order height floor. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -399,6 +406,13 @@ independently reconstructed and which conjectural boundaries remain open.
    a positive Schur sum whose principal specialization still has cubic
    two-place height.  Thus the required saving must be further content shared
    across Cramer minors; the obvious alternant factor cannot provide it.
+   `T-9830` now homogenizes every maximal Cramer minor at `T=64/81`.  The
+   resulting positive integers `G_(n,k)` are prime to six and have cubic raw
+   size.  For the evaluated Pade pair, quadratic primitive height is therefore
+   equivalent to an almost-total cubic gcd supported only at primes at least
+   five.  Exact pairwise `2`- and `3`-adic distance laws additionally force at
+   least one of each two consecutive approximants above the half-error height
+   floor.  No such outside-prime gcd is yet proved or refuted.
    `T-9826` closes a separate auxiliary clause: the canonical approximants
    have exact pairwise distances `v_2(R_m-R_n)=E_n`, so their projective pairs
    are automatically nonproportional.  The quadratic global-height bound is
@@ -439,7 +453,18 @@ independently reconstructed and which conjectural boundaries remain open.
    `18.1502565060...`.  `T-9827` now extracts the missing one-root state at
    maximal runs: positive odd carries obey an exact two-place zipper, and its
    nested initial-carry blocks stabilize exactly when one ordinary root
-   realizes the full infinite schedule.
+   realizes the full infinite schedule.  `T-9829` closes the first infinite
+   low-complexity family: an eventually periodic run tail turns that carry
+   series into the same rational geometric value at the real and 2-adic
+   places, where its alternating real size is strictly below one.  Every
+   positive ordinary survivor must therefore have a genuinely aperiodic
+   maximal-run schedule.  `R-9810` audits the next natural Sturmian attack:
+   the mechanical carry splits into two reciprocal Beatty series whose real
+   value is transcendental, but the required carry is their separate 2-adic
+   limit.  An exact `2 -> 3` chart identity produces 2-adic value `6` from
+   rational partial sums whose real limit is at most `3`, so archimedean
+   Hecke--Mahler theory cannot cross this gap.  The missing input is a p-adic
+   Beatty--Hecke--Mahler irrationality theorem.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
@@ -468,6 +493,26 @@ independently reconstructed and which conjectural boundaries remain open.
    from six bits to `m-6` bits, identifies its parity-controlled boundary bit,
    and proves at most one lane can cancel three or more carry bits.  The
    remaining target is still a distinguished cross-scale law for `Z_m`.
+   Separately, `T-9828` independently reconstructs live `PR33/T-9705` at its
+   frozen head and audits Evertse's original Corollary 1.  The signed
+   cap/co-cap dichotomy, exact endpoint exponents, primitive gcd cap 216,
+   combined outside-`{2,3}` ratio `6498/346819<1/50`, proper-subsum signs, and
+   projective separation all pass.  The closure is source-qualified: its
+   all-integer signed domain comes from frozen `PR3/L-0028`, while the physical
+   tower and overlap identities retain their native `PROPOSED` status.
+   `L-9900` extracts the reusable bounded-gcd theorem.  `L-9901` allows any
+   fixed number of moving endpoints and an unbounded normalization gcd: if
+   `gamma` is its raw-height exponent and `Theta` is the combined endpoint
+   exponent, the sharp marginal gate is `Theta<d(1-gamma)`, or
+   `Theta<1-gamma` for some Evertse `d<1`.  Primitive-height divergence itself
+   guarantees infinitely many projective points; a valuation ratio is only a
+   stronger audit certificate.  `L-9902` records the exact fixed-term-count
+   boundary: quantitative ESS bounds must be applied within a common
+   characteristic-zero, fixed-dimension, fixed-coefficient multiplicative
+   group.  One primitive
+   nondegenerate `{2}`-unit tuple in every growing dimension survives even
+   with endpoint exponent and gcd exponent both zero.  `T-9828` is the exact
+   bounded-gcd, 256-internal-coordinate specialization.
    Finally, `T-9811` shows that every
    surviving hypothetical room must be transcendental.  The constants are
    structural, not computational.
