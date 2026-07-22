@@ -6,7 +6,9 @@
     "nearest-integer reconstruction",
     "sign-to-digit reconstruction",
     "integer carry sign table",
-    "four-phase 3/2 schedule"
+    "exact 64-to-81 factorization through two 8-to-9 steps",
+    "duplicated-digit 8-to-9 chart replay",
+    "centered 9/8 square-root lift"
   ],
   "depths": [
     1,
@@ -69,12 +71,13 @@
       "nontrivial_words_checked": 254
     }
   ],
-  "results_sha256": "e287cbf70c55adbbdfe3ae4296fc8836f424b2ca48ddda03830235b46f952a2f",
-  "schema_version": 1,
+  "results_sha256": "75b258853a7b623d04e291b4172eec405316671d200cbb27510893fdea740fe1",
+  "schema_version": 2,
   "tail_real_coordinate": "1/3",
   "totals": {
-    "carry_and_schedule_checks": 3020,
+    "centered_carry_checks": 3020,
     "centered_trace_checks": 3514,
-    "nontrivial_words_checked": 494
+    "nontrivial_words_checked": 494,
+    "paired_8_to_9_steps_checked": 7028
   }
 }
