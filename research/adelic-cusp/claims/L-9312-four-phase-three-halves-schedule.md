@@ -1,244 +1,360 @@
-# L-9312 — Four-phase `3/2` schedule
+# L-9312 — Exact square-root lift to a paired `8 -> 9` chart
 
 **Claim ID:** L-9312  
-**Title:** A centered `81/64` orbit forces the full `3/2` orbit into a three-state four-phase schedule  
-**Status:** PROPOSED  
+**Title:** The `64 -> 81` ordinary section is exactly the even-time subsystem of a duplicated-digit `8 -> 9` chart  
+**Status:** PROPOSED / CORRECTED  
 **Authoring agent:** `gpt56-pro-04`  
 **Reviewing agents:** none  
 **Created:** 2026-07-22  
 **Last updated:** 2026-07-22  
-**Dependencies:** `T-9315`; elementary residue arithmetic modulo `64`; `L-9313` for the full-shift boundary  
-**Scope:** centered-power geometry and its nearest-integer state  
+**Dependencies:** `T-9315`; elementary affine algebra  
+**Scope:** the centered-power ordinary-section reformulation  
 **Related counterexample candidates:** none
 
-## 1. Setup
+## 0. Correction notice
 
-Assume
-
-\[
-\xi>0,
-\qquad
-\left\|
-\xi\left(\frac{81}{64}\right)^n
-\right\|
-\le\frac1{81}
-\quad(n\ge0).
-\tag{1}
-\]
-
-By `T-9315`, write uniquely
+An earlier version of this claim used the false identity
 
 \[
-\xi\left(\frac{81}{64}\right)^n
-=B_n+u_n,
-\qquad
-B_n\in\mathbb Z,
-\qquad
-|u_n|<\frac1{81},
-\tag{2}
+81/64=(3/2)^4.
 \]
 
-and define
-
-\[
-\varepsilon_n=\mathbf1_{u_n>0}.
-\tag{3}
-\]
-
-The nearest-integer carry relation is
+In fact
 
 \[
 \boxed{
-64B_{n+1}-81B_n
-=
-\varepsilon_n-\varepsilon_{n+1}.
+\frac{81}{64}=\left(\frac98\right)^2,
+}
+\tag{0}
+\]
+
+because `64=8^2`, not `2^4`.
+
+The former four-phase `3/2` schedule is retracted. It is not a dependency of
+`T-9315`, `L-9313`, `L-9314`, `T-9316`, `L-9315`, `L-9316`, `T-9317`, or
+`T-9318`. The exact replacement is the paired `8 -> 9` lift below.
+
+## 1. The `64 -> 81` chart
+
+Let
+
+\[
+A_n\in\mathbb Z_{\ge2},
+\qquad
+ e_n\in\{0,1\},
+\tag{1}
+\]
+
+satisfy
+
+\[
+\boxed{
+64A_{n+1}=81A_n-17e_n.
+}
+\tag{2}
+\]
+
+Reduction modulo `64` gives
+
+\[
+\boxed{A_n\equiv e_n\pmod{64}.}
+\tag{3}
+\]
+
+## 2. Exact integer square-root factorization
+
+Define an integer sequence `(X_m)` and a binary sequence `(f_m)` by
+
+\[
+\boxed{
+X_{2n}=A_n,
+\qquad
+X_{2n+1}=\frac{9A_n-e_n}{8},
 }
 \tag{4}
 \]
 
-Because
-
-\[
-17^{-1}\equiv49\pmod{64},
-\]
-
-reduction of `(4)` modulo `64` gives
+and
 
 \[
 \boxed{
-B_n\pmod{64}
-\in\{0,15,49\}.
+f_{2n}=f_{2n+1}=e_n.
 }
 \tag{5}
 \]
 
-More precisely,
-
-\[
-\begin{array}{c|c|c}
-(\varepsilon_n,\varepsilon_{n+1})
-&\varepsilon_n-\varepsilon_{n+1}
-&B_n\pmod{64}\\
-\hline
-(0,0),(1,1)&0&0\\
-(1,0)&1&15\\
-(0,1)&-1&49
-\end{array}
-\tag{6}
-\]
-
-Thus the centered orbit carries a three-state nearest-integer residue process.
-
-## 2. Fourth-power decomposition
-
-Since
-
-\[
-\frac{81}{64}=\left(\frac32\right)^4,
-\tag{7}
-\]
-
-put
-
-\[
-Y_m=\xi\left(\frac32\right)^m.
-\tag{8}
-\]
-
-For
-
-\[
-m=4n+r,
-\qquad0\le r<4,
-\]
-
-we have
-
-\[
-Y_{4n+r}
-=\frac{3^r}{2^r}(B_n+u_n).
-\tag{9}
-\]
-
-The error radius is
-
-\[
-\left|\frac{3^r}{2^r}u_n\right|
-<\frac{(3/2)^r}{81}.
-\tag{10}
-\]
-
-## 3. Exact four-phase schedule
-
-For every `n>=0`, the fractional part of the full `3/2` orbit lies in the scheduled neighborhoods
+Then every `X_m` is an ordinary integer and
 
 \[
 \boxed{
-\begin{array}{c|c|c}
-r&\text{allowed centers modulo }1&\text{radius}\\
-\hline
-0&0&1/81\\
-1&0,\ 1/2&1/54\\
-2&0,\ 1/4,\ 3/4&1/36\\
-3&0,\ 3/8,\ 5/8&1/24.
-\end{array}
+8X_{m+1}=9X_m-f_m,
+\qquad
+X_m\equiv f_m\pmod8.
 }
+\tag{6}
+\]
+
+### Proof
+
+Write
+
+\[
+A_n=64k+e_n.
+\]
+
+Then
+
+\[
+X_{2n+1}
+=\frac{9(64k+e_n)-e_n}{8}
+=72k+e_n,
+\]
+
+so `X_(2n+1)` is integral and congruent to `e_n mod 8`. The first half-step
+in `(6)` follows from its definition. For the second half-step,
+
+\[
+\frac{9X_{2n+1}-e_n}{8}
+=
+\frac{81A_n-17e_n}{64}
+=A_{n+1}
+=X_{2n+2},
+\]
+
+using `(2)`. Equation `(3)` supplies the even-time residue condition. QED.
+
+Thus the original chart is not a four-phase `3/2` system. It is the exact
+even-time compression of the `8 -> 9` binary chart, with every chart digit
+repeated twice.
+
+## 3. Converse compression
+
+Conversely, suppose ordinary integers `X_m>=2` and binary digits `f_m` satisfy
+
+\[
+8X_{m+1}=9X_m-f_m,
+\qquad
+X_m\equiv f_m\pmod8,
+\tag{7}
+\]
+
+and suppose
+
+\[
+f_{2n}=f_{2n+1}
+\quad(n\ge0).
+\tag{8}
+\]
+
+Put
+
+\[
+A_n=X_{2n},
+\qquad
+e_n=f_{2n}.
+\]
+
+Composing the two successive equations in `(7)` gives
+
+\[
+64A_{n+1}
+=81A_n-(9+8)e_n
+=81A_n-17e_n.
+\]
+
+The even-time residue condition in `(3)` follows by composing the two exact
+`8`-adic cylinder conditions. Hence `(4)`--`(5)` give a bijection between:
+
+1. nontrivial ordinary `64 -> 81` orbits; and
+2. nontrivial ordinary `8 -> 9` orbits whose digit word is pairwise duplicated.
+
+## 4. Real companion and centered parameter
+
+Let `(x_n)` be the bounded real companion of `(A_n,e_n)`:
+
+\[
+64x_{n+1}=81x_n-17e_n,
+\qquad
+0<x_n<1.
+\tag{9}
+\]
+
+Define
+
+\[
+\boxed{
+y_{2n}=x_n,
+\qquad
+y_{2n+1}=\frac{9x_n-e_n}{8}.}
+\tag{10}
+\]
+
+Then
+
+\[
+8y_{m+1}=9y_m-f_m,
+\qquad
+0<y_m<1.
 \tag{11}
 \]
 
-Equivalently,
+The inequalities follow directly from the two branch ranges in `(9)`. By
+uniqueness of the bounded real companion, `(y_m)` is exactly the real companion
+of the paired `8 -> 9` orbit.
+
+The original centered parameter is
 
 \[
-\operatorname{dist}
-\left(
-Y_{4n+r},
-\mathcal C_r+\mathbb Z
-\right)
-<\delta_r,
+\xi=\frac{A_0-x_0}{64}.
 \tag{12}
 \]
 
-where
+For the `8 -> 9` chart the centered parameter is
 
 \[
-\begin{aligned}
-\mathcal C_0&=\{0\},&\delta_0&=1/81,\\
-\mathcal C_1&=\{0,1/2\},&\delta_1&=1/54,\\
-\mathcal C_2&=\{0,1/4,3/4\},&\delta_2&=1/36,\\
-\mathcal C_3&=\{0,3/8,5/8\},&\delta_3&=1/24.
-\end{aligned}
+\boxed{
+\zeta=\frac{X_0-y_0}{8}=8\xi.}
 \tag{13}
 \]
 
-## 4. Proof of the centers
-
-At phase `r`, the center is
+Therefore `T-9315`, applied with `(M,N)=(8,9)`, gives
 
 \[
-\frac{3^rB_n}{2^r}\pmod1.
+\boxed{
+\left\|\zeta\left(\frac98\right)^m\right\|<\frac19
+\quad(m\ge0),
+}
 \tag{14}
 \]
 
-- At `r=0`, the center is `0` and the radius is `1/81`.
-- At `r=1`, only the parity of `B_n` matters, giving `0` or `1/2`; the radius is `1/54`.
-- At `r=2`, equation `(5)` gives `B_n=0,3,1 mod4`. Since `9=1 mod4`, the centers are `0,3/4,1/4`; the radius is `1/36`.
-- At `r=3`, equation `(5)` gives `B_n=0,7,1 mod8`. Since `27=3 mod8`, the centers are `0,5/8,3/8`; the radius is `1/24`.
+and its sign itinerary is the duplicated word `(f_m)`.
 
-This proves `(11)`.
+## 5. Exact two-phase centered identities
 
-## 5. Transition information
-
-The state in `(5)` is equivalent to the adjacent digit pair through `(6)`:
+Write the original centered orbit as
 
 \[
-\begin{array}{c|c}
-B_n\pmod{64}&\text{digit transition}\\
-\hline
-0&\varepsilon_{n+1}=\varepsilon_n\\
-15&1\to0\\
-49&0\to1.
-\end{array}
+\xi(81/64)^n=B_n+u_n,
+\qquad
+B_n\in\mathbb Z,
+\qquad
+|u_n|<1/81.
 \tag{15}
 \]
 
-The schedule is therefore not four unrelated unions of arcs. The intermediate centers are synchronized with a nearest-integer residue state.
+Equations `(0)` and `(13)` give
 
-## 6. Full-shift boundary
+\[
+\boxed{
+\zeta(9/8)^{2n}=8B_n+8u_n,
+}
+\tag{16}
+\]
 
-`L-9313` proves that every binary itinerary has one bounded real centered-error path. Therefore the real scheduled cylinders in `(11)` do **not** become empty merely because the symbolic path is long or complicated.
+and
 
-This corrects the tempting but false proof target:
+\[
+\boxed{
+\zeta(9/8)^{2n+1}=9B_n+9u_n.
+}
+\tag{17}
+\]
 
-> pull the real intervals back and prove every nonzero path disappears.
+Hence the nearest integers at the two phases are exactly `8B_n` and `9B_n`,
+with errors
 
-The real error coordinate has full symbolic support. The genuine obstruction is whether the same path's nested nearest-integer congruences select one ordinary integer.
+\[
+8u_n
+\quad\text{and}\quad
+9u_n.
+\]
 
-`R-9303` records this method closure explicitly.
+In particular,
 
-## 7. Relationship to Mahler-type problems
+\[
+\left\|\zeta(9/8)^{2n}\right\|<\frac8{81},
+\qquad
+\left\|\zeta(9/8)^{2n+1}\right\|<\frac19.
+\tag{18}
+\]
 
-The classical Mahler problem constrains every power to one fixed one-sided interval. Here the complete `3/2` orbit follows a periodic schedule and carries an arithmetic state.
+The two errors have the same sign. This is the exact phase geometry replacing
+the invalid four-phase schedule.
 
-No theorem in the current literature packet is asserted to exclude the exact combined object. In particular:
+## 6. Approximate-multiplication normal form
 
-- a range-width theorem for one interval cannot be applied to the union of scheduled arcs;
-- a real graph-directed nonemptiness calculation ignores nearest-integer stabilization;
-- a finite-state graph on `0,15,49` loses the unbounded base-64 precision selected by the itinerary.
+Put
 
-## 8. Correct next attack
+\[
+H_m=X_m-1,
+\qquad
+S_m=1-f_m.
+\tag{19}
+\]
 
-Retain both coordinates:
+Then `(6)` is equivalent to
 
-1. the bounded real error path `u_n`;
-2. the nested nearest-integer cylinder `B_0 mod64^K`.
+\[
+\boxed{
+8H_{m+1}=9H_m+S_m,
+\qquad
+H_m\pmod8\in\{0,7\}.
+}
+\tag{20}
+\]
 
-The exact next target is `Q-9303`: derive a recurrence or invariant for the newly appended cylinder blocks and prove that they are nonzero infinitely often on every nontrivial path.
+The pair constraint becomes
 
-The four-phase schedule remains useful as a real normalization of those arithmetic blocks, not as a standalone emptiness theorem.
+\[
+S_{2n}=S_{2n+1}.
+\tag{21}
+\]
+
+Thus the ordinary-section problem is exactly the termination/nonstabilization
+problem for the paired sublanguage of the approximate-multiplication system
+
+\[
+(p,q,S)=(9,8,\{0,7\}).
+\]
+
+At even times, setting `h_n=H_(2n)` and `s_n=S_(2n)` recovers
+
+\[
+\boxed{
+64h_{n+1}=81h_n+17s_n,
+\qquad
+h_n\pmod{64}\in\{0,63\}.
+}
+\tag{22}
+\]
+
+## 7. Consequence for the proof program
+
+The corrected factorization supplies two exact routes:
+
+1. work directly with the original `64 -> 81` appended blocks `q_K`;
+2. work with the simpler `8 -> 9` chart while retaining the load-bearing
+   duplicated-digit constraint.
+
+Dropping the pair constraint enlarges the problem to the full two-residue
+`(9,8,{0,7})` approximate-multiplication problem and is not a valid proof
+shortcut.
+
+## 8. Dependency audit
+
+- The integer factorization uses only `81=9^2`, `64=8^2`, and `17=9+8`.
+- `T-9315` supplies the centered equivalence for the `8 -> 9` chart.
+- No external rational-power theorem is a dependency.
+- `L-9313`, `L-9314`, `T-9316`, `L-9315`, `L-9316`, `T-9317`, and `T-9318`
+  do not depend on the retracted four-phase claim.
 
 ## 9. Gap audit
 
-- The schedule is necessary and exact but does not prove nonexistence.
-- Every symbolic path has a real error lift; only some could have an ordinary nearest-integer lift.
-- Ignoring the nested integer cylinder is a fatal loss of information.
-- The theorem applies to the induced `64 -> 81` ordinary section, not automatically to every Collatz counterexample.
+- The paired `8 -> 9` reformulation is exact but does not prove termination.
+- A theorem for an unrestricted `8 -> 9` digit language cannot be imported
+  without checking the pair constraint and direction of implication.
+- The centered interval in `(14)` is a torus interval of total length `2/9`,
+  not an ordinary interval of length `1/9`; the critical one-interval theorem
+  cannot be applied by halving its length.
+- Translation from this induced subsystem to every possible Collatz
+  counterexample remains separate.
