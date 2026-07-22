@@ -122,12 +122,12 @@ Under `(7)`, the right side tends to infinity. The efficient-recurrence obstruct
 
 ## 2. Thue--Morse corollary
 
-Let `tau` be the Thue--Morse word. `T-9316` supplies equal factors with
+Let `tau` be the Thue--Morse word. `T-9316` supplies equal adjacent factors with
 
 \[
 \ell_m=2^m,
 \qquad
-t_m=6\cdot2^m.
+t_m=2\cdot2^m.
 \tag{12}
 \]
 
@@ -136,15 +136,14 @@ For a morphic image `w=h(tau)`, equation `(11)` becomes
 \[
 L_m-\delta T_m
 \ge
-(a-6\delta b)2^m.
+(a-2\delta b)2^m.
 \tag{13}
 \]
 
 Hence
 
 \[
-\boxed{
-a>6\delta b}
+\boxed{a>2\delta b}
 \tag{14}
 \]
 
@@ -156,15 +155,15 @@ Equivalently,
 \boxed{
 \frac ba
 <
-\frac1{6\delta}
+\frac1{2\delta}
 =
-\frac1{6\log_{64}(81/64)}
-=2.9424745961\ldots.
+\frac1{2\log_{64}(81/64)}
+=8.8274237885\ldots.
 }
 \tag{15}
 \]
 
-Thus every non-erasing morphic image of Thue--Morse with output-length distortion below `2.9424...` has infinitely many nonzero appended nearest-integer blocks.
+Thus every non-erasing morphic image of Thue--Morse with output-length distortion below `8.8274...` has infinitely many nonzero appended nearest-integer blocks.
 
 ## 3. Immediate source encodings covered
 
@@ -172,7 +171,7 @@ The criterion includes:
 
 1. every letter-to-letter coding, for which `a=b=1`;
 2. every coding followed by bit complementation;
-3. every non-erasing binary morphism whose two image lengths lie in `{1,2}`;
+3. every non-erasing binary morphism with maximum-to-minimum image-length ratio at most `8`;
 4. every fixed finite shift of any word above;
 5. any source sign convention proved to be a bounded-distortion morphic image satisfying `(15)`.
 
@@ -189,7 +188,7 @@ The wave-5 source audit warns that “Thue--Morse-related” need not mean that 
 
 `L-9315` removes much of this convention sensitivity. Once the exact source theorem gives an explicit morphism `h`, it is enough to verify the finite inequality `(15)`.
 
-In particular, a source equality word obtained from Thue--Morse by images of lengths `1` and `2` is automatically excluded from ordinary cylinder stabilization.
+In particular, every source equality word obtained from Thue--Morse by a non-erasing binary morphism of distortion at most `8` is automatically excluded from ordinary cylinder stabilization.
 
 ## 5. General constant-length source families
 
@@ -221,7 +220,7 @@ Thus the native criterion required from an external extremal language is not “
 
 - A finite-state transducer with state-dependent output is not automatically a one-letter morphism. Its exact realization must be exposed before applying `(15)`.
 - An erasing morphism can destroy the lower bound on factor length and is not covered.
-- Large length distortion may fail `(15)` even when the image still has another efficient recurrence family.
+- Length distortion at least `8.8274...` may fail `(15)` even when the image still has another efficient recurrence family.
 - No exact Dubickas sign encoding is asserted until the full source is acquired.
 - Excluding a morphic extremal family is not an all-itinerary theorem.
 
