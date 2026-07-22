@@ -1,4 +1,4 @@
-# Literature audit — waves 1 through 5
+# Literature audit — waves 1 through 6
 
 **Agent:** `gpt56-pro-03`  
 **Issue:** `#7 — P1 literature audit and imported theorem suite`  
@@ -15,40 +15,29 @@ This is the repository's durable external-results layer. It remains namespaced b
 - `H/...` refers to draft PR #19.
 - `PADIC/...` refers to draft PR #20.
 - `FOUNDRY/...` refers to issue #21's diagonal-foundry branch.
+- `DRIFT/...` refers to draft PR #35.
 - `LIT-KTHM-####` identifies an imported theorem and never replaces a native claim ID.
 
 ## Wave 1 — foundational audit
 
-1. Terras and Everett supply the classical parity-cylinder affine formula, parity-word/residue bijection, and exact loss of one dyadic digit per common-parity step.
-2. No exact printed antecedent was located for the repository's sparse forward collision-fiber packaging, carry pumping, or signature-tail amplification. These remain `POSSIBLY NOVEL FORMULATION`, never proved novel.
-3. The automaticity obstruction should use rational letter frequencies of automatic sequences, not the famous two-base Cobham theorem. Gelfond--Schneider supplies the transcendental slope, but does not imply “exactly Sturmian/Ostrowski.”
-4. Skolem--Mahler--Lech applies to the stated three-base power sum only after the native coefficients, nondegeneracy, and exact-equality reduction are exposed.
-5. LTE proves all-level multiplicative orders for `64 mod 81^k` and `81 mod 2^j`.
-6. Skeleton rigidity should use the integral-recurrence/Fatou--Pólya algebraic-integrality principle with a minimal noncancelling representation.
-7. Mahler is a useful `2`-adic analogy, not a classical equivalence; FLP's real interval-width theorem does not transfer by Haar-measure comparison.
-8. Li--Sahlsten, Solomyak, Rudolph, Shmerkin, and Wu provide nearby methods/object classes, not direct theorems for EQ or one integer in `V∞`.
-9. Yolcu--Aaronson--Heule is verified; Conway--Kurtz--Simon undecidability concerns generalized maps.
-10. Everett/Tao almost-all results are context, not explicit counterexample constructions.
+Wave 1 located and audited the classical substrate: Terras/Everett parity cylinders, Lagarias surveys, Tao's almost-all theorem, automaticity and Gelfond–Schneider, Skolem–Mahler–Lech, Fatou–Pólya recurrence rigidity, Mahler/FLP, Fourier-decay and measure-rigidity neighbors, backward trees, and generalized undecidability.
+
+It added `LIT-KTHM-0001` through `0014`, a verified source ledger, claim maps, applicability audits, and an explicit `UNVERIFIED` register.
+
+Key discipline established:
+
+```text
+located theorem
+ != native hypothesis reduction
+ != analogy
+ != novelty proof.
+```
 
 ## Wave 2 — live portfolio audit
 
 The common frontier was an **infinite ordinary-integer realization theorem**. Large finite objects, compact completion points, compatible residue prefixes, and decidable fixed-certificate checks were not enough.
 
-Wave 2 added `LIT-KTHM-0015` through `LIT-KTHM-0027`:
-
-- accelerated affine monoid;
-- rational-base address and bounded-tail law;
-- positive cycle-mean phase potentials;
-- finite clopen-cover obstruction in `Z_p`;
-- regularity of subsequential images;
-- exact fixed-DFA closure decision;
-- greatest finite safety kernel;
-- short canonical witness bound;
-- exact accelerated cycle equation;
-- Minkowski cancellation refutation and corrected separation theorem;
-- match-bound scope theorem;
-- finite-state tilted transfer bound;
-- graph-directed compact-attractor theorem with the ordinary-integer non-application.
+Wave 2 added `LIT-KTHM-0015` through `0027`, covering affine monoids, rational-base addresses, graph potentials, clopen obstructions, regular transductions, safety kernels, cycle equations, transfer bounds, and graph-directed attractors.
 
 ### Blocking correctness finding
 
@@ -60,7 +49,7 @@ E  = {0, 1},
 D1 = D0 + 2^L E,
 ```
 
-one has `R(D0)=0`, while `D1-D1` contains `±1`. The proof omitted cancellation between a large scaled suffix difference and a seed difference. `LIT-KTHM-0024` supplies the corrected sufficient condition
+one has `R(D0)=0`, while `D1-D1` contains `±1`. `LIT-KTHM-0024` supplies the corrected sufficient condition
 
 ```text
 diam(D0) + R(D0) + 1 < 2^L,
@@ -70,149 +59,168 @@ which must hold at every iterated stage.
 
 ## Wave 3 — completion height and ordinary-marker convergence
 
-The live branches converged on a sharper common statement:
+The active programs converged on
 
 ```text
 infinite directive
  -> one unique completion point in Z_2
- -> an ordinary integer exactly when least representatives or new digit blocks stabilize.
+ -> an ordinary integer exactly when least representatives
+    or new digit blocks stabilize.
 ```
 
-Growth, branch count, exact finite connectors, and finite information budget are no longer the main conceptual scarcities. The remaining obstacle is causal low-bit regeneration from one finite ordinary state.
+Wave 3 added `LIT-KTHM-0028` through `0033`:
 
-Wave 3 added `LIT-KTHM-0028` through `LIT-KTHM-0033`:
+- Foundry fixed points as strict `2`-adic contractions;
+- p-adic automata and van der Put criteria;
+- PR #3's explicit `-(7/4)log_2(3)` bulk;
+- H ghosts as a separated countable `2`-adic IFS;
+- the critical-particle size-biased spine;
+- Krieger/MacDonald symbolic embedding as a conditional router theorem.
 
-1. **Foundry fixed points.** Bernstein--Lagarias conjugacy plus strict causality make `Phi o E` a `1/2`-Lipschitz contraction. `FOUNDRY/T-9601` is a known corollary/elegant repackaging; the native frontier is integrality of the unique fixed point.
-2. **`p`-adic automata boundary.** Anashin's van der Put criterion supplies the right taxonomy for finite-state causal operators, without implying rationality or ordinary integrality.
-3. **Explicit logarithmic bulk.** PR #3's quadratic Hensel word converges exactly to `-(7/4)log_2(3)` with one exact new bit per stage. Mahler identifies the completed target as transcendental, but the grammar must still generate rather than preload it.
-4. **H-ghost pressure.** The recursive H cylinders form a separated countable `2`-adic IFS with plastic-constant residue growth.
-5. **Critical particle spine.** PR #3's ordered-particle completion is an exact deterministic size-biased spine/many-to-one construction.
-6. **Entropy-surplus router.** Krieger and MacDonald supply a precise symbolic embedding route after stationarization and periodic-point checks.
-
-PR #16's proposed proof was positioned as a deterministic nonarchimedean Erdős--Kahane theorem. PR #16 and PR #20 independently produced the same criticality constant
+PR #16 and PR #20 independently produced the same completion-height constant
 
 ```text
 1/(log_64 81 - 1)=17.654847...
 ```
 
-through carry-run and repeated-factor height arguments.
+through carry-run and repeated-factor arguments.
 
-## Wave 4 — q-series closure, centered powers, and finite-state normalization
+## Wave 4 — q-series, centered powers, and finite-state normalization
 
-Wave 4 re-read the overnight theorem wave and added `LIT-KTHM-0034` through `LIT-KTHM-0041`.
+Wave 4 added `LIT-KTHM-0034` through `0041`.
 
-### 1. Periodic stack tails are p-adic Tschakaloff vectors
+1. Every periodic stack value is a finite vector of p-adic Tschakaloff values.
+2. PR #16's ordinary section is exactly a centered rational-power orbit.
+3. Finite synchronous transducibility of a `2`-adic isometry is section finiteness; Anashin supplies the van der Put criterion.
+4. PR #3's ordinary quadratic bulk is formal multiplicative-group doubling.
+5. Standard one-counter Foundry feedback has ultimately periodic autonomous output.
+6. Static fractional Hall allocation can be purified under atomlessness, without producing temporal or integer coherence.
+7. State-dependent finite traps and path-complete potentials extend common contraction.
+8. q-Lucas/Cartier and min-plus section machines were identified as exact next objects.
 
-Every fixed-period stack value is a finite rational linear combination of
+PR #32 independently reconstructed the complete all-depth weighted-EQ chain; formal promotion belongs to the native ledger.
 
-```text
-f_R(z)=sum_(n>=0) R^(n(n-1)/2)z^n
-```
+## Wave 5 — period-nine closure and Diophantine interfaces
 
-at rational points in distinct `R`-orbits. Väänänen--Wallisser (1991) studies this exact p-adic function. Wave 4 identified acquisition of the full theorem as the highest-priority source gap.
+The full Väänänen–Wallisser paper was supplied and inspected. Wave 5 added `LIT-KTHM-0042` and `0043`.
 
-If that theorem proved insufficient, determinant nonvanishing, cyclotomic/Hankel factors, and common factors of symbolic maximal minors provided a targeted route through PR #20's period-four height deficit.
+### Periodic stack tails through period nine
 
-### 2. The ordinary survivor is a centered rational-power orbit
-
-`ADEL/T-9315` is equivalent to the existence of `xi>0` with
-
-```text
-||xi*(81/64)^n||<=1/81
-```
-
-for all `n`. `LIT-KTHM-0041` freezes the exact carry alphabet and sign graph. Dubickas's explicit nearest-integer and two-interval theorems are the first external sources to specialize; FLP's ordinary range width alone does not exclude the wrapped target.
-
-### 3. Finite-state complexity has canonical tests
-
-For a 2-adic isometry, finite synchronous transducibility is equivalent to finiteness of its rooted-tree sections; Anashin gives the van der Put coefficient criterion. This is the exact test for PR #3 and PR #34 address/correction maps.
-
-### 4. The ordinary quadratic bulk is a formal-group doubling map
-
-PR #3 `T-0030` is the coordinate form of
+The source theorem applies to the exact PR #20 phase vector through dimension nine and fails its sufficient numerical condition at dimension ten. Consequently:
 
 ```text
-Y_(m+1)=Y_m^2.
+minimal eventual periods 1,...,9:
+  irrational selected 2-adic context;
+
+minimal eventual period 10:
+  first fixed period outside that source condition;
+
+balanced nonperiodic 17/18:
+  requires period-uniform estimates and S-adic passage.
 ```
 
-The logarithmic analysis coordinate doubles linearly, while the native construction still has to generate new physical precision.
+### S-unit interface
 
-### 5. One-counter Foundry feedback collapses
+`LIT-KTHM-0043` imports Evertse–Schlickewei–Schmidt finiteness for nondegenerate finite-rank multiplicative equations and supplies a strict native checklist: one fixed equation, finite rank, injective parameters, a proper-subsum audit, a finite-alphabet recurrence argument, and an explicit ordinary-realization contradiction.
 
-A standard deterministic one-counter machine on an autonomous zero input has ultimately periodic output. Positive Foundry search must therefore use a stronger machine model: residue/digit access, a genuine stack, two counters, or scale dependence.
+This interfaces with PR #3/PR #33 cap stitches and PR #19/PR #34 successive H cores.
 
-### 6. Static allocation can be purified
+## Wave 6 — completion firewall and block q-Gaussian factorization
 
-PR #34's fractional Hall allocation can be upgraded to a deterministic measurable static selector by Dvoretzky--Wald--Wolfowitz if the decoder measure is atomless. Dynamic, integer, and cross-modulus coherence remain open.
+Wave 6 re-read the newest PR #3, PR #16, PR #19, PR #20, PR #32, PR #34, and PR #35 states and added `LIT-KTHM-0044` through `0047`.
 
-### 7. State-dependent finite traps
+### 1. PR #20 all-directive withdrawal
 
-A state-dependent affine or piecewise-linear potential can prove eventual entry into a finite trap even when some individual slopes exceed one. Failed searches should return exact dual cycles or occupation measures.
-
-### 8. q-Lucas and min-plus next steps
-
-PR #34's dyadic q-Padé channels suggest an all-scale q-Lucas/Frobenius/Cartier operator. Its survivor bucket lifts suggest a min-plus weighted section machine for exact minima.
-
-### Verification update
-
-PR #32 independently reconstructed the complete all-depth weighted-EQ chain. The literature map records `INDEPENDENTLY RECONSTRUCTED / integration pending`; formal status promotion belongs to the native ledger and project review registry.
-
-## Wave 5 — period-nine closure and exact Diophantine interfaces
-
-The full Väänänen--Wallisser paper was supplied and inspected. Wave 5 adds `LIT-KTHM-0042` and `LIT-KTHM-0043`.
-
-### 1. Periodic stack tails are irrational through period nine
-
-The source theorem applies exactly to the PR #20 phase vector through dimension nine. Its numerical condition fails at dimension ten for the current parameter.
-
-Consequently every eventually periodic positive increment directive of minimal eventual period at most nine selects an irrational `2`-adic context and cannot initialize an ordinary integer.
-
-This changes the fixed-period frontier:
+PR #20 correctly withdrew:
 
 ```text
-periods 1,...,9: externally closed after the native reduction;
-period 10: first fixed period outside this source condition;
-nonperiodic 17/18: requires period-uniform estimates and S-adic passage.
+T-9418  unbounded gaps imply irrationality;
+T-9419  every positive stack directive is irrational;
+T-9420  rational code iff eventually periodic;
+T-9421  ordinary section triviality.
 ```
 
-PR #20's native short-period proofs and PR #34's period-four machinery remain valuable as source-independent methods and regression suites. Their highest-value target is now period ten or a theorem uniform in period length.
-
-### 2. Corrected-stage trajectories reduce to exact stitches
-
-PR #3 and PR #33 show that the free corrected-stage quotient eventually vanishes. Every late ordinary trajectory must satisfy
+The same rational partial sums may converge to different values in `R` and `Q_2`. `LIT-KTHM-0044` supplies an elementary counterexample and the correct completion-safe Padé pattern:
 
 ```text
-S_m(w_m)=R_(m+1)(w_(m+1))
+one rational Padé pair
+ + finite-place error for the target
+ + Archimedean bounds for the same rational coefficients
+ + product formula
+ -> contradiction.
 ```
 
-inside an exponentially shrinking completion-height cusp.
+The exact denominator-descent lemmas remain valid; the withdrawn statements remain open rather than refuted.
 
-For a fixed ordered stage-word pair, the next target is a scale-independent finite-term equation in powers of `2` and `3`. `LIT-KTHM-0043` imports the Evertse--Schlickewei--Schmidt finiteness theorem for nondegenerate finite-rank multiplicative equations. The native branch must still derive the equation, prove distinct scale solutions, and classify all proper-subsums.
+### 2. Exact decimated q-Gaussian moment lift
 
-### 3. H splits into S-unit, logarithmic, and trap regimes
+For PR #34's combined period-`r` moments, `LIT-KTHM-0045` proves
 
-The H branch now has centered rooms around `4`, a monotone ordinary-section minimum, and exact successive-core equations. The literature suggests:
+```text
+nu_N=sum_(h=0)^(r-1)D_hm_(rN+h),
+m_k=q_0^[k(k-1)/2]b^k,
+```
 
-- S-unit finiteness for fixed nondegenerate persistent-prime equations;
-- explicit two-term p-adic logarithmic forms for the critical near-Pillai regime;
-- transformed-height finite traps for the subcritical regime.
+or equivalently
 
-No application is valid before prime support and source constants are exposed.
+```text
+nu_N=L(D_W(x)x^(rN)).
+```
 
-### 4. Centered rational powers require arithmetic blocks
+The fine base Hankel determinant is an explicit Vandermonde product. Thus the periodic object is one fixed polynomial deformation of a quadratic-exponential moment functional followed by `r`-fold decimation.
 
-PR #16 proves the bounded real error language is a full shift. Therefore real interval propagation alone cannot eliminate itineraries. The arithmetic object is the appended nearest-integer block, which must eventually vanish for an ordinary point.
+### 3. Christoffel factorization and its exact nonapplication
 
-Dubickas's formulas must be specialized to `(81,64)` and translated into that block recurrence, including the extremal Thue--Morse word.
+Krattenthaler's theorem factors an ordinary fixed-degree polynomial moment deformation into the base Hankel determinant times one fixed-size orthogonal-polynomial determinant. `LIT-KTHM-0046` imports the result and shows why the scalar version does not retain the stack residue classes modulo `r`.
 
-### 5. Latest cross-direction work has a clearer role
+The correct target is the block functional
 
-PR #34's newest q-Lucas, Cartier, Casoratian, survivor-rank, cap-collar, and H-renewal lemmas should now be evaluated against the exact post-wave-5 targets:
+```text
+L_h(y^N)=L(x^(rN+h)),
+0<=h<r,
+```
 
-- period ten and uniform period growth;
-- fixed-word cap-stitch nonvanishing;
-- ordinary survivor block/minimum growth;
-- persistent/fresh-prime H equations.
+within biorthogonal Stieltjes–Wigert and mixed multiple-orthogonal theory.
+
+### 4. Bulk cancellation in Hankel ratios
+
+`LIT-KTHM-0047` proves the standard determinant identities
+
+```text
+h_n=Delta_(n+1)/Delta_n,
+beta_n=Delta_(n+1)Delta_(n-1)/Delta_n^2.
+```
+
+These are the natural objects in which a universal cubic Hankel bulk can cancel. This explains why PR #34's cubic raw Schur quotient is a method boundary, not a no-go for Cramer ratios.
+
+### 5. All-fixed-period proof program
+
+PR #34 `T-9821` already supplies nonzero combined Hankel minors and the exact quadratic `2`-adic error. The remaining theorem is:
+
+```text
+base/bordered minor
+ = universal fine q-Gaussian bulk
+   x fixed-rank r-component boundary determinant,
+```
+
+followed by
+
+```text
+log_2 H(A_n:B_n)
+ <=(81Sr-eta_r)n^2+o(n^2)
+```
+
+for some `eta_r>0`. The product formula would then prove irrationality for every fixed positive period.
+
+Period-uniform control of the boundary factor is still needed to pass to the balanced S-adic directive.
+
+### 6. PR #3's moving two-block frontier
+
+The fixed corrected-stage architecture now has at most 64 eventual rooms; every possible room is transcendental and determines one tail. Existence requires one adjacent twelve-bit pattern—zero input cell plus allowed Hensel output lift—at every sufficiently late scale. The filter is empty in a finite audited range, but cofinal emptiness remains open.
+
+### 7. PR #35's control frontier
+
+The exact `5/4` completion and depth-50 minimum reinforce the same lesson: finite thinness, exact deep cylinders, and density zero do not replace an asymptotic minimum-divergence theorem.
 
 ## Verdict vocabulary
 
@@ -227,18 +235,18 @@ PR #34's newest q-Lucas, Cartier, Casoratian, survivor-rank, cap-collar, and H-r
 
 ## Package map
 
-- `literature/LIVE_REPO_REVIEW_WAVE2.md` through `LIVE_REPO_REVIEW_WAVE5.md` — live cross-program reviews.
+- `literature/LIVE_REPO_REVIEW_WAVE2.md` through `LIVE_REPO_REVIEW_WAVE6.md` — live cross-program reviews.
 - `literature/SOURCE_LEDGER.md` and wave supplements — only located sources, with inspection level.
 - `literature/CLAIM_CROSSWALK.md` and `literature/claim-maps/` — branch-qualified mappings.
 - `literature/APPLICABILITY_AUDITS.md` — theorem-hypothesis checks and nonapplications.
 - `literature/UNVERIFIED.md` and wave supplements — honest source and applicability gaps.
-- `literature/imported-theorems/` — 43 atomic statements/proofs/black-box boundaries.
+- `literature/imported-theorems/` — 47 atomic statements/proofs/black-box boundaries.
 - `literature/topic-notes/` — reusable research maps.
 - `literature/references*.bib` — bibliographic records.
 - `literature/check_literature*.py` — mechanical integrity checks.
 
 ## Process recommendation pending owner approval
 
-Add a short README section establishing imported-theorem IDs, inspection levels, separation of source theorem/native reduction/analogy, and mandatory narrowing or `REFUTED` status after a concrete review counterexample. Keep the fast-changing program dashboard in a separate `RESEARCH_INDEX.md`, not the stable README.
+Add a short README section establishing imported-theorem IDs, inspection levels, separation of source theorem/native reduction/analogy, and mandatory narrowing, withdrawal, or `REFUTED` status after a concrete review finding. Keep the fast-changing program dashboard in a separate `RESEARCH_INDEX.md`, not the stable README.
 
 No statement in this suite resolves or refutes the Collatz conjecture.
