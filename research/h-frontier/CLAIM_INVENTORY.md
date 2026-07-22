@@ -16,6 +16,7 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_04.md`](claims/ITERATION_04.md) — `T-9509`.
 - [`claims/ITERATION_05.md`](claims/ITERATION_05.md) — `L-9516`, `T-9510`, `Q-9506`.
 - [`claims/ITERATION_06.md`](claims/ITERATION_06.md) — `L-9517`, `L-9518`, `T-9511`, `T-9512`, `Q-9507`.
+- [`claims/ITERATION_07.md`](claims/ITERATION_07.md) — `L-9519`, `L-9520`, `T-9513`, `T-9514`, `R-9504`, `Q-9508`.
 
 ## Status table
 
@@ -63,6 +64,12 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `T-9511` | Subcritical future-core demand | PROPOSED | assumes the post-Yu subcritical regime |
 | `T-9512` | Minimal-survivor relative toll bound | PROPOSED | conditional on a nonperiodic survivor |
 | `Q-9507` | Subcritical renewal finite trap | IDEA | integral transformed height still open |
+| `L-9519` | Exact rounded-deficit pressure | PROPOSED | self-contained from `D-9501` |
+| `L-9520` | Successive-renewal compatibility and prime firewall | PROPOSED | self-contained from `L-9518` |
+| `T-9513` | Fixed bridge-prime support is finite | PROPOSED | imports nondegenerate S-unit finiteness |
+| `T-9514` | Final finite-alphabet / reset-renewal dichotomy | PROPOSED | conditional on audited `T-9509` |
+| `R-9504` | Pressure and fresh mass are scale-compatible | PROPOSED | blocks false one-dimensional closures |
+| `Q-9508` | Discounted fresh mass or finite-alphabet nonstabilization | IDEA | two exact remaining branches |
 
 ## Dependency summary
 
@@ -80,7 +87,7 @@ pressure, the discounted capital--core budget, exclusion of the critical
 near-Pillai mode (subject to a Yu-theorem audit), and the monotone ordinary
 minimum.
 
-Iteration 06 adds three structural upgrades:
+Iteration 06 added three structural upgrades:
 
 1. `L-9517` classifies every closure boundary and repairs the compactness step
    in `T-9510`;
@@ -90,8 +97,21 @@ Iteration 06 adds three structural upgrades:
    form and proves that every large valuation forces a later unbounded deficit
    and exponential odd-core reset.
 
+Iteration 07 adds:
+
+1. `L-9519`, an exact rounded-deficit balance with a uniform positive toll;
+2. `L-9520`, the successive-renewal prime firewall and room-or-primitive-factor
+   law;
+3. `T-9513`, a proper-subsum-audited S-unit proof that no fixed bridge-prime
+   alphabet can recur indefinitely;
+4. `T-9514`, the final finite-alphabet versus reset-renewal structural split;
+5. `Q-9508`, the exact quantitative fresh-mass / finite-alphabet interfaces
+   still needed to exclude the two branches.
+
 The sole infinite mechanism still not excluded is an eventual-zero-carry,
-subcritical ordinary ghost with unbounded renewal deficits. `Q-9507` asks for
-an integral finite-trap refinement of the real future-demand identity. No
-positive integer witness and no proof excluding this last regime is contained
-in the packet.
+subcritical ordinary ghost.  It must either have bounded letters but a
+nonperiodic finite-alphabet code with infinitely many fresh bridge primes, or
+have unbounded letters with unbounded rounded deficits, exponential core
+resets, and arbitrarily long rooms or large primitive bridge factors.  No
+positive integer witness and no proof excluding both branches is contained in
+the packet.
