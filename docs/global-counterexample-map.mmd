@@ -1,98 +1,81 @@
 flowchart LR
-    FALSE([Collatz is false])
-    CYCLE([Positive nontrivial cycle])
-    DIV([Positive orbit avoids 1])
-    THIRD([Third component / exact equivalent witness])
+  FALSE([Collatz false])
+  CYCLE([Positive nontrivial cycle])
+  DIV([Positive orbit avoids 1])
+  THIRD([Third component / deficit])
+  CYCLE --> FALSE
+  DIV --> FALSE
+  THIRD --> FALSE
 
-    CYCLE --> FALSE
-    DIV --> FALSE
-    THIRD --> FALSE
+  subgraph CYC["Critical finite cycle"]
+    CEQ["Exact cycle equation"]
+    SUPPORT["PR34: >=7 non-2 valuations<br/>PROPOSED"]
+    MECH["PR45 compiler<br/>independently reviewed"]
+    PULSE["Distributed-pulse remainder<br/>cross-prime compatibility"]
+    FULL{"Full denominator + replay"}
+    CEQ --> SUPPORT --> FULL
+    CEQ --> MECH --> FULL
+    CEQ --> PULSE --> FULL --> CYCLE
+  end
 
-    subgraph CYC["Integer-first finite cycle"]
-      CEQ["Exact cycle equation"]
-      W27["PR42: windows through 27<br/>PROPOSED + exact MITM"]
-      K184["PR13: length 184 excluded<br/>PROPOSED native"]
-      CRIT["PR45 critical mechanical compiler<br/>first near-candidate rejected"]
-      PULSE["PR47 single pulse closed in range<br/>distributed pulse open"]
-      FULL{"Full-denominator equality<br/>+ exact replay"}
-      CEQ --> W27
-      CEQ --> K184
-      CEQ --> CRIT --> FULL
-      CEQ --> PULSE --> FULL
-      FULL --> CYCLE
-    end
+  subgraph FROZEN["Frozen corrected class"]
+    STAGE["256-transition doubling stage"]
+    T9705["T-9705 independently verified"]
+    CLOSED["No signed ordinary completion"]
+    STAGE --> T9705 --> CLOSED
+  end
 
-    subgraph FROZEN["Frozen finite-type collision class"]
-      STAGE["Corrected 256-transition stage"]
-      EQ258["258-coordinate primitive equation"]
-      EV["Evertse 1984 source"]
-      T9705["T-9705 independently verified<br/>at frozen source"]
-      FCLOSED["Frozen class closed"]
-      STAGE --> EQ258 --> T9705 --> FCLOSED
-      EV --> T9705
-    end
+  subgraph REFUND["Width-one linear refund"]
+    W1["PR49 width-one threshold B=3744"]
+    DEC["Deterministic connector decoder"]
+    DEF{"One finite residual<br/>defined forever?"}
+    GROW["z' >= 2z; explicit initialization"]
+    W1 --> DEC --> DEF --> GROW --> DIV
+  end
 
-    subgraph REFUND["Linear-height quotient refund"]
-      L0050["LIT-KTHM-0050<br/>pairwise expanding quotient lifts"]
-      CAUSAL{"ACL-P036 causal invariant<br/>+ top-boundary locality"}
-      INIT{"One positive ordinary initialization"}
-      L0050 --> CAUSAL --> INIT --> DIV
-    end
+  subgraph CENTER["Centered 64 to 81"]
+    ZERO["64B'=81B+e-e'"]
+    GHOST["Fixed modulus = completion ghost"]
+    ADD["Additive one-counter periodic"]
+    TOP{"Nonlinear top-boundary machine"}
+    ZERO --> GHOST
+    ZERO --> ADD
+    ZERO --> TOP --> DIV
+  end
 
-    subgraph CENTER["Centered 64 to 81"]
-      NATIVE["Centered equivalence/cylinders/blocks<br/>independently verified"]
-      ZERO["Exact forced-tail map<br/>64B'=81B+e-e'"]
-      GHOST["Fixed-modulus PDR<br/>periodic completion ghost"]
-      TOP{"Height/top-boundary<br/>one-counter invariant"}
-      NATIVE --> ZERO
-      ZERO --> GHOST
-      ZERO --> TOP --> DIV
-    end
+  subgraph CROSS["Cross-cycle"]
+    CELL["m=22 physical handoff"]
+    PH1["Permanent phase 1 = shifted Collatz"]
+    MULTI{"Repeated multi-phase return"}
+    CELL --> PH1
+    CELL --> MULTI --> DIV
+    MULTI --> CYCLE
+  end
 
-    subgraph CROSS["Cross-cycle handoff"]
-      CELL["m=22 physical room opening"]
-      CASCADE["Negative-cycle phase cascade"]
-      PHASE1["Permanent phase 1 = shifted Collatz"]
-      MULTI{"Repeated multi-phase return<br/>or regenerative invariant"}
-      CELL --> CASCADE --> PHASE1
-      CASCADE --> MULTI --> DIV
-      MULTI --> CYCLE
-    end
+  subgraph H["Partial H"]
+    HC["No cycle <=2.479b blocks<br/>PROPOSED"]
+    HB["Entropy / return / prime barriers"]
+    HW{"Delayed novelty or reset renewal"}
+    HC --> HB --> HW --> DIV
+  end
 
-    subgraph H["Partial H subsystem"]
-      HSEARCH["Exact ordinary sweep<br/>through 2^65 scale"]
-      HCYCLE["T-9515 proposed:<br/>no cycle through 2.479b blocks"]
-      HBARR["Entropy / prefix-return / fresh-prime barriers"]
-      HWIT{"Delayed-novelty or reset-renewal<br/>ordinary survivor"}
-      HSEARCH --> HCYCLE
-      HBARR --> HWIT --> DIV
-    end
+  subgraph OTHER["Other exact certificates"]
+    DFA{"Boundary-memory sanctuary DFA"}
+    COVER{"Coverage deficit C(x)<x"}
+    CONE{"Third binary fixed ray"}
+    DFA --> DIV
+    COVER --> THIRD
+    CONE --> THIRD
+  end
 
-    subgraph SAN["Finite sanctuary"]
-      BARE["T-8601 proposed:<br/>no bare congruence sanctuary"]
-      DFA{"DFA with genuine<br/>word-boundary memory"}
-      BARE -. forces richer state .-> DFA --> DIV
-    end
+  classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
+  classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
+  classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
+  classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
+  classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
-    subgraph EQV["Equivalent full-map witnesses"]
-      COVER{"Coverage deficit C(x)<x"}
-      CONE{"Third binary fixed ray"}
-      SPEC{"Point spectral excess<br/>+ faithful support extraction"}
-      COVER --> THIRD
-      CONE --> THIRD
-      SPEC --> THIRD
-    end
-
-    classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
-    classDef literature fill:#cfe8ff,stroke:#2563a8,color:#111;
-    classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
-    classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
-    classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
-    classDef open fill:#e5e7eb,stroke:#666,color:#111;
-
-    class CEQ,NATIVE,T9705 proved;
-    class EV literature;
-    class W27,K184,CRIT,PULSE,L0050,HCYCLE,HBARR,BARE proposed;
-    class CELL,CASCADE,HSEARCH empirical;
-    class FCLOSED,GHOST,PHASE1 refuted;
-    class FULL,CAUSAL,INIT,ZERO,TOP,MULTI,HWIT,DFA,COVER,CONE,SPEC,FALSE,CYCLE,DIV,THIRD open;
+  class CEQ,MECH,T9705 proved;
+  class SUPPORT,PULSE,W1,DEC,GROW,HC,HB proposed;
+  class CELL empirical;
+  class CLOSED,GHOST,ADD,PH1 refuted;
+  class FULL,DEF,TOP,MULTI,HW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
