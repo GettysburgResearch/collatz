@@ -115,6 +115,8 @@ repository review.
 | L-9901 | Lemma | Fixed-rank zero sums remain Evertse-finite under multiple moving endpoints and subcritical primitive-height loss | PROPOSED | L-9900; Evertse 1984 Corollary 1 |
 | L-9902 | Lemma | Quantitative S-unit capacity is term-count-binned and cannot exclude one nondegenerate tuple at each increasing coordinate count | PROPOSED | L-9901, T-9805; Evertse--Schlickewei--Schmidt Theorem 1.1 |
 | L-9903 | Lemma | H renewal stars and bridges are primitive four-term zero sums, but every nonperiodic survivor forces linear endpoint outside-prime mass | PROPOSED / SOURCE-QUALIFIED METHOD BOUNDARY | PR19 renewal identities; L-9889, L-9890, L-9894, L-9897; Evertse 1984 Corollary 1 |
+| L-9904 | Lemma | Powered accelerated valuation words have exactly the primitive root's reduced fixed point, cycle, and true cycle counts | PROPOSED / EXACT SEARCH REDUCTION | issue #9 affine monoid; PR11 cycle direction; elementary exact replay |
+| L-9905 | Lemma | Atomic point spectrum on the full trivial-basin quotient detects exactly unaccounted functional-graph components | PROPOSED / EXACT ABSTRACT SUPPORT THEOREM AND METHOD BOUNDARY | issue #27; PR38/ACL-N054; weighted sequence-space algebra |
 | T-9801 | Theorem | Every ordinary binary-chart itinerary has an explicit linear factor-complexity floor, giving a finite certificate for critical equality languages | PROPOSED | elementary binary-chart recurrence; PR16/T-9315 only for the conditional centered crosswalk; live overlap PR16/T-9318 and PR35/T-8803 |
 | T-9802 | Theorem | The final tower symbol translates every stabilized head correction by one of four fixed sixty-fourth-modulus offsets | PROPOSED | L-9821, L-9898; frozen PR3/T-0027, L-0016, L-0017 |
 | T-9803 | Theorem | Adjacent two-hot lifts have an exact correlation law, and libraries of at most 62 fixed templates cannot cover every formal exposure phase | PROPOSED | L-9826, L-9883, L-9885, L-9896, R-9806 |
@@ -151,5 +153,7 @@ repository review.
 | T-9831 | Theorem | Bounded essential stage width and subunit primitive endpoint mass exclude every finite-type signed completion family | PROPOSED / SOURCE-QUALIFIED ABSTRACT CLOSURE | PR38/ACL-N016; T-9828, L-9900--L-9902; Evertse 1984 Corollary 1 |
 | T-9832 | Theorem | Ordinary returns and reciprocal zero carries obey one sharp two-orientation completion-height wedge | PROPOSED / SHARP DECOMPOSITION | T-9801, T-9823, T-9827, T-9829, R-9810; PR16, PR35; PR38/ACL-N070 |
 | T-9833 | Theorem | Delaying the combined-moment Pade window preserves the cubic Schur-core barrier at every delay scale | PROPOSED | T-9821, T-9824, T-9830; live PR20/L-9418, R-9410, Q-9413 |
+| T-9834 | Theorem | Unbounded zero sums with uniformly bounded nondegenerate leaves have a finite primitive leaf alphabet, and no height-carrying leaf can survive a subunit endpoint gate | PROPOSED / SOURCE-QUALIFIED BOUNDED-ESSENTIAL-WIDTH CLOSURE | T-9831, L-9900--L-9902; PR33; PR38/ACL-N071; Evertse 1984 Corollary 1 |
+| T-9835 | Theorem | Every canonical evaluated Pade gcd is trapped by one quadratic cyclotomic step and the square of an adjacent Schur-core gcd | PROPOSED | T-9821, T-9824, T-9826, T-9830; PR20/Q-9413 |
 
 No `K-####` candidate is proposed.

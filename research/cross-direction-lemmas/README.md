@@ -46,6 +46,7 @@ dependency.
 - [`wave twenty`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty.md)
 - [`wave twenty-one`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-one.md)
 - [`wave twenty-two`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-two.md)
+- [`wave twenty-three checkpoint`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-three-checkpoint.md)
 
 ## Result map
 
@@ -162,6 +163,8 @@ dependency.
 | [`L-9901`](claims/L-9901-multi-endpoint-subpower-evertse-budget.md) | General moving-endpoint arithmetic bridge | With gcd exponent `gamma` and total endpoint exponent `Theta`, the sharp marginal Evertse gate is `Theta<d(1-gamma)`, or `Theta<1-gamma` for some `d<1`; an explicit boundary family proves strictness. |
 | [`L-9902`](claims/L-9902-rank-binned-ess-capacity.md) | Quantitative S-unit scope boundary | ESS capacity must be summed within characteristic-zero, fixed-dimension, fixed-coefficient, common-group bins; a primitive one-positive `{2}`-unit family with one tuple in every increasing dimension shows that perfect endpoint budgets do not replace fixed term count. |
 | [`L-9903`](claims/L-9903-h-renewal-evertse-transfer.md) | PR #19 H/Evertse interface | Every central renewal star and full bridge is a primitive nondegenerate four-term zero sum. Evertse then forces any nonperiodic survivor to retain asymptotically linear endpoint outside-`{2,3}` mass, isolating the exact missing height deficit. |
+| [`L-9904`](claims/L-9904-compressed-cycle-primitive-root.md) | Issue #9 / PR #11 compressed-cycle interface | Exact divisibility already forces positive integral replay. Powers have the same reduced fixed point and cycle as their primitive root, rotations only change the starting state, and genuine certificates are admissible primitive necklaces with primitive-root cycle counts. |
+| [`L-9905`](claims/L-9905-functional-graph-point-spectrum-support.md) | Issue #27 / PR #38 spectral-support interface | On a faithful weighted atomic space, the full trivial-basin quotient splits by functional components. Nonzero point spectrum extracts an unaccounted component exactly; cycle-only quotients, one-sided orbit sums, approximate spectrum, and smooth eigenfunctions do not. |
 | [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16/PR #20/PR #35 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; live PR #16 and PR #35 now independently recover its principal specializations, while its finite certificate excludes entire low-complexity equality subshifts. |
 | [`T-9802`](claims/T-9802-cap-head-final-symbol-rigidity.md) | PR #33/PR #3 cap-chain bridge | The fourth head symbol only translates the correction by cells `(0,3,53,1)Q/64`; at least 192 of 256 words are uniformly large, and every late hypothetical cap chain has at most 64 cusp-admissible head words. |
 | [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
@@ -198,6 +201,8 @@ dependency.
 | [`T-9831`](claims/T-9831-maximal-fixed-width-almost-s-unit-exclusion.md) | PR #38 `ACL-N016` / corrected-stage arithmetic | A finite type catalogue with bounded essential width, fixed internal prime union, nondegeneracy, infinitely many primitive points, and primitive endpoint exponent below one is Evertse-finite. The theorem separates the exact primitive invariant from the merely sufficient raw gcd certificate. |
 | [`T-9832`](claims/T-9832-oriented-completion-criticality.md) | PR #16/PR #35/PR #38 completion interface | Selected periodic approximants, equal factors, same-symbol returns, and maximal runs share the `M`-deep product-formula wedge; reciprocal phase carries use its `N`-deep orientation. Both slopes are sharp, but their numerators and real/completion values are not interchangeable. |
 | [`T-9833`](claims/T-9833-delayed-combined-pade-shift-rigidity.md) | PR #20 period-ten delayed combined-moment frontier | Moving the combined cancellation window gives exact shifted Cramer and error formulas but preserves a cubic prime-to-six Schur core. At every delay scale the unreduced exponent stays at most `log_81(64)<1`; linear delays still require the full cubic outside-prime gcd. |
+| [`T-9834`](claims/T-9834-bounded-essential-width-degeneracy-forest.md) | PR #33 / PR #38 `ACL-N071` Evertse frontier | Nominal width may grow without bound when every zero sum decomposes into uniformly bounded nondegenerate leaves. The leaf types form a finite primitive alphabet, and a leaf carrying divergent height is excluded by its own primitive endpoint gate. |
+| [`T-9835`](claims/T-9835-adjacent-schur-core-gcd-localization.md) | PR #20 period-ten gcd frontier | The evaluated canonical Padé gcd divides one explicit quadratic cyclotomic step times `gcd(G_n,G_(n+1))^2`. Quadratic primitive height at period ten therefore requires adjacent Schur cores to share at least half of their cubic logarithmic mass. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -572,6 +577,48 @@ independently reconstructed and which conjectural boundaries remain open.
    the distinguished `C_1` ray through one boundary arc is exactly equivalent
    to Collatz. The next analytic target must therefore establish regularity
    for that binary extreme ray itself; ambient operator spectra do not suffice.
+
+## Wave twenty-three checkpoint
+
+The checkpoint adds four deliberately different structural reductions.
+
+`L-9904` makes the compressed-cycle search canonical.  For a valuation word
+`w`, exact divisibility of its affine numerator by `2^A-3^k` already forces
+positive integral intermediate states and the prescribed exact valuations.
+The common geometric factor in `w^r` cancels from numerator and denominator,
+so powers add no cycle candidate; rotations are merely different starting
+states.  Search bounds must use the primitive root's odd length, shortcut
+period, and number of valuations at least two.
+
+`T-9834` extends the fixed-width Evertse lane without pretending that a
+growing-dimensional equation is fixed-dimensional.  An arbitrarily large
+zero sum may be split into inclusion-minimal nondegenerate leaves.  If leaf
+width, coefficients, internal prime union, and endpoint masks are uniformly
+bounded, their primitive projective types form a finite alphabet.  A selected
+leaf carrying unbounded primitive height is impossible under its own endpoint
+product gate.  Forest size, raw scales, and symbolic forest words remain
+uncontrolled and are stated as the exact residual boundary.
+
+`L-9905` resolves the support-extraction question for a faithful atomic
+operator.  The correct quotient removes the entire basin of the trivial
+cycle, not only the cycle.  On weighted `ell^1`, a nonzero quotient point
+eigenvector restricts to an unaccounted functional component.  For shortcut
+Collatz, every cycle-free component supplies genuine bilateral-path
+eigenvectors, while the one-sided sum proposed in issue #27 has a boundary
+term.  The faithful operator is not nuclear, so a smoothed Fredholm program
+still needs a support-preserving intertwiner.
+
+`T-9835` sharpens the period-ten gcd target.  Consecutive normal Padé systems
+and the exact Hankel factorization give
+
+\[
+ g_n\mid \mathcal C_n\gcd(G_n,G_{n+1})^2,
+\]
+
+where `log C_n=Theta(n^2)`.  Hence the almost-total cubic evaluated
+gcd required by `T-9830` can exist only if adjacent base Schur cores already
+share at least half of their cubic logarithmic mass.  No bound for that
+adjacent gcd is claimed.
 
 ## Integration boundary
 

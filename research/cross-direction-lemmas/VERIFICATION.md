@@ -271,6 +271,10 @@ received nonauthoring cold review and remain `PROPOSED`.
 | PR #19 at `f764bdc`; local `L-9889`, `L-9890`, `L-9894`, `L-9897`, `L-9900`--`L-9902`; PR #38 `ACL-N017`; Evertse 1984 Corollary 1 | `L-9903` converts each central renewal star and full bridge into a primitive nondegenerate four-term zero sum with exact heights and outside-`{2,3}` products `XY` and `UV`. | The conversion passes every Evertse hypothesis except subunit endpoint mass. Any nonperiodic survivor forces endpoint exponent at least one; a global H compatibility theorem must create a fixed proportional deficit. |
 | Local `T-9801`, `T-9823`, `T-9827`, `T-9829`, `R-9810`; PR #16 at `87478352`; PR #35 at `52d320b6`; PR #38 `ACL-N070` | `T-9832` proves exact periodic-selection divisibility for composite `M`, reconstructs equal-factor, same-symbol, and maximal-run laws, and gives the opposite-orientation reciprocal zero-carry wedge with sharp slopes. | One two-orientation theorem exists, but its ordinary and reciprocal numerators are distinct. Total periodic approximation slope is `1+kappa^(-1)`, and no nonperiodic real/completion identification is allowed. |
 | Local `T-9821`, `T-9824`, `T-9830`; live PR #20 `L-9418`, `R-9410`, `Q-9413` at `82ca2f9` | `T-9833` constructs the shifted combined-moment cancellation system, computes every Cramer endpoint and first error, tracks the shifted Schur-core degree, proves prime-to-six raw clearing, and optimizes arbitrary delay scales. | For every `r>=2`, unreduced exponent is at most `log_81(64)<1`; at linear delay the original cubic gcd requirement is unchanged. A large outside-prime specialization gcd remains possible and open. |
+| Issue #9 affine-monoid supplement at main `b40e5c4`; PR #11 at `7950713`; elementary accelerated replay | `L-9904` proves that `D(w)|C(w)` is already a complete positive exact-cycle certificate, derives the common geometric factor for powers, and transports certificates through rotations. | Pure powers and rotations are exact duplicates, not new cycle bounds. General compressed grammars still require a root-closed canonicalization algorithm and a genuinely primitive search frontier. |
+| Issue #27; PR #38 `ACL-N054` at `5ad9657`; exact weighted-sequence-space algebra | `L-9905` gives sharp boundedness tests, the full-basin quotient decomposition, componentwise point-spectrum extraction, Collatz bilateral-path eigenvectors, and counterexamples to cycle-only, one-sided, approximate-spectrum, and smooth-density shortcuts. | The faithful atomic pushforward is noncompact and nonnuclear. Any Fredholm or smoothed spectral certificate still needs an injective support-preserving quotient intertwiner and a certified nonzero point vector. |
+| Local `T-9831`, `L-9900`--`L-9902`; PR #33 at `c9d62bc`; PR #38 `ACL-N071` at `5ad9657`; Evertse 1984 Corollary 1 | `T-9834` decomposes unbounded nominal equations into inclusion-minimal zero-sum leaves, freezes only bounded leaf types, and excludes a leaf carrying divergent primitive height under its own endpoint-product gate. | Forest size, leaf multiplicities, raw scales, and forest words may remain unbounded. A physical compiler must prove bounded leaf width and select a height-carrying leaf; neither follows abstractly. |
+| Local `T-9821`, `T-9824`, `T-9826`, `T-9830`; live PR #20 `Q-9413` at `82ca2f9` | `T-9835` factors each base Hankel determinant into its specialized Vandermonde and Schur core, then uses both neighboring Padé cross determinants to trap the evaluated gcd by `C_n gcd(G_n,G_(n+1))^2`. | `log C_n` is only quadratic, so quadratic primitive height requires a half-cubic adjacent-core gcd. No upper bound or large common factor for that adjacent gcd is proved. |
 
 Live-source reconciliation after this table found `PR3/T-0039` compatible
 with the moving-high-window boundary of `T-9825`; `PR20/R-9410` and `T-9422`
@@ -350,6 +354,10 @@ not promoted beyond their native status.
 | `L-9903` | H/Evertse lane and independent completion-master reviewer | both four-coordinate zero sums, gcd one, every proper-pair exclusion, exact heights, outside products, state recovery, divergent height, endpoint factorizations, bounded-letter lower bound, and local sharpness families were reconstructed | endpoint exponent below one is the sole missing Evertse hypothesis for these canonical tuples, not the sole obstruction to H termination; isolated local families do not concatenate automatically |
 | `T-9832` | completion-master lane and independent H/Evertse reviewer | composite-`M` unit divisibility, periodic rational formula, integer inequality including the zero word, overlapping copied factors, complexity floor, same-symbol and maximal-run laws, zipper sign, reciprocal strictness/equality case, sharpness, and source mapping were reconstructed | ACL-N070 is resolved only in two orientations; a stronger common-cocycle, identical-slope, predecessor-only run, or nonperiodic cross-place interpretation is false |
 | `T-9833` | period-ten delayed-combined lane and independent fixed-width reviewer | shifted Hankel indexing, Cramer sums, Schur homogeneity, exact first error, unique 3-adic numerator maximizer, integral raw pair, prime-to-six gcd, uniform real convergence, and the `n^(3/2)` delay dichotomy were reconstructed | the ceiling requires `r>=2` and `M>=n+1`; `r=1` and the canonical edge `M=n` have different maximizers and are deliberately outside scope |
+| `L-9904` | compressed-cycle lane and independent fixed-width reviewer | affine composition orientation, lossless summary decoding, divisibility-to-replay induction, power/gcd factorization, rotation identity, primitive-necklace classification, and Hercher local-minimum count were reconstructed; the sole typographical multiplication error was corrected | the result removes duplicate certificates but neither searches a primitive grammar frontier nor produces a nontrivial cycle |
+| `L-9905` | functional-graph spectral lane and integrating reviewer | pushforward/composition norm criteria, complete-invariance quotient, component restriction, cycle-only counterexample, Collatz bilateral path, boundary term, approximate-spectrum example, and noncompactness were reconstructed | the full-basin quotient is exact but its nonzero certification is already counterexample-level; transport from a nuclear operator remains open |
+| `T-9834` | bounded-essential-width lane and independent H/Evertse reviewer | minimal-leaf termination, finite masks/types, primitive endpoint transfer, fixed-dimension Evertse application, marked-height subsequence, raw `Theta-gamma` gate, and six sharp counterfamilies were reconstructed | nominal width is harmless only after a physical decomposition supplies uniform leaf width and a leaf carrying divergent primitive height |
+| `T-9835` | period-ten adjacent-core lane and independent completion-master reviewer | base determinant row/column factors, Vandermonde quotient, `epsilon_n=Delta_(n+1)/Delta_n`, two-order raw clearing, exact prime-to-six cross content, two-sided divisibility, and all cubic constants were reconstructed | the theorem localizes the missing gcd but does not estimate `gcd(G_n,G_(n+1))` |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -975,6 +983,19 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `T-9833` does not bound the shifted specialization gcd. It closes delay as
   an ungcded-height mechanism for periods `r>=2`; outside-prime cubic
   cancellation remains the live period-ten arithmetic target.
+- `L-9904` does not exclude primitive accelerated cycles. It proves that
+  powered words and cyclic rotations cannot manufacture new certificates or
+  inflate the cycle parameters used in external bounds.
+- `L-9905` does not produce spectral excess. Its exact quotient theorem makes
+  point-spectrum support faithful, while also showing why a cycle-only
+  quotient, one-sided orbit sum, approximate eigenvalue, or smooth density is
+  insufficient.
+- `T-9834` does not make every growing-width stage fixed-dimensional. It
+  applies only after a uniformly bounded nondegenerate leaf decomposition and
+  a height-carrying leaf are established in the physical architecture.
+- `T-9835` does not bound the adjacent Schur-core gcd. It proves that this
+  gcd, rather than arbitrary cancellation in two evaluated sums, must carry
+  at least half of the cubic mass required by the canonical period-ten route.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -1516,3 +1537,22 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     the numerator maximizer `k=n,t=M-n-1`. Split arbitrary delays at the
     `n^(3/2)` scale, restrict the ceiling to `r>=2`, and do not confuse raw
     height with height after a prime-to-six gcd.
+80. For `L-9904`, decode the affine summary before using divisibility, prove
+    every intermediate numerator congruence and exact valuation, cancel the
+    same geometric factor from `C(w^s)` and `D(w^s)`, and count shortcut local
+    minima on the primitive root rather than the powered presentation.
+81. For `L-9905`, use a faithful positive weight, verify boundedness of the
+    chosen atomic operator, quotient by the entire trivial basin, and certify
+    a genuine nonzero point eigenvector. Do not replace any of these with a
+    cycle-only quotient, one-sided ray, approximate spectrum, or smooth
+    density on another space.
+82. For `T-9834`, split to inclusion-minimal zero-sum leaves, freeze ordered
+    leaf positions rather than ambient indices, normalize each leaf by its
+    own gcd, and apply Evertse only after fixing leaf dimension, coefficients,
+    internal prime union, and endpoint mask. The selected leaf must carry
+    divergent primitive height on the same subsequence.
+83. For `T-9835`, retain both neighboring canonical Padé identities and both
+    order-dependent clearing factors. Separate the cumulative specialized
+    Vandermonde from its quadratic consecutive quotient, strip only primes
+    two and three, and do not turn the half-core necessity into an adjacent-
+    gcd upper bound.
