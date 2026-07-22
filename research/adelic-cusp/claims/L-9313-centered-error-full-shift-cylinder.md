@@ -8,7 +8,7 @@
 **Created:** 2026-07-22  
 **Last updated:** 2026-07-22  
 **Dependencies:** elementary affine recurrence; `T-9315` for the centered-orbit crosswalk  
-**Scope:** every coprime binary expanding chart; nearest-integer stabilization for `64 -> 81`  
+**Scope:** every coprime expanding binary chart; nearest-integer stabilization for `64 -> 81`  
 **Related counterexample candidates:** none
 
 ## 1. Setup
@@ -67,23 +67,23 @@ and
 \boxed{
 N u_n-Mu_{n+1}
 =
-\varepsilon_n-\varepsilon_{n+1}.
+\varepsilon_n-arepsilon_{n+1}.
 }
 \tag{4}
 \]
 
 ## 2. Unique bounded error path
 
-The sequence `(u_n)` is the unique bounded real sequence satisfying `(4)` for the fixed itinerary.
+The sequence `(u_n)` is the unique bounded real solution of `(4)` for the fixed itinerary.
 
-Indeed, if `(u_n)` and `(v_n)` are bounded solutions, their difference obeys
+Indeed, if `(u_n)` and `(v_n)` are bounded solutions, then
 
 \[
 N(u_n-v_n)
-=M(u_{n+1}-v_{n+1}).
+=M(u_{n+1}-v_{n+1}),
 \]
 
-Hence
+so
 
 \[
 u_{n+k}-v_{n+k}
@@ -91,7 +91,7 @@ u_{n+k}-v_{n+k}
 \left(\frac NM\right)^k(u_n-v_n).
 \]
 
-Because `N/M>1`, boundedness forces `u_n=v_n`.
+Since `N/M>1`, boundedness forces `u_n=v_n`.
 
 Equivalently, the backward transition
 
@@ -99,31 +99,39 @@ Equivalently, the backward transition
 \boxed{
 u_n
 =
-\frac{M u_{n+1}+\varepsilon_n-\varepsilon_{n+1}}{N}
+\frac{M u_{n+1}+\varepsilon_n-arepsilon_{n+1}}{N}
 }
 \tag{5}
 \]
 
-is a contraction of ratio `M/N`. Every infinite binary itinerary therefore carries exactly one bounded centered-error path.
+is a contraction of ratio `M/N`.
 
-For every itinerary that is not eventually all zero or eventually all one at a tail, the corresponding errors are nonzero and satisfy
+For any tail that is not identically all zero or all one, the corresponding error is nonzero and
 
 \[
 |u_n|<1/N.
 \]
 
-The sign recovers the digit:
+Its sign recovers the digit:
 
 \[
+\boxed{
 \varepsilon_n=\mathbf1_{u_n>0}.
+}
 \tag{6}
 \]
 
-## 3. The real graph is a full shift
+## 3. The real error system is a full shift
 
-Equation `(5)` shows that no symbolic itinerary is removed by the real centered-error condition alone.
+Equation `(5)` shows that no binary itinerary is removed by the real centered-error condition alone.
 
-In absolute-value coordinates `r_n=|u_n|`, the two transition types are
+In absolute-value coordinates
+
+\[
+r_n=|u_n|,
+\]
+
+the forward transition is
 
 \[
 \boxed{
@@ -141,7 +149,7 @@ r_{n+1}=\frac{1-Nr_n}{M}}
 
 when the sign flips.
 
-Their inverse branches are contractions
+The inverse branches are
 
 \[
 \boxed{
@@ -157,30 +165,32 @@ r_n=\frac{1-Mr_{n+1}}{N}.}
 \tag{10}
 \]
 
-Each inverse branch maps the critical interval `(0,1/N)` into itself. Thus the error coordinate realizes the full two-shift. A proof based only on showing that real scheduled cylinders become empty cannot succeed.
+Both map the critical interval `(0,1/N)` into itself. Thus every infinite symbolic path has a nonempty real centered-error cylinder.
+
+This rules out any proof that uses only real interval emptiness. `R-9303` records that method closure.
 
 ## 4. Nearest-integer recurrence
 
-To lift the error path to a centered power orbit, one needs ordinary integers `B_n` satisfying
+A centered power orbit additionally needs ordinary integers `B_n` satisfying
 
 \[
 \xi(N/M)^n=B_n+u_n.
 \]
 
-The required integer recurrence is
+They must obey
 
 \[
 \boxed{
 M B_{n+1}
-=N B_n+\varepsilon_n-\varepsilon_{n+1}.
+=N B_n+arepsilon_n-arepsilon_{n+1}.
 }
 \tag{11}
 \]
 
-For a finite itinerary prefix
+For a finite prefix
 
 \[
-\varepsilon_0,\ldots,\varepsilon_K,
+\varepsilon_0,\ldots,arepsilon_K,
 \]
 
 iteration gives
@@ -192,11 +202,11 @@ N^K B_0
 +
 \sum_{i=0}^{K-1}
 N^{K-1-i}M^i
-(\varepsilon_i-\varepsilon_{i+1}).
+(\varepsilon_i-arepsilon_{i+1}).
 \tag{12}
 \]
 
-Because `N` is invertible modulo `M^K`, integrality through time `K` selects exactly one residue class
+Because `N` is invertible modulo `M^K`, integrality through time `K` selects exactly one class
 
 \[
 \boxed{
@@ -205,7 +215,7 @@ B_0\equiv R_K(\varepsilon)\pmod{M^K}.
 \tag{13}
 \]
 
-The classes are nested as `K` grows. Therefore every infinite itinerary selects one point
+The classes are nested. Every infinite itinerary therefore selects one point
 
 \[
 \boxed{
@@ -220,7 +230,7 @@ When `M` is a power of `2`, this inverse limit is `Z_2`.
 
 ## 5. Exact completion series
 
-In the `M`-adic completion, equation `(11)` can be solved backward:
+Solving `(11)` backward in the `M`-adic completion gives
 
 \[
 \boxed{
@@ -228,13 +238,13 @@ B_0^*(\varepsilon)
 =
 -
 \sum_{n\ge0}
-(\varepsilon_n-\varepsilon_{n+1})
+(\varepsilon_n-arepsilon_{n+1})
 \frac{M^n}{N^{n+1}}.
 }
 \tag{15}
 \]
 
-The series converges because the numerator contains `M^n` and every denominator is a unit at the primes dividing `M`.
+The series converges because `M^n` tends to zero at every prime dividing `M`, while `N` is a unit there.
 
 For `M=64,N=81`, telescoping gives
 
@@ -266,12 +276,12 @@ B_0^*(\varepsilon)
 
 ## 6. Ordinary realization criterion
 
-The itinerary admits a positive centered parameter if and only if the selected completion point is an ordinary positive integer:
+The itinerary admits a positive centered parameter exactly when its selected completion point is an ordinary positive integer:
 
 \[
 \boxed{
 \exists\xi>0
-\text{ with centered itinerary }\varepsilon
+\text{ with itinerary }\varepsilon
 \iff
 B_0^*(\varepsilon)\in\mathbb Z_{\ge1}.
 }
@@ -280,7 +290,7 @@ B_0^*(\varepsilon)\in\mathbb Z_{\ge1}.
 
 ### Forward implication
 
-A centered orbit has ordinary nearest integers `B_n`; its first nearest integer belongs to every cylinder `(13)`, so it equals the completion point `(14)`.
+A centered orbit has ordinary nearest integers `B_n`; its first nearest integer lies in every cylinder `(13)`, so it equals `(14)`.
 
 ### Converse implication
 
@@ -293,15 +303,15 @@ If `B_0^*` is an ordinary integer, recurrence `(11)` produces ordinary integers 
 \tag{19}
 \]
 
-Then induction using `(4)` and `(11)` gives
+Induction using `(4)` and `(11)` gives
 
 \[
 \xi(N/M)^n=B_n+u_n
 \]
 
-for every `n`. If `B_0^*>=1`, then `xi>0`, and `T-9315` reconstructs the nontrivial ordinary chart orbit.
+for all `n`. If `B_0^*>=1`, then `xi>0`, and `T-9315` reconstructs the nontrivial ordinary chart orbit.
 
-The two trivial itineraries have `B_0^*=0` and centered parameter `xi=0`.
+The two constant itineraries select `B_0^*=0` and the degenerate parameter `xi=0`.
 
 ## 7. Least-representative stabilization
 
@@ -311,7 +321,7 @@ Let
 0\le R_K<M^K
 \]
 
-be the least representative of the finite cylinder `(13)`. Then
+be the least representative of `(13)`. Then
 
 \[
 \boxed{
@@ -323,54 +333,54 @@ R_K\text{ is eventually constant.}
 \tag{20}
 \]
 
-This is the same finite-versus-adic boundary isolated in PR #20's active-cylinder theorem and in the H-frontier ghost/carry program.
+- If `R_K` stabilizes at `R`, then `R` belongs to every cylinder and equals the inverse-limit point.
+- If the inverse-limit point is an ordinary nonnegative integer `R`, then once `M^K>R`, its least representative modulo `M^K` is exactly `R`.
 
-Thus the centered-power equivalence does not remove the stabilization wall. It gives the stabilization wall a canonical real error coordinate.
+This is the finite-versus-adic boundary also isolated in PR #20's active-cylinder theorem and in the H-frontier ghost/carry program.
 
 ## 8. Consequence for the proof program
 
-The ordinary-section problem is not:
+The ordinary-section problem is not
 
 > show that the centered real error cylinders are empty.
 
-They are never empty for a prescribed binary itinerary.
+Every binary itinerary has one such real path.
 
-It is:
+It is
 
 > show that no nontrivial itinerary's nested nearest-integer cylinders stabilize at an ordinary positive integer.
 
-The strongest next invariant must couple:
+The required invariant must couple:
 
 1. the full-shift real error path `(u_n)`;
-2. the nested `2`-adic integer cylinder `(R_K mod M^K)`;
-3. the sign/digit transition;
+2. the nested arithmetic cylinder `R_K mod M^K`;
+3. sign changes of the itinerary;
 4. ordinary least-representative growth.
 
 ## 9. Dependency audit
 
-- The real companion formula and bounded-error recurrence are elementary geometric-series algebra.
-- Finite cylinder uniqueness uses only `gcd(M,N)=1`.
+- The real companion and error recurrence are elementary geometric-series algebra.
+- Finite-cylinder uniqueness uses only `gcd(M,N)=1`.
 - The completion series is direct backward iteration.
-- `T-9315` is used only to identify a positive ordinary cylinder lift with the centered power orbit.
+- `T-9315` is used only to identify a positive ordinary cylinder lift with a centered power orbit.
 - PR #20 and PR #19 are cross-program parallels, not proof dependencies.
 
 ## 10. Gap audit
 
 - The lemma does not prove nonstabilization.
-- Full symbolic support of the real error system means entropy or interval length alone cannot exclude an ordinary lift.
-- An itinerary may select a nonordinary `2`-adic integer even though every finite cylinder has positive ordinary representatives.
-- A proof that a particular structured itinerary is nonordinary does not cover all binary itineraries.
-- The chart translation to all possible Collatz counterexamples remains separate.
+- Full symbolic support means entropy or real interval length alone cannot exclude an ordinary lift.
+- Every finite cylinder contains positive ordinary representatives, but their inverse-limit point may be nonordinary.
+- Excluding one structured itinerary class does not cover all binary itineraries.
+- Translation to all possible Collatz counterexamples remains separate.
 
-## 11. Suggested next attack
+## 11. Correct next attack
 
-Analyze the new base-`M` block digits
+Write
 
 \[
-q_K
-=
-\frac{R_{K+1}-R_K}{M^K}
-\in\{0,\ldots,M-1\}.
+R_{K+1}=R_K+q_KM^K,
+\qquad
+q_K\in\{0,\ldots,M-1\}.
 \]
 
-Use the centered errors to derive an exact recurrence or sign restriction for `q_K`. Proving infinitely many `q_K` are nonzero for every nontrivial itinerary would close the ordinary section.
+`L-9314` computes `q_K` exactly. Proving infinitely many `q_K` are nonzero for every nontrivial itinerary would close the ordinary section.
