@@ -15,7 +15,7 @@ Dependencies: NOTATION.md (D-9901 map C; D-9902 map T; D-9903 odd part; D-9904 m
               vector v_i, a_k; D-9907 bounded/unbounded/divergent; D-9908 cycles and the
               S-cycle data m, a_i, K; D-9909 counterexample)
 Scope: Orbits of C and T on Z^+ and of S on the positive odd integers. No claim is made
-       about extensions to Z^- , Z_2, or Q; the boxed remark in Part 8 of the Proof states
+       about extensions to Z^- , Z_2, or Q; the boxed remark in Part 7 of the Proof states
        explicitly which step is integer-only, and the Adversarial tests section contains a
        clearly labeled extension check outside Z^+.
 Related counterexample candidates: none
@@ -95,8 +95,8 @@ the cycle $\Delta$ is unique;
 The same trichotomy holds verbatim for $C$ on $\mathbb{Z}^+$ with trivial cycle
 $\{1,4,2\}$, and for $S$ on the positive odd integers with trivial cycle $\{1\}$
 (started at $\mathrm{odd}(n)$). Underlying it is the general integer-orbit dichotomy
-Lemma D (Part 8), whose pigeonhole step is valid **only** for orbits in sets of positive
-integers — see the boxed remark in Part 8.
+Lemma D (Part 7), whose pigeonhole step is valid **only** for orbits in sets of positive
+integers — see the boxed remark in Part 7.
 
 **L-9901.5 (counterexample dichotomy).** For every $n \in \mathbb{Z}^+$, the following
 are equivalent:
@@ -148,7 +148,7 @@ adversarially checked serves:
   statement that "avoiding 1 forever" *is* "nontrivial cycle or divergence", in each of
   the three standard coordinate systems, with the failure modes matching across systems.
 - **Issue #21 (T-9602).** T-9602 needs "unbounded $\Rightarrow$ divergent" for integer
-  orbits. That is exactly Lemma D(3) (Part 8), proved here in general form for any map of
+  orbits. That is exactly Lemma D(3) (Part 7), proved here in general form for any map of
   any set of positive integers, together with the boxed warning that the step is a
   pigeonhole argument valid only for integers — the precise reason a 2-adic or rational
   symbolic construction with bounded non-periodic behavior would *not* transfer to
@@ -370,7 +370,7 @@ $(3x_j+1)/2^{\,i}$ for $1 \le i \le a_j$ (by (b), plus the endpoint $i = a_j$ gi
 $x_{j+1}$ by (a)). Every index $k \ge 0$ lies in $[0, e]$ or in exactly one
 $(t_j, t_{j+1}]$, so both inclusions hold. $\square$
 
-### Part 5 — proof of L-9901.1
+### Part 4 — proof of L-9901.1
 
 Let $n \in \mathbb{Z}^+$ and $x_0 := \mathrm{odd}(n)$.
 
@@ -390,7 +390,7 @@ allowed throughout (D-9905 defines "reaches 1" with $k \ge 0$); e.g. $n = 1$ sat
 all three at index $0$, and $n = 2^e$ satisfies them via $T^e(n) = C^e(n) = 1 = x_0$.
 $\blacksquare$
 
-### Part 6 — proof of L-9901.2
+### Part 5 — proof of L-9901.2
 
 Let $n$, $x_0$, $x_j$, $a_j$, $e$ be as in P3, and $M_C, M_T, M_S$ as in the statement.
 Note $M_S = \sup_j x_j$ and each $x_j$ is odd.
@@ -424,12 +424,12 @@ $M_C = M_T = 2^{10} = n > 2 = (3M_S+1)/2$, so neither $n$-term in (ii) can be dr
 $n = 4$: $M_C = M_T = 4$, so the left inequality $M_T \le M_C$ can be equality while
 $M_C < 2M_T$. $\blacksquare$
 
-### Part 7 — proof of L-9901.3
+### Part 6 — proof of L-9901.3
 
 Throughout, $\Gamma$ denotes a $C$-cycle set, $\Delta$ a $T$-cycle set, $\Sigma$ an
 $S$-cycle set, and $\Phi, \Psi, \Phi', \Psi'$ are as in the Statement.
 
-**Step 7.1: $\Phi$ maps $\mathrm{Cyc}(C)$ into $\mathrm{Cyc}(T)$, and
+**Step 6.1: $\Phi$ maps $\mathrm{Cyc}(C)$ into $\mathrm{Cyc}(T)$, and
 $(\Phi(\Gamma))_{\mathrm{odd}} = \Gamma_{\mathrm{odd}}$.**
 Let $\Gamma \in \mathrm{Cyc}(C)$. By P0.1(iv), $C|_\Gamma$ is a bijection of $\Gamma$; by
 P0.4, $\Gamma_{\mathrm{odd}} \ne \emptyset$. The removed set
@@ -455,7 +455,7 @@ and maps $\Phi(\Gamma)$ into itself, the (global) $T$-orbit of any
 $y \in \Phi(\Gamma)$ coincides with its return-map orbit. Hence
 $\Phi(\Gamma) \in \mathrm{Cyc}(T)$.
 
-**Step 7.2: $\Phi'$ maps $\mathrm{Cyc}(T)$ into $\mathrm{Cyc}(S)$.**
+**Step 6.2: $\Phi'$ maps $\mathrm{Cyc}(T)$ into $\mathrm{Cyc}(S)$.**
 Let $\Delta \in \mathrm{Cyc}(T)$; $\Delta_{\mathrm{odd}} \ne \emptyset$ by P0.4. Let
 $x \in \Delta_{\mathrm{odd}}$ and apply P3 with $n = x$ (so $e = 0$, $t_0 = 0$,
 $t_1 = a(x)$): the iterates $T^i(x) = (3x+1)/2^{\,i}$ for $1 \le i \le a(x)$ are even for
@@ -465,7 +465,7 @@ occurs at time $a(x)$ with value $S(x)$. By P0.5, $\Delta_{\mathrm{odd}}$ is a c
 of the return map, which agrees pointwise with $S$; so
 $\Phi'(\Delta) = \Delta_{\mathrm{odd}} \in \mathrm{Cyc}(S)$.
 
-**Step 7.3: $\Psi$ maps $\mathrm{Cyc}(T)$ into $\mathrm{Cyc}(C)$; moreover $\Psi(\Delta)$
+**Step 6.3: $\Psi$ maps $\mathrm{Cyc}(T)$ into $\mathrm{Cyc}(C)$; moreover $\Psi(\Delta)$
 is the point set of the $C$-orbit of any $x \in \Delta$, the added set
 $N := \{3x+1 : x \in \Delta_{\mathrm{odd}}\}$ is disjoint from $\Delta$, and
 $|\Psi(\Delta)| = |\Delta| + |\Delta_{\mathrm{odd}}|$.**
@@ -487,7 +487,7 @@ contradicts injectivity of $T|_\Delta$ (P0.1(iv)). Since $z \mapsto 3z+1$ is inj
 $|N| = r$ and $|\Psi(\Delta)| = p + r$; by P0.1(iii) this is also the least $C$-period of
 each of its points.
 
-**Step 7.4: $\Psi'$ maps $\mathrm{Cyc}(S)$ into $\mathrm{Cyc}(T)$; moreover $\Psi'(\Sigma)$
+**Step 6.4: $\Psi'$ maps $\mathrm{Cyc}(S)$ into $\mathrm{Cyc}(T)$; moreover $\Psi'(\Sigma)$
 is the point set of the $T$-orbit of any $x \in \Sigma$, and $|\Psi'(\Sigma)| = K :=
 \sum_{x \in \Sigma} a(x)$.**
 Let $\Sigma \in \mathrm{Cyc}(S)$, $m := |\Sigma|$, and fix $x \in \Sigma$; then
@@ -511,31 +511,31 @@ are pairwise distinct and disjoint from $\Sigma$; disjointness from $\Sigma$ als
 directly since $(3z+1)/2^{\,i}$ has $\nu_2 = a(z) - i \ge 1$ for $i \le a(z)-1$, i.e. is
 even, while $\Sigma$ is a set of odd numbers.)
 
-**Step 7.5: the four compositions are identities.**
+**Step 6.5: the four compositions are identities.**
 
 - $\Psi \circ \Phi = \mathrm{id}_{\mathrm{Cyc}(C)}$: with
-  $R = \{3x+1 : x \in \Gamma_{\mathrm{odd}}\} \subseteq \Gamma$ (Step 7.1) and
+  $R = \{3x+1 : x \in \Gamma_{\mathrm{odd}}\} \subseteq \Gamma$ (Step 6.1) and
   $(\Phi(\Gamma))_{\mathrm{odd}} = \Gamma_{\mathrm{odd}}$:
   $\Psi(\Phi(\Gamma)) = (\Gamma \setminus R) \cup \{3x+1 : x \in \Gamma_{\mathrm{odd}}\}
   = (\Gamma \setminus R) \cup R = \Gamma$.
 - $\Phi \circ \Psi = \mathrm{id}_{\mathrm{Cyc}(T)}$: with
-  $N = \{3x+1 : x \in \Delta_{\mathrm{odd}}\}$, $N \cap \Delta = \emptyset$ (Step 7.3),
+  $N = \{3x+1 : x \in \Delta_{\mathrm{odd}}\}$, $N \cap \Delta = \emptyset$ (Step 6.3),
   and $(\Psi(\Delta))_{\mathrm{odd}} = \Delta_{\mathrm{odd}}$ ($N$ consists of even
   numbers): $\Phi(\Psi(\Delta)) = (\Delta \cup N) \setminus
   \{3x + 1 : x \in \Delta_{\mathrm{odd}}\} = (\Delta \cup N) \setminus N = \Delta$.
 - $\Phi' \circ \Psi' = \mathrm{id}_{\mathrm{Cyc}(S)}$: the elements of
-  $\Psi'(\Sigma) \setminus \Sigma$ are even (end of Step 7.4) and the elements of
+  $\Psi'(\Sigma) \setminus \Sigma$ are even (end of Step 6.4) and the elements of
   $\Sigma$ are odd, so $(\Psi'(\Sigma))_{\mathrm{odd}} = \Sigma$.
 - $\Psi' \circ \Phi' = \mathrm{id}_{\mathrm{Cyc}(T)}$: let $\Delta \in \mathrm{Cyc}(T)$
-  and pick $x \in \Delta_{\mathrm{odd}}$ (P0.4). By Step 7.2,
-  $\Sigma := \Delta_{\mathrm{odd}} \in \mathrm{Cyc}(S)$ and $x \in \Sigma$. By Step 7.4,
+  and pick $x \in \Delta_{\mathrm{odd}}$ (P0.4). By Step 6.2,
+  $\Sigma := \Delta_{\mathrm{odd}} \in \mathrm{Cyc}(S)$ and $x \in \Sigma$. By Step 6.4,
   $\Psi'(\Sigma)$ is the point set of the $T$-orbit of $x$ — which is $\Delta$, by
   P0.1(iv) applied to $x \in \Delta$. So $\Psi'(\Phi'(\Delta)) = \Delta$.
 
 Hence $\Phi, \Psi$ are mutually inverse bijections between $\mathrm{Cyc}(C)$ and
 $\mathrm{Cyc}(T)$, and $\Phi', \Psi'$ between $\mathrm{Cyc}(T)$ and $\mathrm{Cyc}(S)$.
 
-**Step 7.6: trivial matches trivial; restriction to nontrivial cycles; composite.**
+**Step 6.6: trivial matches trivial; restriction to nontrivial cycles; composite.**
 Direct computation: $\Phi(\{1,4,2\}) = \{1,4,2\} \setminus \{3 \cdot 1 + 1\} = \{1,2\}$
 and $\Phi'(\{1,2\}) = \{1\}$; equivalently $\Psi(\{1,2\}) = \{1,2,4\}$,
 $\Psi'(\{1\}) = \{1\} \cup \{(3 \cdot 1 + 1)/2^{\,i} : 1 \le i \le a(1) - 1\}
@@ -545,14 +545,14 @@ is nontrivial iff $\Phi(\Gamma)$ is nontrivial ($\Phi(\Gamma) = \{1,2\}$ would f
 $\Gamma = \Psi(\{1,2\}) = \{1,4,2\}$); similarly for $\Phi'$. So each of $\Phi, \Psi,
 \Phi', \Psi'$ restricts to a bijection between the sets of nontrivial cycles. The
 composite $\Phi' \circ \Phi : \mathrm{Cyc}(C) \to \mathrm{Cyc}(S)$ is
-$\Gamma \mapsto (\Phi(\Gamma))_{\mathrm{odd}} = \Gamma_{\mathrm{odd}}$ (Step 7.1), and
+$\Gamma \mapsto (\Phi(\Gamma))_{\mathrm{odd}} = \Gamma_{\mathrm{odd}}$ (Step 6.1), and
 its inverse $\Psi \circ \Psi'$ sends $\Sigma$ to
 $\Psi'(\Sigma) \cup \{3x+1 : x \in \Sigma\} = \Sigma \cup \{(3x+1)/2^{\,i} : x \in \Sigma,
 \ 0 \le i \le a(x)-1\}$ (using $(\Psi'(\Sigma))_{\mathrm{odd}} = \Sigma$ and
 $3x + 1 = (3x+1)/2^0$).
 
-**Step 7.7: lengths.** For $\Sigma \in \mathrm{Cyc}(S)$ with $m = |\Sigma|$,
-$K = \sum_{x \in \Sigma} a(x)$: Step 7.4 gives $|\Psi'(\Sigma)| = K$, and Step 7.3
+**Step 6.7: lengths.** For $\Sigma \in \mathrm{Cyc}(S)$ with $m = |\Sigma|$,
+$K = \sum_{x \in \Sigma} a(x)$: Step 6.4 gives $|\Psi'(\Sigma)| = K$, and Step 6.3
 applied to $\Delta = \Psi'(\Sigma)$ (with $\Delta_{\mathrm{odd}} = \Sigma$, so $r = m$)
 gives $|\Psi(\Psi'(\Sigma))| = K + m$. By P0.1(iii) these cardinalities are the cycle
 lengths (least periods). Sanity check on the trivial cycles: $m = 1$, $K = a(1) = 2$:
@@ -563,7 +563,7 @@ $\mathbb{Z}^+$. If none exist for one of the maps, the bijections show none exis
 other two, and all statements hold with the nontrivial-cycle sets empty. Per D-9909 the
 file stays neutral on which situation obtains.)*
 
-### Part 8 — the integer-orbit dichotomy and proof of L-9901.4
+### Part 7 — the integer-orbit dichotomy and proof of L-9901.4
 
 **Lemma D (dichotomy for integer orbits).** *Let $X \subseteq \mathbb{Z}^+$ be nonempty,
 $f : X \to X$, and $n \in X$. Then exactly one of the following holds:*
@@ -655,11 +655,11 @@ The $S$-analogue is Lemma D with $X = \{\text{positive odd integers}\}$, $f = S$
 (well-defined: $S$ maps $X$ into $X$), trivial cycle $\{1\}$, started at
 $\mathrm{odd}(n)$. $\blacksquare$
 
-### Part 9 — proof of L-9901.5
+### Part 8 — proof of L-9901.5
 
 Fix $n \in \mathbb{Z}^+$ and $x_0 := \mathrm{odd}(n)$.
 
-**Step 9.1 (case (a) is "reaching 1", for each map).** For each
+**Step 8.1 (case (a) is "reaching 1", for each map).** For each
 $M \in \{C, T, S\}$ (with start $n$, $n$, $x_0$ respectively):
 $$O_M \text{ enters the trivial cycle of } M \iff 1 \in O_M.$$
 ($\Leftarrow$) is immediate since $1$ lies in each trivial cycle. ($\Rightarrow$): for
@@ -667,13 +667,13 @@ $T$: if $T^k(n) \in \{1,2\}$, then $T^k(n) = 1$ or $T^{k+1}(n) = T(2) = 1$. For 
 $C^k(n) \in \{1,4,2\}$, then one of $C^k(n), C^{k+1}(n), C^{k+2}(n)$ equals $1$ (follow
 $4 \mapsto 2 \mapsto 1$). For $S$: $S^j(x_0) \in \{1\}$ means $S^j(x_0) = 1$.
 
-**Step 9.2 (main dichotomy).** By D-9909, $n$ is a counterexample iff $1 \notin O_C(n)$.
+**Step 8.2 (main dichotomy).** By D-9909, $n$ is a counterexample iff $1 \notin O_C(n)$.
 By L-9901.1 this is equivalent to $1 \notin O_T(n)$, and to $1 \notin O_S(x_0)$. By Step
 9.1, each of these says that case (a) of the corresponding trichotomy (L-9901.4 and its
 $C$-, $S$-analogues) fails; and by the "exactly one" clause, failure of (a) is equivalent
 to "(b) or (c)". This proves the equivalence of statements 1.–4. of L-9901.5.
 
-**Step 9.3 (the failure modes match across the three maps).**
+**Step 8.3 (the failure modes match across the three maps).**
 
 *Divergence cases match:* by Lemma D applied to each map, divergence is equivalent to
 unboundedness of the respective orbit; by L-9901.2(iii) the three orbits are
@@ -686,14 +686,14 @@ nontrivial $T$-cycle $\Delta$, say $T^k(n) \in \Delta$ for all $k \ge i$.
 - ($T \Rightarrow C$.) For $j \ge c_i(n)$: locate $j \in [c_k, c_{k+1})$ with $k \ge i$
   (P2(b)); by P2(c), $C^j(n)$ equals $T^k(n) \in \Delta$ or $3\,T^k(n) + 1$ with
   $T^k(n) \in \Delta$ odd; either way $C^j(n) \in \Psi(\Delta)$. So the $C$-orbit
-  eventually lies in $\Psi(\Delta)$. The $C$-orbit is bounded (Step 9.3 first part plus
+  eventually lies in $\Psi(\Delta)$. The $C$-orbit is bounded (Step 8.3 first part plus
   Lemma D, or directly L-9901.2), so by Lemma D it eventually enters a unique $C$-cycle
   $\Gamma$; a common tail point lies in $\Gamma \cap \Psi(\Delta)$, and both are cycle
-  sets, so $\Gamma = \Psi(\Delta)$ by P0.3 — a nontrivial $C$-cycle (Step 7.6).
+  sets, so $\Gamma = \Psi(\Delta)$ by P0.3 — a nontrivial $C$-cycle (Step 6.6).
 - ($T \Rightarrow S$.) The odd entries of the $T$-orbit at times $t_j \ge i$ lie in
   $\Delta_{\mathrm{odd}} = \Phi'(\Delta)$; by P3(d) these are exactly the entries
   $S^j(x_0)$ for all large $j$. As above, the $S$-orbit eventually enters a unique
-  $S$-cycle, which by P0.3 must equal $\Phi'(\Delta)$ — nontrivial (Step 7.6).
+  $S$-cycle, which by P0.3 must equal $\Phi'(\Delta)$ — nontrivial (Step 6.6).
 - (Conversely.) If $O_C(n)$ eventually enters a nontrivial $C$-cycle $\Gamma$, then the
   $T$-orbit is bounded (L-9901.2(iii)) and, being non-(a) (Steps 8.1–8.2 applied via
   L-9901.1: $1 \in O_C(n)$ would follow from case (a) for $C$), it eventually enters a
@@ -713,14 +713,14 @@ Used from NOTATION.md, with exact points of use:
   $T(m) = C^2(m)$ for odd $m$ and $T(m) = C(m)$ for even $m$ are re-derived, not assumed
   (P2 proof).
 - **D-9903 ($\mathrm{odd}$), D-9904 ($S$, $a(x)$)**: P1, P3; $a(x) \ge 1$ is used in P3
-  (strict increase of $t_j$) and Step 7.4.
+  (strict increase of $t_j$) and Step 6.4.
 - **D-9905 (orbits, $M^0 = \mathrm{id}$, reaching 1 with $k \ge 0$, trivial cycles)**:
   Part 4 edge cases; P0.2; Steps 6.6, 8.1.
-- **D-9906 ($v_i$, $a_k$)**: P2 (definition of $c_k$); Step 7.3 ($a_p(x) = r$).
+- **D-9906 ($v_i$, $a_k$)**: P2 (definition of $c_k$); Step 6.3 ($a_p(x) = r$).
 - **D-9907 (bounded/divergent)**: L-9901.2(iii), Lemma D.
 - **D-9908 (cycles, least period, nontrivial, $S$-cycle data $m, a_i, K$)**: P0.1–P0.3
-  (pure periodicity and least period), Part 7 (nontriviality, lengths $m$, $K$, $m+K$).
-- **D-9909 (counterexample)**: Part 9.
+  (pure periodicity and least period), Part 6 (nontriviality, lengths $m$, $K$, $m+K$).
+- **D-9909 (counterexample)**: Part 8.
 
 External results: **none**. All finite-dynamics facts (P0.1–P0.5, Lemma D) are proved
 inline. The boxed remark cites L-9902 (parity-vector bijection over $\mathbb{Z}_2$) as
@@ -728,10 +728,10 @@ inline. The boxed remark cites L-9902 (parity-vector bijection over $\mathbb{Z}_
 $\mathbb{Z}_2$; no proof in this file depends on that claim, and the remark's normative
 content ("the pigeonhole step requires finiteness of bounded integer sets") is
 self-contained. No statement in this file assumes the Collatz conjecture or its negation;
-all results are neutral (see the neutrality note at the end of Part 7).
+all results are neutral (see the neutrality note at the end of Part 6).
 
-Intra-file dependency order: P0 → P1 → P2 → P3 → Parts 4, 5 → Part 6 (uses P0, P2, P3) →
-Part 7 (uses P0 only) → Part 8 (uses everything). No circularity: each part uses only
+Intra-file dependency order: P0 → P1 → P2 → P3 → Parts 4, 5 → Part 5 (uses P0, P2, P3) →
+Part 6 (uses P0 only) → Part 7 (uses everything). No circularity: each part uses only
 earlier parts.
 
 ## Gap audit
@@ -745,18 +745,18 @@ Checked deliberately against the README §8 list:
 - **Unjustified induction / missing bases.** All inductions have explicit bases: P0.1(i)
   ($\ell = 0$), P1 ($i = 0$), P2 ($k = 0$, $c_0 = 0$ via the empty-sum convention), P3
   ($j = 0$ via P1; inner induction base $i = 1$).
-- **Boundary cases.** $n = 1$, $n = 2$, $n = 2^e$ (Part 4, Part 5, Part 7); $k = 0$ /
+- **Boundary cases.** $n = 1$, $n = 2$, $n = 2^e$ (Part 4, Part 4, Part 6); $k = 0$ /
   $j = 0$ orbit membership (D-9905 allows it; used for $n = 1$); $e = \nu_2(n) = 0$
   (empty halving segment, P1/P3); $a(x) = 1$ (empty gap in P3, empty intermediate set in
-  $\Psi'$); $m = 1$ cycles (fixed points; P0.5 explicitly allows $m = 1$; Step 7.6
+  $\Psi'$); $m = 1$ cycles (fixed points; P0.5 explicitly allows $m = 1$; Step 6.6
   computes the $m = 1$ trivial $S$-cycle case end-to-end).
 - **Empirical vs universal.** The Adversarial tests section is labeled finite
-  verification; optimality examples in Part 6 are finite computations used only to show
+  verification; optimality examples in Part 5 are finite computations used only to show
   the stated constants cannot be improved, never to prove an inequality.
 - **Limit interchanges.** None performed. "Divergent $\iff$ unbounded" is proved
   combinatorially (Lemma D(3),(4)), not by a limit argument.
-- **Circular dependence.** None; see dependency order above. In particular Part 9 uses
-  the trichotomy and the cycle bijections but neither uses Part 9.
+- **Circular dependence.** None; see dependency order above. In particular Part 8 uses
+  the trichotomy and the cycle bijections but neither uses Part 8.
 - **Nonuniform estimates.** The bounds in L-9901.2(ii) contain the start-dependent term
   $\max(n, \cdot)$; this is displayed explicitly and shown necessary ($n = 2^{10}$). The
   bounds in (i) are uniform in $n$.
@@ -766,9 +766,9 @@ Checked deliberately against the README §8 list:
   empty sets of nontrivial cycles).
 - **Symbolic object vs integer trajectory.** All objects here are integer trajectories by
   construction; the boxed remark warns exactly about the non-integer case.
-- **Subtle points double-checked.** (1) In Step 7.3 the disjointness
+- **Subtle points double-checked.** (1) In Step 6.3 the disjointness
   $N \cap \Delta = \emptyset$ is *proved* (via injectivity of $T$ on a cycle), not
-  assumed; without it $\Phi \circ \Psi = \mathrm{id}$ would fail. (2) In Step 7.4 the
+  assumed; without it $\Phi \circ \Psi = \mathrm{id}$ would fail. (2) In Step 6.4 the
   least $T$-period is shown to be exactly $K$ (not a proper divisor) via the odd-time
   classification P3(d); this is what makes the length claims exact. (3) The
   identification of cycles with point sets (P0.2) is proved, so the bijections of
@@ -991,8 +991,8 @@ $\mathbb{Z}^-$ check lies outside the lemma's stated scope.
 
 - I am confident in Parts 0–5 and 7–8; they are elementary and were checked line by line
   against the edge cases listed in the Gap audit.
-- The part a verifier should probe hardest is **Part 7** (cycle bijections): the
-  disjointness argument $N \cap \Delta = \emptyset$ in Step 7.3, the least-period
+- The part a verifier should probe hardest is **Part 6** (cycle bijections): the
+  disjointness argument $N \cap \Delta = \emptyset$ in Step 6.3, the least-period
   argument $p = t_m = K$ in Step 6.4, and the use of P0.5 (first-return) in Steps
   6.1–6.2, since these carry the "mutually inverse" claims. Each is short but
   load-bearing; an independent reconstruction (e.g. via the alternative route
@@ -1009,7 +1009,7 @@ $\mathbb{Z}^-$ check lies outside the lemma's stated scope.
 
 ## Suggested next attack
 
-1. **Independent verification** (any reviewer agent): reconstruct Part 7 from scratch,
+1. **Independent verification** (any reviewer agent): reconstruct Part 6 from scratch,
    ideally via the return-map-free route (direct index bookkeeping with P2/P3), and
    re-run/extend the script (larger $n$, longer prefixes, randomized large starts). On
    success, upgrade Status per README §7 and record under `Reviewing agents:`.
@@ -1021,7 +1021,7 @@ $\mathbb{Z}^-$ check lies outside the lemma's stated scope.
 3. **Issue #21 / T-9602:** cite Lemma D(3) directly for "unbounded $\Rightarrow$
    divergent for integer orbits"; the boxed remark is the exact statement of where that
    step's validity ends, which T-9602's 2-adic limiting arguments must respect.
-4. **Extension lemma (new file, e.g. L-99xx):** the proofs of P1–P3 and Part 7 use
+4. **Extension lemma (new file, e.g. L-99xx):** the proofs of P1–P3 and Part 6 use
    positivity only through P0.4's "$x(2^p - 1) = 0$" step and Lemma D; formalize the
    verbatim extension of the cycle bijections to $\mathbb{Z} \setminus \{0\}$ (test 7
    passes on it), giving cycle programs three extra genuinely nontrivial worked examples
