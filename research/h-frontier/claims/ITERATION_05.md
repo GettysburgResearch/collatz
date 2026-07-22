@@ -20,6 +20,7 @@ cylinder descent.
 **Authoring agent:** `gpt56-h-01`  
 **Reviewing agents:** none  
 **Created:** 2026-07-22  
+**Last corrected:** 2026-07-22  
 **Dependencies:** `L-9514`
 
 ### Statement
@@ -33,7 +34,17 @@ Let
 and let `G` be the H ghost closure from `L-9514`. Put
 
 \[
- \mathcal H=\bigcup_{r\ge1}\phi_r(G).
+ \mathcal H=\bigcup_{r\ge1}\phi_r(G)
+\]
+
+and define the boundary points
+
+\[
+ b_q:=\phi_0^q(0)
+ =4-4(4/3)^q
+ =\frac{4(3^q-4^q)}{3^q}
+ \qquad(q\ge0).
+ \tag{1}
 \]
 
 Then `4` is the unique all-zero fixed ghost,
@@ -42,51 +53,51 @@ Then `4` is the unique all-zero fixed ghost,
  \phi_0(4)=4,
 \]
 
-and
+and the ghost closure decomposes as
 
 \[
  \boxed{
- G=\{0,4\}\ \sqcup\ 
- \bigsqcup_{q\ge0}\phi_0^q(\mathcal H).
+ G=\{4\}\ \sqcup\ 
+ \bigsqcup_{q\ge0}
+ \left(\{b_q\}\sqcup\phi_0^q(\mathcal H)\right).
  }
- \tag{1}
-\]
-
-For every
-
-\[
- x\in\phi_0^q(\mathcal H)
-\]
-
-one has
-
-\[
- \boxed{v_2(x-4)=2q+2.}
  \tag{2}
 \]
 
-Thus the number of initial zero letters before the first nonzero letter is
-recovered exactly from the ordinary centered valuation.
+Every point in the `q`th parenthesis satisfies
+
+\[
+ \boxed{v_2(x-4)=2q+2.}
+ \tag{3}
+\]
+
+The boundary point `b_0=0`; for every `q>=1`, `b_q` is not an ordinary integer.
+Consequently every positive ordinary ghost other than `4` lies in a unique set
+`phi_0^q(H)`, and `q` is exactly the number of initial zero letters before its
+first nonzero letter.
 
 ### Proof
 
-Every nonzero itinerary is either the all-zero itinerary, whose ghost is the
-fixed point `4`, or has a unique first nonzero letter after `q>=0` zeros. This
-gives the set decomposition apart from disjointness.
+The ghost closure satisfies
+
+\[
+ G=\{0\}\cup\bigcup_{r\ge0}\phi_r(G).
+\]
+
+Iterate the `r=0` branch. A point either remains forever on that branch and is
+the fixed point `4`, exits after a unique number `q` of zero letters into
+`H`, or has a tail converging to the closure point `0`, producing `b_q`. This
+gives (2) apart from disjointness.
 
 If `y in H`, then its first letter is at least one, so
 
 \[
- v_2(y)\ge5.
-\]
-
-Hence
-
-\[
+ v_2(y)\ge5,
+ \qquad
  v_2(y-4)=2.
 \]
 
-Since
+The same centered valuation holds for `y=0`. Since
 
 \[
  \phi_0(x)-4=\frac43(x-4),
@@ -98,8 +109,19 @@ iteration gives
  \phi_0^q(y)-4=(4/3)^q(y-4),
 \]
 
-whose valuation is `2q+2`. The room labels are therefore disjoint. The closure
-point `0` is separate, proving (1)--(2).
+and hence (3). Distinct `q` therefore give disjoint rooms. Within one room,
+`b_q` is distinct from `phi_0^q(H)` because `0` is not in `H` and `phi_0` is
+injective.
+
+Formula (1) follows by solving the affine iteration around the fixed point.
+For `q>=1`, its numerator is not divisible by `3`, since
+
+\[
+ 3^q-4^q\equiv-1\pmod3.
+\]
+
+Thus the denominator `3^q` does not cancel, so `b_q` is not an integer. This
+proves the ordinary-ghost assertion.
 
 ### Ordinary-coordinate form
 
@@ -114,7 +136,7 @@ state is
 
 \[
  \boxed{T_0^q(P)=4(1+3^qz).}
- \tag{3}
+ \tag{4}
 \]
 
 The next letter is nonzero, so the right side is divisible by at least `2^5`.
@@ -131,7 +153,7 @@ This is a natural integral coordinate for the transformed-height problem
 **Authoring agent:** `gpt56-h-01`  
 **Reviewing agents:** none  
 **Created:** 2026-07-22  
-**Dependencies:** `L-9503`, `L-9514`
+**Dependencies:** `L-9503`, `L-9514`, `L-9516`
 
 ### Definition
 
@@ -151,7 +173,7 @@ Define
  \ P\bmod2^K\in G_K
  \right\}.
  }
- \tag{4}
+ \tag{5}
 \]
 
 The formal fixed ghost `4` is automatically excluded by `P>=16`.
@@ -174,7 +196,7 @@ Consequently
  \quad\Longleftrightarrow\quad
  \nu_K\longrightarrow\infty.
  }
- \tag{5}
+ \tag{6}
 \]
 
 ### Proof
@@ -190,11 +212,13 @@ sequence stabilizes, say at `P`. Then
  P\bmod2^K\in G_K
 \]
 
-for every sufficiently large `K`, hence for every `K` by projection. Branch
-separation determines the first exact letter from `v_2(P)` and sends the tail
-state back into every lower-precision ghost set. Iterating gives an infinite
-exact future. Equivalently, one may apply the stabilization equivalences in
-`L-9503`. This proves all equivalences.
+for every `K`. Since `G` is compact, this compatible residue condition says
+`P in G`. The inequalities `P>=16` exclude `0` and `4`; `L-9516` excludes every
+other closure-boundary point `b_q` from the integers. Hence `P` is an actual
+itinerary ghost. Branch separation recursively determines its exact letters,
+and `P=1 mod 3` supplies the ordinary exact state condition. Thus `P` has an
+infinite exact future. Equivalently, one may invoke the stabilization criterion
+of `L-9503` after the boundary audit. This proves all equivalences.
 
 ### Relationship to earlier extremals
 
@@ -235,7 +259,7 @@ For fixed `q`, write
  \qquad z\text{ positive odd},
 \]
 
-and use (3) to move to the first nonzero branch. A successful transformed-height
+and use (4) to move to the first nonzero branch. A successful transformed-height
 theorem should show that a fixed positive `z` cannot survive arbitrarily deep
 refinements unless the itinerary is all zero.
 
