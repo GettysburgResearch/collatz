@@ -80,7 +80,7 @@ Q-9902, Q-9904, Q-9912-A (new open questions).
 
 ## Recommended next actions
 
-1. External review pass over the six PROPOSED files (owner has one planned).
+1. External review pass over the four PROPOSED files (owner has one planned).
 2. m = 8, K = 13: enumerate the 792 exponent compositions (settles the smallest open
    cycle length; L-9912's bonus makes this the natural next elementary step).
 3. L-9913 (suggested, unclaimed): Eliahou-style cycle-length lower bound from L-9905 +
