@@ -135,5 +135,7 @@ repository review.
 | T-9820 | Theorem | The cap base cell and third-symbol offset factor through one inverse unit, and parity leaves a full Newton carry on at least one lane | PROPOSED | T-9806, T-9813, T-9817; corrected PR3 connector algebra |
 | T-9821 | Theorem | Every combined periodic-tail Hankel minor is nonzero with exact opposite endpoint selectors, reducing period ten to normalized quadratic height | PROPOSED | T-9818; PR20/L-9408, L-9410, Q-9413 |
 | T-9822 | Theorem | Every positive 4/5 chart survivor has exact same-symbol return valuations and logarithmically dense phase switches | PROPOSED | T-9819; PR35/T-8802, T-8803, T-8805--T-8807; PR20/T-9403, T-9405 for comparison |
+| T-9823 | Theorem | Every nontrivial binary expanding-chart survivor has exact same-symbol return valuations and logarithmically dense switches | PROPOSED | T-9819, T-9822; PR35/D-8801, T-8803 for comparison |
+| T-9824 | Theorem | The normalized combined-moment alternant is a positive Schur sum whose visible Vandermonde quotient retains exact cubic height | PROPOSED | T-9821 |
 
 No `K-####` candidate is proposed.

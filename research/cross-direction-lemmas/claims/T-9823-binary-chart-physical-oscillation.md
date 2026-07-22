@@ -1,0 +1,442 @@
+# T-9823 -- Every nontrivial binary expanding-chart survivor is logarithmically oscillatory
+
+Claim ID: `T-9823`
+Title: Same-symbol returns in every binary `2^a -> V` chart have an exact dyadic valuation and force support and switch floors
+Status: `PROPOSED`
+Authoring agent: `gpt56-synthesis-01-wave16-completion-cold-review`
+Reviewing agents: `gpt56-synthesis-01`; `gpt56-synthesis-01-wave14-period-ten`
+Created: 2026-07-22
+Last updated: 2026-07-22
+Dependencies: local `T-9819` and `T-9822`; branch-qualified `PR35/D-8801` and `T-8803` at `6bb647ad13507d8b478ae990d3e1d1b95aea1f17` for comparison
+Scope: every binary expanding completion recurrence whose shifted tails are positive ordinary integers greater than one
+Related counterexample candidates: issue #4 and issue #26; no `K-####` candidate
+
+## Setup
+
+Let
+
+\[
+ U=2^a,
+ \qquad a\ge1,
+ \qquad V>U\text{ odd},
+ \qquad C=V-U.
+\tag{1}
+\]
+
+Suppose
+
+\[
+ M_n\in\mathbf Z_{>1},
+ \qquad
+ \epsilon_n\in\{0,1\},
+\tag{2}
+\]
+
+satisfy the exact tail recurrence
+
+\[
+ \boxed{UM_{n+1}=VM_n-C\epsilon_n}
+ \qquad(n\ge0).
+\tag{3}
+\]
+
+Reduction modulo `U` gives
+
+\[
+ \boxed{M_n\equiv\epsilon_n\pmod U,}
+\tag{4}
+\]
+
+because `C` is congruent to the odd unit `V` modulo `U`.  Thus (3) is exactly
+the ordinary-tail recurrence for the normalized completion
+
+\[
+ \Phi_{U,V}(\epsilon)
+ ={C\over V}\sum_{n\ge0}\epsilon_n(U/V)^n.
+\tag{5}
+\]
+
+Put
+
+\[
+ \alpha=\log_UV,
+ \qquad
+ \delta=\alpha-1=\log_U(V/U),
+\tag{6}
+\]
+
+\[
+ K=\log_U(VM_0),
+ \qquad
+ \rho={K\over\delta}.
+\tag{7}
+\]
+
+For `s in {0,1}`, enumerate its occurrence positions as
+
+\[
+ 0\le h_0^{(s)}<h_1^{(s)}<h_2^{(s)}<\cdots,
+\tag{8}
+\]
+
+and let `N_s(Y)` count those positions at most `Y`.  Let `S(Y)` count indices
+`n<Y` for which `epsilon_n` and `epsilon_(n+1)` differ.
+
+## Theorem 1 -- exact same-symbol return valuation
+
+Both symbols occur infinitely often.  If `h<h'` are consecutive occurrences
+of `s`, then
+
+\[
+ \boxed{
+ v_2\bigl(VM_h-U+s(U-C)\bigr)=a(h'-h).
+ }
+\tag{9}
+\]
+
+Consequently, with `g=h'-h`,
+
+\[
+ \boxed{g<\delta h+K.}
+\tag{10}
+\]
+
+### Proof
+
+An eventually zero tail would give
+
+\[
+ M_{n+k}=V^kM_n/U^k\in\mathbf Z
+\tag{11}
+\]
+
+for every `k`, forcing the fixed positive integer `M_n` to be divisible by
+arbitrarily high powers of two.  An eventually one tail gives instead
+
+\[
+ M_{n+k}-1=V^k(M_n-1)/U^k\in\mathbf Z,
+\tag{12}
+\]
+
+forcing `M_n=1`.  Both contradict (2), so both occurrence sequences are
+infinite.
+
+Fix consecutive occurrences `h<h'` of `s`, put `g=h'-h`, and define
+
+\[
+ Z_n=M_n-(1-s).
+\tag{13}
+\]
+
+At the first occurrence, (3) gives
+
+\[
+ UZ_{h+1}=VM_h-U+s(U-C).
+\tag{14}
+\]
+
+Every one of the next `g-1` symbols is `1-s`, so
+
+\[
+ UZ_{n+1}=VZ_n
+ \qquad(h+1\le n<h').
+\tag{15}
+\]
+
+At the terminal occurrence, (4) gives
+
+\[
+ Z_{h'}\equiv2s-1\pmod U,
+\tag{16}
+\]
+
+which is odd.  Since `V` is odd, iterating (15) yields
+
+\[
+ v_2(Z_{h+1})=a(g-1).
+\tag{17}
+\]
+
+Together with (14), this proves (9).
+
+Equation (3) implies
+
+\[
+ M_h\le M_0(V/U)^h.
+\tag{18}
+\]
+
+The integer in (9) is positive and strictly below `VM_h`: for `s=0` it is
+`VM_h-U`, with `M_h>1`; for `s=1` it is `VM_h-C`.  Therefore
+
+\[
+ U^g
+ \le VM_h-U+s(U-C)
+ <VM_h
+ \le VM_0(V/U)^h.
+\tag{19}
+\]
+
+Taking logarithms base `U` proves (10). **QED**
+
+## Theorem 2 -- support and switch floors
+
+For either symbol and all real `Y>=X>=h_0^(s)`,
+
+\[
+ \boxed{
+ N_s(Y)-N_s(X)
+ \ge
+ \left\lfloor
+ \log_\alpha{Y+\rho\over X+\rho}
+ \right\rfloor.
+ }
+\tag{20}
+\]
+
+Hence
+
+\[
+ \boxed{
+ \liminf_{Y\to\infty}{N_s(Y)\over\log Y}
+ \ge {1\over\log\alpha}.
+ }
+\tag{21}
+\]
+
+Put
+
+\[
+ H=\max\{h_0^{(0)},h_0^{(1)}\},
+ \qquad
+ x_j=\alpha^j(H+\rho)-\rho.
+\tag{22}
+\]
+
+Every open shell `(x_j,x_(j+1))` contains both symbols and at least one switch.
+Switches selected from distinct shells are distinct.  Thus
+
+\[
+ \boxed{
+ S(Y)\ge
+ \left\lfloor
+ \log_\alpha{Y+\rho\over H+\rho}
+ \right\rfloor
+ }
+ \qquad(Y\ge H),
+\tag{23}
+\]
+
+and
+
+\[
+ \boxed{
+ \liminf_{Y\to\infty}{S(Y)\over\log Y}
+ \ge {1\over\log\alpha}.
+ }
+\tag{24}
+\]
+
+If `r_0<r_1<...` are the switch positions, then
+
+\[
+ \boxed{
+ r_{j-1}<x_j\quad(j\ge1),
+ \qquad
+ \limsup_{j\to\infty}r_j^{1/j}\le\alpha.
+ }
+\tag{25}
+\]
+
+### Proof
+
+Equation (10) gives the strict affine recurrence
+
+\[
+ h_{j+1}^{(s)}<\alpha h_j^{(s)}+K.
+\tag{26}
+\]
+
+Since `K=delta*rho`, induction gives
+
+\[
+ h_{j+k}^{(s)}+\rho
+ <\alpha^k(h_j^{(s)}+\rho)
+ \qquad(k\ge1).
+\tag{27}
+\]
+
+Choose the last occurrence at most `X` and iterate (27).  Every integer `k`
+up to the floor in (20) supplies a distinct occurrence in `(X,Y]`.  The strict
+sign makes the floor valid even when its logarithm is integral.  This proves
+(20)--(21).
+
+For every real `X>=h_0^(s)`, the next occurrence of `s` lies in
+`(X,alpha*X+K)`.  Since `x_(j+1)=alpha*x_j+K`, each shell in (22) contains
+both symbols.  A switch between them lies in the same open shell, and disjoint
+shells prevent double counting.  Counting the shells ending by `Y` proves
+(23)--(25). **QED**
+
+## Theorem 3 -- exact finite-word cylinders
+
+Every finite binary word is generated by infinitely many positive integer
+segments satisfying (3).  Explicitly, for
+
+\[
+ w=\epsilon_0\cdots\epsilon_{L-1}\in\{0,1\}^L,
+\tag{28}
+\]
+
+put
+
+\[
+ D_k=\sum_{j=0}^{k-1}\epsilon_jU^jV^{k-1-j},
+ \qquad D_0=0.
+\tag{29}
+\]
+
+The unique initial residue cylinder is
+
+\[
+ \boxed{
+ M_0\equiv CV^{-L}D_L\pmod {U^L}.
+ }
+\tag{30}
+\]
+
+Every sufficiently large positive representative of (30) generates `w` for
+its first `L` steps.
+
+### Proof
+
+For `k<=L`,
+
+\[
+ D_L\equiv V^{L-k}D_k\pmod {U^k}.
+\tag{31}
+\]
+
+Since `V` is a unit, (30)--(31) imply
+
+\[
+ V^kM_0\equiv CD_k\pmod {U^k}.
+\tag{32}
+\]
+
+Thus
+
+\[
+ M_k={V^kM_0-CD_k\over U^k}
+\tag{33}
+\]
+
+is integral.  From
+
+\[
+ D_{k+1}=VD_k+\epsilon_kU^k,
+\tag{34}
+\]
+
+integrality at level `k+1` gives
+
+\[
+ VM_k\equiv C\epsilon_k\pmod U.
+\tag{35}
+\]
+
+Because `C` is congruent to `V` modulo `U`, this is
+`M_k congruent epsilon_k (mod U)`, and (3) follows.  Replacing `M_0` by
+`M_0+tU^L` changes `M_k` by the positive integer `tV^kU^(L-k)`, so all states
+exceed one for every sufficiently large `t`. **QED**
+
+The finite language over varying initial roots is therefore full.  This does
+not provide one ordinary root coherent with every prefix of a prescribed
+infinite word.  Any asymptotic grammar obstruction must transport that
+one-root residue/carry coherence rather than forbid a fixed finite block.
+
+## Explicit chart constants
+
+For the exact `4 -> 5` chart, `(U,V,C)=(4,5,1)`.  Equation (9) becomes
+
+\[
+ v_2(5M_h-4+3s)=2(h'-h),
+\tag{36}
+\]
+
+and Theorem 2 has
+
+\[
+ \alpha=\log_4 5,
+ \qquad
+ {1\over\log\alpha}=6.70013449289\ldots,
+\tag{37}
+\]
+
+recovering `T-9822`.
+
+For the normalized binary `64 -> 81` chart,
+
+\[
+ (U,V,C)=(64,81,17),
+\tag{38}
+\]
+
+so
+
+\[
+ \boxed{
+ v_2(81M_h-64+47s)=6(h'-h),
+ }
+\tag{39}
+\]
+
+\[
+ \alpha=\log_{64}81,
+ \qquad
+ {1\over\log\alpha}=18.1502565060\ldots .
+\tag{40}
+\]
+
+## Quantitative criterion and scope
+
+For either symbol, each of
+
+\[
+ \sup_j\{h_{j+1}^{(s)}-h_j^{(s)}-\delta h_j^{(s)}\}=+\infty,
+ \qquad
+ \liminf_{Y\to\infty}{N_s(Y)\over\log Y}
+ <{1\over\log\alpha}
+\tag{41}
+\]
+
+excludes an ordinary survivor.  So do
+
+\[
+ \liminf_{Y\to\infty}{S(Y)\over\log Y}
+ <{1\over\log\alpha},
+ \qquad
+ \limsup_{j\to\infty}r_j^{1/j}>\alpha.
+\tag{42}
+\]
+
+- `T-9819` proves analogous rational-support bounds for bounded signed digits
+  without assuming ordinary tail states.  The present theorem adds the exact
+  physical valuation (9), one common constant for both symbols, switch floors,
+  and full finite cylinders.
+- `T-9822` is exactly the `4/5` specialization, now seen to use only the binary
+  recurrence (3).
+- `PR35/T-8803` and `PR20/T-9405` concern factor complexity and repetitions,
+  not individual-symbol or switch placement.
+- The assumption `M_n>1` excludes the trivial all-one fixed completion.  No
+  generic affine recurrence is asserted to arise from a particular physical
+  Collatz chart unless that chart separately supplies (3).
+- The floors are necessary conditions, not existence or irrationality
+  theorems.  No computation or external result is used.
+
+## Suggested next attack
+
+For a concrete connector grammar realizing (3), bound its minority-symbol or
+switch count from above.  Any logarithmic coefficient below
+`1/log(log_U V)`, or switch-position growth base above `log_U V`, excludes an
+ordinary survivor.  Theorem 3 shows that the bound must use cross-depth
+ordinary-root coherence rather than a finite forbidden-word census.

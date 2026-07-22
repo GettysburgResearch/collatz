@@ -187,6 +187,15 @@ PR #3 `c37e96e`, PR #16 `900ba41`, PR #20 `14f06d2`, PR #33 `2cfe250`, and PR
 #35 `6bb647a` were stable at integration.  All three new claims remain
 `PROPOSED` pending external review.
 
+Wave nineteen generalized the physical return theorem to every binary
+`2^a -> V` completion and factored the visible period-ten alternant content
+exactly.  The first result gives universal same-symbol valuations, switch
+floors, and finite residue cylinders; the second proves that ordinary
+Vandermonde removal leaves a positive Schur quotient of exact cubic two-place
+height.  A cap low-bit audit found only a same-scale equivalence and finite
+counterexamples, so it produced no asymptotic claim.  Both new manuscripts
+received nonauthoring cold review and remain `PROPOSED`.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -248,6 +257,8 @@ PR #3 `c37e96e`, PR #16 `900ba41`, PR #20 `14f06d2`, PR #33 `2cfe250`, and PR
 | `PR3` corrected connector algebra at `c37e96e`; local `T-9806`, `T-9813`, `T-9817`; contextual `PR33` at `2cfe250` | `T-9820` factors the base cell plus third-symbol shift as one inverse unit times one scaled connector coefficient, measures exactly how its valuation truncates the Newton carry, and proves parity leaves an odd coefficient on one or three lanes. | The universal joint bounded projection is not closed, but the distinguished connector word may correlate with its computable source carry and the decoded room lane need not be odd. |
 | `PR20/L-9408`, `L-9410`, `Q-9413` at `14f06d2`; local `T-9818`, `R-9807`, `T-9804` | `T-9821` expands every combined periodic-tail Hankel minor into same-sign generalized Vandermondes, identifies exact opposite endpoint selectors, and constructs the unique combined Padé system with exact first-error valuation. | Period-ten rank and local phase cancellation are closed, but irrationality still requires a quadratic primitive-height/common-content estimate for the normalized Cramer vector. |
 | `PR35/T-8802`, `T-8803`, `T-8805`--`T-8807` at `6bb647a`; local `T-9819`; `PR20/T-9403`, `T-9405` for comparison | `T-9822` proves an exact same-symbol return valuation in the physical `4 -> 5` recurrence, iterates it into two-symbol and switch-shell floors, and constructs infinitely many positive roots for every finite phase word. | Logarithmic oscillation is necessary, not sufficient.  Since the finite physical language is full, any excluding grammar must retain all-scale one-root coherence. |
+| General binary completion recurrence; local `T-9819`, `T-9822`; `PR35/D-8801`, `T-8803` for comparison | `T-9823` proves `v_2(VM_h-U+s(U-C))=a(h'-h)` for every binary `U=2^a -> V` chart, with universal symbol/switch floors and exact finite-word residue cylinders. | The theorem applies only after a physical direction supplies the normalized recurrence and ordinary tails greater than one; its floors remain necessary, not sufficient. |
+| Local `T-9821` combined-moment alternant | `T-9824` divides the row-factor-stripped alternant by its ordinary Vandermonde, obtains an exact positive Schur sum, and computes cubic principal-specialization orders at `2` and `3`. | The visible factor alone cannot yield quadratic height.  Further content shared across Cramer minors remains possible and is exactly the live target. |
 
 ## New-claim audit matrix
 
@@ -305,6 +316,8 @@ PR #3 `c37e96e`, PR #16 `900ba41`, PR #20 `14f06d2`, PR #33 `2cfe250`, and PR
 | `T-9820` | cap-joint-carry lane, integrating reviewer, and independent completion reviewer | connector integrality, factorization signs, single inverse unit, exact `Delta_m-h` retained-bit count, parity split, full-coset permutation, top-six multiplicity, and bounded source replays were reconstructed | no recurrence for the distinguished connector word or cofinal odd decoded lane is proved |
 | `T-9821` | period-ten lane, integrating reviewer, and independent completion reviewer | arbitrary-minor expansion, common real sign, opposite tropical selectors, exact endpoint exponents, Cramer indexing, bordered Schur complement, first-error uniqueness, normalized alternant degree, and height sufficiency boundary were reconstructed | visible Vandermonde content does not yet reduce primitive global height from cubic to the required quadratic coefficient |
 | `T-9822` | completion/grammar lane, integrating reviewer, and independent cap reviewer | both-symbol infinitude, return coordinate, terminal odd unit, strict gap, affine floors, shell and switch indexing, switch growth, finite-word residue sign, positivity, and source comparisons were reconstructed | every finite word is physically realizable only with a varying root; infinite one-root coherence and a grammar upper bound remain open |
+| `T-9823` | completion/generalization lane, integrating reviewer, and independent period reviewer | general return coordinate, terminal parity modulo `U`, positivity, affine floors, switch indexing, finite-cylinder residue, and both explicit chart specializations were reconstructed | no generic affine recurrence is asserted to be a physical Collatz chart without a separate source crosswalk |
+| `T-9824` | period-ten lane, integrating reviewer, and independent completion reviewer | Schur partition/indexing, coefficient positivity, exact degree band, reverse/identity selector sums, valuation signs, height lower bounds, and Cramer-ratio scope were reconstructed | cubic height of one normalized alternant does not preclude further content cancellation across ratios |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -683,6 +696,22 @@ Finally, direct iteration gives `4^kM_k=5^kM_0-D_k`, confirming the positive
 residue sign `M_0=5^(-L)D_L mod4^L` and positivity for all sufficiently large
 representatives.
 
+For `T-9823`, the period reviewer repeated the argument with
+`Z_n=M_n-(1-s)`.  The first return step is
+`UZ_(h+1)=VM_h-U+s(U-C)`, every intervening opposite symbol gives
+`UZ_(n+1)=VZ_n`, and `M_(h')=s mod U` makes the terminal coordinate odd.
+Iteration gives the exact factor `a(h'-h)`.  The finite-prefix identity
+`U^kM_k=V^kM_0-CD_k` proves the positive residue
+`M_0=CV^(-L)D_L mod U^L` and all sufficiently large positive lifts.
+
+For `T-9824`, the completion reviewer checked that increasing column
+exponents `rj+h_j` give the stated Schur partition and positive weights.
+The reverse-selector difference is `(r-1)K_n` at `2`; the identity/all-top-
+phase difference is `n gamma_*+9S(r-1)L_n` at `3`.  Their signs and prime
+height bounds are exact.  The audit retained the crucial limitation: this is
+cubic height for each separately normalized alternant, not for every Cramer
+ratio.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -762,6 +791,10 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `T-9822` does not construct or exclude a positive `4/5` survivor.  Its
   oscillation floors are necessary only, and full finite-word realizability
   uses a root that may change with the word and depth.
+- `T-9823` does not make every binary completion recurrence a physical
+  Collatz chart and does not turn universal switch floors into an upper bound.
+- `T-9824` does not disprove the combined-moment program.  It exhausts only
+  the ordinary Vandermonde factor; cross-minor content remains open.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -1230,3 +1263,10 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     derive the terminal odd return coordinate, and check strict floor and
     shell endpoints.  Reconstruct the finite-word residue with the positive
     sign and do not identify varying finite roots with one infinite survivor.
+66. For `T-9823`, retain `C=V-U` through the first return step, use terminal
+    parity only after reducing the physical recurrence, and check the factor
+    `a` in every valuation.  Verify the positive `C V^(-L)D_L` cylinder sign.
+67. For `T-9824`, derive the partition from increasing column exponents,
+    subtract the Vandermonde selector at both primes, and distinguish one
+    quotient's cubic height from the quadratic endpoint differences of its
+    Cramer ratios.

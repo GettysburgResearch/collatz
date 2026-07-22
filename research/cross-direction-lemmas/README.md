@@ -42,6 +42,7 @@ dependency.
 - [`wave sixteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-sixteen.md)
 - [`wave seventeen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-seventeen.md)
 - [`wave eighteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eighteen.md)
+- [`wave nineteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nineteen.md)
 
 ## Result map
 
@@ -178,6 +179,8 @@ dependency.
 | [`T-9820`](claims/T-9820-base-cell-joint-newton-carry.md) | PR #3/PR #33 cap-carry frontier | The base cell and third-symbol offset factor as one inverse unit times one connector coefficient; parity forces a full growing Newton carry on one or three lanes, so the joint bounded projection still does not close. |
 | [`T-9821`](claims/T-9821-combined-moment-hankel-rigidity.md) | PR #20 period-ten combined-moment frontier | Every combined Hankel minor is nonzero with exact opposite `2`- and `3`-adic selectors; the prescribed ten-phase error has scalar quadratic gain, reducing the open step to normalized global height/content. |
 | [`T-9822`](claims/T-9822-four-five-physical-support-oscillation.md) | PR #35 physical-grammar frontier | Same-symbol returns have an exact dyadic valuation; both phases and their switches occur in every affine multiplicative shell, while every finite phase word is nevertheless physically realizable by infinitely many roots. |
+| [`T-9823`](claims/T-9823-binary-chart-physical-oscillation.md) | General binary-chart grammar frontier | For every `U=2^a<V` binary completion, same-symbol returns have exact valuation `a(h'-h)`; both symbols and switches have explicit multiplicative-shell floors, and every finite word has one exact residue cylinder. |
+| [`T-9824`](claims/T-9824-vandermonde-quotient-schur-boundary.md) | PR #20 normalized-height frontier | Dividing the combined alternant by its ordinary Vandermonde leaves an exact positive Schur sum with cubic `2`- and `3`-adic height, so further cross-minor content is provably necessary. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -388,6 +391,10 @@ independently reconstructed and which conjectural boundaries remain open.
    full scalar quadratic gain without ten-phase cancellation.  The remaining
    deliverable is now precise: a quadratic reduced-height/common-content
    bound for the normalized Cramer minors, not another rank calculation.
+   `T-9824` factors the visible ordinary Vandermonde exactly: the quotient is
+   a positive Schur sum whose principal specialization still has cubic
+   two-place height.  Thus the required saving must be further content shared
+   across Cramer minors; the obvious alternant factor cannot provide it.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -416,7 +423,12 @@ independently reconstructed and which conjectural boundaries remain open.
    every affine multiplicative shell, with the same logarithmic coefficient,
    while every finite phase word is realized by infinitely many positive
    roots.  A contradiction must therefore come from all-scale one-root
-   coherence, not a finite forbidden-block grammar.
+   coherence, not a finite forbidden-block grammar.  `T-9823` proves that the
+   same exact return valuation, two-symbol/switch floors, and full finite
+   cylinders hold for every binary `U=2^a -> V` completion recurrence.  For
+   `64 -> 81` the return law is
+   `v_2(81M_h-64+47s)=6(h'-h)` and the logarithmic coefficient is
+   `18.1502565060...`.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
