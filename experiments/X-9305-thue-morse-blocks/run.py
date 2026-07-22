@@ -47,10 +47,10 @@ def longest_zero_run(values: Sequence[int]) -> int:
 def square_witnesses(digits: Sequence[int]) -> list[dict[str, int]]:
     witnesses: list[dict[str, int]] = []
     exponent = 0
-    while 7 * 2**exponent <= len(digits):
+    while 3 * 2**exponent <= len(digits):
         length = 2**exponent
-        first = 5 * length
-        second = 6 * length
+        first = length
+        second = 2 * length
         if digits[first : first + length] != digits[second : second + length]:
             raise AssertionError("Thue--Morse square witness failed")
         witnesses.append(
@@ -114,7 +114,7 @@ def canonical_payload(max_transition: int) -> dict[str, object]:
             "exact nearest-integer cylinder recurrence at every transition",
             "exact appended block formula at every transition",
             "direct residue reconstruction through depth 32 and at powers of two",
-            "Thue-Morse square witnesses at starts 5*2^m and 6*2^m",
+            "Thue-Morse square witnesses at starts 1*2^m and 2*2^m",
         ],
         "summary": {
             "blocks_checked": len(blocks),
