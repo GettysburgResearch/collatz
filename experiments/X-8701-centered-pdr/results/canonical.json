@@ -1,0 +1,70 @@
+{
+  "agent": "gpt56-pdr-01",
+  "experiment_id": "X-8701",
+  "finite_seed_scan": {
+    "best_survival": 4,
+    "best_witness": [262144, 0, 672605, 1],
+    "histogram": {"0": 1937500, "1": 60547, "2": 1893, "3": 59, "4": 1},
+    "limit": 1000000
+  },
+  "forced_system": {
+    "branches": [
+      {"e": 0, "e_next": 0, "offset": 0, "residue": 0},
+      {"e": 0, "e_next": 1, "offset": 62, "residue": 49},
+      {"e": 1, "e_next": 1, "offset": 0, "residue": 0},
+      {"e": 1, "e_next": 0, "offset": 19, "residue": 15}
+    ],
+    "equation": "64*B_next = 81*B + e - e_next"
+  },
+  "frozen_pr16": "87478352e65c7b816dfc8b3b30894b71fb50f662",
+  "issue": 40,
+  "monotonicity_and_mod17": {
+    "exact_steps": 62502,
+    "observed_invariant_classes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "positive_steps_strictly_increasing": true,
+    "search_limit": 1000000
+  },
+  "pdr": {
+    "carry_transducer": {"exact_digit_cases": 300000, "post_first_column_max_carry": 17},
+    "fixed_precision_graphs": [
+      {
+        "ambient_edges": 8,
+        "ambient_safe_states": 4,
+        "de_bruijn_edge_digest": "bd3b02fff4dcddde9159d4d1521ea63d7673911826743bc7a34a96b240f952df",
+        "de_bruijn_edges": 8,
+        "kernel_state_digest": "9a98a29372f986ab19ba8c50ab18cafc08eae55cd089847facf5983966abf7b9",
+        "kernel_states": 4,
+        "periodic_ghost_states": 4,
+        "precision": 1,
+        "scc_count": 1
+      },
+      {
+        "ambient_edges": 512,
+        "ambient_safe_states": 256,
+        "de_bruijn_edge_digest": "5deb23923c3492db104db8d0e2af4a61299a8827f6af95c4c9e9b0ae2b9498d1",
+        "de_bruijn_edges": 16,
+        "kernel_state_digest": "4808073f5721bf5ba935fdbbdd7213161c81246d62259729f4824b996a66045b",
+        "kernel_states": 8,
+        "periodic_ghost_states": 8,
+        "precision": 2,
+        "scc_count": 249
+      },
+      {
+        "ambient_edges": 32768,
+        "ambient_safe_states": 16384,
+        "de_bruijn_edge_digest": "1431d3f64cc9f31929dc56ab0363c0d7ebaabd2cca5a1d9ca0ffdb2b8e312804",
+        "de_bruijn_edges": 32,
+        "kernel_state_digest": "0af84a43eae1304224c2b470c2f79920b10e46c28c236e627597c1c7dccef9f7",
+        "kernel_states": 16,
+        "periodic_ghost_states": 16,
+        "precision": 3,
+        "scc_count": 16369
+      }
+    ],
+    "nonconstant_periodic_ghosts": 65504,
+    "periodic_controls_checked": 65534,
+    "scalable_last": {"cylinder_states": 65536, "de_bruijn_edges": 131072, "precision": 15}
+  },
+  "seed": 8847424,
+  "semantic_digest": "c9888905926a0a31d8eb3c95e67f2efb7d336e593c6b71fedee28ef08876b842"
+}
