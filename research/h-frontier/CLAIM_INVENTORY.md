@@ -20,6 +20,7 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_08.md`](claims/ITERATION_08.md) — `L-9521`, `L-9522`, `T-9515`, `R-9505`, `Q-9509`.
 - [`claims/ITERATION_08B.md`](claims/ITERATION_08B.md) — `L-9523`, `R-9506`, `Q-9510`.
 - [`claims/ITERATION_09.md`](claims/ITERATION_09.md) — `L-9524`, `L-9525`, `R-9507`, `Q-9511`.
+- [`claims/ITERATION_10.md`](claims/ITERATION_10.md) — `L-9526`, `T-9516`, `T-9517`, `R-9508`, `Q-9512`.
 - [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact ordinary and short-period counterexample sweep.
 - [`../../experiments/X-9507-h-cycle-complexity/README.md`](../../experiments/X-9507-h-cycle-complexity/README.md) — exact continued-fraction cycle-period certificate.
 - [`../../experiments/X-9508-h-compiler-renewal/README.md`](../../experiments/X-9508-h-compiler-renewal/README.md) — exact compiler and centered-renewal box audit.
@@ -88,6 +89,11 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `L-9525` | `10/30` compiler counterexample no-go | PROPOSED | `L-9524`, `T-9502`/`T-9506`, cross-direction compiler data |
 | `R-9507` | Abstract tail freedom is not physical ordinary freedom | PROPOSED | consequence of `L-9525` |
 | `Q-9511` | Physical expanding macro construction interface | IDEA | zero carry, integral growth, and escape all required |
+| `L-9526` | Polynomial finite-macro growth barrier | PROPOSED | `T-9506`, exact affine macro composition |
+| `T-9516` | Quantitative renewal-prime budget | PROPOSED / SOURCE-DEPENDENT | explicit ESS bound and native rank audit |
+| `T-9517` | Sharp survivor deficit pressure | PROPOSED | `T-9502`, `L-9504`, `L-9519` |
+| `R-9508` | Finite control and qualitative fresh primes are insufficient | PROPOSED | `L-9526`, `T-9516`, `T-9517` |
+| `Q-9512` | Positive-cycle-exploiting macro construction interface | IDEA | physical zero carry and all-time induction still required |
 | `X-9506` | Exact counterexample-first ordinary and short-period sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no word cycle through period 14 |
 | `X-9507` | Exact cycle-period compression certificate | INTERNAL EXACT | finite only; supports `T-9515` |
 | `X-9508` | Exact compiler and renewal-box audit | INTERNAL EXACT | finite only; 1,200,600 stars, no cycle |
@@ -138,15 +144,23 @@ Iteration 09 closes the cross-direction compiler as a counterexample mechanism:
 3. the abstract `2`-adic full shift therefore does not furnish physical
    ordinary freedom.
 
+Iteration 10 adds:
+
+1. `L-9526`, excluding every physical finite macro grammar whose suffix
+   multipliers have polynomial exponent below `1/log_2(rho)-1`, in particular
+   every grammar with no positive multiplier cycle;
+2. `T-9516`, an explicit logarithmic lower bound on distinct renewal primes via
+   a rank-`2s+3` nondegenerate S-unit equation;
+3. `T-9517`, raising the nonperiodic survivor's rounded-deficit baseline to the
+   exact critical constant `log_8(4/3)`.
+
 `X-9506` exhausts every ordinary candidate below `3*2^65`; its largest exact
 block lifetime is thirty-four. `X-9507` upgrades the periodic exclusion from
 word period fourteen to more than 2.47 billion blocks. `X-9508` checks
 1,200,600 centered renewal stars and finds no cycle.
 
-No structured counterexample has been found. A viable one must now be
-nonperiodic, generate sufficiently delayed symbolic novelty, satisfy the
-factor-entropy and return-capital bounds, inject infinitely many fresh bridge
-primes, provide a physical expanding macro mechanism outside the `10/30`
-compiler, and still furnish one positive integer whose extension carries are
-eventually zero. The other remaining architecture uses unbounded reset--renewal
-letters subject to the deficit-pressure and discounted-budget restrictions.
+No structured counterexample has been found. A viable one must now exploit
+physical positive multiplier cycles faster than the polynomial macro threshold
+or use a genuinely unbounded macro state, meet the sharp deficit and
+quantitative prime burdens, and still furnish one positive integer whose
+extension carries are eventually zero.
