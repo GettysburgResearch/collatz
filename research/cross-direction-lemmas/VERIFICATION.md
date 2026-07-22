@@ -196,6 +196,30 @@ height.  A cap low-bit audit found only a same-scale equivalence and finite
 counterexamples, so it produced no asymptotic claim.  Both new manuscripts
 received nonauthoring cold review and remain `PROPOSED`.
 
+Wave twenty-four ran resolution-first: the main lanes attacked the exact
+primitive-cycle divisibility `D|C`, while publication was limited to rigorous
+side-results that sharpen or close proposed shortcuts. The commutator lane
+proved `L-9906`; its integrating review reconstructed every affine degeneracy,
+the lossless word step, and the cycle-cut sign. The cycle-lattice lane derived
+`L-9907`; the integrating agent independently recomputed every determinantal
+divisor and verified that the augmented class is exactly the original cycle
+condition. The centered-tail lane produced `L-9908`; an independent cold
+review rederived all 37 displayed formulas and required two wording
+corrections distinguishing positive from trivial zero lassos and conditional
+from established ordinary realization. The primitive-divisor lane then proved
+`L-9909`; separate lanes and the integrating agent checked the Zsigmondy
+exceptions, order lifting, modular word primitivity, exact prime-power
+valuation, simultaneous-factor scope, frontier specialization, Matveev
+constant, finite cutoff, continued-fraction certificate, and universal
+full-order lower bound. Exact bounded enumerations were used only as
+regression checks. The sparse-cycle lane then proved `L-9910`, including
+complete exclusions through four exceptional valuations. The divergent-orbit
+lane combined a new
+run-to-phase encoding with `T-9801` to obtain `L-9911`, bypassing the
+cross-place gap in `R-9810`. No nontrivial positive cycle or divergent
+ordinary orbit was obtained, and all six entries remain `PROPOSED` pending
+external repository review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -263,8 +287,8 @@ received nonauthoring cold review and remain `PROPOSED`.
 | Local `T-9821` combined-moment minors and evaluated error | `T-9826` derives checkerboard Cramer signs, one-signed real error coefficients, and the exact ladder `v_2(R_m-R_n)=E_n` for all `m>n`. | Pairwise nonproportionality is automatic, but the distance-height consequence is a lower bound; the required quadratic primitive-height upper bound remains open. |
 | Local `T-9823`, `L-9801`; `PR35` only for the physical `4 -> 5` specialization | `T-9827` extracts one positive odd carry per maximal run, proves exact dyadic and odd-place zipper laws, reconstructs every compatible positive chain, and gives nested initial-carry blocks with an eventual-zero ordinary-realization criterion. | Stabilization is characterized, not proved or disproved.  The theorem neither constructs nor excludes a positive chart survivor. |
 | Frozen `PR33/L-9701`--`L-9706`, `T-9703`--`T-9705` at `c9d62bc`; frozen `PR3/L-0028`, `T-0027` at `f274dfe`; Evertse 1984 Corollary 1 | `T-9828` independently reconstructs signed quotient extinction, connector endpoint heights, primitive normalization, outside-`{2,3}` content, nondegeneracy, projective separation, and the exact primary-source theorem map. | The closure is source-qualified: the corrected tower and physical-overlap identities retain their native `PROPOSED` status, and the signed all-integer extension specifically requires `PR3/L-0028`. |
-| Local `T-9827`; elementary geometric rationalization and one-sided Morse--Hedlund | `T-9829` proves that an eventually periodic run tail forces a rational carry of the wrong sign or magnitude below one, then transfers aperiodicity to both phase and run-length words with `p(n)>=n+1`. | Aperiodic automatic, morphic, Sturmian, and arbitrary schedules remain open; the real and 2-adic sparse sums are identified only after periodicity gives one rational expression. |
-| Local `T-9827`, `T-9829`; Luca--Ouaknine--Worrell Theorem 2; Bugeaud--Laurent; Ooto; Lopez--Stoll | `R-9810` telescopes a mechanical run tail, splits its real shadow into two reciprocal Beatty series with offsets differing by half the irrational rotation, and maps the normalized real value `c+S` to the complex Hecke--Mahler theorem. | The carry uses the separate `Q_2` limit. Ooto's canonical-digit and unweighted sparse-Beatty theorems do not match the signed varying-unit series, and the exact `2 -> 3` example shows completion equality can fail. Sturmian run exclusion remains open. |
+| Local `T-9827`; elementary geometric rationalization and one-sided Morse--Hedlund | `T-9829` proves that an eventually periodic run tail forces a rational carry of the wrong sign or magnitude below one, then transfers aperiodicity to both phase and run-length words with `p(n)>=n+1`. | Aperiodic automatic, morphic, and arbitrary schedules remain open at this stage; `L-9911` later closes the mechanical/Sturmian subclass by a stronger ordinary phase-complexity floor. |
+| Local `T-9827`, `T-9829`; Luca--Ouaknine--Worrell Theorem 2; Bugeaud--Laurent; Ooto; Lopez--Stoll | `R-9810` telescopes a mechanical run tail, splits its real shadow into two reciprocal Beatty series with offsets differing by half the irrational rotation, and maps the normalized real value `c+S` to the complex Hecke--Mahler theorem. | The carry uses the separate `Q_2` limit, so the p-adic value remains unresolved. `L-9911` now bypasses this gap and excludes the ordinary mechanical/Sturmian schedule by phase complexity. |
 | Local `L-9901`, `T-9805`; Evertse--Schlickewei--Schmidt Theorem 1.1 | `L-9902` states the characteristic-zero hypothesis, sums the quantitative solution capacity over fixed coefficient/common-group classes, and gives one primitive, nondegenerate `{2}`-unit tuple in every increasing coordinate count. | Fixed endpoint support, zero endpoint exponent, bounded or subpower gcd, and point separation do not replace a fixed equation dimension; a contradiction must overfill one term-count bin. |
 | Local `T-9821`, `T-9824`, `T-9826`; frozen `PR20/L-9408`, `L-9410`, `Q-9413` at `14f06d2` | `T-9830` homogenizes the positive Schur quotients, isolates exact prime-to-six Cramer cores, proves real convergence of the evaluated pair, and derives exact 2- and 3-adic distance ladders. | The raw pair is cubic. Quadratic primitive height is equivalent to an almost-total cubic gcd at primes at least five; no lower or upper bound of that size is proved, and lacunary subsequences are not excluded by the adjacent-order floor. |
 | PR #38 `ACL-N016` at `5ad9657`; PR #33 at `c9d62bc`; local `T-9828`, `L-9900`--`L-9902`; Evertse 1984 Corollary 1 | `T-9831` absorbs every finite coefficient/sign/type catalogue into one finite prime union, applies Evertse after primitive normalization and fixed-dimension binning, derives the exact primitive endpoint invariant `Xi<1`, and separates it from the sufficient raw `(Theta,gamma)` certificate. | Bounded essential width, nondegeneracy or reverified minimal-block extraction, fixed prime union, and infinitely many primitive points remain indispensable. The abstract theorem does not supply a physical stage compiler. |
@@ -273,6 +297,12 @@ received nonauthoring cold review and remain `PROPOSED`.
 | Local `T-9821`, `T-9824`, `T-9830`; live PR #20 `L-9418`, `R-9410`, `Q-9413` at `82ca2f9` | `T-9833` constructs the shifted combined-moment cancellation system, computes every Cramer endpoint and first error, tracks the shifted Schur-core degree, proves prime-to-six raw clearing, and optimizes arbitrary delay scales. | For every `r>=2`, unreduced exponent is at most `log_81(64)<1`; at linear delay the original cubic gcd requirement is unchanged. A large outside-prime specialization gcd remains possible and open. |
 | Issue #9 affine-monoid supplement at main `b40e5c4`; PR #11 at `7950713`; elementary accelerated replay | `L-9904` proves that `D(w)|C(w)` is already a complete positive exact-cycle certificate, derives the common geometric factor for powers, and transports certificates through rotations. | Pure powers and rotations are exact duplicates, not new cycle bounds. General compressed grammars still require a root-closed canonicalization algorithm and a genuinely primitive search frontier. |
 | Issue #27; PR #38 `ACL-N054` at `5ad9657`; exact weighted-sequence-space algebra | `L-9905` gives sharp boundedness tests, the full-basin quotient decomposition, componentwise point-spectrum extraction, Collatz bilateral-path eigenvectors, and counterexamples to cycle-only, one-sided, approximate-spectrum, and smooth-density shortcuts. | The faithful atomic pushforward is noncompact and nonnuclear. Any Fredholm or smoothed spectral certificate still needs an injective support-preserving quotient intertwiner and a certified nonzero point vector. |
+| Local `L-9904`; issue #9 affine supplement at `b40e5c4`; live PR #42 at `94fcd99`; PR #11 at `7950713` | `L-9906` classifies every affine degeneracy, proves that commuting nonempty accelerated words are powers of one primitive word, and identifies each cycle-cut commutator with `D_w(n_0-n_u)`. | Connected commuting grammars collapse and small defects reject candidates, but noncommuting primitive nodes remain. The cut sieve is necessary, not complete. |
+| Local `L-9904`, `L-9906`; elementary integer linear algebra | `L-9907` computes every determinantal divisor of the cyclic edge matrix, the augmented maximal-minor gcd, and the exact order of the all-ones cokernel class. | The class vanishes exactly when `D|C`; a universal strict-gcd theorem is equivalent to excluding nontrivial positive cycles and gains no independent content from SNF or resultants. |
+| Issue #40 live `D-8701`, `L-8701`, `R-8701`, `Q-8701` at `e0593a9`; PR #37 at `a518db7`; local `T-9827` | `L-9908` independently reconstructs the live recurrence, monotonicity, and periodic-lasso exclusion, then adds the exact two-sided normalized height cone, separate real and `Q_2` series identities, and centered maximal-run crosswalk. | The overlap is explicitly non-novel. Deterministic finite-state lassos are impossible on a positive path, but genuinely aperiodic unbounded-carry or nondeterministic paths remain outside the theorem. |
+| Local `L-9904`, `L-9906`; Zsigmondy 1892; Matveev rational specialization | `L-9909` constructs primitive mixed words with exact `v_p(D)=v_p(C)` at a genuine top primitive prime power, excludes the lifted family by an exact cut identity, closes the last upward global-alias gap by Matveev plus an exact continued-fraction certificate, and proves `ord_(2^A-3^k)(2)>A-k`. | Selected old factors can be silent, but no full-denominator order/Carmichael reduction can change a positive valuation letter. Prime-dependent nonconstant cancellation across distinct local prime-power orders remains open. |
+| Local `L-9904`; elementary affine telescoping | `L-9910` derives the centered sparse numerator, its exact first-defect valuation, the fixed-core neutral-tail divisor collapse, and complete exclusions for words with one, two, three, or four non-2 letters. | The first open sparse word has at least five exceptional letters. The finite-tail theorem freezes its core and does not control larger diagonal families where several neutral gaps grow together. |
+| Local `T-9801`; elementary one-sided run coding | `L-9911` bounds phase factors by run factors with explicit starting-symbol and offset data, then applies the exact chart thresholds to mechanical and Sturmian run languages. | This closes the ordinary schedule class without evaluating its `Q_2` carry. Bounded high-complexity and unbounded subgeometric run schedules remain possible. |
 | Local `T-9831`, `L-9900`--`L-9902`; PR #33 at `c9d62bc`; PR #38 `ACL-N071` at `5ad9657`; Evertse 1984 Corollary 1 | `T-9834` decomposes unbounded nominal equations into inclusion-minimal zero-sum leaves, freezes only bounded leaf types, and excludes a leaf carrying divergent primitive height under its own endpoint-product gate. | Forest size, leaf multiplicities, raw scales, and forest words may remain unbounded. A physical compiler must prove bounded leaf width and select a height-carrying leaf; neither follows abstractly. |
 | Local `T-9821`, `T-9824`, `T-9826`, `T-9830`; live PR #20 `Q-9413` at `82ca2f9` | `T-9835` factors each base Hankel determinant into its specialized Vandermonde and Schur core, then uses both neighboring Padé cross determinants to trap the evaluated gcd by `C_n gcd(G_n,G_(n+1))^2`. | `log C_n` is only quadratic, so quadratic primitive height requires a half-cubic adjacent-core gcd. No upper bound or large common factor for that adjacent gcd is proved. |
 
@@ -347,7 +377,7 @@ not promoted beyond their native status.
 | `T-9827` | completion/run-carry lane, integrating reviewer, independent formula auditor, and period/cap reviewers | maximal-run indexing, zipper signs, first odd-prime exception, converse reconstruction, composed cylinder, nesting, stabilization equivalence, mixed-radix block formula, and `4/5` specialization were reconstructed | eventual zero blocks remain an exact criterion rather than an established outcome |
 | `T-9828`, `L-9900`, `L-9901` | cap/connector lane, primary-source lane, signed-completion lane, and integrating reviewer | Evertse pp. 226--228, all-integer source scope, cap/co-cap signs, endpoint exponents, gcd cap 216, fixed `c=1`, proper subsums, 258-coordinate indexing, valuation separator, bounded/subpower normalization, the sharp `Theta<d(1-gamma)` gate, and its boundary family were independently reconstructed | the conclusion is conditional on the frozen corrected-stage and physical-overlap identities; the abstract lemmas still require fixed rank, nondegeneracy, and normalized endpoint exponent below one |
 | `T-9829` | completion/run-carry lane, integrating reviewer, and independent cap cold reviewer | arbitrary-tail carry formula, even period selection, simultaneous real/2-adic rationalization, strict alternating bound, preperiod caveat, phase/run periodicity equivalence, and both Morse--Hedlund floors were reconstructed | no argument yet treats genuinely aperiodic low-complexity schedules |
-| `R-9810` | completion/Sturmian lane, integrating reviewer, and primary-source audit | mechanical telescoping, even/odd Beatty split, offset-lattice separation, archimedean theorem mapping, p-adic digit-scope mismatch, and the exact `2 -> 3` cross-place example were reconstructed | no audited source proves irrationality of the `Q_2` Beatty-series value; the desired Sturmian exclusion remains open |
+| `R-9810` | completion/Sturmian lane, integrating reviewer, and primary-source audit | mechanical telescoping, even/odd Beatty split, offset-lattice separation, archimedean theorem mapping, p-adic digit-scope mismatch, and the exact `2 -> 3` cross-place example were reconstructed | no audited source proves irrationality of the `Q_2` Beatty-series value; `L-9911` later makes that value unnecessary for the ordinary schedule exclusion |
 | `L-9902` | cap/arithmetic lane, integrating reviewer, and independent period cold reviewer | ESS characteristic-zero scope, capacity summation, common-group qualification, the one-positive growing-dimension tuple, its rank-one normalization, and bounded/subpower-gcd variants were checked | the lemma is a scope boundary, not a global quantitative theorem; only multiplicity within a fixed term-count bin can contradict ESS |
 | `T-9830` | period-ten lane, integrating reviewer, and independent cap cold reviewer | Schur endpoint selectors, homogeneous prime-to-six cores, Cramer exponents, evaluated integrality and endpoint valuations, real convergence, raw cubic height, gcd equivalence, and both distance ladders were reconstructed | the outside-prime cubic gcd remains entirely open; the height floor controls consecutive or nonlacunary orders, not arbitrary sparse subsequences |
 | `T-9831` | fixed-width Evertse lane and independent completion-master reviewer | primitive outside-product identity, finite type/prime union, coefficient absorption, normalized `Xi` gate, raw gcd certificate, equality constants, PR #33 specialization, ESS distinction, and all boundary examples were reconstructed | the raw marginal iff is only certificate-level; minimal blocks require a fixed subsequence/type and full revalidation of support, endpoints, and primitive distinctness |
@@ -356,6 +386,12 @@ not promoted beyond their native status.
 | `T-9833` | period-ten delayed-combined lane and independent fixed-width reviewer | shifted Hankel indexing, Cramer sums, Schur homogeneity, exact first error, unique 3-adic numerator maximizer, integral raw pair, prime-to-six gcd, uniform real convergence, and the `n^(3/2)` delay dichotomy were reconstructed | the ceiling requires `r>=2` and `M>=n+1`; `r=1` and the canonical edge `M=n` have different maximizers and are deliberately outside scope |
 | `L-9904` | compressed-cycle lane and independent fixed-width reviewer | affine composition orientation, lossless summary decoding, divisibility-to-replay induction, power/gcd factorization, rotation identity, primitive-necklace classification, and Hercher local-minimum count were reconstructed; the sole typographical multiplication error was corrected | the result removes duplicate certificates but neither searches a primitive grammar frontier nor produces a nontrivial cycle |
 | `L-9905` | functional-graph spectral lane and integrating reviewer | pushforward/composition norm criteria, complete-invariance quotient, component restriction, cycle-only counterexample, Collatz bilateral path, boundary term, approximate-spectrum example, and noncompactness were reconstructed | the full-basin quotient is exact but its nonzero certification is already counterexample-level; transport from a nuclear operator remains open |
+| `L-9906` | compressed-cycle commutator lane and integrating reviewer | affine composition orientation, all slope-one and zero-translation cases, summary injectivity, word-commutation induction, first-mismatch valuation, rotation displacement, early-return collapse, connected partition theorem, and cut sieve were reconstructed | zero defects are powers and small defects reject, but surviving noncommuting primitive words still require the original odd-denominator divisibility |
+| `L-9907` | fixed-width cycle-lattice lane and integrating reviewer | determinant sign, coprime lower minors, complete Smith form, Cramer replacement minors, augmented class order, rotation gcd identity, exact-cycle equivalence, and cut-defect counterexamples were reconstructed | the sole cokernel class vanishes exactly for a cycle; proving it nonzero universally is the original positive-cycle obstruction in lattice notation |
+| `L-9908` | integrating centered-tail lane and independent fixed-width cold reviewer | forced residues, strict height escape, both affine cone identities, separate real and `Q_2` limits, periodic rationalization, lasso bound, deterministic-controller scope, run zipper, and the four-phase table were reconstructed; two overbroad wording claims were corrected | positive deterministic lassos are excluded, but genuinely aperiodic unbounded-carry paths and nondeterministic finite graphs remain open |
+| `L-9909` | completion-master primitive-divisor lane, independent Zsigmondy lane, two independent logarithmic-gap auditors, and integrating reviewer | cyclotomic normalization, both classical exceptions, exact order at `p^e`, independent prefix coordinate, cyclic word primitivity, exact numerator/denominator valuations, finite-set strengthening, two-run cut identity, size reversal, residue-word alias theorem, Matveev specialization, analytic cutoff, exact continued-fraction prefix, exceptional convergents, full-order lower bound, and the 92-minimum specialization were reconstructed | the explicit lifted family and every one-global-alias recursion are excluded, but arbitrary words may use different nonconstant cancellation patterns at different prime powers |
+| `L-9910` | sparse-cycle lane, integrating reviewer, and independent cold reviewer | centered chronology and sign, telescoping support, unique least 2-adic summand, neutral-tail collapse, all two-defect cases, centered-deletion strictness, every three-core rotation, the exceptional `3 -> 5` replay, four-core contractions, adjacent-swap maxima, largest-gap constants, and every finite boundary remainder were reconstructed | fixed neutral padding and at most four exceptional valuations are closed; five or more jointly varying exceptional positions remain open |
+| `L-9911` | divergent-orbit lane and integrating reviewer | one-sided containing-run encoding, offset count, asymptotic slope transfer, mechanical circle partition, finite-prefix factors, both exact threshold inequalities, and the ordinary/completion scope distinction were reconstructed | mechanical and Sturmian maximal-run schedules are excluded, but the theorem does not bound high-complexity bounded-run or subgeometric unbounded-run schedules |
 | `T-9834` | bounded-essential-width lane and independent H/Evertse reviewer | minimal-leaf termination, finite masks/types, primitive endpoint transfer, fixed-dimension Evertse application, marked-height subsequence, raw `Theta-gamma` gate, and six sharp counterfamilies were reconstructed | nominal width is harmless only after a physical decomposition supplies uniform leaf width and a leaf carrying divergent primitive height |
 | `T-9835` | period-ten adjacent-core lane and independent completion-master reviewer | base determinant row/column factors, Vandermonde quotient, `epsilon_n=Delta_(n+1)/Delta_n`, two-order raw clearing, exact prime-to-six cross content, two-sided divisibility, and all cubic constants were reconstructed | the theorem localizes the missing gcd but does not estimate `gcd(G_n,G_(n+1))` |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
@@ -961,9 +997,10 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `L-9900`--`L-9901` require a fixed coordinate count and nondegenerate zero
   sums.  Their endpoint-budget inequalities do not apply to growing-term-count
   equations or families with proper vanishing subsums.
-- `R-9810` does not exclude Sturmian maximal-run schedules.  It proves only
-  that the available real Hecke--Mahler transcendence theorem cannot be
-  transferred to the required 2-adic carry value.
+- `R-9810` itself does not exclude Sturmian maximal-run schedules; it proves
+  that real Hecke--Mahler transcendence cannot be transferred to the required
+  2-adic carry. `L-9911` separately closes the ordinary schedule class by
+  phase complexity without resolving that p-adic value.
 - `L-9902` does not give a growing-term-count ESS exclusion; it shows exactly
   why one tuple in each new dimension evades every fixed-term-count capacity
   bound.
@@ -990,6 +1027,28 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   point-spectrum support faithful, while also showing why a cycle-only
   quotient, one-sided orbit sum, approximate eigenvalue, or smooth density is
   insufficient.
+- `L-9906` does not exclude primitive accelerated cycles. It collapses
+  commuting block grammars and rejects proper cuts with defects smaller than
+  the cycle denominator; noncommuting defects large enough to be divisible
+  remain possible.
+- `L-9907` does not turn Smith form into a cycle obstruction. The single
+  augmented cokernel class is zero exactly when the original divisibility
+  certificate holds, so a universal strict-gcd bound would already be the
+  desired no-positive-cycle theorem.
+- `L-9908` does not exclude an aperiodic centered survivor. It gives an exact
+  height/completion interface and rejects eventually periodic deterministic
+  control tails, while retaining unbounded carry and nondeterministic paths
+  as explicit open cases.
+- `L-9909` does not construct a cycle. It proves that selected primitive
+  denominator prime powers can be completely silent, then proves that its
+  own lifted family retains another obstructing factor. Arbitrary
+  prime-dependent nonconstant cancellations remain uncontrolled.
+- `L-9910` does not exclude all sparse cycle words. It closes fixed neutral
+  padding and the cases of at most four non-2 letters; five or more
+  exceptional letters with jointly varying gaps remain.
+- `L-9911` does not exclude all aperiodic run schedules. It closes mechanical
+  and Sturmian schedules by ordinary phase complexity, while high-complexity
+  bounded runs and unbounded subgeometric runs remain.
 - `T-9834` does not make every growing-width stage fixed-dimensional. It
   applies only after a uniformly bounded nondegenerate leaf decomposition and
   a height-carrying leaf are established in the physical architecture.
@@ -1556,3 +1615,49 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     Vandermonde from its quadratic consecutive quotient, strip only primes
     two and three, and do not turn the half-core necessity into an adjacent-
     gcd upper bound.
+84. For `L-9906`, preserve chronological composition and the sign of
+    `Omega=C_(uv)-C_(vu)`. Treat empty identities and slope-one translations
+    before specializing to nonempty accelerated words. At a cycle cut, check
+    `Omega=D_w(n_0-n_u)` and use small defect only as a necessary rejection,
+    never as a complete divisibility test.
+85. For `L-9907`, exhibit both coprime families of every proper minor before
+    asserting the Smith form, retain the determinant orientation, and derive
+    the augmented class order from the unique rational solution `mC/D`.
+    State explicitly that universal nonvanishing of this class is equivalent
+    to positive-cycle exclusion and that divergent trajectories are outside
+    the finite cyclic matrix.
+86. For `L-9908`, keep the real and `Q_2` limits separate until periodicity
+    yields one rational expression. Verify the sign of `D_(N,p)`, the sharp
+    `1/17` bound, and the two trivial zero tails. Apply the finite-state
+    corollary only to autonomous deterministic output; arbitrary paths in a
+    nondeterministic finite graph need not have periodic labels.
+87. For `L-9909`, distinguish integer-word primitivity from modular exponent
+    periodicity, check both Zsigmondy exceptions, and retain modulus
+    `p^(e+1)` when claiming the exact exponent `e`. Verify that the selected
+    prime remains a genuine top primitive divisor for the new pair, and never
+    infer that silencing selected old factors controls the additional factors
+    of the new denominator. Recheck the chronological two-run numerator,
+    cancellation of the power-of-two unit, the `D>E` inequality only for
+    `m>=2`, the separate `m=1` identity and size bound, and the common-order
+    hypothesis in the residue-word alias theorem. For the residual gap,
+    audit the rational Matveev specialization, exact monotone cutoff,
+    gcd-reduced Legendre step, complete upper-convergent table, `q=5` edge,
+    and rational log-enclosure certificate. Derive the full-order bound only
+    with positive comparison words and retain its full-order, not local-order,
+    scope.
+88. For `L-9910`, keep `E=C-D` and chronological prefix exponents, prove the
+    first nonzero summand has uniquely least 2-adic order, and cancel the
+    terminal factor `3^r` only after checking `gcd(D_r,3)=1`. For the
+    two-defect theorem, preserve rotation rather than reflection and verify
+    every `t=3,...,6` height survivor and nonzero remainder. For three
+    defects, use positivity before deleting neutral branches, check all core
+    rotations, and derive the all-one maximum by adjacent swaps before using
+    the largest-gap constants. For four defects, preserve positivity while
+    lowering high letters to `3`, audit every standardized core, rotate a
+    genuinely largest neutral gap, and verify the `R=1,2,3,6` boundary
+    remainders after the exact height sieve.
+89. For `L-9911`, encode a phase factor by its containing-run symbol, offset,
+    and enough following run lengths; do not identify run and phase
+    languages. Handle finite prefixes additively, define the Sturmian case by
+    its `m+1` factor complexity, and certify both threshold comparisons by
+    `64^5>81^4` and `4^5>5^4` rather than decimals.

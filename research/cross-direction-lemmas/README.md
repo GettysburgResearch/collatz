@@ -47,6 +47,7 @@ dependency.
 - [`wave twenty-one`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-one.md)
 - [`wave twenty-two`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-two.md)
 - [`wave twenty-three checkpoint`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-three-checkpoint.md)
+- [`wave twenty-four resolution-first checkpoint`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-four.md)
 
 ## Result map
 
@@ -165,6 +166,12 @@ dependency.
 | [`L-9903`](claims/L-9903-h-renewal-evertse-transfer.md) | PR #19 H/Evertse interface | Every central renewal star and full bridge is a primitive nondegenerate four-term zero sum. Evertse then forces any nonperiodic survivor to retain asymptotically linear endpoint outside-`{2,3}` mass, isolating the exact missing height deficit. |
 | [`L-9904`](claims/L-9904-compressed-cycle-primitive-root.md) | Issue #9 / PR #11 compressed-cycle interface | Exact divisibility already forces positive integral replay. Powers have the same reduced fixed point and cycle as their primitive root, rotations only change the starting state, and genuine certificates are admissible primitive necklaces with primitive-root cycle counts. |
 | [`L-9905`](claims/L-9905-functional-graph-point-spectrum-support.md) | Issue #27 / PR #38 spectral-support interface | On a faithful weighted atomic space, the full trivial-basin quotient splits by functional components. Nonzero point spectrum extracts an unaccounted component exactly; cycle-only quotients, one-sided orbit sums, approximate spectrum, and smooth eigenfunctions do not. |
+| [`L-9906`](claims/L-9906-compressed-cycle-commuting-block-collapse.md) | Issue #9 / PR #11 compressed-cycle grammar | Two nonempty accelerated blocks commute exactly when they are powers of one primitive word. On a cycle their commutator is the full denominator times the displacement to the rotated state, giving an exact early-return collapse and proper-cut sieve. |
+| [`L-9907`](claims/L-9907-cycle-circulant-snf-equivalence.md) | Positive-cycle lattice frontier | The cyclic edge matrix has one Smith factor `|D|`; the all-ones cokernel class vanishes exactly when the valuation word is an exact positive cycle. This proves that the natural SNF/gcd attack is an equivalence, not an independent obstruction. |
+| [`L-9908`](claims/L-9908-centered-forced-tail-lasso-firewall.md) | Issue #40 / PR #37 centered forced-tail interface | Extends the independently overlapping issue-#40 monotonicity/lasso results with a sharp normalized height cone, separate real/`Q_2` identities, and the exact maximal-run crosswalk. Periodic deterministic control still forces `|B|<=1/17`. |
+| [`L-9909`](claims/L-9909-primitive-prime-power-cycle-obstruction-boundary.md) | Issue #9 prime-factor cycle frontier | A genuine top-cyclotomic prime power can divide both `D_w` and `C_w` exactly beyond the coarse cycle bounds. The lifted family is nevertheless excluded, and an exact Matveev/continued-fraction closure proves `ord_D(2)>A-k`, making full-denominator order reduction letterwise vacuous. |
+| [`L-9910`](claims/L-9910-centered-defect-neutral-tail-collapse.md) | Issue #9 sparse-cycle frontier | Centering at `1` deletes every valuation `2` from the exact numerator. A fixed core plus any all-2 tail reduces to finitely many divisors of one fixed defect; exact sign/height/divisor, centered-deletion, and largest-gap arguments exclude every word with at most four non-2 letters. |
+| [`L-9911`](claims/L-9911-sturmian-run-schedule-complexity-exclusion.md) | PR #35 / centered divergent-orbit frontier | A bounded run language with slope `c` gives phase slope at most `2Hc/h`. Mechanical and Sturmian schedules have ceiling at most four, below the exact ordinary thresholds for both `64 -> 81` and `4 -> 5`, so none can encode a positive survivor. |
 | [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16/PR #20/PR #35 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; live PR #16 and PR #35 now independently recover its principal specializations, while its finite certificate excludes entire low-complexity equality subshifts. |
 | [`T-9802`](claims/T-9802-cap-head-final-symbol-rigidity.md) | PR #33/PR #3 cap-chain bridge | The fourth head symbol only translates the correction by cells `(0,3,53,1)Q/64`; at least 192 of 256 words are uniformly large, and every late hypothetical cap chain has at most 64 cusp-admissible head words. |
 | [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
@@ -179,7 +186,7 @@ dependency.
 | [`T-9811`](claims/T-9811-fixed-room-rational-or-transcendental.md) | PR #3 fixed-room/Ridout bridge | The native real, binary, and ternary approximation factors match Ridout's projective theorem with targets `(C,0,infinity)` exactly, so every hypothetical fixed corrected-stage room is transcendental. |
 | [`T-9812`](claims/T-9812-native-order-two-casoratian.md) | PR #20 native q-difference frontier | The periodic stack solution and its first q-shift are independent over `Q(X)`; their solution Casoratian is positive over the reals and has exact physical valuation `54(m+d_1)+6` at `2`. |
 | [`R-9809`](claims/R-9809-cross-completion-denominator-descent.md) | PR #20 denominator-descent audit | Refutes the historical proof bridge in `T-9418`--`T-9421`: fixed denominators belong to rational 2-adic tails, while compact positivity bounds belong to separate real shadows; live PR #20 now independently confirms the mismatch and withdraws the affected claims. |
-| [`R-9810`](claims/R-9810-sturmian-hecke-mahler-cross-place-gap.md) | PR #35/Sturmian carry audit | The mechanical maximal-run carry is a 2-adic difference of reciprocal Beatty series. Its real shadow is transcendental by Hecke--Mahler theory, but exact chart examples show the two completion limits can differ; the missing input is genuinely p-adic Beatty-series irrationality. |
+| [`R-9810`](claims/R-9810-sturmian-hecke-mahler-cross-place-gap.md) | PR #35/Sturmian carry audit | The mechanical maximal-run carry is a 2-adic difference of reciprocal Beatty series whose real shadow cannot determine it. `L-9911` now bypasses that unresolved p-adic problem and excludes the ordinary mechanical/Sturmian schedule directly by phase complexity. |
 | [`T-9813`](claims/T-9813-room-address-cap-cell-alignment.md) | PR #3/PR #33 room-cap bridge | The three-symbol room address is exactly the cap-head correction modulo its coarse width; the realized fourth-symbol cells form four-element fibers, and eventual rooms inject into an explicit survivor set of liminf size at most 64. |
 | [`T-9814`](claims/T-9814-overlap-incidence-rank.md) | PR #3 adjacent-stage S-unit frontier | Retained stages have path-incidence endpoint rank `<=1+(h+1)s`; composing them removes internal boundaries and leaves exact fresh-prime ambient rank `2f+1`, independent of block length. |
 | [`T-9815`](claims/T-9815-period-one-padic-linear-independence-measure.md) | PR #20 native q-difference frontier | A sourced finite-place theorem makes every period-one pair `F(x),F(qx)` Q-linearly independent with explicit exponent `96.8590845...`; exact source inequalities show why the audited criteria stop at longer periods. |
@@ -486,8 +493,11 @@ independently reconstructed and which conjectural boundaries remain open.
    value is transcendental, but the required carry is their separate 2-adic
    limit.  An exact `2 -> 3` chart identity produces 2-adic value `6` from
    rational partial sums whose real limit is at most `3`, so archimedean
-   Hecke--Mahler theory cannot cross this gap.  The missing input is a p-adic
-   Beatty--Hecke--Mahler irrationality theorem.
+   Hecke--Mahler theory cannot cross this gap. `L-9911` now bypasses rather
+   than repairs it: the phase expansion of any mechanical or Sturmian run
+   word has complexity slope at most four, below both physical ordinary-chart
+   thresholds. The p-adic Beatty--Hecke--Mahler irrationality question remains
+   open, but it is no longer needed for this ordinary schedule exclusion.
    `T-9832` unifies the valid elementary completion-height interfaces for
    arbitrary coprime `2<=M<N`. Selected periodic approximants, equal factors,
    same-symbol returns, and physical maximal runs use an `M`-deep numerator
@@ -619,6 +629,134 @@ where `log C_n=Theta(n^2)`.  Hence the almost-total cubic evaluated
 gcd required by `T-9830` can exist only if adjacent base Schur cores already
 share at least half of their cubic logarithmic mass.  No bound for that
 adjacent gcd is claimed.
+
+## Wave twenty-four resolution-first checkpoint
+
+The primary line now seeks an unconditional resolution, with positive cycles as
+the shortest exact-certificate route. Six reusable side-results were
+published because they remove false shortcuts and sharpen the live search;
+none is presented as a counterexample.
+
+`L-9906` classifies commuting compressed blocks.  For nonempty accelerated
+words, affine commutation, equality of rational fixed points, word
+commutation, and being powers of one primitive word are equivalent.  At a
+proper cut `w=uv` of a positive cycle,
+
+\[
+ \Omega(u,v)=D_w(n_0-n_u).
+\]
+
+Thus zero commutator is exactly an early return, while a primitive cycle
+requires every proper-cut defect to be a nonzero multiple of `D_w`.
+
+`L-9907` gives the complete cyclic-lattice audit.  The edge matrix has
+
+\[
+ \operatorname{SNF}(M_w)=\operatorname{diag}(1,\ldots,1,|D_w|),
+\]
+
+and the all-ones cokernel class has order
+
+\[
+ {|D_w|\over\gcd(D_w,C_0,\ldots,C_{k-1})}.
+\]
+
+Its vanishing is exactly the original integral-cycle condition.  Therefore a
+universal strict rotation-gcd theorem would be the desired no-positive-cycle
+theorem itself, not a shortcut supplied by Smith form or resultants.
+
+`L-9908` supplies the exact issue-#40 lasso firewall.  In the centered
+zero-block kernel,
+
+\[
+ 64B_{n+1}=81B_n+e_n-e_{n+1},
+\]
+
+every positive integral path is strictly increasing and
+`(64/81)^n B_n` converges to a positive real limit.  If the bit tail has
+period `p`, a finite integer `D_(N,p)` instead forces
+
+\[
+ (81^p-64^p)B_N+D_{N,p}=0,
+ \qquad |B_N|\le {1\over17}.
+\]
+
+Hence only the two constant zero-room tails are periodic; a deterministic
+finite-state controller cannot carry a positive survivor.  Genuinely
+aperiodic paths with unbounded carry remain open.
+
+`L-9909` defeats the natural per-prime Zsigmondy shortcut at full lifting
+depth. For every `g>m>=1`, a primitive mixed word can be chosen so that a
+genuine order-`g` primitive prime satisfies
+
+\[
+ \nu_p(D_w)=\nu_p(C_w).
+\]
+
+The construction persists with more than `72,000,000,000` odd steps and 92
+local minima. It is not a cycle: unselected factors of the new denominator
+may still obstruct. The theorem shows that a successful factor route must
+couple the whole factorization to the prefix-discrepancy sequence rather than
+selecting one primitive divisor.
+
+The same claim then closes its own counterfamily. For `w=L^m1^r` with the
+frontier choice `m>=2`, an exact cut identity forces cycle divisibility to
+imply
+
+\[
+ D_w\mid(2^L-2)(3^r-2^r),
+\]
+
+while a sharp size comparison makes the positive right side smaller than
+`D_w`. A second theorem shows that no common exponent modulus containing
+`ord_(D_w)(2)` can make the new word alias one smaller residue word modulo
+the entire denominator. The `m=1` edge is closed separately by
+`C_w+D_w=(2^L-2)3^(g-1)` and a strict size bound, so the entire lifted family
+is excluded. The sole near-critical alias gap is then closed by an explicit
+Matveev cutoff and an exact rational continued-fraction certificate. In fact,
+for every `D=2^A-3^k>1`,
+
+\[
+ \operatorname{ord}_D(2)>A-k,
+\]
+
+so reducing a positive length-`k`, total-`A` valuation word modulo the full
+denominator order cannot change even one letter. Prime-dependent nonconstant
+cancellations at the different prime-power factors remain the open route.
+
+`L-9910` recenters the cycle numerator at the trivial fixed point:
+
+\[
+ E_w=C_w-D_w
+ =\sum_j3^{k-1-j}2^{A_j}(4-2^{a_j}).
+\]
+
+Every valuation `2` vanishes from this exact signed sum, and the first non-2
+letter gives its exact 2-adic order. For a fixed core `u` followed by `r`
+neutral letters, `E_(u2^r)=3^rE_u`; cycle divisibility reduces to one finite
+list `D_r|E_u`. A complete sign, height, and four-row divisor argument
+excludes every word with only one or two non-2 letters. Centered deletion
+reduces every high-containing three- or four-letter core to an explicit
+contraction. Sharp largest-gap estimates and exact boundary tables close the
+remaining all-low cases. The first open sparse cycle frontier therefore has
+at least five exceptional valuations.
+
+`L-9911` closes the mechanical/Sturmian divergent-orbit lane without making a
+cross-completion identification. If phase runs lie in `[h,H]`, then
+
+\[
+ p_e(n)\le2H,p_\ell\!\left(1+\left\lceil{n-1\over h}\right\rceil\right).
+\]
+
+A mechanical or Sturmian run schedule has resulting phase-complexity slope at
+most `2(h+1)/h<=4`. The exact `T-9801` thresholds for `64 -> 81` and `4 -> 5`
+both exceed four (`64^5>81^4` and `4^5>5^4`), so neither chart admits a
+positive ordinary survivor with such a schedule. High-complexity bounded-run
+and subgeometrically unbounded-run schedules remain open.
+
+The live constructive target remains one primitive positive-drift word with
+`D_w|C_w`, followed by independent replay of every exact valuation.  No such
+word or other unconditional counterexample is claimed at this checkpoint.
 
 ## Integration boundary
 
