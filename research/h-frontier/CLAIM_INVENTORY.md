@@ -2,8 +2,8 @@
 
 This index reserves the `*-9500` identifiers for issue #17. It is not the
 repository's canonical `CLAIMS.md`. All theorem-level statements remain
-`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9504`
-are `EMPIRICAL` and do not promote any universal claim.
+`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9505`
+are empirical or exact finite checks and do not promote any universal claim.
 
 ## Packet files
 
@@ -15,6 +15,7 @@ are `EMPIRICAL` and do not promote any universal claim.
 - [`claims/ITERATION_03.md`](claims/ITERATION_03.md) — `L-9513`–`L-9515`, `T-9506`–`T-9508`, `Q-9504`, `Q-9505`.
 - [`claims/ITERATION_04.md`](claims/ITERATION_04.md) — `T-9509`.
 - [`claims/ITERATION_05.md`](claims/ITERATION_05.md) — `L-9516`, `T-9510`, `Q-9506`.
+- [`claims/ITERATION_06.md`](claims/ITERATION_06.md) — `L-9517`, `L-9518`, `T-9511`, `T-9512`, `Q-9507`.
 
 ## Status table
 
@@ -26,7 +27,7 @@ are `EMPIRICAL` and do not promote any universal claim.
 | `L-9503` | Carries and ghost stabilization | PROPOSED | `L-9502` |
 | `L-9504` | Toll-Euler identity | PROPOSED | `D-9501` |
 | `T-9501` | Infinite-survivor harmonic summability | SUPERSEDED | stronger plastic bound `T-9506` |
-| `T-9502` | Nonperiodic survivors real-escape | PROPOSED | `L-9504`, now preferably `T-9506` |
+| `T-9502` | Nonperiodic survivors real-escape | PROPOSED | `L-9504`, preferably `T-9506` |
 | `T-9503` | Equivalent infinite-obstruction formulations | PROPOSED | `L-9503`, `T-9502` |
 | `L-9505` | Bounded-representative finite branching | PROPOSED | exact finite-tree target |
 | `C-9501` | Signed displacement for exact cylinders | EMPIRICAL | universal mixed-sign carry step open |
@@ -36,7 +37,7 @@ are `EMPIRICAL` and do not promote any universal claim.
 | `R-9501` | No finite itinerary-only obstruction | PROPOSED | consequence of `L-9502` |
 | `R-9502` | Direct ghost congruence correction | PROPOSED | consequence of `L-9502` |
 | `Q-9501` | Carry-rectangle lemma | IDEA | broad form of the mixed-sign gap |
-| `Q-9502` | Weighted bounded-representative termination | IDEA | prefix-expanding one-sided obstruction |
+| `Q-9502` | Weighted bounded-representative termination | IDEA | one-sided obstruction |
 | `L-9509` | Two-sided exact-window density | PROPOSED | finite-window consequence |
 | `L-9510` | Long expanding finite shadows | PROPOSED | finite shadows are not infinite orbits |
 | `L-9511` | Canonical endpoint range and fixed-point phase | PROPOSED | self-contained after `L-9502` |
@@ -48,48 +49,49 @@ are `EMPIRICAL` and do not promote any universal claim.
 | `L-9513` | Exact first-crossing intermediate threshold | PROPOSED | zero-carry inequality remains |
 | `L-9514` | Separated ghost IFS and plastic recurrence | PROPOSED | self-contained from ghost recursion |
 | `T-9506` | Plastic power bound for ordinary survivors | PROPOSED | `L-9503`, `L-9514` |
-| `T-9507` | Branchwise critical harmonic kernel | PROPOSED | gives uniform core-reciprocal budgets |
+| `T-9507` | Branchwise critical harmonic kernel | PROPOSED | uniform core-reciprocal budgets |
 | `L-9515` | Repetition forces completion height | PROPOSED | complexity corollary uses real escape |
 | `T-9508` | Critical/subcritical real-escape split | PROPOSED | depends on `T-9505` |
 | `Q-9504` | `2`-adic logarithm critical-chain exclusion | SUPERSEDED | resolved by `T-9509` modulo Yu audit |
-| `Q-9505` | Subcritical transformed-height finite trap | IDEA | sole real-escape regime |
-| `T-9509` | Critical real escape is impossible | PROPOSED | imports Yu 2007; specialization needs independent audit |
-| `L-9516` | Centered decomposition around ghost `4` | PROPOSED | exact fixed-room valuation decomposition |
-| `T-9510` | Monotone ordinary-section minimum | PROPOSED | H is equivalent to `nu_K -> infinity` |
-| `Q-9506` | Ordinary-section minimum divergence | IDEA | stronger all-orbit target; finite checkpoint `X-9504` |
+| `Q-9505` | Subcritical transformed-height finite trap | SUPERSEDED | sharpened by `Q-9507` |
+| `T-9509` | Critical real escape is impossible | PROPOSED | imports Yu 2007; specialization needs audit |
+| `L-9516` | Centered rooms around the fixed ghost `4` | PROPOSED | outer-room decomposition only |
+| `T-9510` | Monotone ordinary-section minimum | PROPOSED | boundary step repaired by `L-9517` |
+| `Q-9506` | Ordinary-section minimum divergence | IDEA | direct proof target `nu_K -> infinity` |
+| `L-9517` | Complete finite-code boundary classification | PROPOSED | repairs the closure boundary in `T-9510` |
+| `L-9518` | Dual renewal bridge and integral sign law | PROPOSED | centered two-place normal form |
+| `T-9511` | Subcritical future-core demand | PROPOSED | assumes the post-Yu subcritical regime |
+| `T-9512` | Minimal-survivor relative toll bound | PROPOSED | conditional on a nonperiodic survivor |
+| `Q-9507` | Subcritical renewal finite trap | IDEA | integral transformed height still open |
 
 ## Dependency summary
 
-There are now two complete proof architectures.
-
-### Descent-plus-LX architecture
-
-1. `C-9501` and `L-9506` make every contracting exact segment descend.
-2. Infinite repeated descent is impossible in positive integers.
-3. Any surviving tail is prefix-expanding.
-4. `Q-9502` excludes that tail.
-
-### Direct ordinary-section architecture
-
-1. `L-9514` gives the exact ghost attractor.
-2. `T-9510` identifies a monotone scalar minimum `nu_K`.
-3. `Q-9506`, the divergence `nu_K -> infinity`, directly proves H without
-   requiring `C-9501`.
-
-Iteration 02 introduced canonical phases and the capital--core budget.
-Iteration 03 added plastic ghost pressure, critical harmonic kernels,
-completion-height repetition, and the critical/subcritical split. Iteration 04
-uses Yu's explicit `2`-adic logarithmic-form theorem to eliminate the critical
-branch, subject to independent verification of the external specialization.
-Iteration 05 centers the ghost system at its fixed point `4` and replaces the
-remaining all-orbit question by the monotone ordinary-section minimum.
-
-The exact finite checkpoint is
+A direct proof of H would follow from
 
 \[
-\nu_{50}=10,205,790,208,
+\nu_K\longrightarrow\infty
 \]
 
-with 922,111 ghost residue classes at precision 50. This is finite evidence,
-not an asymptotic proof. No positive integer witness and no proof excluding the
-subcritical ordinary section is contained in this packet.
+in `Q-9506`; this route bypasses the signed-displacement conjecture. The older
+descent architecture would follow from `C-9501` together with `Q-9502`.
+
+Iterations 02--05 established the canonical phase reduction, plastic survivor
+pressure, the discounted capital--core budget, exclusion of the critical
+near-Pillai mode (subject to a Yu-theorem audit), and the monotone ordinary
+minimum.
+
+Iteration 06 adds three structural upgrades:
+
+1. `L-9517` classifies every closure boundary and repairs the compactness step
+   in `T-9510`;
+2. `L-9518` gives the exact centered two-place renewal bridge and the first
+   useful integral transformed height `Z_k`;
+3. `T-9511` solves the remaining subcritical recurrence in a future-weighted
+   form and proves that every large valuation forces a later unbounded deficit
+   and exponential odd-core reset.
+
+The sole infinite mechanism still not excluded is an eventual-zero-carry,
+subcritical ordinary ghost with unbounded renewal deficits. `Q-9507` asks for
+an integral finite-trap refinement of the real future-demand identity. No
+positive integer witness and no proof excluding this last regime is contained
+in the packet.
