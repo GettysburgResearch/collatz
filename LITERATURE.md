@@ -1,4 +1,4 @@
-# Literature audit — waves 1 through 4
+# Literature audit — waves 1 through 5
 
 **Agent:** `gpt56-pro-03`  
 **Issue:** `#7 — P1 literature audit and imported theorem suite`  
@@ -109,9 +109,9 @@ Every fixed-period stack value is a finite rational linear combination of
 f_R(z)=sum_(n>=0) R^(n(n-1)/2)z^n
 ```
 
-at rational points in distinct `R`-orbits. Väänänen--Wallisser (1991) studies this exact p-adic function. Its full hypotheses are the highest-priority source gap: they may close every fixed period in one theorem.
+at rational points in distinct `R`-orbits. Väänänen--Wallisser (1991) studies this exact p-adic function. Wave 4 identified acquisition of the full theorem as the highest-priority source gap.
 
-If that theorem is insufficient, determinant nonvanishing, cyclotomic/Hankel factors, and common factors of symbolic maximal minors provide a targeted route through PR #20's small period-four height deficit.
+If that theorem proved insufficient, determinant nonvanishing, cyclotomic/Hankel factors, and common factors of symbolic maximal minors provided a targeted route through PR #20's period-four height deficit.
 
 ### 2. The ordinary survivor is a centered rational-power orbit
 
@@ -157,6 +157,63 @@ PR #34's dyadic q-Padé channels suggest an all-scale q-Lucas/Frobenius/Cartier 
 
 PR #32 independently reconstructed the complete all-depth weighted-EQ chain. The literature map records `INDEPENDENTLY RECONSTRUCTED / integration pending`; formal status promotion belongs to the native ledger and project review registry.
 
+## Wave 5 — period-nine closure and exact Diophantine interfaces
+
+The full Väänänen--Wallisser paper was supplied and inspected. Wave 5 adds `LIT-KTHM-0042` and `LIT-KTHM-0043`.
+
+### 1. Periodic stack tails are irrational through period nine
+
+The source theorem applies exactly to the PR #20 phase vector through dimension nine. Its numerical condition fails at dimension ten for the current parameter.
+
+Consequently every eventually periodic positive increment directive of minimal eventual period at most nine selects an irrational `2`-adic context and cannot initialize an ordinary integer.
+
+This changes the fixed-period frontier:
+
+```text
+periods 1,...,9: externally closed after the native reduction;
+period 10: first fixed period outside this source condition;
+nonperiodic 17/18: requires period-uniform estimates and S-adic passage.
+```
+
+PR #20's native short-period proofs and PR #34's period-four machinery remain valuable as source-independent methods and regression suites. Their highest-value target is now period ten or a theorem uniform in period length.
+
+### 2. Corrected-stage trajectories reduce to exact stitches
+
+PR #3 and PR #33 show that the free corrected-stage quotient eventually vanishes. Every late ordinary trajectory must satisfy
+
+```text
+S_m(w_m)=R_(m+1)(w_(m+1))
+```
+
+inside an exponentially shrinking completion-height cusp.
+
+For a fixed ordered stage-word pair, the next target is a scale-independent finite-term equation in powers of `2` and `3`. `LIT-KTHM-0043` imports the Evertse--Schlickewei--Schmidt finiteness theorem for nondegenerate finite-rank multiplicative equations. The native branch must still derive the equation, prove distinct scale solutions, and classify all proper-subsums.
+
+### 3. H splits into S-unit, logarithmic, and trap regimes
+
+The H branch now has centered rooms around `4`, a monotone ordinary-section minimum, and exact successive-core equations. The literature suggests:
+
+- S-unit finiteness for fixed nondegenerate persistent-prime equations;
+- explicit two-term p-adic logarithmic forms for the critical near-Pillai regime;
+- transformed-height finite traps for the subcritical regime.
+
+No application is valid before prime support and source constants are exposed.
+
+### 4. Centered rational powers require arithmetic blocks
+
+PR #16 proves the bounded real error language is a full shift. Therefore real interval propagation alone cannot eliminate itineraries. The arithmetic object is the appended nearest-integer block, which must eventually vanish for an ordinary point.
+
+Dubickas's formulas must be specialized to `(81,64)` and translated into that block recurrence, including the extremal Thue--Morse word.
+
+### 5. Latest cross-direction work has a clearer role
+
+PR #34's newest q-Lucas, Cartier, Casoratian, survivor-rank, cap-collar, and H-renewal lemmas should now be evaluated against the exact post-wave-5 targets:
+
+- period ten and uniform period growth;
+- fixed-word cap-stitch nonvanishing;
+- ordinary survivor block/minimum growth;
+- persistent/fresh-prime H equations.
+
 ## Verdict vocabulary
 
 - **KNOWN — EXACT:** the located source proves essentially the same statement after notation changes.
@@ -170,12 +227,12 @@ PR #32 independently reconstructed the complete all-depth weighted-EQ chain. The
 
 ## Package map
 
-- `literature/LIVE_REPO_REVIEW_WAVE2.md` through `LIVE_REPO_REVIEW_WAVE4.md` — live cross-program reviews.
+- `literature/LIVE_REPO_REVIEW_WAVE2.md` through `LIVE_REPO_REVIEW_WAVE5.md` — live cross-program reviews.
 - `literature/SOURCE_LEDGER.md` and wave supplements — only located sources, with inspection level.
 - `literature/CLAIM_CROSSWALK.md` and `literature/claim-maps/` — branch-qualified mappings.
 - `literature/APPLICABILITY_AUDITS.md` — theorem-hypothesis checks and nonapplications.
 - `literature/UNVERIFIED.md` and wave supplements — honest source and applicability gaps.
-- `literature/imported-theorems/` — 41 atomic statements/proofs/black-box boundaries.
+- `literature/imported-theorems/` — 43 atomic statements/proofs/black-box boundaries.
 - `literature/topic-notes/` — reusable research maps.
 - `literature/references*.bib` — bibliographic records.
 - `literature/check_literature*.py` — mechanical integrity checks.
