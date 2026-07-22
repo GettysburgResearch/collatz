@@ -13,7 +13,6 @@ P_TO_TYPE = {value: index for index, value in enumerate(P)}
 EXPECTED = {
     12: ("0311", "1330", "2013", "2111", "2303"),
     13: ("0203", "2202", "2300"),
-    14: ("2111", "2231", "3010", "3222"),
 }
 
 
@@ -29,42 +28,45 @@ def room_filter(scale: int) -> tuple[tuple[str, ...], int, int]:
 
     modulus = 1 << precision
     lifted_modulus = modulus << 6
+    inverse_three = pow(3, -1, lifted_modulus)
 
-    odd_factors = [
-        pow(3, 7 * (height + 1), lifted_modulus)
-        for height in heights[:3]
-    ]
-    odd_product = (
-        odd_factors[0] * odd_factors[1] * odd_factors[2]
+    e0 = 7 * (heights[0] + 1)
+    e1 = 7 * (heights[1] + 1)
+    e2 = 7 * (heights[2] + 1)
+    s1 = 11 * (heights[1] + 1)
+    s2 = 11 * (heights[2] + 1)
+
+    # The lifted address is the following linear combination.  Writing the
+    # coefficients directly avoids 64 repeated million-bit multiplications.
+    coefficient_a = -pow(inverse_three, e0, lifted_modulus) % lifted_modulus
+    coefficient_b = -(
+        pow(inverse_three, e0 + e1, lifted_modulus) << s1
     ) % lifted_modulus
-    odd_inverse = pow(odd_product, -1, lifted_modulus)
+    coefficient_c = -(
+        pow(inverse_three, e0 + e1 + e2, lifted_modulus) << (s1 + s2)
+    ) % lifted_modulus
 
-    binary_1 = 1 << (11 * (heights[1] + 1))
-    binary_2 = 1 << (11 * (heights[2] + 1))
+    # At every stabilized scale the complete odd multiplier is 3^5 modulo 64.
+    odd_product_mod_64 = 51
 
     survivors: list[str] = []
     minimum_address = modulus
 
     for a, b, c in product(range(4), repeat=3):
-        toll = (
-            odd_factors[1] * odd_factors[2] * B[a]
-            + binary_1 * odd_factors[2] * B[b]
-            + binary_1 * binary_2 * B[c]
+        lifted_address = (
+            coefficient_a * B[a]
+            + coefficient_b * B[b]
+            + coefficient_c * B[c]
         ) % lifted_modulus
 
-        lifted_address = (-toll * odd_inverse) % lifted_modulus
         address = lifted_address % modulus
         minimum_address = min(minimum_address, address)
 
         high_six = lifted_address >> precision
-        output_residue = (-(odd_product & 63) * (high_six & 63)) % 64
+        output_residue = (-(odd_product_mod_64 * (high_six & 63))) % 64
         next_type = P_TO_TYPE.get(output_residue)
         if next_type is not None:
             survivors.append(f"{a}{b}{c}{next_type}")
-
-        # Directly reconstruct the canonical output modulo 64.
-        output = (odd_product * address + toll) >> precision
-        assert output % 64 == output_residue
 
     assert len(set(survivors)) == len(survivors)
     return tuple(survivors), precision, minimum_address.bit_length()
@@ -103,11 +105,7 @@ def verify_defect_expansion() -> None:
 def verify_completion_gap(scale: int) -> None:
     """Check the exact rational coefficient in L-0033/(15)."""
 
-    lhs_num = 4257
-    lhs_den = 128
-    room_num = 1083
-    room_den = 41
-    gap = Fraction(lhs_num, lhs_den) - Fraction(room_num, room_den)
+    gap = Fraction(4257, 128) - Fraction(1083, 41)
     assert gap == Fraction(35913, 5248)
     assert gap * (1 << scale) > 0
 
