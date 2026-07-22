@@ -40,6 +40,7 @@ dependency.
 - [`wave fourteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fourteen.md)
 - [`wave fifteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fifteen.md)
 - [`wave sixteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-sixteen.md)
+- [`wave seventeen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-seventeen.md)
 
 ## Result map
 
@@ -170,6 +171,9 @@ dependency.
 | [`T-9814`](claims/T-9814-overlap-incidence-rank.md) | PR #3 adjacent-stage S-unit frontier | Retained stages have path-incidence endpoint rank `<=1+(h+1)s`; composing them removes internal boundaries and leaves exact fresh-prime ambient rank `2f+1`, independent of block length. |
 | [`T-9815`](claims/T-9815-period-one-padic-linear-independence-measure.md) | PR #20 native q-difference frontier | A sourced finite-place theorem makes every period-one pair `F(x),F(qx)` Q-linearly independent with explicit exponent `96.8590845...`; exact source inequalities show why the audited criteria stop at longer periods. |
 | [`T-9816`](claims/T-9816-relative-gap-completion-height.md) | PR #20 binary/stack height frontier | If a binary `64/81` series is rational in `Q_2`, its gaps obey `g_j<=log_64(81/64)h_j+O(1)`; supercritical relative gaps therefore prove irrationality without identifying real and 2-adic limits. |
+| [`T-9817`](claims/T-9817-coarse-quotient-growing-lift-carry.md) | PR #3/PR #33 cap-room frontier | The cap inverse obeys an exact normalized squaring law, but scale doubling requires a Newton-defect block of `2849*2^(m-8)-1` bits; every abstract lift fiber realizes all 64 next coarse blocks. |
+| [`T-9818`](claims/T-9818-residue-class-tschakaloff-decomposition.md) | PR #20 periodic q-difference frontier | Every periodic tail splits into formally independent residue-phase functions, each with the period-one measure; the same 2007 theorem's joint height window fails for every subset of size at least two. |
+| [`T-9819`](claims/T-9819-completion-support-density.md) | PR #20/PR #35 completion-height bridge | Rational bounded-digit `p^a/Q` values have support in every affine multiplicative interval and `liminf N(Y)/log Y>=1/log(log_(p^a)Q)`; explicit `64/81`, stack, and `4/5` chart bounds follow. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -367,8 +371,14 @@ independently reconstructed and which conjectural boundaries remain open.
    `F(x),F(qx)` are Q-linearly independent with explicit exponent
    `96.8590845...`.  Its exact source audit also proves that the native 2007
    height window fails at every period `r>=2`, while the direct 2002 order-two
-   presentation fails its degree condition.  Longer periods therefore need a
-   genuinely joint approximation family, not the solution Casoratian alone.
+   presentation fails its degree condition.  `T-9818` now makes the longer-
+   period boundary exact: the residue-phase functions are jointly independent
+   over `Q(Y)`, and every individual physical value has the same scalar
+   measure, but the 2007 joint height window fails for every subset of size at
+   least two.  PR #20's separate theorem forces any arithmetic relation to use
+   at least ten phase coefficients.  Period ten therefore needs approximation
+   of its prescribed ten-phase vector, not the solution Casoratian or separate
+   scalar approximants.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -385,8 +395,14 @@ independently reconstructed and which conjectural boundaries remain open.
    height replacement for the withdrawn absolute-gap shortcut: any rational
    binary value satisfies
    `g_j<=log_64(81/64)h_j+O(1)`.  This excludes supercritical relative gaps
-   but leaves periodic and balanced supports below the threshold; lowering
-   the slope needs an additional ordinary numerator or centered-carry law.
+   but leaves periodic and balanced supports below the threshold.  `T-9819`
+   iterates the valid inequality: rational bounded-digit completions have a
+   support point in every `(X,alpha X+C]` and logarithmic count at least
+   `1/log(alpha)`.  It also applies to PR #35's exact `4/5` chart, where every
+   hypothetical positive ordinary survivor needs at least
+   `6.70013449289...` support points per logarithmic scale.  The next useful
+   input is a physical grammar or transducer upper bound contradicting these
+   local counts.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
@@ -404,10 +420,13 @@ independently reconstructed and which conjectural boundaries remain open.
    boundary disappears and the fresh-prime ambient rank is exactly `2f+1`,
    independent of block length.  The current one-equation ESS constant still
    worsens with `h`, isolating a path-coupled quantitative theorem as the next
-   arithmetic input.  Finally, `T-9811` shows that every surviving
-   hypothetical room must be transcendental.  The next useful gains are
-   cofinal control of the 64 explicit coarse quotients or an independent
-   algebraicity criterion. The constants are structural, not computational.
+   arithmetic input.  `T-9817` then closes the naive 64-state cap recurrence:
+   the normalized inverse obeys an exact 2-adic isometry, but its next Newton
+   quotient has `2849*2^(m-8)-1` bits and the abstract lift fiber realizes all
+   64 top blocks.  The distinguished source carry remains computable; the new
+   target is a proved correlation with the independently defined base-cell
+   carry.  Finally, `T-9811` shows that every surviving hypothetical room must
+   be transcendental.  The constants are structural, not computational.
 7. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 8. Test binary-automatic invariant-component colorings. `L-9823` eliminates

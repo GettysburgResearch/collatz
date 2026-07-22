@@ -157,6 +157,21 @@ mismatch in `R-9409`, and withdrew `T-9418`--`T-9421`; all source-dependent
 wording was refreshed.  Every new claim received a nonauthoring cold review
 and remains `PROPOSED` pending external review.
 
+Wave seventeen pursued the three interfaces left by that packet.  The
+cap/room lane derived the exact scale-doubling law for the normalized inverse
+and isolated the exponentially growing Newton carry lost by the natural
+six-bit quotient.  The period lane decomposed every periodic tail into
+residue-phase q-functions, proved their formal joint rank, and separated
+individual finite-place measures from the still-open joint arithmetic
+problem.  The completion lane iterated the valid finite-rational height
+inequality into affine multiplicative support gaps and logarithmic support
+counts, including the new PR #35 `4/5` chart.  The period and completion
+claims were cross-reviewed by the other lane, and the integrating agent
+cold-reviewed the cap claim and replayed its full-precision transition.
+Source heads PR #3 `c37e96e`, PR #20 `14f06d2`, PR #33 `2cfe250`, and PR #35
+`6bb647a` were refreshed during integration.  All three claims remain
+`PROPOSED` pending external review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -212,6 +227,9 @@ and remains `PROPOSED` pending external review.
 | `PR3/L-0031`, `L-0032`, `T-0032` at `c37e96e`; local `T-9805`, `T-9810` | `T-9814` factors retained adjacent stages through boundary-incidence directions and composes them into one positive `(256h+1)`-term equation with only two outer endpoints. | Fresh-prime ambient rank becomes `1+(h+1)f` for the system and exactly `2f+1` after composition, but the imported one-equation count worsens with block length. |
 | `PR20/L-9408`, `L-9415` at `14f06d2`; Amou--Matala-aho--Vaananen 2007 Theorem 5.1; Matala-aho 2002 Theorem 4.1 | `T-9815` maps the period-one equation exactly to the finite-place source theorem and obtains Q-linear independence of `1,F(x)` and `F(x),F(qx)` with exponent `96.859084511...`. | The 2007 native height window fails for every `r>=2`, and the direct 2002 order-two presentation fails its degree condition for every period; a different joint approximation family is required. |
 | Elementary rational height; historical `PR20/T-9411`, local `R-9809`, and live `PR20/R-9409` for comparison | `T-9816` combines exact first-omitted 2-adic valuation with the denominator and ordinary height of the same finite rational difference, giving `g_j<=log_64(81/64)h_j+O(1)`. | Supercritical relative gaps imply irrationality, but bounded, periodic, and balanced stack increments remain below the threshold. |
+| `PR3/L-0031` at `c37e96e`; `PR33/L-9702` at `2cfe250`; local `T-9806`, `T-9813` | `T-9817` normalizes the cap inverse, proves `q_(m+1)=q_m+2^(m-7)q_m^2`, and derives the exact Newton carry width `2849*2^(m-8)-1`; abstract compatible lifts realize all 64 next coarse blocks. | The bounded six-bit projection is not closed.  The distinguished source carry is nevertheless computable, so actual avoidance, branching, and correlation with the base-cell carry remain open. |
+| `PR20/L-9408`, `L-9410`, `L-9412`, `L-9413`, `L-9415` at `14f06d2`; Amou--Matala-aho--Vaananen 2007 Theorem 5.1 | `T-9818` gives an exact residue-class decomposition, proves formal independence of every phase subset, transfers the scalar period-one measure to each phase, and proves the sourced joint height window fails for every subset of size at least two. | PR #20 forces any arithmetic relation to involve at least ten phases, but the prescribed period-ten cancellation remains open; failure of this source criterion is not evidence that such a relation exists. |
+| Elementary finite-rational height; local `T-9816`; `PR35/T-8802`, `T-8803`, `T-8807` at `6bb647a` | `T-9819` generalizes the unique-first-omitted-term argument to bounded `p^a/Q` digits, proves support in every affine multiplicative interval, and derives explicit logarithmic count floors for `64/81`, stacks, and the `4/5` chart. | These density floors are necessary for rationality, not sufficient.  Periodic and balanced supports and every physical grammar below the ceiling remain open. |
 
 ## New-claim audit matrix
 
@@ -263,6 +281,9 @@ and remains `PROPOSED` pending external review.
 | `T-9814` | overlap-rank lane and independent completion reviewer | incidence directions, exact ambient ranks, recurrence composition, signature sharing, context/window counts, scale separation, `h=1` recovery, and quantitative monotonicity were reconstructed | no available simultaneous S-unit theorem exploits the incidence rank without growing the term dimension |
 | `T-9815` | period/source lane, integrating agent, and independent source reviewer | official-source normalization, analytic/orbit hypotheses, radical constants, exact height window, pair-height transfer, longer-period no-go, content cancellation, and source hashes were reconstructed | arithmetic value independence is proved only at period one; no gauge-independent obstruction or joint longer-period theorem is claimed |
 | `T-9816` | integrating agent and independent period reviewer | odd denominator, exact tail unit, reduced denominator divisibility, numerator lower bound, finite real height, logarithmic slope, contrapositive, stack indexing, and live-source comparison were reconstructed | relative control does not imply bounded gaps and does not reach periodic or balanced supports |
+| `T-9817` | cap/room lane and integrating cold reviewer | schedule exponents, LTE normalization, exact isometry, limit valuation, Newton lift, carry width, compatible-lift fiber, coset spacing, six-bit uniformity, and full-precision `m=12 -> 13` arithmetic were reconstructed | the theorem rules out the natural bounded projection only; correlation of the computable source defect with the independently defined base-cell carry is open |
+| `T-9818` | period lane and independent completion/source reviewer | coefficient indexing, phase-orbit separation, polynomial clearing, Vandermonde rank, scalar source parameters, all-auxiliary joint obstruction, and the nine-phase implication were reconstructed from the official source | formal rank and individual measures do not settle the prescribed ten-phase arithmetic cancellation |
+| `T-9819` | completion lane and independent period reviewer | valuation-band unique minimum, denominator direction, finite height, affine iteration, floor endpoints, stack indexing, PR #35 normalization, infinite-support argument, constants, and the sharp threshold example were reconstructed | local logarithmic support density is only a necessary rationality condition and supplies no physical support upper bound |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -576,6 +597,37 @@ rearrangement recovered the exact slope
 `log_64(81/64)=0.056641667147437458...`, and the contrapositive and stack
 indexing were checked against both local `R-9809` and live `PR20/R-9409`.
 
+### Independent wave-seventeen arithmetic audits
+
+For `T-9817`, the integrating reviewer independently recovered both schedule
+exponents, applied odd-base LTE before division, and proved the normalized
+map is a 2-adic isometry with
+`v_2(q_infinity-q_m)=m-7`.  Substitution into the inverse defect recovered the
+Newton correction and all `2849*2^(m-8)-1` carry bits.  The compatible-lift
+fiber was counted before projection; its nonzero lanes are complete cosets
+modulo `2^(L_m+1)`, so every top six-bit block occurs equally often.  Exact
+full-width arithmetic at `m=12 -> 13` matched both recurrences.  Review
+narrowed the conclusion to abstract projection loss because the distinguished
+source defect itself remains computable.
+
+For `T-9818`, the completion reviewer reindexed the coefficient series by
+residue class, checked distinct multiplicative `Q`-orbits, and replayed the
+polynomial-clearing/Vandermonde proof with bases `cq^jQ^(-ell)`.  The official
+2007 source parameters give the same scalar measure for each phase.  In the
+joint system the reviewer independently derived `B/A<19/18<gamma` for every
+auxiliary parameter and every subset of size at least two.  PR #20's separate
+nine-phase theorem was checked only for its exact implication: a hypothetical
+relation has at least ten nonzero phase coefficients.
+
+For `T-9819`, the period reviewer proved that valuation-band width strictly
+below `a` makes the first omitted term uniquely minimal, retained the correct
+denominator-divisibility direction, and applied the real bound only to the
+same finite rational difference.  Exact affine induction gives
+`h_(j+n)<=alpha^n(h_j+rho)-rho`; the floor endpoints and stack indices were
+checked separately.  The `4/5` normalization and infinite-support premise
+were replayed from PR #35, and the signed width-`a` cancellation example
+confirmed that the strict band hypothesis cannot be weakened by this method.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -635,6 +687,16 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `T-9816` gives a relative gap ceiling, not bounded gaps or a rationality
   classification.  Periodic and balanced positive directives lie below its
   critical threshold.
+- `T-9817` does not prove actual cap avoidance or source branching.  Its
+  growing carry is computable from the full source inverse; only the natural
+  bounded abstract projection is proved non-closed.
+- `T-9818` does not prove arithmetic independence of a period-ten value
+  vector.  Formal function rank and separate scalar measures cannot exclude
+  the prescribed joint cancellation, and failure of one source window does
+  not imply that a relation exists.
+- `T-9819` gives a necessary lower bound on rational support density, not a
+  sufficient rationality test or a physical grammar bound.  Periodic and
+  balanced supports remain compatible with it.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -1075,3 +1137,18 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     divisibility direction under reduction, and check the absolute-to-relative
     gap conversion.  Do not infer bounded gaps or periodic-stack
     irrationality from the relative ceiling.
+60. For `T-9817`, check both schedule exponents before applying LTE, retain
+    full `q_m` precision in the quadratic transition, and rederive the Newton
+    defect, carry width, lift-fiber cosets, and six-bit count.  Keep the
+    abstract projection obstruction separate from the computable
+    distinguished source recurrence.
+61. For `T-9818`, derive the residue coefficients and phase orbits directly,
+    then replay polynomial clearing and the Vandermonde bases.  Audit the
+    scalar source measure and joint height-window failure separately, and use
+    PR #20 only for the at-least-ten-support conclusion.  Do not turn formal
+    rank into specialized arithmetic rank.
+62. For `T-9819`, verify the strict valuation-band width, denominator
+    direction, exact affine induction, local-count floor, stack indices, and
+    PR #35 `4/5` normalization.  Do not identify the 2-adic completion with a
+    real shadow or infer a contradiction without an independent support upper
+    bound.

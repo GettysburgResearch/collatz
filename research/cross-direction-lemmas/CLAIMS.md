@@ -129,5 +129,8 @@ repository review.
 | T-9814 | Theorem | Adjacent corrected stages have path-incidence endpoint rank, while composition removes every internal boundary | PROPOSED | T-9805, T-9810; PR3/L-0031, L-0032, T-0032 |
 | T-9815 | Theorem | Every period-one stack tail and its first q-shift are Q-linearly independent with an explicit 2-adic measure | PROPOSED | T-9812; PR20/L-9408, L-9415; Amou--Matala-aho--Vaananen Theorem 5.1 |
 | T-9816 | Theorem | Rational binary 64/81 values obey a sharp relative support-gap ceiling | PROPOSED | elementary product-formula height; R-9809 and PR20/R-9409 for comparison |
+| T-9817 | Theorem | The cap inverse has an exact 2-adic scale law, but its six-bit projection loses an exponentially growing Newton carry | PROPOSED | T-9806, T-9813; corrected PR3 phase-34 schedule; LTE and Newton lifting |
+| T-9818 | Theorem | Periodic residue-phase functions are formally independent and individually measured, while the audited joint source window fails from dimension two onward | PROPOSED / SOURCE-DEPENDENT | T-9815; PR20/L-9408, L-9410, L-9412, L-9413, L-9415; Amou--Matala-aho--Vaananen Theorem 5.1 |
+| T-9819 | Theorem | Rational bounded-digit completions have multiplicatively syndetic support and explicit logarithmic support-density floors | PROPOSED | T-9816; elementary finite-rational height; PR35/T-8802, T-8803, T-8807 for the 4/5 chart |
 
 No `K-####` candidate is proposed.
