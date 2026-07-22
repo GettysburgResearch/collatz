@@ -1,13 +1,13 @@
 # T-9317 — Threshold/equality source bridge for centered rational powers
 
 **Claim ID:** T-9317  
-**Title:** A sharp nearest-integer lower bound at the critical radius closes the ordinary section even in the Thue--Morse equality case  
+**Title:** A sharp nearest-integer lower bound at the critical radius closes the ordinary section even in a classified equality case  
 **Status:** PROPOSED / CONDITIONAL  
 **Authoring agent:** `gpt56-pro-04`  
 **Reviewing agents:** none  
 **Created:** 2026-07-22  
 **Last updated:** 2026-07-22  
-**Dependencies:** `T-9315`, `T-9316`  
+**Dependencies:** `T-9315`, `T-9316`, `L-9315`, `L-9316`  
 **Scope:** exact source-to-native interface for Dubickas-type nearest-integer theorems  
 **Related counterexample candidates:** none
 
@@ -31,7 +31,7 @@ By `T-9315`, the nontrivial ordinary section is nonempty exactly when there is a
 \tag{2}
 \]
 
-Every positive orbit satisfying `(2)` actually lies strictly inside the strip at every finite time, but its limit superior may equal `r_*`.
+Every positive orbit satisfying `(2)` lies strictly inside the strip at every finite time, although its limit superior may equal `r_*`.
 
 ## 2. Abstract source hypotheses
 
@@ -39,7 +39,7 @@ Let `rho` be a nonnegative constant. Suppose an external nearest-integer theorem
 
 ### Lower-bound hypothesis
 
-For every `xi>0` in the theorem's stated scope,
+For every `xi>0` in the theorem's exact stated scope,
 
 \[
 \boxed{
@@ -63,7 +63,13 @@ If
 
 and all powers remain in the corresponding closed extremal strip, then the sign itinerary of the nearest-integer errors belongs to a class `E_rho`.
 
-Assume every itinerary in `E_rho` satisfies the efficient-recurrence condition of `T-9316`:
+Assume every itinerary in `E_rho` is excluded from ordinary stabilization by at least one of the following native interfaces:
+
+1. the efficient-recurrence condition of `T-9316`;
+2. a bounded-distortion morphic presentation covered by `L-9315`;
+3. a deterministic sequential presentation covered by `L-9316`.
+
+The first condition can be written as
 
 \[
 \ell_j-\delta t_j\longrightarrow+\infty,
@@ -111,11 +117,15 @@ If `(7)` holds, `(3)` and `(8)` force equality:
 \tag{9}
 \]
 
-The equality-language hypothesis places the sign itinerary in `E_rho`. Condition `(5)` and `T-9316` then exclude an ordinary positive lift, again a contradiction. QED.
+The equality-language hypothesis places the sign itinerary in `E_rho`, and the native classification assumption excludes an ordinary positive lift. QED.
 
-## 4. Thue--Morse specialization
+## 4. Thue--Morse and encoded Thue--Morse specializations
 
-A particularly useful equality classification is
+Let `tau` be the Thue--Morse word.
+
+### Literal equality language
+
+If
 
 \[
 \mathcal E_\rho
@@ -128,18 +138,47 @@ A particularly useful equality classification is
 \tag{10}
 \]
 
-where `tau` is the Thue--Morse word.
+then `T-9316` excludes every equality itinerary.
 
-`T-9316` proves that every itinerary in `(10)` has infinitely many nonzero appended nearest-integer blocks. Therefore an exact source theorem with lower constant
+### Morphic equality language
+
+If every equality itinerary is a finite shift of a non-erasing morphic image of `tau`, with output lengths in `[a,b]`, then `L-9315` excludes it whenever
 
 \[
-\boxed{\rho\ge1/81}
+\boxed{
+\frac ba
+<
+\frac1{2\log_{64}(81/64)}
+=8.8274237885\ldots.
+}
 \tag{11}
 \]
 
-would be enough provided its equality classification is `(10)` or any broader class satisfying efficient recurrence.
+### Sequential equality language
 
-This sharpens the wave-5 literature task. A strict lower bound is sufficient but is not necessary: a critical equality bound plus a native recurrence obstruction also closes the ordinary section.
+If every equality itinerary is produced from a shifted/complemented Thue--Morse input by a deterministic non-erasing sequential transducer with `Q` states and output lengths in `[a,b]`, then `L-9316` excludes it whenever
+
+\[
+\boxed{
+\frac ba
+<
+\frac1{(2Q+1)\log_{64}(81/64)}.
+}
+\tag{12}
+\]
+
+In particular, every deterministic letter-to-letter convention with at most eight states is excluded.
+
+Thus an exact source theorem with lower constant
+
+\[
+\boxed{\rho\ge1/81}
+\tag{13}
+\]
+
+would be enough provided its equality language is covered by one of these native classifications.
+
+A strict lower bound is sufficient but is not necessary: a critical equality bound plus a finite symbolic presentation can also close the ordinary section.
 
 ## 5. Quantitative deficit when the source constant is smaller
 
@@ -147,7 +186,7 @@ If the exact specialization gives
 
 \[
 \rho<1/81,
-\tag{12}
+\tag{14}
 \]
 
 then the external theorem alone leaves the explicit deficit
@@ -158,10 +197,10 @@ then the external theorem alone leaves the explicit deficit
 =
 \frac1{81}-\rho>0.
 }
-\tag{13}
+\tag{15}
 \]
 
-The native problem is then no longer vague. One must show that arithmetic stabilization of the appended blocks improves the source lower bound by more than `Delta_src`, or that every near-extremal sign word has an efficient recurrence excluded by `T-9316`.
+The native problem is then no longer vague. One must show that arithmetic stabilization of the appended blocks improves the source lower bound by more than `Delta_src`, or that every near-extremal sign word enters a recurrence class excluded by `T-9316`, `L-9315`, or `L-9316`.
 
 ## 6. Exact source-acquisition checklist
 
@@ -172,31 +211,40 @@ Before this conditional theorem can be instantiated with Dubickas 2006 or 2008, 
 3. the precise use of `limsup`, large limit points, or two-interval containment;
 4. all closed/open endpoint conventions;
 5. the equality or extremal sign-word classification;
-6. whether the Thue--Morse word appears as an actual equality language for `q>1`, or only for the integer-base subcase;
-7. the exact translation of the source sign convention into the native digits `e_n` and blocks `q_K`.
+6. whether Thue--Morse appears as an actual equality language for `q>1`, or only in the integer-base subcase or constant formula;
+7. whether the source convention is a coding, a morphism, a sequential transducer, or a more general relation;
+8. the exact translation into native digits `e_n`, terminal states `C_K`, and blocks `q_K`.
 
 No abstract, citation snippet, or analogy is sufficient for these obligations.
 
 ## 7. Dependency audit
 
 - `T-9315` supplies the exact ordinary-section/centered-power equivalence.
-- `T-9316` excludes every efficient-recurrence equality language, including shifted/complemented Thue--Morse.
+- `T-9316` excludes literal efficient-recurrence equality languages.
+- `L-9315` and `L-9316` transfer that exclusion through bounded morphic and sequential presentations.
 - The threshold argument is elementary comparison of limit superiors.
 - No uninspected external theorem is asserted to satisfy the hypotheses.
 
 ## 8. Gap audit
 
 - `T-9317` is conditional: the Dubickas constants and equality cases have not yet been fully sourced and specialized in the repository.
-- The 2006 abstract says the constants are explicit and Thue--Morse-related, but does not expose the formulas or prove that the rational `(81,64)` equality language is `(10)`.
+- The 2006 abstract says the constants are explicit and Thue--Morse-related, but does not expose the formulas or prove that the rational `(81,64)` equality language has any presentation covered above.
 - The 2008 two-interval theorem uses a different target geometry unless an exact source reduction is supplied.
 - A source constant below `1/81` does not refute the centered program; it quantifies the remaining native gain.
 
 ## 9. Suggested next attack
 
-Acquire the full 2006 and 2008 source texts. Populate the checklist in Section 6, evaluate every constant with exact rational or certified algebraic arithmetic, and then apply the trichotomy:
+Acquire the full 2006 and 2008 source texts. Populate the checklist in Section 6, evaluate every constant with exact rational or certified algebraic arithmetic, and then apply:
 
 ```text
-rho > 1/81  -> immediate nonexistence;
-rho = 1/81 -> equality-language audit + T-9316;
-rho < 1/81 -> freeze the exact deficit and attack it through q_K.
+rho > 1/81
+  -> immediate nonexistence;
+
+rho = 1/81
+  -> equality-language presentation
+     -> T-9316 / L-9315 / L-9316;
+
+rho < 1/81
+  -> freeze the exact deficit
+     -> attack it through q_K or a shifted-tail determinant.
 ```
