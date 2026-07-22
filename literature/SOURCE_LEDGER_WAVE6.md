@@ -4,7 +4,7 @@ Only sources actually located during wave 6 appear here. Inspection level is exp
 
 ## S57 — Ernvall-Hytönen, Matala-aho, and Seppälä: completion-safe Padé companions
 
-**Record:** Anne-Maria Ernvall-Hytönen, Tapani Matala-aho, and Louna Seppälä, *Euler's factorial series, Hardy integral, and continued fractions*, Journal de Théorie des Nombres de Bordeaux 35 (2023), no. 3, 897–920; arXiv `2111.13649`.
+**Record:** Anne-Maria Ernvall-Hytönen, Tapani Matala-aho, and Louna Seppälä, *Euler's factorial series, Hardy integral, and continued fractions*, Journal of Number Theory 244 (2023), 224–250. DOI `10.1016/j.jnt.2022.09.007`; arXiv `2111.13649`.
 
 **Inspected:** full arXiv abstract and source scope.
 
@@ -60,7 +60,7 @@ No theorem from the source has yet been specialized to the exact q-Gaussian para
 
 ## S62 — multiple-orthogonal Christoffel transformations
 
-**Record:** Amílcar Branquinho, Ana Foulquié-Moreno, and Manuel Mañas, *Multiple orthogonal polynomials: Pearson equations and Christoffel formulas*, arXiv `2106.12707`.
+**Record:** Amílcar Branquinho, Ana Foulquié-Moreno, and Manuel Mañas, *Multiple orthogonal polynomials: Pearson equations and Christoffel formulas*, Analysis and Mathematical Physics 12 (2022), Article 129. DOI `10.1007/s13324-022-00734-1`; arXiv `2106.12707`.
 
 **Inspected:** full abstract and scope statement.
 
