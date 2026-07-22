@@ -17,12 +17,14 @@ This isolated `85xx` namespace belongs to issue #43. It does not edit any canoni
 | `L-8505` | Lemma | Primitive refund cores satisfy one exact Syracuse equation | PROPOSED | `L-8504`, `T-8505` local signatures |
 | `T-8506` | Theorem | Every legal connector adds more than 170 primitive-core bits | PROPOSED | `L-8505`, `3^53>2^84` |
 | `T-8507` | Theorem | Intrinsic primitive-core decoder and physical conjugacy | PROPOSED | `L-8504`, `L-8505`, physical replay |
-| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8507` |
+| `L-8506` | Lemma | The core decoder compiles into eight exact ordinary blocks | PROPOSED | `T-8507` |
+| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8507`, `L-8506` |
 | `X-8501` | Experiment | Exact refund, carry, decoder, and cutoff audit | EMPIRICAL | `L-8501`--`T-8503` |
 | `X-8502` | Experiment | Exact complement-quotient and growth audit | EMPIRICAL | `L-8503`, `T-8504` |
 | `X-8503` | Experiment | Unimodular physical marker and prime-turnover audit | EMPIRICAL | `L-8504`, `T-8505` elementary gates |
 | `X-8504` | Experiment | Exact primitive-core signature and coprimality audit | EMPIRICAL | `L-8505`, `T-8505` |
 | `X-8505` | Experiment | Intrinsic primitive-core decoder reconstruction | EMPIRICAL | `L-8505`, `T-8506`, `T-8507` |
+| `X-8506` | Experiment | Eight-block ordinary core compiler audit | EMPIRICAL | `L-8506` |
 
 ## Logical chain
 
@@ -37,6 +39,7 @@ PR3 physical tower identity
   -> T-8507 deterministic partial map (t,gamma,i,C)
        one high binary divisibility + one six-bit gate
        legal => C_next > 2^170 C
+  -> L-8506 eight explicit ordinary blocks per finite core state
   -> Q-8501 one finite forever-defined physical core
   -> explicit positive unbounded Collatz orbit.
 ```
