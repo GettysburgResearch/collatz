@@ -102,5 +102,10 @@ repository review.
 | L-9892 | Lemma | Nested delayed one-hot competitors force unbounded exposed rank outside predecessor phases | PROPOSED | L-9826, L-9881, L-9883, L-9885, L-9886 |
 | L-9893 | Lemma | Every late 252-cell cap middle is an 84-triple zero-seam cascade | PROPOSED | L-9887, L-9888; PR33/L-9702, T-9703; PR3/T-0027 |
 | L-9894 | Lemma | Successive H renewal cores satisfy one exact two-place compatibility law | PROPOSED | L-9890; PR19/D-9501, T-9505; T-9509 for post-Yu consequences |
+| L-9895 | Lemma | Opposite 2-adic and 3-adic tropical permutations force quadratic projective adjacent-cofactor height | PROPOSED | PR20/L-9408, L-9410, L-9411; L-9884, L-9891 |
+| R-9805 | Refutation | The quadratic two-place cofactor factors cancel from the evaluated adjacent-order Pade ratio | PROPOSED | PR20/L-9408, L-9410; L-9891, L-9895 |
+| L-9896 | Lemma | Full delayed one-hot obstructions have relative natural density one in every exposed suffix phase | PROPOSED | L-9826, L-9881, L-9883, L-9885, L-9886, L-9892 |
+| L-9897 | Lemma | Fixed prime support occurs only finitely often on a nonperiodic exact H bridge chain | PROPOSED | L-9889, L-9894; nondegenerate S-unit finiteness |
+| L-9898 | Lemma | Cap triple seams form a 1024-state graph, with the first seam empty at scales twelve and thirteen | PROPOSED | L-9893; PR33/L-9702; PR3/T-0027, L-0016, L-0017, L-0022 |
 
 No `K-####` candidate is proposed.

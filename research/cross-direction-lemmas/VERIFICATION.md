@@ -78,6 +78,17 @@ measure from ordinary-depth density, added the missing width-one cap check to
 `L-9893`, and separated `L-9894`'s algebraic CRT central stars from actual
 two-bridge orbit segments. All four claims remain `PROPOSED`.
 
+Wave eleven followed those four interfaces one level deeper.  The Pade lane
+computed the opposite `3`-adic Casoratian geometry and then checked whether it
+survives evaluation; the survivor lane classified the full delayed one-hot
+lift family rather than one selected pure-power lift; the cap lane built the
+constant-width seam graph; and the H lane split successive cores into shared
+and primitive prime mass.  The resulting claims deliberately include one
+negative Pade transfer result, one density-one theorem whose exceptional set
+remains open, one finite two-scale cap obstruction with no scale induction,
+and one qualitative H prime-support theorem importing S-unit finiteness.  All
+remain `PROPOSED` pending external repository review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -107,6 +118,10 @@ two-bridge orbit segments. All four claims remain `PROPOSED`.
 | `PR16/D-9302` and the one-hot selector interface | `L-9892` uses the exact power-of-81 subgroup to stack delayed pure-power competitors at one exposing depth, then proves global merger rigidity from the legal-map injection. | Exposed rank is unbounded outside predecessor phases on a thin selected family. The remaining positive-Haar-measure 2-adic parameter set does not itself contain a proved ordinary depth; integer avoidance and the first positive competing block remain open. |
 | `PR33/L-9702`, `PR33/T-9703`; frozen `PR3/T-0027` | `L-9893` partitions the 252-cell middle into 84 triples, proves every inter-triple quotient zero from exact rational height margins, and bounds the physical boundary language. | The generic Hensel state lower bound is not bridge-reachable. Existence of an 84-edge seam path and nonzero terminal/head mismatch remain open. |
 | `PR19/D-9501`, `PR19/T-9505` | `L-9894` eliminates the shared central core between adjacent renewals, proving the shared-prime firewall, second integral sign law, algebraic central CRT universality, and one joint discounted excess budget. | The CRT tuples need not complete their two outer bridges, and no infinite H chain is excluded. Persistent-prime order constraints and fresh core mass must still be combined globally; post-Yu lines inherit `T-9509`. |
+| `PR20/L-9408`, `L-9410`, `L-9411` | `L-9895` proves last-phase dominance at `3`, identity-permutation Casoratian control, and quadratic projective cofactor height. `R-9805` then computes the evaluated numerator and proves exact cancellation of those endpoint factors from the rational ratio at `2` and `3`. | The cofactor vector is quadratically large at linear width, but those two places give no growing reduced-height lower bound. Archimedean size, other primes, polynomial multipliers, and evaluation resultants remain open. |
+| `PR16/D-9302` and the full one-hot lift interface | `L-9896` parameterizes every delayed one-hot lift by a permutation coordinate, proves an exact correlation cutoff, and transfers finite periodic independence to ordinary natural density. | Lower block-zero competitors and rank divergence have relative density one. The ordinary avoidance set has density zero but may be infinite; multi-hot words and the first positive block remain open. |
+| `PR19/D-9501` and successive H cores | `L-9897` factors each compatibility equation into shared and primitive cores, computes the exact reused-exponent tax, proves a room-or-increment bound, and applies nondegenerate S-unit finiteness to fixed prime support. | A nonperiodic exact chain must introduce infinitely many primes, but their unweighted divergent mass may be arbitrarily sparse. The S-unit theorem is an external named dependency and no infinite chain is excluded. |
+| Frozen `PR3/T-0027`, historical `L-0016`, `L-0017`, `L-0022`, and `PR33/L-9702` | `L-9898` derives exact stabilized connectors and reduces every triple seam to one edge of a 1024-state overlap graph. Exact evaluation removes the first seam at `m=12,13`. | The modulus `2048` is minimally separating at those scales only. The growing odd-radix carry has no autonomous scale recurrence, so no all-late-scale cap exclusion follows. |
 
 ## New-claim audit matrix
 
@@ -132,6 +147,10 @@ two-bridge orbit segments. All four claims remain `PROPOSED`.
 | `L-9892` | centered-survivor lane and cap cold reviewer | nested discrete-log compatibility, exposure reduction, exact pure-power cylinders, zero-block timing, signed geometry, phase avoidance, Haar measure, and merger injection were checked | the selected family has relative Haar measure at most `64^(-m)/63` in the 2-adic phase class, which gives no ordinary-depth density; other lifts and the positive block remain open |
 | `L-9893` | cap-chain lane and H cold reviewer | transition coverage, two uniform triple margins, terminal pair counter-margin, canonical quotient induction, physical overlap count, unrestricted-section comparison, and scale squaring were recomputed | the 84-layer graph may be empty or nonempty; no seam defect or terminal mismatch is yet forced |
 | `L-9894` | H centered-room lane and survivor cold reviewer | renewal indices, central elimination, endpoint congruences, prime firewall, multiplicative-order condition, integral sign law, exact examples, central CRT algebra, and two-place budget were rederived | the algebraic tuples need not complete even one two-bridge segment; plateaux are resonant but not excluded, and no global fresh-prime contradiction is proved |
+| `L-9895`, `R-9805` | integrating Pade lane and wave-eleven cold reviewer | last-phase `3`-adic units, identity/reverse permutation uniqueness, both cofactor gaps and asymptotics, primitive projective-height bound, numerator unique monomial, and coupled endpoint cancellation were rederived; bounded exact rational systems matched every valuation | linear-width coefficient height is proved, but the distinguished prime factors cancel from the evaluated ratio; its actual reduced height remains open |
+| `L-9896` | centered-survivor lane and wave-eleven cold reviewer | lift-coordinate permutation, threshold, signed unit, exact correlation cutoff, independent subsequence, Haar/ordinary passage, CRT subphases, and finite-prefix validity were checked | density-one rank divergence does not decide whether the zero-density ordinary avoidance set is finite or infinite |
+| `L-9897` | H centered-room lane and wave-eleven cold reviewer | primitive compatibility, LTE/order lifting, room bound, fresh-free divisibility runs, S-unit nondegeneracy, recovery of the central state, and globally new-factor divisibility were checked | S-unit finiteness is external and qualitative; new primes can be too sparse for the discounted budget |
+| `L-9898` | cap-chain lane, symbolic seam auditor, and wave-eleven cold reviewer | stabilized core table, `64Q` connector normalization, local/triple indices, five-symbol states, two-symbol overlap, continuation collapse, and both exact survivor tables were checked | first-seam failure is finite at `m=12,13`; the full odd-radix carry prevents all-scale induction |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -218,6 +237,37 @@ exactly. The expanding example has common core divisor `7` and
 `9^3-8^3=217=7*31`; the contracting example has the predicted negative sign.
 Prime-by-prime gcd checks and both exact valuation congruences were replayed.
 No finite example is used to infer infinite compatibility.
+
+### Independent wave-eleven arithmetic audits
+
+For `L-9895`, exact rational coefficients and Gaussian-binomial denominators
+were rebuilt at word lengths one and two.  Eight tail coefficients, four
+denominators, and two complete Casoratian/cofactor couplings matched the
+opposite endpoint formulas.  For `R-9805`, nine individual Pade pairs and
+three coupled systems at lengths through three matched the exact numerator
+valuation and the constant reduced-ratio signatures at both primes.  The
+proofs use unique tropical terms, not these bounded replays.
+
+For `L-9896`, the `m=1,v=1` lift coordinate at delay three was checked as an
+exact permutation of all 4096 phases.  The adjacent delay had one conditional
+hit among 64 lifts, confirming genuine short-range correlation, while the
+cutoff-separated delay had exactly one joint hit among 4096 lifts, matching
+independence.  The density-one conclusion itself follows from the proved
+independent subsequence and finite periodic densities.
+
+For `L-9897`, both stored central stars from `L-9894` were refactored through
+`G,E,F`; the compatibility equation and strict room bound held exactly.  The
+global proof is symbolic: its two possible zero subsums have incompatible
+`2`-adic valuations, after which the named S-unit theorem supplies finiteness.
+
+For `L-9898`, the cap authoring lane and a separate symbolic seam audit
+reconstructed the corrected type-three core, connectors, triple endpoints,
+and all first-seam edge counts independently.  Across the 65,536 possible
+eight-symbol edges at each of `m=12,13`, the survivor counts through bits
+one to eleven were exactly the two rows in `L-9898/(33)`.  Words survive bit
+ten but none survives bit eleven.  The optimized exact replay is committed as
+`X-9898`; it retains two extra defect bits when checking the normalized
+quotients.  No finite-scale pattern was extrapolated.
 
 ### Independent `L-9839` even-`K` jet audit
 
@@ -547,3 +597,25 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     condition, weak negative-Lambda descent, and both budgets. The CRT stars
     solve only the algebraic central system and need not complete their outer
     bridges; discounted conclusions assume the infinite-orbit hypotheses.
+34. Read `L-9895` and `R-9805` together. First verify last-phase dominance at
+    `3`, identity-versus-reverse determinant permutations, both cofactor gap
+    sums, and the projective ratio argument. Then maximize the strict
+    degree-`<D` numerator convolution and check that its endpoint gap is the
+    same as the denominator's. The quadratic cofactor height is real, but its
+    `2`- and `3`-adic factors cancel from the evaluated rational ratio.
+35. For `L-9896`, distinguish the algebraic event `E_h` from an actual word,
+    which additionally requires `h<n`. Check the kernel-fiber permutation,
+    threshold `Q_h<K_h`, exact separation `k-h>=m+1`, and conversion through
+    finite periodic patterns before taking ordinary density. Density-zero
+    avoidance is not nonexistence of ordinary avoiding depths.
+36. For `L-9897`, keep `F_k=W_k/gcd(W_(k-1),W_k)` distinct from the globally
+    new factor. Verify equality in the prime-exponent tax only when adjacent
+    exponents differ, the weak positive-part bound when `F_k=1`, and all
+    zero-subsum cases in the three-variable S-unit equation. The external
+    S-unit theorem is qualitative and does not supply discounted mass.
+37. For `L-9898`, reconstruct the corrected type-three row before evaluating
+    connectors. Check the modulus `64Q`, the `C_j=(Y_j-X_(j+1))/64` index,
+    five-symbol triple window, two-symbol state overlap, and why the low-bit
+    continuation collapse does not close the full odd canonical output.
+    Empty first seams at scales twelve and thirteen are not an all-late-scale
+    contradiction.

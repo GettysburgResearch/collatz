@@ -34,6 +34,7 @@ dependency.
 - [`wave eight`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eight.md)
 - [`wave nine`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nine.md)
 - [`wave ten`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-ten.md)
+- [`wave eleven`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eleven.md)
 
 ## Result map
 
@@ -137,6 +138,11 @@ dependency.
 | [`L-9892`](claims/L-9892-survivor-nested-rank-obstruction.md) | PR #16 global survivor order | Every suffix has thin exposure phases outside `n=1 mod36` with arbitrarily many lower zero-block competitors at one depth; their exact pure-power geometry gives unbounded global rank, while their selected 2-adic phase refinements have small Haar measure. |
 | [`L-9893`](claims/L-9893-cap-middle-triple-cascade.md) | PR #33/PR #3 cap-chain bridge | The 252-cell middle collapses to 84 canonical triple seams. Its physical terminal/head mismatch language has at most 4096 values, so the unrestricted Hensel section lower bound is not bridge-reachable. |
 | [`L-9894`](claims/L-9894-h-successive-core-compatibility.md) | PR #19 H renewal frontier | Two adjacent renewal cores obey one exact elimination identity; shared primes lie in multiplicative-order progressions, while a second integral sign law and joint discounted budget constrain successive cores. |
+| [`L-9895`](claims/L-9895-pade-opposite-tropical-cofactor-height.md) | PR #20 coupled Pade frontier | Adjacent Casoratians have opposite unique tropical permutations at `2` and `3`; any linear-width canonical cofactor vector has quadratic projective height. |
+| [`R-9805`](claims/R-9805-pade-endpoint-factor-cancellation.md) | PR #20 coupled Pade frontier | The same endpoint factors occur in the evaluated numerator and denominator, so the quadratic cofactor obstruction disappears from their reduced ratio at both distinguished primes. |
+| [`L-9896`](claims/L-9896-survivor-delayed-one-hot-density-one.md) | PR #16 global survivor order | Full delayed one-hot lifts decorrelate after an exact delay cutoff; lower block-zero competitors have relative ordinary density one and exposed rank diverges in density. |
+| [`L-9897`](claims/L-9897-h-fresh-prime-room-dichotomy.md) | PR #19 H renewal frontier | Every transition pays in next-room length or forward prime mass, and no fixed finite prime support can recur infinitely often on a nonperiodic exact H chain. |
+| [`L-9898`](claims/L-9898-cap-first-seam-transfer-graph.md) | PR #33/PR #3 cap-chain bridge | Every triple seam is one edge of a 1024-state overlap graph. At scales `12,13`, the first seam has no edge modulo the minimally separating modulus `2048`. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -165,11 +171,14 @@ independently reconstructed and which conjectural boundaries remain open.
    later-merger route and goes strictly beyond that phase: outside
    `n=1 mod36`, one exposed representative can have arbitrarily many lower
    block-zero competitors with exact pure-power values and arbitrarily late
-   first differences. Those selected refinements occupy at most
-   `64^(-m)/63` of the 2-adic exposing phase parameters; this is not an
-   ordinary-depth density statement. The next task is therefore to prove
-   integer avoidance or classify general one-hot and multi-hot lower blocks
-   outside the selected refinements, then control the first positive block.
+   first differences. `L-9896` now classifies the full delayed one-hot lift
+   family: every fixed delay has density `64^(-(m+1))`, delays separated by
+   `m+1` are exactly independent, and lower block-zero competitors have
+   relative ordinary density one in every exposure subphase. The one-hot
+   candidate's global rank therefore diverges in density. The remaining set
+   of avoiding ordinary depths has density and formal Haar measure zero, but
+   it may still be infinite. The next task is to classify that exceptional
+   set, add multi-hot competitors, and control the first positive block.
 2. For the collision lane, propagate the exact compatibility cylinder of
    `L-9852` through the residual grammar. A bulk address routes the physical
    tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
@@ -193,9 +202,13 @@ independently reconstructed and which conjectural boundaries remain open.
    was a scale-stable nonzero low bit together with the 252-cell bridge.
    `L-9893` now resolves that middle into 84 exact canonical triple seams and
    bounds the physical boundary mismatch language by 4096 values. Generic
-   Hensel sections are therefore not bridge-reachable. The next target is the
-   scale-stable 84-layer overlap graph: exclude one seam uniformly, or build
-   one exact path before returning to the six-symbol terminal/head mismatch.
+   Hensel sections are therefore not bridge-reachable. `L-9898` constructs
+   the exact overlap graph: five-symbol triple states give 1024 vertices and
+   64 candidate continuations. Its first seam is empty at scales `12` and
+   `13`, with `2048` the minimal separating modulus. This is a finite
+   two-scale obstruction, not an all-late-scale theorem: the full odd-radix
+   carry prevents an autonomous scale update. The next target is to close
+   that carry under `m -> m+1`, or find a later scale with a surviving edge.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
    `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
@@ -241,9 +254,15 @@ independently reconstructed and which conjectural boundaries remain open.
    supplies the missing successive-core compatibility: adjacent `W` cores
    satisfy one two-place elimination equation, any reused prime power forces
    a multiplicative-order divisor of `R_k`, and a second sign law shares the
-   summable renewal toll. The next arithmetic target is a
-   prime-persistence/fresh-mass dichotomy, or a simultaneous two-place
-   valuation estimate stronger than the two separate core bounds.
+   summable renewal toll. `L-9897` resolves the qualitative
+   prime-persistence/fresh-mass dichotomy. A changed reused exponent exactly
+   saturates its multiplicative-order valuation tax; every transition pays
+   in next-room length or forward quotient mass; and a nonperiodic infinite
+   exact chain can use no fixed finite prime support infinitely often. Hence
+   globally new primes occur with divergent unweighted logarithmic mass.
+   They may still be arbitrarily sparse, so the next target is a quantitative
+   S-unit/order bound or a plateau argument that creates positive discounted
+   mass or repeats the full central state.
 4. For the Padé lane, classify genuinely composite residual multiplicity and
    bound noncyclotomic gcd degree. `L-9816` proves that automatic, reduced-prime,
    and distinct antisymmetric cancellation cannot reach exponent one;
@@ -267,10 +286,15 @@ independently reconstructed and which conjectural boundaries remain open.
    scalar adjacent-order Casoratian rank: `q` neighboring errors cancel
    exactly `q-1` additional blocks, and their normalized valuation is exact.
    Even granting zero cofactor-height cost, the unchanged-height period-four
-   model needs `q>0.07114166n`. The structural target is now the reduced
-   global height of those growing cofactors; a successful smaller-width form
-   must lower height quadratically or leave scalar monomial alignment. The
-   separate anchor window remains degrees `105` through `110`.
+   model needs `q>0.07114166n`. `L-9895` proves that the canonical cofactor
+   vector cannot actually be cost-free: reverse permutation at `2` and
+   identity permutation at `3` force quadratic projective height at linear
+   width. `R-9805` then closes the naive transfer to the final approximant:
+   those endpoint factors occur equally in its evaluated numerator and
+   denominator, leaving only constant ratio valuations at `2` and `3`.
+   Reduced height must therefore be controlled archimedeanly, at other
+   primes, or by a global evaluation resultant. The separate anchor window
+   remains degrees `105` through `110`.
 5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 6. Test binary-automatic invariant-component colorings. `L-9823` eliminates
