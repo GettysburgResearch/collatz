@@ -38,6 +38,24 @@ balanced nonperiodic 17/18 directive:
   requires period-uniform estimates and S-adic passage.
 ```
 
+## Why period ten may still be cheaper than the source theorem
+
+Väänänen–Wallisser proves full linear independence of
+
+```text
+1,f_R(y_0),...,f_R(y_(r-1)).
+```
+
+PR #20 needs only irrationality of one special rational coefficient vector
+
+```text
+sum_j C_j f_R(y_j).
+```
+
+The dimension-ten failure may therefore reflect the cost of a theorem much stronger than the native target. A tailored Padé construction can impose cancellation against the native coefficient vector—or the low-dimensional q-difference orbit it generates—rather than all coordinate directions.
+
+This is the natural role of the Casoratian, maximal-minor, and quotient-state work: determine whether special-vector irrationality survives after full `r`-dimensional independence stops.
+
 ## What to retain from the native period-four program
 
 The period-four work remains useful because it supplies:
@@ -53,10 +71,11 @@ Its role should change from “first unresolved fixed period” to “smallest c
 
 ## Next experiment
 
-Re-run the entire height/vanishing calculation at period ten, reporting every exponent as a function of both Padé order `n` and period `r`. Test three routes:
+Re-run the entire height/vanishing calculation at period ten, reporting every exponent as a function of both Padé order `n` and period `r`. Test four routes:
 
-1. symbolic maximal-minor factors;
-2. growing-width adjacent-order determinants;
-3. all-dyadic Cartier recurrences.
+1. a Padé system tailored to the single native coefficient vector;
+2. symbolic maximal-minor factors;
+3. growing-width adjacent-order determinants;
+4. all-dyadic Cartier recurrences.
 
 The useful endpoint is not only irrationality at `r=10`, but a lower bound whose constants deteriorate slowly enough to survive adjacent standard-word periods tending to infinity.
