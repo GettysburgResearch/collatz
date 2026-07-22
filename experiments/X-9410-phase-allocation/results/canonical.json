@@ -1,0 +1,321 @@
+{
+  "experiment_id": "X-9410",
+  "ranges": {
+    "period_lengths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "total_root_counts": [
+      1,
+      18
+    ]
+  },
+  "records": {
+    "2": {
+      "all_finite_maximizers_balanced": true,
+      "all_ratios_within_bound": true,
+      "equal_allocation_shape_bound": "7/6",
+      "equal_allocation_shape_decimal": "1.166666666666667",
+      "selected_totals": {
+        "18": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.166666666666667",
+          "best_shape_ratio": "7/6",
+          "maximizer_count": 1,
+          "representative_maximizer": [9, 9],
+          "weak_compositions": 19
+        },
+        "2": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.166666666666667",
+          "best_shape_ratio": "7/6",
+          "maximizer_count": 1,
+          "representative_maximizer": [1, 1],
+          "weak_compositions": 3
+        },
+        "3": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 2,
+          "representative_maximizer": [1, 2],
+          "weak_compositions": 4
+        },
+        "4": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.166666666666667",
+          "best_shape_ratio": "7/6",
+          "maximizer_count": 1,
+          "representative_maximizer": [2, 2],
+          "weak_compositions": 5
+        },
+        "5": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.078947368421053",
+          "best_shape_ratio": "41/38",
+          "maximizer_count": 2,
+          "representative_maximizer": [2, 3],
+          "weak_compositions": 6
+        }
+      },
+      "weak_compositions_checked": 189
+    },
+    "3": {
+      "all_finite_maximizers_balanced": true,
+      "all_ratios_within_bound": true,
+      "equal_allocation_shape_bound": "13/12",
+      "equal_allocation_shape_decimal": "1.083333333333333",
+      "selected_totals": {
+        "18": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.083333333333333",
+          "best_shape_ratio": "13/12",
+          "maximizer_count": 1,
+          "representative_maximizer": [6, 6, 6],
+          "weak_compositions": 190
+        },
+        "3": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.083333333333333",
+          "best_shape_ratio": "13/12",
+          "maximizer_count": 1,
+          "representative_maximizer": [1, 1, 1],
+          "weak_compositions": 10
+        },
+        "4": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 3,
+          "representative_maximizer": [1, 1, 2],
+          "weak_compositions": 15
+        },
+        "6": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.083333333333333",
+          "best_shape_ratio": "13/12",
+          "maximizer_count": 1,
+          "representative_maximizer": [2, 2, 2],
+          "weak_compositions": 28
+        },
+        "7": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.045454545454545",
+          "best_shape_ratio": "23/22",
+          "maximizer_count": 3,
+          "representative_maximizer": [2, 2, 3],
+          "weak_compositions": 36
+        }
+      },
+      "weak_compositions_checked": 1329
+    },
+    "4": {
+      "all_finite_maximizers_balanced": true,
+      "all_ratios_within_bound": true,
+      "equal_allocation_shape_bound": "21/20",
+      "equal_allocation_shape_decimal": "1.050000000000000",
+      "selected_totals": {
+        "18": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.034482758620690",
+          "best_shape_ratio": "30/29",
+          "maximizer_count": 6,
+          "representative_maximizer": [4, 4, 5, 5],
+          "weak_compositions": 1330
+        },
+        "4": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.050000000000000",
+          "best_shape_ratio": "21/20",
+          "maximizer_count": 1,
+          "representative_maximizer": [1, 1, 1, 1],
+          "weak_compositions": 35
+        },
+        "5": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 4,
+          "representative_maximizer": [1, 1, 1, 2],
+          "weak_compositions": 56
+        },
+        "8": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.050000000000000",
+          "best_shape_ratio": "21/20",
+          "maximizer_count": 1,
+          "representative_maximizer": [2, 2, 2, 2],
+          "weak_compositions": 165
+        },
+        "9": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.029411764705882",
+          "best_shape_ratio": "35/34",
+          "maximizer_count": 4,
+          "representative_maximizer": [2, 2, 2, 3],
+          "weak_compositions": 220
+        }
+      },
+      "weak_compositions_checked": 7314
+    },
+    "5": {
+      "all_finite_maximizers_balanced": true,
+      "all_ratios_within_bound": true,
+      "equal_allocation_shape_bound": "31/30",
+      "equal_allocation_shape_decimal": "1.033333333333333",
+      "selected_totals": {
+        "10": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.033333333333333",
+          "best_shape_ratio": "31/30",
+          "maximizer_count": 1,
+          "representative_maximizer": [2, 2, 2, 2, 2],
+          "weak_compositions": 1001
+        },
+        "11": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.020547945205480",
+          "best_shape_ratio": "149/146",
+          "maximizer_count": 5,
+          "representative_maximizer": [2, 2, 2, 2, 3],
+          "weak_compositions": 1365
+        },
+        "18": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.015384615384615",
+          "best_shape_ratio": "66/65",
+          "maximizer_count": 10,
+          "representative_maximizer": [3, 3, 4, 4, 4],
+          "weak_compositions": 7315
+        },
+        "5": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.033333333333333",
+          "best_shape_ratio": "31/30",
+          "maximizer_count": 1,
+          "representative_maximizer": [1, 1, 1, 1, 1],
+          "weak_compositions": 126
+        },
+        "6": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 5,
+          "representative_maximizer": [1, 1, 1, 1, 2],
+          "weak_compositions": 210
+        }
+      },
+      "weak_compositions_checked": 33648
+    },
+    "6": {
+      "all_finite_maximizers_balanced": true,
+      "all_ratios_within_bound": true,
+      "equal_allocation_shape_bound": "43/42",
+      "equal_allocation_shape_decimal": "1.023809523809524",
+      "selected_totals": {
+        "12": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.023809523809524",
+          "best_shape_ratio": "43/42",
+          "maximizer_count": 1,
+          "representative_maximizer": [2, 2, 2, 2, 2, 2],
+          "weak_compositions": 6188
+        },
+        "13": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.015151515151515",
+          "best_shape_ratio": "67/66",
+          "maximizer_count": 6,
+          "representative_maximizer": [2, 2, 2, 2, 2, 3],
+          "weak_compositions": 8568
+        },
+        "18": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.023809523809524",
+          "best_shape_ratio": "43/42",
+          "maximizer_count": 1,
+          "representative_maximizer": [3, 3, 3, 3, 3, 3],
+          "weak_compositions": 33649
+        },
+        "6": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.023809523809524",
+          "best_shape_ratio": "43/42",
+          "maximizer_count": 1,
+          "representative_maximizer": [1, 1, 1, 1, 1, 1],
+          "weak_compositions": 462
+        },
+        "7": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 6,
+          "representative_maximizer": [1, 1, 1, 1, 1, 2],
+          "weak_compositions": 792
+        }
+      },
+      "weak_compositions_checked": 134595
+    },
+    "7": {
+      "all_finite_maximizers_balanced": true,
+      "all_ratios_within_bound": true,
+      "equal_allocation_shape_bound": "57/56",
+      "equal_allocation_shape_decimal": "1.017857142857143",
+      "selected_totals": {
+        "14": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.017857142857143",
+          "best_shape_ratio": "57/56",
+          "maximizer_count": 1,
+          "representative_maximizer": [2, 2, 2, 2, 2, 2, 2],
+          "weak_compositions": 38760
+        },
+        "15": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.011627906976744",
+          "best_shape_ratio": "87/86",
+          "maximizer_count": 7,
+          "representative_maximizer": [2, 2, 2, 2, 2, 2, 3],
+          "weak_compositions": 54264
+        },
+        "18": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 35,
+          "representative_maximizer": [2, 2, 2, 3, 3, 3, 3],
+          "weak_compositions": 134596
+        },
+        "7": {
+          "attains_continuous_bound": true,
+          "best_shape_decimal": "1.017857142857143",
+          "best_shape_ratio": "57/56",
+          "maximizer_count": 1,
+          "representative_maximizer": [1, 1, 1, 1, 1, 1, 1],
+          "weak_compositions": 1716
+        },
+        "8": {
+          "attains_continuous_bound": false,
+          "best_shape_decimal": "1.000000000000000",
+          "best_shape_ratio": "1/1",
+          "maximizer_count": 7,
+          "representative_maximizer": [1, 1, 1, 1, 1, 1, 2],
+          "weak_compositions": 3003
+        }
+      },
+      "weak_compositions_checked": 480699
+    }
+  },
+  "research_question": "Can unequal phasewise Gaussian-binomial root allocations improve the asymptotic raw Pade exponent beyond equal allocation?",
+  "schema_version": 1,
+  "summary": {
+    "all_finite_maximizers_balanced": true,
+    "all_ratios_within_equal_allocation_bound": true,
+    "interpretation": "Finite exact checks validate the phase-functional optimization interface; T-9416 proves the universal inequality.",
+    "weak_compositions_checked": 657774
+  }
+}
