@@ -1,0 +1,97 @@
+flowchart LR
+    FALSE([Collatz false])
+    CYCLE([Positive nontrivial cycle])
+    DIV([Positive orbit avoids 1])
+    THIRD([Third component / exact equivalent witness])
+    CYCLE --> FALSE
+    DIV --> FALSE
+    THIRD --> FALSE
+
+    subgraph GREEN["Classical substrate"]
+      TRICH["L-9901 orbit trichotomy"]
+      TERRAS["L-9902 parity bijection"]
+      REAL["L-9904 2-adic realization<br/>integrality is the obstruction"]
+      CEQ["L-9905 cycle equation"]
+      DENS["L-9907 divergence density"]
+      TERRAS --> REAL
+    end
+
+    subgraph CYC["Finite cycle"]
+      CWORD["Compressed valuation word"]
+      M8{"m=8, K=13 packet"}
+      REPLAY["Exact divisibility, positivity,<br/>valuation replay"]
+      CWORD --> M8 --> REPLAY --> CYCLE
+      CEQ --> CWORD
+    end
+
+    subgraph CAP["Corrected collision / phase -34"]
+      FIB["Finite collision fibers<br/>complete finite projection"]
+      EXT["Signed quotient -> cap/co-cap"]
+      ROOM["One room, 84 seams,<br/>fresh primes, low height"]
+      EQ258["258-coordinate physical zero sum"]
+      EXCL["T-9705 proposed:<br/>Evertse excludes all signed completions"]
+      CLOSED["Frozen corrected 256-stage class<br/>proposed closed"]
+      ESCAPE{"New architecture breaks:<br/>fixed rank / d<1 / nondegeneracy / cap"}
+      INIT{"Positive marked initialization"}
+      FIB --> EXT --> EQ258
+      ROOM --> EQ258
+      EQ258 --> EXCL --> CLOSED
+      ESCAPE --> INIT --> DIV
+    end
+
+    subgraph M1["Centered 64 to 81 / M1"]
+      FIN["Every finite itinerary has a cylinder"]
+      Z2["Unique 2-adic completion"]
+      ZERO{"Appended blocks eventually zero"}
+      POS["Positive ordinary survivor"]
+      FIN --> Z2 --> ZERO --> POS --> DIV
+      REAL --> Z2
+      FILTER["Complexity, recurrence,<br/>period 1..9 irrationality"]
+      FILTER -. excludes low-memory codes .-> ZERO
+      BAD["False four-phase 3/2 bridge"]
+      BAD -. quarantined .-> FILTER
+    end
+
+    subgraph H["Partial H"]
+      HFIN["Every finite H itinerary realizable"]
+      HSTAB{"Least cylinder representatives stabilize"}
+      HORB["Positive infinite H orbit"]
+      HFIN --> HSTAB --> HORB --> DIV
+      HNO["10/30, finite descent,<br/>30/60/70 returns closed"]
+      HNO -. forces new architecture .-> HSTAB
+    end
+
+    subgraph SAN["Finite sanctuary"]
+      DFA{"Explicit DFA L"}
+      CLOSE["T(L) subset L;<br/>1,2 not in L"]
+      DFA --> CLOSE --> DIV
+    end
+
+    subgraph EQV["Equivalent full-map witnesses"]
+      CONE{"Third binary fixed ray"}
+      COVER{"C(x) < x"}
+      SPEC{"Point spectral excess<br/>+ support extraction"}
+      CONE --> THIRD
+      COVER --> THIRD
+      SPEC --> THIRD
+    end
+
+    subgraph OFF["Diagnostics / indirect"]
+      FOUNDRY["Foundry finite-state feedback<br/>collapses to open-loop"]
+      FIVE["5x+1 low-digit tree"]
+      UNIV["Generalized universality"]
+      LOGIC["Weak arithmetic models"]
+    end
+
+    classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
+    classDef literature fill:#cfe8ff,stroke:#2563a8,color:#111;
+    classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
+    classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
+    classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
+    classDef open fill:#e5e7eb,stroke:#666,color:#111;
+
+    class TRICH,TERRAS,REAL,CEQ,DENS proved;
+    class FIB,EXT,ROOM,EQ258,EXCL,CLOSED,FILTER,HFIN,HNO,FOUNDRY proposed;
+    class BAD refuted;
+    class M8,REPLAY,ESCAPE,INIT,ZERO,POS,HSTAB,HORB,DFA,CLOSE,CONE,COVER,SPEC,FALSE,CYCLE,DIV,THIRD open;
+    class FIVE,UNIV,LOGIC open;
