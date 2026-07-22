@@ -44,6 +44,8 @@ dependency.
 - [`wave eighteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eighteen.md)
 - [`wave nineteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nineteen.md)
 - [`wave twenty`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty.md)
+- [`wave twenty-one`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-one.md)
+- [`wave twenty-two`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty-two.md)
 
 ## Result map
 
@@ -159,6 +161,7 @@ dependency.
 | [`L-9900`](claims/L-9900-two-endpoint-evertse-budget.md) | Reusable fixed-rank arithmetic bridge | Any fixed-rank nondegenerate zero-sum family with fixed internal prime support, bounded primitive loss, growing raw height, and total moving-endpoint exponent below one is finite by Evertse. |
 | [`L-9901`](claims/L-9901-multi-endpoint-subpower-evertse-budget.md) | General moving-endpoint arithmetic bridge | With gcd exponent `gamma` and total endpoint exponent `Theta`, the sharp marginal Evertse gate is `Theta<d(1-gamma)`, or `Theta<1-gamma` for some `d<1`; an explicit boundary family proves strictness. |
 | [`L-9902`](claims/L-9902-rank-binned-ess-capacity.md) | Quantitative S-unit scope boundary | ESS capacity must be summed within characteristic-zero, fixed-dimension, fixed-coefficient, common-group bins; a primitive one-positive `{2}`-unit family with one tuple in every increasing dimension shows that perfect endpoint budgets do not replace fixed term count. |
+| [`L-9903`](claims/L-9903-h-renewal-evertse-transfer.md) | PR #19 H/Evertse interface | Every central renewal star and full bridge is a primitive nondegenerate four-term zero sum. Evertse then forces any nonperiodic survivor to retain asymptotically linear endpoint outside-`{2,3}` mass, isolating the exact missing height deficit. |
 | [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16/PR #20/PR #35 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; live PR #16 and PR #35 now independently recover its principal specializations, while its finite certificate excludes entire low-complexity equality subshifts. |
 | [`T-9802`](claims/T-9802-cap-head-final-symbol-rigidity.md) | PR #33/PR #3 cap-chain bridge | The fourth head symbol only translates the correction by cells `(0,3,53,1)Q/64`; at least 192 of 256 words are uniformly large, and every late hypothetical cap chain has at most 64 cusp-admissible head words. |
 | [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
@@ -192,6 +195,9 @@ dependency.
 | [`T-9828`](claims/T-9828-evertse-stage-closure-audit.md) | PR #33 corrected-stage closure | A primary-source and native-arithmetic reconstruction verifies the fixed-rank Evertse contradiction, including signed co-caps, endpoint height, primitive normalization, nondegeneracy, and projective separation. |
 | [`T-9829`](claims/T-9829-eventually-periodic-run-exclusion.md) | PR #35/general binary-chart low-complexity frontier | Every eventually periodic maximal-run schedule rationalizes the two-place carry series; the forced tail carry is impossible, and both the phase and run words obey `p(n)>=n+1`. |
 | [`T-9830`](claims/T-9830-pade-outside-prime-cubic-gcd.md) | PR #20 period-ten height frontier | Positive Schur quotients leave a cubic prime-to-six specialization core; after evaluation, quadratic primitive height is equivalent to an almost-total cubic gcd supported at primes at least five, while exact 2- and 3-adic distance ladders impose a consecutive-order height floor. |
+| [`T-9831`](claims/T-9831-maximal-fixed-width-almost-s-unit-exclusion.md) | PR #38 `ACL-N016` / corrected-stage arithmetic | A finite type catalogue with bounded essential width, fixed internal prime union, nondegeneracy, infinitely many primitive points, and primitive endpoint exponent below one is Evertse-finite. The theorem separates the exact primitive invariant from the merely sufficient raw gcd certificate. |
+| [`T-9832`](claims/T-9832-oriented-completion-criticality.md) | PR #16/PR #35/PR #38 completion interface | Selected periodic approximants, equal factors, same-symbol returns, and maximal runs share the `M`-deep product-formula wedge; reciprocal phase carries use its `N`-deep orientation. Both slopes are sharp, but their numerators and real/completion values are not interchangeable. |
+| [`T-9833`](claims/T-9833-delayed-combined-pade-shift-rigidity.md) | PR #20 period-ten delayed combined-moment frontier | Moving the combined cancellation window gives exact shifted Cramer and error formulas but preserves a cubic prime-to-six Schur core. At every delay scale the unreduced exponent stays at most `log_81(64)<1`; linear delays still require the full cubic outside-prime gcd. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -330,9 +336,14 @@ independently reconstructed and which conjectural boundaries remain open.
    in next-room length or forward quotient mass; and a nonperiodic infinite
    exact chain can use no fixed finite prime support infinitely often. Hence
    globally new primes occur with divergent unweighted logarithmic mass.
-   They may still be arbitrarily sparse, so the next target is a quantitative
-   S-unit/order bound or a plateau argument that creates positive discounted
-   mass or repeats the full central state.
+   `L-9903` now performs the exact Evertse conversion rather than merely
+   counting fresh primes. Every central renewal star and every full bridge is
+   a primitive nondegenerate four-term zero sum with outside-`{2,3}` product
+   `XY` or `UV`. Fixed-width arithmetic is therefore not the missing piece:
+   any nonperiodic survivor forces `XY/H^d` and `UV/J^d` to infinity for every
+   `d<1`. The remaining target is exactly a fixed proportional deficit between
+   `U` and `3^a4^b`, or between `W` and `9^R8^S`, from genuinely global H
+   compatibility.
 4. For the Padé lane, classify genuinely composite residual multiplicity and
    bound noncyclotomic gcd degree. `L-9816` proves that automatic, reduced-prime,
    and distinct antisymmetric cancellation cannot reach exponent one;
@@ -413,6 +424,13 @@ independently reconstructed and which conjectural boundaries remain open.
    five.  Exact pairwise `2`- and `3`-adic distance laws additionally force at
    least one of each two consecutive approximants above the half-error height
    floor.  No such outside-prime gcd is yet proved or refuted.
+   Live PR #20 moves the phasewise root-product window independently and
+   closes that family only through period nine. `T-9833` performs the same
+   stress test on the direct combined-moment system: it derives every shifted
+   Cramer endpoint and first error, proves the normalized Schur-core degree
+   remains cubic, and shows that arbitrary delay has unreduced exponent at
+   most `log_81(64)<1`. A linear delay still needs the identical almost-total
+   cubic gcd at primes at least five; window movement alone is closed.
    `T-9826` closes a separate auxiliary clause: the canonical approximants
    have exact pairwise distances `v_2(R_m-R_n)=E_n`, so their projective pairs
    are automatically nonproportional.  The quadratic global-height bound is
@@ -465,6 +483,13 @@ independently reconstructed and which conjectural boundaries remain open.
    rational partial sums whose real limit is at most `3`, so archimedean
    Hecke--Mahler theory cannot cross this gap.  The missing input is a p-adic
    Beatty--Hecke--Mahler irrationality theorem.
+   `T-9832` unifies the valid elementary completion-height interfaces for
+   arbitrary coprime `2<=M<N`. Selected periodic approximants, equal factors,
+   same-symbol returns, and physical maximal runs use an `M`-deep numerator
+   and the sharp return slope `kappa`; reciprocal phase zero carries use the
+   opposite `N`-deep orientation. The total periodic approximation slope is
+   `1+kappa^(-1)`, and the theorem explicitly prevents identifying the two
+   cocycles or their real and completion values.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
@@ -513,6 +538,13 @@ independently reconstructed and which conjectural boundaries remain open.
    nondegenerate `{2}`-unit tuple in every growing dimension survives even
    with endpoint exponent and gcd exponent both zero.  `T-9828` is the exact
    bounded-gcd, 256-internal-coordinate specialization.
+   `T-9831` closes the abstract finite-type formulation requested by
+   `ACL-N016`: dimensions, coefficient/sign classes, endpoint placements, and
+   finite prime alphabets may vary through a finite catalogue, while the
+   primitive endpoint product relative to primitive height is the exact
+   invariant. The raw `(Theta,gamma)` inequality is only a convenient
+   sufficient certificate, and degenerate relations require an explicitly
+   reverified bounded minimal-block extraction.
    Finally, `T-9811` shows that every
    surviving hypothetical room must be transcendental.  The constants are
    structural, not computational.
