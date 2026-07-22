@@ -1,0 +1,80 @@
+{
+  "arithmetic": "exact fractions and integers",
+  "checks": [
+    "finite survivor replay",
+    "forward centered-power formula",
+    "nearest-integer reconstruction",
+    "sign-to-digit reconstruction",
+    "integer carry sign table",
+    "four-phase 3/2 schedule"
+  ],
+  "depths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "experiment_id": "X-9304",
+  "records": [
+    {
+      "depth": 1,
+      "maximum_start": null,
+      "minimum_start": null,
+      "nontrivial_words_checked": 0
+    },
+    {
+      "depth": 2,
+      "maximum_start": 3136,
+      "minimum_start": 961,
+      "nontrivial_words_checked": 2
+    },
+    {
+      "depth": 3,
+      "maximum_start": 254913,
+      "minimum_start": 7232,
+      "nontrivial_words_checked": 6
+    },
+    {
+      "depth": 4,
+      "maximum_start": 15848385,
+      "minimum_start": 928832,
+      "nontrivial_words_checked": 14
+    },
+    {
+      "depth": 5,
+      "maximum_start": 1056964609,
+      "minimum_start": 16777216,
+      "nontrivial_words_checked": 30
+    },
+    {
+      "depth": 6,
+      "maximum_start": 66673697729,
+      "minimum_start": 2045779008,
+      "nontrivial_words_checked": 62
+    },
+    {
+      "depth": 7,
+      "maximum_start": 4377862591425,
+      "minimum_start": 20183919680,
+      "nontrivial_words_checked": 126
+    },
+    {
+      "depth": 8,
+      "maximum_start": 280864985306049,
+      "minimum_start": 609991404608,
+      "nontrivial_words_checked": 254
+    }
+  ],
+  "results_sha256": "e287cbf70c55adbbdfe3ae4296fc8836f424b2ca48ddda03830235b46f952a2f",
+  "schema_version": 1,
+  "tail_real_coordinate": "1/3",
+  "totals": {
+    "carry_and_schedule_checks": 3020,
+    "centered_trace_checks": 3514,
+    "nontrivial_words_checked": 494
+  }
+}
