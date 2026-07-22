@@ -1,0 +1,97 @@
+{
+  "exact_checks": {
+    "tau_lt_three_halves_from_81_gt_64": true,
+    "therefore_all_published_theta_exponents_exceed_tau": true,
+    "theta1_gt_five_halves_from_gamma_positive_and_sqrt5_gt2": true
+  },
+  "experiment_id": "X-9412",
+  "gamma": "0.053605369642813844350709328486",
+  "rows": [
+    {
+      "Gamma": "0.381966011250105151795413165634",
+      "denominator": "1.719318640591223090003305062267",
+      "dimension": 1,
+      "theta": "2.882180476090808356146754802903",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.219223593595584862544647536006",
+      "denominator": "1.510952550648330853689208940586",
+      "dimension": 2,
+      "theta": "5.714314571004380620319720133231",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.152872911616963385166719292466",
+      "denominator": "1.298693678614209376699694758769",
+      "dimension": 3,
+      "theta": "9.533777219986354397128136007680",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.117217781462681293454173346212",
+      "denominator": "1.085371366461491627233597855488",
+      "dimension": 4,
+      "theta": "14.877515303728947399640156264626",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.095012437887910972978073508724",
+      "denominator": "0.871613636394559012339391786347",
+      "dimension": 5,
+      "theta": "22.855871484435403215173833715804",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.079867118433975376655979914135",
+      "denominator": "0.657636066158355746565336318137",
+      "dimension": 6,
+      "theta": "36.036999587616876920223213211133",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.068880796598700026391467043828",
+      "denominator": "0.443532238597091722458755538161",
+      "dimension": 7,
+      "theta": "61.955363545010806223130333049540",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.060548778632412664695540327644",
+      "denominator": "0.229349266704511522711386533878",
+      "dimension": 8,
+      "theta": "136.301150022255480591293438495209",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    },
+    {
+      "Gamma": "0.054013534593336307466882981258",
+      "denominator": "0.015113432349706614064946134971",
+      "dimension": 9,
+      "theta": "2318.657271149257799882011615809767",
+      "theta_gt_tau": true,
+      "theta_increasing_from_previous": true
+    }
+  ],
+  "scalar_tau": "1.419591945535779233473936007271",
+  "schema_version": 1,
+  "summary": {
+    "admitted_dimensions": [
+      1,
+      9
+    ],
+    "all_denominators_positive": true,
+    "all_theta_gt_tau": true,
+    "all_theta_strictly_increasing": true,
+    "dimension_nine_theta": "2318.657271149257799882011615809767",
+    "interpretation": "The published Vaananen-Wallisser linear-independence measure is too weak for the scalar one-phase elimination lemma at every admitted dimension.",
+    "minimum_theta": "2.882180476090808356146754802903"
+  }
+}
