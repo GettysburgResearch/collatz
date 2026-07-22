@@ -2,7 +2,7 @@
 
 This index reserves the `*-9500` identifiers for issue #17. It is not the
 repository's canonical `CLAIMS.md`. All theorem-level statements remain
-`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9505`
+`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9506`
 are empirical or exact finite checks and do not promote any universal claim.
 
 ## Packet files
@@ -17,6 +17,7 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_05.md`](claims/ITERATION_05.md) — `L-9516`, `T-9510`, `Q-9506`.
 - [`claims/ITERATION_06.md`](claims/ITERATION_06.md) — `L-9517`, `L-9518`, `T-9511`, `T-9512`, `Q-9507`.
 - [`claims/ITERATION_07.md`](claims/ITERATION_07.md) — `L-9519`, `L-9520`, `T-9513`, `T-9514`, `R-9504`, `Q-9508`.
+- [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact finite ordinary and periodic counterexample sweep.
 
 ## Status table
 
@@ -70,6 +71,7 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `T-9514` | Final finite-alphabet / reset-renewal dichotomy | PROPOSED | conditional on audited `T-9509` |
 | `R-9504` | Pressure and fresh mass are scale-compatible | PROPOSED | blocks false one-dimensional closures |
 | `Q-9508` | Discounted fresh mass or finite-alphabet nonstabilization | IDEA | two exact remaining branches |
+| `X-9506` | Exact counterexample-first ordinary and periodic sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no block cycle through period 14 |
 
 ## Dependency summary
 
@@ -108,10 +110,16 @@ Iteration 07 adds:
 5. `Q-9508`, the exact quantitative fresh-mass / finite-alphabet interfaces
    still needed to exclude the two branches.
 
+`X-9506` performs the corresponding counterexample-first finite attack. It
+exhausts every ordinary candidate below `3*2^65` and every periodic block word
+of length at most fourteen. It finds no positive cycle or infinite ray; the
+largest tested exact block lifetime is thirty-four. This strengthens the finite
+negative evidence but does not alter the infinite proof boundary.
+
 The sole infinite mechanism still not excluded is an eventual-zero-carry,
-subcritical ordinary ghost.  It must either have bounded letters but a
+subcritical ordinary ghost. It must either have bounded letters but a
 nonperiodic finite-alphabet code with infinitely many fresh bridge primes, or
 have unbounded letters with unbounded rounded deficits, exponential core
-resets, and arbitrarily long rooms or large primitive bridge factors.  No
+resets, and arbitrarily long rooms or large primitive bridge factors. No
 positive integer witness and no proof excluding both branches is contained in
 the packet.
