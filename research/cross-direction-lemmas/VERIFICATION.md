@@ -259,6 +259,16 @@ received nonauthoring cold review and remain `PROPOSED`.
 | `PR35/T-8802`, `T-8803`, `T-8805`--`T-8807` at `6bb647a`; local `T-9819`; `PR20/T-9403`, `T-9405` for comparison | `T-9822` proves an exact same-symbol return valuation in the physical `4 -> 5` recurrence, iterates it into two-symbol and switch-shell floors, and constructs infinitely many positive roots for every finite phase word. | Logarithmic oscillation is necessary, not sufficient.  Since the finite physical language is full, any excluding grammar must retain all-scale one-root coherence. |
 | General binary completion recurrence; local `T-9819`, `T-9822`; `PR35/D-8801`, `T-8803` for comparison | `T-9823` proves `v_2(VM_h-U+s(U-C))=a(h'-h)` for every binary `U=2^a -> V` chart, with universal symbol/switch floors and exact finite-word residue cylinders. | The theorem applies only after a physical direction supplies the normalized recurrence and ordinary tails greater than one; its floors remain necessary, not sufficient. |
 | Local `T-9821` combined-moment alternant | `T-9824` divides the row-factor-stripped alternant by its ordinary Vandermonde, obtains an exact positive Schur sum, and computes cubic principal-specialization orders at `2` and `3`. | The visible factor alone cannot yield quadratic height.  Further content shared across Cramer minors remains possible and is exactly the live target. |
+| Local `T-9817`, `T-9820`; frozen corrected `PR3` connector algebra | `T-9825` applies exact LTE to the four stabilized schedule factors, extends the fixed affine `J/Z` chart through `m-6` bits, identifies its parity-controlled first boundary bit, and bounds high cancellation to at most one third-symbol lane. | The code is same-scale and grows only linearly while the room quotient samples an exponentially moving top window; no cap transition or room avoidance follows. |
+| Local `T-9821` combined-moment minors and evaluated error | `T-9826` derives checkerboard Cramer signs, one-signed real error coefficients, and the exact ladder `v_2(R_m-R_n)=E_n` for all `m>n`. | Pairwise nonproportionality is automatic, but the distance-height consequence is a lower bound; the required quadratic primitive-height upper bound remains open. |
+| Local `T-9823`, `L-9801`; `PR35` only for the physical `4 -> 5` specialization | `T-9827` extracts one positive odd carry per maximal run, proves exact dyadic and odd-place zipper laws, reconstructs every compatible positive chain, and gives nested initial-carry blocks with an eventual-zero ordinary-realization criterion. | Stabilization is characterized, not proved or disproved.  The theorem neither constructs nor excludes a positive chart survivor. |
+
+Live-source reconciliation after this table found `PR3/T-0039` compatible
+with the moving-high-window boundary of `T-9825`; `PR20/R-9410` and `T-9422`
+close a different delayed Pade family only through period nine; and
+`PR35/T-8809` independently recovers the earlier two-symbol support floors.
+The proposed global exclusion in live `PR33/T-9705` uses a separate
+connector-free Evertse proof chain and is not imported or promoted here.
 
 ## New-claim audit matrix
 
@@ -318,6 +328,9 @@ received nonauthoring cold review and remain `PROPOSED`.
 | `T-9822` | completion/grammar lane, integrating reviewer, and independent cap reviewer | both-symbol infinitude, return coordinate, terminal odd unit, strict gap, affine floors, shell and switch indexing, switch growth, finite-word residue sign, positivity, and source comparisons were reconstructed | every finite word is physically realizable only with a varying root; infinite one-root coherence and a grammar upper bound remain open |
 | `T-9823` | completion/generalization lane, integrating reviewer, and independent period reviewer | general return coordinate, terminal parity modulo `U`, positivity, affine floors, exact consecutive-switch flank return with its `+1`, finite-cylinder residue, and both explicit chart specializations were reconstructed | no generic affine recurrence is asserted to be a physical Collatz chart without a separate source crosswalk |
 | `T-9824` | period-ten lane, integrating reviewer, and independent completion reviewer | Schur partition/indexing, coefficient positivity, exact degree band, reverse/identity selector sums, valuation signs, height lower bounds, and Cramer-ratio scope were reconstructed | cubic height of one normalized alternant does not preclude further content cancellation across ratios |
+| `T-9825` | cap low-bit lane, integrating reviewer, and independent period/completion reviewers | all four LTE endpoints, sharp product defect, connector precision, affine inverse, boundary-bit sign, lane multiplicities, the live top-twelve crosswalk, and 4096-block universal-fiber count were reconstructed | the growing chart does not transport either coordinate across scales or force branching of the distinguished source |
+| `T-9826` | period-ten lane, integrating reviewer, and independent cap/completion reviewers | Cramer replacement signs, bordered determinant parity, separation of real and 2-adic limits, exact radius increment, ultrametric equality, and rational-height consequence were reconstructed | nonproportionality is no substitute for the missing primitive-height upper bound |
+| `T-9827` | completion/run-carry lane, integrating reviewer, independent formula auditor, and period/cap reviewers | maximal-run indexing, zipper signs, first odd-prime exception, converse reconstruction, composed cylinder, nesting, stabilization equivalence, mixed-radix block formula, and `4/5` specialization were reconstructed | eventual zero blocks remain an exact criterion rather than an established outcome |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -719,6 +732,43 @@ height bounds are exact.  The audit retained the crucial limitation: this is
 cubic height for each separately normalized alternant, not for every Cramer
 ratio.
 
+### Independent wave-twenty arithmetic audits
+
+For `T-9825`, the reviewers independently applied two-adic LTE to
+`3^(7t_j)-1`, recovering the endpoint vector
+`(m+2,m-6,m-5,m-6)`.  Since `t_0+t_1=513*2^(m-8)`, the product defect starts
+exactly at bit `m-6`, whereas the right connector is stable through bit
+`m-5`.  Substitution in `PJ=X_2-Z` gave the affine inverse and the parity of
+the normalized first defect.  The four source constants were then reduced
+modulo `2`, `4`, and `8`, confirming maximum lane multiplicities `3,2,1`.
+The live PR #3 coordinates were independently aligned as
+`h=A+25 mod64` and `q=floor(64ell/T_3)`.  Since at least three lanes have
+`nu_2(H)<=2`, the universal lift-coset count gives all 4096 top-twelve blocks
+with `2^(Delta-h-12)` distinct image corrections per block.  The
+`2^h`-element kernel raises the original-lift preimage count to
+`2^(Delta-12)` per block.  Review retained the essential limitation that the
+actual source chooses only one correlated lift.
+
+For `T-9826`, the Cramer system was reordered from `c_j=b_(n,n-j)`.
+The minus replacement column and `n-1-j` moves give `(-1)^(n-j)`, hence
+`sgn(b_(n,k))=(-1)^k`.  Comparing determinant sizes `n+1` and `n` gives the
+real error sign `(-1)^n`.  At the 2-adic place, direct subtraction gives
+`E_(n+1)-E_n=6(2*zeta+27Sr*n)>0`; unequal error valuations then force the
+exact distance `E_n`, not merely a lower bound.  The real and 2-adic series
+values were never identified.
+
+For `T-9827`, reviewers iterated
+`U(M_(n+1)-s)=V(M_n-s)` through each maximal run and checked the boundary
+sign `sigma=2s-1`.  Oddness at the switch gives the exact dyadic zipper;
+reduction modulo primes dividing `V` proves coprimality only after the first
+run, preserving the stated exception.  Composition recovered both the
+`q_0` cylinder and the next-block formula.  Canonical nesting was established
+before `L-9801` was invoked, so eventual zero blocks are exactly ordinary
+realization and are not silently assumed.  Review also separated finite
+divisibility from maximal-run parity: level `N` need not make `q_N` odd, while
+membership at level `N+1` does.  The example `U=4,V=5,ell_0=ell_1=1` with
+`q_0=1` versus `q_0=5 mod4` checks the distinction.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -802,6 +852,14 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   Collatz chart and does not turn universal switch floors into an upper bound.
 - `T-9824` does not disprove the combined-moment program.  It exhausts only
   the ordinary Vandermonde factor; cross-minor content remains open.
+- `T-9825` does not give a cap scale recurrence.  Its affine chart is
+  same-scale, and its linear precision window does not reach the moving
+  top-six room quotient.
+- `T-9826` does not prove period-ten irrationality.  Exact pairwise distances
+  and nonproportionality supply no quadratic upper bound for primitive height.
+- `T-9827` does not turn full finite run compatibility into an ordinary
+  survivor.  It identifies eventual zero carry blocks as the exact missing
+  condition without proving that they occur or fail.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -1281,3 +1339,15 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     subtract the Vandermonde selector at both primes, and distinguish one
     quotient's cubic height from the quadratic endpoint differences of its
     Cramer ratios.
+68. For `T-9825`, compute all four schedule valuations before multiplying
+    factors, keep the connector's one extra stable bit, and verify the sign of
+    the parity boundary.  Count lane fibers modulo `2`, `4`, and `8`, and keep
+    the growing same-scale chart separate from any scale recurrence.
+69. For `T-9826`, retain the minus sign on the Cramer replacement column and
+    every column move, compare bordered determinant sizes, and distinguish
+    `H_infinity` from `H_2`.  Use unequal valuations for the exact distance;
+    do not promote its height lower bound to the missing upper bound.
+70. For `T-9827`, index runs at their first symbols, require every extracted
+    carry to be positive and odd, and retain `v_p(q_0)` in the first
+    odd-place identity.  Recompose the cylinder and block formula before
+    applying `L-9801`; stabilization is a criterion, not a conclusion.

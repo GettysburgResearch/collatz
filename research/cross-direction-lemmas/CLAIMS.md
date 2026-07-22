@@ -137,5 +137,8 @@ repository review.
 | T-9822 | Theorem | Every positive 4/5 chart survivor has exact same-symbol return valuations and logarithmically dense phase switches | PROPOSED | T-9819; PR35/T-8802, T-8803, T-8805--T-8807; PR20/T-9403, T-9405 for comparison |
 | T-9823 | Theorem | Every nontrivial binary expanding-chart survivor has exact same-symbol return valuations and logarithmically dense switches | PROPOSED | T-9819, T-9822; PR35/D-8801, T-8803 for comparison |
 | T-9824 | Theorem | The normalized combined-moment alternant is a positive Schur sum whose visible Vandermonde quotient retains exact cubic height | PROPOSED | T-9821 |
+| T-9825 | Theorem | The cap base-cell and connector-word chart freezes one low bit per scale, with an exact parity boundary and one-lane high-cancellation ceiling | PROPOSED | T-9817, T-9820; corrected PR3 connector algebra |
+| T-9826 | Theorem | Canonical combined-moment Pade approximants have checkerboard signs, one-signed real errors, and exact pairwise 2-adic distances | PROPOSED | T-9821 |
+| T-9827 | Theorem | Maximal binary-chart runs transport one positive odd carry through exact dyadic and odd-place cylinders, with ordinary realization equivalent to block stabilization | PROPOSED | T-9823, L-9801; PR35 for the 4/5 specialization |
 
 No `K-####` candidate is proposed.

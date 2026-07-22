@@ -397,6 +397,22 @@ proves (32) and the stated bounded-projection obstruction. **QED**
   refreshed against live PR #3 head
   `c37e96efd0dcc9dd610d59041234dc57e74090fd`.  Live PR #33 head
   `2cfe2506e2a5e86157c8ac970bd9466ce86a6891` is contextual only.
+- A later read-only comparison through live `PR3` head
+  `537e1cab2e8dacc444e973e730daa463273bab6f` found the frozen source files
+  unchanged.  New `PR3/L-0033` and `T-0039` admit the exact crosswalk
+  `h_(L0033)=A_m+25 mod64`,
+  `q_(T0039)=floor(64ell_m/T_3)`, and
+  `64A_m+q_(T0039)=floor(s_(m,c)/(T_3/64))`.  Thus their two-block room
+  filter is one affine labeling of the top twelve bits of the joint cell,
+  not a second inverse coordinate.
+- Live `PR33/T-9705` at
+  `c9d62bce3e93f5785f72e4520bc576863d9379eb` proposes a globally stronger
+  ordinary exclusion through a connector-free Evertse argument.  It is
+  comparison only and is not imported or independently source-audited here.
+- Notation must remain fenced: this claim's integral connector word `Z_m` is
+  not the real defect digit `Z_n` of live `PR3/L-0034` or the physical scaled
+  boundary `Z_j` of live `PR33/L-9704`; likewise `h_(L0033)` is an output digit,
+  not the valuation `h_(m,c)` in (26).
 - The factorization (14), scaled interpretation (21), cancellation-depth law
   (27), parity no-go (30)--(32), and low-six-bit equivalence (36)--(38) are
   new.
@@ -417,6 +433,10 @@ proves (32) and the stated bounded-projection obstruction. **QED**
   any separate information needed to compute `H` itself.
 - No bounded-scale computation is extrapolated, and no room, cap chain,
   marked initialization, or Collatz conclusion is proved or refuted.
+- If live `PR33/T-9705` survives independent review, its global Evertse route
+  supersedes the need for this local cap recurrence inside the frozen stage
+  class.  The scale-law target below remains an independent elementary and
+  Evertse-free structural question.
 
 ## Exact checks
 

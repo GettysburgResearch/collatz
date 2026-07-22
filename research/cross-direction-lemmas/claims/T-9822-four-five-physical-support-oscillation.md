@@ -491,6 +491,13 @@ that one positive root realizes every prefix of an arbitrary infinite word.
 - `PR35/T-8802` supplies exactly (1)--(2) and the physical interpretation.
   The valuation identity (8) and the common two-symbol constant in (9) are
   derived directly from that recurrence.
+- Live `PR35/T-8809` at
+  `8060aa4d3155d526ab4f6405ef9ecb47fa8107e1` independently reconstructs the
+  two-color support/count clauses with the same constant
+  `C=log_4(5M_0)`.  Its one-step bound is non-strict; Theorem 1 here supplies
+  the strict bound and exact return valuation, while Theorem 2 couples the
+  colors into switch shells.  It is corroborating overlap, not a stronger
+  proof dependency.
 - Local `T-9819` gives multiplicative support floors for a rational completion.
   Applied to the `1` support of a chart survivor, its constant is
   `log_4(5(M_0+1))`; applied to the complement it is `log_4(5M_0)`.

@@ -43,6 +43,7 @@ dependency.
 - [`wave seventeen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-seventeen.md)
 - [`wave eighteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eighteen.md)
 - [`wave nineteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nineteen.md)
+- [`wave twenty`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twenty.md)
 
 ## Result map
 
@@ -181,6 +182,9 @@ dependency.
 | [`T-9822`](claims/T-9822-four-five-physical-support-oscillation.md) | PR #35 physical-grammar frontier | Same-symbol returns have an exact dyadic valuation; both phases and their switches occur in every affine multiplicative shell, while every finite phase word is nevertheless physically realizable by infinitely many roots. |
 | [`T-9823`](claims/T-9823-binary-chart-physical-oscillation.md) | General binary-chart grammar frontier | For every `U=2^a<V` binary completion, same-symbol returns have exact valuation `a(h'-h)`; consecutive switches satisfy a sharper pointwise affine recurrence, both symbols have shell floors, and every finite word has one exact residue cylinder. |
 | [`T-9824`](claims/T-9824-vandermonde-quotient-schur-boundary.md) | PR #20 normalized-height frontier | Dividing the combined alternant by its ordinary Vandermonde leaves an exact positive Schur sum with cubic `2`- and `3`-adic height, so further cross-minor content is provably necessary. |
+| [`T-9825`](claims/T-9825-growing-cap-lowbit-affine-code.md) | PR #3/PR #33 cap low-bit frontier | The fixed affine `J/Z` chart grows from six bits to `m-6` bits, its first omitted bit is exactly the base-cell parity, and at most one third-symbol lane can cancel three or more Newton-carry bits. |
+| [`T-9826`](claims/T-9826-canonical-pade-ultrametric-ladder.md) | PR #20 canonical combined-moment frontier | Denominator coefficients have checkerboard sign, real errors are one-signed, and the canonical rational approximants have exact pairwise 2-adic distances, making nonproportionality automatic. |
+| [`T-9827`](claims/T-9827-maximal-run-odd-carry-zipper.md) | PR #35/general binary-chart one-root frontier | Maximal runs transport one positive odd carry through exact dyadic and odd-place zipper laws; nested carry blocks stabilize exactly when one ordinary root realizes the infinite schedule. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -395,6 +399,10 @@ independently reconstructed and which conjectural boundaries remain open.
    a positive Schur sum whose principal specialization still has cubic
    two-place height.  Thus the required saving must be further content shared
    across Cramer minors; the obvious alternant factor cannot provide it.
+   `T-9826` closes a separate auxiliary clause: the canonical approximants
+   have exact pairwise distances `v_2(R_m-R_n)=E_n`, so their projective pairs
+   are automatically nonproportional.  The quadratic global-height bound is
+   still the substantive missing input.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -428,7 +436,10 @@ independently reconstructed and which conjectural boundaries remain open.
    cylinders hold for every binary `U=2^a -> V` completion recurrence.  For
    `64 -> 81` the return law is
    `v_2(81M_h-64+47s)=6(h'-h)` and the logarithmic coefficient is
-   `18.1502565060...`.
+   `18.1502565060...`.  `T-9827` now extracts the missing one-root state at
+   maximal runs: positive odd carries obey an exact two-place zipper, and its
+   nested initial-carry blocks stabilize exactly when one ordinary root
+   realizes the full infinite schedule.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
@@ -453,8 +464,11 @@ independently reconstructed and which conjectural boundaries remain open.
    base cell and third-symbol shift share exactly one inverse unit, and a
    connector coefficient of valuation `h` cancels exactly `h` carry bits.
    Parity leaves the full carry on one or three lanes, so simultaneous bounded
-   closure is impossible; the remaining target is the distinguished scale
-   law of the single connector word `Z_m`.  Finally, `T-9811` shows that every
+   closure is impossible.  `T-9825` extends the same-scale affine `J/Z` chart
+   from six bits to `m-6` bits, identifies its parity-controlled boundary bit,
+   and proves at most one lane can cancel three or more carry bits.  The
+   remaining target is still a distinguished cross-scale law for `Z_m`.
+   Finally, `T-9811` shows that every
    surviving hypothetical room must be transcendental.  The constants are
    structural, not computational.
 7. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal

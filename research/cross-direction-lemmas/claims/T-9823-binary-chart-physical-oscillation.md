@@ -474,6 +474,12 @@ itself.
   recurrence (3).
 - `PR35/T-8803` and `PR20/T-9405` concern factor complexity and repetitions,
   not individual-symbol or switch placement.
+- Live `PR35/L-8804` and `T-8809` at
+  `8060aa4d3155d526ab4f6405ef9ecb47fa8107e1` add, respectively, exact
+  meet-in-the-middle composition of finite `4/5` word cylinders and an
+  independent `4/5` two-color support proof.  The former complements Theorem
+  3 but is specialized and has no physical valuation/switch law; the latter
+  is the `4/5` support subcase already strengthened by `T-9822`.
 - The assumption `M_n>1` excludes the trivial all-one fixed completion.  No
   generic affine recurrence is asserted to arise from a particular physical
   Collatz chart unless that chart separately supplies (3).

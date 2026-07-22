@@ -169,6 +169,13 @@ visible factor by themselves cannot supply it.
 - `T-9821` supplies the combined moments and opposite tropical selectors.
   The new content is the exact Schur expansion (4) and the residual
   specialization orders (10)--(12).
+- Live `PR20/Q-9413` at
+  `82ca2f932438a9fe0897704ba62959ca23ec830f` now explicitly proposes
+  symbolic maximal-minor or cyclotomic factors for its direct combined-moment
+  route.  Equations (4) and (10)--(12) identify and exhaust the first visible
+  ordinary Vandermonde factor; the live target must therefore seek further
+  cross-minor content.  `PR20/R-9410` closes a different delayed phasewise
+  family and neither implies nor contradicts this boundary.
 - Polynomial coefficient positivity is not arithmetic specialization
   independence and does not prove the period-ten value irrational.
 - The cubic lower bound concerns each separately normalized base alternant.

@@ -279,6 +279,16 @@ repeat their endpoint valuations.
 - `PR20/L-9410` uses one phasewise root product.  The present denominator is
   the unique solution of the genuinely combined moment equations and is not
   assumed to factor phasewise.
+- At live `PR20` head `82ca2f932438a9fe0897704ba62959ca23ec830f`,
+  refreshed `Q-9413` lists five deliverables for its direct combined-moment
+  route.  Theorem 2 supplies its combined zero window, proved nonzero first
+  survivor, and odd evaluated denominator (deliverables 1--3).  The global
+  reduced-height bound and exponent greater than one (deliverables 4--5)
+  remain open exactly as stated here.
+- Live `PR20/L-9418`, `R-9410`, and `T-9422` concern a different delayed
+  phasewise denominator family.  They prove the native result through period
+  nine and close that delayed family below threshold at period ten; they do
+  not subsume the genuinely combined Hankel system (3)--(6).
 - Local `R-9807` and `T-9804` close phase allocation and sparse scalar-order
   shortcuts.  They do not contain the arbitrary combined Hankel formula (6).
 - Opposite endpoint uniqueness proves nonvanishing and exact local
