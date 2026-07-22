@@ -22,6 +22,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9313` | Lemma | `PROPOSED` | Every itinerary has one bounded error path; ordinary realization is cylinder stabilization | elementary affine recurrence; `T-9315` crosswalk |
 | `L-9314` | Lemma | `PROPOSED` | Exact appended base-`M` digit of the nearest-integer cylinder | `L-9313`; finite affine iteration |
 | `L-9315` | Lemma | `PROPOSED` | Bounded-distortion morphic images preserve efficient recurrence | `T-9316`; elementary word-length accounting |
+| `L-9316` | Lemma | `PROPOSED` | Small sequential transducers preserve enough Thue--Morse recurrence | `T-9316`; finite-state synchronization |
 | `T-9301` | Conditional theorem | `SUPERSEDED` | Conditional polynomial-window reduction | superseded by self-contained `T-9308` |
 | `T-9302` | Conditional theorem | `SUPERSEDED` | Conditional density-one full EQ | superseded by unconditional `T-9309` |
 | `T-9303` | Theorem | `PROPOSED` | Valuation-stratified fixed-frequency depth-period decay | `L-9304`; exact cosine-grid second moment |
@@ -44,8 +45,8 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `R-9303` | Refutation | `PROPOSED` | Pure real scheduled-cylinder emptiness cannot close the ordinary section | `L-9312`, `L-9313` |
 | `C-9301` | Historical conjecture | `SUPERSEDED` | Harmonic control of low-energy cylinders | superseded by `L-9310`, `T-9311`, `T-9312` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`--`L-9315`, `T-9312`--`T-9317` |
-| `Q-9303` | Open question | `IDEA` | Centered nearest-integer cylinder nonstabilization and source specialization | `T-9315`--`T-9317`, `L-9312`--`L-9315`, `R-9303` |
+| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`--`L-9316`, `T-9312`--`T-9317` |
+| `Q-9303` | Open question | `IDEA` | Centered nearest-integer cylinder nonstabilization and source specialization | `T-9315`--`T-9317`, `L-9312`--`L-9316`, `R-9303` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `O-9302` | Observation | `EMPIRICAL` | Bounded carry counts and zero-run census | `X-9302` |
 | `O-9303` | Observation | `INTERNAL EXACT COMPUTATION` | Exact dual minima and survivor replays through depth 46 | `X-9303` |
@@ -78,15 +79,16 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
   \]
 - `L-9313` proves that the bounded real error language is a full shift. Ordinary realization is the arithmetic question whether the nested nearest-integer cylinders stabilize.
 - `L-9314` gives the exact appended block; eventual zero is exactly ordinary stabilization.
-- `T-9316` adds the first infinite symbolic family for which nonstabilization is proved: every finite shift or complement of the Thue--Morse word has infinitely many nonzero appended blocks.
-- `L-9315` makes that exclusion robust under every non-erasing morphic recoding with output-length distortion
+- `T-9316` proves every finite shift or complement of Thue--Morse has infinitely many nonzero appended blocks, using adjacent equal factors with length `2^m` and second start `2*2^m`.
+- `L-9315` makes that exclusion robust under non-erasing morphic recoding with
   \[
-  b/a<1/(6\log_{64}(81/64))=2.9424745961\ldots.
+  b/a<1/(2\log_{64}(81/64))=8.8274237885\ldots.
   \]
-  In particular, all codings and all binary morphisms with image lengths in `{1,2}` remain excluded.
-- `T-9317` freezes the source bridge: a Dubickas-type lower constant greater than `1/81` closes immediately, while equality at `1/81` also closes if the equality language has efficient recurrence, including any morphic Thue--Morse encoding covered by `L-9315`.
-- `X-9305` is bounded evidence only. It checks 1024 Thue--Morse block extensions but is not a premise of `T-9316`.
-- `Q-9301` remains open. Neither an exact reformulation, a finite exact minimum, nor exclusion of one extremal family is an all-itinerary theorem.
+  In particular, every binary morphism with image-length ratio at most `8` remains excluded.
+- `L-9316` covers genuinely stateful conventions: every deterministic letter-to-letter encoding with at most eight states also remains excluded; more generally it gives an explicit state/distortion inequality.
+- `T-9317` freezes the source bridge: a Dubickas-type lower constant greater than `1/81` closes immediately, while equality at `1/81` also closes if the equality language enters any recurrence class covered by `T-9316`, `L-9315`, or `L-9316`.
+- `X-9305` is bounded evidence only. It checks 1024 Thue--Morse block extensions but is not a premise of the proof.
+- `Q-9301` remains open. Neither an exact reformulation, a finite exact minimum, nor exclusion of broad extremal families is an all-itinerary theorem.
 - No positive integer survivor, divergent orbit, cycle, universal Collatz-counterexample bound, or Collatz resolution is claimed.
 
 ## Main implication graph
@@ -127,8 +129,13 @@ T-9314 depth-46 bound               |
         T-9316 recurrence cone              Q-9303 all-itinerary
         + Thue--Morse exclusion             nonstabilization
                  |
-                 v
-        L-9315 bounded-distortion recodings
+          +------+------+
+          |             |
+          v             v
+   L-9315 morphic  L-9316 finite-state
+   recodings       recodings
+          |             |
+          +------+------+
                  |
                  v
         T-9317 source threshold/equality bridge
@@ -155,7 +162,7 @@ L-9312 scheduled real geometry
 
 For `64 -> 81`, the wave-5 literature audit correctly identifies the appended blocks, not the real intervals, as decisive. It requests exact specialization of Dubickas 2006/2008 at radius `1/81`, including the extremal Thue--Morse sign word.
 
-`T-9316` supplies the native extremal-word half. `L-9315` removes most sign-convention sensitivity by preserving the obstruction under bounded-distortion morphic encodings. `T-9317` shows why this matters—a critical equality theorem can be as decisive as a strict lower bound once its equality language is classified.
+`T-9316` supplies the native extremal-word half. `L-9315` handles bounded-distortion morphisms, and `L-9316` handles small deterministic sequential transducers. `T-9317` shows why this matters: a critical equality theorem can be as decisive as a strict lower bound once its equality language is classified.
 
 No source formula is inferred from an abstract. The exact constant, quantifiers, endpoints, and equality classification remain an acquisition task.
 
@@ -172,6 +179,6 @@ No source formula is inferred from an abstract. The exact constant, quantifiers,
 - every itinerary has a real error lift but selects one `2`-adic nearest-integer cylinder = `L-9313`;
 - the appended cylinder block is explicit = `L-9314`;
 - efficient repeated factors obstruct stabilization = `T-9316`;
-- bounded-distortion Thue--Morse recodings remain obstructed = `L-9315`;
+- bounded-distortion morphic and small finite-state recodings remain obstructed = `L-9315`, `L-9316`;
 - the Dubickas threshold/equality trichotomy is `T-9317`;
 - `Q-9302` and `Q-9303` target monotone minimum divergence and all-itinerary nearest-integer cylinder nonstabilization.
