@@ -1,82 +1,86 @@
 flowchart LR
-    FALSE([Collatz false])
+    FALSE([Collatz is false])
     CYCLE([Positive nontrivial cycle])
     DIV([Positive orbit avoids 1])
-    THIRD([Third component / equivalent witness])
+    THIRD([Third component / exact equivalent witness])
+
     CYCLE --> FALSE
     DIV --> FALSE
     THIRD --> FALSE
 
-    subgraph FOUNDATION["Trusted substrate"]
-      CEQ["Cycle equation"]
-      REAL["2-adic realization<br/>integrality obstruction"]
-      CENT["Centered equivalence, cylinder,<br/>appended block, recurrence"]
+    subgraph CYC["Integer-first finite cycle"]
+      CEQ["Exact cycle equation"]
+      W27["PR42: windows through 27<br/>PROPOSED + exact MITM"]
+      K184["PR13: length 184 excluded<br/>PROPOSED native"]
+      CRIT["PR45 critical mechanical compiler<br/>first near-candidate rejected"]
+      PULSE["PR47 single pulse closed in range<br/>distributed pulse open"]
+      FULL{"Full-denominator equality<br/>+ exact replay"}
+      CEQ --> W27
+      CEQ --> K184
+      CEQ --> CRIT --> FULL
+      CEQ --> PULSE --> FULL
+      FULL --> CYCLE
     end
 
-    subgraph CYC["Finite cycle"]
-      CACTIVE["Issue #9 active"]
-      CCERT{"Exact divisibility,<br/>valuation replay"}
-      CEQ --> CACTIVE --> CCERT --> CYCLE
+    subgraph FROZEN["Frozen finite-type collision class"]
+      STAGE["Corrected 256-transition stage"]
+      EQ258["258-coordinate primitive equation"]
+      EV["Evertse 1984 source"]
+      T9705["T-9705 independently verified<br/>at frozen source"]
+      FCLOSED["Frozen class closed"]
+      STAGE --> EQ258 --> T9705 --> FCLOSED
+      EV --> T9705
     end
 
-    subgraph FIXED["Fixed finite-type regeneration"]
-      F256["Frozen corrected 256-stage class"]
-      EQ258["Primitive 258-coordinate equation"]
-      T9705["T-9705 proposed exclusion"]
-      T9831["T-9831 proposed finite-type exclusion<br/>endpoint product Xi < 1"]
-      FCLOSED["Fixed low-Xi systems proposed closed"]
-      F256 --> EQ258 --> T9705 --> FCLOSED
-      T9831 --> FCLOSED
+    subgraph REFUND["Linear-height quotient refund"]
+      L0050["LIT-KTHM-0050<br/>pairwise expanding quotient lifts"]
+      CAUSAL{"ACL-P036 causal invariant<br/>+ top-boundary locality"}
+      INIT{"One positive ordinary initialization"}
+      L0050 --> CAUSAL --> INIT --> DIV
     end
 
-    subgraph CROSS["Cross-cycle / growing-type escape"]
-      CELL["m=22 head 2130<br/>finite room opening"]
-      EXIT["Physical replay exits<br/>phase-34 class"]
-      CASCADE["Forced phase cascade"]
-      LOSS["First phase-1 tail<br/>loses 4230 bits / 10000 renewals"]
-      POT{"Regeneration potential<br/>or finite return?"}
-      OINIT{"One positive ordinary initialization"}
-      CELL --> EXIT --> CASCADE --> LOSS --> POT --> OINIT
-      OINIT --> DIV
-      OINIT --> CYCLE
+    subgraph CENTER["Centered 64 to 81"]
+      NATIVE["Centered equivalence/cylinders/blocks<br/>independently verified"]
+      ZERO["Exact forced-tail map<br/>64B'=81B+e-e'"]
+      GHOST["Fixed-modulus PDR<br/>periodic completion ghost"]
+      TOP{"Height/top-boundary<br/>one-counter invariant"}
+      NATIVE --> ZERO
+      ZERO --> GHOST
+      ZERO --> TOP --> DIV
     end
 
-    subgraph M1["Centered 64→81 / M1"]
-      CENT --> SAFETY{"Deterministic safety on<br/>(C_K,e_K,height)"}
-      SAFETY --> STAB{"Eventually-zero blocks"}
-      STAB --> DIV
-      BAD9318["T-9318 unrestricted screen"]
-      GOOD9319["T-9319 nonconstant repair"]
-      BAD9318 -. refuted/repaired .-> GOOD9319
-      GOOD9319 -. constrains .-> SAFETY
+    subgraph CROSS["Cross-cycle handoff"]
+      CELL["m=22 physical room opening"]
+      CASCADE["Negative-cycle phase cascade"]
+      PHASE1["Permanent phase 1 = shifted Collatz"]
+      MULTI{"Repeated multi-phase return<br/>or regenerative invariant"}
+      CELL --> CASCADE --> PHASE1
+      CASCADE --> MULTI --> DIV
+      MULTI --> CYCLE
     end
 
-    subgraph H["Partial H"]
-      HPRESS["Rounded-deficit pressure<br/>+ prime firewall"]
-      HSPLIT{"Finite-letter fresh-prime ghost<br/>or reset-renewal ray"}
-      HXI{"Endpoint product Xi_H"}
-      HORB{"Positive ordinary H orbit"}
-      HNO["Integral trap / Evertse exclusion"]
-      HPRESS --> HSPLIT --> HXI
-      HXI --> HORB --> DIV
-      HXI --> HNO
+    subgraph H["Partial H subsystem"]
+      HSEARCH["Exact ordinary sweep<br/>through 2^65 scale"]
+      HCYCLE["T-9515 proposed:<br/>no cycle through 2.479b blocks"]
+      HBARR["Entropy / prefix-return / fresh-prime barriers"]
+      HWIT{"Delayed-novelty or reset-renewal<br/>ordinary survivor"}
+      HSEARCH --> HCYCLE
+      HBARR --> HWIT --> DIV
     end
 
-    subgraph PERIOD["Completion-safe fixed-period filters"]
-      P19["Periods 1..9<br/>source-audited"]
-      BLOCK["Block decimated q-Gaussian<br/>Christoffel program"]
-      GCD{"Cubic outside-prime<br/>gcd/common content"}
-      P19 --> BLOCK --> GCD
-      GCD -. filters .-> SAFETY
+    subgraph SAN["Finite sanctuary"]
+      BARE["T-8601 proposed:<br/>no bare congruence sanctuary"]
+      DFA{"DFA with genuine<br/>word-boundary memory"}
+      BARE -. forces richer state .-> DFA --> DIV
     end
 
-    subgraph OTHER["Other direct/equivalent certificates"]
-      DFA{"Regular sanctuary DFA"}
+    subgraph EQV["Equivalent full-map witnesses"]
       COVER{"Coverage deficit C(x)<x"}
       CONE{"Third binary fixed ray"}
-      DFA --> DIV
+      SPEC{"Point spectral excess<br/>+ faithful support extraction"}
       COVER --> THIRD
       CONE --> THIRD
+      SPEC --> THIRD
     end
 
     classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
@@ -86,9 +90,9 @@ flowchart LR
     classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
     classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
-    class CEQ,REAL,CENT,GOOD9319 proved;
-    class P19 literature;
-    class F256,EQ258,T9705,T9831,FCLOSED,HPRESS,BLOCK proposed;
-    class CELL,EXIT,CASCADE,LOSS empirical;
-    class BAD9318 refuted;
-    class CACTIVE,CCERT,POT,OINIT,SAFETY,STAB,HSPLIT,HXI,HORB,HNO,GCD,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
+    class CEQ,NATIVE,T9705 proved;
+    class EV literature;
+    class W27,K184,CRIT,PULSE,L0050,HCYCLE,HBARR,BARE proposed;
+    class CELL,CASCADE,HSEARCH empirical;
+    class FCLOSED,GHOST,PHASE1 refuted;
+    class FULL,CAUSAL,INIT,ZERO,TOP,MULTI,HWIT,DFA,COVER,CONE,SPEC,FALSE,CYCLE,DIV,THIRD open;
