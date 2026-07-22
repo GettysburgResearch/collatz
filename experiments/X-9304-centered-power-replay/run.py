@@ -13,22 +13,12 @@ from typing import Sequence
 
 M = 64
 N = 81
+ROOT_M = 8
+ROOT_N = 9
 BETA = Fraction(N, M)
+ROOT_BETA = Fraction(ROOT_N, ROOT_M)
 REAL_TAIL = Fraction(1, 3)
 DEFAULT_DEPTHS = tuple(range(1, 9))
-
-CENTERS: dict[int, tuple[Fraction, ...]] = {
-    0: (Fraction(0),),
-    1: (Fraction(0), Fraction(1, 2)),
-    2: (Fraction(0), Fraction(1, 4), Fraction(3, 4)),
-    3: (Fraction(0), Fraction(3, 8), Fraction(5, 8)),
-}
-RADII: dict[int, Fraction] = {
-    0: Fraction(1, 81),
-    1: Fraction(1, 54),
-    2: Fraction(1, 36),
-    3: Fraction(1, 24),
-}
 
 
 def parse_depths(text: str) -> tuple[int, ...]:
@@ -37,7 +27,9 @@ def parse_depths(text: str) -> tuple[int, ...]:
     except ValueError as exc:
         raise argparse.ArgumentTypeError(str(exc)) from exc
     if not depths or any(depth < 1 for depth in depths):
-        raise argparse.ArgumentTypeError("depths must be comma-separated positive integers")
+        raise argparse.ArgumentTypeError(
+            "depths must be comma-separated positive integers"
+        )
     return depths
 
 
@@ -47,20 +39,9 @@ def ceil_fraction(value: Fraction) -> int:
 
 def nearest_integer(value: Fraction) -> int:
     """Return floor(value+1/2); audited values are never half-integral."""
-    return (2 * value.numerator + value.denominator) // (2 * value.denominator)
-
-
-def fractional_part(value: Fraction) -> Fraction:
-    return value - value.numerator // value.denominator
-
-
-def circle_distance(value: Fraction, centers: Sequence[Fraction]) -> Fraction:
-    part = fractional_part(value)
-    distances = []
-    for center in centers:
-        distance = abs(part - center)
-        distances.append(min(distance, 1 - distance))
-    return min(distances)
+    return (2 * value.numerator + value.denominator) // (
+        2 * value.denominator
+    )
 
 
 def standard_survivor_residue(word: Sequence[int]) -> int:
@@ -112,6 +93,8 @@ def audit_word(word: Sequence[int]) -> int | None:
     if xi <= 0:
         raise AssertionError("centered parameter is not positive")
 
+    # Correct square-root parameter: 81/64=(9/8)^2 and zeta=8*xi.
+    zeta = ROOT_M * xi
     errors: list[Fraction] = []
     nearest: list[int] = []
 
@@ -131,16 +114,35 @@ def audit_word(word: Sequence[int]) -> int | None:
         if nearest_integer(power) != quotient:
             raise AssertionError("nearest-integer reconstruction failed")
 
-        # The r=0 condition is available at every audited position.
-        if circle_distance(power, CENTERS[0]) > RADII[0]:
-            raise AssertionError("centered 81/64 condition failed")
+        # Exact centered square-root phases.
+        even_power = zeta * ROOT_BETA ** (2 * position)
+        odd_power = zeta * ROOT_BETA ** (2 * position + 1)
+        if even_power != ROOT_M * power:
+            raise AssertionError("even square-root phase identity failed")
+        if odd_power != ROOT_N * power:
+            raise AssertionError("odd square-root phase identity failed")
+        if nearest_integer(even_power) != ROOT_M * quotient:
+            raise AssertionError("even square-root nearest integer failed")
+        if nearest_integer(odd_power) != ROOT_N * quotient:
+            raise AssertionError("odd square-root nearest integer failed")
+        if not abs(even_power - ROOT_M * quotient) < Fraction(8, 81):
+            raise AssertionError("even square-root error bound failed")
+        if not abs(odd_power - ROOT_N * quotient) < Fraction(1, 9):
+            raise AssertionError("odd square-root error bound failed")
 
-        # The refined r=1,2,3 schedule uses the next itinerary digit.
-        if position < len(word) - 1:
-            for phase in (1, 2, 3):
-                intermediate = power * Fraction(3, 2) ** phase
-                if circle_distance(intermediate, CENTERS[phase]) > RADII[phase]:
-                    raise AssertionError("four-phase 3/2 schedule failed")
+        # Exact two-step 8 -> 9 factorization with the digit repeated twice.
+        current = ordinary[position]
+        first_numerator = ROOT_N * current - digit
+        if first_numerator % ROOT_M:
+            raise AssertionError("first 8 -> 9 half-step is not integral")
+        middle = first_numerator // ROOT_M
+        if middle % ROOT_M != digit:
+            raise AssertionError("duplicated digit fails at the middle state")
+        second_numerator = ROOT_N * middle - digit
+        if second_numerator % ROOT_M:
+            raise AssertionError("second 8 -> 9 half-step is not integral")
+        if second_numerator // ROOT_M != ordinary[position + 1]:
+            raise AssertionError("two 8 -> 9 steps do not recover 64 -> 81")
 
         errors.append(error)
         nearest.append(quotient)
@@ -152,7 +154,9 @@ def audit_word(word: Sequence[int]) -> int | None:
         if int(carry) != word[position] - word[position + 1]:
             raise AssertionError("centered carry does not equal the digit difference")
         if nearest[position] % M not in {0, 15, 49}:
-            raise AssertionError("nearest integer has an impossible residue modulo 64")
+            raise AssertionError(
+                "nearest integer has an impossible residue modulo 64"
+            )
 
     return start
 
@@ -181,12 +185,13 @@ def canonical_payload(depths: Sequence[int]) -> dict[str, object]:
         for record in records
     )
     transition_checks = sum(
-        int(record["nontrivial_words_checked"]) * max(0, int(record["depth"]) - 1)
+        int(record["nontrivial_words_checked"])
+        * max(0, int(record["depth"]) - 1)
         for record in records
     )
     return {
         "experiment_id": "X-9304",
-        "schema_version": 1,
+        "schema_version": 2,
         "arithmetic": "exact fractions and integers",
         "tail_real_coordinate": "1/3",
         "depths": list(depths),
@@ -194,7 +199,8 @@ def canonical_payload(depths: Sequence[int]) -> dict[str, object]:
         "totals": {
             "nontrivial_words_checked": total_words,
             "centered_trace_checks": centered_checks,
-            "carry_and_schedule_checks": transition_checks,
+            "paired_8_to_9_steps_checked": 2 * centered_checks,
+            "centered_carry_checks": transition_checks,
         },
         "checks": [
             "finite survivor replay",
@@ -202,13 +208,17 @@ def canonical_payload(depths: Sequence[int]) -> dict[str, object]:
             "nearest-integer reconstruction",
             "sign-to-digit reconstruction",
             "integer carry sign table",
-            "four-phase 3/2 schedule",
+            "exact 64-to-81 factorization through two 8-to-9 steps",
+            "duplicated-digit 8-to-9 chart replay",
+            "centered 9/8 square-root lift",
         ],
     }
 
 
 def payload_digest(payload: dict[str, object]) -> str:
-    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    encoded = json.dumps(
+        payload, sort_keys=True, separators=(",", ":")
+    ).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()
 
 
