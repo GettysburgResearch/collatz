@@ -167,6 +167,10 @@ The endpoint prime support is the exact escape from a direct S-unit proof. `T-00
 
 The same stage equation has a fixed real normalization. `T-0033` gives one room hitting doubly-exponentially shrinking targets, and `T-0034` identifies the target address with the exact normalized connector word. `T-0035` then excludes fixed-polynomial uses of the quadratic generator by height nonresonance.
 
+## Execution note
+
+The exact assertions in the four scripts were independently replayed in the available Python environment during the authoring session. A direct checkout invocation remains the standard reproducibility command above.
+
 ## Limitations
 
 - Finite checks do not prove the imported S-unit theorem.
