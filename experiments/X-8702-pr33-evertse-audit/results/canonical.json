@@ -1,0 +1,41 @@
+{
+  "actual_connectors": {
+    "connector_cases": 32,
+    "local_conjugacy_cases": 16,
+    "sample_digest": "08e1a42480e2b959c3f942fc8d9abdf3425424cd70cf893730399593727f7140"
+  },
+  "agent": "gpt56-pdr-01",
+  "arithmetic_gates": {
+    "cap_height_ratio": "161341/44508739",
+    "endpoint_product_ratio": "6498/346819",
+    "evertse_parameters": {"S0": [2, 3], "c": 1, "d": "1/50", "n": 257},
+    "primitive_gcd_cap": 216,
+    "primitive_rows": 64,
+    "projective_intervals": [
+      [12, 17326845, 17326851], [13, 34650877, 34650883],
+      [14, 69298941, 69298947], [15, 138595069, 138595075],
+      [16, 277187325, 277187331], [17, 554371837, 554371843],
+      [18, 1108740861, 1108740867], [19, 2217478909, 2217478915],
+      [20, 4434955005, 4434955011], [21, 8869907197, 8869907203],
+      [22, 17739811581, 17739811587], [23, 35479620349, 35479620355],
+      [24, 70959237885, 70959237891], [25, 141918472957, 141918472963],
+      [26, 283836943101, 283836943107], [27, 567673883389, 567673883395],
+      [28, 1135347763965, 1135347763971], [29, 2270695525117, 2270695525123],
+      [30, 4541391047421, 4541391047427]
+    ]
+  },
+  "experiment_id": "X-8702",
+  "external_source": {
+    "author": "J.-H. Evertse",
+    "journal": "Compositio Mathematica 53 (1984), 225-244",
+    "result": "Corollary 1",
+    "source_theorem_executed_by_script": false,
+    "title": "On sums of S-units and linear recurrences"
+  },
+  "frozen_pr33": "c9d62bce3e93f5785f72e4520bc576863d9379eb",
+  "frozen_pr3_interface": "f274dfeee3c9c391c48e58d8b57cb9f1759236f8",
+  "issue": 40,
+  "seed": 8847923,
+  "semantic_digest": "7baba2749d6b6f0fa2c3547861f4818558f8d1f9356d74767c1af60753fd804b",
+  "signed_quotients": {"cases": 20000, "negative": 9957, "nonnegative": 10043}
+}
