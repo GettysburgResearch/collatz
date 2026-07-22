@@ -126,6 +126,20 @@ and that only finitely many fixed rooms can support eventual tails.  Every
 claim received a nonauthoring cold review; source heads were refreshed again
 after review.  All four claims remain `PROPOSED` pending external review.
 
+Wave fifteen pursued the four interfaces left by that packet.  The prefix
+lane found the shortest toll modulus that outruns the room scale and collapsed
+the room bound from `4^256` to 64.  The quantitative-prime lane froze both
+endpoint signatures and removed the bounded structural primes from the
+correlated S-unit rank.  The Ridout lane matched every native local factor to
+an exact projective target and strengthened the anticipated dichotomy to
+transcendence of every hypothetical room.  The integrating lane derived a
+native solution q-Casoratian, while a nonauthoring review repaired the
+infinite 2-adic rearrangement through finite truncations.  PR #20 moved during
+final review; its two dependency blobs remained unchanged, while its new
+scalar irrationality theorem redirected the Casoratian toward stronger
+two-value estimates.  All four claims received nonauthoring cold reviews and
+remain `PROPOSED` pending external review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -172,6 +186,10 @@ after review.  All four claims remain `PROPOSED` pending external review.
 | Frozen PR #3 connector table; local `T-9802`, `L-9821`, `L-9898` | `T-9806` telescopes the final internal connector and proves the sixteen last-two-symbol offsets split into complementary six-bit directions above a common remainder. | Exact zeros fall from at most 64 to at most 16, but the exposed `q_0/64` cell is exponentially narrower than the known cap cusp and does not improve its 64-word filter. |
 | `PR20/L-9412`--`L-9414`, `R-9408` at `93739b4`; Vaananen--Wallisser quantitative measure | `T-9807` proves the source-independent floor `omega_D>=D+1`, then applies the source at dimension one to `(-p_n,q_n)`, giving scalar `limsup<=omega_1<17/5<10<=omega_9`. | Full-space scalar one-phase elimination is closed.  Directional native coefficient rays, triangular q-difference dynamics, and coupled Hermite--Pade constructions remain open. |
 | `PR3/L-0031`, `T-0033`, refreshed `T-0036` at `c37e96e` | `T-9808` decodes every toll prefix from separated dyadic valuations, makes the incoming boundary determine the full stage word, and combines this with the fixed-room floor law to bound eventual rooms and tails by `4^256`. | The finite set may be nonempty and is not effectively listed.  No room is initialized or shown compatible with all cap and seam constraints. |
+| `PR3/L-0025`, `L-0031`, `T-0033` at `c37e96e`; local `T-9808` | `T-9809` computes the exact first three prefix exponents, proves that three is the shortest single-scale prefix whose dyadic modulus outruns the room scale, and packs every eventual room into one of 64 shrinking address intervals. | The set may still be nonempty and is not effectively listed.  Prefix minimality is specific to the one-scale modulus method and leaves all remaining word/seam checks open. |
+| `PR3/L-0031`, `L-0032`, `T-0032` at `c37e96e`; local `T-9805` | `T-9810` freezes three incoming ternary and four outgoing binary signatures, absorbs all bounded endpoint powers of `2` and `3` into coefficients, and leaves one scale plus two directions per fresh prime. | The rank is `<=2f+1` and the ESS exponent improves from `2f+6` to `2f+2`, but the constant is astronomical and no cross-stage rank-one relation is proved. |
+| `PR3/O-0011`, `L-0032`, `T-0033` at `c37e96e`; Ridout 1958 and Bilu's exact projective formulation | `T-9811` matches targets `(C_infinity,0,infinity)` at the real, binary, and ternary places, verifies the exact projective height, and proves infinitely many distinct reduced approximants. | Every hypothetical fixed room is transcendental.  The result is conditional on the PR #3 interfaces, ineffective, and neither constructs nor excludes an ordinary path by itself. |
+| `PR20/L-9408`, `L-9415` at live head `aa9cf71` | `T-9812` proves formal two-shift independence, symmetrizes the native solution Casoratian, and identifies the unique physical least-valuation pair, giving `v_2=54(m+d_1)+6`. | The specialized matrix is nonzero over both embeddings, but this alone is not Q-linear independence of its values.  New `T-9419` already supplies scalar irrationality; quantitative two-value estimates remain open. |
 
 ## New-claim audit matrix
 
@@ -214,6 +232,10 @@ after review.  All four claims remain `PROPOSED` pending external review.
 | `T-9806` | cap-cell lane and quantitative cold reviewer | internal connector telescope, modulus transfer, inverse unit, both six-bit offset vectors, pairwise cell separation, global 16/240 count, and exact cusp-width comparison were reconstructed | higher inverse-power bits are uncontrolled and the current cusp is wider than the fine cell |
 | `T-9807` | period-ten lane and two nonauthoring cold reviewers | p-adic pigeonhole floor, unbounded-height extraction, D=1 source applicability, exact coefficient height, odd-denominator valuation identity, `omega_1<17/5<10`, and directional escape were reconstructed | the theorem closes only unrestricted scalar/full-measure elimination, not the native thin-vector or coupled routes |
 | `T-9808` | integrating agent and cap cold reviewer | lossless valuation decoder, incoming residue law, fixed-room interval packing, nonuniform-onset finite-subset argument, and eventual-tail uniqueness were reconstructed | `4^256` is finite but huge; the compatible rooms and their seam paths are not identified |
+| `T-9809` | prefix/period lane, quantitative reviewer, and cap reviewer | exact prefix sums, rational logarithmic bounds, prefix injectivity, 64-interval packing, nonuniform onsets, full-tail uniqueness, and one-scale minimality were reconstructed | 64 rooms may remain; later symbols, cap stitches, and multi-scale/odd-prime improvements are open |
+| `T-9810` | quantitative-prime lane and period reviewer | all endpoint signatures, context count, coefficient absorption, fresh-prime tuple generators, rank, scale distinctness, endpoint retention, and both initialized/uninitialized inversions were reconstructed | two directions per fresh prime remain, and the effective constant is structurally useful but computationally vacuous |
+| `T-9811` | cap/Ridout lane and independent source reviewer | exact theorem normalization, three projective targets, reduced height, strict error, denominator growth, rational-target scope, and conditional conclusion were reconstructed | transcendence classifies any assumed room but gives neither existence nor nonexistence without an independent algebraicity criterion |
+| `T-9812` | integrating agent and period cold reviewer | Q(X)-independence, Casoratian sign and leading term, physical exponent identity, finite-truncation passage, unconditional 2-adic pair convergence, unique minimum, and exact valuation were reconstructed | determinant nonvanishing does not specialize formal independence into Q-linear value independence; scalar irrationality is already separate on live PR #20 |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -430,6 +452,40 @@ rational logarithmic bounds, the growing modulus/room-scale gap, and the
 finite-subset argument needed when room sizes and starting scales have no
 uniform global bound.  No finite replay is used to infer the full theorem.
 
+### Independent wave-fifteen arithmetic audits
+
+For `T-9809`, two reviewers independently recovered
+`U_(m,2)=(5665/256)2^m+22` and
+`U_(m,3)=(4257/128)2^m+33`, checked both strict rational bounds for
+`log_2(3)`, and verified the signs of the two exponential gaps.  The 64-prefix
+valuation decoder and the finite-subset room packing argument were replayed
+separately.  The review kept shortest-prefix minimality confined to one
+single-scale dyadic-modulus method.
+
+For `T-9810`, the reviewer reconstructed all four endpoint valuations and the
+three-by-four signature split, then factored the hatted endpoints prime by
+prime.  The tuple group has one common scale direction and at most two
+directions per prime outside `{2,3}`; no independence of those displayed
+generators is assumed.  The final endpoint, first-stage safeguard, factor
+`12`, ESS floor, ceiling, and logarithmic inversion were all checked.
+
+For `T-9811`, Bilu's exact formulation was inspected for normalized absolute
+values, reduced projective height, independent algebraic targets, minimum
+factors, and the infinity convention.  The reviewer verified that targets
+`(C_infinity,0,infinity)` give exactly the three factors in PR #3's native
+inequality.  Rational rooms are included in the algebraic-target theorem;
+strict error and increasing reduced denominators supply infinitely many
+distinct forbidden approximants.
+
+For `T-9812`, the reviewer independently derived the formal rank argument and
+the symmetrized coefficient `(q^i-q^j)^2`.  Exact Fraction replays across
+periods one through three and starting heights zero through three recovered
+the determinant identity and valuation.  The proof itself passes through
+finite truncations, proves unconditional convergence of the 2-adic pair
+family, and makes `(0,1)` the unique least-valuation term.  Live-head comparison
+confirmed unchanged `L-9408`/`L-9415` blobs and no solution-Casoratian overlap
+in the newly added scalar irrationality results.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -464,6 +520,15 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   a directional native relation estimate or coupled q-difference construction.
 - `T-9808` proves finiteness, not emptiness or an effective list, of the fixed
   room set; no eventual tail is constructed.
+- `T-9809` improves the room bound to 64 but does not list a room, initialize
+  a tail, or validate any of the remaining 253 symbols and cap seams.
+- `T-9810` improves the structural-prime bookkeeping, not the astronomical
+  scale of the quantitative S-unit bound or the timing and size of new primes.
+- `T-9811` proves only that an assumed fixed room is transcendental; it does
+  not prove that a room exists, is algebraic, or is impossible.
+- `T-9812` proves formal function independence and a nonzero specialized
+  determinant, not Q-linear independence or a quantitative measure for the
+  specialized values.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -855,3 +920,23 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     incoming-address injectivity.  In the room count select a finite set first
     so its sizes, onsets, and separation have common bounds; do not assume
     global uniformity or turn finiteness into emptiness.
+51. For `T-9809`, sum the corrected prefix heights before comparing real
+    scales.  Verify both rational bounds for `log_2(3)`, the opposite signs at
+    prefix lengths two and three, 64-prefix injectivity, and the finite-subset
+    packing argument.  Do not promote one-scale minimality to a universal
+    lower bound on room-counting methods.
+52. For `T-9810`, reconstruct all endpoint valuations and distinguish the
+    three-valued incoming ternary signature from the four predecessor types.
+    Check absorption of both structural primes, retain the final endpoint and
+    the first-stage loss, and treat `2f+1` as a rank upper bound rather than an
+    independence assertion.
+53. For `T-9811`, read the exact projective Ridout theorem before the branch
+    application.  Verify targets zero and infinity at the correct finite
+    places, reduced projective height, strict real error, denominator growth,
+    and the inclusion of rational algebraic targets.  Keep transcendence
+    conditional on the PR #3 room interface.
+54. For `T-9812`, derive formal rank separately from specialized
+    nonsingularity.  Check the Casoratian sign, the period-one leading term,
+    convergence before rearranging the 2-adic pair sum, the `q^(2i)` valuation
+    contribution, and uniqueness of `(0,1)`.  Do not infer Q-linear value
+    independence from a nonzero determinant.

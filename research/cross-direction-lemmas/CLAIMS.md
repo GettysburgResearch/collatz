@@ -120,5 +120,9 @@ repository review.
 | T-9806 | Theorem | Stabilized cap heads occupy sixteen exact second-level dyadic cells above one common remainder | PROPOSED | T-9802, L-9821, L-9898; frozen PR3 connector algebra |
 | T-9807 | Theorem | Every full D-value p-adic measure has Dirichlet floor D+1, while the dimension-one source measure bounds every scalar approximation below the nine-phase floor | PROPOSED | elementary p-adic pigeonholing; PR20/L-9412--L-9414, R-9408 |
 | T-9808 | Theorem | The positive stage toll losslessly decodes all 256 source types and at most 4^256 fixed rooms support eventual corrected-stage tails | PROPOSED | PR3/L-0031, T-0033, T-0036 |
+| T-9809 | Theorem | The shortest single-scale toll prefix outrunning the room scale has length three, leaving at most 64 eventual rooms and tails | PROPOSED | PR3/L-0025, L-0031, T-0033; T-9808 |
+| T-9810 | Theorem | Freezing endpoint signatures removes the structural primes 2 and 3 from the correlated S-unit rank | PROPOSED | PR3/L-0031, L-0032, T-0032; T-9805 |
+| T-9811 | Theorem | Ridout's exact three-place theorem forces every hypothetical fixed corrected-stage room to be transcendental | PROPOSED / SOURCE-QUALIFIED CONDITIONAL CONSEQUENCE | PR3/O-0011, L-0032, T-0033; Ridout's theorem |
+| T-9812 | Theorem | The native periodic stack function has formal two-shift rank two and an exact nonzero physical q-Casoratian | PROPOSED | PR20/L-9408, L-9415 |
 
 No `K-####` candidate is proposed.

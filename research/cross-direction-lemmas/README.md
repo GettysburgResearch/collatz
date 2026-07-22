@@ -38,6 +38,7 @@ dependency.
 - [`wave twelve`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twelve.md)
 - [`wave thirteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-thirteen.md)
 - [`wave fourteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fourteen.md)
+- [`wave fifteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fifteen.md)
 
 ## Result map
 
@@ -159,6 +160,10 @@ dependency.
 | [`T-9806`](claims/T-9806-cap-head-two-level-cell-hierarchy.md) | PR #33/PR #3 cap-head bridge | After two head symbols are fixed, the last two occupy sixteen distinct cells of width `q_0/64` with offsets split by `(0,3,53,1)` and `(0,33,7,11) mod64`; exact zeros fall to at most 16, although the known cusp is wider than these cells. |
 | [`T-9807`](claims/T-9807-dirichlet-floor-blocks-one-phase-elimination.md) | PR #20 period-ten frontier | Elementary p-adic pigeonholing forces every unrestricted `D`-value measure exponent to satisfy `omega>=D+1`; applying the source measure at dimension one gives every scalar family `limsup<=omega_1<17/5<10<=omega_9`, rigorously closing full-measure one-phase elimination. |
 | [`T-9808`](claims/T-9808-stage-toll-room-finiteness.md) | PR #3 fixed-room/cap bridge | Separated dyadic toll valuations losslessly decode the full 256-symbol word from the incoming boundary, and the fixed-room law permits at most `4^256` eventual rooms and tails. |
+| [`T-9809`](claims/T-9809-three-symbol-stage-room-bound.md) | PR #3 fixed-room/cap bridge | The first three toll symbols already give 64 distinct incoming addresses in a modulus larger than the room scale; hence at most 64 eventual rooms and tails survive, and three is minimal for this one-scale prefix method. |
+| [`T-9810`](claims/T-9810-signature-refined-fresh-prime-budget.md) | PR #3 scaled-tail S-unit frontier | Freezing the three incoming ternary and four outgoing binary signatures absorbs all bounded endpoint powers of `2` and `3`, giving rank `<=2f+1` for primes outside `{2,3}` and the sharper envelope `N<=12*4^256 exp(1542^771(2f+2))`. |
+| [`T-9811`](claims/T-9811-fixed-room-rational-or-transcendental.md) | PR #3 fixed-room/Ridout bridge | The native real, binary, and ternary approximation factors match Ridout's projective theorem with targets `(C,0,infinity)` exactly, so every hypothetical fixed corrected-stage room is transcendental. |
+| [`T-9812`](claims/T-9812-native-order-two-casoratian.md) | PR #20 native q-difference frontier | The periodic stack solution and its first q-shift are independent over `Q(X)`; their solution Casoratian is positive over the reals and has exact physical valuation `54(m+d_1)+6` at `2`. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -347,6 +352,12 @@ independently reconstructed and which conjectural boundaries remain open.
    is impossible. The live targets are therefore a genuinely directional
    estimate on the native coefficient rays, or a coupled two-dimensional
    `q`-difference/Hermite--Pade construction for the period-ten vector.
+   `T-9812` supplies a separate native order-two input: the solution pair has
+   formal rank two and an exact nonzero physical Casoratian, with
+   `v_2=54(m+d_1)+6`.  The refreshed PR #20 head already proves scalar
+   irrationality for positive stack directives, so the determinant's live
+   use is a quantitative two-value independence measure, not another scalar
+   irrationality proof.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -363,11 +374,16 @@ independently reconstructed and which conjectural boundaries remain open.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
-   rank `2s_N+1` rather than the coarse product rank. `T-9808` simultaneously
-   makes the exceptional room set finite and the stage word deterministic.
-   The next useful gain is either to exploit the bounded `{2,3}` boundary
-   signatures to lower the S-unit rank, or to intersect each decoded room with
-   the cap/seam constraints. The constants are structural, not computational.
+   rank `2s_N+1` rather than the coarse product rank. `T-9810` now absorbs the
+   bounded `{2,3}` endpoint signatures into fixed coefficients, replacing the
+   converted exponent `2f+6` by `2f+2` at the cost of a factor `12`.
+   `T-9808` made the exceptional room set finite; `T-9809` sharpens its bound
+   from `4^256` to exactly 64 for the shortest one-scale prefix method.
+   Finally, `T-9811` shows that every surviving hypothetical room must be
+   transcendental.  The next useful gain is to intersect the 64 three-symbol
+   room addresses with exact cap-head/seam cells, or independently force a
+   room into an algebraic class. The constants are structural, not
+   computational.
 7. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 8. Test binary-automatic invariant-component colorings. `L-9823` eliminates
