@@ -1,0 +1,32 @@
+{
+  "canonical_pair_cases": 96,
+  "experiment": "X-8502",
+  "growth_cases": 144,
+  "growth_certificate": {
+    "counter_threshold": 256,
+    "integer_inequality": "2^175 > 3^106",
+    "ratio_lower": "N/Q > 9/4 for t>=3744"
+  },
+  "identity_cases": 120,
+  "identity_digest": "0324baf8aa4711c72516d407548f44b8e3916e84f1aed94f06f8e451f8df10ab",
+  "legal_lift_cases": 288,
+  "payload_digest": "0080f0a52318034e24b97b7c0dc90c9b0539464d575aac2588dd157cccdbe2a8",
+  "sample_rows": [
+    {
+      "cap_bits": 41550,
+      "residue_bits": 41547,
+      "source_origin_bits": 41374,
+      "t": 3744,
+      "target_origin_bits": 41548
+    },
+    {
+      "cap_bits": 41722,
+      "residue_bits": 41718,
+      "source_origin_bits": 41548,
+      "t": 3760,
+      "target_origin_bits": 41725
+    }
+  ],
+  "status": "EMPIRICAL / EXACT FINITE INTERFACE AUDIT",
+  "type_cell_cases": 32
+}
