@@ -1,0 +1,350 @@
+{
+  "claim": "L-8201",
+  "counters": {
+    "cap_checks_on_divisor_hits": 15,
+    "fixed_support_packets": 8842,
+    "formal_positive_divisor_hits": 5,
+    "negative_cycle_words": 24,
+    "pulse_instances": 875356,
+    "resultant_identities": 3651452,
+    "two_pulse_eliminant_matches": 5856,
+    "valuation_certificates": 3651452
+  },
+  "maximum_uniform_cap_bits": 30,
+  "samples": [
+    {
+      "coefficient_valuations": [
+        1
+      ],
+      "coefficients": [
+        "-42",
+        "42"
+      ],
+      "support": [
+        0
+      ],
+      "uniform_caps": [
+        "90"
+      ],
+      "weights": [
+        "42"
+      ],
+      "word": "cycle1-r1-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        3
+      ],
+      "coefficients": [
+        "-42",
+        "2",
+        "40"
+      ],
+      "support": [
+        0,
+        1
+      ],
+      "uniform_caps": [
+        "89",
+        "89"
+      ],
+      "weights": [
+        "42",
+        "40"
+      ],
+      "word": "cycle1-r1-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        2
+      ],
+      "coefficients": [
+        "-60",
+        "60"
+      ],
+      "support": [
+        0
+      ],
+      "uniform_caps": [
+        "128"
+      ],
+      "weights": [
+        "60"
+      ],
+      "word": "cycle1-r1-rot1"
+    },
+    {
+      "coefficient_valuations": [
+        2,
+        3
+      ],
+      "coefficients": [
+        "-60",
+        "4",
+        "56"
+      ],
+      "support": [
+        0,
+        1
+      ],
+      "uniform_caps": [
+        "128",
+        "127"
+      ],
+      "weights": [
+        "60",
+        "56"
+      ],
+      "word": "cycle1-r1-rot1"
+    },
+    {
+      "coefficient_valuations": [
+        1
+      ],
+      "coefficients": [
+        "-378",
+        "378"
+      ],
+      "support": [
+        0
+      ],
+      "uniform_caps": [
+        "857"
+      ],
+      "weights": [
+        "378"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        3
+      ],
+      "coefficients": [
+        "-378",
+        "18",
+        "360"
+      ],
+      "support": [
+        0,
+        1
+      ],
+      "uniform_caps": [
+        "857",
+        "852"
+      ],
+      "weights": [
+        "378",
+        "360"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        4
+      ],
+      "coefficients": [
+        "-378",
+        "42",
+        "336"
+      ],
+      "support": [
+        0,
+        2
+      ],
+      "uniform_caps": [
+        "857",
+        "845"
+      ],
+      "weights": [
+        "378",
+        "336"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        6
+      ],
+      "coefficients": [
+        "-378",
+        "58",
+        "320"
+      ],
+      "support": [
+        0,
+        3
+      ],
+      "uniform_caps": [
+        "857",
+        "841"
+      ],
+      "weights": [
+        "378",
+        "320"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        3,
+        4
+      ],
+      "coefficients": [
+        "-378",
+        "18",
+        "24",
+        "336"
+      ],
+      "support": [
+        0,
+        1,
+        2
+      ],
+      "uniform_caps": [
+        "856",
+        "851",
+        "845"
+      ],
+      "weights": [
+        "378",
+        "360",
+        "336"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        3,
+        6
+      ],
+      "coefficients": [
+        "-378",
+        "18",
+        "40",
+        "320"
+      ],
+      "support": [
+        0,
+        1,
+        3
+      ],
+      "uniform_caps": [
+        "856",
+        "851",
+        "841"
+      ],
+      "weights": [
+        "378",
+        "360",
+        "320"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        4,
+        6
+      ],
+      "coefficients": [
+        "-378",
+        "42",
+        "16",
+        "320"
+      ],
+      "support": [
+        0,
+        2,
+        3
+      ],
+      "uniform_caps": [
+        "856",
+        "845",
+        "841"
+      ],
+      "weights": [
+        "378",
+        "336",
+        "320"
+      ],
+      "word": "cycle1-r2-rot0"
+    },
+    {
+      "coefficient_valuations": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "coefficients": [
+        "-378",
+        "18",
+        "24",
+        "16",
+        "320"
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "uniform_caps": [
+        "856",
+        "851",
+        "845",
+        "841"
+      ],
+      "weights": [
+        "378",
+        "360",
+        "336",
+        "320"
+      ],
+      "word": "cycle1-r2-rot0"
+    }
+  ],
+  "scope": {
+    "large_support_structured_vectors": 38,
+    "maximum_support_size": 5,
+    "primitive_negative_cycles": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4
+      ]
+    ],
+    "primitive_rotations": true,
+    "repetitions": {
+      "cycle_1": [
+        1,
+        5
+      ],
+      "cycle_2": [
+        1,
+        2
+      ]
+    },
+    "small_height_grid": [
+      1,
+      4
+    ]
+  },
+  "status": "exact finite verification of the declared corpus; theorem remains PROPOSED",
+  "transcript_sha256": "59cb5594a945fe98c9d86564a8ea93f37dc343cd5bc5701d8ee4fe67aad0fea7"
+}
