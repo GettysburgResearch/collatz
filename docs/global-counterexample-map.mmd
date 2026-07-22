@@ -2,85 +2,81 @@ flowchart LR
     FALSE([Collatz false])
     CYCLE([Positive nontrivial cycle])
     DIV([Positive orbit avoids 1])
-    THIRD([Third component / exact equivalent witness])
+    THIRD([Third component / equivalent witness])
     CYCLE --> FALSE
     DIV --> FALSE
     THIRD --> FALSE
 
-    subgraph GREEN["Classical substrate"]
-      TRICH["L-9901 orbit trichotomy"]
-      TERRAS["L-9902 parity bijection"]
-      REAL["L-9904 2-adic realization<br/>integrality is the obstruction"]
-      CEQ["L-9905 cycle equation"]
-      DENS["L-9907 divergence density"]
-      TERRAS --> REAL
+    subgraph FOUNDATION["Trusted substrate"]
+      CEQ["Cycle equation"]
+      REAL["2-adic realization<br/>integrality obstruction"]
+      CENT["Centered equivalence, cylinder,<br/>appended block, recurrence"]
     end
 
     subgraph CYC["Finite cycle"]
-      CWORD["Compressed valuation word"]
-      M8{"m=8, K=13 packet"}
-      REPLAY["Exact divisibility, positivity,<br/>valuation replay"]
-      CWORD --> M8 --> REPLAY --> CYCLE
-      CEQ --> CWORD
+      CACTIVE["Issue #9 active"]
+      CCERT{"Exact divisibility,<br/>valuation replay"}
+      CEQ --> CACTIVE --> CCERT --> CYCLE
     end
 
-    subgraph CAP["Corrected collision / phase -34"]
-      FIB["Finite collision fibers<br/>complete finite projection"]
-      EXT["Signed quotient -> cap/co-cap"]
-      ROOM["One room, 84 seams,<br/>fresh primes, low height"]
-      EQ258["258-coordinate physical zero sum"]
-      EXCL["T-9705 proposed:<br/>Evertse excludes all signed completions"]
-      CLOSED["Frozen corrected 256-stage class<br/>proposed closed"]
-      ESCAPE{"New architecture breaks:<br/>fixed rank / d<1 / nondegeneracy / cap"}
-      INIT{"Positive marked initialization"}
-      FIB --> EXT --> EQ258
-      ROOM --> EQ258
-      EQ258 --> EXCL --> CLOSED
-      ESCAPE --> INIT --> DIV
+    subgraph FIXED["Fixed finite-type regeneration"]
+      F256["Frozen corrected 256-stage class"]
+      EQ258["Primitive 258-coordinate equation"]
+      T9705["T-9705 proposed exclusion"]
+      T9831["T-9831 proposed finite-type exclusion<br/>endpoint product Xi < 1"]
+      FCLOSED["Fixed low-Xi systems proposed closed"]
+      F256 --> EQ258 --> T9705 --> FCLOSED
+      T9831 --> FCLOSED
     end
 
-    subgraph M1["Centered 64 to 81 / M1"]
-      FIN["Every finite itinerary has a cylinder"]
-      Z2["Unique 2-adic completion"]
-      ZERO{"Appended blocks eventually zero"}
-      POS["Positive ordinary survivor"]
-      FIN --> Z2 --> ZERO --> POS --> DIV
-      REAL --> Z2
-      FILTER["Complexity, recurrence,<br/>period 1..9 irrationality"]
-      FILTER -. excludes low-memory codes .-> ZERO
-      BAD["False four-phase 3/2 bridge"]
-      BAD -. quarantined .-> FILTER
+    subgraph CROSS["Cross-cycle / growing-type escape"]
+      CELL["m=22 head 2130<br/>finite room opening"]
+      EXIT["Physical replay exits<br/>phase-34 class"]
+      CASCADE["Forced phase cascade"]
+      LOSS["First phase-1 tail<br/>loses 4230 bits / 10000 renewals"]
+      POT{"Regeneration potential<br/>or finite return?"}
+      OINIT{"One positive ordinary initialization"}
+      CELL --> EXIT --> CASCADE --> LOSS --> POT --> OINIT
+      OINIT --> DIV
+      OINIT --> CYCLE
+    end
+
+    subgraph M1["Centered 64→81 / M1"]
+      CENT --> SAFETY{"Deterministic safety on<br/>(C_K,e_K,height)"}
+      SAFETY --> STAB{"Eventually-zero blocks"}
+      STAB --> DIV
+      BAD9318["T-9318 unrestricted screen"]
+      GOOD9319["T-9319 nonconstant repair"]
+      BAD9318 -. refuted/repaired .-> GOOD9319
+      GOOD9319 -. constrains .-> SAFETY
     end
 
     subgraph H["Partial H"]
-      HFIN["Every finite H itinerary realizable"]
-      HSTAB{"Least cylinder representatives stabilize"}
-      HORB["Positive infinite H orbit"]
-      HFIN --> HSTAB --> HORB --> DIV
-      HNO["10/30, finite descent,<br/>30/60/70 returns closed"]
-      HNO -. forces new architecture .-> HSTAB
+      HPRESS["Rounded-deficit pressure<br/>+ prime firewall"]
+      HSPLIT{"Finite-letter fresh-prime ghost<br/>or reset-renewal ray"}
+      HXI{"Endpoint product Xi_H"}
+      HORB{"Positive ordinary H orbit"}
+      HNO["Integral trap / Evertse exclusion"]
+      HPRESS --> HSPLIT --> HXI
+      HXI --> HORB --> DIV
+      HXI --> HNO
     end
 
-    subgraph SAN["Finite sanctuary"]
-      DFA{"Explicit DFA L"}
-      CLOSE["T(L) subset L;<br/>1,2 not in L"]
-      DFA --> CLOSE --> DIV
+    subgraph PERIOD["Completion-safe fixed-period filters"]
+      P19["Periods 1..9<br/>source-audited"]
+      BLOCK["Block decimated q-Gaussian<br/>Christoffel program"]
+      GCD{"Cubic outside-prime<br/>gcd/common content"}
+      P19 --> BLOCK --> GCD
+      GCD -. filters .-> SAFETY
     end
 
-    subgraph EQV["Equivalent full-map witnesses"]
+    subgraph OTHER["Other direct/equivalent certificates"]
+      DFA{"Regular sanctuary DFA"}
+      COVER{"Coverage deficit C(x)<x"}
       CONE{"Third binary fixed ray"}
-      COVER{"C(x) < x"}
-      SPEC{"Point spectral excess<br/>+ support extraction"}
-      CONE --> THIRD
+      DFA --> DIV
       COVER --> THIRD
-      SPEC --> THIRD
-    end
-
-    subgraph OFF["Diagnostics / indirect"]
-      FOUNDRY["Foundry finite-state feedback<br/>collapses to open-loop"]
-      FIVE["5x+1 low-digit tree"]
-      UNIV["Generalized universality"]
-      LOGIC["Weak arithmetic models"]
+      CONE --> THIRD
     end
 
     classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
@@ -90,8 +86,9 @@ flowchart LR
     classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
     classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
-    class TRICH,TERRAS,REAL,CEQ,DENS proved;
-    class FIB,EXT,ROOM,EQ258,EXCL,CLOSED,FILTER,HFIN,HNO,FOUNDRY proposed;
-    class BAD refuted;
-    class M8,REPLAY,ESCAPE,INIT,ZERO,POS,HSTAB,HORB,DFA,CLOSE,CONE,COVER,SPEC,FALSE,CYCLE,DIV,THIRD open;
-    class FIVE,UNIV,LOGIC open;
+    class CEQ,REAL,CENT,GOOD9319 proved;
+    class P19 literature;
+    class F256,EQ258,T9705,T9831,FCLOSED,HPRESS,BLOCK proposed;
+    class CELL,EXIT,CASCADE,LOSS empirical;
+    class BAD9318 refuted;
+    class CACTIVE,CCERT,POT,OINIT,SAFETY,STAB,HSPLIT,HXI,HORB,HNO,GCD,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
