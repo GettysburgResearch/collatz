@@ -6,325 +6,251 @@ Active draft PR: `#3`
 
 ## Q-0001 — Finite-boundary regeneration
 
-Status: `IDEA / central target`
+Status: `IDEA / CENTRAL`
 
-Construct one ordinary finite positive state whose deterministic Collatz trajectory remains inside an exact nonterminating grammar forever.
+Construct one ordinary finite positive integer whose deterministic shortcut-Collatz trajectory remains in an exact nonterminating expanding grammar forever.
 
-Equivalent current formulations include:
+Equivalent active formats now include:
 
-1. an ordinary signed-radix return chain;
-2. a marked negative-phase graph with unbounded memory;
-3. a finite interval or particle grammar carrying one ordinary marker;
-4. an infinite corrected-stage stitching path
+1. canonical stage stitching
    \[
-   S_m(w_m)=R_{m+1}(w_{m+1}).
+   S_m(w_m)=R_{m+1}(w_{m+1});
    \]
+2. a cap-collar/triple-seam path through PR #34's finite overlap graph;
+3. one fixed real room satisfying the shrinking targets of `T-0033`--`T-0034`;
+4. one ordinary path with the fresh-prime behavior forced by `T-0032`;
+5. one marked finite integer replaying every tower block.
 
-Finite compatible prefixes, completion points, positive pressure, and large finite amplifiers are insufficient.
+No finite-prefix, compactness, pressure, or 2-adic completion statement substitutes for this target.
 
 ## Q-0002 — Analytic collision-fiber growth
 
 Status: `PROPOSED RESOLUTION` by `T-0005`
 
-Mildly supercritical collision fibers have exponentially unbounded cardinality. The remaining problem is ordinary infinite realization, not branch count.
+Mildly supercritical collision fibers have exponentially unbounded cardinality. Closure, not branch count, remains open.
 
 ## Q-0003 — Width-three carry grammar
 
 Status: `IDEA`
 
-Classify exact relays for
+Classify all unbounded/nonregular relays for the `512 -> 729` width-three chart. Finite-state regular proposals belong to PR #12 by `T-0020`.
 
-\[
-H(512B+d)=729B+d,
-\qquad d\in\{0,1,2\}.
-\]
-
-Any finite regular fixed-block grammar belongs to PR #12 by `T-0020`. A distinct result needs unbounded or nonregular memory.
-
-## Q-0004 — Multi-chart transition groupoid
+## Q-0004 — Multi-chart and multi-phase transition groupoid
 
 Status: `IDEA`
 
-Construct exact bridges among collision charts and negative phases while recording:
-
-- affine gauge;
-- target phase;
-- padding scale;
-- canonical correction and cap;
-- ordinary marker;
-- complete multiplier and modulus.
-
-Finite connectors are universal. Infinite ordinary stitching is not.
+Construct exact bridges among collision charts and negative phases, recording the ordinary marker, residual correction, real room, prime support, and full-cycle multiplier.
 
 ## Q-0005 — Finite versus adic closure
 
 Status: `PARTIAL`
 
-For regular finite marked configurations, `L-0015` projects the problem to an ordinary regular language. For nested stage cylinders, `T-0031` proves that ordinary realization forces eventual cap-to-correction equality.
-
-Open: give a practical criterion deciding whether an aperiodic shrinking-cusp stitching language contains one ordinary integer.
+Give a usable all-height criterion distinguishing a forward-generated ordinary finite boundary from a compatible completion point. `T-0031` reduces the corrected-stage version to eventual exact cap stitching.
 
 ## Q-0006 — Independent verification
 
-Status: `IDEA`
+Status: `IDEA / HIGH PRIORITY`
 
-Priority reconstruction targets:
+Independently reconstruct, in current order:
 
-- `L-0016`--`L-0017` tower and connector formulas;
-- `T-0027` stage compression;
-- `T-0028` counter isometry;
-- `T-0029` adaptive chart;
-- `T-0030` ordinary quadratic bulk;
-- `L-0030` canonical cap bound;
-- `T-0031` quotient extinction and cusp reduction;
-- `X-0014` and `X-0015`.
-
-The conceptual transfer from PR #16, PR #19, PR #20, and PR #33 should be checked branch-qualifiably rather than treated as merged fact.
+1. `L-0030` and `T-0031`;
+2. `L-0031` scaled-tail telescoping;
+3. the full applicability checklist in `T-0032`;
+4. the toll bound and room floor law in `T-0033`;
+5. the room–connector identity and exponent calculation in `T-0034`;
+6. `X-0016` from statements rather than implementation.
 
 ## Q-0007 — Vertical macro-tile closure
 
 Status: `NARROWED IDEA`
 
-`L-0017` supplies every finite mixed-radix tile. `T-0031` shows that a successful late-stage grammar must compose them into exact zero-cap stitching rather than a growing free quotient.
+Build a finite-word stage substitution whose emitted output is exactly the next canonical input. The current form is the cap-to-correction equality rather than a generic carry-tile problem.
 
-## Q-0008 — Parameterized run-length/cofactor schemas
+## Q-0008 — Parameterized run-length and S-unit schemas
 
-Status: `IDEA`
+Status: `NARROWED IDEA`
 
-Find positive schemas closed under
-
-\[
-d+N^uC=d'+M^{u'}C'.
-\]
-
-The cofactors are unrestricted ordinary integers, so classical S-unit finiteness does not apply without a proved multiplicative restriction.
+Search for positive schemas closed under the exact return equations. `T-0032` excludes every schema whose scaled ordinary tails remain in a fixed finite-prime multiplicative group.
 
 ## Q-0009 — Structured collision codes
 
 Status: `PARTIAL`
 
-Available resources:
+Large alphabets, arbitrary precision, preserved finite geometry, and complete dyadic projection are available. A direct route still needs ordinary marked-boundary transport.
 
-- exponentially large fibers;
-- arbitrary finite precision;
-- preserved finite geometry;
-- complete projection modulo every `2^b`.
-
-Open: connect these resources to shrinking-cusp stage corrections or another ordinary marker transport theorem.
-
-## Q-0010 — Complete dyadic projection
+## Q-0010 — Growing complete dyadic projection
 
 Status: `PROPOSED RESOLUTION` by `L-0009`, `L-0010`, `T-0007`
 
-For every `b >= 1`, a mildly supercritical fiber exists whose offsets meet every residue modulo `2^b`.
+For every `b`, a mildly supercritical collision fiber exists whose offsets meet every class modulo `2^b`.
 
 ## Q-0011 — Convert dyadic freedom into an ordinary relay
 
 Status: `IDEA`
 
-Use collision-code freedom to obtain a relay preserving:
+Use collision-code freedom to satisfy exact valuation and positivity obligations inside the canonical stage or collar graph.
 
-- exact valuation;
-- positivity;
-- phase compatibility;
-- one finite marker;
-- all-height closure.
-
-## Q-0012 — Infinite negative-template renewal code
+## Q-0012 — Infinite negative-template renewal language
 
 Status: `NARROWED IDEA`
 
-A successful code must have:
-
-1. exact deterministic cylinder selection;
-2. forward phase closure;
-3. justified full-cycle growth;
-4. one ordinary finite accepted state.
-
-Finite regular fixed-block systems collapse to PR #12. The phase-34 tower supplies one nonregular testbed.
+Construct a genuinely unbounded/nonregular exact return language containing one ordinary quotient. Finite regular versions collapse to PR #12.
 
 ## Q-0013 — Macroscopic aspect-ratio systems
 
 Status: `IDEA`
 
-Construct charts or graph cycles whose normalized displacement window remains useful while exact selection and the ordinary marker are preserved.
+Construct charts whose real displacement window remains useful while retaining exact selection and expansion.
 
 ## Q-0014 — Cycle-padding stack closure
 
 Status: `PARTIAL`
 
-`T-0015` and `L-0016`--`T-0031` now resolve:
+The finite block, connector, Hensel, Newton, counter-isometry, and growth-budget structure is resolved. The surviving problem is canonical stage stitching.
 
-- exact tower blocks;
-- canonical connectors;
-- inverse-prefix generation;
-- adaptive counter routing;
-- stage compression;
-- raw growth budgets;
-- ordinary quotient extinction.
+## Q-0015 — Pressure-positive ordinary survivor
 
-The unresolved tail is exact canonical stage stitching.
+Status: `NARROWED IDEA`
 
-## Q-0015 — Pressure-positive ordinary survivor language
-
-Status: `IDEA`
-
-Pressure remains useful for proposing exceptional words, but `T-0031` shows that an ordinary late-stage path is governed by exact equality of canonical caps and corrections, not by average multiplier alone.
+Pressure is now auxiliary search guidance. A valid survivor must satisfy the fixed-room, fresh-prime, and cap-seam conditions simultaneously.
 
 ## Q-0016 — Multi-mismatch complement automaton
 
 Status: `IDEA`
 
-Build the complete iterated mismatch system. The phase-34 subsystem may be too rigid; other negative-cycle basins might supply repair stages or correction-room transitions unavailable inside one self-return phase.
+Other negative-cycle phases may provide collar repairs unavailable to the phase-34 self-return system.
 
-## Q-0017 — Phase escape versus ordinary stitching
+## Q-0017 — Arithmetic approximation to phase escape
 
 Status: `NARROWED IDEA`
 
-The escape transform supplies a search bias toward expanding parity words. A certificate still must land those words inside the exact shrinking-cusp correction language.
+Translate preferred escape words into the canonical stage/collar language, not merely into unmarked parity paths.
 
 ## Q-0018 — Marked ordinary-spine grammar
 
 Status: `NARROWED IDEA`
 
-Carry one finite marker through every macro-block. The auxiliary stage quotient cannot remain positive forever by `T-0031`; the marker must eventually travel on the canonical correction sequence itself.
+Carry one finite Collatz marker through a cap-stitch or multi-phase grammar. Marker semantics are resolved; infinite closure is not.
 
-## Q-0019 — Hensel counter stack
+## Q-0019 — Hensel counter stack as sole target
 
-Status: `PARTIAL / SUPERSEDED AS SOLE TARGET`
+Status: `PARTIAL / SUPERSEDED`
 
-The connector-control problem has largely been compiled:
+The connector prefix is finitely compiled and counter-addressable. It is no longer the uncontrolled existential object.
 
-- Newton produces the next inverse prefix;
-- the padding counter is an isometric prefix address;
-- the adaptive 512-cell chart preserves local growth;
-- the logarithmic bulk has a positive ordinary generator.
+## Q-0020 — Route surplus into a growing quotient
 
-These tools may help choose stage words, but they do not replace exact cap-to-correction equality.
+Status: `SUPERSEDED`
 
-## Q-0020 — Route full-stage surplus into residual congruence
+`T-0031` proves the free stage quotient cannot remain positive; it reaches zero.
 
-Status: `SUPERSEDED BY T-0031`
+## Q-0021 — Self-feeding positive Montgomery quotient
 
-`T-0024` proves raw information surplus, while `T-0025`--`T-0030` route connector-control data. `T-0031` shows that the free quotient above the canonical correction is a strict ranking function and cannot be the growing long-term channel of an ordinary path.
+Status: `REFUTED AS POSITIVE TAIL`
 
-The surplus must instead manifest in the growth and structure of the canonical corrections.
-
-## Q-0021 — Self-feeding ordinary Montgomery quotient
-
-Status: `REFUTED AS A POSITIVE-QUOTIENT TAIL / T-0031`
-
-For a valid corrected-stage transition,
+Every valid corrected-stage quotient satisfies
 
 \[
-0\le Y_{m+1}<\frac{Y_m+3}{512}.
+0\le Y_{m+1}<\frac{Y_m+3}{512}
 \]
 
-Every positive integer quotient strictly decreases and eventually reaches zero. The prior ansatz of a permanently growing self-feeding quotient cannot describe an ordinary infinite realization.
+and eventually vanishes.
 
 ## Q-0022 — Shrinking-cusp stage stitching
 
-Status: `IDEA / PRIMARY NEXT THEOREM`
+Status: `PRIMARY`
 
-For each scale, choose one corrected stage word `w_m` in the four phase-34 tower types. Let
-
-\[
-R_m(w_m)
-\]
-
-be its canonical correction and
-
-\[
-S_m(w_m)
-\]
-
-its canonical cap.
-
-Construct or exclude an infinite tail satisfying
+Construct or exclude an infinite sequence satisfying
 
 \[
 \boxed{S_m(w_m)=R_{m+1}(w_{m+1})}
 \]
 
-for every sufficiently large `m`.
-
-`T-0031` supplies the necessary cusp:
-
-\[
-R_{m+1}<3\,3^{A_m},
-\]
-
-while
-
-\[
-R_{m+1}<2^{D_{m+1}}.
-\]
-
-Equivalently,
-
-\[
-\frac{R_{m+1}}{2^{D_{m+1}}}
-<2^{-\Xi_m},
-\qquad
-\Xi_m
-=
-\frac{22173699}{5248}2^m-rac{1106}{41}.
-\]
-
-Required constructive output:
-
-1. one finite stage and marked initialization entering a canonical correction;
-2. a total rule choosing every later stage word;
-3. exact cap-to-correction equality;
-4. exact replay of every local Collatz block;
-5. permanent avoidance of the terminal cycle.
-
-Required obstructive output:
-
-1. a uniform lower bound keeping every next correction outside the cusp; or
-2. a completion-height theorem forcing infinitely many nonzero stage blocks; or
-3. a complexity/room argument excluding coherent equality paths.
+from some finite scale onward, including one finite marked initialization.
 
 ## Q-0023 — Completion-height lower bound for stage corrections
 
-Status: `IDEA / HIGH VALUE`
+Status: `REFINED BY T-0034`
 
-Adapt PR #16 and PR #33 to prove a lower bound of the form
-
-\[
-R_m(w)\ge L_m
-\]
-
-for every admissible late stage word, with
+`T-0034` now gives the exact asymptotic height
 
 \[
-L_{m+1}>3\,3^{A_m}.
+\log_2R_m=\Gamma2^m+O(m),
 \]
 
-Such a theorem would exclude all shrinking-cusp stitching tails in the corrected phase-34 subsystem.
+where `Gamma` is the full-stage surplus coefficient. The remaining question is not the leading height but the exact canonical address.
 
 ## Q-0024 — Fixed-room model for stage corrections
 
-Status: `IDEA`
+Status: `PROPOSED RESOLUTION` by `T-0033`, `T-0034`
 
-After removing the fixed 256-cycle exponent cap, the stage multiplier squares exactly. Develop a fixed-room past/future representation for the canonical corrections, parallel to PR #16 `T-9313`, and determine whether the first coherent room height tends to infinity.
+Every assumed infinite ordinary path has one real room `C_infinity` with
+
+\[
+W_m=\lfloor C_\infty H_m\rfloor,
+\qquad
+R_m=\lfloor C_\infty J_m\rfloor.
+\]
+
+The unresolved task is to use this model for construction or obstruction.
 
 ## Q-0025 — Constructive stage-word synthesis
 
 Status: `IDEA`
 
-Use the four tower types, adaptive counter addresses, and the finite Newton compiler to solve
+Synthesize stage words satisfying cap stitching, preferably using PR #34's 1024-state triple-seam graph rather than the raw `4^258` word space.
+
+## Q-0026 — Couple the fixed room to the triple-seam graph
+
+Status: `IDEA / PRIMARY NEXT THEOREM`
+
+PR #34 represents every triple seam as a finite overlap test but retains a nonautonomous odd-radix carry. `T-0034` supplies a real fractional defect equal to the normalized connector word plus a tiny positive error.
+
+Construct a finite scale-transfer state containing both quantities, or prove that their required intervals never intersect.
+
+## Q-0027 — Bridge-compatible fresh-prime creation
+
+Status: `IDEA / PRIMARY`
+
+`T-0032` proves that an infinite path must introduce infinitely many fresh primes. Determine whether the cap-collar and triple-seam equations permit such fresh-prime mass.
+
+Two possible outcomes:
+
+1. prove bridge-compatible prime support is effectively finite, contradicting `T-0032`;
+2. construct an explicit fresh-prime recurrence that preserves every canonical seam.
+
+## Q-0028 — Product-formula obstruction for the adelic target
+
+Status: `IDEA / HIGH VALUE`
+
+Combine:
 
 \[
-S_m(w_m)=R_{m+1}(w_{m+1})
+0<
+\{C_\infty J_m\}
+-
+{X_m\over64T_m^{\rm head}}
+<
+{27\over8T_m^{\rm head}3^{7(2^m+1)}}
 \]
 
-rather than merely matching a logarithmic prefix. Candidate techniques:
+with a dyadic valuation or canonical-seam lower bound. Seek an S-arithmetic product-formula contradiction unless fresh prime height exceeds an explicit threshold.
 
-- exact meet-in-the-middle on stage offsets;
-- SAT/SMT over block recurrences;
-- antichain search on completion height;
-- type-word substitution with proof-carrying equality;
-- rare repair stages using larger collision alphabets.
+## Q-0029 — Quadratic generator versus one collar seam
 
-No finite-depth match may be promoted without an all-scale theorem.
+Status: `IDEA / CONSTRUCTIVE TEST`
+
+Test whether the ordinary quadratic generator
+
+\[
+V_{m+1}=V_m+2^{m+1}V_m^2
+\]
+
+or a finite affine transform of it can provide the fresh primes required by `T-0032` while satisfying one exact terminal/head collar equality. A failure theorem should identify the first incompatible residue or height.
+
+# Immediate work order
+
+1. Build the joint room/seam scale state of `Q-0026`.
+2. Derive a quantitative fresh-prime/product-formula dichotomy for `Q-0027`--`Q-0028`.
+3. Run the constructive generator test `Q-0029` with proof-producing exact arithmetic.
+4. Preserve exact marked-Collatz replay for every proposed macro-edge.
