@@ -31,6 +31,8 @@ dependency.
 - [`wave five`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-five.md)
 - [`wave six`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-six.md)
 - [`period-four quotient checkpoint`](../../reports/gpt56-synthesis-01/2026-07-22-29-period-four-quotient-checkpoint.md)
+- [`wave eight`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eight.md)
+- [`wave nine`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nine.md)
 
 ## Result map
 
@@ -123,6 +125,13 @@ dependency.
 | [`L-9881`](claims/L-9881-survivor-one-hot-jet-reachability.md) | PR #16 survivor compiler | One-hot survivor prefixes in one phase realize every finite terminal jet and terminal residue, forcing at least `64^m` residual states at horizon `m`. |
 | [`L-9882`](claims/L-9882-h-critical-budget-pressure.md) | PR #19 critical H chain | The discounted critical budget makes relative valuation errors absolutely summable; core capacity forces logarithmic surplus over the sharp deficit baseline at density-one prefixes. |
 | [`L-9883`](claims/L-9883-survivor-common-width-exposure.md) | PR #16 survivor selector | Every suffix becomes the unique minimum among all common-width descendants of a suitable one-hot prefix, giving a `2^m` live-head lower bound and an exact block-zero criterion for global promotion. |
+| [`L-9884`](claims/L-9884-pade-post-window-phase-dominance.md) | PR #20 periodic Pade lane | After every allocated root window closes, phase zero uniquely controls every tail coefficient and evaluated tail; an unchanged-height period-four repair needs more than `0.064346n` extra cancelled blocks. |
+| [`L-9885`](claims/L-9885-centered-renewal-block-digits.md) | PR #16 survivor/centered bridge | The terminal-jet block is literally the base-64 centered renewal string; block zero, unchanged ordinary survival, minimum plateaux, and one-hot promotion become one exact lifetime sieve. |
+| [`L-9886`](claims/L-9886-one-hot-predecessor-phase-obstruction.md) | PR #16 survivor selector | Every legal predecessor depth has an exact residue phase. Along exposures of any fixed suffix, lower block-zero lifetimes are unbounded, so no suffix-only promotion bound can work. |
+| [`L-9887`](claims/L-9887-cap-chain-two-cell-collar.md) | PR #33/PR #3 cap-chain bridge | Exact height gaps collapse every late hypothetical 256-transition cap stage to its first and last two cells plus one 252-cell arithmetic bridge. |
+| [`L-9888`](claims/L-9888-cap-stitch-hensel-isometry.md) | PR #33/PR #3 cap-chain bridge | The remaining two-cell mismatch is an exact Hensel block whose valuation survives Montgomery normalization; conditional on the hypothetical cap chain and its shared cusp-height bound, cusp equality has a `Theta(2^m)` low-bit certificate, while the unrestricted inverse has exponential state cost. |
+| [`L-9889`](claims/L-9889-h-full-ghost-boundary.md) | PR #19 H ghost frontier | Classifies every closure boundary as a nonpositive finite-code rational, repairs the ordinary-minimum boundary audit, and restricts the termination-equivalent minimum to the nonzero section. |
+| [`L-9890`](claims/L-9890-h-dual-renewal-bridge.md) | PR #19 H renewal frontier | Consecutive nonzero letters share one integer with exact dual `2`/`3` valuations; an integral renewal height obeys a strict nonperiodic sign law, convergent normalization, and subcritical post-Yu gaps. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -144,10 +153,13 @@ independently reconstructed and which conjectural boundaries remain open.
    compiler and an actual witness showing that an unrefined two-head bucket
    summary is not closed. `L-9881` proves that every finite jet is reached by
    genuine one-hot prefixes in one phase; `L-9883` exposes every suffix as a
-   unique common-width cylinder minimum. The remaining task is sharply
-   ordinary: prove the block-zero exclusion `L-9883/(13)` often enough to
-   promote these heads to the unrestricted global minimum/successor selector,
-   then control the intervening blocks for the successor.
+   unique common-width cylinder minimum. `L-9885` identifies its block-zero
+   competitors with centered zero-renewal lifetimes, and `L-9886` gives a
+   complete predecessor-phase obstruction: even for a fixed suffix those
+   lower lifetimes are unbounded across exposing depths. The next task is to
+   classify merger/predecessor obstructions outside `n=1 mod36`, decide
+   whether any remaining phase promotes globally, and then control positive
+   intervening blocks for the successor.
 2. For the collision lane, propagate the exact compatibility cylinder of
    `L-9852` through the residual grammar. A bulk address routes the physical
    tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
@@ -165,7 +177,11 @@ independently reconstructed and which conjectural boundaries remain open.
    prove the physical scale update is isometric on its full domain and
    determine whether the zipper conjugacy cancels this explicit section drift
    through the final `K-H` block; triangular finite lookup alone does not do
-   so.
+   so. Independently, `L-9887`--`L-9888` collapse every hypothetical PR #33
+   cap chain to a two-cell collar and show that its final Montgomery block is
+   an isometric code of the raw head/terminal mismatch. The cap-chain target
+   is now a scale-stable nonzero low bit of that explicit mismatch, together
+   with the separate 252-cell middle bridge.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
    `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
@@ -203,9 +219,14 @@ independently reconstructed and which conjectural boundaries remain open.
    combines these with the critical budget: relative valuation errors are
    absolutely summable and excess pressure is logarithmic at density-one
    prefixes, but unit deficits and near-linear distinct cores still fit the
-   exponential scale. The next arithmetic target is the exact low-residue
-   transition system for `d_n=1`, or a one-occurrence valuation bound strong
-   enough to close that remaining corridor.
+   exponential scale. `L-9889` repairs the full ghost-boundary classification
+   and gives a sharper termination-equivalent nonzero-section minimum.
+   `L-9890` then identifies every positive-survivor zero room with a high
+   `3`-adic entrance and couples consecutive nonzero letters through one
+   dual-valuation integer
+   `W_k`, with an exact integral sign law. The next arithmetic target is a
+   compatibility recurrence between successive `W_k`, or a one-occurrence
+   valuation bound strong enough to force too many strict renewal descents.
 4. For the Padé lane, classify genuinely composite residual multiplicity and
    bound noncyclotomic gcd degree. `L-9816` proves that automatic, reduced-prime,
    and distinct antisymmetric cancellation cannot reach exponent one;
@@ -222,10 +243,14 @@ independently reconstructed and which conjectural boundaries remain open.
    four-step operator, and `L-9880` finds the missing invariant in
    residual-shadow form. Its symbolic defect filtration settles
    `s=36,40,44,48`, so target residuals are now nonzero in the first twelve
-   actual layers. The next anchor window is degrees `105` through `110`,
-   coupled to a length-twenty periodic-weight filtration for `s=52`.
-   Extending the hierarchy to all `s=4t` and proving the transverse
-   residual-to-gcd transfer of `L-9839` remain independently open.
+   actual layers. `L-9884` separately closes post-window cross-phase
+   cancellation throughout the whole root-product family: equal allocation
+   is phase-zero dominated at every surviving block, and sublinear extra
+   cancellation cannot repair period four. A coupled repair must cancel at
+   least `0.064346n` extra blocks in the optimistic unchanged-height model,
+   lower height quadratically, or leave the root-product profile. The next
+   anchor window is degrees `105` through `110`, while the structural target
+   is an adjacent-order determinant meeting that explicit depth/height test.
 5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 6. Test binary-automatic invariant-component colorings. `L-9823` eliminates

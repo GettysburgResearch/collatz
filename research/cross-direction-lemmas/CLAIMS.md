@@ -91,5 +91,12 @@ repository review.
 | L-9881 | Lemma | One-hot survivors realize every finite terminal jet and force unbounded lift-compiler state | PROPOSED | L-9826, L-9853, L-9867, L-9877 |
 | L-9882 | Lemma | Critical H valuation errors are summable and excess deficit pressure is logarithmic | PROPOSED | PR19/T-9508, L-9878, L-9879 |
 | L-9883 | Lemma | Every survivor suffix is a unique live cylinder minimum at suitable one-hot depths | PROPOSED | L-9826, L-9847, L-9877, L-9881 |
+| L-9884 | Lemma | Completed root-product Pade tails are phase-zero dominated and period four needs linear extra cancellation | PROPOSED | PR20/L-9408, L-9410, L-9411; PR20/T-9416 for context |
+| L-9885 | Lemma | Centered renewal digits are exactly the unchanged survivor block digits | PROPOSED | PR16/L-9313, L-9314; L-9877, L-9883 |
+| L-9886 | Lemma | Legal predecessor phases force unbounded lower renewal lifetimes along one-hot exposing depths | PROPOSED | L-9826, L-9834, L-9883, L-9885 |
+| L-9887 | Lemma | Every late 256-stage cap chain collapses to a two-cell boundary collar | PROPOSED | PR33/L-9702, T-9703, T-9704; PR3/T-0027 |
+| L-9888 | Lemma | The two-cell cap-stitch mismatch is an isometric Hensel block | PROPOSED | L-9876, L-9887; PR33/L-9702, T-9704 |
+| L-9889 | Lemma | Every nongenuine H ghost is a nonpositive finite-code boundary | PROPOSED | PR19/L-9514, L-9516, T-9510 |
+| L-9890 | Lemma | Consecutive nonzero H renewals share one dual-valuation core and an integral capital law | PROPOSED | PR19/D-9501, L-9516, T-9502, T-9505; T-9509 for post-Yu consequences |
 
 No `K-####` candidate is proposed.
