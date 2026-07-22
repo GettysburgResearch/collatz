@@ -1,36 +1,32 @@
 # Negative and cautionary results
 
-Last updated: 2026-07-21
+Last updated: 2026-07-22
 
-## N-0001 — A periodic parity string may define only a 2-adic rational
+## N-0001 — A periodic parity word may define only a 2-adic rational
 
-The periodic shortcut word \((100)^\omega\) reconstructs the 2-adic rational
-\(1/5\), not a positive-integer counterexample.
+The periodic word `(100)^omega` reconstructs the 2-adic rational `1/5`, not a positive-integer counterexample.
 
 **Consequence:** an infinite rewrite loop needs a proved finite canonical start.
 
 ## N-0002 — Arbitrarily long finite admissibility is not infinite closure
 
-Parameterized stack amplifiers give arbitrarily long finite trajectories without
-selecting one fixed member that survives forever.
+Parameterized amplifiers and connector families realize every finite depth without selecting one fixed ordinary survivor.
 
-**Consequence:** a uniform all-height regeneration theorem is required.
+**Consequence:** require a uniform all-height theorem.
 
-## N-0003 — Local expansion can be lost during boundary repair
+## N-0003 — Local expansion may be lost during repair
 
-An expanding local gadget may become subcritical after its complete repair
-cycle.
+A locally supercritical gadget can become subcritical after its complete boundary repair.
 
-**Consequence:** audit the multiplier of every full grammar cycle.
+**Consequence:** audit the full regeneration cycle.
 
-## N-0004 — Nontrivial ordinary induced orbits cannot have eventually periodic digits
+## N-0004 — Eventually periodic induced digits cannot describe a nontrivial ordinary orbit
 
-`T-0003` excludes eventually periodic least-digit itineraries for nontrivial
-ordinary induced orbits.
+`T-0003` excludes eventually periodic least-digit itineraries for nontrivial ordinary induced orbits.
 
-**Consequence:** fixed-period travelling stacks do not solve closure.
+**Consequence:** fixed travelling stacks are insufficient.
 
-## N-0005 — Boundary growth uses \(N/M\), not \(N\)
+## N-0005 — Boundary growth uses `N/M`, not `N`
 
 For a stationary induced orbit,
 
@@ -40,206 +36,165 @@ A_t=C(N/M)^t+O(1).
 
 **Consequence:** the finite boundary moves slowly and aperiodically.
 
-## N-0006 — Consecutive width understates the alphabet
+## N-0006 — Consecutive width understates the collision alphabet
 
-Sparse collision fibers and inverse-signature codes are much richer than
-consecutive runs.
+Sparse fibers and inverse-signature codes are much richer than intervals.
 
-**Consequence:** search full fibers and codes, not intervals alone.
+**Consequence:** search complete fibers and codes.
 
-## N-0007 — Unbounded branch count is not finite closure
+## N-0007 — Unbounded branch count is not closure
 
-`T-0005` gives exponentially large supercritical fibers without an infinite
-ordinary orbit.
+`T-0005` gives exponentially large supercritical fibers without one infinite ordinary orbit.
 
-**Consequence:** record size is not a proxy for a counterexample.
+**Consequence:** record size is not a distance-to-solution metric.
 
-## N-0008 — A common odd tail is a drift resource, not a repair parameter
+## N-0008 — A common odd tail supplies drift, not free repair
 
-A CRT odd tail changes the multiplier while preserving branch offsets.
+A CRT tail changes the multiplier while preserving the branching core.
 
-**Consequence:** it does not freely fix lifting or boundary closure.
+**Consequence:** it does not automatically repair the moving boundary.
 
 ## N-0009 — Preserving fixed geometry is not growing geometry
 
-`T-0006` preserves any fixed finite alphabet geometry under amplification, but
-the useful scale remains fixed.
+`T-0006` preserves any fixed local alphabet geometry while the useful scale remains fixed.
 
-**Consequence:** an unbounded boundary needs unbounded or scale-independent
-structure.
+**Consequence:** an unbounded boundary needs unbounded structure.
 
-## N-0010 — A finite complete one-target all-supercritical renewal code is impossible
+## N-0010 — Finite complete one-target all-supercritical renewal is impossible
 
-A finite cylinder cover of every sufficiently large quotient is clopen and must
-include the target boundary point. Its return is the all-even contracting edge.
+A finite dyadic-cylinder cover of all large quotients must contain the target boundary point, whose return is all-even and contracting.
 
-**Consequence:** use an incomplete survivor, multiple targets, or compensated
-contracting edges.
+**Consequence:** use an exceptional survivor, several targets, or compensated contraction.
 
-## N-0011 — Long common drift tails can destroy normalized control width
+## N-0011 — Long common tails destroy normalized real control
 
-The exact aspect ratio after a common odd tail of length \(k\) is
+The common-tail aspect ratio can decay exponentially.
 
-\[
-\Delta_k=
-\frac{W/2^L}{2^k(\lambda_k-1)}.
-\]
-
-**Consequence:** symbolic branching and real rounding freedom may move in
-opposite directions.
+**Consequence:** branching and real rounding freedom are distinct resources.
 
 ## N-0012 — Rich symbolic geometry may have a microscopic real window
 
-The 339-branch chart has much smaller normalized aspect ratio than the original
-two-branch chart.
+Large alphabets can have extremely small normalized aspect ratio.
 
-**Consequence:** branch count, modular correction, and real control width are
-separate resources.
+**Consequence:** branch count, modular coverage, and real width must be co-designed.
 
-## N-0013 — Positive local edges do not replace a graph-cycle audit
+## N-0013 — Positive edges do not replace a graph-cycle audit
 
-A graph may contain contracting edges. What matters is every reachable cycle
-and a phase-potential certificate.
+A graph may contain contracting repairs.
 
-**Consequence:** audit the full selected graph.
+**Consequence:** certify every reachable cycle and a phase potential.
 
-## N-0014 — Complete renewal coverage has negative typical logarithmic growth
+## N-0014 — Complete renewal coverage has negative typical logarithmic drift
 
-`T-0016` gives mean multiplier one but negative mean log multiplier under fair
-complete renewal coverage.
+`T-0016` gives mean multiplier one but negative mean log multiplier under fair complete coverage.
 
-**Consequence:** a divergent language must be an entropy-thin exception.
+**Consequence:** a divergent language must be entropy-thin.
 
-## N-0015 — Cycle padding buys expansion with exponentially narrow cylinders
+## N-0015 — Cycle padding buys expansion with narrow cylinders
 
-Padding gives
+Padding raises real slope while exponentially increasing dyadic specificity.
 
-\[
-\lambda_t=\lambda_0\Lambda^t
-\]
+**Consequence:** the required valuation must be regenerated exactly.
 
-while fair cylinder mass decays exponentially in \(t\).
+## N-0016 — A one-mismatch atlas is not closed
 
-**Consequence:** the padding valuation must be regenerated exactly.
+Failure of the recovery congruence creates another mismatch before the intended target.
 
-## N-0016 — A one-mismatch complement atlas is not a closed automaton
+**Consequence:** use a complete multi-mismatch or counter system.
 
-Failure of the recovery congruence causes another mismatch before the selected
-target.
+## N-0017 — A finite complete recurrent phase graph collapses to phase one
 
-**Consequence:** build the full multi-mismatch or counter system.
+The fair rounded phase is absorbed at `1` almost surely.
 
-## N-0017 — A finite complete recurrent phase graph collapses to phase 1
+**Consequence:** nontrivial recurrence is incomplete, exceptional, or infinite-state.
 
-The rounded phase is a fair nonnegative martingale absorbed at \(1\). A finite
-complete exact phase graph has no recurrent class above phase \(1\).
+## N-0018 — Positive phase escape is not an ordinary boundary
 
-**Consequence:** nontrivial phase recurrence is incomplete, exceptional, or
-infinite-state.
-
-## N-0018 — Positive escape pressure is not an ordinary boundary
-
-The phase-survival Doob transform has positive symbolic growth but naturally
-describes parity paths and completion points.
+The Doob transform favors expanding completion paths.
 
 **Consequence:** one finite ordinary marker must be certified separately.
 
-## N-0019 — Finite-phase regular marked grammars are not a new existential class
+## N-0019 — Finite regular marked grammars are not a new class
 
-`L-0015` proves that regular finite interval and population languages have
-regular ordinary marker projections.
+`T-0020` compiles finite phases, regular domains, and fixed blocks to one regular sanctuary.
 
-`T-0020` proves that finitely many regular phase domains with fixed finite
-Collatz blocks normalize to one regular one-step sanctuary:
+**Consequence:** do not duplicate PR #12 under interval, particle, or phase decoration.
 
-\[
-K=
-\bigcup_e\bigcup_{0\le k<b_e}T^k(D_e).
-\]
+## N-0020 — Graph-directed attractors are completion objects
 
-This includes regular marked interval grammars, regular marked-particle
-grammars, finite carry-phase covers, and finite negative-target graphs whenever
-marker extraction is rational.
+A compact graph-directed attractor may contain no ordinary integer.
 
-**Consequence:** do not duplicate PR #12 under new decoration. A genuinely new
-marked-spine route needs an unbounded counter/stack, variable block lengths, a
-nonregular survivor, or non-rational marker coupling.
+**Consequence:** retain exact cylinder selection and a finite marker.
 
-## N-0020 — Graph-directed attractor existence is not ordinary realization
+## N-0021 — Fixed-period and bounded-tail tower control fail
 
-Standard graph-directed contraction theory constructs a compact completion
-object from compatible addresses.
+`L-0018` shows that inverse-prefix periods grow with precision. `T-0021` excludes finite high-tail libraries with finitely many affine counter updates.
 
-**Consequence:** an attractor may contain no ordinary positive integer and does
-not replace exact dyadic selection, a finite marker, or deterministic Collatz
-replay.
+**Consequence:** the high tail must carry genuinely unbounded information.
 
-## N-0021 — Finite connector existence is universal and therefore weak evidence
+## N-0022 — The 128-step lane is only a one-connector precursor
 
-`L-0017` proves that every phase-aligned finite sequence of padded tower edges
-has a nonempty ordinary dyadic cylinder of exact realizations. Pairwise connector
-search cannot fail: odd powers of three are invertible modulo every power of two.
+Its immediate high tail expands, but the true residual must pay the next two connector depths and eventually contracts.
 
-**Consequence:** arbitrarily deep finite schedules do not distinguish a genuine
-infinite ordinary stack from a compatible 2-adic address.
+**Consequence:** use the corrected 256-step local lane or the adaptive 512-cell router.
 
-## N-0022 — Fixed periodic counter control cannot supply growing connector prefixes
+## N-0023 — Bit-length surplus is not low-bit routing
 
-`L-0018` uses
+`T-0024` proves a large full-stage information surplus.
+
+**Consequence:** surplus does not imply membership in the next canonical cylinder.
+
+## N-0024 — A generated connector word is not a physical residual
+
+Newton, Montgomery, the counter isometry, and the quadratic bulk generate every required control word from finite data.
+
+**Consequence:** computing a residue does not prove the marked Collatz state occupies it.
+
+## N-0025 — The free corrected-stage quotient cannot grow forever
+
+`T-0031` proves that every valid ordinary stage transition satisfies
 
 \[
-\operatorname{ord}_{2^K}(3^a)=2^{K-2}
+0\le Y_{m+1}<\frac{Y_m+3}{512}.
 \]
 
-for odd \(a\). The period of the required inverse-power prefix grows with the
-requested binary precision.
+Every positive integer quotient strictly decreases and eventually reaches zero.
 
-**Consequence:** a fixed periodic residue table in the padding counter cannot
-control the tower at all heights.
+**Consequence:** the former self-feeding positive-quotient candidate architecture is impossible. The ordinary path must eventually ride the canonical corrections themselves.
 
-## N-0023 — A bounded high-tail library with affine counter updates cannot diverge
+## N-0026 — Supercriticality does not prevent completion-height collapse
 
-`T-0021` shows that finitely many fixed ordinary high tails together with
-finitely many affine rules \(t'=ct+d\) can satisfy the exact connector equations
-at only finitely many heights. After freezing periodic finite cores, an infinite
-family would give a nondegenerate power-sum equation, contradicting the imported
-Skolem–Mahler–Lech corollary.
+The raw corrected stage is supercritical, yet the next cylinder modulus exceeds the current odd multiplier by more than a factor of 512 in the quotient coordinate.
 
-**Consequence:** the high tail itself must be an unbounded data stack; the unary
-padding counter alone is not enough.
+**Consequence:** distinguish the expanding physical stage map from the contracting quotient above its canonical correction.
 
-## N-0024 — The 128-step lane is a one-connector precursor, not residual closure
+## N-0027 — Ordinary stage realization requires an exponentially shrinking cusp
 
-The immediate connector tail has slope \(3^{G_n}/2^{K_{n+1}}\), but the residual
-available after parsing the following connector is
+After quotient extinction,
 
 \[
-z_{n+1}=
-\frac{3^{G_n}z_n+\theta_n-\eta_{n+1}}{2^{K_{n+2}}}.
+R_{m+1}=S_m<3\,3^{A_m},
 \]
 
-The true residual slope is therefore \(3^{G_n}/2^{K_{n+2}}\). The 128-step
-schedule eventually loses residual capacity after this second cylinder cost;
-`T-0023` and `L-0024` replace it with the corrected 256-step stage.
-
-**Consequence:** budget calculations must pay every future cylinder consumed by
-the claimed regenerated state, not only the next visible connector.
-
-## N-0025 — Positive stage surplus is not yet an arithmetic routing theorem
-
-`T-0024` proves that a corrected 256-transition stage has more than \(3\cdot2^m\)
-residual bits of rigorous surplus after paying the complete next-stage precision
-increase. `L-0023` also gives the exact quadratic bulk update
+while the next modulus is `2^(D_(m+1))`. Hence
 
 \[
-u_{m+1}=u_m+2^{m+1}u_m^2.
+\frac{R_{m+1}}{2^{D_{m+1}}}
+<2^{-\Xi_m}
 \]
 
-But a positive bit budget does not force the residual to have the exact next
-binary prefix. Nested Hensel prefixes naturally define a 2-adic limit unless the
-new bits are generated forward from one finite ordinary stack.
+with `Xi_m` linear in `2^m`.
 
-**Consequence:** the remaining theorem is exact routing, not more growth:
-construct a finite stage substitution that converts surplus into the required
-frontier, quadratic-bulk, and residual-cylinder bits while transporting the
-ordinary marker.
+**Consequence:** any viable directive must generate enormous high-zero completion height at every late scale.
+
+## N-0028 — Finite-state feedback cannot hide the tail
+
+Issue #21 proves that finite-state strictly causal feedback becomes open-loop on an integral finite-support tail.
+
+**Consequence:** feedback is not a shortcut around the ordinary-boundary problem; genuinely unbounded memory remains necessary.
+
+## N-0029 — Direct dyadic tower exclusion does not automatically exclude composed stages
+
+PR #33 excludes all direct `t -> 2t` tower directives by contraction and a finite trap. The corrected 256-stage composite is a different map.
+
+**Consequence:** import the residue-block method, not the direct theorem's conclusion. `T-0031` supplies the first supercritical-stage transfer but leaves exact zero-cap stitching open.
