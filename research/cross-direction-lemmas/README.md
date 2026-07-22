@@ -1,0 +1,227 @@
+# Cross-direction arithmetic lemmas
+
+**Agent:** `gpt56-synthesis-01`  
+**Issue:** [#29](https://github.com/gfreund123/collatz/issues/29)  
+**Branch:** `agent/gpt56-synthesis-01/29-cross-direction-lemmas`  
+**Namespace:** provisional `98xx`  
+**Status:** active proof packet; no counterexample claimed
+
+## Purpose
+
+Several active programs reach the same arithmetic boundary in different
+notation:
+
+- finite directives select nested congruence cylinders;
+- the cylinders determine a unique completion point;
+- low digits can be propagated by exact Hensel laws;
+- but a Collatz counterexample needs one ordinary positive integer, not only a
+  compatible completion point.
+
+This packet collects small, self-contained lemmas that can be reused across
+those programs. It does not import another branch's confidence as a proof.
+Every branch-qualified source claim is reconstructed or explicitly left as a
+dependency.
+
+## Wave reports
+
+- [`initial forge`](../../reports/gpt56-synthesis-01/2026-07-21-29-cross-direction-lemma-forge.md)
+- [`wave two`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-two.md)
+- [`wave three`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-three.md)
+- [`wave four`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-four.md)
+- [`wave five`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-five.md)
+- [`wave six`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-six.md)
+
+## Result map
+
+| Result | Lane | What it contributes |
+|---|---|---|
+| [`L-9801`](claims/L-9801-nested-cylinder-stabilization.md) | all completion/cylinder programs | An inverse-limit point is an ordinary nonnegative integer exactly when its canonical representatives eventually stabilize. |
+| [`L-9802`](claims/L-9802-dyadic-logarithmic-bulk.md) | PR #3 collision/Hensel stack | Exact quadratic lift recurrence, exact odometer valuations, and the normalized 2-adic logarithmic limit for every odd base. |
+| [`L-9803`](claims/L-9803-completion-height-wedge.md) | PR #16 and PR #20 | One elementary product-formula wedge explains the reciprocal slopes in zero-carry and repetition rigidity. |
+| [`L-9804`](claims/L-9804-active-cylinder-digit-recurrence.md) | PR #20 active tower | Exact forward mixed-radix digit and terminal-state recurrence, including automatic positive-cone propagation. |
+| [`L-9805`](claims/L-9805-zero-tail-escape.md) | PR #20 active tower | Eventual zero digits force a deterministic valuation orbit and terminal height `2^(Theta(K^2))`; any polynomial-height bound would rule them out. |
+| [`R-9801`](claims/R-9801-finite-crt-orthogonality.md) | PR #16/PR #20 bridge | Finite sparse reciprocal carries cannot force an itinerary repeat of logarithmic length, even with one positive primitive integer; a global stabilization hypothesis is essential. |
+| [`L-9806`](claims/L-9806-simultaneous-cylinder-recurrence.md) | PR #16/PR #20 diagonal | Exact base-`5184` cylinder digits. For a stabilized positive integer the reciprocal tail is nonzero and 4-periodic, so the combined CRT digit—not the reciprocal digit—is the correct target. |
+| [`L-9807`](claims/L-9807-h-first-crossing-reduction.md) | PR #19 H frontier | Reduces the unresolved first expanding-to-contracting crossing to one sharp carry inequality. It does not claim the inequality. |
+| [`R-9802`](claims/R-9802-h-carry-rectangle-insufficiency.md) | PR #19 H frontier | Exact abstract countermodel proving that canonical ranges and carry rectangles alone cannot establish the missing H sign. |
+| [`L-9808`](claims/L-9808-finite-geometric-bulk-compiler.md) | PR #3 collision/Hensel stack | Compiles every finite inverse-bulk prefix as an explicit geometric polynomial in the positive ordinary bulk, with exact error valuation and minimal depth. |
+| [`L-9809`](claims/L-9809-transcendental-bulk-complexity.md) | PR #3 collision/Hensel stack | Mahler's theorem makes the completed logarithmic bulk transcendental; its binary word is nonperiodic and has factor complexity at least `n+1`. |
+| [`L-9810`](claims/L-9810-transcendental-counter-address.md) | PR #3 padding counters | An algebraic exponential counter isometry cannot assign a rational 2-adic address to that target; the finite address prefixes are nonperiodic. |
+| [`L-9811`](claims/L-9811-isometric-compiler-transport.md) | PR #3 padding counters | Transports finite bulk compilers through counter isometries without precision loss and proves an exact one-bit-per-scale odometer law. |
+| [`L-9812`](claims/L-9812-minimum-root-renewal.md) | PR #16 survivor roots | Characterizes plateaus and renewals of the minimum finite survivor by one endpoint residue and one base-`5184` extension digit. |
+| [`L-9813`](claims/L-9813-h-offset-barrier-families.md) | PR #19 H frontier | Uses exact ordered offsets to certify strict displacement for positive-density infinite families of genuine first crossings. |
+| [`L-9814`](claims/L-9814-h-fixed-suffix-compiler.md) | PR #19 H frontier | Two fixed suffixes, and no single suffix, optimally compile every multiplier phase into a strict first crossing with a uniform margin. |
+| [`R-9803`](claims/R-9803-h-finite-return-obstruction.md) | PR #19 H frontier | Proves that post-crossing renormalization retains an unbounded 2-adic tail; phase-only or bounded-carry closure cannot iterate the suffix compiler. |
+| [`L-9815`](claims/L-9815-cylinder-successor-gap.md) | PR #16 survivor roots | Defines the exact next surviving cylinder and gives its plateau/renewal law; an internal exact replay extends the minimum root through depth 48. |
+| [`L-9816`](claims/L-9816-pade-cyclotomic-gcd.md) | PR #20 Padé lane | Finds exact diagonal and growing cyclotomic common factors, then proves that the full automatic factor sector still falls short of the period-four threshold. |
+| [`L-9817`](claims/L-9817-padding-transition-log-compiler.md) | PR #3 padding counters | Gives an exactly valued finite logarithmic compiler for one padding-address scale transition in every physical chart. |
+| [`L-9818`](claims/L-9818-synchronizing-successor-gap.md) | PR #12/PR #16 bridge | A bounded synchronizing padded-cylinder router would force exponential successor gaps; regular sanctuary acceptors do not by themselves provide such a router. |
+| [`L-9819`](claims/L-9819-two-orbit-successor-rigidity.md) | PR #16 survivor roots | Quantifies how aligned blocks or small Hamming distance between two directive words force exponentially large ordinary separation. |
+| [`L-9820`](claims/L-9820-padding-address-quotient-bit.md) | PR #3 padding counters | Recovers the previously missing scale-boundary address bit as one explicit ordinary quotient parity, with no inverse-permutation oracle. |
+| [`R-9804`](claims/R-9804-inverse-cylinder-zero-reset-obstruction.md) | PR #12/PR #16 bridge | Constructs the exact base-64 digit/carry transduction, proves its reachable carry set has size `2^n`, and rules out any global zero-reset exact router. |
+| [`L-9822`](claims/L-9822-h-compiler-phase-rotation.md) | PR #19 H frontier | Removing the common terminal zero reveals an exact irrational phase rotation with Sturmian branch coding; the actual completed suffix remains contracting. |
+| [`L-9823`](claims/L-9823-invariant-component-natural-boundary.md) | PR #6 invariant components | Every eventually periodic finite component coloring is constant; every nonconstant integer coloring has a natural-boundary generating series. |
+| [`L-9824`](claims/L-9824-h-phase-fiber-drift.md) | PR #19 H frontier | The renormalized H affine skew product has exact positive fiber drift, preserved fiber differences, and pointwise zero Lyapunov exponent. |
+| [`L-9825`](claims/L-9825-central-ternary-kernel-reduction.md) | PR #6 invariant components | Binary automaticity makes the central ternary-dilate spine finite, while an exact translated-state table isolates why Cobham still cannot be applied. |
+| [`L-9826`](claims/L-9826-survivor-cantor-full-shift.md) | PR #16 survivor coding | The infinite survivor set is an exact dimension-`1/6` 2-adic full shift; nontrivial ordinary points are divergent and cannot have eventually periodic directives. |
+| [`L-9827`](claims/L-9827-h-tail-full-shift.md) | PR #19 H frontier | Each completed compiler suffix is an exact 128- or 8192-to-1 dyadic tail shift and expands within-cylinder 2-adic distances. |
+| [`L-9828`](claims/L-9828-pade-prime-power-residual-support.md) | PR #20 Padé lane | Even one exceptional copy at every eligible reduced prime-power order has only `O_G(D^(3/2))` total degree; the dyadic residual budget is globally below the deficit, conditional only at the full-gcd transfer step. |
+| [`L-9829`](claims/L-9829-sturmian-tail-information-rate.md) | PR #19 H frontier | Along every forced Sturmian phase orbit, the composed tail shift consumes `kappa_* n+O(1)` bits with an exact universal discrepancy below six. |
+| [`L-9830`](claims/L-9830-successor-borrow-signed-carry.md) | PR #16 survivor pairs | Once ordinary addition borrow settles, the exact successor carry difference is a signed chart iterate; future directive agreement is precisely its base-64 valuation. |
+| [`L-9831`](claims/L-9831-physical-tail-tuple-uniqueness.md) | PR #19 H frontier | A single mixed-radix congruence selects exactly one physical carry tuple from the exponentially branching abstract H tail tree at every finite depth. |
+| [`L-9832`](claims/L-9832-pade-prime-power-small-remainder.md) | PR #20 Padé lane | For odd reduced `p^k` with remainder `s<p`, a residual zero occurs exactly by complement antisymmetry, and its cyclotomic factor is simple. |
+| [`L-9833`](claims/L-9833-h-nested-seed-nonordinary.md) | PR #19 H frontier | Every infinite nested `10/30` suffix schedule has a nonordinary 2-adic seed: eventual input stabilization would force an impossible infinite descent of positive endpoints. |
+| [`L-9834`](claims/L-9834-signed-difference-full-shift.md) | PR #16 survivor pairs | Survivor-cylinder differences form an exact ternary full shift: there are `3^n` differences, additive energy is `6^n`, and every valuation stratum is explicit. |
+| [`L-9835`](claims/L-9835-sturmian-zero-carry-gap.md) | PR #19 H frontier | Every zero-interface run is logarithmic in its starting endpoint; the physical Sturmian carry stream has at least logarithmically many nonzero blocks, but positive density remains open. |
+| [`L-9836`](claims/L-9836-fixed-width-translated-ternary-cone.md) | PR #6 invariant components | Every fixed-width translated cone above the central ternary spine has one uniformly finite binary automaton; only unbounded coheight can obstruct Cobham. |
+| [`L-9837`](claims/L-9837-h-reset-cylinder-sieve.md) | PR #19 H frontier | A future all-zero H cylinder is reachable after a nonzero reset exactly when its internal dyadic carry matches the finite reset quotient; long cylinders are cofinally excluded. |
+| [`L-9838`](claims/L-9838-primitive-ternary-horizontal-cycle.md) | PR #6 invariant components | Every fixed-valuation ternary offset stratum is one exact horizontal binary-kernel cycle, reducing full-kernel testing to one offset-one representative per width. |
+| [`L-9839`](claims/L-9839-pade-dyadic-residual-envelope.md) | PR #20 Padé lane | Forced lower dyadic factors halve every actual power-of-two residual budget and give the sharp envelope `D^2/27`; an exact even-macro jet isolates the remaining sheared-derivative/moment transfer obstruction. |
+| [`L-9840`](claims/L-9840-finite-suffix-zero-descent-no-go.md) | PR #19 H frontier | Any finite H suffix family with `U_z>=V_z` and `A_z>Y_z` for every suffix has no ordinary nonnegative nested seed; the complementary quotient table gives the necessary design escape. |
+| [`L-9841`](claims/L-9841-completed-zero-return-rotation.md) | PR #19 H frontier | The completed suffixes `{30,60,70}` form a closed raw multiplier-return architecture whose two-step phase map is an irrational rotation and whose return suffixes reverse endpoint descent. |
+| [`L-9842`](claims/L-9842-escape-decoration-refinement.md) | PR #6 invariant components | Horizontal escape decorations lie in one finite 2/3-automatic alphabet and obey an exact width-refinement incidence recurrence, isolating their ordered lift. |
+| [`L-9843`](claims/L-9843-raw-return-fiber-drift.md) | PR #19 H frontier | The `{30,60,70}` raw return has an exactly positive additive fiber cocycle, explicit every-orbit mean drift, preserved fiber differences, and zero Lyapunov exponent. |
+| [`L-9844`](claims/L-9844-escape-order-three-state-transducer.md) | PR #6 invariant components | The ordered escape lift is an explicit affine `F_3` permutation generated by a three-state transducer driven by the staying word; unbounded pointed-cycle identity remains open. |
+| [`L-9845`](claims/L-9845-raw-return-2adic-invariant-fiber.md) | PR #19 H frontier | The raw return has one inverse-contracting 2-adic endpoint graph of exact valuation nine; branches decode modulo `2^32`, the full-shift fiber is strongly separated, and its Sturmian slice has Hausdorff dimension zero. |
+| [`L-9846`](claims/L-9846-ordinary-raw-return-signature.md) | PR #19 H frontier | Any ordinary point on that graph must form an integral valuation-nine macro orbit with explicit linear real growth and an aperiodic Sturmian modulo-`2^32` residue stream. |
+| [`L-9847`](claims/L-9847-successor-translation-isolation.md) | PR #11/#14 successor geometry | Every realization of one signed survivor difference is an exact common-translation fiber; a successor representative must avoid two sharp open circular intervals, and repeated equal successor arcs obey an exact packing bound. |
+| [`L-9848`](claims/L-9848-pade-dyadic-augmentation-descent.md) | PR #20 Padé lane | An exact characteristic-two doubling descent and augmentation accounting reduce dyadic target zeros to one slack; complete group-ring identities exclude the actual remainder layers `s=4,8`. |
+| [`L-9849`](claims/L-9849-finite-core-width-rigidity.md) | PR #6 invariant components | Every horizontal root cycle is either absorbed by one finite binary core or is disjoint from it and intrinsically tagged by its width; ternary-kernel finiteness is exactly eventual absorption. |
+| [`L-9850`](claims/L-9850-ordinary-raw-return-packing-obstruction.md) | PR #19 H frontier | Recursive residue decoding and exact drift force more distinct small positive endpoints than the integers can hold, proving that the raw-return invariant graph has no ordinary point. |
+| [`L-9851`](claims/L-9851-unique-ergodic-integer-packing.md) | Cross-direction abstraction | Over a compact uniquely ergodic base, normalized integer growth and endpoint multiplicity `M` force the sharp packing inequality `m^(-1) integral R^(-1)dnu<=M`. |
+| [`L-9852`](claims/L-9852-residual-bulk-padding-xor.md) | PR #3 collision/padding | A bulk-routed padding prefix is physical exactly on one residual congruence cylinder; its next physical bit is the bulk quotient bit XOR one irreducible residual-defect bit. |
+| [`L-9853`](claims/L-9853-zero-run-translation-gap-obstruction.md) | PR #11/#14 successor geometry | Exact width lifts and the full `81`-twist group construct zero-run translation fibers whose pointed gap is exponentially larger than average, refuting uniform gap contraction from multiplicity alone. |
+| [`L-9854`](claims/L-9854-sparse-residue-linear-packing.md) | Cross-direction arithmetic | A bounded-multiplicity integer sequence of upper slope `C` occupying `r` classes modulo `q` must satisfy `MrC>=q`; exact valuation nine gives a large-margin alternative exclusion of the raw H graph. |
+| [`L-9855`](claims/L-9855-phase-residue-ergodic-packing.md) | Cross-direction abstraction | A finite phase-to-residue decoder refines unique-ergodic packing one arithmetic progression at a time; each decoded fiber obeys its own sharp capacity inequality. |
+| [`L-9856`](claims/L-9856-pade-dyadic-four-residue-transition.md) | PR #20 Padé lane | A universal Boolean four-channel Hasse transition proves exact augmentation orders `20,32` and excludes all dyadic targets at actual remainders `s=12,16`. |
+| [`L-9857`](claims/L-9857-finite-ordinary-absorption-separator.md) | PR #6 invariant components | Every fixed-width horizontal root has an explicit finite Moore presentation and ordinary-input separator from the finite core; the horizon grows as `2^(Theta(3^k))`. |
+| [`L-9858`](claims/L-9858-residual-address-correction-isometry.md) | PR #3 collision/padding | The entire finite residual-to-address correction is a pointed 2-adic isometry: at precision `Q` it permutes all `Q`-bit words, and a sole residual-dependent channel must carry exactly `Q` bits. |
+| [`L-9859`](claims/L-9859-pade-dyadic-minimal-residue-state.md) | PR #20 Padé lane | Residue-sum channels close through height `H` exactly when `4*2^(nu_2(M))>H`; sixteen channels are minimal at height `38`, where the exact order `38` excludes every target at `s=20`. |
+| [`L-9860`](claims/L-9860-hall-set-valued-residue-packing.md) | Cross-direction abstraction | A partial set-valued phase decoder obeys every sharp Hall no-outlet cut, extending phase-residue packing without pretending that an allowed set is a selected residue. |
+| [`L-9861`](claims/L-9861-pade-dyadic-paired-channel-layers.md) | PR #20 Padé lane | An exact eight-pair twisted realization gives augmentation orders `46,52` and excludes every dyadic target at `s=24,28`; the raw even/odd summary is proved nonclosed. |
+| [`L-9862`](claims/L-9862-pade-dyadic-first-state-refinement.md) | PR #20 Padé lane | Height `72` forces the first residue-state refinement to thirty-two channels; a universal certificate gives order `72`, slack eight, and excludes all targets at `s=32`. |
+| [`L-9863`](claims/L-9863-triangular-normal-form-2adic-isometries.md) | Collision/2-adic structure | Every 2-adic isometry has a unique LSF-triangular Boolean form; finite reductions are rooted-tree automorphisms with exact wreath-product and extension counts. |
+| [`L-9864`](claims/L-9864-pade-dyadic-four-step-block.md) | PR #20 Padé lane | Four q-Pascal steps form an exact five-branch filtered operator; its scalar product congruence is sharp modulo `X^8`, isolating the missing endpoint invariant. |
+| [`L-9865`](claims/L-9865-survivor-bucket-order-statistics.md) | PR #16 survivor selector | One width lift is an exact 64-bucket stable merge; at most four source-head candidates per bucket determine the live nontrivial minimum and successor. |
+| [`L-9866`](claims/L-9866-fractional-hall-residue-allocation.md) | Cross-direction abstraction | Hall no-outlet cuts exactly characterize finite fractional residue allocation; the maximum overload is the unroutable mass, and tight cuts form an impermeable lattice. |
+| [`L-9867`](claims/L-9867-finite-section-isometry-transducers.md) | Collision/automata bridge | A 2-adic isometry has a finite synchronous LSF Mealy realization exactly when its rooted-tree section set is finite; the number of sections is the minimal state count. |
+
+The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
+[`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
+independently reconstructed and which conjectural boundaries remain open.
+
+## Highest-leverage next moves
+
+1. For the survivor lane, control cancellation in the exact signed carry
+   numerator for the minimum and successor. `R-9804` rules out a global zero
+   reset, while `L-9830` identifies the pair-specific common-output length
+   exactly with the base-64 valuation of one settled signed-chart iterate;
+   `L-9834` closes the ambient pair geometry as a ternary full shift. `L-9847`
+   resolves each difference multiplicity as a literal translation fiber and
+   gives the exact two-sided isolation test and repeated-arc packing bound for
+   successor representatives. `L-9853` then refutes any uniform pointed-gap
+   contraction based only on a long zero run: legitimate `81` twists create
+   exponentially exceptional points. `L-9865` now supplies the missing live
+   selector for one width lift: each new bucket is a stable merge of two old
+   source lists, with at most four head candidates. The remaining task is to
+   propagate all source heads across widths by a bounded signed-carry state;
+   ambient multiplicity and the two unpartitioned old minima are insufficient.
+2. For the collision lane, propagate the exact compatibility cylinder of
+   `L-9852` through the residual grammar. A bulk address routes the physical
+   tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
+   bit is the bulk quotient parity XOR the residual defect
+   `qbit_H(h-V)`. `L-9858` upgrades this one-bit law: the full correction at
+   every precision is a pointed 2-adic isometry and hence a permutation of all
+   residual words. A sole residual-dependent channel therefore needs exactly
+   one bit per corrected bit. `L-9863` proves that every isometric conjugate
+   is automatically LSF-triangular, while `L-9867` proves that bounded state
+   is equivalent to finiteness of its rooted-tree sections. The remaining
+   task is therefore to prove the physical scale update is isometric on its
+   full domain and close its section family through the final `K-H` block;
+   triangular finite lookup alone does not do so.
+3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
+   solve the real phase and exact tail shifts of the `10/30` compiler;
+   `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
+   proves that path has no ordinary nonnegative seed. `L-9835` nevertheless
+   quantifies its carry stream: zero-block gaps are logarithmic in endpoint
+   size and nonzero blocks occur at least logarithmically often. `L-9837`
+   gives the exact reset-to-future-cylinder congruence and finite-range sieve;
+   the remaining issue is a correlation theorem between its two carry
+   streams. `L-9840` generalizes the nonordinary-seed obstruction to every
+   finite suffix family whose zero-interface maps robustly descend, and gives
+   the exact quotient regimes a replacement architecture must reach. Any
+   successful return must violate that criterion recurrently. `L-9841`
+   supplies the first such finite raw architecture: `{30,60,70}` alternates
+   genuine multiplier crossings and avoids uniform descent at every return.
+   `L-9843` solves its real affine skew product: normalized fiber drift is
+   uniformly positive, with no bounded graph or cycle and no contraction.
+   `L-9845` solves the inverse 2-adic fiber exactly: it selects a unique
+   valuation-nine graph, recursively decodes its branch address, and makes
+   the Sturmian slice zero-dimensional. `L-9846` records the full necessary
+   signature of an ordinary intersection: exact linear growth, valuation nine,
+   and the prescribed Sturmian pair of low residues. `L-9850` combines that
+   drift with decoder-forced distinctness: triangular phase equidistribution
+   predicts strictly more than one endpoint per available small integer, so
+   the invariant graph has no ordinary point. This closes `{30,60,70}`
+   negatively. `L-9851` abstracts the mechanism: any new return with endpoint
+   multiplicity at most `M` must satisfy
+   `m^(-1) integral R^(-1)dnu<=M`. `L-9854` supplies a cheaper first screen
+   from linear growth and sparse residues, while `L-9855` resolves ergodic
+   capacity by decoder phase. `L-9860` extends the screen to partial
+   set-valued decoders through exact Hall no-outlet cuts. `L-9866` proves
+   those cuts are exactly sufficient for fractional transportation and
+   identifies the tight-cut lattice. The next task is to derive partial
+   low-residue data for a candidate architecture and locate the first
+   deterministic, temporal, or cross-modulus obstruction beyond that sharp
+   fractional relaxation.
+4. For the Padé lane, classify genuinely composite residual multiplicity and
+   bound noncyclotomic gcd degree. `L-9816` proves that automatic, reduced-prime,
+   and distinct antisymmetric cancellation cannot reach exponent one;
+   `L-9828` also removes squarefree reduced prime-power support as a
+   quadratic-density rescue, while `L-9832` solves the `p>s` prime-power
+   sector exactly and leaves only `p<=s` for odd prime powers. `L-9839` bounds
+   the full dyadic residual budget below the deficit conditional on one
+   explicit transverse-jet transfer inequality. `L-9848` supplies an exact
+   augmentation descent, and `L-9856` extends its universal Boolean
+   certificates through `s=16`. `L-9859` proves the exact residue-state closure
+   criterion and settles `s=20`; `L-9861` supplies the twisted paired state and
+   settles `s=24,28`. `L-9862` crosses the first refinement boundary and
+   settles `s=32`, so every target residual is nonzero in the first eight
+   actual layers `s=4,8,12,16,20,24,28,32`. `L-9864` then replaces another
+   finite table with an exact four-step operator whose branch filtration and
+   sharp order-eight scalar congruence isolate one endpoint-twist invariant.
+   Extending the slack bound to all `s=4t` remains conjectural, and the
+   transverse residual-to-gcd transfer of `L-9839` remains independently open
+   wherever a residual zero survives.
+5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
+   context. By `L-9805`, that would exclude eventual cylinder stabilization.
+6. Test binary-automatic invariant-component colorings. `L-9823` eliminates
+   every finite congruence, Presburger, unary-regular, rational, algebraic, and
+   D-finite description. `L-9825` makes the central ternary spine finite, and
+   `L-9836` closes every fixed-width translated cone. `L-9838` puts every
+   absolute primitive state directly in the original binary kernel and turns
+   each positive-valuation stratum into one exact horizontal cycle with exits
+   into that fixed kernel. The last test is a one-parameter cumulative family
+   of nontrivial central-base cycles over unbounded coheight. `L-9842` makes
+   every exit decoration eventually periodic and gives a fixed substitution
+   matrix for their counts. `L-9844` resolves the lost cyclic-order
+   permutation as a three-state transduction of the staying word. `L-9849`
+   resolves root equality: outside one finite section-closed core, the staying
+   word makes width intrinsic. `L-9857` turns absorption at every supplied
+   fixed width into a finite Moore-equivalence test with an explicit ordinary
+   separator. The live issue is uniformity: its horizon grows with width, and
+   any nonconstant coloring must have infinitely many unabsorbed widths.
+
+## Integration boundary
+
+This is an isolated packet. It does not edit the competing root ledgers on
+other branches and does not promote any branch-qualified claim. Source labels
+are written as `PR3/L-0023`, `PR20/T-9409`, and so on.
+
+## Counterexample boundary
+
+Neither nested cylinders nor an append-only Hensel prefix construct an
+ordinary infinite trajectory. `L-9801` makes the missing condition explicit:
+canonical representatives must eventually stabilize. None of the results in
+this packet proves a nontrivial infinite Collatz orbit, and no `K-####`
+candidate is proposed.

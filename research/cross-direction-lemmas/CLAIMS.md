@@ -1,0 +1,79 @@
+# Claim ledger
+
+All theorem-level claims in this packet are `PROPOSED` pending independent
+repository review.
+
+| ID | Type | Title | Status | Dependencies |
+|---|---|---|---|---|
+| L-9801 | Lemma | Canonical nested cylinders realize an ordinary nonnegative integer exactly by eventual stabilization | PROPOSED | none |
+| L-9802 | Lemma | Dyadic inverse powers form an exact quadratic lift with a normalized logarithmic limit | PROPOSED | standard 2-adic LTE and logarithm facts, proved or stated explicitly in the claim |
+| L-9803 | Lemma | One product-formula wedge controls zero-carry runs and repeated survivor blocks | PROPOSED | none |
+| L-9804 | Lemma | Exact forward mixed-radix digits for the active `64 -> 81` tower cylinders | PROPOSED | active-stack edge identity, restated in the claim |
+| L-9805 | Lemma | An eventually zero active-cylinder tail obeys a deterministic valuation map and escapes at quadratic logarithmic rate | PROPOSED | L-9804 |
+| R-9801 | Refutation | Finite reciprocal-carry sparsity cannot force logarithmically long itinerary repetition | PROPOSED | chart recurrence and reciprocal lift, restated in the claim |
+| L-9806 | Lemma | The simultaneous itinerary/reciprocal cylinder has exact base-`5184` digits and a periodic late reciprocal tail | PROPOSED | L-9801; chart and reciprocal recurrences restated in the claim |
+| L-9807 | Lemma | A first expanding-to-contracting H crossing is one sharp carry inequality | PROPOSED | exact H concatenation identities, restated in the claim |
+| R-9802 | Refutation | Canonical H endpoint ranges and interface carries do not imply the first-crossing sign | PROPOSED | none |
+| L-9808 | Lemma | Every inverse-power bulk prefix is an explicit finite polynomial in its positive ordinary dual | PROPOSED | L-9802; odd-base LTE |
+| L-9809 | Lemma | The odd-base Hensel bulk limit is transcendental and has nonperiodic binary digits | PROPOSED | L-9802; Mahler's 2-adic Hermite--Lindemann theorem |
+| L-9810 | Lemma | An exponential 2-adic counter cannot preload a transcendental target at a rational address | PROPOSED | L-9809; PR3/T-0028 for the physical charts |
+| L-9811 | Lemma | Counter isometries transport finite compilers and the exact scale odometer | PROPOSED | L-9802, L-9808; PR3/T-0028 for specialization |
+| L-9812 | Lemma | The minimum survivor renews exactly at one legal endpoint residue | PROPOSED | PR16/T-9313; L-9806 for the simultaneous digit |
+| L-9813 | Lemma | Exact offsets certify strict displacement for infinite first-crossing H families | PROPOSED | exact H block/cylinder formulas; L-9807 for context |
+| L-9814 | Lemma | Two fixed H suffixes optimally compile every multiplier phase into a strict first crossing | PROPOSED | L-9813 |
+| R-9803 | Refutation | Every post-crossing H return retains an unbounded 2-adic tail coordinate | PROPOSED | L-9814; exact H concatenation |
+| L-9815 | Lemma | Survivor-cylinder successor gaps obey an exact plateau and renewal law | PROPOSED | L-9812; finite cylinder formula restated in the claim |
+| L-9816 | Lemma | Block Padé pairs have exact diagonal and growing cyclotomic common factors | PROPOSED | PR20/L-9410; finite q-Lucas and root-of-unity identities |
+| L-9817 | Lemma | Exponential counter charts give an exactly valued finite logarithmic transition compiler | PROPOSED | L-9808, L-9811; PR3/T-0028 |
+| L-9818 | Lemma | A synchronizing padded-cylinder router forces exponential successor gaps | PROPOSED | exact chart recurrence; L-9815 for successor notation; PR12 automata audit |
+| L-9819 | Lemma | Aligned directive agreement forces exponential separation of ordinary survivors | PROPOSED | L-9803; L-9815 for the successor application |
+| L-9820 | Lemma | The next padding-address bit is one explicit dyadic quotient parity | PROPOSED | L-9808, L-9811, L-9817; PR3/T-0028 |
+| R-9804 | Refutation | The exact inverse cylinder carry grows and zero padding cannot reset it | PROPOSED | chart recurrence restated in the claim |
+| L-9822 | Lemma | The adaptive H compiler reveals an irrational phase rotation only after reversing its terminal contraction | PROPOSED | L-9814; R-9803 for the full-state caveat |
+| L-9823 | Lemma | Every nonconstant finite-valued component coloring has a natural-boundary generating series | PROPOSED | Pólya--Carlson for the analytic conclusion; periodic rigidity is elementary |
+| L-9824 | Lemma | The H compiler skew product preserves fiber differences and has unavoidable positive drift | PROPOSED | L-9814, L-9822; R-9803 for the exact-tail caveat |
+| L-9825 | Lemma | Automatic component colorings have finitely many central ternary dilates | PROPOSED | L-9823; Eilenberg kernel criterion and Cobham theorem |
+| L-9826 | Lemma | The infinite survivor set is a dimension-`1/6` full shift with no nontrivial eventually periodic ordinary point | PROPOSED | chart/coding algebra proved in the claim |
+| L-9827 | Lemma | Each H compiler suffix consumes a fixed low tail block and expands the surviving 2-adic tail | PROPOSED | exact H concatenation; L-9814, L-9822, R-9803 |
+| L-9828 | Lemma | Reduced prime-power Padé residual obstructions have subquadratic squarefree support | PROPOSED | L-9816, L-9832, L-9839; elementary cyclotomic identities and Legendre valuations |
+| L-9829 | Lemma | Forced H compiler itineraries consume tail bits at a uniform Sturmian information rate | PROPOSED | L-9822, L-9827 |
+| L-9830 | Lemma | Settled successor carries are exact signed-chart iterates | PROPOSED | R-9804; L-9815, L-9819 |
+| L-9831 | Lemma | One mixed-radix congruence selects the unique physical H-tail tuple | PROPOSED | exact H concatenation; L-9827, L-9829 |
+| L-9832 | Lemma | Odd prime-power Padé residuals are exactly antisymmetric and simple when `p>s` | PROPOSED | L-9816; exact diagonal coefficients and complement pairing |
+| L-9833 | Lemma | Infinite nested `10/30` H suffix schedules have no ordinary nonnegative seed | PROPOSED | exact H concatenation; L-9801, L-9827, L-9831 |
+| L-9834 | Lemma | Survivor-cylinder differences form a ternary full shift with additive energy `6^n` | PROPOSED | R-9804; L-9815 and L-9830 for successor interpretation |
+| L-9835 | Lemma | Sturmian H zero-interface runs are logarithmic in their starting endpoint | PROPOSED | exact H concatenation; L-9822, L-9829, L-9833 |
+| L-9836 | Lemma | Every fixed-width translated ternary cone has a uniformly finite binary kernel | PROPOSED | L-9825; finite binary-kernel criterion |
+| L-9837 | Lemma | Future zero-carry H cylinders obey an exact reset-residue sieve | PROPOSED | exact H concatenation; L-9829, L-9835 |
+| L-9838 | Lemma | Primitive ternary offsets form exact horizontal binary-kernel cycles | PROPOSED | L-9825, L-9836; elementary 3-adic LTE |
+| L-9839 | Lemma | Lower dyadic factors halve the period-four residual multiplicity budget | PROPOSED | L-9816; exact even diagonal coefficient and denominator macro factors |
+| L-9840 | Lemma | Uniformly zero-descending finite H suffix families have no ordinary nested seed | PROPOSED | exact H concatenation; L-9801 |
+| L-9841 | Lemma | Completed suffixes `{30,60,70}` form a raw irrational-rotation return architecture | PROPOSED | exact H affine-word algebra; L-9840 for design context |
+| L-9842 | Lemma | Escape decorations form a finite ternary-closed alphabet with exact width refinement | PROPOSED | L-9825, L-9838; Eilenberg and Cobham |
+| L-9843 | Lemma | The raw H return has positive normalized-fiber drift and zero Lyapunov exponent | PROPOSED | L-9841; irrational-rotation equidistribution |
+| L-9844 | Lemma | The escape-order lift is an affine permutation generated by a three-state transducer | PROPOSED | L-9838, L-9842 |
+| L-9845 | Lemma | Raw H returns select a unique separated 2-adic invariant endpoint fiber | PROPOSED | exact H concatenation; L-9801, L-9841 |
+| L-9846 | Lemma | Any ordinary raw-return graph point has linear growth and Sturmian low residues | PROPOSED | L-9841, L-9843, L-9845 |
+| L-9847 | Lemma | Signed survivor representations form translation fibers with exact successor isolation | PROPOSED | L-9815, L-9834; L-9830 for carry interpretation |
+| L-9848 | Lemma | Dyadic Padé residual zeros reduce to one augmentation slack, with `s=4,8` excluded | PROPOSED | L-9816, L-9839; finite characteristic-two group-ring audit |
+| L-9849 | Lemma | Horizontal root cycles are absorbed by a finite core or intrinsically width-rigid | PROPOSED | L-9823, L-9836, L-9838, L-9842, L-9844; Eilenberg and Cobham |
+| L-9850 | Lemma | The raw-return invariant graph has no ordinary integer by density packing | PROPOSED | L-9841, L-9843, L-9845, L-9846 |
+| L-9851 | Lemma | Unique-ergodic normalized growth obeys a sharp integer-multiplicity packing criterion | PROPOSED | uniform unique ergodicity; L-9850 as application |
+| L-9852 | Lemma | One residual quotient bit exactly couples the bulk address to a physical padding lift | PROPOSED | L-9820; PR3/L-0022, L-0029, T-0026, T-0028, T-0030 |
+| L-9853 | Lemma | Zero-run translation fibers admit persistent exponentially exceptional pointed gaps | PROPOSED | L-9834, L-9847; elementary 2-adic LTE |
+| L-9854 | Lemma | Sparse residue support forces a sharp linear-growth slope lower bound | PROPOSED | elementary counting; L-9841, L-9843, L-9845 for the raw H application |
+| L-9855 | Lemma | Unique-ergodic integer packing resolves into sharp phase-residue capacities | PROPOSED | L-9851; L-9845, L-9850 for the raw H comparison |
+| L-9856 | Lemma | A four-residue Hasse transition settles dyadic Padé remainders twelve and sixteen | PROPOSED | L-9816, L-9839, L-9848; universal Boolean-ring q-Pascal transition |
+| L-9857 | Lemma | Fixed-width horizontal absorption has an explicit finite ordinary separator | PROPOSED | L-9838, L-9842, L-9844, L-9849 |
+| L-9858 | Lemma | Every finite physical padding correction is an isometric permutation of the residual quotient | PROPOSED | L-9820, L-9852; PR3/T-0026, PR3/T-0028 |
+| L-9859 | Lemma | Sixteen residue channels are minimal at the fifth dyadic Padé layer | PROPOSED | L-9816, L-9839, L-9848, L-9856 |
+| L-9860 | Lemma | Set-valued phase decoders obey sharp Hall-type residue-capacity inequalities | PROPOSED | L-9851, L-9855 |
+| L-9861 | Lemma | Paired sixteen-channel certificates settle dyadic remainders twenty-four and twenty-eight | PROPOSED | L-9816, L-9839, L-9848, L-9856, L-9859 |
+| L-9862 | Lemma | The first thirty-two-channel refinement settles dyadic remainder thirty-two | PROPOSED | L-9816, L-9839, L-9848, L-9856, L-9859, L-9861 |
+| L-9863 | Lemma | Every 2-adic isometry has a unique LSF-triangular rooted-tree normal form | PROPOSED | L-9820, L-9852, L-9858 |
+| L-9864 | Lemma | Four q-Pascal steps give a filtered twisted-pair operator with exact branch gains | PROPOSED | L-9848, L-9856, L-9859, L-9861, L-9862 |
+| L-9865 | Lemma | One survivor width lift reduces the live minimum and successor to bucket-local candidates | PROPOSED | L-9812, L-9815, L-9834, L-9847, L-9853 |
+| L-9866 | Lemma | Hall no-outlet cuts exactly characterize finite fractional residue allocation | PROPOSED | L-9860 |
+| L-9867 | Lemma | Finite rooted-tree sections exactly characterize bounded-state LSF isometries | PROPOSED | L-9863; L-9858 for the collision-chart application |
+
+No `K-####` candidate is proposed.
