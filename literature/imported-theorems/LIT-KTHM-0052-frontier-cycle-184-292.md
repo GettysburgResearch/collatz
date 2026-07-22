@@ -1,238 +1,257 @@
-# LIT-KTHM-0052 — The complete alternating `(k,A)=(184,292)` first-frontier family is empty
+# LIT-KTHM-0052 — No positive accelerated Collatz cycle has odd length `184`
 
-**Type:** exact native arithmetic theorem with a complete finite decoder and replay artifact.  
-**Maps to:** issue #9, issue #41, `SYN/L-9904`, and the first parameter range not excluded by the published local-minimum bound.
+**Type:** exact native arithmetic theorem with a finite decoder, stability proof, and replay artifact.  
+**Maps to:** issue #9, issue #41, `SYN/L-9904`, and the first accelerated length capable of escaping the published `91`-local-minimum exclusion.  
+**External input:** Hercher's theorem that a nontrivial positive Collatz cycle has at least `92` local minima.
 
-## 1. Why `k=184` is the first possible accelerated length
+## 1. Why length `184` is the first local-minimum frontier
 
-For a positive odd state `x>1`, one accelerated step with valuation `a=v_2(3x+1)` satisfies
+Let
 
 ```text
-a=1   -> (3x+1)/2 > x,
-a>=2  -> (3x+1)/2^a < x.                                (1)
+S(x)=(3x+1)/2^a,
+a=v_2(3x+1),
 ```
 
-Along a cyclic sequence, local minima and local maxima alternate. Hence an accelerated word of length `k` has at most `floor(k/2)` local minima.
+be the odd accelerated Collatz map on a positive odd state `x>1`. Then
 
-Hercher's theorem excludes every nontrivial positive cycle with at most `91` local minima. Therefore
+```text
+a=1   -> S(x)>x,
+a>=2  -> S(x)<x.                                         (1)
+```
+
+Indeed, `(3x+1)/2>x`, while `(3x+1)/4<x` for `x>1`.
+
+Along a cyclic sequence, local minima and local maxima alternate. Hence an accelerated word of odd-state length `k` has at most `floor(k/2)` local minima. Hercher excludes every nontrivial positive cycle with at most `91` local minima, so
 
 ```text
 k>=184                                                   (2)
 ```
 
-is necessary before the accelerated length can accommodate the first unexcluded case of `92` local minima.
+is necessary before an accelerated word can even accommodate the first unexcluded count of `92` local minima.
 
-## 2. Frozen critical parameter
-
-Set
+At `k=184`, any hypothetical nontrivial cycle must therefore have **exactly** `92` local minima. Equality in the alternating-minima bound forces the ascent/descent pattern to alternate. After a cyclic rotation, its valuation word has the form
 
 ```text
-k=184,
-A=292.                                                   (3)
+w=(1,b_0,1,b_1,...,1,b_91),
+b_i>=2.                                                  (3)
+```
+
+Thus the family below contains every possible positive accelerated cycle of odd length `184`.
+
+## 2. Total valuation and excess mass
+
+Put
+
+```text
+A=sum_i(1+b_i),
+H=A-276,
+c_i=b_i-2.                                              (4)
 ```
 
 Then
 
 ```text
-A/k=73/46=1.586956521739...,
-A-k*log_2(3)=0.3668998673...,
-2^A/3^k=1.2895787421... .                                (4)
+c_i>=0,
+sum_i c_i=H.                                            (5)
 ```
 
-The positive cycle denominator is
+A positive cycle requires
 
 ```text
-D=2^292-3^184
- =1786806590841408495003648024979272939822889499163552544403296804949023827414857928941215.
-                                                                    (5)
+D_H=2^A-3^184>0.                                        (6)
 ```
 
-## 3. Complete prime factorization
-
-One has the exact squarefree factorization
+The exact comparison
 
 ```text
-D =
-5 * 11 * 13 * 17 * 83 * 89 * 179 * 1097 * 1301
-  * 2963 * 4547 * 5113 * 13457 * 28697 * 1626211
-  * 192491569 * 177790780231 * 314328249709
-  * 167385996821689.                                    (6)
+2^291<3^184<2^292                                       (7)
 ```
 
-Every displayed factor is prime, their product is `(5)`, and the largest has only `48` bits.
-
-## 4. The complete 92-local-minimum subfamily
-
-At length `184`, a word with `92` local minima must alternate ascent and descent. After cyclic rotation it has the form
+shows that `(6)` forces
 
 ```text
-w=(1,b_0,1,b_1,...,1,b_91),
-b_i>=2,
-sum_i b_i=200.                                          (7)
+A>=292,
+H>=16.                                                   (8)
 ```
 
-Its length is `184`, total valuation is `92+200=292`, and `(1)` proves that it has exactly `92` local minima.
-
-Put
-
-```text
-c_i=b_i-2>=0,
-sum_i c_i=16.                                           (8)
-```
-
-The family contains
-
-```text
-binom(107,16)=4335886749297756310                       (9)
-```
-
-ordered block words before cyclic and primitive normalization.
-
-## 5. Two-step block recurrence
+## 3. Ninety-two two-step blocks
 
 The pair of accelerated valuations `(1,2+c_i)` acts by
 
 ```text
 boxed:
-2^[3+c_i] x_(i+1)=9x_i+5.                               (10)
+2^[3+c_i]x_(i+1)=9x_i+5.                                (9)
 ```
 
 Let
 
 ```text
-E_0=0,
-E_j=sum_(i<j)(3+c_i)=3j+sum_(i<j)c_i.                   (11)
+u_j=sum_(i<j)c_i,
+E_j=3j+u_j,
+0<=j<=92.                                               (10)
 ```
 
-Composing all `92` blocks gives
+Composing the `92` blocks gives
 
 ```text
-2^292 x_92=9^92 x_0+C(c),                               (12)
+2^[276+H]x_92=9^92x_0+5S_H(c),                          (11)
 ```
 
 where
 
 ```text
-C(c)=5S(c),
-S(c)=sum_(j=0)^91 9^(91-j)2^(E_j).                      (13)
+S_H(c)=sum_(j=0)^91 9^(91-j)2^(E_j).                    (12)
 ```
 
-A cycle in this family requires
+Since `9^92=3^184`, a cycle requires
 
 ```text
-D divides C(c).                                         (14)
+D_H divides 5S_H(c),
+D_H=2^[276+H]-9^92.                                     (13)
 ```
 
-It is enough to prove that `(14)` never occurs; no admissibility converse is needed for the exclusion.
+Only this necessary divisibility condition is used below. No converse or intermediate-valuation assumption is needed for the exclusion.
 
-## 6. Sixteen-jump telescoping reduction
+## 4. Telescoping to `H` ordered unit jumps
 
-Put
+Define
 
 ```text
-u_j=sum_(i<j)c_i,
 Q_j=9^(92-j)8^j,
-0<=j<=92.                                               (15)
+0<=j<=92.                                               (14)
 ```
 
-Since
+Then
 
 ```text
-Q_j-Q_(j+1)=9^(91-j)8^j,                                (16)
+Q_j-Q_(j+1)=9^(91-j)8^j.                                (15)
 ```
 
-summation by parts gives
+Using `u_0=0` and `u_92=H`, summation by parts gives
 
 ```text
-S(c)=J(c)-D,                                             (17)
+S_H(c)=J_H(c)-D_H,                                      (16)
 ```
 
-where, after setting `u_92=16`,
+where
 
 ```text
-J(c)=sum_(j=1)^92 (2^[u_j]-2^[u_(j-1)])Q_j.             (18)
+J_H(c)=sum_(j=1)^92 (2^[u_j]-2^[u_(j-1)])Q_j.           (17)
 ```
 
-Resolve every jump into unit increments. There are unique nondecreasing positions
+Resolve each jump `u_j-u_(j-1)=c_(j-1)` into unit increments. There are unique nondecreasing positions
 
 ```text
-1<=j_0<=j_1<=...<=j_15<=92                              (19)
+1<=j_0<=j_1<=...<=j_(H-1)<=92                           (18)
 ```
 
 such that
 
 ```text
 boxed:
-J(c)=sum_(r=0)^15 2^r Q_(j_r).                          (20)
+J_H(c)=sum_(r=0)^(H-1)2^rQ_(j_r).                       (19)
 ```
 
-Conversely every sequence `(19)` gives one weak composition `(8)`.
+Conversely, every sequence `(18)` determines one weak composition `(5)`.
 
-Because `D=5D'`, `(14)` and `(17)` are equivalent to
+Put
+
+```text
+g_H=gcd(D_H,5),
+D'_H=D_H/g_H.                                           (20)
+```
+
+Modulo `5`, one has
+
+```text
+D_H congruent to 2^H-1 mod5,                            (21)
+```
+
+because `8^92 congruent to 9^92 congruent to1 mod5`. Hence
+
+```text
+g_H=5  iff H congruent to0 mod4,
+g_H=1  otherwise.                                      (22)
+```
+
+Equations `(13)` and `(16)` imply
 
 ```text
 boxed:
-D' divides J(c),
-D'=(2^292-3^184)/5.                                     (21)
+D'_H divides J_H(c).                                    (23)
 ```
 
-Thus there is a positive integer `m` with
-
-```text
-sum_(r=0)^15 2^rQ_(j_r)=mD'.                            (22)
-```
-
-## 7. Exact finite multiplier interval
-
-The sequence `Q_j` is strictly decreasing. Hence
-
-```text
-(2^16-1)Q_92 <= J(c) <= (2^16-1)Q_1.                   (23)
-```
-
-Dividing by `D'` gives the exact integer range
+Therefore there is a positive integer multiplier `m` satisfying
 
 ```text
 boxed:
-23<=m<=1005828.                                         (24)
+sum_(r=0)^(H-1)2^rQ_(j_r)=mD'_H.                       (24)
 ```
 
-No multiplier outside `(24)` can satisfy `(22)`.
+## 5. Uniform finite multiplier bounds
 
-## 8. Every multiplier has at most one jump sequence
-
-### Decoder lemma
-
-Fix `m` in `(24)` and put
+The sequence `Q_j` is strictly decreasing. Therefore
 
 ```text
-R_0=mD'.                                                 (25)
+(2^H-1)Q_92<=J_H(c)<=(2^H-1)Q_1.                       (25)
 ```
 
-Suppose the first `r` jump terms have been removed, so
+For fixed `g in {1,5}`, the upper ratio
 
 ```text
-R_r=sum_(s=r)^15 2^sQ_(j_s).                            (26)
+g(2^H-1)Q_1/(2^H Q_92-Q_0)                             (26)
+```
+
+strictly decreases with `H`, because `Q_0>Q_92`.
+
+The first positive-denominator height in the `g=5` class is `H=16`; the first in the `g=1` class is `H=17`. Exact evaluation gives the universal bounds
+
+```text
+g_H=5 -> 1<=m<=1005828,
+g_H=1 -> 1<=m<=73778.                                   (27)
+```
+
+The sharper lower endpoints are used in the small exact scans, but are not needed for the uniform theorem.
+
+## 6. The valuation decoder
+
+Fix `H`, `m`, and suppose `(24)` holds. After removing the first `r` jump terms, put
+
+```text
+R_r=sum_(s=r)^(H-1)2^sQ_(j_s).                          (28)
 ```
 
 The `s`th term has exact binary valuation
 
 ```text
-v_2(2^sQ_(j_s))=s+3j_s.                                 (27)
+v_2(2^sQ_(j_s))=s+3j_s.                                 (29)
 ```
 
-Since the positions are nondecreasing, every term with `s>r` has valuation strictly larger than `r+3j_r`. Therefore the first remaining term is the unique term of least valuation and
+Since the positions are nondecreasing, every term with `s>r` has valuation strictly larger than `r+3j_r`. Hence the first remaining term is the unique term of least valuation and
 
 ```text
 boxed:
-j_r=(v_2(R_r)-r)/3.                                    (28)
+j_r=(v_2(R_r)-r)/3.                                    (30)
 ```
 
-The candidate position is valid only if the right side is an integer in `[1,92]`, is at least the previous position, and the term does not exceed `R_r`. Subtract it and repeat.
+Thus a fixed multiplier `m` has at most one candidate jump sequence. Starting with
 
-Thus `(28)` reconstructs the only possible sequence `(j_0,...,j_15)` from `m`. If the final remainder is nonzero, that multiplier is impossible. QED.
+```text
+R_0=mD'_H,                                               (31)
+```
 
-## 9. Complete exact scan
+the exact decoder repeatedly:
+
+1. computes `v_2(R_r)`;
+2. requires `(v_2(R_r)-r)/3` to be an integer in `[1,92]`;
+3. requires the positions to remain nondecreasing;
+4. subtracts `2^rQ_(j_r)`; and
+5. after `H` steps, requires zero remainder.
+
+Failure of any check proves that multiplier impossible.
+
+## 7. Direct scans at `H=16,...,20`
 
 The proof artifact
 
@@ -240,9 +259,98 @@ The proof artifact
 literature/experiments/LIT-X-0052-frontier-cycle/run.py
 ```
 
-performs the finite scan `(24)` using only Python's standard library. It also verifies the complete factorization `(6)` with deterministic Miller--Rabin tests valid below `2^64`.
+performs exact standard-library scans at the first five heights. It finds no solution:
 
-Replay:
+```text
+H  A    multiplier interval      eligible decodes  maximum depth  solutions
+16 292  23 ... 1,005,828              71,843            16          0
+17 293   2 ...    73,778               5,269            15          0
+18 294   2 ...    56,036               4,003            15          0
+19 295   2 ...    50,021               3,573            15          0
+20 296   6 ...   237,369              16,955            17          0
+```
+
+At `H=16`, the denominator factors completely and squarefreely as
+
+```text
+2^292-3^184 =
+5 * 11 * 13 * 17 * 83 * 89 * 179 * 1097 * 1301
+  * 2963 * 4547 * 5113 * 13457 * 28697 * 1626211
+  * 192491569 * 177790780231 * 314328249709
+  * 167385996821689.                                    (32)
+```
+
+Every displayed factor is prime, and the largest has `48` bits. The exact factorization is independently checked by deterministic Miller--Rabin tests valid below `2^64` and by multiplication.
+
+## 8. Stability for every larger height
+
+The remaining infinitely many values of `H` split into the two gcd classes in `(22)`.
+
+### 8.1 The `g_H=1` class
+
+Use the reference height
+
+```text
+H_*=501.                                                 (33)
+```
+
+The decoder scans every eligible `m<=73778`. All `5,269` eligible multipliers fail a valuation-modulo-`3` check after at most `15` decoded positions. Across the full reference scan, every inspected remainder has
+
+```text
+v_2(R_r)<=31.                                           (34)
+```
+
+For any other `H>=21` with `g_H=1`,
+
+```text
+D'_H-D'_(501)=(2^H-2^501)Q_92.                          (35)
+```
+
+Every multiplier surviving the initial decoder filter has `v_2(m)>=3`. Therefore
+
+```text
+v_2(m(D'_H-D'_(501)))
+ >=21+276+3
+ =300.                                                   (36)
+```
+
+As long as the same jump terms are subtracted, the two decoder remainders differ by a multiple of `2^300`. Since the reference valuation never exceeds `31`, both decoders have the same valuation, choose the same jump position, and preserve the same difference. Induction carries the reference failure to every such `H`.
+
+### 8.2 The `g_H=5` class
+
+Use the reference height
+
+```text
+H_*=500.                                                 (37)
+```
+
+The decoder scans every eligible `m<=1005828`. All `71,844` eligible multipliers fail a valuation-modulo-`3` check after at most `20` decoded positions. Every inspected remainder has
+
+```text
+v_2(R_r)<=42.                                           (38)
+```
+
+For any other `H>=24` divisible by `4`,
+
+```text
+D'_H-D'_(500)=(2^H-2^500)Q_92/5.                        (39)
+```
+
+Again `v_2(m)>=3`, so
+
+```text
+v_2(m(D'_H-D'_(500)))
+ >=24+276+3
+ =303.                                                   (40)
+```
+
+The same induction, now using `42<303`, transfers the reference failure to every height in this class.
+
+The direct scans at `H=16,...,20` and the two stability classes cover every `H>=16`.
+
+## 9. Exact replay
+
+Run
 
 ```bash
 python3 literature/experiments/LIT-X-0052-frontier-cycle/run.py \
@@ -250,52 +358,38 @@ python3 literature/experiments/LIT-X-0052-frontier-cycle/run.py \
   literature/experiments/LIT-X-0052-frontier-cycle/results/canonical.json
 ```
 
-The exact result is:
+The two stable-class transcript digests are
 
 ```text
-multipliers in the interval:             1,005,806
-surviving the initial v_2 filter:            71,843
-valuation-mod-3 failures:                   71,788
-term overshoots:                                51
-full 16-position decodes with remainder:         4
-solutions:                                        0
+g_H=1:
+e7b965827614c319335e925782b8533690e3ba3827ba6a47674e4de44edc9702
+
+g_H=5:
+b7ddde20ce910d6597d64bb3f7238a67ecab3f279f5583eef1ec5e2c9c8c687e.
 ```
 
-The transcript digest over all `71,843` decoded multipliers is
+The `H=16` transcript digest is
 
 ```text
-c8449fe7c2d15679df8bb4d68ecd376c68b2995ef033e87fd2063447f5cde58d.   (29)
+c8449fe7c2d15679df8bb4d68ecd376c68b2995ef033e87fd2063447f5cde58d.
 ```
 
-The four terminal decodes and their exact nonzero remainders are preserved in the canonical JSON.
+The canonical JSON records all five direct scans, both reference scans, the valuation margins, and the factorization check.
 
 ## 10. Theorem
 
 ```text
 boxed:
-There is no positive accelerated Collatz cycle with
-(k,A)=(184,292) whose valuation word has 92 local minima.             (30)
+There is no nontrivial positive accelerated Collatz cycle
+with odd-state length k=184.                             (41)
 ```
 
 ### Proof
 
-Every such word has the alternating form `(7)`. If it were a cycle, `(14)` would hold and therefore `(22)` would have a solution with `m` in `(24)`. The decoder lemma proves that the finite scan checks the unique possible jump sequence for every such `m`. The scan finds none. QED.
+A hypothetical length-`184` cycle has at least `92` local minima by Hercher and at most `92` by alternation. Hence it has the form `(3)`. Positivity of its cycle denominator forces `H>=16`. Its necessary divisibility condition gives `(24)`. The direct and stability decoder arguments exclude `(24)` for every `H>=16`. Contradiction. QED.
 
-## 11. What the failed family teaches
+## 11. Scope and literature boundary
 
-This was an unusually favorable packet:
+This theorem is an exact project-level cycle exclusion and a reusable decoder for alternating-minimum families. Stronger lower bounds for other cycle parameters may already imply larger global exclusions; no novelty claim is made here without a separate full literature comparison.
 
-```text
-minimal accelerated length compatible with 92 local minima;
-first local-minimum count beyond the published exclusion;
-near-critical total valuation;
-fully factored denominator with no factor above 48 bits;
-constant two-step multiplier 9 and toll 5;
-only sixteen excess valuation units.
-```
-
-Even this family is empty. The active cycle search should retain the sixteen-jump decoder as a general tool, but move to another total valuation, a longer accelerated word, or a nonminimal local-minimum count.
-
-## 12. Status boundary
-
-The theorem excludes one complete first-frontier family. It does not exclude other values of `A` at length `184`, longer cycles, divergent orbits, or the Collatz conjecture.
+The theorem does not exclude accelerated lengths `k>=185`, divergent orbits, or the Collatz conjecture.
