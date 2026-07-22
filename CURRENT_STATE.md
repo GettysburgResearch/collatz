@@ -5,15 +5,15 @@ Integrator status: provisional synthesis by `gpt56-pro-01`
 Active issue: `#2`  
 Active draft PR: `#3`
 
-## Project maturity
+## Status
 
-The active branch contains a long sequence of proposed exact finite theorems, standard-library experiments, and explicit obstruction records. No mathematical claim has yet received the repository's independent reconstruction status.
+There is currently **no positive-integer Collatz counterexample**, no regular sanctuary, and no closed infinite corrected-stage grammar in this branch.
 
-There is currently **no positive-integer Collatz counterexample**, no regular sanctuary, and no closed infinite tower grammar in the repository.
+All complete-looking mathematical claims remain `PROPOSED` pending independent reconstruction. Exact finite experiments are labeled `EMPIRICAL`; they are not substituted for proofs.
 
 ## Fixed map
 
-Throughout the packet,
+The shortcut map is
 
 \[
 T(n)=
@@ -23,82 +23,47 @@ n/2,&n\text{ even},\\[1mm]
 \end{cases}
 \]
 
-For a chronological parity word of length \(L\) and weight \(a\),
+The packet has developed equivalent exact descriptions using parity-affine cylinders, collision fibers, mixed-radix rewrites, negative return phases, finite intervals, marked particle spines, and cycle-padded negative towers.
 
-\[
-T^L(n)=\frac{3^an+B}{2^L}
-\]
+# Long-run research arc
 
-on one exact residue class modulo \(2^L\).
+## Collision and code resources
 
-# Research arc
+The branch contains proposed exact results giving:
 
-The packet has moved through five representations of the same ordinary-boundary problem.
+- consecutive and sparse supercritical collision fibers;
+- induced partial radix maps;
+- exact carry transducers and finite-horizon stack amplifiers;
+- inverse parity signatures and collision-code tensor laws;
+- exponentially unbounded mildly supercritical branch count;
+- complete offset projection modulo every `2^b`;
+- exact negative-shadow return systems;
+- graph-cycle growth and normalized real-window criteria.
 
-## 1. Collision fibers and mixed radices
+These results supply abundant finite expansion and finite correction freedom. They do not supply one ordinary infinite boundary.
 
-The early results provide:
+## Ordinary-marker semantics
 
-- exact parity-affine cylinders;
-- arbitrary finite collision fibers;
-- supercritical partial radix maps;
-- mixed binary/ternary carry rewrites;
-- finite-horizon stack amplifiers;
-- sparse fibers and inverse-signature collision codes;
-- exponentially unbounded supercritical branch count;
-- arbitrary finite 3-adic precision;
-- complete offset projection modulo every power of two.
+The packet also proves proposed exact finite lifts in which:
 
-These remove finite branching and local amplification as scarce resources. They do not produce one ordinary infinite orbit.
+- a positive Collatz value is the length of a finite integer interval;
+- the phase-survival martingale is realized by a finite ordered particle system;
+- one distinguished child has rank exactly equal to the shortcut Collatz image;
+- finite-phase regular marked grammars compile to the regular-sanctuary class of PR #12.
 
-## 2. Negative shadows and renewal graphs
+Therefore a genuinely new marked route needs an unbounded counter, stack, variable block length, or nonregular survivor.
 
-Every collision chart has an exact negative-template interpretation. A return edge has a signed quotient equation
+# Phase-34 negative-cycle tower
 
-\[
-Nq=Mq'+a.
-\]
-
-The branch developed:
-
-- exact negative return graphs;
-- cycle-mean expansion potentials;
-- normalized real-window bounds;
-- synchronous coupling to moving negative phases;
-- cycle-padded mismatch towers;
-- Collatz--Kraft and phase--Kraft identities;
-- a positive-drift phase-survival transform.
-
-Complete broad coverage is typically contracting and the phase martingale is absorbed at \(-1\). A successful language must be exceptional.
-
-## 3. Finite intervals and marked ordinary spines
-
-Every positive state is the length of a finite interval. A critical ordered-particle completion realizes the phase-survival measure, while one distinguished child has rank exactly \(T(n)\).
-
-This separates:
-
-- unmarked population growth;
-- one marked finite-root Collatz trajectory.
-
-A counterexample certificate must transport the marker explicitly.
-
-## 4. Regular-collapse boundary
-
-`L-0015` and `T-0020`, informed by PR #12 and PR #13, prove that finitely many regular phase languages with fixed finite blocks are existentially equivalent to one regular Collatz sanctuary.
-
-Thus a genuinely independent route needs unbounded memory, variable block lengths, or a nonregular survivor.
-
-## 5. Negative-cycle tower stack
-
-The phase-\(-34\) subsystem of the negative eleven-cycle supplies four self-return tower types. Every tower instance has universal exponents
+The four self-return tower types at phase `-34` have universal exponents
 
 \[
 K_t=11(t+1),
 \qquad
-G_t=7(t+1),
+G_t=7(t+1).
 \]
 
-and performs the exact finite replacement
+Each tower instance performs
 
 \[
 A_t+2^{K_t}h
@@ -106,12 +71,14 @@ A_t+2^{K_t}h
 B_t+3^{G_t}h
 \]
 
-for every ordinary high tail \(h\ge0\).
+for every ordinary finite high tail `h >= 0`.
 
-Every pair of tower instances has one canonical connector
+Every aligned pair has one canonical connector
 
 \[
-B+3^G\eta=\bar A+2^{\bar K}\theta,
+B+3^G\eta
+=
+\bar A+2^{\bar K}\theta,
 \]
 
 with
@@ -122,272 +89,309 @@ with
 0\le\theta<3^G.
 \]
 
-Consequently every finite tower schedule has infinitely many ordinary finite realizations. Finite compatibility is universal and is not evidence of infinite closure.
+Thus every finite tower schedule has infinitely many exact ordinary realizations. Finite compatibility is not the obstruction.
 
-# Connector-control machinery
+## Connector compiler and counter address
 
-The connector side is now almost entirely deterministic infrastructure.
+`L-0026`--`T-0030` establish:
 
-## Montgomery and Newton compilation
+- offset Montgomery precision lifting;
+- Newton generation of every finite inverse prefix with exact eleven-bit cycle slack;
+- a finite compiler for every seed, cap, frontier, and odometer word;
+- a 2-adic isometry between fine padding addresses and connector-prefix words;
+- a corrected adaptive 512-cell prefix router with robust two-connector growth;
+- a positive ordinary quadratic generator for the inverse-logarithm bulk.
 
-Every connector is an offset Montgomery reduction. `L-0026` gives exact finite precision lifting, while `L-0027` proves cycle-aligned Newton doubling.
+No left-infinite connector word is required as initial data.
 
-For the corrected dyadic stage, the first-target precision satisfies
+# Corrected-stage compression and quotient extinction
+
+A fixed corrected 256-transition stage compresses losslessly to
 
 \[
-Q_{m+1}=2Q_m-11.
+z^+
+=
+\frac{3^{A_m}z+C_m}{2^{D_m}},
 \]
 
-One finite Newton lift nearly doubles the precision and leaves exactly one eleven-bit negative-cycle block of slack.
-
-`T-0025` therefore computes every within-stage inverse prefix, connector seed, target cap, rational-frontier state, and odometer state from finite ordinary data. No infinite 2-adic word is input to the compiler.
-
-## Padding-counter isometry
-
-For one finite core class, `T-0028` proves that the padding address is isometric to the normalized connector-prefix space:
+where
 
 \[
-\nu_2\bigl(\Omega(s)-\Omega(s')\bigr)=\nu_2(s-s').
+A_m={5369\over2}2^m+1792,
+\qquad
+D_m={1085579\over256}2^m+2816.
 \]
 
-At every precision, the counter addresses permute all binary prefix words. One desired new connector bit is obtained by appending one counter-address bit.
-
-## Adaptive 512-cell chart
-
-`T-0029` partitions each scale annulus into 512 cells. Every cell routes every available logarithmic prefix, and arbitrary adaptive fine-prefix choices preserve a positive two-connector growth margin.
-
-The counter therefore carries the moving low prefix. It does not carry the much larger ordinary residual bulk.
-
-## Ordinary quadratic bulk generator
-
-The local connector bulk has a positive finite generator
+Let `R_m` and `S_m` be the canonical stage correction and cap. Every stage input and output have the forms
 
 \[
-V_m=\frac{3^{7\cdot2^m}-1}{2^{m+2}},
+z_m=R_m+2^{D_m}Y_m,
+\]
+
+\[
+z_m^+=S_m+3^{A_m}Y_m.
+\]
+
+`L-0030` proves the universal cap bound
+
+\[
+0\le S_m<3\,3^{A_m}.
+\]
+
+`T-0031` proves
+
+\[
+2^{D_{m+1}}>512\,3^{A_m},
+\]
+
+and hence every valid ordinary continuation satisfies
+
+\[
+0\le Y_{m+1}<\frac{Y_m+3}{512}.
+\]
+
+Therefore the free quotient reaches zero after finitely many stages. Every ordinary infinite realization must eventually obey the exact stitch equation
+
+\[
+\boxed{S_m(w_m)=R_{m+1}(w_{m+1}).}
+\]
+
+The raw physical stage remains supercritical, but the quotient above its canonical correction is a strict ranking function.
+
+# Cross-repository input used in the latest session
+
+The latest session read PR #13 `LITERATURE.md`, `LIVE_REPO_REVIEW_WAVE5.md`, and the newest `gpt56-pro-03` review comment. Their recommended checklist was:
+
+1. freeze one symbolic word or word pair;
+2. expose one fixed finite sum of powers of two and three;
+3. place every variable in a finite-rank multiplicative group;
+4. prove distinct scales give distinct solutions;
+5. audit every proper subsum;
+6. keep the ordinary-integer boundary explicit.
+
+The session also inspected PR #34's cap-chain results. That work conditionally collapses a late stage to two-cell collars and an 84-triple zero-seam cascade, then represents each triple seam by a 1024-state overlap test. Its remaining difficulty is a nonautonomous odd-radix carry.
+
+# Latest structural advances
+
+## `L-0031` — scaled ordinary-tail telescoping
+
+For stabilized tower types, put
+
+```text
+p = (5,30,20,56)
+b = (9,54,36,24).
+```
+
+If `h_j` is the ordinary high tail at one tower boundary, define
+
+\[
+W_j=p_{i_j}+64h_j.
+\]
+
+All seed, cap, and residual-offset terms telescope, giving the exact local equation
+
+\[
+\boxed{
+2^{11(t_{j+1}+1)}W_{j+1}
+=
+3^{7(t_j+1)}W_j+b_{i_j}.}
+\]
+
+Every toll is itself a `{2,3}`-unit:
+
+\[
+9=3^2,
+\quad54=2\cdot3^3,
+\quad36=2^2\cdot3^2,
+\quad24=2^3\cdot3.
+\]
+
+One corrected stage therefore satisfies
+
+\[
+\boxed{
+2^{\mathcal E_m}W_{m+1}
+=
+3^{\mathcal A_m}W_m
++
+\sum_{k=0}^{255}
+2^{U_{m,k}+\alpha_{i_k}}
+3^{V_{m,k}+\beta_{i_k}},}
 \]
 
 with
 
 \[
-V_{m+1}=V_m+2^{m+1}V_m^2.
-\]
-
-It is the ordinary dual of the 2-adic logarithmic bulk. This resolves bulk generation as finite arithmetic, but not physical stage-cylinder membership.
-
-# Corrected 256-stage compression
-
-For the fixed corrected stage,
-
-\[
-t_{m,j}=2^m+j2^{m-8},
-\qquad0\le j\le256.
-\]
-
-All 256 residual maps compress losslessly to
-
-\[
-z^+=\frac{3^{A_m}z+C_m}{2^{D_m}},
-\]
-
-where
-
-\[
-A_m=\frac{5369}{2}2^m+1792,
+\mathcal A_m={5369\over2}2^m+1792,
 \]
 
 \[
-D_m=\frac{1085579}{256}2^m+2816.
+\mathcal E_m={8459\over2}2^m+2816.
 \]
 
-The normalized exponent parts square exactly under \(m\mapsto m+1\).
+The stage is one positive 257-term multiplicative equation.
 
-Let \(R_m\) be the canonical stage correction and \(S_m\) its cap. Then
+## `T-0032` — fresh-prime necessity
+
+Assume all ordinary boundary words `W_m` used only finitely many primes. One of the finitely many 256-symbol source words would recur infinitely often. After normalization, every occurrence would solve the same equation
 
 \[
-z=R_m+2^{D_m}Y_m
+x_*+x_0+\cdots+x_{255}=1
 \]
 
-maps to
+inside one fixed finite-rank multiplicative group.
+
+All coordinates are positive, so proper-subsum degeneracy is impossible. The ratio of the first two toll coordinates distinguishes all scales. PR #13 `LIT-KTHM-0043`, the Evertse--Schlickewei--Schmidt theorem, then gives a contradiction.
+
+Therefore every infinite ordinary corrected-stage path must introduce infinitely many fresh prime factors. Fixed-prime-support monomial and finite-library multiplicative schemas are excluded.
+
+## `T-0033` — one fixed real room
+
+Define
 
 \[
-z^+=S_m+3^{A_m}Y_m.
-\]
-
-Before the latest session, the remaining uncontrolled channel was described as the ordinary quotient \(Y_m\).
-
-# Cross-repository survey
-
-The latest session inspected the adjacent active programs rather than continuing in isolation.
-
-## PR #33 — residue-cylinder dichotomy
-
-PR #33 supplies the exact new-block recurrence for nested dyadic cylinders and proves that ordinary completion is equivalent to eventual stabilization of the least representatives. It excludes all direct dyadic boundary tower directives by a finite-trap argument.
-
-Its stated open problem was the transfer of completion-height methods to PR #3's supercritical composed stage.
-
-## PR #16 — completion height and fixed rooms
-
-The adelic-cusp packet proves that long zero-carry runs are height-rigid and formulates ordinary realization as one coherent fixed-room path.
-
-## PR #19 and PR #20 — carry extinction and complexity
-
-The exact H subsystem and the 2-adic repetition packet both identify the ordinary section with eventual carry extinction. Periodic and low-complexity tails are heavily constrained.
-
-## Issue #21 — feedback collapse
-
-The diagonal foundry proves that finite-state feedback does not evade the ordinary-boundary problem. For an integral solution, finite digit support makes the tail open-loop. The surviving feedback frontier again requires unbounded memory.
-
-These programs agree on one principle:
-
-> an ordinary integer is not supplied by compatible completion prefixes; the newly demanded high carry blocks must eventually stop.
-
-# Latest theorem: the supercritical stage quotient still dies
-
-`L-0030` proves a universal cap bound for any canonical chain of residual connector tiles. If the complete odd multiplier is \(N\), then
-
-\[
-\boxed{0\le S<3N.}
-\]
-
-`T-0031` applies this to the corrected stage. With
-
-\[
-N_m=3^{A_m},
+a_m={5369\over2}2^m+1792m,
 \qquad
-Q_m=2^{D_m},
+e_m={8459\over2}2^m+2816m,
 \]
 
-one has the exact scale gap
-
 \[
-\boxed{Q_{m+1}>512N_m.}
+H_m={3^{a_m}\over2^{e_m}}.
 \]
 
-For any valid ordinary stage continuation
+For every assumed infinite ordinary stage path,
 
 \[
-S_m+N_mY_m
+C_m={W_m\over H_m}
+\]
+
+increases to one fixed real number `C_infinity`. Exact toll ordering gives
+
+\[
+0<C_\infty H_m-W_m
+<
+{216\over3^{7(2^m+1)}}<1.
+\]
+
+Hence
+
+\[
+\boxed{W_m=\lfloor C_\infty H_m\rfloor}
+\]
+
+and
+
+\[
+0<\{C_\infty H_m\}
+<{216\over3^{7(2^m+1)}}.
+\]
+
+The trajectory is a fixed-room orbit hitting doubly-exponentially shrinking positive targets.
+
+## `T-0034` — real/2-adic connector bridge
+
+After quotient extinction,
+
+\[
+W_m=X_m+64T_m^{\rm head}R_m,
+\]
+
+where `X_m` is the complete scaled first-connector word and
+
+\[
+T_m^{\rm head}=2^{11(t_{m,1}+1)}.
+\]
+
+Put
+
+\[
+J_m={H_m\over64T_m^{\rm head}}
 =
-R_{m+1}+Q_{m+1}Y_{m+1},
+{3^{a_m}\over2^{f_m}},
 \]
 
-therefore
+\[
+f_m={1085579\over256}2^m+2816m+17.
+\]
+
+Then
+
+\[
+\boxed{R_m=\lfloor C_\infty J_m\rfloor}
+\]
+
+and
 
 \[
 \boxed{
-0\le Y_{m+1}<\frac{Y_m+3}{512}.
-}
-\]
-
-Every positive integer quotient strictly decreases. Hence every ordinary infinite stage realization reaches
-
-\[
-\boxed{Y_m=0}
-\]
-
-after finitely many scales and then must satisfy
-
-\[
-\boxed{S_m=R_{m+1}}
-\]
-
-at every later stage.
-
-This is the supercritical transfer of the carry-extinction principle. The raw stage map expands, but the quotient above the canonical correction is a strict ranking function.
-
-## Shrinking cusp
-
-On an eventual ordinary tail,
-
-\[
-R_{m+1}=S_m<3N_m.
-\]
-
-Relative to its next modulus,
-
-\[
-\frac{R_{m+1}}{Q_{m+1}}
-<2^{-\Xi_m},
-\]
-
-where
-
-\[
-\Xi_m
+\{C_\infty J_m\}
 =
-\frac{22173699}{5248}2^m-rac{1106}{41}.
+{X_m\over64T_m^{\rm head}}
++
+{\varepsilon_m\over64T_m^{\rm head}},}
 \]
 
-Thus every late canonical correction must lie in an exponentially shrinking completion-height cusp.
+with
 
-# Strategic correction
+\[
+0<\varepsilon_m<{216\over3^{7(2^m+1)}}.
+\]
 
-The full-stage information-surplus theorem remains correct. The connector compiler, counter isometry, and ordinary quadratic generator also remain correct.
+Thus the real room orbit must land immediately above the exact dyadic connector address. The leading growth coefficient of `J_m` is precisely the full-stage surplus constant
 
-What changes is their role:
+\[
+\Gamma={687232\log_2 3-1085579\over256}.
+\]
 
-- the free stage quotient cannot be the growing memory channel of an ordinary infinite path;
-- the physical path must move along the canonical corrections themselves;
-- the ordinary quadratic generator may help synthesize or analyze those corrections, but it cannot be substituted for a growing \(Y_m\);
-- the sole load-bearing equation is now exact stage stitching
-  \[
-  S_m(w_m)=R_{m+1}(w_{m+1}).
-  \]
+Consequently
 
-# Exact computation
+\[
+\log_2R_m=\Gamma2^m+O(m).
+\]
 
-`X-0015` checks:
+The former information-surplus coefficient is now the exact ordinary completion-height slope of the canonical correction.
 
-- the canonical cap theorem on 69,904 exhaustive small chains;
-- the quotient-trap inequality on 1,348,608 exact synthetic transitions;
-- the exact 512-fold scale gap;
-- one complete million-bit 256-transition stage at \(m=8\).
+# Current three-way frontier
 
-The expected final line is
+Any hypothetical ordinary cap-stitch path must satisfy simultaneously:
 
-```text
-all stage-quotient-trap checks passed
+1. **Canonical seam closure**
+   \[
+   S_m(w_m)=R_{m+1}(w_{m+1}),
+   \]
+   including PR #34's collar and triple-seam constraints.
+2. **Fresh-prime escape** — the boundary words cannot remain in any fixed finite-rank multiplicative group.
+3. **Adelic shrinking target** — one fixed real room must hit the exact connector dyadic addresses with doubly-exponentially small positive error.
+
+These are not three unrelated conditions. `T-0034` shows that the real fractional defect is literally the normalized connector word plus the small toll tail.
+
+# Verification
+
+`X-0016` adds exact standard-library checks for:
+
+- the stabilized anchor table;
+- actual canonical connectors and residual paths;
+- 96 scaled-tail local transitions;
+- finite positive toll composition;
+- corrected-stage exponent sums;
+- scale-injective toll-coordinate ratios;
+- finite room increments and floor identities;
+- residual homogeneous exponents and the room–connector bridge.
+
+Commands:
+
+```bash
+python3 experiments/X-0016-scaled-tail-sunit/run.py
+python3 experiments/X-0016-scaled-tail-sunit/fixed_room.py
+python3 experiments/X-0016-scaled-tail-sunit/bridge.py
 ```
 
-# Current construction frontier
+# Primary next problems
 
-The primary question is no longer a self-feeding growing Montgomery quotient.
+1. Couple the PR #34 1024-state triple-seam graph to the room defect in `T-0034`.
+2. Prove that bridge-compatible fresh-prime creation is impossible, or construct it explicitly.
+3. Derive a product-formula or completion-height inequality using both the real error and dyadic seam valuation.
+4. Test whether the ordinary quadratic generator `V_m` supplies the required fresh primes while satisfying one canonical collar seam.
+5. Seek a scale recurrence for the odd-radix carry in the first triple seam.
 
-It is:
-
-> Does there exist a finite marked initialization and an infinite sequence of corrected stage words for which the canonical cap of every late stage is exactly the canonical correction of the next stage?
-
-The two live directions are now sharply separated.
-
-## Constructive direction
-
-Build an exact shrinking-cusp stitching grammar:
-
-\[
-S_m(w_m)=R_{m+1}(w_{m+1})
-\]
-
-from some scale onward, with one finite ordinary prefix entering the first stitched correction and exact Collatz replay throughout.
-
-## Obstructive direction
-
-Prove that a specified directive class cannot place its next canonical correction inside the cusp
-
-\[
-R_{m+1}<3\,3^{A_m}
-\]
-
-at all sufficiently large scales. Completion-height, fixed-room, repetition, Fourier, or complexity methods from the adjacent packets may now be applied to this exact target.
-
-# Review priorities
-
-1. `claims/lemmas/L-0030-canonical-cap-bound.md`
-2. `claims/theorems/T-0031-stage-quotient-extinction.md`
-3. `experiments/X-0015-stage-quotient-trap/run.py`
-4. `claims/theorems/T-0027-stage-montgomery-renormalization.md`
-5. PR #33 `L-9701`, `T-9701`, `T-9702`, and `Q-9701`
-6. PR #16 `L-9310` and `T-9313`
-7. PR #19 `L-9503`
-8. PR #20 ordinary-section and repetition claims
-
-No claim in this state file resolves the Collatz conjecture.
+The exact target is no longer an uncontrolled infinite rewrite word. It is one exceptional ordinary path simultaneously constrained in real size, dyadic address, finite seam state, and multiplicative prime support.
