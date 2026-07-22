@@ -41,6 +41,7 @@ dependency.
 - [`wave fifteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fifteen.md)
 - [`wave sixteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-sixteen.md)
 - [`wave seventeen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-seventeen.md)
+- [`wave eighteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eighteen.md)
 
 ## Result map
 
@@ -153,7 +154,7 @@ dependency.
 | [`R-9806`](claims/R-9806-survivor-one-hot-exceptional-cantor-set.md) | PR #16 global survivor order | The formal all-delay avoiding set is a positive-dimensional Haar-null Cantor set, while ordinary depths with fewer than `s` delayed competitors obey a power-saving count. |
 | [`R-9807`](claims/R-9807-pade-special-vector-allocation-ceiling.md) | PR #20 period-ten frontier | The summed native vector has exactly the minimum allocated zero window; its exact scalar-allocation functional is uniquely maximized by equal allocation and remains subcritical at period ten. |
 | [`L-9899`](claims/L-9899-solution-cone-natural-boundary-rays.md) | Issue #24 solution cone | Extreme rays are component indicators; every proper positive ray has a natural boundary, so continuation of the distinguished ray through one arc is equivalent to Collatz. |
-| [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; for `64 -> 81` it exceeds 16, giving a finite language certificate that excludes entire low-complexity equality subshifts. |
+| [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16/PR #20/PR #35 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; live PR #16 and PR #35 now independently recover its principal specializations, while its finite certificate excludes entire low-complexity equality subshifts. |
 | [`T-9802`](claims/T-9802-cap-head-final-symbol-rigidity.md) | PR #33/PR #3 cap-chain bridge | The fourth head symbol only translates the correction by cells `(0,3,53,1)Q/64`; at least 192 of 256 words are uniformly large, and every late hypothetical cap chain has at most 64 cusp-admissible head words. |
 | [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
 | [`T-9804`](claims/T-9804-sparse-pade-casoratian-optimality.md) | PR #20 period-ten frontier | Every sparse scalar order minor is nonzero, but at fixed width and largest order each skipped order incurs an exact 2-adic accuracy deficit; sparse orders cannot evade the adjacent-order period-ten ceiling. |
@@ -174,6 +175,9 @@ dependency.
 | [`T-9817`](claims/T-9817-coarse-quotient-growing-lift-carry.md) | PR #3/PR #33 cap-room frontier | The cap inverse obeys an exact normalized squaring law, but scale doubling requires a Newton-defect block of `2849*2^(m-8)-1` bits; every abstract lift fiber realizes all 64 next coarse blocks. |
 | [`T-9818`](claims/T-9818-residue-class-tschakaloff-decomposition.md) | PR #20 periodic q-difference frontier | Every periodic tail splits into formally independent residue-phase functions, each with the period-one measure; the same 2007 theorem's joint height window fails for every subset of size at least two. |
 | [`T-9819`](claims/T-9819-completion-support-density.md) | PR #20/PR #35 completion-height bridge | Rational bounded-digit `p^a/Q` values have support in every affine multiplicative interval and `liminf N(Y)/log Y>=1/log(log_(p^a)Q)`; explicit `64/81`, stack, and `4/5` chart bounds follow. |
+| [`T-9820`](claims/T-9820-base-cell-joint-newton-carry.md) | PR #3/PR #33 cap-carry frontier | The base cell and third-symbol offset factor as one inverse unit times one connector coefficient; parity forces a full growing Newton carry on one or three lanes, so the joint bounded projection still does not close. |
+| [`T-9821`](claims/T-9821-combined-moment-hankel-rigidity.md) | PR #20 period-ten combined-moment frontier | Every combined Hankel minor is nonzero with exact opposite `2`- and `3`-adic selectors; the prescribed ten-phase error has scalar quadratic gain, reducing the open step to normalized global height/content. |
+| [`T-9822`](claims/T-9822-four-five-physical-support-oscillation.md) | PR #35 physical-grammar frontier | Same-symbol returns have an exact dyadic valuation; both phases and their switches occur in every affine multiplicative shell, while every finite phase word is nevertheless physically realizable by infinitely many roots. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -378,7 +382,12 @@ independently reconstructed and which conjectural boundaries remain open.
    least two.  PR #20's separate theorem forces any arithmetic relation to use
    at least ten phase coefficients.  Period ten therefore needs approximation
    of its prescribed ten-phase vector, not the solution Casoratian or separate
-   scalar approximants.
+   scalar approximants.  `T-9821` constructs that combined-moment system:
+   every square minor is nonzero, opposite tropical endpoints give exact
+   `2`- and `3`-adic valuations, and the evaluated first error retains the
+   full scalar quadratic gain without ten-phase cancellation.  The remaining
+   deliverable is now precise: a quadratic reduced-height/common-content
+   bound for the normalized Cramer minors, not another rank calculation.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -389,20 +398,25 @@ independently reconstructed and which conjectural boundaries remain open.
    finite-language interface: every ordinary itinerary has slope at least
    `log 64/log(81/64)=17.6548...`.  Hence any fully audited critical equality
    language with smaller slope is excluded, and binary 2- or 3-uniform
-   substitution orbit closures already fail.  The next task is to acquire the
-   exact rational-base source theorem and compute its equality language rather
-   than route through the invalid schedule.  `T-9816` gives the valid direct
-   height replacement for the withdrawn absolute-gap shortcut: any rational
-   binary value satisfies
+   substitution orbit closures already fail.  Live `PR16/T-9318` and
+   `PR35/T-8803` now independently recover the `64 -> 81` and `2^m -> V`
+   specializations of the same recurrence proof.  The next task is to acquire
+   the exact rational-base source theorem and compute its equality language
+   rather than route through the invalid schedule.  `T-9816` gives the valid
+   direct height replacement for the withdrawn absolute-gap shortcut: any
+   rational binary value satisfies
    `g_j<=log_64(81/64)h_j+O(1)`.  This excludes supercritical relative gaps
    but leaves periodic and balanced supports below the threshold.  `T-9819`
    iterates the valid inequality: rational bounded-digit completions have a
    support point in every `(X,alpha X+C]` and logarithmic count at least
    `1/log(alpha)`.  It also applies to PR #35's exact `4/5` chart, where every
    hypothetical positive ordinary survivor needs at least
-   `6.70013449289...` support points per logarithmic scale.  The next useful
-   input is a physical grammar or transducer upper bound contradicting these
-   local counts.
+   `6.70013449289...` support points per logarithmic scale.  `T-9822` now
+   proves the native physical form: both phases and their switch set meet
+   every affine multiplicative shell, with the same logarithmic coefficient,
+   while every finite phase word is realized by infinitely many positive
+   roots.  A contradiction must therefore come from all-scale one-root
+   coherence, not a finite forbidden-block grammar.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
@@ -423,10 +437,14 @@ independently reconstructed and which conjectural boundaries remain open.
    arithmetic input.  `T-9817` then closes the naive 64-state cap recurrence:
    the normalized inverse obeys an exact 2-adic isometry, but its next Newton
    quotient has `2849*2^(m-8)-1` bits and the abstract lift fiber realizes all
-   64 top blocks.  The distinguished source carry remains computable; the new
-   target is a proved correlation with the independently defined base-cell
-   carry.  Finally, `T-9811` shows that every surviving hypothetical room must
-   be transcendental.  The constants are structural, not computational.
+   64 top blocks.  `T-9820` performs the proposed correlation algebra: the
+   base cell and third-symbol shift share exactly one inverse unit, and a
+   connector coefficient of valuation `h` cancels exactly `h` carry bits.
+   Parity leaves the full carry on one or three lanes, so simultaneous bounded
+   closure is impossible; the remaining target is the distinguished scale
+   law of the single connector word `Z_m`.  Finally, `T-9811` shows that every
+   surviving hypothetical room must be transcendental.  The constants are
+   structural, not computational.
 7. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 8. Test binary-automatic invariant-component colorings. `L-9823` eliminates

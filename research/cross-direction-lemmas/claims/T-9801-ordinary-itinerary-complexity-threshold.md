@@ -7,7 +7,7 @@ Authoring agent: `gpt56-synthesis-01-wave13-adelic-bridge`
 Reviewing agents: `gpt56-synthesis-01-wave13-cap-head`
 Created: 2026-07-22
 Last updated: 2026-07-22
-Dependencies: elementary binary-chart recurrence; branch-qualified source interface `PR #16/T-9315` and context `PR #16/L-9311`, `L-9315`, `T-9316`, `T-9317` at live head `1bb8c6b`; branch-qualified predecessor `PR #20/T-9402`, `T-9405` at `ed1ee9d`
+Dependencies: elementary binary-chart recurrence; branch-qualified source interface `PR #16/T-9315` and context `PR #16/L-9311`, `L-9315`, `T-9316`, `T-9317` at live head `900ba41`; independent live overlaps `PR #16/T-9318` (blob `845ab7d`) at that head and `PR #35/T-8803` (blob `7a9b4d5`) at head `6bb647a`; branch-qualified predecessor `PR #20/T-9402`, `T-9405` with unchanged blobs `b5e6c18`, `c393589` at live head `14f06d2`
 Scope: every coprime expanding binary chart; the critical centered-power equality bridge for the ordinary `64 -> 81` section
 Related counterexample candidates: none
 
@@ -429,6 +429,26 @@ pigeonhole/periodic-approximant route.  Thus (5)--(6) are an independent
 recurrence-level reconstruction and exact integer restatement of that known
 threshold, not a new global complexity barrier.
 
+Live PR #16 now also contains `T-9318` (blob `845ab7d` at `900ba41`).  Its
+inequality
+
+\[
+p_e(\ell)>{\ell-\log_{64}A_0\over\log_{64}(81/64)}
+\tag{37}
+\]
+
+is exactly the `M=64`, `N=81` specialization of (5): because `p_e(ell)` is
+integral, the strict inequality is equivalent to the floor in (5) whenever
+the right side is nonnegative.  Its first-repeat proof is the same initial-
+factor pigeonhole applied to (14).  This is independent source convergence,
+not additional mathematical leverage.
+
+PR #35 independently reaches the same general mechanism in `T-8803` for
+`M=2^m` and odd `N>M`.  Its `4 -> 5` specialization has slope
+`1/(log_4(5)-1)=6.2125674390...`, exactly (6) with `(M,N)=(4,5)` and ordinary
+coordinate `A_0=A+2`.  Again, this is a specialization of the theorem here;
+PR #35 supplies the new physical `5x+1` chart to which it applies.
+
 The genuinely new interface here is the finite uniform-morphism certificate
 (31)--(33), coupled to the critical equality closure in Section 4.  It is
 complementary to current `PR #16/L-9315`: that lemma transfers one explicit
@@ -447,15 +467,24 @@ language, without locating a particular square in each sequence.
 - `PR #16/T-9315` is used only for the conditional centered-parameter
   crosswalk in Section 4.
 - `PR #16/L-9311`, `L-9315`, and `T-9316` are contextual predecessors, not
-  proof dependencies for the calculation.  At live head `1bb8c6b`,
+  proof dependencies for the calculation.  Their blobs are unchanged at live
+  head `900ba41`; there,
   `T-9316` uses the sharpened adjacent square at starts `2^m,2^(m+1)`, and
   `L-9315` consequently reaches morphic length distortion below
   `1/(2 delta)=8.8274...`; neither supplies the orbit-closure count (32).
 - `PR #16/T-9317` motivates the critical equality interface; its unverified
   source hypotheses are restated explicitly in (24)--(25).
+- `PR #16/T-9318` is a later independent restatement of the `64 -> 81`
+  specialization of (5)--(6).  It neither supplies nor supersedes the general
+  binary-chart theorem or finite uniform-morphism certificate here.
+- `PR #35/T-8803` independently specializes the same proof to `M=2^m`, odd
+  `N>M`, and then to its physical `4 -> 5` chart.  The source theorem's chart
+  construction is new there; the prefix-diversity algebra is the restriction
+  of (5)--(6) recorded here.
 - `PR #20/T-9402` and `T-9405` are prior statements of the same lower
-  factor-complexity slope.  They are cited for novelty accounting; the direct
-  proof of (5) does not invoke them.
+  factor-complexity slope.  Their blobs remain unchanged at live head
+  `14f06d2`; they are cited for novelty accounting, and the direct proof of
+  (5) does not invoke them.
 - The uniform-morphism bound is proved from aligned supertiles. No
   automatic-sequence theorem, recurrence theorem, entropy theorem, or
   computation is imported.

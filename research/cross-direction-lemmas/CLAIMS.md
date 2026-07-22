@@ -111,7 +111,7 @@ repository review.
 | R-9806 | Refutation | Delayed one-hot events leave a positive-dimensional formal exceptional Cantor set despite a power-saving ordinary count | PROPOSED | L-9826, L-9883, L-9885, L-9896 |
 | R-9807 | Refutation | The summed native Pade vector has no staggered scalar-allocation gain; equal allocation is uniquely optimal | PROPOSED | PR20/L-9408, L-9411, T-9416 |
 | L-9899 | Lemma | Positive solution-cone extreme rays are rational only for the full positive component and otherwise have a natural boundary | PROPOSED | Issue #24/T-9702; L-9823; Polya--Carlson; elementary reconstruction |
-| T-9801 | Theorem | Every ordinary binary-chart itinerary has an explicit linear factor-complexity floor, giving a finite certificate for critical equality languages | PROPOSED | elementary binary-chart recurrence; PR16/T-9315 only for the conditional centered crosswalk |
+| T-9801 | Theorem | Every ordinary binary-chart itinerary has an explicit linear factor-complexity floor, giving a finite certificate for critical equality languages | PROPOSED | elementary binary-chart recurrence; PR16/T-9315 only for the conditional centered crosswalk; live overlap PR16/T-9318 and PR35/T-8803 |
 | T-9802 | Theorem | The final tower symbol translates every stabilized head correction by one of four fixed sixty-fourth-modulus offsets | PROPOSED | L-9821, L-9898; frozen PR3/T-0027, L-0016, L-0017 |
 | T-9803 | Theorem | Adjacent two-hot lifts have an exact correlation law, and libraries of at most 62 fixed templates cannot cover every formal exposure phase | PROPOSED | L-9826, L-9883, L-9885, L-9896, R-9806 |
 | T-9804 | Theorem | Every sparse equal-allocation Pade Casoratian is nonzero, and skipped orders strictly lose normalized 2-adic accuracy at fixed width and largest order | PROPOSED | PR20/L-9408, L-9410; L-9884, L-9891, L-9895 |
@@ -132,5 +132,8 @@ repository review.
 | T-9817 | Theorem | The cap inverse has an exact 2-adic scale law, but its six-bit projection loses an exponentially growing Newton carry | PROPOSED | T-9806, T-9813; corrected PR3 phase-34 schedule; LTE and Newton lifting |
 | T-9818 | Theorem | Periodic residue-phase functions are formally independent and individually measured, while the audited joint source window fails from dimension two onward | PROPOSED / SOURCE-DEPENDENT | T-9815; PR20/L-9408, L-9410, L-9412, L-9413, L-9415; Amou--Matala-aho--Vaananen Theorem 5.1 |
 | T-9819 | Theorem | Rational bounded-digit completions have multiplicatively syndetic support and explicit logarithmic support-density floors | PROPOSED | T-9816; elementary finite-rational height; PR35/T-8802, T-8803, T-8807 for the 4/5 chart |
+| T-9820 | Theorem | The cap base cell and third-symbol offset factor through one inverse unit, and parity leaves a full Newton carry on at least one lane | PROPOSED | T-9806, T-9813, T-9817; corrected PR3 connector algebra |
+| T-9821 | Theorem | Every combined periodic-tail Hankel minor is nonzero with exact opposite endpoint selectors, reducing period ten to normalized quadratic height | PROPOSED | T-9818; PR20/L-9408, L-9410, Q-9413 |
+| T-9822 | Theorem | Every positive 4/5 chart survivor has exact same-symbol return valuations and logarithmically dense phase switches | PROPOSED | T-9819; PR35/T-8802, T-8803, T-8805--T-8807; PR20/T-9403, T-9405 for comparison |
 
 No `K-####` candidate is proposed.
