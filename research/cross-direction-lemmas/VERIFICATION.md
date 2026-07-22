@@ -316,7 +316,7 @@ received nonauthoring cold review and remain `PROPOSED`.
 | `T-9820` | cap-joint-carry lane, integrating reviewer, and independent completion reviewer | connector integrality, factorization signs, single inverse unit, exact `Delta_m-h` retained-bit count, parity split, full-coset permutation, top-six multiplicity, and bounded source replays were reconstructed | no recurrence for the distinguished connector word or cofinal odd decoded lane is proved |
 | `T-9821` | period-ten lane, integrating reviewer, and independent completion reviewer | arbitrary-minor expansion, common real sign, opposite tropical selectors, exact endpoint exponents, Cramer indexing, bordered Schur complement, first-error uniqueness, normalized alternant degree, and height sufficiency boundary were reconstructed | visible Vandermonde content does not yet reduce primitive global height from cubic to the required quadratic coefficient |
 | `T-9822` | completion/grammar lane, integrating reviewer, and independent cap reviewer | both-symbol infinitude, return coordinate, terminal odd unit, strict gap, affine floors, shell and switch indexing, switch growth, finite-word residue sign, positivity, and source comparisons were reconstructed | every finite word is physically realizable only with a varying root; infinite one-root coherence and a grammar upper bound remain open |
-| `T-9823` | completion/generalization lane, integrating reviewer, and independent period reviewer | general return coordinate, terminal parity modulo `U`, positivity, affine floors, switch indexing, finite-cylinder residue, and both explicit chart specializations were reconstructed | no generic affine recurrence is asserted to be a physical Collatz chart without a separate source crosswalk |
+| `T-9823` | completion/generalization lane, integrating reviewer, and independent period reviewer | general return coordinate, terminal parity modulo `U`, positivity, affine floors, exact consecutive-switch flank return with its `+1`, finite-cylinder residue, and both explicit chart specializations were reconstructed | no generic affine recurrence is asserted to be a physical Collatz chart without a separate source crosswalk |
 | `T-9824` | period-ten lane, integrating reviewer, and independent completion reviewer | Schur partition/indexing, coefficient positivity, exact degree band, reverse/identity selector sums, valuation signs, height lower bounds, and Cramer-ratio scope were reconstructed | cubic height of one normalized alternant does not preclude further content cancellation across ratios |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
@@ -703,6 +703,9 @@ For `T-9823`, the period reviewer repeated the argument with
 Iteration gives the exact factor `a(h'-h)`.  The finite-prefix identity
 `U^kM_k=V^kM_0-CD_k` proves the positive residue
 `M_0=CV^(-L)D_L mod U^L` and all sufficiently large positive lifts.
+For consecutive switches, the repeated flank symbol occurs at `r_j` and
+`r_(j+1)+1`; retaining this essential `+1` gives the exact switch valuation
+and the strengthened constant `K-1` in its pointwise affine gap bound.
 
 For `T-9824`, the completion reviewer checked that increasing column
 exponents `rj+h_j` give the stated Schur partition and positive weights.
@@ -1265,7 +1268,9 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     sign and do not identify varying finite roots with one infinite survivor.
 66. For `T-9823`, retain `C=V-U` through the first return step, use terminal
     parity only after reducing the physical recurrence, and check the factor
-    `a` in every valuation.  Verify the positive `C V^(-L)D_L` cylinder sign.
+    `a` in every valuation.  For switches, return to `r_(j+1)+1`, not the
+    opposite-symbol switch index, and preserve the resulting `-1` constant.
+    Verify the positive `C V^(-L)D_L` cylinder sign.
 67. For `T-9824`, derive the partition from increasing column exponents,
     subtract the Vandermonde selector at both primes, and distinguish one
     quotient's cubic height from the quadratic endpoint differences of its

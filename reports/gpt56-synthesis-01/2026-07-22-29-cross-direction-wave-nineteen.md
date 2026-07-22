@@ -41,6 +41,18 @@ With `alpha=log_U V`, both symbols and the phase-switch set meet every affine
 multiplicative shell.  Each has logarithmic lower count `1/log(alpha)`, and
 ordered switch positions have growth base at most `alpha`.
 
+More sharply, if `r_j<r_(j+1)` are consecutive switch indices and
+`s_j=epsilon_(r_j)`, the repeated flank symbol returns after
+`r_(j+1)-r_j+1` steps.  Hence
+
+```text
+v_2(VM_(r_j)-U+s_j(U-C))=a(r_(j+1)-r_j+1),
+r_(j+1)-r_j < (alpha-1)r_j+log_U(VM_0)-1.
+```
+
+This supplies a pointwise grammar criterion in addition to the averaged
+switch floor.
+
 Every finite word `epsilon_0...epsilon_(L-1)` also has one exact initial
 residue cylinder
 

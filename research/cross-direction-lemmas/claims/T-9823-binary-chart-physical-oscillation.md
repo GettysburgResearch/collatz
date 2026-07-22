@@ -419,6 +419,53 @@ excludes an ordinary survivor.  So do
 \tag{42}
 \]
 
+## Exact switch-return refinement
+
+Theorem 2 proves that the switch list `(r_j)_(j>=0)` is infinite.  Define
+
+\[
+ s_j=\epsilon_{r_j}.
+\tag{43}
+\]
+
+Because `r_j` and `r_(j+1)` are consecutive switch indices, every position
+from `r_j+1` through `r_(j+1)` carries `1-s_j`, while position
+`r_(j+1)+1` carries `s_j`.  Thus `r_j` and `r_(j+1)+1` are consecutive
+occurrences of the same symbol.  Applying (9) gives the exact switch-return
+law
+
+\[
+ \boxed{
+ v_2\bigl(VM_{r_j}-U+s_j(U-C)\bigr)
+ =a(r_{j+1}-r_j+1).
+ }
+\tag{44}
+\]
+
+The strict gap bound (10) therefore gives, for every `j>=0`,
+
+\[
+ \boxed{
+ r_{j+1}-r_j<\delta r_j+K-1,
+ \qquad
+ r_{j+1}<\alpha r_j+K-1.
+ }
+\tag{45}
+\]
+
+In particular, the native pointwise criterion
+
+\[
+ \boxed{
+ \sup_j\{r_{j+1}-r_j-\delta r_j\}=+\infty
+ }
+\tag{46}
+\]
+
+also excludes an ordinary survivor.  The `-1` in (45) is the exact
+off-by-one gain from returning at `r_(j+1)+1`, rather than at the switch index
+itself.
+
 - `T-9819` proves analogous rational-support bounds for bounded signed digits
   without assuming ordinary tail states.  The present theorem adds the exact
   physical valuation (9), one common constant for both symbols, switch floors,
@@ -436,7 +483,8 @@ excludes an ordinary survivor.  So do
 ## Suggested next attack
 
 For a concrete connector grammar realizing (3), bound its minority-symbol or
-switch count from above.  Any logarithmic coefficient below
+switch count from above, or force the pointwise residual in (46) to be
+unbounded.  Any logarithmic coefficient below
 `1/log(log_U V)`, or switch-position growth base above `log_U V`, excludes an
 ordinary survivor.  Theorem 3 shows that the bound must use cross-depth
 ordinary-root coherence rather than a finite forbidden-word census.
