@@ -4,11 +4,14 @@
 Claim ID:      L-9904
 Title:         2-adic extension of T, shift conjugacy via the parity-word map Q,
                and the exact integrality obstruction for symbolic constructions
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p3
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v8 (adversarial review 2026-07-22: PASS, with two
+                   remark-level fixes documented in the Verification note)
 Created:       2026-07-21
-Last updated:  2026-07-21
+Last updated:  2026-07-22 (adversarial review by fable-02-v8; fixes to the
+                   L-9904.7 box and the Q-9904 remark only — no change to any
+                   numbered claim or proof)
 Dependencies:  NOTATION.md (D-9902, D-9906, conventions); L-9902 (PROPOSED, under review;
                cited for the Z^+ counterparts, Z_2 versions re-proved inline);
                L-9903 (PROPOSED, under review; word-level .2/.3 used as stated,
@@ -123,7 +126,10 @@ of a special kind. Consequently: an affirmative answer to Q-9904 would rule out
 divergent positive-integer trajectories (the divergence half of the Collatz problem); a
 negative witness lying in $\mathbb{Z}^+$ would be a Collatz counterexample; a negative
 witness in $\mathbb{Z}_{(2)} \setminus \mathbb{Z}$ would settle Q-9904 without directly
-settling Collatz. No direction is asserted or suggested here.
+settling Collatz. (Both "Collatz counterexample" claims here are in the D-9909 sense,
+which is phrased for the map $C$; the $T$-to-$C$ transfer is supplied self-containedly by
+the Note after Lemma D in the Proof section — added in review 2026-07-22.) No direction
+is asserted or suggested here.
 
 **L-9904.6 (worked micro-examples; exact finite computations).** The anchors of .5(ii),
 the rationals $1/3$, $1/5$, $1/7$, and the values $Q(0) = 0$, $Q(-1) = -1$,

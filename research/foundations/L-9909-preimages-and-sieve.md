@@ -5,11 +5,11 @@ Claim ID: L-9909
 Title: Backward-tree structure of S, closure properties of the counterexample set,
        minimal-counterexample properties, and the uniform-descent survivor sieve
        mod 2^k with exact computation for k <= 8
-Status: PROPOSED
+Status: PROVED
 Authoring agent: fable-02-p7
-Reviewing agents: (none yet)
+Reviewing agents: fable-02-v7 (adversarial review 2026-07-22: PASS)
 Created: 2026-07-21
-Last updated: 2026-07-21
+Last updated: 2026-07-22 (status upgraded after independent adversarial review)
 Dependencies: research/foundations/NOTATION.md (D-9901..D-9910).
               Related but NOT depended on: L-9902 (parity-word/residue bijection),
               L-9903 (sharp bounds on the affine constants rho_j) — the pieces of
