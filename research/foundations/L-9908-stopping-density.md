@@ -501,11 +501,13 @@ finite.
 **Counting $V_k$.** Every $w$ counted in $V_k$ has $a_k(w) \ge k\gamma - d_c \ge
 \tfrac58 k$, so the number of such words is at most
 $\sum_{a \ge (5/8)k} \binom{k}{a} \le 2^{kH(5/8)}$ by L-9908.2(a) with
-$t = \tfrac58 \in (\tfrac12, 1)$. Hence $V_k$ is a union of at most
-$\lfloor 2^{kH(5/8)}\rfloor$ classes mod $2^k$, and by the counting in Lemma DEN
-(upper half, applied to $A_c \subseteq V_k \cup F_k$):
-$$\bar d(A_c) \;\le\; \frac{2^{kH(5/8)}}{2^k} \;=\; 2^{-k(1 - H(5/8))}
-\;\le\; 2^{-k\,(1 - 383/400)} \;=\; 2^{-17k/400}.$$
+$t = \tfrac58 \in (\tfrac12, 1)$. Hence $V_k$ is a union of $s' \le 2^{kH(5/8)}$
+classes mod $2^k$, and, spelling out the upper half of Lemma DEN's count for
+$A_c \subseteq V_k \cup F_k$: for every $N$,
+$A_c(N) \le V_k(N) + \#F_k \le s'\big(\lfloor N/2^k\rfloor + 1\big) + \#F_k$, so
+dividing by $N$ and letting $N \to \infty$,
+$$\bar d(A_c) \;\le\; \frac{s'}{2^k} \;\le\; \frac{2^{kH(5/8)}}{2^k}
+\;=\; 2^{-k(1 - H(5/8))} \;\le\; 2^{-k\,(1 - 383/400)} \;=\; 2^{-17k/400}.$$
 This holds for **every** $k \ge k_0(c)$; letting $k \to \infty$, $\bar d(A_c) = 0$,
 hence $d(A_c) = 0$, and $d(D_c) = 1$ by Lemma CPL. $\square$
 
