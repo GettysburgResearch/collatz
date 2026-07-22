@@ -13,6 +13,7 @@ repository's canonical `CLAIMS.md`. All theorem-level statements remain
 - [`claims/STRUCTURAL_RESULTS.md`](claims/STRUCTURAL_RESULTS.md) — `L-9507`–`L-9510`, `R-9501`, `R-9502`, `Q-9502`.
 - [`claims/ITERATION_02.md`](claims/ITERATION_02.md) — `L-9511`, `L-9512`, `T-9504`, `T-9505`, `R-9503`, `Q-9503`.
 - [`claims/ITERATION_03.md`](claims/ITERATION_03.md) — `L-9513`–`L-9515`, `T-9506`–`T-9508`, `Q-9504`, `Q-9505`.
+- [`claims/ITERATION_04.md`](claims/ITERATION_04.md) — `T-9509`.
 
 ## Status table
 
@@ -49,8 +50,9 @@ repository's canonical `CLAIMS.md`. All theorem-level statements remain
 | `T-9507` | Branchwise critical harmonic kernel | PROPOSED | gives uniform core-reciprocal budgets |
 | `L-9515` | Repetition forces completion height | PROPOSED | complexity corollary uses real escape |
 | `T-9508` | Critical/subcritical real-escape split | PROPOSED | depends on `T-9505` |
-| `Q-9504` | `2`-adic logarithm critical-chain exclusion | IDEA | exact external theorem interface unaudited |
-| `Q-9505` | Subcritical transformed-height finite trap | IDEA | integer height not yet found |
+| `Q-9504` | `2`-adic logarithm critical-chain exclusion | SUPERSEDED | resolved by `T-9509` modulo Yu audit |
+| `Q-9505` | Subcritical transformed-height finite trap | IDEA | sole remaining infinite regime |
+| `T-9509` | Critical real escape is impossible | PROPOSED | imports Yu 2007; specialization needs independent audit |
 
 ## Dependency summary
 
@@ -70,7 +72,7 @@ Iteration 02 sharpened both sides:
 - `T-9505` forced every real-escaping ray to obey a finite exponentially
   discounted odd-core budget.
 
-Iteration 03 adds:
+Iteration 03 added:
 
 - `L-9513`, an exact intermediate-state threshold for the final mixed-sign
   crossing;
@@ -79,8 +81,18 @@ Iteration 03 adds:
 - `T-9507`, a critical summable-kernel theorem and a uniform reciprocal budget
   at every valuation scale;
 - `L-9515`, the H analogue of completion-height repetition rigidity;
-- `T-9508`, the critical near-Pillai versus subcritical escape dichotomy;
-- `Q-9504` and `Q-9505`, the two now-isolated infinite attack surfaces.
+- `T-9508`, the critical near-Pillai versus subcritical escape dichotomy.
 
-No positive integer witness and no proof excluding every real-escaping ghost is
-contained in this packet.
+Iteration 04 uses Yu's explicit `2`-adic logarithmic-form theorem to eliminate
+the positive-limit branch in `T-9508`. Subject to independent verification of
+the external specialization, every hypothetical nonperiodic survivor now lies
+in the sole subcritical regime
+
+\[
+K_i=o((\log9/\log8)^i).
+\]
+
+The remaining infinite task is `Q-9505`: construct an integral transformed
+height or equivalent finite-trap argument for a subcritical eventual-zero-carry
+ray. No positive integer witness and no proof excluding that regime is contained
+in this packet.
