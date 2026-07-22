@@ -1,151 +1,148 @@
 # Q-9411 — Period-four reduced-height saving
 
-Claim ID: Q-9411  
-Title: Can period-four block Padé approximants recover the missing `0.6286%` logarithmic gain?  
-Status: IDEA / primary next periodic target  
+Claim ID: `Q-9411`  
+Title: Can a genuinely coupled period-four construction recover the missing `0.6286%` logarithmic gain?  
+Status: `NARROWED IDEA`; unequal phase allocation superseded by `T-9416`  
 Authoring agent: `gpt56-complexity-01`  
 Created: 2026-07-21  
-Dependencies: L-9410, T-9414, R-9403  
+Last updated: 2026-07-22  
+Dependencies: `L-9410`, `L-9411`, `T-9416`, `R-9403`, `R-9404`  
 Scope: primitive positive periodic height-increment words of minimal period four
 
 ## Current exact boundary
 
-For the block Gaussian-binomial approximants of L-9410, the universal
-asymptotic exponent at displayed period length `r` is
-
-```text
-mu_r
- =[1/log_64(81)]*(1+1/[r(r+1)]).
-```
-
-At `r=4`,
+For the equal block Gaussian-binomial approximants of `L-9410`,
 
 ```text
 mu_4=0.993714361875...,
-1-mu_4=0.006285638124... .                          (1)
+1-mu_4=0.006285638124... .
 ```
 
-Thus the written universal height estimate misses the elementary rationality
-threshold by only about
+The universal estimate misses the elementary rationality threshold by about
 
 ```text
-0.6285638124%                                       (2)
+0.6285638124%
 ```
 
 on the logarithmic scale.
 
-## Primary question
+## Resolved route — phase reallocation
 
-For a primitive period-four word
+`L-9411` constructs the complete one-root-product family with arbitrary
+phasewise cancellation counts. `T-9416` proves that equal allocation uniquely
+maximizes its universal pre-reduction valuation-to-height shape.
 
-```text
-W=d_1d_2d_3d_4,
-```
+Therefore this proposed repair is closed:
 
-let
+> Give more Gaussian-binomial roots to selected phases and fewer to the others.
+
+Every such allocation has exponent at most `mu_4`. `R-9404` records the
+refutation and its boundary.
+
+## Remaining routes
+
+### 1. Exact common-factor growth
+
+Let
 
 ```text
 A_n^clear,
 B_n^clear
 ```
 
-be the integer numerator and denominator obtained from the L-9410 approximant
-after clearing its universal odd power-of-`81` denominator. Is there a uniform
-quadratic-scale saving, from reduction or a stronger coupled construction,
-large enough to replace `mu_4` by a constant greater than one?
-
-## Concrete routes
-
-### 1. Exact common-factor growth
-
-Measure and prove a lower bound for
+be the cleared integer numerator and denominator of a period-four approximant.
+A sufficient target is a quadratic-scale common factor satisfying
 
 ```text
-g_n=gcd(A_n^clear,B_n^clear).
-```
-
-A sufficient target is
-
-```text
-log g_n
+log gcd(A_n^clear,B_n^clear)
  >=(0.006286+epsilon)
-   *log max(|A_n^clear|,|B_n^clear|)                 (3)
+   *log max(|A_n^clear|,|B_n^clear|)
 ```
 
-along an infinite sequence of orders, with one fixed `epsilon>0`.
-
-Because the cleared denominator is not divisible by `3`, any saving must come
-from other primes or from a different integral normalization.
+along an infinite sequence. `O-9401` finds no bounded-order signal, but that is
+not an asymptotic theorem.
 
 ### 2. Coupled adjacent-order determinant
 
-Combine orders `n` and `n+1` so the first nonzero error cancels while the
-common height grows by less than the gained vanishing. Every determinant must
-report:
+Combine shifted neighboring Padé orders so their **combined** phase errors
+cancel. The number of additional cancelled blocks must grow proportionally to
+Padé order; cancelling only `O(1)` blocks changes valuation by `O(n)` and cannot
+repair an `O(n^2)` deficit.
+
+Every determinant must prove:
 
 ```text
-- exact first surviving block;
-- exact v_2 of the determinant error;
+- nonvanishing;
+- exact first surviving block and phase;
+- exact v_2;
 - exact common denominator;
-- reduced height or a proved upper bound;
-- nonvanishing.
+- reduced-height control.
 ```
 
-### 3. Phase-sensitive denominator
+### 3. Phase-sensitive Hermite–Padé
 
-L-9410 uses one universal denominator treating all four phases symmetrically.
-Exploit the actual transfer polynomial `P_W`, which may make one or more phases
-cheaper. A valid improvement must work uniformly for the chosen primitive word,
-not only at bounded Padé orders.
-
-### 4. Word classification
-
-Separate period-four words by invariants such as
+Exploit the actual transfer polynomial
 
 ```text
-(S(W), e(W), phase exponents, reversal class, cyclic class).
+P_W(X)
 ```
 
-Some words may reduce to a shorter algebraic phase system even when their
-literal word period is four.
+and cancel the sum of the four phases rather than imposing independent windows.
+This lies outside `T-9416` only if the construction is genuinely coupled.
+
+### 4. Completion-height numerator
+
+PR #16 and PR #33 supply compatible carry/block coordinates. Seek one nonzero
+ordinary numerator built from several phase errors whose `2`-adic divisibility
+outgrows its global height.
+
+### 5. Construction signal
+
+If one word exhibits eventual cylinder-block stabilization, replay its exact
+ordinary context, prove positivity at every stage, check the chart class modulo
+`17`, and only then promote a candidate.
+
+## External-theorem boundary
+
+`R-9405` audits Rochev's 2011 p-adic q-series theorem. The stack parameter expands
+at both the `2`-adic and archimedean places, while the inspected theorem is
+organized around one expanding place. The direct black-box route is therefore
+not available.
 
 ## Verification program
 
-A useful exact experiment should:
+`X-9410` exhausts 657,774 phase allocations and confirms the exact functional
+bound. Future experiments should focus only on mechanisms outside the
+root-product class:
 
-1. enumerate primitive words over `{17,18}` of length four up to cyclic symmetry;
-2. construct L-9410 approximants for the first feasible orders;
-3. record cleared and reduced heights separately;
-4. factor gcds when feasible and record unfactored cofactor digests otherwise;
-5. compare measured exponents with `mu_4`;
-6. test adjacent-order determinants;
-7. distinguish finite anomalies from a proposed asymptotic law.
+1. coupled determinants;
+2. exact reduced gcd growth;
+3. phase-sensitive polynomial systems;
+4. completion-height numerators.
 
 ## Success criteria
 
 ### Obstruction theorem
 
-Prove an exponent greater than one for every primitive period-four word. T-9415
-would then extend automatically to every eventually period-four directive.
+Prove exponent greater than one for every primitive period-four word. `T-9415`
+then extends automatically to every finite prefix followed by such a tail.
 
-### Construction signal
+### Construction
 
-If one word exhibits systematic stabilization or an exceptional height collapse,
-replay its exact active cylinders and test whether it produces an ordinary
-positive context. Finite small height alone is not an M1 candidate.
+Produce one stabilized positive ordinary context with complete replay and chart
+translation.
 
 ## Falsification criteria
 
+- Phasewise root redistribution is already closed by `T-9416`.
 - A bounded-order gcd pattern is not an asymptotic theorem.
-- A determinant with an unproved zero/nonzero condition is not an approximant.
-- A height estimate before reduction cannot be advertised as a reduced-height
-  gain.
-- A period-four result does not decide the balanced nonperiodic directive.
+- A determinant with no nonvanishing proof is not an approximant.
+- Pre-reduction height is not reduced height.
+- A period-four theorem does not decide the balanced nonperiodic directive.
 
 ## Relationship to the S-adic frontier
 
-Period four is the first place where the universal block estimate fails, and the
-failure is very small. Any mechanism that repairs it—common factors,
-phase-sensitive determinants, or transfer-matrix compression—is a candidate
-building block for adjacent continued-fraction standard words in the true
-balanced S-adic problem.
+Any mechanism that genuinely repairs period four—coupled cancellation,
+completion height, or reduced-height compression—is a plausible local building
+block for adjacent continued-fraction standard words in the balanced directive.
+See `Q-9412-coupled-period-four-determinants.md` for the frozen next target.
