@@ -1,255 +1,263 @@
 # Candidate counterexamples
 
-Last updated: 2026-07-21
+Last updated: 2026-07-22
 
-There is currently **no candidate positive integer**, no regular sanctuary, and
-no finite symbolic construction proved to define an infinite positive-integer
-Collatz trajectory.
+There is currently **no candidate positive integer**, no regular sanctuary, and no finite symbolic construction proved to define an infinite positive-integer Collatz trajectory.
 
-## Literature-informed boundary
+# Certificate boundary
 
-The literature-review branch and PR #12 establish a sharp expressiveness
-boundary.
+A valid candidate must begin with one explicit finite positive integer and replay its unique deterministic Collatz trajectory forever. Compatible dyadic prefixes, a graph-directed completion point, positive pressure, or an unmarked expanding population are not candidate certificates.
 
-`L-0015` proves that regular finite endpoint or population languages have
-regular ordinary marker projections. `T-0020` proves that finitely many regular
-phase domains with fixed finite Collatz blocks compile to a one-step regular
-sanctuary.
+Finite-state regular marked grammars belong to the exact regular-sanctuary program of PR #12 by `L-0015` and `T-0020`. The phase-34 tower route is genuinely different only because its block lengths and correction precision grow with scale.
 
-Therefore:
+# Available tower infrastructure
 
-> A finite-state regular marked interval, marked-particle, carry-phase, or
-> negative-target grammar is not a new existential class. It belongs to the
-> exact regular-sanctuary program already implemented in PR #12.
+The negative eleven-cycle supplies four phase-34 self-return tower types. At height `t`, every type has
 
-A genuinely new route needs unbounded memory, variable block lengths, a
-nonregular ordinary survivor, or non-rational marker coupling.
+\[
+K_t=11(t+1),
+\qquad
+G_t=7(t+1),
+\]
 
-## What the negative-cycle tower now supplies
-
-For each padded self-return type at phase \(-34\), `L-0016` gives exact finite
-blocks
+and performs
 
 \[
 A_t+2^{K_t}h
 \longmapsto
 B_t+3^{G_t}h
-\qquad(h\ge0).
 \]
 
-The arbitrary ordinary high tail \(h\) survives unchanged.
+for every ordinary finite high tail `h`.
 
-For every adjacent pair of tower instances, `L-0017` gives one canonical
-connector
-
-\[
-B+3^G\eta=\bar A+2^{\bar K}\theta,
-\]
-
-and hence the ordinary family
+Every pair of instances has one canonical connector
 
 \[
-\eta+2^{\bar K}z
-\longmapsto
-\theta+3^Gz
-\qquad(z\ge0).
-\]
-
-Thus every finite tower schedule has infinitely many ordinary finite
-realizations. Finite-depth compatibility is not candidate evidence by itself.
-
-## Corrected stage architecture
-
-The earlier 128-transition lane is retained only as a one-connector precursor.
-True residual regeneration must pay the next two cylinder depths. The corrected
-stage from `T-0023` and `L-0024` is
-
-\[
-t_{m,j}=2^m+j2^{m-8},
-\qquad 0\le j\le256,
-\]
-
-with
-
-\[
-t_{m,256}=t_{m+1,0}.
-\]
-
-One scale stage therefore has exactly 256 transitions and an eight-bit finite
-odometer.
-
-For a tower type with recovery depth \(r\), put
-
-\[
-H_m=m-r-7.
-\]
-
-The normalized connector prefixes satisfy
-
-\[
-\nu_2(\omega_{m,j}-\omega_{m,0})
-=H_m+\nu_2(j).
-\]
-
-The stage-boundary stack splits into three tracks.
-
-### 1. Periodic rational frontier
-
-The low stabilized bits are supplied by one explicit rational
-\(\omega_\infty\), with a finite binary period depending only on the tower type.
-
-### 2. Eight-bit odometer
-
-The 256 substeps have exactly the carry profile of the binary counter
-\(0,1,\ldots,256\).
-
-### 3. Quadratic moving bulk
-
-Put
-
-\[
-y_m=3^{-7\cdot2^m},
-\qquad
-u_m=\frac{y_m-1}{2^{m+2}}.
-\]
-
-Then \(u_m\) is odd and obeys
-
-\[
-\boxed{u_{m+1}=u_m+2^{m+1}u_m^2.}
-\]
-
-The full stage-boundary prefix is
-
-\[
-\omega_m
+B+3^G\eta
 =
-\omega_\infty+2^{m-r+1}3^{-g_0}u_m.
-\]
-
-This reduces the nonperiodic stack update to one shifted square-and-add
-operation per scale.
-
-## Exact information budget
-
-The negative eleven-cycle has bit margin
-
-\[
-\frac5{53}<7\log_2 3-11<\frac4{41}.
-\]
-
-`T-0024` proves that one corrected 256-transition stage has exponential residual
-capacity after paying the full next-stage connector-precision increase. The
-remaining surplus is rigorously greater than
-
-\[
-\frac{20985}{6784}2^m>3\cdot2^m
-\]
-
-bits, apart from a fixed type-dependent constant.
-
-This is important but not sufficient. Bit-length surplus must be converted into
-the **specific** required low bits.
-
-## Current preferred candidate state
-
-A future candidate should carry
-
-\[
-\boxed{(i,m,j,W,z,n),}
-\]
-
-where:
-
-- \(i\) is one of finitely many tower/phase types;
-- \(m\) is the unbounded dyadic scale;
-- \(j\in\{0,\ldots,255\}\) is the finite stage odometer;
-- \(W\) is a finite word carrying the rational frontier and quadratic bulk;
-- \(z\) is the ordinary residual high tail;
-- \(n\) is one explicitly marked ordinary positive integer.
-
-A substep must replay one exact Collatz tower block and connector. A full stage
-must have the form
-
-\[
-(i,m,0,W_m,z_m,n_m)
-\longmapsto
-(i',m+1,0,W_{m+1},z_{m+1},n_{m+1})
+\bar A+2^{\bar K}\theta,
 \]
 
 with
 
 \[
-W_{m+1}
-\text{ implementing }
- u_{m+1}=u_m+2^{m+1}u_m^2,
+0\le\eta<2^{\bar K},
+\qquad
+0\le\theta<3^G.
 \]
 
-and
+Every finite schedule therefore has infinitely many ordinary realizations. Infinite closure remains the only relevant test.
+
+# Connector control is finite-word computable
+
+The following are now infrastructure rather than existential data:
+
+- offset Montgomery precision lifting (`L-0026`);
+- cycle-aligned Newton doubling (`L-0027`);
+- exact connector compilation (`T-0025`);
+- the padding-counter isometry (`T-0028`);
+- adaptive 512-cell prefix routing (`T-0029`);
+- the positive ordinary quadratic bulk generator (`T-0030`).
+
+No infinite inverse-prefix word must be preloaded. Every required finite connector word can be generated from finite stage data.
+
+# Corrected stage form
+
+For one fixed corrected 256-transition stage at scale `m`,
 
 \[
-n_{m+1}=T^{L_m}(n_m)
+z^+
+=
+\frac{3^{A_m}z+C_m}{2^{D_m}},
 \]
 
-for the exact concatenated deterministic block.
+where
 
-## The load-bearing missing theorem
+\[
+A_m=\frac{5369}{2}2^m+1792,
+\]
 
-The remaining candidate theorem is an exact **surplus-routing stage
-substitution**. It must prove, uniformly for every sufficiently large scale:
+\[
+D_m=\frac{1085579}{256}2^m+2816.
+\]
 
-1. all 256 connector cylinders are selected exactly;
-2. the periodic frontier and odometer are updated by finite control;
-3. the quadratic bulk update is performed on a finite forward-generated word;
-4. newly available residual bits are routed into the exact next bulk and
-   connector prefix;
-5. the residual recurrence
+Let `R_m` be the canonical correction and `S_m` the canonical cap. Every stage input is
+
+\[
+z=R_m+2^{D_m}Y_m
+\]
+
+and its output is
+
+\[
+z^+=S_m+3^{A_m}Y_m.
+\]
+
+# Major correction: the free quotient cannot survive
+
+`L-0030` proves
+
+\[
+0\le S_m<3\,3^{A_m}.
+\]
+
+`T-0031` proves
+
+\[
+2^{D_{m+1}}>512\,3^{A_m}.
+\]
+
+Hence every valid ordinary stage transition satisfies
+
+\[
+\boxed{
+0\le Y_{m+1}<\frac{Y_m+3}{512}.
+}
+\]
+
+Every positive integer `Y_m` strictly decreases. Any ordinary infinite stage realization therefore reaches
+
+\[
+Y_m=0
+\]
+
+after finitely many scales.
+
+The former preferred candidate—a growing self-feeding Montgomery quotient—is impossible in this coordinate. The raw stage remains supercritical, but its ordinary path must move along the canonical corrections themselves.
+
+# Current preferred candidate format
+
+A future candidate consists of:
+
+1. a finite starting scale `m_0`;
+2. one explicit finite stage word and canonical correction `R_(m_0)`;
+3. one explicit marked positive Collatz integer entering that correction;
+4. a total rule producing later stage words `w_m`;
+5. exact late-stage stitching
    \[
-   z_{k+1}
-   =
-   \frac{3^{G_k}z_k+\theta_k-\eta_{k+1}}{2^{K_{k+2}}}
+   \boxed{S_m(w_m)=R_{m+1}(w_{m+1})};
    \]
-   stays integral, nonnegative, and above a stated threshold;
-6. the marked ordinary integer is transported through every deterministic
-   Collatz step;
-7. the stage returns to the same finite syntactic track types at scale \(m+1\);
-8. one explicit finite initial configuration exists.
+6. exact expansion of every compressed stage into its 256 local connector blocks;
+7. permanent positivity and avoidance of `1,2`.
 
-Without item 4, nested Hensel prefixes define only a 2-adic limit. Without item
-6, the construction remains an unmarked auxiliary population.
+After the quotient has vanished, the stage-boundary residuals are exactly
 
-## Routes now excluded as complete candidates
+\[
+z_m=R_m,
+\qquad
+z_{m+1}=S_m=R_{m+1}.
+\]
 
-The following do not suffice:
+No inverse-limit object is substituted for an ordinary marker.
 
-- a fixed periodic residue table (`L-0018`);
-- a finite high-tail library with affine counter rules (`T-0021`);
-- arbitrary finite connector depth (`L-0017`);
-- the 128-step one-connector budget (`T-0022` precursor);
-- positive residual bit-length surplus without exact routing (`T-0024`);
-- a finite-state regular marked grammar (`T-0020`);
-- a compact graph-directed or 2-adic attractor without an ordinary marker.
+# Shrinking-cusp constraint
 
-## Regular controls
+Every late stitched correction must satisfy
 
-Every bounded scale/counter truncation and every finite-state approximation
-should be compiled through `L-0015`/`T-0020` and submitted to PR #12's exact
-sanctuary verifier. Such controls are useful for producing concrete failure
-words and safe kernels, but only an all-scale symbolic rule advances the present
-route.
+\[
+R_{m+1}=S_m<3\,3^{A_m}.
+\]
 
-## Non-negotiable candidate checks
+Relative to its own modulus,
+
+\[
+\frac{R_{m+1}}{2^{D_{m+1}}}
+<2^{-\Xi_m},
+\]
+
+where
+
+\[
+\Xi_m
+=
+\frac{22173699}{5248}2^m-rac{1106}{41}.
+\]
+
+Thus a candidate stage word must place its canonical correction inside an exponentially shrinking completion-height cusp at every sufficiently large scale.
+
+# Constructive candidate architecture
+
+A theorem-quality construction may use:
+
+- the four phase-34 tower types as a finite alphabet;
+- adaptive counter addresses to route low connector prefixes;
+- finite Newton/Montgomery work tapes;
+- occasional transitions through other negative-cycle phases;
+- larger collision alphabets as rare repair stages;
+- a nonregular substitution or pushdown directive for the stage words.
+
+The output must prove exact cap-to-correction equality, not merely prefix agreement.
+
+# Obstructive candidate audit
+
+Before promoting any proposed directive, check whether another branch already excludes its complexity class:
+
+- direct dyadic boundary directives: PR #33 `T-9702`;
+- finite-state regular marked systems: PR #12 / `T-0020`;
+- finite-state strictly causal feedback: issue #21 `T-9603`--`T-9604`;
+- short eventually periodic stack directives: PR #20;
+- finite high-tail libraries with affine counter rules: `T-0021`.
+
+# Leading next experiments
+
+## Exact stage correction search
+
+Compute canonical pairs
+
+\[
+(R_m(w),S_m(w))
+\]
+
+by the incremental residue-block recurrence rather than one giant inverse. Search directly for
+
+\[
+S_m(w)=R_{m+1}(w').
+\]
+
+The search should expose:
+
+- the new residue blocks;
+- completion height;
+- exact replay metadata;
+- the marked physical boundary.
+
+## Fixed-room transfer
+
+After removing the fixed 256-cycle exponent cap, the normalized stage multiplier squares under scale doubling. Adapt PR #16's fixed-room past/future framework to the stage correction sequence.
+
+## Completion-height lower bound
+
+A uniform theorem keeping every late correction above
+
+\[
+3\,3^{A_{m-1}}
+\]
+
+would exclude this phase-34 stitching architecture completely.
+
+# Routes not sufficient by themselves
+
+The following are not candidates:
+
+- arbitrarily long finite tower schedules;
+- a nested counter address in `Z_2`;
+- a growing local high tail without the next-stage correction;
+- positive full-stage information surplus;
+- a generated connector word with no physical residual membership;
+- a finite-state marked grammar;
+- a compact attractor;
+- an ordinary quadratic work tape not embedded in the marked Collatz state.
+
+# Non-negotiable candidate checks
 
 A future `K-####` file must prove:
 
-- one finite positive starting integer exists explicitly;
-- every tower and connector word agrees with the unique Collatz trajectory;
-- the marker is transported exactly forever;
-- the scale and odometer updates are total on the accepted state set;
-- the quadratic bulk is generated forward rather than read from a 2-adic oracle;
-- every residual division is exact and leaves a nonnegative ordinary integer;
-- all next prefix/carry obligations are satisfied;
-- positivity holds at every physical boundary;
-- the full corrected stage, including repairs, has justified net growth;
-- the stage grammar regenerates indefinitely from the finite initialization;
-- the marked trajectory is unbounded or permanently avoids the terminal cycle.
+- one finite positive starting integer explicitly;
+- exact agreement with every deterministic Collatz step;
+- entry into the first stated canonical correction;
+- total generation of every later stage word;
+- exact cap-to-correction equality from some finite scale onward;
+- exact local integrality inside every compressed stage;
+- nonnegative ordinary values at every boundary;
+- no substitution of a 2-adic completion for the marker;
+- justified unboundedness or permanent avoidance of the terminal cycle.
