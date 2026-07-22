@@ -50,6 +50,16 @@ checkers are vendored in `X-9876`. The odd-prime and scoped low-jet results
 remain `PROPOSED` pending external review; `L-9873` additionally quarantines
 its arbitrary-order degree lemma as a proof-completeness boundary.
 
+Wave eight reassigned each successful lane twice more. It derived terminal-jet
+nonclosure, actual one-hot reachability, and common-width live-head exposure;
+sharp H deficit pressure, repeated-core capacity, and critical-budget
+summability; residual-shadow propagation and periodic Padé defect filtration;
+and an explicit infinite-section obstruction for the exponential padding
+chart. The lanes then cross-reviewed one another's files. That internal cold
+review found and repaired one absolute-versus-relative core bound, one
+finite-prefix denominator qualification, and one typesetting error before
+publication; all claims remain `PROPOSED` pending external review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -63,6 +73,7 @@ its arbitrary-order degree lemma as a proof-completeness boundary.
 | `PR7/LIT-KTHM-0030` | The imported Mahler 2-adic Hermite--Lindemann theorem was not reproved. Its hypotheses were specialized explicitly to `-a log(q^2)/2^sigma`, and the elementary rational-address reduction was reconstructed in `L-9809`--`L-9810`. | The transcendence and nonperiodicity conclusions are conditional on the cited imported theorem. They rule out eventual periodicity and autonomous finite generation, not 2-automaticity. |
 | `PR16/T-9313`, `PR16/T-9314` | The root lifting, minimum plateau criterion, extension digit, exact modular successor, and renewal law were rederived in `L-9812` and `L-9815`. The stored directive word was replayed through depth 47 and its endpoint residue checked independently. | The stated depth-47/48 values are internal exact computation, not an externally reviewed global-minimality certificate. Divergence still requires infinitely many renewals. |
 | `PR19/L-9511` and the H cylinder formulas | Exact ordered offset sums were used to prove genuine infinite first-crossing families and the optimal two-suffix cover in `L-9813`--`L-9814`. `R-9803` proves that a phase-only bounded-carry return cannot iterate this compiler. | These results prove many local strict crossings, not a closed infinite H orbit. The retained 2-adic tail is the live return coordinate. `PR19/C-9501` remains empirical. |
+| `PR19/D-9501`, `PR19/T-9508` | The exact block recurrence and legality congruences were re-derived before proving `L-9878`--`L-9879`. The critical asymptotic and discounted core budget were used only as explicit hypotheses in the branch-qualified parts of `L-9879` and `L-9882`. | The recurrence supports the universal pressure and repeated-core lemmas. The critical conclusions inherit `T-9508`'s `PROPOSED` status and do not prove that the critical alternative occurs. |
 | `PR20/L-9410` | The formal Padé polynomials were reconstructed through Boolean moments and finite q-Lucas blocks. `L-9816` proves exact diagonal factors, growing even/odd cyclotomic factors, honest homogenization, and the asymptotic size of the automatic sector. | Automatic cyclotomic cancellation remains strictly below the period-four threshold. Exceptional residual blocks, noncyclotomic factors, and specialization gcds are not dismissed. |
 | `PR12/L-9102`, `L-9103`, `L-9110`, `L-9112` | `L-9818` separates canonical binary acceptors from the padded base-64 Mealy router actually needed for successor correlation. The `H_d` transition skeleton is uniformly `(d+3)`-suffix-synchronizing, with sharp delay, but its only reset quotient loses Moore colors. | Regular-language safety alone does not supply itinerary synchronization. The conditional exponential gap theorem awaits a chart-exact bounded-reset router or a direct pair-merging result. |
 | `PR20/L-9410` residual refinement | `L-9816` normalizes every exceptional order by `U=T^g`, classifies all reduced-prime residual zeros with multiplicity, bounds their total degree by `O(n log n)`, and bounds one copy of every antisymmetric composite exception linearly. | The classified exceptional sectors cannot repair a quadratic deficit. Higher composite multiplicity, non-antisymmetric composite residuals, noncyclotomic factors, and specialization gcds remain open. |
@@ -79,17 +90,42 @@ its arbitrary-order degree lemma as a proof-completeness boundary.
 | `L-9803`, `R-9801`, `L-9806` | adelic/CRT lane | hypotheses, CRT digits, signs, and late periodic formulas recomputed | no theorem forces the combined digit to vanish or recur infinitely often |
 | `L-9804`, `L-9805` | active-cylinder lane | target moduli, positivity, valuations, products, suffix/global criteria, and growth rates recomputed | the exact equality `U_s^(2)=81t_s+1` remains open for a stabilized prefix |
 | `L-9807`, `R-9802` | H geometry lane | concatenation formulas and all countermodel integers recomputed | the word-specific offset inequality remains open |
-| `L-9808`--`L-9811`, `L-9817`, `L-9820`, `L-9852`, `L-9858`, `L-9863`, `L-9867` | collision/padding lane and integrating agent | geometric truncation errors, isometric transport, logarithmic valuation, chart divisibility, scale toggle, quotient parity, physical routing equivalence, residual-defect XOR law, full correction isometry, triangular normal form, rooted-tree counts, exact section recursion, Mealy minimality, and composition/inverse section laws recomputed | every isometric correction is LSF-causal and finite state is exactly finite sections, but the physical scale update and uniform finiteness of its section family remain open |
+| `L-9808`--`L-9811`, `L-9817`, `L-9820`, `L-9852`, `L-9858`, `L-9863`, `L-9867`, `L-9876` | collision/padding lane and integrating agent | geometric truncation errors, isometric transport, logarithmic valuation, chart divisibility, scale toggle, quotient parity, physical routing equivalence, residual-defect XOR law, full correction isometry, triangular normal form, rooted-tree counts, exact section recursion, Mealy minimality, composition/inverse section laws, and the exponential chart's exact zero-spine slope separation were recomputed; direct rational checks covered all four recovery lengths | the chart and inverse address map have infinite sections, but a special cancellation in the complete scale-dependent zipper conjugacy is not excluded |
 | `L-9812`, `L-9815` | active-cylinder lane and integrating agent | plateau equivalence, legal endpoint residues, successor formula, and stored depth-47 endpoint replayed | no theorem forces infinitely many renewals or global ordinary stabilization |
 | `L-9813`, `L-9814`, `R-9803` | H geometry lane | suffix products, open phase intervals, exact counts through length four, two-suffix cover, uniform margin, and tail obstruction recomputed | no invariant return set for the full retained tail coordinate |
 | `L-9816` | active-cylinder/Padé lane and integrating agent | diagonal order, local period-four factors, q-Lucas block multiplicity, asymptotic degree, and specialization clearing checked | exceptional composite residual multiplicity and noncyclotomic gcd remain open |
 | `L-9818`, `L-9819` | adelic/CRT lane and integrating agent | difference recurrence, product-formula wedge, reset delay, carry-avalanche algebra, overlap, and Hamming bounds recomputed | neither bounded carry avalanche nor chart-exact bounded synchronization is proved |
-| `R-9804`, `L-9830`, `L-9834`, `L-9847`, `L-9853`, `L-9865` | adelic/CRT lane, integrating agent, and H reviewer | inverse digit/carry invariant, signed-cylinder injectivity, difference counts, energy, valuation histogram, borrow settlement, common-translation fibers, forbidden intervals, exceptional pointed gaps, exact coefficient/bucket lifts, translated carries, two-source stable merges, and the live first-two selector recomputed | one width lift reduces the actual selector to fixedly many bucket-head candidates, but no bounded recurrence propagates all source heads or forces a positive successor gap |
+| `R-9804`, `L-9830`, `L-9834`, `L-9847`, `L-9853`, `L-9865`, `L-9877`, `L-9881`, `L-9883` | adelic/CRT lane, integrating agent, and H reviewer | inverse digit/carry invariant, signed-cylinder geometry, arbitrary-width jet compiler, two-width carry/merge selector, actual nonclosure witness, one-hot universal jet and terminal-residue reachability, Myhill--Nerode bounds, and common-width live-head exposure were recomputed | prefix-cylinder and labeled two-ray selectors require unbounded state, but promotion to the unrestricted global first-two selector still needs the exact block-zero exposure criterion `L-9883/(13)` |
 | `L-9822`, `L-9824`, `L-9827`, `L-9829`, `L-9831`, `L-9833`, `L-9835`, `L-9837`, `L-9840`, `L-9841`, `L-9843`, `L-9845`, `L-9846`, `L-9850`, `L-9851`, `L-9854`, `L-9855`, `L-9860`, `L-9866` | H geometry lane and integrating agent | renormalized chain, nonordinary seeds, reset sieve, raw rotation, real drift, inverse graph, residue decoder, triangular equidistribution, sparse/phase/set-valued packing, exact max-flow deficiency, tight-cut impermeability/lattice, and stochastic-kernel scope recomputed | the `{30,60,70}` graph is excluded; Hall cuts are exactly sufficient only for fractional transport, while deterministic selection, integer matching, dynamics, and cross-modulus coherence remain open |
+| `L-9878`, `L-9879`, `L-9882` | exact/critical H lane and integrating agent | transformed-height contraction, sharp `49/37` toll, cumulative deficit pressure, repeated-core LTE repulsion, critical near-injectivity, residue capacity, discounted-budget summability, and logarithmic excess pressure were derived independently from the exact block recurrence | the combined inequalities impose a rigid frequency-or-spike signature but remain scale-compatible; unit deficits, rounding phases, core upper bounds, and one-occurrence valuation are open |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
-| `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure and refinement, universal Boolean certificates through `s=32`, exact four-step operator, branch filtration, endpoint deviation, order-eight scalar cancellation, and sharpness recomputed | finite dyadic nonvanishing now reaches `s=32`; an endpoint-twist invariant, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
+| `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
 | `L-9868`--`L-9875` | period-four quotient lanes and integrating agent | two-level block/carry formulas, odd-prime minimizers and two jets, composite distinguished/value/first-jet descents, interpolation coefficients, dyadic boundary pairing, scalar-kernel interaction proof, and binary clusters were recomputed; `X-9876` supplies exact finite audits | odd prime powers are closed subject to external review; the universal degree lemma in `L-9873`, composite residual noncancellation, dyadic uniform transfer, and the mod-four lift remain open |
+
+### Independent wave-eight arithmetic audits
+
+The Padé anchor in `L-9880/(20)` was replayed independently from the exact
+q-Pascal summand transition in `F_2[X]/(X^105)`.  All 128 phases `c mod 128`
+were tested, which exhausts phase dependence at this precision.  Every listed
+Boolean coefficient and every asserted zero coefficient through degree 104
+matched; the observed order sets were exactly `{78}`, `{86}`, `{92}`, and
+`{104}` at `s=36,40,44,48`.
+
+The survivor rows of `L-9877/(21)--(22)` were independently reconstructed from
+the exact coefficient formula.  The three actual `D=50` prefixes have refined
+jets `2418,1138,562`, and their two-zero lifts reverse the old head order as
+claimed.  The one-hot boundary `m=2,n=5` in `L-9881` reproduces jet `2418`,
+terminal state `54481006`, and representative `2596324507648` exactly.
+All suffixes at horizons `m=1,2` were also exhaustively replayed against the
+exposure congruence of `L-9883`; every solution lay in phase `1 mod 4` and had
+the prescribed unique block-zero suffix.
+
+For the H claims, the one-step identity, sharp `X>=147` boundary list,
+repeated-core LTE valuation, cumulative pressure telescoping, and critical
+budget summability were re-derived algebraically.  No orbit enumeration or
+floating-point inference enters `L-9878`, `L-9879`, or `L-9882`; the displayed
+decimal constants are explanatory only.
 
 ### Independent `L-9839` even-`K` jet audit
 
@@ -129,8 +165,18 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   width lift from fixedly many bucket-local heads. It does not propagate those
   heads across all widths, bound the selected gap below, or prove infinitely
   many minimum renewals.
+- `L-9877`--`L-9883` prove unbounded terminal-jet information, universal
+  one-hot reachability, and genuine common-width exposure for restricted
+  cylinder selectors. They do not yet expose those witnesses against every
+  other prefix in the unrestricted global order; `L-9883/(13)` is the exact
+  remaining block-zero condition.
 - The two-suffix H compiler solves one crossing and does not close the return
   dynamics after renormalization.
+- `L-9878`, `L-9879`, and `L-9882` force linear rounded-deficit pressure,
+  near-injective critical cores, and summable relative valuation errors. These
+  facts remain mutually compatible at the inequality level because the
+  critical valuation scale is exponential in orbit time; no contradiction or
+  ordinary infinite H chain is claimed.
 - Automatic Padé factors are substantial but quantitatively insufficient;
   this is not a proof that all polynomial or arithmetic gcd cancellation is
   insufficient.
@@ -204,16 +250,14 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `L-9857` decides absorption only after a width is supplied. Its finite
   ordinary horizon is `2^(Theta(3^k))`, and successive fixed-width decisions
   do not certify a last unabsorbed width.
-- `L-9848`, `L-9856`, `L-9859`, `L-9861`, and `L-9862` prove dyadic target
-  nonvanishing only for the actual remainder layers
-  `s=4,8,12,16,20,24,28,32`. Their exact finite transitions do not prove the
-  conjectural all-layer augmentation identity. Thirty-two-channel minimality
-  is only among residue-sum quotient states. `L-9864` gives an exact four-step
-  operator and a sharp order-eight scalar congruence, but no endpoint-twist
-  invariant capable of propagating the large orders. The
-  `L-9839` residual envelope still bounds the full gcd sector only after its
-  explicit transverse-jet transfer inequality is proved for any surviving
-  residual zero.
+- `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, and `L-9880` prove
+  dyadic target nonvanishing only for the actual remainder layers
+  `s=4,8,12,16,20,24,28,32,36,40,44,48`. The residual-shadow hierarchy does
+  not prove the conjectural all-layer augmentation identity; the next layer
+  needs new anchor jets through degree 110. Thirty-two-channel minimality is
+  only among residue-sum quotient states. The `L-9839` residual envelope still
+  bounds the full gcd sector only after its explicit transverse-jet transfer
+  inequality is proved for any surviving residual zero.
 - `L-9860` gives necessary Hall cuts for partial residue information, and
   `L-9866` proves them sufficient for real-valued fractional allocation only.
   They do not turn an allowed set or stochastic kernel into a deterministic
@@ -310,3 +354,21 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     `L-9865`'s coefficient lift, periodic new digit, two trivial exclusions,
     wrapped two-source merge, translated carry, and old/new gap wraps before
     using its selected labels in `L-9847`.
+22. Continue the survivor review with `L-9877`, `L-9881`, and `L-9883`:
+    verify the arbitrary-width phase factors and low carry, replay the
+    depth-five nonclosure witness, prove the power-of-81 subgroup order, and
+    keep prefix-cylinder exposure distinct from the global block-zero
+    criterion.
+23. Check `L-9878` directly from the PR #19 block recurrence, especially the
+    finite `X<147` legality list, the signs of `theta,d,o`, and the distinction
+    between deficit mass and deficit frequency. Then audit `L-9879`'s LTE
+    subtraction and critical repeat-count argument before using its capacity
+    constant six.
+24. Read `L-9882` only after those two H claims and `PR19/T-9508`: verify that
+    the discounted budget is for `log u/r`, that the shifted core sum is
+    summable, and that the final compatibility model is explicitly not an
+    exact orbit construction.
+25. For `L-9880`, first prove subset-shadow propagation without truncation,
+    then check the period-four and period-sixteen Hasse filtrations. Finally
+    replay all 128 anchor phases through degree 104; do not infer `s=52` or the
+    transverse residual-to-gcd transfer from the four new layers.

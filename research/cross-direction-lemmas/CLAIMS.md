@@ -83,5 +83,13 @@ repository review.
 | L-9873 | Lemma | Normalized composite jets admit candidate integral finite-channel interpolation | PROPOSED | L-9868; low jets L-9871, L-9872 |
 | L-9874 | Lemma | The two dyadic Newton-boundary families are nonzero at every order | PROPOSED | L-9868, L-9839, L-9848 |
 | L-9875 | Lemma | The characteristic-two quotient splits into a solved scalar kernel and one transfer state | PROPOSED | L-9868, L-9874 |
+| L-9876 | Lemma | Every exponential padding-counter chart has infinitely many rooted-tree sections | PROPOSED | L-9867; PR3/T-0028 |
+| L-9877 | Lemma | Arbitrary-width terminal jets compile survivor blocks but lose one digit at every further lift | PROPOSED | L-9847, L-9865; L-9853 for comparison |
+| L-9878 | Lemma | Positive exact H chains pay a sharp linear rounded-deficit toll | PROPOSED | PR19/D-9501 |
+| L-9879 | Lemma | Repeated H cores force exponential completion height and asymptotic injectivity | PROPOSED | PR19/D-9501; PR19/T-9508 for critical consequences |
+| L-9880 | Lemma | Residual shadows and periodic defect filtration settle Padé layers 36 through 48 | PROPOSED | L-9848, L-9862, L-9864 |
+| L-9881 | Lemma | One-hot survivors realize every finite terminal jet and force unbounded lift-compiler state | PROPOSED | L-9826, L-9853, L-9867, L-9877 |
+| L-9882 | Lemma | Critical H valuation errors are summable and excess deficit pressure is logarithmic | PROPOSED | PR19/T-9508, L-9878, L-9879 |
+| L-9883 | Lemma | Every survivor suffix is a unique live cylinder minimum at suitable one-hot depths | PROPOSED | L-9826, L-9847, L-9877, L-9881 |
 
 No `K-####` candidate is proposed.

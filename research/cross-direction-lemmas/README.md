@@ -115,6 +115,15 @@ dependency.
 | [`L-9874`](claims/L-9874-pade-dyadic-boundary-nonvanishing.md) | Dyadic Padé lane | All-order nonvanishing for the two Newton-boundary index families. |
 | [`L-9875`](claims/L-9875-pade-dyadic-cartier-kernel.md) | Dyadic Padé lane | Exact Cartier/type-C product, solved scalar kernel, transfer recurrences, and binary clusters. |
 
+| [`L-9876`](claims/L-9876-padding-isometry-infinite-sections.md) | Collision/padding lane | The exponential padding chart exposes a new rooted-tree section at every zero-prefix depth, so neither it nor its inverse address map has a fixed synchronous finite-state realization. |
+| [`L-9877`](claims/L-9877-survivor-terminal-jet-selector.md) | PR #16 survivor selector | Arbitrary-width terminal jets compile every suffix block exactly; the two-width selector uses four refined source lists, and every further lift consumes one additional base-64 digit. |
+| [`L-9878`](claims/L-9878-h-rounded-deficit-pressure.md) | PR #19 exact H chain | Rounded-critical steps contract transformed height, while every positive exact chain pays at least `log_8(49/37)` positive rounded-deficit mass per step after overshoots and phase costs. |
+| [`L-9879`](claims/L-9879-h-critical-core-repulsion.md) | PR #19 critical H chain | Repeated odd cores force exponential completion height; in the critical regime all but `O(log N)` early positions have distinct cores, yielding the sharp residue-capacity constant six. |
+| [`L-9880`](claims/L-9880-pade-residual-shadow-layers.md) | PR #20 Padé lane | Exact residual shadows and periodic defect filtration prove augmentation orders `78,86,92,104` and exclude every larger dyadic target at `s=36,40,44,48`. |
+| [`L-9881`](claims/L-9881-survivor-one-hot-jet-reachability.md) | PR #16 survivor compiler | One-hot survivor prefixes in one phase realize every finite terminal jet and terminal residue, forcing at least `64^m` residual states at horizon `m`. |
+| [`L-9882`](claims/L-9882-h-critical-budget-pressure.md) | PR #19 critical H chain | The discounted critical budget makes relative valuation errors absolutely summable; core capacity forces logarithmic surplus over the sharp deficit baseline at density-one prefixes. |
+| [`L-9883`](claims/L-9883-survivor-common-width-exposure.md) | PR #16 survivor selector | Every suffix becomes the unique minimum among all common-width descendants of a suitable one-hot prefix, giving a `2^m` live-head lower bound and an exact block-zero criterion for global promotion. |
+
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
 independently reconstructed and which conjectural boundaries remain open.
@@ -130,11 +139,15 @@ independently reconstructed and which conjectural boundaries remain open.
    gives the exact two-sided isolation test and repeated-arc packing bound for
    successor representatives. `L-9853` then refutes any uniform pointed-gap
    contraction based only on a long zero run: legitimate `81` twists create
-   exponentially exceptional points. `L-9865` now supplies the missing live
-   selector for one width lift: each new bucket is a stable merge of two old
-   source lists, with at most four head candidates. The remaining task is to
-   propagate all source heads across widths by a bounded signed-carry state;
-   ambient multiplicity and the two unpartitioned old minima are insufficient.
+   exponentially exceptional points. `L-9865` supplies the live selector for
+   one width lift. `L-9877` gives its exact arbitrary-width terminal-jet
+   compiler and an actual witness showing that an unrefined two-head bucket
+   summary is not closed. `L-9881` proves that every finite jet is reached by
+   genuine one-hot prefixes in one phase; `L-9883` exposes every suffix as a
+   unique common-width cylinder minimum. The remaining task is sharply
+   ordinary: prove the block-zero exclusion `L-9883/(13)` often enough to
+   promote these heads to the unrestricted global minimum/successor selector,
+   then control the intervening blocks for the successor.
 2. For the collision lane, propagate the exact compatibility cylinder of
    `L-9852` through the residual grammar. A bulk address routes the physical
    tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
@@ -144,10 +157,15 @@ independently reconstructed and which conjectural boundaries remain open.
    residual words. A sole residual-dependent channel therefore needs exactly
    one bit per corrected bit. `L-9863` proves that every isometric conjugate
    is automatically LSF-triangular, while `L-9867` proves that bounded state
-   is equivalent to finiteness of its rooted-tree sections. The remaining
-   task is therefore to prove the physical scale update is isometric on its
-   full domain and close its section family through the final `K-H` block;
-   triangular finite lookup alone does not do so.
+   is equivalent to finiteness of its rooted-tree sections. `L-9876`
+   evaluates that criterion on the actual exponential padding chart: its
+   zero-prefix sections have pairwise slope separation
+   `nu_2(kappa_l-kappa_k)=r+k`, so both the chart and its inverse address map
+   require unbounded synchronous state. The remaining task is therefore to
+   prove the physical scale update is isometric on its full domain and
+   determine whether the zipper conjugacy cancels this explicit section drift
+   through the final `K-H` block; triangular finite lookup alone does not do
+   so.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
    `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
@@ -179,10 +197,15 @@ independently reconstructed and which conjectural boundaries remain open.
    capacity by decoder phase. `L-9860` extends the screen to partial
    set-valued decoders through exact Hall no-outlet cuts. `L-9866` proves
    those cuts are exactly sufficient for fractional transportation and
-   identifies the tight-cut lattice. The next task is to derive partial
-   low-residue data for a candidate architecture and locate the first
-   deterministic, temporal, or cross-modulus obstruction beyond that sharp
-   fractional relaxation.
+   identifies the tight-cut lattice. Independently, `L-9878` derives a sharp
+   pressure law for the PR #19 block chain, and `L-9879` makes critical cores
+   asymptotically injective with residue-capacity constant six. `L-9882`
+   combines these with the critical budget: relative valuation errors are
+   absolutely summable and excess pressure is logarithmic at density-one
+   prefixes, but unit deficits and near-linear distinct cores still fit the
+   exponential scale. The next arithmetic target is the exact low-residue
+   transition system for `d_n=1`, or a one-occurrence valuation bound strong
+   enough to close that remaining corridor.
 4. For the Padé lane, classify genuinely composite residual multiplicity and
    bound noncyclotomic gcd degree. `L-9816` proves that automatic, reduced-prime,
    and distinct antisymmetric cancellation cannot reach exponent one;
@@ -195,13 +218,14 @@ independently reconstructed and which conjectural boundaries remain open.
    certificates through `s=16`. `L-9859` proves the exact residue-state closure
    criterion and settles `s=20`; `L-9861` supplies the twisted paired state and
    settles `s=24,28`. `L-9862` crosses the first refinement boundary and
-   settles `s=32`, so every target residual is nonzero in the first eight
-   actual layers `s=4,8,12,16,20,24,28,32`. `L-9864` then replaces another
-   finite table with an exact four-step operator whose branch filtration and
-   sharp order-eight scalar congruence isolate one endpoint-twist invariant.
-   Extending the slack bound to all `s=4t` remains conjectural, and the
-   transverse residual-to-gcd transfer of `L-9839` remains independently open
-   wherever a residual zero survives.
+   settles `s=32`. `L-9864` replaces another finite table with an exact
+   four-step operator, and `L-9880` finds the missing invariant in
+   residual-shadow form. Its symbolic defect filtration settles
+   `s=36,40,44,48`, so target residuals are now nonzero in the first twelve
+   actual layers. The next anchor window is degrees `105` through `110`,
+   coupled to a length-twenty periodic-weight filtration for `s=52`.
+   Extending the hierarchy to all `s=4t` and proving the transverse
+   residual-to-gcd transfer of `L-9839` remain independently open.
 5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 6. Test binary-automatic invariant-component colorings. `L-9823` eliminates
