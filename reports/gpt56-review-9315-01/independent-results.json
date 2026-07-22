@@ -1,0 +1,80 @@
+{
+  "checks": {
+    "centered_error_paths": {
+      "charts": 143,
+      "endpoint_transition_checks": 26884,
+      "periodic_phase_positions": 64350,
+      "strict_nonconstant_sign_checks": 59214
+    },
+    "cylinders_and_reconstruction": {
+      "centered_trace_positions": 50083,
+      "direct_residue_checks": 6108,
+      "exhaustive_prefixes": 6108,
+      "max_depth": 96,
+      "random_general_chart_traces": 900
+    },
+    "factor_complexity_and_refutation": {
+      "T-9318_section3_counterexamples": [
+        {
+          "cylinder_blocks": "q_K=0 for every K",
+          "factor_complexity": "p(n)=1",
+          "liminf_p_over_n": 0,
+          "word": "0^infinity"
+        },
+        {
+          "cylinder_blocks": "q_K=0 for every K",
+          "factor_complexity": "p(n)=1",
+          "liminf_p_over_n": 0,
+          "word": "1^infinity"
+        }
+      ],
+      "largest_terminal_zero_run": 2,
+      "largest_terminal_zero_run_witness": {
+        "period": "110",
+        "run": 2
+      },
+      "nonconstant_periodic_words_scanned": 2794,
+      "periodic_scan_depth": 4096
+    },
+    "morphic_transfer": {
+      "maximum_tested_distortion": "12/1",
+      "random_non_erasing_morphisms": 600,
+      "transferred_factor_checks": 600
+    },
+    "orbit_difference_and_recurrence": {
+      "exhaustive_finite_survivor_words": 2040,
+      "first_nonzero_difference_carries": 242632,
+      "global_recurrence_cone_checks": 496812,
+      "max_random_depth": 220,
+      "random_long_finite_survivor_words": 600,
+      "repeated_factor_chains": 496812
+    },
+    "thue_morse_blocks": {
+      "blocks_checked": 32768,
+      "first_50_zero_positions": [
+        65, 88, 135, 137, 179, 196, 233, 254, 302, 320,
+        329, 423, 504, 514, 659, 706, 781, 913, 956, 1033,
+        1081, 1106, 1199, 1230, 1318, 1379, 1385, 1423, 1481, 1538,
+        1557, 1597, 1656, 1871, 1921, 1923, 1964, 2062, 2120, 2181,
+        2252, 2286, 2327, 2367, 2375, 2376, 2406, 2533, 2538, 2603
+      ],
+      "last_zero_position": 32761,
+      "longest_zero_run": 2,
+      "max_square_length": 8192,
+      "max_square_m": 13,
+      "nonzero_blocks": 32214,
+      "square_witnesses": 14,
+      "zero_blocks": 554
+    },
+    "transducer_transfer": {
+      "identical_output_factor_checks": 800,
+      "max_states": 12,
+      "random_transducers": 800,
+      "synchronized_state_pairs": 800
+    }
+  },
+  "reviewer": "gpt56-review-9315-01",
+  "seed": 2467664664,
+  "semantic_digest": "8499ecd4c12984aacaa973758fa3226895a85e63cc27f9b0f87e37a3a8936f37",
+  "target_commit": "900ba417c968d8a41bc56a30d3ccc941284d8ce2"
+}
