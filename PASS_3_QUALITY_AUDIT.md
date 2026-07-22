@@ -134,6 +134,58 @@ Current PR #19 advanced from the finite search summarized in pass 3 to iteration
 
 The reviewed replacement includes this current state.
 
+## Final live-refresh additions
+
+The audit was extended through PR #49 before the reviewed cutoff was frozen. Three further changes materially sharpen the map.
+
+### PR #48 separates reproduced and unreproduced cycle claims
+
+PR #48 independently reconstructs and passes PR #45's critical mechanical compiler, its frozen modular construction, and its directed rejection interval. It also passes PR #42 `T-8601`, the no-bare-congruence-sanctuary theorem.
+
+It explicitly does **not** reproduce PR #42 `T-8602` or the complete 802-billion-composition `X-8601` run. Those results remain source-proposed/source-exact rather than independently verified.
+
+### PR #49 reduces quotient refund to width one and one open definedness problem
+
+PR #49 proves at proposed level that refund already occurs for one connector. For width `L`,
+
+```text
+A_L(B)=7L(B+1)+56L(L-1),
+E_L(B)=11L(B+1)+88L(L+1),
+```
+
+and refund holds when
+
+```text
+5B>9288L+9363.
+```
+
+The first qualifying multiple for `L=1` is `B=3744`.
+
+Its exact causal connector compiler yields a deterministic partial map on
+
+```text
+(t, source type i, target type j, residual z).
+```
+
+Whenever the decoder is defined, the next type is unique; for `t>=3744` and `z>=1`, the next residual satisfies `z'>=2z`. The sole positive gap is therefore one finite residual whose decoder remains defined forever. This is now the canonical content of `ACL-P036`.
+
+### PR #34 wave 25 supplies sharper cycle and controller boundaries
+
+PR #34 now proposes:
+
+- every nontrivial positive cycle has at least seven valuations different from two;
+- a lossless cross-prime excess-path/CRT compiler;
+- additive zero-tested one-counter controllers have ultimately periodic output and cannot solve the centered forced tail.
+
+Its exact distributed-pulse note gives
+
+```text
+C_delta=z_0D_delta+R_delta,
+R_delta=sum_i b_i(2^delta_i-1)2^(A_i+Delta_i)3^(N-i-1).
+```
+
+Thus the pulse integrality gate is exactly `D_delta | R_delta`, and a fixed-total two-pulse family reduces to one exponential congruence. No hit is claimed.
+
 ## Replacement rule
 
 For current research decisions, use:
