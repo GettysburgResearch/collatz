@@ -1,0 +1,83 @@
+{
+  "boundaries": {
+    "not_proved": [
+      "complete denominator factorization",
+      "a positive nontrivial cycle",
+      "an infinite two-branch chart path",
+      "a Collatz counterexample"
+    ],
+    "proved": [
+      "Farey-neighbor monomial commutator",
+      "five-factor order cover",
+      "p-adic quotient-cylinder residues",
+      "paired-chart proper-factor divisibility",
+      "directed real and modular rejection of both frozen words"
+    ]
+  },
+  "experiment_id": "X-8302",
+  "farey_mechanical_commutator": {
+    "commutator_abs_power_2": 217976794616,
+    "commutator_abs_power_3": 753110839880,
+    "critical_lower": [440541600217,753110839881],
+    "critical_upper": [80448749305,137528045312],
+    "determinant": 1,
+    "small_neighbor_pairs_checked": 720,
+    "target_decomposition": "4*lower + 1*upper"
+  },
+  "negative_three_chart": {
+    "accelerated_length": 3149971404836,
+    "base_numerator_mod_M": 1274355650519809298,
+    "ceil_mod_M": 1377488262577689719,
+    "chart_blocks": 1574985702418,
+    "conclusion": "the frozen paired-chart word is not an integral cycle",
+    "crt_modulus": 1465129870107858983,
+    "crt_quotient_residue": 1051915013441653484,
+    "distance_to_nearest_integer_lower_bound": "0.002804312818122854605656551438",
+    "expanding_blocks": 1307356254663,
+    "fixed_point_lower": "1567441266425753353472608.002804312818122854605656551438441267269013717272501660698482710228928102929253619708480614089546310869531692147085897640",
+    "fixed_point_upper": "1567441266425753353472608.002804312818122854605656551438441267269013717272501660698482710228928102929253619708480614089546431693597989690936299955",
+    "floor_mod_M": 1377488262577689718,
+    "interval_width": "1.20824066297543850402315E-97",
+    "modified_numerator_mod_M": 0,
+    "modular_nonintegrality": true,
+    "quotient_rows": [
+      {"C_mod_p2":14,"C_over_p_mod_p":2,"D_mod_p2":28,"D_over_p_mod_p":4,"prime":7,"quotient_mod_p":4},
+      {"C_mod_p2":31324,"C_over_p_mod_p":164,"D_mod_p2":25403,"D_over_p_mod_p":133,"prime":191,"quotient_mod_p":175},
+      {"C_mod_p2":71374,"C_over_p_mod_p":254,"D_mod_p2":5058,"D_over_p_mod_p":18,"prime":281,"quotient_mod_p":139},
+      {"C_mod_p2":745281597,"C_over_p_mod_p":26067,"D_mod_p2":459028505,"D_over_p_mod_p":16055,"prime":28591,"quotient_mod_p":22561},
+      {"C_mod_p2":10040711061621337,"C_over_p_mod_p":73613153,"D_mod_p2":10310826674066513,"D_over_p_mod_p":75593497,"prime":136398329,"quotient_mod_p":97639464}
+    ],
+    "same_denominator_as_pr45": true,
+    "selected_positions": [0,4,22,69,75,81,87,93,99,134,140,146,163,169,193,199,204,216,228,240,246,252,263,269,281,305,310,328,346,352,357,363,381,387,393,416,422,434,446,452,463],
+    "selected_swap_count": 41,
+    "swap_mask_hi": 46478,
+    "swap_mask_lo": 8732882846915751955,
+    "total_valuation": 4992586555009,
+    "unique_floor": 1567441266425753353472608
+  },
+  "order_cover": {
+    "covers_word": true,
+    "excess_window": 1842615150173,
+    "factors": [7,191,281,28591,136398329],
+    "lcm": 5893756253070,
+    "orders": [3,95,70,14295,3099962]
+  },
+  "pr45_quotient_cylinder": {
+    "ceil_mod_M": 1364922753942977292,
+    "crt_modulus": 1465129870107858983,
+    "crt_quotient_residue": 1036652324506912103,
+    "fixed_point_lower": "1791361447298439130709020.997528353909851010785971156254639976783166990770191089746347647512000853876732476066041306567799098303933427889678334961",
+    "fixed_point_upper": "1791361447298439130709020.997528353909851010785971156254639976783166990770191089746347647512000853876732476066041306567799315376889593943330234692",
+    "floor_mod_M": 1364922753942977291,
+    "modular_nonintegrality": true,
+    "rows": [
+      {"C_mod_p2":14,"C_over_p_mod_p":2,"D_mod_p2":28,"D_over_p_mod_p":4,"prime":7,"quotient_mod_p":4},
+      {"C_mod_p2":2292,"C_over_p_mod_p":12,"D_mod_p2":25403,"D_over_p_mod_p":133,"prime":191,"quotient_mod_p":92},
+      {"C_mod_p2":281,"C_over_p_mod_p":1,"D_mod_p2":5058,"D_over_p_mod_p":18,"prime":281,"quotient_mod_p":203},
+      {"C_mod_p2":93120887,"C_over_p_mod_p":3257,"D_mod_p2":459028505,"D_over_p_mod_p":16055,"prime":28591,"quotient_mod_p":11474},
+      {"C_mod_p2":10982217986529949,"C_over_p_mod_p":80515781,"D_mod_p2":10310826674066513,"D_over_p_mod_p":75593497,"prime":136398329,"quotient_mod_p":60278776}
+    ],
+    "unique_floor": 1791361447298439130709020
+  },
+  "schema_version": 1
+}
