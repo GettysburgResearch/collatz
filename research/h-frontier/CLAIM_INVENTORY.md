@@ -2,7 +2,7 @@
 
 This index reserves the `*-9500` identifiers for issue #17. It is not the
 repository's canonical `CLAIMS.md`. All theorem-level statements remain
-`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9506`
+`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9507`
 are empirical or exact finite checks and do not promote any universal claim.
 
 ## Packet files
@@ -17,7 +17,9 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_05.md`](claims/ITERATION_05.md) — `L-9516`, `T-9510`, `Q-9506`.
 - [`claims/ITERATION_06.md`](claims/ITERATION_06.md) — `L-9517`, `L-9518`, `T-9511`, `T-9512`, `Q-9507`.
 - [`claims/ITERATION_07.md`](claims/ITERATION_07.md) — `L-9519`, `L-9520`, `T-9513`, `T-9514`, `R-9504`, `Q-9508`.
-- [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact finite ordinary and periodic counterexample sweep.
+- [`claims/ITERATION_08.md`](claims/ITERATION_08.md) — `L-9521`, `L-9522`, `T-9515`, `R-9505`, `Q-9509`.
+- [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact ordinary and short-period counterexample sweep.
+- [`../../experiments/X-9507-h-cycle-complexity/README.md`](../../experiments/X-9507-h-cycle-complexity/README.md) — exact continued-fraction cycle-period certificate.
 
 ## Status table
 
@@ -71,7 +73,13 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `T-9514` | Final finite-alphabet / reset-renewal dichotomy | PROPOSED | conditional on audited `T-9509` |
 | `R-9504` | Pressure and fresh mass are scale-compatible | PROPOSED | blocks false one-dimensional closures |
 | `Q-9508` | Discounted fresh mass or finite-alphabet nonstabilization | IDEA | two exact remaining branches |
-| `X-9506` | Exact counterexample-first ordinary and periodic sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no block cycle through period 14 |
+| `L-9521` | Positive cycle minimum bound | PROPOSED | elementary cycle lemma and exact affine recurrence |
+| `T-9515` | No positive cycle through 2,479,700,524 blocks | PROPOSED | `L-9521`, exact `X-9506`/`X-9507`, Legendre theorem |
+| `L-9522` | Finite-alphabet entropy--capital barrier | PROPOSED | `T-9502`, `L-9515` |
+| `R-9505` | Low-complexity slow-bank templates are impossible | PROPOSED | consequence of `L-9522` |
+| `Q-9509` | Structured counterexample interface | IDEA | high-entropy finite alphabet or unbounded reset--renewal |
+| `X-9506` | Exact counterexample-first ordinary and short-period sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no word cycle through period 14 |
+| `X-9507` | Exact cycle-period compression certificate | INTERNAL EXACT | finite only; supports `T-9515` |
 
 ## Dependency summary
 
@@ -89,37 +97,31 @@ pressure, the discounted capital--core budget, exclusion of the critical
 near-Pillai mode (subject to a Yu-theorem audit), and the monotone ordinary
 minimum.
 
-Iteration 06 added three structural upgrades:
+Iteration 06 added complete closure-boundary classification, the exact centered
+two-place renewal bridge, an integral renewal height, and the future-weighted
+subcritical core demand. Iteration 07 added rounded-deficit pressure, the prime
+firewall, fixed-prime-support exclusion, and the finite-alphabet versus
+reset--renewal split.
 
-1. `L-9517` classifies every closure boundary and repairs the compactness step
-   in `T-9510`;
-2. `L-9518` gives the exact centered two-place renewal bridge and the first
-   useful integral transformed height `Z_k`;
-3. `T-9511` solves the remaining subcritical recurrence in a future-weighted
-   form and proves that every large valuation forces a later unbounded deficit
-   and exponential odd-core reset.
+Iteration 08 attacks structured counterexamples directly:
 
-Iteration 07 adds:
+1. `L-9521` bounds one state of every positive cycle by `L/(1-M)`;
+2. `T-9515` combines that bound with `X-9506`, exact rational logarithm
+   intervals, and Legendre compression to exclude every positive cycle through
+   `2,479,700,524` blocks;
+3. `L-9522` proves that a finite-alphabet survivor with logarithmic capital
+   growth must have a quantitatively positive factor entropy;
+4. `R-9505` excludes logarithmically banked Sturmian, Beatty, automatic, and
+   primitive-substitution templates of zero entropy.
 
-1. `L-9519`, an exact rounded-deficit balance with a uniform positive toll;
-2. `L-9520`, the successive-renewal prime firewall and room-or-primitive-factor
-   law;
-3. `T-9513`, a proper-subsum-audited S-unit proof that no fixed bridge-prime
-   alphabet can recur indefinitely;
-4. `T-9514`, the final finite-alphabet versus reset-renewal structural split;
-5. `Q-9508`, the exact quantitative fresh-mass / finite-alphabet interfaces
-   still needed to exclude the two branches.
+`X-9506` exhausts every ordinary candidate below `3*2^65`; its largest exact
+block lifetime is thirty-four. `X-9507` upgrades the periodic exclusion from
+word period fourteen to more than 2.47 billion blocks by a proof-producing
+continued-fraction certificate.
 
-`X-9506` performs the corresponding counterexample-first finite attack. It
-exhausts every ordinary candidate below `3*2^65` and every periodic block word
-of length at most fourteen. It finds no positive cycle or infinite ray; the
-largest tested exact block lifetime is thirty-four. This strengthens the finite
-negative evidence but does not alter the infinite proof boundary.
-
-The sole infinite mechanism still not excluded is an eventual-zero-carry,
-subcritical ordinary ghost. It must either have bounded letters but a
-nonperiodic finite-alphabet code with infinitely many fresh bridge primes, or
-have unbounded letters with unbounded rounded deficits, exponential core
-resets, and arbitrarily long rooms or large primitive bridge factors. No
-positive integer witness and no proof excluding both branches is contained in
-the packet.
+No structured counterexample has been found. A viable one must now be
+nonperiodic and either have sufficiently high finite-alphabet entropy and
+capital growth, or use unbounded reset--renewal letters while satisfying the
+fresh-prime and discounted-budget restrictions. It must additionally provide
+one positive integer initialization with an exact induction proving legality
+and nontermination.
