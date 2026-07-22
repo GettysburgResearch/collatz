@@ -116,5 +116,9 @@ repository review.
 | T-9803 | Theorem | Adjacent two-hot lifts have an exact correlation law, and libraries of at most 62 fixed templates cannot cover every formal exposure phase | PROPOSED | L-9826, L-9883, L-9885, L-9896, R-9806 |
 | T-9804 | Theorem | Every sparse equal-allocation Pade Casoratian is nonzero, and skipped orders strictly lose normalized 2-adic accuracy at fixed width and largest order | PROPOSED | PR20/L-9408, L-9410; L-9884, L-9891, L-9895 |
 | R-9808 | Refutation | The identity underlying PR16/L-9312 is false, so its fixed four-phase schedule is not established | PROPOSED | elementary arithmetic; PR16/T-9315 only for centered-variable notation |
+| T-9805 | Theorem | The quantitative nondegenerate S-unit bound forces an explicit logarithmic fresh-prime budget across corrected stages | PROPOSED | PR3/L-0031, T-0032; PR13/LIT-KTHM-0043; Evertse--Schlickewei--Schmidt Theorem 1.1 |
+| T-9806 | Theorem | Stabilized cap heads occupy sixteen exact second-level dyadic cells above one common remainder | PROPOSED | T-9802, L-9821, L-9898; frozen PR3 connector algebra |
+| T-9807 | Theorem | Every full D-value p-adic measure has Dirichlet floor D+1, while the dimension-one source measure bounds every scalar approximation below the nine-phase floor | PROPOSED | elementary p-adic pigeonholing; PR20/L-9412--L-9414, R-9408 |
+| T-9808 | Theorem | The positive stage toll losslessly decodes all 256 source types and at most 4^256 fixed rooms support eventual corrected-stage tails | PROPOSED | PR3/L-0031, T-0033, T-0036 |
 
 No `K-####` candidate is proposed.

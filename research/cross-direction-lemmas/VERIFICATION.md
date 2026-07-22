@@ -113,6 +113,19 @@ the refutation received an independent arithmetic/dependency review.  Exact
 bounded replays audit displayed formulas but are not theorem premises.  All
 five claims remain `PROPOSED` pending external repository review.
 
+Wave fourteen followed the new PR #3 fixed-room/S-unit packet, the cap-head
+cell frontier, and PR #20's period-ten elimination proposal.  One lane made
+fresh-prime necessity quantitative with the explicit Evertse--Schlickewei--
+Schmidt solution count and a correlated endpoint-rank calculation.  A second
+resolved the last two cap-head symbols into an exact two-level cell hierarchy.
+The period-ten lane proved the universal p-adic Dirichlet dimension floor and,
+after PR #20 changed during review, repaired the full-measure route closure by
+applying the dimension-one source measure to every scalar approximant.  The
+integrating lane proved that the positive stage toll is a lossless word code
+and that only finitely many fixed rooms can support eventual tails.  Every
+claim received a nonauthoring cold review; source heads were refreshed again
+after review.  All four claims remain `PROPOSED` pending external review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -155,6 +168,10 @@ five claims remain `PROPOSED` pending external repository review.
 | `PR16/D-9302`, `L-9313`, `L-9314`, `CENTERED_POWER.md`, and `ORDINARY_SECTION.md` at `1bb8c6b`; local one-hot packet | `T-9803` derives the adjacent two-hot odd unit `145/81`, its exact correlation with one-hot events, and blockwise survivor trees for any fixed library of at most 62 bounded templates. | The formal avoiding set stays positive-dimensional, but it need not contain an ordinary point.  Delay-growing two-hot gaps, higher weights, and positive intervening blocks remain open. |
 | `PR20/L-9408`, `L-9410`, refreshed `R-9407` at `ed1ee9d`; local `L-9884`, `L-9891`, `L-9895` | `T-9804` proves every arbitrary sparse coefficient minor nonzero via opposite strict tropical assignments, evaluates the canonical sparse cofactor coupling, and quantifies the exact skipped-order deficit. | Consecutive orders uniquely maximize normalized 2-adic accuracy at fixed width/top order, so sparse scalar orders do not evade the period-ten ceiling.  Final reduced-height optimization and genuine Hermite--Pade systems remain open. |
 | `PR16/L-9312` and its schedule dependents at `1bb8c6b` | `R-9808` checks the defining identity and finds `(3/2)^4=81/16=4(81/64)`, yielding the exact missing factor `4^n`.  It separately audits direct-base claims and locally restarted experiments. | The submitted proof of the four-phase full-`3/2` bridge is invalid.  Its conditional conclusion could still be vacuous, and a new six-step mixed `{3/2,1/2}` schedule or direct-`81/64` source theorem would require a fresh proof. |
+| `PR3/L-0031`, `T-0032` at `c37e96e`; `PR13/LIT-KTHM-0043` at `dc7f966`; Evertse--Schlickewei--Schmidt Theorem 1.1 | `T-9805` inserts the exact count `exp((6n)^(3n)(r+1))`, records the safe product rank `257d`, and then factors every fixed word through one scale direction and two endpoint directions per boundary prime. | The resulting logarithmic fresh-prime lower bound is effective but astronomically weak.  It neither locates a new prime nor bounds its size or cap route. |
+| Frozen PR #3 connector table; local `T-9802`, `L-9821`, `L-9898` | `T-9806` telescopes the final internal connector and proves the sixteen last-two-symbol offsets split into complementary six-bit directions above a common remainder. | Exact zeros fall from at most 64 to at most 16, but the exposed `q_0/64` cell is exponentially narrower than the known cap cusp and does not improve its 64-word filter. |
+| `PR20/L-9412`--`L-9414`, `R-9408` at `93739b4`; Vaananen--Wallisser quantitative measure | `T-9807` proves the source-independent floor `omega_D>=D+1`, then applies the source at dimension one to `(-p_n,q_n)`, giving scalar `limsup<=omega_1<17/5<10<=omega_9`. | Full-space scalar one-phase elimination is closed.  Directional native coefficient rays, triangular q-difference dynamics, and coupled Hermite--Pade constructions remain open. |
+| `PR3/L-0031`, `T-0033`, refreshed `T-0036` at `c37e96e` | `T-9808` decodes every toll prefix from separated dyadic valuations, makes the incoming boundary determine the full stage word, and combines this with the fixed-room floor law to bound eventual rooms and tails by `4^256`. | The finite set may be nonempty and is not effectively listed.  No room is initialized or shown compatible with all cap and seam constraints. |
 
 ## New-claim audit matrix
 
@@ -193,6 +210,10 @@ five claims remain `PROPOSED` pending external repository review.
 | `T-9803` | survivor two-hot lane and ordinary-complexity cold reviewer | odd-unit normalization, same-delay correlation, complete exposure fibers, block child bounds, finite-library threshold, dimension estimates, and ordinary/formal separation were reconstructed | all two-hot gaps form an unbounded library; formal dimension does not imply an ordinary point |
 | `T-9804` | integrating Pade lane and ordinary-complexity cold reviewer | arbitrary minors, opposite tropical permutations, cofactor signs, normalized sparse error, consecutive-order deficit, two-place height, and refreshed period-ten overlap were reconstructed | the theorem fixes width and largest order, not the final reduced-height ratio; non-scalar coupling remains open |
 | `R-9808` | integrating agent and survivor cold reviewer | prime-exponent impossibility, exact `4^n` transport, center/radius scaling, mixed six-step product, dependency propagation, and locally restarted experiment scope were reconstructed | the conditional schedule statement may be vacuous; a correct mixed schedule and its forbidden regions are not supplied |
+| `T-9805` | quantitative fresh-prime lane and period-ten cold reviewer | exact ESS constant, nondegeneracy, affine scale factorization, endpoint generator geometry, rank `<=2s_N+1`, scale distinctness, word count, and integer inversion were reconstructed | constants are structural only; boundary signatures and cross-stage endpoint relations may lower rank further |
+| `T-9806` | cap-cell lane and quantitative cold reviewer | internal connector telescope, modulus transfer, inverse unit, both six-bit offset vectors, pairwise cell separation, global 16/240 count, and exact cusp-width comparison were reconstructed | higher inverse-power bits are uncontrolled and the current cusp is wider than the fine cell |
+| `T-9807` | period-ten lane and two nonauthoring cold reviewers | p-adic pigeonhole floor, unbounded-height extraction, D=1 source applicability, exact coefficient height, odd-denominator valuation identity, `omega_1<17/5<10`, and directional escape were reconstructed | the theorem closes only unrestricted scalar/full-measure elimination, not the native thin-vector or coupled routes |
+| `T-9808` | integrating agent and cap cold reviewer | lossless valuation decoder, incoming residue law, fixed-room interval packing, nonuniform-onset finite-subset argument, and eventual-tail uniqueness were reconstructed | `4^256` is finite but huge; the compatible rooms and their seam paths are not identified |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -376,6 +397,39 @@ and radii, and the mixed product `(3/2)^4(1/2)^2=81/64`.  A path-by-path audit
 at PR #16 head `1bb8c6b` separates the invalid full-orbit interpretation from
 the valid locally restarted `X-9304` checks and direct-base claims.
 
+### Independent wave-fourteen arithmetic audits
+
+For `T-9805`, the primary Evertse--Schlickewei--Schmidt formula was checked as
+`exp((6n)^(3n)(r+1))`.  All 256 affine exponent identities were replayed for
+scales `12` through `30`; the fixed-word tuple uses one common scale generator
+and exactly two displayed endpoint directions per boundary prime.  The cold
+review separately checked the final endpoint, distinctness, `4^256` summation,
+and ceiling/max inversion.  It also retained the coarse product rank `257d`
+as a warning against silently replacing a tuple-group rank by its scalar rank.
+
+For `T-9806`, two derivations recovered the factor `q_0/64`, the unit
+`(n_0n_1n_2)^(-1)=59 mod64`, and offset vectors `(0,3,53,1)` and
+`(0,33,7,11)`.  Exact all-head replays at stabilized scales `12` and `13`
+confirmed one common fine remainder and sixteen distinct cells per fixed
+first-symbol pair.  The proof uses only the symbolic separation and the exact
+positive exponent gap `44983/10496`, not those finite tables.
+
+For `T-9807`, two cold reviewers independently reran the `(H+1)^(D+1)` versus
+`p^k` pigeonhole argument and the bounded-height contradiction.  At the live
+PR #20 head they then applied the dimension-one source measure to the exact
+coefficient vector `(-p_n,q_n)`, recovering
+`limsup<=omega_1<17/5<10<=omega_9`.  The canonical `X-9412` value is
+`omega_9=2318.657271149257...`; the nearby decimal in `R-9408` is a
+non-load-bearing transcription error.  The review also corrected the logical
+role of `L-9413`: its displayed value is a liminf lower certificate, not an
+exact scalar exponent.
+
+For `T-9808`, the decoder was replayed on shortened four- and six-symbol
+models, with all `4^q` residues distinct.  The cold reviewer rederived both
+rational logarithmic bounds, the growing modulus/room-scale gap, and the
+finite-subset argument needed when room sizes and starting scales have no
+uniform global bound.  No finite replay is used to infer the full theorem.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -402,6 +456,14 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `R-9808` invalidates one submitted proof bridge, not the direct centered
   recurrence, and it does not prove the conditional schedule conclusion false
   when its hypothesis might be empty.
+- `T-9805` gives no feasible numerical prime threshold, prime location, or
+  cap-stitch realization; it is an effective structural count only.
+- `T-9806` does not reduce the current 64-word cap cusp because its new cell is
+  exponentially narrower than that cusp; exact zero remains possible.
+- `T-9807` closes unrestricted scalar/full-measure one-phase elimination, not
+  a directional native relation estimate or coupled q-difference construction.
+- `T-9808` proves finiteness, not emptiness or an effective list, of the fixed
+  room set; no eventual tail is constructed.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -775,3 +837,21 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     locally restarted phase samples.  Do not infer falsity of a potentially
     vacuous conditional conclusion or quarantine direct-`81/64` results
     without their own dependency audit.
+47. For `T-9805`, check the primary ESS count, positivity/nondegeneracy, every
+    affine exponent, the single mixed scale generator, both endpoint
+    directions per prime, and retention of `W_(m_0+N)`.  Compare the sharp
+    rank with the safe direct-product rank before using the logarithmic
+    inversion.
+48. For `T-9806`, rederive the internal telescope and sign before reducing
+    modulo `64q_1`.  Check both offset vectors, circular wrap, pairwise
+    distinctness, global 16/240 count, and the direction of the cap-cusp
+    exponent comparison; the fine-cell theorem is not a cusp improvement.
+49. For `T-9807`, first verify the elementary `D+1` floor with the constant
+    coefficient included.  Then audit the quantitative source at `D=1`, the
+    exact height of `(-p_n,q_n)`, odd-denominator valuation neutrality, and
+    `omega_1<17/5<10`.  Do not identify the `L-9413` lower certificate with an
+    exact approximation exponent or apply the full-box floor to thin rays.
+50. For `T-9808`, decode a prefix by successive dyadic valuations, then prove
+    incoming-address injectivity.  In the room count select a finite set first
+    so its sizes, onsets, and separation have common bounds; do not assume
+    global uniformity or turn finiteness into emptiness.

@@ -37,6 +37,7 @@ dependency.
 - [`wave eleven`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eleven.md)
 - [`wave twelve`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twelve.md)
 - [`wave thirteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-thirteen.md)
+- [`wave fourteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fourteen.md)
 
 ## Result map
 
@@ -154,6 +155,10 @@ dependency.
 | [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
 | [`T-9804`](claims/T-9804-sparse-pade-casoratian-optimality.md) | PR #20 period-ten frontier | Every sparse scalar order minor is nonzero, but at fixed width and largest order each skipped order incurs an exact 2-adic accuracy deficit; sparse orders cannot evade the adjacent-order period-ten ceiling. |
 | [`R-9808`](claims/R-9808-false-four-phase-three-halves-bridge.md) | PR #16 centered-power audit | Refutes the identity `81/64=(3/2)^4`: the submitted four-phase full-`3/2` orbit bridge misses a factor `4^n`; direct-`81/64` results survive only after independent dependency audit. |
+| [`T-9805`](claims/T-9805-quantitative-fresh-prime-budget.md) | PR #3 scaled-tail S-unit frontier | For `N` corrected stages with `s_N` distinct boundary primes, `N<=4^256 exp(1542^771(2s_N+2))`; this makes qualitative fresh-prime necessity effective and records the correlated rank `<=2s_N+1`. |
+| [`T-9806`](claims/T-9806-cap-head-two-level-cell-hierarchy.md) | PR #33/PR #3 cap-head bridge | After two head symbols are fixed, the last two occupy sixteen distinct cells of width `q_0/64` with offsets split by `(0,3,53,1)` and `(0,33,7,11) mod64`; exact zeros fall to at most 16, although the known cusp is wider than these cells. |
+| [`T-9807`](claims/T-9807-dirichlet-floor-blocks-one-phase-elimination.md) | PR #20 period-ten frontier | Elementary p-adic pigeonholing forces every unrestricted `D`-value measure exponent to satisfy `omega>=D+1`; applying the source measure at dimension one gives every scalar family `limsup<=omega_1<17/5<10<=omega_9`, rigorously closing full-measure one-phase elimination. |
+| [`T-9808`](claims/T-9808-stage-toll-room-finiteness.md) | PR #3 fixed-room/cap bridge | Separated dyadic toll valuations losslessly decode the full 256-symbol word from the incoming boundary, and the fixed-room law permits at most `4^256` eventual rooms and tails. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -231,8 +236,15 @@ independently reconstructed and which conjectural boundaries remain open.
    and gives finite 256-head and 1024-triple cusp filters. `T-9802` supplies
    the first uniform head reduction: changing the final symbol translates by
    one of four fixed `Q/64` cells, so at least 192 words are too large and a
-   hypothetical late cap chain has at most 64 admissible words.  The next
-   target is the within-cell remainder for those 64 prefixes; closing the
+   hypothetical late cap chain has at most 64 admissible words. `T-9806`
+   resolves the last two symbols one level further into sixteen distinct
+   `q_0/64` cells per fixed first-symbol pair and reduces exact-zero heads to
+   at most 16. Its cell width is nevertheless exponentially below the known
+   cusp, so it does not improve the conditional 64-word filter. Refreshed
+   `PR3/T-0036` and `T-9808` remove a different apparent freedom: one room
+   determines the boundary and full word, and at most `4^256` rooms can support
+   eventual tails. The next target is to decode a room first and test its 84
+   exact seams and head cell, rather than branch freely over words; closing the
    output carry remains a separate route.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
@@ -328,9 +340,13 @@ independently reconstructed and which conjectural boundaries remain open.
    reallocation. `T-9804` also closes sparse scalar order selection: arbitrary
    sparse minors remain nonzero, but consecutive orders uniquely maximize
    normalized accuracy at fixed width and top order.  In light of refreshed
-   `PR20/Q-9413`, the next concrete targets are its one-phase elimination
-   inequality or a genuinely coupled two-dimensional `q`-difference/Hermite--
-   Pade construction for the native period-ten vector.
+   `PR20/Q-9413`, `T-9807` now closes the full-measure one-phase elimination
+   route as well. The elementary Dirichlet floor is `omega_9>=10`, while the
+   same Vaananen--Wallisser measure at dimension one bounds every scalar
+   approximant family by `limsup<=omega_1<17/5`; the required strict inequality
+   is impossible. The live targets are therefore a genuinely directional
+   estimate on the native coefficient rays, or a coupled two-dimensional
+   `q`-difference/Hermite--Pade construction for the period-ten vector.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -344,9 +360,17 @@ independently reconstructed and which conjectural boundaries remain open.
    substitution orbit closures already fail.  The next task is to acquire the
    exact rational-base source theorem and compute its equality language rather
    than route through the invalid schedule.
-6. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
+6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
+   `T-9805` turns qualitative fresh-prime necessity into the explicit finite
+   tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
+   rank `2s_N+1` rather than the coarse product rank. `T-9808` simultaneously
+   makes the exceptional room set finite and the stage word deterministic.
+   The next useful gain is either to exploit the bounded `{2,3}` boundary
+   signatures to lower the S-unit rank, or to intersect each decoded room with
+   the cap/seam constraints. The constants are structural, not computational.
+7. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
-7. Test binary-automatic invariant-component colorings. `L-9823` eliminates
+8. Test binary-automatic invariant-component colorings. `L-9823` eliminates
    every finite congruence, Presburger, unary-regular, rational, algebraic, and
    D-finite description. `L-9825` makes the central ternary spine finite, and
    `L-9836` closes every fixed-width translated cone. `L-9838` puts every
