@@ -2,151 +2,170 @@
 
 Last updated: 2026-07-22
 
-## N-0001 — A periodic parity word may define only a 2-adic rational
+## Finite compatibility and symbolic size
 
-The periodic word `(100)^omega` reconstructs `1/5` in `Z_2`, not a positive-integer counterexample.
+### N-0001 — A periodic parity word may define only a 2-adic rational
+
+The periodic word `(100)^omega` reconstructs `1/5` in `Z_2`, not a positive
+integer.
 
 **Consequence:** an infinite rewrite loop needs a proved finite canonical start.
 
-## N-0002 — Arbitrarily long finite admissibility is not infinite closure
+### N-0002 — Arbitrarily long finite admissibility is not infinite closure
 
-Finite stack amplifiers and compatible cylinders may survive to any prescribed depth without selecting one ordinary infinite trajectory.
+Finite amplifiers and compatible cylinders may survive to every prescribed
+depth without selecting one ordinary trajectory.
 
 **Consequence:** require one uniform all-height theorem.
 
-## N-0003 — Local expansion may be lost during repair
+### N-0003 — Local expansion may be lost during repair
 
-A supercritical local gadget can become contracting after its complete boundary-repair cycle.
+A supercritical local gadget can become contracting after its complete boundary
+cycle.
 
-**Consequence:** audit every full grammar cycle.
+**Consequence:** audit full grammar cycles.
 
-## N-0004 — Eventually periodic digits do not give a nontrivial ordinary induced orbit
+### N-0004 — Eventually periodic digits do not give the required ordinary orbit
 
-`T-0003` excludes eventual periodicity in the stationary induced systems under study.
+The stationary induced systems exclude nontrivial eventual periodicity.
 
 **Consequence:** fixed-period travelling stacks do not close the problem.
 
-## N-0005 — Boundary growth uses the ratio `N/M`
+### N-0005 — Boundary growth uses `N/M`
 
-The ordinary boundary grows like `(N/M)^t`, not like `N^t`.
+The physical boundary grows like `(N/M)^t`, not `N^t`.
 
-**Consequence:** the moving boundary is slow and aperiodic relative to raw radix replacement.
+**Consequence:** raw radix replacement exaggerates available growth.
 
-## N-0006 — Consecutive width understates the alphabet
+### N-0006 — Consecutive width understates the alphabet
 
-Sparse fibers and inverse-signature codes are much richer than consecutive runs.
+Sparse fibers and inverse-signature codes are richer than consecutive runs.
 
 **Consequence:** search complete fibers, not intervals alone.
 
-## N-0007 — Unbounded branch count is not ordinary closure
+### N-0007 — Unbounded branch count is not ordinary closure
 
-Exponentially large supercritical fibers do not select one infinite finite integer.
+Exponentially large supercritical fibers do not select one infinite integer.
 
 **Consequence:** record size is not candidate evidence.
 
-## N-0008 — A common odd tail is drift, not repair
+### N-0008 — A common odd tail supplies drift, not repair
 
-A common all-odd tail changes the multiplier while preserving branch offsets.
+It changes the multiplier while preserving branch offsets.
 
-**Consequence:** it does not freely solve lifting or vertical closure.
+**Consequence:** it does not solve lifting or vertical closure.
 
-## N-0009 — Preserving fixed geometry is not growing geometry
+### N-0009 — Preserving fixed geometry is not growing geometry
 
-Tensor amplification can preserve a useful finite pattern while the boundary scale escapes it.
+Tensor amplification can preserve a finite pattern while the boundary escapes
+its scale.
 
 **Consequence:** closure needs scale-aware structure.
 
-## N-0010 — A finite complete one-target all-supercritical renewal code is impossible
+## Renewal, pressure, and marked-state cautions
 
-A finite clopen cylinder cover must include the target boundary point and hence an all-even contracting return.
+### N-0010 — A finite complete one-target all-supercritical code is impossible
 
-**Consequence:** use an incomplete survivor, several targets, or compensated contraction.
+A complete clopen cover contains the target point and hence an all-even
+contracting return.
 
-## N-0011 — Long drift tails can destroy normalized control width
+**Consequence:** use an incomplete survivor, several targets, or compensated
+contraction.
 
-Symbolic branching and real rounding freedom may move in opposite directions.
+### N-0011 — Long drift tails can destroy normalized control width
 
-**Consequence:** track normalized aspect ratio, not multiplier alone.
+Symbolic branching and real rounding freedom can move in opposite directions.
 
-## N-0012 — Rich symbolic geometry may have a microscopic real window
+**Consequence:** track normalized aspect ratio.
+
+### N-0012 — Rich symbolic geometry may have a microscopic real window
 
 The 339-branch chart has far less real control width than smaller charts.
 
-**Consequence:** branch count, modular correction, and archimedean room are separate resources.
+**Consequence:** branch count, modular correction, and archimedean room are
+separate resources.
 
-## N-0013 — Positive local edges do not replace a graph-cycle audit
+### N-0013 — Positive local edges do not replace a cycle audit
 
 Contracting repair edges can defeat locally positive transitions.
 
-**Consequence:** certify every reachable directed cycle with a phase potential.
+**Consequence:** certify every reachable directed cycle.
 
-## N-0014 — Complete renewal coverage has negative typical logarithmic growth
+### N-0014 — Complete renewal coverage has negative typical logarithmic growth
 
-The Collatz--Kraft identity gives mean multiplier one but negative mean logarithmic multiplier.
+The Collatz--Kraft identity gives mean multiplier one but negative mean log
+multiplier.
 
 **Consequence:** a divergent language must be entropy-thin.
 
-## N-0015 — Cycle padding buys expansion with narrow cylinders
+### N-0015 — Cycle padding buys expansion with narrow cylinders
 
-Padding raises real slope while exponentially increasing dyadic specificity.
+Padding raises real slope while increasing dyadic specificity exponentially.
 
-**Consequence:** the required valuation must be regenerated exactly.
+**Consequence:** regenerate the valuation exactly.
 
-## N-0016 — A one-mismatch atlas is not closed
+### N-0016 — A one-mismatch atlas is not closed
 
-Failure of the recovery congruence creates another mismatch before the intended target.
+Recovery failure creates another mismatch before the intended target.
 
 **Consequence:** use a complete multi-mismatch or counter system.
 
-## N-0017 — A finite complete recurrent phase graph collapses to phase one
+### N-0017 — A finite complete recurrent phase graph collapses to phase one
 
 The fair rounded phase martingale is absorbed at `1`.
 
-**Consequence:** nontrivial recurrence is incomplete, exceptional, or infinite-state.
+**Consequence:** nontrivial recurrence is incomplete, exceptional, or
+infinite-state.
 
-## N-0018 — Positive phase escape is not an ordinary boundary
+### N-0018 — Positive phase escape is not an ordinary boundary
 
-The Doob transform favors expanding completion paths but does not select one finite root.
+The Doob transform favors expanding completion paths but does not select one
+finite root.
 
 **Consequence:** certify the ordinary marker separately.
 
-## N-0019 — Finite regular marked grammars are not a new class
+### N-0019 — Finite regular marked grammars are not a new class
 
-`T-0020` compiles finite phases, regular domains, and fixed blocks to a regular sanctuary.
+`T-0020` compiles them to the regular-sanctuary problem of PR #12.
 
-**Consequence:** do not duplicate PR #12 under interval, particle, or phase decoration.
+**Consequence:** do not duplicate that class under interval or particle
+notation.
 
-## N-0020 — Graph-directed attractors are completion objects
+### N-0020 — Graph-directed attractors are completion objects
 
 A compact attractor may contain no ordinary integer.
 
-**Consequence:** retain exact cylinder selection and a finite marker.
+**Consequence:** retain exact cylinders and a finite marker.
 
-## N-0021 — Fixed-period and bounded-tail tower control fail
+## Counter-stack and stage cautions
 
-Inverse-prefix periods grow with precision, and finite high-tail libraries with affine counter rules close only finitely often.
+### N-0021 — Fixed-period and bounded-tail tower control fail
 
-**Consequence:** the ordinary high tail must carry unbounded information.
+Inverse-prefix periods grow with precision, and finite high-tail libraries with
+affine counter rules close only finitely often.
 
-## N-0022 — The 128-step lane is only a precursor
+**Consequence:** ordinary memory must be genuinely unbounded.
 
-It expands the immediate high tail but contracts the true two-connector residual eventually.
+### N-0022 — The 128-step lane is only a precursor
 
-**Consequence:** use the corrected 256-step lane or the adaptive 512-cell router.
+It expands the immediate tail but contracts the true two-connector residual.
 
-## N-0023 — Bit-length surplus is not low-bit routing
+**Consequence:** use the corrected 256-step or adaptive 512-cell systems.
 
-`T-0024` supplies a large full-stage surplus.
+### N-0023 — Bit-length surplus is not low-bit routing
 
-**Consequence:** surplus does not imply membership in the next canonical cylinder.
+`T-0024` supplies a large information surplus.
 
-## N-0024 — A generated connector word is not a physical residual
+**Consequence:** surplus does not imply next-cylinder membership.
 
-Newton, Montgomery, the counter isometry, and the quadratic bulk compute every control word.
+### N-0024 — A generated connector word is not a physical residual
 
-**Consequence:** computing a residue does not prove the marked state occupies it.
+Newton, Montgomery, and the counter isometry compute control words.
 
-## N-0025 — The free corrected-stage quotient cannot grow forever
+**Consequence:** computing a residue does not prove the marked state occupies
+it.
+
+### N-0025 — The free corrected-stage quotient cannot grow forever
 
 `T-0031` gives
 
@@ -154,64 +173,104 @@ Newton, Montgomery, the counter isometry, and the quadratic bulk compute every c
 0\le Y_{m+1}<\frac{Y_m+3}{512}.
 \]
 
-**Consequence:** the former self-feeding positive-quotient architecture is impossible; an ordinary path must eventually ride the canonical corrections.
+**Consequence:** the positive-quotient architecture is impossible; an ordinary
+path must eventually ride canonical corrections.
 
-## N-0026 — Supercriticality does not prevent completion-height collapse
+### N-0026 — Supercriticality does not prevent completion-height collapse
 
-The physical stage expands while the quotient above the next canonical correction contracts strongly.
+The physical stage expands while the quotient above the next correction
+contracts.
 
 **Consequence:** distinguish physical growth from completion-height ranking.
 
-## N-0027 — Ordinary stage realization lies in an exponentially shrinking dyadic cusp
+### N-0027 — Ordinary stage realization lies in a shrinking dyadic cusp
 
-After quotient extinction,
+Late corrections occupy an exponentially tiny fraction of the next modulus.
 
-\[
-R_{m+1}=S_m<3\,3^{A_m}
-\]
+**Consequence:** every viable path needs enormous high-zero completion height.
 
-inside a modulus `2^(D_(m+1))`.
+### N-0028 — Finite-state feedback cannot hide an ordinary tail
 
-**Consequence:** every late correction needs an enormous high-zero block.
+Finite-state strictly causal feedback becomes open-loop on a finite-support
+integer tail.
 
-## N-0028 — Finite-state feedback cannot hide an ordinary tail
+**Consequence:** bounded feedback is not a shortcut around unbounded memory.
 
-Issue #21 shows that finite-state strictly causal feedback becomes open-loop on an integral finite-support digit tail.
+### N-0029 — Direct dyadic tower exclusion is not the composed-stage theorem
 
-**Consequence:** feedback is not a shortcut around unbounded memory.
-
-## N-0029 — Direct dyadic tower exclusion is not the composed-stage theorem
-
-PR #33 excludes the direct `t -> 2t` connector by contraction. The chronological corrected stage is a different map.
+PR #33 excludes a direct `t -> 2t` connector. The corrected chronological
+stage is different.
 
 **Consequence:** import the cylinder method, not the direct conclusion.
 
-## N-0030 — A fixed-word S-unit slogan needs endpoint prime control
+## Multiplicative and room cautions
 
-`L-0031` reduces one stage to a positive 257-term `{2,3}`-unit equation, but the two ordinary endpoint words remain multiplicative variables.
+### N-0030 — A fixed-word S-unit slogan needs endpoint prime control
 
-**Consequence:** Evertse--Schlickewei--Schmidt applies directly only after their prime support is placed in a finite-rank group.
+The positive stage equation still contains two ordinary endpoint variables.
 
-## N-0031 — Fixed finite-prime endpoint schemas are impossible
+**Consequence:** finite-rank finiteness applies only after prime support is
+controlled.
 
-`T-0032` proves that every infinite ordinary corrected-stage path has infinite prime support.
+### N-0031 — Fixed finite-prime endpoint schemas are impossible
 
-**Consequence:** monomial and finite-library endpoint templates over a fixed prime set cannot close the route.
+`T-0032` forces infinite prime support.
 
-## N-0032 — Infinite fresh prime support is not itself a construction
+**Consequence:** fixed-prime monomial and finite-library templates cannot close
+the route.
 
-The S-unit theorem forces fresh primes but does not route them through the canonical cap seams.
+### N-0032 — Infinite fresh-prime support is not a construction
 
-**Consequence:** prime creation must be coupled to exact collar and triple-seam compatibility.
+The theorem forces fresh primes but does not route them through canonical seams.
 
-## N-0033 — A fixed real room is a consequence, not an initialization
+**Consequence:** prime creation must be coupled to physical compatibility.
 
-`T-0033`--`T-0034` show that an assumed path has one real room whose floors hit exact dyadic connector addresses with tiny error.
+### N-0033 — A fixed real room is a consequence, not an initialization
 
-**Consequence:** naming or numerically approximating the room does not prove that one ordinary marked Collatz path exists.
+`T-0033`--`T-0036` reconstruct the room of an assumed path.
 
-## N-0034 — Real shrinking targets alone do not control the odd-radix carry
+**Consequence:** naming or approximating the room does not construct a marked
+orbit.
 
-PR #34's first-seam analysis retains a canonical output selected in a growing odd interval. Low dyadic connector bits do not determine that carry.
+### N-0034 — Real shrinking targets alone do not control odd-radix carry
 
-**Consequence:** the room defect must be coupled to the full canonical seam state, not just to a fixed low-bit table.
+The seam output is selected in a growing odd interval.
+
+**Consequence:** couple the room defect to the full canonical seam state.
+
+### N-0035 — A finite room set need not be empty
+
+`T-0037` gives at most 64 eventual rooms.
+
+**Consequence:** cardinality reduction is not nonexistence.
+
+### N-0036 — Transcendental room classification is not a contradiction
+
+`T-0038` forces every hypothetical room to be transcendental.
+
+**Consequence:** a closing argument must exclude or construct transcendental
+rooms; algebraicity methods alone have reached their limit.
+
+### N-0037 — An allowed output lift is not enough
+
+A three-symbol prefix can produce a valid next type while its ordinary address
+remains high in the cylinder.
+
+**Consequence:** an actual room also needs the adjacent lower six-bit block to
+be zero.
+
+### N-0038 — Finite two-block emptiness is not cofinal exclusion
+
+`X-0017` and the GMP authoring audit find no required adjacent twelve-bit pattern
+through scale 20.
+
+**Consequence:** do not extrapolate finite failure to all scales.
+
+### N-0039 — The six-bit quotient is not a closed finite state
+
+Scale doubling requires a source-specific Newton quotient block of
+`Theta(2^m)` new bits.  The abstract six-bit projection loses all 64 possible
+next values across its lift fiber.
+
+**Consequence:** the next theorem must retain or recompute the growing carry, or
+prove a special cancellation with the base connector cell.
