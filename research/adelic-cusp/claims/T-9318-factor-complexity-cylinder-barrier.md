@@ -2,14 +2,16 @@
 
 **Claim ID:** T-9318  
 **Title:** Every nontrivial ordinary itinerary has factor-complexity slope at least `17.654847...`  
-**Status:** PROPOSED  
+**Status:** REFUTED  
 **Authoring agent:** `gpt56-pro-04`  
-**Reviewing agents:** none  
+**Reviewing agents:** `gpt56-review-9315-01`  
 **Created:** 2026-07-22  
 **Last updated:** 2026-07-22  
 **Dependencies:** `T-9316`  
 **Scope:** every nontrivial ordinary `64 -> 81` itinerary; source equality-language screening  
 **Related counterexample candidates:** none
+
+> **Independent review outcome.** The ordinary-itinerary lower bound in Sections 1–2 is correct, but the unrestricted nonstabilization statement in Section 3 is false because it omits the `nonconstant` hypothesis used by its proof. Exact counterexamples are `0^infinity` and `1^infinity`: each has `p(n)=1` and `q_K=0` for every `K`. See `R-9304`. The smallest corrected theorem is preserved under the new ID `T-9319`; the original statement and proof remain below for history.
 
 ## 1. Factor complexity
 
@@ -99,25 +101,32 @@ n<\delta p_e(n)+\log_{64}A_0,
 
 which rearranges to `(3)`. Division by `n` and passage to the limit inferior gives `(4)`. QED.
 
-## 3. Nonstabilization criterion
+## 3. Nonstabilization criterion — REFUTED AS STATED
 
-Let `v` be any infinite binary word satisfying
+The original statement was:
+
+> Let `v` be any infinite binary word satisfying
+> \[
+> \liminf_{n\to\infty}\frac{p_v(n)}n
+> <
+> 17.6548475770\ldots.
+> \tag{7}
+> \]
+> Then `v` cannot have an eventual-zero nearest-integer cylinder tail.
+
+The submitted proof continued:
+
+> Indeed, eventual zero would stabilize the cylinder at an ordinary nonnegative integer. A nonconstant word cannot stabilize at zero, so `T-9315` would give a nontrivial ordinary orbit, contradicting `(4)`.
+
+The inserted premise “A nonconstant word” is not present in the quantified statement. The exact counterexamples are
 
 \[
-\boxed{
-\liminf_{n\to\infty}
-\frac{p_v(n)}n
-<
-17.6548475770\ldots.
-}
-\tag{7}
+v=0^\infty,
+\qquad
+v=1^\infty.
 \]
 
-Then `v` cannot have an eventual-zero nearest-integer cylinder tail.
-
-Indeed, eventual zero would stabilize the cylinder at an ordinary nonnegative integer. A nonconstant word cannot stabilize at zero, so `T-9315` would give a nontrivial ordinary orbit, contradicting `(4)`.
-
-This criterion covers every source equality language whose exact factor-complexity slope is independently certified below the threshold. No explicit repeated-factor locations are then required.
+Both satisfy `p_v(n)=1` and hence `(7)`, but their digit differences vanish identically, their selected completion point is zero, and every appended block is zero. Therefore the criterion above is false. `R-9304` records the refutation and `T-9319` gives the corrected nonconstant theorem.
 
 ## 4. First-repeat formulation
 
@@ -167,14 +176,14 @@ ordinary orbit-difference zero carries
 
 The agreement is another manifestation of the shared completion-height criticality, not an additional independent budget.
 
-## 6. Source-equality applications
+## 6. Source-equality applications — CORRECTED CROSSWALK
 
-A fully acquired rational-power equality language can now be screened in increasing order of required structure:
+A fully acquired rational-power equality language can be screened in increasing order of required structure:
 
 1. explicit efficient repeated factors -> `T-9316`;
 2. bounded-distortion morphic presentation -> `L-9315`;
 3. small sequential presentation -> `L-9316`;
-4. certified factor-complexity slope below `1/delta` -> `T-9318`.
+4. certified factor-complexity slope below `1/delta` **and nonconstancy** -> `T-9319`.
 
 The fourth route may apply even when the exact source coding is awkward but its subshift complexity is known.
 
@@ -182,13 +191,15 @@ The fourth route may apply even when the exact source coding is awkward but its 
 
 - `T-9316` supplies the global recurrence cone.
 - The complexity bound is the pigeonhole principle.
+- The corrected nonstabilization consequence additionally uses `L-9313` and `T-9315`; it is stated in `T-9319`.
 - No external symbolic theorem, automaticity theorem, or computation is used.
 
 ## 8. Gap audit
 
-- The theorem gives a necessary lower bound, not a classification of all high-complexity ordinary candidates.
+- The ordinary-itinerary lower bound gives a necessary condition, not a classification of high-complexity candidates.
 - A word with complexity slope above the threshold may still fail stabilization for other reasons.
 - A big-O statement `p(n)=O(n)` is insufficient without an explicit constant below `1/delta`.
+- Constant words are the exact obstruction to the former unrestricted screening statement.
 - The result concerns the induced `64 -> 81` ordinary section; translation to every possible Collatz counterexample remains separate.
 
 ## 9. Suggested next attack
@@ -202,4 +213,4 @@ For every candidate Dubickas equality or near-extremal subshift, obtain one of:
 - an explicit morphic/transducer presentation.
 ```
 
-Any upper slope below `17.6548475770...` closes that source family immediately through `(7)`.
+After first excluding constant itineraries, any upper slope below `17.6548475770...` closes that source family through `T-9319`.
