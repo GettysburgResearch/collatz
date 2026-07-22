@@ -20,6 +20,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9311` | Lemma | `PROPOSED` | Repeated itinerary factors are orbit-difference zero-carry chains | `D-9302`; integer divisibility |
 | `L-9312` | Lemma | `PROPOSED` | Centered `81/64` orbits force a three-state four-phase `3/2` schedule | `T-9315`; residue arithmetic modulo `64` |
 | `L-9313` | Lemma | `PROPOSED` | Every itinerary has one bounded error path; ordinary realization is cylinder stabilization | elementary affine recurrence; `T-9315` crosswalk |
+| `L-9314` | Lemma | `PROPOSED` | Exact appended base-`M` digit of the nearest-integer cylinder | `L-9313`; finite affine iteration |
 | `T-9301` | Conditional theorem | `SUPERSEDED` | Conditional polynomial-window reduction | superseded by self-contained `T-9308` |
 | `T-9302` | Conditional theorem | `SUPERSEDED` | Conditional density-one full EQ | superseded by unconditional `T-9309` |
 | `T-9303` | Theorem | `PROPOSED` | Valuation-stratified fixed-frequency depth-period decay | `L-9304`; exact cosine-grid second moment |
@@ -40,8 +41,8 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `R-9303` | Refutation | `PROPOSED` | Pure real scheduled-cylinder emptiness cannot close the ordinary section | `L-9312`, `L-9313` |
 | `C-9301` | Historical conjecture | `SUPERSEDED` | Harmonic control of low-energy cylinders | superseded by `L-9310`, `T-9311`, `T-9312` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`--`L-9313`, `T-9312`--`T-9315` |
-| `Q-9303` | Open question | `IDEA` | Centered nearest-integer cylinder nonstabilization | `T-9315`, `L-9312`, `L-9313`, `R-9303` |
+| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`--`L-9314`, `T-9312`--`T-9315` |
+| `Q-9303` | Open question | `IDEA` | Centered nearest-integer cylinder nonstabilization | `T-9315`, `L-9312`--`L-9314`, `R-9303` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `O-9302` | Observation | `EMPIRICAL` | Bounded carry counts and zero-run census | `X-9302` |
 | `O-9303` | Observation | `INTERNAL EXACT COMPUTATION` | Exact dual minima and survivor replays through depth 46 | `X-9303` |
@@ -72,6 +73,11 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
   \]
   with reconstruction `A_n=ceil(64 xi (81/64)^n)`.
 - `L-9313` shows that every binary itinerary has one bounded real centered-error path. The real system itself is a full shift; ordinary realization is the separate question whether its nested nearest-integer cylinders stabilize.
+- `L-9314` gives the exact appended cylinder digit
+  \[
+  q_K\equiv-N^{-(K+1)}(NC_K+\varepsilon_K-\varepsilon_{K+1})\pmod M.
+  \]
+  At most one one-digit continuation leaves the current cylinder unchanged.
 - `L-9312` records the intermediate four-phase `3/2` geometry, while `R-9303` closes the pure real-cylinder emptiness route.
 - `L-9311` reconstructs PR #20's local repetition bound as an integral zero-carry theorem for differences of ordinary tail orbits.
 - `R-9302` closes the naive comparison of the identical repetition and phase-carry constants. They are one mechanism, not opposing budgets.
@@ -123,6 +129,8 @@ and minimum duality               rational-power equivalence
    |                              L-9313 full real shift
    v                                   + nearest-integer cylinders
 T-9314 depth-46 bound                  |
+   |                              L-9314 exact appended block
+   |                                   |
    |                              L-9312 scheduled 3/2 geometry
    |                                   |
    +----------------------+------------+
@@ -148,7 +156,7 @@ L-9312 real scheduled geometry
 
 ## Generalization and literature crosswalk
 
-`L-9310`, `L-9313`, and `T-9315` are stated for every coprime expanding pair `M<N`.
+`L-9310`, `L-9313`, `L-9314`, and `T-9315` are stated for every coprime expanding pair `M<N`.
 
 The criticality
 
@@ -164,7 +172,7 @@ controls zero-carry run length, while
 \|\xi(N/M)^n\|\le1/N
 \]
 
-is the exact centered ordinary-section condition for the binary chart. Every itinerary defines a bounded error path, but only an ordinary inverse-limit nearest integer gives a positive centered parameter.
+is the exact centered ordinary-section condition for the binary chart. Every itinerary defines a bounded error path and one inverse-limit nearest integer; only eventual stabilization gives an ordinary positive centered parameter.
 
 For `M=64`, `N=81`, `L-9311` explains the repetition constant and `L-9312` uses `81/64=(3/2)^4` to expose scheduled intermediate geometry.
 
@@ -183,5 +191,6 @@ The literature branch supplied scope discipline: completion-versus-height method
 - the depth-46 dual computation yields `T-9314`;
 - ordinary-section points are exactly positive critical centered `81/64` orbits = `T-9315`;
 - every itinerary has a real error lift but selects one `2`-adic nearest-integer cylinder = `L-9313`;
+- the appended cylinder block is explicit and uniquely forced when zero = `L-9314`;
 - the complete `3/2` orbit follows the state-dependent schedule of `L-9312`;
 - `Q-9302` and `Q-9303` target monotone minimum divergence and nearest-integer cylinder nonstabilization.
