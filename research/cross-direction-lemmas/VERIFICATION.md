@@ -43,6 +43,13 @@ claim `L-9862`--`L-9867` received a proof reconstruction by a nonauthoring
 lane; finite enumerations and bit-packed recurrences were retained only as
 independent adversarial checks of the displayed algebra.
 
+The period-four quotient checkpoint added a seventh proof wave. Independent
+lanes reconstructed odd-prime minimizers and two normalized jets, composite
+value/derivative descents, and the characteristic-two scalar kernel. Exact
+checkers are vendored in `X-9876`. The odd-prime and scoped low-jet results
+remain `PROPOSED` pending external review; `L-9873` additionally quarantines
+its arbitrary-order degree lemma as a proof-completeness boundary.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -82,6 +89,7 @@ independent adversarial checks of the displayed algebra.
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure and refinement, universal Boolean certificates through `s=32`, exact four-step operator, branch filtration, endpoint deviation, order-eight scalar cancellation, and sharpness recomputed | finite dyadic nonvanishing now reaches `s=32`; an endpoint-twist invariant, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
+| `L-9868`--`L-9875` | period-four quotient lanes and integrating agent | two-level block/carry formulas, odd-prime minimizers and two jets, composite distinguished/value/first-jet descents, interpolation coefficients, dyadic boundary pairing, scalar-kernel interaction proof, and binary clusters were recomputed; `X-9876` supplies exact finite audits | odd prime powers are closed subject to external review; the universal degree lemma in `L-9873`, composite residual noncancellation, dyadic uniform transfer, and the mod-four lift remain open |
 
 ### Independent `L-9839` even-`K` jet audit
 

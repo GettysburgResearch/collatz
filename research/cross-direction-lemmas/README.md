@@ -30,6 +30,7 @@ dependency.
 - [`wave four`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-four.md)
 - [`wave five`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-five.md)
 - [`wave six`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-six.md)
+- [`period-four quotient checkpoint`](../../reports/gpt56-synthesis-01/2026-07-22-29-period-four-quotient-checkpoint.md)
 
 ## Result map
 
@@ -105,6 +106,14 @@ dependency.
 | [`L-9865`](claims/L-9865-survivor-bucket-order-statistics.md) | PR #16 survivor selector | One width lift is an exact 64-bucket stable merge; at most four source-head candidates per bucket determine the live nontrivial minimum and successor. |
 | [`L-9866`](claims/L-9866-fractional-hall-residue-allocation.md) | Cross-direction abstraction | Hall no-outlet cuts exactly characterize finite fractional residue allocation; the maximum overload is the unroutable mass, and tight cuts form an impermeable lattice. |
 | [`L-9867`](claims/L-9867-finite-section-isometry-transducers.md) | Collision/automata bridge | A 2-adic isometry has a finite synchronous LSF Mealy realization exactly when its rooted-tree section set is finite; the number of sections is the minimal state count. |
+| [`L-9868`](claims/L-9868-pade-two-level-block-carry-states.md) | Period-four Padé quotient | Exact two-level blocks, q-Lucas residual states, and the strict prime-power carry gap. |
+| [`L-9869`](claims/L-9869-pade-odd-prime-two-jet-bound.md) | Period-four Padé quotient | A two-jet bound which, pending external review, closes every odd prime-power order above the cutoff. |
+| [`L-9870`](claims/L-9870-pade-composite-distinguished-block.md) | Composite Padé descent | A carry-optimal block preserving the prime-power valuation budget at residual order `m`. |
+| [`L-9871`](claims/L-9871-pade-composite-value-descent.md) | Composite Padé descent | Exact one/two-channel value congruences modulo `Phi_m`. |
+| [`L-9872`](claims/L-9872-pade-composite-first-jet-descent.md) | Composite Padé descent | Exact finite descent for values and first derivatives. |
+| [`L-9873`](claims/L-9873-pade-composite-all-order-jet-descent.md) | Composite Padé descent | Candidate integral finite-channel interpolation at arbitrary cyclotomic jet order, with its universal degree lemma quarantined for review. |
+| [`L-9874`](claims/L-9874-pade-dyadic-boundary-nonvanishing.md) | Dyadic Padé lane | All-order nonvanishing for the two Newton-boundary index families. |
+| [`L-9875`](claims/L-9875-pade-dyadic-cartier-kernel.md) | Dyadic Padé lane | Exact Cartier/type-C product, solved scalar kernel, transfer recurrences, and binary clusters. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were

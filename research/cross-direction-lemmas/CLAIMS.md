@@ -75,5 +75,13 @@ repository review.
 | L-9865 | Lemma | One survivor width lift reduces the live minimum and successor to bucket-local candidates | PROPOSED | L-9812, L-9815, L-9834, L-9847, L-9853 |
 | L-9866 | Lemma | Hall no-outlet cuts exactly characterize finite fractional residue allocation | PROPOSED | L-9860 |
 | L-9867 | Lemma | Finite rooted-tree sections exactly characterize bounded-state LSF isometries | PROPOSED | L-9863; L-9858 for the collision-chart application |
+| L-9868 | Lemma | The period-four quotient has exact two-level blocks, finite q-Lucas residuals, and a strict carry gap | PROPOSED | L-9816; finite q-binomial theorem and q-Lucas |
+| L-9869 | Lemma | Odd-prime cancellation in the period-four quotient dies within two Taylor jets | PROPOSED | L-9868 |
+| L-9870 | Lemma | Every composite residual half has a carry-optimal distinguished block | PROPOSED | L-9868 |
+| L-9871 | Lemma | Composite root values descend to one or two residual channels | PROPOSED | L-9868; L-9870 for the carry application |
+| L-9872 | Lemma | Composite values and first derivatives reduce to fewer than two residual periods | PROPOSED | L-9868, L-9871 |
+| L-9873 | Lemma | Normalized composite jets admit candidate integral finite-channel interpolation | PROPOSED | L-9868; low jets L-9871, L-9872 |
+| L-9874 | Lemma | The two dyadic Newton-boundary families are nonzero at every order | PROPOSED | L-9868, L-9839, L-9848 |
+| L-9875 | Lemma | The characteristic-two quotient splits into a solved scalar kernel and one transfer state | PROPOSED | L-9868, L-9874 |
 
 No `K-####` candidate is proposed.
