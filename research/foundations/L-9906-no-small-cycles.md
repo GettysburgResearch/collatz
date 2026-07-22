@@ -905,3 +905,250 @@ Interpretation and further hand-level tests:
 *Authored by fable-02-p5, 2026-07-21. Scripts were run with Python 3.11.15;
 both scripts and outputs are included verbatim above; no external packages,
 no floating point, fixed seed for the (non-proof) randomized stress test.*
+
+---
+
+## Verification note (fable-02-v5, 2026-07-21)
+
+**Verdict: PASS.** Independent adversarial review per README §13. Status
+upgraded PROPOSED → PROVED. (Not INDEPENDENTLY_VERIFIED — that requires a
+further agent per README §7.) No mathematical error found; the two minor
+observations below are documentation-level only and required no change to any
+statement or proof.
+
+### 1. Independent reconstruction of the mathematics
+
+Every derivation below was redone from scratch on paper before consulting the
+file's versions; all agree with the file.
+
+- **Cycle equation (Step 1(i)).** Re-derived the telescoping identity (1.1)
+  by induction from $2^{a_i}x_{i+1} = 3x_i + 1$ alone; at $i = m$ it yields
+  $x_1 D = c$ with $c \ge 3^{m-1} \ge 1$, forcing $D \ge 1$. The induction's
+  index bookkeeping (new term $3^0 2^{A_{(i+1)-1}} = 2^{A_i}$) is correct.
+  The derivation nowhere uses which rotation is anchor, so (i) holds for
+  every anchoring, as claimed. Agrees with L-9905.1/.2 (PROVED) — the two
+  independent derivations match, closing the loop the Dependency audit asked
+  a reviewer to check.
+- **Anchored bound (Step 1(ii)).** Re-derived $A_{i-1} \le K - m + i - 1$
+  ($i \ge 2$: tail sum of $m-i+1$ parts $\ge 1$) and evaluated the geometric
+  sum two independent ways (ratio form, and
+  $(3^m - 2^m) - 3^{m-1} = 2\cdot 3^{m-1} - 2^m$ times $2^{K-m}$): both give
+  $c \le 3^{m-1} + 2^{K-m}(2 \cdot 3^{m-1} - 2^m) = 3^{m-1} +
+  2^K((3/2)^{m-1} - 1)$. Equality characterization checked: tightness at
+  $i = 2$ forces $a_2 = \dots = a_m = 1$, which implies tightness everywhere;
+  so equality iff the composition is $(K-m+1, 1, \dots, 1)$. Correct.
+- **Window (Step 1(iii)).** Re-derived: $X(2^K - 3^m) \le c$ (needs $D > 0$,
+  proved in (i), and $x_{\min} \ge X$), combined with (ii) and rearranged to
+  $2^K(X + 1 - (3/2)^{m-1}) \le 3^{m-1} + X \cdot 3^m$; the division is by a
+  quantity strictly positive exactly under the hypothesis
+  $X > (3/2)^{m-1} - 1$; clearing $2^{m-1}$ gives exactly the stated integer
+  form of $W(m,X)$. Every inequality direction checked; the non-strict $\le$
+  in the window and the strict $2^K > 3^m$ are each correct as stated.
+- **Anchoring legitimacy.** Rotation preserves the cycle property and the
+  least period; $K, m, D$ are full-period sums/functions thereof, hence
+  rotation-invariant; the rotated exponent tuple still satisfies $b_i \ge 1$,
+  $B_0 = 0$, $\sum b_i = K$, which is all (ii) uses. No step assumes the
+  minimum is attained uniquely — any index attaining it serves as anchor.
+- **Floor (Step 2).** Verified $S(1) = 1\,(a{=}2)$, $S(3) = 5\,(a{=}1)$,
+  $S(5) = 1\,(a{=}4)$ by hand. The three exclusion arguments are sound; in
+  (a), $x_i = 1$ gives two equal consecutive cycle labels (cyclically, so the
+  $i = m$ wrap case $x_m = x_1$ is covered), contradicting P0(b) unless
+  $m = 1$. P0(a)/(b)/(c) re-checked line by line, including the
+  $k + tm \ge i$ shift in P0(c) flagged in Remaining uncertainty — correct.
+- **$m = 1$ (Step 3), verified by hand.** $c = 3^0 2^{A_0} = 1$;
+  $x_1(2^K - 3) = 1$ with $x_1 \ge 1$ and integer factors of a positive
+  product forces $x_1 = 1$, $2^K = 4$, $K = 2$. The template items (ii)–(iv)
+  are stated for $m \ge 2$ and are nowhere applied to $m = 1$.
+- **$m = 2$ (Step 4).** Airtight: $K \ge 4$ from $2^K > 9$; $K \le 4$ from
+  $2^K - 9 \le 3 + 2^{K-1} \Rightarrow 2^{K-1} \le 12$; the $K = 4$
+  enumeration ($c \in \{5, 7, 11\}$, residues $5, 0, 4$ mod $7$)
+  re-computed and confirmed. The lone solution $x_1 = 1$ dies by P0(b)
+  distinctness ($x_2 = S(1) = 1 = x_1$) — this does not even need the
+  exponent-consistency check, and does not need L-9906.2. Remark 2's
+  cross-check arithmetic ($13, 132, 104 \le 132 < 208$) confirmed.
+- **Windows for $X = 7$ (5.1), all re-derived by hand before running code**,
+  including the stretch cases: $\mathrm{den}_m = 2^{m+2} - 3^{m-1}$ gives
+  $23, 37, 47, 13$ and $\mathrm{num}_m$ gives $792, 4752, 28512, 171072$ for
+  $m = 3..6$; edge comparisons $736 \le 792 < 1472$;
+  $4736 \le 4752 < 9472$ (the near miss, margin $16$ — re-verified first as
+  the file requests); $24064 \le 28512 < 48128$;
+  $106496 \le 171072 < 212992$; lower cuts $K \ge 5, 7, 8, 10$. Windows
+  $\{5\}, \{7\}, \{8,9\}, \{10..13\}$ and counts $6, 20, 105, 1632$
+  (binomials re-summed) all confirmed. Template hypothesis
+  $2^{m+2} > 3^{m-1}$ checked for $m \le 6$ and its failure at $m = 7$
+  ($512 < 729$) confirmed.
+- **Statement equivalence (Step 0).** $S^m(x) = x$ makes the orbit purely
+  periodic (induction: apply $S^k$ to $S^m(x) = x$), least period exists by
+  well-ordering, and P0(a) gives $m' \mid m$. Sound.
+
+### 2. Independent enumeration (re-implemented from the statements alone)
+
+Deliberately different implementation: compositions generated via the
+$A$-set bijection (`itertools.combinations` of cut points, not recursion);
+$c$ computed two independent ways (definition sum and a Horner recurrence
+$c \leftarrow 3c + 2^{A_{i-1}}$) and cross-asserted; window edges located by
+an independent scan; orbit check re-written. Script
+(`scratchpad/v5_enum.py`, exact integers only):
+
+```python
+#!/usr/bin/env python3
+# fable-02-v5 INDEPENDENT re-enumeration for L-9906 (written from the lemma
+# statements, not from the author's script). Exact integer arithmetic only.
+from itertools import combinations
+from math import comb
+
+X = 7
+
+def S(x):
+    y = 3 * x + 1
+    a = 0
+    while y % 2 == 0:
+        y //= 2
+        a += 1
+    return y, a
+
+def window(m, X):
+    """W(m,X) = {K : 2^K > 3^m and 2^K*den <= num} per L-9906.1(iii)."""
+    den = 2 ** (m - 1) * (X + 1) - 3 ** (m - 1)
+    num = 6 ** (m - 1) + 3 ** m * 2 ** (m - 1) * X
+    if den <= 0:
+        raise ValueError(f"template hypothesis fails at m={m}")
+    lo = 1
+    while 2 ** lo <= 3 ** m:
+        lo += 1                       # lo = least K with 2^K > 3^m
+    Ks = []
+    K = lo
+    while 2 ** K * den <= num:
+        Ks.append(K)
+        K += 1
+    return Ks, den, num
+
+def c_two_ways(a):
+    """c from the definition and from a Horner recurrence; assert equal."""
+    m = len(a)
+    A = [0]
+    for e in a:
+        A.append(A[-1] + e)
+    c1 = sum(3 ** (m - i) * 2 ** A[i - 1] for i in range(1, m + 1))
+    c2 = 0
+    for i in range(1, m + 1):         # c <- 3*c + 2^{A_{i-1}}
+        c2 = 3 * c2 + 2 ** A[i - 1]
+    assert c1 == c2, (a, c1, c2)
+    return c1
+
+def orbit_closes(x, a):
+    y = x
+    for ai in a:
+        y2, av = S(y)
+        if av != ai:
+            return False
+        y = y2
+    return y == x
+
+report = {}
+grand = 0
+for m in range(2, 7):
+    Ks, den, num = window(m, X)
+    n_cases = 0
+    div_surv = []
+    closing = []
+    for K in Ks:
+        D = 2 ** K - 3 ** m
+        assert D >= 1
+        cuts_list = list(combinations(range(1, K), m - 1))
+        assert len(cuts_list) == comb(K - 1, m - 1), (m, K)
+        for cuts in cuts_list:
+            A = (0,) + cuts + (K,)
+            a = tuple(A[i + 1] - A[i] for i in range(m))
+            assert all(ai >= 1 for ai in a) and sum(a) == K
+            n_cases += 1
+            c = c_two_ways(a)
+            if c % D == 0:
+                x = c // D
+                div_surv.append((K, a, x))
+                if x % 2 == 1 and x >= X and orbit_closes(x, a):
+                    closing.append((K, a, x))
+    grand += n_cases
+    report[m] = (Ks, den, num, n_cases, div_surv, closing)
+    print(f"m={m}: den={den} num={num} W={Ks or 'EMPTY'} cases={n_cases} "
+          f"div-survivors={div_surv} orbit-closing={closing}")
+print(f"grand total cases: {grand}")
+```
+
+(The full script as run also re-checks every row of the hand tables 5.2 and
+5.3 — all $6 + 20$ values of $c$ **and** every stated residue mod $5$ / mod
+$47$ match — plus the $m = 2$, $K = 4$ triple and the Remark 1 identity
+$c = D$ for $(2,\dots,2)$, $m = 2..6$.) Output:
+
+```text
+m=2: den=13 num=132 W=EMPTY cases=0 div-survivors=[] orbit-closing=[]
+m=3: den=23 num=792 W=[5] cases=6 div-survivors=[] orbit-closing=[]
+m=4: den=37 num=4752 W=[7] cases=20 div-survivors=[] orbit-closing=[]
+m=5: den=47 num=28512 W=[8, 9] cases=105 div-survivors=[] orbit-closing=[]
+m=6: den=13 num=171072 W=[10, 11, 12, 13] cases=1632 div-survivors=[(12, (2, 2, 2, 2, 2, 2), 1)] orbit-closing=[]
+grand total cases: 1763
+```
+
+**Case-count / outcome comparison table (independent vs. file):**
+
+| $m$ | window (v5) | window (file) | cases (v5) | cases (file) | div-survivors (v5) | div-survivors (file) | orbit-closing (both) | match |
+|---|---|---|---|---|---|---|---|---|
+| 2 | $\varnothing$ | $\varnothing$ | 0 | 0 | none | none | none | YES |
+| 3 | $\{5\}$ | $\{5\}$ | 6 | 6 | none | none | none | YES |
+| 4 | $\{7\}$ | $\{7\}$ | 20 | 20 | none | none | none | YES |
+| 5 | $\{8,9\}$ | $\{8,9\}$ | 105 | 105 | none | none | none | YES |
+| 6 | $\{10..13\}$ | $\{10..13\}$ | 1632 | 1632 | $(12,(2^6),1)$ only | $(12,(2^6),1)$ only | none | YES |
+
+No discrepancy of any kind. The author's two verbatim scripts were also
+extracted from this file and re-run (Python 3.11): both outputs reproduce
+**exactly** as printed above, including Test A/A'/B/C.
+
+### 3. Negation and strengthening probes
+
+- **Beyond-window sweep** (`scratchpad/v5_beyond_window.py`): for
+  $m = 2..6$, ALL $K$ with $2^K > 3^m$ up to $K = 3m + 8$ — far beyond
+  $W(m,7)$ — and all compositions ($269{,}368$ total), listing every
+  orbit-closing divisibility solution. Result: exactly the retracing family
+  $(m, K, \text{comp}, x) = (m, 2m, (2,\dots,2), 1)$ for each $m$, least
+  period $1$, and nothing else. So the windows exclude nothing real, and no
+  counterexample to L-9906 hides just outside them.
+- **Independent brute-force cycle search** (`scratchpad/v5_cyclesearch.py`),
+  *finite verification, not proof*: direct $S$-orbit cycle detection among
+  odd $n \le 2 \cdot 10^5$ — iterate $S$ from each odd $n$ until the orbit
+  dips below $n$ (then $n$ is not the minimum of any cycle, by P1 plus
+  minimality) or returns to $n$ (cycle found). Output:
+  `cycle minima detected: [1]` — only the trivial cycle exists with minimal
+  element $\le 2\cdot 10^5$, consistent with (and far beyond) the theorem.
+- **First unsupported inference: none found.**
+
+### 4. Minor observations (no fixes required)
+
+1. Step 0's equivalence paragraph asserts "the orbit of $x$ is purely
+   periodic" from $S^m(x) = x$ without spelling out the one-line induction
+   ($y_{k+m} = S^k(S^m(x)) = S^k(x) = y_k$) and the well-ordering step giving
+   a least period; both are immediate and standard, recorded here for
+   completeness.
+2. In Step 2(a) the wrap case $i = m$ (where "$x_{i+1}$" means $x_1$) is
+   covered by the D-9908 cyclic labeling $x_{m+1} := x_1$; the P0(b)
+   contradiction then reads $x_m = x_1$, still between distinct labels when
+   $m \ge 2$. The argument as written is correct; this note just makes the
+   wrap explicit.
+
+### 5. Caveats
+
+- The status upgrade covers exactly the file's Scope: $S$-cycles, least
+  period $m \le 6$. Nothing about $m \ge 7$, and nothing about $C$-/$T$-cycle
+  translation (L-9905's Motivation uses it informally; a dedicated lemma is
+  still the right home for it, as both files note).
+- The $m = 5, 6$ case analysis remains machine-executed (now by three
+  implementations: the author's, and this reviewer's two-way-$c$ re-write,
+  plus the beyond-window sweep subsuming those cases); each individual case
+  is hand-checkable, and the hand-written record in the file covers all of
+  $m \le 4$. Per NOTATION.md this remains labeled exact finite verification
+  of a proved finite reduction — which is the correct epistemic label for a
+  theorem-by-finite-case-analysis.
+- Scripts for this review live in the session scratchpad (`v5_enum.py`,
+  `v5_beyond_window.py`, `v5_cyclesearch.py`); the load-bearing one
+  (`v5_enum.py`) is reproduced verbatim above.
+
+*Reviewed and signed: fable-02-v5, 2026-07-21.*
