@@ -313,7 +313,7 @@ received nonauthoring cold review and remain `PROPOSED`.
 | `T-9817` | cap/room lane and integrating cold reviewer | schedule exponents, LTE normalization, exact isometry, limit valuation, Newton lift, carry width, compatible-lift fiber, coset spacing, six-bit uniformity, and full-precision `m=12 -> 13` arithmetic were reconstructed | the theorem rules out the natural bounded projection only; correlation of the computable source defect with the independently defined base-cell carry is open |
 | `T-9818` | period lane and independent completion/source reviewer | coefficient indexing, phase-orbit separation, polynomial clearing, Vandermonde rank, scalar source parameters, all-auxiliary joint obstruction, and the nine-phase implication were reconstructed from the official source | formal rank and individual measures do not settle the prescribed ten-phase arithmetic cancellation |
 | `T-9819` | completion lane and independent period reviewer | valuation-band unique minimum, denominator direction, finite height, affine iteration, floor endpoints, stack indexing, PR #35 normalization, infinite-support argument, constants, and the sharp threshold example were reconstructed | local logarithmic support density is only a necessary rationality condition and supplies no physical support upper bound |
-| `T-9820` | cap-joint-carry lane, integrating reviewer, and independent completion reviewer | connector integrality, factorization signs, single inverse unit, exact `Delta_m-h` retained-bit count, parity split, full-coset permutation, top-six multiplicity, and bounded source replays were reconstructed | no recurrence for the distinguished connector word or cofinal odd decoded lane is proved |
+| `T-9820` | cap-joint-carry lane, integrating reviewer, independent completion reviewer, and period low-bit reviewer | connector integrality, factorization signs, single inverse unit, exact `Delta_m-h` retained-bit count, parity split, full-coset permutation, top-six multiplicity, residues `P=57`, `X_2=5 mod64`, and the affine `Z/J` bijection were reconstructed | the low-six-bit equivalence is same-scale only; no recurrence for the distinguished connector word or cofinal odd decoded lane is proved |
 | `T-9821` | period-ten lane, integrating reviewer, and independent completion reviewer | arbitrary-minor expansion, common real sign, opposite tropical selectors, exact endpoint exponents, Cramer indexing, bordered Schur complement, first-error uniqueness, normalized alternant degree, and height sufficiency boundary were reconstructed | visible Vandermonde content does not yet reduce primitive global height from cubic to the required quadratic coefficient |
 | `T-9822` | completion/grammar lane, integrating reviewer, and independent cap reviewer | both-symbol infinitude, return coordinate, terminal odd unit, strict gap, affine floors, shell and switch indexing, switch growth, finite-word residue sign, positivity, and source comparisons were reconstructed | every finite word is physically realizable only with a varying root; infinite one-root coherence and a grammar upper bound remain open |
 | `T-9823` | completion/generalization lane, integrating reviewer, and independent period reviewer | general return coordinate, terminal parity modulo `U`, positivity, affine floors, exact consecutive-switch flank return with its `+1`, finite-cylinder residue, and both explicit chart specializations were reconstructed | no generic affine recurrence is asserted to be a physical Collatz chart without a separate source crosswalk |
@@ -673,6 +673,10 @@ positive.  Modulo two, `H_c=b_c+Z`; the one-odd/three-odd split and odd-unit
 permutation of the full lift coset then give exactly `2^(Delta_m-6)` points in
 every top-six block.  The universal-lift scope was kept separate from the
 distinguished source.
+Reducing the same factorization modulo 64 gives `P=57`, `X_2=5`, hence
+`Z=5-57J` and `J=45-9Z`; both odd slopes are invertible.  This proves exact
+same-scale information equivalence and, modulo two, opposite parity, but no
+transition to the next scale.
 
 For `T-9821`, the reviewer re-expanded
 `u_(s_i+t_j)` into row, column, and phase factors.  Since `lambda<1`, the
@@ -1256,7 +1260,9 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 63. For `T-9820`, derive the integral scaled connector before reducing the
     base cell, check every inverse sign, and compute the carry onset after
     multiplying by `2^h`.  Recount the parity lanes and top-six coset points.
-    Keep universal compatible lifts separate from the distinguished source.
+    For the low-bit corollary, verify `N_j=11`, `P=57`, `X_2=5 mod64` and
+    inverse `57^(-1)=9`; keep its same-scale bijection separate from a scale
+    recurrence and universal compatible lifts separate from the source.
 64. For `T-9821`, re-expand arbitrary minors before specializing rows and
     columns, keep the reverse selector at `2` and identity selector at `3`,
     and check the Cramer deletion and bordered row indices.  Do not turn exact

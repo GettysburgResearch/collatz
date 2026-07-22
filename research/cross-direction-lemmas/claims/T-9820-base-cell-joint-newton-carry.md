@@ -4,7 +4,7 @@ Claim ID: `T-9820`
 Title: The joint coarse cell factors as one inverse unit times one connector coefficient, and at least one symbol lane retains the full growing lift ambiguity
 Status: `PROPOSED`
 Authoring agent: `gpt56-synthesis-01-wave18-cap-joint-carry`
-Reviewing agents: `gpt56-synthesis-01`; `gpt56-synthesis-01-wave16-completion-cold-review`
+Reviewing agents: `gpt56-synthesis-01`; `gpt56-synthesis-01-wave16-completion-cold-review`; `gpt56-synthesis-01-wave14-period-ten`
 Created: 2026-07-22
 Last updated: 2026-07-22
 Dependencies: local `T-9806`, `T-9813`, and `T-9817`; frozen corrected PR #3 connector algebra at `c37e96efd0dcc9dd610d59041234dc57e74090fd`
@@ -380,6 +380,9 @@ proves (32) and the stated bounded-projection obstruction. **QED**
   removes exactly `h` possible carry bits, up to the full width `Delta_m`.
 - The parity dichotomy proves that this cancellation cannot occur on every
   third-symbol lane simultaneously.
+- At each stabilized scale, the low six bits of `Z_m(a,b)` and `J_m(a,b)`
+  are affinely and bijectively equivalent, so retaining both adds no
+  same-scale bounded information.
 
 ## Dependency, novelty, and source audit
 
@@ -395,7 +398,8 @@ proves (32) and the stated bounded-projection obstruction. **QED**
   `c37e96efd0dcc9dd610d59041234dc57e74090fd`.  Live PR #33 head
   `2cfe2506e2a5e86157c8ac970bd9466ce86a6891` is contextual only.
 - The factorization (14), scaled interpretation (21), cancellation-depth law
-  (27), and parity no-go (30)--(32) are new.
+  (27), parity no-go (30)--(32), and low-six-bit equivalence (36)--(38) are
+  new.
 
 ## Gap and scope audit
 
@@ -407,6 +411,8 @@ proves (32) and the stated bounded-projection obstruction. **QED**
 - No scale recurrence for `Z_m(a,b)` is proved.  A special source correlation
   between `Z_(m+1)` and `c_m` could still select or cancel the realized top
   six bits despite the universal no-go.
+- The affine equivalence (36)--(37) is strictly same-scale.  It neither
+  relates scale `m` to scale `m+1` nor supplies the missing source recurrence.
 - When `H` is even, (27) measures the inverse-carry loss but does not include
   any separate information needed to compute `H` itself.
 - No bounded-scale computation is extrapolated, and no room, cap chain,
@@ -423,8 +429,11 @@ proves (32) and the stated bounded-projection obstruction. **QED**
 - The information statement in Theorem 3 is explicitly universal over lifts
   compatible with the truncated inverse.  It does not replace the
   distinguished source transition by a branching process.
+- Direct substitution at `m=12,13` verified (36)--(38) for all 16
+  first-symbol pairs.  This numerical check is redundant with the modular
+  proof.
 
-## Suggested next attack
+## Scale-law target
 
 Derive a scale law for the single scaled connector word
 
@@ -432,6 +441,55 @@ Derive a scale law for the single scaled connector word
  Z_m(a,b)={64P_mV_m(a,b)+N_{m,1}Y_{m,0}(a,b)+b_b\over T_{m,2}}.
 \tag{35}
 \]
+
+## Corollary 4 -- same-scale low-six-bit equivalence
+
+At every stabilized scale, (12) and `64\mid M_m` give
+
+\[
+ \boxed{
+ Z_m(a,b)\equiv X_2-P_mJ_m(a,b)
+       \equiv5-57J_m(a,b)
+       \equiv5+7J_m(a,b)\pmod{64}.
+ }
+\tag{36}
+\]
+
+Equivalently, since `57^(-1) congruent 9 (mod 64)`,
+
+\[
+ \boxed{
+ J_m(a,b)\equiv9\bigl(5-Z_m(a,b)\bigr)
+       \equiv45-9Z_m(a,b)\pmod{64}.
+ }
+\tag{37}
+\]
+
+In particular,
+
+\[
+ \boxed{Z_m(a,b)\equiv J_m(a,b)+1\pmod2.}
+\tag{38}
+\]
+
+### Proof and source audit
+
+Equation (12) is `P_mJ_m congruent X_2-Z_m (mod M_m)`, and (1) makes
+`M_m=64T_{m,3}` divisible by 64.  At stabilized scales,
+`t_j congruent 0 (mod 16)`, so (1) gives
+`N_{m,j} congruent 3^7 congruent 11 (mod 64)`.  Reducing (18) modulo 64
+therefore gives `11X_2 congruent -9 congruent 55 (mod 64)`, whence
+`X_2 congruent 5 (mod 64)`.  Also
+`P_m=N_{m,0}N_{m,1} congruent 11^2 congruent 57 (mod 64)`.  Reducing (12)
+therefore proves (36).  Because `57*9 congruent 1 (mod 64)`, solving for
+`J_m` gives (37), and reduction modulo 2 gives (38). **QED**
+
+Multiplication by either odd coefficient `7` or `-9` permutes
+`Z/64Z`.  Thus `Z_m(a,b) mod 64` and `J_m(a,b) mod 64` are bijectively
+equivalent information at one fixed scale.  This statement is same-scale
+only: it gives no transition from `m` to `m+1` and no scale recurrence.
+
+## Suggested next attack
 
 Only a correlation between its next-scale residue and the source carry `c_m`
 can now defeat the odd-lane obstruction.  Conversely, proving their relevant
