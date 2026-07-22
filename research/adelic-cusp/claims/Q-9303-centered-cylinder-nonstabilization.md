@@ -6,7 +6,7 @@
 **Authoring agent:** `gpt56-pro-04`  
 **Created:** 2026-07-22  
 **Last updated:** 2026-07-22  
-**Dependencies:** `T-9315`--`T-9317`, `L-9312`--`L-9314`, `R-9303`; wave-5 literature audit; cross-program comparison with PR #20 and PR #19  
+**Dependencies:** `T-9315`--`T-9317`, `L-9312`--`L-9315`, `R-9303`; wave-5 literature audit; cross-program comparison with PR #20 and PR #19  
 **Scope:** exact ordinary-section nonstabilization theorem  
 **Related counterexample candidates:** none
 
@@ -156,16 +156,27 @@ Therefore any itinerary with
 
 cannot stabilize.
 
-The Thue--Morse word has adjacent equal factors of length `2^m` with second start `6*2^m`. Since
+The Thue--Morse word has adjacent equal factors of length `2^m` with second start `2*2^m`. Since
 
 \[
-6\delta<1,
+2\delta<1,
 \tag{15}
 \]
 
 every finite shift or complemented shift of Thue--Morse has infinitely many nonzero blocks.
 
-This directly answers one wave-5 task: a Thue--Morse extremal sign pattern is incompatible with ordinary block stabilization.
+`L-9315` makes this robust under a non-erasing morphic recoding whose maximum-to-minimum output-length ratio is below
+
+\[
+\boxed{
+\frac1{2\delta}=8.8274237885\ldots.
+}
+\tag{16}
+\]
+
+Thus all codings and every binary morphism of length distortion at most `8` remain excluded.
+
+This directly answers one wave-5 task: a broad Thue--Morse extremal sign family is incompatible with ordinary block stabilization.
 
 ## 5. Wave-5 literature route
 
@@ -193,7 +204,8 @@ rho > 1/81
 
 rho = 1/81
   -> inspect the equality language;
-     shifted/complemented Thue--Morse is excluded by T-9316;
+     every efficient-recurrence equality word is excluded by T-9316;
+     bounded-distortion Thue--Morse recodings are covered by L-9315;
 
 rho < 1/81
   -> freeze the exact deficit 1/81-rho
@@ -260,7 +272,7 @@ A proposed proof is incomplete if it:
 4. compares complexity and carry constants without a new coupling invariant;
 5. infers an ordinary integer from compatible finite cylinders without stabilization;
 6. invokes Dubickas from an abstract without the exact `(81,64)` formulas and equality classification;
-7. assumes every Thue--Morse-related formula means the source equality itinerary is Thue--Morse.
+7. assumes every Thue--Morse-related formula means the source equality itinerary is literally the standard binary word.
 
 ## 9. Success criterion
 
