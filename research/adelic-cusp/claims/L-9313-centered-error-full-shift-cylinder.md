@@ -30,11 +30,8 @@ Define the bounded real companion
 \[
 \boxed{
 x_n
-=
-\frac{N-M}{N}
-\sum_{k\ge0}
-e_{n+k}
-\left(\frac MN\right)^k
+=((N-M)/N)
+\sum_{k\ge0} e_{n+k}(M/N)^k
 \in[0,1].
 }
 \tag{1}
@@ -44,28 +41,21 @@ Put
 
 \[
 \boxed{
-u_n
-=
-\frac{e_n-x_n}{M}
-=
-\frac{e_n-x_{n+1}}{N}.
-}
+u_n=M^{-1}(e_n-x_n)=N^{-1}(e_n-x_{n+1}).}
 \tag{2}
 \]
 
 Then
 
 \[
-|u_n|\le\frac1N
+|u_n|\le1/N
 \tag{3}
 \]
 
 and
 
 \[
-\boxed{
-N u_n-Mu_{n+1}=e_n-e_{n+1}.
-}
+\boxed{N u_n-Mu_{n+1}=e_n-e_{n+1}.}
 \tag{4}
 \]
 
@@ -82,33 +72,22 @@ N(u_n-v_n)=M(u_{n+1}-v_{n+1}),
 hence
 
 \[
-u_{n+k}-v_{n+k}
-=
-\left(\frac NM\right)^k(u_n-v_n).
+u_{n+k}-v_{n+k}=(N/M)^k(u_n-v_n).
 \]
 
-Because `N/M>1`, boundedness forces `u_n=v_n`.
+Since `N/M>1`, boundedness forces `u_n=v_n`.
 
 Equivalently, the backward transition
 
 \[
 \boxed{
-u_n
-=
-\frac{M u_{n+1}+e_n-e_{n+1}}{N}
-}
+u_n=N^{-1}(M u_{n+1}+e_n-e_{n+1})}
 \tag{5}
 \]
 
 is a contraction of ratio `M/N`.
 
-For any tail that is not identically zero or identically one, its error is nonzero and satisfies
-
-\[
-|u_n|<1/N.
-\]
-
-The sign recovers the digit:
+For any tail that is not identically zero or identically one, its error is nonzero and lies strictly inside the critical strip. Its sign recovers the digit:
 
 \[
 \boxed{e_n=\mathbf1_{u_n>0}.}
@@ -116,8 +95,6 @@ The sign recovers the digit:
 \]
 
 ## 3. The real error system is a full shift
-
-Equation `(5)` shows that no binary itinerary is removed by the real centered-error condition alone.
 
 In absolute-value coordinates
 
@@ -128,14 +105,14 @@ r_n=|u_n|,
 the forward transition is
 
 \[
-\boxed{r_{n+1}=\frac NM r_n}
+\boxed{r_{n+1}=(N/M)r_n}
 \tag{7}
 \]
 
 when the sign is unchanged, and
 
 \[
-\boxed{r_{n+1}=\frac{1-Nr_n}{M}}
+\boxed{r_{n+1}=M^{-1}(1-Nr_n)}
 \tag{8}
 \]
 
@@ -144,14 +121,14 @@ when the sign flips.
 The inverse branches are
 
 \[
-\boxed{r_n=\frac MN r_{n+1}}
+\boxed{r_n=(M/N)r_{n+1}}
 \tag{9}
 \]
 
 and
 
 \[
-\boxed{r_n=\frac{1-Mr_{n+1}}{N}.}
+\boxed{r_n=N^{-1}(1-Mr_{n+1}).}
 \tag{10}
 \]
 
@@ -187,8 +164,7 @@ M^K B_K
 =
 N^K B_0
 +
-\sum_{i=0}^{K-1}
-N^{K-1-i}M^i(e_i-e_{i+1}).
+\sum_{i=0}^{K-1}N^{K-1-i}M^i(e_i-e_{i+1}).
 \tag{12}
 \]
 
@@ -202,11 +178,7 @@ Since `N` is invertible modulo `M^K`, integrality through time `K` selects exact
 These classes are nested. Every infinite itinerary selects one point
 
 \[
-\boxed{
-B_0^*(e)
-\in
-\varprojlim_K\mathbb Z/M^K\mathbb Z.
-}
+\boxed{B_0^*(e)\in\varprojlim_K\mathbb Z/M^K\mathbb Z.}
 \tag{14}
 \]
 
@@ -219,11 +191,8 @@ Solving `(11)` backward in the `M`-adic completion gives
 \[
 \boxed{
 B_0^*(e)
-=
--
-\sum_{n\ge0}
-(e_n-e_{n+1})
-\frac{M^n}{N^{n+1}}.
+=-
+\sum_{n\ge0}(e_n-e_{n+1})M^nN^{-(n+1)}.
 }
 \tag{15}
 \]
@@ -233,13 +202,9 @@ For `M=64,N=81`, telescoping gives
 \[
 \boxed{
 B_0^*(e)
-=
--rac{e_0}{81}
-+
-\frac{17}{81^2}
-\sum_{n\ge0}
-e_{n+1}
-\left(\frac{64}{81}\right)^n
+=-e_0/81
++(17/81^2)
+\sum_{n\ge0} e_{n+1}(64/81)^n
 \quad\text{in }\mathbb Z_2.
 }
 \tag{16}
@@ -248,9 +213,7 @@ e_{n+1}
 Equivalently,
 
 \[
-\boxed{
-B_0^*(e)=\frac{\Phi(e)-e_0}{64}.
-}
+\boxed{B_0^*(e)=(\Phi(e)-e_0)/64.}
 \tag{17}
 \]
 
@@ -260,8 +223,7 @@ The itinerary admits a positive centered parameter exactly when its selected com
 
 \[
 \boxed{
-\exists\xi>0
-\text{ with itinerary }e
+\exists\xi>0\text{ with itinerary }e
 \iff
 B_0^*(e)\in\mathbb Z_{\ge1}.
 }
