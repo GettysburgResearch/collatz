@@ -35,6 +35,7 @@ dependency.
 - [`wave nine`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nine.md)
 - [`wave ten`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-ten.md)
 - [`wave eleven`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eleven.md)
+- [`wave twelve`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twelve.md)
 
 ## Result map
 
@@ -64,6 +65,7 @@ dependency.
 | [`L-9819`](claims/L-9819-two-orbit-successor-rigidity.md) | PR #16 survivor roots | Quantifies how aligned blocks or small Hamming distance between two directive words force exponentially large ordinary separation. |
 | [`L-9820`](claims/L-9820-padding-address-quotient-bit.md) | PR #3 padding counters | Recovers the previously missing scale-boundary address bit as one explicit ordinary quotient parity, with no inverse-permutation oracle. |
 | [`R-9804`](claims/R-9804-inverse-cylinder-zero-reset-obstruction.md) | PR #12/PR #16 bridge | Constructs the exact base-64 digit/carry transduction, proves its reachable carry set has size `2^n`, and rules out any global zero-reset exact router. |
+| [`L-9821`](claims/L-9821-cap-cusp-localization.md) | PR #33/PR #3 cap-chain bridge | Propagates completion height to every head, triple, and terminal input; every hypothetical cap chain forces all 84 canonical triple inputs below square-root cylinder height. |
 | [`L-9822`](claims/L-9822-h-compiler-phase-rotation.md) | PR #19 H frontier | Removing the common terminal zero reveals an exact irrational phase rotation with Sturmian branch coding; the actual completed suffix remains contracting. |
 | [`L-9823`](claims/L-9823-invariant-component-natural-boundary.md) | PR #6 invariant components | Every eventually periodic finite component coloring is constant; every nonconstant integer coloring has a natural-boundary generating series. |
 | [`L-9824`](claims/L-9824-h-phase-fiber-drift.md) | PR #19 H frontier | The renormalized H affine skew product has exact positive fiber drift, preserved fiber differences, and pointwise zero Lyapunov exponent. |
@@ -143,6 +145,9 @@ dependency.
 | [`L-9896`](claims/L-9896-survivor-delayed-one-hot-density-one.md) | PR #16 global survivor order | Full delayed one-hot lifts decorrelate after an exact delay cutoff; lower block-zero competitors have relative ordinary density one and exposed rank diverges in density. |
 | [`L-9897`](claims/L-9897-h-fresh-prime-room-dichotomy.md) | PR #19 H renewal frontier | Every transition pays in next-room length or forward prime mass, and no fixed finite prime support can recur infinitely often on a nonperiodic exact H chain. |
 | [`L-9898`](claims/L-9898-cap-first-seam-transfer-graph.md) | PR #33/PR #3 cap-chain bridge | Every triple seam is one edge of a 1024-state overlap graph. At scales `12,13`, the first seam has no edge modulo the minimally separating modulus `2048`. |
+| [`R-9806`](claims/R-9806-survivor-one-hot-exceptional-cantor-set.md) | PR #16 global survivor order | The formal all-delay avoiding set is a positive-dimensional Haar-null Cantor set, while ordinary depths with fewer than `s` delayed competitors obey a power-saving count. |
+| [`R-9807`](claims/R-9807-pade-special-vector-allocation-ceiling.md) | PR #20 period-ten frontier | The summed native vector has exactly the minimum allocated zero window; its exact scalar-allocation functional is uniquely maximized by equal allocation and remains subcritical at period ten. |
+| [`L-9899`](claims/L-9899-solution-cone-natural-boundary-rays.md) | Issue #24 solution cone | Extreme rays are component indicators; every proper positive ray has a natural boundary, so continuation of the distinguished ray through one arc is equivalent to Collatz. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -175,10 +180,13 @@ independently reconstructed and which conjectural boundaries remain open.
    family: every fixed delay has density `64^(-(m+1))`, delays separated by
    `m+1` are exactly independent, and lower block-zero competitors have
    relative ordinary density one in every exposure subphase. The one-hot
-   candidate's global rank therefore diverges in density. The remaining set
-   of avoiding ordinary depths has density and formal Haar measure zero, but
-   it may still be infinite. The next task is to classify that exceptional
-   set, add multi-hot competitors, and control the first positive block.
+   candidate's global rank therefore diverges in density. `R-9806` resolves
+   the geometry left behind: the formal all-delay avoiding set is a perfect,
+   positive-dimensional, Haar-null Cantor set, while ordinary parameters with
+   fewer than `s` delayed competitors have the power-saving count
+   `O(T^d(log T)^(s-1))`, `d<1`. It may still contain infinitely many ordinary
+   parameters. The next task is to add two-hot competitors to the joint child
+   tree and control the first positive block.
 2. For the collision lane, propagate the exact compatibility cylinder of
    `L-9852` through the residual grammar. A bulk address routes the physical
    tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
@@ -207,8 +215,13 @@ independently reconstructed and which conjectural boundaries remain open.
    64 candidate continuations. Its first seam is empty at scales `12` and
    `13`, with `2048` the minimal separating modulus. This is a finite
    two-scale obstruction, not an all-late-scale theorem: the full odd-radix
-   carry prevents an autonomous scale update. The next target is to close
-   that carry under `m -> m+1`, or find a later scale with a surviving edge.
+   carry prevents an autonomous scale update. `L-9821` bypasses that output
+   carry on the input side: completion height puts every one of the 84
+   canonical triple corrections below the square root of its exact modulus
+   and gives finite 256-head and 1024-triple cusp filters. The next target is
+   a uniform lower bound for the 256 stabilized head corrections, or a direct
+   comparison with the new cusp exponent; closing the output carry remains a
+   separate route.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
    `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
@@ -294,7 +307,13 @@ independently reconstructed and which conjectural boundaries remain open.
    denominator, leaving only constant ratio valuations at `2` and `3`.
    Reduced height must therefore be controlled archimedeanly, at other
    primes, or by a global evaluation resultant. The separate anchor window
-   remains degrees `105` through `110`.
+   remains degrees `105` through `110`. `R-9807` also closes scalar unequal
+   phase allocation: the summed native vector has an exact unique endpoint,
+   equal allocation uniquely maximizes its valuation-to-height functional,
+   and even the period-ten ceiling is `0.954998217905888...<1`. The live
+   directions are therefore coupled Hermite--Pade systems, evaluation
+   resultants, and genuine reduced-height savings rather than scalar
+   reallocation.
 5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 6. Test binary-automatic invariant-component colorings. `L-9823` eliminates
@@ -313,6 +332,12 @@ independently reconstructed and which conjectural boundaries remain open.
    fixed width into a finite Moore-equivalence test with an explicit ordinary
    separator. The live issue is uniformity: its horizon grows with width, and
    any nonconstant coloring must have infinitely many unabsorbed widths.
+   Independently, `L-9899` identifies the extreme rays of the nonnegative
+   solution cone with component indicators and proves that every proper
+   positive ray has the unit circle as a natural boundary. Continuation of
+   the distinguished `C_1` ray through one boundary arc is exactly equivalent
+   to Collatz. The next analytic target must therefore establish regularity
+   for that binary extreme ray itself; ambient operator spectra do not suffice.
 
 ## Integration boundary
 

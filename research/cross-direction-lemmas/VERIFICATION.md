@@ -89,6 +89,17 @@ remains open, one finite two-scale cap obstruction with no scale induction,
 and one qualitative H prime-support theorem importing S-unit finiteness.  All
 remain `PROPOSED` pending external repository review.
 
+Wave twelve selected four interfaces exposed by the refreshed PR #3, #13,
+#16, #20, and #33 heads and by issue #24.  The cap lane propagated the global
+completion-height bound to every head, triple, and terminal input; the survivor lane
+classified the entire formal set avoiding all delayed one-hot events; the
+Pade lane optimized the actual summed special vector over arbitrary scalar
+phase allocations; and the integrating lane reconstructed the fixed
+solution cone and its extreme rays.  Each result then received a nonauthoring
+cold review.  Exact replays checked the displayed arithmetic but are not used
+as theorem premises.  All four claims remain `PROPOSED` pending external
+repository review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -122,6 +133,10 @@ remain `PROPOSED` pending external repository review.
 | `PR16/D-9302` and the full one-hot lift interface | `L-9896` parameterizes every delayed one-hot lift by a permutation coordinate, proves an exact correlation cutoff, and transfers finite periodic independence to ordinary natural density. | Lower block-zero competitors and rank divergence have relative density one. The ordinary avoidance set has density zero but may be infinite; multi-hot words and the first positive block remain open. |
 | `PR19/D-9501` and successive H cores | `L-9897` factors each compatibility equation into shared and primitive cores, computes the exact reused-exponent tax, proves a room-or-increment bound, and applies nondegenerate S-unit finiteness to fixed prime support. | A nonperiodic exact chain must introduce infinitely many primes, but their unweighted divergent mass may be arbitrarily sparse. The S-unit theorem is an external named dependency and no infinite chain is excluded. |
 | Frozen `PR3/T-0027`, historical `L-0016`, `L-0017`, `L-0022`, and `PR33/L-9702` | `L-9898` derives exact stabilized connectors and reduces every triple seam to one edge of a 1024-state overlap graph. Exact evaluation removes the first seam at `m=12,13`. | The modulus `2048` is minimally separating at those scales only. The growing odd-radix carry has no autonomous scale recurrence, so no all-late-scale cap exclusion follows. |
+| `PR33/T-9704`, `L-9703`, `T-9703`, `L-9702`; frozen `PR3/T-0027` | `L-9821` transfers the completion-height estimate to every head, triple, and terminal input, proves quotient-zero localization there, and constructs exact head/triple cusp filters. | The result is conditional on a hypothetical cap chain. It supplies a carry-free necessary input condition, not a lower bound for the head corrections or an all-scale contradiction. |
+| `PR16/D-9302` and local `L-9896` full delayed one-hot lift | `R-9806` groups short-range events into `m+1` blocks, bounds every surviving child count, computes the formal Cantor-set dimensions, and transfers the exact spaced tree to ordinary height counts. | The formal avoiding set may contain no ordinary integer; the power-saving exceptional count may still be infinite. Multi-hot competitors and the first positive block remain open. |
+| `PR20/L-9408`, `L-9411`, `T-9416`, and the PR #13 period-ten interface | `R-9807` orders every coefficient term for arbitrary phase allocations, identifies the unique evaluated endpoint, and optimizes the exact scalar valuation-to-height functional. | Unequal allocation in one scalar root product is closed. Hermite--Pade coupling, evaluation resultants, non-scalar combinations, and reduced-height savings remain open. |
+| Issue #24 solution cone (`T-9702`) and local `L-9823` | `L-9899` reconstructs the nonnegative fixed cone, classifies its extreme rays, proves positive-component infinitude and eventual-period rigidity, and applies Polya--Carlson at radius one. | This is an exact reformulation: continuation of the distinguished ray through one arc is equivalent to Collatz and is not proved. |
 
 ## New-claim audit matrix
 
@@ -151,6 +166,10 @@ remain `PROPOSED` pending external repository review.
 | `L-9896` | centered-survivor lane and wave-eleven cold reviewer | lift-coordinate permutation, threshold, signed unit, exact correlation cutoff, independent subsequence, Haar/ordinary passage, CRT subphases, and finite-prefix validity were checked | density-one rank divergence does not decide whether the zero-density ordinary avoidance set is finite or infinite |
 | `L-9897` | H centered-room lane and wave-eleven cold reviewer | primitive compatibility, LTE/order lifting, room bound, fresh-free divisibility runs, S-unit nondegeneracy, recovery of the central state, and globally new-factor divisibility were checked | S-unit finiteness is external and qualitative; new primes can be too sparse for the discounted budget |
 | `L-9898` | cap-chain lane, symbolic seam auditor, and wave-eleven cold reviewer | stabilized core table, `64Q` connector normalization, local/triple indices, five-symbol states, two-symbol overlap, continuation collapse, and both exact survivor tables were checked | first-seam failure is finite at `m=12,13`; the full odd-radix carry prevents all-scale induction |
+| `L-9821` | cap-height lane and centered-survivor cold reviewer | prefix transfer, all index/depth formulas, ceiling losses, quotient-zero deductions, cusp filters, and all 256 stabilized head words at `m=12` were checked independently | no head-correction lower bound, seam nonvanishing, or cap-chain exclusion follows |
+| `R-9806` | centered-survivor lane and wave-twelve cold reviewer | phase retention, child counts, dimension bounds, exact one-forbidden-child tree, ordinary cutoff, and formal-versus-ordinary scope were reconstructed | the positive-dimensional formal set need not contain an ordinary parameter |
+| `R-9807` | Pade lane and wave-twelve cold reviewer | zero blocks, global least term, endpoint exponent, denominator unit, normalization, equal-allocation optimum, and the `r=1` edge case were reconstructed | the ceiling applies only to the native scalar special-vector family |
+| `L-9899` | integrating agent and Pade cold reviewer | extreme-ray classification, positive-component infinitude, affine commutator, period reduction, radius one, Polya--Carlson scope, and the zero-index component were reconstructed | analytic continuation of the distinguished ray remains exactly the conjectural step |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -268,6 +287,35 @@ one to eleven were exactly the two rows in `L-9898/(33)`.  Words survive bit
 ten but none survives bit eleven.  The optimized exact replay is committed as
 `X-9898`; it retains two extra defect bits when checking the normalized
 quotients.  No finite-scale pattern was extrapolated.
+
+### Independent wave-twelve arithmetic audits
+
+For `L-9821`, exact rational replay recovered every prefix slope and all head,
+triple, and tail margins.  At the `m=8` endpoint it gave
+`t_255=511`, `t_256=512`, `t_257=514`, head depth `5709`, tail depth `11308`,
+and final triple depth `16863`; the `j=254` prefix uses only `t<=255`.
+A separate optimized `m=12` replay checked all 256 head words against both
+sequential local divisibilities and nonnegative canonical outputs.  The proof
+uses the symbolic height inequalities, not this finite scale.
+
+For `R-9806`, the `m=1,v=0` root phases have between 4032 and 4095 surviving
+children, while the uniform theorem gives 4031.  The reviewer independently
+reconstructed the LTE phase retention, every-block child bounds, both
+dimension estimates, the exact binomial one-forbidden-child count, and the
+ordinary cutoff.  The audit kept the formal 2-adic Cantor set separate from
+ordinary integers.
+
+For `R-9807`, 21,837 nonzero allocation vectors with `1<=r<=7` and
+`0<=n_j<=3` matched the zero window, phase ordering, unique evaluated
+endpoint, and closed exponent.  The cold reviewer separately stress-tested
+5,454 allocations through period six, including ties, zero allocations, and
+`r=1`, and reconstructed the denominator-unit and normalization arguments.
+
+For `L-9899`, finite shortcut-component quotients were connected for every
+modulus through 500.  A nonauthoring reviewer independently checked the cone
+decomposition, extreme-ray argument, affine commutator, eventual-period
+reduction, radius-one step, and the precise Polya--Carlson scope.  The finite
+quotient replay is only adversarial evidence for the symbolic proof.
 
 ### Independent `L-9839` even-`K` jet audit
 
@@ -619,3 +667,18 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     continuation collapse does not close the full odd canonical output.
     Empty first seams at scales twelve and thirteen are not an all-late-scale
     contradiction.
+38. For `L-9821`, verify the completion-height transfer before using any cusp
+    filter. Recompute all prefix slopes, triple indices, dyadic depths, ceiling
+    losses, and the endpoint exception at `t_257`; retain the conditional cap
+    hypothesis and do not infer seam nonvanishing from quotient zero.
+39. For `R-9806`, verify phase retention and every-block child counts before
+    taking dimensions. Keep the formal 2-adic avoiding set distinct from the
+    ordinary height parameter, and retain the logarithmic factor in the
+    fewer-than-`s` exceptional count.
+40. For `R-9807`, check the exact zero window and unique global minimum before
+    optimizing. Verify the denominator is a 2-adic unit, normalize by the full
+    scalar height, and treat `r=1` separately from the strict convexity step.
+41. For `L-9899`, reconstruct the fixed cone and its extreme rays, then prove
+    positive-component infinitude, period reduction, radius one, and
+    nonrationality before invoking Polya--Carlson. Include the isolated zero
+    component and do not present the arc-continuation equivalence as a proof.

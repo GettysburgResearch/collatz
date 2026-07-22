@@ -29,6 +29,7 @@ repository review.
 | L-9819 | Lemma | Aligned directive agreement forces exponential separation of ordinary survivors | PROPOSED | L-9803; L-9815 for the successor application |
 | L-9820 | Lemma | The next padding-address bit is one explicit dyadic quotient parity | PROPOSED | L-9808, L-9811, L-9817; PR3/T-0028 |
 | R-9804 | Refutation | The exact inverse cylinder carry grows and zero padding cannot reset it | PROPOSED | chart recurrence restated in the claim |
+| L-9821 | Lemma | Every hypothetical cap chain forces all 84 triple inputs into explicit square-root dyadic cusps | PROPOSED | PR33/T-9704, L-9703, T-9703, L-9702; PR3/T-0027; L-9898 |
 | L-9822 | Lemma | The adaptive H compiler reveals an irrational phase rotation only after reversing its terminal contraction | PROPOSED | L-9814; R-9803 for the full-state caveat |
 | L-9823 | Lemma | Every nonconstant finite-valued component coloring has a natural-boundary generating series | PROPOSED | Pólya--Carlson for the analytic conclusion; periodic rigidity is elementary |
 | L-9824 | Lemma | The H compiler skew product preserves fiber differences and has unavoidable positive drift | PROPOSED | L-9814, L-9822; R-9803 for the exact-tail caveat |
@@ -107,5 +108,8 @@ repository review.
 | L-9896 | Lemma | Full delayed one-hot obstructions have relative natural density one in every exposed suffix phase | PROPOSED | L-9826, L-9881, L-9883, L-9885, L-9886, L-9892 |
 | L-9897 | Lemma | Fixed prime support occurs only finitely often on a nonperiodic exact H bridge chain | PROPOSED | L-9889, L-9894; nondegenerate S-unit finiteness |
 | L-9898 | Lemma | Cap triple seams form a 1024-state graph, with the first seam empty at scales twelve and thirteen | PROPOSED | L-9893; PR33/L-9702; PR3/T-0027, L-0016, L-0017, L-0022 |
+| R-9806 | Refutation | Delayed one-hot events leave a positive-dimensional formal exceptional Cantor set despite a power-saving ordinary count | PROPOSED | L-9826, L-9883, L-9885, L-9896 |
+| R-9807 | Refutation | The summed native Pade vector has no staggered scalar-allocation gain; equal allocation is uniquely optimal | PROPOSED | PR20/L-9408, L-9411, T-9416 |
+| L-9899 | Lemma | Positive solution-cone extreme rays are rational only for the full positive component and otherwise have a natural boundary | PROPOSED | Issue #24/T-9702; L-9823; Polya--Carlson; elementary reconstruction |
 
 No `K-####` candidate is proposed.
