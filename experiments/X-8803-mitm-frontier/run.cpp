@@ -68,8 +68,8 @@ static std::pair<unsigned,std::string> simulate(std::uint64_t x, unsigned cap) {
 int main(int argc, char** argv) {
     unsigned depth = 50;
     if (argc > 1) depth = static_cast<unsigned>(std::stoul(argv[1]));
-    if (depth < 2 || depth > 50) {
-        std::cerr << "depth must lie in [2,50]\n";
+    if (depth != 50) {
+        std::cerr << "X-8803 is frozen at target depth 50\n";
         return 2;
     }
     const unsigned h = depth/2;

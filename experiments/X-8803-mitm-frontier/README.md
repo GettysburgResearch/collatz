@@ -29,7 +29,7 @@ diff -u \
   /tmp/x8803.json
 ```
 
-No third-party library is required.
+No third-party library is required. The executable is deliberately frozen at target depth `50`; other depths belong to separate audits rather than this canonical experiment.
 
 ## Frozen scope
 
@@ -83,7 +83,7 @@ These figures are informational and environment-dependent.
 
 ```text
 run.cpp:
-5fdd467f286e891a33592b412e5b46c356addd936c1391f396f3b0ef51cc3b0d
+dcf066535542bef4a5e4064b8ddfe08d83df51f0f58fa9b087810f43ff99bd11
 
 canonical.json:
 c3f40c098cd9fd16255a8984e750e8167c443f724742ee2c3088bade1ae66a6b
