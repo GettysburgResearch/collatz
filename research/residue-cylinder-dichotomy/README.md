@@ -3,299 +3,226 @@
 **Agent:** `gpt56-cylinder-01`  
 **Issue:** `#31`  
 **Namespace:** `97xx`  
-**Status:** all mathematical claims are `PROPOSED`; experiments are exact finite checks only  
+**Status:** all native theorem-level claims are `PROPOSED`; experiments are exact finite checks only  
 **Created:** 2026-07-22  
-**Last updated:** 2026-07-22, cap-chain height-collapse session
+**Last updated:** 2026-07-22, full corrected-stage Evertse closure
 
 ## Headline
 
-This packet now contains three completion-height results for classes cut from PR
-#3's four phase-`-34` cycle-padded tower types.
+This packet proves side **A** of the ordinary-integer residue-cylinder dichotomy for two complete, fully quantified classes cut from PR #3's phase-`-34` tower system.
 
-### 1. Direct dyadic boundary class
+### Direct comparison class
 
-`T-9702` proves side **A** of the residue-cylinder dichotomy for the class using
-one direct connector from height `t` to `2t`. For every infinite four-type
-directive, the least initial representatives have infinitely many nonzero new
-blocks and the unique `Z_2` completion is not an ordinary integer.
+`T-9702` treats one direct connector from height `t` to `2t`. Every infinite four-type directive has infinitely many nonzero initial residue blocks, and its unique `Z_2` completion is not a signed ordinary integer.
 
-### 2. Corrected composed 256-transition class
+### Corrected composed 256-transition class
 
-`T-9703` reaches PR #3's genuinely supercritical corrected stage. Any
-hypothetical ordinary nonnegative infinite stage trajectory eventually has
+`T-9705` treats the genuinely supercritical chronological corrected stage, with arbitrary physically overlapping type words and one unbounded scale counter. For every infinite directive,
 
 ```text
-Y_m = 0,
-z_m = R_m,
-S_m = R_(m+1).
+a_k != 0 infinitely often,
+the unique Z_2 completion is not in Z.
 ```
 
-Thus the free ordinary quotient cannot carry information forever. The full-stage
-question becomes the exact cap-correction equality.
+Thus no positive ordinary marked Collatz initialization realizes this complete stage architecture. The result is uniform over the full directive class, not a sampled or eventually periodic family.
 
-### 3. Global height collapse on the cap chain
+No finite-prefix compatibility, entropy surplus, completed logarithm, or `Z_2` limit is counted as an ordinary initialization.
 
-`L-9703` proves the type-word-uniform normalized offset bound
+## 1. Exact complete-stage interface
 
-```text
-|beta_m| < 256 Lambda_m.
-```
-
-`T-9704` then proves that every surviving cap-correction chain satisfies
-
-```text
-limsup log_2(R_m+257)/D_m
- <= 161341/44508739
- < 1/275.
-```
-
-The ordinary correction therefore uses asymptotically less than `0.363%` of its
-complete cylinder precision. The remaining negative target is no longer a
-generic routing problem: it is an exceptionally strong structured p-adic
-approximation or product-formula problem.
-
-No result in this packet counts finite compatibility, a completed `Z_2` point,
-entropy surplus, counter-addressed prefixes, or preloaded logarithm digits as an
-ordinary initialization.
-
-## Frozen direct-boundary recurrence
-
-For source type `i`, target type `j`, and `t=2^m`, let `A_i(t), B_i(t), K_i(t),
-G_i(t)` be the exact tower data of PR #3 `L-0016`. The universal exponents are
-
-```text
-K_i(t)=11(t+1),
-G_i(t)=7(t+1).
-```
-
-The direct boundary connector acts on the ordinary high tail by
-
-```text
-h_(n+1)
- = [3^(7(t_n+1)) h_n + B_(i_n)(t_n) - A_(i_(n+1))(2t_n)]
-   / 2^(11(2t_n+1)),
-
-t_(n+1)=2t_n.
-```
-
-Whenever the quotient is integral, the corresponding physical shortcut-Collatz
-states satisfy one exact tower replay from phase `-34` to phase `-34`.
-
-## Direct-class theorem
-
-For every source/target type pair and every dyadic boundary height `t>=1`, put
-
-```text
-N = 3^(7(t+1)),
-M = 2^(11(2t+1)),
-C = B_i(t)-A_j(2t).
-```
-
-The exact tower bounds give
-
-```text
-N/M < 1/512,
-0 < B_i(t) < N,
-M/64 <= A_j(2t) <= 63M/64.
-```
-
-Hence every integral transition satisfies
-
-```text
-|h'| < |h|/512 + 513/512.
-```
-
-Every infinite signed integer trajectory would enter `{-1,0,1}`. For each trap
-value the next numerator lies strictly between `-M` and `0`, so no next integral
-transition exists. `L-9701` converts this into infinitely many nonzero
-initial-cylinder blocks for every directive.
-
-## Composed-stage interface and quotient exhaustion
-
-At scale `m>=8`, PR #3 `T-0027` gives
+At scale `m`, PR #3's frozen complete stage has
 
 \[
-z_{m+1}
-=
-\frac{3^{A_m}z_m+C_m(w_m)}{2^{D_m}},
+z_{m+1}={3^{A_m}z_m+C_m(w_m)\over2^{D_m}},
+\tag{1}
+\]
+
+\[
+A_m={5369\over2}2^m+1792,
+\qquad
+D_m={1085579\over256}2^m+2816.
+\tag{2}
+\]
+
+Its canonical domain and output are
+
+\[
+z_m=R_m+2^{D_m}Y_m,
+\qquad
+z_{m+1}=S_m+3^{A_m}Y_m,
+\tag{3}
+\]
+
+with
+
+\[
+0\le R_m<2^{D_m},
+\qquad
+0\le S_m<3^{A_m}.
+\tag{4}
+\]
+
+`L-9701` supplies the cumulative initial cylinders and exact new residue blocks.
+
+## 2. Future completion height kills every free signed quotient
+
+`T-9703` compares the current odd multiplier with the **next** complete dyadic radix and proves
+
+\[
+{3^{A_m}\over2^{D_{m+1}}}<\frac14.
+\tag{5}
+\]
+
+`L-9705` extends the quotient argument to every signed integer. The quotient must eventually be `Y_m=0` or `Y_m=-1`.
+
+The first is the cap stitch
+
+\[
+S_m=R_{m+1};
+\tag{6}
+\]
+
+the second is the co-cap stitch
+
+\[
+3^{A_m}-S_m
+ =2^{D_{m+1}}-R_{m+1}.
+\tag{7}
+\]
+
+So negative ordinary integers do not form an unexamined exception.
+
+## 3. Cap and co-cap heights collapse
+
+`L-9703` proves
+
+\[
+|\beta_m|<256\Lambda_m,
+\qquad
+\Lambda_m={3^{A_m}\over2^{D_m}}>257.
+\tag{8}
+\]
+
+`T-9704` gives, on a cap chain,
+
+\[
+\limsup {\log_2(R_m+257)\over D_m}
+ \le {161341\over44508739}<\frac1{275}.
+\tag{9}
+\]
+
+The same shifted recurrence applied to the positive co-cap correction `2^(D_m)-R_m` gives exactly the same bound.
+
+## 4. Connector-free physical coordinate
+
+At stabilized scales, the four finite tower cores are
+
+\[
+p=(5,30,20,56),
+\qquad
+b=(9,54,36,24).
+\tag{10}
+\]
+
+`L-9704` defines
+
+\[
+Z_j=X_j+64\,2^{11(t_{j+1}+1)}z_j
+\tag{11}
+\]
+
+and proves the connector-free recurrence
+
+\[
+2^{11(t_{j+1}+1)}Z_{j+1}
+ =3^{7(t_j+1)}Z_j+b_{i_j}.
+\tag{12}
+\]
+
+The coordinate has the direct physical meaning
+
+\[
+64(n_j+34)=2^{11(t_j+1)}Z_j.
+\tag{13}
+\]
+
+One complete stage becomes
+
+\[
+2^{E_m}Z_{m+1}
+ =3^{A_m}Z_m
+  +\sum_{j=0}^{255}b_{i_{m,j}}2^{U_{m,j}}3^{V_{m,j}},
+\tag{14}
 \]
 
 where
 
 \[
-A_m=\frac{5369}{2}2^m+1792,
-\qquad
-D_m=\frac{1085579}{256}2^m+2816.
+E_m={8459\over2}2^m+2816.
+\tag{15}
 \]
 
-The exact domain and output are
+All 256 internal coordinates are `{2,3}`-units. On a co-cap chain, `Z_m<0`; writing `\widetilde Z_m=-Z_m` reverses `(14)` while preserving the same one-positive-rest-negative sign pattern.
 
-\[
-z_m=R_m+2^{D_m}Y_m,
-\qquad
-z_{m+1}=S_m+3^{A_m}Y_m.
-\]
+## 5. Evertse admissibility is the closing theorem
 
-`L-9702` proves
+For either signed tail, form the 258 integer coordinates consisting of the two endpoint terms in `(14)` and the 256 internal terms. Divide by their gcd.
 
-\[
-0\le S_m<3^{A_m}.
-\]
+- The primitive gcd is at most `2^3*3^3=216`.
+- Every internal coordinate has outside-`{2,3}` content one.
+- The whole outside-prime product is at most `U_mU_(m+1)`, where `U` is the positive cap or co-cap endpoint.
+- The endpoint estimates give
+  \[
+  \limsup {\log_2(U_mU_{m+1})\over E_m}
+   \le {6498\over346819}<\frac1{50}.
+  \tag{16}
+  \]
+- One coordinate has size at least `2^(E_m)/216`.
+- Exactly one coordinate is positive, so no proper nonempty subsum vanishes.
+- A projective ratio containing `2^(E_m)` has strictly increasing `2`-adic valuation, so the projective points are pairwise distinct.
 
-Paying the next complete stage cylinder gives
+`L-9706` checks these are nondegenerate `(1,1/50,{2,3})`-admissible projective zero sums in the sense of Evertse's 1984 Corollary 1. That theorem permits only finitely many. The infinitely many stage tuples give the contradiction in `T-9705`.
 
-\[
-\frac{3^{A_m}}{2^{D_{m+1}}}<\frac14,
-\]
+The external theorem is used with its exact primitive, nondegeneracy, and `0<=d<1` hypotheses. The later fixed-rank Evertse--Schlickewei--Schmidt theorem is not needed.
 
-more exactly
+## 6. Claims
 
-\[
-\log_2\frac{3^{A_m}}{2^{D_{m+1}}}
-<
--\frac{22173699}{5248}2^m+rac{1024}{41}.
-\]
-
-With `r_m=z_m/2^(D_m)`,
-
-\[
-r_{m+1}<rac{3^{A_m}}{2^{D_{m+1}}}(1+r_m).
-\]
-
-While `r_m>=1` it more than halves; below one it stays below one. Exact
-membership forces eventual
-
-\[
-\boxed{S_m(w_m)=R_{m+1}(w_{m+1}),
-\qquad Y_m=0.}
-\]
-
-The current stage is supercritical relative to its own denominator; the next
-stage's nearly squared modulus creates the completion-height drain.
-
-## Cap-chain offset and global height
-
-Write one complete stage as
-
-\[
-z_{m+1}=\Lambda_mz_m+\beta_m,
-\qquad
-\Lambda_m=3^{A_m}/2^{D_m}.
-\]
-
-`L-9703` proves every local corrected-stage slope exceeds one and
-
-\[
-|\beta_m|<256\Lambda_m.
-\]
-
-On a cap-correction chain,
-
-\[
-R_{m+1}=\Lambda_mR_m+\beta_m.
-\]
-
-Since `Lambda_m>257`,
-
-\[
-R_{m+1}+257<\Lambda_m(R_m+257).
-\]
-
-The exact upper bound `log_2 3<65/41` gives
-
-\[
-\log_2\Lambda_m
-<
-\frac{161341}{10496}2^m+rac{1024}{41}.
-\]
-
-Consequently, for a chain beginning at `M`,
-
-\[
-\log_2(R_m+257)
-<
-\log_2(R_M+257)
-+rac{161341}{10496}(2^m-2^M)
-+rac{1024}{41}(m-M).
-\]
-
-Against `D_m`, this yields
-
-\[
-\boxed{
-\limsup
-\frac{\log_2(R_m+257)}{D_m}
-\le
-\frac{161341}{44508739}<\frac1{275}.}
-\]
-
-This is a height budget, not nonexistence. A closing theorem must identify the
-structured nonzero p-adic numerator, logarithmic form, or algebraic approximant
-whose valuation is forced by the cap chain.
-
-## Claims
-
-- `D-9701` — exact direct dyadic-boundary class.
-- `L-9701` — unique finite cylinders and exact residue-block recurrence.
-- `T-9701` — general finite-trap contraction theorem.
-- `T-9702` — direct-boundary directives have infinitely many nonzero blocks.
-- `Q-9701` — historical broad transfer target, now narrowed.
-- `X-9701` — exact direct-class derivation and independent physical replay.
-- `L-9702` — canonical finite composite caps remain below the odd multiplier.
-- `T-9703` — every ordinary corrected-stage trajectory exhausts its free quotient.
-- `Q-9702` — exclude or construct an infinite cap-correction chain.
-- `X-9702` — exact exponent, composite-cap, and quotient-exhaustion checks.
-- `L-9703` — type-uniform normalized stage-offset bound.
-- `T-9704` — factor-greater-than-275 cap-chain height collapse.
-- `X-9703` — exact expanding-offset and cap-chain height checks.
-
-See `CLAIM_INVENTORY.md` for status and dependencies.
-
-## Exact remaining theorem
-
-A negative full-stage result must prove that every admissible directive has
-infinitely many scales with
-
-\[
-S_m(w_m)\ne R_{m+1}(w_{m+1}).
-\]
-
-The strongest current route is to express each fixed normalized stage word's
-correction equation as a finite p-adic exponential/logarithmic form and combine
-a uniform lower bound with the factor-275 height gap.
-
-A positive result must generate equality forever by a finite rule and still
-supply one explicit finite positive initialization, every physical transition,
-positivity, and growth. No `K-####` identifier is appropriate before all of
-those obligations are met.
-
-## Verification
-
-Run `X-9701`, `X-9702`, and `X-9703` from the repository root using the commands
-in their experiment READMEs. Each experiment has a separately written checker
-that does not import its derivation module.
-
-`X-9703` freezes:
+See `CLAIM_INVENTORY.md`. The closing chain is:
 
 ```text
-stage coefficient rows: 25
-expanding composite chains: 82082
-independent expanding chains: 11403
-artificial cap steps: 224
-independent cap steps: 162
-asymptotic height ratio: 161341/44508739
-payload digest: 7131a6e74497002b4edd008deb4c3ff3adf5072b33995b21e88d13bd8f5d30b5
-all independent cap-chain height checks passed
+L-9701
+ -> T-9703
+ -> L-9703/T-9704
+ -> L-9704
+ -> L-9705
+ -> L-9706
+ -> T-9705.
 ```
 
-Finite checks validate exact algebraic interfaces only; the infinite statements
-come from the theorem proofs.
+## 7. Verification
 
-## Repository hygiene
+Run `X-9701` through `X-9704` from the repository root. Every experiment has a separately written checker.
 
-This packet does not edit `CURRENT_STATE.md`, `CLAIMS.md`, `OPEN_PROBLEMS.md`,
-`CANDIDATES.md`, `NEGATIVE_RESULTS.md`, `NOTATION.md`, or any competing branch
-ledger. Cross-branch claims are cited with their native IDs and retain their
-native status.
+`X-9704` freezes:
 
-No `K-####` candidate is proposed.
+```text
+local coordinate cases: 256
+physical cofactor cases: 256
+adjacent gcd cases: 256
+prime turnover cases: 256
+stable dictionary rows: 256
+signed quotient integral cases: 4704
+primitive gcd cap: 216
+endpoint product ratio: 6498/346819 < 1/50
+payload digest:
+f3a4fd8a6f5074c488bd1a0d46a420a3f6f4425aaf30bef8245d5512a995a858
+all independent connector-free checks passed
+```
+
+Finite checks validate arithmetic interfaces only. Evertse's theorem and the infinite contradiction are mathematical proof steps.
+
+## 8. Scope and repository hygiene
+
+This is not a proof of the Collatz conjecture. It excludes one exact proposed supercritical counterexample architecture.
+
+The packet does not edit `CURRENT_STATE.md`, `CLAIMS.md`, `OPEN_PROBLEMS.md`, `CANDIDATES.md`, `NEGATIVE_RESULTS.md`, `NOTATION.md`, or any competing root ledger. No `K-####` candidate is proposed.
