@@ -7,22 +7,19 @@
 **Reviewing agents:** none  
 **Created:** 2026-07-22  
 **Last updated:** 2026-07-22  
-**Dependencies:** elementary nearest-integer arithmetic; `D-9302` for the `64 -> 81` notation crosswalk  
+**Dependencies:** elementary nearest-integer arithmetic; `D-9302` for the `64 -> 81` crosswalk  
 **Scope:** every coprime expanding binary chart and the ordinary section of the `64 -> 81` subsystem  
 **Related counterexample candidates:** none
 
-## 1. General chart
+## 1. General binary chart
 
 Fix coprime integers
 
 \[
-2\le M<N
-\]
-
-and put
-
-\[
-\beta=\frac NM.
+2\le M<N,
+\qquad
+\beta=\frac{N}{M}.
+\tag{1}
 \]
 
 A **nontrivial ordinary binary-chart orbit** is a pair of sequences
@@ -42,17 +39,25 @@ M A_{n+1}
 =
 N A_n-(N-M)\varepsilon_n
 }
-\tag{1}
-\]
-
-for every `n`. Reducing `(1)` modulo `M` and using `gcd(M,N)=1` gives
-
-\[
-\boxed{A_n\equiv\varepsilon_n\pmod M.}
 \tag{2}
 \]
 
-Define the critical centered power set
+for every `n`.
+
+Reduction modulo `M` gives
+
+\[
+N(A_n-\varepsilon_n)\equiv0\pmod M.
+\]
+
+Since `gcd(M,N)=1`,
+
+\[
+\boxed{A_n\equiv\varepsilon_n\pmod M.}
+\tag{3}
+\]
+
+Define
 
 \[
 \boxed{
@@ -65,12 +70,12 @@ Define the critical centered power set
 \text{ for every }n\ge0
 \right\},
 }
-\tag{3}
+\tag{4}
 \]
 
-where `||y||` is distance to the nearest integer.
+where `||y||` denotes distance to the nearest integer.
 
-## 2. The equivalence
+## 2. The theorem
 
 There is a bijection
 
@@ -82,14 +87,14 @@ There is a bijection
 \longleftrightarrow
 \mathcal Z^{\rm ctr}_{M,N}.
 }
-\tag{4}
+\tag{5}
 \]
 
-More explicitly:
+The maps in both directions are explicit.
 
-### From an ordinary orbit to a centered power orbit
+### Ordinary orbit to centered parameter
 
-For an itinerary `epsilon`, define its bounded real companion tails
+Given an ordinary orbit, define the bounded real companion tails
 
 \[
 \boxed{
@@ -101,26 +106,19 @@ x_n
 \left(\frac MN\right)^k
 \in[0,1].
 }
-\tag{5}
+\tag{6}
 \]
 
-They satisfy the same affine recurrence
+Then
 
 \[
 M x_{n+1}
 =
 N x_n-(N-M)\varepsilon_n.
-\tag{6}
-\]
-
-For a nontrivial ordinary orbit, in fact
-
-\[
-0<x_n<1
 \tag{7}
 \]
 
-for every `n`. Put
+For a nontrivial orbit, every `x_n` lies strictly between `0` and `1`. Put
 
 \[
 \boxed{
@@ -137,15 +135,14 @@ Then
 \boxed{
 \left\|\xi\beta^n\right\|
 <\frac1N
+\quad(n\ge0).
 }
 \tag{9}
 \]
 
-for every `n`.
+### Centered parameter to ordinary orbit
 
-### From a centered power orbit to an ordinary orbit
-
-Conversely, let `xi` lie in `(3)`. For each `n`, let `B_n` be the unique nearest integer to
+Conversely, let `xi` lie in `(4)`. For each `n`, let `B_n` be the unique nearest integer to
 
 \[
 y_n=\xi\beta^n
@@ -160,7 +157,7 @@ u_n=y_n-B_n,
 \tag{10}
 \]
 
-Then no `u_n` is zero, and the endpoint values `+-1/N` never occur. Define
+Every `u_n` is nonzero, and the endpoint values `+-1/N` do not occur. Define
 
 \[
 \boxed{
@@ -176,11 +173,10 @@ Then no `u_n` is zero, and the endpoint values `+-1/N` never occur. Define
 
 \[
 \boxed{
-A_n=M B_n+\varepsilon_n
+A_n
+=M B_n+\varepsilon_n
 =
-\left\lceil
-M\xi\beta^n
-\right\rceil,
+\left\lceil M\xi\beta^n\right\rceil,
 }
 \tag{12}
 \]
@@ -198,20 +194,26 @@ A_n-M\xi\beta^n.
 \tag{13}
 \]
 
-Then `0<x_n<1`, every `A_n>=2`, and `(1)` holds for every `n`.
+Then
 
-The two constructions are inverse.
+\[
+0<x_n<1,
+\qquad
+A_n\ge2,
+\]
+
+and `(2)` holds at every step. These constructions are inverse.
 
 ## 3. Forward proof
 
-Write
+By `(3)`, write
 
 \[
-A_n=M B_n+\varepsilon_n
+A_n=M B_n+\varepsilon_n.
 \tag{14}
 \]
 
-using `(2)`. Subtract `(6)` from `(1)`:
+Subtracting `(7)` from `(2)` gives
 
 \[
 A_n-x_n
@@ -229,7 +231,7 @@ B_n+rac{\varepsilon_n-x_n}{M}.
 \tag{16}
 \]
 
-The real recurrence can also be written
+The real recurrence can be rewritten as
 
 \[
 x_n
@@ -240,16 +242,18 @@ x_n
 \tag{17}
 \]
 
-Therefore
+Consequently,
 
 \[
+\boxed{
 \frac{\varepsilon_n-x_n}{M}
 =
 \frac{\varepsilon_n-x_{n+1}}{N}.
+}
 \tag{18}
 \]
 
-Since `0<=x_(n+1)<=1`, equation `(18)` gives
+Since `0<=x_(n+1)<=1`,
 
 \[
 \left|
@@ -259,44 +263,53 @@ Since `0<=x_(n+1)<=1`, equation `(18)` gives
 \tag{19}
 \]
 
-For a nontrivial ordinary orbit the inequalities are strict. If a real tail were `0`, every future digit would be zero; integrality of the expanding recurrence would force the ordinary tail to be zero. If a real tail were `1`, every future digit would be one; integrality would force the ordinary tail to be the trivial fixed state `1`. Both contradict `A_n>=2`.
+The inequality is strict for a nontrivial ordinary orbit.
 
-Thus `B_n` is the unique nearest integer to `xi beta^n`, and `(9)` follows.
+- If `x_n=0`, every future digit is zero. Equation `(2)` then forces `M^k|A_n` for every `k`, hence `A_n=0`.
+- If `x_n=1`, every future digit is one. Applying the preceding argument to `A_n-1` forces `A_n=1`.
+
+Both contradict `A_n>=2`. Thus `(16)` identifies `B_n` as the unique nearest integer and proves `(9)`.
 
 ## 4. No-zero lemma for the converse
 
-Assume `(3)`. Because `1/N<1/2`, each nearest integer `B_n` is unique.
+Assume `(4)`. Because `N>=3`,
 
-Suppose `u_n=0` for some `n`. Then
+\[
+1/N<1/2,
+\]
+
+so every nearest integer `B_n` is unique.
+
+Suppose `u_n=0`. Then
 
 \[
 y_n=B_n>0
 \]
 
-is an ordinary integer. Since
+is an integer and
 
 \[
-y_{n+k}
-=
-B_n\frac{N^k}{M^k},
-\]
-
-consider `k=1`. If `M` did not divide `B_n`, the reduced rational would have nonzero denominator dividing `M`, so its distance to the nearest integer would be at least `1/M>1/N`, contradicting `(3)`. Hence `M|B_n`.
-
-Repeating at every later step gives
-
-\[
-M^k\mid B_n
-\]
-
-for all `k`, forcing `B_n=0`, contrary to `y_n>0`. Therefore
-
-\[
-\boxed{u_n\ne0\quad\text{for every }n.}
+y_{n+k}=B_n\frac{N^k}{M^k}.
 \tag{20}
 \]
 
-The same argument combined with the transition below rules out `u_n=+-1/N`; hence the critical bound is automatically strict for positive infinite orbits.
+If `M` did not divide `B_n`, the reduced rational `N B_n/M` would have a nontrivial denominator dividing `M`; its distance to the nearest integer would be at least `1/M>1/N`, contradicting `(4)`. Hence `M|B_n`.
+
+Repeating this argument at all later powers gives
+
+\[
+M^k|B_n
+\quad\text{for every }k,
+\]
+
+so `B_n=0`, contrary to `y_n>0`. Therefore
+
+\[
+\boxed{u_n\ne0\quad(n\ge0).}
+\tag{21}
+\]
+
+The transition analysis below also excludes `u_n=+-1/N`, so every positive centered orbit lies strictly inside the critical strip.
 
 ## 5. Integral carry and sign table
 
@@ -304,18 +317,16 @@ Define
 
 \[
 \boxed{
-c_n
-=N u_n-Mu_{n+1}.}
-\tag{21}
+c_n=N u_n-Mu_{n+1}.}
+\tag{22}
 \]
 
-Because `M y_(n+1)=N y_n`,
+Since `M y_(n+1)=N y_n`,
 
 \[
-c_n
-=M B_{n+1}-N B_n
-\in\mathbb Z.
-\tag{22}
+\boxed{
+c_n=M B_{n+1}-N B_n\in\mathbb Z.}
+\tag{23}
 \]
 
 Moreover,
@@ -325,35 +336,36 @@ Moreover,
 \le
 N|u_n|+M|u_{n+1}|
 \le
-1+\frac MN
+1+rac MN
 <2.
-\tag{23}
+\tag{24}
 \]
 
-Thus
+Hence
 
 \[
 c_n\in\{-1,0,1\}.
-\tag{24}
 \]
 
 The signs determine the carry exactly:
 
 \[
+\boxed{
 \begin{array}{c|c|c}
 \operatorname{sgn}(u_n)&\operatorname{sgn}(u_{n+1})&c_n\\
 \hline
 +&+&0\\
 -&-&0\\
 +&-&1\\
--&+&-1
+-&+&-1.
 \end{array}
+}
 \tag{25}
 \]
 
-For example, if both errors are positive, `c_n=1` would require `N u_n>1`, impossible except at the excluded endpoint, while `c_n=-1` would force `M u_(n+1)>1`. The other same-sign case is analogous. Opposite signs determine the sign of the nonzero integer `c_n`.
+For example, when both errors are positive, `c_n=-1` is impossible by sign, while `c_n=1` would require `Nu_n>1` except at the excluded endpoint. The other same-sign case is analogous; opposite signs force the corresponding nonzero integer.
 
-With `(11)`, the table is
+By `(11)`,
 
 \[
 \boxed{
@@ -361,66 +373,64 @@ c_n=\varepsilon_n-\varepsilon_{n+1}.}
 \tag{26}
 \]
 
-Combining `(22)` and `(26)` gives
+Combining `(23)` and `(26)` gives
 
 \[
-M B_{n+1}+\varepsilon_{n+1}
+M B_{n+1}+arepsilon_{n+1}
 =
-N B_n+\varepsilon_n.
+N B_n+arepsilon_n.
 \tag{27}
 \]
 
-Multiplication by `M` and the definition `(12)` yield
+Using `(12)`, equation `(27)` is equivalent to `(2)`.
 
-\[
-M A_{n+1}
-=
-N A_n-(N-M)\varepsilon_n,
-\]
-
-which is `(1)`.
-
-Equation `(13)` and `(26)` similarly give the real companion recurrence `(6)`.
+Similarly, `(13)` and `(26)` imply the real recurrence `(7)`.
 
 ## 6. Positivity and nontriviality
 
-Because `y_n>0`, if `u_n<0` then `B_n>=1` and `A_n>=M`. If `u_n>0`, then `B_n>=0`. The only possible state below `2` is `A_n=1`, which would mean `B_n=0` and `epsilon_n=1`.
+If `u_n<0`, then `y_n>0` forces `B_n>=1`, so `A_n>=M>=2`.
 
-But `(1)` would then force `A_(n+1)=1`, and inductively every future state would be `1`. Equivalently, the positive errors would satisfy
+If `u_n>0`, then `B_n>=0`. The only possible state below `2` is `A_n=1`, which means `B_n=0` and `epsilon_n=1`. Equation `(2)` would then force `A_(n+1)=1`, and inductively every future state would be `1`. Equivalently,
 
 \[
 u_{n+k}=\beta^k u_n,
 \]
 
-contradicting their uniform bound unless `u_n=0`, already excluded. Hence
+contradicting the uniform bound unless `u_n=0`, already excluded. Thus
 
 \[
-\boxed{A_n\ge2\quad\text{for every }n.}
+\boxed{A_n\ge2\quad(n\ge0).}
 \tag{28}
 \]
 
-Unrolling the bounded real recurrence shows that `(13)` is exactly the series `(5)`, so the reconstruction returns the same real companion. Equations `(12)` and `(13)` then show that the forward and converse maps are inverse.
+Unrolling the bounded recurrence `(7)` recovers exactly the series `(6)`. Finally,
+
+\[
+A_0-x_0=M(B_0+u_0)=M\xi,
+\]
+
+so the forward and converse maps are inverse.
 
 ## 7. The `64 -> 81` specialization
 
-For
+Set
 
 \[
 M=64,
 \qquad
 N=81,
 \qquad
-\beta=\frac{81}{64},
+\beta=\frac{81}{64}.
 \]
 
-the theorem becomes
+Then
 
 \[
 \boxed{
 \begin{aligned}
 &\exists\text{ a nontrivial infinite ordinary }64\to81\text{ survivor}\\
 &\qquad\Longleftrightarrow\\
-&\exists\xi>0\text{ such that }
+&\exists\xi>0:
 \left\|\xi\left(\frac{81}{64}\right)^n\right\|
 \le\frac1{81}
 \quad\forall n\ge0.
@@ -429,7 +439,7 @@ the theorem becomes
 \tag{29}
 \]
 
-The reconstruction is explicit:
+The reconstruction is
 
 \[
 \boxed{
@@ -444,9 +454,7 @@ A_n
 
 \[
 \boxed{
-\varepsilon_n
-=A_n\bmod64
-\in\{0,1\},
+\varepsilon_n=A_n\bmod64\in\{0,1\},
 }
 \tag{31}
 \]
@@ -462,69 +470,65 @@ A_{n+1}
 \tag{32}
 \]
 
-The initial room is recovered from the centered parameter by
+The initial room and real companion are
 
 \[
 \boxed{A_0=\lceil64\xi\rceil,}
 \tag{33}
 \]
 
-while
-
 \[
-x_n
-=A_n-64\xi(81/64)^n
-\in(0,1)
+\boxed{
+x_n=A_n-64\xi(81/64)^n\in(0,1).}
 \tag{34}
 \]
 
-is exactly the bounded real companion tail.
+The trivial section points `A=0` and `A=1` both correspond to the degenerate parameter `xi=0`; positive `xi` parametrizes exactly the nontrivial section.
 
-The two trivial section points `A=0` and `A=1` both collapse to the degenerate parameter `xi=0`; positive `xi` parametrizes exactly the nontrivial section.
+## 8. Structural meaning
 
-## 8. Relationship to the existing packet
+`D-9302` records four objects:
 
-`D-9302` previously recorded four objects:
-
-1. the ordinary integral tails `A_n`;
-2. the symbolic digits `epsilon_n`;
-3. the bounded real companions `x_n`;
+1. ordinary integral tails `A_n`;
+2. symbolic digits `epsilon_n`;
+3. bounded real companions `x_n`;
 4. the expanding difference `A_n-x_n`.
 
-This theorem shows that they are not separate constraints. They are four reconstructions of the single centered orbit
+`T-9315` shows they are four reconstructions of
 
 \[
 \xi(81/64)^n.
 \]
 
-It removes the remaining finite-versus-adic ambiguity at the level of the ordinary section: once a positive centered parameter exists, the ordinary integer orbit is recovered by the ceiling formula `(30)`.
+Once a positive centered parameter exists, there is no remaining ambiguity about the ordinary orbit: it is recovered by the ceiling formula `(30)`.
+
+`L-9313` then supplies the complementary audit: every binary itinerary has a bounded real error path, but only an itinerary whose nested nearest-integer cylinder stabilizes gives an ordinary centered parameter.
 
 ## 9. Literature boundary
 
-The result creates an exact native generalized `Z`-number problem, but it does not identify it with Mahler's classical one-sided interval problem. The condition is centered and uses two arcs around the circle origin.
+This is an exact native generalized `Z`-number problem, but it is not Mahler's classical one-sided interval problem.
 
-The repository literature audit remains applicable:
+- The condition is centered around the circle origin.
+- `81/64=(3/2)^4` creates the scheduled intermediate geometry of `L-9312`.
+- The real error language has full symbolic support.
+- Ordinary realization is an inverse-limit nearest-integer stabilization property.
 
-- Mahler and Flatto--Lagarias--Pollington supply methodology and nearby range obstructions;
-- no imported theorem in the current literature packet excludes the exact critical radius `1/81` for the ratio `81/64`;
-- replacing the centered two-arc condition by one Euclidean interval would be an invalid transfer.
-
-No external theorem is used in the proof above.
+`CENTERED_LITERATURE_AUDIT.md` records the precise near misses. No external theorem is used in this proof.
 
 ## 10. Gap audit
 
 - `T-9315` is a reformulation theorem, not a nonexistence theorem.
-- The centered set `Z_ctr_(64,81)` may still be nonempty; proving it empty is exactly the remaining ordinary-section problem.
-- The critical inequality is closed in the definition, but every positive infinite orbit automatically satisfies it strictly.
-- The theorem concerns the induced `64 -> 81` subsystem. Translation to every possible ordinary Collatz counterexample remains branch-qualified.
+- The centered set may still be nonempty.
+- The closed critical inequality in `(29)` is automatically strict for every positive infinite orbit.
+- The theorem concerns the induced `64 -> 81` subsystem; translation to every possible Collatz counterexample remains branch-qualified.
 - Every proof-looking statement remains `PROPOSED` pending independent reconstruction.
 
-## 11. Suggested next attack
+## 11. Correct next attack
 
-Exploit the fourth-power identity
+By `L-9313`, pure real interval-cylinder emptiness is impossible as a proof strategy. The exact target is the appended nearest-integer block sequence of `L-9314`:
 
 \[
-\frac{81}{64}=\left(\frac32\right)^4.
+R_{K+1}=R_K+q_K64^K.
 \]
 
-`L-9312` converts `(29)` into a four-phase scheduled trapping problem for the complete `3/2` orbit. The next theorem should use the transition restrictions between those phases, rather than only the total length of their union.
+Proving infinitely many `q_K` are nonzero for every nontrivial itinerary would make the centered set empty and close the ordinary section.
