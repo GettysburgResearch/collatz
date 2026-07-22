@@ -1,9 +1,13 @@
 # Source equality-language screening for the centered ordinary section
 
-**Agent:** `gpt56-pro-04`  
+**Agent:** `gpt56-pro-04`; independently reviewed by `gpt56-review-9315-01`  
 **Issue:** #15  
 **Date:** 2026-07-22  
-**Status:** native screening claims `PROPOSED`; external source formulas remain separately audited
+**Status:** native screening claims reviewed as recorded in `CLAIMS.md`; external source formulas remain separately audited
+
+## Independent-review correction
+
+The original Screen D cited `T-9318` without requiring the source language to be nonconstant. `T-9318` is refuted by `0^infinity` and `1^infinity`, which have factor-complexity slope zero and an all-zero appended-block tail. The corrected screen is `T-9319` and explicitly requires nonconstancy. The other native screens in this document passed independent reconstruction.
 
 ## 1. Input from an external rational-power theorem
 
@@ -50,7 +54,7 @@ ell_j-\delta t_j\to+\infty,
 \delta=\log_{64}(81/64).
 \]
 
-Then `T-9316` excludes ordinary stabilization.
+Then verified `T-9316` excludes ordinary stabilization.
 
 ### Screen B — morphic presentation
 
@@ -60,7 +64,7 @@ If the source word is a non-erasing morphic image of Thue--Morse with image leng
 \frac ba<\frac1{2\delta}=8.8274237885\ldots.
 \]
 
-Then `L-9315` excludes it.
+Then verified `L-9315` excludes it.
 
 ### Screen C — sequential presentation
 
@@ -70,11 +74,11 @@ If the source word is the output of a deterministic non-erasing sequential trans
 \frac ba<\frac1{(2Q+1)\delta}.
 \]
 
-Then `L-9316` excludes it. Every letter-to-letter machine with at most eight states passes this test.
+Then verified `L-9316` excludes it. Every letter-to-letter machine with at most eight states passes this test.
 
-### Screen D — factor complexity
+### Screen D — corrected factor-complexity screen
 
-If an exact or certified upper bound gives
+First certify that the source language contains no constant itinerary in the equality class being screened. If a **nonconstant** itinerary has an exact or certified upper bound
 
 \[
 \liminf_{n\to\infty}\frac{p(n)}n
@@ -84,7 +88,9 @@ If an exact or certified upper bound gives
 17.6548475770\ldots,
 \]
 
-then `T-9318` excludes the language without requiring an explicit coding.
+then `T-9319` excludes ordinary stabilization without requiring an explicit coding.
+
+Do not cite the former unrestricted `T-9318` statement. `R-9304` records its exact constant-word counterexamples.
 
 ### Screen E — direct arithmetic blocks
 
@@ -109,7 +115,7 @@ No screen may be invoked from a descriptive phrase such as “Thue--Morse-relate
 
 ## 4. Current Thue--Morse status
 
-The literal Thue--Morse word and every finite shift or complement are excluded by `T-9316` using the adjacent square family
+The literal Thue--Morse word and every finite shift or complement are excluded by verified `T-9316` using the adjacent square family
 
 \[
 ell_m=2^m,
@@ -119,9 +125,9 @@ t_m=2\cdot2^m.
 
 The exclusion extends to:
 
-- morphic distortion below `8.8274237885...` by `L-9315`;
-- deterministic letter-to-letter encodings with at most eight states by `L-9316`;
-- any equality subshift with factor-complexity slope below `17.6548475770...` by `T-9318`.
+- morphic distortion below `8.8274237885...` by verified `L-9315`;
+- deterministic letter-to-letter encodings with at most eight states by verified `L-9316`;
+- any **nonconstant** equality subshift with factor-complexity slope below `17.6548475770...` by `T-9319`.
 
 ## 5. Determinant fallback
 
@@ -161,7 +167,10 @@ The current `DUBICKAS_SPECIALIZATION_PREAUDIT.md` remains conditional until thes
 
 ## 7. Status boundary
 
-- The screening implications are native consequences of `T-9315`--`T-9318` and `L-9315`--`L-9316`.
+- `T-9315`, `T-9316`, `L-9315`, and `L-9316` have passed independent reconstruction.
+- The conditional implication in `T-9317` has passed; no external theorem is instantiated.
+- The corrected factor-complexity screen is `T-9319`; it requires nonconstancy.
+- `T-9318` is refuted and must not be used as an unrestricted screen.
 - No external equality language has yet been fully acquired and certified for `(81,64)`.
 - The determinant fallback is a design specification, not a theorem.
 - The full ordinary section remains open.
