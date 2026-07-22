@@ -1,0 +1,115 @@
+{
+  "arithmetic": "exact Python integers",
+  "bounded_exact_reset_search": {
+    "eligible_cases": 37,
+    "odd_exponent_max": 1000,
+    "pure_power_hits": [
+      1
+    ],
+    "second_reset_hits": [
+      1
+    ]
+  },
+  "experiment_id": "X-8005",
+  "local_checks": 93750,
+  "local_digest": "e45ff088a29c77649dd8dfefb232cd836ae743cdc432dfae6beefa876d01e525",
+  "macro_checks": 35716,
+  "reset_family": {
+    "count": 200,
+    "first_m_at_max": 1200,
+    "m_max": 1200,
+    "m_min": 6,
+    "max_actual_depth": 402,
+    "sample_rows": [
+      {
+        "actual_depth": 4,
+        "certified_prefix": 4,
+        "consecutive_B_after_power": 1,
+        "d": 2,
+        "m": 6,
+        "odd_d_mod8": 1,
+        "post_B_domain": "exit",
+        "seed_bits": 7,
+        "v2_d": 1
+      },
+      {
+        "actual_depth": 9,
+        "certified_prefix": 8,
+        "consecutive_B_after_power": 1,
+        "d": 6,
+        "m": 18,
+        "odd_d_mod8": 3,
+        "post_B_domain": "A",
+        "seed_bits": 19,
+        "v2_d": 1
+      },
+      {
+        "actual_depth": 35,
+        "certified_prefix": 35,
+        "consecutive_B_after_power": 2,
+        "d": 32,
+        "m": 96,
+        "odd_d_mod8": 1,
+        "post_B_domain": "exit",
+        "seed_bits": 97,
+        "v2_d": 5
+      },
+      {
+        "actual_depth": 202,
+        "certified_prefix": 202,
+        "consecutive_B_after_power": 1,
+        "d": 200,
+        "m": 600,
+        "odd_d_mod8": 1,
+        "post_B_domain": "exit",
+        "seed_bits": 601,
+        "v2_d": 3
+      },
+      {
+        "actual_depth": 402,
+        "certified_prefix": 402,
+        "consecutive_B_after_power": 1,
+        "d": 400,
+        "m": 1200,
+        "odd_d_mod8": 1,
+        "post_B_domain": "exit",
+        "seed_bits": 1201,
+        "v2_d": 4
+      }
+    ],
+    "semantic_digest": "26d11017dd0504dc4ca150d9a54426f78a90609005d8387054cfebe60c871b7f",
+    "step": 6
+  },
+  "results_sha256": "4ef123614f7b852d9e3dd86e91c28aed6dfbe4ba156b3ff3d99a9ffd8142a7d9",
+  "two_macro_mod144_checks": 2555,
+  "u_equals_1_first_hensel_hits": {
+    "0": {
+      "r": 0,
+      "valuation": 4
+    },
+    "1": {
+      "r": 6,
+      "valuation": 7
+    },
+    "2": {
+      "r": 214,
+      "valuation": 10
+    },
+    "3": {
+      "r": 1622,
+      "valuation": 13
+    },
+    "4": {
+      "r": 8790,
+      "valuation": 16
+    },
+    "5": {
+      "r": 66134,
+      "valuation": 19
+    },
+    "6": {
+      "r": 918102,
+      "valuation": 22
+    }
+  }
+}
