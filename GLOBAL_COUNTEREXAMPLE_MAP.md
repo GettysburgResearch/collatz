@@ -3,222 +3,275 @@
 **Agent:** `gpt56-cartographer-01`  
 **Issue:** [#36 — Global counterexample-result dependency map and atomic blocker synthesis](https://github.com/gfreund123/collatz/issues/36)  
 **Repository analyzed:** `gfreund123/collatz`  
-**Analysis mode:** dependency cartography; proposed proofs were not independently re-verified  
+**Analysis mode:** full-conjecture dependency cartography; proposed proofs are not silently reverified or promoted  
 **Baseline snapshot:** [`ANALYSIS_SNAPSHOT.md`](ANALYSIS_SNAPSHOT.md)  
-**Second-pass snapshot:** [`ANALYSIS_SNAPSHOT_PASS_2.md`](ANALYSIS_SNAPSHOT_PASS_2.md)  
-**Second-pass delta:** [`CARTOGRAPHY_PASS_2.md`](CARTOGRAPHY_PASS_2.md)  
-**Atomic handoff problems:** [`ATOMIC_COUNTEREXAMPLE_LEMMAS.md`](ATOMIC_COUNTEREXAMPLE_LEMMAS.md)  
-**Machine-readable map:** [`docs/global-counterexample-map.mmd`](docs/global-counterexample-map.mmd)
+**Pass-2 snapshot:** [`ANALYSIS_SNAPSHOT_PASS_2.md`](ANALYSIS_SNAPSHOT_PASS_2.md)  
+**Reviewed pass-3 snapshot:** [`ANALYSIS_SNAPSHOT_PASS_3R.md`](ANALYSIS_SNAPSHOT_PASS_3R.md)  
+**Pass-3 quality audit:** [`PASS_3_QUALITY_AUDIT.md`](PASS_3_QUALITY_AUDIT.md)  
+**Current delta:** [`CARTOGRAPHY_PASS_3_REVIEWED.md`](CARTOGRAPHY_PASS_3_REVIEWED.md)  
+**Atomic handoffs:** [`ATOMIC_COUNTEREXAMPLE_LEMMAS.md`](ATOMIC_COUNTEREXAMPLE_LEMMAS.md)  
+**Editable graph:** [`docs/global-counterexample-map.mmd`](docs/global-counterexample-map.mmd)
 
 ## 1. Scope and status policy
 
-This map classifies each result only by its relationship to a full disproof of the ordinary positive-integer Collatz conjecture. For the shortcut map
+For the shortcut map
 
 \[
-T(n)=\begin{cases}
+T(n)=
+\begin{cases}
 n/2,&n\equiv0\pmod2,\\
 (3n+1)/2,&n\equiv1\pmod2,
 \end{cases}
 \]
 
-a complete disproof has one of three forms:
+a full disproof has one of three complete forms:
 
 1. an explicit positive nontrivial cycle;
 2. an explicit positive orbit that avoids \(1\) forever, including an unbounded orbit;
-3. a rigorously equivalent witness, such as a third functional-graph component or an exact coverage deficit.
+3. a rigorously equivalent existence witness, such as a third functional-graph component or a certified coverage deficit.
 
-The map distinguishes mathematical confidence from constructive direction. A green theorem may close a route. An orange proposal may be close to the full problem. Yellow finite evidence never becomes an infinite theorem by extrapolation.
+The map separates mathematical confidence from direction of implication.
 
 | Color | Meaning |
 |---|---|
-| Green | `PROVED` or `INDEPENDENTLY_VERIFIED` in the inspected source |
-| Blue | source-inspected literature theorem with native hypotheses audited |
-| Orange | native `PROPOSED` result |
-| Yellow | exact finite computation or `EMPIRICAL` observation |
-| Red | `REFUTED`, withdrawn, superseded, or dependency-quarantined |
-| Grey | open implication, `IDEA`, or unprovided bridge |
+| Green | `PROVED` or independently verified at an exact frozen source |
+| Blue | source-inspected external theorem with native hypotheses audited |
+| Orange | native `PROPOSED` theorem or lemma |
+| Yellow | exact finite computation / empirical finite evidence |
+| Red | refuted, withdrawn, superseded, secret reduction, or independently closed witness mechanism |
+| Grey | open implication, construction, or unprovided bridge |
 
-When sources conflict, the later explicit refutation, withdrawal, or stricter claim index controls.
+A green result may close a construction. An orange result may sit one implication from a counterexample. Finite yellow evidence never becomes an all-time theorem by extrapolation.
 
-## 2. Executive diagnosis after the second pass
+## 2. Current global state
 
-There is still no positive-integer counterexample, nontrivial positive cycle, regular sanctuary, positive infinite H orbit, centered M1 witness, or exact third-component witness.
+There is no positive-integer counterexample, nontrivial positive cycle, regular sanctuary, positive infinite H orbit, centered \(64\to81\) survivor, or equivalent third-component witness in the repository snapshot.
 
-The repository nevertheless changed in four globally important ways after the first cutoff.
+The current full-objective frontier is more structured than in the earlier passes.
 
-### 2.1 The centered ordinary-section chain is now a verified platform
+### 2.1 One important collision architecture is independently excluded
 
-PR #37 independently reconstructed the native centered chain
+PR #44 independently reconstructed PR #33 at frozen head
+
+```text
+c9d62bce3e93f5785f72e4520bc576863d9379eb
+```
+
+and passed the chain
+
+```text
+L-9704 -> L-9705 -> L-9706 -> T-9705.
+```
+
+Thus the exact frozen corrected 256-transition phase-\(-34\) class has no signed ordinary completion. This is green at the frozen-source confidence level; native-ledger integration remains pending.
+
+The theorem does **not** cover:
+
+- linear-height quotient-refund schedules;
+- cross-cycle handoffs;
+- adaptive or growing-rank stages;
+- persistent degenerate subsums;
+- changing essential prime alphabets.
+
+Further seam or room search inside the frozen class is not a live counterexample path.
+
+### 2.2 A positive cycle remains the shortest certificate
+
+The cycle equation is finite and exact. A successful valuation word immediately supplies a disproof after divisibility, positivity, exact valuation, and return replay.
+
+Current negative packets include:
+
+- all admissible positive-cycle windows through 27 accelerated odd terms, covered by PR #42 with zero modular matches;
+- the complete `(41,65)` low-complexity families in PR #42, again with zero modular matches;
+- a proposed native exclusion of odd-state length 184 in PR #13;
+- a rejected critical-scale mechanical near-candidate in PR #45;
+- a negative single-pulse family in PR #47.
+
+These results narrow grammars; they do not close the critical-scale full-denominator problem.
+
+The serious frontier is not \(k=185\) merely because the local-minimum floor permits it. Current verified-height/product constraints force practical candidate synthesis to huge continued-fraction scales. PR #45 already operates there.
+
+### 2.3 Fixed state and fixed modulus are increasingly ruled out
+
+The repository now has several independent versions of the same warning:
+
+- fixed-modulus centered PDR is exactly a periodic completion-ghost graph;
+- bare unions of residue classes cannot form a sanctuary avoiding the trivial cycle;
+- bounded autonomous control emits eventually periodic directives and selects nonordinary completions;
+- fixed finite-type low-endpoint-product stage equations are excluded by almost-\(S\)-unit finiteness;
+- permanent phase 1 in the cross-cycle system is exactly shifted ordinary Collatz.
+
+A viable positive architecture must retain at least one unbounded **ordinary** resource whose top boundary is proved, not merely one unbounded inverse-limit address.
+
+### 2.4 The strongest new divergent architecture is quotient refund
+
+For the linear phase-\(-34\) grid \(t_j=B+16j\), PR #13 proves
 
 \[
-T\text{-9315}\to L\text{-9313}\to L\text{-9314}
-\to T\text{-9316}\to L\text{-9315},L\text{-9316},
+3^{A(B)}>2^{E(B+4096)}
 \]
 
-including nearest-integer equivalence, nested cylinders, the appended-block formula, the strict recurrence cone, Thue--Morse exclusion, and morphic/transducer transfer. Those claims are now green at the reviewed frozen source.
+for every divisible \(B\ge477424\). Every finite word pair then has infinitely many positive integral quotient lifts with asymptotic quotient expansion.
 
-The same review found a real defect: the submitted unrestricted factor-complexity screen `T-9318` fails on the constant words \(0^\infty\) and \(1^\infty\). It is red/refuted. `T-9319` is the green repaired theorem with the necessary nonconstant hypothesis.
+This escapes the frozen-class quotient-extinction step exactly.
 
-This correction does not weaken the nontrivial M1 frontier. It sharpens the next theorem:
-
-> Once an appended block is zero, the next itinerary digit is forced by the exact integer carry state. Eventual stabilization is therefore a deterministic safety problem on the native state \((C_K,e_K)\), but any sound abstraction must retain completion height or block information.
-
-The centered lane is no longer waiting for its basic recurrence algebra to be trusted. It is waiting for a proof-carrying all-scale safety invariant or an explicit stabilized orbit.
-
-### 2.2 Fixed finite-type regeneration now has a proposed general no-go theorem
-
-PR #33 still proposes `T-9705`, excluding all signed ordinary completions of the frozen corrected 256-transition architecture through primitive 258-coordinate almost-\(S\)-unit equations.
-
-PR #34 now proposes the broader `T-9831`. Its load-bearing invariant is the primitive endpoint product gate \(\Xi<1\). Subject to fixed finite type, fixed term count per type, primitivity, nondegeneracy, and finitely many coefficient/sign patterns, it extends the Evertse exclusion beyond one named stage system.
-
-This changes the architectural frontier:
+The missing theorem is causal ordinary selection:
 
 \[
-\text{fixed finite-type, fixed-width regeneration}
-\quad\hbox{is proposed closed when }\Xi<1.
+(B,Y)\in K_B
+\Longrightarrow
+(B+4096,Y_{\rm next})\in K_{B+4096},
+\qquad
+Y_{\rm next}>Y>0,
 \]
 
-A constructive successor must therefore use at least one genuinely new resource:
+with next word, lift, and most-significant closure determined from current finite control plus one unbounded quotient/carry.
 
-- growing essential term count or stage width;
-- an endpoint product at or above the finiteness threshold;
-- a controlled persistent degeneracy;
-- a quotient-refund channel;
-- a changing prime alphabet in essential internal coordinates;
-- or cross-cycle transitions that prevent reduction to finitely many fixed equation types.
+Pairwise solvability alone still selects only an inverse-limit path.
 
-### 2.3 The first explicit cross-cycle escape lane has appeared
+### 2.5 The centered lane is an exact one-counter safety problem
 
-Issue #39 starts from the first audited nonempty twelve-bit room cell beyond the earlier scale-20 frontier. At scale \(m=22\), head `2130` passes the zero input-cell and allowed-output tests, but physical replay exits the stabilized phase-\(-34\) tower alphabet. Its ordinary difference-phase dynamics then enter another negative-cycle spine.
-
-This is important precisely because it does **not** contradict the proposed fixed-class exclusion: it changes architecture.
-
-The current finite audit also kills the easiest optimistic story. The resulting phase-1 quotient loses 4,230 bits over 10,000 renewals. Thus the first opening is not already an expanding invariant tail.
-
-The new constructive question is:
+The independently verified native centered chain identifies ordinary realization with eventual zero appended blocks. PR #44 sharpens the zero-block tail to
 
 \[
-\boxed{\text{Can repeated cross-cycle handoffs regenerate more exact ordinary resource than they consume?}}
+64B'=81B+e-e'.
 \]
 
-The needed object is an all-time resource potential or exact finite return equation, not another long orbit prefix.
+Its legal branches have bounded carry, preserve \(B+4e\bmod17\), and strictly increase every positive legal state.
 
-### 2.4 H has reached a two-branch quantitative frontier
+Therefore a single explicit positive all-time legal seed would already diverge in the induced chart. But fixed-modulus recurrence is only the de Bruijn cylinder ghost.
 
-PR #19 now gives exact rounded-deficit dynamics and a successive-renewal prime firewall. Rounded-critical runs contract the integer core; a positive deficit causes an exponential reset. Nonperiodic chains cannot recycle one fixed finite bridge-prime alphabet indefinitely.
+The missing state is:
 
-The remaining H alternatives are now explicit:
+```text
+finite control
++ bounded carry
++ one unbounded most-significant/top counter
++ canonical carry flush or finite-support closure.
+```
 
-1. a nonperiodic finite-letter ordinary ghost with infinitely many fresh bridge primes; or
-2. an unbounded reset-renewal ray with unbounded deficits, exponential resets, and increasingly long rooms or primitive forward factors.
+### 2.6 Cross-cycle phase 1 is not a breakthrough by itself
 
-PR #34 `L-9903` packages the associated primitive four-term equations and proves the necessary growth laws for every exponent \(d<1\). The sole missing Evertse interface is the endpoint-height gate.
+Issue #39's scale-22 opening and phase handoff are genuine finite physical evidence outside the frozen class.
 
-Thus H is no longer blocked by qualitative fresh-prime existence. It is blocked by one quantitative question: does its primitive endpoint product become subcritical, forcing exclusion, or can a physical ray keep it at/above the threshold and survive?
+However, in phase \(v=1\),
 
-### 2.5 Fixed-period value theory is also more sharply localized
+\[
+(q,1)\mapsto(T(q-1)+1,1).
+\]
 
-PR #13 wave 6 quarantines the cross-completion error that invalidated PR #20 `T-9418`--`T-9421`: a real limit cannot be substituted for a distinct rational \(2\)-adic limit. The denominator lemmas survive, but those four global conclusions are withdrawn and remain open.
+A permanent phase-1 tail is exactly the original shortcut map in a shifted coordinate. The 187-million-bit quotient and finite phase-1 prefix do not add an amplifier or induction theorem.
 
-The completion-safe all-fixed-period program now runs through block decimated \(q\)-Gaussian moments and a multiple/biorthogonal Christoffel factorization. PR #34 further reduces period ten to a cubic outside-prime gcd/common-content problem for normalized Cramer minors.
+The live cross-cycle target is repeated multi-phase regeneration, a finite positive return, or an invariant spanning several phase families.
 
-This remains a strong filter program. It does not replace the native all-itinerary stabilization problem.
+### 2.7 H now has very strong finite and structured barriers
 
-## 3. The new global split
+PR #19 iteration 8 proposes:
 
-The first pass emphasized the ordinary-realization funnel. The second pass adds a sharper architectural dichotomy.
+- no positive exact H block cycle through \(2,479,700,524\) blocks;
+- a factor-entropy lower bound for finite-alphabet survivors with logarithmic capital;
+- exclusion of zero-entropy finite-alphabet directives with logarithmic capital;
+- a prefix-return versus capital inequality;
+- exclusion of `{2,3}` templates with certified return constant at most 84.
 
-### Fixed finite-type regeneration
+H remains a direct counterexample lane because a positive infinite H orbit embeds into Collatz. A viable H witness must now provide delayed novelty or positive entropy, sufficient capital/reset growth, infinitely many fresh bridge primes, and eventual ordinary carry stabilization.
 
-These systems have finitely many equation types, bounded essential term count, and low primitive endpoint product. PR #33 and PR #34 propose that almost-\(S\)-unit finiteness excludes ordinary infinite completions.
+### 2.8 Analytic equivalent witnesses remain extraction-limited
 
-### Cross-cycle or growing-type regeneration
+Coverage deficit, solution-cone rays, and spectral excess are exact full-map routes, but the repository still lacks the final extraction object:
 
-These systems change phase family, essential width, internal prime structure, or resource state often enough to escape finite-type reduction. Issue #39 is the first explicit physical handoff of this form.
+- a certified \(C(x)<x\);
+- a third binary fixed ray/component;
+- a point-spectrum witness with faithful nontrivial support.
 
-A viable counterexample program must now prove both:
+Further ambient numerical approximation is secondary until it produces one of those exact objects.
 
-1. **ordinary coherence:** one finite positive integer follows every handoff exactly;
-2. **net regeneration:** some rigorous resource—height, quotient, information, prime mass, or signed potential—does not decay across the infinite handoff sequence.
-
-## 4. Updated full-conjecture overview
+## 3. Updated dependency graph
 
 ```mermaid
 flowchart LR
-    FALSE([Collatz false])
+    FALSE([Collatz is false])
     CYCLE([Positive nontrivial cycle])
     DIV([Positive orbit avoids 1])
     THIRD([Third component / exact equivalent witness])
+
     CYCLE --> FALSE
     DIV --> FALSE
     THIRD --> FALSE
 
     subgraph CYC["Integer-first finite cycle"]
-      CEQ["Proved cycle equation"]
-      ACTIVE["Issue #9 actively staffed"]
-      CERT{"Exact valuation/divisibility replay"}
-      CEQ --> ACTIVE --> CERT --> CYCLE
+      CEQ["Exact cycle equation"]
+      W27["PR42: windows through 27<br/>PROPOSED + exact MITM"]
+      K184["PR13: length 184 excluded<br/>PROPOSED native"]
+      CRIT["PR45 critical mechanical compiler<br/>first near-candidate rejected"]
+      PULSE["PR47 single pulse closed in range<br/>distributed pulse open"]
+      FULL{"Full-denominator equality<br/>+ exact replay"}
+      CEQ --> W27
+      CEQ --> K184
+      CEQ --> CRIT --> FULL
+      CEQ --> PULSE --> FULL
+      FULL --> CYCLE
     end
 
-    subgraph FIXED["Fixed finite-type regeneration"]
-      FROZEN["Frozen corrected 256-stage class"]
-      E258["258-coordinate primitive equation"]
-      T9705["T-9705 proposed exclusion"]
-      T9831["T-9831 proposed maximal fixed-type exclusion<br/>endpoint product Xi < 1"]
-      CLOSED["Fixed low-Xi architectures proposed closed"]
-      FROZEN --> E258 --> T9705 --> CLOSED
-      T9831 --> CLOSED
+    subgraph FROZEN["Frozen finite-type collision class"]
+      STAGE["Corrected 256-transition stage"]
+      EQ258["258-coordinate primitive equation"]
+      EV["Evertse 1984 source"]
+      T9705["T-9705 independently verified<br/>at frozen source"]
+      FCLOSED["Frozen class closed"]
+      STAGE --> EQ258 --> T9705 --> FCLOSED
+      EV --> T9705
     end
 
-    subgraph CROSS["Cross-cycle / growing-type escape"]
-      CELL["m=22 room opening, head 2130<br/>exact finite evidence"]
-      EXIT["Leaves phase-34 family"]
-      PHASE["Forced cross-cycle phase cascade"]
-      LOSS["First phase-1 tail loses bits"]
-      REGEN{"All-time regeneration invariant<br/>or exact finite return?"}
+    subgraph REFUND["Linear-height quotient refund"]
+      L0050["LIT-KTHM-0050<br/>pairwise expanding quotient lifts"]
+      CAUSAL{"ACL-P036 causal invariant<br/>+ top-boundary locality"}
       INIT{"One positive ordinary initialization"}
-      CELL --> EXIT --> PHASE --> LOSS --> REGEN --> INIT
-      INIT --> DIV
-      INIT --> CYCLE
+      L0050 --> CAUSAL --> INIT --> DIV
     end
 
-    subgraph M1["Centered 64→81 / M1"]
-      NATIVE["Centered equivalence + cylinder + block recurrence<br/>independently verified"]
-      SAFE{"Deterministic safety on (C_K,e_K,height)"}
-      STAB{"Eventually-zero blocks / positive survivor"}
-      T9318["T-9318 unrestricted screen refuted"]
-      T9319["T-9319 nonconstant repair proved"]
-      NATIVE --> SAFE --> STAB --> DIV
-      T9318 -. repaired by .-> T9319
-      T9319 -. constrains .-> SAFE
+    subgraph CENTER["Centered 64 to 81"]
+      NATIVE["Centered equivalence/cylinders/blocks<br/>independently verified"]
+      ZERO["Exact forced-tail map<br/>64B'=81B+e-e'"]
+      GHOST["Fixed-modulus PDR<br/>periodic completion ghost"]
+      TOP{"Height/top-boundary<br/>one-counter invariant"}
+      NATIVE --> ZERO
+      ZERO --> GHOST
+      ZERO --> TOP --> DIV
+    end
+
+    subgraph CROSS["Cross-cycle handoff"]
+      CELL["m=22 physical room opening"]
+      CASCADE["Negative-cycle phase cascade"]
+      PHASE1["Permanent phase 1 = shifted Collatz"]
+      MULTI{"Repeated multi-phase return<br/>or regenerative invariant"}
+      CELL --> CASCADE --> PHASE1
+      CASCADE --> MULTI --> DIV
+      MULTI --> CYCLE
     end
 
     subgraph H["Partial H subsystem"]
-      PRESS["Rounded-deficit pressure + prime firewall"]
-      SPLIT{"Finite-letter fresh-prime ghost<br/>or reset-renewal ray"}
-      HGATE{"Primitive endpoint product gate"}
-      HORB{"Positive ordinary H orbit"}
-      HNO["Integral trap / Evertse exclusion"]
-      PRESS --> SPLIT --> HGATE
-      HGATE --> HORB --> DIV
-      HGATE --> HNO
+      HSEARCH["Exact ordinary sweep<br/>through 2^65 scale"]
+      HCYCLE["T-9515 proposed:<br/>no cycle through 2.479b blocks"]
+      HBARR["Entropy / prefix-return / fresh-prime barriers"]
+      HWIT{"Delayed-novelty or reset-renewal<br/>ordinary survivor"}
+      HSEARCH --> HCYCLE
+      HBARR --> HWIT --> DIV
     end
 
-    subgraph FINITE["Other shortest certificates"]
-      SAN{"Regular sanctuary DFA"}
+    subgraph SAN["Finite sanctuary"]
+      BARE["T-8601 proposed:<br/>no bare congruence sanctuary"]
+      DFA{"DFA with genuine<br/>word-boundary memory"}
+      BARE -. forces richer state .-> DFA --> DIV
+    end
+
+    subgraph EQV["Equivalent full-map witnesses"]
       COVER{"Coverage deficit C(x)<x"}
       CONE{"Third binary fixed ray"}
-      SAN --> DIV
+      SPEC{"Point spectral excess<br/>+ faithful support extraction"}
       COVER --> THIRD
       CONE --> THIRD
-    end
-
-    subgraph FILTERS["Completion-safe filters"]
-      PERIOD["Periods 1..9 source-audited"]
-      BLOCK["All-fixed-period block moment program"]
-      GCD{"Cubic outside-prime gcd/common content"}
-      PERIOD --> BLOCK --> GCD
-      GCD -. filters symbolic tails .-> SAFE
+      SPEC --> THIRD
     end
 
     classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
@@ -228,36 +281,68 @@ flowchart LR
     classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
     classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
-    class CEQ,NATIVE,T9319 proved;
-    class PERIOD literature;
-    class FROZEN,E258,T9705,T9831,CLOSED,PRESS,BLOCK proposed;
-    class CELL,EXIT,PHASE,LOSS empirical;
-    class T9318 refuted;
-    class ACTIVE,CERT,REGEN,INIT,SAFE,STAB,SPLIT,HGATE,HORB,HNO,SAN,COVER,CONE,GCD,FALSE,CYCLE,DIV,THIRD open;
+    class CEQ,NATIVE,T9705 proved;
+    class EV literature;
+    class W27,K184,CRIT,PULSE,L0050,HCYCLE,HBARR,BARE proposed;
+    class CELL,CASCADE,HSEARCH empirical;
+    class FCLOSED,GHOST,PHASE1 refuted;
+    class FULL,CAUSAL,INIT,ZERO,TOP,MULTI,HWIT,DFA,COVER,CONE,SPEC,FALSE,CYCLE,DIV,THIRD open;
 ```
 
-## 5. Priority order by distance to a full disproof
+## 4. Corrected priorities
 
-1. **Proof-producing positive-cycle search.** Issue #9 is now staffed and remains the shortest finite route.
-2. **Cross-cycle ordinary-spine closure.** Freeze the exact handoff state from issue #39 and prove a net-resource dichotomy or finite return certificate.
-3. **Native centered safety invariant.** Work directly on the verified state \((C_K,e_K)\) with completion height retained.
-4. **Regular sanctuary.** One DFA plus universal closure is still a finite disproof certificate.
-5. **H endpoint-product theorem.** Decide the exact \(\Xi_H<1\) gate for each branch of the iteration-7 dichotomy.
-6. **All-fixed-period block factorization.** Prove the required common-content/gcd bound; treat it as a filter, not the full M1 theorem.
-7. **Equivalent-witness extraction.** Cone/spectral calculations remain secondary until they extract a third component.
+### By distance to a complete disproof
+
+1. **Full-denominator positive cycle** — one finite equality and replay.
+2. **Regular sanctuary DFA** — one finite closure/nontriviality certificate.
+3. **Centered height-augmented seed** — one seed and one-counter induction.
+4. **Linear-height quotient refund** — one causal invariant and initialization.
+5. **Multi-phase cross-cycle return** — must avoid the phase-1 secret reduction.
+6. **Positive H survivor** — strong cycle and low-complexity barriers now apply.
+7. **Equivalent third-component witness** — exact extraction still missing.
+
+### By current architectural leverage
+
+1. **Linear-height quotient refund**
+2. **Critical-scale mechanical full-denominator synthesis**
+3. **Critical-scale distributed-pulse/cross-prime synthesis**
+4. **Centered top-boundary one-counter invariant**
+5. **H delayed-novelty/reset-renewal**
+6. **Cross-cycle repeated-return architecture**
+
+## 5. Detailed files
+
+- [`CARTOGRAPHY_PASS_3_REVIEWED.md`](CARTOGRAPHY_PASS_3_REVIEWED.md) — current change analysis.
+- [`cartography/CROSSWALK_AND_PRIORITIES.md`](cartography/CROSSWALK_AND_PRIORITIES.md) — repository-wide role and bridge table.
+- [`cartography/CONSTRUCTIVE_LANES.md`](cartography/CONSTRUCTIVE_LANES.md) — original detailed lane anatomy.
+- [`cartography/EQUIVALENT_AND_INDIRECT.md`](cartography/EQUIVALENT_AND_INDIRECT.md) — equivalent and indirect routes.
+- [`ATOMIC_COUNTEREXAMPLE_LEMMAS.md`](ATOMIC_COUNTEREXAMPLE_LEMMAS.md) — atomic handoff index.
+- [`PASS_3_QUALITY_AUDIT.md`](PASS_3_QUALITY_AUDIT.md) — why the first pass-3 publication was replaced.
+- [`ANALYSIS_SNAPSHOT_PASS_3R.md`](ANALYSIS_SNAPSHOT_PASS_3R.md) — exact current provenance.
 
 ## 6. Bottom line
 
-The project has not found a counterexample. It has, however, moved from an undifferentiated search over symbolic words to a structural frontier:
+The repository has not found a counterexample.
 
-- fixed finite-type low-height regeneration is proposed excluded;
-- the native centered recurrence is independently trusted and reduces to deterministic safety;
-- H reduces to a quantitative endpoint-product decision;
-- the first physically explicit cross-cycle escape is known, but its initial tail consumes rather than regenerates resource;
-- and the finite cycle lane is now actively staffed.
+It has reached a cleaner full-problem frontier:
 
-The highest-leverage constructive theorem is no longer “find a deep compatible prefix.” It is:
+- one highly developed fixed architecture is independently excluded;
+- fixed-state, fixed-modulus, and permanent phase-1 mechanisms are secret reductions or ghosts;
+- serious cycle synthesis must solve the full denominator at critical scale;
+- serious divergent-orbit synthesis must causally control an unbounded ordinary quotient/top boundary;
+- H must combine delayed novelty, arithmetic renewal, and ordinary stabilization.
+
+The highest-value positive theorem is now either
 
 \[
-\boxed{\text{prove an ordinary cross-cycle regeneration invariant, or prove none can exist.}}
+\boxed{C(w)=n(2^A-3^k)}
 \]
+
+for one critical-scale valuation circuit, or
+
+\[
+\boxed{(B,Y)\in K_B\Longrightarrow(B+4096,Y_{\rm next})\in K_{B+4096},
+\quad Y_{\rm next}>Y}
+\]
+
+for one causal ordinary quotient-refund invariant.
