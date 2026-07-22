@@ -36,12 +36,12 @@ a\ell_j-\delta b t_j\to+\infty,
 \delta=\log_{64}(81/64).
 \]
 
-For Thue--Morse,
+For the sharpened Thue--Morse square family,
 
 \[
 \ell_j=2^j,
 \qquad
-t_j=6\cdot2^j,
+t_j=2\cdot2^j,
 \]
 
 so the sufficient condition is
@@ -50,8 +50,8 @@ so the sufficient condition is
 \boxed{
 \frac ba
 <
-\frac1{6\log_{64}(81/64)}
-=2.9424745961\ldots.
+\frac1{2\log_{64}(81/64)}
+=8.8274237885\ldots.
 }
 \]
 
@@ -59,8 +59,10 @@ Thus the following are all excluded from ordinary nearest-integer cylinder stabi
 
 - every letter-to-letter coding of Thue--Morse;
 - every complemented coding and finite shift;
-- every non-erasing binary morphism whose image lengths lie in `{1,2}`;
-- any exact source sign encoding with output-length distortion below `2.9424...`.
+- every non-erasing binary morphism with image-length ratio at most `8`;
+- any exact source sign encoding with output-length distortion below `8.8274...`.
+
+This threshold supersedes the earlier `2.9424...` value obtained from the valid but weaker `00` occurrence at positions `5,6`.
 
 ## Source-audit consequence
 
@@ -71,7 +73,7 @@ Once the full source supplies its exact coding, the native audit is:
 ```text
 1. expose the coding or morphism;
 2. compute minimum and maximum image lengths a,b;
-3. if b/a < 2.9424745961..., apply L-9315;
+3. if b/a < 8.8274237885..., apply L-9315;
 4. conclude infinitely many appended q_K blocks are nonzero.
 ```
 
