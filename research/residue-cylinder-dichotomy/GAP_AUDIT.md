@@ -1,201 +1,139 @@
 # Ordinary-integer gap audit
 
-## What is proved
+## What is now proved inside the frozen classes
 
-### Frozen direct dyadic-boundary class
+### Direct dyadic-boundary class
 
-For `D-9701`:
-
-1. every finite type prefix has one exact initial residue cylinder;
-2. the exact new residue block is computed by `L-9701`;
-3. every infinite type directive has infinitely many nonzero blocks;
-4. its unique `Z_2` completion is not any signed ordinary integer;
-5. no positive high-tail initialization exists for the whole infinite class;
-6. all statements quantify the full directive class, not sampled schedules.
+`T-9702` proves that every infinite four-type direct-boundary directive has infinitely many nonzero initial residue blocks and a unique `Z_2` completion outside all signed ordinary integers.
 
 ### Corrected composed 256-transition class
 
-Relative to the exact PR #3 `T-0027` interface, `T-9703` proves:
+Conditional only on the frozen exact PR #3 stage interface and the displayed external theorem, `T-9705` proves the same conclusion for every physically overlapping infinite corrected-stage directive:
 
-1. every finite complete stage has canonical data `0<=R_m<q_m` and
-   `0<=S_m<N_m`;
-2. `N_m/q_(m+1)<1/4` with an explicit exponentially decaying bound;
-3. any ordinary nonnegative infinite stage trajectory eventually satisfies
-   `z_m=R_m`, `Y_m=0`, and `S_m=R_(m+1)`;
-4. the remaining ordinary tail is an exact cap-correction chain, not an
-   arbitrary unbounded quotient zipper;
-5. these conclusions quantify every infinite sequence of admissible stage
-   words, not a sampled schedule family.
+```text
+a_k != 0 infinitely often,
+the unique Z_2 completion is not in Z.
+```
 
-`T-9703` is a reduction, not yet a proof of nonexistence or a construction.
-
-### Cap-correction height
-
-For every hypothetical cap-correction chain, `L-9703` and `T-9704` prove:
-
-1. every corrected local stage slope is greater than one;
-2. the complete normalized affine offset satisfies
-   `|beta_m|<256*Lambda_m` uniformly in the stage word;
-3. `R_(m+1)+257<Lambda_m(R_m+257)`;
-4. the ordinary correction height satisfies an explicit forward product bound;
-5. asymptotically,
-   ```text
-   limsup log_2(R_m+257)/D_m
-    <=161341/44508739
-    <1/275.
-   ```
-
-This is a completion-height budget. It is not by itself an exclusion theorem.
+The proof is uniform over arbitrary stage words. It does not assume periodicity, finite-state control, entropy balance, or sampled schedule behavior.
 
 ## Every ordinary-integer assumption exposed
 
 ### 1. Finite compatibility
 
-A member of a finite cylinder proves only a finite exact replay. No theorem in
-this packet uses finite compatibility as an infinite initialization.
+Every finite stage prefix still has an exact cylinder and ordinary finite members. No finite member is treated as an infinite initialization.
 
-### 2. Completion versus integer
+### 2. Completion versus ordinary integer
 
-Nested cylinders give one `Z_2` point. `T-9702` assumes that point is an
-ordinary integer only for contradiction. `T-9703` begins with an explicit
-ordinary nonnegative stage trajectory and derives a necessary tail form. Neither
-identifies a completion with a finite word by compactness.
+The nested cylinders select one point of `Z_2`. `T-9705` assumes this point is a signed ordinary integer only for contradiction, then uses exact stage divisibility to propagate a signed integer trajectory.
 
-### 3. Least representatives
+### 3. Least representatives and residue blocks
 
-Eventual zero initial-cylinder blocks characterize nonnegative integer
-completion. Negative integers have nonstabilizing least nonnegative residues.
-`T-9702` excludes all signed integers in its frozen direct class.
+Eventual zero initial residue blocks imply stabilization to a nonnegative ordinary integer. Since `T-9705` excludes every signed integer, eventual zero blocks are impossible. Negative integers are handled separately rather than being inferred from least-representative stabilization.
 
-For the composed stage, `Y_m=0` is a **physical stage quotient**, not directly
-the cumulative initial residue block `a_k`. The bridge is: an ordinary initial
-completion would generate an ordinary stage trajectory, and `T-9703` then forces
-the cap-correction tail.
+### 4. Signed quotient
 
-### 4. Positivity
-
-The direct negative theorem does not assume future positivity; it excludes even
-a signed infinite high-tail path.
-
-The composed-stage theorems assume nonnegative stage residuals because the
-canonical cap bound is a nonnegative-tile statement. They do not infer
-positivity from a 2-adic address.
-
-### 5. Marked physical state
-
-For the direct class, `X-9701` directly replays
+The nonnegative quotient theorem `T-9703` is not silently extended. `L-9705` proves the signed dichotomy exactly:
 
 ```text
-x=A_i(t)+2^(K_i(t))*h-34.
+Y_m -> 0     (cap chain),
+Y_m -> -1    (co-cap chain).
 ```
 
-For the composed class, `T-9703` and `T-9704` work at PR #3's exact
-residual-stage interface. They do not independently reconstruct the 256 physical
-tower blocks and do not supply one finite marked starting integer.
+The co-cap correction `2^(D_m)-R_m` has the same completion-height estimate as the cap correction.
 
-### 6. Logarithm digits
+### 5. Positivity and physical states
 
-No digit of `-(7/4)log_2(3)` is initialized. PR #3 `T-0030` supplies the
-ordinary forward bulk `V_m`, but no `97xx` theorem assumes `V_m` lies in the
-physical residual cylinder or cap chain.
-
-### 7. Entropy and surplus
-
-No branch count, entropy surplus, or bit-length estimate is treated as residue
-membership. `T-9703` uses exact stage membership and compares the current odd
-multiplier with the **next** complete binary radix. `T-9704` derives ordinary
-height only after exact cap-correction membership is assumed.
-
-### 8. Canonical cap positivity
-
-The bound `0<=S_m<N_m` is not assumed from integrality. `L-9702` proves it by
-composing local canonical tiles whose individual caps satisfy
-`0<=psi_j<N_j`.
-
-### 9. Normalized offset bound
-
-The inequality `|beta_m|<256*Lambda_m` is not assumed from the complete cap
-bound. `L-9703` proves it term by term from the stronger local interval
+A positive counterexample would require a nonnegative tail, but the negative result is stronger: signed ordinary residuals are excluded. `L-9704` supplies the direct physical relation
 
 ```text
--q_j<C_j<N_j
+64(n_j+34)=2^(11(t_j+1)) Z_j.
 ```
 
-and from strict expansion of every corrected local slope.
+No positive marked initialization is constructed or assumed.
 
-### 10. Small height versus impossibility
+### 6. Connector inverses
 
-`T-9704` proves that a surviving correction is shorter than one part in 275 of
-its cylinder precision. A short representative can still be a valid residue.
-No contradiction is claimed until a structured nonzero numerator, algebraic
-approximant, or p-adic logarithmic form is displayed and its global height is
-bounded.
+The proof does not estimate moving Montgomery inverses. The scaled ordinary coordinate in `L-9704` cancels them exactly and leaves one 256-term `{2,3}`-unit stage sum.
 
-### 11. External theorem status
+### 7. External theorem applicability
 
-- `T-9702` uses elementary inequalities after freezing PR #3 tower formulas.
-- `T-9703` uses the exact PR #3 `T-0027` interface and the self-contained
-  `L-9702`; PR #3 remains `PROPOSED`.
-- `L-9703` and `T-9704` use elementary composition and exact integer comparisons
-  after freezing the same PR #3 interface.
-- PR #32's independent verification of the ADEL carry chain is methodological
-  support, not a proof dependency or silent promotion.
-- PR #20's periodic-tail results and issue #29's unpublished comment are not
-  imported as theorems.
+`L-9706` specializes Corollary 1 of Evertse (1984) with
+
+```text
+S_0={2,3}, n=257, c=1, d=1/50.
+```
+
+It verifies:
+
+- primitive integer coordinates;
+- a zero sum;
+- no proper nonempty vanishing subsum;
+- outside-`S_0` product at most `||x||^(1/50)`;
+- infinitely many distinct projective points.
+
+No theorem is invoked merely by the phrase “S-unit equation.”
+
+### 8. Primitive gcd
+
+The primitive normalization is explicit. The first internal term bounds the common 2-adic valuation by three, the last bounds the common 3-adic valuation by three, and no prime above three divides an internal term. Thus
+
+```text
+gcd <= 2^3*3^3 = 216.
+```
+
+### 9. Completion height
+
+The cap/co-cap endpoint product consumes asymptotically at most
+
+```text
+6498/346819 < 1/50
+```
+
+of the connector-free projective height. This strict `d<1` inequality is the load-bearing Subspace-Theorem gate. A short representative alone was never claimed to be impossible.
+
+### 10. Proper subsums
+
+The homogeneous stage tuple has exactly one positive coordinate and 257 negative coordinates. Every proper subset excluding the positive term is negative; every proper subset containing it omits at least one negative term and is positive. Hence every proper nonempty subsum is nonzero.
+
+### 11. Distinctness
+
+Finiteness of admissible projective points would not contradict a repeated point. `L-9706` uses the ratio between the `2^(E_m)` endpoint coordinate and the `j=0` internal term. Its 2-adic valuation lies in `[E_m-3,E_m+3]` and strictly increases with scale.
+
+### 12. Logarithm, entropy, and ordinary bulk
+
+No digit of `-(7/4)log_2(3)` is initialized. No entropy surplus, branch count, or bit-length surplus is treated as residue membership. PR #3's ordinary bulk `V_m` is not needed for the negative theorem.
+
+## External and native status boundary
+
+- `L-9704`--`T-9705` remain `PROPOSED` pending independent reconstruction.
+- Evertse's 1984 Corollary 1 is an external black box; the source statement is reproduced in `L-9706` but not promoted into PR #13's ledger.
+- The frozen PR #3 stage formulas retain their native `PROPOSED` status.
+- No root claim ledger is changed.
 
 ## What remains open
 
-### A. Infinite cap-correction chain
+### Independent reconstruction
 
-The primary full-stage question is
+The mathematical frontier within the frozen class is closed, but review is not. The highest-value review tasks are:
 
-```text
-S_m(w_m)=R_(m+1)(w_(m+1))
-```
+1. reconstruct the scaled connector coordinate from PR #3's tower identities;
+2. verify physical overlap and all exponent sums;
+3. rederive the signed cap/co-cap quotient dichotomy;
+4. inspect Evertse's original Corollary 1;
+5. audit the outside-prime product and projective distinctness.
 
-for all sufficiently large `m`. A negative theorem must exclude every such
-infinite directive. A positive theorem must construct one by a finite rule and
-then meet every initialization, replay, positivity, and growth obligation.
+### Transfer beyond the frozen class
 
-### B. Structured p-adic target
+`T-9705` does not settle Collatz and does not automatically apply to:
 
-The factor-greater-than-275 height gap is only useful after the stage correction
-is expressed as a source-appropriate p-adic exponential, logarithmic form, or
-algebraic approximant. The exact nonzero expression and its global height are
-still missing.
+- different negative-cycle phases;
+- adaptive stages with different height schedules;
+- arbitrary Collatz trajectories outside the corrected stage architecture;
+- other repository survivor systems whose internal terms are not pure `{2,3}`-units.
 
-### C. Uniformity over stage words
+Each new class needs its own exact homogeneous tuple and `d<1` admissibility audit.
 
-There are finitely many normalized stage words, but a theorem for one fixed word
-does not cover an adaptive directive unless the lower-bound constants and
-nonvanishing statement are uniform over the whole finite alphabet.
+### Candidate boundary
 
-### D. Ordinary bulk generator
-
-PR #3 `T-0030` supplies
-
-```text
-V_(m+1)=V_m+2^(m+1)V_m^2.
-```
-
-It remains auxiliary until an exact theorem expresses the cap-correction chain
-as a finite affine or mixed-radix transform of `V_m`.
-
-### E. Counter-prefix isometry
-
-PR #3 `T-0028`/`T-0029` routes `O(m)` low prefix bits and `L-0029` peels them.
-The complete stage correction has `Theta(2^m)` depth. Prefix routing alone does
-not decide the cap-correction equality.
-
-### F. Symbolic router
-
-A Krieger/MacDonald router still needs a stationary legal graph, entropy and
-periodic-point conditions, exact output decoding, and separate arithmetic
-realization. The `97xx` theorems reduce the arithmetic target but do not create
-that stationary graph.
-
-### G. Finite marked initialization
-
-No eventually-zero cumulative initial directive is constructed. No finite
-positive marked integer is proved to enter and follow a cap-correction chain.
-Therefore no `K-####` identifier is created.
+No positive ordinary initialization exists in the frozen corrected-stage class, so no `K-####` candidate is created.
