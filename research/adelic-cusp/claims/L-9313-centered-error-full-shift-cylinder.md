@@ -22,8 +22,7 @@ Fix coprime integers
 and a binary itinerary
 
 \[
-\varepsilon=(\varepsilon_n)_{n\ge0}
-\in\{0,1\}^{\mathbb N}.
+e=(e_n)_{n\ge0}\in\{0,1\}^{\mathbb N}.
 \]
 
 Define the bounded real companion
@@ -34,7 +33,7 @@ x_n
 =
 \frac{N-M}{N}
 \sum_{k\ge0}
-\varepsilon_{n+k}
+e_{n+k}
 \left(\frac MN\right)^k
 \in[0,1].
 }
@@ -47,9 +46,9 @@ Put
 \boxed{
 u_n
 =
-\frac{\varepsilon_n-x_n}{M}
+\frac{e_n-x_n}{M}
 =
-\frac{\varepsilon_n-x_{n+1}}{N}.
+\frac{e_n-x_{n+1}}{N}.
 }
 \tag{2}
 \]
@@ -65,9 +64,7 @@ and
 
 \[
 \boxed{
-N u_n-Mu_{n+1}
-=
-\varepsilon_n-arepsilon_{n+1}.
+N u_n-Mu_{n+1}=e_n-e_{n+1}.
 }
 \tag{4}
 \]
@@ -76,14 +73,13 @@ N u_n-Mu_{n+1}
 
 The sequence `(u_n)` is the unique bounded real solution of `(4)` for the fixed itinerary.
 
-Indeed, if `(u_n)` and `(v_n)` are bounded solutions, then
+If `(u_n)` and `(v_n)` are bounded solutions, then
 
 \[
-N(u_n-v_n)
-=M(u_{n+1}-v_{n+1}),
+N(u_n-v_n)=M(u_{n+1}-v_{n+1}),
 \]
 
-so
+hence
 
 \[
 u_{n+k}-v_{n+k}
@@ -91,7 +87,7 @@ u_{n+k}-v_{n+k}
 \left(\frac NM\right)^k(u_n-v_n).
 \]
 
-Since `N/M>1`, boundedness forces `u_n=v_n`.
+Because `N/M>1`, boundedness forces `u_n=v_n`.
 
 Equivalently, the backward transition
 
@@ -99,25 +95,23 @@ Equivalently, the backward transition
 \boxed{
 u_n
 =
-\frac{M u_{n+1}+\varepsilon_n-arepsilon_{n+1}}{N}
+\frac{M u_{n+1}+e_n-e_{n+1}}{N}
 }
 \tag{5}
 \]
 
 is a contraction of ratio `M/N`.
 
-For any tail that is not identically all zero or all one, the corresponding error is nonzero and
+For any tail that is not identically zero or identically one, its error is nonzero and satisfies
 
 \[
 |u_n|<1/N.
 \]
 
-Its sign recovers the digit:
+The sign recovers the digit:
 
 \[
-\boxed{
-\varepsilon_n=\mathbf1_{u_n>0}.
-}
+\boxed{e_n=\mathbf1_{u_n>0}.}
 \tag{6}
 \]
 
@@ -134,16 +128,14 @@ r_n=|u_n|,
 the forward transition is
 
 \[
-\boxed{
-r_{n+1}=\frac NM r_n}
+\boxed{r_{n+1}=\frac NM r_n}
 \tag{7}
 \]
 
 when the sign is unchanged, and
 
 \[
-\boxed{
-r_{n+1}=\frac{1-Nr_n}{M}}
+\boxed{r_{n+1}=\frac{1-Nr_n}{M}}
 \tag{8}
 \]
 
@@ -152,20 +144,18 @@ when the sign flips.
 The inverse branches are
 
 \[
-\boxed{
-r_n=\frac MN r_{n+1}}
+\boxed{r_n=\frac MN r_{n+1}}
 \tag{9}
 \]
 
 and
 
 \[
-\boxed{
-r_n=\frac{1-Mr_{n+1}}{N}.}
+\boxed{r_n=\frac{1-Mr_{n+1}}{N}.}
 \tag{10}
 \]
 
-Both map the critical interval `(0,1/N)` into itself. Thus every infinite symbolic path has a nonempty real centered-error cylinder.
+Both map `(0,1/N)` into itself. Every infinite symbolic path therefore has a nonempty real centered-error cylinder.
 
 This rules out any proof that uses only real interval emptiness. `R-9303` records that method closure.
 
@@ -180,17 +170,14 @@ A centered power orbit additionally needs ordinary integers `B_n` satisfying
 They must obey
 
 \[
-\boxed{
-M B_{n+1}
-=N B_n+arepsilon_n-arepsilon_{n+1}.
-}
+\boxed{M B_{n+1}=N B_n+e_n-e_{n+1}.}
 \tag{11}
 \]
 
-For a finite prefix
+For a prefix
 
 \[
-\varepsilon_0,\ldots,arepsilon_K,
+e_0,\ldots,e_K,
 \]
 
 iteration gives
@@ -201,32 +188,29 @@ M^K B_K
 N^K B_0
 +
 \sum_{i=0}^{K-1}
-N^{K-1-i}M^i
-(\varepsilon_i-arepsilon_{i+1}).
+N^{K-1-i}M^i(e_i-e_{i+1}).
 \tag{12}
 \]
 
-Because `N` is invertible modulo `M^K`, integrality through time `K` selects exactly one class
+Since `N` is invertible modulo `M^K`, integrality through time `K` selects exactly one class
 
 \[
-\boxed{
-B_0\equiv R_K(\varepsilon)\pmod{M^K}.
-}
+\boxed{B_0\equiv R_K(e)\pmod{M^K}.}
 \tag{13}
 \]
 
-The classes are nested. Every infinite itinerary therefore selects one point
+These classes are nested. Every infinite itinerary selects one point
 
 \[
 \boxed{
-B_0^*(\varepsilon)
+B_0^*(e)
 \in
 \varprojlim_K\mathbb Z/M^K\mathbb Z.
 }
 \tag{14}
 \]
 
-When `M` is a power of `2`, this inverse limit is `Z_2`.
+When `M` is a power of two, the inverse limit is `Z_2`.
 
 ## 5. Exact completion series
 
@@ -234,29 +218,27 @@ Solving `(11)` backward in the `M`-adic completion gives
 
 \[
 \boxed{
-B_0^*(\varepsilon)
+B_0^*(e)
 =
 -
 \sum_{n\ge0}
-(\varepsilon_n-arepsilon_{n+1})
+(e_n-e_{n+1})
 \frac{M^n}{N^{n+1}}.
 }
 \tag{15}
 \]
 
-The series converges because `M^n` tends to zero at every prime dividing `M`, while `N` is a unit there.
-
 For `M=64,N=81`, telescoping gives
 
 \[
 \boxed{
-B_0^*(\varepsilon)
+B_0^*(e)
 =
--rac{\varepsilon_0}{81}
+-rac{e_0}{81}
 +
 \frac{17}{81^2}
 \sum_{n\ge0}
-\varepsilon_{n+1}
+e_{n+1}
 \left(\frac{64}{81}\right)^n
 \quad\text{in }\mathbb Z_2.
 }
@@ -267,9 +249,7 @@ Equivalently,
 
 \[
 \boxed{
-B_0^*(\varepsilon)
-=
-\frac{\Phi(\varepsilon)-\varepsilon_0}{64}.
+B_0^*(e)=\frac{\Phi(e)-e_0}{64}.
 }
 \tag{17}
 \]
@@ -281,25 +261,23 @@ The itinerary admits a positive centered parameter exactly when its selected com
 \[
 \boxed{
 \exists\xi>0
-\text{ with itinerary }\varepsilon
+\text{ with itinerary }e
 \iff
-B_0^*(\varepsilon)\in\mathbb Z_{\ge1}.
+B_0^*(e)\in\mathbb Z_{\ge1}.
 }
 \tag{18}
 \]
 
 ### Forward implication
 
-A centered orbit has ordinary nearest integers `B_n`; its first nearest integer lies in every cylinder `(13)`, so it equals `(14)`.
+A centered orbit has ordinary nearest integers `B_n`. Its first nearest integer lies in every cylinder `(13)`, so it equals `(14)`.
 
 ### Converse implication
 
 If `B_0^*` is an ordinary integer, recurrence `(11)` produces ordinary integers `B_n` at every shift. Put
 
 \[
-\boxed{
-\xi=B_0^*+u_0.
-}
+\boxed{\xi=B_0^*+u_0.}
 \tag{19}
 \]
 
@@ -325,16 +303,14 @@ be the least representative of `(13)`. Then
 
 \[
 \boxed{
-B_0^*(\varepsilon)
-\in\mathbb Z_{\ge0}
+B_0^*(e)\in\mathbb Z_{\ge0}
 \iff
 R_K\text{ is eventually constant.}
 }
 \tag{20}
 \]
 
-- If `R_K` stabilizes at `R`, then `R` belongs to every cylinder and equals the inverse-limit point.
-- If the inverse-limit point is an ordinary nonnegative integer `R`, then once `M^K>R`, its least representative modulo `M^K` is exactly `R`.
+If `R_K` stabilizes at `R`, then `R` belongs to every cylinder. Conversely, if the inverse-limit point is an ordinary nonnegative integer `R`, then once `M^K>R`, its least representative modulo `M^K` is exactly `R`.
 
 This is the finite-versus-adic boundary also isolated in PR #20's active-cylinder theorem and in the H-frontier ghost/carry program.
 
@@ -344,11 +320,11 @@ The ordinary-section problem is not
 
 > show that the centered real error cylinders are empty.
 
-Every binary itinerary has one such real path.
+Every itinerary has one such real path.
 
 It is
 
-> show that no nontrivial itinerary's nested nearest-integer cylinders stabilize at an ordinary positive integer.
+> show that no nontrivial itinerary's nearest-integer cylinders stabilize at an ordinary positive integer.
 
 The required invariant must couple:
 
@@ -369,7 +345,7 @@ The required invariant must couple:
 
 - The lemma does not prove nonstabilization.
 - Full symbolic support means entropy or real interval length alone cannot exclude an ordinary lift.
-- Every finite cylinder contains positive ordinary representatives, but their inverse-limit point may be nonordinary.
+- Every finite cylinder contains positive ordinary representatives, but its inverse-limit point may be nonordinary.
 - Excluding one structured itinerary class does not cover all binary itineraries.
 - Translation to all possible Collatz counterexamples remains separate.
 
