@@ -1,0 +1,62 @@
+{
+  "adjacent_gcd_cases": 256,
+  "dictionary_digest": "637e21c9cb0cc52aec5ca7fe09eb2e2c8fb6d9bf7b5e6a0c9cf6720022af4143",
+  "endpoint_height": {
+    "less_than_one_over_160": true,
+    "limsup_log2_Z_over_2m": [1083, 41],
+    "limsup_log2_Z_over_E": [2166, 346819],
+    "next_endpoint_over_current_E": [4332, 346819],
+    "next_less_than_one_over_80": true
+  },
+  "evertse_admissibility": {
+    "admissibility_exponent": [1, 50],
+    "coordinate_count": 258,
+    "dimension_n": 257,
+    "endpoint_product_ratio": [6498, 346819],
+    "max_v2_digit": 3,
+    "max_v3_digit": 3,
+    "primitive_gcd_cap": 216,
+    "projective_separation": [
+      {"m": 12, "max": 17326851, "min": 17326845},
+      {"m": 13, "max": 34650883, "min": 34650877},
+      {"m": 14, "max": 69298947, "min": 69298941},
+      {"m": 15, "max": 138595075, "min": 138595069},
+      {"m": 16, "max": 277187331, "min": 277187325},
+      {"m": 17, "max": 554371843, "min": 554371837},
+      {"m": 18, "max": 1108740867, "min": 1108740861},
+      {"m": 19, "max": 2217478915, "min": 2217478909},
+      {"m": 20, "max": 4434955011, "min": 4434955005}
+    ],
+    "strict_gap": [21919, 17340950]
+  },
+  "local_coordinate_cases": 256,
+  "modular_stage_checks": [
+    {"end": 807537, "m": 12, "offset": 947384, "prime": 1000003, "start": 12081},
+    {"end": 526251, "m": 12, "offset": 573182, "prime": 1000033, "start": 9711},
+    {"end": 604554, "m": 13, "offset": 262457, "prime": 1000003, "start": 12081},
+    {"end": 486978, "m": 13, "offset": 465729, "prime": 1000033, "start": 9711}
+  ],
+  "payload_digest": "f3a4fd8a6f5074c488bd1a0d46a420a3f6f4425aaf30bef8245d5512a995a858",
+  "physical_cofactor_cases": 256,
+  "prime_turnover_cases": 256,
+  "schema": "X-9704/v2",
+  "signed_quotient_audit": {
+    "cap_fixed": 96,
+    "cocap_fixed": 96,
+    "integral": 4704,
+    "tested": 702464
+  },
+  "source_heads": {
+    "PR13": "dc7f9667799f169820330e8df356ccb059636b0e",
+    "PR3": "f274dfeee3c9c391c48e58d8b57cb9f1759236f8"
+  },
+  "stable_digits": {
+    "b": [9, 54, 36, 24],
+    "p": [5, 30, 20, 56]
+  },
+  "stage_dictionary_rows": 256,
+  "stage_exponents": [
+    {"A": 10997504, "E": 17326848, "m": 12, "scale": 8},
+    {"A": 21993216, "E": 34650880, "m": 13, "scale": 16}
+  ]
+}
