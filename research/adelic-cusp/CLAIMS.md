@@ -39,14 +39,15 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `T-9314` | Theorem | `PROPOSED` | Exact depth-46 minimum survivor; ordinary rooms exceed `2^227` | `T-9313`, `X-9303` |
 | `T-9315` | Theorem | `PROPOSED` | Ordinary binary-chart orbits are exactly critical centered rational-power orbits | elementary nearest-integer arithmetic; `D-9302` crosswalk |
 | `T-9316` | Theorem | `PROPOSED` | Efficient recurrence cone; Thue--Morse cylinder blocks do not stabilize | `L-9311`, `L-9313`, `T-9315` |
-| `T-9317` | Conditional theorem | `PROPOSED / CONDITIONAL` | Exact threshold/equality bridge for Dubickas-type bounds | `T-9315`, `T-9316` |
+| `T-9317` | Conditional theorem | `PROPOSED / CONDITIONAL` | Exact threshold/equality bridge for Dubickas-type bounds | `T-9315`, `T-9316`, `L-9315`, `L-9316` |
+| `T-9318` | Theorem | `PROPOSED` | Factor-complexity slope of every ordinary itinerary is at least `17.654847...` | `T-9316`; pigeonhole |
 | `R-9301` | Refutation | `PROPOSED` | Exact carry prefixes do not amplify to consecutive intervals | `L-9309` |
 | `R-9302` | Refutation | `PROPOSED` | Matching repetition/carry criticalities do not contradict | `L-9310`, `L-9311` |
 | `R-9303` | Refutation | `PROPOSED` | Pure real scheduled-cylinder emptiness cannot close the ordinary section | `L-9312`, `L-9313` |
 | `C-9301` | Historical conjecture | `SUPERSEDED` | Harmonic control of low-energy cylinders | superseded by `L-9310`, `T-9311`, `T-9312` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`--`L-9316`, `T-9312`--`T-9317` |
-| `Q-9303` | Open question | `IDEA` | Centered nearest-integer cylinder nonstabilization and source specialization | `T-9315`--`T-9317`, `L-9312`--`L-9316`, `R-9303` |
+| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`--`L-9316`, `T-9312`--`T-9318` |
+| `Q-9303` | Open question | `IDEA` | Centered nearest-integer cylinder nonstabilization and source specialization | `T-9315`--`T-9318`, `L-9312`--`L-9316`, `R-9303` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `O-9302` | Observation | `EMPIRICAL` | Bounded carry counts and zero-run census | `X-9302` |
 | `O-9303` | Observation | `INTERNAL EXACT COMPUTATION` | Exact dual minima and survivor replays through depth 46 | `X-9303` |
@@ -86,7 +87,12 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
   \]
   In particular, every binary morphism with image-length ratio at most `8` remains excluded.
 - `L-9316` covers genuinely stateful conventions: every deterministic letter-to-letter encoding with at most eight states also remains excluded; more generally it gives an explicit state/distortion inequality.
-- `T-9317` freezes the source bridge: a Dubickas-type lower constant greater than `1/81` closes immediately, while equality at `1/81` also closes if the equality language enters any recurrence class covered by `T-9316`, `L-9315`, or `L-9316`.
+- `T-9318` gives a presentation-free screen:
+  \[
+  \liminf_{n\to\infty}p_e(n)/n\ge17.6548475770\ldots
+  \]
+  for every nontrivial ordinary itinerary. Any source equality language with a certified smaller slope is excluded.
+- `T-9317` freezes the source bridge: a Dubickas-type lower constant greater than `1/81` closes immediately, while equality at `1/81` also closes if the equality language enters a recurrence, morphic, finite-state, or factor-complexity class excluded above.
 - `X-9305` is bounded evidence only. It checks 1024 Thue--Morse block extensions but is not a premise of the proof.
 - `Q-9301` remains open. Neither an exact reformulation, a finite exact minimum, nor exclusion of broad extremal families is an all-itinerary theorem.
 - No positive integer survivor, divergent orbit, cycle, universal Collatz-counterexample bound, or Collatz resolution is claimed.
@@ -129,13 +135,13 @@ T-9314 depth-46 bound               |
         T-9316 recurrence cone              Q-9303 all-itinerary
         + Thue--Morse exclusion             nonstabilization
                  |
-          +------+------+
-          |             |
-          v             v
-   L-9315 morphic  L-9316 finite-state
-   recodings       recodings
-          |             |
-          +------+------+
+        +--------+---------+
+        |        |         |
+        v        v         v
+ L-9315 morphic  L-9316 finite-state  T-9318 complexity
+ recodings       recodings           screening
+        |        |         |
+        +--------+---------+
                  |
                  v
         T-9317 source threshold/equality bridge
@@ -162,7 +168,7 @@ L-9312 scheduled real geometry
 
 For `64 -> 81`, the wave-5 literature audit correctly identifies the appended blocks, not the real intervals, as decisive. It requests exact specialization of Dubickas 2006/2008 at radius `1/81`, including the extremal Thue--Morse sign word.
 
-`T-9316` supplies the native extremal-word half. `L-9315` handles bounded-distortion morphisms, and `L-9316` handles small deterministic sequential transducers. `T-9317` shows why this matters: a critical equality theorem can be as decisive as a strict lower bound once its equality language is classified.
+`T-9316` supplies the native extremal-word half. `L-9315` handles bounded-distortion morphisms, `L-9316` handles small deterministic sequential transducers, and `T-9318` handles any equality subshift with a certified subcritical complexity slope. `T-9317` shows why this matters: a critical equality theorem can be as decisive as a strict lower bound once its equality language is classified.
 
 No source formula is inferred from an abstract. The exact constant, quantifiers, endpoints, and equality classification remain an acquisition task.
 
@@ -180,5 +186,6 @@ No source formula is inferred from an abstract. The exact constant, quantifiers,
 - the appended cylinder block is explicit = `L-9314`;
 - efficient repeated factors obstruct stabilization = `T-9316`;
 - bounded-distortion morphic and small finite-state recodings remain obstructed = `L-9315`, `L-9316`;
+- every ordinary itinerary obeys the factor-complexity barrier = `T-9318`;
 - the Dubickas threshold/equality trichotomy is `T-9317`;
 - `Q-9302` and `Q-9303` target monotone minimum divergence and all-itinerary nearest-integer cylinder nonstabilization.
