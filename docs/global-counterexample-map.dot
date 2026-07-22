@@ -1,0 +1,116 @@
+digraph CollatzMap {
+  graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=12, labelloc="t",
+         label="Global Collatz Counterexample Dependency Map — snapshot 2026-07-22",
+         nodesep=0.35, ranksep=0.65, compound=true, splines=ortho];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=10, margin="0.12,0.07",
+        color="#666666", fillcolor="#e5e7eb"];
+  edge [fontname="Arial", fontsize=8, color="#555555", arrowsize=0.7];
+
+  false [label="COLLATZ IS FALSE", shape=doubleoctagon, fillcolor="#e5e7eb", penwidth=2];
+  cyc [label="Positive nontrivial cycle", shape=oval];
+  div [label="Positive orbit avoids 1", shape=oval];
+  third [label="Third component / exact equivalent witness", shape=oval];
+  cyc -> false;
+  div -> false;
+  third -> false;
+
+  subgraph cluster_found {
+    label="Green classical substrate";
+    color="#267326"; style="rounded";
+    trich [label="L-9901\nOrbit trichotomy", fillcolor="#c8f7c5", color="#267326"];
+    terras [label="L-9902\nParity bijection", fillcolor="#c8f7c5", color="#267326"];
+    real [label="L-9904\nUnique 2-adic realization;\nintegrality is obstruction", fillcolor="#c8f7c5", color="#267326"];
+    ceq [label="L-9905\nCycle equation", fillcolor="#c8f7c5", color="#267326"];
+    dens [label="L-9907\nDivergence density", fillcolor="#c8f7c5", color="#267326"];
+    terras -> real;
+  }
+
+  subgraph cluster_cycle {
+    label="Integer-first finite cycle";
+    color="#777777"; style="rounded";
+    cword [label="Compressed valuation word"];
+    m8 [label="m=8, K=13\n792 compositions", shape=diamond];
+    replay [label="Exact divisibility,\npositivity, valuation replay", shape=diamond];
+    cword -> m8 -> replay -> cyc;
+    ceq -> cword;
+  }
+
+  subgraph cluster_cap {
+    label="Corrected collision / phase -34";
+    color="#b45309"; style="rounded";
+    fib [label="Finite collision fibers;\ncomplete finite projection", fillcolor="#ffd6a5", color="#b45309"];
+    ext [label="Signed quotient -> cap/co-cap", fillcolor="#ffd6a5", color="#b45309"];
+    room [label="One room, 84 seams,\nfresh primes, low height", fillcolor="#ffd6a5", color="#b45309"];
+    eq258 [label="258-coordinate\nphysical zero sum", fillcolor="#ffd6a5", color="#b45309"];
+    excl [label="T-9705 proposed:\nEvertse excludes all\nsigned ordinary completions", fillcolor="#ffd6a5", color="#b45309"];
+    closed [label="Frozen corrected 256-stage class\nproposed closed", shape=octagon, fillcolor="#ffd6a5", color="#b45309", penwidth=2];
+    escape [label="New architecture breaks\nfixed rank / d<1 /\nnondegeneracy / cap", shape=diamond];
+    init [label="Positive marked initialization", shape=diamond];
+    fib -> ext -> eq258;
+    room -> eq258;
+    eq258 -> excl -> closed;
+    escape -> init -> div;
+  }
+
+  subgraph cluster_m1 {
+    label="Centered 64→81 / M1";
+    color="#b45309"; style="rounded";
+    finite [label="Every finite itinerary\nhas a cylinder", fillcolor="#ffd6a5", color="#b45309"];
+    z2 [label="Unique 2-adic completion", fillcolor="#c8f7c5", color="#267326"];
+    zero [label="Appended blocks\neventually zero", shape=diamond];
+    pos [label="Positive ordinary survivor", shape=diamond];
+    filt [label="Complexity, recurrence,\nperiod 1…9 irrationality", fillcolor="#ffd6a5", color="#b45309"];
+    bad [label="False four-phase\n81/64=(3/2)^4 bridge", fillcolor="#ffc7c7", color="#aa1111"];
+    finite -> z2 -> zero -> pos -> div;
+    filt -> zero [style=dashed, label="filters"];
+    bad -> filt [style=dashed, label="quarantined"];
+    real -> z2;
+  }
+
+  subgraph cluster_h {
+    label="Partial H subsystem";
+    color="#b45309"; style="rounded";
+    hfin [label="Finite H itineraries\nand exact cylinders", fillcolor="#ffd6a5", color="#b45309"];
+    hstab [label="Least representatives stabilize", shape=diamond];
+    horb [label="Positive infinite H orbit", shape=diamond];
+    hno [label="10/30, finite-descent,\n30/60/70 routes closed", fillcolor="#ffd6a5", color="#b45309"];
+    hfin -> hstab -> horb -> div;
+    hno -> hstab [style=dashed, label="forces new architecture"];
+  }
+
+  subgraph cluster_san {
+    label="Regular sanctuary";
+    color="#777777"; style="rounded";
+    dfa [label="Explicit DFA", shape=diamond];
+    close [label="T(L)⊆L and 1,2∉L", shape=diamond];
+    dfa -> close -> div;
+  }
+
+  subgraph cluster_eqv {
+    label="Equivalent full-map witnesses";
+    color="#777777"; style="rounded";
+    cone [label="Third binary fixed ray", shape=diamond];
+    cover [label="Coverage deficit C(x)<x", shape=diamond];
+    spec [label="Point spectral excess\n+ support extraction", shape=diamond];
+    cone -> third;
+    cover -> third;
+    spec -> third;
+  }
+
+  subgraph cluster_diag {
+    label="Diagnostic / indirect";
+    color="#999999"; style="rounded,dashed";
+    foundry [label="Foundry finite-state feedback\ncollapses to open-loop", fillcolor="#ffd6a5", color="#b45309"];
+    five [label="5x+1 low-digit tree"];
+    univ [label="Generalized universality"];
+    logic [label="Weak arithmetic models"];
+  }
+
+  legend_p [label="PROVED / independently verified", fillcolor="#c8f7c5", color="#267326"];
+  legend_l [label="source-inspected literature", fillcolor="#cfe8ff", color="#2563a8"];
+  legend_o [label="PROPOSED", fillcolor="#ffd6a5", color="#b45309"];
+  legend_e [label="EMPIRICAL", fillcolor="#fff2a8", color="#9a7b00"];
+  legend_r [label="REFUTED / quarantined", fillcolor="#ffc7c7", color="#aa1111"];
+  legend_q [label="OPEN / IDEA", fillcolor="#e5e7eb", color="#666666"];
+  {rank=sink; legend_p; legend_l; legend_o; legend_e; legend_r; legend_q;}
+}
