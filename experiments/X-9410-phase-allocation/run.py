@@ -116,7 +116,7 @@ def generate() -> dict[str, object]:
 
 
 def canonical_bytes(payload: dict[str, object]) -> bytes:
-    return (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode("utf-8")
+    return (json.dumps(payload, sort_keys=True, separators=(",", ":")) + "\n").encode("utf-8")
 
 
 def main() -> None:
