@@ -60,20 +60,26 @@ Therefore any itinerary with repeated factors satisfying
 
 cannot select an ordinary positive cylinder.
 
-## 3. Thue--Morse block nonstabilization
+## 3. Sharpened Thue--Morse block nonstabilization
 
-The Thue--Morse fixed point has `00` at positions `5,6`. Applying the length-two morphism `m` times gives equal adjacent blocks of length `2^m` with second start `6*2^m`.
+The Thue--Morse fixed point begins
+
+```text
+01101001...
+```
+
+and has `11` at zero-based positions `1,2`. Applying the length-two morphism `m` times gives equal adjacent blocks of length `2^m` with second start `2*2^m`.
 
 Hence
 
 \[
-\ell_m-\delta t_m=(1-6\delta)2^m.
+\ell_m-\delta t_m=(1-2\delta)2^m.
 \]
 
 The coefficient is positive because
 
 \[
-81^6<64^7.
+81^2<64^3.
 \]
 
 Thus every finite shift of Thue--Morse, and every complemented shift, violates the ordinary recurrence cone.
@@ -89,7 +95,36 @@ q_K\ne0
 
 This is the first infinite nonperiodic symbolic family for which the centered nearest-integer block tail is proved not to stabilize.
 
-## 4. Source threshold/equality bridge
+The sharper witness supersedes the initially recorded `00` occurrence at positions `5,6`; that earlier witness was valid but unnecessarily weak.
+
+## 4. Bounded-distortion source recodings
+
+`L-9315` extends the recurrence obstruction through non-erasing morphic encodings.
+
+If a morphism has output lengths in `[a,b]`, then a repeated source factor of length `ell` and second start `t` yields an equal output factor with
+
+\[
+L\ge a\ell,
+\qquad
+T\le bt.
+\]
+
+For Thue--Morse, ordinary stabilization is excluded whenever
+
+\[
+\boxed{
+\frac ba
+<
+\frac1{2\log_{64}(81/64)}
+=8.8274237885\ldots.
+}
+\]
+
+Thus all codings, complemented codings, finite shifts, and every non-erasing binary morphism with image-length distortion at most `8` remain excluded.
+
+This removes most sign-convention sensitivity from the Dubickas bridge. A finite-state transducer is not silently treated as a morphism and still needs a synchronization argument.
+
+## 5. Source threshold/equality bridge
 
 `T-9317` freezes the exact source logic.
 
@@ -107,8 +142,8 @@ rho > 1/81
 
 rho = 1/81
   -> equality-language audit;
-     efficient recurrence, including shifted/complemented Thue--Morse,
-     is excluded by T-9316;
+     efficient recurrence and bounded-distortion Thue--Morse recodings
+     are excluded by T-9316/L-9315;
 
 rho < 1/81
   -> record the exact deficit and prove arithmetic stabilization
@@ -117,11 +152,11 @@ rho < 1/81
 
 A strict source inequality is therefore not the only successful outcome. A critical equality theorem plus a classified extremal language is also decisive.
 
-## 5. Conditional source pre-audit
+## 6. Conditional source pre-audit
 
 The full Dubickas 2006 formula remains unavailable in the repository.
 
-A secondary primary-source discussion gives the integer-base Thue--Morse function
+A later primary-source discussion gives the integer-base Thue--Morse function
 
 \[
 E(x)=\frac{1-(1-x)\prod_{j\ge0}(1-x^{2^j})}{2x},
@@ -165,16 +200,14 @@ If the full source confirms this normalization, the scalar large-limit constant 
 
 The candidate formula remains explicitly labeled unverified until the full theorem is obtained.
 
-## 6. Exact finite audit
+## 7. Exact finite audit
 
-Added `X-9305` for the Thue--Morse itinerary.
-
-Through block index `1024`, it checks:
+`X-9305` checks through appended block index `1024`:
 
 - the exact nearest-integer cylinder recurrence;
 - the exact appended block formula;
 - direct residue reconstruction at frozen checkpoints;
-- the morphic square witnesses used in `T-9316`.
+- the sharpened morphic square witnesses at starts `1*2^m` and `2*2^m`.
 
 Frozen result:
 
@@ -188,14 +221,15 @@ longest zero run = 1
 Digest:
 
 ```text
-7f979dcc51d5cb8848f90306c949608c87f8d6fd0f8a1dade56747a27eede9b9
+c5a7bfb2cc674c5aba9ada80f291d69c79a2a4151d2eba22c784ea3ae64b59dc
 ```
 
 The finite audit is not a proof dependency.
 
-## 7. Files added
+## 8. Files added
 
 - `research/adelic-cusp/claims/T-9316-efficient-recurrence-thue-morse.md`
+- `research/adelic-cusp/claims/L-9315-bounded-distortion-morphic-recurrence.md`
 - `research/adelic-cusp/claims/T-9317-threshold-equality-source-bridge.md`
 - `research/adelic-cusp/DUBICKAS_SPECIALIZATION_PREAUDIT.md`
 - `experiments/X-9305-thue-morse-blocks/run.py`
@@ -209,7 +243,7 @@ Updated:
 - `research/adelic-cusp/claims/Q-9303-centered-cylinder-nonstabilization.md`
 - PR #16 metadata and discussion handoffs
 
-## 8. Reframed highest-value path
+## 9. Reframed highest-value path
 
 The probable scalar source constant appears subcritical. The highest-value native target is therefore a **near-extremal recurrence theorem**:
 
@@ -219,16 +253,17 @@ That would combine:
 
 1. Dubickas word optimization;
 2. `T-9316`'s recurrence cone;
-3. `L-9314`'s appended arithmetic blocks;
-4. the fixed ordinary starting room.
+3. `L-9315`'s robustness under symbolic recoding;
+4. `L-9314`'s appended arithmetic blocks;
+5. the fixed ordinary starting room.
 
 The parallel determinant route remains viable: couple several shifted tails so that a long zero block tail creates large `2`-adic order while centered errors control the real size.
 
-## 9. Status boundary
+## 10. Status boundary
 
-- `T-9316` is `PROPOSED`.
+- `T-9316`, `L-9315` are `PROPOSED`.
 - `T-9317` is `PROPOSED / CONDITIONAL`.
 - `X-9305` is bounded empirical replay.
 - The candidate Dubickas formula is not source-verified.
-- One nonperiodic extremal family is excluded; the full ordinary section remains open.
+- A broad nonperiodic extremal family is excluded; the full ordinary section remains open.
 - No positive survivor, divergent Collatz seed, nontrivial cycle, or resolution is claimed.
