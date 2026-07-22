@@ -92,6 +92,12 @@ Dependencies and gap audits are recorded inside the individual claim files. This
 | L-0030 | Lemma | Canonical cap bound for Montgomery chains | PROPOSED | `claims/lemmas/L-0030-canonical-cap-bound.md` |
 | T-0031 | Theorem | Stage-quotient extinction and shrinking cusp | PROPOSED | `claims/theorems/T-0031-stage-quotient-extinction.md` |
 | X-0015 | Experiment | Canonical cap and quotient-trap audit | EMPIRICAL | `experiments/X-0015-stage-quotient-trap/` |
+| L-0031 | Lemma | Scaled-tail telescoping and positive S-unit stage form | PROPOSED | `claims/lemmas/L-0031-scaled-tail-sunit-normal-form.md` |
+| T-0032 | Theorem | Infinite stage paths require fresh-prime support | PROPOSED | `claims/theorems/T-0032-fresh-prime-stage-necessity.md` |
+| T-0033 | Theorem | Fixed-room floor law and doubly-exponential target | PROPOSED | `claims/theorems/T-0033-fixed-room-shrinking-target.md` |
+| T-0034 | Theorem | Adelic room--connector bridge and residual floor law | PROPOSED | `claims/theorems/T-0034-adelic-room-connector-bridge.md` |
+| T-0035 | Theorem | Fixed polynomial quadratic-generator schemas fail by height | PROPOSED | `claims/theorems/T-0035-quadratic-generator-height-obstruction.md` |
+| X-0016 | Experiment | Scaled-tail, S-unit, room, and bridge checks | EMPIRICAL | `experiments/X-0016-scaled-tail-sunit/` |
 
 ## Open-question index
 
@@ -102,16 +108,16 @@ Dependencies and gap audits are recorded inside the individual claim files. This
 | Q-0003 | IDEA | Width-three carry grammar |
 | Q-0004 | IDEA | Multi-chart transition groupoid |
 | Q-0005 | PARTIAL | Finite versus adic closure |
-| Q-0006 | IDEA | Independent verification |
+| Q-0006 | HIGH PRIORITY | Independent verification |
 | Q-0007 | NARROWED IDEA | Vertical macro-tile closure |
-| Q-0008 | IDEA | Parameterized run-length schemas |
+| Q-0008 | NARROWED IDEA | Parameterized run-length and S-unit schemas |
 | Q-0009 | PARTIAL | Structured collision codes |
 | Q-0010 | PROPOSED RESOLUTION | Complete dyadic projection |
 | Q-0011 | IDEA | Convert dyadic freedom into an ordinary relay |
-| Q-0012 | NARROWED IDEA | Infinite negative-template renewal code |
+| Q-0012 | NARROWED IDEA | Infinite negative-template renewal language |
 | Q-0013 | IDEA | Macroscopic aspect-ratio systems |
 | Q-0014 | PARTIAL | Cycle-padding stack closure |
-| Q-0015 | IDEA | Pressure-positive ordinary survivor |
+| Q-0015 | NARROWED IDEA | Pressure-positive ordinary survivor |
 | Q-0016 | IDEA | Multi-mismatch complement automaton |
 | Q-0017 | NARROWED IDEA | Phase escape versus ordinary stitching |
 | Q-0018 | NARROWED IDEA | Marked ordinary-spine grammar |
@@ -119,15 +125,21 @@ Dependencies and gap audits are recorded inside the individual claim files. This
 | Q-0020 | SUPERSEDED | Route surplus into a growing quotient |
 | Q-0021 | REFUTED AS POSITIVE TAIL | Self-feeding positive Montgomery quotient |
 | Q-0022 | PRIMARY | Shrinking-cusp stage stitching |
-| Q-0023 | HIGH VALUE | Completion-height lower bound for stage corrections |
-| Q-0024 | IDEA | Fixed-room model for stage corrections |
+| Q-0023 | REFINED | Completion height of stage corrections |
+| Q-0024 | PROPOSED RESOLUTION | Fixed-room model for stage corrections |
 | Q-0025 | IDEA | Constructive stage-word synthesis |
+| Q-0026 | PRIMARY NEXT | Couple the fixed room to the triple-seam graph |
+| Q-0027 | PRIMARY | Bridge-compatible fresh-prime creation |
+| Q-0028 | HIGH VALUE | Product-formula obstruction for the adelic target |
+| Q-0029 | CONSTRUCTIVE TEST | Quadratic generator versus one collar seam |
 
 ## Latest relationship
 
-- PR #33, PR #16, PR #19, PR #20, and issue #21 all isolate eventual carry extinction as the ordinary-section condition in their respective formalisms.
-- `L-0030` bounds every corrected-stage canonical cap by three times its full odd multiplier.
-- `T-0031` proves the quotient above the next canonical correction decreases by a factor exceeding 512 and eventually vanishes.
-- The load-bearing equality is now `S_m(w_m)=R_(m+1)(w_(m+1))` in an exponentially shrinking completion-height cusp.
+- `L-0031` exposes a positive 257-term `{2,3}`-unit stage equation.
+- `T-0032` uses the full PR #13 S-unit applicability checklist to prove that every infinite ordinary path needs infinitely many fresh primes.
+- `T-0033` gives one fixed real room whose homogeneous orbit hits doubly-exponentially shrinking positive windows.
+- `T-0034` identifies the real fractional defect with the exact normalized binary connector word plus a tiny positive error, and proves `log_2 R_m=Gamma 2^m+O(m)`.
+- `T-0035` excludes the literal fixed-polynomial quadratic-generator ansatz by a nonresonant height calculation.
+- The load-bearing frontier is now the simultaneous cap-seam, fresh-prime, and adelic shrinking-target problem.
 
 `PROPOSED` means complete-looking but not independently reviewed. No claim here resolves the Collatz conjecture.
