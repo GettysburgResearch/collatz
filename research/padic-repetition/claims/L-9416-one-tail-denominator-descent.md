@@ -1,7 +1,7 @@
 # L-9416 — Exact denominator descent along binary one-tails
 
 Claim ID: `L-9416`  
-Title: Rational one-tail denominators can only decrease under the `64/81` shift recurrence  
+Title: Rational `2`-adic one-tail denominators can only decrease under the `64/81` shift recurrence  
 Status: `PROPOSED`  
 Authoring agent: `gpt56-complexity-01`  
 Reviewing agents: none  
@@ -11,34 +11,38 @@ Dependencies: elementary rational arithmetic
 Scope: every binary `64/81` series with infinitely many nonzero digits  
 Related counterexample candidates: issue #4 ordinary `64 -> 81` section; no `K-####` candidate
 
-## Setup
+## Setup and completion convention
 
 Put
 
 ```text
-T=64/81.
+T=64/81
 ```
 
-Let
+and let
 
 ```text
 0<=h_0<h_1<h_2<...
 ```
 
-be an infinite sequence of integers and define its normalized one-tails
+be an infinite sequence. For each `j`, the rational partial sums
 
 ```text
-Y_j
- =sum_(k>=j) T^[h_k-h_j]
- =1+T^[g_j]Y_(j+1),
-
-g_j=h_(j+1)-h_j>=1.                                  (1)
+Y_(j,N)=sum_(k=j)^N T^[h_k-h_j]
 ```
 
-Every `Y_j` converges both in `R` and in `Z_2`. In particular,
+converge separately in `R` and in `Q_2`. These two limits need not agree, even
+when one of them is rational. In this lemma
 
 ```text
-Y_j in Z_2.                                           (2)
+Y_j := lim_(N->infinity) Y_(j,N) in Q_2.              (1)
+```
+
+Only the `2`-adic value is used. It lies in `Z_2` and satisfies
+
+```text
+Y_j=1+T^[g_j]Y_(j+1),
+g_j=h_(j+1)-h_j>=1.                                   (2)
 ```
 
 ## Statement — denominator descent
@@ -50,14 +54,16 @@ Y_j=A_j/B_j,
 B_j>0.                                                (3)
 ```
 
-Then `B_j` is odd and `Y_(j+1)` is rational with reduced denominator `B_(j+1)` satisfying
+Then `B_j` is odd and `Y_(j+1)` is rational with reduced denominator
+`B_(j+1)` satisfying
 
 ```text
 boxed:
 B_(j+1) divides B_j.                                  (4)
 ```
 
-Consequently, if the initial series is rational, every normalized one-tail is rational and
+Consequently, if the initial `2`-adic series value is rational, every
+normalized one-tail is rational and
 
 ```text
 B_j divides B_0                                      (5)
@@ -67,81 +73,82 @@ for all `j`.
 
 ## Proof
 
-Rational membership in `Z_2` means that the reduced denominator is a `2`-adic unit. Thus
-
-```text
-2 does not divide B_j.                                (6)
-```
-
-Solving (1) for the next tail gives
+Rational membership in `Z_2` means that the reduced denominator is a `2`-adic
+unit, so `B_j` is odd. Solving (2) for the next tail gives
 
 ```text
 Y_(j+1)
- =81^[g_j](A_j-B_j)/(64^[g_j] B_j).                   (7)
+ =81^[g_j](A_j-B_j)/(64^[g_j]B_j).                   (6)
 ```
 
-The left side lies in `Z_2`. The factors `81^[g_j]` and `B_j` are odd. Therefore
+The left side lies in `Z_2`; the factors `81^[g_j]` and `B_j` are odd.
+Therefore
 
 ```text
-2^[6g_j] divides A_j-B_j.                             (8)
+64^[g_j] divides A_j-B_j.                             (7)
 ```
 
 Put
 
 ```text
-C_j=(A_j-B_j)/64^[g_j] in Z.                          (9)
+C_j=(A_j-B_j)/64^[g_j] in Z.
 ```
 
-Then (7) becomes
+Then
 
 ```text
-Y_(j+1)=81^[g_j] C_j/B_j.                            (10)
+Y_(j+1)=81^[g_j]C_j/B_j.                             (8)
 ```
 
-After reduction, its denominator divides `B_j`, proving (4). Rationality propagates through (1), so induction proves (5). **QED**
+After reduction, its denominator divides `B_j`, proving (4). Rationality
+propagates through (2), so induction proves (5). **QED**
 
 ## General form
 
-The same proof works for
+The same proof works for `T=M/N`, with `gcd(M,N)=1`, at any prime `p` dividing
+`M` but not `N`: if the relevant tails lie in `Z_p`, inversion across a gap
+cannot create new reduced-denominator factors.
+
+## What the lemma does and does not control
+
+The lemma controls only the ordinary denominator of the rational **`2`-adic**
+tail value. It does not bound its ordinary numerator or archimedean absolute
+value. In particular, it cannot be combined with the positive real limit of the
+same partial sums unless equality of the two completion values has first been
+proved by an independent argument.
+
+This boundary is load-bearing. A rational sequence can converge to different
+rational limits in different completions; for example
 
 ```text
-T=M/N,
-0<M<N,
-gcd(M,N)=1,
+x_N=2^N/(1+2^N)
 ```
 
-at any prime `p` satisfying `p|M` and `p` not dividing `N`. If every one-tail lies in `Z_p`, then a rational tail denominator loses no new prime factors when the recurrence is inverted across a zero gap.
-
-The present `64/81` case is especially sharp because all rational series tails automatically lie in `Z_2`.
-
-## Interpretation
-
-Rationality would preload only finitely many odd denominator states. Passing through an arbitrarily long zero gap consumes a very large power of `64`, but exact `2`-adic integrality forces that power to divide the ordinary numerator. No new denominator is created after the division.
-
-This is different from a rational-approximation argument. It uses the exact rationality of every shifted tail, not the height of a finite truncation.
+tends to `1` in `R` and to `0` in `Q_2`.
 
 ## Dependency audit
 
-The proof uses only:
-
-- the exact one-tail recurrence (1);
-- reduced rational denominators;
-- the characterization `Q intersect Z_2 = {a/b: b odd}`;
-- ordinary divisibility.
-
-No Padé approximation, product formula, external irrationality theorem, or experiment is used.
+The proof uses only the exact `2`-adic recurrence, reduced rational
+denominators, and ordinary divisibility. No real limit, Padé approximation,
+product formula, external theorem, or experiment is a dependency.
 
 ## Gap audit
 
-- Infinite support is needed only in the later irrationality theorem, not in the local descent.
-- The digit at each chosen support position is exactly `1`; a varying rational leading digit would need a fixed-denominator audit.
-- Positivity and real convergence are not used here.
-- The result does not claim that bounded gaps are sufficient for rationality.
+- The result gives a descending divisor chain, not a finite state space: the
+  numerators may be unbounded.
+- Infinite support is not needed for the local algebra.
+- No irrationality, periodicity, bounded-gap, or M1 conclusion follows from
+  denominator descent alone.
 
 ## Adversarial tests
 
-`X-9413` exhausts synthetic reduced rationals with odd denominator and exact `64^g` divisibility, then verifies that every resulting next denominator divides the current one. It also checks the recurrence on finite stack words.
+A checker may generate odd `B`, integers `A` with `64^g|(A-B)`, form (6), and
+verify exact denominator divisibility after reduction. Such finite checks
+validate the algebra only.
 
 ## Suggested next attack
 
-Combine (5) with a real limit point of the normalized tails. If long zero gaps force `Y_j -> 1`, bounded denominators make eventual equality unavoidable; positivity then excludes equality. This is `T-9418`.
+Seek an independent completion-height estimate for the same rational `2`-adic
+tails: a bound on the ordinary numerators, a trapped affine normalization, or a
+nonzero cross-completion integer. Without that additional height coordinate,
+the denominator chain is not a rationality obstruction.
