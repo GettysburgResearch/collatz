@@ -33,6 +33,7 @@ dependency.
 - [`period-four quotient checkpoint`](../../reports/gpt56-synthesis-01/2026-07-22-29-period-four-quotient-checkpoint.md)
 - [`wave eight`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eight.md)
 - [`wave nine`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-nine.md)
+- [`wave ten`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-ten.md)
 
 ## Result map
 
@@ -132,6 +133,10 @@ dependency.
 | [`L-9888`](claims/L-9888-cap-stitch-hensel-isometry.md) | PR #33/PR #3 cap-chain bridge | The remaining two-cell mismatch is an exact Hensel block whose valuation survives Montgomery normalization; conditional on the hypothetical cap chain and its shared cusp-height bound, cusp equality has a `Theta(2^m)` low-bit certificate, while the unrestricted inverse has exponential state cost. |
 | [`L-9889`](claims/L-9889-h-full-ghost-boundary.md) | PR #19 H ghost frontier | Classifies every closure boundary as a nonpositive finite-code rational, repairs the ordinary-minimum boundary audit, and restricts the termination-equivalent minimum to the nonzero section. |
 | [`L-9890`](claims/L-9890-h-dual-renewal-bridge.md) | PR #19 H renewal frontier | Consecutive nonzero letters share one integer with exact dual `2`/`3` valuations; an integral renewal height obeys a strict nonperiodic sign law, convergent normalization, and subcritical post-Yu gaps. |
+| [`L-9891`](claims/L-9891-pade-adjacent-casoratian-rank.md) | PR #20 coupled Pade frontier | Every finite adjacent-order error Casoratian is nonzero. The canonical `q`-order coupling cancels exactly `q-1` blocks, has an exact normalized error valuation, and needs `q>0.07114166n` in the optimistic unchanged-height period-four model. |
+| [`L-9892`](claims/L-9892-survivor-nested-rank-obstruction.md) | PR #16 global survivor order | Every suffix has thin exposure phases outside `n=1 mod36` with arbitrarily many lower zero-block competitors at one depth; their exact pure-power geometry gives unbounded global rank, while their selected 2-adic phase refinements have small Haar measure. |
+| [`L-9893`](claims/L-9893-cap-middle-triple-cascade.md) | PR #33/PR #3 cap-chain bridge | The 252-cell middle collapses to 84 canonical triple seams. Its physical terminal/head mismatch language has at most 4096 values, so the unrestricted Hensel section lower bound is not bridge-reachable. |
+| [`L-9894`](claims/L-9894-h-successive-core-compatibility.md) | PR #19 H renewal frontier | Two adjacent renewal cores obey one exact elimination identity; shared primes lie in multiplicative-order progressions, while a second integral sign law and joint discounted budget constrain successive cores. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -156,10 +161,15 @@ independently reconstructed and which conjectural boundaries remain open.
    unique common-width cylinder minimum. `L-9885` identifies its block-zero
    competitors with centered zero-renewal lifetimes, and `L-9886` gives a
    complete predecessor-phase obstruction: even for a fixed suffix those
-   lower lifetimes are unbounded across exposing depths. The next task is to
-   classify merger/predecessor obstructions outside `n=1 mod36`, decide
-   whether any remaining phase promotes globally, and then control positive
-   intervening blocks for the successor.
+   lower lifetimes are unbounded across exposing depths. `L-9892` closes the
+   later-merger route and goes strictly beyond that phase: outside
+   `n=1 mod36`, one exposed representative can have arbitrarily many lower
+   block-zero competitors with exact pure-power values and arbitrarily late
+   first differences. Those selected refinements occupy at most
+   `64^(-m)/63` of the 2-adic exposing phase parameters; this is not an
+   ordinary-depth density statement. The next task is therefore to prove
+   integer avoidance or classify general one-hot and multi-hot lower blocks
+   outside the selected refinements, then control the first positive block.
 2. For the collision lane, propagate the exact compatibility cylinder of
    `L-9852` through the residual grammar. A bulk address routes the physical
    tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
@@ -180,8 +190,12 @@ independently reconstructed and which conjectural boundaries remain open.
    so. Independently, `L-9887`--`L-9888` collapse every hypothetical PR #33
    cap chain to a two-cell collar and show that its final Montgomery block is
    an isometric code of the raw head/terminal mismatch. The cap-chain target
-   is now a scale-stable nonzero low bit of that explicit mismatch, together
-   with the separate 252-cell middle bridge.
+   was a scale-stable nonzero low bit together with the 252-cell bridge.
+   `L-9893` now resolves that middle into 84 exact canonical triple seams and
+   bounds the physical boundary mismatch language by 4096 values. Generic
+   Hensel sections are therefore not bridge-reachable. The next target is the
+   scale-stable 84-layer overlap graph: exclude one seam uniformly, or build
+   one exact path before returning to the six-symbol terminal/head mismatch.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
    `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
@@ -223,10 +237,13 @@ independently reconstructed and which conjectural boundaries remain open.
    and gives a sharper termination-equivalent nonzero-section minimum.
    `L-9890` then identifies every positive-survivor zero room with a high
    `3`-adic entrance and couples consecutive nonzero letters through one
-   dual-valuation integer
-   `W_k`, with an exact integral sign law. The next arithmetic target is a
-   compatibility recurrence between successive `W_k`, or a one-occurrence
-   valuation bound strong enough to force too many strict renewal descents.
+   dual-valuation integer `W_k`, with an exact integral sign law. `L-9894`
+   supplies the missing successive-core compatibility: adjacent `W` cores
+   satisfy one two-place elimination equation, any reused prime power forces
+   a multiplicative-order divisor of `R_k`, and a second sign law shares the
+   summable renewal toll. The next arithmetic target is a
+   prime-persistence/fresh-mass dichotomy, or a simultaneous two-place
+   valuation estimate stronger than the two separate core bounds.
 4. For the Padé lane, classify genuinely composite residual multiplicity and
    bound noncyclotomic gcd degree. `L-9816` proves that automatic, reduced-prime,
    and distinct antisymmetric cancellation cannot reach exponent one;
@@ -246,11 +263,14 @@ independently reconstructed and which conjectural boundaries remain open.
    actual layers. `L-9884` separately closes post-window cross-phase
    cancellation throughout the whole root-product family: equal allocation
    is phase-zero dominated at every surviving block, and sublinear extra
-   cancellation cannot repair period four. A coupled repair must cancel at
-   least `0.064346n` extra blocks in the optimistic unchanged-height model,
-   lower height quadratically, or leave the root-product profile. The next
-   anchor window is degrees `105` through `110`, while the structural target
-   is an adjacent-order determinant meeting that explicit depth/height test.
+   cancellation cannot repair period four. `L-9891` resolves the entire
+   scalar adjacent-order Casoratian rank: `q` neighboring errors cancel
+   exactly `q-1` additional blocks, and their normalized valuation is exact.
+   Even granting zero cofactor-height cost, the unchanged-height period-four
+   model needs `q>0.07114166n`. The structural target is now the reduced
+   global height of those growing cofactors; a successful smaller-width form
+   must lower height quadratically or leave scalar monomial alignment. The
+   separate anchor window remains degrees `105` through `110`.
 5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 6. Test binary-automatic invariant-component colorings. `L-9823` eliminates

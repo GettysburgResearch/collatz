@@ -69,6 +69,15 @@ the incomplete H boundary ledger, the missing integrality sentence in the H
 descent sign law, and a false auxiliary equivalence `b=0 iff d=0` in the
 cap-stitch memo; the published claims use the corrected statements.
 
+Wave ten attacked the four interfaces exposed by wave nine: adjacent Pade
+Casoratians, survivor promotion outside predecessor phases, the 252-cell cap
+middle, and compatibility of successive H renewal cores. Every authoring lane
+was then rotated onto a different claim. Cold review repaired the determinant
+domain and unchanged-height scope in `L-9891`, quarantined `L-9892`'s Haar
+measure from ordinary-depth density, added the missing width-one cap check to
+`L-9893`, and separated `L-9894`'s algebraic CRT central stars from actual
+two-bridge orbit segments. All four claims remain `PROPOSED`.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -94,6 +103,10 @@ cap-stitch memo; the published claims use the corrected statements.
 | `PR16/L-9313`, `PR16/L-9314` | `L-9885` proves the exact identity `alpha_(k+1)=e_0+64R_k`, so centered renewal digits and survivor block digits coincide. `L-9886` then classifies every finite legal predecessor phase by LTE and CRT. | Uniform one-hot promotion is refuted along an infinite family, but phases outside `n=1 mod36`, positive intervening blocks, and unrestricted successor promotion remain open. |
 | `PR33/L-9702`, `PR33/T-9703`, `PR33/T-9704`; frozen `PR3/T-0027` | Exact local exponent sums and rational logarithmic gaps were replayed before `L-9887` collapsed cap chains to two-cell collars. `L-9888` rederived the signed Hensel recurrence, valuation isometry, cusp certificate, and unrestricted section count. | The cap-chain interface is conditional. No physical boundary mismatch is proved nonzero, the 252-cell bridge remains, and the state bound is for unrestricted inputs. |
 | `PR19/L-9514`, `PR19/L-9516`, `PR19/T-9510` | `L-9889` recursively classifies every finite-code boundary, repairing `T-9510`'s outer-boundary-only sentence. `L-9890` rederives room entrance valuations, dual renewal cores, the integral sign law, and normalized height. | Neither ordinary minimum is proved divergent. The post-Yu subcritical corollaries inherit the open external-specialization audit in `PR19/T-9509`. |
+| `PR20/L-9410`, `PR20/Q-9412` | `L-9891` aligns every neighboring equal-allocation error, proves a strict valuation anti-Monge law, and evaluates every finite Casoratian and normalized cofactor coupling exactly. | Scalar monomial-aligned adjacent rank is closed. The reduced global height of linearly growing cofactors, polynomial multipliers, and phase-sensitive Hermite-Pade systems remain open. |
+| `PR16/D-9302` and the one-hot selector interface | `L-9892` uses the exact power-of-81 subgroup to stack delayed pure-power competitors at one exposing depth, then proves global merger rigidity from the legal-map injection. | Exposed rank is unbounded outside predecessor phases on a thin selected family. The remaining positive-Haar-measure 2-adic parameter set does not itself contain a proved ordinary depth; integer avoidance and the first positive competing block remain open. |
+| `PR33/L-9702`, `PR33/T-9703`; frozen `PR3/T-0027` | `L-9893` partitions the 252-cell middle into 84 triples, proves every inter-triple quotient zero from exact rational height margins, and bounds the physical boundary language. | The generic Hensel state lower bound is not bridge-reachable. Existence of an 84-edge seam path and nonzero terminal/head mismatch remain open. |
+| `PR19/D-9501`, `PR19/T-9505` | `L-9894` eliminates the shared central core between adjacent renewals, proving the shared-prime firewall, second integral sign law, algebraic central CRT universality, and one joint discounted excess budget. | The CRT tuples need not complete their two outer bridges, and no infinite H chain is excluded. Persistent-prime order constraints and fresh core mass must still be combined globally; post-Yu lines inherit `T-9509`. |
 
 ## New-claim audit matrix
 
@@ -115,6 +128,10 @@ cap-stitch memo; the published claims use the corrected statements.
 | `L-9885`, `L-9886` | centered-survivor lane and integrating agent | every index in the centered/survivor crosswalk, nested renewal sieve, plateau strictness, legal backward quotients, LTE order, distinct history classes, CRT exposure intersections, and the signed-difference unit were checked; seven exact chains cover all histories through `k=3` | lower lifetimes are unbounded across depths, not infinite at one depth; predecessor families do not decide exposing phases outside `1 mod36` |
 | `L-9887`, `L-9888` | cap-chain lane and integrating agent | canonical split quotients, all six stage exponent sums, four rational gaps, terminal/head scale shifts, signed Hensel lifts, capped isometry, cusp certificate, and section counts were replayed. Cold review removed the false implication `b=0 => d=0` | a physical mismatch may still vanish; the middle bridge and adaptive-chart transfer remain open, and generic state cost does not automatically restrict the physical language |
 | `L-9889`, `L-9890` | H centered-room lane and integrating agent | recursive boundary exhaustion, real signs, compact minimum equivalence, room/entrance bijection, dual valuations, CRT local universality, integral descent, capital normalization, and discounted excess budgets were rederived | no H survivor is excluded; strict descent assumes nonperiodicity and post-Yu estimates inherit `T-9509`'s external audit |
+| `L-9891` | integrating Pade lane and cap cold reviewer | valuation separation, every reverse-permutation determinant term, Laplace signs, cofactor ordering, normalized error, and both width thresholds were reconstructed; exact rational replay covered 36 generalized Casoratians and 12 normalized systems | the `7.114166%` width is only an unchanged-height benchmark; actual reduced height can win below it or lose above it |
+| `L-9892` | centered-survivor lane and cap cold reviewer | nested discrete-log compatibility, exposure reduction, exact pure-power cylinders, zero-block timing, signed geometry, phase avoidance, Haar measure, and merger injection were checked | the selected family has relative Haar measure at most `64^(-m)/63` in the 2-adic phase class, which gives no ordinary-depth density; other lifts and the positive block remain open |
+| `L-9893` | cap-chain lane and H cold reviewer | transition coverage, two uniform triple margins, terminal pair counter-margin, canonical quotient induction, physical overlap count, unrestricted-section comparison, and scale squaring were recomputed | the 84-layer graph may be empty or nonempty; no seam defect or terminal mismatch is yet forced |
+| `L-9894` | H centered-room lane and survivor cold reviewer | renewal indices, central elimination, endpoint congruences, prime firewall, multiplicative-order condition, integral sign law, exact examples, central CRT algebra, and two-place budget were rederived | the algebraic tuples need not complete even one two-bridge segment; plateaux are resonant but not excluded, and no global fresh-prime contradiction is proved |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -174,6 +191,34 @@ The renewal bridge was checked on the exact local segment
 law on 9,240 small prescribed renewal triples; the proof itself uses integer
 rounding after `Z_(k+1)<Z_k+1`, not this finite check.
 
+### Independent wave-ten arithmetic audits
+
+For `L-9891`, exact rational root-product coefficients were constructed for
+`1<=r<=3`, two starting orders, and determinant widths two and three. All 36
+generalized Casoratians had the reverse-permutation valuation in (13).
+Twelve complete cofactor systems also verified the unique least denominator
+cofactor and normalized error formula (27c). The proof is the strict
+anti-Monge/rearrangement argument, not this finite replay.
+
+For `L-9892`, the exact order of `81` modulo `64^M` was replayed for
+`2<=M<=7`. A bit-lifted discrete-log check then built the first pure-power
+witnesses for both one-bit suffixes: `(v,h)=(0,257)` at 1548-bit modulus and
+`(v,h)=(1,149)` at 900-bit modulus. Exposure, pure-power, and `n=1 mod4`
+congruences all matched. The density ratios were checked from the exact order
+formula, independently of those examples.
+
+For `L-9893`, both rational logarithmic bounds were checked as integer power
+inequalities, and every displayed margin was recomputed exactly:
+`(119718delta+443)/41`, `(705delta-12)/41`, and the pair obstruction
+`(401delta+10)/53`. Transition indices cover exactly `2,...,253`, and the
+physical count uses six rather than eight independent boundary symbols.
+
+For `L-9894`, both stored central stars satisfy the two equations in (4)
+exactly. The expanding example has common core divisor `7` and
+`9^3-8^3=217=7*31`; the contracting example has the predicted negative sign.
+Prime-by-prime gcd checks and both exact valuation congruences were replayed.
+No finite example is used to infer infinite compatibility.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -224,6 +269,12 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   all-one history has `n = 1 mod 4*3^(4k-2)`), and neither claim yet controls
   the positive blocks competing above the exposed one-hot representative in
   the unrestricted global order.
+- `L-9892` gives arbitrarily many lower zero-block competitors at one exposing
+  depth outside that predecessor phase, but only on explicitly selected thin
+  refinements. Their union bound leaves relative Haar measure at least
+  `1-64^(-m)/63` in the 2-adic phase parameterization, but does not exhibit an
+  ordinary depth in that complement. No theorem controls every exposing phase
+  or the first positive block.
 - The two-suffix H compiler solves one crossing and does not close the return
   dynamics after renormalization.
 - `L-9878`, `L-9879`, and `L-9882` force linear rounded-deficit pressure,
@@ -235,19 +286,32 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   specifically defined compact nonzero section `Hbar` into a precise
   divergence criterion for its minimum ordinary representative at precision
   `K`, but it does not prove that the minima diverge. `L-9890` gives exact
-  room/entrance
-  coordinates, an integral renewal sign law, and the normalized limit along
-  an assumed infinite H chain; its finite CRT universality does not make the
-  successive room constraints compatible or construct such a chain.
+  room/entrance coordinates, an integral renewal sign law, and the normalized
+  limit along an assumed infinite H chain; its finite CRT universality does
+  not make the successive room constraints compatible or construct such a
+  chain.
+- `L-9894` links successive renewal cores and quarantines shared primes to
+  multiplicative-order progressions, but every fixed central algebraic tuple
+  is still CRT-realizable. Such a tuple need not complete its outer bridges;
+  the new sign law permits resonant plateaux, and the joint discounted budget
+  is not a contradiction.
 - `L-9887` collapses an eventual 256-cell cap chain to two collar joins, and
   `L-9888` identifies each join with a 2-adic Hensel/isometry state carrying
   exponentially many unrestricted-input sections. This is not yet a lower
   bound for the state set actually reached by the 252-cell bridge, nor a
   recurrence transporting stitch states from one cap scale to the next.
+- `L-9893` proves that the middle is an 84-triple canonical cascade and that
+  the physical mismatch language cannot witness the generic exponential
+  Hensel section count. It does not decide whether the 84-layer seam graph has
+  a path, force a nonzero boundary mismatch, or give a scale-uniform router.
 - `L-9884` proves exact post-window phase dominance and a 6.4346% optimistic
   linear-depth benchmark for the unchanged raw height. It does not bound the
   quadratic arithmetic gcd savings, adjacent Casoratians, or determinants
   with a different allocation; the unequal transition strip remains open.
+- `L-9891` closes scalar monomial-aligned adjacent Casoratian rank and gives a
+  7.114166% neighboring-order width boundary only in a zero-cofactor-cost,
+  unchanged-height model. Unknown reduced-height savings mean this boundary
+  is neither necessary nor sufficient for the actual coupled approximants.
 - Automatic Padé factors are substantial but quantitatively insufficient;
   this is not a proof that all polynomial or arithmetic gcd cancellation is
   insufficient.
@@ -463,3 +527,23 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     section, and derive the two room valuations from the exact block maps.
     Keep finite CRT realization, the assumed infinite chain, and the inherited
     post-Yu bounds logically separate.
+30. For `L-9891`, first rewrite the coefficient valuation as row term plus
+    column term plus `54Sr*t*ell`. Check reverse-permutation uniqueness for
+    every Casoratian, the cofactor signs and ordering, and the telescoping
+    normalized error. Keep the `7.114166%` boundary inside the fixed-word,
+    unchanged-height model; it is not a reduced-height theorem.
+31. For `L-9892`, lift the discrete logarithms compatibly through every
+    `O_(m+h_i)`, verify the depth-`n` zero block rather than only the final
+    congruence, and replay the mod-36 avoidance. Interpret (19) only as Haar
+    measure in the 2-adic phase parameterization, not natural density or an
+    ordinary-depth existence theorem.
+32. For `L-9893`, verify that the 84 triples cover exactly transitions
+    `2,...,253`; recompute both positive triple margins and the width-one and
+    width-two counter-margins. Use 4096 only with physical boundary overlap,
+    and do not infer that failure of a cap inequality makes a narrower seam
+    nonzero.
+33. For `L-9894`, orient `W_(k-1)` as the arriving core and `W_k` as the
+    departing core before eliminating `U_k`. Check the prime-power order
+    condition, weak negative-Lambda descent, and both budgets. The CRT stars
+    solve only the algebraic central system and need not complete their outer
+    bridges; discounted conclusions assume the infinite-orbit hypotheses.

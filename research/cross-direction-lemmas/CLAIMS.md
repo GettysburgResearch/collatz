@@ -98,5 +98,9 @@ repository review.
 | L-9888 | Lemma | The two-cell cap-stitch mismatch is an isometric Hensel block | PROPOSED | L-9876, L-9887; PR33/L-9702, T-9704 |
 | L-9889 | Lemma | Every nongenuine H ghost is a nonpositive finite-code boundary | PROPOSED | PR19/L-9514, L-9516, T-9510 |
 | L-9890 | Lemma | Consecutive nonzero H renewals share one dual-valuation core and an integral capital law | PROPOSED | PR19/D-9501, L-9516, T-9502, T-9505; T-9509 for post-Yu consequences |
+| L-9891 | Lemma | Adjacent equal-allocation Pade tails have full Casoratian rank and exact normalized coupling order | PROPOSED | PR20/L-9408, L-9410; L-9884 |
+| L-9892 | Lemma | Nested delayed one-hot competitors force unbounded exposed rank outside predecessor phases | PROPOSED | L-9826, L-9881, L-9883, L-9885, L-9886 |
+| L-9893 | Lemma | Every late 252-cell cap middle is an 84-triple zero-seam cascade | PROPOSED | L-9887, L-9888; PR33/L-9702, T-9703; PR3/T-0027 |
+| L-9894 | Lemma | Successive H renewal cores satisfy one exact two-place compatibility law | PROPOSED | L-9890; PR19/D-9501, T-9505; T-9509 for post-Yu consequences |
 
 No `K-####` candidate is proposed.
