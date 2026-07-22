@@ -3,13 +3,12 @@
 **Agent:** `gpt56-cartographer-01`  
 **Issue:** [#36](https://github.com/gfreund123/collatz/issues/36)  
 **Repository:** `gfreund123/collatz`  
-**Reviewed snapshot:** [`ANALYSIS_SNAPSHOT_PASS_3R.md`](ANALYSIS_SNAPSHOT_PASS_3R.md)  
-**Quality audit:** [`PASS_3_QUALITY_AUDIT.md`](PASS_3_QUALITY_AUDIT.md)  
-**Current delta:** [`CARTOGRAPHY_PASS_3_REVIEWED.md`](CARTOGRAPHY_PASS_3_REVIEWED.md)  
+**Reviewed snapshot:** [`ANALYSIS_SNAPSHOT_PASS_4.md`](ANALYSIS_SNAPSHOT_PASS_4.md)  
+**Current delta:** [`CARTOGRAPHY_PASS_4.md`](CARTOGRAPHY_PASS_4.md)  
 **Atomic handoffs:** [`ATOMIC_COUNTEREXAMPLE_LEMMAS.md`](ATOMIC_COUNTEREXAMPLE_LEMMAS.md)  
 **Graph source:** [`docs/global-counterexample-map.mmd`](docs/global-counterexample-map.mmd)
 
-## Scope
+## Scope and status
 
 For the shortcut map
 
@@ -17,22 +16,26 @@ For the shortcut map
 T(n)=\begin{cases}n/2,&n\text{ even},\\(3n+1)/2,&n\text{ odd},\end{cases}
 \]
 
-a full disproof is an explicit positive nontrivial cycle, an explicit positive orbit avoiding 1 forever, or an exact equivalent witness such as a third component or coverage deficit.
+a full disproof is:
+
+1. an explicit positive nontrivial cycle;
+2. an explicit positive orbit avoiding `1` forever;
+3. an exact equivalent witness such as a third functional-graph component or coverage deficit.
 
 | Color | Meaning |
 |---|---|
 | Green | proved or independently verified at an exact frozen source |
 | Blue | source-inspected external theorem with native hypotheses audited |
-| Orange | native proposed result |
-| Yellow | exact finite / empirical evidence |
-| Red | refuted, closed witness mechanism, or secret reduction |
+| Orange | native proposed theorem or exact algebraic interface |
+| Yellow | exact finite / empirical packet |
+| Red | refuted, closed mechanism, or secret reduction |
 | Grey | open construction or missing implication |
 
-There is no counterexample in the snapshot.
+There is no counterexample in this snapshot.
 
 ## Current global findings
 
-### Frozen corrected collision class
+### 1. Frozen corrected collision class
 
 PR #44 independently passed PR #33's frozen chain
 
@@ -40,58 +43,104 @@ PR #44 independently passed PR #33's frozen chain
 L-9704 -> L-9705 -> L-9706 -> T-9705
 ```
 
-at source `c9d62bce3e93f5785f72e4520bc576863d9379eb`. The corrected 256-transition doubling-scale phase-`-34` class has no signed ordinary completion. Native-ledger integration is pending. Linear refund, cross-cycle, adaptive, and growing-rank architectures are outside scope.
+at `c9d62bce3e93f5785f72e4520bc576863d9379eb`. The corrected 256-transition doubling-scale phase-`-34` class has no signed ordinary completion. Native-ledger integration remains pending. Linear refund, cross-cycle, adaptive, and growing-rank architectures are outside scope.
 
-### Positive cycles
+### 2. Positive cycles
 
-A cycle remains the shortest finite certificate. Current packets provide:
+A positive cycle remains the shortest finite certificate. The current map contains:
 
-- source-proposed/exact windows through 27 odd terms and large `(41,65)` low-complexity families in PR #42; PR #48 did not reproduce the full census;
-- a proposed length-184 exclusion in PR #13;
-- PR #34's proposed support floor: at least seven valuations must differ from two;
-- PR #45's critical mechanical compiler and rejected near-candidate, independently passed by PR #48;
-- PR #34's lossless cross-prime excess-path compiler;
-- PR #47's one-pulse negative packet and PR #34's exact arbitrary-pulse reduction.
+- source-proposed/exact windows through 27 odd terms in PR #42; PR #48 did not reproduce the full census;
+- proposed exact exclusions at odd-state lengths 184 and 185 in PRs #13 and #50;
+- PR #47 `T-9601`, together with the earlier sparse-support exclusions, proposes a support floor of at least **eight** valuations different from two;
+- PR #45's critical mechanical compiler and rejected near-candidate, independently passed at its frozen source by PR #48;
+- PR #45 `L-8404`, which decodes at most one valuation block from each fixed-shape dyadic residue;
+- PR #47 `L-9604`, which finitely caps repeated opposite-drift two-block packets through a commutator divisor;
+- PR #34 `L-9914`, the lossless cross-prime excess-path compiler;
+- PR #51, which caps all pulse sizes in each fixed two-pulse negative-cycle packet.
 
-The open certificate is still the full equality
+The open certificate is still
 
 \[
 C(w)=n(2^A-3^k)
 \]
 
-with exact replay. Proper factors and near-integer quotients are insufficient.
+for the **entire** denominator, followed by exact valuation replay. Proper factors, near integers, unreplayed carry edges, and bounded grammars are insufficient.
 
-### Quotient refund: strongest explicit divergent architecture
+### 3. Linear refund: one changing-modulus counter
 
-PR #49 shows refund is atomic at width one. For connector width `L`, proposed refund holds when
-
-```text
-5B>9288L+9363;
-```
-
-the first width-one threshold is `B=3744`.
-
-PR #49 compiles one connector to a deterministic ordinary state
+PR #49 now reduces the exact ordinary state to
 
 ```text
-(t, source type i, target type j, residual z).
+(t,current type i,complement counter k).
 ```
 
-When the exact decoder is defined, the next type is unique and, for `t>=3744` and `z>=1`,
+The next type is selected by the low six bits of `k`; complete continuation is one next-scale divisibility test. For every legal transition with
 
 ```text
-z'>=2z.
+t>=3744,
+k>=256,
 ```
 
-The physical initialization is explicit. Thus growth, positivity, and type selection are already proposed consequences. The sole positive gap is:
+PR #49 proposes
 
-> Find one finite residual whose deterministic decoder is defined forever.
+```text
+k'>=2k.
+```
 
-PR #48 independently proves coherent-path growth and quantifies the selector firewall: fixed finite word choice is tiny compared with the billion-bit next modulus. Refund still requires ordinary top-boundary/stabilization, not merely expansion.
+The physical initialization is explicit. Thus exact replay, positivity, and unboundedness follow automatically once one finite state is defined forever.
 
-This is canonical `ACL-P036`.
+PR #49 `L-8504` further proves that `(t,i,k)` is recoverable intrinsically from one ordinary physical boundary integer `n`: `v_2(n+34)` determines height and type, and the odd boundary word determines `k`. `T-8505` proposes that every infinite path must introduce infinitely many globally new odd primes into `n_j+34`; no fixed finite-prime library can realize it.
 
-### Centered forced tail
+The sole positive gap is:
+
+```text
+find one physical n_0
+whose recovered (t_0,i_0,k_0) state
+is defined forever.
+```
+
+This is `ACL-P036`. PR #48 independently supplies the ordinary-section firewall: expansion does not remove the moving top-boundary requirement.
+
+### 4. New negative-three pulse chart
+
+PR #51 gives the exact negative-three block chart in `h=(n+5)/2`. The invariant section `h=21x` yields
+
+\[
+G(x)=\begin{cases}
+9x/8,&x\equiv0\pmod8,\\
+(9x+1)/16,&x\equiv7\pmod{16},
+\end{cases}
+\]
+
+with physical state
+
+```text
+n=42x-5.
+```
+
+The two branches replay exactly the accelerated blocks `(1,2)` and `(2,2)`. The trivial physical cycle is absent from positive integral `x`.
+
+Therefore one positive `x_0` whose deterministic `G`-orbit is defined forever is an unconditional Collatz counterexample. Every finite binary word is realizable by one dyadic cylinder, so the missing theorem is ordinary stabilization/top-boundary closure, not finite compatibility.
+
+The exact finite frontier has now been computed through depth 31. Among all `4,294,967,294` prefix words at depths `1..31`, the least positive depth-31 root is
+
+```text
+x=24643395416689283212736,
+n=42x-5=1035022607500949894934907.
+```
+
+It exits after exactly 31 blocks. This is yellow finite evidence only.
+
+Grouping between `(2,2)` blocks gives the H-like toll-one renewal
+
+\[
+p_{j+1}=\frac{3^{2r_j+2}}{2^{3r_j+4}}p_j+1,
+\qquad p=16x.
+\]
+
+This is `ACL-P040` / `ACL-N081`. See [`cartography/PULSE_CHART_SYNTHESIS.md`](cartography/PULSE_CHART_SYNTHESIS.md).
+
+### 5. Centered forced tail
 
 PR #44 gives
 
@@ -99,25 +148,39 @@ PR #44 gives
 64B'=81B+e-e'
 \]
 
-with bounded carry, invariant `B+4e mod17`, and strict positive growth. Fixed-modulus PDR is the periodic cylinder ghost. PR #34 `L-9915` further excludes deterministic finite control plus one zero-tested additive counter. A viable machine must use genuine top-boundary access, nonlinear/changing modulus, a stack, or richer unbounded state.
+with bounded carry, invariant `B+4e mod17`, and strict positive growth. Fixed-modulus PDR is the periodic completion ghost. PR #34 `L-9915` further excludes finite control plus one zero-tested additive counter. A viable centered machine must use genuine top-boundary access, nonlinear/changing modulus, a stack, or richer unbounded state.
 
-### Cross-cycle handoff
+### 6. Cross-cycle handoff
 
-Issue #39's scale-22 handoff is genuine finite evidence outside the frozen class, but permanent phase 1 satisfies
+Issue #39's scale-22 handoff remains genuine finite evidence outside the frozen class, but permanent phase `1` satisfies
 
 \[
 (q,1)\mapsto(T(q-1)+1,1),
 \]
 
-so it is shifted ordinary Collatz. The open object is a repeated multi-phase return or invariant, not a long phase-1 prefix.
+so it is shifted ordinary Collatz. The live target is repeated multi-phase return or a genuine multi-phase invariant.
 
-### H subsystem
+### 7. H subsystem
 
-PR #19 iteration 8 proposes no positive H cycle through `2,479,700,524` blocks and adds entropy/capital and prefix-return barriers. `{2,3}` templates with certified return constant at most 84 are excluded. A positive H witness needs delayed novelty or reset renewal, fresh primes, and ordinary stabilization.
+PR #19 iteration 8 proposes no positive H cycle through `2,479,700,524` blocks and adds entropy/capital and prefix-return barriers.
 
-### Sanctuary and equivalent witnesses
+Iteration 9 proposes that the adaptive `10/30` physical zero-carry macros strictly descend, while the renormalized `3/1` Sturmian core has bounded multiplier and is nonphysical. Abstract full-shift tail freedom is not ordinary freedom.
 
-PR #48 independently passes PR #42 `T-8601`: no bare invariant union of congruence classes avoids the trivial cycle. A sanctuary needs real word-boundary memory. Coverage, cone, and spectral routes remain extraction-limited.
+A viable H witness now needs a different macro family with:
+
+```text
+zero ordinary carry,
+integer nondecrease,
+cumulative multiplier escape,
+exact cylinder closure,
+one positive finite initialization.
+```
+
+### 8. Sanctuary and equivalent witnesses
+
+PR #48 independently passes PR #42 `T-8601`: no bare invariant union of congruence classes avoids the trivial cycle. A sanctuary must retain genuine canonical-word boundary memory.
+
+Coverage, solution-cone, and spectral routes remain exact equivalent criteria but still lack faithful third-component extraction.
 
 ## Dependency graph
 
@@ -133,13 +196,18 @@ flowchart LR
 
   subgraph CYC["Critical finite cycle"]
     CEQ["Exact cycle equation"]
-    SUPPORT["PR34: >=7 non-2 valuations<br/>PROPOSED"]
-    MECH["PR45 compiler<br/>independently reviewed"]
-    PULSE["Distributed-pulse remainder<br/>cross-prime compatibility"]
+    FRONT["Lengths 184 and 185 excluded<br/>PROPOSED"]
+    SUPPORT["PR47: >=8 non-2 valuations<br/>PROPOSED"]
+    BLOCK["PR45 block residue / carry decoder"]
+    COMM["PR47 opposite-drift commutator sieve"]
+    PRIME["PR34 cross-prime compiler"]
     FULL{"Full denominator + replay"}
-    CEQ --> SUPPORT --> FULL
-    CEQ --> MECH --> FULL
-    CEQ --> PULSE --> FULL --> CYCLE
+    CEQ --> FRONT
+    CEQ --> SUPPORT
+    BLOCK --> FULL
+    COMM --> FULL
+    PRIME --> FULL
+    FULL --> CYCLE
   end
 
   subgraph FROZEN["Frozen corrected class"]
@@ -149,12 +217,22 @@ flowchart LR
     STAGE --> T9705 --> CLOSED
   end
 
-  subgraph REFUND["Width-one linear refund"]
-    W1["PR49 width-one threshold B=3744"]
-    DEC["Deterministic connector decoder"]
-    DEF{"One finite residual<br/>defined forever?"}
-    GROW["z' >= 2z; explicit initialization"]
-    W1 --> DEC --> DEF --> GROW --> DIV
+  subgraph REFUND["Linear refund"]
+    COMP["PR49 intrinsic state from n<br/>(t,i,k)"]
+    DEF{"Defined forever?"}
+    GROW["k' >= 2k; fresh primes required"]
+    COMP --> DEF --> GROW --> DIV
+  end
+
+  subgraph PULSE["Negative-three pulse chart"]
+    O8001["PR51 exact h block chart"]
+    G["h=21x invariant<br/>G: 9x/8 or (9x+1)/16"]
+    GDEF{"One x>0 defined forever?"}
+    MIN31["Exact minimum through depth 31<br/>exits at block 32"]
+    RENEW["H-like toll-one renewal"]
+    O8001 --> G --> GDEF --> DIV
+    G --> MIN31
+    G --> RENEW --> GDEF
   end
 
   subgraph CENTER["Centered 64 to 81"]
@@ -178,9 +256,10 @@ flowchart LR
 
   subgraph H["Partial H"]
     HC["No cycle <=2.479b blocks<br/>PROPOSED"]
-    HB["Entropy / return / prime barriers"]
-    HW{"Delayed novelty or reset renewal"}
-    HC --> HB --> HW --> DIV
+    OLD["10/30 compiler proposed closed"]
+    HNEW{"New nondescending<br/>escaping macro family"}
+    HC --> HNEW --> DIV
+    OLD --> HNEW
   end
 
   subgraph OTHER["Other exact certificates"]
@@ -198,11 +277,12 @@ flowchart LR
   classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
   classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
-  class CEQ,MECH,T9705 proved;
-  class SUPPORT,PULSE,W1,DEC,GROW,HC,HB proposed;
+  class CEQ,T9705 proved;
+  class FRONT,SUPPORT,BLOCK,COMM,PRIME,COMP,GROW,O8001,G,RENEW,HC,OLD proposed;
+  class MIN31 empirical;
   class CELL empirical;
   class CLOSED,GHOST,ADD,PH1 refuted;
-  class FULL,DEF,TOP,MULTI,HW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
+  class FULL,DEF,GDEF,TOP,MULTI,HNEW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
 ```
 
 ## Priorities
@@ -211,29 +291,34 @@ flowchart LR
 
 1. Full-denominator positive cycle.
 2. Boundary-memory sanctuary DFA.
-3. Forever-defined PR #49 refund residual.
-4. Centered nonlinear top-boundary seed.
-5. Multi-phase cross-cycle return.
-6. Positive H survivor.
-7. Equivalent third-component witness.
+3. Forever-defined negative-three pulse-chart seed (`ACL-P040`).
+4. Forever-defined PR #49 complement counter (`ACL-P036`).
+5. Centered nonlinear top-boundary seed.
+6. Multi-phase cross-cycle return.
+7. Positive H survivor outside `10/30`.
+8. Equivalent third-component witness.
 
 ### Architectural leverage
 
-1. PR #49 refund decoder definedness.
-2. PR #45 full-denominator critical compiler.
-3. PR #34/issue #46 cross-prime distributed pulses.
-4. PR #44 centered nonlinear top-boundary machine.
-5. PR #19 delayed-novelty/reset-renewal.
-6. Issue #39 repeated multi-phase regeneration.
+1. PR #49 complement-counter infinite definedness.
+2. Negative-three `9/(8,16)` chart and H renewal transfer.
+3. Critical mixed-drift block-carry/cross-prime circuit.
+4. PR #45 full-denominator mechanical circuit.
+5. Centered nonlinear/changing-modulus machine.
+6. H physical expanding macro search.
+7. Cross-cycle repeated multi-phase regeneration.
 
 ## Bottom line
 
-No unconditional counterexample was found. The strongest current constructive reduction is now unusually concrete:
+No unconditional counterexample was found. Two deterministic ordinary-state targets are now especially sharp:
 
 ```text
-one exact deterministic physical decoder,
-one explicit finite residual,
-one all-time definedness invariant.
+PR #49:
+  one physical n whose intrinsic (t,i,k) decoder is defined forever
+  and whose boundary shifts acquire infinitely many fresh odd primes;
+
+negative-three chart:
+  one x>0 whose fixed 9/(8,16) map is defined forever.
 ```
 
-If that residual exists in PR #49's domain forever, positivity and exponential growth are already supplied by the proposed theorem chain.
+Both already include exact physical Collatz replay and need only an all-time ordinary-domain theorem. The fixed pulse chart is the main new connection of this pass.
