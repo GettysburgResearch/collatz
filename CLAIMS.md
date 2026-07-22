@@ -118,25 +118,29 @@ Dependencies and gap audits are recorded inside the individual claim files. This
 | L-0032 | Lemma | Boundary valuation signatures | PROPOSED | `claims/lemmas/L-0032-boundary-valuation-signature.md` |
 | O-0011 | Observation | Two-place Ridout-threshold audit | PROPOSED NATIVE / CONDITIONAL | `claims/observations/O-0011-two-place-ridout-threshold.md` |
 | X-0016 | Experiment | Scaled-tail, room, valuation, and bridge audit | EMPIRICAL | `experiments/X-0016-scaled-tail-sunit/` |
+| L-0033 | Lemma | Three-symbol Hensel output filter | PROPOSED | `claims/lemmas/L-0033-three-symbol-hensel-output-filter.md` |
+| L-0034 | Lemma | Exact real defect-digit expansion | PROPOSED | `claims/lemmas/L-0034-defect-digit-expansion.md` |
+| T-0037 | Theorem | At most sixty-four eventual rooms | PROPOSED | `claims/theorems/T-0037-finite-room-classification.md` |
+| T-0038 | Theorem | Every eventual room is transcendental | PROPOSED / SOURCE-QUALIFIED | `claims/theorems/T-0038-fixed-room-transcendence.md` |
+| T-0039 | Theorem | Two-block room exclusion criterion | PROPOSED | `claims/theorems/T-0039-two-block-room-exclusion-criterion.md` |
+| X-0017 | Experiment | Three-symbol room and defect audit | EMPIRICAL | `experiments/X-0017-room-filter/` |
 
 ## Open-question index
 
 See `OPEN_PROBLEMS.md`. The primary questions are:
 
 - `Q-0022`: exact shrinking-cusp stage stitching;
-- `Q-0026`: couple the fixed room to PR #34's triple-seam carry;
 - `Q-0027`: bridge-compatible fresh-prime creation;
-- `Q-0028`: a product-formula obstruction for the adelic target;
-- `Q-0029`: a correctly renormalized quadratic-generator test.
+- `Q-0028`: product-formula obstruction for the adelic target;
+- `Q-0030`: cofinal exclusion of the adjacent twelve-bit Hensel pattern.
 
 ## Latest relationship
 
-- `L-0031` turns one stage into a positive 257-term multiplicative equation.
-- `T-0032` proves that any infinite ordinary path must escape every fixed finite-prime group.
-- `T-0033`--`T-0034` give one fixed real room whose fractional orbit is the exact connector address plus a tiny positive error.
-- `T-0036` extends that room coding to every local connector and, conditionally on PR #34, every triple seam.
-- `L-0032` shows the four tower types are exact binary/ternary valuation signatures.
-- `O-0011` proves a native two-place approximation exponent above two; its Ridout corollary awaits a source-qualified literature import.
-- `T-0035` excludes fixed polynomial uses of the quadratic generator by height nonresonance.
+- `L-0033` reduces the first physical decision to one three-symbol canonical address and one six-bit output lift.
+- `T-0037` proves there are at most 64 eventual room constants and at most 64 eventual tails.
+- `T-0038` proves every such room would have to be transcendental.
+- `L-0034` reads every local tower type as the leading real digit of the fixed-room defect, in addition to its binary and ternary valuation signatures.
+- `T-0039` shows that an actual room must realize one adjacent twelve-bit pattern: a zero top input-cell block directly below an allowed output-lift block.
+- `X-0017` reproduces the exact finite filter and records no such two-block pattern through the extended audit range `12 <= m <= 20`.
 
 `PROPOSED` means complete-looking but not independently reviewed. No claim here resolves the Collatz conjecture.
