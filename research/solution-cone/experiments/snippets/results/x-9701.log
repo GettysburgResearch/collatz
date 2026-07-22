@@ -1,0 +1,20 @@
+PART 1 OK: (Fa)_m = a_{T(m)} agrees between arithmetic and bit implementations for all m <= 100000; even split (Fa)_2k = a_k and odd split (Fa)_(2k+1) = a_(3k+2) verified.
+PART 2 OK: exact Z[omega] filter S(n) = 3*[n=2 mod 3] verified for all n < 150002; odd-branch (Fa)_(2k+1) = (AP-extract a)_k for all k <= 49999 (all odd m <= 100000).
+PART 3: truncated-kernel accounting for T (targets: {0} and cycle {1,2}):
+  T N=100: components=19, full-graph comps in range=2, spurious=17, cut_edges=17, identity ncomp=2+spurious: OK
+  T N=1000: components=169, full-graph comps in range=2, spurious=167, cut_edges=167, identity ncomp=2+spurious: OK
+  T N=5000: components=835, full-graph comps in range=2, spurious=833, cut_edges=833, identity ncomp=2+spurious: OK
+  T N=20000: components=3335, full-graph comps in range=2, spurious=3333, cut_edges=3333, identity ncomp=2+spurious: OK
+  T N=100000: components=16669, full-graph comps in range=2, spurious=16667, cut_edges=16667, identity ncomp=2+spurious: OK
+PART 3 control: U cycles {1},{5,7,10},{17,...,34} verified as cycles. Accounting for U:
+  U N=100: components=18, full-graph comps in range=3, spurious=15, cut_edges=16, identity ncomp=3+spurious: OK
+  U N=1000: components=169, full-graph comps in range=3, spurious=166, cut_edges=166, identity ncomp=3+spurious: OK
+  U N=5000: components=836, full-graph comps in range=3, spurious=833, cut_edges=833, identity ncomp=3+spurious: OK
+PART 4 OK: (a) T(2n)=n for all n <= 100000; (b) odd preimage (2n-1)/3 exists iff n=2 mod 3, is odd, maps to n; no odd preimage otherwise; (c) every n in [1,100000] reaches 1 under T.
+
+SUMMARY spurious(N) for T: {100: 17, 1000: 167, 5000: 833, 20000: 3333, 100000: 16667}
+SUMMARY components(N) for T: {100: 19, 1000: 169, 5000: 835, 20000: 3335, 100000: 16669}
+SUMMARY cut_edges(N) for T: {100: 17, 1000: 167, 5000: 833, 20000: 3333, 100000: 16667}
+SUMMARY spurious(N) for U: {100: 15, 1000: 166, 5000: 833}
+SUMMARY components(N) for U: {100: 18, 1000: 169, 5000: 836}
+ALL CHECKS PASSED

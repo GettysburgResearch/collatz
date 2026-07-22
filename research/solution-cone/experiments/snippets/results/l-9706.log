@@ -1,0 +1,10 @@
+T: indicator of component of 1, deg 3000: PASS
+T: indicator of {0}, deg 3000: PASS
+T: random union-find projected sequence, deg 3000: PASS
+C (3n+1 unshortened): 6-term eq on same random projected seq: PASS
+C (3n+1 unshortened): 6-term eq on indicator of C1: PASS
+T: corrupted sequence (FAIL expected): FAIL at N=[21, 42]
+U (3n-1): indicator of component of 5, deg 3000: PASS
+U (3n-1): indicator of component of 17, deg 3000: PASS
+U (3n-1): random union-find projected sequence, deg 3000: PASS
+ALL CHECKS PASSED

@@ -1,0 +1,8 @@
+s=1.1: kappa=2.132189745892  ||F||=1.460201953804  (max at n=2 over n<100000)
+s=1.5: kappa=2.301875308632  ||F||=1.517193233781  (max at n=2 over n<100000)
+s=2.0: kappa=2.610000000000  ||F||=1.615549442140  (max at n=2 over n<100000)
+s=3.0: kappa=3.591000000000  ||F||=1.894993403682  (max at n=2 over n<100000)
+F*F diagonal verified exactly (s=2) for n,k <= 60
+U control s=1.1: max d^U (n<100000) = 2.028571495 < limit 2.028586112 (not attained)
+U control s=2.0: max d^U (n<100000) = 2.499957500 < limit 2.500000000 (not attained)
+ALL CHECKS PASSED

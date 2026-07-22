@@ -1,0 +1,5 @@
+T (3n+1) on {0..N}: |V|=2001 edges=1668 components=335 ker_GF2=335 ker_Q=335  OK
+T control facts: T^{-1}(0)={0} on range; comp(0)!=comp(1)=comp(2)  OK
+U (3n-1) on {1..N}: |V|=2000 edges=1667 components=336 ker_GF2=336 ker_Q=336  OK
+U control facts: cycles {1},{5,7,10},{17,...,34} verified; 3 distinct components  OK
+ALL CHECKS PASSED
