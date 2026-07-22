@@ -14,10 +14,15 @@ This isolated `85xx` namespace belongs to issue #43. It does not edit any canoni
 | `T-8504` | Theorem | One complement counter is a complete local counterexample state | PROPOSED | `L-8503`, physical tower replay |
 | `L-8504` | Lemma | Refund states are intrinsic unimodular physical markers | PROPOSED | `L-8503`, physical tower replay |
 | `T-8505` | Theorem | Every infinite refund path has unbounded odd-prime support | PROPOSED / SOURCE-QUALIFIED | `L-8504`, Evertse 1984 Corollary 1 |
-| `Q-8501` | Open question | One forever-defined ordinary complement quotient | OPEN | `T-8504`, `L-8504`, `T-8505` |
+| `L-8505` | Lemma | Primitive refund cores satisfy one exact Syracuse equation | PROPOSED | `L-8504`, `T-8505` local signatures |
+| `T-8506` | Theorem | Every legal connector adds more than 170 primitive-core bits | PROPOSED | `L-8505`, `3^53>2^84` |
+| `T-8507` | Theorem | Intrinsic primitive-core decoder and physical conjugacy | PROPOSED | `L-8504`, `L-8505`, physical replay |
+| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8507` |
 | `X-8501` | Experiment | Exact refund, carry, decoder, and cutoff audit | EMPIRICAL | `L-8501`--`T-8503` |
 | `X-8502` | Experiment | Exact complement-quotient and growth audit | EMPIRICAL | `L-8503`, `T-8504` |
 | `X-8503` | Experiment | Unimodular physical marker and prime-turnover audit | EMPIRICAL | `L-8504`, `T-8505` elementary gates |
+| `X-8504` | Experiment | Exact primitive-core signature and coprimality audit | EMPIRICAL | `L-8505`, `T-8505` |
+| `X-8505` | Experiment | Intrinsic primitive-core decoder reconstruction | EMPIRICAL | `L-8505`, `T-8506`, `T-8507` |
 
 ## Logical chain
 
@@ -27,13 +32,15 @@ PR3 physical tower identity
   -> L-8502 causal inverse/cell compiler
   -> L-8503 complement quotient k
   -> T-8504 deterministic partial map (t,i,k)
-       legal and k>=256 => k_next>=2k
   -> L-8504 intrinsic physical marker
-       n alone recovers t, i, and k
-  -> Q-8501 one finite forever-defined state
+  -> L-8505 exact prime-to-six core equation
+  -> T-8507 deterministic partial map (t,gamma,i,C)
+       one high binary divisibility + one six-bit gate
+       legal => C_next > 2^170 C
+  -> Q-8501 one finite forever-defined physical core
   -> explicit positive unbounded Collatz orbit.
 ```
 
-Every hypothetical infinite branch additionally satisfies `T-8505`: its physical boundary shifts introduce infinitely many globally new odd primes and cannot lie in a fixed finite-prime multiplicative library.
+Every hypothetical infinite branch additionally satisfies `T-8505`: consecutive prime-to-six cores are coprime, the full core is replaced at every connector, and infinitely many globally new odd primes enter the physical boundary shifts.
 
-`T-8501` gives the equivalent residual-coordinate formulation and remains useful for direct comparison with PR #3's canonical connector variables. `L-8501` proves refund already begins at width one. `T-8502`, `T-8503`, and `T-8505` are construction filters: finite symbolic abundance, short periodic controllers, and fixed-prime schemas do not provide the missing ordinary seed.
+`T-8501` and `T-8504` retain equivalent residual/complement formulations for direct comparison with PR #3. `T-8502`, `T-8503`, and `T-8505` are construction filters: finite symbolic abundance, short periodic controllers, and fixed-prime schemas do not provide the missing ordinary seed.
