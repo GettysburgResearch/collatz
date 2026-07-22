@@ -15,7 +15,10 @@ def verify_finite_bridge_identity() -> None:
     residual_scale = Fraction(7, 5)
     homogeneous_scale = 64 * binary_radix * residual_scale
     defect = Fraction(1, 3)
-    room = Fraction(scaled_tail, 1) / homogeneous_scale + defect / homogeneous_scale
+    room = (
+        Fraction(scaled_tail, 1) / homogeneous_scale
+        + defect / homogeneous_scale
+    )
 
     assert room * homogeneous_scale - scaled_tail == defect
     assert (
@@ -42,22 +45,19 @@ def verify_residual_scale_exponents() -> None:
             (1085579 * scale) // 256 + 2816 * m + 17
         )
 
-        # The leading logarithmic coefficient is the same exact expression
-        # as the full-stage surplus Gamma in T-0024.
+        # These identities show that the leading logarithmic coefficient is
+        # the same Gamma expression as in the full-stage surplus theorem.
         assert 256 * a_m == 687232 * scale + 458752 * m
         assert (
             256 * residual_depth
             == 1085579 * scale + 720896 * m + 4352
         )
 
-        # The connector word always leaves a strict gap below its 64*T box.
-        for p in (5, 30, 20, 56):
-            maximum_word = p + 64 * (binary_radix_for_depth(head_depth) - 1)
-            assert maximum_word <= 64 * binary_radix_for_depth(head_depth) - 8
-
-
-def binary_radix_for_depth(depth: int) -> int:
-    return 1 << depth
+    # The canonical scaled connector word obeys
+    # p + 64*(T-1) <= 64*T-8 for every T>=1 exactly because p<=56.
+    assert max((5, 30, 20, 56)) <= 56
+    for p in (5, 30, 20, 56):
+        assert 64 - p >= 8
 
 
 def main() -> None:
