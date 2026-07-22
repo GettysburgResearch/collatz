@@ -1,6 +1,6 @@
 digraph CollatzMap {
   graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=12, labelloc="t",
-         label="Global Collatz Counterexample Dependency Map — reviewed pass 3",
+         label="Global Collatz Counterexample Dependency Map — reviewed pass 3 final",
          nodesep=0.35, ranksep=0.75, compound=true, splines=ortho];
   node [shape=box, style="rounded,filled", fontname="Arial", fontsize=9, margin="0.11,0.06",
         color="#666666", fillcolor="#e5e7eb"];
@@ -9,100 +9,73 @@ digraph CollatzMap {
   false [label="COLLATZ IS FALSE", shape=doubleoctagon, penwidth=2];
   cycle [label="Positive nontrivial cycle", shape=oval];
   div [label="Positive orbit avoids 1", shape=oval];
-  third [label="Third component /\nexact equivalent witness", shape=oval];
-  cycle -> false;
-  div -> false;
-  third -> false;
+  third [label="Third component / deficit", shape=oval];
+  cycle -> false; div -> false; third -> false;
 
   subgraph cluster_cycle {
-    label="Integer-first finite cycle"; color="#b45309"; style="rounded";
+    label="Critical finite cycle"; color="#b45309"; style="rounded";
     ceq [label="Exact cycle equation", fillcolor="#c8f7c5", color="#267326"];
-    w27 [label="PR42 windows through 27\nPROPOSED + exact MITM", fillcolor="#ffd6a5", color="#b45309"];
-    k184 [label="PR13 length 184 excluded\nPROPOSED native", fillcolor="#ffd6a5", color="#b45309"];
-    crit [label="PR45 critical mechanical compiler\nfirst near-candidate rejected", fillcolor="#ffd6a5", color="#b45309"];
-    pulse [label="PR47 single-pulse negative packet\ndistributed pulse open", fillcolor="#ffd6a5", color="#b45309"];
-    full [label="Full-denominator equality\n+ exact replay", shape=diamond];
-    ceq -> w27;
-    ceq -> k184;
-    ceq -> crit -> full;
-    ceq -> pulse -> full;
-    full -> cycle;
+    support [label=">=7 non-2 valuations\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
+    mech [label="PR45 compiler\nindependently reviewed", fillcolor="#c8f7c5", color="#267326"];
+    pulse [label="Distributed-pulse remainder\n+ cross-prime state", fillcolor="#ffd6a5", color="#b45309"];
+    full [label="Full denominator + replay", shape=diamond];
+    ceq -> support -> full; ceq -> mech -> full; ceq -> pulse -> full -> cycle;
   }
 
   subgraph cluster_frozen {
-    label="Frozen finite-type collision class"; color="#267326"; style="rounded";
-    stage [label="Corrected 256-transition stage", fillcolor="#ffd6a5", color="#b45309"];
-    eq258 [label="258-coordinate\nprimitive equation", fillcolor="#ffd6a5", color="#b45309"];
-    ev [label="Evertse 1984", fillcolor="#cfe8ff", color="#2563a8"];
-    t9705 [label="T-9705 independently verified\nat frozen source", fillcolor="#c8f7c5", color="#267326"];
-    fclosed [label="Frozen class closed", shape=octagon, fillcolor="#ffc7c7", color="#aa1111"];
-    stage -> eq258 -> t9705 -> fclosed;
-    ev -> t9705;
+    label="Frozen corrected class"; color="#267326"; style="rounded";
+    stage [label="256-transition doubling stage", fillcolor="#ffd6a5", color="#b45309"];
+    t9705 [label="T-9705 independently verified", fillcolor="#c8f7c5", color="#267326"];
+    closed [label="No signed ordinary completion", fillcolor="#ffc7c7", color="#aa1111", shape=octagon];
+    stage -> t9705 -> closed;
   }
 
   subgraph cluster_refund {
-    label="Linear-height quotient refund"; color="#b45309"; style="rounded";
-    l0050 [label="LIT-KTHM-0050\npairwise expanding lifts", fillcolor="#ffd6a5", color="#b45309"];
-    causal [label="ACL-P036 causal invariant\n+ top-boundary locality", shape=diamond];
-    init [label="Positive ordinary initialization", shape=diamond];
-    l0050 -> causal -> init -> div;
+    label="Width-one linear refund"; color="#b45309"; style="rounded";
+    w1 [label="PR49 threshold B=3744", fillcolor="#ffd6a5", color="#b45309"];
+    dec [label="Deterministic connector decoder", fillcolor="#ffd6a5", color="#b45309"];
+    def [label="One finite residual\ndefined forever?", shape=diamond];
+    grow [label="z' >= 2z\nexplicit initialization", fillcolor="#ffd6a5", color="#b45309"];
+    w1 -> dec -> def -> grow -> div;
   }
 
   subgraph cluster_center {
-    label="Centered 64→81"; color="#267326"; style="rounded";
-    native [label="Centered equivalence,\ncylinders, blocks", fillcolor="#c8f7c5", color="#267326"];
+    label="Centered 64→81"; color="#b45309"; style="rounded";
     zero [label="64B'=81B+e-e'"];
-    ghost [label="Fixed-modulus PDR\nperiodic completion ghost", fillcolor="#ffc7c7", color="#aa1111"];
-    top [label="Height/top-boundary\none-counter invariant", shape=diamond];
-    native -> zero;
-    zero -> ghost;
-    zero -> top -> div;
+    ghost [label="Fixed modulus = ghost", fillcolor="#ffc7c7", color="#aa1111"];
+    add [label="Additive one-counter periodic", fillcolor="#ffc7c7", color="#aa1111"];
+    top [label="Nonlinear top-boundary machine", shape=diamond];
+    zero -> ghost; zero -> add; zero -> top -> div;
   }
 
   subgraph cluster_cross {
-    label="Cross-cycle handoff"; color="#9a7b00"; style="rounded";
-    cell [label="m=22 physical room opening", fillcolor="#fff2a8", color="#9a7b00"];
-    cascade [label="Negative-cycle phase cascade", fillcolor="#fff2a8", color="#9a7b00"];
-    phase1 [label="Permanent phase 1\n= shifted Collatz", fillcolor="#ffc7c7", color="#aa1111"];
-    multi [label="Repeated multi-phase return\nor regenerative invariant", shape=diamond];
-    cell -> cascade -> phase1;
-    cascade -> multi -> div;
-    multi -> cycle;
+    label="Cross-cycle"; color="#9a7b00"; style="rounded";
+    cell [label="m=22 physical handoff", fillcolor="#fff2a8", color="#9a7b00"];
+    ph1 [label="Permanent phase 1\n= shifted Collatz", fillcolor="#ffc7c7", color="#aa1111"];
+    multi [label="Repeated multi-phase return", shape=diamond];
+    cell -> ph1; cell -> multi -> div; multi -> cycle;
   }
 
   subgraph cluster_h {
-    label="Partial H subsystem"; color="#b45309"; style="rounded";
-    hsearch [label="Exact ordinary sweep\nthrough 2^65 scale", fillcolor="#fff2a8", color="#9a7b00"];
-    hcycle [label="T-9515 proposed:\nno cycle through 2.479b blocks", fillcolor="#ffd6a5", color="#b45309"];
-    hbarr [label="Entropy / prefix-return /\nfresh-prime barriers", fillcolor="#ffd6a5", color="#b45309"];
-    hwit [label="Delayed novelty or reset renewal\nordinary survivor", shape=diamond];
-    hsearch -> hcycle;
-    hbarr -> hwit -> div;
+    label="Partial H"; color="#b45309"; style="rounded";
+    hc [label="No cycle <=2.479b blocks\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
+    hb [label="Entropy / return / prime barriers", fillcolor="#ffd6a5", color="#b45309"];
+    hw [label="Delayed novelty or reset renewal", shape=diamond];
+    hc -> hb -> hw -> div;
   }
 
-  subgraph cluster_san {
-    label="Finite sanctuary"; color="#b45309"; style="rounded";
-    bare [label="T-8601 proposed:\nno bare congruence sanctuary", fillcolor="#ffd6a5", color="#b45309"];
-    dfa [label="DFA with genuine\nword-boundary memory", shape=diamond];
-    bare -> dfa [style=dashed];
-    dfa -> div;
-  }
-
-  subgraph cluster_eqv {
-    label="Equivalent full-map witnesses"; color="#777777"; style="rounded";
+  subgraph cluster_other {
+    label="Other exact certificates"; color="#777777"; style="rounded";
+    dfa [label="Boundary-memory sanctuary DFA", shape=diamond];
     cover [label="Coverage deficit C(x)<x", shape=diamond];
     cone [label="Third binary fixed ray", shape=diamond];
-    spec [label="Point spectral excess\n+ faithful support", shape=diamond];
-    cover -> third;
-    cone -> third;
-    spec -> third;
+    dfa -> div; cover -> third; cone -> third;
   }
 
   legend_p [label="PROVED / independently verified", fillcolor="#c8f7c5", color="#267326"];
-  legend_l [label="source-inspected literature", fillcolor="#cfe8ff", color="#2563a8"];
   legend_o [label="PROPOSED", fillcolor="#ffd6a5", color="#b45309"];
   legend_e [label="exact finite / empirical", fillcolor="#fff2a8", color="#9a7b00"];
-  legend_r [label="closed / refuted / secret reduction", fillcolor="#ffc7c7", color="#aa1111"];
+  legend_r [label="closed / secret reduction", fillcolor="#ffc7c7", color="#aa1111"];
   legend_q [label="OPEN", fillcolor="#e5e7eb", color="#666666"];
-  {rank=sink; legend_p; legend_l; legend_o; legend_e; legend_r; legend_q;}
+  {rank=sink; legend_p; legend_o; legend_e; legend_r; legend_q;}
 }
