@@ -39,6 +39,7 @@ dependency.
 - [`wave thirteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-thirteen.md)
 - [`wave fourteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fourteen.md)
 - [`wave fifteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-fifteen.md)
+- [`wave sixteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-sixteen.md)
 
 ## Result map
 
@@ -164,7 +165,11 @@ dependency.
 | [`T-9810`](claims/T-9810-signature-refined-fresh-prime-budget.md) | PR #3 scaled-tail S-unit frontier | Freezing the three incoming ternary and four outgoing binary signatures absorbs all bounded endpoint powers of `2` and `3`, giving rank `<=2f+1` for primes outside `{2,3}` and the sharper envelope `N<=12*4^256 exp(1542^771(2f+2))`. |
 | [`T-9811`](claims/T-9811-fixed-room-rational-or-transcendental.md) | PR #3 fixed-room/Ridout bridge | The native real, binary, and ternary approximation factors match Ridout's projective theorem with targets `(C,0,infinity)` exactly, so every hypothetical fixed corrected-stage room is transcendental. |
 | [`T-9812`](claims/T-9812-native-order-two-casoratian.md) | PR #20 native q-difference frontier | The periodic stack solution and its first q-shift are independent over `Q(X)`; their solution Casoratian is positive over the reals and has exact physical valuation `54(m+d_1)+6` at `2`. |
-| [`R-9809`](claims/R-9809-cross-completion-denominator-descent.md) | PR #20 denominator-descent audit | Refutes the proof bridge in `T-9418`--`T-9421`: fixed denominators belong to rational 2-adic tails, while compact positivity bounds belong to separate real shadows; the completion defect expands exactly under the inverse shift. |
+| [`R-9809`](claims/R-9809-cross-completion-denominator-descent.md) | PR #20 denominator-descent audit | Refutes the historical proof bridge in `T-9418`--`T-9421`: fixed denominators belong to rational 2-adic tails, while compact positivity bounds belong to separate real shadows; live PR #20 now independently confirms the mismatch and withdraws the affected claims. |
+| [`T-9813`](claims/T-9813-room-address-cap-cell-alignment.md) | PR #3/PR #33 room-cap bridge | The three-symbol room address is exactly the cap-head correction modulo its coarse width; the realized fourth-symbol cells form four-element fibers, and eventual rooms inject into an explicit survivor set of liminf size at most 64. |
+| [`T-9814`](claims/T-9814-overlap-incidence-rank.md) | PR #3 adjacent-stage S-unit frontier | Retained stages have path-incidence endpoint rank `<=1+(h+1)s`; composing them removes internal boundaries and leaves exact fresh-prime ambient rank `2f+1`, independent of block length. |
+| [`T-9815`](claims/T-9815-period-one-padic-linear-independence-measure.md) | PR #20 native q-difference frontier | A sourced finite-place theorem makes every period-one pair `F(x),F(qx)` Q-linearly independent with explicit exponent `96.8590845...`; exact source inequalities show why the audited criteria stop at longer periods. |
+| [`T-9816`](claims/T-9816-relative-gap-completion-height.md) | PR #20 binary/stack height frontier | If a binary `64/81` series is rational in `Q_2`, its gaps obey `g_j<=log_64(81/64)h_j+O(1)`; supercritical relative gaps therefore prove irrationality without identifying real and 2-adic limits. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -355,11 +360,15 @@ independently reconstructed and which conjectural boundaries remain open.
    `q`-difference/Hermite--Pade construction for the period-ten vector.
    `T-9812` supplies a separate native order-two input: the solution pair has
    formal rank two and an exact nonzero physical Casoratian, with
-   `v_2=54(m+d_1)+6`.  The refreshed PR #20 head also proposed a denominator-
-   descent proof of scalar irrationality, but `R-9809` finds that it identifies
-   rational 2-adic tails with separate positive real shadows.  Scalar
-   irrationality and quantitative two-value independence therefore both
-   still need a valid completion-height or finite-place theorem.
+   `v_2=54(m+d_1)+6`.  `R-9809` found that the later denominator shortcut
+   identified rational 2-adic tails with separate positive real shadows; live
+   PR #20 now independently records that mismatch and withdraws the affected
+   claims.  `T-9815` then supplies a valid finite-place theorem at period one:
+   `F(x),F(qx)` are Q-linearly independent with explicit exponent
+   `96.8590845...`.  Its exact source audit also proves that the native 2007
+   height window fails at every period `r>=2`, while the direct 2002 order-two
+   presentation fails its degree condition.  Longer periods therefore need a
+   genuinely joint approximation family, not the solution Casoratian alone.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
@@ -372,7 +381,12 @@ independently reconstructed and which conjectural boundaries remain open.
    language with smaller slope is excluded, and binary 2- or 3-uniform
    substitution orbit closures already fail.  The next task is to acquire the
    exact rational-base source theorem and compute its equality language rather
-   than route through the invalid schedule.
+   than route through the invalid schedule.  `T-9816` gives the valid direct
+   height replacement for the withdrawn absolute-gap shortcut: any rational
+   binary value satisfies
+   `g_j<=log_64(81/64)h_j+O(1)`.  This excludes supercritical relative gaps
+   but leaves periodic and balanced supports below the threshold; lowering
+   the slope needs an additional ordinary numerator or centered-carry law.
 6. For the corrected PR #3 stage, combine the new arithmetic restrictions.
    `T-9805` turns qualitative fresh-prime necessity into the explicit finite
    tradeoff `N<=4^256 exp(1542^771(2s_N+2))`, using the correlated fixed-word
@@ -381,11 +395,19 @@ independently reconstructed and which conjectural boundaries remain open.
    converted exponent `2f+6` by `2f+2` at the cost of a factor `12`.
    `T-9808` made the exceptional room set finite; `T-9809` sharpens its bound
    from `4^256` to exactly 64 for the shortest one-scale prefix method.
-   Finally, `T-9811` shows that every surviving hypothetical room must be
-   transcendental.  The next useful gain is to intersect the 64 three-symbol
-   room addresses with exact cap-head/seam cells, or independently force a
-   room into an algebraic class. The constants are structural, not
-   computational.
+   `T-9813` performs the proposed intersection exactly: room addresses are
+   coarse quotients of the cap-head cells, not transverse coordinates, and
+   every eventual room lies in the zero coarse cell.  Thus rooms inject into
+   a computable prefix set of size `n_m`, with global bound
+   `#rooms<=liminf n_m<=64`.  `T-9814` separately shows that adjacent stages
+   have path-incidence rank `1+(h+1)f`; after composition every internal
+   boundary disappears and the fresh-prime ambient rank is exactly `2f+1`,
+   independent of block length.  The current one-equation ESS constant still
+   worsens with `h`, isolating a path-coupled quantitative theorem as the next
+   arithmetic input.  Finally, `T-9811` shows that every surviving
+   hypothetical room must be transcendental.  The next useful gains are
+   cofinal control of the 64 explicit coarse quotients or an independent
+   algebraicity criterion. The constants are structural, not computational.
 7. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
 8. Test binary-automatic invariant-component colorings. `L-9823` eliminates

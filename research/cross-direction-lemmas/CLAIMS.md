@@ -124,6 +124,10 @@ repository review.
 | T-9810 | Theorem | Freezing endpoint signatures removes the structural primes 2 and 3 from the correlated S-unit rank | PROPOSED | PR3/L-0031, L-0032, T-0032; T-9805 |
 | T-9811 | Theorem | Ridout's exact three-place theorem forces every hypothetical fixed corrected-stage room to be transcendental | PROPOSED / SOURCE-QUALIFIED CONDITIONAL CONSEQUENCE | PR3/O-0011, L-0032, T-0033; Ridout's theorem |
 | T-9812 | Theorem | The native periodic stack function has formal two-shift rank two and an exact nonzero physical q-Casoratian | PROPOSED | PR20/L-9408, L-9415 |
-| R-9809 | Refutation | Denominator descent does not identify rational 2-adic tails with their bounded positive real shadows | PROPOSED / PROOF-CHAIN REFUTATION | PR20/L-9416, L-9417, T-9418--T-9421 |
+| R-9809 | Refutation | Denominator descent does not identify rational 2-adic tails with their bounded positive real shadows | PROPOSED / SOURCE-CONFIRMED PROOF-CHAIN REFUTATION | historical PR20/L-9416, L-9417, T-9418--T-9421; live PR20/R-9409 |
+| T-9813 | Theorem | Three-symbol room addresses are exact quotients of cap-head cells, and eventual rooms inject into a computable coarse-cell survivor set | PROPOSED | T-9806, T-9809, L-9821; PR3/L-0031; PR33/L-9702 |
+| T-9814 | Theorem | Adjacent corrected stages have path-incidence endpoint rank, while composition removes every internal boundary | PROPOSED | T-9805, T-9810; PR3/L-0031, L-0032, T-0032 |
+| T-9815 | Theorem | Every period-one stack tail and its first q-shift are Q-linearly independent with an explicit 2-adic measure | PROPOSED | T-9812; PR20/L-9408, L-9415; Amou--Matala-aho--Vaananen Theorem 5.1 |
+| T-9816 | Theorem | Rational binary 64/81 values obey a sharp relative support-gap ceiling | PROPOSED | elementary product-formula height; R-9809 and PR20/R-9409 for comparison |
 
 No `K-####` candidate is proposed.

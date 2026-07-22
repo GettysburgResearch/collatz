@@ -142,6 +142,21 @@ separate positive real shadows, so it does not close scalar irrationality.
 All four wave-fifteen claims received nonauthoring cold reviews and remain
 `PROPOSED` pending external review.
 
+Wave sixteen attacked the four interfaces exposed by wave fifteen.  The
+cap/room lane proved that the three-symbol address is an exact quotient of the
+cap-head correction and turned eventual rooms into an explicit all-late
+coarse-cell filter.  The overlap lane represented adjacent corrected stages
+by a path-incidence endpoint group and by one composed positive S-unit
+equation.  The period lane audited two primary q-functional sources and
+obtained a quantitative 2-adic independence theorem exactly at period one,
+along with rigorous source-hypothesis obstructions at longer periods.  The
+integrating lane replaced the invalid absolute-gap shortcut by a relative-gap
+product-formula ceiling using one finite rational partial sum.  PR #20 moved
+during review to `14f06d2`, independently recorded the same completion
+mismatch in `R-9409`, and withdrew `T-9418`--`T-9421`; all source-dependent
+wording was refreshed.  Every new claim received a nonauthoring cold review
+and remains `PROPOSED` pending external review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -191,8 +206,12 @@ All four wave-fifteen claims received nonauthoring cold reviews and remain
 | `PR3/L-0025`, `L-0031`, `T-0033` at `c37e96e`; local `T-9808` | `T-9809` computes the exact first three prefix exponents, proves that three is the shortest single-scale prefix whose dyadic modulus outruns the room scale, and packs every eventual room into one of 64 shrinking address intervals. | The set may still be nonempty and is not effectively listed.  Prefix minimality is specific to the one-scale modulus method and leaves all remaining word/seam checks open. |
 | `PR3/L-0031`, `L-0032`, `T-0032` at `c37e96e`; local `T-9805` | `T-9810` freezes three incoming ternary and four outgoing binary signatures, absorbs all bounded endpoint powers of `2` and `3` into coefficients, and leaves one scale plus two directions per fresh prime. | The rank is `<=2f+1` and the ESS exponent improves from `2f+6` to `2f+2`, but the constant is astronomical and no cross-stage rank-one relation is proved. |
 | `PR3/O-0011`, `L-0032`, `T-0033` at `c37e96e`; Ridout 1958 and Bilu's exact projective formulation | `T-9811` matches targets `(C_infinity,0,infinity)` at the real, binary, and ternary places, verifies the exact projective height, and proves infinitely many distinct reduced approximants. | Every hypothetical fixed room is transcendental.  The result is conditional on the PR #3 interfaces, ineffective, and neither constructs nor excludes an ordinary path by itself. |
-| `PR20/L-9408`, `L-9415` at live head `aa9cf71` | `T-9812` proves formal two-shift independence, symmetrizes the native solution Casoratian, and identifies the unique physical least-valuation pair, giving `v_2=54(m+d_1)+6`. | The specialized matrix is nonzero over both embeddings, but this alone is neither scalar irrationality nor Q-linear independence of its values.  The later denominator shortcut is quarantined by `R-9809`. |
-| `PR20/L-9416`, `L-9417`, `T-9418`--`T-9421` at `aa9cf71` | `R-9809` preserves the exact denominator descents but separates each rational 2-adic tail from its positive real shadow.  Subtracting the two recurrences gives defects `T^(-(h_j-h_0))D_0` and `T^(-n)D_0`. | The compact real bounds do not control embedded rational 2-adic tails, so bounded gaps, all-directive stack irrationality, rational-code periodicity, and ordinary-section triviality are not established by this chain.  The theorem statements are not refuted. |
+| `PR20/L-9408`, `L-9415` with unchanged blobs `b3e09ca`, `c53fb95` at live head `14f06d2` | `T-9812` proves formal two-shift independence, symmetrizes the native solution Casoratian, and identifies the unique physical least-valuation pair, giving `v_2=54(m+d_1)+6`. | The specialized matrix is nonzero over both embeddings, but this alone is neither scalar irrationality nor Q-linear independence of its values. |
+| Historical `PR20/L-9416`, `L-9417`, `T-9418`--`T-9421` at `aa9cf71`; live `PR20/R-9409` at `14f06d2` | `R-9809` preserves the exact denominator descents but separates each rational 2-adic tail from its positive real shadow.  Subtracting the two recurrences gives defects `T^(-(h_j-h_0))D_0` and `T^(-n)D_0`. | The local audit refutes the historical proof bridge, and live PR #20 now independently confirms the mismatch and withdraws all four affected claims.  Their statements remain open. |
+| `PR3/L-0031` at `c37e96e`; `PR33/L-9702` at `2cfe250`; local `T-9806`, `T-9809`, `L-9821` | `T-9813` derives the no-wrap affine quotient from cap corrections to room addresses, identifies the restricted sixteen-cell fibers, and forces every eventual room into one explicit zero coarse cell. | The compatible symbolic count is 256 rather than 1024 and `#rooms<=liminf n_m<=64`, but no cofinal bound below 64 or full seam continuation is proved. |
+| `PR3/L-0031`, `L-0032`, `T-0032` at `c37e96e`; local `T-9805`, `T-9810` | `T-9814` factors retained adjacent stages through boundary-incidence directions and composes them into one positive `(256h+1)`-term equation with only two outer endpoints. | Fresh-prime ambient rank becomes `1+(h+1)f` for the system and exactly `2f+1` after composition, but the imported one-equation count worsens with block length. |
+| `PR20/L-9408`, `L-9415` at `14f06d2`; Amou--Matala-aho--Vaananen 2007 Theorem 5.1; Matala-aho 2002 Theorem 4.1 | `T-9815` maps the period-one equation exactly to the finite-place source theorem and obtains Q-linear independence of `1,F(x)` and `F(x),F(qx)` with exponent `96.859084511...`. | The 2007 native height window fails for every `r>=2`, and the direct 2002 order-two presentation fails its degree condition for every period; a different joint approximation family is required. |
+| Elementary rational height; historical `PR20/T-9411`, local `R-9809`, and live `PR20/R-9409` for comparison | `T-9816` combines exact first-omitted 2-adic valuation with the denominator and ordinary height of the same finite rational difference, giving `g_j<=log_64(81/64)h_j+O(1)`. | Supercritical relative gaps imply irrationality, but bounded, periodic, and balanced stack increments remain below the threshold. |
 
 ## New-claim audit matrix
 
@@ -239,7 +258,11 @@ All four wave-fifteen claims received nonauthoring cold reviews and remain
 | `T-9810` | quantitative-prime lane and period reviewer | all endpoint signatures, context count, coefficient absorption, fresh-prime tuple generators, rank, scale distinctness, endpoint retention, and both initialized/uninitialized inversions were reconstructed | two directions per fresh prime remain, and the effective constant is structurally useful but computationally vacuous |
 | `T-9811` | cap/Ridout lane and independent source reviewer | exact theorem normalization, three projective targets, reduced height, strict error, denominator growth, rational-target scope, and conditional conclusion were reconstructed | transcendence classifies any assumed room but gives neither existence nor nonexistence without an independent algebraicity criterion |
 | `T-9812` | integrating agent and period cold reviewer | Q(X)-independence, Casoratian sign and leading term, physical exponent identity, finite-truncation passage, unconditional 2-adic pair convergence, unique minimum, and exact valuation were reconstructed | determinant nonvanishing does not specialize formal independence into scalar irrationality or Q-linear value independence; `R-9809` quarantines the later denominator shortcut |
-| `R-9809` | integrating agent and independent completion cold reviewer | completion conventions, exact defect amplification, leading-unit nonvanishing, denominator lower bound, every downstream dependency, source-history changes, and the possible L-9404 repair were reconstructed | only the submitted proof chain is refuted; a new height or finite-place theorem could still prove any source statement |
+| `R-9809` | integrating agent and independent completion cold reviewer | completion conventions, exact defect amplification, leading-unit nonvanishing, denominator lower bound, every downstream dependency, source-history changes, the possible L-9404 repair, and the later source withdrawal were reconstructed | the historical proof bridge is refuted and now source-confirmed; the four mathematical statements remain open |
+| `T-9813` | cap/room lane and independent completion reviewer | toll orientation, odd-suffix cancellation, no wrap, restricted-cell fibers, local cylinder applicability, zero-cell forcing, fourth-symbol uniqueness, and liminf injection were reconstructed | asymptotic control of the 64 explicit coarse quotients and every later seam remain open |
+| `T-9814` | overlap-rank lane and independent completion reviewer | incidence directions, exact ambient ranks, recurrence composition, signature sharing, context/window counts, scale separation, `h=1` recovery, and quantitative monotonicity were reconstructed | no available simultaneous S-unit theorem exploits the incidence rank without growing the term dimension |
+| `T-9815` | period/source lane, integrating agent, and independent source reviewer | official-source normalization, analytic/orbit hypotheses, radical constants, exact height window, pair-height transfer, longer-period no-go, content cancellation, and source hashes were reconstructed | arithmetic value independence is proved only at period one; no gauge-independent obstruction or joint longer-period theorem is claimed |
+| `T-9816` | integrating agent and independent period reviewer | odd denominator, exact tail unit, reduced denominator divisibility, numerator lower bound, finite real height, logarithmic slope, contrapositive, stack indexing, and live-source comparison were reconstructed | relative control does not imply bounded gaps and does not reach periodic or balanced supports |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -502,7 +525,56 @@ The leading 2-adic unit proves nonvanishing, so the fixed-denominator lower
 bound survives; only the shrinking real-shadow upper bound fails to transfer.
 The review also checked `L-9404`: its ordinary tail-orbit bound expands on the
 same inverse-contraction scale and supplies neither completion equality nor a
-finite numerator state.  No repair exists at live head `aa9cf71`.
+finite numerator state.  No repair existed at historical head `aa9cf71`.
+Live PR #20 head `14f06d2` instead confirms the mismatch in `R-9409` and
+withdraws `T-9418`--`T-9421`; it does not add a completion bridge.
+
+### Independent wave-sixteen arithmetic audits
+
+For `T-9813`, the reviewer independently composed the first three scaled
+connector equations, verified the order
+`N_1N_2b_a+T_1N_2b_b+T_1T_2b_c`, and cancelled the exact odd suffix from the
+full room address.  The modulus identity `M=64T_1C` gives the affine quotient
+without wrap.  Review corrected one material wording issue: the ambient
+reduction `Z/(64T_3) -> Z/T_3` has 64-element fibers; only its restriction to
+the sixteen realized cap cells is four-to-one onto the four `c` residues.
+Local applicability of the canonical cylinder theorem, zero coarse-cell
+forcing, unique `k`, and eventual injection into `P_m` were all rederived.
+Exact replay at scales 12 and 13 matched the stated five and three audit
+heads, with no extrapolation.
+
+For `T-9814`, the reviewer wrote the exponent-incidence matrix independently.
+Each internal boundary acts once as a right endpoint and once as the next left
+endpoint, giving one direction per path vertex.  Composition was checked at
+`h=2,3` before induction; every internal word cancels and all `256h+1` terms
+remain positive.  Unique factorization proves the stated fresh-prime ambient
+ranks without assuming that actual endpoint valuations are independent.
+Window counts, the one lost uninitialized window, chronological signature
+sharing, and scale separation were checked.  Substitution `h=1` recovers
+`T-9805`/`T-9810`; monotonicity confirms that the present one-equation bound
+strictly worsens for `h>=2`.
+
+For `T-9815`, the official 2007 journal pages 318--320 were inspected for the
+equation, normalized heights, `lambda`, `A`, `B`, `K_delta`, `rho_0`, the
+strict height window, and lower bound (5.5).  Printed page 648 of the official
+2002 source was checked separately for its degree constants and required
+positivity.  Independent exact algebra recovered
+`rho_0=(28+sqrt(2086))/12`,
+`beta=(2sqrt(2086)-7)/79`,
+`gamma=(2/3)log_2 3`, and `mu=96.859084511...`.  The analytic solution,
+nonsingular physical orbit, affine coefficient height, and fixed rational
+change of basis were audited.  The universal `r>=2` inequality
+`B/A<19/18<gamma` and the primitive-content limit in the older order-two
+presentation were rederived rather than inferred from numerics.
+
+For `T-9816`, the reviewer first proved that a rational value has odd reduced
+denominator.  The normalized omitted tail is `1 mod64`, so its valuation is
+exactly `6h_(j+1)`; denominator reduction can only strengthen the numerator
+lower bound.  The ordinary upper bound is applied only to the same rational
+difference `A/B-S_j`, never to an infinite real shadow.  Logarithmic
+rearrangement recovered the exact slope
+`log_64(81/64)=0.056641667147437458...`, and the contrapositive and stack
+indexing were checked against both local `R-9809` and live `PR20/R-9409`.
 
 ### Independent `L-9839` even-`K` jet audit
 
@@ -549,7 +621,20 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
   specialized values.
 - `R-9809` does not disprove bounded-gap rationality classification or
   ordinary-section triviality; it shows only that the submitted denominator-
-  descent proofs use a missing cross-completion height bound.
+  descent proofs use a missing cross-completion height bound.  Live PR #20 now
+  withdraws those proofs but likewise leaves their statements open.
+- `T-9813` proves that room and cap coordinates are aligned and supplies an
+  explicit liminf filter; it does not control that filter cofinally, validate
+  the remaining 253 symbols, or exclude one eventual room.
+- `T-9814` proves exact incidence-rank compression, not a stronger numerical
+  fresh-prime bound: the available composed one-equation estimate is strictly
+  worse at every block length `h>=2`.
+- `T-9815` proves arithmetic independence only for one-letter periodic stack
+  words.  Its longer-period source failures do not rule out another gauge,
+  another theorem, or a coupled Hermite--Pade construction.
+- `T-9816` gives a relative gap ceiling, not bounded gaps or a rationality
+  classification.  Periodic and balanced positive directives lie below its
+  critical threshold.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -966,3 +1051,27 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     inverse-contraction defect laws, check leading-unit nonvanishing, and
     follow the dependency into `T-9421`.  Do not turn a proof refutation into
     a counterexample to any theorem statement.
+56. For `T-9813`, compose the first three scaled connector recurrences and
+    cancel the full odd suffix before comparing address definitions.  Keep the
+    ambient 64-to-one residue map distinct from its four-to-one restriction to
+    the sixteen realized cells.  Verify no wrap, local cylinder applicability,
+    zero coarse-cell forcing, unique fourth symbols, and the all-late liminf
+    injection; bounded values of `n_m` are audits only.
+57. For `T-9814`, write the boundary-incidence matrix explicitly and separate
+    ambient-generator independence from variation of actual trajectory
+    points.  Check toll orientation after composition, positivity,
+    chronological signature sharing, scale separation, every window count,
+    and recovery at `h=1`.  Do not advertise the structural rank saving as a
+    numerical improvement under the current one-equation ESS theorem.
+58. For `T-9815`, read both primary-source theorems and map their symbols
+    before evaluating constants.  Check normalized finite-place height,
+    analytic uniqueness, orbit nonsingularity, formal independence, the exact
+    radical comparison, and the fixed rational coefficient transformation.
+    Reprove both longer-period hypothesis failures and do not substitute the
+    solution Casoratian for a source approximation determinant.
+59. For `T-9816`, prove the rational denominator is odd and the omitted tail
+    is a unit after extracting `2^(6h_(j+1))`.  Apply the real bound only to
+    the same finite rational difference `A/B-S_j`, retain denominator-
+    divisibility direction under reduction, and check the absolute-to-relative
+    gap conversion.  Do not infer bounded gaps or periodic-stack
+    irrationality from the relative ceiling.

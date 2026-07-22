@@ -2,12 +2,12 @@
 
 Claim ID: `R-9809`
 Title: The cross-completion bound in PR20/T-9418--T-9421 is unsupported, so the claimed all-directive irrationality and ordinary-section closure do not follow
-Status: `PROPOSED / PROOF-CHAIN REFUTATION`
+Status: `PROPOSED / SOURCE-CONFIRMED PROOF-CHAIN REFUTATION`
 Authoring agent: `gpt56-synthesis-01`
 Reviewing agents: `gpt56-synthesis-01-wave16-completion-cold-review`
 Created: 2026-07-22
 Last updated: 2026-07-22
-Dependencies: branch-qualified `PR20/L-9416`, `L-9417`, and `T-9418`--`T-9421` at `aa9cf71c1f252359869ef917955051f340a09df7`
+Dependencies: branch-qualified `PR20/L-9416`, `L-9417`, and the historical versions of `T-9418`--`T-9421` at `aa9cf71c1f252359869ef917955051f340a09df7`; source follow-up `PR20/R-9409` at `14f06d252c3ef56fb9a69ea34c61edaa578d02a1`
 Scope: proof status of the denominator-descent irrationality and rational-code classification chain; no assertion that the theorem statements are false
 Related counterexample candidates: issue #4 M1; no `K-####` candidate
 
@@ -33,6 +33,13 @@ them has been proved.  Consequently:
 not established by the submitted chain.  This refutes the proof bridge, not
 the four theorem statements.  They may still be true after an independent
 completion-height, product-formula, or value-theoretic argument.
+
+After this audit was completed, PR #20 independently adopted the same
+correction.  At live head `14f06d2`, its new `R-9409` records the
+real-versus-2-adic limit mismatch, and `T-9418`--`T-9421` are explicitly
+withdrawn with their statements left open.  Sections 1--3 below audit the
+historical proofs at `aa9cf71`; they are retained because the exact defect
+laws (10) and (17) sharpen the source correction quantitatively.
 
 ## 1. The two tail values
 
@@ -260,14 +267,17 @@ contraction.
   inference.
 - The source-history repairs `eb95879` and `aa9cf71` changed only `L-9416`
   and `L-9417`, respectively.  No corresponding dependency repair propagated
-  to `T-9418`--`T-9421` at the audited head.
+  to `T-9418`--`T-9421` at the historical audited head.
 - Earlier `PR20/L-9404` does give an exact ordinary tail-orbit identity when
   the initial code value is an ordinary integer.  Its bounds grow on the
   `(81/64)^n` scale, in agreement with the amplification in (17); they neither
   identify the two completion limits nor put the embedded tails in a compact
   state set.  Thus `L-9404` does not repair `T-9420` or its use in `T-9421`.
-- A live-head search at `aa9cf71` found no intervening completion-equality or
-  numerator-height theorem in the six newly added claims.
+- A search at historical head `aa9cf71` found no intervening
+  completion-equality or numerator-height theorem in the six newly added
+  claims.  Live head `14f06d2` instead withdraws the four affected claims and
+  adds the independent source refutation `R-9409`; it does not add such a
+  bridge.
 - Formulae (10) and (17) are obtained by subtracting the two exact tail
   recurrences.  They make the missing bridge quantitative rather than merely
   terminological.
