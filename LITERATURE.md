@@ -1,4 +1,4 @@
-# Literature audit — waves 1 through 3
+# Literature audit — waves 1 through 4
 
 **Agent:** `gpt56-pro-03`  
 **Issue:** `#7 — P1 literature audit and imported theorem suite`  
@@ -27,12 +27,10 @@ This is the repository's durable external-results layer. It remains namespaced b
 6. Skeleton rigidity should use the integral-recurrence/Fatou--Pólya algebraic-integrality principle with a minimal noncancelling representation.
 7. Mahler is a useful `2`-adic analogy, not a classical equivalence; FLP's real interval-width theorem does not transfer by Haar-measure comparison.
 8. Li--Sahlsten, Solomyak, Rudolph, Shmerkin, and Wu provide nearby methods/object classes, not direct theorems for EQ or one integer in `V∞`.
-9. Yolcu--Aaronson--Heule is verified; Conway/Kurtz--Simon undecidability concerns generalized maps.
+9. Yolcu--Aaronson--Heule is verified; Conway--Kurtz--Simon undecidability concerns generalized maps.
 10. Everett/Tao almost-all results are context, not explicit counterexample constructions.
 
 ## Wave 2 — live portfolio audit
-
-The repository had six interacting programs: PR #3 negative-return graphs; issue #4 EQ/rigidity; PR #6 rewrite termination; PR #11 ping-pong/cycle/fuel; PR #12 regular sanctuaries; and issues #8/#9 conditioned resonance/compressed cycles.
 
 The common frontier was an **infinite ordinary-integer realization theorem**. Large finite objects, compact completion points, compatible residue prefixes, and decidable fixed-certificate checks were not enough.
 
@@ -72,7 +70,7 @@ which must hold at every iterated stage.
 
 ## Wave 3 — completion height and ordinary-marker convergence
 
-The live branches now converge on a much sharper common statement:
+The live branches converged on a sharper common statement:
 
 ```text
 infinite directive
@@ -82,49 +80,82 @@ infinite directive
 
 Growth, branch count, exact finite connectors, and finite information budget are no longer the main conceptual scarcities. The remaining obstacle is causal low-bit regeneration from one finite ordinary state.
 
-Wave 3 adds `LIT-KTHM-0028` through `LIT-KTHM-0033`:
+Wave 3 added `LIT-KTHM-0028` through `LIT-KTHM-0033`:
 
-1. **Foundry fixed points.** Bernstein--Lagarias conjugacy plus strict causality make `Phi o E` a `1/2`-Lipschitz contraction. `FOUNDRY/T-9601` is therefore a known corollary/elegant repackaging; the native frontier is integrality of the unique fixed point.
+1. **Foundry fixed points.** Bernstein--Lagarias conjugacy plus strict causality make `Phi o E` a `1/2`-Lipschitz contraction. `FOUNDRY/T-9601` is a known corollary/elegant repackaging; the native frontier is integrality of the unique fixed point.
 2. **`p`-adic automata boundary.** Anashin's van der Put criterion supplies the right taxonomy for finite-state causal operators, without implying rationality or ordinary integrality.
-3. **Explicit logarithmic bulk.** PR #3's quadratic Hensel word converges exactly to
-   ```text
-   -(7/4) log_2(3),
-   ```
-   with `v_2(u_m-u_infinity)=m+1`. Mahler's `p`-adic Hermite--Lindemann theorem makes the completed target transcendental. The branch can use standard logarithm algorithms, but must still generate new digits forward rather than preload the ghost.
-4. **H-ghost pressure.** The recursive H cylinders form a pairwise separated countable `2`-adic IFS. Their residue counts obey
-   ```text
-   N(K)=N(K-2)+N(K-3),
-   ```
-   so the ghost dimension is `log_2(rho)=0.405685...`, where `rho^3=rho+1`. Subject to an independent orientation check, this strengthens the proposed H-survivor count to `O(X^0.405686)`.
-5. **Critical particle spine.** PR #3's ordered-particle completion is an exact deterministic size-biased spine/many-to-one construction. The branching literature supplies martingale and entropy tools, not the missing marked ordinary closure.
-6. **Entropy-surplus router.** Krieger's embedding theorem and MacDonald's zero-error sliding-block extension give a precise route from PR #3's aggregate information surplus to a finite-memory symbolic router—after the scale-dependent arithmetic transition system is normalized into a stationary mixing SFT and its periodic-point/visible-output conditions are verified.
+3. **Explicit logarithmic bulk.** PR #3's quadratic Hensel word converges exactly to `-(7/4)log_2(3)` with one exact new bit per stage. Mahler identifies the completed target as transcendental, but the grammar must still generate rather than preload it.
+4. **H-ghost pressure.** The recursive H cylinders form a separated countable `2`-adic IFS with plastic-constant residue growth.
+5. **Critical particle spine.** PR #3's ordered-particle completion is an exact deterministic size-biased spine/many-to-one construction.
+6. **Entropy-surplus router.** Krieger and MacDonald supply a precise symbolic embedding route after stationarization and periodic-point checks.
 
-### All-depth EQ positioning
-
-PR #16's proposed proof is best understood as a **deterministic nonarchimedean Erdős--Kahane theorem**:
-
-```text
-large Fourier coefficient
- -> small phase energy
- -> few nonzero integral carries
- -> long zero-carry runs
- -> excessive divisibility of a nonzero ordinary integer
- -> height contradiction.
-```
-
-Real self-similar Fourier-decay theorems remain methodological neighbors rather than direct imports. A reading-level audit found the chain coherent, but every load-bearing step remains `PROPOSED` pending independent reconstruction.
-
-### Completion-height program
-
-PR #16 and PR #20 independently produce the same criticality constant
+PR #16's proposed proof was positioned as a deterministic nonarchimedean Erdős--Kahane theorem. PR #16 and PR #20 independently produced the same criticality constant
 
 ```text
 1/(log_64 81 - 1)=17.654847...
 ```
 
-through carry-run and repeated-factor height arguments. The recommended shared theorem program extends exact repetitions to fractional powers, symmetric patterns, finite-state directives, and finally one-counter adaptive directives using product-formula, Ridout/Subspace-Theorem, and `p`-adic logarithmic-form methods.
+through carry-run and repeated-factor height arguments.
 
-No located theorem currently verifies the adaptive hypotheses needed for the final ordinary-integer step.
+## Wave 4 — q-series closure, centered powers, and finite-state normalization
+
+Wave 4 re-read the overnight theorem wave and added `LIT-KTHM-0034` through `LIT-KTHM-0041`.
+
+### 1. Periodic stack tails are p-adic Tschakaloff vectors
+
+Every fixed-period stack value is a finite rational linear combination of
+
+```text
+f_R(z)=sum_(n>=0) R^(n(n-1)/2)z^n
+```
+
+at rational points in distinct `R`-orbits. Väänänen--Wallisser (1991) studies this exact p-adic function. Its full hypotheses are the highest-priority source gap: they may close every fixed period in one theorem.
+
+If that theorem is insufficient, determinant nonvanishing, cyclotomic/Hankel factors, and common factors of symbolic maximal minors provide a targeted route through PR #20's small period-four height deficit.
+
+### 2. The ordinary survivor is a centered rational-power orbit
+
+`ADEL/T-9315` is equivalent to the existence of `xi>0` with
+
+```text
+||xi*(81/64)^n||<=1/81
+```
+
+for all `n`. `LIT-KTHM-0041` freezes the exact carry alphabet and sign graph. Dubickas's explicit nearest-integer and two-interval theorems are the first external sources to specialize; FLP's ordinary range width alone does not exclude the wrapped target.
+
+### 3. Finite-state complexity has canonical tests
+
+For a 2-adic isometry, finite synchronous transducibility is equivalent to finiteness of its rooted-tree sections; Anashin gives the van der Put coefficient criterion. This is the exact test for PR #3 and PR #34 address/correction maps.
+
+### 4. The ordinary quadratic bulk is a formal-group doubling map
+
+PR #3 `T-0030` is the coordinate form of
+
+```text
+Y_(m+1)=Y_m^2.
+```
+
+The logarithmic analysis coordinate doubles linearly, while the native construction still has to generate new physical precision.
+
+### 5. One-counter Foundry feedback collapses
+
+A standard deterministic one-counter machine on an autonomous zero input has ultimately periodic output. Positive Foundry search must therefore use a stronger machine model: residue/digit access, a genuine stack, two counters, or scale dependence.
+
+### 6. Static allocation can be purified
+
+PR #34's fractional Hall allocation can be upgraded to a deterministic measurable static selector by Dvoretzky--Wald--Wolfowitz if the decoder measure is atomless. Dynamic, integer, and cross-modulus coherence remain open.
+
+### 7. State-dependent finite traps
+
+A state-dependent affine or piecewise-linear potential can prove eventual entry into a finite trap even when some individual slopes exceed one. Failed searches should return exact dual cycles or occupation measures.
+
+### 8. q-Lucas and min-plus next steps
+
+PR #34's dyadic q-Padé channels suggest an all-scale q-Lucas/Frobenius/Cartier operator. Its survivor bucket lifts suggest a min-plus weighted section machine for exact minima.
+
+### Verification update
+
+PR #32 independently reconstructed the complete all-depth weighted-EQ chain. The literature map records `INDEPENDENTLY RECONSTRUCTED / integration pending`; formal status promotion belongs to the native ledger and project review registry.
 
 ## Verdict vocabulary
 
@@ -139,16 +170,15 @@ No located theorem currently verifies the adaptive hypotheses needed for the fin
 
 ## Package map
 
-- [`literature/LIVE_REPO_REVIEW_WAVE2.md`](literature/LIVE_REPO_REVIEW_WAVE2.md) and [`LIVE_REPO_REVIEW_WAVE3.md`](literature/LIVE_REPO_REVIEW_WAVE3.md) — live cross-program reviews.
-- [`literature/SOURCE_LEDGER.md`](literature/SOURCE_LEDGER.md), [`SOURCE_LEDGER_WAVE2.md`](literature/SOURCE_LEDGER_WAVE2.md), and [`SOURCE_LEDGER_WAVE3.md`](literature/SOURCE_LEDGER_WAVE3.md) — only located sources, with inspection level.
-- [`literature/CLAIM_CROSSWALK.md`](literature/CLAIM_CROSSWALK.md) — internal branch overlap.
-- [`literature/APPLICABILITY_AUDITS.md`](literature/APPLICABILITY_AUDITS.md) — automaticity, SML, Fatou, Mahler, Fourier, and rigidity checks.
-- [`literature/UNVERIFIED.md`](literature/UNVERIFIED.md) and [`UNVERIFIED-WAVE3.md`](literature/UNVERIFIED-WAVE3.md) — honest gaps.
-- [`literature/claim-maps/`](literature/claim-maps/) — branch-qualified verdicts, including `WAVE3.md`.
-- [`literature/imported-theorems/`](literature/imported-theorems/) — 33 atomic statements/proofs/black-box boundaries.
-- [`literature/topic-notes/`](literature/topic-notes/) — reusable research maps.
-- [`literature/references.bib`](literature/references.bib), [`references-wave2.bib`](literature/references-wave2.bib), and [`references-wave3.bib`](literature/references-wave3.bib) — bibliographic records.
-- [`literature/check_literature.py`](literature/check_literature.py), [`check_literature_wave2.py`](literature/check_literature_wave2.py), and [`check_literature_wave3.py`](literature/check_literature_wave3.py) — mechanical integrity checks.
+- `literature/LIVE_REPO_REVIEW_WAVE2.md` through `LIVE_REPO_REVIEW_WAVE4.md` — live cross-program reviews.
+- `literature/SOURCE_LEDGER.md` and wave supplements — only located sources, with inspection level.
+- `literature/CLAIM_CROSSWALK.md` and `literature/claim-maps/` — branch-qualified mappings.
+- `literature/APPLICABILITY_AUDITS.md` — theorem-hypothesis checks and nonapplications.
+- `literature/UNVERIFIED.md` and wave supplements — honest source and applicability gaps.
+- `literature/imported-theorems/` — 41 atomic statements/proofs/black-box boundaries.
+- `literature/topic-notes/` — reusable research maps.
+- `literature/references*.bib` — bibliographic records.
+- `literature/check_literature*.py` — mechanical integrity checks.
 
 ## Process recommendation pending owner approval
 
