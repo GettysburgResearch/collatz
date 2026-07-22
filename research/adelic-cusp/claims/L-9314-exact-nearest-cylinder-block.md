@@ -22,24 +22,20 @@ Fix coprime integers
 and binary digits
 
 \[
-\varepsilon_0,\ldots,\varepsilon_K.
+e_0,\ldots,e_K.
 \]
 
 Put
 
 \[
-\boxed{
-d_i=\varepsilon_i-\varepsilon_{i+1}
-\in\{-1,0,1\}.}
+\boxed{d_i=e_i-e_{i+1}\in\{-1,0,1\}.}
 \tag{1}
 \]
 
 The nearest-integer recurrence is
 
 \[
-\boxed{
-M B_{i+1}=N B_i+d_i.
-}
+\boxed{M B_{i+1}=N B_i+d_i.}
 \tag{2}
 \]
 
@@ -59,7 +55,7 @@ R_K
 \equiv
 -
 \sum_{i=0}^{K-1}
- d_i M^i N^{-(i+1)}
+d_i M^i N^{-(i+1)}
 \pmod{M^K}.
 }
 \tag{3}
@@ -99,14 +95,13 @@ It is determined exactly by
 \boxed{
 q_K
 \equiv
--N^{-(K+1)}
-\left(NC_K+d_K\right)
+-N^{-(K+1)}(NC_K+d_K)
 \pmod M.
 }
 \tag{6}
 \]
 
-The residue on the right is read in the standard range `0,...,M-1`, so `(6)` is an equality specification for `q_K`.
+The residue on the right is read in `0,...,M-1`, so `(6)` specifies the ordinary integer `q_K` uniquely.
 
 The new terminal value is
 
@@ -134,7 +129,7 @@ qN^K.
 \tag{8}
 \]
 
-Indeed the homogeneous multiplier across `K` steps is `(N/M)^K`, and the factor `M^K` in the initial perturbation cancels the denominator.
+Indeed, the homogeneous multiplier across `K` steps is `(N/M)^K`, and the factor `M^K` cancels its denominator.
 
 Thus the candidate terminal state before the new transition is
 
@@ -150,9 +145,9 @@ N(C_K+qN^K)+d_K
 \tag{9}
 \]
 
-Because `N` is a unit modulo `M`, equation `(9)` has exactly one solution `q mod M`. Solving gives `(6)`. Division of the numerator in `(9)` gives `(7)`.
+Since `N` is a unit modulo `M`, equation `(9)` has one solution `q mod M`. Solving gives `(6)`, and division of the numerator gives `(7)`.
 
-Formula `(3)` follows by solving `(4)` modulo `M^K`, again using that `N` is a unit. QED.
+Formula `(3)` follows from `(4)` modulo `M^K`. QED.
 
 ## 4. Zero-block criterion
 
@@ -162,8 +157,7 @@ The cylinder does not move at extension `K` exactly when
 \boxed{
 q_K=0
 \iff
-NC_K+d_K
-\equiv0\pmod M.
+NC_K+d_K\equiv0\pmod M.
 }
 \tag{10}
 \]
@@ -180,7 +174,7 @@ An infinite itinerary selects an ordinary nonnegative nearest integer exactly wh
 
 ## 5. The `64 -> 81` specialization
 
-Put
+Set
 
 \[
 M=64,
@@ -195,7 +189,7 @@ Then
 q_K
 \equiv
 -81^{-(K+1)}
-\left(81C_K+arepsilon_K-arepsilon_{K+1}\right)
+(81C_K+e_K-e_{K+1})
 \pmod{64}.
 }
 \tag{11}
@@ -214,9 +208,7 @@ the zero-block cases are
 \[
 \boxed{
 \begin{array}{c|c|c}
-(\varepsilon_K,\varepsilon_{K+1})
-&d_K
-&C_K\pmod{64}\text{ required for }q_K=0\\
+(e_K,e_{K+1})&d_K&C_K\pmod{64}\text{ required for }q_K=0\\
 \hline
 (0,0),(1,1)&0&0\\
 (1,0)&1&15\\
@@ -230,45 +222,34 @@ This is the same three-state table appearing in `L-9312`, now attached to the te
 
 ## 6. One-step uniqueness of an unchanged cylinder
 
-For a fixed prefix through `epsilon_K`, the two choices of `epsilon_(K+1)` change `d_K` by one. Therefore their block digits satisfy
+For a fixed prefix through `e_K`, the two choices of `e_(K+1)` change `d_K` by one. Their block digits therefore satisfy
 
 \[
 \boxed{
 q_K^{(1)}-q_K^{(0)}
-\equiv
-81^{-(K+1)}\pmod{64}.
+\equiv81^{-(K+1)}\pmod{64}.
 }
 \tag{13}
 \]
 
-The right side is a unit. Consequently:
+The right side is a unit. Consequently,
 
 \[
 \boxed{
-\text{At most one of the two one-digit extensions can have }q_K=0.
+\text{at most one of the two one-digit extensions can have }q_K=0.
 }
 \tag{14}
 \]
 
 A hypothetically stabilizing itinerary is therefore uniquely forced at every stage after stabilization begins.
 
-This does not yet imply periodicity: the forcing rule still depends on the unbounded terminal integer `C_K`.
+This does not imply periodicity: the forcing rule still depends on the unbounded terminal integer `C_K`.
 
 ## 7. Completion interpretation
 
-The digits `(q_K)` are the base-`M` digits of the completion point selected by the itinerary:
+The digits `(q_K)` are the base-`M` digits of the inverse-limit nearest integer selected by the itinerary. For `M=64`, this is the `2`-adic point of `L-9313`.
 
-\[
-\boxed{
-B_0^*
-=R_1+q_1M+q_2M^2+\cdots
-}
-\tag{15}
-\]
-
-with the indexing adjusted by the first chosen cylinder.
-
-For `M=64`, this is the `2`-adic nearest integer in `L-9313`. Eventual zero of `(q_K)` is precisely ordinary stabilization.
+Eventual zero of `(q_K)` is exactly ordinary stabilization.
 
 ## 8. Cross-program relationship
 
@@ -279,11 +260,11 @@ For `M=64`, this is the `2`-adic nearest integer in `L-9313`. Eventual zero of `
 - the unused quotient is transported by an odd affine map;
 - ordinary closure is eventual zero of the appended blocks.
 
-Here the centered errors supply an additional bounded real coordinate, and `(6)` supplies the exact appended digit without backward search.
+Here the centered errors provide a bounded real coordinate, and `(6)` gives the appended block without backward search.
 
 ## 9. Dependency audit
 
-- Finite-cylinder uniqueness and the completion criterion are from `L-9313`.
+- Finite-cylinder uniqueness and stabilization are from `L-9313`.
 - Equations `(4)`--`(9)` are direct affine iteration.
 - No Fourier theorem, computation, external Diophantine theorem, PR #20 claim, or issue-#4 unmerged theorem is used.
 
@@ -292,11 +273,11 @@ Here the centered errors supply an additional bounded real coordinate, and `(6)`
 - Formula `(6)` does not prove infinitely many nonzero blocks.
 - The terminal values `C_K` are unbounded state; the three residue cases do not close at a finite level.
 - One uniquely forced stabilizing continuation could in principle remain aperiodic.
-- A long zero-block run is a long ordinary finite survivor, which is abundant at finite depth.
+- A long zero-block run is merely a long ordinary finite survivor, which is abundant at finite depth.
 - Translation to all possible Collatz counterexamples remains separate.
 
-## 11. Suggested next attack
+## 11. Correct next attack
 
 Assume `q_K=0` from some point onward. Then `(12)` forces the future digit from `C_K mod64`, while `(7)` reduces to one ordinary expanding recurrence.
 
-Seek an invariant of the forced orbit—return-word repetition, a reduced shifted-value determinant, or a phase-crossing law—that contradicts indefinite zero blocks.
+Seek an invariant of that forced orbit—return-word repetition, a reduced shifted-value determinant, or a phase-crossing law—that contradicts indefinite zero blocks.
