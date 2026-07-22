@@ -2,11 +2,14 @@
 
 Last updated: 2026-07-22
 
-There is currently **no candidate positive integer**, no regular sanctuary, and no finite symbolic construction proved to define an infinite positive-integer Collatz trajectory.
+There is currently **no candidate positive integer**, no regular sanctuary, and
+no finite symbolic construction proved to define an infinite positive-integer
+Collatz trajectory.
 
 # Certificate boundary
 
-A valid candidate must begin with one explicit finite positive integer and replay its unique deterministic shortcut-Collatz trajectory forever.
+A valid candidate must begin with one explicit finite positive integer and
+replay its unique deterministic shortcut-Collatz trajectory forever.
 
 The following do not constitute a candidate:
 
@@ -16,135 +19,153 @@ The following do not constitute a candidate:
 - an unmarked expanding population;
 - a compiled connector-prefix stream;
 - a large residual bit budget;
-- a real shrinking-target room without exact marked replay.
+- a transcendental real room without exact marked replay;
+- finitely many successful Hensel blocks.
 
-Finite-state regular marked grammars belong to PR #12 by `L-0015` and `T-0020`. The phase-34 route remains genuinely nonregular because its scale, block lengths, and canonical correction precision are unbounded.
+# What a hypothetical candidate now looks like
 
-# Current candidate architecture
+`T-0031` eliminates the free positive Montgomery quotient.  Every late stage
+must sit exactly on its canonical correction.
 
-The free positive Montgomery quotient has been eliminated by `T-0031`. Every ordinary infinite corrected-stage realization must eventually sit exactly on its canonical stage correction:
+`T-0037` and `T-0038` reduce the eventual room frontier to at most 64 real
+constants, each transcendental and each determining at most one eventual
+trajectory.
 
-\[
-z_m=R_m,
-\]
-
-and obey
-
-\[
-\boxed{S_m(w_m)=R_{m+1}(w_{m+1}).}
-\]
-
-A future candidate state should therefore record
+A future candidate state is therefore no longer an independently chosen
+256-symbol word.  It is best represented as
 
 \[
-\boxed{(m,w_m,R_m,n_m,C_\infty),}
+\boxed{(C_\infty,m,\rho_m,h_m,n_m),}
 \]
 
 where:
 
+- `C_infinity` is one of at most 64 possible transcendental rooms;
 - `m` is the scale;
-- `w_m` is a proof-carrying stage word, preferably represented through PR #34's collar/triple-seam graph;
-- `R_m` is the canonical ordinary stage correction;
-- `n_m` is one explicitly marked positive Collatz state;
-- `C_infinity` is the fixed real room forced by `T-0033`.
+- `rho_m` is the unique three-symbol canonical address;
+- `h_m` is its six-bit Hensel output lift;
+- `n_m` is one explicitly marked positive Collatz state.
 
-The variables are not independent.
+All later stage symbols, residuals, collars, and triple seams must be decoded
+from these data and the exact deterministic recurrence.
 
-## Canonical stitch
+# Atomic stage-entry obligation
+
+For a three-symbol prefix `(a,b,c)`, let
 
 \[
-S_m(w_m)=R_{m+1}(w_{m+1}).
+[-\tau_mN_m^{-1}]_{64M_m}
+=ho_m+M_mh_m.
 \]
 
-## Scaled ordinary-tail equation
-
-For
+Define
 
 \[
-W_m=p_{i_{m,0}}+64h_m,
+q_m=\left\lfloor{64\rho_m\over M_m}\right\rfloor.
 \]
 
-`L-0031` gives
+`T-0039` proves that every actual room eventually requires
 
 \[
-2^{\mathcal E_m}W_{m+1}
-=
-3^{\mathcal A_m}W_m
-+
-\sum_{k=0}^{255}
-2^{U_{m,k}+\alpha_{i_k}}
-3^{V_{m,k}+\beta_{i_k}}.
-\]
-
-## Fresh-prime obligation
-
-`T-0032` proves that the prime support of the boundary words `W_m` must be infinite. Any finite-prime multiplicative schema is excluded.
-
-## Fixed-room obligation
-
-`T-0033` gives one fixed real number `C_infinity` with
-
-\[
-W_m=\lfloor C_\infty H_m\rfloor,
-\]
-
-\[
-0<\{C_\infty H_m\}
-<{216\over3^{7(2^m+1)}}.
-\]
-
-## Canonical residual floor
-
-After quotient extinction, `T-0034` gives
-
-\[
-R_m=\lfloor C_\infty J_m\rfloor,
+\boxed{q_m=0}
 \]
 
 and
 
 \[
-\{C_\infty J_m\}
-=
-{X_m\over64T_m^{\rm head}}
-+
-{\varepsilon_m\over64T_m^{\rm head}},
+\boxed{[-N_mh_m]_{64}\in\{5,30,20,56\}.}
 \]
 
-where `X_m` is the exact first-connector binary word and the second term is doubly-exponentially small.
+These are adjacent six-bit blocks of the same exact lifted inverse.  The first
+says the ordinary address lies in the bottom `1/64` of its cylinder.  The second
+says the canonical three-step output has one valid next tower type.
 
-Thus a candidate must make one real orbit, one dyadic connector address, one finite seam path, and one fresh-prime ordinary sequence agree at every scale.
+A candidate must satisfy this twelve-bit condition at every sufficiently late
+scale, then pass the remaining 84 triple seams and the terminal collar.
 
-# Preferred proof-carrying format
+# Room and arithmetic obligations
 
-A future `K-####` file should contain:
+## Fixed-room floors
+
+For explicit scales `H_(m,j)` and `J_(m,j)`, the candidate must satisfy
+
+\[
+W_{m,j}=\lfloor C_\infty H_{m,j}\rfloor,
+\qquad
+z_{m,j}=\lfloor C_\infty J_{m,j}\rfloor.
+\]
+
+## Three-place type synchronization
+
+The same type must be recovered from:
+
+\[
+v_2(W_{m,j}),
+\]
+
+\[
+v_3(W_{m,j+1}),
+\]
+
+and the real defect digit
+
+\[
+\left\lfloor
+3^{7(t_{m,j}+1)}
+\{C_\infty H_{m,j}\}
+\right\rfloor
+\in\{9,54,36,24\}.
+\]
+
+## Fresh-prime obligation
+
+`T-0032` proves that the prime support of the ordinary boundary words must be
+infinite.  A candidate must generate fresh primes from finite arithmetic; it
+may not assume an infinite prime oracle.
+
+## Exact stage stitch
+
+Every complete stage must obey
+
+\[
+S_m=R_{m+1}.
+\]
+
+The room and two-block conditions are necessary entry filters, not substitutes
+for the middle bridge and final stitch.
+
+# Preferred `K-####` format
+
+A future candidate file must contain:
 
 1. one explicit finite starting integer `n_0`;
-2. a finite initialization scale and exact initial canonical correction;
-3. a deterministic rule producing every later stage word;
-4. proof that every local tower and connector is the actual Collatz block;
-5. proof of every collar and triple-seam equality;
-6. proof that every stage output equals the next canonical correction;
-7. proof that the ordinary marker remains positive;
-8. proof that the fixed-room and connector-address identities hold;
-9. proof that required fresh primes are generated rather than assumed;
+2. one explicit initialization scale and room interval proving the room is the
+   one selected by `n_0`;
+3. a forward finite rule computing the source-specific Newton carry;
+4. proof of the adjacent twelve-bit condition at every later scale;
+5. proof that every decoded local type is the actual Collatz type;
+6. proof of all 84 triple seams and terminal/head collar equalities;
+7. proof that each stage output equals the next canonical correction;
+8. proof that the fresh primes are generated by the finite rule;
+9. proof that every ordinary marker remains positive;
 10. proof of unboundedness or permanent avoidance of the terminal cycle.
 
-# Leading constructive test
+# Exact finite evidence
 
-The most concrete current ansatz is to use the positive quadratic generator
+The portable `X-0017` replay verifies the filter at scales 12 and 13.  An
+independent GMP authoring audit extends it through scale 20.
 
-\[
-V_m={3^{7\cdot2^m}-1\over2^{m+2}},
-\]
+The allowed-output counts are
 
-\[
-V_{m+1}=V_m+2^{m+1}V_m^2,
-\]
+```text
+m : 12 13 14 15 16 17 18 19 20
+n :  5  3  4  6  3  4  5  2  5
+```
 
-as a source of forward-generated bits and fresh prime support. It must be coupled to one exact collar or triple seam; bit length alone is not useful.
+but none of those allowed prefixes has `q_m=0`.  Thus no audited scale contains
+even the atomic room-entry pattern.
 
-A viable construction might use a finite affine or mixed-radix transform of `V_m`, but it must satisfy the canonical stitch exactly, not approximately.
+This is finite evidence only and does not define a candidate.
 
 # Routes excluded as complete candidates
 
@@ -153,11 +174,16 @@ A viable construction might use a finite affine or mixed-radix transform of `V_m
 - finite high-tail libraries with affine counter updates;
 - finite-state regular marked grammars;
 - a permanently positive free stage quotient;
-- fixed finite-prime S-unit endpoint schemas;
+- fixed finite-prime endpoint schemas;
+- fixed polynomial transforms of the quadratic bulk;
 - positive information surplus without exact routing;
-- a fixed real room without canonical dyadic hits;
+- a room classification without the twelve-bit condition;
 - an infinite completion point without one finite ordinary marker.
 
 # Current verdict
 
-The route has not produced a candidate integer. It has reduced the existential burden to a sharply constrained exceptional path. A genuine candidate must solve the cap-seam, fresh-prime, and adelic shrinking-target conditions simultaneously from finite data.
+The route has not produced a candidate integer.  It has reduced the first
+unresolved physical decision to one source-specific twelve-bit Hensel pattern
+and reduced the entire eventual room set to at most 64 transcendental constants.
+A genuine candidate must now solve that pattern, the later seams, fresh-prime
+creation, and exact marked replay from finite data.
