@@ -47,11 +47,11 @@ the numbers `1,f_q(y_1),...,f_q(y_D)` have a quantitative `Q`-linear-independenc
 
 ## S54 — Bugeaud, two m-adic logarithms
 
-**Record:** Yann Bugeaud, *Linear Forms in Two m-adic Logarithms and Applications to Diophantine Problems*, Compositio Mathematica 143 (2007), no. 2, 461–480.
+**Record:** Yann Bugeaud, *Linear Forms in Two m-adic Logarithms and Applications to Diophantine Problems*, Compositio Mathematica 132 (2002), no. 2, 137–158. DOI `10.1023/A:1015825809661`.
 
-**Inspected:** publisher theorem scope and metadata.
+**Inspected:** publisher abstract, journal metadata, and theorem scope.
 
-**Located content:** explicit estimates for linear forms in two `m`-adic logarithms with applications to exponential Diophantine equations.
+**Located content:** sharp explicit estimates for linear forms in two logarithms simultaneously at several non-Archimedean valuations, with applications to fractional parts of rational powers and exponential Diophantine equations.
 
 **Native use:** an older complementary source for the H near-Pillai and cap-stitch valuations. It does not replace the native reduction to an exact two-term logarithmic form.
 
