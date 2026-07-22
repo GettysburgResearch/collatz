@@ -18,6 +18,7 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `L-9309` | Lemma | `PROPOSED` | Lift-digit prefixes are residue classes modulo `81^L` | `L-9307`; elementary modular lifting |
 | `L-9310` | Lemma | `PROPOSED` | Completion-height rigidity for integral phase carries | elementary modular lifting and height separation |
 | `L-9311` | Lemma | `PROPOSED` | Repeated itinerary factors are orbit-difference zero-carry chains | `D-9302`; integer divisibility |
+| `L-9312` | Lemma | `PROPOSED` | Centered `81/64` orbits force a three-state four-phase `3/2` schedule | `T-9315`; residue arithmetic modulo `64` |
 | `T-9301` | Conditional theorem | `SUPERSEDED` | Conditional polynomial-window reduction | superseded by self-contained `T-9308` |
 | `T-9302` | Conditional theorem | `SUPERSEDED` | Conditional density-one full EQ | superseded by unconditional `T-9309` |
 | `T-9303` | Theorem | `PROPOSED` | Valuation-stratified fixed-frequency depth-period decay | `L-9304`; exact cosine-grid second moment |
@@ -32,17 +33,21 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
 | `T-9312` | Theorem | `PROPOSED` | Complete weighted EQ at every depth | `T-9311`, `T-9308`; harmonic splitting |
 | `T-9313` | Theorem | `PROPOSED` | Fixed-room equivalence and exact `C_j`/`R_j` minimum duality | `D-9302`, `D-9303`, `L-9301` |
 | `T-9314` | Theorem | `PROPOSED` | Exact depth-46 minimum survivor; ordinary rooms exceed `2^227` | `T-9313`, `X-9303` |
+| `T-9315` | Theorem | `PROPOSED` | Ordinary binary-chart orbits are exactly critical centered rational-power orbits | elementary nearest-integer arithmetic; `D-9302` crosswalk |
 | `R-9301` | Refutation | `PROPOSED` | Exact carry prefixes do not amplify to consecutive intervals | `L-9309` |
 | `R-9302` | Refutation | `PROPOSED` | Matching repetition/carry criticalities do not contradict | `L-9310`, `L-9311` |
 | `C-9301` | Historical conjecture | `SUPERSEDED` | Harmonic control of low-energy cylinders | superseded by `L-9310`, `T-9311`, `T-9312` |
 | `Q-9301` | Open question | `IDEA` | Integer-section intersection | `D-9302`; issue-#4 M1 translation |
-| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`, `L-9311`, `T-9312`--`T-9314` |
+| `Q-9302` | Open question | `IDEA` | Fixed-room and active-cylinder nonstabilization | `D-9302`, `D-9303`, `L-9310`, `L-9311`, `T-9312`--`T-9315` |
+| `Q-9303` | Open question | `IDEA` | Emptiness of the three-state scheduled centered `3/2` system | `T-9315`, `L-9312` |
 | `O-9301` | Observation | `EMPIRICAL` | Bounded polynomial-window scattering census | `X-9301` |
 | `O-9302` | Observation | `EMPIRICAL` | Bounded carry counts and zero-run census | `X-9302` |
 | `O-9303` | Observation | `INTERNAL EXACT COMPUTATION` | Exact dual minima and survivor replays through depth 46 | `X-9303` |
+| `O-9304` | Observation | `EMPIRICAL` | Exact finite-prefix centered reconstructions and phase schedules | `X-9304` |
 | `X-9301` | Experiment | `EMPIRICAL` | Exact cusp-scattering probe through depth 80 | standard-library exact modular arithmetic |
 | `X-9302` | Experiment | `EMPIRICAL` | Exact completion-height carry audit through depth 80 | standard-library exact modular arithmetic and fractions |
 | `X-9303` | Experiment | `INTERNAL EXACT COMPUTATION` | Meet-in-the-middle exact survivor-minimum certificate | exact modular subset sums and direct replay |
+| `X-9304` | Experiment | `EMPIRICAL` | Exact centered-power reconstruction and four-phase replay | standard-library integers and fractions |
 
 ## Status boundary
 
@@ -57,12 +62,20 @@ This is an isolated `93xx` namespace for issue #15. It is not a replacement for 
   \right\rceil.
   \]
 - `T-9314` and `X-9303` compute the exact first nontrivial depth-46 survivor and exclude every nontrivial infinite ordinary room through `2^227`.
+- `T-9315` gives a second exact ordinary-section equivalence:
+  \[
+  \Phi(\{0,1\}^{\mathbb N})\cap\mathbb Z_{\ge2}\ne\varnothing
+  \iff
+  \exists\xi>0:\ \|\xi(81/64)^n\|\le1/81\ \forall n.
+  \]
+  The ordinary orbit is reconstructed by `A_n=ceil(64 xi (81/64)^n)`.
+- `L-9312` expands the centered condition to a three-state four-phase schedule for the complete `3/2` orbit.
 - `L-9311` reconstructs PR #20's local repetition bound as an integral zero-carry theorem for differences of ordinary tail orbits.
 - `R-9302` closes the naive comparison of the identical repetition and phase-carry constants. They are one mechanism, not opposing budgets.
 - `T-9311` supplies deterministic low-frequency Fourier decay; `T-9308` supplies the high-frequency tail.
 - `T-9309` and `T-9310` remain independent depth-statistical cross-checks.
 - `T-9301`, `T-9302`, and `C-9301` are superseded, not refuted.
-- `Q-9301` remains open. A finite exact minimum, however large, is not an asymptotic nonintersection theorem.
+- `Q-9301` remains open. Neither an exact reformulation nor a finite exact minimum is an asymptotic nonintersection theorem.
 - No positive integer survivor, divergent orbit, cycle, or Collatz counterexample is claimed.
 
 ## Main implication graph
@@ -90,23 +103,28 @@ T-9311 pointwise decay on subexponential windows
              complete weighted EQ
 ```
 
-The ordinary-section chain is:
+The ordinary-section chain now has two exact presentations:
 
 ```text
 D-9302 integral tails + bounded real companion
    + D-9303 triadic past classes
    + L-9301 finite survivor coding
    |
-   v
-T-9313 fixed-room equivalence and exact minimum duality
-   |
-   + X-9303 exact MITM class minimum + direct survivor replay
-   |
-   v
-T-9314 exact depth-46 minimum; no ordinary room <= 2^227
-   |
-   v
-Q-9301 prove min(R_j \ {0,1}) -> infinity
+   +------------------------------+
+   |                              |
+   v                              v
+T-9313 fixed-room             T-9315 centered
+and minimum duality           rational-power equivalence
+   |                              |
+   + X-9303 exact minimum          v
+   |                         L-9312 four-phase
+   v                         three-state 3/2 schedule
+T-9314 depth-46 bound              |
+   |                              v
+   +------------------------> Q-9303 scheduled-system emptiness
+                                  |
+                                  v
+                         Q-9301 ordinary-section nonintersection
 ```
 
 The cross-program method audit is:
@@ -121,19 +139,25 @@ R-9302 identical criticality does not double-count
 
 ## Generalization and literature crosswalk
 
-`L-9310` is stated for every coprime expanding chart `M<N`, with
+`L-9310` and `T-9315` are stated for every coprime expanding pair `M<N`. Their two critical quantities are complementary:
 
 \[
 \kappa_{M,N}
 =
 \frac{\log M}{\log(N/M)}
-=
-\frac1{\log_MN-1}.
 \]
 
-For `M=64`, `N=81`, `L-9311` proves why the same constant occurs in ordinary-code repetition rigidity: repeated factors are zero-carry chains in an orbit difference.
+controls zero-carry run length, while
 
-The literature branch supplied scope discipline: completion-versus-height methods are relevant; fixed-real Fourier, finite-state pressure, generic S-unit, and measure-rigidity theorems do not automatically close this moving ordinary-section problem.
+\[
+\|\xi(N/M)^n\|\le1/N
+\]
+
+is the exact centered ordinary-section condition for the binary chart.
+
+For `M=64`, `N=81`, `L-9311` explains the repetition constant and `L-9312` uses `81/64=(3/2)^4` to expose a scheduled `3/2` problem.
+
+The literature branch supplied scope discipline: completion-versus-height methods are relevant; fixed-real Fourier, finite-state pressure, generic S-unit, one-interval Mahler range, and measure-rigidity theorems do not automatically close this moving individual-orbit problem.
 
 ## Branch crosswalk
 
@@ -148,4 +172,6 @@ The issue-#4 room/Cantor crosswalk is:
 - one ordinary itinerary has a fixed room across every past/future splitting = `T-9313`;
 - finite Cantor minima transform exactly into finite survivor minima = `T-9313(18)`;
 - the depth-46 dual computation yields `T-9314`;
-- `Q-9302` targets monotone minimum divergence, coherent-minimum growth, and active-cylinder nonstabilization.
+- ordinary-section points are exactly positive critical centered `81/64` orbits = `T-9315`;
+- the complete `3/2` orbit follows the state-dependent schedule of `L-9312`;
+- `Q-9302` and `Q-9303` target monotone minimum divergence, cylinder nonstabilization, and scheduled centered-orbit nonexistence.
