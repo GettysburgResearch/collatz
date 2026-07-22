@@ -18,6 +18,7 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_06.md`](claims/ITERATION_06.md) — `L-9517`, `L-9518`, `T-9511`, `T-9512`, `Q-9507`.
 - [`claims/ITERATION_07.md`](claims/ITERATION_07.md) — `L-9519`, `L-9520`, `T-9513`, `T-9514`, `R-9504`, `Q-9508`.
 - [`claims/ITERATION_08.md`](claims/ITERATION_08.md) — `L-9521`, `L-9522`, `T-9515`, `R-9505`, `Q-9509`.
+- [`claims/ITERATION_08B.md`](claims/ITERATION_08B.md) — `L-9523`, `R-9506`, `Q-9510`.
 - [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact ordinary and short-period counterexample sweep.
 - [`../../experiments/X-9507-h-cycle-complexity/README.md`](../../experiments/X-9507-h-cycle-complexity/README.md) — exact continued-fraction cycle-period certificate.
 
@@ -78,6 +79,9 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `L-9522` | Finite-alphabet entropy--capital barrier | PROPOSED | `T-9502`, `L-9515` |
 | `R-9505` | Low-complexity slow-bank templates are impossible | PROPOSED | consequence of `L-9522` |
 | `Q-9509` | Structured counterexample interface | IDEA | high-entropy finite alphabet or unbounded reset--renewal |
+| `L-9523` | Prefix-return capital barrier | PROPOSED | `T-9502`, exact repeated-factor divisibility |
+| `R-9506` | Short-return substitutions require excessive capital | PROPOSED | consequence of `L-9523` |
+| `Q-9510` | Delayed-novelty structured counterexample interface | IDEA | exact carry stabilization remains mandatory |
 | `X-9506` | Exact counterexample-first ordinary and short-period sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no word cycle through period 14 |
 | `X-9507` | Exact cycle-period compression certificate | INTERNAL EXACT | finite only; supports `T-9515` |
 
@@ -110,9 +114,12 @@ Iteration 08 attacks structured counterexamples directly:
    intervals, and Legendre compression to exclude every positive cycle through
    `2,479,700,524` blocks;
 3. `L-9522` proves that a finite-alphabet survivor with logarithmic capital
-   growth must have a quantitatively positive factor entropy;
-4. `R-9505` excludes logarithmically banked Sturmian, Beatty, automatic, and
-   primitive-substitution templates of zero entropy.
+   growth must have quantitatively positive factor entropy;
+4. `L-9523` proves that every early symbolic return consumes a proportional
+   capital wall and excludes all `{2,3}` prefix-return constants at most 84;
+5. `R-9505` and `R-9506` close the natural slow-bank and short-return
+   Sturmian/Beatty/automatic/substitution architectures once their native
+   complexity or recurrence constants are supplied.
 
 `X-9506` exhausts every ordinary candidate below `3*2^65`; its largest exact
 block lifetime is thirty-four. `X-9507` upgrades the periodic exclusion from
@@ -120,8 +127,8 @@ word period fourteen to more than 2.47 billion blocks by a proof-producing
 continued-fraction certificate.
 
 No structured counterexample has been found. A viable one must now be
-nonperiodic and either have sufficiently high finite-alphabet entropy and
-capital growth, or use unbounded reset--renewal letters while satisfying the
-fresh-prime and discounted-budget restrictions. It must additionally provide
-one positive integer initialization with an exact induction proving legality
-and nontermination.
+nonperiodic, generate sufficiently delayed symbolic novelty, satisfy the
+factor-entropy and return-capital bounds, inject infinitely many fresh bridge
+primes, and still provide one positive integer whose extension carries are
+eventually zero. The other remaining architecture uses unbounded reset--renewal
+letters subject to the deficit-pressure and discounted-budget restrictions.
