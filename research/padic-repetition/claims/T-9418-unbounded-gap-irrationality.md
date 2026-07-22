@@ -1,157 +1,96 @@
-# T-9418 — Unbounded-gap binary `64/81` series are irrational
+# T-9418 — Withdrawn unbounded-gap irrationality claim
 
 Claim ID: `T-9418`  
-Title: A rational binary `64/81` series with infinite support must have bounded gaps between its ones  
-Status: `PROPOSED`  
+Title: The attempted deduction from unbounded gaps to irrationality conflated real and `2`-adic limits  
+Status: `WITHDRAWN — INVALID PROOF; STATEMENT OPEN`  
 Authoring agent: `gpt56-complexity-01`  
-Reviewing agents: none  
 Created: 2026-07-22  
-Last updated: 2026-07-22  
-Dependencies: `L-9416`  
-Scope: every infinite binary code and the ordinary `64 -> 81` section  
-Related counterexample candidates: issue #4 M1; no `K-####` candidate
+Withdrawn: 2026-07-22  
+Dependencies audited: `L-9416`  
+Scope: method correction for binary `64/81` series  
+Related counterexample candidates: none
 
-## Setup
+## Withdrawn statement
+
+The previous version claimed that a binary `64/81` series with infinite support
+and unbounded gaps could not have a rational `2`-adic value.
+
+That conclusion is **not proved**.
+
+## First invalid inference
 
 Let
 
 ```text
-T=64/81
+Y_(j,N)=sum_(k=j)^N (64/81)^[h_k-h_j].                (1)
 ```
 
-and let a binary word have infinitely many ones at positions
+These rational partial sums converge in both `R` and `Q_2`, but generally to
+two different completion values:
 
 ```text
-0<=h_0<h_1<h_2<... .
+Y_j^(infinity)=lim_N Y_(j,N) in R,
+Y_j^(2)       =lim_N Y_(j,N) in Q_2.                  (2)
 ```
 
-Put
+`L-9416` concerns the rationality and reduced denominators of `Y_j^(2)`.
+The geometric estimate
 
 ```text
-Psi
- =sum_(j>=0) T^h_j
- in Z_2 intersect R,                                   (1)
+1<Y_j^(infinity)<=1/(1-64/81)                         (3)
 ```
 
-and let
+concerns `Y_j^(infinity)`.
+
+The withdrawn proof silently identified the two values and applied (3) to the
+rational `2`-adic tail. No such identification was established.
+
+A rational sequence can converge to different rational limits in the two
+completions. For example,
 
 ```text
-g_j=h_(j+1)-h_j.                                      (2)
+x_N=2^N/(1+2^N)
 ```
 
-## Theorem
+tends to `1` in `R` and to `0` in `Q_2`.
 
-If `Psi` is rational, then the set of gaps
+## What remains valid
+
+`L-9416` is valid after its completion convention is made explicit:
 
 ```text
-{g_j:j>=0}
+rational 2-adic one-tail
+ -> every later reduced denominator divides the initial denominator.        (4)
 ```
 
-is bounded.
+But (4) does not bound the ordinary numerators of those rational values. Hence
+it does not give a finite rational state set or a real limit-point
+contradiction.
 
-Equivalently,
+## Current status of the mathematical statement
 
-```text
-boxed:
-sup_j g_j=infinity
- -> Psi notin Q.                                      (3)
-```
-
-For the standard code map
-
-```text
-Phi(epsilon)=(17/81)Psi,                              (4)
-```
-
-the same conclusion holds. Hence every nontrivial ordinary rational or integer `64 -> 81` code with infinitely many ones has a uniform bound on the lengths of its zero runs.
-
-## Proof
-
-Normalize at each one:
-
-```text
-Y_j
- =sum_(k>=j)T^[h_k-h_j].                              (5)
-```
-
-Then
-
-```text
-Y_j=1+T^[g_j]Y_(j+1).                                 (6)
-```
-
-If `Psi` is rational, then `Y_0=T^(-h_0)Psi` is rational, and (6) makes every `Y_j` rational. By `L-9416`, the reduced denominator of every `Y_j` divides one fixed positive odd integer `B`.
-
-Every gap after the leading one is at least one, so the positive real series satisfies the uniform bound
-
-```text
-1<Y_j<=sum_(n>=0)T^n=1/(1-T).                         (7)
-```
-
-Equation (6) therefore gives
-
-```text
-0<Y_j-1
- =T^[g_j]Y_(j+1)
- <=T^[g_j]/(1-T).                                     (8)
-```
-
-If the gaps are unbounded, choose a subsequence with `g_(j_k)->infinity`. Then
-
-```text
-Y_(j_k)->1                                             (9)
-```
-
-in the real embedding.
-
-On the other hand, `Y_j` is a rational with reduced denominator dividing `B`, and `Y_j!=1` by positivity of the infinite tail. Therefore
-
-```text
-|Y_j-1|>=1/B                                          (10)
-```
-
-for every `j`, contradicting (9). This proves (3). Multiplication by the nonzero rational `17/81` proves the statement for `Phi`. **QED**
-
-## Sharpness of the hypothesis
-
-The theorem is one-sided.
-
-- Bounded gaps do occur for rational values: the all-one word gives `1/(1-T)`, and every eventually periodic binary word gives a rational value.
-- Finite support gives a rational value and has no infinite gap sequence.
-- Unbounded gaps, rather than low factor complexity or periodicity, are the decisive input.
-
-Thus the theorem does not classify all rational binary `64/81` series. It excludes precisely the sparse regime containing the active stack construction.
-
-## Relationship to earlier rigidity
-
-`T-9401` used one repeated factor to create an eventually periodic rational approximant of small height. The present theorem uses exact rationality of every one-tail and a descending denominator chain. It is therefore insensitive to raw factor complexity and survives the unbounded-padding phenomenon of `R-9401`.
-
-The conclusion supplies a new necessary condition for any ordinary M1 witness:
-
-```text
-infinite support + ordinary rationality
- -> bounded zero runs.                                (11)
-```
-
-It does not by itself exclude a dense, high-complexity ordinary survivor code.
+No counterexample to the withdrawn statement is supplied here. The statement
+may still be true, but its proof requires a new cross-completion height
+argument: an ordinary numerator bound, a trapped normalization, or a nonzero
+integer whose `2`-adic divisibility outruns its archimedean height.
 
 ## Dependency audit
 
-- `L-9416` supplies fixed denominator divisibility.
-- The only real estimate is the geometric bound (7).
-- No external theorem, finite computation, density assumption, or automaticity hypothesis is used.
+- The invalid step is wholly downstream of `L-9416`.
+- No earlier Padé, repetition, demand-tree, or source-dependent theorem is
+  affected.
+- `T-9419`, `T-9420`, and `T-9421` depended on the same completion conflation and
+  are withdrawn separately.
 
-## Gap audit
+## Process lesson
 
-- The code must have infinitely many ones. A finite-support code is outside the theorem.
-- The proof relies on the positive digit alphabet `{0,1}`. Signed cancellation could destroy (8).
-- Bounded gaps are necessary, not sufficient, for rationality.
-- The theorem constrains M1 but does not settle the full survivor attractor.
-
-## Adversarial tests
-
-`X-9413` checks the exact recurrence, denominator descent, geometric upper bound on finite tails, and bounded-gap rational controls.
+Whenever one rational sequence is evaluated in two completions, the repository
+must name the completion-specific limits separately. Equality may be used only
+for a finite expression or after eventual periodicity/rational-function
+representation has already been proved independently.
 
 ## Suggested next attack
 
-Apply (3) to the sparse stack normal form of `L-9407`. Its successive gaps are `9m_t+1` and diverge under every positive height-increment directive. This gives a source-independent all-directive obstruction in `T-9419`.
+Use the exact denominator chain only as one coordinate in a genuine
+completion-height argument. Do not infer archimedean boundedness from positive
+real partial sums of the same formal series.
