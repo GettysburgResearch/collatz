@@ -1,123 +1,68 @@
 # Repository crosswalk, quarantines, and priorities
 
-## 1. Source-to-full-conjecture crosswalk
+## Source-to-full-conjecture crosswalk
 
-| Source | Program / result family | Full-conjecture role | Current standing | Exact remaining bridge |
+| Source | Program | Full-problem role | Current standing | Missing bridge |
 |---|---|---|---|---|
-| PR #1 | operating constitution | governance | merged | none |
-| Issue #2 / PR #3 | collision fibers, phase-\(-34\) towers, room/Hensel anatomy | source architecture and escape substrate | mixed proposed / empirical | frozen doubling class is closed by PR #33/#44; use only a genuine schedule/phase/rank escape |
-| Issue #4 | symbolic amplifiers, M1/EQ, rigidity and fiber ladder | direct centered construction plus filters | mixed proposed / empirical | one positive ordinary survivor; finite cylinders/EQ alone are insufficient |
-| Issue #5 / PR #6 | termination/rewrite frontier | method obstruction | proposed / legacy-separated | no direct disproof edge |
-| Issue #7 / PR #13 | literature and native cross-branch theorem suite | source inputs and exact wave-7 reductions | source-audited plus native proposed results | keep source theorem, native reduction, and status distinct |
-| Issue #8 | conditioned \(3\)-adic resonance | possible divergent orbit | idea | coherent nested path stabilizing to one positive integer |
-| Issue #9 / PR #42 | compressed positive cycles; no bare congruence sanctuary | shortest finite disproof route | proposed theorem + exact finite packets | full-denominator critical-scale valuation word and replay |
-| Issue #10 / PR #12 | regular sanctuary | direct finite divergent certificate | proposed + bounded synthesis | one DFA with genuine word-boundary memory and exact closure |
-| PR #11 | affine ping-pong / highways | diagnostic and cycle overlap | mixed; some refuted | exact refund invariant or finite cycle certificate |
-| PR #14 | sink-stripped finite safety | sanctuary no-go for cofinite widenings | proposed + empirical | inter-depth invariant with infinite complement |
-| Issue #15 / PR #16 | adelic cusp, centered recurrence, ordinary section | centered direct lane and filters | proposed; selected chains independently verified | all-time ordinary zero-block/top-boundary decision |
-| PR #32 | independent ADEL review | confidence upgrade | independently verified at frozen source | integrate without extending scope |
-| Issue #17 / PR #19 | H exact frontier | direct divergent orbit through H embedding | proposed + exact finite packets | delayed-novelty/reset-renewal ordinary seed or full exclusion |
-| Issue #18 / PR #20 | complexity and Padé/value theory | filters centered/stack schedules | proposed + source-dependent | period-ten/common-content, then period-uniform S-adic passage |
-| Issue #21 | diagonal foundry | initially direct, then open-loop tail | finite-state novelty closed at proposed level | genuinely unbounded open-loop language plus ordinary realization |
-| Issue #22 | weak-arithmetic frontier | indirect structural cartography | idea | standard-integer transport theorem |
-| Issue #23 | generalized universality | indirect possible transport | idea | certified divergent witness preserved all the way to standard \(T\) |
-| Issue #24 | solution cone | exact third-component equivalence | proposed / empirical | construct or extract a third component |
-| Issue #25 | coverage deficit | exact nonconstructive disproof criterion | idea | rigorous \(C(x)<x\) |
-| Issue #26 / PR #35 | \(5x+1\) drift control | diagnostic/control map | proposed + exact finite evidence | theorem transporting a certificate to \(3x+1\), or use only as format control |
-| Issue #27 | spectral witness accounting | equivalent third-component route | idea | certified point-spectrum excess with faithful support extraction |
-| Issue #28 | duplicate cone issue | none | closed duplicate | none |
-| Issue #29 / PR #34 | cross-direction lemma forge | bridge/no-go library | proposed + exact checks/refutations | native promotion only after external review |
-| Issue #30 | foundations | common classical substrate | proved/proposed by row | no counterexample claimed |
-| Issue #31 / PR #33 | corrected-stage ordinary exclusion | negative theorem for frozen phase-\(-34\) class | independently verified at frozen source by PR #44; native integration pending | no search remains inside frozen class |
-| Issue #36 / PR #38 | global cartography | coordination | active | keep exact snapshot diffs and current map synchronized |
-| PR #37 | centered recurrence review and repair | confidence/status correction | independently verified frozen chain; one refutation and repair | reconcile claim-ID collision before integration |
-| Issue #39 | cross-cycle room handoff | direct multi-phase construction | exact finite evidence / idea | repeated phase exits/returns or finite return; permanent phase 1 is shifted Collatz |
-| Issue #40 / PR #44 | centered PDR + PR #33 review | method closure and positive one-counter target | independent review + proposed native PDR theorem | canonical top-boundary/finite-support invariant or seed |
-| Issue #41 / PR #45 | critical mechanical cycle synthesis | direct finite cycle | proposed + exact rejected near-candidate | full denominator, not selected factors |
-| Issue/PR #42 | cycle windows and congruence sanctuary no-go | direct finite cycle + sanctuary filter | proposed + exact finite computation | critical-scale unrestricted word or richer DFA sanctuary |
-| Issue #43 | linear-height quotient refund | strongest new divergent-stage architecture | exact finite transition theorem; two active attempts | causal invariant `ACL-P036` with top-boundary locality |
-| PR #44 | independent frozen-class review / centered ghost graph | confidence upgrade and method closure | passed frozen review; proposed centered PDR theorem | integration and height-augmented continuation |
-| PR #45 | critical mechanical compiler | direct finite cycle | proposed + rejected finite construction | full exponential-circuit equality |
-| Issue #46 / PR #47 | negative-cycle pulse offense | direct finite cycle grammar | proposed one-pulse reduction + exact finite scan | critical-scale distributed-pulse/cross-prime full-denominator circuit |
+| PR #3 | phase-`-34` towers and connectors | substrate for frozen and refund architectures | mixed proposed/empirical | only genuine schedule/phase/rank escapes remain constructive |
+| PR #13 | source audit + wave-7 native reductions | literature firewall and finite cycle/refund inputs | source-audited + native proposed | preserve source/native distinction |
+| PR #19 | H subsystem | direct divergent orbit by embedding | proposed + exact finite packets | delayed novelty/reset renewal or full exclusion |
+| PR #20 | Padé/complexity | centered/stack filters | proposed/source-dependent | period-10 common content and period-uniform passage |
+| PR #33 | frozen corrected-stage exclusion | negative theorem | independently verified at frozen source by PR #44 | native status integration only |
+| PR #34 | cross-direction forge | cycle/refund/centered no-gos and compilers | proposed; exact checkers | external review and compatible positive object |
+| PR #37 | centered review | confidence upgrade and repair | independently verified frozen chain | ID reconciliation |
+| PR #42 | cycle windows + congruence sanctuary | finite cycle and sanctuary filter | source proposed + source exact computation | PR #48 did not reproduce full T-8602 census |
+| PR #44 | PR #33 review + centered PDR | confidence upgrade and method closure | frozen review passed; centered theorem proposed | height/top-boundary continuation |
+| PR #45 | critical mechanical compiler | direct finite cycle | independently passed by PR #48 at frozen source | entire denominator equality |
+| PR #47 | one-pulse offense | direct finite cycle grammar | proposed + exact finite scan | distributed pulses at critical scale |
+| PR #48 | independent reviews + refund growth | confidence and selector boundary | proposed native results; PR45/T8601 passed | causal address/top boundary |
+| PR #49 | width-one refund decoder | strongest explicit divergent architecture | proposed theorem + exact finite checker | one forever-defined finite residual |
+| Issue #39 | cross-cycle handoff | multi-phase direct construction | exact finite evidence | permanent phase 1 is shifted Collatz; need returns |
+| Issue #40 | centered PDR | positive nonlinear one-counter target | PR #44 | canonical top closure |
+| Issue #43 | quotient refund | direct unbounded orbit | PRs #48–#49 active | `ACL-P036` |
+| Issue #46 | multi-pulse offense | direct finite cycle | active two-pulse attempt | `ACL-P037` |
+| PR #12 | regular sanctuary | finite divergent certificate | proposed/bounded synthesis | DFA with genuine word-boundary memory |
+| Issues #24/#25/#27 | cone/coverage/spectrum | exact equivalent witnesses | idea/proposed/empirical | faithful third-component extraction |
 
-## 2. Refuted, superseded, closed, or secret-reduction routes
+## Closed or secret-reduction mechanisms
 
-| Shortcut | Status | Consequence |
+| Mechanism | Status | Consequence |
 |---|---|---|
-| \(81/64=(3/2)^4\) bridge | refuted/quarantined | use native \(81/64\) recurrence |
-| real-limit / rational-\(\mathbb Q_2\)-limit identification | refuted/withdrawn | use one completion-safe rational approximation object |
-| frozen corrected 256-stage ordinary completion | independently excluded at frozen source | do not continue seam/word search inside that class |
-| fixed-modulus centered PDR lasso | closed as witness mechanism | retain top boundary/height; modular SCC is a ghost |
-| permanent issue-#39 phase-1 tail as new amplifier | secret reduction | exactly shifted ordinary Collatz; require multi-phase returns |
-| bare invariant union of residue classes | proposed no-go | sanctuary needs canonical-word boundary memory |
-| autonomous bounded-state directive | proposed no-go | use unbounded arithmetic state |
-| one-pulse negative-cycle perturbation in frozen range | exact negative packet | use distributed pulses/multiple blocks at critical scale |
-| proper-denominator-factor mechanical join | insufficient | solve the entire denominator |
-| pure repeated accelerated block | primitive-root collapse | powers do not create a new cycle |
-| cycle SNF/cokernel reformulation | equivalent to \(D\mid C\) | no extra obstruction |
-| one-prime Zsigmondy obstruction | nonuniversal | use cross-prime order coupling |
-| scalar/sparse/delayed equal-phase Padé at period 10 | subcritical | require coupled common content or different system |
-| low-entropy short-return H template | proposed excluded under quantified bounds | viable H language needs delayed novelty/entropy or reset renewal |
-| raw `{30,60,70}` H return and finite descending suffixes | closed negatively | design a different H return |
-| ambient cone/spectrum without support extraction | methodologically insufficient | produce a third component |
+| frozen corrected doubling-stage completion | independently excluded | stop seam/word search inside class |
+| fixed-modulus centered lasso | completion ghost | retain top boundary |
+| finite control + zero-tested additive counter | ultimately periodic at proposed level | use nonlinear/changing-modulus or richer memory |
+| permanent cross-cycle phase 1 | shifted ordinary Collatz | require multi-phase returns |
+| bare congruence sanctuary | independently reviewed proposed no-go | use word-boundary memory |
+| one-pulse negative-cycle family in frozen range | exact negative packet | use distributed pulses |
+| <=6 non-2 valuations in positive cycle | proposed excluded | support floor now 7 |
+| proper denominator factor / near integer | insufficient | solve full denominator |
+| one-prime or global-order alias | nonuniversal/vacuous | use lossless cross-prime compatibility |
+| low-entropy short-return H grammar | proposed excluded under bounds | delayed novelty or reset renewal |
+| ambient cone/spectrum | no witness extraction | produce exact third component |
 
-## 3. Priorities by logical distance
+## Priorities by logical distance
 
-1. **Full-denominator positive cycle**
-   - critical mechanical circuit (`ACL-P039`);
-   - critical-scale distributed-pulse circuit (`ACL-P037`).
-2. **Regular sanctuary DFA**
-   - genuine canonical-word boundary memory;
-   - exact closure and nontriviality.
-3. **Centered height/top-boundary seed**
-   - PR #44 exact forced-tail dynamics;
-   - one-counter carry-flush invariant.
-4. **Linear-height quotient refund**
-   - canonical `ACL-P036`;
-   - pairwise transitions already supplied.
-5. **Multi-phase cross-cycle return**
-   - avoid permanent phase-1 secret reduction.
-6. **Positive H survivor**
-   - delayed novelty/entropy or unbounded reset renewal.
-7. **Equivalent third-component witness**
-   - coverage, cone, or spectral extraction.
+1. Full-denominator positive cycle (`ACL-P037`, `ACL-P039`).
+2. Boundary-memory sanctuary DFA.
+3. Forever-defined refund decoder (`ACL-P036`).
+4. Centered nonlinear top-boundary seed (`ACL-N077`).
+5. Multi-phase cross-cycle return (`ACL-N079`).
+6. Positive H survivor (`ACL-N080`).
+7. Equivalent third-component witness.
 
-## 4. Priorities by architectural leverage
+## Priorities by architectural leverage
 
-1. **Issue #43 quotient-refund invariant**
-2. **PR #45 critical mechanical full-denominator lifting**
-3. **Critical-scale distributed pulse with cross-prime state**
-4. **PR #44 centered top-boundary one-counter**
-5. **PR #19 delayed-novelty/reset-renewal frontier**
-6. **Issue #39 repeated multi-phase regeneration**
+1. PR #49 decoder infinite definedness.
+2. PR #45 full-denominator critical compiler.
+3. PR #34/issue #46 cross-prime distributed pulses.
+4. PR #44 centered nonlinear top-boundary machine.
+5. PR #19 delayed-novelty/reset-renewal.
+6. Issue #39 repeated multi-phase regeneration.
 
-## 5. Acceptance rules
+## Acceptance rules
 
-A positive result must finish with one of:
+A positive result must end in an explicit positive cycle, explicit positive all-time orbit, or exact equivalent witness. Finite prefixes, completion points, modular lassos, large quotients, expanding transitions without infinite definedness, proper-factor hits, and near-integer intervals do not count.
 
-```text
-explicit positive nontrivial cycle;
-explicit positive all-time orbit avoiding 1;
-exact third component / deficit witness.
-```
+## Next snapshot protocol
 
-The following are not completion certificates:
-
-- arbitrarily deep compatible prefixes;
-- a unique \(2\)-adic point;
-- a modular lasso;
-- a large quotient;
-- a long finite orbit;
-- a proper-factor divisibility hit;
-- a near-integer interval;
-- a symbolic language without one ordinary initialization;
-- a stage transition whose next top boundary is supplied by future cylinder data.
-
-## 6. Next snapshot protocol
-
-1. Freeze exact SHAs for every materially used PR.
-2. Record issue-carried claims by comment ID or exact branch commit.
-3. Update the primary map, crosswalk, atom index, diagrams, and PR body together.
-4. Separate source status from global confidence and from distance to a disproof.
-5. Add refutations and secret reductions before ranking new construction paths.
-6. Preserve old snapshots; publish corrections as explicit reviewed replacements.
+Freeze exact SHAs, identify issue-carried claims, update map/crosswalk/atoms/diagrams/PR body together, add secret reductions before rankings, and preserve corrections as explicit replacements.
