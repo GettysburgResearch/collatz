@@ -3,26 +3,26 @@
 **Agent:** `gpt56-cylinder-01`  
 **Issue:** `#31`  
 **Namespace:** `97xx`  
-**Status:** all mathematical claims are `PROPOSED`; `X-9701` and `X-9702` are exact finite experiments only  
+**Status:** all mathematical claims are `PROPOSED`; experiments are exact finite checks only  
 **Created:** 2026-07-22  
-**Last updated:** 2026-07-22, stage-quotient exhaustion session
+**Last updated:** 2026-07-22, cap-chain height-collapse session
 
 ## Headline
 
-This packet now contains two completion-height results for classes cut from PR
+This packet now contains three completion-height results for classes cut from PR
 #3's four phase-`-34` cycle-padded tower types.
 
-### Direct dyadic boundary class
+### 1. Direct dyadic boundary class
 
 `T-9702` proves side **A** of the residue-cylinder dichotomy for the class using
 one direct connector from height `t` to `2t`. For every infinite four-type
 directive, the least initial representatives have infinitely many nonzero new
 blocks and the unique `Z_2` completion is not an ordinary integer.
 
-### Corrected composed 256-transition class
+### 2. Corrected composed 256-transition class
 
-`T-9703` reaches PR #3's genuinely supercritical corrected stage. It proves that
-any hypothetical ordinary nonnegative infinite stage trajectory eventually has
+`T-9703` reaches PR #3's genuinely supercritical corrected stage. Any
+hypothetical ordinary nonnegative infinite stage trajectory eventually has
 
 ```text
 Y_m = 0,
@@ -30,10 +30,29 @@ z_m = R_m,
 S_m = R_(m+1).
 ```
 
-Thus the free ordinary quotient cannot carry information forever. The remaining
-full-stage dichotomy is the exact cap-correction question `Q-9702`: exclude every
-infinite equality tail, or construct one with a finite symbolic rule and a
-separate finite marked initialization and growth proof.
+Thus the free ordinary quotient cannot carry information forever. The full-stage
+question becomes the exact cap-correction equality.
+
+### 3. Global height collapse on the cap chain
+
+`L-9703` proves the type-word-uniform normalized offset bound
+
+```text
+|beta_m| < 256 Lambda_m.
+```
+
+`T-9704` then proves that every surviving cap-correction chain satisfies
+
+```text
+limsup log_2(R_m+257)/D_m
+ <= 161341/44508739
+ < 1/275.
+```
+
+The ordinary correction therefore uses asymptotically less than `0.363%` of its
+complete cylinder precision. The remaining negative target is no longer a
+generic routing problem: it is an exceptionally strong structured p-adic
+approximation or product-formula problem.
 
 No result in this packet counts finite compatibility, a completed `Z_2` point,
 entropy surplus, counter-addressed prefixes, or preloaded logarithm digits as an
@@ -88,12 +107,12 @@ Hence every integral transition satisfies
 
 Every infinite signed integer trajectory would enter `{-1,0,1}`. For each trap
 value the next numerator lies strictly between `-M` and `0`, so no next integral
-transition exists. `L-9701` then converts this into infinitely many nonzero
+transition exists. `L-9701` converts this into infinitely many nonzero
 initial-cylinder blocks for every directive.
 
-## Composed-stage interface
+## Composed-stage interface and quotient exhaustion
 
-At scale `m>=8`, PR #3 `T-0027` gives one complete stage map
+At scale `m>=8`, PR #3 `T-0027` gives
 
 \[
 z_{m+1}
@@ -117,41 +136,102 @@ z_m=R_m+2^{D_m}Y_m,
 z_{m+1}=S_m+3^{A_m}Y_m.
 \]
 
-`L-9702` proves the missing finite height bound
+`L-9702` proves
 
 \[
 0\le S_m<3^{A_m}.
 \]
 
-Paying the next stage cylinder rather than only the current denominator gives
+Paying the next complete stage cylinder gives
 
 \[
-\frac{3^{A_m}}{2^{D_{m+1}}}<\frac14.
+\frac{3^{A_m}}{2^{D_{m+1}}}<\frac14,
 \]
 
-More exactly,
+more exactly
 
 \[
 \log_2\frac{3^{A_m}}{2^{D_{m+1}}}
 <
--\frac{22173699}{5248}2^m+\frac{1024}{41}.
+-\frac{22173699}{5248}2^m+rac{1024}{41}.
 \]
 
-Therefore, with `r_m=z_m/2^(D_m)`,
+With `r_m=z_m/2^(D_m)`,
 
 \[
-r_{m+1}<\frac{3^{A_m}}{2^{D_{m+1}}}(1+r_m).
+r_{m+1}<rac{3^{A_m}}{2^{D_{m+1}}}(1+r_m).
 \]
 
-While `r_m>=1` it more than halves, and below one it remains below one. Exact
-cylinder membership then forces eventual `Y_m=0` and the cap-correction equality
+While `r_m>=1` it more than halves; below one it stays below one. Exact
+membership forces eventual
 
 \[
-\boxed{S_m(w_m)=R_{m+1}(w_{m+1}).}
+\boxed{S_m(w_m)=R_{m+1}(w_{m+1}),
+\qquad Y_m=0.}
 \]
 
 The current stage is supercritical relative to its own denominator; the next
-stage's nearly squared modulus is what creates the completion-height drain.
+stage's nearly squared modulus creates the completion-height drain.
+
+## Cap-chain offset and global height
+
+Write one complete stage as
+
+\[
+z_{m+1}=\Lambda_mz_m+\beta_m,
+\qquad
+\Lambda_m=3^{A_m}/2^{D_m}.
+\]
+
+`L-9703` proves every local corrected-stage slope exceeds one and
+
+\[
+|\beta_m|<256\Lambda_m.
+\]
+
+On a cap-correction chain,
+
+\[
+R_{m+1}=\Lambda_mR_m+\beta_m.
+\]
+
+Since `Lambda_m>257`,
+
+\[
+R_{m+1}+257<\Lambda_m(R_m+257).
+\]
+
+The exact upper bound `log_2 3<65/41` gives
+
+\[
+\log_2\Lambda_m
+<
+\frac{161341}{10496}2^m+rac{1024}{41}.
+\]
+
+Consequently, for a chain beginning at `M`,
+
+\[
+\log_2(R_m+257)
+<
+\log_2(R_M+257)
++rac{161341}{10496}(2^m-2^M)
++rac{1024}{41}(m-M).
+\]
+
+Against `D_m`, this yields
+
+\[
+\boxed{
+\limsup
+\frac{\log_2(R_m+257)}{D_m}
+\le
+\frac{161341}{44508739}<\frac1{275}.}
+\]
+
+This is a height budget, not nonexistence. A closing theorem must identify the
+structured nonzero p-adic numerator, logarithmic form, or algebraic approximant
+whose valuation is forced by the cap chain.
 
 ## Claims
 
@@ -159,72 +239,56 @@ stage's nearly squared modulus is what creates the completion-height drain.
 - `L-9701` — unique finite cylinders and exact residue-block recurrence.
 - `T-9701` — general finite-trap contraction theorem.
 - `T-9702` — direct-boundary directives have infinitely many nonzero blocks.
-- `Q-9701` — historical broad transfer target, now narrowed by `T-9703`.
+- `Q-9701` — historical broad transfer target, now narrowed.
 - `X-9701` — exact direct-class derivation and independent physical replay.
 - `L-9702` — canonical finite composite caps remain below the odd multiplier.
 - `T-9703` — every ordinary corrected-stage trajectory exhausts its free quotient.
 - `Q-9702` — exclude or construct an infinite cap-correction chain.
 - `X-9702` — exact exponent, composite-cap, and quotient-exhaustion checks.
+- `L-9703` — type-uniform normalized stage-offset bound.
+- `T-9704` — factor-greater-than-275 cap-chain height collapse.
+- `X-9703` — exact expanding-offset and cap-chain height checks.
 
 See `CLAIM_INVENTORY.md` for status and dependencies.
 
 ## Exact remaining theorem
 
-A negative full-stage result may now prove simply that every admissible directive
-has infinitely many scales with
+A negative full-stage result must prove that every admissible directive has
+infinitely many scales with
 
 \[
 S_m(w_m)\ne R_{m+1}(w_{m+1}).
 \]
+
+The strongest current route is to express each fixed normalized stage word's
+correction equation as a finite p-adic exponential/logarithmic form and combine
+a uniform lower bound with the factor-275 height gap.
 
 A positive result must generate equality forever by a finite rule and still
 supply one explicit finite positive initialization, every physical transition,
 positivity, and growth. No `K-####` identifier is appropriate before all of
 those obligations are met.
 
-The equality is a very small target:
-
-\[
-0\le R_{m+1}=S_m<3^{A_m}
-\]
-
-inside a next cylinder of modulus `2^(D_(m+1))`, with relative height bounded by
-an exponentially small quantity in `2^m`.
-
 ## Verification
 
-### X-9701
+Run `X-9701`, `X-9702`, and `X-9703` from the repository root using the commands
+in their experiment READMEs. Each experiment has a separately written checker
+that does not import its derivation module.
 
-```bash
-python3 -B -m py_compile \
-  experiments/X-9701-dyadic-boundary-cylinders/derive.py \
-  experiments/X-9701-dyadic-boundary-cylinders/verify.py
+`X-9703` freezes:
 
-python3 -B experiments/X-9701-dyadic-boundary-cylinders/derive.py \
-  --output experiments/X-9701-dyadic-boundary-cylinders/results/canonical.json \
-  --summary experiments/X-9701-dyadic-boundary-cylinders/results/summary.txt
-
-python3 -B experiments/X-9701-dyadic-boundary-cylinders/verify.py \
-  --check-results experiments/X-9701-dyadic-boundary-cylinders/results/canonical.json
+```text
+stage coefficient rows: 25
+expanding composite chains: 82082
+independent expanding chains: 11403
+artificial cap steps: 224
+independent cap steps: 162
+asymptotic height ratio: 161341/44508739
+payload digest: 7131a6e74497002b4edd008deb4c3ff3adf5072b33995b21e88d13bd8f5d30b5
+all independent cap-chain height checks passed
 ```
 
-### X-9702
-
-```bash
-python3 -B -m py_compile \
-  experiments/X-9702-stage-quotient-exhaustion/derive.py \
-  experiments/X-9702-stage-quotient-exhaustion/verify.py
-
-python3 -B experiments/X-9702-stage-quotient-exhaustion/derive.py \
-  --output experiments/X-9702-stage-quotient-exhaustion/results/canonical.json \
-  --summary experiments/X-9702-stage-quotient-exhaustion/results/summary.txt
-
-python3 -B experiments/X-9702-stage-quotient-exhaustion/verify.py \
-  --check-results experiments/X-9702-stage-quotient-exhaustion/results/canonical.json
-```
-
-Both checkers are independently structured from their derivation scripts. The
-finite checks validate exact algebraic interfaces only; the infinite statements
+Finite checks validate exact algebraic interfaces only; the infinite statements
 come from the theorem proofs.
 
 ## Repository hygiene
