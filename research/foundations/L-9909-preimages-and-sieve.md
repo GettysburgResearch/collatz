@@ -1107,3 +1107,528 @@ reproducible in-repo computation.)
 ---
 
 *Signed: fable-02-p7, 2026-07-21.*
+
+---
+
+## Verification note (fable-02-v7, 2026-07-22)
+
+**Verdict: PASS.** Independent adversarial review per README §13. I restated every
+sub-claim, reconstructed all inline lemmas and proofs by hand without consulting the
+author's derivations until after my own were complete, independently recomputed every
+exact number in the file with my own scripts (different implementation strategy, exact
+integer/`Fraction` arithmetic), audited the logical role of the computations, and
+attempted refutation. Every recomputed value matches the file. No unsupported inference
+was found. Status upgraded PROPOSED to PROVED. (Per protocol this reviewer does not set
+INDEPENDENTLY_VERIFIED.)
+
+### 1. Independent restatement (as I verified it)
+
+* **.1** For odd $n \ge 1$: the odd $x$ with $S(x) = n$ are exactly
+  $x_k = (2^k n - 1)/3$ for $k \ge 1$ with $2^k n \equiv 1 \pmod 3$; each such $x_k$ is
+  automatically a positive odd integer with $\nu_2(3x_k + 1) = k$ exactly; $k \mapsto x_k$
+  is a strictly increasing bijection. $A(n)$ is empty iff $3 \mid n$; otherwise it is the
+  even $k \ge 2$ ($n \equiv 1$) or odd $k \ge 1$ ($n \equiv 2 \bmod 3$); preimage residues
+  mod 3 cycle $e_0, e_0{+}1, e_0{+}2, \dots$ with $e_0$ determined by $n \bmod 9$.
+* **.2** $K$ is closed forward under $C$, backward along $C$-orbits, and in particular
+  under $n \mapsto 2n$ and (when $n \equiv 2 \bmod 3$) $n \mapsto (2n-1)/3$; if
+  $K \neq \varnothing$ its minimum $\mu$ is odd, $\equiv 3 \bmod 4$, and satisfies
+  $T^j(\mu) \ge \mu$ for all $j \ge 1$, i.e. $\sigma(\mu) = \infty$.
+* **.3** On each class $r \bmod 2^k$ the length-$k$ word, $a_j$, $\rho_j$ are constants;
+  for $j \le k$: if $3^{a_j} \ge 2^j$ then $T^j > n$ on the whole class; else
+  $T^j(n) \lessgtr n$ exactly as $n \gtrless \rho_j/d_j$, $d_j = 2^j - 3^{a_j}$.
+  Survivor condition $a_j \ge \lceil j\gamma\rceil$ for all $j \le k$; if
+  $\sigma(n) > k$ then $n$'s class is a $k$-survivor or $n \le B_k$; $B_k$ nondecreasing;
+  $\mu > B_k$ forces $\mu$'s class to be a $k$-survivor.
+* **.4** Exact tables for $k \le 8$; X-9901 (all $n \le 10^6$ reach 1); the theorem: a
+  counterexample forces $\mu > 10^6$ and $\mu$ in the listed survivor classes, $k \le 8$.
+* **.5** Search programs may prune non-survivor classes ($k \le 8$ unconditionally,
+  otherwise above $B_k$); survivor density is nonincreasing, with equalities at
+  $2{\to}3$ and $5{\to}6$ in the computed range.
+
+### 2. Hand reconstruction of the author-flagged risk spots
+
+* **Lemma B exponent bookkeeping.** Assuming
+  $T^l(n') = T^l(n) + 3^{a_l(n)} 2^{k-l} m$ with $l < k$: the difference is
+  $2^{k-l} \cdot (3^{a_l} m)$ with $k - l \ge 1$, so Lemma A applies with $j = k-l$ and
+  perturbation integer $M = 3^{a_l} m$, giving parity equality $v_l(n') = v_l(n) =: v$
+  and $T^{l+1}(n') = T^{l+1}(n) + 3^{v} 2^{(k-l)-1} \cdot 3^{a_l} m
+  = T^{l+1}(n) + 3^{a_l + v} 2^{k-(l+1)} m$, and $a_l + v_l = a_{l+1}$ (D-9906).
+  Exponents check out exactly; both orbit points stay in $\mathbb{Z}^+$ so Lemma A's
+  hypotheses hold. I reconstructed this before comparing with the file; identical.
+* **Strict vs weak inequality at $n = \rho_j/d_j$.** From ($\ast$),
+  $2^j(T^j(n) - n) = \rho_j - d_j n$ with $d_j \ge 1$, so the sign of $T^j(n) - n$ is the
+  sign of $\rho_j/d_j - n$: a genuine trichotomy. Corollary item 2 uses only the
+  contrapositive of the strict branch: $T^j(n) \ge n \Rightarrow n \le \rho_j/d_j$ —
+  correct. The strictness cannot be improved: my recomputation found 32 integral
+  boundary witnesses $(k, r, j, n^\*)$ with $n^\* = \rho_j/d_j$ in the class and
+  $T^j(n^\*) = n^\*$ exactly, e.g. $T^2(1) = 1$ (class $1 \bmod 4$), $T^2(2) = 2$
+  (class $2 \bmod 4$), $T^4(1) = 1$ (class $1 \bmod 16$, $\rho_4 = 7$, $d_4 = 7$).
+* **Backward closure, case $i < j$.** If $n = C^j(m)$, $C^i(m) = 1$, $i < j$, then
+  $n = C^{j-i}(1)$ with $j - i \ge 1$; since $C(1)=4, C(4)=2, C(2)=1$, induction gives
+  $C^t(1) \in \{1,2,4\}$, so $n \in \{1,2,4\}$, each of which reaches 1, contradicting
+  $n \in K$. Complete; the orbit-past-1 case is genuinely covered (this is the spot
+  naive proofs omit).
+* **$\lceil j\gamma\rceil$ criterion including irrationality.** $2^s = 3^t$ with
+  $s \ge 1$ is impossible (even = odd); hence $\gamma = \log_3 2 \notin \mathbb{Q}$ (else
+  $2^s = 3^t$ with $s \ge 1$, possible since $\gamma > 0$), hence $j\gamma \notin \mathbb{Z}$
+  for $j \ge 1$. For integer $a \ge 0$: $3^a \ge 2^j \iff a \ge j\gamma$ (apply
+  $\log_3$) $\iff a > j\gamma$ (equality excluded) $\iff a \ge \lceil j\gamma\rceil$
+  (ceiling of a non-integer). Also $3^{a_j} = 2^j$ is impossible in (a), so the
+  descent/ascent dichotomy at each $j$ is exhaustive. All verified; additionally my
+  script checked on every class $r \bmod 2^k$, $k \le 8$, that the two survivor tests
+  ($3^{a_j} \ge 2^j$ vs $a_j \ge \min\{a : 3^a \ge 2^j\}$) agree.
+
+Beyond the flagged spots I also re-derived by hand: Lemma A (both parities); Lemma C
+(recursion, nonnegativity, and closed form $\rho_j = \sum_{i<j} v_i 3^{a_j - a_{i+1}} 2^i$,
+including the induction step); all of L-9909.1 including the full $n \bmod 9$ table
+(all six rows recomputed independently: $e_0 = (u_0-1)/3$, $u_0 = 2^{k_0} n \bmod 9$,
+values $1,2,0,1,0,2$ for $n \equiv 1,4,7,2,5,8 \bmod 9$ — identical to the file's) and
+the 3-cycle $u \mapsto 4u \bmod 9$ on $\{1,4,7\}$; (M)(i)-(iii) including legality of
+each $C$-step in (ii) and the $\mu \ge 5$ size comparison; the sub-lemma
+$T^j(n) \in O_C(n)$; Corollary items 1-4 (item 3's lift argument: the pair
+$(r \bmod 2^{k+1}, j)$ has the same length-$k$ word prefix by Lemma B, hence the same
+quotient, so the $B_k$ index set embeds value-wise into the $B_{k+1}$ one); and the
+two-lifts density argument of .5. Also checked by closed form, by hand:
+$\rho_4(0,0,1,1) = 12 + 8 = 20$, $d_4 = 7$; $\rho_5(0,0,1,1,1) = 36+24+16 = 76$,
+$d_5 = 5$; $\rho_8(0,0,0,1,1,1,1,1) = 648+432+288+192+128 = 1688$, $d_8 = 13$ —
+independently confirming the $B_4, B_5, B_8$ extremal data before running any code.
+
+### 3. Logical role of the computation (audit)
+
+The two computations enter the proof only as finite verification of finitely many exact
+statements, exactly as the file claims: (i) the survivor lists and $B_k$ ($k \le 8$) are
+evaluations of class constants whose well-definedness is proved computation-free
+(Lemmas B, C); 256 classes, $j \le 8$ — nothing sampled, nothing extrapolated. (ii)
+X-9901 verifies the decidable statement "every $n \le 10^6$ reaches 1 under $C$" by
+direct descent plus a strong induction whose base and step are written out and valid.
+I reconstructed the final implication myself before re-reading the file's version:
+if $K \neq \varnothing$ then $\mu := \min K$ exists ($\mathbb{Z}^+$ well-ordered); X-9901
+gives $K \cap [1, 10^6] = \varnothing$, so $\mu > 10^6$; L-9909.2(M)(iii)
+(computation-free) gives $\sigma(\mu) = \infty > k$; Corollary item 2 (computation-free)
+plus $B_k \le B_8 = 1688/13 < 130 < 10^6 < \mu$ (item 3 or the recomputed table) forces
+$\mu \bmod 2^k$ to be a $k$-survivor for each $k \le 8$. The memoized total-stopping-time
+bookkeeping in Script 3 is also sound: the orbit of $n \ge 2$ cannot hit 1 before first
+dropping below $n$ (since $1 < n$), so `steps[n] = c + steps[x]` is exactly the least
+$t$ with $C^t(n) = 1$. No hidden finite-to-infinite step anywhere.
+
+### 4. Independent recomputation — results side by side
+
+My scripts (Section 5) recompute everything from the statements alone: words are taken
+from several distinct representatives per class (checking Lemma-B locality empirically),
+and $\rho_j$ is computed three independent ways (orbit extraction
+$2^j T^j(n) - 3^{a_j} n$ on two representatives, the recursion, and the closed form) —
+all agreed on all classes.
+
+| $k$ | $\lceil k\gamma\rceil$ file / mine | #surv file / mine | density file / mine | $B_k$ file / mine | match |
+|---|---|---|---|---|---|
+| 1 | 1 / 1 | 1 / 1 | 1/2 / 1/2 | 0 / 0 | yes |
+| 2 | 2 / 2 | 1 / 1 | 1/4 / 1/4 | 2 / 2 | yes |
+| 3 | 2 / 2 | 2 / 2 | 1/4 / 1/4 | 2 / 2 | yes |
+| 4 | 3 / 3 | 3 / 3 | 3/16 / 3/16 | 20/7 / 20/7 | yes |
+| 5 | 4 / 4 | 4 / 4 | 1/8 / 1/8 | 76/5 / 76/5 | yes |
+| 6 | 4 / 4 | 8 / 8 | 1/8 / 1/8 | 76/5 / 76/5 | yes |
+| 7 | 5 / 5 | 13 / 13 | 13/128 / 13/128 | 76/5 / 76/5 | yes |
+| 8 | 6 / 6 | 19 / 19 | 19/256 / 19/256 | 1688/13 / 1688/13 | yes |
+
+Survivor lists: my recomputed lists mod $2, 4, 8, 16, 32, 64, 128, 256$ are
+element-for-element identical to the eight lists in the Statement (asserted
+programmatically, not eyeballed). Reduction consistency and "every $k \ge 2$ survivor is
+$3 \bmod 4$" reconfirmed. Argmax data: $(12, 4, 20, 7)$ for $B_4$, $(28, 5, 76, 5)$ for
+$B_5$, $(248, 8, 1688, 13)$ for $B_8$ — as in the file; at $k = 6, 7$ the maximizing
+pair is non-unique (all lifts of $28 \bmod 32$: also $(60,5)$; $(92,5)$, $(124,5)$ at
+$k=7$), the file's script reports the first — value unaffected. The $248$-class hand
+check ($T$-orbit $248 \to \dots \to 242$ and $(243 \cdot 248 + 1688)/256 = 242$)
+reconfirmed. X-9901: my sweep found every $n \le 10^6$ descends below itself (hence
+reaches 1 by the induction), max total $C$-stopping time $524$ at $n = 837799$, and a
+direct non-memoized re-iteration gave $C^{524}(837799) = 1$ — matching the file. The
+preimage characterization was verified in both directions over the full universe of odd
+$x \le 10^5$ (every preimage arises from an admissible $k$ with the right parity; every
+formula value is odd, has exact valuation $k$, maps to $n$; set equality of formula
+preimages vs brute force for all odd $n \le 150000$; leaves have no preimages; the
+mod-9 start table re-derived independently agrees, and residues cycle $e_0, e_0{+}1,
+e_0{+}2 \bmod 3$).
+
+### 5. Verification code and output (reviewer's, independent)
+
+Scripts stored in the review session scratchpad as `v_sieve.py`, `v_sweep.py`,
+`v_preimages.py`; reproduced verbatim below with their outputs. Python 3 stdlib only;
+no floats in any decision.
+
+```python
+#!/usr/bin/env python3
+# v_sieve.py -- INDEPENDENT recomputation for adversarial review of L-9909
+# (agent fable-02-v7, 2026-07-22). Written from the statements alone, not from
+# the author's script. Exact arithmetic only (int / Fraction), Python 3 stdlib.
+from fractions import Fraction
+
+def T(n):
+    return n // 2 if n % 2 == 0 else (3 * n + 1) // 2
+
+def orbit(n, k):
+    xs = [n]
+    for _ in range(k):
+        xs.append(T(xs[-1]))
+    return xs
+
+def word_of(n, k):
+    return tuple(x % 2 for x in orbit(n, k)[:k])
+
+def ceilg(j):
+    a = 0
+    while 3 ** a < 2 ** j:
+        a += 1
+    return a
+
+FILE_CEIL = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 8: 6}
+FILE_COUNTS = {1: 1, 2: 1, 3: 2, 4: 3, 5: 4, 6: 8, 7: 13, 8: 19}
+FILE_DENS = {1: Fraction(1, 2), 2: Fraction(1, 4), 3: Fraction(1, 4),
+             4: Fraction(3, 16), 5: Fraction(1, 8), 6: Fraction(1, 8),
+             7: Fraction(13, 128), 8: Fraction(19, 256)}
+FILE_B = {1: Fraction(0), 2: Fraction(2), 3: Fraction(2), 4: Fraction(20, 7),
+          5: Fraction(76, 5), 6: Fraction(76, 5), 7: Fraction(76, 5),
+          8: Fraction(1688, 13)}
+FILE_SURV = {
+    1: [1], 2: [3], 3: [3, 7], 4: [7, 11, 15], 5: [7, 15, 27, 31],
+    6: [7, 15, 27, 31, 39, 47, 59, 63],
+    7: [27, 31, 39, 47, 63, 71, 79, 91, 95, 103, 111, 123, 127],
+    8: [27, 31, 47, 63, 71, 91, 103, 111, 127, 155, 159, 167, 191, 207,
+        223, 231, 239, 251, 255]}
+
+mine_ceil = {j: ceilg(j) for j in range(1, 9)}
+print("ceil(j*gamma), j=1..8   mine:", [mine_ceil[j] for j in range(1, 9)],
+      "  file:", [FILE_CEIL[j] for j in range(1, 9)],
+      "  MATCH" if mine_ceil == FILE_CEIL else "  MISMATCH")
+assert mine_ceil == FILE_CEIL
+
+surv_by_k, B_by_k = {}, {}
+all_match = True
+boundary_cases = []
+for k in range(1, 9):
+    surv, quots = [], []
+    for r in range(2 ** k):
+        reps = sorted({r + 2 ** k, r + 5 * 2 ** k, (r if r else 2 ** k)})
+        words = {word_of(m, k) for m in reps}
+        assert len(words) == 1, ("word not constant on class", k, r)
+        w = words.pop()
+        a = [0]
+        for v in w:
+            a.append(a[-1] + v)
+        # rho three ways
+        n0, n1 = reps[0], reps[-1]
+        xs, ys = orbit(n0, k), orbit(n1, k)
+        rho_orb = [xs[j] * 2 ** j - 3 ** a[j] * n0 for j in range(k + 1)]
+        rho_orb2 = [ys[j] * 2 ** j - 3 ** a[j] * n1 for j in range(k + 1)]
+        rho_rec = [0]
+        for i, v in enumerate(w):
+            rho_rec.append(3 ** v * rho_rec[-1] + v * 2 ** i)
+        rho_cf = [sum(w[i] * 3 ** (a[j] - a[i + 1]) * 2 ** i for i in range(j))
+                  for j in range(k + 1)]
+        assert rho_orb == rho_orb2 == rho_rec == rho_cf, ("rho routes differ", k, r)
+        rho = rho_rec
+        s1 = all(3 ** a[j] >= 2 ** j for j in range(1, k + 1))
+        s2 = all(a[j] >= ceilg(j) for j in range(1, k + 1))
+        assert s1 == s2, ("Lemma D equivalence", k, r)
+        if s1:
+            surv.append(r)
+        for j in range(1, k + 1):
+            if 3 ** a[j] < 2 ** j:
+                d = 2 ** j - 3 ** a[j]
+                assert d >= 1 and rho[j] >= 0
+                quots.append((Fraction(rho[j], d), r, j, rho[j], d))
+                if rho[j] % d == 0:
+                    nstar = rho[j] // d
+                    if nstar > 0 and nstar % 2 ** k == r:
+                        assert orbit(nstar, j)[j] == nstar, ("boundary", k, r, j)
+                        boundary_cases.append((k, r, j, nstar))
+    B = max(q[0] for q in quots)
+    args = sorted(set(q[1:] for q in quots if q[0] == B))
+    surv_by_k[k], B_by_k[k] = surv, B
+    dens = Fraction(len(surv), 2 ** k)
+    ok = (len(surv) == FILE_COUNTS[k] and surv == FILE_SURV[k]
+          and dens == FILE_DENS[k] and B == FILE_B[k])
+    all_match &= ok
+    print(f"k={k}: #surv={len(surv)} (file {FILE_COUNTS[k]}), density={dens} "
+          f"(file {FILE_DENS[k]}), B_{k}={B} (file {FILE_B[k]}), "
+          f"{'MATCH' if ok else 'MISMATCH'}")
+    print(f"      argmax pairs (r, j, rho_j, d_j): {args}")
+    print(f"      survivors: {surv}")
+print("ALL k<=8 TABLE VALUES AND LISTS MATCH THE FILE:", all_match)
+assert all_match
+
+for k in range(1, 8):
+    assert {r % 2 ** k for r in surv_by_k[k + 1]} <= set(surv_by_k[k]), k
+print("reduction consistency ((k+1)-survivor -> k-survivor), k=1..7: PASS")
+for k in range(2, 9):
+    assert all(r % 4 == 3 for r in surv_by_k[k]), k
+print("every k-survivor (k>=2) is = 3 mod 4: PASS")
+print("integral threshold boundary cases T^j(n*) = n* found and verified:",
+      boundary_cases)
+
+xs = orbit(248, 8)
+assert xs == [248, 124, 62, 31, 47, 71, 107, 161, 242]
+assert (243 * 248 + 1688) // 256 == 242 and (243 * 248 + 1688) % 256 == 0
+print("B_8 argmax class 248 mod 256: orbit and (243n+1688)/256 = 242 < 248: PASS")
+
+NMAX = 10 ** 5
+for k in range(1, 9):
+    Bk, sset = B_by_k[k], set(surv_by_k[k])
+    for n in range(1, NMAX + 1):
+        xs = orbit(n, k)
+        if n % 2 ** k in sset:
+            assert all(xs[j] > n for j in range(1, k + 1)), ("(a) fails", k, n)
+        if all(xs[j] >= n for j in range(1, k + 1)) and n > Bk:
+            assert n % 2 ** k in sset, ("Corollary 2 fails", k, n)
+    print(f"k={k}: scan n<=10^5: survivors ascend strictly; "
+          f"sigma(n)>{k} & n>B_{k} => survivor class: PASS")
+print("ALL SIEVE CHECKS PASS")
+```
+
+Output (verbatim):
+
+```text
+ceil(j*gamma), j=1..8   mine: [1, 2, 2, 3, 4, 4, 5, 6]   file: [1, 2, 2, 3, 4, 4, 5, 6]   MATCH
+k=1: #surv=1 (file 1), density=1/2 (file 1/2), B_1=0 (file 0), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(0, 1, 0, 1)]
+      survivors: [1]
+k=2: #surv=1 (file 1), density=1/4 (file 1/4), B_2=2 (file 2), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(2, 2, 2, 1)]
+      survivors: [3]
+k=3: #surv=2 (file 2), density=1/4 (file 1/4), B_3=2 (file 2), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(2, 2, 2, 1), (6, 2, 2, 1)]
+      survivors: [3, 7]
+k=4: #surv=3 (file 3), density=3/16 (file 3/16), B_4=20/7 (file 20/7), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(12, 4, 20, 7)]
+      survivors: [7, 11, 15]
+k=5: #surv=4 (file 4), density=1/8 (file 1/8), B_5=76/5 (file 76/5), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(28, 5, 76, 5)]
+      survivors: [7, 15, 27, 31]
+k=6: #surv=8 (file 8), density=1/8 (file 1/8), B_6=76/5 (file 76/5), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(28, 5, 76, 5), (60, 5, 76, 5)]
+      survivors: [7, 15, 27, 31, 39, 47, 59, 63]
+k=7: #surv=13 (file 13), density=13/128 (file 13/128), B_7=76/5 (file 76/5), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(28, 5, 76, 5), (60, 5, 76, 5), (92, 5, 76, 5), (124, 5, 76, 5)]
+      survivors: [27, 31, 39, 47, 63, 71, 79, 91, 95, 103, 111, 123, 127]
+k=8: #surv=19 (file 19), density=19/256 (file 19/256), B_8=1688/13 (file 1688/13), MATCH
+      argmax pairs (r, j, rho_j, d_j): [(248, 8, 1688, 13)]
+      survivors: [27, 31, 47, 63, 71, 91, 103, 111, 127, 155, 159, 167, 191, 207, 223, 231, 239, 251, 255]
+ALL k<=8 TABLE VALUES AND LISTS MATCH THE FILE: True
+reduction consistency ((k+1)-survivor -> k-survivor), k=1..7: PASS
+every k-survivor (k>=2) is = 3 mod 4: PASS
+integral threshold boundary cases T^j(n*) = n* found and verified: [(2, 1, 2, 1), (2, 2, 2, 2), (3, 1, 2, 1), (3, 2, 2, 2), (4, 1, 2, 1), (4, 1, 4, 1), (4, 2, 2, 2), (4, 2, 4, 2), (5, 1, 2, 1), (5, 1, 4, 1), (5, 2, 2, 2), (5, 2, 4, 2), (6, 1, 2, 1), (6, 1, 4, 1), (6, 1, 6, 1), (6, 2, 2, 2), (6, 2, 4, 2), (6, 2, 6, 2), (7, 1, 2, 1), (7, 1, 4, 1), (7, 1, 6, 1), (7, 2, 2, 2), (7, 2, 4, 2), (7, 2, 6, 2), (8, 1, 2, 1), (8, 1, 4, 1), (8, 1, 6, 1), (8, 1, 8, 1), (8, 2, 2, 2), (8, 2, 4, 2), (8, 2, 6, 2), (8, 2, 8, 2)]
+B_8 argmax class 248 mod 256: orbit and (243n+1688)/256 = 242 < 248: PASS
+k=1: scan n<=10^5: survivors ascend strictly; sigma(n)>1 & n>B_1 => survivor class: PASS
+k=2: scan n<=10^5: survivors ascend strictly; sigma(n)>2 & n>B_2 => survivor class: PASS
+k=3: scan n<=10^5: survivors ascend strictly; sigma(n)>3 & n>B_3 => survivor class: PASS
+k=4: scan n<=10^5: survivors ascend strictly; sigma(n)>4 & n>B_4 => survivor class: PASS
+k=5: scan n<=10^5: survivors ascend strictly; sigma(n)>5 & n>B_5 => survivor class: PASS
+k=6: scan n<=10^5: survivors ascend strictly; sigma(n)>6 & n>B_6 => survivor class: PASS
+k=7: scan n<=10^5: survivors ascend strictly; sigma(n)>7 & n>B_7 => survivor class: PASS
+k=8: scan n<=10^5: survivors ascend strictly; sigma(n)>8 & n>B_8 => survivor class: PASS
+ALL SIEVE CHECKS PASS
+```
+
+```python
+#!/usr/bin/env python3
+# v_sweep.py -- INDEPENDENT recomputation of X-9901 for adversarial review of
+# L-9909 (agent fable-02-v7, 2026-07-22). Python 3 stdlib, exact integers.
+N = 10 ** 6
+CAP = 10 ** 6
+total = [0] * (N + 1)
+best, arg = 0, 1
+for n in range(2, N + 1):
+    x, c = n, 0
+    while x >= n:
+        x = x // 2 if x % 2 == 0 else 3 * x + 1
+        c += 1
+        if c >= CAP:
+            raise SystemExit(f"FAIL: no descent below n within {CAP} steps at n={n}")
+    total[n] = c + total[x]
+    if total[n] > best:
+        best, arg = total[n], n
+print(f"every n <= {N} verified to descend strictly below itself under C")
+print(f"=> (strong induction) every n <= {N} reaches 1 under C: PASS")
+print(f"max total C-stopping time = {best} at n = {arg}   (file claims: 524 at 837799)")
+x, t = arg, 0
+while x != 1:
+    x = x // 2 if x % 2 == 0 else 3 * x + 1
+    t += 1
+print(f"direct re-iteration: C^{t}({arg}) = 1; agrees with memoized count: {t == best}")
+assert t == best and (best, arg) == (524, 837799)
+print("X-9901 RECOMPUTATION MATCHES THE FILE")
+```
+
+Output (verbatim; about 1 s):
+
+```text
+every n <= 1000000 verified to descend strictly below itself under C
+=> (strong induction) every n <= 1000000 reaches 1 under C: PASS
+max total C-stopping time = 524 at n = 837799   (file claims: 524 at 837799)
+direct re-iteration: C^524(837799) = 1; agrees with memoized count: True
+X-9901 RECOMPUTATION MATCHES THE FILE
+```
+
+```python
+#!/usr/bin/env python3
+# v_preimages.py -- INDEPENDENT recomputation of L-9909.1 (both directions) and
+# spot checks of L-9909.2 identities, for adversarial review of L-9909
+# (agent fable-02-v7, 2026-07-22). Python 3 stdlib, exact integers.
+X = 10 ** 5          # preimage universe: all odd x <= X
+
+def nu2(m):
+    k = 0
+    while m % 2 == 0:
+        m //= 2
+        k += 1
+    return k
+
+def S(x):
+    y = 3 * x + 1
+    return y >> nu2(y)
+
+def C(n):
+    return n // 2 if n % 2 == 0 else 3 * n + 1
+
+def T(n):
+    return n // 2 if n % 2 == 0 else (3 * n + 1) // 2
+
+pre = {}
+for x in range(1, X + 1, 2):
+    y = 3 * x + 1
+    k = nu2(y)
+    n = y >> k
+    assert n % 2 == 1 and k >= 1
+    assert (2 ** k * n) % 3 == 1, x                 # k in A(n)
+    assert (2 ** k * n - 1) % 3 == 0 and (2 ** k * n - 1) // 3 == x, x
+    assert n % 3 != 0                               # S never hits multiples of 3
+    assert (k % 2 == 0) == (n % 3 == 1)             # parity of k per case analysis
+    pre.setdefault(n, set()).add(x)
+print(f"Direction 1 (every odd x <= {X}: x = (2^k S(x) - 1)/3 with k = nu2(3x+1)")
+print("             admissible, k even iff S(x) = 1 mod 3, S(x) never = 0 mod 3): PASS")
+
+NMAX = (3 * X + 1) // 2          # largest possible S(x) for odd x <= X
+mism = 0
+for n in range(1, NMAX + 1, 2):
+    F = set()
+    if n % 3 != 0:
+        k = 2 if n % 3 == 1 else 1
+        while True:
+            num = 2 ** k * n - 1
+            if num > 3 * X:
+                break
+            assert (2 ** k * n) % 3 == 1, (n, k)    # admissibility of k, k+2, ...
+            assert num % 3 == 0, (n, k)             # integrality
+            xk = num // 3
+            assert xk >= 1, (n, k)                  # positivity
+            assert xk % 2 == 1, (n, k)              # automatic oddness
+            assert nu2(3 * xk + 1) == k, (n, k)     # automatic exact valuation
+            assert S(xk) == n, (n, k)               # really a preimage
+            F.add(xk)
+            k += 2
+    if F != pre.get(n, set()):
+        mism += 1
+        print("MISMATCH at n =", n)
+assert mism == 0
+print(f"Direction 2 (formula preimage sets == brute-force S-preimage sets,")
+print(f"             all odd n <= {NMAX}, universe odd x <= {X}; oddness &")
+print(f"             exact valuation checked per generated preimage): PASS")
+assert all(not pre.get(n) for n in range(3, NMAX + 1, 6))
+print("Leaves: no odd multiple of 3 has any S-preimage in the universe: PASS")
+
+FILE_E0 = {1: 1, 4: 2, 7: 0, 2: 1, 5: 0, 8: 2}     # file's table: n mod 9 -> e0
+for n in range(1, 2002, 2):
+    if n % 3 == 0:
+        continue
+    k0 = 2 if n % 3 == 1 else 1
+    u0 = (2 ** k0 * n) % 9
+    assert u0 in (1, 4, 7), n
+    e0 = (u0 - 1) // 3                               # my independent derivation
+    assert e0 == FILE_E0[n % 9], n                   # matches file's table
+    for i in range(10):                              # first 10 preimages
+        xk = (2 ** (k0 + 2 * i) * n - 1) // 3
+        assert xk % 3 == (e0 + i) % 3, (n, i)
+print("Mod-9 start table (independently re-derived) == file's table; residues")
+print("cycle e0, e0+1, e0+2, ... mod 3 for odd n <= 2001, first 10 preimages: PASS")
+
+for n in range(1, 10 ** 5 + 1):
+    assert C(2 * n) == n
+    if n % 3 == 2:
+        x = (2 * n - 1) // 3
+        assert (2 * n - 1) % 3 == 0 and x >= 1 and x % 2 == 1 and C(C(x)) == n
+print("L-9909.2(E) edges: C(2n) = n; n = 2 mod 3 => x = (2n-1)/3 odd positive,")
+print("C^2(x) = n, for n <= 10^5: PASS")
+for mu in range(5, 10 ** 5 + 1, 4):                  # mu = 1 mod 4, mu >= 5
+    a = 3 * mu + 1
+    assert a % 4 == 0 and (a // 2) % 2 == 0 and 1 <= a // 4 < mu
+print("L-9909.2(M)(ii) descent: mu = 1 mod 4, 5 <= mu <= 10^5: 4 | 3mu+1 and")
+print("(3mu+1)/4 < mu: PASS")
+for n in range(1, 3001):
+    cs, x = set(), n
+    for _ in range(700):
+        cs.add(x)
+        x = C(x)
+    cs.add(x)
+    y = n
+    for j in range(250):
+        y = T(y)
+        assert y in cs, (n, j)
+print("Sub-lemma T^j(n) in O_C(n): n <= 3000, 250 T-steps vs 700 C-steps: PASS")
+print("ALL PREIMAGE/CLOSURE CHECKS PASS")
+```
+
+Output (verbatim; about 1 s):
+
+```text
+Direction 1 (every odd x <= 100000: x = (2^k S(x) - 1)/3 with k = nu2(3x+1)
+             admissible, k even iff S(x) = 1 mod 3, S(x) never = 0 mod 3): PASS
+Direction 2 (formula preimage sets == brute-force S-preimage sets,
+             all odd n <= 150000, universe odd x <= 100000; oddness &
+             exact valuation checked per generated preimage): PASS
+Leaves: no odd multiple of 3 has any S-preimage in the universe: PASS
+Mod-9 start table (independently re-derived) == file's table; residues
+cycle e0, e0+1, e0+2, ... mod 3 for odd n <= 2001, first 10 preimages: PASS
+L-9909.2(E) edges: C(2n) = n; n = 2 mod 3 => x = (2n-1)/3 odd positive,
+C^2(x) = n, for n <= 10^5: PASS
+L-9909.2(M)(ii) descent: mu = 1 mod 4, 5 <= mu <= 10^5: 4 | 3mu+1 and
+(3mu+1)/4 < mu: PASS
+Sub-lemma T^j(n) in O_C(n): n <= 3000, 250 T-steps vs 700 C-steps: PASS
+ALL PREIMAGE/CLOSURE CHECKS PASS
+```
+
+### 6. Refutation attempts (all failed, as they must if the file is correct)
+
+* Searched for $n \le 10^5$ with $\sigma(n) > k$ in a non-survivor class with
+  $n > B_k$, for each $k \le 8$ (the file's own stated refutation surface): none exist.
+* Tried to break Lemma-B locality with multiple representatives per class (including
+  $r = 0$ via $2^k$, $5 \cdot 2^k$): words always agreed.
+* Tried to strengthen (b) to weak inequality: refuted by 32 explicit integral boundary
+  witnesses with $T^j(n^\*) = n^\*$ exactly (listed in the output above), confirming the
+  file's boundary remark and the necessity of strict "$>$".
+* Checked the two survivor-criterion forms (Lemma D) against each other on every class:
+  no divergence, consistent with the irrationality argument.
+
+### 7. Fixes and cosmetic observations (no mathematical defects)
+
+No fixes were required; the following cosmetic points are documented for completeness.
+
+1. Statement (M) numbers its items 1./2./3. while cross-references elsewhere use
+   (i)/(ii)/(iii); unambiguous, left as is.
+2. The author's script prints `argmax ... = None` for $k = 1$ because the tracker is
+   seeded with $0$ and every failing quotient at $k=1$ equals $0$; the reported value
+   $B_1 = 0$ is correct (my recomputation: achieved at $(r,j) = (0,1)$ with
+   $\rho_1 = 0$).
+3. At $k = 6, 7$ the $B_k$-maximizing pair is not unique (all classes extending the
+   word $(0,0,1,1,1)$, i.e. $r \equiv 28 \bmod 32$, give $76/5$ at $j = 5$); the
+   author's script reports the first encountered. The value of $B_k$ is unaffected.
+
+### 8. Caveats (inherited scope limits, correctly labeled in the file)
+
+* All computational content is finite ($k \le 8$; $n \le 10^6$) and is used only to
+  discharge finite hypotheses; the unconditional theorem in L-9909.4 constrains only
+  the minimal counterexample $\mu$, not arbitrary counterexamples — the file says both
+  correctly.
+* The density-decay statement is a forward pointer (planned L-9908) and remains
+  unproved; nothing in this file may be cited for it.
+* $B_k$ here is the coarse max-over-failing-$j$ constant, deliberately weaker than the
+  per-class minimum; any cross-file comparison of "$B_k$" values must check conventions.
+
+*Signed: fable-02-v7, 2026-07-22.*

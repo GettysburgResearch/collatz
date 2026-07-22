@@ -525,6 +525,23 @@ $\{1, \dots, B\}$), so $T^k(n) > B$ for all large $k$: $T^k(n) \to \infty$. In c
 $V(n)$ eventually periodic would give case (a) via (3b), contradiction. The two cases
 are exclusive (a bounded orbit does not tend to $\infty$). $\blacksquare$
 
+**Note (C/T transfer for D-9909; added in review by fable-02-v8, 2026-07-22).**
+D-9909 defines "counterexample" through the map $C$ ($1 \notin O_C(n)$), while Lemma D
+and the boxed remark L-9904.7 classify $T$-orbits. The transfer is the content of
+L-9901.1/.5 (currently PROPOSED, under separate review); to keep this file
+self-contained it is proved here in two lines. *The $T$-iterates of $n \in \mathbb{Z}^+$
+are a subsequence of the $C$-iterates:* $T(m) = C(m)$ for even $m$ and $T(m) = C(C(m))$
+for odd $m$ (as $C(m) = 3m+1$ is then even), so by induction every $T$-iterate is a
+$C$-iterate, and the $C$-values skipped between consecutive $T$-iterates are exactly the
+numbers $C(m) = 3m + 1$ at odd $m = T^i(n)$ — all even. *Hence
+$1 \in O_C(n) \iff 1 \in O_T(n)$:* ($\Leftarrow$) subsequence; ($\Rightarrow$) $1$ is
+odd, so it is never a skipped value, and every $C$-iterate is a $T$-iterate or a skipped
+value. Consequently: a $T$-divergent $n \in \mathbb{Z}^+$ never reaches $1$ under $T$
+(reaching $1$ traps the orbit in the bounded set $\{1,2\}$, contradicting
+$T^k(n) \to \infty$), hence $1 \notin O_C(n)$ — a D-9909 counterexample; and a positive
+integer on a nontrivial $T$-cycle (D-9908) likewise, since a $T$-cycle containing $1$
+would equal the orbit of $1$, i.e. the trivial cycle $\{1, 2\}$. $\square$
+
 **(iv) Q-9904.** Stated in full in the Statement section, labeled OPEN, with the
 containment remark; nothing further is claimed, and the author deliberately records no
 guess about its truth value. (One calibration, proved: by B8 the set
@@ -568,7 +585,7 @@ Each item is a finite exact computation, hence proved; all are re-checked by the
 7. **Values of $Q$:** $Q(0) = 0$ and $Q(-1) = \sum_{i \ge 0} 2^i = -1$ (geometric:
    $(1 - 2)\sum_{i < k} 2^i = 1 - 2^k \to 1$, so the sum is $(1-2)^{-1} = -1$);
    $Q(1) = \sum_{i \ge 0} 4^i = (1 - 4)^{-1} = -\tfrac13$ (word $(1,0)^\infty$; same
-   geometric argument, $|4|_2 < 1$); $Q(2) = 2 Q(1) \cdot$ — directly, word
+   geometric argument, $|4|_2 < 1$); $Q(2)$: directly, word
    $(0,1)^\infty$ gives $Q(2) = \sum 2^{2i+1} = 2 \cdot (-\tfrac13) = -\tfrac23$; and
    $\sigma(Q(1)) = (-\tfrac13 - 1)/2 = -\tfrac23 = Q(T(1))$, illustrating L-9904.4. ✓
 
@@ -589,12 +606,22 @@ Each item is a finite exact computation, hence proved; all are re-checked by the
 > statement:** $\;z_b \in \mathbb{Z}^+$ (integrality **and** positivity).
 > Precisely:
 > - if $b$ is **not eventually periodic** and $z_b \in \mathbb{Z}^+$, then by Lemma D
->   the orbit of $z_b$ diverges — a counterexample of divergence type (D-9909);
+>   the orbit of $z_b$ diverges — a counterexample of divergence type (D-9909, via the
+>   C/T-transfer Note after Lemma D);
 > - if $b = u w^\infty$ is **eventually periodic**, then $z_b$ is the explicit rational
->   reachable from $\rho_w/(2^K - 3^{|w|_1})$ by $|u|$ inverse steps (L-9904.5(ii)–(iii)),
->   and the construction yields a counterexample iff that rational is a positive
->   integer $\notin \{$trivial-cycle orbit$\}$ — the nontrivial-cycle route, whose
->   Diophantine side is L-9905.
+>   reachable from the periodic realizer $z_w := \rho_w/(2^K - 3^{|w|_1})$ by $|u|$
+>   inverse steps (L-9904.5(ii)–(iii)), and $z_b$ is a counterexample **iff**
+>   $z_b \in \mathbb{Z}^+$ *and* $z_w \notin \{1, 2\}$ (equivalently: the tail
+>   $w^\infty$ is not a shift of $(1,0)^\infty$) — then $z_b$'s orbit enters the
+>   nontrivial $T$-cycle through $z_w$ and never meets $1$. [Sharpened in review
+>   2026-07-22: the earlier wording "iff that rational is a positive integer
+>   $\notin\{$trivial-cycle orbit$\}$" was ambiguous, and reading "that rational" as
+>   $z_b$ makes it false — $z_b = 4 \in \mathbb{Z}^+\setminus\{1,2\}$ has eventually
+>   periodic word $(0,0)(1,0)^\infty$ yet reaches $1$. Note also: $z_w \in
+>   \mathbb{Z}^+ \setminus \{1,2\}$ *alone* would already exhibit a counterexample,
+>   namely $z_w$ itself on a nontrivial $T$-cycle, whether or not
+>   $z_b \in \mathbb{Z}^+$.] This is the nontrivial-cycle route, whose Diophantine
+>   side is L-9905.
 >
 > **What cannot substitute for integrality.** (a) *Finite prefixes:* every finite
 > prefix of $b$ is realized by an infinite arithmetic progression of positive integers
@@ -629,6 +656,7 @@ Each item is a finite exact computation, hence proved; all are re-checked by the
 | L-9902 (PROPOSED, under review) | cited, not load-bearing | Z$^+$ counterpart of L-9904.2; its P0 cited in Lemma D (re-derivable from P0 here); compatibility remark. All $\mathbb{Z}_2$ claims re-proved inline, so no proof here *depends* on L-9902; overlap noted per packet convention. |
 | L-9903 (PROPOSED, under review) | load-bearing for .5(ii) | word-level $\rho$: definition and closed form (L-9903.2) and bounds/positivity (L-9903.3) used as **word-level** (domain-free) facts; the iteration formula L-9903.1 is **re-derived over $\mathbb{Z}_2$** as Lemma A rather than imported. |
 | L-9905 (PROPOSED, in progress) | cross-reference only | consistency remarks in .5(ii) and L-9904.6.4 (positivity threshold; $-17$); **no logical dependence**, no circularity (L-9905 does not cite this file). |
+| L-9901 (PROPOSED, under review) | cross-reference only (row added in review 2026-07-22) | the C/T transfer used by the D-9909 phrasing in the Q-9904 remark and L-9904.7 is L-9901.1/.5's content, but is **re-proved inline** in the Note after Lemma D, so no proof here depends on L-9901; no circularity (L-9901 does not cite this file). |
 | B1, B5, B6; existence half of B8 | **imported standard facts** | construction/completeness of $\mathbb{Z}_2$; existence of the ball-measure (Haar / product measure). Flagged here and in Gap audit. |
 | Dynkin $\pi$–$\lambda$ theorem | imported standard fact | Lemma U only. |
 | B2–B4, B7, uniqueness half of B8 | proved/justified inline | valuation algebra, units, balls, $\mathbb{Q} \cap \mathbb{Z}_2 = \mathbb{Z}_{(2)}$, Lemma U. |
@@ -1010,4 +1038,528 @@ residues; none of this bears on Q-9904.
 ---
 
 *Signed: fable-02-p3, 2026-07-21. Finite verification script `verify_L9904.py`
+(scratchpad; full text and output above).*
+
+---
+
+## Verification note (fable-02-v8, 2026-07-22)
+
+**Verdict: PASS (with two remark-level fixes, documented below).** Independent
+adversarial review per README §13, performed without relying on the author's
+confidence and without consulting the author's script for implementation. Status
+upgraded PROPOSED → PROVED. Not INDEPENDENTLY_VERIFIED — per this packet's
+convention that upgrade is reserved for a further cross-session review. **No gap was
+found in any numbered claim: L-9904.1–.6, Lemmas A, D, M, U, P0, and the inline
+justifications B2–B4, B7 and Lemma U (uniqueness half of B8) are all correct as
+stated.** The two fixes are confined to remark-level text (the L-9904.7 box and the
+Q-9904 containment remark); no statement or proof of a numbered claim was changed.
+
+### 1. Independent reconstruction (all proofs re-derived before re-reading the author's)
+
+- **L-9904.1.** Well-definedness: both branches land in $\mathbb{Z}_2$ ($z/2$ unique
+  by the integral-domain property; $3z$ odd for odd $z$ since odd·odd = odd, so
+  $3z+1$ even). Continuity: $T$ is affine on each of the two clopen balls
+  $2\mathbb{Z}_2$, $1 + 2\mathbb{Z}_2$ with exact 2-adic Lipschitz constant $2$ on
+  each ($|1/2|_2 = 2$, $|3/2|_2 = 2$); a map continuous on each member of a finite
+  clopen cover is continuous. Exactly 2-to-1: the case split $z$ even / odd is
+  exhaustive and each case forces $z = 2w$ resp. $z = (2w-1)\cdot 3^{-1}$ (division
+  by the unit $3$ is unique); $(2w-1)/3$ exists in $\mathbb{Z}_2$ for **every** $w$
+  because $3 \in \mathbb{Z}_2^\times$, is odd (odd·odd), and $2w$ is even, so the two
+  preimages always exist and are always distinct. Sound.
+- **L-9904.2.** One-step and iterated locality re-derived (the $j \ge 1$ hypothesis
+  is used exactly where needed: $2^j m$ even and $2^{j-1} m \in \mathbb{Z}_2$); the
+  induction's bit-preservation stops at $i = k-1$ because the $i = k$ increment
+  $3^{a_k} m$ can be odd — correctly excluded. Injectivity: $j := \nu_2(z - z') \le
+  k-1$, $u := (z-z')/2^j$ a unit, and the $(k,i) = (j,j)$ instance gives an odd orbit
+  increment $3^{a_j(z')} u$ at step $j$, flipping $v_j$; the $j = 0$ edge is covered
+  by the $k = 0$ base alone. Surjectivity: finite counting via $|\mathbb{Z}_2 /
+  2^k\mathbb{Z}_2| = 2^k$ (B4). The route is genuinely direct over $\mathbb{Z}_2$ —
+  no density transfer from $\mathbb{Z}^+$ is used anywhere. Sound.
+- **L-9904.3(1) isometry — pressure point checked.** With $j = \nu_2(z - z')$: bits
+  $< j$ agree (locality), bit $j$ flips (injectivity computation at $k = j+1$), and
+  the tail $t = \sum_{i > j} (v_i(z) - v_i(z'))\, 2^{i-j-1}$ converges in
+  $\mathbb{Z}_2$ by B6 (coefficients in $\{-1,0,1\}$); the bracket $\pm 1 + 2t$ is
+  odd, hence a unit, so $\nu_2(Q(z) - Q(z')) = j$ exactly. Sound, including $j = 0$.
+- **L-9904.3(2) surjectivity — the author-flagged riskiest step.** The nesting
+  $r_{k+1} \subseteq r_k$ **does** follow from injectivity of $\pi_k$: a point of
+  $r_{k+1}$ has length-$(k{+}1)$ word $(b_0,\dots,b_k)$, hence length-$k$ word
+  $(b_0,\dots,b_{k-1})$, and $r_k$ is *the unique* class with that word. B5
+  (completeness / nested closed balls with radii $\to 0$) then yields exactly one
+  point $z^*$, and $z^* \in r_k$ for every $k$ pins every bit of $V(z^*)$. Airtight;
+  this is a legitimate inverse-limit argument with the compatibility proved, not
+  asserted.
+- **L-9904.3(3) measure — pressure point checked.** Lemma M genuinely needs
+  bijectivity (the reverse inclusion comes from the inverse isometry) — used
+  correctly. Lemma U checked against the $\pi$–$\lambda$ theorem: the balls plus
+  $\emptyset$ form a $\pi$-system (nested-or-disjoint, B4) containing the whole
+  space; countably many balls form a base, so they generate the Borel
+  $\sigma$-algebra; two probability measures agreeing there agree on Borel. The two
+  set functions $A \mapsto \mu(Q^{-1}A)$, $A \mapsto \mu(QA)$ are Borel probability
+  measures because $Q$ is a homeomorphism ($QA = (Q^{-1})^{-1}(A)$). Only existence
+  + ball values of $\mu$ are ever used from B8 — confirmed by a pass over every use
+  of $\mu$ in the file. Sound.
+- **L-9904.4 / .4b — pressure point checked.** $v_i(T(z)) = v_{i+1}(z)$ is
+  definitional ($T^i \circ T = T^{i+1}$); B1-uniqueness converts it to
+  $Q \circ T = \sigma \circ Q$. The two-ball preimage computation of .4b was redone
+  from scratch, including **both** inclusions for the odd ball: $z = \tfrac{2c-1}{3}
+  + 2^{k+1} t \Rightarrow T(z) = c + 3 \cdot 2^k t \in c + 2^k \mathbb{Z}_2$, and
+  conversely $(3z+1)/2 \in c + 2^k\mathbb{Z}_2$ with $z$ odd forces $z \in
+  \tfrac{2c-1}{3} + 2^{k+1}\mathbb{Z}_2$ (multiply out; $\tfrac13$ a unit). The two
+  balls have radius $2^{-k-1}$, are disjoint by parity, so $\mu(T^{-1}B) = \mu(B)$
+  on balls, and Lemma U finishes. Sound.
+- **Lemma A.** Re-derived: $2T(m) = 3^{v_0(m)} m + v_0(m)$ in both branches; the
+  induction matches $a_{k+1} = a_k + v_k$ and $\rho_{k+1} = 3^{v_k}\rho_k + v_k 2^k$;
+  identification with L-9903.2's word-level $\rho$ is the same recursion. The
+  L-9903.1 iteration formula (a $\mathbb{Z}^+$ statement) is correctly **not**
+  imported — this re-proof over $\mathbb{Z}_2$ is exactly the required lifting.
+- **L-9904.5(ii) — sign convention re-derived.** From Lemma A at $k = K$ and
+  $T^K(z) = z$: $2^K z = 3^a z + \rho_w$, i.e. $z\,(2^K - 3^a) = \rho_w$, so
+  $z = \rho_w/(2^K - 3^a)$ — the file's convention. Checked against every anchor by
+  hand: $(1,0) \mapsto 1/(4-3) = 1$; $(1) \mapsto 1/(2-3) = -1$; $(1,1,0) \mapsto
+  5/(8-9) = -5$; and the $-17$ orbit recomputed by hand
+  ($-17 \to -25 \to -37 \to -55 \to -82 \to -41 \to -61 \to -91 \to -136 \to -68
+  \to -34 \to -17$, word $(1,1,1,1,0,1,1,1,0,0,0)$, $a = 7$,
+  $\rho = 729+486+324+216+288+192+128 = 2363 = (-17)(-139)$). $2^K - 3^a$ is odd
+  (even − odd), nonzero, hence a unit — the division is legitimate and lands in
+  $\mathbb{Q} \cap \mathbb{Z}_2 = \mathbb{Z}_{(2)}$ (B7, whose proof, including the
+  parity rule $p/q \equiv p \bmod 2$ for odd $q$, I re-derived). Positivity
+  threshold $z > 0 \iff 2^K > 3^a$ for $a \ge 1$ uses $\rho_w \ge 3^a - 2^a \ge 1$,
+  a word-level fact of L-9903.3 (PROVED) — in scope. Consistency under
+  over-periodic $w$ checked: $(1)^K \mapsto (3^K - 2^K)/(2^K - 3^K) = -1$ for all $K$.
+- **L-9904.5(iii) — backward rationality re-derived.** The inverse step preserves
+  rationality because the *full* preimage $\{2y, (2y-1)/3\}$ of a rational $y$ is
+  rational, and membership in $\mathbb{Z}_2$ plus B7 upgrades rational to
+  odd-denominator. The downward induction runs over the finite range
+  $\ell, \dots, 0$. (3b) uses injectivity of $V$ — proved in (i). Sound over all of
+  $\mathbb{Z}_2$.
+- **Lemma D.** Pigeonhole (distinct positive integers $\le B$ number at most $B$)
+  is valid exactly because the orbit lies in $\mathbb{Z}^+$ (L-9902's P0, a PROVED
+  $\mathbb{Z}^+$ statement — in scope); the file correctly claims no analogue for
+  rationals or $\mathbb{Z}_2$.
+- **Citation-scope audit (the assigned characteristic risk).** L-9902 (PROVED):
+  cited only as non-load-bearing counterpart plus its P0 for $\mathbb{Z}^+$-orbits in
+  Lemma D — within proved scope. L-9903 (PROVED): only the word-level facts .2
+  (closed form) and .3 (bounds/positivity), both quantified over all
+  $w \in \{0,1\}^k$ with no domain reference — within proved scope; the
+  domain-dependent L-9903.1 is re-proved as Lemma A. L-9905: cross-reference only,
+  and the file says so. **No $\mathbb{Z}^+$ statement is silently applied to
+  $\mathbb{Z}_2$.** One sourcing gap existed at remark level (Fix 2 below).
+- **Q-9904 labeling.** The question is stated neutrally, labeled OPEN, with no
+  direction asserted; .5(iii) proves one implication and Q-9904 is its converse. The
+  relation to Collatz is stated as **containment**, not equivalence: affirmative
+  ⟹ no divergent positive trajectories (it would *not* settle cycles); negative
+  witness in $\mathbb{Z}^+$ ⟹ counterexample; negative witness in
+  $\mathbb{Z}_{(2)} \setminus \mathbb{Z}$ settles only Q-9904. All three
+  conditionals are now fully sourced (Fix 2). Correct.
+
+### 2. Fixes made (documented; remark-level only)
+
+1. **L-9904.7 box, second bullet (substantive).** Old text: "the construction
+   yields a counterexample iff that rational is a positive integer
+   $\notin \{$trivial-cycle orbit$\}$". Under the natural reading ("that rational"
+   $= z_b$, trivial-cycle orbit $= \{1,2\}$) the "iff" is **false**: $z_b = 4 \in
+   \mathbb{Z}^+ \setminus \{1,2\}$ realizes the eventually periodic word
+   $(0,0)(1,0)^\infty$ and reaches $1$ (machine-checked, V9). Replaced by the
+   precise criterion: $z_b$ is a counterexample iff $z_b \in \mathbb{Z}^+$ **and**
+   the tail's periodic realizer $z_w \notin \{1,2\}$. Proof of the sharpened iff:
+   ($\Leftarrow$) $z_w = T^{|u|}(z_b) \in \mathbb{Z}^+$; if $1$ appeared in the
+   pre-period the orbit would be trapped in $\{1,2\}$, forcing $z_w \in \{1,2\}$;
+   if $1$ appeared in the terminal cycle, that cycle would equal the cycle of $1$,
+   i.e. $\{1,2\} \ni z_w$ — both contradictions; so $1 \notin O_T(z_b)$, and the
+   C/T Note gives $1 \notin O_C(z_b)$. ($\Rightarrow$) a counterexample has
+   $1 \notin O_T(z_b)$, while $z_w \in \{1,2\}$ would put $1$ in the orbit. The
+   criterion is independent of the decomposition $b = u\,w^\infty$ chosen, since any
+   two tail realizers lie on the same terminal cycle. (Also recorded in the box:
+   $z_w \in \mathbb{Z}^+ \setminus \{1,2\}$ alone would already exhibit $z_w$ itself
+   as a counterexample.)
+2. **C/T transfer for D-9909 (substantive sourcing).** The box and the Q-9904
+   remark call $T$-orbit outcomes "Collatz counterexamples (D-9909)", but D-9909 is
+   phrased for the map $C$, and the bridge ($1 \in O_C(n) \iff 1 \in O_T(n)$) was
+   neither proved in-file nor cited — it is L-9901.1/.5's content, and L-9901 is
+   only PROPOSED. Added a self-contained two-line proof as the **Note (C/T
+   transfer)** after Lemma D ($T$-iterates are a subsequence of $C$-iterates; the
+   skipped values $3m+1$, $m$ odd, are all even, and $1$ is odd), pointers at the
+   two usage sites, and an L-9901 cross-reference row in the Dependency audit. The
+   file now has no dependence, even remark-level, on unreviewed material.
+3. **Cosmetic.** Dangling fragment "$Q(2) = 2 Q(1) \cdot$ —" in L-9904.6.7 repaired
+   to introduce the direct computation (no content change). Header updated (Status,
+   Reviewing agents, Last updated).
+
+The Statement-section headline of L-9904.7 ("…exactly equivalent to proving that its
+unique 2-adic realizer is a **positive integer**") is retained as the correct slogan
+for the divergence route and for any construction whose tail is not the trivial
+word; the fixed box bullet now carries the precise cycle-route criterion.
+
+### 3. Independent computational refutation attempt (finite verification, not proof)
+
+Script written from the statements alone (author's `verify_L9904.py` not consulted;
+different implementation structure, different seed), exact arithmetic only
+(Python ints and `fractions.Fraction` with odd denominators; parity of $p/q$ via
+$p \bmod 2$ per B7):
+`/tmp/claude-0/-home-user-collatz/114bdecf-6016-53ed-8de1-7dbb35adc114/scratchpad/refute_L9904_v8.py`,
+`python3 refute_L9904_v8.py`, seed 20260722, runtime ≈ 4.0 s. Coverage beyond the
+author's tests: Lemma A checked *along the orbit* of every periodic realizer and on
+random rationals/negative integers to $k \le 40$; the cycle-equation **iff** on 400
+random elements; the fresh eventually-periodic example $7/5$ (preperiod 4, tail
+$(1,1,1,0,0)$, realizer $19/5 = \rho/(2^5 - 3^3)$) exercising .5(ii)/(iii)/3b on a
+case absent from the file; the fresh anchor $Q(-1/3) = 1$ exactly; and the explicit
+$z_b = 4$ witness for Fix 1. Reproduced in full:
+
+```python
+#!/usr/bin/env python3
+"""Independent adversarial verification of L-9904 (verifier fable-02-v8, 2026-07-22).
+
+Written from the STATEMENTS in research/foundations/L-9904-2adic-conjugacy.md,
+NOTATION.md (D-9902/D-9906) and the word-level definitions of L-9903 only; the
+author's verify_L9904.py (same scratchpad) was deliberately NOT consulted for
+implementation. Exact arithmetic throughout: Python ints (both signs), Fractions
+with odd denominators (= Z_(2) = Q cap Z_2), residues mod 2^N. Parity of p/q with
+q odd is p mod 2 (B7). Any AssertionError = refutation found.
+
+Checks:
+  V1  Isometry |Q(z)-Q(z')|_2 = |z-z'|_2 EXHAUSTIVELY on all pairs mod 2^12,
+      plus per-level bijectivity of Q mod 2^j and exact ball-preimage counts
+      (finite shadow of L-9904.3(2)/(3)).
+  V2  Conjugacy Q o T = sigma o Q on 500 random z mod 2^60 through 40 steps
+      (word shift + truncated-Q arithmetic), plus residue-determinacy of the
+      60-bit word under integer/negative/rational lifts by multiples of 2^60.
+  V3  Periodic-point formula z_w = rho_w/(2^K - 3^a) for ALL 126 words with
+      1 <= K <= 6: denominator odd and nonzero, z_w in Z_(2), T^K(z_w) = z_w
+      exactly, parity word = w^infty through 42 bits, sign iff 2^K > 3^a
+      (a >= 1), z = 0 iff a = 0, per-length injectivity; rho recursion ==
+      closed form (both my own implementations); Lemma A checked along the way.
+  V4  Lemma A (2-adic iteration formula) on 300 random elements (ints of both
+      signs and odd-denominator Fractions), k <= 40, cleared-denominator form;
+      plus the cycle-equation iff (T^k(z)=z <=> z(2^k-3^{a_k})=rho_k) on
+      random rationals, k <= 12.
+  V5  The -17 cycle: orbit, K=11, word (1,1,1,1,0,1,1,1,0,0,0), a=7,
+      rho=2363, formula recovers -17; 44-bit word check.
+  V6  Eventually periodic rationals: 1/3, 1/5, 1/7 (file's claims, 60+ bits),
+      and 7/5 (fresh example not in the file): orbit repeat found, tail word
+      (1,1,1,0,0), periodic realizer 19/5 = rho/(2^5-3^3) matches L-9904.5(ii),
+      dichotomy 3b (orbit repeat <-> word eventually periodic).
+  V7  Exactly-2-to-1: random w (ints and rationals): T(2w)=w, T((2w-1)/3)=w,
+      (2w-1)/3 odd with odd denominator, preimages distinct; exhaustive finite
+      shadow: every ball c+2^k Z_2 has exactly TWO preimage residues mod 2^{k+1}
+      (k <= 10) (= L-9904.4b's two-ball computation).
+  V8  Q anchor values mod 2^60: Q(0)=0, Q(-1)=-1, 3Q(1)=-1, 3Q(2)=-2, and the
+      fresh anchor Q(-1/3) = 1 exactly (word (1)(0)^infty); sigma(Q(1)) = Q(2).
+  V9  Sharpness probes: v_i depends on z mod 2^{i+1} and NOT on z mod 2^i
+      (adding 2^i flips bit i); the counterexample z_b = 4 to the naive reading
+      of the box's bullet 2 (4 in Z^+ \ {1,2}, eventually periodic word with
+      trivial tail, orbit reaches 1).
+"""
+
+from fractions import Fraction as F
+from itertools import product
+import random
+
+random.seed(20260722)
+
+
+def parity(x):
+    if isinstance(x, F):
+        assert x.denominator % 2 == 1, ("left Z_(2)!", x)
+        return x.numerator & 1
+    return x & 1
+
+
+def T(x):
+    if parity(x) == 0:
+        return x // 2 if isinstance(x, int) else x / 2
+    y = 3 * x + 1
+    return y // 2 if isinstance(x, int) else y / 2
+
+
+def word(x, k):
+    out = []
+    for _ in range(k):
+        out.append(parity(x))
+        x = T(x)
+    return tuple(out)
+
+
+def Qk(x, k):
+    """First k digits of Q(x), as an integer in [0, 2^k)."""
+    return sum(b << i for i, b in enumerate(word(x, k)))
+
+
+def lowbit(d):
+    """2^{nu_2(d)} for a nonzero int d (works for negative d in Python)."""
+    return d & -d
+
+
+def rho_rec(w):
+    r = 0
+    for i, b in enumerate(w):
+        r = 3 ** b * r + b * (1 << i)
+    return r
+
+
+def rho_closed(w):
+    return sum(3 ** sum(w[i + 1:]) * (1 << i) for i in range(len(w)) if w[i])
+
+
+def rand_zelt():
+    """Random element of Z_(2): int of either sign or odd-denominator Fraction."""
+    if random.random() < 0.5:
+        return random.randint(-10 ** 12, 10 ** 12)
+    return F(random.randint(-10 ** 9, 10 ** 9), 2 * random.randint(0, 400) + 1)
+
+
+# ---------------- V1: exhaustive isometry mod 2^12 ----------------
+KD = 12
+M = 1 << KD
+W = [Qk(x, KD) for x in range(M)]
+pairs = 0
+for x in range(M):
+    wx = W[x]
+    for y in range(x + 1, M):
+        assert lowbit(x - y) == lowbit(wx - W[y]), ("V1 isometry", x, y)
+        pairs += 1
+# per-level bijectivity and exact ball-preimage counts
+for j in range(KD + 1):
+    mj = (1 << j) - 1
+    seen = {}
+    counts = {}
+    for x in range(M):
+        q = W[x] & mj
+        r = x & mj
+        assert seen.setdefault(r, q) == q, ("V1 well-def mod 2^j", j, x)
+        counts[q] = counts.get(q, 0) + 1
+    assert len(set(seen.values())) == 1 << j, ("V1 bijective", j)
+    assert all(c == 1 << (KD - j) for c in counts.values()), ("V1 counts", j)
+print(f"V1: isometry exhaustive on all {pairs} pairs mod 2^{KD}; "
+      f"Q bijective mod 2^j and preimage counts exactly 2^({KD}-j), all j <= {KD}.")
+
+# ---------------- V2: conjugacy, 500 random z mod 2^60, 40 steps ----------------
+NBIT = 60
+for _ in range(500):
+    r = random.getrandbits(NBIT)
+    x = r
+    for step in range(40):
+        w_full = word(x, 41)
+        tx = T(x)
+        assert word(tx, 40) == w_full[1:], ("V2 word shift", r, step)
+        q = sum(b << i for i, b in enumerate(w_full))
+        assert Qk(tx, 40) == q >> 1, ("V2 Q-sigma", r, step)  # sigma drops digit 0
+        x = tx
+# residue-determinacy of the 60-bit word (locality at j = 60)
+for _ in range(200):
+    r = random.getrandbits(NBIT)
+    for t in (random.randint(1, 10 ** 9), -random.randint(1, 10 ** 9),
+              F(random.randint(-10 ** 6, 10 ** 6), 2 * random.randint(0, 300) + 1)):
+        assert word(r, NBIT) == word(r + (1 << NBIT) * t, NBIT), ("V2 residue", r, t)
+print("V2: conjugacy (word shift + truncated Q(Tz) = sigma(Qz)) on 500 random "
+      "z mod 2^60 through 40 steps; 60-bit word residue-determinate under 600 lifts.")
+
+# ---------------- V3: periodic points, ALL words 1 <= |w| <= 6 ----------------
+nw = 0
+for K in range(1, 7):
+    realizers = set()
+    for w in product((0, 1), repeat=K):
+        a = sum(w)
+        rho = rho_rec(w)
+        assert rho == rho_closed(w), ("V3 rho forms", w)
+        D = (1 << K) - 3 ** a
+        assert D % 2 == 1 and D != 0, ("V3 unit", w)
+        z = F(rho, D)
+        assert z.denominator % 2 == 1, ("V3 Z_(2)", w)
+        # Lemma A along the orbit + exact return after K steps
+        x, ak, rk = z, 0, 0
+        for k in range(K):
+            assert (1 << k) * x == 3 ** ak * z + rk, ("V3 LemmaA", w, k)
+            b = parity(x)
+            rk = 3 ** b * rk + b * (1 << k)
+            ak += b
+            x = T(x)
+        assert (1 << K) * x == 3 ** ak * z + rk and ak == a and rk == rho, ("V3 LemmaA end", w)
+        assert x == z, ("V3 return", w)
+        reps = 42 // K + 1
+        assert word(z, 42) == (w * reps)[:42], ("V3 42-bit word", w)
+        if a == 0:
+            assert z == 0, ("V3 zero", w)
+        else:
+            assert (z > 0) == ((1 << K) > 3 ** a), ("V3 sign", w)
+        realizers.add(z)
+        nw += 1
+    assert len(realizers) == 1 << K, ("V3 injectivity", K)
+anchors = {(1, 0): F(1), (1,): F(-1), (1, 1, 0): F(-5), (1, 0, 0): F(1, 5),
+           (0,): F(0), (1, 1, 0, 0): F(5, 7), (1, 1, 1, 0, 0): F(19, 5)}
+for w, expect in anchors.items():
+    assert F(rho_rec(w), (1 << len(w)) - 3 ** sum(w)) == expect, ("V3 anchor", w)
+print(f"V3: periodic-point formula verified for all {nw} words |w| <= 6 "
+      "(unit denominator, Lemma A, exact T^K-return, 42-bit word, sign iff 2^K>3^a, "
+      "injectivity); anchors incl. 1, -1, -5, 1/5, 5/7, 19/5, 0.")
+
+# ---------------- V4: Lemma A on random elements; cycle-equation iff ----------------
+for _ in range(300):
+    z = rand_zelt()
+    kmax = random.randint(1, 40)
+    x, ak, rk = z, 0, 0
+    for k in range(kmax + 1):
+        assert (1 << k) * x == 3 ** ak * z + rk, ("V4 LemmaA", z, k)
+        b = parity(x)
+        rk = 3 ** b * rk + b * (1 << k)
+        ak += b
+        x = T(x)
+for _ in range(400):
+    z = rand_zelt()
+    x, ak, rk = z, 0, 0
+    for k in range(1, 13):
+        b = parity(x)
+        rk = 3 ** b * rk + b * (1 << (k - 1))
+        ak += b
+        x = T(x)
+        assert (x == z) == (z * ((1 << k) - 3 ** ak) == rk), ("V4 iff", z, k)
+print("V4: Lemma A exact on 300 random elements (ints both signs + rationals, k <= 40); "
+      "cycle-equation iff on 400 random elements, k <= 12.")
+
+# ---------------- V5: the -17 cycle ----------------
+orb = [-17]
+while True:
+    n = T(orb[-1])
+    if n == orb[0]:
+        break
+    orb.append(n)
+    assert len(orb) < 100
+w17 = tuple(x & 1 for x in orb)
+assert len(orb) == 11 and w17 == (1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0), ("V5", orb)
+assert sum(w17) == 7 and rho_rec(w17) == 2363 == rho_closed(w17)
+assert F(2363, (1 << 11) - 3 ** 7) == -17 and (-17) * ((1 << 11) - 3 ** 7) == 2363
+assert word(-17, 44) == w17 * 4
+assert orb == [-17, -25, -37, -55, -82, -41, -61, -91, -136, -68, -34]
+print("V5: -17 cycle: K=11, word (1,1,1,1,0,1,1,1,0,0,0), a=7, rho=2363, "
+      "-17 = 2363/(2^11-3^7); 44-bit word confirmed.")
+
+# ---------------- V6: eventually periodic rationals ----------------
+assert T(F(1, 3)) == 1
+assert word(F(1, 3), 61) == (1,) + (1, 0) * 30              # (1)(1,0)^inf
+z = F(1, 5)
+assert T(T(T(z))) == z and word(z, 60) == (1, 0, 0) * 20    # purely periodic
+y = T(F(1, 7))
+assert y == F(5, 7) and T(T(T(T(y)))) == y
+assert word(F(1, 7), 61) == (1,) + (1, 1, 0, 0) * 15        # (1)(1,1,0,0)^inf
+# fresh example 7/5 (not in the file): find the orbit repeat, check 3b + .5(ii)
+z = F(7, 5)
+seen = {}
+x, i = z, 0
+while x not in seen:
+    seen[x] = i
+    x = T(x)
+    i += 1
+l, per = seen[x], i - seen[x]
+assert (l, per) == (4, 5), (l, per)
+tail_entry = z
+for _ in range(l):
+    tail_entry = T(tail_entry)
+assert tail_entry == F(19, 5)
+wtail = word(tail_entry, per)
+assert wtail == (1, 1, 1, 0, 0)
+assert F(rho_rec(wtail), (1 << per) - 3 ** sum(wtail)) == F(19, 5)
+w60 = word(z, 60)
+assert w60 == (1, 1, 0, 1) + ((1, 1, 1, 0, 0) * 12)[:56]
+# 3b: orbit repeat at (l, per) <-> word eventually periodic with that data
+assert all(w60[l + j] == w60[l + (j % per)] for j in range(56 - l))
+x = z
+for _ in range(l):
+    x = T(x)
+xx = x
+for _ in range(per):
+    xx = T(xx)
+assert xx == x                                              # T^{l+per}(z) = T^l(z)
+print("V6: 1/3 -> (1)(1,0)^inf, 1/5 3-periodic (1,0,0)^inf, 1/7 -> (1)(1,1,0,0)^inf "
+      "(all 60+ bits); fresh 7/5: preperiod 4, tail (1,1,1,0,0) at 19/5 = rho/(2^5-3^3), "
+      "orbit repeat and word periodicity agree (3b).")
+
+# ---------------- V7: exactly-2-to-1 ----------------
+for _ in range(2000):
+    w = rand_zelt()
+    even_pre = 2 * w
+    odd_pre = (2 * F(w) - 1) / 3
+    assert T(even_pre) == w
+    assert odd_pre.denominator % 2 == 1 and parity(odd_pre) == 1
+    assert T(odd_pre) == F(w)
+    assert F(even_pre) != odd_pre
+for k in range(0, 11):
+    # T on residues mod 2^{k+1} -> residues mod 2^k (well-defined by locality)
+    cnt = {}
+    for r in range(1 << (k + 1)):
+        cnt.setdefault(T(r) % (1 << k), 0)
+        cnt[T(r) % (1 << k)] += 1
+    assert set(cnt.keys()) == set(range(1 << k)) and all(c == 2 for c in cnt.values()), ("V7", k)
+print("V7: both preimages 2w and (2w-1)/3 verified on 2000 random elements "
+      "(odd branch always in Z_(2), odd, distinct); every ball mod 2^k has exactly "
+      "2 preimage residues mod 2^(k+1), k <= 10.")
+
+# ---------------- V8: Q anchors ----------------
+MM = 1 << 60
+assert Qk(0, 60) == 0
+assert Qk(-1, 60) == MM - 1                       # Q(-1) = -1
+assert (3 * Qk(1, 60)) % MM == (-1) % MM         # Q(1) = -1/3
+assert (3 * Qk(2, 60)) % MM == (-2) % MM         # Q(2) = -2/3
+assert Qk(F(-1, 3), 60) == 1                     # fresh: Q(-1/3) = 1 exactly
+q1 = Qk(1, 61)
+assert (q1 >> 1) % MM == Qk(2, 60) % MM          # sigma(Q(1)) = Q(T(1)) = Q(2)
+print("V8: Q(0)=0, Q(-1)=-1, 3Q(1)=-1, 3Q(2)=-2 (mod 2^60); fresh anchor "
+      "Q(-1/3) = 1 exactly; sigma(Q(1)) = Q(2).")
+
+# ---------------- V9: sharpness + the box-bullet-2 counterexample ----------------
+for _ in range(500):
+    z = rand_zelt()
+    i = random.randint(0, 30)
+    w1 = word(z, i + 1)
+    w2 = word(z + (1 << i), i + 1)
+    assert w1[:i] == w2[:i] and w1[i] != w2[i], ("V9 flip", z, i)
+# z_b = 4: positive integer, not in {1,2}, eventually periodic word, reaches 1
+assert word(4, 12) == (0, 0) + (1, 0) * 5        # (0,0)(1,0)^inf: trivial tail
+x, hit1 = 4, False
+for _ in range(10):
+    x = T(x)
+    hit1 |= (x == 1)
+assert hit1                                      # 4 reaches 1: NOT a counterexample
+print("V9: adding 2^i flips exactly bit i (500 probes: mod 2^i insufficient, "
+      "mod 2^(i+1) sharp); z_b=4 in Z^+\\{1,2} with eventually periodic word "
+      "reaches 1 -- confirms the review's sharpening of box bullet 2.")
+
+print("ALL ADVERSARIAL CHECKS PASSED -- no counterexample to L-9904.1-.6 found.")
+```
+
+**Output (verbatim, single run, 2026-07-22, CPython 3, Linux; runtime 4.0 s):**
+
+```text
+V1: isometry exhaustive on all 8386560 pairs mod 2^12; Q bijective mod 2^j and preimage counts exactly 2^(12-j), all j <= 12.
+V2: conjugacy (word shift + truncated Q(Tz) = sigma(Qz)) on 500 random z mod 2^60 through 40 steps; 60-bit word residue-determinate under 600 lifts.
+V3: periodic-point formula verified for all 126 words |w| <= 6 (unit denominator, Lemma A, exact T^K-return, 42-bit word, sign iff 2^K>3^a, injectivity); anchors incl. 1, -1, -5, 1/5, 5/7, 19/5, 0.
+V4: Lemma A exact on 300 random elements (ints both signs + rationals, k <= 40); cycle-equation iff on 400 random elements, k <= 12.
+V5: -17 cycle: K=11, word (1,1,1,1,0,1,1,1,0,0,0), a=7, rho=2363, -17 = 2363/(2^11-3^7); 44-bit word confirmed.
+V6: 1/3 -> (1)(1,0)^inf, 1/5 3-periodic (1,0,0)^inf, 1/7 -> (1)(1,1,0,0)^inf (all 60+ bits); fresh 7/5: preperiod 4, tail (1,1,1,0,0) at 19/5 = rho/(2^5-3^3), orbit repeat and word periodicity agree (3b).
+V7: both preimages 2w and (2w-1)/3 verified on 2000 random elements (odd branch always in Z_(2), odd, distinct); every ball mod 2^k has exactly 2 preimage residues mod 2^(k+1), k <= 10.
+V8: Q(0)=0, Q(-1)=-1, 3Q(1)=-1, 3Q(2)=-2 (mod 2^60); fresh anchor Q(-1/3) = 1 exactly; sigma(Q(1)) = Q(2).
+V9: adding 2^i flips exactly bit i (500 probes: mod 2^i insufficient, mod 2^(i+1) sharp); z_b=4 in Z^+\{1,2} with eventually periodic word reaches 1 -- confirms the review's sharpening of box bullet 2.
+ALL ADVERSARIAL CHECKS PASSED -- no counterexample to L-9904.1-.6 found.
+```
+
+This is finite verification supporting, not constituting, the proofs (README §10);
+the status upgrade rests on the mathematical reconstruction in §1.
+
+### 4. Residual caveats
+
+- **Imports remain imports:** B1 (digit model / completeness of $\mathbb{Z}_2$),
+  B5's use of completeness, B6, the existence half of B8 (Haar / Bernoulli product
+  measure), and the Dynkin $\pi$–$\lambda$ theorem are standard facts taken from
+  the literature, exactly as the file flags. I confirmed the file uses nothing of
+  B8 beyond existence plus the ball values, and Lemma U was checked against the
+  standard $\pi$–$\lambda$ statement.
+- All computational checks inspect finitely many digits and finitely many
+  elements; irrational elements of $\mathbb{Z}_2$ are exercised only through
+  residues. Nothing here bears on Q-9904, which remains OPEN and neutral.
+- The status is PROVED on the strength of one full independent reconstruction plus
+  one independent computational refutation attempt; INDEPENDENTLY_VERIFIED requires
+  a further independent reviewer per repository convention.
+- L-9901 and L-9905 remain PROPOSED; after Fix 2 this file has **no** load-bearing
+  or remark-level dependence on either (the C/T transfer is now proved inline; the
+  L-9905 links are consistency cross-references only).
+
+*Reviewed and signed: fable-02-v8, 2026-07-22. Script `refute_L9904_v8.py`
 (scratchpad; full text and output above).*

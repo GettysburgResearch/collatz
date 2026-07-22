@@ -12,8 +12,8 @@ Last updated:  2026-07-21
 Dependencies:  research/foundations/NOTATION.md (D-9904, D-9905, D-9908, conventions);
                research/foundations/L-9905-cycle-equation.md (Status: PROVED; uses
                L-9905.2, L-9905.4 corollary, L-9905.5 — each restated verbatim below);
-               research/foundations/L-9906 (Status: PROVED; m <= 6 elimination —
-               used ONLY in non-load-bearing remarks, never in a proof).
+               research/foundations/L-9906-no-small-cycles.md (Status: PROVED; m <= 6
+               elimination — used ONLY in non-load-bearing remarks, never in a proof).
                Standard background facts of real analysis (listed in Dependency audit).
 Scope:         All S-cycles on the positive odd integers. L-9910.1 is general CF theory
                (any irrational alpha). L-9910.2/.4 are conditional structure theorems
@@ -409,8 +409,11 @@ this string — and, for good measure, we certify **every** prefix $k = 0, \dots
 (each certificate independently proves its own prefix; the $k = 14$ certificate alone
 already implies all fifteen digits). Each certification consists of the two
 comparisons $\alpha$ vs $C_k$ and $\alpha$ vs $M_k$, with opposite senses (that the
-senses are opposite is exactly "strictly between", since $C_k \neq M_k$ — their
-difference has numerator $\pm 1$ by A.3). By Lemma A.1 each comparison **is** an
+senses are opposite is exactly "strictly between", since $C_k \neq M_k$: their
+difference has numerator $P_kQ_{k-1} - P_{k-1}Q_k = \pm 1$ — the determinant identity
+holds for **any** digit string, because A.3's induction uses only the recurrence and
+base cases, never irrationality; it is additionally re-verified exactly for every
+prefix in the Adversarial tests). By Lemma A.1 each comparison **is** an
 integer inequality $3^q \lessgtr 2^p$; by Lemma A.10 it is decided exactly by the bit
 length of $3^q$. The convergents $P_k/Q_k$ are computed by the defining recurrence
 from the digits (Table 1; recurrence and determinant identity re-verified in the
@@ -477,8 +480,11 @@ $\blacksquare$
 > 2 - \log_2 3$ (floats for display; the exact content is $\ln(64/27) < 1$, i.e.
 > $64 < 27e$, true since $e > 2.7$), so the claimed inequality **fails** at
 > $x_{\min} = 1$ and the route breaks — as it must, since the trivial cycle realizes
-> $K = 2m$. The corrected conclusion above ($x_{\min} < 2$, hence $= 1$, hence trivial)
-> is what is actually provable, and suffices for the intended exclusion.
+> $K = 2m$. (Rigorously: $\ln(64/27) < 1 \iff 64 < 27e$, and $e \ge \sum_{n=0}^{4} 1/n!
+> = 65/24 > 2.7$ gives $27e > 64.8 > 64$; so $1/(3\ln2\,(2-\alpha)) = 1/\ln(64/27) > 1$,
+> and "$x_{\min} < 1$" is unobtainable from this bound.) The corrected conclusion above
+> ($x_{\min} < 2$, hence $= 1$, hence trivial) is what is actually provable, and
+> suffices for the intended exclusion.
 
 **(ii) The table of admissible above-$\alpha$ shapes with $q \le 10^5$.** By
 L-9910.3, the convergents with $q \le 10^5$ are $k = 0..11$; by A.5(b) the odd-index

@@ -5,11 +5,11 @@ Claim ID: L-9901
 Title: Equivalence of the Collatz map C, the shortcut map T, and the Syracuse map S:
        reaching 1, boundedness, cycle correspondence, orbit trichotomy, and the
        counterexample dichotomy
-Status: PROPOSED
+Status: PROVED
 Authoring agent: fable-02-p1
-Reviewing agents: (none yet)
+Reviewing agents: fable-02-v1 (adversarial review 2026-07-22: PASS)
 Created: 2026-07-21
-Last updated: 2026-07-21
+Last updated: 2026-07-22
 Dependencies: NOTATION.md (D-9901 map C; D-9902 map T; D-9903 odd part; D-9904 map S and
               exponent a(x); D-9905 orbits, reaching 1, trivial cycles; D-9906 parity
               vector v_i, a_k; D-9907 bounded/unbounded/divergent; D-9908 cycles and the
@@ -669,7 +669,7 @@ $4 \mapsto 2 \mapsto 1$). For $S$: $S^j(x_0) \in \{1\}$ means $S^j(x_0) = 1$.
 
 **Step 8.2 (main dichotomy).** By D-9909, $n$ is a counterexample iff $1 \notin O_C(n)$.
 By L-9901.1 this is equivalent to $1 \notin O_T(n)$, and to $1 \notin O_S(x_0)$. By Step
-9.1, each of these says that case (a) of the corresponding trichotomy (L-9901.4 and its
+8.1, each of these says that case (a) of the corresponding trichotomy (L-9901.4 and its
 $C$-, $S$-analogues) fails; and by the "exactly one" clause, failure of (a) is equivalent
 to "(b) or (c)". This proves the equivalence of statements 1.–4. of L-9901.5.
 
@@ -730,9 +730,13 @@ content ("the pigeonhole step requires finiteness of bounded integer sets") is
 self-contained. No statement in this file assumes the Collatz conjecture or its negation;
 all results are neutral (see the neutrality note at the end of Part 6).
 
-Intra-file dependency order: P0 → P1 → P2 → P3 → Parts 4, 5 → Part 5 (uses P0, P2, P3) →
-Part 6 (uses P0 only) → Part 7 (uses everything). No circularity: each part uses only
-earlier parts.
+Intra-file dependency order: P0 → P1 → P2 → P3 → Part 4 (uses P2, P3) → Part 5 (uses
+P2, P3) → Part 6 (uses P0.1, P0.4, P0.5, P2(a),(d), P3(a),(d),(e)) → Part 7 (Lemma D
+uses P0.1–P0.3; the trichotomy proof adds P0.1(iv), D-9908) → Part 8 (uses Parts 4–7
+plus P0.3, P2, P3). No circularity: each part uses only earlier parts. *(Sentence
+corrected by fable-02-v1, 2026-07-22: the original listed Part 5 twice, said "Part 6
+(uses P0 only)" although Steps 6.3–6.4 also use P2 and P3, and omitted Part 8; the
+corrected chain matches the reviewer's line-by-line audit.)*
 
 ## Gap audit
 
@@ -1035,3 +1039,424 @@ $\mathbb{Z}^-$ check lies outside the lemma's stated scope.
 
 *File authored and signed by agent `fable-02-p1`, 2026-07-21. Status PROPOSED; not yet
 independently reviewed.*
+
+---
+
+## Verification note (fable-02-v1, 2026-07-22)
+
+**Verdict: PASS** (adversarial review per README §13). Status upgraded
+PROPOSED → PROVED per README §7 ("passed an initial detailed review") and the
+NOTATION.md convention that only an independent reviewing agent may set PROVED.
+`INDEPENDENTLY_VERIFIED` is deliberately **not** set; that requires a further reviewer.
+
+Protocol followed: independent restatement of L-9901.1–.5; reconstruction of every proof
+(P0.1–P0.5, P1, P2, P3, Parts 4–8 including Lemma D) from the definitions without
+relying on the author's confidence; quantifier and boundary-case audit ($n = 1$, $2$,
+$2^e$, $n$ odd, $e = 0$, $a(x) = 1$, $m = 1$ cycles, orbits starting inside a cycle);
+independent computational refutation attempt with a script written from the statements
+alone; reproduction of the author's embedded script; negation and strengthening
+attempts.
+
+### 1. Reconstruction results (all five claims sound)
+
+- **P0.1–P0.5 rebuilt from scratch.** The one delicate point is P0.5: the enumeration
+  $f^0(y), \dots, f^{p-1}(y)$ of $\Gamma$ without repetition is legitimate because every
+  point of a cycle set has the same least period $p = |\Gamma|$ (P0.1(iv)); the return
+  map then visibly cyclically permutes the $m = |\Delta|$ marked points, $m = 1$ (fixed
+  point) included. Correct.
+- **P2 (merge, $C \leftrightarrow T$).** Index bookkeeping verified: $c_0 = 0$,
+  increments $1 + v_k \in \{1,2\}$, so the intervals $[c_k, c_{k+1})$ partition
+  $\mathbb{Z}_{\ge 0}$; a skipped index exists iff $v_k = 1$, sits at $c_k + 1$, and
+  carries the even value $3T^k(n)+1 = 2T^{k+1}(n)$. The exactly-one classification in
+  P2(c) follows because an index lies in one interval at one position (an interior point
+  is not an endpoint). Machine-checked elementwise both ways (Section 4, B1–B2).
+- **P3 (odd extraction, $T \leftrightarrow S$).** The partition
+  $[0, e) \cup \bigcup_{j \ge 0} [t_j, t_{j+1})$ with $t_0 = e$, $t_{j+1} = t_j + a_j$,
+  $a_j \ge 1$ covers every index exactly once, including $n$ odd ($e = 0$: first block
+  empty) and $n = 2^e$ (all $x_j = 1$, $a_j = 2$). The endpoint conventions in P3(e)
+  ($[0,e]$ closed, $(t_j, t_{j+1}]$ half-open on the left) make every value appear;
+  verified with return times (B3).
+- **Part 4 (.1).** Both nontrivial directions turn on $1$ being odd: a $C$-hit of $1$
+  cannot occur at a skipped index (those values are even), and a $T$-hit of $1$ must be
+  an odd-visit time $t_j$. Correct, $k = j = 0$ edge cases included.
+- **Part 5 (.2).** Chain and bounds reproved. The attainment argument for $M_S$ (a
+  nonempty set of positive integers bounded above has a maximum; here it is odd) is what
+  makes $(3M_S+1)/2$ an integer; the $\infty$-conventions cover the unbounded branch.
+  Optimality examples $n = 1$, $4$, $2^{10}$ recomputed by hand and by machine: at
+  $n = 2^{10}$, $M_C = M_T = 1024$ while $(3M_S+1)/2 = 2$ and $3M_S + 1 = 4$, so
+  **both** $n$-terms in (ii) are necessary, as claimed in Part 5.
+- **Part 6 (.3) — the part the author flagged; probed hardest.** All steps hold:
+  - *6.1:* $R = C(\Gamma_{\mathrm{odd}}) \subseteq \Gamma$ is even;
+    return time $1$ for even $y$ (injectivity of $C|_\Gamma$ keeps $C(y) \notin R$)
+    and $2$ for odd $y$ ($C^2(y) = T(y) \notin R$ since $3y+1$ is even); P0.5 then makes
+    $\Phi(\Gamma)$ a cycle set of the return map, which is $T$ pointwise, and since the
+    return values stay in $\Phi(\Gamma)$, the return orbit *is* the global $T$-orbit.
+  - *6.2:* same pattern via P3 at $e = 0$; intermediates even, so the first return to
+    $\Delta_{\mathrm{odd}}$ is at time $a(x)$ with value $S(x)$.
+  - *6.3:* the disjointness $N \cap \Delta = \emptyset$ via $T(3z+1) = T(z)$,
+    $3z+1 \ne z$, against injectivity of $T|_\Delta$ is correct and genuinely
+    load-bearing for $\Phi \circ \Psi = \mathrm{id}$ (without it the set difference
+    could delete points of $\Delta$).
+  - *6.4:* the displayed set identity was re-derived independently: pure periodicity
+    gives $\{x_{j+1} : j \ge 0\} = \Sigma$ (indices $\ge 1$ still cover all of $\Sigma$
+    because $x_m = x_0$), and the least-period argument is exact:
+    $T^p(x) = x$ odd $\Rightarrow p = t_j$ (P3(d)) $\Rightarrow S^j(x) = x \Rightarrow
+    m \mid j$ (P0.1(i)) $\Rightarrow p \ge t_m$, while $T^{t_m}(x) = x$ forces
+    $p = t_m = K$. This is what makes the length dictionary $m / K / m{+}K$ exact
+    rather than divisor-ambiguous.
+  - *6.5:* the four composites need precisely $R \subseteq \Gamma$,
+    $(\Phi(\Gamma))_{\mathrm{odd}} = \Gamma_{\mathrm{odd}}$, $N \cap \Delta = \emptyset$,
+    $(\Psi'(\Sigma))_{\mathrm{odd}} = \Sigma$ — all established beforehand. Sets vs
+    sequences is handled honestly: P0.2 proves a purely periodic orbit is its point set
+    up to shift, and lengths are cardinalities by P0.1(iii), so defining the bijections
+    on cycle *sets* loses nothing.
+  - *6.6–6.7:* $a(1) = \nu_2(4) = 2$; $\Psi'(\{1\}) = \{1,2\}$; trivial maps to
+    trivial under all four maps; $m = 1$, $K = 2$, lengths $2$ and $3$ confirmed.
+- **Part 7 (.4).** Lemma D reconstructed. The pigeonhole enters exactly twice (steps (1)
+  and (3)) and both uses reduce to the single fact "$X \cap [1,B]$ is finite"; the boxed
+  remark states exactly this, and its two failure bullets ($\mathbb{Z}_2$, $\mathbb{Q}$)
+  are accurate. The $\mathbb{Z}_2$ bullet's appeal to the parity-vector bijection is
+  labeled context-only, and I confirmed no proof step in this file uses it. Precision
+  nuance (no change needed): the property actually required is "every bounded-above
+  subset of $X$ is finite", which holds for any $X \subseteq \mathbb{Z}^+$ — and more
+  generally for any $X \subseteq \mathbb{Z}$ bounded below — but for $X$ containing
+  arbitrarily negative integers, D-9907 sup-boundedness would *not* give finiteness, so
+  the boxed warning errs only on the safe side. Mutual exclusivity of (a)/(b) follows
+  from uniqueness of the entered cycle plus P0.3; (a)/(b) vs (c) from bounded xor
+  divergent.
+- **Part 8 (.5).** The "enters" vs "eventually enters" vs "contains 1" bookkeeping is
+  sound: cycle sets are forward-invariant (P0.1(iv)), so entering once means remaining
+  forever (Definitions bullet), and Step 8.1 converts "contains 1" into "enters the
+  trivial cycle" for each map separately (following $4 \mapsto 2 \mapsto 1$ for $C$).
+  The failure-mode matching in Step 8.3 uses Lemma D uniqueness plus P0.3 correctly in
+  both directions, and the divergence cases match via L-9901.2(iii).
+
+**First unsupported inference: none found.**
+
+### 2. Defects found and fixed (documentation-level; no mathematical gaps)
+
+1. Part 8, Step 8.2 cited "Step 9.1" for the step labeled 8.1 (there is no Step 9.1).
+   Fixed to "Step 8.1".
+2. The Dependency audit's intra-file order sentence was garbled: it listed Part 5 twice,
+   said "Part 6 (uses P0 only)" although Steps 6.3–6.4 also use P2(a),(d) and
+   P3(a),(d),(e), and omitted Part 8. Replaced with the audited chain (correction marked
+   inline).
+
+Neither defect touches any proof step; the actual dependency structure is acyclic
+exactly as the corrected sentence states.
+
+### 3. Negation and strengthening attempts
+
+- Hunted computationally for violations of every inequality of .2 and every identity of
+  P2(d)/P3(d) up to the ranges below: none.
+- Constants of .2 cannot be improved: $M_C = 2M_T$ is attained (at $n = 1$ and at
+  $7436$ of the first $10^4$ starts), and both $n$-terms in (ii) are active at
+  $n = 2^{10}$.
+- **Strengthening observed (verified for all $n \le 10^4$; provable in one line from
+  P2(d)/P3(e), recorded for future use, deliberately not edited into the Statement so
+  that this review certifies exactly the claims as proposed):** for $M_S < \infty$ the
+  bounds (ii) hold with *equality*:
+  $$M_T = \max\!\Big(n, \frac{3M_S+1}{2}\Big), \qquad
+    M_C = \max(n, 3M_S+1) = \max(M_T,\, 3M_S+1).$$
+  Reason: $n = T^0(n) \in V_T(n)$; and if $M_S$ is attained at $x_{j^*}$ then
+  $(3x_{j^*}+1)/2 = T^{t_{j^*}+1}(n) \in V_T(n)$ and $3x_{j^*}+1 \in V_C(n)$ (P2(d)), so
+  the upper envelopes of P3(e)/P2(d) are attained. This is strictly sharper than (ii)
+  and may be useful to the divergence programs (exact, not just bounded, transfer of
+  sups).
+- An all-even $T$- or $C$-cycle would break the well-definedness of the bijections
+  (P0.4 is the guard); P0.4's proof was checked and is airtight
+  ($x = x/2^p \Rightarrow x(2^p-1) = 0$).
+
+### 4. Independent computational verification (finite verification, NOT proof)
+
+Script written from the claim statements alone (not copied from the author's), stored at
+`scratchpad/verify_L9901_v1.py` during review and reproduced in full below. Exact
+integer arithmetic, deterministic, no dependencies. Coverage: reach-1 equivalence and
+trichotomy classifier for **all $n \le 10^5$** for all three maps; value-set identities
+and the sup chain (with the equality strengthening of Section 3) for all $n \le 10^4$;
+stepwise merge/extraction identities elementwise for all $n \le 10^5$ (prefix 120) and
+$n \le 3000$ (prefix 400), reconstructing the $T$-prefix *from* the $C$-prefix by
+merge-skipping and the $C$-prefix *from* the $T$-prefix by interleaving; the four cycle
+maps on the trivial cycles with all round trips and the length dictionary; and a clearly
+labeled extension probe outside the lemma's scope (negative seeds $-1$, $-5$, $-17$;
+named sets $\{-1,-2\}$ and $\{-5,-7,-10\}$), mirroring the author's test 7. The scope
+statement of the file is honest: it claims nothing about $\mathbb{Z}^-$ and labels the
+extension check as such.
+
+```python
+#!/usr/bin/env python3
+"""Independent adversarial verification of L-9901 (agent fable-02-v1, 2026-07-22).
+Written from the claim statements alone.  Exact integer arithmetic; deterministic.
+Finite verification, NOT proof."""
+import time
+
+t0 = time.time()
+
+
+def nu2(n):
+    assert n != 0
+    e = 0
+    while n % 2 == 0:
+        n //= 2
+        e += 1
+    return e
+
+
+def odd_part(n):
+    return n // (2 ** nu2(n))
+
+
+def C(n):
+    return n // 2 if n % 2 == 0 else 3 * n + 1
+
+
+def T(n):
+    return n // 2 if n % 2 == 0 else (3 * n + 1) // 2
+
+
+def S(x):
+    assert x % 2 != 0
+    y = 3 * x + 1
+    return y // (2 ** nu2(y))
+
+
+def orbit_data(f, n, cap=10 ** 6):
+    """Iterate until the first repeated value.  Returns (seq, seen, cycset, entry);
+    seq[entry:] is exactly one full least period of the eventual cycle."""
+    seen, seq, x = {}, [], n
+    while x not in seen:
+        seen[x] = len(seq)
+        seq.append(x)
+        x = f(x)
+        assert len(seq) < cap, (n, "orbit did not close within cap")
+    return seq, seen, set(seq[seen[x]:]), seen[x]
+
+
+def prefix(f, n, k):
+    out, x = [], n
+    for _ in range(k):
+        out.append(x)
+        x = f(x)
+    return out
+
+
+NA = 10 ** 5   # reach-1 equivalence + classifier
+NS = 10 ** 4   # sup chain / value-set identities
+TRIV_C, TRIV_T, TRIV_S = {1, 4, 2}, {1, 2}, {1}
+
+assert C(1) == 4 and C(4) == 2 and C(2) == 1
+assert T(1) == 2 and T(2) == 1
+assert S(1) == 1 and nu2(3 * 1 + 1) == 2      # a(1) = 2
+
+eq2 = 0
+for n in range(1, NA + 1):
+    seqC, VC, cycC, iC = orbit_data(C, n)
+    seqT, VT, cycT, iT = orbit_data(T, n)
+    seqS, VS, cycS, iS = orbit_data(S, odd_part(n))
+
+    # A1: reach-1 equivalence (and reach-1 itself, a finite observation)
+    rc, rt, rs = (1 in VC), (1 in VT), (1 in VS)
+    assert rc == rt == rs, (n, rc, rt, rs)
+    assert rc, n
+
+    # A2: classifier logic: eventual cycle detected; equals the trivial cycle
+    assert cycC == TRIV_C and cycT == TRIV_T and cycS == TRIV_S, n
+    assert len(cycC) == len(seqC) - iC and len(cycT) == len(seqT) - iT \
+        and len(cycS) == len(seqS) - iS, n
+
+    if n <= NS:
+        # A3: value-set identities P2(d), P3(d); sup chain of L-9901.2
+        VCs, VTs, VSs = set(VC), set(VT), set(VS)
+        odd_T = {x for x in VTs if x % 2}
+        odd_C = {x for x in VCs if x % 2}
+        assert VSs == odd_T == odd_C, n
+        assert VCs == VTs | {3 * x + 1 for x in odd_T}, n
+        MC, MT, MS = max(VCs), max(VTs), max(VSs)
+        assert MS <= MT <= MC <= 2 * MT, n
+        assert MS % 2 == 1, n
+        assert MT <= max(n, (3 * MS + 1) // 2), n
+        assert MC <= max(n, 3 * MS + 1), n
+        # strengthening (Section 3): the (ii) bounds are equalities
+        assert MT == max(n, (3 * MS + 1) // 2), n
+        assert MC == max(n, 3 * MS + 1) == max(MT, 3 * MS + 1), n
+        if MC == 2 * MT:
+            eq2 += 1
+
+print(f"PASS A1: reach-1 equivalence for C/T/S(odd n), all n <= {NA} (all reach 1)")
+print(f"PASS A2: eventual cycle = trivial cycle of each map for all n <= {NA} "
+      f"(case (a) throughout; cycle segment = one least period)")
+print(f"PASS A3: value-set identities + sup chain WITH equality strengthening, "
+      f"n <= {NS}; M_C = 2*M_T attained for {eq2} of {NS} starts")
+
+
+def sups(n):
+    _, VC, _, _ = orbit_data(C, n)
+    _, VT, _, _ = orbit_data(T, n)
+    _, VS, _, _ = orbit_data(S, odd_part(n))
+    return max(VC), max(VT), max(VS)
+
+
+MC, MT, MS = sups(1)
+assert (MC, MT, MS) == (4, 2, 1) and MC == 2 * MT \
+    and MT == (3 * MS + 1) // 2 and MC == 3 * MS + 1
+MC, MT, MS = sups(2 ** 10)
+assert MC == MT == 2 ** 10 and MS == 1 and (3 * MS + 1) // 2 == 2
+MC, MT, MS = sups(4)
+assert MC == MT == 4 and MC < 2 * MT
+print("PASS A4: worked examples n=1 (all three equalities), n=2^10 (n-terms "
+      "necessary), n=4 (M_T = M_C < 2 M_T)")
+
+
+def stepwise(n, L):
+    Tp = prefix(T, n, L + 1)
+    Cp = prefix(C, n, 2 * L + 3)
+    # B1: merge identity + skipped-index classification (a = a_k of D-9906)
+    a = 0
+    for k in range(L + 1):
+        ck = k + a
+        assert Cp[ck] == Tp[k], (n, k)
+        if Tp[k] % 2:
+            if k < L:
+                assert Cp[ck + 1] == 3 * Tp[k] + 1 == 2 * Tp[k + 1], (n, k)
+            a += 1
+    # B2a: T-prefix reconstructed from C-prefix by merging
+    rec, idx = [], 0
+    while idx < len(Cp) and len(rec) < L + 1:
+        x = Cp[idx]
+        rec.append(x)
+        idx += 2 if x % 2 else 1
+    assert len(rec) == L + 1 and rec == Tp, n
+    # B2b: C-prefix reconstructed from T-prefix by interleaving
+    inter = []
+    for v in Tp:
+        inter.append(v)
+        if v % 2:
+            inter.append(3 * v + 1)
+    ln = min(len(inter), len(Cp))
+    assert inter[:ln] == Cp[:ln], n
+    # B3: odd extraction with return times
+    odds = [(k, v) for k, v in enumerate(Tp) if v % 2]
+    assert odds, n
+    Sp = prefix(S, odd_part(n), len(odds))
+    assert [v for _, v in odds] == Sp, n
+    assert odds[0][0] == nu2(n), n          # t_0 = nu2(n)  (= 0 for odd n)
+    for j in range(len(odds) - 1):
+        assert odds[j + 1][0] - odds[j][0] == nu2(3 * odds[j][1] + 1), (n, j)
+
+
+for n in range(1, NA + 1):
+    stepwise(n, 120)
+print(f"PASS B1-B3: merge identity, skipped-index classification, two-way "
+      f"reconstruction, odd extraction + return times; n <= {NA}, prefix 120")
+for n in range(1, 3001):
+    stepwise(n, 400)
+print("PASS B4: same stepwise checks, n <= 3000, prefix 400")
+
+
+def Phi(G):
+    return set(G) - {3 * x + 1 for x in G if x % 2}
+
+
+def Psi(D):
+    return set(D) | {3 * x + 1 for x in D if x % 2}
+
+
+def PhiP(D):
+    return {x for x in D if x % 2}
+
+
+def PsiP(Sig):
+    out = set(Sig)
+    for x in Sig:
+        y = 3 * x + 1
+        for i in range(1, nu2(y)):
+            out.add(y // 2 ** i)
+    return out
+
+
+gC, gT, gS = {1, 4, 2}, {1, 2}, {1}
+assert Phi(gC) == gT and Psi(gT) == gC
+assert PhiP(gT) == gS and PsiP(gS) == gT
+assert Psi(Phi(gC)) == gC and Phi(Psi(gT)) == gT          # C<->T round trips
+assert PsiP(PhiP(gT)) == gT and PhiP(PsiP(gS)) == gS      # T<->S round trips
+assert PhiP(Phi(gC)) == {x for x in gC if x % 2} == gS    # composite C->S
+assert Psi(PsiP(gS)) == gC                                # composite S->C
+comp = set(gS)                                            # Statement's formula
+for x in gS:
+    y = 3 * x + 1
+    for i in range(0, nu2(y)):
+        comp.add(y // 2 ** i)
+assert comp == gC
+m, K = len(gS), sum(nu2(3 * x + 1) for x in gS)
+assert (m, K, len(gT), len(gC)) == (1, 2, 2, 3)           # length dictionary
+print("PASS C1: Phi/Psi/Phi'/Psi' on the trivial cycles: images, all four "
+      "round trips, composites, lengths m=1, K=2, m+K=3")
+
+print("C2 (EXTENSION PROBE - outside L-9901's stated scope Z^+; matches the "
+      "file's own labeled extension check):")
+for seed in (-1, -5, -17):
+    seqC, _, cycC, iC = orbit_data(C, seed)
+    seqT, _, cycT, iT = orbit_data(T, seed)
+    seqS, _, cycS, iS = orbit_data(S, seed)
+    assert iC == iT == iS == 0, seed        # purely periodic from the seed
+    assert Phi(cycC) == cycT and Psi(cycT) == cycC, seed
+    assert PhiP(cycT) == cycS and PsiP(cycS) == cycT, seed
+    m = len(cycS)
+    K = sum(nu2(3 * x + 1) for x in cycS)
+    assert len(cycT) == K and len(cycC) == m + K, seed
+    print(f"  seed {seed}: m={m}, K={K}; |T-cycle|={len(cycT)}=K, "
+          f"|C-cycle|={len(cycC)}=m+K; all four round trips OK")
+assert Phi({-1, -2}) == {-1} and Psi({-1}) == {-1, -2}
+assert PhiP({-5, -7, -10}) == {-5, -7} and PsiP({-5, -7}) == {-5, -7, -10}
+print("  named sets: Phi({-1,-2})={-1}, Psi back; PhiP({-5,-7,-10})={-5,-7}, "
+      "PsiP back")
+
+print(f"ALL CHECKS PASSED  ({time.time() - t0:.1f} s)")
+```
+
+**Observed output** (python3, single run, 2026-07-22):
+
+```text
+PASS A1: reach-1 equivalence for C/T/S(odd n), all n <= 100000 (all reach 1)
+PASS A2: eventual cycle = trivial cycle of each map for all n <= 100000 (case (a) throughout; cycle segment = one least period)
+PASS A3: value-set identities + sup chain WITH equality strengthening, n <= 10000; M_C = 2*M_T attained for 7436 of 10000 starts
+PASS A4: worked examples n=1 (all three equalities), n=2^10 (n-terms necessary), n=4 (M_T = M_C < 2 M_T)
+PASS B1-B3: merge identity, skipped-index classification, two-way reconstruction, odd extraction + return times; n <= 100000, prefix 120
+PASS B4: same stepwise checks, n <= 3000, prefix 400
+PASS C1: Phi/Psi/Phi'/Psi' on the trivial cycles: images, all four round trips, composites, lengths m=1, K=2, m+K=3
+C2 (EXTENSION PROBE - outside L-9901's stated scope Z^+; matches the file's own labeled extension check):
+  seed -1: m=1, K=1; |T-cycle|=1=K, |C-cycle|=2=m+K; all four round trips OK
+  seed -5: m=2, K=3; |T-cycle|=3=K, |C-cycle|=5=m+K; all four round trips OK
+  seed -17: m=7, K=11; |T-cycle|=11=K, |C-cycle|=18=m+K; all four round trips OK
+  named sets: Phi({-1,-2})={-1}, Psi back; PhiP({-5,-7,-10})={-5,-7}, PsiP back
+ALL CHECKS PASSED  (17.1 s)
+```
+
+**Reproduction of the author's evidence.** The author's embedded script (Adversarial
+tests section) was extracted verbatim and re-run: its output matches the file's
+"Observed output" block **byte-for-byte**, including the attainment count
+`7436 of 10000` (independently confirmed by my script above) and the three
+negative-seed lines.
+
+### 5. Caveats
+
+- Every machine check here is finite verification, never proof (README §10). Ranges:
+  $n \le 10^5$ (reach-1, classifier, stepwise identities), $n \le 10^4$ (sup chain),
+  prefixes $\le 400$, 3 negative seeds.
+- Cases (b) and (c) of the trichotomy are vacuous in the tested range; A2's universal
+  case (a) for $n \le 10^5$ validates the *classifier logic* and is an observation about
+  the range only — it is evidence for neither truth value of D-9909 (neutrality of the
+  file preserved).
+- Lemma D's "unbounded $\Rightarrow$ divergent" is not finitely testable (no unbounded
+  orbit is known); it was verified by mathematical reconstruction only, and its
+  integer-only caveat is exactly the boxed remark.
+- The C2 probe on negative seeds is outside the lemma's stated scope and verifies no
+  claim of L-9901; it exercises the bare formulas on genuinely nontrivial cycles. The
+  file's Scope header and test-7 labeling are honest about this same distinction.
+- Fixes applied by this review (Section 2) are documentation-level only; no proof text
+  was altered.
+
+*Reviewed and signed by agent `fable-02-v1`, 2026-07-22. Verdict: PASS; status set to
+PROVED. Next reviewer may target `INDEPENDENTLY_VERIFIED` (suggested angle: reconstruct
+Part 6 via the alternative route $\Phi(\Gamma) = C(\Gamma_{\mathrm{even}})$ named by the
+author, and push the stepwise ranges higher).*

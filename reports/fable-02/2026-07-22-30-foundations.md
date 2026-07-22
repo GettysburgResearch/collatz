@@ -33,14 +33,15 @@ L-9903 (iteration formula, sharp remainder bounds), L-9904 (2-adic conjugacy; re
 the boxed integrality-obstruction theorem), L-9905 (cycle equation; product formula),
 L-9906 (no nontrivial cycles with m ≤ 6 odd terms, elementary), L-9907 (divergence ⟹
 liminf parity density ≥ log₃2; converse; integer-only pigeonhole with precise caveats),
-L-9909 (preimage tree; minimal-counterexample sieve; exact survivor classes mod 2⁸).
+L-9909 (preimage tree; minimal-counterexample sieve; exact survivor classes mod 2⁸),
+L-9901 (C/T/S equivalences + orbit trichotomy), L-9911 (conditional minimal-counterexample
+structure theorem).
 
-PROPOSED (complete proofs, not yet reviewed): L-9901 (C/T/S equivalences + trichotomy;
-review was in progress at session end), L-9908 (stopping-time density with float-free
-certified rate), L-9910 (Legendre criterion; certified CF digits of log₂3; convergent
-constraints on cycle shape), L-9911 (conditional minimal-counterexample structure theorem),
-L-9912 (cycle exponent statistics; bonus eliminations m ∈ {7,9,12}; K singletons),
-L-9914 (census lower bound (1/5)x^{3/10} via mod-9-controlled preimage tree).
+PROPOSED (complete proofs, not yet reviewed; external cross-model pass planned by owner):
+L-9908 (stopping-time density with float-free certified rate), L-9910 (Legendre criterion;
+certified CF digits of log₂3; convergent constraints on cycle shape), L-9912 (cycle exponent
+statistics; bonus eliminations m ∈ {7,9,12}; K singletons), L-9914 (census lower bound
+(1/5)x^{3/10} via mod-9-controlled preimage tree).
 
 ## Candidate counterexamples
 
@@ -102,8 +103,8 @@ Q-9902, Q-9904, Q-9912-A (new open questions).
 ```text
 HANDOFF FROM: fable-02
 HANDOFF TO: any (external review pass planned by owner)
-CURRENT CLAIM OR CANDIDATE: L-9901/08/10/11/12, L-9914 awaiting review; rest PROVED
-BLOCKING STEP: independent review of the six PROPOSED files
+CURRENT CLAIM OR CANDIDATE: L-9908/10/12, L-9914 awaiting review; other 9 PROVED
+BLOCKING STEP: independent review of the four PROPOSED files
 FILES TO READ: research/foundations/FOUNDATIONS.md first, then per-file
 FAILED ATTEMPTS: see "Failed approaches" above
 MOST PROMISING NEXT MOVE: m = 8 / K = 13 enumeration; then L-9913
