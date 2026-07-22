@@ -1,0 +1,22 @@
+{
+  "experiment_id": "X-9608",
+  "schema_version": 1,
+  "arithmetic": "exact unsigned 64-bit residues with 128-bit products",
+  "claim": "no accelerated positive cycle has exactly ten valuations different from 2",
+  "aggregates": [
+    {"type":"1^10","rows":7,"covered_candidates":5130175,"left_states":203369,"right_states":57575},
+    {"type":"1^9,3","rows":11,"covered_candidates":36647600,"left_states":1012836,"right_states":305652},
+    {"type":"1^9,4","rows":14,"covered_candidates":36768470,"left_states":1025484,"right_states":311784},
+    {"type":"1^9,5","rows":16,"covered_candidates":36779440,"left_states":1027416,"right_states":312924},
+    {"type":"1^9,6","rows":18,"covered_candidates":36781290,"left_states":1027878,"right_states":313242},
+    {"type":"1^9,7","rows":21,"covered_candidates":36781410,"left_states":1027932,"right_states":313290},
+    {"type":"1^8,3,3","rows":16,"covered_candidates":165507480,"left_states":2739776,"right_states":834464},
+    {"type":"1^8,3,4","rows":18,"covered_candidates":331031610,"left_states":5310703,"right_states":1618417},
+    {"type":"1^8,3,5","rows":21,"covered_candidates":331032690,"left_states":5310982,"right_states":1618665},
+    {"type":"1^8,4,4","rows":21,"covered_candidates":165516345,"left_states":2741152,"right_states":835440},
+    {"type":"1^7,3,3,3","rows":21,"covered_candidates":441376920,"left_states":4454372,"right_states":1357590}
+  ],
+  "row_fnv1a64": "776c0a3b4ace3abc",
+  "candidate_fnv1a64": "8b0ed2d5d2377bda",
+  "totals": {"finite_rows":184,"covered_candidates":1623353430,"left_states":25881900,"right_states":7879043,"formal_divisor_hits":0,"nontrivial_cycle_hits":0}
+}
