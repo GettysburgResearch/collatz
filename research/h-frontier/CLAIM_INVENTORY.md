@@ -2,7 +2,7 @@
 
 This index reserves the `*-9500` identifiers for issue #17. It is not the
 repository's canonical `CLAIMS.md`. All theorem-level statements remain
-`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9507`
+`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9508`
 are empirical or exact finite checks and do not promote any universal claim.
 
 ## Packet files
@@ -19,8 +19,10 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_07.md`](claims/ITERATION_07.md) — `L-9519`, `L-9520`, `T-9513`, `T-9514`, `R-9504`, `Q-9508`.
 - [`claims/ITERATION_08.md`](claims/ITERATION_08.md) — `L-9521`, `L-9522`, `T-9515`, `R-9505`, `Q-9509`.
 - [`claims/ITERATION_08B.md`](claims/ITERATION_08B.md) — `L-9523`, `R-9506`, `Q-9510`.
+- [`claims/ITERATION_09.md`](claims/ITERATION_09.md) — `L-9524`, `L-9525`, `R-9507`, `Q-9511`.
 - [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact ordinary and short-period counterexample sweep.
 - [`../../experiments/X-9507-h-cycle-complexity/README.md`](../../experiments/X-9507-h-cycle-complexity/README.md) — exact continued-fraction cycle-period certificate.
+- [`../../experiments/X-9508-h-compiler-renewal/README.md`](../../experiments/X-9508-h-compiler-renewal/README.md) — exact compiler and centered-renewal box audit.
 
 ## Status table
 
@@ -82,8 +84,13 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `L-9523` | Prefix-return capital barrier | PROPOSED | `T-9502`, exact repeated-factor divisibility |
 | `R-9506` | Short-return substitutions require excessive capital | PROPOSED | consequence of `L-9523` |
 | `Q-9510` | Delayed-novelty structured counterexample interface | IDEA | exact carry stabilization remains mandatory |
+| `L-9524` | Zero-carry macro descent criterion | PROPOSED | exact fixed-point comparison |
+| `L-9525` | `10/30` compiler counterexample no-go | PROPOSED | `L-9524`, `T-9502`/`T-9506`, cross-direction compiler data |
+| `R-9507` | Abstract tail freedom is not physical ordinary freedom | PROPOSED | consequence of `L-9525` |
+| `Q-9511` | Physical expanding macro construction interface | IDEA | zero carry, integral growth, and escape all required |
 | `X-9506` | Exact counterexample-first ordinary and short-period sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no word cycle through period 14 |
 | `X-9507` | Exact cycle-period compression certificate | INTERNAL EXACT | finite only; supports `T-9515` |
+| `X-9508` | Exact compiler and renewal-box audit | INTERNAL EXACT | finite only; 1,200,600 stars, no cycle |
 
 ## Dependency summary
 
@@ -121,14 +128,25 @@ Iteration 08 attacks structured counterexamples directly:
    Sturmian/Beatty/automatic/substitution architectures once their native
    complexity or recurrence constants are supplied.
 
+Iteration 09 closes the cross-direction compiler as a counterexample mechanism:
+
+1. zero-carry uses of `10` or `30` strictly decrease the positive integral
+   endpoint;
+2. removing the terminal zeros leaves an aperiodic irrational-rotation
+   directive with bounded cumulative multiplier, contradicting nonperiodic
+   real escape;
+3. the abstract `2`-adic full shift therefore does not furnish physical
+   ordinary freedom.
+
 `X-9506` exhausts every ordinary candidate below `3*2^65`; its largest exact
 block lifetime is thirty-four. `X-9507` upgrades the periodic exclusion from
-word period fourteen to more than 2.47 billion blocks by a proof-producing
-continued-fraction certificate.
+word period fourteen to more than 2.47 billion blocks. `X-9508` checks
+1,200,600 centered renewal stars and finds no cycle.
 
 No structured counterexample has been found. A viable one must now be
 nonperiodic, generate sufficiently delayed symbolic novelty, satisfy the
 factor-entropy and return-capital bounds, inject infinitely many fresh bridge
-primes, and still provide one positive integer whose extension carries are
+primes, provide a physical expanding macro mechanism outside the `10/30`
+compiler, and still furnish one positive integer whose extension carries are
 eventually zero. The other remaining architecture uses unbounded reset--renewal
 letters subject to the deficit-pressure and discounted-budget restrictions.
