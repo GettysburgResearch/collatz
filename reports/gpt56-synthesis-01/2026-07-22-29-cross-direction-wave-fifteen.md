@@ -23,8 +23,10 @@ The final audited source heads are PR #3 `c37e96e`, PR #13 `dc7f966`, PR #33
 `93739b4` to `aa9cf71`; the move only added `L-9416`, `L-9417`, and
 `T-9418`--`T-9421`.  The `L-9408` and `L-9415` blobs used by `T-9812` are
 unchanged.  The new scalar irrationality and rational-code classification do
-not contain the solution Casoratian proved here, but they change its intended
-next use from scalar irrationality to stronger two-value estimates.
+not contain the solution Casoratian proved here.  A subsequent live-source
+audit, recorded in `R-9809`, found that their denominator-descent proofs
+identify rational 2-adic tails with separate positive real shadows.  They are
+therefore not used to narrow `T-9812`'s role; its proof is independent.
 
 ## Delegation and review
 
@@ -157,10 +159,11 @@ v_2(Delta_W(x))=54(m+d_1)+6.
 
 Hence the two-by-two physical sample matrix is nonsingular over both the real
 and 2-adic embeddings.  This does not itself prove Q-linear independence of
-the specialized values.  At the refreshed PR #20 head scalar irrationality is
-already known by an elementary denominator argument; the next source audit
-should target a quantitative two-value independence measure or stronger
-arithmetic classification.
+the specialized values.  The refreshed PR #20 head proposed an elementary
+denominator argument for scalar irrationality, but `R-9809` subsequently
+found an unsupported cross-completion bound in that chain.  A correct source
+audit may therefore target scalar irrationality, two-value independence, or a
+quantitative measure, with each conclusion kept separate.
 
 ## Exact checks and review
 
@@ -174,7 +177,8 @@ arithmetic classification.
   matching, reduction, height, and distinct denominators.
 - `T-9812`: formal independence, coefficient symmetrization, the period-one
   edge case, finite-truncation passage, unique least-valuation pair, and the
-  no-specialization-overclaim boundary were reconstructed independently.
+  no-specialization-overclaim boundary were reconstructed independently.  Its
+  mathematics does not depend on the later PR #20 denominator chain.
 
 No finite computation is used as a theorem premise.
 
@@ -212,9 +216,9 @@ changed.
    exponent geometry to reduce the two fresh-prime directions globally.
 3. Seek a native criterion making the PR #3 room algebraic; together with
    `T-9811` that would exclude every assumed ordinary path.
-4. Audit a precise p-adic q-functional theorem only for a stronger
-   two-value rank or measure, using `T-9812`'s exact determinant and valuation
-   as hypotheses.
+4. Audit a precise p-adic q-functional theorem for scalar irrationality,
+   two-value rank, and quantitative measure as three distinct targets, using
+   `T-9812`'s exact determinant and valuation as hypotheses.
 
 ## Organizational improvement ideas
 

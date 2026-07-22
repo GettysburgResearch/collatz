@@ -136,9 +136,11 @@ transcendence of every hypothetical room.  The integrating lane derived a
 native solution q-Casoratian, while a nonauthoring review repaired the
 infinite 2-adic rearrangement through finite truncations.  PR #20 moved during
 final review; its two dependency blobs remained unchanged, while its new
-scalar irrationality theorem redirected the Casoratian toward stronger
-two-value estimates.  All four claims received nonauthoring cold reviews and
-remain `PROPOSED` pending external review.
+denominator-descent chain did not overlap the Casoratian.  A subsequent audit
+in `R-9809` found that this new chain identifies rational 2-adic tails with
+separate positive real shadows, so it does not close scalar irrationality.
+All four wave-fifteen claims received nonauthoring cold reviews and remain
+`PROPOSED` pending external review.
 
 ## Source-branch audit
 
@@ -189,7 +191,8 @@ remain `PROPOSED` pending external review.
 | `PR3/L-0025`, `L-0031`, `T-0033` at `c37e96e`; local `T-9808` | `T-9809` computes the exact first three prefix exponents, proves that three is the shortest single-scale prefix whose dyadic modulus outruns the room scale, and packs every eventual room into one of 64 shrinking address intervals. | The set may still be nonempty and is not effectively listed.  Prefix minimality is specific to the one-scale modulus method and leaves all remaining word/seam checks open. |
 | `PR3/L-0031`, `L-0032`, `T-0032` at `c37e96e`; local `T-9805` | `T-9810` freezes three incoming ternary and four outgoing binary signatures, absorbs all bounded endpoint powers of `2` and `3` into coefficients, and leaves one scale plus two directions per fresh prime. | The rank is `<=2f+1` and the ESS exponent improves from `2f+6` to `2f+2`, but the constant is astronomical and no cross-stage rank-one relation is proved. |
 | `PR3/O-0011`, `L-0032`, `T-0033` at `c37e96e`; Ridout 1958 and Bilu's exact projective formulation | `T-9811` matches targets `(C_infinity,0,infinity)` at the real, binary, and ternary places, verifies the exact projective height, and proves infinitely many distinct reduced approximants. | Every hypothetical fixed room is transcendental.  The result is conditional on the PR #3 interfaces, ineffective, and neither constructs nor excludes an ordinary path by itself. |
-| `PR20/L-9408`, `L-9415` at live head `aa9cf71` | `T-9812` proves formal two-shift independence, symmetrizes the native solution Casoratian, and identifies the unique physical least-valuation pair, giving `v_2=54(m+d_1)+6`. | The specialized matrix is nonzero over both embeddings, but this alone is not Q-linear independence of its values.  New `T-9419` already supplies scalar irrationality; quantitative two-value estimates remain open. |
+| `PR20/L-9408`, `L-9415` at live head `aa9cf71` | `T-9812` proves formal two-shift independence, symmetrizes the native solution Casoratian, and identifies the unique physical least-valuation pair, giving `v_2=54(m+d_1)+6`. | The specialized matrix is nonzero over both embeddings, but this alone is neither scalar irrationality nor Q-linear independence of its values.  The later denominator shortcut is quarantined by `R-9809`. |
+| `PR20/L-9416`, `L-9417`, `T-9418`--`T-9421` at `aa9cf71` | `R-9809` preserves the exact denominator descents but separates each rational 2-adic tail from its positive real shadow.  Subtracting the two recurrences gives defects `T^(-(h_j-h_0))D_0` and `T^(-n)D_0`. | The compact real bounds do not control embedded rational 2-adic tails, so bounded gaps, all-directive stack irrationality, rational-code periodicity, and ordinary-section triviality are not established by this chain.  The theorem statements are not refuted. |
 
 ## New-claim audit matrix
 
@@ -235,7 +238,8 @@ remain `PROPOSED` pending external review.
 | `T-9809` | prefix/period lane, quantitative reviewer, and cap reviewer | exact prefix sums, rational logarithmic bounds, prefix injectivity, 64-interval packing, nonuniform onsets, full-tail uniqueness, and one-scale minimality were reconstructed | 64 rooms may remain; later symbols, cap stitches, and multi-scale/odd-prime improvements are open |
 | `T-9810` | quantitative-prime lane and period reviewer | all endpoint signatures, context count, coefficient absorption, fresh-prime tuple generators, rank, scale distinctness, endpoint retention, and both initialized/uninitialized inversions were reconstructed | two directions per fresh prime remain, and the effective constant is structurally useful but computationally vacuous |
 | `T-9811` | cap/Ridout lane and independent source reviewer | exact theorem normalization, three projective targets, reduced height, strict error, denominator growth, rational-target scope, and conditional conclusion were reconstructed | transcendence classifies any assumed room but gives neither existence nor nonexistence without an independent algebraicity criterion |
-| `T-9812` | integrating agent and period cold reviewer | Q(X)-independence, Casoratian sign and leading term, physical exponent identity, finite-truncation passage, unconditional 2-adic pair convergence, unique minimum, and exact valuation were reconstructed | determinant nonvanishing does not specialize formal independence into Q-linear value independence; scalar irrationality is already separate on live PR #20 |
+| `T-9812` | integrating agent and period cold reviewer | Q(X)-independence, Casoratian sign and leading term, physical exponent identity, finite-truncation passage, unconditional 2-adic pair convergence, unique minimum, and exact valuation were reconstructed | determinant nonvanishing does not specialize formal independence into scalar irrationality or Q-linear value independence; `R-9809` quarantines the later denominator shortcut |
+| `R-9809` | integrating agent and independent completion cold reviewer | completion conventions, exact defect amplification, leading-unit nonvanishing, denominator lower bound, every downstream dependency, source-history changes, and the possible L-9404 repair were reconstructed | only the submitted proof chain is refuted; a new height or finite-place theorem could still prove any source statement |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -484,7 +488,21 @@ the determinant identity and valuation.  The proof itself passes through
 finite truncations, proves unconditional convergence of the 2-adic pair
 family, and makes `(0,1)` the unique least-valuation term.  Live-head comparison
 confirmed unchanged `L-9408`/`L-9415` blobs and no solution-Casoratian overlap
-in the newly added scalar irrationality results.
+in the newly added denominator claims.  `R-9809` separately records why those
+claims do not yet establish scalar irrationality.
+
+### Independent cross-completion correction audit
+
+For `R-9809`, a nonauthoring reviewer followed the definitions back through
+`L-9416` and `L-9417`: their tail symbols are explicitly 2-adic limits, while
+the same partial sums have separately named real limits.  Subtraction of the
+two recurrences recovered exactly
+`D_j=T^(-(h_j-h_0))D_0` for one-tails and `D_n=T^(-n)D_0` for digit tails.
+The leading 2-adic unit proves nonvanishing, so the fixed-denominator lower
+bound survives; only the shrinking real-shadow upper bound fails to transfer.
+The review also checked `L-9404`: its ordinary tail-orbit bound expands on the
+same inverse-contraction scale and supplies neither completion equality nor a
+finite numerator state.  No repair exists at live head `aa9cf71`.
 
 ### Independent `L-9839` even-`K` jet audit
 
@@ -529,6 +547,9 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 - `T-9812` proves formal function independence and a nonzero specialized
   determinant, not Q-linear independence or a quantitative measure for the
   specialized values.
+- `R-9809` does not disprove bounded-gap rationality classification or
+  ordinary-section triviality; it shows only that the submitted denominator-
+  descent proofs use a missing cross-completion height bound.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -940,3 +961,8 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     convergence before rearranging the 2-adic pair sum, the `q^(2i)` valuation
     contribution, and uniqueness of `(0,1)`.  Do not infer Q-linear value
     independence from a nonzero determinant.
+55. For `R-9809`, retain `L-9416`/`L-9417`'s valid denominator descent and
+    name the 2-adic tail and positive real shadow separately.  Recompute both
+    inverse-contraction defect laws, check leading-unit nonvanishing, and
+    follow the dependency into `T-9421`.  Do not turn a proof refutation into
+    a counterexample to any theorem statement.

@@ -124,5 +124,6 @@ repository review.
 | T-9810 | Theorem | Freezing endpoint signatures removes the structural primes 2 and 3 from the correlated S-unit rank | PROPOSED | PR3/L-0031, L-0032, T-0032; T-9805 |
 | T-9811 | Theorem | Ridout's exact three-place theorem forces every hypothetical fixed corrected-stage room to be transcendental | PROPOSED / SOURCE-QUALIFIED CONDITIONAL CONSEQUENCE | PR3/O-0011, L-0032, T-0033; Ridout's theorem |
 | T-9812 | Theorem | The native periodic stack function has formal two-shift rank two and an exact nonzero physical q-Casoratian | PROPOSED | PR20/L-9408, L-9415 |
+| R-9809 | Refutation | Denominator descent does not identify rational 2-adic tails with their bounded positive real shadows | PROPOSED / PROOF-CHAIN REFUTATION | PR20/L-9416, L-9417, T-9418--T-9421 |
 
 No `K-####` candidate is proposed.

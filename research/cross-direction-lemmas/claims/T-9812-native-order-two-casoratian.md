@@ -9,7 +9,7 @@ Created: 2026-07-22
 Last updated: 2026-07-22
 Dependencies: branch-qualified `PR20/L-9408` and `L-9415` at `aa9cf71c1f252359869ef917955051f340a09df7`; both blobs are unchanged from `93739b4dbc4ac317f660477e7805dabfe484b287`
 Scope: every positive periodic stack increment word at every physical starting height
-Related counterexample candidates: none; `PR20/T-9419` already closes the positive-stack ordinary frontier
+Related counterexample candidates: issue #4 periodic stack frontier; no `K-####` candidate
 
 ## Setup
 
@@ -285,8 +285,9 @@ than `6E_1`.  The `(0,1)` summand is therefore the unique term of least
   `Q`-linear independence or stronger irrationality measures can now treat
   solution nonrationality, two-shift functional rank, physical nonsingularity,
   and the first determinant as proved native inputs rather than hypotheses
-  inferred from finite experiments.  Such an audit is no longer needed merely
-  to prove scalar irrationality, which `PR20/T-9419` supplies directly.
+  inferred from finite experiments.  Local `R-9809` shows that the later
+  denominator-descent shortcut does not yet prove scalar irrationality, so a
+  correct audit may still be useful at both scalar and two-value strength.
 
 ## Dependency and novelty audit
 
@@ -301,17 +302,18 @@ than `6E_1`.  The `(0,1)` summand is therefore the unique term of least
   audited head `93739b4` and the live head `aa9cf71`.  A live-head search found
   no native q-Casoratian theorem in the PR #20 packet; its other Casoratians
   concern Pade approximants, not the solution pair in (20).
-- New `PR20/T-9419` proves scalar irrationality for every positive stack
-  directive, while `T-9420` classifies rational binary codes.  Neither proves
-  (10), (15), or (19), so the functional-rank and physical-determinant content
-  here remains nonoverlapping.
+- New `PR20/T-9419` claims scalar irrationality for every positive stack
+  directive, while `T-9420` claims to classify rational binary codes.  Local
+  `R-9809` identifies an unsupported identification of rational 2-adic tails
+  with their positive real shadows in that proof chain.  Neither claim is a
+  dependency here, and neither contains (10), (15), or (19).
 
 ## Gap and scope audit
 
-- Although `PR20/T-9419` independently proves `F_W(x)` irrational for every
-  positive periodic directive, a nonzero determinant involving `F_W(x)`,
-  `F_W(qx)`, and `F_W(q^2x)` would not by itself prove that scalar conclusion
-  or that the first two values are linearly independent over `Q`.
+- A nonzero determinant involving `F_W(x)`, `F_W(qx)`, and `F_W(q^2x)` does
+  not by itself prove that `F_W(x)` is irrational or that the first two values
+  are linearly independent over `Q`.  The submitted denominator-descent
+  shortcut to scalar irrationality is quarantined by local `R-9809`.
 - Formal independence over `Q(X)` cannot be specialized blindly at one
   rational argument.  The exact physical determinant removes one possible
   degeneration but is not a value-independence theorem.
@@ -333,10 +335,10 @@ than `6E_1`.  The `(0,1)` summand is therefore the unique term of least
 
 ## Suggested next attack
 
-Scalar irrationality is already settled by `PR20/T-9419`.  Audit a
-dimension-at-least-two theorem for homogeneous q-functional equations only if
-the target is the stronger statement
-`dim_Q span{F_W(x),F_W(qx)}>=2`, an explicit two-value lower bound, or an
-irrationality measure.  Use (10) and (19)--(21) for the functional-rank and
-determinant hypotheses, and isolate any coefficient-height, finite-place, or
-singularity failure before constructing a new Pade family.
+Audit an exact finite-place theorem for homogeneous q-functional equations
+against the scalar irrationality statement, the stronger relation
+`dim_Q span{F_W(x),F_W(qx)}>=2`, and any explicit lower bound separately.
+Use (10) and (19)--(21) for the functional-rank and determinant hypotheses,
+and isolate any coefficient-height, finite-place, or singularity failure
+before constructing a new Pade family.  A native completion-height repair of
+`R-9809` is an independent route.

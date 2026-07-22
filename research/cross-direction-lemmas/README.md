@@ -164,6 +164,7 @@ dependency.
 | [`T-9810`](claims/T-9810-signature-refined-fresh-prime-budget.md) | PR #3 scaled-tail S-unit frontier | Freezing the three incoming ternary and four outgoing binary signatures absorbs all bounded endpoint powers of `2` and `3`, giving rank `<=2f+1` for primes outside `{2,3}` and the sharper envelope `N<=12*4^256 exp(1542^771(2f+2))`. |
 | [`T-9811`](claims/T-9811-fixed-room-rational-or-transcendental.md) | PR #3 fixed-room/Ridout bridge | The native real, binary, and ternary approximation factors match Ridout's projective theorem with targets `(C,0,infinity)` exactly, so every hypothetical fixed corrected-stage room is transcendental. |
 | [`T-9812`](claims/T-9812-native-order-two-casoratian.md) | PR #20 native q-difference frontier | The periodic stack solution and its first q-shift are independent over `Q(X)`; their solution Casoratian is positive over the reals and has exact physical valuation `54(m+d_1)+6` at `2`. |
+| [`R-9809`](claims/R-9809-cross-completion-denominator-descent.md) | PR #20 denominator-descent audit | Refutes the proof bridge in `T-9418`--`T-9421`: fixed denominators belong to rational 2-adic tails, while compact positivity bounds belong to separate real shadows; the completion defect expands exactly under the inverse shift. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -354,10 +355,11 @@ independently reconstructed and which conjectural boundaries remain open.
    `q`-difference/Hermite--Pade construction for the period-ten vector.
    `T-9812` supplies a separate native order-two input: the solution pair has
    formal rank two and an exact nonzero physical Casoratian, with
-   `v_2=54(m+d_1)+6`.  The refreshed PR #20 head already proves scalar
-   irrationality for positive stack directives, so the determinant's live
-   use is a quantitative two-value independence measure, not another scalar
-   irrationality proof.
+   `v_2=54(m+d_1)+6`.  The refreshed PR #20 head also proposed a denominator-
+   descent proof of scalar irrationality, but `R-9809` finds that it identifies
+   rational 2-adic tails with separate positive real shadows.  Scalar
+   irrationality and quantitative two-value independence therefore both
+   still need a valid completion-height or finite-place theorem.
 5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
    base. `R-9808` finds that `PR16/L-9312` used the false identity
    `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
