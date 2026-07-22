@@ -129,10 +129,11 @@ The dyadic rational `r` is a finite sum of shifted weights `2^c`, with
 nonnegative integer coefficients, after choosing either the power-of-three or
 the `-1` term from every factor.
 
-Combine identical pairs `(r,d)`. Since `P` is nonzero, the resulting finite
-exponential polynomial is not identically zero. Choose the lexicographically
-largest pair `(r_*, -d_*)` with nonzero combined coefficient: first maximize
-`r`, and among those terms minimize `d`.
+Combine identical pairs `(r,d)`. Suppose (5) held for infinitely many `m`.
+Then the evaluated polynomial is positive at infinitely many scales, so the
+combined finite exponential polynomial is not the zero sequence. Choose the
+lexicographically largest pair `(r_*, -d_*)` with nonzero combined coefficient:
+first maximize `r`, and among those terms minimize `d`.
 
 Then, along every sufficiently large scale at which the polynomial value is
 nonzero,
@@ -151,7 +152,7 @@ P(V_{m+c_1},\ldots,V_{m+c_s})
 Indeed, every term with smaller `r` is exponentially smaller in `2^m`; among
 terms with the same `r`, every larger `d` is smaller by a power of `2^m`.
 
-Suppose (5) held for infinitely many `m`. Comparing (3) and (9) would give
+Comparing (3) and (9) along the infinite equality subsequence gives
 
 \[
 \Gamma=7r_*\log_2 3.
@@ -161,7 +162,8 @@ Suppose (5) held for infinitely many `m`. Comparing (3) and (9) would give
 Substitution of (4) yields
 
 \[
-\left(687232-1792r_*\right)\log_2 3
+\left(687232-1792r_*\right)
+\log_2 3
 =1085579.
 \tag{11}
 \]
@@ -237,5 +239,5 @@ with fixed or finitely selected coefficients.
 ## Adversarial tests
 
 `X-0016` checks the exact exponent coefficient `Gamma`, the growth coefficient
-of `V_(m+c)`, and the nonresonance identity for representative dyadic weights.
-The universal proof is the finite exponential-polynomial expansion above.
+of `V_(m+c)`, and the affine gap certificate. The universal proof is the finite
+exponential-polynomial expansion above.
