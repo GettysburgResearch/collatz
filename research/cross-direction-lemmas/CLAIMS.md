@@ -111,5 +111,10 @@ repository review.
 | R-9806 | Refutation | Delayed one-hot events leave a positive-dimensional formal exceptional Cantor set despite a power-saving ordinary count | PROPOSED | L-9826, L-9883, L-9885, L-9896 |
 | R-9807 | Refutation | The summed native Pade vector has no staggered scalar-allocation gain; equal allocation is uniquely optimal | PROPOSED | PR20/L-9408, L-9411, T-9416 |
 | L-9899 | Lemma | Positive solution-cone extreme rays are rational only for the full positive component and otherwise have a natural boundary | PROPOSED | Issue #24/T-9702; L-9823; Polya--Carlson; elementary reconstruction |
+| T-9801 | Theorem | Every ordinary binary-chart itinerary has an explicit linear factor-complexity floor, giving a finite certificate for critical equality languages | PROPOSED | elementary binary-chart recurrence; PR16/T-9315 only for the conditional centered crosswalk |
+| T-9802 | Theorem | The final tower symbol translates every stabilized head correction by one of four fixed sixty-fourth-modulus offsets | PROPOSED | L-9821, L-9898; frozen PR3/T-0027, L-0016, L-0017 |
+| T-9803 | Theorem | Adjacent two-hot lifts have an exact correlation law, and libraries of at most 62 fixed templates cannot cover every formal exposure phase | PROPOSED | L-9826, L-9883, L-9885, L-9896, R-9806 |
+| T-9804 | Theorem | Every sparse equal-allocation Pade Casoratian is nonzero, and skipped orders strictly lose normalized 2-adic accuracy at fixed width and largest order | PROPOSED | PR20/L-9408, L-9410; L-9884, L-9891, L-9895 |
+| R-9808 | Refutation | The identity underlying PR16/L-9312 is false, so its fixed four-phase schedule is not established | PROPOSED | elementary arithmetic; PR16/T-9315 only for centered-variable notation |
 
 No `K-####` candidate is proposed.

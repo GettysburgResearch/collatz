@@ -100,6 +100,19 @@ cold review.  Exact replays checked the displayed arithmetic but are not used
 as theorem premises.  All four claims remain `PROPOSED` pending external
 repository review.
 
+Wave thirteen attacked five newly sharpened interfaces.  The ordinary lane
+converted the repeated-factor height bound into a universal factor-complexity
+floor.  The cap lane derived an exact final-symbol translation law.  The
+survivor lane added the first adjacent two-hot family and then proved a
+finite-template limitation.  The Pade lane generalized adjacent Casoratians
+to arbitrary sparse orders.  Finally, a direct source audit found that the
+submitted `PR16/L-9312` bridge rests on the false identity
+`81/64=(3/2)^4`; its dependency propagation is recorded separately in
+`R-9808`.  Each constructive claim received a nonauthoring cold review, and
+the refutation received an independent arithmetic/dependency review.  Exact
+bounded replays audit displayed formulas but are not theorem premises.  All
+five claims remain `PROPOSED` pending external repository review.
+
 ## Source-branch audit
 
 | Source | Reconstruction outcome | Status recommendation |
@@ -137,6 +150,11 @@ repository review.
 | `PR16/D-9302` and local `L-9896` full delayed one-hot lift | `R-9806` groups short-range events into `m+1` blocks, bounds every surviving child count, computes the formal Cantor-set dimensions, and transfers the exact spaced tree to ordinary height counts. | The formal avoiding set may contain no ordinary integer; the power-saving exceptional count may still be infinite. Multi-hot competitors and the first positive block remain open. |
 | `PR20/L-9408`, `L-9411`, `T-9416`, and the PR #13 period-ten interface | `R-9807` orders every coefficient term for arbitrary phase allocations, identifies the unique evaluated endpoint, and optimizes the exact scalar valuation-to-height functional. | Unequal allocation in one scalar root product is closed. Hermite--Pade coupling, evaluation resultants, non-scalar combinations, and reduced-height savings remain open. |
 | Issue #24 solution cone (`T-9702`) and local `L-9823` | `L-9899` reconstructs the nonnegative fixed cone, classifies its extreme rays, proves positive-component infinitude and eventual-period rigidity, and applies Polya--Carlson at radius one. | This is an exact reformulation: continuation of the distinguished ray through one arc is equivalent to Collatz and is not proved. |
+| Direct ordinary `64 -> 81` recurrence; `PR16/L-9311`, `T-9315`--`T-9317`, refreshed `L-9315`/`T-9316` at `1bb8c6b`; `PR20/T-9402`, `T-9405` at `ed1ee9d` | `T-9801` independently reconstructs the already known factor-complexity floor `log 64/log(81/64)>16`, then adds a finite supertile certificate for entire uniform-morphic orbit closures. | The recurrence theorem is unconditional inside the ordinary chart but is not a new complexity barrier.  The genuinely new finite language interface complements PR #16's explicit-square/bounded-distortion route; equality closure still requires an audited source lower bound and classification. |
+| `PR33/T-9704`, `L-9703`, `T-9703`, `L-9702`; frozen `PR3/T-0027`; local `L-9821`, `L-9898` | `T-9802` isolates the final-symbol dependence of every stabilized head, proves the exact cell offsets `(0,3,53,1)`, and classifies all corrections below `Q/64`. | At least 192 words are uniformly large and at most 64 are conditionally cusp-admissible.  The within-cell remainder may still be zero or exponentially small, so no cap chain is excluded. |
+| `PR16/D-9302`, `L-9313`, `L-9314`, `CENTERED_POWER.md`, and `ORDINARY_SECTION.md` at `1bb8c6b`; local one-hot packet | `T-9803` derives the adjacent two-hot odd unit `145/81`, its exact correlation with one-hot events, and blockwise survivor trees for any fixed library of at most 62 bounded templates. | The formal avoiding set stays positive-dimensional, but it need not contain an ordinary point.  Delay-growing two-hot gaps, higher weights, and positive intervening blocks remain open. |
+| `PR20/L-9408`, `L-9410`, refreshed `R-9407` at `ed1ee9d`; local `L-9884`, `L-9891`, `L-9895` | `T-9804` proves every arbitrary sparse coefficient minor nonzero via opposite strict tropical assignments, evaluates the canonical sparse cofactor coupling, and quantifies the exact skipped-order deficit. | Consecutive orders uniquely maximize normalized 2-adic accuracy at fixed width/top order, so sparse scalar orders do not evade the period-ten ceiling.  Final reduced-height optimization and genuine Hermite--Pade systems remain open. |
+| `PR16/L-9312` and its schedule dependents at `1bb8c6b` | `R-9808` checks the defining identity and finds `(3/2)^4=81/16=4(81/64)`, yielding the exact missing factor `4^n`.  It separately audits direct-base claims and locally restarted experiments. | The submitted proof of the four-phase full-`3/2` bridge is invalid.  Its conditional conclusion could still be vacuous, and a new six-step mixed `{3/2,1/2}` schedule or direct-`81/64` source theorem would require a fresh proof. |
 
 ## New-claim audit matrix
 
@@ -170,6 +188,11 @@ repository review.
 | `R-9806` | centered-survivor lane and wave-twelve cold reviewer | phase retention, child counts, dimension bounds, exact one-forbidden-child tree, ordinary cutoff, and formal-versus-ordinary scope were reconstructed | the positive-dimensional formal set need not contain an ordinary parameter |
 | `R-9807` | Pade lane and wave-twelve cold reviewer | zero blocks, global least term, endpoint exponent, denominator unit, normalization, equal-allocation optimum, and the `r=1` edge case were reconstructed | the ceiling applies only to the native scalar special-vector family |
 | `L-9899` | integrating agent and Pade cold reviewer | extreme-ray classification, positive-component infinitude, affine commutator, period reduction, radius one, Polya--Carlson scope, and the zero-index component were reconstructed | analytic continuation of the distinguished ray remains exactly the conjectural step |
+| `T-9801` | ordinary-complexity lane and cap cold reviewer | monotonicity, divisibility through repeated factors, floor endpoint, exact threshold `>16`, supertile counting, closure language, and overlap with refreshed PR #16 recurrence claims were reconstructed | source equality classification and the scalar critical constant remain unaudited external inputs |
+| `T-9802` | cap-head lane, integrating agent, and survivor cold reviewer | connector signs, division by 64, mod-64 inverses, four cell offsets, 192-word lower bound, exact head depth, and conditional 64-word cusp reduction were reconstructed | the common within-cell remainder is unbounded below and exact zero is not excluded |
+| `T-9803` | survivor two-hot lane and ordinary-complexity cold reviewer | odd-unit normalization, same-delay correlation, complete exposure fibers, block child bounds, finite-library threshold, dimension estimates, and ordinary/formal separation were reconstructed | all two-hot gaps form an unbounded library; formal dimension does not imply an ordinary point |
+| `T-9804` | integrating Pade lane and ordinary-complexity cold reviewer | arbitrary minors, opposite tropical permutations, cofactor signs, normalized sparse error, consecutive-order deficit, two-place height, and refreshed period-ten overlap were reconstructed | the theorem fixes width and largest order, not the final reduced-height ratio; non-scalar coupling remains open |
+| `R-9808` | integrating agent and survivor cold reviewer | prime-exponent impossibility, exact `4^n` transport, center/radius scaling, mixed six-step product, dependency propagation, and locally restarted experiment scope were reconstructed | the conditional schedule statement may be vacuous; a correct mixed schedule and its forbidden regions are not supplied |
 | `L-9823`, `L-9825`, `L-9836`, `L-9838`, `L-9842`, `L-9844`, `L-9849`, `L-9857` | integrating agent and adelic/H lanes | period reduction, cone exhaustion, primitive collapse, horizontal cycle and least-period word, escape alphabet closure, ordered compiler, finite-core closure, absorbed/disjoint propagation, intrinsic-bit reconstruction, padded-digit equality, the finite-central-base converse, decorated Moore presentation, and product-graph separator bound checked | fixed-width absorption is finitely decidable, but the bound grows with width and no theorem decides eventual absorption |
 | `L-9826` | integrating agent | exact coding/conjugacy, first-difference valuation, periodic rational formula, dimension count, and real-shadow identity checked; exhaustive small-prefix tests passed | null fractal geometry does not exclude a discrete ordinary intersection |
 | `L-9816`, `L-9828`, `L-9832`, `L-9839`, `L-9848`, `L-9856`, `L-9859`, `L-9861`, `L-9862`, `L-9864`, `L-9880` | Padé lane, integrating agent, and adelic/H reviewers | reduced residual normalization, prime-power support, forced lower factors, target cap, residue-state closure/refinement, universal certificates through `s=32`, exact subset shadow propagation, periodic Hasse filtration, and all 128 anchor phases through degree 104 were recomputed | finite dyadic nonvanishing now reaches `s=48`; the defect hierarchy beyond degree 104, all-layer slack, hard odd/composite/noncyclotomic sectors, specialization gcds, and transverse residual-to-gcd transfer remain open |
@@ -317,6 +340,42 @@ decomposition, extreme-ray argument, affine commutator, eventual-period
 reduction, radius-one step, and the precise Polya--Carlson scope.  The finite
 quotient replay is only adversarial evidence for the symbolic proof.
 
+### Independent wave-thirteen arithmetic audits
+
+For `T-9801`, two reviewers independently rederived
+`M^ell | (A_t-A_r)`, the strict repeated-factor cone, the floor endpoint, and
+the limiting complexity slope.  The exact comparison was reduced to
+`3^64<2^102`, with
+`3^32=1853020188851841<2251799813685248=2^51`.  The supertile proof was
+checked on all 80 prolongable bounded binary presentations of uniform lengths
+two and three.  The audit also found the prior slope theorem in
+`PR20/T-9402`, `T-9405` and corrected the novelty account.
+
+For `T-9802`, the connector signs and division by 64 were reconstructed from
+the frozen formulas.  The residues
+`n_2^(-1)=35`, `P^(-1)=9`, and product `59 mod64` give offsets
+`(0,3,53,1)` and exceptional cells `(0,61,11,63)`.  Full 256-word exact
+replays found 251/5 large/small corrections at `m=12` and 253/3 at `m=13`,
+with no zeros.  Only the weaker uniform 192-word bound is used in the proof.
+
+For `T-9803`, direct representative reconstruction recovered the coefficient
+`17*145*81^(h-2-n)`.  Complete `m=1` phase permutations, exact same-delay
+intersections at `m=1,2`, and child ranges reproduced the symbolic formulas.
+A three-template test remained above the union-bound floor.  The cold review
+kept the positive-dimensional formal tree separate from ordinary depths.
+
+For `T-9804`, a nonauthoring reviewer reconstructed all valuation-separation,
+minor, cofactor, and normalized-error formulas.  Exact checks covered 1,700
+arbitrary minors through width four, 100 cofactor chains, nine sparse-order
+systems, and edge cases `q=2`, `r=1`.  Every skipped-order deficit matched
+`54Sr sum delta_i`; the test does not estimate final reduced height.
+
+For `R-9808`, two independent calculations recovered
+`(3/2)^4=4(81/64)`, the exact transported factor `4^n`, the rescaled centers
+and radii, and the mixed product `(3/2)^4(1/2)^2=81/64`.  A path-by-path audit
+at PR #16 head `1bb8c6b` separates the invalid full-orbit interpretation from
+the valid locally restarted `X-9304` checks and direct-base claims.
+
 ### Independent `L-9839` even-`K` jet audit
 
 The formulas `L-9839/(14a)--(14f)` received a separate algebraic audit. The
@@ -332,6 +391,17 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
 ## Explicit non-results
 
 - No nontrivial infinite orbit or `K-####` candidate is claimed.
+- `T-9801` does not supply the external critical lower bound or equality
+  classification; its general complexity floor was already present on PR #20.
+- `T-9802` leaves up to 64 within-cell head remainders and does not exclude
+  exact zero, a cap chain, or any Collatz orbit.
+- `T-9803` does not control all two-hot gaps or prove that its formal Cantor
+  set contains an ordinary integer.
+- `T-9804` does not optimize reduced rational height and does not cover a
+  genuine coupled Hermite--Pade system.
+- `R-9808` invalidates one submitted proof bridge, not the direct centered
+  recurrence, and it does not prove the conditional schedule conclusion false
+  when its hypothesis might be empty.
 - Finite CRT compatibility is not ordinary realization.
 - Exponential forward growth is not a contradiction to stabilization of the
   initial cylinder representative.
@@ -682,3 +752,26 @@ not promote the still-open residual-to-excess-gcd transfer inequality.
     positive-component infinitude, period reduction, radius one, and
     nonrationality before invoking Polya--Carlson. Include the isolated zero
     component and do not present the arc-continuation equivalence as a proof.
+42. For `T-9801`, first compare the complexity floor with prior
+    `PR20/T-9402`, `T-9405`; treat it as an independent reconstruction, not a
+    new barrier.  Then verify the aligned-supertiling count, one-sided right
+    extension, whole orbit-closure language, and strict finite threshold
+    before using the genuinely new uniform-morphism certificate.
+43. For `T-9802`, derive the last-connector sign chain before reducing modulo
+    64.  Check `n_2^(-1)P^(-1)=59`, all four cells, wraparound, the exact head
+    depth, and that `L-9821` is invoked only for the conditional cusp bound.
+    The surviving within-cell remainder can still vanish.
+44. For `T-9803`, retain the factor 17 and the exact odd unit `145/81`, prove
+    the small-representative congruence becomes equality, and separate the
+    same-delay intersection from cross-delay union bounds.  The theorem covers
+    at most 62 fixed bounded templates, not the growing family of all gaps.
+45. For `T-9804`, check arbitrary row/column orderings, both unique tropical
+    permutations, cofactor signs, normalization by the denominator, and every
+    deficit term.  Consecutive orders optimize accuracy at fixed width/top
+    order only; the final reduced-height ratio remains open.
+46. Read `R-9808` before using any `PR16/L-9312` schedule consequence.
+    Verify the prime-exponent contradiction, missing `4^n`, rescaled centers
+    and radii, and the distinction between a single full `3/2` orbit and
+    locally restarted phase samples.  Do not infer falsity of a potentially
+    vacuous conditional conclusion or quarantine direct-`81/64` results
+    without their own dependency audit.

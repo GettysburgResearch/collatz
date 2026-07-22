@@ -36,6 +36,7 @@ dependency.
 - [`wave ten`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-ten.md)
 - [`wave eleven`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-eleven.md)
 - [`wave twelve`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-twelve.md)
+- [`wave thirteen`](../../reports/gpt56-synthesis-01/2026-07-22-29-cross-direction-wave-thirteen.md)
 
 ## Result map
 
@@ -148,6 +149,11 @@ dependency.
 | [`R-9806`](claims/R-9806-survivor-one-hot-exceptional-cantor-set.md) | PR #16 global survivor order | The formal all-delay avoiding set is a positive-dimensional Haar-null Cantor set, while ordinary depths with fewer than `s` delayed competitors obey a power-saving count. |
 | [`R-9807`](claims/R-9807-pade-special-vector-allocation-ceiling.md) | PR #20 period-ten frontier | The summed native vector has exactly the minimum allocated zero window; its exact scalar-allocation functional is uniquely maximized by equal allocation and remains subcritical at period ten. |
 | [`L-9899`](claims/L-9899-solution-cone-natural-boundary-rays.md) | Issue #24 solution cone | Extreme rays are component indicators; every proper positive ray has a natural boundary, so continuation of the distinguished ray through one arc is equivalent to Collatz. |
+| [`T-9801`](claims/T-9801-ordinary-itinerary-complexity-threshold.md) | PR #16 ordinary/equality bridge | Every nontrivial ordinary binary-chart itinerary has linear factor-complexity slope at least `log M/log(N/M)`; for `64 -> 81` it exceeds 16, giving a finite language certificate that excludes entire low-complexity equality subshifts. |
+| [`T-9802`](claims/T-9802-cap-head-final-symbol-rigidity.md) | PR #33/PR #3 cap-chain bridge | The fourth head symbol only translates the correction by cells `(0,3,53,1)Q/64`; at least 192 of 256 words are uniformly large, and every late hypothetical cap chain has at most 64 cusp-admissible head words. |
+| [`T-9803`](claims/T-9803-survivor-adjacent-two-hot-tree.md) | PR #16 global survivor order | One-hot and adjacent two-hot events have an exact `1/145` asymptotic correlation; even any fixed library of at most 62 bounded templates leaves a positive-dimensional formal exceptional set. |
+| [`T-9804`](claims/T-9804-sparse-pade-casoratian-optimality.md) | PR #20 period-ten frontier | Every sparse scalar order minor is nonzero, but at fixed width and largest order each skipped order incurs an exact 2-adic accuracy deficit; sparse orders cannot evade the adjacent-order period-ten ceiling. |
+| [`R-9808`](claims/R-9808-false-four-phase-three-halves-bridge.md) | PR #16 centered-power audit | Refutes the identity `81/64=(3/2)^4`: the submitted four-phase full-`3/2` orbit bridge misses a factor `4^n`; direct-`81/64` results survive only after independent dependency audit. |
 
 The compact status ledger is [`CLAIMS.md`](CLAIMS.md), and
 [`VERIFICATION.md`](VERIFICATION.md) records which source-branch arguments were
@@ -185,8 +191,12 @@ independently reconstructed and which conjectural boundaries remain open.
    positive-dimensional, Haar-null Cantor set, while ordinary parameters with
    fewer than `s` delayed competitors have the power-saving count
    `O(T^d(log T)^(s-1))`, `d<1`. It may still contain infinitely many ordinary
-   parameters. The next task is to add two-hot competitors to the joint child
-   tree and control the first positive block.
+   parameters. `T-9803` now adds the adjacent two-hot template and computes
+   its exact `1/145` correlation with the one-hot event.  This still does not
+   cover the formal tree: every fixed library of at most 62 bounded templates
+   leaves a positive-dimensional exceptional set.  The next task is therefore
+   an unbounded, delay-growing two-hot library or arithmetic control of the
+   first positive block, not another small fixed template list.
 2. For the collision lane, propagate the exact compatibility cylinder of
    `L-9852` through the residual grammar. A bulk address routes the physical
    tail through `H` bits exactly when `h congruent V modulo 2^H`, and the next
@@ -218,10 +228,12 @@ independently reconstructed and which conjectural boundaries remain open.
    carry prevents an autonomous scale update. `L-9821` bypasses that output
    carry on the input side: completion height puts every one of the 84
    canonical triple corrections below the square root of its exact modulus
-   and gives finite 256-head and 1024-triple cusp filters. The next target is
-   a uniform lower bound for the 256 stabilized head corrections, or a direct
-   comparison with the new cusp exponent; closing the output carry remains a
-   separate route.
+   and gives finite 256-head and 1024-triple cusp filters. `T-9802` supplies
+   the first uniform head reduction: changing the final symbol translates by
+   one of four fixed `Q/64` cells, so at least 192 words are too large and a
+   hypothetical late cap chain has at most 64 admissible words.  The next
+   target is the within-cell remainder for those 64 prefixes; closing the
+   output carry remains a separate route.
 3. For the H lane, design a different return architecture. `L-9822`--`L-9829`
    solve the real phase and exact tail shifts of the `10/30` compiler;
    `L-9831` shows that physicality leaves one nested carry path, and `L-9833`
@@ -313,10 +325,28 @@ independently reconstructed and which conjectural boundaries remain open.
    and even the period-ten ceiling is `0.954998217905888...<1`. The live
    directions are therefore coupled Hermite--Pade systems, evaluation
    resultants, and genuine reduced-height savings rather than scalar
-   reallocation.
-5. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
+   reallocation. `T-9804` also closes sparse scalar order selection: arbitrary
+   sparse minors remain nonzero, but consecutive orders uniquely maximize
+   normalized accuracy at fixed width and top order.  In light of refreshed
+   `PR20/Q-9413`, the next concrete targets are its one-phase elimination
+   inequality or a genuinely coupled two-dimensional `q`-difference/Hermite--
+   Pade construction for the native period-ten vector.
+5. For the direct centered `64 -> 81` lane, keep the recurrence in its native
+   base. `R-9808` finds that `PR16/L-9312` used the false identity
+   `81/64=(3/2)^4`; the correct four-sample formula has a growing factor
+   `4^n`, while a multiplicative decomposition needs four `3/2` steps and two
+   `1/2` steps.  The fixed four-phase full-`3/2` bridge is therefore
+   quarantined, although direct-base claims can survive independent audit.
+   `T-9801` independently reconstructs the PR #20 complexity floor and adds a
+   finite-language interface: every ordinary itinerary has slope at least
+   `log 64/log(81/64)=17.6548...`.  Hence any fully audited critical equality
+   language with smaller slope is excluded, and binary 2- or 3-uniform
+   substitution orbit closures already fail.  The next task is to acquire the
+   exact rational-base source theorem and compute its equality language rather
+   than route through the invalid schedule.
+6. Prove any fixed polynomial-in-`M(m_{K+1})` bound on the active terminal
    context. By `L-9805`, that would exclude eventual cylinder stabilization.
-6. Test binary-automatic invariant-component colorings. `L-9823` eliminates
+7. Test binary-automatic invariant-component colorings. `L-9823` eliminates
    every finite congruence, Presburger, unary-regular, rational, algebraic, and
    D-finite description. `L-9825` makes the central ternary spine finite, and
    `L-9836` closes every fixed-width translated cone. `L-9838` puts every
