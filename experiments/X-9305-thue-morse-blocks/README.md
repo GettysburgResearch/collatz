@@ -73,13 +73,15 @@ The fixed point begins
 01101001...
 ```
 
-and has `00` at zero-based positions `5,6`. Applying the length-two morphism repeatedly gives equal adjacent factors of length `2^m` at starts
+and has `11` at zero-based positions `1,2`. Applying the length-two morphism repeatedly gives equal adjacent factors of length `2^m` at starts
 
 ```text
-5*2^m and 6*2^m.
+1*2^m and 2*2^m.
 ```
 
-The script verifies every such witness fitting in the frozen prefix, through `m=7` and factor length `128`.
+The script verifies every such witness fitting in the frozen prefix, through `m=8` and factor length `256`.
+
+This is the sharper witness used by the current `T-9316`. It improves the recurrence ratio from the earlier starts `5*2^m,6*2^m` to `1*2^m,2*2^m`.
 
 ## Replay
 
@@ -111,7 +113,7 @@ The zero positions are
 The canonical payload SHA-256 is
 
 ```text
-7f979dcc51d5cb8848f90306c949608c87f8d6fd0f8a1dade56747a27eede9b9
+c5a7bfb2cc674c5aba9ada80f291d69c79a2a4151d2eba22c784ea3ae64b59dc
 ```
 
 ## Interpretation
