@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 #include <limits>
 #include <map>
 #include <numeric>
@@ -182,12 +183,33 @@ int main(){
             std::cerr<<type.name<<" R="<<R<<" candidates="<<row.candidates<<" height="<<row.height<<"\n";
         }
     }
-    uint64_t total_c=0,total_h=0;for(auto&r:rows){total_c+=r.candidates;total_h+=r.height;}
-    std::cout<<"{\n  \"experiment_id\": \"X-9607\",\n  \"schema_version\": 1,\n  \"arithmetic\": \"exact signed 128-bit integers\",\n  \"claim\": \"no accelerated positive cycle has exactly nine valuations different from 2\",\n  \"finite_rows\": [\n";
-    for(size_t i=0;i<rows.size();++i){auto&r=rows[i];
-        std::cout<<"    {\"type\":\""<<r.type<<"\",\"R\":"<<r.R<<",\"D\":"<<to_string_i128(r.D)<<",\"largest_gap_candidates\":"<<r.candidates<<",\"max_E_core\":"<<to_string_i128(r.max_E)<<",\"height_survivors\":"<<r.height<<",\"least_nonzero_circular_remainder\":";
-        if(r.rho<0) std::cout<<"null"; else std::cout<<to_string_i128(r.rho);
-        std::cout<<"}"<<(i+1==rows.size()?"\n":",\n");
+    uint64_t total_c=0,total_h=0;
+    for(auto&r:rows){total_c+=r.candidates;total_h+=r.height;}
+    uint64_t digest=14695981039346656037ULL;
+    auto absorb=[&](const std::string& text){for(unsigned char c:text){digest^=c;digest*=1099511628211ULL;}};
+    for(const auto& r:rows){
+        std::string line=r.type+"|"+std::to_string(r.R)+"|"+to_string_i128(r.D)+"|"+
+            std::to_string(r.candidates)+"|"+to_string_i128(r.max_E)+"|"+
+            std::to_string(r.height)+"|"+(r.rho<0?std::string("null"):to_string_i128(r.rho))+"\n";
+        absorb(line);
     }
-    std::cout<<"  ],\n  \"totals\": {\"finite_rows\":"<<rows.size()<<",\"largest_gap_candidates\":"<<total_c<<",\"height_survivors\":"<<total_h<<",\"formal_divisor_hits\":0,\"nontrivial_cycle_hits\":0}\n}\n";
+    std::map<std::string,std::array<uint64_t,3>> aggregates;
+    std::map<std::string,i128> min_rho;
+    std::map<std::string,bool> has_rho;
+    for(const auto& r:rows){
+        auto& a=aggregates[r.type];
+        ++a[0];a[1]+=r.candidates;a[2]+=r.height;
+        if(r.rho>=0&&(!has_rho[r.type]||r.rho<min_rho[r.type])){min_rho[r.type]=r.rho;has_rho[r.type]=true;}
+    }
+    std::ostringstream hex;
+    hex<<std::hex<<std::setfill('0')<<std::setw(16)<<digest;
+    std::cout<<"{\n  \"experiment_id\": \"X-9607\",\n  \"schema_version\": 2,\n  \"arithmetic\": \"exact signed 128-bit integers\",\n  \"claim\": \"no accelerated positive cycle has exactly nine valuations different from 2\",\n  \"aggregates\": [\n";
+    size_t ai=0;
+    for(const auto& type:types){
+        const auto& a=aggregates[type.name];
+        std::cout<<"    {\"type\":\""<<type.name<<"\",\"rows\":"<<a[0]<<",\"largest_gap_candidates\":"<<a[1]<<",\"height_survivors\":"<<a[2]<<",\"least_nonzero_circular_remainder\":";
+        if(has_rho[type.name])std::cout<<to_string_i128(min_rho[type.name]);else std::cout<<"null";
+        std::cout<<"}"<<(++ai==types.size()?"\n":",\n");
+    }
+    std::cout<<"  ],\n  \"row_fnv1a64\": \""<<hex.str()<<"\",\n  \"totals\": {\"finite_rows\":"<<rows.size()<<",\"largest_gap_candidates\":"<<total_c<<",\"height_survivors\":"<<total_h<<",\"formal_divisor_hits\":0,\"nontrivial_cycle_hits\":0}\n}\n";
 }
