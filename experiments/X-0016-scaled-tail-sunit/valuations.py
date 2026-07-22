@@ -5,12 +5,14 @@ from __future__ import annotations
 
 from importlib.util import module_from_spec, spec_from_file_location
 from pathlib import Path
+import sys
 
 
 RUN_PATH = Path(__file__).with_name("run.py")
 SPEC = spec_from_file_location("x0016_run", RUN_PATH)
 assert SPEC is not None and SPEC.loader is not None
 CORE = module_from_spec(SPEC)
+sys.modules[SPEC.name] = CORE
 SPEC.loader.exec_module(CORE)
 
 
