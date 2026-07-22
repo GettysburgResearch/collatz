@@ -67,6 +67,7 @@ F(t,i,k)
 k'=\frac{U-O'_j}{M'}.
 }
 \tag{3}
+\]
 
 This is one deterministic partial map on finite ordinary integers. It has no externally supplied directive.
 
@@ -143,8 +144,8 @@ for nonnegative integers once `k>=0`. Dividing the scaled identity by `64` is ex
 For growth, the exact inequality `3^53>2^84` gives, at `t>=3744`,
 
 \[
-\frac NM
-'>
+\frac{N}{M'}
+>
 2^{69/53}.
 \tag{7}
 \]
