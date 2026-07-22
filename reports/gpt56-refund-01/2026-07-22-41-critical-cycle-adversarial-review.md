@@ -147,9 +147,9 @@ During review, an initial independent interval implementation used unary `Decima
 
 The target has over `3.1e12` odd terms and over `1.3e12` cyclic local minima. Its reconstructed fixed point is above the currently cited `2^71` verified range. Those facts make it a serious finite grammar probe, but none is used to infer a cycle. The load-bearing conclusion is only the exact modular component plus real nonintegrality.
 
-## 7. Remaining constructive frontier
+## 7. Remaining constructive frontier at the frozen comparison head
 
-PR #34 independently shows that Smith form and universal gcd formulations merely restate `D|C`, that selected primitive prime powers can be silent, and that words with at most four non-2 valuations are excluded. The current finite-certificate frontier is therefore:
+At the PR #34 comparison head initially frozen for `X-8201`, Smith form and universal gcd formulations merely restated `D|C`, selected primitive prime powers could be silent, and words with at most four non-2 valuations were excluded. The finite-certificate target there was
 
 ```text
 complete D|C identity
@@ -158,7 +158,11 @@ with at least five non-neutral valuations
 or an unbounded compressed grammar.
 ```
 
-PR #45's `Q-8401` states this boundary honestly. No `K-84xx` object exists.
+PR #45's `Q-8401` states the full-denominator boundary honestly. No `K-84xx` object exists.
+
+## 8. Live frontier addendum
+
+After this review froze, PR #34 advanced to `b7eec65ffb13c5a89415a888c0153f36a52f23e3`. Its proposed `L-9912` and `L-9913` exclude exactly five and exactly six non-2 valuations. Subject to their own independent review, the live sparse-cycle floor is therefore now **at least seven** non-2 valuations. This does not alter any PR #45 verdict; it sharpens the successor search target.
 
 ## Replay
 
