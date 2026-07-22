@@ -9,28 +9,45 @@ flowchart LR
 
   subgraph CYC["Critical finite cycle"]
     CEQ["Exact cycle equation"]
-    SUPPORT["PR34: >=7 non-2 valuations<br/>PROPOSED"]
-    MECH["PR45 compiler<br/>independently reviewed"]
-    PULSE["Distributed-pulse remainder<br/>cross-prime compatibility"]
+    FRONT["Lengths 184 and 185 excluded<br/>PROPOSED"]
+    SUPPORT["PR47: >=8 non-2 valuations<br/>PROPOSED"]
+    BLOCK["PR45 block residue / carry decoder"]
+    COMM["PR47 opposite-drift commutator sieve"]
+    PRIME["PR34 cross-prime compiler"]
     FULL{"Full denominator + replay"}
-    CEQ --> SUPPORT --> FULL
-    CEQ --> MECH --> FULL
-    CEQ --> PULSE --> FULL --> CYCLE
+    CEQ --> FRONT
+    CEQ --> SUPPORT
+    BLOCK --> FULL
+    COMM --> FULL
+    PRIME --> FULL
+    FULL --> CYCLE
   end
 
   subgraph FROZEN["Frozen corrected class"]
     STAGE["256-transition doubling stage"]
+    EV["Evertse 1984"]
     T9705["T-9705 independently verified"]
     CLOSED["No signed ordinary completion"]
     STAGE --> T9705 --> CLOSED
+    EV --> T9705
   end
 
-  subgraph REFUND["Width-one linear refund"]
-    W1["PR49 width-one threshold B=3744"]
-    DEC["Deterministic connector decoder"]
-    DEF{"One finite residual<br/>defined forever?"}
-    GROW["z' >= 2z; explicit initialization"]
-    W1 --> DEC --> DEF --> GROW --> DIV
+  subgraph REFUND["Linear refund"]
+    COMP["PR49 intrinsic state from n<br/>(t,i,k)"]
+    DEF{"Defined forever?"}
+    GROW["k' >= 2k<br/>fresh primes required"]
+    COMP --> DEF --> GROW --> DIV
+  end
+
+  subgraph PULSE["Negative-three pulse chart"]
+    O8001["PR51 exact h block chart"]
+    G["h=21x invariant<br/>G: 9x/8 or (9x+1)/16"]
+    GDEF{"One x>0 defined forever?"}
+    MIN31["Exact minimum through depth 31<br/>exits at block 32"]
+    RENEW["H-like toll-one renewal"]
+    O8001 --> G --> GDEF --> DIV
+    G --> MIN31
+    G --> RENEW --> GDEF
   end
 
   subgraph CENTER["Centered 64 to 81"]
@@ -54,9 +71,10 @@ flowchart LR
 
   subgraph H["Partial H"]
     HC["No cycle <=2.479b blocks<br/>PROPOSED"]
-    HB["Entropy / return / prime barriers"]
-    HW{"Delayed novelty or reset renewal"}
-    HC --> HB --> HW --> DIV
+    OLD["10/30 compiler proposed closed"]
+    HNEW{"New nondescending<br/>escaping macro family"}
+    HC --> HNEW --> DIV
+    OLD --> HNEW
   end
 
   subgraph OTHER["Other exact certificates"]
@@ -69,13 +87,16 @@ flowchart LR
   end
 
   classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
+  classDef literature fill:#cfe8ff,stroke:#2563a8,color:#111;
   classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
   classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
   classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
   classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
-  class CEQ,MECH,T9705 proved;
-  class SUPPORT,PULSE,W1,DEC,GROW,HC,HB proposed;
+  class CEQ,T9705 proved;
+  class EV literature;
+  class FRONT,SUPPORT,BLOCK,COMM,PRIME,COMP,GROW,O8001,G,RENEW,HC,OLD proposed;
+  class MIN31 empirical;
   class CELL empirical;
   class CLOSED,GHOST,ADD,PH1 refuted;
-  class FULL,DEF,TOP,MULTI,HW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
+  class FULL,DEF,GDEF,TOP,MULTI,HNEW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
