@@ -71,11 +71,11 @@ The equivalence is ordinary Euclidean mixed-radix division; it does not use a co
 
 ## Theorem
 
-For every `r>=300`, the quotient-stack depth at connector `n+r` is at least
+For every `r>=288`, the quotient-stack depth at connector `n+r` is at least
 
 \[
 \boxed{
-\left\lfloor\frac r{300}\right\rfloor.
+\left\lfloor\frac r{288}\right\rfloor.
 }
 \tag{4}
 
@@ -136,17 +136,17 @@ From `(1)`,
 Let
 
 \[
-s=\left\lfloor\frac r{300}\right\rfloor.
+s=\left\lfloor\frac r{288}\right\rfloor.
 \]
 
-Then `s<=r/300`, and `(7)` gives
+Then `s<=r/288`, and `(7)` gives
 
 \[
 \log_2P_s(t_r)
 \le
-\frac{11r}{300}(t+16r+33)
+\frac{11r}{288}(t+16r+33)
 +
-\frac{88r^2}{300^2}.
+\frac{88r^2}{288^2}.
 \tag{8}
 
 Subtract the right side of `(8)` from the lower bound `(6)`. Exact simplification gives
@@ -156,10 +156,10 @@ Subtract the right side of `(8)` from the lower bound `(6)`. Exact simplificatio
 \begin{aligned}
 \log_2m_{n+r}-\log_2P_s(t_r)
 >{}&r\left(
-\frac{331}{5700}t
-+rac{36391}{213750}r\\
+\frac{1547}{27360}t
++rac{143531}{984960}r\\
 &\qquad
--rac{4775293}{13300}
+-rac{4584925}{12768}
 \right).
 \end{aligned}
 }
@@ -170,14 +170,14 @@ The bracket is increasing in both `t` and `r`. At the smallest allowed values
 \[
 t=5632,
 \qquad
-r=300,
+r=288,
 \]
 
 it equals
 
 \[
 \boxed{
-\frac{253787}{13300}>0.
+\frac{84263}{63840}>0.
 }
 \tag{10}
 
@@ -204,7 +204,7 @@ causally generated stack:
   mixed-radix future-cylinder quotients;
 
 stack growth:
-  depth >= floor(r/300) after r permanent-refund connectors;
+  depth >= floor(r/288) after r permanent-refund connectors;
 
 physical growth:
   core >2^170 per connector and top quotient accelerating.
@@ -217,5 +217,5 @@ The remaining positive theorem is now sharply one of **entry and exact routing**
 - Unbounded stack depth is conditional on an infinite ordinary orbit existing.
 - The theorem does not choose the required mixed-radix digits.
 - Large stack capacity is not the same as legal stack content.
-- The numerical constant `300` is rigorous and convenient, not claimed optimal.
+- The numerical constant `288` is rigorous and convenient; it is the first integer accepted by this direct uniform envelope, but no global optimality is claimed.
 - No `K-85xx` candidate is produced.
