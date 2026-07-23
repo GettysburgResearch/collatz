@@ -212,4 +212,4 @@ A positive answer, with exact replay, is an unconditional Collatz counterexample
 
 ## Verification
 
-`X-8202` reconstructs 386,176 exact coherent refund-cone lift cases in its finite audit grid and checks the first 501 inequalities of the schedule `(9)` using integer arithmetic.
+`X-8202` reconstructs 11,250 exact coherent refund-cone lift cases in its finite audit grid and checks the first 501 inequalities of the schedule `(9)` using integer arithmetic.
