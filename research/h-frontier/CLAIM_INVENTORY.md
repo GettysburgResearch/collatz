@@ -2,7 +2,7 @@
 
 This index reserves the `*-9500` identifiers for issue #17. It is not the
 repository's canonical `CLAIMS.md`. All theorem-level statements remain
-`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9508`
+`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9509`
 are empirical or exact finite checks and do not promote any universal claim.
 
 ## Packet files
@@ -21,9 +21,11 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_08B.md`](claims/ITERATION_08B.md) — `L-9523`, `R-9506`, `Q-9510`.
 - [`claims/ITERATION_09.md`](claims/ITERATION_09.md) — `L-9524`, `L-9525`, `R-9507`, `Q-9511`.
 - [`claims/ITERATION_10.md`](claims/ITERATION_10.md) — `L-9526`, `T-9516`, `T-9517`, `R-9508`, `Q-9512`.
+- [`claims/ITERATION_11.md`](claims/ITERATION_11.md) — `L-9527`, `L-9528`, `T-9518`, `R-9509`, `Q-9513`.
 - [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact ordinary and short-period counterexample sweep.
 - [`../../experiments/X-9507-h-cycle-complexity/README.md`](../../experiments/X-9507-h-cycle-complexity/README.md) — exact continued-fraction cycle-period certificate.
 - [`../../experiments/X-9508-h-compiler-renewal/README.md`](../../experiments/X-9508-h-compiler-renewal/README.md) — exact compiler and centered-renewal box audit.
+- [`../../experiments/X-9509-h-renewal-counter/README.md`](../../experiments/X-9509-h-renewal-counter/README.md) — exact renewal one-counter and refund-graph audit.
 
 ## Status table
 
@@ -94,9 +96,15 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `T-9517` | Sharp survivor deficit pressure | PROPOSED | `T-9502`, `L-9504`, `L-9519` |
 | `R-9508` | Finite control and qualitative fresh primes are insufficient | PROPOSED | `L-9526`, `T-9516`, `T-9517` |
 | `Q-9512` | Positive-cycle-exploiting macro construction interface | IDEA | physical zero carry and all-time induction still required |
+| `L-9527` | Canonical renewal type cylinders | PROPOSED | exact two-place renewal equations |
+| `T-9518` | Counterexample equivalence and `1/21` renewal Kraft law | PROPOSED | `L-9518`, `L-9527` |
+| `L-9528` | Exact refund-edge growth criterion | PROPOSED | `L-9527` |
+| `R-9509` | Refund SCC is not an ordinary witness | PROPOSED | finite-state projection boundary |
+| `Q-9513` | Forever-defined renewal-counter atom | IDEA | one explicit finite tuple would disprove H and Collatz |
 | `X-9506` | Exact counterexample-first ordinary and short-period sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no word cycle through period 14 |
 | `X-9507` | Exact cycle-period compression certificate | INTERNAL EXACT | finite only; supports `T-9515` |
 | `X-9508` | Exact compiler and renewal-box audit | INTERNAL EXACT | finite only; 1,200,600 stars, no cycle |
+| `X-9509` | Exact renewal one-counter and refund-graph audit | INTERNAL EXACT | finite only; largest refund SCC 594, no infinite tuple |
 
 ## Dependency summary
 
@@ -154,13 +162,25 @@ Iteration 10 adds:
 3. `T-9517`, raising the nonperiodic survivor's rounded-deficit baseline to the
    exact critical constant `log_8(4/3)`.
 
+Iteration 11 gives the first exact integer-first constructive reduction for H:
+
+1. every renewal type is one arithmetic progression in one ordinary counter;
+2. every type transition is one exact quotient-refund branch
+   `k=eta+2^q t`, `k'=zeta+3^g t`;
+3. an H counterexample is equivalent to one finite tuple whose deterministic
+   decoder remains defined forever;
+4. one complete renewal has exact relative Kraft mass `1/21`;
+5. the finite refund projection already contains a 594-state SCC, so positive
+   engine structure exists even though no ordinary witness has yet been found.
+
 `X-9506` exhausts every ordinary candidate below `3*2^65`; its largest exact
 block lifetime is thirty-four. `X-9507` upgrades the periodic exclusion from
 word period fourteen to more than 2.47 billion blocks. `X-9508` checks
-1,200,600 centered renewal stars and finds no cycle.
+1,200,600 centered renewal stars and finds no cycle. `X-9509` checks 759,375
+renewal counter cylinders through type bound 15 and finds substantial refund
+SCC structure but no forever-defined ordinary tuple.
 
-No structured counterexample has been found. A viable one must now exploit
-physical positive multiplier cycles faster than the polynomial macro threshold
-or use a genuinely unbounded macro state, meet the sharp deficit and
-quantitative prime burdens, and still furnish one positive integer whose
-extension carries are eventually zero.
+No structured counterexample has been found. The strongest positive target is
+now `Q-9513`: one explicit finite renewal tuple with an all-time decoder
+invariant. Such a tuple would reconstruct an infinite positive H orbit and,
+through `L-9501`, an unconditional Collatz counterexample.
