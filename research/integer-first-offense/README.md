@@ -58,7 +58,7 @@ For two compressed affine blocks, the commutator
 =(q_u-p_u)C_v-(q_v-p_v)C_u
 \]
 
-controls every `u^m v^n` candidate. Once the cycle denominator exceeds `G_m|\Omega|`, all later `n` are eliminated. The frozen packet contains zero cycle hits.
+controls every `u^m v^n` candidate. Once the cycle denominator exceeds `G_m|Omega|`, all later `n` are eliminated. The frozen packet contains zero cycle hits.
 
 ## 2. Centered non-neutral support program
 
@@ -78,7 +78,7 @@ D_w\mid E_w,
 E_w\ge2D_w>0.
 \]
 
-PR #34 independently developed the first centered support layers. This branch reconstructs the interface and adds:
+This branch supplies complete proposed layers through support eleven:
 
 | claim | excluded support | exact finite packet |
 |:---|:---|:---|
@@ -86,10 +86,9 @@ PR #34 independently developed the first centered support layers. This branch re
 | `T-9602` / `X-9606` | exactly 8 | 3,880,002 candidates |
 | `T-9603` / `X-9607` | exactly 9 | 98,203,183 candidates |
 | `T-9604` / `X-9608` | exactly 10 | 1,623,353,430 candidates represented by MITM |
+| `T-9605` / `X-9609` | exactly 11 | 27,283,361,062 candidates represented by MITM |
 
-Every packet has zero formal divisor hits.
-
-`L-9605` supplies the scalable exact join. For a split `w=uv`,
+Every packet has zero formal divisor hits. `L-9605` supplies the scalable exact join. For a split `w=uv`,
 
 \[
 D_w\mid E_w
@@ -97,30 +96,91 @@ D_w\mid E_w
 E_u2^{-A_u}+E_v3^{-k_v}\equiv0\pmod{D_w}.
 \]
 
-`X-9608` is independently checked with `5+5` and `4+6` splits.
+The support-enumeration frontier is now led by the independent issue-#9 branch, whose proposed exact packets extend through support seventeen. Further raw support enumeration is therefore not this branch’s highest-value offense.
 
-Subject to independent reconstruction of all proposed centered layers, every nontrivial positive cycle would require at least **eleven** valuations different from `2`.
+## 3. Christoffel full-denominator program
 
-## 3. Constructive pivot: quotient refund
+### Pure Farey commutator — `L-9606`, `X-9610`
 
-The cycle exclusions are useful, but the branch’s positive target remains an unconditional ordinary witness.
+If lower mechanical valuation blocks have Farey-neighbor slopes
 
-Issue #43 / PR #48 proves a sharp conditional fact for the linear-height phase-34 architecture: once one coherent ordinary path has a positive lift quotient beyond the exact threshold, that quotient at least doubles at every stage. Growth is therefore no longer the missing theorem.
+\[
+{p\over q}<{r\over s},
+\qquad rq-ps=1,
+\]
 
-The sole constructive wall is now:
+then
+
+\[
+\boxed{
+C(\mathcal C_{p/q}\mathcal C_{r/s})
+-C(\mathcal C_{r/s}\mathcal C_{p/q})
+=-2^{r+s-1}3^{q-1}.}
+\]
+
+A contextual standard-factor swap therefore changes the full numerator by one exact signed `{2,3}`-unit.
+
+### Unrepaired mechanical exclusion — `T-9606`
+
+The standard Farey-parent factorization and cyclic-rotation identity imply
+
+\[
+\gcd(C_w,|2^A-3^k|)=1
+\]
+
+for every primitive rational lower mechanical word. Powers and upper conjugates reduce to that primitive case. Hence the only positive exact cycle in the complete unrepaired rational-mechanical class is the trivial word `(2)` at `n=1`.
+
+### Aligned repair no-go — `L-9607`, `T-9607`, `X-9611`
+
+For two equal-summary block constants, an aligned `R`-block mixture inherits the complete geometric factor
+
+\[
+G_R={Q^R-P^R\over Q-P}.
+\]
+
+For the two standard Christoffel conjugates, their constant difference is a pure `{2,3}`-unit while `G_R` is coprime to six. Thus the geometric factor forces an all-or-none orientation. No genuinely mixed aligned conjugate pattern can certify a cycle.
+
+The viable compiler is consequently narrow and explicit:
 
 ```text
-one explicit ordinary initialization
-+ causal stage-word selection
-+ exact local connector replay
-+ canonical most-significant carry flush.
+primitive mechanical SLP
+ + genuinely nonaligned multiscale Christoffel swaps
+ -> finite signed {2,3}-unit repair equation
+ -> complete identity C=n(2^A-3^k)
+ -> independent replay.
 ```
 
-A successful invariant there immediately yields an unbounded physical induced orbit. Pairwise quotient lifts, compactness, or future-digit selection do not suffice.
+## 4. Ordinary multiplicative-refund funnel
+
+The repository’s direct divergent-orbit programs now share one exact form:
+
+```text
+q=rho+2^H ell
+ ->
+q_next=sigma+P ell,
+```
+
+where `ell` is the actual ordinary most-significant lift.
+
+The smallest live machines are:
+
+1. the PR #45 fixed six-branch quotient chart, with constant radix `2^19`, multiplier `9^6`, and strict growth at every legal transition;
+2. the PR #51 divisible-seven run core
+   \[
+   2^{4+3s}v^+=9^{r+1}v+1,
+   \]
+   where sufficiently rich nine-run windows force physical growth;
+3. the PR #49 changing-height intrinsic core
+   \[
+   2^D C'=3^G C+1,
+   \]
+   where every legal transition grows the primitive core by more than 170 bits.
+
+The load-bearing issue is the same in all three: generate the next transported low residue causally from one finite ordinary initial object and prove canonical top closure forever. Pairwise lifts, a periodic residue lasso, or a unique `2`-adic completion are not enough.
 
 ## Collaborator handoffs
 
-All exact cycle packets are posted to issue #9 and PR #34. The phase-1 boundary of issue #39 is recorded explicitly: a permanent phase-1 tail is the original shortcut Collatz map shifted by one, not an extra amplifier.
+Exact cycle packets and Christoffel repair identities are shared with issue #9, PR #42, PR #45, and PR #34. Ordinary refund findings are shared with issues #43 and #46 and with PRs #48, #49, and #51. The phase-1 boundary of issue #39 remains explicit: a permanent phase-1 tail is the original shortcut Collatz map shifted by one, not an extra amplifier.
 
 ## Status
 
