@@ -12,6 +12,9 @@ template<class R> struct Entry{R residue;u64 code;bool operator<(Entry const&o)c
 cpp_int ipow(cpp_int a,int e){cpp_int r=1;while(e-- >0)r*=a;return r;}
 cpp_int comb(int n,int k){if(k<0||k>n)return 0;if(k>n-k)k=n-k;cpp_int r=1;for(int i=1;i<=k;i++)r=r*(n-k+i)/i;return r;}
 u64 mul64(u64 a,u64 b,u64 m){return (u128)a*b%m;}
+template<class R> R addmod(R a,R b,R m){return (a+b)%m;}
+u64 addmod(u64 a,u64 b,u64 m){return (u64)(((u128)a+b)%m);}
+template<class R> R submod(R a,R b,R m){return a>=b?a-b:m-(b-a);}
 
 struct Wide{u64 x[4];};
 Wide wide_prod(u128 a,u128 b){u64 a0=(u64)a,a1=(u64)(a>>64),b0=(u64)b,b1=(u64)(b>>64);u128 p00=(u128)a0*b0,p01=(u128)a0*b1,p10=(u128)a1*b0,p11=(u128)a1*b1;Wide p{};p.x[0]=(u64)p00;u128 s1=(p00>>64)+(u64)p01+(u64)p10;p.x[1]=(u64)s1;u128 s2=(p01>>64)+(p10>>64)+(u64)p11+(s1>>64);p.x[2]=(u64)s2;u128 s3=(p11>>64)+(s2>>64);p.x[3]=(u64)s3;if(s3>>64)throw std::runtime_error("wide overflow");return p;}
@@ -32,7 +35,7 @@ using Pattern=std::array<int,16>;
 bool canonical(Pattern const&p){for(int s=1;s<16;s++){for(int j=0;j<16;j++){int a=p[(s+j)&15],b=p[j];if(a<b)return false;if(a>b)break;}}return true;}
 void gen_patterns(int idx,int rem,Pattern&p,std::vector<Pattern>&out){if(idx==15){if(rem>=1&&rem!=2){p[idx]=rem;if(canonical(p))out.push_back(p);}return;}int remain=15-idx;for(int a=1;a<=rem-remain;a++){if(a==2)continue;p[idx]=a;gen_patterns(idx+1,rem-a,p,out);}}
 
-template<class R,class Mul>struct Engine{R D;Mul mul;std::vector<R>p2,p3,p4;Engine(R d,Mul mm,int maxe,R one):D(d),mul(mm),p2(maxe+2),p3(maxe+2),p4(maxe+2){p2[0]=p3[0]=p4[0]=one;for(int i=1;i<(int)p2.size();i++){p2[i]=(p2[i-1]+p2[i-1])%D;p3[i]=(p3[i-1]+p3[i-1]+p3[i-1])%D;p4[i]=(p4[i-1]+p4[i-1]+p4[i-1]+p4[i-1])%D;}}R block(R C,int K,int a,int g)const{R diff=p4[g]>=p3[g]?p4[g]-p3[g]:p4[g]+D-p3[g];R x=mul(p3[g+1],C),y=mul(p3[g],p2[K]),z=mul(p2[K+a],diff);return ((x+y)%D+z)%D;}};
+template<class R,class Mul>struct Engine{R D;Mul mul;std::vector<R>p2,p3,p4;Engine(R d,Mul mm,int maxe,R one):D(d),mul(mm),p2(maxe+2),p3(maxe+2),p4(maxe+2){p2[0]=p3[0]=p4[0]=one;for(int i=1;i<(int)p2.size();i++){p2[i]=addmod(p2[i-1],p2[i-1],D);p3[i]=addmod(addmod(p3[i-1],p3[i-1],D),p3[i-1],D);p4[i]=addmod(addmod(p4[i-1],p4[i-1],D),addmod(p4[i-1],p4[i-1],D),D);}}R block(R C,int K,int a,int g)const{R diff=submod(p4[g],p3[g],D);R x=mul(p3[g+1],C),y=mul(p3[g],p2[K]),z=mul(p2[K+a],diff);return addmod(addmod(x,y,D),z,D);}};
 
 u64 enc_gap(u64 code,int i,int g){return code|((u64)g<<(5*i));}
 void dec_gap(u64 code,std::array<int,8>&g){for(int i=0;i<8;i++)g[i]=(code>>(5*i))&31;}
