@@ -12,6 +12,9 @@ template<class R> struct Entry { R residue; uint32_t ordinal; bool operator<(Ent
 cpp_int ipow(cpp_int a,int e){cpp_int r=1;while(e-- >0)r*=a;return r;}
 cpp_int comb(int n,int k){if(k<0||k>n)return 0;if(k>n-k)k=n-k;cpp_int r=1;for(int i=1;i<=k;i++)r=r*(n-k+i)/i;return r;}
 u64 mul64(u64 a,u64 b,u64 m){return (u128)a*b%m;}
+template<class R> R addmod(R a,R b,R m){return (a+b)%m;}
+u64 addmod(u64 a,u64 b,u64 m){return (u64)(((u128)a+b)%m);}
+template<class R> R submod(R a,R b,R m){return a>=b?a-b:m-(b-a);}
 
 struct Wide { u64 x[4]; };
 Wide wide_prod(u128 a,u128 b){u64 a0=(u64)a,a1=(u64)(a>>64),b0=(u64)b,b1=(u64)(b>>64);u128 p00=(u128)a0*b0,p01=(u128)a0*b1,p10=(u128)a1*b0,p11=(u128)a1*b1;Wide p{};p.x[0]=(u64)p00;u128 s1=(p00>>64)+(u64)p01+(u64)p10;p.x[1]=(u64)s1;u128 s2=(p01>>64)+(p10>>64)+(u64)p11+(s1>>64);p.x[2]=(u64)s2;u128 s3=(p11>>64)+(s2>>64);p.x[3]=(u64)s3;if(s3>>64)throw std::runtime_error("wide overflow");return p;}
@@ -20,7 +23,7 @@ struct Mont {u128 m,mp,r2,one;Mont(u128 mm):m(mm){u128 inv=1;for(int i=0;i<8;i++
 
 uint64_t count_def(int n,int S){static uint64_t memo[16][128];static bool done[16][128];if(S<0||S>=128)return 0;if(done[n][S])return memo[n][S];done[n][S]=true;if(n==0)return memo[n][S]=(S==0);uint64_t z=0;for(int a=1;a<=S-(n-1);a++)if(a!=2)z+=count_def(n-1,S-a);return memo[n][S]=z;}
 
-template<class R,class Mul> struct Engine {R D;Mul mul;std::vector<R>p2,p3,p4;Engine(R d,Mul mm,int maxe,R one=R(1)):D(d),mul(mm),p2(maxe+2),p3(maxe+2),p4(maxe+2){p2[0]=p3[0]=p4[0]=one%D;for(int i=1;i<(int)p2.size();i++){p2[i]=(p2[i-1]+p2[i-1])%D;p3[i]=(p3[i-1]+p3[i-1]+p3[i-1])%D;p4[i]=(p4[i-1]+p4[i-1]+p4[i-1]+p4[i-1])%D;}}R block(R C,int K,int a,int g)const{R diff=p4[g]>=p3[g]?p4[g]-p3[g]:p4[g]+D-p3[g];R x=mul(p3[g+1],C,D),y=mul(p3[g],p2[K],D),z=mul(p2[K+a],diff,D);return ((x+y)%D+z)%D;}};
+template<class R,class Mul> struct Engine {R D;Mul mul;std::vector<R>p2,p3,p4;Engine(R d,Mul mm,int maxe,R one=R(1)):D(d),mul(mm),p2(maxe+2),p3(maxe+2),p4(maxe+2){p2[0]=p3[0]=p4[0]=one%D;for(int i=1;i<(int)p2.size();i++){p2[i]=addmod(p2[i-1],p2[i-1],D);p3[i]=addmod(addmod(p3[i-1],p3[i-1],D),p3[i-1],D);p4[i]=addmod(addmod(p4[i-1],p4[i-1],D),addmod(p4[i-1],p4[i-1],D),D);}}R block(R C,int K,int a,int g)const{R diff=submod(p4[g],p3[g],D);R x=mul(p3[g+1],C,D),y=mul(p3[g],p2[K],D),z=mul(p2[K+a],diff,D);return addmod(addmod(x,y,D),z,D);}};
 
 template<int N,class R,class Mul,class Callback>
 void gen_half(Engine<R,Mul>const&E,int idx,int remB,int remG,R C,int K,std::array<int,N>&aa,std::array<int,N>&gg,Callback&cb){if(idx==N-1){int a=remB,g=remG;if(a<1||a==2||g<0)return;aa[idx]=a;gg[idx]=g;cb(E.block(C,K,a,g),aa,gg);return;}int remain=N-1-idx;for(int a=1;a<=remB-remain;a++){if(a==2)continue;int rb=remB-a;if(!count_def(remain,rb))continue;aa[idx]=a;for(int g=0;g<=remG;g++){gg[idx]=g;R out=E.block(C,K,a,g);gen_half<N>(E,idx+1,rb,remG-g,out,K+a+2*g,aa,gg,cb);}}}
