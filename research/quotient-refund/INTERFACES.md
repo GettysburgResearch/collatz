@@ -32,7 +32,7 @@ The present map escapes `L-9915` because its modulus and exact quotient operatio
 - `L-8202`: quantifies the extreme mismatch between finite word branching and the next binary modulus.
 - `Q-8201`: recommends a causal top-boundary compiler, possibly coupled to PR #3's ordinary quadratic bulk.
 
-These findings agree with `T-8504`: growth is not the bottleneck. The positive target is ordinary coherence from one finite state.
+These findings agree with `T-8504`, `T-8506`, and `T-8508`: growth is not the bottleneck. The positive target is ordinary coherence from one finite state.
 
 ## PR #13
 
@@ -44,14 +44,43 @@ These findings agree with `T-8504`: growth is not the bottleneck. The positive t
 
 ## PR #51 — negative-cycle pulse chart
 
-`O-8001` gives a much smaller parallel one-counter system around the negative three-cycle:
+PR #51 now supplies a genuinely parallel small model.
+
+`L-8004` gives the invariant divisible-seven core
+
+\[
+2^{4+3s}v^+=9^{r+1}v+1.
+\]
+
+`L-8002` then derives the exact changing-modulus quotient transition
 
 ```text
-h=8q       -> 9q,
-h=3+16q    -> 3+9q.
+k=rho_(r,s,t)+2^(4+3t)*ell
+  ->
+k_next=sigma_(r,s,t)+9^(r+1)*ell.
 ```
 
-Like `T-8504`, it turns a forever-defined ordinary path into a full Collatz counterexample and leaves canonical top-boundary closure open. It does not currently supply a closure mechanism transferable to the phase-34 refund map, but it is a valuable minimal control model for any proposed one-counter invariant.
+`T-8002` proves that a forever-defined path whose emitted runs are all at least five is a complete positive unbounded Collatz orbit.
+
+`L-8507` shows that the phase-34 core has exactly the same structural interface:
+
+```text
+m=rho_k+2^(11(t+33))*ell
+  ->
+m_next=sigma_k+3^G*ell.
+```
+
+In both systems:
+
+```text
+- the modulus changes with the physical scale;
+- one ordinary quotient carries the most-significant boundary;
+- the odd multiplier refunds the unused lift;
+- finite pair compatibility is automatic;
+- infinite definedness is the sole existence gap.
+```
+
+The phase-34 system has four continuation residues with a type-independent modulus; the pulse chart has an unbounded run label controlling its modulus. A reusable top-boundary theorem should be stated for this shared multiplicative-quotient interface, not for either branch's surface notation alone.
 
 ## Issue #40 and PR #37
 
@@ -77,6 +106,14 @@ intrinsic valuation marker,
 odd boundary word W,
 unimodular top coordinate k,
 canonical next-boundary divisibility.
+```
+
+`L-8507` adds the exact complete top-boundary language:
+
+```text
+four residues rho_k in one modulus H_t,
+one nonnegative carry sigma_k,
+one odd refund multiplier 3^G.
 ```
 
 `T-8505` adds the global requirement that any infinite path escape every fixed finite prime support.
