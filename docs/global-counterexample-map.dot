@@ -1,10 +1,10 @@
-digraph CollatzPass4 {
+digraph CollatzPass5 {
   graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=12, labelloc="t",
-         label="Global Collatz Counterexample Dependency Map — cartography pass 4",
-         nodesep=0.33, ranksep=0.68, compound=true, splines=ortho];
-  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=8.5,
+         label="Global Collatz Counterexample Dependency Map — cartography pass 5",
+         nodesep=0.32, ranksep=0.72, compound=true, splines=ortho];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=8.3,
         margin="0.11,0.06", color="#666666", fillcolor="#e5e7eb"];
-  edge [fontname="Arial", fontsize=7.5, color="#555555", arrowsize=0.68];
+  edge [fontname="Arial", fontsize=7.3, color="#555555", arrowsize=0.67];
 
   false [label="COLLATZ IS FALSE", shape=doubleoctagon, penwidth=2];
   cycle [label="Positive nontrivial cycle", shape=oval];
@@ -13,15 +13,36 @@ digraph CollatzPass4 {
   cycle -> false; div -> false; third -> false;
 
   subgraph cluster_cycle {
-    label="Critical finite cycle"; color="#b45309"; style="rounded";
+    label="Positive-cycle funnel"; color="#b45309"; style="rounded";
     ceq [label="Exact cycle equation", fillcolor="#c8f7c5", color="#267326"];
-    front [label="Lengths 184 and 185 excluded\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
-    support [label=">=8 non-2 valuations\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
-    block [label="Block residue / carry decoder", fillcolor="#ffd6a5", color="#b45309"];
-    comm [label="Opposite-drift commutator sieve", fillcolor="#ffd6a5", color="#b45309"];
-    prime [label="Cross-prime excess-path compiler", fillcolor="#ffd6a5", color="#b45309"];
-    full [label="Full denominator + exact replay", shape=diamond];
-    ceq -> front; ceq -> support; block -> full; comm -> full; prime -> full; full -> cycle;
+    len [label="No cycle through 50,000\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
+    support [label="Support layers through 17\nproposed / source-exact", fillcolor="#ffd6a5", color="#b45309"];
+    bridge [label="14^k <= 11^k 2^s\nconditional s >= 17,397", fillcolor="#fff2a8", color="#9a7b00"];
+    comp [label="Block / mechanical / half-join compilers", fillcolor="#ffd6a5", color="#b45309"];
+    cap [label="Commutator + fixed-cone resultants", fillcolor="#ffd6a5", color="#b45309"];
+    prime [label="Prime-power compatibility", fillcolor="#ffd6a5", color="#b45309"];
+    full [label="Entire denominator + exact replay", shape=diamond];
+    ceq -> len -> bridge; ceq -> support -> bridge;
+    comp -> full; cap -> full; prime -> full; bridge -> full -> cycle;
+  }
+
+  subgraph cluster_refund {
+    label="Ordinary multiplicative-refund funnel"; color="#b45309"; style="rounded";
+    common [label="q=rho+2^E ell\nq'=sigma+M ell", fillcolor="#ffd6a5", color="#b45309"];
+    six [label="PR45 fixed six-branch chart", fillcolor="#ffd6a5", color="#b45309"];
+    run [label="PR51 changing-run highway", fillcolor="#ffd6a5", color="#b45309"];
+    core [label="PR49 intrinsic changing-height core", fillcolor="#ffd6a5", color="#b45309"];
+    hctr [label="PR19 H renewal counter", fillcolor="#ffd6a5", color="#b45309"];
+    top [label="One ordinary root\ndefined forever?", shape=diamond];
+    common -> six -> top; common -> run -> top; common -> core -> top; common -> hctr -> top; top -> div;
+  }
+
+  subgraph cluster_selector {
+    label="Exact 176-bit bridge"; color="#2563a8"; style="rounded";
+    s176 [label="PR3 conditional 176-bit selector", fillcolor="#ffd6a5", color="#b45309"];
+    c176 [label="PR49 consumes 176 new top bits", fillcolor="#ffd6a5", color="#b45309"];
+    causal [label="Causal orientation\n+ top closure", shape=diamond];
+    s176 -> causal; c176 -> causal -> core;
   }
 
   subgraph cluster_frozen {
@@ -33,62 +54,26 @@ digraph CollatzPass4 {
     stage -> t9705 -> closed; ev -> t9705;
   }
 
-  subgraph cluster_refund {
-    label="Linear refund"; color="#b45309"; style="rounded";
-    comp [label="PR49 intrinsic state from n\n(t,i,k)", fillcolor="#ffd6a5", color="#b45309"];
-    defined [label="One finite state\ndefined forever?", shape=diamond];
-    grow [label="k' >= 2k\nfresh primes required", fillcolor="#ffd6a5", color="#b45309"];
-    comp -> defined -> grow -> div;
-  }
-
-  subgraph cluster_pulse {
-    label="Negative-three pulse chart"; color="#b45309"; style="rounded";
-    o8001 [label="PR51 exact h block chart", fillcolor="#ffd6a5", color="#b45309"];
-    g [label="h=21x invariant\nG: 9x/8 or (9x+1)/16", fillcolor="#ffd6a5", color="#b45309"];
-    gdef [label="One x>0\ndefined forever?", shape=diamond];
-    min31 [label="Exact minimum through depth 31\nexits at block 32", fillcolor="#fff2a8", color="#9a7b00"];
-    renew [label="H-like toll-one renewal", fillcolor="#ffd6a5", color="#b45309"];
-    o8001 -> g -> gdef -> div; g -> min31; g -> renew -> gdef;
-  }
-
-  subgraph cluster_center {
-    label="Centered 64 to 81"; color="#777777"; style="rounded";
-    zero [label="64B'=81B+e-e'"];
-    ghost [label="Fixed modulus = completion ghost", fillcolor="#ffc7c7", color="#aa1111"];
-    add [label="Additive one-counter periodic", fillcolor="#ffc7c7", color="#aa1111"];
-    top [label="Nonlinear top-boundary machine", shape=diamond];
-    zero -> ghost; zero -> add; zero -> top -> div;
-  }
-
-  subgraph cluster_cross {
-    label="Cross-cycle"; color="#9a7b00"; style="rounded";
-    cell [label="m=22 physical handoff", fillcolor="#fff2a8", color="#9a7b00"];
-    ph1 [label="Permanent phase 1\n= shifted Collatz", fillcolor="#ffc7c7", color="#aa1111"];
-    multi [label="Repeated multi-phase return", shape=diamond];
-    cell -> ph1; cell -> multi -> div; multi -> cycle;
-  }
-
-  subgraph cluster_h {
-    label="Partial H"; color="#b45309"; style="rounded";
-    hc [label="No cycle <=2.479b blocks\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
-    old [label="10/30 compiler\nproposed closed", fillcolor="#ffd6a5", color="#b45309"];
-    hnew [label="New nondescending\nescaping macro family", shape=diamond];
-    hc -> hnew -> div; old -> hnew;
-  }
-
   subgraph cluster_other {
-    label="Other exact certificates"; color="#777777"; style="rounded";
+    label="Other direct / equivalent routes"; color="#777777"; style="rounded";
+    center [label="Centered nonlinear top boundary", shape=diamond];
+    cross [label="Repeated multi-phase return", shape=diamond];
     dfa [label="Boundary-memory sanctuary DFA", shape=diamond];
     cover [label="Coverage deficit C(x)<x", shape=diamond];
     cone [label="Third binary fixed ray", shape=diamond];
-    dfa -> div; cover -> third; cone -> third;
+    center -> div; cross -> div; cross -> cycle; dfa -> div; cover -> third; cone -> third;
   }
+
+  ghost [label="Fixed-modulus centered lasso\n= completion ghost", fillcolor="#ffc7c7", color="#aa1111"];
+  ph1 [label="Permanent phase 1\n= shifted Collatz", fillcolor="#ffc7c7", color="#aa1111"];
+  pulse [label="One fixed pulse cone\n= finite", fillcolor="#ffd6a5", color="#b45309"];
+  ghost -> center; ph1 -> cross; pulse -> cap;
 
   legend_p [label="PROVED / independently verified", fillcolor="#c8f7c5", color="#267326"];
   legend_l [label="source-inspected literature", fillcolor="#cfe8ff", color="#2563a8"];
   legend_o [label="PROPOSED", fillcolor="#ffd6a5", color="#b45309"];
-  legend_e [label="exact finite / empirical", fillcolor="#fff2a8", color="#9a7b00"];
-  legend_r [label="closed / refuted / secret reduction", fillcolor="#ffc7c7", color="#aa1111"];
+  legend_e [label="exact finite / conditional synthesis", fillcolor="#fff2a8", color="#9a7b00"];
+  legend_r [label="closed / secret reduction", fillcolor="#ffc7c7", color="#aa1111"];
   legend_q [label="OPEN", fillcolor="#e5e7eb", color="#666666"];
   {rank=sink; legend_p; legend_l; legend_o; legend_e; legend_r; legend_q;}
 }
