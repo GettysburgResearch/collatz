@@ -1,4 +1,4 @@
-# T-8509 — No infinite refund path can have 471 consecutive canonical lifts
+# T-8509 — Canonical lift runs are uniformly bounded and eventually have length at most 233
 
 **Claim ID:** `T-8509`  
 **Status:** `PROPOSED`  
@@ -77,7 +77,28 @@ Equivalently, every hypothetical infinite ordinary refund path has a noncanonica
 \tag{4}
 \]
 
-Combined with `T-8508`, every such noncanonical event occurring from height `3776` satisfies
+### Asymptotic strengthening
+
+For every multiple of `16` with
+
+\[
+\boxed{t\ge1{,}140{,}416,}
+\]
+
+inequality `(2)` already fails at `r=233`. Therefore no such late orbit segment has `234` consecutive canonical lifts, and every hypothetical infinite path satisfies the stronger asymptotic density bound
+
+\[
+\boxed{
+\liminf_{N\to\infty}
+\frac{
+\#\{0\le n<N:\ell_n\ge1\}
+}{N}
+\ge\frac1{234}.
+}
+\tag{5}
+\]
+
+Combined with `T-8508`, every noncanonical event occurring from height `3776` satisfies
 
 \[
 m_{n+1}>2m_n.
@@ -122,7 +143,7 @@ Using `D<=11(t+17)=11t+187`, one obtains the uniform canonical cap
 \boxed{
 \log_2 C<22t+559.
 }
-\tag{5}
+\tag{6}
 \]
 
 ### Every legal core step has increasing linear gain
@@ -161,7 +182,7 @@ therefore gives
 >
 \frac{63t-121080}{665}.
 }
-\tag{6}
+\tag{7}
 \]
 
 Indeed
@@ -172,7 +193,7 @@ Indeed
 
 ### Summation across a canonical run
 
-Under `(1)`, the endpoint state `n+r` is canonical, so `(5)` applies there. Summing `(6)` over the `r` transitions from `n` to `n+r`, using
+Under `(1)`, the endpoint state `n+r` is canonical, so `(6)` applies there. Summing `(7)` over the `r` transitions from `n` to `n+r`, using
 
 \[
 t_{n+s}=t+16s,
@@ -188,7 +209,7 @@ gives
 \frac{
 r(63t-121080)+504r(r-1)
 }{665}.
-\tag{7}
+\tag{8}
 \]
 
 Since `C_n>=1`, the first term on the right is nonnegative. The canonical endpoint cap is
@@ -196,12 +217,12 @@ Since `C_n>=1`, the first term on the right is nonnegative. The canonical endpoi
 \[
 \log_2 C_{n+r}
 <22(t+16r)+559.
-\tag{8}
+\tag{9}
 \]
 
-Combining `(7)--(8)` proves the necessary inequality `(2)`.
+Combining `(8)--(9)` proves the necessary inequality `(2)`.
 
-### The number 471
+### The uniform number 471
 
 At `r=470` and `t=3760`, the numerator obtained after moving the right side of `(2)` to the left is
 
@@ -223,7 +244,29 @@ Thus `(2)` fails. For fixed `r=470`, the left-minus-right expression has coeffic
 
 in `t`, so the contradiction only strengthens for every `t>=3760`.
 
-Condition `(1)` with `r=470` is exactly a string of `471` consecutive canonical lifts. This proves `(3)`. Partitioning a late orbit into consecutive blocks of length `471` proves `(4)`. ∎
+Condition `(1)` with `r=470` is exactly a string of `471` consecutive canonical lifts. This proves `(3)`. Partitioning a late orbit into consecutive blocks of length `471` proves `(4)`.
+
+### The eventual number 234
+
+For `r=233`, the coefficient of `t` in the same left-minus-right expression is
+
+\[
+63\cdot233-665\cdot22=49>0.
+\]
+
+At the first multiple of sixteen above the exact crossing point,
+
+\[
+t=1{,}140{,}416,
+\]
+
+the expression equals
+
+\[
+\boxed{593}>0.
+\]
+
+Hence `(2)` fails there and at every greater height. Condition `(1)` with `r=233` is a string of `234` consecutive canonical lifts. The late orbit may therefore be partitioned into blocks of length `234`, each containing a noncanonical event, which proves `(5)`. ∎
 
 ## Eureka consequence
 
@@ -243,5 +286,5 @@ But the exact Syracuse recurrence accumulates `Omega(r*t+r^2)` bits across a run
 
 - Positive density of refunded steps does not prove that any finite initial core reaches the required residues.
 - Canonical steps may still occur, and the theorem does not control the size change of the top quotient across them.
-- The number `471` is a rigorous uniform bound, not claimed optimal.
+- The constants `471` and `234` are rigorous bounds, not claimed optimal.
 - The theorem is conditional on the existence of an infinite ordinary core orbit; it does not construct one.
