@@ -38,6 +38,10 @@ def main():
             checks+=1
     assert checks==48
     assert 30**2*2086-1369**2==3239 and 2**8-3**5==13
+    x=p["t8512_future_stack_crosswalk"]
+    assert x["mixed_radix_second_digit_mod64"]==45
+    assert x["actual_next_residue_mod64"]==16
+    assert not x["equal"]
     assert not p["counterexample_claimed"]
     print("all independent X-8203 absorption/value checks passed")
 if __name__=="__main__":main()
