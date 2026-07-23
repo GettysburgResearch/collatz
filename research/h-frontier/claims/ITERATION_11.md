@@ -190,7 +190,8 @@ Then `zeta_(tau sigma)` is a nonnegative integer, and the exact deterministic
 transition from type `tau` to type `sigma` is
 
 \[
-\boxed{k=\eta_{\tau\sigma}+2^{q_\sigma}t,}
+\boxed{
+k=\eta_{\tau\sigma}+2^{q_\sigma}t,}
 \tag{19}
 \]
 
@@ -327,7 +328,7 @@ positive integers, are pairwise disjoint. Their relative Haar measures in
 =
 \left(\sum_{S\ge1}2^{-3S}\right)
 \left(\sum_{c\ge1}2^{-2c}\right)
-=rac1{21}.
+=\frac1{21}.
 }
 \tag{31}
 \]
@@ -423,7 +424,8 @@ g=g_\tau,
 Every point of its domain obeys
 
 \[
-\boxed{k'-k=(\zeta-\eta)+(3^g-2^q)t.}
+\boxed{
+k'-k=(\zeta-\eta)+(3^g-2^q)t.}
 \tag{39}
 \]
 
@@ -451,7 +453,42 @@ uses only refund edges is therefore an explicit positive H counterexample. If
 strict refund occurs infinitely often, its counter is unbounded, although
 unboundedness is not needed merely to disprove H termination.
 
-Equation (39) is immediate from (19)--(20). QED.
+### Cycle multiplier crosswalk
+
+Let
+
+\[
+\tau_i=(a_i,R_i,b_i),
+\qquad
+\tau_{i+1}=(b_i,R_{i+1},b_{i+1})
+\tag{42}
+\]
+
+form a directed type cycle. The product of the counter slopes around the cycle
+is
+
+\[
+\prod_i\frac{3^{2R_i+a_i}}{2^{3R_{i+1}+2b_{i+1}}}
+=\frac{3^{\sum_i(2R_i+b_i)}}{2^{\sum_i(3R_i+2b_i)}}.
+\tag{43}
+\]
+
+The right side is exactly the product of the physical renewal multipliers
+
+\[
+\frac{3^{2R_i+b_i}}{2^{3R_i+2b_i}}
+=\left(\frac98\right)^{R_i}
+ \left(\frac34\right)^{b_i}.
+\tag{44}
+\]
+
+Thus every directed cycle made entirely of refund edges has physical multiplier
+strictly larger than one. Its affine periodic fixed point is consequently
+negative, so the type cycle itself is not a positive ordinary periodic orbit.
+Its role is instead as a genuine positive engine for an aperiodic counter path.
+
+Equation (39) is immediate from (19)--(20), and (43) follows from
+`a_(i+1)=b_i` and cyclic reindexing. QED.
 
 ---
 
