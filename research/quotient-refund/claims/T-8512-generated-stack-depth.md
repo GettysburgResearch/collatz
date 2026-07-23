@@ -71,6 +71,8 @@ The equivalence is ordinary Euclidean mixed-radix division; it does not use a co
 
 ## Theorem
 
+### Uniform linear depth
+
 For every `r>=288`, the quotient-stack depth at connector `n+r` is at least
 
 \[
@@ -79,13 +81,33 @@ For every `r>=288`, the quotient-stack depth at connector `n+r` is at least
 }
 \tag{4}
 
-Consequently every hypothetical infinite ordinary refund path dynamically creates an unbounded stack:
+### Asymptotic strengthening
+
+For every
+
+\[
+\boxed{r\ge100{,}909,}
+\]
+
+the depth is at least
 
 \[
 \boxed{
-\operatorname{depth}(m_{n+r})\longrightarrow\infty.
+\left\lfloor\frac r{233}\right\rfloor.
 }
 \tag{5}
+
+Consequently
+
+\[
+\boxed{
+\liminf_{r\to\infty}
+\frac{\operatorname{depth}(m_{n+r})}{r}
+\ge\frac1{233},
+}
+\tag{6}
+
+and every hypothetical infinite ordinary refund path dynamically creates an unbounded stack.
 
 The stack is not initialized in advance. It consists of ordinary finite quotient blocks present in the current finite integer and grows forward under the physical Collatz orbit.
 
@@ -117,7 +139,7 @@ Using the lower sum in `T-8510/(8)` and `m_n>=1`, after `r` steps one obtains
 r(63t-353831)+504r(r-1)
 }{665}.
 }
-\tag{6}
+\tag{7}
 
 ### Exact size of an `s`-level stack
 
@@ -130,8 +152,10 @@ From `(1)`,
 &=\boxed{
 11s(t+16r+33)+88s(s-1).
 }
-\tag{7}
 \end{aligned}
+\tag{8}
+
+### Uniform denominator 288
 
 Let
 
@@ -139,7 +163,7 @@ Let
 s=\left\lfloor\frac r{288}\right\rfloor.
 \]
 
-Then `s<=r/288`, and `(7)` gives
+Then `s<=r/288`, and `(8)` gives
 
 \[
 \log_2P_s(t_r)
@@ -147,9 +171,9 @@ Then `s<=r/288`, and `(7)` gives
 \frac{11r}{288}(t+16r+33)
 +
 \frac{88r^2}{288^2}.
-\tag{8}
+\tag{9}
 
-Subtract the right side of `(8)` from the lower bound `(6)`. Exact simplification gives
+Subtract the right side of `(9)` from the lower bound `(7)`. Exact simplification gives
 
 \[
 \boxed{
@@ -157,13 +181,15 @@ Subtract the right side of `(8)` from the lower bound `(6)`. Exact simplificatio
 \log_2m_{n+r}-\log_2P_s(t_r)
 >{}&r\left(
 \frac{1547}{27360}t
-+rac{143531}{984960}r\\
++
+\frac{143531}{984960}r\\
 &\qquad
--rac{4584925}{12768}
+-
+\frac{4584925}{12768}
 \right).
 \end{aligned}
 }
-\tag{9}
+\tag{10}
 
 The bracket is increasing in both `t` and `r`. At the smallest allowed values
 
@@ -179,9 +205,53 @@ it equals
 \boxed{
 \frac{84263}{63840}>0.
 }
-\tag{10}
+\tag{11}
 
-Thus `m_(n+r)>P_s(t_r)`. Equation `(3)` gives `u_s>=1`, proving `(4)`. Letting `r` grow proves `(5)`. ∎
+Thus `m_(n+r)>P_s(t_r)`. Equation `(3)` gives `u_s>=1`, proving `(4)`.
+
+### Asymptotic denominator 233
+
+Now put
+
+\[
+s=\left\lfloor\frac r{233}\right\rfloor.
+\]
+
+The same calculation yields
+
+\[
+\boxed{
+\begin{aligned}
+\log_2m_{n+r}-\log_2P_s(t_r)
+>{}&r\left(
+\frac{1052}{22135}t
++
+\frac{4688}{5157455}r\\
+&\qquad
+-
+\frac{11137215}{30989}
+\right).
+\end{aligned}
+}
+\tag{12}
+
+The bracket is increasing in `t` and `r`. At
+
+\[
+t=5632,
+\qquad
+r=100{,}909,
+\]
+
+it equals
+
+\[
+\boxed{
+\frac{27453}{36102185}>0.
+}
+\tag{13}
+
+This proves `(5)`, hence `(6)`. The quadratic coefficient for denominator `232` is negative under this direct envelope, so `233` is the first integer denominator supported by this particular asymptotic comparison. No global optimality is asserted. ∎
 
 ## Relation to the exact path cylinders
 
@@ -204,7 +274,8 @@ causally generated stack:
   mixed-radix future-cylinder quotients;
 
 stack growth:
-  depth >= floor(r/288) after r permanent-refund connectors;
+  depth >= floor(r/288) uniformly,
+  liminf depth/r >= 1/233;
 
 physical growth:
   core >2^170 per connector and top quotient accelerating.
@@ -217,5 +288,5 @@ The remaining positive theorem is now sharply one of **entry and exact routing**
 - Unbounded stack depth is conditional on an infinite ordinary orbit existing.
 - The theorem does not choose the required mixed-radix digits.
 - Large stack capacity is not the same as legal stack content.
-- The numerical constant `288` is rigorous and convenient; it is the first integer accepted by this direct uniform envelope, but no global optimality is claimed.
+- The constants are rigorous consequences of the stated envelope, not claimed globally optimal.
 - No `K-85xx` candidate is produced.
