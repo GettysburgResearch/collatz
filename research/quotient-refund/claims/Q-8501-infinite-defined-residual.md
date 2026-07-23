@@ -2,12 +2,12 @@
 
 **Claim ID:** `Q-8501`  
 **Status:** `OPEN`  
-**Dependencies:** `L-8504`--`L-8507`, `T-8505`--`T-8508`  
+**Dependencies:** `L-8511`, `L-8512`, `T-8510`--`T-8513`  
 **Full-objective role:** a positive solution is an unconditional Collatz counterexample
 
-## Exact target
+## Exact intrinsic target
 
-Find one explicit finite intrinsic state
+Find one explicit finite state
 
 \[
 (t_0,\gamma_0,i_0,C_0),
@@ -25,9 +25,9 @@ t_0\ge3744,
 i_0\in\{0,1,2,3\},
 \]
 
-and `C_0` a positive integer coprime to six, such that the primitive-core decoder of `T-8507` is defined for every future step.
+and `C_0` a positive integer coprime to six, such that the decoder of `T-8507` is defined forever.
 
-At state `(t,gamma,i,C)`, set
+At state `(t,gamma,i,C)`, put
 
 \[
 G=7(t+1)+\gamma-\beta_i,
@@ -36,129 +36,165 @@ D=11(t+17)-i,
 \]
 
 \[
-X=3^G C+1.
+X=3^GC+1.
 \]
 
-The all-time obligations are exactly
+The exact all-time gates are
 
 \[
 \boxed{2^D\mid X}
 \]
 
-and, after `Y=X/2^D`,
+and, with `Y=X/2^D`,
 
 \[
 \boxed{[3^{\beta_i}Y]_{64}\in\{5,30,20,56\}.}
 \]
 
-The six-bit value gives the unique next type `j`, the next core is `C'=Y/2^j`, and the finite state updates to
+The six-bit value gives the unique next type `j`,
+
+\[
+C'=Y/2^j,
+\]
+
+and the finite state becomes
 
 \[
 (t+16,\beta_i,j,C').
 \]
 
-No connector inverse, carry tape, future type word, or completed `2`-adic address is input to this map.
+No future type word, inverse tape, prime schedule, or completed stack is input.
 
-## Equivalent top-boundary quotient target
+## Equivalent Hensel-quotient target
 
-`L-8506` places every legal current core in one of eight explicit ordinary blocks. `L-8507` proves that compatibility with a complete next block then reduces to exactly four residues of one ordinary top quotient:
+`L-8512` gives the determinant-one coordinate
+
+\[
+C=a+2^Dq,
+\qquad
+Y=h+3^Gq,
+\qquad
+\begin{pmatrix}2^D&a\\3^G&h\end{pmatrix}
+\in\operatorname{SL}_2(\mathbf Z).
+\]
+
+Put
+
+\[
+H_t=2^{11(t+33)}.
+\]
+
+At every step the four complete current-target/next-high-divisibility residues are
 
 \[
 \boxed{
-m=\rho_k+2^{11(t+33)}\ell
-\longmapsto
-m'=\sigma_k+3^G\ell,
-}
+q\equiv
+\Lambda+U b_j
+\pmod {H_t},
+\qquad
+b=(9,54,36,24),}
 \]
 
-where `k` is the following target type, the ternary lift is forced, the four `rho_k` are distinct, and `sigma_k>=0`.
-
-Thus a positive invariant may equivalently be written in either of two exact forms:
-
-```text
-primitive core form:
-  high divisibility + six-bit gate;
-
-top quotient form:
-  one of four residues mod 2^(11(t+33))
-  + exact multiplicative carry update.
-```
-
-From height `3760`, every noncanonical lift `ell>=1` strictly increases the top quotient. From height `3776`, `T-8508` gives
+for one odd unit `U`. The current physical target is automatic. Exactly one of the three free-lift classes modulo three is forbidden by source primitivity. For an allowed lift
 
 \[
-\boxed{m'>2m.}
+q=\varrho_j+H_t\ell,
 \]
 
-The exceptional case is the canonical lift `ell=0`; it is now an explicitly isolated top-boundary event rather than hidden connector arithmetic.
+the exact next quotient is
+
+\[
+q'=\tau_j+3^G\ell.
+\]
+
+Thus a positive solution may equivalently be an inductive ordinary class for one changing-modulus Hensel quotient whose router is an affine copy of the fixed toll alphabet.
+
+## Equivalent top-boundary target
+
+For one compiled current block, `L-8507` gives
+
+\[
+\boxed{
+m=\rho_k+H_t\ell
+\longmapsto
+m'=\sigma_k+3^G\ell.}
+\]
+
+`L-8509` splits the four residues into
+
+```text
+one common block of 11(t+33)-6 bits,
+then four allowed six-bit cells.
+```
+
+`L-8510` gives one base-64 multiplier/carry update, and `L-8511` proves that after affine normalization its six-bit symbol is exactly the fixed physical type symbol `p_k` on both sides.
+
+`T-8510` proves that every hypothetical infinite orbit becomes permanently refunded after finitely many connectors. `T-8513` proves that its current finite ordinary quotient then pays a complete future cylinder of linearly growing depth and retains a positive free quotient beyond it.
+
+The remaining theorem is therefore exactly:
+
+```text
+ENTRY:
+  one written integer reaches the permanent-refund regime;
+
+ROUTING:
+  its causally generated quotient content always equals
+  the next common long residue and one legal normalized type symbol.
+```
 
 ## Single-integer certificate
 
-The intrinsic state corresponds to the one physical positive integer
+The intrinsic state corresponds to the one physical integer
 
 \[
 \boxed{
 n_0=2^{11t_0+5+i_0}3^{\gamma_0}C_0-34.}
 \]
 
-Conversely, the factorization of `n_0+34` recovers all four state coordinates:
+Conversely, the factorization of `n_0+34` recovers all state coordinates:
 
 - the binary valuation modulo `176` gives `i_0`;
 - the full binary valuation gives `t_0`;
 - the ternary valuation gives `gamma_0`;
 - the remaining prime-to-six factor is `C_0`.
 
-A final certificate may therefore consist of one written integer, one finite inductive rule, and one independent verifier that reconstructs the entire state from the integer.
+A final certificate may therefore contain one written integer, one finite inductive routing rule, and one verifier reconstructing all marks from the integer.
 
-## Positive completion certificate
+## Automatic consequences of a positive solution
 
-A valid submission must contain:
+No separate proof of these items would remain:
+
+1. every connector and every intermediate shortcut-Collatz step is exact;
+2. all physical states remain positive;
+3. future types are determined causally;
+4. consecutive primitive cores are coprime;
+5. every primitive core gains more than `170` bits per connector;
+6. canonical lifts disappear after a finite time;
+7. the top quotient becomes permanently and acceleratingly refunded;
+8. the current finite integer continually prepays an expanding exact future cylinder;
+9. infinitely many globally new odd primes enter `n_n+34`;
+10. the physical orbit is unbounded.
+
+Hence one all-time routing invariant finishes the unconditional counterexample.
+
+## Acceptance gate
+
+A valid positive submission must contain:
 
 1. the explicit integer `n_0` or equivalent intrinsic state;
-2. a finite ordinary rule or inductive invariant proving both decoder gates recur forever;
-3. equivalently, an all-time proof that the top quotient lands in one of the four `L-8507` residues at every step;
-4. exact connector and physical tower replay;
-5. proof of positivity at every intermediate state;
-6. reconstruction of every intrinsic valuation/type marker;
-7. the automatic core-growth conclusion
-   \[
-   C_n>2^{170n}C_0;
-   \]
-8. an independent verifier beginning only from the finite integer and rule.
+2. a finite ordinary rule or inductive invariant proving every later route;
+3. exact proof of both the dyadic and primitive gates;
+4. canonical most-significant closure, not a fixed-modulus lasso;
+5. an independent verifier beginning only from `n_0` and the finite rule.
 
-Then `T-8507` gives one explicit positive ordinary Collatz counterexample.
-
-## Necessary arithmetic renewal
-
-Any positive solution must satisfy `T-8505`:
-
-- every boundary has a nontrivial prime-to-six core;
-- consecutive cores are coprime;
-- the complete core is replaced at every connector;
-- every fixed finite prime set is escaped infinitely often;
-- infinitely many globally new odd primes divide `n_n+34`.
-
-Thus the invariant cannot be a finite-prime multiplicative library, a bounded catalogue of prime-supported templates, or an ultimately periodic fixed-rank schema. It must causally manufacture the exact rapidly growing coprime core required by the next moving binary cylinder.
+A finite prefix, compatible `Z_2` point, periodic low-residue cycle, entropy surplus, or freely supplied future symbol sequence does not qualify.
 
 ## Negative completion target
 
-Alternatively, prove that every finite intrinsic core eventually leaves the decoder domain. Such a theorem would close the entire linear-height quotient-refund escape class.
+Alternatively, prove that every finite intrinsic core eventually leaves the decoder domain. Such a theorem would close the whole linear-height quotient-refund escape class.
 
-A particularly sharp negative target is to prove that canonical lifts cannot recur indefinitely and that every noncanonical lift eventually misses all four next residues. No such theorem is currently supplied.
+The canonical-run obstruction is no longer an open negative target: `T-8509` and `T-8510` already force eventual permanent refund. A negative theorem must now attack the permanently refunded affine fixed-alphabet router itself.
 
-## Current narrowing
+## Current frontier
 
-- `L-8502` removes the preloaded-inverse objection.
-- `L-8503` and `T-8504` reduce the original connector system to one complement counter.
-- `L-8504` removes trusted stage/type metadata and exposes the determinant-one physical marker.
-- `L-8505` turns every connector into one exact `3^G C+1` Syracuse equation.
-- `T-8507` removes all inverse/carry arithmetic from the runtime state.
-- `L-8506` compiles every local state into eight exact ordinary blocks.
-- `L-8507` reduces the complete next-stage compatibility to four residues with one type-independent modulus.
-- `T-8508` proves every noncanonical top lift is uniformly refunded and eventually more than doubles.
-- `T-8506` proves more than 170 bits of primitive-core growth per legal step.
-- `T-8502` shows the completion set has Hausdorff dimension zero.
-- `T-8503` excludes every eventually periodic type tail of minimal period at most `58`.
-- `T-8505` excludes every eventual finite prime support.
-
-The remaining object is one genuinely nonperiodic, fresh-prime-generating, top-boundary-carrying ordinary core orbit satisfying one explicit high binary divisibility and one six-bit gate at every step.
+The remaining object is one genuinely nonperiodic, fresh-prime-generating, top-boundary-carrying ordinary orbit satisfying a changing affine four-symbol Hensel cylinder forever. All drift, marker, canonical-run, and finite-stack-capacity obligations are closed inside the proposed packet.
