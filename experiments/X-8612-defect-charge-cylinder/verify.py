@@ -143,6 +143,8 @@ def main() -> int:
     assert data["cycle_odd_state_length_floor"] == Q
     assert data["cycle_signed_charge_floor"] == P
     assert data["cycle_non2_support_floor"] == P
+    assert data["verified_exponent"] == 71
+    assert data["stern_brocot_iterations"] == 136
 
     normal_cases = independent_normal_form_check()
     assert data["normal_form_cases"] == normal_cases
