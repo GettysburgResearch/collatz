@@ -12,7 +12,8 @@ All native IDs remain branch-qualified. No status promotion is performed here.
 | `PR49/T-8512` size depth | `LIT-KTHM-0054`; `PR48/R-8203` | **NUMERICAL CAPACITY RETAINED; RAW DIGIT CROSSWALK NARROWED** | Use inverse-affine transported residues, not plain Euclidean digits |
 | `PR50/L-8308` Farey grammar | Bugeaud–Reutenauer 2025 | **METHOD NEIGHBOR** | Map the exact grammar/rotations to integer Ostrowski parameters |
 | `PR50/Q-8301` mixed-place height closure | product formula / exact finite replay | **NATIVE FINITE CERTIFICATE** | Cross the full dyadic + odd-prime + real height budget |
-| `PR53/L-8201` pulse resultants | sparse resultants; de Weger; BCZ; variable S-units | **NATIVE RESULT + STRATEGIC EFFECTIVE BRIDGE** | Reduce repetition length to one source-compatible equation |
+| `PR53/L-8201` pulse resultants | sparse resultants; de Weger; BCZ; variable S-units | **NATIVE RESULT + STRATEGIC EFFECTIVE BRIDGE** | Reduce every support of size at least two to one source-compatible repetition equation |
+| `PR53/T-8202` single pulse, all repetitions | Matveev 2000; Legendre and certified continued fractions | **SOURCE-DEPENDENT NATIVE CLOSURE / PROPOSED** | Independent source normalization and extension to larger supports |
 | `ADEL/T-9315..T-9317` centered powers | Dubickas rational-power limit points and two-interval theorems | **HIGH-PRIORITY SOURCE SPECIALIZATION** | Acquire exact formula and map extremal word to appended blocks |
 | `H/L-9526,T-9516,T-9517` | path-complete Lyapunov functions; dual occupation measures | **METHOD BRIDGE** | Freeze finite affine macro grammar and preserve exact arithmetic legality |
 | low-period prescribed controllers | Väänänen–Wallisser 1991 | **KNOWN FIREWALL** | Check exact numerical/orbit hypotheses for each family |
