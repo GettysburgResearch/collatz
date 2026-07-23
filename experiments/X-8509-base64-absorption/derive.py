@@ -105,7 +105,6 @@ def audit():
                     K = Kvalues[0]
                     assert K % 3 == r
                     J = (K - r) // 3
-                    assert J == (S + g * A * lam - nexta) // (1 << nextD) // 3 - r // 3 if False else J
                     assert J >= 0 and 3 * J < 4 * A
                     counters["common_carries"] += 1
                     counters["carry_bounds"] += 1
