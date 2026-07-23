@@ -33,7 +33,7 @@ The exact paired chart of `T-8302` has first-state residue classes
 
 But `N_*=7 mod16`. It cannot execute either chart branch. This refutes the target independently of all later packet choices and all odd-prime congruences.
 
-The physical seed `2*N_*+1` also reaches `1` after 208 shortcut steps, with trajectory digest recorded in `X-8303`.
+The physical seed `2*N_*+1` also reaches `1` after 208 shortcut steps, with trajectory digest recorded in `X-8307`.
 
 ## Exact height result
 
@@ -120,10 +120,10 @@ The dyadic state must be checked first.
 ## New files
 
 ```text
-research/critical-chart-mechanical/claims/L-8304-mixed-place-height-forcing.md
+research/critical-chart-mechanical/claims/L-8310-mixed-place-height-forcing.md
 research/critical-chart-mechanical/claims/R-8301-nstar-dyadic-domain-refutation.md
 research/critical-chart-mechanical/Q-8301-mixed-place-height-closure.md
-experiments/X-8303-height-gate/
+experiments/X-8307-height-gate/
 reports/gpt56-cycle-02/2026-07-23-9-height-gate-and-nstar-refutation.md
 ```
 
@@ -140,7 +140,7 @@ Odd-prime Prouhet/Hensel packets can match many proper-place quotient digits whi
 1. Add a dyadic chart-prefix track to every replacement node in `X-8302`.
 2. Reject candidate integers at the first physical mismatch.
 3. Extend a legal physical prefix before spending odd-prime Hensel levels.
-4. Close only when the exact mixed height budget of `L-8304` is met.
+4. Close only when the exact mixed height budget of `L-8310` is met.
 5. Prefer complete compressed physical replay: with a unit real interval it already forces the full cycle identity.
 
 ## Organizational improvement
