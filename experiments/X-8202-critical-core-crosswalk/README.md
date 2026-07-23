@@ -84,7 +84,7 @@ PR #51 quotient identities:          13,056
 PR #51 divisible-seven checks:          256
 PR #51 reset seeds:                     200
 PR #51 reset chart edges:            40,412
-PR #51 refund-cone doubling checks: 386,176
+PR #51 refund-cone doubling checks:  11,250
 ```
 
 ## Replay
@@ -102,16 +102,16 @@ python3 -B experiments/X-8202-critical-core-crosswalk/verify.py \
 
 ```text
 run.py:
-7d8001d57d3c9198a2a792b26b34ee5bb5719327429d4ec2ca19eef56899d16e
+0a804ad1c480f1b0ed09ae773378641904dfa5030fec32ba6b090b2ee9107edf
 
 verify.py:
-1c215e02c0d77a22dc9c7c1c4394497794220764807d76121f862694d3bfc9b6
+072edfc1103fcdb786a9e8cb22815e2ad04ebc1e7b2820b5f4d8fb6a10f9b149
 
 canonical.json:
-fa5f13cb0ab87044d82cd9d60fe2c76ace3ce8092961c31270063b35a23d1d43
+a12d633bd7bb439f73f59aac051459fccb50a41d5bf8c51e91592586e515f6be
 
 semantic:
-26c24170f412e0e8c6b092f1afc61a3b617c2703d1279da67c1e5eae06ade575
+e22874271350a0223cc3008153ea6a3e313a013bfa542cec691ec11b038eaa1f
 ```
 
 ## Limitations
