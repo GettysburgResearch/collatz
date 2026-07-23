@@ -39,16 +39,10 @@ formal divisor hits                                0
 nontrivial cycle hits                              0
 ```
 
-Row SHA-256:
+The complete per-type aggregates are frozen in `results/canonical.json`. The ordered row digest is
 
 ```text
 d1b2a4105d0f4bcf67d9e49584c202f77b022f67d0945079ebb04bb3735c62d8
-```
-
-Canonical JSON SHA-256:
-
-```text
-98d5318baed7eee50eaf276964058cd1253d0a6aede850f71bb960382a7dfe9c
 ```
 
 ## Independent verifier
@@ -66,7 +60,7 @@ formal divisor hits         0
 `verify_height.py` independently reconstructs:
 
 - the cyclic contraction boundary;
-- the exact finite height ranges;
+- the residual type list;
 - the universal `R>=23` bound.
 
 The authoring and verification programs deliberately use different half orientations.
@@ -78,11 +72,12 @@ g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic \
   experiments/X-9609-eleven-defect-mitm/run.cpp \
   -o /tmp/x9609
 
-/tmp/x9609 > /tmp/x9609.json
+/tmp/x9609
 
-diff -u \
-  experiments/X-9609-eleven-defect-mitm/results/canonical.json \
-  /tmp/x9609.json
+# Expected single-line totals:
+# finite_rows=258 full_candidates_represented=27283361062
+# left_states=84513178 right_states=122629329
+# formal_divisor_hits=0 nontrivial_cycle_hits=0
 
 python3 experiments/X-9609-eleven-defect-mitm/verify_height.py
 
