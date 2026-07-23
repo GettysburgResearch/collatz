@@ -1,0 +1,116 @@
+{
+  "digest_sha256": "95d98ad1b0b915ec0905235e567779c99a9d971e4ac73f596ef089c25f80697d",
+  "finite_kraft_denominator": 37778931862957161709568,
+  "finite_kraft_numerator": 1798996753703415041853,
+  "full_kraft_denominator": 21,
+  "full_kraft_numerator": 1,
+  "largest_refund_scc": 594,
+  "max_type": 15,
+  "maximizing_exit_k": 59996098254038,
+  "maximizing_exit_type": [
+    1,
+    1,
+    2
+  ],
+  "maximizing_initial_U": 39510276289,
+  "maximizing_initial_X": 220957479840077141,
+  "maximizing_initial_Y": 103807851565277,
+  "maximizing_initial_n": 883829919360308564,
+  "maximizing_initial_p": 2651489758080925696,
+  "maximizing_start_k": 133973,
+  "maximizing_start_type": [
+    1,
+    8,
+    7
+  ],
+  "maximizing_trajectory": [
+    {
+      "amp": 129140163,
+      "eta": 133973,
+      "k": 133973,
+      "next_k": 65999254,
+      "q": 18,
+      "source": [
+        1,
+        8,
+        7
+      ],
+      "target": [
+        7,
+        4,
+        3
+      ],
+      "zeta": 65999254
+    },
+    {
+      "amp": 14348907,
+      "eta": 150,
+      "k": 65999254,
+      "next_k": 3699285805175,
+      "q": 8,
+      "source": [
+        7,
+        4,
+        3
+      ],
+      "target": [
+        3,
+        2,
+        1
+      ],
+      "zeta": 8440412
+    },
+    {
+      "amp": 2187,
+      "eta": 119,
+      "k": 3699285805175,
+      "next_k": 31602883030933,
+      "q": 8,
+      "source": [
+        3,
+        2,
+        1
+      ],
+      "target": [
+        1,
+        2,
+        1
+      ],
+      "zeta": 1021
+    },
+    {
+      "amp": 243,
+      "eta": 21,
+      "k": 31602883030933,
+      "next_k": 59996098254038,
+      "q": 7,
+      "source": [
+        1,
+        2,
+        1
+      ],
+      "target": [
+        1,
+        1,
+        2
+      ],
+      "zeta": 41
+    }
+  ],
+  "maximum_canonical_refund_chain": 4,
+  "refund_edges": 353835,
+  "refund_scc_size_histogram": {
+    "1": 14,
+    "16": 1,
+    "2": 8,
+    "25": 2,
+    "3": 2,
+    "4": 6,
+    "594": 1
+  },
+  "refund_sccs": 34,
+  "refund_self_loops": 42,
+  "transition_cylinders": 759375,
+  "types": 3375,
+  "zero_increment_refund_edges": 1
+}
