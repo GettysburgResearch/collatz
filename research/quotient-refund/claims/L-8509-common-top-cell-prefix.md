@@ -1,4 +1,4 @@
-# L-8509 — The four continuation residues share all but six top-boundary bits
+# L-8509 — The four continuation residues share all but six bits and form one base-64 affine digit map
 
 **Claim ID:** `L-8509`  
 **Status:** `PROPOSED`  
@@ -63,7 +63,6 @@ such that
 \rho_k\equiv\lambda\pmod {B_t}
 }
 \tag{2}
-\]
 
 for all four target types.
 
@@ -76,7 +75,6 @@ Write
 0\le d_k<64.
 }
 \tag{3}
-\]
 
 The four six-bit cells `d_k` are distinct.
 
@@ -98,7 +96,6 @@ For a legal `m`, define
 \boxed{
 z=\frac{m-\lambda}{B_t}.}
 \tag{4}
-\]
 
 Then
 
@@ -123,7 +120,6 @@ and its unique complete primitive source block for target `k` as
 \qquad
 0\le q'_k<192.
 \tag{5}
-\]
 
 The forced ternary lifts make all four `q'_k` congruent modulo three.
 
@@ -137,7 +133,6 @@ K=
 }{2^{D'}}
 }
 \tag{6}
-\]
 
 independent of `k`, and every continuation satisfies
 
@@ -146,16 +141,14 @@ independent of `k`, and every continuation satisfies
 192\sigma_k-3Ad_k+q'_k=K.
 }
 \tag{7}
-\]
 
-Equivalently, the current top-cell quotient and the next complete source cell obey
+Equivalently,
 
 \[
 \boxed{
 192m'+q'_k=3Az+K,
 }
 \tag{8}
-\]
 
 where
 
@@ -163,7 +156,49 @@ where
 m'=\sigma_k+A\ell.
 \]
 
-Thus the four branch formulas are sections of one affine integer map. The target dependence is confined to one current six-bit cell `d_k` and one next cell `q'_k` in `{0,...,191}`.
+### 4. Reduced base-64 digit map
+
+Let
+
+\[
+\boxed{r=[q'_k]_3.}
+\tag{9}
+
+The value `r` is independent of `k`. Define
+
+\[
+\boxed{
+e_k=(q'_k-r)/3,}
+\qquad
+0\le e_k<64,
+\tag{10}
+
+and
+
+\[
+\boxed{J=(K-r)/3.}
+\tag{11}
+
+Then `J` is an integer, the four output digits `e_k` are distinct, and `(8)` reduces to
+
+\[
+\boxed{
+64m'+e_k=Az+J.
+}
+\tag{12}
+
+Thus the complete top-boundary transition is one ordinary nonstationary base-64 affine digit map:
+
+```text
+input root:       z=d_k+64*ell,
+input alphabet:   four distinct digits d_k,
+multiplier:       A=3^G,
+offset:           J,
+output digit:     e_k,
+output quotient:  m'.
+```
+
+All target dependence is confined to the paired six-bit digit `(d_k,e_k)`. The multiplier and offset are common to all four branches.
 
 ## Proof
 
@@ -174,15 +209,13 @@ At the next state, every complete source block has the form `(5)`. For two targe
 \[
 \widehat R'_k-\widehat R'_l
 =2^{D'}(q'_k-q'_l).
-\tag{9}
-\]
+\tag{13}
 
 Both blocks were chosen to have the same residue modulo three as the current output `widehat S_(j,nu)`. Since `a'` and `2^(D')` are fixed ternary units, this implies
 
 \[
 3\mid q'_k-q'_l.
-\tag{10}
-\]
+\tag{14}
 
 In `L-8507`,
 
@@ -193,7 +226,7 @@ In `L-8507`,
 g_j=3\,2^{6-j}.
 \]
 
-Equations `(9)--(10)` give
+Equations `(13)--(14)` give
 
 \[
 \Delta_k-\Delta_l
@@ -226,10 +259,9 @@ into the exact continuation equation
 \[
 \widehat S_{j,\nu}+g_jA\rho_k-\widehat R'_k
 =g_jH_t\sigma_k.
-\tag{11}
-\]
+\tag{15}
 
-The two exact products are
+The exact products are
 
 \[
 g_jB_t=3\,2^{D'},
@@ -239,7 +271,7 @@ g_jB_t=3\,2^{D'},
 g_jH_t=3\,2^{D'+6}=192\,2^{D'}.
 \]
 
-After division by `2^(D')`, equation `(11)` becomes
+After division by `2^(D')`, equation `(15)` becomes
 
 \[
 \frac{
@@ -251,34 +283,38 @@ After division by `2^(D')`, equation `(11)` becomes
 
 This proves the integrality of `(6)` and identity `(7)`.
 
-Finally, `z=d_k+64ell`, so
+Since `z=d_k+64ell`,
 
 \[
 \begin{aligned}
 192m'+q'_k
 &=192(\sigma_k+A\ell)+q'_k\\
 &=K+3Ad_k+192A\ell\\
-&=K+3Az.
+&=K+3Az,
 \end{aligned}
 \]
 
-This proves `(8)`. ∎
+which proves `(8)`.
+
+Finally, `(14)` makes `r` independent of `k`. Reducing `(7)` modulo three gives `K congruent r mod3`, so `J` is integral. Divide `(8)` by three after substituting `q'_k=r+3e_k` and `K=r+3J`; this proves `(12)`. Distinctness of the `q'_k` gives distinctness of the `e_k`. ∎
 
 ## Constructive meaning
 
-The remaining top-boundary problem is even smaller than four residues in a huge modulus.
+The remaining top-boundary problem is smaller than four arbitrary residues in a huge modulus.
 
 ```text
 one forced low block of 11(t+33)-6 bits,
-then one four-of-64 top-cell choice,
-then one branch-independent affine transport.
+then one four-of-64 input digit,
+then one common affine map,
+then one forced four-of-64 output digit.
 ```
 
-This is the exact most-significant analogue of the source-cell/Hensel decompositions elsewhere in the repository. It identifies the object a causal compiler must generate: the common long residue `lambda`. The next type consumes only the six bits immediately above it.
+This is an exact ordinary transducer interface that retains the full unbounded top quotient. It identifies the object a causal compiler must generate: the common long residue `lambda`. The next type consumes only the six bits immediately above it, and the corresponding next complete block emits one six-bit digit `e_k` through `(12)`.
 
 ## Gap audit
 
 - A common low prefix does not prove that any finite ordinary quotient matches it forever.
-- Four allowed top cells do not cover all 64 cells.
-- The affine identity does not remove the next changing-modulus condition.
+- Four allowed input digits do not cover all 64 digits.
+- The affine digit identity does not remove the next changing-modulus condition.
+- The multiplier and offset vary with the height and finite core state.
 - No inverse-limit point is promoted to an ordinary integer.
