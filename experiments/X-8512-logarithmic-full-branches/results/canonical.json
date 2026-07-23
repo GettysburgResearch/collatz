@@ -1,0 +1,63 @@
+{
+  "counters": {
+    "branch_balls": 96,
+    "finite_section_permutations": 96,
+    "finite_states": 24,
+    "fixed_unit_rows": 96,
+    "isometry_pairs": 780288,
+    "source_marker_checks": 96
+  },
+  "experiment": "X-8512",
+  "heights": [
+    16,
+    32
+  ],
+  "section_bits": 7,
+  "semantic_digest": "bb13a38256234ad4cf44e75f19e57fa923a68ae3b8cf21951c3d2c35f2a7b3c4",
+  "source_marker_table": {
+    "1": [
+      5,
+      2,
+      1,
+      0
+    ],
+    "2": [
+      5,
+      1,
+      1,
+      0
+    ],
+    "3": [
+      4,
+      1,
+      0,
+      0
+    ]
+  },
+  "unit_table": [
+    [
+      31,
+      29,
+      15,
+      5
+    ],
+    [
+      53,
+      31,
+      5,
+      7
+    ],
+    [
+      31,
+      29,
+      15,
+      5
+    ],
+    [
+      29,
+      23,
+      13,
+      7
+    ]
+  ]
+}
