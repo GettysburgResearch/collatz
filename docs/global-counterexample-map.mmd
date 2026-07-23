@@ -1,5 +1,5 @@
 flowchart LR
-  FALSE([Collatz false])
+  FALSE([COLLATZ IS FALSE])
   CYCLE([Positive nontrivial cycle])
   DIV([Positive orbit avoids 1])
   THIRD([Third component / deficit])
@@ -7,20 +7,43 @@ flowchart LR
   DIV --> FALSE
   THIRD --> FALSE
 
-  subgraph CYC["Critical finite cycle"]
+  subgraph CYC["Positive-cycle funnel"]
     CEQ["Exact cycle equation"]
-    FRONT["Lengths 184 and 185 excluded<br/>PROPOSED"]
-    SUPPORT["PR47: >=8 non-2 valuations<br/>PROPOSED"]
-    BLOCK["PR45 block residue / carry decoder"]
-    COMM["PR47 opposite-drift commutator sieve"]
-    PRIME["PR34 cross-prime compiler"]
-    FULL{"Full denominator + replay"}
-    CEQ --> FRONT
-    CEQ --> SUPPORT
-    BLOCK --> FULL
-    COMM --> FULL
+    LEN["PR45: no cycle through 50,000<br/>PROPOSED"]
+    SUP["PR42/47 support layers<br/>source-exact through 17"]
+    BRIDGE["14^k <= 11^k 2^s<br/>conditional s >= 17,397"]
+    COMP["Block / mechanical / half-join compilers"]
+    CAP["Commutator + fixed-cone resultants"]
+    PRIME["Prime-power compatibility"]
+    FULL{"Entire denominator + replay"}
+    CEQ --> LEN --> BRIDGE
+    CEQ --> SUP --> BRIDGE
+    COMP --> FULL
+    CAP --> FULL
     PRIME --> FULL
-    FULL --> CYCLE
+    BRIDGE --> FULL --> CYCLE
+  end
+
+  subgraph REFUND["Ordinary multiplicative-refund funnel"]
+    COMMON["q=rho+2^E ell -> q'=sigma+M ell"]
+    SIX["PR45 fixed six-branch chart"]
+    RUN["PR51 changing-run highway"]
+    CORE["PR49 intrinsic changing-height core"]
+    HCTR["PR19 H renewal counter"]
+    TOP{"One ordinary root<br/>defined forever?"}
+    COMMON --> SIX --> TOP
+    COMMON --> RUN --> TOP
+    COMMON --> CORE --> TOP
+    COMMON --> HCTR --> TOP
+    TOP --> DIV
+  end
+
+  subgraph SELECT["Exact 176-bit bridge"]
+    S176["PR3 conditional 176-bit selector"]
+    C176["PR49 consumes 176 new top bits"]
+    CAUSAL{"Causal orientation + top closure"}
+    S176 --> CAUSAL
+    C176 --> CAUSAL --> CORE
   end
 
   subgraph FROZEN["Frozen corrected class"]
@@ -32,71 +55,37 @@ flowchart LR
     EV --> T9705
   end
 
-  subgraph REFUND["Linear refund"]
-    COMP["PR49 intrinsic state from n<br/>(t,i,k)"]
-    DEF{"Defined forever?"}
-    GROW["k' >= 2k<br/>fresh primes required"]
-    COMP --> DEF --> GROW --> DIV
-  end
-
-  subgraph PULSE["Negative-three pulse chart"]
-    O8001["PR51 exact h block chart"]
-    G["h=21x invariant<br/>G: 9x/8 or (9x+1)/16"]
-    GDEF{"One x>0 defined forever?"}
-    MIN31["Exact minimum through depth 31<br/>exits at block 32"]
-    RENEW["H-like toll-one renewal"]
-    O8001 --> G --> GDEF --> DIV
-    G --> MIN31
-    G --> RENEW --> GDEF
-  end
-
-  subgraph CENTER["Centered 64 to 81"]
-    ZERO["64B'=81B+e-e'"]
-    GHOST["Fixed modulus = completion ghost"]
-    ADD["Additive one-counter periodic"]
-    TOP{"Nonlinear top-boundary machine"}
-    ZERO --> GHOST
-    ZERO --> ADD
-    ZERO --> TOP --> DIV
-  end
-
-  subgraph CROSS["Cross-cycle"]
-    CELL["m=22 physical handoff"]
-    PH1["Permanent phase 1 = shifted Collatz"]
-    MULTI{"Repeated multi-phase return"}
-    CELL --> PH1
-    CELL --> MULTI --> DIV
-    MULTI --> CYCLE
-  end
-
-  subgraph H["Partial H"]
-    HC["No cycle <=2.479b blocks<br/>PROPOSED"]
-    OLD["10/30 compiler proposed closed"]
-    HNEW{"New nondescending<br/>escaping macro family"}
-    HC --> HNEW --> DIV
-    OLD --> HNEW
-  end
-
-  subgraph OTHER["Other exact certificates"]
+  subgraph OTHER["Other direct/equivalent routes"]
+    CENTER{"Centered nonlinear top boundary"}
+    CROSS{"Repeated multi-phase return"}
     DFA{"Boundary-memory sanctuary DFA"}
     COVER{"Coverage deficit C(x)<x"}
     CONE{"Third binary fixed ray"}
+    CENTER --> DIV
+    CROSS --> DIV
+    CROSS --> CYCLE
     DFA --> DIV
     COVER --> THIRD
     CONE --> THIRD
   end
 
+  GHOST["Fixed-modulus centered lasso = ghost"]
+  PH1["Permanent cross-cycle phase 1 = shifted Collatz"]
+  PULSE["One fixed pulse cone = finite"]
+  GHOST --> CENTER
+  PH1 --> CROSS
+  PULSE --> CAP
+
   classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
   classDef literature fill:#cfe8ff,stroke:#2563a8,color:#111;
   classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
   classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
-  classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
+  classDef closed fill:#ffc7c7,stroke:#a11,color:#111;
   classDef open fill:#e5e7eb,stroke:#666,color:#111;
 
   class CEQ,T9705 proved;
   class EV literature;
-  class FRONT,SUPPORT,BLOCK,COMM,PRIME,COMP,GROW,O8001,G,RENEW,HC,OLD proposed;
-  class MIN31 empirical;
-  class CELL empirical;
-  class CLOSED,GHOST,ADD,PH1 refuted;
-  class FULL,DEF,GDEF,TOP,MULTI,HNEW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
+  class LEN,SUP,COMP,CAP,PRIME,COMMON,SIX,RUN,CORE,HCTR,S176,C176,STAGE,PULSE proposed;
+  class BRIDGE empirical;
+  class CLOSED,GHOST,PH1 closed;
+  class FULL,TOP,CAUSAL,CENTER,CROSS,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
