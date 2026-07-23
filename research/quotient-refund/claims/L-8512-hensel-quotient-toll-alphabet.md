@@ -18,7 +18,7 @@ Fix an intrinsic finite state
 \quad
 \gamma\in\{1,2,3\},
 \quad
- i\in\{0,1,2,3\}.
+i\in\{0,1,2,3\}.
 \]
 
 Put
@@ -68,7 +68,7 @@ A&h
 \tag{4}
 \]
 
-Every positive primitive core satisfying the high divisibility gate has one unique form
+Every positive core satisfying the high divisibility gate has one unique form
 
 \[
 \boxed{C=a+2^Dq,\qquad q\in\mathbf Z_{\ge0},}
@@ -89,9 +89,16 @@ Conversely the ordinary Hensel quotient is intrinsic:
 \tag{7}
 \]
 
+The core is primitive exactly when
+
+\[
+\boxed{3\nmid a+2^Dq.}
+\tag{8}
+\]
+
 ### 2. Direct changing-modulus recurrence
 
-If the six-bit gate selects target type `j`, then
+Suppose the current six-bit gate selects target type `j`. Then
 
 \[
 C'=Y/2^j.
@@ -103,21 +110,21 @@ At the next finite state `(t+16,beta_i,j)`, put
 G'_j=7(t+17)+\beta_i-\beta_j,
 \qquad
 D'_j=11(t+33)-j,
-\tag{8}
+\tag{9}
 \]
 
 \[
 A'_j=3^{G'_j},
 \qquad
- a'_j=[-(A'_j)^{-1}]_{2^{D'_j}}.
-\tag{9}
+a'_j=[-(A'_j)^{-1}]_{2^{D'_j}}.
+\tag{10}
 \]
 
 Let
 
 \[
 \boxed{H_t=2^{11(t+33)}.}
-\tag{10}
+\tag{11}
 \]
 
 Then the next high divisibility is equivalent to the one exact affine quotient equation
@@ -125,7 +132,7 @@ Then the next high divisibility is equivalent to the one exact affine quotient e
 \[
 \boxed{
 H_tq'=Aq+h-2^ja'_j,}
-\tag{11}
+\tag{12}
 \]
 
 where `q'>=0` is the next intrinsic Hensel quotient.
@@ -136,14 +143,14 @@ Put
 
 \[
 \boxed{E=7(t+17)+\beta_i.}
-\tag{12}
+\tag{13}
 \]
 
 For every target type `j`, define
 
 \[
 \boxed{x_j=2^ja'_j.}
-\tag{13}
+\tag{14}
 \]
 
 Then
@@ -151,10 +158,10 @@ Then
 \[
 \boxed{
 x_j=[-b_j3^{-E}]_{H_t}.}
-\tag{14}
+\tag{15}
 \]
 
-Consequently the complete next high-divisibility condition is
+Consequently the current target-`j` gate together with the complete next high divisibility is exactly
 
 \[
 \boxed{
@@ -164,7 +171,7 @@ q\equiv\varrho_j
 -A^{-1}h-3^{-(G+E)}b_j
 \right]_{H_t}
 \pmod {H_t}.}
-\tag{15}
+\tag{16}
 \]
 
 Equivalently, with
@@ -173,7 +180,7 @@ Equivalently, with
 \Lambda=[-A^{-1}h]_{H_t},
 \qquad
 U=[-3^{-(G+E)}]_{H_t},
-\tag{16}
+\tag{17}
 \]
 
 all four complete residues are
@@ -182,12 +189,59 @@ all four complete residues are
 \boxed{
 \varrho_j=[\Lambda+Ub_j]_{H_t},
 \qquad j=0,1,2,3.}
-\tag{17}
+\tag{18}
 \]
 
 The multiplier `U` is odd, and the four `b_j` are distinct modulo `H_t`, so the four `varrho_j` are distinct.
 
-### 4. Exact refund in the Hensel quotient
+Moreover `(16)` automatically gives the correct current physical six-bit target:
+
+\[
+\boxed{
+[3^{\beta_i}(h+A\varrho_j)]_{64}=p_j,}
+\tag{19}
+\]
+
+where
+
+```text
+p=(5,30,20,56).
+```
+
+Thus no separate target-cell condition is missing from `(16)`.
+
+### 4. Exact primitive-lift gate
+
+For a fixed `j`, write
+
+\[
+q=\varrho_j+H_t\ell.
+\tag{20}
+\]
+
+Because `2^D H_t` is a unit modulo three, exactly one residue of `ell mod3` makes
+
+\[
+a+2^Dq
+\]
+
+divisible by three. Let
+
+\[
+\boxed{V_{t,\gamma,i,j}\subset\{0,1,2\}}
+\tag{21}
+\]
+
+be the complementary two-element set. Then `(20)` is a legal primitive source exactly when
+
+\[
+\boxed{\ell\bmod3\in V_{t,\gamma,i,j}.}
+\tag{22}
+\]
+
+The next core is automatically prime to three, because `AC+1` is congruent to one modulo three and its divisor is a power of two.
+
+### 5. Exact refund in the Hensel quotient
 
 Define the nonnegative canonical carry
 
@@ -195,20 +249,22 @@ Define the nonnegative canonical carry
 \boxed{
 \tau_j=
 \frac{A\varrho_j+h-x_j}{H_t}.}
-\tag{18}
+\tag{23}
 \]
 
-For every ordinary `ell>=0`,
+For every ordinary `ell>=0`, the affine identity
 
 \[
 \boxed{
 q=\varrho_j+H_t\ell
 \quad\Longmapsto\quad
-q'=\tau_j+A\ell.}
-\tag{19}
+q'=\tau_j+A\ell}
+\tag{24}
 \]
 
-Thus the full enormous next-boundary selector is one affine copy of the fixed four-symbol toll alphabet `b`, followed by the same odd multiplicative refund `A=3^G`.
+holds. It is a legal primitive-core transition precisely for the two allowed classes `(22)`.
+
+Thus the full enormous next-boundary selector is one affine copy of the fixed four-symbol toll alphabet `b`, followed by one exact ternary exclusion and the same odd multiplicative refund `A=3^G`.
 
 ## Proof
 
@@ -224,7 +280,7 @@ which proves `(4)`. Multiplying `(5)` by `A`, adding one, and using `(3)` proves
 \begin{pmatrix}h&-a\\-A&2^D\end{pmatrix},
 \]
 
-so `(7)` follows.
+so `(7)` follows. Equation `(8)` is the definition of the primitive core in this coordinate.
 
 At the next state, high divisibility says
 
@@ -238,9 +294,9 @@ Multiplying by `2^j` and using `C'=Y/2^j` gives
 Y=2^ja'_j+2^{D'_j+j}q'.
 \]
 
-Since `D'_j+j=11(t+33)`, substituting `(6)` proves `(11)`.
+Since `D'_j+j=11(t+33)`, substituting `(6)` proves `(12)`.
 
-For `(14)`, note that
+For `(15)`, note that
 
 \[
 E=G'_j+\beta_j.
@@ -262,17 +318,39 @@ Multiplying by `2^j3^(beta_j)` yields
 \pmod {H_t}.
 \]
 
-Both `x_j` and the canonical residue in `(14)` lie in `[0,H_t)`, proving equality.
+Both `x_j` and the canonical residue in `(15)` lie in `[0,H_t)`, proving equality.
 
-Equation `(11)` is integral exactly when
+Equation `(12)` is integral exactly when
 
 \[
 Aq+h\equiv x_j\pmod {H_t}.
 \]
 
-Substitute `(14)` and multiply by `A^{-1}` to obtain `(15)--(17)`. Distinctness follows because `U` is a unit and the four fixed integers `b_j` are distinct and smaller than `H_t`.
+Substitute `(15)` and multiply by `A^{-1}` to obtain `(16)--(18)`. Distinctness follows because `U` is a unit and the four fixed integers `b_j` are distinct and smaller than `H_t`.
 
-Finally `(18)` is integral by `(15)`. It is nonnegative because it equals the next Hensel quotient when `ell=0`. Substituting `q=varrho_j+H_t ell` in `(11)` proves `(19)`. ∎
+For `(19)`, equation `(12)` gives
+
+\[
+h+A\varrho_j\equiv x_j=2^ja'_j\pmod {64}.
+\]
+
+The automatic source-marker identity of `T-8507`, applied to the next state `(t+16,beta_i,j)`, is
+
+\[
+2^j3^{\beta_i}a'_j\equiv p_j\pmod {64}.
+\]
+
+This proves `(19)`.
+
+Under `(20)`, the source core is
+
+\[
+C=a+2^D\varrho_j+2^DH_t\ell.
+\]
+
+Its coefficient of `ell` is a ternary unit, so exactly one class modulo three is forbidden and the other two give `(21)--(22)`. The next core is prime to three by the observation following `(22)`.
+
+Finally `(23)` is integral by `(16)`. Its numerator is greater than `-H_t` and divisible by `H_t`, so `tau_j>=0`. Substituting `(20)` in `(12)` proves `(24)`. ∎
 
 ## Constructive meaning
 
@@ -284,6 +362,9 @@ ordinary root state:
 
 complete next selector:
   q mod H_t lies in Lambda + U*{9,54,36,24};
+
+primitive gate:
+  two allowed classes of the free lift mod3;
 
 next quotient:
   q' = tau_j + 3^G*ell.
@@ -304,4 +385,5 @@ so the target type is the unique fixed toll returned by one exact modular evalua
 - A fixed toll alphabet does not prove that one finite ordinary quotient hits it forever.
 - The affine parameters `Lambda` and `U` change with the height and finite state.
 - The theorem does not make the canonical carries `tau_j` equal or periodic.
+- The two-of-three primitive lift gate remains an exact changing-state condition.
 - No initial integer, self-covering quotient class, or all-time routing invariant is supplied.
