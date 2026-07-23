@@ -1,0 +1,53 @@
+digraph CycleFunnel {
+  graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=12, labelloc="t",
+         label="Positive-Cycle Feasible Region and Compiler Funnel — pass 5",
+         nodesep=0.34, ranksep=0.74, splines=ortho];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=9,
+        color="#666666", fillcolor="#e5e7eb", margin="0.12,0.07"];
+  edge [fontname="Arial", fontsize=8, color="#555555", arrowsize=0.7];
+
+  cycle [label="NONTRIVIAL POSITIVE CYCLE", shape=doubleoctagon, penwidth=2];
+  equation [label="C(w)=n(2^A-3^k)", fillcolor="#c8f7c5", color="#267326"];
+
+  subgraph cluster_region {
+    label="Feasible region"; color="#b45309"; style="rounded";
+    length [label="PR45 proposed\nk >= 50,001", fillcolor="#ffd6a5", color="#b45309"];
+    product [label="least-state window\n2^A 7^k <= 22^k", fillcolor="#c8f7c5", color="#267326"];
+    identity [label="A=B+2(k-s), B>=s", fillcolor="#c8f7c5", color="#267326"];
+    bridge [label="14^k <= 11^k 2^s", fillcolor="#fff2a8", color="#9a7b00"];
+    threshold [label="conditional at k=50,001:\ns >= 17,397", fillcolor="#fff2a8", color="#9a7b00", penwidth=2];
+    length -> bridge; product -> bridge; identity -> bridge -> threshold;
+  }
+
+  subgraph cluster_support {
+    label="Support packets"; color="#9a7b00"; style="rounded";
+    s11 [label="PR47 proposed through support 11", fillcolor="#ffd6a5", color="#b45309"];
+    s15 [label="PR42 proposed through support 15", fillcolor="#ffd6a5", color="#b45309"];
+    s16 [label="support 16 exact source computation\n0 formal matches", fillcolor="#fff2a8", color="#9a7b00"];
+    s17 [label="support 17 exact source computation\n0 formal matches", fillcolor="#fff2a8", color="#9a7b00"];
+    method [label="method-validation packets\nconditional on global length floor", fillcolor="#e5e7eb", color="#666666"];
+    s11 -> s15 -> s16 -> s17 -> method;
+  }
+
+  subgraph cluster_compiler {
+    label="Compiler stack"; color="#b45309"; style="rounded";
+    block [label="PR45 block residue / carry decoder", fillcolor="#ffd6a5", color="#b45309"];
+    hensel [label="PR50 correct quotient-Hensel lift", fillcolor="#ffd6a5", color="#b45309"];
+    half [label="PR47 normalized half-join", fillcolor="#ffd6a5", color="#b45309"];
+    comm [label="PR47 commutator cutoff", fillcolor="#ffd6a5", color="#b45309"];
+    resultant [label="PR53 fixed-cone resultants", fillcolor="#ffd6a5", color="#b45309"];
+    prime [label="PR34 prime-power excess paths", fillcolor="#ffd6a5", color="#b45309"];
+    full [label="ENTIRE DENOMINATOR", shape=diamond, penwidth=2];
+    block -> hensel -> half -> full;
+    comm -> full; resultant -> full; prime -> full;
+  }
+
+  fixed [label="one fixed negative-cycle pulse cone\nis finite", fillcolor="#ffc7c7", color="#aa1111"];
+  escape [label="must grow repetition, baseline,\nsupport, or macro architecture", shape=diamond];
+  replay [label="exact valuation + return replay", shape=diamond];
+
+  threshold -> full;
+  method -> full [style=dashed];
+  fixed -> escape -> full;
+  equation -> full -> replay -> cycle;
+}
