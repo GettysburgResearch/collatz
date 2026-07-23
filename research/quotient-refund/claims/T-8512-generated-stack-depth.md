@@ -1,23 +1,52 @@
-# T-8512 — A permanent refund tail generates an unbounded ordinary stack at linear depth
+# T-8512 — Permanent refund creates linearly growing raw radix capacity
 
 **Claim ID:** `T-8512`  
-**Status:** `PROPOSED`  
+**Status:** `SUPERSEDED`  
 **Authoring agent:** `gpt56-cylinder-01`  
 **Created:** 2026-07-23  
+**Corrected:** 2026-07-23  
+**Superseded by:** `T-8513`; independently diagnosed and repaired by PR #48 `R-8203` / `L-8210`  
 **Dependencies:** `T-8510`, `T-8511`  
-**Scope:** the permanently noncanonical tail of every hypothetical infinite ordinary refund orbit
+**Scope:** numerical size of the top quotient on a permanent-refund tail
 
-## Ordinary mixed-radix stack
+## Correction note
 
-Let a permanent noncanonical tail begin at connector index `n`, with height
+The numerical inequalities in the original submission are correct. The original identification of the **plain Euclidean mixed-radix digits of `m`** with later legality residues is false.
+
+One transition is
+
+```text
+m_n      = rho_n + H_n*ell_n,
+m_(n+1) = sigma_n + A_n*ell_n.
+```
+
+The next legal cylinder is imposed on
+
+```text
+sigma_n + A_n*ell_n mod H_(n+1),
+```
+
+not on the plain digit
+
+```text
+ell_n mod H_(n+1).
+```
+
+Therefore the raw expansion below measures radix **capacity**, not directly readable future-cylinder content. This first invalid interpretation was independently identified in PR #48 `R-8203`.
+
+`T-8513` supplies the corrected native theorem by pulling every later condition back through the intervening odd affine maps. PR #48 `L-8210` gives the equivalent transported-stack cocycle and records the alternate convention that omits the already-paid current cylinder, producing a one-level index shift.
+
+The original mathematical size proof is retained below in narrowed form.
+
+## Raw mixed-radix capacity
+
+Let a permanent noncanonical tail begin at connector index `n`, at height
 
 \[
-t=t_n\ge5632
+t=t_n\ge5632,
 \]
 
-and positive top quotient `m_n`.
-
-At a later index `n+r`, put
+with positive top quotient `m_n`. At a later index `n+r`, put
 
 \[
 t_r=t+16r.
@@ -28,152 +57,90 @@ The future complete top-boundary radices are
 \[
 \boxed{
 H_{r+h}=2^{11(t_r+16h+33)},
-\qquad h\ge0.
-}
+\qquad h\ge0.}
 \tag{1}
+\]
 
-For every `s>=0`, the ordinary integer `m_(n+r)` has one unique finite mixed-radix expansion
+For `s>=0`, put
 
 \[
 \boxed{
-\begin{aligned}
-m_{n+r}
-={}&a_0+H_r\bigl(a_1+H_{r+1}(\cdots\\
-&\qquad +H_{r+s-1}u_s)\cdots\bigr),
-\end{aligned}
-}
+P_s(t_r)=\prod_{h=0}^{s-1}H_{r+h}.}
 \tag{2}
-
-with
-
-\[
-0\le a_h<H_{r+h},
-\qquad
-u_s\in\mathbf Z_{\ge0}.
 \]
 
-Define the **ordinary quotient-stack depth** to be the largest `s` for which `u_s>=1`.
-
-Equivalently, put
+Define the **raw radix capacity** of `m_(n+r)` to be the largest `s` for which
 
 \[
-P_s(t_r)=\prod_{h=0}^{s-1}H_{r+h}.
-\]
-
-Then
-
-\[
-\boxed{
-u_s\ge1\iff m_{n+r}\ge P_s(t_r).}
+\boxed{m_{n+r}\ge P_s(t_r).}
 \tag{3}
+\]
 
-The equivalence is ordinary Euclidean mixed-radix division; it does not use a completion.
+This is an ordinary size property. It makes no claim that the plain Euclidean digits are the transported legality digits.
 
-## Theorem
+## Valid numerical theorem
 
-### Uniform linear depth
+### Uniform capacity
 
-For every `r>=288`, the quotient-stack depth at connector `n+r` is at least
+For every `r>=288`,
 
 \[
 \boxed{
-\left\lfloor\frac r{288}\right\rfloor.
-}
+m_{n+r}
+>
+P_{\lfloor r/288\rfloor}(t_r).}
 \tag{4}
+\]
 
-### Asymptotic strengthening
+### Sharper late capacity
 
 For every
 
 \[
-\boxed{r\ge100{,}909,}
+\boxed{r\ge100909,}
 \]
 
-the depth is at least
-
 \[
 \boxed{
-\left\lfloor\frac r{233}\right\rfloor.
-}
+m_{n+r}
+>
+P_{\lfloor r/233\rfloor}(t_r).}
 \tag{5}
+\]
 
-Consequently
-
-\[
-\boxed{
-\liminf_{r\to\infty}
-\frac{\operatorname{depth}(m_{n+r})}{r}
-\ge\frac1{233},
-}
-\tag{6}
-
-and every hypothetical infinite ordinary refund path dynamically creates an unbounded stack.
-
-The stack is not initialized in advance. It consists of ordinary finite quotient blocks present in the current finite integer and grows forward under the physical Collatz orbit.
+Thus the raw capacity grows linearly, with asymptotic lower rate at least `1/233`.
 
 ## Proof
 
-### Lower bound for the top quotient
-
-`T-8510` gives, for every step on the permanent tail,
-
-\[
-m_{s+1}>2^{175+q(t_s)}m_s,
-\]
-
-where
-
-\[
-q(v)=\left\lfloor\frac{63v-353166}{665}\right\rfloor.
-\]
-
-Using the lower sum in `T-8510/(8)` and `m_n>=1`, after `r` steps one obtains
+`T-8510` gives
 
 \[
 \boxed{
 \log_2m_{n+r}
 >
-175r
-+
+175r+
 \frac{
 r(63t-353831)+504r(r-1)
-}{665}.
-}
-\tag{7}
-
-### Exact size of an `s`-level stack
-
-From `(1)`,
-
-\[
-\begin{aligned}
-\log_2P_s(t_r)
-&=\sum_{h=0}^{s-1}11(t_r+16h+33)\\
-&=\boxed{
-11s(t+16r+33)+88s(s-1).
-}
-\end{aligned}
-\tag{8}
-
-### Uniform denominator 288
-
-Let
-
-\[
-s=\left\lfloor\frac r{288}\right\rfloor.
+}{665}.}
+\tag{6}
 \]
 
-Then `s<=r/288`, and `(8)` gives
+From `(1)--(2)`,
 
 \[
+\boxed{
 \log_2P_s(t_r)
-\le
-\frac{11r}{288}(t+16r+33)
-+
-\frac{88r^2}{288^2}.
-\tag{9}
+=11s(t+16r+33)+88s(s-1).}
+\tag{7}
+\]
 
-Subtract the right side of `(9)` from the lower bound `(7)`. Exact simplification gives
+For
+
+\[
+s=\left\lfloor r/288\right\rfloor,
+\]
+
+subtracting the upper bound obtained from `(7)` from `(6)` gives
 
 \[
 \boxed{
@@ -183,110 +150,61 @@ Subtract the right side of `(9)` from the lower bound `(7)`. Exact simplificatio
 \frac{1547}{27360}t
 +
 \frac{143531}{984960}r\\
-&\qquad
--
+&\qquad-
 \frac{4584925}{12768}
 \right).
-\end{aligned}
-}
-\tag{10}
-
-The bracket is increasing in both `t` and `r`. At the smallest allowed values
-
-\[
-t=5632,
-\qquad
-r=288,
+\end{aligned}}
+\tag{8}
 \]
 
-it equals
+The bracket is increasing in `t,r` and at `t=5632,r=288` equals
 
 \[
-\boxed{
 \frac{84263}{63840}>0.
-}
-\tag{11}
-
-Thus `m_(n+r)>P_s(t_r)`. Equation `(3)` gives `u_s>=1`, proving `(4)`.
-
-### Asymptotic denominator 233
-
-Now put
-
-\[
-s=\left\lfloor\frac r{233}\right\rfloor.
 \]
 
-The same calculation yields
+This proves `(4)`.
+
+For
+
+\[
+s=\left\lfloor r/233\right\rfloor,
+\]
+
+the exact corresponding difference is positive for all `t>=5632,r>=100909`; in the simplified form used by `T-8513`,
 
 \[
 \boxed{
-\begin{aligned}
 \log_2m_{n+r}-\log_2P_s(t_r)
->{}&r\left(
-\frac{1052}{22135}t
-+
-\frac{4688}{5157455}r\\
-&\qquad
--
-\frac{11137215}{30989}
-\right).
-\end{aligned}
-}
-\tag{12}
-
-The bracket is increasing in `t` and `r`. At
-
-\[
-t=5632,
-\qquad
-r=100{,}909,
+>
+\frac{r}{36102185}
+\left(
+32816r+1715812t-12974855475
+\right).}
+\tag{9}
 \]
 
-it equals
+The bracket is positive at the stated endpoint and increases thereafter, proving `(5)`. ∎
 
-\[
-\boxed{
-\frac{27453}{36102185}>0.
-}
-\tag{13}
+## Correct physical interpretation
 
-This proves `(5)`, hence `(6)`. The quadratic coefficient for denominator `232` is negative under this direct envelope, so `233` is the first integer denominator supported by this particular asymptotic comparison. No global optimality is asserted. ∎
+The retained size theorem implies that the current top quotient is large enough to contain many future radices. It does **not** identify their plain digits with legality data.
 
-## Relation to the exact path cylinders
+Two corrected interpretations are now available:
 
-Along an actual infinite path, the digits `a_h` in `(2)` are not arbitrary bookkeeping. The successive future legality conditions select one residue at each changing radix. Therefore the ordinary mixed-radix stack is exactly the finite top-boundary data consumed by later connectors.
+1. `T-8513` counts a complete pulled-back path cylinder **including the current already-selected connector**. Its bounds are `floor(r/288)` uniformly and `floor(r/233)` late.
+2. PR #48 `L-8210` places the transported stack on the free lift after removing the current radix. Under that convention the corresponding bounds lose one level:
+   ```text
+   floor(r/288)-1,
+   floor(r/233)-1.
+   ```
 
-The theorem proves that a hypothetical witness does not rely on a preloaded infinite directive or completed stack. Its current positive integer contains finitely many stack levels, and the physical forward dynamics creates new nonzero levels at a linear rate.
-
-## Strategic consequence
-
-The constructive architecture has reached the machine class originally sought by issue #43:
-
-```text
-finite control:
-  height signatures and four physical types;
-
-one ordinary unbounded root:
-  the intrinsic core/top quotient;
-
-causally generated stack:
-  mixed-radix future-cylinder quotients;
-
-stack growth:
-  depth >= floor(r/288) uniformly,
-  liminf depth/r >= 1/233;
-
-physical growth:
-  core >2^170 per connector and top quotient accelerating.
-```
-
-The remaining positive theorem is now sharply one of **entry and exact routing**: find one written integer that enters the permanent-refund regime and whose generated stack digits always match the four legal cells.
+The two conventions are consistent.
 
 ## Gap audit
 
-- Unbounded stack depth is conditional on an infinite ordinary orbit existing.
-- The theorem does not choose the required mixed-radix digits.
-- Large stack capacity is not the same as legal stack content.
-- The constants are rigorous consequences of the stated envelope, not claimed globally optimal.
+- Raw capacity is not routing content.
+- The numerical theorem is conditional on a hypothetical permanent-refund orbit.
+- The transported digits require the inverse-affine cocycle of `T-8513` / PR #48 `L-8210`.
+- Neither the raw capacity nor the repaired stack constructs an infinite ordinary path.
 - No `K-85xx` candidate is produced.
