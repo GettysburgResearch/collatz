@@ -17,16 +17,19 @@ cpp_int comb(int n,int k){if(k<0||k>n)return 0;if(k>n-k)k=n-k;cpp_int r=1;for(in
 
 u64 mul64(u64 a,u64 b,u64 m){return (u128)a*b%m;}
 uint128_t mul128(uint128_t a,uint128_t b,uint128_t m){return uint128_t(uint256_t(a)*uint256_t(b)%uint256_t(m));}
+template<class R> R addmod(R a,R b,R m){return (a+b)%m;}
+u64 addmod(u64 a,u64 b,u64 m){return (u64)(((u128)a+b)%m);}
+template<class R> R submod(R a,R b,R m){return a>=b?a-b:m-(b-a);}
 
 template<class R,class Mul> struct Engine {
   R D; Mul mul; std::vector<R> p2,p3,p4;
-  Engine(R d,Mul mm,int maxe):D(d),mul(mm),p2(maxe+2),p3(maxe+2),p4(maxe+2){p2[0]=p3[0]=p4[0]=R(1)%D;for(int i=1;i<(int)p2.size();i++){p2[i]=(p2[i-1]+p2[i-1])%D;p3[i]=(p3[i-1]+p3[i-1]+p3[i-1])%D;p4[i]=(p4[i-1]+p4[i-1]+p4[i-1]+p4[i-1])%D;}}
+  Engine(R d,Mul mm,int maxe):D(d),mul(mm),p2(maxe+2),p3(maxe+2),p4(maxe+2){p2[0]=p3[0]=p4[0]=R(1)%D;for(int i=1;i<(int)p2.size();i++){p2[i]=addmod(p2[i-1],p2[i-1],D);p3[i]=addmod(addmod(p3[i-1],p3[i-1],D),p3[i-1],D);p4[i]=addmod(addmod(p4[i-1],p4[i-1],D),addmod(p4[i-1],p4[i-1],D),D);}}
   R append_block(R C,int K,int a,int g)const{
-    R diff=p4[g]>=p3[g]?p4[g]-p3[g]:p4[g]+D-p3[g];
+    R diff=submod(p4[g],p3[g],D);
     R x=mul(p3[g+1],C,D);
     R y=mul(p3[g],p2[K],D);
     R z=mul(p2[K+a],diff,D);
-    R s=(x+y)%D; return (s+z)%D;
+    return addmod(addmod(x,y,D),z,D);
   }
 };
 
