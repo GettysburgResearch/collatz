@@ -18,13 +18,16 @@ This isolated `85xx` namespace belongs to issue #43. It does not edit any canoni
 | `T-8506` | Theorem | Every legal connector adds more than 170 primitive-core bits | PROPOSED | `L-8505`, `3^53>2^84` |
 | `T-8507` | Theorem | Intrinsic primitive-core decoder and physical conjugacy | PROPOSED | `L-8504`, `L-8505`, physical replay |
 | `L-8506` | Lemma | The core decoder compiles into eight exact ordinary blocks | PROPOSED | `T-8507` |
-| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8507`, `L-8506` |
+| `L-8507` | Lemma | Eight core blocks reduce to four type-independent top-boundary cylinders | PROPOSED | `L-8506`, `T-8507` |
+| `T-8508` | Theorem | Every noncanonical top-boundary lift is uniformly refunded | PROPOSED | `L-8507`, `3^665>2^1054` |
+| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8508`, `L-8506`, `L-8507` |
 | `X-8501` | Experiment | Exact refund, carry, decoder, and cutoff audit | EMPIRICAL | `L-8501`--`T-8503` |
 | `X-8502` | Experiment | Exact complement-quotient and growth audit | EMPIRICAL | `L-8503`, `T-8504` |
 | `X-8503` | Experiment | Unimodular physical marker and prime-turnover audit | EMPIRICAL | `L-8504`, `T-8505` elementary gates |
 | `X-8504` | Experiment | Exact primitive-core signature and coprimality audit | EMPIRICAL | `L-8505`, `T-8505` |
 | `X-8505` | Experiment | Intrinsic primitive-core decoder reconstruction | EMPIRICAL | `L-8505`, `T-8506`, `T-8507` |
 | `X-8506` | Experiment | Eight-block ordinary core compiler audit | EMPIRICAL | `L-8506` |
+| `X-8507` | Experiment | Type-independent top-boundary quotient refund audit | EMPIRICAL | `L-8507`, `T-8508` |
 
 ## Logical chain
 
@@ -40,6 +43,10 @@ PR3 physical tower identity
        one high binary divisibility + one six-bit gate
        legal => C_next > 2^170 C
   -> L-8506 eight explicit ordinary blocks per finite core state
+  -> L-8507 four complete continuation cylinders
+       common modulus 2^(11(t+33))
+       m=rho+H*ell -> m_next=sigma+3^G*ell
+  -> T-8508 noncanonical lift doubles from t>=3776
   -> Q-8501 one finite forever-defined physical core
   -> explicit positive unbounded Collatz orbit.
 ```
