@@ -75,7 +75,7 @@ The physical odd state associated with the proposed chart quotient would be
  n_*=2N_*+1=220\,681\,985\,803\,759.
 \]
 
-`X-8303` directly replays the shortcut map and obtains
+`X-8307` directly replays the shortcut map and obtains
 
 ```text
 shortcut steps to 1: 208
@@ -106,4 +106,4 @@ Any continuation must first replace `N_*` by a quotient in one of the legal clas
 
 ## Suggested next attack
 
-Use `L-8304` from the beginning of the search. The solver state must include the current dyadic chart cylinder. Reject a real integer target immediately unless its residue belongs to the selected first branch and every subsequently frozen branch replays exactly.
+Use `L-8310` from the beginning of the search. The solver state must include the current dyadic chart cylinder. Reject a real integer target immediately unless its residue belongs to the selected first branch and every subsequently frozen branch replays exactly.
