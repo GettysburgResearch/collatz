@@ -109,7 +109,7 @@ A proof of `(1)` cannot be supplied by:
 `T-8404` also requires any surviving branch code to have factor-complexity slope at least
 
 ```text
-971.866577472620...
+971.866577472579...
 ```
 
 so low-complexity substitutional or transducer proposals must be rejected before physical replay.
