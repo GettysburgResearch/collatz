@@ -119,10 +119,21 @@ liminf p_w(L)/L >= log(q)/log(p/q).
 
 **Native use:** retained as a low-complexity periodic-controller firewall. It does not construct a restricted rational-base root.
 
+## S80 — Matveev: explicit real logarithmic forms
+
+**Record:** E. M. Matveev, *An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II*, Izvestiya: Mathematics 64 (2000), no. 6, 1217–1269. DOI `10.1070/IM2000v064n06ABEH000314`.
+
+**Inspected:** official Math-Net bibliographic record and abstract; exact theorem normalization was recorded and applied natively in PR #53's source ledger.
+
+**Located content:** an explicit exponential lower bound for nonzero homogeneous rational linear forms in logarithms of algebraic numbers.
+
+**Native use:** PR #53 `T-8202` turns the single-pulse divisibility condition into exponentially close powers of two and three, uses Matveev for a repetition cutoff, and completes the remaining range through certified continued fractions. Subject to source-level reconstruction, this removes the repetition bound for both native single-pulse negative-cycle families.
+
 ## Cautions
 
 - The normality statement is conjectural.
 - Abstract-level S-unit, gcd, and switched-system sources are strategic bridges, not direct native theorem invocations.
 - A rational-base representation-tree analogy becomes a theorem only after the exact `Qx'=Px+a` mapping is proved.
 - Finite-state nonrecognizability does not exclude a controller with a genuine unbounded ordinary quotient.
+- Matveev's source theorem still requires independent source-level reconstruction in the exact PR #53 normalization.
 - No source listed here supplies a standard `3x+1` counterexample.
