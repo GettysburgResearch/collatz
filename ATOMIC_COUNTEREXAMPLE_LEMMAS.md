@@ -17,36 +17,41 @@ A positive atom is marked `P`; a decisive classification/filter is marked `N`. E
 - [`cartography/ATOMS_PASS_2.md`](cartography/ATOMS_PASS_2.md)
 - [`cartography/ATOMS_PASS_3_REVIEWED.md`](cartography/ATOMS_PASS_3_REVIEWED.md)
 - [`cartography/ATOMS_PASS_4.md`](cartography/ATOMS_PASS_4.md)
+- [`cartography/ATOMS_PASS_5.md`](cartography/ATOMS_PASS_5.md)
 
 ## Identifier corrections
 
-`ACL-P036` is the canonical refund atom. `ACL-P038` is retired. `ACL-N074` is resolved negatively.
+`ACL-P036` is the canonical changing-height refund atom. `ACL-P038` is retired. `ACL-N074` is resolved negatively. Pass-4 `ACL-P040` remains valid but is now the divisible-seven invariant subchart of the broader PR #51 run-core program.
 
 ## Current positive frontier
 
 | Packet | Atoms | Final certificate |
 |---|---|---|
-| critical cycles | `P001`, `P037`, `P039`, `P041` | full-denominator positive cycle and exact replay |
+| full-denominator cycles | `P001`, `P037`, `P039`, `P041`, `N084`, `N086` | one positive nontrivial cycle and exact replay |
 | sanctuary | `P003`, `P072` | DFA closure avoiding the trivial cycle |
-| quotient refund | `P036` | one physical `n` whose intrinsic PR #49 state is defined forever and turns over fresh primes |
-| negative-three pulse chart | `P040`, `N081` | one `x>0` legal forever under the fixed `9/(8,16)` map |
+| changing-height refund | `P036`, `N076`, `P044` | one physical PR #49 intrinsic core defined forever |
+| negative-three chart | `P040`, `P042`, `N081` | one ordinary run-core state legal forever |
+| fixed six-branch chart | `P043` | one fixed-scale quotient state legal forever |
+| H | `P030`, `P031`, `P035`, `P045`, `N080` | one positive H renewal counter legal forever |
+| common refund theorem | `N085` | top-boundary recurrence or universal exit theorem |
 | cross-cycle | `P019`, `N019`, `N079` | finite return or genuine multi-phase nontermination |
 | centered | `P020`, `P021`, `N026`, `N077` | eventually-zero ordinary tail or forced-tail seed |
-| H | `P030`, `P031`, `P035`, `N034`, `N080` | positive infinite H orbit outside the `10/30` compiler |
 | equivalent witnesses | `P050`–`P055` | third component, deficit, or faithful spectral support |
 
 ## Highest-leverage decisions
 
 | Atom | Question |
 |---|---|
-| `N075` | can distributed pulses satisfy all prime-power factors coherently? |
-| `N076` | can any PR #49 state remain defined forever while generating the forced fresh-prime support? |
-| `N077` | can a non-additive top-boundary centered machine survive forever? |
-| `N079` | does cross-cycle continuation genuinely leave phase 1 infinitely often? |
-| `N080` | can H find a physical nondescending escaping macro family? |
-| `N081` | does the fixed negative-three pulse chart admit an ordinary renewal survivor? |
-| `N082` | do the proposed sparse-support exclusions through seven survive independent reconstruction? |
+| `P044` | can PR #3 causally expose the exact 176-bit block consumed by PR #49? |
+| `N076` | can one intrinsic PR #49 core satisfy every changing top-boundary cylinder? |
+| `P042` | can the negative-three run quotient emit only expanding runs forever? |
+| `P043` | does the fixed six-branch quotient chart contain one ordinary infinite path? |
+| `P045` | does one H renewal counter remain in its deterministic domain forever? |
+| `N083` | must any pulse construction leave every fixed negative-cycle cone? |
+| `N084` | what is the exact globally feasible `(length,support,height)` cycle region? |
+| `N085` | which refund machines admit an ordinary top-boundary recurrence theorem? |
+| `N086` | can all cycle compiler interfaces be made compatible at the full denominator? |
 
 ## Acceptance rule
 
-Finite prefixes, modular lassos, unique completion points, large quotients, long orbits, proper-factor hits, near-integer intervals, and expanding transitions without infinite definedness are not counterexample certificates.
+Finite prefixes, modular lassos, unique completion points, refund SCCs, large quotients, long orbits, proper-factor hits, near-integer intervals, and expanding transitions without infinite definedness are not counterexample certificates.
