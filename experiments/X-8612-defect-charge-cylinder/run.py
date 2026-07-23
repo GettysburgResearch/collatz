@@ -13,15 +13,11 @@ from pathlib import Path
 from typing import Sequence
 
 
-X_MIN = 2**71 + 1
-
-P_MINUS = 2_733_776_749
-Q_MINUS = 6_586_818_670
-P_PLUS = 27_172_759_629
-Q_PLUS = 65_470_613_321
-
-CHARGE_FLOOR = P_MINUS + P_PLUS
-LENGTH_FLOOR = Q_MINUS + Q_PLUS
+CANONICAL_VERIFIED_EXPONENT = 71
+EXPECTED_P_MINUS = 2_733_776_749
+EXPECTED_Q_MINUS = 6_586_818_670
+EXPECTED_P_PLUS = 27_172_759_629
+EXPECTED_Q_PLUS = 65_470_613_321
 
 
 def atanh_log_bounds(z: Fraction, terms: int) -> tuple[Fraction, Fraction]:
@@ -49,15 +45,42 @@ def ratio_bounds(
     return n_lo / d_hi, n_hi / d_lo
 
 
-def logarithm_intervals() -> dict[str, tuple[Fraction, Fraction]]:
+def logarithm_intervals(x_min: int) -> dict[str, tuple[Fraction, Fraction]]:
     ln2 = atanh_log_bounds(Fraction(1, 3), 150)
     ln43 = atanh_log_bounds(Fraction(1, 7), 80)
     # (1+z)/(1-z) = 1 + 1/(3X) when z=1/(6X+1).
-    lne = atanh_log_bounds(Fraction(1, 6 * X_MIN + 1), 2)
+    lne = atanh_log_bounds(Fraction(1, 6 * x_min + 1), 2)
     alpha = ratio_bounds(ln43, ln2)
     beta_num = (ln43[0] - lne[1], ln43[1] - lne[0])
     beta = ratio_bounds(beta_num, ln2)
     return {"ln2": ln2, "ln43": ln43, "lne": lne, "alpha": alpha, "beta": beta}
+
+
+def stern_brocot_cover(
+    beta: tuple[Fraction, Fraction],
+    alpha: tuple[Fraction, Fraction],
+) -> tuple[Fraction, Fraction, Fraction, int]:
+    """Derive determinant-one neighbors enclosing [beta,alpha)."""
+    left = Fraction(0, 1)
+    right = Fraction(1, 1)
+    for iteration in range(1, 100_001):
+        mediant = Fraction(
+            left.numerator + right.numerator,
+            left.denominator + right.denominator,
+        )
+        if mediant <= beta[0]:
+            left = mediant
+        elif mediant >= alpha[1]:
+            right = mediant
+        elif beta[1] < mediant < alpha[0]:
+            return left, right, mediant, iteration
+        else:
+            raise AssertionError("logarithm intervals are too wide for Stern-Brocot routing")
+    raise AssertionError("Stern-Brocot cover did not terminate")
+
+
+def ceil_fraction(value: Fraction) -> int:
+    return -(-value.numerator // value.denominator)
 
 
 def frac_text(value: Fraction) -> str:
@@ -239,16 +262,25 @@ def necklace_audit(max_support: int = 7, max_slack: int = 10) -> int:
     return checked
 
 
-def build_payload() -> dict:
-    intervals = logarithm_intervals()
+def build_payload(verified_exponent: int = CANONICAL_VERIFIED_EXPONENT) -> dict:
+    if verified_exponent < 1:
+        raise ValueError("verified exponent must be positive")
+    x_min = 2**verified_exponent + 1
+    intervals = logarithm_intervals(x_min)
     alpha_lo, alpha_hi = intervals["alpha"]
     beta_lo, beta_hi = intervals["beta"]
 
-    lower = Fraction(P_MINUS, Q_MINUS)
-    upper = Fraction(P_PLUS, Q_PLUS)
-    mediant = Fraction(CHARGE_FLOOR, LENGTH_FLOOR)
+    lower, upper, mediant, stern_iterations = stern_brocot_cover(
+        intervals["beta"], intervals["alpha"]
+    )
+    charge_floor_lo = ceil_fraction(beta_lo * mediant.denominator)
+    charge_floor_hi = ceil_fraction(beta_hi * mediant.denominator)
+    if charge_floor_lo != charge_floor_hi:
+        raise AssertionError("charge floor is not resolved by the rational interval")
+    charge_floor = charge_floor_lo
+    length_floor = mediant.denominator
 
-    if P_PLUS * Q_MINUS - P_MINUS * Q_PLUS != 1:
+    if upper.numerator * lower.denominator - lower.numerator * upper.denominator != 1:
         raise AssertionError("Farey determinant is not one")
     if not lower < beta_lo:
         raise AssertionError("lower Farey endpoint does not lie below beta")
@@ -258,8 +290,24 @@ def build_payload() -> dict:
         raise AssertionError("mediant does not lie below alpha")
     if not alpha_hi < upper:
         raise AssertionError("upper Farey endpoint does not lie above alpha")
-    if not Fraction(CHARGE_FLOOR - 1, LENGTH_FLOOR) < beta_lo:
+    if not Fraction(charge_floor - 1, length_floor) < beta_lo:
         raise AssertionError("integer charge floor is not certified")
+
+    if verified_exponent == CANONICAL_VERIFIED_EXPONENT:
+        expected = (
+            EXPECTED_P_MINUS,
+            EXPECTED_Q_MINUS,
+            EXPECTED_P_PLUS,
+            EXPECTED_Q_PLUS,
+        )
+        observed = (
+            lower.numerator,
+            lower.denominator,
+            upper.numerator,
+            upper.denominator,
+        )
+        if observed != expected:
+            raise AssertionError(f"canonical Farey endpoints changed: {observed}")
 
     normal_cases = normal_form_audit()
     necklace_cases = necklace_audit()
@@ -270,24 +318,28 @@ def build_payload() -> dict:
         "alpha_minus_mediant": alpha_lo - mediant,
         "upper_minus_alpha": upper - alpha_hi,
         "beta_minus_previous_charge": (
-            beta_lo - Fraction(CHARGE_FLOOR - 1, LENGTH_FLOOR)
+            beta_lo - Fraction(charge_floor - 1, length_floor)
         ),
     }
 
     payload = {
         "experiment": "X-8612",
         "status": "exact arithmetic certificate",
-        "external_premise": "every positive integer n < 2^71 reaches {1,2}",
-        "minimum_cycle_state_under_premise": X_MIN,
+        "external_premise": (
+            f"every positive integer n < 2^{verified_exponent} reaches {{1,2}}"
+        ),
+        "verified_exponent": verified_exponent,
+        "minimum_cycle_state_under_premise": x_min,
         "alpha_definition": "log_2(4/3)",
         "beta_definition": "log_2(4X/(3X+1))",
-        "farey_lower": [P_MINUS, Q_MINUS],
-        "farey_upper": [P_PLUS, Q_PLUS],
+        "farey_lower": [lower.numerator, lower.denominator],
+        "farey_upper": [upper.numerator, upper.denominator],
         "farey_determinant": 1,
-        "mediant_charge_length": [CHARGE_FLOOR, LENGTH_FLOOR],
-        "cycle_odd_state_length_floor": LENGTH_FLOOR,
-        "cycle_signed_charge_floor": CHARGE_FLOOR,
-        "cycle_non2_support_floor": CHARGE_FLOOR,
+        "stern_brocot_iterations": stern_iterations,
+        "mediant_charge_length": [mediant.numerator, mediant.denominator],
+        "cycle_odd_state_length_floor": length_floor,
+        "cycle_signed_charge_floor": charge_floor,
+        "cycle_non2_support_floor": charge_floor,
         "interval_decimal": {
             "beta_lower": decimal_text(beta_lo),
             "beta_upper": decimal_text(beta_hi),
@@ -316,9 +368,14 @@ def main() -> int:
         default=Path("results/canonical.json"),
     )
     parser.add_argument("--check-results", type=Path)
+    parser.add_argument(
+        "--verified-exponent",
+        type=int,
+        default=CANONICAL_VERIFIED_EXPONENT,
+    )
     args = parser.parse_args()
 
-    payload = build_payload()
+    payload = build_payload(args.verified_exponent)
     text = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(text)
