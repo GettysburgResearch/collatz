@@ -1,0 +1,102 @@
+{
+  "chart": {
+    "M": 524288,
+    "N": 531441,
+    "N_minus_M": 7153
+  },
+  "coarse_digest": "caaf61fde0e7a88d65f02397a971f23c362a1758cfe9041b854438ca2f76227c",
+  "coarse_max_growth": 6803,
+  "coarse_min_growth": 149,
+  "coarse_ordered_pairs": 36,
+  "experiment_id": "X-8405",
+  "fixed_slope_K_range": {
+    "g=1": [
+      -30552779286,
+      31111450344
+    ],
+    "g=7": [
+      -22975788753,
+      23233614912
+    ]
+  },
+  "interpretation": {
+    "not_proved": [
+      "a forever-defined ordinary state",
+      "the full existence lemma",
+      "a divergent Collatz seed",
+      "the Collatz conjecture or its negation"
+    ],
+    "proved_by_finite_replay": [
+      "all intrinsic cells and all 3024 proposed target transitions",
+      "unique next cell, exact kappa, rho, sigma, and ordinary lift identity",
+      "nonzero input top block on every transition",
+      "the exact fixed-slope growth thresholds",
+      "the frozen 15-transition ordinary refund prefix"
+    ]
+  },
+  "intrinsic_states": 504,
+  "payload_sha256": "d18c83d07ccd9019eefc1f8dae3547a884c53743c3948ba3a6f89e4eb59b0296",
+  "refund_prefix": {
+    "conclusion": "finite two-cell refund; exits after the frozen prefix",
+    "exit_remainder": 111818,
+    "final_quotient": 19377728322502330160626799823678157317086227744111705529701546815249429188,
+    "initial_base_M_digits": [
+      438236,
+      105059,
+      71880,
+      265736,
+      387279,
+      114075,
+      148402,
+      297241,
+      57544,
+      330113,
+      431826,
+      40476,
+      37172
+    ],
+    "initial_digit_count": 13,
+    "initial_quotient": 16034515502580063307301771541219136736699152614293326570421852507777970140,
+    "transitions": 15,
+    "types": [
+      0,
+      5,
+      3,
+      0,
+      3,
+      5,
+      0,
+      5,
+      2,
+      4,
+      3,
+      2,
+      5,
+      4,
+      0,
+      5
+    ]
+  },
+  "rho_range": [
+    148,
+    524248
+  ],
+  "rho_zero_count": 0,
+  "schema_version": 1,
+  "section_state_counts": {
+    "1": 432,
+    "7": 72
+  },
+  "sigma_range": [
+    0,
+    31134638311
+  ],
+  "sigma_zero_count": 11,
+  "status": "EMPIRICAL / EXACT FINITE INTERFACE AUDIT",
+  "top_transitions": 3024,
+  "transition_digest": "f09d74520552059e910f5f5ca9c66f2e3f0c9872bf6f920b6613b7fcd59a1ba5",
+  "uniform_scaled_growth_threshold": {
+    "g=1": 4271324,
+    "g=7": 3212050
+  }
+}
