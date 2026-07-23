@@ -58,15 +58,15 @@ complete dyadic replay
 
 No factorization of `D` is then needed.
 
-## Why this replaces the former `N_*` ladder
+## Why this replaces the former small ladder
 
-`R-8301` proves that the previously reported
+`R-8301` proves that the previously reported small target
 
 ```text
-N_*=110,340,992,901,879
+N_ladder=110,340,992,901,879
 ```
 
-is congruent to `7 mod16` and lies in neither first chart domain. Therefore its odd-prime lift cannot be completed honestly.
+is congruent to `7 mod16` and lies in neither first chart domain. Therefore its odd-prime lift cannot be completed honestly. This is distinct from the larger rotated floor denoted `N_*` in `O-8303`.
 
 The replacement solver must choose the physical integer and its dyadic chart cylinder together. A real near-integer and an odd-prime quotient cylinder are insufficient.
 
