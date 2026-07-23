@@ -48,7 +48,7 @@ python3 -B experiments/X-8405-intrinsic-top-boundary/run.py \
 Canonical semantic digest:
 
 ```text
-d18c83d07ccd9019eefc1f8dae3547a884c53743c3948ba3a6f89e4eb59b0296
+5af2cc52001aeff14d070ffeb37edf7399a92ac06ba23752bf34b8c480c3a29b
 ```
 
 ## Interpretation boundary
