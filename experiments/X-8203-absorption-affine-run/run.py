@@ -6,6 +6,67 @@ from fractions import Fraction
 from pathlib import Path
 sys.set_int_max_str_digits(0)
 
+P49=(5,30,20,56)
+BETA49=(2,3,2,1)
+
+def pr49_state(t,g,i):
+    G=7*(t+1)+g-BETA49[i]
+    D=11*(t+17)-i
+    A=3**G
+    Q=1<<D
+    a=(-pow(A,-1,Q))%Q
+    h=(A*a+1)//Q
+    rows={}
+    for j in range(4):
+        ks=[k for k in range(64) if (3**BETA49[i]*(h+A*k))%64==P49[j]]
+        assert len(ks)==1
+        k=ks[0]
+        r=a+Q*k
+        s=(h+A*k)//(1<<j)
+        for nu in range(3):
+            rh=r+(1<<(D+6))*nu
+            if rh%3:
+                rows[j,nu]=(rh,s+(1<<(6-j))*A*nu)
+    assert len(rows)==8
+    return G,D,A,rows
+
+def pr49_transition(t,g,i,j,nu,k):
+    G,D,A,rows=pr49_state(t,g,i)
+    sh=rows[j,nu][1]
+    _,D2,_,rows2=pr49_state(t+16,BETA49[i],j)
+    candidates=[(n,r) for (jj,n),(r,s) in rows2.items() if jj==k and r%3==sh%3]
+    assert len(candidates)==1
+    n,r2=candidates[0]
+    delta=(r2-sh)//(3*(1<<(6-j)))
+    H=11*(t+33)
+    M=1<<H
+    rho=pow(A,-1,M)*delta%M
+    sigma=(A*rho-delta)//M
+    assert sigma>=0
+    return n,rho,sigma,H,A
+
+def mixed_radix_crosswalk_counterexample():
+    t,g,i=3744,1,0
+    j,nu,k,l=0,1,0,0
+    n,rho,sigma,H,A=pr49_transition(t,g,i,j,nu,k)
+    n2,rho_next,sigma2,H_next,A2=pr49_transition(t+16,BETA49[i],j,k,n,l)
+    M_next=1<<H_next
+    ell_residue=pow(A,-1,M_next)*(rho_next-sigma)%M_next
+    assert (sigma+A*ell_residue-rho_next)%M_next==0
+    assert ell_residue%64==45
+    assert rho_next%64==16
+    assert ell_residue!=rho_next
+    return {
+        "state":[t,g,i],
+        "current_block":[j,nu],
+        "next_target":k,
+        "chosen_next_lift":n,
+        "following_target":l,
+        "mixed_radix_second_digit_mod64":ell_residue%64,
+        "actual_next_residue_mod64":rho_next%64,
+        "equal":False,
+    }
+
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(",",":")).encode()).hexdigest()
 
@@ -119,6 +180,7 @@ def main():
         },
         "canonical_absorption":canonical_absorption(),
         "affine_run_tschakaloff":affine_tschakaloff(),
+        "t8512_future_stack_crosswalk":mixed_radix_crosswalk_counterexample(),
         "counterexample_claimed":False,
     }
     payload["semantic_digest"]=digest(payload)
