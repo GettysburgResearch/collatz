@@ -1,0 +1,93 @@
+{
+  "asymptotic": {
+    "eventual_first_forbidden_canonical_count": 234,
+    "eventual_first_forbidden_transition_count": 233,
+    "eventual_height": 1140416,
+    "eventual_refund_density": "1/234",
+    "r233_exact_integer_crossing": 1140404,
+    "r233_first_multiple_16": 1140416,
+    "r470_exact_integer_crossing": 3752,
+    "r470_first_multiple_16": 3760,
+    "uniform_first_forbidden_canonical_count": 471,
+    "uniform_first_forbidden_transition_count": 470,
+    "uniform_height": 3760,
+    "uniform_refund_density": "1/471"
+  },
+  "canonical_cap_bits": "<22*t+559",
+  "experiment": "X-8508",
+  "lower_log_certificate": "3^665 > 2^1054",
+  "step_gain_bits": ">(63*t-121080)/665",
+  "table": [
+    {
+      "first_forbidden_canonical_count": 471,
+      "first_forbidden_transition_count": 470,
+      "height": 3760,
+      "obstruction": 124585,
+      "previous_obstruction": -229887
+    },
+    {
+      "first_forbidden_canonical_count": 470,
+      "first_forbidden_transition_count": 469,
+      "height": 3776,
+      "obstruction": 8785,
+      "previous_obstruction": -345687
+    },
+    {
+      "first_forbidden_canonical_count": 458,
+      "first_forbidden_transition_count": 457,
+      "height": 4096,
+      "obstruction": 353169,
+      "previous_obstruction": -9367
+    },
+    {
+      "first_forbidden_canonical_count": 411,
+      "first_forbidden_transition_count": 410,
+      "height": 5504,
+      "obstruction": 173225,
+      "previous_obstruction": -230639
+    },
+    {
+      "first_forbidden_canonical_count": 334,
+      "first_forbidden_transition_count": 333,
+      "height": 10000,
+      "obstruction": 570209,
+      "previous_obstruction": -39287
+    },
+    {
+      "first_forbidden_canonical_count": 252,
+      "first_forbidden_transition_count": 251,
+      "height": 50000,
+      "obstruction": 1259105,
+      "previous_obstruction": -1787735
+    },
+    {
+      "first_forbidden_canonical_count": 243,
+      "first_forbidden_transition_count": 242,
+      "height": 100000,
+      "obstruction": 4673833,
+      "previous_obstruction": -1513935
+    },
+    {
+      "first_forbidden_canonical_count": 236,
+      "first_forbidden_transition_count": 235,
+      "height": 500000,
+      "obstruction": 31380625,
+      "previous_obstruction": -87
+    },
+    {
+      "first_forbidden_canonical_count": 234,
+      "first_forbidden_transition_count": 233,
+      "height": 1140416,
+      "obstruction": 593,
+      "previous_obstruction": -71724311
+    },
+    {
+      "first_forbidden_canonical_count": 234,
+      "first_forbidden_transition_count": 233,
+      "height": 2000000,
+      "obstruction": 42120209,
+      "previous_obstruction": -83758487
+    }
+  ],
+  "table_digest": "a9bac5d31f9d5c2664d627c474941c2c7859c830b729c07567fdbba91daa53ef"
+}
