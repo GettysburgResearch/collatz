@@ -169,7 +169,7 @@ Therefore every nontrivial ordinary survivor satisfies
  \liminf_{\ell\to\infty}{p_i(\ell)\over\ell}
  \ge
  {1\over\log_{2^{19}}(3^{12})-1}
- =971.866577472620\ldots .}
+ =971.866577472579\ldots .}
  \tag{13}
 \]
 
@@ -181,7 +181,7 @@ Equation `(13)` excludes, as ordinary survivor codes:
 2. every quasi-Sturmian code;
 3. every coding for which a separate proof supplies
    ```text
-   liminf p_i(ell)/ell < 971.866577472620...;
+   liminf p_i(ell)/ell < 971.866577472579...;
    ```
 4. every fixed substitutional, automatic, transducer, or grammar proposal whose native factor-complexity bound lies below the same threshold.
 
@@ -219,7 +219,7 @@ Hence
 The ordinary top boundary grows by only
 
 ```text
-0.001028947823888... base-M digits per macro step,
+0.0010289478238881146... base-M digits per macro step,
 ```
 
 while `(13)` demands the reciprocal symbolic-complexity slope.  This is an exact information-criticality interface, not an existence proof.
