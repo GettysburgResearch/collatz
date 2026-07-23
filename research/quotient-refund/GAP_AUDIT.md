@@ -18,10 +18,18 @@ Relative to the frozen phase-34 tower identities:
    \]
 10. the runtime map is one high binary divisibility plus one six-bit gate on a positive core coprime to six;
 11. every legal step makes the next primitive core coprime to the current one and more than `170` bits larger;
-12. one forever-defined finite core would give an explicit positive unbounded physical Collatz orbit;
-13. compatible completions form a Haar-null, Hausdorff-dimension-zero set;
-14. eventual local type periods at most `58` select irrational completions;
-15. every hypothetical infinite path must introduce infinitely many globally new odd primes into the physical boundary shifts.
+12. every finite core state compiles into eight exact ordinary source blocks;
+13. complete compatibility with the next scale reduces those eight blocks to exactly four continuation cylinders of one top quotient;
+14. the complete continuation modulus is the type-independent power
+    \[
+    2^{11(t+33)};
+    \]
+15. the unused top lift is transported exactly by the odd multiplier `3^G`;
+16. every noncanonical top lift strictly increases from `t=3760` and more than doubles from `t=3776`;
+17. one forever-defined finite core would give an explicit positive unbounded physical Collatz orbit;
+18. compatible completions form a Haar-null, Hausdorff-dimension-zero set;
+19. eventual local type periods at most `58` select irrational completions;
+20. every hypothetical infinite path must introduce infinitely many globally new odd primes into the physical boundary shifts.
 
 ## Remaining assumptions and nonconsequences
 
@@ -35,50 +43,69 @@ No finite core is known for which the two gates of `T-8507` recur forever:
 
 and the resulting six-bit output belongs to the four physical tower cells. This is the sole positive mathematical gap.
 
-### 2. Finite prefixes
+Equivalently, no finite top quotient is known to hit one of the four `L-8507` residues modulo `2^(11(t+33))` at every future step.
+
+### 2. Canonical top-boundary steps
+
+`T-8508` completely handles every noncanonical lift:
+
+```text
+m=rho+H*ell,
+ell>=1
+  ->
+m_next>2m       from t>=3776.
+```
+
+It does not exclude the canonical event `ell=0`. A hypothetical witness may use canonical and refunded steps in a genuinely nonperiodic pattern. Proving that canonical steps cannot recur forever, or constructing their exact regeneration, is now a sharply isolated subproblem.
+
+### 3. Finite prefixes
 
 Every finite type word has one exact core/counter cylinder and infinitely many positive representatives. This does not imply that one representative survives all future tests.
 
-### 3. Runtime inverse arithmetic is closed, not existence
+### 4. Runtime inverse arithmetic is closed, not existence
 
 `L-8502` causally generates the connector inverse, while `T-8507` proves that the runtime orbit can be checked without that inverse at all. Neither fact supplies a core satisfying the next high divisibility.
 
-### 4. Residue lassos
+### 5. Four residues are not coverage
+
+For each current ordinary block, `L-8507` gives four distinct complete continuation residues in a modulus with `11(t+33)` bits. Their exactness and common modulus do not imply that the current finite quotient occupies one of them.
+
+### 6. Residue lassos
 
 The six-bit output is only the final low gate. The high condition consumes `Theta(t)` new binary bits. A lasso in the type, low core residue, or any fixed modulus is not a finite integer orbit unless an exact most-significant lift invariant is proved.
 
-### 5. Trusted metadata is no longer an issue
+### 7. Trusted metadata is no longer an issue
 
 The factorization of `n+34` recovers every finite-control coordinate and the unbounded core. This strengthens verification but does not prove that the reconstructed core remains legal forever.
 
-### 6. Unimodularity is not closure
+### 8. Unimodularity is not closure
 
-The determinant-one basis exposes the exact top coordinate and the narrow Farey cone. It does not make the next point land in the following cone. That landing is the high divisibility in `T-8507`.
+The determinant-one basis exposes the exact top coordinate and the narrow Farey cone. It does not make the next point land in the following cone. That landing is the high divisibility in `T-8507` or, equivalently, the top residue in `L-8507`.
 
-### 7. Rapid growth is not closure
+### 9. Rapid growth is not closure
 
-`T-8506` proves `C_next>2^170 C` whenever a step exists. It removes drift as a gap, but it does not create the required zero block in `3^G C+1`.
+`T-8506` proves `C_next>2^170 C` whenever a step exists, and `T-8508` proves refunded top lifts more than double. These remove drift as a gap, but neither creates the required zero block in `3^G C+1`.
 
-### 8. Fresh primes are necessary, not sufficient
+### 10. Fresh primes are necessary, not sufficient
 
 `T-8505` proves adjacent core coprimality and infinitely many globally new odd prime divisors. It does not generate those primes at the correct stages or prove that they satisfy the moving binary cylinders.
 
-### 9. Zero dimension
+### 11. Zero dimension
 
 A zero-dimensional compact set may contain isolated ordinary integers. `T-8502` is a pressure diagnosis, not nonexistence.
 
-### 10. Period cutoff
+### 12. Period cutoff
 
 `T-8503` excludes minimal eventual periods through `58`. Failure of the source theorem's numerical hypothesis at `59` neither constructs nor suggests a rational completion.
 
-### 11. Physical positivity
+### 13. Physical positivity
 
 Positivity and unboundedness are conditional only on a forever-defined intrinsic core. They are not inferred from a `2`-adic completion.
 
-### 12. No preloaded infinite data
+### 14. No preloaded infinite data
 
 The packet initializes no logarithm digits, future type word, inverse-limit counter, or prime schedule. The missing core must be finite and explicit.
 
-### 13. No candidate identifier
+### 15. No candidate identifier
 
 No `K-85xx` object exists until one finite physical integer is accompanied by an all-time inductive invariant and independent physical replay.
