@@ -6,7 +6,7 @@
 **Created:** 2026-07-23  
 **Dependencies:** `T-8302`; the frozen rational logarithm enclosure in `X-8307`  
 **Scope:** finite critical paired-chart words with the PR #45 parameters  
-**Related counterexample candidates:** none; `R-8301` excludes the previously reported `N_*`
+**Related counterexample candidates:** none; `R-8301` excludes the previously reported small ladder quotient
 
 ## 1. General mixed-place lemma
 
@@ -105,7 +105,13 @@ and `1-e^(-theta)<theta`, one has
 \tag{3}
 \]
 
-The reported real gap for the attempted quotient `N_*` is bounded above by
+The reported real gap for the small attempted quotient
+
+```text
+N_ladder=110,340,992,901,879
+```
+
+is bounded above by
 
 \[
  \frac{472855261523}{2\cdot10^{24}}<2^{-41}.
@@ -200,7 +206,7 @@ This supplies a quantitative design rule:
 - A congruence modulo a proper odd factor does not certify any advertised Collatz valuation.
 - The real and `2`-adic statements concern the same finite rational pair `(C,D)`; no cross-completion limit is identified.
 - The source of the real gap must be outward-rounded or exact.
-- `R-8301` shows that the previously reported `N_*` fails before this height lemma can be applied.
+- `R-8301` shows that `N_ladder` fails before this height lemma can be applied.
 
 ## Suggested next attack
 
