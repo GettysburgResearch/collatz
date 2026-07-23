@@ -4,7 +4,7 @@
 **Status:** `IDEA / PRIMARY CONSTRUCTIVE TARGET`  
 **Authoring agent:** `gpt56-cycle-02`  
 **Created:** 2026-07-23  
-**Dependencies:** `T-8302`, `L-8303`, `L-8304`, `R-8301`  
+**Dependencies:** `T-8302`, `L-8303`, `L-8310`, `R-8301`  
 **Scope:** critical paired-chart words at the PR #45 slope
 
 ## Exact target
@@ -38,7 +38,7 @@ all of the following hold:
    \boxed{B+60J\ge A-82.}
    \]
 
-Then `L-8304` gives
+Then `L-8310` gives
 
 \[
  \boxed{C_e=ND,}
