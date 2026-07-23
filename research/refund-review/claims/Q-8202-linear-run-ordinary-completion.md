@@ -2,12 +2,25 @@
 
 **Claim ID:** `Q-8202`  
 **Title:** Ordinary realization of the explicit run schedule `r_n=64+n`  
-**Status:** `IDEA / PRIMARY POSITIVE TARGET`  
+**Status:** `SUPERSEDED`  
 **Authoring agent:** `gpt56-refund-01`  
 **Created:** 2026-07-23  
+**Resolved:** 2026-07-23, negatively by `R-8202`  
 **Dependencies:** `L-8203`, `L-8204`; frozen PR #51 `L-8002/L-8004/T-8002`  
 **Scope:** the divisible-seven `+1` run-core chart  
 **Related counterexample candidates:** none
+
+## Resolution
+
+The explicit schedule
+
+\[
+r_n=64+n
+\]
+
+has no rational initial core. `R-8202` rewrites its selected `2`-adic value as one scalar Tschakaloff value and applies Amou–Matala-aho–Väänänen (2007), Theorem 5.1, with an independently audited parameter match. The same proof excludes every eventually affine positive-slope run schedule.
+
+The original positive question and acceptance gate are preserved below as historical context.
 
 ## Exact question
 
@@ -40,43 +53,22 @@ Equivalently, does the nested finite-cylinder system for `(1)` stabilize at one 
    9^{r_n+1}>2^{5+3r_{n+3}}.
    \]
 
-Therefore any positive ordinary realization of `(1)` is automatically a positive unbounded shortcut-Collatz orbit. No separate drift or average-growth theorem would remain.
-
-The schedule is explicitly aperiodic, so it is not excluded merely by a periodic-lasso theorem. It is also generated from one counter by the rule `r -> r+1`; however, its arithmetic core update uses exact multiplication and a changing modulus, so it lies outside the fixed-residue additive-counter model of branch-qualified PR #34 `L-9915`.
+Therefore any positive ordinary realization of `(1)` would automatically be a positive unbounded shortcut-Collatz orbit.
 
 ## Finite-prefix certificate
 
 Every finite prefix of `(1)` determines one residue class for `v_0` modulo a power of two. Because the modulus is coprime to seven, the divisible-seven physical chart has a canonical positive representative in every finite cylinder.
 
-A useful exact artifact should record for each prefix:
+Finite compatibility alone is not an existence proof; `R-8202` shows that the infinite selected core is irrational.
 
-```text
-run prefix,
-initial residue and modulus,
-least positive divisible-seven representative,
-terminal odd core,
-newly appended top block,
-physical replay hash.
-```
+## Historical positive acceptance gate
 
-Finite compatibility alone is not an existence proof.
+A positive answer would have required:
 
-## Positive acceptance gate
+1. all equations `(2)` integral;
+2. every exact next-`B` residue gate;
+3. positive odd cores;
+4. complete physical block replay;
+5. one ordinary integer carrying the canonical top boundary forever.
 
-A complete positive answer must provide one finite integer `v_0` and prove:
-
-1. all equations `(2)` are integral;
-2. every exact next-`B` residue gate holds;
-3. every `v_n` stays positive and odd;
-4. the resulting physical states `n_n=42*2^(3r_n)*v_n-5` follow the declared finite Collatz blocks;
-5. the same ordinary integer carries the canonical top boundary forever.
-
-Then PR #51 `T-8002` and `L-8204` yield an unconditional counterexample.
-
-## Negative acceptance gate
-
-A complete negative answer for this schedule may prove that its selected `2`-adic core is nonordinary—for example by a completion-safe determinant, height squeeze, or exact nonstabilization theorem. Such a result would close this one schedule only, not the full PR #51 run-core architecture.
-
-## Suggested next attack
-
-Exploit the linear exponents in `(2)`. Compose several consecutive equations before eliminating the terminal core, and seek a normalized nonzero integer whose dyadic divisibility grows quadratically while its ordinary height grows strictly more slowly. The calculation must retain the terminal core term; setting it to zero would silently replace the desired growing ordinary orbit by a completion boundary condition.
+No such object exists for this schedule by `R-8202`.
