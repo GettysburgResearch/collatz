@@ -2,7 +2,7 @@
 
 This index reserves the `*-9500` identifiers for issue #17. It is not the
 repository's canonical `CLAIMS.md`. All theorem-level statements remain
-`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9509`
+`PROPOSED` pending independent review. Finite audits `X-9501` through `X-9510`
 are empirical or exact finite checks and do not promote any universal claim.
 
 ## Packet files
@@ -22,10 +22,12 @@ are empirical or exact finite checks and do not promote any universal claim.
 - [`claims/ITERATION_09.md`](claims/ITERATION_09.md) — `L-9524`, `L-9525`, `R-9507`, `Q-9511`.
 - [`claims/ITERATION_10.md`](claims/ITERATION_10.md) — `L-9526`, `T-9516`, `T-9517`, `R-9508`, `Q-9512`.
 - [`claims/ITERATION_11.md`](claims/ITERATION_11.md) — `L-9527`, `L-9528`, `T-9518`, `R-9509`, `Q-9513`.
+- [`claims/ITERATION_12.md`](claims/ITERATION_12.md) — `L-9529`, `L-9530`, `T-9519`, `R-9510`, `Q-9514`.
 - [`../../experiments/X-9506-h-counterexample-search/README.md`](../../experiments/X-9506-h-counterexample-search/README.md) — exact ordinary and short-period counterexample sweep.
 - [`../../experiments/X-9507-h-cycle-complexity/README.md`](../../experiments/X-9507-h-cycle-complexity/README.md) — exact continued-fraction cycle-period certificate.
 - [`../../experiments/X-9508-h-compiler-renewal/README.md`](../../experiments/X-9508-h-compiler-renewal/README.md) — exact compiler and centered-renewal box audit.
 - [`../../experiments/X-9509-h-renewal-counter/README.md`](../../experiments/X-9509-h-renewal-counter/README.md) — exact renewal one-counter and refund-graph audit.
+- [`../../experiments/X-9510-h-intrinsic-renewal/README.md`](../../experiments/X-9510-h-intrinsic-renewal/README.md) — exact one-integer renewal and predecessor audit.
 
 ## Status table
 
@@ -53,7 +55,7 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `L-9511` | Canonical endpoint range and fixed-point phase | PROPOSED | self-contained after `L-9502` |
 | `L-9512` | Same-sign phase closure | PROPOSED | mixed-sign case remains |
 | `Q-9503` | Word-specific mixed-sign crossing | IDEA | sharp finite descent frontier |
-| `R-9503` | Naive first-letter fixed-point bound is false | PROPOSED | exact length-25 witness; `X-9502` |
+| `R-9503` | Naive first-letter fixed-point bound is false | PROPOSED | exact witness; `X-9502` |
 | `T-9504` | Subcritical weighted survivor moments | SUPERSEDED | stronger branchwise theorem `T-9507` |
 | `T-9505` | Capital--core discounted budget | PROPOSED | `L-9504`, `T-9502` |
 | `L-9513` | Exact first-crossing intermediate threshold | PROPOSED | zero-carry inequality remains |
@@ -68,119 +70,70 @@ are empirical or exact finite checks and do not promote any universal claim.
 | `L-9516` | Centered rooms around the fixed ghost `4` | PROPOSED | outer-room decomposition only |
 | `T-9510` | Monotone ordinary-section minimum | PROPOSED | boundary step repaired by `L-9517` |
 | `Q-9506` | Ordinary-section minimum divergence | IDEA | direct proof target `nu_K -> infinity` |
-| `L-9517` | Complete finite-code boundary classification | PROPOSED | repairs the closure boundary in `T-9510` |
+| `L-9517` | Complete finite-code boundary classification | PROPOSED | repairs closure boundary in `T-9510` |
 | `L-9518` | Dual renewal bridge and integral sign law | PROPOSED | centered two-place normal form |
-| `T-9511` | Subcritical future-core demand | PROPOSED | assumes the post-Yu subcritical regime |
+| `T-9511` | Subcritical future-core demand | PROPOSED | assumes post-Yu subcritical regime |
 | `T-9512` | Minimal-survivor relative toll bound | PROPOSED | conditional on a nonperiodic survivor |
 | `Q-9507` | Subcritical renewal finite trap | IDEA | integral transformed height still open |
 | `L-9519` | Exact rounded-deficit pressure | PROPOSED | self-contained from `D-9501` |
 | `L-9520` | Successive-renewal compatibility and prime firewall | PROPOSED | self-contained from `L-9518` |
 | `T-9513` | Fixed bridge-prime support is finite | PROPOSED | imports nondegenerate S-unit finiteness |
-| `T-9514` | Final finite-alphabet / reset-renewal dichotomy | PROPOSED | conditional on audited `T-9509` |
+| `T-9514` | Finite-alphabet / reset-renewal dichotomy | PROPOSED | conditional on audited `T-9509` |
 | `R-9504` | Pressure and fresh mass are scale-compatible | PROPOSED | blocks false one-dimensional closures |
 | `Q-9508` | Discounted fresh mass or finite-alphabet nonstabilization | IDEA | two exact remaining branches |
-| `L-9521` | Positive cycle minimum bound | PROPOSED | elementary cycle lemma and exact affine recurrence |
-| `T-9515` | No positive cycle through 2,479,700,524 blocks | PROPOSED | `L-9521`, exact `X-9506`/`X-9507`, Legendre theorem |
+| `L-9521` | Positive cycle minimum bound | PROPOSED | exact affine recurrence |
+| `T-9515` | No positive cycle through 2,479,700,524 blocks | PROPOSED | exact finite certificates and Legendre |
 | `L-9522` | Finite-alphabet entropy--capital barrier | PROPOSED | `T-9502`, `L-9515` |
 | `R-9505` | Low-complexity slow-bank templates are impossible | PROPOSED | consequence of `L-9522` |
-| `Q-9509` | Structured counterexample interface | IDEA | high-entropy finite alphabet or unbounded reset--renewal |
-| `L-9523` | Prefix-return capital barrier | PROPOSED | `T-9502`, exact repeated-factor divisibility |
+| `Q-9509` | Structured counterexample interface | IDEA | high entropy or reset-renewal |
+| `L-9523` | Prefix-return capital barrier | PROPOSED | exact repeated-factor divisibility |
 | `R-9506` | Short-return substitutions require excessive capital | PROPOSED | consequence of `L-9523` |
-| `Q-9510` | Delayed-novelty structured counterexample interface | IDEA | exact carry stabilization remains mandatory |
+| `Q-9510` | Delayed-novelty structured interface | IDEA | carry stabilization remains mandatory |
 | `L-9524` | Zero-carry macro descent criterion | PROPOSED | exact fixed-point comparison |
-| `L-9525` | `10/30` compiler counterexample no-go | PROPOSED | `L-9524`, `T-9502`/`T-9506`, cross-direction compiler data |
+| `L-9525` | `10/30` compiler counterexample no-go | PROPOSED | compiler data and survivor pressure |
 | `R-9507` | Abstract tail freedom is not physical ordinary freedom | PROPOSED | consequence of `L-9525` |
-| `Q-9511` | Physical expanding macro construction interface | IDEA | zero carry, integral growth, and escape all required |
-| `L-9526` | Polynomial finite-macro growth barrier | PROPOSED | `T-9506`, exact affine macro composition |
-| `T-9516` | Quantitative renewal-prime budget | PROPOSED / SOURCE-DEPENDENT | explicit ESS bound and native rank audit |
-| `T-9517` | Sharp survivor deficit pressure | PROPOSED | `T-9502`, `L-9504`, `L-9519` |
-| `R-9508` | Finite control and qualitative fresh primes are insufficient | PROPOSED | `L-9526`, `T-9516`, `T-9517` |
-| `Q-9512` | Positive-cycle-exploiting macro construction interface | IDEA | physical zero carry and all-time induction still required |
-| `L-9527` | Canonical renewal type cylinders | PROPOSED | exact two-place renewal equations |
+| `Q-9511` | Physical expanding macro construction interface | IDEA | zero carry, growth, escape required |
+| `L-9526` | Polynomial finite-macro growth barrier | PROPOSED | plastic survivor count |
+| `T-9516` | Quantitative renewal-prime budget | PROPOSED / SOURCE-DEPENDENT | ESS specialization audit |
+| `T-9517` | Sharp survivor deficit pressure | PROPOSED | toll and rounded-deficit identities |
+| `R-9508` | Finite control and qualitative fresh primes are insufficient | PROPOSED | construction boundary |
+| `Q-9512` | Positive-cycle-exploiting macro interface | IDEA | all-time physical induction required |
+| `L-9527` | Canonical renewal type cylinders | PROPOSED | exact two-place equations |
 | `T-9518` | Counterexample equivalence and `1/21` renewal Kraft law | PROPOSED | `L-9518`, `L-9527` |
 | `L-9528` | Exact refund-edge growth criterion | PROPOSED | `L-9527` |
 | `R-9509` | Refund SCC is not an ordinary witness | PROPOSED | finite-state projection boundary |
-| `Q-9513` | Forever-defined renewal-counter atom | IDEA | one explicit finite tuple would disprove H and Collatz |
-| `X-9506` | Exact counterexample-first ordinary and short-period sweep | INTERNAL EXACT | finite only; no survivor below `p<3*2^65`, no word cycle through period 14 |
-| `X-9507` | Exact cycle-period compression certificate | INTERNAL EXACT | finite only; supports `T-9515` |
-| `X-9508` | Exact compiler and renewal-box audit | INTERNAL EXACT | finite only; 1,200,600 stars, no cycle |
-| `X-9509` | Exact renewal one-counter and refund-graph audit | INTERNAL EXACT | finite only; largest refund SCC 594, no infinite tuple |
+| `Q-9513` | Forever-defined renewal-counter atom | IDEA | explicit tuple would disprove H and Collatz |
+| `L-9529` | Intrinsic one-integer renewal decoder | PROPOSED | removes trusted type/counter metadata |
+| `L-9530` | Exact renewal predecessor/source test | PROPOSED | `L-9529` |
+| `T-9519` | Minimal-survivor source gate | PROPOSED | conditional on a nonperiodic survivor |
+| `R-9510` | Intrinsic compression does not imply definedness | PROPOSED | ordinary boundary remains |
+| `Q-9514` | One-integer counterexample atom | IDEA | one forever-defined `Z_0` would settle negative direction |
+| `X-9506` | Ordinary and short-period sweep | INTERNAL EXACT | finite only |
+| `X-9507` | Cycle-period compression certificate | INTERNAL EXACT | finite only |
+| `X-9508` | Compiler and renewal-box audit | INTERNAL EXACT | finite only |
+| `X-9509` | Renewal one-counter/refund graph audit | INTERNAL EXACT | finite only |
+| `X-9510` | Intrinsic renewal and predecessor audit | INTERNAL EXACT | finite only; 746,496 states, max life 5 |
 
 ## Dependency summary
 
-A direct proof of H would follow from
+A direct proof of H would follow from `Q-9506`, proving `nu_K -> infinity`.
+The counterexample-first route is now equivalently `Q-9514`: find one positive
+ordinary intrinsic height whose three forced valuation tests recur forever.
 
-\[
-\nu_K\longrightarrow\infty
-\]
+Iterations 02--10 establish the exact cylinders, ghost pressure, real-escape
+and deficit budgets, prime firewall, large cycle exclusions, complexity
+barriers, compiler no-gos, and quantitative macro constraints.  Iteration 11
+reduces the renewal system to a finite type plus one ordinary quotient-refund
+counter.  Iteration 12 removes the remaining trusted metadata: the single
+integer `Z=(p-4)/4` recovers the full renewal type, bridge, next state, and
+unique possible predecessor.
 
-in `Q-9506`; this route bypasses the signed-displacement conjecture. The older
-descent architecture would follow from `C-9501` together with `Q-9502`.
+`X-9506` exhausts every ordinary candidate below `3*2^65`; `X-9507` supports the
+proposed cycle exclusion beyond 2.47 billion blocks; `X-9508` and `X-9509`
+audit the compiler and renewal-counter fronts; `X-9510` independently checks
+the intrinsic decoder and predecessor on 746,496 finite states.
 
-Iterations 02--05 established the canonical phase reduction, plastic survivor
-pressure, the discounted capital--core budget, exclusion of the critical
-near-Pillai mode (subject to a Yu-theorem audit), and the monotone ordinary
-minimum.
-
-Iteration 06 added complete closure-boundary classification, the exact centered
-two-place renewal bridge, an integral renewal height, and the future-weighted
-subcritical core demand. Iteration 07 added rounded-deficit pressure, the prime
-firewall, fixed-prime-support exclusion, and the finite-alphabet versus
-reset--renewal split.
-
-Iteration 08 attacks structured counterexamples directly:
-
-1. `L-9521` bounds one state of every positive cycle by `L/(1-M)`;
-2. `T-9515` combines that bound with `X-9506`, exact rational logarithm
-   intervals, and Legendre compression to exclude every positive cycle through
-   `2,479,700,524` blocks;
-3. `L-9522` proves that a finite-alphabet survivor with logarithmic capital
-   growth must have quantitatively positive factor entropy;
-4. `L-9523` proves that every early symbolic return consumes a proportional
-   capital wall and excludes all `{2,3}` prefix-return constants at most 84;
-5. `R-9505` and `R-9506` close the natural slow-bank and short-return
-   Sturmian/Beatty/automatic/substitution architectures once their native
-   complexity or recurrence constants are supplied.
-
-Iteration 09 closes the cross-direction compiler as a counterexample mechanism:
-
-1. zero-carry uses of `10` or `30` strictly decrease the positive integral
-   endpoint;
-2. removing the terminal zeros leaves an aperiodic irrational-rotation
-   directive with bounded cumulative multiplier, contradicting nonperiodic
-   real escape;
-3. the abstract `2`-adic full shift therefore does not furnish physical
-   ordinary freedom.
-
-Iteration 10 adds:
-
-1. `L-9526`, excluding every physical finite macro grammar whose suffix
-   multipliers have polynomial exponent below `1/log_2(rho)-1`, in particular
-   every grammar with no positive multiplier cycle;
-2. `T-9516`, an explicit logarithmic lower bound on distinct renewal primes via
-   a rank-`2s+3` nondegenerate S-unit equation;
-3. `T-9517`, raising the nonperiodic survivor's rounded-deficit baseline to the
-   exact critical constant `log_8(4/3)`.
-
-Iteration 11 gives the first exact integer-first constructive reduction for H:
-
-1. every renewal type is one arithmetic progression in one ordinary counter;
-2. every type transition is one exact quotient-refund branch
-   `k=eta+2^q t`, `k'=zeta+3^g t`;
-3. an H counterexample is equivalent to one finite tuple whose deterministic
-   decoder remains defined forever;
-4. one complete renewal has exact relative Kraft mass `1/21`;
-5. the finite refund projection already contains a 594-state SCC, so positive
-   engine structure exists even though no ordinary witness has yet been found.
-
-`X-9506` exhausts every ordinary candidate below `3*2^65`; its largest exact
-block lifetime is thirty-four. `X-9507` upgrades the periodic exclusion from
-word period fourteen to more than 2.47 billion blocks. `X-9508` checks
-1,200,600 centered renewal stars and finds no cycle. `X-9509` checks 759,375
-renewal counter cylinders through type bound 15 and finds substantial refund
-SCC structure but no forever-defined ordinary tuple.
-
-No structured counterexample has been found. The strongest positive target is
-now `Q-9513`: one explicit finite renewal tuple with an all-time decoder
-invariant. Such a tuple would reconstruct an infinite positive H orbit and,
-through `L-9501`, an unconditional Collatz counterexample.
+No positive counterexample has been found.  A valid final certificate now needs
+only one written `Z_0>0` and an ordinary induction proving that the intrinsic
+renewal map remains defined forever.  Such a certificate reconstructs the H
+seed `n_0=4Z_0/3` and the shortcut-Collatz seed `8n_0+1`.
