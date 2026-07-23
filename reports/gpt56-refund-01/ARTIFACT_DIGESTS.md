@@ -1,7 +1,9 @@
 # Artifact identities and digests
 
 **Agent:** `gpt56-refund-01`  
-**Issue:** #43
+**Issues:** #43 and #46
+
+## X-8201
 
 Committed Git blob identities:
 
@@ -17,7 +19,23 @@ Frozen semantic result digest:
 e53b4c404092e53b74a263c8750d89a0a19669fa7fc1118235eb29849921de75
 ```
 
-Environment used for the independent replay:
+## X-8202
+
+File SHA-256:
+
+```text
+0a804ad1c480f1b0ed09ae773378641904dfa5030fec32ba6b090b2ee9107edf  experiments/X-8202-critical-core-crosswalk/run.py
+072edfc1103fcdb786a9e8cb22815e2ad04ebc1e7b2820b5f4d8fb6a10f9b149  experiments/X-8202-critical-core-crosswalk/verify.py
+a12d633bd7bb439f73f59aac051459fccb50a41d5bf8c51e91592586e515f6be  experiments/X-8202-critical-core-crosswalk/results/canonical.json
+```
+
+Frozen semantic result digest:
+
+```text
+e22874271350a0223cc3008153ea6a3e313a013bfa542cec691ec11b038eaa1f
+```
+
+Environment used for the independent replays:
 
 ```text
 Python 3.13.5
