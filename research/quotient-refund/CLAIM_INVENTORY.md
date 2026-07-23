@@ -20,7 +20,9 @@ This isolated `85xx` namespace belongs to issue #43. It does not edit any canoni
 | `L-8506` | Lemma | The core decoder compiles into eight exact ordinary blocks | PROPOSED | `T-8507` |
 | `L-8507` | Lemma | Eight core blocks reduce to four type-independent top-boundary cylinders | PROPOSED | `L-8506`, `T-8507` |
 | `T-8508` | Theorem | Every noncanonical top-boundary lift is uniformly refunded | PROPOSED | `L-8507`, `3^665>2^1054` |
-| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8508`, `L-8506`, `L-8507` |
+| `L-8508` | Lemma | Consecutive canonical lifts force a long zero top block | PROPOSED | `L-8507`, `3^971<2^1539` |
+| `T-8509` | Theorem | Canonical lift runs are uniformly bounded and eventually have length at most 233 | PROPOSED | `L-8506`, `L-8507`, `T-8507`, `3^665>2^1054` |
+| `Q-8501` | Open question | One forever-defined ordinary primitive core | OPEN | `T-8505`--`T-8509`, `L-8506`--`L-8508` |
 | `X-8501` | Experiment | Exact refund, carry, decoder, and cutoff audit | EMPIRICAL | `L-8501`--`T-8503` |
 | `X-8502` | Experiment | Exact complement-quotient and growth audit | EMPIRICAL | `L-8503`, `T-8504` |
 | `X-8503` | Experiment | Unimodular physical marker and prime-turnover audit | EMPIRICAL | `L-8504`, `T-8505` elementary gates |
@@ -28,6 +30,7 @@ This isolated `85xx` namespace belongs to issue #43. It does not edit any canoni
 | `X-8505` | Experiment | Intrinsic primitive-core decoder reconstruction | EMPIRICAL | `L-8505`, `T-8506`, `T-8507` |
 | `X-8506` | Experiment | Eight-block ordinary core compiler audit | EMPIRICAL | `L-8506` |
 | `X-8507` | Experiment | Type-independent top-boundary quotient refund audit | EMPIRICAL | `L-8507`, `T-8508` |
+| `X-8508` | Experiment | Canonical-run length and refunded-density audit | EMPIRICAL | `T-8509` |
 
 ## Logical chain
 
@@ -47,6 +50,9 @@ PR3 physical tower identity
        common modulus 2^(11(t+33))
        m=rho+H*ell -> m_next=sigma+3^G*ell
   -> T-8508 noncanonical lift doubles from t>=3776
+  -> L-8508 consecutive canonical lifts require a zero top block
+  -> T-8509 canonical runs have length <=470 uniformly,
+       <=233 eventually; refunded-event density >=1/234
   -> Q-8501 one finite forever-defined physical core
   -> explicit positive unbounded Collatz orbit.
 ```
