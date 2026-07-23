@@ -3,322 +3,318 @@
 **Agent:** `gpt56-cartographer-01`  
 **Issue:** [#36](https://github.com/gfreund123/collatz/issues/36)  
 **Repository:** `gfreund123/collatz`  
-**Reviewed snapshot:** [`ANALYSIS_SNAPSHOT_PASS_4.md`](ANALYSIS_SNAPSHOT_PASS_4.md)  
-**Current delta:** [`CARTOGRAPHY_PASS_4.md`](CARTOGRAPHY_PASS_4.md)  
+**Reviewed snapshot:** [`ANALYSIS_SNAPSHOT_PASS_5.md`](ANALYSIS_SNAPSHOT_PASS_5.md)  
+**Current delta:** [`CARTOGRAPHY_PASS_5.md`](CARTOGRAPHY_PASS_5.md)  
 **Atomic handoffs:** [`ATOMIC_COUNTEREXAMPLE_LEMMAS.md`](ATOMIC_COUNTEREXAMPLE_LEMMAS.md)  
 **Graph source:** [`docs/global-counterexample-map.mmd`](docs/global-counterexample-map.mmd)
 
-## Scope and status
+## Scope and confidence vocabulary
 
 For the shortcut map
 
 \[
-T(n)=\begin{cases}n/2,&n\text{ even},\\(3n+1)/2,&n\text{ odd},\end{cases}
-\]
-
-a full disproof is:
-
-1. an explicit positive nontrivial cycle;
-2. an explicit positive orbit avoiding `1` forever;
-3. an exact equivalent witness such as a third functional-graph component or coverage deficit.
-
-| Color | Meaning |
-|---|---|
-| Green | proved or independently verified at an exact frozen source |
-| Blue | source-inspected external theorem with native hypotheses audited |
-| Orange | native proposed theorem or exact algebraic interface |
-| Yellow | exact finite / empirical packet |
-| Red | refuted, closed mechanism, or secret reduction |
-| Grey | open construction or missing implication |
-
-There is no counterexample in this snapshot.
-
-## Current global findings
-
-### 1. Frozen corrected collision class
-
-PR #44 independently passed PR #33's frozen chain
-
-```text
-L-9704 -> L-9705 -> L-9706 -> T-9705
-```
-
-at `c9d62bce3e93f5785f72e4520bc576863d9379eb`. The corrected 256-transition doubling-scale phase-`-34` class has no signed ordinary completion. Native-ledger integration remains pending. Linear refund, cross-cycle, adaptive, and growing-rank architectures are outside scope.
-
-### 2. Positive cycles
-
-A positive cycle remains the shortest finite certificate. The current map contains:
-
-- source-proposed/exact windows through 27 odd terms in PR #42; PR #48 did not reproduce the full census;
-- proposed exact exclusions at odd-state lengths 184 and 185 in PRs #13 and #50;
-- PR #47 `T-9601`, together with the earlier sparse-support exclusions, proposes a support floor of at least **eight** valuations different from two;
-- PR #45's critical mechanical compiler and rejected near-candidate, independently passed at its frozen source by PR #48;
-- PR #45 `L-8404`, which decodes at most one valuation block from each fixed-shape dyadic residue;
-- PR #47 `L-9604`, which finitely caps repeated opposite-drift two-block packets through a commutator divisor;
-- PR #34 `L-9914`, the lossless cross-prime excess-path compiler;
-- PR #51, which caps all pulse sizes in each fixed two-pulse negative-cycle packet.
-
-The open certificate is still
-
-\[
-C(w)=n(2^A-3^k)
-\]
-
-for the **entire** denominator, followed by exact valuation replay. Proper factors, near integers, unreplayed carry edges, and bounded grammars are insufficient.
-
-### 3. Linear refund: one changing-modulus counter
-
-PR #49 now reduces the exact ordinary state to
-
-```text
-(t,current type i,complement counter k).
-```
-
-The next type is selected by the low six bits of `k`; complete continuation is one next-scale divisibility test. For every legal transition with
-
-```text
-t>=3744,
-k>=256,
-```
-
-PR #49 proposes
-
-```text
-k'>=2k.
-```
-
-The physical initialization is explicit. Thus exact replay, positivity, and unboundedness follow automatically once one finite state is defined forever.
-
-PR #49 `L-8504` further proves that `(t,i,k)` is recoverable intrinsically from one ordinary physical boundary integer `n`: `v_2(n+34)` determines height and type, and the odd boundary word determines `k`. `T-8505` proposes that every infinite path must introduce infinitely many globally new odd primes into `n_j+34`; no fixed finite-prime library can realize it.
-
-The sole positive gap is:
-
-```text
-find one physical n_0
-whose recovered (t_0,i_0,k_0) state
-is defined forever.
-```
-
-This is `ACL-P036`. PR #48 independently supplies the ordinary-section firewall: expansion does not remove the moving top-boundary requirement.
-
-### 4. New negative-three pulse chart
-
-PR #51 gives the exact negative-three block chart in `h=(n+5)/2`. The invariant section `h=21x` yields
-
-\[
-G(x)=\begin{cases}
-9x/8,&x\equiv0\pmod8,\\
-(9x+1)/16,&x\equiv7\pmod{16},
+T(n)=\begin{cases}
+n/2,&n\text{ even},\\
+(3n+1)/2,&n\text{ odd},
 \end{cases}
 \]
 
-with physical state
+a full disproof is an explicit positive nontrivial cycle, an explicit positive orbit avoiding `1` forever, or a rigorously equivalent witness such as a third functional-graph component or coverage deficit.
+
+| Color | Meaning |
+|---|---|
+| Green | proved or independently verified at one exact frozen source |
+| Blue | source-inspected external theorem with native hypotheses audited |
+| Orange | native proposed theorem or exact algebraic interface |
+| Yellow | exact finite/source computation |
+| Red | refuted, closed mechanism, or secret reduction |
+| Grey | open construction or missing implication |
+
+There is **no unconditional counterexample** in this snapshot.
+
+## 1. The repository now has two global funnels
+
+### Positive-cycle funnel
+
+The cycle program is no longer a collection of unrelated searches. Its current layers are:
 
 ```text
-n=42x-5.
+cycle length and minimum-state bounds
+ -> defect-support feasible region
+ -> compressed block/carry or mechanical compiler
+ -> fixed-cone / commutator eliminants
+ -> prime-power compatibility
+ -> entire denominator equality
+ -> exact valuation replay.
 ```
 
-The two branches replay exactly the accelerated blocks `(1,2)` and `(2,2)`. The trivial physical cycle is absent from positive integral `x`.
-
-Therefore one positive `x_0` whose deterministic `G`-orbit is defined forever is an unconditional Collatz counterexample. Every finite binary word is realizable by one dyadic cylinder, so the missing theorem is ordinary stabilization/top-boundary closure, not finite compatibility.
-
-The exact finite frontier has now been computed through depth 31. Among all `4,294,967,294` prefix words at depths `1..31`, the least positive depth-31 root is
-
-```text
-x=24643395416689283212736,
-n=42x-5=1035022607500949894934907.
-```
-
-It exits after exactly 31 blocks. This is yellow finite evidence only.
-
-Grouping between `(2,2)` blocks gives the H-like toll-one renewal
+The decisive object remains
 
 \[
-p_{j+1}=\frac{3^{2r_j+2}}{2^{3r_j+4}}p_j+1,
-\qquad p=16x.
+C(w)=n(2^A-3^k),
 \]
 
-This is `ACL-P040` / `ACL-N081`. See [`cartography/PULSE_CHART_SYNTHESIS.md`](cartography/PULSE_CHART_SYNTHESIS.md).
+for the **entire** denominator, followed by exact replay. Proper-factor hits, near integers, unreplayed carry edges, and bounded grammars are not certificates.
 
-### 5. Centered forced tail
+### Ordinary-divergence funnel
 
-PR #44 gives
+Four strong lanes now have one common state architecture:
+
+\[
+q=\rho_s+2^{E_s}\ell
+\quad\longmapsto\quad
+q'=\sigma_s+M_s\ell.
+\]
+
+A finite exact control state `s` and one ordinary quotient determine the physical block and next type. When the odd multiplier `M_s` refunds more information than the next dyadic radix consumes, every noncanonical lift grows. The remaining theorem is ordinary most-significant-boundary recurrence: find one finite root that belongs to the exact changing cylinder forever.
+
+See [`cartography/ORDINARY_REFUND_MACHINES.md`](cartography/ORDINARY_REFUND_MACHINES.md).
+
+## 2. Four ordinary multiplicative-refund machines
+
+### PR #45: fixed six-branch chart
+
+The exact chart has radix
+
+```text
+M=2^19,
+N=9^6,
+N-M=7153.
+```
+
+Its state is `(i,q)`. One residue test chooses the unique next branch and every legal transition strictly increases `q`. The physical embedding is explicit. One positive state defined forever would be an unconditional Collatz counterexample.
+
+This is the smallest **fixed-scale** refund machine in the repository.
+
+### PR #51: negative-three changing-run highway
+
+The full ordinary chart is
+
+```text
+A: z=8q    ->9q,
+B: z=1+16q ->1+9q,
+physical n=6z-5.
+```
+
+The pass-4 map
+
+```text
+x -> 9x/8       or (9x+1)/16,
+n=42x-5
+```
+
+remains exact, but is now correctly classified as the invariant subchart `z=7x` of the larger system.
+
+The stronger state is the maximal-run quotient `(r,s,k)`. The run labels are outputs of a deterministic changing-modulus map. Every emitted run `r>=5` strictly increases the physical chart state by `9^6>2^19`. One forever-defined state whose emitted runs all remain at least five is a complete counterexample.
+
+### PR #49: intrinsic changing-height core
+
+The runtime state is
+
+```text
+(t,gamma,i,C),
+gamma in {1,2,3},
+i in {0,1,2,3},
+gcd(C,6)=1.
+```
+
+It is recoverable from one physical integer
+
+```text
+n=2^(11t+5+i) 3^gamma C-34.
+```
+
+At every finite state there are exactly eight ordinary source cylinders. The decoder checks one high binary divisibility and one six-bit output cell; the next type is unique. Each legal connector replaces the prime-to-six core by a coprime core more than 170 bits larger.
+
+The complete top-boundary modulus grows by exactly 176 bits per connector. Noncanonical lifts eventually more than double. Canonical lifts cannot absorb the architecture indefinitely: after height `3760` there are no 471 consecutive canonical lifts, and eventually no 234. Hence any hypothetical infinite path uses genuinely refunded top lifts with positive lower density.
+
+Such a path must also introduce infinitely many globally new odd primes. This is the strongest changing-scale constructive lane, but existence is still open.
+
+### PR #19: H renewal counter
+
+Iteration 11 gives a deterministic renewal state
+
+```text
+(a,R,b,k).
+```
+
+For a transition from renewal type `tau` to `sigma`, one exact edge is
+
+```text
+k=eta_(tau,sigma)+2^q t
+ ->
+k'=zeta_(tau,sigma)+3^g t.
+```
+
+One finite tuple defined forever reconstructs a positive H orbit and therefore a Collatz counterexample. The edge domains satisfy the exact Kraft law
+
+\[
+\sum_{S,c\ge1}2^{-(3S+2c)}=\frac1{21};
+\]
+
+a specified `h`-renewal type path has relative Haar measure `21^{-h}`.
+
+The finite refund graph already contains 353,835 refund edges, 42 refund self-loops, 34 refund SCCs, and one SCC of size 594. These are genuine engine data, but an SCC or periodic type path is not an ordinary root.
+
+## 3. The exact 176-bit selector connection
+
+PR #3 proves that one width-one linear connector consumes one new 176-bit top block. Its conditional correlated selector gadget projects onto all `b` output bits when its stated rank hypotheses hold; the unproved endpoint is exactly `b=176`.
+
+PR #49 independently shows that the next complete top-boundary modulus gains exactly 176 bits per connector.
+
+Thus the two branches meet at the same arithmetic scale:
+
+```text
+PR #3: expose/steer the next 176-bit block;
+PR #49: consume that 176-bit block in the intrinsic physical decoder.
+```
+
+The missing theorem is causal orientation: derive the selector input from the current intrinsic core alone, force a legal next source cylinder, and prove ordinary top closure for all time. This is `ACL-P044`.
+
+## 4. Positive-cycle feasible region
+
+### Current source layers
+
+- PR #45 proposes no nontrivial positive cycle through `50,000` accelerated odd states.
+- PRs #13 and #50 propose exact exclusions at lengths 184 and 185.
+- PR #47 proposes complete centered-support exclusions through 11 non-`2` valuations.
+- PR #42 proposes support layers through 15 and records exact source computations with zero formal matches at supports 16 and 17.
+- PR #53 proves that every fixed negative-cycle word has only finitely many possible hits in its entire coordinatewise upward pulse cone.
+
+All these theorem-level claims retain their source status.
+
+### New exact length-support bridge
+
+Let
+
+```text
+k = odd-state length,
+s = number of valuations different from 2,
+R = k-s,
+B = sum of the s non-neutral valuations.
+```
+
+Then
+
+\[
+A=B+2R\ge2k-s.
+\]
+
+The elementary least-state window for a nontrivial cycle gives
+
+\[
+2^A7^k\le22^k.
+\]
+
+Therefore every cycle satisfies
+
+\[
+\boxed{14^k\le11^k2^s.}
+\]
+
+Conditional on the proposed `k>=50001` floor, exact integer comparison gives
+
+\[
+11^{50001}2^{17396}<14^{50001}
+\le11^{50001}2^{17397}.
+\]
+
+Hence
+
+\[
+\boxed{s\ge17397.}
+\]
+
+This does not make the support-16/17 computations incorrect; it relocates them as method-validation packets rather than candidates in the globally feasible region, conditional on the length theorem. See [`cartography/CYCLE_FEASIBLE_REGION.md`](cartography/CYCLE_FEASIBLE_REGION.md).
+
+### Compiler convergence
+
+The most complete constructive cycle route now combines:
+
+```text
+PR #45 block residue/carry decoding
+ + PR #50 correct quotient-Hensel lifting
+ + PR #47 normalized half-join and commutator sieves
+ + PR #34 prime-power excess paths
+ + PR #53 sparse-resultant fixed-cone caps
+ -> full-denominator equality
+ -> exact physical replay.
+```
+
+This is `ACL-N086`: either produce one full compatible circuit, or identify the first exact interface that cannot be made simultaneously compatible.
+
+## 5. Closed or sharply narrowed mechanisms
+
+| Mechanism | Standing | Consequence |
+|---|---|---|
+| frozen corrected 256-transition doubling class | independently excluded at frozen source | stop searching words/seams inside that class |
+| fixed-modulus centered lasso | completion ghost | retain a true top boundary |
+| finite control + zero-tested additive counter | proposed ultimately periodic | use nonlinear/changing-modulus or richer memory |
+| permanent cross-cycle phase 1 | shifted ordinary Collatz | prove repeated exits/returns or a finite return |
+| bare congruence sanctuary | independently reviewed proposed no-go | use genuine word-boundary memory |
+| H `10/30` compiler | proposed physical descent/bounded multiplier | use refund edges or a new macro family |
+| one fixed pulse support with unbounded pulse heights | finitely capped by PR #53 | vary repetition/baseline/support architecture |
+| ambient cone or approximate spectrum | no witness extraction | produce an exact third component |
+
+## 6. Remaining independent routes
+
+### Centered `64 -> 81`
+
+The exact forced tail
 
 \[
 64B'=81B+e-e'
 \]
 
-with bounded carry, invariant `B+4e mod17`, and strict positive growth. Fixed-modulus PDR is the periodic completion ghost. PR #34 `L-9915` further excludes finite control plus one zero-tested additive counter. A viable centered machine must use genuine top-boundary access, nonlinear/changing modulus, a stack, or richer unbounded state.
+still requires a nonlinear/changing-modulus most-significant-boundary machine. The new common refund form suggests the correct abstraction, but no complete intrinsic quotient reduction has yet been published.
 
-### 6. Cross-cycle handoff
+### Cross-cycle handoff
 
-Issue #39's scale-22 handoff remains genuine finite evidence outside the frozen class, but permanent phase `1` satisfies
+Issue #39 remains outside the frozen PR #33 class. Permanent phase 1 is a secret reduction to ordinary Collatz. A real result must prove repeated multi-phase return, a finite positive return, or a multi-phase invariant.
 
-\[
-(q,1)\mapsto(T(q-1)+1,1),
-\]
+### Sanctuary and equivalent witnesses
 
-so it is shifted ordinary Collatz. The live target is repeated multi-phase return or a genuine multi-phase invariant.
+A regular sanctuary remains a finite certificate only if its DFA retains canonical word-boundary information. Coverage, solution-cone, and spectral criteria remain exact but lack faithful third-component extraction.
 
-### 7. H subsystem
+## 7. Priorities
 
-PR #19 iteration 8 proposes no positive H cycle through `2,479,700,524` blocks and adds entropy/capital and prefix-return barriers.
+### By logical distance
 
-Iteration 9 proposes that the adaptive `10/30` physical zero-carry macros strictly descend, while the renormalized `3/1` Sturmian core has bounded multiplier and is nonphysical. Abstract full-shift tail freedom is not ordinary freedom.
+1. **Full-denominator positive cycle.**
+2. **Boundary-memory sanctuary DFA.**
+3. **Forever-defined fixed six-branch chart state.**
+4. **Forever-defined negative-three run-five highway.**
+5. **Forever-defined PR #49 intrinsic core.**
+6. **Forever-defined H renewal counter.**
+7. **Centered nonlinear top-boundary seed.**
+8. **Multi-phase cross-cycle return.**
+9. **Exact third-component witness.**
 
-A viable H witness now needs a different macro family with:
+### By architectural leverage
 
-```text
-zero ordinary carry,
-integer nondecrease,
-cumulative multiplier escape,
-exact cylinder closure,
-one positive finite initialization.
-```
-
-### 8. Sanctuary and equivalent witnesses
-
-PR #48 independently passes PR #42 `T-8601`: no bare invariant union of congruence classes avoids the trivial cycle. A sanctuary must retain genuine canonical-word boundary memory.
-
-Coverage, solution-cone, and spectral routes remain exact equivalent criteria but still lack faithful third-component extraction.
-
-## Dependency graph
-
-```mermaid
-flowchart LR
-  FALSE([Collatz false])
-  CYCLE([Positive nontrivial cycle])
-  DIV([Positive orbit avoids 1])
-  THIRD([Third component / deficit])
-  CYCLE --> FALSE
-  DIV --> FALSE
-  THIRD --> FALSE
-
-  subgraph CYC["Critical finite cycle"]
-    CEQ["Exact cycle equation"]
-    FRONT["Lengths 184 and 185 excluded<br/>PROPOSED"]
-    SUPPORT["PR47: >=8 non-2 valuations<br/>PROPOSED"]
-    BLOCK["PR45 block residue / carry decoder"]
-    COMM["PR47 opposite-drift commutator sieve"]
-    PRIME["PR34 cross-prime compiler"]
-    FULL{"Full denominator + replay"}
-    CEQ --> FRONT
-    CEQ --> SUPPORT
-    BLOCK --> FULL
-    COMM --> FULL
-    PRIME --> FULL
-    FULL --> CYCLE
-  end
-
-  subgraph FROZEN["Frozen corrected class"]
-    STAGE["256-transition doubling stage"]
-    T9705["T-9705 independently verified"]
-    CLOSED["No signed ordinary completion"]
-    STAGE --> T9705 --> CLOSED
-  end
-
-  subgraph REFUND["Linear refund"]
-    COMP["PR49 intrinsic state from n<br/>(t,i,k)"]
-    DEF{"Defined forever?"}
-    GROW["k' >= 2k; fresh primes required"]
-    COMP --> DEF --> GROW --> DIV
-  end
-
-  subgraph PULSE["Negative-three pulse chart"]
-    O8001["PR51 exact h block chart"]
-    G["h=21x invariant<br/>G: 9x/8 or (9x+1)/16"]
-    GDEF{"One x>0 defined forever?"}
-    MIN31["Exact minimum through depth 31<br/>exits at block 32"]
-    RENEW["H-like toll-one renewal"]
-    O8001 --> G --> GDEF --> DIV
-    G --> MIN31
-    G --> RENEW --> GDEF
-  end
-
-  subgraph CENTER["Centered 64 to 81"]
-    ZERO["64B'=81B+e-e'"]
-    GHOST["Fixed modulus = completion ghost"]
-    ADD["Additive one-counter periodic"]
-    TOP{"Nonlinear top-boundary machine"}
-    ZERO --> GHOST
-    ZERO --> ADD
-    ZERO --> TOP --> DIV
-  end
-
-  subgraph CROSS["Cross-cycle"]
-    CELL["m=22 physical handoff"]
-    PH1["Permanent phase 1 = shifted Collatz"]
-    MULTI{"Repeated multi-phase return"}
-    CELL --> PH1
-    CELL --> MULTI --> DIV
-    MULTI --> CYCLE
-  end
-
-  subgraph H["Partial H"]
-    HC["No cycle <=2.479b blocks<br/>PROPOSED"]
-    OLD["10/30 compiler proposed closed"]
-    HNEW{"New nondescending<br/>escaping macro family"}
-    HC --> HNEW --> DIV
-    OLD --> HNEW
-  end
-
-  subgraph OTHER["Other exact certificates"]
-    DFA{"Boundary-memory sanctuary DFA"}
-    COVER{"Coverage deficit C(x)<x"}
-    CONE{"Third binary fixed ray"}
-    DFA --> DIV
-    COVER --> THIRD
-    CONE --> THIRD
-  end
-
-  classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
-  classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
-  classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
-  classDef refuted fill:#ffc7c7,stroke:#a11,color:#111;
-  classDef open fill:#e5e7eb,stroke:#666,color:#111;
-
-  class CEQ,T9705 proved;
-  class FRONT,SUPPORT,BLOCK,COMM,PRIME,COMP,GROW,O8001,G,RENEW,HC,OLD proposed;
-  class MIN31 empirical;
-  class CELL empirical;
-  class CLOSED,GHOST,ADD,PH1 refuted;
-  class FULL,DEF,GDEF,TOP,MULTI,HNEW,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
-```
-
-## Priorities
-
-### Logical distance
-
-1. Full-denominator positive cycle.
-2. Boundary-memory sanctuary DFA.
-3. Forever-defined negative-three pulse-chart seed (`ACL-P040`).
-4. Forever-defined PR #49 complement counter (`ACL-P036`).
-5. Centered nonlinear top-boundary seed.
-6. Multi-phase cross-cycle return.
-7. Positive H survivor outside `10/30`.
-8. Equivalent third-component witness.
-
-### Architectural leverage
-
-1. PR #49 complement-counter infinite definedness.
-2. Negative-three `9/(8,16)` chart and H renewal transfer.
-3. Critical mixed-drift block-carry/cross-prime circuit.
-4. PR #45 full-denominator mechanical circuit.
-5. Centered nonlinear/changing-modulus machine.
-6. H physical expanding macro search.
-7. Cross-cycle repeated multi-phase regeneration.
+1. **Common multiplicative-refund top-boundary theorem** across PRs #19/#45/#49/#51.
+2. **Causal 176-bit selector/refund coupling** between PR #3 and PR #49.
+3. **Global cycle feasible-region audit and full-denominator compiler convergence.**
+4. **PR #49 intrinsic core residue recurrence and fresh-prime generation.**
+5. **Negative-three run-core top-boundary invariant.**
+6. **H refund-SCC to ordinary-root extraction.**
+7. **Centered intrinsic quotient reformulation.**
 
 ## Bottom line
 
-No unconditional counterexample was found. Two deterministic ordinary-state targets are now especially sharp:
+The repository has not produced a counterexample, but the full-objective frontier is now much sharper:
 
 ```text
-PR #49:
-  one physical n whose intrinsic (t,i,k) decoder is defined forever
-  and whose boundary shifts acquire infinitely many fresh odd primes;
-
-negative-three chart:
-  one x>0 whose fixed 9/(8,16) map is defined forever.
+four exact deterministic ordinary refund machines;
+one shared most-significant-boundary recurrence problem;
+one exact 176-bit selector interface;
+a proposed cycle length floor above 50,000;
+conditional defect support at least 17,397;
+fixed pulse cones finitely capped;
+and a converging full-denominator compiler stack.
 ```
 
-Both already include exact physical Collatz replay and need only an all-time ordinary-domain theorem. The fixed pulse chart is the main new connection of this pass.
+The most valuable next theorem is no longer “find a clever symbolic schedule.” It is one of:
+
+1. a causal ordinary top-boundary invariant for one multiplicative-refund machine; or
+2. one exact full-denominator cycle circuit with complete replay.
