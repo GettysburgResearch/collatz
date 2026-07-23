@@ -1,0 +1,123 @@
+{
+  "constants": {
+    "D9": 68332056247,
+    "D9_factorization": [
+      7,
+      13,
+      19,
+      37,
+      163,
+      6553
+    ],
+    "a": 215072362,
+    "b": 38148886279,
+    "b_minus_a": 37933813917,
+    "omega": 37933813917
+  },
+  "counters": {
+    "bounded_zero_carry_pairs": 0,
+    "centered_branch_instances": 1649,
+    "high_growth_checks": 901,
+    "invariant_residue_checks": 1649,
+    "physical_high_block_replays": 650,
+    "quotient_pair_identities": 5110,
+    "raw_centered_agreements": 1649
+  },
+  "experiment_id": "X-8251",
+  "samples": [
+    {
+      "canonical_output": "207828396",
+      "multiplier_bits": 29,
+      "radix_bits": 36,
+      "run": 0,
+      "toll": "-37933813917",
+      "xi": "36863973557"
+    },
+    {
+      "canonical_output": "1816585289",
+      "multiplier_bits": 32,
+      "radix_bits": 39,
+      "run": 1,
+      "toll": "-303255438974",
+      "xi": "286418146206"
+    },
+    {
+      "canonical_output": "7493910397703378816640561895063517676244890615914",
+      "multiplier_bits": 165,
+      "radix_bits": 165,
+      "run": 43,
+      "toll": "-2788172562281392386412760966019781661287651427750",
+      "xi": "8395513992389227893246564178568365200615781821158"
+    },
+    {
+      "canonical_output": "293525096550544375528693564991283055500200831203436",
+      "multiplier_bits": 169,
+      "radix_bits": 168,
+      "run": 44,
+      "toll": "869233576299134175527700066803552549855475174698",
+      "xi": "292301814190384561442545550284905765484837775207142"
+    },
+    {
+      "canonical_output": "672340264694871724936149843561787779979188580175164890691648307656412",
+      "multiplier_bits": 232,
+      "radix_bits": 228,
+      "run": 64,
+      "toll": "2296278405285229666681596872069548776287645046811651150132182426337898",
+      "xi": "63492867754826133903795843833857895598821125364721590823317882661606"
+    },
+    {
+      "canonical_output": "37559038906637666344128102193345328732292243473456355896741869600328315",
+      "multiplier_bits": 235,
+      "radix_bits": 231,
+      "run": 65,
+      "toll": "20905970087832047034685220235162079256097661673579755303927642499995066",
+      "xi": "3152809790613028342868233343719928256622772959231992697138053657783014"
+    },
+    {
+      "canonical_output": "9464422838745911669931623405762116703985850241178689160900327866518458378503516437665400794656237435",
+      "multiplier_bits": 333,
+      "radix_bits": 324,
+      "run": 96,
+      "toll": "8687966853598549306079898706702159129081413674629623460029685561322951791321231914334377122537178218",
+      "xi": "20622876398641836637295970933237874296754176291841310224130894353946851347558305434819890099645158"
+    }
+  ],
+  "scope": {
+    "centered_runs": [
+      0,
+      96
+    ],
+    "lifts_per_centered_run": 17,
+    "physical_high_runs": [
+      44,
+      50
+    ],
+    "physical_lifts_per_pair": 5,
+    "physical_small_runs": [
+      0,
+      8
+    ],
+    "quotient_high_runs": [
+      44,
+      64
+    ],
+    "quotient_lifts_per_pair": 7,
+    "quotient_small_runs": [
+      0,
+      16
+    ],
+    "zero_carry_search": [
+      44,
+      80
+    ]
+  },
+  "status": "exact finite verification of the declared corpus; L-8251/L-8252 remain PROPOSED",
+  "threshold": {
+    "multiplier_43_positive": false,
+    "multiplier_44_positive": true,
+    "toll_43": "-2788172562281392386412760966019781661287651427750",
+    "toll_44": "869233576299134175527700066803552549855475174698"
+  },
+  "transcript_sha256": "62a6db9a403326384e207dddd9a7a135a0f9c03eb7a7cb92d6f26c18c0914908",
+  "zero_carry_pairs": []
+}
