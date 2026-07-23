@@ -43,8 +43,8 @@ where `N` is the unique real floor selected by an outward-rounded interval. The 
 
   ```text
   D<2^(A-41),
-  |C/D-N_*|<2^-41,
-  |C-N_*D|<2^(A-82).
+  |C/D-N_ladder|<2^-41,
+  |C-N_ladder*D|<2^(A-82).
   ```
 
   Since `M>2^60`, the coarse mixed closing gate is
@@ -54,11 +54,28 @@ where `N` is the unique real floor selected by an outward-rounded interval. The 
   ```
 
 - Pure odd-prime lifting would require `83,209,775,916` levels by the coarse bound; exact range-reduced logarithms sharpen the sufficient exponent to `82,733,048,428`.
-- `R-8301`: the previously reported `N_*=110,340,992,901,879` is `7 mod16`, outside both first paired-chart domains. It cannot be the fixed point of any chart word. Its associated physical seed reaches `1` in 208 shortcut steps.
+- `R-8301`: the previously reported ladder target `N_ladder=110,340,992,901,879` is `7 mod16`, outside both first paired-chart domains. It cannot be the fixed point of any chart word. Its associated physical seed reaches `1` in 208 shortcut steps.
 - `Q-8301`: the corrected constructive target carries a dyadic physical-prefix depth `B`, odd-prime quotient depth `J`, and one directed real interval in the same finite solver state.
 - `X-8307`: exact height arithmetic, first-cylinder refutation, finite physical replay, and independent checker.
 
 A complete physical replay from one integer proves `2^A | C-ND`; combined with a real interval of radius below one, this alone forces equality. Thus complete dyadic replay is the efficient height certificate. Odd-prime Hensel digits are supplementary pruning data, not a substitute for physical legality.
+
+### Rotation dyadic-depth audit
+
+- `O-8304` / `X-8308`: both the rigorous real floor and ceiling were physically replayed at every chart rotation contained in the first `10,000,000` run rotations of the 65-repair word.
+- The scan covers `58,849,491` chart rotations and more than thirteen million legal first-block starts.
+- The deepest floor and ceiling candidates both survive only eight chart blocks. Their dyadic depths are `26` and `25`, respectively.
+- Including the automatic base odd-factor level, the largest coarse mixed-place totals are only `86` and `85`, versus the height requirement `A-82=4,992,586,554,927`.
+
+This separates three coordinates that earlier near-candidate work could conflate:
+
+```text
+real floor or ceiling,
+odd-prime quotient agreement,
+actual physical dyadic depth.
+```
+
+Rotation can improve the second without materially improving the third.
 
 ## Constructive synthesis
 
@@ -76,7 +93,7 @@ negative-three ordinary chart
  -> exact cycle replay.
 ```
 
-The second Euclidean level matters because it supplies replacements at every Christoffel/Farey scale. Flat adjacent swaps provide too little entropy for the prime-square quotient target; the hierarchy is the intended Hensel alphabet. Rotation is an additional exact search coordinate. The new audit adds the missing rule: every real integer target must pass the actual dyadic chart cylinder before any odd-prime quotient lift is interpreted constructively.
+The second Euclidean level matters because it supplies replacements at every Christoffel/Farey scale. Flat adjacent swaps provide too little entropy for the prime-square quotient target; the hierarchy is the intended Hensel alphabet. Rotation is an additional exact search coordinate. The height audit adds the missing rule: every real integer target must pass the actual dyadic chart cylinder before any odd-prime quotient lift is interpreted constructively.
 
 ## Full-objective boundary
 
@@ -86,4 +103,4 @@ A counterexample still requires either
 one full denominator identity D|C,
 ```
 
-or one all-time ordinary chart/refund path with canonical top-boundary closure. Proper-factor hits, finitely many quotient digits, near integers, modular lassos, and p-adic completions remain partial results. The former `N_*` target is now explicitly refuted rather than carried forward.
+or one all-time ordinary chart/refund path with canonical top-boundary closure. Proper-factor hits, finitely many quotient digits, near integers, modular lassos, and p-adic completions remain partial results. The former small ladder target is now explicitly refuted rather than carried forward.
