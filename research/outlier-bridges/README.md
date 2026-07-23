@@ -35,6 +35,36 @@ This is an all-repetition theorem candidate, not a finite scan. It is labeled `P
 
 No nontrivial positive cycle, divergent seed, or Collatz counterexample is claimed.
 
+### `L-8251` / `L-8252` — synchronize nine macros and center the constructive frontier
+
+The verified run-core growth gate needs only nine-run total `44`. Grouping one high run with eight zero runs gives nine exact `B` edges and the ordinary boundary map
+
+```text
+F_s(W)
+ = [9^s(1+9^9 W)-2^(3s)]/2^(3s+36).
+```
+
+Every branch preserves the common prime-to-six residue
+
+```text
+D9    =16^9-9^9
+      =68,332,056,247
+      =7*13*19*37*163*6553,
+
+omega =37,933,813,917 mod D9.
+```
+
+Writing `W=omega+D9*X` produces the centered branch
+
+```text
+2^(3s+36) X'
+ =9^(s+9)X+T_s.
+```
+
+At exactly `s=44`, both the multiplier surplus and the toll become positive. Therefore every defined high branch on `X>=0` strictly increases `X`.
+
+The full constructive target is now one nonnegative ordinary `X` whose deterministic orbit remains in the high dyadic branch cylinders forever. No counterexample seed is claimed.
+
 ## Claims and experiments
 
 | ID | Status | Content |
@@ -43,6 +73,9 @@ No nontrivial positive cycle, divergent seed, or Collatz counterexample is claim
 | `X-8201` | `EMPIRICAL` | Exact finite reconstruction of the identities, valuations, bounds, and two-pulse specialization on the declared corpus. |
 | `T-8202` | `PROPOSED / SOURCE-DEPENDENT` | Excludes single-pulse positive cycles for all repetitions of the two known negative cycles; unique hit is trivial `n=1`. |
 | `X-8202` | `EMPIRICAL` | Exact Matveev-cutoff, continued-fraction, primitive-candidate, and small-case certificate with an independent implementation. |
+| `L-8251` | `PROPOSED` | Exact nine-B synchronizer and maximal common prime-to-six boundary residue. |
+| `L-8252` | `PROPOSED` | Centered high-block quotient; every defined branch `s>=44` has positive toll and strict pointwise growth. |
+| `X-8251` | `EMPIRICAL` | Independent exact reconstruction of the synchronizer, centered quotient, physical replay, and pair law. |
 
 ## Other retained bridges
 
@@ -67,18 +100,24 @@ negative-cycle baseline family:
   open;
 
 pulse/run-core forever-defined positive state:
-  open and constructive.
+  reduced by `L-8251/L-8252` to one nonnegative ordinary centered quotient
+  staying forever in high dyadic branch cylinders; open and constructive.
 ```
 
 ## Read first
 
-1. `claims/T-8202-all-repetition-single-pulse-exclusion.md`
-2. `ALL_REPETITION_SINGLE_PULSE.md`
-3. `../../experiments/X-8202-single-pulse-log-reduction/README.md`
-4. `claims/L-8201-fixed-pulse-cone-resultant-caps.md`
-5. `OUTLIER_BRIDGE_AUDIT.md`
-6. `SOURCE_LEDGER.md`
-7. `SOURCE_LEDGER_ALL_REPETITION.md`
-8. `../../experiments/X-8201-pulse-resultant-caps/README.md`
-9. `../../reports/gpt56-outlier-01/2026-07-23-52-single-pulse-all-repetition.md`
-10. `../../reports/gpt56-outlier-01/2026-07-23-52-outlier-bridge-audit.md`
+1. `claims/L-8251-nine-b-two-place-synchronizer.md`
+2. `claims/L-8252-centered-high-block-expansion.md`
+3. `../../experiments/X-8251-nine-b-synchronizer/README.md`
+4. `SOURCE_LEDGER_SYNCHRONIZER.md`
+5. `claims/T-8202-all-repetition-single-pulse-exclusion.md`
+6. `ALL_REPETITION_SINGLE_PULSE.md`
+7. `../../experiments/X-8202-single-pulse-log-reduction/README.md`
+8. `claims/L-8201-fixed-pulse-cone-resultant-caps.md`
+9. `OUTLIER_BRIDGE_AUDIT.md`
+10. `SOURCE_LEDGER.md`
+11. `SOURCE_LEDGER_ALL_REPETITION.md`
+12. `../../experiments/X-8201-pulse-resultant-caps/README.md`
+13. `../../reports/gpt56-outlier-01/2026-07-23-52-nine-b-synchronizer.md`
+14. `../../reports/gpt56-outlier-01/2026-07-23-52-single-pulse-all-repetition.md`
+15. `../../reports/gpt56-outlier-01/2026-07-23-52-outlier-bridge-audit.md`
