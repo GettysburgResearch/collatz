@@ -2,7 +2,7 @@
 
 **Claim ID:** `Q-8501`  
 **Status:** `OPEN`  
-**Dependencies:** `L-8504`, `L-8505`, `T-8505`--`T-8507`  
+**Dependencies:** `L-8504`--`L-8507`, `T-8505`--`T-8508`  
 **Full-objective role:** a positive solution is an unconditional Collatz counterexample
 
 ## Exact target
@@ -59,6 +59,39 @@ The six-bit value gives the unique next type `j`, the next core is `C'=Y/2^j`, a
 
 No connector inverse, carry tape, future type word, or completed `2`-adic address is input to this map.
 
+## Equivalent top-boundary quotient target
+
+`L-8506` places every legal current core in one of eight explicit ordinary blocks. `L-8507` proves that compatibility with a complete next block then reduces to exactly four residues of one ordinary top quotient:
+
+\[
+\boxed{
+m=\rho_k+2^{11(t+33)}\ell
+\longmapsto
+m'=\sigma_k+3^G\ell,
+}
+\]
+
+where `k` is the following target type, the ternary lift is forced, the four `rho_k` are distinct, and `sigma_k>=0`.
+
+Thus a positive invariant may equivalently be written in either of two exact forms:
+
+```text
+primitive core form:
+  high divisibility + six-bit gate;
+
+top quotient form:
+  one of four residues mod 2^(11(t+33))
+  + exact multiplicative carry update.
+```
+
+From height `3760`, every noncanonical lift `ell>=1` strictly increases the top quotient. From height `3776`, `T-8508` gives
+
+\[
+\boxed{m'>2m.}
+\]
+
+The exceptional case is the canonical lift `ell=0`; it is now an explicitly isolated top-boundary event rather than hidden connector arithmetic.
+
 ## Single-integer certificate
 
 The intrinsic state corresponds to the one physical positive integer
@@ -83,14 +116,15 @@ A valid submission must contain:
 
 1. the explicit integer `n_0` or equivalent intrinsic state;
 2. a finite ordinary rule or inductive invariant proving both decoder gates recur forever;
-3. exact connector and physical tower replay;
-4. proof of positivity at every intermediate state;
-5. reconstruction of every intrinsic valuation/type marker;
-6. the automatic core-growth conclusion
+3. equivalently, an all-time proof that the top quotient lands in one of the four `L-8507` residues at every step;
+4. exact connector and physical tower replay;
+5. proof of positivity at every intermediate state;
+6. reconstruction of every intrinsic valuation/type marker;
+7. the automatic core-growth conclusion
    \[
    C_n>2^{170n}C_0;
    \]
-7. an independent verifier beginning only from the finite integer and rule.
+8. an independent verifier beginning only from the finite integer and rule.
 
 Then `T-8507` gives one explicit positive ordinary Collatz counterexample.
 
@@ -110,6 +144,8 @@ Thus the invariant cannot be a finite-prime multiplicative library, a bounded ca
 
 Alternatively, prove that every finite intrinsic core eventually leaves the decoder domain. Such a theorem would close the entire linear-height quotient-refund escape class.
 
+A particularly sharp negative target is to prove that canonical lifts cannot recur indefinitely and that every noncanonical lift eventually misses all four next residues. No such theorem is currently supplied.
+
 ## Current narrowing
 
 - `L-8502` removes the preloaded-inverse objection.
@@ -117,9 +153,12 @@ Alternatively, prove that every finite intrinsic core eventually leaves the deco
 - `L-8504` removes trusted stage/type metadata and exposes the determinant-one physical marker.
 - `L-8505` turns every connector into one exact `3^G C+1` Syracuse equation.
 - `T-8507` removes all inverse/carry arithmetic from the runtime state.
+- `L-8506` compiles every local state into eight exact ordinary blocks.
+- `L-8507` reduces the complete next-stage compatibility to four residues with one type-independent modulus.
+- `T-8508` proves every noncanonical top lift is uniformly refunded and eventually more than doubles.
 - `T-8506` proves more than 170 bits of primitive-core growth per legal step.
 - `T-8502` shows the completion set has Hausdorff dimension zero.
 - `T-8503` excludes every eventually periodic type tail of minimal period at most `58`.
 - `T-8505` excludes every eventual finite prime support.
 
-The remaining object is one genuinely nonperiodic, fresh-prime-generating, unbounded-state ordinary core orbit satisfying one explicit high binary divisibility and one six-bit gate at every step.
+The remaining object is one genuinely nonperiodic, fresh-prime-generating, top-boundary-carrying ordinary core orbit satisfying one explicit high binary divisibility and one six-bit gate at every step.
