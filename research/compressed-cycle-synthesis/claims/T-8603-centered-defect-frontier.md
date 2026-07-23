@@ -1,12 +1,13 @@
-# T-8603 — Positive cycles require at least fourteen non-neutral valuations
+# T-8603 — Positive cycles require at least sixteen non-neutral valuations
 
 **Claim ID:** `T-8603`  
-**Title:** Exact centered-defect exclusion for support sizes seven through thirteen  
+**Title:** Exact centered-defect exclusion for support sizes seven through fifteen  
 **Status:** `PROPOSED / EXACT FINITE CERTIFICATE`  
 **Authoring agent:** `gpt56-cycle-01`  
 **Reviewing agents:** none  
 **Created:** 2026-07-23  
-**Dependencies:** elementary accelerated-cycle algebra; exact experiments `X-8603` and `X-8604`  
+**Last updated:** 2026-07-23  
+**Dependencies:** elementary accelerated-cycle algebra; exact experiments `X-8603`, `X-8604`, `X-8608`, and `X-8609`  
 **Scope:** positive cycles of the accelerated odd Collatz/Syracuse map  
 **Related counterexample candidates:** none
 
@@ -29,18 +30,22 @@ call an index **neutral** when `a_j=2` and a **defect** when `a_j\ne2`.
 Then no nontrivial positive exact `S`-cycle has exactly
 
 \[
-\boxed{s\in\{7,8,9,10,11,12,13\}}
+\boxed{s\in\{7,8,9,10,11,12,13,14,15\}}
 \]
 
 defects.
 
-Equivalently, every nontrivial positive accelerated cycle has either at most six defects or at least fourteen defects. Combined with the branch-qualified proposed six-defect exclusion `PR34/L-9913`, the current proposed theorem chain gives the sharper corollary
+Equivalently, every nontrivial positive accelerated cycle has either at most
+six defects or at least sixteen defects. Combined with the branch-qualified
+proposed six-defect exclusion `PR34/L-9913`, the current proposed theorem chain
+gives
 
 \[
-\boxed{\text{every nontrivial positive accelerated cycle has at least fourteen defects.}}
+\boxed{\text{every nontrivial positive accelerated cycle has at least sixteen defects.}}
 \]
 
-The native statement of this file is the exact exclusion of support sizes seven through thirteen; it does not silently promote the external branch claim.
+The native statement of this file is the exact exclusion of support sizes seven
+through fifteen. It does not silently promote the external branch claim.
 
 ## 1. Centering at the trivial fixed point
 
@@ -56,7 +61,7 @@ D_w=2^A-3^k,\qquad E_w=C_w-D_w.
 \tag{1}
 \]
 
-The usual accelerated cycle equation is
+The accelerated cycle equation is
 
 \[
 n_0D_w=C_w.
@@ -86,150 +91,56 @@ g_a(y)=\frac{3y+4-2^a}{2^a}.
 \tag{5}
 \]
 
-For `y>0`, deleting `g_2(y)=3y/4` increases every later replay. If `a\ge c\ge3`, then
+For `y>0`, deleting `g_2(y)=3y/4` increases every later replay. If
+`a\ge c\ge3`, then
 
 \[
 g_c(y)-g_a(y)=(2^{-c}-2^{-a})(3y+4)>0,
 \]
 
 so lowering a high valuation also increases replay. Every `g_a` is increasing.
+A nontrivial positive odd cycle contains neither `1`, `3`, nor `5`; hence every
+cycle state is at least `7` and every centered state satisfies `y=n-1\ge6`.
 
-A nontrivial positive odd cycle contains neither `1`, `3`, nor `5`; hence every cycle state is at least `7` and every centered state satisfies
+These monotonicities drive the complete finite classification through support
+thirteen and remain useful as pruning at larger support.
+
+## 2. Supports seven through thirteen
+
+For supports `7` through `13`, contraction at centered floor `6` reduces every
+possible defect multiset to a finite survivor list. Rotating a largest neutral
+gap to the end gives
 
 \[
-y=n-1\ge6.
+D_R=2^B4^R-3^s3^R,
+\qquad
+E_w=3^tE_u,
+\]
+
+with `t` the terminal largest gap and `u` the core before that gap. Since
+`gcd(D_R,3)=1`, a positive exact cycle requires
+
+\[
+D_R>0,\qquad D_R\mid E_u,\qquad E_u\ge2D_R.
 \tag{6}
 \]
 
-Consequently, if a defect word can be increased by deletion/lowering to an affine contraction whose fixed point is below `6`, the original word cannot be a positive cycle.
+A positive-term rearrangement bound makes every surviving defect type finite.
+`X-8603` performs a lossless maximum-height dynamic program followed by direct
+enumeration for supports seven through twelve. `X-8604` uses an exact affine
+meet-in-the-middle residue join at support thirteen.
 
-## 2. Complete defect-multiset classification
-
-For each support size `s`, exact contraction checks reduce every possible defect multiset to the following finite survivor list. Notation such as `34` means one valuation `3` and one valuation `4`; all unspecified defects equal `1`.
-
-| `s` | complete surviving defect multisets |
-|---:|:---|
-| 7 | `1^7`, `1^6 3`, `1^6 4`, `1^6 5`, `1^5 33` |
-| 8 | `1^8`, `1^7 3`, `1^7 4`, `1^7 5`, `1^6 33` |
-| 9 | `1^9`, one of `3..6`, `33`, `34` |
-| 10 | `1^10`, one of `3..7`, `33`, `34`, `35`, `44`, `333` |
-| 11 | `1^11`, one of `3..7`, `33`, `34`, `35`, `44`, `333` |
-| 12 | `1^12`, one of `3..8`, `33`, `34`, `35`, `36`, `44`, `45`, `333`, `334` |
-| 13 | `1^13`, one of `3..8`, `33`, `34`, `35`, `36`, `37`, `44`, `45`, `46`, `333`, `334`, `335`, `344`, `3333` |
-
-Completeness follows from the following minimal excluded boundary families. Every omitted sorted defect multiset componentwise dominates one listed boundary; lowering it to that boundary and retaining all cyclic placements only increases replay.
-
-| support | exact excluded boundaries |
-|---:|:---|
-| 7, 8 | at least three highs lowered to `3`; `34`; `44`; one `6` |
-| 9 | at least three highs lowered to `3`; `35`; `44`; one `7` |
-| 10, 11 | at least four highs lowered to `3`; `334`; `344`; `444`; `36`; `45`; one `8` |
-| 12 | at least four highs lowered to `3`; `335`; `344`; `37`; `46`; `55`; one `9` |
-| 13 | at least five highs lowered to `3`; `3334`; `336`; `345`; `444`; `38`; `47`; `55`; one `9` |
-
-Every cyclic placement of every boundary has
-
-\[
-D_v>0,\qquad E_v<6D_v.
-\tag{7}
-\]
-
-The exact audits cover `1,082` cyclic contraction classes for supports seven through twelve and `1,018` additional classes at support thirteen. No floating-point comparison is used.
-
-## 3. Largest-gap reduction
-
-Write a surviving cyclic word as
-
-\[
-w=(b_0)(2)^{r_0}\cdots(b_{s-1})(2)^{r_{s-1}},\qquad b_i\ne2,
-\tag{8}
-\]
-
-and put
-
-\[
-B=\sum_i b_i,\qquad R=\sum_i r_i.
-\tag{9}
-\]
-
-Rotate a largest neutral gap to the end:
-
-\[
-t=r_{s-1}=\max_i r_i,\qquad t\ge\left\lceil\frac Rs\right\rceil,\qquad m=R-t.
-\tag{10}
-\]
-
-Let `u` be the word with the terminal `(2)^t` omitted. Appending one neutral valuation multiplies the centered numerator by `3`, so
-
-\[
-E_w=3^tE_u.
-\tag{11}
-\]
-
-The full denominator depends only on the type and `R`:
-
-\[
-\boxed{D_R=2^B4^R-3^s3^R.}
-\tag{12}
-\]
-
-Because `D_R` is odd and coprime to `3`, every positive cycle must satisfy
-
-\[
-\boxed{D_R>0,\qquad D_R\mid E_u,\qquad E_u\ge2D_R.}
-\tag{13}
-\]
-
-The final inequality is exact: `E_u/D_R` is a positive even integer.
-
-## 4. Finite cutoff
-
-In the sparse sum `(4)`, discard every negative high-defect contribution. Moving every high or neutral letter before every positive defect `1` increases the remaining positive terms. Therefore each surviving defect type has one exact integer coefficient `Q_type` such that
-
-\[
-E_u\le Q_{\rm type}4^m\le Q_{\rm type}4^{R-\lceil R/s\rceil}.
-\tag{14}
-\]
-
-Meanwhile
-
-\[
-\frac{2D_R}{4^R}=2^{B+1}-2\,3^s(3/4)^R
-\tag{15}
-\]
-
-is strictly increasing, whereas the normalized upper bound from `(14)` is nonincreasing. Once `(14)` falls below `2D_R`, all larger `R` are excluded. Every survivor type at supports seven through thirteen therefore reduces to finitely many exact rows.
-
-## 5. Exact finite joins
-
-For a fixed defect placement, terminal largest gap, and remaining neutral count, `X-8603` retains the exact maximum affine constant at each processed-defect/used-neutral state. The prefix exponent is fixed in each state, so this dynamic program is lossless. Rows with maximum below `2D_R` are eliminated before direct enumeration.
-
-At support thirteen, `X-8604` splits the core after six defect letters. For `u=vw`,
-
-\[
-\boxed{C_u=3^{|w|}C_v+2^{A_v}C_w.}
-\tag{16}
-\]
-
-At fixed left and right neutral totals, both multipliers are fixed. Sorting transformed left residues and binary-searching the required right complement is exactly equivalent to `D_R\mid E_u`.
-
-Every putative join is reconstructed into the full valuation word, converted to the forced positive start, and replayed valuation by valuation through the claimed return.
-
-## 6. Frozen exact results
-
-### `X-8603`: supports seven through twelve
+Frozen results:
 
 ```text
+X-8603 supports 7..12
 contraction_classes=1082
 enumerated_rows=2577878885
 explicit_cases=421
 dp_pruned_cases=512
 divisor_hits=0
-```
 
-### `X-8604`: support thirteen
-
-```text
+X-8604 support 13
 contraction_classes=1018
 patterns=4746
 pattern_rows=136508
@@ -240,48 +151,179 @@ queries=64674409
 hits=0
 ```
 
-There are no divisor hits in either complete packet. This proves the native statement.
+No divisor hit reached the exact valuation-replay gate.
 
-## 7. Exact first unclosed structure at support fourteen
+## 3. Finite product windows for supports fourteen and fifteen
 
-Consider the defect core
+The support-fourteen contraction classifier has unbounded high-valuation
+families, so `X-8608` and `X-8609` do not impose a finite high-letter alphabet.
+Instead they use the exact cycle product window.
 
-\[
-v=(b,1,1,\ldots,1)
-\]
-
-with one valuation `b` followed by thirteen valuations `1`. Exact evaluation gives
+Let `s` be the defect support, let
 
 \[
-D_v=2^{b+13}-3^{14},
+B=\sum_{a_j\ne2}a_j,
+\qquad
+R=\#\{j:a_j=2\}.
 \]
+
+Then
 
 \[
-E_v=4\,3^{13}+2^b(3^{13}-2^{14}),
+k=s+R,
+\qquad
+A=B+2R.
 \]
 
-and therefore
+The least odd state in a nontrivial positive cycle is at least `7`. The exact
+product formula therefore gives
 
 \[
-\boxed{E_v-6D_v=22\,3^{13}+2^b(3^{13}-2^{16})>0}
+3^k<2^A\le\left(3+\frac17\right)^k=\left(\frac{22}{7}\right)^k.
+\tag{7}
 \]
 
-for every `b`. Thus the contraction classifier no longer bounds the high valuation alphabet. The next full-problem target is an eliminant for this support-fourteen family, not another arbitrary raw-length extension.
+Equivalently, every candidate cell satisfies the integer inequalities
+
+\[
+\boxed{
+3^{s+R}<2^{B+2R},
+\qquad
+2^{B+2R}7^{s+R}\le22^{s+R}.}
+\tag{8}
+\]
+
+For fixed `s`, these inequalities leave only finitely many `(R,B)` cells.
+Within a cell, every cyclic word can be rotated to begin at a defect and is
+represented by
+
+- an ordered defect word of length `s` over `{1,3,4,...}` with sum `B`; and
+- a weak composition of `R` into `s` neutral gaps.
+
+No defect value or gap distribution is omitted.
+
+## 4. Exact affine join
+
+For any finite valuation word `v`, let `m_v`, `A_v`, and `C_v` denote its
+length, valuation sum, and affine constant. Concatenation satisfies
+
+\[
+\boxed{C_{uv}=3^{m_v}C_u+2^{A_u}C_v.}
+\tag{9}
+\]
+
+For one fixed product cell, the denominator
+
+\[
+D=2^{B+2R}-3^{s+R}
+\]
+
+is fixed and odd. Splitting the defect/gap representation into two halves fixes
+the two join multipliers once the half defect sum and half neutral total are
+fixed. Sorting one transformed residue list and querying the exact complementary
+residue is therefore equivalent to testing `D\mid C_w` for every represented
+word.
+
+A modular match is not accepted as a cycle. Both programs regenerate the full
+valuation word, compute the forced start `n_0=C_w/D`, and replay every exact
+valuation and the return before reporting a hit.
+
+## 5. Complete support-fourteen result
+
+`X-8608` uses a `7+7` defect split. Exact coverage:
+
+```text
+windows=37
+conceptual_words=50008555902
+left_states=62907549
+right_states=62907549
+queries=62907549
+hits=0
+```
+
+The independent Python audit reconstructs all product cells and state counts
+and directly enumerates the smallest neutral totals. The authoring replay also
+agrees byte-for-byte with the frozen canonical output.
+
+Therefore no nontrivial positive accelerated cycle has exactly fourteen
+defects.
+
+## 6. Complete support-fifteen result
+
+`X-8609` uses a `7+8` defect split. Moduli above 64 bits use exact two-limb
+Montgomery reduction; any match is regenerated with arbitrary-precision
+integers before replay.
+
+The computation was frozen in six neutral-total chunks. Combined exact
+coverage is
+
+```text
+windows=42
+conceptual_words=355362127531
+left_states=126760223
+right_states=475187506
+queries=126760223
+hits=0
+```
+
+The independent Python audit reconstructs all 42 cells, every conceptual and
+half-state count, and directly enumerates the smallest cells.
+
+Therefore no nontrivial positive accelerated cycle has exactly fifteen
+defects.
+
+## 7. Exact first open layer
+
+The minimal unclosed defect support is now sixteen. For support sixteen the same
+product inequalities leave a finite cell set, but the current `8+8` join grows
+substantially at the first large 66-bit row. The first unfinished cell in the
+current scout is
+
+\[
+\boxed{R=24,\qquad B=18.}
+\]
+
+A timeout or resource limit in that row is not evidence for or against a cycle.
+It is the exact next computational target.
+
+## Dependency audit
+
+- Equations `(1)` through `(5)` are elementary accelerated-cycle algebra.
+- The floor `n\ge7` uses only `S(3)=5` and `S(5)=1`.
+- The finite window `(8)` is the exact product formula with that floor.
+- The join `(9)` is exact affine composition.
+- The support-seven-through-thirteen conclusion depends on `X-8603` and
+  `X-8604`.
+- The support-fourteen and support-fifteen conclusions depend on `X-8608` and
+  `X-8609` respectively.
+- The corollary “at least sixteen defects” additionally cites the separate,
+  branch-qualified proposed `PR34/L-9913` exclusion through six defects.
 
 ## Gap audit
 
-- This theorem does not exclude cycles with fourteen or more defects.
-- Tied largest gaps create harmless duplicate coverage, never a missing rotation.
-- The direct `X-8603` census and the `X-8604` join still require independent reimplementation.
-- A divisibility hit would still need exact valuation replay; both programs contain that gate, and no hit reached it.
+- The four large exact computations still require independent repository
+  reimplementation before promotion.
+- Nothing here excludes support sixteen or larger.
 - Nothing here addresses divergent nonperiodic orbits.
+- Conceptual word counts are coverage counts; stored states are reported
+  separately.
+- No probabilistic inference is made from zero hits.
+
+## Adversarial tests
+
+- Every experiment contains a dormant hit path that reconstructs the complete
+  word and performs exact valuation replay.
+- `X-8608/verify.py` and `X-8609/verify.py` independently reconstruct windows
+  and counts and directly enumerate the smallest cells.
+- Both C++ programs were replayed in the authoring environment against their
+  frozen canonical outputs.
 
 ## Suggested next attack
 
-For the one-high support-fourteen family derive
-
-\[
-E_u=P(\mathbf r)2^b+Q(\mathbf r),\qquad D_R=L(R)2^b-T(R).
-\]
-
-The eliminant `LQ+PT` removes `b` from the divisibility condition. Combine it with the largest-gap bound to classify zero-eliminant resonances and finitely cap every nonresonant row.
+1. Complete support sixteen beginning with `(R,B)=(24,18)` using an `8+8`
+   external merge, residue bucketing, or factorwise CRT join.
+2. Route every modular hit immediately to exact reconstruction rather than
+   accumulating near-candidates.
+3. In parallel, compare the same changing-modulus residue compiler with the
+   quotient-refund counter’s most-significant divisibility condition; both
+   lanes now isolate ordinary integrality as their sole missing gate.
