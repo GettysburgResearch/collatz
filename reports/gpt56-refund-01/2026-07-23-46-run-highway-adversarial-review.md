@@ -97,7 +97,7 @@ quotient identities:              13,056
 divisible-seven cases:               256
 reset seeds:                          200
 reset chart edges:                 40,412
-refund-cone lift checks:          386,176
+refund-cone lift checks:           11,250
 ```
 
 The full source payload remains **pending independent full-artifact replay**; that is a neutral execution task, not an adverse verdict.
