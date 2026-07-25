@@ -1477,3 +1477,316 @@ the number of additional forced exponent-$1$ steps over L-9912.3(2).
 ---
 
 *Authored by fable-02-p11, 2026-07-25. Status `PROPOSED`; awaiting adversarial review.*
+
+---
+
+## Verification note (fable-02-v17, 2026-07-25)
+
+**Verdict: PASS.** Status upgraded `PROPOSED` → `PROVED`. Every mathematical step of
+L-9917.1–.6 was reconstructed independently from NOTATION.md plus the inline derivations,
+and every numerical claim was recomputed from the *statements alone* with my own scripts
+(exact `Fraction`, cleared integers, and 400-digit `Decimal`), without reading the file's
+code first. **My elimination set and $m_0 = 196$ match the file exactly.** No substantive
+defect was found; the items below are documentation-level observations only.
+
+Scripts:
+`/tmp/claude-0/-home-user-collatz/114bdecf-6016-53ed-8de1-7dbb35adc114/scratchpad/v17_a.py`
+(windows/$\mathcal{E}$/$m_0$, three implementations), `v17_b.py` (razor-thin margins, tail,
+envelope), `v17_c.py` (full scans for $m_0$, $R \ge 4$, $m_0(B)$), `v17_d.py` (new
+adversarial tests), `v17_blocks.py` (embedded-block re-runner). Status: `PROVED` per
+README §7 — *not* `INDEPENDENTLY_VERIFIED`.
+
+### V0 — headline results
+
+| item | file | fable-02-v17 (independent) | agree |
+|---|---|---|---|
+| $\mathcal{E} = \{m : W^*(m)=\varnothing\}$ | 46 values, $\max = 171$ | 46 values, $\max = 171$, identical list | **yes, exactly** |
+| $m_0 = \min\{m : R(m)\ge2\}$ | $196$ | $196$ (four independent routes) | **yes** |
+| $\{5,10,13,15,17,20\}$ not eliminated | singletons $\{8\},\{16\},\{21\},\{24\},\{27\},\{32\}$ | identical | **yes** |
+| least $m$ with $R(m) \ge 4$ | $12\,680$ | $12\,680$ (full scan from $m=1$) | **yes** |
+| $m_0(B)$ table | $13,71,133,196,258,825,3156,31506$ | identical (full scans) | **yes** |
+| embedded code blocks | "all ten pairs match" | 10/10 match byte-for-byte | **yes** |
+
+My set difference against the file's list is empty in **both** directions:
+`in mine not file: []`, `in file not mine: []`.
+
+### V1 — Step 1a (distinctness), the author's flagged weak point: **CORRECT**
+
+Reconstructed independently. The claim is that a periodic orbit of a *function* has
+exactly as many distinct elements as its least period. Proof I verified line by line:
+
+1. Suppose $x_i = x_j$, $1 \le i < j \le m$, $p := j-i \in [1,m-1]$. Since $x_{n+t} = S^t(x_n)$
+   for all $n$ and $t \ge 0$ (this is what "orbit" means, and it is where *$S$ being a
+   function* is spent — a relation would not give it), $x_{i+p+t} = S^t(x_{i+p}) = S^t(x_i) = x_{i+t}$
+   for all $t \ge 0$. **Forward** shift-invariance only.
+2. The upgrade to the bi-infinite/cyclic sequence is the step the author flagged, and it is
+   sound: for arbitrary $k \in \mathbb{Z}$ take $t := (k-i) \bmod m \in [0, m-1]$, which is
+   $\ge 0$ (legitimate because $m \ge 1$), so $i+t \equiv k$ and $i+t+p \equiv k+p \pmod m$;
+   the $m$-periodic index convention then gives $x_{k+p} = x_{i+t+p} = x_{i+t} = x_k$.
+3. $\{p \in \mathbb{Z} : x_{k+p} = x_k\ \forall k\}$ is a subgroup of $\mathbb{Z}$ (I checked
+   closure under subtraction directly: $x_{k+p-q} = x_{(k-q)+p} = x_{k-q} = x_k$), nonzero,
+   hence $= m\mathbb{Z}$ with $m$ its least positive element by hypothesis (D-9908). So
+   $m \mid p$, contradicting $1 \le p \le m-1$.
+
+Answer to the probe "could a cycle revisit a value without the period being shorter?" —
+**no**, and precisely because $S$ is a function: a revisit at distance $p$ propagates
+forward forever, and periodicity of the index convention converts that into a genuine
+period. $m = 1$ is vacuous. I found no way to weaken or break this step.
+
+**It is load-bearing, not decorative.** New test (`v17_d.py` §A): the multiset
+$\{7,7,7,7,7\}$ has $\prod(3+1/x) = 5153632/16807 > 100096/351 = P(5)$, so without
+distinctness L-9917.2 is *false*. Conversely, over 3000 random sets of $m \le 25$ distinct
+odd integers $\ge B$ ($B \in \{1,3,5,7,9,21\}$), $\prod(3+1/x_i) \le P_B(m)$ held with **0
+failures**, and equality is attained exactly on the consecutive set
+$\{B, B+2, \dots, B+2(m-1)\}$ — confirming the bound is sharp for the relaxed problem and
+that L-9917.2 has no slack to lose.
+
+I also brute-forced every positive $S$-cycle reachable from odd $x_0 < 200\,000$: only
+$(1)$, with least period $1$ and $1$ distinct element — consistent with V1.
+
+### V2 — the $195/196$ seam: **no gap, no double counting**
+
+$[1,195]$ is settled by exhaustive exact evaluation; $[196,\infty)$ by proof. $195$ and
+$196$ are consecutive integers, so the two ranges partition $\mathbb{Z}_{\ge 1}$ with
+neither overlap in the *logical* sense nor omission. The tail proof I re-derived:
+
+- $R(m+1)/R(m) = (22+6m)/(21+6m) > 1$ for every $m \ge 0$, so $R$ is **strictly**
+  increasing and $\{m : R(m) \ge 2\} = [m_0,\infty)$ — I verified factorwise positivity
+  symbolically and for $j < 5000$ by exact `Fraction`.
+- $\mathrm{Wd}(m) \ge 1 \Rightarrow W^*(m) \ne \varnothing$: the half-open interval
+  $(\alpha, \alpha+L]$ with $L \ge 1$ contains $\lfloor\alpha\rfloor + 1$, since
+  $\alpha < \lfloor\alpha\rfloor+1 \le \alpha+1 \le \alpha+L$. Correct.
+
+Belt-and-braces: I ran the exact window computation over $1 \le m \le 2000$ (the file only
+went to $400$). Empty windows found: **exactly the 46 listed values, none in $[172,2000]$**;
+and $R(m) \ge 2$ held for every $m \in [196,2000]$ with no exception. The file's T1 range
+$[1,400]$ overlaps the proved tail $[196,400]$ — that is redundancy confirming the proof,
+not double counting, since the *claim* $\mathcal{E}$ is a set, not a count.
+
+### V3 — the three razor-thin margins, re-decided by three exact routes
+
+Each decided by (i) exact `Fraction`, (ii) the raw integer difference $2^{\kappa}D(m)-N(m)$
+(resp. $N(m) - 2\cdot3^mD(m)$), and (iii) 400-digit `Decimal`. All three agree everywhere.
+
+| $m$ | quantity | my exact value | decision | file |
+|---|---|---|---|---|
+| $62$ | $2^{99}D(62)/N(62)$ | $1.000029076052\ldots$ ($>1$) | $W^*=\varnothing$ | $1.0000290\ldots$ ✓ |
+| $171$ | $2^{272}D(171)/N(171)$ | $1.001777194123\ldots$ ($>1$) | $W^*=\varnothing$ | $1.0017771\ldots$ ✓ |
+| $195$ | $N(195)/(2\cdot3^{195}D(195))$ | $0.9999345217792532\ldots$ ($<1$) | $R(195)<2$ | $0.99993452\ldots$ ✓ |
+| $196$ | $N(196)/(2\cdot3^{196}D(196))$ | $1.0007740973642904\ldots$ ($\ge1$) | $R(196)\ge2$ | $1.00077409\ldots$ ✓ |
+
+Digit counts also match the file: $521$ resp. $524$ digits on both sides at $m=195,196$.
+
+**The file's warning about floating point is understated, and I confirm it empirically.**
+A naive `float(2**kappa * D) / float(N)` **overflows to `nan`** at $m = 142, 171, 195, 196$
+— a float route does not merely misclassify, it produces no answer at all. At $m = 62$ the
+float route happens to survive ($1.0000290760521042$) but with a margin of $2.9\times10^{-5}$,
+i.e. only ~5 significant digits of headroom over an accumulated-rounding budget that a
+less careful implementation would exceed. Exactness is mandatory, as claimed.
+
+### V4 — Step 5.2 at $m = 1, 2$ (and $3$), by hand and exactly
+
+| $m$ | $\sum_{j<m}u_j$ (exact) | lower integral $\frac16\ln\frac{6m+21}{21}$ | upper $\frac1{21}+\frac16\ln\frac{6m+15}{21}$ | $\ln R(m)$ |
+|---|---|---|---|---|
+| $1$ | $1/21 = 0.04761905$ | $0.04188574$ | $0.04761905$ (**equality**) | $0.04652002$ |
+| $2$ | $16/189 = 0.08465608$ | $0.07533085$ | $0.08950479$ | $0.08288766$ |
+| $3$ | $239/2079 = 0.11495911$ | $0.10317320$ | $0.12294990$ | $0.11274062$ |
+
+The $m=1$ degeneracy is real and harmless exactly as the author says: the sum-vs-integral
+step is an *equality* there ($\int_0^0 g = 0$), and strictness of the final bound comes
+from $\ln(1+u) < u$: $\ln R(1) = \ln(22/21) = 0.0465200\ldots < 1/21 = 0.0476190\ldots$.
+Both the lower ($\ln R > \sum u_j - \frac12\sum u_j^2$) and upper chains hold at $m=1,2,3$.
+I also re-derived the constants: $\sum_{j\ge0}u_j^2 \le \frac1{441}+\int_0^\infty g^2 = \frac{2}{882}+\frac{7}{882} = \frac1{98}$ ✓,
+$\frac{1}{196\ln2} = 0.0073606890 < 0.0073607$ ✓, $\frac{1}{21\ln2} = 0.0686997639 < 0.0686998$ ✓,
+$\frac16\log_2\frac27 = -0.3012258203$ ✓ (so the uniform lower constant is
+$-0.3085865 > -0.3087$ ✓), and $\frac{2m+5}{7}\le m \iff m \ge 1$ ✓.
+
+### V5 — L-9917.4 asymptotics: envelope to $m = 2000$, and the $\Gamma$ constant
+
+`v17_b.py`: **0 violations** of the sharp two-sided envelope and **0 violations** of the
+uniform envelope $\frac16\log_2 m - 0.3087 < \mathrm{Wd}(m) < \frac16\log_2 m + 0.0687$
+over $1 \le m \le 2000$. The tightest point in both directions is $m = 1$ (upper slack
+$0.001586$, lower slack $0.014047$) — the constants are essentially optimal for the stated
+form, and there is no large-$m$ drift. I independently confirm
+$R(m) = (11/3)_m/(7/2)_m$ (the factor identity $\frac{22+6j}{21+6j} = \frac{11/3+j}{7/2+j}$
+is exact), $\Gamma(7/2)/\Gamma(11/3) = 0.8283111241\ldots$, the limit
+$\mathrm{Wd}(m) - \frac16\log_2 m \to \log_2 0.8283111\ldots = -0.2717553310\ldots$, and
+that this lies strictly inside the proved corner interval $[-0.3085865, -0.2325260]$
+$\approx[-0.30859,-0.23253]$ as the file states. The $\Gamma$-limit is correctly labelled a
+REMARK and is used in no proof — I checked that no rigorous statement depends on it.
+
+L-9917.4(3) ($|W^*(m)| \in \{\lfloor \mathrm{Wd}\rfloor, \lfloor \mathrm{Wd}\rfloor+1\}$)
+follows from $\#\bigl((\alpha,\beta]\cap\mathbb{Z}\bigr) = \lfloor\beta\rfloor-\lfloor\alpha\rfloor$;
+verified with 0 exceptions for $m \le 400$.
+
+### V6 — L-9917.5 and L-9917.6
+
+- $\mathcal{E}\cap[1,21]$ = the 15 listed values ✓; $\mathcal{E}\cap[22,\infty)$ = the 31
+  listed values ✓; $[22,199]\setminus\mathcal{E}$ has $147$ elements and I checked the
+  file's explicit run-listing term by term (every excluded value $72,77,84,89,96,101,106,113,118,130,142,159,171$
+  sits at the right seam) ✓.
+- **(d) confirmed:** $\{5,10,13,15,17,20\}$ are *not* eliminated by this method; their
+  windows are the singletons the file lists. L-9915's enumeration remains necessary for
+  them, and the file says so explicitly ("**No claim of this file eliminates them.**").
+- L-9917.6: $m_1 \ge 2m - K$ re-derived ($K \ge m_1 + 2(m-m_1)$) ✓; the chain
+  $2m-\lfloor\log_2 P(m)\rfloor \ge 2m - m\log_2\frac{22}{7} = m\log_2\frac{14}{11}$ ✓;
+  first strict beat of $\lceil m\log_2\frac{14}{11}\rceil$ is at $m = 8$ ($4$ vs $3$) —
+  I confirmed by scanning **all** $m \le 400$, so $m=8$ really is the first (the file's T9
+  only sampled rows); $m = 400$ gives $165$ vs $140$ ✓;
+  $2-\log_2 3 = 0.4150374992788439$ ✓ and the ceiling argument
+  ($2^K > 3^m \Rightarrow 2m-K < (2-\log_2 3)m$) is correct.
+
+### V7 — embedded code blocks: **genuine**
+
+I extracted all fenced blocks from the file programmatically (21 total, 10 `python`), wrote
+each to disk, executed it in a fresh interpreter, and compared stdout byte-for-byte with
+the `text` block immediately following:
+
+```text
+total fenced blocks: 21 ; python blocks: 10
+placeholder-looking python blocks: 0
+block 1: OUTPUT MATCHES EXACTLY (826 bytes)
+block 2: OUTPUT MATCHES EXACTLY (255 bytes)
+block 3: OUTPUT MATCHES EXACTLY (1439 bytes)
+block 4: OUTPUT MATCHES EXACTLY (1252 bytes)
+block 5: OUTPUT MATCHES EXACTLY (3308 bytes)
+block 6: OUTPUT MATCHES EXACTLY (277 bytes)
+block 7: OUTPUT MATCHES EXACTLY (137 bytes)
+block 8: OUTPUT MATCHES EXACTLY (440 bytes)
+block 9: OUTPUT MATCHES EXACTLY (711 bytes)
+block 10: OUTPUT MATCHES EXACTLY (1518 bytes)
+
+BLOCKS RUN: 10  FAILURES: []
+```
+
+No block is a stub, ellipsis, or placeholder; all ten are real, runnable, and honest about
+their outputs. **The author's "0 failures" claim in Remaining uncertainty §3 is true.**
+
+### V8 — my own recomputation, side by side
+
+```text
+three implementations agree on all m <= 250
+E (empty windows) for m <= 250, size 46:
+[1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 14, 16, 18, 19, 21, 23, 24, 26, 28, 31, 33, 36, 38, 43, 45,
+ 48, 50, 53, 55, 60, 62, 65, 67, 72, 77, 84, 89, 96, 101, 106, 113, 118, 130, 142, 159, 171]
+max E = 171
+file's claimed set size: 46
+EXACT MATCH with file: True
+in mine not file: []
+in file not mine: []
+
+m_0 = min{m : R(m) >= 2} = 196
+m=194: N(m) <  2*3^m*D(m) ; ratio=0.9990914067
+m=195: N(m) <  2*3^m*D(m) ; digits N=521 rhs=521 ; ratio=0.9999345218
+m=196: N(m) >= 2*3^m*D(m) ; digits N=524 rhs=524 ; ratio=1.0007740974
+m=197: N(m) >= 2*3^m*D(m) ; ratio=1.0016101660
+
+m <= 21 NOT in E: [5, 10, 13, 15, 17, 20]
+  W*(5) = [8]   W*(10) = [16]  W*(13) = [21]
+  W*(15) = [24] W*(17) = [27]  W*(20) = [32]
+
+R strictly increasing on 1..250: True ;  R(1) = 22/21: True
+```
+
+```text
+FULL SCAN from m=1:  m0 = min{m : R(m) >= 2} = 196
+  m=195 certificate: Q(195) - 2*Z(195) = -304399040466394689848797... (negative => R<2), 517 digits
+  m=196 certificate: Q(196) - 2*Z(196) = +428601572013426096759182... (nonneg  => R>=2), 521 digits
+  route agreement at 195: True          (Q=N, Z=3^m*D cross-check)
+  route agreement at 196: True
+FULL SCAN from m=1:  least m with R(m) >= 4 (|W*|>=2 guaranteed) = 12680
+general floor B -> m0(B), full scan from m=1:
+  B=1 -> 13 | B=3 -> 71 | B=5 -> 133 | B=7 -> 196 | B=9 -> 258
+  B=15 -> 447 | B=27 -> 825 | B=51 -> 1581 | B=101 -> 3156 | B=1001 -> 31506
+```
+
+Note my $m_0$ and $R\ge4$ scans start at $m = 1$ and never skip, so they do not rely on the
+file's T2/T7 "start at $m = 12000$ for speed" shortcut (which is itself sound, since T7
+prints the guard flag `R(12000) >= 4 already? False` and $R$ is monotone).
+
+### V9 — audit of the correction flags C1–C4: **all four accurate**
+
+- **C1 — accurate.** $\mathcal{E}\cap[1,40]$ has exactly $23$ elements; the sketch's $15$
+  are all genuinely empty-window; the $8$ omitted are exactly
+  $\{1,2,3,4,6,7,9,12\}$. I independently computed the crude window
+  ($3^m<2^K$, $2^K7^m\le22^m$) to be empty **exactly** on $\{1,2,3,4,6,7,9,12\}$, which is
+  verbatim what L-9912.4(iii) states (`.../L-9912-cycle-exponent-statistics.md`, "empty
+  **exactly** for $m \in \{1,2,3,4,6,7,9,12\}$"). The attribution is correct and the
+  "flagged, not corrected" disposition is the right call.
+- **C2 — accurate.** $m^{1/6}$ is right; $R(m)/m^{1/6} \to 0.8283111241\ldots$ reproduced.
+- **C3 — accurate and important.** Empty windows do stop, last one at $m = 171$, none ever
+  again from $196$ on (and none in $[172,195]$ by computation). Verified independently.
+- **C4 — accurate.** Density of $\mathcal{E}$: $23/40$, $46/200$, $\to 0$; I confirm both
+  counts.
+
+### V10 — dependency, scope, and overclaiming audit
+
+- **No circularity.** `grep -rl "L-9917"` over `research/`, `reports/`, `experiments/`
+  returns only the file itself; L-9905/L-9906/L-9912/L-9915 do not cite it.
+- **Dependency statuses confirmed PROVED**: L-9905, L-9906, L-9912, L-9915.
+- **Quotations checked against source.** L-9915.1's window and its "$W(m)\ne\varnothing$
+  for all $m \ge 15$"; L-9915's Main Theorem "no nontrivial $S$-cycle has $m \le 21$";
+  L-9912.3(1) $m_1 \ge 2m-K$; L-9912.3(2) $m_1 \ge m\log_2\frac{14}{11} > m/3$;
+  L-9912.4(iii)'s empty-crude-window set. All quoted correctly.
+- **Load-bearing content is genuinely re-derived inline.** Steps 1c, 2, 6.1 stand on
+  $S(1)=1$, $S(3)=5$, $S(5)=1$ and one telescoping product; I checked that removing
+  L-9905/L-9906/L-9912/L-9915 entirely would leave L-9917.1–.4 and .6 intact, and would
+  shrink only L-9917.5(4). The Dependency-audit table is honest.
+- **No claimed elimination is uncomputed.** Every $m$ asserted eliminated is in my
+  recomputed $\mathcal{E}$; every certificate pair in T5 re-ran and passed its `assert`;
+  the file never asserts elimination for any $m \notin \mathcal{E}$, and L-9917.5(2) states
+  the non-coverage of $\{5,10,13,15,17,20\}$ explicitly.
+
+### V11 — documentation-level observations (no defect; nothing changed in the claims)
+
+1. *Scope line wording.* "L-9917.1, .2 … are FALSE for the trivial cycle $(1)$" is exact
+   for the **boxed $B=7$** form (there $2^K = 4 > 22/7$). The **general-$B$** form of
+   L-9917.2 is not false for $(1)$: with the admissible floor $B=1$ it reads
+   $3 < 4 \le P_1(1) = 4$, which holds with equality. For the negative cycles the
+   hypothesis "on the positive odd integers" is not met, so nothing is asserted; T4's
+   table states this correctly ("holds vacuously"). Read with T4 the scope line is right;
+   read alone it is slightly stronger than the general-$B$ statement warrants.
+2. *Certificate (a) is definitional.* $2^{\kappa(m)-1} \le 3^m$ is half of the definition
+   of $\kappa(m) = \mathrm{bl}(3^m)$ rather than an extra fact; the other half
+   ($3^m < 2^{\kappa}$) is what makes $\kappa$ admissible and is asserted in T1's code
+   (`assert 2 ** Kmin > three and 2 ** (Kmin - 1) <= three`). No gap — both halves are
+   checked — but "two comparisons" is best read as "one definitional check plus one real
+   comparison (b)".
+3. *L-9917.6(4)'s "first strictly beats at $m=8$"* is stated from T9, which samples rows
+   $\{5,8,10,\dots\}$ and so does not by itself exclude $m=6,7$. I closed that by scanning
+   every $m \le 400$: $m = 8$ is indeed the first. (Both $6$ and $7$ lie in $\mathcal{E}$
+   anyway, so the statement is vacuous there regardless.)
+4. *T3's helper `data()`* accumulates an unused `N`,`D` (with `D *= 21+6j`, the $R$
+   denominator, not the window $D$); the values are never used by the envelope loop, which
+   recomputes from scratch. Cosmetic dead code, no effect on any output.
+
+None of 1–4 affects any claim, certificate, or number. I made no edits to the mathematical
+content of the file.
+
+### V12 — attempts to negate or strengthen
+
+- Tried to break Step 1a by seeking a periodic orbit revisiting a value inside one least
+  period: impossible for a function, and the subgroup argument is airtight (V1).
+- Tried to break L-9917.2 by dropping distinctness (succeeds — confirming it is essential)
+  and by 3000 randomized distinct-set trials (0 failures, equality only on the consecutive
+  set).
+- Tried to find an empty window beyond $171$: none up to $m = 2000$ by exact computation,
+  and none ever, by the monotonicity proof.
+- Tried to find $m$ where the window endpoint is attained ($2^KD(m) = N(m)$), which would
+  make the closed-at-the-top convention matter: none for $m \le 400$ (file's T8, re-run);
+  and even if one existed the "$\le$" convention is the conservative direction, so all
+  eliminations would remain valid.
+- **Strengthening available (offered, not claimed):** the equality case shows $P(m)$ cannot
+  be improved without using more than "distinct odd $\ge 7$". Since $7,9,11,13,17$ all
+  reach $1$, the floor is provably not attained, so $P(m)$ is strictly non-tight for every
+  $m \ge 1$ — but quantifying that requires exactly the raised floor $B$ of the Suggested
+  next attack §1, whose reach is $\Theta(B)$ by L-9917.4(6). The file's own assessment of
+  its ceiling is, in my judgement, correct and honestly stated.
+
+**Confidence: very high** on L-9917.1, .2, .3, .5 and on the exactness/completeness of
+$\mathcal{E}$ and $m_0 = 196$ (elementary arguments plus exact integer arithmetic
+reproduced by independent routes); **high** on L-9917.4 and .6 (the envelope derivation is
+elementary and I re-derived every constant, and the two $\Gamma$/$31.5$ limits are
+correctly quarantined as REMARKs used nowhere).
+
+*Reviewed by fable-02-v17, 2026-07-25. Status `PROPOSED` → `PROVED`.*
