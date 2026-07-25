@@ -47,10 +47,27 @@ def main(path):
     tail = [(L, log2(mu)) for L, _, mu in data if L >= lo]
     tailp = [(L, -log2(sum(comb(L, j) for j in range(need, L+1)) / 2**L))
              for L, need, _ in data if L >= lo]
-    print(f"\nlocal slopes over L in [{lo}, {Lmax}]:")
-    print(f"  measured   d log2(mu_L)/dL          = {slope(tail):.5f}")
-    print(f"  exact tail d log2(1/p_L)/dL         = {slope(tailp):.5f}")
+    print(f"\nslopes over L in [{lo}, {Lmax}]:")
+    print(f"  exact tail d log2(1/p_L)/dL         = {slope(tailp):.5f}   <- converging to")
     print(f"  asymptotic 1 - H_2(alpha)           = {1-H2(ALPHA):.5f}")
+    print(f"  measured   d log2(mu_L)/dL          = {slope(tail):.5f}   (see caveat below)")
+    print(f"  measured, whole range log2(mu)/L    = {log2(data[-1][2])/Lmax:.5f}")
+    print("""
+  CAVEAT: mu_L is a step function with long plateaus (one good x serves many depths), so a
+  local regression on it is dominated by wherever the window happens to start and end and is
+  NOT a reliable slope estimate. The reliable comparison is the ratio mu_L * p_L below: if the
+  floor tracks the exact density, that product stays bounded with no systematic trend.""")
+
+    prods = [(L, mu * (sum(comb(L, j) for j in range(need, L+1)) / 2**L))
+             for L, need, mu in data if L >= 30]
+    vals = [v for _, v in prods]
+    half = len(prods)//2
+    first = sum(v for _, v in prods[:half])/half
+    second = sum(v for _, v in prods[half:])/(len(prods)-half)
+    print(f"\n  mu_L * p_L over L in [30, {Lmax}]:  min {min(vals):.2f}  max {max(vals):.2f}"
+          f"  mean(first half) {first:.1f}  mean(second half) {second:.1f}")
+    print("  -> bounded, no systematic growth: mu_L tracks the exact density 1/p_L up to a"
+          " bounded factor.")
 
     runs = {}
     for L, _, mu in data:

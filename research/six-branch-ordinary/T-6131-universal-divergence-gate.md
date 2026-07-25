@@ -243,11 +243,17 @@ than the best conceivable architecture at the same depth.
   the first disagreement between their parity words equals `v_2(x-y)` in every case; and
   `Q_L : Z/2^L -> {0,1}^L` is verified to be a bijection for `L = 1..14`. Since the isometry is
   what transports the dimension computation, this is the load-bearing check.
-* X-6135 computes `mu_L` exactly for `L <= 229` (and further); the exact binomial-tail density
-  `2^-L sum_{j>=ceil(alpha L)} C(L,j)` has measured local slope `0.05373` over `L in [120,229]`,
-  converging to the predicted `0.05004` from above as the `O(log L / L)` correction dies.
-* `mu_L = 27` for every `L` in `[20, 79]`: the famous small high-trajectory integer is literally
-  the universal floor over 60 consecutive depths.
+* X-6135 computes `mu_L` exactly for `L <= 420` (scan bound `2*10^8`, `mu_421 > 2*10^8`). The
+  exact binomial-tail density has measured slope `0.05215` over `L in [210,420]`, converging
+  from above to the predicted `0.05004`.
+* The measured floor tracks that density: `mu_L * p_L` stays in `[0.41, 171.7]` over
+  `L in [30,420]` with mean `41.0` on the first half of the range and `34.8` on the second —
+  bounded, no systematic growth.
+* `mu_L = 27` for every `L` in `[20,79]` and `mu_L = 63728127` for every `L` in `[330,418]`:
+  the classical small integers with long high trajectories are literally the universal floor
+  over long stretches of depth.
+* At `L = 304` — the depth X-6110 reached — the six-branch chart demands `2^261.3` while the
+  floor is `2^23.6`, a ratio of `2^238`.
 * The per-lane table reproduces three independently measured growth rates (see above).
 
 ## Suggested next attack

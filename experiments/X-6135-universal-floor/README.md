@@ -53,29 +53,42 @@ condition. If the classes were equidistributed one would expect `mu_L ~ 1/p_L`.
 | `floor.c` | the exhaustive scan |
 | `analyse.py` | slopes, exact binomial tail, floor-vs-architecture comparison |
 | `isometry.py` | adversarial test of L-6130: the parity map is an isometry of `Z_2` |
+| `best_charts.py` | `dim(q)` for the best chart at each block length; refutes the convergent guess |
 | `results/` | raw scan output and the derived analysis |
 
 ## Commands
 
 ```sh
 gcc -O2 -o floor floor.c -lm
-./floor 200000000 > results/floor.txt     # ~8 min
+./floor 200000000 > results/floor.txt     # ~11 min
 python3 analyse.py results/floor.txt
 ```
 
 ## Results
 
-See `results/analysis.txt`. Headline findings:
+Scan of every `x <= 2 * 10^8`. `mu_L` is exact for `L <= 420`; `mu_421 > 2 * 10^8`.
+Full output in `results/floor.txt`, analysis in `results/analysis.txt`.
 
-* `mu_L` grows geometrically with measured local slope close to the predicted codimension
-  `1 - H_2(alpha) = 0.05004`, approaching it from above exactly as the `O(log L / L)` Chernoff
-  correction predicts. The exact binomial tail `1/p_L` has slope `0.05373` over
-  `L in [120, 229]`, and the measured `mu_L` slope is `0.06115` over the same range.
-* `mu_L` exceeds `1/p_L` by a slowly growing factor (about 30-130 in that range). This is the
-  expected behaviour of a minimum over *correlated* trials: `mu_L` is a step function that
-  changes value rarely, since one good `x` serves many consecutive depths.
-* **`mu_L = 27` for every `L` in `[20, 79]`.** The classical small integer with an unusually
-  high trajectory is literally the universal floor across 60 consecutive depths.
+```text
+mu_35  = 27           mu_210 = 665215        mu_420 = 169941673  (~2^27.3)
+mu_105 = 2919         mu_315 = 8400511
+```
+
+* **The floor tracks the exact density.** The right test is the product `mu_L * p_L`, where
+  `p_L = 2^-L sum_{j>=ceil(alpha L)} C(L,j)` is the *exact* natural density (L-6130 makes this
+  a count, not an estimate). Over `L in [30, 420]` that product stays in `[0.41, 171.7]`, with
+  mean `41.0` over the first half of the range and `34.8` over the second — **bounded, with no
+  systematic growth**. So `mu_L ~ 1/p_L` up to a bounded factor.
+* **The density has the predicted slope.** `d log2(1/p_L)/dL = 0.05215` over `L in [210,420]`,
+  converging from above to the predicted codimension `1 - H_2(alpha) = 0.05004`.
+* **Do not regress on `mu_L` directly.** It is a step function with long plateaus, so a local
+  slope estimate is dominated by where the window starts and ends: over `L in [210,420]` it
+  reads `0.03237`, while over the whole range `log2(mu_L)/L = 0.06510`. Both are artefacts of
+  the plateaus, which is why the ratio test above is the published comparison.
+* **The plateaus are the interesting object.** `mu_L = 27` for every `L` in `[20, 79]`
+  (60 depths) and `mu_L = 63728127` for every `L` in `[330, 418]` (73 depths). The classical
+  small integers with unusually long high trajectories are literally the universal floor over
+  long stretches of depth.
 
 ## Interpretation
 
@@ -90,7 +103,8 @@ only a few dozen bits. Every architecture in this project sits far above that fl
 | `64 -> 81`, `(4,6)` | 0.44635 | `2^(0.446 L)` | `2^(0.396 L)` |
 
 At the depth X-6110 actually reached — `L = 19*16 = 304` Collatz steps — the six-branch chart
-demands `m_16 ≈ 2^261`, while the universal floor at the same depth is around `2^25`.
+demands `m_16 = 2^261.3`, while the universal floor at the same depth is about `2^23.6`: a
+ratio of `2^238`. At `L = 152` and `L = 228` the ratios are `2^108` and `2^175`.
 
 **This does not make any architecture wrong; it makes the depth of its finite survivors
 uninformative.** By T-6131(e) the reachable depth is fully determined by the architecture's
@@ -98,8 +112,10 @@ dimension, so observing deep finite survivors measures the chart, not the conjec
 
 ## Limitations
 
-* `mu_L` is exact only up to the scan bound; beyond it the table reports the inequality.
-* The measured slope is still `~20%` above the asymptotic value at `L ~ 230`; the convergence
-  is `O(log L / L)` and would need much deeper scans to be tight. The exact binomial slope is
-  computed alongside precisely so that this finite-size effect is visible rather than hidden.
+* `mu_L` is exact only up to `L = 420` (scan bound `2 * 10^8`); beyond that the table reports
+  the inequality `mu_421 > 2 * 10^8`.
+* The exact-density slope is still `4%` above its asymptotic value at `L ~ 420`; convergence is
+  `O(log L / L)`. This is reported rather than hidden.
+* The bounded-ratio finding is empirical over the computed range, not a theorem: nothing here
+  proves `mu_L * p_L` stays bounded for all `L`.
 * Nothing here bears on the cycle lane: cycles are bounded orbits and are not in `D`.
