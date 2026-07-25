@@ -106,6 +106,29 @@ For the supercritical one-density property this says that the foundry target is 
 
 A restricted operator family could still matter only after proving architecture-specific eventual-zero or bounded-least-root information.
 
+## Finite-state foundries cannot produce divergence
+
+`R-7602` closes the most natural restricted foundry class.
+
+If a strictly causal foundry has finite internal state and its unique point `alpha_E` is an ordinary nonnegative integer, then the binary input digits are eventually zero.  The finite controller therefore runs eventually on one repeated zero transition, so its parity output becomes eventually periodic.
+
+One eventually periodic parity tail has one unique `2`-adic realization.  Its orbit state must therefore be fixed by the corresponding parity block and lies on a finite Collatz cycle.
+
+Hence:
+
+```text
+finite-state strictly causal foundry
++ ordinary nonnegative point
+    -> eventual positive cycle;
+
+finite-state uniformly supercritical foundry
+    -> no positive ordinary point.
+```
+
+The second implication follows because a supercritical periodic parity block has negative affine fixed point.
+
+So no finite-state feedback search can produce a divergent ordinary orbit.  A finite-state foundry can only reduce to the finite positive-cycle problem.  Any genuine divergent foundry must retain an unbounded state even after its ordinary input digits become all zero.
+
 ## Exact restricted target
 
 The cleanest live positive target is the PR `#45` / PR `#50` six-branch chart.  Put
@@ -148,6 +171,7 @@ This is a narrower decision problem than Collatz.  Its negative side eliminates 
 | `T-7602` | Supercritical compatible parity schedules can be nonordinary ghosts | `PROPOSED` |
 | `T-7603` | Six-branch restricted-minimum decision reduction | `PROPOSED`, physical implication branch-qualified |
 | `R-7601` | Strictly causal foundry is surjective and preserves the original tail-witness problem | `PROPOSED / ARCHITECTURE REFUTATION` |
+| `R-7602` | Finite-state foundries collapse ordinary points to eventual cycles | `PROPOSED / ARCHITECTURE REFUTATION` |
 | `Q-7601` | Decide boundedness versus escape of the six-branch least roots | `IDEA / GLOBAL BLOCKER` |
 
 ## Repository-wide verdict
@@ -158,7 +182,7 @@ The important distinction is:
 
 - PR `#33` / PR `#44` genuinely cross the extraction boundary **negatively** for one frozen corrected stage class by proving that every compatible completion is nonordinary.
 - PRs `#45`, `#49`, `#51`, and `#19` have exact ordinary state machines and strong consequences **conditional on infinite legality**, but none proves a bounded least-root sequence or supplies one finite forever-defined root.
-- fixed-modulus PDR, prescribed directives, unrestricted causal foundries, and raw or transported stack capacity do not supply the missing quantifier swap.
+- fixed-modulus PDR, prescribed directives, unrestricted or finite-state causal foundries, and raw or transported stack capacity do not supply the missing quantifier swap.
 - the cycle lanes have a different global blocker: complete divisibility by the entire denominator and exact replay.  This packet does not pretend that ordinary-extraction compactness resolves that finite arithmetic obligation.
 
 ## Progress gate
