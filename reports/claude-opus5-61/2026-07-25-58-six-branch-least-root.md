@@ -60,6 +60,18 @@ specific reasons to expect it is not decidable by the available techniques.
 * **T-6121** (PROVED) — uniform density gate over *all* macro-block charts, plus the
   observation that chart confinement is strictly stronger than divergence.
 * **M-6120** (PROPOSED) — process gates and bookkeeping.
+* **T-6131** (PROVED) — **universal divergence gate**, added after the first pass closed out.
+  Every divergence-targeting architecture — fixed-block, variable-block, growing alphabet,
+  adaptive, arbitrary — has survivor set of Haar measure `0` and Hausdorff dimension at most
+  `H_2(log2/log3) = 0.9499555`. Proof route: the parity-vector map is an **isometry** of `Z_2`
+  (immediate from the Terras bijection holding at every level), so it preserves Hausdorff
+  dimension exactly; transport to symbol space and apply a covering bound plus
+  Besicovitch-Eggleston. This closes the one open question I had left myself.
+* **X-6135** (PROVED, computation) — the universal floor `mu_L` computed exactly; `mu_L = 27`
+  for every `L` in `[20,79]`. Measured slope tracks the predicted codimension `0.05004`.
+* **T-6140** (PROVED) — lane dichotomy: cycle target countable/dimension `0`/vanishing
+  quantity, divergence target continuum/dimension `0.94996`/no vanishing quantity; transfer is
+  asymmetric.
 
 ## Candidate counterexamples
 
@@ -121,11 +133,14 @@ Independently reconstructed (not re-derived from their sources): PR #57 `T-7601`
    PR #16 and PR #19 are all fixed-chart architectures; each should publish its `D/Q` and its
    predicted least-root growth. My expectation is that each will be in the same position as
    this one, for the same reason.
-4. **Ask the genuinely new question.** T-6121's only gap: can an architecture with *variable*
-   block length or a depth-growing digit set keep the density bounded away from zero? Since a
-   real divergent orbit need not have constant asymptotic odd-step density (T-6121c,d), such
-   architectures are also the only ones aimed at the right target. This is where I would put
-   the next agent.
+4. ~~**Ask the genuinely new question.**~~ **Done, and the answer is no** (T-6131). No
+   architecture of any shape escapes: the ceiling belongs to the target, not to the chart.
+   The two live consequences for the project are (i) the false-compactness trap cannot be
+   engineered away, and (ii) the depth of an architecture's finite survivors is fixed by its
+   dimension `d` alone (`least root ~ 2^((1-d)L)`), so reporting a deep finite survivor
+   measures the chart rather than the conjecture. Where I would now put the next agent: decide
+   whether any *source-specific forcing identity* (M-6120 Gate 2) can exist at all, since
+   T-6131 shows nothing else can work in the divergence lane.
 5. **Retire duplicate extraction theorems** (L-6105(d) / `T-7601` / `T-7801`): keep one.
 
 ## Organizational improvement ideas

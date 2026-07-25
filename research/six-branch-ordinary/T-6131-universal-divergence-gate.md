@@ -38,15 +38,24 @@ so that `dim_H(Z_2) = 1`. The codimension is
 1 - H_2(alpha) = 0.0500444728116...
 ```
 
-**(d) Universal ceiling.** Let `S` be the all-time survivor set in `Z_2` of *any* architecture
-whose positive-integer survivors are required to have unbounded Collatz orbits. Then
-`S ⊆ D`, so
+**(d) Universal ceiling.** Call an architecture **sound** if every point of its all-time
+survivor set `S ⊆ Z_2` has itinerary of asymptotic odd-density at least `alpha`, i.e.
+`S ⊆ D`. By (a) this costs nothing: the density condition is *necessary* for a positive
+integer to have an unbounded orbit, so intersecting any architecture with `D` discards no
+divergence counterexample. Then for every sound architecture
 
 ```text
-Haar(S) = 0     and     dim_H(S) <= 0.94996.
+Haar(S) = 0     and     dim_H(S) <= dim_H(D) = 0.94996,
 ```
 
-No choice of block length, digit set, alphabet growth, or bookkeeping can raise this ceiling.
+and the whole divergence search space — `D` itself, the largest sound architecture there is —
+already obeys the same bound. No choice of block length, digit set, alphabet growth, or
+bookkeeping can raise this ceiling, because the ceiling belongs to `D`, not to the chart.
+
+Every expanding `(k,q)` macro-block chart is sound: its survivors have odd-density exactly
+`k/q > alpha` (T-6121c). Note the bound applies to the *whole* survivor set, ghosts included —
+the six-branch ghosts of T-6103 have density `12/19 = 0.6316 > alpha` and so lie in `D`,
+even though they are negative rationals that do not diverge.
 
 **(e) Universal floor on least roots.** Define
 
@@ -58,7 +67,9 @@ If `x` is legal for `N` blocks of an expanding `(k,q)` macro-block chart then `x
 The natural density of `{x : k_L(x) >= ceil(alpha L)}` is **exactly**
 `2^-L * sum_{j >= ceil(alpha L)} C(L,j)`, which decays like `2^(-0.05004 L)`; so no
 architecture can have least roots growing slower than about `2^(0.05 L)` per Collatz step,
-and any architecture of dimension `d` has least roots growing like `2^((1-d) L)`.
+and any architecture of dimension `d` has least roots growing like `2^((1-d) L)` — the density
+half of this is exact, the passage to least roots is the equidistribution heuristic of C-6111
+and is labelled as such throughout.
 
 ## Definitions
 
@@ -135,12 +146,17 @@ So `dim_H(D) = dim_H(D') = H_2(alpha)`. Numerically `H_2(alpha) = 0.949955527188
 
 ### (d)
 
-Any architecture whose positive-integer all-time survivors are required to diverge has its
-survivor set contained in the closure of `D` intersected with its own constraints; more
-directly, every positive integer in `S` lies in `D` by (a), and `S` is contained in the
-topological closure of that set, which is still contained in the closed set `D` (`D` is a
-`G_delta` defined by a liminf, and the covering argument in (c) applies to its closure with
-the same bound). Hence the measure and dimension bounds of (b),(c) apply to `S`. `QED`
+Soundness is `S ⊆ D` by definition, so (b) and (c) apply verbatim to `S` (measure and
+Hausdorff dimension are monotone under inclusion). The content is that soundness is free:
+by (a), a positive integer with an unbounded orbit satisfies `liminf k_L/L >= alpha`, so
+`(any architecture) ∩ D` contains every divergence counterexample the architecture contained.
+Hence one may always replace an architecture by its sound part, and `D` itself is the maximal
+sound architecture. `QED`
+
+*Remark on what this does not say.* It is **not** claimed that an arbitrary subset of `Z_2`
+has dimension `<= 0.94996` — that is false. The claim is about architectures that only admit
+divergence candidates. An architecture admitting more is not constrained by this theorem, but
+neither is it targeting divergence.
 
 ### (e)
 
@@ -152,8 +168,11 @@ set whose least element is `mu_{qN}`.
 The density statement is exact rather than heuristic: by L-6130 the set
 `{x : k_L(x) >= m}` is a union of exactly `sum_{j>=m} C(L,j)` residue classes mod `2^L`.
 Chernoff's bound gives `2^-L sum_{j >= alpha L} C(L,j) = 2^(-L(1-H_2(alpha)) + O(log L))`.
-The last claim follows by writing a dimension-`d` architecture's depth-`L` survivor set as
-`2^(dL)` classes mod `2^L`, of density `2^(-(1-d)L)`. `QED`
+For the last claim, a dimension-`d` architecture has depth-`L` survivor set equal to about
+`2^(dL)` classes mod `2^L`, hence of density about `2^(-(1-d)L)`; the *density* statement is
+exact for charts (L-6105(a)), but the passage from density to **least root** assumes the
+classes are equidistributed and is therefore a heuristic, not a theorem — the same heuristic,
+and the same caveat, as C-6111. `QED`
 
 ## Motivation, and what it settles
 
@@ -220,6 +239,10 @@ than the best conceivable architecture at the same depth.
 
 ## Adversarial tests
 
+* **L-6130 tested directly** (`isometry.py`): for 4000 random pairs `x,y < 2^40`, the index of
+  the first disagreement between their parity words equals `v_2(x-y)` in every case; and
+  `Q_L : Z/2^L -> {0,1}^L` is verified to be a bijection for `L = 1..14`. Since the isometry is
+  what transports the dimension computation, this is the load-bearing check.
 * X-6135 computes `mu_L` exactly for `L <= 229` (and further); the exact binomial-tail density
   `2^-L sum_{j>=ceil(alpha L)} C(L,j)` has measured local slope `0.05373` over `L in [120,229]`,
   converging to the predicted `0.05004` from above as the `O(log L / L)` correction dies.

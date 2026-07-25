@@ -52,6 +52,7 @@ condition. If the classes were equidistributed one would expect `mu_L ~ 1/p_L`.
 |---|---|
 | `floor.c` | the exhaustive scan |
 | `analyse.py` | slopes, exact binomial tail, floor-vs-architecture comparison |
+| `isometry.py` | adversarial test of L-6130: the parity map is an isometry of `Z_2` |
 | `results/` | raw scan output and the derived analysis |
 
 ## Commands
