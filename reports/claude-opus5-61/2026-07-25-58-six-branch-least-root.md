@@ -15,7 +15,7 @@ deciding `Q-7601`: whether the least-root sequence `m_N` of the six-branch ratio
 is bounded (giving an explicit ordinary all-time seed, hence a divergent Collatz orbit) or
 tends to infinity.
 
-**Result: no counterexample.** `m_N` is now known exactly for `N <= 15` and increases strictly
+**Result: no counterexample.** `m_N` is now known exactly for `N <= 16` and increases strictly
 at every level, at almost exactly the rate the chart's per-step density predicts. The
 architecture is quantified, not defeated; the decision itself remains open, and I give
 specific reasons to expect it is not decidable by the available techniques.
@@ -40,8 +40,8 @@ specific reasons to expect it is not decidable by the available techniques.
    gate. So no integer has an eventually periodic legal itinerary, and the chart has no
    integer cycle at all.
 5. **Measure the deciding object.** Exact DFS over the lift tree with monotone pruning
-   (L-6105), 320-bit arithmetic, six parallel branches, `1.57e10` nodes at bound `2^256`:
-   `m_1 ... m_15` exact, `m_16 > 2^256`.
+   (L-6105), 320-bit arithmetic, six parallel branches, `9.40e10` nodes at bound `2^266`
+   (plus a confirming `1.57e10`-node run at `2^256`): `m_1 ... m_16` exact, `m_17 > 2^266`.
 
 ## New results
 
@@ -64,8 +64,8 @@ specific reasons to expect it is not decidable by the available techniques.
 ## Candidate counterexamples
 
 None. No `K-####` identifier was created. The strongest positive statement available is the
-negative-directional bound: any all-time seed of this architecture exceeds `2^256`, so any
-physical Collatz seed exceeds `6 * 2^256 ≈ 6.95 * 10^77`.
+negative-directional bound: any all-time seed of this architecture exceeds `2^266`, so any
+physical Collatz seed exceeds `6 * 2^266 ≈ 7.11 * 10^80`.
 
 ## Failed approaches (recorded so they are not repeated)
 
@@ -82,11 +82,11 @@ physical Collatz seed exceeds `6 * 2^256 ≈ 6.95 * 10^77`.
 
 ## Potential errors
 
-* The growth-law fit uses 15 points of a heavy-tailed extreme-value statistic; the observed
-  base `101875` sits about two crude standard errors above the predicted `87381`, and the
-  points are positively correlated by nesting. I report the exponent agreement (1.35%) rather
-  than the base agreement (16.6%) because the former is the meaningful comparison, but a
-  reviewer should know both numbers. They do not affect any proved claim.
+* The growth-law fit uses 16 points of a heavy-tailed extreme-value statistic; the observed
+  base `99380` sits above the predicted `87381` by well under two crude standard errors, and
+  the points are positively correlated by nesting. I report the exponent agreement (1.13%)
+  rather than the base agreement (13.7%) because the former is the meaningful comparison, but
+  a reviewer should know both numbers. They do not affect any proved claim.
 * `X-6110` depends on `lr.c` being correct. Mitigations: an independent arbitrary-precision
   Python implementation agreeing on `m_1..m_6`; a structurally different brute-force scan
   agreeing on `m_1, m_2` and finding nothing below `2^40` at depth 3; forward re-verification

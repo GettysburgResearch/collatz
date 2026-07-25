@@ -41,7 +41,8 @@ print(f"  relative error            = {abs(math.exp(slope)-2**19/6)/(2**19/6)*10
 print(f"  monotone nondecreasing    = {all(rows[i][1]<=rows[i+1][1] for i in range(len(rows)-1))}")
 print(f"  strictly increasing       = {all(rows[i][1]< rows[i+1][1] for i in range(len(rows)-1))}")
 print()
-m15=best[15][0]
-print(f"m_15 = {m15}")
-print(f"physical Collatz lower bound  n = 6*m_15 - 5 = {6*m15-5}")
-print(f"  (m_15 has {len(str(m15))} decimal digits, ~2^{math.log2(m15):.1f})")
+D=max(best); mD=best[D][0]
+print(f"deepest exact level: N = {D}")
+print(f"m_{D} = {mD}")
+print(f"  ({len(str(mD))} decimal digits, ~2^{math.log2(mD):.1f})")
+print(f"physical Collatz seed of that depth: n = 6*m_{D} - 5 = {6*mD-5}")

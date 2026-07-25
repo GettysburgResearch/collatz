@@ -30,8 +30,8 @@ sequence `m_N`.
 | [T-6102](T-6102-branch-valuation-rigidity.md) | PROVED | The branch is not a choice: `v_2(x) = 15-3i`. Legal valuations are `{0,3,6,9,12,15}`; the `1010` defect sits after `v_2(x)/3` blocks. All 36 branch transitions occur, so no finite-state obstruction exists. |
 | [T-6103](T-6103-ghost-window-and-no-integer-cycle.md) | PROVED | Native ghost window: every periodic itinerary is realised by a rational in `[-57.786, -32.067]`. **No integer, positive or negative, has an eventually periodic legal itinerary**; the chart has no integer cycle. |
 | [L-6105](L-6105-survivor-class-structure.md) | PROVED | `S_N` is exactly `6^N` classes mod `2^19N`; the lift tree is 6-ary with monotone least representatives (the search algorithm's correctness). Extraction ⟺ `(m_N)` bounded ⟺ eventually constant. |
-| [X-6110](X-6110-least-root-certificate.md) | PROVED (computation) | `m_1 ... m_15` computed exactly and re-verified three ways; `m_16 > 2^256`. Strictly increasing at every level. Any all-time seed `> 2^256`; any physical seed `> 6*2^256 ≈ 6.9e77`. |
-| [C-6111](C-6111-least-root-divergence.md) | EMPIRICAL | `m_N -> infinity`: the chart is ordinarily empty. Measured growth `101875^N` vs predicted `(Q/|A|)^N = 87381^N`, exponent agreeing to 1.35%. **Not proved.** |
+| [X-6110](X-6110-least-root-certificate.md) | PROVED (computation) | `m_1 ... m_16` computed exactly and re-verified three ways; `m_17 > 2^266`. Strictly increasing at every level. Any all-time seed `> 2^266`; any physical seed `> 6*2^266 ≈ 7.1e80`. |
+| [C-6111](C-6111-least-root-divergence.md) | EMPIRICAL | `m_N -> infinity`: the chart is ordinarily empty. Measured growth `99380^N` vs predicted `(Q/|A|)^N = 87381^N`, exponent agreeing to 1.13%. **Not proved.** |
 | [R-6112](R-6112-no-height-gate-on-the-divergence-lane.md) | PROVED (no-go) | Cycle-side height gates (PR #50 `L-8310` style) cannot be ported to divergence architectures: the divergence lane has no quantity forced to vanish. |
 | [T-6121](T-6121-uniform-density-gate.md) | PROVED | Uniform density gate: **every** `(k,q)` macro-block chart has `D/Q <= 1/2`, survivor density `<= 2^-N`, all-time set of Haar measure 0. Chart confinement forces odd-step density to a fixed rational `k/q` — strictly stronger than divergence. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
@@ -40,7 +40,7 @@ sequence `m_N`.
 
 * The chart is genuine, the crosswalk is airtight, and all-time legality really would be a
   Collatz counterexample (T-6101).
-* Nothing found survives: `m_N` increases strictly at all 15 exactly-computed levels, at
+* Nothing found survives: `m_N` increases strictly at all 16 exactly-computed levels, at
   almost exactly the rate the per-step density `6/2^19` predicts (X-6110).
 * The reason is not specific to this chart. Every fixed macro-block chart has survivor density
   `<= 2^-N` (T-6121), so per-depth nonemptiness is guaranteed and ordinary existence is a

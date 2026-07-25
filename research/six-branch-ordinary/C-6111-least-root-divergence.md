@@ -18,7 +18,7 @@ Resolves (if true):  Q-7601 / issue #58, in the negative
 equivalently, the six-branch chart contains no divergent Collatz orbit.
 
 **Status is EMPIRICAL.** What is proved is only: `m_N` is exactly known and strictly
-increasing for `N <= 15`, and `m_16 > 2^256` (X-6110).
+increasing for `N <= 16`, and `m_17 > 2^266` (X-6110).
 
 ## The heuristic, stated precisely
 
@@ -44,7 +44,7 @@ E[m_N] ~ (2^19/6)^N = 87381.3^N,
 ```
 
 and the expected number of all-time seeds below any bound would be `0`. The observed fit
-(X-6110) is `101875^N`, i.e. the exponent matches to 1.35%.
+(X-6110) is `99380^N`, i.e. the exponent matches to 1.13%.
 
 **This is exactly the classical Collatz heuristic, localised.** It is not independent evidence:
 believing C-6111 is the same act as believing the Collatz conjecture has no divergent orbit
@@ -77,7 +77,7 @@ canonical least roots. None is known, and this session did not find one.
 ## What would settle it
 
 * **Positive resolution** (a counterexample): one written integer `x` with an all-time exact
-  digit and physical replay proof. By X-6110 it must exceed `2^256`. Note that exhibiting such
+  digit and physical replay proof. By X-6110 it must exceed `2^266`. Note that exhibiting such
   an `x` requires a *proof* of all-time legality, not a long verified prefix — and by
   T-6103(c) it cannot be produced by prescribing an eventually periodic itinerary, which
   removes the only known way to describe an infinite legal word in closed form. This is a
@@ -87,11 +87,11 @@ canonical least roots. None is known, and this session did not find one.
 
 ## Gap audit of the conjecture itself
 
-* *Is the equidistribution assumption tested?* Partially. The 15 observed ratios have the
+* *Is the equidistribution assumption tested?* Partially. The 16 observed ratios have the
   right geometric mean but individually range over three orders of magnitude, which is
   consistent with, but does not verify, equidistribution of the `6^N` classes in `[0,2^19N)`.
 * *Could `m_N` stabilise later?* Nothing in the data excludes it; a single all-time seed
-  anywhere above `2^256` would make `m_N` eventually constant. The conjecture is exactly the
+  anywhere above `2^266` would make `m_N` eventually constant. The conjecture is exactly the
   assertion that this does not happen.
 * *Does C-6111 imply anything about Collatz?* **No.** See M-6120. Its negation would; its
   truth would not.

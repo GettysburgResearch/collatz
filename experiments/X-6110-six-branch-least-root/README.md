@@ -40,13 +40,13 @@ all-time seed, and by T-6101 to a divergent Collatz orbit).
 | `ghosts.py` | native ghost family; exhaustive integral-ghost search over all words `L <= 8` |
 | `window.py` | finite decision of all integer periodic orbits (the 25 window candidates) |
 | `audit_premises.py` | independent check of the two native-ghost examples supplied in the brief |
-| `results/` | raw output of the `2^256` run and the derived tables |
+| `results/` | raw output of the `2^266` run and the derived tables |
 
 ## Commands
 
 ```sh
 make                      # gcc -O2 -o lr lr.c
-./run_all.sh              # the 2^256 search, six processes; ~15 min on 4 cores
+./run_all.sh 266          # the 2^266 search, six processes; ~40 min on 4 cores
 python3 verify.py         # re-verify the published table (seconds)
 python3 replay.py         # physical Collatz replay
 python3 window.py         # T-6103(c) finite check
@@ -60,29 +60,29 @@ width; the program aborts rather than truncating.
 
 ## Result
 
-`m_1 ... m_15` exactly (see `results/least_roots.txt` and the table in
-`research/six-branch-ordinary/X-6110-least-root-certificate.md`), and `m_16 > 2^256`.
+`m_1 ... m_16` exactly (see `results/least_roots.txt` and the table in
+`research/six-branch-ordinary/X-6110-least-root-certificate.md`), and `m_17 > 2^266`.
 
-The sequence is **strictly increasing at all 15 levels** — no stabilisation — with
+The sequence is **strictly increasing at all 16 levels** — no stabilisation — with
 
 ```text
-least-squares fit   log m_N = 11.5315 N - 2.246       (exp(slope) = 101875)
+least-squares fit   log m_N = 11.5067 N - 2.106       (exp(slope) = 99380)
 density prediction  Q/|A| = 2^19/6 = 87381.3          (log = 11.3780)
-agreement in the exponent: 1.35%
+agreement in the exponent: 1.13%
 ```
 
-Search statistics for the published run: bound `2^256`, `15,749,362,937` nodes visited across
-six processes, deepest node depth 15.
+Search statistics for the published run: bound `2^266`, `94,037,893,705` nodes visited across
+six processes, deepest node depth 16.
 
 ## Interpretation
 
 Supports C-6111 (`m_N -> infinity`, i.e. the six-branch architecture contains no divergent
-Collatz orbit) and yields the unconditional bound: any positive all-time seed exceeds `2^256`,
-so any physical Collatz seed of this architecture exceeds `6 * 2^256 ≈ 6.95 * 10^77`.
+Collatz orbit) and yields the unconditional bound: any positive all-time seed exceeds `2^266`,
+so any physical Collatz seed of this architecture exceeds `6 * 2^266 ≈ 7.11 * 10^80`.
 
 ## Limitations
 
-* Exact only for `N <= 15`, plus the single inequality `m_16 > 2^256`.
+* Exact only for `N <= 16`, plus the single inequality `m_17 > 2^266`.
 * No finite prefix of `(m_N)` can certify boundedness (L-6105 gap audit), so this experiment
   can never resolve Q-7601 positively-or-negatively on its own.
 * Cost per additional level is a factor `6^0.863 ≈ 4.6`; depth 20 needs `~1.7e13` nodes.

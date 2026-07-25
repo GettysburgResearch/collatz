@@ -25,8 +25,8 @@ quantitative answer for one architecture and, via T-6121, for all architectures 
 
 * the depth-`N` survivor set of a fixed macro-block chart has density at most `2^-N`
   (T-6121a,b) and in the six-branch case exactly `(6/2^19)^N`;
-* the least roots therefore grow geometrically at rate `Q/D`, measured over 15 exact levels
-  at `101875` per level against a prediction of `87381` (X-6110);
+* the least roots therefore grow geometrically at rate `Q/D`, measured over 16 exact levels
+  at `99380` per level against a prediction of `87381` (X-6110);
 * no finite-state obstruction (T-6102 gap audit), no Archimedean obstruction (R-6112), and no
   finite certificate of boundedness (L-6105 gap audit) exists.
 

@@ -111,8 +111,8 @@ stating plainly:
 * `(12,19)`: `C(18,11) = 31824`, computed; `31824/2^19 = 0.0607` matches the claimed ceiling.
 * Six-branch: predicted class count `6^N` at depth `N` matched exactly by enumeration at
   depths 1-4 (6, 36, 216, 1296) in X-6110.
-* Predicted least-root growth `(Q/D)^N = 87381^N` versus measured `101875^N` over 15 exact
-  levels: exponent agreement to 1.35%.
+* Predicted least-root growth `(Q/D)^N = 87381^N` versus measured `99380^N` over 16 exact
+  levels: exponent agreement to 1.13%.
 
 ## Suggested next attack
 
