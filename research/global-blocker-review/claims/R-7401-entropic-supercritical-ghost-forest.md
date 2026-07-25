@@ -53,15 +53,15 @@ x/2,&x\equiv0\pmod2,\\[1mm]
 
 there exists a computable compact perfect family `Y` of infinite parity words with all of the following properties.
 
-1. Every length-`L` block of every word in `Y` belongs to `B`.
+1. Every **aligned** length-`L` block of every word in `Y` belongs to `B`.
 2. No word in `Y` is the parity sequence of any ordinary signed integer.
 3. Every finite prefix occurring in `Y` is realized by exactly one residue class modulo the corresponding power of two and hence by infinitely many positive ordinary integers.
-4. If a positive ordinary integer realized any word in `Y`, then along complete blocks
+4. If a positive ordinary integer realized any word in `Y`, then along complete aligned blocks
    \[
    T^{mL}(x)\ge x\left(\frac{3^w}{2^L}\right)^m,
    \]
    so its orbit would be unbounded.
-5. The block entropy of `Y` is unchanged by the diagonal exclusion:
+5. The aligned-prefix entropy of `Y` is unchanged by the diagonal exclusion:
    \[
    h(Y)=\frac{\log_2|B|}{L}>0.
    \]
@@ -86,7 +86,7 @@ For example, use
 0,1,-1,2,-2,3,-3,... .
 ```
 
-Let the sparse distinguished block positions be
+Let the sparse distinguished aligned block positions be
 
 \[
 N_j=2^j.
@@ -103,8 +103,8 @@ that differs from that block. This is always possible because `|B|>=2`: if the i
 
 Define `Y` by requiring:
 
-- block `N_j` is exactly `beta_j` for every `j`;
-- every other block may be any member of `B`.
+- aligned block `N_j` is exactly `beta_j` for every `j`;
+- every other aligned block may be any member of `B`.
 
 The construction is computable because each required comparison uses only finitely many exact integer shortcut steps.
 
@@ -132,13 +132,13 @@ This is an explicit diagonal exclusion, not a cardinality-only argument.
 
 ### 3. Compactness and perfectness
 
-The set `Y` is a direct product of finite allowed block sets, with one allowed block at the sparse positions `N_j` and `|B|>=2` allowed blocks elsewhere. It is closed in the product topology and therefore compact.
+The set `Y` is a direct product of finite allowed aligned-block sets, with one allowed block at the sparse positions `N_j` and `|B|>=2` allowed blocks elsewhere. It is closed in the product topology and therefore compact.
 
 There are infinitely many nondistinguished block positions. Any finite prefix can therefore be extended in at least two ways arbitrarily far out. No point is isolated, so `Y` is perfect.
 
 ### 4. Uniform supercritical growth if ordinary
 
-Every complete `L`-block has exactly `w` odd steps. For a parity prefix containing `m` complete blocks, the exact affine formula has the form
+Every complete aligned `L`-block has exactly `w` odd steps. For a parity prefix containing `m` complete blocks, the exact affine formula has the form
 
 \[
 T^{mL}(x)=\frac{3^{mw}x+C_m}{2^{mL}},
@@ -157,7 +157,7 @@ Condition `(1)` makes the factor greater than one, so any positive ordinary real
 
 ### 5. Entropy and dimension
 
-Among the first `m` complete blocks, the number of forced positions is
+Among the first `m` complete aligned blocks, the number of forced positions is
 
 \[
 f(m)=\#\{j:2^j<m\}=O(\log m).
@@ -178,7 +178,44 @@ Therefore
 \frac{\log_2|B|}{L}.
 \]
 
-The finite parity bijection identifies length-`n` parity cylinders with residue cylinders modulo `2^n`, preserving cylinder depth. Covering the preimage in `Z_2` by its length-`mL` cylinders gives the same Hausdorff-dimension value. ∎
+Put
+
+\[
+d_0=\frac{\log_2|B|}{L}.
+\]
+
+The finite parity bijection identifies length-`n` parity cylinders with residue cylinders modulo `2^n`, preserving cylinder diameter `2^{-n}` in `Z_2`. The count above therefore covers the corresponding `2`-adic set at depth `mL` by `|B|^(m-f(m))` balls of diameter `2^(-mL)`, proving
+
+\[
+\dim_H Y\le d_0.
+\]
+
+For the reverse inequality, put the probability measure `mu` on `Y` that assigns equal mass `1/|B|` to every free aligned block and mass one to the forced block at each distinguished position. Every nonempty depth-`mL` cylinder then has
+
+\[
+\mu(C)=|B|^{-(m-f(m))}
+      =2^{-mLd_0}\,|B|^{f(m)}.
+\]
+
+Fix `d<d_0`. Because `f(m)=O(log m)`, the polynomial factor `|B|^(f(m))` is eventually dominated by the exponential factor `2^(mL(d_0-d))`. Hence, for every sufficiently large `m`,
+
+\[
+\mu(C)\le (2^{-mL})^d.
+\]
+
+Cylinders at depths between consecutive multiples of `L` differ by at most a fixed multiplicative constant. The mass-distribution principle therefore gives
+
+\[
+\dim_H Y\ge d.
+\]
+
+Letting `d` increase to `d_0` proves
+
+\[
+\boxed{\dim_H Y=d_0.}
+\]
+
+This completes the entropy and dimension claims. ∎
 
 ## Explicit smallest example
 
@@ -193,10 +230,10 @@ w=3.
 Then
 
 \[
-\frac{3^w}{2^L}=rac{27}{16}>1,
+\frac{3^w}{2^L}=\frac{27}{16}>1,
 \]
 
-and the resulting ghost forest has entropy and `2`-adic dimension exactly
+and the resulting ghost forest has aligned-prefix entropy and `2`-adic dimension exactly
 
 \[
 \frac14.
@@ -206,7 +243,7 @@ Every finite path is a genuine shortcut-Collatz parity prefix with infinitely ma
 
 ## Stronger entropy variants
 
-The same construction may use all length-`L` words of one weight `w` satisfying `3^w>2^L`. Its entropy is
+The same construction may use all length-`L` words of one weight `w` satisfying `3^w>2^L`. Its aligned-prefix entropy is
 
 \[
 \frac1L\log_2\binom{L}{w},
