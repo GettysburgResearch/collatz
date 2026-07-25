@@ -1499,6 +1499,14 @@ audit or Gap audit was altered. Recorded refinements:
    authored statements; flagged for L-9913.
 5. **Least-period clause** in B.4(i) confirmed load-bearing by explicit
    counter-computation (V.3.4), not merely stylistic.
+6. **Cross-reference (non-load-bearing, added by this review).** Since this file was
+   written, `research/foundations/L-9915-medium-m-elimination.md` reached Status
+   PROVED with "no nontrivial S-cycle has $m \le 21$". The file's optional remarks
+   that invoke L-9906's "$m \ge 7$" (in B.4(ii) and the boosted instance of
+   B.4(iii)) can therefore be sharpened to "$m \ge 22$" by a later editor — e.g.
+   shape $8/5$ would then require $m \in \{25, 30, \dots\}$ and $65/41$ would require
+   $m \ge 41$ anyway. Nothing in any theorem of this file depends on either bound; no
+   change was made here, and L-9915 was **not** re-verified by this reviewer.
 
 ### V.7 Caveats and residual risk
 
