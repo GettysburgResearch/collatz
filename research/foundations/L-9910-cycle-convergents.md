@@ -1068,3 +1068,462 @@ RESULT: only the trivial cycle (x=1, m=1, K=2) has minimal element <= 1e5.
 *File authored by fable-02-p4, 2026-07-21. Status PROPOSED per NOTATION.md conventions;
 an independent reviewing agent may upgrade after verification. The correction to the
 coordinator's L-9910.4(i) sketch is flagged in the Statement and proved in B.4(i).*
+
+---
+
+## Verification note (fable-02-v13, 2026-07-25)
+
+**VERDICT: PASS.** Every statement L-9910.1–.5 is verified. The continued-fraction
+toolkit (A.1–A.11) was reconstructed independently from the statements, the four
+points the author flagged for scrutiny (A.6's sign/case analysis, A.9's shifted-string
+bookkeeping, the $q_0 = q_1$ tie in A.7, and B.2's five-inequality join) were
+re-derived from scratch and all hold, and the exact CF data was **recomputed by a
+different algorithm** and matches the file digit-for-digit. Status upgraded
+`PROPOSED → PROVED`. No mathematical statement was altered; this note is additive.
+`INDEPENDENTLY_VERIFIED` is deliberately **not** set (that requires a further
+independent reviewer per README §7).
+
+Review method: the file's own scripts were **not** run and not reused. All code below
+was written from the *statements* of L-9910 alone, using a deliberately different
+computational route (see V.3.1). Scratchpad (session-local):
+`v13_cf.py`, `v13_cf2.py`, `v13_cycles.py`, `v13_adv.py`, `v13_tight.py`.
+Environment: CPython 3.11.15, Linux, stdlib only (`fractions`, `math`, `time`),
+exact big-integer arithmetic; floats appear only as display or as *seeds* that are
+subsequently confirmed by exact integer comparisons. Runtimes: 15 s (CF derivation +
+all 30 certificates), 107 s (near-miss analysis + two further digits), and under two
+minutes each for the cycle search and the probe scripts.
+
+### V.1 Independent restatement of the claims
+
+Restated before reading the proofs, then checked against the file (all agree):
+
+1. **.1** For irrational $\alpha$ and coprime $p, q$ with $q \ge 1$: if
+   $|\alpha - p/q| < 1/(2q^2)$ then $(p,q) = (p_i, q_i)$ for some $i \ge 0$ in the
+   Gauss/convergent recursion for $\alpha$. Converse false.
+2. **.2** For an S-cycle with $x_{\min} \ge m^2$ (trivial cycle allowed): writing
+   $d = \gcd(K,m)$, $p = K/d$, $q = m/d$, the *reduced* $p/q$ is an odd-index
+   convergent of $\log_2 3$, and the cycle's own data is $m = tq$, $K = tp$,
+   $t = d \ge 1$. Approach is one-sided from above.
+3. **.3** $a_0(\alpha),\dots,a_{14}(\alpha) = 1,1,1,2,2,3,1,5,2,23,2,2,1,1,55$ with the
+   15 listed convergents; every digit certified by two integer inequalities
+   $3^Q \lessgtr 2^P$; the convergents with $q \le 10^5$ are exactly $k = 0..11$.
+4. **.4** (i) $K = 2m$ $\Rightarrow$ trivial cycle (unconditional, no CF input, via
+   $x_{\min} < 2$ hence $x_{\min} = 1$); (ii) the six odd-index shapes with
+   $q \le 10^5$; (iii) the dichotomy $x_{\min} \ge m^2$ / $x_{\min} < m^2$ with a
+   proved consequence in each branch.
+5. **.5** No unconditional cycle exclusion is claimed; no Baker-type input is used.
+
+### V.2 Reconstruction of the toolkit (done independently, then compared)
+
+**A.2 (Gauss recursion).** $\alpha_0 = \alpha$ irrational $\Rightarrow$ inductively
+$\alpha_i - a_i \in (0,1)$ irrational, $\alpha_{i+1} = 1/(\alpha_i - a_i) > 1$
+irrational, $a_{i+1} \ge 1$. With $q_{-2} = 1, q_{-1} = 0$: $q_0 = 1$, $q_1 = a_1 \ge
+1$, and for $i \ge 2$, $q_i = a_iq_{i-1} + q_{i-2} \ge q_{i-1} + q_{i-2} > q_{i-1}$
+(using $q_{i-2} \ge 1$, valid since $i - 2 \ge 0$). So the sequence is strictly
+increasing **from index 1 on** and $q_0 = q_1$ is possible — exactly as the file says.
+Confirmed.
+
+**A.3 (determinant).** $p_iq_{i-1} - p_{i-1}q_i = (-1)^{i-1}$; base $i=0$ gives
+$-1$, and the induction only flips sign. Note this uses the convention
+$(-1)^{-1} = -1$; harmless, and I verified the identity numerically for all
+$k = 0..16$ of the actual string. The proof uses **only** the recurrences and base
+values, so it applies verbatim to arbitrary finite digit strings — which is what B.3
+needs to conclude $C_k \ne M_k$. Confirmed.
+
+**A.4/A.5 (tail and error formulas).** Re-derived: substituting
+$\alpha_i = a_i + 1/\alpha_{i+1}$ into $\alpha = (\alpha_ip_{i-1} + p_{i-2})/(\alpha_i
+q_{i-1} + q_{i-2})$ produces the same expression at $i+1$ after cancelling the common
+positive factor $1/\alpha_{i+1}$. Then
+$q_i\alpha - p_i = (q_ip_{i-1} - p_iq_{i-1})/(\alpha_{i+1}q_i + q_{i-1}) =
+(-1)^i/(\alpha_{i+1}q_i + q_{i-1})$, giving sign $(-1)^i$ and hence **even index below
+$\alpha$, odd index above**. Strict decrease: $\alpha_{i+2}q_{i+1} + q_i > q_{i+1} +
+q_i = (a_{i+1}+1)q_i + q_{i-1} > \alpha_{i+1}q_i + q_{i-1}$, the last step because
+$\alpha_{i+1} < a_{i+1} + 1$ (irrationality excludes equality). Confirmed.
+
+**A.6 (best approximation — flagged point #1).** Re-derived independently. The matrix
+$\binom{p_i\ p_{i+1}}{q_i\ q_{i+1}}$ is unimodular by A.3, so $(p,q)$ has a unique
+integer expansion $\mu(p_i,q_i) + \nu(p_{i+1},q_{i+1})$. The case analysis is correct
+and exhaustive:
+* $\nu = 0$: $q = \mu q_i \ge 1$ with $q_i \ge 1$ forces $\mu \ge 1$; $|q\alpha - p| =
+  \mu D_i \ge D_i$, equality iff $\mu = 1$ (needs $D_i > 0$, which is A.5(a)).
+* $\mu = 0$: $q = \nu q_{i+1} \ge 1$ forces $\nu \ge 1$, i.e. $q \ge q_{i+1}$ —
+  excluded by hypothesis. (This is where $q < q_{i+1}$, not merely $q \le q_i$, is
+  used.)
+* $\mu\nu \ne 0$, same signs: $q = |q| = |\mu|q_i + |\nu|q_{i+1} \ge q_{i+1}$,
+  excluded. Hence opposite signs; since $q_i\alpha - p_i$ and $q_{i+1}\alpha -
+  p_{i+1}$ themselves have opposite signs (A.5(a) alternation), the two contributions
+  $\mu(q_i\alpha - p_i)$ and $\nu(q_{i+1}\alpha - p_{i+1})$ have the **same** sign, so
+  magnitudes add: $|q\alpha - p| = |\mu|D_i + |\nu|D_{i+1} > D_i$.
+The "same sign $\Rightarrow$ magnitudes add" step is the delicate one and is used
+correctly (it is the reason the hypothesis $\mu\nu \neq 0$ cannot yield equality).
+**No defect.**
+
+**A.7 (Legendre) and the $q_0 = q_1$ tie — flagged point #3.** Re-derived: with
+$i := \max\{j : q_j \le q\}$ one has $q_i \le q < q_{i+1}$; assuming $p/q \ne
+p_i/q_i$, $1/(qq_i) \le |p/q - p_i/q_i| \le |\alpha - p/q| + |\alpha - p_i/q_i| \le
+(1 + q/q_i)|\alpha - p/q| < 1/(2q^2) + 1/(2qq_i)$, whence $q < q_i$, contradiction.
+The tie **genuinely bites for $\log_2 3$**: $a_1 = 1$ so $q_0 = q_1 = 1$
+(independently confirmed, V.3.2). Taking instead the *smallest* $j$ with $q_j \le q <
+q_{j+1}$ would give $j = 0$ for $q = 1$ and then A.6's hypothesis $q < q_1 = 1$ would
+be **false**, breaking the proof precisely at the fraction $2/1$ — which is the one
+that matters for L-9910.4(i)/(ii). The author's max-index choice repairs exactly this,
+and the file flags it in its Gap audit. Verified as correct and necessary.
+
+**A.8/A.9 (certification — flagged point #2, the step that turns computation into
+proof).** Reconstructed completely.
+* A.8: with $P'_j, Q'_j$ the data of the shifted string $(b_1; b_2,\dots,b_k)$, the
+  identities $P_j = b_0P'_{j-1} + Q'_{j-1}$, $Q_j = P'_{j-1}$ hold for $-1 \le j \le
+  k$. Bases $j = -1$ ($1 = b_0\cdot 0 + 1$, $0 = P'_{-2}$) and $j = 0$
+  ($b_0 = b_0\cdot 1 + 0$, $1 = P'_{-1}$) are correct with the negative-index
+  conventions; the step uses that the shifted string's recurrence coefficient at index
+  $j-1$ is $b_{(j-1)+1} = b_j$ — the one place where an off-by-one would be fatal, and
+  it is right. The auxiliary $P'_j \ge Q'_j \ge 1$ ($0 \le j \le k-1$) is proved by the
+  stated three-case induction ($j=0$: $b_1 - 1 \ge 0$; $j=1$: $b_2(b_1-1)+1 \ge 1$;
+  $j \ge 2$: recurrence with nonnegative coefficients). I re-verified A.8's identities
+  symbolically for all shifts of the certified 15-digit string.
+* A.9: the algebra $C_k = b_0 + 1/C'$, $M_k = b_0 + 1/M'$ is correct, and the
+  positivity side conditions ($Q'_{k-1} \ge 1$, $C' \ge 1$, $M' \ge 1$, including the
+  $k = 1$ boundary where $Q'_{k-2} = Q'_{-1} = 0$ and $P'_{-1} = 1$) are exactly the
+  ones A.8 supplies. Both endpoints therefore lie in $(b_0, b_0+1]$, so strict
+  betweenness forces $\alpha \in (b_0, b_0+1)$ and $a_0(\alpha) = b_0$; the
+  order-reversing bijection $\varphi(t) = b_0 + 1/t$ transports strict betweenness to
+  $\beta = \alpha_1$ versus $(C', M')$, which are precisely the shifted string's
+  endpoint data, closing the induction. The edge case $C_k = b_0 + 1$ (which occurs:
+  $k = 1$, $b_1 = 1$, $C_1 = 2/1$) is harmless because betweenness is strict.
+  **No defect.** I also confirmed the converse characterization (the irrationals with
+  prefix $b_0..b_k$ are exactly the open interval between $C_k$ and $M_k$, since
+  $\alpha = (\alpha_{k+1}P_k + P_{k-1})/(\alpha_{k+1}Q_k + Q_{k-1})$ with
+  $\alpha_{k+1} \in (1,\infty)$), so the certification test is neither vacuous nor
+  capable of false positives — and I checked empirically that wrong digit strings are
+  rejected (V.3.5).
+
+**A.10, A.1.** Bit-length decision rule and the $3^q \lessgtr 2^p$ principle
+re-derived; both correct ($3^q$ odd $\ge 3$ is never a power of two, so no equality
+case).
+
+**A.11 (constants) — redone from scratch.** For $n \ge 5$, $n! = 120\prod_{j=6}^n j
+\ge 120\cdot 6^{n-5}$, so $\sum_{n\ge5}1/n! \le \frac{1}{120}\cdot\frac{1}{1-1/6} =
+\frac{1}{120}\cdot\frac65 = \frac{1}{100}$; with $\sum_{n=0}^4 1/n! = 65/24$ this
+gives $e \le 65/24 + 1/100 = 6524/2400 < 6528/2400 = 68/25$. Then $e^2 < (68/25)^2 =
+4624/625 < 8$, so $2 = \ln e^2 < \ln 8 = 3\ln 2$. And $(64/27)^2 = 4096/729 > 3 > e$
+gives $\ln(64/27) > 1/2$, i.e. $1/\ln(64/27) < 2$. All four integer inequalities
+($6524 < 6528$, $4624 < 5000$, $4096 > 2187$, $120\cdot6^{n-5} \le n!$ for
+$n = 5..39$) verified exactly. The factorial bound is *equality* at $n = 6$
+($720 = 120\cdot 6$) and strict beyond, so the tail bound is safe. Confirmed.
+
+**B.2 (five-inequality join — flagged point #4).** Re-derived link by link:
+$0 < K/m - \alpha \le \frac{1}{3x_{\min}\ln2}$ (L-9905.5, PROVED, statement checked
+verbatim against `L-9905-cycle-equation.md`) $\le \frac{1}{3m^2\ln2}$ ($x_{\min} \ge
+m^2 > 0$, $u \mapsto 1/(3u\ln2)$ decreasing) $< \frac{1}{2m^2}$ ($\iff 2 < 3\ln2$,
+A.11(b) — this is where the **strict** inequality needed by Legendre is manufactured,
+not from $x_{\min} > m^2$) $\le \frac{1}{2q^2}$ ($1 \le q \le m$). Since $K/m >
+\alpha$, $|\alpha - p/q| = K/m - \alpha$. Legendre applies to the reduced pair
+(coprime, $q \ge 1$); $p/q > \alpha$ plus A.5(b) forces odd index. The
+reduced-vs-unreduced distinction ($m = tq$, $K = tp$) is stated correctly and never
+conflated. Confirmed.
+
+**B.4(i).** $K = 2m$ $\Rightarrow$ $2 - \alpha \le 1/(3x_{\min}\ln2)$ with
+$2 - \alpha > 0$; multiplying by $3x_{\min}\ln2 > 0$ and dividing by
+$3\ln2\,(2-\alpha) = 6\ln2 - 3\ln3 = \ln(64/27) > 0$ gives $x_{\min} \le 1/\ln(64/27)
+< 2$, so $x_{\min} = 1$, so $1$ lies on the cycle, so (S fixes 1) the least period is
+$1$. The correction flag is right: $1/\ln(64/27) = 1.1587\ldots \in (1,2)$, so the
+coordinator's "$x_{\min} < 1$" route is genuinely unavailable, while "$x_{\min} < 2$"
+is available and sufficient. The **least-period** step is load-bearing, not cosmetic:
+see V.3.4, where dropping it produces spurious "$K = 2m$ cycles" for every $m$.
+Confirmed.
+
+### V.3 Independent computation
+
+#### V.3.1 A different algorithm for the CF (no decimal guess)
+
+The author guesses digits from a 250-digit `decimal` value and then certifies them. I
+instead **derive** the digits with an exact exponent-pair logarithm recursion that
+never uses a numerical value of $\alpha$: every Gauss iterate is $\alpha_i =
+\log_{B_i}(A_i)$ with $A_i, B_i$ of the form $2^x3^y > 1$, and
+$a_i = \max\{n \ge 0 : B_i^n \le A_i\}$, $(A,B) \leftarrow (B, A/B^{a_i})$. Each
+comparison $2^{x_1}3^{y_1} \lessgtr 2^{x_2}3^{y_2}$ is one exact big-integer
+comparison. Floats only *seed* the candidate exponent $n$; two exact `while` loops then
+correct it, so the output is independent of float accuracy.
+
+```python
+def cmp_pow(x1, y1, x2, y2):          # compare 2^x1*3^y1 vs 2^x2*3^y2, exactly
+    u, v = x1 - x2, y1 - y2
+    L = (1 << max(u, 0)) * 3 ** max(v, 0)
+    R = (1 << max(-u, 0)) * 3 ** max(-v, 0)
+    return (L > R) - (L < R)
+
+A, B, digits = (0, 1), (1, 0), []     # A = 3, B = 2  (exponent pairs)
+for i in range(17):
+    n = max(0, int((A[0] + A[1]*LOG2_3) / (B[0] + B[1]*LOG2_3)))   # seed only
+    while cmp_pow(n*B[0], n*B[1], A[0], A[1]) > 0:       n -= 1    # exact fix-up
+    while cmp_pow((n+1)*B[0], (n+1)*B[1], A[0], A[1]) <= 0: n += 1
+    digits.append(n)
+    A, B = B, (A[0] - n*B[0], A[1] - n*B[1])
+```
+
+#### V.3.2 My CF table vs the file's
+
+| $k$ | my $a_k$ | file $a_k$ | my $p_k/q_k$ | file $p_k/q_k$ | side (mine, certified) |
+|---|---|---|---|---|---|
+| 0 | 1 | 1 | 1/1 | 1/1 | below |
+| 1 | 1 | 1 | 2/1 | 2/1 | **above** |
+| 2 | 1 | 1 | 3/2 | 3/2 | below |
+| 3 | 2 | 2 | 8/5 | 8/5 | **above** |
+| 4 | 2 | 2 | 19/12 | 19/12 | below |
+| 5 | 3 | 3 | 65/41 | 65/41 | **above** |
+| 6 | 1 | 1 | 84/53 | 84/53 | below |
+| 7 | 5 | 5 | 485/306 | 485/306 | **above** |
+| 8 | 2 | 2 | 1054/665 | 1054/665 | below |
+| 9 | 23 | 23 | 24727/15601 | 24727/15601 | **above** |
+| 10 | 2 | 2 | 50508/31867 | 50508/31867 | below |
+| 11 | 2 | 2 | 125743/79335 | 125743/79335 | **above** |
+| 12 | 1 | 1 | 176251/111202 | 176251/111202 | below |
+| 13 | 1 | 1 | 301994/190537 | 301994/190537 | **above** |
+| 14 | 55 | 55 | 16785921/10590737 | 16785921/10590737 | below |
+| 15 | 1 | *(uncertified guess)* | 17087915/10781274 | — | **above** |
+| 16 | 4 | *(uncertified guess)* | 85137581/53715833 | — | below |
+
+**Digit-for-digit and convergent-for-convergent agreement on $k = 0..14$.** In
+addition, the two digits the file explicitly leaves uncertified, $a_{15} = 1$ and
+$a_{16} = 4$, are **confirmed by exact integer arithmetic** by the recursion above
+(107 s; the $a_{16}$ step compares integers of $\approx 8.5\times10^7$ bits). This is
+review data — the file's Statement is left claiming only $a_0..a_{14}$, which remains
+correct and now has slack.
+
+Also verified independently: $\gcd(p_k,q_k) = 1$ and $p_kq_{k-1} - p_{k-1}q_k =
+(-1)^{k-1}$ for all $k \le 14$; $q_k > q_{k-1}$ for $k \ge 2$; **$q_0 = q_1 = 1$
+(the tie is real)**; $q_{11} = 79335 \le 10^5 < 111202 = q_{12}$, so the $q \le 10^5$
+completeness clause of L-9910.3 holds; the odd-index sublist with $q \le 10^5$ is
+exactly $2/1,\ 8/5,\ 65/41,\ 485/306,\ 24727/15601,\ 125743/79335$ (Table 2).
+
+#### V.3.3 Re-verification of all 30 displayed certificates
+
+Each row of Table 1 was re-decided by computing $3^{Q}$ with a plain `pow` (not the
+author's incremental scheme $3^{q_k} = (3^{q_{k-1}})^{a_k}3^{q_{k-2}}$) and comparing
+bit lengths, largest case $3^{10781274}$ (17 087 915 bits):
+
+```python
+def side(Q, P):
+    b = (3 ** Q).bit_length()
+    return ("<" if b <= P else ">"), b     # 3^Q < 2^P  <=>  bitlength(3^Q) <= P
+```
+
+All 30 senses agree with the file, and **every displayed bit length is exactly
+right**: $\mathrm{bl}(3^{94}) = 149$, $\mathrm{bl}(3^{306}) = 485$,
+$\mathrm{bl}(3^{359}) = 570$, $\mathrm{bl}(3^{665}) = 1055$,
+$\mathrm{bl}(3^{971}) = 1539$, $\mathrm{bl}(3^{15601}) = 24727$,
+$\mathrm{bl}(3^{16266}) = 25782$, $\mathrm{bl}(3^{31867}) = 50509$,
+$\mathrm{bl}(3^{47468}) = 75235$, $\mathrm{bl}(3^{79335}) = 125743$,
+$\mathrm{bl}(3^{111202}) = 176252$, $\mathrm{bl}(3^{190537}) = 301994$,
+$\mathrm{bl}(3^{301739}) = 478246$, $\mathrm{bl}(3^{10590737}) = 16785922$,
+$\mathrm{bl}(3^{10781274}) = 17087915$. The four fully displayed decimal values also
+check out: $3^{41} = 36472996377170786403 < 2^{65} = 36893488147419103232$ and
+$3^{53} = 19383245667680019896796723 > 2^{84} = 19342813113834066795298816$ (and the
+small rows $3^{12} > 2^{19}$, $3^{17} < 2^{27}$). The two senses in each row are
+opposite in every row, and the $C_k$-side is "$>$" exactly for even $k$, matching
+A.5(b).
+
+#### V.3.4 Cycle-side computations
+
+```python
+def S(x):
+    y = 3*x + 1
+    return y // (y & -y)
+
+# Test 1: n is the minimal element of an S-cycle iff iterating S from n stays >= n
+# until it returns to n.
+for n in range(1, 10**5 + 1, 2):
+    x, steps = S(n), 1
+    while x > n:
+        x = S(x); steps += 1
+    if x == n: report_cycle(n)
+
+# Test 3/4: solve the cycle equation directly over exponent compositions.
+#   c = sum_i 3^(m-i) 2^(A_{i-1}),  x_1 = c / (2^K - 3^m)  must be a positive odd
+#   integer, must regenerate the given exponents, and (D-9908) the x_i must be
+#   PAIRWISE DISTINCT (least period m).
+```
+
+Results (all exact, `ALL CHECKS PASSED`):
+
+```text
+Test 1 (minimal-element search, odd n <= 1e5):
+   cycle: x_min=1 m=1 K=2 elements=[1]
+   total cycles with x_min <= 1e5: 1 (trivial only)
+Test 2 (forward orbits from every odd n <= 1e5): recurrence points: [1]
+Test 3 (K = 2m, ALL exponent compositions, m <= 12; 1 830 270 compositions):
+   genuine least-period cycles: [(m=1, K=2, a=(2,), x_1=1)]
+   (degenerate m-fold repetitions of the fixed point 1, excluded by the
+    least-period clause of D-9908): {2:1, 3:1, ..., 12:1}
+Test 4 (all m <= 8, m < K <= 3m): only (m,K) = (1,2) is realizable
+```
+
+Test 1 reproduces the author's Script 2 result by an independently written scan, and
+Test 2 adds a cross-check the file does not have (every odd $n \le 10^5$ has its
+forward $S$-orbit terminate at the fixed point $1$; no other recurrent point exists in
+that reachable set). Test 3 is a genuinely different attack on L-9910.4(i): rather than
+the analytic route, it solves the cycle equation $x_1(2^K - 3^m) = c$ over **all**
+$\binom{2m-1}{m-1}$ exponent compositions with $K = 2m$, $m \le 12$, and finds no
+nontrivial cycle. It also produced a useful adversarial datum: without the least-period
+filter, the $m$-fold repetition $(2,2,\dots,2)$ of the fixed point solves the equation
+for **every** $m$ with $x_1 = 1$ — i.e. the last step of B.4(i) ("by cyclicity all
+elements equal 1 and the least period is $m = 1$") is doing real work and is not
+removable.
+
+#### V.3.5 Legendre threshold, near-counterexamples, and the false converse
+
+Exact test of the hypothesis without any float: $|\alpha - p/q| < 1/(2q^2) \iff
+2pq - 1 < 2q^2\alpha < 2pq + 1 \iff \lfloor 2q^2\alpha\rfloor \in \{2pq-1, 2pq\}$,
+and $\lfloor N\alpha\rfloor = \mathrm{bl}(3^N) - 1$ exactly.
+
+```python
+for qq in range(1, 801):
+    f = (3 ** (2*qq*qq)).bit_length() - 1          # = floor(2 q^2 alpha), exact
+    for cand in (f, f + 1):
+        if cand % (2*qq) == 0:
+            pp = cand // (2*qq)                    # the only possible numerators
+            assert (pp, qq) in convergents         # Legendre's conclusion
+```
+
+Over $q \le 800$ (the file scanned $q \le 350$) **exactly six** coprime fractions
+satisfy the hypothesis: $2/1,\ 3/2,\ 8/5,\ 19/12,\ 84/53,\ 485/306$ — every one a
+convergent. Ranking all coprime candidates by $q^2|\alpha - p/q|$ (exact rational
+intervals, obtained from certified brackets $\lfloor N\alpha\rfloor/N < \alpha <
+(\lfloor N\alpha\rfloor + 1)/N$ with $N = 10^7$ and, for the tight rows, $N = 10^8$;
+$\lfloor N\alpha\rfloor = \mathrm{bl}(3^N) - 1$ exactly):
+
+| $p/q$ | $q^2\lvert\alpha - p/q\rvert$ (certified interval) | convergent? | hypothesis |
+|---|---|---|---|
+| $1054/665$ | $[0.0416, 0.0460]$ | yes | holds |
+| $84/53$ | $[0.15966, 0.15994]$ | yes | holds |
+| $19/12$ | $[0.23460, 0.23461]$ | yes | holds |
+| $3/2$ | $[0.33985, 0.33985]$ | yes | holds |
+| $8/5$ | $[0.37593, 0.37594]$ | yes | holds |
+| $2/1$ | $[0.41504, 0.41504]$ | yes | holds |
+| $485/306$ | $[0.45041, 0.45135]$ | yes | holds |
+| **$569/359$** | $[0.55196, 0.55325]$ | **no** | fails |
+| $1/1$ | $[0.58496, 0.58496]$ | yes | **fails** (converse false) |
+| $11/7$ | $[0.66316, 0.66317]$ | no | fails |
+| $65/41$ | $[0.67802, 0.67804]$ | yes | **fails** (converse false) |
+| $5/3$ | $[0.73534, 0.73534]$ | no | fails |
+
+Two things worth recording. (a) The file's "nearest non-convergent miss" is $11/7$ at
+$0.6632$ — correct **within its scanned range $q \le 350$**, but extending to $q \le
+800$ finds a much tighter near-counterexample, the semiconvergent $M_7 = 569/359$, at
+$q^2|\alpha - p/q| \in [0.5520, 0.5533]$. So for $\alpha = \log_2 3$ the constant
+$1/2$ in L-9910.1 clears the first genuine obstruction by only $\approx 10\%$: a
+Legendre-style criterion with $0.56/q^2$ in place of $1/(2q^2)$ would be **false** for
+this $\alpha$. This is a strengthening of the file's own adversarial point, not a
+correction of any statement. (b) The false converse is confirmed exactly: $1/1$ and
+$65/41$ are convergents violating the hypothesis, matching the file.
+
+**Adversarial probe of A.9's discriminating power** (the file suggests this test):
+feeding wrong digit strings to the "strictly between $C_k$ and $M_k$" test must fail.
+
+```text
+TRUE prefix a_0..a_9       C=24727/15601      M=25781/16266      -> between: True
+wrong: a_9=22              C=23673/14936      M=24727/15601      -> between: False
+wrong: a_9=24              C=25781/16266      M=26835/16931      -> between: False
+wrong: a_5=2               C=18932/11941      M=19739/12450      -> between: False
+wrong: a_0=2               C=40328/15601      M=42047/16266      -> between: False
+TRUE full a_0..a_14        C=16785921/10590737 M=17087915/10781274 -> between: True
+wrong: a_14=54             C=16483927/10400200 M=16785921/10590737 -> between: False
+wrong: a_14=56             C=17087915/10781274 M=17389909/10971811 -> between: False
+```
+
+The certificate cannot be satisfied by a wrong string, so the guess-then-certify
+methodology of B.3 is sound: the guess is genuinely not load-bearing.
+
+### V.4 Attempts to negate or strengthen
+
+* **Attempt to break L-9910.1 by a near-miss:** failed — no non-convergent with
+  $q \le 800$ satisfies the hypothesis; the closest, $569/359$, misses by $\approx
+  0.052$ in $q^2$-units (V.3.5).
+* **Attempt to break L-9910.2 via the unreduced fraction:** the natural error is to
+  demand that $K/m$ *itself* be a convergent. The file explicitly does not do this.
+  Concrete witness that the distinction matters: shape $8/5$ with $t = 2$ gives
+  $(m,K) = (10,16)$, and $16/10$ is not in the convergent list while its reduction is.
+  No defect.
+* **Attempt to break L-9910.4(i) computationally:** exhaustive composition search for
+  $K = 2m$, $m \le 12$ (V.3.4) finds nothing beyond the trivial cycle; and the
+  degenerate-repetition family shows the least-period clause is necessary. No defect.
+* **Available strengthening (not applied; statements left as authored).** The
+  hypothesis $x_{\min} \ge m^2$ of L-9910.2 can be weakened to
+  $x_{\min} \ge q^2$ (with $q = m/\gcd(K,m)$ the *reduced* denominator), and in fact
+  to $x_{\min} > \frac{2}{3\ln 2}q^2 = 0.9618\ldots q^2$: the only use of the
+  hypothesis is to make $1/(3x_{\min}\ln2) < 1/(2q^2)$, i.e. $2q^2 < 3x_{\min}\ln2$.
+  Since $q \mid m$, this is weaker by a factor $d^2 = \gcd(K,m)^2$ and bites on
+  cycles whose shape is not already in lowest terms. The file anticipates this in
+  "Suggested next attack"; the explicit constant and the $q$-form are recorded here for
+  L-9913.
+* **Circularity:** none. L-9905 and L-9906 predate and do not cite L-9910; A.1–A.11
+  are self-contained; the Collatz conjecture (or its negation) is nowhere assumed.
+  Checked by reading the dependency statements verbatim in
+  `research/foundations/L-9905-cycle-equation.md` (L-9905.2, L-9905.4 Corollary,
+  L-9905.5 all match their in-file restatements exactly, Status PROVED).
+
+### V.5 Conditionality audit (every statement)
+
+| statement | conditional on | carried in the text? |
+|---|---|---|
+| L-9910.1 | nothing (pure CF theory) | n/a; makes no cycle claim |
+| L-9910.2 | $x_{\min} \ge m^2$ | yes, in the hypothesis and every use |
+| L-9910.3 | nothing (exact integer data) | n/a |
+| L-9910.4(i) | nothing — but it excludes only the **shape** $K = 2m$, not cycles | yes; correctly proved and correctly *not* generalized |
+| L-9910.4(ii) | $x_{\min} \ge m^2$ **and** $q \le 10^5$ | yes, both stated |
+| L-9910.4(iii) | a dichotomy; each branch's conclusion is conditional on that branch | yes; "no claim about which occurs" is explicit |
+| boosted instance | the $10^5$ finite search | yes, labeled EMPIRICAL in its hypothesis |
+| L-9910.5 | — | correctly states that nothing here is an unconditional cycle exclusion |
+
+**The file never states an unconditional exclusion of nontrivial cycles.** The one
+unconditional exclusion it does state (L-9910.4(i)) is an exclusion of a single shape
+and is fully proved from L-9905.5 + A.11(c).
+
+### V.6 Fixes, refinements and documentation notes from this review
+
+No mathematical correction was required; nothing in the Statement, Proof, Dependency
+audit or Gap audit was altered. Recorded refinements:
+
+1. **A.3 at $i = 0$** reads $(-1)^{i-1} = (-1)^{-1}$, i.e. it relies on the convention
+   $(-1)^{-1} = -1$. Correct as written; noted for readers who prefer
+   $p_iq_{i-1} - p_{i-1}q_i = -(-1)^{i}$.
+2. **Near-miss table scope.** The file's near-miss list is exhaustive only for
+   $q \le 350$ (the range of its Script 1). The tighter near-counterexample
+   $569/359 \in [0.5520, 0.5533]$ found here (V.3.5) strengthens the file's own point
+   about the necessity of the $1/2$ threshold. No statement changes.
+3. **$a_{15} = 1$, $a_{16} = 4$** — the file's explicitly *uncertified* guess — are now
+   independently derived by exact integer arithmetic (V.3.2). The Statement is
+   deliberately left unchanged (it claims only $a_0..a_{14}$).
+4. **Weakened hypothesis** available for L-9910.2: $x_{\min} \ge q^2$, indeed
+   $x_{\min} > \frac{2}{3\ln2}q^2$, suffices (V.4). Left unapplied to preserve the
+   authored statements; flagged for L-9913.
+5. **Least-period clause** in B.4(i) confirmed load-bearing by explicit
+   counter-computation (V.3.4), not merely stylistic.
+
+### V.7 Caveats and residual risk
+
+* Rows $k \ge 6$ of Table 1 remain **machine-verified finite computations**. They have
+  now been decided twice, by two independently written programs using different power
+  schedules (incremental vs. direct `pow`) inside the same CPython bignum
+  implementation, and the digits were separately *derived* by a third route (exponent
+  pairs) that never forms $3^{q_k}$ the same way. A residual common-mode risk (a bug in
+  one bignum library) is not eliminated; a check with an independent arithmetic stack
+  (GMP/PARI) would close it. The proof *structure* (A.9) is fully human-checkable and
+  is verified above; only the truth of individual integer comparisons rests on the
+  machine.
+* Rows $k \le 5$ were spot-checked by hand ($3 > 2$, $3 < 4$, $9 > 8$, $27 < 32$,
+  $243 < 256$, $2187 > 2048$, $531441 > 524288$, $129140163 < 134217728$, and the two
+  20/26-digit comparisons at $k = 5$).
+* The empirical $x_{\min} \le 10^5$ search was reproduced independently but remains
+  finite verification, correctly labeled as such wherever used.
+* Background real-analysis facts ($\ln$/$\exp$ monotonicity, $e = \sum 1/n!$) are
+  assumed, as the file states.
+
+**Confidence: high** for L-9910.1, .2, .4, .5 (fully hand-checkable given L-9905, and
+re-derived here); **high** for L-9910.3 modulo the stated machine-arithmetic caveat
+(independently recomputed by a different algorithm, with exact agreement on all 15
+digits, all 15 convergents, all 30 certificates, and every displayed bit length).
+
+*Reviewed by fable-02-v13, 2026-07-25. Status upgraded PROPOSED → PROVED per
+NOTATION.md conventions. `INDEPENDENTLY_VERIFIED` not set — that requires a further
+independent reviewer.*
