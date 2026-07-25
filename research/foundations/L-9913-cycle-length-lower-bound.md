@@ -15,7 +15,7 @@ Last updated:  2026-07-25 (fable-02-v18 independent adversarial review; status
                2026-07-25 (fable-02-p8 addendum: raised-floor corollaries
                L-9913.12 and L-9913.13 for F = 10^11 and F = 10^12 using the
                new floor X-9903, both marked PROPOSED inside this PROVED file;
-               two rows added to the L-9913.9 table; Tests 15-19 appended. No
+               two rows added to the L-9913.9 table; Tests 15-21 appended. No
                earlier statement, proof or the verification note was altered.)
 Dependencies:  research/foundations/NOTATION.md (D-9901, D-9902, D-9903, D-9904,
                  D-9905, D-9908, D-9909; empty-sum conventions).
@@ -260,7 +260,7 @@ verified by exhaustive enumeration of **all** $m \le 3000$.)
 > **Status of this addendum.** L-9913.1–.11 and the Main Theorem $m \ge 2966$ are
 > **PROVED** (reviewed by fable-02-v18) and are **unchanged**. The two sub-claims
 > below are **PROPOSED**: their arithmetic is certified to exactly the same
-> standard as the rest of the file (Tests 15–19, exhaustive and exact), but the
+> standard as the rest of the file (Tests 15–21, exhaustive and exact), but the
 > *floor* they consume comes from the experiment packet X-9903, which has **not**
 > yet been independently reviewed. They therefore do **not** stand on the same
 > footing as the $F = 10^6$ Main Theorem, whose floor X-9901 has been reviewed
@@ -287,6 +287,36 @@ a separately certified checkpoint at $\mathrm{(V}_{10^{11}})$. Then:
    $190537 = q_{13}$ (with $301994 = p_{13}$) and $10781274 = q_{15}$ (with
    $17087915 = p_{15}$) — in contrast with $F = 10^6$, where the minimiser $2966$
    is a semiconvergent.
+
+*Remark (plateau — how much further verification is worth).* Admissibility of a
+fixed $m$ is monotone in $F$: $\mathrm{Adm}_F(m) \iff F \le F_{\max}(m) :=
+\frac{1000\,m}{2079\,f(m)}$. Hence $m^*(F)$ is a nondecreasing step function whose
+jumps are the numbers $F_{\max}(m)$, and the exhaustive scans give the exact
+plateaux. This is **exhaustively certified** (Test 21): every $m \le 10\,781\,274$
+is examined, and the successive record-holders of $m/f(m)$ — equivalently of
+$F_{\max}(m)$ — are the jump points. The comparison needs no $\alpha$ at all: with
+$f(m) = K_m - m\alpha$,
+$$m\,f(m') - m'\,f(m) \;=\; m\,K_{m'} - m'\,K_m,$$
+a pure integer test. There are $38$ jump points below $10\,781\,274$; the last
+five give the plateaux:
+
+| plateau of $F$ | $m^*(F)$ |
+|---|---|
+| $(2.8587828883\cdot 10^{8},\ 1.4479896944\cdot 10^{9}]$ | $47468$ |
+| $(1.4479896944\cdot 10^{9},\ 7.2176350614\cdot 10^{9}]$ | $79335$ |
+| $(7.2176350614\cdot 10^{9},\ 9.8478191629\cdot 10^{11}]$ | $190537$ |
+| $(9.8478191629\cdot 10^{11},\ 2.9446434989\cdot 10^{14}]$ | $10\,781\,274$ |
+
+Two consequences worth stating plainly. **(i)** The new floor $10^{12}$ clears the
+last transition by only $1.55\%$ — at any floor below $9.848\cdot 10^{11}$ the bound
+would still be $190537$. **(ii)** Raising the verified floor any further buys
+**nothing at all** for this bound until $F$ exceeds $2.9446\cdot 10^{14}$: the
+whole range $10^{12} < F \le 2.94\cdot 10^{14}$ gives the same
+$m^* = 10\,781\,274$. (The upper plateau endpoint is $F_{\max}(10781274)$; the
+lower is $F_{\max}(190537)$, which is the largest $F_{\max}$ over all
+$m < 10\,781\,274$ — established exhaustively by Test 21, and independently
+implied by Test 16, whose closest failure at $F = 10^{12}$ is precisely
+$m = 190537$.)
 
 *Certificates.* With the certified decimal enclosure (Lemma A, $n = 80$; Test 15)
 $$\frac{158496250072115618145}{10^{20}} \;<\; \alpha \;<\; \frac{158496250072115618146}{10^{20}},$$
@@ -1036,6 +1066,26 @@ Deliberate search against the README §8 checklist.
 **No gaps found** in L-9913.1–.8 and .11. One item is deliberately **PARTIAL**:
 the $F = 2^{68}$ entry of L-9913.9 is a certified bracket, not an exact value.
 
+* **Addendum (2026-07-25), L-9913.12/.13.** The same audit was re-run for the two
+  new sub-claims. (i) *Status hygiene:* the new floor $\mathrm{(V}_{10^{12}})$ comes
+  from an **unreviewed** experiment, so both sub-claims are labelled PROPOSED and
+  are quarantined from the Main Theorem — no earlier statement cites them.
+  (ii) *Exhaustiveness:* Test 16 decides every $m \le 10\,781\,274$ individually;
+  the record lemma is not used to shorten the search, so no structural assumption
+  enters. (iii) *Precision:* the closest failure has $\alpha$-margin
+  $7.433\cdot10^{-15}$, which is why the coarser $L_0/U_0$ enclosure is explicitly
+  *not* used; the enclosure actually used has width $10^{-20}$, a factor
+  $7.4\cdot 10^{5}$ of slack, and the decision procedure asserts rather than
+  guesses if that ever fails. (iv) *Safe direction:* $\varepsilon_0 > \varepsilon$
+  still holds by Corollary A1, and the substitution is again conservative;
+  moreover $\varepsilon_0 - \varepsilon = \frac{1}{3F}\left(\frac{1000}{693} -
+  \frac{1}{\ln 2}\right) < 1.03\cdot 10^{-16}$ at $F = 10^{12}$, far below both
+  displayed margins ($7.433\cdot10^{-15}$ and $4.794\cdot10^{-13}$), so
+  $m^*(10^{12}) = 10\,781\,274$ is unchanged if the exact $\varepsilon$ is used
+  instead of $\varepsilon_0$. (v) *Vacuity, stated as such:* L-9913.13's conclusion
+  is that a branch is **empty**; it is recorded as "no gain", not dressed up as an
+  improvement.
+
 ---
 
 ## Adversarial tests
@@ -1456,13 +1506,13 @@ L-9909's agree on the overlapping range; it is **not** a re-verification of
 X-9901 by an independent implementation of a different algorithm, and is not
 treated as one.
 
-### Tests 15–19 — the raised floor (addendum of 2026-07-25)
+### Tests 15–21 — the raised floor (addendum of 2026-07-25)
 
 **Finite verification, not proof.** Same discipline as above: exact `int` /
 `Fraction` arithmetic, no floating point in any decision. Script kept at
 `scratchpad/l9913_verify_F12.py` (session-local); full code and verbatim output
 below. Run: `python3 l9913_verify_F12.py` (Python $\ge 3.8$, stdlib only;
-$\approx 10$ s).
+$\approx 14$ s).
 
 Design notes.
 1. **Test 16 is exhaustive**, not structural: it decides $\mathrm{Adm}_F(m)$ for
@@ -1483,17 +1533,25 @@ Design notes.
    the two exhaustive scans (Tests 16 and 17), not three methods.
 4. **Test 18** answers the coordinator's item 4 (does the L-9910 strengthening now
    beat the direct bound?) with exact integer certificates at all three floors.
+5. **Tests 20 and 21** compute the plateau endpoints
+   $F_{\max}(m) = 1000m/(2079 f(m))$, which is where the practical advice lives:
+   the present floor clears the last jump by $1.55\%$, and the *next* jump is not
+   until $F > 2.9446\cdot 10^{14}$. Test 21 is exhaustive over all
+   $m \le 10\,781\,274$ and uses a pleasant simplification: comparing
+   $m/f(m)$ with $m'/f(m')$ is a **pure integer** test, because
+   $m f(m') - m' f(m) = m K_{m'} - m' K_m$ — the $\alpha$-terms cancel exactly.
+   It finds $38$ jump points in total.
 
 ```python
 #!/usr/bin/env python3
 """
-Adversarial tests for the raised-floor addendum of L-9913 (Tests 15-19):
+Adversarial tests for the raised-floor addendum of L-9913 (Tests 15-21):
 m*(10^11), m*(10^12), and the Legendre-window question.
 Agent: fable-02-p8.  Date: 2026-07-25.
 FINITE VERIFICATION ONLY -- not a proof.
 Exact arithmetic throughout (int / fractions.Fraction); floats appear only in
 display strings, never in a decision.
-Run: python3 l9913_verify_F12.py   (Python >= 3.8, stdlib only; ~40 s)
+Run: python3 l9913_verify_F12.py   (Python >= 3.8, stdlib only; ~25 s)
 """
 from fractions import Fraction as Fr
 from math import gcd, isqrt
@@ -1678,6 +1736,54 @@ for F, m, K, kind in ((10**11, 190537, 301994, "winner"),
         print(f"   {lab}: r = {num}/{den};  (N+1)*den = {(N+1)*den} <= {num*D} = r_num*10^20 : {ok}")
     check(f"T19 {lab}", ok)
 
+# ============================================================ Test 20
+# Plateau structure.  Adm_F(m) <=> F <= F_max(m) := 1000 m / (2079 f(m)), so
+# m*(.) is a step function whose jumps are the numbers F_max(m).  Test 16 showed
+# f(m)/m > eps0(10^12) for every m < 10781274, i.e. F_max(m) < 10^12 there, the
+# maximum being attained at the closest failure m = 190537.
+def Fmax(m):
+    K = -((-(m*AHI).numerator)//(m*AHI).denominator)
+    assert K == -((-(m*ALO).numerator)//(m*ALO).denominator)
+    return Fr(1000*m, 2079)/(K - m*ALO), Fr(1000*m, 2079)/(K - m*AHI)
+print("Test 20: plateau endpoints F_max(m) = 1000 m / (2079 f(m)):")
+for m in (15601, 47468, 79335, 190537, 10781274):
+    lo, hi = Fmax(m)
+    check(f"T20 F_max({m}) determined to 10 digits",
+          int(lo*10**10 // 10**len(str(int(lo)))) == int(hi*10**10 // 10**len(str(int(hi)))))
+    print(f"   m = {m:>9}: F_max in [{float(lo):.10e}, {float(hi):.10e}]")
+lo_lo, lo_hi = Fmax(190537)
+hi_lo, hi_hi = Fmax(10781274)
+check("T20: 10^12 lies in the 10781274-plateau", lo_hi < 10**12 < hi_lo)
+print(f"   => m*(F) = 10781274 for every F in (F_max(190537), F_max(10781274)] "
+      f"~ (9.8478e11, 2.9446e14]; the floor 10^12 clears the lower end by "
+      f"{float(10**12/lo_hi - 1)*100:.2f}% and further verification changes "
+      f"nothing until F > 2.9446e14.")
+
+# ============================================================ Test 21
+# Exhaustive certification of the plateau table: the successive record-holders of
+# m/f(m) -- equivalently of F_max(m) -- below m*(10^12) ARE the jump points of the
+# step function F |-> m*(F).  Every m <= 10781274 is examined; each record /
+# non-record verdict is certified by the enclosure (the loop asserts otherwise).
+# The comparison m/f(m) > m'/f(m') is a PURE INTEGER test: with f(m) = K_m - m*alpha,
+# m*f(m') - m'*f(m) = m*K_{m'} - m'*K_m  (the alpha terms cancel exactly).
+t0 = time.time(); recs = []; bm = bK = None
+for m in range(1, 10781275):
+    lo, hi = m*A_LO, m*A_HI
+    K = hi//SC + 1
+    assert lo//SC + 1 == K, ("ceiling undetermined", m)
+    if bm is None or m*bK > bm*K:              # exact: m/f(m) > bm/f(bm)
+        recs.append((m, K)); bm, bK = m, K
+check("T21: jump points below 10^12 are the expected five",
+      [m for m, _ in recs[-5:]] == [15601, 47468, 79335, 190537, 10781274])
+print(f"Test 21: exhaustive over m = 1..10781274: {len(recs)} jump points of "
+      f"m*(.); the last five (with F_max = 1000 m / (2079 f(m))) are  "
+      f"[{time.time()-t0:.1f}s]")
+for m, K in recs[-5:]:
+    a = Fr(1000*m, 2079)/(Fr(K) - m*AHI); b = Fr(1000*m, 2079)/(Fr(K) - m*ALO)
+    print(f"   m = {m:>9}, K = {K:>9}: F_max in [{float(a):.10e}, {float(b):.10e}]")
+print("   => m*(F) = 47468 on (2.8588e8, 1.4480e9], 79335 on (1.4480e9, 7.2176e9],"
+      " 190537 on (7.2176e9, 9.8478e11], 10781274 on (9.8478e11, 2.9446e14].")
+
 print("RESULT:", "ALL CHECKS PASSED" if fails == 0 else f"{fails} FAILURES")
 ```
 
@@ -1688,7 +1794,7 @@ Test 15: certified decimal enclosure (Lemma A, n = 80 terms):
          158496250072115618145/10^20 < alpha < 158496250072115618146/10^20   (width 10^-20)
          Lemma B(iii) enclosure width U0-L0 = 4.720e-11 is too coarse for these floors (smallest margin below is 7.4e-15), so the decimal enclosure is used; both are certified, and L0 < 158496250072115618145/10^20 < 158496250072115618146/10^20 < U0 holds: True
 Test 16: F = 10^11: exhaustive over m = 1..190537: m* = 190537, K* = 301994, K*+m* = 492531; closest failure m = 79335 (K = 125743), margin f(m)/m - eps0 >= 6.1832e-11   [0.1s]
-Test 16: F = 10^12: exhaustive over m = 1..10781274: m* = 10781274, K* = 17087915, K*+m* = 27869189; closest failure m = 190537 (K = 301994), margin f(m)/m - eps0 >= 7.4330e-15   [6.0s]
+Test 16: F = 10^12: exhaustive over m = 1..10781274: m* = 10781274, K* = 17087915, K*+m* = 27869189; closest failure m = 190537 (K = 301994), margin f(m)/m - eps0 >= 7.4330e-15   [5.6s]
 Test 17: additive scan (scale 2^100, 55-term series) reproduces m*(10^11) = 190537 and m*(10^12) = 10781274   [3.8s]
 Test 17: both minimisers are odd-index (above-alpha) convergents of alpha: p13/q13 = 301994/190537 and p15/q15 = 17087915/10781274; the next odd-index denominator is q17 = 171928773.
 Test 18: Legendre-applicable window vs the direct bound:
@@ -1702,6 +1808,20 @@ Test 19: displayed certificates (r := K/m - eps0; admissible iff alpha >= r):
    F=10^11 closest failure m=79335, K=125743: r = 580932659998237/366527700000000;  (N+1)*den = 58093265997557371653131644200000000 <= 58093265999823700000000000000000000 = r_num*10^20 : True
    F=10^12 winner m=10781274, K=17087915: r = 845851792499743303/533673063000000000;  N*den = 84585179249999912825580528135000000000 >= 84585179249974330300000000000000000000 = r_num*10^20 : True
    F=10^12 closest failure m=190537, K=301994: r = 627845525999809463/396126423000000000;  (N+1)*den = 62784552599980651858608871758000000000 <= 62784552599980946300000000000000000000 = r_num*10^20 : True
+Test 20: plateau endpoints F_max(m) = 1000 m / (2079 f(m)):
+   m =     15601: F_max in [2.8587828883e+08, 2.8587828883e+08]
+   m =     47468: F_max in [1.4479896944e+09, 1.4479896944e+09]
+   m =     79335: F_max in [7.2176350614e+09, 7.2176350614e+09]
+   m =    190537: F_max in [9.8478191629e+11, 9.8478191629e+11]
+   m =  10781274: F_max in [2.9446434989e+14, 2.9446434989e+14]
+   => m*(F) = 10781274 for every F in (F_max(190537), F_max(10781274)] ~ (9.8478e11, 2.9446e14]; the floor 10^12 clears the lower end by 1.55% and further verification changes nothing until F > 2.9446e14.
+Test 21: exhaustive over m = 1..10781274: 38 jump points of m*(.); the last five (with F_max = 1000 m / (2079 f(m))) are  [4.0s]
+   m =     15601, K =     24727: F_max in [2.8587828883e+08, 2.8587828883e+08]
+   m =     47468, K =     75235: F_max in [1.4479896944e+09, 1.4479896944e+09]
+   m =     79335, K =    125743: F_max in [7.2176350614e+09, 7.2176350614e+09]
+   m =    190537, K =    301994: F_max in [9.8478191629e+11, 9.8478191629e+11]
+   m =  10781274, K =  17087915: F_max in [2.9446434989e+14, 2.9446434989e+14]
+   => m*(F) = 47468 on (2.8588e8, 1.4480e9], 79335 on (1.4480e9, 7.2176e9], 190537 on (7.2176e9, 9.8478e11], 10781274 on (9.8478e11, 2.9446e14].
 RESULT: ALL CHECKS PASSED
 ```
 
@@ -1748,6 +1868,29 @@ RESULT: ALL CHECKS PASSED
    the literature, no assertion that $2966$ is anywhere near optimal — the true
    obstruction is expected to be far larger. This file's contribution is that
    $2966$ is *fully certified inside this repository*, end to end.
+7. **(Addendum.) The $m \ge 10\,781\,274$ headline rests on an unreviewed
+   experiment.** L-9913.12/.13 consume X-9903's $\mathrm{(V}_{10^{12}})$. Its
+   recorded provenance is strong on its face — in particular an overflow-*refusing*
+   kernel, which matters here: the maximum excursion over the range is
+   $4.0\cdot10^{23}$ at $n = 871\,673\,828\,443$, i.e. $21\,714\times$ above
+   $2^{64}$, so a wrapping $64$-bit kernel would have been silently wrong; plus
+   digest-identical runs across three optimisation levels and five sieve moduli,
+   and a checksum gate on $n \le 10^6$ agreeing with X-9901. **But this file
+   re-verified none of it.** A reviewer who wants the $10\,781\,274$ headline must
+   review X-9903 itself; the arithmetic on this side is exhaustive and certified
+   (Tests 15–21). The ladder of standing is: $m \ge 2966$ (floor reviewed, this
+   file PROVED) $\;\to\; m \ge 47468$ (floor = this file's X-9913, unreviewed)
+   $\;\to\; m \ge 10\,781\,274$ (floor = X-9903, unreviewed).
+8. **(Addendum.) $m^*(10^{12})$ sits on a knife edge that $m^*(10^6)$ did not.**
+   The closest failure, $m = 190537$, misses admissibility by only
+   $7.433\cdot 10^{-15}$ in $\alpha$-units, i.e. by a relative $1.55\%$ of
+   $\varepsilon_0$. Had the floor been $\approx 1.6\%$ lower — anywhere below
+   $F \approx 9.85\cdot 10^{11}$ — $m^*$ would collapse from $10\,781\,274$ back to
+   $190537$, a factor $57$. The value is exact and certified, but it is *not*
+   robust to small changes in $F$, and no reader should treat the step from
+   $47468$ to $10\,781\,274$ as a smooth trend (item (iv) of the Gap-audit
+   addendum shows the $\varepsilon_0$-vs-$\varepsilon$ slack is safely inside the
+   margin, so that particular worry is discharged).
 
 ---
 
@@ -1784,6 +1927,24 @@ RESULT: ALL CHECKS PASSED
    different software, (iii) hunting for an $m < 2966$ where my decision procedure
    silently used a too-coarse enclosure (the script asserts on that condition, so
    this would have to be an assertion bug).
+6. **(Addendum.) Where the next jump lives.** At $F = 10^{12}$ the bound is attained
+   *at* an odd-index convergent ($m^* = q_{15} = 10\,781\,274$), so — unlike at
+   $F = 10^6$, where the minimiser was a semiconvergent — the convergent structure
+   can no longer sharpen it (L-9913.13). The next odd-index convergent denominator
+   is $q_{17} = 171\,928\,773$, a factor $15.9$ higher. Two routes to it:
+   **(a)** a larger verified floor — mechanical, but the value must be *computed*,
+   not extrapolated (the plateaux are long and irregular — see the plateau table
+   in L-9913.12; in particular **nothing changes until $F > 2.9446\cdot10^{14}$**,
+   so the immediate next verification milestone worth funding is $F \approx
+   3\cdot 10^{14}$, not $10^{13}$); **(b)** an independent obstruction killing the
+   single pair $(m,K) = (10\,781\,274,\ 17\,087\,915)$ and the semiconvergent
+   admissible values just above it — a divisibility/composition argument at
+   $m \approx 10^{7}$, far beyond L-9915's enumeration range, so probably only
+   reachable by a structural (2-adic or exponent-statistics) route.
+7. **(Addendum.) Review X-9903.** The cheapest way to make the strongest statement
+   in this file *stand* is not more mathematics but an independent review of the
+   floor experiment — ideally a re-run with a different kernel (different sieve
+   modulus and a different overflow strategy) reproducing its digests.
 
 ---
 *File authored by fable-02-p8, 2026-07-25. Status PROPOSED per NOTATION.md
