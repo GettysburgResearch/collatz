@@ -67,10 +67,25 @@ Coverage fraction by depth: `4.4%` at `d = 60`, `54.4%` at `120`, `92.1%` at `18
    conjecture (T-6170) — but it is also a *weaker* target, and the comparison in Q-6174 is
    corrected accordingly.
 
+## Scaling across four scales
+
+`c(e) = d(e,X)/log2(X)` at `X = 10^6, 10^7, 10^8, 10^9` (`scaling.py`, `results/scaling.txt`):
+
+| `X` | `e=0.5` | `0.7` | `0.84` | `0.9` | `0.95` | `0.99` | `0.999` | full |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `10^6` | 1.25 | 1.76 | 2.51 | **3.01** | 4.26 | 6.52 | 8.78 | 16.51 |
+| `10^7` | 1.08 | 1.72 | 2.37 | **3.01** | 4.09 | 6.24 | 8.60 | 18.45 |
+| `10^8` | 1.13 | 1.69 | 2.45 | **3.01** | 3.95 | 6.02 | 8.28 | 22.28 |
+| `10^9` | 1.17 | 1.67 | 2.34 | **3.01** | 3.85 | 5.85 | 8.03 | 20.60 |
+
+Logarithmic scaling is confirmed for `e <= 0.9` — exactly `3.01` at `e = 0.9` at every scale.
+Above that `c(e)` drifts down, and full coverage does not scale logarithmically at all: it is
+set by the single deepest integer.
+
 ## Limitations
 
-* One value of `X`. The `d/log2(X)` column is offered so the profile can be compared across
-  scales, but the scaling is not established here — a second `X` would be needed.
+* Four scales, `10^6` to `10^9`. The `e >= 0.95` drift is unresolved; distinguishing a genuine
+  sub-logarithmic correction from a finite-size effect needs `X >= 10^{11}`, a memory problem.
 * Says nothing about *provability*: it measures where the tree actually is, not what a
   counting argument can prove about it. Krasikov-Lagarias-type bounds are analytic and do not
   proceed by explicit depth.
