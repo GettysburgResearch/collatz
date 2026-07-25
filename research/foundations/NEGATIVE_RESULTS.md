@@ -109,6 +109,18 @@ minimum and the gap widens with N.
   structural reason recorded. Relatedly, (2 − log₂3)·m ≈ 0.415m is the hard ceiling of any counting
   bound of this type for the exponent-1 count (L-9917.6).
 
+### 3.0b The sorted/dictionary approach is exhausted, and the reason is identified (L-9920)
+
+L-9920 proves that its bound Q(m,K) is the **best possible** extractable from distinctness + the
+floor 7 + the full exponent–residue dictionary. That ceiling eliminates exactly 48 values of m,
+all ≤ 171, and provably none beyond m = 207 (threshold 196 → 208). So the entire family of
+"sharper sorted floors" is now closed: no refinement of element lower bounds can do better.
+
+The identified reason is structural and points at the next move: the bound maximises over element
+**sets** and never uses that a cycle is **closed under S**. Every maximiser it finds is wildly
+non-S-closed (at m = 13 the maximiser contains 7, 11, 17, 13 but S(13) = 5 is absent). **The next
+real gain must come from closure, not from finer floors** — recorded as Q-9920-A.
+
 ### 3.1 No cycle-elimination result can hold uniformly in q (L-9921, PROPOSED)
 
 Q-9904 ("is every rational in Z₂ eventually T-periodic?") reduces **exactly** to "for every positive

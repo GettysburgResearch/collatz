@@ -691,7 +691,7 @@ Exact-arithmetic verification suite, labels T1–T9. Python 3; integers and
 # L-9920 verification suite  (author: fable-02-p14)
 # Exact integer / Fraction arithmetic only; no floating point is used in
 # any decision (floats appear only in clearly labelled display ratios).
-# Tests T1..T8; every test asserts, and prints PASS lines.
+# Tests T1..T9; every test asserts, and prints PASS lines.
 # =====================================================================
 from fractions import Fraction
 import itertools, time
@@ -1273,8 +1273,11 @@ scan parameters: m <= 208, Emax = K-m <= 122, items (classes t>=2) = 609, larges
   the gain is ~0.015 bit and (numerically) tends to a constant: the refined
   width keeps L-9917's (1/6)log2(m) rate, with the constant lowered by ~0.015.
 
-ALL TESTS PASSED   (total 30.9 s)
+ALL TESTS PASSED   (total 29.2 s)
 ```
+
+*(The final wall-clock figure is the only line that varies between runs; every other line
+above is reproduced byte-for-byte by the script as printed.)*
 
 **What each test could have exposed, and did not.**
 
