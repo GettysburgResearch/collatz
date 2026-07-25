@@ -18,6 +18,7 @@ A positive atom is marked `P`; a decisive classification/filter is marked `N`. E
 - [`cartography/ATOMS_PASS_3_REVIEWED.md`](cartography/ATOMS_PASS_3_REVIEWED.md)
 - [`cartography/ATOMS_PASS_4.md`](cartography/ATOMS_PASS_4.md)
 - [`cartography/ATOMS_PASS_5.md`](cartography/ATOMS_PASS_5.md)
+- [`cartography/FINITE_ALGEBRAIC_NUCLEUS_RIGIDITY.md`](cartography/FINITE_ALGEBRAIC_NUCLEUS_RIGIDITY.md) — `ACL-N092`
 
 ## Identifier corrections
 
@@ -31,7 +32,7 @@ A positive atom is marked `P`; a decisive classification/filter is marked `N`. E
 | sanctuary | `P003`, `P072` | DFA closure avoiding the trivial cycle |
 | changing-height refund | `P036`, `N076`, `P044` | one physical PR #49 intrinsic core defined forever |
 | negative-three chart | `P040`, `P042`, `N081` | one ordinary run-core state legal forever |
-| fixed six-branch chart | `P043` | one fixed-scale quotient state legal forever |
+| fixed six-branch chart | `P043`, `N092` | decide bounded least roots or escape; finite algebraic full-tail nuclei are excluded |
 | H | `P030`, `P031`, `P035`, `P045`, `N080` | one positive H renewal counter legal forever |
 | common refund theorem | `N085` | top-boundary recurrence or universal exit theorem |
 | cross-cycle | `P019`, `N019`, `N079` | finite return or genuine multi-phase nontermination |
@@ -51,6 +52,7 @@ A positive atom is marked `P`; a decisive classification/filter is marked `N`. E
 | `N084` | what is the exact globally feasible `(length,support,height)` cycle region? |
 | `N085` | which refund machines admit an ordinary top-boundary recurrence theorem? |
 | `N086` | can all cycle compiler interfaces be made compatible at the full denominator? |
+| `N092` | can a finite algebraic full-tail section extract a smaller ordinary root? **No:** under the rigid-alphabet criterion it collapses to the original forward map. |
 
 ## Acceptance rule
 
