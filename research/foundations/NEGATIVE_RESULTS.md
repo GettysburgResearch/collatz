@@ -126,6 +126,24 @@ The one real gain is categorical: on Λ_q = (1/q)Z ≅ Z the integer pigeonhole 
 discrete), so archimedean methods are meaningful there and L-9907.1's lower envelope ports with
 proof. The deep half (L-9907.2) is left as an explicitly labelled unverified port.
 
+### 3.2 The 3-adic collapse: mod-6 joint sieving is mostly repackaging (L-9919, PROPOSED)
+
+Descent depth under D(y) = (2y−1)/3 has the closed form **d(y) = ν₃(y+1)** (in the shifted
+coordinate u = y+1, D is exactly multiplication by 2/3), so "deep descent" is a single congruence
+y ≡ −1 mod 3^d rather than a rich 3-adic condition. Joining it to L-9909's mod-2^k survivor sieve
+gives a sieve that **is** strictly stronger for every k ≥ 6 — but only by a **bounded factor**
+(survivor-count ratio confined to [1.056, 1.298] over 6 ≤ k ≤ 30, with the per-level rate
+difference *decreasing*: 0.032 at k = 6 down to ≈0.010–0.013 by k = 24–30). There is no evidence
+of an improved exponential decay rate; the gain is a constant factor of roughly 0.51–0.59 in
+density, roughly uniform in k.
+
+The reason is a proved **collapse theorem**: the branch that would actually use 3-adic information
+about n collapses to the single congruence μ ≢ 2 (mod 3), while all the genuine new strength sits
+in the branch that uses no 3-adic input at all. So mod-6 joint sieving is not the richer object it
+appears to be. Genuinely new and worth keeping: d(y) = ν₃(y+1) and the amplified floor
+y + 1 ≥ (3/2)^d(μ+1); the congruence **μ ≡ 3 or 7 (mod 12)** (L-9909/L-9911 stopped at μ ≡ 3 mod 4);
+and the augmented survivor tables.
+
 ## 4. Refuted or corrected claims (recorded so they are not repeated)
 
 Caught by adversarial review inside this packet:

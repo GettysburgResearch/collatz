@@ -1619,13 +1619,116 @@ witness: class 63 mod 256 (a pure-descent survivor, killed by the word DMDDDD at
        chain: [70895, 47263, 94526, 63017, 42011, 28007, 18671]
 ```
 
+### Script 5 — `l9919_rate.py` (L-9919.5(c): constant factor or better rate?)
+
+```python
+#!/usr/bin/env python3
+# l9919_rate.py -- L-9919.5(c): is the gain of the augmented sieve over L-9909
+# a constant factor or an improved exponential rate?  Exact counts to k = 30.
+# Agent: fable-02-p13.  Python 3 stdlib only; counts exact, logs float (display only).
+import sys, math
+sys.setrecursionlimit(200000)
+KMAX = 30
+
+def nu3(x):
+    if x == 0: return None
+    v = 0
+    while x % 3 == 0: x //= 3; v += 1
+    return v
+
+def killed(j, a, delta):
+    """some 0 <= d <= min(a, nu_3(delta)) has 3^{a-d} < 2^{j-d} (monotone: test d = max)"""
+    v = nu3(delta); m = a if v is None else min(a, v)
+    return 3**(a-m) < 2**(j-m)
+
+cnt = [0]*(KMAX+1)
+def dfs(k, a, delta):
+    cnt[k] += 1
+    if k == KMAX: return
+    p = 1 << k
+    for b in (0, 1):
+        a2 = a+b; d2 = 3*delta if b == 1 else delta + p
+        if not killed(k+1, a2, d2): dfs(k+1, a2, d2)
+dfs(0, 0, 0)
+
+old = [0]*(KMAX+1); dp = {0: 1}; old[0] = 1
+for j in range(1, KMAX+1):
+    nd = {}
+    for a, c in dp.items():
+        for b in (0, 1):
+            a2 = a + b
+            if 3**a2 >= 2**j: nd[a2] = nd.get(a2, 0) + c
+    dp = nd; old[j] = sum(dp.values())
+
+print("  k     L-9909      augmented    old/new   log2(old/new)   (1/k)log2(old/new)")
+rat = []; lg = []
+for k in range(1, KMAX+1):
+    o, n = old[k], cnt[k]
+    r = o/n; L = math.log2(r)
+    if k >= 6: rat.append(r); lg.append(L)
+    print("%3d %10d %14d   %8.5f     %9.5f          %9.5f" % (k, o, n, r, L, L/k))
+print()
+print("over 6 <= k <= %d :  old/new in [%.5f, %.5f] ; log2(old/new) in [%.5f, %.5f]"
+      % (KMAX, min(rat), max(rat), min(lg), max(lg)))
+print("rate difference (1/k)log2(old/new) at k = 6,12,18,24,30 : %s"
+      % ", ".join("%.4f" % (math.log2(old[k]/cnt[k])/k) for k in (6,12,18,24,30)))
+print("joint density / L-9909 density = (2/3)/(old/new) at k = 6,12,18,24,30 : %s"
+      % ", ".join("%.4f" % ((2/3)*cnt[k]/old[k]) for k in (6,12,18,24,30)))
+```
+
+Output:
+
+```text
+  k     L-9909      augmented    old/new   log2(old/new)   (1/k)log2(old/new)
+  1          1              1    1.00000       0.00000            0.00000
+  2          1              1    1.00000       0.00000            0.00000
+  3          2              2    1.00000       0.00000            0.00000
+  4          3              3    1.00000       0.00000            0.00000
+  5          4              4    1.00000       0.00000            0.00000
+  6          8              7    1.14286       0.19265            0.03211
+  7         13             12    1.08333       0.11548            0.01650
+  8         19             18    1.05556       0.07800            0.00975
+  9         38             32    1.18750       0.24793            0.02755
+ 10         64             57    1.12281       0.16711            0.01671
+ 11        128            102    1.25490       0.32757            0.02978
+ 12        226            192    1.17708       0.23522            0.01960
+ 13        367            324    1.13272       0.17979            0.01383
+ 14        734            593    1.23777       0.30775            0.02198
+ 15       1295           1100    1.17727       0.23545            0.01570
+ 16       2114           1855    1.13962       0.18856            0.01178
+ 17       4228           3407    1.24097       0.31147            0.01832
+ 18       7495           6329    1.18423       0.24395            0.01355
+ 19      14990          11698    1.28142       0.35774            0.01883
+ 20      27328          22384    1.22087       0.28791            0.01440
+ 21      46611          39549    1.17856       0.23703            0.01129
+ 22      93222          73718    1.26458       0.33865            0.01539
+ 23     168807         139084    1.21371       0.27942            0.01215
+ 24     286581         243479    1.17703       0.23515            0.00980
+ 25     573162         453678    1.26337       0.33727            0.01349
+ 26    1037374         854473    1.21405       0.27983            0.01076
+ 27    1762293        1494916    1.17886       0.23739            0.00879
+ 28    3524586        2787223    1.26455       0.33863            0.01209
+ 29    6385637        5250800    1.21613       0.28229            0.00973
+ 30   12771274        9842401    1.29758       0.37582            0.01253
+
+over 6 <= k <= 30 :  old/new in [1.05556, 1.29758] ; log2(old/new) in [0.07800, 0.37582]
+rate difference (1/k)log2(old/new) at k = 6,12,18,24,30 : 0.0321, 0.0196, 0.0136, 0.0098, 0.0125
+joint density / L-9909 density = (2/3)/(old/new) at k = 6,12,18,24,30 : 0.5833, 0.5664, 0.5630, 0.5664, 0.5138
+```
+
+The augmented counts at $k \le 24$ agree with PART C of Script 2 (independent
+implementation: Script 2 recurses on `kill_events`, Script 5 on the closed-form
+monotonicity test at $d = m_j$); the L-9909 counts at $k \le 8$ agree with L-9909.4.
+
 ### Reproducibility self-check
 
-All four blocks above were re-extracted from this Markdown file, written to fresh
-files, executed, and their stdout compared byte-for-byte with the recorded outputs;
-all four matched. Total runtime on the authoring machine: about 25 s. No block is a
+All five code blocks above were re-extracted from this Markdown file by a script that
+parses the ```` ```python ```` / ```` ```text ```` pairs, written to fresh files,
+executed, and their stdout compared **byte-for-byte** with the recorded outputs; all
+five matched. Total runtime on the authoring machine: about 38 s. No block is a
 placeholder; every number displayed above was produced by the code shown immediately
-above it.
+above it. (One transcription error — a whitespace shift in Script 4's last line — was
+caught by exactly this check and fixed.)
 
 ### Negative / sharpness probes attempted
 
