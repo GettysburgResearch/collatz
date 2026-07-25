@@ -1,0 +1,91 @@
+{
+  "base_constant": 2542081306853405,
+  "base_word": [
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2
+  ],
+  "constant_span": 488696643722610,
+  "distinct_constant_count": 1024,
+  "experiment_id": "X-9612",
+  "maximum_constant": 2628504745016591,
+  "maximum_residue": 356882772173939,
+  "mechanical_slope": {
+    "p": 19,
+    "q": 30
+  },
+  "minimum_constant": 2139808101293981,
+  "minimum_residue": 116668550076,
+  "signed_deltas": [
+    45753584909922,
+    40669853253264,
+    -36150980669568,
+    -42845606719488,
+    -38084983750656,
+    -45137758519296,
+    -53496602689536,
+    -63403380965376,
+    -56358560858112,
+    -66795331387392
+  ],
+  "single_block_divisor_hits": [],
+  "status": "EXACT FINITE BASE-LIBRARY AUDIT",
+  "sum_absolute_deltas": 488696643722610,
+  "summary": {
+    "D": 357058821326663,
+    "P": 205891132094649,
+    "Q": 562949953421312,
+    "odd_state_length": 30,
+    "total_valuation": 49
+  },
+  "swap_positions": [
+    0,
+    2,
+    4,
+    7,
+    9,
+    12,
+    15,
+    18,
+    20,
+    23
+  ],
+  "theorem_interface": {
+    "all_repetition_conclusion": "L-9608 reduces every full-denominator hit over this library to a pure power of one base variant",
+    "narrow_library_hypothesis": true,
+    "not_proved": [
+      "a positive cycle outside this library",
+      "a divergent orbit",
+      "the Collatz conjecture or its negation"
+    ]
+  },
+  "variant_count": 1024,
+  "variant_residue_transcript_sha256": "d21492c18b71f2dbb4869357f746c3a04b44818e9f008dfaba67070494fbc95a"
+}
