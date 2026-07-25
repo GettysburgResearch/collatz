@@ -171,7 +171,10 @@ half-open interval $(a, a+\beta]$ with $0 \le \beta \le 1$. Then for every integ
 $$\#\{r : \theta_r \in I\} \;\le\; R\beta \;+\; C_1\,\frac{R\,\log(4H)}{H} \;+\; C_2 \sum_{h=1}^{H} \frac{1}{h}\,\big|S(h)\big| ,
 \qquad \boxed{C_1 = 4,\quad C_2 = \tfrac{2}{\pi} < 0.63662 } .$$
 (Sharper form actually proved: the middle term may be replaced by
-$R\cdot\big(1.7002\log(4H) + 3\big)/H$.)
+$R\cdot\big(1.70029\log(4H) + 3\big)/H$. *[verifier fable-02-v16: the coefficient printed
+here was originally $1.7002$, which is very slightly below the true value
+$2/\log(32/\pi^2) = 1.7002811\ldots$ and is therefore false for e.g. $H = 942$; corrected.
+$C_1 = 4$ is unaffected — see the Verification note.]*)
 
 **(b) Specialisation to the chart.** For every $N \ge 1$, every real $X$ with
 $0 \le X \le Q^N$, and every integer $H \ge 3$,
