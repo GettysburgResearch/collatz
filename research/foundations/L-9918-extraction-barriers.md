@@ -10,11 +10,12 @@ Title:         Cylinder architectures at full generality: (A) the extraction
                the exact admissible region of Erdos-Turan constant pairs, the
                undecidability of extraction in general, and the generalized
                Parseval obstruction.
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p12
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v20 (adversarial review 2026-07-25: PASS)
 Created:       2026-07-25
-Last updated:  2026-07-25
+Last updated:  2026-07-25 (fable-02-v20: adversarial review; six documented
+               fixes, none load-bearing; see the Verification note at the end)
 Dependencies:  research/foundations/NOTATION.md (D-9902 shortcut map T, D-9906
                parity vector, D-9907 bounded/divergent, conventions: Z^+, nu_2,
                Z_(2), empty sums/products, status semantics, "computation is
@@ -197,9 +198,13 @@ $A_w \ge \lambda^{|w|}M^{|w|}$ for every admissible $w$.
 > $\sigma(n) = \infty$ (D-9910), and L-9909's Corollary gives a converse for $n$ above an
 > explicit bound; neither statement is imported here.
 >
-> **E4 — the $(1110)^\infty$ architecture (L-9918.4).** $M = 2$, $C_N$ the single class
-> $\equiv (-19)\cdot 11^{-1} \bmod 2^{4N}$ ($R_N = 1$), i.e. E2 for the fixed word
-> $b = (1110)^\infty$ read four bits at a time. Supercritical
+> **E4 — the $(1110)^\infty$ architecture (L-9918.4).** $M = 16$, $C_N$ the single class
+> $\equiv (-19)\cdot 11^{-1} \bmod 16^{N}$ ($R_N = 1$), i.e. E2 for the fixed word
+> $b = (1110)^\infty$ read four bits at a time. *(Equivalently one may take the base-$2$
+> architecture with $C_N$ the class of $(-19)\cdot11^{-1}$ mod $2^N$ for **every** $N$,
+> which is what T2/ARCH 5 computes; the two are cofinal subfamilies of one nested family,
+> so they have the same $\bigcap_N S_N$. The base was corrected from "$M=2$ with classes
+> mod $2^{4N}$" — inconsistent with D-9918.1(1) — by fable-02-v20.)* Supercritical
 > ($3^3 = 27 > 16 = 2^4$). This is the canonical example with all $S_N$ infinite and
 > $\bigcap_N S_N = \emptyset$.
 
@@ -773,7 +778,15 @@ brute-force confirmation that $S_1, S_2$ are exactly the predicted classes.)*
 (A_{w'}y+\kappa_{w'})/M^q$ then
 $$\Phi^{p+q}(x) = \frac{A_{w'}\frac{A_wx+\kappa_w}{M^p}+\kappa_{w'}}{M^q}
 = \frac{A_wA_{w'}x + A_{w'}\kappa_w + M^p\kappa_{w'}}{M^{p+q}},$$
-so $A_{ww'} = A_wA_{w'}$ and $\kappa_{ww'} = A_{w'}\kappa_w + M^{p}\kappa_{w'}$. Iterating
+so $A_{ww'} = A_wA_{w'}$ and $\kappa_{ww'} = A_{w'}\kappa_w + M^{p}\kappa_{w'}$.
+*(Reviewer's note, fable-02-v20: this composition step uses, besides (AF2), the
+**finite-level** form of shift equivariance — for admissible $ww'$ and every $x$ in the
+class $c(ww')$, $\Phi^{p}(x)$ lies in $c(w')$ — whereas (AF3) as stated asserts the shift
+property only on $\widehat S_\infty$. It holds in E1, in E2 and in every $M$-adic affine
+branch system, and should be read as part of (AF3); it is also what makes the iterates in
+(AF2) well defined. **Nothing below depends on it:** the identity actually used in (2)–(6),
+$(M^p - A_w)z = \kappa_w$, is obtained in the next paragraph from (AF2), (AF3) on
+$\widehat S_\infty$, and separation of addresses alone.)* Iterating
 with $w' = w^{k-1}$ gives $A_{w^k} = A_w^k$ and, by induction,
 $\kappa_{w^k} = \kappa_w\sum_{i=0}^{k-1}A_w^{\,k-1-i}M^{\,pi} = \kappa_w\frac{A_w^k -
 M^{pk}}{A_w - M^p}$ (a finite geometric identity; if $A_w = M^p$ the quotient is read as
@@ -969,7 +982,11 @@ $$\psi(u_0) = \frac{a}{a\pi} + \frac{\log(a\pi)}{\pi} = \frac{1 + \log(a\pi)}{\p
 = \frac{1 + \log(4\pi\log 12)}{\pi} = \frac{4.4412593\ldots}{\pi} = 1.4136968\ldots$$
 
 Combining, $\Lambda > 1.413696 > 1$ for every $R \ge 1$ and every $H \ge 3$, so ($\dagger$)
-fails and (ET) with these data never fires. (The bound is uniform in $R$; the true minima
+fails and (ET) with these data never fires. *(For the only integer cut-offs not covered,
+$H \in \{1,2\}$, the resolution term alone already exceeds $1$: it equals $4R\log 4 \ge
+5.545$ at $H=1$ and $2R\log 8 \ge 4.158$ at $H=2$, so (ET) cannot fire there either and
+the restriction $H \ge 3$ costs nothing. Added by fable-02-v20.)*
+(The bound is uniform in $R$; the true minima
 computed in T5 are $1.6678$ at $R=1$, $1.7727$ at $R=6$, $2.0891$ at $R=10^6$ — all above
 the proved threshold, as they must be.) $\square$
 
@@ -1164,7 +1181,8 @@ this one: no circularity.
   $|g|\equiv1$).
 * **Confusion of empirical and universal.** Every table is labelled. T1–T5 verify proved
   statements; **no proof cites a computation.** The only empirical statements in the file are:
-  the numerical minima in L-9918.7(f)'s parenthesis (the *proved* bound there is $1.5388$),
+  the numerical minima in L-9918.7(f)'s parenthesis (the *proved* bound there is
+  $1.413696$; corrected from a stale draft value by fable-02-v20),
   the consistency figures in Q-9918a, the $m_N$/survivor tables in Part C and T2, and the
   search results in the hostile audit of L-9918.6.
 * **Invalid interchange of limits.** None taken. The only limits are $m_N\to\infty$ (monotone),
@@ -1174,7 +1192,7 @@ this one: no circularity.
 * **Circular dependence.** None; see the audit table. L-9918.7 uses L-9918.6, which uses only
   Fejér positivity; L-9918.7 does not use any (ET) inequality's truth, only its shape.
 * **Nonuniform estimates.** All constants in Part B are absolute: $\tfrac12$ in L-9918.6;
-  $\Theta$, $\Psi$, $e^{\pi-1}/\pi$, $19.73524$, $1.070796$, $1.538866$ in L-9918.7. None
+  $\Theta$, $\Psi$, $e^{\pi-1}/\pi$, $19.73524$, $1.070796$, $1.413696$ in L-9918.7. None
   depends on $N$, $R$, $H$ or on the point set. The bound in (f) is uniform in $R\ge1$.
 * **Assumptions equivalent to Collatz.** None. No statement of this file asserts anything
   about Collatz; E2/E3/E4 are architectures *built from* $T$, and the theorems about them are
@@ -2256,7 +2274,7 @@ Re-running the harness after it was itself embedded produced identical output (c
    L-9918.7(d), where the case analysis $2C_1 \lessgtr C_2$ and the behaviour of $\Psi$ at
    $s = 2$ interlock (machine-checked on a $28680$-point grid in T5, but a case-split of this
    kind is where an inequality flips); (b) the constant chase in L-9918.7(f) (two explicit
-   numerical thresholds, $4\log12$ and $\log 39.7582$); (c) the Abel summation in
+   numerical thresholds, $a = 4\log 12 = 9.9396266$ and $u_0 = a\pi = 31.226258$); (c) the Abel summation in
    L-9918.6 Step 2, where an off-by-one changes the additive constant.
 
 ---
@@ -2292,3 +2310,1010 @@ Re-running the harness after it was itself embedded produced identical output (c
 ---
 
 Signed: **fable-02-p12**, 2026-07-25.
+
+---
+
+## Verification note (fable-02-v20, 2026-07-25)
+
+**Verdict: PASS.** Every claim of L-9918 (D-9918.1–.3, L-9918.1–.9, the four exhibited
+architectures, the Dependency/Gap audits) was checked independently, and I found no
+substantive error. Six defects were found and fixed in place; all six are editorial or
+presentational, none touches a proof of a stated result, and each is listed in §9 below
+with the exact edit. Status upgraded PROPOSED → PROVED. I did **not** set
+INDEPENDENTLY_VERIFIED.
+
+**Method.** I read README §7/§13 and NOTATION.md, then the file, then re-derived every
+load-bearing step on paper before running anything. All computation below is mine
+(scripts V-A…V-D, written from the *statements* only; the author's `t1…t6` scripts were
+not read for logic, only re-run for reproduction). L-9904, L-9909, L-9916 are cited by the
+file as context only; I confirmed nothing is imported from them, so their status does not
+propagate here. No result of this file is used by any of its dependencies and none of them
+cites it (checked by grep across the repo): no circularity.
+
+### 1. L-9918.9 (undecidability) — the deepest check, reported in full
+
+This is the file's most consequential and least expected claim, so I state exactly how far
+I went. **I reconstructed the reduction completely and independently, and then drove it
+with a real single-tape Turing-machine simulator** (V-D §(i)) rather than with an assumed
+halting time. Specifically:
+
+1. **The architecture.** $c_N := (2^{\min(N,t(e))}-1) \bmod 2^N$, $C_N := \{c_N\}$,
+   $M = 2$, $R_N = 1$. Re-derived, not copied.
+2. **Computably presented (the file's own definition: $(N,c)\mapsto[c\in C_N]$
+   computable).** Deciding $c \in C_N$ means computing $c_N$ and comparing. Computing $c_N$
+   simulates $e$ for **exactly $N$ steps** — a bounded, always-terminating computation —
+   and outputs $2^t-1$ if it halted at some $t \le N$, else $2^N-1$. So the presentation is
+   **total** computable, uniformly in $(e,N)$. **Confirmed.** (Timed on a non-halting
+   machine to level 300: no divergence.)
+3. **Refinement at every level.** By hand, both cases. If $N < t(e)$: $c_N = 2^N-1$,
+   $c_{N+1} = 2^{N+1}-1 = 2^N + (2^N-1) \equiv 2^N - 1 \pmod{2^N}$. If $N \ge t(e)$:
+   $\min(N,t) = \min(N+1,t) = t$ and $2^t-1 < 2^N$, so $c_{N+1} = c_N = 2^t-1$ *as
+   integers*. **Confirmed**, and re-checked mechanically at every level $N < 40$ for seven
+   machines (halting times $1,2,3,5,8,13$ and a non-halting one).
+4. **$R_N = 1$, and D-9918.1(1) at $N = 0$.** $C_N$ is a singleton by construction;
+   $c_0 = 0$ and $\mathbb{Z}/1 = \{0\}$, so $C_0 = \mathbb{Z}/1$, $R_0 = 1$ as D-9918.1
+   requires. **Confirmed.**
+5. **Halting $\Rightarrow$ seed.** $x := 2^{t}-1$. For $N \ge t$: $x < 2^N$ so
+   $x \bmod 2^N = 2^t-1 = c_N$. For $N < t$: $x - (2^N-1) = 2^N(2^{t-N}-1)$. **Confirmed**
+   by hand and mechanically (membership checked to level $200$, well past the level where
+   the class freezes).
+6. **Non-halting $\Rightarrow$ no seed.** $c_N = 2^N-1$ for all $N$, so $m_N = 2^N-1 \to
+   \infty$ and L-9918.1(3) gives $\bigcap_N S_N = \emptyset$; independently,
+   $x \equiv -1 \pmod{2^N}$ for all $N$ forces $x+1 = 0$ by Lemma A.0(iv). **Confirmed.**
+7. **Many-one and total.** The map $e \mapsto$ (an index for the presentation) is total
+   computable by s-m-n, the equivalence is an **iff**, and every output is a *valid*
+   architecture. Hence $\mathrm{HALT} \le_m \mathrm{EXTRACTION}$: a **decision** procedure
+   for extraction would decide halting — this is not a semi-decision artefact.
+   **Confirmed.** (Formally EXTRACTION is a promise problem — not every program presents an
+   architecture — but the reduction always lands inside the promise, so undecidability
+   holds for the promise problem and for every total extension of it.)
+8. **The complexity remarks.** With membership decidable, $\exists x\,\forall N\,(x\in S_N)$
+   is $\Sigma^0_2$ and, for fixed $x$, $\exists N\,(x\notin S_N)$ is $\Sigma^0_1$.
+   **Confirmed.** Only $\Sigma^0_1$-hardness is claimed, consistent with the file's own note
+   that the $\Sigma^0_2$-hardness attempt was left incomplete.
+
+**One boundary case, recorded (not a defect, but read it).** If one works in a TM model in
+which a machine may halt *before executing any step*, i.e. $t(e) = 0$, the construction as
+written gives $c_N = 0$ for all $N$, hence $m_N = 2^N \to \infty$ and **no seed although
+the machine halts** (V-D verifies this). The file forecloses this by *stipulating*
+$t(e) \in \mathbb{Z}^+\cup\{\infty\}$, so the proof as written is correct; and the claim is
+in any case untouched, since halting-in-$\ge 1$-step is still undecidable (pad any machine
+with one dummy step). The one-line repair $c_N := (2^{\min(N,t)+1}-1)\bmod 2^N$ was tested
+and works for $t = 0$ as well. I left the text unchanged and record the caveat here.
+
+**Reading vs theorem.** The gloss "no method using only the architecture's
+counting/refinement data can decide extraction" follows *a fortiori* from the theorem
+(which allows a decider full membership data), and the file labels it a reading. The
+theorem says nothing about any individual architecture — each is a fixed true-or-false
+statement, trivially "decidable" by a constant algorithm. The file states this explicitly.
+**Assessment: the reduction is correct, elementary, and genuinely establishes what is
+claimed, at $M = 2$ with $R_N = 1$.**
+
+### 2. L-9918.7(d) — the admissible region, re-derived from scratch
+
+Re-derived by hand: $G$ is continuous, strictly decreasing on $(0,1]$ with $G(1) = C_1$;
+on $[1,\infty)$, $G'(u) = (C_2u/2 - C_1)/u^2$ vanishes only at $u^* = 2C_1/C_2$, so
+$\Theta = C_1$ when $2C_1 \le C_2$ and $\Theta = \frac{C_2}{2}(1+\log\frac{2C_1}{C_2})$
+otherwise; the infimum is **attained**, so "$\exists u: G(u)<1$" $\iff \Theta<1$. In the
+second branch $\Theta<1 \iff C_1 < \Psi(C_2)$. $\Psi'(s) = e^{2/s-1}(\frac12-\frac1s)$, so
+$\Psi$ falls on $(0,2)$, rises on $(2,\infty)$, $\Psi(2)=1$, hence $\Psi \ge 1$ with
+equality only at $s=2$; and $\Psi(s)>s/2 \iff s<2$. The two cases then close exactly as the
+file has them — **including the delicate $C_2 \ge 2$ case**, where $2C_1>C_2$ forces
+$C_1 > C_2/2 \ge \Psi(C_2)$ and hence $\Theta \ge 1$. **No sign flips.** The boxed
+criterion is correct as stated, and is consistent at the seam $C_2 = 2$ (both branches read
+$C_1<1$ there).
+
+Numerically (V-B, independent of the closed form): the closed $\Theta$ matches a
+grid+golden-section infimum to $5.3\times10^{-15}$ over 4900 pairs; over a **44 800-pair**
+grid ($C_1\le14$, $C_2\le8$, step $0.05$) the three predicates {$\Theta<1$}, {boxed rule},
+{direct scan over $u$} agree in every case; and 15 904 checks at
+$C_1 = \mathrm{threshold}(C_2)\cdot(1\pm\varepsilon)$, $\varepsilon = 10^{-5},10^{-8}$,
+over 3976 values of $C_2$ show **no** mismatch — the case split does not flip anywhere near
+the boundary. At the threshold exactly, $\Theta = 1$ (not $<1$), i.e. the region is open, as
+claimed. $\Psi(2/\pi) = e^{\pi-1}/\pi = 2.709767310$, $\Psi(1)=e/2$, $\Psi(2)=1$: all exact.
+Window and budget for $(1,2/\pi)$: $u_-=1$, $u_+ = 19.735236$, $u^*=\pi$,
+$\Theta = 0.682688726$, budget $1.070796327$ — reproducing L-9916's numbers to all printed
+digits.
+
+### 3. L-9918.7(f) — the two explicit thresholds (the author's mid-draft correction)
+
+The **corrected** values are right: $a = 4\log 12 = 9.9396265992$, $a/3 = 3.3132088664$,
+$u_0 = a\pi = 31.2262579033 > 3$, and
+$\psi(u_0) = (1+\log(a\pi))/\pi = 1.4136967551 > 1.413696$. The case split ($u\le3$ via
+$\Lambda \ge a/u \ge a/3$; $u>3$ via $\log(4H)\ge\log 12$ and the first-derivative test) is
+valid, and both standing facts ($H\ge3$, $H = uR \ge u$) are used correctly. An independent
+2-D minimisation of the true $\Lambda$ over real $R\ge1$, $H\ge3$ gives $1.667835$ at
+$R=1$, and $1.713552,\ 1.772676,\ 1.847840,\ 1.956179,\ 2.089095$ at
+$R = 2, 6, 36, 1296, 10^6$ — matching T5 exactly and lying above the proved threshold, as
+they must. **The stale value $1.5388$ still present in two Gap-audit bullets is *not* what
+§(f) proves** (it is true — the true minimum is $1.6678$ — but it belongs to an abandoned
+sharper route through $4\log(4u)/u$); both bullets and the stale companion threshold
+"$\log 39.7582$" have been corrected (§9, fixes 1–3).
+
+### 4. L-9918.6 — the universal lower bound
+
+Step 1 re-derived: $\sum_{|k|\le h}(1-\frac{|k|}{h+1})|S(k)|^2 = \sum_{r,r'}K_h(\theta_r-
+\theta_{r'}) \ge R(h+1)$ by (F1)/(F2); isolating $k=0$ and bounding the remaining weights by
+$1$ gives $\sum_{k\le h}|S(k)|^2 \ge R(h+1-R)/2$; then $|S|^2 \le R|S|$ gives
+$T(h)\ge(h+1-R)/2$. Both the Abel identity and the telescoping identity were checked in
+**exact rational arithmetic** (V-C §§1–2: 300 random instances; all $1\le R\le29$,
+$R\le H<60$), including the empty-sum boundary $H=R$ where the telescoped form reads
+$\log 1 - 1 + 1 = 0$. Feeding the *extremal* profile $T(h)=\max(0,(h+1-R)/2)$ through the
+assembled Abel bound reproduces $\frac12(\log\frac HR + \frac1H)$ with zero slack beyond the
+single remaining inequality $\sum_{h=R}^{H-1}1/h \ge \log(H/R)$ (2136 cases, no failure).
+**There is no off-by-one.**
+
+**Both of the author's quantifier claims are confirmed, and I sharpen the second.** Form (3)
+holds for all $H\ge1$ (for $H<R$ the right side is negative), so $H\ge R$ is indeed
+unnecessary there. But $H \ge R$ is **necessary** for the sharper form (2), and I exhibit the
+counterexample the file does not: for $\theta = \{0,\tfrac12\}$ ($R=2$, $H=1$), $S(1)=0$ so
+$\Sigma(1) = 0 < \frac12(\log\frac12+1) = 0.153426$. The file's split between (2) and (3) is
+therefore exactly right, not merely conservative.
+
+**Counterexample hunt (mine, independent of T3).** 81 structured/degenerate/random/
+low-discrepancy families against **every** $h \le H$: zero violations of (1), (2), (3).
+Simulated annealing plus greedy polish, minimising $\Sigma(H)$ directly over point
+positions with 5 restarts, never beat the arithmetic progression; smallest ratio to the
+bound seen anywhere was $2.266$ (structured) and $2.439$ (search) — matching the author's
+$2.274$/$2.446$ and consistent with the proved factor-$2$ slack. **No counterexample
+exists in the searched space; the bound looks safe with room to spare.**
+
+### 5. L-9918.4 — the $(1110)^\infty$ architecture, by hand at $N=2$
+
+Congruence chain re-derived line by line ($x=2y+1 \to 3y+2$; $x=4z+3 \to 9z+8$;
+$x=8t+7 \to 27t+26$; $v_3=0 \iff t$ even $\iff x\equiv 7 \bmod 16$), giving
+$T^4(x) = (27x+19)/16$, and the key identity
+$11T^4(x)+19 = \frac{297x+513}{16} = \frac{27(11x+19)}{16}$. At $N=2$ by hand:
+$m_2 = (-19)\cdot11^{-1} \bmod 256 = 231$ and $11\cdot231+19 = 2560 = 256\cdot 10$; the
+$T$-orbit $231 \to 347 \to 521 \to 782 \to 391 \to 587 \to 881 \to 1322 \to 661$ has
+parities $(1,1,1,0,1,1,1,0)$. Exactly as claimed. The realiser: $11x+19=0 \iff x=-19/11$,
+with the exact $4$-cycle $-\frac{19}{11}\to-\frac{23}{11}\to-\frac{29}{11}\to-\frac{38}{11}
+\to-\frac{19}{11}$ (parities $1,1,1,0$), $\notin\mathbb{Z}$, $<0$. All re-verified in exact
+rationals over $\mathbb{Z}$ *and* over $\mathbb{Z}_{(2)}$ (V-C §6).
+
+### 6. D-9918.3 — are (AF1)–(AF4) too tight? (the author's least certain point)
+
+**No.** They are satisfied by a large natural family, not just by E1/E2: every *$M$-adic
+affine branch system* — pick any $M\ge2$ and any branch data $A_b \ge 1$ with
+$\gcd(A_b,M)=1$ and integers $\kappa_b \ge 0$ with $M \mid A_b b + \kappa_b$, and set
+$\Phi(x) = (A_bx+\kappa_b)/M$ on $x \equiv b \pmod M$. To make this concrete I built a
+**third** architecture, $M = 3$ with $(A_0,A_1,A_2) = (1,5,7)$, verified (AF1) (each word is
+exactly one class mod $3^p$, $p\le5$), (AF2) (3267 word/lift pairs, no failure) and (AF4),
+and confirmed the sign criterion on its periodic words: supercritical words give
+$-\frac14,-\frac12,-\frac5{13},-\frac74$, the word $(0)$ with $\kappa=0$ gives $0$, and the
+subcritical $(0,1)$ gives $+\frac34$ (V-D §(ii)). The criterion is also non-vacuous in both
+directions for E2: $w=(1,0)$ is subcritical with realiser $1$ — a genuine positive-integer
+periodic seed, the orbit $1\to2\to1$ — while $w=(1,1,0,1,0)$ is subcritical with realiser
+$\frac{23}{5} > 0$ that is *not* an integer, which is exactly why L-9918.5(3)'s third,
+Diophantine condition is stated separately.
+
+The one thing I did find is a **presentational gap, not a tightness problem**: the
+composition step at the head of the proof of L-9918.5(1) needs shift equivariance at
+*finite* level ($x \in c(ww') \Rightarrow \Phi^{|w|}(x) \in c(w')$), whereas (AF3) as
+written asserts the shift property only on $\widehat S_\infty$; the same reading is what
+makes the iterates in (AF2) well defined. It holds in E1, E2 and in every branch system
+above. Crucially it is **decorative**: the identity used by (2)–(6), $(M^p-A_w)z=\kappa_w$,
+comes from (AF2) + (AF3)-on-$\widehat S_\infty$ + separation of addresses, and the
+$A_{w^k}$/$\kappa_{w^k}$ formulas are used nowhere else in the file. A reviewer's note to
+this effect has been inserted at the point of use (§9, fix 6).
+
+### 7. The rest of Part A, L-9918.5, L-9918.8, and the four architectures
+
+* **L-9918.1.** All three equivalences check. Discreteness enters (ii)$\Rightarrow$(iii) as
+  claimed; see the caveat in §10 about the *second* use in (3).
+* **L-9918.2.** $\widehat S_N = \pi_N^{-1}(C_N)$ (both inclusions correct, density used
+  correctly); clopen; nested; the König argument uses **only** per-level finiteness and
+  produces a persistent chain (I re-ran it as an explicit DFS on seven architectures,
+  including two with no seed and one with a seed hidden among escaping branches);
+  $\bigcap_N S_N = \widehat S_\infty \cap \mathbb{Z}^+$. Correct.
+* **L-9918.3.** Both directions correct, and nestedness really is essential in
+  (2)$\Rightarrow$(1): $S_N = \{1\},\{2\},\{1\},\{2\},\dots$ has uniformly bounded
+  witnesses and empty intersection.
+* **L-9918.5.** (2) is the load-bearing step and is right: $M^p - A_w \equiv -A_w \pmod M$
+  with $\gcd(A_w,M)=1$ makes it a unit, hence $\ne 0$ (since $\gcd(0,M) = M \ge 2$) —
+  which also rules out $A_w = M^p$, so sub/supercritical is a genuine dichotomy. (4)'s use
+  of (AF4) is legitimate because every iterate stays in $\widehat S_1$. (6) uses (AF2) at
+  prefixes directly and needs no composition.
+* **L-9918.8.** Orthogonality computation, the Markov-type tail bound
+  ($d \le \lambda(1-p)+d^2p$), and the losslessness statement all check; re-verified
+  numerically for composite $M$ too.
+* **E1.** Alphabet, $\nu_2 = 15,12,9,6,3,0$, $\gcd = 7$, $8\alpha_{i+1}=9\alpha_i$, and the
+  root classes recomputed from the chart relation: $m_1..m_4 = 6472$, $1908874353$,
+  $44906374791168$, $275202518480529950784$, agreeing exactly with
+  `experiments/X-9902-sixbranch-leastroots/results/mN_values.txt`, and I additionally
+  *ran the chart* on each $m_N$ and confirmed all $N$ digits lie in $A$.
+  Uniformly supercritical with $\lambda = P/Q = 1.013643$.
+* **E2.** The recursion $\kappa_{wb} = 3^b\kappa_w + b2^{|w|}$ reproduces
+  $T^4(x) = (27x+19)/16$ on $(1110)$; threshold $3^a<2^K \iff a/K < \gamma$ is right.
+* **E3.** Recomputed from L-9909's definition: counts $1,1,2,3,4,8,13,19$ and the mod-256
+  class list agree with L-9909.4 verbatim; refinement holds because $v_j$ depends only on
+  $x \bmod 2^{j+1}$.
+* **E4.** Fully resolved as claimed; base label corrected (§9, fix 4).
+* **T6 self-check.** Re-extracted and re-ran every embedded script myself (V-A): all five
+  scripts **and the T6 harness itself** reproduce their recorded output byte-for-byte, exit
+  status 0, SHA-256 digests matching those recorded in T6's output, and **no placeholder
+  token anywhere**. (Aside: T6's own regex is not line-anchored, so a naive extractor
+  truncates T6's block at the literal fence inside its regex string; T6 dodges this by
+  skipping itself via its sentinel, and V-A uses a line-anchored regex. The scripts added
+  by this note deliberately carry **no** `#!`-shebang, so T6 still finds exactly its five
+  pairs and its recorded output stays exact.)
+
+### 8. The author's corrections to the commissioning framing — all five confirmed
+
+1. **"The requirement is $H > C_1R\varphi(H)$, from the resolution term alone, independent
+   of $\beta$, and degenerate if $C_1<1$."** CONFIRMED; it is immediate from
+   non-negativity of the three terms of (ET).
+2. **"B.1's $H \ge R$ is unnecessary."** CONFIRMED for form (3) — and I add the missing
+   half: it is **necessary** for the sharper form (2) (counterexample in §4).
+3. **"Removing the $\log(4H)$ is necessary but not sufficient."** CONFIRMED:
+   $\Theta(4,2/\pi) = \frac1\pi(1+\log4\pi) = 1.123960 > 1$, and admissibility at
+   $C_2 = 2/\pi$ requires $C_1 < e^{\pi-1}/\pi = 2.709767$.
+4. **"Improving $\tfrac12$ toward $1$ shrinks the admissible region."** CONFIRMED:
+   $\Psi_c(s) = cs\,e^{1/(cs)-1}$, $\Psi_1(s) = \Psi_{1/2}(2s)$, ratio $2e^{-1/s} < 1$ iff
+   $s < 1/\log 2 = 1.442695$; at $C_2 = 2/\pi$ the threshold falls from $2.709767$ to
+   $(2/\pi)e^{\pi/2-1} = 1.126611$. A sharper B.1 **strengthens** the barrier.
+5. **The two scope limits (L1 triangle inequality, L2 single cut-off).** CONFIRMED as
+   accurate descriptions of where the argument binds: L-9918.6 is invoked only after
+   $|S(h)|$ has replaced $S(h)$, and the whole of (d)–(g) fixes one $H$. Phase-preserving
+   and multi-scale methods are genuinely untouched.
+
+### 9. Fixes applied (all editorial; none load-bearing)
+
+1. **Gap audit, "Confusion of empirical and universal":** "the *proved* bound there is
+   $1.5388$" → "$1.413696$" (the value §(f) actually proves).
+2. **Gap audit, "Nonuniform estimates":** the constant list "$\dots,1.538866$ in L-9918.7"
+   → "$\dots,1.413696$".
+3. **Remaining uncertainty 6(b):** "two explicit numerical thresholds, $4\log12$ and
+   $\log 39.7582$" → "$a = 4\log 12 = 9.9396266$ and $u_0 = a\pi = 31.226258$" (the
+   thresholds actually used; "$\log 39.7582$" belongs to the abandoned route).
+4. **E4's header:** "$M = 2$, $C_N$ … mod $2^{4N}$" is inconsistent with D-9918.1(1)
+   ($C_N \subseteq \mathbb{Z}/M^N$); changed to $M = 16$ with classes mod $16^N$, noting
+   the equivalent base-2 form that T2/ARCH 5 computes and that the two are cofinal
+   subfamilies of one nested family with the same $\bigcap_N S_N$.
+5. **Proof of L-9918.7(f):** added the two integer cut-offs $H \in \{1,2\}$ the case split
+   does not reach (there the resolution term alone is $\ge 5.545$ resp. $\ge 4.158$), so
+   that "(ET) never fires" is covered for every integer $H \ge 1$.
+6. **Proof of L-9918.5(1):** inserted a reviewer's note recording that the composition step
+   needs finite-level shift equivariance, that this should be read as part of (AF3), and
+   that (2)–(6) do not depend on it.
+
+No statement, constant, proof or table elsewhere was altered.
+
+### 10. Residual caveats (things a later reader must not over-read)
+
+* **Part B is about a method family, not about emptiness.** L-9918.7 does not prove
+  $m_N\to\infty$ anywhere, and nothing in the file bears on Collatz. The file says this
+  repeatedly; it is accurate.
+* **"Satisfiable" in (d)/(g) means "the *necessary* condition $(\dagger)$ can hold",** not
+  "(ET) fires". Constants inside the region are necessary, not sufficient, for a firing
+  criterion. The file's limitation (L3) says exactly this, but (g) read in isolation could
+  mislead; quote it with (L3).
+* **"Discreteness used exactly once".** True of the equivalence chain in L-9918.1(2). Part A
+  does also use well-ordering (to define $m_N = \min S_N$) and finiteness of $[1,B]$ in the
+  (iii$'$)$\to$(ii$'$) upgrade of L-9918.1(3) — the Gap audit lists the latter, so the two
+  parentheticals should be read together. Not an error; a phrasing to keep honest.
+* **The constant $\tfrac12$ in L-9918.6 is not optimal** and is not claimed to be; my
+  searches, like the author's, never beat the arithmetic progression (ratio $\ge 2.27$), so
+  the true constant is plausibly $1$. This only strengthens L-9918.7.
+* **What I did not verify:** L-9904, L-9909 and L-9916 themselves (context only here, and
+  nothing is imported); the X-9902 agreement is a cross-check of a computation, not of a
+  claim of this file. I did not formalise anything in a proof assistant.
+
+**Confidence.** High on Part A and on L-9918.9 (elementary, fully reconstructed,
+mechanically exercised). High on L-9918.6 and L-9918.7(d),(f),(g) (hand-derived twice and
+machine-checked on dense grids, with the case split probed at the boundary). Moderate-high
+on D-9918.3's axioms being the right general hypotheses — they cover a large natural class,
+with the one presentational caveat of §6 now recorded in place.
+
+### V-A — re-extraction and re-run of every embedded script (independent of T6)
+
+```python
+# V-A (fable-02-v20): independent re-extraction and re-run of every embedded script.
+# Deliberately written WITHOUT the "#!"-shebang first line so that T6's own harness
+# (which pairs only shebang-headed blocks) still extracts exactly its five pairs and
+# its recorded output stays exact after this note is appended.
+import re, subprocess, sys, os, tempfile, hashlib
+
+PATH = "/home/user/collatz/research/foundations/L-9918-extraction-barriers.md"
+text = open(PATH).read()
+# LINE-ANCHORED fences (the correct markdown reading; T6's own naive regex would be
+# truncated by the literal fence inside its regex string -- see the note).
+blocks = re.findall(r"(?ms)^```(python|text)\n(.*?)^```", text)
+pairs, i = [], 0
+while i < len(blocks):
+    kind, body = blocks[i]
+    if kind == "python" and body.startswith("#!/usr/bin/env python3"):
+        assert i+1 < len(blocks) and blocks[i+1][0] == "text", "script with no output block"
+        pairs.append((body, blocks[i+1][1])); i += 2
+    else:
+        i += 1
+print("claim file: %s" % PATH)
+print("shebang-headed (script, output) pairs found: %d   [T1-T5 and the T6 harness itself]" % len(pairs))
+allok = True
+for n, (src, exp) in enumerate(pairs, 1):
+    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as f:
+        f.write(src); tmp = f.name
+    r = subprocess.run([sys.executable, tmp], capture_output=True, text=True)
+    os.unlink(tmp)
+    got, e = r.stdout.rstrip("\n"), exp.rstrip("\n")
+    ok = (got == e and r.returncode == 0); allok &= ok
+    where = "-"
+    if not ok:
+        gl, el = got.split("\n"), e.split("\n")
+        for j in range(max(len(gl), len(el))):
+            a = gl[j] if j < len(gl) else "<missing>"
+            b = el[j] if j < len(el) else "<missing>"
+            if a != b: where = "line %d: %r vs %r" % (j+1, a[:50], b[:50]); break
+    print("  script %d  sha256 %s  %4d src lines  %3d output lines  exit %d  ->  %s  %s"
+          % (n, hashlib.sha256(src.encode()).hexdigest()[:16], src.count("\n"),
+             len(e.split("\n")), r.returncode, "MATCH" if ok else "MISMATCH", where))
+    for bad in ("TODO", "FIXME", "placeholder", "PLACEHOLDER", "...output...", "<output>", "XXX"):
+        if bad in e:
+            print("     !! placeholder token %r in recorded output" % bad); allok = False
+print("VERDICT: %s" % ("every embedded block reproduces its recorded output byte-for-byte."
+                       if allok else "AT LEAST ONE BLOCK FAILED."))
+```
+
+```text
+claim file: /home/user/collatz/research/foundations/L-9918-extraction-barriers.md
+shebang-headed (script, output) pairs found: 6   [T1-T5 and the T6 harness itself]
+  script 1  sha256 3095bcd66235c72e    84 src lines   26 output lines  exit 0  ->  MATCH  -
+  script 2  sha256 3adc173888f8c488   135 src lines   65 output lines  exit 0  ->  MATCH  -
+  script 3  sha256 906757f37ecfbf92   110 src lines   66 output lines  exit 0  ->  MATCH  -
+  script 4  sha256 4e667e39566ee248    84 src lines   57 output lines  exit 0  ->  MATCH  -
+  script 5  sha256 1a52934b11ac00a2   102 src lines   72 output lines  exit 0  ->  MATCH  -
+  script 6  sha256 150f6db59df39693    55 src lines   10 output lines  exit 0  ->  MATCH  -
+VERDICT: every embedded block reproduces its recorded output byte-for-byte.
+```
+
+### V-B — the admissible region and every constant of L-9918.7
+
+```python
+# V-B (fable-02-v20): the admissible region of L-9918.7 re-derived from the STATEMENT
+# alone (no closed form assumed in the numerical half), plus every explicit constant
+# of (e), (f), (g) and of Remaining uncertainty 1.
+import math
+
+def G(u, C1, C2): return C1/u + (C2/2.0)*max(0.0, math.log(u))     # phi == 1
+def Theta_closed(C1, C2): return C1 if 2*C1 <= C2 else (C2/2.0)*(1 + math.log(2*C1/C2))
+def Psi(s): return (s/2.0)*math.exp(2.0/s - 1.0)
+def boxed(C1, C2): return (C1 < Psi(C2)) if C2 < 2 else (C1 < 1)
+GR = (math.sqrt(5)-1)/2
+
+def Theta_num(C1, C2):
+    """infimum of G over u>0 found numerically: coarse log grid then golden section."""
+    best, bu = float("inf"), 1.0
+    for i in range(401):
+        u = math.exp(-8.0 + 30.0*i/400.0); g = G(u, C1, C2)
+        if g < best: best, bu = g, u
+    a, b = bu*math.exp(-0.075), bu*math.exp(0.075)
+    for _ in range(120):
+        c, d = b - GR*(b-a), a + GR*(b-a)
+        if G(c, C1, C2) < G(d, C1, C2): b = d
+        else: a = c
+    return min(best, G((a+b)/2, C1, C2))
+
+print("=== 1. closed-form Theta vs independent numerical infimum ===")
+worst, aw = 0.0, None
+for i in range(1, 71):
+    for j in range(1, 71):
+        C1, C2 = i*0.2, j*0.12
+        d = abs(Theta_closed(C1, C2) - Theta_num(C1, C2))
+        if d > worst: worst, aw = d, (C1, C2)
+print("  max |closed - numeric| over 4900 pairs (C1<=14, C2<=8.4): %.3e  at %s" % (worst, aw))
+
+print("")
+print("=== 2. satisfiability of (dagger) by direct scan  vs  the boxed region ===")
+def sat(C1, C2, n=1200):
+    return any(G(math.exp(-6.0 + 22.0*i/n), C1, C2) < 1.0 for i in range(n+1))
+n = skip = 0; bad = []
+for j in range(1, 161):
+    C2 = j*0.05
+    for i in range(1, 281):
+        C1 = i*0.05; n += 1
+        th = Theta_closed(C1, C2)
+        if abs(th - 1.0) <= 5e-3: skip += 1; continue
+        if boxed(C1, C2) != (th < 1) or boxed(C1, C2) != sat(C1, C2):
+            bad.append((round(C1,3), round(C2,3), th))
+print("  %d pairs on a 0.05 grid (C1<=14, C2<=8); %d skipped inside a 5e-3 boundary band" % (n, skip))
+print("  disagreements among {Theta<1}, {boxed rule}, {direct scan of u}: %d   %s" % (len(bad), bad[:3]))
+
+print("")
+print("=== 3. the boundary C1 = threshold(C2), where the case split could flip ===")
+mis = ch = 0
+C2 = 0.05
+while C2 <= 8.0 + 1e-12:
+    thr = Psi(C2) if C2 < 2 else 1.0
+    for eps in (-1e-5, -1e-8, 1e-8, 1e-5):
+        ch += 1
+        if (Theta_closed(thr*(1+eps), C2) < 1) != boxed(thr*(1+eps), C2): mis += 1
+    C2 += 0.002
+print("  %d checks at C1 = thr*(1+-eps) over 3976 values of C2: mismatches = %d" % (ch, mis))
+for C2 in (0.3, 2/math.pi, 1.0, 1.5, 1.999999, 2.0, 2.000001, 3.0):
+    thr = Psi(C2) if C2 < 2 else 1.0
+    print("     C2=%-9.6f thr=%-13.9f Theta(thr,C2)=%.12f  (must be exactly 1, i.e. NOT admissible)"
+          % (C2, thr, Theta_closed(thr, C2)))
+
+print("")
+print("=== 4. Psi: minimum exactly 1 at s = 2, strict monotonicity either side ===")
+print("  Psi(2) = %.15f" % Psi(2.0))
+mn = min((Psi(0.02+i*0.001), 0.02+i*0.001) for i in range(20000))
+print("  numeric min over [0.02,20]: %.12f at s = %.4f" % mn)
+print("  strictly decreasing on (0.05,2): %s ; strictly increasing on (2,20): %s"
+      % (all(Psi(s) > Psi(s+1e-4) for s in [0.05+i*1e-3 for i in range(1940)]),
+         all(Psi(s) < Psi(s+1e-4) for s in [2.0+i*1e-3 for i in range(18000)])))
+print("  Psi(s) > s/2  iff  s < 2 : %s"
+      % all((Psi(s) > s/2) == (s < 2) for s in [0.05+i*0.01 for i in range(1000)] if abs(s-2) > 1e-9))
+print("  Psi(2/pi) = %.9f = e^{pi-1}/pi = %.9f ;  Psi(1) = %.9f = e/2 = %.9f"
+      % (Psi(2/math.pi), math.exp(math.pi-1)/math.pi, Psi(1.0), math.e/2))
+
+print("")
+print("=== 5. (e) the window for (C1,C2) = (1, 2/pi) ===")
+C1, C2 = 1.0, 2/math.pi
+lo, hi = math.pi, 1e6
+for _ in range(300):
+    mid = math.sqrt(lo*hi)
+    if G(mid, C1, C2) < 1: lo = mid
+    else: hi = mid
+print("  G(1) = %.12f  ->  u_- = 1 ;  u_+ = %.6f  (file: 19.73524)" % (G(1.0, C1, C2), lo))
+print("  u* = 2C1/C2 = %.6f = pi ;  Theta = (1+log pi)/pi = %.9f  (file: 0.682689)"
+      % (2*C1/C2, Theta_closed(C1, C2)))
+print("  cusp budget (pi/2)(1-1/pi) = %.9f  (file: 1.070796)" % ((1/C2)*(1-1/math.pi)))
+print("  {u : G(u)<1} is exactly the interval (1, u_+): %s"
+      % all((G(0.005*i, C1, C2) < 1) == (1.0 < 0.005*i < lo)
+            for i in range(1, 8000) if abs(G(0.005*i, C1, C2)-1) > 1e-9))
+
+print("")
+print("=== 6. (f) the two explicit thresholds and the proved bound ===")
+a = 4*math.log(12)
+print("  a  = 4 log 12          = %.10f   (file 9.9396266)" % a)
+print("  u0 = a*pi              = %.10f   (file 31.226258)" % (a*math.pi))
+print("  a/3                    = %.10f   (file 3.313209)" % (a/3))
+print("  psi(u0) = (1+log(a pi))/pi = %.10f   (file 1.4136968)" % ((1+math.log(a*math.pi))/math.pi))
+print("  1 + log(4 pi log 12)   = %.10f   (file 4.4412593)" % (1+math.log(4*math.pi*math.log(12))))
+def Lam(R, H): return 4*R*math.log(4*H)/H + (1/math.pi)*max(0.0, math.log(H/R))
+print("  TRUE minima of Lambda (independent 1-D golden section in H for each R):")
+def minH(R):
+    A, B = math.log(3.0), math.log(1e14)
+    for _ in range(250):
+        c, d = B - GR*(B-A), A + GR*(B-A)
+        if Lam(R, math.exp(c)) < Lam(R, math.exp(d)): B = d
+        else: A = c
+    return Lam(R, math.exp((A+B)/2)), math.exp((A+B)/2)
+for R in (1.0, 2.0, 6.0, 36.0, 1296.0, 1e6):
+    v, H = minH(R)
+    print("     R = %-9.0f min_H Lambda = %.6f   at H = %.2f" % (R, v, H))
+best = (1e18, None); R = 1.0
+while R < 1e7:
+    v, _ = minH(R)
+    if v < best[0]: best = (v, R)
+    R *= 1.05
+print("  global min over R>=1, H>=3 : %.6f at R = %.3f   (file's T5: 1.6678 at R=1)" % best)
+print("  proved threshold 1.413696 is a valid lower bound: %s" % (best[0] > 1.413696))
+print("  the two cut-offs the proof text excludes:")
+for H in (1, 2):
+    print("     H=%d, R=1: resolution term alone 4R log(4H)/H = %.4f > 1  -> (ET) cannot fire"
+          % (H, 4*math.log(4*H)/H))
+
+print("")
+print("=== 7. (g) and Remaining uncertainty 1 (sensitivity of the region in the B.1 constant) ===")
+print("  Theta(4, 2/pi) = (1/pi)(1+log 4pi) = %.9f > 1  (file 1.123960)" % Theta_closed(4.0, 2/math.pi))
+print("  Theta(1, 3)    = %.9f  (=1, NOT <1)" % Theta_closed(1.0, 3.0))
+def Psi_c(s, c): return c*s*math.exp(1.0/(c*s) - 1.0)
+print("  Psi_{1/2} == Psi: %s ;  Psi_1(s) == Psi_{1/2}(2s): %s ;  ratio == 2e^{-1/s}: %s"
+      % (all(abs(Psi_c(s,.5)-Psi(s)) < 1e-13 for s in (0.3,0.7,2.0,5.0)),
+         all(abs(Psi_c(s,1.)-Psi(2*s)) < 1e-13 for s in (0.3,0.7,1.3,2.6)),
+         all(abs(Psi_c(s,1.)/Psi(s) - 2*math.exp(-1/s)) < 1e-12 for s in (0.4,1.0,3.0))))
+print("  Psi_1 < Psi_{1/2} iff s < 1/log2 = %.6f : %s"
+      % (1/math.log(2), [(s, Psi_c(s,1.) < Psi(s)) for s in (1.0, 1.44, 1.4427, 2.0)]))
+print("  c = 1, C2 = 2/pi: threshold falls to (2/pi)e^{pi/2-1} = %.6f  (file 1.12661)"
+      % Psi_c(2/math.pi, 1.0))
+print("  => a SHARPER B.1 constant shrinks the admissible region: the barrier strengthens.")
+```
+
+```text
+=== 1. closed-form Theta vs independent numerical infimum ===
+  max |closed - numeric| over 4900 pairs (C1<=14, C2<=8.4): 5.329e-15  at (12.0, 8.04)
+
+=== 2. satisfiability of (dagger) by direct scan  vs  the boxed region ===
+  44800 pairs on a 0.05 grid (C1<=14, C2<=8); 161 skipped inside a 5e-3 boundary band
+  disagreements among {Theta<1}, {boxed rule}, {direct scan of u}: 0   []
+
+=== 3. the boundary C1 = threshold(C2), where the case split could flip ===
+  15904 checks at C1 = thr*(1+-eps) over 3976 values of C2: mismatches = 0
+     C2=0.300000  thr=43.360404319  Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=0.636620  thr=2.709767310   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=1.000000  thr=1.359140914   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=1.500000  thr=1.046709319   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=1.999999  thr=1.000000000   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=2.000000  thr=1.000000000   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=2.000001  thr=1.000000000   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+     C2=3.000000  thr=1.000000000   Theta(thr,C2)=1.000000000000  (must be exactly 1, i.e. NOT admissible)
+
+=== 4. Psi: minimum exactly 1 at s = 2, strict monotonicity either side ===
+  Psi(2) = 1.000000000000000
+  numeric min over [0.02,20]: 1.000000000000 at s = 2.0000
+  strictly decreasing on (0.05,2): True ; strictly increasing on (2,20): True
+  Psi(s) > s/2  iff  s < 2 : True
+  Psi(2/pi) = 2.709767310 = e^{pi-1}/pi = 2.709767310 ;  Psi(1) = 1.359140914 = e/2 = 1.359140914
+
+=== 5. (e) the window for (C1,C2) = (1, 2/pi) ===
+  G(1) = 1.000000000000  ->  u_- = 1 ;  u_+ = 19.735236  (file: 19.73524)
+  u* = 2C1/C2 = 3.141593 = pi ;  Theta = (1+log pi)/pi = 0.682688726  (file: 0.682689)
+  cusp budget (pi/2)(1-1/pi) = 1.070796327  (file: 1.070796)
+  {u : G(u)<1} is exactly the interval (1, u_+): True
+
+=== 6. (f) the two explicit thresholds and the proved bound ===
+  a  = 4 log 12          = 9.9396265992   (file 9.9396266)
+  u0 = a*pi              = 31.2262579033   (file 31.226258)
+  a/3                    = 3.3132088664   (file 3.313209)
+  psi(u0) = (1+log(a pi))/pi = 1.4136967551   (file 1.4136968)
+  1 + log(4 pi log 12)   = 4.4412593403   (file 4.4412593)
+  TRUE minima of Lambda (independent 1-D golden section in H for each R):
+     R = 1         min_H Lambda = 1.667835   at H = 55.27
+     R = 2         min_H Lambda = 1.713552   at H = 132.53
+     R = 6         min_H Lambda = 1.772676   at H = 497.29
+     R = 36        min_H Lambda = 1.847840   at H = 3917.46
+     R = 1296      min_H Lambda = 1.956179   at H = 205523.16
+     R = 1000000   min_H Lambda = 2.089095   at H = 247735543.18
+  global min over R>=1, H>=3 : 1.667835 at R = 1.000   (file's T5: 1.6678 at R=1)
+  proved threshold 1.413696 is a valid lower bound: True
+  the two cut-offs the proof text excludes:
+     H=1, R=1: resolution term alone 4R log(4H)/H = 5.5452 > 1  -> (ET) cannot fire
+     H=2, R=1: resolution term alone 4R log(4H)/H = 4.1589 > 1  -> (ET) cannot fire
+
+=== 7. (g) and Remaining uncertainty 1 (sensitivity of the region in the B.1 constant) ===
+  Theta(4, 2/pi) = (1/pi)(1+log 4pi) = 1.123959926 > 1  (file 1.123960)
+  Theta(1, 3)    = 1.000000000  (=1, NOT <1)
+  Psi_{1/2} == Psi: True ;  Psi_1(s) == Psi_{1/2}(2s): True ;  ratio == 2e^{-1/s}: True
+  Psi_1 < Psi_{1/2} iff s < 1/log2 = 1.442695 : [(1.0, True), (1.44, True), (1.4427, False), (2.0, False)]
+  c = 1, C2 = 2/pi: threshold falls to (2/pi)e^{pi/2-1} = 1.126611  (file 1.12661)
+  => a SHARPER B.1 constant shrinks the admissible region: the barrier strengthens.
+```
+
+### V-C — L-9918.6 (exact Abel/telescoping + hostile search) and L-9918.4
+
+```python
+# V-C (fable-02-v20): L-9918.6 (universal cusp lower bound) and L-9918.4 ((1110)^inf),
+# both re-derived from the statements: exact rational arithmetic for every algebraic
+# step, and an independent adversarial hunt for a counterexample multiset.
+from fractions import Fraction as F
+import math, cmath, random
+random.seed(90218)
+
+print("=== 1. Abel summation identity of Step 2, EXACT, on random nonneg sequences ===")
+bad = 0
+for _ in range(300):
+    H = random.randint(1, 25)
+    aS = [F(random.randint(0, 40), random.randint(1, 7)) for _ in range(H)]
+    T = [F(0)]
+    for x in aS: T.append(T[-1] + x)
+    if sum(aS[h-1]/h for h in range(1, H+1)) != T[H]/H + sum(T[h]*(F(1,h)-F(1,h+1)) for h in range(1, H)):
+        bad += 1
+print("  Sigma = T(H)/H + sum_{h<H} T(h)(1/h - 1/(h+1)) : %s" % ("PASS" if bad == 0 else "FAIL %d" % bad))
+
+print("")
+print("=== 2. the telescoping step, EXACT, all 1<=R<=29 and R<=H<60 ===")
+bad = [(R, H) for R in range(1, 30) for H in range(R, 60)
+       if sum(F(h+1-R, h*(h+1)) for h in range(R, H)) != sum(F(1, h) for h in range(R, H)) - 1 + F(R, H)]
+print("  sum_{h=R}^{H-1}(h+1-R)/(h(h+1)) = sum_{h=R}^{H-1}1/h - 1 + R/H : %s"
+      % ("PASS" if not bad else "FAIL %s" % bad[:3]))
+print("  boundary H = R (empty sum; telescoped form reads log1 - 1 + 1 = 0): %s"
+      % all(sum(F(h+1-R, h*(h+1)) for h in range(R, R)) == sum(F(1,h) for h in range(R,R)) - 1 + F(R,R)
+            for R in range(1, 30)))
+
+print("")
+print("=== 3. Step 2 assembled on the EXTREMAL profile T(h) = max(0,(h+1-R)/2) ===")
+bad = 0; mins = None
+for R in range(1, 25):
+    for H in range(R, 90):
+        T = [F(0)] + [max(F(0), F(h+1-R, 2)) for h in range(1, H+1)]
+        low = float(T[H]/H + sum(T[h]*(F(1,h)-F(1,h+1)) for h in range(1, H)))
+        sl = low - 0.5*(math.log(H/R) + 1.0/H)
+        if sl < -1e-12: bad += 1
+        if mins is None or sl < mins[0]: mins = (sl, (R, H))
+print("  the Abel bound is >= (1/2)(log(H/R)+1/H) in all 2136 cases: %s ; min slack %.2e at (R,H)=%s"
+      % ("PASS" if bad == 0 else "FAIL(%d)" % bad, mins[0], mins[1]))
+
+print("")
+print("=== 4. is the hypothesis H >= R needed?  (form (2) vs form (3)) ===")
+pts = [0.0, 0.5]                                   # R = 2, S(1) = 0
+S1 = abs(sum(cmath.exp(2j*math.pi*1*x) for x in pts))
+print("  points {0, 1/2}: R=2, H=1 < R.  Sigma(1) = |S(1)| = %.6f" % S1)
+print("    sharper form (2) would demand >= (1/2)(log(1/2)+1) = %.6f  ->  FAILS: H>=R is NECESSARY in (2)"
+      % (0.5*(math.log(0.5)+1.0)))
+print("    plain form (3) demands >= (1/2)log(1/2) = %.6f  ->  holds (RHS negative)" % (0.5*math.log(0.5)))
+wd = (0.0, None)
+for R in range(2, 40):
+    p = [i/R for i in range(R)]
+    run = 0.0
+    for H in range(1, R):
+        run += abs(sum(cmath.exp(2j*math.pi*H*x) for x in p))/H
+        d = 0.5*(math.log(H/R)+1.0/H) - run
+        if d > wd[0]: wd = (d, (R, H))
+print("  worst violation of (2) among equally spaced sets with H<R: deficit %.6f at (R,H)=%s" % wd)
+
+print("")
+print("=== 5. hostile search for a counterexample to (3) [and to (1),(2) where they apply] ===")
+def sig_all(pts, H):
+    out, run = [], 0.0
+    for h in range(1, H+1):
+        run += abs(sum(cmath.exp(2j*math.pi*h*x) for x in pts))/h; out.append(run)
+    return out
+def viol(pts, H):
+    R = len(pts); Sg = sig_all(pts, H); v3 = v2 = 0; ratio = float("inf")
+    for h in range(1, H+1):
+        lb = 0.5*math.log(h/R)
+        if Sg[h-1] < lb - 1e-9: v3 += 1
+        if lb > 0: ratio = min(ratio, Sg[h-1]/lb)
+        if h >= R and Sg[h-1] < 0.5*(math.log(h/R)+1.0/h) - 1e-9: v2 += 1
+    return v3, v2, ratio
+g = (math.sqrt(5)-1)/2
+fams = []
+for R in (1,2,3,5,7,16,17,32,100):
+    fams += [("AP", [i/R for i in range(R)]), ("AP shifted", [(i+0.5)/R for i in range(R)]),
+             ("all equal", [0.31415]*R), ("Kronecker", [(i*g) % 1 for i in range(R)]),
+             ("random", [random.random() for _ in range(R)]),
+             ("clustered", [0.7+1e-9*i for i in range(R)]),
+             ("two APs", [i/max(1,R//2) for i in range(R//2)]+[0.5+i/max(1,R-R//2) for i in range(R-R//2)]),
+             ("quadratic", [(i*i*7 % max(1,R))/R for i in range(R)]),
+             ("nested APs", [i/R for i in range(R//2)]+[i/(2*R) for i in range(R-R//2)])]
+t3 = t2 = 0; worst = (1e9, None)
+for nm, p in fams:
+    R = len(p); H = min(40*R+40, 1500)
+    v3, v2, ra = viol(p, H); t3 += v3; t2 += v2
+    if ra < worst[0]: worst = (ra, (nm, R))
+print("  %d structured/degenerate/random families, ALL h <= H: violations of (3) = %d, of (2) = %d"
+      % (len(fams), t3, t2))
+print("  smallest ratio Sigma/((1/2)log(H/R)) seen: %.5f  at %s" % worst)
+
+def sigma(p, H):
+    return sum(abs(sum(cmath.exp(2j*math.pi*h*x) for x in p))/h for h in range(1, H+1))
+def anneal(R, H, iters=5000, restarts=5):
+    best = None
+    for _ in range(restarts):
+        p = [random.random() for _ in range(R)]; cur = sigma(p, H)
+        for it in range(iters):
+            Tm = 0.4*(1-it/iters) + 1e-4
+            i = random.randrange(R); q = list(p)
+            q[i] = (q[i] + random.gauss(0, max(0.35*Tm, 0.002))) % 1
+            c = sigma(q, H)
+            if c < cur or random.random() < math.exp(-(c-cur)/(0.02*Tm+1e-12)): p, cur = q, c
+        st = 0.05
+        for _ in range(3000):
+            i = random.randrange(R); q = list(p); q[i] = (q[i] + random.gauss(0, st)) % 1
+            c = sigma(q, H)
+            if c < cur: p, cur = q, c
+            st *= 0.999
+        if best is None or cur < best: best = cur
+    return best
+print("  adversarial minimisation of Sigma(H) (annealing + polish, 5 restarts):")
+print("     R    H     best Sigma      AP value     (1/2)log(H/R)   ratio   beats AP?")
+mn = 1e9
+for R, H in ((2,32),(3,48),(4,64),(5,80),(6,96),(8,128),(16,256)):
+    b = anneal(R, H); ap = sigma([i/R for i in range(R)], H); lb = 0.5*math.log(H/R)
+    mn = min(mn, b/lb)
+    print("    %3d %4d   %12.6f  %11.6f   %12.6f  %6.4f   %s"
+          % (R, H, b, ap, lb, b/lb, "YES" if b < ap-1e-6 else "no"))
+print("  minimum ratio found by adversarial search: %.5f   (a violation would need < 1)" % mn)
+
+print("")
+print("=== 6. L-9918.4 re-derived by exact rational arithmetic ===")
+def is_odd(z): return z.numerator % 2 == 1
+def T(z): return (3*z+1)/2 if is_odd(z) else z/2
+def word(z, k):
+    w = []
+    for _ in range(k): w.append(1 if is_odd(z) else 0); z = T(z)
+    return tuple(w)
+ok = all((word(F(r+16*t), 4) == (1,1,1,0)) == (r == 7) for r in range(16) for t in range(-6, 7))
+ok &= all((word(F(n, d), 4) == (1,1,1,0)) == ((n*pow(d, -1, 16)) % 16 == 7)
+          for d in (3,5,7,9,11,13,15,17) for n in range(-120, 121))
+print("  (1) (v0..v3) = (1110)  <=>  x = 7 mod 16, over Z and over Z_(2): %s" % ("PASS" if ok else "FAIL"))
+print("  (1) T^4(x) = (27x+19)/16 on 101 lifts of 7 mod 16: %s"
+      % ("PASS" if all(T(T(T(T(F(7+16*t))))) == F(27*(7+16*t)+19, 16) for t in range(-50, 51)) else "FAIL"))
+print("  (2) 11 T^4(x)+19 = 27(11x+19)/16 on the same lifts: %s"
+      % ("PASS" if all(11*T(T(T(T(F(7+16*t)))))+19 == F(27*(11*(7+16*t)+19), 16) for t in range(-50,51)) else "FAIL"))
+m2 = (-19*pow(11, -1, 256)) % 256
+print("  (3) N = 2 BY HAND: m_2 = (-19)*11^{-1} mod 256 = %d ; 11*%d+19 = %d = 256*%d"
+      % (m2, m2, 11*m2+19, (11*m2+19)//256))
+z = F(m2); orb = [z]
+for _ in range(8): z = T(z); orb.append(z)
+print("      T-orbit: %s" % " -> ".join(str(x) for x in orb))
+print("      parities = %s  == (1110)^2 : %s" % (str(word(F(m2), 8)), word(F(m2), 8) == (1,1,1,0)*2))
+okN = all(((word(F(r if r else 16**N), 4*N) == (1,1,1,0)*N) == (r == (-19*pow(11,-1,16**N)) % 16**N))
+          for N in range(1, 5) for r in range(0, 16**N, max(1, 16**N//3000)))
+print("  (3) sampled '(v_0..v_{4N-1}) = (1110)^N <=> 16^N | 11x+19', N <= 4: %s" % ("PASS" if okN else "FAIL"))
+z0 = F(-19, 11); orb = [z0]
+for _ in range(4): orb.append(T(orb[-1]))
+print("  (6) the 4-cycle: %s ;  T^4 = id: %s ;  parities %s"
+      % (" -> ".join(str(x) for x in orb), orb[0] == orb[4], [1 if is_odd(x) else 0 for x in orb[:4]]))
+print("      unique fixed point of x -> (27x+19)/16 is 19/(16-27) = %s ; in Z^+? %s"
+      % (F(19, 16-27), F(19,16-27) > 0 and F(19,16-27).denominator == 1))
+ms = [(-19*pow(11, -1, 16**N)) % 16**N for N in range(1, 13)]
+print("  (4)(5) m_1..m_12 = %s" % ms)
+print("      nondecreasing: %s ; every m_N >= 16^{N-1}: %s"
+      % (all(ms[i] <= ms[i+1] for i in range(11)), all(ms[i] >= 16**i for i in range(12))))
+```
+
+```text
+=== 1. Abel summation identity of Step 2, EXACT, on random nonneg sequences ===
+  Sigma = T(H)/H + sum_{h<H} T(h)(1/h - 1/(h+1)) : PASS
+
+=== 2. the telescoping step, EXACT, all 1<=R<=29 and R<=H<60 ===
+  sum_{h=R}^{H-1}(h+1-R)/(h(h+1)) = sum_{h=R}^{H-1}1/h - 1 + R/H : PASS
+  boundary H = R (empty sum; telescoped form reads log1 - 1 + 1 = 0): True
+
+=== 3. Step 2 assembled on the EXTREMAL profile T(h) = max(0,(h+1-R)/2) ===
+  the Abel bound is >= (1/2)(log(H/R)+1/H) in all 2136 cases: PASS ; min slack 0.00e+00 at (R,H)=(1, 1)
+
+=== 4. is the hypothesis H >= R needed?  (form (2) vs form (3)) ===
+  points {0, 1/2}: R=2, H=1 < R.  Sigma(1) = |S(1)| = 0.000000
+    sharper form (2) would demand >= (1/2)(log(1/2)+1) = 0.153426  ->  FAILS: H>=R is NECESSARY in (2)
+    plain form (3) demands >= (1/2)log(1/2) = -0.346574  ->  holds (RHS negative)
+  worst violation of (2) among equally spaced sets with H<R: deficit 0.153426 at (R,H)=(2, 1)
+
+=== 5. hostile search for a counterexample to (3) [and to (1),(2) where they apply] ===
+  81 structured/degenerate/random families, ALL h <= H: violations of (3) = 0, of (2) = 0
+  smallest ratio Sigma/((1/2)log(H/R)) seen: 2.26629  at ('AP', 1)
+  adversarial minimisation of Sigma(H) (annealing + polish, 5 restarts):
+     R    H     best Sigma      AP value     (1/2)log(H/R)   ratio   beats AP?
+      2   32       3.380731     3.380729       1.386294  2.4387   no
+      3   48       3.381454     3.380729       1.386294  2.4392   no
+      4   64       3.383374     3.380729       1.386294  2.4406   no
+      5   80       3.388507     3.380729       1.386294  2.4443   no
+      6   96       5.327926     3.380729       1.386294  3.8433   no
+      8  128       6.042914     3.380729       1.386294  4.3590   no
+     16  256       9.669617     3.380729       1.386294  6.9752   no
+  minimum ratio found by adversarial search: 2.43868   (a violation would need < 1)
+
+=== 6. L-9918.4 re-derived by exact rational arithmetic ===
+  (1) (v0..v3) = (1110)  <=>  x = 7 mod 16, over Z and over Z_(2): PASS
+  (1) T^4(x) = (27x+19)/16 on 101 lifts of 7 mod 16: PASS
+  (2) 11 T^4(x)+19 = 27(11x+19)/16 on the same lifts: PASS
+  (3) N = 2 BY HAND: m_2 = (-19)*11^{-1} mod 256 = 231 ; 11*231+19 = 2560 = 256*10
+      T-orbit: 231 -> 347 -> 521 -> 782 -> 391 -> 587 -> 881 -> 1322 -> 661
+      parities = (1, 1, 1, 0, 1, 1, 1, 0)  == (1110)^2 : True
+  (3) sampled '(v_0..v_{4N-1}) = (1110)^N <=> 16^N | 11x+19', N <= 4: PASS
+  (6) the 4-cycle: -19/11 -> -23/11 -> -29/11 -> -38/11 -> -19/11 ;  T^4 = id: True ;  parities [1, 1, 1, 0]
+      unique fixed point of x -> (27x+19)/16 is 19/(16-27) = -19/11 ; in Z^+? False
+  (4)(5) m_1..m_12 = [7, 231, 743, 41703, 762599, 9151207, 244032231, 780903143, 43730576103, 799644820199, 9595737842407, 255886342464231]
+      nondecreasing: True ; every m_N >= 16^{N-1}: True
+```
+
+### V-D — the L-9918.9 reduction under a real TM simulator; the affine axioms; E1
+
+```python
+# V-D (fable-02-v20): (i) the L-9918.9 halting reduction, driven by a REAL Turing-machine
+# simulator rather than by an assumed t(e); (ii) whether D-9918.3's axioms are too tight,
+# tested by building a THIRD affine architecture (M = 3) outside E1/E2; (iii) the sign
+# criterion in both directions; (iv) E1 recomputed and cross-checked against X-9902.
+from fractions import Fraction as F
+import itertools, math
+
+# ---------------------------------------------------------------- (i) L-9918.9
+class TM:
+    """delta: (state, symbol) -> (state', symbol', move); a missing key means HALT."""
+    def __init__(self, delta, start=0): self.delta, self.start = delta, start
+    def steps_to_halt(self, limit):
+        tape, pos, st = {}, 0, self.start
+        for t in range(limit):
+            s = tape.get(pos, 0)
+            if (st, s) not in self.delta: return t
+            st, w, mv = self.delta[(st, s)][0], self.delta[(st, s)][1], self.delta[(st, s)][2]
+            tape[pos] = w; pos += mv
+        return limit if (st, tape.get(pos, 0)) not in self.delta else None
+
+def machine_k(k):   # halts after exactly k executed steps
+    return TM({(i, b): (i+1, 1, 1) for i in range(k) for b in (0, 1)})
+def machine_inf():  # never halts
+    return TM({(0, 0): (0, 1, 1), (0, 1): (0, 0, 1)})
+
+def C_N(tm, N):
+    """C_N = {(2^{min(N,t(e))} - 1) mod 2^N}.  Computable: simulate exactly N steps."""
+    t = tm.steps_to_halt(N)
+    return (2**(N if t is None else min(N, t)) - 1) % (2**N)
+
+def audit(tm, name, halts, NMAX=40):
+    C = [C_N(tm, N) for N in range(NMAX+1)]
+    wf  = C[0] == 0 and all(0 <= C[N] < 2**N for N in range(NMAX+1))     # D-9918.1(1)
+    ref = all(C[N+1] % 2**N == C[N] for N in range(NMAX))                 # D-9918.1(2)
+    m   = [C[N] if C[N] >= 1 else 2**N for N in range(NMAX+1)]
+    mono = all(m[N] <= m[N+1] for N in range(NMAX))
+    stable = all(m[N] == m[NMAX] for N in range(NMAX//2, NMAX+1))
+    seed_ok = stable and all(m[NMAX] % 2**N == C_N(tm, N) for N in range(200))
+    print("  %-20s R_N=1: True | C_N well formed: %-5s | refinement: %-5s | m_N nondecr: %-5s"
+          % (name, wf, ref, mono))
+    print("       m_0..m_10 = %-46s  m_%d = %d" % (str(m[:11]), NMAX, m[NMAX]))
+    print("       seed exists (checked to level 200): %-5s   machine halts: %-5s   REDUCTION OK: %s"
+          % (seed_ok, halts, seed_ok == halts))
+    return seed_ok
+
+print("=== (i) L-9918.9: the reduction run against a real TM simulator ===")
+for k in (1, 2, 3, 5, 8, 13):
+    tm = machine_k(k); t = tm.steps_to_halt(500)
+    s = audit(tm, "halts in %d steps" % k, True)
+    print("       simulator t(e) = %d ; the predicted seed 2^t-1 = %d" % (t, 2**t - 1))
+audit(machine_inf(), "never halts", False)
+print("       non-halting case: C_N = {2^N-1}, m_N = 2^N-1 -> oo, adic limit -1 in Z_2.")
+print("  boundary case t(e) = 0 (a machine that halts before executing any step):")
+tm0 = TM({})
+C = [C_N(tm0, N) for N in range(9)]
+print("       t(e) = %s ; C_N = %s ; m_N = %s -> oo, so NO seed although the machine HALTS."
+      % (tm0.steps_to_halt(50), C, [C[N] if C[N] >= 1 else 2**N for N in range(9)]))
+print("       The file stipulates t(e) in Z^+ u {oo}, which excludes this; the one-line")
+print("       repair (used below) is c_N = (2^{min(N,t)+1} - 1) mod 2^N.")
+def C_N_rep(tm, N):
+    t = tm.steps_to_halt(N)
+    return (2**((N if t is None else min(N, t)) + 1) - 1) % (2**N)
+for nm, tmx, h in (("halts in 0 steps", tm0, True), ("halts in 3 steps", machine_k(3), True),
+                   ("never halts", machine_inf(), False)):
+    C = [C_N_rep(tmx, N) for N in range(41)]
+    m = [C[N] if C[N] >= 1 else 2**N for N in range(41)]
+    print("       repaired: %-17s refinement %-5s  m_0..m_6 %-22s stabilises %-5s  halts %-5s agree %s"
+          % (nm, all(C[N+1] % 2**N == C[N] for N in range(40)), str(m[:7]),
+             all(m[N] == m[40] for N in range(20, 41)), h, all(m[N] == m[40] for N in range(20, 41)) == h))
+
+# ------------------------------------------------- (ii)/(iii) affine generality
+print("")
+print("=== (ii) a THIRD affine architecture, M = 3, outside E1 and E2 ===")
+Ab = {0: 1, 1: 5, 2: 7}                      # gcd(A_b, 3) = 1
+kb = {b: (-Ab[b]*b) % 3 for b in (0, 1, 2)}  # kappa_b >= 0, and 3 | A_b b + kappa_b
+print("  branch data: A_b = %s, kappa_b = %s ; Phi(x) = (A_b x + kappa_b)/3 on x = b mod 3" % (Ab, kb))
+def Phi(x):
+    b = (x.numerator * pow(x.denominator, -1, 3)) % 3
+    return F(Ab[b]*x + kb[b], 3)
+def addr(x, k):
+    w = []
+    for _ in range(k):
+        w.append((x.numerator * pow(x.denominator, -1, 3)) % 3); x = Phi(x)
+    return tuple(w)
+def AK(w):
+    Aw, kw = 1, 0
+    for i, b in enumerate(w): kw = Ab[b]*kw + 3**i*kb[b]; Aw *= Ab[b]
+    return Aw, kw
+bad = tested = 0; onecls = True
+for p in range(1, 6):
+    for w in itertools.product((0,1,2), repeat=p):
+        Aw, kw = AK(w)
+        xs = [x for x in range(3**p) if addr(F(x), p) == w]
+        if len(xs) != 1: onecls = False; continue
+        for t in range(-4, 5):
+            x = F(xs[0] + 3**p*t); tested += 1
+            y = x
+            for _ in range(p): y = Phi(y)
+            if y != F(Aw*x + kw, 3**p): bad += 1
+print("  (AF1) every word is exactly one class mod 3^p (p<=5): %s" % onecls)
+print("  (AF2) Phi^p(x) = (A_w x + kappa_w)/3^p on %d (word,lift) pairs: failures = %d" % (tested, bad))
+print("  (AF4) A_b >= 1 and kappa_b >= 0 so Phi(Z^+) subset Z^+: %s" % (min(Ab.values()) >= 1 and min(kb.values()) >= 0))
+print("  sign criterion L-9918.5(2),(3) on periodic words of THIS architecture:")
+for w in ((2,), (1,), (0,), (1,2), (0,1), (2,0,1)):
+    p = len(w); Aw, kw = AK(w); z = F(kw, 3**p - Aw); y = z
+    for _ in range(p): y = Phi(y)
+    per = all(addr(z, 4*p)[i] == w[i % p] for i in range(4*p))
+    print("    w=%-9s A_w=%-4d 3^p=%-4d kappa=%-3d z=%-7s %-5s Phi^p(z)=z:%-5s addr=w^oo:%-5s z in Z^+:%s"
+          % (str(w), Aw, 3**p, kw, str(z), "SUPER" if Aw > 3**p else "SUB", y == z, per,
+             z > 0 and z.denominator == 1))
+
+print("")
+print("=== (iii) the same criterion for E2 (the shortcut map T): both directions non-vacuous ===")
+def is_odd(z): return z.numerator % 2 == 1
+def T(z): return (3*z+1)/2 if is_odd(z) else z/2
+def kap(w):
+    k = 0
+    for i, b in enumerate(w): k = 3**b*k + b*2**i
+    return k
+for w in ((1,0), (1,), (0,), (1,1,1,0), (1,1,0), (1,1,0,1,0)):
+    p = len(w); Aw, kw = 3**sum(w), kap(w); z = F(kw, 2**p - Aw); y = z
+    for _ in range(p): y = T(y)
+    ok = True; zz = z
+    for i in range(4*p):
+        if (1 if is_odd(zz) else 0) != w[i % p]: ok = False
+        zz = T(zz)
+    print("    w=%-12s a/K=%d/%d A_w=%-4d 2^K=%-4d kappa=%-3d z=%-8s %-5s T^p(z)=z:%-5s addr=w^oo:%-5s z in Z^+:%s"
+          % (str(w), sum(w), p, Aw, 2**p, kw, str(z), "SUPER" if Aw > 2**p else "SUB", y == z, ok,
+             z > 0 and z.denominator == 1))
+print("    w=(1,0) is SUBcritical with realiser 1: a genuine positive-integer periodic seed")
+print("    (T-orbit 1 -> 2 -> 1).  w=(1,1,0,1,0) is subcritical with realiser 23/5 > 0 but not")
+print("    an integer: the third, Diophantine condition of L-9918.5(3) is separately needed.")
+
+# ------------------------------------------------------------------- (iv) E1
+print("")
+print("=== (iv) E1 recomputed from the chart relation and cross-checked against X-9902 ===")
+P, Q = 3**12, 2**19
+A = [7*3**(2*i)*2**(15-3*i) for i in range(6)]
+print("  A = %s" % A)
+print("  nu2 = %s ; gcd = %d ; all in [0,Q): %s ; 8a_{i+1} = 9a_i: %s"
+      % ([(x & -x).bit_length()-1 for x in A], math.gcd(*A), all(0 <= x < Q for x in A),
+         all(8*A[i+1] == 9*A[i] for i in range(5))))
+def chart_digits(x0, N):
+    x, ds = x0, []
+    for _ in range(N):
+        x2 = -((-P*x)//Q); ds.append(Q*x2 - P*x); x = x2
+    return ds
+mN = []
+for N in range(1, 5):
+    rs = {(-pow(P, -N, Q**N)*sum(P**(N-1-j)*Q**j*w[j] for j in range(N))) % Q**N
+          for w in itertools.product(A, repeat=N)}
+    mN.append(min(rs))
+    print("  N=%d: %d words -> %d distinct classes, m_N = %d ; digits of m_N all in A: %s"
+          % (N, 6**N, len(rs), min(rs), all(d in A for d in chart_digits(min(rs), N))))
+print("  X-9902 results/mN_values.txt records m_1..m_4 = [6472, 1908874353, 44906374791168, 275202518480529950784]")
+print("  agreement: %s" % (mN == [6472, 1908874353, 44906374791168, 275202518480529950784]))
+print("  uniform supercriticality: A_w/M^p = (P/Q)^p with P/Q = %.9f > 1 : %s" % (P/Q, P > Q))
+```
+
+```text
+=== (i) L-9918.9: the reduction run against a real TM simulator ===
+  halts in 1 steps     R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]               m_40 = 1
+       seed exists (checked to level 200): True    machine halts: True    REDUCTION OK: True
+       simulator t(e) = 1 ; the predicted seed 2^t-1 = 1
+  halts in 2 steps     R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3]               m_40 = 3
+       seed exists (checked to level 200): True    machine halts: True    REDUCTION OK: True
+       simulator t(e) = 2 ; the predicted seed 2^t-1 = 3
+  halts in 3 steps     R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 3, 7, 7, 7, 7, 7, 7, 7, 7]               m_40 = 7
+       seed exists (checked to level 200): True    machine halts: True    REDUCTION OK: True
+       simulator t(e) = 3 ; the predicted seed 2^t-1 = 7
+  halts in 5 steps     R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 3, 7, 15, 31, 31, 31, 31, 31, 31]        m_40 = 31
+       seed exists (checked to level 200): True    machine halts: True    REDUCTION OK: True
+       simulator t(e) = 5 ; the predicted seed 2^t-1 = 31
+  halts in 8 steps     R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 3, 7, 15, 31, 63, 127, 255, 255, 255]    m_40 = 255
+       seed exists (checked to level 200): True    machine halts: True    REDUCTION OK: True
+       simulator t(e) = 8 ; the predicted seed 2^t-1 = 255
+  halts in 13 steps    R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023]   m_40 = 8191
+       seed exists (checked to level 200): True    machine halts: True    REDUCTION OK: True
+       simulator t(e) = 13 ; the predicted seed 2^t-1 = 8191
+  never halts          R_N=1: True | C_N well formed: True  | refinement: True  | m_N nondecr: True 
+       m_0..m_10 = [1, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023]   m_40 = 1099511627775
+       seed exists (checked to level 200): False   machine halts: False   REDUCTION OK: True
+       non-halting case: C_N = {2^N-1}, m_N = 2^N-1 -> oo, adic limit -1 in Z_2.
+  boundary case t(e) = 0 (a machine that halts before executing any step):
+       t(e) = 0 ; C_N = [0, 0, 0, 0, 0, 0, 0, 0, 0] ; m_N = [1, 2, 4, 8, 16, 32, 64, 128, 256] -> oo, so NO seed although the machine HALTS.
+       The file stipulates t(e) in Z^+ u {oo}, which excludes this; the one-line
+       repair (used below) is c_N = (2^{min(N,t)+1} - 1) mod 2^N.
+       repaired: halts in 0 steps  refinement True   m_0..m_6 [1, 1, 1, 1, 1, 1, 1]  stabilises True   halts True  agree True
+       repaired: halts in 3 steps  refinement True   m_0..m_6 [1, 1, 3, 7, 15, 15, 15] stabilises True   halts True  agree True
+       repaired: never halts       refinement True   m_0..m_6 [1, 1, 3, 7, 15, 31, 63] stabilises False  halts False agree True
+
+=== (ii) a THIRD affine architecture, M = 3, outside E1 and E2 ===
+  branch data: A_b = {0: 1, 1: 5, 2: 7}, kappa_b = {0: 0, 1: 1, 2: 1} ; Phi(x) = (A_b x + kappa_b)/3 on x = b mod 3
+  (AF1) every word is exactly one class mod 3^p (p<=5): True
+  (AF2) Phi^p(x) = (A_w x + kappa_w)/3^p on 3267 (word,lift) pairs: failures = 0
+  (AF4) A_b >= 1 and kappa_b >= 0 so Phi(Z^+) subset Z^+: True
+  sign criterion L-9918.5(2),(3) on periodic words of THIS architecture:
+    w=(2,)      A_w=7    3^p=3    kappa=1   z=-1/4    SUPER Phi^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(1,)      A_w=5    3^p=3    kappa=1   z=-1/2    SUPER Phi^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(0,)      A_w=1    3^p=3    kappa=0   z=0       SUB   Phi^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(1, 2)    A_w=35   3^p=9    kappa=10  z=-5/13   SUPER Phi^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(0, 1)    A_w=5    3^p=9    kappa=3   z=3/4     SUB   Phi^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(2, 0, 1) A_w=35   3^p=27   kappa=14  z=-7/4    SUPER Phi^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+
+=== (iii) the same criterion for E2 (the shortcut map T): both directions non-vacuous ===
+    w=(1, 0)       a/K=1/2 A_w=3    2^K=4    kappa=1   z=1        SUB   T^p(z)=z:True  addr=w^oo:True  z in Z^+:True
+    w=(1,)         a/K=1/1 A_w=3    2^K=2    kappa=1   z=-1       SUPER T^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(0,)         a/K=0/1 A_w=1    2^K=2    kappa=0   z=0        SUB   T^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(1, 1, 1, 0) a/K=3/4 A_w=27   2^K=16   kappa=19  z=-19/11   SUPER T^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(1, 1, 0)    a/K=2/3 A_w=9    2^K=8    kappa=5   z=-5       SUPER T^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(1, 1, 0, 1, 0) a/K=3/5 A_w=27   2^K=32   kappa=23  z=23/5     SUB   T^p(z)=z:True  addr=w^oo:True  z in Z^+:False
+    w=(1,0) is SUBcritical with realiser 1: a genuine positive-integer periodic seed
+    (T-orbit 1 -> 2 -> 1).  w=(1,1,0,1,0) is subcritical with realiser 23/5 > 0 but not
+    an integer: the third, Diophantine condition of L-9918.5(3) is separately needed.
+
+=== (iv) E1 recomputed from the chart relation and cross-checked against X-9902 ===
+  A = [229376, 258048, 290304, 326592, 367416, 413343]
+  nu2 = [15, 12, 9, 6, 3, 0] ; gcd = 7 ; all in [0,Q): True ; 8a_{i+1} = 9a_i: True
+  N=1: 6 words -> 6 distinct classes, m_N = 6472 ; digits of m_N all in A: True
+  N=2: 36 words -> 36 distinct classes, m_N = 1908874353 ; digits of m_N all in A: True
+  N=3: 216 words -> 216 distinct classes, m_N = 44906374791168 ; digits of m_N all in A: True
+  N=4: 1296 words -> 1296 distinct classes, m_N = 275202518480529950784 ; digits of m_N all in A: True
+  X-9902 results/mN_values.txt records m_1..m_4 = [6472, 1908874353, 44906374791168, 275202518480529950784]
+  agreement: True
+  uniform supercriticality: A_w/M^p = (P/Q)^p with P/Q = 1.013643265 > 1 : True
+```
+
+Signed: **fable-02-v20**, 2026-07-25 (adversarial review; verdict PASS).
