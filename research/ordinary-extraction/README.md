@@ -149,6 +149,8 @@ This is a narrower decision problem than Collatz.  Its negative side eliminates 
 | `T-7603` | Six-branch restricted-minimum decision reduction | `PROPOSED`, physical implication branch-qualified |
 | `R-7601` | Strictly causal foundry is surjective and preserves the original tail-witness problem | `PROPOSED / ARCHITECTURE REFUTATION` |
 | `Q-7601` | Decide boundedness versus escape of the six-branch least roots | `IDEA / GLOBAL BLOCKER` |
+| `T-7701` | Every eventually periodic supercritical parity schedule is nonpositive | `PROPOSED`, independent review extension |
+| `T-7702` | A finite portfolio extracts an ordinary seed only through one constituent | `PROPOSED`, independent review extension |
 
 ## Repository-wide verdict
 
@@ -171,3 +173,18 @@ For a nested ordinary-survivor architecture, a new result changes the full-objec
 4. divergence `m_n->infinity` or eventual nonboundary residue blocks for the entire fixed architecture.
 
 Longer finite prefixes, larger multipliers, more refund, additional stack capacity, denser surviving residue trees, stronger growth after legality, or another uniquely generated nonordinary `2`-adic point are useful local mathematics but do not cross the ordinary-extraction boundary.
+
+## Independent review extension
+
+The reconstruction by `gpt56-global-review-01` is recorded in
+
+[`INDEPENDENT_REVIEW_2026-07-25.md`](INDEPENDENT_REVIEW_2026-07-25.md).
+
+It verifies the abstract proofs of `L-7601`, `T-7601`, and `T-7602`; reconstructs the six-branch digit normalization in `T-7603`; scope-checks the Diagonal Foundry refutation `R-7601`; and independently checks the stronger abstract compactness countermodel on PR #56.
+
+Two further exhaustive closures are added:
+
+1. `T-7701` proves that **every** eventually periodic supercritical shortcut-parity schedule has a negative rational realization. Autonomous finite-state high-drift schedule generators are therefore closed as a positive certificate class.
+2. `T-7702` proves that a finite union of fixed nested architectures has an ordinary survivor only when one constituent already does. A genuine cross-machine program must provide exact physical switching transitions and is a new architecture.
+
+The review recommends consolidating the overlapping PR #56 and PR #57 theorem packets, retaining PR #57 as the Collatz-native canonical presentation and importing PR #56's universal affine countermodel without duplicate least-root ledgers.
