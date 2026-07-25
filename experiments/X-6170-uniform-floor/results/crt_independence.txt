@@ -1,0 +1,10 @@
+L= 10  M= 27:  1024 itineraries (expect  1024); every itinerary pairs with all 27 residues mod 27: True
+L= 12  M= 27:  4096 itineraries (expect  4096); every itinerary pairs with all 27 residues mod 27: True
+L=  8  M= 81:   256 itineraries (expect   256); every itinerary pairs with all 81 residues mod 81: True
+L= 10  M=  5:  1024 itineraries (expect  1024); every itinerary pairs with all 5 residues mod 5: True
+L= 10  M=  7:  1024 itineraries (expect  1024); every itinerary pairs with all 7 residues mod 7: True
+L=  9  M= 35:   512 itineraries (expect   512); every itinerary pairs with all 35 residues mod 35: True
+
+Also: after any odd step the value is == 2 mod 3, so the orbit never meets a
+multiple of 3 again -- a real fact, but one that constrains the VALUE, not the
+itinerary, and is therefore invisible to any dimension argument.

@@ -116,10 +116,28 @@ being  high is expensive (0.585 bits per odd step        — a property of the M
 
 The precise target that would close it (Q-6174): a constraint on a counterexample's minimum
 whose length-`L` prefix set has dimension below `1 - log2(3/2) = 0.415037`. Minimality alone
-gives exactly `0.949956`, so `0.534919` of dimension must come from somewhere else — and the
+gives exactly `0.949956`, so `0.534918` of dimension must come from somewhere else — and the
 Terras bijection forbids it coming from any itinerary-local condition, since every word is
 realised by exactly one residue class. **Ask a new elementary attack what its constraint's
 dimension is; if it exceeds `0.415037`, the loop cannot close.**
+
+The barrier extends to the whole modular toolkit: for every odd modulus `M`, each itinerary
+occurs with every residue mod `M` (CRT plus the Terras bijection), so no congruence condition
+at an odd modulus reduces the dimension at all. Genuine 3-adic facts — such as the orbit never
+meeting a multiple of 3 after its first odd step — constrain the *value*, not the itinerary,
+and are invisible to dimension arguments.
+
+**Where the hope is instead.** The backward tree / coverage route (issue #25) never speaks of a
+counterexample's itinerary and is untouched by any of this. The gaps are not comparable in
+size:
+
+| route | have | need | gap |
+|---|---|---|---|
+| forward / self-referential | dimension `0.949956` | `< 0.415037` | `0.534918` |
+| backward / coverage | exponent `~0.84` (literature, unverified here) | `1` | `~0.16` |
+
+Roughly three times narrower. If this namespace has one piece of direction to offer, it is
+that.
 
 ## The one-line summary
 
@@ -142,4 +160,6 @@ quantified rather than described.
 2. `T-6131` — the universal gate. If you read one file, read this one.
 3. `T-6140` — which lane you are in and which tools exist there.
 4. `X-6110` / `X-6135` / `X-6150` — the measured numbers, all reproducible in minutes.
-5. `M-6120` — what to state before building another architecture.
+5. `T-6170` / `R-6171` / `Q-6174` — the conjecture as an extraction question, the price of the
+   self-referential attack, and the exact codimension a new attack must reach.
+6. `M-6120` — what to state before building another architecture.

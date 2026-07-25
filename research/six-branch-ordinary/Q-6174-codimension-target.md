@@ -78,10 +78,27 @@ it plausibly remove `0.535` of dimension?
   weak: `n_j -> infinity`, so the constraint from time `j` is slack. **Verdict: promising for
   the cycle lane only** — which is consistent with T-6140, where the cycle lane is the one
   with real leverage.
-* **3-adic or mod-3^k structure.** The whole framework here is 2-adic because the parity map
-  is a 2-adic isometry. The multiplier 3 is invisible to it. Whether a genuinely 3-adic
-  invariant constrains realisable itineraries is, as far as this agent can tell, untouched in
-  this repository. **Verdict: unknown, and the only lead here that is not obviously capped.**
+* **3-adic or mod-`3^k` structure.** I flagged this as the one lead not obviously capped, then
+  tested it. **Verdict: dead, and its death strengthens the barrier.**
+
+  *Addendum (PROVED).* For every odd modulus `M` and every `L`, each length-`L` itinerary
+  occurs together with **every** residue class mod `M`. Proof: the itinerary is a function of
+  `n mod 2^L` (L-6130) and `gcd(2^L, M) = 1`, so by CRT the two are independent. Verified for
+  `M = 5, 7, 27, 35, 81` in `crt_independence.py`.
+
+  Consequently **no congruence condition at an odd modulus can reduce the dimension of the
+  itinerary constraint set at all** — conditioning on a residue class mod `M` leaves the
+  itinerary set unchanged. This extends the barrier from "itinerary-local constraints" to
+  "itinerary-local constraints together with arbitrary odd-modulus congruence data", which is
+  the entire modular toolkit.
+
+  Genuine 3-adic facts exist — e.g. after any odd step the value is `= 2 (mod 3)`, so the orbit
+  never meets a multiple of 3 again — but they constrain the **value**, not the itinerary, and
+  are therefore invisible to any dimension argument.
+
+  (Recorded process note: the first version of this check reported `False` and looked like a
+  crack. It was an off-by-one — the scan covered `[1, M*2^L)` instead of a full period, so
+  classes containing `0` were one short. Verified over the full period, it is `True`.)
 * **Congruence conditions on `m`** (odd, not divisible by 3, exceeding the verification
   bound). **Verdict: dead.** Finitely many congruences change the floor by a bounded factor,
   not by an exponential rate; and the verification bound fixes the loop's starting depth, not
@@ -90,10 +107,33 @@ it plausibly remove `0.535` of dimension?
   dead.** The additive terms only affect the `O(1)` in `k_j > alpha j - 1`; the exponent is
   unchanged.
 
+## Where the remaining hope actually is: the backward direction
+
+With the forward direction capped, the only standard approach left is not about itineraries at
+all — the **backward tree / coverage-deficit** route (this repository's issue #25): bound below
+the count of `n <= X` that reach 1, and push the exponent to 1.
+
+That route is not touched by anything in this file, because it never speaks of a
+counterexample's itinerary. And the quantitative comparison is striking:
+
+| route | quantity | have | need | gap |
+|---|---|---|---|---|
+| forward / self-referential | dimension of the constraint set | `0.949956` | `< 0.415037` | `0.534918` |
+| backward / coverage | exponent of `#{n <= X reaching 1}` | `~0.84` (literature) | `1` | `~0.16` |
+
+**The backward gap is roughly three times narrower.** That is a reason to prefer it, and it is
+the sharpest piece of direction this namespace can offer the project.
+
+*Caveat:* the `0.84` is the Krasikov-Lagarias-type exponent taken from memory of the
+literature; it cannot be verified from inside this repository and should be checked and cited
+properly before anyone relies on the comparison. The forward number is proved here.
+
 ## Adversarial tests
 
 * The target number is self-consistent: `1 - log2(3/2) = 0.415037` and
-  `H_2(log2/log3) = 0.949956`, so the required reduction `0.949956 - 0.415037 = 0.534919`.
+  `H_2(log2/log3) = 0.949956`, so the required reduction `0.949956 - 0.415037 = 0.534918`.
+* CRT independence verified for `M = 5, 7, 27, 35, 81` over full periods, after an off-by-one
+  in the first attempt produced a false positive.
 * The claim that (ii) yields nothing beyond the above-line condition is checked numerically in
   X-6170: the value-based floor `s_L` and the itinerary-based floor `nu_L` coincide for every
   `L <= 375` (O-6172). If the value information carried extra constraint, the two would
