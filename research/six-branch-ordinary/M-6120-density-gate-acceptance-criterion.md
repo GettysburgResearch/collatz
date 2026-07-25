@@ -98,15 +98,40 @@ Two consequences worth checking against existing data:
 
 This is falsifiable and cheap: each lane already has the data.
 
-## Where the escape route is, if there is one
+## Where the escape route is — CLOSED by T-6131
 
-T-6121's gap audit leaves exactly one opening: architectures that are **not** fixed
-macro-block charts — variable block length, or a digit set that grows with depth, so that
-`D/Q` need not decay. Whether such an architecture can exist with density bounded away from
-zero is open and is, in this agent's assessment, the only structurally new question in the
-positive lane. Note that a genuine divergent orbit, if one exists, is under no obligation to
-have constant asymptotic odd-step density (T-6121c,d), so variable-block architectures are
-also the only ones aimed at the right target.
+T-6121's gap audit left exactly one opening: architectures that are **not** fixed macro-block
+charts — variable block length, or a digit set that grows with depth, so that `D/Q` need not
+decay. This file originally called that the only structurally new question in the positive
+lane.
+
+**T-6131 closes it: there is no escape route.** The ceiling is a property of the target, not
+of the architecture. Any set of 2-adic integers whose positive members are required to diverge
+is contained in
+
+```text
+D = { x : liminf_L k_L(x)/L >= log2/log3 },
+```
+
+which has Haar measure `0` and Hausdorff dimension exactly `H_2(log2/log3) = 0.94996`. So
+**every** divergence architecture — fixed-block, variable-block, growing alphabet, adaptive,
+or arbitrary — has a measure-zero survivor set of dimension at most `0.94996`, and least roots
+growing at least like `2^(0.05004 L)` per Collatz step.
+
+Two consequences that change how this project should read its own results:
+
+1. **The false-compactness trap cannot be engineered away.** Every divergence architecture
+   necessarily has all finite depths nonempty and a possibly-empty limit. The global blocker is
+   not a defect of any construction.
+2. **Depth of finite survivors is a measurement of the chart, not of the conjecture.** An
+   architecture of dimension `d` has least roots `~2^((1-d)L)`, so its deepest survivor below a
+   search bound `B` sits at `L ≈ log_2(B)/(1-d)` — a number fixed by `d` alone, before any
+   mathematics is done. This supersedes the "concrete prediction" section above by giving the
+   same prediction a proof and a universal normalisation.
+
+Gate 1 should therefore be restated in dimension form: **publish `d = log_2 D / q` and the
+codimension `1-d`.** The six-branch chart has `d = 0.136`; the `(4,6)` `64→81` family has
+`d ≤ 0.554`; the ceiling is `0.94996`.
 
 ## Bookkeeping recommendations
 

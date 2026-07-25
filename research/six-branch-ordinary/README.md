@@ -33,6 +33,8 @@ sequence `m_N`.
 | [X-6110](X-6110-least-root-certificate.md) | PROVED (computation) | `m_1 ... m_16` computed exactly and re-verified three ways; `m_17 > 2^266`. Strictly increasing at every level. Any all-time seed `> 2^266`; any physical seed `> 6*2^266 ≈ 7.1e80`. |
 | [C-6111](C-6111-least-root-divergence.md) | EMPIRICAL | `m_N -> infinity`: the chart is ordinarily empty. Measured growth `99380^N` vs predicted `(Q/|A|)^N = 87381^N`, exponent agreeing to 1.13%. **Not proved.** |
 | [R-6112](R-6112-no-height-gate-on-the-divergence-lane.md) | PROVED (no-go) | Cycle-side height gates (PR #50 `L-8310` style) cannot be ported to divergence architectures: the divergence lane has no quantity forced to vanish. |
+| [T-6131](T-6131-universal-divergence-gate.md) | PROVED | **Universal divergence gate.** Every divergence-targeting architecture — fixed-block, variable-block, growing alphabet, arbitrary — has survivor set of Haar measure 0 and Hausdorff dimension `<= H_2(log2/log3) = 0.94996`. Closes the open question left by T-6121. Least roots grow `>= 2^(0.05 L)` per Collatz step; an architecture of dimension `d` gives `2^((1-d)L)`. |
+| [X-6135](../../experiments/X-6135-universal-floor/README.md) | PROVED (computation) | The universal floor `mu_L` computed exactly; `mu_L = 27` for all `L` in `[20,79]`. Measured slope tracks the predicted codimension. |
 | [T-6121](T-6121-uniform-density-gate.md) | PROVED | Uniform density gate: **every** `(k,q)` macro-block chart has `D/Q <= 1/2`, survivor density `<= 2^-N`, all-time set of Haar measure 0. Chart confinement forces odd-step density to a fixed rational `k/q` — strictly stronger than divergence. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
@@ -49,6 +51,11 @@ sequence `m_N`.
   not count it as such.
 * Two families are now closed unconditionally: eventually periodic schedules (T-6103) and
   height-gate ports (R-6112).
+* **The wall is a property of the target, not of the architecture (T-6131).** Every
+  divergence-targeting architecture has a measure-zero survivor set of dimension at most
+  `0.94996`, so the false-compactness trap cannot be engineered away, and the depth of an
+  architecture's finite survivors is fixed by its dimension before any mathematics is done.
+  The six-branch chart sits `2^(0.814 L)` above the universal floor.
 
 ## Independence
 

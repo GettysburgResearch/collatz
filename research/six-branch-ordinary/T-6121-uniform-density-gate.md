@@ -103,8 +103,10 @@ stating plainly:
 * *Does (c) assume blocks start at odd numbers?* Yes, by definition of the chart; T-6101's
   converse remark shows this is automatic once the next block begins with `1`.
 * *Does this apply to non-block architectures?* Not directly. Charts with variable block
-  length, or with a growing digit set, are outside the definition. That is the only escape
-  route this theorem leaves open, and it is a real one — see M-6120.
+  length, or with a growing digit set, are outside the definition. That was the only escape
+  route this theorem left open, and it has since been **closed by T-6131**, which proves the
+  same conclusion for every divergence-targeting architecture whatsoever by bounding the
+  dimension of the target set itself at `H_2(log2/log3) = 0.94996`.
 
 ## Adversarial tests
 
@@ -116,7 +118,7 @@ stating plainly:
 
 ## Suggested next attack
 
-Test whether *any* interesting architecture escapes the definition — in particular whether a
-chart with unboundedly growing block length can keep `D/Q` bounded away from `0`. If not, the
-positive program has no chart-shaped route at all, and M-6120's recommendation should be
-adopted repository-wide.
+Resolved: T-6131 shows no architecture escapes, by bounding the dimension of the divergence
+target itself. T-6121 remains the sharper statement *within* fixed macro-block charts (its
+`D/Q <= 1/2` and the exact `D^N` class count are what X-6110's search algorithm relies on),
+but the universal statement to cite going forward is T-6131.
