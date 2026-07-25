@@ -1,6 +1,8 @@
 # Claim inventory — six-branch ordinary extraction
 
-This isolated `74xx` namespace belongs to issue #58. It does not modify any canonical or competing root ledger.
+The isolated `74xx` namespace belongs to issue #58.  The stacked `75xx`
+extension independently closes the finite algebraic/semialgebraic section class.
+Neither namespace modifies a canonical or competing root ledger.
 
 | ID | Kind | Title | Status | Dependencies |
 |---|---|---|---|---|
@@ -10,7 +12,8 @@ This isolated `74xx` namespace belongs to issue #58. It does not modify any cano
 | `T-7402` | Theorem | No nontrivial finite affine section nucleus | PROPOSED | `D-7401`, `T-7401` alphabet lemma |
 | `T-7403` | Theorem | Every finite rational-function section nucleus collapses to the forward map | PROPOSED | `D-7401`, `T-7402` |
 | `T-7404` | Theorem | No infinite arithmetic progression or semilinear sanctuary in the survivor set | PROPOSED | `D-7401` |
-| `Q-7401` | Open question | Boundedness versus escape of the least ordinary roots | IDEA / GLOBAL BLOCKER | `D-7401`, `T-7401`--`T-7404`, PR #57 `T-7601/T-7603` |
+| `T-7501` | Theorem | Every finite algebraic or semialgebraic section nucleus collapses to the forward map | PROPOSED | `D-7401`, `T-7402`; Newton–Puiseux finite-difference lemma proved locally |
+| `Q-7401` | Open question | Boundedness versus escape of the least ordinary roots | IDEA / GLOBAL BLOCKER | `D-7401`, `T-7401`--`T-7404`, `T-7501`, PR #57 `T-7601/T-7603` |
 
 ## Logical chain
 
@@ -52,7 +55,15 @@ T-7403:
 
 T-7404:
   no infinite arithmetic progression survives all depths;
-  no semilinear/Presburger value sanctuary can be forward invariant.
+  no semilinear/Presburger value sanctuary can be forward invariant;
+
+T-7501:
+  an algebraic branch integral on a complete ordinary tail is polynomial;
+  finite algebraic, radical, piecewise-algebraic, and semialgebraic
+  section nuclei therefore also collapse to the same forward map.
 ```
 
-The obvious finite-description recursive extraction mechanisms are therefore unavailable. The remaining target is direct ordinary height or digit escape, or a genuinely unbounded nonlinear section theorem that proves the same initial root is bounded.
+The full finite algebraic bounded-memory extraction architecture is therefore
+unavailable.  The remaining target is direct ordinary height or digit escape,
+or a genuinely unbounded/non-semialgebraic section theorem that proves the
+same initial ordinary root is bounded.
