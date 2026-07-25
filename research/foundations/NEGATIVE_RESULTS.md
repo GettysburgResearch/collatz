@@ -174,6 +174,35 @@ certificate must confine its seed to residue sets of density 2^{−0.0500445k+o(
 bits per T-step — whereas at a = 5 the corresponding requirement is met by 90% of residues at
 k = 100 and tends to 100%.
 
+### 3.4 Crack-hunt sweep: five scouted angles, none promising (2026-07-25, scout-level)
+
+A five-angle parallel scout with two adversarial judges. Verdicts: **three VACUOUS, two WEAK, none
+PROMISING.** Scout-level rigor (exact computations, not full lemma files); recorded so the angles
+are not re-walked.
+
+- **3-adic analysis of the cycle equation — VACUOUS, for a structural reason worth knowing.**
+  Reducing x₁(2^K − 3^m) = c mod 3^j yields an exact "suffix map": x_i mod 3^j depends only on the
+  j exponents preceding i. But the series resums to c/D — it *is* the cycle equation, not extra
+  information. The killer: **D = 2^K − 3^m is a unit at p = 3** (D ≡ 2^K mod 3), and the Syracuse
+  map is 3-adically *contracting* (ratio 1/3), so p = 3 delivers existence and uniqueness of a
+  fixed point for every word and can never obstruct. Measured filtering power over 100,670 words:
+  **0.000%**. The suffix map is surjective onto all units mod 3^j.
+  **The useful corollary: since D is a unit at both 2 and 3, the entire arithmetic content of
+  "x₁ = c/D is an integer" lives at the primes p | D with p ≥ 5.** (Note the packet had genuinely
+  never looked at p = 3 — the gap was real, the reason for it structural.)
+- **Multi-prime CRT sieve on exponent words — VACUOUS.** A clean dichotomy: for p ∤ D the
+  congruence merely *determines* x₁ mod p and constrains the word not at all; only for p | D does a
+  word condition appear, and that is just D | c restated. Rotation-invariant, so anchoring adds
+  nothing.
+- **Run-length / excursion structure — VACUOUS** at the scales that matter.
+- **Simultaneous anchoring / rotation — WEAK** (one judge's pick: a min-over-rotations functional
+  with a 1/(2 ln 2) sharpening, not developed).
+- **Counterexample-tree geometry — WEAK** (the other judge's pick: whether backward-tree branching
+  above μ can force a node below μ).
+
+The judges split between the two WEAK angles, which is itself informative: nothing scored well
+enough to command agreement.
+
 ## 4. Refuted or corrected claims (recorded so they are not repeated)
 
 Caught by adversarial review inside this packet:
