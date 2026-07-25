@@ -1,0 +1,17 @@
+   m   alpha_m        regime  dim of divergence set    codim  typical drift/step (nats)
+   3   0.63093   SUBcritical               0.949956 0.050044                   -0.14384
+   5   0.43068 SUPERcritical       1 (full measure) 0.000000                    0.11157
+   7   0.35621 SUPERcritical       1 (full measure) 0.000000                    0.27981
+   9   0.31546 SUPERcritical       1 (full measure) 0.000000                    0.40547
+  11   0.28906 SUPERcritical       1 (full measure) 0.000000                    0.50580
+ 181   0.13334 SUPERcritical       1 (full measure) 0.000000                    1.90610
+
+  m = 4 is the critical multiplier: alpha_4 = 1/2 exactly, drift 0, codimension 0.
+  m = 3 is the ONLY odd multiplier in the subcritical range 2 < m < 4,
+  and it sits only 0.050044 into it (max possible 1).
+
+  m=3: of the first 20000 integers, 0 (0.00%) exceed 10^30 within 3000 steps
+        framework predicts ~0% (measure zero)          -> CONFIRMED
+
+  m=5: of the first 20000 integers, 18879 (94.39%) exceed 10^30 within 3000 steps
+        framework predicts ~100% (full measure)        -> CONFIRMED
