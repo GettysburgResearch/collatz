@@ -127,8 +127,8 @@ def legendre_record(A: int, k: int, c: int, r: int):
 
 def reject_record(A: int, k: int, c: int, p: int, q: int, qn: int):
     rhs = 4 * c * (q + qn)
-    _, logrھs_hi = log_bounds_integer(rhs)
-    margin = A * q * L2[0] - ((k * q) // 2) * L3[1] - logrھs_hi
+    _, logrhs_hi = log_bounds_integer(rhs)
+    margin = A * q * L2[0] - ((k * q) // 2) * L3[1] - logrhs_hi
     assert margin > 0
     return {
         "p": p,
