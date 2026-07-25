@@ -125,6 +125,32 @@ bound (b) at or below `B` (contradicting `m >= B`). So no cycle has `k^2 < 3 B l
 
 **(e)** Direct reading of the table in `results/convergents_B71.txt`. `QED`
 
+**(f)** Let `theta = log3/log2` and let `P_n/K_n` be its convergents. Suppose a positive cycle
+has `K_n <= k < K_{n+1}` for some `n`. The best-approximation theorem of the second kind
+(Khinchin, *Continued Fractions*, Thm 16) states that for every integer `k` with
+`1 <= k < K_{n+1}` and every integer `q`,
+
+```text
+| k theta - q |  >=  | K_n theta - P_n |  =  eps_n ,
+```
+
+and the standard convergent estimates give `eps_n > 1/(K_{n+1} + K_n)`. On the other hand (c)
+gives `| q - k theta | = delta/ln2 <= k/(3 m ln2) < K_{n+1}/(3 B ln2)`, using `k < K_{n+1}` and
+`m >= B`. Chaining,
+
+```text
+1/(K_{n+1} + K_n)  <  eps_n  <=  | q - k theta |  <  K_{n+1}/(3 B ln 2),
+```
+
+hence `3 B ln 2 < K_{n+1}(K_{n+1} + K_n)`. Contrapositive: if
+`K_{n+1}(K_{n+1}+K_n) <= 3 B ln2` then no `k` in `[K_n, K_{n+1})` can occur — and since the
+same inequality holds a fortiori for every earlier index (the `K` are increasing, so the
+product is increasing), no `k < K_{n+1}` can occur at all. `QED`
+
+**(g)** (d) and (f) are separately valid, so their maximum is a valid floor. The table is
+computed in `best_approx_floor.py`, with `3 B ln 2` bounded below by a certified rational
+interval around `ln 2`. `QED`
+
 ## Motivation, and why it is recorded in a divergence namespace
 
 T-6140 claims the two lanes are structurally different: the cycle target is countable and

@@ -121,8 +121,18 @@ counterexample's itinerary. And the quantitative comparison is striking:
 | forward / self-referential | dimension of the constraint set | `0.949956` | `< 0.415037` | `0.534918` |
 | backward / coverage | exponent of `#{n <= X reaching 1}` | `~0.84` (literature) | `1` | `~0.16` |
 
-**The backward gap is roughly three times narrower.** That is a reason to prefer it, and it is
-the sharpest piece of direction this namespace can offer the project.
+**The backward gap is numerically narrower — but it is not the same kind of object, and this
+comparison must not be quoted as if it were.** Closing the forward gap would *prove the
+conjecture*; closing the backward one would not, since `X^{1-o(1)}` coverage permits
+`X^{o(1)}` exceptions. The backward target is both nearer and weaker (O-6182).
+
+What survives, and is the sharpest direction this namespace can offer: **the backward lane is
+the one not capped by T-6131**, because it never speaks of a counterexample's itinerary.
+
+Measured (X-6180, `X = 10^8`): the exponent `0.84` is reached at backward-tree depth `65`
+(only `2.45 log2 X`), while full coverage needs depth `592`. So the difficulty in that lane is
+not depth — it is the tail: `0.84 -> 1` costs a factor `9` in depth, and the last `0.05%` of
+integers need more depth than the first `99.95%`.
 
 *Caveat:* the `0.84` is the Krasikov-Lagarias-type exponent taken from memory of the
 literature; it cannot be verified from inside this repository and should be checked and cited

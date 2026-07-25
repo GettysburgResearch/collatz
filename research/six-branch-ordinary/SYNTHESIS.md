@@ -136,8 +136,12 @@ size:
 | forward / self-referential | dimension `0.949956` | `< 0.415037` | `0.534918` |
 | backward / coverage | exponent `~0.84` (literature, unverified here) | `1` | `~0.16` |
 
-Roughly three times narrower. If this namespace has one piece of direction to offer, it is
-that.
+Numerically narrower — but **not the same kind of object**: closing the forward gap would prove
+the conjecture, closing the backward one would not (`X^{1-o(1)}` permits `X^{o(1)}`
+exceptions). The backward target is nearer *and* weaker (O-6182). What survives is that the
+backward lane is the one **not capped by T-6131**. Measured at `X = 10^8`: exponent `0.84` sits
+at backward-tree depth `65`, full coverage at `592` — the difficulty there is the tail, not the
+depth.
 
 ## The one-line summary
 
