@@ -76,10 +76,43 @@ This localises what issue #25 is actually up against, in one number.
   other's parents.
 * This measures where the tree is; it says nothing directly about what is provable.
 
+## The escape model, attempted and only partly successful
+
+The natural next step was carried out in the same session. A depth-`d` path with `b` rare steps
+ends near `2^(d-b) (2/3)^b = 2^d 3^(-b)`, and there are about `C(d,b) 3^(-b)` such paths
+(summing to `(4/3)^d`, as it must). A node is `<= X` iff `b >= b_min(d) = (d - log2 X)/log2 3`,
+giving the parameter-free prediction
+
+```text
+coverage(d, X)  ~  sum_{j <= d} sum_{b >= b_min(j)} C(j,b) 3^(-b).
+```
+
+Tested against the exact data with **one** normalising constant, fitted once at `d = 24`:
+
+| `d` | measured | model | model/meas | coverage |
+|---:|---:|---:|---:|---:|
+| 24 | 2,688 | 2,688 | 1.000 | `X^0.429` |
+| 32 | 26,291 | 26,608 | 1.012 | `X^0.552` |
+| 40 | 200,217 | 220,338 | 1.100 | `X^0.663` |
+| 48 | 945,026 | 1,211,540 | 1.282 | `X^0.747` |
+| 64 | 6,490,538 | 11,491,758 | 1.771 | `X^0.852` |
+| 160 | 84,149,307 | 346,899,643 | 4.122 | `X^0.991` |
+| 592 | 100,000,000 | 467,461,524 | 4.675 | `X^1` |
+
+**Verdict: valid to within `10%` while coverage is below about `X^0.66`, and wrong thereafter**
+— it ends up claiming `4.7 * 10^8` nodes below `10^8`, which is impossible. So the
+leading-order value estimate `2^d 3^(-b)` **understates** the escape: substantially more tree
+nodes leave `[1,X]` than the random-walk picture predicts.
+
+That is the useful negative. The coverage deficit is not a bookkeeping artefact of the
+branching factor, and it is not captured by the first-order value model either. Whatever
+controls the regime beyond `X^0.66` is a genuine feature of the map, and it is precisely the
+regime the Krasikov-Lagarias exponent lives in.
+
 ## Suggested next attack
 
-Model the escape directly: at depth `d`, what fraction of tree nodes lie below `X`? The
-doubling branch multiplies by `2` and the other by `~2/3`, so a node at depth `d` reached by
-`a` doublings and `b` other steps sits near `2^a (2/3)^b`. Predicting the escape fraction is a
-one-dimensional random-walk question, and matching it against the table above would turn the
-measured onset into a formula.
+Find the second-order correction. The obvious candidate is the correlation between the rare
+branch being available (`n = 2 mod 3`) and the value already being large; the leading model
+treats those as independent, and the direction of the error (too many nodes predicted below
+`X`) is consistent with the rare branch being *less* available on the low-value paths that the
+model is counting.

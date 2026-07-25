@@ -14,6 +14,7 @@ Runtime:         seconds (reuses the X-6180 profile)
 |---|---|
 | `branching.py` | proves/verifies the branching factor is exactly `4/3` (`n` has 2 predecessors iff `n = 2 mod 3`) |
 | `deficit.py` | per-level growth ratio against `4/3`, and `c(e)` vs the naive tree prediction |
+| `escape_model.py` | parameter-free escape model; valid to `10%` below `X^0.66`, wrong beyond |
 | `results/` | outputs |
 
 ## Commands
