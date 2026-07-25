@@ -90,6 +90,24 @@ mu_105 = 2919         mu_315 = 8400511
   small integers with unusually long high trajectories are literally the universal floor over
   long stretches of depth.
 
+## Operational ceiling: how deep can anything go?
+
+`max{L : mu_L <= X}` is the deepest above-threshold confinement any integer below `X` achieves
+— the ceiling on every divergence architecture at once:
+
+| `X` | deepest `L` | local exponent `log2(mu_L)/L` |
+|---|---:|---:|
+| `2^10` | 90 | 0.1085 |
+| `2^15` | 133 | 0.1127 |
+| `2^20` | 217 | 0.0891 |
+| `2^25` | 329 | 0.0727 |
+| `2^27.3` | 420 (scan-limited) | 0.0651 |
+
+The local exponent drifts down toward the asymptotic `0.05004` (not monotonically at small
+`L`, since `mu_L` is a step function). Extrapolating to `X = 2^64` gives between `983` steps
+(current local exponent) and `1279` (asymptotic) — **both are extrapolations** and are labelled
+as such; the certified statement is only the table above.
+
 ## Interpretation
 
 The floor is *low*. Growth of `2^(0.05 L)` means that, in principle, an optimally designed

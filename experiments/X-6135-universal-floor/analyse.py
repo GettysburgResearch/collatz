@@ -76,6 +76,24 @@ def main(path):
     print(f"\nlongest run of a single floor value: x = {longest[0]} is mu_L for "
           f"L in [{longest[1][0]}, {longest[1][-1]}] ({len(longest[1])} depths)")
 
+    print("\ndeepest above-threshold confinement achievable by ANY integer below X")
+    print("(read off as max{L : mu_L <= X}; this is the operational ceiling on every")
+    print(" divergence architecture at once)")
+    print(f"  {'X':>8} {'max L':>18} {'local exponent log2(mu_L)/L':>28}")
+    for e in (10, 15, 20, 25):
+        X = 2**e
+        Ls = [(L, mu) for L, _, mu in data if mu <= X]
+        if not Ls:
+            continue
+        L, mu = Ls[-1]
+        flag = " (scan-limited)" if L == Lmax else ""
+        print(f"  2^{e:<6} {str(L)+flag:>18} {log2(mu)/L:>28.4f}")
+    print(f"  the local exponent drifts down toward the asymptotic {1-H2(ALPHA):.5f} (not"
+          f" monotonically at\n  small L, since mu_L is a step function);")
+    print(f"  extrapolating to X = 2^64 gives between {64/(log2(data[-1][2])/Lmax):.0f} steps"
+          f" (current local exponent) and {64/(1-H2(ALPHA)):.0f} (asymptotic). Both are"
+          f" EXTRAPOLATIONS.")
+
     print("\ncomparison with the six-branch chart (X-6110), per Collatz step:")
     fit = slope(tail)
     for N, m in [(8, 181625992579115023082252809688279976000),

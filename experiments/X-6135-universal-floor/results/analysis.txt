@@ -33,6 +33,18 @@ slopes over L in [210, 420]:
 
 longest run of a single floor value: x = 63728127 is mu_L for L in [330, 418] (73 depths)
 
+deepest above-threshold confinement achievable by ANY integer below X
+(read off as max{L : mu_L <= X}; this is the operational ceiling on every
+ divergence architecture at once)
+         X              max L  local exponent log2(mu_L)/L
+  2^10                     90                       0.1085
+  2^15                    133                       0.1127
+  2^20                    217                       0.0891
+  2^25                    329                       0.0727
+  the local exponent drifts down toward the asymptotic 0.05004 (not monotonically at
+  small L, since mu_L is a step function);
+  extrapolating to X = 2^64 gives between 983 steps (current local exponent) and 1279 (asymptotic). Both are EXTRAPOLATIONS.
+
 comparison with the six-branch chart (X-6110), per Collatz step:
   N= 8  L=152   six-branch m_N = 2^ 127.1   universal floor ~ 2^ 18.7   ratio ~ 2^ 108.4
   N=12  L=228   six-branch m_N = 2^ 195.7   universal floor ~ 2^ 21.1   ratio ~ 2^ 174.6
