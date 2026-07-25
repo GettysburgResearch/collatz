@@ -40,6 +40,11 @@ sequence `m_N`.
 | [T-6141](T-6141-cycle-length-floor.md) | PROVED | **Cycle-length floor.** `prod(3+1/n_i) = 2^q` gives the pure-integer bound `m <= k 2^q/(3(2^q-3^k))`; with the verification bound `B = 2^71` every convergent below the Legendre threshold is excluded, so any positive cycle has `k >= 4.95e10` odd elements and `q >= 7.85e10` steps. Tight on the trivial cycle. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
+## Start here
+
+**[SYNTHESIS.md](SYNTHESIS.md)** — one page: the quantitative profile these results force on
+any Collatz counterexample, in both lanes. No new claims; every number sourced.
+
 ## Bottom line
 
 * The chart is genuine, the crosswalk is airtight, and all-time legality really would be a
