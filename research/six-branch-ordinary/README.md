@@ -38,6 +38,9 @@ sequence `m_N`.
 | [T-6121](T-6121-uniform-density-gate.md) | PROVED | Uniform density gate: **every** `(k,q)` macro-block chart has `D/Q <= 1/2`, survivor density `<= 2^-N`, all-time set of Haar measure 0. Chart confinement forces odd-step density to a fixed rational `k/q` — strictly stronger than divergence. |
 | [T-6140](T-6140-lane-dichotomy.md) | PROVED | **Lane dichotomy.** The cycle target is countable, explicitly parameterised, dimension `0`, with a quantity forced to vanish; the divergence target is a continuum of dimension `0.94996` with none. Height gates work only in the first lane, dimension gates only in the second, and neither transfers. Cartography for issue #36 / PR #38. |
 | [T-6141](T-6141-cycle-length-floor.md) | PROVED | **Cycle-length floor.** `prod(3+1/n_i) = 2^q` gives the pure-integer bound `m <= k 2^q/(3(2^q-3^k))`; with the verification bound `B = 2^71` every convergent below the Legendre threshold is excluded, so any positive cycle has `k >= 4.95e10` odd elements and `q >= 7.85e10` steps. Tight on the trivial cycle. |
+| [T-6170](T-6170-conjecture-as-extraction.md) | PROVED | **The conjecture IS an extraction question.** With `s_L = min{n>=2 : T^j(n) >= n for j<=L}`, Collatz `<=>` `s_L -> infinity`. So every architecture's extraction question is the same question asked of a smaller set, and normalising the quantifier is free at every scale. |
+| [R-6171](R-6171-self-referential-exponent-gap.md) | PROVED (no-go) | **The self-referential attack is priced.** A counterexample's minimum `m` must stay above the density line for `log_{3/2}(m)` steps; the loop closes iff the floor's growth exponent exceeds `log2(3/2) = 0.5850`. Measured: `0.0691` at `L=375`. Asymptotic: `0.0500`. Short by `8.5x` rigorously, `11.7x` asymptotically. |
+| [O-6172](O-6172-floors-coincide.md) | EMPIRICAL | The value-based and itinerary-based floors coincide for all `L <= 375`. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
 ## Start here
@@ -57,7 +60,9 @@ any Collatz counterexample, in both lanes. No new claims; every number sourced.
   normalisation and costs three lines (L-6105(d)); it is not progress, and this namespace does
   not count it as such.
 * Two families are now closed unconditionally: eventually periodic schedules (T-6103) and
-  height-gate ports (R-6112).
+  height-gate ports (R-6112). A third is priced rather than closed: the self-referential
+  minimal-element attack needs growth exponent `log2(3/2) = 0.585` and gets `0.069` measured,
+  `0.050` asymptotically (R-6171). **Staying high is cheap; being high is expensive.**
 * The lane dichotomy (T-6140) is not just a framing: T-6141/X-6150 cash it out. Two minutes of
   exact arithmetic in the *cycle* lane excludes an infinite family of `(q,k)` and yields an
   unconditional floor; 94 billion search nodes in the *divergence* lane (X-6110) bought one
