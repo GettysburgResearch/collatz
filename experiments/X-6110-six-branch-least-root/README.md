@@ -36,6 +36,7 @@ all-time seed, and by T-6101 to a divergent Collatz orbit).
 | `crosswalk_proof.py` | exact certificate for T-6101: `kappa_i`, residue classes, parity words |
 | `converse.py` | shows the chart-illegal shifted class realises `W_i` but lands on an even number |
 | `replay.py` | full physical Collatz replay of `m_6`, `m_9`, `m_12` (114/171/228 real steps) |
+| `transitions.py` | explicit witnesses that all 36 ordered branch transitions occur (T-6102) |
 | `ghosts.py` | native ghost family; exhaustive integral-ghost search over all words `L <= 8` |
 | `window.py` | finite decision of all integer periodic orbits (the 25 window candidates) |
 | `results/` | raw output of the `2^256` run and the derived tables |

@@ -94,9 +94,10 @@ Three uses.
 
 * *Is the transition graph restricted?* No. All 36 ordered pairs `(i, i')` are attainable:
   the constraint in use 3 above is `v_2(3^12 u + 7*3^(2i)) = 19 + 3(i-i')`, and for each
-  target valuation in `[4,34]` odd `u` realising it exist by Hensel lifting. This is confirmed
-  empirically: the digit words of the least roots in X-6110 (e.g. `205431351450115`) contain
-  many distinct adjacent pairs. **There is therefore no finite-state obstruction to
+  target valuation in `[4,34]` odd `u` realising it exist by Hensel lifting. This is confirmed by explicit
+  witnesses: `transitions.py` produces, for each of the 36 ordered pairs `(i,i')`, the least
+  positive integer realising it, and verifies each by forward iteration (the smallest of the
+  36 is `m_2 = 1908874353`, an independent cross-check of X-6110). **There is therefore no finite-state obstruction to
   infinite legality**, and no proof of chart-emptiness can come from the transition graph.
 * *Does (a) use positivity?* No; it holds for every integer and every 2-adic integer `x`.
 * *Off-by-one in `v_2(a_i)`*: `a_0 = 7 * 2^15` gives `v_2 = 15`, `a_5 = 7 * 3^10` gives
