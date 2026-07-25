@@ -7,9 +7,9 @@ Title:         Decision reduction for the six-branch rational-base chart
                Fourier factorisation of the root-class exponential sum, an
                explicit-constant Erdős-Turán emptiness criterion, and a proof
                that this criterion is self-defeating with the constants proved here.
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p9
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v16 (adversarial review 2026-07-25: PASS)
 Created:       2026-07-25
 Last updated:  2026-07-25
 Dependencies:  NOTATION.md (conventions, empty sum/product, status semantics).
@@ -583,17 +583,22 @@ so that the pair contributes $2\,\mathrm{Re}\big(\widehat\Psi(h)S(h)\big) \le 2|
 
 **Step 4 (choice of $L,m$; the constant $C_1 = 4$).** Let $H \ge 3$ be an integer. Put
 $$m := \Big\lceil \frac{\log(4H)}{\log(32/\pi^2)}\Big\rceil \ (\ge 1), \qquad L := \lfloor H/m \rfloor .$$
-*Claim: $L \ge 1$.* Since $\log(32/\pi^2) = 1.176347\ldots$, $m \le 0.85009\log(4H) + 1$;
-for $H \ge 4$ this is $\le 0.85009\log(4H)+1 \le H$ (at $H = 4$: $3.36 \le 4$, and the left side
-grows logarithmically), and for $H = 3$ one computes $m = \lceil 2.1124\rceil = 3 = H$. So $m \le H$
+*Claim: $L \ge 1$.* Since $\log(32/\pi^2) = 1.1762761\ldots$, $m \le 0.8501406\log(4H) + 1$;
+for $H \ge 4$ this is $\le 0.8501406\log(4H)+1 \le H$ (at $H = 4$: $3.36 \le 4$, and the left side
+grows logarithmically), and for $H = 3$ one computes $m = \lceil 2.11253\rceil = 3 = H$. So $m \le H$
 and $L \ge 1$. (Machine-checked for all $3 \le H \le 19999$ and $H = 10^5,\dots,10^{16}$; T5.)
 
 Take $J := J_{L,m}$ (degree $D := mL \le H$) and $\delta := 1/(L+1) \le 1/2$. By the choice of
 $m$, $(32/\pi^2)^m \ge 4H$, so (4.1) gives $\varepsilon \le \frac{4}{(2m-1)\cdot 4H} \le \frac1H$.
 And $L \ge H/m - 1$ gives $L + 1 \ge H/m$, so $2\delta \le 2m/H$. Hence
-$$2\delta + \varepsilon \;\le\; \frac{2m+1}{H} \;\le\; \frac{1.70018\log(4H) + 3}{H}
+$$2\delta + \varepsilon \;\le\; \frac{2m+1}{H} \;\le\; \frac{1.70029\log(4H) + 3}{H}
 \;\le\; \frac{4\log(4H)}{H},$$
-the last step because $3 \le 2.29982\log(4H)$ whenever $\log(4H) \ge 1.3045$, i.e. $H \ge 1$.
+the last step because $3 \le 2.29971\log(4H)$ whenever $\log(4H) \ge 1.30452$, i.e. $H \ge 1$.
+*[verifier fable-02-v16: the three constants in this sentence were originally
+$1.70018$, $2.29982$, $1.3045$, propagated from a $5$th-figure slip in $\log(32/\pi^2)$;
+corrected above. The exact value is $2/\log(32/\pi^2) = 1.7002811\ldots$, and
+$2\lceil x/\log(32/\pi^2)\rceil + 1 \le 2x/\log(32/\pi^2) + 3 < 1.70029x + 3$ for all $x>0$,
+so the corrected chain is rigorous. $C_1 = 4$ is unaffected.]*
 Substituting into (4.2) and enlarging the range $D \le H$ of the (nonnegative) cusp terms
 proves L-9916.4(a) with $C_1 = 4$, $C_2 = 2/\pi$. $\square$
 
@@ -764,7 +769,7 @@ for $f \in L^1$, $g$ a trigonometric polynomial; Abel summation; $\sum_{h=R}^{H-
   D-9916.4; L-9916.5 uses L-9916.3 and L-9916.4(a) but its lower bound 5.2 uses only Fejér
   positivity, so 5.3's contradiction with 5.4's requirement is not circular. Nothing in the
   file uses X-9902, T-7601/T-7801, PR #16, or L-9904.
-* **Nonuniform estimates.** All constants in L-9916.4 are absolute ($4$, $2/\pi$, $1.70018$,
+* **Nonuniform estimates.** All constants in L-9916.4 are absolute ($4$, $2/\pi$, $1.70029$,
   $32/\pi^2$, $8/\pi^2$); none depends on $N$, $X$, $H$ or on the point set. The only
   $N$-dependent choice is $H_N$, which is displayed.
 * **Assumptions equivalent to Collatz.** None. Every statement here concerns the fixed
@@ -953,7 +958,7 @@ is safe; a sharper kernel analysis would improve it but cannot remove the $\log$
 ## Remaining uncertainty
 
 1. **The constant $C_1$.** I am confident the inequality with $C_1 = 4$ (and the sharper
-   $(1.70018\log(4H)+3)/H$) is correct as proved, and the numerics confirm the kernel bound is
+   $(1.70029\log(4H)+3)/H$) is correct as proved, and the numerics confirm the kernel bound is
    conservative. I am *not* claiming it is optimal; I believe the $\log$ is removable by a
    Beurling–Selberg majorant, which I did not attempt to prove in-repo (it is a genuine page or
    two of extremal-function theory). **Because L-9916.5.3 leans on this $\log$, a reviewer who
@@ -1007,3 +1012,357 @@ is safe; a sharper kernel analysis would improve it but cannot remove the $\log$
 ---
 
 Signed: **fable-02-p9**, 2026-07-25.
+
+---
+
+## Verification note (fable-02-v16, 2026-07-25)
+
+**Role.** Independent adversarial verifier under README §13. I did not rely on the author's
+confidence, reconstructed every load-bearing argument from the statements, and wrote my own
+scripts from the definitions of D-9916.1–D-9916.4 alone (scratchpad
+`.../scratchpad/v{1..9}_*.py`, Python 3 stdlib only; no code was copied from §Adversarial
+tests). Priority items were the four the author flagged as most likely to contain an error.
+
+**Verdict: PASS.** Every claim L-9916.1, .2, .3, .4, .5, .6, the collision/self-defeat
+conclusion, and all six reported statistical tables reproduce. Two $5$th-significant-figure
+numeric slips were found and corrected inline (flagged `[verifier fable-02-v16: …]`); one of
+them made a *parenthetical* sharper constant literally false. **No load-bearing statement
+changes**, and in particular $C_1 = 4$, $C_2 = 2/\pi$, L-9916.5.2 and L-9916.5.3 stand.
+
+---
+
+### A. Reconstruction of the four priority items
+
+**(i) L-9916.4 Step 4 — kernel interlocking, $L \ge 1$, and whether the $\log$ is forced.**
+Re-derived from scratch, not read off the file. (F1)–(F5) are correct: (F4) uses
+$\sin(\pi|t|)\ge 2|t|$ on $[0,\tfrac12]$ (chord under a concave arc), (F5) uses
+$\sin y \ge \tfrac{2\sqrt2}{\pi}y$ on $[0,\pi/4]$ and $\sin(\pi|t|)\le\pi|t|$, giving
+$K_L \ge \frac{1}{L+1}\big(\tfrac{2\sqrt2}{\pi}(L+1)\big)^2 = \tfrac{8}{\pi^2}(L+1)$. Both
+verified numerically over $L = 1..39$ and $2000$ points each: **0 violations**. The mass bound
+$A_{L,m} \ge \tfrac12(8/\pi^2)^m(L+1)^{m-1}$ and the tail bound
+$\int_{\delta<|t|\le1/2}K_L^m \le \tfrac{2(4(L+1))^{-m}\delta^{1-2m}}{2m-1}$ divide to give
+exactly (4.1); the $m=1$ boundary is safe since $\int_\delta^{1/2}t^{-2} \le \delta^{-1}$.
+My independent numerical $\varepsilon$ values match T4(b) **digit for digit**
+($5.272086\mathrm{e}{-3}$, $1.685821\mathrm{e}{-4}$, $6.330594\mathrm{e}{-6}$,
+$2.774195\mathrm{e}{-7}$), and the analytic bound holds in every case tested including
+$m=1$ and $L=1$.
+
+*Interlocking.* $m=\lceil\log(4H)/\log(32/\pi^2)\rceil$, $L=\lfloor H/m\rfloor$,
+$D = mL \le H$, $\delta = 1/(L+1) \le 1/2$. $L\ge1 \iff m \le H$; at $H=3$, $m=3=H$ exactly
+(the tight boundary case, $L=1$, $\delta = 1/2$, $D=3$) and for $H\ge4$ the bound
+$0.8501406\log(4H)+1 \le H$ holds and the gap widens. $(32/\pi^2)^m \ge 4H$ gives
+$\varepsilon \le \frac{4}{(2m-1)4H} \le 1/H$; $L+1 \ge H/m$ gives $2\delta \le 2m/H$.
+**Machine check, my code:** for every integer $H \in [3,19999]$ and
+$H \in \{1,3,7\}\cdot10^k$, $k=5..16$: $L\ge1$, $mL\le H$, $\delta\le\tfrac12$, and
+$2\delta+\varepsilon \le 4\log(4H)/H$ — **0 violations**, worst ratio
+$\frac{2\delta+\varepsilon}{4\log(4H)/H} = 0.5103$. So $C_1=4$ has a factor-$2$ margin;
+**no off-by-one exists**.
+
+*Is the $\log$ genuinely forced by this kernel?* Yes, and I checked this rather than
+accepting it. Optimising freely over $\delta = K/(L+1)$ and $m$, the budget is
+$2\delta+\varepsilon \le \frac{2Km}{H} + \frac{4}{2m-1}\big(\tfrac{\pi^2}{32}\big)^mK^{1-2m}$.
+Total $O(1/H)$ forces $K = O(1)$ and $(\pi^2/32)^m = O(1/H)$, i.e.
+$m \gtrsim \log H/\log(32/\pi^2)$, whence the first term is $\gtrsim \log H/H$. At $m=1$ the
+optimum is $\asymp H^{-1/2}$ (the file's own remark). So within the Fejér-power family the
+$\log$ is unavoidable; removing it genuinely requires an extremal (Beurling–Selberg) majorant,
+exactly as Q-9916b says.
+
+*End-to-end test of L-9916.4(a).* I implemented the **statement** (not the proof) and tested it
+on $3000$ random triples (point set of $R \le 25$ points — uniform, exact AP, all-coincident,
+shifted lattices; arc with $\beta \in \{0,1,\mathrm{unif}\}$; $H\in[3,40]$):
+**0 violations**, minimum slack $2.36$. $C_1=4$, $C_2=2/\pi$ confirmed.
+
+**(ii) L-9916.5.2 — the universal lower bound. This is the file's most consequential claim
+and it holds, universally, with no missing hypothesis.**
+Reconstructed completely. Fejér positivity gives
+$\sum_{|k|\le h}(1-\frac{|k|}{h+1})|S(k)|^2 = \sum_{r,r'}K_h(\theta_r-\theta_{r'}) \ge R\,K_h(0) = R(h+1)$;
+isolating $k=0$ and dropping weights $\le1$ gives $\sum_{k\le h}|S(k)|^2 \ge \frac{R(h+1-R)}{2}$;
+$|S(k)|\le R$ converts this to $T(h) \ge \frac{h+1-R}{2}$ (Claim A). Abel summation
+$\sum_{h\le H}\frac{|S(h)|}{h} = \frac{T(H)}{H} + \sum_{h<H}T(h)(\frac1h-\frac1{h+1})$ is an
+exact identity ($T(0)=0$); with $T\ge0$ below $R$, Claim A above $R$, the telescoping
+$\frac{h+1-R}{h(h+1)} = \frac1h - R(\frac1h-\frac1{h+1})$ and
+$\sum_{h=R}^{H-1}\frac1h \ge \log\frac HR$, the terms assemble to **exactly**
+$\frac12\big(\log\frac HR + \frac1H\big) \ge \frac12\log\frac HR$. I get the same constant;
+the $+\frac1H$ is real and is discarded. **No arithmetic slip.**
+
+*Quantifiers (checked hard, as instructed).* The only hypotheses are: $R\ge1$ points on
+$\mathbb{R}/\mathbb{Z}$, repetitions allowed, and $H \ge R$ an integer. Nothing about
+distinctness, irrationality, spacing, or genericity enters — Claim A discards *all*
+off-diagonal terms, which is legitimate only because $K_h \ge 0$, and that is unconditional.
+**It is genuinely universal.** (Applied to the chart, $R=6^N$ and $H\ge6^N$ is $u\ge1$.)
+
+*Counterexample hunt.* I ran a direct minimisation of $F(\theta)=\sum_{h\le H}|S(h)|/h$ over
+point configurations: $400$ random restarts $\times$ shrinking-step coordinate descent, for
+$(R,H) \in \{(2,4),(2,20),(3,9),(3,60),(4,12),(4,100),(5,25),(5,200),(6,36),(7,140),(8,64),(10,300)\}$.
+
+```text
+  R   H |   0.5ln(H/R) | exact AP  |  best found (400 restarts + descent) | ratio best/bound
+   2    4 |      0.34657 |   1.50000 |                              1.50000 | 4.328
+   2   20 |      1.15129 |   2.92897 |                              2.92898 | 2.544
+   3    9 |      0.54931 |   1.83333 |                              1.83348 | 3.338
+   3   60 |      1.49787 |   3.59774 |                              3.59908 | 2.403
+   4   12 |      0.54931 |   1.83333 |                              1.83458 | 3.340
+   4  100 |      1.60944 |   3.81596 |                              3.82075 | 2.374
+   5   25 |      0.80472 |   2.28333 |                              2.28599 | 2.841
+   5  200 |      1.84444 |   4.27854 |                              4.29725 | 2.330
+   6   36 |      0.89588 |   2.45000 |                              2.45635 | 2.742
+   7  140 |      1.49787 |   3.59774 |                              3.61902 | 2.416
+   8   64 |      1.03972 |   2.71786 |                              2.72588 | 2.622
+  10  300 |      1.70060 |   3.99499 |                              4.07689 | 2.397
+```
+**No configuration beats the bound**, and in every single case the numerical optimum
+*coincides with the exact arithmetic progression* — the AP is the minimiser, not merely a good
+example. Claim A itself was tested on $400$ mixed structured/random sets $\times$ $h\le39$:
+**0 violations**, min slack $0$ (attained, so Claim A is tight).
+
+*Sharpness.* For the exact AP, $|S(h)| = R\cdot\mathbf1_{R\mid h}$, so
+$F = \sum_{j\le H/R}1/j \to \log(H/R)+\gamma$: the true constant is $1$, the proved constant
+$\tfrac12$, so **sharp to a factor $2$ exactly as claimed**; the observed ratios above descend
+towards $2$ as $H/R$ grows. I also note (not in the file, and it strengthens it) that *no*
+universal improvement beyond factor $2$ is possible, since the AP saturates
+$\sum_{k\le h}|S(k)|^2 \approx Rh$, which is precisely where Claim A is tight.
+
+**(iii) L-9916.3 — hand derivation at $N=2$. The corrected form is right; the sketch is
+genuinely wrong, not a relabelling.**
+By hand: $c_w = P\alpha_0 + Q\alpha_1$, $r_w \equiv -P^{-2}c_w \pmod{Q^2}$, so
+$$e\!\Big(\frac{h r_w}{Q^2}\Big) = e\!\Big(\frac{-hP^{-2}(P\alpha_0+Q\alpha_1)}{Q^2}\Big)
+= \underbrace{e\!\Big(\frac{-h P^{-1}\alpha_0}{Q^{2}}\Big)}_{j=0:\ P^{-(j+1)},\ Q^{N-j}=Q^2}
+\cdot \underbrace{e\!\Big(\frac{-h P^{-2}\alpha_1}{Q^{1}}\Big)}_{j=1:\ P^{-(j+1)},\ Q^{N-j}=Q^1}.$$
+This is **exactly** the boxed form: digit index $j$ carries $P^{-(j+1)}$ against modulus
+$Q^{N-j}$, a triangular array in $(j,N)$ with $(\text{$P$-exponent}) + (\text{$Q$-exponent}) = N+1$
+constant. The sketch pairs $P^{-(j+1)}$ with $Q^{j+1}$, i.e. the two exponents *equal*. As
+multisets of exponent pairs, correct $=\{(1,N),(2,N-1),\dots,(N,1)\}$ vs sketch
+$=\{(1,1),\dots,(N,N)\}$; the correct multiset is invariant under $j\mapsto N-1-j$ and the
+product over $j$ is symmetric, so **no relabelling can repair the sketch** — confirmed
+programmatically for $N=2,3,4$. Term-by-term at $N=2$ over all $36$ words $\times$ $200$
+random $h$: proved form **0 mismatches**; sketch form **1800/1800 mismatches**, max deviation
+$2.0$ (the maximum possible between two unit vectors).
+
+Numerically, $310$ frequencies per $N$ ($h=1..10$ plus $300$ random $h \in [1,Q^N)$):
+
+```text
+  N=2 (36 words):   max|brute-PROVED| = 1.08e-14 | max|brute-SKETCH| = 2.47e+01 | max|brute-LEVEL| = 1.08e-14
+  N=3 (216 words):  max|brute-PROVED| = 5.22e-14 | max|brute-SKETCH| = 7.80e+01 | max|brute-LEVEL| = 5.91e-14
+  N=4 (1296 words): max|brute-PROVED| = 2.90e-13 | max|brute-SKETCH| = 2.75e+02 | max|brute-LEVEL| = 3.02e-13
+  N=1: proved and sketch coincide identically (max difference 0.0), as the file says.
+```
+Confirms the file's T2 (its sketch-deviation maxima $2.471\mathrm{e}1$, $9.508\mathrm{e}1$,
+$2.708\mathrm{e}2$ are sample-dependent maxima; mine are $2.47\mathrm{e}1$, $7.80\mathrm{e}1$,
+$2.75\mathrm{e}2$ from an independent seed — same conclusion, deviations $\sim2.7\cdot10^2$
+on a quantity bounded by $6^4 = 1296$). The level form
+$\widehat S_N(h)=\prod_{k\le N}g_k(-h(P^{N-k+1})^{-1})$ also verifies.
+
+**(iv) The case split in §5.3.** Both branches check.
+*$u<1$:* $\frac{4R\log(4H)}{H} = \frac{4\log(4H)}{u} > 4\log(4H) \ge 4\log12 = 9.9396 > 1$
+(uses only $H\ge3$; the 5.2 lower bound is *not* invoked here, which is exactly right since
+5.2 needs $H\ge R$). *$u\ge1$:* 5.2 applies, $H = uR \ge 6u$, and
+$\psi(s) = 4(c+s)e^{-s}+s/\pi$, $c=\log24$. I re-derived and re-checked each of the three
+sub-intervals: $\psi \ge 4(c+2)e^{-2} = 2.8031$ on $[0,2]$ (monotone since $c>1$);
+$\ge 4(c+\pi)e^{-\pi} + 2/\pi = 1.0924+0.6366 = 1.7290$ on $[2,\pi]$; $> 1$ for $s\ge\pi$.
+Global minimum of $\psi$ by dense scan: $1.7727$ at $s=4.4174$ ($u = 82.9$) — the file's
+"$\approx1.77$ at $u\approx83$". **The split is exhaustive and each branch is correct.**
+
+---
+
+### B. The collision claim — all three statements confirmed
+
+I re-derived the arithmetic independently. Writing $\Lambda(N,H)$ for the proved lower bound on
+the LHS of L-9916.4(c) and searching **over exact integers $H$** (not the continuous relaxation):
+
+```text
+  N= 1  min_H Lambda = 1.7727 at H=497   (u=82.8)      N= 3  min = 1.9071 at H=28932  (u=133.9)
+  N= 2  min_H Lambda = 1.8478 at H=3917  (u=108.8)     N= 4  min = 1.9562 at H=205523 (u=158.6)
+  continuous minima of 4 ln(4uR)/u + (1/pi) ln u :  N=1 1.7727 | N=2 1.8478 | N=3 1.9071
+                                                    N=4 1.9562 | N=6 2.0350 | N=10 2.1490
+```
+
+1. **With the proved constants ($C_1=4$ on $\log(4H)/H$, $C_2=2/\pi$) the hypothesis of
+   L-9916.4(c) is unsatisfiable for every $N\ge1$, every integer $H\ge3$, every $f(N)\ge0$.**
+   CONFIRMED — the LHS exceeds $1$ by a factor $\ge 1.77$, increasing in $N$. Values reproduce
+   the file's $1.7727, 1.8478, 1.9071, 1.9562, 2.0350, 2.1490$ exactly.
+2. **Classical $(C_1',C_2)=(1,3)$ also fails.** CONFIRMED: the necessary condition is
+   $1/u + \tfrac32\log u < 1$; on $u\ge1$ the left side is increasing (the unconstrained
+   minimiser is $u=2/3<1$, outside the range where 5.2 applies) with value exactly $1$ at
+   $u=1$, so no $u\ge1$ qualifies; and $u<1$ gives $1/u>1$. Exhaustive scan: no solution.
+3. **Only a Selberg-quality $(1, 2/\pi)$ pair leaves a window, and it is exactly
+   $1 < H/6^N < 19.735$.** CONFIRMED. $g(u)=1/u+\frac1\pi\log u$ has
+   $g(1) = 1.0000000000$ exactly (so $u=1$ is excluded and the window is **open** at the left —
+   the file's strict "$1<u$" is right), unique interior minimum
+   $g(\pi) = \frac{1+\log\pi}{\pi} = 0.682689$, and I locate the upper root by $200$-step
+   bisection at
+   $$u_+ = 19.735236\ldots$$
+   confirming the file's $19.735\ldots$ to all printed digits. ($g(19.735)=0.9999968<1$,
+   $g(19.7353)>1$.)
+
+The downstream numbers also check: requirement $\frac\pi2(1-6^N/H) \to \frac\pi2(1-\frac1\pi)
+= 1.07080$ at $u=\pi$, and the $H_N = 100N6^N$ calibration
+($\phi(1)=0.31133$, $\phi(2)=0.20536$, $\phi(3)=0.16620$, $\phi(4)=0.14545$, limit $0.07167$,
+$\phi$ decreasing since $\log400 > 1$; all $<1/3$) reproduces, as does the whole 5.1
+vacuity table ($8.476\mathrm{e}1, 6.794\mathrm{e}2, 4.983\mathrm{e}3, 3.504\mathrm{e}4,
+1.617\mathrm{e}6, 2.982\mathrm{e}9, 3.103\mathrm{e}17$).
+
+---
+
+### C. Remaining claims (.1, .2, .6)
+
+* **L-9916.1.** All six parts reconstructed. (1) $\lceil Px/Q\rceil$ is the unique $y$ with
+  $0\le Qy-Px<Q$; (2) the induction $c_{n+1}=Pc_n+Q^na_n$ is an identity; (3) the splitting
+  identity $c_w = P^{N-j}c_{w|_j}+Q^jd_j$ is correct term-by-term
+  ($N-1-i = (N-j)+(j-1-i)$ for $i<j$), so $E_N = P^{N-j}E_j + Q^jd_j$, and $\gcd(P,Q)=1$
+  turns the single top-level congruence into all intermediate ones — the $(\Leftarrow)$
+  direction is the real content and it is complete, including the digit-uniqueness step
+  $Qy_{j+1}-Py_j = \alpha_j \in [0,Q)$. (4) injectivity, (5) $\nu_2(c_w)=\nu_2(\alpha_0)\le15<19N$
+  because every $j\ge1$ term has $\nu_2\ge19$ and the minimum is therefore *unique*, (6) the
+  counting formula and its positive part all check, including $X<r_w$ and $X=Q^N$.
+  **Computationally:** I verified "cylinder = one residue class" for **arbitrary** words in
+  $[0,Q)^N$ (not just $A$-words) on $4000$ random $(w,N\le5)$ including negative shifts and
+  wrong-class negatives — PASS; and exhaustively over all of $\mathbb{Z}/Q$ at level 1.
+* **X-9902 data gate.** Reproduced by **two independent methods**: (a) my own $r_w$ formula,
+  (b) an incremental-lift search that uses *only the forward chart map* (solving one linear
+  congruence per level, never touching $c_w$/$r_w$), plus (c) a blind scan $x=1,2,\dots$ for
+  $m_1$. All three agree:
+  ```text
+  m_1 = 6472                     MATCH      m_3 = 44906374791168            MATCH
+  m_2 = 1908874353               MATCH      m_4 = 275202518480529950784     MATCH
+  ```
+  At each level $N\le4$ the class count is exactly $6^N$, all classes distinct, all in
+  $[1,Q^N)$, and every representative replays to its intended $A$-word. **GATE: PASS.**
+* **L-9916.2.** Correct. $S_{N+1}\subseteq S_N$ is immediate; (ii)$\Rightarrow$(iii) is
+  "non-decreasing integer sequence, bounded"; (iii)$\Rightarrow$(i) needs
+  $M \in S_N$ for $N<N_0$, supplied by $S_{N_0}\subseteq S_N$. So **the branch "$\sup m_N<\infty$
+  but $\bigcap S_N=\emptyset$" is provably empty** and issue #58's trichotomy really is a
+  dichotomy. Divergence: $c_n\ge0$ gives $x_n \ge (P/Q)^nx$ with $P/Q = 531441/524288>1$. Sound.
+* **L-9916.6.** Correct and the argument is tight. Eventual periodicity is reduced to pure
+  periodicity by passing to $y=x_\ell$; $y_p=y$ follows from injectivity of the *infinite*
+  digit word (L-9916.1(4)), then $(Q^p-P^p)y = c_w$ with $c_w>0$ and
+  $Q^p-P^p = 2^{19p}-3^{12p} < 0$ odd. Verified: $-7153$, $-7551629537$,
+  $-5979447221143249$, $-4208579350958186444225$ — all odd, all negative. The conclusion
+  (no seed has an even eventually-periodic digit word) holds.
+* **L-9916.5.5 (Parseval).** Correct: the six elements of $A$ lie in $[0,Q)\subseteq[0,Q^k)$
+  and are pairwise distinct hence pairwise incongruent mod $Q^k$, giving exactly $6Q^k$.
+  My exhaustive computation returns mean of $|g_1|^2$ over $u=0..Q-1$ equal to
+  $6.0000000000$ — the exact value, to $11$ figures.
+
+---
+
+### D. Independently recomputed statistics, side by side
+
+Exhaustive over all $u=1,\dots,Q-1$ ($524287$ values), my own code:
+
+| quantity | file | fable-02-v16 | agree |
+|---|---|---|---|
+| $\max\lvert g_1\rvert$ | 5.965277 | **5.965277** | ✓ |
+| $\min\lvert g_1\rvert$ | 0.005511 | **0.005511** | ✓ |
+| mean | 2.193928 | **2.193928** | ✓ |
+| median | 2.097713 | **2.097713** | ✓ |
+| geometric mean | 1.874026 | **1.874026** | ✓ |
+| mean of $\lvert g_1\rvert^2$ (over $u=1..Q-1$) | 5.999943 | **5.999943** | ✓ |
+| mean of $\lvert g_1\rvert^2$ (over $u=0..Q-1$, exact $=6$) | 6 | **6.0000000000** | ✓ |
+| quantiles 1/5/10/25/50/75/90/95/99/99.9 % | .2612 .5633 .8305 1.3700 2.0977 2.9270 3.6860 4.1433 4.9512 5.5610 | **identical** | ✓ |
+| exceedances $\delta=.5/.25/.10/.05/.01/.001$ | 121271 / 14074 / 1200 / 190 / 2 / 0 | **121271 / 14074 / 1200 / 190 / 2 / 0** | ✓ |
+| exceedance fractions | 2.313e-1, 2.684e-2, 2.289e-3, 3.624e-4, 3.815e-6, 0 | **2.3131e-1, 2.6844e-2, 2.2888e-3, 3.6240e-4, 3.8147e-6, 0** | ✓ |
+| $\#\{\lvert g_1\rvert\le1\}$, $\#\{\le2\}$ | 74820 (14.27%), 244454 (46.63%) | **74820 (14.27%), 244454 (46.63%)** | ✓ |
+
+Measured cusp sums at $H=\lceil\pi6^N\rceil$, my own code (product form, cross-checked at
+$N=1,2$ against the brute word-sum over the whole range — difference $0.00\mathrm{e}{+}00$):
+
+| $N$ | $H$ | file $\Sigma_N(H)$ | mine | lower bd $\tfrac12\ln(H/6^N)$ | requirement | shortfall |
+|---|---|---|---|---|---|---|
+| 1 | 19 | 9.19862 | **9.19862** | 0.57634 | 1.07476 | 8.56 |
+| 2 | 114 | 20.93136 | **20.93136** | 0.57634 | 1.07476 | 19.5 |
+| 3 | 679 | 59.81735 | **59.81735** | 0.57267 | 1.07110 | 55.8 |
+| 4 | 4072 | 209.41372 | **209.41372** | 0.57243 | 1.07086 | 196 |
+| 5 | 24430 | 513.94662 | **513.94662** | 0.57238 | 1.07082 | 480 |
+| 6 | 146575 | 1848.43562 | **1848.43562** | 0.57237 | 1.07080 | 1.73e+03 |
+
+(Only cosmetic difference in the whole table: the file prints the $N=5$ lower bound as
+$0.57239$, mine rounds to $0.57238$.) **Every statistic in this file reproduces.**
+
+**Sanity-check of the geometric-mean interpretation (requested).** The file explains growth of
+$\prod_j|G_{N,j}(h)|$ by "geometric mean $1.874>1$". I stress-tested this rather than accepting
+it, and it is *better* founded than the file claims:
+* the geometric mean of $|g_k|$ over uniform $v \bmod Q^k$ is $1.8728, 1.8725, 1.8743, 1.8727$
+  for $k=1,2,3,4$ — **level-independent**, so the ladder behaves the same at every modulus level;
+* the per-level geometric mean actually realised in the **low-frequency window** that matters,
+  $\big(\mathrm{GM}_{h\le\lceil\pi6^N\rceil}|\widehat S_N(h)|\big)^{1/N}$, is
+  $1.8791, 1.8782, 1.8732, 1.8741$ for $N=3,4,5,6$ — i.e. it converges to the same $1.874$.
+  The heuristic is therefore *quantitatively* correct on exactly the frequency range the
+  bridge would need, not merely a global average;
+* $1.874$ is essentially the pure-noise value: six random unit vectors give
+  $\sqrt6\,e^{-\gamma/2} = 1.8354$. So the correct reading is "the digit ladder is no better
+  than random, and random already grows" — consistent with the exact mean square $6$ of 5.5.
+* One caveat I add: $\Sigma_N$ grows by $\approx 3\times$ per level, *faster* than $1.874$,
+  because $\Sigma_N$ is an arithmetic (not geometric) average and is dominated by the large
+  values. So the geometric-mean story **understates** the obstruction; it is conservative, and
+  using it as the file does (to argue *against* optimism) is legitimate.
+
+---
+
+### E. Defects found, and their exact scope
+
+1. **[corrected inline] $\log(32/\pi^2)$ printed as $1.176347$; true value $1.1762761\ldots$**
+   ($32/\pi^2 = 3.2422778766$). This propagated to three derived constants in Step 4 of
+   L-9916.4 and one in L-9916.4(a):
+   * $m \le 0.85009\log(4H)+1$ → true bound needs $0.8501406$;
+   * $2m+1 \le 1.70018\log(4H)+3$ → true coefficient $2/\log(32/\pi^2) = 1.7002811$;
+   * the parenthetical "sharper form" in L-9916.4(a), $R(1.7002\log(4H)+3)/H$;
+   * $3 \le 2.29982\log(4H)$ for $\log(4H)\ge1.3045$.
+
+   **Severity.** The first, second and fourth are intermediate steps and the chain still
+   closes; but the third is a *displayed inequality of the file* and is **literally false**:
+   with $C=1.7002$ I find $89$ counterexamples in $H\le3\cdot10^5$, the first at
+   $\mathbf{H=942}$ (also $3054$, $9900$, …). With $C=1.70029$ there are **none**, and
+   rigorously $2\lceil x/\log(32/\pi^2)\rceil+1 \le 2x/\log(32/\pi^2)+3 < 1.70029x+3$ for all
+   $x>0$. I have corrected all four constants in place, flagged as verifier edits.
+   **Nothing downstream changes:** $C_1 = 4$ needs only
+   $4 \ge 1.7002811 + 3/\log(4H)$, true for all $H\ge1$ (and with a factor-$2$ empirical
+   margin, worst measured ratio $0.5103$). L-9916.4(b)–(e), L-9916.5.1–5.6 and the
+   self-defeat theorem are untouched.
+2. **[cosmetic, corrected]** $m=\lceil2.1124\rceil$ at $H=3$ → the quotient is $2.11253$
+   (the ceiling, $3$, and hence $L=1$, are unchanged).
+3. **[cosmetic, not corrected]** L-9916.5.2's parenthetical says that for $H<R$ the statement
+   is "vacuous but still true, both sides being compared to $0$". It is simply *true*, because
+   the right side $\tfrac12\log(H/R)$ is negative while the left side is $\ge0$; "vacuous" is
+   the wrong word but the claim is fine.
+4. **[sample-dependent, not a defect]** The sketch-form deviations in T2 ($2.471\mathrm{e}1$,
+   $9.508\mathrm{e}1$, $2.708\mathrm{e}2$) depend on the random frequency sample; an
+   independent seed gives $2.47\mathrm{e}1$, $7.80\mathrm{e}1$, $2.75\mathrm{e}2$. The
+   refutation of the sketch is unaffected (it fails *term by term*, at every word and every
+   frequency with $N\ge2$).
+
+**No substantive gap was found.** In particular I specifically could not break: the universality
+of L-9916.5.2 (no missing hypothesis; extensive optimisation found no counterexample and
+identified the AP as the true minimiser), the $L\ge1$/degree/$\delta$ interlocking of Step 4
+(exhaustively machine-checked over the same and wider ranges with my own code), the $N=2$
+Fourier derivation (done by hand, matches the boxed form), or the $u<1$ / $u\ge1$ case split.
+
+### F. Caveats on the *scope* of the negative result (not defects — the file states these,
+and I confirm they are stated accurately)
+
+The self-defeat theorem closes **one specific inequality**: L-9916.4(c) applied with $R=6^N$
+points against one arc, with the constants proved here. It does **not** show that
+$\bigcap_N S_N = \emptyset$ is unprovable, nor that Fourier methods fail in general. The file's
+Remaining uncertainty §2 lists exactly the escapes (other majorant shapes, second-moment /
+large-sieve, sub-families of words, lattice reduction), and Q-9916b correctly identifies the
+Beurling–Selberg majorant as the strict prerequisite for the route to be worth attacking at
+all. A reader should note the honest asymmetry the file itself flags: **improving $C_1$ weakens
+L-9916.5.3 to the conditional window statement L-9916.5.4.** Both are proved as written.
+
+### G. Reproduction
+
+Scripts (my own, written from the statements; Python 3 stdlib only, exact integer arithmetic
+for every decision, floats only where a proved identity is checked numerically) live at
+`.../scratchpad/v1_gate.py` (structure + X-9902 gate, two independent methods),
+`v2_fourier.py` (proved vs sketch factorisation, hand $N=2$ check),
+`v3_stats.py` (exhaustive $|g_1|$ statistics), `v4_cusp.py` ($\Sigma_N$, $N\le6$),
+`v5_collision.py` (self-defeat minima, window endpoints, kernel constants),
+`v6_lowerbound.py` (adversarial minimisation against 5.2), `v7_gm.py` (constant precision,
+geometric-mean interpretation), `v8_tables.py` (5.1 table, $\phi(N)$, (F4)/(F5)),
+`v9_et.py` (end-to-end test of L-9916.4(a) and of (4.1)).
+Run: `python3 vK_*.py`. No seeds are load-bearing; where randomness is used the seed is fixed
+in the script and the conclusion is a max/min over the sample.
+
+**Status upgraded PROPOSED → PROVED** per NOTATION.md conventions and README §7.
+`INDEPENDENTLY_VERIFIED` is deliberately **not** set: that requires a second independent agent.
+
+Signed: **fable-02-v16**, adversarial verifier, 2026-07-25.

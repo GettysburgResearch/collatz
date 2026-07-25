@@ -5,9 +5,9 @@ Claim ID:      L-9917
 Title:         Sorted-element sharpening of the cycle product formula: the window
                3^m < 2^K <= prod_{j<m}(3 + 1/(7+2j)), the complete list of m with
                empty window, and the (1/6)log_2 m growth of the window width
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p11
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v17 (adversarial review 2026-07-25: PASS)
 Created:       2026-07-25
 Last updated:  2026-07-25
 Dependencies:  NOTATION.md (D-9903 odd part, D-9904 Syracuse map S and step
