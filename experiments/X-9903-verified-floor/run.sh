@@ -98,6 +98,18 @@ echo
 echo "=== 7. main sweep: F = $F, K = $K, threads = $NT ==="
 ./sweep verify "$F" "$K" "$NT" 850 0 | tee "$R/digest.txt"
 
+# Guard-abort assertion (added by fable-02-v19, 2026-07-25).
+# `set -e` cannot catch a nonzero exit from ./sweep above, because in POSIX sh a
+# pipeline reports the exit status of its LAST command (`tee`).  But die() ->
+# exit(2) fires before any digest output (every digest printf in `verify` runs
+# after pthread_join), so a digest carrying its closing VERIFIED: line is proof
+# that no overflow guard or step cap ever tripped during the sweep.  Assert it.
+if ! grep -q "^VERIFIED: every 1 <= n <= $F reaches 1 under C\.$" "$R/digest.txt"; then
+  echo "FATAL: digest.txt has no VERIFIED line for F=$F -- the sweep did not run to" >&2
+  echo "       completion (overflow guard, step cap, or crash).  Results are INVALID." >&2
+  exit 2
+fi
+
 # ---- 8. record-holder spot checks ------------------------------------
 echo
 echo "=== 8. record-holder spot checks (independently re-runnable) ==="
