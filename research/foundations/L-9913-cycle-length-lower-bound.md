@@ -57,7 +57,9 @@ f(m) \;:=\; \lceil m\alpha\rceil - m\alpha \;=\; 1 - \{m\alpha\} \in (0,1)
 \quad (m \in \mathbb{Z}^{+}),$$
 and, for an integer $F \ge 2$,
 $$\varepsilon_0(F) \;:=\; \frac{1000}{3 \cdot 693 \cdot F} \;=\; \frac{1000}{2079\,F}
-\;\;>\;\; \varepsilon(F) \;:=\; \frac{1}{3F\ln 2}.$$
+\;\;>\;\; \varepsilon(F) \;:=\; \frac{1}{3F\ln 2}$$
+(the displayed inequality $\varepsilon_0 > \varepsilon$ is Corollary A1 below,
+i.e. $\ln 2 > 693/1000$).
 
 > **Standing floor hypothesis $\mathrm{(V}_F)$.** $F \ge 2$ is an integer such that
 > **every** $n \in \mathbb{Z}^{+}$ with $n \le F$ reaches $1$ under $C$ (D-9905).
@@ -576,8 +578,9 @@ $K$.
 *Converse.* If $\mathcal{O}$ is a nontrivial $C$-cycle, it contains an odd element
 (a cycle of positive integers cannot consist of even numbers only: repeated
 halving strictly decreases), and the odd elements of $\mathcal{O}$, in $C$-order,
-form an $S$-cycle by the same computation; it is nontrivial because
-$\mathcal{O} \ne (1,4,2)$. $\blacksquare$
+form an $S$-cycle: from an odd $x \in \mathcal{O}$ the next odd element of the
+$C$-orbit is reached after exactly $1 + \nu_2(3x+1)$ steps and equals $S(x)$, by
+the computation above. It is nontrivial because $\mathcal{O} \ne (1,4,2)$. $\blacksquare$
 
 ### Proof of L-9913.8 (convergent dichotomy)
 
@@ -625,8 +628,8 @@ rational). If $A > B$: $(u+v)\alpha = (P - A) + (Q + B) = (P+Q) - (A-B)$ with
 $A - B \in (0,1)$, so the new $A' = (P+Q) - (u+v)\alpha = A - B \in (0,1)$, the new
 $B$ is unchanged, and $(P+Q)v - Q(u+v) = Pv - Qu = 1$. If $A < B$: symmetrically
 $B' = B - A \in (0,1)$, $A$ unchanged, and $P(u+v) - (Q+P)u = Pv - Qu = 1$. So
-$(\dagger)$ and $A,B \in (0,1)$ persist, and $u, v$ are strictly increasing over
-time. Also, by construction $A = P - u\alpha$ with $P$ an integer and
+$(\dagger)$ and $A,B \in (0,1)$ persist, and $u+v$ strictly increases at every
+step (each of $u, v$ is nondecreasing). Also, by construction $A = P - u\alpha$ with $P$ an integer and
 $A \in (0,1)$, which forces $P = \lceil u\alpha\rceil$ and $A = f(u)$; similarly
 $Q = \lfloor v\alpha\rfloor$ and $B = g(v) = \{v\alpha\}$.
 
@@ -646,11 +649,19 @@ $m \ge u+v$) and $s,t \le 0$ (which forces $m \le 0$). The remaining sign patter
 | $\le -1$ | $\le 0$ | $m = su+tv \le -u < 0$: excluded |
 | $=0$ | $\le 0$ | $m \le 0$: excluded |
 
-Hence every **positive** value of $N - m\alpha$ is $\ge A$; as
-$f(m) = \min\{N - m\alpha : N \in \mathbb{Z},\ N - m\alpha > 0\}$ (attained at
-$N = \lceil m\alpha\rceil$), we get $f(m) \ge A$. Exchanging the roles of the two
-columns (i.e. reading the same table with $(s,t) \to (-t,-s)$, or repeating the
-argument for $m\alpha - N > 0$) gives $g(m) \ge B$ for all $1 \le m < u+v$.
+(The five rows are exhaustive: of the nine sign combinations, $(s\ge1, t\ge1)$ and
+$(s\le -1,t\le -1)$, $(s\le-1,t=0)$, $(s=0,t\le 0)$, $(s\le -1, t\ge 1)$ are all
+listed or excluded above.) Hence every **positive** value of $N - m\alpha$ is
+$\ge A$; as $f(m) = \min\{N - m\alpha : N \in \mathbb{Z},\ N - m\alpha > 0\}$
+(the minimum is attained at $N = \lceil m\alpha\rceil$), we get $f(m) \ge A$.
+
+The same bookkeeping for $m\alpha - N = tB - sA$ gives the second half: a value
+$tB - sA$ can be positive only when $t \ge 1$ and $s \le 0$ (if $t \le 0$ and
+$s \ge 1$ it is $\le -A < 0$; if $t\le 0$ and $s \le 0$ then $m \le 0$; if
+$t \ge 1$ and $s \ge 1$ then $m \ge u+v$), and in that case
+$tB - sA = tB + |s|A \ge B$. Since
+$g(m) = \min\{m\alpha - N : N \in \mathbb{Z},\ m\alpha - N > 0\}$, this gives
+$g(m) \ge B$ for all $1 \le m < u+v$.
 
 **Consequence (block skipping).** Let $u_1 < u_2 < \dots$ be the successive values
 of $u$. When $u$ is about to be replaced by $u_{j+1} = u_j + v$, the Invariant at
@@ -766,10 +777,11 @@ Deliberate search against the README §8 checklist.
   statement, verified, not assumed. The results are compatible with the existence
   of a nontrivial cycle (they only constrain its size).
 * **Incorrectly assumed independence / reduced-denominator trap.** Addressed
-  head-on in L-9913.3(3) and the boxed note: the squeeze constrains $q =
+  head-on in L-9913.3(1),(3) and the boxed note: the squeeze constrains $q =
   m/\gcd(K,m)$, and the file proves both directions ($\mathrm{Adm}_F(m)$ directly,
-  and $\mathrm{Adm}_F(q)$ with upward closure), so no step assumes $m$ itself is a
-  best-approximation denominator. Test 9 checks the closure computationally.
+  by (2); $\mathrm{Adm}_F(q)$ by (3); upward closure by (1)), so no step assumes
+  $m$ itself is a best-approximation denominator. Test 9 checks the closure
+  computationally.
 * **Division-by-zero / sign errors.** Divisions are by $\ln 2 > 0$, $m \ge 1$,
   $q \ge 1$, $x_{\min} \ge 1$, $1 - x^2 > 0$ on $(0,1)$, $\varepsilon_0 > 0$. The
   direction of every inequality after division by a positive quantity was checked
@@ -1277,9 +1289,9 @@ treated as one.
 3. **Feed $m \ge 2966$ back into the cycle machinery.** L-9905.4's element bounds
    at $(m, K) = (2966, 4701)$ give $x \ge 1179$ only (Test 13), i.e. the two
    constraints are far from saturating each other; combining $m \ge 2966$ with
-   L-9912's exponent statistics (at least $m/3$ exponents equal to $1$) and with
-   L-9915's window method might yield a *second*, independent obstruction that
-   scales with $m$.
+   L-9912's exponent statistics (more than $m/3$ of the exponents $a_i$ equal $1$)
+   and with L-9915's window method might yield a *second*, independent obstruction
+   that scales with $m$.
 4. **Baker.** The honest way to go far beyond this bound is a lower bound for
    $|K\ln 2 - m\ln 3|$ of the shape $\ge C\,m^{-\kappa}$; combined with the upper
    bound $\le m/(3x_{\min})$ of L-9905.3 it converts a verified floor into a bound
