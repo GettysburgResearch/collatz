@@ -64,6 +64,40 @@ growing?" T-6103 adds a third for this chart and probably others: *if the constr
 prescribes an eventually periodic schedule, it is already refuted*, because periodic
 itineraries are realised only by the negative ghosts.
 
+## A concrete, falsifiable prediction for the other lanes
+
+The gate is not just advisory: it predicts, per architecture, *how deep finite survivors go
+before the wall becomes visible*. If a chart has digit count `D` and modulus `Q = 2^q`, the
+least root at depth `N` should scale as `(Q/D)^N`, so the deepest survivor below a search
+bound `B` sits at
+
+```text
+N_max  ~  log B / log(Q/D).
+```
+
+| architecture | `(k,q)` | `Q = 2^q` | `D` | rate `Q/D` | `N_max` below `10^20` |
+|---|---|---|---|---|---|
+| six-branch chart (this namespace) | (12,19) | 524288 | 6 | **87381** | ~4 |
+| full `(12,19)` macro-block chart | (12,19) | 524288 | `<= C(18,11) = 31824` | `>= 16.5` | ~16 |
+| centered `64 -> 81` (PR #16 family) | (4,6) | 64 | `<= C(5,3) = 10` | `>= 6.4` | ~25 |
+
+Two consequences worth checking against existing data:
+
+* The six-branch chart hits its wall almost immediately — `m_4` already exceeds `10^20` — which
+  is exactly what X-6110 measures. Nothing is wrong with that architecture that is not wrong
+  with all of them; it is simply the one where the gate is visible soonest.
+  The formula is self-validating here: it predicts `N_max = 14.2` below `10^70`, and the
+  measured `m_14 = 5.5 * 10^69` sits exactly there.
+* A `64 -> 81`-style chart has rate `6.4` at most, so survivors persist to depth `~25` below
+  `10^20` and to depth `~87` below `10^70`. **Large finite minima there are therefore expected
+  under the emptiness hypothesis, not evidence against it.** Any lane reporting deep finite
+  survivors should compare them against its own `(Q/D)^N` curve before treating them as
+  progress. If a lane's measured least roots grow *slower* than its `(Q/D)^N`, that is a real
+  anomaly and worth escalating; if they track it, the lane is on the predicted path to
+  emptiness.
+
+This is falsifiable and cheap: each lane already has the data.
+
 ## Where the escape route is, if there is one
 
 T-6121's gap audit leaves exactly one opening: architectures that are **not** fixed

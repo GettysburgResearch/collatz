@@ -30,7 +30,7 @@ By L-6105(a), `S_N` is exactly `6^N` residue classes mod `2^19N`, so its natural
 * its Hausdorff dimension in the standard 2-adic metric is exactly
 
   ```text
-  dim S = log 6 / (19 log 2) = 0.1360439...
+  dim S = log 6 / (19 log 2) = 0.13605065...
   ```
 
 * `S` has cardinality of the continuum. It contains all the ghosts of T-6103(b), which are
