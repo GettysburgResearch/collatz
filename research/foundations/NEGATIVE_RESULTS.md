@@ -156,6 +156,24 @@ appears to be. Genuinely new and worth keeping: d(y) = ν₃(y+1) and the amplif
 y + 1 ≥ (3/2)^d(μ+1); the congruence **μ ≡ 3 or 7 (mod 12)** (L-9909/L-9911 stopped at μ ≡ 3 mod 4);
 and the augmented survivor tables.
 
+### 3.3 What is drift-driven vs format-driven (L-9922, PROPOSED)
+
+Porting the packet to T_a(n) = n/2, (an+1)/2 separates results that never used the value 3 from
+those that depend on the drift. **Everything pivots at a = 4**, since γ_a = log_a 2 ≷ ½ ⟺ a ≷ 4:
+L-9906's small-m elimination, the availability of a verified floor, and "typical orbits contract"
+all break there. Format-driven (hold verbatim for every a): the cycle equation, positivity, the
+product formula, the approximation corollary, the sign/criticality criterion, the squeeze
+machinery, the sorted window, L-9907's envelope and threshold, and the parity bijection.
+
+**A correction this port forced on the packet:** L-9905.4's c-bounds carry a divisor 1/(a−2) that
+is invisible at a = 3 — the a = 3 form is outright **false** at a = 5 (c = 39 < 117 = 5³−2³). The
+a = 3 statement stands; its general form did not.
+
+**The atypicality budget** (the quantitative answer to "why is 3x+1 harder"): a 3x+1 divergence
+certificate must confine its seed to residue sets of density 2^{−0.0500445k+o(k)} — about 0.05
+bits per T-step — whereas at a = 5 the corresponding requirement is met by 90% of residues at
+k = 100 and tends to 100%.
+
 ## 4. Refuted or corrected claims (recorded so they are not repeated)
 
 Caught by adversarial review inside this packet:
