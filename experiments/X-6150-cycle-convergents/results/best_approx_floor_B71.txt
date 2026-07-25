@@ -1,0 +1,15 @@
+B = 2^71;   3*B*ln2 >= 4.909943e+21
+
+             K_n          K_{n+1}     K_{n+1}(K_{n+1}+K_n)   <= 3B ln2 ?   all k < K_{n+1} excluded
+        53715833        171928773             3.879480e+16          True                       True
+       171928773        225644606             8.971029e+16          True                       True
+       225644606        397573379             2.477749e+17          True                       True
+       397573379       6189245291             4.076744e+19          True                       True
+      6189245291       6586818670             8.415362e+19          True                       True
+      6586818670      65470613321             4.717644e+21          True                       True
+     65470613321     137528045312             2.791801e+22         False                      False
+
+UNCONDITIONAL FLOOR (no Legendre gap):  k >= 65470613321 = 6.5471e+10
+Legendre-only floor (T-6141d)        :  k >= 4.9548e+10
+improvement factor                   :  1.321x
+corresponding total shortcut steps   :  q >= 1.0377e+11

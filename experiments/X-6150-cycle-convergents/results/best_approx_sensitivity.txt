@@ -1,0 +1,20 @@
+=== B = 2^68 ===
+UNCONDITIONAL FLOOR (no Legendre gap):  k >= 6586818670 = 6.5868e+09
+Legendre-only floor (T-6141d)        :  k >= 1.7518e+10
+improvement factor                   :  0.376x
+corresponding total shortcut steps   :  q >= 1.0440e+10
+=== B = 2^71 ===
+UNCONDITIONAL FLOOR (no Legendre gap):  k >= 65470613321 = 6.5471e+10
+Legendre-only floor (T-6141d)        :  k >= 4.9548e+10
+improvement factor                   :  1.321x
+corresponding total shortcut steps   :  q >= 1.0377e+11
+=== B = 2^75 ===
+UNCONDITIONAL FLOOR (no Legendre gap):  k >= 137528045312 = 1.3753e+11
+Legendre-only floor (T-6141d)        :  k >= 1.9819e+11
+improvement factor                   :  0.694x
+corresponding total shortcut steps   :  q >= 2.1798e+11
+=== B = 2^80 ===
+UNCONDITIONAL FLOOR (no Legendre gap):  k >= 753110839881 = 7.5311e+11
+Legendre-only floor (T-6141d)        :  k >= 1.1211e+12
+improvement factor                   :  0.672x
+corresponding total shortcut steps   :  q >= 1.1937e+12

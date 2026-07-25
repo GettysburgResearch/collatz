@@ -72,11 +72,11 @@ is what T-6131 plus R-6112 plus the L-6105 gap audit jointly say.
 | size bound (pure integers) | `m <= k 2^q / (3 (2^q - 3^k))` | T-6141(b) |
 | approximation quality | `\|q/k - log3/log2\| <= 1/(3 m log2)` | T-6141(c) |
 | odd elements, `B = 2^68` | `k >= 1.7518 * 10^10` | T-6141(d) |
-| odd elements, `B = 2^71` | `k >= 4.9548 * 10^10` | T-6141(d) |
-| shortcut steps, `B = 2^71` | `q >= 7.8531 * 10^10` | T-6141(d) |
+| odd elements, `B = 2^71` | `k >= 6.5471 * 10^10` | T-6141(g) |
+| shortcut steps, `B = 2^71` | `q >= 1.0377 * 10^11` | T-6141(g) |
 | if `q/k` is a convergent | `k >= 137528045312` | T-6141(e) |
 
-The floor scales as `sqrt(B)`: a verification push to `2^80` would raise it to `k >= 1.6*10^12`.
+Two independent routes (Legendre; best approximation) whose maximum is the floor — the first scales as `sqrt(B)`, the second jumps discretely at convergent denominators, so verification pushes help unevenly.
 
 **Why this lane behaves differently.** The cycle target is countable, of Hausdorff dimension
 `0`, explicitly parameterised by `(q, k, w)`, and has a quantity forced to vanish. So finite

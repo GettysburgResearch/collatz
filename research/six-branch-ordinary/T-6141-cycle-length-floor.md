@@ -56,6 +56,43 @@ Numerically:
 **(e) Conditional strengthening.** If additionally `q/k` is a convergent, the first convergent
 not excluded by (b) is `q = 217976794617`, `k = 137528045312`, so `k >= 1.375 * 10^11`.
 
+**(f) Second route, closing the Legendre gap.** Let `P_n/K_n` be the convergents of
+`theta = log3/log2`. By the classical best-approximation theorem (Khinchin Thm 16), for every
+`1 <= k < K_{n+1}` and every integer `q`,
+
+```text
+| k theta - q |  >=  | K_n theta - P_n |  =:  eps_n   >   1/(K_{n+1} + K_n).
+```
+
+Combining with (c) (`|q - k theta| <= k/(3 m ln2) < K_{n+1}/(3 B ln2)`) gives: if
+
+```text
+K_{n+1} ( K_{n+1} + K_n )  <=  3 B ln 2
+```
+
+then **no `k < K_{n+1}` is possible at all** — convergent or not. This needs no Legendre
+hypothesis, so it closes the gap flagged in (d)'s gap audit.
+
+**(g) The floor is the maximum of the two routes, and which one wins depends on `B`.**
+
+| `B` | (d) Legendre route | (f) best-approximation route | floor = max |
+|---|---:|---:|---:|
+| `2^68` | `1.7518 * 10^10` | `6.5868 * 10^9` | `1.7518 * 10^10` |
+| `2^71` | `4.9548 * 10^10` | **`6.5471 * 10^10`** | **`6.5471 * 10^10`** |
+| `2^75` | `1.9819 * 10^11` | `1.3753 * 10^11` | `1.9819 * 10^11` |
+| `2^80` | `1.1211 * 10^12` | `7.5311 * 10^11` | `1.1211 * 10^12` |
+
+At the currently relevant `B = 2^71` the new route improves the floor by `1.32x`, to
+
+```text
+k >= 65470613321  odd elements,     q >= 1.0377 * 10^11  shortcut steps.
+```
+
+Route (f) is a **step function** of `B` (it can only jump to convergent denominators) while
+(d) grows like `sqrt(B)`, so (f) wins just after a jump and loses in between. At `B = 2^71` the
+binding inequality is `4.7176 * 10^21 <= 4.9099 * 10^21` — a margin of only `4%`, so this
+improvement would evaporate at `B = 2^70.9`.
+
 ## Proof
 
 **(a)** Writing the odd elements in cycle order with `n_{i+1} = (3 n_i + 1)/2^{b_i}` and
@@ -107,9 +144,13 @@ T-6140(C).
   cannot be checked from inside this repository. Every conclusion is therefore stated as a
   function of `B`, and the table gives two values. If the true verified bound is lower, the
   floor scales as `sqrt(B)`.
-* **The Legendre gap is real.** For `k` between `sqrt(3B ln2/2)` and the first surviving
-  convergent, `q/k` need not be a convergent and this argument excludes nothing. (e) is
-  therefore conditional and is labelled as such. Conclusion (d) is the unconditional one.
+* **The Legendre gap is real for route (d), and route (f) closes it.** For `k` between
+  `sqrt(3B ln2/2)` and the first surviving convergent, `q/k` need not be a convergent and (d)
+  excludes nothing there; (f) excludes non-convergent `k` as well, using best approximation
+  instead. (e) remains conditional. The unconditional floor is (g).
+* **(f) does not use the size bound (b) at all** — only `m >= B`. That is why it is not
+  uniformly stronger than (d), which does use (b) to kill the convergents. The two are
+  genuinely different arguments and the honest answer is their maximum.
 * **This does not prove no cycle exists.** It is a floor, not an exclusion. Deep results
   (Eliahou; Simons-de Weger's bound on the number of circuits) attack the problem from a
   different direction and are not reproduced or superseded here.
@@ -135,8 +176,9 @@ T-6140(C).
 
 ## Suggested next attack
 
-* Recompute with the current verification record and cite it; the floor is `sqrt(B)`, so a
-  verification push to `2^80` would raise the floor to `k >= 1.6 * 10^12`.
+* Recompute with the current verification record and cite it. Route (d) scales as `sqrt(B)`;
+  route (f) jumps discretely at convergent denominators, so a verification push can raise the
+  floor by a large factor at some values of `B` and not at all at others (see (g)).
 * Close the Legendre gap: for `k` in the gap, `q/k` is not a convergent, so
   `|q/k - theta| >= 1/(2k^2)` and (c) gives `m <= 2k^2/(3 ln 2)`. Combining with `m >= B`
   yields `k >= sqrt(3 B ln2 / 2)` again — the same threshold, so the gap is not closable this
