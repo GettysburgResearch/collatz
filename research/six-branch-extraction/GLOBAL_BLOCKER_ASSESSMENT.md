@@ -2,7 +2,7 @@
 
 **Agent:** `gpt56-extraction-01`  
 **Issue:** #58  
-**Date:** 2026-07-25  
+**Date:** 2026-07-26  
 **Status:** strategic audit; source claim statuses are preserved
 
 ## Frozen repository interfaces inspected
@@ -27,20 +27,20 @@ The repository is not wholly circular, but its positive divergent-orbit program 
 
 ### Genuine progress
 
-1. **Complete strict classes have been eliminated.** PR #33, independently reconstructed in PR #44, excludes every ordinary completion in one frozen corrected phase-34 directive class. That is a real universal theorem about an exhaustive prescribed subsystem.
-2. **False bridges have been exposed and repaired.** The centered, stack, completion-limit, and fixed-modulus PDR reviews identify concrete invalid inferences rather than merely failing to prove them.
-3. **Cycle families have been finitely or symbolically closed.** Fixed support, fixed pulse-cone, and bounded-defect theorems genuinely eliminate their quantified classes.
-4. **The cycle acceptance gate is now exact.** A positive-cycle certificate must force the whole equality
+1. **Complete strict classes have been eliminated.** PR #33, independently reconstructed in PR #44, excludes every ordinary completion in one frozen corrected phase-34 directive class.
+2. **False bridges have been exposed and repaired.** The centered, stack, completion-limit, and fixed-modulus PDR reviews identify concrete invalid inferences.
+3. **Cycle families have been closed across stated scopes.** Fixed support, fixed pulse-cone, and bounded-defect theorems genuinely eliminate quantified classes.
+4. **The cycle acceptance gate is exact.** A positive-cycle certificate must force
    \[
    C=N(2^A-3^k),
    \]
-   or cross a valid mixed-place height threshold and then replay every valuation.
+   or cross a valid mixed-place height threshold and replay every valuation.
 
 ### Progress that is structural but not existential
 
-The refund, run-core, H-renewal, centered, and intrinsic-core branches have derived exact ordinary state machines, deterministic future routing, strong growth, coprime-core replacement, fresh-prime necessity, and completion-height filters. These results are useful because they remove false obligations and reject weak certificate formats.
+The refund, run-core, H-renewal, centered, and intrinsic-core branches have derived exact ordinary machines, deterministic routing, strong growth, coprime-core replacement, fresh-prime necessity, and completion-height filters.
 
-They do not, however, prove that one fixed ordinary initial state remains legal forever.
+They do not prove that one fixed ordinary initial state remains legal forever.
 
 ## The exact repeatedly missing inference
 
@@ -52,7 +52,7 @@ S_n=\{x\in\mathbf Z_{>0}:x\text{ is legal through depth }n\},
 m_n=\min S_n.
 \]
 
-The sets are nested. The valid ordinary compactness principle is
+The valid ordinary compactness principle is
 
 \[
 \boxed{
@@ -86,64 +86,68 @@ can justify ordinary extraction.
 
 ## Is the least-root target genuinely weaker than Collatz?
 
-The answer has two different sides.
-
 ### Positive side
 
-Proving that the six-branch least roots are bounded is exactly proving that this strict chart contains an all-time positive ordinary root. After the branch-qualified physical replay, it is already a Collatz counterexample. It is not a logically weaker positive statement; it is a more restrictive sufficient construction.
+Proving that the six-branch least roots are bounded is exactly proving that this strict chart contains an all-time positive ordinary root. The exact physical seed is `6*m-5`. This is not a weaker positive statement; it is the restricted counterexample itself.
 
 ### Negative side
 
 Proving
 
 \[
-m_n\longrightarrow\infty
+\boxed{m_n\to\infty}
 \]
 
-eliminates the complete six-branch chart while leaving all other Collatz behavior untouched. This is genuinely narrower than Collatz and is therefore a legitimate global reduction.
+eliminates the complete six-branch chart while leaving all other Collatz behavior untouched. This is genuinely narrower than Collatz.
 
-The two-sided decision is valuable because either outcome changes the repository's full-objective state:
+## Architecture-specific obstruction ladder
 
-```text
-bounded/stable:
-  explicit root -> exact replay -> K-candidate;
-
-unbounded:
-  complete fixed architecture eliminated.
-```
-
-## New architecture-specific obstruction
+### Direct quotient
 
 `L-7401` proves that removing the first base-`Q` block from any two-step legal root produces a high quotient whose first canonical digit is outside the six-digit language.
 
-`T-7401` proves that every state-dependent integer-affine attempt with one shift per type is forced to be
+### Finite affine control
+
+`T-7401` forces every one-state-per-type affine self-section to be the original forward map. `T-7402` extends this to an arbitrary finite affine control nucleus: the normalized carries would form a finite set closed under six expanding maps, and a max–min argument forces that set to be `{0}`.
+
+### Finite rational control
+
+`T-7403` allows arbitrary rational-function coordinates. Tail integrality first forces each rational function to be a polynomial. Exact leading-coefficient transport around a finite control cycle then forces degree one. The machine reduces to `T-7402` and again collapses to the forward map.
+
+Thus adding nonlinear polynomials or rational functions to finite control does not supply a smaller ordinary root.
+
+### Value-space sanctuaries
+
+`T-7404` proves that the complete survivor set contains no infinite arithmetic progression. At depth `n`, there are at most `6^n` legal residue classes modulo `2^(19n)`, whereas any fixed arithmetic progression eventually occupies more than `6^n` such classes.
+
+Therefore no infinite semilinear subset lies in the survivor set, and strict forward growth excludes a nonempty finite invariant subset. No Presburger/ultimately-periodic value sanctuary exists.
+
+## What is now ruled out globally
 
 ```text
-scale = P,
-shift at type i = c_i,
+direct high-quotient descent;
+finite affine section recursion;
+finite polynomial/rational section recursion;
+semilinear value-space sanctuary;
+fixed-modulus completion or PDR lasso;
+conditional growth as a substitute for ordinary existence.
 ```
 
-which is exactly the original forward map.
-
-`T-7402` allows an arbitrary finite control nucleus. After normalizing its common scale, the section carries would have to form a finite integer set closed under six expanding affine maps. An extremal argument forces that set to be `{0}` and again leaves only the forward map.
-
-Thus the most plausible self-replicating-subtree argument is not merely absent. It is impossible throughout the full finite-control affine class.
+These are theorem-level method exclusions, not failed searches.
 
 ## Consequence for current research priorities
-
-Another amplifier, longer legal prefix, finite-state affine router, complexity lower bound, fresh-prime condition, or conditional growth theorem does not address the global blocker.
 
 For the stationary six-branch architecture, only the following change the decision:
 
 1. one explicit positive root with an all-time induction;
 2. a uniform archimedean bound on the least roots;
 3. a global digit-escape theorem proving the least roots diverge;
-4. a genuinely nonlinear or infinite-section ordinary invariant.
+4. a genuinely unbounded nonlinear section invariant that proves a bound for the same initial ordinary root.
 
-For the positive-cycle architecture, the corresponding legitimate target is whole-denominator equality or a height theorem that forces it. Proper-factor divisibility and near-integrality alone do not cross that gate.
+For the positive-cycle architecture, the corresponding legitimate target is whole-denominator equality or a height theorem forcing it. Proper-factor divisibility and near-integrality do not cross that gate.
 
 ## Current conclusion
 
-No unconditional ordinary root, no full positive cycle, and no `K-####` object follows from the inspected repository state.
+No unconditional ordinary root, full positive cycle, or `K-####` object follows from the inspected repository state.
 
-The negative/exclusion program has made genuine progress. The positive-existence program has produced increasingly exact machines, but ordinary extraction remains unresolved. The honest next theorem is `Q-7401`; anything weaker risks returning to the same quantifier gap.
+The negative/exclusion program has made genuine progress. The positive-existence program has produced exact machines but ordinary extraction remains unresolved. The honest next theorem is still `Q-7401`; the present wave proves that broad finite rational and semilinear detours cannot decide it.
