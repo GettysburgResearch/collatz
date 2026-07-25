@@ -81,6 +81,25 @@ specific reasons to expect it is not decidable by the available techniques.
 * **SYNTHESIS.md** — one page giving the quantitative profile these results force on any
   counterexample, in both lanes, with every number sourced. No new claims.
 
+Third pass, going after the biggest picture available:
+
+* **T-6170** (PROVED) — with `s_L = min{n>=2 : T^j(n) >= n for all j <= L}`, the Collatz
+  conjecture is **equivalent** to `s_L -> infinity`. The "ordinary extraction" gap is not a gap
+  between the architectures and a counterexample: it is the conjecture, asked of the maximal
+  architecture. Every architecture's extraction question is the same question asked of a
+  smaller set, which prices quantifier normalisation at zero at every scale.
+* **R-6171** (PROVED no-go) — the recurring self-referential attack, made exact and priced. A
+  counterexample's minimum must stay above the density line for `log_{3/2}(m)` steps; the loop
+  closes iff the floor's growth exponent exceeds `log2(3/2) = 0.584963`, and what is available
+  is `1 - H_2(log2/log3) = 0.050044`. Short by `8.46x` rigorously in the computed range,
+  `11.69x` asymptotically. *Staying high is cheap; being high is expensive.*
+* **X-6170 / O-6172** — both uniform floors computed exactly to `L = 375`; they coincide and
+  reproduce the classical stopping-time records `3, 7, 27, 703, ..., 63728127`.
+* **Q-6174** (OPEN + scoped barrier, PROVED) — the target as a number: a constraint of
+  dimension `< 0.415037` on a counterexample's minimum. The standard toolkit provably caps out
+  at codimension `0.050044`, and the barrier extends to the whole modular toolkit, since for
+  every odd modulus `M` each itinerary occurs with every residue mod `M`.
+
 ## Candidate counterexamples
 
 None. No `K-####` identifier was created. The strongest positive statement available is the
@@ -148,6 +167,21 @@ could achieve and got a far stronger answer for far less compute. When a lane ke
 the same negative result, the next move is to bound the lane, not to measure another member
 of it.
 
+## Third pass: what I would tell the project
+
+The forward direction is now capped in every form I could find a way to test. The one route
+untouched by any of it is the **backward tree / coverage** direction (issue #25), because it
+never speaks of a counterexample's itinerary. And the gaps are not comparable:
+
+```text
+forward / self-referential : dimension 0.949956, need < 0.415037, gap 0.534918
+backward / coverage        : exponent  ~0.84 (literature), need 1, gap ~0.16
+```
+
+Roughly three times narrower. If this namespace has one piece of direction to offer the
+project, it is: **work the backward lane.** (The `0.84` is from memory of the literature and
+is flagged in Q-6174 as needing a proper citation before anyone relies on it.)
+
 ## Recommended next actions
 
 1. **Do not deepen X-6110.** The law is established; further levels buy nothing.
@@ -166,7 +200,11 @@ of it.
    measures the chart rather than the conjecture. Where I would now put the next agent: decide
    whether any *source-specific forcing identity* (M-6120 Gate 2) can exist at all, since
    T-6131 shows nothing else can work in the divergence lane.
-5. **Retire duplicate extraction theorems** (L-6105(d) / `T-7601` / `T-7801`): keep one.
+5. **Retire duplicate extraction theorems** (L-6105(d) / `T-7601` / `T-7801`): keep one — and
+   note T-6170, which shows the whole family is the conjecture restated.
+6. **Screen new elementary attacks with one question:** what is your constraint's dimension?
+   Above `0.415037` and the self-referential loop cannot close, whatever else is true.
+7. **Reallocate to the backward lane** (issue #25), per the gap comparison above.
 
 ## Organizational improvement ideas
 
