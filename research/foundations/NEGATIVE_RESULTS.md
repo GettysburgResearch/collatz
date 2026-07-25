@@ -109,6 +109,23 @@ minimum and the gap widens with N.
   structural reason recorded. Relatedly, (2 − log₂3)·m ≈ 0.415m is the hard ceiling of any counting
   bound of this type for the exponent-1 count (L-9917.6).
 
+### 3.1 No cycle-elimination result can hold uniformly in q (L-9921, PROPOSED)
+
+Q-9904 ("is every rational in Z₂ eventually T-periodic?") reduces **exactly** to "for every positive
+odd q, the shortcut 3x+q map has no divergent integer orbit" (L-9921.3, four equivalent forms).
+The reduction is clean but the honest verdict is that it **reformulates rather than simplifies**:
+q = 1 alone already contains the divergence half of both Collatz and 3x−1.
+
+The barrier worth recording: **every finite binary word is an integer T_q-cycle word for a suitable
+odd q** (L-9921, Corollary 3). Consequently no cycle-elimination theorem of the L-9906 / L-9912 /
+L-9913 / L-9915 / L-9917 family can hold uniformly in q, and the L-9905-style bounds degrade
+linearly in q. Any attack on Q-9904 must therefore be q-specific, exactly as L-9918's undecidability
+result predicts for extraction problems generally.
+
+The one real gain is categorical: on Λ_q = (1/q)Z ≅ Z the integer pigeonhole applies (the set is
+discrete), so archimedean methods are meaningful there and L-9907.1's lower envelope ports with
+proof. The deep half (L-9907.2) is left as an explicitly labelled unverified port.
+
 ## 4. Refuted or corrected claims (recorded so they are not repeated)
 
 Caught by adversarial review inside this packet:
