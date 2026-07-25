@@ -1,0 +1,20 @@
+constant-word ghosts  x = a_i/(Q-P) = -a_i/7153 :
+  i=0: x = -229376/7153  = -32.067105   integral? False
+  i=1: x = -258048/7153  = -36.075493   integral? False
+  i=2: x = -290304/7153  = -40.584929   integral? False
+  i=3: x = -326592/7153  = -45.658046   integral? False
+  i=4: x = -367416/7153  = -51.365301   integral? False
+  i=5: x = -413343/7153  = -57.785964   integral? False
+
+ghost window  [-a_max/7153, -a_min/7153] = [-57.785964, -32.067105]
+
+search for periodic words whose ghost is a NEGATIVE INTEGER (= chart cycle):
+  L=1: 6 words, 0 integral ghosts
+  L=2: 36 words, 0 integral ghosts
+  L=3: 216 words, 0 integral ghosts
+  L=4: 1296 words, 0 integral ghosts
+  L=5: 7776 words, 0 integral ghosts
+  L=6: 46656 words, 0 integral ghosts
+  L=7: 279936 words, 0 integral ghosts
+  L=8: 1679616 words, 0 integral ghosts
+total integral ghosts found: 0
