@@ -1,0 +1,33 @@
+depth 34: 27,168 paths  (model predicts (4/3)^34 = 17,698)
+
+   b     observed      frac   Binom(d,1/4)  obs/model
+   0            1   0.00004        0.00006      0.651
+   1           17   0.00063        0.00064      0.977
+   2           96   0.00353        0.00352      1.003
+   3          345   0.01270        0.01252      1.014
+   4          901   0.03316        0.03235      1.025
+   5        1,816   0.06684        0.06470      1.033
+   6        2,940   0.10822        0.10424      1.038
+   7        3,917   0.14418        0.13899      1.037
+   8        4,381   0.16126        0.15636      1.031
+   9        4,189   0.15419        0.15057      1.024
+  10        3,452   0.12706        0.12548      1.013
+  11        2,453   0.09029        0.09126      0.989
+  12        1,476   0.05433        0.05830      0.932
+  13          740   0.02724        0.03289      0.828
+  14          299   0.01101        0.01644      0.669
+  15          114   0.00420        0.00731      0.574
+  16           30   0.00110        0.00289      0.382
+  17            1   0.00004        0.00102      0.036
+  18            0   0.00000        0.00032      0.000
+
+mean b: observed 8.3541,  model d/4 = 8.5000
+var  b: observed 5.7623,  model d*3/16 = 6.3750
+
+max b observed 17 (model allows 34)
+
+The mean matches -- it must, since the branching factor is 4/3 either way -- but the SHAPE
+does not: the true distribution is narrower and truncated, because rare steps cannot occur on
+consecutive levels along a doubling chain (the residue must return to 2 mod 3 first).  The
+escape model integrates over the tail of this distribution, which is exactly where the two
+disagree, so it mis-estimates how many nodes stay below X.

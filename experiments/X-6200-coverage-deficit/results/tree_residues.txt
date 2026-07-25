@@ -1,0 +1,19 @@
+   d        nodes  branching  frac 0 mod 3   frac 1   frac 2
+   0            1    1.00000       0.00000  1.00000  0.00000
+   4            4    1.25000       0.00000  0.75000  0.25000
+   8           14    1.28571       0.28571  0.42857  0.28571
+  12           50    1.34000       0.32000  0.34000  0.34000
+  16          157    1.32484       0.33121  0.34395  0.32484
+  20          488    1.32992       0.33197  0.33811  0.32992
+  24        1,534    1.32920       0.33507  0.33572  0.32920
+  28        4,843    1.33347       0.33223  0.33430  0.33347
+  32       15,290    1.33250       0.33427  0.33322  0.33250
+  36       48,290    1.33295       0.33355  0.33351  0.33295
+  40      152,589    1.33328       0.33357  0.33315  0.33328
+  44      482,159    1.33348       0.33335  0.33317  0.33348
+  45      642,949    1.33337       0.33325  0.33339  0.33337
+
+naive prediction (integers): branching 4/3 = 1.33333, each residue 1/3 = 0.33333
+measured: the tree's residue distribution drifts toward 0 mod 3, and the branching
+factor falls below 4/3 accordingly.  Residue 0 is absorbing under doubling, so every
+node divisible by 3 contributes a permanently non-branching doubling chain.

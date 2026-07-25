@@ -1,0 +1,12 @@
+rare step from n = 2 mod 3 gives child (2n-1)/3; its residue depends on n mod 9:
+   n = 2 mod 9  ->  child = 1 mod 3   (needs one doubling first)
+   n = 5 mod 9  ->  child = 0 mod 3   (CAN NEVER DESCEND AGAIN)
+   n = 8 mod 9  ->  child = 2 mod 3   (can descend again immediately)
+
+under doubling the residue moves 1 -> 2 -> 1 -> ... and 0 -> 0, so residue 0 is
+absorbing: a path at 0 mod 3 doubles forever and can never take another rare step.
+Exactly 1/3 of rare steps land there, so every descent carries a 1/3 chance of
+permanently ending that path's ability to descend.
+
+random walks that reached 0 mod 3: 3989; of those, the number whose subsequent
+doubling chain ever became 2 mod 3 (i.e. could descend again): 0  -> absorption confirmed: True
