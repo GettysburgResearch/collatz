@@ -12,9 +12,24 @@ Scope:               the fixed chart of T-6101
 Related counterexample candidates: none (this claim *excludes* a family)
 ```
 
-## Statement
+## Definitions
+
+The chart step is defined on `Z` by `x' = ceil(Px/Q)`, `d(x) = Qx' - Px`, and legality by
+`d(x) in A`. The ceiling has no meaning on `Z_2`, so legality is extended to `x in Z_2` by the
+equivalent congruence form:
+
+```text
+x is legal with digit a in A   :<=>   P x + a = 0  (mod 2^19)  in Z_2,   and then  x' = (Px+a)/Q.
+```
+
+For `x in Z` the two definitions agree: `d(x)` is the unique element of `[0,Q)` congruent to
+`-Px mod Q`, so `d(x) in A` iff some (necessarily unique) `a in A` satisfies
+`Px + a = 0 mod Q`, and then `x' = (Px+a)/Q = ceil(Px/Q)`. All statements below use the
+congruence form.
 
 Let `c_w = sum_{j=0..L-1} a_{w_j} P^(L-1-j) Q^j` for a word `w` in `{0..5}^L`.
+
+## Statement
 
 **(a) Tail determinacy.** The infinite legal itinerary determines the point: if `x` in `Z_2`
 is legal forever with digit word `(a_n)`, then for every `m`
@@ -50,8 +65,9 @@ None is an integer (`7153 = 23 * 311` is coprime to every `a_i = 7 * 3^(2i) * 2^
 eventually periodic legal itinerary. In particular the chart has **no integer cycle at all**.
 
 **(d) Divergence dichotomy.** Every legal itinerary of a *positive* integer is aperiodic, and
-the orbit satisfies `x_n >= (P/Q)^n x_0 -> infinity`. Conversely every *bounded* legal orbit
-in `Z_2` is eventually periodic and therefore lands in the ghost window `[-57.79, -32.06]`.
+the orbit satisfies `x_n >= (P/Q)^n x_0 -> infinity`. Conversely, a legal orbit consisting of
+*rationals with a common denominator* that stays bounded in the real sense must repeat a
+value, hence is eventually periodic, hence lands in the ghost window `[-57.79, -32.06]`.
 
 ## Motivation
 
@@ -132,9 +148,9 @@ integer cycles whatsoever.
 
 If `x_0 >= 1` is legal forever, its itinerary cannot be eventually periodic by (c); and
 `x_{n+1} = ceil(P x_n/Q) >= P x_n/Q` gives `x_n >= (P/Q)^n x_0 -> infinity` since `P > Q`.
-For the converse, a legal orbit in `Z_2` that is bounded in the real sense and takes rational
-values with bounded denominator must repeat a value, and repetition of the value forces
-repetition of the itinerary (the itinerary is a function of the point). `QED`
+For the converse, a legal orbit of rationals with a fixed denominator that is bounded in the
+real sense takes finitely many values, hence repeats one; and repetition of the value forces
+repetition of the itinerary, since by (a) the itinerary is a function of the point. `QED`
 
 ## Dependency audit
 
@@ -157,9 +173,10 @@ repetition of the itinerary (the itinerary is a function of the point). `QED`
 * *Sharpness of the window*: the endpoints are attained in the limit by the constant words
   `0^inf` and `5^inf`, so the interval cannot be shrunk without more information; the
   candidate set `{-57,...,-33}` is therefore not artificially large.
-* *(d) converse rigor*: the converse half of (d) is the only place where a soft argument is
-  used ("bounded + bounded denominator ⇒ repetition"). It is not used anywhere else in this
-  namespace, and no later claim depends on it. Marked accordingly.
+* *(d) converse scope*: the converse half of (d) carries the hypothesis "rationals with a
+  fixed denominator", which is genuine — a legal orbit of general `Z_2` points has no real
+  absolute value and the statement would be meaningless without it. Within that hypothesis the
+  argument is complete. Nothing else in this namespace depends on it.
 
 ## Adversarial tests
 
@@ -170,7 +187,8 @@ repetition of the itinerary (the itinerary is a function of the point). `QED`
 
 ## Remaining uncertainty
 
-None on (a)-(c). The converse half of (d) is stated loosely on purpose and is not load-bearing.
+None on (a)-(c). The converse half of (d) is restricted to fixed-denominator rational orbits
+and is not load-bearing.
 
 ## Suggested next attack
 
