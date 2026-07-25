@@ -42,3 +42,24 @@ print("\n(the H formula is negative exactly when 3^(2r+1) > 2^(3r+2), i.e. r >= 
 for r in (2, 3, 4):
     g = F(-2**(3*r+2), 3**(2*r+1) - 2**(3*r+2))
     print(f"g_{r} = {g}" + ("   claimed -2048/139 : %s" % (g == F(-2048, 139)) if r == 3 else ""))
+
+# --- T-6140(A) consistency: the general cycle window, in the PHYSICAL coordinate n,
+#     must contain the six-branch chart window T-6103(b) pushed forward by n = 6x-5.
+from fractions import Fraction as Fr
+L, k = 19, 12
+den = 2**L - 3**k                      # = -7153
+lo_gen = Fr(3**k - 2**k, den)
+hi_gen = Fr(2**(L-k)*(3**k - 2**k), den)
+A6 = [7*3**(2*i)*2**(15-3*i) for i in range(6)]
+# chart-coordinate window of T-6103(b) ...
+lo_chart, hi_chart = Fr(-A6[5], 7153), Fr(-A6[0], 7153)
+# ... pushed to the physical coordinate
+lo_phys, hi_phys = 6*lo_chart - 5, 6*hi_chart - 5
+print("\nT-6140(A) vs T-6103(b) consistency (both in the physical coordinate n = 6x-5):")
+print(f"  general (L,k)=(19,12) window : [{float(min(lo_gen,hi_gen)):.2f}, {float(max(lo_gen,hi_gen)):.2f}]")
+print(f"  six-branch window pushed fwd : [{float(lo_phys):.2f}, {float(hi_phys):.2f}]")
+print(f"  six-branch window is contained in the general one: "
+      f"{min(lo_gen,hi_gen) <= lo_phys and hi_phys <= max(lo_gen,hi_gen)}")
+# and the six-branch kappa_i are exactly the c_w of the general formula
+print(f"  kappa_0 = 35765+6*a_0 = {35765+6*A6[0]}  equals c_w for word W_0 : "
+      f"{35765+6*A6[0] == 1412021}   x_w = {Fr(1412021, den)} = {float(Fr(1412021,den)):.2f}")

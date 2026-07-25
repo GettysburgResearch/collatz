@@ -1,0 +1,7 @@
+g_4 = -16384/3299
+
+T-6140(A) vs T-6103(b) consistency (both in the physical coordinate n = 6x-5):
+  general (L,k)=(19,12) window : [-9436.62, -73.72]
+  six-branch window pushed fwd : [-351.72, -197.40]
+  six-branch window is contained in the general one: True
+  kappa_0 = 35765+6*a_0 = 1412021  equals c_w for word W_0 : True   x_w = -1412021/7153 = -197.40

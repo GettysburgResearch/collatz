@@ -36,6 +36,7 @@ sequence `m_N`.
 | [T-6131](T-6131-universal-divergence-gate.md) | PROVED | **Universal divergence gate.** Every divergence-targeting architecture — fixed-block, variable-block, growing alphabet, arbitrary — has survivor set of Haar measure 0 and Hausdorff dimension `<= H_2(log2/log3) = 0.94996`. Closes the open question left by T-6121. Least roots grow `>= 2^(0.05 L)` per Collatz step; an architecture of dimension `d` gives `2^((1-d)L)`. |
 | [X-6135](../../experiments/X-6135-universal-floor/README.md) | PROVED (computation) | The universal floor `mu_L` computed exactly; `mu_L = 27` for all `L` in `[20,79]`. Measured slope tracks the predicted codimension. |
 | [T-6121](T-6121-uniform-density-gate.md) | PROVED | Uniform density gate: **every** `(k,q)` macro-block chart has `D/Q <= 1/2`, survivor density `<= 2^-N`, all-time set of Haar measure 0. Chart confinement forces odd-step density to a fixed rational `k/q` — strictly stronger than divergence. |
+| [T-6140](T-6140-lane-dichotomy.md) | PROVED | **Lane dichotomy.** The cycle target is countable, explicitly parameterised, dimension `0`, with a quantity forced to vanish; the divergence target is a continuum of dimension `0.94996` with none. Height gates work only in the first lane, dimension gates only in the second, and neither transfers. Cartography for issue #36 / PR #38. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
 ## Bottom line
