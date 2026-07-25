@@ -13,7 +13,7 @@ The repeated logical gap in the constructive branches is the quantifier swap
 \forall n\ \exists x_n\in\mathbf Z_{>0}
 \text{ legal through depth }n
 \quad\not\Longrightarrow\quad
-\exists x\in\mathbf Z_{>0}\ \forall n,\
+\exists x\in\mathbf Z_{>0}\ \forall n,
 x\text{ legal through depth }n.
 \]
 
@@ -70,6 +70,42 @@ Nevertheless its unique realization is
 
 Thus finite compatibility plus an exact supercritical infinite path plus conditional growth can still be a pure completion ghost.
 
+## Why the Diagonal Foundry is not yet a reduction
+
+`R-7601` audits the strictly causal parity-digit closure proposal directly.
+
+For a strictly causal operator
+
+\[
+E_k:\{0,1\}^k\to\{0,1\},
+\]
+
+the closure equation
+
+\[
+\operatorname{par}(\alpha_E)
+=E(\operatorname{dig}(\alpha_E))
+\]
+
+has one uniquely computable point `alpha_E in Z_2`.  However:
+
+```text
+E -> alpha_E is surjective onto all of Z_2;
+computable E -> alpha_E is surjective onto all computable 2-adic points.
+```
+
+More strongly, for every tail property `P` invariant under finite changes and containing `1^infinity`,
+
+```text
+some uniformly P-output foundry has a positive ordinary point
+    iff
+some positive ordinary integer already has parity word in P.
+```
+
+For the supercritical one-density property this says that the foundry target is exactly the pre-existing restricted divergent-integer target.  Strict causality gives uniqueness and computability, but no eventual-zero binary tail and no ordinary extraction.  Unrestricted foundry enumeration is therefore a reparametrization of computable `2`-adic points, not a weaker route to a counterexample.
+
+A restricted operator family could still matter only after proving architecture-specific eventual-zero or bounded-least-root information.
+
 ## Exact restricted target
 
 The cleanest live positive target is the PR `#45` / PR `#50` six-branch chart.  Put
@@ -111,6 +147,7 @@ This is a narrower decision problem than Collatz.  Its negative side eliminates 
 | `T-7601` | Bounded-minimum ordinary compactness theorem | `PROPOSED` |
 | `T-7602` | Supercritical compatible parity schedules can be nonordinary ghosts | `PROPOSED` |
 | `T-7603` | Six-branch restricted-minimum decision reduction | `PROPOSED`, physical implication branch-qualified |
+| `R-7601` | Strictly causal foundry is surjective and preserves the original tail-witness problem | `PROPOSED / ARCHITECTURE REFUTATION` |
 | `Q-7601` | Decide boundedness versus escape of the six-branch least roots | `IDEA / GLOBAL BLOCKER` |
 
 ## Repository-wide verdict
@@ -121,7 +158,7 @@ The important distinction is:
 
 - PR `#33` / PR `#44` genuinely cross the extraction boundary **negatively** for one frozen corrected stage class by proving that every compatible completion is nonordinary.
 - PRs `#45`, `#49`, `#51`, and `#19` have exact ordinary state machines and strong consequences **conditional on infinite legality**, but none proves a bounded least-root sequence or supplies one finite forever-defined root.
-- fixed-modulus PDR, prescribed directives, and raw or transported stack capacity do not supply the missing quantifier swap.
+- fixed-modulus PDR, prescribed directives, unrestricted causal foundries, and raw or transported stack capacity do not supply the missing quantifier swap.
 - the cycle lanes have a different global blocker: complete divisibility by the entire denominator and exact replay.  This packet does not pretend that ordinary-extraction compactness resolves that finite arithmetic obligation.
 
 ## Progress gate
@@ -133,4 +170,4 @@ For a nested ordinary-survivor architecture, a new result changes the full-objec
 3. one explicit seed together with an all-time legality induction;
 4. divergence `m_n->infinity` or eventual nonboundary residue blocks for the entire fixed architecture.
 
-Longer finite prefixes, larger multipliers, more refund, additional stack capacity, denser surviving residue trees, or stronger growth after legality are useful local mathematics but do not cross the ordinary-extraction boundary.
+Longer finite prefixes, larger multipliers, more refund, additional stack capacity, denser surviving residue trees, stronger growth after legality, or another uniquely generated nonordinary `2`-adic point are useful local mathematics but do not cross the ordinary-extraction boundary.
