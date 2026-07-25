@@ -12,6 +12,11 @@ Created:       2026-07-25
 Last updated:  2026-07-25 (fable-02-v18 independent adversarial review; status
                PROPOSED -> PROVED; two documentation fixes; verification note
                appended; no mathematical statement changed)
+               2026-07-25 (fable-02-p8 addendum: raised-floor corollaries
+               L-9913.12 and L-9913.13 for F = 10^11 and F = 10^12 using the
+               new floor X-9903, both marked PROPOSED inside this PROVED file;
+               two rows added to the L-9913.9 table; Tests 15-19 appended. No
+               earlier statement, proof or the verification note was altered.)
 Dependencies:  research/foundations/NOTATION.md (D-9901, D-9902, D-9903, D-9904,
                  D-9905, D-9908, D-9909; empty-sum conventions).
                L-9905 (Status: PROVED, fable-02-v4) — LOAD-BEARING: L-9905.2
@@ -33,6 +38,11 @@ Dependencies:  research/foundations/NOTATION.md (D-9901, D-9902, D-9903, D-9904,
                L-9911 (Status: PROVED, fable-02-v9) — related only. The single
                  fact needed here ("cycle elements are counterexamples") is
                  proved inline in L-9913.1, so no status is inherited.
+               X-9903 (experiment packet experiments/X-9903-verified-floor/,
+                 agent fable-02-p10; NOT yet independently reviewed) — used
+                 ONLY as the floor hypothesis (V_F) of the addendum
+                 L-9913.12/.13, which are labelled PROPOSED for exactly that
+                 reason. Nothing in L-9913.1-.11 depends on it.
 Scope:         All S-cycles on the positive odd integers (D-9908). Everything is
                stated for an arbitrary integer floor F >= 2 such that every
                n <= F reaches 1 under C; the Main Theorem instantiates F = 10^6
@@ -193,7 +203,14 @@ $K^*(F) := \lceil m^*(F)\,\alpha\rceil$:
 | $10^7$ | verified in this file (X-9913, PROPOSED) | $10946$ | $17349$ | $28295$ |
 | $10^8$ | verified in this file (X-9913, PROPOSED) | $15601$ | $24727$ | $40328$ |
 | $10^9$ | verified in this file (X-9913, PROPOSED) | $47468$ | $75235$ | $122703$ |
+| $10^{11}$ | verified by X-9903 (checkpoint; experiment packet, unreviewed) | $190537$ | $301994$ | $492531$ |
+| $10^{12}$ | verified by X-9903 (experiment packet, unreviewed) | $10\,781\,274$ | $17\,087\,915$ | $27\,869\,189$ |
 | $2^{68}$ | **not verified anywhere in this repository** — HYPOTHETICAL, literature-scale | $8\,961\,554\,427 \le m^* \le 72\,057\,431\,991$ | — | — |
+
+*(The $10^{11}$ and $10^{12}$ rows were added in the 2026-07-25 addendum; they are
+computed, not extrapolated — see L-9913.12 and Tests 16–17. Note the jump from
+$47468$ to $190537$ to $10\,781\,274$: $m^*(F)$ is a step function of $F$ with
+large, irregular plateaux, so interpolation between rows is meaningless.)*
 
 The $m^*(F)$ column is an exact, purely arithmetic function of $F$ (it does not
 depend on any Collatz input); only the second column records what has actually

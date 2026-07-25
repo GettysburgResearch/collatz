@@ -191,8 +191,11 @@ $A_w \ge \lambda^{|w|}M^{|w|}$ for every admissible $w$.
 > $1 \le j \le N$, $a_j$ the odd-step count of the class word. Refinement holds because
 > the survivor condition at level $N+1$ contains the condition at level $N$.
 > $R_1,\dots,R_8 = 1,1,2,3,4,8,13,19$ (reproduced independently in T2).
-> $\bigcap_N S_N$ is exactly the set of $n \in \mathbb{Z}^+$ with $T^j(n) > n$ for all
-> $j \ge 1$, i.e. $\sigma(n) = \infty$ (D-9910).
+> Directly from the definition, $\bigcap_N S_N = \{n \in \mathbb{Z}^+ : 3^{a_j(n)} \ge 2^{j}
+> \text{ for every } j \ge 1\}$ (a condition on the parity word alone). *Context only, not
+> used:* L-9909.3(a) shows this condition forces $T^j(n) > n$ for all $j$, i.e.
+> $\sigma(n) = \infty$ (D-9910), and L-9909's Corollary gives a converse for $n$ above an
+> explicit bound; neither statement is imported here.
 >
 > **E4 — the $(1110)^\infty$ architecture (L-9918.4).** $M = 2$, $C_N$ the single class
 > $\equiv (-19)\cdot 11^{-1} \bmod 2^{4N}$ ($R_N = 1$), i.e. E2 for the fixed word
@@ -402,9 +405,11 @@ is $\frac{\pi}{2}\big(1 - \frac1\pi\big) = 1.070796\ldots$ (as $R\beta \to 0$).
 **(f) Elementary Fejér-power constants are unsatisfiable, for every $R$.** For
 $(C_1, C_2, \varphi) = \big(4,\ 2/\pi,\ \log(4H)\big)$ — the data provable by a
 Fejér-power majorant — and for every real $R \ge 1$ and every real $H \ge 3$,
-$$4\,\frac{R\log(4H)}{H} + \frac{1}{\pi}\Big(\log\frac HR\Big)_+ \;>\; 1.538 \;>\; 1 ,$$
-so ($\dagger$) fails and (ET) never fires. (Numerically the true minimum is
-$1.6678$ at $R = 1$ and increases in $R$: $1.7727$ at $R = 6$, $2.0891$ at $R = 10^6$; T5.)
+$$4\,\frac{R\log(4H)}{H} + \frac{1}{\pi}\Big(\log\frac HR\Big)_+
+\;>\; \frac{1 + \log(4\pi\log 12)}{\pi} \;=\; 1.413696\ldots \;>\; 1 ,$$
+so ($\dagger$) fails and (ET) never fires. (The bound is uniform in $R$; numerically the
+true minimum is $1.6678$ at $R = 1$ and increases in $R$: $1.7727$ at $R = 6$, $2.0891$ at
+$R = 10^6$; T5.)
 
 **(g) Removing the logarithm is necessary but not sufficient.** With $\varphi \equiv 1$ and
 $C_2 = 2/\pi$, (ET) is satisfiable **iff** $C_1 < e^{\pi-1}/\pi = 2.709767\ldots$. In
@@ -934,7 +939,8 @@ The two cases are the boxed statement. The listed values of $\Psi$ are direct ev
 $\Psi(2/\pi) = \frac1\pi e^{\pi-1} = 2.709767\ldots$, $\Psi(1) = \frac12 e$,
 $\Psi(2) = 1$. $\square$
 
-**(e)** For $(C_1,C_2) = (1,2/\pi)$: $G(u) = 1/u$ on $(0,1]$, so $G>1$ there and $G(1)=1$;
+**(e)** For $(C_1,C_2) = (1,2/\pi)$: $G(u) = 1/u$ on $(0,1]$, so $G \ge 1$ there with
+equality only at $u=1$;
 on $[1,\infty)$, $G(u) = 1/u + \frac1\pi\log u$, strictly decreasing on $[1,\pi]$ and
 strictly increasing on $[\pi,\infty)$ with $G(\pi) = \frac{1+\log\pi}{\pi} = 0.682689\ldots$
 and $G\to\infty$. Hence $\{G<1\} = (1, u_+)$ with $u_+$ the unique root of
@@ -947,25 +953,25 @@ is an interval in general. $\square$
 **(f)** Let $R \ge 1$, $H \ge 3$, $u := H/R$, and
 $$\Lambda := 4\frac{R\log(4H)}{H} + \frac1\pi\Big(\log\frac HR\Big)_+
 = \frac{4\log(4H)}{u} + \frac{(\log u)_+}{\pi}.$$
+Two standing facts: $H \ge 3$, and $H = uR \ge u$ because $R \ge 1$; hence
+$H \ge \max(3, u)$ and $\log(4H) \ge \log\big(4\max(3,u)\big)$. Write $a := 4\log 12 =
+9.9396266\ldots$
 
-*Case $u < 4\log 12 = 9.93956\ldots$.* Since $H \ge 3$, $\log(4H) \ge \log 12$, so
-$\Lambda \ge \frac{4\log 12}{u} > \frac{4\log 12}{4\log 12} = 1$; more precisely
-$\Lambda > 1$ with room to spare unless $u$ is near the boundary.
+*Case $u \le 3$.* Then $\Lambda \ge \frac{4\log(4H)}{u} \ge \frac{4\log 12}{u}
+= \frac{a}{u} \ge \frac{a}{3} = 3.313209 > 1.413697$.
 
-*Case $u \ge 4\log12$.* Since $R \ge 1$, $H = uR \ge u \ge 9.93956$, hence
-$\log(4H) \ge \log(39.7582) = 3.68281$. Therefore
-$$\Lambda \;\ge\; \psi(u) := \frac{14.7312}{u} + \frac{\log u}{\pi} .$$
-$\psi'(u) = -14.7312/u^2 + 1/(\pi u)$ vanishes only at $u_0 = 14.7312\,\pi = 46.2799$, is
-negative before and positive after, so on $[4\log12,\infty)$ the minimum of $\psi$ is at
-$u_0$ (which lies in the range), where
-$$\psi(u_0) = \frac{14.7312}{46.2799} + \frac{\log 46.2799}{\pi}
-= 0.318310 + 1.220556 = 1.538866 .$$
-Hence $\Lambda \ge 1.5388 > 1$ in this case as well.
+*Case $u > 3$.* Then $\log(4H) \ge \log(4u) \ge \log 12$, so
+$$\Lambda \;\ge\; \psi(u) := \frac{a}{u} + \frac{\log u}{\pi}.$$
+$\psi'(u) = -a/u^2 + 1/(\pi u)$ vanishes only at $u_0 = a\pi = 31.226258\ldots$, and is
+negative for $u < u_0$, positive for $u > u_0$; since $u_0 > 3$, the minimum of $\psi$ on
+$(3,\infty)$ is
+$$\psi(u_0) = \frac{a}{a\pi} + \frac{\log(a\pi)}{\pi} = \frac{1 + \log(a\pi)}{\pi}
+= \frac{1 + \log(4\pi\log 12)}{\pi} = \frac{4.4412593\ldots}{\pi} = 1.4136968\ldots$$
 
-Combining, $\Lambda > 1$ always, so ($\dagger$) fails and (ET) with these data never fires,
-for every $R \ge 1$ and every $H \ge 3$. (The bound $1.5388$ is uniform in $R$; the true
-minima computed in T5 are $1.6678$ at $R=1$, $1.7727$ at $R=6$, $2.0891$ at $R=10^6$.)
-$\square$
+Combining, $\Lambda > 1.413696 > 1$ for every $R \ge 1$ and every $H \ge 3$, so ($\dagger$)
+fails and (ET) with these data never fires. (The bound is uniform in $R$; the true minima
+computed in T5 are $1.6678$ at $R=1$, $1.7727$ at $R=6$, $2.0891$ at $R=10^6$ — all above
+the proved threshold, as they must be.) $\square$
 
 **(g)** By (d) with $C_2 = 2/\pi < 2$: admissible $\iff C_1 < \Psi(2/\pi) = e^{\pi-1}/\pi =
 2.709767\ldots$. For $C_1 = 4$: $2C_1 = 8 > 2/\pi$, so
@@ -1067,7 +1073,8 @@ says the same thing about counting certificates for it. Neither says anything ab
 existence of an aperiodic seed, which is where the whole difficulty lives.
 
 **E3, L-9909 survivor classes.** A says: a seed exists iff $(m_N)$ is eventually constant, and
-a seed is exactly an $n$ with $\sigma(n) = \infty$. The computed initial segment is
+a seed is exactly an $n$ whose parity word satisfies $3^{a_j(n)} \ge 2^j$ for every $j$ (which
+by L-9909.3(a), context only, means $\sigma(n) = \infty$). The computed initial segment is
 $m_1,\dots,m_{16} = 1,3,3,7,7,7,27,27,\dots,27$ with $R_N = 1,1,2,3,4,8,13,19,38,\dots$ (T2,
 reproducing L-9909.4's counts) — this is finite verification and decides nothing: the
 constancy of $m_N$ at $27$ over the computed range is not evidence either way. B's counting
@@ -1189,9 +1196,12 @@ this one: no circularity.
   conditions ($\kappa_w>0$, subcriticality, divisibility) that a periodic symbolic object must
   satisfy to be a positive integer.
 * **Known weak point.** The constant $\tfrac12$ in L-9918.6 is not proved optimal (§Remaining
-  uncertainty (1)); improving it to $1$ would *shrink* the admissible region of L-9918.7(d)
-  (replacing $C_2/2$ by $C_2$ throughout, i.e. $\Psi(s) \to \Psi(2s)$), strengthening the
-  barrier. Nothing in the file depends on optimality.
+  uncertainty (1)); improving it to $c$ replaces $C_2/2$ by $cC_2$ throughout L-9918.7(d) and
+  the admissibility threshold $\Psi$ by $\Psi_c(s) = cs\,e^{1/(cs)-1}$, which at the relevant
+  value $C_2 = 2/\pi$ is *smaller* for $c = 1$ than for $c = \tfrac12$ — i.e. the improvement
+  would **shrink** the admissible region and strengthen the barrier. Nothing in the file
+  depends on optimality, and the direction of the dependence is recorded so that a reviewer
+  who improves L-9918.6 knows it cannot weaken L-9918.7.
 
 ---
 
@@ -2094,3 +2104,191 @@ print("  come below e^{pi-1}/pi = %.6f." % (math.exp(math.pi-1)/math.pi))
   So removing the log(4H) alone does NOT revive the criterion: C1 must also
   come below e^{pi-1}/pi = 2.709767.
 ```
+
+### T6 — self-check harness: every embedded block reproduces its recorded output
+
+A sibling file was recently found to contain placeholder text where captured output should
+have been, and the packet now audits for this. The harness below re-extracts every script
+embedded in *this* file, re-runs it in a fresh interpreter, and diffs its stdout against the
+recorded output block; it also scans the recorded outputs for placeholder tokens. It skips
+its own block (sentinel). Its recorded output is stable under later edits to prose, because
+it reports only the extracted pairs, their SHA-256 digests and the comparison results.
+
+```python
+#!/usr/bin/env python3
+# T6 SELFCHECK_HARNESS (L-9918): re-extract every embedded script from the claim
+# file, re-run it, and diff its stdout against the recorded output block that
+# immediately follows it.  This exists because a sibling file was found to
+# contain placeholder text where captured output should have been; the packet
+# now audits for that, so the audit is run here and its result recorded.
+# The harness skips its own block (it contains the sentinel above).
+import re, subprocess, sys, os, tempfile, hashlib
+
+PATH = "/home/user/collatz/research/foundations/L-9918-extraction-barriers.md"
+text = open(PATH).read()
+
+blocks = re.findall(r"```(python|text)\n(.*?)```", text, flags=re.S)
+pairs, i = [], 0
+while i < len(blocks):
+    kind, body = blocks[i]
+    if kind == "python" and body.startswith("#!/usr/bin/env python3") \
+       and "SELFCHECK_" + "HARNESS" not in body:
+        assert i + 1 < len(blocks) and blocks[i+1][0] == "text", "script with no output block"
+        pairs.append((body, blocks[i+1][1]))
+        i += 2
+    else:
+        i += 1
+
+print("claim file : %s" % PATH)
+print("runnable (script, output) pairs extracted: %d" % len(pairs))
+print("")
+allok = True
+for n, (src, expected) in enumerate(pairs, 1):
+    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as f:
+        f.write(src); tmp = f.name
+    r = subprocess.run([sys.executable, tmp], capture_output=True, text=True)
+    os.unlink(tmp)
+    got = r.stdout.rstrip("\n"); exp = expected.rstrip("\n")
+    ok = (got == exp) and r.returncode == 0
+    allok &= ok
+    # locate the first differing line, if any
+    gl, el = got.split("\n"), exp.split("\n")
+    where = "-"
+    if not ok:
+        for j in range(max(len(gl), len(el))):
+            a = gl[j] if j < len(gl) else "<missing>"
+            b = el[j] if j < len(el) else "<missing>"
+            if a != b:
+                where = "line %d: got %r vs recorded %r" % (j+1, a[:60], b[:60]); break
+    print("script %d : sha256 %s | %4d src lines | %3d output lines | exit %d -> %s   %s"
+          % (n, hashlib.sha256(src.encode()).hexdigest()[:16], src.count("\n"),
+             len(el), r.returncode, "MATCH" if ok else "MISMATCH", where))
+    # placeholder / stub audit on the recorded output
+    for bad in ("TODO", "FIXME", "placeholder", "PLACEHOLDER", "...output...", "<output>", "XXX"):
+        if bad in exp:
+            print("   !! placeholder token %r found in recorded output" % bad); allok = False
+print("")
+print("VERDICT: %s" % ("ALL EMBEDDED BLOCKS REPRODUCE THEIR RECORDED OUTPUT EXACTLY."
+                       if allok else "AT LEAST ONE BLOCK FAILED TO REPRODUCE."))
+```
+
+```text
+claim file : /home/user/collatz/research/foundations/L-9918-extraction-barriers.md
+runnable (script, output) pairs extracted: 5
+
+script 1 : sha256 3095bcd66235c72e |   84 src lines |  26 output lines | exit 0 -> MATCH   -
+script 2 : sha256 3adc173888f8c488 |  135 src lines |  65 output lines | exit 0 -> MATCH   -
+script 3 : sha256 906757f37ecfbf92 |  110 src lines |  66 output lines | exit 0 -> MATCH   -
+script 4 : sha256 4e667e39566ee248 |   84 src lines |  57 output lines | exit 0 -> MATCH   -
+script 5 : sha256 1a52934b11ac00a2 |  102 src lines |  72 output lines | exit 0 -> MATCH   -
+
+VERDICT: ALL EMBEDDED BLOCKS REPRODUCE THEIR RECORDED OUTPUT EXACTLY.
+```
+
+**Self-check result (recorded).** All five embedded scripts reproduce their recorded output
+byte-for-byte, exit status $0$, and no placeholder token occurs in any recorded output.
+Re-running the harness after it was itself embedded produced identical output (checked).
+
+### Alternate formulations tried, and what they would change
+
+* **Proving L-9918.2(3) by Tychonoff instead of König.** Equivalent; the König form is used
+  because it needs no compactness theorem and makes the constructive content visible (T2
+  builds the chain by depth-first search). Recorded in the Remark after the proof.
+* **Stating L-9918.6 with the hypothesis $H \ge R$ (as in its specialised ancestor).** Tried,
+  then dropped: the inequality is true for all $H \ge 1$ because the right side is negative
+  when $H < R$. Keeping $H \ge R$ would have forced a case split in the proof of
+  L-9918.7(c) for $u<1$; without it, ($\dagger$) is a single formula with $(\log u)_+$.
+* **Bounding $\Sigma$ by dyadic-block Cauchy–Schwarz instead of Abel summation.** Gives
+  $\ge \frac{1}{4}\log_2(H/R) = 0.36\log(H/R)$, strictly worse than $\tfrac12$; recorded
+  because it shows the Abel route is not merely convenient.
+* **Allowing the criterion to use several cut-offs $H_1<\dots<H_k$ simultaneously.** Not
+  covered by L-9918.7 and deliberately excluded from its scope (limitation L2). A
+  multi-scale version of the collision would need a lower bound for
+  $\min_i [\,C_1R\varphi(H_i)/H_i + C_2\Sigma(H_i)\,]$ jointly, which L-9918.6 does supply
+  pointwise but which does not obviously combine; this is left open.
+* **Defining supercriticality by $A_w \ge M^{|w|}$ rather than $>$.** Equivalent: L-9918.5(2)
+  proves $A_w = M^{|w|}$ is impossible when $\gcd(A_w,M)=1$ and $M\ge2$.
+* **Encoding a $\Sigma^0_2$-complete problem in L-9918.9 rather than the halting problem.**
+  Attempted; a branching construction ($R_N>1$, one branch per witness) appears to work but
+  the refinement bookkeeping for branches that appear at different levels was not completed,
+  so only $\Sigma^0_1$-hardness is claimed. The $\Sigma^0_2$ upper bound is stated and is
+  immediate.
+
+---
+
+## Remaining uncertainty
+
+1. **The constant $\tfrac12$ in L-9918.6 is not proved optimal.** The arithmetic progression
+   attains $\log(H/R)+O(1)$, and no configuration beating it was found in T3, so I believe
+   the optimal universal constant is $1$; I have not proved it. This matters only in the
+   favourable direction. Precisely: if L-9918.6(3) holds with $c\log(H/R)$ in place of
+   $\tfrac12\log(H/R)$, then the whole of L-9918.7(d) goes through with $C_2/2$ replaced by
+   $cC_2$, giving $u^* = C_1/(cC_2)$, $\Theta = cC_2\big(1+\log\frac{C_1}{cC_2}\big)$ and the
+   admissibility threshold
+   $$\Psi_c(s) \;=\; c\,s\,e^{\,1/(cs)-1}, \qquad \Psi_{1/2} = \Psi \ \text{(the function used
+   above)}, \qquad \Psi_1(s) = \Psi_{1/2}(2s),$$
+   and $\Psi_1(s) < \Psi_{1/2}(s)$ exactly when $s < 1/\log 2 = 1.44270$ (their ratio is
+   $2e^{-1/s}$) — in particular at $s = C_2 = 2/\pi$. With the conjectural optimal $c = 1$ and
+   $C_2 = 2/\pi$ the threshold on $C_1$ would fall from $e^{\pi-1}/\pi = 2.70977$ to
+   $\tfrac{2}{\pi}e^{\pi/2-1} = 1.12661$, i.e. the admissible region shrinks and the barrier
+   strengthens. Nothing in the file assumes optimality.
+2. **Scope of L-9918.7, restated.** It rules out (ET)-shape criteria with a single cut-off
+   and absolute values. I have *not* attempted a barrier covering: phase-preserving
+   estimates; multi-scale or second-moment/large-sieve arguments; majorising the union of
+   $R_N$ classes directly instead of counting $R_N$ points against one arc; or lattice
+   reduction. I do not claim one, and I regard the phase-preserving loophole (L1) as the most
+   likely place where the barrier is genuinely evadable.
+3. **The affine axioms (AF1)–(AF4) of D-9918.3.** These are exactly what the two exhibited
+   affine architectures satisfy, and each is verified for them in L-9918.5(5); but they are
+   *axioms I chose*, and a reviewer should check that they are not tailored so tightly that
+   L-9918.5 is a restatement of its two instances. My confidence that they are the right
+   general hypotheses is moderate-to-high (the only substantive one is $\gcd(A_w,M)=1$, which
+   is exactly what makes $M^p - A_w$ a unit — the mechanism the whole sign criterion runs on);
+   my confidence in the *proof* given the axioms is high.
+4. **L-9918.9's reading.** The reduction is elementary and I am confident in it, but the
+   *interpretation* — "therefore architecture-specific arithmetic is necessary" — is an
+   informal gloss on a formal statement about arbitrary computable presentations. The formal
+   statement is what is claimed; the gloss is labelled as a reading, not a theorem.
+5. **Nothing here indicates a direction for any extraction question.** In particular the E3
+   table ($m_N = 27$ for $7 \le N \le 16$) is *not* evidence for a seed, and the E1 figures
+   are *not* evidence for escape. I record explicitly that I formed no opinion.
+6. **Most likely location of an error.** In order: (a) the region computation of
+   L-9918.7(d), where the case analysis $2C_1 \lessgtr C_2$ and the behaviour of $\Psi$ at
+   $s = 2$ interlock (machine-checked on a $28680$-point grid in T5, but a case-split of this
+   kind is where an inequality flips); (b) the constant chase in L-9918.7(f) (two explicit
+   numerical thresholds, $4\log12$ and $\log 39.7582$); (c) the Abel summation in
+   L-9918.6 Step 2, where an off-by-one changes the additive constant.
+
+---
+
+## Suggested next attack
+
+1. **(Refutation attempt on this file — do this first.)** Re-derive L-9918.7(d) by hand for
+   the three pairs $(1,2/\pi)$, $(4,2/\pi)$, $(1,3)$ and check them against $\Theta$; then
+   re-derive L-9918.6 Step 2 independently, since a change in its additive constant would
+   move $\Psi$. Independently re-prove L-9918.4(3) for $N = 2$ by hand: that single case
+   already exercises the whole induction.
+2. **(Highest value, negative direction.)** Attempt the phase-preserving barrier (limitation
+   L1): is there a lower bound for $\big|\sum_{|h|\le D}\widehat\Psi(h)S(h)\big|$ over all
+   non-negative majorants $\Psi \ge \mathbf 1_I$ of degree $\le D$, i.e. a Selberg-problem
+   dual lower bound, for a union of $R$ residue classes against an interval of length
+   $\ll M^N/R$? That would upgrade L-9918.7 from a statement about one inequality shape to a
+   statement about Fourier-analytic emptiness certificates in general.
+3. **(Positive direction.)** Attack Q-9918a for E1: the digits form a geometric ladder with
+   six distinct $2$-adic valuations, so the natural object is the base-$Q$ expansion of
+   $r_w = -P^{-N}c_w$, whose places are governed by $\nu_2$ of the partial sums. A forced
+   nonzero place would give $m_N \ge Q^{N-1}$ outright, with no discrepancy input at all.
+4. **(Cheap and useful.)** Extend T2's E3 computation past $k = 16$ and record where (if
+   anywhere) $m_N$ first exceeds $27$. By L-9918.1 this is exactly the frontier of the
+   question "is there $n$ with $\sigma(n)=\infty$" at that depth, and by L-9918.1(4) it is a
+   *pointwise* question about the finitely many integers $\le 27$ — a much cheaper
+   computation than a survivor enumeration.
+5. **(Structural, for the whole packet.)** Every architecture in the repository should be
+   recorded in the D-9918.1 format (base $M$, sets $C_N$, $R_N$, affine data if any,
+   sub/supercritical). That single table would make it immediate which barriers apply where,
+   and would surface any architecture that is *subcritical* — where L-9918.5 permits periodic
+   seeds and the Diophantine condition $(M^p - A_w)\mid \kappa_w$ becomes the whole question.
+
+---
+
+Signed: **fable-02-p12**, 2026-07-25.
