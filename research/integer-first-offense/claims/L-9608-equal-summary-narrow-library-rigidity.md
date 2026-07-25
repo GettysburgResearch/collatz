@@ -1,4 +1,4 @@
-# L-9608 — Narrow equal-summary libraries collapse to one block constant
+# L-9608 — Equal-summary libraries below the sharp carry threshold collapse to one block constant
 
 **Claim ID:** `L-9608`  
 **Status:** `PROPOSED`  
@@ -39,10 +39,10 @@ W=\max_{s\in\Sigma}C_s-C_*.
 \tag{2}
 \]
 
-The load-bearing hypothesis is
+The load-bearing hypothesis is the sharp carry-width inequality
 
 \[
-\boxed{W<Q.}
+\boxed{W<Q+P.}
 \tag{3}
 \]
 
@@ -53,7 +53,13 @@ For an arbitrary block word
 \qquad R\ge1,
 \]
 
-write `B_mathbf{s}=B_(s_0)\cdots B_(s_(R-1))`. Its affine constant is
+write the chronological concatenation as
+
+\[
+B_{\mathbf s}=B_{s_0}\cdots B_{s_{R-1}}.
+\]
+
+Its affine constant is
 
 \[
 \boxed{
@@ -94,11 +100,11 @@ Moreover, for that common value `C`, condition `(6)` is equivalent to
 \tag{8}
 \]
 
-Consequently a narrow equal-summary library cannot synthesize a new full-denominator cycle by changing block types, ordering them, or increasing the repetition length. Every possible affine divisor hit is already the fixed point of one constant class in the original library.
+Consequently an equal-summary library whose numerator diameter is below `Q+P` cannot synthesize a new full-denominator cycle by changing block types, ordering them, or increasing the repetition length. Every possible affine divisor hit is already the fixed point of one constant class in the original library.
 
 If the constants in the library are pairwise distinct, `(7)` says that the block word itself is constant. If no single library block satisfies `Q-P|C_s`, then no word over the library, at any length, satisfies the full cycle divisibility condition.
 
-## 3. Proof
+## 3. Reduction to a zero carry word
 
 Put
 
@@ -128,7 +134,7 @@ Since
 Q^R-P^R=(Q-P)G_R,
 \]
 
-condition `(6)` implies `G_R|C_{\mathbf s}`. The first term in `(10)` is already divisible by `G_R`, hence
+condition `(6)` implies `G_R|C_(mathbf s)`. The first term in `(10)` is already divisible by `G_R`, hence
 
 \[
 G_R\mid H.
@@ -150,47 +156,122 @@ H=tG_R
 
 for one integer `t` with `0\le t\le W`.
 
-Subtract `(13)` from `(11)` and set
+Set
 
 \[
 \varepsilon_j=\delta_{s_j}-t.
-\]
-
-Then
-
-\[
-\sum_{j=0}^{R-1}P^{R-1-j}Q^j\varepsilon_j=0.
 \tag{14}
 \]
 
-Reduce `(14)` modulo `Q`. Every term except the first vanishes, so
+Subtracting `(13)` from `(11)` gives
 
 \[
-P^{R-1}\varepsilon_0\equiv0\pmod Q.
+\boxed{
+\sum_{j=0}^{R-1}P^{R-1-j}Q^j\varepsilon_j=0.}
+\tag{15}
 \]
 
-Because `P` is odd, it is invertible modulo the power of two `Q`. Thus `Q|\varepsilon_0`. But
+Equivalently define the integral carry recursion
 
 \[
-|\varepsilon_0|\le W<Q,
+\boxed{
+c_0=0,
+\qquad
+Qc_{j+1}=Pc_j+\varepsilon_j.}
+\tag{16}
 \]
 
-so `\varepsilon_0=0`.
-
-After the first `m` coefficients have been proved zero, divide `(14)` by `Q^m` and reduce the remaining identity modulo `Q`. This gives
+Then `(15)` is equivalent to
 
 \[
-P^{R-1-m}\varepsilon_m\equiv0\pmod Q,
+\boxed{c_R=0.}
+\tag{17}
 \]
 
-and the same width bound forces `\varepsilon_m=0`. Induction yields
+Indeed, iteration of `(16)` gives
 
 \[
-\delta_{s_j}=t
-\qquad(0\le j<R),
+Q^R c_R=
+\sum_{j=0}^{R-1}P^{R-1-j}Q^j\varepsilon_j.
 \]
 
-which is `(7)`.
+## 4. The first nonzero carry cannot return
+
+Assume for contradiction that some `\varepsilon_j` is nonzero, and let `m` be the first such index. Then `c_m=0`. Reducing the remaining identity `(15)` modulo `Q` gives
+
+\[
+Q\mid\varepsilon_m.
+\tag{18}
+\]
+
+Because
+
+\[
+|\varepsilon_m|\le W<Q+P<2Q,
+\]
+
+one has
+
+\[
+\varepsilon_m=Q
+\qquad\hbox{or}\qquad
+\varepsilon_m=-Q.
+\tag{19}
+\]
+
+### Positive first carry
+
+If `\varepsilon_m=Q`, then
+
+\[
+\delta_{s_m}=t+Q\le W,
+\]
+
+so
+
+\[
+t\le W-Q<P.
+\tag{20}
+\]
+
+The next carry is `c_(m+1)=1`. For every later digit,
+
+\[
+\varepsilon_j=\delta_{s_j}-t\ge-t>-P.
+\]
+
+Hence if `c_j>=1`, then
+
+\[
+Pc_j+\varepsilon_j>P-P=0,
+\]
+
+and the integral recursion `(16)` gives `c_(j+1)>=1`. The carry can never return to zero, contradicting `(17)`.
+
+### Negative first carry
+
+If `\varepsilon_m=-Q`, then
+
+\[
+t=\delta_{s_m}+Q\ge Q.
+\]
+
+For every later digit,
+
+\[
+\varepsilon_j\le W-t\le W-Q<P.
+\tag{21}
+\]
+
+The next carry is `c_(m+1)=-1`. If `c_j<=-1`, then
+
+\[
+Pc_j+\varepsilon_j<-P+P=0,
+\]
+
+so the integral recursion gives `c_(j+1)<=-1`. Again the carry cannot return to zero.
+
+Both alternatives are impossible. Therefore every `\varepsilon_j=0`, which proves `(7)`.
 
 If the common block constant is `C`, then `(4)` gives
 
@@ -200,37 +281,58 @@ C_{\mathbf s}=CG_R.
 
 Since the denominator is `(Q-P)G_R`, exact divisibility is equivalent to `(8)`. ∎
 
-## 4. Carry interpretation beyond the narrow regime
+## 5. Sharpness of the threshold
 
-The proof exposes the exact carry machine hidden in an arbitrary equal-summary library. Whenever `H=tG_R`, define
+The strict threshold `W<Q+P` is best possible for the abstract carry problem.
+
+At
 
 \[
-c_0=0,
+W=Q+P,
+\]
+
+consider two allowed offset digits
+
+\[
+\delta_0=0,
 \qquad
-Qc_{j+1}=Pc_j+\delta_{s_j}-t.
-\tag{15}
+\delta_1=Q+P,
 \]
 
-The polynomial identity is equivalent to an integral carry path satisfying
+at repetition length `R=2`, and put `t=Q`. Then
 
 \[
-c_R=0.
-\tag{16}
+\varepsilon_0=-Q,
+\qquad
+\varepsilon_1=P,
 \]
 
-Under `(3)`, the first congruence in `(15)` forces `c_1=0`, and induction forces every carry and every digit difference to vanish. If `W\ge Q`, nonzero carries become possible. Thus
+and
+
+\[
+P\varepsilon_0+Q\varepsilon_1=0.
+\]
+
+The carry path is
+
+\[
+0\longmapsto-1\longmapsto0.
+\]
+
+Thus a nonconstant two-block solution exists exactly at the boundary. This is an algebraic sharpness example; it is not asserted that an accelerated Collatz library realizes these two constants.
+
+Accordingly,
 
 \[
 \boxed{
-\text{numerator diameter at least }2^A
+\text{numerator diameter at least }2^A+3^k
 }
+\tag{22}
 \]
 
 is a necessary condition for a genuinely mixed equal-summary repair circuit.
 
-This is the sharp architectural escape boundary: adding a third, fourth, or thousandth block type does not help unless the library spans at least one complete dyadic block radix or otherwise changes the summary from position to position.
-
-## 5. Corollary for disjoint replacement libraries
+## 6. Corollary for disjoint replacement libraries
 
 Fix one block and a collection of disjoint same-summary local replacements whose signed numerator changes are
 
@@ -248,30 +350,31 @@ Hence
 
 \[
 \boxed{
-\sum_j|\Delta_j|<2^A
+\sum_j|\Delta_j|<2^A+3^k
 }
-\tag{17}
+\tag{23}
 \]
 
 places the entire `2^m`-block alphabet under the rigidity theorem. Arbitrary words over that alphabet, at arbitrary repetition length, reduce to pure powers of one replacement combination.
 
-For Christoffel/Farey swaps, `L-9606` gives each `\Delta_j` as one explicit signed `{2,3}`-unit, so `(17)` is an exact integer check rather than an asymptotic estimate.
+For Christoffel/Farey swaps, `L-9606` gives each `\Delta_j` as one explicit signed `{2,3}`-unit, so `(23)` is an exact integer check rather than an asymptotic estimate.
 
-## 6. Relationship to earlier work
+## 7. Relationship to earlier work
 
 `T-9607` handles a binary library of the two standard Christoffel conjugates by proving a coprimality-based all-or-none geometric-subsum theorem. `L-9608` is different and strictly broader in alphabet size:
 
 - it permits any finite number of block types;
 - it uses no pairwise coprimality of constant differences;
 - it permits arbitrary ordering and repetition length;
-- it gives the exact escape threshold `W>=Q`.
+- it gives the exact sharp escape threshold `W>=Q+P`.
 
 The price is the explicit numerator-diameter hypothesis `(3)`.
 
-## 7. Gap audit
+## 8. Gap audit
 
 - The theorem is an affine full-denominator obstruction. Exact valuation replay remains required for a surviving single-block fixed point.
-- Libraries with diameter at least `Q` may support nonzero carry paths and are not excluded.
+- Libraries with diameter at least `Q+P` may support nonzero carry paths and are not excluded.
 - Scale-varying summaries, overlapping replacements, and genuinely nonaligned hierarchical circuits may leave the theorem's scope.
 - Equal constants can arise from different chronological words; they share the same affine map but their local replay domains must still be audited.
+- The sharpness example is an abstract equal-summary digit library, not a positive Collatz cycle.
 - No positive cycle or divergent orbit is constructed.
