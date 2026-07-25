@@ -45,9 +45,7 @@ A positive chart path is exactly a positive root with
 \qquad\text{for every }n.
 \]
 
-Let `m_n` be the least positive root legal through depth `n`.
-
-The exhaustive decision is
+Let `m_n` be the least positive root legal through depth `n`. The exhaustive decision is
 
 \[
 \boxed{(m_n)\text{ stabilizes}}
@@ -74,7 +72,7 @@ m_n -> infinity
 
 while saying nothing about other possible Collatz counterexamples.
 
-## New result 1 — direct quotient extraction fails
+## Result 1 — direct quotient extraction fails
 
 Every two-step legal root has the form
 
@@ -90,7 +88,7 @@ but `L-7401` proves that the canonical first digit of the high quotient `k` is o
 
 The simplest recursive root descent fails universally, not just on sampled words.
 
-## New result 2 — the six-state affine self-section is rigid
+## Result 2 — the six-state affine self-section is rigid
 
 `T-7401` allows an arbitrary positive scale, six state-dependent integer translations, and a separate permutation of the six outgoing symbols at each state.
 
@@ -108,7 +106,7 @@ y=Pk+c_i=F(x),
 
 namely the original expanding forward map.
 
-## New result 3 — no finite affine nucleus can repair it
+## Result 3 — no finite affine nucleus can repair it
 
 `T-7402` permits an arbitrary finite control graph, state-dependent affine coordinates, and successor control depending on the chosen next type.
 
@@ -126,6 +124,51 @@ y=F(x).
 
 There is no contracting, bounded, or seed-preserving affine self-replicating subtree at any finite-control size.
 
+## Result 4 — rational and polynomial sections also collapse
+
+`T-7403` allows each finite section state to carry an arbitrary nonconstant rational function of the exact ordinary high quotient.
+
+A rational function that is integer-valued on every sufficiently large ordinary tail must first be a polynomial: a nonconstant denominator would divide one fixed Bezout resultant at infinitely many growing integer arguments.
+
+The exact child-cylinder identity then gives the leading-coefficient transport
+
+\[
+L_{\rm child}
+=
+L_{\rm parent}
+\left({Q\over P}\right)^{d-1}.
+\]
+
+A directed cycle in the finite nucleus forces `d=1`. Tail integrality makes the linear coefficients integers, reducing the machine to `T-7402`. Hence every finite rational-function nucleus is again
+
+\[
+\boxed{y=F(x).}
+\]
+
+Nonlinear polynomial and rational recodings do not provide ordinary extraction.
+
+## Result 5 — no semilinear value sanctuary
+
+`T-7404` proves that `S_infinity` contains no infinite arithmetic progression.
+
+At depth `n`, the legal set occupies at most `6^n` residue classes modulo
+
+\[
+Q^n=2^{19n}.
+\]
+
+An arithmetic progression with step `M`, where `v=nu_2(M)`, occupies exactly
+
+\[
+2^{19n-\min(v,19n)}
+\]
+
+classes modulo `Q^n`. For large `n`, this exceeds `6^n` because `2^19>6`.
+
+Therefore the complete survivor set contains no infinite semilinear subset. Since `F(x)>x` for every positive `x`, it contains no nonempty semilinear/Presburger forward-invariant sanctuary.
+
+This closes another exhaustive finite-description certificate class without claiming the survivor set is empty.
+
 ## Global assessment
 
 The repository has made genuine progress where it quantifies an entire strict class:
@@ -139,15 +182,26 @@ The positive infinite-orbit branches still stop at ordinary extraction. Their in
 
 The explicit supercritical ghost constructions in PR #56 / PR #57 prove that finite compatibility plus arbitrary conditional expansion cannot supply the missing inference.
 
+The present packet now additionally rules out:
+
+```text
+direct quotient descent;
+finite affine section nuclei;
+finite polynomial/rational section nuclei;
+semilinear value-space sanctuaries.
+```
+
 ## Files
 
 1. `claims/D-7401-six-branch-minimal-word-system.md`
 2. `claims/L-7401-high-quotient-section.md`
 3. `claims/T-7401-affine-section-rigidity.md`
 4. `claims/T-7402-finite-affine-nucleus-rigidity.md`
-5. `Q-7401-least-root-decision.md`
-6. `GLOBAL_BLOCKER_ASSESSMENT.md`
-7. `CLAIM_INVENTORY.md`
+5. `claims/T-7403-finite-rational-nucleus-rigidity.md`
+6. `claims/T-7404-no-semilinear-sanctuary.md`
+7. `Q-7401-least-root-decision.md`
+8. `GLOBAL_BLOCKER_ASSESSMENT.md`
+9. `CLAIM_INVENTORY.md`
 
 ## Scope boundary
 
@@ -156,7 +210,8 @@ This packet does not decide the least-root sequence and does not produce a Colla
 1. freeze one exact strict global decision;
 2. state honestly which side is a true reduction;
 3. prove that direct quotient descent fails;
-4. prove that every finite affine recursive extraction collapses to the forward map;
-5. prevent further local machinery from being mistaken for ordinary existence.
+4. prove that every finite rational recursive extraction collapses to the forward map;
+5. exclude every semilinear value-space sanctuary;
+6. prevent further local machinery from being mistaken for ordinary existence.
 
-The next valid theorem must either write the stabilizing root or prove the least roots escape.
+The next valid theorem must either write the stabilizing root, prove the least roots escape, or introduce a genuinely unbounded nonlinear section variable and prove that it bounds the same initial ordinary root.
