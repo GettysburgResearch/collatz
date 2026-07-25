@@ -1,0 +1,42 @@
+--- unsieved (every n iterated), F = 10^6
+  F                     = 1000000
+  n iterated            = 999999
+  max descent C-steps   = 287  at n = 626331
+  max C-orbit excursion = 56991483520  at n = 704511
+  promotions            = 0
+  wall                  = 0.01 s
+VERIFIED: every 1 <= n <= 1000000 reaches 1 under C.
+
+--- unsieved (every n iterated), F = 10^7
+  F                     = 10000000
+  n iterated            = 9999999
+  max descent C-steps   = 401  at n = 8088063
+  max C-orbit excursion = 60342610919632  at n = 6631675
+  promotions            = 0
+  wall                  = 0.10 s
+VERIFIED: every 1 <= n <= 10000000 reaches 1 under C.
+
+--- sieved, F = 10^7, K = 8
+  total n iterated         = 742422
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 12
+  total n iterated         = 555627
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 16
+  total n iterated         = 385989
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 20
+  total n iterated         = 1281855
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 22
+  total n iterated         = 4323303
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]

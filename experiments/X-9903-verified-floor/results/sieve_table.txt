@@ -1,0 +1,16 @@
+K =  1  2^K = 2            survivors = 1         density = 0.5000000  qbase = 1  jmax = 1  emax = 2  tmax = 0  build = 0.00s
+K =  2  2^K = 4            survivors = 1         density = 0.2500000  qbase = 1  jmax = 2  emax = 6  tmax = 2  build = 0.00s
+K =  3  2^K = 8            survivors = 2         density = 0.2500000  qbase = 1  jmax = 2  emax = 12  tmax = 8  build = 0.00s
+K =  4  2^K = 16           survivors = 3         density = 0.1875000  qbase = 1  jmax = 4  emax = 36  tmax = 20  build = 0.00s
+K =  5  2^K = 32           survivors = 4         density = 0.1250000  qbase = 1  jmax = 5  emax = 108  tmax = 80  build = 0.00s
+K =  6  2^K = 64           survivors = 8         density = 0.1250000  qbase = 1  jmax = 5  emax = 216  tmax = 188  build = 0.00s
+K =  7  2^K = 128          survivors = 13        density = 0.1015625  qbase = 1  jmax = 7  emax = 648  tmax = 404  build = 0.00s
+K =  8  2^K = 256          survivors = 19        density = 0.0742188  qbase = 1  jmax = 8  emax = 1944  tmax = 890  build = 0.00s
+K = 10  2^K = 1024         survivors = 64        density = 0.0625000  qbase = 1  jmax = 10  emax = 11664  tmax = 6560  build = 0.00s
+K = 12  2^K = 4096         survivors = 226       density = 0.0551758  qbase = 1  jmax = 12  emax = 69984  tmax = 41552  build = 0.00s
+K = 14  2^K = 16384        survivors = 734       density = 0.0447998  qbase = 1  jmax = 13  emax = 419904  tmax = 216512  build = 0.00s
+K = 16  2^K = 65536        survivors = 2114      density = 0.0322571  qbase = 1  jmax = 16  emax = 3779136  tmax = 2027348  build = 0.01s
+K = 18  2^K = 262144       survivors = 7495      density = 0.0285912  qbase = 1  jmax = 18  emax = 22674816  tmax = 12813632  build = 0.03s
+K = 20  2^K = 1048576      survivors = 27328     density = 0.0260620  qbase = 1  jmax = 20  emax = 136048896  tmax = 77058944  build = 0.12s
+K = 22  2^K = 4194304      survivors = 93222     density = 0.0222259  qbase = 1  jmax = 21  emax = 816293376  tmax = 553230080  build = 0.52s
+K = 24  2^K = 16777216     survivors = 286581    density = 0.0170816  qbase = 1  jmax = 24  emax = 7346640384  tmax = 4634696960  build = 2.21s

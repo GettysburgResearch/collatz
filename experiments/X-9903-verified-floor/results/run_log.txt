@@ -1,0 +1,322 @@
+X-9903 environment record
+date (UTC)      : 2026-07-25 19:55:21
+uname -a        : Linux vm 6.18.5 #1 SMP PREEMPT_DYNAMIC @0 x86_64 x86_64 x86_64 GNU/Linux
+os              : Ubuntu 24.04.4 LTS
+cpu             : Intel(R) Xeon(R) Processor @ 2.10GHz
+cores (nproc)   : 4
+memory total    : 16461176 kB
+compiler        : gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+python          : Python 3.11.15
+parameters      : F=1000000000000 K=22 threads=4 tst_L=1000000000
+
+=== 1. build ===
++ gcc -O2 -march=native -pthread -Wall -Wextra -o sweep sweep.c
++ set +x
+
+=== 2. self tests ===
+SELFTEST
+  OVF64 = 6148914691236517204   3*OVF64+1 = 18446744073709551613   UINT64_MAX = 18446744073709551615
+  OVF128 = 113427455640312821154458202477256070484
+  [PASS] uint64/u128 overflow guards are exactly floor((2^w-2)/3), and 3x+1 then fits
+  [PASS] naive reference reproduces classical values (27:111/9232, 703:peak 250504, 837799:524)
+  [PASS] Terras identity T^K(2^K q + r) = 3^{a(r)} q + T^K(r), K<=12, all r, q<40
+  [PASS] every sieved-out class descends within K T-steps for all q >= q0 (K<=10, 300 q each)
+  [PASS] sieve survivor sets mod 2,4,...,256 match the L-9909 tables exactly
+  [PASS] descent(): C-step count and peak match a naive u128 descent on [2, 3*10^5]
+  [PASS] peak decomposition: full C-trajectory max = max of the anchors' descent peaks ([2,10^5])
+  n = 8528817511: descent steps = 406, peak = 18144594937356598024
+  [PASS] near-2^64 case n=8528817511 handled identically by the fast and u128 kernels
+SELFTEST RESULT: ALL PASS (0 failures)
+
+=== 3. sieve statistics ===
+K =  1  2^K = 2            survivors = 1         density = 0.5000000  qbase = 1  jmax = 1  emax = 2  tmax = 0  build = 0.00s
+K =  2  2^K = 4            survivors = 1         density = 0.2500000  qbase = 1  jmax = 2  emax = 6  tmax = 2  build = 0.00s
+K =  3  2^K = 8            survivors = 2         density = 0.2500000  qbase = 1  jmax = 2  emax = 12  tmax = 8  build = 0.00s
+K =  4  2^K = 16           survivors = 3         density = 0.1875000  qbase = 1  jmax = 4  emax = 36  tmax = 20  build = 0.00s
+K =  5  2^K = 32           survivors = 4         density = 0.1250000  qbase = 1  jmax = 5  emax = 108  tmax = 80  build = 0.00s
+K =  6  2^K = 64           survivors = 8         density = 0.1250000  qbase = 1  jmax = 5  emax = 216  tmax = 188  build = 0.00s
+K =  7  2^K = 128          survivors = 13        density = 0.1015625  qbase = 1  jmax = 7  emax = 648  tmax = 404  build = 0.00s
+K =  8  2^K = 256          survivors = 19        density = 0.0742188  qbase = 1  jmax = 8  emax = 1944  tmax = 890  build = 0.00s
+K = 10  2^K = 1024         survivors = 64        density = 0.0625000  qbase = 1  jmax = 10  emax = 11664  tmax = 6560  build = 0.00s
+K = 12  2^K = 4096         survivors = 226       density = 0.0551758  qbase = 1  jmax = 12  emax = 69984  tmax = 41552  build = 0.00s
+K = 14  2^K = 16384        survivors = 734       density = 0.0447998  qbase = 1  jmax = 13  emax = 419904  tmax = 216512  build = 0.00s
+K = 16  2^K = 65536        survivors = 2114      density = 0.0322571  qbase = 1  jmax = 16  emax = 3779136  tmax = 2027348  build = 0.01s
+K = 18  2^K = 262144       survivors = 7495      density = 0.0285912  qbase = 1  jmax = 18  emax = 22674816  tmax = 12813632  build = 0.03s
+K = 20  2^K = 1048576      survivors = 27328     density = 0.0260620  qbase = 1  jmax = 20  emax = 136048896  tmax = 77058944  build = 0.12s
+K = 22  2^K = 4194304      survivors = 93222     density = 0.0222259  qbase = 1  jmax = 21  emax = 816293376  tmax = 553230080  build = 0.52s
+K = 24  2^K = 16777216     survivors = 286581    density = 0.0170816  qbase = 1  jmax = 24  emax = 7346640384  tmax = 4634696960  build = 2.21s
+
+=== 4. cross-check A: naive vs DP vs Python bigint ===
+--- Python 3, arbitrary-precision ints, no memoisation, no shortcut (n <= 10^5)
+PYTHON BIGINT NAIVE DIGEST
+  L                        = 100000
+  max sigma_C(n)           = 350  at n = 77031
+  max full-trajectory peak = 1570824736  at n = 77671
+  checksum sum sigma_C(n)  = 10753840
+
+--- C, unsigned __int128, no memoisation, no shortcut (n <= 10^5)
+NAIVE DIGEST
+  L                        = 100000
+  max sigma_C(n)           = 350  at n = 77031
+  max full-trajectory peak = 1570824736  at n = 77671
+  checksum sum sigma_C(n)  = 10753840
+  wall                     = 0.03 s
+
+--- C, unsigned __int128, no memoisation, no shortcut (n <= 10^6)
+NAIVE DIGEST
+  L                        = 1000000
+  max sigma_C(n)           = 524  at n = 837799
+  max full-trajectory peak = 56991483520  at n = 704511
+  checksum sum sigma_C(n)  = 131434424
+  wall                     = 0.32 s
+
+--- C, exact descent DP with uint64 fast path (n <= 10^6)
+TST DIGEST
+  L                        = 1000000
+  max sigma_C(n)           = 524  at n = 837799
+  max descent-phase peak   = 56991483520  at n = 704511
+  checksum sum sigma_C(n)  = 131434424
+  uint64->u128 promotions  = 0
+  wall                     = 0.01 s
+
+=== 5. cross-check B: sieved vs unsieved, and sieve-modulus independence ===
+--- unsieved (every n iterated), F = 10^6
+  F                     = 1000000
+  n iterated            = 999999
+  max descent C-steps   = 287  at n = 626331
+  max C-orbit excursion = 56991483520  at n = 704511
+  promotions            = 0
+  wall                  = 0.01 s
+VERIFIED: every 1 <= n <= 1000000 reaches 1 under C.
+
+--- unsieved (every n iterated), F = 10^7
+  F                     = 10000000
+  n iterated            = 9999999
+  max descent C-steps   = 401  at n = 8088063
+  max C-orbit excursion = 60342610919632  at n = 6631675
+  promotions            = 0
+  wall                  = 0.10 s
+VERIFIED: every 1 <= n <= 10000000 reaches 1 under C.
+
+--- sieved, F = 10^7, K = 8
+  total n iterated         = 742422
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 12
+  total n iterated         = 555627
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 16
+  total n iterated         = 385989
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 20
+  total n iterated         = 1281855
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+--- sieved, F = 10^7, K = 22
+  total n iterated         = 4323303
+  max descent C-steps      = 401  at n = 8088063   [exact over [1,F]: YES]
+  max C-orbit excursion    = 60342610919632  at n = 6631675   [exact over [1,F]: YES]
+
+=== 6. exact total C-stopping times up to 1000000000 ===
+delay records for sigma_C (n, sigma_C(n)):
+                     1       0
+                     2       1
+                     3       7
+                     6       8
+                     7      16
+                     9      19
+                    18      20
+                    25      23
+                    27     111
+                    54     112
+                    73     115
+                    97     118
+                   129     121
+                   171     124
+                   231     127
+                   313     130
+                   327     143
+                   649     144
+                   703     170
+                   871     178
+                  1161     181
+                  2223     182
+                  2463     208
+                  2919     216
+                  3711     237
+                  6171     261
+                 10971     267
+                 13255     275
+                 17647     278
+                 23529     281
+                 26623     307
+                 34239     310
+                 35655     323
+                 52527     339
+                 77031     350
+                106239     353
+                142587     374
+                156159     382
+                216367     385
+                230631     442
+                410011     448
+                511935     469
+                626331     508
+                837799     524
+               1117065     527
+               1501353     530
+               1723519     556
+               2298025     559
+               3064033     562
+               3542887     583
+               3732423     596
+               5649499     612
+               6649279     664
+               8400511     685
+              11200681     688
+              14934241     691
+              15733191     704
+              31466382     705
+              36791535     744
+              63728127     949
+             127456254     950
+             169941673     953
+             226588897     956
+             268549803     964
+             537099606     965
+             670617279     986
+
+TST DIGEST
+  L                        = 1000000000
+  max sigma_C(n)           = 986  at n = 670617279
+  max descent-phase peak   = 1414236446719942480  at n = 319804831
+  checksum sum sigma_C(n)  = 203234783374
+  uint64->u128 promotions  = 0
+  wall                     = 26.73 s
+
+=== 7. main sweep: F = 1000000000000, K = 22, threads = 4 ===
+VERIFY DIGEST
+  F                        = 1000000000000
+  sieve modulus            = 2^22 = 4194304
+  survivor classes         = 93222 / 4194304  (density 0.02222586)
+  sieve q0 max (qbase)     = 1
+  brute-forced base range  = [2, 4194303]   (4194302 values)
+  sieved n iterated        = 22225763519
+  total n iterated         = 22229957821
+  n skipped by the sieve   = 977770042178
+  max descent C-steps      = 897  at n = 898696369947   [exact over [1,F]: YES]
+  max C-orbit excursion    = 400558740821250122033728  at n = 871673828443   [exact over [1,F]: YES]
+  skipped-class step bound = 42   (= 2*jmax, jmax = 21)
+  skipped-class peak bound = 389239174698496   (= 2*(emax*qmax+tmax); emax = 816293376, qmax = 238418, tmax = 553230080)
+  uint64->u128 promotions  = 17121
+  overflow guard aborts    = 0   (any abort exits with code 2)
+  threads                  = 4
+  sieve build wall         = 0.53 s
+  base block wall          = 0.04 s
+  sieved sweep wall        = 876.86 s
+  total wall               = 877.43 s
+  throughput               = 1139.688 x10^6 n/s over [1,F]
+
+  n <= F with descent C-steps >= 850  (15 found)
+    n = 12235060455    steps = 892    peak = 1037298361093936
+    n = 14500812391    steps = 892    peak = 1037298361093936
+    n = 18352590683    steps = 882    peak = 1037298361093936
+    n = 20646664519    steps = 877    peak = 1037298361093936
+    n = 21751218587    steps = 890    peak = 1037298361093936
+    n = 24470120911    steps = 885    peak = 1037298361093936
+    n = 26130934783    steps = 866    peak = 1037298361093936
+    n = 83987887551    steps = 872    peak = 596944661928137512
+    n = 566619806719   steps = 851    peak = 5836676211293115184
+    n = 589213397487   steps = 890    peak = 1135640496432700672
+    n = 850097105055   steps = 892    peak = 248883689208896800
+    n = 868888944799   steps = 877    peak = 104313910186075791076
+    n = 881989193575   steps = 874    peak = 4820647280309478952
+    n = 883820096231   steps = 887    peak = 1135640496432700672
+    n = 898696369947   steps = 897    peak = 791612079014220715456
+
+VERIFIED: every 1 <= n <= 1000000000000 reaches 1 under C.
+
+=== 8. record-holder spot checks (independently re-runnable) ===
+n = 27
+  descent C-steps (to first orbit value < n) = 96
+  descent C-orbit peak                       = 9232
+  total C-stopping time sigma_C(n)           = 111
+  full C-trajectory peak                     = 9232
+n = 703
+  descent C-steps (to first orbit value < n) = 132
+  descent C-orbit peak                       = 250504
+  total C-stopping time sigma_C(n)           = 170
+  full C-trajectory peak                     = 250504
+n = 837799
+  descent C-steps (to first orbit value < n) = 171
+  descent C-orbit peak                       = 2974984576
+  total C-stopping time sigma_C(n)           = 524
+  full C-trajectory peak                     = 2974984576
+n = 704511
+  descent C-steps (to first orbit value < n) = 119
+  descent C-orbit peak                       = 56991483520
+  total C-stopping time sigma_C(n)           = 242
+  full C-trajectory peak                     = 56991483520
+n = 6631675
+  descent C-steps (to first orbit value < n) = 362
+  descent C-orbit peak                       = 60342610919632
+  total C-stopping time sigma_C(n)           = 576
+  full C-trajectory peak                     = 60342610919632
+n = 8088063
+  descent C-steps (to first orbit value < n) = 401
+  descent C-orbit peak                       = 16155154672
+  total C-stopping time sigma_C(n)           = 566
+  full C-trajectory peak                     = 16155154672
+n = 63728127
+  descent C-steps (to first orbit value < n) = 613
+  descent C-orbit peak                       = 966616035460
+  total C-stopping time sigma_C(n)           = 949
+  full C-trajectory peak                     = 966616035460
+n = 80049391
+  descent C-steps (to first orbit value < n) = 396
+  descent C-orbit peak                       = 2185143829170100
+  total C-stopping time sigma_C(n)           = 572
+  full C-trajectory peak                     = 2185143829170100
+n = 319804831
+  descent C-steps (to first orbit value < n) = 427
+  descent C-orbit peak                       = 1414236446719942480
+  total C-stopping time sigma_C(n)           = 592
+  full C-trajectory peak                     = 1414236446719942480
+n = 670617279
+  descent C-steps (to first orbit value < n) = 29
+  descent C-orbit peak                       = 15277499908
+  total C-stopping time sigma_C(n)           = 986
+  full C-trajectory peak                     = 966616035460
+n = 8528817511
+  descent C-steps (to first orbit value < n) = 406
+  descent C-orbit peak                       = 18144594937356598024
+  total C-stopping time sigma_C(n)           = 726
+  full C-trajectory peak                     = 18144594937356598024
+n = 12235060455
+  descent C-steps (to first orbit value < n) = 892
+  descent C-orbit peak                       = 1037298361093936
+  total C-stopping time sigma_C(n)           = 1184
+  full C-trajectory peak                     = 1037298361093936
+n = 77566362559
+  descent C-steps (to first orbit value < n) = 476
+  descent C-orbit peak                       = 916613029076867799856
+  total C-stopping time sigma_C(n)           = 755
+  full C-trajectory peak                     = 916613029076867799856
+n = 871673828443
+  descent C-steps (to first orbit value < n) = 453
+  descent C-orbit peak                       = 400558740821250122033728
+  total C-stopping time sigma_C(n)           = 650
+  full C-trajectory peak                     = 400558740821250122033728
+n = 898696369947
+  descent C-steps (to first orbit value < n) = 897
+  descent C-orbit peak                       = 791612079014220715456
+  total C-stopping time sigma_C(n)           = 1136
+  full C-trajectory peak                     = 791612079014220715456
+
+X-9903 run complete.

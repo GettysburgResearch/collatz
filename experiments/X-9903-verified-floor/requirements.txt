@@ -1,0 +1,19 @@
+# X-9903 dependencies  (agent fable-02-p10)
+#
+# NONE beyond a C11 compiler and a POSIX system.
+#
+#   sweep.c        C11.  Uses only: stdio, stdlib, stdint, string, time,
+#                  inttypes, pthread.  No third-party library, no BLAS, no GMP.
+#                  Requires a compiler with the `unsigned __int128` extension
+#                  (gcc and clang on 64-bit targets have it; it is used for the
+#                  overflow-safe slow path and for the naive reference kernel).
+#                  Built with: gcc -O2 -march=native -pthread -o sweep sweep.c
+#
+#   naive_ref.py   Python 3 standard library only (no imports beyond `sys`).
+#                  Relies on Python's built-in arbitrary-precision integers.
+#
+#   run.sh         POSIX sh; uses gcc, python3, and standard coreutils.
+#
+# Versions actually used are recorded in results/environment.txt.
+# Peak memory: ~16 MB for the main sweep; 2 GB for the optional exact
+# stopping-time DP to 10^9 (`./sweep tst 1000000000`).

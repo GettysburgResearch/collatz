@@ -1,0 +1,13 @@
+SELFTEST
+  OVF64 = 6148914691236517204   3*OVF64+1 = 18446744073709551613   UINT64_MAX = 18446744073709551615
+  OVF128 = 113427455640312821154458202477256070484
+  [PASS] uint64/u128 overflow guards are exactly floor((2^w-2)/3), and 3x+1 then fits
+  [PASS] naive reference reproduces classical values (27:111/9232, 703:peak 250504, 837799:524)
+  [PASS] Terras identity T^K(2^K q + r) = 3^{a(r)} q + T^K(r), K<=12, all r, q<40
+  [PASS] every sieved-out class descends within K T-steps for all q >= q0 (K<=10, 300 q each)
+  [PASS] sieve survivor sets mod 2,4,...,256 match the L-9909 tables exactly
+  [PASS] descent(): C-step count and peak match a naive u128 descent on [2, 3*10^5]
+  [PASS] peak decomposition: full C-trajectory max = max of the anchors' descent peaks ([2,10^5])
+  n = 8528817511: descent steps = 406, peak = 18144594937356598024
+  [PASS] near-2^64 case n=8528817511 handled identically by the fast and u128 kernels
+SELFTEST RESULT: ALL PASS (0 failures)

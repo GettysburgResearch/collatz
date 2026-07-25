@@ -1,0 +1,23 @@
+Compiler-flag independence check (F = 10^9, K = 22, 4 threads)
+Three binaries built from the same sweep.c:
+  sweep     : gcc -O2 -march=native -pthread
+  sweep_o2  : gcc -O2 -pthread            (portable, no -march=native)
+  sweep_o0  : gcc -O0 -pthread            (no optimisation)
+
+-- sweep
+  total n iterated         = 26326897
+  max descent C-steps      = 644  at n = 217740015   [exact over [1,F]: YES]
+  max C-orbit excursion    = 1414236446719942480  at n = 319804831   [exact over [1,F]: YES]
+  uint64->u128 promotions  = 0
+-- sweep_o2
+  total n iterated         = 26326897
+  max descent C-steps      = 644  at n = 217740015   [exact over [1,F]: YES]
+  max C-orbit excursion    = 1414236446719942480  at n = 319804831   [exact over [1,F]: YES]
+  uint64->u128 promotions  = 0
+-- sweep_o0
+  total n iterated         = 26326897
+  max descent C-steps      = 644  at n = 217740015   [exact over [1,F]: YES]
+  max C-orbit excursion    = 1414236446719942480  at n = 319804831   [exact over [1,F]: YES]
+  uint64->u128 promotions  = 0
+
+RESULT: all three digests identical.

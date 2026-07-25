@@ -1,0 +1,31 @@
+--- Python 3, arbitrary-precision ints, no memoisation, no shortcut (n <= 10^5)
+PYTHON BIGINT NAIVE DIGEST
+  L                        = 100000
+  max sigma_C(n)           = 350  at n = 77031
+  max full-trajectory peak = 1570824736  at n = 77671
+  checksum sum sigma_C(n)  = 10753840
+
+--- C, unsigned __int128, no memoisation, no shortcut (n <= 10^5)
+NAIVE DIGEST
+  L                        = 100000
+  max sigma_C(n)           = 350  at n = 77031
+  max full-trajectory peak = 1570824736  at n = 77671
+  checksum sum sigma_C(n)  = 10753840
+  wall                     = 0.03 s
+
+--- C, unsigned __int128, no memoisation, no shortcut (n <= 10^6)
+NAIVE DIGEST
+  L                        = 1000000
+  max sigma_C(n)           = 524  at n = 837799
+  max full-trajectory peak = 56991483520  at n = 704511
+  checksum sum sigma_C(n)  = 131434424
+  wall                     = 0.32 s
+
+--- C, exact descent DP with uint64 fast path (n <= 10^6)
+TST DIGEST
+  L                        = 1000000
+  max sigma_C(n)           = 524  at n = 837799
+  max descent-phase peak   = 56991483520  at n = 704511
+  checksum sum sigma_C(n)  = 131434424
+  uint64->u128 promotions  = 0
+  wall                     = 0.01 s

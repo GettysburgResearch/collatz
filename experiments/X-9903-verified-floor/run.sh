@@ -103,7 +103,7 @@ echo
 echo "=== 8. record-holder spot checks (independently re-runnable) ==="
 {
   for n in 27 703 837799 704511 6631675 8088063 63728127 80049391 319804831 \
-           670617279 8528817511 12235060455 77566362559; do
+           670617279 8528817511 12235060455 77566362559 871673828443 898696369947; do
     ./sweep check $n
   done
 } | tee "$R/record_holders.txt"

@@ -1,0 +1,33 @@
+VERIFY DIGEST
+  F                        = 100000000000
+  sieve modulus            = 2^22 = 4194304
+  survivor classes         = 93222 / 4194304  (density 0.02222586)
+  sieve q0 max (qbase)     = 1
+  brute-forced base range  = [2, 4194303]   (4194302 values)
+  sieved n iterated        = 2222492455
+  total n iterated         = 2226686757
+  n skipped by the sieve   = 97773313242
+  max descent C-steps      = 892  at n = 12235060455   [exact over [1,F]: YES]
+  max C-orbit excursion    = 916613029076867799856  at n = 77566362559   [exact over [1,F]: YES]
+  skipped-class step bound = 42   (= 2*jmax, jmax = 21)
+  skipped-class peak bound = 38923607214592   (= 2*(emax*qmax+tmax); emax = 816293376, qmax = 23841, tmax = 553230080)
+  uint64->u128 promotions  = 163
+  overflow guard aborts    = 0   (any abort exits with code 2)
+  threads                  = 4
+  sieve build wall         = 0.52 s
+  base block wall          = 0.04 s
+  sieved sweep wall        = 87.68 s
+  total wall               = 88.24 s
+  throughput               = 1133.270 x10^6 n/s over [1,F]
+
+  n <= F with descent C-steps >= 850  (8 found)
+    n = 12235060455    steps = 892    peak = 1037298361093936
+    n = 14500812391    steps = 892    peak = 1037298361093936
+    n = 18352590683    steps = 882    peak = 1037298361093936
+    n = 20646664519    steps = 877    peak = 1037298361093936
+    n = 21751218587    steps = 890    peak = 1037298361093936
+    n = 24470120911    steps = 885    peak = 1037298361093936
+    n = 26130934783    steps = 866    peak = 1037298361093936
+    n = 83987887551    steps = 872    peak = 596944661928137512
+
+VERIFIED: every 1 <= n <= 100000000000 reaches 1 under C.

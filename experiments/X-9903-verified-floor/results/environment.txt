@@ -1,0 +1,10 @@
+X-9903 environment record
+date (UTC)      : 2026-07-25 19:55:21
+uname -a        : Linux vm 6.18.5 #1 SMP PREEMPT_DYNAMIC @0 x86_64 x86_64 x86_64 GNU/Linux
+os              : Ubuntu 24.04.4 LTS
+cpu             : Intel(R) Xeon(R) Processor @ 2.10GHz
+cores (nproc)   : 4
+memory total    : 16461176 kB
+compiler        : gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+python          : Python 3.11.15
+parameters      : F=1000000000000 K=22 threads=4 tst_L=1000000000

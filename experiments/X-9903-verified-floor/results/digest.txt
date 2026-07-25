@@ -1,0 +1,40 @@
+VERIFY DIGEST
+  F                        = 1000000000000
+  sieve modulus            = 2^22 = 4194304
+  survivor classes         = 93222 / 4194304  (density 0.02222586)
+  sieve q0 max (qbase)     = 1
+  brute-forced base range  = [2, 4194303]   (4194302 values)
+  sieved n iterated        = 22225763519
+  total n iterated         = 22229957821
+  n skipped by the sieve   = 977770042178
+  max descent C-steps      = 897  at n = 898696369947   [exact over [1,F]: YES]
+  max C-orbit excursion    = 400558740821250122033728  at n = 871673828443   [exact over [1,F]: YES]
+  skipped-class step bound = 42   (= 2*jmax, jmax = 21)
+  skipped-class peak bound = 389239174698496   (= 2*(emax*qmax+tmax); emax = 816293376, qmax = 238418, tmax = 553230080)
+  uint64->u128 promotions  = 17121
+  overflow guard aborts    = 0   (any abort exits with code 2)
+  threads                  = 4
+  sieve build wall         = 0.53 s
+  base block wall          = 0.04 s
+  sieved sweep wall        = 876.86 s
+  total wall               = 877.43 s
+  throughput               = 1139.688 x10^6 n/s over [1,F]
+
+  n <= F with descent C-steps >= 850  (15 found)
+    n = 12235060455    steps = 892    peak = 1037298361093936
+    n = 14500812391    steps = 892    peak = 1037298361093936
+    n = 18352590683    steps = 882    peak = 1037298361093936
+    n = 20646664519    steps = 877    peak = 1037298361093936
+    n = 21751218587    steps = 890    peak = 1037298361093936
+    n = 24470120911    steps = 885    peak = 1037298361093936
+    n = 26130934783    steps = 866    peak = 1037298361093936
+    n = 83987887551    steps = 872    peak = 596944661928137512
+    n = 566619806719   steps = 851    peak = 5836676211293115184
+    n = 589213397487   steps = 890    peak = 1135640496432700672
+    n = 850097105055   steps = 892    peak = 248883689208896800
+    n = 868888944799   steps = 877    peak = 104313910186075791076
+    n = 881989193575   steps = 874    peak = 4820647280309478952
+    n = 883820096231   steps = 887    peak = 1135640496432700672
+    n = 898696369947   steps = 897    peak = 791612079014220715456
+
+VERIFIED: every 1 <= n <= 1000000000000 reaches 1 under C.

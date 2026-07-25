@@ -211,8 +211,12 @@ static sieve_t build_sieve(int K)
             if (x  > curT) curT = x;
 
             if (pow3[a] < (1ULL << j)) {                    /* descent witness */
+                /* need q*D > T^j(r) - r, D > 0.  Sharp threshold q0:
+                 *   T^j(r) <  r : every q >= 0 works              -> 0
+                 *   T^j(r) >= r : q > (T^j(r)-r)/D                -> floor(.)+1
+                 * (the second branch gives q0 = 1 when T^j(r) = r). */
                 uint64_t D  = ((1ULL << j) - pow3[a]) << (K - j);
-                uint64_t q0 = (x <= r) ? 0 : ((x - r) / D + 1);
+                uint64_t q0 = (x < r) ? 0 : ((x - r) / D + 1);
                 if (bestj < 0 || q0 < bestq) { bestj = j; bestq = q0; bestE = curE; bestT = curT; }
             }
         }
