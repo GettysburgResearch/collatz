@@ -1,10 +1,10 @@
-# Six-branch global offense — exact contraction classification and polynomial-nucleus closure
+# Six-branch global offense — exact contraction classification beyond the rational nucleus
 
 **Agent:** `gpt56-cycle-01`  
 **Issue:** `#58`  
 **Date:** 2026-07-26  
 **Branch:** `agent/gpt56-cycle-01/58-increment-descent-offense`  
-**Base:** draft PR #64 at branch creation  
+**Base:** draft PR #64  
 **Status:** no boundedness proof, ordinary infinite root, or Collatz counterexample
 
 ## 1. Objective
@@ -24,7 +24,7 @@ a_i=7*2^(15-3i)*3^(2i).
 ```
 
 A bounded sequence would stabilize at an explicit integer `m`; the exact
-physical seed would be `6*m-5`.  No finite prefix, inverse-limit completion, or
+physical seed would be `6*m-5`. No finite prefix, inverse-limit completion, or
 conditional growth theorem was accepted as a substitute.
 
 ## 2. Initial descent coordinates
@@ -41,7 +41,7 @@ which satisfies
 Qy_{n+1}=Py_n+a_{i_{n+1}}-a_{i_n}.
 \]
 
-Its 36 possible digits avoid the six-letter alphabet.  The first Euclidean
+Its 36 possible digits avoid the six-letter alphabet. The first Euclidean
 upper-convergent remainder is
 
 \[
@@ -99,7 +99,7 @@ condition reduce to
 a_i\mid a_k-v a_j.
 \]
 
-This is a finite exact interval because `Pa_i-Qa_j` is nonzero.  Exhausting all
+This is a finite exact interval because `Pa_i-Qa_j` is nonzero. Exhausting all
 216 triples gives exactly 75 integer pairs.
 
 ### Complete answer
@@ -122,21 +122,20 @@ all other forms:
 ```
 
 Thus every recurrent edge graph in the complete contraction classification is
-constant-type.  Constant type is impossible for a positive ordinary tail:
-with
+constant-type. Constant type is impossible for a positive ordinary tail: with
 
 \[
 Y_n=(P-Q)x_n+a_i,
 \]
 
 one has `QY_(n+1)=P Y_n`, so every power of `Q` divides one fixed positive
-integer.  The two non-diagonal forms require an infinite strict ascent inside
+integer. The two non-diagonal forms require an infinite strict ascent inside
 `{0,...,5}`, also impossible.
 
 This closes **every fixed integer two-point linear descent on one hypothetical
 orbit**, not merely the natural increment and continued-fraction choices.
 
-## 4. Full-language generalization
+## 4. Full-language sliding-filter generalization
 
 For a fixed affine sliding filter
 
@@ -157,35 +156,35 @@ The integer sumset inequality
 \]
 
 shows that two nonzero coefficients would already produce at least eleven
-digits.  A one-coefficient affine image of the six-element alphabet is forced
-to be the identity.  Hence every fixed finite-order affine filter carrying the
+digits. A one-coefficient affine image of the six-element alphabet is forced
+to be the identity. Hence every fixed finite-order affine filter carrying the
 complete language is only a time shift.
 
-## 5. Polynomial-nucleus generalization
+This is not the same object as a high-quotient section: it permits one fixed
+filter of arbitrarily many consecutive **physical orbit states**.
 
-Allow a finite control graph and an arbitrary integer polynomial in the exact
-high quotient at every section.  On an edge
+## 5. Reconciliation with the live base
 
-\[
-Qk'=Pk+c_i-r_j,
-\]
+While this classification was being completed, PR #64 advanced by eight
+commits and added:
 
-the self-replication identity forces leading coefficients to satisfy
+- `T-7403`, proving that every finite rational-function high-quotient nucleus
+  carrying the complete subtree is the original forward map;
+- `T-7404`, excluding infinite arithmetic progressions and nonempty semilinear
+  forward-invariant sanctuaries in the survivor set.
 
-\[
-L'=L(Q/P)^{d-1}.
-\]
+The local polynomial-nucleus argument developed in this pass is subsumed by
+the stronger `T-7403` and has been withdrawn rather than retained under a
+duplicate claim ID.
 
-A finite control cycle therefore forces polynomial degree `d=1`.  Positive
-constant sections are impossible because every edge strictly increases them.
-The remaining degree-one system is exactly PR #64 `T-7402`, which collapses to
+The live closures now have three complementary scopes:
 
-\[
-f(k)=Pk+c_i.
-\]
-
-Thus no finite-control polynomial full-subtree nucleus can supply a nonlinear
-ordinary self-descent.
+```text
+T-7403: finite-control rational sections of the complete rooted subtree;
+T-7404: semilinear value-space sanctuaries;
+T-7302: fixed finite-window affine filters of consecutive orbit states;
+T-7301: path-specific fixed two-point contractions on one orbit.
+```
 
 ## 6. Geometric vertical conjugacy
 
@@ -196,10 +195,10 @@ a_{i+1}=(9/8)a_i.
 \]
 
 Scaling an ordinary root by `(9/8)^c`, when the required divisibility and type
-bounds hold, shifts every type by `c`.  The phase-free valuation identity makes
+bounds hold, shifts every type by `c`. The phase-free valuation identity makes
 this scaling ordinary on actual type-confined tails.
 
-A direct minimality consequence is:
+A direct minimality consequence is
 
 \[
 \boxed{\text{the least positive all-time root, if it exists, uses type 0.}}
@@ -232,19 +231,19 @@ No finite least-root census is used in any theorem.
 
 ## 8. Honest global status
 
-The boundedness of `m_n` remains open.  The new result is a method-class
+The boundedness of `m_n` remains open. The new result is a method-class
 breakthrough rather than an extracted root:
 
 ```text
-direct quotient:                    closed;
-finite affine quotient nucleus:     closed by PR #64;
-all fixed two-point contractions:   closed here;
-all finite-order affine filters:    closed here;
-finite polynomial full subtree:     closed here;
-nonlinear unbounded ordinary state: still open.
+direct quotient:                       closed;
+finite rational quotient nucleus:      closed by PR #64;
+semilinear sanctuary:                  closed by PR #64;
+all fixed two-point contractions:      closed here;
+all finite-order affine orbit filters: closed here;
+nonlinear unbounded ordinary state:    still open.
 ```
 
 A positive solution must now cross the type-zero boundary and use genuinely
-nonlinear or unbounded arithmetic information generated from one finite root.
-A negative solution may leverage these closures to prove that every remaining
-section has escaping canonical representatives.
+nonlinear, infinite-section, or unbounded arithmetic information generated from
+one finite root. A negative solution may leverage these closures to prove that
+every remaining section has escaping canonical representatives.
