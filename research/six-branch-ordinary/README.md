@@ -37,6 +37,7 @@ sequence `m_N`.
 | [X-6135](../../experiments/X-6135-universal-floor/README.md) | PROVED (computation) | The universal floor `mu_L` computed exactly; `mu_L = 27` for all `L` in `[20,79]`. Measured slope tracks the predicted codimension. |
 | [T-6121](T-6121-uniform-density-gate.md) | PROVED | Uniform density gate: **every** `(k,q)` macro-block chart has `D/Q <= 1/2`, survivor density `<= 2^-N`, all-time set of Haar measure 0. Chart confinement forces odd-step density to a fixed rational `k/q` — strictly stronger than divergence. |
 | [T-6140](T-6140-lane-dichotomy.md) | PROVED | **Lane dichotomy.** The cycle target is countable, explicitly parameterised, dimension `0`, with a quantity forced to vanish; the divergence target is a continuum of dimension `0.94996` with none. Height gates work only in the first lane, dimension gates only in the second, and neither transfers. Cartography for issue #36 / PR #38. |
+| [T-6141](T-6141-cycle-length-floor.md) | PROVED | **Cycle-length floor.** `prod(3+1/n_i) = 2^q` gives the pure-integer bound `m <= k 2^q/(3(2^q-3^k))`; with the verification bound `B = 2^71` every convergent below the Legendre threshold is excluded, so any positive cycle has `k >= 4.95e10` odd elements and `q >= 7.85e10` steps. Tight on the trivial cycle. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
 ## Bottom line
@@ -52,6 +53,10 @@ sequence `m_N`.
   not count it as such.
 * Two families are now closed unconditionally: eventually periodic schedules (T-6103) and
   height-gate ports (R-6112).
+* The lane dichotomy (T-6140) is not just a framing: T-6141/X-6150 cash it out. Two minutes of
+  exact arithmetic in the *cycle* lane excludes an infinite family of `(q,k)` and yields an
+  unconditional floor; 94 billion search nodes in the *divergence* lane (X-6110) bought one
+  inequality and excluded nothing.
 * **The wall is a property of the target, not of the architecture (T-6131).** Every
   divergence-targeting architecture has a measure-zero survivor set of dimension at most
   `0.94996`, so the false-compactness trap cannot be engineered away, and the depth of an

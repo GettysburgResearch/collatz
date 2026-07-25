@@ -1,0 +1,46 @@
+continued fraction of log_2(3) (leading terms checked against the classical value):
+  [1, 1, 1, 2, 2, 3, 1, 5, 2, 23, 2, 2, 1, 1, 55, 1, 4, 3, 1, 1, 15, 1, 9, 2, 5, 7, 1, 1, 4, 8, 1, 11, 1, 20, 2, 1, 10, 1, 4, 1]
+
+verification bound B = 2^68 = 295147905179352825856
+Legendre applies while k < sqrt(3*B*ln2/2) = 1.7518e+10
+sanity check on the trivial cycle (q=2,k=1): bound on m is 1.3333 >= actual m = 1  -> True
+
+ q (halvings)  k (odd steps)  2^q>3^k     bound on min element m  excluded?    method
+            1              1       no  -- 3^k >= 2^q, impossible        yes     exact
+            2              1      yes                          1        yes     exact
+            3              2       no  -- 3^k >= 2^q, impossible        yes     exact
+            8              5      yes                         32        yes     exact
+           19             12       no  -- 3^k >= 2^q, impossible        yes     exact
+           65             41      yes                       1199        yes     exact
+           84             53       no  -- 3^k >= 2^q, impossible        yes     exact
+          485            306      yes                      99831        yes     exact
+         1054            665       no  -- 3^k >= 2^q, impossible        yes     exact
+        24727          15601      yes                  285820186        yes     exact
+        50508          31867       no  -- 3^k >= 2^q, impossible        yes     exact
+       125743          79335      yes                 7216102492        yes  interval
+       176251         111202       no  -- 3^k >= 2^q, impossible        yes  interval
+       301994         190537      yes               984572810980        yes  interval
+     16785921       10590737       no  -- 3^k >= 2^q, impossible        yes  interval
+     17087915       10781274      yes                ~2.9440e+14        yes  interval
+     85137581       53715833       no  -- 3^k >= 2^q, impossible        yes  interval
+    272500658      171928773      yes                ~3.2031e+16        yes  interval
+    357638239      225644606       no  -- 3^k >= 2^q, impossible        yes  interval
+    630138897      397573379      yes                ~1.2521e+18        yes  interval
+   9809721694     6189245291       no  -- 3^k >= 2^q, impossible        yes  interval
+  10439860591     6586818670      yes                ~2.1689e+20        yes  interval
+ 103768467013    65470613321       no  -- 3^k >= 2^q, impossible        yes  interval
+ 217976794617   137528045312      yes                ~5.1013e+22         NO  interval
+
+first convergent NOT excluded: q = 217976794617 halvings, k = 137528045312 odd steps (bound on m is ~5.1013e+22 > B)
+
+CERTIFIED CONCLUSIONS (given the verification bound B):
+  1. every convergent with k < 1.7518e+10 is excluded (table above), and by
+     Legendre q/k must be a convergent whenever k^2 < 3*B*ln2/2, so
+     ==> any positive cycle has at least k >= 1.7518e+10 odd elements,
+         hence at least q >= 2.7765e+10 shortcut steps.
+  2. if additionally q/k is a convergent, the first surviving one gives
+     k >= 137528045312 and q >= 217976794617.
+
+  Note the gap: for k between the Legendre threshold and the first surviving
+  convergent, q/k need NOT be a convergent, and this argument excludes nothing
+  there. Conclusion 1 is the unconditional one.
