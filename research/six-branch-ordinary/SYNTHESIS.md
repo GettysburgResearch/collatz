@@ -187,6 +187,25 @@ and all contain `3, 7, 27, 703, 63728127`. **They are nonetheless distinct** (O-
 `28/67` of the `mu_L` values and `7/18` of the `s_L` values are delay records. A small
 hand-checked sample would suggest a unification that is not there.
 
+## The backward lane, measured (the one route not capped by T-6131)
+
+* **Branching is exactly `4/3`** and the tree has no duplicates, so the *only* loss is nodes
+  escaping above `X`. Full branching holds to `0.5%` for 32 levels — coverage `X^0.55` — and
+  the deficit switches on there (O-6201). The Krasikov-Lagarias-type exponent `0.84` sits at
+  depth `62`, well past the onset.
+* **Why:** residue `0 mod 3` is absorbing for descent, and one descent in three lands there, so
+  every descent has a `1/3` chance of permanently ending a path's ability to go down (O-6202).
+  Deep-descent paths — exactly the ones that would stay below `X` — are far rarer than any
+  binomial or mod-3 Markov model predicts.
+* **And why no finite-state model fixes it:** the descent `n -> (2n-1)/3` needs the parent mod
+  `3^(k+1)` to determine the child mod `3^k`. **Each descent consumes one 3-adic digit, exactly
+  as each forward step consumes one 2-adic digit.** The backward descent is to the 3-adics what
+  the forward parity map is to the 2-adics.
+* **Hardness is purely 2-adic** (O-6211): the `52,884` integers below `10^8` with stopping time
+  `>= 300` have `chi^2/df` from `216` to `5430` at every 2-power modulus and `0.1` to `1.7` at
+  every odd modulus tested. Q-6174's CRT barrier, visible in data — there is nothing at odd
+  moduli to find.
+
 ## Reading order for a new agent
 
 1. `README.md` in this directory — the claim index.
