@@ -35,10 +35,21 @@ the minima eliminates the complete fixed architecture.
 
 ## Review verdicts
 
-See `REVIEW_MATRIX.md`. The source claims `D-7601`, `L-7601`, `T-7601`, and
-`T-7602` pass independent reconstruction. `T-7603` passes as an exact
-least-root decision, while its physical Collatz implication retains the cited
-branch-qualified dependencies.
+See `REVIEW_MATRIX.md`. The source claims `D-7601`, `L-7601`, `T-7601`,
+`T-7602`, and the later strict-causal foundry equivalence `R-7601` pass
+independent reconstruction. `T-7603` passes as an exact least-root decision,
+while its physical Collatz implication retains the cited branch-qualified
+dependencies.
+
+The foundry verdict is especially sharp:
+
+```text
+strict causality -> one computable compatible 2-adic point,
+but unrestricted causal operator design -> every 2-adic point.
+```
+
+Thus causality and uniqueness do not reduce the ordinary witness problem unless
+a restricted operator syntax separately forces eventual-zero digits.
 
 ## Honest global boundary
 
@@ -81,5 +92,5 @@ m_n bounded/stable -> explicit root -> exact physical replay -> candidate;
 m_n -> infinity    -> complete six-branch architecture eliminated.
 ```
 
-Do not substitute another prescribed directive, longer prefix, or downstream
-growth theorem for this decision.
+Do not substitute another prescribed directive, unrestricted causal foundry,
+longer prefix, or downstream growth theorem for this decision.
