@@ -381,14 +381,14 @@ def main() -> None:
     group.add_argument("--check-results", type=Path)
     args = parser.parse_args()
     payload = build_payload()
-    text = stable(payload)
     target = args.write_results or args.check_results
     if args.write_results:
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(text, encoding="utf-8")
+        target.write_text(stable(payload), encoding="utf-8")
         print(f"wrote {target}")
     else:
-        if target.read_text(encoding="utf-8") != text:
+        frozen = json.loads(target.read_text(encoding="utf-8"))
+        if frozen != payload:
             raise SystemExit("result mismatch")
         print("frozen result verified")
     print(json.dumps(payload["totals"], sort_keys=True))
