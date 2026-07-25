@@ -1,0 +1,49 @@
+{
+  "constants": {
+    "Delta": 7153,
+    "P": 531441,
+    "Q": 524288,
+    "digits": [229376, 258048, 290304, 326592, 367416, 413343]
+  },
+  "continued_fraction": {
+    "P_over_Q": [1, 73, 3, 2, 1, 1, 1, 23, 2, 5],
+    "convergents": [
+      {"allowed_hits": [], "p": 1, "q": 1, "signed_remainder": -7153},
+      {"allowed_hits": [[0,0,0],[1,1,1],[2,2,2],[3,3,3],[4,4,4],[5,5,5]], "p": 74, "q": 73, "signed_remainder": 2119},
+      {"allowed_hits": [], "p": 223, "q": 220, "signed_remainder": -796},
+      {"allowed_hits": [], "p": 520, "q": 513, "signed_remainder": 527},
+      {"allowed_hits": [], "p": 743, "q": 733, "signed_remainder": -269},
+      {"allowed_hits": [], "p": 1263, "q": 1246, "signed_remainder": 258},
+      {"allowed_hits": [], "p": 2006, "q": 1979, "signed_remainder": -11},
+      {"allowed_hits": [], "p": 47401, "q": 46763, "signed_remainder": 5},
+      {"allowed_hits": [], "p": 96808, "q": 95505, "signed_remainder": -1},
+      {"allowed_hits": [], "p": 531441, "q": 524288, "signed_remainder": 0}
+    ]
+  },
+  "contracting_forms": {
+    "adjacent_forms": [
+      {"edge_outputs": [[0,1,1],[1,2,2],[2,3,3],[3,4,4],[4,5,5]], "u": -9, "v": 9},
+      {"edge_outputs": [[0,1,0],[1,2,1],[2,3,2],[3,4,3],[4,5,4]], "u": -8, "v": 8}
+    ],
+    "diagonal_family_count": 73,
+    "diagonal_forms": [
+      {"lambda_numerator":517135,"u":2,"v":-1},{"lambda_numerator":509982,"u":3,"v":-2},{"lambda_numerator":502829,"u":4,"v":-3},{"lambda_numerator":495676,"u":5,"v":-4},{"lambda_numerator":488523,"u":6,"v":-5},{"lambda_numerator":481370,"u":7,"v":-6},{"lambda_numerator":474217,"u":8,"v":-7},{"lambda_numerator":467064,"u":9,"v":-8},{"lambda_numerator":459911,"u":10,"v":-9},{"lambda_numerator":452758,"u":11,"v":-10},{"lambda_numerator":445605,"u":12,"v":-11},{"lambda_numerator":438452,"u":13,"v":-12},{"lambda_numerator":431299,"u":14,"v":-13},{"lambda_numerator":424146,"u":15,"v":-14},{"lambda_numerator":416993,"u":16,"v":-15},{"lambda_numerator":409840,"u":17,"v":-16},{"lambda_numerator":402687,"u":18,"v":-17},{"lambda_numerator":395534,"u":19,"v":-18},{"lambda_numerator":388381,"u":20,"v":-19},{"lambda_numerator":381228,"u":21,"v":-20},{"lambda_numerator":374075,"u":22,"v":-21},{"lambda_numerator":366922,"u":23,"v":-22},{"lambda_numerator":359769,"u":24,"v":-23},{"lambda_numerator":352616,"u":25,"v":-24},{"lambda_numerator":345463,"u":26,"v":-25},{"lambda_numerator":338310,"u":27,"v":-26},{"lambda_numerator":331157,"u":28,"v":-27},{"lambda_numerator":324004,"u":29,"v":-28},{"lambda_numerator":316851,"u":30,"v":-29},{"lambda_numerator":309698,"u":31,"v":-30},{"lambda_numerator":302545,"u":32,"v":-31},{"lambda_numerator":295392,"u":33,"v":-32},{"lambda_numerator":288239,"u":34,"v":-33},{"lambda_numerator":281086,"u":35,"v":-34},{"lambda_numerator":273933,"u":36,"v":-35},{"lambda_numerator":266780,"u":37,"v":-36},{"lambda_numerator":259627,"u":38,"v":-37},{"lambda_numerator":252474,"u":39,"v":-38},{"lambda_numerator":245321,"u":40,"v":-39},{"lambda_numerator":238168,"u":41,"v":-40},{"lambda_numerator":231015,"u":42,"v":-41},{"lambda_numerator":223862,"u":43,"v":-42},{"lambda_numerator":216709,"u":44,"v":-43},{"lambda_numerator":209556,"u":45,"v":-44},{"lambda_numerator":202403,"u":46,"v":-45},{"lambda_numerator":195250,"u":47,"v":-46},{"lambda_numerator":188097,"u":48,"v":-47},{"lambda_numerator":180944,"u":49,"v":-48},{"lambda_numerator":173791,"u":50,"v":-49},{"lambda_numerator":166638,"u":51,"v":-50},{"lambda_numerator":159485,"u":52,"v":-51},{"lambda_numerator":152332,"u":53,"v":-52},{"lambda_numerator":145179,"u":54,"v":-53},{"lambda_numerator":138026,"u":55,"v":-54},{"lambda_numerator":130873,"u":56,"v":-55},{"lambda_numerator":123720,"u":57,"v":-56},{"lambda_numerator":116567,"u":58,"v":-57},{"lambda_numerator":109414,"u":59,"v":-58},{"lambda_numerator":102261,"u":60,"v":-59},{"lambda_numerator":95108,"u":61,"v":-60},{"lambda_numerator":87955,"u":62,"v":-61},{"lambda_numerator":80802,"u":63,"v":-62},{"lambda_numerator":73649,"u":64,"v":-63},{"lambda_numerator":66496,"u":65,"v":-64},{"lambda_numerator":59343,"u":66,"v":-65},{"lambda_numerator":52190,"u":67,"v":-66},{"lambda_numerator":45037,"u":68,"v":-67},{"lambda_numerator":37884,"u":69,"v":-68},{"lambda_numerator":30731,"u":70,"v":-69},{"lambda_numerator":23578,"u":71,"v":-70},{"lambda_numerator":16425,"u":72,"v":-71},{"lambda_numerator":9272,"u":73,"v":-72},{"lambda_numerator":2119,"u":74,"v":-73}
+    ],
+    "diagonal_parameter_range": [1,73],
+    "other_forms": [],
+    "total": 75
+  },
+  "experiment_id": "X-7301",
+  "interpretation": {
+    "not_proved": ["boundedness or divergence of m_n","an ordinary infinite root","a Collatz counterexample"],
+    "proved": [
+      "all integer two-point filters z_n=u*x_n+v*x_(n+1) with 0<u+v*P/Q<1 and at least one legal output digit are classified",
+      "the only forms supporting an infinite edge path are the 73 diagonal forms, whose paths are constant-type",
+      "the only non-diagonal forms are (-8,8) and (-9,9), supported on the finite adjacent-ascent chain 0->1->...->5",
+      "the complete continued-fraction Euclidean ladder has only the 74/73 diagonal hit"
+    ]
+  },
+  "schema_version": 1,
+  "semantic_sha256": "2cc0332ceb6327861da0946d5be757d75dfb836cdece44f0f6441d90c8315f0f",
+  "status": "EXACT FINITE CLASSIFICATION / NO COUNTEREXAMPLE"
+}
