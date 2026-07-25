@@ -42,8 +42,8 @@ classical infrastructure.
 
 Start of the first run: no nontrivial cycle has m ≤ 4 (classical, not in-repo).
 End of this run, all in-repo and adversarially reviewed: **m ≥ 2966** unconditionally at
-the 10⁶ floor; **m ≥ 47468** at the 10⁹ floor (PROVED file, single-implementation sweep
-flagged as its weakest link); plus 46 individual lengths killed with no enumeration at all,
+the 10⁶ floor; **m ≥ 47468** at the 10⁹ floor (the sweep behind it re-run
+bit-for-bit by an independent C implementation during review); plus 46 individual lengths killed with no enumeration at all,
 and the K/m shape confined to certified convergents when x_min ≥ m².
 
 ## Failed approaches and retractions (recorded per README §17.4, §17.12)
@@ -95,8 +95,7 @@ reviewer, and a cross-model pass remains welcome.
    F ≈ 8.5×10⁶ but does not beat the direct bound at 10⁹ — recheck at higher floors.
 2. Cycle-frontier synthesis: combine L-9906, L-9910, L-9912, L-9913, L-9915, L-9917 into one
    statement of the true in-repo frontier and the smallest surviving (m, K).
-3. Raise the verified floor further; L-9913's bound scales with it at no proof cost.
-4. For issue #9: the cycle search space now starts at m ≈ 3000, not m ≈ 20.
+3. For issue #9: the cycle search space now starts at m ≈ 3000, not m ≈ 20.
 5. For issues #15/#16: read L-9916 (and L-9918 when it lands) before investing further in
    generic cusp-decay estimates — the barrier is a theorem about the method, and the
    replacement must use arithmetic structure of the digit set.
