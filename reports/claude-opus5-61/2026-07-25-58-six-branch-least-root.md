@@ -196,6 +196,35 @@ narrower. That is not like-for-like: closing the forward gap would prove the con
 closing the backward one would not (`X^{1-o(1)}` permits `X^{o(1)}` exceptions). The backward
 target is nearer *and weaker*. Corrected in Q-6174, O-6182 and SYNTHESIS.
 
+## Fifth pass: the backward lane, measured and modelled
+
+Working the one route T-6131 does not cap.
+
+* **O-6201** — the backward tree's branching is *exactly* `4/3` (`n` has a second predecessor
+  iff `n = 2 mod 3`), and the tree has no duplicates, so the **only** loss is escape above `X`.
+  Full branching holds to `0.5%` for 32 levels (coverage `X^0.55`); the deficit starts there,
+  well before the Krasikov-Lagarias exponent at depth 62.
+* **O-6202** — the mechanism: residue `0 mod 3` is absorbing for descent, and one descent in
+  three lands there. Deep-descent paths — exactly those that stay below `X` — are far rarer
+  than a binomial predicts (`max b = 16` at depth 34, against 34 allowed).
+* **O-6211 / X-6210** — hardness is purely 2-adic: `chi^2/df` from `216` to `5430` at every
+  2-power modulus, `0.1` to `1.7` at every odd modulus tested. Q-6174's barrier in data.
+
+**Two of my own hypotheses were refuted in this pass, both by tests I designed to confirm
+them:**
+
+1. *"Absorption should show as the tree's residue distribution drifting toward `0 mod 3`."*
+   False — the tree is uniform mod 3 to four decimals and the branching is exactly `4/3`; the
+   fixed point checks algebraically. Absorption is real per path, invisible in aggregate.
+2. *"Each descent consumes a 3-adic digit, so mod-`3^k` chains should converge."* The
+   arithmetic fact is true; the inference is false. Tested at `k = 1..9`: the `L1` error is
+   flat at `0.21-0.25` and the mean descent count sits at `~7.4` against a measured `6.71` at
+   every precision. **No residue-based model captures the deficit at any 3-adic precision.**
+
+I also caught a measurement error mid-stream: the first path computation let the tree traverse
+the trivial cycle `2 -> 1`, which alone achieves `b = d/2` and inflated the depth-34 path count
+from `11,878` to `27,168`. All published figures exclude that edge.
+
 ## Third pass: what I would tell the project
 
 The forward direction is now capped in every form I could find a way to test. The one route
