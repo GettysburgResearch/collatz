@@ -265,8 +265,9 @@ $0.0098\ (k{=}24)$, $0.0125\ (k{=}30)$. The data are consistent with a constant-
 gain and give no evidence of an improved exponential decay rate (the sequence
 oscillates with the continued-fraction structure of $\log_2 3$). Including the mod-3
 factor $2/3$, the joint sieve's survivor density is $0.5833, 0.5664, 0.5630, 0.5664,
-0.5138$ times L-9909's at $k = 6, 12, 18, 24, 30$ — i.e. about $0.51$–$0.59$ for
-$k \ge 6$, roughly uniform in $k$.
+0.5138$ times L-9909's at $k = 6, 12, 18, 24, 30$; over all of $6 \le k \le 30$ the
+ratio lies in $[0.5138,\ 0.6316]$ — a roughly $k$-independent constant factor between
+about $1.6$ and $1.9$ of extra sieving power.
 
 ### L-9919.6 (consequences actually derived)
 
@@ -349,10 +350,11 @@ But qualitatively it is the natural quantitative shadow of L-9911.5, and it is
 **subsumed in spirit** by the trivial observation that $\mu$ cannot lie in the forward
 orbit of any smaller integer.
 
-**Is it a real advance? No.** The measured gain is a bounded factor $\approx 1.15$–$1.30$
-on the mod-$2^k$ side and exactly $2/3$ on the mod-$3$ side, with the rate difference
-$\frac1k \log_2(\text{old}/\text{new})$ decaying over the computed range. A search
-program gains a constant factor $\approx 1.8$; nothing asymptotic changes; no bound on
+**Is it a real advance? No.** The measured gain is a bounded factor
+$\approx 1.06$–$1.30$ on the mod-$2^k$ side and exactly $2/3$ on the mod-$3$ side, with
+the rate difference $\frac1k \log_2(\text{old}/\text{new})$ decaying over the computed
+range. A search program gains a constant factor $\approx 1.6$–$1.9$; nothing
+asymptotic changes; no bound on
 $\mu$, on cycle length, or on parity density improves. **This is elegant but adds no
 quantitative advance.** The heuristic reason is worth recording: the augmentation
 imposes "one extra odd step" at a positive density of indices $j$, but the surviving
@@ -413,8 +415,11 @@ $$\mathsf{D}: (P,Q) \mapsto (\tfrac{2P}{3}, \tfrac{2Q}{3}) \quad\text{(class-uni
 | 16 | 2114 | 1855 | **1366** |
 
    Maximum kill threshold over all of these: $159/13 < 13$, so the same discharge
-   argument applies. At $k=16$ the backward-word sieve retains $0.646$ of L-9909's
-   classes ($0.431$ after the mod-$3$ factor). This is still a bounded factor on the
+   argument applies. At $k=16$ the backward-word sieve retains $1366/2114 = 0.6462$ of
+   L-9909's classes. **Caution:** the $3$-adic collapse theorem L-9919.4(5) is proved
+   only for the pure-descent family; it is *not* proved for this extension, so the
+   further factor $2/3$ may **not** be assumed here — the joint density of the
+   extension is not computed in this file. This is still a bounded factor on the
    computed range; whether it improves the exponential rate is **not determined here**
    and is the obvious next question.
 
@@ -1725,7 +1730,7 @@ monotonicity test at $d = m_j$); the L-9909 counts at $k \le 8$ agree with L-990
 All five code blocks above were re-extracted from this Markdown file by a script that
 parses the ```` ```python ```` / ```` ```text ```` pairs, written to fresh files,
 executed, and their stdout compared **byte-for-byte** with the recorded outputs; all
-five matched. Total runtime on the authoring machine: about 38 s. No block is a
+five matched. Total runtime on the authoring machine: about 40 s. No block is a
 placeholder; every number displayed above was produced by the code shown immediately
 above it. (One transcription error — a whitespace shift in Script 4's last line — was
 caught by exactly this check and fixed.)
@@ -1737,9 +1742,14 @@ caught by exactly this check and fixed.)
    forbidden residues mod $3^D$ class by class) and finds the density unchanged. The
    proof of L-9919.4(5) explains why. Attempted counterexample: a class with
    $\nu_3(\delta_j) = a_j$ and $\delta_j \ne 0$ would give a *different* forbidden class
-   mod $3$; PART D searched all classes alive through $k \le 22$ and found $23$
-   branch-(N) instances, **all** of them the degenerate $\delta_j = 0$ (all-ones prefix)
-   case, and **zero** with a forbidden residue other than $u \equiv 0$.
+   mod $3$; PART D searched all classes alive through $k \le 22$ and found exactly $23$
+   branch-(N) instances and **zero** with a forbidden residue other than $u \equiv 0$.
+   ($23$ is forced: each all-ones prefix $1^k$, $0 \le k \le 22$, is alive and has
+   $\delta_k = 0$, hence is a branch-(N) instance; there are exactly $23$ of those, so
+   the count $23$ says **no other** class-$j$ pair reaches branch (N) at all — the
+   $n$-dependent branch is realised only in its most degenerate form, where it merely
+   transports the $j = 0$ condition, since $\delta_j = 0$ gives
+   $D^{d}(T^{j}(n)) = D^{\,d-j}(n)$.)
 2. **Does the augmentation ever wrongly remove a class?** PART B reports "spurious
    extras: []" at every $k \le 8$, i.e. $\text{Aug}(k) \subseteq$ L-9909's list, as the
    theory demands; and Script 3 checks $10^6$ integers against directly computed orbits
