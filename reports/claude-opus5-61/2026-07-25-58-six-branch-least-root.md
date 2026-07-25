@@ -90,10 +90,10 @@ physical Collatz seed exceeds `6 * 2^266 ≈ 7.11 * 10^80`.
 * `X-6110` depends on `lr.c` being correct. Mitigations: an independent arbitrary-precision
   Python implementation agreeing on `m_1..m_6`; a structurally different brute-force scan
   agreeing on `m_1, m_2` and finding nothing below `2^40` at depth 3; forward re-verification
-  of all 15 values; agreement across three different search bounds; a compile-time abort on
+  of all 16 values; agreement across five different search bounds; a compile-time abort on
   limb overflow rather than silent truncation. I consider residual risk low but nonzero.
-* `T-6103(d)`'s converse half uses a soft argument ("bounded orbit with bounded denominator
-  repeats"). It is flagged in the file and nothing depends on it.
+* `T-6103(d)`'s converse half carries an extra hypothesis (fixed-denominator rational
+  orbits). It is flagged in the file and nothing depends on it.
 
 ## Files changed
 
@@ -101,7 +101,7 @@ physical Collatz seed exceeds `6 * 2^266 ≈ 7.11 * 10^80`.
 research/six-branch-ordinary/{README,T-6101,T-6102,T-6103,L-6105,X-6110,C-6111,R-6112,T-6121,M-6120}.md
 experiments/X-6110-six-branch-least-root/{README.md,Makefile,run_all.sh,lr.c,verify.py,
   merge.py,replay.py,crosswalk.py,crosswalk_proof.py,converse.py,ghosts.py,window.py,
-  bf.py,least_root.py,results/}
+  transitions.py,audit_premises.py,bf.py,least_root.py,results/}
 reports/claude-opus5-61/2026-07-25-58-six-branch-least-root.md
 ```
 
