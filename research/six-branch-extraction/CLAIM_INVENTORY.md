@@ -7,7 +7,8 @@ This isolated `74xx` namespace belongs to issue #58. It does not modify any cano
 | `D-7401` | Definition | Six-branch minimal-word extraction system | PROPOSED | elementary arithmetic; branch-qualified physical mapping only |
 | `L-7401` | Lemma | Exact high-quotient section and immediate language exit | PROPOSED | `D-7401` |
 | `T-7401` | Theorem | Affine high-quotient section rigidity | PROPOSED | `D-7401`, `L-7401` |
-| `Q-7401` | Open question | Boundedness versus escape of the least ordinary roots | IDEA / GLOBAL BLOCKER | `D-7401`, `T-7401`, PR #57 `T-7601/T-7603` |
+| `T-7402` | Theorem | No nontrivial finite affine section nucleus | PROPOSED | `D-7401`, `T-7401` alphabet lemma |
+| `Q-7401` | Open question | Boundedness versus escape of the least ordinary roots | IDEA / GLOBAL BLOCKER | `D-7401`, `T-7401`, `T-7402`, PR #57 `T-7601/T-7603` |
 
 ## Logical chain
 
@@ -37,7 +38,12 @@ L-7401:
 
 T-7401:
   every six-state integer-affine self-section
-  is forced to be the original forward map.
+  is forced to be the original forward map;
+
+T-7402:
+  adding any finite affine control nucleus does not help;
+  all normalized section carries vanish,
+  leaving only the same forward map.
 ```
 
-The obvious recursive extraction mechanism is therefore unavailable. The remaining target is ordinary height, not another local encoding.
+The affine recursive extraction mechanism is therefore unavailable at every finite-control size. The remaining target is genuinely nonlinear or infinite-state ordinary height, not another affine encoding.
