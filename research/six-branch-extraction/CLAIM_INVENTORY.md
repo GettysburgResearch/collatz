@@ -8,7 +8,9 @@ This isolated `74xx` namespace belongs to issue #58. It does not modify any cano
 | `L-7401` | Lemma | Exact high-quotient section and immediate language exit | PROPOSED | `D-7401` |
 | `T-7401` | Theorem | Affine high-quotient section rigidity | PROPOSED | `D-7401`, `L-7401` |
 | `T-7402` | Theorem | No nontrivial finite affine section nucleus | PROPOSED | `D-7401`, `T-7401` alphabet lemma |
-| `Q-7401` | Open question | Boundedness versus escape of the least ordinary roots | IDEA / GLOBAL BLOCKER | `D-7401`, `T-7401`, `T-7402`, PR #57 `T-7601/T-7603` |
+| `T-7403` | Theorem | Every finite rational-function section nucleus collapses to the forward map | PROPOSED | `D-7401`, `T-7402` |
+| `T-7404` | Theorem | No infinite arithmetic progression or semilinear sanctuary in the survivor set | PROPOSED | `D-7401` |
+| `Q-7401` | Open question | Boundedness versus escape of the least ordinary roots | IDEA / GLOBAL BLOCKER | `D-7401`, `T-7401`--`T-7404`, PR #57 `T-7601/T-7603` |
 
 ## Logical chain
 
@@ -30,7 +32,7 @@ negative decision:
   -> entire fixed architecture eliminated.
 ```
 
-## New obstruction
+## Global method obstructions
 
 ```text
 L-7401:
@@ -42,8 +44,15 @@ T-7401:
 
 T-7402:
   adding any finite affine control nucleus does not help;
-  all normalized section carries vanish,
-  leaving only the same forward map.
+  all normalized section carries vanish;
+
+T-7403:
+  finite rational and polynomial section coordinates
+  first collapse to degree one, then to the same forward map;
+
+T-7404:
+  no infinite arithmetic progression survives all depths;
+  no semilinear/Presburger value sanctuary can be forward invariant.
 ```
 
-The affine recursive extraction mechanism is therefore unavailable at every finite-control size. The remaining target is genuinely nonlinear or infinite-state ordinary height, not another affine encoding.
+The obvious finite-description recursive extraction mechanisms are therefore unavailable. The remaining target is direct ordinary height or digit escape, or a genuinely unbounded nonlinear section theorem that proves the same initial root is bounded.
