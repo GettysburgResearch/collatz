@@ -15,8 +15,16 @@ Last updated:  2026-07-25 (fable-02-v18 independent adversarial review; status
                2026-07-25 (fable-02-p8 addendum: raised-floor corollaries
                L-9913.12 and L-9913.13 for F = 10^11 and F = 10^12 using the
                new floor X-9903, both marked PROPOSED inside this PROVED file;
-               two rows added to the L-9913.9 table; Tests 15-21 appended. No
+               rows added to the L-9913.9 table; Tests 15-22 appended. No
                earlier statement, proof or the verification note was altered.)
+               2026-07-25 (fable-02-p8, second addendum after X-9903's review by
+               fable-02-v19: m*(10^10) = 190537 computed and certified, a
+               three-tier "verification tiers" table added distinguishing the
+               most-verified bound m >= 190537 from the strongest bound
+               m >= 10781274, the F = 10^10 row added, and the X-9903 status
+               wording updated everywhere from "unreviewed" to "reviewed,
+               double-implemented only up to 10^10". Still PROPOSED; nothing
+               earlier altered.)
 Dependencies:  research/foundations/NOTATION.md (D-9901, D-9902, D-9903, D-9904,
                  D-9905, D-9908, D-9909; empty-sum conventions).
                L-9905 (Status: PROVED, fable-02-v4) — LOAD-BEARING: L-9905.2
@@ -39,10 +47,15 @@ Dependencies:  research/foundations/NOTATION.md (D-9901, D-9902, D-9903, D-9904,
                  fact needed here ("cycle elements are counterexamples") is
                  proved inline in L-9913.1, so no status is inherited.
                X-9903 (experiment packet experiments/X-9903-verified-floor/,
-                 agent fable-02-p10; NOT yet independently reviewed) — used
-                 ONLY as the floor hypothesis (V_F) of the addendum
-                 L-9913.12/.13, which are labelled PROPOSED for exactly that
-                 reason. Nothing in L-9913.1-.11 depends on it.
+                 agent fable-02-p10; independently reviewed by fable-02-v19,
+                 2026-07-25: PASS. Tier caveat recorded by that review and
+                 carried here: n <= 10^10 was re-swept contiguously by an
+                 independent implementation sharing no code, while
+                 (10^10, 10^12] rests on the single original run plus 22M
+                 random spot-checks) — used ONLY as the floor hypothesis (V_F)
+                 of the addendum L-9913.12/.13, which stay PROPOSED pending
+                 review of the addendum itself. Nothing in L-9913.1-.11
+                 depends on it.
 Scope:         All S-cycles on the positive odd integers (D-9908). Everything is
                stated for an arbitrary integer floor F >= 2 such that every
                n <= F reaches 1 under C; the Main Theorem instantiates F = 10^6
@@ -203,8 +216,9 @@ $K^*(F) := \lceil m^*(F)\,\alpha\rceil$:
 | $10^7$ | verified in this file (X-9913, PROPOSED) | $10946$ | $17349$ | $28295$ |
 | $10^8$ | verified in this file (X-9913, PROPOSED) | $15601$ | $24727$ | $40328$ |
 | $10^9$ | verified in this file (X-9913, PROPOSED) | $47468$ | $75235$ | $122703$ |
-| $10^{11}$ | verified by X-9903 (checkpoint; experiment packet, unreviewed) | $190537$ | $301994$ | $492531$ |
-| $10^{12}$ | verified by X-9903 (experiment packet, unreviewed) | $10\,781\,274$ | $17\,087\,915$ | $27\,869\,189$ |
+| $10^{10}$ | verified by X-9903, **double-implemented**, reviewed (fable-02-v19) — tier (a) | $190537$ | $301994$ | $492531$ |
+| $10^{11}$ | verified by X-9903 (checkpoint), reviewed; single-implementation above $10^{10}$ | $190537$ | $301994$ | $492531$ |
+| $10^{12}$ | verified by X-9903, reviewed; single-implementation above $10^{10}$ — tier (b) | $10\,781\,274$ | $17\,087\,915$ | $27\,869\,189$ |
 | $2^{68}$ | **not verified anywhere in this repository** — HYPOTHETICAL, literature-scale | $8\,961\,554\,427 \le m^* \le 72\,057\,431\,991$ | — | — |
 
 *(The $10^{11}$ and $10^{12}$ rows were added in the 2026-07-25 addendum; they are
@@ -255,17 +269,20 @@ verified by exhaustive enumeration of **all** $m \le 3000$.)
 
 ---
 
-### Addendum of 2026-07-25 — the raised floor $F = 10^{12}$
+### Addendum of 2026-07-25 — the raised floor $F = 10^{12}$, and verification tiers
 
 > **Status of this addendum.** L-9913.1–.11 and the Main Theorem $m \ge 2966$ are
 > **PROVED** (reviewed by fable-02-v18) and are **unchanged**. The two sub-claims
 > below are **PROPOSED**: their arithmetic is certified to exactly the same
-> standard as the rest of the file (Tests 15–21, exhaustive and exact), but the
-> *floor* they consume comes from the experiment packet X-9903, which has **not**
-> yet been independently reviewed. They therefore do **not** stand on the same
-> footing as the $F = 10^6$ Main Theorem, whose floor X-9901 has been reviewed
-> (and re-derived independently in this file's X-9913). Nothing below modifies any
-> earlier statement; a reader who rejects X-9903 keeps everything above intact.
+> standard as the rest of the file (Tests 15–22, exhaustive and exact), but they
+> consume a *floor* — X-9903 — that arrived after this file was reviewed, and the
+> addendum itself has not yet been reviewed. X-9903 has since passed independent
+> adversarial review (fable-02-v19, 2026-07-25), with one distinction that this
+> file now carries explicitly: the range $n \le 10^{10}$ was re-swept by a second,
+> independent implementation, whereas $(10^{10}, 10^{12}]$ was not. See the
+> **verification tiers** table below, which separates the *most-verified* bound
+> from the *strongest* bound. Nothing below modifies any earlier statement; a
+> reader who rejects X-9903 keeps everything above intact.
 
 **L-9913.12 (raised-floor corollary; PROPOSED).** Suppose $\mathrm{(V}_{10^{12}})$
 holds — every $n \le 10^{12}$ reaches $1$ under $C$ — as certified by the
@@ -287,6 +304,11 @@ a separately certified checkpoint at $\mathrm{(V}_{10^{11}})$. Then:
    $190537 = q_{13}$ (with $301994 = p_{13}$) and $10781274 = q_{15}$ (with
    $17087915 = p_{15}$) — in contrast with $F = 10^6$, where the minimiser $2966$
    is a semiconvergent.
+5. *(Added after X-9903's review.)* $m^*(10^{10}) = 190537$ likewise, with
+   $K^* = 301994$ — the same value as $m^*(10^{11})$, because both floors lie in
+   the single plateau $(7.2176\cdot 10^{9},\ 9.8478\cdot 10^{11}]$ of the remark
+   below. This is the bound of **tier (a)**: the strongest one whose floor has
+   been computed twice by independent implementations.
 
 *Remark (plateau — how much further verification is worth).* Admissibility of a
 fixed $m$ is monotone in $F$: $\mathrm{Adm}_F(m) \iff F \le F_{\max}(m) :=
@@ -353,6 +375,56 @@ optimisation levels and five sieve moduli, and an independent byte-for-byte
 reproduction of L-9909's survivor tables mod $2 \dots 256$. **This file does not
 re-verify any of that**; it records it as the provenance of a hypothesis, and
 labels the corollary PROPOSED accordingly.
+
+*Review outcome and verification tiers (added 2026-07-25).* X-9903 has since been
+independently reviewed — **fable-02-v19, PASS**: all six of its lemmas re-derived
+by hand, the overflow guard audited as unbypassable with the refusal predicate
+confirmed exactly right, sieve soundness checked exhaustively to $10^8$,
+order-independence confirmed sound, and L-9909's survivor lists re-derived *from
+the lemmas* rather than compared against hard-coded values. That review also
+recorded a distinction which this file now carries, because it changes which
+bound rests on what:
+
+* $n \le 10^{10}$ is **double-implemented**: re-swept contiguously by a second
+  implementation sharing no code with the first (raw $C$ map, unconditional
+  `unsigned __int128`, no sieve, no memoisation), agreeing on every extreme,
+  argmax and checksum;
+* $(10^{10},\, 10^{12}]$ was **not re-swept**: it rests on the single original
+  $877$ s run plus $22$M random spot-checks, with the *mathematics* of the
+  accelerations independently re-derived.
+
+Accordingly, $m^*(10^{10}) = 190537$ was computed by the same certified method
+(Test 22; winner $m = 190537$, $K = 301994$, closest failure $m = 79335$,
+$K = 125743$; certificates below), and the file's bounds split into three tiers:
+
+| tier | bound | floor | standing of the floor |
+|---|---|---|---|
+| **(a) most-verified** | $m \ge 190\,537$, $K \ge 301\,994$, $C$-length $\ge 492\,531$ | $F = 10^{10}$ | X-9903 **double-implemented** (two independent sweeps, no shared code) **and** independently reviewed (fable-02-v19) |
+| **(b) strongest** | $m \ge 10\,781\,274$, $K \ge 17\,087\,915$, $C$-length $\ge 27\,869\,189$ | $F = 10^{12}$ | X-9903 single-implementation above $10^{10}$ (+22M spot-checks), with its mathematics independently re-derived and reviewed |
+| **(c) hypothetical** | $8\,961\,554\,427 \le m^*(2^{68}) \le 72\,057\,431\,991$ | $F = 2^{68}$ | **not verified anywhere in this repository** — PARTIAL, unchanged |
+
+(For completeness the reviewed-floor tier of the *Main Theorem* sits below all
+three: $m \ge 2966$ at $F = 10^6$, whose floor X-9901 is reviewed and was
+re-derived in this file's X-9913.)
+
+**Planning consequence (the most useful single fact here).** By the certified
+plateau below, $m^*(F)$ is *constant* at $10\,781\,274$ for every $F$ in
+$(9.8478\cdot 10^{11},\ 2.9446\cdot 10^{14}]$. Therefore a second independent
+sweep of $(10^{10}, 10^{12}]$ would **confirm** tier (b) — promoting it to
+double-implemented — but could never **improve** it; and *improving the bound at
+all* requires pushing the verified floor past $2.9446\cdot 10^{14}$, a
+$\approx 300\times$ jump beyond the current $10^{12}$. Verification effort should
+therefore be spent either on hardening $(10^{10}, 10^{12}]$ (which buys standing,
+not numbers) or on a $\ge 3\cdot 10^{14}$ sweep (which buys numbers); anything in
+between buys neither.
+
+*Certificates for tier (a)* ($F = 10^{10}$, $\varepsilon_0 = 1/20\,790\,000\,000$;
+notation as above, $N = 158496250072115618145$):
+
+| | $r$ | integer certificate |
+|---|---|---|
+| **winner** $m = 190537$, $K = 301994$ | $\frac{6278455259809463}{3961264230000000}$ | $N \cdot 3961264230000000 = 627845525999806518582127453350000000 \;\ge\; 627845525980946300000000000000000000 = 6278455259809463 \cdot 10^{20}$ |
+| **closest failure** $m = 79335$, $K = 125743$ | $\frac{58093265998237}{36652770000000}$ | $(N{+}1)\cdot 36652770000000 = 5809326599755737165313164420000000 \;\le\; 5809326599823700000000000000000000 = 58093265998237\cdot 10^{20}$ |
 
 **L-9913.13 (does the convergent strengthening now buy anything? — No; PROPOSED).**
 For a floor $F$ define the **Legendre window**
@@ -904,7 +976,13 @@ written with $F$ free.
 5. **Item 4 of the Statement** ($m^*$ equals $q_{13}$, resp. $q_{15}$) is an
    observation, verified in Test 17 by recomputing the convergents of $\alpha$ from
    the same certified enclosure; it is used only in L-9913.13(4) and in the
-   Suggested next attack. $\blacksquare$
+   Suggested next attack.
+6. **Item 5** ($m^*(10^{10}) = 190537$) is the same exhaustive computation once
+   more, at $\varepsilon_0(10^{10}) = 1/20\,790\,000\,000$: every $m \le 190537$ is
+   decided, all below fail, $190537$ succeeds (Test 22, with both extreme
+   certificates displayed in the Statement). It is *not* an inference from the
+   plateau table — the plateau merely explains why it coincides with
+   $m^*(10^{11})$. $\blacksquare$
 
 ### Proof of L-9913.13 (the Legendre window is vacuous at $F = 10^{12}$)
 
@@ -979,7 +1057,7 @@ magnitude short of what (1) would need. The loop does not close. $\blacksquare$
 | Lemma B (proved inline) | — | irrationality; $3^b$ vs $2^a$ comparison; the two certificates | yes |
 | Standard calculus: FTC, monotonicity of $t\mapsto 2^t$, geometric identity | — | Lemmas A, B | yes |
 | X-9913 (this file, finite verification) | PROPOSED | L-9913.10 **only** | separated from the Main Theorem |
-| **X-9903** (every $n \le 10^{12}$ reaches 1; experiment packet, agent fable-02-p10) | **unreviewed experiment** | L-9913.12, L-9913.13 **only** | separated from the Main Theorem; those two sub-claims are labelled PROPOSED for this reason |
+| **X-9903** (every $n \le 10^{12}$ reaches 1; experiment packet, agent fable-02-p10) | reviewed: fable-02-v19 PASS — but **double-computed only up to $10^{10}$** | L-9913.12, L-9913.13 **only** ($10^{12}$ for tier (b), $10^{10}$ for tier (a)) | separated from the Main Theorem; both sub-claims stay PROPOSED, and the tier table records which floor carries which bound |
 | L-9910.1 + L-9910.3 (Legendre; consecutive convergents $q_{13}, q_{14}$) | PROVED | L-9913.13(1),(4) | **no** (L-9913.13's verdict is "no gain") |
 
 **Circularity check.** L-9905 and L-9909 do not cite L-9913 (L-9905 forward-refers
@@ -1506,7 +1584,7 @@ L-9909's agree on the overlapping range; it is **not** a re-verification of
 X-9901 by an independent implementation of a different algorithm, and is not
 treated as one.
 
-### Tests 15–21 — the raised floor (addendum of 2026-07-25)
+### Tests 15–22 — the raised floor (addendum of 2026-07-25)
 
 **Finite verification, not proof.** Same discipline as above: exact `int` /
 `Fraction` arithmetic, no floating point in any decision. Script kept at
@@ -1545,7 +1623,7 @@ Design notes.
 ```python
 #!/usr/bin/env python3
 """
-Adversarial tests for the raised-floor addendum of L-9913 (Tests 15-21):
+Adversarial tests for the raised-floor addendum of L-9913 (Tests 15-22):
 m*(10^11), m*(10^12), and the Legendre-window question.
 Agent: fable-02-p8.  Date: 2026-07-25.
 FINITE VERIFICATION ONLY -- not a proof.
@@ -1784,6 +1862,33 @@ for m, K in recs[-5:]:
 print("   => m*(F) = 47468 on (2.8588e8, 1.4480e9], 79335 on (1.4480e9, 7.2176e9],"
       " 190537 on (7.2176e9, 9.8478e11], 10781274 on (9.8478e11, 2.9446e14].")
 
+# ============================================================ Test 22
+# Verification tier (a): the doubly-computed floor F = 10^10 (the part of X-9903
+# that fable-02-v19 re-swept contiguously with an independent implementation).
+m10, K10, (mf10, Kf10, marg10) = scan(10**10, 200000)
+check("T22: m*(10^10) = 190537", (m10, K10, mf10) == (190537, 301994, 79335))
+check("T22: gcd = 1", gcd(K10, m10) == 1)
+print(f"Test 22: F = 10^10: exhaustive over m = 1..{m10}: m* = {m10}, K* = {K10}, "
+      f"K*+m* = {K10+m10}; closest failure m = {mf10} (K = {Kf10}), margin "
+      f"f(m)/m - eps0 >= {float(marg10):.4e}")
+for m, K, kind in ((m10, K10, "winner"), (mf10, Kf10, "closest failure")):
+    e0 = eps0(10**10); P, Q = e0.numerator, e0.denominator
+    num, den = K*Q - P*m, m*Q
+    g = gcd(num, den); num //= g; den //= g
+    if kind == "winner":
+        ok = N*den >= num*D
+        print(f"   winner m={m}, K={K}: r = {num}/{den};  N*den = {N*den} >= "
+              f"{num*D} = r_num*10^20 : {ok}")
+    else:
+        ok = (N+1)*den <= num*D
+        print(f"   closest failure m={m}, K={K}: r = {num}/{den};  (N+1)*den = "
+              f"{(N+1)*den} <= {num*D} = r_num*10^20 : {ok}")
+    check(f"T22 cert {kind}", ok)
+print(f"   tier (a) [floor double-implemented, reviewed]: m >= {m10}, K >= {K10}, "
+      f"C-length >= {K10+m10};  tier (b) [floor single-implementation, "
+      f"mathematics reviewed]: m >= 10781274.  Both floors lie inside the same "
+      f"certified plateau boundary structure of Test 21.")
+
 print("RESULT:", "ALL CHECKS PASSED" if fails == 0 else f"{fails} FAILURES")
 ```
 
@@ -1793,9 +1898,9 @@ print("RESULT:", "ALL CHECKS PASSED" if fails == 0 else f"{fails} FAILURES")
 Test 15: certified decimal enclosure (Lemma A, n = 80 terms):
          158496250072115618145/10^20 < alpha < 158496250072115618146/10^20   (width 10^-20)
          Lemma B(iii) enclosure width U0-L0 = 4.720e-11 is too coarse for these floors (smallest margin below is 7.4e-15), so the decimal enclosure is used; both are certified, and L0 < 158496250072115618145/10^20 < 158496250072115618146/10^20 < U0 holds: True
-Test 16: F = 10^11: exhaustive over m = 1..190537: m* = 190537, K* = 301994, K*+m* = 492531; closest failure m = 79335 (K = 125743), margin f(m)/m - eps0 >= 6.1832e-11   [0.1s]
-Test 16: F = 10^12: exhaustive over m = 1..10781274: m* = 10781274, K* = 17087915, K*+m* = 27869189; closest failure m = 190537 (K = 301994), margin f(m)/m - eps0 >= 7.4330e-15   [5.6s]
-Test 17: additive scan (scale 2^100, 55-term series) reproduces m*(10^11) = 190537 and m*(10^12) = 10781274   [3.8s]
+Test 16: F = 10^11: exhaustive over m = 1..190537: m* = 190537, K* = 301994, K*+m* = 492531; closest failure m = 79335 (K = 125743), margin f(m)/m - eps0 >= 6.1832e-11   [0.2s]
+Test 16: F = 10^12: exhaustive over m = 1..10781274: m* = 10781274, K* = 17087915, K*+m* = 27869189; closest failure m = 190537 (K = 301994), margin f(m)/m - eps0 >= 7.4330e-15   [7.7s]
+Test 17: additive scan (scale 2^100, 55-term series) reproduces m*(10^11) = 190537 and m*(10^12) = 10781274   [5.1s]
 Test 17: both minimisers are odd-index (above-alpha) convergents of alpha: p13/q13 = 301994/190537 and p15/q15 = 17087915/10781274; the next odd-index denominator is q17 = 171928773.
 Test 18: Legendre-applicable window vs the direct bound:
    F = 10^9  : q <=    32241  (certificate 32241^2 = 1039482081 <= 1039500000 = (2079/2000)F);  direct bound q >=    47468  ->  VACUOUS (window entirely below the direct bound): no gain
@@ -1815,13 +1920,17 @@ Test 20: plateau endpoints F_max(m) = 1000 m / (2079 f(m)):
    m =    190537: F_max in [9.8478191629e+11, 9.8478191629e+11]
    m =  10781274: F_max in [2.9446434989e+14, 2.9446434989e+14]
    => m*(F) = 10781274 for every F in (F_max(190537), F_max(10781274)] ~ (9.8478e11, 2.9446e14]; the floor 10^12 clears the lower end by 1.55% and further verification changes nothing until F > 2.9446e14.
-Test 21: exhaustive over m = 1..10781274: 38 jump points of m*(.); the last five (with F_max = 1000 m / (2079 f(m))) are  [4.0s]
+Test 21: exhaustive over m = 1..10781274: 38 jump points of m*(.); the last five (with F_max = 1000 m / (2079 f(m))) are  [5.1s]
    m =     15601, K =     24727: F_max in [2.8587828883e+08, 2.8587828883e+08]
    m =     47468, K =     75235: F_max in [1.4479896944e+09, 1.4479896944e+09]
    m =     79335, K =    125743: F_max in [7.2176350614e+09, 7.2176350614e+09]
    m =    190537, K =    301994: F_max in [9.8478191629e+11, 9.8478191629e+11]
    m =  10781274, K =  17087915: F_max in [2.9446434989e+14, 2.9446434989e+14]
    => m*(F) = 47468 on (2.8588e8, 1.4480e9], 79335 on (1.4480e9, 7.2176e9], 190537 on (7.2176e9, 9.8478e11], 10781274 on (9.8478e11, 2.9446e14].
+Test 22: F = 10^10: exhaustive over m = 1..190537: m* = 190537, K* = 301994, K*+m* = 492531; closest failure m = 79335 (K = 125743), margin f(m)/m - eps0 >= 1.8542e-11
+   winner m=190537, K=301994: r = 6278455259809463/3961264230000000;  N*den = 627845525999806518582127453350000000 >= 627845525980946300000000000000000000 = r_num*10^20 : True
+   closest failure m=79335, K=125743: r = 58093265998237/36652770000000;  (N+1)*den = 5809326599755737165313164420000000 <= 5809326599823700000000000000000000 = r_num*10^20 : True
+   tier (a) [floor double-implemented, reviewed]: m >= 190537, K >= 301994, C-length >= 492531;  tier (b) [floor single-implementation, mathematics reviewed]: m >= 10781274.  Both floors lie inside the same certified plateau boundary structure of Test 21.
 RESULT: ALL CHECKS PASSED
 ```
 
@@ -1868,19 +1977,21 @@ RESULT: ALL CHECKS PASSED
    the literature, no assertion that $2966$ is anywhere near optimal — the true
    obstruction is expected to be far larger. This file's contribution is that
    $2966$ is *fully certified inside this repository*, end to end.
-7. **(Addendum.) The $m \ge 10\,781\,274$ headline rests on an unreviewed
-   experiment.** L-9913.12/.13 consume X-9903's $\mathrm{(V}_{10^{12}})$. Its
-   recorded provenance is strong on its face — in particular an overflow-*refusing*
-   kernel, which matters here: the maximum excursion over the range is
+7. **(Addendum.) The $m \ge 10\,781\,274$ headline rests on a reviewed but
+   singly-computed floor.** L-9913.12/.13 consume X-9903's
+   $\mathrm{(V}_{10^{12}})$, which has passed independent review (fable-02-v19)
+   — its overflow-*refusing* kernel matters here: the maximum excursion is
    $4.0\cdot10^{23}$ at $n = 871\,673\,828\,443$, i.e. $21\,714\times$ above
-   $2^{64}$, so a wrapping $64$-bit kernel would have been silently wrong; plus
-   digest-identical runs across three optimisation levels and five sieve moduli,
-   and a checksum gate on $n \le 10^6$ agreeing with X-9901. **But this file
-   re-verified none of it.** A reviewer who wants the $10\,781\,274$ headline must
-   review X-9903 itself; the arithmetic on this side is exhaustive and certified
-   (Tests 15–21). The ladder of standing is: $m \ge 2966$ (floor reviewed, this
-   file PROVED) $\;\to\; m \ge 47468$ (floor = this file's X-9913, unreviewed)
-   $\;\to\; m \ge 10\,781\,274$ (floor = X-9903, unreviewed).
+   $2^{64}$, so a wrapping $64$-bit kernel would have been silently wrong. **But
+   only $n \le 10^{10}$ was swept twice**; $(10^{10}, 10^{12}]$ has one
+   implementation plus $22$M spot-checks. Hence the tier split: $m \ge 190\,537$
+   is the strongest bound resting on a double-implemented floor, $m \ge
+   10\,781\,274$ the strongest resting on a reviewed one. This file re-verified
+   none of X-9903 itself; the arithmetic on *this* side is exhaustive and
+   certified (Tests 15–22). Full ladder of standing: $m \ge 2966$ (floor X-9901,
+   reviewed; this file PROVED) $\;\to\; m \ge 47468$ (floor = this file's X-9913,
+   unreviewed) $\;\to\; m \ge 190\,537$ (floor double-implemented + reviewed)
+   $\;\to\; m \ge 10\,781\,274$ (floor reviewed, single-implementation).
 8. **(Addendum.) $m^*(10^{12})$ sits on a knife edge that $m^*(10^6)$ did not.**
    The closest failure, $m = 190537$, misses admissibility by only
    $7.433\cdot 10^{-15}$ in $\alpha$-units, i.e. by a relative $1.55\%$ of
@@ -1941,10 +2052,12 @@ RESULT: ALL CHECKS PASSED
    admissible values just above it — a divisibility/composition argument at
    $m \approx 10^{7}$, far beyond L-9915's enumeration range, so probably only
    reachable by a structural (2-adic or exponent-statistics) route.
-7. **(Addendum.) Review X-9903.** The cheapest way to make the strongest statement
-   in this file *stand* is not more mathematics but an independent review of the
-   floor experiment — ideally a re-run with a different kernel (different sieve
-   modulus and a different overflow strategy) reproducing its digests.
+7. **(Addendum, updated.) Harden $(10^{10}, 10^{12}]$ — for standing, not for
+   numbers.** X-9903 is now reviewed (fable-02-v19) and doubly computed up to
+   $10^{10}$. A second independent sweep of the remaining decade-and-a-half would
+   promote tier (b) to double-implemented; by the plateau it cannot change
+   $10\,781\,274$. Whoever runs it should use a third kernel design (different
+   sieve modulus, different overflow strategy) and compare digests, not code.
 
 ---
 *File authored by fable-02-p8, 2026-07-25. Status PROPOSED per NOTATION.md
