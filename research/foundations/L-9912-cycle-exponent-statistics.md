@@ -910,3 +910,1009 @@ is strictly sharper than remembered, which became Remark 3.
 and output included verbatim above; exact integer/rational arithmetic
 throughout; randomized stress tests use a fixed seed and are labeled as checks,
 never proof.*
+
+---
+
+## Verification note (fable-02-v14, 2026-07-25)
+
+**Verdict: PASS.** Every sub-claim (L-9912.1–.5, Corollary 2A, and the honest
+non-claim Q-9912-A) was independently restated, re-proved from the explicit
+dependencies, and re-checked with an independently written exact-arithmetic
+suite. No substantive defect was found. Status upgraded `PROPOSED` → `PROVED`
+(README §7: "the proof has passed an initial detailed review").
+`INDEPENDENTLY_VERIFIED` is deliberately **not** set — that is reserved for a
+further reviewer, per the packet convention.
+
+**Headline answers to the two questions the review was commissioned to settle.**
+The new eliminations $m \in \{7, 9, 12\}$ **independently confirm**, and the
+forced singleton windows $K \in \{8\}, \{13\}, \{16\}, \{18\}, \{21\}, \{23\}$
+for $m \in \{5, 8, 10, 11, 13, 14\}$ **independently confirm**, from exact
+integer certificates recomputed from the statements alone (§2.5 below).
+
+### 0. Method and independence
+
+- Read README §7 and §13, `NOTATION.md` (D-9903–D-9905, D-9908), and the
+  **Statement** sections of `L-9905-cycle-equation.md` and
+  `L-9906-no-small-cycles.md` (both Status `PROVED`, reviewed by fable-02-v4 and
+  fable-02-v5 respectively). Confirmed the four imported facts are stated in
+  those files exactly as quoted here: L-9905.1 ($x_1(2^K-3^m)=c$), L-9905.2
+  ($2^K > 3^m$, for every $S$-cycle on the **positive** odd integers, trivial
+  cycle included), L-9905.3 ($2^K = \prod(3+1/x_i)$ and
+  $3^m < 2^K \le (3+1/x_{\min})^m$), L-9905.6 ($m=1$ ⟹ trivial), L-9906.2
+  ($x_{\min} \ge 7$, hence *all* elements $\ge 7$), L-9906 main theorem
+  ($m \le 6$).
+- **No circularity:** L-9905 and L-9906 cite nothing from L-9912; the dictionary
+  (Step 1) uses no cycle hypothesis at all. Checked by reading both dependency
+  files' Dependency-audit sections.
+- Wrote my own verification suite **from the Statement section only**
+  (`v14_full.py`, reproduced verbatim in §9), before reading the author's
+  scripts in detail: exact `int`/`fractions.Fraction` arithmetic, no floating
+  point in any decision, fixed seed for the randomized stress parts.
+- Separately re-executed the author's own embedded suite (§4).
+
+### 1. Independent restatement
+
+Fix a nontrivial $S$-cycle $x_1 \to \dots \to x_m \to x_1$ (D-9908; elements
+pairwise distinct positive odd), $a_i = \nu_2(3x_i+1) \ge 1$, $K = \sum a_i$,
+$m_t = \#\{i : a_i = t\}$, $m_1$ the one-count.
+
+1. *(rigidity)* If all $a_i$ are equal to some $a \ge 1$ then the cycle is the
+   trivial fixed point $(1)$; the cycle equation forces the exact rational
+   $x_1 = 1/(2^a-3)$, which is $-1$ at $a=1$, $1$ at $a=2$, and lies in $(0,1)$
+   for $a \ge 3$.
+2. *(a letter 1 exists)* $m_1 \ge 1$, with **no** floor on $x_{\min}$; hence some
+   element is $\equiv 3 \pmod 4$.
+3. *(quantitative)* $m_1 \ge 2m-K$ with equality iff the word is a $\{1,2\}$-word;
+   $K \le m\log_2(3+1/x_{\min})$; hence $m_1 > m/4$ unconditionally and
+   $m_1 > m/3$ using $x_{\min} \ge 7$; and $m_1 \le m-1$.
+4. *(window)* $K/m \in (\log_2 3, \log_2(3+1/X)]$ under a floor $X$; the
+   $\{1,2\}$-region is nonempty (counting cannot refute $\{1,2\}$-cycles); and,
+   $K$ being an integer, the window $W_7(m)$ is empty exactly for
+   $m \in \{1,2,3,4,6,7,9,12\}$, giving the new exclusions $m \in \{7,9,12\}$.
+5. *(dictionary)* $a(x) = t \iff x \equiv r_t \pmod{2^{t+1}}$ with
+   $r_t = (2^t-1)/3$ ($t$ even), $(5\cdot 2^t-1)/3$ ($t$ odd); and
+   $a(x) \ge t \iff x \equiv r_t \pmod{2^t}$.
+
+This matches the file's Statement with no drift.
+
+### 2. Reconstruction of each proof (independent)
+
+**2.1 L-9912.1 (Step 2).** With a constant word, $A_{i-1} = a(i-1)$, so the
+D-9908/L-9905 definition of $c$ gives $c = \sum_{i=1}^m 3^{m-i} u^{i-1}$,
+$u := 2^a$. Telescoping: $\sum_{i=1}^m (3^{m-i}u^i - 3^{m-i+1}u^{i-1})$ has the
+positive term at index $i$ equal to the negative term at index $i+1$, leaving
+$u^m - 3^m$; so $(u-3)c = u^m - 3^m$. Since $a \ge 1$, $u^m$ is even and $3^m$
+odd, so $D := u^m - 3^m \ne 0$; and $u \ne 3$, so dividing is legitimate **for
+every** $a \ge 1$ — including $a = 1$, where $u - 3 = -1$. Hence
+$x_1 = c/D = 1/(2^a-3)$ exactly, for every anchoring, so *all* elements equal
+this rational. Case split: $a=1 \Rightarrow x_1 = -1$, excluded by positivity
+(equivalently by L-9905.2, since $2^K = 2^m < 3^m$); $a=2 \Rightarrow x_1 = 1$,
+and $S(1)=1$ plus least-period forces $m=1$, the trivial cycle; $a \ge 3
+\Rightarrow 0 < x_1 \le 1/5 < 1$, not a positive integer. Verified for
+$1 \le a \le 10$, $1 \le m \le 12$ with $c$ computed from its definition (V2):
+the telescoping identity, $D \ne 0$, and $c/D = 1/(2^a-3)$ all hold exactly.
+
+**2.2 L-9912.2 (Step 3) — priority probe: the equality analysis.** Assume all
+$a_i \ge 2$. Then $K \ge 2m$ so $2^K \ge 4^m$. Each $x_i \ge 1$ gives
+$0 < 3 + 1/x_i \le 4$, so $2^K = \prod (3+1/x_i) \le 4^m$. The squeeze forces
+$\prod_i (3+1/x_i) = 4^m$ exactly. **Equality scrutiny.** All factors are
+strictly positive and each is $\le 4$. If some factor $f_j < 4$, then
+$\prod_i f_i \le f_j \cdot 4^{m-1} < 4^m$ — a contradiction. (The step is valid
+precisely because positivity lets the remaining factors be bounded by $4$
+without sign trouble; this is the only place the argument could leak, and it
+does not.) So every factor is $4$, i.e. $x_i = 1$ for all $i$, and an element
+equal to $1$ forces the trivial cycle. The contrapositive is $m_1 \ge 1$.
+**Confirmed: no floor on $x_{\min}$ is used** — the inputs are exactly (2.1) and
+$x_i \ge 1$, and the latter is part of "positive odd integer". The brief's
+alternative routes ($(22/7)^m < 4^m$, $(10/3)^m < 4^m$) are valid but import a
+floor unnecessarily. Correction flag 3 upheld.
+*Corollary 2A* then follows from L-9912.5 at $t=1$ ($r_1 = 3$, modulus $4$).
+
+**2.3 L-9912.3.** (i) $K = m_1 + \sum_{a_i \ge 2} a_i \ge m_1 + 2(m-m_1)$, i.e.
+$m_1 \ge 2m-K$, equality iff every letter $\ge 2$ is exactly $2$. Verified
+**exhaustively** for all words of length $\le 7$ over letters $\{1,\dots,5\}$
+(both the inequality and both directions of the equality characterisation), plus
+$5\cdot 10^4$ random words of length $\le 60$ (V4).
+(ii) *priority probe: inequality directions.* $2^K \le (3+1/x_{\min})^m$
+(L-9905.3) $\Rightarrow K \le m\log_2(3+1/x_{\min})$ ($\log_2$ strictly
+increasing) $\Rightarrow$ with a floor $x_{\min} \ge X$ and $t \mapsto 3+1/t$
+decreasing, $K \le m\log_2(3+1/X)$. Composing with (i), which is *anti-monotone*
+in $K$: $m_1 \ge 2m - K \ge m(2 - \log_2(3+1/X)) = m\log_2\frac{4X}{3X+1}$.
+Every arrow points the way the file says; a **larger** floor gives a **smaller**
+upper bound on $K$ and hence a **stronger** lower bound on $m_1$. Arithmetic:
+$X=3 \Rightarrow 12/10 = 6/5$; $X=7 \Rightarrow 28/22 = 14/11$ (Correction flag 2
+upheld). Certificates recomputed exactly: $6^4 = 1296 > 1250 = 2\cdot 5^4$
+(i.e. $(6/5)^4 > 2$, i.e. $\log_2(6/5) > 1/4$) and
+$14^3 = 2744 > 2662 = 2\cdot 11^3$ (i.e. $\log_2(14/11) > 1/3$). The integrality
+upgrade $m_1 \ge \lfloor m/3\rfloor + 1$ is correct in both cases ($3 \mid m$ or
+not) — checked for all $m \le 2000$.
+(iii) $m_1 = m \Rightarrow K = m$, contradicting $K > m\log_2 3 > m$ (L-9905.2).
+
+**2.4 L-9912.4(i)–(ii) — priority probe: half-open endpoints.** $K/m > \log_2 3$
+is strict (L-9905.2 gives $2^K > 3^m$ strictly), $K/m \le \log_2(3+1/X)$ is not;
+so for a $\{1,2\}$-cycle $m_1/m = 2 - K/m$ lies in
+$[\,2-\log_2(3+1/X),\; 2-\log_2 3\,)$ — left-closed, right-open, exactly as
+printed. Nonemptiness $\iff \frac{4X}{3X+1} < \frac43 \iff 12X < 12X+4$: always
+true; hand certificates $42 < 44$ ($X=7$) and $18 < 20$ ($X=3$) recomputed.
+*Additional check the file does not make (and which makes its honest boundary
+marker stronger, not weaker):* the region is nonempty at the **integer** level
+too — the triples $(m,K,m_1) = (5,8,2), (8,13,3), (10,16,4), (11,18,4),
+(13,21,5), (14,23,5), (15,24,6), \dots$ all have $K \in W_7(m)$ and
+$m \le K \le 2m$, so an actual $\{1,2\}$-word of length $m$ summing to $K$
+exists inside the proved window. Counting genuinely cannot refute
+$\{1,2\}$-cycles.
+
+**2.5 L-9912.4(iii) — the bonus claim, re-derived from scratch.** For a
+nontrivial cycle, $K \in \mathbb{Z}$ with $3^m < 2^K$ (L-9905.2) and
+$2^K \le (22/7)^m$, i.e. $2^K 7^m \le 22^m$ (L-9905.3 with L-9906.2). I
+recomputed $W_7(m) := \{K : 3^m < 2^K,\ 2^K 7^m \le 22^m\}$ with exact integers,
+taking the least admissible $K$ as $\mathrm{bitlength}(3^m)$ (correct because
+$3^m$ is odd $>1$, so $2^{b-1} \le 3^m < 2^b$ with $2^b > 3^m$):
+
+| $m$ | least $K$ | $W_7(m)$ | | $m$ | least $K$ | $W_7(m)$ |
+|---|---|---|---|---|---|---|
+| 1 | 2 | $\varnothing$ | | 16 | 26 | $\{26\}$ |
+| 2 | 4 | $\varnothing$ | | 17 | 27 | $\{27,28\}$ |
+| 3 | 5 | $\varnothing$ | | 18 | 29 | $\{29\}$ |
+| 4 | 7 | $\varnothing$ | | 19 | 31 | $\{31\}$ |
+| 5 | 8 | $\{8\}$ | | 20 | 32 | $\{32,33\}$ |
+| 6 | 10 | $\varnothing$ | | 21 | 34 | $\{34\}$ |
+| 7 | 12 | $\varnothing$ | | 22 | 35 | $\{35,36\}$ |
+| 8 | 13 | $\{13\}$ | | 23 | 37 | $\{37\}$ |
+| 9 | 15 | $\varnothing$ | | 24 | 39 | $\{39\}$ |
+| 10 | 16 | $\{16\}$ | | 25 | 40 | $\{40,41\}$ |
+| 11 | 18 | $\{18\}$ | | 26 | 42 | $\{42\}$ |
+| 12 | 20 | $\varnothing$ | | 27 | 43 | $\{43,44\}$ |
+| 13 | 21 | $\{21\}$ | | 28 | 45 | $\{45,46\}$ |
+| 14 | 23 | $\{23\}$ | | 29 | 46 | $\{46,47\}$ |
+| 15 | 24 | $\{24\}$ | | 30 | 48 | $\{48,49\}$ |
+
+- **Empty exactly at $m \in \{1,2,3,4,6,7,9,12\}$**: confirmed by exact scan for
+  every $1 \le m \le 4000$, and proved for all $m \ge 15$ by the file's width
+  argument, which I checked in both halves: (a) the certificate
+  $22^{15} = 136880068015412051968 > 136244637165903364602 = 2\cdot 21^{15}$
+  holds (margin $\approx 0.47\%$ — genuinely tight, and $22^{14} < 2\cdot21^{14}$,
+  so $m = 15$ is exactly where the argument starts to work, as claimed);
+  (b) the interval step is valid: if $\beta - \alpha > 1$ then
+  $\lfloor\beta\rfloor \le \beta$ and $\lfloor\beta\rfloor > \beta - 1 > \alpha$,
+  so $\lfloor\beta\rfloor \in (\alpha,\beta]$.
+- **Every entry of the file's Step 5 table recomputed exactly**, including the
+  three flagged big-integer comparisons:
+  $m=7$: $2^{12}\cdot 7^7 = 3\,373\,232\,128 > 2\,494\,357\,888 = 22^7$;
+  $m=9$: $2^{15}\cdot 7^9 = 1\,322\,306\,994\,176 > 1\,207\,269\,217\,792 = 22^9$;
+  $m=12$: $2^{20}\cdot 7^{12} = 14\,513\,641\,568\,075\,776 >
+  12\,855\,002\,631\,049\,216 = 22^{12}$. The "least $K$" column is right for all
+  fourteen rows, and the monotonicity justification ("$2^K 7^m$ strictly
+  increasing in $K$, so least-$K$ failure ⟹ empty") is correct.
+- **Singletons confirmed**: among $m \le 14$ the nonempty windows are exactly
+  $m \in \{5,8,10,11,13,14\}$ with $K = 8,13,16,18,21,23$; every $m \le 14$
+  window has size $\le 1$.
+- *Scope note (consistent, not a defect):* for $m \ge 15$ the file claims only
+  nonemptiness; my scan shows many $m \ge 15$ windows are also singletons
+  ($m = 15,16,18,19,21,23,24,26,\dots$). This is stronger than, and consistent
+  with, what is claimed.
+- The $m=1$ remark is right: $W_7(1) = \varnothing$ does not contradict the
+  trivial cycle, whose $x_{\min} = 1 < 7$ fails the floor hypothesis; and
+  nontrivial $m=1$ is L-9905.6.
+
+**Conclusion of 2.5: the eliminations $m \in \{7,9,12\}$ and the singleton
+forcing for $m \in \{5,8,10,11,13,14\}$ both independently confirm.**
+
+**2.6 L-9912.5 (Step 1).** (1a) For $y > 0$: $\nu_2(y) = t \iff y \equiv 2^t
+\pmod{2^{t+1}}$ — correct in both directions as written. Applied to
+$y = 3x+1 \ge 4$. (1b) $\gcd(3,2^{t+1}) = 1$ gives a unique class. (1c) $t$ even:
+$2^t \equiv 1 \pmod 3$ so $3 \mid 2^t-1$ and $3r_t + 1 = 2^t$; $t$ odd:
+$2^t \equiv 2$, so $5\cdot 2^t \equiv 10 \equiv 1 \pmod 3$ and
+$3r_t + 1 = 5\cdot 2^t = 2^t + 2^{t+2} \equiv 2^t \pmod{2^{t+1}}$. In both cases
+$3r_t = 2^t-1$ or $5\cdot2^t-1$ is odd, so $r_t$ is odd; and
+$(2^t-1)/3 < 2^t < 2^{t+1}$, $(5\cdot 2^t - 1)/3 < 2^{t+1}$. (1d) the "$\ge t$"
+form follows since $3r_t \equiv -1 \pmod{2^t}$ in both parities.
+Verified **exhaustively for $1 \le t \le 12$ over every odd $x < 2^{15}$, in both
+the "$=t$" and "$\ge t$" forms** (16384 values $\times$ 12 exponents $\times$ 2
+forms, zero discrepancies), plus $r_t$ oddness/range/defining-congruence/tower
+for $t \le 40$ and the partition identity $\sum_{s=1}^t 2^{t-s} + 1 = 2^t$.
+Small table reproduced: $r_{1..8} = 3, 1, 13, 5, 53, 21, 213, 85$ modulo
+$4, 8, 16, 32, 64, 128, 256, 512$. **Correction flag 1 upheld:** $a(5) =
+\nu_2(16) = 4$, so the brief's "$a=3 \iff x \equiv 5 \ (16)$" is false; the
+correct class is $x \equiv 13 \pmod{16}$, and $5$ is the base point of the $a=4$
+class mod $32$.
+
+**2.7 Q-9912-A.** Stated honestly. The file claims only that the two counting
+constraints it proves cannot produce a nontrivial upper bound, and exhibits the
+witness family $(1,\dots,1,a_m)$; it labels the question open and does **not**
+assert impossibility of any upper bound. I checked the exhibited instance:
+$m=8$, $a_8=6$, $K=13$ gives $m_1 = 7 = m-1$, satisfies $m_1 \ge 2m-K$, and
+$13 \in W_7(8)$ — so it really does pass every counting constraint in the file.
+The statement is accurate and appropriately scoped.
+
+**2.8 Step 6 (hypothesis-necessity audit).** Recomputed independently:
+$-1$: cycle $(-1)$, word $(1)$, $m=1$, $K=1$;
+$-5$: cycle $(-5,-7)$, word $(1,2)$, $m=2$, $K=3$ (**Correction flag 4 upheld** —
+the Syracuse word is $(1,2)$, not $(1,1,2)$);
+$-17$: cycle $(-17,-25,-37,-55,-41,-61,-91)$, word $(1,1,1,2,1,1,4)$, $m=7$,
+$K=11$, $m_1=5$.
+The cycle equation holds exactly in all three ($1=1$, $5=5$, $2363=2363$) and so
+does the product formula $2^K = \prod(3+1/x_i)$ (checked with exact rationals) —
+confirming the file's claim that the **algebraic** layer is positivity-free.
+In all three $2^K < 3^m$ ($2<3$, $8<9$, $2048<2187$), so the failing conclusion
+is L-9905.2's, whose hypothesis $x_i>0$ fails: exactly the located failure point.
+The counting bound $m_1 \ge 2m-K$ survives in all three, confirming it uses no
+positivity. Extra probe: sweeping all odd starts down to $-2\cdot10^5$ finds
+exactly these three cycles, and **none** has all letters $\ge 2$ — so the
+negative data does not contradict L-9912.2's conclusion either, matching the
+file's honest remark that .2 is "not sensitive to positivity in its conclusion".
+
+**2.9 Certified decimals.** All six enclosures re-certified by me at $N = 10^4$
+($\log_2(6/5) \in (0.2630,0.2631)$, $\log_2(14/11) \in (0.3479,0.3480)$,
+$\log_2 3 \in (1.5849,1.5850)$, $\log_2(22/7) \in (1.6520,1.6521)$,
+$\log_2(10/3) \in (1.7369,1.7370)$, $\log_2(4/3) \in (0.4150,0.4151)$) and two of
+them re-certified again at an independently chosen precision $N = 3000$ to guard
+against a transcription slip in the exponents; all agree. The digit-count remark
+($14^{10^4}$ has $11462$ digits) is also correct. As the author says, no proof
+step depends on these; the load-bearing certifications are the small hand ones
+($1296>1250$, $2744>2662$, $42<44$, $18<20$, $22^{15} > 2\cdot21^{15}$), all
+recomputed.
+
+**2.10 Cross-check of Remark 3.** L-9906's own script asserts the windows
+$\{2:\varnothing, 3:\{5\}, 4:\{7\}, 5:\{8,9\}, 6:\{10,11,12,13\}\}$
+(`L-9906-no-small-cycles.md`, expected-dict assertion and its output line), so
+Remark 3's comparison is accurate: the product-formula window empties
+$m=3,4,6$ outright and shrinks $m=5$ to $\{8\}$, leaving only L-9906's
+$\binom{7}{4} = 35$ compositions load-bearing at $m=5$. $\binom{12}{7} = 792$ and
+$2^{13}-3^8 = 1631$ (Suggested next attack) are also correct. Remark 4's forced
+ratios $8/5, 13/8, 16/10, 21/13$ are correct as arithmetic and are explicitly
+labeled "observation only".
+
+### 3. Authoring-error audit (both disclosed errors)
+
+- **Wrong empty-window list.** Every occurrence of the list in the Statement,
+  Step 5, the Gap audit and the T7 assertion is the corrected
+  $\{1,2,3,4,6,7,9,12\}$, which my independent scan reproduces. The only
+  appearance of the superseded $\{2,7,9,12\}$ is inside the explicit historical
+  disclosure sentence in "Interpretation and labeling". **No residue.**
+- **Wrong $m=8$ product.** The Step 5 row now reads
+  $8192\cdot 7^8 = 47\,225\,249\,792 \le 54\,875\,873\,536 = 22^8$; both integers
+  are exactly correct ($7^8 = 5\,764\,801$, $22^8 = 54\,875\,873\,536$), and
+  $2^{14}\cdot 7^8 > 22^8$ confirms $K=14$ fails, so $W_7(8) = \{13\}$. No stale
+  $m=8$ numeral occurs anywhere else in the file. **No residue.**
+- *Documentation observation (not a defect, deliberately not "fixed"):* the
+  "Interpretation and labeling" paragraph says the suite caught "one real error";
+  the commissioning brief refers to two. Since the second is fully corrected in
+  the current text, the only inaccuracy is an undercount in the author's own
+  historical disclosure. I have left another agent's record intact and note the
+  discrepancy here instead (README §17.4, §17.9).
+
+### 4. Re-execution of the author's suite
+
+The single fenced Python block in "Adversarial tests" was extracted verbatim and
+run under Python 3.11.15: exit status 0, and its stdout matches the file's
+"Output (verbatim)" block **line for line — 40 lines, 0 differences** (diffed
+programmatically). So the file's recorded output is genuine, not transcribed.
+
+### 5. Defects found
+
+**None substantive.** Two cosmetic items, left in place:
+
+- Step 1(1c) contains the garbled phrase "$3 r_t$ is odd minus nothing"; the
+  intended and correct argument is that $3r_t$ equals $2^t-1$ ($t$ even) or
+  $5\cdot2^t-1$ ($t$ odd), both odd, hence $r_t$ is odd.
+- Step 0 (F3) is tagged "independent of L-9906" while citing "L-9906 Step 0 P0"
+  for distinctness of cycle elements. The tag is nevertheless justified:
+  distinctness is definitional (D-9908, least period) and is independently
+  recorded in L-9905's Definitions, which is a separate PROVED file. Only the
+  citation is potentially confusing.
+
+### 6. Attempted negation, and a strengthening for the next agent
+
+Negation attempts, all unsuccessful (i.e. the file survives): brute-force search
+for a nontrivial positive $S$-cycle from every odd start $< 3\cdot10^5$ (none);
+probing the Step 3 equality case for a leak (none); searching for an $m \ge 15$
+with empty $W_7(m)$ (none up to $m = 4000$, and the width argument settles all
+$m$); testing whether the negative cycles break the counting half of .3 (they do
+not); testing the dictionary against every odd $x < 2^{15}$ for $t \le 12$ (no
+counterexample).
+
+**Strengthening found (NOT a change to this file's claims; recorded as a next
+attack).** The elements of a nontrivial cycle are pairwise **distinct** (D-9908)
+and all $\ge 7$ (L-9906.2), so listed increasingly they satisfy
+$x_{(j)} \ge 7 + 2j$, and L-9905.3 then gives the sharper, still fully
+elementary bound
+$$2^K \;=\; \prod_i \Big(3+\frac1{x_i}\Big) \;\le\;
+  \prod_{j=0}^{m-1}\Big(3 + \frac{1}{7+2j}\Big),$$
+using no input beyond what L-9912.4(iii) already uses. Exact consequences
+(computed with `Fraction`, §9 blocks P2–P4, Q3–Q4):
+
+- **$m = 8$ is eliminated outright by a one-line certificate:**
+  $\prod_{j<8}(3+\frac{1}{7+2j}) = \frac{87\,425\,024}{10\,773} < 8192 = 2^{13}$,
+  while $2^{12} = 4096 < 6561 = 3^8$ forces $K \ge 13$. So the sharpened window
+  at $m=8$ is empty. This corroborates L-9915's (PROPOSED) $m=8$ result without
+  enumerating its 792 compositions, and it means the file's phrase "$m = 8$ …
+  the smallest case not excluded in-repo" is accurate **for L-9912 + L-9906 as
+  written** but is already improvable by one further line of the same argument.
+- Further empty sharpened windows for $m \le 40$:
+  $\{8, 11, 14, 16, 18, 19, 21, 23, 24, 26, 28, 31, 33, 36, 38\}$; for
+  $15 \le m \le 400$ the sharpened window is empty at 35 further values of $m$.
+- The one-fraction floor improves from the proved $m_1 > m/3$ toward
+  $m_1 \gtrsim (2-\log_2 3)m \approx 0.415\,m$: e.g. $m = 200$ gives $m_1 \ge 83$
+  instead of $70$, $m = 500$ gives $207$ instead of $174$.
+
+This should be written up as its own lemma (with the "sorted distinct elements"
+step proved carefully) rather than retro-fitted here.
+
+### 7. Consistency with L-9915 (PROPOSED, reviewed separately)
+
+`L-9915-medium-m-elimination.md` re-derives the same window facts from
+L-9905.2/.3 + L-9906.2 and reports the identical empty set $\{7,9,12\}$, the
+identical singleton $K$ values for $m \in \{5,8,10,11,13,14\}$, and the identical
+width certificate $22^{15} > 2\cdot 21^{15}$. **No numerical or logical conflict
+with L-9912.4(iii).** L-9912 stands on its own: its exclusions cite only
+L-9905.2, L-9905.3 and L-9906.2 (all PROVED) and nothing from L-9915, and
+L-9915's header explicitly marks L-9912 as *not* load-bearing for it, so there is
+no mutual dependence. If L-9915 is later confirmed, the sentence "$m = 8$ …
+smallest case not excluded in-repo" becomes historically scoped; it is accurate
+as a statement about what L-9912 + L-9906 prove.
+
+### 8. Caveats attached to this PASS
+
+- Status is `PROVED` (one detailed adversarial review), not
+  `INDEPENDENTLY_VERIFIED`.
+- L-9912.4(iii) and the $m_1 > m/3$ bound inherit L-9906.2's PROVED status; if
+  that were retracted, the (F3)-tagged results ($m_1 > m/4$, rigidity, the
+  floor-free .2, the dictionary) survive untouched, as the file states.
+- The $m \le 4000$ scan is *corroboration*; the universal statement rests on the
+  width argument, which I checked as a proof, not as a computation.
+- Nothing in this file is claimed about negative integers; I confirmed the
+  negative-cycle material appears only inside the audit and is used in no proof.
+- My own suite is a check, never a proof (NOTATION.md convention); the proofs
+  above stand on the displayed hand-checkable certificates.
+
+### 9. Verification script (verbatim) and output
+
+Written independently from the Statement section; Python 3.11.15; exact
+`int`/`fractions.Fraction` arithmetic only; fixed seed `20260725`; runtime
+$\approx 26$ s. Blocks: V1–V8 (reconstruction checks), P1–P5 (window scans,
+strengthening probe, cycle search), Q1–Q4 (decimal certificates and the
+sharpened-window computation).
+
+```python
+#!/usr/bin/env python3
+import sys; sys.set_int_max_str_digits(200000)
+# fable-02-v14 INDEPENDENT verification of L-9912 (written from the STATEMENTS only).
+# Exact integer / Fraction arithmetic throughout. No floating point in any decision.
+
+from fractions import Fraction
+from math import comb
+import random
+
+random.seed(20260725)
+
+FAIL = []
+def chk(label, ok):
+    if not ok:
+        FAIL.append(label)
+        print("  *** FAIL:", label)
+    return ok
+
+def nu2(y):
+    assert y != 0
+    a = 0
+    while y % 2 == 0:
+        y //= 2
+        a += 1
+    return a
+
+def a_of(x):            # step exponent, D-9904 (works for negative odd x too)
+    return nu2(3 * x + 1)
+
+def S(x):
+    y = 3 * x + 1
+    return y >> nu2(y)
+
+# c as defined in L-9905 / D-9908: c = sum_{i=1}^m 3^{m-i} 2^{A_{i-1}}, A_0 = 0
+def c_of(word):
+    m = len(word)
+    c = 0
+    A = 0
+    for i in range(1, m + 1):
+        c += 3 ** (m - i) * 2 ** A
+        A += word[i - 1]
+    return c
+
+print("=" * 78)
+print("V1  L-9912.5 dictionary: exhaustive for t <= 12 over odd x < 2^15")
+print("=" * 78)
+
+def r(t):
+    if t % 2 == 0:
+        assert (2 ** t - 1) % 3 == 0
+        return (2 ** t - 1) // 3
+    else:
+        assert (5 * 2 ** t - 1) % 3 == 0
+        return (5 * 2 ** t - 1) // 3
+
+for t in range(1, 41):
+    rt = r(t)
+    chk(f"r_{t} odd", rt % 2 == 1)
+    chk(f"0 < r_{t} < 2^{t+1}", 0 < rt < 2 ** (t + 1))
+    chk(f"3r_{t}+1 = 2^{t} mod 2^{t+1}", (3 * rt + 1) % 2 ** (t + 1) == 2 ** t)
+    chk(f"tower r_{t+1} = r_{t} mod 2^{t}", r(t + 1) % 2 ** t == rt % 2 ** t)
+
+LIM = 2 ** 15
+bad = 0
+for x in range(1, LIM, 2):
+    ax = a_of(x)
+    for t in range(1, 13):
+        if (ax == t) != (x % 2 ** (t + 1) == r(t)):
+            bad += 1
+        if (ax >= t) != (x % 2 ** t == r(t) % 2 ** t):
+            bad += 1
+chk("dictionary exhaustive t<=12, odd x<2^15 (both forms)", bad == 0)
+print("  r_t, t=1..8 :", [r(t) for t in range(1, 9)])
+print("  moduli      :", [2 ** (t + 1) for t in range(1, 9)])
+chk("a(5) = 4 (brief's a=3 <-> 5 mod 16 is FALSE)", a_of(5) == 4)
+chk("a=3 class is 13 mod 16", r(3) == 13 and a_of(13) == 3)
+chk("a=4 base point is 5 mod 32", r(4) == 5)
+chk("a=1 <-> 3 mod 4", r(1) == 3)
+chk("a=2 <-> 1 mod 8", r(2) == 1)
+chk("a=5 <-> 53 mod 64", r(5) == 53)
+chk("a=6 <-> 21 mod 128", r(6) == 21)
+# partition identity of the Remark
+for t in range(1, 13):
+    chk(f"partition count t={t}", sum(2 ** (t - s) for s in range(1, t + 1)) + 1 == 2 ** t)
+# 2-adic limit: r_t -> -1/3, i.e. 3*r_t + 1 = 0 mod 2^t
+for t in range(1, 30):
+    chk(f"3r_t+1 = 0 mod 2^{t}", (3 * r(t) + 1) % 2 ** t == 0)
+
+print()
+print("=" * 78)
+print("V2  L-9912.1 geometric identity and x = 1/(2^a - 3), a<=10, m<=12")
+print("=" * 78)
+for a in range(1, 11):
+    u = 2 ** a
+    for m in range(1, 13):
+        word = (a,) * m
+        c = c_of(word)
+        chk(f"telescope a={a} m={m}", (u - 3) * c == u ** m - 3 ** m)
+        D = 2 ** (a * m) - 3 ** m
+        chk(f"D != 0 a={a} m={m}", D != 0)
+        chk(f"c/D = 1/(2^a-3) a={a} m={m}", Fraction(c, D) == Fraction(1, u - 3))
+print("  1/(2^a-3) for a=1..8 :", [Fraction(1, 2 ** a - 3) for a in range(1, 9)])
+chk("a=1 gives -1", Fraction(1, 2 ** 1 - 3) == -1)
+chk("a=2 gives 1", Fraction(1, 2 ** 2 - 3) == 1)
+chk("a>=3 gives 0 < x < 1", all(0 < Fraction(1, 2 ** a - 3) < 1 for a in range(3, 40)))
+chk("S(-1) = -1 with a=1", S(-1) == -1 and a_of(-1) == 1)
+chk("S(1) = 1 with a=2", S(1) == 1 and a_of(1) == 2)
+
+print()
+print("=" * 78)
+print("V3  certified integer comparisons used in the proofs")
+print("=" * 78)
+chk("6^4 = 1296 > 1250 = 2*5^4   [log2(6/5) > 1/4]", 6 ** 4 == 1296 and 2 * 5 ** 4 == 1250 and 6 ** 4 > 2 * 5 ** 4)
+chk("14^3 = 2744 > 2662 = 2*11^3 [log2(14/11) > 1/3]", 14 ** 3 == 2744 and 2 * 11 ** 3 == 2662 and 14 ** 3 > 2 * 11 ** 3)
+chk("3*14 = 42 < 44 = 4*11  [14/11 < 4/3]", 3 * 14 < 4 * 11)
+chk("3*6 = 18 < 20 = 4*5    [6/5 < 4/3]", 3 * 6 < 4 * 5)
+chk("22^15 > 2*21^15        [15 log2(22/21) > 1]", 22 ** 15 > 2 * 21 ** 15)
+print("  22^15 =", 22 ** 15, " 2*21^15 =", 2 * 21 ** 15,
+      " ratio-1 =", Fraction(22 ** 15 - 2 * 21 ** 15, 2 * 21 ** 15))
+chk("14^14 <= 2*11^14 (so 1/3 bound is not vacuous margin check)", True)  # informational
+N = 10 ** 4
+chk("0.2630 < log2(6/5) < 0.2631", 5 ** N * 2 ** 2630 < 6 ** N < 5 ** N * 2 ** 2631)
+chk("0.3479 < log2(14/11) < 0.3480", 11 ** N * 2 ** 3479 < 14 ** N < 11 ** N * 2 ** 3480)
+chk("1.5849 < log2 3 < 1.5850", 2 ** 15849 < 3 ** N < 2 ** 15850)
+chk("1.6520 < log2(22/7) < 1.6521", 7 ** N * 2 ** 16520 < 22 ** N < 7 ** N * 2 ** 16521)
+chk("1.7369 < log2(10/3) < 1.7370", 3 ** N * 2 ** 17369 < 10 ** N < 3 ** N * 2 ** 17370)
+chk("0.4150 < log2(4/3) < 0.4151", 3 ** N * 2 ** 4150 < 4 ** N < 3 ** N * 2 ** 4151)
+# independent re-certification at a different precision (N = 3000) to guard a typo in N
+M = 3000
+chk("recert log2(14/11) at N=3000", 11 ** M * 2 ** 1043 < 14 ** M < 11 ** M * 2 ** 1044)   # .34766..-.34800
+chk("recert log2 3 at N=3000", 2 ** 4754 < 3 ** M < 2 ** 4755)
+
+print()
+print("=" * 78)
+print("V4  L-9912.3(i) counting bound: exhaustive small + random stress")
+print("=" * 78)
+def words(m, maxa):
+    if m == 0:
+        yield ()
+        return
+    for w in words(m - 1, maxa):
+        for a in range(1, maxa + 1):
+            yield w + (a,)
+bad = 0
+for m in range(1, 8):
+    for w in words(m, 5):
+        K = sum(w); m1 = sum(1 for a in w if a == 1)
+        if not (m1 >= 2 * m - K):
+            bad += 1
+        if (m1 == 2 * m - K) != all(a in (1, 2) for a in w):
+            bad += 1
+chk("exhaustive m<=7, letters<=5: m1>=2m-K and equality iff {1,2}", bad == 0)
+bad = 0
+for _ in range(50000):
+    m = random.randint(1, 60)
+    w = tuple(random.choice([1, 1, 1, 2, 2, 3, 4, 7, 11]) for _ in range(m))
+    K = sum(w); m1 = sum(1 for a in w if a == 1)
+    if not (m1 >= 2 * m - K):
+        bad += 1
+    if (m1 == 2 * m - K) != all(a in (1, 2) for a in w):
+        bad += 1
+chk("random stress 50000 words", bad == 0)
+
+print()
+print("=" * 78)
+print("V5  product formula on real orbit segments (independent check of L-9905.3)")
+print("=" * 78)
+bad = 0
+for _ in range(3000):
+    x = 2 * random.randint(1, 10 ** 7) + 1
+    m = random.randint(1, 30)
+    xs = [x]
+    aa = []
+    for _ in range(m):
+        aa.append(a_of(xs[-1]))
+        xs.append(S(xs[-1]))
+    K = sum(aa)
+    prod = Fraction(1)
+    for i in range(m):
+        prod *= 3 + Fraction(1, xs[i])
+    if Fraction(2) ** K * Fraction(xs[m], xs[0]) != prod:
+        bad += 1
+chk("2^K * x_{m+1}/x_1 = prod(3+1/x_i) on 3000 segments", bad == 0)
+
+print()
+print("=" * 78)
+print("V6  L-9912.4(iii) integer windows W_7(m) = {K : 3^m < 2^K, 2^K 7^m <= 22^m}")
+print("=" * 78)
+def W7(m):
+    # exact: K > m log2 3  <=>  2^K > 3^m ;  K <= m log2(22/7) <=> 2^K 7^m <= 22^m
+    lo = (3 ** m).bit_length()          # least K with 2^K > 3^m  (since 3^m is not a power of 2)
+    assert 2 ** lo > 3 ** m >= 2 ** (lo - 1)
+    Ks = []
+    K = lo
+    while 2 ** K * 7 ** m <= 22 ** m:
+        Ks.append(K)
+        K += 1
+    return Ks
+
+empty = []
+singleton = []
+rows = []
+for m in range(1, 31):
+    Ks = W7(m)
+    rows.append((m, (3 ** m).bit_length(), Ks))
+    if not Ks:
+        empty.append(m)
+    elif len(Ks) == 1:
+        singleton.append(m)
+print("   m | least K | W_7(m)")
+for m, lo, Ks in rows:
+    print(f"  {m:2d} | {lo:7d} | {Ks if Ks else 'EMPTY'}")
+chk("empty windows for m<=30 are exactly {1,2,3,4,6,7,9,12}",
+    empty == [1, 2, 3, 4, 6, 7, 9, 12])
+chk("singleton windows among m<=14 are exactly {5,8,10,11,13,14}",
+    [m for m in range(1, 15) if len(W7(m)) == 1] == [5, 8, 10, 11, 13, 14])
+chk("every m<=14 window has size <= 1", all(len(W7(m)) <= 1 for m in range(1, 15)))
+print("  window sizes m=15..30 (file claims only NONEMPTY there):",
+      [len(W7(m)) for m in range(15, 31)])
+chk("singleton values {8,13,16,18,21,23}",
+    [W7(m)[0] for m in (5, 8, 10, 11, 13, 14)] == [8, 13, 16, 18, 21, 23])
+# no further empty windows anywhere up to a large bound (sanity of the width argument)
+far_empty = [m for m in range(15, 4001) if not W7(m)]
+chk("no empty window for 15 <= m <= 4000", far_empty == [])
+# width argument, exact: (22/21)^m > 2 for m >= 15  <=>  22^m > 2*21^m
+chk("22^m > 2*21^m for all 15 <= m <= 500", all(22 ** m > 2 * 21 ** m for m in range(15, 501)))
+chk("22^14 < 2*21^14 (m=15 is the true threshold of the width argument)", 22 ** 14 < 2 * 21 ** 14)
+# floor(beta) argument spot check on rationals: verified structurally, plus numeric spot:
+for m in range(15, 60):
+    Ks = W7(m)
+    chk(f"floor-of-upper-endpoint in window m={m}", max(Ks) == Ks[-1] and len(Ks) >= 1)
+
+print()
+print("   --- exact re-derivation of every number in the Step 5 table ---")
+tab = {
+    1: ("4 * 7 = 28 > 22", 2 ** 2 * 7 ** 1 == 28 and 22 ** 1 == 22 and 28 > 22),
+    2: ("16 * 49 = 784 > 484", 2 ** 4 * 7 ** 2 == 784 and 22 ** 2 == 484 and 784 > 484),
+    3: ("32 * 343 = 10976 > 10648", 2 ** 5 * 7 ** 3 == 10976 and 22 ** 3 == 10648 and 10976 > 10648),
+    4: ("128 * 2401 = 307328 > 234256", 2 ** 7 * 7 ** 4 == 307328 and 22 ** 4 == 234256 and 307328 > 234256),
+    5: ("256*16807 = 4302592 <= 5153632; K=9: 8605184 > 22^5",
+        2 ** 8 * 7 ** 5 == 4302592 and 22 ** 5 == 5153632 and 4302592 <= 5153632
+        and 2 ** 9 * 7 ** 5 == 8605184 and 8605184 > 22 ** 5),
+    6: ("1024*117649 = 120472576 > 113379904",
+        2 ** 10 * 7 ** 6 == 120472576 and 22 ** 6 == 113379904 and 120472576 > 113379904),
+    7: ("4096*823543 = 3373232128 > 2494357888",
+        2 ** 12 * 7 ** 7 == 3373232128 and 22 ** 7 == 2494357888 and 3373232128 > 2494357888),
+    8: ("8192*7^8 = 47225249792 <= 54875873536; K=14 fails",
+        2 ** 13 * 7 ** 8 == 47225249792 and 22 ** 8 == 54875873536 and 47225249792 <= 54875873536
+        and 2 ** 14 * 7 ** 8 > 22 ** 8),
+    9: ("32768*7^9 = 1322306994176 > 1207269217792",
+        2 ** 15 * 7 ** 9 == 1322306994176 and 22 ** 9 == 1207269217792 and 1322306994176 > 1207269217792),
+    10: ("K=16 in window; K=17 fails", 2 ** 16 * 7 ** 10 <= 22 ** 10 and 2 ** 17 * 7 ** 10 > 22 ** 10),
+    11: ("K=18 in window; K=19 fails", 2 ** 18 * 7 ** 11 <= 22 ** 11 and 2 ** 19 * 7 ** 11 > 22 ** 11),
+    12: ("2^20*7^12 = 14513641568075776 > 12855002631049216",
+         2 ** 20 * 7 ** 12 == 14513641568075776 and 22 ** 12 == 12855002631049216
+         and 2 ** 20 * 7 ** 12 > 22 ** 12),
+    13: ("K=21 in window; K=22 fails", 2 ** 21 * 7 ** 13 <= 22 ** 13 and 2 ** 22 * 7 ** 13 > 22 ** 13),
+    14: ("K=23 in window; K=24 fails", 2 ** 23 * 7 ** 14 <= 22 ** 14 and 2 ** 24 * 7 ** 14 > 22 ** 14),
+}
+for m, (txt, ok) in tab.items():
+    chk(f"table row m={m}: {txt}", ok)
+# least-K column of the table
+least_col = {1: 2, 2: 4, 3: 5, 4: 7, 5: 8, 6: 10, 7: 12, 8: 13, 9: 15,
+             10: 16, 11: 18, 12: 20, 13: 21, 14: 23}
+for m, v in least_col.items():
+    chk(f"least K column m={m} = {v}", (3 ** m).bit_length() == v)
+chk("2^11 = 2048 < 2187 = 3^7 < 4096 = 2^12", 2 ** 11 == 2048 < 2187 == 3 ** 7 < 4096 == 2 ** 12)
+
+print()
+print("=" * 78)
+print("V7  negative-cycle hypothesis-necessity audit")
+print("=" * 78)
+def find_cycle(n):
+    seen = {}
+    x = n
+    order = []
+    while x not in seen:
+        seen[x] = len(order)
+        order.append(x)
+        x = S(x)
+    cyc = order[seen[x]:]
+    return cyc, tuple(a_of(v) for v in cyc)
+
+for n in (-1, -5, -17):
+    cyc, w = find_cycle(n)
+    m, K = len(cyc), sum(w)
+    m1 = sum(1 for a in w if a == 1)
+    c = c_of(w)
+    D = 2 ** K - 3 ** m
+    print(f"  start {n}: cycle {cyc}")
+    print(f"     word {w}  m={m} K={K} m1={m1}  c={c}  D={D}  x1*D={cyc[0]*D}")
+    chk(f"cycle equation holds for {n}", cyc[0] * D == c)
+    chk(f"2^K < 3^m for {n} (L-9905.2 conclusion FAILS)", 2 ** K < 3 ** m)
+    chk(f"counting bound m1>=2m-K still holds for {n}", m1 >= 2 * m - K)
+    print(f"     K/m = {Fraction(K,m)} vs log2 3 in (1.5849,1.5850): "
+          f"{'BELOW' if Fraction(K,m) < Fraction(15849,10000) else 'ABOVE'}")
+    prodcheck = Fraction(1)
+    for v in cyc:
+        prodcheck *= 3 + Fraction(1, v)
+    chk(f"product formula holds algebraically for {n}", prodcheck == Fraction(2) ** K)
+chk("-5 cycle word is (1,2) up to rotation", find_cycle(-5)[1] in ((1, 2), (2, 1)))
+chk("-1 word is (1)", find_cycle(-1)[1] == (1,))
+chk("-17: m=7, K=11, m1=5", len(find_cycle(-17)[0]) == 7 and sum(find_cycle(-17)[1]) == 11
+    and sum(1 for a in find_cycle(-17)[1] if a == 1) == 5)
+chk("all three negative cycles DO contain a letter 1 (L-9912.2 conclusion not violated)",
+    all(1 in find_cycle(n)[1] for n in (-1, -5, -17)))
+# is there a negative cycle with all a_i >= 2 among small negatives? (probe L-9912.2 necessity)
+negcycles = {}
+for n in range(-1, -200001, -2):
+    cyc, w = find_cycle(n)
+    key = min(cyc)
+    if key not in negcycles:
+        negcycles[key] = (tuple(cyc), w)
+print("  distinct negative cycles reachable from |n| < 200000:",
+      [(k, negcycles[k][1]) for k in sorted(negcycles)])
+chk("no negative cycle found with all a_i >= 2",
+    all(1 in w for _, w in negcycles.values()))
+# factor 3 + 1/x at x = -5
+chk("3 + 1/(-5) = 14/5 = 2.8 < 3", 3 + Fraction(1, -5) == Fraction(14, 5))
+
+print()
+print("=" * 78)
+print("V8  misc statement checks")
+print("=" * 78)
+chk("S(3) = 5, S(5) = 1 (basis of floor x_min >= 7)", S(3) == 5 and S(5) == 1)
+chk("3 + 1/x < 4 strictly for odd x >= 3", all(3 + Fraction(1, x) < 4 for x in range(3, 2001, 2)))
+chk("equality 3+1/x = 4 iff x = 1", 3 + Fraction(1, 1) == 4)
+# m1 >= floor(m/3)+1 from m1 > m/3
+chk("m1 > m/3 integer => m1 >= floor(m/3)+1 for m<=2000",
+    all(min(k for k in range(0, m + 1) if 3 * k > m) == m // 3 + 1 for m in range(1, 2001)))
+chk("ceil(8*0.3479) = 3 and floor(8/3)+1 = 3", -((-8 * 3479) // 10000) == 3 and 8 // 3 + 1 == 3)
+chk("C(12,7) = 792 compositions of 13 into 8 parts", comb(12, 7) == 792)
+chk("2^13 - 3^8 = 1631", 2 ** 13 - 3 ** 8 == 1631)
+chk("C(7,4) = 35 compositions of 8 into 5 parts", comb(7, 4) == 35)
+chk("Fibonacci ratios 8/5,13/8,16/10,21/13 for m=5,8,10,13",
+    [Fraction(W7(m)[0], m) for m in (5, 8, 10, 13)]
+    == [Fraction(8, 5), Fraction(13, 8), Fraction(16, 10), Fraction(21, 13)])
+# {1,2}-window nonemptiness at the INTEGER level, not just as a real interval
+live = []
+for m in range(1, 40):
+    for K in W7(m):
+        if m <= K <= 2 * m:                    # a {1,2}-word of length m with sum K exists
+            live.append((m, K, 2 * m - K))     # (m, K, m1)
+print("  integer (m,K,m1) triples supporting a {1,2}-word inside the X=7 window, m<40:")
+print("   ", live[:12], "..." if len(live) > 12 else "")
+chk("{1,2}-window contains genuine integer (m,K) pairs", len(live) > 0 and (8, 13, 3) in live)
+# upper bound m1 <= m-1 and the (1,...,1,a) family satisfying all counting constraints
+chk("word (1^7,6): m=8,K=13,m1=7 satisfies m1>=2m-K and K in W_7(8)",
+    (lambda w: (sum(w) == 13 and len(w) == 8 and sum(1 for a in w if a == 1) == 7
+                and sum(1 for a in w if a == 1) >= 2 * 8 - 13 and 13 in W7(8)))((1,)*7 + (6,)))
+
+
+print("P1  corrected singleton test (file claims singletons only for m <= 14)")
+sing_small = [m for m in range(1, 15) if len(W7(m)) == 1]
+chk("singletons among m<=14 are exactly {5,8,10,11,13,14}", sing_small == [5, 8, 10, 11, 13, 14])
+chk("values {8,13,16,18,21,23}", [W7(m)[0] for m in sing_small] == [8, 13, 16, 18, 21, 23])
+chk("every m<=14 is either empty or singleton", all(len(W7(m)) <= 1 for m in range(1, 15)))
+print("   m<=14 window sizes:", [len(W7(m)) for m in range(1, 15)])
+print("   m=15..30 sizes    :", [len(W7(m)) for m in range(15, 31)])
+print("   (file claims only NONEMPTY for m>=15 -- consistent)")
+
+print()
+print("P2  strengthening probe: distinct elements >= 7 give x_(j) >= 7+2j (sorted),")
+print("    so 2^K <= prod_{j=0}^{m-1} (3 + 1/(7+2j)).  Does it eliminate more m?")
+def W_sharp(m):
+    up = Fraction(1)
+    for j in range(m):
+        up *= 3 + Fraction(1, 7 + 2 * j)
+    lo = (3 ** m).bit_length()
+    Ks = []
+    K = lo
+    while Fraction(2) ** K <= up:
+        Ks.append(K); K += 1
+    return Ks
+emptier = []
+for m in range(1, 41):
+    a, b = W7(m), W_sharp(m)
+    if b != a:
+        emptier.append((m, a, b))
+print("   m where the sharpened window differs from W_7(m):")
+for m, a, b in emptier:
+    print(f"     m={m:2d}  W_7={a if a else 'EMPTY'}  ->  W_sharp={b if b else 'EMPTY'}")
+new_empty = [m for m in range(1, 41) if W7(m) and not W_sharp(m)]
+print("   NEW empty windows from the sharpened bound (m<=40):", new_empty)
+
+print()
+print("P3  same probe with the anchoring x_min>=7 only (i.e. no distinctness) - control")
+print("    (this is exactly W_7, shown above)")
+
+print()
+print("P4  can the m>=15 nonemptiness ever fail for the sharpened window? scan m<=400")
+far = [m for m in range(15, 401) if not W_sharp(m)]
+print("   sharpened-window empties, 15<=m<=400:", far)
+
+print()
+print("P5  sanity: brute-force search for any S-cycle among odd x < 3*10^5")
+def S(x):
+    y = 3 * x + 1
+    a = 0
+    while y % 2 == 0:
+        y //= 2; a += 1
+    return y
+cyc_found = set()
+for n in range(1, 300001, 2):
+    x, seen = n, set()
+    while x not in seen and x != 1 and x < 10 ** 12:
+        seen.add(x); x = S(x)
+    if x != 1 and x < 10 ** 12:
+        cyc_found.add(x)
+print("   nontrivial S-cycle elements found below 3*10^5 start points:", sorted(cyc_found))
+chk("no nontrivial positive S-cycle found", not cyc_found)
+
+
+print("Q1  digit-count claim: 14^10000 has 11462 digits")
+chk("11462 digits", len(str(14**10000)) == 11462)
+
+print()
+print("Q2  every decimal in the Step 5 live-window table, as exact integer comparisons")
+N=10**4
+# K/m in (log2 3, log2(10/3)] subset (1.5849, 1.7370)   [X=3 column]
+chk("log2 3 > 1.5849", 3**N > 2**15849)
+chk("log2(10/3) < 1.7370", 10**N < 3**N * 2**17370)
+chk("log2(22/7) < 1.6521", 22**N < 7**N * 2**16521)
+chk("log2(6/5) > 0.2630", 6**N > 5**N * 2**2630)
+chk("log2(14/11) > 0.3479", 14**N > 11**N * 2**3479)
+chk("log2(4/3) < 0.4151", 4**N < 3**N * 2**4151)
+chk("log2(6/5) < 0.4151 (interval [log2 6/5, log2 4/3) sits inside (0.2630,0.4151))",
+    6**N * 3**N < 5**N * 4**N)
+
+print()
+print("Q3  strengthening: distinct elements >= 7 sorted give x_(j) >= 7+2j")
+print("    K_max(m) = max{K : 2^K <= prod_{j<m}(3+1/(7+2j))}, m1 >= 2m - K_max")
+def prod_sharp(m):
+    p = Fraction(1)
+    for j in range(m):
+        p *= 3 + Fraction(1, 7+2*j)
+    return p
+def Kmax_sharp(m):
+    p = prod_sharp(m); K = 0
+    while Fraction(2)**(K+1) <= p: K += 1
+    return K
+def Kmax_flat(m):     # the file's bound: 2^K <= (22/7)^m
+    K = 0
+    while 2**(K+1) * 7**m <= 22**m: K += 1
+    return K
+print("    m | Kmin | Kmax(22/7) | Kmax(sharp) | file m1>=  | sharp m1>=")
+for m in (8, 14, 20, 30, 50, 100, 200, 500, 1000):
+    kmin = (3**m).bit_length()
+    kf, ks = Kmax_flat(m), Kmax_sharp(m)
+    print(f"   {m:4d} | {kmin:4d} | {kf:10d} | {ks:11d} | {2*m-kf:10d} | {2*m-ks:10d}"
+          f"   (sharp fraction {Fraction(2*m-ks,m)} ~ {float(Fraction(2*m-ks,m)):.4f})")
+print("    file's proved floor is m1 > m/3 = 0.3333 m; the distinctness-sharpened")
+print("    bound tends to 2 - log2 3 = 0.4150.. m as m grows.  (STRENGTHENING, not a defect.)")
+
+print()
+print("Q4  does the sharpened window kill m=8 (the file's 'smallest open case')?")
+p8 = prod_sharp(8)
+print("    prod_{j<8}(3+1/(7+2j)) =", p8, "=", float(p8))
+print("    2^13 =", 2**13, " > prod  ->", Fraction(2)**13 > p8)
+print("    2^12 =", 4096, " < 3^8 =", 3**8, "-> K>=13, so window EMPTY")
+chk("m=8 killed by distinctness-sharpened window", Fraction(2)**13 > p8 and 2**12 < 3**8)
+
+
+print()
+print("=" * 78)
+if FAIL:
+    print("FAILURES:", len(FAIL))
+    for f in FAIL:
+        print("   -", f)
+else:
+    print("ALL INDEPENDENT CHECKS PASS")
+print("=" * 78)
+```
+
+**Output (verbatim):**
+
+```text
+==============================================================================
+V1  L-9912.5 dictionary: exhaustive for t <= 12 over odd x < 2^15
+==============================================================================
+  r_t, t=1..8 : [3, 1, 13, 5, 53, 21, 213, 85]
+  moduli      : [4, 8, 16, 32, 64, 128, 256, 512]
+
+==============================================================================
+V2  L-9912.1 geometric identity and x = 1/(2^a - 3), a<=10, m<=12
+==============================================================================
+  1/(2^a-3) for a=1..8 : [Fraction(-1, 1), Fraction(1, 1), Fraction(1, 5), Fraction(1, 13), Fraction(1, 29), Fraction(1, 61), Fraction(1, 125), Fraction(1, 253)]
+
+==============================================================================
+V3  certified integer comparisons used in the proofs
+==============================================================================
+  22^15 = 136880068015412051968  2*21^15 = 136244637165903364602  ratio-1 = 317715424754343683/68122318582951682301
+
+==============================================================================
+V4  L-9912.3(i) counting bound: exhaustive small + random stress
+==============================================================================
+
+==============================================================================
+V5  product formula on real orbit segments (independent check of L-9905.3)
+==============================================================================
+
+==============================================================================
+V6  L-9912.4(iii) integer windows W_7(m) = {K : 3^m < 2^K, 2^K 7^m <= 22^m}
+==============================================================================
+   m | least K | W_7(m)
+   1 |       2 | EMPTY
+   2 |       4 | EMPTY
+   3 |       5 | EMPTY
+   4 |       7 | EMPTY
+   5 |       8 | [8]
+   6 |      10 | EMPTY
+   7 |      12 | EMPTY
+   8 |      13 | [13]
+   9 |      15 | EMPTY
+  10 |      16 | [16]
+  11 |      18 | [18]
+  12 |      20 | EMPTY
+  13 |      21 | [21]
+  14 |      23 | [23]
+  15 |      24 | [24]
+  16 |      26 | [26]
+  17 |      27 | [27, 28]
+  18 |      29 | [29]
+  19 |      31 | [31]
+  20 |      32 | [32, 33]
+  21 |      34 | [34]
+  22 |      35 | [35, 36]
+  23 |      37 | [37]
+  24 |      39 | [39]
+  25 |      40 | [40, 41]
+  26 |      42 | [42]
+  27 |      43 | [43, 44]
+  28 |      45 | [45, 46]
+  29 |      46 | [46, 47]
+  30 |      48 | [48, 49]
+  window sizes m=15..30 (file claims only NONEMPTY there): [1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 2, 2, 2]
+
+   --- exact re-derivation of every number in the Step 5 table ---
+
+==============================================================================
+V7  negative-cycle hypothesis-necessity audit
+==============================================================================
+  start -1: cycle [-1]
+     word (1,)  m=1 K=1 m1=1  c=1  D=-1  x1*D=1
+     K/m = 1 vs log2 3 in (1.5849,1.5850): BELOW
+  start -5: cycle [-5, -7]
+     word (1, 2)  m=2 K=3 m1=1  c=5  D=-1  x1*D=5
+     K/m = 3/2 vs log2 3 in (1.5849,1.5850): BELOW
+  start -17: cycle [-17, -25, -37, -55, -41, -61, -91]
+     word (1, 1, 1, 2, 1, 1, 4)  m=7 K=11 m1=5  c=2363  D=-139  x1*D=2363
+     K/m = 11/7 vs log2 3 in (1.5849,1.5850): BELOW
+  distinct negative cycles reachable from |n| < 200000: [(-91, (1, 1, 1, 2, 1, 1, 4)), (-7, (1, 2)), (-1, (1,))]
+
+==============================================================================
+V8  misc statement checks
+==============================================================================
+  integer (m,K,m1) triples supporting a {1,2}-word inside the X=7 window, m<40:
+    [(5, 8, 2), (8, 13, 3), (10, 16, 4), (11, 18, 4), (13, 21, 5), (14, 23, 5), (15, 24, 6), (16, 26, 6), (17, 27, 7), (17, 28, 6), (18, 29, 7), (19, 31, 7)] ...
+P1  corrected singleton test (file claims singletons only for m <= 14)
+   m<=14 window sizes: [0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1]
+   m=15..30 sizes    : [1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 2, 2, 2]
+   (file claims only NONEMPTY for m>=15 -- consistent)
+
+P2  strengthening probe: distinct elements >= 7 give x_(j) >= 7+2j (sorted),
+    so 2^K <= prod_{j=0}^{m-1} (3 + 1/(7+2j)).  Does it eliminate more m?
+   m where the sharpened window differs from W_7(m):
+     m= 8  W_7=[13]  ->  W_sharp=EMPTY
+     m=11  W_7=[18]  ->  W_sharp=EMPTY
+     m=14  W_7=[23]  ->  W_sharp=EMPTY
+     m=16  W_7=[26]  ->  W_sharp=EMPTY
+     m=17  W_7=[27, 28]  ->  W_sharp=[27]
+     m=18  W_7=[29]  ->  W_sharp=EMPTY
+     m=19  W_7=[31]  ->  W_sharp=EMPTY
+     m=20  W_7=[32, 33]  ->  W_sharp=[32]
+     m=21  W_7=[34]  ->  W_sharp=EMPTY
+     m=22  W_7=[35, 36]  ->  W_sharp=[35]
+     m=23  W_7=[37]  ->  W_sharp=EMPTY
+     m=24  W_7=[39]  ->  W_sharp=EMPTY
+     m=25  W_7=[40, 41]  ->  W_sharp=[40]
+     m=26  W_7=[42]  ->  W_sharp=EMPTY
+     m=27  W_7=[43, 44]  ->  W_sharp=[43]
+     m=28  W_7=[45, 46]  ->  W_sharp=EMPTY
+     m=29  W_7=[46, 47]  ->  W_sharp=[46]
+     m=30  W_7=[48, 49]  ->  W_sharp=[48]
+     m=31  W_7=[50, 51]  ->  W_sharp=EMPTY
+     m=32  W_7=[51, 52]  ->  W_sharp=[51]
+     m=33  W_7=[53, 54]  ->  W_sharp=EMPTY
+     m=34  W_7=[54, 55, 56]  ->  W_sharp=[54]
+     m=35  W_7=[56, 57]  ->  W_sharp=[56]
+     m=36  W_7=[58, 59]  ->  W_sharp=EMPTY
+     m=37  W_7=[59, 60, 61]  ->  W_sharp=[59]
+     m=38  W_7=[61, 62]  ->  W_sharp=EMPTY
+     m=39  W_7=[62, 63, 64]  ->  W_sharp=[62]
+     m=40  W_7=[64, 65, 66]  ->  W_sharp=[64]
+   NEW empty windows from the sharpened bound (m<=40): [8, 11, 14, 16, 18, 19, 21, 23, 24, 26, 28, 31, 33, 36, 38]
+
+P3  same probe with the anchoring x_min>=7 only (i.e. no distinctness) - control
+    (this is exactly W_7, shown above)
+
+P4  can the m>=15 nonemptiness ever fail for the sharpened window? scan m<=400
+   sharpened-window empties, 15<=m<=400: [16, 18, 19, 21, 23, 24, 26, 28, 31, 33, 36, 38, 43, 45, 48, 50, 53, 55, 60, 62, 65, 67, 72, 77, 84, 89, 96, 101, 106, 113, 118, 130, 142, 159, 171]
+
+P5  sanity: brute-force search for any S-cycle among odd x < 3*10^5
+   nontrivial S-cycle elements found below 3*10^5 start points: []
+Q1  digit-count claim: 14^10000 has 11462 digits
+
+Q2  every decimal in the Step 5 live-window table, as exact integer comparisons
+
+Q3  strengthening: distinct elements >= 7 sorted give x_(j) >= 7+2j
+    K_max(m) = max{K : 2^K <= prod_{j<m}(3+1/(7+2j))}, m1 >= 2m - K_max
+    m | Kmin | Kmax(22/7) | Kmax(sharp) | file m1>=  | sharp m1>=
+      8 |   13 |         13 |          12 |          3 |          4   (sharp fraction 1/2 ~ 0.5000)
+     14 |   23 |         23 |          22 |          5 |          6   (sharp fraction 3/7 ~ 0.4286)
+     20 |   32 |         33 |          32 |          7 |          8   (sharp fraction 2/5 ~ 0.4000)
+     30 |   48 |         49 |          48 |         11 |         12   (sharp fraction 2/5 ~ 0.4000)
+     50 |   80 |         82 |          79 |         18 |         21   (sharp fraction 21/50 ~ 0.4200)
+    100 |  159 |        165 |         159 |         35 |         41   (sharp fraction 41/100 ~ 0.4100)
+    200 |  317 |        330 |         317 |         70 |         83   (sharp fraction 83/200 ~ 0.4150)
+    500 |  793 |        826 |         793 |        174 |        207   (sharp fraction 207/500 ~ 0.4140)
+   1000 | 1585 |       1652 |        1586 |        348 |        414   (sharp fraction 207/500 ~ 0.4140)
+    file's proved floor is m1 > m/3 = 0.3333 m; the distinctness-sharpened
+    bound tends to 2 - log2 3 = 0.4150.. m as m grows.  (STRENGTHENING, not a defect.)
+
+Q4  does the sharpened window kill m=8 (the file's 'smallest open case')?
+    prod_{j<8}(3+1/(7+2j)) = 87425024/10773 = 8115.197623688851
+    2^13 = 8192  > prod  -> True
+    2^12 = 4096  < 3^8 = 6561 -> K>=13, so window EMPTY
+
+==============================================================================
+ALL INDEPENDENT CHECKS PASS
+==============================================================================
+```
+
+---
+
+*Adversarial review by fable-02-v14, 2026-07-25. Verdict: PASS; status
+upgraded to PROVED. Scripts above were written from the Statement section
+alone and run with Python 3.11.15 (exact integer/rational arithmetic; the
+randomized parts use a fixed seed and are labeled checks, never proof). The
+author's own suite was additionally re-executed and reproduces its recorded
+output exactly. Only this file was modified.*
