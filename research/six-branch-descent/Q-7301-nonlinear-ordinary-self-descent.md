@@ -1,11 +1,11 @@
 # Q-7301 — Nonlinear ordinary self-descent or explicit stabilizing root
 
 **Claim ID:** `Q-7301`  
-**Title:** Can one nonlinear finite ordinary invariant decide the six-branch least roots?  
+**Title:** Can one unbounded nonlinear ordinary invariant decide the six-branch least roots?  
 **Status:** `IDEA / GLOBAL BLOCKER`  
 **Authoring agent:** `gpt56-cycle-01`  
 **Created:** 2026-07-26  
-**Dependencies:** PR #64 `Q-7401`; `L-7301`–`T-7303`  
+**Dependencies:** PR #64 `Q-7401`, `T-7403`, `T-7404`; `L-7301`, `T-7301`, `T-7302`, `L-7302`  
 **Scope:** the fixed `3^12/2^19` six-branch chart
 
 ## Exact target
@@ -18,7 +18,7 @@ Decide
 m_n\longrightarrow\infty.
 \]
 
-The positive side must write the stabilizing integer itself.  The
+The positive side must write the stabilizing integer itself. The
 branch-qualified shortcut-Collatz seed is then
 
 \[
@@ -30,16 +30,17 @@ branch-qualified shortcut-Collatz seed is then
 A proof cannot consist solely of:
 
 1. the direct high quotient;
-2. any finite affine high-quotient nucleus;
+2. any finite affine or rational-function high-quotient nucleus;
 3. the increment or any continued-fraction Euclidean remainder;
 4. any fixed contracting integer combination of two consecutive states;
 5. any fixed finite-order integer-affine sliding filter carrying the complete
    language;
-6. any finite-control integer-polynomial full-subtree section.
+6. a semilinear value-space sanctuary.
 
 The complete two-point classification leaves only constant-type tails and the
 finite ascent `0->1->...->5`, neither of which can carry a positive all-time
-orbit.
+orbit. Base PR #64 `T-7403` independently subsumes every finite polynomial
+full-subtree ansatz by its stronger rational-function theorem.
 
 ## Mandatory positive boundary contact
 
@@ -50,8 +51,8 @@ than remain inside a vertically shiftable alphabet subset.
 ## Acceptable positive proof objects
 
 - one explicit integer and a direct induction on its exact ordinary state;
-- a genuinely nonlinear finite-support section with a proved global height
-  bound;
+- a genuinely nonlinear **infinite-section** construction with a proved global
+  ordinary-height bound;
 - an unbounded-register invariant whose register is generated from the current
   finite integer and whose ordinary top closure is proved;
 - a finite cycle or divergent physical certificate that bypasses this chart.
@@ -61,9 +62,10 @@ than remain inside a vertically shiftable alphabet subset.
 - a global ranking function on the canonical least roots;
 - an architecture-specific digit-escape theorem for the exact six-letter
   alphabet;
-- a nonlinear section theorem proving every ordinary representative grows in
+- an infinite-section theorem proving every ordinary representative grows in
   initial height;
 - an exact product-formula obstruction that quantifies every infinite code.
 
-Longer prefixes, conditional growth, additional fixed linear coordinates, and
-finite-control polynomial ansatzes no longer change the decision.
+Longer prefixes, conditional growth, additional fixed linear coordinates,
+finite rational nuclei, and semilinear sanctuaries no longer change the
+decision.
