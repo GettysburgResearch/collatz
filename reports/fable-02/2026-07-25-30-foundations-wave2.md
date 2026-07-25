@@ -94,6 +94,13 @@ decided inside one CPython bignum stack; a GMP/PARI cross-check would close a co
 risk. `INDEPENDENTLY_VERIFIED` is set nowhere — every PROVED status rests on one in-repo
 reviewer, and a cross-model pass remains welcome.
 
+## Final tally
+
+22 lemma files in the packet, **18 PROVED** after independent in-repo adversarial review, 4
+complete-but-unreviewed (L-9919, L-9920, L-9921, L-9922). Two experiment packets (X-9902, X-9903),
+both independently verified. Verified floor 10⁶ → **10¹²**. Cycle bound m ≥ 6 → **m ≥ 10,781,274**
+(most-verified tier: m ≥ 190,537). Twenty-one prover/verifier sub-agents across the run.
+
 ## Files changed
 
 `research/foundations/`: L-9913, L-9915, L-9916, L-9917 (new), FOUNDATIONS.md (index);

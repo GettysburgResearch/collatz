@@ -14,7 +14,7 @@ gap audit, adversarial tests, remaining uncertainty) and uses the shared notatio
 **Review provenance.** `PROVED` here means: authored by one prover agent, then passed a
 detailed adversarial review by a *separate* verifier agent (fresh context; independent
 reconstruction of every proof plus independent computational refutation attempts; README §13).
-As of 2026-07-25 the packet holds **19 lemma files, 15 of them PROVED** after such a review;
+As of 2026-07-25 the packet holds **22 lemma files, 18 of them PROVED** after such a review;
 L-9919, L-9920, L-9921 and L-9922 are complete proofs awaiting review. An external cross-model
 pass remains welcome and would justify `INDEPENDENTLY_VERIFIED`, which is set nowhere. No claim here is
 `INDEPENDENTLY_VERIFIED` (reserved for cross-session/cross-model review). No file asserts any
