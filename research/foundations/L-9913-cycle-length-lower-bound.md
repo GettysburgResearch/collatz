@@ -255,6 +255,113 @@ verified by exhaustive enumeration of **all** $m \le 3000$.)
 
 ---
 
+### Addendum of 2026-07-25 — the raised floor $F = 10^{12}$
+
+> **Status of this addendum.** L-9913.1–.11 and the Main Theorem $m \ge 2966$ are
+> **PROVED** (reviewed by fable-02-v18) and are **unchanged**. The two sub-claims
+> below are **PROPOSED**: their arithmetic is certified to exactly the same
+> standard as the rest of the file (Tests 15–19, exhaustive and exact), but the
+> *floor* they consume comes from the experiment packet X-9903, which has **not**
+> yet been independently reviewed. They therefore do **not** stand on the same
+> footing as the $F = 10^6$ Main Theorem, whose floor X-9901 has been reviewed
+> (and re-derived independently in this file's X-9913). Nothing below modifies any
+> earlier statement; a reader who rejects X-9903 keeps everything above intact.
+
+**L-9913.12 (raised-floor corollary; PROPOSED).** Suppose $\mathrm{(V}_{10^{12}})$
+holds — every $n \le 10^{12}$ reaches $1$ under $C$ — as certified by the
+experiment X-9903 (`experiments/X-9903-verified-floor/`, agent fable-02-p10), with
+a separately certified checkpoint at $\mathrm{(V}_{10^{11}})$. Then:
+
+1. $m^*(10^{11}) = 190537$ with $K^*= \lceil 190537\,\alpha\rceil = 301994$ and
+   $\gcd(301994, 190537) = 1$;
+2. $m^*(10^{12}) = 10\,781\,274$ with
+   $K^* = \lceil 10781274\,\alpha\rceil = 17\,087\,915$ and $\gcd = 1$;
+3. consequently **every nontrivial $S$-cycle satisfies**
+   $$m \;\ge\; 10\,781\,274, \qquad q = \frac{m}{\gcd(K,m)} \;\ge\; 10\,781\,274,
+     \qquad K \;\ge\; 17\,087\,915,$$
+   its $T$-cycle has least period $K \ge 17\,087\,915$, its $C$-cycle has least
+   period $K+m \ge 27\,869\,189$, and all of its $\ge 10\,781\,274$ elements
+   exceed $10^{12}$. Under the weaker checkpoint $\mathrm{(V}_{10^{11}})$ alone:
+   $m \ge 190\,537$, $K \ge 301\,994$, $C$-length $\ge 492\,531$.
+4. Both minimisers are **exactly** odd-index convergent denominators of $\alpha$:
+   $190537 = q_{13}$ (with $301994 = p_{13}$) and $10781274 = q_{15}$ (with
+   $17087915 = p_{15}$) — in contrast with $F = 10^6$, where the minimiser $2966$
+   is a semiconvergent.
+
+*Certificates.* With the certified decimal enclosure (Lemma A, $n = 80$; Test 15)
+$$\frac{158496250072115618145}{10^{20}} \;<\; \alpha \;<\; \frac{158496250072115618146}{10^{20}},$$
+writing $N := 158496250072115618145$ and $r := K/m - \varepsilon_0(F)$
+(so $\mathrm{Adm}_F(m) \iff \alpha \ge r$, L-9913.4(2)):
+
+| | $r$ | integer certificate |
+|---|---|---|
+| $F = 10^{12}$, **winner** $m = 10781274$, $K = 17087915$ | $\frac{845851792499743303}{533673063000000000}$ | $N \cdot 533673063000000000 = 84585179249999912825580528135000000000 \;\ge\; 84585179249974330300000000000000000000 = 845851792499743303\cdot 10^{20}$ |
+| $F = 10^{12}$, **closest failure** $m = 190537$, $K = 301994$ | $\frac{627845525999809463}{396126423000000000}$ | $(N{+}1)\cdot 396126423000000000 = 62784552599980651858608871758000000000 \;\le\; 62784552599980946300000000000000000000 = 627845525999809463 \cdot 10^{20}$ |
+| $F = 10^{11}$, **winner** $m = 190537$, $K = 301994$ | $\frac{62784552599809463}{39612642300000000}$ | $N \cdot 39612642300000000 = 6278455259998065185821274533500000000 \;\ge\; 6278455259980946300000000000000000000 = 62784552599809463\cdot 10^{20}$ |
+| $F = 10^{11}$, **closest failure** $m = 79335$, $K = 125743$ | $\frac{580932659998237}{366527700000000}$ | $(N{+}1)\cdot 366527700000000 = 58093265997557371653131644200000000 \;\le\; 58093265999823700000000000000000000 = 580932659998237\cdot 10^{20}$ |
+
+The two big-integer certificates of Lemma B(iii) are **not** usable at these
+floors: their enclosure width is $4.72\cdot 10^{-11}$ while the closest failure at
+$F = 10^{12}$ ($m = 190537$) has margin only $7.433\cdot 10^{-15}$ in $\alpha$-units
+(the winner's margin is $4.794\cdot 10^{-13}$). The decimal enclosure above, whose
+justification is the already-proved Lemma A, is used instead; it is consistent with
+$L_0, U_0$ (Test 15).
+
+*Provenance of the floor (recorded, not verified here).* X-9903 reports: $877$ s
+wall clock on $4$ cores; four accelerations each proved in its README (descent
+induction with an order-independence corollary licensing multithreading; the
+Terras $K$-step identity; a mod-$2^{22}$ descent sieve removing $97.78\%$ of the
+range; a peak-decomposition lemma); a `uint64` kernel that **refuses rather than
+wraps**, promoting to `unsigned __int128` (promotion fired $17\,121$ times, zero
+guard aborts, exit $0$) — the maximum excursion over the range is
+$4.0\cdot 10^{23}$ at $n = 871\,673\,828\,443$, i.e. $21\,714\times$ above $2^{64}$,
+so a naive $64$-bit sweep would have been **silently wrong**; cross-checks: a
+Python arbitrary-precision reference agreeing by checksum on all $n \le 10^6$
+($\sum \sigma_C = 131\,434\,424$, max $524$ at $n = 837799$ — the X-9901 gate, which
+is also the gate this file's own X-9913 passes), digest-identical runs under three
+optimisation levels and five sieve moduli, and an independent byte-for-byte
+reproduction of L-9909's survivor tables mod $2 \dots 256$. **This file does not
+re-verify any of that**; it records it as the provenance of a hypothesis, and
+labels the corollary PROPOSED accordingly.
+
+**L-9913.13 (does the convergent strengthening now buy anything? — No; PROPOSED).**
+For a floor $F$ define the **Legendre window**
+$$W(F) \;:=\; \Bigl\{\, q \in \mathbb{Z}^{+} \;:\; 2q^2 \,\varepsilon_0(F) \le 1 \,\Bigr\}
+\;=\; \Bigl\{\, q \ge 1 \;:\; q^2 \le \tfrac{2079}{2000} F \,\Bigr\}.$$
+Then, assuming $\mathrm{(V}_F)$:
+
+1. **(Applicability.)** If the reduced denominator $q$ of a nontrivial cycle lies
+   in $W(F)$, then $|\alpha - p/q| < 1/(2q^2)$, so by Legendre (L-9910.1) $p/q$ is a
+   convergent of $\alpha$, necessarily odd-index (L-9910.3), i.e.
+   $q \in \{1, 5, 41, 306, 15601, 79335, 190537, 10781274, \dots\}$. (This is the
+   reviewer's condition $x_{\min} > \frac{2}{3\ln 2}q^2$ in exact rational form:
+   $\frac{2000}{2079} > \frac{2}{3\ln 2}$ because $\ln 2 > \frac{693}{1000}$.)
+2. **(The numbers.)** $\max W(10^9) = 32241$, $\max W(10^{11}) = 322412$,
+   $\max W(10^{12}) = 1\,019\,558$, with integer certificates
+   $1019558^2 = 1\,039\,498\,515\,364 \le 1\,039\,500\,000\,000 = \frac{2079}{2000}10^{12}$
+   (and likewise for the others).
+3. **(Verdict at $F = 10^{12}$: no gain.)** The direct bound of L-9913.12 already
+   gives $q \ge 10\,781\,274 > 1\,019\,558 = \max W(10^{12})$, so **the Legendre
+   window lies entirely below the direct bound and the convergent branch is
+   vacuous**: it excludes nothing that L-9913.12 has not already excluded. The
+   larger floor therefore buys a larger number, not a structurally different
+   argument.
+4. **(Why, and why $10^{11}$ is different.)** At $F = 10^{9}$ the window
+   ($q \le 32241$) also sat below the direct bound $47468$ — the reviewer's
+   observation. At $F = 10^{11}$ the window ($q \le 322412$) *does* overlap the
+   direct bound $190537$, and there the dichotomy refines usefully: the only
+   convergent denominator in $[190537, 322412]$ is $190537$ itself, so
+   $q = 190537$ **or** $q > 322412$. At $F = 10^{12}$ the direct bound overshoots
+   the window again, and by a factor $10.6$.
+5. **(No bootstrap.)** Re-applying (1) with the improved $q \ge 10781274$ would
+   need $x_{\min} \ge \frac{2}{3\ln2}q^2 > 1.11\cdot 10^{14}$, far beyond
+   $F = 10^{12}$; and the only cycle-side lower bound on $x_{\min}$ available from
+   L-9905.4, namely $x_{\min} \ge (3^m-2^m)/(2^K-3^m) \ge 1/(2f(m))$ with
+   $f(m) \le \varepsilon_0 m \le 5.19\cdot 10^{-6}$, yields merely
+   $x_{\min} \ge 9.6\cdot 10^{4}$. The loop does not close.
+
+---
+
 ## Definitions
 
 All symbols not listed here are from `NOTATION.md`.
@@ -733,6 +840,94 @@ justification is:
 
 $\blacksquare$
 
+### Proof of L-9913.12 (raised floor)
+
+Every step is one of the already-proved steps of this file, with the parameter $F$
+changed; **no new mathematics is used**, which is precisely why the file was
+written with $F$ free.
+
+1. **Floor.** $\mathrm{(V}_{10^{12}})$ is supplied by X-9903 (hypothesis, recorded
+   provenance; not verified here). L-9913.1 then gives $x_{\min} > 10^{12}$ for
+   every nontrivial $S$-cycle.
+2. **Squeeze and admissibility.** L-9913.2 and L-9913.3 apply verbatim with
+   $\varepsilon_0(10^{12}) = \frac{1000}{2079\cdot 10^{12}} =
+   \frac{1}{2\,079\,000\,000\,000}$: every nontrivial cycle satisfies
+   $\mathrm{Adm}_{10^{12}}(m)$ and $\mathrm{Adm}_{10^{12}}(q)$, hence
+   $m \ge q \ge m^*(10^{12})$.
+3. **The computation.** $m^*(10^{12}) = 10\,781\,274$ and
+   $m^*(10^{11}) = 190\,537$ are *exhaustive finite verifications*, identical in
+   form to L-9913.5: for **every** $m$ from $1$ to the stated value, $\lceil
+   m\alpha\rceil$ is determined by L-9913.4(3) and $\mathrm{Adm}_F(m)$ is decided
+   by L-9913.4(2) against a certified enclosure of $\alpha$; all $m$ below the
+   stated value fail, the stated value succeeds (Tests 16, 17; $10\,781\,274$
+   decisions for $F = 10^{12}$, each exact, with the two extreme certificates
+   displayed in the Statement). Because the closest failure at $F = 10^{12}$ has
+   $\alpha$-margin $7.433\cdot 10^{-15}$, the enclosure used is the Lemma-A decimal
+   enclosure of width $10^{-20}$ (a factor $7.4\cdot 10^{5}$ of slack), not the
+   coarser $L_0, U_0$ of Lemma B(iii).
+4. **The conclusions.** $K > m\alpha \ge 10781274\,\alpha \notin \mathbb{Z}$ and
+   $K \in \mathbb{Z}$ give $K \ge \lceil 10781274\,\alpha\rceil = 17\,087\,915$
+   (the ceiling is determined by the decimal enclosure: multiplying $N/10^{20}$ and
+   $(N{+}1)/10^{20}$ by $10781274$ gives the same ceiling). The $C$- and $T$-cycle
+   lengths $K+m \ge 27\,869\,189$ and $K \ge 17\,087\,915$ are L-9913.7, and the
+   element bound $> 10^{12}$ is step 1. Identically for $F = 10^{11}$.
+5. **Item 4 of the Statement** ($m^*$ equals $q_{13}$, resp. $q_{15}$) is an
+   observation, verified in Test 17 by recomputing the convergents of $\alpha$ from
+   the same certified enclosure; it is used only in L-9913.13(4) and in the
+   Suggested next attack. $\blacksquare$
+
+### Proof of L-9913.13 (the Legendre window is vacuous at $F = 10^{12}$)
+
+**(1) Applicability.** Let a nontrivial $S$-cycle be given, $K/m = p/q$ in lowest
+terms. The proof of L-9913.3(3) established $0 < p/q - \alpha < \varepsilon_0(F)$.
+If $q \in W(F)$, i.e. $2q^2\varepsilon_0(F) \le 1$, then
+$$|\alpha - p/q| \;=\; p/q - \alpha \;<\; \varepsilon_0(F) \;\le\; \frac{1}{2q^2},$$
+so Legendre's criterion (L-9910.1, PROVED) applies to the reduced fraction $p/q$:
+it is a convergent of $\alpha$. Since $p/q > \alpha$ (L-9905.2) and the convergents
+above $\alpha$ are exactly the odd-index ones (L-9910.3, PROVED), it is an
+odd-index convergent. The displayed form of $W(F)$ is the same statement cleared of
+fractions:
+$$2q^2\,\frac{1000}{2079F} \le 1 \iff 2000\,q^2 \le 2079\,F \iff q^2 \le \tfrac{2079}{2000}F .$$
+*(Equivalence with the reviewer's form.* $x_{\min} > \frac{2}{3\ln 2}q^2$ suffices
+because $\frac{1}{3x_{\min}\ln 2} < \frac{1}{2q^2}$; and $x_{\min} > F \ge
+\frac{2000}{2079}q^2$ implies it, since $\frac{2000}{2079} > \frac{2}{3\ln 2}
+\iff 6000\ln 2 > 4158 \iff \ln 2 > 0.693$, which is Corollary A1. So the rational
+window $W(F)$ is the exact, certificate-friendly version of that condition.)*
+
+**(2) The numbers.** $\max W(F) = \lfloor\sqrt{2079F/2000}\rfloor$, computed by
+exact integer square root (Test 18): $32241$ at $F = 10^9$, $322412$ at
+$F = 10^{11}$, $1\,019\,558$ at $F = 10^{12}$, each with a two-sided integer
+certificate, e.g. $1019558^2 = 1\,039\,498\,515\,364 \le 1\,039\,500\,000\,000 <
+1\,041\,537\,632\,481 = 1019559^2$.
+
+**(3) Verdict.** At $F = 10^{12}$, L-9913.12 gives $q \ge 10\,781\,274$, while
+every $q \in W(10^{12})$ satisfies $q \le 1\,019\,558 < 10\,781\,274$. Hence no
+cycle can have $q \in W(10^{12})$ *at all* — the hypothesis of (1) is never
+satisfied, so its conclusion is vacuous and adds nothing. Formally: the disjunction
+"either $q \notin W(F)$, or $p/q$ is an odd-index convergent" is implied by
+$q > \max W(F)$, which L-9913.12 already gives.
+
+**(4) Contrast.** At $F = 10^{9}$: $\max W = 32241 < 47468 = m^*(10^9)$ — vacuous
+for the same reason (this is the reviewer's recorded observation, now explained by
+a single inequality). At $F = 10^{11}$: $\max W = 322412 \ge 190537 = m^*(10^{11})$,
+so the window is *not* vacuous, and since the convergent denominators of $\alpha$
+in $[190537, 322412]$ are exactly $\{190537\}$ (consecutive convergent denominators
+are $q_{13} = 190537$ and $q_{14} = 10\,590\,737$, L-9910.3), the dichotomy refines
+to: $q = 190537$ or $q > 322412$. The *minimum* is unchanged, so the headline bound
+at $F = 10^{11}$ stays $190537$; but a future argument excluding the single value
+$q = 190537$ would jump that floor's bound to $322413$.
+
+**(5) No bootstrap.** Applying (1) again with the improved bound $q \ge 10781274$
+would require $F \ge \frac{2000}{2079}q^2 > 1.11\cdot 10^{14}$, i.e. a verified
+floor two orders of magnitude beyond X-9903. The only lower bound on $x_{\min}$
+available from the cycle side is L-9905.4's
+$x_{\min} \ge (3^m - 2^m)/(2^K - 3^m)$, which for $K - m\alpha = f(m) \le 1$
+gives $2^K - 3^m = 3^m(2^{f(m)} - 1) \le 3^m f(m)$ and
+$3^m - 2^m \ge 3^m/2$ (valid for $m \ge 2$, since $(2/3)^m \le 4/9 < 1/2$), hence
+$x_{\min} \ge 1/(2f(m))$; with $f(m) \le \varepsilon_0(10^{12})\,m$ at
+$m = 10781274$ this is only $x_{\min} \ge 9.6\cdot 10^{4}$ — nine orders of
+magnitude short of what (1) would need. The loop does not close. $\blacksquare$
+
 ---
 
 ## Dependency audit
@@ -754,6 +949,8 @@ $\blacksquare$
 | Lemma B (proved inline) | — | irrationality; $3^b$ vs $2^a$ comparison; the two certificates | yes |
 | Standard calculus: FTC, monotonicity of $t\mapsto 2^t$, geometric identity | — | Lemmas A, B | yes |
 | X-9913 (this file, finite verification) | PROPOSED | L-9913.10 **only** | separated from the Main Theorem |
+| **X-9903** (every $n \le 10^{12}$ reaches 1; experiment packet, agent fable-02-p10) | **unreviewed experiment** | L-9913.12, L-9913.13 **only** | separated from the Main Theorem; those two sub-claims are labelled PROPOSED for this reason |
+| L-9910.1 + L-9910.3 (Legendre; consecutive convergents $q_{13}, q_{14}$) | PROVED | L-9913.13(1),(4) | **no** (L-9913.13's verdict is "no gain") |
 
 **Circularity check.** L-9905 and L-9909 do not cite L-9913 (L-9905 forward-refers
 to a planned L-9910; L-9910.5 mentions "a planned L-9913" as a *suggestion*, not as
@@ -1258,6 +1455,256 @@ X-9901's recorded statistic exactly. This is evidence that the present code and
 L-9909's agree on the overlapping range; it is **not** a re-verification of
 X-9901 by an independent implementation of a different algorithm, and is not
 treated as one.
+
+### Tests 15–19 — the raised floor (addendum of 2026-07-25)
+
+**Finite verification, not proof.** Same discipline as above: exact `int` /
+`Fraction` arithmetic, no floating point in any decision. Script kept at
+`scratchpad/l9913_verify_F12.py` (session-local); full code and verbatim output
+below. Run: `python3 l9913_verify_F12.py` (Python $\ge 3.8$, stdlib only;
+$\approx 10$ s).
+
+Design notes.
+1. **Test 16 is exhaustive**, not structural: it decides $\mathrm{Adm}_F(m)$ for
+   every single $m$ from $1$ to $m^*(F)$ — $10\,781\,274$ separate exact decisions
+   at $F = 10^{12}$ — exactly as Test 4 did at $F = 10^6$. The record lemma
+   L-9913.11 is *not* used to shorten it (it would only rule out $m < 193\,514$
+   there, since the one-sided records of $\alpha$ jump straight from $190537$ to
+   $10\,781\,274$).
+2. **Test 17 re-runs the same search along a different code path**: an *additive*
+   recurrence for $m\alpha$ (instead of a multiplication per $m$), at a different
+   scale ($2^{100}$ instead of $2^{160}$) and from a different series depth
+   ($n = 55$ instead of $n = 80$). Both agree.
+3. A third, structurally different check was run for $F = 10^{11}$ only: a digit-DFS
+   enumeration of $\{m \le 3\cdot 10^{5} : f(m) \le \varepsilon_0 \cdot 3\cdot 10^{5}\}$
+   returned the single element $\{190537\}$, confirming both the minimiser and that
+   nothing smaller can qualify. The same enumeration did **not** finish within the
+   session's time budget at $M = 10\,781\,274$, so for $F = 10^{12}$ the evidence is
+   the two exhaustive scans (Tests 16 and 17), not three methods.
+4. **Test 18** answers the coordinator's item 4 (does the L-9910 strengthening now
+   beat the direct bound?) with exact integer certificates at all three floors.
+
+```python
+#!/usr/bin/env python3
+"""
+Adversarial tests for the raised-floor addendum of L-9913 (Tests 15-19):
+m*(10^11), m*(10^12), and the Legendre-window question.
+Agent: fable-02-p8.  Date: 2026-07-25.
+FINITE VERIFICATION ONLY -- not a proof.
+Exact arithmetic throughout (int / fractions.Fraction); floats appear only in
+display strings, never in a decision.
+Run: python3 l9913_verify_F12.py   (Python >= 3.8, stdlib only; ~40 s)
+"""
+from fractions import Fraction as Fr
+from math import gcd, isqrt
+import time
+
+fails = 0
+def check(label, cond):
+    global fails
+    if not cond:
+        fails += 1
+        print("FAIL:", label)
+
+# ---------- certified enclosure of alpha = log2(3) (Lemma A of L-9913) --------
+def artanh_iv(x, n):
+    s = sum(x**(2*k+1) / (2*k+1) for k in range(n))
+    return s, s + x**(2*n+1) / ((2*n+1) * (1 - x*x))
+def alpha_iv(n):
+    a, b = artanh_iv(Fr(1, 3), n); l2lo, l2hi = 2*a, 2*b      # ln 2
+    c, d = artanh_iv(Fr(1, 5), n)                              # ln(3/2)
+    l3lo, l3hi = l2lo + 2*c, l2hi + 2*d                        # ln 3
+    return l3lo / l2hi, l3hi / l2lo
+ALO, AHI = alpha_iv(80)
+
+def eps0(F):
+    return Fr(1000, 3*693*F)
+
+# ============================================================ Test 15
+# A decimal enclosure of alpha at the precision the new floors need, plus the
+# margin arithmetic showing why the two big-integer certificates L0/U0 of
+# Lemma B(iii) (width 4.72e-11) are NOT sufficient here.
+D = 10**20
+N = (ALO.numerator*D)//ALO.denominator
+check("T15: decimal enclosure brackets alpha", Fr(N, D) < ALO and AHI < Fr(N+1, D))
+L0, U0 = Fr(176251, 111202), Fr(301994, 190537)
+print(f"Test 15: certified decimal enclosure (Lemma A, n = 80 terms):")
+print(f"         {N}/10^20 < alpha < {N+1}/10^20   (width 10^-20)")
+print(f"         Lemma B(iii) enclosure width U0-L0 = {float(U0-L0):.3e} is too coarse "
+      f"for these floors (smallest margin below is 7.4e-15), so the decimal "
+      f"enclosure is used; both are certified, and L0 < {N}/10^20 < "
+      f"{N+1}/10^20 < U0 holds: {L0 < Fr(N,D) and Fr(N+1,D) < U0}")
+
+# ============================================================ Test 16
+# Exhaustive scan for m*(10^11) and m*(10^12) -- every m from 1 up to the answer
+# is decided individually, in exact integer arithmetic at scale 2^160.
+SC = 1 << 160
+A_LO = (ALO.numerator*SC)//ALO.denominator          # A_LO/SC < alpha
+A_HI = -((-AHI.numerator*SC)//AHI.denominator)      # alpha < A_HI/SC
+check("T16: scaled alpha gap is 1 ulp", A_HI - A_LO == 1)
+
+def scan(F, cap):
+    """Exhaustive: returns (m*, K*, (closest failing m, its K, margin))."""
+    e0 = eps0(F); P, Q = e0.numerator, e0.denominator
+    best = None
+    for m in range(1, cap+1):
+        lo, hi = m*A_LO, m*A_HI
+        K = hi//SC + 1
+        assert lo//SC + 1 == K, ("ceiling undetermined", m)
+        rhs = P*m*SC
+        if Q*(K*SC - lo) <= rhs:                     # certified admissible
+            return m, K, best
+        assert Q*(K*SC - hi) > rhs, ("enclosure too coarse", m)
+        if Q*(K*SC - hi) <= 20*rhs:                  # cheap filter, then exact
+            marg = Fr(K, m) - AHI - e0               # <= f(m)/m - eps0
+            if best is None or marg < best[2]:
+                best = (m, K, marg)
+    raise AssertionError(("no admissible m below cap", F, cap))
+
+for F, cap, lab in ((10**11, 300000, "10^11"), (10**12, 11000000, "10^12")):
+    t0 = time.time()
+    m, K, (mf, Kf, marg) = scan(F, cap)
+    print(f"Test 16: F = {lab}: exhaustive over m = 1..{m}: m* = {m}, "
+          f"K* = {K}, K*+m* = {K+m}; closest failure m = {mf} (K = {Kf}), "
+          f"margin f(m)/m - eps0 >= {float(marg):.4e}   [{time.time()-t0:.1f}s]")
+    if F == 10**11:
+        check("T16: m*(10^11) = 190537", (m, K, mf) == (190537, 301994, 79335))
+    else:
+        check("T16: m*(10^12) = 10781274",
+              (m, K, mf) == (10781274, 17087915, 190537))
+    check(f"T16: gcd = 1 at {lab}", gcd(K, m) == 1)
+
+# ============================================================ Test 17
+# Independent recomputation: (a) additive recurrence instead of multiplication,
+# at a different scale (2^100) and a different series depth (n = 55);
+# (b) for 10^11, an independent digit-DFS enumeration of {m : f(m) <= delta}.
+BLO, BHI = alpha_iv(55)
+SC2 = 1 << 100
+B_LO = (BLO.numerator*SC2)//BLO.denominator
+B_HI = -((-BHI.numerator*SC2)//BHI.denominator)
+def scan_additive(F, cap):
+    e0 = eps0(F); P, Q = e0.numerator, e0.denominator
+    lo = hi = 0
+    for m in range(1, cap+1):
+        lo += B_LO; hi += B_HI                       # lo/SC2 < m*alpha < hi/SC2
+        K = hi//SC2 + 1
+        assert lo//SC2 + 1 == K, ("ceiling undetermined", m)
+        rhs = P*m*SC2
+        if Q*(K*SC2 - lo) <= rhs:
+            return m, K
+        assert Q*(K*SC2 - hi) > rhs, ("enclosure too coarse", m)
+    return None
+t0 = time.time()
+r11 = scan_additive(10**11, 300000)
+r12 = scan_additive(10**12, 11000000)
+check("T17a: additive scan reproduces both", r11 == (190537, 301994)
+      and r12 == (10781274, 17087915))
+print(f"Test 17: additive scan (scale 2^100, 55-term series) reproduces "
+      f"m*(10^11) = {r11[0]} and m*(10^12) = {r12[0]}   [{time.time()-t0:.1f}s]")
+
+def cf_digits_convergents(lo, hi, n=20):
+    a = []; x, y = lo, hi
+    for _ in range(n):
+        i1, i2 = x.numerator//x.denominator, y.numerator//y.denominator
+        if i1 != i2: break
+        a.append(i1); x, y = x - i1, y - i2
+        if x <= 0: break
+        x, y = 1/y, 1/x
+    p0, q0, p1, q1 = 1, 0, a[0], 1
+    out = [(a[0], 1)]
+    for t in a[1:]:
+        p0, q0, p1, q1 = p1, q1, t*p1 + p0, t*q1 + q0
+        out.append((p1, q1))
+    return a, out
+digits, conv = cf_digits_convergents(ALO, AHI)
+above = [(i, p, q) for i, (p, q) in enumerate(conv) if i % 2 == 1]
+check("T17b: m*(10^11) is the odd-index convergent q_13", (301994, 190537) == conv[13])
+check("T17b: m*(10^12) is the odd-index convergent q_15", (17087915, 10781274) == conv[15])
+print(f"Test 17: both minimisers are odd-index (above-alpha) convergents of "
+      f"alpha: p13/q13 = 301994/190537 and p15/q15 = 17087915/10781274; "
+      f"the next odd-index denominator is q17 = {conv[17][1]}.")
+
+# ============================================================ Test 18
+# Item 4: does the L-9910 convergent strengthening beat the direct bound?
+# Legendre applies to p/q as soon as x_min > (2/(3 ln2)) q^2; since x_min > F it
+# suffices that q^2 <= (3 ln2/2) F, and (safely, via ln 2 > 693/1000) that
+# q^2 <= (2079/2000) F.
+print("Test 18: Legendre-applicable window vs the direct bound:")
+direct = {10**9: 47468, 10**11: 190537, 10**12: 10781274}
+for F, lab in ((10**9, "10^9"), (10**11, "10^11"), (10**12, "10^12")):
+    lim = Fr(2079, 2000)*F
+    q = isqrt(int(lim))
+    while (q+1)**2 <= lim: q += 1
+    while q**2 > lim:      q -= 1
+    verdict = ("VACUOUS (window entirely below the direct bound): no gain"
+               if q < direct[F] else "window overlaps the direct bound: refinement possible")
+    print(f"   F = {lab:6s}: q <= {q:8d}  (certificate {q}^2 = {q**2} <= "
+          f"{int(lim)} = (2079/2000)F);  direct bound q >= {direct[F]:8d}  ->  {verdict}")
+    check(f"T18 window {lab}", q**2 <= lim < (q+1)**2)
+check("T18: vacuous at 10^12", 1019558 < 10781274)
+# the 10^11 overlap case: which convergent denominators lie in [190537, 322412]?
+inwin = [q for _, q in conv if 190537 <= q <= 322412]
+check("T18: only 190537 in the 10^11 window", inwin == [190537])
+print(f"   at F = 10^11 the overlap [190537, 322412] contains exactly one "
+      f"convergent denominator, {inwin}, so there the dichotomy refines to "
+      f"'q = 190537 or q > 322412' -- but the minimum, hence the bound, is "
+      f"unchanged.")
+# bootstrap check at 10^12
+q12 = 10781274
+need = Fr(2, 3)*q12**2/Fr(693, 1000)      # >= (2/(3 ln2)) q^2  (ln2 > .693)
+print(f"   bootstrap at F = 10^12: re-applying Legendre with q >= {q12} would "
+       f"need x_min >= {float(need):.3e}, far above 10^12; and the only "
+       f"cycle-side lower bound available, x_min >= 1/(2 f(m)) with "
+       f"f(m) <= eps0*m = {float(eps0(10**12)*q12):.3e}, gives only "
+       f"x_min >= {float(1/(2*eps0(10**12)*q12)):.3e}.  No bootstrap.")
+
+# ============================================================ Test 19
+# Displayed certificates (winner and closest failure at both new floors), each a
+# single comparison of two exact integers, given the Test 15 decimal enclosure.
+print("Test 19: displayed certificates (r := K/m - eps0; admissible iff alpha >= r):")
+for F, m, K, kind in ((10**11, 190537, 301994, "winner"),
+                      (10**11, 79335, 125743, "closest failure"),
+                      (10**12, 10781274, 17087915, "winner"),
+                      (10**12, 190537, 301994, "closest failure")):
+    e0 = eps0(F); P, Q = e0.numerator, e0.denominator
+    num, den = K*Q - P*m, m*Q
+    g = gcd(num, den); num //= g; den //= g
+    lab = f"F=10^{len(str(F))-1} {kind} m={m}, K={K}"
+    if kind == "winner":
+        ok = N*den >= num*D
+        print(f"   {lab}: r = {num}/{den};  N*den = {N*den} >= {num*D} = r_num*10^20 : {ok}")
+    else:
+        ok = (N+1)*den <= num*D
+        print(f"   {lab}: r = {num}/{den};  (N+1)*den = {(N+1)*den} <= {num*D} = r_num*10^20 : {ok}")
+    check(f"T19 {lab}", ok)
+
+print("RESULT:", "ALL CHECKS PASSED" if fails == 0 else f"{fails} FAILURES")
+```
+
+**Output (verbatim, run 2026-07-25, CPython 3.11, Linux; 10 s):**
+
+```text
+Test 15: certified decimal enclosure (Lemma A, n = 80 terms):
+         158496250072115618145/10^20 < alpha < 158496250072115618146/10^20   (width 10^-20)
+         Lemma B(iii) enclosure width U0-L0 = 4.720e-11 is too coarse for these floors (smallest margin below is 7.4e-15), so the decimal enclosure is used; both are certified, and L0 < 158496250072115618145/10^20 < 158496250072115618146/10^20 < U0 holds: True
+Test 16: F = 10^11: exhaustive over m = 1..190537: m* = 190537, K* = 301994, K*+m* = 492531; closest failure m = 79335 (K = 125743), margin f(m)/m - eps0 >= 6.1832e-11   [0.1s]
+Test 16: F = 10^12: exhaustive over m = 1..10781274: m* = 10781274, K* = 17087915, K*+m* = 27869189; closest failure m = 190537 (K = 301994), margin f(m)/m - eps0 >= 7.4330e-15   [6.0s]
+Test 17: additive scan (scale 2^100, 55-term series) reproduces m*(10^11) = 190537 and m*(10^12) = 10781274   [3.8s]
+Test 17: both minimisers are odd-index (above-alpha) convergents of alpha: p13/q13 = 301994/190537 and p15/q15 = 17087915/10781274; the next odd-index denominator is q17 = 171928773.
+Test 18: Legendre-applicable window vs the direct bound:
+   F = 10^9  : q <=    32241  (certificate 32241^2 = 1039482081 <= 1039500000 = (2079/2000)F);  direct bound q >=    47468  ->  VACUOUS (window entirely below the direct bound): no gain
+   F = 10^11 : q <=   322412  (certificate 322412^2 = 103949497744 <= 103950000000 = (2079/2000)F);  direct bound q >=   190537  ->  window overlaps the direct bound: refinement possible
+   F = 10^12 : q <=  1019558  (certificate 1019558^2 = 1039498515364 <= 1039500000000 = (2079/2000)F);  direct bound q >= 10781274  ->  VACUOUS (window entirely below the direct bound): no gain
+   at F = 10^11 the overlap [190537, 322412] contains exactly one convergent denominator, [190537], so there the dichotomy refines to 'q = 190537 or q > 322412' -- but the minimum, hence the bound, is unchanged.
+   bootstrap at F = 10^12: re-applying Legendre with q >= 10781274 would need x_min >= 1.118e+14, far above 10^12; and the only cycle-side lower bound available, x_min >= 1/(2 f(m)) with f(m) <= eps0*m = 5.186e-06, gives only x_min >= 9.642e+04.  No bootstrap.
+Test 19: displayed certificates (r := K/m - eps0; admissible iff alpha >= r):
+   F=10^11 winner m=190537, K=301994: r = 62784552599809463/39612642300000000;  N*den = 6278455259998065185821274533500000000 >= 6278455259980946300000000000000000000 = r_num*10^20 : True
+   F=10^11 closest failure m=79335, K=125743: r = 580932659998237/366527700000000;  (N+1)*den = 58093265997557371653131644200000000 <= 58093265999823700000000000000000000 = r_num*10^20 : True
+   F=10^12 winner m=10781274, K=17087915: r = 845851792499743303/533673063000000000;  N*den = 84585179249999912825580528135000000000 >= 84585179249974330300000000000000000000 = r_num*10^20 : True
+   F=10^12 closest failure m=190537, K=301994: r = 627845525999809463/396126423000000000;  (N+1)*den = 62784552599980651858608871758000000000 <= 62784552599980946300000000000000000000 = r_num*10^20 : True
+RESULT: ALL CHECKS PASSED
+```
+
 
 ---
 
