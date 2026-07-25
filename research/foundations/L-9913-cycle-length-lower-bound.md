@@ -5,11 +5,13 @@ Claim ID:      L-9913
 Title:         Unconditional lower bounds for nontrivial Syracuse cycles: every
                nontrivial cycle has at least 2966 odd elements (elementary, no
                Baker-type input), with the verified floor F as a free parameter
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p8
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v18 (adversarial review 2026-07-25: PASS)
 Created:       2026-07-25
-Last updated:  2026-07-25
+Last updated:  2026-07-25 (fable-02-v18 independent adversarial review; status
+               PROPOSED -> PROVED; two documentation fixes; verification note
+               appended; no mathematical statement changed)
 Dependencies:  research/foundations/NOTATION.md (D-9901, D-9902, D-9903, D-9904,
                  D-9905, D-9908, D-9909; empty-sum conventions).
                L-9905 (Status: PROVED, fable-02-v4) — LOAD-BEARING: L-9905.2
@@ -462,10 +464,13 @@ $m = q\cdot\gcd(K,m) \ge q$. $\blacksquare$
 > not $m$ per se. This file never assumes $m$ is an approximation denominator.
 > Two independent routes are available and both are proved above: applying
 > $\mathrm{Adm}_F$ directly to $m$ (legitimate, by (2)), and applying it to $q$
-> (by (3)). They give the same numerical bound here because
-> $\mathrm{Adm}_F$ is closed upward under multiples (part (1)), so
-> $\min\{m : \mathrm{Adm}_F(m)\} = \min\{q : \mathrm{Adm}_F(q)\}$ trivially — the
-> two minima are over the same set. The stronger of the two conclusions,
+> (by (3)). They give the same *numerical* bound for the trivial reason that
+> $\mathrm{Adm}_F$ is one predicate on one index set, so
+> $\min\{m : \mathrm{Adm}_F(m)\}$ and $\min\{q : \mathrm{Adm}_F(q)\}$ are the same
+> number $m^*(F)$ by definition — not because of upward closure. (Upward closure,
+> part (1), is a separate true fact, used only to describe the *shape* of the
+> admissible set; it is not needed for either bound.) The stronger of the two
+> conclusions,
 > $q \ge m^*(F)$, is the one recorded in the Main Theorem. It is genuinely
 > stronger: it also says $m$ is a multiple of some admissible $q \ge 2966$.
 > *(Verified computationally: the minimiser $2966$ is itself reduced,
@@ -629,7 +634,13 @@ $A - B \in (0,1)$, so the new $A' = (P+Q) - (u+v)\alpha = A - B \in (0,1)$, the 
 $B$ is unchanged, and $(P+Q)v - Q(u+v) = Pv - Qu = 1$. If $A < B$: symmetrically
 $B' = B - A \in (0,1)$, $A$ unchanged, and $P(u+v) - (Q+P)u = Pv - Qu = 1$. So
 $(\dagger)$ and $A,B \in (0,1)$ persist, and $u+v$ strictly increases at every
-step (each of $u, v$ is nondecreasing). Also, by construction $A = P - u\alpha$ with $P$ an integer and
+step (each of $u, v$ is nondecreasing). *Both branches are taken infinitely
+often*, so the record sequence $u_1 < u_2 < \dots$ is infinite: if from some
+stage on only the $A<B$ branch were taken, $B$ would decrease by the fixed
+$A > 0$ at each step and become $\le 0$ after $\lceil B/A\rceil$ steps,
+contradicting $B \in (0,1)$; symmetrically for the other branch. (Needed only so
+that the block-skipping consequence below covers every $m$; the Main Theorem does
+not use this lemma at all.) Also, by construction $A = P - u\alpha$ with $P$ an integer and
 $A \in (0,1)$, which forces $P = \lceil u\alpha\rceil$ and $A = f(u)$; similarly
 $Q = \lfloor v\alpha\rfloor$ and $B = g(v) = \{v\alpha\}$.
 
@@ -1247,6 +1258,11 @@ treated as one.
    fable-02-p10) targets the same quantity; whichever floor it certifies,
    L-9913.9's table converts it into a bound with no further proof. Note that a
    reviewer rejecting X-9913 entirely still keeps the Main Theorem's $m \ge 2966$.
+   **Update (fable-02-v18, 2026-07-25):** the "single-implementation" caveat is now
+   partly discharged — the reviewer re-ran the full $n \le 10^{9}$ descent sweep in
+   an independent C implementation (128-bit intermediates, explicit peak-value
+   overflow audit) and reproduced all four decades bit-for-bit, including the
+   max-drop statistics. See the Verification note, §4.
 3. **$F = 2^{68}$ row is a bracket, deliberately.** The block-skipping bound gives
    $m^*(2^{68}) \ge 8\,961\,554\,427$ and an explicit admissible $m$ gives
    $m^*(2^{68}) \le 72\,057\,431\,991$; roughly $8$ candidates lie between (a
