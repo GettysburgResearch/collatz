@@ -1,0 +1,36 @@
+universal ceiling  H_2(log2/log3) = 0.949956   codim 0.050044
+
+    q     k       k/q   D = C(q-1,k-1)      dim    codim      gap  depth L below 2^64
+    6     4   0.66667               10  0.55365  0.44635  0.39630                 143
+   19    12   0.63158            31824  0.78725  0.21275  0.16270                 301
+   24    16   0.66667           490314  0.78764  0.21236  0.16232                 301
+   41    26   0.63415      40225345056  0.85920  0.14080  0.09075                 455
+   65    42   0.64615          ~2^57.0  0.87732  0.12268  0.07263                 522
+   84    53   0.63095          ~2^75.7  0.90066  0.09934  0.04930                 644
+  106    67   0.63208          ~2^96.3  0.90847  0.09153  0.04149                 699
+  200   127   0.63500         ~2^184.6  0.92300  0.07700  0.02695                 831
+  400   253   0.63250         ~2^374.2  0.93559  0.06441  0.01436                 994
+ 1000   631   0.63100         ~2^944.0  0.94398  0.05602  0.00598                1142
+ 2000  1262   0.63100        ~2^1893.4  0.94669  0.05331  0.00327                1201
+
+six-branch chart (q=19 but D=6, not C(18,11)=31824):  dim=0.13605  codim=0.86395  depth below 2^64 = 74
+universal floor (codim 0.05004):                              depth below 2^64 = 1279
+
+--- refuted guess: are convergents of log3/log2 the best block lengths? ---
+(numerators of the convergents are block lengths q, denominators are odd-step counts)
+     q    dim(q)   max dim over q+-5  local max?    k/q - alpha
+     8  0.549040            0.701295       False    +0.11907025
+    19  0.787254            0.801573       False    +0.00064919
+    65  0.877321            0.890258       False    +0.01522409
+    84  0.900655            0.901152       False    +0.00002263
+   485  0.937227            0.938712       False    +0.00205994
+  1054  0.944301            0.944301        True    +0.00000004
+
+REFUTED.  Convergents are where k/q is closest to alpha (the last column confirms it: q=84
+gives +2.3e-5, q=1054 gives +4e-8), but that is a different objective from maximising dim.
+dim(q) = log2 C(q-1,k-1)/q is largest when k/q is closest to 1/2, i.e. when the smallest
+expanding k is as small as possible relative to q; it grows with q toward the ceiling almost
+regardless of arithmetic quality.  Convergents matter for the CYCLE lane, where 2^q - 3^k must
+be small (T-6140A), not for the dimension of a divergence chart.
+
+Design criterion that survives: take q large.  dim -> H_2(alpha) = 0.949956 as q -> infinity.

@@ -254,13 +254,32 @@ than the best conceivable architecture at the same depth.
 
 Two directions, both concrete:
 
-1. **Use the criterion.** If the project wants a searchable architecture, maximise `d`. A
-   `(k,q)` chart with large `q` and `k/q` just above `alpha` has `d -> H_2(alpha)`; the full
-   `(41,65)` chart already reaches `0.889`. Such a chart's least roots grow like `2^(0.111 L)`
-   instead of `2^(0.864 L)`, making depths of several hundred Collatz steps reachable. This
-   will produce impressive-looking deep survivors and, by point 2 of the motivation, **still
-   prove nothing about existence** — which is precisely why it should be attempted with that
-   expectation stated in advance.
+1. **Use the criterion.** If the project wants a *searchable* architecture, maximise `d`. The
+   only thing that matters is block length: taking the smallest expanding `k` for each `q`,
+
+   | `q` | `k` | `D = C(q-1,k-1)` | `dim` | depth `L` reachable below `2^64` |
+   |---:|---:|---:|---:|---:|
+   | 19 (six-branch, `D=6`) | 12 | 6 | 0.13605 | **74** |
+   | 19 (full) | 12 | 31824 | 0.78725 | 301 |
+   | 84 | 53 | `~2^75.7` | 0.90066 | 644 |
+   | 2000 | 1262 | `~2^1893` | 0.94669 | 1201 |
+   | universal floor | | | 0.94996 | **1279** |
+
+   The last column is `64/(1-d)`: how many Collatz steps of confinement a complete search
+   below `2^64` can exhibit. The six-branch chart gets 74; a well-chosen chart gets over a
+   thousand from the same search budget. Computed in
+   `experiments/X-6135-universal-floor/best_charts.py`.
+
+   Such a chart will produce impressive-looking deep survivors and, by point 2 of the
+   motivation, **still prove nothing about existence** — which is precisely why it should be
+   attempted only with that expectation stated in advance.
+
+   *Recorded negative (tested here, refuted).* The natural guess that the continued-fraction
+   convergents of `log3/log2` — `q = 19, 65, 84, 485, 1054` — are the best block lengths is
+   **false**: they are where `k/q` is closest to `alpha`, but `dim` is maximised where `k/q` is
+   closest to `1/2`, and `dim(q)` is not even a local maximum at `q = 19, 65, 84, 485`.
+   Convergents govern the cycle lane (where `2^q - 3^k` must be small, T-6140A), not the
+   dimension of a divergence chart.
 2. **Accept the reframing.** Since no architecture can escape measure zero, the positive lane
    cannot be rescued by better engineering. Any future existence proof must come from a
    source-specific forcing identity (M-6120 Gate 2), and the project's effort is better spent
