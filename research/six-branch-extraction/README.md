@@ -90,7 +90,7 @@ but `L-7401` proves that the canonical first digit of the high quotient `k` is o
 
 The simplest recursive root descent fails universally, not just on sampled words.
 
-## New result 2 — the full affine self-section is rigid
+## New result 2 — the six-state affine self-section is rigid
 
 `T-7401` allows an arbitrary positive scale, six state-dependent integer translations, and a separate permutation of the six outgoing symbols at each state.
 
@@ -108,7 +108,23 @@ y=Pk+c_i=F(x),
 
 namely the original expanding forward map.
 
-There is no contracting or seed-preserving affine self-replicating subtree.
+## New result 3 — no finite affine nucleus can repair it
+
+`T-7402` permits an arbitrary finite control graph, state-dependent affine coordinates, and successor control depending on the chosen next type.
+
+Coefficient comparison first forces one common scale. After the digit alphabet is normalized, the remaining section carries would have to form a finite nonempty integer set closed under all six maps
+
+\[
+T_i(h)={Ph-ma_i\over Q}.
+\]
+
+A max–min argument excludes `m>0` and `m<0`; for `m=0`, expansion by `P/Q>1` forces the carry set to be `{0}`. Therefore every finite affine nucleus again collapses to
+
+\[
+y=F(x).
+\]
+
+There is no contracting, bounded, or seed-preserving affine self-replicating subtree at any finite-control size.
 
 ## Global assessment
 
@@ -128,9 +144,10 @@ The explicit supercritical ghost constructions in PR #56 / PR #57 prove that fin
 1. `claims/D-7401-six-branch-minimal-word-system.md`
 2. `claims/L-7401-high-quotient-section.md`
 3. `claims/T-7401-affine-section-rigidity.md`
-4. `Q-7401-least-root-decision.md`
-5. `GLOBAL_BLOCKER_ASSESSMENT.md`
-6. `CLAIM_INVENTORY.md`
+4. `claims/T-7402-finite-affine-nucleus-rigidity.md`
+5. `Q-7401-least-root-decision.md`
+6. `GLOBAL_BLOCKER_ASSESSMENT.md`
+7. `CLAIM_INVENTORY.md`
 
 ## Scope boundary
 
@@ -138,7 +155,8 @@ This packet does not decide the least-root sequence and does not produce a Colla
 
 1. freeze one exact strict global decision;
 2. state honestly which side is a true reduction;
-3. prove that the obvious affine recursive extraction cannot work;
-4. prevent further local machinery from being mistaken for ordinary existence.
+3. prove that direct quotient descent fails;
+4. prove that every finite affine recursive extraction collapses to the forward map;
+5. prevent further local machinery from being mistaken for ordinary existence.
 
 The next valid theorem must either write the stabilizing root or prove the least roots escape.
