@@ -1,0 +1,10 @@
+word 1110: T^4(x) = (27x + 19)/2^4      claimed (27x+19)/16 : True
+fixed point x = -19/11                        claimed -19/11      : True
+orbit: -19/11 -> -23/11 -> -29/11 -> -38/11 -> -19/11
+closes after 4 steps: True;  claimed -19/11,-23/11,-29/11,-38/11 : True
+multiplier 27/16 = 1.6875 > 1, so any positive realisation would grow: True
+
+(the H formula is negative exactly when 3^(2r+1) > 2^(3r+2), i.e. r >= 3; the brief restricts to r >= 3, and r = 2 is shown here only as the boundary)
+g_2 = 256/13
+g_3 = -2048/139   claimed -2048/139 : True
+g_4 = -16384/3299

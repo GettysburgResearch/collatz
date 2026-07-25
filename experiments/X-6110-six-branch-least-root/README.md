@@ -39,6 +39,7 @@ all-time seed, and by T-6101 to a divergent Collatz orbit).
 | `transitions.py` | explicit witnesses that all 36 ordered branch transitions occur (T-6102) |
 | `ghosts.py` | native ghost family; exhaustive integral-ghost search over all words `L <= 8` |
 | `window.py` | finite decision of all integer periodic orbits (the 25 window candidates) |
+| `audit_premises.py` | independent check of the two native-ghost examples supplied in the brief |
 | `results/` | raw output of the `2^256` run and the derived tables |
 
 ## Commands
