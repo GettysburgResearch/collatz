@@ -72,6 +72,14 @@ specific reasons to expect it is not decidable by the available techniques.
 * **T-6140** (PROVED) — lane dichotomy: cycle target countable/dimension `0`/vanishing
   quantity, divergence target continuum/dimension `0.94996`/no vanishing quantity; transfer is
   asymmetric.
+* **T-6141** (PROVED) / **X-6150** — the dichotomy cashed out on the cycle side. From
+  `prod(3+1/n_i) = 2^q` comes the pure-integer bound `m <= k 2^q/(3(2^q - 3^k))`; with
+  Legendre and the verification bound `B` this excludes every convergent below the threshold,
+  giving `k >= 4.9548e10` odd elements and `q >= 7.8531e10` steps at `B = 2^71`. Tight on the
+  trivial cycle. Two minutes of exact arithmetic here excluded an infinite family; 94 billion
+  search nodes in the divergence lane excluded nothing. That contrast is the point.
+* **SYNTHESIS.md** — one page giving the quantitative profile these results force on any
+  counterexample, in both lanes, with every number sourced. No new claims.
 
 ## Candidate counterexamples
 
@@ -122,6 +130,23 @@ reports/claude-opus5-61/2026-07-25-58-six-branch-least-root.md
 New: T-6101, T-6102, T-6103, L-6105, X-6110, C-6111, R-6112, T-6121, M-6120.
 Independently reconstructed (not re-derived from their sources): PR #57 `T-7601` and PR #56
 `T-7801`, both equal to L-6105(d).
+
+## Second pass (same session, after the first write-up)
+
+Stepping back from the six-branch chart to the shape of the problem produced the results that
+matter more than anything in the first pass:
+
+* the open question I had left myself is **closed**, negatively (T-6131);
+* the reason every positive lane hits the same wall is now a theorem about the target rather
+  than an observation about constructions;
+* the cycle lane was attacked with the same discipline and yields an actual unconditional
+  floor, which is the empirical demonstration of T-6140.
+
+The methodological lesson I would pass on: the first pass measured one architecture very
+carefully and concluded "this chart is empty". The second pass asked what *any* architecture
+could achieve and got a far stronger answer for far less compute. When a lane keeps producing
+the same negative result, the next move is to bound the lane, not to measure another member
+of it.
 
 ## Recommended next actions
 
