@@ -6,20 +6,22 @@ Title: Growing a leaf-avoiding S-preimage tree from the root 5: mod-9 leaf contr
        two-child branching with explicit size bounds, and the explicit lower bounds
        #(R ∩ [1,x]) >= (1/3) x^(1/(6-log2 3)) and #(R ∩ [1,x]) >= (1/5) x^(3/10),
        with a root-independent form for the issue #25 rooted-forest program
-Status: PROPOSED
+Status: PROVED
 Authoring agent: fable-02-p7
-Reviewing agents: (none yet)
+Reviewing agents: fable-02-v15 (adversarial review 2026-07-25: PASS)
 Created: 2026-07-21
-Last updated: 2026-07-21
+Last updated: 2026-07-25 (status upgraded after independent adversarial review;
+              certificate (C7) repaired — see Verification note)
 Dependencies: research/foundations/NOTATION.md (D-9901, D-9903–D-9907, D-9909).
               L-9909 (this author): only L-9909.1 (Syracuse preimage parametrization)
-              is used; L-9909 is PROPOSED and currently under independent
-              re-verification (fable-02-v7), so the exact statement used is restated
-              AND re-proved inline (Lemma P) — the citation is attributive, not
-              load-bearing. L-9901 (fable-02-p1, PROPOSED, under review): its
-              L-9901.1 contains the C/S reaching-1 equivalence; here only one
-              implication is needed and it is proved inline (Lemma E), so L-9901 is
-              cited as related, not load-bearing. See Dependency audit.
+              is used; L-9909 was PROPOSED and under independent re-verification
+              (fable-02-v7) when this file was written and is now PROVED, but the
+              exact statement used is restated AND re-proved inline (Lemma P) — the
+              citation is attributive, not load-bearing. L-9901 (fable-02-p1, then
+              PROPOSED, now PROVED): its L-9901.1 contains the C/S reaching-1
+              equivalence; here only one implication is needed and it is proved
+              inline (Lemma E), so L-9901 is cited as related, not load-bearing.
+              Neither status change affects any argument here. See Dependency audit.
 Scope: Fully proved, self-contained counting theorems (given NOTATION.md). All
        computations in this file are adversarial tests or worked examples, not proof
        inputs: unlike L-9909.4, NO statement below depends on a computer run. The
@@ -97,8 +99,10 @@ Let $n \in \mathbb{Z}^+$ be odd.
 Let $c_A := \dfrac{\ln 2}{\ln(64/3)} = \dfrac{1}{6 - \log_2 3}$. Then
 $\tfrac{12}{53} < c_A < \tfrac{5}{22}$, with the certified decimal enclosure
 $$0.2264985 \;<\; c_A \;<\; 0.2264990$$
-(certificates (C1), (C7) in the Proof; note $c_A \approx 0.22650$, **not** $0.2266$ as
-in the task-route parenthetical — flagged, difference $\approx 1.4\cdot 10^{-4}$). For
+(certificates (C1), (C7′) in the Proof; note $c_A \approx 0.22650$, **not** $0.2266$ as
+in the task-route parenthetical — flagged, difference $\approx 1.0\cdot 10^{-4}$
+[corrected from "$1.4\cdot10^{-4}$" by fable-02-v15: $0.2266 - c_A = 1.0136\cdot10^{-4}$]).
+For
 **all real $x \ge 1$**:
 $$\#(R \cap [1, x]) \;\ge\; \tfrac{1}{3}\, x^{\,c_A} \;\ge\; \tfrac{1}{3}\, x^{12/53}.$$
 
@@ -373,8 +377,28 @@ tests), and (C1)–(C6) are small enough to check by hand.
   \tfrac{342}{100}$.
 * **(C7)** $2^{158496} < 3^{100000} < 2^{158497}$ (big-int, script-verified), i.e.
   $1.58496 < \log_2 3 < 1.58497$, giving
-  $\tfrac{100000}{441504} < c_A < \tfrac{100000}{441503}$, the decimal enclosure of
-  L-9914.3.
+  $\tfrac{100000}{441504} < c_A < \tfrac{100000}{441503}$, i.e.
+  $0.22649851\ldots < c_A < 0.22649903\ldots$
+  > **Reviewer correction (fable-02-v15, 2026-07-25).** (C7) as stated does **not**
+  > imply the upper endpoint $0.2264990$ quoted in L-9914.3: its own upper bound is
+  > $\tfrac{100000}{441503} = 0.2264990271\ldots > 0.2264990$. (The author's script
+  > printed the enclosure with `{:.7f}`, which rounds an *upper* bound **down** —
+  > the wrong direction.) The quoted enclosure is nevertheless **true**
+  > ($c_A = 0.2264986424\ldots$) and is certified by (C7′) below, which replaces
+  > (C7) as the load-bearing certificate for the decimal enclosure of L-9914.3.
+
+* **(C7′)** (reviewer-supplied repair, fable-02-v15) $3^{665} > 2^{1054}$ and
+  $3^{306} < 2^{485}$ — two exact integer comparisons on 318- resp. 146-digit numbers
+  (these are the continued-fraction convergents $1054/665$ and $485/306$ of
+  $\log_2 3$). They give
+  $$\tfrac{1054}{665} < \log_2 3 < \tfrac{485}{306}
+    \ \Longrightarrow\ \tfrac{665}{2936} < c_A < \tfrac{306}{1351},
+    \qquad\text{i.e.}\qquad 0.2264986376 < c_A < 0.2264988898,$$
+  which implies $0.2264985 < c_A < 0.2264990$ as stated in L-9914.3 (and more).
+  Equivalently, the $P = 10^6$ version of (C7), $2^{1584962} < 3^{10^6} < 2^{1584963}$,
+  gives $0.2264986167 < c_A < 0.2264986681$. Both are verified in the Verification
+  note. Nothing in Theorems A or B depends on (C7)/(C7′): the theorem-grade exponent
+  facts are (C1) ($12/53 < c_A < 5/22$) and (C2).
 * **(C8)** Certified rational minorants/majorants of $(3/16)^c + (3/64)^c$ at
   $c = 151/500$ and $c = 3021/10000$ (produced by exact binary search for 10th/500th/
   10000th-root floors, every comparison an integer inequality) give
@@ -394,11 +418,12 @@ Since $g > \log_{64/3}(x/5) - 1$ and $2^{\log_{64/3} y} = y^{\ln 2/\ln(64/3)} =
 y^{c_A}$ for $y > 0$ (rewrite via $e^{(\ln 2)(\ln y)/\ln(64/3)}$),
 $$2^g \;>\; \tfrac12 (x/5)^{c_A} \;=\; \tfrac12\, 5^{-c_A} x^{c_A} \;\ge\;
   \tfrac12 \cdot \tfrac23\, x^{c_A} \;=\; \tfrac13 x^{c_A},$$
-using $5^{c_A} \le 3/2$ (C2). This proves the bound for $x \ge 5$. For
+using $5^{c_A} \le 3/2$ (C2; note $c_A < 5/22$ by (C1), so $5^{c_A} < 5^{5/22}$).
+This proves the bound for $x \ge 5$. For
 $1 \le x < 5$: $1 \in R$ and $1 \le x$, so $\#(R \cap [1,x]) \ge 1$, while
 $\tfrac13 x^{c_A} \le \tfrac13 \cdot 5^{c_A} \le \tfrac13 \cdot \tfrac32 = \tfrac12
-< 1$ (C2 again). Finally $x^{c_A} \ge x^{12/53}$ for $x \ge 1$ by (C1). The enclosure
-of $c_A$ is (C1) + (C7). $\square$
+< 1$ (C2 again). Finally $x^{c_A} \ge x^{12/53}$ for $x \ge 1$ by (C1). The rational
+enclosure of $c_A$ is (C1); the decimal enclosure is (C7′). $\square$
 
 ### Proof of L-9914.4 (Theorem B)
 

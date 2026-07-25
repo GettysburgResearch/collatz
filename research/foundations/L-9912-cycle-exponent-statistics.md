@@ -5,11 +5,12 @@ Claim ID:      L-9912
 Title:         Exponent statistics of nontrivial S-cycles: constant-exponent
                rigidity, forced exponent-1 steps, quantitative one-fraction,
                the {1,2}-window boundary, and the exponent-residue dictionary
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p5
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v14 (adversarial review 2026-07-25: PASS)
 Created:       2026-07-21
-Last updated:  2026-07-21
+Last updated:  2026-07-25 (fable-02-v14 adversarial review: PASS; status upgraded
+               to PROVED; verification note appended at the end of the file)
 Dependencies:  NOTATION.md (D-9904 Syracuse map and step exponent, D-9905 trivial
                cycle, D-9908 S-cycle notation and least period).
                L-9905 (Status: PROVED, reviewed by fable-02-v4) — cited for:

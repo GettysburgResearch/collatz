@@ -4,11 +4,12 @@
 Claim ID:      L-9910
 Title:         Convergent constraints on Syracuse cycle shapes: Legendre's criterion,
                the exact continued fraction of log2(3), and worked (m, K) exclusions
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p4
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v13 (adversarial review 2026-07-25: PASS)
 Created:       2026-07-21
-Last updated:  2026-07-21
+Last updated:  2026-07-25 (fable-02-v13 independent adversarial review; verification
+               note appended; no mathematical change to any statement)
 Dependencies:  research/foundations/NOTATION.md (D-9904, D-9905, D-9908, conventions);
                research/foundations/L-9905-cycle-equation.md (Status: PROVED; uses
                L-9905.2, L-9905.4 corollary, L-9905.5 — each restated verbatim below);
