@@ -41,6 +41,7 @@ sequence `m_N`.
 | [T-6170](T-6170-conjecture-as-extraction.md) | PROVED | **The conjecture IS an extraction question.** With `s_L = min{n>=2 : T^j(n) >= n for j<=L}`, Collatz `<=>` `s_L -> infinity`. So every architecture's extraction question is the same question asked of a smaller set, and normalising the quantifier is free at every scale. |
 | [R-6171](R-6171-self-referential-exponent-gap.md) | PROVED (no-go) | **The self-referential attack is priced.** A counterexample's minimum `m` must stay above the density line for `log_{3/2}(m)` steps; the loop closes iff the floor's growth exponent exceeds `log2(3/2) = 0.5850`. Measured: `0.0691` at `L=375`. Asymptotic: `0.0500`. Short by `8.5x` rigorously, `11.7x` asymptotically. |
 | [O-6172](O-6172-floors-coincide.md) | EMPIRICAL | The value-based and itinerary-based floors coincide for all `L <= 375`. |
+| [Q-6174](Q-6174-codimension-target.md) | OPEN (+ scoped barrier, PROVED) | **The target as a number.** Closing the loop needs a constraint on a counterexample's minimum of dimension `< 1 - log2(3/2) = 0.415037`; minimality alone gives exactly `0.949956`. A scoped barrier shows the standard toolkit (Terras bijection + minimality + counting) caps out at codimension `0.050044` and cannot reach it. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
 ## Start here

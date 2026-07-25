@@ -91,6 +91,36 @@ divergence-lane result above.
 
 ---
 
+## The whole conjecture, as a least-root question
+
+The extraction framing the project has treated as a gap between its architectures and a
+counterexample is not a gap — it is the conjecture (T-6170):
+
+```text
+Collatz  <=>  s_L -> infinity,   s_L = min{ n >= 2 : T^j(n) >= n for all j <= L }.
+```
+
+`s_L` is the classical stopping-time record sequence: `3, 7, 27, 703, 10087, ..., 63728127`
+(computed exactly to `L = 375`, X-6170). Every architecture's extraction question is this same
+question asked of a smaller set, so normalising the quantifier is free at every scale.
+
+And the recurring self-referential attack on it is now priced (R-6171). A counterexample's
+minimum must stay above the density line for `log_{3/2}(m)` steps; the loop closes iff the
+floor's growth exponent exceeds `log2(3/2) = 0.584963`. What is actually available is
+`1 - H_2(log2/log3) = 0.050044`. Short by `11.69x`:
+
+```text
+staying high is cheap   (0.050 bits of starting value per step — codimension of the TARGET)
+being  high is expensive (0.585 bits per odd step        — a property of the MAP)
+```
+
+The precise target that would close it (Q-6174): a constraint on a counterexample's minimum
+whose length-`L` prefix set has dimension below `1 - log2(3/2) = 0.415037`. Minimality alone
+gives exactly `0.949956`, so `0.534919` of dimension must come from somewhere else — and the
+Terras bijection forbids it coming from any itinerary-local condition, since every word is
+realised by exactly one residue class. **Ask a new elementary attack what its constraint's
+dimension is; if it exceeds `0.415037`, the loop cannot close.**
+
 ## The one-line summary
 
 ```text
