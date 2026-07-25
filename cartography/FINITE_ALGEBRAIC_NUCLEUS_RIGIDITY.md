@@ -179,11 +179,11 @@ v=P,\qquad s_{\omega,i}=c_i,
 
 which is `(7)`. ∎
 
-## 4. Finite congruence-piece corollary
+## 4. Precisely scoped refinement corollary
 
-The same conclusion holds if each control state is split into finitely many congruence pieces and an algebraic formula is used on each piece. Refine the finite control by the congruence class and parameterize each progression by an ordinary integer `t`. The algebraic integer-value lemma makes every piece polynomial; the cycle argument makes it affine; PR #64 `T-7402` then collapses the refined finite nucleus to the forward map.
+The same proof applies after any **finite refinement of the control state** for which each refined section still uses one algebraic function of the complete ordinary high quotient `k`, is eventually integer-valued for every sufficiently large integer `k`, and satisfies the exact child identity `(6)` on all six outgoing cylinders. The refinement is then simply absorbed into `\Omega`.
 
-Thus finite algebraic quasipolynomial, finite piecewise-algebraic, and finite congruence-driven algebraic self-sections do not cross ordinary extraction.
+This covers finite piecewise-algebraic descriptions only when their pieces are promoted to genuine full-tail section states with the displayed eventual-integrality and complete-subtree properties. No claim is made here for formulas defined only on one sparse progression with an unrelated reparametrized slope; that broader class would require a separate normalization theorem.
 
 ## 5. Why this is genuine but limited progress
 
@@ -194,7 +194,7 @@ finite affine nucleus
   -> closed by PR #64 T-7402;
 finite rational nucleus
   -> closed by PR #64 T-7403;
-finite algebraic / finite congruence-piece algebraic nucleus
+finite algebraic full-tail nucleus
   -> closed by ACL-N092.
 ```
 
@@ -203,20 +203,21 @@ The negative conclusion is genuinely weaker than Collatz: it rules out one metho
 A successful positive construction must now use at least one feature absent from the theorem:
 
 - genuinely unbounded section state;
-- a section not algebraic on any finite congruence refinement;
+- a section not algebraic on any finite full-tail control refinement;
+- a construction confined to a proper infinite sublanguage rather than a self-copy of the complete subtree;
 - or a direct ordinary-height/digit-escape theorem that decides the original least roots without recursive self-sectioning.
 
 ## 6. Gap and adversarial audit
 
 - The complete-subtree hypothesis is essential. A single survivor may occupy a proper infinite sublanguage.
 - Eventual integer-valuedness on the complete ordinary tail is essential to `ACL-N092.1`.
-- Transcendental functions, pushdown sections, oracle-like future data, and genuinely unbounded arithmetic state remain outside scope.
+- Transcendental functions, pushdown sections, sparse-progression sections lacking a full-tail normalization, oracle-like future data, and genuinely unbounded arithmetic state remain outside scope.
 - The theorem does not produce a root, a positive cycle, or a `K-####` object.
 - The only branch-qualified dependency is the affine rigidity theorem `T-7402`; no status is silently promoted.
 
 ## 7. Exact remaining target
 
-After this closure, enlarging the finite section formula again is not a meaningful offense. The chart changes full-objective status only by deciding
+After this closure, enlarging the finite full-tail section formula again is not a meaningful offense. The chart changes full-objective status only by deciding
 
 \[
 \boxed{
