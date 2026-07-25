@@ -1,0 +1,28 @@
+52884 integers <= 10^8 with total stopping time >= 300
+
+  modulus    kind   chi^2/df  max rel dev                verdict
+        2 2-power     5430.1        0.320             STRUCTURED
+        4 2-power     3698.8        0.720             STRUCTURED
+        8 2-power     2429.4        1.210             STRUCTURED
+       16 2-power     1573.1        1.843             STRUCTURED
+       32 2-power      988.1        2.644             STRUCTURED
+       64 2-power      602.0        3.606             STRUCTURED
+      128 2-power      364.3        4.957             STRUCTURED
+      256 2-power      216.4        6.469             STRUCTURED
+        3     odd        0.4        0.005                uniform
+        5     odd        0.1        0.005                uniform
+        7     odd        1.2        0.019                uniform
+        9     odd        0.6        0.015                uniform
+       11     odd        0.5        0.017                uniform
+       13     odd        0.5        0.027                uniform
+       17     odd        0.9        0.032                uniform
+       19     odd        0.7        0.038                uniform
+       23     odd        1.7        0.060                uniform
+       25     odd        1.0        0.054                uniform
+       27     odd        0.8        0.039                uniform
+       31     odd        0.9        0.056                uniform
+
+  chi^2/df near 1 means indistinguishable from uniform.
+  Every odd modulus tested is uniform; every 2-power modulus is strongly structured.
+  This is exactly the CRT independence of Q-6174 seen in the data: the itinerary
+  (hence hardness) is a function of n mod 2^L, which is independent of n mod odd.

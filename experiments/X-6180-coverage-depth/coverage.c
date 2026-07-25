@@ -52,7 +52,7 @@ int main(int argc, char **argv){
   double lX = log((double)X);
   for(uint32_t d = 0; d <= maxd; d++){
     run += cum[d];
-    if(d % 5 == 0 || d == maxd)
+    if(1)
       printf("%u %llu %.9f %.6f\n", d, (unsigned long long)run,
              (double)run/(double)X, log((double)run)/lX);
   }

@@ -1,0 +1,37 @@
+52884 integers <= 100,000,000 with total stopping time >= 300  (density 5.288e-04)
+
+residue distribution vs. uniform expectation:
+  mod  2: max relative deviation  0.320   most common: 1:34915(0.660), 0:17969(0.340)
+  mod  3: max relative deviation  0.005   most common: 1:17717(0.335), 0:17606(0.333), 2:17561(0.332)
+  mod  4: max relative deviation  0.720   most common: 3:22743(0.430), 1:12172(0.230), 2:12070(0.228), 0:5899(0.112)
+  mod  6: max relative deviation  0.330   most common: 1:11719(0.222), 3:11674(0.221), 5:11522(0.218), 2:6039(0.114)
+  mod  8: max relative deviation  1.210   most common: 7:14609(0.276), 3:8134(0.154), 1:8114(0.153), 6:7961(0.151)
+  mod  9: max relative deviation  0.015   most common: 4:5963(0.113), 6:5934(0.112), 5:5918(0.112), 7:5893(0.111)
+  mod 16: max relative deviation  1.843   most common: 15:9396(0.178), 11:5332(0.101), 9:5311(0.100), 14:5217(0.099)
+  mod  5: max relative deviation  0.005   most common: 3:10634(0.201), 1:10593(0.200), 4:10569(0.200), 0:10550(0.199)
+  mod  7: max relative deviation  0.019   most common: 3:7661(0.145), 2:7637(0.144), 1:7614(0.144), 4:7577(0.143)
+
+special structure checks:
+  odd: 34915/52884 = 0.6602   (a hard even n forces n/2 hard, so evens are inherited)
+  divisible by 3: 17606/52884 = 0.3329  (after one odd step the orbit avoids multiples of 3, so these can only be starts)
+
+top 12 by stopping time:
+      63728127  delay  592   = 3^4*786767
+      95592191  delay  591   = *95592191
+      96883183  delay  507   = *96883183
+      86010015  delay  499   = 3*5*7*13^2*4847
+      98110761  delay  469   = 3*7*4671941
+      73583070  delay  467   = 2*3*5*11*222979
+      73583071  delay  467   = *73583071
+      36791535  delay  466   = 3*5*11*222979
+      55187303  delay  465   = *55187303
+      56924955  delay  465   = 3^2*5*1264999
+      82780955  delay  464   = 5*16556191
+      85387433  delay  464   = *85387433
+
+doubling structure: how many hard n are 2*(another hard n)?
+  17457/52884 = 0.3301
+
+gap structure of the odd hard integers (are they clustered?):
+  34915 odd values, mean gap 2846, median gap 598, min 2, max 133176
+  expected mean gap if uniform among odds: 2864

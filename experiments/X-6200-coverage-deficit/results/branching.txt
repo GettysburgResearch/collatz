@@ -1,0 +1,9 @@
+n <= 300000: nodes with two predecessors = 100000 (0.333333 of all)
+          nodes with n = 2 mod 3      = 100000 (0.333333)
+          'two predecessors'  <=>  'n = 2 mod 3'  for all 2 <= n <= 300000: True
+
+mean branching factor = 1 + 1/3 = 1.3333333333
+so a depth-d tree has ~(4/3)^d nodes, and reaching X^e nodes needs
+   d = e*lnX/ln(4/3),  i.e.  c_naive(e) = d/log2(X) = 2.409421 * e
+
+all predecessors verified to map back: True
