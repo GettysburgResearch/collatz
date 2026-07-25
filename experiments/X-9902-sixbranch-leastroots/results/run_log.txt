@@ -4,18 +4,18 @@ null-model slope log10(Q/6) = 4.941419 ; log10(Q) = 5.719570
 
 == validation gates ==
 gate: brute scan x=1.. gives least x with a_0 in A -> 6472 == posted m_1: PASS
-built levels 1..8 by incremental lift: 1679616 nodes at level 8, 1.7 s
+built levels 1..8 by incremental lift: 1679616 nodes at level 8, 1.3 s
 gate: lift recurrence == direct per-word formula (FULL residue multiset), N=1..3: PASS
 gate: min agreement with direct formula at N=4: PASS
 gate: posted m_1, m_2, m_3, m_4, m_8 all reproduced: PASS
 gate: every m_N (N<=8) certified by exact digit replay: PASS
 gate: 200 random level-8 nodes replay-certified (digits + iterate): PASS
 
-stream 8->9: full 6^9 = 10077696 extensions, 4.2 s; survivors (r <= theta=Q^9/20): 503982
+stream 8->9: full 6^9 = 10077696 extensions, 3.9 s; survivors (r <= theta=Q^9/20): 503982
 theta-certificate: Mhat = m_10 <= theta holds -> m_10 is EXACT
 m_9  = 274731072270742333628800865325991165013963264
 m_10 = 1986427850123090115679978949016973174519765670216
-m_9, m_10 certified by exact digit replay: PASS   (t = 5.2 s)
+m_9, m_10 certified by exact digit replay: PASS   (t = 4.8 s)
 
 == beam probe (upper bounds u_N; deterministic; NOT minima) ==
 beam K=   1: certified u_N at N=[10, 15, 20, 30, 40, 60]  (0.0 s)

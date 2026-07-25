@@ -24,7 +24,7 @@ $$A = \{\, 7 \cdot 3^{2i} \cdot 2^{15-3i} \ :\ i = 0..5 \,\}
 let $S_N = \{x_0 > 0 : a_0, \dots, a_{N-1} \in A\}$ and $m_N = \min S_N$. **How does
 $m_N$ grow with $N$?** Consistency with the null "escape law" $m_N \approx (Q/6)^N$
 (slope $\log_{10}(Q/6) \approx 4.9414$ per level) supports the escape branch of issue
-#58's trichotomy for this chart; a *stall* (small elements persisting at large $N$)
+#58's dichotomy for this chart; a *stall* (small elements persisting at large $N$)
 would be a candidate seed for a bounded/recurrent structure. This experiment measures:
 (1) $m_N$ **exactly** for $N \le 10$; (2) certified (non-minimal) small elements
 $u_N \in S_N$ for $N$ up to 60 by beam search, as upper bounds and stall probes.
