@@ -116,26 +116,29 @@ unbounded:
 
 `L-7401` proves that removing the first base-`Q` block from any two-step legal root produces a high quotient whose first canonical digit is outside the six-digit language.
 
-`T-7401` proves the stronger statement: every state-dependent integer-affine attempt to renormalize that quotient into the same six-branch chart is forced to be
+`T-7401` proves that every state-dependent integer-affine attempt with one shift per type is forced to be
 
 ```text
 scale = P,
 shift at type i = c_i,
 ```
 
-which is exactly the original forward map. It is expanding, not a smaller-root extraction.
+which is exactly the original forward map.
 
-Thus the most plausible self-replicating-subtree argument is not merely absent. It is impossible throughout the full six-state affine class.
+`T-7402` allows an arbitrary finite control nucleus. After normalizing its common scale, the section carries would have to form a finite integer set closed under six expanding affine maps. An extremal argument forces that set to be `{0}` and again leaves only the forward map.
+
+Thus the most plausible self-replicating-subtree argument is not merely absent. It is impossible throughout the full finite-control affine class.
 
 ## Consequence for current research priorities
 
-Another amplifier, longer legal prefix, finite-state router, complexity lower bound, fresh-prime condition, or conditional growth theorem does not address the global blocker.
+Another amplifier, longer legal prefix, finite-state affine router, complexity lower bound, fresh-prime condition, or conditional growth theorem does not address the global blocker.
 
 For the stationary six-branch architecture, only the following change the decision:
 
 1. one explicit positive root with an all-time induction;
 2. a uniform archimedean bound on the least roots;
-3. a global digit-escape theorem proving the least roots diverge.
+3. a global digit-escape theorem proving the least roots diverge;
+4. a genuinely nonlinear or infinite-section ordinary invariant.
 
 For the positive-cycle architecture, the corresponding legitimate target is whole-denominator equality or a height theorem that forces it. Proper-factor divisibility and near-integrality alone do not cross that gate.
 
