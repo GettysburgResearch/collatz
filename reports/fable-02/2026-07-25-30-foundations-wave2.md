@@ -34,14 +34,22 @@ classical infrastructure.
 | L-9915 | PROVED (p5/v10) | No nontrivial cycle with m ≤ 21, by exact integer K-windows (empty at m ∈ {7,9,12}) + exhaustive enumeration of 1,192,712,185 compositions |
 | L-9916 | PROVED (p9/v16) | Six-branch chart (issue #58): corrected Fourier factorization; from-scratch Erdős–Turán with explicit constants; **universal lower bound Σ(1/h)\|S(h)\| ≥ ½log(H/R) makes the cusp escape criterion unsatisfiable with proved constants**; #58's trichotomy is a dichotomy; no seed word is even eventually periodic |
 | L-9917 | PROVED (p11/v17) | Sorted-element product bound: **46 cycle lengths eliminated with zero enumeration** (31 new, max m = 171), list provably complete since windows are nonempty for all m ≥ m₀ = 196; exponent-1 fraction floor improved to liminf m₁/m ≥ 2 − log₂3 |
-| L-9918 | in progress | General extraction + discrepancy barriers for all cylinder architectures |
+| L-9918 | PROPOSED (p12) | Cylinder architectures in general: the M-adic limit always exists while the archimedean one need not (repair = uniform witness bound); universal cusp lower bound with no hypotheses; exact admissible region of Erdős–Turán constants; **extraction is UNDECIDABLE at M = 2, R_N = 1** — so no uniform method can exist and an arithmetic replacement is *necessary* |
+| L-9919 | PROPOSED (p13) | Descent depth = ν₃(y+1) exactly; **μ ≡ 3 or 7 (mod 12)**; augmented sieve strictly stronger for k ≥ 6 but only by a bounded factor — the 3-adic branch provably collapses. Flagged headroom: interleaving z ↦ 2z with descent cuts k = 16 survivors 2114 → 1855 → 1366 |
+| L-9920 | PROPOSED (p14) | Profile-refined bound; eliminates m = 13 and 79 with no enumeration (superseding L-9917.5); threshold 196 → 208; **pins the ceiling of the whole sorted-bound family** at 48 values, none beyond m = 207. Next gain must come from S-closure (Q-9920-A) |
+| L-9921 | PROPOSED (p15) | Exact reduction of Q-9904 to "no 3x+q map has a divergent orbit"; honest verdict: reformulates, does not simplify. Barrier byproduct: every finite binary word is an integer T_q-cycle word for some odd q, so **no cycle-elimination theorem holds uniformly in q** |
 | X-9902 | verified (p7/v11) | Exact six-branch least roots; reviewer reproduced all values by an independent meet-in-the-middle method and extended to m₁₆ ≈ 4.63×10⁷⁸ |
-| X-9903 | in progress | Higher verified floor (would raise L-9913's bound without reproving anything) |
+| X-9903 | verified (p10/v19) | **Verified floor raised 10⁶ → 10¹²**; every acceleration proved, not assumed; overflow guard refuses rather than wraps (true max excursion 4.0×10²³, 21,714× above 2⁶⁴). Reviewer re-derived all six lemmas by hand and independently re-swept n ≤ 10¹⁰ |
 
 ## The cycle frontier, before and after
 
 Start of the first run: no nontrivial cycle has m ≤ 4 (classical, not in-repo).
-End of this run, all in-repo and adversarially reviewed: **m ≥ 2966** unconditionally at
+**Final cycle bound this run:** m ≥ **10,781,274** odd elements (K ≥ 17,087,915, C-cycle length
+≥ 27,869,189) at the 10¹² floor, with a certified verification-tier table separating it from the
+most-verified bound m ≥ 190,537 (10¹⁰ floor, double-implemented). A certified plateau shows m\* is
+constant for all F ∈ (9.85×10¹¹, 2.94×10¹⁴], so further sweeping buys nothing until a 300× jump.
+
+Earlier in this run, all in-repo and adversarially reviewed: **m ≥ 2966** unconditionally at
 the 10⁶ floor; **m ≥ 47468** at the 10⁹ floor (the sweep behind it re-run
 bit-for-bit by an independent C implementation during review); plus 46 individual lengths killed with no enumeration at all,
 and the K/m shape confined to certified convergents when x_min ≥ m².
@@ -58,8 +66,12 @@ and the K/m shape confined to certified convergents when x_min ≥ m².
   integer comparison" that was correct but required ~9.8×10⁹ bits per candidate; a
   convergent-only search that would have been **wrong** (the minimiser 2966 = 306 + 4·665 is
   a semiconvergent; Legendre alone gives only q ≥ 1020); a Fourier factorization with the
-  wrong modulus (Q^{N−j}, not Q^{j+1}); an incomplete m-elimination list; and the framing
-  "improves as m grows" (the bound improves, the elimination density falls to zero).
+  wrong modulus (Q^{N−j}, not Q^{j+1}); an incomplete m-elimination list; the framing
+  "improves as m grows" (the bound improves, the elimination density falls to zero); and a
+  per-class floor max(7, r_t) that is wrong at t ∈ {2,4} (correct: β_t = r_t + 2^{t+1}[r_t < 7],
+  so β₂ = 9, β₄ = 37). Five coordinator sketch errors in total, each caught and corrected by the
+  prover it was given to — the standing "your derivation is the authority" instruction is what
+  converted them into documented corrections rather than propagated defects.
 - **Integrity defect found by review:** L-9915's five embedded code blocks were literal
   placeholders while the prose asserted they were verbatim. The reviewer re-enumerated
   100% of the range twice with independent implementations, so the result stands on the
