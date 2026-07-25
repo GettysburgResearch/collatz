@@ -100,20 +100,39 @@ max  b : measured 16      Markov support to 25   binomial to 34
 **It improves on the binomial but recovers only about `20%` of the discrepancy in the mean, and
 the tail is still over-predicted by `3.5x` at `b = 15` and `7x` at `b = 16`.**
 
-The reason is structural, and it is the mirror image of L-6130. The descent
-`n -> (2n-1)/3` is available iff `n = 2 (mod 3)`, and **to know the child modulo `3^k` one
-needs the parent modulo `3^(k+1)`**: each descent consumes one 3-adic digit, exactly as each
-forward step consumes one 2-adic digit in the Terras bijection. So a model that tracks
-residues mod `3^k` can predict at most `k` descents before running out of information, and
-`k = 1` predicts almost none. Capturing `b` up to `16` would need `3^16 ~ 4.3 * 10^7` states.
+### The explanation I proposed, and its refutation
 
-**The backward descent is to the 3-adics what the forward parity map is to the 2-adics.** That
-is the clean statement of why the coverage deficit resists finite-state modelling, and it is
-the most useful thing this line produced.
+I proposed the following, and it is **wrong** as an explanation.
+
+*The arithmetic fact is true:* the descent `n -> (2n-1)/3` needs the parent modulo `3^(k+1)` to
+determine the child modulo `3^k`, so each descent consumes one 3-adic digit, exactly as each
+forward step consumes one 2-adic digit in the Terras bijection. That much is arithmetic.
+
+*The inference from it was false.* I claimed this explains the failure, and predicted that a
+chain on residues mod `3^k` would track the measurement further as `k` grows. **Tested at
+`k = 1, 3, 5, 7, 9` (up to `19683` states), depth 30 — it does not converge:**
+
+| | `k=1` | `k=3` | `k=5` | `k=7` | `k=9` | measured |
+|---|---:|---:|---:|---:|---:|---:|
+| mean `b` | 7.358 | 7.391 | 7.442 | 7.435 | 7.399 | **6.713** |
+| `L1` error | 0.213 | 0.227 | 0.248 | 0.246 | 0.237 | — |
+
+The error is flat — slightly *worse* at `k = 5` than at `k = 1` — and the mean sits near `7.4`
+at every precision against a measured `6.71`. Extra 3-adic precision buys nothing.
+
+**So the descent distribution is not a function of residue information at any 3-adic
+precision.** The mean-field step — lifting the unknown digit uniformly — is where the error
+lives, and it does not shrink. The deficit is a property of the *specific tree rooted at 1*,
+with its actual integer values, not of the local residue dynamics that generate it.
+
+That is a stronger negative than the one I set out to prove, and it is the useful output of
+this line: **no residue-based finite-state model will capture the coverage deficit, and adding
+precision is not the fix.**
 
 ## Suggested next attack
 
-Either push the residue chain to mod `3^k` for `k ~ 8-12` (a genuine but finite linear-algebra
-computation, `~10^4-10^6` states, well within reach) and see whether the tail converges to the
-measurement as `k` grows — which would confirm the digit-consumption picture quantitatively —
-or accept the picture and look for a bound rather than a model.
+Not more residue precision — that is now excluded. The remaining handle is the value: a model
+that tracks `(log value, descent count)` rather than residues, i.e. the actual random walk
+`+1` / `-log2 3` on the exponent with the availability of the down-step coupled to the tree.
+Whether that couples correctly to a deterministic tree rooted at a single point is exactly the
+open question.

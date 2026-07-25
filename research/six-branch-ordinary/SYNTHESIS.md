@@ -197,10 +197,11 @@ hand-checked sample would suggest a unification that is not there.
   every descent has a `1/3` chance of permanently ending a path's ability to go down (O-6202).
   Deep-descent paths — exactly the ones that would stay below `X` — are far rarer than any
   binomial or mod-3 Markov model predicts.
-* **And why no finite-state model fixes it:** the descent `n -> (2n-1)/3` needs the parent mod
-  `3^(k+1)` to determine the child mod `3^k`. **Each descent consumes one 3-adic digit, exactly
-  as each forward step consumes one 2-adic digit.** The backward descent is to the 3-adics what
-  the forward parity map is to the 2-adics.
+* **No residue model captures it, at any precision.** I predicted that chains on residues mod
+  `3^k` would converge as `k` grows (each descent does consume one 3-adic digit, mirroring the
+  Terras bijection). **Tested at `k = 1..9` and refuted:** the `L1` error is flat at `0.21-0.25`
+  and the mean descent count sits at `~7.4` against a measured `6.71` at every precision. The
+  deficit is a property of the specific tree rooted at `1`, not of local residue dynamics.
 * **Hardness is purely 2-adic** (O-6211): the `52,884` integers below `10^8` with stopping time
   `>= 300` have `chi^2/df` from `216` to `5430` at every 2-power modulus and `0.1` to `1.7` at
   every odd modulus tested. Q-6174's CRT barrier, visible in data — there is nothing at odd
