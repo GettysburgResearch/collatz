@@ -167,6 +167,35 @@ could achieve and got a far stronger answer for far less compute. When a lane ke
 the same negative result, the next move is to bound the lane, not to measure another member
 of it.
 
+## Fourth pass: other aspects, run in parallel
+
+* **T-6181 / X-6181 — criticality of `mx+1`.** Divergence is atypical iff `m < 4`, so `3x+1` is
+  the *only* odd subcritical multiplier and is subcritical by just `0.050044`. This is the
+  falsifiable test of the whole framework: predicted `~0%` divergence at `m=3` and `~100%` at
+  `m=5`; measured `0.00%` and `94.39%`. Serves issue #26.
+* **Cycle machinery validated on real cycles.** No positive `3x+1` cycle is known, so
+  T-6140/T-6141 had nothing inside the problem to be checked against. Tested on the three
+  negative `3x+1` cycles and the three known `5x+1` cycles: `prod(m+1/n_i) = 2^q` and
+  `x_w = c_w/(2^q - m^k)` exact in all six, with the sign of `2^q - m^k` tracking the sign of
+  the cycle every time.
+* **T-6141(f),(g) — cycle floor sharpened `1.32x` and the Legendre gap closed.** Replacing
+  Legendre with the best-approximation theorem excludes non-convergent `k` too; at `B = 2^71`
+  the floor rises to `k >= 6.5471e10`, `q >= 1.0377e11`. Honest caveat: the two routes are not
+  uniformly comparable — (f) is a step function of `B` and wins only just after a jump; the
+  floor is their maximum, and at `B = 2^71` the binding inequality has only a `4%` margin.
+* **X-6180 / O-6182 — backward-tree depth profile**, for issue #25. Exponent `0.84` is reached
+  at depth `65` (`2.45 log2 X`), full coverage at `592`. Scaling confirmed across
+  `10^6 ... 10^9`: `d(e,X) ~ c(e) log2(X)` for `e <= 0.9`, with `c(0.9) = 3.01` at every scale.
+  Full coverage does *not* scale logarithmically — it is set by one extreme integer.
+* **X-6190 / O-6191** — the three "hardest integer" sequences are distinct; the overlap is
+  concentrated in the famous integers, so a small sample would suggest a false unification.
+
+**Correction I had to make to my own work.** In the third pass I compared "forward gap `0.535`
+of dimension" with "backward gap `~0.16` of exponent" and called the backward route three times
+narrower. That is not like-for-like: closing the forward gap would prove the conjecture,
+closing the backward one would not (`X^{1-o(1)}` permits `X^{o(1)}` exceptions). The backward
+target is nearer *and weaker*. Corrected in Q-6174, O-6182 and SYNTHESIS.
+
 ## Third pass: what I would tell the project
 
 The forward direction is now capped in every form I could find a way to test. The one route

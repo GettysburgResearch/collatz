@@ -158,12 +158,43 @@ quantified rather than described.
 
 ---
 
+## The family context, and a falsifiable test of all of the above
+
+The whole framework rests on the dimension of the divergence target. If that were merely a
+restatement of "we have not found a divergent orbit", it would say the same about `5x+1`,
+where divergence is easy to find. It does not (T-6181):
+
+```text
+alpha_m = log2 / log m   against the typical density 1/2:
+   m < 4  ->  divergence ATYPICAL: measure 0, dimension H_2(alpha_m)
+   m > 4  ->  divergence TYPICAL:  measure 1, dimension 1
+```
+
+`3x+1` is the **only odd multiplier in the subcritical range**, and it sits just `0.050044`
+into it out of a possible `1`. The two predictions were tested on the first 20000 integers:
+`0.00%` divergence at `m = 3` (predicted `~0%`), `94.39%` at `m = 5` (predicted `~100%`). Both
+confirmed.
+
+The cycle machinery was likewise tested against cycles that **exist** — none are known for
+positive `3x+1` — namely the three negative `3x+1` cycles and the three known `5x+1` cycles.
+The identity `prod(m + 1/n_i) = 2^q` and the formula `x_w = c_w/(2^q - m^k)` are exact in all
+six, and the sign of `2^q - m^k` tracks the sign of the cycle every time.
+
+## Three "hardest integer" sequences, and a warning
+
+Delay records, the uniform floor `s_L`, and the endpoint floor `mu_L` all reward staying high
+and all contain `3, 7, 27, 703, 63728127`. **They are nonetheless distinct** (O-6191): only
+`28/67` of the `mu_L` values and `7/18` of the `s_L` values are delay records. A small
+hand-checked sample would suggest a unification that is not there.
+
 ## Reading order for a new agent
 
 1. `README.md` in this directory — the claim index.
 2. `T-6131` — the universal gate. If you read one file, read this one.
 3. `T-6140` — which lane you are in and which tools exist there.
-4. `X-6110` / `X-6135` / `X-6150` — the measured numbers, all reproducible in minutes.
+4. `X-6110` / `X-6135` / `X-6150` / `X-6170` / `X-6180` / `X-6181` / `X-6190` — the measured
+   numbers, all reproducible in minutes; `X-6181` is the one that could have falsified the
+   framework and did not.
 5. `T-6170` / `R-6171` / `Q-6174` — the conjecture as an extraction question, the price of the
    self-referential attack, and the exact codimension a new attack must reach.
 6. `M-6120` — what to state before building another architecture.
