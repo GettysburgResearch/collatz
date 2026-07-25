@@ -1324,3 +1324,509 @@ treated as one.
 ---
 *File authored by fable-02-p8, 2026-07-25. Status PROPOSED per NOTATION.md
 conventions; an independent reviewing agent may upgrade after verification.*
+
+---
+
+## Verification note (fable-02-v18, 2026-07-25)
+
+Independent adversarial review per README §13, carried out without relying on the
+author's confidence and without reusing a single line of the author's test code.
+**Verdict: PASS.** The Main Theorem $m \ge 2966$ is correct, its exhaustiveness
+step is genuinely complete (not heuristic), the reduced-denominator trap is
+handled correctly, and $m^*(10^6) = 2966$ reproduces exactly under an independent
+implementation using a different certification of $\alpha$, a different method for
+$\lceil m\alpha\rceil$, and a search range 33x wider than the author's. Status
+upgraded PROPOSED $\to$ PROVED. Two documentation-only fixes applied (§6). Per
+protocol this review does **not** set `INDEPENDENTLY_VERIFIED`.
+
+### 1. Logical skeleton, reconstructed from the dependencies alone
+
+Before reading the author's proofs I rebuilt the argument from L-9905's Statement
+section and NOTATION.md, and then checked the file against it. The skeleton is:
+
+1. **Floor.** Every element of a nontrivial $S$-cycle is a $C$-counterexample, so
+   under $\mathrm{(V}_F)$ every element, in particular $x_{\min}$, exceeds $F$.
+   Re-derived independently: $S^j(x) = C^{t_j}(x)$ with $t_j \ge 2j$ (one $C$-step
+   $x \mapsto 3x+1$ plus $a$ halvings per $S$-step); $S(1) = 1$ and distinctness of
+   cycle elements force $x_i \ne 1$; $C^{s}$ is trapped in $\{1,2,4\}$ once it hits
+   $1$, and cycle elements are odd, so a cycle element reaching $1$ would force
+   some $S^j(x_i) = 1$. Contradiction. **Sound**; matches L-9913.1 exactly.
+2. **Squeeze.** L-9905.3 (PROVED, verified verbatim in the source file at line 48)
+   gives $0 < K\ln 2 - m\ln 3 \le m/(3x_{\min})$. Divide by $\ln 2$, use
+   $x_{\min} > F$: $0 < K - m\alpha < m/(3F\ln 2) = \varepsilon(F) m$. **Sound.**
+3. **Ceiling.** $m\alpha \notin \mathbb{Z}$ (else $3^m = 2^{k}$, odd $=$ even), so
+   $K > m\alpha$ integer forces $K \ge \lceil m\alpha\rceil$ and
+   $f(m) := \lceil m\alpha\rceil - m\alpha \le K - m\alpha$. **Sound.**
+4. **Condition.** $f(m) = 1 - \{m\alpha\} \le \varepsilon_0(F)\, m$, i.e.
+   $\mathrm{Adm}_F(m)$.
+5. **Minimum.** $m^*(F) := \min\{m \ge 1 : \mathrm{Adm}_F(m)\}$; every nontrivial
+   cycle has $m \ge m^*(F)$, and also $q := m/\gcd(K,m) \ge m^*(F)$.
+
+Every step of the file's L-9913.1–.6 matched this reconstruction. **First
+unsupported inference: none found.**
+
+Boundary/quantifier checks I ran explicitly:
+
+* $\mathrm{Adm}$ is stated with $\le$ while the cycle satisfies the *strict*
+  inequality. This is the safe direction (a larger admissible set can only lower
+  $m^*$). I also recomputed $m^*$ with the strict predicate: still $2966$
+  (Part 11 of my script), so nothing is lost either.
+* $\varepsilon_0 > \varepsilon$ is the safe direction and is **proved**, not
+  assumed: Corollary A1's arithmetic was re-derived by hand —
+  $76545 = 5\cdot7\cdot3^7$, $\tfrac{25515+945+63+5}{76545} = \tfrac{26528}{76545}$,
+  $2\cdot 26528 = 53056$, and $53056\cdot 1000 = 53\,056\,000 > 53\,045\,685 =
+  693\cdot 76545$ — and Lemma A's remainder bound is a *finite* geometric identity
+  plus $0 < R_n \le x^{2n+1}/((2n+1)(1-x^2))$, so no convergence question arises.
+  No calculator appeal anywhere. I independently confirmed $53056/76545 < \ln 2$
+  against a 160-digit certified series enclosure.
+* $x_{\min} \ge F+1$ is available but the file conservatively uses $\varepsilon(F)$
+  rather than $\varepsilon(F+1)$. I checked that the sharper constant changes
+  nothing: $m^* = 2966$ for $\varepsilon(10^6+1)$ as well.
+* The $m = 1$ boundary: $\mathrm{Adm}_F(1)$ is false for every $F \ge 2$ (I checked
+  $F \in \{2,3,10,10^6\}$), so the trivial cycle is excluded by the *hypothesis*
+  $x_{\min} > F$, never by the squeeze. Correctly stated.
+* $K \ge 4701$: $K > m\alpha \ge 2966\alpha \notin \mathbb{Z}$ gives
+  $K \ge \lceil 2966\alpha\rceil = 4701$; $C$-length $K + m \ge 7667$ is the sum of
+  two independently valid minima. Sound.
+
+### 2. The reduced-denominator question (checked first and hardest)
+
+The coordinator's concern was that the constraint $p - q\alpha < \varepsilon_0 q$
+depends only on the **reduced** denominator $q = m/\gcd(K,m)$, so a search over
+$m$ treated as an approximation denominator would be illegitimate. **The file does
+not make that error, and in fact does not need to.** Both halves check out:
+
+* **Direct route (L-9913.3(2)).** $f(m) \le K - m\alpha < \varepsilon_0 m$ holds
+  for the cycle's own $m$ **regardless of $\gcd(K,m)$** — no approximation theory
+  is invoked, so $m \ge m^*(F)$ follows immediately. This route alone carries the
+  Main Theorem.
+* **Reduced route (L-9913.3(3)).** Dividing the squeeze by $m$ cancels
+  $d = \gcd(K,m)$, giving $0 < p/q - \alpha < \varepsilon_0$ and hence
+  $\mathrm{Adm}_F(q)$, so $q \ge m^*(F)$ — strictly more information, since it also
+  says $m$ is a *multiple* of an admissible $q \ge 2966$.
+* **Upward closure** $\mathrm{Adm}_F(q) \Rightarrow \mathrm{Adm}_F(tq)$: the proof
+  ($\lceil tq\alpha\rceil \le t\lceil q\alpha\rceil$, so $f(tq) \le t f(q)$) is
+  correct. I verified it computationally for **all** pairs with $tq \le 10^5$: zero
+  violations.
+* **Is the number still the sharpest available?** Yes. $m^*(F)$ is by definition
+  the minimum of one predicate over one index set, so "least admissible $m$" and
+  "least admissible reduced denominator" are the *same number* — there is no
+  sharper bound hiding in the reduced-denominator formulation. I confirmed the
+  minimiser is itself reduced ($\gcd(4701,2966)=1$) and that the admissible set
+  below $3000$ is exactly $\{2966\}$; the full admissible set below $10^5$ begins
+  $2966, 3631, 4296, 4961, 5267, 5626, \dots$ (2404 values). The file's boxed note
+  attributed the equality of the two minima to upward closure, which is a
+  non-sequitur; I rewrote that clause (§6, fix 1). The mathematics was already
+  correct.
+
+### 3. Exhaustiveness: provably complete, and the semiconvergent trap
+
+**The Main Theorem's completeness rests on brute force, not on the record lemma.**
+L-9913.5 decides $\mathrm{Adm}_{10^6}(m)$ for **every** $m \in \{1,\dots,2965\}$
+individually and exactly. That is a complete argument by construction, and I
+re-ran it over $m \le 10^{5}$ (33x the author's range) with an independently built
+decision procedure. No admissible $m$ below $2966$ exists.
+
+This matters because a *structural* shortcut would have been wrong here, and I
+verified the trap concretely:
+
+* $2966 = q_7 + 4q_8 = 306 + 4\cdot 665$ with numerator $4701 = p_7 + 4p_8 =
+  485 + 4\cdot 1054$ — a **semiconvergent** (intermediate fraction), **not** a
+  convergent of $\alpha$. A convergent-only search would have returned
+  $q \ge 15601$: a bound that is *not proved*, because $\mathrm{Adm}(2966)$ is
+  genuinely true and no contradiction is derivable at $m = 2966$ from this method.
+  The file gets this right and quarantines the convergent statement into the
+  conditional dichotomy L-9913.8.
+* I reconstructed the one-sided best-approximation lemma (L-9913.11) from scratch,
+  checked its unimodularity bookkeeping and its five-row sign-pattern table (all
+  nine sign combinations of $(s,t)$ are covered: $(\ge1,\ge1)$ by $m \ge u+v$,
+  $(\le-1,\cdot)$ and $(0,\le 0)$ by $m \le 0$, the rest by rows 1–3), and found it
+  **correct**. I then computed the record sequence two ways — by brute-force
+  running minima of $f$ over $m \le 10^5$, and by the Stern–Brocot recursion — and
+  the two lists agree exactly. I additionally confirmed that the records are
+  precisely the from-above intermediate-fraction denominators
+  $q_{2i-1} + j\,q_{2i}$ ($0 \le j \le a_{2i+1}$):
+  $1,3,5\,|\,17,29,41\,|\,94,147,200,253,306\,|\,971,1636,2301,2966,\dots,15601$.
+  So the block-skipping reduction is sound *and* structurally complete, and it
+  independently reproduces $m^* = 2966$.
+* Legendre's route (L-9913.8(b)) gives only $q \ge 1020$: $1/(2q^2) < 1/2079000
+  \Rightarrow q^2 > 1\,039\,500$, and $1019^2 = 1\,038\,361 < 1\,039\,500 \le
+  1\,040\,400 = 1020^2$. Correctly reported as **weaker**. The odd-index
+  convergent denominators $\le 10^5$ recomputed independently:
+  $1, 5, 41, 306, 15601, 79335$ — so branch (a)'s jump to $q \ge 15601$ and
+  $K \ge \lceil 15601\alpha\rceil = 24727$ is correct.
+* **On the L-9910 strengthening.** The reviewer-flagged hypothesis
+  $x_{\min} > \tfrac{2}{3\ln 2}q^2$ (equivalently L-9910.2's $x_{\min} \ge m^2$)
+  would force $K/m$ to be a convergent. It is **not** available at $F = 10^6$: it
+  requires $q < \sqrt{3F\ln 2/2} \approx 1019.6$, i.e. exactly the regime Legendre
+  already covers, and every $q$ in that regime is non-admissible anyway. So the
+  strengthening cannot improve $2966$ at the current floor, and the file is right
+  not to invoke it. It becomes useful only once $F$ exceeds $\approx \tfrac{2}{3\ln 2}
+  (m^*)^2$, i.e. around $F \approx 8.5\cdot 10^{6}$ for $q = 2966$ — worth
+  revisiting if a floor beyond $10^{7}$ is ever independently certified.
+
+### 4. Independent computation
+
+Written from the Statement sections alone. Three deliberate independences from the
+author's code: (i) $\alpha$ is certified by a **different** decomposition —
+$\ln 2 = 2\,\mathrm{artanh}(1/3)$ and $\ln 3 = 2\,\mathrm{artanh}(1/2)$, versus the
+file's $\ln 3 = \ln 2 + 2\,\mathrm{artanh}(1/5)$; (ii) $\lceil m\alpha\rceil$ is
+computed by **bit length of $3^m$** (exact, no enclosure: $2^{b-1} < 3^m < 2^b$
+since $3^m$ is odd and $\ge 3$), then cross-checked against the enclosure; (iii)
+the sweep runs to $m \le 10^{5}$ rather than $3000$.
+
+```python
+#!/usr/bin/env python3
+"""INDEPENDENT adversarial verification of L-9913 (fable-02-v18, 2026-07-25).
+FINITE VERIFICATION ONLY -- not a proof.  Exact: int / fractions.Fraction only;
+no float appears in any decision.  Run: python3 v18_verify.py  (~3.5 s)"""
+from fractions import Fraction as Fr
+from math import gcd
+import random, time
+
+fails = []
+def chk(label, ok):
+    if not ok: fails.append(label); print("FAIL:", label)
+t0 = time.time()
+
+# --- PART 1: certified enclosure of alpha, by a decomposition different from
+# the file's:  ln2 = 2 artanh(1/3),  ln3 = 2 artanh(1/2).
+# Remainder (Lemma A, re-derived): T_n(x) < artanh(x) <= T_n(x)+x^(2n+1)/((2n+1)(1-x^2))
+def artanh_bounds(x, n):
+    s = sum(x**(2*k+1) / Fr(2*k+1) for k in range(n))
+    return s, s + x**(2*n+1) / ((2*n+1) * (1 - x*x))
+N_TERMS = 260
+ln2_lo, ln2_hi = [2*t for t in artanh_bounds(Fr(1, 3), N_TERMS)]
+ln3_lo, ln3_hi = [2*t for t in artanh_bounds(Fr(1, 2), N_TERMS)]
+ALO, AHI = ln3_lo / ln2_hi, ln3_hi / ln2_lo
+chk("enclosure ordered", ALO < AHI)
+for D in (1000, 10000, 100000):          # bit-length bracket cross-check
+    b = (3**D).bit_length()
+    chk(f"bitlen bracket D={D}", Fr(b-1, D) < ALO and AHI < Fr(b, D))
+L0, U0 = Fr(176251, 111202), Fr(301994, 190537)
+chk("file cert C1: 3^111202 > 2^176251", 3**111202 > 2**176251)
+chk("file cert C2: 3^190537 < 2^301994", 3**190537 < 2**301994)
+chk("file certs bracket alpha", L0 < ALO and AHI < U0)
+chk("file cert width", U0 - L0 == Fr(1, 21188095474))
+
+# --- PART 2: ln 2 > 693/1000 (Corollary A1) re-derived
+S4 = 2*sum(Fr(1, (2*k+1)*3**(2*k+1)) for k in range(4))
+chk("A1 partial sum", S4 == Fr(53056, 76545))
+chk("A1 > 693/1000", S4 > Fr(693, 1000))
+chk("A1 consistent with series", S4 < ln2_lo)
+chk("eps0 > eps", Fr(1000, 2079) > Fr(1, 3)/ln2_lo)
+
+# --- PART 3: exact ceil(m alpha) = bit_length(3^m); Adm decision
+def eps0(F): return Fr(1000, 3*693*F)
+def decide(K, m, e0):
+    r = Fr(K, m) - e0                    # Adm(m)  <=>  alpha >= r
+    if ALO > r: return True
+    if AHI < r: return False
+    raise AssertionError(f"enclosure too coarse at m={m}")
+MMAX = 100000
+p = 1; Kbit = [0]*(MMAX+1)
+for m in range(1, MMAX+1):
+    p *= 3; Kbit[m] = p.bit_length()
+badc = 0
+for m in range(1, MMAX+1):
+    lo, hi = m*ALO, m*AHI
+    cl = -((-lo.numerator)//lo.denominator); ch = -((-hi.numerator)//hi.denominator)
+    if not (cl == ch == Kbit[m]): badc += 1
+chk("ceil agreement bitlen vs enclosure", badc == 0)
+
+# --- PART 4: m*(F) by EXHAUSTIVE brute force over ALL m (no CF theory used)
+def mstar(F, cap):
+    e0 = eps0(F)
+    for m in range(1, cap+1):
+        if decide(Kbit[m], m, e0): return m, Kbit[m]
+res = {}
+for F, lab in ((10**6, "10^6"), (10**7, "10^7"), (10**8, "10^8"), (10**9, "10^9")):
+    m, K = mstar(F, MMAX); res[lab] = (m, K)
+    print(f"[4] F = {lab:5s}: m* = {m:6d}, K* = {K:6d}, K*+m* = {K+m:6d}, gcd = {gcd(K,m)}")
+chk("m*(10^6)", res["10^6"] == (2966, 4701)); chk("m*(10^7)", res["10^7"] == (10946, 17349))
+chk("m*(10^8)", res["10^8"] == (15601, 24727)); chk("m*(10^9)", res["10^9"] == (47468, 75235))
+chk("gcd(4701,2966)=1", gcd(4701, 2966) == 1)
+e6 = eps0(10**6)
+adm6 = [m for m in range(1, MMAX+1) if decide(Kbit[m], m, e6)]
+viol = [(q, t) for q in adm6 if q <= MMAX//2
+        for t in range(2, MMAX//q + 1) if (t*q) not in set(adm6)]
+chk("upward closure Adm(q)=>Adm(tq)", not viol)
+print(f"[4] admissible m <= {MMAX} at F=10^6 (first 6): {adm6[:6]}; total {len(adm6)}")
+
+# --- PART 5: the file's displayed certificates, recomputed
+r1 = Fr(4701, 2966) - e6
+chk("winner r1", r1 == Fr(4886688017, 3083157000))
+chk("winner numbers", (176251*r1.denominator, r1.numerator*111202)
+    == (543409504407000, 543409480866434))
+chk("winner cert", 176251*r1.denominator >= r1.numerator*111202)
+r2 = Fr(3647, 2301) - e6
+chk("runner-up K", Kbit[2301] == 3647)
+chk("runner-up r2", r2 == Fr(2527370233, 1594593000))
+chk("runner-up numbers", (301994*r2.denominator, r2.numerator*190537)
+    == (481557518442000, 481557542085121))
+chk("runner-up cert", 301994*r2.denominator <= r2.numerator*190537)
+
+# --- PART 6: sensitivity; does the TRUE eps (and eps at x_min >= F+1) still give 2966?
+need = Fr(4701, 2966) - AHI
+allow = min(Fr(Kbit[m], m) - ALO for m in range(1, 2966))
+chk("eps0 inside stability interval", need <= e6 < allow)
+chk("true eps inside", need <= Fr(1,3*10**6)/ln2_hi and Fr(1,3*10**6)/ln2_lo < allow)
+chk("eps(F+1) inside", need <= Fr(1, 3*(10**6+1))/ln2_lo < allow)
+print(f"[6] m*=2966 for eps in [{float(need):.7e}, {float(allow):.7e}); "
+      f"eps0={float(e6):.7e}, true eps~{float(Fr(1,3*10**6)/ln2_hi):.7e}")
+
+# --- PART 7: pure-integer form 2^(QK-Pm) <= 3^(Qm) vs enclosure form
+random.seed(918273); bad = 0
+for _ in range(600):
+    Q = random.choice([1,2,3,4,7,11,100,997,5000]); P = random.randint(1,4*Q)
+    m = random.randint(1,14); K = random.randint(1,28); ex = Q*K - P*m
+    intform = (2**ex <= 3**(Q*m)) if ex >= 0 else (Fr(1,2**(-ex)) <= 3**(Q*m))
+    try: ratform = decide(K, m, Fr(P, Q))
+    except AssertionError: continue
+    if intform != ratform: bad += 1
+chk("integer form == enclosure form", bad == 0)
+mism = sum(1 for m in range(1, 41)
+           if (2**(2079*Kbit[m] - m) <= 3**(2079*m)) != decide(Kbit[m], m, Fr(1,2079)))
+chk("full big-int instance Q=2079", mism == 0)
+
+# --- PART 8: second, structural route -- one-sided records (Stern-Brocot)
+recs_bf = []; best = None
+for m in range(1, MMAX+1):
+    lo = Kbit[m] - m*AHI
+    if best is None or lo < best: recs_bf.append(m); best = Kbit[m] - m*AHI
+def sb_records(limit):
+    u, P, v, Q_ = 1, 2, 1, 1; out = []
+    while u + v <= limit:
+        Alo, Ahi = P - u*AHI, P - u*ALO
+        Blo, Bhi = v*ALO - Q_, v*AHI - Q_
+        assert Alo > 0 and Blo > 0
+        if Alo > Bhi: out.append((u, Alo, Ahi, u+v)); u, P = u+v, P+Q_
+        elif Ahi < Blo: v, Q_ = u+v, Q_+P
+        else: raise AssertionError("SB undecided")
+    return out
+sb = sb_records(10**14)
+chk("SB records == brute-force records", [u for u,_,_,_ in sb if u <= MMAX] == recs_bf)
+def block_skip(F):
+    e0 = eps0(F)
+    for (u, Alo, Ahi, nu) in sb:
+        t = Alo / e0
+        if t < nu: return u, nu, t
+u_, nu_, t_ = block_skip(10**6); lb = -(-t_.numerator//t_.denominator)
+chk("block skip consistent", lb <= 2966 <= nu_)
+chk("no survivor below 2966 in window", [m for m in range(lb, nu_) if decide(Kbit[m], m, e6)] == [])
+print(f"[8] records <= 3000: {[m for m in recs_bf if m <= 3000]}")
+print(f"[8] block-skip F=10^6: all m < {u_} out; in [{u_},{nu_}) need m >= {float(t_):.6g}")
+
+# --- PART 9: F = 2^68 certified bracket
+def ceil_ma(m):
+    lo, hi = m*ALO, m*AHI
+    cl = -((-lo.numerator)//lo.denominator); ch = -((-hi.numerator)//hi.denominator)
+    assert cl == ch; return cl
+F68 = 2**68; e68 = eps0(F68); LB68, UB68 = 8961554427, 72057431991
+chk("2^68 upper endpoint admissible", decide(ceil_ma(UB68), UB68, e68))
+u2, nu2, t2 = block_skip(F68)
+chk("2^68 lower endpoint", -(-t2.numerator//t2.denominator) == LB68)
+
+# --- PART 10: boundaries, CF data, semiconvergent structure
+chk("Adm_F(1) false for all F>=2", all(not decide(Kbit[1], 1, eps0(F)) for F in (2,3,10,10**6)))
+chk("ceil(1*alpha)=2", Kbit[1] == 2)
+chk("ceil(15601 a) = 24727", Kbit[15601] == 24727)
+def cf_digits(lo, hi, n=25):
+    a = []; x, y = lo, hi
+    for _ in range(n):
+        i1, i2 = x.numerator//x.denominator, y.numerator//y.denominator
+        if i1 != i2: break
+        a.append(i1); x, y = x - i1, y - i2
+        if x <= 0: break
+        x, y = 1/y, 1/x
+    return a
+dg = cf_digits(ALO, AHI)
+qn, pn = [1, 0], [0, 1]
+for a in dg: qn.append(a*qn[-1]+qn[-2]); pn.append(a*pn[-1]+pn[-2])
+qs, ps = qn[2:], pn[2:]
+chk("CF digits", dg[:15] == [1,1,1,2,2,3,1,5,2,23,2,2,1,1,55])
+chk("odd-index conv denominators <=1e5",
+    [q for i, q in enumerate(qs) if i % 2 == 1 and q <= 10**5] == [1,5,41,306,15601,79335])
+chk("2966 = q7 + 4 q8", qs[7] + 4*qs[8] == 2966)
+chk("4701 = p7 + 4 p8", ps[7] + 4*ps[8] == 4701)
+
+# --- PART 11: negation attempts
+for F, target in ((10**6,2966), (10**7,10946), (10**8,15601), (10**9,47468)):
+    chk(f"no admissible m < {target}",
+        [m for m in range(1, target) if decide(Kbit[m], m, eps0(F))] == [])
+def decide_strict(K, m, e0):
+    r = Fr(K, m) - e0
+    if ALO > r: return True
+    if AHI < r: return False
+    raise AssertionError
+chk("strict version same m*",
+    next(m for m in range(1, MMAX+1) if decide_strict(Kbit[m], m, e6)) == 2966)
+
+print(f"RESULT: {'ALL CHECKS PASSED' if not fails else str(len(fails))+' FAILURES'}"
+      f"  ({time.time()-t0:.1f}s)")
+for f in fails: print("  -", f)
+```
+
+**Output (verbatim, run 2026-07-25, CPython 3.11.15, Linux):**
+
+```text
+[4] F = 10^6 : m* =   2966, K* =   4701, K*+m* =   7667, gcd = 1
+[4] F = 10^7 : m* =  10946, K* =  17349, K*+m* =  28295, gcd = 1
+[4] F = 10^8 : m* =  15601, K* =  24727, K*+m* =  40328, gcd = 1
+[4] F = 10^9 : m* =  47468, K* =  75235, K*+m* = 122703, gcd = 1
+[4] admissible m <= 100000 at F=10^6 (first 6): [2966, 3631, 4296, 4961, 5267, 5626]; total 2404
+[6] m*=2966 for eps in [4.1229300e-07, 5.5881817e-07); eps0=4.8100048e-07, true eps~4.8089835e-07
+[8] records <= 3000: [1, 3, 5, 17, 29, 41, 94, 147, 200, 253, 306, 971, 1636, 2301, 2966]
+[8] block-skip F=10^6: all m < 2301 out; in [2301,2966) need m >= 2673.26
+RESULT: ALL CHECKS PASSED  (3.5s)
+```
+
+**Supplementary run** (script `v18_supp.py`, same session) confirmed three further
+claims of the file: the $L_0/U_0$ enclosure **alone** decides both the ceiling and
+the $\mathrm{Adm}$ test for every $m \le 3000$ (0 undecided of each), so the Main
+Theorem really does rest on just the two big-integer inequalities; the "Cost note"
+margin is exact ($\min_{m\le 3000}|\alpha - r| = 6.8707\cdot 10^{-8}$ at $m = 2966$,
+a factor $1456$ above $U_0 - L_0$); and the one-sided records coincide exactly with
+the from-above intermediate-fraction denominators. It also records a scope caveat
+worth stating: at $m \approx 7\cdot10^{10}$ (the $F = 2^{68}$ row) one has
+$m(U_0-L_0) \approx 3.4$, so **that row cannot use $L_0/U_0$** and rests instead on
+the Lemma-A series enclosure — which is fine (Lemma A is fully proved here), but
+the "entire theorem rests on two big-integer inequalities" remark should be read as
+scoped to the Main Theorem, which is how it is written.
+
+**X-9913 re-run in an independent implementation.** I re-ran the raised-floor sweep
+in C rather than Python, with `unsigned __int128` intermediates and an explicit
+audit of the peak value reached (to rule out silent overflow, which is the one
+failure mode Python's bignums make impossible and C makes easy):
+
+```c
+/* sweep.c -- fable-02-v18.  For every odd n in [3,N]: iterate T until the value
+ * drops strictly below n.  128-bit intermediates; peak value reported. */
+#include <stdio.h>
+#include <stdlib.h>
+typedef unsigned __int128 u128;
+int main(int argc, char **argv) {
+    unsigned long long N = (argc > 1) ? strtoull(argv[1], NULL, 10) : 1000000ULL;
+    unsigned long long maxsteps = 0, argmax = 1, checked = 0;
+    u128 peak = 0;
+    for (unsigned long long n = 3; n <= N; n += 2) {
+        u128 x = ((u128)3 * n + 1) >> 1;          /* first T step from odd n */
+        unsigned long long steps = 1;
+        while (x >= (u128)n) {
+            if (x & 1) x = (3 * x + 1) >> 1; else x >>= 1;
+            steps++;
+            if (x > peak) peak = x;
+        }
+        checked++;
+        if (steps > maxsteps) { maxsteps = steps; argmax = n; }
+    }
+    printf("N = %llu: %llu odd n checked; ALL drop strictly below themselves.\n", N, checked);
+    printf("max T-steps to first drop: %llu at n = %llu\n", maxsteps, argmax);
+    printf("peak intermediate hi:lo = %llu:%llu\n",
+           (unsigned long long)(peak >> 64), (unsigned long long)peak);
+    return 0;
+}
+```
+
+```text
+N = 1000000:    499999 odd n checked; max T-steps to first drop: 176 at n = 626331
+N = 10000000:   4999999 odd n checked; max T-steps to first drop: 246 at n = 8088063
+N = 100000000:  49999999 odd n checked; max T-steps to first drop: 376 at n = 63728127
+N = 1000000000: 499999999 odd n checked; max T-steps to first drop: 395 at n = 217740015
+peak intermediate value at N = 10^9: hi:lo = 0:707118223359971240  (fits in 64 bits)
+real 11.1s  (gcc -O2)
+```
+
+All four decades reproduce the file's Test 14 output **exactly**, including every
+max-drop statistic. The peak intermediate never left 64 bits, so the sweep is
+overflow-safe in C and *a fortiori* in the author's exact-integer Python. The
+**drop lemma** was re-derived independently and is sound: strong induction on $n$,
+with $n=1$ immediate, $n=2$ via $T(2)=1$, even $n \ge 2$ via $T(n)=n/2 < n$, and
+odd $n \ge 3$ via the verified $y = T^k(n) < n$ (and $y \ge 1$ since $T$ maps
+$\mathbb{Z}^+ \to \mathbb{Z}^+$); note the descending trajectory is allowed to
+exceed $N$ en route, which the induction does not care about. Only odd $n$ need
+testing, exactly as claimed.
+
+**X-9901 gate.** An independent memoised recomputation of the max *total*
+$C$-stopping time over $n \le 10^6$ returns `524 at n = 837799`, matching L-9909's
+recorded statistic. Together with the C descent sweep to $10^6$ above, this is a
+genuine second implementation of X-9901, not merely a restatement.
+
+### 5. Hypothesis discipline and over-claim check
+
+* The Main Theorem is **unconditional given one in-repo, independently reviewed
+  finite verification** (X-9901 in L-9909, PROVED, reviewed by fable-02-v7) — and
+  the file says exactly that, in the header, in $\mathrm{(V}_F)$, in the Motivation
+  and in Remaining uncertainty. No literature-scale floor is claimed as its own.
+* The $F = 2^{68}$ row is labelled **HYPOTHETICAL** and **not verified anywhere in
+  this repository** in the table itself, again in the paragraph below it, and again
+  in Remaining uncertainty item 3, where it is called PARTIAL. It is a certified
+  bracket $8\,961\,554\,427 \le m^*(2^{68}) \le 72\,057\,431\,991$ (both endpoints
+  reproduced by me), never a result. Correct.
+* The $10^7$–$10^9$ rows are labelled "verified in this file (X-9913, PROPOSED)",
+  i.e. in-repo but at the time unreviewed. Accurate; §4 above now supplies an
+  independent second implementation.
+* The honesty statement about Baker-type bounds is prominent and makes **no** claim
+  about literature numbers, methods or priority, and explicitly says $2966$ "is
+  certainly not a record". I attempted to find any sentence that could be read as
+  claiming a literature-scale result and found none.
+
+### 6. Fixes applied (documentation only; no statement changed)
+
+1. **Boxed note after L-9913.3** — the clause asserting that the two minima agree
+   "because $\mathrm{Adm}_F$ is closed upward under multiples" was a non-sequitur:
+   $\min\{m : \mathrm{Adm}_F(m)\}$ and $\min\{q : \mathrm{Adm}_F(q)\}$ are the same
+   number *by definition* (one predicate, one index set); upward closure is a
+   separate fact about the shape of the admissible set and is not needed for either
+   bound. Reworded. The bounds themselves were and remain correct.
+2. **L-9913.11 Preservation paragraph** — added the missing one-line argument that
+   both branches of the recursion are taken infinitely often (otherwise $B$, or
+   $A$, would decrease by a fixed positive amount and leave $(0,1)$), so the record
+   sequence $u_1 < u_2 < \dots$ is infinite and the block-skipping consequence
+   covers every $m$. Used only for the large-$F$ rows; the Main Theorem does not
+   use L-9913.11 at all.
+3. **Remaining uncertainty item 2** — cross-referenced the independent C re-run of
+   the $n \le 10^9$ sweep.
+
+### 7. Attempts to negate or strengthen
+
+* Searched for an admissible $m < 2966$ over $m \le 10^{5}$ with two independent
+  certifications of $\alpha$ and two independent methods for $\lceil m\alpha\rceil$:
+  none exists.
+* Tried to break the bound by tightening $\varepsilon$: replacing $\varepsilon_0$
+  by the true $\varepsilon(10^6)$, or by $\varepsilon(10^6+1)$ (using
+  $x_{\min} \ge F+1$), or by the strict form of $\mathrm{Adm}$ — all still give
+  $m^* = 2966$. The stability interval is $[4.12293\cdot10^{-7},
+  5.588182\cdot10^{-7})$, so $\varepsilon_0$ has $\approx 17\%$ slack on both
+  sides; the bound would only drop (to $2301$) if $\varepsilon$ were $\approx1.16$x
+  larger, which no correct derivation permits.
+* Tried to strengthen via the reduced denominator: impossible, for the reason in
+  §2 — the two minima coincide by definition.
+* Tried to strengthen via L-9910's $x_{\min} \ge m^2$ / $x_{\min} > \frac{2}{3\ln2}q^2$
+  route: not available at $F = 10^6$ (§3, last bullet). Still available at higher
+  floors — recorded as a live opportunity rather than a defect.
+* Circularity: L-9905, L-9909, L-9910 do not cite L-9913; the one fact needed from
+  L-9911 is re-proved inline. No cycle. Nothing assumes the Collatz conjecture or
+  its negation; the results are implications about hypothetical cycles.
+
+### 8. Residual caveats (not defects)
+
+1. The Main Theorem is exactly as strong as X-9901. That is stated everywhere it
+   matters, and X-9901 now has two independent implementations behind it.
+2. L-9913.10's $m \ge 47468$ rests on X-9913. It is now corroborated by my
+   independent C re-run, but I have left its PROPOSED label for the integrator to
+   adjudicate — a reviewer re-running a computation is corroboration, and the
+   status of an experiment record is not mine to promote unilaterally.
+3. The $F = 2^{68}$ bracket is not tightened here; pinning $m^*(2^{68})$ exactly
+   still needs the Ostrowski enumeration the author describes.
+4. Scope of my verdict: I verified L-9913.1–.11, Lemmas A and B, the dependency
+   audit and the gap audit. I did **not** re-verify L-9906, L-9915 or L-9910's
+   internals (they are separately PROVED, and none of them is load-bearing here).
+
+**First unsupported inference: none.** No mathematical defect was found; the two
+items in §6 are documentation.
+
+---
+*Reviewed by fable-02-v18, 2026-07-25. Status PROPOSED $\to$ PROVED.
+`INDEPENDENTLY_VERIFIED` deliberately NOT set, per README §7 and the review
+protocol.*

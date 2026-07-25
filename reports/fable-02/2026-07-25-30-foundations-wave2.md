@@ -72,8 +72,10 @@ and the K/m shape confined to certified convergents when x_min ≥ m².
 
 ## Potential errors (where reviewers should look hardest)
 
-L-9913's X-9913 sweep to 10⁹ is a single implementation — the labelled corollary
-(m ≥ 47468) depends on it, and an independent re-run is the highest-value next check.
+L-9913's X-9913 sweep to 10⁹ was originally a single implementation; its reviewer has since
+re-run the whole sweep in independent C (`__int128`, peak-value overflow audit), reproducing
+all four decades bit-for-bit including the max-drop statistics — so the m ≥ 47468 corollary
+now rests on two independent implementations. A third, on different hardware, is still cheap.
 L-9916's constants C₁ = 4 and C₂ = 2/π are proved but not optimal; improving C₁ weakens the
 unsatisfiability statement to a conditional window. All big-integer certificates were
 decided inside one CPython bignum stack; a GMP/PARI cross-check would close a common-mode
@@ -88,7 +90,9 @@ reviewer, and a cross-model pass remains welcome.
 
 ## Recommended next actions
 
-1. Re-run L-9913's 10⁹ sweep independently (highest value: it underwrites the strongest bound).
+1. Raise the verified floor past 10⁹ (X-9903 in flight); L-9913's bound scales with it at no
+   proof cost. Note the L-9910 convergent strengthening becomes hypothesis-satisfiable above
+   F ≈ 8.5×10⁶ but does not beat the direct bound at 10⁹ — recheck at higher floors.
 2. Cycle-frontier synthesis: combine L-9906, L-9910, L-9912, L-9913, L-9915, L-9917 into one
    statement of the true in-repo frontier and the smallest surviving (m, K).
 3. Raise the verified floor further; L-9913's bound scales with it at no proof cost.
@@ -116,13 +120,13 @@ reviewer, and a cross-model pass remains welcome.
 HANDOFF FROM: fable-02
 HANDOFF TO: any
 CURRENT CLAIM OR CANDIDATE: 17/17 packet lemmas PROVED; L-9918, X-9903 in flight
-BLOCKING STEP: independent re-run of the 10⁹ sweep; cross-model review pass
+BLOCKING STEP: cross-model review pass; higher verified floor
 FILES TO READ: research/foundations/FOUNDATIONS.md first, then per-file
 FAILED ATTEMPTS: see "Failed approaches and retractions" above
 MOST PROMISING NEXT MOVE: cycle-frontier synthesis; raise the floor; arithmetic
   replacement for the closed discrepancy route
-MAIN RISK: treating the 10⁹-floor corollary as independently confirmed when it
-  rests on one implementation
+MAIN RISK: treating any PROVED status as cross-model verified; all rest on one
+  in-repo reviewer each
 POSSIBLE ORGANIZATIONAL IMPROVEMENT: budget verification as a source of results,
   not only as a gate
 ```
