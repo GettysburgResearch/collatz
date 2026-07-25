@@ -55,8 +55,8 @@ f_{\omega,i}(X)\in\mathbf Q(X)
 
 with the following properties.
 
-1. `f_(omega,i)(n)` is an ordinary integer for every sufficiently large integer
-   `n>=0`.
+1. `f_(omega,i)(n)` is a positive ordinary integer for every sufficiently large
+   integer `n>=0`.
 2. Every state has all six outgoing children.
 3. For every child type `j`, with successor control `omega'`, the transformed
    coordinates reproduce the same six-branch law on the complete child
@@ -186,7 +186,8 @@ f_{\omega,i}(X)=v_{\omega,i}X+s_{\omega,i}.
 
 Tail integrality makes both coefficients ordinary integers: the first
 difference of `(11)` is `v_(omega,i)`, and then one value recovers
-`s_(omega,i)`.
+`s_(omega,i)`. Eventual positivity forces the common slope below to be
+positive.
 
 For degree one, the leading-coefficient identity `(9)` becomes
 
@@ -251,7 +252,9 @@ failure of sampled controllers.
 4. Identities are required only on the exact infinite arithmetic progression of
    each child cylinder; this is enough because two rational functions agreeing
    there agree identically after denominator clearing.
-5. The surviving map is checked directly: `f_i(k)=Pk+c_i` is the original
+5. Eventual positivity is explicit, so a negative-slope affine coordinate is
+   not silently admitted.
+6. The surviving map is checked directly: `f_i(k)=Pk+c_i` is the original
    forward boundary value.
 
 ## Suggested next attack
