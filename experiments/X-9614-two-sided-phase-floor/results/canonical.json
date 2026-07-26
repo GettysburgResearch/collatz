@@ -1,0 +1,91 @@
+{
+  "experiment_id": "X-9614",
+  "interpretation": {
+    "not_proved": [
+      "cycle exclusion for a>=244",
+      "ordinary extraction for the six-branch divergent chart",
+      "a nontrivial positive Collatz cycle or divergent seed"
+    ],
+    "proved_by_finite_certificate": [
+      "the exact depth-5, depth-8, and depth-10 two-sided phase floors",
+      "the exact parameter inequality for every 14<=a<=243 at the least contracting b"
+    ]
+  },
+  "parameter_certificate": {
+    "depth10_a_end": 243,
+    "depth10_a_start": 14,
+    "depth10_first_group_endpoint": {
+      "a_end": 14,
+      "a_start": 14,
+      "endpoint_margin": 121163836953470935131836113033,
+      "least_contracting_b": 3
+    },
+    "depth10_group_digest": "f54a2e9227d44b8d12078e9a046900d17dd3e476fd54aacad2eb06fe74ecf0a0",
+    "depth10_group_endpoint_rows": 48,
+    "depth10_last_group_endpoint": {
+      "a_end": 243,
+      "a_start": 240,
+      "endpoint_margin": 43970457711641128112418014378746835684028232787670937930541602612354598219355230848174012414624002331425983393408058557746324853122162854207301013304505035313889785947968018932673683916551927932484244024547606344847899379881863656133209620948776198811242489177824503350248410222225458336518569,
+      "least_contracting_b": 50
+    },
+    "depth10_parameter_digest": "b0116cde3b111814d35433b4478f524f3e84331edc538b25851c4ec349116390",
+    "depth10_parameter_rows": 230,
+    "first_failure_of_this_depth10_inequality": {
+      "a": 244,
+      "least_contracting_b": 50,
+      "margin": -15450785087313138219428190279425782715324880170191094077160135038129906009906306812773716571766249769977547443986345964949308516875174912828964547436492906711161887305031508508518192665366346091209122524235213951730621741644752622872622520782142740227803824036616486634022574042036702228455695
+    }
+  },
+  "phase_floors": [
+    {
+      "depth": 5,
+      "minimum": {
+        "central": 26873855,
+        "crt_modulus": 3869835264,
+        "output_modulus": 59049,
+        "output_residue": 6560,
+        "prefix": "AAAAB",
+        "source_modulus": 65536,
+        "source_residue": 4095,
+        "suffix": "BAAAA"
+      },
+      "ordered_pair_digest": "f3f9b63a193b89327197132feb2495170ec58af3a1bfda038b5206e82847d4fd",
+      "pair_count": 1024,
+      "word_count_each_side": 32
+    },
+    {
+      "depth": 8,
+      "minimum": {
+        "central": 195221131263,
+        "crt_modulus": 5777633090469888,
+        "output_modulus": 43046721,
+        "output_residue": 4251528,
+        "prefix": "AAAABBAB",
+        "source_modulus": 134217728,
+        "source_residue": 68554751,
+        "suffix": "AABBBBBB"
+      },
+      "ordered_pair_digest": "ad0dbcdc9608e3c4e699577ca3bc64760749e1dcd5b55f79a1fa485a6ecaf8f1",
+      "pair_count": 65536,
+      "word_count_each_side": 256
+    },
+    {
+      "depth": 10,
+      "minimum": {
+        "central": 90608969363967,
+        "crt_modulus": 7487812485248974848,
+        "output_modulus": 3486784401,
+        "output_residue": 1389919581,
+        "prefix": "AAABAAAAAA",
+        "source_modulus": 2147483648,
+        "source_residue": 191803903,
+        "suffix": "ABBAAAAABB"
+      },
+      "ordered_pair_digest": "f8dcff96cee68f12563e0fe21876b693dfd20e97d571c9d3760427c99abfa5af",
+      "pair_count": 1048576,
+      "word_count_each_side": 1024
+    }
+  ],
+  "semantic_sha256": "296074c8e5f59c11bc1de1c7d0d89084ae79012381ff1d850fb611281fe0cf06",
+  "status": "EXACT FINITE CERTIFICATE"
+}
