@@ -10,11 +10,12 @@ Title:         Integral cycles of finite affine alphabets Q x' = P x + C_i:
                divisibility refinement g | (m + k), and the height gate
                E_max < g D; (3) packet links: constant-word Syracuse rigidity
                re-derived, and the two-line supercritical sign obstruction.
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p17
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v25 (adversarial review 2026-07-26: PASS)
 Created:       2026-07-26
-Last updated:  2026-07-26
+Last updated:  2026-07-26 (status upgraded after independent review, see
+               Verification note at end of file)
 Dependencies:  research/foundations/NOTATION.md only (conventions: Z^+, empty
                sums/products, status semantics, "computation is finite
                verification"; D-9904/D-9905/D-9908 are used solely to NAME the
@@ -1230,4 +1231,922 @@ should probe first:
 *File authored by fable-02-p17, 2026-07-26. Status PROPOSED per NOTATION.md
 conventions; an independent reviewing agent may upgrade after verification.*
 
+---
 
+## Verification note (fable-02-v25, 2026-07-26)
+
+**Verdict: PASS.** Independent adversarial review per README §13: the claims
+were restated and every proof step reconstructed from `NOTATION.md` alone;
+every quantifier and boundary case audited; the central strengthening
+subjected to a counterexample hunt that is *exhaustive* — over all alphabets,
+all word lengths, all cycle lengths — for every pair $1 \le P < Q \le 30$;
+the sieve, refinement, gate, and sign lemma checked on independently
+generated cycles; and the embedded test block audited byte-for-byte. No
+substantive gap found; the first unsupported inference (README §13.9) does
+not exist. Status upgraded PROPOSED → PROVED and this reviewer recorded in
+the header. Per README §7 the file is **not** marked INDEPENDENTLY_VERIFIED —
+that requires a further reviewer beyond this first independent review. Two
+cosmetic wording points are recorded in §V.5; neither affects any statement
+or proof, and the author's text was left untouched.
+
+### V.1 Reconstruction of the strengthening $W < P+Q$ (L-9923.1S)
+
+The file's main novelty over its source spec is the sharp threshold, and its
+load-bearing new step is Step 4(i). My independent reconstruction, in full:
+
+Let a **moving** integral cycle be given, so $M > m$, hence $R \ge 2$; read
+indices in $\mathbb{Z}/R\mathbb{Z}$.
+
+*Existence of an edge entering the maximum.* $J = \{t : x_t = M\}$ is
+nonempty (the max is attained) and proper (some $x_t = m \ne M$). Fix
+$t^* \in J$ and let $j^* \in \{1, \dots, R\}$ be **minimal** with
+$x_{t^*-j^*} \ne M$; it exists because the $R$ predecessor indices
+$t^*-1, \dots, t^*-R$ cover all residues and $J$ is proper. Set
+$u := t^* - j^*$. Then $x_u \ne M$ and $x_{u+1} = M$: for $j^* = 1$ because
+$u+1 = t^*$; for $j^* \ge 2$ because minimality of $j^*$ forces
+$x_{t^*-(j^*-1)} = M$. This disposes of every degenerate configuration
+probed: the maximum attained once, many times, or in consecutive runs (the
+walk skips a run to its entry edge); $R = 1$ and $M = m$ cannot occur for a
+moving cycle, so no vacuous case is hit.
+
+*The inequality.* $x_u$ is an integer below the maximum, so $x_u \le M - 1$.
+The defining relation at $u$ gives $C_{i_u} = Qx_{u+1} - Px_u = QM - Px_u$,
+and since the coefficient of $-x_u$ is $P \ge 1 > 0$,
+$$C_+ \ \ge\ C_{i_u} \ =\ QM - Px_u \ \ge\ QM - P(M-1) \ =\ DM + P .$$
+Dually an edge $x_{u'} \to m$ with $x_{u'} \ge m + 1$ exists, and
+$C_- \le C_{i_{u'}} = Qm - Px_{u'} \le Dm - P$. Subtracting,
+$$W \ \ge\ C_{i_u} - C_{i_{u'}} \ \ge\ (DM + P) - (Dm - P) \ =\ D(M-m) + 2P
+\ \ge\ D + 2P \ =\ P + Q ,$$
+using $M - m \ge 1$ (integer states). Remarks from the audit: the two
+entering edges are automatically distinct ($u = u'$ would force
+$M = x_{u+1} = m$), and the two used constants are forced to differ
+($C_{i_u} - C_{i_{u'}} \ge D + 2P > 0$) — but the proof needs neither fact,
+only $C_{i_u} \le C_+$ and $C_{i_{u'}} \ge C_-$, so no hidden distinctness
+assumption is present.
+
+(ii) is the contrapositive plus the constant-cycle computation (edge
+identity at equal states, which never used $W < Q$ — checked). (iii) is the
+direct check of $\{Q, -P\}$ on $0 \leftrightarrow 1$; the equality analysis
+($W = P + Q$ forces $M - m = 1$ and pins the entering constants to
+$C_+ = DM + P$, $C_- = Dm - P$) yields a sharp testable prediction used in
+§V.2. (iv) is one subtraction, and $0 < Q < P + Q$ for $P \ge 1$ refutes the
+source's $W = Q$ example; I verified the $P = 0$ remark separately
+($\{0, Q\}$ does carry $0 \leftrightarrow 1$ when $P = 0$; excluded here).
+
+All remaining steps were reconstructed and found correct: Lemma A
+(induction; machine-checked at 4000 random $(P, Q, \text{trajectory})$
+instances with arbitrary $P, Q \ge 1$, no order), Lemma B (telescoping),
+Lemma C (the $r$-rotation's relation at $j$ is the original relation at
+index $r+j$, which the $R$-periodic extension satisfies at every index —
+including the wrap, where it is exactly the closure $x_R = x_0$ substituted
+into the relation at $R-1$), Step 1's convex combination (weight positivity
+is exactly where $P \ge 1$ enters; $G_R \mid c_w$ from integrality of
+$Dx_0$; strictness when two constant values occur), Step 2's all-anchor
+upgrade (each $x_t$ is $y_0$ of its rotation — precisely what turns (a) into
+the position-uniform bound; no index slip found), Step 3's integrality
+pinch, Step 5 (positivity of states enters **only** as $m \ge 1$, minimality
+**only** as $k_t \ge 0$; the law is derived at an *arbitrary* minimal
+position, hence holds at every one — the quantifier (2b) consumes), Step 6
+(mod $g$: $D \equiv Q$ from $g \mid P$; invertibility of $Q$ from
+$\gcd(g, Q) = 1$; $m + k_t \ge g$ from divisibility plus positivity), Step 7
+(**only** the forgetful direction $S$-cycle $\Rightarrow$ integral cycle is
+used; I confirmed no sentence anywhere uses the converse), and Step 8 (see
+§V.3). The Dependency and Gap audits' assertions were each spot-checked and
+are accurate; the citation structure is acyclic ((1C) cites 4(ii), Step 4
+does not use (1C); Step 7 cites Step 8, Step 8 uses only Lemmas A–C).
+
+### V.2 Counterexample hunt — scope and outcome
+
+The fatal object would be a moving integral cycle with $W < P + Q$. Two
+elementary closure facts make a *complete* hunt possible:
+
+- **Superset closure.** Every cycle of an alphabet is a cycle of any
+  super-alphabet, and any alphabet of width $\le P+Q-1$ is a subset of the
+  full integer interval $\{b, b+1, \dots, b+P+Q-1\}$ with $b = C_-$. So it
+  suffices to test full intervals.
+- **Shift closure.** $Q(x'+s) = P(x+s) + (C + Ds)$ iff $Qx' = Px + C$:
+  shifting all constants by $Ds$ shifts all cycles by $s$ and preserves
+  moving-ness. So only $b \bmod D$ matters.
+- **Complete state window.** Every integral cycle of every length satisfies
+  $C_- \le Dx_t \le C_+$ by the elementary predecessor bound: the maximal
+  state $M$ has a within-cycle predecessor $x_u \le M$, so
+  $QM = Px_u + C_{i_u} \le PM + C_+$, i.e. $DM \le C_+$; dually
+  $Dm \ge C_-$. (This is Step 4(i)'s mechanism *without* moving-ness,
+  derived independently here so the search's completeness does not rest on
+  the claims under test.) Hence the digraph on
+  $[\lfloor C_-/D \rfloor - 5,\ \lceil C_+/D \rceil + 5]$ with edges
+  $x \to (Px + C_i)/Q$ (where integral) contains every integral cycle of
+  **every length** as a closed walk, and a moving cycle exists iff some
+  strongly connected component has $\ge 2$ vertices.
+
+Outcome (`v25_complete_narrow.py`, §V.6): for **all 435 pairs**
+$1 \le P < Q \le 30$ — coprime and non-coprime — and all $D$ base residues,
+the width-$(P+Q-1)$ intervals carry **no moving cycle**. Within this
+parameter range that settles the narrow regime for *every* alphabet of every
+size and constant range, on *every* word of *every* length: the hunt has no
+cap other than $Q \le 30$. Additionally, at width exactly $P + Q$ the
+interval $\{b, \dots, b+P+Q\}$ carries a moving cycle **iff**
+$D \mid (b + P)$ — precisely the prediction extracted from the span bound's
+equality analysis plus the witness family $\{Q, -P\} + Ds$ — verified in
+both directions at 5510 instances ($Q \le 20$).
+
+Independent randomized/structured hunts (`v25_verify.py`, §V.6; seed
+20260726, machinery disjoint from the author's) corroborate: a threshold
+scan at 15 pairs including non-coprime $(2,4), (6,9), (4,10), (2,8),
+(3,12)$ finds minimal moving 2-letter width $= P + Q$ on the nose (all
+cycle lengths); 5334 exhaustive-in-a-box narrow 3-letter alphabets and 6000
+random narrow alphabets with $s \le 6$, $Q \le 20$ (3195 of them in the
+beyond-spec regime $Q \le W \le P+Q-1$, the file's genuinely new range) —
+none moving, and the constant cycles found are exactly the predicted fixed
+points $C_i/D$, $D \mid C_i$; 1040 adversarial "near-entering-edge"
+alphabets built from $\{Dm-P+1, DM+P-1, \dots\}$ (widths just below
+threshold with both edge estimates nearly tight) — none moving; 915
+width-$Q$ pairs (the source's refuted sharpness shape) at 15 pairs — none
+moving at any length, refuting the source's example independently. On the
+wide side, 1314 moving cycles were found (words $\le 6$) and every one
+satisfies $C_+ \ge DM + P$, $C_- \le Dm - P$, and $W \ge D(M-m) + 2P$; the
+edges entering the maximum and the minimum were located explicitly in each
+and their identities/inequalities confirmed edge by edge; every moving cycle
+at $W = P + Q$ exactly has $M - m = 1$. **The strengthening survives; no
+counterexample was found in any regime.** (Finite verification per
+NOTATION.md, never proof — but note the narrow sweep's completeness within
+its $Q \le 30$ frontier.)
+
+### V.3 Sign hypothesis (L-9923.2) and the $C_i \ge 0$ edge (L-9923.3(ii))
+
+**No sign hypothesis on the $E_i$ — confirmed.** (2a)'s proof uses
+positivity of *states* exactly once ($m \ge 1$) and minimality exactly once
+($k_t \ge 0$); no sign property of the alphabet is used anywhere, and the
+floor $E_{i_t} \ge D$ is a conclusion, not an assumption. The witness family
+$\{Dm + Qk,\ Dm - Pk\}$ genuinely carries the positive 2-cycle $(m, m+k)$:
+verified by direct iteration at 840 grid instances over 15 $(P,Q)$ pairs,
+**429 with a negative down-constant**, the min-edge law holding in all. On
+independently generated data the law $E = Dm + Qk_t$, the floor, and
+$T(E_{\max})$-membership hold at *every minimal position* of 2153 positive
+cycles (615 moving); 400 alphabets with all $E_i \le 0$ carry no positive
+cycle of **any** length (complete positive-window graph search: positive
+cycles satisfy $1 \le x_t \le C_+/D$ by the same predecessor bound); the
+$g$-refinement ($g \mid (m + k_t)$, $m + k_t \ge g$, $E \ge gD$) holds at
+1293 instances; 400 below-gate alphabets ($E_{\max} \le g(D-1) < gD$) carry
+no positive cycle of **any** length — strengthening the author's
+length-$\le 5$ gate check to all lengths; gate sharpness $x = g$ at
+$E = gD$ holds for all tested $(g, P, Q)$; and the worked survivor instance
+$T_g(21) = \{6, 9, 12, 15, 18, 21\}$ with $\{21, -3\}$ on $(3, 6)$ was
+re-derived from scratch.
+
+**The $\ge 0$ edge — correct as stated.** The two-line proof needs only
+$c_w \ge 0$; the contradiction $(Q^R - P^R)x_0 \le -x_0 \le -1 < 0 \le c_w$
+has slack, so a zero constant nowhere breaks strictness — strictness comes
+from $x_0 \ge 1$, not from $C_i > 0$ (the spec's $C_i > 0$ is indeed not
+needed). The probed configuration — a cycle through the zero-constant fixed
+point — is handled correctly: $x = 0$ *is* a legal integral cycle when
+$0$ is in the alphabet, and it contains no positive state, consistent with
+the lemma's exact conclusion (which forbids positive *states on cycles*,
+not cycles). Sharper derived fact, confirmed computationally and provable in
+two lines from the same display: any supercritical $C_i \ge 0$ cycle
+visiting $0$ has $(Q^R - P^R)\cdot 0 = c_w = 0$, and the strictly positive
+coefficients force every used constant and every state to be $0$. In 1929
+cycles of 300 random supercritical alphabets (112 containing the constant
+$0$), no positive state occurred and every $0$-visiting cycle was
+identically $0$; $(P, Q, C) = (3, 2, \{1\})$ sits at $x = -1$ for all
+lengths $\le 8$; the six-branch alphabet was recomputed from
+$7 \cdot 3^{2i} 2^{15-3i}$, matches D-9916.2 of L-9916 exactly, and has
+$c_w > 0 > Q^R - P^R$ at all 258 words of length $\le 3$. The Syracuse
+one-letter check (Step 7's numbers) was repeated independently for
+$a = 2..10$, $R \le 6$: root always $1/(2^a - 3)$, integral exactly at
+$a = 2$ with all states $1$.
+
+### V.4 Embedded-block audit
+
+The file's single embedded `python` block (357 lines) was extracted,
+executed unmodified (CPython 3, Linux, ~3.8 s), and its output compared
+against the recorded output block: **byte-for-byte identical** (empty
+`diff`), including every count (164, 10920, 732/366/…, 104, 1246/150,
+623, 1198, 258, 3021/706). The script is deterministic as claimed (seed
+99230, exact integer arithmetic; a second run reproduced it again). Its
+logic was audited: `cycle_on_word` is sound *and* complete per word (unique
+rational root since $Q^R \ne P^R$; per-step divisibility checks), Python `%`
+semantics are safe at the negative dividends/divisors it encounters
+(including the supercritical negative denominator in Test 6), and Test 2's
+completeness assertion (found fixed points $=$ predicted $\{C_i/D\}$) is
+implemented correctly for negative constants.
+
+### V.5 Cosmetic points (documented; author's text left unchanged)
+
+1. **Step 4(i), index range of the backwards walk.** The walk
+   "$t^*, t^*-1, \dots$" can reach indices below $0$, while the Definitions
+   extend indices periodically only for $j \ge 0$. The intended reading
+   (indices in $\mathbb{Z}/R\mathbb{Z}$, as the definition of $J$ already
+   uses) is unambiguous and correct; a fully pedantic phrasing anchors the
+   walk at $t^* + R$: take $j^* \in \{1, \dots, R\}$ minimal with
+   $x_{t^* + R - j^*} \ne M$, so every index touched lies in the defined
+   range.
+2. **Statement L-9923.3(i)** says "L-9923.1(a) alone forces
+   $(2^a - 3)x_t = 1$ for every $t$"; reaching *every* $t$ uses (a)
+   together with Lemma C (rotation), exactly as Step 7 then does. "Alone"
+   should be read as "without the collapse clause (c)".
+
+Neither point weakens any claim; both are wording-level only.
+
+### V.6 Verification code and output
+
+Independent implementation (different seed, different machinery — notably
+the all-lengths SCC search over a provably complete state window, versus
+the author's word-length-capped enumeration; found cycles are re-verified
+relation-by-relation with exact integers). Scripts kept session-local at
+`scratchpad/v25_verify.py`, `scratchpad/v25_complete_narrow.py`; full code
+inline, byte-identical to the executed files.
+
+```python
+#!/usr/bin/env python3
+"""
+Independent adversarial verification of L-9923 (fable-02-v25, 2026-07-26).
+Written from the STATEMENTS alone; implementation independent of the file's
+embedded script (different seed, different enumeration methods).
+
+Two complete cycle-search methods:
+  (1) word method: for each word, the cycle equation (Q^R - P^R) x_0 = c_w has
+      a unique rational root (Q != P); integrality of x_0 and of every
+      intermediate state is checked BY DIRECT ITERATION of Q x' = P x + C.
+      Complete over all words of length <= Rmax, states unbounded.
+  (2) state-graph method: every integral cycle's states satisfy
+      C_- <= D m <= D x_t <= D M <= C_+  by the elementary predecessor bound
+      (max state M has a predecessor x_u <= M: QM = P x_u + C <= PM + C_+, so
+      DM <= C_+; dually for m).  Hence the digraph on the integer window
+      [floor(C_-/D) - slack, ceil(C_+/D) + slack] with edges x -> (Px+C_i)/Q
+      (when integral and in-window) contains EVERY integral cycle of EVERY
+      length as a closed walk.  A moving cycle exists  <=>  some SCC has >= 2
+      vertices.  Complete for ALL R (no length cap).
+For positive cycles: same graph restricted to x >= 1 (window [1, C_+/D + slack]);
+any cycle there (self-loop included) is a positive integral cycle and vice versa.
+"""
+import sys, random
+from fractions import Fraction
+from itertools import product as iprod, combinations
+from math import gcd
+
+rng = random.Random(20260726)
+FAILS = []
+def chk(label, cond):
+    if not cond:
+        FAILS.append(label)
+        print("FAIL:", label)
+
+def exact_div(a, b):
+    """a/b as int if b | a, else None. b != 0, any signs."""
+    q, r = divmod(a, b)
+    return q if r == 0 else None
+
+def word_cycle(P, Q, C, word):
+    """Unique cycle on this word, verified by direct iteration; else None."""
+    R = len(word)
+    den = Q**R - P**R
+    if den == 0:
+        return None
+    num = 0
+    for t, i in enumerate(word):           # c_w = sum P^(R-1-t) Q^t C_it
+        num += P**(R - 1 - t) * Q**t * C[i]
+    x0 = exact_div(num, den)
+    if x0 is None:
+        return None
+    xs = [x0]
+    for i in word:
+        nxt = exact_div(P * xs[-1] + C[i], Q)
+        if nxt is None:
+            return None
+        xs.append(nxt)
+    if xs[-1] != xs[0]:
+        return None                        # cannot happen; belt & braces
+    for t, i in enumerate(word):           # re-verify every relation exactly
+        assert Q * xs[t + 1] == P * xs[t] + C[i]
+    return xs[:R]
+
+def word_cycles(P, Q, C, Rmax):
+    out = []
+    for R in range(1, Rmax + 1):
+        for word in iprod(range(len(C)), repeat=R):
+            xs = word_cycle(P, Q, C, word)
+            if xs is not None:
+                out.append((word, xs))
+    return out
+
+def graph_edges(P, Q, C, lo, hi):
+    adj = {x: [] for x in range(lo, hi + 1)}
+    for x in range(lo, hi + 1):
+        for c in C:
+            y = exact_div(P * x + c, Q)
+            if y is not None and lo <= y <= hi:
+                adj[x].append(y)
+    return adj
+
+def sccs(adj):
+    """Iterative Tarjan."""
+    index = {}; low = {}; onstk = {}; stk = []; out = []; ctr = [0]
+    for root in adj:
+        if root in index:
+            continue
+        work = [(root, iter(adj[root]))]
+        index[root] = low[root] = ctr[0]; ctr[0] += 1
+        stk.append(root); onstk[root] = True
+        while work:
+            v, it = work[-1]
+            advanced = False
+            for w in it:
+                if w not in index:
+                    index[w] = low[w] = ctr[0]; ctr[0] += 1
+                    stk.append(w); onstk[w] = True
+                    work.append((w, iter(adj[w])))
+                    advanced = True
+                    break
+                elif onstk.get(w):
+                    low[v] = min(low[v], index[w])
+            if advanced:
+                continue
+            work.pop()
+            if work:
+                pv = work[-1][0]
+                low[pv] = min(low[pv], low[v])
+            if low[v] == index[v]:
+                comp = []
+                while True:
+                    w = stk.pop(); onstk[w] = False; comp.append(w)
+                    if w == v:
+                        break
+                out.append(comp)
+    return out
+
+def window(P, Q, C, slack=4):
+    D = Q - P
+    lo = min(C); hi = max(C)
+    a = lo // D - slack               # floor
+    b = -((-hi) // D) + slack         # ceil
+    return a, b
+
+def moving_exists(P, Q, C, slack=4):
+    """ALL cycle lengths: True iff a moving integral cycle exists."""
+    a, b = window(P, Q, C, slack)
+    adj = graph_edges(P, Q, C, a, b)
+    return any(len(c) >= 2 for c in sccs(adj))
+
+def const_states(P, Q, C, slack=4):
+    """All fixed-point states (self-loops) in the provable window."""
+    a, b = window(P, Q, C, slack)
+    adj = graph_edges(P, Q, C, a, b)
+    return {x for x in adj if x in adj[x]}
+
+def pos_cycle_exists(P, Q, C, slack=4):
+    """ALL lengths: True iff a POSITIVE integral cycle exists."""
+    D = Q - P
+    hi = max(C)
+    if hi < D:                        # even the elementary bound kills it
+        return False
+    b = -((-hi) // D) + slack
+    adj = graph_edges(P, Q, C, 1, b)
+    if any(x in adj[x] for x in adj):
+        return True
+    return any(len(c) >= 2 for c in sccs(adj))
+
+def T_set(D, Q, B):
+    """T(B), built by scanning candidate values (independent structure)."""
+    out = set()
+    for v in range(D, B + 1):
+        mu = 1
+        while D * mu <= v:
+            if (v - D * mu) % Q == 0:
+                out.add(v); break
+            mu += 1
+    return out
+
+def Tg_set(D, Q, g, B):
+    out = set()
+    for mu in range(1, B // D + 1):
+        ka = 0
+        v = D * mu
+        while v <= B:
+            if (mu + ka) % g == 0:
+                out.add(v)
+            ka += 1; v += Q
+    return out
+
+# =====================================================================
+print("== A. Lemma A / Lemma B (independent random spot check) ==")
+nA = 0
+for _ in range(500):
+    P = rng.randint(1, 25); Q = rng.randint(1, 25)
+    xs = [rng.randint(-60, 60) for _ in range(8)]
+    cs = [Q * xs[t + 1] - P * xs[t] for t in range(7)]
+    for j in range(8):
+        rhs = P**j * xs[0] + sum(P**(j - 1 - t) * Q**t * cs[t] for t in range(j))
+        chk("A.iterate", Q**j * xs[j] == rhs); nA += 1
+    for R in range(1, 8):
+        G = sum(P**(R - 1 - t) * Q**t for t in range(R))
+        chk("A.geom", (Q - P) * G == Q**R - P**R)
+print(f"   {nA} iterate-identity instances, geometric sums OK")
+
+# =====================================================================
+print("== B. THRESHOLD SCAN (all cycle lengths, SCC method) ==")
+PAIRS = [(1, 2), (1, 3), (2, 3), (3, 4), (2, 5), (3, 5), (4, 5), (2, 4),
+         (6, 9), (4, 10), (2, 8), (5, 8), (7, 12), (9, 10), (3, 12)]
+for (P, Q) in PAIRS:
+    D = Q - P
+    minw = None
+    for w in range(0, P + Q + 1):
+        found = False
+        for b in range(-(P + Q) - 15, (P + Q) + 16):
+            if moving_exists(P, Q, [b, b + w]):
+                found = True; break
+        if found:
+            minw = w; break
+    chk(f"B.minwidth P={P} Q={Q}", minw == P + Q)
+    print(f"   (P,Q)=({P},{Q}) D={D}: minimal 2-letter moving width = {minw} "
+          f"(claim: {P+Q})")
+
+# 3-letter exhaustive-in-a-box, all widths below threshold, ALL R
+print("== B2. 3-letter narrow alphabets: exhaustive box, ALL R ==")
+tot3 = 0
+for (P, Q) in [(1, 2), (2, 3), (3, 4), (2, 4), (3, 5), (6, 9), (2, 5)]:
+    for b in range(-10, 11):
+        for w in range(0, P + Q):
+            for u in range(0, w + 1):
+                C = [b, b + u, b + w]
+                if moving_exists(P, Q, C):
+                    chk(f"B2 moving P={P} Q={Q} C={C}", False)
+                tot3 += 1
+print(f"   {tot3} narrow 3-letter alphabets: no moving cycle of ANY length")
+
+# random narrow alphabets, s up to 6, wider (P,Q), beyond-spec regime flagged
+print("== B3. random narrow alphabets (s<=6, Q<=20), ALL R ==")
+n_beyond = 0
+for trial in range(6000):
+    P = rng.randint(1, 15); Q = rng.randint(P + 1, 20); D = Q - P
+    s = rng.randint(1, 6)
+    b = rng.randint(-60, 60)
+    C = [b] + [b + rng.randint(0, P + Q - 1) for _ in range(s - 1)]
+    W = max(C) - min(C)
+    if W >= Q:
+        n_beyond += 1
+    if moving_exists(P, Q, C):
+        chk(f"B3 moving P={P} Q={Q} C={C}", False)
+    # constant cycles must be exactly the predicted fixed points
+    pred = {c // D for c in C if c % D == 0}
+    chk(f"B3 fixpoints P={P} Q={Q} C={C}", const_states(P, Q, C) == pred)
+print(f"   6000 random narrow alphabets ({n_beyond} in beyond-spec regime "
+      f"Q <= W <= P+Q-1): zero moving cycles, fixed points exactly C_i/D")
+
+# adversarial near-equality shapes: C_+ = DM+P-1, C_- = Dm-P+1 (just miss)
+print("== B4. adversarial near-entering-edge alphabets, ALL R ==")
+n4 = 0
+for (P, Q) in PAIRS:
+    D = Q - P
+    for m in range(-6, 7):
+        for M in range(m + 1, m + 4):
+            Cm = D * m - P + 1
+            CM = D * M + P - 1
+            if CM - Cm >= P + Q:      # only widths below threshold
+                continue
+            for extra in (None, (Cm + CM) // 2, D * m, D * M):
+                C = [Cm, CM] + ([extra] if extra is not None else [])
+                if max(C) - min(C) >= P + Q:
+                    continue
+                if moving_exists(P, Q, C):
+                    chk(f"B4 moving P={P} Q={Q} C={C}", False)
+                n4 += 1
+print(f"   {n4} near-equality alphabets: no moving cycle of any length")
+
+# =====================================================================
+print("== C. width-Q pairs (source's refuted sharpness shape), ALL R ==")
+nc = 0
+for (P, Q) in PAIRS:
+    for b in range(-30, 31):
+        if moving_exists(P, Q, [b, b + Q]):
+            chk(f"C moving P={P} Q={Q} b={b}", False)
+        nc += 1
+print(f"   {nc} width-Q pairs: no moving cycle of any length (source refuted)")
+
+# =====================================================================
+print("== D. sharpness at W = P+Q, span bound, entering edges ==")
+for (P, Q) in PAIRS:
+    D = Q - P
+    xs = word_cycle(P, Q, [Q, -P], (0, 1))
+    chk(f"D.sharp P={P} Q={Q}", xs == [0, 1])
+    chk(f"D.width P={P} Q={Q}", Q - (-P) == P + Q)
+# span bound + entering-edge reconstruction on wide random alphabets
+n_mov = n_cyc = 0
+for trial in range(400):
+    P = rng.randint(1, 6); Q = rng.randint(P + 1, 9); D = Q - P
+    s = rng.randint(2, 4)
+    C = [rng.randint(-30, 30) for _ in range(s)]
+    W = max(C) - min(C)
+    for word, xs in word_cycles(P, Q, C, 6):
+        n_cyc += 1
+        M, m = max(xs), min(xs)
+        if M == m:
+            continue
+        n_mov += 1
+        R = len(xs)
+        chk("D.span W", W >= D * (M - m) + 2 * P)
+        chk("D.Cplus", max(C) >= D * M + P)
+        chk("D.Cminus", min(C) <= D * m - P)
+        # reconstruct Step 4(i): edges entering the max / the min
+        ent_max = [t for t in range(R) if xs[(t + 1) % R] == M and xs[t] != M]
+        ent_min = [t for t in range(R) if xs[(t + 1) % R] == m and xs[t] != m]
+        chk("D.entmax exists", len(ent_max) >= 1)
+        chk("D.entmin exists", len(ent_min) >= 1)
+        for t in ent_max:
+            cu = C[word[t]]
+            chk("D.entmax id", cu == Q * M - P * xs[t])
+            chk("D.entmax ge", cu >= D * M + P)
+        for t in ent_min:
+            cu = C[word[t]]
+            chk("D.entmin id", cu == Q * m - P * xs[t])
+            chk("D.entmin le", cu <= D * m - P)
+        if W == P + Q:
+            chk("D.diam1", M - m == 1)
+print(f"   {n_cyc} cycles on wide alphabets, {n_mov} moving: span bound "
+      f"W >= D(M-m)+2P, entering edges exist with the claimed inequalities")
+chk("D.some moving", n_mov > 0)
+
+# 2-cycle identity (iv)
+n_iv = 0
+for trial in range(300):
+    P = rng.randint(1, 9); Q = rng.randint(P + 1, 14)
+    C = [rng.randint(-40, 40), rng.randint(-40, 40)]
+    xs = word_cycle(P, Q, C, (0, 1))
+    if xs is not None:
+        chk("D.iv", (P + Q) * (xs[1] - xs[0]) == C[0] - C[1])
+        if xs[1] != xs[0]:
+            chk("D.iv div", (C[0] - C[1]) % (P + Q) == 0)
+            chk("D.iv size", abs(C[0] - C[1]) >= P + Q)
+        n_iv += 1
+print(f"   {n_iv} 2-cycles: (P+Q)(x1-x0) = C0-C1 identity holds")
+
+# =====================================================================
+print("== E. sieve law E = D m + Q k at EVERY minimal position ==")
+n_pos = n_posmov = 0
+for trial in range(300):
+    P = rng.randint(1, 6); Q = rng.randint(P + 1, 9); D = Q - P
+    s = rng.randint(2, 5)
+    C = [rng.randint(-25, 40) for _ in range(s)]
+    Emax = max(C)
+    T = T_set(D, Q, Emax) if Emax >= D else set()
+    for word, xs in word_cycles(P, Q, C, 5):
+        if min(xs) < 1:
+            continue
+        n_pos += 1
+        if len(set(xs)) > 1:
+            n_posmov += 1
+        m = min(xs); R = len(xs)
+        for t in range(R):
+            if xs[t] != m:
+                continue
+            kt = xs[(t + 1) % R] - m
+            chk("E.k>=0", kt >= 0)
+            chk("E.law", C[word[t]] == D * m + Q * kt)
+            chk("E.floor", C[word[t]] >= D)
+            chk("E.T", C[word[t]] in T)
+print(f"   {n_pos} positive cycles ({n_posmov} moving): law, floor E >= D, "
+      f"T(E_max) membership at every minimal position")
+
+# corollary: all E_i <= 0 => no positive cycle (ALL R)
+n_e0 = 0
+for trial in range(400):
+    P = rng.randint(1, 8); Q = rng.randint(P + 1, 12)
+    C = [rng.randint(-40, 0) for _ in range(rng.randint(1, 4))]
+    chk("E.nonpos", not pos_cycle_exists(P, Q, C))
+    n_e0 += 1
+print(f"   {n_e0} alphabets with all E_i <= 0: no positive cycle of ANY length")
+
+# witness family with negative constants
+print("== F. witness family {Dm+Qk, Dm-Pk} (no sign hypothesis needed) ==")
+n_wit = n_neg = 0
+for (P, Q) in PAIRS:
+    D = Q - P
+    for m in range(1, 9):
+        for k in range(1, 8):
+            C = [D * m + Q * k, D * m - P * k]
+            if C[1] < 0:
+                n_neg += 1
+            xs = word_cycle(P, Q, C, (0, 1))
+            chk("F.cycle", xs == [m, m + k])
+            chk("F.positive", min(xs) >= 1 if xs else False)
+            chk("F.law", C[0] == D * m + Q * k)
+            n_wit += 1
+print(f"   {n_wit} witness 2-cycles verified positive; negative down-constant "
+      f"in {n_neg} of them")
+
+# =====================================================================
+print("== G. g-refinement, gate (ALL R), gate sharpness ==")
+n_g = n_gcyc = 0
+for trial in range(300):
+    g = rng.randint(2, 6)
+    P = g * rng.randint(1, 4)
+    Q = P + rng.randint(1, 9)
+    while gcd(g, Q) != 1:
+        Q += 1
+    D = Q - P
+    C = [g * rng.randint(-8, 14) for _ in range(rng.randint(2, 4))]
+    n_g += 1
+    for word, xs in word_cycles(P, Q, C, 5):
+        if min(xs) < 1:
+            continue
+        n_gcyc += 1
+        m = min(xs); R = len(xs)
+        for t in range(R):
+            if xs[t] != m:
+                continue
+            kt = xs[(t + 1) % R] - m
+            chk("G.mod", (m + kt) % g == 0)
+            chk("G.sum>=g", m + kt >= g)
+            chk("G.floor", C[word[t]] >= g * D)
+print(f"   {n_g} g-divisible alphabets, {n_gcyc} positive-cycle instances: "
+      f"g|(m+k), m+k >= g, E >= gD")
+
+n_gate = 0
+for trial in range(400):
+    g = rng.randint(2, 6)
+    P = g * rng.randint(1, 4)
+    Q = P + rng.randint(1, 9)
+    while gcd(g, Q) != 1:
+        Q += 1
+    D = Q - P
+    C = [g * rng.randint(-9, D - 1) for _ in range(rng.randint(1, 4))]
+    chk("G.gate", not pos_cycle_exists(P, Q, C))   # ALL cycle lengths
+    n_gate += 1
+print(f"   {n_gate} below-gate alphabets (E_max <= g(D-1)): no positive "
+      f"cycle of ANY length")
+
+for g in range(1, 7):
+    for pp in range(1, 4):
+        P = g * pp
+        for Q in range(P + 1, P + 8):
+            if gcd(g, Q) != 1:
+                continue
+            D = Q - P
+            chk(f"G.sharp g={g} P={P} Q={Q}",
+                word_cycle(P, Q, [g * D], (0,)) == [g])
+print("   gate sharpness x = g at E = gD: all tested (g,P,Q)")
+
+# worked instance from the file, re-derived
+Tg = sorted(Tg_set(2, 5, 3, 21))
+chk("G.Tg", Tg == [6, 9, 12, 15, 18, 21])
+chk("G.inst", word_cycle(3, 5, [21, -3], (0, 1)) == [3, 6])
+print(f"   worked instance P=3 Q=5 g=3: T_g(21) = {Tg}; {{21,-3}} cycle (3,6)")
+
+# =====================================================================
+print("== H. supercritical sign lemma (C_i >= 0, zeros probed) ==")
+n_sc = n_sccyc = n_zero_alpha = 0
+for trial in range(300):
+    Q = rng.randint(1, 9); P = Q + rng.randint(1, 8)
+    s = rng.randint(1, 3)
+    C = [rng.randint(0, 30) for _ in range(s)]
+    if trial % 3 == 0:
+        C[rng.randrange(s)] = 0        # force a zero constant often
+    if 0 in C:
+        n_zero_alpha += 1
+    n_sc += 1
+    for word, xs in word_cycles(P, Q, C, 5):
+        n_sccyc += 1
+        chk("H.nopos", max(xs) <= 0)
+        if 0 in xs:                    # cycle through the zero fixed point?
+            chk("H.zerocycle", set(xs) == {0})
+            chk("H.zeroconsts", all(C[i] == 0 for i in word))
+print(f"   {n_sc} supercritical alphabets ({n_zero_alpha} containing 0): "
+      f"{n_sccyc} integral cycles, none with a positive state; every cycle "
+      f"visiting 0 is identically 0 on all-zero constants")
+# the (3,2,{1}) shortcut alphabet
+for R in range(1, 9):
+    xs = word_cycle(3, 2, [1], tuple([0] * R))
+    chk("H.312", xs == [-1] * R)
+print("   (P,Q,C)=(3,2,{1}): every cycle length 1..8 sits at x = -1")
+
+# =====================================================================
+print("== I. one-letter Syracuse (3, 2^a, 1) ==")
+for a in range(2, 11):
+    Q = 2**a; D = Q - 3
+    for R in range(1, 7):
+        num = sum(3**(R - 1 - t) * Q**t for t in range(R))
+        chk("I.root", Fraction(num, Q**R - 3**R) == Fraction(1, D))
+        xs = word_cycle(3, Q, [1], tuple([0] * R))
+        chk("I.integral", (xs == [1] * R) if a == 2 else xs is None)
+print("   a = 2..10, R <= 6: root 1/(2^a-3); integral only at a = 2 (all 1)")
+
+# =====================================================================
+print("== J. six-branch chart data ==")
+Pb, Qb = 3**12, 2**19
+A = [7 * 3**(2 * i) * 2**(15 - 3 * i) for i in range(6)]
+chk("J.vals", sorted(A) == [229376, 258048, 290304, 326592, 367416, 413343])
+chk("J.super", Pb > Qb)
+nw = 0
+for R in range(1, 4):
+    for word in iprod(range(6), repeat=R):
+        num = sum(Pb**(R - 1 - t) * Qb**t * A[i] for t, i in enumerate(word))
+        chk("J.sign", num > 0 > Qb**R - Pb**R)
+        nw += 1
+print(f"   alphabet matches L-9916; {nw} words length <= 3: c_w > 0 > Q^R-P^R")
+
+# =====================================================================
+print()
+if FAILS:
+    print(f"VERDICT: {len(FAILS)} FAILURES"); sys.exit(1)
+print("VERDICT: ALL INDEPENDENT CHECKS PASSED")
+```
+
+Output (verbatim, run 2026-07-26, CPython 3, Linux; identical across
+reruns — fixed seed, exact integer arithmetic; ~3 s):
+
+```text
+== A. Lemma A / Lemma B (independent random spot check) ==
+   4000 iterate-identity instances, geometric sums OK
+== B. THRESHOLD SCAN (all cycle lengths, SCC method) ==
+   (P,Q)=(1,2) D=1: minimal 2-letter moving width = 3 (claim: 3)
+   (P,Q)=(1,3) D=2: minimal 2-letter moving width = 4 (claim: 4)
+   (P,Q)=(2,3) D=1: minimal 2-letter moving width = 5 (claim: 5)
+   (P,Q)=(3,4) D=1: minimal 2-letter moving width = 7 (claim: 7)
+   (P,Q)=(2,5) D=3: minimal 2-letter moving width = 7 (claim: 7)
+   (P,Q)=(3,5) D=2: minimal 2-letter moving width = 8 (claim: 8)
+   (P,Q)=(4,5) D=1: minimal 2-letter moving width = 9 (claim: 9)
+   (P,Q)=(2,4) D=2: minimal 2-letter moving width = 6 (claim: 6)
+   (P,Q)=(6,9) D=3: minimal 2-letter moving width = 15 (claim: 15)
+   (P,Q)=(4,10) D=6: minimal 2-letter moving width = 14 (claim: 14)
+   (P,Q)=(2,8) D=6: minimal 2-letter moving width = 10 (claim: 10)
+   (P,Q)=(5,8) D=3: minimal 2-letter moving width = 13 (claim: 13)
+   (P,Q)=(7,12) D=5: minimal 2-letter moving width = 19 (claim: 19)
+   (P,Q)=(9,10) D=1: minimal 2-letter moving width = 19 (claim: 19)
+   (P,Q)=(3,12) D=9: minimal 2-letter moving width = 15 (claim: 15)
+== B2. 3-letter narrow alphabets: exhaustive box, ALL R ==
+   5334 narrow 3-letter alphabets: no moving cycle of ANY length
+== B3. random narrow alphabets (s<=6, Q<=20), ALL R ==
+   6000 random narrow alphabets (3195 in beyond-spec regime Q <= W <= P+Q-1): zero moving cycles, fixed points exactly C_i/D
+== B4. adversarial near-entering-edge alphabets, ALL R ==
+   1040 near-equality alphabets: no moving cycle of any length
+== C. width-Q pairs (source's refuted sharpness shape), ALL R ==
+   915 width-Q pairs: no moving cycle of any length (source refuted)
+== D. sharpness at W = P+Q, span bound, entering edges ==
+   6084 cycles on wide alphabets, 1314 moving: span bound W >= D(M-m)+2P, entering edges exist with the claimed inequalities
+   3 2-cycles: (P+Q)(x1-x0) = C0-C1 identity holds
+== E. sieve law E = D m + Q k at EVERY minimal position ==
+   2153 positive cycles (615 moving): law, floor E >= D, T(E_max) membership at every minimal position
+   400 alphabets with all E_i <= 0: no positive cycle of ANY length
+== F. witness family {Dm+Qk, Dm-Pk} (no sign hypothesis needed) ==
+   840 witness 2-cycles verified positive; negative down-constant in 429 of them
+== G. g-refinement, gate (ALL R), gate sharpness ==
+   300 g-divisible alphabets, 1293 positive-cycle instances: g|(m+k), m+k >= g, E >= gD
+   400 below-gate alphabets (E_max <= g(D-1)): no positive cycle of ANY length
+   gate sharpness x = g at E = gD: all tested (g,P,Q)
+   worked instance P=3 Q=5 g=3: T_g(21) = [6, 9, 12, 15, 18, 21]; {21,-3} cycle (3,6)
+== H. supercritical sign lemma (C_i >= 0, zeros probed) ==
+   300 supercritical alphabets (112 containing 0): 1929 integral cycles, none with a positive state; every cycle visiting 0 is identically 0 on all-zero constants
+   (P,Q,C)=(3,2,{1}): every cycle length 1..8 sits at x = -1
+== I. one-letter Syracuse (3, 2^a, 1) ==
+   a = 2..10, R <= 6: root 1/(2^a-3); integral only at a = 2 (all 1)
+== J. six-branch chart data ==
+   alphabet matches L-9916; 258 words length <= 3: c_w > 0 > Q^R-P^R
+
+VERDICT: ALL INDEPENDENT CHECKS PASSED
+```
+
+```python
+#!/usr/bin/env python3
+"""
+Conclusive finite check of L-9923.1S(ii) per (P,Q), over ALL alphabets and ALL
+cycle lengths, via two reductions:
+
+  (R1) superset closure: any alphabet with W <= P+Q-1 is a subset of the full
+       integer interval I_b = {b, b+1, ..., b+P+Q-1} with b = C_-; every
+       integral cycle of the subset is an integral cycle of I_b.  So if no I_b
+       carries a moving cycle, no narrow alphabet does.
+  (R2) shift closure: replacing C by C + D*s bijects cycles with states
+       shifted by s (Q(x'+s) = P(x+s) + C + D s), preserving moving-ness.
+       So only b mod D matters; testing D consecutive bases covers ALL b.
+
+  Combined with the SCC search (complete for all cycle lengths inside the
+  provable state window C_-/D <= x <= C_+/D, by the elementary predecessor
+  bound: the max state M has a predecessor x_u <= M, so QM <= PM + C_+,
+  i.e. DM <= C_+; dually Dm >= C_-), a clean sweep verifies: for this (P,Q),
+  NO moving integral cycle exists for ANY alphabet of width <= P+Q-1 on ANY
+  word of ANY length.  (Finite verification per (P,Q).)
+
+Also: at width exactly P+Q, the interval I_b = {b, ..., b+P+Q} carries a
+moving cycle IFF D | (b+P) -- the prediction extracted from the equality
+analysis of the span bound (C_+ = DM+P and C_- = Dm-P are forced at
+W = P+Q) plus the witness family {Q,-P} shifted by multiples of D.
+Both directions are tested.
+"""
+import sys
+
+def exact_div(a, b):
+    q, r = divmod(a, b)
+    return q if r == 0 else None
+
+def graph_edges(P, Q, C, lo, hi):
+    adj = {x: [] for x in range(lo, hi + 1)}
+    for x in range(lo, hi + 1):
+        for c in C:
+            y = exact_div(P * x + c, Q)
+            if y is not None and lo <= y <= hi:
+                adj[x].append(y)
+    return adj
+
+def sccs(adj):
+    index = {}; low = {}; onstk = {}; stk = []; out = []; ctr = [0]
+    for root in adj:
+        if root in index:
+            continue
+        work = [(root, iter(adj[root]))]
+        index[root] = low[root] = ctr[0]; ctr[0] += 1
+        stk.append(root); onstk[root] = True
+        while work:
+            v, it = work[-1]
+            advanced = False
+            for w in it:
+                if w not in index:
+                    index[w] = low[w] = ctr[0]; ctr[0] += 1
+                    stk.append(w); onstk[w] = True
+                    work.append((w, iter(adj[w])))
+                    advanced = True
+                    break
+                elif onstk.get(w):
+                    low[v] = min(low[v], index[w])
+            if advanced:
+                continue
+            work.pop()
+            if work:
+                pv = work[-1][0]
+                low[pv] = min(low[pv], low[v])
+            if low[v] == index[v]:
+                comp = []
+                while True:
+                    w = stk.pop(); onstk[w] = False; comp.append(w)
+                    if w == v:
+                        break
+                out.append(comp)
+    return out
+
+def moving_exists(P, Q, C, slack=5):
+    D = Q - P
+    lo = min(C) // D - slack
+    hi = -((-max(C)) // D) + slack
+    return any(len(c) >= 2 for c in sccs(graph_edges(P, Q, C, lo, hi)))
+
+FAILS = 0
+print("== Conclusive narrow-regime sweep (ALL alphabets via interval supersets,")
+print("   ALL bases via shift closure, ALL cycle lengths via SCC) ==")
+n_pairs = 0
+for Q in range(2, 31):
+    for P in range(1, Q):
+        D = Q - P
+        for b in range(D):                         # (R2): all bases mod D
+            I = list(range(b, b + P + Q))          # width P+Q-1
+            if moving_exists(P, Q, I):
+                print(f"FAIL: moving cycle, P={P} Q={Q} interval base {b}")
+                FAILS += 1
+        n_pairs += 1
+print(f"   all (P,Q), 1 <= P < Q <= 30: {n_pairs} pairs swept clean -- no")
+print("   moving cycle for ANY alphabet of width <= P+Q-1, ANY word length")
+
+print("== Width exactly P+Q: interval carries a moving cycle iff D | (b+P) ==")
+n_eq = 0
+for Q in range(2, 21):
+    for P in range(1, Q):
+        D = Q - P
+        for b in range(-2 * D, 2 * D + 1):
+            I = list(range(b, b + P + Q + 1))      # width P+Q
+            got = moving_exists(P, Q, I)
+            want = ((b + P) % D == 0)
+            if got != want:
+                print(f"FAIL: P={P} Q={Q} b={b}: moving={got} predicted={want}")
+                FAILS += 1
+            n_eq += 1
+print(f"   {n_eq} width-(P+Q) intervals: existence matches the equality-")
+print("   analysis prediction D | (b+P) exactly, both directions")
+
+print()
+print("RESULT:", "ALL CHECKS PASSED" if FAILS == 0 else f"{FAILS} FAILURES")
+sys.exit(0 if FAILS == 0 else 1)
+```
+
+Output (verbatim, same environment; ~1 s):
+
+```text
+== Conclusive narrow-regime sweep (ALL alphabets via interval supersets,
+   ALL bases via shift closure, ALL cycle lengths via SCC) ==
+   all (P,Q), 1 <= P < Q <= 30: 435 pairs swept clean -- no
+   moving cycle for ANY alphabet of width <= P+Q-1, ANY word length
+== Width exactly P+Q: interval carries a moving cycle iff D | (b+P) ==
+   5510 width-(P+Q) intervals: existence matches the equality-
+   analysis prediction D | (b+P) exactly, both directions
+
+RESULT: ALL CHECKS PASSED
+```
+
+### V.7 Confidence and status action
+
+High confidence. Every proof is short, elementary integer arithmetic,
+reconstructed here independently; the computational corroboration is
+complete within stated windows, and its completeness rests on the closure
+facts and the predecessor window bound of §V.2 — derived in this note, not
+on the claims under test. Header updated: Status PROPOSED → PROVED,
+reviewer recorded. Not marked INDEPENDENTLY_VERIFIED (requires a further
+independent reviewer per README §7 / NOTATION.md conventions).
+
+*Reviewed by fable-02-v25, 2026-07-26.*
