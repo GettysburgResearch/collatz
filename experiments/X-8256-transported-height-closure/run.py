@@ -528,6 +528,8 @@ def build_default_outputs() -> tuple[dict[str, object], dict[str, object]]:
     )
     candidate_scans = sum(node.candidate_count for node in nodes)
     retained_labels = [int(label) for label in label_histogram]
+    length_three_prefixes = depth_histogram.get(3, 0)
+    length_four_prefixes = depth_histogram.get(4, 0)
 
     canonical: dict[str, object] = {
         "experiment_id": EXPERIMENT_ID,
@@ -605,9 +607,11 @@ def build_default_outputs() -> tuple[dict[str, object], dict[str, object]]:
         },
         "result": {
             "maximum_consecutive_defined_labels_at_least_44": deepest,
-            "length_four_prefixes": 0,
-            "length_three_prefixes": len(deepest_exit_words),
-            "all_length_three_prefixes_exit_before_a_fourth": not survivor_ids,
+            "length_four_prefixes": length_four_prefixes,
+            "length_three_prefixes": length_three_prefixes,
+            "all_length_three_prefixes_exit_before_a_fourth": (
+                length_three_prefixes > 0 and length_four_prefixes == 0
+            ),
             "bounded_statement_only": True,
         },
         "exit_trie": {

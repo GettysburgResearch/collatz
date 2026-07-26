@@ -371,6 +371,8 @@ def reconstruct() -> tuple[dict[str, object], dict[str, object]]:
     deepest_words = sorted(
         list(w) for w in dead_words if len(w) == deepest
     )
+    length_three_prefixes = depth_counts.get(3, 0)
+    length_four_prefixes = depth_counts.get(4, 0)
 
     constants = {
         "D9": DELTA,
@@ -467,9 +469,11 @@ def reconstruct() -> tuple[dict[str, object], dict[str, object]]:
         },
         "result": {
             "maximum_consecutive_defined_labels_at_least_44": deepest,
-            "length_four_prefixes": 0,
-            "length_three_prefixes": len(deepest_words),
-            "all_length_three_prefixes_exit_before_a_fourth": True,
+            "length_four_prefixes": length_four_prefixes,
+            "length_three_prefixes": length_three_prefixes,
+            "all_length_three_prefixes_exit_before_a_fourth": (
+                length_three_prefixes > 0 and length_four_prefixes == 0
+            ),
             "bounded_statement_only": True,
         },
         "exit_trie": {
