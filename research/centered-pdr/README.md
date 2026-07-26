@@ -46,6 +46,28 @@ with edges given by shift-and-append. Hence the kernel has `2^(d+1)` states and 
 
 `R-8701` proves that its periodic lassos are nonordinary except for the two trivial constant controls, both of which select nearest integer zero.
 
+## Exact height renewal
+
+`L-8702` adds the missing first top-boundary coordinate without claiming
+all-time closure. For a positive legal path beginning in
+
+```text
+H/64 <= B_0 < H,
+```
+
+either a forbidden low residue terminates the path or its first crossing
+`H <= B_t < 64H` occurs by `t<=18`. For each binary itinerary, the initial
+integer is written exactly as `B_0=r+64^t Q`; all first-crossing conditions
+reduce to one half-open rational interval for the integer `Q`.
+
+`X-8703` streams all `1,048,572` words through depth 18 at `H=64^18`,
+stores aggregate digests and selected boundary certificates, and is
+independently reconstructed by a verifier that imports no builder code.
+These canonical counts are finite computation. The iterated affine identity,
+interval formula, deterministic partition of crossing survivors, and
+18-step bound have a separate elementary proof in `L-8702`, whose status
+remains `PROPOSED` pending review.
+
 ## Positive construction boundary
 
 Any positive infinite path is strictly increasing and therefore divergent. A genuine constructive certificate must nevertheless supply:
@@ -64,8 +86,10 @@ No such seed was found or claimed in this session.
 3. `claims/T-8701-fixed-precision-pdr-kernel.md`
 4. `claims/R-8701-fixed-modulus-pdr-ghosts.md`
 5. `claims/Q-8701-height-augmented-pdr.md`
-6. `CLAIM_INVENTORY.md`
-7. `../../experiments/X-8701-centered-pdr/`
+6. `claims/L-8702-centered-height-renewal.md`
+7. `CLAIM_INVENTORY.md`
+8. `../../experiments/X-8701-centered-pdr/`
+9. `../../experiments/X-8703-centered-height-renewal/`
 
 ## Cross-program boundary
 
