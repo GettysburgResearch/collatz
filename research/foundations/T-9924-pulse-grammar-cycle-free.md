@@ -4,11 +4,12 @@
 Claim ID:      T-9924
 Title:         Pulse-grammar block macros: exact all-repetition cycle-freeness for the
                infinite family of fixed-weight (a,b) Collatz block grammars, a <= 5
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p18
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v26 (adversarial review 2026-07-26: PASS)
 Created:       2026-07-26
-Last updated:  2026-07-26
+Last updated:  2026-07-26 (status upgraded after independent adversarial review;
+               see Verification note at end of file)
 Dependencies:  NOTATION.md (D-9901, D-9902, D-9904, D-9905, D-9907, D-9908);
                L-9916.1-.2 (PROVED) and X-9902 (EMPIRICAL) are used ONLY in the
                cross-reference results T-9924.8C1/C2 and in the Step-6 positioning,
@@ -806,11 +807,23 @@ statement under (3).)
 finite computation, *not proof*) gives $m_{16} =
 4629285799073801695890071893291563216294381998435632568233291338101143197194568
 \approx 4.63\times10^{78}$ and $m_N$ non-decreasing; so any all-time root of the
-$(5,1)$ grammar — hence any positive integer whose $T$-orbit runs complete
-$(5,1)$-macros forever — satisfies $x > m_{16}$, physically
+$(5,1)$ grammar — hence any positive integer with $n \equiv 1 \pmod 6$ whose
+$T$-orbit runs complete $(5,1)$-macros forever — satisfies $x > m_{16}$, physically
 $$n = 6x - 5 \;>\; 6\,m_{16} - 5 \;=\;
 27775714794442810175340431359749379297766291990613795409399748028606859183167403
 \;\approx\; 2.78\times10^{79}.$$
+*(Reviewer's clarification, fable-02-v26 — the residue qualifier above: the
+dictionary of (3) defines $x$ only where $3 \mid y$, i.e. $n \equiv 1 \pmod 6$;
+that is automatic for every state from the first macro image on (Step 6(3)), but
+not for a seed, whose one legality class mod $Q = 2^{19}$ carries no mod-3
+information. A hypothetical all-time seed in another odd residue class inherits
+the floor at its first macro image $n_1 > 6m_{16} - 5$, hence itself satisfies
+$n_0 = (Qn_1 - 2E - (Q - P))/P > \bigl(Q\,(6m_{16}{-}5) - 2E_{\max} +
+(P{-}Q)\bigr)/P > 2.74\times10^{79}$ — marginally weaker. Separately, the strict
+$x > m_{16}$ is finite-verified: $a_{16}(m_{16}) = 13249 \notin A$, so $m_{16}
+\notin S_{17}$ and $m_{17} > m_{16}$ (monotonicity alone gives only $\ge$). Both
+points are EMPIRICAL-level bookkeeping; no theorem cites C2. See Verification
+note V.2–V.3.)*
 
 **Phase transition and positioning (the commission's Step 6).** Within the row
 $b = 1$: packets $(0,1)$–$(4,1)$ are contracting ($16\cdot8^a > 9^{a+1}$ for
@@ -1684,3 +1697,190 @@ hardest:
 reconstruction of the owner-supplied draft T-9608 (PR #47 program), with provenance
 credit as stated. Status PROPOSED per NOTATION.md conventions; an independent
 reviewing agent may upgrade after verification.*
+
+---
+
+## Verification note (fable-02-v26, 2026-07-26)
+
+**Verdict: PASS.** Independent adversarial review per README §13, conducted
+without reliance on the author's confidence or code: every sub-claim
+T-9924.1–.8 was restated and re-derived from NOTATION.md and the file's inline
+arguments alone; every quantifier and boundary case audited; all numerical
+content recomputed from scratch with independently written exact-integer code
+(structure deliberately different from the embedded tests, larger ranges); the
+embedded test block audited byte-for-byte. **No substantive gap found; the
+first unsupported inference (README §13.9) does not exist in the main theorem
+or its proof.** One quantifier imprecision in the EMPIRICAL cross-reference C2
+(Step 6) was found and fixed in place, flagged as a reviewer's clarification
+(§V.3); it touches no theorem. Status upgraded PROPOSED → PROVED and this
+reviewer recorded in the header. Per README §7 the file is **not** marked
+INDEPENDENTLY_VERIFIED — that requires a further reviewer beyond this first
+independent review.
+
+### V.1 Proof reconstruction (§13.2–.3, .6–.8)
+
+- **Step 0 (chart validity).** All coordinate translations re-derived by hand
+  ($8h' = 9h \Leftrightarrow 8n' = 9n+5$; $16h' = 9h+21 \Leftrightarrow 16n' =
+  9n+7$; centering $8y' = 9y+3$, $16y' = 9y$; $n = 2y+1$). Both legality chains
+  recomputed exactly: $\nu_2(3n{+}1) = 1 \wedge \nu_2(3n_1{+}1) = 2
+  \Leftrightarrow n \equiv 11 \ (16) \Leftrightarrow 8 \mid h \Leftrightarrow
+  y \equiv 5\ (8)$, and the $\mathsf{B}$-chain to $n \equiv 1\ (32)
+  \Leftrightarrow h \equiv 3\ (16) \Leftrightarrow 16 \mid y$. Legality $=$
+  integrality re-proved in both directions, letterwise and wordwise, including
+  oddness/positivity of all intermediates; the unit-slope-lift identity
+  $9^k y_0 + E_k = 9^{k-j}(9^j y_0 + E_j) + Q_j E_s$ re-derived from the
+  coherence formula, with the 2-power/odd coprimality step checked. *Reading
+  note (no error):* the gloss "three $T$-steps with parity word $(1,1,0)$"
+  describes the legal composite; the parity word alone characterizes the
+  strictly larger class $n \equiv 3 \pmod 8$ (the exact second valuation cuts
+  it to $n \equiv 11 \pmod{16}$). The file defines legality by valuations and
+  derives the parity word, never the converse, so nothing is affected; my scan
+  quantified it (odd $n < 2\cdot10^6$: 250000 states carry $(1,1,0)$, exactly
+  the 125000 with $n \equiv 11 \bmod 16$ are legal). Same structure for
+  $\mathsf{B}$.
+- **Step 2 (macro algebra).** Composition induction, closed constant formula
+  (hand-checked $\mathsf{ABAA} \mapsto 3(729 + 1152 + 1024) = 8715$), swap
+  identity (positions $> j{+}1$ unchanged because their prefix products contain
+  $q_\mathsf{A}q_\mathsf{B} = 128$ in either order), extremal chain with
+  uniqueness, telescoping evaluations, and all congruence rules re-derived —
+  including the flagged mod-9 sign: a last-$\mathsf{A}$ word has $E \equiv
+  3\cdot8^{a-1}16^b \pmod 9$, and $8 \equiv -1$, $16 \equiv 1 \pmod 3$ give
+  $3(-1)^{a-1}$; at $a = 5$ this is $3$, exactly what the $(5,2)$ closure
+  consumes.
+- **Steps 3a/3b (inline lemmas).** Sharp-threshold collapse re-proved; the
+  walk-backwards edge existence checked for the off-by-one the author flagged
+  (integer states make "strictly below $M$" $=$ "$\le M - 1$"; the minimal
+  back-step argument handles runs of maxima); moving cycles force $W \ge
+  D(M-\mu) + 2P \ge P + Q$. Sharpness witness $\{Q, -P\}$ and its $+2$ shift
+  to $\{0,5\}$ at $D = 1$ verified, as is the impossibility of the source
+  spec's $W = Q$ example. Sieve re-proved: $\kappa \ge 0$ from
+  successor-of-minimum $\ge$ minimum, $D \equiv Q \pmod g$, and the point
+  where $Q > D$ (i.e. $P \ge 1$) enters $E \ge D(\mu + \kappa)$ is present in
+  Step 3b(3). The companion L-9923 has meanwhile been upgraded to PROVED
+  (fable-02-v25); cited numbering .1/.1C/.1S/.2/.3(ii) matches the landed
+  text, and the inline re-proofs keep this file self-contained as claimed.
+- **Step 3c (gate).** The equivalence $E_{\max} < 3D \Leftrightarrow G(a,b)$
+  is sign-free algebra (re-derived); $G \Rightarrow Q > P$, $b$-monotonicity,
+  and the $a \ge 6$ kill re-derived. The claimed identity of frontiers
+  reconstructed: $9^6 = 3^{12}$ and $2\cdot8^6 = 2^{19} = 8^5\cdot16 =
+  Q_{5,1}$, so the gate's $a$-cutoff and $(5,1)$-supercriticality are
+  literally the same integer inequality $3^{12} > 2^{19}$, margin $7153$.
+- **Step 4 (packets).** All six closures re-derived; $(4,2)$ checked through
+  both routes; the $(5,1)$ sign argument re-proved via the unrolled cycle
+  equation with rotation anchoring (strict positivity of the constants also
+  excludes $y_t = 0$, as claimed).
+- **Step 5 and corollaries.** The quantifier audit is correct: the lemmas
+  quantify over arbitrary constant sequences from the complete alphabet,
+  which is exactly "arbitrary branch order at each macro, arbitrary length,
+  arbitrary repetition"; no least-period or distinctness assumptions. The
+  beyond-spec strengthening "no integral cycle of any sign" checked per case:
+  gate packets and $(5,2)/(5,3)$ via automatic positivity (edge into the
+  minimum gives $D\mu \ge E_{\min} \ge 1$); $(3,1)/(4,1)/(4,2)$ via the
+  sign-free collapse. Corollary 2's case split audited, including the
+  correctly excluded per-period totals $\alpha \ge 6$ (e.g. a
+  $(2,1){+}(4,1)$ macro mixture lands on totals $(6,2)$ and is *not*
+  claimed — the Honest scope box's qualifier is accurate).
+- **Step 6 (correspondence).** The dictionary re-derived in both directions
+  ($Q\cdot3(x'{-}1) = P\cdot3(x{-}1) + 3(\alpha + P - Q)$); the only true
+  import, digit uniqueness in $[0,Q)$, checked against L-9916.1(1) (PROVED);
+  distinctness mod $Q$ via $\nu_2(E(p) - E(p')) = 3(p-1) \le 12 < 19$
+  re-derived. The $3 \mid y$ bookkeeping at the seed is where §V.3 applies.
+- **Dependency and Gap audits:** spot-checked and accurate; citation
+  structure acyclic; X-9902 material confined to EMPIRICAL positions.
+
+### V.2 Independent computation (own code; exact integers only)
+
+Script `scratchpad/v26_verify.py` (session-local, written from scratch). All
+checks passed:
+
+1. **Chart:** legality biconditionals (valuation definition vs. mod-16/32 vs.
+   $h$- and $y$-integrality) for all odd $n < 2\cdot10^6$; word legality $=$
+   orbit integrality with value agreement for all 62 words of length $\le 5$
+   at $10^5$ odd seeds; unit-slope lift at length 7 (all 128 words).
+2. **Algebra:** all 1022 words with $a + b \le 9$ (file: $\le 8$): $(Q,P)$
+   invariance, closed formula, extrema with uniqueness, $W$ formula, swap
+   identity, and the mod-21/9/8/7 rules exact.
+3. **Gate:** full table $a \le 10$, $b \le 14$ against the claimed rows; all
+   11 displayed boundary integers digit-exact; monotonicity; cutoff identity.
+4. **Packets:** every constant list regenerated (counts 4/5/15/21/56/6); every
+   factorization confirmed ($1631 = 7\cdot233$, $6487 = 13\cdot499$, $517135 =
+   5\cdot59\cdot1753$, $3605639 = 79\cdot45641$, $91171007 = 257\cdot354751$,
+   $7153 = 23\cdot311$); every $W$-window and displayed margin digit-exact.
+   **Target-set completeness** (the author's probe spot 1) verified by
+   exhaustive double loop over all $(m, k)$ with $Dm + Qk \le E_{\max}$, no
+   monotonicity shortcuts: $(3,1)$: $\{3D, 6D\}$; $(4,1)$: the nine listed;
+   $(4,2)$: $\{3D\}$ only; $(5,2)$ and $(5,3)$: $\{3D, 2D{+}Q\}$ — exactly as
+   claimed; all residue verdicts and the counts $6{+}15$ (mod 9) and $21{+}35$
+   (mod 8) reproduced.
+5. **Cycle hunts (must find none; found none):** confined-interval exhaustive
+   searches for $(1,1), (2,1), (3,1), (3,2), (4,1), (4,2), (5,2), (5,3)$ —
+   every confinement box carries **zero** integral macro edges, even before
+   the landing restriction; raw windows $|y| \le 6\cdot10^4$ (resp.
+   $3\cdot10^4$) including negatives for $(3,1), (4,1), (4,2), (5,2), (5,3),
+   (5,1)$; cycle-equation enumeration over all constant sequences at the
+   file's $R$-bounds — zero integral solutions everywhere, including $(5,1)$
+   to $R = 5$ with negative $y_0$ allowed.
+6. **Correspondence:** alphabet, bijection $E = 3(\alpha_i + 7153)$ with
+   $p = 6 - i$, distinctness mod $Q$; 18 dynamic conjugacy instances (chart
+   digit, unique integral branch, $y' = 3(x'-1)$, physical $T$-run at
+   $n = 6x-5$); $m_1 = 6472$ reproduced by independent brute scan; $n = 38827$
+   iterated directly under $T$: 19 steps, parity word $(110)(1010)(110)^4 =
+   \mathsf{ABAAAA}$, landing at $39361 = 6\cdot3^8 - 5$; the $C$-map odd
+   milestones agree; the floor $6m_{16} - 5 = 27775\ldots67403$ reproduced
+   digit-exactly, and $m_{16}$'s digit word `4450023324032350` re-derived by
+   direct chart iteration.
+7. **Inline-lemma stress:** 500 fresh random subcritical systems with
+   $W < P + Q$: zero moving cycles; the $W = P + Q$ witness verified.
+8. **Placeholder audit:** the file's single embedded python block extracted
+   and rerun on CPython 3 — output **byte-for-byte identical** to the embedded
+   output block.
+9. **New finite verification (strictness):** $a_{16}(m_{16}) = 13249 \notin
+   A$, so $m_{16} \notin S_{17}$ and $m_{17} > m_{16}$: the strict
+   $x > m_{16}$ used by C2 (and by X-9902's own phrasing) is thereby
+   justified; monotonicity alone gives only $x \ge m_{16}$.
+
+### V.3 The one fix applied (EMPIRICAL C2, Step 6)
+
+C2's parenthetical identified "any positive integer whose $T$-orbit runs
+complete $(5,1)$-macros forever" with the roots $x$ of the dictionary. But $x$
+is defined only where $3 \mid y$ ($n \equiv 1 \bmod 6$): automatic for every
+state from the first macro image on, **not** for a seed — first-macro legality
+is one class mod $2^{19}$ and carries no mod-3 information. A hypothetical
+all-time seed in another odd residue class inherits the floor at its first
+macro image, giving for itself the marginally weaker $n_0 >
+(Q(6m_{16}-5) - 2E_{\max} + (P-Q))/P > 2.74\times10^{79}$ (exact value
+$27401863909914425234802892657398060317640704603474187290034782966354182284438853$,
+ratio $Q/P \approx 0.98654$ of the displayed floor). The C2 sentence now
+carries the residue qualifier plus a flagged clarification. Impact on the
+theorems: none — C2 is EMPIRICAL and cited by nothing.
+
+### V.4 Observations (no action required)
+
+- **$(6,2)$ is closable by elementary finite means**, though not by the two
+  lemmas *as instantiated* (so the Honest scope statement stands): by
+  T-9924.4(a) any integral $(6,2)$-cycle is confined to $y \in [3, 8]$, and
+  my computation shows **no** pair $(y, E) \in [3,8] \times \mathcal{E}_{6,2}$
+  has $Q \mid Py + E$ at all — $6 \times 28 = 168$ elementary divisibility
+  failures. A future claim file recording those 168 facts (or a residue system
+  organizing them) would extend the theorem to the packet $(6,2)$; the
+  suggested-next-attack framing stays right for whole rows at $a \ge 6$.
+- Cosmetic: Step 0(a) contains a visibly abandoned mid-derivation fragment
+  ("$- 40/\ldots$") superseded by the clean computation that follows; left
+  untouched.
+- The provenance and verification-summary tables were cross-checked line by
+  line against my recomputation; every "VERIFIED" row is accurate, and the
+  superseded-threshold row matches the landed L-9923.
+
+### V.5 Confidence and status action
+
+High confidence. The main theorem rests on three short elementary integer
+arguments (collapse, sieve, sign) re-proved inline and reconstructed here,
+one exact algebraic identity per packet, and finite displayed enumerations
+whose completeness I re-established by exhaustive search; the physical layer
+(blocks $=$ exact $T$-composites, legality $=$ integrality) was re-verified
+against raw $T$-iteration in both directions. Header updated: Status
+PROPOSED → PROVED, reviewer recorded. Not marked INDEPENDENTLY_VERIFIED
+(a further independent reviewer is required per README §7 / NOTATION.md
+conventions).
+
+*Reviewed by fable-02-v26, 2026-07-26.*
