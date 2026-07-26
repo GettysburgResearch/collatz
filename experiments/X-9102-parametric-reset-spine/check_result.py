@@ -983,23 +983,57 @@ def check_payload(payload: dict[str, object]) -> dict[str, object]:
         raise ValueError("X-9102 scope values are inconsistent")
 
     backend = payload["backend"]
-    if not isinstance(backend, dict):
+    expected_backend_fields = {
+        "method",
+        "reachable_set_semantics",
+        "arbitrary_reachable_state_omission_possible",
+        "full_robdd_least_fixed_point_fallback_implemented",
+        "explicit_robdd_trace_available_for_differential_tests",
+        "node_limit",
+        "update_limit",
+        "external_dependencies",
+        "sat_solver_used",
+        "cnf_emitted",
+        "cnf_sha256",
+        "cnf_reason",
+    }
+    if not isinstance(backend, dict) or set(backend) != expected_backend_fields:
         raise ValueError("X-9102 backend is malformed")
+    node_limit = backend["node_limit"]
+    update_limit = backend["update_limit"]
     if (
         backend.get("method")
         != (
             "guarded parametric product trace with exact "
             "factor-alignment terminal decision"
         )
+        or backend.get("reachable_set_semantics")
+        != (
+            "start with the full parameter cube at the product start and "
+            "add only guarded forward images"
+        )
         or backend.get("arbitrary_reachable_state_omission_possible") is not False
         or backend.get("full_robdd_least_fixed_point_fallback_implemented")
         is not True
         or backend.get("explicit_robdd_trace_available_for_differential_tests")
         is not True
+        or not (
+            node_limit is None
+            or (type(node_limit) is int and node_limit > 0)
+        )
+        or not (
+            update_limit is None
+            or (type(update_limit) is int and update_limit > 0)
+        )
         or backend.get("external_dependencies") != []
         or backend.get("sat_solver_used") is not False
         or backend.get("cnf_emitted") is not False
         or backend.get("cnf_sha256") is not None
+        or backend.get("cnf_reason")
+        != (
+            "the guarded reachability witness is a smaller exact proof; "
+            "no SAT encoding was needed"
+        )
     ):
         raise ValueError("X-9102 backend contract differs")
 

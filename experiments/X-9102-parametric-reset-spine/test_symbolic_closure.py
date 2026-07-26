@@ -198,6 +198,13 @@ class IndependentArtifactCheckerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "backend contract"):
             check_payload(changed)
 
+        for field in ("reachable_set_semantics", "cnf_reason"):
+            changed = copy.deepcopy(self.payload)
+            changed["backend"][field] = "resealed but semantically false"
+            self._reseal(changed)
+            with self.assertRaisesRegex(ValueError, "backend contract"):
+                check_payload(changed)
+
     def test_strict_json_rejects_duplicates_and_nonfinite_values(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
