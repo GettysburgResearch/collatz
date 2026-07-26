@@ -6,11 +6,12 @@ Title: The odd T-preimage descent map D(y) = (2y-1)/3, its exact iterate
        D^d(y) = 2^d(y+1)/3^d - 1, the descent depth d(y) = nu_3(y+1), the amplified
        orbit floor for the minimal counterexample, and the resulting joint sieve
        modulo 2^k * 3^D — with an exact measurement of how much it improves on L-9909
-Status: PROPOSED
+Status: PROVED
 Authoring agent: fable-02-p13
-Reviewing agents: (none yet)
+Reviewing agents: fable-02-v21 (adversarial review 2026-07-26: PASS)
 Created: 2026-07-25
-Last updated: 2026-07-25
+Last updated: 2026-07-26 (status upgraded after independent adversarial review;
+              sub-claim L-9919.8 remains PARTIAL exactly as marked)
 Dependencies: research/foundations/NOTATION.md (D-9901 C, D-9902 T, D-9905 orbits,
               D-9906 parity vector, D-9909 counterexample, D-9910 stopping time);
               L-9902 (PROVED) — parity word of n depends only on n mod 2^k, and
@@ -26,7 +27,9 @@ Dependencies: research/foundations/NOTATION.md (D-9901 C, D-9902 T, D-9905 orbit
                 (record-word disjunction);
               L-9907 (PROVED) — L-9907.5 (the identity T^j(n) = 3^j(n+1)/2^j - 1 on
                 all-ones words) and L-9907.2 (divergence forces liminf a_k/k >= gamma),
-                used only in the "no improvement" statements of L-9919.6.
+                used in the "no improvement" statements of L-9919.6; L-9907.5 also
+                serves as a non-load-bearing cross-check in the proof of L-9919.4(1)
+                (as recorded in the Dependency audit).
 Scope: Everything about the maps D, T, C and about residue classes is UNCONDITIONAL.
        Everything about mu (the minimal counterexample) is CONDITIONAL on the standing
        hypothesis (H) below and is labelled [H]. Computations are exact finite
@@ -260,7 +263,8 @@ not by a visibly improved exponential rate. Over $6 \le k \le 30$ (exact counts,
 `l9919_rate.py`) the ratio $|\text{L-9909}(k)| / |\text{Aug}(k)|$ stays inside
 $[1.05556,\ 1.29758]$ and $\log_2$ of it inside $[0.07800,\ 0.37582]$, while the
 *rate difference* $\frac1k\log_2\bigl(|\text{L-9909}(k)|/|\text{Aug}(k)|\bigr)$
-**decreases**: $0.0321\ (k{=}6)$, $0.0196\ (k{=}12)$, $0.0136\ (k{=}18)$,
+**trends downward (not monotonically — the last sampled value ticks up)**:
+$0.0321\ (k{=}6)$, $0.0196\ (k{=}12)$, $0.0136\ (k{=}18)$,
 $0.0098\ (k{=}24)$, $0.0125\ (k{=}30)$. The data are consistent with a constant-factor
 gain and give no evidence of an improved exponential decay rate (the sequence
 oscillates with the continued-fraction structure of $\log_2 3$). Including the mod-3
@@ -1755,8 +1759,9 @@ caught by exactly this check and fixed.)
    theory demands; and Script 3 checks $10^6$ integers against directly computed orbits
    with zero mismatches above the bound.
 3. **Is the gain exponential?** Deliberately probed and **refuted for the computed
-   range**: the rate difference $\frac1k\log_2(\text{old}/\text{new})$ decreases with
-   $k$ (see L-9919.5(c)); an exponential gain would require it to be bounded below.
+   range**: the rate difference $\frac1k\log_2(\text{old}/\text{new})$ trends downward
+   with $k$ (non-monotonically; see L-9919.5(c)); an exponential gain would require it
+   to be bounded below by a positive constant, of which the data show no sign.
 4. **Is the descent family maximal?** Deliberately probed and **refuted**: L-9919.8
    exhibits the class $63 \bmod 256$, an augmented $8$-survivor killed by the mixed
    backward word $\mathsf{DMDDDD}$, verified on four explicit representatives.
