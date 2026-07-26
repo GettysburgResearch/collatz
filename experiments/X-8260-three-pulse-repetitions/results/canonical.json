@@ -1,0 +1,4106 @@
+{
+  "agent": "gpt56-sol-04",
+  "analytic_reduction": [
+    {
+      "A": 3,
+      "base": [
+        1,
+        2
+      ],
+      "cmax": 7,
+      "continued_fraction_rows": [
+        {
+          "index": 0,
+          "p": 0,
+          "partial_quotient": 0,
+          "q": 1,
+          "side": "below"
+        },
+        {
+          "index": 1,
+          "p": 1,
+          "partial_quotient": 5,
+          "q": 5,
+          "side": "above"
+        },
+        {
+          "index": 2,
+          "p": 1,
+          "partial_quotient": 1,
+          "q": 6,
+          "side": "below"
+        },
+        {
+          "index": 3,
+          "p": 8,
+          "partial_quotient": 7,
+          "q": 47,
+          "side": "above"
+        },
+        {
+          "index": 4,
+          "p": 9,
+          "partial_quotient": 1,
+          "q": 53,
+          "side": "below"
+        },
+        {
+          "index": 5,
+          "p": 26,
+          "partial_quotient": 2,
+          "q": 153,
+          "side": "above"
+        },
+        {
+          "index": 6,
+          "p": 113,
+          "partial_quotient": 4,
+          "q": 665,
+          "side": "below"
+        },
+        {
+          "index": 7,
+          "p": 1269,
+          "partial_quotient": 11,
+          "q": 7468,
+          "side": "above"
+        },
+        {
+          "index": 8,
+          "p": 1382,
+          "partial_quotient": 1,
+          "q": 8133,
+          "side": "below"
+        },
+        {
+          "index": 9,
+          "p": 4033,
+          "partial_quotient": 2,
+          "q": 23734,
+          "side": "above"
+        },
+        {
+          "index": 10,
+          "p": 9448,
+          "partial_quotient": 2,
+          "q": 55601,
+          "side": "below"
+        },
+        {
+          "index": 11,
+          "p": 32377,
+          "partial_quotient": 3,
+          "q": 190537,
+          "side": "above"
+        },
+        {
+          "index": 12,
+          "p": 883627,
+          "partial_quotient": 27,
+          "q": 5200100,
+          "side": "below"
+        },
+        {
+          "index": 13,
+          "p": 916004,
+          "partial_quotient": 1,
+          "q": 5390637,
+          "side": "above"
+        },
+        {
+          "index": 14,
+          "p": 9127663,
+          "partial_quotient": 9,
+          "q": 53715833,
+          "side": "below"
+        },
+        {
+          "index": 15,
+          "p": 10043667,
+          "partial_quotient": 1,
+          "q": 59106470,
+          "side": "above"
+        },
+        {
+          "index": 16,
+          "p": 19171330,
+          "partial_quotient": 1,
+          "q": 112822303,
+          "side": "below"
+        },
+        {
+          "index": 17,
+          "p": 67557657,
+          "partial_quotient": 3,
+          "q": 397573379,
+          "side": "above"
+        },
+        {
+          "index": 18,
+          "p": 492074929,
+          "partial_quotient": 7,
+          "q": 2895835956,
+          "side": "below"
+        },
+        {
+          "index": 19,
+          "p": 559632586,
+          "partial_quotient": 1,
+          "q": 3293409335,
+          "side": "above"
+        },
+        {
+          "index": 20,
+          "p": 11125094063,
+          "partial_quotient": 19,
+          "q": 65470613321,
+          "side": "below"
+        },
+        {
+          "index": 21,
+          "p": 11684726649,
+          "partial_quotient": 1,
+          "q": 68764022656,
+          "side": "above"
+        },
+        {
+          "index": 22,
+          "p": 127972360553,
+          "partial_quotient": 10,
+          "q": 753110839881,
+          "side": "below"
+        }
+      ],
+      "eta_interval": {
+        "hi_sha256": "ce85fa3a23875c74927715fde7f9462e1813dc4c62fc9f7b0963c65e54dca84a",
+        "lo_sha256": "14763696f8456d1197f1b5122d72e74160b238c32ebf43a684fef9186957b839",
+        "width_lt_2_power": 576
+      },
+      "exceptional_rows": [
+        {
+          "all_m_at_least_3_rejected": true,
+          "exact_margin_denominator": 281474976710656,
+          "exact_margin_numerator": 75388584689551,
+          "minimum_multiple_m": 3,
+          "p": 1,
+          "q": 5,
+          "reason_for_minimum": "three distinct positive pulses imply t=m>=3",
+          "upper_bound_step_ratio_at_most": "2187/32768"
+        }
+      ],
+      "finite_repetitions": [
+        2,
+        3
+      ],
+      "half_bound": {
+        "base_rows": [
+          {
+            "integer_margin": 694,
+            "r": 4
+          },
+          {
+            "integer_margin": 22562,
+            "r": 5
+          },
+          {
+            "integer_margin": 170290,
+            "r": 6
+          }
+        ],
+        "first_r": 4,
+        "residue_modulus": 3,
+        "three_step_ratio": "81/512"
+      },
+      "k": 2,
+      "legendre": {
+        "base_rows": [
+          {
+            "margin": {
+              "decimal_lower": "297850677.954893017873",
+              "fraction_sha256": "661970c038dc499f16e1581575fa4097aad8475abfb30dd72c08c38e1dee1b73"
+            },
+            "r": 10
+          },
+          {
+            "margin": {
+              "decimal_lower": "4480934491.639144142991",
+              "fraction_sha256": "898268b620c0d516b3888e3a14247c438d7b57a4e849568a4dd3c4be91d115d2"
+            },
+            "r": 11
+          },
+          {
+            "margin": {
+              "decimal_lower": "33169013293.113153143929",
+              "fraction_sha256": "d3dd480300e68e3e726d983f21b8f58d7a3d6eb991104f1bb6d37122df448163"
+            },
+            "r": 12
+          }
+        ],
+        "first_r": 10,
+        "residue_modulus": 3,
+        "three_step_ratio_upper": "1053/5120"
+      },
+      "matveev": {
+        "cutoff": 200000000000,
+        "cutoff_margin": {
+          "decimal_lower": "32280745255.142788801272",
+          "fraction_sha256": "5483aca7078455fc9a86d6307d9fa87430d93ba5660712366c0eed10242a739c"
+        },
+        "derivative_margin": {
+          "decimal_lower": "0.598272068585801669",
+          "fraction_sha256": "48c4eec58d8036013ca737c3a6497d9f22b39e7de9109c0b5d2937d399c9bfef"
+        },
+        "effective_rate": {
+          "hi_sha256": "60a7629e7a261b4e2c9c4a7ade697f2996b726fca3d73f48018e77c3b37b9a21",
+          "lo_decimal": "0.614625156789023006",
+          "lo_sha256": "52313846f7e1f700892df9cdbbdc1392d4239c46d8c197bcdf491951285010e5"
+        },
+        "lambda_lt_one_margin": {
+          "decimal_lower": "122925031355.165543948658",
+          "fraction_sha256": "174d00e57d7ee44342a0dd4ea1fb68d9cabc8de5031bc8f77afce1e710eceb95"
+        },
+        "quoted_constant_multiplier": 4294967296
+      },
+      "name": "P3",
+      "structurally_empty_repetitions": [
+        1
+      ],
+      "support_span_bound": "p3 <= floor(2*k*r/3)",
+      "transition_rejections": [
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "0.777742992804302110",
+            "fraction_sha256": "faaa13e7dfe682f9892701a6d243c3ea3d865fb70dfa8ac634f2478497fe76c0"
+          },
+          "minimum_total_pulse": 3,
+          "r": 4
+        },
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "1.179063961054168655",
+            "fraction_sha256": "0b8e70924cb2456b5c90737f1d39d1693db95e0ef7a2b79671c58740476af5d2"
+          },
+          "minimum_total_pulse": 3,
+          "r": 5
+        },
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "1.022348125104816451",
+            "fraction_sha256": "277efab8a1b8f3dd61f5bcc5e46cdb914bbf10a23249859d8f5142ba21d4d0f4"
+          },
+          "minimum_total_pulse": 3,
+          "r": 6
+        },
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "1.123562091096382215",
+            "fraction_sha256": "47569de4de1a4715b487b9be7dbd20a3f5e4b2c219c6dcfb5a5f2ce2f298bbd4"
+          },
+          "minimum_total_pulse": 3,
+          "r": 7
+        },
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "1.087902931057979717",
+            "fraction_sha256": "66a881ab48eba425401819d7ff8834ea75ed102f262471463bcff05ab0d1a775"
+          },
+          "minimum_total_pulse": 3,
+          "r": 8
+        },
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "0.963960604730247691",
+            "fraction_sha256": "bb78a5646d45c89e0d9663c6a626cff45751223e2eb1a0e0748a867117252ea7"
+          },
+          "minimum_total_pulse": 3,
+          "r": 9
+        }
+      ],
+      "uniform_candidate_rejections": [
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 62,
+          "log_margin": {
+            "decimal_lower": "21.682415865366",
+            "fraction_sha256": "d2aeb50dff212e43148d0eaaf5b2352d7cacfaa99d2f75e79cac7fb7a04cb4aa"
+          },
+          "multiple_step_ceiling_exponent": 63,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "28.521178272861",
+            "fraction_sha256": "8cfb78fd3ec60c055ce066190e9f53c280871e8b88b26f4189747ba1f5b5c8ea"
+          },
+          "p": 8,
+          "q": 47,
+          "q_next": 53
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 204,
+          "log_margin": {
+            "decimal_lower": "83.998582141942",
+            "fraction_sha256": "1b5cd195d2facc68b4bf14598a35570f2c127ac2cd8d301176075b095768aa7b"
+          },
+          "multiple_step_ceiling_exponent": 204,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "94.037648988720",
+            "fraction_sha256": "6916a31d1b369ad83d03de52f4d946e70f33c5efd124cbfefbdadccca9778ec7"
+          },
+          "p": 26,
+          "q": 153,
+          "q_next": 665
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 9957,
+          "log_margin": {
+            "decimal_lower": "4577.399580192724",
+            "fraction_sha256": "a3f4c46b26b8a773884bdb30e4fe2d58b8adec661ab82fdf5ff81afaab5c23bc"
+          },
+          "multiple_step_ceiling_exponent": 9958,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "4589.288262707978",
+            "fraction_sha256": "edc5a00bd1560a07b7899f8e0a898fe172f5509f08b22676b91d37719cebdde4"
+          },
+          "p": 1269,
+          "q": 7468,
+          "q_next": 8133
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 31645,
+          "log_margin": {
+            "decimal_lower": "14573.266036144551",
+            "fraction_sha256": "9ea77effceb4677df803830ee71e0c671570ec09a51f1012508033b7d4b94a4e"
+          },
+          "multiple_step_ceiling_exponent": 31646,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "14586.781063038226",
+            "fraction_sha256": "6723a2abc3ce553a04548aa87c6fce2102f4627425890d456e92d8edc1e6a44e"
+          },
+          "p": 4033,
+          "q": 23734,
+          "q_next": 55601
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 254049,
+          "log_margin": {
+            "decimal_lower": "117090.367324578403",
+            "fraction_sha256": "22821f66dc5011ad019ffa2d6c1995dd4da14712a1bb80fbb217d1e6c1a9bfef"
+          },
+          "multiple_step_ceiling_exponent": 254050,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "117108.101090917631",
+            "fraction_sha256": "459f6c931a4d55f6f653a4be712b76d6b89699687503d672114ad81bc46e8cf1"
+          },
+          "p": 32377,
+          "q": 190537,
+          "q_next": 5200100
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 7187516,
+          "log_margin": {
+            "decimal_lower": "3313199.884262246587",
+            "fraction_sha256": "91752745017c7e7122e570293f78ead1476de5a669a0af42985fd187d14dcc65"
+          },
+          "multiple_step_ceiling_exponent": 7187516,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "3313221.111317708612",
+            "fraction_sha256": "7d0b0926d211833efceef24f4c498a1cca14a54c641ad44b89fb367f435216ec"
+          },
+          "p": 916004,
+          "q": 5390637,
+          "q_next": 53715833
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 78808626,
+          "log_margin": {
+            "decimal_lower": "36328301.828608528381",
+            "fraction_sha256": "e74b8ef1f44365ecd7c0c869fc42d5e2f9628483cca6429bc5dcfba1d371d29f"
+          },
+          "multiple_step_ceiling_exponent": 78808627,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "36328323.024791588433",
+            "fraction_sha256": "18b74232dbba056f125e730c82c37a874212254b38cf9f8d50cec0ace7e84632"
+          },
+          "p": 10043667,
+          "q": 59106470,
+          "q_next": 112822303
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 530097838,
+          "log_margin": {
+            "decimal_lower": "244358575.888031211829",
+            "fraction_sha256": "7175db60886ba5ceaa9d853f7d00538e69010fc3ff7dc1720180f517f8343ce2"
+          },
+          "multiple_step_ceiling_exponent": 530097839,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "244358600.036812570537",
+            "fraction_sha256": "a1a59a8804a409c41bd17719fb0f74451a4ef4e68bbaa61d1a0426c84686be45"
+          },
+          "p": 67557657,
+          "q": 397573379,
+          "q_next": 2895835956
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 4391212446,
+          "log_margin": {
+            "decimal_lower": "2024212201.341064158448",
+            "fraction_sha256": "2898e1ef6061601357138044b809ece0b2af7bb0c2c8bd24330417ad3fdc57c5"
+          },
+          "multiple_step_ceiling_exponent": 4391212447,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "2024212228.528602898556",
+            "fraction_sha256": "dac9ca5daeabc4b460ef6d7caa36641a6216f0cfb58f09f80cd9b1f4e2c22ccd"
+          },
+          "p": 559632586,
+          "q": 3293409335,
+          "q_next": 65470613321
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 91685363541,
+          "log_margin": {
+            "decimal_lower": "42264098175.987075824591",
+            "fraction_sha256": "abccdbde9ddd649d519740f9b76f4c5225a0f9db515903d263f4c1533958ecce"
+          },
+          "multiple_step_ceiling_exponent": 91685363542,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "42264098205.655522031155",
+            "fraction_sha256": "0e31ab11b6dbef0f63b2343d583642686da808a165d573af089e07dd93f6cb57"
+          },
+          "p": 11684726649,
+          "q": 68764022656,
+          "q_next": 753110839881
+        }
+      ]
+    },
+    {
+      "A": 11,
+      "base": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4
+      ],
+      "cmax": 91,
+      "continued_fraction_rows": [
+        {
+          "index": 0,
+          "p": 0,
+          "partial_quotient": 0,
+          "q": 1,
+          "side": "below"
+        },
+        {
+          "index": 1,
+          "p": 1,
+          "partial_quotient": 10,
+          "q": 10,
+          "side": "above"
+        },
+        {
+          "index": 2,
+          "p": 1,
+          "partial_quotient": 1,
+          "q": 11,
+          "side": "below"
+        },
+        {
+          "index": 3,
+          "p": 2,
+          "partial_quotient": 1,
+          "q": 21,
+          "side": "above"
+        },
+        {
+          "index": 4,
+          "p": 9,
+          "partial_quotient": 4,
+          "q": 95,
+          "side": "below"
+        },
+        {
+          "index": 5,
+          "p": 1496,
+          "partial_quotient": 166,
+          "q": 15791,
+          "side": "above"
+        },
+        {
+          "index": 6,
+          "p": 1505,
+          "partial_quotient": 1,
+          "q": 15886,
+          "side": "below"
+        },
+        {
+          "index": 7,
+          "p": 18051,
+          "partial_quotient": 11,
+          "q": 190537,
+          "side": "above"
+        },
+        {
+          "index": 8,
+          "p": 127862,
+          "partial_quotient": 7,
+          "q": 1349645,
+          "side": "below"
+        },
+        {
+          "index": 9,
+          "p": 145913,
+          "partial_quotient": 1,
+          "q": 1540182,
+          "side": "above"
+        },
+        {
+          "index": 10,
+          "p": 5234817,
+          "partial_quotient": 35,
+          "q": 55256015,
+          "side": "below"
+        },
+        {
+          "index": 11,
+          "p": 5380730,
+          "partial_quotient": 1,
+          "q": 56796197,
+          "side": "above"
+        },
+        {
+          "index": 12,
+          "p": 618638037,
+          "partial_quotient": 114,
+          "q": 6530022473,
+          "side": "below"
+        },
+        {
+          "index": 13,
+          "p": 1861294841,
+          "partial_quotient": 3,
+          "q": 19646863616,
+          "side": "above"
+        },
+        {
+          "index": 14,
+          "p": 71347841995,
+          "partial_quotient": 38,
+          "q": 753110839881,
+          "side": "below"
+        }
+      ],
+      "eta_interval": {
+        "hi_sha256": "285521542d4fd6db725e9e7adfa199846261ffad3267c65f46ef30a1ef148c4e",
+        "lo_sha256": "e1409f16f37d4a229fd9d33eaee2037f7e6804f0ae4dd4c33bae1aa78a45ae48",
+        "width_lt_2_power": 574
+      },
+      "exceptional_rows": [],
+      "finite_repetitions": [
+        1
+      ],
+      "half_bound": {
+        "base_rows": [
+          {
+            "integer_margin": 611998,
+            "r": 2
+          },
+          {
+            "integer_margin": 7719434234,
+            "r": 3
+          },
+          {
+            "integer_margin": 17521675515418,
+            "r": 4
+          }
+        ],
+        "first_r": 2,
+        "residue_modulus": 3,
+        "three_step_ratio": "4782969/8589934592"
+      },
+      "k": 7,
+      "legendre": {
+        "base_rows": [
+          {
+            "margin": {
+              "decimal_lower": "731086795.639144142991",
+              "fraction_sha256": "845205e3d2e7e7dcba75c096943f8c5602518c97ef707ba6bf662c254e1e5206"
+            },
+            "r": 3
+          },
+          {
+            "margin": {
+              "decimal_lower": "11629889924588.967204846029",
+              "fraction_sha256": "b54be831e95128fd23598dc8efc177cde7ebb9c975f248b155827f08af467bbe"
+            },
+            "r": 4
+          },
+          {
+            "margin": {
+              "decimal_lower": "24801918487196296.835524669335",
+              "fraction_sha256": "33262b1c613282c855bc39622d2d3ee179f5cb77e7dc4b4c39be45c4bd1c5bd1"
+            },
+            "r": 5
+          }
+        ],
+        "first_r": 3,
+        "residue_modulus": 3,
+        "three_step_ratio_upper": "4782969/4294967296"
+      },
+      "matveev": {
+        "cutoff": 50000000000,
+        "cutoff_margin": {
+          "decimal_lower": "34680525975.148380266802",
+          "fraction_sha256": "88df61b52b40fc245b4409f9190e29c9b978515493a388a870af7da95ef4380c"
+        },
+        "derivative_margin": {
+          "decimal_lower": "2.432349286228691192",
+          "fraction_sha256": "05623deca428abf81ec17388bec4594465f4294f1fcc86c25a95a742f12c5028"
+        },
+        "effective_rate": {
+          "hi_sha256": "4f72e2b997d37a66b2c9adb27a4ba395e6c5e30b37ff2a8389e29775fb2181db",
+          "lo_decimal": "2.497761639041553177",
+          "lo_sha256": "3a6385f18ac9eea03504a55a871f364be109a7bc76ab149be65a4d34a2e6918a"
+        },
+        "lambda_lt_one_margin": {
+          "decimal_lower": "124888081946.873652166843",
+          "fraction_sha256": "12446473709651574d48ae85112a5d79755be80d617438f70f44b204c10d205c"
+        },
+        "quoted_constant_multiplier": 4294967296
+      },
+      "name": "P11",
+      "structurally_empty_repetitions": [],
+      "support_span_bound": "p3 <= floor(2*k*r/3)",
+      "transition_rejections": [
+        {
+          "lambda_lower_minus_upper": {
+            "decimal_lower": "1.094019166218095102",
+            "fraction_sha256": "083f43c65f110346be37639f46eb9b12eda4640c44bd68c82452e1cd4397488d"
+          },
+          "minimum_total_pulse": 3,
+          "r": 2
+        }
+      ],
+      "uniform_candidate_rejections": [
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 46,
+          "log_margin": {
+            "decimal_lower": "16.768348277500",
+            "fraction_sha256": "73739841752bac1e4d4308e447848493274d1b7571d53f79a2ae179ade36f1de"
+          },
+          "multiple_step_ceiling_exponent": 47,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "24.611412294192",
+            "fraction_sha256": "93e528e12a55661aed8e701470734a4b0253073e400d878fb365a217522c19ff"
+          },
+          "p": 1,
+          "q": 10,
+          "q_next": 11
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 98,
+          "log_margin": {
+            "decimal_lower": "41.802250361129",
+            "fraction_sha256": "f53c0e6630a6f06acb00060f34e74df2f4ba1fd51d69216eed4a26c83d805552"
+          },
+          "multiple_step_ceiling_exponent": 98,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "52.452994419872",
+            "fraction_sha256": "22672c8fe6b733df68c18742594a87535949ea583a60a28597a8acc150b55294"
+          },
+          "p": 2,
+          "q": 21,
+          "q_next": 95
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 73691,
+          "log_margin": {
+            "decimal_lower": "39426.259746189277",
+            "fraction_sha256": "38340e92bb4af4fdaf2fe2797cab72e9145e7bfa1489bc1eee8d00c25cc339c7"
+          },
+          "multiple_step_ceiling_exponent": 73692,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "39441.421633912720",
+            "fraction_sha256": "c129487f995f9743461d24c117e30bd4455aeef4c4db4fcdafd191362e4cc46e"
+          },
+          "p": 1496,
+          "q": 15791,
+          "q_next": 15886
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 889172,
+          "log_margin": {
+            "decimal_lower": "475896.597261236001",
+            "fraction_sha256": "9da7f69b5d8338bab742e49d6ff09bc54937d500bf07b408f5394c9b625f1789"
+          },
+          "multiple_step_ceiling_exponent": 889173,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "475915.643213964194",
+            "fraction_sha256": "caccb9478bf3b7dea3c719c75f0a3a41f81d0ddbf65816e0a54d198b497d480c"
+          },
+          "p": 18051,
+          "q": 190537,
+          "q_next": 1349645
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 7187516,
+          "log_margin": {
+            "decimal_lower": "3846983.764608502594",
+            "fraction_sha256": "9702e9304bb15c7e55ba5571cf5a2e0beb8e323f75c36ebecfd105d8061223b8"
+          },
+          "multiple_step_ceiling_exponent": 7187516,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "3847007.516742297455",
+            "fraction_sha256": "e138f9c5f395e73be03646f58207ead3f9e0f30c6af48f8e9126fa56d1505982"
+          },
+          "p": 145913,
+          "q": 1540182,
+          "q_next": 55256015
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 265048919,
+          "log_margin": {
+            "decimal_lower": "141863333.970760856256",
+            "fraction_sha256": "6bdc653bc6a566d0158eda4ce830c6ad25871ad478bb9594ec59dbadcc570602"
+          },
+          "multiple_step_ceiling_exponent": 265048920,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "141863361.377638752985",
+            "fraction_sha256": "ee237094527fea8ee5c5b08c66ee87c7bc5f23ac547350cac4be32f2c622365e"
+          },
+          "p": 5380730,
+          "q": 56796197,
+          "q_next": 6530022473
+        },
+        {
+          "all_positive_multiples_rejected": true,
+          "floor_2kq_over_3": 91685363541,
+          "log_margin": {
+            "decimal_lower": "49073182234.621835068609",
+            "fraction_sha256": "ce3be517291ef2aabcaa81c0f693fe926a0ca33acb0716d90733700dfc84fa28"
+          },
+          "multiple_step_ceiling_exponent": 91685363542,
+          "multiple_step_decay_log_margin": {
+            "decimal_lower": "49073182266.793608034425",
+            "fraction_sha256": "3780154d19f1e348028e7e9dfa986e31cc64c7f1bdea13b097b38849f1b718a6"
+          },
+          "p": 1861294841,
+          "q": 19646863616,
+          "q_next": 753110839881
+        }
+      ]
+    }
+  ],
+  "certificate": {
+    "format": "X-8260-finite-tuples-v1",
+    "gzip_bytes": 861490,
+    "gzip_sha256": "7219ce252cb1bab550a774533df8c2bd5fcd256ea133112b3a8dd6f0f3348218",
+    "path": "results/finite-tuples.jsonl.gz",
+    "uncompressed_bytes": 3327677,
+    "uncompressed_sha256": "434114f43e00f3de35946581dd3984dc3cfff9484d111fab4422e44a10587ae4"
+  },
+  "claim_id": "T-8260",
+  "experiment_id": "X-8260",
+  "finite_computation": {
+    "coverage": [
+      {
+        "family": "P3",
+        "floor_2kr_over_3": 2,
+        "maximum_p3": 2,
+        "normalization_transcript_sha256": "63f1f9a74b2dde18a5d0de2d643dddae9d383f96720dafdb435c36c4e3fec92f",
+        "normalized_packets": 2,
+        "preimage_multiplicities": [
+          {
+            "count": 4,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 0
+          },
+          {
+            "count": 4,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 1
+          }
+        ],
+        "primitive_rotations": [
+          0,
+          1
+        ],
+        "r": 2,
+        "raw_rotation_support_configurations": 8
+      },
+      {
+        "family": "P3",
+        "floor_2kr_over_3": 4,
+        "maximum_p3": 4,
+        "normalization_transcript_sha256": "1881cfab7db582c863c775cf12c9f150d8ec25d241f7df8121ff7c7b1039524b",
+        "normalized_packets": 8,
+        "preimage_multiplicities": [
+          {
+            "count": 6,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 0
+          },
+          {
+            "count": 6,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 0
+          },
+          {
+            "count": 6,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 0
+          },
+          {
+            "count": 2,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 0
+          },
+          {
+            "count": 6,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 1
+          },
+          {
+            "count": 6,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 1
+          },
+          {
+            "count": 6,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 1
+          },
+          {
+            "count": 2,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 1
+          }
+        ],
+        "primitive_rotations": [
+          0,
+          1
+        ],
+        "r": 3,
+        "raw_rotation_support_configurations": 40
+      },
+      {
+        "family": "P11",
+        "floor_2kr_over_3": 4,
+        "maximum_p3": 4,
+        "normalization_transcript_sha256": "39995c72b0288c64a957b5130d5ba744f6285e943354a8d098285f07e1668dd5",
+        "normalized_packets": 35,
+        "preimage_multiplicities": [
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 0
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 0
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 4,
+            "rotation": 0
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 0
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 0
+          },
+          {
+            "count": 7,
+            "p2": 3,
+            "p3": 4,
+            "rotation": 0
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 1
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 1
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 4,
+            "rotation": 1
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 1
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 1
+          },
+          {
+            "count": 7,
+            "p2": 3,
+            "p3": 4,
+            "rotation": 1
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 2
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 2
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 4,
+            "rotation": 2
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 2
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 2
+          },
+          {
+            "count": 7,
+            "p2": 3,
+            "p3": 4,
+            "rotation": 2
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 3
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 3
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 3
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 3
+          },
+          {
+            "count": 7,
+            "p2": 3,
+            "p3": 4,
+            "rotation": 3
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 4
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 4
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 4
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 4
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 5
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 5
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 5
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 5
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 2,
+            "rotation": 6
+          },
+          {
+            "count": 7,
+            "p2": 1,
+            "p3": 3,
+            "rotation": 6
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 3,
+            "rotation": 6
+          },
+          {
+            "count": 7,
+            "p2": 2,
+            "p3": 4,
+            "rotation": 6
+          }
+        ],
+        "primitive_rotations": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "r": 1,
+        "raw_rotation_support_configurations": 245
+      }
+    ],
+    "hits": [
+      {
+        "D": 3367,
+        "R": 3367,
+        "exact_replay": true,
+        "family": "P3",
+        "n": 1,
+        "packet_index": 5,
+        "primitive_rotation": 0,
+        "pulse_heights": [
+          1,
+          1,
+          1
+        ],
+        "r": 3,
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "trivial": true,
+        "word": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "packets": [
+      {
+        "Q": 81,
+        "U": 64,
+        "coefficient_valuations": [
+          0,
+          2,
+          3
+        ],
+        "coordinate_caps_X": [
+          143,
+          142,
+          141
+        ],
+        "coprime_common_factor": 6,
+        "cyclic_gaps": [
+          1,
+          1,
+          2
+        ],
+        "family": "P3",
+        "finite_tuple_count": 343,
+        "hits": [],
+        "maximum_pulse_heights": [
+          7,
+          7,
+          7
+        ],
+        "packet_index": 0,
+        "primitive_rotation": 0,
+        "r": 2,
+        "reduced_coefficients": [
+          -63,
+          3,
+          4,
+          56
+        ],
+        "reduced_weights": [
+          63,
+          60,
+          56
+        ],
+        "resultant_identity_count": 1029,
+        "resultant_norms": [
+          9135,
+          9084,
+          9016
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "cddd76703486d6fab6428cbb0e4ef0ec238a2fe23fd9bebfb5857a36ac3cc9c0",
+        "word": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "z0": -5
+      },
+      {
+        "Q": 81,
+        "U": 64,
+        "coefficient_valuations": [
+          0,
+          1,
+          3
+        ],
+        "coordinate_caps_X": [
+          102,
+          101,
+          100
+        ],
+        "coprime_common_factor": 12,
+        "cyclic_gaps": [
+          1,
+          1,
+          2
+        ],
+        "family": "P3",
+        "finite_tuple_count": 216,
+        "hits": [],
+        "maximum_pulse_heights": [
+          6,
+          6,
+          6
+        ],
+        "packet_index": 1,
+        "primitive_rotation": 1,
+        "r": 2,
+        "reduced_coefficients": [
+          -45,
+          3,
+          2,
+          40
+        ],
+        "reduced_weights": [
+          45,
+          42,
+          40
+        ],
+        "resultant_identity_count": 648,
+        "resultant_norms": [
+          6525,
+          6474,
+          6440
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "27b8381001ba7aa3e2ad809c9a695b0430140a1051172b3c2bc938c562914f76",
+        "word": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "z0": -7
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          2,
+          3
+        ],
+        "coordinate_caps_X": [
+          153,
+          151,
+          150
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          1,
+          1,
+          4
+        ],
+        "family": "P3",
+        "finite_tuple_count": 343,
+        "hits": [],
+        "maximum_pulse_heights": [
+          7,
+          7,
+          7
+        ],
+        "packet_index": 2,
+        "primitive_rotation": 0,
+        "r": 3,
+        "reduced_coefficients": [
+          -63,
+          3,
+          4,
+          56
+        ],
+        "reduced_weights": [
+          63,
+          60,
+          56
+        ],
+        "resultant_identity_count": 1029,
+        "resultant_norms": [
+          78183,
+          77532,
+          76664
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "3ac42b61e843ffbb60618633940bf6fabc299261e5a72bb4eb0cdf7433fae3f2",
+        "word": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "z0": -5
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          2,
+          5
+        ],
+        "coordinate_caps_X": [
+          458,
+          454,
+          446
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          1,
+          2,
+          3
+        ],
+        "family": "P3",
+        "finite_tuple_count": 512,
+        "hits": [],
+        "maximum_pulse_heights": [
+          8,
+          8,
+          8
+        ],
+        "packet_index": 3,
+        "primitive_rotation": 0,
+        "r": 3,
+        "reduced_coefficients": [
+          -189,
+          9,
+          20,
+          160
+        ],
+        "reduced_weights": [
+          189,
+          180,
+          160
+        ],
+        "resultant_identity_count": 1536,
+        "resultant_norms": [
+          234549,
+          232596,
+          228256
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "a11bde24c6581581daefffa9b5ee2156ef89d1fcbd5e52a2482a95f43d70eac8",
+        "word": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "z0": -5
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          3,
+          5
+        ],
+        "coordinate_caps_X": [
+          458,
+          449,
+          446
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          2,
+          1,
+          3
+        ],
+        "family": "P3",
+        "finite_tuple_count": 512,
+        "hits": [],
+        "maximum_pulse_heights": [
+          8,
+          8,
+          8
+        ],
+        "packet_index": 4,
+        "primitive_rotation": 0,
+        "r": 3,
+        "reduced_coefficients": [
+          -189,
+          21,
+          8,
+          160
+        ],
+        "reduced_weights": [
+          189,
+          168,
+          160
+        ],
+        "resultant_identity_count": 1536,
+        "resultant_norms": [
+          234549,
+          229992,
+          228256
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "2770275686226da384adc954c9c5c276aa0faef27746b14c053e96730f34b03a",
+        "word": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "z0": -5
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          3,
+          6
+        ],
+        "coordinate_caps_X": [
+          1374,
+          1347,
+          1324
+        ],
+        "coprime_common_factor": 6,
+        "cyclic_gaps": [
+          2,
+          2,
+          2
+        ],
+        "family": "P3",
+        "finite_tuple_count": 1000,
+        "hits": [
+          {
+            "D": 3367,
+            "R": 3367,
+            "exact_replay": true,
+            "family": "P3",
+            "n": 1,
+            "packet_index": 5,
+            "primitive_rotation": 0,
+            "pulse_heights": [
+              1,
+              1,
+              1
+            ],
+            "r": 3,
+            "support": [
+              0,
+              2,
+              4
+            ],
+            "trivial": true,
+            "word": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "maximum_pulse_heights": [
+          10,
+          10,
+          10
+        ],
+        "packet_index": 5,
+        "primitive_rotation": 0,
+        "r": 3,
+        "reduced_coefficients": [
+          -567,
+          63,
+          56,
+          448
+        ],
+        "reduced_weights": [
+          567,
+          504,
+          448
+        ],
+        "resultant_identity_count": 3000,
+        "resultant_norms": [
+          703647,
+          689976,
+          677824
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "021e5050a1c717749ffd79ea5e040b8caaf459c9f0ce10ca1f644ded9e2fe13a",
+        "word": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "z0": -5
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          1,
+          3
+        ],
+        "coordinate_caps_X": [
+          109,
+          108,
+          107
+        ],
+        "coprime_common_factor": 108,
+        "cyclic_gaps": [
+          1,
+          1,
+          4
+        ],
+        "family": "P3",
+        "finite_tuple_count": 216,
+        "hits": [],
+        "maximum_pulse_heights": [
+          6,
+          6,
+          6
+        ],
+        "packet_index": 6,
+        "primitive_rotation": 1,
+        "r": 3,
+        "reduced_coefficients": [
+          -45,
+          3,
+          2,
+          40
+        ],
+        "reduced_weights": [
+          45,
+          42,
+          40
+        ],
+        "resultant_identity_count": 648,
+        "resultant_norms": [
+          55845,
+          55194,
+          54760
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "848f4d9bc965b7ef81ed380eb5cc622c5b784096ecf8599c7186c731be53a6bb",
+        "word": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "z0": -7
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          1,
+          4
+        ],
+        "coordinate_caps_X": [
+          327,
+          323,
+          317
+        ],
+        "coprime_common_factor": 36,
+        "cyclic_gaps": [
+          1,
+          2,
+          3
+        ],
+        "family": "P3",
+        "finite_tuple_count": 512,
+        "hits": [],
+        "maximum_pulse_heights": [
+          8,
+          8,
+          8
+        ],
+        "packet_index": 7,
+        "primitive_rotation": 1,
+        "r": 3,
+        "reduced_coefficients": [
+          -135,
+          9,
+          14,
+          112
+        ],
+        "reduced_weights": [
+          135,
+          126,
+          112
+        ],
+        "resultant_identity_count": 1536,
+        "resultant_norms": [
+          167535,
+          165582,
+          162544
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "d0eaf1c9fc1a280169cc55e9e71a363b72e6a5cc18e535dd2fe21375cbff930a",
+        "word": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "z0": -7
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          3,
+          4
+        ],
+        "coordinate_caps_X": [
+          327,
+          321,
+          317
+        ],
+        "coprime_common_factor": 36,
+        "cyclic_gaps": [
+          2,
+          1,
+          3
+        ],
+        "family": "P3",
+        "finite_tuple_count": 512,
+        "hits": [],
+        "maximum_pulse_heights": [
+          8,
+          8,
+          8
+        ],
+        "packet_index": 8,
+        "primitive_rotation": 1,
+        "r": 3,
+        "reduced_coefficients": [
+          -135,
+          15,
+          8,
+          112
+        ],
+        "reduced_weights": [
+          135,
+          120,
+          112
+        ],
+        "resultant_identity_count": 1536,
+        "resultant_norms": [
+          167535,
+          164280,
+          162544
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "156caa29755c505971e89c18753b5d96aef39850705bf65267e321e7988c20b5",
+        "word": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "z0": -7
+      },
+      {
+        "Q": 729,
+        "U": 512,
+        "coefficient_valuations": [
+          0,
+          3,
+          6
+        ],
+        "coordinate_caps_X": [
+          982,
+          962,
+          945
+        ],
+        "coprime_common_factor": 12,
+        "cyclic_gaps": [
+          2,
+          2,
+          2
+        ],
+        "family": "P3",
+        "finite_tuple_count": 729,
+        "hits": [],
+        "maximum_pulse_heights": [
+          9,
+          9,
+          9
+        ],
+        "packet_index": 9,
+        "primitive_rotation": 1,
+        "r": 3,
+        "reduced_coefficients": [
+          -405,
+          45,
+          40,
+          320
+        ],
+        "reduced_weights": [
+          405,
+          360,
+          320
+        ],
+        "resultant_identity_count": 2187,
+        "resultant_norms": [
+          502605,
+          492840,
+          484160
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "fc0519d739ff70db29dd31371982a6f11fb7a9537297479cf4014223f6681f49",
+        "word": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "z0": -7
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          2
+        ],
+        "coordinate_caps_X": [
+          465,
+          465,
+          465
+        ],
+        "coprime_common_factor": 162,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 512,
+        "hits": [],
+        "maximum_pulse_heights": [
+          8,
+          8,
+          8
+        ],
+        "packet_index": 10,
+        "primitive_rotation": 0,
+        "r": 1,
+        "reduced_coefficients": [
+          -225,
+          3,
+          2,
+          220
+        ],
+        "reduced_weights": [
+          225,
+          222,
+          220
+        ],
+        "resultant_identity_count": 1536,
+        "resultant_norms": [
+          952875,
+          952458,
+          952180
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "8b543a00d6723ce4603ce573044edd18280edc2dedb59f63d8baf08e0e3ad23d",
+        "word": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4
+        ],
+        "z0": -17
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          4
+        ],
+        "coordinate_caps_X": [
+          1396,
+          1395,
+          1394
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1000,
+        "hits": [],
+        "maximum_pulse_heights": [
+          10,
+          10,
+          10
+        ],
+        "packet_index": 11,
+        "primitive_rotation": 0,
+        "r": 1,
+        "reduced_coefficients": [
+          -675,
+          9,
+          10,
+          656
+        ],
+        "reduced_weights": [
+          675,
+          666,
+          656
+        ],
+        "resultant_identity_count": 3000,
+        "resultant_norms": [
+          2858625,
+          2857374,
+          2855984
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "2dd0639287be8f7d590678e26df2620cb69ed06e5f982c022b0e24d9dd3bec57",
+        "word": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4
+        ],
+        "z0": -17
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          5
+        ],
+        "coordinate_caps_X": [
+          4187,
+          4185,
+          4182
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          1,
+          3,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 12,
+        "primitive_rotation": 0,
+        "r": 1,
+        "reduced_coefficients": [
+          -2025,
+          27,
+          46,
+          1952
+        ],
+        "reduced_weights": [
+          2025,
+          1998,
+          1952
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          8575875,
+          8572122,
+          8565728
+        ],
+        "support": [
+          0,
+          1,
+          4
+        ],
+        "tuple_transcript_sha256": "9d0eb748fe77490bd01341908e79f124e26fbe05d22563622e7d509c8fa71cf6",
+        "word": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4
+        ],
+        "z0": -17
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          4
+        ],
+        "coordinate_caps_X": [
+          1396,
+          1395,
+          1394
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1000,
+        "hits": [],
+        "maximum_pulse_heights": [
+          10,
+          10,
+          10
+        ],
+        "packet_index": 13,
+        "primitive_rotation": 0,
+        "r": 1,
+        "reduced_coefficients": [
+          -675,
+          15,
+          4,
+          656
+        ],
+        "reduced_weights": [
+          675,
+          660,
+          656
+        ],
+        "resultant_identity_count": 3000,
+        "resultant_norms": [
+          2858625,
+          2856540,
+          2855984
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "1f9b4597e69e9dd278291709a9b034e1fc18831938bcb3753e12965b12705530",
+        "word": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4
+        ],
+        "z0": -17
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          5
+        ],
+        "coordinate_caps_X": [
+          4187,
+          4184,
+          4182
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 14,
+        "primitive_rotation": 0,
+        "r": 1,
+        "reduced_coefficients": [
+          -2025,
+          45,
+          28,
+          1952
+        ],
+        "reduced_weights": [
+          2025,
+          1980,
+          1952
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          8575875,
+          8569620,
+          8565728
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "5184bff57dc56df570a1d83fcd95797226979432ca2d2d5347a503e0ab434037",
+        "word": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4
+        ],
+        "z0": -17
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          4,
+          5
+        ],
+        "coordinate_caps_X": [
+          4187,
+          4183,
+          4182
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          3,
+          1,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 15,
+        "primitive_rotation": 0,
+        "r": 1,
+        "reduced_coefficients": [
+          -2025,
+          57,
+          16,
+          1952
+        ],
+        "reduced_weights": [
+          2025,
+          1968,
+          1952
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          8575875,
+          8567952,
+          8565728
+        ],
+        "support": [
+          0,
+          3,
+          4
+        ],
+        "tuple_transcript_sha256": "1fa71ee47648da7439d8f9d32f2b089627a589ee05dc971bc191831ffb5334f0",
+        "word": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4
+        ],
+        "z0": -17
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          3
+        ],
+        "coordinate_caps_X": [
+          688,
+          688,
+          688
+        ],
+        "coprime_common_factor": 162,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 729,
+        "hits": [],
+        "maximum_pulse_heights": [
+          9,
+          9,
+          9
+        ],
+        "packet_index": 16,
+        "primitive_rotation": 1,
+        "r": 1,
+        "reduced_coefficients": [
+          -333,
+          3,
+          2,
+          328
+        ],
+        "reduced_weights": [
+          333,
+          330,
+          328
+        ],
+        "resultant_identity_count": 2187,
+        "resultant_norms": [
+          1410255,
+          1409838,
+          1409560
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "6888341805b590015b23ecbbc723e3ffc66b0b95c47c46f87537a71d89ba4b78",
+        "word": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ],
+        "z0": -25
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          4
+        ],
+        "coordinate_caps_X": [
+          2066,
+          2065,
+          2064
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 17,
+        "primitive_rotation": 1,
+        "r": 1,
+        "reduced_coefficients": [
+          -999,
+          9,
+          14,
+          976
+        ],
+        "reduced_weights": [
+          999,
+          990,
+          976
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          4230765,
+          4229514,
+          4227568
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "687fb560ca6de358d44a1f167a9ca6bc842fc87d832424a91ffa726303efe4d3",
+        "word": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ],
+        "z0": -25
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          5
+        ],
+        "coordinate_caps_X": [
+          6197,
+          6195,
+          6191
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          1,
+          3,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 18,
+        "primitive_rotation": 1,
+        "r": 1,
+        "reduced_coefficients": [
+          -2997,
+          27,
+          58,
+          2912
+        ],
+        "reduced_weights": [
+          2997,
+          2970,
+          2912
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          12692295,
+          12688542,
+          12680480
+        ],
+        "support": [
+          0,
+          1,
+          4
+        ],
+        "tuple_transcript_sha256": "54dd077921474b62640f93ab632c0f60d428eb12d904c054498ff440e20bc18a",
+        "word": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ],
+        "z0": -25
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          3,
+          4
+        ],
+        "coordinate_caps_X": [
+          2066,
+          2065,
+          2064
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 19,
+        "primitive_rotation": 1,
+        "r": 1,
+        "reduced_coefficients": [
+          -999,
+          15,
+          8,
+          976
+        ],
+        "reduced_weights": [
+          999,
+          984,
+          976
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          4230765,
+          4228680,
+          4227568
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "90fc235b87a66ffbf95eaafebc05acb5cc183b9d329ac55469e326d206e0bf97",
+        "word": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ],
+        "z0": -25
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          3,
+          5
+        ],
+        "coordinate_caps_X": [
+          6197,
+          6194,
+          6191
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 20,
+        "primitive_rotation": 1,
+        "r": 1,
+        "reduced_coefficients": [
+          -2997,
+          45,
+          40,
+          2912
+        ],
+        "reduced_weights": [
+          2997,
+          2952,
+          2912
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          12692295,
+          12686040,
+          12680480
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "982bebd97f46332d93e9137decce3f7b373c7b2a7472e6a1a2343074e026737b",
+        "word": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ],
+        "z0": -25
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          4,
+          5
+        ],
+        "coordinate_caps_X": [
+          6197,
+          6192,
+          6191
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          3,
+          1,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 21,
+        "primitive_rotation": 1,
+        "r": 1,
+        "reduced_coefficients": [
+          -2997,
+          69,
+          16,
+          2912
+        ],
+        "reduced_weights": [
+          2997,
+          2928,
+          2912
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          12692295,
+          12682704,
+          12680480
+        ],
+        "support": [
+          0,
+          3,
+          4
+        ],
+        "tuple_transcript_sha256": "d774d3a14289017e87cd4f372da737942d4c9e3e0fe0e33a621ae393cf4d2f38",
+        "word": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ],
+        "z0": -25
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          3
+        ],
+        "coordinate_caps_X": [
+          1023,
+          1023,
+          1023
+        ],
+        "coprime_common_factor": 162,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 729,
+        "hits": [],
+        "maximum_pulse_heights": [
+          9,
+          9,
+          9
+        ],
+        "packet_index": 22,
+        "primitive_rotation": 2,
+        "r": 1,
+        "reduced_coefficients": [
+          -495,
+          3,
+          4,
+          488
+        ],
+        "reduced_weights": [
+          495,
+          492,
+          488
+        ],
+        "resultant_identity_count": 2187,
+        "resultant_norms": [
+          2096325,
+          2095908,
+          2095352
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "1766b5f39d03f0dfd25a8dfea32be51743e0c12615d59dca93de78ffbcbe401f",
+        "word": [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "z0": -37
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          4
+        ],
+        "coordinate_caps_X": [
+          3071,
+          3070,
+          3069
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 23,
+        "primitive_rotation": 2,
+        "r": 1,
+        "reduced_coefficients": [
+          -1485,
+          9,
+          20,
+          1456
+        ],
+        "reduced_weights": [
+          1485,
+          1476,
+          1456
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          6288975,
+          6287724,
+          6284944
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "98151796fcb1a5a1a003cc7a0cbcd34ed5047ae22cb72833a526acf837e8d99a",
+        "word": [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "z0": -37
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          8
+        ],
+        "coordinate_caps_X": [
+          9212,
+          9210,
+          9205
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          1,
+          3,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 2197,
+        "hits": [],
+        "maximum_pulse_heights": [
+          13,
+          13,
+          13
+        ],
+        "packet_index": 24,
+        "primitive_rotation": 2,
+        "r": 1,
+        "reduced_coefficients": [
+          -4455,
+          27,
+          76,
+          4352
+        ],
+        "reduced_weights": [
+          4455,
+          4428,
+          4352
+        ],
+        "resultant_identity_count": 6591,
+        "resultant_norms": [
+          18866925,
+          18863172,
+          18852608
+        ],
+        "support": [
+          0,
+          1,
+          4
+        ],
+        "tuple_transcript_sha256": "d18cd4af77c5a46c0ef5733202168ef7d743ebb7b23aa0dd9133efb184d4f7f0",
+        "word": [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "z0": -37
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          3,
+          4
+        ],
+        "coordinate_caps_X": [
+          3071,
+          3069,
+          3069
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 25,
+        "primitive_rotation": 2,
+        "r": 1,
+        "reduced_coefficients": [
+          -1485,
+          21,
+          8,
+          1456
+        ],
+        "reduced_weights": [
+          1485,
+          1464,
+          1456
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          6288975,
+          6286056,
+          6284944
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "d305fa457d534b9121737b5a1353086970c02e22bba096c2b803cf2ae4c1f0c3",
+        "word": [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "z0": -37
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          3,
+          8
+        ],
+        "coordinate_caps_X": [
+          9212,
+          9208,
+          9205
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 2197,
+        "hits": [],
+        "maximum_pulse_heights": [
+          13,
+          13,
+          13
+        ],
+        "packet_index": 26,
+        "primitive_rotation": 2,
+        "r": 1,
+        "reduced_coefficients": [
+          -4455,
+          63,
+          40,
+          4352
+        ],
+        "reduced_weights": [
+          4455,
+          4392,
+          4352
+        ],
+        "resultant_identity_count": 6591,
+        "resultant_norms": [
+          18866925,
+          18858168,
+          18852608
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "719550cb05ef9f0e0970652760cc8ef53d0afa63e6c71fbdf30a49714077ee57",
+        "word": [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "z0": -37
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          4,
+          8
+        ],
+        "coordinate_caps_X": [
+          9212,
+          9206,
+          9205
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          3,
+          1,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 2197,
+        "hits": [],
+        "maximum_pulse_heights": [
+          13,
+          13,
+          13
+        ],
+        "packet_index": 27,
+        "primitive_rotation": 2,
+        "r": 1,
+        "reduced_coefficients": [
+          -4455,
+          87,
+          16,
+          4352
+        ],
+        "reduced_weights": [
+          4455,
+          4368,
+          4352
+        ],
+        "resultant_identity_count": 6591,
+        "resultant_norms": [
+          18866925,
+          18854832,
+          18852608
+        ],
+        "support": [
+          0,
+          3,
+          4
+        ],
+        "tuple_transcript_sha256": "75b03cf4060baa1b1e1a4dddbcc0e377dcc7cc74de521785d9468158ee394ed2",
+        "word": [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "z0": -37
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          2
+        ],
+        "coordinate_caps_X": [
+          763,
+          763,
+          762
+        ],
+        "coprime_common_factor": 324,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 729,
+        "hits": [],
+        "maximum_pulse_heights": [
+          9,
+          9,
+          9
+        ],
+        "packet_index": 28,
+        "primitive_rotation": 3,
+        "r": 1,
+        "reduced_coefficients": [
+          -369,
+          3,
+          2,
+          364
+        ],
+        "reduced_weights": [
+          369,
+          366,
+          364
+        ],
+        "resultant_identity_count": 2187,
+        "resultant_norms": [
+          1562715,
+          1562298,
+          1562020
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "be983a054ea36d1cd30f69e7b05a2a6ce494c47d2159fee6ff320fd49ad2aba5",
+        "word": [
+          2,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "z0": -55
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          6
+        ],
+        "coordinate_caps_X": [
+          2289,
+          2288,
+          2288
+        ],
+        "coprime_common_factor": 108,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 29,
+        "primitive_rotation": 3,
+        "r": 1,
+        "reduced_coefficients": [
+          -1107,
+          9,
+          10,
+          1088
+        ],
+        "reduced_weights": [
+          1107,
+          1098,
+          1088
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          4688145,
+          4686894,
+          4685504
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "9eada2091a9d78340730af3c8f7510f11278b32590d9c33d3a2c06830367411d",
+        "word": [
+          2,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "z0": -55
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          6
+        ],
+        "coordinate_caps_X": [
+          2289,
+          2288,
+          2288
+        ],
+        "coprime_common_factor": 108,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 30,
+        "primitive_rotation": 3,
+        "r": 1,
+        "reduced_coefficients": [
+          -1107,
+          15,
+          4,
+          1088
+        ],
+        "reduced_weights": [
+          1107,
+          1092,
+          1088
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          4688145,
+          4686060,
+          4685504
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "4e95111df0e8055940ee251f78813c9d4bc4fb4c6290e518add94a48ea5e70e8",
+        "word": [
+          2,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "z0": -55
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          7
+        ],
+        "coordinate_caps_X": [
+          6867,
+          6864,
+          6859
+        ],
+        "coprime_common_factor": 36,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 31,
+        "primitive_rotation": 3,
+        "r": 1,
+        "reduced_coefficients": [
+          -3321,
+          45,
+          76,
+          3200
+        ],
+        "reduced_weights": [
+          3321,
+          3276,
+          3200
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          14064435,
+          14058180,
+          14047616
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "01d7624b833a45a6a3a7425b483a2432fea8fd89da8c8535d907b6bb82025744",
+        "word": [
+          2,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "z0": -55
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          6,
+          7
+        ],
+        "coordinate_caps_X": [
+          6867,
+          6863,
+          6859
+        ],
+        "coprime_common_factor": 36,
+        "cyclic_gaps": [
+          3,
+          1,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 32,
+        "primitive_rotation": 3,
+        "r": 1,
+        "reduced_coefficients": [
+          -3321,
+          57,
+          64,
+          3200
+        ],
+        "reduced_weights": [
+          3321,
+          3264,
+          3200
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          14064435,
+          14056512,
+          14047616
+        ],
+        "support": [
+          0,
+          3,
+          4
+        ],
+        "tuple_transcript_sha256": "36797b608ed7b3a0b763d67a9e9f8acdaa7ddb955a1d853c9365c38cb83546ff",
+        "word": [
+          2,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "z0": -55
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          5
+        ],
+        "coordinate_caps_X": [
+          1135,
+          1135,
+          1135
+        ],
+        "coprime_common_factor": 162,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1000,
+        "hits": [],
+        "maximum_pulse_heights": [
+          10,
+          10,
+          10
+        ],
+        "packet_index": 33,
+        "primitive_rotation": 4,
+        "r": 1,
+        "reduced_coefficients": [
+          -549,
+          3,
+          2,
+          544
+        ],
+        "reduced_weights": [
+          549,
+          546,
+          544
+        ],
+        "resultant_identity_count": 3000,
+        "resultant_norms": [
+          2325015,
+          2324598,
+          2324320
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "e0da936525599cc1d0a96afd0acf0aa44a8b27deb0adece0972fb871402629e3",
+        "word": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "z0": -41
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          6
+        ],
+        "coordinate_caps_X": [
+          3406,
+          3405,
+          3402
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 34,
+        "primitive_rotation": 4,
+        "r": 1,
+        "reduced_coefficients": [
+          -1647,
+          9,
+          38,
+          1600
+        ],
+        "reduced_weights": [
+          1647,
+          1638,
+          1600
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          6975045,
+          6973794,
+          6968512
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "554ebd1e587a75352e93aa92a591783d0b8345907aec2befbbc2eb148f5125ed",
+        "word": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "z0": -41
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          5,
+          6
+        ],
+        "coordinate_caps_X": [
+          3406,
+          3405,
+          3402
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 35,
+        "primitive_rotation": 4,
+        "r": 1,
+        "reduced_coefficients": [
+          -1647,
+          15,
+          32,
+          1600
+        ],
+        "reduced_weights": [
+          1647,
+          1632,
+          1600
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          6975045,
+          6972960,
+          6968512
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "da80beb256f99f8bf5d23378d9b87dcf1966196398ab1eb42065e791e25af1ec",
+        "word": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "z0": -41
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          5,
+          7
+        ],
+        "coordinate_caps_X": [
+          10217,
+          10214,
+          10203
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 2197,
+        "hits": [],
+        "maximum_pulse_heights": [
+          13,
+          13,
+          13
+        ],
+        "packet_index": 36,
+        "primitive_rotation": 4,
+        "r": 1,
+        "reduced_coefficients": [
+          -4941,
+          45,
+          160,
+          4736
+        ],
+        "reduced_weights": [
+          4941,
+          4896,
+          4736
+        ],
+        "resultant_identity_count": 6591,
+        "resultant_norms": [
+          20925135,
+          20918880,
+          20896640
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "12514b563da00105c85f15417525291f86d576c920d88c1897b0f01ff96aa53e",
+        "word": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "z0": -41
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          4,
+          5
+        ],
+        "coordinate_caps_X": [
+          1693,
+          1693,
+          1692
+        ],
+        "coprime_common_factor": 162,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1000,
+        "hits": [],
+        "maximum_pulse_heights": [
+          10,
+          10,
+          10
+        ],
+        "packet_index": 37,
+        "primitive_rotation": 5,
+        "r": 1,
+        "reduced_coefficients": [
+          -819,
+          3,
+          16,
+          800
+        ],
+        "reduced_weights": [
+          819,
+          816,
+          800
+        ],
+        "resultant_identity_count": 3000,
+        "resultant_norms": [
+          3468465,
+          3468048,
+          3465824
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "5edc5fa81ab229a2e0ed2b0f5bc5e95be94483a218eed0b02ce590ea1e5e117a",
+        "word": [
+          1,
+          4,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "z0": -61
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          4,
+          6
+        ],
+        "coordinate_caps_X": [
+          5081,
+          5080,
+          5074
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 38,
+        "primitive_rotation": 5,
+        "r": 1,
+        "reduced_coefficients": [
+          -2457,
+          9,
+          80,
+          2368
+        ],
+        "reduced_weights": [
+          2457,
+          2448,
+          2368
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          10405395,
+          10404144,
+          10393024
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "1c0ea30de55f3c5fc5488f1aba1fcc50f73b14c1cedcd8236743188e37331c51",
+        "word": [
+          1,
+          4,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "z0": -61
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          5,
+          6
+        ],
+        "coordinate_caps_X": [
+          5081,
+          5077,
+          5074
+        ],
+        "coprime_common_factor": 54,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1728,
+        "hits": [],
+        "maximum_pulse_heights": [
+          12,
+          12,
+          12
+        ],
+        "packet_index": 39,
+        "primitive_rotation": 5,
+        "r": 1,
+        "reduced_coefficients": [
+          -2457,
+          57,
+          32,
+          2368
+        ],
+        "reduced_weights": [
+          2457,
+          2400,
+          2368
+        ],
+        "resultant_identity_count": 5184,
+        "resultant_norms": [
+          10405395,
+          10397472,
+          10393024
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "a88699d142985603b573533fc738cb527b155c4e372b6cc455f4b2837e789c11",
+        "word": [
+          1,
+          4,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "z0": -61
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          5,
+          7
+        ],
+        "coordinate_caps_X": [
+          15242,
+          15230,
+          15220
+        ],
+        "coprime_common_factor": 18,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 2197,
+        "hits": [],
+        "maximum_pulse_heights": [
+          13,
+          13,
+          13
+        ],
+        "packet_index": 40,
+        "primitive_rotation": 5,
+        "r": 1,
+        "reduced_coefficients": [
+          -7371,
+          171,
+          160,
+          7040
+        ],
+        "reduced_weights": [
+          7371,
+          7200,
+          7040
+        ],
+        "resultant_identity_count": 6591,
+        "resultant_norms": [
+          31216185,
+          31192416,
+          31170176
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "12f00992323526fb18d80c15a631b2d604a1a606c18775788a73f7815cc6dc13",
+        "word": [
+          1,
+          4,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "z0": -61
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          2
+        ],
+        "coordinate_caps_X": [
+          316,
+          316,
+          316
+        ],
+        "coprime_common_factor": 1296,
+        "cyclic_gaps": [
+          1,
+          1,
+          5
+        ],
+        "family": "P11",
+        "finite_tuple_count": 512,
+        "hits": [],
+        "maximum_pulse_heights": [
+          8,
+          8,
+          8
+        ],
+        "packet_index": 41,
+        "primitive_rotation": 6,
+        "r": 1,
+        "reduced_coefficients": [
+          -153,
+          3,
+          2,
+          148
+        ],
+        "reduced_weights": [
+          153,
+          150,
+          148
+        ],
+        "resultant_identity_count": 1536,
+        "resultant_norms": [
+          647955,
+          647538,
+          647260
+        ],
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "tuple_transcript_sha256": "1d1d3a0a6b140ae63cd2b6302e15ff8c1b1501ef34b2623c3b74f06b8a1eacb5",
+        "word": [
+          4,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "z0": -91
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          1,
+          3
+        ],
+        "coordinate_caps_X": [
+          949,
+          948,
+          948
+        ],
+        "coprime_common_factor": 432,
+        "cyclic_gaps": [
+          1,
+          2,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 729,
+        "hits": [],
+        "maximum_pulse_heights": [
+          9,
+          9,
+          9
+        ],
+        "packet_index": 42,
+        "primitive_rotation": 6,
+        "r": 1,
+        "reduced_coefficients": [
+          -459,
+          9,
+          10,
+          440
+        ],
+        "reduced_weights": [
+          459,
+          450,
+          440
+        ],
+        "resultant_identity_count": 2187,
+        "resultant_norms": [
+          1943865,
+          1942614,
+          1941224
+        ],
+        "support": [
+          0,
+          1,
+          3
+        ],
+        "tuple_transcript_sha256": "698d1f42f126064548ae64dfed485d2372881c97893ae7741818a3067a3b373e",
+        "word": [
+          4,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "z0": -91
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          3
+        ],
+        "coordinate_caps_X": [
+          949,
+          948,
+          948
+        ],
+        "coprime_common_factor": 432,
+        "cyclic_gaps": [
+          2,
+          1,
+          4
+        ],
+        "family": "P11",
+        "finite_tuple_count": 729,
+        "hits": [],
+        "maximum_pulse_heights": [
+          9,
+          9,
+          9
+        ],
+        "packet_index": 43,
+        "primitive_rotation": 6,
+        "r": 1,
+        "reduced_coefficients": [
+          -459,
+          15,
+          4,
+          440
+        ],
+        "reduced_weights": [
+          459,
+          444,
+          440
+        ],
+        "resultant_identity_count": 2187,
+        "resultant_norms": [
+          1943865,
+          1941780,
+          1941224
+        ],
+        "support": [
+          0,
+          2,
+          3
+        ],
+        "tuple_transcript_sha256": "20a6ad7163d2f1ffd984e37d4c98cad8c9fceae03d1c65837a57bece2dd10067",
+        "word": [
+          4,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "z0": -91
+      },
+      {
+        "Q": 2187,
+        "U": 2048,
+        "coefficient_valuations": [
+          0,
+          2,
+          5
+        ],
+        "coordinate_caps_X": [
+          2847,
+          2844,
+          2843
+        ],
+        "coprime_common_factor": 144,
+        "cyclic_gaps": [
+          2,
+          2,
+          3
+        ],
+        "family": "P11",
+        "finite_tuple_count": 1331,
+        "hits": [],
+        "maximum_pulse_heights": [
+          11,
+          11,
+          11
+        ],
+        "packet_index": 44,
+        "primitive_rotation": 6,
+        "r": 1,
+        "reduced_coefficients": [
+          -1377,
+          45,
+          20,
+          1312
+        ],
+        "reduced_weights": [
+          1377,
+          1332,
+          1312
+        ],
+        "resultant_identity_count": 3993,
+        "resultant_norms": [
+          5831595,
+          5825340,
+          5822560
+        ],
+        "support": [
+          0,
+          2,
+          4
+        ],
+        "tuple_transcript_sha256": "003179b52aa2d882a16e1991108bd7491c484c544853e672f73b188e474ed4a2",
+        "word": [
+          4,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "z0": -91
+      }
+    ],
+    "scope": {
+      "P11_repetitions": [
+        1
+      ],
+      "P3_repetitions": [
+        2,
+        3
+      ],
+      "arbitrary_heights_closed_by_coordinate_caps": true,
+      "exactly_three_distinct_positive_pulses": true,
+      "normalization": "rotate a largest cyclic support gap to the end; lexicographic tie rule"
+    },
+    "totals": {
+      "divisor_hits": 1,
+      "finite_tuples": 53808,
+      "nontrivial_hits": 0,
+      "normalized_packets": 45,
+      "raw_rotation_support_configurations": 293,
+      "resultant_identities": 161424,
+      "trivial_hits": 1
+    }
+  },
+  "master_transcript_sha256": "3ecc48c9b33c99f9395cb61e28fed61ad9cd8f5ed48b3eac246a97cc1f7655cc",
+  "status": "exact proved finite computation; conditional all-repetition conclusion remains PROPOSED / SOURCE-DEPENDENT",
+  "totals": {
+    "continued_fraction_rows": 38,
+    "divisor_hits": 1,
+    "finite_tuples": 53808,
+    "nontrivial_hits": 0,
+    "normalized_packets": 45,
+    "primitive_upper_families_rejected": 18,
+    "raw_rotation_support_configurations": 293,
+    "resultant_identities": 161424,
+    "transition_repetitions_rejected": 7,
+    "trivial_hits": 1
+  }
+}
