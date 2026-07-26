@@ -194,7 +194,7 @@ z\equiv\sigma(u)\pmod{9^d},
 z\equiv\rho(v)\pmod{Q_v}.
 \]
 
-The least positive CRT representative over all ordered suffix-prefix pairs is the universal phase floor `H_d`. The exact certificates give
+The least positive CRT representative over all ordered suffix-prefix pairs is the universal phase floor `H_d`. The first exact certificates give
 
 ```text
 H_5  =            26,873,855
@@ -208,22 +208,64 @@ At a cycle minimum,
 e_w=Dm+Qk=D(m+k)+Pk,
 \]
 
-so `m+k<=e_max/D`. The depth-ten floor and a 48-row monotone parameter certificate prove
+so `m+k<=e_max/D`. The depth-ten floor and a 48-row monotone parameter certificate prove every packet through
 
 \[
-\boxed{
-0\le a\le243,\quad b\ge1
-\Longrightarrow
-\text{no nontrivial positive fixed-weight macro cycle}.}
+\boxed{a\le243.}
 \]
-
-The theorem is unbounded in pulse count, macro length, branch count, chronological switching, and repetition length. The first layer not closed by this depth-ten certificate is `a=244`; this is a method boundary, not evidence for a cycle.
 
 Frozen `X-9614` semantic digest:
 
 ```text
 296074c8e5f59c11bc1de1c7d0d89084ae79012381ff1d850fb611281fe0cf06
 ```
+
+### Depth-fifteen extension — `T-9611`, `X-9615`
+
+Two independent C++ reconstructions exhaust
+
+\[
+4^{15}=1{,}073{,}741{,}824
+\]
+
+ordered suffix-prefix phase pairs and prove
+
+\[
+\boxed{H_{15}=874{,}917{,}472{,}129{,}210{,}216{,}448.}
+\]
+
+The unique minimizing phase pair is
+
+```text
+past suffix   BAAABBBBBBABAAA
+future prefix BBBAABAABABAAAA.
+```
+
+The depth-fifteen floor, 132 exact parameter rows, and 28 monotone endpoint rows extend the all-repetition theorem to
+
+\[
+\boxed{
+0\le a\le375,\quad b\ge1
+\Longrightarrow
+\text{no nontrivial positive fixed-weight macro cycle}.}
+\]
+
+The result is unbounded in pulse count, macro length, branch count, chronological switching, and repetition length. The first layer not closed by this depth-fifteen certificate is `a=376`; this is a method boundary, not evidence for a cycle.
+
+Frozen `X-9615` file digests:
+
+```text
+run.cpp
+773b700985e98822028d31d80d80b98372519c3f3163b1d8dbb16c383a7432cf
+
+verify.cpp
+d891c5d95cccc5d8cb8a8a2eb7b1e05cd08f9ae83687ef04d6db16434a2abfc3
+
+canonical.json
+9c10234f19e6486501510e29afd20f70efcd379303f3cae47fdceb6dd838175b
+```
+
+No further isolated phase depth should be added without crossing a declared theorem boundary. The next high-value target is a parameter-uniform lower bound for `H_d`.
 
 ## 5. Ordinary multiplicative-refund funnel
 
@@ -259,4 +301,4 @@ Exact cycle packets and Christoffel repair identities are shared with issue #9, 
 
 ## Status
 
-No unconditional Collatz counterexample has been found. No `K-####` identifier is assigned. The strongest new finite-cycle result is the all-repetition fixed-weight exclusion through `a=243`; the positive ordinary blocker remains the six-branch least-root decision.
+No unconditional Collatz counterexample has been found. No `K-####` identifier is assigned. The strongest new finite-cycle result is the all-repetition fixed-weight exclusion through `a=375`; the positive ordinary blocker remains the six-branch least-root decision.
