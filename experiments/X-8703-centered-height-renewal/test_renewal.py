@@ -5,8 +5,10 @@ from __future__ import annotations
 import ast
 import copy
 import importlib.util
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 HERE = Path(__file__).resolve().parent
@@ -50,6 +52,30 @@ def first_crossing_within(
 
 
 class ExactFormulaTests(unittest.TestCase):
+    def test_check_mode_cannot_overwrite_frozen_baseline(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            baseline = Path(directory) / "canonical.json"
+            baseline.write_text("sentinel\n", encoding="utf-8")
+            with patch(
+                "sys.argv",
+                [
+                    "build.py",
+                    "--height",
+                    "64",
+                    "--max-steps",
+                    "1",
+                    "--output",
+                    str(baseline),
+                    "--check-results",
+                    str(baseline),
+                ],
+            ):
+                self.assertEqual(build.main(), 2)
+            self.assertEqual(
+                baseline.read_text(encoding="utf-8"),
+                "sentinel\n",
+            )
+
     def test_iterated_formula_and_direct_recurrence(self) -> None:
         height = 64**5
         for t in range(1, 6):

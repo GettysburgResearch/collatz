@@ -546,6 +546,16 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    if (
+        args.output is not None
+        and args.check_results is not None
+        and args.output.resolve() == args.check_results.resolve()
+    ):
+        print(
+            "--output and --check-results must name different files",
+            file=sys.stderr,
+        )
+        return 2
     if args.height is not None:
         height = args.height
     else:
