@@ -150,7 +150,82 @@ primitive mechanical SLP
  -> independent replay.
 ```
 
-## 4. Ordinary multiplicative-refund funnel
+## 4. Fixed-weight pulse-cycle closure
+
+Use the exact negative-three chart
+
+\[
+A:\ 8z'=9z+1,
+\qquad
+B:\ 16z'=9z,
+\qquad
+n=6z+1.
+\]
+
+A macro with exactly `a` letters `A` and `b` letters `B` has common summary
+
+\[
+Q=8^a16^b,
+\qquad
+P=9^{a+b},
+\]
+
+while all chronological words of that weight form the complete macro alphabet.
+
+### Minimum-edge and narrow-alphabet reductions — `L-9608`, `L-9609`, `T-9608`, `X-9612`
+
+The first all-repetition packet proves that a narrow common-summary alphabet has zero cycle carry, and that a cycle minimum reduces every arbitrary macro grammar to a finite target set. Its physical specialization excludes every fixed-weight packet with `a<=5`, uniformly in `b` and repetition length.
+
+### Terminal phase — `L-9610`, `T-9609`, `X-9613`
+
+The final physical letter fixes the cycle-minimum level modulo nine. Combining that terminal residue with the exact height and word-independent mod-seven phase closes all fixed-weight packets through
+
+\[
+\boxed{a\le13.}
+\]
+
+### Two-sided phase floor — `L-9611`, `T-9610`, `X-9614`
+
+For a length-`d` word, let `rho(w)` be its exact dyadic source residue and `sigma(w)` its exact output residue modulo `9^d`. At a macro boundary, the previous suffix and next prefix impose
+
+\[
+z\equiv\sigma(u)\pmod{9^d},
+\qquad
+z\equiv\rho(v)\pmod{Q_v}.
+\]
+
+The least positive CRT representative over all ordered suffix-prefix pairs is the universal phase floor `H_d`. The exact certificates give
+
+```text
+H_5  =            26,873,855
+H_8  =       195,221,131,263
+H_10 =    90,608,969,363,967.
+```
+
+At a cycle minimum,
+
+\[
+e_w=Dm+Qk=D(m+k)+Pk,
+\]
+
+so `m+k<=e_max/D`. The depth-ten floor and a 48-row monotone parameter certificate prove
+
+\[
+\boxed{
+0\le a\le243,\quad b\ge1
+\Longrightarrow
+\text{no nontrivial positive fixed-weight macro cycle}.}
+\]
+
+The theorem is unbounded in pulse count, macro length, branch count, chronological switching, and repetition length. The first layer not closed by this depth-ten certificate is `a=244`; this is a method boundary, not evidence for a cycle.
+
+Frozen `X-9614` semantic digest:
+
+```text
+296074c8e5f59c11bc1de1c7d0d89084ae79012381ff1d850fb611281fe0cf06
+```
+
+## 5. Ordinary multiplicative-refund funnel
 
 The repository’s direct divergent-orbit programs now share one exact form:
 
@@ -180,8 +255,8 @@ The load-bearing issue is the same in all three: generate the next transported l
 
 ## Collaborator handoffs
 
-Exact cycle packets and Christoffel repair identities are shared with issue #9, PR #42, PR #45, and PR #34. Ordinary refund findings are shared with issues #43 and #46 and with PRs #48, #49, and #51. The phase-1 boundary of issue #39 remains explicit: a permanent phase-1 tail is the original shortcut Collatz map shifted by one, not an extra amplifier.
+Exact cycle packets and Christoffel repair identities are shared with issue #9, PR #42, PR #45, and PR #34. The fixed-weight phase-floor theorem supplies a reusable source/output-cylinder interface for every negative-cycle-derived macro alphabet. Ordinary refund findings are shared with issues #43 and #46 and with PRs #48, #49, and #51. The phase-1 boundary of issue #39 remains explicit: a permanent phase-1 tail is the original shortcut Collatz map shifted by one, not an extra amplifier.
 
 ## Status
 
-No unconditional Collatz counterexample has been found. No `K-####` identifier is assigned. Every finite negative packet and reusable exact reduction is shared rather than kept private.
+No unconditional Collatz counterexample has been found. No `K-####` identifier is assigned. The strongest new finite-cycle result is the all-repetition fixed-weight exclusion through `a=243`; the positive ordinary blocker remains the six-branch least-root decision.
