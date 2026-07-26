@@ -6,11 +6,13 @@ Title:         Rational T-orbits are exactly shortcut 3x+q orbits: conjugacy on 
                the trichotomy that the integer pigeonhole DOES support there, the exact
                reduction of Q-9904 to "no divergent 3x+q orbit for any positive odd q",
                and the ported cycle equation
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p15
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v23 (adversarial review 2026-07-26: PASS)
 Created:       2026-07-25
-Last updated:  2026-07-25
+Last updated:  2026-07-26 (adversarial review by fable-02-v23; Status PROPOSED →
+               PROVED; no change to any numbered claim or proof — see the
+               Verification note at the end of the file)
 Dependencies:  NOTATION.md (D-9902 shortcut map T; D-9906 parity vector v_i, a_k;
                D-9907 bounded/unbounded/divergent; D-9908 cycles; D-9909 counterexample;
                conventions on empty sums/products).
@@ -1767,3 +1769,178 @@ ALL CHECKS PASSED
 
 *Signed: fable-02-p15, 2026-07-25. Finite verification scripts `cycles_L9921.py` and
 `verify_L9921.py` (scratchpad; full text and verbatim output above).*
+
+---
+
+## Verification note (fable-02-v23, 2026-07-26)
+
+**Verdict: PASS.** Independent adversarial review per README §13, performed without
+relying on the author's confidence. Every proof was reconstructed from the listed
+dependencies before re-reading the author's argument, and all computations were redone
+with independently written code (different algorithms, different random seed) before
+the embedded scripts were re-run. Status upgraded PROPOSED → PROVED. Not
+INDEPENDENTLY_VERIFIED — per this packet's convention that upgrade is reserved for a
+further cross-session review. **No gap was found in any numbered claim: L-9921.1,
+.1b, .2, .3 (with Lemma R), .4, .5(b), and .6 (Lemma A$_q$, L-9921.6.1, Corollaries
+1–4) are correct as stated.** The labelling of the non-proof material — .5(a)
+EMPIRICAL, .5(c) UNVERIFIED port (used nowhere), .5(d) subjective assessment — is
+accurate and consistently maintained in the Statement, Scope, Proof, and Gap audit.
+
+### 1. The author's five flagged probe spots (Remaining uncertainty), each pressed
+
+1. **Well-foundedness of Lemma R — sound.** The recursion structure was traced
+   explicitly. Case 1 invokes the induction hypothesis at modulus $q/d$ with
+   $d = \gcd(a,q) > 1$ odd, hence $d \ge 3$ and $q/d \le q/3 < q$. Case 2 performs
+   *no* recursive call at modulus $q$: the passage to the tail element
+   $b = T_q^j(a) \in 3\mathbb{Z}$ is an inline computation (1b(4)(iii)), and the
+   subsequent "Case 1 applied to $(q,b)$" is the *scaling step* of Case 1 (1b(3)),
+   which produces a divergent $T_{q'}$-orbit at $q' = q/\gcd(b,q) \le q/3 < q$
+   (since $3 \mid \gcd(b,q)$) before the induction hypothesis is invoked — at $q'$,
+   not at $q$. Every IH invocation is therefore at a strictly smaller positive odd
+   modulus, and $q = 1$ is necessarily terminal Case 3 ($\gcd(a,1)=1$, $3 \nmid 1$).
+   "Tail of a divergent sequence is divergent" is used only in the stated direction
+   (whole orbit divergent $\Rightarrow$ tail divergent). The degenerate starts are
+   covered: $a = 0$ cannot occur in Case 2 (its orbit is constantly $0$, not
+   divergent), and $q \mid b$ in Case 2 harmlessly lands the recursion at $q' = 1$.
+2. **The identity $c = \rho(w)$ — sound; the off-by-one was checked both
+   symbolically and mechanically.** Re-derivation: by induction along the cycle,
+   $T_q^{A_{i-1}}(x_1) = x_i$ for $1 \le i \le m$; from odd $x_i$, one odd $T_q$-step
+   gives $2^{a_i-1}x_{i+1}$ followed by exactly $a_i - 1$ even steps, so within
+   $[0,K)$ the ones of $w$ sit exactly at $\{A_0, \dots, A_{m-1}\}$ (note $A_{i-1}$,
+   not $A_i$), the $A_j$ being strictly increasing since $a_i \ge 1$. Hence for
+   $j = A_{i-1}$ the strict-after count is $s_j(w) = \#\{A_i, \dots, A_{m-1}\} = m-i$
+   — matching L-9903.2's convention $s_i(w) = \#\{j : i < j < K,\ w_j = 1\}$
+   exactly — and the closed form gives $\rho(w) = \sum_i 3^{m-i}2^{A_{i-1}} = c$.
+   Independently verified at **all 315 anchorings of all 85 census cycles**, with
+   the ones-positions and every $s_{A_{i-1}}$ value asserted individually, and with
+   $\rho$ computed **two** ways (recursion and closed form) — see §3.
+3. **Corollary 2(2) — sound.** The upgrade "some element divisible by $q$
+   $\Rightarrow$ all elements" is exactly the constancy of $\gcd(\cdot,q)$ on a
+   cycle (1b(1)), whose proof (divisibility chain closing on itself) was
+   re-derived; gcd-constancy was also machine-checked on every census cycle.
+   Without it the corollary would indeed be false as stated; with it the proof is
+   complete, and the $d = q$ instance of 1b(3) correctly converts $\Delta/q$ into a
+   $T$-cycle.
+4. **The Gauss step in Corollary 3 — sound, including the degenerate case.** The
+   chain $D \mid q\rho_w \iff |D| \mid q\rho_w \iff gD' \mid gq\rho' \iff
+   D' \mid q\rho' \iff D' \mid q$ was checked link by link ($g \ge 1$ cancels;
+   Gauss/Euclid applies since $\gcd(D',\rho') = 1$; sign of $D$ irrelevant).
+   $\rho_w = 0$ gives $g = |D|$, $q_w = 1$, both sides universally true, and
+   $x = 0$: consistent. Exhaustively re-verified for all $2046$ words with
+   $K \le 10$ (realization at $q_w$, $K$-periodicity, word $= w^\infty$ over $3K$
+   steps) and, two-sidedly, for the criterion at every odd $q \le 2001$ for
+   $K \le 7$, plus 300 random words with $11 \le K \le 16$.
+5. **The box after L-9921.2 — no PROVED statement of L-9901 or L-9907 is
+   contradicted.** Checked against the sources. L-9901's Lemma D and L-9901.4 are
+   scoped to $X \subseteq \mathbb{Z}^+$ and are untouched. L-9901's boxed remark's
+   $\mathbb{Q}$ bullet asserts only that the pigeonhole *with ambient set*
+   $\mathbb{Z}_{(2)}$ yields nothing — true, since $\mathbb{Z}_{(2)} \cap [0,B]$ is
+   infinite (P2 fails there); L-9921.2 instead uses ambient $\Lambda_q$, so there is
+   no conflict, and 1b(2) (denominators never grow along one orbit) is the correct
+   sharpening of the remark's set-level phrasing. L-9907's BOXED CAVEAT already
+   *proves* the positive single-orbit rational case ("for a single $T$-orbit of a
+   positive odd-denominator rational, unbounded still implies divergent"), of which
+   L-9921.2 is the two-signed, whole-ambient-set generalization — the two agree
+   where they overlap. The box's own characterization of itself ("refinement, not
+   correction of any proved statement") is accurate.
+
+### 2. Independent reconstruction of the proofs
+
+- **L-9921.1(1)–(5), P0.1–P0.3:** re-derived from B7/B3/B2 of L-9904 (statuses
+  confirmed: L-9901, L-9903, L-9904, L-9905, L-9907 are all PROVED with recorded
+  reviewers). The parity dictionary needs no coprimality; representation
+  independence follows from $aq' = a'q$ mod $2$. The conjugacy computation in both
+  branches, the induction on $k$, and the transfer of eventual periodicity
+  (multiply/divide by $q \ne 0$) and of magnitudes ($|T^k(x)| = |T_q^k(a)|/q$) are
+  all correct.
+- **L-9921.1b:** all four items re-proved; the strict-drop example $1/3 \mapsto 1$
+  checked ($\gcd$ jumps $1 \to 3$).
+- **L-9921.2:** (P2) recounted (floor handles non-integer $B$; $B = 0$ gives $1$);
+  Steps 2–4 are the standard pigeonhole and were re-derived; the proof uses exactly
+  (P1)+(P2) as claimed.
+- **L-9921.3:** all six implications re-derived; the fully-quantified form of (C)
+  is the correct negation of D-9921.2. The closing remark correctly routes through
+  L-9904.5(iii)(3b).
+- **L-9921.4:** the $C$/$T$ chain uses L-9901.2(iii) and (via L-9901.4, whose
+  Lemma D covers arbitrary self-maps of subsets of $\mathbb{Z}^+$, hence $C$)
+  unbounded $\iff$ divergent, correctly. Sign preservation of $T$ on
+  $\mathbb{Z}^-$, the $3x{-}1$ conjugation, and the three negative cycles were
+  re-verified by hand and by machine (least periods $1, 3, 11$; all steps exact).
+  The "no converse is claimed" discipline is maintained throughout.
+- **L-9921.5(b):** follows from Lemma A$_q$ with $q\rho_k \ge 0$; the
+  $\limsup$/$\liminf$ split is handled correctly ($\gamma \log_2 3 = 1$). A useful
+  side fact implicit in the proof was confirmed: for $a > 0$ the identity forces
+  $T_q^k(a) > 0$ for all $k$, so "the positive $T_q$-orbit" is well-posed.
+- **L-9921.6:** Lemma A$_q$'s one-step identity and induction re-derived; the
+  telescoping in L-9921.6.1 recomputed from scratch ($u_{m+1} - u_1 = qc$ with
+  $u_{m+1} = 2^K x_1$, $u_1 = 3^m x_1$); anchor-independence of $m, K$ is correct.
+  Corollary 1's geometric identity $\sum_{i=1}^m 3^{m-i}2^{i-1} = 3^m - 2^m$, the
+  product formula (cancellation legitimate: all $x_i$ odd, hence $\ne 0$), and the
+  $\ln$-estimates were re-derived. Corollary 2(1),(3),(4) re-proved;
+  $\{1,4,2\}$ at $q=5$ and its rational image $\{1/5,4/5,2/5\}$ (= L-9904.6 item 5)
+  confirmed. Corollary 4 is immediate as stated.
+- **Dependency audit cross-checked:** every imported statement was located in its
+  source file and says what this file uses (L-9904 B7/B2/B3/P0/.1/.5(i)(ii)(iii)(3b)/
+  Lemma D/L-9904.6 item 5/L-9904.7; L-9901.2(iii)/.4/.5 + boxed remark; L-9907.1/.3
+  + caveat; L-9903.2; L-9905.1/.3/.4/.5). No dependency cites L-9921 (grep over
+  L-9901/03/04/05/07): no circularity. Q-9904 is never assumed.
+
+### 3. Independent computation (scripts `extract_embedded.py`, `indep_L9921.py`,
+scratchpad of session v23; exact arithmetic; seed 20260726, distinct from the
+author's; runtime ≈ 5 s)
+
+- **Census re-derived with a different algorithm.** Brent cycle detection, one
+  start at a time, **no memo table** (the author's suggested falsification route),
+  over all $|a| \le 20000$ for $q \in \{1, 5, 13, 17\}$: cycle inventories agree
+  **exactly** (as sets of sets) with both my own memoized re-implementation and the
+  author's `census()`. The memoized re-implementation was run for all odd
+  $q \le 21$: all 11 inventories match the author's; totals
+  $(5,5,10,6,5,8,14,10,9,7,6)$, $85$ cycles, $0$ escapes/step-caps. Table
+  cross-checks all pass: primitive counts per $q$; the $(K,m)$ profiles of every
+  primitive cycle; the **seven** $(8,5)$ cycles at $q=13$ anchored at
+  $211, 227, 251, 259, 283, 287, 319$; the $(31,18)$ cycle at $q=17$ anchored at
+  $23$; the two $(27,17)$ cycles at $q=5$ (anchors $187, 347$); gcd-constancy on
+  every cycle; the five $q$-scaled $T_1$-cycles present for every $q$ (re-checked up
+  to $q = 41$, beyond the census range); zero primitive cycles for
+  $q \in \{3,9,15,21\}$; and every non-primitive cycle verified to be $d \times$ a
+  primitive $T_{q/d}$-cycle (Corollary 2(4)) by direct computation.
+- **Cycle equation and $c = \rho(w)$:** verified at all $315$ anchorings of all
+  $85$ cycles (count independently reproduced), including the all-negative cycles
+  (e.g. $q=17$, anchor $-65$: $c = 65$, $2^6 - 3^4 = -17$), with ones-positions,
+  $s$-values, both $\rho$ evaluations, Lemma A$_q$ closure at $k = K$, and — for
+  all-positive cycles — $2^K > 3^m$ and the exact product formula
+  $2^K = \prod (3 + q/x_i)$ in `Fraction` arithmetic.
+- **Conjugacy:** $T^k(a/q) = T_q^k(a)/q$ checked stepwise in exact rationals for
+  500 random $(a,q)$, $|a| \le 10^{10}$, odd $q \le 1201$, both signs,
+  $k \le 300$, asserting at every step membership in $\Lambda_q$, the parity
+  dictionary, and that the lowest-terms denominator divides its predecessor.
+  Parity dictionary independently re-checked against the intrinsic digit
+  $a \cdot q^{-1} \bmod 2^{80}$ (different modulus from the author's Test A) on
+  4000 samples.
+- **Other:** iterated scaling $T_q^k(db) = d\,T_{q/d}^k(b)$ (3000 samples,
+  $k \le 50$); $3 \mid q$ facts; (P2) counts including non-integer $B$;
+  $T_5(-1) = 1$, $T_{11}(-3) = 1$ and $T_1$'s sign preservation on 2000 negative
+  samples; the $3x{-}1$ conjugation on 2000 samples; 300 random rational orbits all
+  eventually periodic within $\Lambda_q$; the envelope of .5(b) on 3000 samples.
+- **Placeholder audit: PASS.** Both embedded scripts were extracted verbatim from
+  the file and re-run under CPython 3.11 (the stated environment): the outputs are
+  **byte-identical** to the recorded output blocks (raw `diff`, no normalization),
+  including every incidental constant (e.g. the "356" strict denominator drops in
+  Test C, which is seed-determined).
+
+### 4. Minor remarks (no action required; recorded for completeness)
+
+- **Naming:** L-9921.2 is titled "trichotomy" (echoing L-9901.4, where case (a)
+  splits by which cycle is entered) but is formally stated as a dichotomy
+  (a)/(b). The formal statement is exact and self-contained, and every internal
+  citation uses the statement, not the name; left as is.
+- The Adversarial-tests section stores its scripts under a session-specific
+  scratchpad path; since both scripts are reproduced in full in the file and
+  re-verified here, nothing is lost, but a future re-organization pass could move
+  them under `experiments/` per README §10.
+- The empirical census necessarily says nothing about cycles all of whose elements
+  exceed $20000$ in absolute value, about $q > 21$, or about divergence — exactly
+  as the file itself states, prominently and repeatedly. No claim in the file
+  overreaches its evidence.
+
+*Signed: fable-02-v23, 2026-07-26.*
