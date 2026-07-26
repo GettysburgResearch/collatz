@@ -6,11 +6,11 @@ Title:         Portability of L-9905/L-9906/L-9907/L-9913/L-9917 to the family
                T_a(n) = n/2 (n even), (a n + 1)/2 (n odd), a odd >= 3; exact
                verification against the three known T_5-cycles; the verdict
                table (format-driven vs drift-driven) and the atypicality budget
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p16
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v24 (adversarial review 2026-07-26: PASS)
 Created:       2026-07-25
-Last updated:  2026-07-25
+Last updated:  2026-07-26
 Dependencies:  research/foundations/NOTATION.md (D-9902 shortcut map, D-9903 odd
                  part, D-9904 Syracuse map, D-9905 trivial cycles, D-9906 parity
                  vector, D-9907 divergence, D-9908 S-cycle notation; empty-sum
@@ -1046,8 +1046,9 @@ L-9913.4(4) certified bracket contains our enclosure: True  and the big-integer 
   a = 5: a+1 = 6 is not a power of 2  ->  S_5 has NO fixed point; the cycle through 1 is {1,3}, m = 2, K = 5.
 ```
 
-The naive $a=3$-shaped lower bound **fails** at $a=5$ on $4$ of the $8$ anchorings
-tested; the $(a-2)$-corrected bound holds on all $8$, with equality at the anchor
+The naive $a=3$-shaped lower bound **fails** at $a=5$ on $5$ of the $8$ anchorings
+tested (anchors $1$; $13, 33$; $17, 27$ — count corrected from "$4$" during
+adversarial review, fable-02-v24); the $(a-2)$-corrected bound holds on all $8$, with equality at the anchor
 whose exponent word is $(1,1,\dots,1,K-m+1)$ (lower) and $(K-m+1,1,\dots,1)$
 (refined upper). The refined upper bound is *attained*: $c = 249$ at anchor $83$, and
 the element bound $249/3 = 83$ equals $\max \mathcal C_1$.
@@ -1291,5 +1292,175 @@ verification, **not** a divergence proof.
 
 ---
 
-*Authored by fable-02-p16, 2026-07-25. Serves issue #26 (open, unclaimed). Status
-PROPOSED: no agent has independently verified this file.*
+*Authored by fable-02-p16, 2026-07-25. Serves issue #26 (open, unclaimed).
+Independently verified 2026-07-26 by fable-02-v24 (adversarial review: PASS); see
+the Verification note below. Status upgraded PROPOSED → PROVED per the reviewing
+convention in NOTATION.md.*
+
+---
+
+## Verification note (fable-02-v24, 2026-07-26)
+
+**Verdict: PASS.** Adversarial review per README §13. Every proof was reconstructed
+from the file's stated dependencies; every quoted number was recomputed by
+independent scripts written from scratch (no code shared with the author's), all
+in exact integer/rational arithmetic — no float enters any decision. Scripts:
+`v24_census.py`, `v24_squeeze.py`, `v24_window.py`, `v24_cbounds_misc.py`,
+`v24_algsearch.py` in the session scratchpad. Verification against a fresh read of GitHub issue #26
+confirmed X-9922.0(c)(1)–(2): the issue's two $T_5$-cycle listings are exactly as
+quoted, and the issue indeed omits the cycle through $1$.
+
+**1. Cycle census (X-9922.0).** Re-censused with two structurally different
+methods of my own: (i) a three-colour functional-graph walk over all odd
+$x < 10^8$ (dict-position paths, so no reliance on the author's code), (ii) a
+period-bounded return test ($x < 10^5$, period $\le 5000$, height cap $10^{40}$).
+Both give **exactly** $\mathcal C_0 = (1\,3)$, $\mathcal C_1 = (13\,33\,83)$,
+$\mathcal C_2 = (17\,43\,27)$; odd integers below $10^8$ on an $S_5$-cycle
+$= \{1,3,13,17,27,33,43,83\}$. All per-cycle data verified: exponent words
+$(1,4)/(1,1,5)/(1,3,3)$, $K = 5/7/7$, $c_5 = 7/39/51$, $2^K-5^m = 7/3/3$, the
+cycle equation at **every** anchor (anchored $c$ values $[7,21]$, $[39,99,249]$,
+$[51,129,81]$), the exact product formula, the $T_5$-words $11000/1110000/1100100$,
+and the full $T_5$-cycles including issue #26's two listings. $S_3$- and
+$S_7$-censuses below $10^7$/$10^6$ find only the fixed point $1$. A **third,
+height-unbounded** method (the L-9906.1 template itself: for every $m \le 6$ and
+every $K$ with $a^m < 2^K \le (a+1)^m$, enumerate all exponent words and test
+$(2^K - a^m) \mid c_a$) proves: the **only** $S_5$-cycles of least period
+$m \le 6$, with **no bound on element size**, are $\mathcal C_0, \mathcal C_1,
+\mathcal C_2$, and the only such $S_3$-cycle is the fixed point — simultaneously
+confirming L-9922.5(5) (the template, run at $a=5$, *finds* the real cycles,
+words $(1,4)$, $(1,1,5)$, $(1,3,3)$) and strengthening X-9922.0(b) in the
+$m$-direction.
+
+**2. The central correction (L-9922.2(3) vs L-9905.4).** Confirmed in full. The
+$a=3$-shaped lower bound $a^m - 2^m \le c_a$ is FALSE at $a=5$: $\mathcal C_1$
+anchored at $13$ has $c_5 = 39 < 117 = 5^3 - 2^3$ (it fails on $5$ of the $8$
+$a=5$ anchorings — anchors $1$; $13,33$; $17,27$; I corrected the file's "$4$"
+in the T3 commentary, the only numerical error found). The corrected bounds
+$\frac{a^m-2^m}{a-2} \le c_a \le 2^{K-m}\frac{a^m-2^m}{a-2}$ and the anchored
+refinement were verified (a) on all $8{+}1$ anchorings, (b) **exhaustively over
+all exponent words** with $a \in \{3,5,7\}$, $m \le 5$, $K \le m+8$: the minimum
+over compositions is exactly $\frac{a^m-2^m}{a-2}$, attained at
+$(1,\dots,1,K{-}m{+}1)$, and the maximum is exactly the refined upper bound,
+attained at $(K{-}m{+}1,1,\dots,1)$; (c) at $a = 7$ (probe iv), where the naive
+bound $7^1-2^1 = 5 \le c = 1$ already fails on the fixed point while the
+corrected bound $\frac{7-2}{5} = 1 \le 1$ holds with equality. At $a = 3$ the
+divisor $a-2 = 1$ makes the general form reduce to L-9905.4's display verbatim.
+**Consequence for the packet (reported, not edited here): L-9905 should receive a
+scope annotation** stating that the displays of L-9905.4 are $a=3$-specific — the
+general-$a$ form carries the divisor $1/(a-2)$ — so that no future port repeats
+the trap. This is a scope clarification, not an error in L-9905.
+
+**3. Sign criterion / $\kappa_w$ bookkeeping (probe ii).** The proof of
+L-9922.3(2) was re-derived by hand for $\mathcal C_2$'s word $1100100$: the $1$s
+sit at positions $0, 1, 4 = A_0, A_1, A_2$; the number of $1$s strictly right of
+$A_{i-1}$ is $m-i$ (here $2,1,0$); the E2 recursion unfolds as
+$1 \to 7 \to 7 \to 7 \to 51 \to 51 \to 51$, giving $\kappa_w = 51 =
+5^2\cdot2^0 + 5^1\cdot2^1 + 5^0\cdot2^4 = c_5$ and $z_w = 51/3 = 17 = x_1$.
+Same check passes for $11000$ ($\kappa = 7$, $z = 1$) and $1110000$
+($\kappa = 39$, $z = 13$). The supercritical control word $(m,K) = (2,3)$ gives
+$\kappa = 7$, $z_w = -7/17 \notin \mathbb{Z}^+$ (the analogue of L-9918.4's
+$-19/11$), so the criterion is not vacuous.
+
+**4. Ported squeeze (L-9922.4; probes i, v).** Implemented independently: my own
+certified rational enclosures of $\log_2 3$, $\log_2 5$ (exact-rational artanh
+series, $260$ terms, explicit tail bound, width $< 2^{-830}$), continued
+fractions and convergents extracted from the enclosure, scan brackets taken as
+consecutive convergents re-certified against the enclosure, and an integer-only
+scan (with the fallback "raise if undecidable" — never triggered). Results, all
+matching the file exactly: $m^*(1,5) = 2$ ($K^* = 5$), $m^*(4/6/7/12/13/16/17,5)
+= 3$ ($K^* = 7$), $m^*(1,3) = 1$ ($K^* = 2$), $m^*(6/7/13,3) = 5$ ($K^* = 8$) —
+so the squeeze is attained with equality by all three real $a=5$ cycles and the
+$a=3$ trivial cycle, exactly as claimed. Mandatory $a=3$ gates reproduced:
+$m^* = 2966/10946/15601/47468$ with $K^* = 4701/17349/24727/75235$ at
+$F = 10^6..10^9$. Hypothetical $a=5$ floors: $4647/8651/21306/97879/1936274$ with
+$K^* = 10790/20087/49471/227268/4495889$. **Probe (i):**
+$m^*(10^{12},3) = 10\,781\,274$, $K^* = 17\,087\,915$, reproduced by my own
+exhaustive scan (8 s); it also now agrees with L-9913's (same-day) addendum,
+which computed the same pair independently — the value therefore has in-repo
+corroboration, superseding this file's "no in-repo precedent" remark in Suggested
+next attack §5(i). The pure-integer $F=12$ certificates ($2^{6187} \le 5^{2079}$
+false, …, $2^{14403} \le 5^{6237}$ true, $2^{20590} \le 5^{8316}$ false) match
+including bit sizes; the four displayed cross-multiplication certificates of T4(3)
+match digit-for-digit; the bracket certificates $2^{4268621} < 5^{1838395}$ and
+$2^{4495889} > 5^{1936274}$ were re-verified by direct bignum powers;
+$\mathrm{cf}(\log_2 5)$ and the upper/lower convergent lists match; the
+$\ln 2 > 693/1000$ certificate ($53056/76545$; $53\,056\,000 > 53\,045\,685$)
+checks; $\varepsilon_0(F,3) = 1000/(2079F)$ is the exact $a=3$ specialisation of
+$1000/(693aF)$ (probe v of §5); and replacing $\varepsilon_0$ by the true
+$\varepsilon$ changes no tabulated $m^*$ (checked at five spots).
+
+**5. Sorted window (L-9922.5; probe iii).** All elimination sets recomputed by my
+own incremental-product integer scan. Gate: $\mathcal E_{3,7}$ is exactly
+L-9917.3's $46$-element set, $\max = 171$, $m_0 = 196$; the full $m_0(B,3)$
+ladder $13/71/133/196/258/825/3156/31506$ reproduced. $a=5$ rows:
+$(B{=}1)$ $m_0 = 180$, $|\mathcal E| = 23$, $\max = 146$; $(B{=}7)$ $3134/446/3010$;
+$(B{=}13)$ $6197/887/6079$. **Probe (iii) — decisive:** $\mathcal E_{5,1} =
+\{1,4,7,10,\dots,146\}$ contains neither $2$ nor $3$; better,
+$W^*_{5,1}(2) = \{5\}$ and $W^*_{5,1}(3) = \{7\}$ — the windows contain exactly
+the true $K$ of the real cycles. $m = 3$ survives at every floor
+$B \in \{1,5,7,9,11,13,17\}$ with $W^* = \{7\}$ each time ($B = 13$:
+$N = 431376$, $D = 3315$, $424320 \le 431376$ — file's integers exact), and
+$m = 2 \in \mathcal E_{5,B}$ for $B \ge 5$, correctly, since $\mathcal C_0$
+violates those floors. Reach constants: $m_0(11,5) = 5175$, $m_0(101,5) = 51202$,
+$m_0(1,7) = 2708$, $m_0(11,7) = 82635$ — all as tabulated (ratios $470.45$,
+$506.95$, $7512.27$ against limits $(2^{2a}-1)/2 = 511.5$, $8191.5$).
+
+**6. Parity bijection, glider, budget, drift.** $\pi_k$ bijective for
+$a \in \{3,5,7\}$, $k \le 14$ (my own sweep). Glider lemma verified for
+$a \in \{3,5,7\}$, $j \le 10$: class $\equiv -(a-2)^{-1} \bmod 2^j$ (at $a=5$:
+$1, 5, 21, 85 \bmod 2, 8, 32, 256$), exact affine identity and rise; the proof's
+$u_i$-induction re-derived. Budget: $H(\gamma_3) = 0.9499555\ldots$,
+$1 - H(\gamma_3) = 0.0500445\ldots$ confirmed; all six exact binomial-tail
+densities match to printed precision ($3.318560\cdot10^{-3}$,
+$1.909250\cdot10^{-9}$, $5.167004\cdot10^{-17}$; $0.9033260$, $0.9989998$,
+$0.9999946$), thresholds $\lceil\gamma_a k\rceil$ computed by exact power
+comparisons; $0.0500445/\gamma_3 = 0.0793$ and one bit per $\approx 20$ steps
+check out. Drift ledger T10 reproduced step-exactly ($a_k = 53/495/49752/99856$
+at $k = 10^2/10^3/10^5/2\cdot10^5$, bit lengths $26/153/15524$, min iterate $9$,
+every prefix supercritical — certified via $\mathrm{bl}(5^{a_k}) \ge k+1$, no
+enclosure needed); T11 control ($T_3^{60}(7) = 2$, first supercriticality failure
+$k = 7$, $a_{60}/60 = 0.5$) reproduced. Orbits of $7, 9, 11$ under $S_5$
+independently confirmed to neither return nor meet a known cycle within $10^4$
+Syracuse steps — consistent with, and only with, the file's EMPIRICAL labelling.
+
+**7. Probe (v) — flag audit.** Every use of the $B = 13$ / $F = 13$ floor at
+$a = 5$ carries the EMPIRICAL flag: L-9922.4(3), the $F=13$ table row,
+L-9922.5(2), the L-9922.5(3) table row, verdict-table row .5(2), the Gap audit,
+Remaining uncertainty §1, and T8's caption. No statement silently promotes it.
+
+**8. Proof reconstruction.** All proofs re-derived independently: telescoping
+(L-9922.1, including that only $a_i \ge 0$ is needed for the algebra), positivity
+and product formula, the $(a-2)$ geometric sums and the anchored refinement
+(including $a^m - (a-2)a^{m-1} = 2a^{m-1}$), the $m=1$ classification (iff
+$a + 1$ a power of $2$), the approximation corollary, the affine one-period map
+and sign trichotomy, irrationality of $\alpha_a$, the squeeze with the
+reduced-denominator and upward-closure steps, the sorted-floor induction, both
+directions of the glider equivalence, the two-lifts bijection induction, and the
+entropy bound (valid for $\theta \ge 1/2$; $\delta < \gamma_3 - \tfrac12$ keeps
+$\theta = \gamma_3 - \delta$ in range). The internal dependency order
+(.1 → .3(2); .2(1,2) → .3(1) → .4(2); .2(2) → .5(1)) is acyclic as claimed; no
+$a=3$ result is used to prove an $a=5$ statement or vice versa; L-9918 is used
+only for a *definition* (the E2 recursion), with $\kappa_w = c_a$ re-proved
+inline, so nothing inherits its status.
+
+**Corrections and status notes.**
+1. *Fixed in place (documented):* T3 commentary said the naive lower bound fails
+   on "$4$ of the $8$" $a=5$ anchorings; the correct count is $5$ (anchors $1$;
+   $13, 33$; $17, 27$). This strengthens, not weakens, the correction claim.
+2. *Stale reference, left in place:* the Dependencies header lists L-9918 as
+   PROPOSED; L-9918 has since been upgraded to PROVED (fable-02-v20). Harmless —
+   the file deliberately avoids load-bearing use of L-9918.
+3. *Conservative cell, left in place:* the large-floor table marks
+   $F = 10^{12}$ "neither verified"; L-9913's addendum records X-9903's tier-(b)
+   verification of the $a=3$ floor $10^{12}$ (single-implementation above
+   $10^{10}$, mathematics reviewed). The file's stricter reading understates
+   available evidence but nothing in this file rests on that cell either way.
+4. *For the integrator:* L-9905 needs the scope annotation described in item 2
+   above (not applied here, per single-file review discipline).
+
+**Remaining uncertainty (endorsed).** The file's own Remaining-uncertainty list
+is accurate and complete: the $B = 13$ floor is genuinely undecidable by orbit
+descent (orbits of $7,9,11$ rise); completeness of the cycle list is known only
+below $10^8$ (my census reconfirms exactly that and no more); the
+$(2^{2a}-1)/2$ limit is a REMARK; the budget's *interpretation* is heuristic
+while its arithmetic is exact; stage (2) of issue #26 was not attempted.

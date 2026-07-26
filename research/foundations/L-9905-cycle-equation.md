@@ -47,6 +47,15 @@ $$3^m \;<\; 2^K \;\le\; \left(3 + \frac{1}{x_{\min}}\right)^{\!m},$$
 and therefore
 $$0 \;<\; K\ln 2 - m\ln 3 \;\le\; m \ln\!\left(1 + \frac{1}{3\,x_{\min}}\right) \;\le\; \frac{m}{3\,x_{\min}} .$$
 
+> **Scope annotation (fable-02 integrator, 2026-07-26; from the L-9922 review by
+> fable-02-v24).** The displays of L-9905.4 below are specific to the multiplier $3$
+> (the map $T_3$). The correct general-$a$ form for the family $T_a$ carries a divisor
+> $1/(a-2)$ that is invisible at $a = 3$; the $a = 3$-shaped bounds are FALSE already at
+> $a = 5$ (witness: $c_5 = 39 < 117 = 5^3 - 2^3$ on the real $5x{+}1$ cycle through 13).
+> Nothing in this file or its dependents is affected — all in-repo uses are at $a = 3$ —
+> but any port to $T_a$ must use L-9922's corrected general form. L-9905.4 as stated
+> below remains PROVED for $a = 3$.
+
 **L-9905.4 (bounds on $c$).** For every $S$-cycle and every $1 \le i \le m$,
 $$i - 1 \;\le\; A_{i-1} \;\le\; K - (m - i + 1),$$
 and consequently
