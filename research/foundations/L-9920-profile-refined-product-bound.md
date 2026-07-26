@@ -6,11 +6,11 @@ Title:         Per-class (mod 2^{t+1}) spacing of same-exponent cycle elements, 
                profile-refined product bound 2^K <= Q(m,K), the exact 48-value
                elimination set (L-9917's 46 plus m = 13 and m = 79), the exact
                threshold m0' = 208, and the NULL verdict in the large-floor regime
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p14
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v22 (adversarial review 2026-07-26: PASS)
 Created:       2026-07-25
-Last updated:  2026-07-25
+Last updated:  2026-07-26
 Dependencies:  NOTATION.md (D-9903 odd part, D-9904 Syracuse map S and step exponent
                a(x) = nu_2(3x+1) >= 1, D-9905 trivial cycle (1), D-9908 S-cycle
                notation x_1 -> ... -> x_m -> x_1, least period m, a_i, K = sum a_i,
@@ -124,9 +124,19 @@ improve it.**
    $$W'(m) = \varnothing \;\Longrightarrow\; \textbf{no nontrivial } S\textbf{-cycle has least period } m .$$
    Note that $K$ is **determined by the profile**, not a free parameter.
 2. **($K$ is confined to L-9917's window.)** $W'(m) \subseteq W^*(m)$; and for every
-   $m \le 12\,679$, $|W^*(m)| \le 1$ (L-9917.4(5); recomputed here for $m \le 208$ in T9),
-   so at most one $K$ per $m$ has to be examined and the refinement can only turn a
-   singleton window into an empty one.
+   $m \le 208$, $|W^*(m)| \le 1$ (recomputed in T9), so on the whole scan range at most one
+   $K$ per $m$ has to be examined and the refinement can only turn a singleton window into
+   an empty one. *(Correction, fable-02-v22, 2026-07-26: this item originally extended the
+   singleton claim to all $m \le 12\,679$, citing L-9917.4(5). That imported claim is
+   **false**: the least $m$ with $|W^*(m)| = 2$ is $m = 241$, where
+   $W^*(241) = \{382, 383\}$ — exact certificates $2^{381} \le 3^{241} < 2^{382}$ and
+   $2^{383} D(241) \le N(241) < 2^{384} D(241)$; the next is $m = 253$. The error in
+   L-9917.4(5) is a non sequitur: $\mathrm{Wd}(m) < 2$ bits caps a half-open interval of
+   length $< 2$, which can still contain **two** integers. No result of either file
+   depends on the singleton property — T4 examines every $K \in W^*(m)$, the tail
+   $m \ge 208$ uses only L-9920.3(5), and $m = 241$ lies in neither elimination set.
+   L-9917.4(5) itself needs a separate one-line correction, out of this review's file
+   scope; see the Verification note below.)*
 3. **(Finiteness, exactly.)** Put $E := K - m$. Every profile with $\sum_t m_t = m$,
    $\sum_t t\,m_t = K$ satisfies $E = \sum_{t\ge2}(t-1)m_t \ge 0$, $m_t = 0$ for $t \ge E+2$,
    and $m_t \le \lfloor E/(t-1)\rfloor$ for $t \ge 2$. The profile set is therefore finite
@@ -616,7 +626,7 @@ can.
 | Step 3a | cycle elements pairwise distinct | L-9917.1(1) | PROVED (fable-02-v17) | sketch only (2 lines) — **the one imported proof** |
 | Step 4d(iii) | sorted distinct odd $\ge 7$ satisfy $g_k \ge 7+2k$ | L-9917.1(1d) | PROVED | **Yes**, one-line induction |
 | Step 4d(iii), 6a | $P(m) = N(m)/D(m)$, $W^*(m)$, $\mathcal{E}$ (46 values), $m_0 = 196$ | L-9917.2–.4 | PROVED | **recomputed** here (T4, T6) |
-| L-9920.3(2) | $|W^*(m)| \le 1$ for $m \le 12679$ | L-9917.4(5) | PROVED | recomputed for $m \le 208$ (T9) |
+| L-9920.3(2) | $|W^*(m)| \le 1$ for $m \le 208$ (v22 correction: the imported "$m \le 12\,679$" form of L-9917.4(5) is FALSE at $m = 241$; see Verification note) | L-9917.4(5) (defective beyond $m=240$) | PROVED on the range used | recomputed for $m \le 208$ (T9) |
 | Step 7a | cycle elements exceed a verified floor $F$ | L-9913.1 + $(\mathrm{V}_F)$ | PROVED (fable-02-v18) | cited, used only in L-9920.5 |
 | L-9920.5, .6 | $m^*(10^6) = 2966$, $m^*(10^9) = 47468$ | L-9913.5, .10 | PROVED | cited for comparison only |
 | L-9920.6 | $m \le 21$ settled by enumeration | L-9915 | PROVED (fable-02-v10) | comparison only |
@@ -1362,3 +1372,157 @@ above is reproduced byte-for-byte by the script as printed.)*
    value $B$ would move $m_0'$ linearly in $B$ (L-9917.4(6) applies verbatim to $Q$, since
    $Q \le P_B(m)$). No such improvement of the floor is currently available in-repo without
    invoking a finite verification.
+
+---
+
+## Verification note (fable-02-v22, 2026-07-26)
+
+**Verdict: PASS** (independent adversarial review per README §13). Status upgraded
+`PROPOSED` → `PROVED`. One defect found and corrected in place — an imported false side
+remark in L-9920.3(2), detailed in §3 below; it is load-bearing nowhere. Every other
+statement, proof step, constant, and output line checked out exactly.
+
+### 1. What I did (all arithmetic exact; scripts in the reviewer scratchpad: `v22_main.py`, `v22_probes.py`, plus ad-hoc checks)
+
+Independent implementations, deliberately different from the file's:
+
+- **Class floors via CRT, not the $r_t$ case formula.** I derived $\beta_t$ as the least
+  $x \ge 7$ with $x \equiv (2^t-1)\cdot 3^{-1} \pmod{2^{t+1}}$ (modular inverse), verified
+  the file's even/odd $r_t$ formula agrees for all $t \le 148$, and brute-scanned the true
+  minima $\min\{x \ge 7 \text{ odd}: a(x)=t\}$ for $t \le 14$:
+  $(7,9,13,37,53,21,213,85,853,341,3413,1365,13653,5461)$ — identical to the file's list.
+  Dictionary $a(x)=t \iff x \equiv r_t \ (2^{t+1})$ re-verified exhaustively for
+  $t \le 12$ over all odd $x < 2^{16}$ (the file used $2^{15}$). $r_t < 7$ exactly for
+  $t \in \{1,2,4\}$, checked for all $t \le 148$. The classes partition
+  $\{\text{odd } x \ge 7\}$ (checked below $10^5$; my first attempt missed that
+  $\beta_{18} = 87381 < 10^5$ — the partition really does need every class).
+- **$Q(m,K)$ by a different algorithm.** A block-multiplicity DP over classes $t \ge 2$
+  (state = (count, excess), transitions add a *prefix block* of a class), not the file's
+  $0/1$-item knapsack; exact integer pairs, cross-multiplied comparisons, no floats
+  anywhere. Scan extended to $m \le 250$ (file: $208$), $E_{\max} = 147$.
+- **Elimination set.** My scan returns exactly the file's $48$-element set
+  $\mathcal{E}'$, with $\max = 171$, no eliminations in $209 \le m \le 250$; L-9917's
+  $46$-element set (recomputed independently as $\{m : \lambda(m) < \kappa(m)\}$) is
+  contained, and $\mathcal{E}' \setminus \mathcal{E} = \{13, 79\}$ exactly.
+- **$m = 13$ and $m = 79$ by direct profile enumeration, no knapsack** (the assigned
+  probe): all partitions of $E$ enumerated — $22$ profiles at $(13,21)$, $124\,754$ at
+  $(79,126)$ — every $P(\pi)$ computed as an exact rational. Maxima at
+  $\{1{:}7,2{:}4,3{:}2\}$ and $\{1{:}50,2{:}18,3{:}7,4{:}2,5{:}1,6{:}1\}$, exactly the
+  file's profiles; $2^K > Q$ in both cases with ratios $1.005219067$ and $1.008058932$;
+  the $m=13$ certificate integers match digit-for-digit
+  ($2^{21}\mathrm{den} = 42\,160\,477\,185\,047\,789\,568\,000 >
+  41\,941\,581\,246\,154\,670\,080\,000 = \mathrm{num}$); L-9917's same-$K$ near-miss
+  ratios $0.999507595$, $0.999916890$ confirmed (so both really are new eliminations).
+- **Razor-thin threshold comparisons.** $\mathcal{W}(m) = Q(m,\kappa(m))/3^m$ is strictly
+  increasing on $1 \le m \le 250$ (my values), $\mathcal{W}(207) < 2 \le \mathcal{W}(208)$,
+  and the exact ratios at $m = 206, 207, 208$ round to the file's printed
+  $0.9986269986,\ 0.9995490918,\ 1.0001626886$; hence $m_0' = 208$. L-9917's boundary
+  ($0.9999345218$ at $195$, $1.0007740974$ at $196$) also re-confirmed.
+- **Set-level brute force** (probe on Step 4d(ii)): for $11$ pairs $(m,K)$ with pools
+  proved to contain every candidate element, the maximum of $\prod(3+1/x)$ over *all*
+  $m$-element sets of distinct odd $x \ge 7$ with $\sum a(x) = K$ equals my DP's $Q(m,K)$
+  exactly. No set/multiset gap: $\mathcal{Y}(m,K)$ consists of sets by definition, and the
+  cycle's elements form a set by L-9917.1(1); Step 4b/4d(ii) reread carefully — sound.
+- **Step 5c caps re-derived**: $E = \sum_{t\ge2}(t-1)m_t$, so $t \le E+1$ on the support
+  and $m_t \le \lfloor E/(t-1)\rfloor$; the item list $j < \lfloor E_{\max}/(t-1)\rfloor$
+  can only over-provide, never under-provide, so the knapsack is finite AND complete. My
+  partition enumeration at $(13,21)$/$(79,126)$ is an independent completeness witness.
+- **Step 5e exchange lemma re-derived**: $m\alpha \notin \mathbb{Z}$, so
+  $\delta = \kappa(m+1)-\kappa(m) \in \{1,2\}$ ($1 < \alpha < 2$); $A_\delta$ is an
+  infinite arithmetic progression while the maximiser $Y$ is finite, so an unused
+  $x^\ast$ exists in both the $\delta=1$ and $\delta=2$ cases; $Y \cup \{x^\ast\}$ lies in
+  $\mathcal{Y}(m+1,\kappa(m+1))$ and multiplies the product by $3 + 1/x^\ast > 3$. Sound.
+- **Maximiser attainment**: the file's claimed optimal profiles at
+  $m = 8, 13, 79, 171, 208$ reproduce my DP's $Q$ **exactly** (rational equality), and the
+  $(8,13)$ table of all seven profiles matches T7 value-for-value; maximiser
+  $\{1{:}4,2{:}3,3{:}1\}$ with $m_1 = 4$, so the C2 anti-greedy flag is right. At
+  $m = 208$: profile $\{1{:}135,2{:}45,3{:}17,4{:}6,5{:}2,6{:}2,8{:}1\}$, largest element
+  $543$ vs $421$ — as stated in Step 6c.
+- **Large-floor NULL (L-9920.5)**: both displayed profiles re-checked from scratch
+  (constraint sums, distinctness, floors $\ge F+1$, and the exact inequality
+  $3^m < 2^K \le P_F(\pi)$ via tree products) at $(10^6, 2966, K{=}4701)$ and
+  $(10^9, 47468, K{=}75235)$. Both pass, so $m^*(F)$ is unchanged — NULL confirmed; and
+  since every factor is $\le 3+1/(F{+}1)$, the refined bound implies the crude one, so no
+  $m < m^*(F)$ can be revived. Width percentages ($99.68\%/13.99\%$, $99.9948\%/30.92\%$)
+  match.
+- **S-closure observation**: $S(7)=11$, $S(11)=17$, $S(17)=13$, $S(13)=5$ verified; the
+  $m=13$ maximiser $\{7,9,11,13,15,17,19,23,25,27,29,31,33\}$ is not $S$-closed (all
+  violations: $13, 23, 27, 31$), so the ceiling really does leave the closure constraint
+  on the table (Q-9920-A well-posed).
+- **Hypothesis-necessity audit (negative cycles)**: the three cycles regenerated from
+  scratch — $(-1)$, $(-5,-7)$, $(-17,-25,-37,-55,-41,-61,-91)$ with $K = 1, 3, 11$ —
+  product formula, distinctness, dictionary congruences and per-class spacing all hold;
+  positivity and the floor fail, and with them $2^K > 3^m$. Exactly as the Scope claims.
+- **Placeholder audit**: the embedded T1–T9 script extracted verbatim and re-run
+  reproduces the recorded output **byte-for-byte** except the final wall-clock line
+  (47.3 s here vs 29.2 s recorded), precisely as the file's caveat states.
+- **$\beta_t$ correction assessment (C1)**: the file's correction of the coordinator's
+  $\max(7, r_t)$ is **right**: $a(7) = 1$, so $7 \notin A_2 \cup A_4$; the true class
+  minima are $\beta_2 = 9$, $\beta_4 = 37$ ($= r_t + 2^{t+1}$ since $r_2 = 1$, $r_4 = 5
+  < 7$), confirmed by brute scan. The corrected floors are larger, so the bound is
+  stronger; with $\max(7,r_t)$ the "class sets" would not even be subsets of $A_t$.
+
+### 2. Dependency and circularity check
+
+L-9905.2/.3, L-9906.2, L-9912.5, L-9917.1(1)/(1d) are all quoted accurately and (except
+distinctness, which is sketched here and fully proved in L-9917/L-9906 P0) re-derived
+inline correctly; none of those files cites L-9920. L-9913/L-9915 appear only as
+comparison targets. No circularity.
+
+### 3. The one defect (corrected in place, non-load-bearing)
+
+L-9920.3(2) originally asserted, citing L-9917.4(5), that $|W^*(m)| \le 1$ for **every**
+$m \le 12\,679$. This is **false**: $W^*(241) = \{382, 383\}$
+($2^{381} \le 3^{241} < 2^{382}$, $2^{383}D(241) \le N(241) < 2^{384}D(241)$, exact
+integers), and $W^*(253) = \{401, 402\}$; $m = 241$ is the least counterexample (my scan
+of $m \le 250$; $|W^*(m)| \le 1$ does hold for all $m \le 240$). The root cause sits in
+L-9917.4(5): "least $m$ with $\mathrm{Wd}(m) \ge 2$ is $12\,680$" (true, and it does give
+$|W^*| \ge 2$ from $12\,680$ on) was converted into "$|W^*(m)| \le 1$ below $12\,680$",
+which is a non sequitur — an interval of length between $1$ and $2$ can straddle two
+integers. **Impact on L-9920: none.** T4 loops over every $K \in W^*(m)$ (it never
+assumes a singleton), T9's own recomputation honestly claims only $m \le 208$, the
+$m \ge 208$ tail uses only the exchange lemma plus the $m = 208$ comparison, and
+$m = 241 \notin \mathcal{E} \cup \mathcal{E}'$. I have corrected L-9920.3(2) and the
+corresponding Dependency-audit row in place (flagged "Correction, fable-02-v22").
+**Action item for the packet owner:** L-9917.4(5) (file
+`research/foundations/L-9917-sorted-product-bound.md`, Status PROVED) needs the same
+one-line correction — replace "for every $m \le 12\,679$ the sharpened window contains at
+most one integer $K$" by "for every $m \le 240$ ... ($m = 241$ is the first two-element
+window; $\mathrm{Wd}(m) \ge 2$, guaranteeing $|W^*(m)| \ge 2$, first at $m = 12\,680$)".
+That file is outside this review's write scope, so I did not touch it; nothing in
+L-9917's elimination set, threshold $m_0 = 196$, or any downstream use is affected (its
+own T1/T2 scans also examine windows explicitly).
+
+### 4. Boundary cases re-checked
+
+$m=1$ ($W^*$ empty, vacuous elimination; trivial cycle excluded by the floor), $E=0$
+(profile $m_1 = m$, empty knapsack, $D(0,0)=1$), $K=m$ (excluded by POS), strict/non-strict
+sides of the window ($3^m < 2^K \le Q$, elimination iff $2^K > Q$), and the
+$\kappa$/$\lambda$ conventions ($2^{\kappa-1} \le 3^m < 2^\kappa$, equality impossible;
+$\lambda \ge \kappa - 1$ always) — all consistent throughout the file and my scripts.
+
+### 5. Assessment of the headline claims
+
+- $\mathcal{E}' = \mathcal{E} \cup \{13, 79\}$, $|\mathcal{E}'| = 48$,
+  $\max \mathcal{E}' = 171$: **confirmed** (two algorithms here + two in the file).
+- $m_0' = 208$, complete over all $m \ge 1$: **confirmed** (monotonicity proof sound;
+  boundary ratios match to 10 digits).
+- $Q(m,K)$ = exact ceiling of {product formula + positivity + floor 7 + dictionary +
+  distinctness}: **confirmed** as stated — the identification with the set-maximum is
+  proved and brute-verified; the "no further exploitation of these inputs alone" reading
+  is the correct interpretation of a maximum over the full constraint-consistent family.
+- NULL at large floors: **confirmed** with exact witnesses.
+- The file's honest labelling of its two empirical asides (deficit $\to 0.0157$ bits;
+  rate remark) is accurate; neither is used.
+
+Remaining risk after this review: essentially the shared correctness of elementary
+big-integer arithmetic in four independent implementations (two mine, two the file's),
+which agree exactly on every value compared, including three ratios within
+$5 \cdot 10^{-4}$ of $1$. I set Status to PROVED per NOTATION.md conventions
+(one detailed adversarial review); INDEPENDENTLY_VERIFIED is left for a further reviewer.
+
+*Reviewed by fable-02-v22, 2026-07-26. Scripts: reviewer scratchpad `v22_main.py`
+(CRT floors, block DP, $m \le 250$ scan, monotonicity, exact ratio checks),
+`v22_probes.py` (partition enumeration at $(13,21)$/$(79,126)$, T7 table, S-closure,
+negative cycles, maximiser attainment, large-floor witnesses, width gains), plus the
+verbatim re-run of the embedded suite (`embedded.py` / `embedded_out.txt`).*

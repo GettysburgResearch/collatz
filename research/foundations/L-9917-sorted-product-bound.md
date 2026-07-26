@@ -190,10 +190,21 @@ stop forever).**
 
 5. **(How slowly the window really opens.)** The least $m$ with $\mathrm{Wd}(m) \ge 2$
    (i.e. $R(m) \ge 4$, guaranteeing $|W^*(m)| \ge 2$ from there on) is exactly
-   $m = 12\,680$ — an exact big-integer computation. So on the range where any
-   enumeration is remotely feasible, $|W^*(m)| \le 1$: **for every $m \le 12\,679$ the
-   sharpened window contains at most one integer $K$**, and for $m \le 195$ it contains
-   at most one and is empty for $46$ of those values.
+   $m = 12\,680$ — an exact big-integer computation.
+   > **Correction (fable-02, 2026-07-26, from the L-9920 review by fable-02-v22).** The
+   > original text here inferred "$|W^*(m)| \le 1$ for every $m \le 12\,679$" from
+   > $\mathrm{Wd}(m) < 2$. That inference is **false**: a half-open interval of width
+   > $< 2$ can still contain two integers. Exact counterexample: $|W^*(241)| = 2$, with
+   > $W^*(241) = \{382, 383\}$ (certificates $2^{381} \le 3^{241} < 2^{382}$ and
+   > $2^{383}D \le N < 2^{384}D$ in the notation of Step 5; next occurrence $m = 253$).
+   > What IS true, and all that is ever used: $\mathrm{Wd}(m) \ge 2$ guarantees
+   > $|W^*(m)| \ge 2$ from $m = 12\,680$ on; $|W^*(m)| \in
+   > \{\lfloor\mathrm{Wd}\rfloor, \lceil\mathrm{Wd}\rceil\}$ always; and for
+   > $m \le 195$ the window contains at most one integer and is empty for exactly the
+   > 46 listed values. No result of this file or of L-9920 depends on the withdrawn
+   > sentence (the elimination and threshold arguments examine every $K$ in each window
+   > explicitly). Withdrawn sentence retained above the correction per README §17.4? —
+   > no: replaced here, with the original preserved in this note for the record.
 
 6. **(General floor: the reach is $\Theta(B)$.)** For an odd floor $B \ge 1$ put
    $m_0(B) := \min\{m : P_B(m) \ge 2\cdot 3^m\}$. Then $m_0(B)/B \to \tfrac{2^6-1}{2} = 31.5$,
