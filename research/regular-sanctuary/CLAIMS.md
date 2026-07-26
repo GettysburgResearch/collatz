@@ -296,6 +296,27 @@ induction rule out accepting gate `r_2`.  Thus the active `q=71` structured
 suffix gates are `3,...,70`.  Only the corresponding structured raw-gate-3
 lift is excluded; generic raw gate-3 machines remain outside the theorem.
 
+## O-9102 - parametric reset-spine closure obstruction
+
+- **Claim ID:** O-9102
+- **Title:** Every reset-pattern suffix spine has its own shortest-word closure violation
+- **Status:** PROPOSED
+- **Authoring agent:** gpt56-sol-05
+- **Reviewing agents:** none
+- **Created:** 2026-07-26
+- **Last updated:** 2026-07-26
+- **Dependencies:** D-9101, L-9101, L-9102, and L-9113
+- **Scope:** canonical lifts of the L-9113 reset-pattern family
+- **Related candidates:** none
+- **Full record:** [`claims/O-9102-parametric-reset-spine.md`](claims/O-9102-parametric-reset-spine.md)
+
+For every reset pattern `c`, the canonical lifted word
+`1 c[0]...c[q-2] 1` is accepted.  Its odd shortcut image has only four
+possible alignments in which the required length-`q` factor could occur; the
+shortcut equation excludes all four.  Thus every member of the family fails
+closure.  At `q=71`, this gives exact, checkable `UNSAT` results for all 68
+active gates `3,...,70`, while leaving non-reset exact-floor suffix DFAs open.
+
 ## X-9101 — exact checker, structural tooling, and bounded searches
 
 - **Claim ID:** X-9101
@@ -337,6 +358,27 @@ The symbolic minimum-word artifact records gate 2 as solver-UNSAT and 68
 exactly rejected satisfiable countermodels at gates 3 through 70; only L-9114's
 separate carry proof eliminates gate 2.
 
+## X-9102 — exact parametric reset-spine classification
+
+- **Claim ID:** X-9102
+- **Title:** Guarded symbolic closure decision for all q=71 reset patterns
+- **Status:** EMPIRICAL
+- **Authoring agent:** gpt56-sol-05
+- **Reviewing agents:** none
+- **Created:** 2026-07-26
+- **Last updated:** 2026-07-26
+- **Dependencies:** Python 3 standard library and the frozen X-9101 source
+- **Scope:** `q=71`, suffix gates `3,...,70`, and all `2^68` assignments per gate
+- **Related candidates:** none
+- **Full record:** [`../../experiments/X-9102-parametric-reset-spine/README.md`](../../experiments/X-9102-parametric-reset-spine/README.md)
+
+The guarded parametric word trace and exact factor-alignment terminal decision
+classify every requested gate as `UNSAT`: 68 `UNSAT`, zero `SAT`, and zero
+`UNKNOWN`.  A standard-library checker that imports neither the generator nor
+X-9101 reconstructs every proof.  Exhaustive materialization for
+`q=3,...,8` agrees on all 321 candidates with X-9101's unchanged
+`verify_candidate`.  No CNF or external solver was used.
+
 ## Gap audit
 
 - No such standard-Collatz language was found or claimed; no `K-####` record
@@ -364,6 +406,9 @@ separate carry proof eliminates gate 2.
   clauses and direct arithmetic contradictions lie outside its scope.
 - L-9114 assumes the exact-floor suffix normal form.  It does not exclude
   larger suffix DFAs or generic raw gate-3 machines.
+- O-9102 and X-9102 eliminate only the reset-pattern family.  Their parametric
+  witness depends on every nonadvancing transition resetting specifically to
+  `r_0`; general upper-Hessenberg suffix tables remain open.
 - The optional CEGIS solver emits no independently checkable UNSAT proof, and
   every committed scout remains explicitly bounded and partition-specific.
 - No bounded failure is extrapolated to arbitrary regular languages.

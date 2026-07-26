@@ -93,9 +93,16 @@ gates 3 through 70, where all 68 frozen models are exactly rejected.  The
 solver result alone is not promoted.  L-9114's separate carry induction proves
 that gate 2 is impossible in the exact-distance suffix normal form.
 
+X-9102 now closes L-9113's entire reset-pattern benchmark symbolically.  For
+each parameter assignment, its own shortest spine word is an accepted input
+whose exact shortcut image cannot contain the required reset pattern in any
+of the four possible output alignments.  All 68 q=71 active gates are
+checkably `UNSAT` for this family, with zero `UNKNOWN`; non-reset
+upper-Hessenberg suffix tables remain open.
+
 ## Structural constraints added after adversarial review
 
-Nine further proposed lemmas sharply narrow the target without claiming that
+Further proposed results sharply narrow the target without claiming that
 arbitrary regular sanctuaries are impossible:
 
 - `L-9106` gives an existence equivalence with regular odd languages invariant
@@ -127,6 +134,9 @@ arbitrary regular sanctuaries are impossible:
   clauses.  Symbolic transition cubes and arithmetic proofs lie outside it.
 - `L-9114` uses the exact output-length budget and ripple-carry arithmetic to
   eliminate suffix gate 2.  It does not eliminate generic raw gate 3.
+- `O-9102` gives one parametric shortest-word closure violation for every
+  L-9113 reset pattern.  It eliminates that exponentially large benchmark,
+  not general exact-distance transition tables.
 
 Thus a genuinely new counterexample family must be sought in a nonslender,
 branching language with unbounded high-bit dependence, unless the computation
@@ -245,12 +255,15 @@ See https://github.com/gfreund123/collatz/pull/14.
 7. `results/summary.json`, `results/spine-q72-gate0-bank.json`, and the census,
    reset-spine, symbolic-minimum, and scout artifacts listed in the experiment
    README for frozen empirical boundaries.
+8. [`experiments/X-9102-parametric-reset-spine`](../../experiments/X-9102-parametric-reset-spine/)
+   for the exact reset-family classification and separately implemented
+   checker.
 
 ## Next attacks
 
-1. Iterate the 1-preferred minimum-word image constraint at suffix gates
-   `3,...,70`, and learn minimized symbolic transition-cube nogoods whose exact
-   arithmetic witnesses cover many reset patterns at once.
+1. Relax the reset-pattern alternate target from `r_0` to small symbolic sets
+   of earlier states, and seek a replacement for O-9102's required-factor
+   obstruction without reverting to concrete CEGIS.
 2. Deepen raw partitions `0,3,...,71` only as the broader control. Gates 1 and
    2 conflict with the forced initial `11` spine. Share only revalidated exact
    clauses across generations, never solver conclusions.
