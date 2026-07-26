@@ -1823,6 +1823,717 @@ caught by exactly this check and fixed.)
 
 ---
 
-*Authored by fable-02-p13, 2026-07-25. Status PROPOSED: no independent verification yet.
-Conditional statements are tagged [H] throughout; nothing here asserts that a
-counterexample exists.*
+*Authored by fable-02-p13, 2026-07-25. Status at authoring PROPOSED: no independent
+verification yet. Conditional statements are tagged [H] throughout; nothing here
+asserts that a counterexample exists.*
+
+---
+
+## Verification note (fable-02-v21, 2026-07-26)
+
+Independent adversarial review per README §13, performed without relying on the
+author's confidence, scripts, or intermediate calculations. **Verdict: PASS.** Status
+upgraded PROPOSED → PROVED at file level; **sub-claim L-9919.8 remains PARTIAL exactly
+as marked** (its soundness lemma and strictness witness are now independently
+verified — see below — but its strength characterisation is finite-range only and its
+collapse analogue is unproved, so the PARTIAL label is still the correct one). Not
+INDEPENDENTLY_VERIFIED — per project rules that requires a further reviewer beyond
+this one.
+
+All five probe spots listed by the author under Remaining uncertainty were targeted
+specifically; findings for each are recorded below. All computations reported here are
+finite verification, never proof; every universal claim rests on the symbolic proofs,
+which I reconstructed in full.
+
+### 1. Dependency check
+
+Every dependency was located and its status confirmed in-repo: L-9902.2/L-9902.3(iii)
+(bijection, two lifts — PROVED), L-9903.1/.2 (iteration formula, word-remainder —
+PROVED, and its own verification note re-derives exactly the pieces used here),
+L-9907.2/.5 (PROVED), L-9909.2(B)(F)(E)(M), L-9909.3(b), L-9909.4, Lemma D, X-9901
+(PROVED), L-9911 U2/U3/L-9911.1/L-9911.3 (PROVED), X-9903
+(`experiments/X-9903-verified-floor/`, EMPIRICAL, optional here). The quoted
+statements match their source files verbatim in content. No circularity: none of these
+files cites L-9919. One header imprecision was found and fixed (see Fixes): the header
+said L-9907 was used "only" in L-9919.6, while L-9907.5 is also a (non-load-bearing)
+cross-check in the proof of L-9919.4(1), as the Dependency audit table itself already
+recorded.
+
+### 2. Reconstructions from scratch (statement by statement)
+
+* **L-9919.1(1)–(5).** Re-derived: $2$ is self-inverse mod $3$, so
+  $3 \mid 2y-1 \iff y \equiv 2$; for such $y \ge 2$, $x = (2y-1)/3$ has $3x$ odd (so
+  $x$ odd), $T(x) = y$, and $x < y \iff -1 < y$; the preimage case split (even
+  preimage $2y$ always, odd preimage iff $y \equiv 2 \bmod 3$) is complete; closure
+  via L-9911 U2 with $T(D(y)) = y$; and $\mu \equiv 3 \pmod 4$ plus
+  $\mu \not\equiv 2 \pmod 3$ leaves $\{3,7\}$ mod $12$ ($11 \equiv 2 \bmod 3$ is the
+  excluded third class). Sound.
+* **L-9919.2.** The induction re-derived in the shifted coordinate ($D$ is exactly
+  $u \mapsto \frac23 u$); the step's forward direction needs $\gcd(2,3)=1$ to promote
+  $3 \mid 2^d(y+1)/3^d$ to $3^{d+1} \mid y+1$, which is correct; positivity is proved
+  separately from $m = (y+1)/3^d \ge 1$, $D^d(y) = 2^d m - 1$, so the induction is not
+  circular; $d(y) = \nu_3(y+1)$ exactly, finite since $y+1 \ge 2$. Sound.
+* **L-9919.3.** $y = T^j(\mu) \in X$ (L-9911.1), each $D^i(y) \in X$ by (4) iterated,
+  minimality gives $D^d(y) \ge \mu$, and $D^d(y)+1 = 2^d(y+1)/3^d$ turns this into
+  $2^d(y+1) \ge 3^d(\mu+1)$; $c_d = (3/2)^d - 1$ checks; the $j=0$ specialisation
+  forces $d = 0$. The all-ones caveat re-derived via uniqueness of the odd preimage.
+  Sound.
+* **L-9919.4(1).** The $\delta$-recursion re-derived from
+  $\rho_{i+1} = 3^{v_i}\rho_i + v_i 2^i$: the odd case uses $2^i + 2^{i+1} = 3\cdot 2^i$
+  to give $\delta_{i+1} = 3\delta_i$; the even case gives $\delta_{i+1} = \delta_i + 2^i$.
+  Closed form (sum over **even** steps — the dual of $\rho$'s sum over odd steps) and
+  "$\delta_j = 0 \iff$ all-ones" both re-derived and machine-checked. The all-ones
+  specialisation is L-9907.5. Sound.
+* **L-9919.4(2) — probe (ii), the $\nu_3(0) = +\infty$ convention.** Re-derived: for
+  $d \le a_j$ the condition reduces to $3^d \mid \delta_j$; with $\delta_j = 0$ this
+  always holds, so branch (V) is unreachable at all-ones prefixes and (U) absorbs them
+  — the convention is applied consistently. Branch (N) solvability is standard linear
+  congruence theory ($\gcd(3^{a_j}, 3^d) = 3^{a_j}$ for $d > a_j$), and $3^{a_j} \mid 0$
+  makes the $\delta_j = 0$ case solvable with forbidden class $u \equiv 0$. The
+  trichotomy was additionally brute-forced over all $u$ mod $3^d$ for **all** $2^{10}-1$
+  words of length $\le 9$ and all $d \le 6$ (7161 (word,$d$) cases, including every
+  all-ones word): zero discrepancies. Sound.
+* **L-9919.4(3).** All three displayed equivalences re-derived (every step multiplies
+  by a positive quantity); $\theta_{j,0} = \rho_j/(2^j - 3^{a_j})$ recovers
+  L-9909.3(b) exactly; $d > a_j \Rightarrow 3^{d-a_j} > 2^{d-j}$ re-proved in both
+  subcases $d \le j$, $d > j$; the degenerate equality $2^j3^d = 2^d3^{a_j}$ forces
+  the all-ones word by unique factorisation, where $\delta_j = 0$ and no kill occurs.
+  Machine-checked as an exact equivalence on 107,624 $(n,j,d)$ triples. Sound.
+* **L-9919.4(5) — probe (iii), the collapse.** The contradiction re-derived
+  independently: if $\nu_3(\delta_j) = a_j$ exactly (in particular $\delta_j \ne 0$),
+  then $m_j = a_j$ and the survivor condition at $j$ reads $1 \ge 2^{j-a_j}$, i.e.
+  $j \le a_j$; with the universal $a_j \le j$ this forces $a_j = j$, hence the
+  all-ones prefix, hence $\delta_j = 0$, hence $\nu_3(\delta_j) = +\infty \ne a_j$ —
+  contradiction. So on survivor classes $\nu_3(\delta_j) > a_j$ strictly, every
+  branch-(N) forbidden class is $\equiv 0 \bmod 3$ in $u$, and the $(j,d) = (0,1)$
+  event (legal for every $D \ge 1$, threshold $-1$, realised by $D(n) < n$) gives the
+  reverse inclusion. The step "$a_j \le j$ forcing $a_j = j$" is airtight: $a_j$ is a
+  sum of $j$ bits. Set-level identity verified by direct enumeration (below). Sound.
+* **L-9919.4(6) — probe (i), $B^{\mathrm{aug}}_k$.** The bookkeeping re-derived: a
+  kill at level $j$ is a property of the class mod $2^j$; if $r \bmod 2^k$ fails the
+  sieve, let $k'$ be the least kill level; every proper prefix of the $k'$-prefix is
+  alive (a kill of a prefix would be a kill of $r$ at a level $< k'$), so the
+  $k'$-prefix is precisely a "first-kill" class of the definition, and its
+  least-threshold kill has $\theta \le B^{\mathrm{aug}}_k$ by construction of the max.
+  For $n > B^{\mathrm{aug}}_k \ge \theta$ the branch-(U) divisibility holds for every
+  $n$ in the class, positivity is L-9919.2(3), and $D^d(T^{k'}(n)) < n$ by (3). The
+  [H] instantiation only additionally uses L-9911.1 and L-9919.1(4). My independent
+  implementation (level-by-level BFS, different data flow from the author's DFS)
+  reproduces $B^{\mathrm{aug}}_k$ exactly: $0, 1, 1, 1, 23/5, 23/5, 23/5$, then
+  $319/13$ stably for $8 \le k \le 20$ (the author's PART C extends this to 24;
+  byte-for-byte re-run confirmed). I also confirmed by hand that $23/5$ arises at the
+  level-5 first-kill word $(1,1,0,1,0)$ ($\rho_5 = 23$, $2^5 - 3^3 = 5$) and that the
+  joint-survivor conclusion for $\mu$ needs no threshold bookkeeping at all (μ avoids
+  the forbidden congruences outright). Sound.
+* **L-9919.6.** (1),(2) instantiations checked against the recomputed tables
+  ($18 \times 2 = 36$ classes mod 768, density $3/64$); (3) re-derived including the
+  vacuous $j = m_j$ case and the integer-ceiling step via Lemma D ($B\gamma \notin
+  \mathbb{Z}$); the claimed lower bound $m_j + \lceil (j-m_j)\gamma\rceil \ge
+  \lceil j\gamma \rceil$ follows since the left side is an integer $\ge j\gamma$; (5)'s
+  "one even step resets $\nu_3(\delta)$ to 0" checks since $3 \nmid 2^i$. Sound.
+* **L-9919.8(1)–(2).** The $(P,Q)$ affine bookkeeping re-derived (M: $(2P, 2Q-2^j)$;
+  D: $(\frac{2P}3, \frac{2Q}3)$); class-uniform D-legality $\iff 3 \mid P \wedge 3
+  \mid Q$, with necessity via CRT ($u$ hits every residue mod 3 within a class mod
+  $2^k$) and sufficiency via $\gcd(2^j, 3) = 1$; positivity thresholds
+  $(2^{j+1}-Q)/P - 1$ at every node and the descent threshold $Q/(2^j - P) - 1$
+  re-derived; the D-only reduction to L-9919.4 re-derived (multiply the descent
+  inequality by $3^d$). The strictness witness verified **by hand and by machine**:
+  for class $63 \bmod 256$ (word $1^60^2$, $a_8 = 6$, $\delta_8 = 192$), the word
+  $\mathsf{DMDDDD}$ has state chain
+  $(729,192) \to (486,128) \to (972,0) \to (648,0) \to (432,0) \to (288,0) \to (192,0)$,
+  every D-step legal class-uniformly, terminal $z_w = 3(n+1)/4 - 1$, positivity
+  binding at the terminal node with $\theta = 5/3$ exactly, and the integer chain
+  $182 \to 121 \to 242 \to 161 \to 107 \to 71 \to 47$ with $T^6(47) = 182 = T^8(63)$,
+  $47 < 63$, reproduced exactly (also on representatives $319$, $575$, $24895$, and
+  $63 + 256\cdot 12345 = 3160383$). Sound.
+
+**First-unsupported-inference search: came up empty.** The only defects found are the
+wording/documentation items under Fixes.
+
+### 3. Independent computations (own scripts, written from the statements alone)
+
+Scripts in
+`/tmp/claude-0/-home-user-collatz/114bdecf-6016-53ed-8de1-7dbb35adc114/scratchpad/v21/`
+(exact integer/Fraction arithmetic; floats only in display columns). Full text of the
+three load-bearing ones is reproduced at the end of this note. Outputs shown are real
+captured stdout.
+
+**(a) `v21_descent.py` — exhaustive descent facts.** Preimage characterisation
+exhaustive for $y \le 10^6$ (completeness via $T(x) \ge x/2$, scan $x \le 2\cdot10^6$);
+$d(y) = \nu_3(y+1)$ with affine iterate, positivity, oddness, strict decrease and
+$T^i$-inversion for every $y \le 10^6$ (max depth 12); the $3$-adic class
+characterisation for $d \le 7$ over all residues with three lifts each; the shifted
+formula and $\delta$-recursion/closed form for $n \le 4000$, $j \le 25$; the
+(U)/(V)/(N) trichotomy vs brute force (all words $|w| \le 9$, $d \le 6$); the
+descent-below-$n$ equivalence and threshold form (107,624 checks); the amplified-floor
+algebra (1,411,332 checks); the mod-12 combination.
+
+```text
+A. preimage characterization exhaustive y <= 1000000: OK
+B. depth = nu3(y+1), iterate, positivity, oddness, inversion, y <= 1000000: OK (max depth 12)
+C. {d(y)>=d} = {-1 mod 3^d} for d <= 7: OK
+D. shifted formula + delta recursion/closed form, n <= 4000, j <= 25: OK
+E. (U)/(V)/(N) trichotomy vs brute force, words |w| <= 9, d <= 6: OK (U/V/N cases: [2356, 2696, 2109])
+F. descent-below-n equivalence + threshold, n <= 3000, j <= 15: OK (107624 checks)
+G. amplified-floor algebra, n <= 20000, j <= 30: OK (1411332 checks)
+H. mod-12 combination = [3, 7] (expect [3, 7])
+
+TOTAL FAILURES: 0
+VERDICT(descent): ALL OK
+```
+
+**(b) `v21_sieve.py` — Aug($k$) to $k = 20$, $B^{\mathrm{aug}}_k$, lists, and the
+collapse at set level.** Independent level-by-level BFS (different structure from both
+of the author's implementations). Recomputed table, matching L-9919.5(a)/PART C
+exactly at every $k \le 20$:
+
+| $k$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| L-9909 | 1 | 1 | 2 | 3 | 4 | 8 | 13 | 19 | 38 | 64 | 128 | 226 | 367 | 734 | 1295 | 2114 | 4228 | 7495 | 14990 | 27328 |
+| Aug | 1 | 1 | 2 | 3 | 4 | **7** | **12** | **18** | 32 | 57 | 102 | 192 | 324 | 593 | 1100 | **1855** | 3407 | 6329 | 11698 | **22384** |
+
+$B^{\mathrm{aug}}_k$: $0, 1, 1, 1, 23/5, 23/5, 23/5$, then $319/13$ for all
+$8 \le k \le 20$. Explicit lists mod $2,\dots,256$ match the file's, with removed-vs-
+L-9909 exactly $[\,]$, $[\,]$, $[\,]$, $[\,]$, $[\,]$, $[15]$, $[79]$, $[207]$ and **no
+spurious extras** (Aug $\subseteq$ L-9909 at every level). Class-invariance of
+$(a_j, \delta_j)$ spot-checked on 2000 random lifts. **Collapse identity by direct
+enumeration, $k \le 12$, $D \le 3$, in $n$-coordinates and at set level** (the
+author's PART E asserts only the counts): for every augmented survivor class, the
+allowed residues mod $3^D$ are **exactly** $\{s : s \not\equiv 2 \bmod 3\}$, and
+$|\mathrm{Joint}(k,D)| = |\mathrm{Aug}(k)| \cdot 2 \cdot 3^{D-1}$ for all 36 $(k,D)$
+pairs; the strictness $\nu_3(\delta_j) > a_j$ was never violated; **every** branch-(N)
+instance on a survivor class had $\delta_j = 0$ (confirming, on my range, the author's
+PART D observation that the $n$-dependent branch is realised only in its degenerate
+all-ones form — an empirical remark, nothing load-bearing).
+
+```text
+   match with L-9919.5(a)/PART C tables (k <= 20): True
+   lists match file, Aug subset of L-9909 at every k <= 8: True
+   class-invariance of (a_j, delta_j) on 2000 random lifts: True
+   collapse strictness + set identity + counts, k <= 12, D <= 3: ALL OK
+   branch-(N) instances on survivor classes (counted at D=1): delta=0: 2285, delta!=0: 0
+VERDICT(sieve): ALL OK
+```
+
+**(c) `v21_orbit_xcheck.py` — semantic cross-check against real orbits.** At
+$J = 16$: 1855 survivor classes; over **every** $n \le 10^6$, the direct predicate
+"$\exists\, j \le J,\ d \ge 0$ with $D^d(T^j(n)) < n$" (computed with no reference to
+$a_j, \delta_j$, congruences, or thresholds) agrees with the sieve prediction
+"$n \bmod 2^{16} \in \mathrm{Aug}(16)$ and $n \not\equiv 2 \bmod 3$" with **zero**
+mismatches above $B = 319/13$; the single discrepancy in the excluded region
+$n \le 24$ is $n = 1$ (direct-alive, sieve-dead), as expected. For all 98,105
+sieve-dead $n \le 10^5$ an explicit witness chain was produced and verified
+($1 \le z < n$ and $T^d(z) = T^j(n)$): zero failures. X-9901 was also re-verified
+directly (every $n \le 10^6$ reaches 1 under $T$), so the discharge
+$\mu > B^{\mathrm{aug}}_k$ used by L-9919.6 rests on a floor this reviewer has
+independently recomputed.
+
+```text
+augmented survivor classes mod 2^16 : 1855 (expect 1855)
+n <= 1000000, J = 16: direct-alive 18874, sieve-alive 18873, mismatches above B=319/13: 0 []
+discrepancies among n <= 24 (excluded region): [(1, 'direct-alive', 'sieve-dead')]
+witness audit on n <= 100000 predicted dead: 98105 verified, 0 failures
+X-9901 re-check: all n <= 10^6 reach 1 under T: True
+```
+
+(Note the exact-match phenomenon above $B$ is itself a consequence of the proved
+statements — on an augmented-survivor class with $n \not\equiv 2 \bmod 3$, branches
+(U)/(V)/(N) plus the collapse rule out a kill at **every** $(j \le k, d)$ — so this
+test probes the derivation, not luck.)
+
+**(d) `v21_backword.py` — L-9919.8.** Witness verified exactly (see reconstruction
+above), and the measured table independently recomputed with my own DFS and my own
+re-derived pruning bound ($P$ can shrink by at most $(2/3)^{\text{rem}}$):
+
+```text
+    k   L-9909   pure   backward   maxtheta   matches file
+    6        8      7          7   None       True
+    8       19     18         16   5/3        True
+   10       64     57         46   5/3        True
+   12      226    192        144   159/13     True
+   14      734    593        436   159/13     True
+   16     2114   1855       1366   159/13     True
+   counts match L-9919.8(3) table: True
+```
+
+Max kill threshold over these $k$: $159/13 < 13$, as claimed.
+
+**(e) `v21_rate30.py` — the L-9919.5(c) range claims, recounted to $k = 30$.**
+Independent DFS; counts at $k = 24..30$ match the file's Script-5 table
+(e.g. $12771274 / 9842401$ at $k = 30$), and every summary statistic matches:
+
+```text
+old/new over 6 <= k <= 30: [1.05556, 1.29758]  (file: [1.05556, 1.29758])
+log2(old/new): [0.07800, 0.37582]  (file: [0.07800, 0.37582])
+rate diff (1/k)log2 at k=6,12,18,24,30: 0.0321, 0.0196, 0.0136, 0.0098, 0.0125
+(2/3)*new/old at k=6,12,18,24,30: 0.5833, 0.5664, 0.5630, 0.5664, 0.5138
+joint/L-9909 density over 6<=k<=30: [0.5138, 0.6316]
+```
+
+### 4. Placeholder audit (probe (v) included)
+
+All five embedded ```` ```python ```` blocks were re-extracted from this file by my own
+parser, written to fresh files, executed with CPython 3, and their stdout compared
+with the recorded ```` ```text ```` blocks: **all five match byte-for-byte** (exit
+code 0 each). In particular PART F of Script 2 — where the author documents an
+earlier bug in the direct side and asks the reviewer to re-run rather than trust — was
+re-run and reproduces `mismatches 0` at $k = 4, 6, 8, 10$; its semantics are further
+cross-checked by my independent script (c) on a larger range. No block is a
+placeholder.
+
+```text
+l9919_descent.py     run rc=0  byte-exact=True
+l9919_sieve.py       run rc=0  byte-exact=True
+l9919_orbits.py      run rc=0  byte-exact=True
+l9919_backword.py    run rc=0  byte-exact=True
+l9919_rate.py        run rc=0  byte-exact=True
+PLACEHOLDER AUDIT: ALL FIVE BLOCKS REPRODUCE THEIR RECORDED OUTPUT
+```
+
+### 5. Fixes made (documented; no mathematical content changed)
+
+1. **L-9919.5(c) and Negative-probes item 3:** the verb "decreases" for the rate
+   difference contradicted the data printed beside it (the $k{=}30$ value $0.0125$ is
+   **above** the $k{=}24$ value $0.0098$; the sequence oscillates, as the file itself
+   notes). Reworded to "trends downward (not monotonically — the last sampled value
+   ticks up)" resp. "trends downward … (non-monotonically)". The quantitative claims
+   (the ranges, the five sampled values) were all verified exact and are unchanged.
+2. **Header dependency line for L-9907:** "used only in … L-9919.6" corrected to also
+   mention the (non-load-bearing) L-9907.5 cross-check in the proof of L-9919.4(1),
+   which the Dependency audit table already recorded.
+3. **Header:** Status PROPOSED → PROVED; reviewer recorded; Last updated bumped.
+
+### 6. Probe-spot summary (the author's Remaining uncertainty list)
+
+* **(i) $B^{\mathrm{aug}}_k$ (least level, then least threshold):** re-derived and
+  independently recomputed; correct as written. The prefix-aliveness argument that
+  makes the $k'$-prefix a first-kill class is the load-bearing step and it holds.
+* **(ii) $\nu_3(0) = +\infty$ across (U)/(V)/(N):** consistent everywhere; (V) is
+  unreachable at $\delta_j = 0$; brute-forced including every all-ones word.
+* **(iii) finite-range labels (L-9919.5(c), L-9919.8(3)):** labels are present and
+  honest; the only slip was the "decreases" verb, fixed as above. Nothing in the file
+  extrapolates the finite computations.
+* **(iv) collapse via $a_j \le j$:** re-derived; airtight.
+* **(v) PART F:** re-run byte-for-byte and re-implemented independently on a larger
+  range; zero mismatches.
+
+### 7. L-9919.8 assessment
+
+Verified: the soundness lemma .8(1) (affine bookkeeping, class-uniform legality
+criterion with both directions, positivity/descent thresholds), the reduction .8(2)
+(D-only words = L-9919.4), and the strictness witness (class $63 \bmod 256$, word
+$\mathsf{DMDDDD}$, chain $182 \to 121 \to 242 \to 161 \to 107 \to 71 \to 47$,
+$\theta = 5/3$) — exactly, on five representatives including one $> 3\cdot 10^6$. Also
+independently reproduced: the measured counts $16/46/144/436/1366$ at
+$k = 8,10,12,14,16$ (word length $\le 12$) and the threshold bound $159/13$.
+**PARTIAL stands** because: the strength table is a finite computation with a
+word-length cap (the counts are upper bounds for the true backward-word survivor
+counts, as the file itself says); no collapse analogue is proved for the extension, so
+the extra factor $2/3$ may not be assumed there; and whether the gain improves the
+exponential rate is open. These are precisely the limits the file already declares.
+
+### 8. Residual caveats
+
+* PART E of Script 2 marks forbidden residues in $u = n{+}1$ coordinates while
+  reporting joint counts; counts are invariant under the shift $s \mapsto s{+}1$, so
+  the recorded numbers are correct, and my script (b) verified the stronger
+  **set-level** identity in $n$-coordinates directly. No change needed.
+* The observation that branch (N) is realised only with $\delta_j = 0$ (author's PART
+  D count of 23; my count of 2285 class-level instances over $k \le 12$, all with
+  $\delta_j = 0$) remains empirical; the proof of L-9919.4(5) does not use it.
+* All computational statements here and in the file are finite verification over the
+  stated ranges, never proof of an infinite statement.
+* Per project rules this single review supports PROVED only; a second independent
+  agent is needed for INDEPENDENTLY_VERIFIED. The FOUNDATIONS.md index row for L-9919
+  (status PROPOSED there) is the integrator's to refresh.
+
+### 9. Verifier code (the three load-bearing scripts, verbatim)
+
+```python
+#!/usr/bin/env python3
+# v21_sieve.py -- INDEPENDENT recomputation of the L-9919 augmented sieve:
+#   Aug(k) counts and B^aug_k for k <= 20 (level-by-level BFS, own implementation),
+#   explicit survivor lists mod 2^k for k <= 8,
+#   Aug(k) subset of L-9909 survivors,
+#   and the 3-adic collapse / joint-survivor SET identity by direct enumeration
+#   for k <= 12, D <= 3 (no product ansatz).
+# Verifier: fable-02-v21, 2026-07-26.  Exact arithmetic.  FINITE COMPUTATION.
+
+from fractions import Fraction
+
+def T(n):
+    return n // 2 if n % 2 == 0 else (3 * n + 1) // 2
+
+def v3(x):
+    if x == 0:
+        return None
+    r = 0
+    while x % 3 == 0:
+        x //= 3
+        r += 1
+    return r
+
+def mj(a, delta):
+    v = v3(delta)
+    return a if v is None else min(a, v)
+
+def uniform_kill_at(j, a, delta):
+    """Branch-(U) kill exists at level j iff 3^{a-m} < 2^{j-m} with m = m_j
+       (monotone in d, binding case d = m_j).  Returns list of (d, theta)
+       over ALL 0 <= d <= m_j that kill (for B^aug bookkeeping)."""
+    m = mj(a, delta)
+    out = []
+    for d in range(0, m + 1):
+        if 3 ** (a - d) < 2 ** (j - d):
+            coef = (2 ** j) * (3 ** d) - (2 ** d) * (3 ** a)
+            assert coef > 0
+            out.append((d, Fraction((2 ** d) * delta, coef) - 1))
+    return out
+
+# PART 1: Aug(k) and L-9909 counts, k <= 20, by level-by-level BFS on words.
+KMAX = 20
+aug_alive = [(0, 0)]
+old_alive = [0]
+aug_cnt = [1]
+old_cnt = [1]
+Bk = [Fraction(0)]
+for k in range(1, KMAX + 1):
+    B = Bk[-1]
+    nxt = []
+    for (a, delta) in aug_alive:
+        for b in (0, 1):
+            a2 = a + b
+            d2 = 3 * delta if b == 1 else delta + 2 ** (k - 1)
+            ev = uniform_kill_at(k, a2, d2)
+            if ev:
+                B = max(B, min(th for (_, th) in ev))
+            else:
+                nxt.append((a2, d2))
+    aug_alive = nxt
+    aug_cnt.append(len(nxt))
+    Bk.append(B)
+    nxt_old = []
+    for a in old_alive:
+        for b in (0, 1):
+            a2 = a + b
+            if 3 ** a2 >= 2 ** k:
+                nxt_old.append(a2)
+    old_alive = nxt_old
+    old_cnt.append(len(nxt_old))
+
+print("PART 1  counts and B^aug_k (independent recomputation), k <= %d" % KMAX)
+print("    k   L-9909   Aug(k)    B^aug_k")
+for k in range(1, KMAX + 1):
+    print("   %2d  %7d  %7d    %s" % (k, old_cnt[k], aug_cnt[k], Bk[k]))
+
+EXPECT_AUG = {1: 1, 2: 1, 3: 2, 4: 3, 5: 4, 6: 7, 7: 12, 8: 18, 9: 32, 10: 57,
+              11: 102, 12: 192, 13: 324, 14: 593, 15: 1100, 16: 1855, 17: 3407,
+              18: 6329, 19: 11698, 20: 22384}
+EXPECT_OLD = {1: 1, 2: 1, 3: 2, 4: 3, 5: 4, 6: 8, 7: 13, 8: 19, 9: 38, 10: 64,
+              11: 128, 12: 226, 13: 367, 14: 734, 15: 1295, 16: 2114, 17: 4228,
+              18: 7495, 19: 14990, 20: 27328}
+EXPECT_B = {1: Fraction(0), 2: Fraction(1), 3: Fraction(1), 4: Fraction(1),
+            5: Fraction(23, 5), 6: Fraction(23, 5), 7: Fraction(23, 5),
+            8: Fraction(319, 13), 20: Fraction(319, 13)}
+ok = all(aug_cnt[k] == EXPECT_AUG[k] for k in EXPECT_AUG) \
+     and all(old_cnt[k] == EXPECT_OLD[k] for k in EXPECT_OLD) \
+     and all(Bk[k] == EXPECT_B[k] for k in EXPECT_B) \
+     and all(Bk[k] == Fraction(319, 13) for k in range(8, KMAX + 1))
+print("   match with L-9919.5(a)/PART C tables (k <= 20):", ok)
+
+# PART 2: explicit survivor lists mod 2^k, k <= 8, from residues directly.
+def word_data_of_class(r, k):
+    n = r if r > 0 else 2 ** k
+    a = [0]
+    delta = [0]
+    m = n
+    for i in range(k):
+        b = m % 2
+        a.append(a[-1] + b)
+        delta.append(3 * delta[-1] if b == 1 else delta[-1] + 2 ** i)
+        m = T(m)
+    return a, delta
+
+def is_aug_survivor(r, k):
+    a, delta = word_data_of_class(r, k)
+    for j in range(0, k + 1):
+        m = mj(a[j], delta[j])
+        if 3 ** (a[j] - m) < 2 ** (j - m):
+            return False
+    return True
+
+def is_old_survivor(r, k):
+    a, _ = word_data_of_class(r, k)
+    return all(3 ** a[j] >= 2 ** j for j in range(1, k + 1))
+
+print()
+print("PART 2  explicit augmented survivor lists")
+EXPECT_LISTS = {
+    1: [1], 2: [3], 3: [3, 7], 4: [7, 11, 15], 5: [7, 15, 27, 31],
+    6: [7, 27, 31, 39, 47, 59, 63],
+    7: [27, 31, 39, 47, 63, 71, 91, 95, 103, 111, 123, 127],
+    8: [27, 31, 47, 63, 71, 91, 103, 111, 127, 155, 159, 167, 191, 223, 231, 239, 251, 255],
+}
+allok = True
+for k in range(1, 9):
+    aug = [r for r in range(2 ** k) if is_aug_survivor(r, k)]
+    old = [r for r in range(2 ** k) if is_old_survivor(r, k)]
+    removed = sorted(set(old) - set(aug))
+    extras = sorted(set(aug) - set(old))
+    match = (aug == EXPECT_LISTS[k])
+    allok = allok and match and extras == []
+    print("   k=%d  |Aug|=%2d  removed-vs-L9909=%-6s  extras=%s  matches file list: %s"
+          % (k, len(aug), removed, extras, match))
+print("   lists match file, Aug subset of L-9909 at every k <= 8:", allok)
+
+import random
+random.seed(9919)
+dep_ok = True
+for _ in range(2000):
+    k = random.randint(1, 10)
+    r = random.randrange(2 ** k)
+    n1 = (r if r > 0 else 2 ** k)
+    n2 = n1 + (2 ** k) * random.randint(1, 50)
+    a1, d1 = word_data_of_class(n1 % (2 ** k) if n1 % (2 ** k) else 0, k)
+    a2, d2 = [0], [0]
+    m = n2
+    for i in range(k):
+        b = m % 2
+        a2.append(a2[-1] + b)
+        d2.append(3 * d2[-1] if b == 1 else d2[-1] + 2 ** i)
+        m = T(m)
+    dep_ok = dep_ok and (a1 == a2 and d1 == d2)
+print("   class-invariance of (a_j, delta_j) on 2000 random lifts:", dep_ok)
+
+# PART 3: the 3-adic collapse + joint sieve, DIRECT SET-LEVEL enumeration,
+#         k <= 12, D <= 3, in n-coordinates (s = n mod 3^D).
+print()
+print("PART 3  collapse + joint survivors by direct enumeration (n-coordinates)")
+collapse_ok = True
+nonzero_N_instances = 0
+zero_N_instances = 0
+for k in range(1, 13):
+    aug = [r for r in range(2 ** k) if is_aug_survivor(r, k)]
+    for D in (1, 2, 3):
+        M = 3 ** D
+        joint = 0
+        for r in aug:
+            a, delta = word_data_of_class(r, k)
+            forb = set()
+            for j in range(0, k + 1):
+                nu = v3(delta[j])
+                if not (nu is None or nu >= a[j]):
+                    continue  # branch (N) empty at j
+                if nu is not None and nu == a[j]:
+                    collapse_ok = False
+                    print("   COLLAPSE VIOLATION at k=%d r=%d j=%d" % (k, r, j))
+                if D == 1:
+                    if delta[j] == 0:
+                        zero_N_instances += 1
+                    else:
+                        nonzero_N_instances += 1
+                tau = 0 if delta[j] == 0 else delta[j] // (3 ** a[j])
+                for d in range(a[j] + 1, D + 1):
+                    mod = 3 ** (d - a[j])
+                    cu = (-tau) % mod
+                    for s in range(M):
+                        if (s + 1) % mod == cu:
+                            forb.add(s)
+            allowed = sorted(set(range(M)) - forb)
+            want = sorted(s for s in range(M) if s % 3 != 2)
+            if allowed != want:
+                collapse_ok = False
+                print("   SET IDENTITY VIOLATION k=%d D=%d r=%d allowed=%s" % (k, D, r, allowed))
+            joint += len(allowed)
+        if joint != len(aug) * 2 * (3 ** (D - 1)):
+            collapse_ok = False
+            print("   COUNT VIOLATION k=%d D=%d joint=%d" % (k, D, joint))
+    print("   k=%2d  |Aug|=%5d  joint counts (D=1,2,3): %s  set identity: %s"
+          % (k, len(aug),
+             [len(aug) * 2 * 3 ** (D - 1) for D in (1, 2, 3)],
+             "OK" if collapse_ok else "VIOLATED"))
+print("   collapse strictness + set identity + counts, k <= 12, D <= 3:",
+      "ALL OK" if collapse_ok else "VIOLATIONS FOUND")
+print("   branch-(N) instances on survivor classes (counted at D=1): delta=0: %d, delta!=0: %d"
+      % (zero_N_instances, nonzero_N_instances))
+
+print()
+print("VERDICT(sieve): ALL OK" if (ok and allok and dep_ok and collapse_ok) else "VERDICT(sieve): PROBLEMS FOUND")
+```
+
+Output (run 2026-07-26, CPython 3, Linux). The block above is the scratchpad script
+minus its cosmetic PART-4 density spot-table, so the output below is exactly what the
+block as shown produces (re-extracted from this note and re-run to confirm):
+
+```text
+PART 1  counts and B^aug_k (independent recomputation), k <= 20
+    k   L-9909   Aug(k)    B^aug_k
+    1        1        1    0
+    2        1        1    1
+    3        2        2    1
+    4        3        3    1
+    5        4        4    23/5
+    6        8        7    23/5
+    7       13       12    23/5
+    8       19       18    319/13
+    9       38       32    319/13
+   10       64       57    319/13
+   11      128      102    319/13
+   12      226      192    319/13
+   13      367      324    319/13
+   14      734      593    319/13
+   15     1295     1100    319/13
+   16     2114     1855    319/13
+   17     4228     3407    319/13
+   18     7495     6329    319/13
+   19    14990    11698    319/13
+   20    27328    22384    319/13
+   match with L-9919.5(a)/PART C tables (k <= 20): True
+
+PART 2  explicit augmented survivor lists
+   k=1  |Aug|= 1  removed-vs-L9909=[]      extras=[]  matches file list: True
+   k=2  |Aug|= 1  removed-vs-L9909=[]      extras=[]  matches file list: True
+   k=3  |Aug|= 2  removed-vs-L9909=[]      extras=[]  matches file list: True
+   k=4  |Aug|= 3  removed-vs-L9909=[]      extras=[]  matches file list: True
+   k=5  |Aug|= 4  removed-vs-L9909=[]      extras=[]  matches file list: True
+   k=6  |Aug|= 7  removed-vs-L9909=[15]    extras=[]  matches file list: True
+   k=7  |Aug|=12  removed-vs-L9909=[79]    extras=[]  matches file list: True
+   k=8  |Aug|=18  removed-vs-L9909=[207]   extras=[]  matches file list: True
+   lists match file, Aug subset of L-9909 at every k <= 8: True
+   class-invariance of (a_j, delta_j) on 2000 random lifts: True
+
+PART 3  collapse + joint survivors by direct enumeration (n-coordinates)
+   k= 1  |Aug|=    1  joint counts (D=1,2,3): [2, 6, 18]  set identity: OK
+   k= 2  |Aug|=    1  joint counts (D=1,2,3): [2, 6, 18]  set identity: OK
+   k= 3  |Aug|=    2  joint counts (D=1,2,3): [4, 12, 36]  set identity: OK
+   k= 4  |Aug|=    3  joint counts (D=1,2,3): [6, 18, 54]  set identity: OK
+   k= 5  |Aug|=    4  joint counts (D=1,2,3): [8, 24, 72]  set identity: OK
+   k= 6  |Aug|=    7  joint counts (D=1,2,3): [14, 42, 126]  set identity: OK
+   k= 7  |Aug|=   12  joint counts (D=1,2,3): [24, 72, 216]  set identity: OK
+   k= 8  |Aug|=   18  joint counts (D=1,2,3): [36, 108, 324]  set identity: OK
+   k= 9  |Aug|=   32  joint counts (D=1,2,3): [64, 192, 576]  set identity: OK
+   k=10  |Aug|=   57  joint counts (D=1,2,3): [114, 342, 1026]  set identity: OK
+   k=11  |Aug|=  102  joint counts (D=1,2,3): [204, 612, 1836]  set identity: OK
+   k=12  |Aug|=  192  joint counts (D=1,2,3): [384, 1152, 3456]  set identity: OK
+   collapse strictness + set identity + counts, k <= 12, D <= 3: ALL OK
+   branch-(N) instances on survivor classes (counted at D=1): delta=0: 2285, delta!=0: 0
+
+VERDICT(sieve): ALL OK
+```
+
+```python
+#!/usr/bin/env python3
+# v21_backword.py (extract) -- INDEPENDENT verification of L-9919.8:
+# witness class 63 mod 256 and full recount, words length <= 12, own DFS
+# with a re-derived exactness-preserving prune (P shrinks by at most (2/3)^rem).
+from fractions import Fraction
+
+def T(n):
+    return n // 2 if n % 2 == 0 else (3 * n + 1) // 2
+
+def v3(x):
+    if x == 0:
+        return None
+    r = 0
+    while x % 3 == 0:
+        x //= 3
+        r += 1
+    return r
+
+def word_data_of_class(r, k):
+    n = r if r > 0 else 2 ** k
+    a = [0]; delta = [0]; m = n
+    for i in range(k):
+        b = m % 2
+        a.append(a[-1] + b)
+        delta.append(3 * delta[-1] if b == 1 else delta[-1] + 2 ** i)
+        m = T(m)
+    return a, delta
+
+def mj(a, d):
+    v = v3(d)
+    return a if v is None else min(a, v)
+
+def aug_killed(a, delta, k):
+    for j in range(0, k + 1):
+        m = mj(a[j], delta[j])
+        if 3 ** (a[j] - m) < 2 ** (j - m):
+            return True
+    return False
+
+def best_word_threshold(j, a, delta, L):
+    """min over class-uniform words w (|w| <= L) of
+       max(positivity thresholds along w, descent threshold), or None."""
+    S = 2 ** j
+    best = None
+    stack = [(3 ** a, delta, 0, Fraction(-1))]
+    while stack:
+        p, q, dep, pos = stack.pop()
+        if p < S:
+            th = max(Fraction(q, S - p) - 1, pos)
+            if best is None or th < best:
+                best = th
+        rem = L - dep
+        if rem <= 0 or p * 2 ** rem >= S * 3 ** rem:
+            continue
+        if p % 3 == 0 and q % 3 == 0:
+            p2, q2 = 2 * p // 3, 2 * q // 3
+            stack.append((p2, q2, dep + 1, max(pos, Fraction(2 * S - q2, p2) - 1)))
+        p2, q2 = 2 * p, 2 * q - S
+        stack.append((p2, q2, dep + 1, max(pos, Fraction(2 * S - q2, p2) - 1)))
+    return best
+
+EXPECT = {6: (8, 7, 7), 8: (19, 18, 16), 10: (64, 57, 46),
+          12: (226, 192, 144), 14: (734, 593, 436), 16: (2114, 1855, 1366)}
+L = 12
+print("    k   L-9909   pure   backward   maxtheta   matches file")
+allok = True
+for K in (6, 8, 10, 12, 14, 16):
+    old = pure = full = 0
+    mx = None
+    for r in range(2 ** K):
+        a, delta = word_data_of_class(r, K)
+        if all(3 ** a[j] >= 2 ** j for j in range(1, K + 1)):
+            old += 1
+        if aug_killed(a, delta, K):
+            continue
+        pure += 1
+        hit = None
+        for j in range(0, K + 1):
+            e = best_word_threshold(j, a[j], delta[j], L)
+            if e is not None and (hit is None or e < hit):
+                hit = e
+        if hit is None:
+            full += 1
+        else:
+            if mx is None or hit > mx:
+                mx = hit
+    m = (old, pure, full) == EXPECT[K]
+    allok = allok and m
+    print("   %2d  %7d  %5d  %9d   %-8s   %s" % (K, old, pure, full, mx, m))
+print("   counts match L-9919.8(3) table:", allok)
+```
+
+Output (exactly what the block as shown produces; the witness parts (a)–(b) of the
+full scratchpad script, run separately, verified the chain
+$182 \to 121 \to 242 \to 161 \to 107 \to 71 \to 47$, the states
+$(729,192) \to (486,128) \to (972,0) \to (648,0) \to (432,0) \to (288,0) \to (192,0)$,
+and $\theta = 5/3$ on five representatives including $n = 3160383$):
+
+```text
+    k   L-9909   pure   backward   maxtheta   matches file
+    6        8      7          7   None       True
+    8       19     18         16   5/3        True
+   10       64     57         46   5/3        True
+   12      226    192        144   159/13     True
+   14      734    593        436   159/13     True
+   16     2114   1855       1366   159/13     True
+   counts match L-9919.8(3) table: True
+```
+
+The remaining scripts (`v21_descent.py`, `v21_orbit_xcheck.py`, `v21_rate30.py`, and
+the block-extraction auditor `v21_extract_audit.py`) follow the descriptions in §3–§4
+above; their full text lives in the scratchpad path given there, and their complete
+outputs are quoted verbatim in §3–§4.
+
+*Signed: fable-02-v21, 2026-07-26.*
