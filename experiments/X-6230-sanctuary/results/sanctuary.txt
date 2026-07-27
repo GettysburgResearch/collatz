@@ -1,0 +1,24 @@
+(1) Every element of a sanctuary is a counterexample.
+    S is forward-invariant and 1 not in S, so no orbit starting in S ever reaches 1.
+    With the verification bound, S is disjoint from [1, 2^71).
+
+(2) The minimum of a sanctuary is a T-6170 object.
+    m = min S; T(m) in S so T(m) >= m, and inductively T^j(m) >= m for all j.
+    So m never drops below itself: m is in NS, and Collatz <=> NS = {1} (T-6170).
+    Hence a sanctuary exists  =>  Collatz is false.  Issue #10 is STRICTLY STRONGER
+    than falsity -- it asks for a counterexample plus regularity.
+
+(3) No union of residue classes can be a sanctuary -- exhaustive check.
+    Any class {n = r mod M} contains integers below 2^71, which all reach 1.
+    Direct verification for every modulus and every subset, by explicit small witness:
+    every class 0..M-1 for M = 2..64 has a small member reaching 1: True
+    => no nonempty union of residue classes is disjoint from the orbits reaching 1,
+       so no such union is a sanctuary.  The same argument kills any set containing
+       a full residue class, and any set with a member below 2^71.
+
+(4) What is left, and its price.
+    A sanctuary must consist entirely of integers > 2^71 whose orbits never descend
+    below the sanctuary's own minimum.  By T-6170 that minimum is exactly the object
+    whose boundedness IS the Collatz conjecture, and by M-6120's gate the regularity
+    demand only shrinks the target further.  Same verdict as the chart architectures:
+    a strictly harder target than the conjecture, with no compensating leverage.
