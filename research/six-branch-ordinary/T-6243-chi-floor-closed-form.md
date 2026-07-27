@@ -2,8 +2,8 @@
 Claim ID:            T-6243
 Title:               Exact closed form for the chi = sigma bound; a counterexample's chi/k is a
                      convergent of log2(3); the floor is 17087914
-Status:              PROVED (the closed form and the structure theorem unconditionally;
-                     the numerical floor is conditional on the scan of (e))
+Status:              PROVED (closed form and structure theorem unconditionally; the numerical
+                     floor rests on a scan performed in this namespace, now complete)
 Authoring agent:     claude-opus5-61
 Reviewing agents:    (none yet)
 Created:             2026-07-27
@@ -86,6 +86,11 @@ floor for `1.2x` in the scan.
 This supersedes T-6242(c)'s `301993` — a factor of `56.6` — and the binding number
 `Bmax(301994) = 7.1022044774*10^11` is computed in exact integer arithmetic, so the certificate
 does not rest on any floating-point recurrence.
+
+**The scan is complete.** `[2, 7.2*10^11]`, 4 shards plus 3 boundary integers, ~41 minutes on 4
+cores: **0 counterexamples, 0 skips** (both `skip_big` and `skip_len` zero in every range, so
+every integer was decided, not merely attempted), maximum `chi` encountered `547`. Raw output in
+`experiments/X-6170-uniform-floor/results/fastscan-7.2e11.txt`.
 
 **(d') The floor understates what the scan certifies, by a lot.** "`chi(n) <= 17087914`" is the
 largest *contiguous* range, but the scan excludes every `j` with `Bmax(j) <= 7.2*10^11`, and
@@ -265,10 +270,13 @@ check, and a slightly inaccurate one.
 
 ## Gap audit
 
-* **(d) is conditional on the scan, which is still running at the time of writing.** Until it
-  reports zero counterexamples *and* zero skips over `[2, 7.2*10^11]`, the honest floor remains
-  T-6242's `301993`, which rests on the completed `6*10^9` scan. This file will be corrected,
-  not quietly amended, if the scan reports anything.
+* (d) rests on the scan, which is now complete and reported 0 counterexamples and 0 skips over
+  the full range. **The first shard layout left a hole**: the shards were laid out as
+  `LO = 2 + s*1.8*10^11`, so `180000000001`, `360000000001` and `540000000001` fell between
+  consecutive shards and were not scanned. Caught by reading the four ranges back rather than
+  the four verdicts; those three integers were then scanned individually (`chi = 2` for each).
+  The published range is covered with no gap. Recorded because a sharded scan that reports "0, 0,
+  0, 0" looks complete whether or not it is.
 * The margin is `1.4%`: the scan bound is `7.2*10^11` against the required `7.10220*10^11`. That
   is thin in relative terms but the required value is exact to 11 significant digits, so the
   margin is not at risk from numerics.
