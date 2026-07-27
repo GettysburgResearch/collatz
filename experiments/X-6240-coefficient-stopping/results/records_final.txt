@@ -20,17 +20,4 @@ RECORD j=24727  log2 Bmax=27.6193  Bmax=2.062e+08
 RECORD j=75235  log2 Bmax=29.9599  Bmax=1.044e+09
 RECORD j=125743  log2 Bmax=32.2773  Bmax=5.205e+09
 RECORD j=301994  log2 Bmax=39.3693  Bmax=7.101e+11
-    j<=    log2 Bmax           Bmax
-    100       9.7601          867.1
-   1000      16.1369      7.206e+04
-   5000      19.6826      8.415e+05
-  10000      21.1968      2.404e+06
-  15000      22.1744      4.733e+06
-  18000      22.9547      8.129e+06
-  20000      23.5735      1.248e+07
-  25000      27.6193      2.062e+08
-  30000      27.6193      2.062e+08
-
-V = 1e+40  (log2 V = 132.8771)
 running max never reaches V for j <= 500000: max = 7.10149e+11 at j = 301994
-=> no counterexample to chi = sigma has chi(n) <= 500000

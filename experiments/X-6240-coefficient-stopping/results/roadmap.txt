@@ -1,0 +1,10 @@
+convergent numerators j of log2(3) (the only j where Bmax spikes):
+[1054, 24727, 50508, 125743, 176251, 301994, 16785921, 17087915]
+
+measured spikes:  j=24727 -> 2.062e8   j=125743 -> 5.205e9   j=301994 -> 7.101e11
+semiconvergent :  j=75235 (= 24727+50508) -> 1.044e9
+
+roadmap: with a scan to V, the floor is the last j whose spike is below V.
+   scan 2e9 -> floor 125742    (blocked by the 5.21e9 spike at j=125743)
+   scan 6e9 -> floor 301993    (blocked by the 7.10e11 spike at j=301994)  <-- ACHIEVED
+   scan 7.2e11 (~6 CPU-hours) -> floor beyond 500000

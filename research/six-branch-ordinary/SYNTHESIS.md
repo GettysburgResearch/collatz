@@ -229,11 +229,11 @@ and growing very slowly (`867` at `j <= 100`, `9267` at `j <= 400`, `4.2*10^5` a
 Since `chi = sigma` was verified here for all `n <= 2*10^9`:
 
 ```text
-      No counterexample to chi = sigma has  chi(n) <= 200000.
+      No counterexample to chi = sigma has  chi(n) <= 301993.
 ```
 
 A scan of `6*10^9` **integers** therefore certifies the conjecture for every `n` of **any size**
-with coefficient stopping time at most `200000`. (A `2*10^9` scan gives `125742`; extending it
+with coefficient stopping time at most `301993`. (A `2*10^9` scan gives `125742`; extending it
 to `6*10^9` — three minutes — clears the `Bmax` spike of `5.20533*10^9` sitting at
 `j = 125743` and raises the floor by `1.6x`.) The word reformulation is what converts a
 bounded-`n` computation into an unbounded-`n` one.

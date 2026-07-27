@@ -267,11 +267,11 @@ on the spot, and attacking it produced the strongest result of the session.
   own scan (`chi = sigma` for all `n <= 2*10^9`):
 
   ```text
-  No counterexample to chi = sigma has chi(n) <= 125742.
+  No counterexample to chi = sigma has chi(n) <= 301993.
   ```
 
   **A scan of `2*10^9` integers certifies the conjecture for every `n` of any size with
-  `chi(n) <= 125742`.** That is the first result here that converts a bounded-`n` computation
+  `chi(n) <= 301993`.** That is the first result here that converts a bounded-`n` computation
   into an unbounded-`n` one.
 * **The obstruction is arithmetic.** `Bmax(j)` spikes exactly at convergents of `log2(3)`, where
   `2^j - 3^k` is smallest. The crossing is at `j = 125743` — the convergent `125743/79335`,

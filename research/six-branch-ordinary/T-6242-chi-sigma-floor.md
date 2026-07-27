@@ -36,20 +36,35 @@ this namespace:
 | `V` (integers scanned) | scan cost | resulting floor |
 |---|---|---|
 | `2 * 10^9` | ~1 min | `chi(n) > 125742` |
-| **`6 * 10^9`** | ~3 min | **`chi(n) > 200000`** (and further; see below) |
+| **`6 * 10^9`** | ~3 min | **`chi(n) > 301993`** |
 
 ```text
-      No counterexample to chi = sigma has  chi(n) <= 200000.
+      No counterexample to chi = sigma has  chi(n) <= 301993.
 ```
 
-Equivalently: **any `n > 6*10^9` with `chi(n) != sigma(n)` has `chi(n) > 200000`.** Both scans
+Equivalently: **any `n > 6*10^9` with `chi(n) != sigma(n)` has `chi(n) > 301993`.** Both scans
 found zero exceptions (`divergence.c`, pointwise over every `n` in range).
 
-The `6*10^9` scan matters because `Bmax` has its largest spike below `200000` at
-`j = 125743`, of size exactly `5.20533 * 10^9`. A scan to `2*10^9` sits *below* that spike and
-is stopped by it; a scan to `6*10^9` clears it, and the floor then runs on to the next spike
-above `6*10^9`, which is beyond `j = 200000`. **A 3x longer scan bought a 1.6x higher floor,
-and the leverage is entirely due to where the convergents fall.**
+**The floor is set entirely by where the spikes fall.** `Bmax`'s running maximum is flat except
+at a handful of `j`, all convergents or semiconvergents of `log2(3)`:
+
+| `j` | `Bmax(j)` | nature | `D/2^j` |
+|---:|---:|---|---:|
+| 24727 | `2.062 * 10^8` | convergent `24727/15601` | `2^-15` |
+| 75235 | `1.044 * 10^9` | semiconvergent `24727 + 50508` | — |
+| 125743 | `5.205 * 10^9` | convergent `125743/79335` | `2^-18` |
+| 301994 | `7.101 * 10^11` | convergent `301994/190537` | `2^-23` |
+
+A scan to `2*10^9` sits *below* the `j = 125743` spike and is stopped by it. A scan to `6*10^9`
+clears it, and the running maximum then stays at `5.205*10^9` all the way to `j = 301994`,
+where it jumps to `7.101*10^11`. **So 3x the scan bought 2.4x the floor**, and the leverage is
+entirely arithmetic: it is the quality of the convergent (`D/2^j = 2^-15, 2^-18, 2^-23`) that
+sets each spike.
+
+**Roadmap for further work.** The floor is the last convergent whose spike lies below the scan
+bound, so the next jump needs a scan past `7.101*10^11` (~6 CPU-hours by extrapolation from the
+`6*10^9` run), which would push the floor beyond `j = 500000`. Convergent numerators after
+`301994` are `16785921, 17087915, ...`, so the jumps thereafter are large and sparse.
 
 **(d) The obstruction is arithmetic, not accidental.** `Bmax(j)` spikes exactly at the
 convergents of `log2(3)`, because `D = 2^j - 3^{k_j}` is smallest there. The first `j` at which
@@ -122,9 +137,11 @@ below `2^31` against `0` observed) should be read as the model over-predicting o
 * (c) depends on scans performed in this namespace — so the result is self-contained and does
   not import an external verification bound. The gain from extending the scan is **not** smooth:
   it is governed by where the `Bmax` spikes fall, i.e. by the convergents of `log2(3)`.
-* The `chi(n) <= 200000` figure is limited by how far `Bmax` was computed (`j <= 200000`), not
-  by the scan. The true floor with `V = 6*10^9` is wherever `Bmax` next exceeds `6*10^9`, which
-  is beyond `200000`; establishing it needs the `O(J^2)` DP run further.
+* An earlier version of this claim reported `chi(n) <= 200000`, limited by how far `Bmax` had
+  been computed rather than by the scan. The DP was then run to `j = 500000`, locating the next
+  spike at `j = 301994`, which gives the exact floor `301993`. The `200000` figure is superseded.
+* `301993` is now limited by the spike at `j = 301994`, i.e. by the scan bound `6*10^9` —
+  not by the DP range, which reaches `500000`.
 * The float implementation is used beyond `j = 3000`. It agrees with exact arithmetic wherever
   both run, and only `log2` values of order `10^5` are involved, well within double precision;
   but the `j > 3000` range rests on it.
