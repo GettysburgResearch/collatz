@@ -121,7 +121,35 @@ The identified reason is structural and points at the next move: the bound maxim
 non-S-closed (at m = 13 the maximiser contains 7, 11, 17, 13 but S(13) = 5 is absent). **The next
 real gain must come from closure, not from finer floors** — recorded as Q-9920-A.
 
-### 3.1 No cycle-elimination result can hold uniformly in q (L-9921, PROPOSED)
+### 3.0c Q-9920-A answered, and the *whole* congruence-sieve idea capped (L-9927, PROVED)
+
+L-9927 took the door above and both walked through it and closed it behind itself.
+
+*What closure adds.* Every cycle element is an S-image, and S-images are never divisible by 3
+(2^a·S(y) = 3y+1 ≡ 1 mod 3). This element-level p = 3 sieve — absent from the whole L-9917/L-9920
+family, whose admissible sets happily contain multiples of 3 — lifts the sorted floors to
+u_k = 3k+7+(k mod 2) and eliminates **166 cycle lengths, complete over all m**, up to m = 1024:
+118 more than L-9920, **80 of them beyond L-9920's proved ceiling of m = 207**, at a cost of two
+integer comparisons per length. It is also the first refinement in the family to change the
+*rate* rather than a constant (width ⅙log₂m → ⅑log₂m). Note this does not refute L-9920's ceiling
+theorem: that theorem bounds what distinctness + floor + dictionary can do, and L-9927 escapes it
+by adding genuinely new information, exactly as Q-9920-A predicted.
+
+*Why this is the end of the line.* Two ceilings, both proved. (i) *Specific:* the sieve's exact
+threshold is **m_U = 1039** — it eliminates nothing at or beyond that length, ever — and it cannot
+be deepened, because image(S^k) = {odd z : 3 ∤ z} at **every** depth k, so no further plain
+congruence condition exists to extract. (ii) *Universal:* **no allowed-set sieve of any thinness
+can eliminate all large m.** Whatever infinite allowed set V one sieves with, the density of
+{m·log₂3} defeats it by pigeonhole (certified demo: m = 306 survives every sieve with min V ≤ 225).
+Reviewer-audited scope: the universal theorem covers allowed-set methods only, and correctly does
+*not* claim to cover per-(m,K) tests, profile-coupled transport, or hybrids (Q-9927-A/B/C) — those
+remain the live routes, along with the Diophantine line of L-9910/L-9913.
+
+Practical note for anyone tempted to re-run this: L-9927 is **null in the verified-floor regime**.
+L-9913's m*(10⁶) = 2966 and m*(10⁹) = 47468 are unchanged by it (exact witnesses in-file). It kills
+individual short lengths, not the frontier.
+
+### 3.1 No cycle-elimination result can hold uniformly in q (L-9921, PROVED)
 
 Q-9904 ("is every rational in Z₂ eventually T-periodic?") reduces **exactly** to "for every positive
 odd q, the shortcut 3x+q map has no divergent integer orbit" (L-9921.3, four equivalent forms).
@@ -138,7 +166,7 @@ The one real gain is categorical: on Λ_q = (1/q)Z ≅ Z the integer pigeonhole 
 discrete), so archimedean methods are meaningful there and L-9907.1's lower envelope ports with
 proof. The deep half (L-9907.2) is left as an explicitly labelled unverified port.
 
-### 3.2 The 3-adic collapse: mod-6 joint sieving is mostly repackaging (L-9919, PROPOSED)
+### 3.2 The 3-adic collapse: mod-6 joint sieving is mostly repackaging (L-9919, PROVED)
 
 Descent depth under D(y) = (2y−1)/3 has the closed form **d(y) = ν₃(y+1)** (in the shifted
 coordinate u = y+1, D is exactly multiplication by 2/3), so "deep descent" is a single congruence
@@ -156,7 +184,7 @@ appears to be. Genuinely new and worth keeping: d(y) = ν₃(y+1) and the amplif
 y + 1 ≥ (3/2)^d(μ+1); the congruence **μ ≡ 3 or 7 (mod 12)** (L-9909/L-9911 stopped at μ ≡ 3 mod 4);
 and the augmented survivor tables.
 
-### 3.3 What is drift-driven vs format-driven (L-9922, PROPOSED)
+### 3.3 What is drift-driven vs format-driven (L-9922, PROVED)
 
 Porting the packet to T_a(n) = n/2, (an+1)/2 separates results that never used the value 3 from
 those that depend on the drift. **Everything pivots at a = 4**, since γ_a = log_a 2 ≷ ½ ⟺ a ≷ 4:
