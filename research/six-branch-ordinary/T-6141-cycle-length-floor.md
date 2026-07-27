@@ -11,6 +11,9 @@ Dependencies:        Legendre's theorem on continued fractions (classical); the 
 Scope:               positive cycles of the shortcut Collatz map
 Related counterexample candidates: none produced; this bounds them away
 Experiment:          experiments/X-6150-cycle-convergents/
+Sharpened by:        T-6244 -- (b) is T-6243(a) with G(k) relaxed to k, so it carries a factor
+                     1.386 of slack; and evaluating (b) at each candidate instead of through
+                     the (f) relaxation raises the floor at B = 2^71 by 1.1006x
 Duplication warning: the method is classical (Crandall 1978, Steiner 1977) and very likely
                      overlaps existing 42xx/50xx/83xx material. What is offered here is an
                      exact, reproducible, parameterised computation.
