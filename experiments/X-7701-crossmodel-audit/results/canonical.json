@@ -1,0 +1,85 @@
+{
+  "claude_reciprocity_repair": {
+    "error_upper": "1/8589934592",
+    "first_feasible_K_checked": 7,
+    "gap_lower": "17/51840",
+    "replacement_constant": "7/10"
+  },
+  "experiment": "X-7701",
+  "frozen_sources": {
+    "claude_symbolic": "407a788972a72da2fde59c19e9446e02647cc4f4",
+    "fable_foundations": "2cb80b4629ebfde5c8aaa3433c38e1382ea956b7",
+    "fable_foundry_cone": "0888a211f2703f5d3082e60fcbd0e8002b4b4650"
+  },
+  "l9913": {
+    "F_1e6": {
+      "K": 4701,
+      "m_star": 2966
+    },
+    "F_1e9": {
+      "K": 75235,
+      "m_star": 47468
+    }
+  },
+  "l9913_floor_replay": {
+    "first_argmax": 837799,
+    "maximum_total_stopping_time": 524,
+    "verified_through": 1000000
+  },
+  "l9915_crossmodel_partial_replay": {
+    "rows": [
+      {
+        "K": 13,
+        "compositions": 792,
+        "divisibility_hits": 0,
+        "m": 8
+      },
+      {
+        "K": 16,
+        "compositions": 5005,
+        "divisibility_hits": 0,
+        "m": 10
+      },
+      {
+        "K": 18,
+        "compositions": 19448,
+        "divisibility_hits": 0,
+        "m": 11
+      },
+      {
+        "K": 21,
+        "compositions": 125970,
+        "divisibility_hits": 0,
+        "m": 13
+      },
+      {
+        "K": 23,
+        "compositions": 497420,
+        "divisibility_hits": 0,
+        "m": 14
+      }
+    ],
+    "scope": "m=7..14 only",
+    "total_compositions": 648635,
+    "total_divisibility_hits": 0
+  },
+  "l9918_parseval_counterexample": {
+    "density_with_abs_g_at_most_1": "255/256",
+    "digit_count": 256,
+    "mean_square": "256",
+    "modulus": 256,
+    "violating_density": "1/256"
+  },
+  "l9927": {
+    "eliminated_count": 166,
+    "elimination_list_sha256": "71a9ec3f4ff8c00f639dc1a4351908acb58f1c3cfd5eca3e78f6b1708055765f",
+    "first_permanent_nonempty_threshold": 1039,
+    "maximum_eliminated_m": 1024
+  },
+  "limitations": [
+    "does not replay L-9915 for m=15..21",
+    "does not replay T-9925 memory-bound phase-floor certificates",
+    "does not prove any Collatz orbit statement"
+  ],
+  "semantic_digest": "485926c992f1fc780116fa1fca15e474a90c82d6dc32238932713702bc7274c8"
+}
