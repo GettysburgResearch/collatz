@@ -216,13 +216,42 @@ validated at one architecture. It is now validated at **seven**, spanning dimens
 It remains a law, not a theorem: the step from exact density to least roots is still the
 C-6111 equidistribution heuristic.
 
+## A named open problem, and the frontier moved on it
+
+`L-6173` identified a coincidence found here with the classical **coefficient-stopping-time**
+question (`chi = sigma`, Terras 1976). My first instinct was to record that as a reason to stop.
+That was wrong, and the repo now says so: naming a sub-question connects it to a literature and,
+in this case, immediately produced the reformulation that moved the frontier.
+
+**T-6242.** A counterexample with `chi(n) = j` satisfies `n <= Bmax(j)`, where `Bmax(j)` is the
+maximum of `c_w/(2^j - 3^{k_j})` over qualifying length-`j` words — computable exactly by DP,
+and growing very slowly (`867` at `j <= 100`, `9267` at `j <= 400`, `4.2*10^5` at `j <= 3000`).
+Since `chi = sigma` was verified here for all `n <= 2*10^9`:
+
+```text
+      No counterexample to chi = sigma has  chi(n) <= 125742.
+```
+
+A scan of `2*10^9` **integers** therefore certifies the conjecture for every `n` of **any size**
+with coefficient stopping time at most `125742`. The word reformulation is what converts a
+bounded-`n` computation into an unbounded-`n` one.
+
+And the obstruction is arithmetic, not accidental: `Bmax(j)` spikes exactly at convergents of
+`log2(3)`, where `2^j - 3^k` is smallest. The crossing sits at `j = 125743`, the convergent
+`125743/79335`, where `D/2^j ~ 2^-18`. **The same convergents that govern the cycle floor
+(T-6141) govern this bound** — the two lanes meet at the continued fraction of `log2(3)`.
+
+This also corrected `C-6241`, whose headline ("13% chance a counterexample lies beyond the
+verified range") mislocated the mass: those candidates satisfy `n <= 9267`, so they lie inside
+the verified range.
+
 ## Two open threads closed, with correct attribution
 
 * **The two floors' coincidence** (O-6172) is not a curiosity. One direction is a two-line
   theorem — the itinerary condition forces `3^{k_j} >= 2^j`, hence `T^j(n) > n`, so
   `B(n) <= A(n)` for every `n` — and the coincidence holds **pointwise for every `n <= 2*10^9`**,
-  not merely at the floors. It is the classical **coefficient-stopping-time question**
-  (Terras 1976), open since then. **Nobody here should attack it** (L-6173).
+  not merely at the floors. It is the classical coefficient-stopping-time question (L-6173), and
+  attacking it produced T-6242 above.
 * **Issue #10's sanctuary** is a counterexample plus regularity. Its minimum `m` satisfies
   `T^j(m) >= m` for all `j`, so `m` is exactly the T-6170 object whose boundedness *is* the
   conjecture. No union of residue classes qualifies. Strictly stronger than falsity — the same

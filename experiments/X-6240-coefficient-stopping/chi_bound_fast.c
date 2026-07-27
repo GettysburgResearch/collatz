@@ -40,7 +40,8 @@ int main(int argc, char **argv){
       double r = nxt[k] - logD;
       if(r > best) best = r;
     }
-    if(best > run){ run = best; runj = j; }
+    if(best > run){ run = best; runj = j;
+      if(best > 20.0) printf("RECORD j=%d  log2 Bmax=%.4f  Bmax=%.4g\n", j, best, exp2(best)); }
     if(!cross && run >= log2(V)) cross = j;
     for(int i=0;i<9;i++) if(j==mk[i]) marks[i]=run;
     for(int k=0;k<=J+2;k++) cur[k] = (k>=need)? nxt[k] : NEG;

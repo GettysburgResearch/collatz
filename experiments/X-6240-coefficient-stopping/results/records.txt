@@ -1,0 +1,35 @@
+RECORD j=5755  log2 Bmax=20.0507  Bmax=1.086e+06
+RECORD j=6809  log2 Bmax=20.3738  Bmax=1.359e+06
+RECORD j=7863  log2 Bmax=20.6667  Bmax=1.665e+06
+RECORD j=8917  log2 Bmax=20.9389  Bmax=2.01e+06
+RECORD j=9971  log2 Bmax=21.1968  Bmax=2.404e+06
+RECORD j=11025  log2 Bmax=21.4455  Bmax=2.856e+06
+RECORD j=12079  log2 Bmax=21.6889  Bmax=3.381e+06
+RECORD j=13133  log2 Bmax=21.9308  Bmax=3.998e+06
+RECORD j=14187  log2 Bmax=22.1744  Bmax=4.733e+06
+RECORD j=15241  log2 Bmax=22.4234  Bmax=5.625e+06
+RECORD j=16295  log2 Bmax=22.6818  Bmax=6.728e+06
+RECORD j=17349  log2 Bmax=22.9547  Bmax=8.129e+06
+RECORD j=18403  log2 Bmax=23.2487  Bmax=9.967e+06
+RECORD j=19457  log2 Bmax=23.5735  Bmax=1.248e+07
+RECORD j=20511  log2 Bmax=23.9440  Bmax=1.614e+07
+RECORD j=21565  log2 Bmax=24.3867  Bmax=2.193e+07
+RECORD j=22619  log2 Bmax=24.9551  Bmax=3.253e+07
+RECORD j=23673  log2 Bmax=25.7912  Bmax=5.807e+07
+RECORD j=24727  log2 Bmax=27.6193  Bmax=2.062e+08
+RECORD j=75235  log2 Bmax=29.9599  Bmax=1.044e+09
+RECORD j=125743  log2 Bmax=32.2773  Bmax=5.205e+09
+    j<=    log2 Bmax           Bmax
+    100       9.7601          867.1
+   1000      16.1369      7.206e+04
+   5000      19.6826      8.415e+05
+  10000      21.1968      2.404e+06
+  15000      22.1744      4.733e+06
+  18000      22.9547      8.129e+06
+  20000      23.5735      1.248e+07
+  25000      27.6193      2.062e+08
+  30000      27.6193      2.062e+08
+
+V = 1e+40  (log2 V = 132.8771)
+running max never reaches V for j <= 200000: max = 5.20533e+09 at j = 125743
+=> no counterexample to chi = sigma has chi(n) <= 200000
