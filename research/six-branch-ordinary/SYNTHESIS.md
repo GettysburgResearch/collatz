@@ -285,8 +285,10 @@ polynomial. **Q-6174's target number is void and the route is no longer refuted.
 Two more things fall out. Every Collatz counterexample's orbit minimum has `sigma = infinity`,
 so it **is** a counterexample to `chi = sigma` — the coefficient-stopping-time work bounds the
 object the conjecture is about, not a neighbouring one. And the conjecture reduces to a race
-between two computable sequences, `nu_{j-1}` against `Bmax(j)`: currently won by `3.2*10^5` and
-widening, holding at every `j` in `[66, 376]`, failing only at eight `j` where `Bmax(j) <= 867`.
+between two computable sequences, `nu_{j-1}` against `Bmax(j)`: holding at every `j` in
+`[66, 547]`, failing only at eight `j` where `Bmax(j) <= 867`, and won by `2*10^7` at the top.
+`nu_L` was extended `375 -> 546` to test this, and the margin widened a further `64x` while
+`log2(nu_L)/L` drifted `0.069 -> 0.061` toward T-6131's predicted `0.050044`.
 
 **What is not proved: any lower bound on `nu_L`** — equivalently `chi(n) = O(log n)`, measured to
 hold with constant `13.9` across the `7.2*10^11` integers scanned. That single hypothesis now

@@ -54,11 +54,11 @@ exists**. Each `j` at which `nu_{j-1} > Bmax(j)` is individually excluded.
 
 | `j` | `nu_{j-1}` | `Bmax(j)` | ratio |
 |---:|---:|---:|---:|
-| 127 | `35655` | `129.02` | `276` |
-| 189 | `1126015` | `93.15` | `1.21 * 10^4` |
-| 251 | `13421671` | `77.68` | `1.73 * 10^5` |
-| 313 | `63728127` | `68.33` | `9.33 * 10^5` |
-| 376 | `63728127` | `199.50` | `3.19 * 10^5` |
+| 150 | `270271` | `22.37` | `1.21 * 10^4` |
+| 250 | `13421671` | `30.69` | `4.37 * 10^5` |
+| 350 | `63728127` | `35.98` | `1.77 * 10^6` |
+| 450 | `12235060455` | `39.12` | `3.13 * 10^8` |
+| 547 | `12235060455` | `597.24` | `2.05 * 10^7` |
 
 It fails at exactly **eight** values of `j`, all small:
 
@@ -67,7 +67,20 @@ It fails at exactly **eight** values of `j`, all small:
 ```
 
 So those `j` are disposed of by verification to `868`, and **`nu_{j-1} > Bmax(j)` holds for every
-`j` in `[66, 376]`** — the whole range where `nu` has been computed.
+`j` in `[66, 547]`** — the whole range where `nu` is known. The tightest point in that range is
+`j = 73`, where the ratio is `4.14`; after `j = 82` it never drops below `24` again.
+
+`nu_L` was extended from `L = 375` to `L = 546` for this file (`chiscan.c`, a `2*10^11` scan
+recording the least `n` at each `chi` value; it reproduces X-6170's `nu_L` identically for every
+`L <= 375`). New values: `nu_376 = 217740015`, `nu_399 = 1827397567`, `nu_449 = 12235060455`.
+Over the extension the margin widened by a further `64x`, and
+
+```text
+        log2(nu_L)/L  =  0.069134  at L = 375   ->   0.061374  at L = 546,
+```
+
+drifting toward T-6131's predicted asymptotic `1 - H_2(alpha) = 0.050044` — an independent
+check on the dimension theorem, from a sequence it was never fitted to.
 
 *(Aside worth noting: those eight `j` are nearly the list C-6241 independently identified as the
 high-mass word lengths, `j = 43, 46, 51, 54`. Two different computations pick out the same
@@ -149,8 +162,8 @@ The conjecture is **not** proved here. (c) needs a lower bound on `nu_L`, and no
 `nu_L` is proved anywhere in this namespace or, as far as this file's author knows, anywhere.
 What exists is:
 
-* `nu_L` **measured** exactly to `L = 375` (`nu_375 = 63728127`), with
-  `log2(nu_L)/L = 0.069134` there;
+* `nu_L` **measured** exactly to `L = 546` (`nu_546 = 12235060455`), with
+  `log2(nu_L)/L = 0.061374` there;
 * an **asymptotic prediction** `0.050044 = 1 - H_2(alpha)` from T-6131's dimension theorem —
   which bounds the *density* of surviving residue classes and therefore predicts the least
   survivor heuristically, but does not bound it. A set of `2^(0.95 L)` residues mod `2^L` can
@@ -176,7 +189,7 @@ criterion needs far less than that.
 | exact `Bmax(j)`, and its extremal word | T-6243(a) | PROVED |
 | `m <= c_j/D` at a first drop | T-6242(a) | PROVED |
 | `chi <= sigma` | L-6173(a) | PROVED |
-| `nu_L` for `L <= 375` | X-6170 | exhaustive computation |
+| `nu_L` for `L <= 546` | X-6170 + `chiscan.c` (this file) | exhaustive computation |
 | `Bmax(j) = O(j^mu)`, i.e. (e)'s polynomial rate | T-6243(e), via Baker | classical, cited |
 | verification bound `B = 2^71` | **INPUT**, not proved here | external |
 | `nu_L` lower bound | **nowhere** | this is the gap |
@@ -210,7 +223,7 @@ criterion needs far less than that.
 
 * **The headline is a reduction, not a proof.** The criterion (c) is proved; its hypothesis is
   not. Anyone quoting this file must quote the hypothesis with it.
-* `nu_L` is known only to `L = 375`, and the criterion is needed at `L ~ 10^11` (by (f)). The
+* `nu_L` is known only to `L = 546`, and the criterion is needed at `L ~ 10^11` (by (f)). The
   extrapolation from `375` to `10^11` is not evidence; it is the shape of the problem.
 * (e)'s polynomial rate uses Baker's theorem through an irrationality measure that is not
   effective in this repository. Nothing in (a)-(d) or (f) depends on it — those use exact
@@ -233,10 +246,10 @@ criterion needs far less than that.
    statement is combinatorial: no residue `r < 2^(cL)` has an above-the-line parity word of
    length `L`. Equivalently `chi(n) = O(log n)`. Unlike R-6171's target it carries no constant
    to beat.
-2. **Extend `nu_L` past `L = 375`.** X-6170 exhausted at `L = 376` because it scanned only to
-   `10^8`. The measured exponent `0.069` is drifting down toward `0.050`; where it settles, and
-   whether the ratio `nu_{j-1}/Bmax(j)` keeps widening, is directly checkable and cheap relative
-   to what was spent on the `7.2*10^11` scan.
+2. **Extend `nu_L` past `L = 546`** — done once for this file, `375 -> 546`, and the answer was
+   the good one: the margin widened `64x` and the exponent moved toward `0.050044`. The same
+   `chiscan.c` on the `7.2*10^11` range already scanned would reach `L ~ 600`; the cost grows
+   like `2^(L/0.06)`, so this route saturates quickly and the next `100` of `L` is expensive.
 3. **Re-examine every claim in this namespace that cites R-6171's `0.585`.** SYNTHESIS, Q-6174,
    T-6140 and the README all quote the threshold or the `11.69x`. They are now wrong in the
    direction of pessimism.
