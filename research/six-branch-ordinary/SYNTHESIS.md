@@ -239,9 +239,30 @@ to `6*10^9` — three minutes — clears the `Bmax` spike of `5.20533*10^9` sitt
 bounded-`n` computation into an unbounded-`n` one.
 
 And the obstruction is arithmetic, not accidental: `Bmax(j)` spikes exactly at convergents of
-`log2(3)`, where `2^j - 3^k` is smallest. The crossing sits at `j = 125743`, the convergent
-`125743/79335`, where `D/2^j ~ 2^-18`. **The same convergents that govern the cycle floor
+`log2(3)`, where `2^j - 3^k` is smallest. **The same convergents that govern the cycle floor
 (T-6141) govern this bound** — the two lanes meet at the continued fraction of `log2(3)`.
+
+**T-6243 then replaced the DP with an identity, and the spikes with a theorem.** The above-line
+condition `k_L >= ceil(alpha L)` for all `L < j` is *equivalent* to the `k` separate constraints
+`t_i <= a_{i-1}` on the odd-step positions (`a_m = floor(m log2 3)`), and those are
+simultaneously satisfiable while each maximises its own term of `c_w`. So the greedy word is
+optimal and
+
+```text
+      Bmax(j)  =  ( sum_{m<k} 3^(k-1-m) 2^(a_m) ) / (2^j - 3^k),     k = floor(alpha j),
+```
+
+exactly — reproducing `maxbound.py`'s exact rational at `j = 65` digit for digit, and the DP's
+whole record set. Two things fell out. The spiking at convergents is **forced**: any
+counterexample with `chi(n) <= 1.1207 sqrt(n)` has `chi(n)/k(n)` equal to a convergent of
+`log2(3)` (Legendre, from minimality alone — no verification bound as input). And the DP was not
+merely slow: at `j = 301994` it read `7.101490*10^11` against the exact `7.1022044774*10^11`,
+`0.01%` **low**, in the direction that makes a certificate unsafe.
+
+With the identity in hand a `7.2*10^11` scan pushes the floor from `301993` to **`17087914`**,
+and the contiguous floor undersells it — only `8260` of the `j <= 3*10^8` are not excluded at
+all (density `2.75*10^-5`), and their consecutive gaps take exactly eight values, every one a
+convergent numerator of `log2(3)` or a sum or difference of two.
 
 This also corrected `C-6241`, whose headline ("13% chance a counterexample lies beyond the
 verified range") mislocated the mass: those candidates satisfy `n <= 9267`, so they lie inside

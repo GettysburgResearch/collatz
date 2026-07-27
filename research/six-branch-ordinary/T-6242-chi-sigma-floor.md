@@ -11,6 +11,8 @@ Dependencies:        L-6173(b) (the word reformulation), L-6173(c) (the scan to 
 Scope:               the coefficient-stopping-time question
 Experiment:          experiments/X-6240-coefficient-stopping/
 Corrects:            C-6241's headline
+Superseded in part:  T-6243 gives an exact closed form for Bmax(j), replacing (b)'s dynamic
+                     program, and raises (c)'s floor from 301993 to 17087914
 ```
 
 ## Statement
@@ -61,10 +63,13 @@ where it jumps to `7.101*10^11`. **So 3x the scan bought 2.4x the floor**, and t
 entirely arithmetic: it is the quality of the convergent (`D/2^j = 2^-15, 2^-18, 2^-23`) that
 sets each spike.
 
-**Roadmap for further work.** The floor is the last convergent whose spike lies below the scan
-bound, so the next jump needs a scan past `7.101*10^11` (~6 CPU-hours by extrapolation from the
-`6*10^9` run), which would push the floor beyond `j = 500000`. Convergent numerators after
-`301994` are `16785921, 17087915, ...`, so the jumps thereafter are large and sparse.
+**Roadmap for further work — carried out, see T-6243.** The floor is the last convergent whose
+spike lies below the scan bound, so the next jump needs a scan past `Bmax(301994)`. T-6243 then
+showed (i) that value is exactly `7.1022044774*10^11`, not the `7.101490*10^11` the DP of (b)
+reports — the DP is `0.01%` **low**, i.e. wrong in the direction that makes it unsafe as a
+certificate; (ii) `Bmax(j)` has a closed form, so the DP is not needed at all; and (iii) the
+next obstruction after `301994` is at `17087915`, with nothing in between, so a `7.2*10^11` scan
+raises the floor to `17087914`. **Read T-6243 rather than this paragraph.**
 
 **(d) The obstruction is arithmetic, not accidental.** `Bmax(j)` spikes exactly at the
 convergents of `log2(3)`, because `D = 2^j - 3^{k_j}` is smallest there. The first `j` at which
@@ -142,9 +147,11 @@ below `2^31` against `0` observed) should be read as the model over-predicting o
   spike at `j = 301994`, which gives the exact floor `301993`. The `200000` figure is superseded.
 * `301993` is now limited by the spike at `j = 301994`, i.e. by the scan bound `6*10^9` —
   not by the DP range, which reaches `500000`.
-* The float implementation is used beyond `j = 3000`. It agrees with exact arithmetic wherever
-  both run, and only `log2` values of order `10^5` are involved, well within double precision;
-  but the `j > 3000` range rests on it.
+* The float implementation is used beyond `j = 3000`. **This turned out to matter**: at
+  `j = 301994` it accumulates `0.01%` of error and lands *below* the true value, which is the
+  unsafe direction for a certificate. T-6243 replaces it with an exact closed form; the floors
+  quoted in (c) happen to be unaffected, because the scan bounds `2*10^9` and `6*10^9` are far
+  from the spike values, but no future floor should be taken from the DP.
 * (e) is heuristic and labelled as such: `nu_L` is measured only to `L = 432`.
 * The identification with Terras's coefficient stopping time is from memory of the literature.
   The mathematics does not depend on the attribution.
