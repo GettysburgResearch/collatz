@@ -64,9 +64,14 @@ neither a curiosity nor merely about floors:
   agreement of the minima;
 * and it is a known open problem, not a new one.
 
-**The practical consequence: nobody in this project should spend effort trying to prove the
-coincidence.** It is the coefficient-stopping-time conjecture, open since 1976. Conversely,
-anyone who *needs* it should use (a), which is free, and treat the converse as a hypothesis.
+**The practical consequence is the opposite of a stop sign.** Identifying (c) as the
+coefficient-stopping-time question connects this namespace to an existing literature, gives the
+problem a name and a history, and — via (b) — hands over a reformulation that literature does
+not appear to exploit: the search is over *words*, with the explicit test `r_w D <= c_w`.
+C-6241 turns that into a quantitative model and finds the expected number of counterexamples is
+`O(1)`, with `~13%` of it beyond the verified range. Anyone who merely *needs* the coincidence
+should use (a), which is free, and treat the converse as a hypothesis; anyone who wants to
+*settle* it now has a target list of word lengths.
 
 R-6171 was written to depend only on `nu'_L <= nu_L` — an inequality in the safe direction —
 and is therefore unaffected either way. That was luck as much as design, and is worth stating
