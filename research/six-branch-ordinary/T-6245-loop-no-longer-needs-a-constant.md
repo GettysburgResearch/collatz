@@ -232,6 +232,14 @@ criterion needs far less than that.
 * R-6171 is superseded in its threshold, **not refuted in its method**. Its exponent accounting
   is correct for the bound it uses; the bound is what T-6243 improves. R-6171(c)'s measurement
   and (d)'s arithmetic stand.
+* **The improvement is twofold, and both halves come from T-6243.** (i) The exact `Bmax` replaces
+  R-6171(a)'s `c_j <= 2^(j-k) 3^k`. (ii) R-6171's sequence is `nu'`, defined by the *shifted*
+  condition `k_j > alpha j - 1`, because its argument only bites when `k_j` is a full unit below
+  the line; the case `alpha j - 1 < k_j < alpha j` — which is exactly where `chi` lives, and
+  where the real constraint is — it cannot reach. This file uses `nu`, defined by
+  `k_j >= ceil(alpha j)`, which is what `chi(m) = j` actually gives for `j' < j` and what X-6170
+  measures. Since `nu' <= nu`, using `nu` is the stronger sequence as well as the correct one,
+  and the two are equal wherever X-6170 computed both (`s_L = nu_L` for every `L <= 375`).
 * Q-6174's *barrier argument* — that Terras bijection plus minimality plus counting cannot
   produce a codimension above `0.050044` — is untouched. What is void is its *target*: `0.415037`
   was computed from R-6171's threshold, and the threshold has moved. The barrier now proves that
