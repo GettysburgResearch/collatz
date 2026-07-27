@@ -177,6 +177,24 @@ difference *decreasing*: 0.032 at k = 6 down to ≈0.010–0.013 by k = 24–30)
 of an improved exponential decay rate; the gain is a constant factor of roughly 0.51–0.59 in
 density, roughly uniform in k.
 
+**The interleaved sieve settles the flagged headroom the same way (L-9926, PROVED).** Adding the
+backward move z ↦ 2z to the descent map gives a genuinely richer, two-dimensional object — but the
+gain is again only a **bounded factor**: log₂(Aug/Int) saturates at ≈ 0.50 bits (≈ 1.7× over
+L-9909), and the apparent upward drift in the k ≤ 20 window is an artifact — the reviewer extended
+the exact counts to k = 28 and the residual drift **reverses sign** (+0.0059 bits/level over
+k = 16→26 vs −0.0005 over k = 22→28). So interleaving is not a rate improvement either, and the
+"more moves ⟹ better exponent" intuition has now failed twice in this packet.
+
+Two things did come out of it, both worth keeping. (i) A **correction**: L-9919.8's k = 16 count of
+1366 is wrong — the true value is **1363**, because that search capped word length at 12 while
+three classes (16383, 24575, 57343 mod 2¹⁶) are killed only by words of length 13–14. The lower
+rows and all soundness lemmas stand. (ii) The first **floor-free** congruences on the minimal
+counterexample: µ ≢ 4 (mod 9) and µ ≢ 10 (mod 81), hence **µ mod 36 ∈ {3, 7, 15, 19, 27}**, with
+the joint sieve pinning µ to 6194 classes mod 2¹²·3⁴ (density 0.0187). These need no verified sweep
+at all. Also proved: the clean **collapse analogue fails at depth 4** (a mixed kill exists at class
+27 mod 4096 that classes 2047/4095 do not share), so the product form of the joint sieve is a
+depth-≤3 phenomenon, not a general law.
+
 The reason is a proved **collapse theorem**: the branch that would actually use 3-adic information
 about n collapses to the single congruence μ ≢ 2 (mod 3), while all the genuine new strength sits
 in the branch that uses no 3-adic input at all. So mod-6 joint sieving is not the richer object it
