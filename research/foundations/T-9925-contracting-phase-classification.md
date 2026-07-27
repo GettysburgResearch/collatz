@@ -9,13 +9,16 @@ Title:         Toward the parameter-uniform contracting-phase floor: exact
                a <= 448 (all b, both phases), partial rows 449..469 with the
                27 exceptional packets listed exactly, the supercritical sign
                closure for the entire region Q < P, and the open floor
-               problem Q-9925 whose positive answer closes the complete
-               contracting phase.
-Status:        PROPOSED
+               problem Q-9925 whose positive answer closes a cofinite tail
+               of every contracting row, and, at the window-compatible rate
+               of Q-9925(B), the complete contracting phase.
+Status:        PROVED
 Authoring agent:   fable-02-p19
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v27 (adversarial review 2026-07-27: PASS)
 Created:       2026-07-26
-Last updated:  2026-07-27
+Last updated:  2026-07-27 (status upgraded after independent adversarial
+               review; four minor fixes applied in place — see the
+               Verification note at end of file)
 Dependencies:  NOTATION.md (conventions; D-9902/D-9904/D-9905 only to name the
                physical objects via T-9924);
                L-9923 (PROVED): L-9923.2 (2a-2c) cycle-minimum sieve with the
@@ -82,9 +85,10 @@ derivations below verify, correct, and largely supersede:
    anywhere**: the obstruction to closing a row is the size $S_a$ of its
    stable target family, never the parity of $a$. The commissioned "hunt for
    even-row congruences" is thereby unnecessary; and the specific suggestion
-   (mod 7) is provably fruitless as a full-block kill: killing a complete
-   $s$-block mod 7 would need $2^a \equiv 3 \pmod 7$, which has no solution
-   ($2^a \in \{1,2,4\}$) — Step 6 Remark.
+   (mod 7) is provably fruitless as a full-block kill on every block that
+   survives mod 9: the binding case ($s = 2$) would need $2^a \equiv 3
+   \pmod 7$, which has no solution ($2^a \in \{1,2,4\}$), and $s \ge 3$
+   blocks meet every residue — Step 6 Remark (supplied in review, v27).
 4. *Corrected/refined:* the "surviving trio $\{3D,\, 2D+Q,\, D+2Q\}$" is the
    stable target family exactly for $6 \le a \le 9$ ($S_a = 1$); in general
    the stable family is $\mathcal{T}_\infty(a)$ of size $3S_a(S_a+1)/2$ with
@@ -241,13 +245,21 @@ if $Q < P$ ($Q = P$ is impossible).  All arithmetic is exact.
   whose 3-adic phase $\sigma(u) = \sum_{\delta:\, r_{\delta+1} =
   \mathsf{A}} 9^\delta (q_{r_1}\cdots q_{r_{\delta+1}})^{-1} \in
   \mathbb{Z}_3$ is a **positive rational integer**?  A positive answer
-  closes the **complete contracting phase** (formulation (i) of the
-  commission): every row $a$ closes at depth $d$ with $H_d > S_a$, whose
-  window requirement $t_c \le a + b_0(a) - 1$ is asymptotically free
-  ($t_c \approx \log_9 S_a \approx 0.054\,a \ll a$).  (B) Effective rate:
-  prove $H_d \ge c\,\lambda^d$ for some $\lambda > 1$.  Empirically
+  closes, in every contracting row $a$, all $b$ with $H_{2(a+b-1)} >
+  s_{\max}(a,b)$ — a **cofinite tail of every row**, since $s_{\max}
+  \downarrow S_a$ while $H_{2(a+b-1)} \to \infty$ in $b$.  Closing the
+  **complete** contracting phase (formulation (i) of the commission)
+  additionally requires certificates to land inside the window $t_c \le
+  a + b - 1$ all the way down to $b = b_0(a)$ — a *rate* requirement, met
+  by (B) below with any $\lambda > (9/8)^{1/(2(1+\theta))} = 1.05010\ldots$
+  together with an effective sub-exponential floor on $D/Q$ at $b = b_0$;
+  (A) alone does not formally deliver the window.  *(Precision corrected
+  in review, v27; see Step 8(b).)*  (B) Effective rate:
+  prove $H_d \ge c\,\lambda^d$ for some $\lambda > 1$ — window-compatible
+  as soon as $\lambda > (9/8)^{1/(2(1+\theta))}$.  Empirically
   (labelled EMPIRICAL: the certified depths give $t_c(T) - \lceil \log_9 T
-  \rceil \in [3, 11]$ over $T \in [60, 10^{24}]$) the floor grows like
+  \rceil \in [3, 11]$ over $T \in [60, 10^{24}]$, i.e. $t_c \approx \log_9
+  T$, far inside the window) the floor grows like
   $H_{2t} \gtrsim 9^{\,t - 12}$ at computed depths.  This is this file's
   formulation of the external program's requested "parameter-uniform lower
   bound for $H_d$" (Provenance), stated entirely in in-tree objects.
@@ -258,7 +270,7 @@ if $Q < P$ ($Q = P$ is impossible).  All arithmetic is exact.
 > excludes cycles realizable inside the fixed-weight $\{\mathsf{A},
 > \mathsf{B}\}$ macro grammar, nothing more.  Outside its scope:
 > (i) the 27 listed packets and all contracting rows $a \ge 470$ — the exact
-> resisting set, whose closure is Q-9925;
+> resisting set, whose closure is the target of Q-9925;
 > (ii) entirely negative integral cycles of supercritical packets (no
 > physical meaning; not excluded);
 > (iii) dynamics not expressible as fixed-weight $\{\mathsf{A},\mathsf{B}\}$
@@ -355,9 +367,9 @@ file replaces the per-packet view with three uniform mechanisms:
 
 The result is the largest cycle-free region of the family so far
 ($a \le 448$, both phases, classification form), the exact frontier beyond
-it, and a clean statement (Q-9925) equivalent to closing the contracting
-phase entirely: a single question about integer values of a 3-adic series
-over the letter tree.  The supercritical half (T-9925.8) is the two-line
+it, and a clean statement (Q-9925) — a single question about integer values
+of a 3-adic series over the letter tree — whose effective form (the (B)
+rate) closes the contracting phase entirely.  The supercritical half (T-9925.8) is the two-line
 sign argument of L-9923.3(ii), quantified over the whole region for the
 first time; with it, the family's classification is complete on $y \ge 0$
 for every $a \le 448$.
@@ -455,9 +467,10 @@ $$E_{\max} - 3sD - (3s-1)P = 3\cdot16^b\big(9^a - (s+1)8^a\big) +
 an exact identity (collect the $16^b$ and $9^{a+b}$ terms; verified
 symbolically in T8).  For $s \le S_a$: $(s+1) \le \lfloor (9/8)^a\rfloor$,
 so $(s+1)8^a \le \lfloor (9/8)^a\rfloor 8^a \le 9^a$, with equality
-impossible ($8^a \nmid 9^a$); hence $9^a - (s+1)8^a \ge 0$, indeed $\ge 1$
-— wait, $\ge 0$ suffices: both summands are then $> 0$ or $\ge 0 + 9^{a+b}
-> 0$.  So every $(m,k)$ with $s \le S_a$, $k \le 3s-1$ has $Dm + Qk \le
+impossible ($8^a \nmid 9^a$); hence $9^a - (s+1)8^a \ge 1$, and the
+displayed right side is $\ge 3\cdot16^b + 9^{a+b} > 0$ *(display cleaned
+in review, v27; a drafting interjection stood here)*.  So every $(m,k)$
+with $s \le S_a$, $k \le 3s-1$ has $Dm + Qk \le
 E_{\max}$.  The count is $\sum_{s=1}^{S_a} 3s = \tfrac32 S_a(S_a+1)$.
 $\square$
 
@@ -650,6 +663,24 @@ $\beta = 0$ or supercritical totals die by Step 7 ($E = 3(9^\alpha -
 ladder die by Step 5(e).  What survives is exactly: per-period totals in
 the resisting set of the Statement.  $\blacksquare$
 
+**Remark (mod-7 full-block fruitlessness — the derivation cited by
+Provenance item 3; the remark was referenced but missing from the
+submitted file and is supplied here in review, v27).**  All constants of
+a packet lie in a single class mod $7$ (mod-21 rigidity, Step 0), namely
+$c \equiv -3D \pmod 7$ (from $8 \equiv 1$, $9 \equiv 16 \equiv 2$); the
+$s$-block of sieve targets is $\{3sD + Pk : 0 \le k \le 3s-1\}$ with $P$
+invertible mod $7$, so the block avoids $c$ iff no $k$ in the range has
+$k \equiv 3(s{+}1)(1 - 2^{-a}) \pmod 7$.  For $s \ge 3$ the range covers
+all seven residues: no kill, for any $a$.  For $s = 2$ the range misses
+exactly one residue, forcing $2(1 - 2^{-a}) \equiv 6$, i.e. $2^a \equiv 3
+\pmod 7$ — unsolvable, since $2^a \bmod 7 \in \{1, 2, 4\}$.  For $s = 1$
+the kill condition is $a \equiv 1 \pmod 3$, which does occur — but the
+$s \equiv 1 \bmod 3$ blocks are exactly those the mod-9 rule (Step 4(d)
+reduced mod 9) already kills for every $a$.  Hence **no mod-7 congruence
+kills any block that survives mod 9** — the commissioned even-row mod-7
+hunt is fruitless, as asserted.  (Verified exhaustively for $a \le 21$ at
+the first two contracting $b$ of each row, in the review suite.)
+
 ### Step 7 — supercritical completion (T-9925.8)
 
 Let $a \ge 1$, $Q < P$ (by T-9925.1 exactly the packets with $b < b_0(a)$,
@@ -689,20 +720,29 @@ least positive residue $s^*$, so $H_{2t} \le s^*$ for all large $t$, and
 $\sup_d H_d \le s^*$ by monotonicity of the tail.  **Hence: $\sup_d H_d = \infty
 \iff$ no infinite letter sequence has $\sigma(u) \in \mathbb{Z}^+$.**
 
-**(b) Consequence of a positive answer.** If $\sup_d H_d = \infty$, then
-for every $a \ge 1$ pick $d(a)$ with $H_{d(a)} > S_a$ and a certificate
-depth; the window condition $t_c \le a + b_0(a) - 1$ holds for all large
-$a$ automatically (the alive tree at threshold $T$ dies within $t_c(T)
-\approx \log_9 T + O(\log\log T)$ levels empirically, and in any case
-$t_c$ may be taken $\le$ any depth at which the certificate lands, while
-$L \ge a$); small-$b$ packets are covered by rungs at $T \ge
-s_{\max}(a, b_0(a))$, which is finite for every fixed $(a, b_0)$.  Modulo
-the (finite, effective, per-$a$) certificate computations, **a positive
-answer to Q-9925(A) closes the complete contracting phase**, which with
-Step 7 would be the full classification of the fixed-weight family on
-$y \ge 0$.  A quantitative floor $H_d \ge c\lambda^d$ (Q-9925(B)) would
-make the whole scheme uniform-effective with explicit row-by-depth
-bookkeeping.
+**(b) Consequence of a positive answer** *(precision corrected in review,
+v27; the original overstated (A))*. The kill mechanism closes the packet
+$(a, b)$ exactly when $H_{2(a+b-1)} > s_{\max}(a,b)$ (the deepest window
+depth, by $H$-monotonicity 5(a) and the kill theorem 5(e)).  If $\sup_d
+H_d = \infty$ then, for every fixed row $a$: $s_{\max}(a,b) \downarrow
+S_a$ (Step 2) while $H_{2(a+b-1)} \to \infty$ in $b$, so the row closes
+for all $b \ge$ a computable $b^{\#}(a)$ — **(A) alone closes a cofinite
+tail of every contracting row**, leaving per row a finite initial segment
+$b_0(a) \le b < b^{\#}(a)$.  What (A) alone does *not* deliver is the
+window at the bottom of the row: killing $(a, b_0(a))$ needs
+$H_{2(a+b_0-1)} > s_{\max}(a, b_0) \approx (Q/D)\,(9/8)^a$ at the fixed
+depth $2(a + b_0(a) - 1) \approx 2(1+\theta)a$, i.e. a *rate*.  Any
+effective floor $H_d \ge c\lambda^d$ (Q-9925(B)) with
+$$\lambda \;>\; (9/8)^{1/(2(1+\theta))} \;=\; 1.05010\ldots$$
+— combined with an effective sub-exponential lower bound on $D/Q$ at
+$b = b_0$ (Baker-type, to control the $Q/D$ factor) — closes **every**
+row completely for all large $a$, the finitely many remaining rows being
+certificate computations of exactly the kind performed here.  In that
+effective form the scheme, with Step 7, is the full classification of the
+fixed-weight family on $y \ge 0$.  The certified depths' margins
+$t_c(T) - \lceil \log_9 T\rceil \in [3, 11]$ (EMPIRICAL, re-verified in
+review) are far inside the window and are the ground for expecting
+window-compatibility to hold.
 
 **(c) What the problem is really asking (structural remark).** $\sigma(u)$
 is a 3-adically convergent series of rationals with denominators powers of
@@ -1330,8 +1370,9 @@ for (a, b, Rm) in [(6, 2, 2), (7, 2, 2), (6, 3, 1), (8, 2, 1), (9, 2, 1)]:
 print("RESULT:", "ALL CHECKS PASSED" if fails == 0 else f"{fails} FAILURES", flush=True)
 ```
 
-**Output (verbatim, run 2026-07-27, CPython 3, Linux; identical across
-reruns — deterministic):**
+**Output (verbatim, run 2026-07-27, CPython 3, Linux; deterministic and
+identical across reruns up to the run-dependent `N.Ns` timing fields —
+review-verified byte-identical modulo exactly those fields):**
 
 ```text
 T1 b0 table (a: least contracting b): {0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2, 10: 3, 11: 3, 12: 3, 13: 3, 14: 3, 15: 4, 16: 4, 17: 4, 18: 4, 19: 4, 20: 5, 21: 5, 22: 5, 23: 5, 24: 5, 25: 6, 26: 6, 27: 6, 28: 6, 29: 6, 30: 7}
@@ -1473,3 +1514,202 @@ extension of T-9924 beyond $a \le 5$, re-aimed mid-work per the
 coordinator's supersession notice toward the parameter-uniform floor
 (Q-9925).  Status PROPOSED per NOTATION.md conventions; an independent
 reviewing agent may upgrade after verification.*
+
+---
+
+## Verification note (fable-02-v27, 2026-07-27)
+
+Adversarial review per README §13, without reliance on the author's code
+or confidence: every proof step re-derived on paper from the explicit
+dependencies, and every load-bearing computation re-implemented **from
+the statements alone** (own code, exact integer arithmetic throughout,
+different data layouts and a different certificate guard modulus;
+session-scratchpad suite `v27/v27a–v27f`, ~7 min total, the $10^{24}$
+rung 99.6 s).  Verdict: **PASS** after four minor fixes (V.4), applied in
+place and attributed inline.  Status PROPOSED → PROVED.
+
+### V.1 Proof reconstruction (paper)
+
+- **Step 0 imports**: each restatement compared clause-by-clause against
+  L-9923.2(2a)(2b)(2c), L-9923.3(ii), T-9924.2/.4(a)/.5/.7/.1(e),
+  T-9924 Corollary 2 and Step 4(vi)–(vii) in the PROVED files — no
+  misquotation, no silent strengthening; no circularity (neither file
+  cites T-9925).
+- **T-9925.1/.2**: re-derived.  $\rho$ strictly decreasing (via $g_b =
+  D/16^b$ strictly increasing), $\rho \downarrow \tau_a$, $Q/D \downarrow
+  1$, hence $s_{\max} = \lfloor\rho/3\rfloor$ **nonincreasing in $b$ — the
+  coverage scan's monotonicity is proved (Step 2), not assumed** (probe
+  (vi) of the commission: clean).
+- **T-9925.3**: the $F_s$ identity re-derived by hand in the basis
+  $\{16^b9^a, 16^b8^a, 9^{a+b}\}$ — exact; the $s = S_a$ equality case is
+  impossible precisely because $8^a \nmid 9^a$, giving $9^a - (s{+}1)8^a
+  \ge 1$.
+- **T-9925.4**: prepend/append reductions, exact valuations (ultrametric,
+  distinct-valuation terms), the $\bmod\,3^{3+2t_B}$ unit law with
+  exponent $e - 4t_B - 3$, and the mod-9 sign rule via $e - 3 \equiv a-1
+  \bmod 2$: all re-derived.
+- **T-9925.5 (master congruence — the engine)**: re-derived from $P =
+  3^{2L}$: $D \equiv Q$, so $E_w \equiv Q(m{+}k) = 3sQ \bmod 3^{2L}$;
+  dividing by 3 costs exactly one power — the congruence lives mod
+  $3^{2L-1}$, and **every use in the file is at depth $2t_c \le 2L-1$**
+  (grep-audited; no use of depth $2L$ exists).  Suffix form = rational
+  identity in $\mathbb{Z}[1/2] \subset \mathbb{Z}_3$; locality window
+  exact.
+- **T-9925.6**: certificate lemma re-proved.  State compression
+  $(\sigma \bmod 3^{2t_g}, \#\mathsf{A})$ is lossless — the level-$t$
+  A-extension increment $9^{t-1}(8^{i_A+1}16^{t-1-i_A})^{-1}$ depends
+  only on $(t, i_A)$; the alive filter (least representative $r \le T$,
+  or $r = 0$ with $9^t \le T$) is exactly the necessary condition on a
+  witness's truncations, so pruning never removes a witness ancestor; the
+  padding remark is valid (prepended letters sit at end-distance $\ge
+  t_c$ and vanish mod $3^{2t_c}$).  $H_d$ monotonicity uses $H_d < 3^d$,
+  true since the suffix $\mathsf{A}$ has unit phase.
+- **T-9925.7**: kill-theorem quantifier order audited (certificate is a
+  universal statement over words, proved before any cycle is assumed);
+  assembly cases $a = 0$, gate rows ($s_{\max} = 0$), covered rows,
+  supercritical rows all check; the letter-level corollary's case split is
+  exhaustive.
+- **T-9925.8**: re-derived from scratch; the only inputs are $E_w \ge
+  E_{\min} > 0$ (any $a \ge 1$) and $Q < P$ — **no hidden positivity or
+  parity assumption appears at general $(a,b)$**; it is T-9924 Step
+  4(vi)'s argument with $(5,1)$ replaced by an arbitrary supercritical
+  packet, verbatim as claimed.  The divergence clause preserves $y_t > 0$
+  inductively.
+- **Q-9925 / König (Step 8(a))**: the equivalence $\sup_d H_d = \infty
+  \iff$ no infinite suffix word has $\sigma(u) \in \mathbb{Z}^+$ is
+  **sound** (binary suffix tree is finitely branching; positivity enters
+  through least-positive representatives, i.e. $s \ge 1$ from $m \ge 1$,
+  $k \ge 0$, $3 \mid m{+}k$; the residues $r_t$ stabilize once $9^t > C$).
+  The question itself is stated as OPEN, the growth remark as EMPIRICAL.
+  Step 8(b) as submitted overstated (A)'s consequence — fixed, V.4(1).
+
+### V.2 Independent computation (own implementations)
+
+- **Master congruence**: verified exhaustively on all 2046 words $L \le
+  10$ ($\sigma$ definition $=$ suffix form mod arbitrary 3-powers;
+  locality at every $t \le L$), and on **6818 real (word, m, k)
+  solutions** of $E_w = Dm + Qk$ (all integer solutions parametrized via
+  $m \equiv E_w D^{-1} \bmod Q$, signs unrestricted) across every
+  contracting packet with $L \le 9$: $s \equiv \sigma(w) \bmod 3^{2L-1}$
+  holds in every single case.  Physical representations ($m \ge 1$,
+  $k \ge 0$, $3 \mid m{+}k$): **zero** in every covered packet — the
+  direct alphabet-vs-target separation, reconfirmed.  600 random
+  synthetic checks at $a, b \le 40$.
+- **Constant laws**: all 1013 words ($a \ge 1$, $L \le 9$) — $\nu_2 =
+  4\ell_B$, $\nu_3 = 1 + 2t_B$, the $16/9$ reduction, the
+  $\bmod\,3^{3+2t_B}$ law, mod-9 sign, mod-8, mod-21 packet rigidity.
+- **Floor tables**: own direct DP over all suffixes/prefixes: `H3`
+  ($d \le 40$) and `H2` ($d \le 45$) match every tabulated value —
+  including the prose-only $H_{20} = 24213780$ — monotone, $H_d < 3^d$.
+- **Certificates**: own alive-set recursion (packed single-int states,
+  guard margin 16 vs the author's 35 — same results, so the floor is not
+  a working-modulus artifact).  All fourteen rungs reproduce $t_c$
+  **exactly**, with identical peak alive counts (33 554 432 at
+  $T = 10^{24}$, $t_c = 37$): $H_{74} > 10^{24}$ independently
+  certified.  Certificates cross-checked against the direct `H3` table
+  wherever $2t_c \le 40$.
+- **Coverage (own ladder, own scan)**: $A_{\text{complete}} = 448$;
+  $A_{\text{tail}} = 469$ with $S_{469} = 978437361500377419679068 \le
+  10^{24} < S_{470} = 1100742031687924597138952$ (file's value exact);
+  the **27 exceptional packets match the file's list pair-for-pair**;
+  every row 449–469 has a contiguous bad interval from $b_0(a)$ of length
+  $\le 6$ ($b_2 \le b_0 + 6$); rows $\ge 470$ uncovered at every $b$
+  ($S_a$ nondecreasing verified to 600).  Each of the 27 resists **only**
+  through $s_{\max} > 10^{24}$ (windows $a{+}b{-}1 \ge 540$, wide open);
+  max $s_{\max}$ over the 27 is $65964376894522553107471731 \approx
+  6.60\times10^{25} < 10^{26}$, confirming that the single projected
+  $T = 10^{26}$ rung would retire all 27.
+- **Rows 1–5 (window audit, probe (iv))**: re-closed by the same rungs
+  the file prints — $(3,1)$: $s_{\max}=2$, rung $(2,1)$; $(4,1)$:
+  $s_{\max}=6$, rung $(8,2)$; $(4,2), (5,2), (5,3)$: $s_{\max}=1$, rung
+  $(2,1)$ — with $2t_c \le 2L-1$ margins $\ge 5$ at every one; gate
+  packets have $s_{\max} = 0$.  **No off-by-one found at the tightest
+  rows.**
+- **Mandatory $a \le 5$ gate (probe (viii))**: every packet datum
+  recomputed and compared against T-9924's own printed numbers — $Q, P,
+  D$ with factorizations, full alphabets, counts $4/5/15/21/56/6$,
+  extrema, widths, collapse windows $Q < W < P{+}Q$ at $(4,2)$ and the
+  $W > P{+}Q$ excesses at $(5,2)/(5,3)$, target sets $\{4893, 9786\}$,
+  $\{1551405\}$, $\{10816917, 15599886\}$, $\{273513021, 316559742\}$,
+  the mod-7/9/8 verdicts, margins $189726 / 199047 / 36665535$, the
+  eleven gate-boundary integers of T-9924 Step 3c, and the $(5,1)$
+  closed form $E(p) = 21\cdot9^{6-p}8^{p-1} + 21459$ with mod-$Q$
+  distinctness: **byte-exact agreement**.
+- **Supercritical (T-9925.8) adversarial hunt**: nine supercritical
+  packets (incl. all $(a,0)$, $a \le 4$, and $(5,1)$), every constant
+  sequence up to $R = 6$ (small alphabets) — every cycle-equation
+  instance has numerator $> 0$ and denominator $< 0$; all 21 integral
+  roots found are $< 0$.  The 188-packet hypothesis check ($a \le 40$:
+  $Q < P$, $E_{\min} > 0$) reproduced.
+- **Confined boxes (probe (xi))**: own graph search at $(6,2), (6,3),
+  (7,2), (7,3), (8,2), (9,2), (10,3), (12,3)$ — boxes match the file's,
+  **zero** integral macro edges in all eight (in particular the
+  $168 = 6 \times 28$ divisibility failures at $(6,2)$, matching T-9924
+  V.4); cycle-equation enumerations, 2328 sequences, 0 integral
+  solutions.
+- **Coordinator-correction claims (probe (ix))**: all verified — block
+  class mod 9 is $3s(-1)^a$ (kill iff $s \equiv 1 \bmod 3$, both
+  parities; even-$a$ constants $\{0,6\}$, odd-$a$ $\{0,3\}$; no parity
+  asymmetry); $2^a \bmod 7 \in \{1,2,4\}$ always; trio
+  $\{3D, 2D{+}Q, D{+}2Q\}$ exactly for $6 \le a \le 9$ ($S_{10} = 2$);
+  $\mathcal{T}_\infty(a)$ of size $\tfrac32 S_a(S_a{+}1)$ exact at $b \ge
+  b_1(a)$, strict superset below, $(S_a, b_1)$ table matches; $b_0 =
+  \lceil a\theta\rceil$ for $a \le 200$ at 200-digit precision plus both
+  integer certificates per row; $\rho/\tau_a/(Q/D)$ monotonicity in
+  exact rationals.
+- **Embedded script**: extracted from the file (17 991 bytes), re-run:
+  RESULT: ALL CHECKS PASSED, output byte-identical to the printed block
+  modulo the run-dependent timing fields (V.4(4)).
+
+### V.3 External citations and the overlap claim
+
+"T-9609/9610/9611" occur only in Provenance, the Dependencies header, and
+the Dependency audit — branch-qualified ("the source program's own
+branch, not present in this working tree"), marked UNVERIFIED, and used
+nowhere (grep-audited); conforms to ID-DISAMBIGUATION.md.  The overlap
+claim — that this file's $a \le 448$ is an independent in-tree derivation
+of the external $6 \le a \le 375$ coverage — is **fair**: the derivation
+rests only on in-tree PROVED files (L-9923, T-9924) plus this file's own
+arguments, by a different mechanism (one 3-adic suffix invariant vs.
+their reported CRT tables), and nothing external is load-bearing.
+
+### V.4 Defects found and fixes applied (all minor; none touches a theorem)
+
+1. **Q-9925(A) consequence overstated** (Statement bullet, header title
+   line, Motivation, Step 8(b)): $\sup_d H_d = \infty$ alone closes, per
+   row, only the $b$ with $H_{2(a+b-1)} > s_{\max}(a,b)$ — a cofinite
+   tail of every row — and does **not** by itself place certificates
+   inside the window down to $b_0(a)$; that is a rate requirement, met by
+   Q-9925(B) with any $\lambda > (9/8)^{1/(2(1+\theta))} = 1.05010\ldots$
+   (plus an effective $D/Q$ floor at $b_0$).  Text weakened accordingly
+   at all four sites; the $[3,11]$ empirical margins (re-verified) retained
+   as labelled empirical grounds.  No proved sub-claim T-9925.1–.8
+   depends on Q-9925.
+2. **Dangling cross-reference** (Provenance item 3 cited a "Step 6
+   Remark" that did not exist).  The mod-7 claim is correct in context;
+   the missing remark is now supplied at the end of Step 6 with the
+   precise derivation and scope ($s \ge 3$: never killable; $s = 2$:
+   needs $2^a \equiv 3 \bmod 7$, unsolvable; $s = 1$: killable iff
+   $a \equiv 1 \bmod 3$ but already dead mod 9), verified exhaustively
+   for $a \le 21$; the Provenance sentence tightened to match.
+3. **Drafting interjection in Step 3** ("— wait, $\ge 0$ suffices…")
+   replaced by the clean strict form ($9^a - (s{+}1)8^a \ge 1$); content
+   unchanged.
+4. **"identical across reruns" overclaim** on the output block: the
+   `N.Ns` timing fields are run-dependent; qualifier added.  All
+   mathematical output lines reproduce exactly.
+
+### V.5 Confidence and status action
+
+High confidence.  The theorem chain is short and elementary at every
+link — positivity, the minimum-edge sieve, one congruence mod $3^{2L-1}$,
+a finitely-branching pruned tree, and two monotonicity facts — and every
+link was re-derived and recomputed here independently, including the
+$10^{24}$ certificate, the full coverage scan with its exact 27-packet
+frontier, and the byte-exact $a \le 5$ agreement with the PROVED T-9924.
+The four defects were display/precision-level, none load-bearing, and are
+fixed in place with attribution.  Header updated: Status PROPOSED →
+PROVED, reviewer recorded.  Not marked INDEPENDENTLY_VERIFIED (README §7
+requires a further independent reconstruction beyond this review).
+
+*Reviewed by fable-02-v27, 2026-07-27.*
