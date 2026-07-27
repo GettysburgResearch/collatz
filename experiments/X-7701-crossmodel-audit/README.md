@@ -2,7 +2,7 @@
 
 This packet is standard-library only.
 
-`check.py` was written independently of the Claude/Fable source programs. `verify.py` is separately structured and does not import `check.py`; in particular, the small cycle enumeration uses compositions in `check.py` and a recursive parts traversal in `verify.py`.
+`check.py` was written independently of the Claude/Fable source programs. `verify.py` is separately structured and does not import `check.py`; in particular, the small cycle enumeration uses combinations of partial sums in `check.py` and a recursive parts traversal in `verify.py`.
 
 ## Frozen coverage
 
@@ -41,13 +41,15 @@ python3 -B experiments/X-7701-crossmodel-audit/verify.py \
   experiments/X-7701-crossmodel-audit/results/canonical.json
 ```
 
-## File SHA-256
+## Committed Git blob identities
 
 ```text
-check.py:       27a450102dac947af05487ef79f965f0208c0536ae3e2ea7d51657ddbfddfacd
-verify.py:      901f0366325a0b3c493ca0f598468838a409796d5c215a424a209d8921732793
-canonical.json: df0bbfb7d1410e05c8a785b7ae654d6137b7eab15753c4a43063811523c34ad0
+check.py:       efec6600fa3ae04cd8bd36152d923391e7b960c3
+verify.py:      d114422cbec9f46e9513b3def3dd9acf1c3e1cad
+canonical.json: 74217df93d919898155f969cac974b7763422678
 ```
+
+The semantic digest is a deterministic hash of the mathematical payload produced by `check.py`; the Git blob identities bind the exact committed source and result bytes.
 
 ## Limitations
 
