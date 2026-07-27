@@ -207,6 +207,27 @@ hand-checked sample would suggest a unification that is not there.
   every odd modulus tested. Q-6174's CRT barrier, visible in data — there is nothing at odd
   moduli to find.
 
+## The central law, now tested rather than assumed
+
+Everything this namespace says about architectures rests on `m_N ~ (2^q/D)^N`. It had been
+validated at one architecture. It is now validated at **seven**, spanning dimension `0.136` to
+`0.787` and log-rates `1.27` to `11.51` — measured/predicted `0.879` to `1.084`, mean `0.979`
+(O-6221). The same formula fits both a full `(k,q)` family and a `1:5304` restriction of one.
+It remains a law, not a theorem: the step from exact density to least roots is still the
+C-6111 equidistribution heuristic.
+
+## Two open threads closed, with correct attribution
+
+* **The two floors' coincidence** (O-6172) is not a curiosity. One direction is a two-line
+  theorem — the itinerary condition forces `3^{k_j} >= 2^j`, hence `T^j(n) > n`, so
+  `B(n) <= A(n)` for every `n` — and the coincidence holds **pointwise for every `n <= 2*10^9`**,
+  not merely at the floors. It is the classical **coefficient-stopping-time question**
+  (Terras 1976), open since then. **Nobody here should attack it** (L-6173).
+* **Issue #10's sanctuary** is a counterexample plus regularity. Its minimum `m` satisfies
+  `T^j(m) >= m` for all `j`, so `m` is exactly the T-6170 object whose boundedness *is* the
+  conjecture. No union of residue classes qualifies. Strictly stronger than falsity — the same
+  verdict M-6120 reaches for charts (T-6230).
+
 ## Reading order for a new agent
 
 1. `README.md` in this directory — the claim index.

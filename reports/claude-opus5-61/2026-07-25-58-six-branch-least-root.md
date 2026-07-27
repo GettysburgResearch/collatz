@@ -225,6 +225,31 @@ I also caught a measurement error mid-stream: the first path computation let the
 the trivial cycle `2 -> 1`, which alone achieves `b = d/2` and inflated the depth-34 path count
 from `11,878` to `27,168`. All published figures exclude that edge.
 
+## Sixth pass: testing my own foundations, and pricing two open lanes
+
+Asked to find the best things to test next, I picked the one that could invalidate the most of
+my own work.
+
+* **O-6221 / X-6220 — the central law, tested.** `m_N ~ (2^q/D)^N` underwrites T-6131(e),
+  T-6121, M-6120 and O-6182, and had been checked at exactly one architecture. Checked at
+  seven, by direct forward scan of full `(k,q)` charts: dimensions `0.136` to `0.787`,
+  log-rates `1.27` to `11.51`, measured/predicted `0.879`-`1.084`, mean `0.979`. **The law
+  survives.** It is not upgraded to a theorem — the density-to-least-roots step is still the
+  C-6111 heuristic.
+* **L-6173 — the floor coincidence, resolved and correctly attributed.** One direction is a
+  two-line theorem (`B(n) <= A(n)` for every `n`); the coincidence holds pointwise for every
+  `n <= 2*10^9`, far stronger than O-6172's claim about floors; and it **is** the classical
+  coefficient-stopping-time question. O-6172 marked SUPERSEDED. The practical value is
+  negative-directional: it stops anyone here from attacking a problem open since 1976. R-6171
+  depends only on the safe-direction inequality and is unaffected — luck as much as design.
+* **T-6141(h) — a correction to my own fragility claim.** Using the exact approximation
+  constant rather than its bound, the sharpened cycle floor's margin at `B = 2^71` is `1.095x`,
+  not the `1.041x` I reported, and it survives to `B >= 2^70.87` rather than `2^70.94`.
+* **T-6230 — issue #10 priced.** A forward-invariant sanctuary's minimum is exactly the T-6170
+  object, so a sanctuary is a counterexample plus regularity: strictly stronger than falsity.
+  No union of residue classes qualifies. Redirected to the only non-equivalent form of the
+  question (regular over-approximation; Büchi-Bruyère territory).
+
 ## Third pass: what I would tell the project
 
 The forward direction is now capped in every form I could find a way to test. The one route
