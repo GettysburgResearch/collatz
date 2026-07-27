@@ -250,6 +250,43 @@ my own work.
   No union of residue classes qualifies. Redirected to the only non-equivalent form of the
   question (regular over-approximation; Büchi-Bruyère territory).
 
+## Seventh pass: attacking a named open problem, and moving its frontier
+
+I had written that identifying the floor coincidence with the coefficient-stopping-time
+question meant nobody here should attack it. **That was the wrong instinct**, it was corrected
+on the spot, and attacking it produced the strongest result of the session.
+
+* **C-6241 — a quantitative model.** L-6173(b) turns the search from integers into *words*
+  (`n <= c_w/D` at `j = chi(n)`), which makes the *expected number* of counterexamples
+  computable rather than merely searchable. `sum_w c_w` is exact, not sampled: `c` obeys
+  `c <- 3c + 2^t` on a 1-step, so word counts and `c`-sums satisfy a linear recursion with
+  `O(j^2)` states. Total expected count `~1.74` over `j <= 56`.
+* **T-6242 — the theorem.** `Bmax(j) = max_w c_w/D` bounds `n` for every counterexample with
+  `chi(n) = j`, and it grows very slowly: `867` at `j <= 100`, `9267` at `j <= 400`,
+  `4.2*10^5` at `j <= 3000`, `< 2*10^9` for all `j <= 125742`. Combined with this namespace's
+  own scan (`chi = sigma` for all `n <= 2*10^9`):
+
+  ```text
+  No counterexample to chi = sigma has chi(n) <= 125742.
+  ```
+
+  **A scan of `2*10^9` integers certifies the conjecture for every `n` of any size with
+  `chi(n) <= 125742`.** That is the first result here that converts a bounded-`n` computation
+  into an unbounded-`n` one.
+* **The obstruction is arithmetic.** `Bmax(j)` spikes exactly at convergents of `log2(3)`, where
+  `2^j - 3^k` is smallest. The crossing is at `j = 125743` — the convergent `125743/79335`,
+  where `D/2^j ~ 2^-18`. The same convergents that govern the cycle floor (T-6141) govern this
+  bound; the two lanes meet at the continued fraction of `log2(3)`.
+* **And it corrected C-6241 within the same session.** C-6241's headline said `~13%` chance a
+  counterexample lies beyond the verified range. Wrong: T-6242(a) shows those candidates satisfy
+  `n <= 9267`, i.e. they lie *inside* the verified range. The model and its exact DP stand; the
+  interpretation of where the mass lay did not.
+
+**Also this pass:** O-6221 (the central law `m_N ~ (2^q/D)^N` validated at seven architectures
+spanning dimension `0.136`-`0.787`, mean ratio `0.979` — it had been checked at one),
+L-6173 (itinerary implies value, in two lines), T-6141(h) (margin `1.095x` not `1.041x`),
+T-6230 (issue #10's sanctuary is a counterexample plus regularity).
+
 ## Third pass: what I would tell the project
 
 The forward direction is now capped in every form I could find a way to test. The one route
