@@ -14,8 +14,9 @@ gap audit, adversarial tests, remaining uncertainty) and uses the shared notatio
 **Review provenance.** `PROVED` here means: authored by one prover agent, then passed a
 detailed adversarial review by a *separate* verifier agent (fresh context; independent
 reconstruction of every proof plus independent computational refutation attempts; README §13).
-As of 2026-07-25 the packet holds **22 lemma files, 18 of them PROVED** after such a review;
-L-9919, L-9920, L-9921 and L-9922 are complete proofs awaiting review. An external cross-model
+As of 2026-07-27 the packet holds **24 claim files (L-9901–L-9923, T-9924), all PROVED** after
+such review, plus L-9927 (PROPOSED, verifier assigned) and two cross-branch review reports
+(PR #61; PRs #64/#65/#66 — see REVIEW-PR64-65-66-sixbranch-rigidity.md). An external cross-model
 pass remains welcome and would justify `INDEPENDENTLY_VERIFIED`, which is set nowhere. No claim here is
 `INDEPENDENTLY_VERIFIED` (reserved for cross-session/cross-model review). No file asserts any
 resolution of the conjecture; conditional results say so prominently.
@@ -48,6 +49,8 @@ resolution of the conjecture; conditional results say so prominently.
 | L-9914 | [L-9914-backward-tree-counting.md](L-9914-backward-tree-counting.md) | **PROVED** | p7 / v15 | Explicit census bound: #{odd n ≤ x reaching 1} ≥ (1/5)·x^{3/10} for all x ≥ 1 (and (17/25)x^{3/10} for the full C-census), by a mod-9-controlled preimage tree; root-independent form isolated for issue #25 |
 | L-9915 | [L-9915-medium-m-elimination.md](L-9915-medium-m-elimination.md) | **PROVED** | p5 / v10 | **No nontrivial Syracuse cycle has m ≤ 21 odd elements** — exact integer K-windows (provably empty at m ∈ {7, 9, 12}; nonempty for all m ≥ 15) plus exhaustive enumeration of all 1,192,712,185 exponent compositions for 7 ≤ m ≤ 21, zero divisibility survivors. Reviewer note: the author's embedded scripts/outputs were placeholders; the PROVED status rests on the reviewer's own full re-enumeration (twice, independent implementations) |
 | L-9916 | [L-9916-sixbranch-escape-bridge.md](L-9916-sixbranch-escape-bridge.md) | **PROVED** | p9 / v16 | Six-branch chart (issue #58): digit cylinders = single residue classes mod Q^N; the #58 trichotomy is really a **dichotomy**; corrected Fourier factorization (digit j carries P^{−(j+1)} against modulus Q^{N−j}); from-scratch Erdős–Turán with explicit constants (C₂ = 2/π, C₁ = 4 on log(4H)/H); **universal lower bound Σ_{h≤H}(1/h)\|S(h)\| ≥ ½log(H/R) makes the cusp escape criterion unsatisfiable with proved constants** — the generic-equidistribution route is closed; no seed word is even eventually periodic |
+
+| L-9927 | [L-9927-sclosure-refined-bound.md](L-9927-sclosure-refined-bound.md) | PROPOSED (v29 reviewing) | p21 / — | **S-closure element sieve** (answers Q-9920-A in both directions): every cycle element is an S-image, so **no cycle element is divisible by 3** — an element-level p = 3 sieve never before injected into the product-bound family. Sorted floors rise to u_k = 3k+7+(k mod 2); **166 cycle lengths eliminated in total, complete over all m (118 new beyond L-9920, 80 of them past the m = 207 ceiling, max 1024)**, zero enumeration, two integer comparisons per m; width-envelope growth rate improves ⅙ → ⅑·log₂m (first rate change in the family). Ceilings: exact threshold m_U = 1039 (this sieve eliminates nothing ≥ 1039, ever; image(S^k) = {3∤z} at every depth, so no deeper plain congruence sieve exists) and a **universal theorem: no allowed-set sieve of any thinness eliminates all large m** (pigeonhole density of {m·log₂3}). Plus closure lemma kit: a(x_min) = 1, x_min ≡ 7,11 (mod 12), a(x_max) ≥ 2, forced-a=1 slab, per-class image floors. NULL result recorded: L-9913's m*(10⁶), m*(10⁹) unchanged |
 
 Prover/verifier IDs abbreviate fable-02-pN / fable-02-vN.
 
