@@ -259,10 +259,22 @@ counterexample with `chi(n) <= 1.1207 sqrt(n)` has `chi(n)/k(n)` equal to a conv
 merely slow: at `j = 301994` it read `7.101490*10^11` against the exact `7.1022044774*10^11`,
 `0.01%` **low**, in the direction that makes a certificate unsafe.
 
-With the identity in hand a `7.2*10^11` scan pushes the floor from `301993` to **`17087914`**,
-and the contiguous floor undersells it — only `8260` of the `j <= 3*10^8` are not excluded at
-all (density `2.75*10^-5`), and their consecutive gaps take exactly eight values, every one a
-convergent numerator of `log2(3)` or a sum or difference of two.
+With the identity in hand a `7.2*10^11` scan (complete: `0` counterexamples, `0` skips, max
+`chi` seen `547`) pushes the floor from `301993` to **`17087914`**, and the contiguous floor
+undersells it — only `8260` of the `j <= 3*10^8` are not excluded at all (density `2.75*10^-5`),
+and their consecutive gaps take exactly eight values, every one a convergent numerator of
+`log2(3)` or a sum or difference of two.
+
+**And the two lanes turned out to be one lane (T-6244).** T-6141(b)'s cycle bound
+`m <= k 2^q/(3(2^q - 3^k))` is *literally* T-6243(a) with `G(k)` relaxed to `k` — the same
+inequality, with `(q,k,m)` in place of `(j,k,n)`. That is not a resemblance: a cycle minimum
+satisfies `T^L(m) >= m` for every `L`, and `2^q > 3^k`, so its orbit word is above the line up to
+a first drop `L0 <= q` and `m <= Bmax(L0)`. A cycle minimum **is** a T-6242(a) object. This is
+the concrete form of the T-6140 dichotomy: stay above the line forever (divergence lane, capped
+at dimension `0.94996` by T-6131) or drop at `L0` and be bounded there. At `B = 2^71` it gives
+`q >= 1.14208*10^11`, `1.10x` T-6141's floor, and confines `q` below `2*10^12` to six values —
+though the `1.10x` is the old relaxation being undone, not new mathematics, and the enumeration
+behind the six is verified only to `j = 3*10^8`.
 
 This also corrected `C-6241`, whose headline ("13% chance a counterexample lies beyond the
 verified range") mislocated the mass: those candidates satisfy `n <= 9267`, so they lie inside
