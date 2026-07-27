@@ -11,11 +11,14 @@ Title:         What S-closure adds to the sorted/profile product bounds: every c
                closure floors; NULL verdict in the verified-floor regime; and a
                universal ceiling: no allowed-set sieve, of any thinness, can
                eliminate all large m
-Status:        PROPOSED
+Status:        PROVED
 Authoring agent:   fable-02-p21
-Reviewing agents:  (none yet)
+Reviewing agents:  fable-02-v29 (adversarial review 2026-07-27: PASS)
 Created:       2026-07-27
-Last updated:  2026-07-27
+Last updated:  2026-07-27 (fable-02-v29 review: PASS; status upgraded to PROVED;
+               three display-level fixes applied in place — beta*_t attribution
+               lists, two rounded-ellipsis ratio displays, Gamma-limit digits —
+               no mathematical content changed; verification note appended)
 Dependencies:  NOTATION.md (D-9903 odd part, D-9904 Syracuse map S and step exponent
                a(x) = nu_2(3x+1) >= 1, D-9905 trivial cycle (1), D-9908 S-cycle
                notation x_1 -> ... -> x_m -> x_1, least period m, a_i, K = sum a_i,
@@ -193,13 +196,13 @@ Furthermore:
    integer inequalities (a) $2^{\kappa(m)-1} \le 3^m$ and (b)
    $2^{\kappa(m)} D_U(m) > N_U(m)$. Sample: $m = 30$ ($\kappa = 48$, ratio
    $1.00628\ldots$; full integers in test A/T4), $m = 212$ ($\kappa = 337$, ratio
-   $1.18220\ldots$), $m = 1024$ ($\kappa = 1624$, ratio $1.00049\ldots$). The
+   $1.18220\ldots$), $m = 1024$ ($\kappa = 1624$, ratio $1.000485\ldots$). The
    **tightest margin** in the whole list is $m = 320$ ($\kappa = 508$), where (b)
    holds by a factor of only $1.0000334751\ldots$ — exact arithmetic is mandatory.
 3. **(Completeness.)** $R_U$ is strictly increasing, and
    $$m_U := \min\{m : R_U(m) \ge 2\} = 1039,$$
    certified by $N_U(1038) < 2 \cdot 3^{1038} D_U(1038)$ (ratio $0.9999109\ldots$) and
-   $N_U(1039) \ge 2 \cdot 3^{1039} D_U(1039)$ (ratio $1.0000177\ldots$). Hence
+   $N_U(1039) \ge 2 \cdot 3^{1039} D_U(1039)$ (ratio $1.0000176972\ldots$). Hence
    $\mathrm{Wd}_U(m) \ge 1$ and $W_U(m) \ne \varnothing$ for **every** $m \ge 1039$;
    together with the exhaustive exact evaluation of $1 \le m \le 1038$ this proves
    $\mathcal{E}_U$ is exactly the set above — a statement about **all** $m$. The
@@ -229,8 +232,9 @@ Furthermore:
    fable-02-v22 correction to L-9917.4(5).)
 4. *(Remark, non-load-bearing.)* By Stirling for Pochhammer ratios,
    $R_U(m)/m^{1/9} \to 2^{-1/9}\,\Gamma(\tfrac76)\Gamma(\tfrac{11}6)\big/
-   \bigl(\Gamma(\tfrac{11}9)\Gamma(\tfrac{17}9)\bigr) = 0.9242\ldots$
-   (measured $0.924228$ at $m = 5999$); no rigorous claim uses this.
+   \bigl(\Gamma(\tfrac{11}9)\Gamma(\tfrac{17}9)\bigr) = 0.9241932\ldots$
+   (measured $0.924228$ at $m = 5999$, approaching from above); no rigorous claim
+   uses this.
 
 **L-9927.6 (per-class closure floors; the profile-level refinement).** For $t \ge 1$
 let $r_t$ be the exponent-residue base point (foundations/L-9912.5; re-derived in
@@ -253,9 +257,15 @@ $\beta_t$ for comparison):
 | $\beta_t$ (L-9920) | 7 | 9 | 13 | 37 | 53 | 21 | 213 | 85 | 853 | 341 | 3413 | 1365 | 13653 | 5461 |
 | $\beta^*_t$ (this file) | 7 | **17** | **29** | 37 | **181** | **149** | **469** | **1109** | **1877** | **2389** | **11605** | **9557** | **30037** | **70997** |
 
-(Mod $3$ bans the old floor itself at $t \in \{2, 6, 12, 13\}$ — e.g. $9$, $21$,
+(Mod $3$ bans the old floor itself at $t \in \{2, 6, 7, 12, 13\}$ — $9$, $21$, $213$,
 $1365$, $13653$ are multiples of $3$, so **no cycle contains them**; the image floor
-$3x + 1 \ge 7\cdot2^t$ binds at $t \in \{3,5,8,9,10,11,14\}$.) Evaluated exactly on
+$3x + 1 \ge 7\cdot2^t$ bans the old floor at every changed $t$ except $t = 2$, i.e. at
+$t \in \{3,5,6,7,8,9,10,11,12,13,14\}$, the two causes overlapping at
+$t \in \{6,7,12,13\}$; and at $t \in \{5,8,11,14\}$ mod $3$ additionally removes an
+intermediate class member — $117$, $597$, $7509$, $38229$ — before $\beta^*_t$ is
+reached. *[Attribution lists corrected by fable-02-v29, 2026-07-27: the original
+omitted $t = 7$ and presented the two causes as disjoint. The $\beta^*_t$ values
+themselves were and are exact.]*) Evaluated exactly on
 every surviving window with $m \le 40$ (test B/T8): the per-class refinement
 eliminates **nothing beyond $\mathcal{E}_U$ there** — its deficit
 $\log_2(P_U/Q^*_U)$ is only $0.02$–$0.04$ bits, the nearest miss being $m = 25$
@@ -1452,3 +1462,223 @@ pattern is the fractional-part orbit of $\log_2 3$ made visible.
 ---
 *File authored by fable-02-p21, 2026-07-27. Status PROPOSED per NOTATION.md
 conventions; an independent reviewing agent may upgrade after verification.*
+
+---
+
+## Verification note (fable-02-v29, 2026-07-27)
+
+**Verdict: PASS** (independent adversarial review per README §13). Status upgraded
+`PROPOSED` → `PROVED`. **Zero mathematical defects.** Three display-level defects
+found and corrected in place (§3); none is load-bearing. Every theorem, constant,
+certificate, and output line otherwise checked out exactly. Per protocol this review
+does **not** set INDEPENDENTLY_VERIFIED, and FOUNDATIONS.md is left to the
+coordinator.
+
+### 1. Independent re-derivation (done from the Statement before reading the proofs)
+
+- **The sieve (Step 3), the four load-bearing lines:** $x_i = S(x_{i-1})$ from the
+  cycle relation, so $S(\mathcal C) = \mathcal C$ and $S|_{\mathcal C}$ is a
+  bijection; $2^aS(y) = 3y+1 \equiv 1 \pmod 3$ forces $3 \nmid S(y)$ for every
+  nonzero odd $y$ of either sign. Re-derived; sound; sign-agnostic exactly as
+  scoped. Image characterization re-derived: $z \equiv 2\ (3) \Rightarrow
+  y = (2z-1)/3$ odd $\ge 3$, $a(y) = 1$; $z \equiv 1\ (3) \Rightarrow y = (4z-1)/3$
+  odd $\ge 1$, $a(y) = 2$; ladder $y' = 4y+1$, $y' \equiv y + 1 \pmod 3$, gives
+  infinitely many $3\nmid$ preimages, hence $\mathrm{image}(S^k) = \{$odd
+  $z \ge 1 : 3 \nmid z\}$ at every depth $k$ by recursion. I attacked this
+  ("is there a deeper plain congruence sieve?") computationally: constructive
+  preimage chains avoiding multiples of $3$ built for **every** admissible
+  $z \le 10^4$ to depth $3$ (each witness verified by forward iteration), plus a
+  box scan; the depth-stability claim stands.
+- **Closure lemma kit (Step 4):** all four re-derived, including the inequality
+  directions and the CRT: $a(x_{\min}) = 1$ from $2^a \le 3 + 1/x_{\min} < 4$
+  (needs $x_{\min} \ge 3$; trivial cycle's $a = 2$ at $x_{\min} = 1$ is the correct
+  boundary witness); $x_{\min} \equiv 3\ (4)$, $\cap\ 3\nmid \Rightarrow \{7,11\}
+  \bmod 12$ (and $\{1,5\} \bmod 12$ for $x_{\max}$) — CRT classes machine-confirmed;
+  slab endpoint algebra $3y + 1 < 4x_{\min} \Rightarrow a(y) = 1$; per-class image
+  floor $y \ge (2^t x_{\min}-1)/3 \ge (7 \cdot 2^t - 1)/3$, vacuous exactly at
+  $t = 1$.
+- **$u_k$ and the sorted bound (Step 5):** closed form re-derived from the two
+  progressions $6j+7$, $6j+11$ and checked against direct enumeration of $U$ to
+  $10^6$ (author: $10^5$); $u_k \ge 7 + 2k$ strict for $k \ge 1$; the
+  $(k{+}1)$-st-smallest counting argument and the termwise product bound are sound;
+  $W_U \subseteq W^*$ confirmed at every $m \le 1600$.
+- **Envelope (Step 7), the file's main analytic proof, re-derived line by line:**
+  $u_k \in [3k+7, 3k+8]$, $s_k \in [1/(9k+24), 1/(9k+21)]$; both integral
+  comparisons re-done; the constant $\tfrac12(\tfrac1{441} + \tfrac1{189}) =
+  \tfrac12 \cdot \tfrac{3+7}{1323} = \tfrac{5}{1323}$ re-computed; bits constants
+  re-certified: $(5/1323)\log_2 e < 5 \cdot 1.4427/1323 < 0.00546$;
+  $(1/21) \cdot 1.4427 = 0.0687$ **exactly**, so $(1/21)\log_2 e < 0.0687$ strictly
+  via the strict enclosure $\log_2 e < 1.4427$; uniform lower constant
+  $-0.15724 - 0.00546 = -0.1627$ with $(1/9)\log_2(3/8) > -1.4151/9 > -0.15724$
+  from $\log_2 3 > 1.5849$. A 60-digit Decimal re-check (author's T6 is
+  double-float) confirms the envelope for $m \le 3000$; minimum slacks $0.0149$
+  (lower) and $0.0011$ (upper), both at $m = 1$. The $\tfrac16 \to \tfrac19$ rate
+  change is real and correctly attributed to the spacing $2 \to 3$.
+- **Completeness (Step 6c):** $R_U$ strictly increasing (each factor $> 1$);
+  interval $(m\alpha, m\alpha + L]$, $L \ge 1$, contains $\lfloor m\alpha\rfloor+1$;
+  sweep and tail meet at $1038/1039$ with no gap.
+- **Per-class layer (Step 8):** dictionary re-derived; $A^*_t$ membership
+  (five conditions) and spacing $2^{t+1}$ re-derived; infinitude of $A^*_t$;
+  domination $Q^*_U \le P_U$ via the union-of-prefixes argument (all members lie in
+  $U$, classes disjoint) — sound.
+- **NULL (Step 9):** thinned $\subseteq$ crude, so nothing below $m^*(F)$ revives,
+  and membership of $\kappa(m^*(F))$ in the thinned window at the two operative
+  points settles equality — logic airtight, membership recomputed (below).
+- **Universal ceilings (Step 10), quantifiers audited ruthlessly:** Lemma A
+  (parity), Lemma B (both pigeonhole cases: the $\{jh\alpha\} = \{j\theta\}$
+  identity, $j^* = \lfloor 1/\theta\rfloor$, irrationality of $\theta = \{h\alpha\}$
+  excluding $j^*\theta = 1$), Lemma C (max-contradiction; $\varepsilon' = 1-s \in
+  (0,\varepsilon)$) — all re-derived; only *density* of $\{m\alpha\}$ near $1$ is
+  used, no equidistribution. The proof of 8(2) uses only $|V| = \infty$ and
+  $v_0 \ge 1$ — it genuinely covers **every** valid allowed set, of any thinness
+  (validity matters for the sieve's soundness, not the ceiling); $\delta_V \le
+  \log_2(4/3) < 1$ always, so the $\min(\delta_V, \tfrac12)$ parenthetical is dead
+  but harmless. 8(1)'s AP-tail bound $v_k \le x^\circ + qk$ and the
+  congruence-sieve corollary check out. **Scope honesty verified:** the theorem
+  quantifies over allowed-**set** windows $P_V(m)$ only; per-$(m,K)$ profile bounds
+  (L-9920's $Q$, this file's $Q^*_U$) are outside its class, and the Scope remark
+  says exactly that — no over-claim found anywhere in Statement, Motivation, or the
+  delta section.
+
+### 2. Independent computation (fresh implementation from the Statement; scripts in reviewer scratchpad `v29/v29_indep.py`; all decisions exact int/Fraction)
+
+Deliberately different algorithms: window endpoint $\lambda_U(m)$ by bit-length
+descent with exact shift comparisons (not the author's incremental while-loop from
+$\kappa$); per-class maximum by direct partition/profile enumeration (not the
+author's DP); class floors by brute scan of the defining conditions.
+
+- **Main sweep, $m \le 1600$:** $\mathcal{E}_U$ = **exactly** the Statement's
+  166-value list (element-for-element), $\max = 1024$, $m_U = 1039$; no elimination
+  anywhere in $[1039, 1600]$; equality $2^K D_U = N_U$ never occurs; L-9917's
+  46-value $\mathcal{E}$ and threshold $196$ **reproduced independently** from the
+  $7+2k$ floors; $W_U(m) \subseteq W^*(m)$ at every $m$; $\mathcal{E}' =
+  \mathcal{E} \cup \{13,79\} \subseteq \mathcal{E}_U$; $|\mathcal{E}_U \setminus
+  \mathcal{E}'| = 118$, smallest $30$, largest $1024$, exactly $80$ of them
+  $> 207$ (and every member of $\mathcal{E}_U$ above $207$ is new);
+  $\mathcal{E}_U \cap [1,21]$ has $16$ values; survivors in $[22, 60]$ match; the
+  smallest unconditionally live least period remains $m = 22$ ($W_U(22) = \{35\}$).
+- **Decisive margins as exact rationals:** tightest margin confirmed **minimal over
+  all 166 members** at $m = 320$ ($\kappa = 508$): $2^{508}D_U/N_U =
+  1.000033475131\ldots$; threshold pair $N_U(1038)/(2 \cdot 3^{1038}D_U(1038)) =
+  0.99991090336\ldots$, $N_U(1039)/(2\cdot3^{1039}D_U(1039)) = 1.00001769722\ldots$;
+  sample certificates $m = 30$ ($\kappa = 48$, ratio $1.00628127881$, and all three
+  explicit integers digit-for-digit), $m = 212$ ($\kappa = 337$, $1.182203960$),
+  $m = 1024$ ($\kappa = 1624$, $1.000485475$).
+- **Boundary probes:** $m = 206/207/208 \to W_U = \{327\}/\varnothing/\{330\}$;
+  $319/320/321 \to \{506\}/\varnothing/\{509\}$; $1023/1024/1025 \to
+  \{1622\}/\varnothing/\{1625\}$; $1038/1039/1040$ all nonempty. Window
+  cardinality: $\le 2$ for all $m \le 1600$, first two-element window at
+  $m = 1171$ — matches L-9927.5(3), and no singleton claim is made anywhere beyond
+  computation (v22-trap avoided).
+- **Class floors:** brute force reproduces the $\beta^*_t$ table for $t = 1..14$
+  exactly ($7, 17, 29, 37, 181, 149, 469, 1109, 1877, 2389, 11605, 9557, 30037,
+  70997$). It also exposed the attribution slip fixed in §3.
+- **Per-class knapsack, all 13 surviving windows $m \le 40$:** independent
+  enumeration of every profile (partitions of $E = K - m$ with multiplicity caps)
+  with exact `Fraction` products confirms **no elimination beyond $\mathcal{E}_U$**;
+  nearest miss at $m = 25$, $K = 40$: exact $2^{40}/Q^*_U = 0.996892743\ldots$
+  (the file's $0.996893$ is the correctly rounded display); deficits
+  $0.0200$–$0.0409$ bits. Q-9927-A is left open honestly.
+- **NULL recomputed from scratch:** $\kappa(2966) = 4701$, $\kappa(47468) = 75235$
+  (bit lengths); the cleared-integer memberships $2^{4701}D \le N$ over the first
+  $2966$ elements of $\{x > 10^6\ \mathrm{odd},\ 3\nmid x\}$ and $2^{75235}D \le N$
+  over the first $47468$ elements of $\{x > 10^9\ \mathrm{odd},\ 3\nmid x\}$ both
+  hold — $m^*(10^6) = 2966$ and $m^*(10^9) = 47468$ unchanged, exactly as claimed;
+  60-digit widths $0.001420037262/0.001222861051$ and $0.0000228256576/
+  0.0000157681584$ agree with the printed informational decimals, and the
+  five-tier chain ordering at $(10^6, 2966)$ is strict as displayed.
+- **Universal-ceiling demo:** $\kappa(306) = 485$; $d = 2^{485} - 3^{306} > 0$;
+  the two exact-rational inequalities ($1.4427 \cdot d/3^{306} < 0.00148$ and
+  $1.4426 \cdot \frac{1/675}{1+1/675} > 0.00213$) re-verified, together with both
+  $\log_2$ enclosures of T5 (including the tail bound $\sum_{k \ge 18} 1/k! <
+  2/18!$). So $m = 306$ survives every allowed-set sieve with $\min V \le 225$ —
+  computed exactly, as required.
+- **Cycle audits:** all four known cycles of the formula regenerated; $3$ divides
+  no element of any of them; minima exponents: trivial $a(1) = 2$, $(-1)$: $a = 1$,
+  $(-5,-7)$: $\min = -7$, $a = 2$, $(-17\ldots)$: $\min = -91$, $a = 4$ — the
+  Scope/T3/(C5) claims (including "negative nontrivial minima have $a \in \{2,4\}$,
+  with $a = 1$ at the $-1$ fixed point") are exact; positivity/floor necessity is
+  witnessed, not asserted. Trivial-cycle sanity: $m = 1 \in \mathcal{E}_U$ asserts
+  only "no *nontrivial* $m = 1$ cycle"; the trivial cycle fails the floor
+  hypothesis (element $1 < 7$), satisfies $3 \nmid 1$, and is *not* falsely
+  eliminated — the Gap audit's account is correct.
+- **Mechanical audit:** both embedded scripts extracted verbatim and re-run
+  (CPython 3, Linux): outputs **byte-identical** to the printed blocks (A: 0.3 s,
+  B: 8.2 s). No placeholder artifacts anywhere in the file. The
+  $\Gamma$-remark's measured value $0.924228$ at $m = 5999$ reproduced; the limit
+  constant recomputed as $0.9241932623$ (double-precision $\Gamma$), prompting the
+  digit fix in §3.
+- **Cross-references, all load-bearing ones opened and read:** L-9905.2/.3 +
+  Remark 1.2 (sign-agnostic formula), L-9906.2, L-9909.1(2)(3) (leaf fact and
+  preimage rotation — exactly as re-proved in Step 3), L-9912.5,
+  L-9913.1/.5/.10 + $f(m)$ + X-9901/X-9903 ($2966/4701$, $47468/75235$ as quoted),
+  L-9917.1(1)/.2/.3/.4 (46 values, $196$), L-9920 ($\mathcal{E}'$, threshold $208$,
+  $\beta_t$ table, .3(3) finiteness, .5 numbers, Q-9920-A), NEGATIVE_RESULTS.md
+  §3.4 and §5. The claimed consistency with §3.4 is genuine: the scout proved the
+  $p = 3$ **word**-level sieve vacuous (suffix map surjective onto units mod
+  $3^j$; $D$ a $3$-adic unit), while this file's sieve constrains **elements**;
+  L-9927.1(3) even delimits the element-level content to the single congruence
+  $3 \nmid z$ at every depth — the two results are about different objects and
+  jointly coherent. Coordinator-sketch corrections C1–C5 are coherent and, where
+  checkable (C5), machine-confirmed. No circularity: none of the cited files
+  references L-9927.
+
+### 3. Defects found (all display-level; corrected in place, none load-bearing)
+
+1. **$\beta^*_t$ attribution parenthetical (L-9927.6 Statement).** The original
+   two lists ("mod 3 bans the old floor at $t \in \{2,6,12,13\}$; the image floor
+   binds at $t \in \{3,5,8,9,10,11,14\}$") omitted $t = 7$ entirely
+   ($\beta_7 = 213 = 3 \cdot 71$ is itself a multiple of $3$ *and* below the image
+   floor) and presented the two causes as disjoint, though they overlap at
+   $t \in \{6,7,12,13\}$ and mod $3$ also removes intermediate class members at
+   $t \in \{5,8,11,14\}$ ($117, 597, 7509, 38229$). Corrected in place. The
+   $\beta^*_t$ **values** — the load-bearing content — were exact.
+2. **Two rounded-then-ellipsis ratio displays** in L-9927.4: "$1.00049\ldots$"
+   (true digits $1.000485475\ldots$) and "$1.0000177\ldots$" (true digits
+   $1.0000176972\ldots$). Fixed to truncation-correct digits, matching the
+   convention used elsewhere in the file ($0.9999109\ldots$, $1.0000334751\ldots$
+   are truncation-correct as written).
+3. **$\Gamma$-limit digits** in the non-load-bearing remark L-9927.5(4):
+   "$= 0.9242\ldots$" — the constant is $0.9241932\ldots$; the author's
+   nearby *measured* value $0.924228$ (finite-$m$, approaching from above) is
+   correct and was presumably the source of the rounding. Fixed.
+
+Not defects (checked and cleared): the Statement's "$0.02$–$0.04$ bits" deficit
+range vs the exact $0.0200$–$0.0409$ (Step 8c states $0.041$; a rounded range);
+all remaining ellipsis displays; the float-only status of T6/T9 width decimals
+(each is labelled informational and every decision they accompany is re-proved by
+an exact integer comparison, which I re-verified independently).
+
+### 4. Assessment of the headline claims
+
+- $|\mathcal{E}_U| = 166$, $\max = 1024$, complete over **all** $m$: **confirmed**
+  (independent sweep + monotone-tail theorem; boundary pair at $1038/1039$ to 11
+  exact digits).
+- $118$ new vs L-9920 ($80$ beyond $207$, smallest $30$; $207 \in \mathcal{E}_U$;
+  ceiling $171 \to 1024$): **confirmed**.
+- Threshold $m_U = 1039$; rate change $\tfrac16 \to \tfrac19 \log_2 m$ with the
+  stated envelope constants: **confirmed** (proof re-derived, constants
+  re-certified).
+- Closure lemma kit and per-class floors: **confirmed** (brute force).
+- Per-class refinement adds nothing for $m \le 40$; nearest miss $0.9969$ at
+  $m = 25$; Q-9927-A open: **confirmed and honestly labelled**.
+- NULL at $(\mathrm{V}_{10^6})/(\mathrm{V}_{10^9})$: **confirmed** with exact
+  witnesses.
+- Universal ceilings: **confirmed**; quantifiers hold for every infinite
+  $V \subseteq \mathbb{Z}^+$; the theorem's class (set-windows) is exactly what the
+  file claims to close, with hybrid/profile-coupled methods explicitly excluded.
+
+Residual risk after this review: the shared correctness of CPython big-integer
+arithmetic across four implementations (two the author's, two structurally
+different ones here) that agree exactly on every compared value, including ratios
+within $1.8 \cdot 10^{-5}$ of $1$ (the $1039$ threshold certificate). I set Status to PROVED per NOTATION.md
+conventions (one detailed adversarial review); INDEPENDENTLY_VERIFIED is left for
+a further reviewer.
+
+*Reviewed by fable-02-v29, 2026-07-27. Reviewer script: scratchpad
+`v29/v29_indep.py` (independent sweep to $1600$ with bit-length-descent windows,
+exact margin/threshold decimals, boundary probes, brute-force class floors,
+partition-enumeration knapsack $m \le 40$, NULL recomputation at both floors,
+$m = 306$ certificates, T5 enclosures, 60-digit envelope check, cycle audits,
+depth-$3$ constructive image witnesses); plus verbatim re-runs of the file's
+embedded scripts A and B (byte-identical outputs).*
