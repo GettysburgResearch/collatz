@@ -1,0 +1,11 @@
+j = 65 : Bmax = 364625035073295549935/420491770248316829
+maxbound.py  :  364625035073295549935/420491770248316829
+match        : True
+
+j = 301994  k = 190537  (3^k < 2^j < 3^(k+1) verified exactly)
+numerator has 302010 bits, denominator has 301971 bits
+Bmax(301994) = 7.1022044774e+11   (exact integers, float taken only at the last step)
+long double chi_floor.c value : 7.102205e+11
+float DP chi_bound_fast.c     : 7.101490e+11
+
+scan bound needed to clear j = 301994 : 7.102204e+11
