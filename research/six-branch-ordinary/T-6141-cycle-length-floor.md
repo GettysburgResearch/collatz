@@ -89,9 +89,28 @@ k >= 65470613321  odd elements,     q >= 1.0377 * 10^11  shortcut steps.
 ```
 
 Route (f) is a **step function** of `B` (it can only jump to convergent denominators) while
-(d) grows like `sqrt(B)`, so (f) wins just after a jump and loses in between. At `B = 2^71` the
-binding inequality is `4.7176 * 10^21 <= 4.9099 * 10^21` — a margin of only `4%`, so this
-improvement would evaporate at `B = 2^70.9`.
+(d) grows like `sqrt(B)`, so (f) wins just after a jump and loses in between.
+
+**(h) Sharpening (f) with the exact approximation constant.** (f) used the estimate
+`eps_n > 1/(K_{n+1} + K_n)`. Using the exact `eps_n = |K_n theta - P_n|`, computed by certified
+rational interval, the exclusion condition becomes
+
+```text
+K_{n+1} / eps_n  <=  3 B ln 2 ,
+```
+
+which is weaker than the crude form and therefore excludes more. At the critical step
+(`K_n = 6586818670`, `K_{n+1} = 65470613321`):
+
+| form | requirement on `3B ln2` | survives down to | margin at `B = 2^71` |
+|---|---:|---:|---:|
+| crude `1/(K_{n+1}+K_n)` | `4.71764 * 10^21` | `B >= 2^70.942` | `1.041x` |
+| **exact `eps_n`** | `4.48288 * 10^21` | `B >= 2^70.869` | **`1.095x`** |
+
+So the improvement is **less fragile than first reported** — I wrote "a margin of only 4%,
+evaporating at `B = 2^70.9`"; with the exact constant it is `9.5%` and survives to `2^70.87`.
+The floor itself is unchanged: the next step (`K_{n+1} = 137528045312`) needs
+`2.07 * 10^22` against `4.91 * 10^21` available, and exactness does not close that.
 
 ## Proof
 
@@ -150,6 +169,11 @@ product is increasing), no `k < K_{n+1}` can occur at all. `QED`
 **(g)** (d) and (f) are separately valid, so their maximum is a valid floor. The table is
 computed in `best_approx_floor.py`, with `3 B ln 2` bounded below by a certified rational
 interval around `ln 2`. `QED`
+
+**(h)** The chain in (f) is `eps_n <= |q - k theta| < K_{n+1}/(3 B ln2)`; the only place the
+crude estimate entered was replacing `eps_n` by its lower bound. Keeping `eps_n` gives
+`K_{n+1}/eps_n <= 3 B ln 2` directly. Computed with `theta` and `ln 2` bounded by certified
+rational intervals (`exact_eps.py`). `QED`
 
 ## Motivation, and why it is recorded in a divergence namespace
 
