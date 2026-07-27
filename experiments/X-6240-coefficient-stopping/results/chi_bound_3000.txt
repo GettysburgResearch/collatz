@@ -1,0 +1,16 @@
+ 1539    971                2.387e+05        2.387e+05
+ 2593   1636                4.208e+05        4.208e+05
+
+running max at selected j:
+   j <=   50:  every counterexample has n <= 281.9
+   j <=  100:  every counterexample has n <= 867.1
+   j <=  150:  every counterexample has n <= 2420
+   j <=  200:  every counterexample has n <= 2420
+   j <=  250:  every counterexample has n <= 4862
+   j <=  300:  every counterexample has n <= 4862
+   j <=  350:  every counterexample has n <= 9267
+   j <=  400:  every counterexample has n <= 9267
+
+verification bound used: V = 2e+09
+running max never exceeds V for j <= 3000
+=> THEOREM: no counterexample to chi = sigma has chi(n) <= 3000.

@@ -1,0 +1,22 @@
+    j      k     Bmax(j) = bound on n      running max
+    2      1                        1                1
+    5      3                      4.6              4.6
+    8      5                    24.54            24.54
+   27     17                      108              108
+  149     94                     2420             2420
+  233    147                     4862             4862
+  317    200                     9267             9267
+
+running max at selected j:
+   j <=   50:  every counterexample has n <= 281.9
+   j <=  100:  every counterexample has n <= 867.1
+   j <=  150:  every counterexample has n <= 2420
+   j <=  200:  every counterexample has n <= 2420
+   j <=  250:  every counterexample has n <= 4862
+   j <=  300:  every counterexample has n <= 4862
+   j <=  350:  every counterexample has n <= 9267
+   j <=  400:  every counterexample has n <= 9267
+
+verification bound used: V = 2e+09
+running max never exceeds V for j <= 400
+=> THEOREM: no counterexample to chi = sigma has chi(n) <= 400.

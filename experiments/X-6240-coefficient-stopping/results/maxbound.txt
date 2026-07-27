@@ -1,0 +1,19 @@
+   j     k    max c_w/D  = bound on n
+   2     1                     1.0000   <-- new record
+   5     3                     4.6000   <-- new record
+   8     5                    24.5385   <-- new record
+  10     6                     3.6780
+  20    12                     3.0334
+  27    17                   108.0125   <-- new record
+  30  None                     0.0000
+  40    25                    20.7880
+  46    29                   281.9439   <-- new record
+  50    31                     9.1640
+  60  None                     0.0000
+  65    41                   867.1395   <-- new record
+  70    44                    53.7604
+
+MAXIMUM over all j <= 70 of the bound on n : 867.139528  (exactly 364625035073295549935/420491770248316829)
+
+If this stays bounded, every counterexample to chi = sigma has n below it, and the
+question reduces to a FINITE check.

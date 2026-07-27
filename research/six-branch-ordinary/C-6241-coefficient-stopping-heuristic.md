@@ -68,6 +68,16 @@ nonzero terms decay with geometric ratio      : 0.94
 a Poisson model that outcome has probability `e^{-1.594} = 0.203`, so the model is consistent
 but **runs high** — the true rate is somewhat lower than modelled.
 
+## CORRECTED BY T-6242 — read this first
+
+The interpretation below is **wrong** where it locates the mass. T-6242(a) shows that the
+candidates counted by `E_j` satisfy `n <= Bmax(j) <= 9267` for every `j <= 400`, so they lie
+*inside* the verified range, not beyond it. The `13%` figure does not survive: **no
+contribution to "beyond the verified range" comes from any `j <= 125742`.**
+
+What stands: the model itself, the exact DP for `sum_w c_w`, and the calibration — which should
+now be read as the model over-predicting counterexamples among *small* `n`.
+
 ## The claim
 
 **C-6241.** The expected number of counterexamples to `chi = sigma` is an `O(1)` quantity —
