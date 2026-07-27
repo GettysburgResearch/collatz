@@ -104,22 +104,20 @@ Collatz  <=>  s_L -> infinity,   s_L = min{ n >= 2 : T^j(n) >= n for all j <= L 
 (computed exactly to `L = 375`, X-6170). Every architecture's extraction question is this same
 question asked of a smaller set, so normalising the quantifier is free at every scale.
 
-And the recurring self-referential attack on it is now priced (R-6171). A counterexample's
-minimum must stay above the density line for `log_{3/2}(m)` steps; the loop closes iff the
-floor's growth exponent exceeds `log2(3/2) = 0.584963`. What is actually available is
-`1 - H_2(log2/log3) = 0.050044`. Short by `11.69x`:
+And the recurring self-referential attack on it was priced (R-6171) — **and the price turned out
+to be wrong; see T-6245 below, and read this paragraph as history.** The accounting ran: a
+counterexample's minimum must stay above the density line for `log_{3/2}(m)` steps, so the loop
+closes iff the floor's growth exponent exceeds `log2(3/2) = 0.584963`, against
+`1 - H_2(log2/log3) = 0.050044` available — short by `11.69x`. Q-6174 turned that into a target
+number: a constraint of dimension below `1 - log2(3/2) = 0.415037`, against `0.949956` from
+minimality alone.
 
-```text
-staying high is cheap   (0.050 bits of starting value per step — codimension of the TARGET)
-being  high is expensive (0.585 bits per odd step        — a property of the MAP)
-```
-
-The precise target that would close it (Q-6174): a constraint on a counterexample's minimum
-whose length-`L` prefix set has dimension below `1 - log2(3/2) = 0.415037`. Minimality alone
-gives exactly `0.949956`, so `0.534918` of dimension must come from somewhere else — and the
-Terras bijection forbids it coming from any itinerary-local condition, since every word is
-realised by exactly one residue class. **Ask a new elementary attack what its constraint's
-dimension is; if it exceeds `0.415037`, the loop cannot close.**
+**Both numbers came from one weak bound**, R-6171(a)'s `c_j <= 2^(j-k) 3^k` ("maximum when the
+odd steps come last"), and T-6243(a) proves the above-line condition forbids exactly that word.
+`log_{3/2}(m)` becomes a power of `m`, `0.584963` becomes "any super-polynomial rate", and
+`0.415037` becomes void. The *barrier* argument of Q-6174 survives — the Terras bijection plus
+minimality plus counting really does cap out at codimension `0.050044` — but its verdict does
+not, because `0.050044 > 0` is now enough.
 
 The barrier extends to the whole modular toolkit: for every odd modulus `M`, each itinerary
 occurs with every residue mod `M` (CRT plus the Terras bijection), so no congruence condition
@@ -133,8 +131,12 @@ size:
 
 | route | have | need | gap |
 |---|---|---|---|
-| forward / self-referential | dimension `0.949956` | `< 0.415037` | `0.534918` |
+| forward / self-referential | dimension `0.949956` | ~~`< 0.415037`~~ **void (T-6245)** | — |
 | backward / coverage | exponent `~0.84` (literature, unverified here) | `1` | `~0.16` |
+
+*(The forward row is kept to show what was superseded. T-6245 replaces the requirement with
+"`nu_L` beats a polynomial", which the available `0.050044` does; the forward route's remaining
+gap is not a dimension at all but the absence of any proved lower bound on `nu_L`.)*
 
 Numerically narrower — but **not the same kind of object**: closing the forward gap would prove
 the conjecture, closing the backward one would not (`X^{1-o(1)}` permits `X^{o(1)}`
@@ -264,6 +266,31 @@ With the identity in hand a `7.2*10^11` scan (complete: `0` counterexamples, `0`
 undersells it — only `8260` of the `j <= 3*10^8` are not excluded at all (density `2.75*10^-5`),
 and their consecutive gaps take exactly eight values, every one a convergent numerator of
 `log2(3)` or a sum or difference of two.
+
+**And then the barrier turned out to be an artefact (T-6245).** This namespace's two no-go
+results on the self-referential route — R-6171 ("needs exponent `0.585`, gets `0.050`, short by
+`11.69x`") and Q-6174 ("exhibit a constraint of dimension `< 0.415037`") — both rest on
+R-6171(a)'s bound `c_j <= 2^(j-k) 3^k`, justified as *maximum when the odd steps come last*.
+T-6243(a) proves the above-line condition is **equivalent** to `t_i <= a_{i-1}`, which forces the
+odd steps to come **early**. At `j = 100` the true maximum is `2^33` times smaller; at `j = 65`
+it is `867.14` against R-6171's `1.66*10^7`.
+
+The consequence is structural, not numerical. R-6171 gets `chi(m) >= log_{3/2}(m)` — logarithmic
+in `m`. The exact bound gives `chi(m) >= min{j : Bmax(j) >= m}`, a **power** of `m`. A loop that
+feeds a logarithm into an exponential must beat a specific constant; a loop that feeds a power
+back needs only to beat a polynomial. So the requirement drops from `nu_L >= 2^(0.585 L)` to
+`nu_L >> L^mu`, and the exponent this theory itself predicts for `nu_L`, `0.050044`, beats every
+polynomial. **Q-6174's target number is void and the route is no longer refuted.**
+
+Two more things fall out. Every Collatz counterexample's orbit minimum has `sigma = infinity`,
+so it **is** a counterexample to `chi = sigma` — the coefficient-stopping-time work bounds the
+object the conjecture is about, not a neighbouring one. And the conjecture reduces to a race
+between two computable sequences, `nu_{j-1}` against `Bmax(j)`: currently won by `3.2*10^5` and
+widening, holding at every `j` in `[66, 376]`, failing only at eight `j` where `Bmax(j) <= 867`.
+
+**What is not proved: any lower bound on `nu_L`** — equivalently `chi(n) = O(log n)`, measured to
+hold with constant `13.9` across the `7.2*10^11` integers scanned. That single hypothesis now
+implies the conjecture, and it is the whole of what remains in this route.
 
 **And the two lanes turned out to be one lane (T-6244).** T-6141(b)'s cycle bound
 `m <= k 2^q/(3(2^q - 3^k))` is *literally* T-6243(a) with `G(k)` relaxed to `k` — the same

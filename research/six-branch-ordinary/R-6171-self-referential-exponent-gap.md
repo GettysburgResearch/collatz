@@ -12,6 +12,16 @@ Dependencies:        T-6170 (the floor), T-6131 (the dimension), X-6170 (the mea
 Scope:               the whole "a counterexample's minimum must climb, therefore it must be
                      huge, therefore contradiction" family of arguments
 Refutes (as a method): the self-referential / stopping-time route to a proof of Collatz
+SUPERSEDED BY:       T-6245.  The threshold `c > log2(3/2)` below is an artefact of (a)'s bound
+                     `c_j <= 2^(j-k) 3^k` ("maximum when the odd steps come last").  T-6243(a)
+                     proves the above-line condition FORBIDS that word: it is equivalent to
+                     `t_i <= a_{i-1}`, which forces the odd steps early.  The true maximum is
+                     `2^33` times smaller at j = 100.  With it, `chi(m)` is bounded below by a
+                     POWER of m rather than by `log_{3/2}(m)`, and the loop closes for any
+                     super-polynomial growth of nu_L -- no constant to beat.  The verdict in
+                     (d) below ("short by 8.46x / 11.69x") is therefore WRONG, in the
+                     direction of pessimism.  The exponent accounting in (b)-(c) is correct
+                     for the bound (a) uses; it is (a) that is weak.
 ```
 
 ## The attack being priced

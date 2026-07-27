@@ -8,6 +8,15 @@ Created:             2026-07-25
 Last updated:        2026-07-25
 Dependencies:        T-6131, T-6170, R-6171, L-6130 (Terras bijection)
 Scope:               elementary counting/dimension attacks on the full conjecture
+TARGET NUMBER VOID:  T-6245.  The `0.415037` below is computed from R-6171's threshold
+                     `log2(3/2)`, and that threshold is an artefact of a bound the above-line
+                     condition forbids (T-6243a).  The requirement is not "codimension above
+                     0.535" but "nu_L beats a polynomial", which the `0.050044` this file
+                     computes ALREADY does.  The barrier argument in this file stands as a
+                     statement about the toolkit's reach; its conclusion that the reach is
+                     insufficient does not.  Read it as: the toolkit reaches exactly what is
+                     needed, and what is missing is a LOWER bound on nu_L, which is a
+                     different kind of object from anything (i)-(iii) produce.
 ```
 
 ## The question, stated as a number
