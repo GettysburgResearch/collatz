@@ -48,6 +48,7 @@ sequence `m_N`.
 | [O-6201](O-6201-coverage-deficit-onset.md) | EMPIRICAL (+ PROVED branching) | Backward-tree branching is exactly `4/3` (`n` has 2 predecessors iff `n = 2 mod 3`) and the tree has no duplicates, so the **only** loss is escape above `X`. Full branching holds to `0.5%` for 32 levels (coverage `X^0.55`); the deficit switches on there. Serves issue #25. |
 | [O-6202](O-6202-descent-absorption.md) | PROVED (mechanism) | **Why:** residue `0 mod 3` is absorbing for descent, and one descent in three lands there — so every descent has a `1/3` chance of permanently ending a path's ability to go down. Deep-descent paths are far rarer than a binomial model assumes, and those are exactly the ones that would stay below `X`. |
 | [O-6211](O-6211-hardness-is-2-adic.md) | EMPIRICAL | The hardest integers are strongly structured at every 2-power modulus (`chi^2/df` up to 5430) and **indistinguishable from uniform at every odd modulus** (`chi^2/df <= 1.7`) — Q-6174's CRT barrier, visible in data. |
+| [O-6221](O-6221-law-validated-across-charts.md) | EMPIRICAL | **The central law, tested.** `m_N ~ (2^q/D)^N` validated across seven architectures spanning dimension `0.136`-`0.787` and log-rates `1.27`-`11.51`: measured/predicted `0.879`-`1.084`, mean `0.979`. It was previously checked at one chart only. |
 | [M-6120](M-6120-density-gate-acceptance-criterion.md) | PROPOSED | Process: state `D/Q` and the forcing identity before building a divergent-orbit architecture; bookkeeping recommendations. |
 
 ## Start here
