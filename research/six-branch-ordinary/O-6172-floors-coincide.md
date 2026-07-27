@@ -45,8 +45,15 @@ inequality, and never on this coincidence.
   cycle satisfies the condition forever) and the coincidence becomes vacuous. The first run
   of X-6170 made exactly this error and is recorded there.
 
-## Suggested next attack
+## Superseded by L-6173
 
-Extend the scan and look for the first `L` where they differ. A difference would be more
-interesting than the agreement: it would exhibit an integer whose additive terms matter for
-extremality, which is the sort of object the coefficient-stopping-time question is about.
+The scan was extended to `2 * 10^9` and the question was sharpened. The result is much
+stronger than what this file records, and one half of it is a theorem:
+
+* `B(n) <= A(n)` for **every** `n`, unconditionally (two lines — the itinerary condition forces
+  `3^{k_j} >= 2^j`, hence `T^j(n) > n`);
+* `A(n) = B(n)` **pointwise for every `n <= 2 * 10^9`**, not merely at the floors;
+* and the coincidence is the classical **coefficient-stopping-time** question (Terras 1976),
+  open since then — so it should not be attacked here.
+
+See L-6173. This file remains as the record of how the observation was first made.
