@@ -10,11 +10,13 @@ Title: The exact affine calculus of backward words over the moves D(z) = (2z-1)/
        mu != 4 mod 9, mu != 10 mod 81; the exact joint pair sieve mod 2^k 3^D,
        its product form at depth <= 3 and the PROVED failure of any clean
        collapse analogue at depth 4; and an honest bounded-factor-vs-rate verdict
-Status: PROPOSED
+Status: PROVED
 Authoring agent: fable-02-p20
-Reviewing agents: (none yet)
+Reviewing agents: fable-02-v28 (adversarial review 2026-07-27: PASS)
 Created: 2026-07-26
-Last updated: 2026-07-26
+Last updated: 2026-07-27 (fable-02-v28 review: PASS; status PROPOSED -> PROVED;
+              sub-claims L-9926.4(2a) and L-9926.5 remain PARTIAL exactly as
+              marked, with their verified ranges extended by the review)
 Dependencies: research/foundations/NOTATION.md (D-9901 C, D-9902 T, D-9905 orbits,
               D-9906 parity vector, D-9909 counterexample, D-9910 stopping time);
               L-9902 (PROVED) — parity word of n depends only on n mod 2^k;
@@ -1972,8 +1974,287 @@ byte-exact.
 
 ---
 
-*Authored by fable-02-p20, 2026-07-26. Status PROPOSED: no independent
-verification yet. Conditional statements are tagged [H] throughout; nothing here
-asserts that a counterexample exists. The strength table of L-9919.8(3) is
-superseded by L-9926.3; L-9919.8's soundness lemmas stand and are re-derived
-here from the word calculus.*
+*Authored by fable-02-p20, 2026-07-26. Status at authoring: PROPOSED (no
+independent verification yet); upgraded to PROVED after the adversarial review
+recorded below (fable-02-v28, 2026-07-27). Conditional statements are tagged [H]
+throughout; nothing here asserts that a counterexample exists. The strength
+table of L-9919.8(3) is superseded by L-9926.3; L-9919.8's soundness lemmas
+stand and are re-derived here from the word calculus.*
+
+---
+
+## Verification note (fable-02-v28, 2026-07-27)
+
+Adversarial review per README §13. Every proof was reconstructed from the
+statements and every computation re-implemented from scratch (reviewer scripts
+`v28_words.py`, `v28_int.py`, `v28_rate.py`, `v28_joint.py`, `v28_pern.py`,
+`v28_extract.py`, session scratchpad `v28/`); no code was adapted from this
+file's scripts, and where the mathematics allowed a structurally different
+implementation choice I took it — per-class word data by **direct
+$T$-iteration of class representatives** (checked against the *definition*
+$\delta_j = 2^j(T^j(n)+1) - 3^{a_j}(n+1)$, so the review does not inherit the
+file's parity-transport recursion, its declared soft spot (ii)); legality
+classes by an independent closed formula; and a **no-prune brute-force referee**
+at small $k$. All arithmetic exact (`int`/`Fraction`).
+
+### Priority probe 1 — the completeness theorem $|w| \le j$ (L-9926.2(4)): CONFIRMED
+
+Re-derived from scratch, since an error here would over-count $\mathrm{Int}$
+silently. In a class-uniform word every $\mathsf{D}$ is applied with $3 \mid P$,
+i.e. at $e < a_j$; hence $\#\mathsf{D}(w) \le a_j$ and
+$P_i = 2^{i}3^{\,a_j - e_i} \ge 2^{i}$ at every prefix. A kill needs
+$P_L \le 2^j$ (the exact value criterion excludes $P_L > 2^j$ above any bound),
+so $2^{L} \le P_L \le 2^{j}$, i.e. $L \le j$; unique factorisation forces
+$(L, a) = (j, a_j)$ in the equality case, and $L < j$ strictly otherwise. The
+**prune** was re-proved independently: from a node $(L, e)$ every descendant
+multiplies $P$ by $2$ or $2/3$, so the minimum reachable $P$ is
+$P \cdot (2/3)^{\min(j-L,\ a_j-e)}$; a node whose minimum exceeds $2^j$ has no
+kill descendant, and no ancestor of a kill node is ever pruned. Computationally
+referee-checked: at $k \le 10$, a **no-prune** enumeration of all class-uniform
+words of length $\le j+3$, per class per $j$, reproduces
+$\mathrm{Int} = 1,1,2,3,4,7,11,16,27,46$ exactly; and a length-bound probe over
+**all** classes at $j \le 8$ to length $j+4$ found **0** kill nodes with
+$|w| > j$ in 73,535 nodes. The search space is therefore complete and the
+computed $\mathrm{Int}(k)$ *is* the defined $\mathrm{Int}(k)$.
+
+### Priority probe 2 — $\mathrm{Int}(16) = 1363$ vs L-9919.8's $1366$: CONFIRMED (1363 is right)
+
+L-9919.8's $1366$ was a word-length-cap artifact, exactly as this file claims.
+My independent tree search kills precisely the three classes the cap missed:
+
+| class mod $2^{16}$ | death level $j$ | min-$\theta$ word | $\lvert w\rvert$ | $\theta$ |
+|---|---|---|---|---|
+| $16383$ | $16$ | $\mathsf{DMDDDDDDDDDDDD}$ | $14$ | $-1$ |
+| $24575$ | $15$ | $\mathsf{DMDDDDDDDDDDD}$ | $13$ | $-1$ |
+| $57343$ | $15$ | $\mathsf{DMDDDDDDDDDDD}$ | $13$ | $-1$ |
+
+Each was verified end-to-end on 4 integer representatives (legality at every
+$\mathsf{D}$, positivity, $z < n$, and the forward return
+$T^{|w|}(z) = T^{j}(n)$), and an exhaustive per-$j$ enumeration confirms **no
+kill with $|w| \le 12$ exists for these classes at any $j \le 16$** — so the
+cap-12 algorithm provably could not have seen them. My own re-implementation of
+L-9919.8's capped algorithm reproduces its published $7/16/46/144/436/1366$, and
+its $k = 16$ survivor set minus my exact one is precisely these three classes.
+The first strictly-interleaved kill is re-confirmed independently: class
+$95 \bmod 128$ dies at level $7$ by $\mathsf{DMDDD}$, $\theta = -1$, chain
+$182 \to 121 \to 242 \to 161 \to 107 \to 71$ with $71 < 95$ (also the route by
+which $223 \bmod 256$ leaves $\mathrm{Int}(8)$).
+
+**Consequence for the index: L-9919.8(3)'s $k=16$ row ($1366$) is superseded by
+$1363$;** its $k \le 14$ rows ($16/46/144/436$) are exact and unaffected, and
+L-9919.8's *soundness* is untouched.
+
+### Priority probe 3 — the floor-free $\mu$ congruences: CONFIRMED, direction sound
+
+Audited with care, because a direction error would be silent. The argument is:
+for a **contracting** word $w$ ($2^{|w|} < 3^{\#\mathsf{D}(w)}$) and
+$\mu \in \mathrm{Dom}(w)$, the value $w(\mu)$ is (i) a **positive integer** —
+by the positivity induction, with no floor and no side condition; (ii) in $X$ —
+because $T^{|w|}(w(\mu)) = \mu \in X$ and L-9911 U2 is an *iff*, applied
+$|w|$ times **backwards**, which is the direction that produces a *new*
+counterexample rather than assuming one; and (iii) **strictly smaller** than
+$\mu$ by the exact value criterion, uniformly on $\mathrm{Dom}(w)$ with no
+exceptional bound. That contradicts minimality, so $\mu \notin \mathrm{Dom}(w)$.
+The $X$ and $\mu$ used are literally L-9911's ($X = \{n : 1 \notin O_C(n)\}$,
+$\mu = \min X$ — the least counterexample, not merely the least element of some
+orbit); the standing hypotheses of L-9926, L-9911, L-9909 and L-9919 are
+word-for-word aligned. **No verified floor (X-9901 or X-9903) enters
+L-9926.4(1) anywhere** — the claim of floor-freeness is exact.
+
+Symbolic re-derivations, done independently:
+
+* $w = \mathsf{MDD}$: on $z = 9s+4$, $z \mapsto 18s+8 \mapsto 12s+5 \mapsto
+  8s+3$, i.e. $\mathsf{MDD}(z) = (8z-5)/9$, integral, **odd**, $\ge 3$, and
+  $< z$ for every $z \ge 1$; $T^3((8z-5)/9) = z$; and $\mathrm{Dom} = \{z
+  \equiv 4 \bmod 9\}$ **exactly** (both directions, exhaustive to $10^5$).
+  Hence $\mu \not\equiv 4 \bmod 9$.
+* $w = \mathsf{MDMDDD}$: $2^6 = 64 < 81 = 3^4$; legality class
+  $t_w = c_w \cdot 2^{-6} \equiv 11 \bmod 81$, i.e. $z \equiv 10 \bmod 81$;
+  $\mathsf{MDMDDD}(z) = (64z - 73)/81 < z$; $T^6$ returns; $\theta =
+  -c_w/(3^4-2^6) - 1 = -73/17$. Verified exhaustively to $3 \cdot 10^5$.
+  Hence $\mu \not\equiv 10 \bmod 81$.
+* **$\mu \bmod 36 \in \{3, 7, 15, 19, 27\}$: CONFIRMED**, by CRT from
+  $\mu \equiv 3 \bmod 4$ (L-9909.2(M)(ii)) together with
+  $K_3(2) = \{2,4,5,8\}$ (which contains both $\mu \not\equiv 2 \bmod 3$ and
+  $\mu \not\equiv 4 \bmod 9$). Density $5/36$ against L-9919's $1/6$.
+
+### Priority probe 4 — the bounded-factor verdict: HARDENED (and extended two levels)
+
+My recount reproduces every figure in L-9926.3(e) and L-9926.5. I then **pushed
+the window two levels past the file's**, which is the decisive test of its own
+flagged caveat:
+
+| $k$ | 26 | 27 | 28 |
+|---|---|---|---|
+| L-9909 | 1037374 | **1762293** | **3524586** |
+| Aug | 854473 | **1494916** | **2787223** |
+| **Int** | 602780 | **1061510** | **1976972** |
+| $\log_2(\mathrm{Aug}/\mathrm{Int})$ | 0.5034 | **0.4940** | **0.4955** |
+
+The residual drift the author honestly flagged does **not** persist: it is
+$+0.0059$ bits/level over $k = 16 \to 26$, $+0.0012$ over $k = 20 \to 26$,
+$+0.0035$ over $k = 18 \to 28$, and $\mathbf{-0.0005}$ over $k = 22 \to 28$ —
+i.e. it changes sign once the window is extended, and is everywhere an order of
+magnitude below the oscillation amplitude
+($\log_2(\mathrm{Aug}/\mathrm{Int}) \in [0.4907, 0.5054]$ over $k \ge 20$).
+The drift was an artifact of the $k = 16 \to 20$ segment, not a trend.
+
+I therefore **harden** the file's central reading and raise its confidence from
+"moderate" to **high on the computed range** $k \le 28$: the interleaved sieve
+buys a bounded factor of $\approx 0.50$ bits ($\approx 1.41\times$) over Aug,
+with no evidence whatever of a rate improvement. This remains a **finite-range**
+statement; L-9926.5's PARTIAL label is correct and must stay until item 1 of the
+Suggested next attack is settled either way.
+
+### Everything else re-derived and re-computed (all exact, zero discrepancies)
+
+* **L-9926.1(1)–(5) in full**, including the **direction convention**, pinned
+  adversarially: $\mathsf{DM}(5) = 6$ ($\mathsf{D}$ acts first) while
+  $\mathsf{MD}$ is illegal at $5$, and $\mathsf{MD}(4) = 5$ — the closed form's
+  position weights $2^{L-i}3^{d_i}$ match left-to-right application, so no
+  off-by-one corrupts the downstream bookkeeping. Also re-derived: the legality
+  refinement induction, the positivity induction (a legal $\mathsf{D}$ at
+  $z \ge 1$ forces $z \equiv 2 \bmod 3$, hence $z \ge 2$, hence
+  $\mathsf{D}(z) \ge 1$), the exact value criterion, inversion, and closure.
+* A cross-check produced during review: full-word legality and integrality of
+  the terminal affine value are each a single class mod $3^{\#\mathsf{D}}$ and
+  legality $\subseteq$ integrality, hence they coincide — giving the closed
+  formula $t_w \equiv c_w\,(2^{|w|})^{-1} \bmod 3^{\#\mathsf{D}}$, which
+  reproduces the refinement recursion on every word tested and is a cheaper
+  route for later users.
+* **Word calculus, exhaustive:** all $2047$ words of length $\le 10$, on every
+  legality residue with three lifts (**1,208,542 starts**), plus 3000 random
+  words of length $11$–$16$: 0 failures on recursion-vs-closed-form, legality
+  (both directions), the affine form at every prefix, positivity, inversion,
+  and the value criterion. Contracting words drop at every legal start (6175
+  starts, 0 failures).
+* **Counts:** $\mathrm{Int}(k)$, $\mathrm{Aug}(k)$, L-9909$(k)$ for
+  $k \le 20$ with residue tracking — **all sixty match**; the explicit PART-B
+  lists match **element-by-element for every $k \le 12$**;
+  $\mathrm{Int} \subseteq \mathrm{Aug} \subseteq$ L-9909 as sets at every level
+  (checked, not assumed). Residue-free recount confirms the whole $k \le 26$
+  table including $\mathrm{Int}(20) = 15870$ and $\mathrm{Int}(26) = 602780$,
+  and extends it to $k = 28$ (above).
+* **$B^{\mathrm{int}}_k$ and certificates:** $0,1,1,1$, then $23/5$
+  ($5 \le k \le 7$), then $319/13$ for $8 \le k \le 20$ — identical to
+  $B^{\mathrm{aug}}_k$; worst class $123 \bmod 256$ killed most cheaply by the
+  **empty** word (hand-checked: $\rho_8 = 319$, $2^8 - 3^5 = 13$). 461 kills at
+  levels $\le 16$, 2879 at $\le 20$, the same min-$\theta$ word-length
+  histogram (longest 18), 1154 min-$\theta$ kills using $\mathsf{M}$, and 0
+  equality-type ($P_L = 2^j$) kills.
+* **Universal layer:** $|K_3(D)| = 1,4,12,37,111,335,1013$ for $D \le 7$,
+  new-beyond-lift $1,1,0,1,0,2,8$, and **every** universal certificate has
+  $\theta \le -1$ (so no discharge is needed, as claimed);
+  $K_3(1) = \{2\}$, $K_3(2) = \{2,4,5,8\}$; first genuinely-deeper class
+  $\{10 \bmod 81\}$ with certificate $\mathsf{MDMDDD}$, $u \equiv 11 \bmod 81$,
+  $\theta = -73/17$.
+* **Pair sieve:** $(8,1)\ 32$, $(8,2)\ 80$, $(12,2)\ 720$, and
+  $(12,4)\ \mathbf{6194}/331776$, density $0.01867$ — all reproduced with my own
+  certificate machinery. Over all killed pairs the maximum of the *least*
+  certificate threshold is exactly $-1$, so every pair exclusion holds for every
+  $n \ge 1$; only Int-membership consumes the $\mu > 319/13$ discharge.
+* **Collapse analogue:** product form holds at every $(k, D \le 3)$ the file
+  computed **and, new in this review, also at $(15,3)$ and $(16,3)$**
+  ($12030 = 802 \cdot 15$; $20445 = 1363 \cdot 15$), extending
+  L-9926.4(2a)'s verified range from $k \le 14$ to $k \le 16$; the depth-1
+  probe likewise extends to $k = 15, 16$ (0 exceptional classes). Depth-4
+  failure exact: $690/704$, $1980/2024$, $6194/6336$ with $14/44/142$ richer
+  classes. The witness was verified **twice**: symbolically from
+  $(a_4, \delta_4) = (3, 12)$ of class $11 \bmod 16$ — the word
+  $\mathsf{MMDDDMDDDD}$ refines legality to $u \equiv 61 \bmod 81$, terminal
+  cleared pair $(2^j3^e, 2^L3^{a_j}) = (34992, 27648)$, $\theta = -33/17$,
+  killed residue $s \equiv 60 \bmod 81 \equiv 0 \bmod 3$ — and on integer
+  chains at $n = 24603,\ 356379,\ 2347035,\ 33202203$. Class-dependence
+  confirmed ($2047$ and $4095 \bmod 4096$ do **not** forbid $60 \bmod 81$ at
+  depth $\le 4$) and $n$-dependence confirmed ($n = 28699$, same class mod
+  $4096$ but $u \equiv 26 \bmod 81$, fails legality). So **no product-form
+  collapse theorem exists for this family**, as claimed.
+* **Per-$n$ two-sided test:** my own certificate enumerator (all refinement
+  depths, all three threshold regimes including the $\Delta < 0$ small-$n$
+  window and the constant-shift case) against my own direct backward-chain DFS:
+  **0 mismatches for every $n \le 50000$**, 48,305 predicted kills, and
+  certificate-group count $50659$ — all three figures matching the file. Beyond
+  the file's range: **0 mismatches on 300 random $n \in [10^6, 10^8]$**.
+* **Mechanical audit:** all five embedded scripts re-extracted from this
+  Markdown by a parser and re-run; stdout **byte-identical** to the printed
+  outputs in every case ($1143/4550/3076/292/3425$ bytes). **No placeholder
+  artifacts** (`__SCRIPT__`, `TODO`, elided output) anywhere in the file. Every
+  cross-reference verified against its source text: L-9902.1(c)/.2/.3(iii),
+  L-9903.1/.2, L-9909.2(B)(F)(E)(M)/.3/.4 and X-9901, L-9911 U2/U3/.1 with the
+  $X,\mu$ definitions, L-9919.1/.2/.4(1)–(6)/.5/.6(1)/.7/.8(1)–(3), and
+  L-9913's X-9903 tier table.
+* **The three framing corrections (L-9926.1(1), (2), (4)) are fairly stated.**
+  (i) L-9919.8's own text already writes $\mathsf{M}: u \mapsto 2u-1$, so
+  "not multiplicative in the shifted coordinate" describes it accurately and
+  contradicts nothing there. (ii) The pure-calculus legality modulus really is
+  $3^{\beta}$ alone; the mixed $2^\alpha 3^\beta$ modulus appears only after
+  transport through a $2$-adic class, as L-9926.1(2) says. (iii) The redundancy
+  of L-9919.8's per-node positivity thresholds is **proved** (positivity is
+  implied by legality) and the witness arithmetic is exact: for class
+  $63 \bmod 256$ at $j = 8$ with $\mathsf{DMDDDD}$, the terminal state is
+  $(P,Q) = (192, 0)$, so the kill threshold is $Q/(2^j - P) - 1 = -1$, while
+  $5/3$ is exactly the maximum of L-9919.8's positivity thresholds
+  $(2^{j+1}-Q)/P - 1$ along the word ($-17/81, -115/243, -17/81, 5/27, 7/9,
+  5/3$) — I reproduced both. The terminal value is $\tfrac34(n+1)$, so the kill
+  holds for every $n \ge 1$. **L-9919.8's soundness is unaffected**; only its
+  recorded thresholds were weaker than necessary, and only its $k=16$ strength
+  row is superseded.
+* **Tier honesty of the X-9903 citation: correct.** L-9926.4(4) needs only
+  $\mu > 319/13 < 25$, discharged by X-9901 ($\mu > 10^6$, finite verification
+  inside the PROVED L-9909); X-9903 is quoted as EMPIRICAL, adversarially
+  reviewed (fable-02-v19), double-implemented to $10^{10}$ and reviewed
+  single-implementation on $(10^{10}, 10^{12}]$ — which is exactly the tier
+  language of L-9913's table — and is explicitly not needed. No result in this
+  file depends on it.
+
+### Defects found
+
+**No mathematical defect.** Two display-level provenance notes, recorded here
+rather than edited, so that the author's scripts and their byte-exact outputs
+remain stable:
+
+* **(a) Cosmetic, severity: negligible.** L-9926.3(c) reports "1382 checks" for
+  $461$ certificates on 3 representatives each; $461 \times 3 = 1383$. The
+  missing one is legitimate and is the script's own correctness guard: the
+  class killed at level $2$ has threshold $\theta = 1$ and smallest
+  representative $n = 1 \le \theta$, so that representative is correctly
+  skipped. I reproduced the skip exactly ($1383 - 1 = 1382$).
+* **(b) Cosmetic, severity: negligible.** In script 2's PART E the gate's
+  expectation dictionary carries a $k = 6 : 7$ entry, but L-9919.8(3)'s
+  published table begins at $k = 8$; that row is the reproduction's own value
+  (consistent with $\mathrm{Aug}(6) = \mathrm{Int}(6) = 7$) rather than a
+  published L-9919.8 figure. The printed claim "match L-9919.8(3): True" is
+  true for every genuinely published row ($8/10/12/14/16$).
+
+Neither affects any statement, table, or threshold.
+
+### Verdict
+
+**PASS.** Every load-bearing claim was reproduced from independent
+implementations; the completeness theorem — the single place where an error
+would have silently over-counted $\mathrm{Int}$ — was re-derived by hand and
+referee-checked by no-prune brute force; the headline correction
+$\mathrm{Int}(16) = 1363$ (not L-9919.8's $1366$) is **confirmed**, with the
+three recovered classes exhibited and machine-verified; the $\mu$ congruences
+are sound, floor-free, and use the in-repo $\mu$; the pair sieve's
+$6194/331776$ is exact; and the bounded-factor verdict is **hardened** by a
+two-level extension that reverses the sign of the residual drift. Status
+upgraded PROPOSED $\to$ PROVED per NOTATION.md conventions (one detailed
+adversarial review); INDEPENDENTLY_VERIFIED is left for a further reviewer.
+Sub-claims L-9926.4(2a) and L-9926.5 remain PARTIAL, correctly, with their
+verified ranges extended here ($k \le 16$ and $k \le 28$ respectively).
+
+Residual risk after this review: the shared correctness of CPython
+big-integer arithmetic across the author's implementations and my structurally
+different ones, which agreed exactly on every compared value.
+
+*Reviewed by fable-02-v28, 2026-07-27. Reviewer scripts in session scratchpad
+`v28/`: `v28_words.py` (exhaustive word calculus, direction probe, $\mu$
+congruences, length-bound probe), `v28_int.py` (independent $\mathrm{Int}/
+\mathrm{Aug}/$L-9909 tree with direct-iteration class data, brute-force referee,
+the three $k=16$ classes, cap-12 gate, $B^{\mathrm{int}}$), `v28_rate.py`
+(exact counts to $k = 28$), `v28_joint.py` ($K_3(D)$, product-form tests to
+$(16,3)$, depth-4 witness, pair tables, depth-1 probe), `v28_pern.py`
+(two-sided per-$n$ exactness), `v28_extract.py` (byte-for-byte re-run of all
+five embedded scripts). The file is unchanged above this note except the status
+header, the Last-updated line, and one sentence of the authoring footer.*
