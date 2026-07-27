@@ -67,16 +67,34 @@ Prover/verifier IDs abbreviate fable-02-pN / fable-02-vN.
 
 ## Compound results (with review-level caveats)
 
-- **Cycle-length floor.** At PROVED level: no nontrivial cycle has m ≤ 6 odd terms (L-9906).
-  At PROPOSED level (L-9912): additionally m ∉ {7, 9, 12}, and the smallest open case is
-  m = 8 with K = 13 forced — a finite enumeration of 792 exponent compositions would settle it.
-- **Shape of any large-minimum cycle.** At PROVED level: 0 < K/m − log₂3 ≤ 1/(3·x_min·ln2)
-  (L-9905). At PROPOSED level (L-9910): if x_min ≥ m², K/m must be one of the certified
-  convergents of log₂3 lying above it (8/5, 65/41, 485/306, …).
+- **Cycle-length floor** (all PROVED). No nontrivial Syracuse cycle has m ≤ 21 odd elements
+  (L-9915, exhaustive); **166 further lengths are eliminated with zero enumeration** and that
+  list is complete over all m (L-9927, max 1024, superseding L-9917's 46 and L-9920's 48);
+  the **smallest surviving length is m = 22**. Unconditionally, from the verified floor
+  F = 10⁶, every nontrivial cycle has **m ≥ 2966** (L-9913); at the 10⁹ floor m ≥ 47468, and
+  at the 10¹² floor (X-9903) **m ≥ 10,781,274** — see L-9913's verification-tier table, which
+  separates the double-implemented 10¹⁰ tier (m ≥ 190,537) from the single-implemented 10¹².
+- **Shape of any large-minimum cycle** (all PROVED). 0 < K/m − log₂3 ≤ 1/(3·x_min·ln2)
+  (L-9905); if x_min ≥ m², K/m must be one of the certified convergents of log₂3 lying above
+  it (L-9910: 8/5, 65/41, 485/306, …) — but note the minimiser behind L-9913's bound is a
+  *semiconvergent* (2966 = 306 + 4·665), so convergent-only searches are unsound.
 - **Any divergent counterexample** must sustain odd-step density ≥ γ ≈ 63.1% in the liminf
-  (L-9907, PROVED), while typical integers fall below their start with exponential-rate
-  density (L-9908, PROPOSED); the minimal counterexample lives in explicitly listed residue
-  classes mod 2⁸ (L-9909, PROVED).
+  (L-9907), while typical integers fall below their start with exponential-rate density
+  (L-9908). The minimal counterexample μ lives in explicitly listed classes mod 2⁸ (L-9909),
+  refined to **μ ≡ 3 or 7 (mod 12)** (L-9919) and then, with no verified floor at all, to
+  **μ mod 36 ∈ {3, 7, 15, 19, 27}** with μ confined to 6194 classes mod 2¹²·3⁴ (L-9926).
+- **The affine/pulse programs are classified far past their commissioned range.** For every
+  fixed-weight (a,b) macro packet with **0 ≤ a ≤ 448 and every b**, both phases: contracting
+  packets admit no integral cycle, supercritical packets admit no cycle meeting the physical
+  domain, so the only survivor is the trivial fixed point (T-9925, building on L-9923/T-9924).
+  Exactly 27 listed packets plus the a ≥ 470 contracting tail resist, each by one certificate
+  rung. T-9924.8 also gives the exact bijection identifying the pulse chart (5,1) with issue
+  #58's six-branch chart — the two programs are one object.
+- **Proved ceilings on whole method families** (see NEGATIVE_RESULTS.md): the Erdős–Turán /
+  cusp route is unsatisfiable (L-9916) and extraction is undecidable in general (L-9918); the
+  sorted/dictionary family caps at m ≤ 207 (L-9920); interleaved descent sieving buys a
+  bounded factor, never a rate (L-9926); and **no allowed-set congruence sieve of any
+  thinness can eliminate all large m** (L-9927.8, universal).
 - **Symbolic constructions:** every infinite parity word is realized by a unique 2-adic
   integer (L-9904, PROVED) — so the one and only obstruction for the symbolic directions is
   proving the realizing point is a positive integer. Constructions must not use the
@@ -89,15 +107,34 @@ Prover/verifier IDs abbreviate fable-02-pN / fable-02-vN.
   no-divergent-integer-orbit question.)
 - **Q-9912-A** (L-9912): no elementary counting upper bound on the fraction of exponent-1
   steps in a cycle; structural reason recorded.
-- **Flagged next attacks:** the m = 8, K = 13 enumeration (792 cases); an Eliahou-style
-  cycle-length lower bound combining L-9905 + L-9910's certified CF data with a verified
-  sweep floor (suggested ID L-9913, not attempted); extending L-9906's template with larger
-  verified floors (reaches m ≤ 29 with a 10⁵ floor per its Suggested next attack).
+- **Q-9920-A** (L-9920): what does S-closure add beyond sorted floors? — **ANSWERED by
+  L-9927** in both directions: it adds the mod-3 element sieve (166 eliminations, growth rate
+  ⅙ → ⅑ log₂m), and it is provably finite (exact threshold m_U = 1039; universal ceiling).
+- **Q-9925** (T-9925, OPEN): the parameter-uniform contracting-phase floor — proved (König)
+  equivalent to "no infinite suffix word u has σ(u) ∈ Z⁺". A positive answer closes the
+  complete contracting phase; note the sharpened form recorded by v27 (the equivalence alone
+  gives a cofinite tail per row; the complete phase additionally needs a rate λ > 1.05010…).
+- **Q-9927-A/B/C** (L-9927): the full per-class knapsack sweep beyond m ≤ 40; profile-coupled
+  mod-9 transport; chain/layer transport — the routes the universal ceiling does *not* cover.
+- **Flagged next attacks:** lift the 27 resisting packets of T-9925 with one deeper
+  certificate rung (~10²⁶, memory-bound); attack Q-9925 directly; raise the verified floor
+  past the certified plateau (m* is constant for F ∈ (9.85×10¹¹, 2.94×10¹⁴], so only a ~300×
+  jump buys anything); cross-model review, since `INDEPENDENTLY_VERIFIED` is set nowhere.
 
 ## What serves which direction
 
 - **#9 (cycle synthesis):** L-9905 (its displayed equation, now proved), L-9906, L-9910,
-  L-9912 (admissible exponent-word constraints; live {1,2}-window).
+  L-9912 (admissible exponent-word constraints; live {1,2}-window). **The search space now
+  starts at m = 22, not m ≈ 20** — and 166 lengths above it are already dead (L-9915, L-9927),
+  with m ≥ 2966 unconditional at the 10⁶ floor (L-9913).
+- **#58 (six-branch least roots):** L-9916 (the ET/cusp escape route is closed; the
+  trichotomy is a dichotomy), X-9902 (exact least roots to m₁₆ ≈ 4.63×10⁷⁸; the beam/stall
+  probe has an empty guaranteed-detection window), T-9924 (the chart **is** the pulse packet
+  (5,1), via the exact bijection E = 3(α+7153)), T-9925 (the surrounding family classified
+  for a ≤ 448). An adversarial review of the rigidity chain in PRs #64/#65/#66 is in
+  [REVIEW-PR64-65-66-sixbranch-rigidity.md](REVIEW-PR64-65-66-sixbranch-rigidity.md).
+- **#26 (5x+1 control universe):** L-9922 (portability matrix; the ported L-9913 squeeze
+  reproduces the known 5x+1 cycles exactly).
 - **#21 (diagonal foundry):** L-9902 (the requested independent reconstruction of the
   flip/two-lifts structure), L-9907 (rigorous base for its supercritical criterion T-9602),
   L-9904 (realization + integrality obstruction).
