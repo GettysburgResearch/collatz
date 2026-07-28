@@ -1,89 +1,126 @@
-# Public Launch Checklist
+# Agentic Polymath #1 Public Launch Checklist
 
 ## Ownership and backup
 
-- [ ] Organization created
-- [ ] Two secure human owners
-- [ ] Repository mirror backup
+- [x] Organization and repository transfer completed
+- [ ] Trusted backup human owner added
+- [ ] Two-factor authentication required for members
+- [ ] Repository mirror backup stored
 - [ ] Portable Git bundle tested
-- [ ] Frozen pre-public tag
+- [ ] Frozen pre-public tag verified
 - [ ] Issue and PR registries exported
 
 ## Publication audit
 
-- [ ] Branch history inspected
-- [ ] Secrets scanned and removed
+- [ ] All branch history inspected
+- [ ] Secrets and credentials scanned and removed from history
 - [ ] Actions logs and artifacts inspected
-- [ ] Attachments inspected
-- [ ] Copyright and licenses reviewed
-- [ ] Personal data reviewed
-- [ ] Employer or proprietary material reviewed
+- [ ] Releases and attachments inspected
+- [ ] Commit author emails reviewed
+- [ ] Copyright and redistribution rights reviewed
+- [ ] Personal, employer, and proprietary material reviewed
+- [ ] Installed Apps, deploy keys, webhooks, and tokens reviewed
 - [ ] Audit report committed
 
-## Public baseline
+## Public operating baseline
 
-- [ ] Original README preserved in docs
-- [ ] New README
-- [ ] STATE
-- [ ] ROADMAP
-- [ ] CONTRIBUTING
-- [ ] AGENTS
-- [ ] GOVERNANCE
-- [ ] Research protocol
-- [ ] Human guide
-- [ ] Data policy
-- [ ] Compute policy
-- [ ] Claim schema
+- [ ] PR #74 reviewed and merged without mathematical claim promotion
+- [ ] Comprehensive Agentic Polymath README
+- [ ] Historical original README preserved
+- [ ] `STATE.md`
+- [ ] `ROADMAP.md`
+- [ ] `CONTRIBUTING.md`
+- [ ] `AGENTS.md`
+- [ ] `GOVERNANCE.md`
+- [ ] Research and integrator protocols
+- [ ] Human steering guide
+- [ ] Data and compute policies
+- [ ] Claim registry and examples
 - [ ] Pull-request template
-- [ ] Issue templates
+- [ ] Exploration, task, verification, and access-request Issue templates
 - [ ] Security policy
 - [ ] Code of conduct
 - [ ] License
-- [ ] Citation metadata
+- [ ] `CITATION.cff`
 
-## Backlog
+## Access and teams
 
-- [ ] Every open PR frozen by SHA
-- [ ] Dependency graph created
+- [ ] Organization base permission set to `None`
+- [ ] `collatz-contributors` created with Write on this repository only
+- [ ] `collatz-integrators` created with Maintain on this repository
+- [ ] Only founder initially in `collatz-integrators`
+- [ ] Broad contributor Write access withheld until `main` is protected
+- [ ] CODEOWNERS team slugs verified and file activated
+- [ ] Access-request workflow tested
+
+## Backlog and first integration
+
+- [x] Pre-existing open PRs frozen by exact SHA
+- [x] Explicit dependency stacks mapped
 - [ ] Giant umbrella PRs classified
-- [ ] Stacked PRs mapped
 - [ ] Independent reviews identified
-- [ ] Canonical state drafted
+- [ ] First synthesis sweep completed
+- [ ] First adversarial sweep completed
+- [ ] Canonical `STATE.md` populated
 - [ ] No mathematical status silently promoted
+- [ ] Stable packets selected or extracted
 
-## GitHub configuration
+## Actions and compute
 
-- [ ] Discussions enabled
-- [ ] Teams and roles configured
-- [ ] Base permission None or Read
-- [ ] Main ruleset active after publication
-- [ ] Direct pushes blocked
-- [ ] Required reviews enabled
-- [ ] CODEOWNER paths configured
-- [ ] Actions token read-only
-- [ ] Actions cannot approve PRs
-- [ ] Approved actions only
-- [ ] No privileged untrusted PR execution
+- [x] Actions temporarily disabled by owner
+- [ ] Decision made to remain disabled or enable only reviewed bounded workflows
+- [ ] Default workflow token read-only
+- [ ] Actions cannot approve pull requests
+- [ ] Selected actions only
+- [ ] Explicit short timeouts
+- [ ] No secrets exposed to untrusted code
+- [ ] No public self-hosted runner
+- [ ] No scheduled or distributed mathematical search
+
+## Protecting `main`
+
+Desired configuration:
+
+- [ ] Restrict updates
+- [ ] Restrict deletion
+- [ ] Require pull request
+- [ ] Block force pushes
+- [ ] Bypass limited to `collatz-integrators` and organization owners
+- [ ] `integration/**` protected where practical
+
+When private protection is unavailable on the current plan:
+
+- [ ] Keep broad Write access disabled while private
+- [ ] Finish baseline, audit, and first integration pass
+- [ ] Change visibility during an unpublished controlled setup window
+- [ ] Immediately activate public branch protection or a ruleset
+- [ ] Test that a contributor cannot update `main`
+- [ ] Only then grant contributor Write access and announce the project
 
 ## Contributor experience
 
-- [ ] Open-expedition issues
-- [ ] Focused starter tasks
-- [ ] Verification tasks
-- [ ] Literature tasks
-- [ ] Formalization tasks
+- [ ] Actual labels created from `LABELS.md`
+- [ ] Open-expedition Issues seeded
+- [ ] Focused starter tasks seeded
+- [ ] Verification tasks seeded
+- [ ] Literature tasks seeded
+- [ ] Formalization tasks seeded
+- [ ] Cartography and organization tasks seeded
 - [ ] Worked example contribution
-- [ ] Outside-account test
+- [ ] Outside-account Issue test
+- [ ] Outside-account fork PR test
+- [ ] Direct contributor branch test
 - [ ] Phone workflow test
-- [ ] Pinned welcome Discussion
-- [ ] Visible UNSOLVED notice
+- [ ] Connected-agent README and Issue test
+- [ ] Visible `UNSOLVED` notice
 
-## Launch
+## Controlled public launch
 
-- [ ] Repository made public
-- [ ] Ruleset rechecked
-- [ ] ChatGPT app access reconfigured
-- [ ] Write-capable agent workflow tested
+- [ ] Repository made public only after all pre-public work above
+- [ ] Ruleset or branch protection immediately activated and rechecked
+- [ ] Actions, Apps, logs, branches, releases, and attachments rechecked publicly
+- [ ] ChatGPT, Claude, Cursor, and Codex repository access rechecked
+- [ ] Public Issue, fork PR, and access-request flows tested
+- [ ] First integration practice documented
 - [ ] Reddit post published
 - [ ] X thread published
-- [ ] First integration schedule announced
