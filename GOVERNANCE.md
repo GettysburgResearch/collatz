@@ -2,112 +2,147 @@
 
 ## Purpose
 
-Governance exists to preserve research freedom while maintaining an auditable
-record. It does not authorize maintainers to decide mathematical truth by
-status or reputation.
+Governance exists to preserve research freedom while maintaining a public,
+auditable, cumulative record. It does not authorize owners or integrators to
+decide mathematical truth by status, reputation, model brand, or confidence.
 
 ## Three separate decisions
 
 ### Artifact integration
 
-Is the contribution useful, understandable, appropriately scoped, and safe to
-preserve? A speculative report, failed route, or proposed theorem may pass this
-stage.
+Is the contribution useful, understandable, appropriately scoped, safe to
+preserve, and connected to exact provenance?
+
+A speculative report, failed route, proposed theorem, exact finite computation,
+or organizational experiment may pass artifact integration.
 
 ### Claim promotion
 
-What level of mathematical confidence is justified by the evidence? Promotion
-requires explicit review and is separate from merging the artifact.
+What mathematical confidence is justified by the evidence?
+
+Promotion requires explicit review and is separate from merging an artifact.
+A merged file may still contain `IDEA`, `EMPIRICAL`, `PARTIAL`, or `PROPOSED`
+claims.
 
 ### Project-level resolution status
 
-Does the repository contain a complete proof or counterexample whose dependency
-chain and translation to Collatz have survived the required verification? Only
-this decision changes the public status.
+Does the repository contain a complete proof or counterexample whose full
+dependency chain, ordinary-integrality obligations, source theorems,
+computations, and translation to standard Collatz have survived the required
+verification?
 
-## Roles
+Only this decision changes the public project status.
 
-### Organization owners
+## Repository-specific access model
 
-Responsible for continuity, security, visibility, legal and administrative
-decisions, and appointing integrators. Ownership does not confer mathematical
-authority.
+The organization base permission should remain `None`. Access to this repository
+is granted through repository-specific teams so future organization repositories
+may use different policies.
 
-### Integrators
+### Organization owners — Admin
 
-Responsible for dependency-aware merge planning, canonical claim metadata,
-`STATE.md`, conflict reconciliation, review queues, provenance, duplicate and
-circular-program detection, task extraction, and keeping ambitious work visible.
+Keep this group small: the founder and preferably one trusted continuity owner.
+Owners are responsible for invitations, security, visibility, installed Apps,
+rulesets, legal decisions, and continuity. Ownership does not confer
+mathematical authority.
 
-Integrators record the strongest status justified by evidence. They do not
-promote claims by personal confidence alone.
+### `collatz-contributors` — Write
 
-### Maintainers
+Accepted contributors receive `Write` access to this repository. They may:
 
-Responsible for a research or infrastructure area. They may review and merge
-ordinary contributions within ruleset constraints.
+- push agent branches;
+- create and comment on Issues and pull requests;
+- label and assign work;
+- review and correct other contributions;
+- run independent parallel attempts;
+- and maintain long-lived research PRs across multiple sessions.
 
-### Triagers and research organizers
+GitHub's standard `Write` role also grants broad Issue and PR controls. Project
+policy therefore requires contributors not to:
 
-Trusted contributors may receive GitHub `Triage` access early. This role can
-apply labels, assign contributors who have commented, close or reopen issues and
-pull requests, request reviews, apply milestones, and mark duplicates—without
-code-push access.
+- update or merge into `main`;
+- close or supersede another contributor's active PR;
+- rewrite canonical project status;
+- delete or hide another contributor's research record;
+- abuse CI or repository resources;
+- or change security-sensitive configuration without owner review.
 
-The initial launch may have only the founder performing integration while a
-larger triage circle helps organize public contributions.
+Contributors may close their own Issues and PRs. Access may be removed for abuse.
 
-Arbitrary unaffiliated public users do not receive moderation controls merely
-because the repository is public. They may claim work through an issue comment;
-a triager can then mirror that claim into formal assignment and labels.
+### `collatz-integrators` — Maintain
 
-### Contributors
+Integrators manage dependency-aware extraction and canonical integration. They
+maintain `STATE.md`, claim metadata, the review queue, the PR dependency map, and
+the integration backlog.
 
-Anyone may contribute through Discussions, Issues, issue comments, reviews,
-forks, and pull requests. Corrections and alternative approaches in issue
-comments are first-class contributions. Formal assignment is not required before
-beginning work.
+Only integrators and organization owners should be able to update `main`, close
+or supersede another contributor's completed PR, or change canonical project
+status.
+
+Initially this team may contain only the founder. Later, trusted humans may be
+added.
 
 ## Research freedom safeguards
 
-1. Existing issues are not the only permitted research directions.
-2. Large research programs are welcome.
+1. Existing Issues are not the only permitted research directions.
+2. Large, unconventional, and multi-session research programs are welcome.
 3. Parallel independent attacks are welcome.
-4. The integrator may request better structure but should not suppress a
-   direction merely because it is speculative, difficult, or connected to an
-   open problem.
-5. Organizational criticism and proposed process improvements are welcome.
-6. Failed approaches remain available unless they create legal, security, or
+4. Agents may contribute corrections, literature, computations, reviews, and
+   alternative approaches across other Issues and PRs.
+5. An integrator may request better structure but should not suppress a direction
+   merely because it is speculative, difficult, or connected to an open problem.
+6. Organizational criticism and proposed process improvements are welcome.
+7. Failed approaches remain available unless they create legal, security, or
    privacy problems.
-7. A direction may be archived as inactive without being declared
+8. A direction may be archived as inactive without being declared
    mathematically impossible.
-8. Open-problem status does not justify closing an investigation.
+9. Open-problem status does not justify closing an investigation.
+10. A stable result may be extracted without forcing its source research PR to
+    close.
+
+## Issues and claims of work
+
+Agents should normally create or select an Issue and claim substantial work:
+
+```text
+CLAIMED BY: <agent-id>
+STARTING COMMIT: <sha>
+BRANCH: <branch>
+APPROACH: <short plan>
+```
+
+An Issue claim is coordination, not exclusive ownership of the mathematics.
+Corrections, objections, partial proofs, literature, and competing approaches are
+welcome in Issue and PR comments.
 
 ## Claim promotion
 
-Recommended ladder:
+Retain the established primary statuses:
 
 ```text
 IDEA
-DEVELOPING
+EMPIRICAL
+PARTIAL
 PROPOSED
-INDEPENDENTLY_RECONSTRUCTED
-FORMALLY_CHECKED
+PROVED
+INDEPENDENTLY_VERIFIED
 REFUTED
 SUPERSEDED
 ```
 
-`FORMALLY_CHECKED` means the formal statement compiles and has undergone a
-statement-to-mathematics translation audit. It does not automatically imply a
-project-level resolution.
-
-A complete claimed proof or counterexample may be marked:
+Additional qualifiers may include:
 
 ```text
-RESOLUTION_CANDIDATE
+CONDITIONAL
+FINITE_SCOPE
+SOURCE_DEPENDENT
+TRANSLATION_UNVERIFIED
+COMPUTATION_NOT_REPLAYED
+FORMALLY_CHECKED
 ```
 
-only when it includes:
+A complete claimed proof or counterexample may be marked
+`RESOLUTION_CANDIDATE` only when it includes:
 
 - an exact theorem statement or candidate object;
 - a complete dependency graph;
@@ -115,32 +150,48 @@ only when it includes:
 - exact physical Collatz translation;
 - independent reconstruction;
 - reproducible computation;
-- a formalization plan or proof where feasible;
-- explicit unresolved doubts.
+- source audits;
+- formalization or a formalization plan where feasible;
+- and explicit unresolved doubts.
 
-The repository remains publicly `UNSOLVED` while scrutiny continues.
+The repository remains `UNSOLVED` while scrutiny continues.
 
 ## Review independence
 
 A review is independent when the reviewer:
 
-- did not author the claim;
+- did not author the exact claim version;
+- freezes the source commit;
 - reconstructs rather than merely endorses;
-- freezes the source version;
 - records the first unsupported step if found;
-- distinguishes neutral non-reproduction from refutation.
+- and distinguishes neutral non-reproduction from refutation.
 
-Different models prompted by the same human can provide useful adversarial
-checks, but independence metadata should disclose the human sponsor, model
-family, shared prompts, and shared code.
+Different agents or model families prompted by the same human can provide useful
+adversarial checks, but independence metadata should disclose shared human
+sponsorship, prompts, context, and code.
 
 ## Merge authority
 
 No contributor should merge their own major theorem claim.
 
-Ordinary research artifacts require at least one review. Canonical
-claim-promotion changes require separate approval. Resolution candidates require
-at least two independent adversarial reviews and owner/integrator approval.
+Only integrators should update `main`. Artifact integration and claim promotion
+should be separate when practical. A proposed complete resolution requires at
+least two adversarial reviews and owner/integrator approval before any public
+status change.
+
+## Initial integration cadence
+
+During the first active period, the founder expects approximately two GPT-5.6
+Pro sweeps every two hours when practical:
+
+- a synthesis pass for dependency mapping, extraction, state updates, and next
+  work;
+- an adversarial pass for circularity, unsupported inference, duplication,
+  source and scope errors, and status correction.
+
+The founder compares the passes and decides what to merge, extract, defer,
+correct, supersede, or close. Every pass freezes exact source SHAs. This cadence
+is an initial practice, not a permanent guarantee.
 
 ## Disputes
 
@@ -149,19 +200,9 @@ When reviewers disagree:
 1. freeze the exact claim version;
 2. preserve both verdicts;
 3. isolate the first disputed inference;
-4. seek a third reconstruction;
-5. retain only the strongest status supported by common evidence.
-
-## Cadence
-
-During active contribution waves:
-
-- frequent triage may occur roughly every two hours;
-- integration should occur in deliberate windows;
-- `STATE.md` should be updated daily when the project changes rapidly;
-- tagged research snapshots should be created periodically.
-
-These are defaults, not mathematical rules.
+4. seek another reconstruction;
+5. retain only the strongest status supported by common evidence;
+6. keep the disagreement visible.
 
 ## Organizational change
 
