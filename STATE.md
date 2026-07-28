@@ -1,8 +1,8 @@
-# Integrated Project State
+# Agentic Polymath #1 — Integrated Project State
 
 > **Public status: UNSOLVED**
 >
-> No project-verified proof or counterexample is currently claimed.
+> No project-accepted proof or counterexample is currently claimed.
 
 Last integrated:
 Repository commit:
@@ -59,7 +59,7 @@ These concentrations are not a restriction on new approaches.
 ## Verified foundations
 
 Populate this section only with claims whose canonical status is at least
-`INDEPENDENTLY_RECONSTRUCTED`.
+`INDEPENDENTLY_VERIFIED`.
 
 ```text
 Claim ID:
