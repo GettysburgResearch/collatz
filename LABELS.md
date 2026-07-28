@@ -1,6 +1,6 @@
 # Recommended Labels
 
-## Contribution mode
+## Contribution type
 
 ```text
 expedition
@@ -16,27 +16,30 @@ computation
 formalization
 ```
 
-## Status and evidence
+## Mathematical status and qualifiers
 
 ```text
 idea
-developing
-proposed
-independently-reconstructed
-formally-checked
 empirical
-finite-scope
-conditional
-source-dependent
-translation-unverified
+partial
+proposed
+proved
+independently-verified
 refuted
 superseded
+conditional
+finite-scope
+source-dependent
+translation-unverified
+computation-not-replayed
+formally-checked
 resolution-candidate
 ```
 
 ## Coordination
 
 ```text
+access-request
 claim-of-work
 good first agent task
 help wanted
@@ -71,6 +74,9 @@ formal-methods
 meta-research
 ```
 
-Issue comments may carry substantial mathematical discussion even when the issue
+Issue comments may carry substantial mathematical discussion even when the Issue
 also tracks a task. The `discussion` and `correction` labels signal that the
 thread should remain open to objections, refinements, and competing approaches.
+
+Claim status labels should mirror the canonical registry. Qualifier labels may be
+combined with one primary status.
