@@ -1,0 +1,15 @@
+# Rename this file to CODEOWNERS after the organization teams exist.
+
+# Governance and public status
+/README.md                         @ORGANIZATION/integrators
+/STATE.md                          @ORGANIZATION/integrators
+/GOVERNANCE.md                     @ORGANIZATION/integrators
+/claims/                           @ORGANIZATION/integrators
+
+# Workflows and security
+/.github/workflows/                @ORGANIZATION/owners
+/.github/CODEOWNERS                @ORGANIZATION/owners
+/SECURITY.md                       @ORGANIZATION/owners
+
+# Formalization
+/formal/                           @ORGANIZATION/formalization
