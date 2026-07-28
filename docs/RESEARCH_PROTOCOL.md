@@ -1,105 +1,101 @@
 # Research Protocol
 
-## 1. Purpose
+## Purpose
 
-This protocol helps a large human–AI research effort remain cumulative,
-auditable, and creative.
+This protocol helps Agentic Polymath #1 remain cumulative, auditable, and
+creative. It expands on the main README; it is not intended to make all research
+small, conservative, or centrally planned.
 
-It is not intended to make all research small, conservative, or centrally
-planned.
-
-## 2. Operating layers
+## Operating layers
 
 The repository uses:
 
-1. `README.md` for public orientation;
+1. `README.md` for the primary operating rules and public orientation;
 2. `STATE.md` for integrated mathematical state;
 3. `ROADMAP.md` for active and open lanes;
-4. Discussions for broad exploration;
-5. Issues for concrete coordination;
-6. pull requests for durable artifacts;
-7. reports for session history;
-8. the claim registry for canonical status;
-9. formalization and certificates for high-assurance results.
+4. Issues for tasks, broad programs, discussion, corrections, and handoffs;
+5. pull requests for living, durable research artifacts;
+6. reports for append-only session history;
+7. the claim registry for canonical identifiers and statuses;
+8. formalization and certificates for high-assurance results;
+9. integration passes for dependency-aware incorporation into `main`.
 
-Chat history is not a durable mathematical dependency.
+Discussions may be useful for humans, but some agents cannot access them. Mirror
+actionable outcomes into the durable layers above.
 
-## 3. Contributor and agent identity
+Private chat history is not a mathematical dependency.
 
-Substantial threads should use a persistent identifier.
+## Agent identity
+
+Substantial threads use a unique persistent identifier chosen by the agent.
 
 Examples:
 
 ```text
 human-gideon
-gpt56-01
-claude-03
+gpt56-euler-01
+claude-opus-03
 cursor-sol-02
-verifier-01
+verifier-gauss-01
 integrator-01
 ```
 
-Record the human sponsor and model where relevant.
+Record human sponsor and model where relevant. Independent work may use related
+suffixes such as `gpt56-euler-01-a` and `gpt56-euler-01-b`.
 
-Independent work may use a related suffix:
+Identity records provenance, not authority.
 
-```text
-gpt56-01-a
-gpt56-01-b
-```
+## Research shapes
 
-## 4. Research modes
+### Open research program
 
-### Open expedition
+A self-directed program, potentially large and multi-session.
 
-A self-directed program, potentially large.
+### Focused task
 
-### Focused mission
+A bounded target with a concrete statement or acceptance condition.
 
-A bounded task with a concrete target.
+### Verification, correction, or refutation
 
-### Verification
+Independent reconstruction, source audit, counterexample search, formal audit,
+or computation replay.
 
-Independent reconstruction, refutation, source audit, or computation replay.
+### Synthesis and organization
 
-### Synthesis
+Mapping, consolidation, comparison, dashboard creation, task decomposition, or
+process improvement.
 
-Mapping, consolidation, comparison, or organizational improvement.
+A thread may change shape.
 
-A thread may change modes.
+## Issues and claims of work
 
-## 5. Task ownership
+Issues are the primary agent-readable coordination layer. They are coordination
+aids, not exclusive licenses to think and not a boundary on allowed research.
 
-Issues are coordination aids, not exclusive licenses to think.
-
-A contributor may:
-
-- claim a task;
-- work independently on an already claimed task;
-- open a new task;
-- begin an expedition in Discussions or a draft pull request.
-
-When multiple attempts exist, label whether they are:
+Agents should normally comment:
 
 ```text
-DEPENDENT
-INDEPENDENT
-REVIEW
-SYNTHESIS
+CLAIMED BY: <agent-id>
+STARTED: <UTC timestamp>
+STARTING COMMIT: <sha>
+BRANCH: <branch>
+APPROACH: <short plan>
 ```
 
-Claims of ownership expire when abandoned, but the prior work remains
-preserved.
+A new exploration may begin before the Issue exists, but it should become
+discoverable once substantial.
 
-## 6. Branch conventions
+Multiple independent attempts are welcome. Comments may contain corrections,
+small proofs, counterexamples, literature, computations, competing approaches,
+and review findings.
+
+## Branch and commit conventions
 
 Suggested branch form:
 
 ```text
-agent/<agent-id>/<issue-or-expedition>-<short-name>
+agent/<agent-id>/<issue-or-topic>-<short-name>
 ```
-
-Fork contributors may use any clear branch name.
 
 Commit prefixes:
 
@@ -118,7 +114,20 @@ formal:
 
 These are conventions, not reasons to reject useful work.
 
-## 7. Claim identifiers
+## Long-lived PRs
+
+Research PRs may receive many sessions and repeated extensions. Keep the summary
+current and state the new delta.
+
+Every review or integration action freezes an exact source SHA. Later changes
+are not automatically covered.
+
+A stable subset may be extracted into the canonical repository without closing
+the source PR.
+
+Only integrators should close or supersede another contributor's active PR.
+
+## Claim identifiers
 
 Use:
 
@@ -130,39 +139,44 @@ C-####  conjecture
 K-####  candidate counterexample
 L-####  lemma
 T-####  theorem
-X-####  experiment
-R-####  refutation
-M-####  methodological proposal
+X-####  computational experiment
+R-####  refutation or correction
+M-####  methodological or organizational proposal
 ```
 
-Namespaces may be reserved by research program to avoid collisions.
+Namespaces may be reserved by research program. Branch-qualified historical IDs
+must not be silently renumbered.
 
-## 8. Claim statuses
+## Claim status
+
+Primary status:
 
 ```text
 IDEA
-DEVELOPING
+EMPIRICAL
+PARTIAL
 PROPOSED
-INDEPENDENTLY_RECONSTRUCTED
-FORMALLY_CHECKED
+PROVED
+INDEPENDENTLY_VERIFIED
 REFUTED
 SUPERSEDED
 ```
 
-Flags:
+Orthogonal qualifiers:
 
 ```text
-EMPIRICAL
-FINITE_SCOPE
-PARTIAL
 CONDITIONAL
+FINITE_SCOPE
 SOURCE_DEPENDENT
 TRANSLATION_UNVERIFIED
+COMPUTATION_NOT_REPLAYED
+FORMALLY_CHECKED
 ```
 
-Do not overload one status with several meanings.
+A prefix identifies the object type, not truth. Artifact integration and claim
+promotion are separate.
 
-## 9. Claim file structure
+## Claim-file structure
 
 Recommended metadata:
 
@@ -170,7 +184,7 @@ Recommended metadata:
 Claim ID:
 Title:
 Status:
-Flags:
+Qualifiers:
 Authoring contributors:
 Reviewing contributors:
 Created:
@@ -198,9 +212,9 @@ Suggested next attack
 Organizational observations
 ```
 
-## 10. Gap audit
+## Gap audit
 
-For major claims, deliberately check:
+For major claims, check deliberately:
 
 - hidden finiteness assumptions;
 - unjustified induction;
@@ -215,11 +229,12 @@ For major claims, deliberately check:
 - `2`-adic versus ordinary integers;
 - assumptions equivalent to the desired conclusion;
 - source normalization;
-- mistaken novelty.
+- mistaken novelty;
+- unsupported translation between alternate maps and standard Collatz.
 
-## 11. Candidate counterexamples
+## Resolution candidates
 
-A `K-####` candidate should include:
+A `K-####` counterexample candidate should include:
 
 ```text
 Exact object
@@ -234,10 +249,14 @@ Verification plan
 Known doubts
 ```
 
-A candidate remains a candidate until the object and the complete reasoning have
-survived independent review.
+A proof-side resolution candidate should include the exact standard theorem,
+complete dependency graph, alternate-map equivalences, boundary cases, and every
+computer-assisted certificate.
 
-## 12. Computational work
+A candidate remains a candidate until the object and complete reasoning survive
+the required reviews.
+
+## Computational work
 
 Every proof-relevant experiment should record:
 
@@ -253,37 +272,62 @@ Output or digest
 Certificate
 Independent checker
 Interpretation
+Finite scope
 Limitations
 Claims affected
 ```
 
-Large generated files should normally live in an immutable external artifact
+Large generated data should normally live in an immutable external artifact
 store or release, with a manifest and checksum committed to the repository.
 
-## 13. Reports
+GitHub Actions and CI are for bounded verification, not distributed mathematical
+compute. Large searches, solver campaigns, and model inference run elsewhere and
+return compact reproducible artifacts.
+
+## Literature behavior
+
+A known open problem is not a stop sign.
+
+An agent encountering an open boundary should:
+
+- cite the exact literature;
+- reconstruct the relevant theorem and hypotheses;
+- distinguish theorem, repository consequence, overlap, analogy, and unverified
+  source claim;
+- identify whether the new target is weaker, equivalent, or stronger;
+- attempt the new step;
+- avoid false certainty.
+
+## Formalization
+
+Prioritize canonical definitions, equivalences, stable independently reviewed
+lemmas, certificate checkers, and the resolution dependency spine.
+
+Use a pinned toolchain. Promoted files should contain no admitted placeholders.
+Audit the translation from encoded statement to intended mathematics.
+
+## Reports
 
 Suggested path:
 
 ```text
-reports/<agent-id>/<YYYY-MM-DD>-<topic>.md
+reports/<agent-id>/<YYYY-MM-DD>-<issue-or-topic>-<short-name>.md
 ```
 
 Reports should preserve:
 
-- starting hypothesis;
+- starting commit and hypothesis;
 - approaches attempted;
-- new results;
+- new results and exact status;
+- computations and literature;
 - failed approaches;
 - possible errors;
-- files changed;
-- claims affected;
+- files and claims affected;
 - current blocker;
 - next attacks;
 - organizational suggestions.
 
-Reports may be exploratory. They should label epistemic status clearly.
-
-## 14. Handoffs
+## Handoffs
 
 A useful handoff says:
 
@@ -291,6 +335,7 @@ A useful handoff says:
 HANDOFF FROM:
 HANDOFF TO:
 CURRENT CLAIM OR PROGRAM:
+FROZEN SOURCE SHA:
 EXACT BLOCKER:
 FILES TO READ:
 WHAT HAS BEEN TRIED:
@@ -302,20 +347,21 @@ ORGANIZATIONAL IMPROVEMENT:
 
 “Continue the proof” is not enough.
 
-## 15. Independent verification
+## Independent verification
 
 A verifier should:
 
 1. freeze the source commit;
 2. restate the claim independently;
 3. reconstruct dependencies;
-4. check quantifiers and edge cases;
+4. check quantifiers, signs, and edge cases;
 5. search for counterexamples;
-6. audit source theorems;
+6. audit source theorems and normalizations;
 7. check ordinary versus `2`-adic realization;
-8. check physical translation;
-9. identify the first unsupported inference;
-10. issue a precise verdict.
+8. check full denominator and exact replay for cycles;
+9. check physical translation;
+10. identify the first unsupported inference;
+11. issue a precise verdict.
 
 Suggested verdicts:
 
@@ -332,33 +378,22 @@ SUPERSEDED
 
 `NOT YET REPRODUCED` is neutral.
 
-## 16. Open-problem behavior
+## Circularity audits
 
-The project does not treat “known open” as a prohibition.
+A program should periodically ask:
 
-An agent encountering an open boundary should:
-
-- cite it;
-- explain its relation;
-- identify whether the current target is equivalent, stronger, or weaker;
-- attempt a new route;
-- avoid false certainty.
-
-## 17. Circularity and loop audits
-
-A research program should periodically ask:
-
-- Did the last several passes strengthen the final implication?
+- Did recent passes strengthen the final implication?
 - Is a new formalism doing mathematical work?
 - Has finite compatibility been confused with ordinary existence?
 - Has conditional growth been confused with construction?
+- Is a proper denominator factor being confused with cycle closure?
 - Is the remaining target just Collatz in disguise?
 - Would a negative result eliminate an exhaustive class?
 - Is there a concrete candidate on the positive side?
 
 A loop audit is a steering tool, not an automatic shutdown.
 
-## 18. Integrator role
+## Integrator role
 
 The integrator maintains:
 
@@ -367,28 +402,19 @@ STATE.md
 canonical claim registry
 review queue
 dependency map
-pre-public or release backlog
+integration backlog
 ```
 
-The integrator:
-
-- preserves research freedom;
-- reconciles status and notation;
-- prevents silent promotion;
-- maps stacks;
-- requests review;
-- extracts reusable tasks;
-- records refutations;
-- identifies circular duplication;
-- improves repository structure.
+The integrator preserves research freedom, reconciles status and notation,
+prevents silent promotion, maps stacks, requests review, extracts reusable
+packets, records refutations, identifies circular duplication, and improves
+repository structure.
 
 The integrator does not decide truth by authority.
 
-## 19. Process improvement
+## Process improvement
 
-The project structure may change.
-
-Substantial organizational proposals should state:
+The project structure may change. Substantial proposals should state:
 
 ```text
 Problem
@@ -399,19 +425,18 @@ Trial
 Success criterion
 ```
 
-Agents and humans should propose improvements throughout the project, not only
-at the end.
+Agents and humans should propose improvements throughout the project.
 
-## 20. Non-negotiable boundaries
+## Non-negotiable boundaries
 
 1. Never hide uncertainty.
 2. Never call finite evidence an infinite proof.
 3. Never rely on inaccessible chat context.
 4. Never silently delete useful failed work.
 5. Never silently promote speculation.
-6. Never confuse a symbolic or `2`-adic object with an ordinary positive
-   integer.
+6. Never confuse a symbolic or `2`-adic object with an ordinary positive integer.
 7. Never confuse proper-factor divisibility with full cycle closure.
-8. Never treat model confidence, length, or style as evidence.
+8. Never treat model confidence, length, style, or credentials as evidence.
 9. Never use open-problem status as a reason to refuse the research attempt.
-10. Always leave a durable record.
+10. Never use GitHub Actions as distributed mathematical compute.
+11. Always leave a durable record.
