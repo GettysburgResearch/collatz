@@ -2,69 +2,105 @@
 
 ## Integrator principle
 
-The integrator curates the research record.
+The integrator curates and connects the research record. The integrator does not
+decide mathematical truth by personal authority.
 
-The integrator does not decide mathematical truth by personal authority.
-
-The key distinction is:
+The key separation is:
 
 ```text
-merge the artifact
+artifact integration
 !=
-promote the claim
+claim promotion
+!=
+project-level resolution
 ```
+
+A useful speculative report, failed route, exact finite computation, or proposed
+theorem may be integrated without being mathematically promoted.
 
 ## Research-freedom obligation
 
 The integrator should preserve:
 
-- open expeditions;
-- large research programs;
+- open expeditions and direct attacks on Collatz;
+- large multi-session research programs;
+- long-lived PRs;
 - independent parallel attempts;
 - speculative but clearly labeled ideas;
+- corrections and cross-PR comments;
 - organizational proposals;
 - negative and failed results.
 
-The integrator may request structure, provenance, and scope.
-The integrator should not reject work merely because it is ambitious, open,
-unconventional, or not on the current roadmap.
+The integrator may request structure, provenance, scope, and reviewability. The
+integrator should not reject work merely because it is ambitious,
+unconventional, connected to an open problem, or outside the current roadmap.
 
-## Pass cadence
+## Initial two-sweep cadence
 
-During active waves:
+During the first active phase, the founder expects approximately two GPT-5.6 Pro
+sweeps every two hours when practical. This is an operating practice, not a
+permanent guarantee.
 
-- triage approximately every two hours;
-- integrate in deliberate windows;
-- update the state daily;
-- create periodic tagged snapshots.
+### Sweep A — synthesis
 
-No cadence should cause hurried theorem promotion.
+- inspect new and updated PRs, Issues, and relevant comments;
+- freeze exact source SHAs;
+- map dependencies and stacks;
+- identify reusable results and conflicts;
+- propose merge, extraction, restack, or review order;
+- update the integrated mathematical map;
+- identify promising next work and useful organizational changes.
+
+### Sweep B — adversarial audit
+
+- challenge claimed conclusions;
+- reconstruct load-bearing implications;
+- identify the first unsupported inference;
+- detect circularity, equivalent reformulation, and duplication;
+- audit scope, source normalization, ordinary-integrality, and denominator
+  obligations;
+- distinguish refutation, scope narrowing, source failure, and neutral
+  non-reproduction;
+- identify required independent verification.
+
+The founder compares the two sweeps and decides what to merge, extract, defer,
+correct, supersede, or close.
+
+No cadence should cause hurried claim promotion.
 
 ## Inputs to each pass
 
 Record:
 
 ```text
-last integrated commit
-time cutoff
-new and updated pull requests
-new issues and Discussions
-new reviews
+integrator agent ID
+cutoff time
+starting main SHA
+updated PR and Issue set
+exact PR head SHAs
+new reviews and comments
 new claim-status requests
-new computation artifacts
+new computation or formal artifacts
 new literature sources
+prior integration report
 ```
 
-## Classify each contribution
+GitHub Discussions may be reviewed by humans, but agent connectors may not expose
+them. Any actionable Discussion result must be mirrored into an Issue, PR,
+report, or repository file before it becomes an integration dependency.
 
-Contribution mode:
+## Contribution classification
+
+Contribution type:
 
 ```text
-OPEN EXPEDITION
-FOCUSED MISSION
+OPEN RESEARCH PROGRAM
+FOCUSED TASK
+PROOF-SIDE
+DISPROOF-SIDE
 VERIFICATION
-REFUTATION
-SYNTHESIS
+CORRECTION OR REFUTATION
+SYNTHESIS OR CARTOGRAPHY
 ORGANIZATION
 FORMALIZATION
 COMPUTATION
@@ -76,15 +112,17 @@ Integration action:
 ```text
 MERGE AS RECORD
 MERGE AFTER REPAIR
-EXTRACT ATOMIC PACKET
+EXTRACT STABLE PACKET
 REQUEST INDEPENDENT REVIEW
+REQUEST SOURCE AUDIT
+REQUEST COMPUTATION REPLAY
 RESTACK
 RETARGET
-BLOCK ON SOURCE
-BLOCK ON REPRODUCTION
-ARCHIVE
+BLOCK ON DEPENDENCY
+ARCHIVE AS RESEARCH RECORD
 SUPERSEDE
 CLOSE AS DUPLICATE
+LEAVE ACTIVE
 ```
 
 Epistemic action:
@@ -95,87 +133,126 @@ PROMOTE
 NARROW
 REFUTE
 SUPERSEDE
-ADD FLAG
-REMOVE FLAG
+ADD QUALIFIER
+REMOVE QUALIFIER
 ```
 
 These are separate decisions.
+
+## Established statuses
+
+Primary statuses:
+
+```text
+IDEA
+EMPIRICAL
+PARTIAL
+PROPOSED
+PROVED
+INDEPENDENTLY_VERIFIED
+REFUTED
+SUPERSEDED
+```
+
+Qualifiers:
+
+```text
+CONDITIONAL
+FINITE_SCOPE
+SOURCE_DEPENDENT
+TRANSLATION_UNVERIFIED
+COMPUTATION_NOT_REPLAYED
+FORMALLY_CHECKED
+```
+
+`NOT YET REPRODUCED` is a neutral review verdict rather than a claim status.
 
 ## Merge criteria for a research record
 
 A research artifact may merge when:
 
-- its provenance is clear;
-- its scope is visible;
-- its status labels are honest;
+- its provenance and source SHA are clear;
+- its scope and epistemic status are visible;
 - it does not overwrite unrelated work;
 - it is safe and licensed to publish;
 - its files are navigable;
-- large artifacts have manifests;
+- large artifacts have manifests and digests;
 - claims are registered or explicitly exploratory;
-- known doubts are recorded.
+- known doubts and failed subroutes are recorded;
+- the merge preserves relevant independent derivations.
 
-The artifact need not already be mathematically verified.
+The artifact need not already be independently verified.
 
 ## Claim-promotion criteria
 
-A promotion pull request should be small.
+A promotion change should be small and explicit. It should identify:
 
-It should change only:
-
-- claim status;
-- review links;
-- reviewer metadata;
-- flags;
+- exact claim version and SHA;
+- old and proposed status;
+- review artifacts;
+- reviewer and human-sponsor provenance;
+- source and computation checks;
 - formalization references;
-- integrated state.
+- unresolved limitations;
+- necessary `STATE.md` changes.
 
-Require an independent reconstruction for promotion beyond `PROPOSED`.
+A complete-looking author claim enters no higher than `PROPOSED`. Promotion to
+`PROVED` requires an initial detailed review. Promotion to
+`INDEPENDENTLY_VERIFIED` requires independent reconstruction or checking.
 
-## Large-packet integration
+Formal compilation supports the `FORMALLY_CHECKED` qualifier but does not replace
+statement-translation review.
 
-Large research pushes are allowed.
+## Long-lived and large PRs
 
-Before merging, require:
+Long-lived research PRs are expected. Every review and integration action freezes
+an exact head SHA; later additions are not automatically covered.
+
+For a large program, request where useful:
 
 ```text
-program README
+program README or map
 claim inventory
-dependency map
+dependency graph
 experiment index
-review-first list
-current blocker
 known failures
-exact starting commit
+current blocker
+review-first list
+new delta since previous pass
+exact starting and current SHAs
 ```
 
-Do not demand arbitrary fragmentation when the program is conceptually unified.
+Do not demand arbitrary fragmentation when a program is conceptually unified.
+Extract load-bearing packets for independent review while keeping the source
+program active when useful.
 
-Extract load-bearing theorem packets for independent review.
+Only integrators should close or supersede another contributor's active PR.
+Contributors may close their own work.
 
-## Stacked pull requests
+## Stacked PRs
 
-For every stack record:
+For each stack record:
 
 ```text
-base PR
-base SHA
-head PR
-head SHA
+base PR and SHA
+child PR and SHA
 dependency type
+whether the child can be rebased or extracted independently
 ```
 
 Rules:
 
 - do not squash a parent while live children depend on its internal commits;
-- integrate parents before children;
+- integrate or extract parents before dependent children;
 - retarget or rebase children after parent integration;
-- maximum preferred live depth: two;
-- preserve exact frozen SHAs in review reports.
+- prefer shallow live stacks where practical;
+- preserve frozen SHAs in review reports;
+- do not close a source branch until retained artifacts have canonical
+  destinations.
 
 ## Circularity scan
 
-During each pass, look for:
+Look for:
 
 - duplicate equivalent formulations;
 - repeated finite-prefix extensions;
@@ -183,41 +260,67 @@ During each pass, look for:
 - unresolved ordinary-extraction gaps;
 - repeated proper-factor cycle work;
 - new notation without a stronger implication;
-- review loops that never identify an exact disputed step.
+- review loops that never identify an exact disputed step;
+- rediscovery of a known open problem without a new attack;
+- repeated “breakthrough” language without an implication delta.
 
-Do not simply close these programs.
+Do not simply close these programs. Instead:
 
-Instead:
-
-- consolidate;
 - request a blocker audit;
 - mark the exact unresolved inference;
-- extract negative theorems;
-- redirect one branch to adversarial review;
-- keep genuinely new approaches open.
+- consolidate overlapping maps;
+- extract valid negative theorems;
+- redirect a branch to adversarial review;
+- preserve genuinely new mechanisms;
+- archive inactive work without declaring it impossible.
+
+## Critical mathematical checks
+
+For infinite-orbit work, check whether the contribution actually supplies:
+
+- one ordinary positive seed;
+- an all-time legality induction;
+- bounded or stabilizing canonical representatives;
+- or an exhaustive architecture-level exclusion.
+
+Compatible finite prefixes, inverse limits, `2`-adic points, and conditional
+growth are not ordinary extraction.
+
+For cycle work, check:
+
+- positivity;
+- complete denominator divisibility;
+- exact valuation and branch replay;
+- nontriviality;
+- source and computational scope.
+
+Proper factors and near-integrality are not cycle closure.
 
 ## State update
 
-`STATE.md` should say:
+`STATE.md` should distinguish:
 
-- what is verified;
-- what is proposed;
-- what is refuted;
-- what changed;
-- what remains open;
-- what would constitute genuine progress;
-- which broad expeditions remain active.
+- `INDEPENDENTLY_VERIFIED` and `PROVED` foundations;
+- proposed programs;
+- exact finite computations;
+- source-dependent claims;
+- refutations and scope narrowings;
+- open global blockers;
+- active broad expeditions;
+- changes since the previous integrated SHA.
 
-Avoid promotional language.
+Avoid promotional language. The public status remains `UNSOLVED` unless the full
+resolution process has been completed.
 
 ## Review allocation
 
-Prefer diversity:
+Prefer different attack modes:
 
 - mathematical reconstruction;
-- computational falsification;
-- source audit;
-- formal statement audit.
+- computational falsification and independent replay;
+- literature and normalization audit;
+- formal statement and translation audit;
+- integration and dependency audit.
 
 Do not count several identical model runs as fully independent without
 disclosure.
@@ -226,18 +329,19 @@ disclosure.
 
 ```text
 INTEGRATION PASS
-Time:
-Cutoff:
+Integrator agent:
+Time and cutoff:
 Starting main:
 Ending main:
+PR heads frozen:
 
-MERGED AS RECORD
+MERGED OR EXTRACTED AS RECORD
 - ...
 
 CLAIM PROMOTIONS
 - ...
 
-REFUTATIONS OR NARROWINGS
+REFUTATIONS OR SCOPE NARROWINGS
 - ...
 
 READY AFTER REPAIR
@@ -246,13 +350,16 @@ READY AFTER REPAIR
 INDEPENDENT REVIEW WANTED
 - ...
 
-STACK OR DEPENDENCY ACTIONS
+SOURCE OR COMPUTATION AUDIT WANTED
+- ...
+
+STACK AND DEPENDENCY ACTIONS
 - ...
 
 CIRCULARITY OR DUPLICATION FINDINGS
 - ...
 
-NEW OPEN EXPEDITIONS
+ACTIVE OPEN EXPEDITIONS
 - ...
 
 STATE CHANGES
@@ -269,36 +376,32 @@ ORGANIZATIONAL PROPOSALS
 
 ## Public communication
 
-Do not announce:
-
-- “proof”;
-- “counterexample”;
-- “solved”;
-- “breakthrough toward completion”;
-
-based only on a merged author report.
+Do not announce “proof,” “counterexample,” “solved,” or a near-final
+breakthrough based only on an author report or artifact merge.
 
 Public updates should distinguish:
 
 ```text
 new proposal
-independently reconstructed subresult
+partial theorem
+independently verified subresult
 exact finite computation
-refutation
-formalized lemma
+source-dependent result
+refutation or correction
+formally checked statement
 resolution candidate
 ```
 
 ## First public-era objective
 
 The first integration objective is not to choose a winning mathematics branch.
-
 It is to create:
 
-- a trustworthy public front door;
-- a frozen backlog;
-- a canonical state;
+- a trustworthy public operating system;
+- a frozen dependency-aware backlog;
+- a canonical integrated state;
 - a claim registry;
-- a review queue;
-- visible open expeditions;
-- reliable contribution and artifact paths.
+- a visible review queue;
+- active open expeditions;
+- reliable contribution and artifact paths;
+- protected integration authority.
