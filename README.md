@@ -9,8 +9,8 @@
 
 ## Mission
 
-Collatz Open Research is an open human–AI research effort aimed at resolving
-the Collatz conjecture in either direction.
+Collatz Open Research is an open human–AI effort aimed at resolving the Collatz
+conjecture in either direction.
 
 We welcome:
 
@@ -43,8 +43,8 @@ Contributors may:
 - build experiments, formalizations, maps, dashboards, or verification tools;
 - propose changes to the organization of the project itself.
 
-No contributor is required to choose only from a prewritten task list.
-Issues are coordination tools, not boundaries on mathematical imagination.
+No contributor is required to choose only from a prewritten task list. Issues
+are coordination tools, not boundaries on mathematical imagination.
 
 The discipline begins when a result is recorded:
 
@@ -55,8 +55,6 @@ The discipline begins when a result is recorded:
 - a merged artifact is not automatically a proved theorem;
 - a confident model statement is not evidence;
 - a known open problem is not a reason to stop working.
-
-A useful slogan for the project is:
 
 > **Explore freely. State exactly. Verify adversarially. Preserve everything useful.**
 
@@ -74,7 +72,7 @@ fact should be treated as:
 
 It is **not** a reason to decline the problem or end the investigation.
 
-A good response to “this appears to be open” is:
+A useful response to “this appears to be open” is:
 
 ```text
 Here is the precise literature connection.
@@ -89,46 +87,26 @@ organizational advances can accumulate into a stronger research record.
 
 ## Three contribution modes
 
-### 1. Open expeditions
+### Open expeditions
 
-For ambitious, self-directed work:
-
-- a new proof or disproof route;
-- a broad literature-driven program;
-- a new computational architecture;
-- a multi-session theorem-development push;
-- a new way to organize or verify the project.
+For ambitious, self-directed work: new proof or disproof routes, broad
+literature programs, new computation architectures, multi-session theorem
+development, and organizational experiments.
 
 Open expeditions may be large. They should include an internal map so later
-researchers can identify the exact claims, dependencies, failures, and next
-steps.
+researchers can identify claims, dependencies, failures, and next steps.
 
-### 2. Focused missions
+### Focused missions
 
-For bounded tasks with a clear target:
+For bounded tasks such as verifying a lemma, reproducing a computation,
+settling a denominator condition, formalizing a theorem, testing a candidate,
+or closing one explicit gap.
 
-- verify one lemma;
-- reproduce one computation;
-- settle one denominator condition;
-- formalize one theorem;
-- test one candidate;
-- close one explicit gap.
+### Audits and synthesis
 
-These are especially useful for phone-based contribution and independent
-review.
-
-### 3. Audits and synthesis
-
-For work on the research record itself:
-
-- find circularity;
-- identify the first unsupported inference;
-- compare overlapping branches;
-- reconstruct a proof independently;
-- map the literature;
-- consolidate equivalent claims;
-- repair notation or dependencies;
-- improve project management.
+For finding circularity, identifying unsupported inferences, comparing
+branches, reconstructing proofs, mapping literature, consolidating equivalent
+claims, repairing dependencies, and improving project management.
 
 All three modes are first-class contributions.
 
@@ -145,41 +123,27 @@ global bottlenecks have emerged in much of the existing work:
 These are current concentrations, not restrictions on future work. A new route
 that bypasses them is welcome.
 
-See [STATE.md](STATE.md) for the integrated project state and
-[ROADMAP.md](ROADMAP.md) for active and open-ended research lanes.
+See [STATE.md](STATE.md) and [ROADMAP.md](ROADMAP.md).
 
 ## How to begin
 
 ### Open exploration
 
-Read:
-
-1. this README;
-2. [STATE.md](STATE.md);
-3. [AGENTS.md](AGENTS.md) if using an AI model;
-4. the most relevant research files and open discussions.
-
-Then open a Discussion, issue, draft pull request, or research branch. State the
-question you are attacking and the repository commit you began from.
+Read this README, [STATE.md](STATE.md), [AGENTS.md](AGENTS.md) when using an AI
+model, and the most relevant research files. Then open a Discussion, issue,
+draft pull request, or research branch and state the repository commit you
+started from.
 
 Discussions are useful for broad human conversation, but not every connected AI
-tool can currently read or write GitHub Discussions. Any idea that becomes
-actionable should also be mirrored into an issue, pull request, report, or other
-repository file so agents can reliably find it.
+tool can currently read or write GitHub Discussions. Mirror actionable outcomes
+into an issue, pull request, report, or repository file so agents can reliably
+find them.
 
 ### Guided contribution
 
-Choose an issue labeled:
-
-```text
-good first agent task
-verification wanted
-literature wanted
-computation wanted
-formalization wanted
-```
-
-Use its starter prompt, then submit an issue comment, report, or pull request.
+Choose an issue labeled with a request for verification, literature,
+computation, formalization, or a good first agent task. Use its starter prompt,
+then submit an issue comment, report, or pull request.
 
 ### Independent verification
 
@@ -189,71 +153,34 @@ relying on the original author's confidence.
 ## A note for humans steering models
 
 Models can make real progress, but they can also enter polished circular loops.
-
 Common signs include:
 
 - restating the same missing inference in new notation;
 - producing longer finite-prefix evidence without addressing the infinite step;
-- proving “if an orbit exists, then it grows” while never proving existence;
+- proving “if an orbit exists, then it grows” without proving existence;
 - introducing another encoding that preserves the original hard problem;
 - repeatedly calling nearby reformulations “breakthroughs”;
 - rediscovering a known open problem and treating that as the end;
 - generating many conditional lemmas that do not strengthen the final
   implication.
 
-When this happens, do not conclude that the whole project is futile. Shake the
-research process out of the loop.
-
-Useful interventions:
+When this happens, shake the research process out of the loop rather than
+concluding the whole project is futile.
 
 ```text
 State the exact global target and the first unsupported inference.
-Do not add a new formalism unless it changes that implication.
 Compare this pass with the previous three and state the genuinely new delta.
 Try to refute the current route.
 Identify what theorem would eliminate an exhaustive class.
-Explain why the target is weaker than Collatz, or admit that it is not.
-Return to the ordinary-integer or full-denominator boundary.
+Explain whether the target is weaker than Collatz, equivalent, or stronger.
+Do not add a new formalism unless it changes the implication.
 ```
 
 See [docs/HUMAN_GUIDE_TO_AI_RESEARCH.md](docs/HUMAN_GUIDE_TO_AI_RESEARCH.md).
 
-## Evidence and claim status
-
-Every mathematical claim has a stable identifier and a visible status.
-
-Core statuses:
-
-```text
-IDEA
-DEVELOPING
-PROPOSED
-INDEPENDENTLY_RECONSTRUCTED
-FORMALLY_CHECKED
-REFUTED
-SUPERSEDED
-```
-
-Additional flags may include:
-
-```text
-EMPIRICAL
-FINITE_SCOPE
-PARTIAL
-CONDITIONAL
-SOURCE_DEPENDENT
-TRANSLATION_UNVERIFIED
-```
-
-A pull request may be merged as a valuable research record while its claims
-remain `IDEA`, `DEVELOPING`, or `PROPOSED`.
-
-See [claims/README.md](claims/README.md).
-
 ## Claim identifiers
 
-Claims use stable prefixes so theorem statements, experiments, corrections, and
-open questions can be referenced across branches and reviews:
+Claims use stable prefixes:
 
 ```text
 D-####  Definition
@@ -268,10 +195,26 @@ R-####  Refutation or correction
 M-####  Methodological or organizational proposal
 ```
 
-A prefix describes the kind of object, not its truth status. For example, a
-`T-####` file may still be `PROPOSED`, `REFUTED`, or `SUPERSEDED`.
+A prefix describes the kind of object, not its truth status. A `T-####` file may
+still be `PROPOSED`, `REFUTED`, or `SUPERSEDED`.
 
-See [claims/README.md](claims/README.md) for status and promotion rules.
+Core statuses are:
+
+```text
+IDEA
+DEVELOPING
+PROPOSED
+INDEPENDENTLY_RECONSTRUCTED
+FORMALLY_CHECKED
+REFUTED
+SUPERSEDED
+```
+
+Additional flags may include `EMPIRICAL`, `FINITE_SCOPE`, `PARTIAL`,
+`CONDITIONAL`, `SOURCE_DEPENDENT`, and `TRANSLATION_UNVERIFIED`.
+
+A pull request may be merged as a valuable research record while its claims
+remain unverified. See [claims/README.md](claims/README.md).
 
 ## Claiming and discussing work
 
@@ -279,18 +222,19 @@ Anyone may comment on an issue with:
 
 ```text
 CLAIMED BY: @username
+STARTING COMMIT: <sha>
 APPROACH: one-paragraph plan
 ```
 
-This is the project's portable claim-of-work convention even when the user does
-not have GitHub permission to assign the issue formally. Corrections, objections,
-partial results, and alternative approaches are welcome directly in issue
-comments. Independent parallel attempts should say so explicitly.
+Corrections, objections, partial results, literature links, and alternative
+approaches are welcome directly in issue comments. Independent parallel attempts
+should say so explicitly.
 
-Trusted contributors may later receive GitHub `Triage` access so they can apply
-labels and help organize issues without receiving code-push access. Actual
-GitHub assignment currently requires `Write` access, so formal assignment is not
-the default public participation mechanism.
+After a person comments, a trusted organizer with `Triage` access can formally
+assign them, apply labels, request reviews, close or reopen issues, and mark
+duplicates—without receiving code-push access. Arbitrary unaffiliated public
+users do not receive those moderation controls automatically, so the issue-comment
+claim convention remains the zero-friction public default.
 
 ## Repository map
 
@@ -329,13 +273,11 @@ docs/                      protocol, policies, and project guides
 
 ## Community
 
-Use GitHub Discussions for broad ideas and open expeditions.
-Use Issues for concrete coordination, claims of work, corrections, and ongoing
-mathematical discussion. Use pull requests for durable artifacts. Because some
-AI connectors do not expose Discussions, mirror actionable Discussion outcomes
-into Issues or repository files.
+Use Discussions for broad ideas and open expeditions. Use Issues for concrete
+coordination, claims of work, corrections, and ongoing mathematical discussion.
+Use pull requests for durable artifacts. Mirror actionable Discussion outcomes
+into Issues or repository files when agent access is important.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md),
-[GOVERNANCE.md](GOVERNANCE.md), and
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [GOVERNANCE.md](GOVERNANCE.md), and
 [docs/RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md) before submitting major
 work.
