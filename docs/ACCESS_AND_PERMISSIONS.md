@@ -1,82 +1,148 @@
 # Access and Permission Model
 
+## Goal
+
+The Collatz repository is intended to be unusually open to direct human–AI
+research contribution while keeping `main`, canonical state, security settings,
+and project-level resolution status under integrator control.
+
+Use repository-specific teams. Keep the organization base permission at `None`
+so membership in Gettysburg Research does not automatically grant access to
+other present or future repositories.
+
 ## Public participation
 
 Once the repository is public and Issues remain enabled, any GitHub user may:
 
 - read and clone the repository;
-- open Issues;
-- comment on Issues and pull requests;
+- open and comment on Issues;
+- comment on and review pull requests;
 - participate in Discussions;
 - fork the repository;
 - push to their own fork;
-- open a pull request from a branch they control.
+- and open a pull request from a branch they control.
 
-Public visibility does not grant direct push access to
-`GettysburgResearch/collatz`. Direct pushes require explicit repository `Write`
-access.
+Public visibility alone does not grant direct push access to
+`GettysburgResearch/collatz`.
 
-## Claiming work without elevated access
+## Requesting direct contributor access
 
-Use an issue comment:
+Open the access-request Issue and provide your GitHub username. An organization
+owner may invite you to Gettysburg Research and add you to
+`collatz-contributors`.
+
+GitHub organization membership is not currently an unrestricted public auto-join
+process; an owner must issue the invitation. The project intends to make this
+lightweight while retaining protection against spam and abuse.
+
+## `collatz-contributors` — Write
+
+Members receive `Write` access to this repository only. They may:
+
+- push agent branches;
+- open and comment on Issues and PRs;
+- apply labels and assign work;
+- review and correct other contributions;
+- continue long-running research PRs across multiple passes;
+- and open new research programs without waiting for a predefined task.
+
+GitHub's standard `Write` role also grants broad Issue and PR controls. Project
+policy therefore requires contributors not to:
+
+- update or merge into `main`;
+- close or supersede another contributor's active PR;
+- rewrite `STATE.md` or the canonical project status outside integration;
+- delete or hide another contributor's durable research record;
+- alter security-sensitive settings or workflows without review;
+- or use repository CI as distributed mathematical compute.
+
+Contributors may close their own Issues and PRs. Access may be removed for abuse.
+
+## `collatz-integrators` — Maintain
+
+Integrators perform dependency-aware sweeps, extract and merge stable artifacts,
+maintain `STATE.md` and canonical claim metadata, reconcile stacks, and close or
+supersede completed research PRs.
+
+Only this team and organization owners should be allowed to update `main` or
+protected integration branches.
+
+Initially this team may contain only the founder.
+
+## Organization owners — Admin
+
+Owners handle invitations, access removal, installed Apps, secrets, security,
+visibility, rulesets, and continuity. Keep this group small and include a trusted
+backup owner when possible.
+
+## Claiming work
+
+Agents should normally comment on an Issue:
 
 ```text
-CLAIMED BY: @username
+CLAIMED BY: <agent-id>
 STARTING COMMIT: <sha>
+BRANCH: <branch>
 APPROACH: <short plan>
 ```
 
-Multiple independent attempts are allowed. Formal assignment is helpful but not
-required.
+Multiple independent attempts are allowed. Formal GitHub assignment is useful
+but not required for the mathematical claim of work.
 
-After the contributor comments, a trusted organizer with `Triage` access may
-formally assign the issue to them and apply the appropriate labels.
+## Labels, assignments, comments, and reviews
 
-## Permission ladder
+Write contributors can help organize research by labeling and assigning Issues
+and PRs. Agents are encouraged to comment across the repository with
+corrections, objections, literature, computational checks, partial proofs,
+dependency observations, and review findings.
 
-### Public
+Only integrators should close another contributor's active PR or mark it
+superseded in the canonical record.
 
-Issues, comments, Discussions, forks, reviews, and pull requests.
+## Protecting `main`
 
-### Research organizer — Triage
+The intended public configuration is:
 
-For contributors who have demonstrated constructive participation. `Triage`
-allows them to apply or dismiss labels, assign contributors, close or reopen
-issues and pull requests, request reviews, apply milestones, and mark duplicates
-without code-push access.
+```text
+Target: main
+Restrict updates
+Restrict deletion
+Require a pull request
+Block force pushes
+Bypass: collatz-integrators and organization owners only
+```
 
-This is the recommended early trust role for community organizers.
+If private-repository branch rules are unavailable on the current GitHub plan,
+keep contributor Write access limited while private. Complete the baseline and
+first integration pass, change visibility during a controlled unpublished setup
+window, immediately activate the free public ruleset or protected branch, test
+it, and only then grant broad contributor Write access and announce the project.
 
-### Maintainer — Write
+CODEOWNERS is useful for review routing but is not a substitute for server-side
+branch protection.
 
-For sustained contributors who need to push branches directly to the
-organization repository. `main` remains protected and integration is still
-reviewed.
+## AI applications
 
-### Integrator — Maintain
-
-For dependency-aware merges, canonical state, and claim-ledger stewardship.
-Initially this role may contain only the founder.
-
-### Owner — Admin
-
-For security, visibility, rulesets, Apps, and continuity. Keep this group very
-small.
-
-## Labels and duplicates
-
-Arbitrary unaffiliated public users cannot apply repository labels or formally
-moderate other people's issues. They may comment `Possible duplicate of #123`
-and continue the mathematical discussion. A trusted triager can apply labels,
-mark the formal duplicate relationship, assign contributors, or close the issue.
-
-## ChatGPT and other agents
-
-The standard ChatGPT GitHub app is a read/search connection. A contributor needs
-a write-capable authenticated environment such as Codex, Cursor, local Git, or
-another coding agent to push a branch or open a code pull request. The agent acts
-with that contributor's GitHub permissions.
+The ordinary ChatGPT GitHub app is generally a read/search connection. A
+contributor needs a write-capable authenticated environment such as Codex,
+Cursor, local Git, or another coding agent to push a branch or open a code PR.
+The agent acts with the connected GitHub user's permissions.
 
 Some AI connectors do not expose GitHub Discussions. Actionable Discussion
 content must therefore be mirrored into Issues, PRs, reports, or repository
-documents.
+files.
+
+## Actions and secrets
+
+Before broad Write access:
+
+- keep Actions disabled or allow only reviewed bounded workflows;
+- keep repository secrets empty unless strictly necessary;
+- use no public self-hosted runner;
+- use read-only default workflow tokens;
+- prevent Actions from approving pull requests;
+- require explicit short job timeouts;
+- and inspect installed Apps, deploy keys, webhooks, and tokens.
+
+See [COMPUTE_POLICY.md](COMPUTE_POLICY.md) and the repository
+[SECURITY.md](../SECURITY.md).
