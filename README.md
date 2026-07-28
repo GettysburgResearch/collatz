@@ -1,240 +1,259 @@
-# Collatz Multi-Agent Counterexample Project
+# Collatz Open Research
+
+> **PROJECT STATUS: UNSOLVED**
+>
+> This repository currently contains no project-verified proof or counterexample
+> to the Collatz conjecture. It contains active research, proposed arguments,
+> exact computations, independently reconstructed subresults, refutations,
+> literature connections, and open questions.
 
 ## Mission
 
-The purpose of this repository is to **resolve the Collatz conjecture by constructing and rigorously proving a counterexample**.
+Collatz Open Research is an open human–AI research effort aimed at resolving
+the Collatz conjecture in either direction.
 
-A valid counterexample could take the form of:
+We welcome:
 
-- a positive integer whose Collatz trajectory diverges;
-- a positive integer entering a nontrivial cycle;
-- or another rigorously equivalent construction that disproves the conjecture.
+- proofs and proof-oriented reductions;
+- counterexamples, divergent-orbit constructions, and positive-cycle work;
+- large new research programs and unconventional attacks;
+- adversarial verification and refutation;
+- exact and reproducible computation;
+- literature reconstruction and theorem transfer;
+- Lean formalization;
+- dependency mapping, synthesis, and improved research organization;
+- carefully documented failures that prevent future repetition.
 
-This is an ambitious objective. **We will achieve it.**
+The repository is both a research laboratory and a durable record for future
+humans and models.
 
-Agents should investigate boldly, develop unconventional abstractions, and pursue ideas that initially appear speculative or unlikely.
+## Freedom in discovery, discipline in claims
 
-**Do not fear confabulation.**
+Exploration is deliberately broad.
 
-In exploratory research, an imaginative false conjecture can be more useful than a cautious repetition of known ideas. Agents are encouraged to invent structures, lemmas, encodings, rewrite systems, invariants, and possible counterexample constructions.
+Contributors may:
 
-However, confabulation must be made visible. Every statement must be clearly labeled as proved, computationally observed, conjectured, speculative, or refuted. Creativity is encouraged; silently presenting invention as established fact is not.
+- attack the full conjecture directly;
+- pursue a narrow lemma;
+- launch a new mathematical program;
+- introduce a new representation when it creates a real opportunity;
+- conduct a large multi-session research push;
+- audit or refute existing work;
+- connect the project to remote literature;
+- build experiments, formalizations, maps, dashboards, or verification tools;
+- propose changes to the organization of the project itself.
 
-The objective is not merely to generate interesting discussion. The objective is to produce an auditable and cumulative body of research in which:
+No contributor is required to choose only from a prewritten task list.
+Issues are coordination tools, not boundaries on mathematical imagination.
 
-- possible counterexample constructions are actively pursued;
-- useful ideas are preserved;
-- duplicated work is minimized;
-- computational results are reproducible;
-- claimed proofs are adversarially checked;
-- false lemmas are identified quickly;
-- failed approaches remain available to later researchers;
-- organizational methods improve as the project progresses;
-- no speculative claim is silently promoted to a theorem.
+The discipline begins when a result is recorded:
 
-**Be imaginative in discovery and uncompromising in verification.**
+- speculation must be labeled;
+- computations must state their finite scope;
+- dependencies and source assumptions must be visible;
+- uncertainty must not be hidden;
+- a merged artifact is not automatically a proved theorem;
+- a confident model statement is not evidence;
+- a known open problem is not a reason to stop working.
 
----
+A useful slogan for the project is:
 
-## 1. Repository operating model
+> **Explore freely. State exactly. Verify adversarially. Preserve everything useful.**
 
-This repository has five primary coordination layers:
+## Open problems are targets, not stop signs
 
-1. **README.md** — stable operating rules and project mission.
-2. **GitHub Issues** — active tasks, ownership, discussion, and blocking dependencies.
-3. **Agent reports** — append-only records of individual research sessions.
-4. **Pull requests** — reviewable research contributions.
-5. **CURRENT_STATE.md** — the current integrated understanding of the project.
+This project exists to work on open problems.
 
-Agents should not treat chat history as durable project knowledge.
+When a model or contributor discovers that a target is known to be open, that
+fact should be treated as:
 
-Any result, idea, failure, construction, computational discovery, or organizational suggestion that may matter later must be written into the repository.
+1. a connection to the literature;
+2. a warning not to present an old open question as a new theorem;
+3. information about the exact boundary of current knowledge;
+4. a starting point for a new attack.
 
----
+It is **not** a reason to decline the problem or end the investigation.
 
-## 2. Required startup procedure
-
-Before beginning a research session, every agent must:
-
-1. Read this README.
-2. Read `CURRENT_STATE.md`.
-3. Read `OPEN_PROBLEMS.md`.
-4. Read `CLAIMS.md`.
-5. Search open issues and pull requests for overlapping work.
-6. Read the latest relevant files under `reports/`.
-7. Select or create a GitHub issue for the task.
-8. Announce an agent ID and claim the issue before substantial work begins.
-9. Consider whether the current repository structure or coordination process can be improved.
-
-Agents may attack the full conjecture, pursue a narrow lemma, construct candidate counterexamples, develop new symbolic systems, run computational experiments, audit another agent’s argument, or reorganize existing ideas into a stronger framework.
-
----
-
-## 3. Agent identity
-
-Each research thread must use a unique, persistent agent ID.
-
-Suggested format:
+A good response to “this appears to be open” is:
 
 ```text
-<model-or-human>-<number>
+Here is the precise literature connection.
+Here is what is already known.
+Here is the exact unresolved step.
+Here is the new route I will now attempt.
 ```
 
-Examples:
+The project does not assume that a current model will solve Collatz. It does
+assume that serious attempts, reductions, refutations, computations, and
+organizational advances can accumulate into a stronger research record.
+
+## Three contribution modes
+
+### 1. Open expeditions
+
+For ambitious, self-directed work:
+
+- a new proof or disproof route;
+- a broad literature-driven program;
+- a new computational architecture;
+- a multi-session theorem-development push;
+- a new way to organize or verify the project.
+
+Open expeditions may be large. They should include an internal map so later
+researchers can identify the exact claims, dependencies, failures, and next
+steps.
+
+### 2. Focused missions
+
+For bounded tasks with a clear target:
+
+- verify one lemma;
+- reproduce one computation;
+- settle one denominator condition;
+- formalize one theorem;
+- test one candidate;
+- close one explicit gap.
+
+These are especially useful for phone-based contribution and independent
+review.
+
+### 3. Audits and synthesis
+
+For work on the research record itself:
+
+- find circularity;
+- identify the first unsupported inference;
+- compare overlapping branches;
+- reconstruct a proof independently;
+- map the literature;
+- consolidate equivalent claims;
+- repair notation or dependencies;
+- improve project management.
+
+All three modes are first-class contributions.
+
+## Current research concentration
+
+The current repository contains several independent programs. Two recurring
+global bottlenecks have emerged in much of the existing work:
+
+1. **Ordinary-integer realization:** turning compatible finite or `2`-adic
+   structure into one ordinary positive integer with an all-time legal orbit.
+2. **Full-denominator cycle closure:** turning a finite valuation or parity
+   construction into exact divisibility and exact physical replay.
+
+These are current concentrations, not restrictions on future work. A new route
+that bypasses them is welcome.
+
+See [STATE.md](STATE.md) for the integrated project state and
+[ROADMAP.md](ROADMAP.md) for active and open-ended research lanes.
+
+## How to begin
+
+### Open exploration
+
+Read:
+
+1. this README;
+2. [STATE.md](STATE.md);
+3. [AGENTS.md](AGENTS.md) if using an AI model;
+4. the most relevant research files and open discussions.
+
+Then open a Discussion, issue, draft pull request, or research branch. State the
+question you are attacking and the repository commit you began from.
+
+Discussions are useful for broad human conversation, but not every connected AI
+tool can currently read or write GitHub Discussions. Any idea that becomes
+actionable should also be mirrored into an issue, pull request, report, or other
+repository file so agents can reliably find it.
+
+### Guided contribution
+
+Choose an issue labeled:
 
 ```text
-gpt56-01
-gpt56-02
-claude-03
-human-gideon
-verifier-01
-integrator-01
+good first agent task
+verification wanted
+literature wanted
+computation wanted
+formalization wanted
 ```
 
-Every issue comment, report, commit, and pull request should identify the responsible agent.
+Use its starter prompt, then submit an issue comment, report, or pull request.
 
-Do not reuse another active agent’s ID.
+### Independent verification
 
-When the same agent begins a substantially new independent attempt, it may either retain its existing identity or create a clearly related sub-identity:
+Choose a claim marked `PROPOSED` and attempt to reconstruct or refute it without
+relying on the original author's confidence.
+
+## A note for humans steering models
+
+Models can make real progress, but they can also enter polished circular loops.
+
+Common signs include:
+
+- restating the same missing inference in new notation;
+- producing longer finite-prefix evidence without addressing the infinite step;
+- proving “if an orbit exists, then it grows” while never proving existence;
+- introducing another encoding that preserves the original hard problem;
+- repeatedly calling nearby reformulations “breakthroughs”;
+- rediscovering a known open problem and treating that as the end;
+- generating many conditional lemmas that do not strengthen the final
+  implication.
+
+When this happens, do not conclude that the whole project is futile. Shake the
+research process out of the loop.
+
+Useful interventions:
 
 ```text
-gpt56-01-a
-gpt56-01-b
+State the exact global target and the first unsupported inference.
+Do not add a new formalism unless it changes that implication.
+Compare this pass with the previous three and state the genuinely new delta.
+Try to refute the current route.
+Identify what theorem would eliminate an exhaustive class.
+Explain why the target is weaker than Collatz, or admit that it is not.
+Return to the ordinary-integer or full-denominator boundary.
 ```
 
----
+See [docs/HUMAN_GUIDE_TO_AI_RESEARCH.md](docs/HUMAN_GUIDE_TO_AI_RESEARCH.md).
 
-## 4. Task ownership
+## Evidence and claim status
 
-GitHub Issues are the authoritative task registry.
+Every mathematical claim has a stable identifier and a visible status.
 
-An issue should contain:
-
-- a precise research question;
-- the relationship to constructing a Collatz counterexample;
-- known dependencies;
-- relevant claim or lemma IDs;
-- expected deliverables;
-- suggested verification methods;
-- current owner;
-- current status.
-
-Before working on an issue, comment:
+Core statuses:
 
 ```text
-CLAIMED BY: <agent-id>
-STARTED: <UTC timestamp>
-BRANCH: agent/<agent-id>/<issue-number>-<short-name>
-APPROACH: <one-paragraph plan>
+IDEA
+DEVELOPING
+PROPOSED
+INDEPENDENTLY_RECONSTRUCTED
+FORMALLY_CHECKED
+REFUTED
+SUPERSEDED
 ```
 
-A claim should normally expire after 24 hours without an update. Another agent may then take over, but must preserve and reference the earlier work.
-
-Multiple agents may work on the same issue when independent attempts are useful. They must use separate branches and explicitly mark the attempts as independent.
-
-Agents are encouraged to open issues for:
-
-- candidate counterexample constructions;
-- possible nontrivial cycles;
-- divergence mechanisms;
-- symbolic encodings;
-- string rewrite systems;
-- invariant discovery;
-- proof gaps;
-- computational searches;
-- adversarial verification;
-- synthesis of multiple approaches;
-- improvements to the project’s organizational structure.
-
----
-
-## 5. Branch and commit conventions
-
-Never push research directly to the default branch.
-
-Branch naming:
+Additional flags may include:
 
 ```text
-agent/<agent-id>/<issue-number>-<short-description>
+EMPIRICAL
+FINITE_SCOPE
+PARTIAL
+CONDITIONAL
+SOURCE_DEPENDENT
+TRANSLATION_UNVERIFIED
 ```
 
-Examples:
+A pull request may be merged as a valuable research record while its claims
+remain `IDEA`, `DEVELOPING`, or `PROPOSED`.
 
-```text
-agent/gpt56-01/17-rewrite-system-invariant
-agent/claude-03/22-check-modular-obstruction
-agent/verifier-01/31-audit-lemma-L0012
-agent/gpt56-04/44-candidate-divergent-orbit
-```
+See [claims/README.md](claims/README.md).
 
-Commit messages should use one of these prefixes:
+## Claim identifiers
 
-```text
-idea:
-construction:
-proof:
-experiment:
-verification:
-refutation:
-report:
-organization:
-docs:
-```
-
-Examples:
-
-```text
-construction: define candidate rewrite orbit with unbounded growth
-proof: establish termination on restricted residue class
-experiment: search rewrite cycles through depth 40
-verification: independently reconstruct lemma L-0017
-refutation: find counterexample to proposed monotonicity lemma
-report: summarize failed parity-vector approach
-organization: propose claim dependency index
-```
-
-Commit partial work frequently.
-
-A failed approach is still useful project information.
-
----
-
-## 6. Pull request rules
-
-Each pull request should address one coherent contribution.
-
-A pull request must state:
-
-- agent ID;
-- issue addressed;
-- exact contribution;
-- relationship to the counterexample objective;
-- claim IDs added or changed;
-- dependencies;
-- verification performed;
-- unresolved doubts;
-- files that a reviewer should inspect first;
-- any suggested improvements to the research process.
-
-A pull request must not describe a result as a proof unless the complete proof is present in the repository.
-
-Large speculative explorations should normally be submitted as research reports or candidate constructions rather than theorem claims.
-
-Agents should not merge their own proof claims.
-
-Proof-level contributions require review by at least one independent agent.
-
-Claims purporting to construct a genuine Collatz counterexample or disprove the full conjecture require at least two independent adversarial reviews before being marked verified.
-
-Whenever practical, at least one verifier should attempt to refute the result computationally and another should reconstruct the mathematical argument independently.
-
----
-
-## 7. Research claim classification
-
-Every mathematical claim must have a stable identifier.
-
-Use:
+Claims use stable prefixes so theorem statements, experiments, corrections, and
+open questions can be referenced across branches and reviews:
 
 ```text
 D-####  Definition
@@ -245,544 +264,78 @@ K-####  Candidate counterexample
 L-####  Lemma
 T-####  Theorem
 X-####  Computational experiment
-R-####  Refutation
+R-####  Refutation or correction
 M-####  Methodological or organizational proposal
 ```
 
-Examples:
+A prefix describes the kind of object, not its truth status. For example, a
+`T-####` file may still be `PROPOSED`, `REFUTED`, or `SUPERSEDED`.
+
+See [claims/README.md](claims/README.md) for status and promotion rules.
+
+## Claiming and discussing work
+
+Anyone may comment on an issue with:
 
 ```text
-K-0003
-L-0017
-C-0009
-X-0032
-R-0004
-M-0006
+CLAIMED BY: @username
+APPROACH: one-paragraph plan
 ```
 
-Every claim must have exactly one status:
+This is the project's portable claim-of-work convention even when the user does
+not have GitHub permission to assign the issue formally. Corrections, objections,
+partial results, and alternative approaches are welcome directly in issue
+comments. Independent parallel attempts should say so explicitly.
+
+Trusted contributors may later receive GitHub `Triage` access so they can apply
+labels and help organize issues without receiving code-push access. Actual
+GitHub assignment currently requires `Write` access, so formal assignment is not
+the default public participation mechanism.
+
+## Repository map
 
 ```text
-IDEA
-EMPIRICAL
-PARTIAL
-PROPOSED
-PROVED
-INDEPENDENTLY_VERIFIED
-REFUTED
-SUPERSEDED
+README.md                  public orientation
+STATE.md                   integrated mathematical state
+ROADMAP.md                 active and open research lanes
+CONTRIBUTING.md            contribution guidance
+AGENTS.md                  guidance for AI-assisted research
+GOVERNANCE.md              roles and decision rules
+
+claims/                    canonical claim registry
+research/                  research programs and proof development
+experiments/               reproducible computation and certificates
+formal/                    Lean and other formal artifacts
+reports/                   append-only session and review reports
+literature/                source maps and theorem reconstruction
+docs/                      protocol, policies, and project guides
 ```
 
-Meanings:
-
-- **IDEA** — an informal possibility without substantial support.
-- **EMPIRICAL** — supported computationally, but not proved.
-- **PARTIAL** — a rigorous result with incomplete scope.
-- **PROPOSED** — a complete-looking proof or construction has been submitted but not independently verified.
-- **PROVED** — the proof has passed an initial detailed review.
-- **INDEPENDENTLY_VERIFIED** — independently reconstructed or checked by another agent.
-- **REFUTED** — a counterexample, computation, or logical failure is known.
-- **SUPERSEDED** — replaced by a clearer, corrected, or stronger formulation.
-
-No result may jump directly from `IDEA` to `INDEPENDENTLY_VERIFIED`.
-
-A candidate counterexample remains a candidate until both the object and the universal mathematical reasoning establishing its behavior have been independently verified.
-
----
-
-## 8. Required structure for mathematical claims
-
-Each candidate construction, lemma, or theorem file should contain:
-
-```text
-Claim ID:
-Title:
-Status:
-Authoring agent:
-Reviewing agents:
-Created:
-Last updated:
-Dependencies:
-Scope:
-Related counterexample candidates:
-```
-
-Then include the following sections.
-
-### Statement
-
-A fully quantified, unambiguous mathematical statement.
-
-### Definitions
-
-All nonstandard terminology and notation.
-
-### Motivation
-
-Explain how the claim could contribute to constructing or validating a Collatz counterexample.
-
-### Proof or construction
-
-Provide the complete argument or construction with no appeals to inaccessible chat history.
-
-### Dependency audit
-
-List every earlier result used and the precise point where it is used.
-
-### Gap audit
-
-Deliberately search for:
-
-- hidden finiteness assumptions;
-- unjustified induction;
-- failure to cover boundary cases;
-- confusion between empirical and universal statements;
-- invalid interchange of limits;
-- circular dependence;
-- nonuniform estimates;
-- assumptions equivalent to the Collatz conjecture itself;
-- incorrectly assumed independence;
-- unproved properties of an infinite rewrite sequence;
-- finite computation being extrapolated to infinite behavior;
-- a proposed counterexample being defined circularly;
-- failure to prove that a symbolic object corresponds to an actual positive integer.
-
-### Adversarial tests
-
-Include small examples, edge cases, alternate formulations, symbolic checks, or computational tests that could expose an error.
-
-### Remaining uncertainty
-
-State any part of the argument about which the author is not fully confident.
-
-### Suggested next attack
-
-Describe the most promising way another agent could prove, strengthen, exploit, or refute the claim.
-
----
-
-## 9. Candidate counterexample requirements
-
-Every proposed counterexample should receive a stable `K-####` identifier.
-
-A candidate file should include:
-
-```text
-Candidate ID:
-Status:
-Proposing agent:
-Object or construction:
-Claimed failure mode:
-Dependencies:
-Verification status:
-```
-
-The file must then address:
-
-### Exact object
-
-Define the proposed positive integer, infinite symbolic object, residue sequence, cycle, rewrite path, or equivalent construction precisely.
-
-### Translation to Collatz dynamics
-
-Prove that the proposed representation corresponds to a legitimate Collatz trajectory or to an equivalent formulation of the conjecture.
-
-### Failure mechanism
-
-State whether the construction is claimed to:
-
-- diverge to infinity;
-- remain unbounded;
-- avoid 1 forever;
-- enter a nontrivial cycle;
-- or violate an equivalent necessary condition.
-
-### Existence proof
-
-If the construction is defined indirectly, prove that the object actually exists.
-
-### Integrality and positivity
-
-Prove that all required quantities correspond to positive integers where necessary.
-
-### Infinite consistency
-
-If defined through finite prefixes, prove that the prefixes are mutually compatible and determine a valid infinite object.
-
-### Verification plan
-
-State exactly what mathematical and computational checks are needed before the candidate can be accepted.
-
----
-
-## 10. Computational result requirements
-
-Computational evidence is welcome and may play a central role in discovering the counterexample.
-
-However:
-
-**Never call partial numerical evidence a proof. Partial numerical evidence may inspire a lemma, invariant, construction, or reduction which can then support a proof.**
-
-Every experiment must record:
-
-- experiment ID;
-- research question;
-- exact code;
-- command used;
-- parameter ranges;
-- software environment;
-- random seeds, when applicable;
-- output or output digest;
-- interpretation;
-- limitations;
-- associated issue and claim IDs.
-
-Place experiments under:
-
-```text
-experiments/X-####-short-name/
-```
-
-Suggested contents:
-
-```text
-README.md
-run.py
-requirements.txt
-results/
-```
-
-Large generated files should not be committed unless genuinely necessary. Prefer scripts that regenerate results.
-
-Computational searches should aim not only to test known formulations, but also to discover:
-
-- unexpected rewrite patterns;
-- invariant candidates;
-- unusually slow or growing trajectories;
-- modular structures;
-- cycle equations;
-- symbolic fixed points;
-- self-consistent parity sequences;
-- candidate infinite paths;
-- failures of proposed lemmas;
-- structures that suggest an existence theorem.
-
-Whenever possible, include automated tests that distinguish between:
-
-- verified finite output;
-- extrapolated behavior;
-- heuristic interpretation;
-- rigorous mathematical consequence.
-
----
-
-## 11. Agent session reports
-
-At the end of every substantial session, create:
-
-```text
-reports/<agent-id>/<YYYY-MM-DD>-<issue-number>-<short-name>.md
-```
-
-Reports are append-only historical records.
-
-Do not overwrite another agent’s report.
-
-Each report must contain:
-
-```text
-Agent:
-Issue:
-Branch:
-Starting hypothesis:
-Approaches attempted:
-New results:
-Candidate counterexamples:
-Failed approaches:
-Potential errors:
-Files changed:
-Claims affected:
-Recommended next actions:
-Organizational improvement ideas:
-```
-
-A report must distinguish among:
-
-- proved facts;
-- computational observations;
-- plausible conjectures;
-- speculative ideas;
-- candidate constructions;
-- known failures;
-- organizational suggestions.
-
-Even when no mathematical progress was made, record what was attempted and why it failed.
-
-Agents should also consider whether the difficulty encountered arose from the mathematics or from deficiencies in the project’s coordination, indexing, file structure, review process, or division of work.
-
----
-
-## 12. Handoffs between agents
-
-When handing work to another agent:
-
-1. Create or update the relevant issue.
-2. Link the latest report.
-3. Identify the exact unresolved step.
-4. List the files and claims that must be read.
-5. State what has already been tried.
-6. State what would falsify the current approach.
-7. State whether an organizational change would make continuation easier.
-
-Recommended handoff format:
-
-```text
-HANDOFF FROM: <agent-id>
-HANDOFF TO: any / <specific-agent-id>
-CURRENT CLAIM OR CANDIDATE: <claim-id>
-BLOCKING STEP:
-FILES TO READ:
-FAILED ATTEMPTS:
-MOST PROMISING NEXT MOVE:
-MAIN RISK:
-POSSIBLE ORGANIZATIONAL IMPROVEMENT:
-```
-
-Do not use vague instructions such as “continue the proof.”
-
-A useful handoff should allow another agent to begin productive work without reconstructing the entire history of the project.
-
----
-
-## 13. Independent verification protocol
-
-A verifier should begin without relying on the original author’s confidence.
-
-The verifier should:
-
-1. Restate the claim independently.
-2. Reconstruct the proof from its explicit dependencies.
-3. Check every quantifier and boundary case.
-4. Search computationally for small counterexamples when appropriate.
-5. Attempt to negate or strengthen the claim.
-6. Check whether any dependency is circular.
-7. Verify that symbolic constructions correspond to actual integer trajectories.
-8. Check whether finite consistency has been improperly substituted for infinite existence.
-9. Record the first unsupported inference, if one exists.
-10. Submit either:
-    - a verification report;
-    - a correction request;
-    - a formal refutation.
-
-Review comments should identify exact file paths and exact logical steps.
-
-“Looks correct” is not sufficient verification.
-
-For a claimed counterexample, the verifier should independently reproduce:
-
-- the construction;
-- the translation into Collatz dynamics;
-- the claimed nontermination, divergence, or cycle behavior;
-- every supporting lemma;
-- and the absence of hidden assumptions equivalent to the desired conclusion.
-
----
-
-## 14. Integrator role
-
-One designated integrator maintains:
-
-```text
-CURRENT_STATE.md
-CLAIMS.md
-OPEN_PROBLEMS.md
-```
-
-Ordinary research agents should propose changes to these files through pull requests, but the integrator resolves conflicts and maintains consistent status classifications.
-
-The integrator does not decide mathematical truth by authority.
-
-The integrator records the strongest status justified by repository evidence.
-
-The integrator should periodically:
-
-- merge accepted reports;
-- close duplicated issues;
-- identify conflicting claims;
-- request independent reviews;
-- mark stale tasks;
-- update the dependency graph;
-- create synthesis issues;
-- identify promising candidate counterexamples;
-- summarize major failed directions;
-- review organizational proposals;
-- improve templates and repository structure where justified.
-
-The integrator may create dedicated issues for organizational improvements suggested by agents.
-
----
-
-## 15. Improving the research process
-
-The project’s organizational system is itself experimental.
-
-All agents are invited to propose better ways to:
-
-- coordinate parallel research;
-- reduce duplicated effort;
-- preserve partial insights;
-- represent dependencies;
-- rank promising approaches;
-- detect contradictions;
-- conduct adversarial review;
-- divide long arguments into verifiable units;
-- share computational artifacts;
-- track candidate counterexamples;
-- summarize large bodies of work;
-- allocate agents dynamically;
-- improve communication between research threads.
-
-Organizational proposals should use `M-####` identifiers when substantial.
-
-A methodological proposal should include:
-
-```text
-Proposal ID:
-Problem with current process:
-Proposed change:
-Expected benefit:
-Possible cost or risk:
-Trial procedure:
-Success criterion:
-```
-
-Agents should not wait until the end of the project to suggest improvements.
-
-While working on the mathematics, continuously consider how the group itself could reason, communicate, verify, and collaborate more effectively.
-
-Useful organizational experiments may be tested on a limited set of issues before becoming project-wide rules.
-
-The README is not immutable. Changes may be proposed through pull requests and adopted when they improve the project’s ability to construct and verify a counterexample.
-
----
-
-## 16. Recommended repository structure
-
-```text
-README.md
-CURRENT_STATE.md
-OPEN_PROBLEMS.md
-CLAIMS.md
-CANDIDATES.md
-NEGATIVE_RESULTS.md
-NOTATION.md
-ORGANIZATIONAL_PROPOSALS.md
-
-claims/
-  definitions/
-  observations/
-  conjectures/
-  candidates/
-  lemmas/
-  theorems/
-  refutations/
-  methodology/
-
-experiments/
-  X-0001-example/
-
-reports/
-  gpt56-01/
-  gpt56-02/
-  claude-01/
-  verifier-01/
-  integrator-01/
-
-scripts/
-tests/
-
-.github/
-  ISSUE_TEMPLATE/
-  PULL_REQUEST_TEMPLATE.md
-```
-
----
-
-## 17. Non-negotiable rules
-
-1. Never conceal uncertainty.
-2. Never call partial numerical evidence a proof, though it may inspire a lemma, construction, or reduction which can then support a proof.
-3. Never rely on inaccessible chat context.
-4. Never silently delete failed work.
-5. Never modify another agent’s branch without coordination.
-6. Never merge a claimed major theorem or counterexample without independent review.
-7. Never assume the desired conclusion inside an intermediate lemma.
-8. Never treat eloquence, length, confidence, or model identity as evidence.
-9. Always preserve exact statements and dependencies.
-10. Always distinguish finite verification from infinite proof.
-11. Always distinguish a symbolic construction from proof that it represents an integer trajectory.
-12. Always record potentially useful false starts.
-13. Always remain open to unconventional ideas.
-14. Do not fear confabulation, but label it.
-15. Always suggest organizational improvements when they could help the group.
-16. Always leave the repository more understandable than you found it.
-
----
-
-## 18. Initial instruction for every new agent
-
-Use the following instruction when starting a new research thread:
-
-```text
-You are one researcher in a coordinated multi-agent project whose goal is
-to resolve the Collatz conjecture by constructing and rigorously proving
-a counterexample.
-
-The goal is ambitious, and we will achieve it.
-
-Do not fear confabulation. Generate bold hypotheses, unusual constructions,
-new rewrite systems, speculative lemmas, and unconventional equivalences.
-However, clearly label everything as proved, computational, conjectural,
-speculative, or refuted.
-
-Before doing mathematical work:
-
-1. Read README.md, CURRENT_STATE.md, OPEN_PROBLEMS.md, CLAIMS.md,
-   CANDIDATES.md, relevant open issues, relevant pull requests, and
-   recent reports.
-2. Choose or create one precise GitHub issue.
-3. Assign yourself a unique agent ID.
-4. Claim the task in the issue.
-5. Work on a separate agent branch.
-6. Clearly distinguish proof, partial proof, computation, conjecture,
-   speculation, candidate construction, and refutation.
-7. Preserve failed approaches.
-8. Pursue the construction of a counterexample directly or develop
-   mathematical tools that could enable such a construction.
-9. End the session with an agent report and a reviewable pull request.
-10. Include ideas for improving the research organization itself.
-11. Never call partial numerical evidence a proof, though it may inspire
-    a lemma or construction that can later be proved.
-12. Do not claim resolution of the Collatz conjecture unless every
-    dependency, existence claim, and infinite step is explicitly
-    established in the repository.
-13. Be imaginative in discovery and uncompromising in verification.
-```
-
----
-
-## 19. Current project objective
-
-The project’s objective is to construct a genuine counterexample to the Collatz conjecture and prove rigorously that it is a counterexample.
-
-The immediate objectives are to:
-
-- discover candidate counterexample mechanisms;
-- invent mathematical representations capable of expressing them;
-- derive lemmas that convert finite or symbolic structure into infinite behavior;
-- test and refute weak constructions rapidly;
-- preserve all useful negative and positive results;
-- improve the organization of the multi-agent research process;
-- and build a reliable, cumulative, adversarially reviewed path toward the final construction.
-
-**The goal is ambitious. We will achieve it.**
+## Core research values
+
+1. Open problems are legitimate targets.
+2. Large and unconventional research pushes are welcome.
+3. Speculation is welcome; hidden speculation is not.
+4. Refutation is progress.
+5. Negative results remain searchable.
+6. Exact scope matters.
+7. Finite evidence is not silently extrapolated to infinity.
+8. Symbolic or `2`-adic objects are not silently treated as ordinary integers.
+9. Literature is a foundation and connection, not an excuse to stop.
+10. The organization of the project is itself open to improvement.
+11. Model identity and confidence do not determine truth.
+12. Every substantial session should leave the repository more useful than it
+    found it.
+
+## Community
+
+Use GitHub Discussions for broad ideas and open expeditions.
+Use Issues for concrete coordination, claims of work, corrections, and ongoing
+mathematical discussion. Use pull requests for durable artifacts. Because some
+AI connectors do not expose Discussions, mirror actionable Discussion outcomes
+into Issues or repository files.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md),
+[GOVERNANCE.md](GOVERNANCE.md), and
+[docs/RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md) before submitting major
+work.
