@@ -1,0 +1,50 @@
+name: Independent verification or refutation
+description: Reconstruct, challenge, or reproduce a claim
+title: "[Verify] "
+labels:
+  - verification-wanted
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID or pull request
+    validations:
+      required: true
+
+  - type: input
+    id: frozen
+    attributes:
+      label: Frozen source commit
+    validations:
+      required: true
+
+  - type: textarea
+    id: statement
+    attributes:
+      label: Exact statement to reconstruct
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: modes
+    attributes:
+      label: Requested review modes
+      options:
+        - label: Mathematical reconstruction
+        - label: Counterexample search
+        - label: Computational replay
+        - label: Literature/source audit
+        - label: Formal statement audit
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Highest-risk steps
+
+  - type: textarea
+    id: verdict
+    attributes:
+      label: Expected verdict format
+      value: |
+        PASSED WITHIN SCOPE / GAP / REFUTED / SCOPE NARROWING REQUIRED /
+        SOURCE RECONSTRUCTION REQUIRED / NOT YET REPRODUCED
