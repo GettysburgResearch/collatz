@@ -5,6 +5,8 @@
 ```text
 expedition
 focused-task
+discussion
+correction
 verification
 refutation
 synthesis
@@ -35,6 +37,7 @@ resolution-candidate
 ## Coordination
 
 ```text
+claim-of-work
 good first agent task
 help wanted
 verification wanted
@@ -43,11 +46,13 @@ computation wanted
 formalization wanted
 independent attempt
 dependent stack
+open-ended
 blocked
 stale
 needs map
 needs provenance
 needs reproduction
+needs integrator
 ```
 
 ## Research lane
@@ -65,3 +70,7 @@ number-theory
 formal-methods
 meta-research
 ```
+
+Issue comments may carry substantial mathematical discussion even when the issue
+also tracks a task. The `discussion` and `correction` labels signal that the
+thread should remain open to objections, refinements, and competing approaches.
