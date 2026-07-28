@@ -2,7 +2,7 @@ name: Independent verification or refutation
 description: Reconstruct, challenge, or reproduce a claim
 title: "[Verify] "
 labels:
-  - verification-wanted
+  - verification wanted
 body:
   - type: input
     id: claim
@@ -47,4 +47,5 @@ body:
       label: Expected verdict format
       value: |
         PASSED WITHIN SCOPE / GAP / REFUTED / SCOPE NARROWING REQUIRED /
-        SOURCE RECONSTRUCTION REQUIRED / NOT YET REPRODUCED
+        SOURCE RECONSTRUCTION REQUIRED / COMPUTATION REPLAY REQUIRED /
+        NOT YET REPRODUCED / SUPERSEDED
