@@ -29,6 +29,9 @@ APPROACH: <short plan>
 Multiple independent attempts are allowed. Formal assignment is helpful but not
 required.
 
+After the contributor comments, a trusted organizer with `Triage` access may
+formally assign the issue to them and apply the appropriate labels.
+
 ## Permission ladder
 
 ### Public
@@ -37,16 +40,18 @@ Issues, comments, Discussions, forks, reviews, and pull requests.
 
 ### Research organizer — Triage
 
-A relatively low-trust role for contributors who have demonstrated constructive
-participation. It permits label application and issue/PR organization without
-code-push access.
+For contributors who have demonstrated constructive participation. `Triage`
+allows them to apply or dismiss labels, assign contributors, close or reopen
+issues and pull requests, request reviews, apply milestones, and mark duplicates
+without code-push access.
+
+This is the recommended early trust role for community organizers.
 
 ### Maintainer — Write
 
-For sustained contributors who need formal assignment, branch creation, or
-direct work in the repository. `main` remains protected and integration is still
-reviewed. GitHub currently requires `Write` access to formally assign issues or
-pull requests.
+For sustained contributors who need to push branches directly to the
+organization repository. `main` remains protected and integration is still
+reviewed.
 
 ### Integrator — Maintain
 
@@ -60,11 +65,10 @@ small.
 
 ## Labels and duplicates
 
-Arbitrary public users cannot apply repository labels. `Triage` access can be
-granted to trusted research organizers for this purpose. Anyone may comment
-`Possible duplicate of #123`; a triager can apply the duplicate label or close
-the issue. GitHub's special “marked as duplicate” timeline event requires write
-access, but the project does not depend on that event.
+Arbitrary unaffiliated public users cannot apply repository labels or formally
+moderate other people's issues. They may comment `Possible duplicate of #123`
+and continue the mathematical discussion. A trusted triager can apply labels,
+mark the formal duplicate relationship, assign contributors, or close the issue.
 
 ## ChatGPT and other agents
 
