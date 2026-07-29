@@ -75,7 +75,7 @@ A repository-wide indexed search found no existing lane combining:
 4. a first-crossing mechanical-word extremizer;
 5. Denjoy--Koksma control of the exact Collatz remainder.
 
-This is a statement about overlap in the current repository, not a claim of priority in the external literature.
+This is a statement about overlap in the current repository, not a claim of priority in the external literature. Tong Niu's May 2026 preprint is a mandatory nearest neighbor: it already connects finitely enumerated paradoxical ratios with lower convergents, semiconvergents, and a Stern--Brocot mediant. The exact overlap and distinction are recorded in [`LITERATURE_POSITIONING.md`](LITERATURE_POSITIONING.md).
 
 ## Proof architecture
 
@@ -148,6 +148,7 @@ The neighboring Farey cells then imply that the next possible original denominat
 ## Files
 
 - [`PROOF.md`](PROOF.md): standalone definitions, theorem statements, proof, dependency audit, and gap audit.
+- [`LITERATURE_POSITIONING.md`](LITERATURE_POSITIONING.md): nearest-neighbor audit, including Tong Niu's May 2026 preprint.
 - [`../../experiments/X-6701-farey-gate/run.py`](../../experiments/X-6701-farey-gate/run.py): exact rational certificate.
 - [`../../experiments/X-6701-farey-gate/README.md`](../../experiments/X-6701-farey-gate/README.md): command, expected transcript, scope, and limitations.
 - [`../../reports/gpt56-positive-01/2026-07-29-75-positive-coefficient-gate.md`](../../reports/gpt56-positive-01/2026-07-29-75-positive-coefficient-gate.md): append-only session report.
@@ -157,9 +158,10 @@ The neighboring Farey cells then imply that the next possible original denominat
 1. D. Barina, *Improved verification limit for the convergence of the Collatz conjecture*, Journal of Supercomputing 81, 810 (2025), DOI `10.1007/s11227-025-07337-0`.
 2. M. Ansari, *Recursive sufficiency for the Collatz conjecture and computational verification*, NNTDM 31(3), 471--480 (2025), DOI `10.7546/nntdm.2025.31.3.471-480`.
 3. O. Rozier and C. Terracol, *Paradoxical behavior in Collatz sequences*, Discrete Mathematics 349, 115167 (2026), DOI `10.1016/j.disc.2026.115167`; arXiv `2502.00948v5`.
-4. V. Angeltveit, *An improved algorithm for checking the Collatz conjecture for all n<2^N*, arXiv `2602.10466` (2026).
-5. O. Kramer, *Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints*, arXiv `2607.10041` (2026). This is contextual only: it independently emphasizes mechanical critical codes and ordinary-residue compatibility, but no theorem here depends on its experiments.
-6. The classical Denjoy--Koksma inequality for irrational rotations and bounded-variation observables.
+4. T. Niu, *Parity vectors and paradoxical sequences in the accelerated Collatz map*, arXiv `2605.13886` (May 2026). Nearest external neighbor; not a dependency of the proof.
+5. V. Angeltveit, *An improved algorithm for checking the Collatz conjecture for all n<2^N*, arXiv `2602.10466` (2026).
+6. O. Kramer, *Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints*, arXiv `2607.10041` (2026). This is contextual only: it independently emphasizes mechanical critical codes and ordinary-residue compatibility, but no theorem here depends on its experiments.
+7. The classical Denjoy--Koksma inequality for irrational rotations and bounded-variation observables.
 
 ## Remaining critical path
 
