@@ -101,7 +101,7 @@ Thus repository target `SC*` is exactly the coefficient-stopping-time conjecture
 
 If some fixed `n` has `tau_c(n)=infinity`, then `n in S_N` for every `N`, so `m_N<=n` for every `N` and source escape fails.
 
-Conversely, if `m_N` does not tend to infinity, monotonicity makes it bounded. Since it is integer-valued, it eventually stabilizes at some `n`. Then `n in S_N` for every depth, so `tau_c(n)=infinity`. ∎
+Conversely, if `m_N` does not tend to infinity, monotonicity makes it bounded. Since it is integer-valued, it eventually stabilizes at some `n`. Then `n in S_N` for every sufficiently large depth; nestedness supplies membership at every earlier depth as well, so `tau_c(n)=infinity`. ∎
 
 ## 4. Transfer from ordinary convergence certificates
 
@@ -146,10 +146,12 @@ T_w(x)=\frac{3^q x+A_w}{2^N}.
 A fixed positive integer `n` realizes `w` through depth `N` exactly when
 
 \[
-v_2(3^q n+A_w)\ge N
+v_2(3^q n+A_w)\ge N.
 \]
 
-and the induced parity prefix is `w`. Thus SC* is also equivalent to the fixed-source statement:
+Indeed, this congruence has one residue class modulo `2^N` because `3^q` is invertible modulo `2^N`; its canonical solution is `r_w`, and the finite parity-cylinder bijection says precisely that this residue class follows `w`.
+
+Thus SC* is also equivalent to the fixed-source statement:
 
 > For every fixed positive integer `n`, there is a finite bound on the length of an all-supercritical word `w` satisfying `v_2(3^{q(w)}n+A_w)>=|w|`.
 
@@ -193,8 +195,27 @@ Equivalently, it suffices to prove
 v_2(3^{q(w)}n+A_w)<|w|
 \]
 
-for all all-supercritical `w` beyond a source-dependent finite threshold. A uniform effective `Phi` would immediately yield the quantitative inverse lower bound
+for all all-supercritical `w` beyond a source-dependent finite threshold.
+
+For a quantitative inverse statement define the monotone envelope
 
 \[
-m_N>\max\{B:\Phi(B)\le N\}.
+\widehat\Phi(B)=\max_{1\le n\le B}\Phi(n).
 \]
+
+Then
+
+\[
+N\ge\widehat\Phi(B)
+\quad\Longrightarrow\quad
+m_N>B,
+\]
+
+and hence
+
+\[
+m_N>
+\max\{B:\widehat\Phi(B)\le N\}.
+\]
+
+The earlier shorthand `Phi(B)` is valid only when `Phi` has first been chosen nondecreasing.
