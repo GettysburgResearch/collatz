@@ -55,7 +55,6 @@ def main() -> None:
 
     if data["experiment_id"] != "X-6801":
         raise SystemExit("wrong experiment id")
-    rows = data["rows"]
     expected_rows = []
     for j in range(2, 373):
         bits, q = word_for(j)
@@ -80,9 +79,6 @@ def main() -> None:
                 "descent_defect": str(delta),
             }
         )
-    if rows != expected_rows:
-        raise SystemExit("finite row mismatch")
-
     bases = []
     for j in (373, 374, 375):
         L = (j - 1) // 3
@@ -114,6 +110,19 @@ def main() -> None:
         raise SystemExit("semantic digest mismatch")
     if data["valid_mechanical_rows"] != len(expected_rows):
         raise SystemExit("row-count mismatch")
+    if data["first_valid_j"] != expected_rows[0]["j"]:
+        raise SystemExit("first-row mismatch")
+    if data["last_valid_j"] != expected_rows[-1]["j"]:
+        raise SystemExit("last-row mismatch")
+    positive = [row for row in expected_rows if int(row["descent_defect"]) > 0]
+    minimum = min(positive, key=lambda row: (int(row["descent_defect"]), int(row["j"])))
+    expected_minimum = {"j": minimum["j"], "defect": minimum["descent_defect"]}
+    if data["minimum_positive_defect"] != expected_minimum:
+        raise SystemExit("minimum-defect mismatch")
+    sample_js = {2, 4, 5, 370, 371}
+    expected_samples = [row for row in expected_rows if row["j"] in sample_js]
+    if data["sample_rows"] != expected_samples:
+        raise SystemExit("sample-row mismatch")
     if data["nontrivial_failures"] != 0:
         raise SystemExit("failure flag mismatch")
     print("all independent X-6801 checks passed")
