@@ -1,8 +1,6 @@
 name: Independent verification or refutation
 description: Reconstruct, challenge, or reproduce a claim
 title: "[Verify] "
-labels:
-  - verification wanted
 body:
   - type: input
     id: claim
