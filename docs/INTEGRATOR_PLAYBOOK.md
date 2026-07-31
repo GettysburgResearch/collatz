@@ -22,7 +22,7 @@ theorem may be integrated without being mathematically promoted.
 
 The integrator should preserve:
 
-- open expeditions and direct attacks on Collatz;
+- direct proof-side and disproof-side attacks on Collatz;
 - large multi-session research programs;
 - long-lived PRs;
 - independent parallel attempts;
@@ -33,7 +33,35 @@ The integrator should preserve:
 
 The integrator may request structure, provenance, scope, and reviewability. The
 integrator should not reject work merely because it is ambitious,
-unconventional, connected to an open problem, or outside the current roadmap.
+unconventional, connected to an open problem, or outside the historical backlog.
+
+## Review wave before the first canonical integration
+
+The first integration must not rely only on the preliminary July backlog. Before
+integration:
+
+1. refresh every open PR and exact head SHA;
+2. ask active agents to finish and push outstanding work;
+3. include newer proof-side work alongside disproof-side work;
+4. commission broad reviews across major threads;
+5. prioritize global claims, reused dependencies, source-dependent results, and
+   large computational certificates;
+6. preserve independent derivations and conflicting verdicts.
+
+The review wave does not require every PR to become fully verified. Its purpose
+is to supply enough evidence to distinguish:
+
+```text
+integrate as research record
+promote a mathematical claim
+narrow or correct a claim
+request more review
+leave an active program open
+archive or supersede a packet
+```
+
+Every review freezes an exact source SHA and records the first unsupported
+inference or a precise within-scope verdict.
 
 ## Initial two-sweep cadence
 
@@ -296,12 +324,21 @@ For cycle work, check:
 
 Proper factors and near-integrality are not cycle closure.
 
+For proof-side work, check:
+
+- the exact standard Collatz formulation;
+- equivalence of any alternate map;
+- complete coverage of positive integers;
+- all boundary and exceptional cases;
+- whether local descent or density statements imply global termination;
+- whether a probabilistic or average statement is being used universally.
+
 ## State update
 
 `STATE.md` should distinguish:
 
 - `INDEPENDENTLY_VERIFIED` and `PROVED` foundations;
-- proposed programs;
+- proposed proof-side and disproof-side programs;
 - exact finite computations;
 - source-dependent claims;
 - refutations and scope narrowings;
@@ -398,10 +435,10 @@ The first integration objective is not to choose a winning mathematics branch.
 It is to create:
 
 - a trustworthy public operating system;
-- a frozen dependency-aware backlog;
+- a refreshed dependency-aware backlog;
 - a canonical integrated state;
-- a claim registry;
+- a practical claim registry;
 - a visible review queue;
-- active open expeditions;
+- active proof-side and disproof-side expeditions;
 - reliable contribution and artifact paths;
 - protected integration authority.
