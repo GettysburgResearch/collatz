@@ -24,36 +24,92 @@ T-6906  bank--complexity repeated-factor ceiling
 
 L-6907  exact one-wrap law for nonmechanical failures
 L-6908  dual defect residue and unique late canonical candidate
-L-6909  shifted full-denominator equation
+L-6909  universal shifted full-denominator classification
+R-6910  start/endpoint notation correction
+T-6911  polynomial sparsity of all non-descending first crossings
 
 T-6907  all-repetition single-pulse positive near-return exclusion
 X-6901  exact post-Matveev and finite-case verifier
 ```
 
-## Current global reduction
+## Universal shifted equation
 
-For a sufficiently late first-crossing word `w` of length `j`, weight `q`, and numerator `A_w`, every non-descending positive start is its canonical root and satisfies
+For **every** first-crossing word `w` of length `j`, weight `q`, and numerator `A_w`, let `x` be a positive realization and put
+
+\[
+y=T_w(x)=x+d.
+\]
+
+Then
 
 \[
 \boxed{
-A_w=n(2^j-3^q)+d3^q,
-\qquad
-0\le d<j/2,
-\qquad
-T^j(n)=n+d.}
+A_w=x(2^j-3^q)+d2^j
+=y(2^j-3^q)+d3^q.}
 \]
 
-The cases are:
+Therefore the requested equation
 
-```text
-d=0:
-  positive cycle;
+\[
+\boxed{
+A_w=n(2^j-3^q)+d3^q}
+\]
 
-d>0:
-  coefficient-stopping-time failure.
-```
+is correct when `n` denotes the **endpoint** `y`; the starting value is `n-d`.
 
-Thus the cycle and delayed-crossing lanes are one shifted full-denominator problem.
+If `n` denotes the start, the correct coefficient of `d` is `2^j`.
+
+No bank, entropy, periodicity, aperiodicity, pulse, or lateness assumption enters this identity.
+
+For a non-descending realization,
+
+\[
+\boxed{
+0\le d<\frac{A_w}{2^j}<\frac q3<\frac j3.}
+\]
+
+The displacement is the short full-denominator residue
+
+\[
+d\equiv A_w3^{-q}\pmod{2^j-3^q}.
+\]
+
+## Polynomial sparsity at arbitrary bank
+
+Let `E_j` be the complete set of length-`j` first-crossing words having some positive non-descending realization.
+
+With
+
+\[
+\lambda_j=j\log2-q\log3,
+\]
+
+`T-6911` proves the exact source-free count
+
+\[
+\boxed{
+|E_j|
+<
+\frac{j}{3(1-e^{-\lambda_j})}
+\le
+\frac{2j}{3\lambda_j}.}
+\]
+
+Under a reviewed effective Baker/Matveev lower bound
+
+\[
+\lambda_j\ge c_0j^{-\mu},
+\]
+
+this becomes
+
+\[
+\boxed{|E_j|=O(j^{\mu+1}).}
+\]
+
+Hence the entire exceptional language has zero exponential growth and every member is describable from one polynomial-sized ordinary start using `O(log j)` bits.
+
+This closes positive **family entropy** with no bank restriction. It does not by itself bound the internal subword complexity of one exceptional word.
 
 ## Exact envelope reduction
 
@@ -94,24 +150,24 @@ G_j=
 
 ## Infinite regions already removed
 
-Subject to the declared logarithmic-form input, an unbounded acyclic canonical-failure family cannot have:
+Subject to the declared logarithmic-form input, an unbounded acyclic canonical-failure family cannot have
 
 ```text
-logarithmic coefficient bank + uniformly zero factor entropy;
+logarithmic coefficient bank + uniformly zero internal factor entropy;
 ```
 
 or, more generally,
 
 ```text
-polynomial factor complexity degree s
+polynomial internal factor complexity degree s
 + bank o(j^(1/s)).
 ```
 
-In particular, every uniformly linear-complexity cofinal failure family needs a genuinely linear bank.
+In addition, `T-6911` shows that the collection of all failures at a fixed length is only polynomially large, even when the bank is linear or larger.
 
-## New all-repetition closure
+## One-pulse closure
 
-For a one-pulse lift of either known negative accelerated cycle, arbitrary repetition and rotation, a positive near-return `n -> n+d` gives
+For a one-pulse lift of either known negative accelerated cycle, arbitrary repetition and rotation, a positive near-return gives
 
 \[
 D\mid g(2^\delta-1)-3d,
@@ -119,33 +175,32 @@ D\mid g(2^\delta-1)-3d,
 0<D\le g(2^\delta-1).
 \]
 
-The same Matveev/continued-fraction architecture as the cycle theorem, with enlarged exact constants, excludes every repetition. `X-6901` closes the finite small cases.
-
-The sole hit is
+The Matveev/continued-fraction architecture excludes every repetition, subject to source reconstruction. The sole hit is the trivial cycle
 
 ```text
 (1,2) -> (2,2),
-n=1,
+start=endpoint=1,
 d=0.
 ```
 
 ## Remaining frontier
 
-The unrestricted target is now:
+The unrestricted target is now a polynomially sparse sequence of high-bank, potentially high internal-factor-complexity, genuinely nonperiodic words satisfying
 
-```text
-exclude
-A_w=n(2^j-3^q)+d3^q,
-0<=d<j/2,
-```
+\[
+\boxed{
+A_w
+=n(2^j-3^q)+d3^q,
+\qquad
+0\le d<j/3,}
+\]
 
-for arbitrary high-bank, positive-entropy, genuinely aperiodic first-crossing words.
+where `n` is the endpoint and the start is `n-d`.
 
 Equivalent scalar form:
 
 ```text
-prove m_(j-1)^sup > F_j
-cofinally.
+prove m_(j-1)^sup > F_j cofinally.
 ```
 
-The one-pulse negative-cycle class, low-complexity/subcritical-bank classes, noncanonical lifts, and compactness shortcuts are closed by the current stack.
+The remaining issue is sparsity versus emptiness: a residue-avoidance, return, or full-denominator theorem must eliminate the final thin exceptional sequence.
