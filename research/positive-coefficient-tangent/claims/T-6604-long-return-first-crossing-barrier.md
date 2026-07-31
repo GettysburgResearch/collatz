@@ -1,10 +1,10 @@
 # T-6604 — long returns force a large coefficient bank at first crossing
 
 **Claim ID:** `T-6604`  
-**Status:** **PROPOSED / SOURCE-DEPENDENT**  
+**Status:** **PROPOSED**; Section 6 is **SOURCE-DEPENDENT**  
 **Authoring agent:** `gpt56-positive-tangent-01`  
 **Created:** 2026-07-31  
-**Dependencies:** elementary shortcut-Collatz affine algebra; a standard effective Baker lower bound for the nonzero form `j log 2-q log 3`  
+**Dependencies:** elementary shortcut-Collatz affine algebra; only the polynomial corollary in Section 6 uses an effective Baker lower bound  
 **Scope:** finite positive ordinary first-coefficient-crossing segments whose endpoint does not descend  
 
 ## 1. Statement
@@ -44,7 +44,11 @@ x_j\ge n.
 Put
 
 \[
-B=\max_{0\le t<j}D_t.
+B=\max_{0\le t<j}D_t,
+\qquad
+q=q_j,
+\qquad
+\lambda=j\log2-q\log3>0.
 \tag{3}
 \]
 
@@ -62,35 +66,33 @@ x_a\ne x_b.
 \tag{5}
 \]
 
-There are effective absolute constants
-
-\[
-c_0>0,\qquad \mu>0,
-\]
-
-coming only from the two logarithms `log 2` and `log 3`, such that
+Then the following exact return-gap inequality holds:
 
 \[
 \boxed{
 2^L+1
-\le
-3^B\left(c_0^{-1}j^{\mu+1}+{j\over2}\right).}
+<
+3^B\left({j\over\lambda}+{j\over2}\right).}
 \tag{6}
 \]
 
-In particular,
+Equivalently, whenever
+
+\[
+3^{-B}(2^L+1)>{j\over2},
+\]
+
+one necessarily has
 
 \[
 \boxed{
-L
-\le
-B\log_2 3
- +(\mu+1)\log_2j
- +\log_2(c_0^{-1}+1/2).}
+\lambda
+<
+{j\over 3^{-B}(2^L+1)-j/2}.}
 \tag{7}
 \]
 
-Thus a repeated long factor is impossible unless its dyadic length is paid for by coefficient-bank height or by the polynomial Baker allowance.
+Thus a long repeated factor forces the first coefficient gap itself to be exponentially small unless it is paid for by a large coefficient bank `B`.
 
 ## 2. Dyadic separation of the repeated factor
 
@@ -147,24 +149,17 @@ x_t\le3^B\left(n+{t\over2}\right)
 The two positive integers in `(8)` both lie below the right side of `(10)`. Their difference is at least `2^L`, so their maximum is at least `2^L+1`. Hence
 
 \[
+\boxed{
 2^L+1
-\le3^B\left(n+{j\over2}\right).
+\le3^B\left(n+{j\over2}\right).}
 \tag{11}
 \]
 
 This lower bound is placed on the same ordinary start `n` that appears in the no-descent inequality.
 
-## 4. First crossing gives a polynomial upper bound for the start
+## 4. First crossing gives an exact gap-dependent upper bound
 
-Put
-
-\[
-q=q_j,
-\qquad
-\lambda=j\log2-q\log3>0.
-\]
-
-The final crossing step must be even. Therefore its exact affine formula is
+The final crossing step must be even. Therefore the exact affine endpoint is
 
 \[
 x_j=e^{-\lambda}n+E_j,
@@ -192,7 +187,7 @@ n(1-e^{-\lambda})<{j\over2}.
 \tag{13}
 \]
 
-First crossing also gives `0<lambda<=log 2`, and on this interval
+First crossing gives `0<lambda<=log 2`. On this interval,
 
 \[
 1-e^{-\lambda}\ge{\lambda\over2}.
@@ -201,33 +196,86 @@ First crossing also gives `0<lambda<=log 2`, and on this interval
 Thus
 
 \[
-n<{j\over\lambda}.
+\boxed{n<{j\over\lambda}.}
 \tag{14}
 \]
 
-A standard effective Baker theorem for two logarithms supplies constants `c_0,mu` such that every nonzero
+Combining `(11)` and `(14)` proves `(6)`, and rearrangement proves `(7)`. No external theorem enters this core implication.
+
+## 5. Farey/Ostrowski decision interface
+
+Inequality `(7)` is designed to consume an exact lower bound for the particular gap
 
 \[
-j\log2-q\log3
+\lambda=j\log2-q\log3.
 \]
 
-with `0<=q<=j` satisfies
+For example, if a Farey cell, continued-fraction row, or Ostrowski decomposition proves
 
 \[
-\lambda\ge c_0j^{-\mu}.
+\lambda\ge\lambda_0>0,
+\]
+
+then the word is excluded as soon as
+
+\[
+\boxed{
+2^L+1
+\ge
+3^B\left({j\over\lambda_0}+{j\over2}\right).}
 \tag{15}
 \]
 
-Equations `(14)--(15)` yield
+This couples the two newest positive mechanisms directly:
+
+```text
+Diophantine distance of the first crossing
+        versus
+ordinary dyadic height forced by symbolic recurrence.
+```
+
+Unlike a global Baker estimate, `(15)` can be sharp on one exact continued-fraction block and can be checked with rational logarithm intervals.
+
+## 6. Source-dependent uniform polynomial corollary
+
+A standard effective Baker theorem for the multiplicatively independent numbers `2` and `3` supplies effective constants
 
 \[
-\boxed{n<c_0^{-1}j^{\mu+1}.}
+c_0>0,\qquad \mu>0,
+\]
+
+such that every nonzero form with `0<=q<=j` satisfies
+
+\[
+\lambda=j\log2-q\log3\ge c_0j^{-\mu}.
 \tag{16}
 \]
 
-Combining `(11)` and `(16)` proves `(6)`, and `(7)` follows because `mu>=0` may be assumed.
+Substitution into `(6)` yields
 
-## 5. Asymptotic return barrier
+\[
+\boxed{
+2^L+1
+\le
+3^B\left(c_0^{-1}j^{\mu+1}+{j\over2}\right),}
+\tag{17}
+\]
+
+and hence
+
+\[
+\boxed{
+L
+\le
+B\log_2 3
+ +(\mu+1)\log_2j
+ +\log_2(c_0^{-1}+1/2).}
+\tag{18}
+\]
+
+Only `(16)--(18)` are source-dependent.
+
+## 7. Asymptotic return barrier
 
 Consider any family of such acyclic no-descent first crossings with lengths `j_r->infinity`, maximum proper-prefix banks `B_r`, and repeated-factor lengths `L_r`.
 
@@ -238,10 +286,10 @@ L_r\log2
  -B_r\log3
  -(\mu+1)\log j_r
 \longrightarrow+\infty,
-\tag{17}
+\tag{19}
 \]
 
-then `(6)` is eventually impossible. Hence no such family exists.
+then `(17)` is eventually impossible. Hence no such family exists.
 
 A particularly useful consequence is:
 
@@ -251,14 +299,14 @@ B_r=o(j_r)
 \quad\Longrightarrow\quad
 L_r=o(j_r)
 }
-\tag{18}
+\tag{20}
 \]
 
 for the longest repeated parity factor of every surviving family.
 
 Thus a late first crossing with sublinear coefficient bank must become asymptotically recurrence-poor: it cannot contain two copies of any factor occupying a fixed positive fraction of its total length.
 
-## 6. Canonical first-crossing consequence
+## 8. Canonical first-crossing consequence
 
 For a first-crossing word `w` of length `j`, let `r^+(w)` be its least positive parity-cylinder representative and put
 
@@ -266,7 +314,15 @@ For a first-crossing word `w` of length `j`, let `r^+(w)` be its least positive 
 y^+(w)=T^j(r^+(w)).
 \]
 
-The exact target
+Its affine identity gives
+
+\[
+(2^j-3^q)r^+(w)-A_w
+=2^j\bigl(r^+(w)-y^+(w)\bigr).
+\tag{21}
+\]
+
+Therefore the exact target
 
 \[
 r^+(w)>{A_w\over2^j-3^q}
@@ -278,7 +334,7 @@ is equivalent to
 r^+(w)>y^+(w).
 \]
 
-If this target fails, the canonical representative itself satisfies the no-descent hypothesis `(2)`. Therefore every non-cycle counterexample to the target must obey the return barrier `(6)--(7)`.
+If this target fails, the canonical representative itself satisfies the no-descent hypothesis `(2)`. Therefore every non-cycle counterexample to the target must obey `(6)--(7)`, and source-conditionally `(17)--(18)`.
 
 Consequently, any unbounded family of target failures must choose at least one of the following escape mechanisms:
 
@@ -286,26 +342,28 @@ Consequently, any unbounded family of target failures must choose at least one o
 coefficient bank B comparable to the repeated-factor scale;
 longest repeated factor o(j);
 a repeated physical state, hence a positive cycle;
-or failure of the Baker/source dependency.
+or an exceptionally small first-crossing logarithmic gap satisfying (7).
 ```
 
 This is a direct narrowing of the delayed-crossing blocker, not a finite prefix census.
 
-## 7. Families eliminated
+## 9. Families eliminated
 
-The theorem excludes every unbounded no-descent first-crossing family for which
+The source-dependent corollary excludes every unbounded no-descent first-crossing family for which
 
 - the proper-prefix bank is sublinear in `j`; and
 - a repeated factor has length at least `delta*j` for some fixed `delta>0`.
 
-This includes, once their return constants are supplied, bounded-bank families generated by primitive substitutions, linearly recurrent systems, Sturmian/mechanical systems, and bounded-distortion finite-state codings with linear-size repeated supertiles.
+The exact core `(15)` can eliminate much broader finite or cofinal families whenever their Diophantine gaps are certified explicitly.
 
-The conclusion is family-local: no blanket claim about every substitution or transducer is made without checking the stated return hypothesis.
+The asymptotic conclusion includes, after their return constants are checked, bounded-bank families generated by primitive substitutions, linearly recurrent systems, Sturmian/mechanical systems, and bounded-distortion finite-state codings with linear-size repeated supertiles.
 
-## 8. Gap audit
+No blanket claim about every substitution or transducer is made without verifying the stated return hypothesis.
+
+## 10. Gap audit
 
 - The theorem does not exclude high-bank, recurrence-poor first-crossing words.
-- The Baker constants are not instantiated numerically; source reconstruction is required before promotion.
+- The Baker constants in Section 6 are not instantiated numerically; source reconstruction is required before promoting that corollary.
 - If `x_a=x_b`, the segment contains a positive cycle and must be handled by the full-denominator cycle lane.
 - The theorem does not prove the universal canonical descent inequality.
-- It nevertheless closes a complete asymptotic class with growing lengths, rather than one bounded Farey cell.
+- It nevertheless closes a complete asymptotic class with growing lengths and supplies an exact Farey-compatible gate for further exclusions.
