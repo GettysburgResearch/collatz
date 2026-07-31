@@ -1,0 +1,106 @@
+{
+  "experiment_id": "X-6912",
+  "first_single_prime_power_strategy_failure": {
+    "D": 5077565,
+    "cases": [
+      {
+        "A": 368971243,
+        "canonical_descent_defect": 2031024,
+        "canonical_displacement": -2031024,
+        "canonical_endpoint": 51656087,
+        "canonical_source": 53687111,
+        "displaced_support": 10,
+        "first_departure": 2,
+        "first_proper_block_witness": {
+          "components": [5, 71],
+          "factor_count": 2,
+          "modulus": 355,
+          "residue": 286
+        },
+        "integrated_displacement": 11,
+        "prime_power_residues": [
+          {"modulus": 5, "residue": 1},
+          {"modulus": 71, "residue": 2},
+          {"modulus": 14303, "residue": 2}
+        ],
+        "threshold": {"denominator": 134217728, "numerator": 368971243},
+        "word": "111010111011101010101101100"
+      },
+      {
+        "A": 264503755,
+        "canonical_descent_defect": 2317085,
+        "canonical_displacement": -2317085,
+        "canonical_endpoint": 58931594,
+        "canonical_source": 61248679,
+        "displaced_support": 12,
+        "first_departure": 2,
+        "first_proper_block_witness": {
+          "components": [5, 14303],
+          "factor_count": 2,
+          "modulus": 71515,
+          "residue": 42910
+        },
+        "integrated_displacement": 25,
+        "prime_power_residues": [
+          {"modulus": 5, "residue": 0},
+          {"modulus": 71, "residue": 0},
+          {"modulus": 14303, "residue": 1}
+        ],
+        "threshold": {"denominator": 134217728, "numerator": 264503755},
+        "word": "111011011100111111101010000"
+      },
+      {
+        "A": 352383011,
+        "canonical_descent_defect": 1015513,
+        "canonical_displacement": -1015513,
+        "canonical_endpoint": 25828102,
+        "canonical_source": 26843615,
+        "displaced_support": 9,
+        "first_departure": 2,
+        "first_proper_block_witness": {
+          "components": [5, 71],
+          "factor_count": 2,
+          "modulus": 355,
+          "residue": 142
+        },
+        "integrated_displacement": 16,
+        "prime_power_residues": [
+          {"modulus": 5, "residue": 2},
+          {"modulus": 71, "residue": 0},
+          {"modulus": 14303, "residue": 0}
+        ],
+        "threshold": {"denominator": 134217728, "numerator": 352383011},
+        "word": "111110011111010100011011010"
+      }
+    ],
+    "count": 3,
+    "j": 27,
+    "prime_powers": [5, 71, 14303],
+    "q": 17
+  },
+  "max_length": 27,
+  "nontrivial_canonical_failures": 0,
+  "rows": [
+    {"D": 1, "j": 2, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [], "q": 1, "word_count": 1},
+    {"D": 7, "j": 4, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [7], "q": 2, "word_count": 1},
+    {"D": 5, "j": 5, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [5], "q": 3, "word_count": 2},
+    {"D": 47, "j": 7, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [47], "q": 4, "word_count": 3},
+    {"D": 13, "j": 8, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [13], "q": 5, "word_count": 7},
+    {"D": 295, "j": 10, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [5, 59], "q": 6, "word_count": 12},
+    {"D": 1909, "j": 12, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [23, 83], "q": 7, "word_count": 30},
+    {"D": 1631, "j": 13, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [7, 233], "q": 8, "word_count": 85},
+    {"D": 13085, "j": 15, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [5, 2617], "q": 9, "word_count": 173},
+    {"D": 6487, "j": 16, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [13, 499], "q": 10, "word_count": 476},
+    {"D": 84997, "j": 18, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [11, 7727], "q": 11, "word_count": 961},
+    {"D": 517135, "j": 20, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [5, 59, 1753], "q": 12, "word_count": 2652},
+    {"D": 502829, "j": 21, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [502829], "q": 13, "word_count": 8045},
+    {"D": 3605639, "j": 23, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [79, 45641], "q": 14, "word_count": 17637},
+    {"D": 2428309, "j": 24, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [13, 186793], "q": 15, "word_count": 51033},
+    {"D": 24062143, "j": 26, "no_single_prime_power_witness": 0, "nontrivial_failures": 0, "prime_powers": [7, 233, 14753], "q": 16, "word_count": 108950},
+    {"D": 5077565, "j": 27, "no_single_prime_power_witness": 3, "nontrivial_failures": 0, "prime_powers": [5, 71, 14303], "q": 17, "word_count": 312455}
+  ],
+  "semantic_sha256": "c815dd97651f4559f8bb45c6709a45df783ce5f7f825b2454323d937aea20d85",
+  "status": "EXACT FINITE REGRESSION / NOT AN ALL-j PROOF",
+  "total_first_crossing_words": 502523,
+  "valid_lengths": [2, 4, 5, 7, 8, 10, 12, 13, 15, 16, 18, 20, 21, 23, 24, 26, 27]
+}
