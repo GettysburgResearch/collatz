@@ -6,6 +6,10 @@ The repository may contain many branches, reports, drafts, overlapping
 namespaces, and independent reviews. The claim registry records the current
 integrated status without erasing research history.
 
+The first integration pass will determine the practical canonical file layout
+and machine-readable schema. Until then, preserve existing IDs and exact source
+SHAs rather than forcing every historical branch into a premature format.
+
 ## Claim kinds and prefixes
 
 ```text
@@ -29,9 +33,7 @@ Claim IDs should not be silently renumbered after publication. When historical
 branches collide, the integrator records aliases or assigns a canonical ID while
 preserving the original branch-qualified identifier.
 
-## Two separate dimensions
-
-### Record status
+## Record status
 
 ```text
 DRAFT
@@ -39,7 +41,7 @@ INTEGRATED
 ARCHIVED
 ```
 
-### Primary mathematical status
+## Primary mathematical status
 
 Retain the project's established vocabulary:
 
@@ -68,7 +70,7 @@ Meanings:
   known;
 - `SUPERSEDED` — replaced by a clearer, corrected, or stronger formulation.
 
-### Orthogonal qualifiers
+## Orthogonal qualifiers
 
 ```text
 CONDITIONAL
@@ -99,9 +101,25 @@ and has undergone a statement-to-mathematics translation audit.
 A merged pull request does not automatically change mathematical status.
 Artifact integration and claim promotion are separate decisions.
 
-## Required fields
+## Minimum claim metadata
 
-See `index.example.yaml`.
+Until the first integration pass settles the canonical schema, durable claim
+files should record at least:
+
+```text
+Claim ID
+Title
+Primary status
+Qualifiers
+Authoring agent or contributor
+Starting commit
+Exact statement
+Scope
+Dependencies
+Evidence and review links
+Known uncertainty
+Current blocker or next attack
+```
 
 ## Resolution candidates
 
