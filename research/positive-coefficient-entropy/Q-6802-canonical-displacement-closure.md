@@ -83,7 +83,45 @@ conjecture. The least-counterexample form is narrower and sufficient.
 
 `SC+FC` imply Collatz.
 
-## 3. One cofinal envelope would close both
+## 3. Positive cycles are already inside FC
+
+`L-6814` proves that every nontrivial positive cycle, rotated to its minimum
+and stopped at its first coefficient crossing, produces a **canonical**
+first-crossing failure
+
+\[
+s_w\ge r_w.
+\]
+
+Indeed, if the cycle minimum is a higher lift
+
+\[
+n=r_w+t2^j,
+\]
+
+then
+
+\[
+T^j(n)-n
+=(s_w-r_w)-t(2^j-3^q)\ge0
+\]
+
+forces `s_w-r_w>=0` already at the canonical member.
+
+Thus FC contains both:
+
+```text
+Delta=0:
+  a canonical positive-cycle word;
+
+Delta>0:
+  an acyclic canonical near-return.
+```
+
+A complete proof of FC automatically excludes nontrivial positive cycles.
+No third cycle hypothesis is needed in the final implication.
+
+## 4. One cofinal envelope would close both
 
 Let
 
@@ -130,10 +168,9 @@ The repository currently has no cofinal lower bound on `m_N^sup` at this
 Diophantine scale. The envelope fusion is exact, but it does not by itself
 prove source escape.
 
-## 4. What is now closed in FC
+## 5. What is now closed in the acyclic part of FC
 
-The present branch and PR #83 jointly close the following sectors, modulo the
-explicit positive-cycle level.
+The present branch and PR #83 jointly close the following sectors.
 
 ### Mechanical representative
 
@@ -148,19 +185,22 @@ every valid j>2:
   unless its finite segment contains a nontrivial positive cycle.
 ```
 
+By `L-6814`, that retained cycle branch is itself another canonical FC
+failure and remains inside the unified full-denominator target below.
+
 ### No-wrap nonmechanical sector
 
 The clean `69xx` mechanical-wrap theorem on PR #83 supersedes closed PR #82
 and proves that every no-wrap displacement has a strictly larger descent
-defect than the mechanical representative. Thus all acyclic no-wrap words
-descend.
+defect than the mechanical representative. Thus every surviving
+nonmechanical canonical failure is a genuine wrap.
 
 ### Low-complexity and sparse-repair sectors
 
 `T-6803/T-6805/T-6807` exclude bounded-bank linear-complexity,
 sub-square-root swap-area, and sub-`j^(2/3)` integrated-displacement families.
 
-`L-6811/T-6810` now strengthen the support side:
+`L-6811/T-6810` strengthen the support side for acyclic failures:
 
 \[
 \boxed{
@@ -170,10 +210,10 @@ sub-square-root swap-area, and sub-`j^(2/3)` integrated-displacement families.
 \alpha={\log2\over\log3}.}
 \]
 
-Thus every fixed-support, polylogarithmic-support, and `o(sqrt(j))` repair
-family is excluded.
+Thus every fixed-support, polylogarithmic-support, and `o(sqrt(j))` acyclic
+repair family is excluded.
 
-## 5. Exact geometry of any surviving acyclic FC obstruction
+## 6. Exact geometry of any surviving acyclic FC obstruction
 
 Let `v_j` be an unbounded family of acyclic canonical target failures. It must
 satisfy all of the following.
@@ -244,9 +284,9 @@ with
 \]
 
 in the acyclic case. The source is `(A-2^j d)/D`; the endpoint is
-`(A-3^q d)/D`. The level `d=0` is the positive-cycle case.
+`(A-3^q d)/D`.
 
-## 6. Lossless complete-prime-power target
+## 7. Lossless complete-prime-power target
 
 Factor
 
@@ -256,7 +296,7 @@ D=2^j-3^q=\prod_sQ_s,
 h_s=\operatorname{ord}_{Q_s}(2).
 \]
 
-`L-6809` proves that one exact ordinary first-crossing near-return is
+`L-6809` proves that one exact ordinary first-crossing non-descent is
 equivalent to the complete tuple:
 
 ```text
@@ -271,21 +311,25 @@ equivalent to the complete tuple:
 An order-cover subset may decode the word but does not certify omitted prime
 powers. A proper-factor hit is not a near-return.
 
-Therefore the exact unresolved finite-crossing theorem is:
+The exact unresolved finite-crossing theorem is therefore:
 
 \[
 \boxed{
 \begin{array}{c}
-\text{No square-root-supported, early-departing wrapped excess path}\\
-\text{passes every complete prime-power equation with one common}\\
-0<d<q/3\text{ and the first-crossing/canonical gates.}
+\text{Apart from the trivial word }10,\text{ no complete first-crossing tuple}\\
+\text{passes every prime-power equation with one common }0\le d<q/3\\
+\text{and all first-crossing/canonical gates.}
 \end{array}}
 \tag{FC*}
 \]
 
-Together with no nontrivial positive cycle, `(FC*)` proves `(FC)`.
+For `d>0`, every unbounded acyclic family is additionally subject to the
+wrap, early-departure, two-thirds-displacement, and square-root-support
+restrictions in Section 6. For `d=0`, `(FC*)` is the positive-cycle equation.
 
-## 7. Exact state of SC
+Thus `(FC*)` proves FC in full, including nontrivial cycle exclusion.
+
+## 8. Exact state of SC
 
 For a hypothetical fixed ordinary all-time-supercritical root, `L-6805`
 gives
@@ -326,23 +370,23 @@ remains
 \tag{SC*}
 \]
 
-## 8. Complete positive implication
+## 9. Complete positive implication
 
-Assume `(SC*)`, `(FC*)`, and absence of nontrivial positive cycles. If Collatz
-were false, let `n` be its least positive counterexample.
+Assume `(SC*)` and `(FC*)`. If Collatz were false, let `n` be its least
+positive counterexample.
 
 - `(SC*)` excludes infinite coefficient stopping time.
 - At the finite first crossing, minimality gives no descent and all
   least-counterexample admissibility conditions.
-- The canonical word must supply either a positive cycle or the acyclic tuple
-  excluded by `(FC*)`.
+- The canonical word supplies a nontrivial complete tuple forbidden by
+  `(FC*)`, whether its displacement is zero or positive.
 
-Both alternatives are impossible. Hence no least counterexample exists.
+Contradiction. Hence no least counterexample exists.
 
 Equivalently, the stronger cofinal envelope theorem `(E)`, together with the
-finite and cycle checks, would close both lanes at once.
+finite trivial-cycle audit, would close both lanes at once.
 
-## 9. What does not count
+## 10. What does not count
 
 The following do not close the target:
 
@@ -355,10 +399,11 @@ physical growth after assuming an ordinary root;
 measure-zero exceptional sets;
 high factor complexity without canonical source control;
 a compatible 2-adic point without Archimedean stabilization;
-confusing the endpoint quotient with the source quotient.
+confusing the endpoint quotient with the source quotient;
+excluding only d>0 while leaving the cycle level d=0.
 ```
 
-## 10. Review boundary
+## 11. Review boundary
 
 Neither `(SC*)` nor `(FC*)` is proved in this file. `Q-6802` records the
 smallest exact remaining objects after the current exclusions and prevents
