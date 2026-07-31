@@ -7,7 +7,7 @@
 
 ## 1. Rozier--Terracol is the live paradoxical-sequence source
 
-Olivier Rozier and Claude Terracol, *Paradoxical behavior in Collatz sequences*, arXiv:2502.00948v5, now has journal reference
+Olivier Rozier and Claude Terracol, *Paradoxical behavior in Collatz sequences*, arXiv:2502.00948v5, has journal reference
 
 ```text
 Discrete Mathematics 349 (2026), 115167.
@@ -23,11 +23,11 @@ Its relevant contributions are:
 
 The paper does **not** prove that paradoxical sequences are finite. Therefore it does not close Lane B.
 
-Native `T-6502` uses the same exact correction product, but adds the ordinary distinct-source specialization needed by a least-counterexample or one-period cycle segment.
+Native `T-6502` uses the same correction product, but adds the ordinary distinct-source specialization needed by a least-counterexample or one-period cycle segment.
 
 ## 2. The May 2026 Niu note is withdrawn
 
-Tong Niu, arXiv:2605.13886, is marked withdrawn in version 2. The withdrawal comment says that Rozier--Terracol v4 already contains the relevant enumeration and seven `(j,q)` pairs, and that the additional mediant observation follows routinely from their data.
+Tong Niu, arXiv:2605.13886, is marked withdrawn in version 2. The withdrawal comment says that Rozier--Terracol already contains the relevant enumeration and that the additional mediant observation follows from their data.
 
 Accordingly:
 
@@ -41,15 +41,15 @@ Any useful parity-cylinder formula is reconstructed directly or cited to Terras/
 
 Vigleik Angeltveit, arXiv:2602.10466, gives a faster exact algorithm for verifying all starts below `2^N`, with less than a factor-two additional running time per added bit according to the abstract.
 
-PR #76 also imports an all-prefix ballot/descent constraint from the paper. That constraint is valuable for narrowing a least counterexample, but it remains a necessary condition. A finite verification algorithm, however efficient, does not by itself prove that one unbounded exceptional orbit cannot exist.
+PR #76 also imports an all-prefix ballot/descent constraint from the paper. That constraint is useful for narrowing a least counterexample, but remains necessary rather than sufficient. A finite verification algorithm, however efficient, does not prove that one unbounded exceptional orbit cannot exist.
 
-The source theorem and the repository specialization should be independently reconstructed before status promotion.
+The source theorem and repository specialization require independent reconstruction before status promotion.
 
-## 4. Chang isolates an orbit-mixing statement but does not prove it
+## 4. Chang isolates orbit mixing but does not prove it
 
 Edward Y. Chang, arXiv:2603.25753, proves a map-level balance theorem for compressed odd-to-odd residues and reduces the remaining bias to one orbit-level bit observed at sparse burst-ending times.
 
-This is a useful localization:
+The exact source boundary is:
 
 ```text
 map-level residue balance is closed;
@@ -58,41 +58,117 @@ pointwise orbit-level mixing remains open.
 
 A map-level count cannot be substituted for balance along the one orbit of a least counterexample. To become a Collatz proof, the paper's remaining one-bit mixing statement must be proved for every positive orbit or at least for a hypothetical least counterexample.
 
-## 5. Almost-all descent theorems do not remove one least counterexample
+## 5. López--Stoll forces the rational critical-density boundary
 
-Terras--Everett density theorems, Tao's almost-bounded theorem, and later quantitative refinements are genuine global distribution results. Their exceptional sets may have density zero while still containing one orbit. No inspected theorem couples those average bounds to the exact nested parity cylinders of a least counterexample strongly enough to force emptiness.
+Josefina López and Peter Stoll, arXiv:2101.12747, Theorem 1, state that if a rational `2`-adic integer has a divergent, noncyclic Collatz trajectory, then its parity-vector density satisfies
 
-They may become decisive only after an architecture-specific statement turns one counterexample into too many independent exceptional integers.
+\[
+\liminf_{k\to\infty}{q_k\over k}
+={\log2\over\log3}.
+\]
 
-## 6. Current repository frontier
+This is the load-bearing source for native `T-6506`.
 
-The newest positive-direction repository work is issue #75 and draft PRs #76--#77:
+For an all-prefix-supercritical ordinary orbit,
+
+\[
+q_k/k=\alpha+D_k/k\ge\alpha,
+\]
+
+so the theorem forces
+
+\[
+\liminf D_k/k=0.
+\]
+
+It excludes every uniformly positive linear-surplus path. It does **not** exclude logarithmically or otherwise sublinearly banked paths. In particular it is fully compatible with the critical scalar model of `R-6501`.
+
+The source must be reconstructed independently in the exact shortcut/parity convention before promotion.
+
+## 6. Kramer identifies the two-boundary diagnostic but supplies no lower bound
+
+Oliver Kramer, arXiv:2607.10041, studies accelerated exponent codes through three quantities:
 
 ```text
-least counterexample:
-  tau = infinity and the orbit tends to +infinity,
-
-or
-
-  finite first coefficient crossing
-  tau >= 217,976,794,617.
+real drift,
+2-adic canonical start height,
+3-adic canonical endpoint height.
 ```
 
-The present packet advances that frontier without adding a finite search:
+The paper proves necessary asymptotically vanishing start/end residue rates for a code generated by one fixed positive integer and uses finite adaptive searches as diagnostics.
 
-- `L-6501`: ordinary distinctness and prime-to-six arithmetic bound the total odd-step correction by `e^(7/9) k^(1/9)`;
-- `T-6501`: all-time supercritical coefficient records must grow at least as `r^(8/9)` at record times;
-- `T-6502`: every acyclic no-descent crossing satisfies a cofinal logarithmic harmonic window;
-- `L-6502`: every first-crossing word has a complete exact finite list of ordinary no-descent starts.
+Native `L-6504` reaches the exact Lane-A zero-rate corner:
 
-## 7. Honest literature conclusion
+```text
+all-prefix nonnegative real drift,
+fixed ordinary source,
+subexponential canonical endpoint on a subsequence.
+```
 
-No current source inspected on 2026-07-31 supplies a proof of Collatz or a theorem that silently closes either exhaustive lane.
+Kramer's experiments suggest a tradeoff but the paper explicitly does not prove a verification theorem. No positive lower bound on one of the two canonical rates is imported.
 
-The most credible remaining global targets are now:
+A rigorous canonical-boundary uncertainty theorem would be a genuine Lane-A closure result.
 
-1. **Lane A:** prove that an ordinary parity cylinder cannot sustain the unbounded coefficient-record law of `T-6501` forever;
-2. **Lane B:** prove a cofinal lower bound on the canonical least representative `r_w`, or a uniform bound on the exact finite lists in `L-6502`;
-3. **cycles:** force the complete positive-cycle denominator equality and replay, rather than accumulating proper-factor hits.
+## 7. Almost-all descent does not remove one exceptional orbit
 
-Map balance, almost-all descent, finite verification, and paradoxical-sequence enumeration are supporting inputs. None may be promoted to the missing pointwise theorem.
+Terras--Everett density theorems, Tao's almost-bounded theorem, and later quantitative refinements are genuine global distribution results. Their exceptional sets may have density zero while still contain one orbit.
+
+`L-6503` now shows that one divergent orbit produces a tail-minimum ladder with multiplicative gaps at most `3/2`. That remains compatible with zero natural and logarithmic density: a geometrically spaced set is too sparse to contradict an almost-all theorem.
+
+These sources become decisive only after an architecture-specific statement turns one counterexample into quantitatively too many independent exceptions.
+
+## 8. Exact logarithmic forms in the first-crossing lane
+
+`T-6505` uses only a standard effective lower bound for the nonzero linear form
+
+\[
+j\log2-q\log3.
+\]
+
+The required conclusion is qualitative-polynomial:
+
+\[
+j\log2-q\log3\ge c_0j^{-\mu}
+\]
+
+for effective constants. This may be obtained from Baker's classical theory or a sharper modern two-logarithm theorem. Constants and normalization remain source-qualified until independently audited.
+
+The theorem uses the lower bound to compare a polynomial no-descent height ceiling with an exponential ordinary repeated-factor floor. No finite numerical scan is load-bearing.
+
+## 9. Current repository frontier
+
+The positive-direction stack now includes PRs #76--#77, PR #80, PR #81, and PR #83.
+
+For Lane A, the combined necessary profile is:
+
+```text
+actual orbit tends to +infinity;
+correction product <= e^(7/9) k^(1/9);
+mean D >= (8/9) log_3 k - O_n(1);
+fixed low bands have O(k^(1/9)) visits;
+liminf D_k/k = 0;
+canonical source/end rates vanish on a subsequence;
+tail minima form a 3/2-syndetic infinite-stopping ladder.
+```
+
+For Lane B:
+
+```text
+each first-crossing word has a finite exact ordinary list;
+bounded-bank low-complexity cofinal families are excluded;
+PR #83 closes one-pulse near-returns over known negative baselines;
+high-bank, high-complexity and multi-pulse families remain.
+```
+
+## 10. Honest literature conclusion
+
+No inspected source on 2026-07-31 proves Collatz or silently closes either exhaustive lane.
+
+The strongest credible global targets are:
+
+1. **Lane A:** a theorem excluding simultaneous zero-rate `2`-adic source and `3`-adic endpoint boundaries for an all-prefix-supercritical word;
+2. **Lane A alternative:** pointwise orbit mixing strong enough to force a coefficient-subcritical prefix on the same ordinary orbit;
+3. **Lane B:** a cofinal lower bound on the canonical least representative, or a full-denominator theorem eliminating every exact finite no-descent list;
+4. **cycles:** complete denominator equality/nondivisibility and replay, not proper-factor hits.
+
+Map balance, almost-all descent, finite verification, exponent-code diagnostics, and paradoxical-sequence enumeration are supporting inputs. None may be promoted to the missing pointwise theorem.
