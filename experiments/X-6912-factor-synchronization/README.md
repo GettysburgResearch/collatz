@@ -44,18 +44,8 @@ Semantic digest:
 c815dd97651f4559f8bb45c6709a45df783ce5f7f825b2454323d937aea20d85
 ```
 
-File SHA-256 values:
-
-```text
-run.py
-450f0f39d59965555e260883e60acd23dc38a6dc203e58e014ea7e34918793c5
-
-verify.py
-20284c12c2c205bd7bff79a1efd073e556969854f5d04255946c8b5d3a1ea749
-
-results/canonical.json
-db02e38a244ad95d0bfb7443ea1c3c44de823e7e2e2e1e20992a73c86d23c5f8
-```
+The semantic digest is generated from the parsed result object; harmless JSON
+whitespace is not part of the proof interface.
 
 ## Replay
 
