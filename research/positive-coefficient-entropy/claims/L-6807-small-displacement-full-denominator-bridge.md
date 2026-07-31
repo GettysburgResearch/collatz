@@ -5,7 +5,8 @@
 **Agent:** `gpt56-positive-entropy-01` (`GPT-5.6 Pro`)  
 **Issue:** #75  
 **Date:** 2026-07-31  
-**Dependencies:** `L-6803`; exact affine numerator expansion  
+**Last updated:** 2026-07-31  
+**Dependencies:** `L-6803`, `L-6812`; exact affine numerator expansion  
 **Scope:** coefficient-first-crossing words whose canonical member does not descend
 
 ## 1. Setup
@@ -48,9 +49,9 @@ Assume the canonical member is non-descending:
 \tag{1}
 \]
 
-## 2. Exact near-cycle equation
+## 2. Exact bilateral near-cycle equation
 
-The displacement identity from `L-6803` is
+The displacement identity is
 
 \[
 \boxed{
@@ -58,17 +59,37 @@ A_w=D r_w+P\Delta_w.}
 \tag{2}
 \]
 
-Equivalently,
+Since `s_w=r_w+Delta_w`, the equivalent endpoint form is
+
+\[
+\boxed{
+A_w=D s_w+Q\Delta_w.}
+\tag{3}
+\]
+
+Consequently
 
 \[
 \boxed{
 D\mid A_w-P\Delta_w,
 \qquad
-r_w=\frac{A_w-P\Delta_w}{D}.}
-\tag{3}
+r_w=\frac{A_w-P\Delta_w}{D},}
+\tag{4}
 \]
 
-Thus a CST obstruction is a full-denominator certificate with one additional ordinary displacement parameter.
+and
+
+\[
+\boxed{
+D\mid A_w-Q\Delta_w,
+\qquad
+s_w=\frac{A_w-Q\Delta_w}{D}.}
+\tag{5}
+\]
+
+The two congruences are equivalent because `P congruent Q (mod D)`, but the
+integer quotients are different coordinates.  The source uses `(4)`; the
+endpoint uses `(5)`.
 
 The cycle equation is exactly the special case
 
@@ -76,30 +97,48 @@ The cycle equation is exactly the special case
 \Delta_w=0.
 \]
 
-## 3. Universal displacement bound
+## 3. Universal one-third displacement bound
 
-The exact numerator expansion gives
+Put
 
 \[
-\frac{A_w}{Q}
+\alpha={\log2\over\log3},
+\qquad
+D_m=q_m-\alpha m.
+\]
+
+The normalized affine remainder is
+
+\[
+\frac{A_w}{P}
 =
+\frac12
 \sum_{m=1}^{j}
- v_{m-1}\frac{2^{m-1}}{3^{q_m}}.
-\tag{4}
-\]
-
-The final bit is even, and every earlier prefix is coefficient-supercritical. Hence every nonzero summand in `(4)` is at most `1/2`, giving
-
-\[
-\frac{A_w}{Q}\le\frac q2.
-\tag{5}
-\]
-
-Since `Q<P`,
-
-\[
-\frac{A_w}{P}<\frac q2<\frac j2.
+ v_{m-1}3^{D_j-D_m}.
 \tag{6}
+\]
+
+The final bit is even.  Every nonzero summand therefore comes from an odd
+step ending at a proper time `m<j`.  At such a time,
+
+\[
+D_m=D_{m-1}+1-\alpha\ge1-\alpha,
+\]
+
+whereas first crossing gives `D_j<0`.  Hence every nonzero summand in `(6)`
+is strictly smaller than
+
+\[
+\frac12 3^{-(1-\alpha)}
+=\frac13.
+\]
+
+There are exactly `q` odd steps, so
+
+\[
+\boxed{
+0<\frac{A_w}{P}<\frac q3.}
+\tag{7}
 \]
 
 Equation `(2)` and `r_w>=1` imply
@@ -112,28 +151,35 @@ Therefore every non-descending canonical first crossing satisfies
 
 \[
 \boxed{
-0\le\Delta_w<\frac{A_w}{P}<\frac q2<\frac j2.}
-\tag{7}
+0\le\Delta_w
+<\frac{A_w}{P}
+<\frac q3
+<\frac j3.}
+\tag{8}
 \]
 
-The endpoint of a putative enormous paradoxical prefix is consequently only `O(j)` above its start:
+The endpoint of a putative enormous paradoxical prefix is consequently only
+`O(j)` above its start, with the sharper constant
 
 \[
-\boxed{T^j(r_w)=r_w+\Delta_w,
+\boxed{
+T^j(r_w)=r_w+\Delta_w,
 \qquad
-0\le\Delta_w<j/2.}
-\tag{8}
+0\le\Delta_w<q/3.}
+\tag{9}
 \]
 
 ## 4. Complete finite displacement family
 
-For one fixed word `w`, every possible canonical non-descent lies in the finite set
+For one fixed word `w`, every possible canonical non-descent lies in the
+finite set
 
 \[
 \boxed{
-\Delta\in
-\{0,1,\ldots,\lceil q/2\rceil-1\}}
-\tag{9}
+\Delta\in\mathbf Z,
+\qquad
+0\le\Delta<q/3,}
+\tag{10}
 \]
 
 and must pass
@@ -141,33 +187,42 @@ and must pass
 \[
 \boxed{
 D\mid A_w-P\Delta.}
-\tag{10}
-\]
-
-Because `gcd(P,D)=1`, each prime-power divisor of `D` forces the same residue
-
-\[
-\Delta\equiv P^{-1}A_w
-\pmod{p^a}.
 \tag{11}
 \]
 
-The local congruences are not independent nominations: they must reconstruct one common small ordinary integer `\Delta` inside `(9)`.
+Equivalently,
+
+\[
+\boxed{
+D\mid A_w-Q\Delta.}
+\tag{12}
+\]
+
+Because `gcd(P,D)=gcd(Q,D)=1`, each complete prime-power divisor of `D`
+forces the same residue for the one ordinary `Delta`.  The local congruences
+are not independent nominations: they must reconstruct one common integer
+inside `(10)`.
 
 ## 5. Bridge to the cycle compiler
 
 The positive-cycle funnel studies
 
 \[
-D\mid A_w
+D\mid A_w.
 \]
 
-and exact replay. `L-6807` shows that the finite-crossing lane differs only by a bounded shifted numerator:
+The finite-crossing lane differs only by the one bounded shifted numerator
 
 \[
 D\mid A_w-P\Delta,
 \qquad
-0\le\Delta<j/2.
+0\le\Delta<q/3.
+\]
+
+Modulo a factor of `D`, this may be written
+
+\[
+A_w\equiv Q\Delta=3^q\Delta.
 \]
 
 Therefore every full-denominator method has a direct near-cycle analogue:
@@ -186,37 +241,57 @@ exact replay:
     verify r_w -> r_w+Delta over the complete parity word.
 ```
 
-This is a genuine unification of the finite-cycle and delayed-first-crossing blockers.
-
 ## 6. Least-counterexample specialization
 
-For a least positive counterexample, `r_w` lies above the imported verified floor while `(8)` gives
+For a least positive counterexample, `r_w` lies above the imported verified
+floor while `(9)` gives
 
 \[
 \frac{T^j(r_w)}{r_w}
 =1+O\!\left(\frac{j}{r_w}\right).
 \]
 
-The prefix is therefore an exact near-return of a huge ordinary integer, not merely a coefficient near one.
+The prefix is an exact near-return of a huge ordinary integer, not merely a
+coefficient near one.
 
 A successful mixed-place theorem may exploit simultaneously:
 
 - the complete dyadic replay depth `j`;
 - the full odd denominator `D=2^j-3^q`;
-- the small Archimedean displacement `Delta<j/2`;
+- the small Archimedean displacement `Delta<q/3`;
 - the verified lower height of `r_w`.
 
-## 7. Gap audit
+## 7. Coordinate firewall
 
-- The finite set `(9)` still grows with `j`; it is not a bounded-support theorem.
-- Proper-factor divisibility does not imply the complete condition `(10)`.
+The identity
+
+\[
+A_w=nD+Q\Delta
+\]
+
+uses `n=s_w`, the endpoint.  If `n` denotes the source, the correct identity
+is
+
+\[
+A_w=nD+P\Delta.
+\]
+
+The modular congruence is unchanged, but candidate reconstruction and
+physical replay are not.  `L-6812` records this firewall in full.
+
+## 8. Gap audit
+
+- The finite set `(10)` still grows with `j`.
+- Proper-factor divisibility does not imply the complete conditions
+  `(11)--(12)`.
 - The small displacement does not itself contradict a huge starting value.
-- `Delta=0` is a positive-cycle case; `Delta>0` is the genuine CST obstruction.
+- `Delta=0` is a positive-cycle case; `Delta>0` is the genuine CST
+  obstruction.
 - No universal full-denominator exclusion is proved here.
 
-## 8. Handoff
+## 9. Handoff
 
-The strongest next finite arithmetic target is:
+The strongest finite arithmetic target is
 
 \[
 \boxed{
@@ -224,10 +299,11 @@ The strongest next finite arithmetic target is:
 \nmid
 A_w-2^j\Delta
 \quad
-\text{for every }0\le\Delta<j/2
+\text{for every integer }0\le\Delta<q/3
 }
 \]
 
 under the least-counterexample admissibility constraints.
 
-A proof eliminates the complete delayed-crossing word; one equality gives an exact near-return object for immediate physical replay.
+A proof eliminates the complete delayed-crossing word; one equality gives an
+exact near-return object for immediate physical replay.
