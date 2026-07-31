@@ -3,13 +3,13 @@
 **Agent:** `gpt56-positive-02` (`GPT-5.6 Pro`)  
 **Issue:** #78  
 **Namespace:** `65xx`  
-**Status:** all theorem-level claims are **PROPOSED** pending independent reconstruction
+**Status:** theorem-level claims are **PROPOSED** unless explicitly marked otherwise
 
 **No proof of the Collatz conjecture is claimed.**
 
 ## Objective
 
-This packet takes the newest positive-direction repository chain seriously and attacks only an exhaustive least-counterexample contradiction.
+This packet attacks only an exhaustive least-counterexample contradiction.
 
 For
 
@@ -43,7 +43,9 @@ Lane B:
 
 A nontrivial positive cycle belongs to Lane B after rotation to its minimum.
 
-## New result 1 — the correction product is polynomial
+# I. Lane A — exact ordinary consequences
+
+## 1. Polynomial correction product
 
 For an all-prefix-supercritical ordinary orbit,
 
@@ -54,47 +56,47 @@ For an all-prefix-supercritical ordinary orbit,
 \left(1+{1\over3x_i}\right).
 \]
 
-Such an orbit cannot repeat a value. After the first step, every odd source is coprime to six. Distinctness and the density of the prime-to-six integers give
+The orbit cannot repeat. After the first step, every odd source is coprime to six. Distinctness gives
+
+\[
+\boxed{P_k\le e^{7/9}k^{1/9}.}
+\]
+
+This acts on the actual ordinary orbit values, not on a free symbolic word.
+
+## 2. `8/9` logarithmic mean surplus
+
+Distinct-state packing and the product bound give
 
 \[
 \boxed{
-P_k
-\le e^{7/9}k^{1/9}.}
-\]
-
-This is an ordinary-orbit theorem, not a bound on an arbitrary parity word.
-
-## New result 2 — coefficient records must grow polynomially
-
-Let
-
-\[
-M_k=\max_{m\le k}D_m.
-\]
-
-`T-6501` proves
-
-\[
-\boxed{
-3^{M_k}
+\sum_{k=1}^{K}D_k
 \ge
-\left({\alpha\over2ne^{7/9}}\right)^{1/2}k^{4/9},
-\qquad
-\alpha={\log2\over\log3}.}
+{1\over\log3}
+\left[
+\log{(n+K)!\over n!n^K}
+-{1\over9}\log(K!)-{7K\over9}
+\right].}
 \]
 
-At every coefficient-record time `r`,
+Hence
 
 \[
 \boxed{
-C_r\ge{\alpha\over2ne^{7/9}}r^{8/9}.}
+{1\over K}\sum_{k=1}^{K}D_k
+\ge {8\over9}\log_3K-O_n(1).}
 \]
 
-Therefore bounded coefficient surplus is impossible. The critical mechanical/Sturmian sublane is eliminated for positive ordinary Lane-A orbits.
+In particular
 
-## New result 3 — low surplus has density zero
+\[
+\max_{k\le K}3^{D_k}
+\ge {K^{8/9}\over n e^{5/3+o(1)}}.
+\]
 
-The correction product also has the exact additive form
+## 3. Fixed low-surplus bands have density zero
+
+The correction product has the exact additive form
 
 \[
 P_k
@@ -102,22 +104,111 @@ P_k
 \sum_{\substack{i<k\\x_i\text{ odd}}}3^{-D_i}.
 \]
 
-For every fixed `H`, `T-6503` obtains
+For every fixed `H`,
 
 \[
 \boxed{
 \#\{i<k:D_i\le H\}=O_{n,H}(k^{1/9}).}
 \]
 
-Hence
+Therefore
 
 \[
-\boxed{D_k\to+\infty\text{ in natural density one}.}
+D_k\to+\infty
+\quad\text{in natural density one}.
 \]
 
-The remaining Lane-A object may return to low surplus only on a quantitatively sparse sequence of times.
+## 4. Critical-density boundary and subexponential cusps
 
-## New result 4 — cofinal first-crossing harmonic window
+López--Stoll Theorem 1, source-qualified in `T-6506`, says that a rational `2`-adic integer with a divergent noncyclic Collatz orbit must satisfy
+
+\[
+\liminf q_k/k={\log2\over\log3}.
+\]
+
+Thus an ordinary Lane-A orbit must satisfy
+
+\[
+\boxed{\liminf D_k/k=0.}
+\]
+
+There is a subsequence `k_j` for which
+
+\[
+\boxed{\log T^{k_j}(n)=o(k_j).}
+\]
+
+So the remaining orbit has logarithmically growing mean bank and density-one bank escape, but also arbitrarily late subexponential physical cusp returns.
+
+## 5. Canonical two-boundary collapse
+
+At those cusp times, the exact parity-cylinder source/end representatives satisfy
+
+\[
+\boxed{r_{k_j}=n,\qquad s_{k_j}=T^{k_j}(n),}
+\]
+
+and
+
+\[
+\boxed{
+{\log r_{k_j}\over k_j}\to0,
+\qquad
+{\log s_{k_j}\over q_{k_j}}\to0.}
+\]
+
+Lane A is therefore reduced to a simultaneous zero-rate `2`-adic source / `3`-adic endpoint problem. The recent exponent-code literature diagnoses this corner but does not prove it empty.
+
+## 6. Tail-minimum ladder
+
+Every divergent positive orbit has tail minima
+
+\[
+h_0<h_1<h_2<\cdots
+\]
+
+with infinite ordinary stopping time and
+
+\[
+\boxed{h_{i+1}\le(3h_i+1)/2.}
+\]
+
+Their coefficient-stopping depths tend to infinity. Thus one Lane-A orbit manufactures a multiplicatively `3/2`-syndetic ladder of increasingly deep infinite-stopping starts.
+
+# II. A necessary firewall — the four scalar conditions are not a contradiction
+
+`R-6501` gives the explicit binary word defined by
+
+\[
+q_k=\left\lceil
+\alpha k+{8\over9}\log_3\left({k+2\over2}\right)
+\right\rceil.
+\]
+
+Its increments are binary and its surplus satisfies
+
+\[
+D_k\ge0,
+\]
+
+\[
+{1\over K}\sum_{k=1}^{K}D_k
+\ge {8\over9}\log_3K-O(1),
+\]
+
+\[
+3^{D_K}\gg K^{8/9},
+\]
+
+and every fixed low band is visited only finitely often. Also `D_k/k -> 0`.
+
+Every finite prefix is an exact parity cylinder with infinitely many positive ordinary representatives, and the infinite word has one compatible `2`-adic realization.
+
+Therefore these scalar estimates—even together with finite compatibility and a completed parity path—do not imply ordinary nonexistence. The missing theorem must use the ordinary canonical boundaries, inverse-tree minimality, or pointwise orbit mixing.
+
+# III. Lane B — finite first crossings
+
+## 1. Cofinal harmonic window
 
 For an acyclic no-descent crossing with `q` odd sources,
 
@@ -137,63 +228,69 @@ satisfies
 \right\}.
 \]
 
-This strengthens the coefficient window when the crossing length greatly exceeds the starting value. It applies to a divergent least-counterexample crossing and to one period rotated at a positive-cycle minimum.
+## 2. Every word has a complete finite ordinary decision
 
-## New result 5 — every crossing word has a complete finite ordinary decision
-
-For a first-crossing word `w`, let `r_w` be its least positive residue modulo `2^j` and `y_w=T^j(r_w)`. Every positive source in its cylinder is
+For a first-crossing word `w`, let `r_w` be its least positive residue and `y_w=T^j(r_w)`. Every source is
 
 \[
 x=r_w+2^jt,
 \]
 
-and
-
-\[
-T^j(x)-x
-=(y_w-r_w)-(2^j-3^q)t.
-\]
-
-Thus the complete no-descent list is exactly
+and no descent occurs exactly for
 
 \[
 0\le t\le
 \left\lfloor{y_w-r_w\over2^j-3^q}\right\rfloor.
 \]
 
-Lane B is not missing a local decision. It is missing a uniform theorem over the infinite family of first-crossing words.
+Lane B is missing a uniform theorem, not a local integrality test.
 
-## Latest-literature correction
+## 3. Low-complexity cofinal families
 
-The live paradoxical-sequence source is Rozier--Terracol, arXiv:2502.00948v5 / *Discrete Mathematics* 349 (2026), 115167.
+Using full dyadic separation of repeated parity factors and an effective logarithmic-form lower bound, `T-6505` proves that bounded-bank, uniformly low-complexity first-crossing families occur only finitely often. The mechanical/Sturmian extremizer cannot itself remain an ordinary least-counterexample prefix cofinally.
 
-The May 2026 Niu note arXiv:2605.13886 is withdrawn and is not used as an independent theorem. Angeltveit's new algorithm is a finite-verification advance. Chang's map-balance theorem explicitly leaves pointwise orbit-level one-bit mixing open.
+# IV. Literature position
+
+- Rozier--Terracol is the live paradoxical-sequence source; its global finiteness assertion remains conjectural.
+- Niu arXiv:2605.13886 is withdrawn and is not used independently.
+- Angeltveit improves finite verification and supplies necessary constraints, not exceptional-orbit elimination.
+- Chang proves map-level balance but leaves pointwise one-bit orbit mixing open.
+- López--Stoll supplies the critical-density equality used in `T-6506`.
+- Kramer supplies a useful `2`--`3`--infinity diagnostic and necessary zero residue rates, but no canonical-boundary lower bound.
 
 See `LITERATURE_AUDIT.md`.
 
-## Exact remaining proof target
+# V. Exact remaining proof target
 
-A complete proof of Collatz from this route must close both:
+A complete proof from this route must close both:
 
 ```text
-A. no positive ordinary orbit has all coefficient prefixes >= 1;
+A. no positive ordinary orbit occupies the zero-rate,
+   sparse-return, logarithmically banked two-boundary cusp;
 
-B. no positive first-crossing cylinder or positive cycle survives all time.
+B. no positive first-crossing cylinder or positive cycle
+   survives all time.
 ```
 
-The new theorems eliminate the bounded-surplus and positive-frequency-return portions of A, and reduce each individual B word to an exact finite list. They do not eliminate the sparse-return, unbounded-record Lane A or the cofinal family of Lane-B words.
+The clearest Lane-A target is a canonical-boundary uncertainty theorem: prove that every sufficiently long all-prefix-supercritical word has a source or endpoint representative with a positive—or otherwise quantitatively incompatible—height rate.
+
+No such theorem is currently proved.
 
 ## Review order
 
-1. `claims/L-6501-distinct-odd-source-product-bound.md`
-2. `claims/T-6501-supercritical-coefficient-record-growth.md`
-3. `claims/T-6503-low-surplus-density-zero.md`
-4. `claims/T-6502-paradoxical-harmonic-window.md`
-5. `claims/L-6502-first-crossing-cylinder-decision.md`
-6. `claims/D-6501-least-counterexample-two-lane-framework.md`
-7. `Q-6501-close-two-coefficient-lanes.md`
-8. `LITERATURE_AUDIT.md`
+1. `claims/R-6501-scalar-profile-does-not-imply-exclusion.md`
+2. `claims/T-6506-critical-density-subexponential-cusp.md`
+3. `claims/L-6504-two-boundary-cusp-subsequence.md`
+4. `claims/L-6503-tail-minimum-syndetic-ladder.md`
+5. `claims/T-6504-distinct-state-packing-mean-surplus.md`
+6. `claims/L-6501-distinct-odd-source-product-bound.md`
+7. `claims/T-6503-low-surplus-density-zero.md`
+8. `claims/T-6505-low-complexity-first-crossings-are-finite.md`
+9. `claims/T-6502-paradoxical-harmonic-window.md`
+10. `claims/L-6502-first-crossing-cylinder-decision.md`
+11. `Q-6501-close-two-coefficient-lanes.md`
+12. `LITERATURE_AUDIT.md`
 
 ## Scope boundary
 
-This packet is a genuine positive-direction narrowing, not a completed proof. It introduces no new symbolic counterexample architecture and performs no bounded experiment. The remaining blockers are stated without disguising them as technical cleanup.
+This packet makes real infinite-class progress, but does not exclude the final ordinary Lane-A profile. It introduces no counterexample architecture and does not promote a completion, scalar estimate, or almost-all theorem to a proof.
