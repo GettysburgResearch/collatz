@@ -3,7 +3,7 @@
 **Status:** `KNOWN — EXACT SOURCE SPECIALIZATION + EXACT CERTIFICATE`  
 **Primary source:** E. M. Matveev, *An Explicit Lower Bound for a Homogeneous Rational Linear Form in the Logarithms of Algebraic Numbers. II*, Izvestiya: Mathematics 64 (2000), 1217–1269, Corollary 2.3  
 **Source inspection:** complete English PDF, especially pp. 1219–1220 and the height conventions in Section 5  
-**Native interfaces:** PR #53 `T-8202/T-8255`, PR #70 `T-8260`  
+**Native interfaces:** PR #53 `T-8202/T-8255`, PR #70 `T-8260`, `LIT-KTHM-0061/0064/0065`  
 **Counterexample status:** no positive cycle is claimed
 
 ## Source theorem in the required case
@@ -23,7 +23,7 @@ in fixed logarithms of algebraic numbers. Corollary 2.3 gives
 \tag{1}
 \]
 
-where `D` is the field degree, `Omega=A_1...A_n`, the `A_i` dominate the logarithmic heights and logarithm moduli, and `B` may be replaced by
+where `D` is the field degree, `Omega=A_1...A_n`, the `A_i` dominate the logarithmic heights and logarithm moduli, and `B` is Matveev's weighted coefficient parameter from equation `(1.3)`. Corollary 2.3 also permits the coarser replacement
 
 \[
 B^*=\max_i|b_i|.
@@ -55,7 +55,7 @@ A_1=\log2,
 A_2=\log3
 \]
 
-therefore yields the safe explicit bound
+therefore yields the safe general bound
 
 \[
 \boxed{
@@ -77,24 +77,56 @@ For the pulse claims,
 \tag{4}
 \]
 
-Once `Lambda<log3`,
+Order the two source logarithms as
 
 \[
-(Ar+t)\frac{\log2}{\log3}<kr+1,
+\alpha_1=2,
+\qquad
+\alpha_2=3,
 \]
 
-and hence the source parameter can safely be bounded by
+so `A_2=log 3` is the denominator in Matveev's weighted parameter `(1.3)`. Then
 
 \[
-B^*<kr+1.
+B
+=
+\max\left\{
+1,
+(Ar+t)\frac{\log2}{\log3},
+kr
+\right\}.
 \tag{5}
 \]
 
-Equations `(3)`–`(5)` justify the exact logarithmic lower bound required by PR #53 and PR #70. The previous use of `2^32 log2 log3` was safe but unnecessarily coarse.
+Once `Lambda<log3`,
+
+\[
+(Ar+t)\frac{\log2}{\log3}
+=
+kr+\frac{\Lambda}{\log3}
+<kr+1,
+\]
+
+and therefore
+
+\[
+\boxed{B<kr+1.}
+\tag{6}
+\]
+
+This is a bound on Matveev's **weighted** parameter `B`, not on the coarser
+
+\[
+B^*=\max\{Ar+t,kr\}.
+\]
+
+An earlier version of this note incorrectly labeled `(6)` as a `B^*` bound. The numerical pulse certificates used `kr+1` and are justified by the weighted parameter `(5)`; their inequalities and cutoffs are unchanged by this notation correction.
+
+Equations `(1)`, `(2)`, and `(4)--(6)` justify the exact logarithmic lower bound required by PR #53, PR #70, and the fixed-support extensions. The previous use of `2^32 log2 log3` was safe but unnecessarily coarse.
 
 ## Strengthened certified cutoffs
 
-Combining `(3)` with the native upper bounds gives the following clean source-audited cutoffs:
+Combining the source bound with the native upper bounds gives the following clean source-audited cutoffs:
 
 | claim/family | previous cutoff | strengthened cutoff |
 |---|---:|---:|
@@ -126,7 +158,7 @@ This does not automatically promote `T-8255` or `T-8260`: their pulse identities
 - Corollary 2.3, not an unspecified two-logarithm folklore bound, is the exact source used.
 - `A_1=log2` and `A_2=log3` satisfy the height hypotheses because the absolute logarithmic heights of the rational integers are those logarithms.
 - The coefficient signs are allowed.
-- `B^*` avoids any ambiguity about the weighted parameter `(1.3)`.
+- The sharper native estimate uses the weighted parameter `B` from Matveev `(1.3)`; the universal display `(3)` uses the permitted coarser `B^*`.
 - The theorem is Archimedean; it does not bound any `p`-adic valuation.
 
 ## Gap audit
