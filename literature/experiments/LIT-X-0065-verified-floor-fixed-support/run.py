@@ -211,26 +211,20 @@ def support_threshold_certificate(spec: Family) -> dict[str, Any]:
         raise AssertionError("support threshold is not sharp")
     return {
         "last_positive_rate_support": s,
-        "positive_rate_integer_margin": good,
+        "positive_rate_margin_sha256": fraction_sha(Fraction(good)),
         "first_nonpositive_rate_support": spec.next_support,
-        "nonpositive_rate_integer_margin": bad,
+        "nonpositive_rate_margin_sha256": fraction_sha(Fraction(bad)),
     }
 
 
 def all_r_legendre_certificate(spec: Family) -> dict[str, Any]:
     """Cover r<=SMALL_R by the verified floor, and r>=SMALL_R by pulse decay."""
-    # For a nontrivial positive cycle:
-    # t/r - eta < k/(3*N_STAR*log 2) < k/(2*N_STAR).
-    # Thus Legendre holds at r<=SMALL_R if k*r^2 < N_STAR.
     small_margin = N_STAR - spec.k * SMALL_R**2
     if small_margin <= 0:
         raise AssertionError("verified-floor Legendre range too large")
 
     s = spec.max_support
-    # Sufficient pulse condition:
-    # 6*c*r*3^floor((s-1)kr/s) < 2^(Ar).
-    # Check one representative of every residue class mod s.
-    base_rows = []
+    minimum: tuple[Fraction, int, int] | None = None
     for offset in range(s):
         r = SMALL_R + offset
         exponent = ((s - 1) * spec.k * r) // s
@@ -239,15 +233,12 @@ def all_r_legendre_certificate(spec: Family) -> dict[str, Any]:
             - exponent * LOG3.hi
             - log_integer(6 * spec.cmax * r).hi
         )
-        base_rows.append(
-            {
-                "r": r,
-                "exponent": exponent,
-                "log_margin": positive_record(margin, 12),
-            }
-        )
+        if margin <= 0:
+            raise AssertionError("pulse base-row margin not positive")
+        if minimum is None or margin < minimum[0]:
+            minimum = (margin, r, exponent)
+    assert minimum is not None
 
-    # Over one full residue period the pulse ratio decreases.
     period_left = SMALL_R * 2 ** (spec.A * s)
     period_right = (SMALL_R + s) * 3 ** ((s - 1) * spec.k)
     period_margin = period_left - period_right
@@ -257,8 +248,13 @@ def all_r_legendre_certificate(spec: Family) -> dict[str, Any]:
     return {
         "split_repetition": SMALL_R,
         "small_range_integer_margin_Nstar_minus_kR2": small_margin,
-        "pulse_base_rows": base_rows,
-        "pulse_period_integer_margin": period_margin,
+        "pulse_base_row_count": s,
+        "minimum_pulse_log_margin": {
+            "r": minimum[1],
+            "exponent": minimum[2],
+            **positive_record(minimum[0], 12),
+        },
+        "pulse_period_margin_sha256": fraction_sha(Fraction(period_margin)),
         "conclusion": "every repetition yields an upper continued-fraction convergent",
     }
 
@@ -302,15 +298,12 @@ def convergent_exclusion_certificate(spec: Family) -> dict[str, Any]:
             continue
         q_next = int(rows[index + 1]["q"])
 
-        # Verified-floor exclusion. A candidate multiple would imply
-        # lambda_0 < k*q/(3*N_STAR).
         lambda_lower = (
             (spec.A * q + p) * LOG2.lo - spec.k * q * LOG3.hi
         )
         floor_margin = lambda_lower - Fraction(spec.k * q, 3 * N_STAR)
         floor_ok = floor_margin > 0
 
-        # Pulse comparison at the worst (largest allowed) support.
         s = spec.max_support
         exponent = ((s - 1) * spec.k * q) // s
         exponent_step = ((s - 1) * spec.k * q + s - 1) // s
@@ -344,15 +337,6 @@ def convergent_exclusion_certificate(spec: Family) -> dict[str, Any]:
                 "q": q,
                 "q_next": q_next,
                 "method": method,
-                "verified_floor_margin": (
-                    positive_record(floor_margin, 18) if floor_ok else None
-                ),
-                "pulse_comparison_margin": (
-                    positive_record(comparison_margin, 18) if pulse_ok else None
-                ),
-                "pulse_step_margin": (
-                    positive_record(step_margin, 18) if pulse_ok else None
-                ),
             }
         )
 
