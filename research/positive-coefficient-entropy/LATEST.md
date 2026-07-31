@@ -1,101 +1,97 @@
-# Latest state — two coefficient lanes, one complete first-crossing language
+# Latest state — support-corrected coefficient closure
 
-**Snapshot:** 2026-07-31  
+**Snapshot:** 2026-08-01  
 **Agent:** `gpt56-positive-entropy-01` (`GPT-5.6 Pro`)  
 **Issue:** #75  
-**PR:** #81  
+**Draft PR:** #81  
 **Status:** draft mathematical research
 
-All theorem-level statements below remain **PROPOSED** pending independent
-reconstruction. Claims using Rhin or PR #34's full-order theorem are explicitly
-source-qualified.
+All theorem-level statements remain **PROPOSED** pending independent
+reconstruction. Claims using the quoted Rhin normalization or PR #34's
+full-order theorem are explicitly source-qualified.
 
 **No proof of Collatz is claimed.**
 
-## 1. Exactly two global targets remain
+## 1. Exactly two global targets
+
+For a parity word `w` of length `j` and weight `q`, let
+
+\[
+2^j s_w=3^q r_w+A_w
+\]
+
+be its canonical source--endpoint pair.  When `2^j>3^q`,
+
+\[
+r_w>{A_w\over2^j-3^q}
+\iff
+s_w-r_w<0.
+\]
+
+The exhaustive obligations are:
 
 ### SC*
 
 \[
 \boxed{
-\min_{w\in\mathcal W_N^{\rm sup}}r_w\to\infty.}
+m_N^{\rm sup}
+=
+\min_{w\in\mathcal W_N^{\rm sup}}r_w
+\longrightarrow\infty.}
 \]
-
-This excludes an ordinary integer whose coefficient is supercritical at every
-prefix.
 
 ### FC*
 
-Apart from the trivial first-crossing word `10`, prove that no complete
-first-crossing tuple satisfies
+Apart from the trivial word `10`, no complete first-crossing tuple has
+canonical displacement
+
+\[
+d=s_w-r_w\ge0.
+\]
+
+`L-6814` proves that every nontrivial positive cycle generates a canonical
+first-crossing failure. Hence FC* already contains cycle exclusion and
+
+\[
+\boxed{\mathrm{SC}^*+\mathrm{FC}^*\Longrightarrow\text{Collatz}.}
+\]
+
+## 2. Coordinate-safe near-return equation
+
+For a canonical near-return
+
+\[
+T^j(r)=s=r+d,
+\qquad
+D=2^j-3^q,
+\]
+
+`L-6812` proves
 
 \[
 \boxed{
-A_w=(2^j-3^q)r+2^jd
-=(2^j-3^q)(r+d)+3^qd,}
+A_w=Dr+2^jd=Ds+3^qd,}
 \]
 
 with
 
 \[
-\boxed{0\le d<q/3}
+\boxed{0\le d<A_w/2^j<q/3<j/3.}
 \]
 
-and every first-crossing, prime-power, and canonical-source gate.
+Thus
 
-`d=0` is the positive-cycle level; `d>0` is an acyclic CST near-return.
-`L-6814` proves that every nontrivial positive cycle generates a canonical
-first-crossing failure. Thus FC* already contains cycle exclusion.
+```text
+source   = (A_w-2^j d)/D;
+endpoint = (A_w-3^q d)/D.
+```
 
-Therefore
+The complete prime-power congruence may use `A_w == 3^q d`, but the source
+quotient must retain `2^j d`.
 
-\[
-\boxed{\text{SC* + FC* imply Collatz.}}
-\]
+## 3. What is already closed in FC
 
-No third cycle premise is required.
-
-## 2. One relative envelope would close both
-
-Let
-
-\[
-F_j
-={A_{\rm mech}(j)\over2^j-3^{q(j)}}
-\]
-
-be the exact upper-mechanical no-descent threshold. Every first-crossing
-failure satisfies
-
-\[
-\boxed{
-m_{j-1}^{\rm sup}\le r^+(w)\le F_j.}
-\]
-
-Hence the cofinal inequality
-
-\[
-\boxed{m_{j-1}^{\rm sup}>F_j}
-\]
-
-would force every late first crossing to descend. Because `F_j` is unbounded
-along lower convergents, the same inequality would force `m_N^sup` to
-infinity.
-
-The universal scalar envelope is sharpened to
-
-\[
-\boxed{
-F_j
-<
-{q(j)2^j\over3(2^j-3^{q(j)})}.}
-\]
-
-No matching cofinal lower bound for `m_N^sup` is currently proved.
-
-## 3. Complete sectors already closed in FC
-
-Subject to the stated source dependencies:
+Subject to the declared source inputs:
 
 ```text
 upper-mechanical canonical word:
@@ -105,73 +101,179 @@ no-wrap nonmechanical word:
   is easier to descend than the mechanical word;
 
 bounded-bank / low-complexity families:
-  eventually descend;
+  are eventually excluded;
 
-sub-square-root-support repair families:
-  impossible;
+sub-sqrt(j)-support repair families:
+  are excluded;
 
-fixed-support cycle/near-return families already covered by the
-existing exact cycle packets:
-  excluded within their declared scopes.
+one-pulse near-return families over the known negative baselines:
+  are excluded within PR #83's stated scope.
 ```
 
-Every surviving acyclic member is a genuine nonmechanical dyadic wrap.
-
-## 4. Thin across words, rough inside each word
-
-PR #83 `T-6911` gives the source-free cardinality bound
+The complete exceptional family is polynomially sparse across words at each
+length, while every unbounded acyclic member is internally rough:
 
 \[
-|\mathcal E_j|
-<
-{j\over3(1-e^{-\lambda_j})},
-\qquad
-\lambda_j=j\log2-q\log3,
+R_j
+\ge
+\sqrt{{\log2\over2\log3}j}-O(\log j).
 \]
 
-and hence, under an effective logarithmic-form bound,
+It also has `Omega(j^(2/3))` integrated displacement and leaves both the
+mechanical prefix and its own post-return tail within logarithmic depth.
+
+## 4. New theorem — uniform support loss
+
+Let
 
 \[
-|\mathcal E_j|=O(j^{\mu+1}).
+C_j={3^q\over2^j}
 \]
 
-Thus the bad language has zero family entropy.
-
-But `L-6811/T-6810` show that every unbounded **acyclic** bad family has
+and let `R(v)` be the number of odd positions displaced from the
+upper-mechanical word.  `L-6816` proves
 
 \[
 \boxed{
-R_j
-\ge
-\sqrt{{\log2\over2\log3}\,j}
--O(\log j),}
+E_{\rm mech}-E_v
+>{C_j\over12}R(v)
+>{R(v)\over24}.}
 \]
 
-where `R_j` is the number of odd positions displaced from the upper-mechanical
-word.
-
-The same family also satisfies
+For a canonical non-descent this becomes the direct source inequality
 
 \[
-I_j=\Omega(j^{2/3})
+\boxed{
+ r_v
+ <
+ F_j-{C_jR(v)\over12(1-C_j)},}
+\qquad
+F_j={A_{\rm mech}(j)\over2^j-3^q}.
 \]
 
-for total displacement, leaves the mechanical word within `O(log j)` bits,
-and leaves its own old parity tail within `O(log j)` bits after the near-return.
+Every distinct displaced odd position therefore subtracts a fixed amount
+from the same mechanical envelope that the source must approach.
 
-The surviving FC language is therefore:
+## 5. Exact return-forced support threshold
 
-```text
-polynomially sparse across candidate words;
-square-root-supported inside every acyclic candidate;
-two-thirds-scale in integrated displacement;
-early departing at both boundaries;
-and synchronized across the complete denominator by one d<q/3.
-```
+Define
 
-Counting alone and sparse-edit arguments are both exhausted.
+\[
+L_j(R)=\left\lfloor{j-2\over2(R+1)}\right\rfloor
+\]
 
-## 5. Lossless complete-prime-power object
+and let `rho_j` be the least nonnegative integer `R` such that either
+`L_j(R)=0` or
+
+\[
+2^{L_j(R)}+1
+<
+3^{R+1}
+\left({q\over3\lambda_j}+{q\over3}\right),
+\qquad
+\lambda_j=j\log2-q\log3.
+\]
+
+`T-6812` proves, using `L-6811/L-6815`, that every internally injective
+nonmechanical canonical failure satisfies
+
+\[
+R(v)\ge rho_j.
+\]
+
+This definition is source-free and exact.  A candidate-specific directed
+lower bound for `lambda_j` evaluates it without importing a generic exponent.
+
+## 6. Strictly weaker cofinal envelope
+
+Put
+
+\[
+\boxed{
+H_j^{\rm supp}
+=
+F_j-{C_jrho_j\over12(1-C_j)}.}
+\]
+
+Every internally injective nonmechanical failure has source below
+`H_j^supp`.  Failures containing repeated proper states reduce to a
+least-period positive cycle, whose minimum rotation and first crossing are
+internally injective.  Thus, after the finite initial audit and the
+source-qualified mechanical theorem, the cofinal inequality
+
+\[
+\boxed{m_{j-1}^{\rm sup}\ge H_j^{\rm supp}}
+\]
+
+closes FC*.
+
+The corrected envelope remains unbounded along lower convergents, because
+
+\[
+F_j>{C_jq\over6(1-C_j)},
+\qquad
+rho_j\le\lfloor(j-2)/2\rfloor.
+\]
+
+Hence the same cofinal inequality forces SC*.
+
+The fully explicit scalar form is
+
+\[
+\boxed{
+ m_{j-1}^{\rm sup}
+ \ge
+ {q/3-C_jrho_j/12\over1-C_j}.}
+\]
+
+This is strictly weaker than the previous scalar target
+
+\[
+{q\over3(1-C_j)}.
+\]
+
+Neither corrected inequality is proved cofinally.
+
+## 7. Updated SC* equivalence
+
+The updated base branch now contains `T-6710`:
+
+\[
+\boxed{
+m_N>B
+\iff
+\tau_c(n)\le N
+\text{ for every }1\le n\le B.}
+\]
+
+Thus SC* is exactly universal finite coefficient stopping. In fixed-source
+form, source `n` realizes an all-supercritical word `w` of length `N` only if
+
+\[
+v_2(3^{q(w)}n+A_w)\ge N.
+\]
+
+`L-6711` controls endpoint accumulation for one fixed source but does not move
+that source.
+
+For the corrected envelope define
+
+\[
+B_j^{\rm supp}=\lceil H_j^{\rm supp}\rceil-1.
+\]
+
+The smallest exact moving source box is now
+
+\[
+\boxed{
+\tau_c(n)\le j-1
+\quad
+(1\le n\le B_j^{\rm supp})}
+\]
+
+cofinally at the valid first-crossing lengths.
+
+## 8. Complete denominator remains mandatory
 
 Factor
 
@@ -181,62 +283,57 @@ D=2^j-3^q=\prod_sQ_s,
 h_s=\operatorname{ord}_{Q_s}(2).
 \]
 
-`L-6809` proves that one exact first-crossing non-descent is equivalent to:
+`L-6809` remains the lossless compiler.  One exact first-crossing
+non-descent requires:
 
 ```text
-1. generalized-CRT-compatible local excess paths modulo all h_s;
-2. the unique monotone physical lift in the full-order window;
-3. every proper first-crossing coefficient inequality;
-4. one common ordinary 0<=d<q/3;
-5. every complete prime-power congruence A == 3^q d;
-6. the canonical positive source (A-2^j d)/D.
+compatible local excess paths modulo every h_s;
+the unique monotone ordinary lift in the full-order window;
+every proper first-crossing coefficient inequality;
+one common 0<=d<q/3;
+every complete prime-power equation A == 3^q d;
+the canonical source (A-2^j d)/D.
 ```
 
 An order-cover may decode a word but does not certify omitted prime powers.
-A proper-factor hit is not a first-crossing near-return.
+A proper-factor hit is not a near-return.
 
-## 6. Highest-value next theorem
+## 9. Exact current blocker
 
-The next proof must attack one of the following equivalent global objects.
+The program has not proved SC*, FC*, the original cofinal envelope, or the
+support-corrected envelope.
 
-### Relative-envelope route
+The smallest exact forms now are:
 
-\[
-\boxed{m_{j-1}^{\rm sup}>F_j\quad\text{cofinally}.}
-\]
+```text
+cofinal source inequality:
+  m_(j-1)^sup >= H_j^supp;
 
-### Complete-denominator route
+moving stopping box:
+  tau_c(n)<=j-1 for every n<=ceil(H_j^supp)-1;
 
-Prove that the thin, rough wrapped language has no complete tuple with
+fixed-source valuation:
+  v_2(3^q n+A_w)<|w| beyond a source-dependent finite depth;
 
-\[
-0\le d<q/3,
-\]
+complete-denominator exclusion:
+  no complete first-crossing tuple with one 0<=d<q/3.
+```
 
-apart from the trivial word `10`.
+Another endpoint-growth theorem, family count, proper-factor sieve, or free
+completion does not close these objects.
 
-### Source-corner route
+## 10. Review order
 
-Directly prove
-
-\[
-\boxed{m_N^{\rm sup}\to\infty.}
-\]
-
-Another physical growth theorem, measure-one statement, proper-factor sieve,
-or compatible free completion does not change these targets.
-
-## 7. Review order
-
-1. `claims/L-6803-canonical-start-end-rectangle.md`
-2. `claims/L-6812-bilateral-shifted-near-return.md`
-3. `claims/L-6814-positive-cycles-absorb-into-first-crossing.md`
-4. `claims/L-6813-sharpened-box-coupling-envelope.md`
-5. `claims/T-6806-upper-mechanical-all-length-closure.md`
-6. `experiments/X-6801-mechanical-cst/`
-7. `claims/L-6811-support-sensitive-factor-complexity.md`
-8. `claims/T-6810-square-root-displaced-support.md`
-9. `claims/T-6811-polynomially-sparse-square-root-rough.md`
-10. `claims/L-6809-near-cycle-prime-power-compiler.md`
-11. `Q-6802-canonical-displacement-closure.md`
-12. latest session report
+1. `CURRENT_STATE.md`
+2. `claims/L-6816-uniform-support-remainder-loss.md`
+3. `claims/T-6812-support-corrected-cofinal-envelope.md`
+4. `claims/L-6812-bilateral-shifted-near-return.md`
+5. `claims/L-6814-positive-cycles-absorb-into-first-crossing.md`
+6. `claims/L-6813-sharpened-box-coupling-envelope.md`
+7. `claims/T-6806-upper-mechanical-all-length-closure.md`
+8. `experiments/X-6801-mechanical-cst/`
+9. `claims/L-6811-support-sensitive-factor-complexity.md`
+10. `claims/T-6810-square-root-displaced-support.md`
+11. `claims/L-6809-near-cycle-prime-power-compiler.md`
+12. `Q-6802-canonical-displacement-closure.md`
+13. latest session report
