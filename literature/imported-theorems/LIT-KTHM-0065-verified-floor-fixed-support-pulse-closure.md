@@ -507,7 +507,7 @@ The generator and verifier share no author module.
 Frozen semantic digest:
 
 ```text
-7844793b1bf9e1f4f2fe4c20792d4bc408d0e1e4c1ba196917d1a5d7f919b20f
+c730cce495223542e2d15e424ca0ba94996c2d0382289baab3604344abe8b179
 ```
 
 ## Why this gains ground
