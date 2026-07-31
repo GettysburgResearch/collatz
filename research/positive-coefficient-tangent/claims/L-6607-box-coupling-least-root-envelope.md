@@ -5,7 +5,7 @@
 **Authoring agent:** `gpt56-positive-tangent-01` (`GPT-5.6 Pro`)  
 **Created:** 2026-07-31  
 **Issue:** #75  
-**Dependencies:** elementary parity-cylinder compatibility; the canonical crossing identity in `T-6605`  
+**Dependencies:** elementary parity-cylinder compatibility; the canonical crossing identity in `T-6605`; density of an irrational rotation  
 **Scope:** exact coupling of the two open coefficient-gate boxes  
 
 ## 1. Supercritical least roots
@@ -164,18 +164,16 @@ Therefore any proved lower envelope for the supercritical least roots is simulta
 
 ## 5. Envelope formulation
 
-For each crossing length `j`, define the real first-crossing envelope
+For every length `j` for which the set `C_j` of first-crossing words is nonempty, define
 
 \[
 \boxed{
 F_j
 =
 \max_{w\in\mathcal C_j}
-{A_w\over2^j-3^{q_j(w)}},}
+{A_w\over2^j-3^{q_j(w)}}.}
 \tag{13}
 \]
-
-where `C_j` is the finite set of first-crossing words of length `j`.
 
 Then
 
@@ -192,19 +190,143 @@ Consequently, a cofinal theorem of the form
 \[
 \boxed{
  m_{j-1}^{\mathrm{sup}}>F_j
- \quad\text{for all sufficiently large }j}
+ \quad\text{for every sufficiently large crossing length }j}
 \tag{15}
 \]
 
-closes both coefficient lanes at once:
+forces descent at every sufficiently late finite first crossing.
 
-1. since `F_j` is nonnegative and unbounded along arbitrarily close lower rational approximants, `(15)` forces `m_N^sup->infinity`, excluding an ordinary `tau=infinity` root;
-2. equation `(14)` forces descent at every sufficiently late finite first crossing;
-3. finitely many remaining lengths can be handled by exact replay or the verified range.
+A smaller candidate-specific version replaces `F_j` by the mechanical/Farey upper envelope for one admissible `(j,q)` cell.
 
-A smaller candidate-specific version replaces `F_j` by the mechanical/Farey upper envelope for the admissible `(j,q)` cell.
+## 6. The first-crossing envelope is unbounded
 
-## 6. Why this is a genuine reduction
+Put
+
+\[
+\alpha={\log2\over\log3}.
+\]
+
+For an integer `j>=2`, suppose
+
+\[
+0<\delta_j
+:=
+\alpha j-\lceil\alpha(j-1)\rceil.
+\tag{16}
+\]
+
+Define the binary word `w^(j)` by its proper prefix sums
+
+\[
+q_m\bigl(w^{(j)}\bigr)=\lceil\alpha m\rceil
+\qquad(1\le m<j),
+\tag{17}
+\]
+
+and give it final bit zero. Its total weight is
+
+\[
+q_j\bigl(w^{(j)}\bigr)=\lceil\alpha(j-1)\rceil.
+\]
+
+Every proper prefix is coefficient-supercritical, while `(16)` says
+
+\[
+q_j=\alpha j-\delta_j<\alpha j.
+\]
+
+Thus `w^(j)` is a first-crossing word.
+
+Since the rotation sequence
+
+\[
+\{\alpha(j-1)\}
+\]
+
+is dense in `[0,1]`, there are infinitely many `j` for which it approaches `1-alpha` from above. Along such a sequence,
+
+\[
+\delta_j
+=
+\alpha+\{\alpha(j-1)\}-1
+\longrightarrow0^+.
+\tag{18}
+\]
+
+Let `E_j=A_(w^(j))/2^j` be the additive remainder. The first parity bit is odd. Its contribution to `E_j` is
+
+\[
+{1\over2}3^{D_j-D_1},
+\]
+
+where
+
+\[
+D_j=-\delta_j,
+\qquad
+D_1=1-\alpha.
+\]
+
+Therefore
+
+\[
+E_j
+\ge
+{1\over2}3^{-\delta_j-(1-\alpha)}.
+\tag{19}
+\]
+
+On the other hand,
+
+\[
+1-{3^{q_j}\over2^j}
+=1-3^{-\delta_j}.
+\]
+
+Hence
+
+\[
+x_*\bigl(w^{(j)}\bigr)
+={E_j\over1-3^{-\delta_j}}
+\ge
+{{1\over2}3^{-\delta_j-(1-\alpha)}
+ \over
+ 1-3^{-\delta_j}}
+\longrightarrow+\infty.
+\tag{20}
+\]
+
+Thus
+
+\[
+\boxed{\limsup_{j\to\infty}F_j=+\infty,}
+\tag{21}
+\]
+
+where the limsup is taken over crossing lengths.
+
+Combining `(15)` and `(21)` makes the monotone sequence `(m_N^sup)` unbounded, and therefore
+
+\[
+\boxed{m_N^{\mathrm{sup}}\longrightarrow+\infty.}
+\tag{22}
+\]
+
+So the single cofinal envelope inequality `(15)` closes Box 1 automatically while also closing Box 2 at every late crossing.
+
+## 7. Complete implication
+
+If `(15)` is proved, then:
+
+1. `(22)` excludes an ordinary all-time-supercritical root;
+2. `(14)` forces descent at every sufficiently late finite first crossing;
+3. finitely many remaining crossing lengths are handled by exact replay or the verified range.
+
+Therefore `(15)`, together with the already imported finite verification floor for the finite remainder, implies the Collatz conjecture.
+
+The point is not that `(15)` is already established. It is that the two apparent global blockers are now one quantitative comparison between two explicit finite envelopes.
+
+## 8. Why this is a genuine reduction
 
 The two boxes are not independent:
 
@@ -220,10 +342,10 @@ This avoids both invalid shortcuts:
 - counting supercritical words without locating their ordinary residues;
 - bounding the affine remainder without controlling the canonical root.
 
-## 7. Gap audit
+## 9. Gap audit
 
 - Divergence `m_N^sup->infinity` without a rate does not by itself dominate the possibly much larger envelope `F_j`.
 - The maximum in `(13)` may be controlled by extremely small logarithmic gaps.
-- Equation `(15)` remains unproved and may be substantially stronger than the two boxes stated separately.
+- Equation `(15)` remains unproved and may be stronger than the two boxes stated separately.
 - The claim does not eliminate positive cycles independently; equality in the canonical crossing identity is the cycle case.
 - No proof of Collatz is claimed.
