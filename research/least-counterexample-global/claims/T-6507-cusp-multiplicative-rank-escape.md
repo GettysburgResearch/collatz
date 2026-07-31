@@ -1,59 +1,32 @@
 # T-6507 — Multiplicative-rank escape on every ordinary Lane-A cusp
 
 **Claim ID:** `T-6507`  
-**Title:** Normalized source/end correction pairs at a Lane-A cusp generate unbounded multiplicative rank and logarithmically many prime places  
+**Title:** Normalized source/end correction pairs at a Lane-A cusp generate logarithmic multiplicative rank and logarithmically many prime places  
 **Status:** `PROPOSED / SOURCE-DEPENDENT`  
 **Authoring agent:** `gpt56-positive-02` (`GPT-5.6 Pro`)  
 **Created:** 2026-08-01  
-**Dependencies:** `L-6504`, `L-6505`; Evertse--Schlickewei--Schmidt, Theorem 1.1  
+**Dependencies:** `L-6504`, `L-6505`; Beukers--Schlickewei, Theorem 1.1  
 **Scope:** an actual positive ordinary all-prefix-supercritical orbit  
 **Related candidates:** none
 
 ## 1. External theorem in the exact normalization used
 
-Evertse, Schlickewei, and Schmidt consider, over a characteristic-zero field `K`, the equation
+Beukers and Schlickewei, *The equation `x+y=1` in finitely generated groups*, Acta Arithmetica 78 (1996), Theorem 1.1, prove:
 
-\[
-a_1x_1+\cdots+a_mx_m=1
-\tag{1}
-\]
+> Let `G` be the `Q`-closure of a finitely generated subgroup of `(C^*)^2` of rank `r`. Then
+> \[
+> x+y=1,
+> \qquad (x,y)\in G,
+> \]
+> has at most
+> \[
+> \boxed{2^{8r+8}=2^{8(r+1)}}
+> \]
+> solutions.
 
-with `(x_1,...,x_m)` in a subgroup
+The `Q`-closure is the divisible hull: a pair lies in `G` when some positive coordinatewise power lies in the original finitely generated group. A finitely generated subgroup itself is contained in its `Q`-closure, so the bound applies a fortiori to solutions inside that subgroup.
 
-\[
-\Gamma\subset(K^*)^m
-\]
-
-of finite rank `r`. A solution is nondegenerate when no nonempty proper subsum vanishes.
-
-Their Theorem 1.1 gives
-
-\[
-\boxed{
-N_{\mathrm{nd}}(m,r)
-\le
-\exp\!\left((6m)^{3m}(r+1)\right).}
-\tag{2}
-\]
-
-The present application uses
-
-\[
-K=\mathbf Q,
-\qquad
-m=2,
-\qquad
-a_1=a_2=1.
-\]
-
-Thus the explicit constant is
-
-\[
-(6m)^{3m}=12^6=2\,985\,984.
-\tag{3}
-\]
-
-No moving-coefficient or degenerate solution is placed under this theorem.
+The present application uses one subgroup of `(Q^*)^2` for each finite cusp packet. No moving coefficient, degenerate subsum, or changing equation is placed under the theorem.
 
 ## 2. Exact Lane-A unit equation
 
@@ -63,7 +36,7 @@ Let `k_j` be a cusp subsequence from `L-6504`, thinned so that the odd-step coun
 2^{k_j}s_j=3^{q_j}n+A_j,
 \qquad
 s_j=T^{k_j}(n).
-\tag{4}
+\tag{1}
 \]
 
 Define
@@ -73,14 +46,14 @@ Define
 U_j=\frac{A_j}{s_j2^{k_j}},
 \qquad
 V_j=\frac{n3^{q_j}}{s_j2^{k_j}}.}
-\tag{5}
+\tag{2}
 \]
 
 Then
 
 \[
 \boxed{U_j+V_j=1,}
-\tag{6}
+\tag{3}
 \]
 
 and
@@ -89,10 +62,10 @@ and
 0<U_j<1,
 \qquad
 0<V_j<1.
-\tag{7}
+\tag{4}
 \]
 
-Every solution `(U_j,V_j)` is therefore nondegenerate.
+Every solution `(U_j,V_j)` is therefore nondegenerate in the elementary two-term sense.
 
 ## 3. Distinctness from the same ordinary orbit
 
@@ -107,21 +80,21 @@ P_k,
 P_k=
 \prod_{\substack{0\le i<k\\T^i(n)\text{ odd}}}
 \left(1+\frac1{3T^i(n)}\right).
-\tag{8}
+\tag{5}
 \]
 
-Equation `(5)` gives
+Equation `(2)` gives
 
 \[
 \boxed{V_j=P_{k_j}^{-1}.}
-\tag{9}
+\tag{6}
 \]
 
-Whenever the odd-step count increases, the product `P_k` acquires at least one factor strictly larger than one. Since the `q_j` are strictly increasing,
+Whenever the odd-step count increases, `P_k` acquires at least one factor strictly larger than one. Since the `q_j` are strictly increasing,
 
 \[
 V_1>V_2>V_3>\cdots.
-\tag{10}
+\tag{7}
 \]
 
 Thus the pairs `(U_j,V_j)` are pairwise distinct.
@@ -138,15 +111,13 @@ and let
 
 \[
 r_J=\operatorname{rank}\Gamma_J.
-\tag{11}
+\tag{8}
 \]
 
-The fixed equation `(6)` has at least `J` distinct nondegenerate solutions inside `Gamma_J`. Applying `(2)` with `m=2` gives
+Its `Q`-closure has the same rank. The fixed equation `(3)` has at least `J` distinct solutions in `Gamma_J`, hence in that closure. Beukers--Schlickewei gives
 
 \[
-J
-\le
-\exp\!\left(12^6(r_J+1)\right).
+J\le2^{8(r_J+1)}.
 \]
 
 Therefore
@@ -155,15 +126,15 @@ Therefore
 \boxed{
 r_J
 \ge
-\frac{\log J}{12^6}-1.}
-\tag{12}
+\frac{\log_2 J}{8}-1.}
+\tag{9}
 \]
 
 In particular,
 
 \[
 \boxed{r_J\longrightarrow\infty.}
-\tag{13}
+\tag{10}
 \]
 
 No fixed finite-rank multiplicative group contains an infinite Lane-A cusp tail.
@@ -174,17 +145,23 @@ Let `S_J` be the set of rational primes dividing
 
 \[
 6n\prod_{j=1}^{J}A_js_j.
-\tag{14}
+\tag{11}
 \]
 
-Both coordinates in `(5)` are `S_J`-units. Hence `Gamma_J` is contained in the square of the rational `S_J`-unit group, whose rank is at most `2|S_J|`. Combining this with `(12)` yields
+Both coordinates in `(2)` are `S_J`-units. The rational `S_J`-unit group has free rank `|S_J|`; its square has rank `2|S_J|`. Hence
+
+\[
+r_J\le2|S_J|.
+\]
+
+Combining this with `(9)` yields
 
 \[
 \boxed{
 |S_J|
 \ge
-\frac{\log J}{2\cdot12^6}-\frac12.}
-\tag{15}
+\frac{\log_2 J}{16}-\frac12.}
+\tag{12}
 \]
 
 Removing the fixed prime divisors of `6n`,
@@ -194,13 +171,13 @@ Removing the fixed prime divisors of `6n`,
 \#\operatorname{supp}_{\rm prime}
 \left(\prod_{j=1}^{J}A_js_j\right)
 \ge
-\frac{\log J}{2\cdot12^6}-O_n(1).}
-\tag{16}
+\frac{\log_2 J}{16}-O_n(1).}
+\tag{13}
 \]
 
 Thus an ordinary Lane-A cusp must manufacture globally new prime places forever, with an explicit logarithmic lower bound in the number of cusp levels.
 
-There is also an exact overlap restriction. From `(4)`,
+There is also an exact overlap restriction. From `(1)`,
 
 \[
 \gcd(A_j,s_j)\mid n3^{q_j}.
@@ -210,7 +187,7 @@ But `3` does not divide `A_j`, so
 
 \[
 \boxed{\gcd(A_j,s_j)\mid n.}
-\tag{17}
+\tag{14}
 \]
 
 Outside the fixed prime support of `n`, the fresh prime mass in `A_j` and `s_j` is disjoint at each cusp level.
@@ -230,19 +207,19 @@ These are all-depth class exclusions, not bounded searches.
 
 The rank escape can be paid entirely by the affine numerators `A_j`. Their recurrence is allowed to create new primes while the canonical endpoints `s_j` retain zero exponential height rate.
 
-Equation `(16)` controls cumulative multiplicative complexity, not the raw boundary ratio
+Equation `(13)` controls cumulative multiplicative complexity, not the raw boundary ratio
 
 \[
 \frac{\log s_j}{q_j}.
 \]
 
-In particular, logarithmically many distinct prime places fit comfortably inside integers of size `exp(o(k_j))`.
+Logarithmically many distinct prime places fit comfortably inside integers of size `exp(o(k_j))`.
 
 The single missing inequality is an architecture-specific transfer from numerator rank to endpoint height, for example
 
 \[
 \operatorname{rank}\langle U_1,V_1,\ldots,U_J,V_J\rangle
-\le o(\log J)
+=o(\log J)
 \]
 
 under simultaneous zero canonical source/end rates, or a direct lower bound forcing
@@ -251,20 +228,21 @@ under simultaneous zero canonical source/end rates, or a direct lower bound forc
 \limsup_j\frac{\log s_j}{q_j}>0.
 \]
 
-Neither follows from the general `S`-unit theorem.
+Either statement contradicts `(9)` or the cusp hypothesis. Neither follows from the general two-variable unit-equation theorem.
 
 ## 8. Dependency audit
 
-- Positivity, nondegeneracy, and distinctness are proved from the exact ordinary orbit.
+- Positivity and distinctness are proved from the exact ordinary orbit.
 - The equation has two variables and fixed coefficients `1,1` at every cusp level.
-- `Gamma_J` is defined separately for each finite `J`; the uniform ESS bound then yields `(12)`.
-- The explicit constant in `(2)` is the exact Theorem 1.1 constant, not an asymptotic paraphrase.
-- The stronger special two-variable bound quoted in the ESS introduction is not imported here.
+- `Gamma_J` is finitely generated by construction; its rank is exactly the theorem parameter.
+- Passing to the `Q`-closure does not increase rank and only enlarges the solution domain.
+- The explicit bound `2^{8r+8}` is the exact Theorem 1.1 statement of the primary paper.
+- No general `m`-variable ESS constant is used after this sharpening.
 
 ## 9. Adversarial tests
 
 1. Completion ghosts do not enter: `s_j=T^{k_j}(n)` and `n` are ordinary positive integers.
-2. No proper subsum vanishes because `U_j,V_j>0`.
+2. No coordinate vanishes because `0<U_j,V_j<1`.
 3. Distinctness is not inferred from the exponents alone; it follows from strict growth of the same correction product.
-4. A changing group is not mistaken for a fixed one: `(12)` quantifies the rank of the group generated by the first `J` actual solutions.
+4. A changing group is not mistaken for a fixed one: `(9)` quantifies the rank of the group generated by the first `J` actual solutions.
 5. The theorem does not claim that the endpoints alone have infinitely many prime divisors.
