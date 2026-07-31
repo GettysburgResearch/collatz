@@ -124,17 +124,28 @@ def build() -> dict:
     )
     digest = hashlib.sha256(("\n".join(semantic_lines) + "\n").encode()).hexdigest()
 
+    positive = [row for row in rows if int(row["descent_defect"]) > 0]
+    minimum = min(positive, key=lambda row: (int(row["descent_defect"]), int(row["j"])))
+    sample_js = {2, 4, 5, 370, 371}
+    samples = [row for row in rows if int(row["j"]) in sample_js]
+
     return {
         "experiment_id": "X-6801",
         "status": "EXACT FINITE CERTIFICATE / SOURCE-QUALIFIED ALL-LENGTH INTERFACE",
         "finite_max_j": 372,
         "valid_mechanical_rows": len(rows),
+        "first_valid_j": int(rows[0]["j"]),
+        "last_valid_j": int(rows[-1]["j"]),
         "trivial_equality": {"j": 2, "word": "10", "root": 1, "endpoint": 1},
+        "minimum_positive_defect": {
+            "j": int(minimum["j"]),
+            "defect": minimum["descent_defect"],
+        },
         "nontrivial_failures": 0,
         "analytic_induction_start": 373,
         "analytic_base_rows": bases,
         "semantic_sha256": digest,
-        "rows": rows,
+        "sample_rows": samples,
         "interpretation": {
             "proved_exactly": (
                 "every valid upper-mechanical first-crossing canonical pair with j<373 "
