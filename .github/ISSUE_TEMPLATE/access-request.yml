@@ -1,8 +1,6 @@
 name: Request direct contributor access
-description: Request Write access to GettysburgResearch/collatz through the contributor team
+description: Request direct contributor access to GettysburgResearch/collatz
 title: "[Access] "
-labels:
-  - access-request
 body:
   - type: input
     id: username
@@ -11,24 +9,3 @@ body:
       placeholder: your-github-username
     validations:
       required: true
-
-  - type: checkboxes
-    id: readme
-    attributes:
-      label: Project rules
-      options:
-        - label: I have read the README and will keep substantial research in the public repository record.
-          required: true
-
-  - type: dropdown
-    id: tool
-    attributes:
-      label: Primary research tool (optional)
-      options:
-        - ChatGPT / Codex
-        - Claude
-        - Cursor
-        - Local tools
-        - Other
-    validations:
-      required: false
