@@ -12,7 +12,7 @@
 ## 1. Setup
 
 Let \(w\) be a shortcut parity word of length \(j\) and weight \(q\), with
-first bit one and final bit zero.  Put
+first bit one and final bit zero. Put
 
 \[
 P=2^j,
@@ -130,9 +130,9 @@ Suppose local data
 
 and one ordinary integer \(\Delta\) satisfying `(6)` are given.
 
-There is a first-crossing word whose excess path realizes the local data and
-whose shifted numerator satisfies `(7)` if and only if all of the following
-conditions hold.
+There is a **coefficient-first-crossing** word whose excess path realizes the
+local data and whose shifted numerator satisfies `(7)` if and only if all of
+the following conditions hold.
 
 ### A. Generalized-CRT compatibility
 
@@ -173,9 +173,41 @@ Define
 \tag{14}
 \]
 
-The positions `(14)` reconstruct one unique parity word.
+The positions `(14)` reconstruct one unique binary word with first bit one,
+last bit zero, length \(j\), and weight \(q\).
 
-### C. Complete prime-power shifted-numerator equations
+### C. Exact first-crossing prefix barrier
+
+For every proper prefix \(1\le m<j\), put
+
+\[
+\widehat S_m
+=
+\#\{i:\widehat d_i<m\}.
+\tag{15}
+\]
+
+Require
+
+\[
+\boxed{
+3^{\widehat S_m}\ge2^m
+\qquad(1\le m<j),
+}
+\tag{16}
+\]
+
+and retain the final crossing already encoded by \(D>0\):
+
+\[
+\boxed{3^q<2^j.}
+\tag{17}
+\]
+
+Condition `(16)` is essential. Monotonicity of the excess path by itself
+recognizes an ordinary parity word, not a first-crossing word.
+
+### D. Complete prime-power shifted-numerator equations
 
 For every \(s\),
 
@@ -187,12 +219,12 @@ For every \(s\),
 3^q\Delta
 \pmod{Q_s}.
 }
-\tag{15}
+\tag{18}
 \]
 
 Here powers of two are reduced modulo their exact local order \(h_s\).
 
-### D. Canonical positive range
+### E. Canonical positive range
 
 Let
 
@@ -201,7 +233,7 @@ Let
 =
 \sum_{i=1}^{q}
 3^{q-i}2^{i-1+\widehat e_i}
-\tag{16}
+\tag{19}
 \]
 
 and
@@ -210,30 +242,31 @@ and
 \widehat r
 =
 \frac{\widehat A-P\Delta}{D}.
-\tag{17}
+\tag{20}
 \]
 
 Require
 
 \[
 \boxed{1\le\widehat r\le P.}
-\tag{18}
+\tag{21}
 \]
 
 Then \((\widehat r,\widehat r+\Delta)\) is the canonical start--end pair.
 
 ## 4. Proof
 
-An actual canonical near-cycle gives `(11)--(13)` immediately.  Equation
-`(15)` is simply `(7)` reduced modulo each complete prime-power factor, with
+An actual canonical near-cycle gives `(11)--(16)` immediately. Equation
+`(18)` is simply `(7)` reduced modulo each complete prime-power factor, with
 `(5)` and the definition of local orders.
 
 Conversely, `(12)` is the exact compatibility criterion for simultaneous
-congruences with noncoprime moduli.  The representatives in `(13)` produce
-one legal excess path and hence one binary word.  Strict window `(10)` makes
-the lift unique.
+congruences with noncoprime moduli. The representatives in `(13)` produce one
+legal excess path and hence one binary word. Strict window `(10)` makes the
+lift unique. Conditions `(16)--(17)` certify that this reconstructed word is
+indeed coefficient-first-crossing rather than merely parity-compatible.
 
-Equation `(15)` at every complete prime-power factor gives
+Equation `(18)` at every complete prime-power factor gives
 
 \[
 D\mid\widehat A-Q\Delta.
@@ -243,22 +276,22 @@ Since \(P\equiv Q\pmod D\),
 
 \[
 D\mid\widehat A-P\Delta.
-\tag{19}
+\tag{22}
 \]
 
-Thus `(17)` is integral.  Equations `(16)--(19)` give
+Thus `(20)` is integral. Equations `(19)--(22)` give
 
 \[
 Q\widehat r+\widehat A
 =
 P(\widehat r+\Delta).
-\tag{20}
+\tag{23}
 \]
 
-Condition `(18)` places \(\widehat r\) in the canonical source rectangle.
-By the finite parity-cylinder bijection, `(20)` therefore gives complete
-ordinary physical replay of the reconstructed word, with canonical endpoint
-\(\widehat r+\Delta\).
+Condition `(21)` places \(\widehat r\) in the canonical source rectangle.
+By the finite parity-cylinder bijection, `(23)` gives complete ordinary
+physical replay of the reconstructed first-crossing word, with canonical
+endpoint \(\widehat r+\Delta\).
 
 This proves necessity and sufficiency.
 
@@ -277,7 +310,8 @@ H_S>E,
 \]
 
 the factors in \(S\) already reconstruct at most one excess path and one word.
-They prove only
+The reconstructed path must still pass the explicit first-crossing gate
+`(16)--(17)`. The selected factors prove only
 
 \[
 \prod_{s\in S}Q_s
@@ -285,8 +319,8 @@ They prove only
 A_w-P\Delta.
 \]
 
-Every omitted prime power must still be checked.  Word decoding and complete
-near-cycle certification are separate gates.
+Every omitted prime power must still be checked. Word decoding, first-crossing
+admissibility, and complete near-cycle certification are separate gates.
 
 ## 6. Consequence for the remaining Box-2 language
 
@@ -299,6 +333,7 @@ supported.
 ```text
 complete denominator factorization
 + compatible local excess paths
++ exact first-crossing prefix barrier
 + one common small Delta
 + canonical positive range
     <=>
@@ -306,13 +341,15 @@ one exact ordinary first-crossing near-return.
 ```
 
 A full negative proof may therefore show that no complete tuple of local
-paths reconstructs a common \(\Delta<j/2\).  A positive tuple is an exact
-physical near-return object, not a proper-factor nomination.
+paths reconstructs a first-crossing word and a common \(\Delta<j/2\). A
+positive tuple is an exact physical near-return object, not a proper-factor
+nomination.
 
 ## 7. Gap audit
 
 - Factoring \(D\) and solving all local path equations remains difficult.
 - A proper-factor or order-cover hit is not a near-cycle certificate.
+- The first-crossing barrier must be checked after CRT reconstruction.
 - The order window `(10)` is source-qualified through PR #34.
 - The theorem is a lossless reduction, not a nonexistence theorem.
 - The cycle level \(\Delta=0\) is retained.
