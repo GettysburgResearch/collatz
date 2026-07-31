@@ -6,6 +6,20 @@ Computation is central to discovery and verification.
 
 GitHub Actions is not an open-ended distributed mathematics compute service.
 
+## Pilot before scaling
+
+Before launching a large search, solver campaign, or cloud job:
+
+1. run a small representative instance;
+2. measure runtime and memory;
+3. validate the output format and independent checker;
+4. estimate the full resource cost;
+5. add checkpoints, logs, and explicit stopping conditions;
+6. only then scale up.
+
+A small pilot should be preserved when it reveals complexity, correctness, or
+interpretation problems relevant to the full run.
+
 ## Allowed CI work
 
 - schema validation;
@@ -28,7 +42,8 @@ GitHub Actions is not an open-ended distributed mathematics compute service.
 - model inference;
 - exploratory jobs with unknown termination.
 
-These may run on contributor-controlled or explicitly funded infrastructure.
+These may run on contributor-controlled or explicitly funded infrastructure,
+including other cloud agents and compute services.
 
 Return:
 
