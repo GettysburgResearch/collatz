@@ -5,7 +5,7 @@
 **Agent:** `gpt56-positive-entropy-01` (`GPT-5.6 Pro`)  
 **Issue:** #75  
 **Date:** 2026-08-01  
-**Dependencies:** `L-6811`, `L-6814`, `L-6815`, `L-6816`; `T-6806` for the all-length mechanical sector  
+**Dependencies:** `L-6808`, `L-6811`, `L-6815`, `L-6816`, `L-6817`; `T-6806` for the all-length mechanical sector; cross-branch `T-6710` only for the inverse formulation  
 **Scope:** the unified SC* / FC* coefficient program  
 **Counterexample status:** none
 
@@ -25,9 +25,7 @@ For an integer `R>=0`, define
 \[
 L_j(R)
 =
-\left\lfloor
-{j-2\over2(R+1)}
-\right\rfloor.
+\left\lfloor{j-2\over2(R+1)}\right\rfloor.
 \tag{2}
 \]
 
@@ -45,19 +43,11 @@ or
 2^{L_j(R)}+1
 <
 3^{R+1}
-\left(
-{q\over3\lambda_j}+{q\over3}
-\right).}
+\left({q\over3\lambda_j}+{q\over3}\right).}
 \tag{4}
 \]
 
-The set is nonempty because `(3)` holds once
-
-\[
-R>{j-4\over2}.
-\]
-
-In particular,
+The set is nonempty, because `(3)` holds once `R>(j-4)/2`.  In particular,
 
 \[
 \boxed{
@@ -65,10 +55,10 @@ rho_j\le\left\lfloor{j-2\over2}\right\rfloor.}
 \tag{5}
 \]
 
-The definition is exact and source-free.  For a concrete `j`, a directed
-lower bound on `lambda_j` gives a proof-producing integer value of `rho_j`.
-The left side of `(4)` is nonincreasing in `R`, while the right side is
-increasing, so the admissible set is an upper interval.
+The definition is exact and source-free.  The left side of `(4)` is
+nonincreasing in `R`, while the right side is increasing, so the admissible
+set is an upper interval.  For one concrete `j`, a directed lower bound for
+`lambda_j` evaluates `rho_j` proof-gradely.
 
 ## 2. Every internally injective failure has support at least `rho_j`
 
@@ -79,8 +69,8 @@ let
 R=R(v)
 \]
 
-be its displaced support relative to the upper-mechanical word.
-Assume its proper physical states
+be its displaced support relative to the upper-mechanical word.  Assume the
+proper physical states
 
 \[
 r_v,T(r_v),\ldots,T^{j-1}(r_v)
@@ -88,38 +78,28 @@ r_v,T(r_v),\ldots,T^{j-1}(r_v)
 
 are pairwise distinct.
 
-If `L_j(R)=0`, then `R` satisfies `(3)`.  Otherwise `L-6811` forces a repeated
-parity factor of length `L_j(R)`.  The two physical starts are distinct by
-hypothesis.  `L-6815` therefore gives
+If `L_j(R)=0`, then `R` satisfies `(3)`.  Otherwise `L-6811` supplies a
+repeated parity factor of length `L_j(R)`.  Its physical starts are distinct,
+so `L-6815` gives
 
 \[
 2^{L_j(R)}+1
 <
 3^{B(v)}
-\left(
-{q\over3\lambda_j}+{q\over3}
-\right).
+\left({q\over3\lambda_j}+{q\over3}\right).
 \tag{6}
 \]
 
-`L-6808` gives
-
-\[
-B(v)<R+1.
-\]
-
-Substitution in `(6)` proves `(4)`.  Hence every internally injective failure
-satisfies
+`L-6808` gives `B(v)<R+1`, and therefore `(4)` holds.  Thus
 
 \[
 \boxed{R(v)\ge rho_j.}
 \tag{7}
 \]
 
-This section imports no generic Rhin or Baker exponent.  The logarithmic gap
-appears in its exact word-specific value.
+No generic Rhin or Baker exponent enters this section.
 
-## 3. The support-corrected exact envelope
+## 3. Pointwise support-corrected envelope
 
 Let
 
@@ -130,50 +110,49 @@ F_j
 \tag{8}
 \]
 
-be the exact upper-mechanical threshold and define
+be the exact mechanical threshold and define
 
 \[
 \boxed{
 H_j^{\rm supp}
 =
-F_j
--
-{C_j\,rho_j\over12(1-C_j)}.}
+F_j-{C_jrho_j\over12(1-C_j)}.}
 \tag{9}
 \]
 
-`L-6816` and `(7)` prove that every internally injective nonmechanical
-canonical failure has source
+`L-6816` proves for every nonmechanical canonical non-descent
 
 \[
-\boxed{r_v<H_j^{\rm supp}.}
+r_v
+<
+F_j-{C_jR(v)\over12(1-C_j)}.
 \tag{10}
 \]
 
-Consequently the strictly weaker source inequality
+Combining `(7)` and `(10)`,
 
 \[
-\boxed{
-m_{j-1}^{\rm sup}\ge H_j^{\rm supp}}
+\boxed{r_v<H_j^{\rm supp}.}
 \tag{11}
+\]
+
+Consequently
+
+\[
+\boxed{m_{j-1}^{\rm sup}\ge H_j^{\rm supp}}
+\tag{12}
 \]
 
 excludes every internally injective nonmechanical canonical failure at length
 `j`.
 
-Compare `(11)` with the previous target
+This is strictly weaker than the preceding target
 
 \[
 m_{j-1}^{\rm sup}>F_j.
 \]
 
-The new threshold is lower by the explicit positive amount
-
-\[
-{C_j\,rho_j\over12(1-C_j)}.
-\]
-
-## 4. Fully explicit scalar version
+## 4. Explicit scalar version
 
 The one-third remainder theorem gives
 
@@ -186,78 +165,72 @@ Define
 \[
 \boxed{
 G_j^{\rm supp}
-=
-{q/3-C_jrho_j/12\over1-C_j}.}
-\tag{12}
-\]
-
-Every internally injective nonmechanical canonical failure satisfies
-
-\[
-r_v<G_j^{\rm supp}.
+={q/3-C_jrho_j/12\over1-C_j}.}
 \tag{13}
 \]
 
-Thus the scalar condition
+Every internally injective nonmechanical failure satisfies
 
 \[
-\boxed{
-m_{j-1}^{\rm sup}\ge G_j^{\rm supp}}
+r_v<G_j^{\rm supp}.
 \tag{14}
 \]
 
-is sufficient at length `j`.  It improves the previous scalar target
+Hence the explicit condition
+
+\[
+\boxed{m_{j-1}^{\rm sup}\ge G_j^{\rm supp}}
+\tag{15}
+\]
+
+is sufficient at length `j`.  It improves
 
 \[
 {q\over3(1-C_j)}
-=
-{q2^j\over3(2^j-3^q)}
+={q2^j\over3(2^j-3^q)}
 \]
 
-by the same forced-support correction.
+by the forced-support correction.
 
-## 5. Positive cycles reduce to the internally injective case
+## 5. Why the cycle branch is included
 
-Suppose any nontrivial positive cycle exists.  Choose one of least period,
-rotate it to its minimum state, and stop at its first coefficient crossing.
-`L-6814` gives a canonical first-crossing failure.
+`L-6817` proves that any canonical FC obstruction with a repeated proper
+physical state yields a nontrivial positive cycle, and that a least-period
+cycle, rotated to its minimum and stopped at its first coefficient crossing,
+has pairwise distinct proper states and is itself a canonical FC obstruction.
 
-Its proper states are pairwise distinct: a repeated state before the end of
-the minimal period would produce a shorter positive period.  Hence the
-resulting canonical failure is internally injective and is subject to
-Sections 2--4.
+Thus every nontrivial FC obstruction reduces to an internally injective one,
+possibly at a shorter first-crossing length.  For such an injective witness,
+the equal-state alternative in the proof of `T-6806` is unavailable.  Subject
+to `T-6806`'s finite and logarithmic-form inputs, an injective mechanical
+witness descends.
 
-If a general canonical failure contains a repeated proper physical state,
-it contains a nontrivial positive cycle.  Replacing it by a least-period cycle
-therefore again produces an internally injective canonical failure, possibly
-at a shorter first-crossing length.
+Therefore every surviving nontrivial FC obstruction may be chosen
 
-Thus, after a finite initial-length audit, it suffices globally to exclude the
-internally injective failures controlled by `(11)` or `(14)`.  The cycle level
-`d=0` is not discarded; it is reduced to the same support-corrected language.
+```text
+internally injective;
+nonmechanical;
+and subject to (7)--(12).
+```
+
+The cycle level `d=0` is retained, not assumed away.
 
 ## 6. Cofinal closure theorem
 
 Assume there is `J` such that:
 
-1. every nontrivial first-crossing failure of length below `J` has been
-   excluded by proof-grade finite or symbolic certificates;
-2. the source-qualified all-length mechanical closure `T-6806` holds; and
-3. for every valid first-crossing length `j>=J`,
-   \[
-   \boxed{m_{j-1}^{\rm sup}\ge H_j^{\rm supp}}
-   \tag{15}
-   \]
-   or, more strongly but more explicitly, `(14)` holds.
+1. every nontrivial first-crossing failure below `J` is excluded by
+   proof-grade finite or symbolic certificates;
+2. the all-length mechanical input `T-6806` holds; and
+3. for every valid first-crossing length `j>=J`, `(12)` holds—or the stronger
+   explicit condition `(15)` holds.
 
-Then FC* is empty apart from the trivial word `10`.
+Then FC* is empty apart from the trivial word `10`: any nontrivial witness
+reduces by Section 5 to an internally injective nonmechanical one, while
+`m_(j-1)^sup<=r_v` contradicts `(11)--(12)`.
 
-Indeed, any nontrivial failure reduces by Section 5 to an internally injective
-one.  `T-6806` removes the mechanical case, and `(10)` contradicts `(15)` in
-the nonmechanical case.
-
-The same cofinal hypothesis also proves SC*.  To see this, first note that
-every mechanical odd contribution is greater than `C_j/6`, so
+The same cofinal hypothesis proves SC*.  Every mechanical odd contribution is
+greater than `C_j/6`, so
 
 \[
 F_j>{C_jq\over6(1-C_j)}.
@@ -292,47 +265,50 @@ C_j\to1^-,
 1-C_j\to0^+.
 \]
 
-Equation `(17)` therefore gives
+Hence
 
 \[
 \boxed{H_j^{\rm supp}\to+\infty}
 \tag{18}
 \]
 
-along that subsequence.  Condition `(15)` makes the monotone least-source
-sequence unbounded, hence
+along that subsequence.  Condition `(12)` makes the monotone sequence
+`m_N^sup` unbounded and therefore forces
 
 \[
 \boxed{m_N^{\rm sup}\to+\infty.}
 \]
 
-Therefore the cofinal support-corrected inequality closes both exhaustive
-coefficient lanes and proves Collatz, subject to the explicitly listed source
-and finite inputs.
+Thus the support-corrected cofinal inequality closes both exhaustive
+coefficient lanes and proves Collatz, subject to the listed finite and source
+inputs.
 
-No such cofinal source lower bound is proved in this file.
+**The cofinal inequality itself is not proved here.**
 
 ## 7. Exact finite inverse form
 
-`T-6710` on the updated base branch proves
+Cross-branch `T-6710` proves
 
 \[
 m_N>B
 \iff
 \tau_c(n)\le N
-\quad\text{for every }1\le n\le B.
+\quad(1\le n\le B).
 \]
 
 Put
 
 \[
+\boxed{
 B_j^{\rm supp}
 =
-\left\lceil H_j^{\rm supp}\right\rceil-1.
+\max\left\{0,
+\left\lceil H_j^{\rm supp}\right\rceil-1
+\right\}.}
 \tag{19}
 \]
 
-Then `(15)` is equivalent to the moving finite statement
+For the cofinal range where `H_j^supp>1`, condition `(12)` is equivalent to
 
 \[
 \boxed{
@@ -342,21 +318,21 @@ Then `(15)` is equivalent to the moving finite statement
 \tag{20}
 \]
 
-Thus the smallest exact remaining source obligation after the support loss is
-not the old full mechanical envelope.  It is the moving coefficient-stopping
-box `(20)`, or its fixed-source valuation equivalent
+Equivalently, one needs a source-dependent finite upper bound on
 
 \[
-v_2(3^{q(w)}n+A_w)<|w|
+v_2(3^{q(w)}n+A_w)
 \]
 
-for every `n` in that box and every sufficiently long all-supercritical word
-realized from `n`.
+as `w` ranges over all-supercritical words realized from one fixed source
+`n`.
 
-## 8. What has and has not been achieved
+The moving box `(20)` is the smallest exact source obligation reached by this
+pass.
 
-The theorem gives a strictly weaker sufficient condition than the requested
-cofinal inequality:
+## 8. What changed and what remains
+
+The theorem replaces the requested envelope by a strictly lower one:
 
 \[
 F_j
@@ -364,23 +340,20 @@ F_j
 F_j-{C_jrho_j\over12(1-C_j)}.
 \]
 
-The reduction uses the complete ordinary support/return geometry; it is not a
-new encoding or a finite-prefix amplifier.
+The subtraction comes from the same internal support forced by exact ordinary
+returns; it is not a new encoding, average-case estimate, or finite-prefix
+amplifier.
 
-It does **not** prove the new inequality.  Existing endpoint-growth, family-
-sparsity, and complete-prime-power constraints do not yet yield the fixed-
-source valuation bound `(20)`.
+Existing endpoint growth, family sparsity, and complete-prime-power
+reconstruction do not prove `(20)`.  The unresolved fixed-source valuation
+bound is therefore retained explicitly.
 
 ## 9. Audit targets
 
-1. Verify the mechanical contribution corridor `1/6 < 2^(e_i)/3^i <= 1/3`.
-2. Check the strict support loss `C R/12`.
-3. Reconstruct `rho_j` directly from `L-6811/L-6815` without importing a
-   generic logarithmic-form exponent.
-4. Check primitive-cycle reduction and the distinction between proper-state
-   repetition and endpoint return.
-5. Preserve the source quotient `(A-2^j d)/D` and endpoint quotient
-   `(A-3^q d)/D`.
-6. Verify unboundedness of the corrected envelope along lower convergents.
-7. Do not promote `(15)` or `(20)` to a theorem until the fixed-source
-   coefficient-stopping bound is supplied.
+1. Verify `1/6 < 2^(e_i)/3^i <= 1/3` and the strict `C_jR/12` loss.
+2. Reconstruct `rho_j` from `L-6811/L-6815` without a generic logarithmic
+   exponent.
+3. Verify the least-period cycle reduction and proper-state injectivity.
+4. Preserve source `(A-2^jd)/D` versus endpoint `(A-3^qd)/D`.
+5. Verify `(17)--(18)` along lower convergents.
+6. Do not promote `(12)`, `(15)`, or `(20)` without the fixed-source bound.
