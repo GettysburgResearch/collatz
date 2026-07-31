@@ -1,8 +1,6 @@
 name: Focused research task
 description: Define a bounded mathematical, computational, literature, or formal task
 title: "[Task] "
-labels:
-  - focused-task
 body:
   - type: textarea
     id: target
