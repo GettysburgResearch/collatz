@@ -1,185 +1,327 @@
-# Positive coefficient tangent: two-place limits and shifted full-denominator pressure
+# Positive coefficient tangent: complete-factor synchronization frontier
 
 **Agent:** `gpt56-positive-tangent-01` (`GPT-5.6 Pro`)  
 **Issue:** independent continuation of issue `#75`  
 **Namespace:** isolated `69xx`  
-**Status:** theorem-level claims are **PROPOSED** pending independent reconstruction  
+**Status:** theorem-level claims are **PROPOSED** pending independent reconstruction
 
 **No proof of the Collatz conjecture is claimed.**
 
-## Purpose
+## Synced base state
 
-The active positive coefficient program leaves two possibilities for a least counterexample:
+This pass was synchronized against:
 
 ```text
-all-time coefficient supercriticality;
-a finite first coefficient crossing that does not descend.
+PR #81 head:
+086ac39d93d7c1aad9d05732f5fc11c9ce349530
+
+PR #83:
+agent/gpt56-positive-tangent-01/75-coefficient-envelope
 ```
 
-This packet attacks only those global blockers.
+The corrected source/endpoint convention is retained throughout. For
 
-The latest pass corrects the shifted-denominator notation, proves the equation for every first-crossing word with no bank or entropy hypothesis, sharpens the displacement to `d<j/3`, and proves that all non-descending first-crossing words are polynomially sparse under the declared logarithmic-form input.
+\[
+T_w(r)=s=r+d,\qquad
+P=2^j,\quad Q=3^q,\quad D=P-Q,
+\]
+
+one has
+
+\[
+\boxed{A_w=Dr+Pd=Ds+Qd.}
+\]
+
+Thus the endpoint-labelled equation is
+
+\[
+A_w=sD+dQ,
+\]
+
+while the source-labelled equation is
+
+\[
+A_w=rD+dP.
+\]
+
+Every non-descending first crossing satisfies
+
+\[
+0\le d<A_w/P<q/3.
+\]
 
 ## Current claim map
 
-| ID | Status | Content |
-|---|---|---|
-| `T-6901` | `PROPOSED` | A no-descent start above the exact finite threshold `H_L` has coefficient stopping depth greater than `L`. |
-| `T-6902` | `PROPOSED` | Every divergent orbit has escaping tail minima with `tau->infinity` and an orbit-supported all-supercritical 2-adic tangent. |
-| `T-6903` | `PROPOSED` | Divergence gives either one ordinary `tau=infinity` start or infinitely many increasingly deep CST violations. |
-| `R-6901` | `PROPOSED` | Compactness does not extract an ordinary seed. |
-| `L-6904` | `PROPOSED` | The canonical target is positivity of one exact integer descent defect. |
-| `L-6905` | `PROPOSED` | The two final boxes reduce to `m_(j-1)^sup>F_j`. |
-| `L-6906` | `PROPOSED` | The upper mechanical word is the exact scalar envelope. |
-| `T-6905` | `PROPOSED / SOURCE-DEPENDENT` | Explicit polynomial scalar envelope from a logarithmic-form bound. |
-| `T-6904` | `PROPOSED / SOURCE-DEPENDENT` | Log-bank, uniformly zero internal-factor-entropy failures cannot occur cofinally. |
-| `T-6906` | `PROPOSED / SOURCE-DEPENDENT` | Exact bank--complexity repeated-factor ceiling. |
-| `L-6907` | `PROPOSED` | Exact one-wrap law for nonmechanical failures. |
-| `L-6908` | `PROPOSED` | Dual defect residue and unique late canonical candidate. |
-| `L-6909` | `PROPOSED` | Universal shifted full-denominator classification. |
-| `R-6910` | `PROVED correction` | Distinguishes the start-labelled and endpoint-labelled shifted equations. |
-| `T-6911` | `PROPOSED / SOURCE-DEPENDENT` | All non-descending first crossings are polynomially sparse. |
-| `T-6907` | `PROPOSED / SOURCE-DEPENDENT` | All-repetition one-pulse positive near-returns are excluded over both known negative baselines. |
+```text
+T-6901  finite no-descent coefficient threshold
+T-6902  wave-minimum all-supercritical two-place tangent
+T-6903  divergence / CST-violation dichotomy
+R-6901  compactness does not extract an ordinary seed
 
-## Universal start/endpoint theorem
+L-6904  canonical first-crossing integer descent defect
+L-6905  SC*/FC* envelope coupling
+L-6906  upper mechanical word is the exact scalar envelope
+T-6905  explicit scalar crossing envelope
 
-For a first-crossing word `w`, write
+T-6904  logarithmic-bank zero-entropy exclusion
+T-6906  bank--complexity repeated-factor ceiling
+
+L-6907  exact one-wrap law for nonmechanical failures
+L-6908  dual defect residue and unique late canonical candidate
+L-6909  universal shifted full-denominator classification
+R-6910  corrected start/endpoint notation
+T-6911  polynomial sparsity of all non-descending first crossings
+
+T-6907  all-repetition one-pulse positive near-return exclusion
+X-6901  exact one-pulse verifier
+
+L-6912  complete-factor displacement and quotient-jet synchronization
+L-6913  resultant-root lacunary normal form
+T-6914  rough support shrinks the displacement window
+R-6915  cross-factor obstruction and one-factor method boundary
+X-6912  exact factor-synchronization regression
+```
+
+## Complete-factor synchronization
+
+Factor
 
 \[
-T_w(x)=\frac{3^q x+A_w}{2^j}=y,
-\qquad
-d=y-x,
-\qquad
-D=2^j-3^q.
+D=\prod_\nu M_\nu
+\]
+
+into complete prime powers and define
+
+\[
+\delta_\nu=[A_wQ^{-1}]_{M_\nu}.
+\]
+
+Every factor satisfying
+
+\[
+M_\nu>A_w/P
+\]
+
+must return the same ordinary integer:
+
+\[
+\boxed{\delta_\nu=d.}
+\]
+
+Hence two large factors with different residues prove descent immediately.
+More generally, every large unitary block determines the exact `d`.
+
+The gcd profile is equally rigid:
+
+\[
+\boxed{\gcd(D,A_w)=\gcd(D,d).}
+\]
+
+Thus `d=0` is precisely the full cycle-divisibility level, while `d>0`
+allows only a gcd smaller than `q/3`.
+
+## Quotient jets and the cofinal factor dichotomy
+
+Let
+
+\[
+\mathcal B_j=
+\left\lceil
+\frac{q}{3(1-Q/P)}+\frac q3
+\right\rceil.
+\]
+
+Every candidate has
+
+\[
+0<r,s<\mathcal B_j.
+\]
+
+For a unitary divisor `U|D`, `C=D/U`, define
+
+\[
+\delta_U=[A_wQ^{-1}]_U
+\]
+
+and, when `U|A_w-Q\delta_U`,
+
+\[
+\sigma_U=
+\left[
+\frac{A_w-Q\delta_U}{U}C^{-1}
+\right]_U.
+\]
+
+If `U>\mathcal B_j`, then a genuine candidate forces
+
+\[
+\delta_U=d,\qquad \sigma_U=s.
+\]
+
+Once `D>\mathcal B_j^3`, the complete factorization has one of two forms:
+
+```text
+balanced:
+  D=UV with U,V>\mathcal B_j;
+  both blocks must return exactly the same d and endpoint jet s;
+
+dominant:
+  D=Wc with W>\mathcal B_j^2 and c<=\mathcal B_j;
+  the giant prime power determines d,r,s,
+  and the small cofactor must complete the divisibility.
+```
+
+These are the two smallest exact full-denominator obstructions still open.
+
+## Resultant-root form
+
+When `gcd(j,q)=1`, choose `a,b` with
+
+\[
+aq+bj=1
+\]
+
+and put
+
+\[
+z=2^a3^b\pmod D.
 \]
 
 Then
 
 \[
-\boxed{
-A_w=xD+d2^j=yD+d3^q.}
+z^q=2,\qquad z^j=3\pmod D,
 \]
 
-Thus
+and
+
+\[
+\left|\operatorname{Res}(X^q-2,X^j-3)\right|=D.
+\]
+
+If the odd positions are `d_i`, define
+
+\[
+\gamma_i=j(i-1)-qd_i\ge0.
+\]
+
+The complete displacement residue becomes
 
 \[
 \boxed{
-A_w=n(2^j-3^q)+d3^q}
+3d\equiv\sum_{i=1}^{q}z^{-\gamma_i}\pmod D.
+}
 \]
 
-is correct when `n` is the **endpoint** `y`; the start is `n-d`.
+Relative to the upper mechanical word, with displacements
+`h_i=\bar d_i-d_i`,
 
-When `n` denotes the start, the correct identity is
+\[
+3d\equiv
+\sum_i z^{-\bar\gamma_i}2^{-h_i}\pmod D.
+\]
+
+Thus the remaining CRT problem is a least-residue theorem for a
+growing-support lacunary polynomial at one universal resultant root.
+
+## Rough support reduces the bad interval
+
+If `R` odd positions are displaced from the upper mechanical word, then
 
 \[
 \boxed{
-A_w=n(2^j-3^q)+d2^j,
-\qquad
-T_w(n)=n+d.}
-\]
-
-No bank, entropy, periodicity, aperiodicity, pulse, or lateness condition enters this theorem.
-
-Every non-descending realization satisfies
-
-\[
-\boxed{
-0\le d<\frac{A_w}{2^j}<\frac q3<\frac j3.}
-\]
-
-The possible displacements form the finite residue class
-
-\[
-\boxed{
-d\equiv A_w3^{-q}\pmod{2^j-3^q}.}
-\]
-
-## Polynomial sparsity at unrestricted bank
-
-Let `E_j` be the complete collection of length-`j` first-crossing words with some positive non-descending realization. Put
-
-\[
-\lambda_j=j\log2-q\log3.
-\]
-
-`T-6911` proves the exact count
-
-\[
-\boxed{
-|E_j|
+\frac{A_v}{2^j}
 <
-\frac{j}{3(1-e^{-\lambda_j})}
-\le
-\frac{2j}{3\lambda_j}.}
+\frac{A_{\rm mech}}{2^j}
+-
+\frac{3^q}{2^j}\frac{R}{12}.
+}
 \]
 
-Under a reviewed effective Baker/Matveev estimate
+Therefore
 
 \[
-\lambda_j\ge c_0j^{-\mu},
+d<
+\frac{A_{\rm mech}}{2^j}
+-
+\frac{3^q}{2^j}\frac{R}{12}.
 \]
 
-this gives
+PR #81 forces
 
 \[
-\boxed{|E_j|=O(j^{\mu+1}).}
+R\ge\sqrt{\frac{\log2}{2\log3}\,j}-O(\log j)
 \]
 
-So the complete exceptional language has zero exponential family growth, and every member is recoverable from one polynomial-sized ordinary start using `O(log j)` description bits.
+for every unbounded acyclic exceptional family, so roughness removes a
+square-root-width portion of the displacement window. It does not yet force
+the balanced or dominant jets to disagree.
 
-This applies at arbitrary bank. It closes positive **family entropy**, but not necessarily the internal factor complexity of one exceptional word.
+## Exact finite method boundary
 
-## One-envelope reduction
+`X-6912` exhausts every first-crossing word through length `27`:
 
-Let
+```text
+first-crossing words:             502,523
+nontrivial canonical failures:         0
+first one-factor strategy failure:    27
+number of such words:                  3
+```
 
-\[
-m_N^{\rm sup}
-=
-\min\{m>0:3^{q_k(m)}\ge2^k\text{ for all }k\le N\}.
-\]
+At `j=27`,
 
-Let `F_j` be the upper-mechanical threshold at valid first-crossing length `j`. Then
+```text
+D=5*71*14303.
+```
 
-\[
-\boxed{m_{j-1}^{\rm sup}>F_j}
-\]
+Three descending words have every individual prime-power residue below the
+real threshold, while a proper two-factor block rejects each one.
 
-forces descent for every crossing at that length. Since `F_j` is unbounded along lower convergents, the same cofinal inequality also proves
+Therefore a proof based on one prime-power factor at a time is impossible.
+Cross-factor synchronization is not optional.
 
-\[
-m_N^{\rm sup}\to\infty.
-\]
+## Honest FC* status
 
-The two former global boxes are one relative-growth theorem.
+FC* is not proved.
 
-## Remaining frontier
+After all current reductions, a surviving object must be:
 
-The surviving finite-crossing class is no longer an arbitrary positive-entropy cloud. It is a polynomially sparse family of words satisfying
+```text
+polynomially sparse across words;
+nonmechanical and wrapped in the acyclic case;
+square-root-supported;
+two-thirds-scale displaced;
+early departing from the mechanical word;
+early departing from its own post-return tail;
+compatible at every complete prime-power factor;
+and synchronized to one common 0<=d<q/3.
+```
 
-\[
-\boxed{
-A_w
-=n(2^j-3^q)+d3^q,
-\qquad
-0\le d<j/3,}
-\]
+The cycle level `d=0` is included.
 
-where `n` is the endpoint and the start is `n-d`.
+The exact remaining theorem is to exclude:
 
-Those words must also escape the existing periodic, one-pulse, low-bank/low-internal-complexity, and wrap obstructions.
+```text
+Object B:
+  a balanced pair of large unitary blocks returning the same d and s;
 
-The unresolved possibility is a very thin sequence of high-bank, genuinely nonperiodic words which may still have rich internal factor structure. A residue-avoidance, return, or growing-support full-denominator theorem is still required.
+Object G:
+  one giant prime-power block returning small d,r,s
+  plus a completing small cofactor.
+```
 
-## Read first
+Equivalently, prove a uniform least-residue lower bound for the resultant
+sum in `L-6913`.
 
-1. `claims/L-6909-shifted-full-denominator-equation.md`
-2. `claims/R-6910-start-endpoint-notation-correction.md`
-3. `claims/T-6911-polynomial-sparsity-first-crossing-failures.md`
-4. `claims/L-6905-box-coupling-envelope.md`
-5. `claims/L-6906-mechanical-envelope-equality.md`
-6. `claims/T-6906-bank-complexity-return-ceiling.md`
-7. `claims/T-6907-single-pulse-near-return-exclusion.md`
-8. `LATEST.md`
-9. `LITERATURE_AUDIT.md`
-10. session reports under `reports/gpt56-positive-tangent-01/`
+## Review first
+
+1. `claims/L-6912-complete-factor-synchronization.md`
+2. `claims/L-6913-resultant-root-normal-form.md`
+3. `claims/T-6914-rough-support-displacement-window.md`
+4. `claims/R-6915-cross-factor-obstruction.md`
+5. `experiments/X-6912-factor-synchronization/`
+6. corrected `claims/L-6909-shifted-full-denominator-equation.md`
+7. `claims/T-6911-polynomial-sparsity-first-crossing-failures.md`
+8. PR #81 `L-6809`, `T-6810`, `T-6811`, and `Q-6802`
+9. `LATEST.md`
+10. latest session report
