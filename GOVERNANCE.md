@@ -35,9 +35,12 @@ Only this decision changes the public project status.
 
 ## Repository-specific access model
 
-The organization base permission should remain `None`. Access to this repository
-is granted through repository-specific teams so future organization repositories
-may use different policies.
+Elevated access should be granted through repository-specific teams so future
+organization repositories may use different policies.
+
+An organization base permission of `Read` is acceptable when all organization
+members may see all current repositories. Change it to `None` only if future
+private repositories should be isolated from ordinary Collatz contributors.
 
 ### Organization owners — Admin
 
@@ -192,6 +195,9 @@ Pro sweeps every two hours when practical:
 The founder compares the passes and decides what to merge, extract, defer,
 correct, supersede, or close. Every pass freezes exact source SHAs. This cadence
 is an initial practice, not a permanent guarantee.
+
+The first integration pass may revise the canonical file layout, claim
+organization, and review workflow after confronting the actual research backlog.
 
 ## Disputes
 
