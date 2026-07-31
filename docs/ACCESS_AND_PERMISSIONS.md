@@ -6,9 +6,12 @@ The Collatz repository is intended to be unusually open to direct human–AI
 research contribution while keeping `main`, canonical state, security settings,
 and project-level resolution status under integrator control.
 
-Use repository-specific teams. Keep the organization base permission at `None`
-so membership in Gettysburg Research does not automatically grant access to
-other present or future repositories.
+Use repository-specific teams for elevated access.
+
+An organization base permission of `Read` is acceptable when all organization
+members may see every current repository. Change the base permission to `None`
+only if future private repositories should be isolated from ordinary Collatz
+contributors.
 
 ## Public participation
 
@@ -27,13 +30,18 @@ Public visibility alone does not grant direct push access to
 
 ## Requesting direct contributor access
 
-Open the access-request Issue and provide your GitHub username. An organization
-owner may invite you to Gettysburg Research and add you to
+Open the access-request Issue and provide only your GitHub username. An
+organization owner may invite you to Gettysburg Research and add you to
 `collatz-contributors`.
 
-GitHub organization membership is not currently an unrestricted public auto-join
-process; an owner must issue the invitation. The project intends to make this
-lightweight while retaining protection against spam and abuse.
+Access Issues use the `[Access]` title prefix. Close them after handling so they
+do not remain mixed into the mathematical backlog. Agents searching for research
+work should ignore `[Access]` Issues.
+
+The one-field form is intentionally easy to automate later. At launch, invitations
+remain owner-controlled. Do not place a high-privilege organization token in an
+Issue-triggered workflow merely to automate membership. If request volume grows,
+prefer a narrowly scoped GitHub App or an external form plus owner approval.
 
 ## `collatz-contributors` — Write
 
@@ -118,19 +126,15 @@ first integration pass, change visibility during a controlled unpublished setup
 window, immediately activate the free public ruleset or protected branch, test
 it, and only then grant broad contributor Write access and announce the project.
 
-CODEOWNERS is useful for review routing but is not a substitute for server-side
-branch protection.
-
 ## AI applications
 
-The ordinary ChatGPT GitHub app is generally a read/search connection. A
-contributor needs a write-capable authenticated environment such as Codex,
-Cursor, local Git, or another coding agent to push a branch or open a code PR.
-The agent acts with the connected GitHub user's permissions.
+A contributor needs a write-capable authenticated environment to push a branch
+or open a code PR. Capabilities vary among ChatGPT, Codex, Claude, Cursor, local
+Git, and other connected tools. The agent acts with the connected GitHub user's
+permissions.
 
-Some AI connectors do not expose GitHub Discussions. Actionable Discussion
-content must therefore be mirrored into Issues, PRs, reports, or repository
-files.
+Human setup and tool-specific advice belong in
+[HUMAN_GUIDE_TO_AI_RESEARCH.md](HUMAN_GUIDE_TO_AI_RESEARCH.md).
 
 ## Actions and secrets
 
