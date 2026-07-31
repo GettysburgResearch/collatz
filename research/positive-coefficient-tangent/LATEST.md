@@ -1,206 +1,228 @@
 # Latest coefficient-envelope stack
 
-**Updated:** 2026-07-31  
+**Updated:** 2026-08-01  
 **Active draft PR:** #83  
-**Namespace:** `69xx`  
+**Namespace:** `69xx`
 
 No proof of Collatz is claimed.
 
-## Complete claim map
+## Synced collaborator state
+
+This pass reads PR #81 at
 
 ```text
-T-6901  finite no-descent coefficient threshold
-T-6902  wave-minimum all-supercritical two-place tangent
-T-6903  divergence / CST-violation dichotomy
-R-6901  compactness does not extract an ordinary seed
-
-L-6904  canonical first-crossing integer descent defect
-L-6905  Box-1 / Box-2 envelope coupling
-L-6906  upper mechanical word is the exact envelope
-T-6905  explicit scalar envelope G_j
-
-T-6904  logarithmic-bank zero-entropy exclusion
-T-6906  bank--complexity repeated-factor ceiling
-
-L-6907  exact one-wrap law for nonmechanical failures
-L-6908  dual defect residue and unique late canonical candidate
-L-6909  universal shifted full-denominator classification
-R-6910  start/endpoint notation correction
-T-6911  polynomial sparsity of all non-descending first crossings
-
-T-6907  all-repetition single-pulse positive near-return exclusion
-X-6901  exact post-Matveev and finite-case verifier
+086ac39d93d7c1aad9d05732f5fc11c9ce349530
 ```
 
-## Universal shifted equation
+and retains all corrections concerning:
 
-For **every** first-crossing word `w` of length `j`, weight `q`, and numerator `A_w`, let `x` be a positive realization and put
+```text
+source versus endpoint labels;
+the one-third displacement window;
+complete-prime-power compatibility;
+square-root displaced support;
+two-thirds integrated displacement;
+logarithmic early departure and self-shadowing;
+zero family entropy versus internal factor complexity.
+```
+
+## Current FC* equation
+
+For source `r`, endpoint `s=r+d`, and
+
+```text
+P=2^j,
+Q=3^q,
+D=P-Q,
+```
+
+one has
 
 \[
-y=T_w(x)=x+d.
+\boxed{A_w=Dr+Pd=Ds+Qd,}
+\]
+
+with
+
+\[
+\boxed{0\le d<A_w/P<q/3.}
+\]
+
+The endpoint-labelled form is
+
+\[
+A_w=sD+dQ;
+\]
+
+the source-labelled form is
+
+\[
+A_w=rD+dP.
+\]
+
+`d=0` is the positive-cycle level and `d>0` is an acyclic near-return.
+
+## New complete-factor theorem
+
+Factor
+
+\[
+D=\prod M_\nu
+\]
+
+into complete prime powers and put
+
+\[
+\delta_\nu=[A_wQ^{-1}]_{M_\nu}.
+\]
+
+Every factor larger than `A_w/P` must satisfy
+
+\[
+\boxed{\delta_\nu=d.}
+\]
+
+Hence any two large factors with unequal local residues exclude the word.
+The exact gcd profile is
+
+\[
+\boxed{\gcd(D,A_w)=\gcd(D,d).}
+\]
+
+For a large unitary factor `U|D`, a second quotient jet recovers the exact
+endpoint and source. Cofinally, the complete factorization has one of two
+forms:
+
+```text
+balanced:
+  D=UV with both U,V larger than the ordinary endpoint bound;
+  both blocks must return the same d and quotient jet;
+
+dominant:
+  D=Wc with W a giant prime power and c a small cofactor;
+  W determines d,r,s and c must complete the divisibility.
+```
+
+These are the two irreducible FC* objects.
+
+## Resultant-root normal form
+
+When `gcd(j,q)=1`, choose `a,b` with `aq+bj=1` and put
+
+\[
+z=2^a3^b\pmod D.
 \]
 
 Then
 
 \[
-\boxed{
-A_w=x(2^j-3^q)+d2^j
-=y(2^j-3^q)+d3^q.}
+z^q=2,\qquad z^j=3,\qquad
+|\operatorname{Res}(X^q-2,X^j-3)|=D.
 \]
 
-Therefore the requested equation
+For odd positions `d_i`, define
+
+\[
+\gamma_i=j(i-1)-qd_i\ge0.
+\]
+
+The common displacement is exactly
 
 \[
 \boxed{
-A_w=n(2^j-3^q)+d3^q}
+3d\equiv\sum_i z^{-\gamma_i}\pmod D.}
 \]
 
-is correct when `n` denotes the **endpoint** `y`; the starting value is `n-d`.
+Relative to the mechanical word, this is
 
-If `n` denotes the start, the correct coefficient of `d` is `2^j`.
+\[
+3d\equiv
+\sum_i z^{-\bar\gamma_i}2^{-h_i}\pmod D.
+\]
 
-No bank, entropy, periodicity, aperiodicity, pulse, or lateness assumption enters this identity.
+Thus FC* is a least-residue theorem for one rough lacunary polynomial at a
+universal resultant root, simultaneously over every complete denominator
+factor.
 
-For a non-descending realization,
+## Roughness shrinks the bad interval
+
+If `R` odd positions are displaced from the upper-mechanical word, then
 
 \[
 \boxed{
-0\le d<\frac{A_w}{2^j}<\frac q3<\frac j3.}
-\]
-
-The displacement is the short full-denominator residue
-
-\[
-d\equiv A_w3^{-q}\pmod{2^j-3^q}.
-\]
-
-## Polynomial sparsity at arbitrary bank
-
-Let `E_j` be the complete set of length-`j` first-crossing words having some positive non-descending realization.
-
-With
-
-\[
-\lambda_j=j\log2-q\log3,
-\]
-
-`T-6911` proves the exact source-free count
-
-\[
-\boxed{
-|E_j|
+A_v/2^j
 <
-\frac{j}{3(1-e^{-\lambda_j})}
-\le
-\frac{2j}{3\lambda_j}.}
+A_{\rm mech}/2^j
+-
+(3^q/2^j)R/12.}
 \]
 
-Under a reviewed effective Baker/Matveev lower bound
+Therefore the possible `d` interval loses at least that amount. PR #81 gives
 
 \[
-\lambda_j\ge c_0j^{-\mu},
+R\ge\sqrt{(\log2/(2\log3))j}-O(\log j)
 \]
 
-this becomes
+for every unbounded acyclic exceptional family.
 
-\[
-\boxed{|E_j|=O(j^{\mu+1}).}
-\]
+This is a genuine square-root improvement but does not yet force the local
+jets to disagree.
 
-Hence the entire exceptional language has zero exponential growth and every member is describable from one polynomial-sized ordinary start using `O(log j)` bits.
+## X-6912 method boundary
 
-This closes positive **family entropy** with no bank restriction. It does not by itself bound the internal subword complexity of one exceptional word.
-
-## Exact envelope reduction
-
-Let
-
-\[
-m_N^{\rm sup}
-=
-\min\{m>0:3^{q_k(m)}\ge2^k\text{ for all }k\le N\}.
-\]
-
-At each valid crossing length `j`, let `w_mech(j)` be the unique upper mechanical first-crossing word and put
-
-\[
-F_j=
-\frac{A_{w_{\rm mech}(j)}}{2^j-3^{q(j)}}.
-\]
-
-Then
-
-\[
-\boxed{m_{j-1}^{\rm sup}>F_j}
-\]
-
-forces descent for every length-`j` crossing. Because `F_j` is unbounded along lower continued-fraction convergents, the same cofinal inequality also forces
-
-\[
-m_N^{\rm sup}\to\infty.
-\]
-
-A coarser explicit bound is
-
-\[
-F_j<
-G_j=
-\frac{q(j)2^{j-1}}{2^j-3^{q(j)}}.
-\]
-
-## Infinite regions already removed
-
-Subject to the declared logarithmic-form input, an unbounded acyclic canonical-failure family cannot have
+Exact finite regression through length `27`:
 
 ```text
-logarithmic coefficient bank + uniformly zero internal factor entropy;
+first-crossing words:             502,523
+nontrivial canonical failures:         0
+single-prime-power strategy failures:  3
 ```
 
-or, more generally,
+The first local-strategy failure is
 
 ```text
-polynomial internal factor complexity degree s
-+ bank o(j^(1/s)).
+j=27,
+q=17,
+D=5*71*14303.
 ```
 
-In addition, `T-6911` shows that the collection of all failures at a fixed length is only polynomially large, even when the bank is linear or larger.
+Three descending words have every individual prime-power residue inside the
+bad interval. A proper two-factor CRT block rejects each one.
 
-## One-pulse closure
+Therefore one-factor size arguments cannot prove FC*. Cross-factor
+synchronization is a mathematically necessary layer, not merely an
+implementation detail.
 
-For a one-pulse lift of either known negative accelerated cycle, arbitrary repetition and rotation, a positive near-return gives
+## Current exact frontier
 
-\[
-D\mid g(2^\delta-1)-3d,
-\qquad
-0<D\le g(2^\delta-1).
-\]
+FC* is not proved.
 
-The Matveev/continued-fraction architecture excludes every repetition, subject to source reconstruction. The sole hit is the trivial cycle
+The final complete objects are:
 
 ```text
-(1,2) -> (2,2),
-start=endpoint=1,
-d=0.
+Object B:
+  balanced large-factor blocks with identical d and identical endpoint jet;
+
+Object G:
+  one giant prime-power block returning small d,r,s
+  plus one completing small cofactor.
 ```
 
-## Remaining frontier
+Equivalently, prove that the resultant-root sum cannot have a least residue
+below `A_w/2^j`, including residue zero.
 
-The unrestricted target is now a polynomially sparse sequence of high-bank, potentially high internal-factor-complexity, genuinely nonperiodic words satisfying
-
-\[
-\boxed{
-A_w
-=n(2^j-3^q)+d3^q,
-\qquad
-0\le d<j/3,}
-\]
-
-where `n` is the endpoint and the start is `n-d`.
-
-Equivalent scalar form:
+SC* remains separate:
 
 ```text
-prove m_(j-1)^sup > F_j cofinally.
+min_{w in W_N^sup} r_w -> infinity.
 ```
 
-The remaining issue is sparsity versus emptiness: a residue-avoidance, return, or full-denominator theorem must eliminate the final thin exceptional sequence.
+## New claims and artifact
+
+```text
+L-6912  complete-factor synchronization and quotient jets
+L-6913  resultant-root lacunary normal form
+T-6914  rough-support displacement-window shrinkage
+R-6915  exact cross-factor method boundary
+X-6912  independent factor-synchronization regression
+```
