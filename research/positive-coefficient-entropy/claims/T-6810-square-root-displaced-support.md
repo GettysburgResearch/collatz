@@ -5,6 +5,7 @@
 **Agent:** `gpt56-positive-entropy-01` (`GPT-5.6 Pro`)  
 **Issue:** #75  
 **Date:** 2026-07-31  
+**Last updated:** 2026-07-31  
 **Dependencies:** `L-6808`, `L-6811`; the exact long-return barrier from the coefficient-tangent packet; Rhin's logarithmic-form bound in the normalization quoted by Rozier--Terracol  
 **Scope:** unbounded families of acyclic canonical coefficient-first-crossing failures
 
@@ -95,7 +96,7 @@ Therefore
 
 This is the load-bearing improvement over the earlier estimate `B<I+1`.
 
-## 3. Support forces a long repeated factor
+## 3. Support forces a long repeated factor, or is already linear
 
 Put
 
@@ -105,11 +106,10 @@ L_R=
 \tag{5}
 \]
 
-`L-6811` proves that, whenever `L_R>=1`, the proper prefix contains a
-repeated factor of length `L_R`.
-
-By the acyclicity assumption, the corresponding physical source states are
-distinct.  The exact return/gap theorem therefore gives
+If `L_R>=1`, `L-6811` proves that the proper prefix contains a repeated
+factor of length `L_R`. By the acyclicity assumption, the corresponding
+physical source states are distinct. The exact return/gap theorem therefore
+gives
 
 \[
 \boxed{
@@ -126,7 +126,17 @@ where
 \lambda_j=j\log2-q\log3>0.
 \]
 
-Equation `(6)` is elementary once the repeated physical factor is supplied.
+If `L_R=0`, then
+
+\[
+R>{j-4\over2}.
+\tag{7}
+\]
+
+This is already much stronger than the square-root conclusion. Section 5
+checks explicitly that it also implies the finite floor claimed there. Thus
+all subsequent return inequalities may be proved under `L_R>=1` without
+losing a case.
 
 ## 4. Source-qualified logarithmic form
 
@@ -135,20 +145,20 @@ The quoted specialization of Rhin's theorem gives
 \[
 \boxed{
 \lambda_j\ge j^{-13.3}.}
-\tag{7}
+\tag{8}
 \]
 
 The exact primary-source normalization remains an explicit review
 obligation.
 
-For `j>=2`, equations `(4)`, `(6)`, and `(7)` imply
+For `j>=2`, equations `(4)`, `(6)`, and `(8)` imply
 
 \[
 2^{L_R}+1
 <
 {3\over2}
 3^{R+1}j^{14.3}.
-\tag{8}
+\tag{9}
 \]
 
 Hence, writing
@@ -157,14 +167,14 @@ Hence, writing
 c=\log_2 3,
 \qquad
 A_j=14.3\log_2j+1+\log_2(3/2),
-\tag{9}
+\tag{10}
 \]
 
 we obtain
 
 \[
 L_R<c(R+1)+14.3\log_2j+\log_2(3/2).
-\tag{10}
+\tag{11}
 \]
 
 ## 5. Exact square-root floor
@@ -175,14 +185,14 @@ Set
 z=R+1.
 \]
 
-The floor in `(5)` gives
+In the return case `L_R>=1`, the floor in `(5)` gives
 
 \[
 L_R\ge{j-2\over2z}-1.
-\tag{11}
+\tag{12}
 \]
 
-Combining `(10)--(11)`,
+Combining `(11)--(12)`,
 
 \[
 {j-2\over2z}<cz+A_j.
@@ -193,7 +203,7 @@ Equivalently,
 \[
 \boxed{
 2cz^2+2A_jz-(j-2)>0.}
-\tag{12}
+\tag{13}
 \]
 
 The positive root is
@@ -202,7 +212,7 @@ The positive root is
 \rho_j
 =
 {-A_j+\sqrt{A_j^2+2c(j-2)}\over2c}.
-\tag{13}
+\tag{14}
 \]
 
 Since `z` is an integer and `z>rho_j`,
@@ -218,14 +228,30 @@ R
  \over2\log_2 3}
 \right\rfloor
 \right\}.}
-\tag{14}
+\tag{15}
 \]
 
-This is an explicit all-length source-qualified support floor.
+It remains only to verify `(15)` when `L_R=0`. For `j<5`, the right side of
+`(15)` is zero. For `j>=5`, rationalizing `(14)` gives
+
+\[
+\rho_j
+={j-2\over A_j+\sqrt{A_j^2+2c(j-2)}}
+<{j-2\over2A_j}.
+\]
+
+Here `A_j>(j-2)/(j-4)` for every `j>=5`, so
+
+\[
+\rho_j<{j-4\over2}<R
+\]
+
+by `(7)`. Thus `(15)` holds in both cases and is an explicit all-length
+source-qualified support floor.
 
 ## 6. Asymptotic extraction
 
-Because `A_j=O(log j)`, equation `(13)` gives
+Because `A_j=O(log j)`, equation `(14)` gives
 
 \[
 \rho_j
@@ -247,13 +273,13 @@ we obtain `(1)`.
 ## 7. Source-free candidate form
 
 For one concrete candidate family, no generic logarithmic-form theorem is
-needed.  If an exact directed bound
+needed. If an exact directed bound
 
 \[
 \lambda_j\ge\lambda_0(j)>0
 \]
 
-is available, every acyclic target failure must satisfy
+is available and `L_R>=1`, every acyclic target failure must satisfy
 
 \[
 \boxed{
@@ -261,15 +287,16 @@ is available, every acyclic target failure must satisfy
 <
 3^{R+1}
 \left({j\over\lambda_0(j)}+{j\over2}\right).}
-\tag{15}
+\tag{16}
 \]
 
 The reverse inequality is a complete finite contradiction for that family.
+If `L_R=0`, the support is already larger than `(j-4)/2`.
 
 ## 8. Strategic meaning
 
 The earlier geometry required only cube-root-growing support because it first
-passed through total swap area.  `L-6811` counts edited binary positions
+passed through total swap area. `L-6811` counts edited binary positions
 directly and closes that loss.
 
 A surviving acyclic Box-2 obstruction is now forced to have
@@ -281,7 +308,7 @@ at least sqrt(alpha*j/2)-O(log j) distinct displaced odd positions;
 not merely a large total displacement concentrated on a few positions.
 
 Together with `T-6809`, those positions begin after an initial mechanical
-agreement of only logarithmic length.  Together with `L-6810`, the resulting
+agreement of only logarithmic length. Together with `L-6810`, the resulting
 near-return also separates from its old parity tail within logarithmic depth.
 
 ## 9. Gap audit
