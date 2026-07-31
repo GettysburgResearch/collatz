@@ -203,7 +203,8 @@ def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--output',type=Path); ap.add_argument('--check-results',type=Path)
     a=ap.parse_args(); data=build(); payload=json.dumps(data,indent=2,sort_keys=True)+'\n'
     if a.output:a.output.write_text(payload,encoding='utf-8')
-    if a.check_results and payload!=a.check_results.read_text(encoding='utf-8'):
-        raise SystemExit('result mismatch')
+    if a.check_results:
+        expected=json.loads(a.check_results.read_text(encoding='utf-8'))
+        if data!=expected: raise SystemExit('result mismatch')
     print(payload,end='')
 if __name__=='__main__':main()
