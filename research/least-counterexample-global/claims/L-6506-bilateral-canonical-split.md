@@ -5,7 +5,7 @@
 **Status:** `PROPOSED`  
 **Authoring agent:** `gpt56-positive-02` (`GPT-5.6 Pro`)  
 **Created:** 2026-08-01  
-**Dependencies:** `L-6504`; canonical start/end ray `L-6803` on PR #81  
+**Dependencies:** `L-6504`; canonical start/end ray `L-6803` on PR #81; branch-qualified PR #77 divergence  
 **Scope:** an actual positive ordinary all-prefix-supercritical orbit at a cusp prefix  
 **Related candidates:** none
 
@@ -164,25 +164,32 @@ where `t_0` is one fixed source-dependent prefix threshold from `(3)--(4)`.
 
 Thus a linear number of cuts have exact zero lift in both canonical directions.
 
-## 5. Exact capacity inequality
+## 5. Ordinary distinctness and capacity
 
-An all-prefix-supercritical orbit has no repeated state. Let
+Branch-qualified PR #77 makes an all-prefix-supercritical positive orbit tend to `+infinity`. A deterministic orbit tending to infinity cannot repeat a state; a repetition would make it eventually periodic. Also all-prefix supercriticality gives
+
+\[
+x_t=3^{D_t}n+E_t\ge n.
+\tag{12}
+\]
+
+Let
 
 \[
 I_K(\varepsilon)
 =
 \{t_0,\ldots,\lfloor(\alpha-\varepsilon)K\rfloor\}
-\tag{12}
+\tag{13}
 \]
 
 and define the cut capacity
 
 \[
 B_t=\min\{3^{q_t},2^{K-t}\}.
-\tag{13}
+\tag{14}
 \]
 
-The distinct positive integers `x_t`, `t in I_K(epsilon)`, satisfy
+The `x_t`, `t in I_K(epsilon)`, are distinct integers satisfying
 
 \[
 n\le x_t\le B_t.
@@ -194,7 +201,7 @@ Hence, for every real `Y>=n`,
 \boxed{
 \#\{t\in I_K(\varepsilon):B_t\le Y\}
 \le\lfloor Y\rfloor-n+1.}
-\tag{14}
+\tag{15}
 \]
 
 In particular,
@@ -203,10 +210,10 @@ In particular,
 \boxed{
 \max_{t\in I_K(\varepsilon)}B_t
 \ge n+|I_K(\varepsilon)|-1.}
-\tag{15}
+\tag{16}
 \]
 
-Equation `(14)` is a fixed-integer, two-boundary Hall-type capacity condition. It is not available for a generic inverse-limit path.
+Equation `(15)` is a fixed-integer, two-boundary Hall-type capacity condition. It is not available for a generic inverse-limit path.
 
 ## 6. Why this is stronger than two endpoint rates
 
@@ -231,7 +238,7 @@ The internal state is constrained by both expanding moduli at once, as in `(9)`.
 
 ## 7. Exact missing inequality
 
-The current estimates do not make `(14)` fail: the capacities `B_t` may still be exponentially large.
+The current estimates do not make `(15)` fail: the capacities `B_t` may still be exponentially large.
 
 A sufficient Lane-A closure is now the following single inequality. Prove that every sufficiently long all-prefix-supercritical prefix with fixed canonical source `n` and subexponential canonical endpoint has some `Y=exp(o(K))` for which
 
@@ -240,10 +247,10 @@ A sufficient Lane-A closure is now the following single inequality. Prove that e
 \#\{t\in I_K(\varepsilon):
 \min(3^{q_t},2^{K-t})\le Y\}
 >Y-n+1.}
-\tag{16}
+\tag{17}
 \]
 
-Then `(14)` gives an immediate contradiction.
+Then `(15)` gives an immediate contradiction.
 
 Equivalently, one may prove any stronger boundary uncertainty estimate that forces too many internal canonical states into too short an ordinary interval.
 
@@ -252,5 +259,6 @@ Equivalently, one may prove any stronger boundary uncertainty estimate that forc
 - The suffix criterion uses the endpoint modulus `3^R`, not the full-prefix modulus `3^q`.
 - The lift parameter in `(6)` is the same on the source and endpoint sides; condition `(7)` forces it to be exactly zero.
 - The linear cut interval follows from `q>=alpha K`, `q_t<=t`, and `log s=o(K)`; no mixing heuristic is used.
-- Equation `(14)` is exact but currently compatible with exponential capacities.
+- Distinctness is an ordinary dynamical fact, not a symbolic cylinder count.
+- Equation `(15)` is exact but currently compatible with exponential capacities.
 - This lemma does not exclude Lane A by itself.
