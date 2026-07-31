@@ -6,7 +6,7 @@
 **Issue:** #75  
 **Date:** 2026-07-31  
 **Last updated:** 2026-07-31  
-**Dependencies:** `L-6808`, `L-6811`; the exact long-return barrier from the coefficient-tangent packet; Rhin's logarithmic-form bound in the normalization quoted by Rozier--Terracol  
+**Dependencies:** `L-6808`, `L-6811`, `L-6815`; Rhin's logarithmic-form bound in the normalization quoted by Rozier--Terracol  
 **Scope:** unbounded families of acyclic canonical coefficient-first-crossing failures
 
 ## 1. Statement
@@ -94,8 +94,6 @@ Therefore
 \tag{4}
 \]
 
-This is the load-bearing improvement over the earlier estimate `B<I+1`.
-
 ## 3. Support forces a long repeated factor, or is already linear
 
 Put
@@ -108,15 +106,14 @@ L_R=
 
 If `L_R>=1`, `L-6811` proves that the proper prefix contains a repeated
 factor of length `L_R`. By the acyclicity assumption, the corresponding
-physical source states are distinct. The exact return/gap theorem therefore
-gives
+physical source states are distinct. The sharpened exact return gate
+`L-6815` therefore gives
 
 \[
 \boxed{
 2^{L_R}+1
 <
-3^B
-\left({j\over\lambda_j}+{j\over2}\right),}
+3^B\left({q\over3\lambda_j}+{q\over3}\right),}
 \tag{6}
 \]
 
@@ -133,10 +130,8 @@ R>{j-4\over2}.
 \tag{7}
 \]
 
-This is already much stronger than the square-root conclusion. Section 5
-checks explicitly that it also implies the finite floor claimed there. Thus
-all subsequent return inequalities may be proved under `L_R>=1` without
-losing a case.
+This is already stronger than the square-root conclusion. Section 5 verifies
+that it also implies the explicit finite floor below.
 
 ## 4. Source-qualified logarithmic form
 
@@ -151,13 +146,14 @@ The quoted specialization of Rhin's theorem gives
 The exact primary-source normalization remains an explicit review
 obligation.
 
-For `j>=2`, equations `(4)`, `(6)`, and `(8)` imply
+For `j>=1`, equations `(4)`, `(6)`, `(8)`, and `q<j` imply
 
 \[
+\boxed{
 2^{L_R}+1
 <
-{3\over2}
-3^{R+1}j^{14.3}.
+{2\over3}
+3^{R+1}j^{14.3}.}
 \tag{9}
 \]
 
@@ -166,14 +162,14 @@ Hence, writing
 \[
 c=\log_2 3,
 \qquad
-A_j=14.3\log_2j+1+\log_2(3/2),
+A_j=14.3\log_2j+1+\log_2(2/3),
 \tag{10}
 \]
 
 we obtain
 
 \[
-L_R<c(R+1)+14.3\log_2j+\log_2(3/2).
+L_R<c(R+1)+14.3\log_2j+\log_2(2/3).
 \tag{11}
 \]
 
@@ -285,8 +281,7 @@ is available and `L_R>=1`, every acyclic target failure must satisfy
 \boxed{
 2^{\lfloor(j-2)/(2(R+1))\rfloor}+1
 <
-3^{R+1}
-\left({j\over\lambda_0(j)}+{j\over2}\right).}
+3^{R+1}\left({q\over3\lambda_0(j)}+{q\over3}\right).}
 \tag{16}
 \]
 
@@ -295,21 +290,18 @@ If `L_R=0`, the support is already larger than `(j-4)/2`.
 
 ## 8. Strategic meaning
 
-The earlier geometry required only cube-root-growing support because it first
-passed through total swap area. `L-6811` counts edited binary positions
-directly and closes that loss.
-
-A surviving acyclic Box-2 obstruction is now forced to have
+`L-6811` counts edited binary positions directly, while `L-6815` pays only the
+true one-third affine correction. Together they force
 
 ```text
-at least sqrt(alpha*j/2)-O(log j) distinct displaced odd positions;
+at least sqrt(alpha*j/2)-O(log j) distinct displaced odd positions
 ```
 
-not merely a large total displacement concentrated on a few positions.
+in every surviving acyclic Box-2 obstruction.
 
 Together with `T-6809`, those positions begin after an initial mechanical
 agreement of only logarithmic length. Together with `L-6810`, the resulting
-near-return also separates from its old parity tail within logarithmic depth.
+near-return separates from its old parity tail within logarithmic depth.
 
 ## 9. Gap audit
 
