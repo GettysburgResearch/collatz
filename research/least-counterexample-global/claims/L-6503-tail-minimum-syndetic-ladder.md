@@ -77,17 +77,18 @@ then
 \tag{4}
 \]
 
-Finally, let
+Finally let
 
 \[
-\mathcal I=\{m\in\mathbf Z_{>0}:T^r(m)\ge m\text{ for every }r\ge0\}
+\mathcal C=
+\{m\in\mathbf Z_{>0}:\text{the forward orbit of }m\text{ does not reach }1\}.
 \]
 
-be the infinite-stopping set. Then one divergent orbit forces the quantitative lower bound
+One divergent orbit forces
 
 \[
 \boxed{
-\#(\mathcal I\cap[1,X])
+\#(\mathcal C\cap[1,X])
 \ge
 {(\log X)^2\over2\log2\,\log(3/2)}
 +O_n(\log X).}
@@ -160,8 +161,7 @@ h_{i+1}+1
 Iteration yields
 
 \[
-\boxed{
-h_i+1\le(h_0+1)(3/2)^i.}
+\boxed{h_i+1\le(h_0+1)(3/2)^i.}
 \tag{6}
 \]
 
@@ -202,15 +202,9 @@ Every power-of-two multiple
 \qquad a\ge0,
 \]
 
-belongs to `mathcal I`: its orbit takes `a` even steps to reach `h_i`, never falling below its starting value before that only when interpreted as infinite stopping relative to itself? This sentence requires care. The ordinary stopping condition for `2^a h_i` is not preserved because its first iterate is smaller.
+belongs to `mathcal C`: after `a` even steps its orbit reaches `h_i` and then follows the same divergent tail.
 
-Accordingly, use the correct counterexample set
-
-\[
-\mathcal C=\{m:T^r(m)\text{ never reaches }1\}.
-\]
-
-Every `2^a h_i` lies in `mathcal C`, because it reaches the divergent tail `h_i`. Distinct odd parts make all these integers distinct.
+The odd parts `h_i` are distinct. Therefore all integers `2^a h_i` are distinct.
 
 For each `i` with `h_i<=X`, the admissible powers contribute
 
@@ -236,18 +230,9 @@ By `(6)`, `h_i<=X` for `0<=i<=M_X`. Also
 L_X-i\log(3/2)+O_n(1/X).
 \]
 
-Summing the power-of-two counts over `0<=i<=M_X` gives
+Summing the power-of-two counts over `0<=i<=M_X` gives `(5)`.
 
-\[
-\boxed{
-\#(\mathcal C\cap[1,X])
-\ge
-{(\log X)^2\over2\log2\,\log(3/2)}
-+O_n(\log X).}
-\tag{8}
-\]
-
-Thus the valid quantitative conclusion concerns the **nonconvergent/counterexample set**, not the infinite-stopping set `mathcal I`. Equation `(5)` is therefore replaced by `(8)`.
+The distinction is essential: powers of two preserve **nonconvergence** by reaching the same divergent tail, but they do not preserve infinite stopping time relative to their own larger starting values.
 
 ## 6. Lane-A corollary
 
@@ -257,7 +242,7 @@ Assume a positive ordinary orbit satisfies
 3^{q_k}\ge2^k\qquad(k\ge1).
 \]
 
-Branch-qualified PR #77 `T-6709` proves that the orbit tends to `+infinity`. Therefore the present lemma applies and produces an infinite ladder `(h_i)` satisfying `(2)--(4)` and a counterexample-family count satisfying `(8)`.
+Branch-qualified PR #77 `T-6709` proves that the orbit tends to `+infinity`. Therefore the present lemma applies and produces an infinite ladder `(h_i)` satisfying `(2)--(4)` and a counterexample-family count satisfying `(5)`.
 
 So an all-prefix-supercritical counterexample cannot be an isolated exceptional start. Its own forward orbit manufactures infinitely many larger infinite-stopping starts with multiplicative gaps at most `3/2`, coefficient-stopping depth tending to infinity, and at least quadratically logarithmically many distinct nonconvergent starts below `X` after inverse powers of two are included.
 
@@ -265,7 +250,7 @@ So an all-prefix-supercritical counterexample cannot be an isolated exceptional 
 
 The lemma is a genuine ordinary-orbit consequence. It does not use a symbolic completion, prescribed itinerary, finite-prefix count, or probabilistic model.
 
-The lower bound `(8)` remains compatible with every known almost-all theorem: `(log X)^2` is negligible compared with any positive power of `X`, and its logarithmic density is zero.
+The lower bound `(5)` remains compatible with every known almost-all theorem: `(log X)^2` is negligible compared with any positive power of `X`, and its logarithmic density is zero.
 
 Nor does the lemma prove that any `h_i` has `tau(h_i)=infinity`; all depths may be finite while tending to infinity.
 
@@ -275,7 +260,6 @@ Nor does the lemma prove that any `h_i` has `tau(h_i)=infinity`; all depths may 
 - The coefficient-depth statement uses only the finite exact threshold `(7)`.
 - The counterexample-family count uses only power-of-two inverse steps and unique odd parts.
 - The Lane-A implication `all-prefix supercritical => divergence` remains branch-qualified to PR #77.
-- The initial, tempting claim that powers of two preserve **infinite stopping time** is false; they preserve nonconvergence by eventually reaching the same divergent tail. The theorem states the corrected conclusion explicitly.
 - No proof of Collatz or of coefficient-stopping finiteness is claimed.
 
 ## 9. Suggested next attack
@@ -284,6 +268,6 @@ Couple the ladder simultaneously to:
 
 1. increasingly deep first-crossing/near-return equations when `tau(h_i)<infinity`;
 2. ordinary inverse-tree restrictions from minimality;
-3. a quantitative exceptional-set theorem stronger than `(8)`.
+3. a quantitative exceptional-set theorem stronger than `(5)`.
 
 Current almost-all results do not conflict with a quadratic-logarithmic exceptional family.
