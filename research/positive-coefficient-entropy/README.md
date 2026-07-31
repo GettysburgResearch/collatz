@@ -31,7 +31,7 @@ FC:
   canonical displacement endpoint-source < 0.
 ```
 
-`SC + FC` would prove Collatz.  Neither unrestricted statement is proved here.
+`SC + FC` would prove Collatz. Neither unrestricted statement is proved here.
 
 ## 1. Canonical start–end duality
 
@@ -96,7 +96,7 @@ Coefficient Stopping Time conjecture.
 begin at states differing by a multiple of `2^L`.
 
 `T-6801/T-6802` convert this into deterministic factor and coefficient-surplus
-pressure.  In particular, every ordinary all-time-supercritical path has
+pressure. In particular, every ordinary all-time-supercritical path has
 unbounded surplus and a logarithmic lower surplus envelope.
 
 `L-6804` records the stronger elementary physical fact:
@@ -151,7 +151,7 @@ Consequently, modulo the positive-cycle alternative, sufficiently long
 bounded-bank linear-complexity first-crossing families descend.
 
 `L-6806/T-6805` quantify distance from the upper-mechanical remainder
-extremizer.  An unbounded acyclic FC-obstruction family cannot remain
+extremizer. An unbounded acyclic FC-obstruction family cannot remain
 `o(sqrt(j))` close in integrated adjacent-swap distance.
 
 ## 5. Complete upper-mechanical closure — `T-6806/X-6801`
@@ -189,7 +189,7 @@ semantic digest:
 ```
 
 PR #82 proves that every no-wrap nonmechanical word is easier to descend than
-the mechanical word.  Therefore, subject to the positive-cycle alternative:
+the mechanical word. Therefore, subject to the positive-cycle alternative:
 
 \[
 \boxed{\text{every surviving FC obstruction is a nonmechanical modulus wrap.}}
@@ -197,7 +197,7 @@ the mechanical word.  Therefore, subject to the positive-cycle alternative:
 
 ## 6. Growing-support wrap barrier
 
-`L-6808` introduces the prefix-excess path above the mechanical word.  If
+`L-6808` introduces the prefix-excess path above the mechanical word. If
 
 ```text
 I = integrated adjacent-swap distance;
@@ -217,8 +217,7 @@ H\le R.
 For a canonical no-descent word, every individual displacement obeys
 
 \[
-h_i<
-1+\log_2j+(B+1)\log_2 3.
+h_i<1+\log_2j+(B+1)\log_2 3.
 \]
 
 Combining this elementary geometry with PR #82's source-qualified
@@ -229,8 +228,7 @@ bank–displacement uncertainty yields:
 \liminf\frac{I_j}{j^{2/3}}
 \ge
 \left(\frac{\alpha}{2}\right)^{2/3}
-=
-0.463412\ldots
+=0.463412\ldots
 }
 \]
 
@@ -241,8 +239,7 @@ and
 \liminf\frac{R_j}{j^{1/3}}
 \ge
 \left(\frac{\alpha^2}{2}\right)^{1/3}
-=
-0.583862\ldots.
+=0.583862\ldots.
 }
 \]
 
@@ -256,15 +253,58 @@ supported on cube-root many displaced odd positions;
 and accepted by one of fewer than j/2 full-denominator defect levels.
 ```
 
-## 7. Full-denominator near-cycle bridge
+## 7. Two logarithmic boundary departures
+
+`T-6809` proves that a target-failure word cannot initially shadow the
+mechanical extremizer for long. If `ell` is their common-prefix length, then
+
+\[
+\frac{2^{\lfloor(\ell-1)/3\rfloor}+1}{3}-\frac\ell2
+<\frac{1}{2^{j/q}-3},
+\]
+
+and, under the quoted Rhin exponent,
+
+\[
+\boxed{
+\limsup\frac{\ell}{\log_2j}\le42.9.
+}
+\]
+
+`L-6810` supplies the independent post-return boundary. If
+
+\[
+T^j(r)=r+\Delta,
+\qquad0<\Delta<j/2,
+\]
+
+and the parity sequences from `r` and `r+Delta` agree for `ell_tail` steps,
+then
+
+\[
+2^{\ell_{\rm tail}}\mid\Delta,
+\]
+
+so
+
+\[
+\boxed{
+\ell_{\rm tail}\le v_2(\Delta)<\log_2(j/2).
+}
+\]
+
+Every surviving acyclic obstruction therefore branches away early at both
+ends: from the mechanical extremizer near its start, and from its own old
+parity tail immediately after the near-return.
+
+## 8. Full-denominator near-cycle and prime-power compiler
 
 `L-6807` proves that every non-descending first crossing is an exact
 small-displacement near-cycle:
 
 \[
 2^j-3^q\mid A_w-2^j\Delta,
-\qquad
-0\le\Delta<j/2,
+\qquad0\le\Delta<j/2,
 \]
 
 with
@@ -273,15 +313,29 @@ with
 T^j(r_w)=r_w+\Delta.
 \]
 
-The cycle case is exactly `Delta=0`.  Acyclic FC obstructions are the common
+The cycle case is exactly `Delta=0`. Acyclic FC obstructions are the common
 small-displacement extension of the repository's full-denominator cycle
 problem.
 
-PR #82 `T-6609` further gives a necessary-and-sufficient fixed-length
-classification through a short list of fewer than `j/2` full-denominator
-levels.
+PR #82 `T-6609` gives a necessary-and-sufficient fixed-length classification
+through fewer than `j/2` full-denominator levels.
 
-## 8. Exact current blockers
+`L-6809` adds a lossless factorwise reconstruction. Factor
+
+\[
+D=2^j-3^q=\prod_sQ_s,
+\qquad h_s=\operatorname{ord}_{Q_s}(2).
+\]
+
+Under PR #34's source-qualified order window, compatible local excess paths
+modulo the `h_s`, the explicit first-crossing prefix barrier, one common
+ordinary `Delta<j/2`, every complete prime-power congruence, and the canonical
+positive range are necessary and sufficient for one exact ordinary near-return.
+
+A subset of factors may decode the word when its lcm-order exceeds `j-q`, but
+all omitted prime powers and the first-crossing gate remain mandatory.
+
+## 9. Exact current blockers
 
 ### SC
 
@@ -298,11 +352,11 @@ not establish this source-coordinate escape.
 
 ### FC
 
-Prove that the growing-support wrap displacement language avoids every short
-full-denominator target level of PR #82 `T-6609`, while retaining the cycle
-level separately.
+Prove that the growing-support, early-departing wrap language avoids every
+short full-denominator target level of PR #82 `T-6609`, while retaining the
+cycle level separately.
 
-## 9. Literature boundary
+## 10. Literature boundary
 
 The closest rigorous literature remains:
 
@@ -310,12 +364,18 @@ The closest rigorous literature remains:
 - Angeltveit on exact finite verification/descent sieves;
 - Chang on map balance versus still-open pointwise orbit balance;
 - Kramer on simultaneous real, `2`-adic, and `3`-adic exponent-code
-  compatibility.
+  compatibility;
+- Fernández--Ibáñez on Christoffel words as rotation-class maximizers for the
+  cycle numerator functional.
+
+The Christoffel theorem is complementary rather than a direct replacement:
+it optimizes a rotation-invariant cycle minimum, while this packet treats a
+fixed-start first-crossing canonical source and its wrap displacement.
 
 Almost-everywhere statements remain blocked by `R-6801`: positive ordinary
 integers form a countable Haar-null subset of `Z_2`.
 
-## 10. Review order
+## 11. Review order
 
 1. `claims/L-6803-canonical-start-end-rectangle.md`
 2. `claims/T-6806-upper-mechanical-all-length-closure.md`
@@ -323,16 +383,19 @@ integers form a countable Haar-null subset of `Z_2`.
 4. `claims/L-6808-bank-area-displacement-geometry.md`
 5. `claims/T-6807-two-thirds-mechanical-distance.md`
 6. `claims/T-6808-cuberoot-displaced-support.md`
-7. `claims/L-6807-small-displacement-full-denominator-bridge.md`
-8. `claims/L-6805-bilateral-corner-stabilization.md`
-9. `Q-6802-canonical-displacement-closure.md`
-10. earlier entropy claims, reports, and literature audit
+7. `claims/T-6809-logarithmic-early-departure.md`
+8. `claims/L-6810-near-return-self-shadowing.md`
+9. `claims/L-6809-near-cycle-prime-power-compiler.md`
+10. `claims/L-6807-small-displacement-full-denominator-bridge.md`
+11. `claims/L-6805-bilateral-corner-stabilization.md`
+12. `Q-6802-canonical-displacement-closure.md`
+13. earlier entropy claims, reports, and literature audit
 
 ## Status boundary
 
 All theorem-level claims remain **PROPOSED** pending independent
-reconstruction.  Claims using Rhin or generic effective linear forms are
-explicitly source-qualified.
+reconstruction. Claims using Rhin, generic effective linear forms, or the PR
+#34 order theorem are explicitly source-qualified.
 
 No proof of Collatz, counterexample, nontrivial cycle, or `K-####` object is
 claimed.
