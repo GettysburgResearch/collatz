@@ -1,0 +1,99 @@
+{
+  "analytic_base_rows": [
+    {
+      "factor_length": 124,
+      "j": 373,
+      "lower_denominator": 6,
+      "lower_numerator": "42535295865117307932921825928971025318",
+      "rhin_power_comparison": true,
+      "three_step_power_growth": true
+    },
+    {
+      "factor_length": 124,
+      "j": 374,
+      "lower_denominator": 6,
+      "lower_numerator": "42535295865117307932921825928971025315",
+      "rhin_power_comparison": true,
+      "three_step_power_growth": true
+    },
+    {
+      "factor_length": 124,
+      "j": 375,
+      "lower_denominator": 6,
+      "lower_numerator": "42535295865117307932921825928971025312",
+      "rhin_power_comparison": true,
+      "three_step_power_growth": true
+    }
+  ],
+  "analytic_induction_start": 373,
+  "experiment_id": "X-6801",
+  "finite_max_j": 372,
+  "first_valid_j": 2,
+  "interpretation": {
+    "not_proved": "descent for arbitrary nonmechanical first crossings, CST, or Collatz",
+    "proved_exactly": "every valid upper-mechanical first-crossing canonical pair with j<373 descends, except the trivial word 10; and the integer induction bases for j>=373 pass",
+    "source_dependency": "the all-length theorem additionally imports the quoted Rhin bound |j log 2-q log 3| >= j^(-13.3)"
+  },
+  "last_valid_j": 371,
+  "minimum_positive_defect": {
+    "defect": "1",
+    "j": 4
+  },
+  "nontrivial_failures": 0,
+  "sample_rows": [
+    {
+      "affine_numerator": "1",
+      "canonical_endpoint": "1",
+      "canonical_root": "1",
+      "descent_defect": "0",
+      "j": 2,
+      "q": 1,
+      "word": "10"
+    },
+    {
+      "affine_numerator": "5",
+      "canonical_endpoint": "2",
+      "canonical_root": "3",
+      "descent_defect": "1",
+      "j": 4,
+      "q": 2,
+      "word": "1100"
+    },
+    {
+      "affine_numerator": "23",
+      "canonical_endpoint": "10",
+      "canonical_root": "11",
+      "descent_defect": "1",
+      "j": 5,
+      "q": 3,
+      "word": "11010"
+    },
+    {
+      "affine_numerator": "83010261547199325497740708727877514335362981672443282267146600658831097723329551509680647040016702479488946036463",
+      "canonical_endpoint": "1420450927616841794911527549618118497494127023900865694085248658195844886898733416393971012665646875756050978093",
+      "canonical_root": "2313514792585718211668592017343384010211406934257566213150752008341785483972286063192976257951400246348326263803",
+      "descent_defect": "893063864968876416757064467725265512717279910356700519065503350145940597073552646799005245285753370592275285710",
+      "j": 370,
+      "q": 233,
+      "word": "1101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101101011011010110110101101101101011011010110110110101100"
+    },
+    {
+      "affine_numerator": "250233238443978179105901540249188683564105294482370906575241934953917784190847334052095355007223109014419188817101",
+      "canonical_endpoint": "3238099580039307276563184615412555631941592817067725789076930796545291070297846605608529423368125385482766392782",
+      "canonical_root": "3515968594965920824348006082899524568227756399298625986952884985766276504830965586246390145124401822300676971515",
+      "descent_defect": "277869014926613547784821467486968936286163582230900197875954189220985434533118980637860721756276436817910578733",
+      "j": 371,
+      "q": 234,
+      "word": "11011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110101101101011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011011010110110110101101101011011011010110110101101101011011011010110110101101101101011010"
+    }
+  ],
+  "semantic_sha256": "5d88f47548ca6716b7c10cf839dc7d65eb6efdff748b35cca9d709aa36771d2e",
+  "status": "EXACT FINITE CERTIFICATE / SOURCE-QUALIFIED ALL-LENGTH INTERFACE",
+  "trivial_equality": {
+    "endpoint": 1,
+    "j": 2,
+    "root": 1,
+    "word": "10"
+  },
+  "valid_mechanical_rows": 234
+}
