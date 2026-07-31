@@ -174,6 +174,22 @@ Unlike the earlier total-swap estimates, `(10)` does not deteriorate when a
 large displacement is distributed among many positions or concentrated into
 long moves.  Every distinct displaced odd position pays one fixed amount.
 
+In integer numerator coordinates, put
+
+\[
+\Delta A=A_u-A_v.
+\]
+
+Then `(10)` is exactly
+
+\[
+\boxed{
+\Delta A>{Q\over12}R(v).}
+\tag{12}
+\]
+
+This is the form that couples directly to the complete denominator.
+
 ## 5. Pointwise support-corrected source envelope
 
 Assume the canonical source `r_v` of `v` does not descend and write
@@ -186,8 +202,15 @@ T_v^j(r_v)=r_v+d,
 The exact affine equation gives
 
 \[
-E_v=(1-C)r_v+d.
-\tag{12}
+E_v=(1-C)r_v+d
+\tag{13}
+\]
+
+or, equivalently,
+
+\[
+\boxed{A_v=Dr_v+Pd.}
+\tag{14}
 \]
 
 Therefore
@@ -200,11 +223,11 @@ Put
 
 \[
 F_j={E_u\over1-C}
-={A_u\over2^j-3^q}.
-\tag{13}
+={A_u\over D}.
+\tag{15}
 \]
 
-Combining `(10)--(13)`,
+Combining `(10)--(15)`,
 
 \[
 \boxed{
@@ -213,14 +236,53 @@ Combining `(10)--(13)`,
  F_j
  -
  {C\,R(v)\over12(1-C)}.}
-\tag{14}
+\tag{16}
 \]
 
 Thus a nonmechanical failure never reaches the full mechanical envelope.  Its
 ordinary source loses an amount amplified by the same small coefficient gap
 `1-C` that makes `F_j` large near lower convergents.
 
-Using only the one-third upper bound `E_u<q/3` from `L-6812`, `(14)` also gives
+The exact complete-denominator face of the same statement is
+
+\[
+\boxed{
+A_u-Dr_v
+=Pd+\Delta A,}
+\tag{17}
+\]
+
+with
+
+\[
+\boxed{
+Pd+\Delta A>{Q\over12}R(v).}
+\tag{18}
+\]
+
+At every prime-power factor `Q_s|D`, the common displacement equation
+
+\[
+A_v\equiv Qd\pmod {Q_s}
+\]
+
+is therefore equivalent to
+
+\[
+\boxed{
+\Delta A
+\equiv
+A_u-Qd
+\pmod {Q_s},}
+\tag{19}
+\]
+
+while the same ordinary integer `Delta A` must satisfy `(12)`.  Hence the
+complete prime-power compiler must reconstruct not only one common `d`, but a
+mechanical loss numerator of support-forced Archimedean size.  No proper
+factor alone supplies `(17)`.
+
+Using only the one-third upper bound `E_u<q/3` from `L-6812`, `(16)` also gives
 the explicit scalar estimate
 
 \[
@@ -228,12 +290,12 @@ the explicit scalar estimate
  r_v
  <
  {q/3-C R(v)/12\over1-C}.}
-\tag{15}
+\tag{20}
 \]
 
-Equations `(14)--(15)` preserve source/endpoint notation: `r_v` is the source;
-the endpoint is `r_v+d`.  No quotient involving `A_v-3^q d` is substituted
-for the source.
+Equations `(16)--(20)` preserve source/endpoint notation: `r_v` is the
+source; the endpoint is `r_v+d`.  No quotient involving `A_v-Qd` is
+substituted for the source.
 
 ## 6. Strategic consequence
 
@@ -266,8 +328,8 @@ the weakened cofinal inequality still closes both coefficient lanes.
 - The support loss is strict and elementary; it uses no distribution or
   logarithmic-form theorem.
 - It does not by itself lower-bound the displaced support of a candidate.
-- It does not control the complete denominator or prove that a wrap is
-  impossible.
+- Equations `(17)--(19)` couple the support loss to the complete denominator,
+  but do not prove the required residue avoidance.
 - The correction is of order `R/(1-C)`; the unresolved source lower bound may
   still fail to dominate it.
 - No proof of SC*, FC*, CST, or Collatz is claimed.
