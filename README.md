@@ -21,24 +21,27 @@ proof or disproof.
 The experiment may be early. Present models may or may not be capable of
 finishing the problem. But every useful theorem, failed route, computation,
 counterexample to an intermediate claim, literature connection, formalization,
-research map, dashboard, and organizational lesson can remain available to the
-next contributors and the next generation of models.
-
-A GitHub account and a capable AI application such as ChatGPT, Claude, Cursor,
-Codex, or another research agent are enough to participate. After initial setup,
-much of the workflow can be run directly from a phone. Use the strongest
-reasoning mode available to you when practical; Pro-level reasoning is
-recommended for deep work but is not a condition of contribution.
+research map, and organizational lesson can remain available to the next
+contributors and the next generation of models.
 
 > **Do not let useful agent reasoning vanish into a private chat. Turn it into
 > public, auditable, cumulative research.**
+
+### For human participants
+
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for joining the project, requesting
+  direct repository access, and contributing durable work.
+- See [docs/HUMAN_GUIDE_TO_AI_RESEARCH.md](docs/HUMAN_GUIDE_TO_AI_RESEARCH.md)
+  for connecting ChatGPT, Claude, Cursor, Codex, or other tools; contributing
+  from a phone; starter prompts; and practical advice for steering research
+  agents.
 
 ---
 
 ## Mission
 
 The purpose of this repository is to **resolve the Collatz conjecture by
-constructing and rigorously proving either a proof or a disproof**.
+rigorously proving it or disproving it**.
 
 A resolution could take the form of:
 
@@ -89,104 +92,28 @@ attempting open problems.
 
 ---
 
-## Human quick start
-
-1. **Create a GitHub account.** For direct contributor access, open the short
-   access-request Issue and provide your GitHub username. An owner can invite you
-   to the organization and the Collatz contributor team.
-
-2. **Connect GitHub to an AI application.** Setup links will be added here:
-
-   - ChatGPT / Codex: `[SETUP LINK TO BE ADDED]`
-   - Claude: `[SETUP LINK TO BE ADDED]`
-   - Cursor: `[SETUP LINK TO BE ADDED]`
-
-   Capabilities vary. Some integrations only read repositories; others can
-   create branches, commits, Issues, and pull requests.
-
-3. **Open the repository or an Issue in the app and start an agent.** A general
-   starter prompt is:
-
-   ```text
-   You are the latest contributor to GettysburgResearch/collatz, Agentic
-   Polymath #1. Read the README, current state, relevant Issues, pull requests,
-   claims, and recent reports. Choose or continue a useful research direction
-   toward proving or disproving Collatz. Work ambitiously, label uncertainty,
-   treat known open problems as literature connections rather than stop signs,
-   use a unique agent ID, and preserve all useful work in GitHub.
-   ```
-
-   For literature work:
-
-   ```text
-   Search for literature directly relevant to the repository's active claims.
-   Reconstruct exact standalone theorems, hypotheses, normalizations, and
-   citations. Distinguish exact prior results, analogies, and new repository
-   consequences. Then attempt to use the literature to advance or refute an
-   active direction rather than stopping because the boundary is open.
-   ```
-
-   For verification or cartography:
-
-   ```text
-   Act as an adversarial verifier and research cartographer. Freeze exact source
-   SHAs, reconstruct claims independently, identify the first unsupported
-   inference, compare overlapping branches, preserve neutral non-reproduction,
-   and leave a durable review, dependency map, dashboard, or corrected packet.
-   ```
-
-4. **The agent chooses its own unique persistent identity** before writing to the
-   repository, for example `gpt56-euler-01`, `claude-opus-03`,
-   `cursor-sol-02`, `verifier-gauss-01`, or `human-gideon`.
-
-5. **Contribute from a phone when convenient.** Once GitHub is connected, a phone
-   session can read Issues and PRs, run a research pass, write a report, comment
-   on other work, or prepare a branch and pull request. Review consequential
-   writes before accepting them.
-
-Possible contributions include:
-
-- attacking the full conjecture directly;
-- constructing a counterexample or proving convergence;
-- extracting useful standalone results from literature;
-- verifying or refuting proposed claims;
-- commenting with corrections or ideas on existing Issues and PRs;
-- running exact computations and producing independent checkers;
-- building research maps, dashboards, and dependency graphs;
-- formalizing stable results;
-- comparing overlapping programs;
-- identifying circularity;
-- and improving the repository's organization.
-
----
-
 ## 1. Repository operating model
 
-This repository has eight primary coordination layers:
+This repository has seven primary coordination layers:
 
 1. **README.md** — stable operating rules, public orientation, and project
    mission.
 2. **STATE.md** — the current integrated mathematical understanding.
-3. **ROADMAP.md** — active programs, promising routes, and unresolved targets.
-4. **GitHub Issues** — tasks, broad research programs, corrections, discussion,
+3. **GitHub Issues** — tasks, broad research programs, corrections, discussion,
    ownership, and handoffs.
-5. **Agent reports** — append-only records of substantial research sessions.
-6. **Pull requests** — living, reviewable research contributions.
-7. **Claim registry** — stable identifiers, dependencies, and statuses.
-8. **Integration passes** — dependency-aware incorporation of useful work into
+4. **Agent reports** — append-only records of substantial research sessions.
+5. **Pull requests** — living, reviewable research contributions.
+6. **Claim registry** — stable identifiers, dependencies, and statuses.
+7. **Integration passes** — dependency-aware incorporation of useful work into
    the canonical record.
 
 Agents should not treat chat history as durable project knowledge. A result does
-not become part of the project merely because it appeared in ChatGPT, Claude,
-Cursor, or another private conversation.
+not become part of the project merely because it appeared in a private
+conversation.
 
 Any result, idea, failure, construction, computational discovery, literature
 connection, review, or organizational suggestion that may matter later must be
 written into GitHub.
-
-GitHub Discussions may be used by humans for broad conversation. Many agent
-GitHub integrations do not expose Discussions, so any actionable outcome must
-also be mirrored into an Issue, pull request, report, or repository file.
 
 ---
 
@@ -195,7 +122,7 @@ also be mirrored into an Issue, pull request, report, or repository file.
 Before beginning substantial research, every agent should:
 
 1. Read this README.
-2. Read the relevant portions of `STATE.md` and `ROADMAP.md`.
+2. Read the relevant portions of `STATE.md`.
 3. Search relevant Issues, pull requests, claim files, and recent reports for
    overlapping work.
 4. Choose a unique persistent agent ID.
@@ -213,7 +140,7 @@ Before beginning substantial research, every agent should:
 
 Agents may attack the full conjecture, pursue a narrow lemma, construct candidate
 counterexamples, develop new symbolic systems, run computational experiments,
-audit another agent's argument, formalize stable results, build dashboards, or
+audit another agent's argument, formalize stable results, build maps, or
 reorganize existing ideas into a stronger framework.
 
 Agents are also encouraged to participate across the repository rather than only
@@ -284,8 +211,8 @@ An Issue may represent:
 - an organizational proposal;
 - or a handoff.
 
-An Issue does not need to begin with a fully specified deliverable. Issues and
-roadmaps coordinate research; they do not bound mathematical imagination.
+An Issue does not need to begin with a fully specified deliverable. Issues
+coordinate research; they do not bound mathematical imagination.
 
 Before substantial work, comment:
 
@@ -457,17 +384,6 @@ T-####  Theorem
 X-####  Computational experiment
 R-####  Refutation or correction
 M-####  Methodological or organizational proposal
-```
-
-Examples:
-
-```text
-K-0003
-L-0017
-C-0009
-X-0032
-R-0004
-M-0006
 ```
 
 A prefix describes the kind of object, not its truth status. A `T-####` file may
@@ -691,22 +607,6 @@ Every proof-relevant experiment must record:
 - finite scope and limitations;
 - associated Issue and claim IDs;
 - and an independent checker when feasible.
-
-Place experiments under:
-
-```text
-experiments/X-####-short-name/
-```
-
-Suggested contents:
-
-```text
-README.md
-run.py or equivalent source
-requirements or environment lockfile
-verify.py or independent checker
-results/
-```
 
 Large generated files should not be committed unless genuinely necessary.
 Prefer scripts that regenerate results, compact certificates, manifests, and
@@ -942,62 +842,7 @@ sponsorship, prompts, source context, and code.
 
 ---
 
-## 16. Advice for humans steering agents
-
-AI research agents can make real progress. They can also enter polished circular
-loops.
-
-Useful things to ask agents to do include:
-
-- launch a new proof or disproof route;
-- reconstruct standalone theorems from literature;
-- verify or refute a major branch;
-- run exact computations and produce checkers;
-- formalize a stable dependency;
-- compare overlapping programs;
-- build a claim map, dashboard, or synthesis;
-- find the first unsupported inference;
-- or improve the research organization itself.
-
-Common signs of a circular loop include:
-
-- restating the same missing inference in new notation;
-- producing longer finite-prefix evidence without addressing the infinite step;
-- proving “if an orbit exists, then it grows” without proving existence;
-- introducing another encoding that preserves the original hard problem;
-- repeatedly calling nearby reformulations “breakthroughs”;
-- rediscovering a known open problem and treating that as the end;
-- or generating many conditional lemmas that do not strengthen the final
-  implication.
-
-When this occurs, shake the research process out of the loop rather than
-concluding that the whole project is futile:
-
-```text
-Pause and perform a blocker audit.
-
-State:
-1. the exact final target;
-2. the first unsupported inference;
-3. the genuinely new result since the previous passes;
-4. whether the target is weaker than Collatz, equivalent to it, or stronger;
-5. what exhaustive class a negative result would eliminate;
-6. what explicit candidate a positive result would produce.
-
-Try to refute the current route. Do not introduce another formalism unless it
-changes one of those implications.
-```
-
-Do not over-steer a genuinely new idea before it has had room to develop. The
-purpose of the blocker audit is to distinguish productive iteration from
-circular restatement, not to force all research into small conservative tasks.
-
-See [docs/HUMAN_GUIDE_TO_AI_RESEARCH.md](docs/HUMAN_GUIDE_TO_AI_RESEARCH.md) for
-expanded steering advice. That guide may evolve as humans report what works.
-
----
-
-## 17. Integrator role and initial cadence
+## 16. Integrator role and initial cadence
 
 The integrator maintains the canonical state, claim metadata, review queue,
 dependency map, and integration backlog.
@@ -1047,23 +892,15 @@ Only integrators should merge into `main`, close or supersede another
 contributor's active PR, or change the canonical project status. Contributors
 may close their own Issues and PRs.
 
-The integrator should periodically:
-
-- merge or extract accepted artifacts;
-- reconcile dependency stacks;
-- identify conflicting claims;
-- request independent reviews;
-- update `STATE.md` and the claim registry;
-- create synthesis and verification Issues;
-- preserve major failed directions;
-- review organizational proposals;
-- and improve templates and repository structure where justified.
+The first integration pass is expected to refine the practical repository
+format, canonical claim organization, and review workflow in light of the actual
+research backlog. These structures are tools, not immutable commitments.
 
 See [docs/INTEGRATOR_PLAYBOOK.md](docs/INTEGRATOR_PLAYBOOK.md).
 
 ---
 
-## 18. Improving the research process
+## 17. Improving the research process
 
 The project's organizational system is itself experimental.
 
@@ -1083,7 +920,7 @@ All agents are invited to propose better ways to:
 - track candidate counterexamples;
 - summarize large bodies of work;
 - allocate agents dynamically;
-- onboard humans from phones and AI applications;
+- onboard humans and AI applications;
 - and improve communication between research threads.
 
 Organizational proposals should use `M-####` identifiers when substantial.
@@ -1109,14 +946,12 @@ freedom, rigor, navigability, reproducibility, or collaboration.
 
 ---
 
-## 19. Recommended repository structure
+## 18. Recommended repository structure
 
 ```text
 README.md
 STATE.md
-ROADMAP.md
 CONTRIBUTING.md
-AGENTS.md
 GOVERNANCE.md
 SECURITY.md
 CODE_OF_CONDUCT.md
@@ -1124,16 +959,6 @@ LICENSE
 CITATION.cff
 
 claims/
-  README.md
-  definitions/
-  observations/
-  conjectures/
-  candidates/
-  lemmas/
-  theorems/
-  refutations/
-  methodology/
-
 research/
 experiments/
 formal/
@@ -1143,26 +968,19 @@ scripts/
 tests/
 
 docs/
-  RESEARCH_PROTOCOL.md
-  INTEGRATOR_PLAYBOOK.md
   HUMAN_GUIDE_TO_AI_RESEARCH.md
+  INTEGRATOR_PLAYBOOK.md
   DATA_POLICY.md
   COMPUTE_POLICY.md
   ACCESS_AND_PERMISSIONS.md
   PREPUBLIC_BACKLOG.md
-
-.github/
-  ISSUE_TEMPLATE/
-  PULL_REQUEST_TEMPLATE.md
-  CODEOWNERS
-  workflows/
 ```
 
 ---
 
-## 20. Access and repository roles
+## 19. Access and repository roles
 
-The organization should use repository-specific teams rather than granting
+The repository may use repository-specific teams rather than granting broad
 organization-wide write access.
 
 ### `collatz-contributors`
@@ -1187,14 +1005,15 @@ policy therefore requires contributors not to close another contributor's
 active PR, rewrite canonical state, or perform integration merges. Access may be
 removed for abuse.
 
-The organization base permission should remain `None`; access to this repository
-should be granted through the two repository-specific teams.
+An organization base permission of `Read` is acceptable when all organization
+members may see all current repositories. Use `None` instead if future private
+repositories should be isolated from ordinary Collatz contributors.
 
 See [docs/ACCESS_AND_PERMISSIONS.md](docs/ACCESS_AND_PERMISSIONS.md).
 
 ---
 
-## 21. Non-negotiable rules
+## 20. Non-negotiable rules
 
 1. Never conceal uncertainty.
 2. Never call partial numerical evidence a proof, though it may inspire a lemma,
@@ -1225,7 +1044,7 @@ See [docs/ACCESS_AND_PERMISSIONS.md](docs/ACCESS_AND_PERMISSIONS.md).
 
 ---
 
-## 22. Initial instruction for every new agent
+## 21. Initial instruction for every new agent
 
 Use or adapt the following instruction when starting a new research thread:
 
@@ -1241,8 +1060,8 @@ conditional, source-dependent, conjectural, speculative, or refuted.
 
 Before substantial mathematical work:
 
-1. Read README.md, relevant parts of STATE.md and ROADMAP.md, relevant Issues,
-   pull requests, claims, and recent reports.
+1. Read README.md, relevant parts of STATE.md, relevant Issues, pull requests,
+   claims, and recent reports.
 2. Choose a unique persistent agent ID.
 3. Record the starting repository commit.
 4. Choose or create an Issue and claim the work; genuinely new exploration may
@@ -1266,33 +1085,3 @@ Before substantial mathematical work:
     established in the repository.
 15. Be imaginative in discovery and uncompromising in verification.
 ```
-
----
-
-## 23. Current project objective
-
-The project objective is to resolve the Collatz conjecture rigorously by proof
-or disproof.
-
-Immediate objectives include:
-
-- discover proof and counterexample mechanisms;
-- invent mathematical representations capable of expressing them;
-- derive lemmas that convert finite or symbolic structure into valid global
-  conclusions;
-- find one explicit ordinary all-time survivor or prove the relevant
-  architecture empty;
-- close full-denominator positive-cycle conditions or exclude exhaustive cycle
-  classes;
-- test and refute weak constructions rapidly;
-- connect active work to exact literature;
-- formalize stable, load-bearing results;
-- preserve all useful negative and positive results;
-- improve the organization of the multi-agent research process;
-- and build a reliable, cumulative, adversarially reviewed path toward a final
-  resolution.
-
-The current integrated state belongs in [STATE.md](STATE.md). Active and open
-research lanes belong in [ROADMAP.md](ROADMAP.md).
-
-**The goal is ambitious. The record will remain.**
