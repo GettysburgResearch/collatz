@@ -16,8 +16,8 @@ This isolated `65xx` namespace belongs to issue #78. It does not modify canonica
 | `T-6506` | Theorem | Ordinary Lane A lies on the critical-density boundary and has subexponential cusp returns | PROPOSED / SOURCE-DEPENDENT | López--Stoll Theorem 1; `L-6501`, `T-6503`, `T-6504` |
 | `L-6504` | Lemma | Zero-rate canonical source/end cusp subsequence | PROPOSED / SOURCE-DEPENDENT | `T-6506`; parity-cylinder source/end duality |
 | `L-6505` | Lemma | Exact adelic product gain is saturated by the physical affine plane | PROPOSED | `L-6504`; elementary product formula |
-| `L-6506` | Lemma | Bilateral zero-lift structure across a Lane-A cusp | PROPOSED | `L-6504`; PR #81 `L-6803` |
-| `T-6507` | Theorem | Cusp correction pairs have unbounded multiplicative rank and prime support | PROPOSED / SOURCE-DEPENDENT | ESS Theorem 1.1; `L-6504`, `L-6505` |
+| `L-6506` | Lemma | Bilateral zero-lift structure across a Lane-A cusp | PROPOSED | `L-6504`; PR #81 `L-6803`; PR #77 divergence |
+| `T-6507` | Theorem | Cusp correction pairs have logarithmic multiplicative rank and prime support | PROPOSED / SOURCE-DEPENDENT | Beukers--Schlickewei Theorem 1.1; `L-6504`, `L-6505` |
 | `R-6501` | Refutation | The four scalar Lane-A estimates do not imply ordinary exclusion | PROVED | elementary explicit binary construction |
 | `R-6502` | Refutation/audit | Standard Subspace/Ridout smallness is consumed by one known affine relation | PROVED AS APPLICABILITY AUDIT | `L-6505`, `T-6507` |
 | `Q-6501` | Open question | Close both exhaustive coefficient-stopping lanes | OPEN / GLOBAL BLOCKER | all above; PR #76--#77 |
@@ -31,6 +31,7 @@ least positive counterexample
 
 Lane A: all coefficient prefixes are supercritical
   -> PR77/T-6709: actual orbit tends to +infinity
+  -> PR77/T-6710: SC* is exactly universal finite coefficient stopping
   -> L-6501: odd correction product <= e^(7/9) k^(1/9)
   -> T-6504: mean D >= (8/9) log_3 k - O_n(1)
   -> T-6503: every fixed low-surplus band has O(k^(1/9)) visits
@@ -40,8 +41,9 @@ Lane A: all coefficient prefixes are supercritical
        the apparent Subspace power saving is exactly the known affine plane;
        quotient product is at the projective-line baseline
   -> T-6507:
-       normalized cusp pairs generate rank >= log(J)/12^6-1;
-       prime support of product(A_j s_j) grows >= log(J)/(2*12^6)-O_n(1)
+       normalized cusp pairs generate rank >= (log_2 J)/8-1;
+       prime support of product(A_j s_j) grows >= (log_2 J)/16-O_n(1);
+       |N_J|+2|E_J| >= (log_2 J)/8-O_n(1)
   -> L-6506:
        a linear interval of internal cuts is canonical from both directions
        and obeys an exact ordinary capacity inequality
@@ -99,13 +101,19 @@ For the first `J` actual cusp levels, let `r_J` be the multiplicative rank gener
 Then
 
 ```text
-r_J >= log(J)/12^6 - 1.
+r_J >= (log_2 J)/8 - 1.
 ```
 
 Consequently the union of rational prime places dividing the cusp products `A_j s_j` has size at least
 
 ```text
-log(J)/(2*12^6) - O_n(1).
+(log_2 J)/16 - O_n(1).
+```
+
+If `N_J` and `E_J` denote the new numerator and endpoint prime sets, respectively, then more precisely
+
+```text
+|N_J|+2|E_J| >= (log_2 J)/8-O_n(1).
 ```
 
 This eliminates every fixed finite-rank or fixed-`S` cusp class but does not force a positive raw endpoint-height rate.
