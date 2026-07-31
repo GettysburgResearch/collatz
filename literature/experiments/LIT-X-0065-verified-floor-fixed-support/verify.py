@@ -141,8 +141,12 @@ def verify_family(f: dict[str, Any], split: int) -> None:
     good = 2 ** (A * s) - 3 ** ((s - 1) * k)
     bad = 3 ** ((snext - 1) * k) - 2 ** (A * snext)
     assert good > 0 and bad > 0
-    assert threshold["positive_rate_integer_margin"] == good
-    assert threshold["nonpositive_rate_integer_margin"] == bad
+    assert threshold["positive_rate_margin_sha256"] == hashlib.sha256(
+        f"{good}/1".encode()
+    ).hexdigest()
+    assert threshold["nonpositive_rate_margin_sha256"] == hashlib.sha256(
+        f"{bad}/1".encode()
+    ).hexdigest()
 
     leg = f["all_repetition_legendre"]
     assert leg["split_repetition"] == split
@@ -150,17 +154,25 @@ def verify_family(f: dict[str, Any], split: int) -> None:
         "small_range_integer_margin_Nstar_minus_kR2"
     ] > 0
 
-    rows = leg["pulse_base_rows"]
-    assert len(rows) == s
-    for offset, row in enumerate(rows):
+    assert leg["pulse_base_row_count"] == s
+    minimum = None
+    for offset in range(s):
         r = split + offset
         exponent = ((s - 1) * k * r) // s
-        assert row["r"] == r and row["exponent"] == exponent
         margin = A * r * L2.a - exponent * L3.b - logq(Fraction(6 * c * r)).b
         assert margin > 0
+        if minimum is None or margin < minimum[0]:
+            minimum = (margin, r, exponent)
+    assert minimum is not None
+    frozen_min = leg["minimum_pulse_log_margin"]
+    assert frozen_min["r"] == minimum[1]
+    assert frozen_min["exponent"] == minimum[2]
 
     period_margin = split * 2 ** (A * s) - (split + s) * 3 ** ((s - 1) * k)
-    assert period_margin == leg["pulse_period_integer_margin"] > 0
+    assert period_margin > 0
+    assert leg["pulse_period_margin_sha256"] == hashlib.sha256(
+        f"{period_margin}/1".encode()
+    ).hexdigest()
 
     rho = Fraction(s - 1, s)
     rate_lo = A * L2.a - rho * k * L3.b
