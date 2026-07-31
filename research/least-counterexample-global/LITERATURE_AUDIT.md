@@ -1,7 +1,7 @@
 # Latest-literature audit for the least-counterexample proof attack
 
 **Agent:** `gpt56-positive-02`  
-**Date:** 2026-07-31  
+**Date:** 2026-08-01  
 **Issue:** #78  
 **Status:** source-positioning audit; no source theorem is promoted automatically
 
@@ -13,162 +13,213 @@ Olivier Rozier and Claude Terracol, *Paradoxical behavior in Collatz sequences*,
 Discrete Mathematics 349 (2026), 115167.
 ```
 
-Its relevant contributions are:
+Its relevant contributions are the coefficient-versus-descent distinction, the paradoxical-sequence framework, harmonic-mean restrictions, and the implication from infinite stopping time to infinitely many paradoxical segments.
 
-- the exact distinction between coefficient contraction and actual descent;
-- the paradoxical-sequence framework;
-- harmonic-mean restrictions on paradoxical segments;
-- the observation that a counterexample with infinite stopping time generates infinitely many paradoxical segments;
-- the conjectural finiteness of nontrivial paradoxical behavior.
-
-The paper does **not** prove that paradoxical sequences are finite. Therefore it does not close Lane B.
-
-Native `T-6502` uses the same correction product, but adds the ordinary distinct-source specialization needed by a least-counterexample or one-period cycle segment.
+The paper does not prove that all nontrivial paradoxical behavior is finite. It does not close Lane B.
 
 ## 2. The May 2026 Niu note is withdrawn
 
-Tong Niu, arXiv:2605.13886, is marked withdrawn in version 2. The withdrawal comment says that Rozier--Terracol already contains the relevant enumeration and that the additional mediant observation follows from their data.
-
-Accordingly:
-
-```text
-arXiv:2605.13886 is not used as an independent load-bearing theorem.
-```
-
-Any useful parity-cylinder formula is reconstructed directly or cited to Terras/Everett/Rozier--Terracol instead.
+Tong Niu, arXiv:2605.13886, is withdrawn. It is not used as an independent load-bearing theorem.
 
 ## 3. Angeltveit improves finite verification, not exceptional-orbit elimination
 
-Vigleik Angeltveit, arXiv:2602.10466, gives a faster exact algorithm for verifying all starts below `2^N`, with less than a factor-two additional running time per added bit according to the abstract.
-
-PR #76 also imports an all-prefix ballot/descent constraint from the paper. That constraint is useful for narrowing a least counterexample, but remains necessary rather than sufficient. A finite verification algorithm, however efficient, does not prove that one unbounded exceptional orbit cannot exist.
-
-The source theorem and repository specialization require independent reconstruction before status promotion.
+Vigleik Angeltveit, arXiv:2602.10466, gives a faster exact finite-verification algorithm and supplies useful necessary descent constraints. A finite verification theorem does not exclude one unbounded exceptional orbit.
 
 ## 4. Chang isolates orbit mixing but does not prove it
 
-Edward Y. Chang, arXiv:2603.25753, proves a map-level balance theorem for compressed odd-to-odd residues and reduces the remaining bias to one orbit-level bit observed at sparse burst-ending times.
-
-The exact source boundary is:
+Edward Y. Chang, arXiv:2603.25753, proves map-level balance for compressed odd-to-odd residues and leaves a pointwise orbit-level one-bit mixing assertion open.
 
 ```text
 map-level residue balance is closed;
-pointwise orbit-level mixing remains open.
+pointwise behavior on the one least-counterexample orbit remains open.
 ```
-
-A map-level count cannot be substituted for balance along the one orbit of a least counterexample. To become a Collatz proof, the paper's remaining one-bit mixing statement must be proved for every positive orbit or at least for a hypothetical least counterexample.
 
 ## 5. López--Stoll forces the rational critical-density boundary
 
-Josefina López and Peter Stoll, arXiv:2101.12747, Theorem 1, state that if a rational `2`-adic integer has a divergent, noncyclic Collatz trajectory, then its parity-vector density satisfies
+Josefina López and Peter Stoll, arXiv:2101.12747, Theorem 1, state in their parity-vector convention that if a rational `2`-adic integer has a divergent noncyclic Collatz trajectory, then
 
 \[
 \liminf_{k\to\infty}{q_k\over k}
 ={\log2\over\log3}.
 \]
 
-This is the load-bearing source for native `T-6506`.
-
-For an all-prefix-supercritical ordinary orbit,
-
-\[
-q_k/k=\alpha+D_k/k\ge\alpha,
-\]
-
-so the theorem forces
+This is the load-bearing source for `T-6506`. For an all-prefix-supercritical ordinary orbit it gives
 
 \[
 \liminf D_k/k=0.
 \]
 
-It excludes every uniformly positive linear-surplus path. It does **not** exclude logarithmically or otherwise sublinearly banked paths. In particular it is fully compatible with the critical scalar model of `R-6501`.
+It excludes positive linear relative drift but permits the zero-rate cusp of `L-6504`.
 
-The source must be reconstructed independently in the exact shortcut/parity convention before promotion.
+## 6. Kramer identifies the two-boundary diagnostic but proves no uncertainty bound
 
-## 6. Kramer identifies the two-boundary diagnostic but supplies no lower bound
+Oliver Kramer, arXiv:2607.10041, studies real drift, canonical `2`-adic start height, and canonical `3`-adic endpoint height. The work provides necessary vanishing-rate diagnostics for a fixed positive integer and finite experiments, not a theorem excluding simultaneous vanishing.
 
-Oliver Kramer, arXiv:2607.10041, studies accelerated exponent codes through three quantities:
-
-```text
-real drift,
-2-adic canonical start height,
-3-adic canonical endpoint height.
-```
-
-The paper proves necessary asymptotically vanishing start/end residue rates for a code generated by one fixed positive integer and uses finite adaptive searches as diagnostics.
-
-Native `L-6504` reaches the exact Lane-A zero-rate corner:
-
-```text
-all-prefix nonnegative real drift,
-fixed ordinary source,
-subexponential canonical endpoint on a subsequence.
-```
-
-Kramer's experiments suggest a tradeoff but the paper explicitly does not prove a verification theorem. No positive lower bound on one of the two canonical rates is imported.
-
-A rigorous canonical-boundary uncertainty theorem would be a genuine Lane-A closure result.
+Native `L-6504` reaches exactly that unresolved corner.
 
 ## 7. Almost-all descent does not remove one exceptional orbit
 
-Terras--Everett density theorems, Tao's almost-bounded theorem, and later quantitative refinements are genuine global distribution results. Their exceptional sets may have density zero while still contain one orbit.
+Terras--Everett density results, Tao's almost-bounded theorem, and subsequent refinements allow a zero-density exceptional set. The `3/2`-syndetic multiplicative ladder of `L-6503` is still sparse enough to coexist with those conclusions.
 
-`L-6503` now shows that one divergent orbit produces a tail-minimum ladder with multiplicative gaps at most `3/2`. That remains compatible with zero natural and logarithmic density: a geometrically spaced set is too sparse to contradict an almost-all theorem.
+## 8. Effective logarithmic forms in Lane B
 
-These sources become decisive only after an architecture-specific statement turns one counterexample into quantitatively too many independent exceptions.
-
-## 8. Exact logarithmic forms in the first-crossing lane
-
-`T-6505` uses only a standard effective lower bound for the nonzero linear form
-
-\[
-j\log2-q\log3.
-\]
-
-The required conclusion is qualitative-polynomial:
+`T-6505` uses only a standard effective lower bound
 
 \[
 j\log2-q\log3\ge c_0j^{-\mu}
 \]
 
-for effective constants. This may be obtained from Baker's classical theory or a sharper modern two-logarithm theorem. Constants and normalization remain source-qualified until independently audited.
+for a nonzero form. Constants and exact normalization remain source-qualified.
 
-The theorem uses the lower bound to compare a polynomial no-descent height ceiling with an exponential ordinary repeated-factor floor. No finite numerical scan is load-bearing.
+# 9. Evertse--Schlickewei--Schmidt in the exact normalization used by `T-6507`
 
-## 9. Current repository frontier
-
-The positive-direction stack now includes PRs #76--#77, PR #80, PR #81, and PR #83.
-
-For Lane A, the combined necessary profile is:
+The primary source is:
 
 ```text
-actual orbit tends to +infinity;
-correction product <= e^(7/9) k^(1/9);
-mean D >= (8/9) log_3 k - O_n(1);
-fixed low bands have O(k^(1/9)) visits;
-liminf D_k/k = 0;
-canonical source/end rates vanish on a subsequence;
-tail minima form a 3/2-syndetic infinite-stopping ladder.
+J.-H. Evertse, H. P. Schlickewei, W. M. Schmidt,
+Linear equations in variables which lie in a multiplicative group,
+Annals of Mathematics 155 (2002), 807--836.
 ```
 
-For Lane B:
+For a characteristic-zero field `K`, fixed nonzero coefficients `a_1,...,a_m`, and a subgroup
+
+\[
+\Gamma\subset(K^*)^m
+\]
+
+of rank `r`, their Theorem 1.1 bounds the number of nondegenerate solutions of
+
+\[
+a_1x_1+\cdots+a_mx_m=1
+\]
+
+by
+
+\[
+\boxed{
+\exp\!\left((6m)^{3m}(r+1)\right).}
+\]
+
+The native application uses exactly
 
 ```text
-each first-crossing word has a finite exact ordinary list;
-bounded-bank low-complexity cofinal families are excluded;
-PR #83 closes one-pulse near-returns over known negative baselines;
-high-bank, high-complexity and multi-pulse families remain.
+K = Q,
+m = 2,
+a_1=a_2=1,
+(U_j,V_j) in Gamma,
+U_j+V_j=1,
+U_j,V_j>0.
 ```
 
-## 10. Honest literature conclusion
+Hence all solutions are nondegenerate and the exact constant is
 
-No inspected source on 2026-07-31 proves Collatz or silently closes either exhaustive lane.
+\[
+12^6=2\,985\,984.
+\]
 
-The strongest credible global targets are:
+This gives
 
-1. **Lane A:** a theorem excluding simultaneous zero-rate `2`-adic source and `3`-adic endpoint boundaries for an all-prefix-supercritical word;
-2. **Lane A alternative:** pointwise orbit mixing strong enough to force a coefficient-subcritical prefix on the same ordinary orbit;
-3. **Lane B:** a cofinal lower bound on the canonical least representative, or a full-denominator theorem eliminating every exact finite no-descent list;
-4. **cycles:** complete denominator equality/nondivisibility and replay, not proper-factor hits.
+\[
+\operatorname{rank}\langle(U_1,V_1),\ldots,(U_J,V_J)\rangle
+\ge {\log J\over12^6}-1.
+\]
 
-Map balance, almost-all descent, finite verification, exponent-code diagnostics, and paradoxical-sequence enumeration are supporting inputs. None may be promoted to the missing pointwise theorem.
+The stronger special two-variable bound quoted in the ESS introduction is not imported in this packet.
+
+## Applicability checklist satisfied
+
+1. **Fixed equation:** `U+V=1` at every cusp.
+2. **Fixed coefficients:** both coefficients are one.
+3. **Characteristic zero:** the field is `Q`.
+4. **Nondegenerate:** `U,V` are positive.
+5. **Distinct solutions:** `V=P_k^{-1}` strictly decreases along increasing odd counts.
+6. **Finite-rank group:** for each finite `J`, use the group generated by the first `J` actual pairs and apply the uniform quantitative bound.
+
+The result forces rank escape; it does not assume finite rank for the complete infinite sequence.
+
+# 10. Ru--Vojta moving targets: exact reason it does not close the cusp
+
+Ru and Vojta, *Schmidt's subspace theorem with moving targets*, Inventiones Mathematicae 127 (1997), 51--65, is the relevant source framework for slowly varying linear forms.
+
+At a Lane-A cusp, native `L-6505` constructs
+
+\[
+X=(A,3^q,2^k)
+\]
+
+and a normalized three-place product of order
+
+\[
+H(X)^{-4+o(1)}.
+\]
+
+The moving coefficient satisfies
+
+\[
+h(1,n,-s)=o(h(X)).
+\]
+
+However the points obey identically
+
+\[
+A+n3^q-s2^k=0.
+\]
+
+Thus the sequence is already linearly degenerate over the moving coefficient field. A moving-target theorem can return this plane; it cannot be used to infer a second relation without an additional nondegeneracy input.
+
+After quotienting the plane, the exact coordinate product is at the projective-line baseline
+
+\[
+H(3^q,2^k)^{-2}.
+\]
+
+No Ru--Vojta theorem is invoked positively in this packet. The source is used to identify and block an invalid applicability step.
+
+# 11. Ridout/Roth normalization boundary
+
+The fixed-source congruence is
+
+\[
+\left|n+{A\over3^q}\right|_2
+=2^{-k}|s|_2.
+\]
+
+At a cusp the approximant height is `3^{q+o(q)}` and the right side is `3^{-q+o(q)}`. The approximation exponent is only `1+o(1)`, below a Roth/Ridout exponent exceeding two.
+
+Therefore the one-place theorem does not close Lane A either.
+
+# 12. What the new literature input really proves
+
+The exact new conclusion is:
+
+```text
+an ordinary Lane-A cusp cannot remain in any fixed finite-rank
+multiplicative group or fixed finite set of prime places.
+```
+
+Quantitatively, among the first `J` cusp levels,
+
+\[
+\#\operatorname{supp}_{\rm prime}
+\left(6n\prod_{j\le J}A_js_j\right)
+\ge {\log J\over2\cdot12^6}-{1\over2}.
+\]
+
+The source does not say where the fresh rank appears. The affine numerators may carry it while the endpoint rate remains zero.
+
+# 13. Exact remaining source-level target
+
+A complete Diophantine closure now needs one of:
+
+1. a second independent slowly moving form after quotienting the physical plane;
+2. a theorem transferring numerator multiplicative rank to positive endpoint height;
+3. a bilateral capacity overload for the linear interval of zero-lift cuts in `L-6506`;
+4. pointwise orbit mixing on the same ordinary integer.
+
+No inspected source proves any of these statements.
+
+# 14. Honest literature conclusion
+
+No current source inspected through 2026-08-01 proves Collatz or silently closes either exhaustive lane.
+
+The new ESS application is rigorous and nontrivial, but its output is rank escape rather than ordinary-orbit exclusion. The moving-target and Ridout audits identify exact theorem boundaries rather than missing constants.
