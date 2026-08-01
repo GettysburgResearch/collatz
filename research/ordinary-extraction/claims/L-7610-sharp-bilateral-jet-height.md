@@ -17,140 +17,114 @@ This is a new strengthening discovered during the frozen review of PRs #80, #81,
 
 Let a shortcut-parity word of length `j` and weight `q` have affine map
 
-\[
-T_w(x)=\frac{Qx+A}{P},
-\qquad
+```text
+T_w(x)=(Q*x+A)/P,
 P=2^j,
-\quad
 Q=3^q,
-\quad
 D=P-Q>0.
-\]
+```
 
 Suppose its canonical source and endpoint satisfy
 
-\[
+```text
 T_w(r)=s=r+d,
-\qquad
-r,s\in\mathbf Z_{>0},
-\quad d\in\mathbf Z_{\ge0}.
-\]
+r,s positive ordinary integers,
+d>=0.
+```
 
 Put
 
-\[
-C=\frac QP,
-\qquad
-E=\frac AP,
-\qquad
-H_w=\frac AD=\frac{E}{1-C}.
-\]
+```text
+C=Q/P,
+E=A/P,
+H_w=A/D=E/(1-C).
+```
 
-Then:
+Then the following hold.
 
 ### A. Exact bilateral height formulas
 
-\[
-\boxed{
- r=\frac{E-d}{1-C},
- \qquad
- s=\frac{E-Cd}{1-C}.}
-\tag{1}
-\]
+```text
+r=(E-d)/(1-C),
+s=(E-C*d)/(1-C).
+```
 
 Consequently,
 
-\[
-\boxed{0<r\le s\le H_w,}
-\tag{2}
-\]
+```text
+0<r<=s<=H_w.
+```
 
-with equality `r=H_w` or `s=H_w` if and only if `d=0`.
+Equality `r=H_w` or `s=H_w` holds if and only if `d=0`. For an acyclic near-return `d>0`,
 
-For an acyclic near-return `d>0`,
-
-\[
-\boxed{0<r<s<H_w.}
-\tag{3}
-\]
+```text
+0<r<s<H_w.
+```
 
 ### B. Exact candidate-dependent jet threshold
 
 Let `U` be a unitary divisor of `D`, with complementary factor
 
-\[
-D=U K,
-\qquad
-\gcd(U,K)=1.
-\]
+```text
+D=U*K,
+gcd(U,K)=1.
+```
 
 Assume PR #83 `L-6912` supplies residues
 
-\[
-\delta_U\equiv d\pmod U,
-\qquad
-\rho_U\equiv r\pmod U,
-\qquad
-\sigma_U\equiv s\pmod U,
-\]
+```text
+delta_U == d mod U,
+rho_U   == r mod U,
+sigma_U == s mod U,
+```
 
 where `rho_U` and `sigma_U` are its source and endpoint quotient jets.
 
 If
 
-\[
-oxed{U>H_w,}
-\tag{4}
-\]
+```text
+U>H_w,
+```
 
 then all three residues lift uniquely to the exact ordinary values:
 
-\[
-oxed{\delta_U=d,\qquad ho_U=r,\qquad \sigma_U=s.}
-\tag{5}
-\]
+```text
+delta_U=d,
+rho_U=r,
+sigma_U=s.
+```
 
 Equivalently, it is enough that
 
-\[
-oxed{U\ge \left\lfloor\frac AD\right\rfloor+1.}
-\tag{6}
-\]
+```text
+U>=floor(A/D)+1.
+```
 
 ### C. Sharper uniform first-crossing threshold
 
 For every coefficient-first-crossing non-descent, the reviewed bilateral bound gives
 
-\[
-0\le d<E<\frac q3.
-\]
+```text
+0<=d<E<q/3.
+```
 
 Therefore
 
-\[
-H_w=\frac{E}{1-C}
-<
-\frac{q}{3(1-C)}.
-\tag{7}
-\]
+```text
+H_w=E/(1-C)<q/[3(1-C)].
+```
 
 Define
 
-\[
-oxed{
-\mathcal B_j^{\rm sharp}
-=
-\left\lceil
-\frac{q}{3(1-3^q/2^j)}
-\right\rceil.}
-\tag{8}
-\]
+```text
+B_j^sharp=ceil(q/[3(1-3^q/2^j)]).
+```
 
 Then every unitary factor satisfying
 
-\[
-U\ge\mathcal B_j^{\rm sharp}
-\]
+```text
+U>=B_j^sharp
+```
 
 recovers `d,r,s` exactly.
 
@@ -160,103 +134,89 @@ This removes the additional `q/3` term from the coarser universal endpoint bound
 
 Let `u` be the upper-mechanical word at the same `(j,q)`, and suppose `w` has `R` displaced odd positions. PR #81 `L-6816` / PR #83 `T-6914` give
 
-\[
-E_w
-<
-E_u-rac{C R}{12}.
-\tag{9}
-\]
+```text
+E_w<E_u-C*R/12.
+```
 
 Hence
 
-\[
-oxed{
-H_w
-<
-\frac{E_u-CR/12}{1-C}.}
-\tag{10}
-\]
+```text
+H_w<[E_u-C*R/12]/(1-C).
+```
 
 Thus the same rough support that narrows the allowed displacement interval also lowers the exact modulus needed to recover both ordinary quotient jets.
 
 ### E. Sharpened balanced-or-dominant reduction
 
-The elementary factor-partition argument of PR #83 `L-6912` may be repeated with `mathcal B_j^sharp` in place of its coarser bound.
+The elementary factor-partition argument of PR #83 `L-6912` may be repeated with `B_j^sharp` in place of its coarser bound.
 
 In particular, if
 
-\[
-D>(\mathcal B_j^{\rm sharp})^3,
-\tag{11}
-\]
+```text
+D>(B_j^sharp)^3,
+```
 
 then either:
 
 ```text
 balanced:
-  D=UV for unitary U,V both larger than mathcal B_j^sharp,
+  D=U*V for unitary U,V both larger than B_j^sharp,
   so both blocks recover the same exact d,r,s;
 
 or
 
 dominant:
-  D=Wc for one complete prime power W with
-  c<=mathcal B_j^sharp and W>D/mathcal B_j^sharp,
+  D=W*c for one complete prime power W with
+  c<=B_j^sharp and W>D/B_j^sharp,
   so W recovers d,r,s and c must complete the divisibility.
 ```
 
-The same replacement may be made with the smaller candidate-specific threshold from `(10)` whenever the support data are already known.
+The same replacement may be made with the smaller candidate-specific threshold from part D whenever the support data are already known.
 
 ## Proof
 
 The corrected bilateral equations are
 
-\[
-A=Dr+Pd=Ds+Qd.
-\tag{12}
-\]
+```text
+A=D*r+P*d=D*s+Q*d.
+```
 
 Divide the source equation by `P`:
 
-\[
+```text
 E=(1-C)r+d,
-\]
+```
 
-which gives the first formula in `(1)`.
+which gives the formula for `r`.
 
 Divide the endpoint equation by `P`:
 
-\[
-E=(1-C)s+Cd,
-\]
+```text
+E=(1-C)s+C*d,
+```
 
-which gives the second formula in `(1)`.
+which gives the formula for `s`.
 
-Because `r>0`, the first formula gives `d<E`. Since `d>=0` and `0<C<1`,
+Because `r>0`, the source formula gives `d<E`. Since `d>=0` and `0<C<1`,
 
-\[
-r=H_w-rac d{1-C}\le H_w,
-\]
+```text
+r=H_w-d/(1-C)<=H_w,
+s=H_w-C*d/(1-C)<=H_w.
+```
 
-and
+Also `s-r=d>=0`. Equality in either upper bound forces `d=0`; conversely `d=0` gives `r=s=H_w`. This proves part A.
 
-\[
-s=H_w-rac{Cd}{1-C}\le H_w.
-\]
+The congruences defining `delta_U,rho_U,sigma_U` are those of PR #83 `L-6912`. For a genuine near-return, all three canonical residues are congruent to `d,r,s` modulo `U`. The displacement already satisfies `0<=d<E<H_w`. Under `U>H_w`, part A places all three ordinary values in `[0,U)`, so their canonical residues modulo `U` equal the values themselves. This proves part B.
 
-Also `s-r=d>=0`. Equality in either upper bound forces `d=0`; conversely `d=0` gives `r=s=H_w`. This proves `(2)--(3)`.
-
-The congruences defining `delta_U,rho_U,sigma_U` are those of PR #83 `L-6912`. For a genuine near-return, all three canonical residues are congruent to `d,r,s` modulo `U`. The displacement already satisfies `0<=d<E<H_w`. Under `(4)`, equations `(2)--(3)` place all three ordinary values in `[0,U)`, so their canonical residues modulo `U` equal the values themselves. This proves `(5)--(6)`.
-
-Equation `(7)` follows from `E<q/3`; `(8)` then implies `U>H_w`. Equation `(10)` follows by dividing `(9)` by `1-C>0`.
+Part C follows from `E<q/3`. The ceiling is safe even when `q/[3(1-C)]` is an integer because the preceding height inequality is strict. Part D follows by dividing the support-loss inequality by the positive number `1-C`.
 
 Finally, the balanced-or-dominant proof in `L-6912` uses only:
 
 1. a positive integer threshold above every admissible ordinary source and endpoint;
-2. complete prime-power components of `D`;
+2. the complete prime-power components of `D`;
 3. multiplication of components until a unitary product crosses that threshold.
 
-Equations `(7)--(8)` supply a smaller threshold with exactly the same properties, so the partition proof carries over verbatim. ∎
+Parts C and D supply smaller thresholds with exactly the same properties, so the factor-partition proof carries over. This proves part E.
 
 ## Why the strengthening matters
 
@@ -264,15 +224,15 @@ PR #83 treated the displacement bound and endpoint/source height as two successi
 
 The actual common height is the rational fixed point
 
-\[
-\frac AD,
-\]
+```text
+A/D,
+```
 
 not
 
-\[
-\frac{q}{3(1-C)}+\frac q3.
-\]
+```text
+q/[3(1-C)]+q/3.
+```
 
 The gain is polynomial rather than exponential, so it does not by itself close FC*. It does, however:
 
@@ -298,13 +258,13 @@ The gain is polynomial rather than exponential, so it does not by itself close F
 
 ## Adversarial tests
 
-1. At `d=0`, equations `(1)` give `r=s=A/D`, as required for a cycle.
+1. At `d=0`, the bilateral formulas give `r=s=A/D`, as required for a cycle.
 2. For `d>0`, the endpoint is closer to `A/D` than the source because `0<C<1`:
-   \[
-   H_w-s=\frac{Cd}{1-C}<\frac d{1-C}=H_w-r.
-   \]
+   ```text
+   H_w-s=C*d/(1-C)<d/(1-C)=H_w-r.
+   ```
 3. Replacing `U>H_w` by only `U>d` is insufficient to recover the quotient jets.
-4. The ceiling in `(8)` is safe even when `q/[3(1-C)]` is an integer, because `(7)` is strict.
+4. The ceiling in part C is safe at an integral upper threshold because the height inequality is strict.
 5. The theorem never infers full-denominator divisibility from one large factor.
 
 ## Remaining uncertainty
@@ -313,4 +273,4 @@ None in the elementary algebra. The usefulness of the sharper threshold for prov
 
 ## Suggested next attack
 
-In the balanced case, compare the exact triples `(d,r,s)` recovered from the two complementary unitary blocks after applying the support-sensitive threshold `(10)`. In the dominant case, exploit the now smaller cofactor bound to classify or contradict the completing cofactor. Any theorem obtained there must be submitted separately as `PROPOSED`.
+In the balanced case, compare the exact triples `(d,r,s)` recovered from the two complementary unitary blocks after applying the support-sensitive threshold. In the dominant case, exploit the now smaller cofactor bound to classify or contradict the completing cofactor. Any theorem obtained there must be submitted separately as `PROPOSED`.
