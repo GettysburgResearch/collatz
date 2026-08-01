@@ -56,10 +56,15 @@
     "NO ACTION UNTIL REVIEW": 5
   },
   "parts": [
-    {"part":"A-03-20","path":"pr-lifecycle/records-A-03-20.json","record_count":9,"prs":[3,6,11,12,13,14,16,19,20]},
-    {"part":"B-32-50","path":"pr-lifecycle/records-B-32-50.json","record_count":13,"prs":[32,33,34,35,37,38,42,44,45,47,48,49,50]},
-    {"part":"C-51-64","path":"pr-lifecycle/records-C-51-64.json","record_count":9,"prs":[51,53,56,57,60,61,62,63,64]},
-    {"part":"D-65-74","path":"pr-lifecycle/records-D-65-74.json","record_count":8,"prs":[65,66,67,68,69,70,72,74]},
-    {"part":"E-76-83","path":"pr-lifecycle/records-E-76-83.json","record_count":6,"prs":[76,77,79,80,81,83]}
+    {"part":"A1-03-11","path":"pr-lifecycle/records-A1-03-11.json","record_count":3,"prs":[3,6,11]},
+    {"part":"A2-12-20","path":"pr-lifecycle/records-A2-12-20.json","record_count":6,"prs":[12,13,14,16,19,20]},
+    {"part":"B1-32-38","path":"pr-lifecycle/records-B1-32-38.json","record_count":6,"prs":[32,33,34,35,37,38]},
+    {"part":"B2-42-50","path":"pr-lifecycle/records-B2-42-50.json","record_count":7,"prs":[42,44,45,47,48,49,50]},
+    {"part":"C1-51-57","path":"pr-lifecycle/records-C1-51-57.json","record_count":4,"prs":[51,53,56,57]},
+    {"part":"C2-60-64","path":"pr-lifecycle/records-C2-60-64.json","record_count":5,"prs":[60,61,62,63,64]},
+    {"part":"D1-65-69","path":"pr-lifecycle/records-D1-65-69.json","record_count":5,"prs":[65,66,67,68,69]},
+    {"part":"D2-70-74","path":"pr-lifecycle/records-D2-70-74.json","record_count":3,"prs":[70,72,74]},
+    {"part":"E1-76-79","path":"pr-lifecycle/records-E1-76-79.json","record_count":3,"prs":[76,77,79]},
+    {"part":"E2-80-83","path":"pr-lifecycle/records-E2-80-83.json","record_count":3,"prs":[80,81,83]}
   ]
 }
