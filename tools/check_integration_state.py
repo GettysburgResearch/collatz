@@ -11,6 +11,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
+MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 ALLOWED_MATH = {"verified", "source-qualified", "empirical", "proposed", "open", "refuted", "superseded"}
 ALLOWED_INTEGRATION = {"canonical", "roadmap", "reference-only", "deferred", "quarantined"}
 
@@ -91,20 +92,37 @@ def check_registry() -> tuple[int, int]:
 
 
 def check_navigation() -> None:
-    for rel in [
+    markdown_paths = [
         "README.md",
         "STATE.md",
         "CONTRIBUTING.md",
         "claims/README.md",
         "claims/CANONICAL.md",
+        "docs/INTEGRATION_PRACTICE.md",
         "docs/integration/CURRENT.md",
+        "docs/integration/2026-08-01/SNAPSHOT.md",
         "docs/integration/2026-08-01/STATE.md",
         "docs/integration/2026-08-01/REVIEW_COVERAGE.md",
         "docs/integration/2026-08-01/INTEGRATION_REPORT.md",
         "docs/integration/2026-08-01/STRATEGIC_OUTLOOK.md",
         "docs/integration/2026-08-01/HANDOFF.md",
-    ]:
+        "docs/integration/2026-08-01/POST_CUTOFF.md",
+    ]
+    for rel in markdown_paths:
         require((ROOT / rel).is_file(), f"missing navigation target: {rel}")
+
+    for rel in markdown_paths:
+        path = ROOT / rel
+        for match in MARKDOWN_LINK_RE.finditer(path.read_text(encoding="utf-8")):
+            target = match.group(1).split("#", 1)[0]
+            if not target or "://" in target or target.startswith("mailto:"):
+                continue
+            resolved = (path.parent / target).resolve()
+            try:
+                resolved.relative_to(ROOT.resolve())
+            except ValueError as exc:
+                raise CheckError(f"relative link escapes repository in {rel}: {target}") from exc
+            require(resolved.exists(), f"broken relative link in {rel}: {target}")
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8").lower()
     require("unsolved" in readme, "README must state that Collatz is unsolved")
