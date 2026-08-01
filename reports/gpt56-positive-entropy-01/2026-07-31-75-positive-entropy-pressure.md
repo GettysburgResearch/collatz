@@ -1,0 +1,284 @@
+# Positive-direction synthesis — entropy pressure, pointwise literature audit, and the remaining closure theorem
+
+**Agent:** `gpt56-positive-entropy-01` (`GPT-5.6 Pro`)  
+**Date:** 2026-07-31  
+**Issue:** #75  
+**Branch:** `agent/gpt56-positive-entropy-01/75-supercritical-entropy`  
+**Base:** draft PR #77 at `1c8ed3c7edbb190d59490d2f92a3c342c2f856eb`  
+**Status:** draft mathematical research; no Collatz proof claimed
+
+## 1. Objective
+
+The task was to reverse the repository's historical counterexample emphasis, digest the newest positive-direction work and the July 2026 literature, and push toward a proof that every positive integer reaches `1`.
+
+The response deliberately avoids:
+
+- another bounded verification packet;
+- a free symbolic completion;
+- an almost-everywhere argument promoted to every integer;
+- or a conditional statement of the form “if an infinite ordinary path exists, it grows.”
+
+The target is the actual least-counterexample split isolated by PRs #76 and #77.
+
+## 2. Repository-wide positive split
+
+For shortcut Collatz, let
+
+\[
+q_k=\#\{0\le r<k:T^r(n)\text{ is odd}\},
+\qquad
+D_k=q_k-\frac{\log2}{\log3}k.
+\]
+
+Then
+
+\[
+\frac{3^{q_k}}{2^k}=3^{D_k}.
+\]
+
+Draft PR #76 proposes that a least positive counterexample must satisfy
+
+\[
+\boxed{
+\tau(n)=\infty
+\quad\text{or}\quad
+\tau(n)\ge217{,}976{,}794{,}617.}
+\]
+
+Draft PR #77 independently reconstructs the exact affine identity and proposes
+
+\[
+D_k\ge0\ \forall k
+\quad\Longrightarrow\quad
+T^k(n)\to+\infty.
+\]
+
+Thus there are two exhaustive positive lanes:
+
+1. an ordinary all-time coefficient-supercritical path;
+2. a finite but extraordinarily delayed first coefficient crossing.
+
+## 3. New exact theorem: parity-factor dyadic separation
+
+`L-6801` proves that if the same length-`L` parity factor begins at two times `i<j`, then
+
+\[
+\boxed{2^L\mid T^i(n)-T^j(n).}
+\]
+
+The proof subtracts the two exact affine block identities and uses coprimality of `2^L` and the common power of `3`.
+
+For an all-time-supercritical path, repeated states are impossible: a repeated positive state would create a periodic block with negative coefficient surplus, and repeating that block would eventually make the global surplus negative.
+
+Therefore one parity factor can occur below physical height `X_N` at most
+
+\[
+1+X_N/2^L
+\]
+
+times.
+
+This is a pointwise ordinary theorem. It compares repeated symbolic factors on one actual orbit and charges them the full parity-cylinder modulus.
+
+## 4. New theorem: entropy pressure forces polynomial records
+
+`T-6802` combines the preceding multiplicity bound with the exact affine height formula
+
+\[
+T^k(n)
+=3^{D_k}n
++\frac12\sum_{m=1}^{k}v_{m-1}3^{D_k-D_m}.
+\]
+
+Let
+
+\[
+B_N=\max_{k\le N}D_k,
+\qquad
+X_N=\max_{k\le N}T^k(n).
+\]
+
+The height formula gives
+
+\[
+X_N\le3^{B_N}(n+N/2).
+\]
+
+For factors of length
+
+\[
+L\sim\lambda\log_2N,
+\]
+
+the dyadic separation theorem yields a lower exponential pressure on the number of distinct factors. On the other hand, every occurring factor has weight `s` satisfying
+
+\[
+|s-\alpha L|\le B_N,
+\qquad
+\alpha=\frac{\log2}{\log3},
+\]
+
+so a binomial-entropy count gives an upper pressure.
+
+Let `beta_*` be the unique root
+
+\[
+\beta_*\log_2 3
+=1-H_2(\alpha-\beta_*),
+\]
+
+and define
+
+\[
+\kappa_*
+=\frac{\beta_*}{1-\beta_*\log_2 3},
+\qquad
+\delta_*=\kappa_*\log_2 3.
+\]
+
+Then every positive ordinary all-time-supercritical orbit satisfies
+
+\[
+\boxed{
+\liminf_{N\to\infty}
+\frac{B_N}{\log_2N}
+\ge\kappa_*}
+\]
+
+and
+
+\[
+\boxed{
+\liminf_{N\to\infty}
+\frac{\log_2(X_N/n)}{\log_2N}
+\ge\delta_*.}
+\]
+
+Numerically,
+
+```text
+kappa_* = 0.0226230967722...
+delta_* = 0.0358567600340...
+```
+
+so
+
+\[
+X_N\ge nN^{0.03585676-o(1)}.
+\]
+
+This strengthens `T-6801`, which already closes the bounded-surplus subcase and gives a preliminary `log log` floor.
+
+## 5. Initial-height bridge for low-complexity words
+
+`L-6802` converts factor complexity directly into a lower bound on the same ordinary initial integer.
+
+If a length-`L` factor occurs
+
+\[
+M=\left\lceil\frac{N-L+1}{p_N(L)}\right\rceil
+\]
+
+times in a distinct-state segment whose surplus lies in `[0,B]`, then
+
+\[
+\boxed{
+n
+\ge
+3^{-B}\bigl((M-1)2^L+1\bigr)-N/2.}
+\]
+
+For a Sturmian or mechanical language, `p_N(L)<=L+1`, so a long bounded-surplus mechanical prefix forces an exponentially large initial ordinary value.
+
+This produces a direct residue--remainder certificate:
+
+```text
+factor-complexity lower height H_w
+>
+A_w/(2^N-3^q)
+```
+
+excludes the word as a no-descent first-crossing prefix, unless a positive cycle already occurs inside it.
+
+The theorem does not yet cover arbitrary high-complexity first-crossing words.
+
+## 6. July 2026 literature connection
+
+Oliver Kramer's July 2026 preprint
+
+```text
+Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints
+arXiv:2607.10041
+```
+
+puts the symbolic obstruction in three coordinates:
+
+1. real drift;
+2. the forced 2-adic start representative;
+3. the forced 3-adic endpoint representative.
+
+It proves that a code generated by one fixed positive integer must have asymptotically vanishing start- and endpoint-residue rates. Its finite searches at lengths `100`, `200`, and `400` retain clearly positive rates, but the paper explicitly treats this as a diagnostic, not a proof.
+
+The present packet gives a complementary theorem on the ordinary side: if the real drift stays supercritical forever and the start representative actually stabilizes to one integer, then exact factor arithmetic forces polynomial physical records. The common missing theorem is a quantitative lower bound showing that critical symbolic paths cannot simultaneously stabilize their start representative and maintain a real-compatible endpoint.
+
+## 7. Audit of claimed complete proofs
+
+`R-6801` freezes the main pointwise firewall.
+
+An ensemble valuation law, Birkhoff genericity, or Borel--Cantelli conclusion applies almost everywhere, not everywhere. The positive integers form a countable Haar-null subset of `Z_2`, so an almost-everywhere theorem can leave every ordinary starting integer logically unresolved.
+
+The February 2026 funnel-density preprint explicitly identifies probability zero with impossibility and a measure-zero trajectory set with the empty set. That inference is false. It also treats uniqueness of the positive cycle as an axiom supported by bounded search and heuristic irrationality.
+
+The July 2026 hut manuscript is an unreviewed working paper claiming a well-founded induction. This packet does not import the claim: the full physical transition, strict-rank decrease, coverage, and induction implication require line-by-line reconstruction.
+
+## 8. Exact remaining proof target
+
+`Q-6801` states the two obligations without hiding them behind a new encoding.
+
+### Lane A
+
+Let `m_N^sup` be the least positive integer whose first `N` coefficient surpluses are nonnegative. Prove
+
+\[
+\boxed{m_N^{\rm sup}\to\infty.}
+\]
+
+That excludes every ordinary all-time-supercritical path.
+
+### Lane B
+
+For a late first-crossing word `w`, let `r^+(w)` be its least positive parity-cylinder representative. Prove
+
+\[
+\boxed{
+r^+(w)>rac{A_w}{2^j-3^q}.}
+\]
+
+That forces descent at the first subcritical coefficient.
+
+If both statements hold, no least positive counterexample exists and Collatz follows.
+
+## 9. Honest conclusion
+
+The requested full proof was not completed.
+
+The new work is nevertheless theorem-level progress on the global positive blocker:
+
+- it closes bounded coefficient surplus completely;
+- it proves a positive linear-in-`log N` surplus record rate;
+- it proves polynomial physical record growth on every ordinary all-time-supercritical path;
+- it supplies a direct factor-complexity-to-initial-height bridge;
+- it identifies the joint residue--remainder inequality that would finish the least-counterexample route;
+- and it rejects current almost-everywhere proof claims at their exact invalid quantifier.
+
+No finite verification trend, random model, or `2`-adic completion is presented as a proof of Collatz.
+
+## 10. Review order
+
+1. `research/positive-coefficient-entropy/claims/L-6801-parity-factor-dyadic-separation.md`
+2. `research/positive-coefficient-entropy/claims/T-6802-entropy-pressure-polynomial-records.md`
+3. `research/positive-coefficient-entropy/claims/L-6802-factor-complexity-forces-initial-height.md`
+4. `research/positive-coefficient-entropy/claims/T-6801-supercritical-surplus-entropy-floor.md`
+5. `research/positive-coefficient-entropy/claims/R-6801-almost-everywhere-is-not-pointwise.md`
+6. `research/positive-coefficient-entropy/Q-6801-pointwise-closure-target.md`
+7. `research/positive-coefficient-entropy/LITERATURE_AND_GLOBAL_STATUS.md`
