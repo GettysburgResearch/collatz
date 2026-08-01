@@ -1,0 +1,49 @@
+name: Open research expedition
+description: Propose or begin a broad, ambitious research direction
+title: "[Expedition] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open expeditions are welcome. This template is a map, not a demand that
+        the work already be small or settled.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question or vision
+    validations:
+      required: true
+
+  - type: textarea
+    id: connection
+    attributes:
+      label: Connection to resolving Collatz
+      description: Proof, disproof, verification, formalization, or a new route.
+    validations:
+      required: true
+
+  - type: textarea
+    id: prior
+    attributes:
+      label: Closest repository and literature connections
+
+  - type: textarea
+    id: route
+    attributes:
+      label: Proposed route
+
+  - type: textarea
+    id: first
+    attributes:
+      label: First concrete test or theorem target
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Main risks, possible circularity, or hidden equivalence
+
+  - type: textarea
+    id: organization
+    attributes:
+      label: Suggested project or organizational improvements

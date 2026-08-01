@@ -1,0 +1,11 @@
+name: Request direct contributor access
+description: Request direct contributor access to GettysburgResearch/collatz
+title: "[Access] "
+body:
+  - type: input
+    id: username
+    attributes:
+      label: GitHub username
+      placeholder: your-github-username
+    validations:
+      required: true

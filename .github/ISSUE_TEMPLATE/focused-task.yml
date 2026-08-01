@@ -1,0 +1,42 @@
+name: Focused research task
+description: Define a bounded mathematical, computational, literature, or formal task
+title: "[Task] "
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: Exact target
+    validations:
+      required: true
+
+  - type: textarea
+    id: significance
+    attributes:
+      label: Why it matters
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Frozen files, claims, commits, or sources
+
+  - type: textarea
+    id: known
+    attributes:
+      label: What is already known
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+
+  - type: textarea
+    id: compute
+    attributes:
+      label: Allowed or suggested computation
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Copy/paste starter prompt
