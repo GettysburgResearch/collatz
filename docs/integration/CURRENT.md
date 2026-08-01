@@ -15,5 +15,6 @@ Use the timestamped files as an immutable ledger:
 - [`STRATEGIC_OUTLOOK.md`](2026-08-01/STRATEGIC_OUTLOOK.md)
 - [`HANDOFF.md`](2026-08-01/HANDOFF.md)
 - [`open-prs.json`](2026-08-01/open-prs.json)
+- [`POST_CUTOFF.md`](2026-08-01/POST_CUTOFF.md) — later observation kept separate from the frozen snapshot.
 
 The next pass must create a new timestamped directory and update this pointer. It must not rewrite the 2026-08-01 snapshot to make later work appear reviewed at the earlier cutoff.
