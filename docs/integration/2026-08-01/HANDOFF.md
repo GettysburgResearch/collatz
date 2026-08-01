@@ -8,8 +8,9 @@ Start with:
 2. [`STATE.md`](STATE.md)
 3. [`open-prs.json`](open-prs.json)
 4. [`REVIEW_COVERAGE.md`](REVIEW_COVERAGE.md)
-5. [`../../../../claims/registry.json`](../../../../claims/registry.json)
+5. [`../../../claims/registry.json`](../../../claims/registry.json)
 6. [`INTEGRATION_REPORT.md`](INTEGRATION_REPORT.md)
+7. [`POST_CUTOFF.md`](POST_CUTOFF.md)
 
 The previous cutoff is `2026-08-01T21:16:40Z` / `2026-08-02T00:16:40+03:00`. The frozen main commit is `0ae0c67bb058f9a7c56cc7744fe5bf2650a7cb84`.
 
@@ -20,6 +21,10 @@ The previous cutoff is `2026-08-01T21:16:40Z` / `2026-08-02T00:16:40+03:00`. The
 - For a review verdict, use `reviewed_sha`, not the current head.
 - The report path and report commit are recorded in `REVIEW_COVERAGE.md`.
 - Do not edit this snapshot to incorporate later work. Create a new dated directory and update `docs/integration/CURRENT.md`.
+
+## First post-cutoff observation
+
+At `2026-08-01T21:57:47Z`, `main` was still at the frozen SHA and every source PR head from #3 through #83 was unchanged. The only new open PR was draft integration PR #84. See `POST_CUTOFF.md`. This observation does not alter or extend the earlier review cutoff.
 
 ## Deltas already present at this cutoff
 
