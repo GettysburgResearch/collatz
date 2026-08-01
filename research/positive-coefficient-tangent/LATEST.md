@@ -217,6 +217,39 @@ SC* remains separate:
 min_{w in W_N^sup} r_w -> infinity.
 ```
 
+## Frozen pre-public review
+
+The independent pre-public review of PRs #44, #45, #47, and #48 is committed at
+
+```text
+reviews/pre-public/2026-08-01-pr44-pr48-frozen-review.md
+```
+
+Frozen verdicts:
+
+```text
+PR #44  VERIFIED
+PR #45  VERIFIED WITH FIXES
+PR #47  GAP/BLOCKED
+PR #48  VERIFIED WITH FIXES
+```
+
+PR #47's block is publication-specific: duplicate live claim identifiers and
+an unreplayed `X-9615` billion-pair dependency. Its separately listed symbolic
+subchains retain their positive verification verdicts.
+
+## New transported phase connection
+
+`L-6916` records, as a fresh **PROPOSED** claim, that PR #47's two-sided phase
+floor is the stationary instance of PR #48's inverse-affine transported
+cylinder. A finite exact past supplies an odd output phase, a finite exact
+future supplies a dyadic source phase, and CRT gives one ordinary boundary
+floor.
+
+This connection does not change any frozen review verdict. Its unresolved
+cofinal target is a parameter-uniform transported phase-floor or pullback
+lower bound strong enough to force ordinary source escape.
+
 ## New claims and artifact
 
 ```text
@@ -224,5 +257,6 @@ L-6912  complete-factor synchronization and quotient jets
 L-6913  resultant-root lacunary normal form
 T-6914  rough-support displacement-window shrinkage
 R-6915  exact cross-factor method boundary
+L-6916  transported two-sided phase-floor principle (PROPOSED)
 X-6912  independent factor-synchronization regression
 ```
