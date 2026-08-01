@@ -17,27 +17,23 @@ This is a new proposed strengthening found during the pre-public review of PR #7
 
 Let `S_K(theta)` be the exact Fourier product of the Claude `64 -> 81` survivor set. Let `r>=1`, assume
 
-\[
-81^r\le 2^K,
-\]
+```text
+81^r <= 2^K,
+```
 
 and let `I` be any interval of exactly `81^r` consecutive positive frequencies contained in `[1,2^K]`. Then
 
-\[
-\boxed{
-\frac1{81^r}\sum_{\theta\in I}
-\frac{|S_K(\theta)|}{2^K}
-\le \left(\frac7{10}\right)^r.}
-\]
+```text
+(1/81^r) * sum_(theta in I) |S_K(theta)|/2^K <= (7/10)^r.
+```
 
 The proof does not use Claude's submitted shifted-cosine estimate `2/pi+1/81`. It uses only the elementary bounded-variation estimate
 
-\[
-\frac1{81}\sum_{j=0}^{80}
-\left|\cos\!\left(\pi\frac{j+\phi}{81}ight)\right|
-\le \frac2\pi+\frac2{81}
-<\frac7{10},
-\]
+```text
+(1/81) * sum_(j=0)^80 |cos(pi*(j+phi)/81)|
+    <= 2/pi + 2/81
+    < 7/10,
+```
 
 with arguments interpreted modulo one.
 
@@ -45,163 +41,134 @@ with arguments interpreted modulo one.
 
 For `0<=t<r`, let `q_t(theta)` be the reciprocal residue from PR #16 `L-9304`, reduced modulo `81^(t+1)`, and put
 
-\[
-y_t(\theta)=q_t(\theta)/81^{t+1}.
-\]
+```text
+y_t(theta) = q_t(theta)/81^(t+1).
+```
 
 As `theta` runs through any complete residue system modulo `81^r`, the terminal residue `q_(r-1)(theta)` is uniform modulo `81^r`, because multiplication by `-17*64^(r-1-K)` is a unit.
 
 The chain satisfies
 
-\[
-q_{t+1}\equiv64q_t\pmod {81^{t+1}}.
-\]
+```text
+q_(t+1) == 64*q_t  (mod 81^(t+1)).
+```
 
 Consequently the coordinates
 
-\[
+```text
 q_0,
-\qquad
-j_t=\frac{q_{t+1}-64q_t}{81^{t+1}}\pmod {81}
-\quad(0\le t<r-1)
-\]
+j_t = (q_(t+1)-64*q_t)/81^(t+1)  (mod 81),  0<=t<r-1,
+```
 
-are a triangular bijective encoding of `q_(r-1)`. They are therefore uniform and independent in `Z/81Z`. Conditionally on the past, the next phase runs once through a shifted complete `81`-point grid modulo one.
+are a triangular bijective encoding of `q_(r-1)`. They are therefore uniform and independent in `Z/81Z`. Conditionally on the past, the next phase runs once through a shifted complete 81-point grid modulo one.
 
 ## 2. Elementary one-level average
 
 Put
 
-\[
-f(x)=|\cos(\pi x)|,
-\]
+```text
+f(x)=|cos(pi*x)|,
+```
 
 viewed as a one-periodic function. On `[0,1]`,
 
-\[
-\int_0^1f(x)\,dx=2/\pi,
-\qquad
-\operatorname{Var}_{[0,1]}(f)=2.
-\]
+```text
+integral_0^1 f(x) dx = 2/pi,
+Var_[0,1](f) = 2.
+```
 
-For any shifted complete grid, choose one sample point in each interval
+For any shifted complete grid, after cyclic reindexing there is one sample point in each interval `[j/81,(j+1)/81]`. On an interval `J`, a sample value is at most the interval average plus `Var_J(f)`. Summing the 81 inequalities gives
 
-\[
-[j/81,(j+1)/81].
-\]
-
-On an interval `J`, a sample value is at most the interval average plus `Var_J(f)`. Summing the 81 inequalities gives
-
-\[
-\frac1{81}\sum_{j=0}^{80}f(x_j)
-\le
-\int_0^1f(x)\,dx+rac{\operatorname{Var}(f)}{81}
-=rac2\pi+rac2{81}.
-\]
+```text
+(1/81) * sum_(j=0)^80 f(x_j)
+    <= integral_0^1 f(x) dx + Var(f)/81
+    = 2/pi + 2/81.
+```
 
 Iterated conditional averaging therefore yields
 
-\[
-\frac1{81^r}
-\sum_{\theta\in I}
-\prod_{t<r}|\cos(\pi y_t(\theta))|
-\le a_0^r,
-\qquad
-a_0:=\frac2\pi+rac2{81}.
-\]
+```text
+(1/81^r) * sum_(theta in I) product_(t<r) |cos(pi*y_t(theta))|
+    <= a_0^r,
+
+a_0 := 2/pi + 2/81.
+```
 
 Using `3<pi<4`,
 
-\[
-\frac12<a_0<\frac{56}{81}<\frac7{10}.
-\]
+```text
+1/2 < a_0 < 56/81 < 7/10.
+```
 
 ## 3. Reciprocity hypothesis and true-phase error
 
 Let
 
-\[
-x_t(\theta)=z_{K,t}(\theta)/64^{K-t}
-\]
+```text
+x_t(theta)=z_(K,t)(theta)/64^(K-t)
+```
 
 be the true phase. PR #16 `L-9304` requires
 
-\[
-17\theta<64^{K-t}.
-\]
+```text
+17*theta < 64^(K-t).
+```
 
 This holds for every `theta<=2^K` and `t<r`. Indeed, `81^r<=2^K` and `81>64` imply `6r<K`. Hence
 
-\[
-64^{K-t}\ge64^{K-r+1}
->17\,2^K
-\ge17\theta.
-\]
+```text
+64^(K-t) >= 64^(K-r+1) > 17*2^K >= 17*theta.
+```
 
 The exact reciprocity identity is therefore available at every retained level:
 
-\[
-x_t-y_t=rac{17\theta}{81^{t+1}64^{K-t}}.
-\]
+```text
+x_t-y_t = 17*theta / (81^(t+1)*64^(K-t)).
+```
 
-Since `|cos(pi x)|` is `pi`-Lipschitz and all factors lie in `[0,1]`, product telescoping gives
+Since `|cos(pi*x)|` is `pi`-Lipschitz and all factors lie in `[0,1]`, product telescoping gives
 
-\[
-\left|
-\prod_{t<r}|\cos(\pi x_t)|
--
-\prod_{t<r}|\cos(\pi y_t)|
-\right|
-\le
-\pi\sum_{t<r}|x_t-y_t|.
-\]
+```text
+| product_(t<r)|cos(pi*x_t)| - product_(t<r)|cos(pi*y_t)| |
+    <= pi * sum_(t<r)|x_t-y_t|.
+```
 
 The geometric sum satisfies
 
-\[
-\sum_{t<r}|x_t-y_t|
-<\frac{\theta}{64^K}
-\le\frac1{32^K}.
-\]
+```text
+sum_(t<r)|x_t-y_t| < theta/64^K <= 1/32^K.
+```
 
-Thus the mean true product is at most
+The exact Fourier formula is a product over every `t<K`. Every omitted factor lies in `[0,1]`, so the full normalized Fourier coefficient is at most the retained true product over `t<r`. Thus the mean full coefficient is at most
 
-\[
-a_0^r+4/32^K.
-\]
+```text
+a_0^r + 4/32^K.
+```
 
 ## 4. Absorbing the error below `7/10`
 
 The feasibility condition with `r>=1` forces `K>=7`. Moreover
 
-\[
-\frac7{10}-a_0
->
-\frac7{10}-\frac{56}{81}
-=rac7{810}.
-\]
+```text
+7/10-a_0 > 7/10-56/81 = 7/810.
+```
 
 Because `a_0>1/2` and `r<=K`,
 
-\[
-\left(\frac7{10}\right)^r-a_0^r
->
-\frac7{810}\,2^{-(r-1)}
-\ge
-\frac7{810}\,2^{-(K-1)}
->
-\frac4{32^K}.
-\]
+```text
+(7/10)^r-a_0^r
+    > (7/810)*2^(-(r-1))
+    >= (7/810)*2^(-(K-1))
+    > 4/32^K.
+```
 
 Therefore
 
-\[
-a_0^r+4/32^K
-<
-(7/10)^r,
-\]
+```text
+a_0^r+4/32^K < (7/10)^r,
+```
 
-which proves the stated true-phase block mean. ∎
+which proves the stated true-phase block mean. QED.
 
 ## Dependency audit
 
@@ -214,7 +181,7 @@ which proves the stated true-phase block mean. ∎
 ## Gap audit
 
 - This proves only the local frequency-block mean.
-- It does not verify the density-one shell assembly, Erdős–Turán transfer, minimal-survivor consequence, or the all-depth ordinary-integer intersection.
+- It does not verify the density-one shell assembly, Erdos-Turan transfer, minimal-survivor consequence, or the all-depth ordinary-integer intersection.
 - It does not alter the status of any frozen source theorem.
 - The exact Fourier-product and reciprocity inputs still retain their own branch statuses.
 
@@ -223,4 +190,5 @@ which proves the stated true-phase block mean. ∎
 1. Check the triangular reciprocal-digit bijection.
 2. Check the shifted-grid total-variation estimate.
 3. Check `6r<K` and the `L-9304` representative hypothesis.
-4. Check the final error-gap inequality at the first feasible `K=7`.
+4. Check the full-product truncation.
+5. Check the final error-gap inequality at the first feasible `K=7`.
