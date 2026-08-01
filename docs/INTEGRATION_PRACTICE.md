@@ -1,17 +1,17 @@
-# Integration practice
+# Integration and PR lifecycle practice
 
 This is a gentle default for major integration passes. It is not a gate on exploratory research.
 
 ## 1. Freeze a snapshot
 
-Record UTC and local time, main SHA, every open PR head, and a cutoff statement. Assume agents will continue pushing.
+Record UTC and local time, `main`, every source PR head, and a cutoff statement. Assume agents will continue pushing. Never rewrite a historical cutoff to include later activity.
 
 ## 2. Locate exact-SHA evidence
 
 For each PR, record:
 
 - reviewed SHA;
-- verdict;
+- mathematical verdict;
 - report and reviewer;
 - claim-level exceptions;
 - source-qualified inputs;
@@ -30,34 +30,100 @@ Classify the delta from reviewed SHA to current head:
 - theorem-bearing;
 - dependency change.
 
-Only the first two normally inherit the old mathematical scope without new theorem review.
+A later theorem does not inherit an older verdict.
 
-## 4. Integrate claims, not branch numbers
+## 4. Separate verdict from lifecycle action
 
-A PR may contain verified, proposed, empirical, refuted, and blocked material. Extract coherent packets. Do not maximize merge count.
+Review status answers whether the frozen mathematics passed. Lifecycle disposition answers what the repository should do next.
 
-Prefer one canonical statement when several branches prove the same result. Preserve every alternative proof and reviewer as provenance.
+Every source PR in an integration population should eventually have:
 
-## 5. Allocate canonical IDs
+- an integration disposition;
+- a recommended repository action;
+- prerequisites;
+- a closure or continuation criterion;
+- a durable destination for unique material;
+- dependency/merge-order notes.
 
-Source IDs stay unchanged and are cited as `PR<number>:<claim-id>`. Allocate a repository-owned canonical ID and update the alias/collision ledger. Never silently rename a source theorem.
+These are advisory until carried out. `VERIFIED WITH FIXES` is not automatically “merge,” and `REJECTED` does not erase useful lemmas, counterexamples, or refutations.
 
-## 6. Keep repairs separate
+## 5. Integrate claims, not branch numbers
 
-A refuted original remains refuted. A repair receives a new source claim/SHA and a new review. Record the relation explicitly.
+A PR may contain verified, proposed, empirical, refuted, and blocked material. Extract coherent packets rather than maximizing merge count.
 
-## 7. Record computation honestly
+Prefer one canonical statement when several branches prove the same result. Preserve alternative proofs and reviewers as provenance.
 
-Use separate fields for proof reconstruction, artifact inspection, regeneration, checker execution, and independent large-run replay. A stored digest produced by the same program is not an independent verifier.
+## 6. Track four status dimensions
 
-## 8. Keep the README stable
+Keep separate:
 
-The README explains mission, boundaries, navigation, and status semantics. Put live heads, current blockers, and short-term priorities in an immutable timestamped state linked by `docs/integration/CURRENT.md`.
+```text
+mathematical_status
+integration_status
+promotion_state
+proof_residency
+```
 
-## 9. Preserve exploratory freedom
+A verified claim selected by an unmerged integration PR may be:
 
-Exploratory contributors may use broad PRs and informal notes. The canonicalization contract applies only when material seeks the integrated layer.
+```text
+integration_status = canonical
+promotion_state    = candidate_in_draft_pr
+proof_residency    = frozen_source_reference
+```
 
-## 10. Leave a handoff
+It becomes accepted only through the stated independent-review and merge gate. A later proof import changes residency without rewriting source history.
 
-A fresh integrator should be able to reconstruct the cutoff, identify new deltas, locate pending reviews, run normal checks, and update the registry without private chat history.
+## 7. Allocate canonical IDs without erasing source IDs
+
+Source IDs stay unchanged and are cited as `PR<number>:<claim-id>`. Allocate repository-owned IDs and update the alias/collision ledger. A repair gets a distinct identity and review.
+
+## 8. Import durable proof packets before relying on PR archaeology
+
+Exact-SHA links preserve provenance but should not be the sole long-term proof home. A clean packet should contain:
+
+- manifest and exact source SHAs;
+- byte-identical proof sources where possible;
+- a separately reviewed corrected statement where synthesis is needed;
+- alternative proofs;
+- review reports;
+- artifact/replay manifests;
+- repair and refutation relations.
+
+Do not silently rewrite theorem bodies.
+
+## 9. Close only after durable preservation
+
+Before recommending closure, ensure that every valuable component has a destination:
+
+- accepted claims on main or in a clean reviewed packet;
+- refutations and explicit counterexamples;
+- artifact manifests and replay status;
+- open questions in a successor issue/PR;
+- a closure manifest and durable pointer.
+
+Closure is repository hygiene, not a mathematical verdict.
+
+## 10. Keep computation evidence granular
+
+Distinguish proof inspection, independent reconstruction, artifact inspection, artifact regeneration, checker execution, and independent full replay. A digest generated by the same implementation is not an independent verifier. Finite computation is not an all-depth theorem.
+
+## 11. Keep the README stable and research permissive
+
+The README explains mission, boundaries, navigation, and status semantics. Put live heads, lifecycle decisions, and short-term priorities in dated integration state.
+
+Exploratory contributors may use broad PRs and informal notes. The lifecycle contract applies only when material seeks review, integration, merge, extraction, or closure.
+
+## 12. Leave an executable handoff
+
+A fresh integrator should be able to:
+
+- reconstruct the previous cutoff;
+- identify every changed head;
+- see what should happen next to every source PR;
+- run cheap structural checks;
+- perform Wave A coverage/delta review;
+- perform Wave B extraction/import/cleanup;
+- update pointers without erasing provenance.
+
+See [`integration/2026-08-02-lifecycle/NEXT_WAVES.md`](integration/2026-08-02-lifecycle/NEXT_WAVES.md).
