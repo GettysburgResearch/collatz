@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.1",
+  "snapshot_id": "2026-08-01-first-major-integration",
+  "continuation_id": "2026-08-02-lifecycle",
+  "generated_at_utc": "2026-08-01T22:18:52Z",
+  "repository_acceptance_note": "All records in this draft PR carry an explicit promotion_state. integration_status expresses intended role, not acceptance on main.",
+  "status_vocabulary": {
+    "mathematical_status": ["verified","source-qualified","empirical","proposed","open","refuted","superseded"],
+    "integration_status": ["canonical","roadmap","reference-only","deferred","quarantined"],
+    "promotion_state": ["candidate_in_draft_pr","accepted_reference_record","accepted_with_local_proof","roadmap_candidate_in_draft_pr","roadmap_accepted","retired"],
+    "proof_residency": ["frozen_source_reference","local_proof_packet","open_obligation"]
+  },
+  "promotion_semantics": {
+    "candidate_in_draft_pr": "Selected by an unmerged integration draft; not accepted into main.",
+    "accepted_reference_record": "Accepted on main as a registry/reference record while proof bodies may remain at frozen source commits.",
+    "accepted_with_local_proof": "Accepted on main with a durable local proof packet.",
+    "roadmap_candidate_in_draft_pr": "Selected roadmap record in an unmerged draft.",
+    "roadmap_accepted": "Accepted roadmap/obligation on main; does not mean the obligation is solved."
+  },
+  "record_count": 11,
+  "parts": [
+    {"path":"registry/canonical-1.json","record_count":4,"ids":["IC-EXTRACT-001","IC-GHOST-001","IC-PERIODIC-001","IC-SC-001"]},
+    {"path":"registry/canonical-2.json","record_count":4,"ids":["IC-AUT-001","IC-RIG-001","IC-REF-001","IC-REP-001"]},
+    {"path":"registry/roadmap.json","record_count":3,"ids":["RD-SC-001","RD-FC-001","RD-BRIDGE-001"]}
+  ]
+}

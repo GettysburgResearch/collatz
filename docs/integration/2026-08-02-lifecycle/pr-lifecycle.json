@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1",
+  "ledger_id": "2026-08-02-first-major-integration-lifecycle",
+  "source_snapshot": "2026-08-01-first-major-integration",
+  "frozen_cutoff_utc": "2026-08-01T21:16:40Z",
+  "frozen_cutoff_local": "2026-08-02T00:16:40+03:00",
+  "frozen_main": "0ae0c67bb058f9a7c56cc7744fe5bf2650a7cb84",
+  "continuation_observation_utc": "2026-08-01T22:18:52Z",
+  "continuation_observation_local": "2026-08-02T01:18:52+03:00",
+  "integration_branch_start_head": "390969210c5c168c52ba2795b7c3400e57a6d2e8",
+  "current_main_at_observation": "0ae0c67bb058f9a7c56cc7744fe5bf2650a7cb84",
+  "source_pr_population_count": 45,
+  "open_pr_count_including_integration_pr_at_observation": 46,
+  "source_heads_changed_since_cutoff": [],
+  "allowed_integration_dispositions": [
+    "CANONICALIZED BY REFERENCE",
+    "CLEAN EXTRACTION REQUIRED",
+    "MERGE CANDIDATE AFTER FIXES",
+    "PRESERVE AS RESEARCH/REFERENCE",
+    "CONTINUE ACTIVE DEVELOPMENT",
+    "DEFER PENDING REVIEW",
+    "DEFER PENDING DEPENDENCY OR REPAIR",
+    "SUPERSEDED/ABSORBED",
+    "REJECT/CLOSE CANDIDATE",
+    "UNREVIEWED",
+    "MIXED—CLAIM-LEVEL ACTION REQUIRED"
+  ],
+  "allowed_recommended_actions": [
+    "KEEP OPEN",
+    "IMPORT CLEAN PACKET THEN CLOSE",
+    "MERGE AFTER REVIEWED FIX",
+    "CLOSE AS SUPERSEDED WITH DURABLE POINTER",
+    "CLOSE AS REJECTED WHILE PRESERVING REFUTATIONS",
+    "NO ACTION UNTIL REVIEW"
+  ],
+  "status_separation_note": "Review verdict, integration disposition, recommended repository action, artifact evidence and repository promotion are independent fields.",
+  "disposition_counts": {
+    "CANONICALIZED BY REFERENCE": 11,
+    "CLEAN EXTRACTION REQUIRED": 5,
+    "CONTINUE ACTIVE DEVELOPMENT": 4,
+    "DEFER PENDING DEPENDENCY OR REPAIR": 6,
+    "DEFER PENDING REVIEW": 2,
+    "MERGE CANDIDATE AFTER FIXES": 6,
+    "MIXED—CLAIM-LEVEL ACTION REQUIRED": 4,
+    "PRESERVE AS RESEARCH/REFERENCE": 2,
+    "REJECT/CLOSE CANDIDATE": 1,
+    "SUPERSEDED/ABSORBED": 1,
+    "UNREVIEWED": 3
+  },
+  "recommended_action_counts": {
+    "CLOSE AS REJECTED WHILE PRESERVING REFUTATIONS": 1,
+    "CLOSE AS SUPERSEDED WITH DURABLE POINTER": 2,
+    "IMPORT CLEAN PACKET THEN CLOSE": 22,
+    "KEEP OPEN": 8,
+    "MERGE AFTER REVIEWED FIX": 7,
+    "NO ACTION UNTIL REVIEW": 5
+  },
+  "parts": [
+    {"part":"A1-03-11","path":"pr-lifecycle/records-A1-03-11.json","record_count":3,"prs":[3,6,11]},
+    {"part":"A2-12-20","path":"pr-lifecycle/records-A2-12-20.json","record_count":6,"prs":[12,13,14,16,19,20]},
+    {"part":"B1-32-38","path":"pr-lifecycle/records-B1-32-38.json","record_count":6,"prs":[32,33,34,35,37,38]},
+    {"part":"B2-42-50","path":"pr-lifecycle/records-B2-42-50.json","record_count":7,"prs":[42,44,45,47,48,49,50]},
+    {"part":"C1-51-57","path":"pr-lifecycle/records-C1-51-57.json","record_count":4,"prs":[51,53,56,57]},
+    {"part":"C2-60-64","path":"pr-lifecycle/records-C2-60-64.json","record_count":5,"prs":[60,61,62,63,64]},
+    {"part":"D1-65-69","path":"pr-lifecycle/records-D1-65-69.json","record_count":5,"prs":[65,66,67,68,69]},
+    {"part":"D2-70-74","path":"pr-lifecycle/records-D2-70-74.json","record_count":3,"prs":[70,72,74]},
+    {"part":"E1-76-79","path":"pr-lifecycle/records-E1-76-79.json","record_count":3,"prs":[76,77,79]},
+    {"part":"E2-80-83","path":"pr-lifecycle/records-E2-80-83.json","record_count":3,"prs":[80,81,83]}
+  ]
+}
