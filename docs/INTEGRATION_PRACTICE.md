@@ -166,7 +166,7 @@ Add new dated evidence rather than altering frozen records. Keep current scienti
 
 ## 12. Run only proportionate checks
 
-Run the cheap structural validator:
+The validator source is [`../tools/check_integration_state.py`](../tools/check_integration_state.py). Run it with:
 
 ```bash
 python tools/check_integration_state.py
