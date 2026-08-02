@@ -48,6 +48,8 @@ Prefer a clean proof packet over importing a long branch history. A durable pack
 
 Never silently repair a source theorem. Preserve the false original and give the repair a separate identity and review boundary.
 
+For choosing source work, extracting packets, reviewing integrated wording, superseding duplicates, archiving evidence, and later closing source PRs, follow the gentle [`integration practice`](docs/INTEGRATION_PRACTICE.md). It is a lifecycle guide, not a prerequisite for exploratory research.
+
 ## Nonnegotiable mathematical checks
 
 Before claiming progress toward a counterexample, ask:
