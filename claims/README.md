@@ -1,65 +1,68 @@
-# Claim registry
+# Claim registry and status semantics
 
-The registry is a hybrid:
+The registry is provenance infrastructure. Human mathematical exposition lives in [`../research/integrated/`](../research/integrated/README.md) and the wider source-pinned catalog is [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md).
 
-- [`registry.json`](registry.json) is the machine-readable index and status vocabulary.
-- [`registry/canonical-1.json`](registry/canonical-1.json), [`registry/canonical-2.json`](registry/canonical-2.json), and [`registry/roadmap.json`](registry/roadmap.json) hold the full records.
-- [`CANONICAL.md`](CANONICAL.md) is the human-readable rendering.
-- [`aliases.json`](aliases.json) records branch-qualified aliases, collisions, repairs, refutations and supersessions.
-- [`../docs/integration/2026-08-02-lifecycle/PROOF_IMPORT_PLAN.md`](../docs/integration/2026-08-02-lifecycle/PROOF_IMPORT_PLAN.md) records how frozen source proofs should become durable local packets.
+## Files
 
-The registry does not replace proof files. It points to proof-bearing source PRs at exact commits and records what was actually reviewed.
+- [`registry.json`](registry.json) — schema, status vocabulary, and part index;
+- [`registry/canonical-1.json`](registry/canonical-1.json) and [`registry/canonical-2.json`](registry/canonical-2.json) — eight durable integrated records;
+- [`registry/roadmap.json`](registry/roadmap.json) — SC\*, FC\*, and the proposed bridge;
+- [`CANONICAL.md`](CANONICAL.md) — compact human rendering;
+- [`aliases.json`](aliases.json) — branch-qualified aliases, collisions, refutations, and repairs.
 
-## Four orthogonal statuses
+The registry does not replace proof files and does not upgrade a statement merely because it is resident.
 
-`mathematical_status` answers whether the statement is verified, source-qualified, empirical, proposed, open, refuted or superseded.
+## Independent status dimensions
 
-`integration_status` answers the intended repository role: canonical, roadmap, reference-only, deferred or quarantined.
+`mathematical_status` says whether the exact statement is verified, source-qualified, empirical, proposed, open, refuted, or superseded.
 
-`promotion_state` answers whether that role is merely selected in a draft or accepted on main.
+`integration_status` says whether the record is a resident canonical reference, roadmap obligation, reference-only item, deferred item, or quarantined item.
 
-`proof_residency` answers whether the proof is still only at a frozen source commit or has a durable local proof packet.
+`promotion_state` says whether the repository accepts the record as a reference, accepts it with local proof, accepts it as a roadmap, or retires it.
 
-These fields must not be collapsed. For example:
+`proof_residency` says whether a readable proof packet is local, remains only at a frozen source, is an open obligation, or is historical.
+
+`dependency_residency` says whether the load-bearing dependencies are local, source-pinned, or mixed.
+
+These fields must not be collapsed. Examples:
 
 ```text
 mathematical_status = verified
-integration_status  = canonical
-promotion_state     = candidate_in_draft_pr
-proof_residency     = frozen_source_reference
+promotion_state     = accepted_with_local_proof
+proof_residency     = local_proof_packet
 ```
 
-means that the underlying statement passed exact-SHA review, an integrator selected it for canonical use, but the integration PR is unmerged and the proof body is not yet local to main.
+means the exact reviewed result is accepted and its proof is readable locally.
 
-## Promotion states
+```text
+mathematical_status           = source-qualified
+component_mathematical_status = verified_at_exact_source_shas
+integrated_statement_status   = pending_narrow_review
+promotion_state               = accepted_reference_record
+proof_residency               = local_proof_packet
+```
 
-- `candidate_in_draft_pr` — selected by an unmerged integration draft.
-- `accepted_reference_record` — accepted on main as a registry/reference record.
-- `accepted_with_local_proof` — accepted on main with a durable proof packet.
-- `roadmap_candidate_in_draft_pr` — selected roadmap record in an unmerged draft.
-- `roadmap_accepted` — accepted roadmap/obligation on main; the obligation remains unsolved.
-- `retired` — no longer active, with a migration or supersession record.
+is the durable status of `IC-PERIODIC-001`: its component proofs are reviewed and resident, while the exact combined wording still needs one narrow review.
 
-PR #84 currently uses candidate states. It must not self-certify its own independent review.
+A refutation may be `accepted_with_local_proof` while its `mathematical_status` is `refuted`; that means the refutation is an accepted result, not that the false theorem became verified.
 
-## Minimum canonical record
+## Minimum integrated record
 
-A candidate or accepted canonical record states:
+A durable record states:
 
-- the exact claim and scope;
+- exact claim and scope;
 - exclusions and finite-to-infinite boundary;
-- source PR, source SHA, source claim IDs and source paths;
-- review report, reviewer scope and verdict;
-- dependencies;
+- source PR, source SHA, source claim IDs, and source paths;
+- exact review report and verdict;
+- dependencies and dependency residency;
 - proof and artifact evidence;
 - aliases and repair/supersession relations;
-- promotion state and gate;
-- proof residency and import plan.
+- local packet when resident.
 
 ## Identifier rule
 
-Never cite a bare colliding ID such as `T-7401`. Use the branch-qualified source form, for example `PR61:T-7401`, or the canonical integrated ID. Source files are not silently renamed.
+Never cite a colliding bare ID such as `T-7401`. Use `PR<number>:<claim-id>` or the repository record ID. Source files are not silently renamed.
 
-## Roadmap bridge
+## Roadmap boundary
 
-`RD-BRIDGE-001` records `SC* + FC* => Collatz` as a **proposed** normalization/crosswalk theorem. Reviewed lane components exist, but the combined repository-level implication still needs narrow independent review. See [`SC_FC_BRIDGE.md`](../docs/integration/2026-08-02-lifecycle/SC_FC_BRIDGE.md).
+`RD-SC-001` and `RD-FC-001` are accepted **open obligations**. `RD-BRIDGE-001` is an accepted **PROPOSED** roadmap record whose exact least-counterexample crosswalk remains pending narrow review. None is a proof of Collatz.

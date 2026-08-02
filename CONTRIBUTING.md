@@ -1,82 +1,51 @@
 # Contributing
 
-This repository supports two complementary modes.
+The repository supports free exploration and a narrow integration layer.
 
-## Exploratory research
+## Explore freely
 
-You may open a broad research PR, pursue an unconventional model, write informal notes, run an experiment, refute an earlier claim, or change direction. Use clear status labels and preserve failed approaches. No registry entry is required before exploration.
+Broad research PRs, informal notes, experiments, countermodels, and changes of direction are welcome. Before publishing, make four things visible:
 
-Useful defaults:
+1. the exact map and normalization;
+2. the status of each load-bearing claim;
+3. the finite-versus-all-depth and 2-adic-versus-ordinary boundary;
+4. the unresolved step.
 
-- identify the source issue or question;
-- state which map, normalization, and quantifiers are in force;
-- separate finite computation from all-depth conclusions;
-- keep an exact artifact and replay command when computation matters;
-- mark external-theorem dependencies and exact normalizations;
-- say plainly what remains open.
+Computation that matters should have a frozen artifact, a replay command, and an honest statement of whether it was independently replayed.
 
-These are defaults, not a bureaucracy. Deviate when the research benefits, and explain the deviation.
+## Request review
 
-## Requesting review
-
-A review request should identify:
+Give the reviewer:
 
 - the exact commit to freeze;
 - the load-bearing claims and files;
 - dependencies and source-qualified inputs;
-- computational artifacts and whether a full replay is expected;
-- the finite-versus-all-depth conclusion;
-- known doubts, repairs, or superseded statements.
+- artifact/checker state;
+- known doubts, repairs, and supersessions.
 
-Reviewers should record a verdict at the frozen SHA. Later commits require a delta review.
+A review verdict applies only to that SHA. A branch-level verdict may contain passing and failing claims.
 
-## Requesting canonical integration
+## Request integration
 
-Canonical integration adds a lightweight contract. Include a short canonicalization note containing:
+Integration is a lightweight additional contract, not a prerequisite for exploration. Supply:
 
 ```text
-claim:
-source PR and exact SHA:
-claim IDs and files:
-mathematical status sought:
-scope and exclusions:
-dependencies:
-review report and reviewer:
-artifact state:
-repair/refutation/supersession relations:
+statement and exact scope
+source PR, SHA, claim IDs, and paths
+dependencies and normalization
+review report and verdict
+proof/artifact residency and replay state
+refutation, repair, alias, or supersession relations
 ```
 
-The integrator may extract a coherent subpacket rather than merge the entire PR. A mixed PR can therefore preserve verified claims while blocked claims remain deferred.
+An integrator may extract a coherent subset rather than merge the whole PR. A repaired theorem never changes the status of the original.
 
-## Status and evidence
+## Identifiers and evidence
 
-Mathematical status:
+Use branch-qualified source IDs such as `PR61:T-7401` when collisions exist. Repository IDs are aliases, not silent renames.
 
-- `VERIFIED`
-- `SOURCE-QUALIFIED`
-- `EMPIRICAL`
-- `PROPOSED`
-- `OPEN`
-- `REFUTED`
-- `SUPERSEDED`
-
-Evidence must say which of the following occurred:
-
-- proof inspected;
-- proof independently reconstructed;
-- artifact inspected;
-- artifact regenerated;
-- checker run;
-- large computation independently replayed;
-- computation not replayed;
-- artifact missing.
-
-Do not compress these into a single “verified” flag.
-
-## Repairs and identifiers
-
-A repaired theorem receives a new source claim or new source SHA. The original verdict remains in history. Branch-local identifiers are written as `PR<number>:<claim-id>`; canonical IDs are allocated by integrators and recorded in [`claims/aliases.json`](claims/aliases.json).
+Keep these evidence states distinct: proof inspected, independently reconstructed, artifact inspected, artifact regenerated, checker run, large computation independently replayed, computation not replayed, and artifact missing.
 
 ## Repository changes
 
-Never push research directly to `main`. Use a branch and a reviewable PR. Do not change repository visibility, announce public readiness, or assume licensing/security settings are settled from a research PR.
+Use branches and reviewable PRs. Do not change visibility, permissions, branch protection, or public-release status from a research contribution. Do not add GitHub Actions without an explicit infrastructure decision.

@@ -1,62 +1,52 @@
 # Gettysburg Research: Collatz
 
-> **Project status: UNSOLVED.** This repository does not contain a proof or disproof of the Collatz conjecture, an accepted divergent positive orbit, or an accepted nontrivial positive cycle.
+> **Status: UNSOLVED.** This repository contains no accepted proof or disproof of the Collatz conjecture, no accepted divergent positive orbit, and no accepted nontrivial positive cycle.
 
-This is an open, agentic research repository for developing, testing, refuting, and integrating approaches to Collatz. Broad exploration is welcome. Canonical status is deliberately narrower: a result enters the integrated layer only with an exact source commit, a stated scope, dependencies, review provenance, an honest computation/replay record, and an explicit repository-promotion state.
+This is an open research laboratory for developing, checking, refuting, and connecting approaches to Collatz. The durable repository has three layers:
 
-## Start here
+- **front door:** this README, [`AGENTS.md`](AGENTS.md), and [`CONTRIBUTING.md`](CONTRIBUTING.md);
+- **research:** readable integrated proofs plus clearly labeled source-pinned and exploratory programs;
+- **archive:** frozen review snapshots, lifecycle ledgers, and machine provenance retained for auditability.
 
-- [`STATE.md`](STATE.md) — current operational pointer.
-- [`docs/integration/CURRENT.md`](docs/integration/CURRENT.md) — frozen snapshot and lifecycle continuation.
-- [`docs/integration/2026-08-02-lifecycle/PR_LIFECYCLE.md`](docs/integration/2026-08-02-lifecycle/PR_LIFECYCLE.md) — advisory disposition for every source PR in the first snapshot.
-- [`claims/README.md`](claims/README.md) — status and promotion semantics.
-- [`claims/CANONICAL.md`](claims/CANONICAL.md) — candidate-canonical and roadmap records selected by draft PR #84.
-- [`docs/INTEGRATION_PRACTICE.md`](docs/INTEGRATION_PRACTICE.md) — reusable integration and lifecycle practice.
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — lightweight contributor guidance.
+## Choose a route
 
-The README is intentionally stable. Live PR heads, review coverage, short-term blockers, lifecycle decisions, and current priorities belong in dated integration records.
+**Learn the science.** Read the [`research map`](docs/RESEARCH_MAP.md), then open either a resident proof packet in [`research/integrated/`](research/integrated/README.md) or a source-pinned family in the [`reviewed-results catalog`](research/RESULTS_CATALOG.md).
 
-## Three boundaries that must not be collapsed
+**Work on the project.** Agents begin with [`AGENTS.md`](AGENTS.md); human contributors use [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-1. **Finite compatibility:** every finite word or depth has one or more positive integer representatives.
-2. **A 2-adic completion:** compatible finite residues determine a point of `Z_2`, which may be negative or nonintegral in the ordinary sense.
-3. **One ordinary all-time trajectory:** a single positive integer realizes every depth and the required dynamics indefinitely.
+## What is resident
 
-An argument that proves only the first or second item has not produced the third.
+The first proof-resident spine establishes narrow results about:
 
-## Review, integration, and acceptance are different
+- ordinary extraction from nested residue cylinders and least-root sets;
+- the explicit `(1110)^∞` 2-adic completion ghost;
+- fixed-source coefficient-supercritical divergence and the exact SC\* equivalence;
+- fixed-depth safety-automata artifacts;
+- finite affine/rational and semilinear barriers in one exact six-branch chart;
+- an exact refutation of an unrestricted factor-complexity screen and a separate nonconstant repair.
 
-A review verdict answers whether a statement passed at one exact SHA. It is not a merge, extraction, closure, or lifecycle instruction.
+The periodic-tail packet is **source-qualified**: its component statements were verified at exact source SHAs, while the exact integrated synthesis remains pending narrow review. The wider repository contains many additional reviewed families that are catalogued but still source-pinned.
 
-The registry uses four separate dimensions:
+## The five principal programs
 
-```text
-mathematical status
-integration role
-repository promotion state
-proof residency
-```
+1. **Ordinary extraction and completion:** distinguish finite representatives, one 2-adic completion, and one fixed positive ordinary all-time seed.
+2. **Periodic tails and cycles:** use the complete denominator `2^L-3^s` and exact physical replay; proper-factor hits are not cycle certificates.
+3. **Coefficient stopping / SC\*:** prove every fixed positive source eventually has a coefficient-subcritical prefix.
+4. **First crossing / FC\*:** exclude every complete nontrivial first-crossing realization with one common displacement and the whole denominator.
+5. **Automata, rigidity, and representation limits:** identify method classes that cannot cross the ordinary/all-depth boundary, without mistaking method failure for Collatz convergence.
 
-While PR #84 remains an unmerged draft, its eight `IC-*` records are **candidate canonical reference records**, not accepted repository canon. Their source mathematics retains the exact reviewed status recorded at the frozen commits. See [`claims/README.md`](claims/README.md).
+The proposed bridge `SC* + FC* => Collatz` remains **PROPOSED** pending an exact crosswalk review; SC\*, FC\*, and Collatz remain open.
 
-## Current strategic spine
+## Nonnegotiable boundaries
 
-The first integration pass uses the following as a **proposed roadmap bridge**, not as an accepted theorem:
+Never collapse:
 
-```text
-SC*  +  FC*  =>  no least positive counterexample
-```
+- finite compatibility into one all-depth witness;
+- a point of `Z_2` into a positive ordinary integer;
+- a bounded experiment into an all-length theorem;
+- an inspected artifact into an independently replayed computation;
+- proper-factor congruences into complete-denominator divisibility;
+- a theorem reviewed at one SHA into later branch additions;
+- a refuted statement into its separately reviewed repair.
 
-- **SC\*** is the fixed-source coefficient-stopping / all-supercritical source-escape obligation.
-- **FC\*** is the complete first-crossing and full-denominator exclusion, including every nontrivial positive cycle.
-- **RD-BRIDGE-001** is the missing clean crosswalk showing that the repository definitions of SC* and FC* cover every least-counterexample case.
-
-The reviewed ingredients and the remaining bridge review are recorded in [`SC_FC_BRIDGE.md`](docs/integration/2026-08-02-lifecycle/SC_FC_BRIDGE.md). Until that bridge receives narrow independent review, describe this as the principal proposed organizational spine, not as a logically established exhaustive theorem.
-
-## Research freedom and lifecycle discipline
-
-Exploratory PRs may be broad, informal, unconventional, computational, or deliberately speculative. Contributors do **not** need a registry entry before exploring.
-
-The additional contract begins only when material seeks review, canonical integration, or eventual closure. A source PR is not closed merely because its headline is rejected or duplicated: accepted claims, refutations, artifacts, open questions, and provenance must first have durable destinations. See [`CONTRIBUTING.md`](CONTRIBUTING.md) and the lifecycle ledger.
-
-Be imaginative in discovery, precise in status, and uncompromising about the finite-to-infinite and 2-adic-to-ordinary boundaries.
+Historical integration evidence is indexed at [`archive/README.md`](archive/README.md). A small compatibility pointer remains at [`STATE.md`](STATE.md), but it is not part of the onboarding route.
