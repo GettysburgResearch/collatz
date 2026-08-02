@@ -40,6 +40,8 @@ refutation, repair, alias, or supersession relations
 
 An integrator may extract a coherent subset rather than merge the whole PR. A repaired theorem never changes the status of the original.
 
+For clean extraction, dependency repair, supersession, archival preservation, and eventual source-PR closure, use [`docs/INTEGRATION_PRACTICE.md`](docs/INTEGRATION_PRACTICE.md). That guidance applies when work seeks durable integration or cleanup; it does not impose a submission schema on exploratory branches.
+
 ## Identifiers and evidence
 
 Use branch-qualified source IDs such as `PR61:T-7401` when collisions exist. Repository IDs are aliases, not silent renames.
