@@ -1,13 +1,22 @@
-# Current integration pointer
+# Legacy integration compatibility pointer
 
-## Immutable frozen snapshot
+The single current repository pointer is now [`../../STATE.md`](../../STATE.md). Newcomers should read [`../../START_HERE.md`](../../START_HERE.md), [`../../CURRENT_KNOWLEDGE.md`](../../CURRENT_KNOWLEDGE.md), and [`../../FRONTIERS.md`](../../FRONTIERS.md), not the lifecycle ledger.
 
-**Snapshot:** [`2026-08-01`](2026-08-01/STATE.md)  
-**Cutoff UTC:** `2026-08-01T21:16:40Z`  
-**Cutoff Asia/Jerusalem:** `2026-08-02T00:16:40+03:00`  
-**Frozen main:** `0ae0c67bb058f9a7c56cc7744fe5bf2650a7cb84`  
+This file remains to preserve old links into the first integration process.
 
-The following files remain the authoritative historical ledger for the first cutoff:
+## First immutable snapshot
+
+Location: [`2026-08-01/`](2026-08-01/STATE.md)
+
+```text
+cutoff UTC: 2026-08-01T21:16:40Z
+cutoff Asia/Jerusalem: 2026-08-02T00:16:40+03:00
+frozen main: 0ae0c67bb058f9a7c56cc7744fe5bf2650a7cb84
+source PR population: 45
+exact-SHA review coverage: 42/45
+```
+
+Authoritative historical files:
 
 - [`SNAPSHOT.md`](2026-08-01/SNAPSHOT.md)
 - [`STATE.md`](2026-08-01/STATE.md)
@@ -18,33 +27,36 @@ The following files remain the authoritative historical ledger for the first cut
 - [`open-prs.json`](2026-08-01/open-prs.json)
 - [`POST_CUTOFF.md`](2026-08-01/POST_CUTOFF.md)
 
-Do not edit those records to incorporate later work.
+Do not rewrite these files to make later work appear reviewed at the earlier cutoff.
 
-## Current operational continuation
+## Pre-merge lifecycle continuation
 
-**Continuation:** [`2026-08-02-lifecycle`](2026-08-02-lifecycle/README.md)  
-**Observation UTC:** `2026-08-01T22:18:52Z`  
-**Observation Asia/Jerusalem:** `2026-08-02T01:18:52+03:00`  
-**Integration branch start head:** `390969210c5c168c52ba2795b7c3400e57a6d2e8`  
+Location: [`2026-08-02-lifecycle/`](2026-08-02-lifecycle/README.md)
 
-The continuation adds:
+This directory was created while PR #84 was still a draft. It records:
 
-- all-45-PR lifecycle and recommended-action ledger;
-- candidate-versus-accepted promotion semantics;
-- durable proof-import plan;
-- focused promotion audit and independent-review checklist;
-- proposed `RD-BRIDGE-001` for the SC*/FC* crosswalk;
-- Wave A and Wave B execution criteria;
-- explicit human-owner decisions.
+- advisory dispositions for all 45 source PRs;
+- recommended future actions;
+- candidate-state semantics used before merge;
+- the original proof-import plan and promotion audit;
+- a proposed SC*/FC* crosswalk;
+- planned later integration waves and owner decisions.
 
-Use these files for operational decisions:
+PR #84 subsequently merged at
 
-- [`PR_LIFECYCLE.md`](2026-08-02-lifecycle/PR_LIFECYCLE.md)
-- [`pr-lifecycle.json`](2026-08-02-lifecycle/pr-lifecycle.json)
-- [`PROOF_IMPORT_PLAN.md`](2026-08-02-lifecycle/PROOF_IMPORT_PLAN.md)
-- [`PROMOTION_AUDIT.md`](2026-08-02-lifecycle/PROMOTION_AUDIT.md)
-- [`SC_FC_BRIDGE.md`](2026-08-02-lifecycle/SC_FC_BRIDGE.md)
-- [`NEXT_WAVES.md`](2026-08-02-lifecycle/NEXT_WAVES.md)
-- [`OWNER_DECISIONS.md`](2026-08-02-lifecycle/OWNER_DECISIONS.md)
+```text
+7ed553faea8350050ca4c7d742c049f90211a8bd.
+```
 
-A later integrator should create a new dated directory for new reviews or changed heads and then update this pointer.
+Therefore phrases such as `candidate_in_draft_pr`, “draft PR #84,” or “unmerged” inside that dated directory are historical statements, not current repository semantics.
+
+## Current post-merge layer
+
+Use:
+
+- [`../../research/integrated/`](../../research/integrated/README.md) for readable proof packets;
+- [`../../claims/CANONICAL.md`](../../claims/CANONICAL.md) for accepted reference and roadmap records;
+- [`../../archive/integration/`](../../archive/integration/README.md) for the archive index;
+- [`../../STATE.md`](../../STATE.md) for the current branch and PR status.
+
+Stable historical paths remain in place so old PR comments, reports, and citations continue to resolve.
