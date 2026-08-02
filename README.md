@@ -1,62 +1,76 @@
 # Gettysburg Research: Collatz
 
-> **Project status: UNSOLVED.** This repository does not contain a proof or disproof of the Collatz conjecture, an accepted divergent positive orbit, or an accepted nontrivial positive cycle.
+> **Status: UNSOLVED.** This repository contains no accepted proof or disproof of the Collatz conjecture, no accepted divergent positive orbit, and no accepted nontrivial positive cycle.
 
-This is an open, agentic research repository for developing, testing, refuting, and integrating approaches to Collatz. Broad exploration is welcome. Canonical status is deliberately narrower: a result enters the integrated layer only with an exact source commit, a stated scope, dependencies, review provenance, an honest computation/replay record, and an explicit repository-promotion state.
+This is an open research laboratory for developing, checking, refuting, and connecting approaches to Collatz. `main` contains a mixture of:
 
-## Start here
+- **integrated knowledge**: narrow statements with readable proof packets, exact provenance, and independent-review records;
+- **active research**: proposed theorems, computations, constructions, literature work, and failed approaches whose status remains explicit;
+- **backstage evidence**: frozen snapshots, review-wave ledgers, machine registries, and lifecycle records retained for auditability.
 
-- [`STATE.md`](STATE.md) — current operational pointer.
-- [`docs/integration/CURRENT.md`](docs/integration/CURRENT.md) — frozen snapshot and lifecycle continuation.
-- [`docs/integration/2026-08-02-lifecycle/PR_LIFECYCLE.md`](docs/integration/2026-08-02-lifecycle/PR_LIFECYCLE.md) — advisory disposition for every source PR in the first snapshot.
-- [`claims/README.md`](claims/README.md) — status and promotion semantics.
-- [`claims/CANONICAL.md`](claims/CANONICAL.md) — candidate-canonical and roadmap records selected by draft PR #84.
-- [`docs/INTEGRATION_PRACTICE.md`](docs/INTEGRATION_PRACTICE.md) — reusable integration and lifecycle practice.
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — lightweight contributor guidance.
+A metadata record is not a substitute for a proof body. A reviewed theorem is not a proof of Collatz. A long finite computation is not an all-depth argument.
 
-The README is intentionally stable. Live PR heads, review coverage, short-term blockers, lifecycle decisions, and current priorities belong in dated integration records.
+## Two-minute orientation
 
-## Three boundaries that must not be collapsed
+1. Read [`START_HERE.md`](START_HERE.md) for the project map and the minimum notation.
+2. Read [`CURRENT_KNOWLEDGE.md`](CURRENT_KNOWLEDGE.md) for what is actually established, refuted, source-qualified, or still awaiting local proof completion.
+3. Read [`FRONTIERS.md`](FRONTIERS.md) for the load-bearing open problems and the smallest missing lemmas.
+4. Agents should then read [`AGENTS.md`](AGENTS.md); human contributors can use [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-1. **Finite compatibility:** every finite word or depth has one or more positive integer representatives.
-2. **A 2-adic completion:** compatible finite residues determine a point of `Z_2`, which may be negative or nonintegral in the ordinary sense.
-3. **One ordinary all-time trajectory:** a single positive integer realizes every depth and the required dynamics indefinitely.
+The archival integration and PR-lifecycle material is indexed under [`archive/`](archive/README.md). It is deliberately not the newcomer path.
 
-An argument that proves only the first or second item has not produced the third.
+## The mathematical map
 
-## Review, integration, and acceptance are different
+The current work is organized around five interacting programs.
 
-A review verdict answers whether a statement passed at one exact SHA. It is not a merge, extraction, closure, or lifecycle instruction.
+| Program | What is established here | Main unresolved boundary |
+|---|---|---|
+| **Ordinary extraction and completion** | Compatible finite cylinders determine a 2-adic point; an ordinary integer exists exactly when canonical representatives stabilize on an ordinary boundary face. A bounded nested least-root sequence is exactly the missing compactness principle. | Prove boundedness or escape for a concrete aperiodic architecture. |
+| **Periodic tails and cycles** | A periodic parity tail has a unique rational 2-adic realizer controlled by the complete denominator `2^L-3^s`; a positive ordinary eventual period must enter a positive cycle. | Exclude every nontrivial positive cycle or produce and replay one exact word. The integrated synthesis still needs a narrow wording review. |
+| **Coefficient stopping / SC\*** | All-time coefficient-supercritical positive orbits diverge to `+infinity`; escape of the least all-supercritical sources is equivalent to universal finite coefficient stopping. | Prove the fixed-source valuation bound that makes every positive source cross. |
+| **First crossing / FC\*** | Reviewed reductions place cycles and non-descending first crossings into a common complete-denominator problem. | Exclude every complete first-crossing realization with one common displacement, not merely factors or bounded subclasses. |
+| **Automata, rigidity, and representation limits** | Cofinite finite-horizon automata have a spurious terminal SCC; finite affine/rational self-sections and semilinear sanctuaries fail in the reviewed six-branch chart; one unrestricted factor-complexity screen is refuted and repaired. | Find an unbounded-state or genuinely nonsemilinear mechanism, or prove direct height escape. |
 
-The registry uses four separate dimensions:
+The detailed dependency map is in [`CURRENT_KNOWLEDGE.md`](CURRENT_KNOWLEDGE.md). New connections are welcome, but any connection not already reviewed is labeled **PROPOSED**.
 
-```text
-mathematical status
-integration role
-repository promotion state
-proof residency
-```
+## Strongest narrow results now readable on `main`
 
-While PR #84 remains an unmerged draft, its eight `IC-*` records are **candidate canonical reference records**, not accepted repository canon. Their source mathematics retains the exact reviewed status recorded at the frozen commits. See [`claims/README.md`](claims/README.md).
+The first integrated proof packets live under [`research/integrated/`](research/integrated/README.md):
 
-## Current strategic spine
+- ordinary extraction by signed residue stabilization and bounded nested minima;
+- the explicit `(1110)^∞` completion ghost;
+- periodic tails and complete-denominator divisibility, with the synthesized integrated wording still pending narrow review;
+- coefficient-supercritical divergence and the exact SC\* equivalence;
+- the fixed-depth cofinite-tail automata obstruction;
+- finite affine/rational six-branch rigidity and the semilinear-sanctuary obstruction;
+- the exact refutation of the unrestricted factor-complexity screen and its separate nonconstant repair.
 
-The first integration pass uses the following as a **proposed roadmap bridge**, not as an accepted theorem:
+These are valuable, but each is much narrower than Collatz.
 
-```text
-SC*  +  FC*  =>  no least positive counterexample
-```
+## Three boundaries that must never be collapsed
 
-- **SC\*** is the fixed-source coefficient-stopping / all-supercritical source-escape obligation.
-- **FC\*** is the complete first-crossing and full-denominator exclusion, including every nontrivial positive cycle.
-- **RD-BRIDGE-001** is the missing clean crosswalk showing that the repository definitions of SC* and FC* cover every least-counterexample case.
+1. **Finite compatibility:** every finite prefix has positive integer representatives.
+2. **2-adic completion:** compatible prefixes determine one point of `Z_2`, possibly negative or nonordinary.
+3. **One positive ordinary all-time trajectory:** one fixed positive integer realizes every depth and the physical dynamics forever.
 
-The reviewed ingredients and the remaining bridge review are recorded in [`SC_FC_BRIDGE.md`](docs/integration/2026-08-02-lifecycle/SC_FC_BRIDGE.md). Until that bridge receives narrow independent review, describe this as the principal proposed organizational spine, not as a logically established exhaustive theorem.
+Likewise, distinguish:
 
-## Research freedom and lifecycle discipline
+- a full proof from a proposed proof;
+- an inspected artifact from an independently replayed computation;
+- a proper-factor congruence from complete-denominator divisibility;
+- a theorem at one exact SHA from later branch additions;
+- a refuted statement from a separately reviewed repair.
 
-Exploratory PRs may be broad, informal, unconventional, computational, or deliberately speculative. Contributors do **not** need a registry entry before exploring.
+## Where work goes
 
-The additional contract begins only when material seeks review, canonical integration, or eventual closure. A source PR is not closed merely because its headline is rejected or duplicated: accepted claims, refutations, artifacts, open questions, and provenance must first have durable destinations. See [`CONTRIBUTING.md`](CONTRIBUTING.md) and the lifecycle ledger.
+- Put stable, reviewed mathematics in `research/integrated/` through a small manifest and exact provenance.
+- Put free-form exploration in an existing `research/`, `experiments/`, `literature/`, or `reports/` area, or open a focused new area.
+- Put frozen integration evidence and lifecycle history behind the [`archive`](archive/README.md) index.
 
-Be imaginative in discovery, precise in status, and uncompromising about the finite-to-infinite and 2-adic-to-ordinary boundaries.
+Exploration does not require a registry form. Promotion does require an exact statement, scope, source SHA, dependencies, review evidence, and honest computation status.
+
+## Current strategic bridge
+
+`SC* + FC* => Collatz` remains a **PROPOSED repository-level bridge**. Its reviewed ingredients are promising, but the exact normalization and coverage crosswalk has not yet been independently accepted as one theorem. See [`FRONTIERS.md`](FRONTIERS.md#proposed-sc--fc-bridge).
+
+Be imaginative in discovery, precise in status, and uncompromising about ordinary-integer, complete-denominator, and finite-to-infinite boundaries.
