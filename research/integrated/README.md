@@ -1,6 +1,8 @@
 # Integrated proof packets
 
-These packets are the readable mathematical layer of `main`. They are extracted from exact reviewed source commits rather than imported through whole branch histories.
+Merged PR #84 accepted the initial `IC-*` statements as repository reference records. Draft PR #85 introduces the readable proof packets below on its branch. They become physically resident on `main` only if this draft is later reviewed and merged.
+
+The packets are extracted from exact reviewed source commits rather than imported through whole branch histories. Adding a local proof body is an information and durability action; it is not a new independent mathematical review.
 
 Each packet records:
 
@@ -17,25 +19,25 @@ Source authorship and branch-local claim IDs are preserved. A repaired theorem n
 
 ## Initial layer
 
-| Packet | Integrated records | Status on this branch |
+| Packet | Integrated records | Status on draft PR #85 |
 |---|---|---|
-| [`ordinary-extraction/`](ordinary-extraction/README.md) | `IC-EXTRACT-001` | accepted reference; local proof packet |
-| [`completion-ghost/`](completion-ghost/README.md) | `IC-GHOST-001` | accepted reference; local proof packet |
-| [`periodic-tails/`](periodic-tails/README.md) | `IC-PERIODIC-001` | accepted reference; local proof packet; integrated synthesis pending narrow review |
-| [`coefficient-stopping/`](coefficient-stopping/README.md) | `IC-SC-001` | accepted reference; local proof packet |
-| [`finite-safety-automata/`](finite-safety-automata/README.md) | `IC-AUT-001` | accepted reference; local proof packet |
-| [`six-branch-rigidity/`](six-branch-rigidity/README.md) | `IC-RIG-001` | accepted reference; local proof packet |
-| [`factor-complexity/`](factor-complexity/README.md) | `IC-REF-001`, `IC-REP-001` | accepted references; local proof packet; PR #16 dependencies remain source-pinned |
+| [`ordinary-extraction/`](ordinary-extraction/README.md) | `IC-EXTRACT-001` | accepted reference; local proof packet proposed for main |
+| [`completion-ghost/`](completion-ghost/README.md) | `IC-GHOST-001` | accepted reference; local proof packet proposed for main |
+| [`periodic-tails/`](periodic-tails/README.md) | `IC-PERIODIC-001` | accepted reference; local component proof packet; integrated synthesis pending narrow review |
+| [`coefficient-stopping/`](coefficient-stopping/README.md) | `IC-SC-001` | accepted reference; local proof packet proposed for main |
+| [`finite-safety-automata/`](finite-safety-automata/README.md) | `IC-AUT-001` | accepted reference; local proof packet proposed for main |
+| [`six-branch-rigidity/`](six-branch-rigidity/README.md) | `IC-RIG-001` | accepted reference; local proof packet proposed for main |
+| [`factor-complexity/`](factor-complexity/README.md) | `IC-REF-001`, `IC-REP-001` | accepted references; local packet; PR #16 dependencies remain source-pinned |
 
 ## Status rule
 
-“Local proof packet” means the proof is readable here. It does not imply that every dependency is also local, that later source-branch additions were reviewed, or that the theorem is stronger than its exact stated scope.
+“Local proof packet” means the proof is readable on the current branch. Until PR #85 merges, it does not mean the proof body is resident on `main`. It also does not imply that every dependency is local, that later source-branch additions were reviewed, or that the theorem is stronger than its exact stated scope.
 
 The periodic packet is deliberately exceptional: its component source theorems were reviewed, but the exact integrated synthesis still requires one narrow independent review. The packet carries that warning prominently.
 
 ## Machine registry
 
-The machine-readable records remain in [`../../claims/registry/`](../../claims/registry/). The registry tracks mathematical status, integration role, repository acceptance, proof residency, sources, and review evidence. It is a provenance layer, not the primary exposition.
+The machine-readable records remain in [`../../claims/registry/`](../../claims/registry/). The registry tracks mathematical status, integration role, repository acceptance, proof residency on this branch, sources, and review evidence. It is a provenance layer, not the primary exposition.
 
 ## Adding another packet
 
