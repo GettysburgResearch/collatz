@@ -6,6 +6,8 @@ A frontier is not closed by a longer finite prefix, a new coordinate system, a p
 
 ## SC*: universal fixed-source coefficient stopping
 
+Roadmap record: `RD-SC-001`.
+
 For the shortcut map, let
 
 \[
@@ -54,6 +56,8 @@ v_2(3^{q(w)}n+A_w)<|w|.
 
 ## FC*: complete first-crossing exclusion
 
+Roadmap record: `RD-FC-001`.
+
 Let `w` be a first coefficient crossing of length `j` and weight `q`, so
 
 \[
@@ -101,6 +105,8 @@ Prove one of the following globally for growing support:
 - a cycle numerator identity without complete divisibility.
 
 ## Proposed SC* + FC* bridge
+
+Roadmap record: `RD-BRIDGE-001`.
 
 The intended repository-level implication is:
 
@@ -176,7 +182,7 @@ A local proof packet now presents the complete-denominator periodic classificati
 
 ### Review the following clauses together
 
-- the all-zero word gives `x=0` rather than a positive/negative sign case;
+- the all-zero word gives `x=0` rather than a positive or negative sign case;
 - the denominator is the complete `2^L-3^s`;
 - a finite preperiod reaches the unique periodic tail point;
 - a controller symbol may be used only when it emits one fixed finite parity block;
@@ -190,7 +196,9 @@ A passing review would remove the last integration-wording qualification from `I
 For the stationary chart with
 
 \[
-P=3^{12},\qquad Q=2^{19},
+P=3^{12},
+\qquad
+Q=2^{19},
 \]
 
 and six reviewed digits, finite affine and rational complete-tree self-sections collapse to the original expanding map, and no semilinear sanctuary exists.
@@ -246,8 +254,9 @@ Derive such a low-complexity presentation from a natural equality, near-extremal
 
 ## Proof-residency frontier
 
-Round 1 places readable packets for the initial integrated layer on the branch. Remaining repository-wide residency work includes:
+Draft PR #85 places readable packets for the initial integrated layer on its branch. Remaining repository-wide residency work includes:
 
+- merging this draft only after its proof extracts and links are reviewed;
 - importing local proof bodies for other reviewed claims outside the initial eight records;
 - importing the PR #16 dependencies used by the factor-complexity repair;
 - resolving source-ID collisions through manifests rather than renaming source claims;
