@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Cheap structural validation for the durable Collatz front door.
 
-This checks navigation, registry semantics, exact provenance fields, and frozen
-integration facts. It does not verify mathematics or replay scientific work.
+This checks navigation, registry semantics, exact provenance fields, future
+integration guidance, and frozen integration facts. It does not verify
+mathematics or replay scientific work.
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ REQUIRED_ROOT_FILES = {"README.md", "AGENTS.md", "CONTRIBUTING.md", "STATE.md"}
 REMOVED_ROOT_DASHBOARDS = {"START_HERE.md", "CURRENT_KNOWLEDGE.md", "FRONTIERS.md"}
 REQUIRED_DURABLE_PATHS = {
     "docs/RESEARCH_MAP.md",
+    "docs/INTEGRATION_PRACTICE.md",
     "research/README.md",
     "research/RESULTS_CATALOG.md",
     "research/integrated/README.md",
@@ -51,6 +53,7 @@ STALE_PATTERNS = {
     "round-specific branch": re.compile(r"agent/integration-front-door-round1", re.I),
     "round-specific prose": re.compile(r"\bRound\s+1\b|\bRound\s+2\b", re.I),
     "draft packet metadata": re.compile(r"local_packets_introduced_by_draft_pr|proof_residency_gate", re.I),
+    "candidate-in-draft semantics": re.compile(r"(?:roadmap_)?candidate_in_draft_pr", re.I),
     "active candidate state": re.compile(r'"promotion_state"\s*:\s*"(?:roadmap_)?candidate_in_draft_pr"'),
 }
 
@@ -85,6 +88,7 @@ def active_markdown_files() -> list[Path]:
         ROOT / "CONTRIBUTING.md",
         ROOT / "STATE.md",
         ROOT / "docs/RESEARCH_MAP.md",
+        ROOT / "docs/INTEGRATION_PRACTICE.md",
         ROOT / "research/README.md",
         ROOT / "research/RESULTS_CATALOG.md",
         ROOT / "claims/README.md",
@@ -278,6 +282,26 @@ def check_catalog() -> int:
     return len(required_families)
 
 
+def check_integration_practice() -> None:
+    path = ROOT / "docs/INTEGRATION_PRACTICE.md"
+    text = path.read_text(encoding="utf-8")
+    lower = text.lower()
+    for concept in ("choose", "extract", "review", "integrate", "supersede", "archive", "close", "exploratory"):
+        require(concept in lower, f"integration practice missing lifecycle concept: {concept}")
+    for target in (
+        "RESEARCH_MAP.md",
+        "../research/RESULTS_CATALOG.md",
+        "../research/integrated/README.md",
+        "../claims/README.md",
+        "../archive/README.md",
+        "../tools/check_integration_state.py",
+    ):
+        require(target in text, f"integration practice missing durable pointer: {target}")
+    require("Closure is repository hygiene, not a mathematical verdict." in text, "closure semantics missing from integration practice")
+    require("No registry entry" in text, "integration practice must preserve schema-free exploration")
+    require("dependency_residency" in text, "integration practice must track dependency residency")
+
+
 def check_frozen_archive() -> tuple[int, int]:
     snapshot = load_json("docs/integration/2026-08-01/open-prs.json")
     require(snapshot.get("cutoff_utc") == "2026-08-01T21:16:40Z", "frozen cutoff changed")
@@ -307,13 +331,14 @@ def main() -> int:
         check_no_stale_transactional_language()
         canonical_count, roadmap_count, verified_count = check_registry()
         family_count = check_catalog()
+        check_integration_practice()
         frozen_count, reviewed_count = check_frozen_archive()
     except CheckError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     print(
-        "OK: durable front door; "
+        "OK: durable front door and lifecycle practice; "
         f"{canonical_count} integrated records "
         f"({verified_count} verified local proofs, 1 accepted refutation, 1 source-qualified periodic synthesis), "
         f"{roadmap_count} roadmap records, {family_count} reviewed research families, "
