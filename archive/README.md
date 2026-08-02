@@ -1,36 +1,32 @@
 # Backstage archive
 
-This area indexes provenance and integration evidence that must remain durable but should not be the public front door.
+This is the single index for integration and review evidence that must remain durable but should not be the scientific front door.
 
-The archive contains or points to:
+## Immutable first cutoff
 
-- immutable dated integration snapshots;
-- exact-SHA review coverage and frozen PR-head inventories;
-- lifecycle and recommended-action ledgers;
-- machine-readable registries and alias tables;
-- previous handoffs, owner decisions, and proof-import plans;
-- historical process documents whose language reflects the repository state at the time.
+Historical directory: [`../docs/integration/2026-08-01/`](../docs/integration/2026-08-01/)
 
-These records are essential for auditors and integrators. They are not the best place for a newcomer to learn the mathematics.
+Frozen facts:
 
-## Current front-stage documents
+- cutoff UTC: `2026-08-01T21:16:40Z`;
+- frozen main: `0ae0c67bb058f9a7c56cc7744fe5bf2650a7cb84`;
+- 45 source PRs at cutoff;
+- 42 exact-SHA review verdicts;
+- PRs #67, #68, and #69 unreviewed in that wave.
 
-- [`../README.md`](../README.md)
-- [`../START_HERE.md`](../START_HERE.md)
-- [`../CURRENT_KNOWLEDGE.md`](../CURRENT_KNOWLEDGE.md)
-- [`../FRONTIERS.md`](../FRONTIERS.md)
-- [`../AGENTS.md`](../AGENTS.md)
+The directory contains the snapshot, review coverage, integration report, strategic outlook, historical handoff, post-cutoff note, and machine PR inventory. Those files are not rewritten to make later work appear reviewed earlier.
 
-## Integration archive
+## Pre-merge lifecycle continuation
 
-See [`integration/README.md`](integration/README.md).
+Historical directory: [`../docs/integration/2026-08-02-lifecycle/`](../docs/integration/2026-08-02-lifecycle/)
 
-## Machine metadata
+It contains the 45-row advisory lifecycle ledger, recommended actions, candidate-era promotion semantics, proof-import plan, promotion audit, proposed SC\*/FC\* crosswalk, wave plans, and owner decisions. Pre-merge status labels in that dated directory are historical evidence, not active semantics.
 
-The machine registry remains at [`../claims/registry/`](../claims/registry/) with its index at [`../claims/registry.json`](../claims/registry.json). It is retained in place to preserve stable paths and exact historical links. Human-readable mathematics lives under [`../research/integrated/`](../research/integrated/README.md).
+## Current durable locations
 
-## Historical-language rule
+- Scientific synthesis: [`../docs/RESEARCH_MAP.md`](../docs/RESEARCH_MAP.md)
+- Resident proofs: [`../research/integrated/`](../research/integrated/README.md)
+- Wider reviewed-results catalog: [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md)
+- Machine registry and aliases: [`../claims/`](../claims/README.md)
 
-A dated snapshot may say that a PR was open, draft, or unmerged because that was true at its observation time. Such text is historical evidence, not current status. Current status is stated only in the root front-stage documents and the active registry.
-
-Do not rewrite a frozen snapshot to make later activity appear reviewed or accepted earlier. Add a new dated record or update the current front-stage synthesis instead.
+The dated directories and registry remain at their original paths because reviews and PR discussions cite them. [`../docs/integration/CURRENT.md`](../docs/integration/CURRENT.md) is retained only as a short compatibility pointer.

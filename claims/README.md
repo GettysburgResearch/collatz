@@ -1,109 +1,68 @@
-# Claim and provenance layer
+# Claim registry and status semantics
 
-The scientific front door is [`../CURRENT_KNOWLEDGE.md`](../CURRENT_KNOWLEDGE.md). Readable proofs live under [`../research/integrated/`](../research/integrated/README.md). This directory retains the structured claim, alias, and provenance layer used by integrators and tooling.
+The registry is provenance infrastructure. Human mathematical exposition lives in [`../research/integrated/`](../research/integrated/README.md) and the wider source-pinned catalog is [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md).
 
 ## Files
 
-- [`CANONICAL.md`](CANONICAL.md) — concise human index of accepted reference and roadmap records.
-- [`registry.json`](registry.json) — machine-readable registry index and vocabulary.
-- [`registry/canonical-1.json`](registry/canonical-1.json) and [`registry/canonical-2.json`](registry/canonical-2.json) — full integrated-reference metadata.
-- [`registry/roadmap.json`](registry/roadmap.json) — open and proposed roadmap records.
-- [`aliases.json`](aliases.json) — branch-qualified aliases, collisions, repairs, refutations, and supersessions.
+- [`registry.json`](registry.json) — schema, status vocabulary, and part index;
+- [`registry/canonical-1.json`](registry/canonical-1.json) and [`registry/canonical-2.json`](registry/canonical-2.json) — eight durable integrated records;
+- [`registry/roadmap.json`](registry/roadmap.json) — SC\*, FC\*, and the proposed bridge;
+- [`CANONICAL.md`](CANONICAL.md) — compact human rendering;
+- [`aliases.json`](aliases.json) — branch-qualified aliases, collisions, refutations, and repairs.
 
-The registry complements proof packets; it does not replace them.
+The registry does not replace proof files and does not upgrade a statement merely because it is resident.
 
-## Four orthogonal fields
+## Independent status dimensions
 
-### `mathematical_status`
+`mathematical_status` says whether the exact statement is verified, source-qualified, empirical, proposed, open, refuted, or superseded.
 
-What is known about the statement itself:
+`integration_status` says whether the record is a resident canonical reference, roadmap obligation, reference-only item, deferred item, or quarantined item.
 
-```text
-verified
-source-qualified
-empirical
-proposed
-open
-refuted
-superseded
-```
+`promotion_state` says whether the repository accepts the record as a reference, accepts it with local proof, accepts it as a roadmap, or retires it.
 
-### `integration_status`
+`proof_residency` says whether a readable proof packet is local, remains only at a frozen source, is an open obligation, or is historical.
 
-The intended repository role:
+`dependency_residency` says whether the load-bearing dependencies are local, source-pinned, or mixed.
+
+These fields must not be collapsed. Examples:
 
 ```text
-canonical
-roadmap
-reference-only
-deferred
-quarantined
+mathematical_status = verified
+promotion_state     = accepted_with_local_proof
+proof_residency     = local_proof_packet
 ```
 
-### `promotion_state`
+means the exact reviewed result is accepted and its proof is readable locally.
 
-Whether the repository has accepted that role:
+```text
+mathematical_status           = source-qualified
+component_mathematical_status = verified_at_exact_source_shas
+integrated_statement_status   = pending_narrow_review
+promotion_state               = accepted_reference_record
+proof_residency               = local_proof_packet
+```
 
-- `candidate_in_draft_pr` — selected by an unmerged integration draft;
-- `accepted_reference_record` — accepted on `main` as the repository reference statement;
-- `accepted_with_local_proof` — accepted on `main` with a readable local proof or proof extract;
-- `roadmap_candidate_in_draft_pr` — selected roadmap record in an unmerged draft;
-- `roadmap_accepted` — accepted roadmap or obligation on `main`, whether or not it is solved;
-- `retired` — no longer active, with a durable migration or supersession record.
+is the durable status of `IC-PERIODIC-001`: its component proofs are reviewed and resident, while the exact combined wording still needs one narrow review.
 
-Merged PR #84 accepted the initial eight `IC-*` reference records and three `RD-*` roadmap records. Round 1 adds local proof packets and advances proof residency where appropriate. `IC-PERIODIC-001` remains an accepted reference whose exact integrated synthesis is pending narrow review.
-
-### `proof_residency`
-
-Where the proof or obligation lives:
-
-- `frozen_source_reference` — proof body remains only at exact source commits;
-- `local_proof_packet` — readable proof or exact proof extract resides on this branch or `main`;
-- `open_obligation` — no proof exists because the mathematical target is open;
-- `historical_record` — retained for provenance rather than active use.
-
-Proof residency does not change the mathematical verdict. Copying a proof locally is an information-architecture action, not a new independent review.
+A refutation may be `accepted_with_local_proof` while its `mathematical_status` is `refuted`; that means the refutation is an accepted result, not that the false theorem became verified.
 
 ## Minimum integrated record
 
-An integrated reference should state:
+A durable record states:
 
-- the exact theorem and scope;
-- exclusions and common misreadings;
-- source PR, SHA, claim IDs, and files;
-- review report and exact review SHA;
-- dependencies and source-qualified inputs;
-- proof and computation evidence;
-- repair, refutation, alias, and supersession relations;
-- repository acceptance and proof residency;
-- the next missing lemma.
-
-The corresponding readable packet should contain the proof or proof extract itself.
+- exact claim and scope;
+- exclusions and finite-to-infinite boundary;
+- source PR, source SHA, source claim IDs, and source paths;
+- exact review report and verdict;
+- dependencies and dependency residency;
+- proof and artifact evidence;
+- aliases and repair/supersession relations;
+- local packet when resident.
 
 ## Identifier rule
 
-Never cite a bare colliding ID such as `T-7401`. Use either:
+Never cite a colliding bare ID such as `T-7401`. Use `PR<number>:<claim-id>` or the repository record ID. Source files are not silently renamed.
 
-```text
-PR61:T-7401
-```
+## Roadmap boundary
 
-or the repository-owned integrated ID. Source files are not silently renamed.
-
-## Repairs
-
-A corrected theorem is a new statement with a new source identity or reviewed source SHA. Preserve the false original and the exact first invalid inference. A later repair cannot retroactively change the original verdict.
-
-## Roadmap rule
-
-An accepted roadmap record can remain mathematically `open` or `proposed`. In particular:
-
-- `RD-SC-001` is open;
-- `RD-FC-001` is open;
-- `RD-BRIDGE-001` is proposed and pending narrow review.
-
-See [`../FRONTIERS.md`](../FRONTIERS.md). Do not call `SC* + FC*` an established exhaustive reduction until the exact bridge crosswalk receives independent review.
-
-## Historical integration evidence
-
-The dated proof-import plans, promotion audits, lifecycle ledgers, and old candidate-state language are indexed under [`../archive/integration/`](../archive/integration/README.md). Their original paths remain stable for provenance.
+`RD-SC-001` and `RD-FC-001` are accepted **open obligations**. `RD-BRIDGE-001` is an accepted **PROPOSED** roadmap record whose exact least-counterexample crosswalk remains pending narrow review. None is a proof of Collatz.

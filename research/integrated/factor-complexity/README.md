@@ -2,17 +2,18 @@
 
 ## Status
 
-This packet preserves two different mathematical objects.
+This packet preserves two distinct mathematical objects.
 
 ### `IC-REF-001`
 
-- **Status:** the unrestricted screening statement `PR37:T-9318` is `REFUTED`.
-- **Proof residency:** local exact counterexample proof.
+- **Mathematical status:** the unrestricted screen `PR37:T-9318` is `REFUTED`.
+- **Repository status:** accepted refutation with local exact counterexample proof.
 
 ### `IC-REP-001`
 
-- **Status:** the separately numbered nonconstant repair `PR37:T-9319` is `VERIFIED`.
-- **Proof residency:** local proof packet with exact source-pinned dependencies from PR #16.
+- **Mathematical status:** the separately numbered nonconstant repair `PR37:T-9319` is `VERIFIED`.
+- **Repository status:** accepted with a local proof of the repair.
+- **Dependency residency:** three load-bearing PR #16 theorems remain exact-SHA source-pinned; this packet is therefore **not self-contained**.
 
 The repair does not overwrite or retroactively verify the original. Neither statement applies to every Collatz trajectory; the setting is the reviewed induced `64→81` centered-cylinder model.
 
@@ -32,16 +33,16 @@ The centered nearest-integer recurrence is
 64B_{K+1}=81B_K+v_K-v_{K+1}.
 \]
 
-The reviewed PR #16 dependency chain supplies:
+The exact source-pinned PR #16 dependency chain supplies:
 
-1. `PR16:L-9313`: eventual zero appended blocks are equivalent to stabilization at an ordinary nonnegative nearest-integer seed;
-2. `PR16:T-9315`: such a nontrivial stabilized seed reconstructs an ordinary `64→81` orbit with the given itinerary;
+1. `PR16:L-9313`: eventual-zero appended blocks are equivalent to stabilization at an ordinary nonnegative nearest-integer seed;
+2. `PR16:T-9315`: a nontrivial stabilized seed reconstructs an ordinary `64→81` orbit with the given itinerary;
 3. `PR16:T-9316`: for an ordinary itinerary with initial room `A_0≥2`, equal length-`n` factors whose later occurrence starts at `t` satisfy the strict recurrence cone
    \[
    n<\delta t+\log_{64}A_0.
    \]
 
-These dependencies were reviewed at exact SHAs but their full proof bodies are not yet imported into this packet.
+The exact source files, source SHA, independent review SHA, report paths, statuses, and clauses used are listed in [Dependency provenance](#dependency-provenance).
 
 ## Refuted statement
 
@@ -86,14 +87,13 @@ satisfies
 64B_{K+1}=81B_K+v_K-v_{K+1}.
 \]
 
-Thus the selected completion is already stationary at zero, and every appended block is zero. Equivalently, the completion series
+Thus the selected completion is stationary at zero and every appended block is zero. Equivalently,
 
 \[
 B_0^*(v)
 =-\sum_{n\ge0}(v_n-v_{n+1})64^n81^{-(n+1)}
+=0.
 \]
-
-vanishes identically.
 
 Both constant words satisfy the original antecedent and contradict its conclusion. ∎
 
@@ -103,7 +103,7 @@ The submitted proof implicitly used:
 
 > A nonconstant word cannot stabilize at zero.
 
-That sentence is correct, but `nonconstant` was absent from the theorem’s quantifiers. The error is statement-level. It does not invalidate the factor-complexity lower bound for an already nontrivial ordinary itinerary.
+That sentence is correct, but `nonconstant` was absent from the quantified theorem. The error is statement-level. It does not invalidate the lower bound for an already nontrivial ordinary itinerary.
 
 ## Repaired theorem
 
@@ -153,18 +153,18 @@ two coincide. If the later occurrence begins at `t`, then
 1\le t\le p_e(n).
 \]
 
-The reviewed recurrence cone gives
+The exact source-pinned recurrence cone `PR16:T-9316` gives
 
 \[
 n<\delta t+\log_{64}A_0
 \le\delta p_e(n)+\log_{64}A_0.
 \]
 
-Rearranging proves the strict finite bound, and division by `n` followed by `n→∞` proves the asymptotic slope. ∎
+Rearranging proves the strict finite bound; division by `n` and `n→∞` gives the asymptotic slope. ∎
 
 ## Proof of the nonconstant screen
 
-Suppose a nonconstant word `v` has eventual-zero appended blocks. By the reviewed stabilization theorem `PR16:L-9313`, its least representatives stabilize at an ordinary nonnegative integer `B_0^*`.
+Suppose a nonconstant word `v` has eventual-zero appended blocks. By `PR16:L-9313`, its least representatives stabilize at an ordinary nonnegative integer `B_0^*`.
 
 If `B_0^*=0`, the recurrence
 
@@ -184,9 +184,9 @@ Therefore the appended blocks are not eventually zero. ∎
 
 ## Why it matters
 
-The refutation demonstrates the repository’s repair discipline: a false universal quantifier remains visible, exact counterexamples are preserved, and the smallest valid hypothesis is stated in a separate theorem.
+The refutation demonstrates the repository’s repair discipline: a false universal quantifier remains visible, exact counterexamples are preserved, and the smallest valid hypothesis appears in a separate theorem.
 
-The repaired result supplies a symbolic obstruction to ordinary stabilization. Once a proposed equality or near-extremal language is shown to have complexity slope strictly below `1/δ`, the ordinary centered-cylinder realization is excluded without locating individual repeated factors.
+The repair supplies a symbolic obstruction to ordinary stabilization. If a proposed equality or near-extremal language has complexity slope strictly below `1/δ`, the ordinary centered-cylinder realization is excluded without locating each repeated factor explicitly.
 
 ## Boundaries and common misreadings
 
@@ -194,14 +194,14 @@ The repaired result supplies a symbolic obstruction to ordinary stabilization. O
 - Equality at slope `1/δ` is not excluded.
 - No assumption of aperiodicity is needed beyond nonconstancy.
 - The theorem concerns the induced `64→81` model, not every Collatz itinerary.
-- The strict finite inequality comes from the strict recurrence cone.
-- The finite scan of periodic words is corroboration only; the two constant words are exact proofs of refutation.
-- The PR #16 dependencies must remain exact-SHA pinned until their proof bodies are imported locally.
-- `T-9318` still contains valid lower-bound portions for already nontrivial ordinary itineraries; only the unrestricted screen is refuted.
+- The strict finite inequality comes from the strict PR #16 recurrence cone.
+- The periodic-word scan is corroboration only; the two constant words are exact proofs of refutation.
+- This packet is not self-contained while the PR #16 dependencies remain source-pinned.
+- `T-9318` still contains valid lower-bound portions for already nontrivial ordinary itineraries; only its unrestricted screen is refuted.
 
-## Provenance
+## Primary provenance: refutation and repair
 
-Primary review/repair source: PR #37 at
+Source PR #37, exact commit:
 
 ```text
 a518db7feece37513ddcda729553e8b8c4c4d657
@@ -217,7 +217,7 @@ research/adelic-cusp/claims/T-9319-nonconstant-factor-complexity-cylinder-barrie
 
 Source author for the refutation and repair: `gpt56-review-9315-01`.
 
-Independent review evidence:
+Pre-public review evidence:
 
 ```text
 reports/gpt56-positive-entropy-01/2026-08-01-prepublic-pr35-pr37-pr38-pr42-review.md
@@ -226,17 +226,44 @@ reports/gpt56-positive-entropy-01/2026-08-01-prepublic-pr35-pr37-pr38-pr42-revie
 
 Verdict: PR #37 `VERIFIED WITH FIXES`; `T-9318` refuted, `R-9304` verified, and `T-9319` verified as a separate repair.
 
-### Source-pinned PR #16 dependencies
+## Dependency provenance
 
-The dependency theorem bodies are at reviewed PR #16 source commits recorded by the PR #37 review. Round 1 preserves those exact branch-qualified dependencies and does not claim they have already been imported locally.
+All three load-bearing dependency bodies are from PR #16 at the exact frozen source commit
+
+```text
+900ba417c968d8a41bc56a30d3ccc941284d8ce2
+```
+
+| Dependency | Exact source path | Clause used here | Exact review status |
+|---|---|---|---|
+| `PR16:L-9313` | `research/adelic-cusp/claims/L-9313-centered-error-full-shift-cylinder.md` | eventual-zero blocks imply ordinary stabilization; the converse reconstructs the ordinary centered cylinder | `PASSED` |
+| `PR16:T-9315` | `research/adelic-cusp/claims/T-9315-centered-rational-power-equivalence.md` | a nontrivial stabilized centered cylinder corresponds to an ordinary `64→81` orbit with the itinerary | `PASSED` |
+| `PR16:T-9316` | `research/adelic-cusp/claims/T-9316-efficient-recurrence-thue-morse.md` | strict repeated-factor recurrence cone `n<δt+log_64 A_0` | `PASSED` |
+
+Independent dependency review was published by PR #37 at
+
+```text
+a518db7feece37513ddcda729553e8b8c4c4d657
+```
+
+Review files:
+
+```text
+reports/gpt56-review-9315-01/2026-07-22-15-centered-recurrence-adversarial-review.md
+reports/gpt56-review-9315-01/CLAIM_MATRIX.md
+```
+
+The claim matrix explicitly records `L-9313`, `T-9315`, and `T-9316` as `PASSED` at source commit `900ba417…`. The later pre-public PR #37 review at `09d6f908…` corroborates the package-level repair boundary.
+
+Until these three proof bodies are imported or independently re-proved locally, applications must cite the exact branch-qualified dependencies above.
 
 ## Next missing step
 
 For a natural source-equality or near-extremal subshift, prove one of:
 
 1. a complexity slope below `1/δ`;
-2. an efficient first-return bound implying the recurrence cone is violated;
+2. an efficient first-return bound implying violation of the recurrence cone;
 3. a bounded-distortion morphic presentation;
-4. a reachable-state finite-state presentation with a sharper synchronization theorem.
+4. a reachable-state finite-state presentation with sharper synchronization.
 
-Any new application must state nonconstancy and the induced-section scope explicitly.
+Every application must state nonconstancy, the induced-section scope, and the exact dependency provenance.

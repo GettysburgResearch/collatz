@@ -1,107 +1,51 @@
 # Contributing
 
-Start with [`START_HERE.md`](START_HERE.md) and [`CURRENT_KNOWLEDGE.md`](CURRENT_KNOWLEDGE.md). Agents should also read [`AGENTS.md`](AGENTS.md).
-
-This repository supports free exploration, exact review, and selective integration. The process becomes more structured only when a result seeks review or promotion.
+The repository supports free exploration and a narrow integration layer.
 
 ## Explore freely
 
-You may open a broad research PR, pursue an unconventional model, write informal notes, run a bounded experiment, connect distant programs, refute an earlier claim, or change direction. No registry entry or canonical packet is required before exploration.
+Broad research PRs, informal notes, experiments, countermodels, and changes of direction are welcome. Before publishing, make four things visible:
 
-Free-form work can live in an existing `research/`, `experiments/`, `literature/`, or `reports/` area, or in a focused new directory.
+1. the exact map and normalization;
+2. the status of each load-bearing claim;
+3. the finite-versus-all-depth and 2-adic-versus-ordinary boundary;
+4. the unresolved step.
 
-Minimal discipline:
-
-- state the map, normalization, and quantifiers;
-- label the work `PROPOSED`, `EMPIRICAL`, `SOURCE-QUALIFIED`, `OPEN`, or `REFUTED` as appropriate;
-- separate finite evidence from all-depth conclusions;
-- keep exact code, artifacts, and replay instructions when computation matters;
-- identify external-theorem dependencies and exact normalizations;
-- preserve useful failures and say what remains missing.
-
-These are defaults, not a submission bureaucracy. Depart from them when research benefits, and explain the departure.
+Computation that matters should have a frozen artifact, a replay command, and an honest statement of whether it was independently replayed.
 
 ## Request review
 
-A review request should identify:
+Give the reviewer:
 
 - the exact commit to freeze;
 - the load-bearing claims and files;
 - dependencies and source-qualified inputs;
-- computational artifacts and whether a full replay is expected;
-- the finite, ordinary, 2-adic, or all-depth conclusion;
-- known doubts, repairs, refutations, or superseded statements.
+- artifact/checker state;
+- known doubts, repairs, and supersessions.
 
-Reviewers record a verdict at the frozen SHA:
+A review verdict applies only to that SHA. A branch-level verdict may contain passing and failing claims.
 
-```text
-VERIFIED
-VERIFIED WITH FIXES
-GAP/BLOCKED
-REJECTED
-```
+## Request integration
 
-A branch-level verdict may contain passing and failing claims. Record the exceptions. Later theorem-bearing commits require a delta review.
-
-## Request integrated promotion
-
-Integration is claim-level and normally uses clean extraction rather than merging a long exploratory history. Supply a short note containing:
+Integration is a lightweight additional contract, not a prerequisite for exploration. Supply:
 
 ```text
-precise statement:
-source PR and exact SHA:
-claim IDs and files:
-scope and exclusions:
-dependencies:
-review report and exact review SHA:
-proof/computation evidence:
-repair, refutation, alias, or supersession relations:
-next missing lemma:
+statement and exact scope
+source PR, SHA, claim IDs, and paths
+dependencies and normalization
+review report and verdict
+proof/artifact residency and replay state
+refutation, repair, alias, or supersession relations
 ```
 
-A promoted result should become a readable packet under [`research/integrated/`](research/integrated/README.md), not only a registry row. The integrator may extract a coherent subset while leaving blocked or speculative material in the source branch.
+An integrator may extract a coherent subset rather than merge the whole PR. A repaired theorem never changes the status of the original.
 
-## Status and evidence are separate
+## Identifiers and evidence
 
-Mathematical status:
+Use branch-qualified source IDs such as `PR61:T-7401` when collisions exist. Repository IDs are aliases, not silent renames.
 
-- `VERIFIED`
-- `SOURCE-QUALIFIED`
-- `EMPIRICAL`
-- `PROPOSED`
-- `OPEN`
-- `REFUTED`
-- `SUPERSEDED`
+Keep these evidence states distinct: proof inspected, independently reconstructed, artifact inspected, artifact regenerated, checker run, large computation independently replayed, computation not replayed, and artifact missing.
 
-Evidence state:
+## Repository changes
 
-- proof inspected;
-- proof independently reconstructed;
-- proof extracted locally;
-- artifact inspected;
-- artifact regenerated;
-- checker run;
-- large computation independently replayed;
-- computation not replayed;
-- artifact missing.
-
-Do not compress these into one “verified” flag.
-
-## Repairs and identifiers
-
-A repaired theorem receives a separate source claim or reviewed source SHA. The original verdict remains in history. Branch-local identifiers are written as `PR<number>:<claim-id>` because collisions exist; repository-owned integrated IDs are recorded in [`claims/aliases.json`](claims/aliases.json).
-
-A refuted original should remain readable beside its repair whenever practical.
-
-## Repository safety
-
-- Never push research directly to `main`.
-- Use a branch and a draft PR for unfinished work.
-- Do not change repository visibility, permissions, branch protection, or workflow settings from a research PR.
-- Do not enable or add GitHub Actions without explicit owner approval.
-- Do not run expensive searches merely for activity; explain cost, pilot scale, and proof role first.
-- Do not merge or close another contributor’s PR without explicit integration authority.
-
-## What makes a contribution valuable
-
-A full proof is valuable. So is a precise counterexample to a proposed lemma, an exact method boundary, a well-scoped finite artifact, a corrected source normalization, or a clear first unsupported inference. The goal is durable research that later humans and systems can trust and extend.
+Use branches and reviewable PRs. Do not change visibility, permissions, branch protection, or public-release status from a research contribution. Do not add GitHub Actions without an explicit infrastructure decision.

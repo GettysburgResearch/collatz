@@ -1,110 +1,26 @@
 {
   "schema_version": "1.1",
   "snapshot_id": "2026-08-01-first-major-integration",
-  "merged_integration_pr": 84,
-  "front_door_revision_pr": 85,
-  "rule": "Branch-local identifiers are always qualified as PR<number>:<claim-id>. Integrated IDs never silently replace source IDs.",
+  "rule": "Branch-local identifiers are always qualified as PR<number>:<claim-id>; repository IDs do not silently replace source IDs.",
   "canonical_aliases": {
-    "IC-EXTRACT-001": [
-      "PR57:L-7601",
-      "PR57:T-7601",
-      "PR3:T-0043",
-      "PR56:T-7801",
-      "PR60:T-7401"
-    ],
-    "IC-GHOST-001": [
-      "PR57:T-7602"
-    ],
-    "IC-PERIODIC-001": [
-      "PR61:T-7401",
-      "PR62:T-7701",
-      "PR63:L-7501",
-      "PR63:T-7501"
-    ],
-    "IC-SC-001": [
-      "PR77:T-6709",
-      "PR77:T-6710",
-      "PR77:L-6711"
-    ],
-    "IC-AUT-001": [
-      "PR14:D-9201",
-      "PR14:L-9201"
-    ],
-    "IC-RIG-001": [
-      "PR64:D-7401",
-      "PR64:L-7401",
-      "PR64:T-7401",
-      "PR64:T-7402",
-      "PR64:T-7403",
-      "PR64:T-7404"
-    ],
-    "IC-REF-001": [
-      "PR37:T-9318",
-      "PR37:R-9304"
-    ],
-    "IC-REP-001": [
-      "PR37:T-9319"
-    ],
-    "RD-SC-001": [
-      "SC*"
-    ],
-    "RD-FC-001": [
-      "FC*"
-    ],
-    "RD-BRIDGE-001": [
-      "proposed SC* + FC* bridge"
-    ]
+    "IC-EXTRACT-001": ["PR57:L-7601", "PR57:T-7601", "PR3:T-0043", "PR56:T-7801", "PR60:T-7401"],
+    "IC-GHOST-001": ["PR57:T-7602"],
+    "IC-PERIODIC-001": ["PR61:T-7401", "PR62:T-7701", "PR63:L-7501", "PR63:T-7501"],
+    "IC-SC-001": ["PR77:T-6709", "PR77:T-6710", "PR77:L-6711"],
+    "IC-AUT-001": ["PR14:D-9201", "PR14:L-9201"],
+    "IC-RIG-001": ["PR64:D-7401", "PR64:L-7401", "PR64:T-7401", "PR64:T-7402", "PR64:T-7403", "PR64:T-7404"],
+    "IC-REF-001": ["PR37:T-9318", "PR37:R-9304"],
+    "IC-REP-001": ["PR37:T-9319"],
+    "RD-SC-001": ["SC*"], "RD-FC-001": ["FC*"], "RD-BRIDGE-001": []
   },
   "collisions": [
-    {
-      "bare_id": "T-7401",
-      "qualified_ids": [
-        "PR60:T-7401",
-        "PR61:T-7401",
-        "PR64:T-7401"
-      ],
-      "disposition": "Three unrelated statements. Use IC-EXTRACT-001, IC-PERIODIC-001, and IC-RIG-001 respectively."
-    },
-    {
-      "bare_id": "T-7501",
-      "qualified_ids": [
-        "PR63:T-7501",
-        "PR65:T-7501"
-      ],
-      "disposition": "PR63 maps to IC-PERIODIC-001. PR65 remains deferred pending source repairs, delta review, and namespace reconciliation."
-    },
-    {
-      "bare_id": "R-9304",
-      "qualified_ids": [
-        "PR16:R-9304",
-        "PR37:R-9304"
-      ],
-      "disposition": "Keep branch-qualified. PR37:R-9304 maps to IC-REF-001; PR16:R-9304 is not part of the initial integrated layer."
-    }
+    {"bare_id": "T-7401", "qualified_ids": ["PR60:T-7401", "PR61:T-7401", "PR64:T-7401"], "disposition": "Three unrelated statements; use IC-EXTRACT-001, IC-PERIODIC-001, and IC-RIG-001 respectively."},
+    {"bare_id": "T-7501", "qualified_ids": ["PR63:T-7501", "PR65:T-7501"], "disposition": "PR63 maps to IC-PERIODIC-001; PR65 remains separate and requires its own reviewed status."},
+    {"bare_id": "R-9304", "qualified_ids": ["PR16:R-9304", "PR37:R-9304"], "disposition": "Keep branch-qualified; PR37:R-9304 maps to IC-REF-001."}
   ],
   "repair_relations": [
-    {
-      "original": "PR37:T-9318",
-      "status": "refuted",
-      "record": "IC-REF-001",
-      "repair": "PR37:T-9319",
-      "repair_record": "IC-REP-001",
-      "repair_status": "verified as a separate nonconstant theorem",
-      "rule": "The repair is a distinct theorem and does not change the original status."
-    },
-    {
-      "original": "PR49:T-8512 direct-read stack interpretation",
-      "status": "refuted",
-      "repair": "transported-residue or prepayment formulation",
-      "repair_status": "proposed or deferred",
-      "rule": "No integrated repair record was created in the initial layer."
-    },
-    {
-      "original": "PR61:T-7401 and PR63:L-7501 all-zero positivity clauses",
-      "status": "verified-with-fixes at source",
-      "repair": "IC-PERIODIC-001 explicit all-zero endpoint and combined periodic classification",
-      "repair_status": "accepted reference with component proofs reviewed; exact integrated synthesis pending narrow review",
-      "rule": "Frozen source verdicts remain VERIFIED WITH FIXES. A later narrow review may accept the integrated synthesis but cannot retroactively alter those source verdicts."
-    }
+    {"original": "PR37:T-9318", "status": "refuted", "record": "IC-REF-001", "repair": "PR37:T-9319", "repair_status": "verified", "repair_record": "IC-REP-001", "rule": "The repair is a distinct theorem and does not change the original status."},
+    {"original": "PR49:T-8512 direct-read stack interpretation", "status": "refuted", "repair": "transported-residue/prepayment formulation", "repair_status": "proposed/deferred", "rule": "No canonical repair record is created here."},
+    {"original": "PR61:T-7401 and PR63 periodic clauses", "source_component_status": "verified_with_fixes", "integrated_record": "IC-PERIODIC-001", "integrated_mathematical_status": "source-qualified", "integrated_statement_status": "pending_narrow_review", "rule": "The synthesis does not retroactively change source verdicts."}
   ]
 }
