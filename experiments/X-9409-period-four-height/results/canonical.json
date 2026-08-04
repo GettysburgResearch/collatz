@@ -1,0 +1,169 @@
+{
+  "exact_records": [
+    {
+      "bitlength_exponent_decimal": "1.006393109859",
+      "bitlength_exponent_fraction": "53050/52713",
+      "error_v2": 159150,
+      "gcd_bits": 16,
+      "pade_order": 1,
+      "reduced_height_bits": 158139,
+      "word": [
+        17,
+        17,
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.000095053420",
+      "bitlength_exponent_fraction": "52607/52602",
+      "error_v2": 631284,
+      "gcd_bits": 48,
+      "pade_order": 2,
+      "reduced_height_bits": 631224,
+      "word": [
+        17,
+        17,
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "0.997982758681",
+      "bitlength_exponent_fraction": "1416402/1419265",
+      "error_v2": 1416402,
+      "gcd_bits": 89,
+      "pade_order": 3,
+      "reduced_height_bits": 1419265,
+      "word": [
+        17,
+        17,
+        17,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.006212807366",
+      "bitlength_exponent_fraction": "26885/26719",
+      "error_v2": 161310,
+      "gcd_bits": 9,
+      "pade_order": 1,
+      "reduced_height_bits": 160314,
+      "word": [
+        17,
+        17,
+        18,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "0.999973444015",
+      "bitlength_exponent_fraction": "640140/640157",
+      "error_v2": 640140,
+      "gcd_bits": 17,
+      "pade_order": 2,
+      "reduced_height_bits": 640157,
+      "word": [
+        17,
+        17,
+        18,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "0.997889586031",
+      "bitlength_exponent_fraction": "718245/719764",
+      "error_v2": 1436490,
+      "gcd_bits": 25,
+      "pade_order": 3,
+      "reduced_height_bits": 1439528,
+      "word": [
+        17,
+        17,
+        18,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.006367391091",
+      "bitlength_exponent_fraction": "40935/40676",
+      "error_v2": 163740,
+      "gcd_bits": 16,
+      "pade_order": 1,
+      "reduced_height_bits": 162704,
+      "word": [
+        17,
+        18,
+        18,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "1.000149359678",
+      "bitlength_exponent_fraction": "649536/649439",
+      "error_v2": 649536,
+      "gcd_bits": 93,
+      "pade_order": 2,
+      "reduced_height_bits": 649439,
+      "word": [
+        17,
+        18,
+        18,
+        18
+      ]
+    },
+    {
+      "bitlength_exponent_decimal": "0.997972402487",
+      "bitlength_exponent_fraction": "161932/162261",
+      "error_v2": 1457388,
+      "gcd_bits": 87,
+      "pade_order": 3,
+      "reduced_height_bits": 1460349,
+      "word": [
+        17,
+        18,
+        18,
+        18
+      ]
+    }
+  ],
+  "experiment_id": "X-9409",
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "absence of an asymptotic period-four gcd saving",
+      "irrationality or rationality of a period-four value",
+      "balanced nonperiodic stack frontier",
+      "Collatz conjecture"
+    ],
+    "proved_by_finite_computation": [
+      "frozen sparse-polynomial common denominators",
+      "frozen exact cleared gcd bit lengths",
+      "frozen reduced rational heights",
+      "frozen first-error valuations"
+    ]
+  },
+  "primitive_cyclic_representatives": [
+    [
+      17,
+      17,
+      17,
+      18
+    ],
+    [
+      17,
+      17,
+      18,
+      18
+    ],
+    [
+      17,
+      18,
+      18,
+      18
+    ]
+  ],
+  "required_logarithmic_saving_fraction": "0.006285638124955",
+  "research_question": "Do primitive period-four stack words show enough exact common-factor or reduced-height saving to rescue the L-9410 Padé family at small orders?",
+  "schema_version": 1,
+  "universal_limiting_exponent": "0.993714361875045"
+}

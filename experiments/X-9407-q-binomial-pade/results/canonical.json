@@ -1,0 +1,130 @@
+{
+  "asymptotic_exponent": "1.419591945535779",
+  "experiment_id": "X-9407",
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "the universal q-binomial Pade lemma",
+      "the universal constant-increment irrationality theorem",
+      "irrationality for the balanced nonperiodic 17/18 stack",
+      "transcendence or a Collatz counterexample"
+    ],
+    "proved_by_finite_computation": [
+      "the frozen Gaussian-binomial coefficient cancellations",
+      "the frozen first-error valuations and denominator-unit checks",
+      "the frozen reduced rational heights and approximation exponents"
+    ]
+  },
+  "parameters": {
+    "T": "64/81",
+    "increments": [
+      17,
+      18
+    ],
+    "m": 1,
+    "orders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "records": {
+    "17": [
+      {
+        "B_unit": true,
+        "E_n": 163,
+        "error_v2": 1956,
+        "height_bits": 1034,
+        "order": 1,
+        "tau": "1.892789260714",
+        "zero_coefficients": 1
+      },
+      {
+        "B_unit": true,
+        "E_n": 632,
+        "error_v2": 6666,
+        "height_bits": 4003,
+        "order": 2,
+        "tau": "1.665376812014",
+        "zero_coefficients": 2
+      },
+      {
+        "B_unit": true,
+        "E_n": 1407,
+        "error_v2": 14130,
+        "height_bits": 8912,
+        "order": 3,
+        "tau": "1.585503755390",
+        "zero_coefficients": 3
+      },
+      {
+        "B_unit": true,
+        "E_n": 2488,
+        "error_v2": 24348,
+        "height_bits": 15762,
+        "order": 4,
+        "tau": "1.544797958927",
+        "zero_coefficients": 4
+      },
+      {
+        "B_unit": true,
+        "E_n": 3875,
+        "error_v2": 37320,
+        "height_bits": 24551,
+        "order": 5,
+        "tau": "1.520127706087",
+        "zero_coefficients": 5
+      }
+    ],
+    "18": [
+      {
+        "B_unit": true,
+        "E_n": 172,
+        "error_v2": 2064,
+        "height_bits": 1091,
+        "order": 1,
+        "tau": "1.892789260714",
+        "zero_coefficients": 1
+      },
+      {
+        "B_unit": true,
+        "E_n": 668,
+        "error_v2": 7044,
+        "height_bits": 4224,
+        "order": 2,
+        "tau": "1.667711381466",
+        "zero_coefficients": 2
+      },
+      {
+        "B_unit": true,
+        "E_n": 1488,
+        "error_v2": 14940,
+        "height_bits": 9410,
+        "order": 3,
+        "tau": "1.587833004313",
+        "zero_coefficients": 3
+      },
+      {
+        "B_unit": true,
+        "E_n": 2632,
+        "error_v2": 25752,
+        "height_bits": 16664,
+        "order": 4,
+        "tau": "1.545371852614",
+        "zero_coefficients": 4
+      },
+      {
+        "B_unit": true,
+        "E_n": 4100,
+        "error_v2": 39480,
+        "height_bits": 25958,
+        "order": 5,
+        "tau": "1.520949416599",
+        "zero_coefficients": 5
+      }
+    ]
+  },
+  "research_question": "Do the q-binomial Pade approximants cancel exactly and cross the rational-target exponent one in constant-increment stack models?",
+  "schema_version": 1
+}
