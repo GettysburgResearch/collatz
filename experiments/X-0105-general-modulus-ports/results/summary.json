@@ -1,0 +1,44 @@
+{
+  "Lmax": 8,
+  "blocks": 502,
+  "ports": 629,
+  "edges": 69420,
+  "expanding_edges": 15056,
+  "two_cycle_candidates": 0,
+  "two_cycle_examples": [],
+  "concrete_alternators": {
+    "tested_pairs": 3015,
+    "hits": [
+      {
+        "n0": 11913,
+        "final": 96623,
+        "growth": 8.110719382187526,
+        "word1": "101",
+        "word2": "1",
+        "mu1": "9/8",
+        "mu2": "3/2",
+        "rounds": 8
+      },
+      {
+        "n0": 17870,
+        "final": 144935,
+        "growth": 8.110520425293789,
+        "word1": "011",
+        "word2": "1",
+        "mu1": "9/8",
+        "mu2": "3/2",
+        "rounds": 8
+      },
+      {
+        "n0": 4095,
+        "final": 531440,
+        "growth": 129.77777777777777,
+        "word1": "1",
+        "word2": "11",
+        "mu1": "3/2",
+        "mu2": "9/4",
+        "rounds": 8
+      }
+    ]
+  }
+}

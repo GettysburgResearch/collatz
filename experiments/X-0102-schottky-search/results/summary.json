@@ -1,0 +1,12 @@
+{
+  "Lmax": 12,
+  "supercritical_branches": 1767,
+  "mild_pool": 433,
+  "tested_pairs": 3160,
+  "tested_triples": 4060,
+  "hits": [],
+  "hit_count": 0,
+  "analytic_obstruction": "OBSTRUCTION: for supercritical mu>1 and beta>0, g(A)-A = A(1/mu-1) - beta/mu < 0 for every A>0; hence g(I) is never a subset of I subset (0,\u221e). Sample word=11111110000, mu=2187/2048, beta=2059/2048.",
+  "obstruction_checks": 400,
+  "obstruction_counterexamples_to_claim": 0
+}

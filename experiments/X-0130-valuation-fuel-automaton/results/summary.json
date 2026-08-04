@@ -1,0 +1,241 @@
+{
+  "template": "110",
+  "fp": -5,
+  "alphabet": [
+    "1",
+    "11",
+    "111",
+    "0",
+    "00",
+    "10",
+    "01",
+    "010",
+    "101"
+  ],
+  "explored_nodes": 2044,
+  "unique_fuel_states": 273,
+  "max_size_bucket_seen": 24,
+  "regenerative_growth_events": 111,
+  "unbounded_proxy_events": 0,
+  "sample_regenerative": [
+    {
+      "n_start_size": 10,
+      "n": 3065,
+      "n2": 2299,
+      "word": "10",
+      "v2": 8,
+      "size": 11,
+      "steps": 2
+    },
+    {
+      "n_start_size": 12,
+      "n": 11513,
+      "n2": 8635,
+      "word": "10",
+      "v2": 6,
+      "size": 13,
+      "steps": 2
+    },
+    {
+      "n_start_size": 13,
+      "n": 22265,
+      "n2": 16699,
+      "word": "10",
+      "v2": 6,
+      "size": 14,
+      "steps": 2
+    },
+    {
+      "n_start_size": 13,
+      "n": 23033,
+      "n2": 17275,
+      "word": "10",
+      "v2": 7,
+      "size": 14,
+      "steps": 2
+    },
+    {
+      "n_start_size": 13,
+      "n": 23801,
+      "n2": 17851,
+      "word": "10",
+      "v2": 6,
+      "size": 14,
+      "steps": 2
+    },
+    {
+      "n_start_size": 13,
+      "n": 24569,
+      "n2": 18427,
+      "word": "10",
+      "v2": 11,
+      "size": 14,
+      "steps": 2
+    },
+    {
+      "n_start_size": 15,
+      "n": 92153,
+      "n2": 69115,
+      "word": "10",
+      "v2": 9,
+      "size": 16,
+      "steps": 2
+    },
+    {
+      "n_start_size": 16,
+      "n": 178169,
+      "n2": 133627,
+      "word": "10",
+      "v2": 9,
+      "size": 17,
+      "steps": 2
+    },
+    {
+      "n_start_size": 16,
+      "n": 184313,
+      "n2": 138235,
+      "word": "10",
+      "v2": 10,
+      "size": 17,
+      "steps": 2
+    },
+    {
+      "n_start_size": 16,
+      "n": 190457,
+      "n2": 142843,
+      "word": "10",
+      "v2": 9,
+      "size": 17,
+      "steps": 2
+    },
+    {
+      "n_start_size": 16,
+      "n": 196601,
+      "n2": 147451,
+      "word": "10",
+      "v2": 14,
+      "size": 17,
+      "steps": 2
+    },
+    {
+      "n_start_size": 18,
+      "n": 737273,
+      "n2": 552955,
+      "word": "10",
+      "v2": 12,
+      "size": 19,
+      "steps": 2
+    },
+    {
+      "n_start_size": 19,
+      "n": 1425401,
+      "n2": 1069051,
+      "word": "10",
+      "v2": 12,
+      "size": 20,
+      "steps": 2
+    },
+    {
+      "n_start_size": 19,
+      "n": 1474553,
+      "n2": 1105915,
+      "word": "10",
+      "v2": 13,
+      "size": 20,
+      "steps": 2
+    },
+    {
+      "n_start_size": 19,
+      "n": 1523705,
+      "n2": 1142779,
+      "word": "10",
+      "v2": 12,
+      "size": 20,
+      "steps": 2
+    }
+  ],
+  "sample_unbounded_proxy": [],
+  "top_fuel_states": [
+    [
+      1,
+      24
+    ],
+    [
+      0,
+      24
+    ],
+    [
+      20,
+      23
+    ],
+    [
+      17,
+      23
+    ],
+    [
+      16,
+      23
+    ],
+    [
+      15,
+      23
+    ],
+    [
+      14,
+      23
+    ],
+    [
+      13,
+      23
+    ],
+    [
+      12,
+      23
+    ],
+    [
+      11,
+      23
+    ],
+    [
+      10,
+      23
+    ],
+    [
+      9,
+      23
+    ],
+    [
+      8,
+      23
+    ],
+    [
+      7,
+      23
+    ],
+    [
+      6,
+      23
+    ],
+    [
+      5,
+      23
+    ],
+    [
+      4,
+      23
+    ],
+    [
+      3,
+      23
+    ],
+    [
+      1,
+      23
+    ],
+    [
+      0,
+      23
+    ]
+  ],
+  "conclusion": "Valuation-fuel automaton near -5: search for walks that grow archimedean size while regenerating v2(n+5) depth (divergence certificate shape)."
+}

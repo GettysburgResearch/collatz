@@ -1,0 +1,17 @@
+Model B (shadow then deviate) for -17: supercritical antagonism, mild depth-repair, and grow+repair sandwiches with true v2(n+17).
+rows=2111 growing=1888 grow_destroy=1866 grow_preserve=22
+mild=223 mild_repair=100 mild_preserve=202
+sandwiches=144 grow+preserve=0 any_repair=0
+  DESTROY ex=1111 m=44 k=0 growth=5.063 v2:44->0
+  DESTROY ex=111 m=44 k=0 growth=3.375 v2:44->1
+  DESTROY ex=11 m=44 k=0 growth=2.250 v2:44->2
+  DESTROY ex=1 m=44 k=0 growth=1.500 v2:44->3
+  GROW+KEEP ex=1 m=22 k=2 growth=1.500 v2:4->9
+  GROW+KEEP ex=1 m=11 k=1 growth=1.500 v2:4->8
+  GROW+KEEP ex=11111 m=11 k=1 growth=7.594 v2:4->7
+  GROW+KEEP ex=1101 m=11 k=1 growth=1.688 v2:2->5
+  REPAIR ex=00 m=11 k=1 growth=0.250 v2:0->8 delta=8
+  REPAIR ex=0 m=11 k=1 growth=0.500 v2:0->6 delta=6
+  REPAIR ex=0 m=22 k=2 growth=0.500 v2:0->6 delta=6
+  REPAIR ex=010 m=11 k=1 growth=0.375 v2:0->5 delta=5
+  (no grow+preserve-depth sandwiches)

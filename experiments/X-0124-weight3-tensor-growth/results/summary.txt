@@ -1,0 +1,14 @@
+Weight-3 suffixes with R(E)>=1 do NOT grow filled seed radius: 2^L(E-E) is a comb with gaps 2^L (T-0105). predicted_lower was a false heuristic; empirically grew=False in all trials.
+any_growth=False
+{'p': 5, 'suffix_L': 24, 'seed': 'interval4_L6', 'seed_R': 3, 'suffix_R': 4, 'suffix_|E|': 18, 'L0': 6, 'post_|D|': 72, 'post_R': 3, 'predicted_lower': 256, 'grew': False}
+{'p': 5, 'suffix_L': 24, 'seed': 'interval16_L10', 'seed_R': 15, 'suffix_R': 4, 'suffix_|E|': 18, 'L0': 10, 'post_|D|': 288, 'post_R': 15, 'predicted_lower': 4096, 'grew': False}
+{'p': 5, 'suffix_L': 24, 'seed': 'pair_L8', 'seed_R': 1, 'suffix_R': 4, 'suffix_|E|': 18, 'L0': 8, 'post_|D|': 36, 'post_R': 1, 'predicted_lower': 1024, 'grew': False}
+{'p': 6, 'suffix_L': 28, 'seed': 'interval4_L6', 'seed_R': 3, 'suffix_R': 2, 'suffix_|E|': 11, 'L0': 6, 'post_|D|': 44, 'post_R': 3, 'predicted_lower': 128, 'grew': False}
+{'p': 6, 'suffix_L': 28, 'seed': 'interval16_L10', 'seed_R': 15, 'suffix_R': 2, 'suffix_|E|': 11, 'L0': 10, 'post_|D|': 176, 'post_R': 15, 'predicted_lower': 2048, 'grew': False}
+{'p': 6, 'suffix_L': 28, 'seed': 'pair_L8', 'seed_R': 1, 'suffix_R': 2, 'suffix_|E|': 11, 'L0': 8, 'post_|D|': 22, 'post_R': 1, 'predicted_lower': 512, 'grew': False}
+{'p': 6, 'suffix_L': 32, 'seed': 'interval4_L6', 'seed_R': 3, 'suffix_R': 2, 'suffix_|E|': 12, 'L0': 6, 'post_|D|': 48, 'post_R': 3, 'predicted_lower': 128, 'grew': False}
+{'p': 6, 'suffix_L': 32, 'seed': 'interval16_L10', 'seed_R': 15, 'suffix_R': 2, 'suffix_|E|': 12, 'L0': 10, 'post_|D|': 192, 'post_R': 15, 'predicted_lower': 2048, 'grew': False}
+{'p': 6, 'suffix_L': 32, 'seed': 'pair_L8', 'seed_R': 1, 'suffix_R': 2, 'suffix_|E|': 12, 'L0': 8, 'post_|D|': 24, 'post_R': 1, 'predicted_lower': 512, 'grew': False}
+{'p': 7, 'suffix_L': 32, 'seed': 'interval4_L6', 'seed_R': 3, 'suffix_R': 1, 'suffix_|E|': 7, 'L0': 6, 'post_|D|': 28, 'post_R': 3, 'predicted_lower': 64, 'grew': False}
+{'p': 7, 'suffix_L': 32, 'seed': 'interval16_L10', 'seed_R': 15, 'suffix_R': 1, 'suffix_|E|': 7, 'L0': 10, 'post_|D|': 112, 'post_R': 15, 'predicted_lower': 1024, 'grew': False}
+{'p': 7, 'suffix_L': 32, 'seed': 'pair_L8', 'seed_R': 1, 'suffix_R': 1, 'suffix_|E|': 7, 'L0': 8, 'post_|D|': 14, 'post_R': 1, 'predicted_lower': 256, 'grew': False}

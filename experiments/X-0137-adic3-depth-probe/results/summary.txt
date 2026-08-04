@@ -1,0 +1,12 @@
+Bootstrap 3-adic depth probe: search growing excursions that preserve v3(n-c) for small integer targets c.
+rows=48 grow_preserve=7 grow_burn=25 int_fps=26
+  KEEP c=-10 w=1 g=1.500 v3:2->2
+  KEEP c=-10 w=11 g=2.250 v3:2->2
+  KEEP c=-10 w=111 g=3.375 v3:2->2
+  KEEP c=-5 w=110 g=1.125 v3:7->9
+  KEEP c=-1 w=1 g=1.500 v3:7->8
+  KEEP c=-1 w=11 g=2.250 v3:7->9
+  BURN c=-17 w=1 g=1.500 v3:2->0
+  BURN c=-17 w=11 g=2.250 v3:2->0
+  BURN c=-17 w=111 g=3.375 v3:3->0
+  BURN c=-17 w=110 g=1.125 v3:2->1

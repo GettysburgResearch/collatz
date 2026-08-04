@@ -1,0 +1,194 @@
+{
+  "charts": [
+    {
+      "chart": "64->81",
+      "words": {
+        "0": "011101",
+        "1": "111100"
+      },
+      "cycles": [
+        {
+          "digits": [
+            0
+          ],
+          "words": [
+            "011101"
+          ],
+          "mu": "81/64",
+          "fp": "-146/17",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 3,
+          "best_n": 42638,
+          "digit_cycle": [
+            0
+          ]
+        },
+        {
+          "digits": [
+            1
+          ],
+          "words": [
+            "111100"
+          ],
+          "mu": "81/64",
+          "fp": "-65/17",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 3,
+          "best_n": 42638,
+          "digit_cycle": [
+            1
+          ]
+        },
+        {
+          "digits": [
+            0,
+            1
+          ],
+          "words": [
+            "011101",
+            "111100"
+          ],
+          "mu": "6561/4096",
+          "fp": "-15986/2465",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 3,
+          "best_n": 42638,
+          "digit_cycle": [
+            0,
+            1
+          ]
+        },
+        {
+          "digits": [
+            0,
+            1
+          ],
+          "words": [
+            "011101",
+            "111100"
+          ],
+          "mu": "6561/4096",
+          "fp": "-15986/2465",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 3,
+          "best_n": 42638,
+          "digit_cycle": [
+            0,
+            1
+          ]
+        }
+      ],
+      "survival": []
+    },
+    {
+      "chart": "512->729",
+      "words": {
+        "0": "001111101",
+        "1": "100111101",
+        "2": "011111100"
+      },
+      "cycles": [
+        {
+          "digits": [
+            0
+          ],
+          "words": [
+            "001111101"
+          ],
+          "mu": "729/512",
+          "fp": "-2788/217",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 2,
+          "best_n": 27772,
+          "digit_cycle": [
+            0
+          ]
+        },
+        {
+          "digits": [
+            1
+          ],
+          "words": [
+            "100111101"
+          ],
+          "mu": "729/512",
+          "fp": "-2059/217",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 2,
+          "best_n": 27772,
+          "digit_cycle": [
+            1
+          ]
+        },
+        {
+          "digits": [
+            2
+          ],
+          "words": [
+            "011111100"
+          ],
+          "mu": "729/512",
+          "fp": "-190/31",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 2,
+          "best_n": 27772,
+          "digit_cycle": [
+            2
+          ]
+        },
+        {
+          "digits": [
+            0,
+            1
+          ],
+          "words": [
+            "001111101",
+            "100111101"
+          ],
+          "mu": "531441/262144",
+          "fp": "-3086660/269297",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 2,
+          "best_n": 27772,
+          "digit_cycle": [
+            0,
+            1
+          ]
+        },
+        {
+          "digits": [
+            0,
+            1,
+            2
+          ],
+          "words": [
+            "001111101",
+            "100111101",
+            "011111100"
+          ],
+          "mu": "387420489/134217728",
+          "fp": "-2598826660/253202761",
+          "negative": true,
+          "supercritical": true,
+          "max_periods": 2,
+          "best_n": 27772,
+          "digit_cycle": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "survival": []
+    }
+  ],
+  "all_super_fp_negative": true
+}

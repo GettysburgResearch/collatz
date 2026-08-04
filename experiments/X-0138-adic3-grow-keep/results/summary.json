@@ -1,0 +1,94 @@
+{
+  "depth_floor": 2,
+  "seeds": 200,
+  "escapes": [],
+  "escape_count": 0,
+  "max_bit_gain": 3,
+  "best_by_c": {
+    "-1": [
+      {
+        "c": -1,
+        "seed": 287,
+        "d0": 2,
+        "bit_gain": 3,
+        "best_depth": 7,
+        "escaped": false
+      },
+      {
+        "c": -1,
+        "seed": 431,
+        "d0": 3,
+        "bit_gain": 3,
+        "best_depth": 7,
+        "escaped": false
+      },
+      {
+        "c": -1,
+        "seed": 863,
+        "d0": 3,
+        "bit_gain": 3,
+        "best_depth": 7,
+        "escaped": false
+      },
+      {
+        "c": -1,
+        "seed": 2591,
+        "d0": 4,
+        "bit_gain": 3,
+        "best_depth": 9,
+        "escaped": false
+      },
+      {
+        "c": -1,
+        "seed": 3887,
+        "d0": 5,
+        "bit_gain": 3,
+        "best_depth": 9,
+        "escaped": false
+      }
+    ],
+    "-5": [
+      {
+        "c": -5,
+        "seed": 4,
+        "d0": 2,
+        "bit_gain": 0,
+        "best_depth": 2,
+        "escaped": false
+      },
+      {
+        "c": -5,
+        "seed": 13,
+        "d0": 2,
+        "bit_gain": 0,
+        "best_depth": 2,
+        "escaped": false
+      },
+      {
+        "c": -5,
+        "seed": 22,
+        "d0": 2,
+        "bit_gain": 0,
+        "best_depth": 3,
+        "escaped": false
+      },
+      {
+        "c": -5,
+        "seed": 31,
+        "d0": 2,
+        "bit_gain": 0,
+        "best_depth": 2,
+        "escaped": false
+      },
+      {
+        "c": -5,
+        "seed": 40,
+        "d0": 2,
+        "bit_gain": 0,
+        "best_depth": 2,
+        "escaped": false
+      }
+    ]
+  },
+  "conclusion": "Iterate 3-adic grow+keep for c in {-1,-5,-10,-17}; +10-bit escapes would open a true 3-adic fuel engine."
+}

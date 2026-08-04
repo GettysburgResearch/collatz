@@ -1,0 +1,139 @@
+{
+  "step_automaton_cycles": {
+    "raw": 106,
+    "uniq": 106,
+    "expanding": 31,
+    "best": [
+      {
+        "kinds": "o",
+        "len": 1,
+        "prod": 1.5,
+        "geo": 1.5,
+        "start": 63
+      },
+      {
+        "kinds": "ooeooo",
+        "len": 6,
+        "prod": 3.796875,
+        "geo": 1.2490247664834064,
+        "start": 27
+      },
+      {
+        "kinds": "oooooe",
+        "len": 6,
+        "prod": 3.796875,
+        "geo": 1.2490247664834064,
+        "start": 31
+      },
+      {
+        "kinds": "oooeoo",
+        "len": 6,
+        "prod": 3.796875,
+        "geo": 1.2490247664834064,
+        "start": 39
+      },
+      {
+        "kinds": "oeoooo",
+        "len": 6,
+        "prod": 3.796875,
+        "geo": 1.2490247664834064,
+        "start": 41
+      },
+      {
+        "kinds": "ooooeo",
+        "len": 6,
+        "prod": 3.796875,
+        "geo": 1.2490247664834064,
+        "start": 47
+      },
+      {
+        "kinds": "eooooo",
+        "len": 6,
+        "prod": 3.796875,
+        "geo": 1.2490247664834064,
+        "start": 62
+      },
+      {
+        "kinds": "ooeoo",
+        "len": 5,
+        "prod": 2.53125,
+        "geo": 1.204112342640346,
+        "start": 27
+      },
+      {
+        "kinds": "eoooo",
+        "len": 5,
+        "prod": 2.53125,
+        "geo": 1.204112342640346,
+        "start": 30
+      },
+      {
+        "kinds": "oooeo",
+        "len": 5,
+        "prod": 2.53125,
+        "geo": 1.204112342640346,
+        "start": 39
+      },
+      {
+        "kinds": "oeooo",
+        "len": 5,
+        "prod": 2.53125,
+        "geo": 1.204112342640346,
+        "start": 41
+      },
+      {
+        "kinds": "ooooe",
+        "len": 5,
+        "prod": 2.53125,
+        "geo": 1.204112342640346,
+        "start": 47
+      },
+      {
+        "kinds": "oeoo",
+        "len": 4,
+        "prod": 1.6875,
+        "geo": 1.1397535284773888,
+        "start": 9
+      },
+      {
+        "kinds": "eooo",
+        "len": 4,
+        "prod": 1.6875,
+        "geo": 1.1397535284773888,
+        "start": 14
+      },
+      {
+        "kinds": "ooeo",
+        "len": 4,
+        "prod": 1.6875,
+        "geo": 1.1397535284773888,
+        "start": 27
+      }
+    ],
+    "note": "qpar branching ignored beyond edge labels; heuristic only"
+  },
+  "block_automaton": {
+    "A": 8,
+    "Lmax": 8,
+    "edges": 105,
+    "expanding_cycles": 0,
+    "examples": [],
+    "lifts": [],
+    "max_periods_over_lifts": 0,
+    "all_fp_negative": null
+  },
+  "greedy_A8": {
+    "A": 8,
+    "n_max": 4000,
+    "steps": 25,
+    "survivors": 0,
+    "best": null
+  },
+  "greedy_A10": {
+    "A": 10,
+    "n_max": 3000,
+    "steps": 30,
+    "survivors": 0,
+    "best": null
+  }
+}

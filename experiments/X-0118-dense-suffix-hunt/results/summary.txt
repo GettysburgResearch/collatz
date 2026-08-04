@@ -1,0 +1,10 @@
+Weight-one high-precision collision classes are discrete logs of 2 mod 3^p; filled radii observed are 0 (sparse ≥2-point sets without filling [-1,1] beyond {0}). Supports C-0103 for weight one.
+best={'p': 1, 'class': 1, '|E|': 4, 'R_filled': 1, 'span': 21, 'js_sample': [0, 2, 4, 6]}
+p=1 rich=2 maxR=1 max|E|=4
+p=2 rich=6 maxR=0 max|E|=4
+p=3 rich=18 maxR=0 max|E|=4
+p=4 rich=54 maxR=0 max|E|=4
+p=5 rich=162 maxR=0 max|E|=4
+p=6 rich=486 maxR=0 max|E|=4
+p=7 rich=1458 maxR=0 max|E|=4
+p=8 rich=4374 maxR=0 max|E|=4

@@ -1,0 +1,8 @@
+Under atomic chronological tensoring, filled difference radius stays equal to the seed radius (sparse spikes do not fill), and coverage mod 2^b does not grow after cum_L >= b.
+radii=[3, 3, 3, 3, 3, 3, 3] grew=False
+any mod grew after freeze=False
+seed2 radii=[15, 15, 15, 15, 15, 15] grew=False
+final cum_L=58980 |D|=256
+  mod 2^4: {'seed_cov': 4, 'freeze_stage': 1, 'cov_at_freeze_and_after': [4, 4, 4, 4, 4, 4], 'max_cov': 4, 'grew_after_freeze': False}
+  mod 2^8: {'seed_cov': 4, 'freeze_stage': 1, 'cov_at_freeze_and_after': [8, 8, 8, 8, 8, 8], 'max_cov': 8, 'grew_after_freeze': False}
+  mod 2^12: {'seed_cov': 4, 'freeze_stage': 1, 'cov_at_freeze_and_after': [8, 8, 8, 8, 8, 8], 'max_cov': 8, 'grew_after_freeze': False}

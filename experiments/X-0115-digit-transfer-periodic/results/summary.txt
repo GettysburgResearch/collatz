@@ -1,0 +1,12 @@
+all supercritical periodic digit fps negative=True
+chart 64->81:
+  digits=[0] mu=81/64 fp=-146/17 neg=True max_periods=3
+  digits=[1] mu=81/64 fp=-65/17 neg=True max_periods=3
+  digits=[0, 1] mu=6561/4096 fp=-15986/2465 neg=True max_periods=3
+  digits=[0, 1] mu=6561/4096 fp=-15986/2465 neg=True max_periods=3
+chart 512->729:
+  digits=[0] mu=729/512 fp=-2788/217 neg=True max_periods=2
+  digits=[1] mu=729/512 fp=-2059/217 neg=True max_periods=2
+  digits=[2] mu=729/512 fp=-190/31 neg=True max_periods=2
+  digits=[0, 1] mu=531441/262144 fp=-3086660/269297 neg=True max_periods=2
+  digits=[0, 1, 2] mu=387420489/134217728 fp=-2598826660/253202761 neg=True max_periods=2

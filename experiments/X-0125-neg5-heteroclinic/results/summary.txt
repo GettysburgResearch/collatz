@@ -1,0 +1,7 @@
+For -5 template (110): record whether supercritical excursions can grow archimedean size without destroying v2(n+5) shadowing depth.
+growing=12 destroyed_depth=12 preserved=0
+  DESTROY  ex=11 m=21 growth=2.250 v2:21->0 delta=-21
+  DESTROY  ex=1 m=21 growth=1.500 v2:21->1 delta=-20
+  DESTROY  ex=11 m=18 growth=2.250 v2:18->0 delta=-18
+  DESTROY  ex=1 m=18 growth=1.500 v2:18->1 delta=-17
+  DESTROY  ex=11 m=15 growth=2.250 v2:15->0 delta=-15

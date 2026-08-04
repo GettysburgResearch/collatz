@@ -1,0 +1,117 @@
+{
+  "mild_maps": 348,
+  "nested_obstruction": {
+    "note": "Each h((0,eps])=(0,h(eps)] contains a left neighborhood of 0; images of any 0-neighborhood are nested/overlapping at 0, so disjoint-image IFS ping-pong cannot use a domain containing a punctured neighborhood of 0 shared by all generators.",
+    "samples": [
+      {
+        "word": "11111110000",
+        "h(eps)": "2048/2189059",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11111101000",
+        "h(eps)": "2048/2189123",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11111011000",
+        "h(eps)": "2048/2189219",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11110111000",
+        "h(eps)": "2048/2189363",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11101111000",
+        "h(eps)": "2048/2189579",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11011111000",
+        "h(eps)": "2048/2189903",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "10111111000",
+        "h(eps)": "2048/2190389",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "01111111000",
+        "h(eps)": "1024/1095559",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11111100100",
+        "h(eps)": "2048/2189251",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11111010100",
+        "h(eps)": "2048/2189347",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11110110100",
+        "h(eps)": "2048/2189491",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11101110100",
+        "h(eps)": "2048/2189707",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11011110100",
+        "h(eps)": "2048/2190031",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "10111110100",
+        "h(eps)": "2048/2190517",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "01111110100",
+        "h(eps)": "1024/1095623",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11111001100",
+        "h(eps)": "2048/2189539",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11110101100",
+        "h(eps)": "2048/2189683",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11101101100",
+        "h(eps)": "2048/2189899",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "11011101100",
+        "h(eps)": "2048/2190223",
+        "mu": "2187/2048"
+      },
+      {
+        "word": "10111101100",
+        "h(eps)": "2048/2190709",
+        "mu": "2187/2048"
+      }
+    ]
+  },
+  "annulus_scan": {
+    "annulus_self_preservation_checks": 350,
+    "unexpected_self_preservations": 0,
+    "lemma_hint": "h(t)=t/(\u03bc+\u03b2t)<t/\u03bc<t for \u03bc>1,t>0, so h(a)<a and no compact interval [a,b]\u2282(0,\u221e) is preserved by a single supercritical h."
+  },
+  "annulus_search": {
+    "tested": 3120,
+    "hits": []
+  }
+}

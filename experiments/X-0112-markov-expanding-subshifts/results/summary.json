@@ -1,0 +1,50 @@
+{
+  "threshold": 0.6309297535714574,
+  "cycles_A6": {
+    "A": 6,
+    "cycles_total": 2,
+    "supercritical": [],
+    "count_super": 0
+  },
+  "cycles_A8": {
+    "count_super": 0,
+    "top": []
+  },
+  "survivors": {
+    "odds_only": {
+      "stay": 0,
+      "grow": 0,
+      "best": null
+    },
+    "full": {
+      "stay": 5000,
+      "grow": 653,
+      "best": {
+        "n0": 2047,
+        "final": 252233,
+        "growth": 123.22081094284319
+      }
+    }
+  },
+  "odd_runs": {
+    "best_run": [
+      12,
+      4095
+    ],
+    "histogram": {
+      "1": 1250,
+      "2": 625,
+      "3": 313,
+      "4": 156,
+      "5": 78,
+      "6": 39,
+      "7": 20,
+      "8": 10,
+      "9": 5,
+      "10": 2,
+      "11": 1,
+      "12": 1
+    }
+  },
+  "structural_note": "Residues mod 2^L biject with length-L words, so finite CRT Schottky with L<=A is a subshift of the deterministic shortcut graph. Expanding certificates reduce to Markov subsets with odd-density > log2/log3 \u2014 the classical supercritical subshift problem."
+}

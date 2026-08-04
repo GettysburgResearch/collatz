@@ -1,0 +1,64 @@
+{
+  "mod_automaton_K5": {
+    "cycle_count_raw": 2,
+    "expanding_cycles": 0,
+    "contracting_cycles": 2,
+    "best_expanding": [],
+    "note": "Odd edges use asymptotic 3/2, not exact affine ratios; expanding cycles here are NECESSARY-condition candidates only."
+  },
+  "block_automaton": {
+    "K": 7,
+    "Lmax": 7,
+    "edges": 68,
+    "expanding_symbolic_cycles": 2,
+    "examples": [
+      {
+        "words": [
+          "1111010",
+          "1101110"
+        ],
+        "mu_prod": "59049/16384",
+        "mu_prod_f": 3.60406494140625,
+        "states_start": 47
+      },
+      {
+        "words": [
+          "1101110",
+          "1111010"
+        ],
+        "mu_prod": "59049/16384",
+        "mu_prod_f": 3.60406494140625,
+        "states_start": 91
+      }
+    ],
+    "realized_concat_checks": [
+      {
+        "words": [
+          "1111010",
+          "1101110"
+        ],
+        "concat_L": 14,
+        "a": 10,
+        "mu_block": "59049/16384",
+        "r0": 47,
+        "s0": 175,
+        "returns_mod_2K": true,
+        "supercritical_concat": true
+      },
+      {
+        "words": [
+          "1101110",
+          "1111010"
+        ],
+        "concat_L": 14,
+        "a": 10,
+        "mu_block": "59049/16384",
+        "r0": 91,
+        "s0": 334,
+        "returns_mod_2K": false,
+        "supercritical_concat": true
+      }
+    ],
+    "realized_return_count": 1
+  }
+}

@@ -1,0 +1,11 @@
+Lmax=8
+blocks=502 ports=629 edges=69420
+expanding edges=15056
+two-cycle candidates=0
+concrete alternator hits=3 (tested pairs=3015)
+
+two-cycle examples:
+concrete hits:
+  n0=11913 -> 96623 growth=8.111 words=101/1 mu=9/8/3/2
+  n0=17870 -> 144935 growth=8.111 words=011/1 mu=9/8/3/2
+  n0=4095 -> 531440 growth=129.778 words=1/11 mu=3/2/9/4

@@ -1,0 +1,11 @@
+Mixed -5/-17 fuel search with dual-depth max(v2(n+5),v2(n+17)); +10-bit escapes holding depth floor would challenge C-0104.
+seeds=160 escapes=0 max_bit_gain=5
+  chart0=5 m=12 bit_gain=5 best_depth=7
+  chart0=5 m=24 bit_gain=5 best_depth=3
+  chart0=17 m=11 bit_gain=5 best_depth=4
+  chart0=5 m=18 bit_gain=4 best_depth=6
+  chart0=17 m=22 bit_gain=4 best_depth=3
+  chart0=5 m=6 bit_gain=3 best_depth=3
+  chart0=17 m=11 bit_gain=3 best_depth=3
+  chart0=17 m=22 bit_gain=3 best_depth=3
+  (no +10-bit dual-depth escapes)

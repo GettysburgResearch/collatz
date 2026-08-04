@@ -1,0 +1,404 @@
+{
+  "rows": [
+    {
+      "L": 16,
+      "a": 8,
+      "den": 58975,
+      "binom": 12870,
+      "mode": "mitm",
+      "maps_built": 9,
+      "pairs_checked": 256,
+      "hits": [
+        {
+          "ones": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "n": 1,
+          "B": 58975,
+          "trivial": true
+        },
+        {
+          "ones": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "n": 2,
+          "B": 117950,
+          "trivial": true
+        }
+      ],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 16,
+      "a": 9,
+      "den": 45853,
+      "binom": 11440,
+      "mode": "mitm",
+      "maps_built": 8,
+      "pairs_checked": 255,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 16,
+      "a": 10,
+      "den": 6487,
+      "binom": 8008,
+      "mode": "mitm",
+      "maps_built": 7,
+      "pairs_checked": 247,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 17,
+      "a": 8,
+      "den": 124511,
+      "binom": 24310,
+      "mode": "mitm",
+      "maps_built": 9,
+      "pairs_checked": 511,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 17,
+      "a": 9,
+      "den": 111389,
+      "binom": 24310,
+      "mode": "mitm",
+      "maps_built": 9,
+      "pairs_checked": 511,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 17,
+      "a": 10,
+      "den": 72023,
+      "binom": 19448,
+      "mode": "mitm",
+      "maps_built": 8,
+      "pairs_checked": 502,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 19,
+      "a": 9,
+      "den": 504605,
+      "binom": 92378,
+      "mode": "mitm",
+      "maps_built": 10,
+      "pairs_checked": 1023,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 19,
+      "a": 10,
+      "den": 465239,
+      "binom": 92378,
+      "mode": "mitm",
+      "maps_built": 10,
+      "pairs_checked": 1023,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 19,
+      "a": 11,
+      "den": 347141,
+      "binom": 75582,
+      "mode": "mitm",
+      "maps_built": 9,
+      "pairs_checked": 1013,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 20,
+      "a": 10,
+      "den": 989527,
+      "binom": 184756,
+      "mode": "mitm",
+      "maps_built": 11,
+      "pairs_checked": 1024,
+      "hits": [
+        {
+          "ones": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ],
+          "n": 1,
+          "B": 989527,
+          "trivial": true
+        },
+        {
+          "ones": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19
+          ],
+          "n": 2,
+          "B": 1979054,
+          "trivial": true
+        }
+      ],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 20,
+      "a": 11,
+      "den": 871429,
+      "binom": 167960,
+      "mode": "mitm",
+      "maps_built": 10,
+      "pairs_checked": 1023,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 20,
+      "a": 12,
+      "den": 517135,
+      "binom": 125970,
+      "mode": "mitm",
+      "maps_built": 9,
+      "pairs_checked": 1013,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 24,
+      "a": 13,
+      "den": 15182893,
+      "binom": 2496144,
+      "mode": "mitm",
+      "maps_built": 12,
+      "pairs_checked": 4095,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 24,
+      "a": 14,
+      "den": 11994247,
+      "binom": 1961256,
+      "mode": "mitm",
+      "maps_built": 11,
+      "pairs_checked": 4083,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 24,
+      "a": 15,
+      "den": 2428309,
+      "binom": 1307504,
+      "mode": "mitm",
+      "maps_built": 10,
+      "pairs_checked": 4017,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 29,
+      "a": 16,
+      "den": 493824191,
+      "binom": 67863915,
+      "mode": "mitm",
+      "maps_built": 14,
+      "pairs_checked": 32752,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 29,
+      "a": 17,
+      "den": 407730749,
+      "binom": 51895935,
+      "mode": "mitm",
+      "maps_built": 13,
+      "pairs_checked": 32647,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 29,
+      "a": 18,
+      "den": 149450423,
+      "binom": 34597290,
+      "mode": "mitm",
+      "maps_built": 12,
+      "pairs_checked": 32192,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 30,
+      "a": 16,
+      "den": 1030695103,
+      "binom": 145422675,
+      "mode": "mitm",
+      "maps_built": 15,
+      "pairs_checked": 32767,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 30,
+      "a": 17,
+      "den": 944601661,
+      "binom": 119759850,
+      "mode": "mitm",
+      "maps_built": 14,
+      "pairs_checked": 32752,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 30,
+      "a": 18,
+      "den": 686321335,
+      "binom": 86493225,
+      "mode": "mitm",
+      "maps_built": 13,
+      "pairs_checked": 32647,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 37,
+      "a": 21,
+      "den": 126978600269,
+      "binom": 12875774670,
+      "mode": "mitm",
+      "maps_built": 17,
+      "pairs_checked": 524097,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 37,
+      "a": 22,
+      "den": 106057893863,
+      "binom": 9364199760,
+      "mode": "mitm",
+      "maps_built": 16,
+      "pairs_checked": 523128,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 37,
+      "a": 23,
+      "den": 43295774645,
+      "binom": 6107086800,
+      "mode": "mitm",
+      "maps_built": 15,
+      "pairs_checked": 519252,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 41,
+      "a": 24,
+      "den": 1916593719071,
+      "binom": 151584480450,
+      "mode": "mitm_truncated",
+      "maps_built": 14,
+      "pairs_checked": 802298,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 41,
+      "a": 25,
+      "den": 1351734646109,
+      "binom": 103077446706,
+      "mode": "mitm_truncated",
+      "maps_built": 13,
+      "pairs_checked": 796313,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 41,
+      "a": 23,
+      "den": 2104880076725,
+      "binom": 202112640600,
+      "mode": "mitm_truncated",
+      "maps_built": 15,
+      "pairs_checked": 803628,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 49,
+      "a": 28,
+      "den": 540073160966351,
+      "binom": 39049918716424,
+      "mode": "mitm_truncated",
+      "maps_built": 7,
+      "pairs_checked": 245506,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 49,
+      "a": 29,
+      "den": 494319576056429,
+      "binom": 28277527346376,
+      "mode": "mitm_truncated",
+      "maps_built": 5,
+      "pairs_checked": 230556,
+      "hits": [],
+      "nontrivial_hits": []
+    },
+    {
+      "L": 49,
+      "a": 30,
+      "den": 357058821326663,
+      "binom": 18851684897584,
+      "mode": "mitm_truncated",
+      "maps_built": 3,
+      "pairs_checked": 177126,
+      "hits": [],
+      "nontrivial_hits": []
+    }
+  ],
+  "nontrivial_configs": [],
+  "total_nontrivial": 0,
+  "total_trivial_hits": 4,
+  "conclusion": "MITM modular cycle builder near log3(2) convergents; nontrivial hits would be K-candidates."
+}

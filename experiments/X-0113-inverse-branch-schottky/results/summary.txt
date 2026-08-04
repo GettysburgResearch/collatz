@@ -1,0 +1,5 @@
+No compact positive inverse IFS using {g0,g1}. Pure g1 attracts to -1. Inverse Schottky on positives requires unbounded domains or non-IFS formats.
+g1 attractor=-1
+cylinder word=1011011 count=16 ~expected=16
+inverse tree growth from 1:
+[1, 2, 2, 4, 5, 8, 10, 14, 18, 26, 36, 50]

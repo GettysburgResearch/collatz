@@ -1,0 +1,322 @@
+{
+  "history": [
+    {
+      "stage": 0,
+      "beam": 40,
+      "best_word": "111111",
+      "best_L": 6,
+      "best_a": 6,
+      "affine_growth": 11.390625,
+      "realized_sample": 11.423197492163009,
+      "mod_bits": 9,
+      "odd_mod": 5,
+      "sample_n": 319
+    },
+    {
+      "stage": 1,
+      "beam": 40,
+      "best_word": "111111111111",
+      "best_L": 12,
+      "best_a": 12,
+      "affine_growth": 129.746337890625,
+      "realized_sample": 129.752624639875,
+      "mod_bits": 15,
+      "odd_mod": 5,
+      "sample_n": 20479
+    },
+    {
+      "stage": 2,
+      "beam": 40,
+      "best_word": "111111111111111111",
+      "best_L": 18,
+      "best_a": 18,
+      "affine_growth": 1477.8918800354004,
+      "realized_sample": 1477.8930068153434,
+      "mod_bits": 21,
+      "odd_mod": 5,
+      "sample_n": 1310719
+    },
+    {
+      "stage": 3,
+      "beam": 40,
+      "best_word": "111111111111111111111111",
+      "best_L": 24,
+      "best_a": 24,
+      "affine_growth": 16834.112196028233,
+      "realized_sample": 16834.11239669457,
+      "mod_bits": 27,
+      "odd_mod": 5,
+      "sample_n": 83886079
+    },
+    {
+      "stage": 4,
+      "beam": 40,
+      "best_word": "111111111111111111111111111111",
+      "best_L": 30,
+      "best_a": 30,
+      "affine_growth": 191751.0592328841,
+      "realized_sample": 191751.0592686003,
+      "mod_bits": 33,
+      "odd_mod": 5,
+      "sample_n": 5368709119
+    },
+    {
+      "stage": 5,
+      "beam": 40,
+      "best_word": "111111111111111111111111111111111111",
+      "best_L": 36,
+      "best_a": 36,
+      "affine_growth": 2184164.4090745705,
+      "realized_sample": 2184164.4090809273,
+      "mod_bits": 39,
+      "odd_mod": 5,
+      "sample_n": 343597383679
+    },
+    {
+      "stage": 6,
+      "beam": 40,
+      "best_word": "111111111111111111111111111111111111111111",
+      "best_L": 42,
+      "best_a": 42,
+      "affine_growth": 24878997.72211503,
+      "realized_sample": 24878997.722116157,
+      "mod_bits": 45,
+      "odd_mod": 5,
+      "sample_n": 21990232555519
+    },
+    {
+      "stage": 7,
+      "beam": 40,
+      "best_word": "111111111111111111111111111111111111111111111111",
+      "best_L": 48,
+      "best_a": 48,
+      "affine_growth": 283387333.4284665,
+      "realized_sample": 283387333.4284667,
+      "mod_bits": 51,
+      "odd_mod": 5,
+      "sample_n": 1407374883553279
+    },
+    {
+      "stage": 8,
+      "beam": 18,
+      "best_word": "111111111111111111111111111111111111111111111111",
+      "best_L": 48,
+      "best_a": 48,
+      "affine_growth": 283387333.4284665,
+      "realized_sample": 283387333.4284667,
+      "mod_bits": 51,
+      "odd_mod": 5,
+      "sample_n": 1407374883553279
+    },
+    {
+      "stage": 9,
+      "beam": 9,
+      "best_word": "111111111111111111111111111111111111111111111111",
+      "best_L": 48,
+      "best_a": 48,
+      "affine_growth": 283387333.4284665,
+      "realized_sample": 283387333.4284667,
+      "mod_bits": 51,
+      "odd_mod": 5,
+      "sample_n": 1407374883553279
+    },
+    {
+      "stage": 10,
+      "extinct": true
+    }
+  ],
+  "evaluations": [
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 17169973579350015,
+      "after": 4865753027689223101665020,
+      "realized": 283387333.4284665,
+      "peak_ratio": 55905166006.26641,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 3,
+      "n": 17169973579350015,
+      "after": 4865753027689223101665020,
+      "realized": 283387333.4284665,
+      "peak_ratio": 55905166006.26641,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 5348024557502463,
+      "after": 1515562418460577687403858,
+      "realized": 283387333.42846656,
+      "peak_ratio": 6894087884.424943,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 1,
+      "n": 5348024557502463,
+      "after": 1515562418460577687403858,
+      "realized": 283387333.42846656,
+      "peak_ratio": 6894087884.424943,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 20547673299877887,
+      "after": 5822950344611693220025352,
+      "realized": 283387333.4284665,
+      "peak_ratio": 3930831984.815607,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 3,
+      "n": 10696049115004927,
+      "after": 3031124836921155374807717,
+      "realized": 283387333.4284665,
+      "peak_ratio": 3447043942.212471,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 11821949021847551,
+      "after": 3350190609228645414261161,
+      "realized": 283387333.4284665,
+      "peak_ratio": 2420969133.62522,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 3,
+      "n": 11821949021847551,
+      "after": 3350190609228645414261161,
+      "realized": 283387333.4284665,
+      "peak_ratio": 2420969133.62522,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 22517998136852479,
+      "after": 6381315446149800789068879,
+      "realized": 283387333.4284665,
+      "peak_ratio": 1434648375.4816117,
+      "hit_trivial": true
+    }
+  ],
+  "nontrivial_survivors": [
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 17169973579350015,
+      "after": 4865753027689223101665020,
+      "realized": 283387333.4284665,
+      "peak_ratio": 55905166006.26641,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 3,
+      "n": 17169973579350015,
+      "after": 4865753027689223101665020,
+      "realized": 283387333.4284665,
+      "peak_ratio": 55905166006.26641,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 5348024557502463,
+      "after": 1515562418460577687403858,
+      "realized": 283387333.42846656,
+      "peak_ratio": 6894087884.424943,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 1,
+      "n": 5348024557502463,
+      "after": 1515562418460577687403858,
+      "realized": 283387333.42846656,
+      "peak_ratio": 6894087884.424943,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 20547673299877887,
+      "after": 5822950344611693220025352,
+      "realized": 283387333.4284665,
+      "peak_ratio": 3930831984.815607,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 3,
+      "n": 10696049115004927,
+      "after": 3031124836921155374807717,
+      "realized": 283387333.4284665,
+      "peak_ratio": 3447043942.212471,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 5,
+      "n": 11821949021847551,
+      "after": 3350190609228645414261161,
+      "realized": 283387333.4284665,
+      "peak_ratio": 2420969133.62522,
+      "hit_trivial": false
+    },
+    {
+      "word_L": 48,
+      "word_a": 48,
+      "affine_growth": 283387333.4284665,
+      "odd_mod": 3,
+      "n": 11821949021847551,
+      "after": 3350190609228645414261161,
+      "realized": 283387333.4284665,
+      "peak_ratio": 2420969133.62522,
+      "hit_trivial": false
+    }
+  ],
+  "max_affine": 283387333.4284665,
+  "max_peak": 55905166006.26641,
+  "conclusion": "Corrected mixed-modulus ladder: concatenate supercritical blocks under 2^L (+ optional 3/5) CRT; look for non-trivial forward survivors."
+}

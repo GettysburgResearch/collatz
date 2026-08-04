@@ -1,0 +1,19 @@
+No nontrivial positive integer cycle found through L=16 full census plus selective L=17..20. Trivial n=1 occurrences recorded separately.
+L<=16 subcritical words=112892 divisible=16
+nontrivial hits=8 trivial=8
+extra L17-20 hits=0
+NONTRIVIAL:
+{'word': '01', 'L': 2, 'a': 1, 'n': 2, 'verified': True}
+{'word': '0101', 'L': 4, 'a': 2, 'n': 2, 'verified': True}
+{'word': '010101', 'L': 6, 'a': 3, 'n': 2, 'verified': True}
+{'word': '01010101', 'L': 8, 'a': 4, 'n': 2, 'verified': True}
+{'word': '0101010101', 'L': 10, 'a': 5, 'n': 2, 'verified': True}
+{'word': '010101010101', 'L': 12, 'a': 6, 'n': 2, 'verified': True}
+{'word': '01010101010101', 'L': 14, 'a': 7, 'n': 2, 'verified': True}
+{'word': '0101010101010101', 'L': 16, 'a': 8, 'n': 2, 'verified': True}
+trivial samples:
+{'word': '10', 'L': 2, 'a': 1, 'n': 1, 'verified': True}
+{'word': '1010', 'L': 4, 'a': 2, 'n': 1, 'verified': True}
+{'word': '101010', 'L': 6, 'a': 3, 'n': 1, 'verified': True}
+{'word': '10101010', 'L': 8, 'a': 4, 'n': 1, 'verified': True}
+{'word': '1010101010', 'L': 10, 'a': 5, 'n': 1, 'verified': True}

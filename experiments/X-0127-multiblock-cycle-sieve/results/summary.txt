@@ -1,0 +1,7 @@
+Typed multi-block cycle sieve over short concatenations, super/sub sandwiches, and powers; nontrivial verified hits would be K-candidates.
+checked=21786 nontrivial=0 verified_nontrivial=0 trivial=16
+  concat2: checked=3249 divisible=20
+  concat3: checked=17576 divisible=40
+  sandwich: checked=850 divisible=8
+  powers: checked=111 divisible=22
+  (no verified nontrivial positive cycles in scanned families)

@@ -1,0 +1,194 @@
+{
+  "template": "11110111000",
+  "fp": -17,
+  "depth_floor": 2,
+  "max_iters": 30,
+  "seeds": 120,
+  "escaped_count": 0,
+  "stalled_frontiers": 120,
+  "best_bit_gains": [
+    {
+      "seed": 67108847,
+      "m": 22,
+      "start_depth": 26,
+      "best_n": 258280271,
+      "best_depth": 5,
+      "bit_gain": 2,
+      "escaped": false
+    },
+    {
+      "seed": 8175,
+      "m": 11,
+      "start_depth": 13,
+      "best_n": 14735,
+      "best_depth": 5,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 16367,
+      "m": 11,
+      "start_depth": 14,
+      "best_n": 17479,
+      "best_depth": 3,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 32751,
+      "m": 11,
+      "start_depth": 15,
+      "best_n": 52463,
+      "best_depth": 8,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 65519,
+      "m": 11,
+      "start_depth": 16,
+      "best_n": 69967,
+      "best_depth": 5,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 4194287,
+      "m": 22,
+      "start_depth": 22,
+      "best_n": 4478959,
+      "best_depth": 11,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 8388591,
+      "m": 22,
+      "start_depth": 23,
+      "best_n": 8957935,
+      "best_depth": 12,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 16777199,
+      "m": 22,
+      "start_depth": 24,
+      "best_n": 19131859,
+      "best_depth": 2,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 33554415,
+      "m": 22,
+      "start_depth": 25,
+      "best_n": 38263735,
+      "best_depth": 3,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 50331631,
+      "m": 22,
+      "start_depth": 24,
+      "best_n": 96855095,
+      "best_depth": 3,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 62914543,
+      "m": 22,
+      "start_depth": 22,
+      "best_n": 67184623,
+      "best_depth": 11,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 125829103,
+      "m": 22,
+      "start_depth": 23,
+      "best_n": 134369263,
+      "best_depth": 12,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 130023407,
+      "m": 22,
+      "start_depth": 22,
+      "best_n": 138848239,
+      "best_depth": 11,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 134217711,
+      "m": 22,
+      "start_depth": 27,
+      "best_n": 153054991,
+      "best_depth": 5,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 8589934575,
+      "m": 33,
+      "start_depth": 33,
+      "best_n": 9795520495,
+      "best_depth": 11,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 17179869167,
+      "m": 33,
+      "start_depth": 34,
+      "best_n": 19591041007,
+      "best_depth": 12,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 34359738351,
+      "m": 33,
+      "start_depth": 35,
+      "best_n": 41841412795,
+      "best_depth": 2,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 68719476719,
+      "m": 33,
+      "start_depth": 36,
+      "best_n": 83682825607,
+      "best_depth": 3,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 128849018863,
+      "m": 33,
+      "start_depth": 33,
+      "best_n": 146932807663,
+      "best_depth": 11,
+      "bit_gain": 1,
+      "escaped": false
+    },
+    {
+      "seed": 137438953455,
+      "m": 33,
+      "start_depth": 37,
+      "best_n": 251048476847,
+      "best_depth": 6,
+      "bit_gain": 1,
+      "escaped": false
+    }
+  ],
+  "escape_samples": [],
+  "max_bit_gain": 2,
+  "conclusion": "Iterate grow+keep / repair moves on -17 with depth floor; escapes with +10 bits while holding depth would support a fuel-regenerative divergence certificate."
+}

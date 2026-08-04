@@ -1,0 +1,126 @@
+{
+  "real_ifs": {
+    "g0_compact_obstruction": "g0([a,b])=[2a,2b] not subset of bounded [a,b]",
+    "g1_attractor": -1,
+    "conclusion": "No compact positive inverse IFS using {g0,g1}. Pure g1 attracts to -1. Inverse Schottky on positives requires unbounded domains or non-IFS formats."
+  },
+  "cylinder_disjoint": [
+    {
+      "depth": 6,
+      "window": 1000000,
+      "cloud": 8,
+      "|S0|": 5,
+      "|S1|": 3,
+      "overlap": 0,
+      "note": "Forward-bit cylinders are always disjoint on integers; this is coding, not a new Schottky."
+    },
+    {
+      "depth": 10,
+      "window": 1000000,
+      "cloud": 26,
+      "|S0|": 18,
+      "|S1|": 8,
+      "overlap": 0,
+      "note": "Forward-bit cylinders are always disjoint on integers; this is coding, not a new Schottky."
+    },
+    {
+      "depth": 12,
+      "window": 1000000,
+      "cloud": 50,
+      "|S0|": 36,
+      "|S1|": 14,
+      "overlap": 0,
+      "note": "Forward-bit cylinders are always disjoint on integers; this is coding, not a new Schottky."
+    }
+  ],
+  "cylinder_count": {
+    "word": "1011011",
+    "L": 7,
+    "count_below": 16,
+    "expected_approx": 16,
+    "sample": [
+      121,
+      249,
+      377,
+      505,
+      633
+    ]
+  },
+  "inverse_tree": {
+    "branch_stats": [
+      {
+        "seed": 1,
+        "growth": [
+          1,
+          2,
+          2,
+          4,
+          5,
+          8,
+          10,
+          14,
+          18,
+          26,
+          36,
+          50
+        ],
+        "layers": 12
+      },
+      {
+        "seed": 5,
+        "growth": [
+          2,
+          2,
+          3,
+          3,
+          5,
+          7,
+          11,
+          14,
+          19,
+          23,
+          30,
+          40
+        ],
+        "layers": 12
+      },
+      {
+        "seed": 7,
+        "growth": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          5,
+          6,
+          9,
+          12,
+          16,
+          21,
+          28
+        ],
+        "layers": 12
+      },
+      {
+        "seed": 27,
+        "growth": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "layers": 12
+      }
+    ],
+    "note": "Inverse tree from 1 enumerates Collatz precursors of 1 (not counterexamples). A counterexample component would be an inverse tree not feeding into 1."
+  }
+}

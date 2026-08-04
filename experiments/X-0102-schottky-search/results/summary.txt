@@ -1,0 +1,8 @@
+Lmax=12
+supercritical branches=1767
+mild pool=433
+tested pairs=3160 triples=4060
+hits=0
+obstruction checks=400 counterexamples=0
+
+OBSTRUCTION: for supercritical mu>1 and beta>0, g(A)-A = A(1/mu-1) - beta/mu < 0 for every A>0; hence g(I) is never a subset of I subset (0,∞). Sample word=11111110000, mu=2187/2048, beta=2059/2048.
