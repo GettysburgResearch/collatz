@@ -1,0 +1,83 @@
+{
+  "arithmetic": "exact Python integers",
+  "experiment_id": "X-8002",
+  "results_sha256": "722890b0566d266126601a3a2193ec69e6b1ec296607d94a086c8d196479f0ff",
+  "scans": [
+    {
+      "audit_sha256": "34440bd78dc75ae92afd2e2485ad9257d2c10f992834404a85ba051a71b13f17",
+      "hit_count": 1,
+      "hits": [
+        {
+          "exact_replay": true,
+          "negative_state": -5,
+          "positions": [0, 2, 4],
+          "pulses": [1, 1, 1],
+          "repeats": 3,
+          "rotation": 0,
+          "slack": 2,
+          "start": "1",
+          "trivial": true
+        }
+      ],
+      "name": "negative_3_cycle",
+      "nontrivial_hit_count": 0,
+      "pulse_count": 3,
+      "r_max": 50,
+      "scope": "minimal total pulse crossing D>0 and the next three totals",
+      "slack": 3,
+      "tested_candidates": 17045448
+    },
+    {
+      "audit_sha256": "9296714d86cb2d8f86bb1bf6c34bb68a7829039fbf77171a4bac8fe057a5b594",
+      "hit_count": 1,
+      "hits": [
+        {
+          "exact_replay": true,
+          "negative_state": -5,
+          "positions": [0, 2, 4, 6],
+          "pulses": [1, 1, 1, 1],
+          "repeats": 4,
+          "rotation": 0,
+          "slack": 3,
+          "start": "1",
+          "trivial": true
+        }
+      ],
+      "name": "negative_3_cycle",
+      "nontrivial_hit_count": 0,
+      "pulse_count": 4,
+      "r_max": 20,
+      "scope": "minimal total pulse crossing D>0 and the next three totals",
+      "slack": 3,
+      "tested_candidates": 2298920
+    },
+    {
+      "audit_sha256": "6c4802bf9d0617be3325d0e02281f8c907548c1bebbf5bd0eac7adec7fda1672",
+      "hit_count": 0,
+      "hits": [],
+      "name": "negative_11_cycle",
+      "nontrivial_hit_count": 0,
+      "pulse_count": 3,
+      "r_max": 20,
+      "scope": "minimal total pulse crossing D>0 and the next three totals",
+      "slack": 3,
+      "tested_candidates": 4396770
+    },
+    {
+      "audit_sha256": "3da46131c31ad9f89a7fc52f912dcf38e835b83d758d37150b4a89836050fc97",
+      "hit_count": 0,
+      "hits": [],
+      "name": "negative_11_cycle",
+      "nontrivial_hit_count": 0,
+      "pulse_count": 4,
+      "r_max": 8,
+      "scope": "minimal total pulse crossing D>0 and the next three totals",
+      "slack": 3,
+      "tested_candidates": 451822
+    }
+  ],
+  "totals": {
+    "nontrivial_hits": 0,
+    "tested_candidates": 24192960
+  }
+}

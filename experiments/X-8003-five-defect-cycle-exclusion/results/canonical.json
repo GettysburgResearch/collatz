@@ -1,0 +1,42 @@
+{
+  "all_one": [
+    {
+      "R": 8,
+      "arrangements": 120,
+      "audit": "2d98f5d2fcbc3d7ab30f9d108e71abde8b01e74998eb8269e77414a974852daf",
+      "height": 0,
+      "min_margin": 254024
+    },
+    {
+      "R": 9,
+      "arrangements": 170,
+      "audit": "ceed54aab806db5787711573865b7b9d01048f48d4a7de66e7c6e8ac7d8fdc94",
+      "height": 0,
+      "min_margin": 4825304
+    }
+  ],
+  "core": [
+    {"D": 269, "h": 2, "max_min_E": 62, "necklaces": 2, "two_D": 538},
+    {"D": 1805, "h": 3, "max_min_E": -1174, "necklaces": 2, "two_D": 3610},
+    {"D": 7949, "h": 4, "max_min_E": -6262, "necklaces": 1, "two_D": 15898},
+    {"D": 32525, "h": 5, "max_min_E": -26020, "necklaces": 1, "two_D": 65050}
+  ],
+  "experiment": "X-8003",
+  "one_high": [
+    {"R": 0, "candidates": 32, "height": 14, "hits": 0, "max_b": 10, "patterns": 5, "resonances": 0},
+    {"R": 1, "candidates": 32, "height": 2, "hits": 0, "max_b": 9, "patterns": 5, "resonances": 0},
+    {"R": 2, "candidates": 196, "height": 3, "hits": 0, "max_b": 11, "patterns": 25, "resonances": 0},
+    {"R": 3, "candidates": 491, "height": 27, "hits": 0, "max_b": 13, "patterns": 55, "resonances": 0},
+    {"R": 4, "candidates": 919, "height": 7, "hits": 0, "max_b": 14, "patterns": 95, "resonances": 0},
+    {"R": 5, "candidates": 1677, "height": 0, "hits": 0, "max_b": 16, "patterns": 160, "resonances": 0}
+  ],
+  "sha256": "1d277736a3570ec64dae6884b175e807b457e89729b75ce25893fc008760d6b0",
+  "totals": {
+    "audit": "7b67c54e7d157b4847d7bc9378a8afe8fb3f06814656c62b70a707346529c49b",
+    "candidates": 3347,
+    "height": 53,
+    "hits": 0,
+    "patterns": 345,
+    "resonances": 0
+  }
+}
