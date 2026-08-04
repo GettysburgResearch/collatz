@@ -1,0 +1,12 @@
+verified rounded physical-parity phase coupling
+verified finite phase-Kraft identities
+verified escape-transform drift bounds: physical>=0.130812035941 phase>=0.0424747591988
+verified exact escape path-density formula through depth 12
+depth= 8 states=   26 survival=255/256 max_phase=3483
+depth=12 states=   69 survival=3835/4096 max_phase=17631
+depth=16 states=  171 survival=56459/65536 max_phase=89254
+depth=20 states=  425 survival=783455/1048576 max_phase=451846
+depth=24 states= 1096 survival=10988105/16777216 max_phase=2287468
+depth=28 states= 2774 survival=147466212/268435456 max_phase=11580306
+depth=32 states= 7043 survival=2028888098/4294967296 max_phase=58625298
+all rounded-phase martingale checks passed

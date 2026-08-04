@@ -1,0 +1,31 @@
+verified L-0005 inverse signatures exhaustively through length 8
+verified L-0006 collision-code composition calculus
+verified T-0005 signature-pigeonhole and odd-tail construction
+
+largest equal-signature classes among weight-m words of length 3m:
+m= 1 core_words=      3 guaranteed=  1 largest=  2 signature=    2 tail= 3 L= 6 a= 4 diameter=    1
+m= 2 core_words=     15 guaranteed=  2 largest=  4 signature=    2 tail= 5 L=11 a= 7 diameter=    5
+m= 3 core_words=     84 guaranteed=  4 largest=  7 signature=    2 tail= 8 L=17 a=11 diameter=   19
+m= 4 core_words=    495 guaranteed=  7 largest= 17 signature=   44 tail=10 L=22 a=14 diameter=  110
+m= 5 core_words=   3003 guaranteed= 13 largest= 34 signature=  152 tail=13 L=28 a=18 diameter=  527
+m= 6 core_words=  18564 guaranteed= 26 largest= 74 signature=  638 tail=15 L=33 a=21 diameter= 2086
+m= 7 core_words= 116280 guaranteed= 54 largest=157 signature= 1853 tail=17 L=38 a=24 diameter= 5341
+m= 8 core_words= 735471 guaranteed=113 largest=339 signature= 2906 tail=20 L=44 a=28 diameter=17207
+
+verified O-0005 explicit 339-branch chart:
+M=2^44=17592186044416
+N=3^28=22876792454961
+root=3501195263
+base_residue=8952950628352
+common_output=11642373114938
+fiber_size=339
+offset_diameter=17207
+longest_consecutive_residue_run=7
+offset_residue_classes_mod_16=16
+centered_difference_radius=934
+offset_sha256=934328989d862bb180e6324fc217fad4cefdc5fe4c2cfdadc255a24ac0ea3e5e
+
+first 20 offsets:
+0 2048 2560 2688 2720 2728 2730 4096 5120 5376 5440 5456 5460 5461 6272 6304 6312 6314 6336 6352
+last 20 offsets:
+17105 17106 17107 17110 17111 17156 17157 17158 17160 17162 17164 17165 17166 17167 17169 17180 17181 17182 17206 17207
