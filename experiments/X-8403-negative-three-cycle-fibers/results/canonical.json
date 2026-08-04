@@ -1,0 +1,176 @@
+{
+  "experiment_id": "X-8403",
+  "interpretation": {
+    "not_proved": [
+      "an ordinary infinite path in any chart",
+      "a divergent Collatz seed",
+      "a nontrivial positive cycle",
+      "the Collatz conjecture or its negation"
+    ],
+    "proved_by_finite_replay": [
+      "all branch digits and exact physical replays for (6,1), (12,2), and (18,3)",
+      "the complete six-branch (6,1) digit table",
+      "the exact depth-1-through-8 least positive cylinders for the six-branch chart",
+      "the displayed exact integer comparisons and branch counts for three near-critical shapes"
+    ]
+  },
+  "letter_maps": {
+    "A": "h=8q -> 9q; physical valuations (1,2)",
+    "B": "h=3+16q -> 3+9q; physical valuations (2,2)"
+  },
+  "near_critical_examples": [
+    {
+      "branch_count": 6,
+      "difference_bits": 13,
+      "input_exponent": 19,
+      "length": 6,
+      "multiplier_bits": 20,
+      "pulses": 1,
+      "radix_bits": 20
+    },
+    {
+      "branch_count": 4431613550,
+      "difference_bits": 161,
+      "input_exponent": 168,
+      "length": 53,
+      "multiplier_bits": 169,
+      "pulses": 9,
+      "radix_bits": 169
+    },
+    {
+      "branch_count": 17483960556008270027789260935692849310945078464608626002918548755009061518797627539210884186649776932937953715574037393534756563500,
+      "difference_bits": 2095,
+      "input_exponent": 2108,
+      "length": 665,
+      "multiplier_bits": 2109,
+      "pulses": 113,
+      "radix_bits": 2109
+    }
+  ],
+  "payload_sha256": "b42ee3c1a1a8a9b8f962b43584ab31ac1c05fe13e62900500427dff69423384b",
+  "schema_version": 1,
+  "six_one_chart_rows": [
+    {
+      "digit_displacement": 4771,
+      "domain_digit": 349523,
+      "output_digit": 354294,
+      "word": "BAAAAA"
+    },
+    {
+      "digit_displacement": 267,
+      "domain_digit": 19416,
+      "output_digit": 19683,
+      "word": "ABAAAA"
+    },
+    {
+      "digit_displacement": 5006,
+      "domain_digit": 366784,
+      "output_digit": 371790,
+      "word": "AABAAA"
+    },
+    {
+      "digit_displacement": 3655,
+      "domain_digit": 267776,
+      "output_digit": 271431,
+      "word": "AAABAA"
+    },
+    {
+      "digit_displacement": 6428,
+      "domain_digit": 471040,
+      "output_digit": 477468,
+      "word": "AAAABA"
+    },
+    {
+      "digit_displacement": 4919,
+      "domain_digit": 360448,
+      "output_digit": 365367,
+      "word": "AAAAAB"
+    }
+  ],
+  "six_one_finite_minima": [
+    {
+      "class_count": 6,
+      "depth": 1,
+      "minimum_bits": 15,
+      "minimum_positive_h": 19416
+    },
+    {
+      "class_count": 36,
+      "depth": 2,
+      "minimum_bits": 33,
+      "minimum_positive_h": 5726623059
+    },
+    {
+      "class_count": 216,
+      "depth": 3,
+      "minimum_bits": 47,
+      "minimum_positive_h": 134719124373504
+    },
+    {
+      "class_count": 1296,
+      "depth": 4,
+      "minimum_bits": 63,
+      "minimum_positive_h": 6621345703201609216
+    },
+    {
+      "class_count": 7776,
+      "depth": 5,
+      "minimum_bits": 81,
+      "minimum_positive_h": 2205800655210966882293952
+    },
+    {
+      "class_count": 46656,
+      "depth": 6,
+      "minimum_bits": 97,
+      "minimum_positive_h": 149782132437049025835992193216
+    },
+    {
+      "class_count": 279936,
+      "depth": 7,
+      "minimum_bits": 116,
+      "minimum_positive_h": 48083433279741938300363300079490387
+    },
+    {
+      "class_count": 1679616,
+      "depth": 8,
+      "minimum_bits": 129,
+      "minimum_positive_h": 544877977737345069246758429064839928000
+    }
+  ],
+  "small_shape_audits": [
+    {
+      "branches": 6,
+      "domain_digits_distinct": true,
+      "input_exponent": 19,
+      "length": 6,
+      "maximum_domain_digit": 471040,
+      "minimum_domain_digit": 19416,
+      "multiplier_minus_radix": 7153,
+      "pulses": 1,
+      "supercritical": true
+    },
+    {
+      "branches": 66,
+      "domain_digits_distinct": true,
+      "input_exponent": 38,
+      "length": 12,
+      "maximum_domain_digit": 273746722136,
+      "minimum_domain_digit": 5726623059,
+      "multiplier_minus_radix": 7551629537,
+      "pulses": 2,
+      "supercritical": true
+    },
+    {
+      "branches": 816,
+      "domain_digits_distinct": true,
+      "input_exponent": 57,
+      "length": 18,
+      "maximum_domain_digit": 143971844337716184,
+      "minimum_domain_digit": 22778964736192,
+      "multiplier_minus_radix": 5979447221143249,
+      "pulses": 3,
+      "supercritical": true
+    }
+  ],
+  "status": "EMPIRICAL / EXACT FINITE INTERFACE AUDIT"
+}
