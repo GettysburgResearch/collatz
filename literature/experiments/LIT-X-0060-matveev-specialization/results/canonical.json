@@ -1,0 +1,62 @@
+{
+  "description": "Exact Matveev n=2 source specialization and pulse cutoffs",
+  "fixed_support_thresholds": {
+    "P11-(1,1,1,2,1,1,4)": {
+      "criterion": "A*log(2)-((s-1)/s)*k*log(3)>0",
+      "maximum_support_with_positive_rate": 117,
+      "rate_at_max_decimal_lower": "0.000061905830295246",
+      "rate_at_next_decimal_upper": "-0.000495119087905301"
+    },
+    "P3-(1,2)": {
+      "criterion": "A*log(2)-((s-1)/s)*k*log(3)>0",
+      "maximum_support_with_positive_rate": 18,
+      "rate_at_max_decimal_lower": "0.004284996417850955",
+      "rate_at_next_decimal_upper": "-0.002139636849214013"
+    }
+  },
+  "matveev_constant": {
+    "improvement_factor_over_2^32_lower": "5.741934887",
+    "safe_integer_upper_bound": 748000000,
+    "second_source_branch": 4294967296,
+    "source_expression": "e*30^5*2^(7/2)",
+    "upper_bound_decimal": "747318743.131062710584"
+  },
+  "strengthened_cutoffs": {
+    "T-8255-two-pulse-P11": {
+      "cutoff": 3800000000,
+      "derivative_decimal_lower": "3.629580710617894611",
+      "derivative_sha256": "fa85890994e51595f20d953f8332a3272dbfaa4cb5ab86a610e457fc135d8d1b",
+      "effective_rate_decimal_lower": "3.779475975821014483",
+      "margin_decimal_lower": "119579250.438725165458",
+      "margin_sha256": "2cf971cff553a27fb05d778f86c2b9f60aed892e0ad31f3db448872379552e79",
+      "support_fraction": "1/2"
+    },
+    "T-8255-two-pulse-P3": {
+      "cutoff": 14600000000,
+      "derivative_decimal_lower": "0.941815416862838414",
+      "derivative_sha256": "827e28794e15ec0d63e154770ae6fb5229642fcad9d5d1e2c31d17765da90a90",
+      "effective_rate_decimal_lower": "0.980829253011726236",
+      "margin_decimal_lower": "24557983.325204025880",
+      "margin_sha256": "c6bf95cd4be859baebb93d7dd6f60f6f5d4832f2ddd6d2cda2b4346f6e07a812",
+      "support_fraction": "1/2"
+    },
+    "T-8260-three-pulse-P11": {
+      "cutoff": 5800000000,
+      "derivative_decimal_lower": "2.399554396320994639",
+      "derivative_sha256": "a0edf19847edff5f5da07c174cd1434b2bb0942ad1f6ec3bc51d1691bdde1045",
+      "effective_rate_decimal_lower": "2.497761639041553177",
+      "margin_decimal_lower": "3727937.531032559254",
+      "margin_sha256": "c4dcadf598c5a3367d8ceee2a2dba16712a52bd108d98e5eb44d699aceac109a",
+      "support_fraction": "2/3"
+    },
+    "T-8260-three-pulse-P3": {
+      "cutoff": 23800000000,
+      "derivative_decimal_lower": "0.590692299319220372",
+      "derivative_sha256": "9e2e580b3035e93ea46eb1713ced7ebd47dc28727c9f079155d11e6d3ea49627",
+      "effective_rate_decimal_lower": "0.614625156789023006",
+      "margin_decimal_lower": "54185595.805691065064",
+      "margin_sha256": "37197894bb2e300c5700de7343a605eaa8e359909f663b9962aaa8fd620fb2c7",
+      "support_fraction": "2/3"
+    }
+  }
+}

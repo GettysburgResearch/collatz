@@ -1,0 +1,277 @@
+{
+  "claim_id": "LIT-KTHM-0052",
+  "conclusion": "no positive accelerated Collatz cycle has accelerated odd length 184",
+  "exact_small_heights": [
+    {
+      "eligible_after_initial_v2": 71843,
+      "extra_mass": 16,
+      "failure_counts": {
+        "initial_v2_filter": 933963,
+        "nonzero_remainder": 4,
+        "term_overshoot": 51,
+        "valuation_mod3": 71788
+      },
+      "failure_depth_counts": {
+        "1": 30787,
+        "10": 202,
+        "11": 117,
+        "12": 63,
+        "13": 36,
+        "14": 19,
+        "15": 13,
+        "16": 4,
+        "2": 17599,
+        "3": 10056,
+        "4": 5736,
+        "5": 3296,
+        "6": 1885,
+        "7": 1059,
+        "8": 617,
+        "9": 354
+      },
+      "gcd_with_5": 5,
+      "m_max": 1005828,
+      "m_min": 23,
+      "solution_count": 0,
+      "total_m": 1005806,
+      "total_valuation": 292,
+      "transcript_sha256": "c8449fe7c2d15679df8bb4d68ecd376c68b2995ef033e87fd2063447f5cde58d"
+    },
+    {
+      "eligible_after_initial_v2": 5269,
+      "extra_mass": 17,
+      "failure_counts": {
+        "initial_v2_filter": 68508,
+        "valuation_mod3": 5269
+      },
+      "failure_depth_counts": {
+        "1": 2256,
+        "10": 17,
+        "11": 11,
+        "12": 1,
+        "13": 2,
+        "14": 2,
+        "15": 1,
+        "2": 1296,
+        "3": 738,
+        "4": 419,
+        "5": 239,
+        "6": 142,
+        "7": 73,
+        "8": 44,
+        "9": 28
+      },
+      "gcd_with_5": 1,
+      "m_max": 73778,
+      "m_min": 2,
+      "solution_count": 0,
+      "total_m": 73777,
+      "total_valuation": 293,
+      "transcript_sha256": "e7b965827614c319335e925782b8533690e3ba3827ba6a47674e4de44edc9702"
+    },
+    {
+      "eligible_after_initial_v2": 4003,
+      "extra_mass": 18,
+      "failure_counts": {
+        "initial_v2_filter": 52032,
+        "valuation_mod3": 4003
+      },
+      "failure_depth_counts": {
+        "1": 1713,
+        "10": 11,
+        "11": 8,
+        "13": 2,
+        "14": 2,
+        "15": 1,
+        "2": 983,
+        "3": 562,
+        "4": 319,
+        "5": 184,
+        "6": 103,
+        "7": 58,
+        "8": 33,
+        "9": 24
+      },
+      "gcd_with_5": 1,
+      "m_max": 56036,
+      "m_min": 2,
+      "solution_count": 0,
+      "total_m": 56035,
+      "total_valuation": 294,
+      "transcript_sha256": "a5337d70da35352f9baeb7098e3b152e9b1e210a8ef9ba72a8e8706e09a1117b"
+    },
+    {
+      "eligible_after_initial_v2": 3573,
+      "extra_mass": 19,
+      "failure_counts": {
+        "initial_v2_filter": 46447,
+        "valuation_mod3": 3573
+      },
+      "failure_depth_counts": {
+        "1": 1530,
+        "10": 10,
+        "11": 6,
+        "13": 2,
+        "14": 2,
+        "15": 1,
+        "2": 875,
+        "3": 504,
+        "4": 284,
+        "5": 163,
+        "6": 93,
+        "7": 54,
+        "8": 28,
+        "9": 21
+      },
+      "gcd_with_5": 1,
+      "m_max": 50021,
+      "m_min": 2,
+      "solution_count": 0,
+      "total_m": 50020,
+      "total_valuation": 295,
+      "transcript_sha256": "a6f3dccbf7ee45670a8d81872073a84806c949cbf69ce8bf923a88065a0d6a07"
+    },
+    {
+      "eligible_after_initial_v2": 16955,
+      "extra_mass": 20,
+      "failure_counts": {
+        "initial_v2_filter": 220409,
+        "valuation_mod3": 16955
+      },
+      "failure_depth_counts": {
+        "1": 7263,
+        "10": 46,
+        "11": 31,
+        "12": 8,
+        "13": 9,
+        "14": 5,
+        "15": 6,
+        "16": 1,
+        "17": 2,
+        "2": 4156,
+        "3": 2372,
+        "4": 1349,
+        "5": 779,
+        "6": 448,
+        "7": 247,
+        "8": 147,
+        "9": 86
+      },
+      "gcd_with_5": 5,
+      "m_max": 237369,
+      "m_min": 6,
+      "solution_count": 0,
+      "total_m": 237364,
+      "total_valuation": 296,
+      "transcript_sha256": "7de7108629ca8e19859bb655f7d7c8f3f7c8bdcff29916f7e822fda427a80168"
+    }
+  ],
+  "fixed_data": {
+    "baseline_total_valuation": 276,
+    "blocks": 92,
+    "h16_denominator": 1786806590841408495003648024979272939822889499163552544403296804949023827414857928941215,
+    "h16_factorization": [
+      [5, 1],
+      [11, 1],
+      [13, 1],
+      [17, 1],
+      [83, 1],
+      [89, 1],
+      [179, 1],
+      [1097, 1],
+      [1301, 1],
+      [2963, 1],
+      [4547, 1],
+      [5113, 1],
+      [13457, 1],
+      [28697, 1],
+      [1626211, 1],
+      [192491569, 1],
+      [177790780231, 1],
+      [314328249709, 1],
+      [167385996821689, 1]
+    ],
+    "minimum_positive_extra_mass": 16,
+    "q_0": 6170365191715177779482467945369860501784408913594010934644126825341528124785676079587681,
+    "q_92": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136
+  },
+  "stability_certificate": {
+    "gcd_1_heights": "H>=21 and H mod4 !=0",
+    "gcd_1_max_observed_v2": 31,
+    "gcd_1_min_perturbation_v2": 300,
+    "gcd_5_heights": "H>=24 and H mod4 ==0",
+    "gcd_5_max_observed_v2": 42,
+    "gcd_5_min_perturbation_v2": 303,
+    "uniform_m_max_gcd_1": 73778,
+    "uniform_m_max_gcd_5": 1005828
+  },
+  "stable_reference_classes": [
+    {
+      "eligible_after_initial_v2": 5269,
+      "failure_counts": {
+        "initial_v2_filter": 68509,
+        "valuation_mod3": 5269
+      },
+      "failure_depth_counts": {
+        "1": 2256,
+        "10": 17,
+        "11": 11,
+        "12": 1,
+        "13": 2,
+        "14": 2,
+        "15": 1,
+        "2": 1296,
+        "3": 738,
+        "4": 419,
+        "5": 239,
+        "6": 142,
+        "7": 73,
+        "8": 44,
+        "9": 28
+      },
+      "gcd_class": 1,
+      "m_max": 73778,
+      "maximum_decoded_positions": 15,
+      "maximum_observed_v2": 31,
+      "reference_height": 501,
+      "survivor_count": 0,
+      "transcript_sha256": "e7b965827614c319335e925782b8533690e3ba3827ba6a47674e4de44edc9702"
+    },
+    {
+      "eligible_after_initial_v2": 71844,
+      "failure_counts": {
+        "initial_v2_filter": 933984,
+        "valuation_mod3": 71844
+      },
+      "failure_depth_counts": {
+        "1": 30786,
+        "10": 201,
+        "11": 113,
+        "12": 60,
+        "13": 36,
+        "14": 18,
+        "15": 15,
+        "16": 5,
+        "17": 7,
+        "18": 1,
+        "19": 1,
+        "2": 17597,
+        "20": 1,
+        "3": 10059,
+        "4": 5735,
+        "5": 3294,
+        "6": 1885,
+        "7": 1058,
+        "8": 614,
+        "9": 358
+      },
+      "gcd_class": 5,
+      "m_max": 1005828,
+      "maximum_decoded_positions": 20,
+      "maximum_observed_v2": 42,
+      "reference_height": 500,
+      "survivor_count": 0,
+      "transcript_sha256": "b7ddde20ce910d6597d64bb3f7238a67ecab3f279f5583eef1ec5e2c9c8c687e"
+    }
+  ]
+}

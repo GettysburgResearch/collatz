@@ -1,0 +1,11 @@
+{
+  "experiment": "LIT-X-0065",
+  "author_builder": "summary.py",
+  "independent_verifier": "verify.py",
+  "detailed_result_policy": "regenerate locally; the full derived JSON is intentionally not committed",
+  "matveev_constant": 748000000,
+  "P3_support_range": [4, 11],
+  "P11_support_range": [4, 48],
+  "semantic_sha256": "a401ec3c97d511f2384a8b95307322d3e4e01ff871454f8d5859b8c6919feb35",
+  "local_replay_status": "author builder and separately implemented verifier passed"
+}
