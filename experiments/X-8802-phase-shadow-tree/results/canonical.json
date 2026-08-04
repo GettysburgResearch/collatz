@@ -1,0 +1,327 @@
+{
+  "claim_boundary": "The algebraic identities are exact. The cycle and seed censuses are finite and do not prove or refute an infinite positive chart survivor.",
+  "classification": "EXACT_FINITE_COMPUTATION",
+  "content_sha256": "ffc1244fd17626d4ef632213a26b46be70c04ddc97d176e1e70971c5502ab8c5",
+  "experiment_id": "X-8802",
+  "rational_base_low_digit_tree": {
+    "depth_cap": 64,
+    "edge_checks": 1000052,
+    "interpretation": "A positive infinite 4->5 chart survivor is exactly an infinite path from X=A+1 in the base-5/4 representation tree using only edge labels 0 and 1. The finite census is not an existence or nonexistence proof.",
+    "max_A": 1000000,
+    "maximum_depth_observed": 19,
+    "record_holders": [
+      {
+        "first_exit_A": 1,
+        "low_digit_path": "",
+        "root_X_equals_A_plus_1": 2,
+        "seed_A": 1,
+        "survival_depth": 0
+      },
+      {
+        "first_exit_A": 4,
+        "low_digit_path": "10",
+        "root_X_equals_A_plus_1": 3,
+        "seed_A": 2,
+        "survival_depth": 2
+      },
+      {
+        "first_exit_A": 29,
+        "low_digit_path": "0110",
+        "root_X_equals_A_plus_1": 12,
+        "seed_A": 11,
+        "survival_depth": 4
+      },
+      {
+        "first_exit_A": 193,
+        "low_digit_path": "11101",
+        "root_X_equals_A_plus_1": 63,
+        "seed_A": 62,
+        "survival_depth": 5
+      },
+      {
+        "first_exit_A": 1904,
+        "low_digit_path": "10111100110",
+        "root_X_equals_A_plus_1": 163,
+        "seed_A": 162,
+        "survival_depth": 11
+      },
+      {
+        "first_exit_A": 51404,
+        "low_digit_path": "011100101110",
+        "root_X_equals_A_plus_1": 3532,
+        "seed_A": 3531,
+        "survival_depth": 12
+      },
+      {
+        "first_exit_A": 529404,
+        "low_digit_path": "10010110010110",
+        "root_X_equals_A_plus_1": 23283,
+        "seed_A": 23282,
+        "survival_depth": 14
+      },
+      {
+        "first_exit_A": 1195068,
+        "low_digit_path": "111011110000101",
+        "root_X_equals_A_plus_1": 42047,
+        "seed_A": 42046,
+        "survival_depth": 15
+      },
+      {
+        "first_exit_A": 2780224,
+        "low_digit_path": "0010110101100100",
+        "root_X_equals_A_plus_1": 78256,
+        "seed_A": 78255,
+        "survival_depth": 16
+      },
+      {
+        "first_exit_A": 5426404,
+        "low_digit_path": "11011101111101110",
+        "root_X_equals_A_plus_1": 122191,
+        "seed_A": 122190,
+        "survival_depth": 17
+      },
+      {
+        "first_exit_A": 22310349,
+        "low_digit_path": "100110101011011100",
+        "root_X_equals_A_plus_1": 401907,
+        "seed_A": 401906,
+        "survival_depth": 18
+      },
+      {
+        "first_exit_A": 54592968,
+        "low_digit_path": "1101100001001100001",
+        "root_X_equals_A_plus_1": 786767,
+        "seed_A": 786766,
+        "survival_depth": 19
+      }
+    ],
+    "survivors_by_at_least_depth": [
+      1000000,
+      500000,
+      250000,
+      125000,
+      62500,
+      31250,
+      15630,
+      7818,
+      3910,
+      1954,
+      976,
+      487,
+      242,
+      133,
+      73,
+      39,
+      22,
+      12,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "signed_cycle_census": {
+    "boundary": "Absence of additional cycles in this finite parity-word range is not a proof of global uniqueness.",
+    "cycles": [
+      {
+        "correction": 2,
+        "cycle_denominator_2L_minus_aS": -1,
+        "orbit": [
+          -2,
+          -1
+        ],
+        "parity_word": "01",
+        "period": 2,
+        "seed": -2,
+        "sign_class": "negative_expanding",
+        "weight": 1
+      },
+      {
+        "correction": 7,
+        "cycle_denominator_2L_minus_aS": 7,
+        "orbit": [
+          1,
+          3,
+          8,
+          4,
+          2
+        ],
+        "parity_word": "11000",
+        "period": 5,
+        "seed": 1,
+        "sign_class": "positive_contracting",
+        "weight": 2
+      },
+      {
+        "correction": 39,
+        "cycle_denominator_2L_minus_aS": 3,
+        "orbit": [
+          13,
+          33,
+          83,
+          208,
+          104,
+          52,
+          26
+        ],
+        "parity_word": "1110000",
+        "period": 7,
+        "seed": 13,
+        "sign_class": "positive_contracting",
+        "weight": 3
+      },
+      {
+        "correction": 51,
+        "cycle_denominator_2L_minus_aS": 3,
+        "orbit": [
+          17,
+          43,
+          108,
+          54,
+          27,
+          68,
+          34
+        ],
+        "parity_word": "1100100",
+        "period": 7,
+        "seed": 17,
+        "sign_class": "positive_contracting",
+        "weight": 3
+      }
+    ],
+    "max_word_length": 18,
+    "multiplier": 5,
+    "negative_cycle_count": 1,
+    "positive_cycle_count": 3
+  },
+  "signed_phase_shadow": {
+    "closed_circuit_checks": 40,
+    "connector_rows": [
+      {
+        "coboundary_twice_weight_minus_length": -1,
+        "end_phase": -1,
+        "identity": "T_5^1(2^1*q-2)=5^0*q-1",
+        "length": 1,
+        "parity_word": "0",
+        "start_phase": -2,
+        "weight": 0
+      },
+      {
+        "coboundary_twice_weight_minus_length": 0,
+        "end_phase": -2,
+        "identity": "T_5^2(2^2*q-2)=5^1*q-2",
+        "length": 2,
+        "parity_word": "01",
+        "start_phase": -2,
+        "weight": 1
+      },
+      {
+        "coboundary_twice_weight_minus_length": -1,
+        "end_phase": -1,
+        "identity": "T_5^3(2^3*q-2)=5^1*q-1",
+        "length": 3,
+        "parity_word": "010",
+        "start_phase": -2,
+        "weight": 1
+      },
+      {
+        "coboundary_twice_weight_minus_length": 0,
+        "end_phase": -2,
+        "identity": "T_5^20(2^20*q-2)=5^10*q-2",
+        "length": 20,
+        "parity_word": "01010101010101010101",
+        "start_phase": -2,
+        "weight": 10
+      },
+      {
+        "coboundary_twice_weight_minus_length": 1,
+        "end_phase": -2,
+        "identity": "T_5^1(2^1*q-1)=5^1*q-2",
+        "length": 1,
+        "parity_word": "1",
+        "start_phase": -1,
+        "weight": 1
+      },
+      {
+        "coboundary_twice_weight_minus_length": 0,
+        "end_phase": -1,
+        "identity": "T_5^2(2^2*q-1)=5^1*q-1",
+        "length": 2,
+        "parity_word": "10",
+        "start_phase": -1,
+        "weight": 1
+      },
+      {
+        "coboundary_twice_weight_minus_length": 1,
+        "end_phase": -2,
+        "identity": "T_5^3(2^3*q-1)=5^2*q-2",
+        "length": 3,
+        "parity_word": "101",
+        "start_phase": -1,
+        "weight": 2
+      },
+      {
+        "coboundary_twice_weight_minus_length": 0,
+        "end_phase": -1,
+        "identity": "T_5^20(2^20*q-1)=5^10*q-1",
+        "length": 20,
+        "parity_word": "10101010101010101010",
+        "start_phase": -1,
+        "weight": 10
+      }
+    ],
+    "interpretation": "The odd-step excess is the phase coboundary chi(start)-chi(end); it vanishes on every closed phase circuit.",
+    "max_length": 20,
+    "physical_replay_checks": 39999,
+    "q_max": 1000
+  }
+}
