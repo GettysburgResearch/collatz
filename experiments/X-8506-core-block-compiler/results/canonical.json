@@ -1,0 +1,22 @@
+{
+  "admissible_ternary_lifts": 192,
+  "exact_block_replays": 576,
+  "experiment": "X-8506",
+  "finite_core_states": 24,
+  "growth_checks": 576,
+  "heights": [
+    3744,
+    3824
+  ],
+  "limitations": [
+    "local compiler only",
+    "no infinite compatible block path is proved"
+  ],
+  "semantic_digest": "cf101f17607a6c9f0c42c4723cc72968ee93acdeb8114ce20e3d3770107c827c",
+  "tails": [
+    0,
+    1,
+    17
+  ],
+  "target_binary_blocks": 96
+}

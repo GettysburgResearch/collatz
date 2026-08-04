@@ -1,0 +1,20 @@
+{
+  "counters": {
+    "affine_toll_rows": 192,
+    "automatic_type_gates": 192,
+    "finite_states": 48,
+    "intrinsic_inverse_checks": 768,
+    "legal_refund_replays": 768,
+    "primitive_two_of_three_gates": 192,
+    "target_residues": 192,
+    "unimodular_matrices": 48
+  },
+  "experiment": "X-8511",
+  "heights": [
+    16,
+    32,
+    48,
+    64
+  ],
+  "semantic_digest": "aae8894b675bc797745ed61899af18d8828471460f7fe094123c1e47c637d957"
+}

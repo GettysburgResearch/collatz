@@ -1,0 +1,21 @@
+{
+  "binary_signature_checks": 512,
+  "coprime_core_checks": 256,
+  "experiment": "X-8504",
+  "heights": [
+    3744,
+    3824
+  ],
+  "lifts": [
+    0,
+    1
+  ],
+  "limitations": [
+    "finite arithmetic checks the local primitive-core statement only",
+    "the Evertse theorem is not computationally proved",
+    "no infinite ordinary seed is constructed"
+  ],
+  "semantic_digest": "9610e5be23c04c02a1a1ee3a95c40ce7a96939c103cc67558862c3e3c1de0e09",
+  "ternary_signature_checks": 512,
+  "two_step_chains": 256
+}
