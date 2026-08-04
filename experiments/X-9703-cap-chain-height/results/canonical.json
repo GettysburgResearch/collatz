@@ -1,0 +1,46 @@
+{
+  "cap_paths": {
+    "digest": "fb0dec43c31f26f71777a1c9f8d262f2b85094b7d509ecc63cff24ebe9ea65ac",
+    "max_bitlength_over_radix_bits": "7/6",
+    "paths": 32,
+    "steps": 224
+  },
+  "delta": "1085579/256",
+  "expanding_audit": {
+    "chains": 82082,
+    "digest": "d10277bb12607155787016b103ee9606e85c051d4e45273826d76f752e3c8196",
+    "tiles": 286
+  },
+  "experiment": "X-9703",
+  "gamma_upper": "161341/10496",
+  "height_ratio": "161341/44508739",
+  "payload_digest": "7131a6e74497002b4edd008deb4c3ff3adf5072b33995b21e88d13bd8f5d30b5",
+  "stage_rows": [
+    {"B": 256, "lower_log2_lambda": "193081/53", "m": 8, "upper_log2_lambda": "162365/41"},
+    {"B": 512, "lower_log2_lambda": "384882/53", "m": 9, "upper_log2_lambda": "323706/41"},
+    {"B": 1024, "lower_log2_lambda": "768484/53", "m": 10, "upper_log2_lambda": "646388/41"},
+    {"B": 2048, "lower_log2_lambda": "1535688/53", "m": 11, "upper_log2_lambda": "1291752/41"},
+    {"B": 4096, "lower_log2_lambda": "3070096/53", "m": 12, "upper_log2_lambda": "2582480/41"},
+    {"B": 8192, "lower_log2_lambda": "6138912/53", "m": 13, "upper_log2_lambda": "5163936/41"},
+    {"B": 16384, "lower_log2_lambda": "12276544/53", "m": 14, "upper_log2_lambda": "10326848/41"},
+    {"B": 32768, "lower_log2_lambda": "24551808/53", "m": 15, "upper_log2_lambda": "20652672/41"},
+    {"B": 65536, "lower_log2_lambda": "49102336/53", "m": 16, "upper_log2_lambda": "41304320/41"},
+    {"B": 131072, "lower_log2_lambda": "98203392/53", "m": 17, "upper_log2_lambda": "82607616/41"},
+    {"B": 262144, "lower_log2_lambda": "196405504/53", "m": 18, "upper_log2_lambda": "165214208/41"},
+    {"B": 524288, "lower_log2_lambda": "392809728/53", "m": 19, "upper_log2_lambda": "330427392/41"},
+    {"B": 1048576, "lower_log2_lambda": "785618176/53", "m": 20, "upper_log2_lambda": "660853760/41"},
+    {"B": 2097152, "lower_log2_lambda": "1571235072/53", "m": 21, "upper_log2_lambda": "1321706496/41"},
+    {"B": 4194304, "lower_log2_lambda": "3142468864/53", "m": 22, "upper_log2_lambda": "2643411968/41"},
+    {"B": 8388608, "lower_log2_lambda": "6284936448/53", "m": 23, "upper_log2_lambda": "5286822912/41"},
+    {"B": 16777216, "lower_log2_lambda": "12569871616/53", "m": 24, "upper_log2_lambda": "10573644800/41"},
+    {"B": 33554432, "lower_log2_lambda": "25139741952/53", "m": 25, "upper_log2_lambda": "21147288576/41"},
+    {"B": 67108864, "lower_log2_lambda": "50279482624/53", "m": 26, "upper_log2_lambda": "42294576128/41"},
+    {"B": 134217728, "lower_log2_lambda": "100558963968/53", "m": 27, "upper_log2_lambda": "84589151232/41"},
+    {"B": 268435456, "lower_log2_lambda": "201117926656/53", "m": 28, "upper_log2_lambda": "169178301440/41"},
+    {"B": 536870912, "lower_log2_lambda": "402235852032/53", "m": 29, "upper_log2_lambda": "338356601856/41"},
+    {"B": 1073741824, "lower_log2_lambda": "804471702784/53", "m": 30, "upper_log2_lambda": "676713202688/41"},
+    {"B": 2147483648, "lower_log2_lambda": "1608943404288/53", "m": 31, "upper_log2_lambda": "1353426404352/41"},
+    {"B": 4294967296, "lower_log2_lambda": "3217886807296/53", "m": 32, "upper_log2_lambda": "2706852807680/41"}
+  ],
+  "status": "EMPIRICAL / EXACT FINITE CHECK"
+}
