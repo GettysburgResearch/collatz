@@ -1,0 +1,34 @@
+{
+  "cycles_found": 0,
+  "digest_sha256": "0d85b778a21b8a76bcad4323b7992e64c7fc5e759c1a69c794f0d843dc15cd8a",
+  "ghost_residues": 62608681,
+  "long_orbits_found": 0,
+  "maximum_exact_block_survival": 34,
+  "maximizing_n": "24540090735259549696",
+  "maximizing_p": "73620272205778649092",
+  "maximizing_r_sequence": [
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0
+  ],
+  "n_bound_inclusive": "36893488147419103230",
+  "p_bound_exclusive": "110680464442257309696",
+  "periodic_cycles_found": 0,
+  "periodic_mitm_probe_count_by_length": {
+    "1": 6,
+    "2": 30,
+    "3": 156,
+    "4": 440,
+    "5": 2275,
+    "6": 6120,
+    "7": 32319,
+    "8": 85008,
+    "9": 361790,
+    "10": 1187550,
+    "11": 5178240,
+    "12": 16695360,
+    "13": 74144004,
+    "14": 236060370
+  },
+  "periodic_word_lengths_exhausted": 14,
+  "precision": 65
+}
