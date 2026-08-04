@@ -1,0 +1,91 @@
+flowchart LR
+  FALSE([COLLATZ IS FALSE])
+  CYCLE([Positive nontrivial cycle])
+  DIV([Positive orbit avoids 1])
+  THIRD([Third component / deficit])
+  CYCLE --> FALSE
+  DIV --> FALSE
+  THIRD --> FALSE
+
+  subgraph CYC["Positive-cycle funnel"]
+    CEQ["Exact cycle equation"]
+    LEN["PR45: no cycle through 50,000<br/>PROPOSED"]
+    SUP["PR42/47 support layers<br/>source-exact through 17"]
+    BRIDGE["14^k <= 11^k 2^s<br/>conditional s >= 17,397"]
+    COMP["Block / mechanical / half-join compilers"]
+    CAP["Commutator + fixed-cone resultants"]
+    PRIME["Prime-power compatibility"]
+    FULL{"Entire denominator + replay"}
+    CEQ --> LEN --> BRIDGE
+    CEQ --> SUP --> BRIDGE
+    COMP --> FULL
+    CAP --> FULL
+    PRIME --> FULL
+    BRIDGE --> FULL --> CYCLE
+  end
+
+  subgraph REFUND["Ordinary multiplicative-refund funnel"]
+    COMMON["q=rho+2^E ell -> q'=sigma+M ell"]
+    SIX["PR45 fixed six-branch chart"]
+    RUN["PR51 changing-run highway"]
+    CORE["PR49 intrinsic changing-height core"]
+    HCTR["PR19 H renewal counter"]
+    TOP{"One ordinary root<br/>defined forever?"}
+    COMMON --> SIX --> TOP
+    COMMON --> RUN --> TOP
+    COMMON --> CORE --> TOP
+    COMMON --> HCTR --> TOP
+    TOP --> DIV
+  end
+
+  subgraph SELECT["Exact 176-bit bridge"]
+    S176["PR3 conditional 176-bit selector"]
+    C176["PR49 consumes 176 new top bits"]
+    CAUSAL{"Causal orientation + top closure"}
+    S176 --> CAUSAL
+    C176 --> CAUSAL --> CORE
+  end
+
+  subgraph FROZEN["Frozen corrected class"]
+    STAGE["256-transition doubling stage"]
+    EV["Evertse 1984"]
+    T9705["T-9705 independently verified"]
+    CLOSED["No signed ordinary completion"]
+    STAGE --> T9705 --> CLOSED
+    EV --> T9705
+  end
+
+  subgraph OTHER["Other direct/equivalent routes"]
+    CENTER{"Centered nonlinear top boundary"}
+    CROSS{"Repeated multi-phase return"}
+    DFA{"Boundary-memory sanctuary DFA"}
+    COVER{"Coverage deficit C(x)<x"}
+    CONE{"Third binary fixed ray"}
+    CENTER --> DIV
+    CROSS --> DIV
+    CROSS --> CYCLE
+    DFA --> DIV
+    COVER --> THIRD
+    CONE --> THIRD
+  end
+
+  GHOST["Fixed-modulus centered lasso = ghost"]
+  PH1["Permanent cross-cycle phase 1 = shifted Collatz"]
+  PULSE["One fixed pulse cone = finite"]
+  GHOST --> CENTER
+  PH1 --> CROSS
+  PULSE --> CAP
+
+  classDef proved fill:#c8f7c5,stroke:#267326,color:#111;
+  classDef literature fill:#cfe8ff,stroke:#2563a8,color:#111;
+  classDef proposed fill:#ffd6a5,stroke:#b45309,color:#111;
+  classDef empirical fill:#fff2a8,stroke:#9a7b00,color:#111;
+  classDef closed fill:#ffc7c7,stroke:#a11,color:#111;
+  classDef open fill:#e5e7eb,stroke:#666,color:#111;
+
+  class CEQ,T9705 proved;
+  class EV literature;
+  class LEN,SUP,COMP,CAP,PRIME,COMMON,SIX,RUN,CORE,HCTR,S176,C176,STAGE,PULSE proposed;
+  class BRIDGE empirical;
+  class CLOSED,GHOST,PH1 closed;
+  class FULL,TOP,CAUSAL,CENTER,CROSS,DFA,COVER,CONE,FALSE,CYCLE,DIV,THIRD open;
