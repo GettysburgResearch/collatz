@@ -1,0 +1,133 @@
+{
+  "arithmetic": "exact integers",
+  "checks": [
+    "exact nearest-integer cylinder recurrence at every transition",
+    "exact appended block formula at every transition",
+    "direct residue reconstruction through depth 32 and at powers of two",
+    "Thue-Morse square witnesses at starts 1*2^m and 2*2^m"
+  ],
+  "experiment_id": "X-9305",
+  "itinerary": "Thue-Morse t(n)=popcount(n) mod 2",
+  "max_transition": 1024,
+  "results_sha256": "c5a7bfb2cc674c5aba9ada80f291d69c79a2a4151d2eba22c784ea3ae64b59dc",
+  "schema_version": 1,
+  "square_witnesses": [
+    {
+      "first_start": 1,
+      "length": 1,
+      "m": 0,
+      "second_start": 2
+    },
+    {
+      "first_start": 2,
+      "length": 2,
+      "m": 1,
+      "second_start": 4
+    },
+    {
+      "first_start": 4,
+      "length": 4,
+      "m": 2,
+      "second_start": 8
+    },
+    {
+      "first_start": 8,
+      "length": 8,
+      "m": 3,
+      "second_start": 16
+    },
+    {
+      "first_start": 16,
+      "length": 16,
+      "m": 4,
+      "second_start": 32
+    },
+    {
+      "first_start": 32,
+      "length": 32,
+      "m": 5,
+      "second_start": 64
+    },
+    {
+      "first_start": 64,
+      "length": 64,
+      "m": 6,
+      "second_start": 128
+    },
+    {
+      "first_start": 128,
+      "length": 128,
+      "m": 7,
+      "second_start": 256
+    },
+    {
+      "first_start": 256,
+      "length": 256,
+      "m": 8,
+      "second_start": 512
+    }
+  ],
+  "summary": {
+    "blocks_checked": 1024,
+    "final_representative_bit_length": 6150,
+    "final_terminal_bit_length": 6499,
+    "first_32_blocks": [
+      34,
+      3,
+      51,
+      18,
+      31,
+      7,
+      19,
+      22,
+      37,
+      19,
+      40,
+      33,
+      52,
+      37,
+      63,
+      51,
+      43,
+      2,
+      45,
+      31,
+      30,
+      45,
+      4,
+      39,
+      35,
+      33,
+      59,
+      61,
+      26,
+      23,
+      18,
+      60
+    ],
+    "longest_zero_run": 1,
+    "nonzero_blocks": 1005,
+    "zero_blocks": 19,
+    "zero_positions": [
+      65,
+      88,
+      135,
+      137,
+      179,
+      196,
+      233,
+      254,
+      302,
+      320,
+      329,
+      423,
+      504,
+      514,
+      659,
+      706,
+      781,
+      913,
+      956
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+X-9302 completion-height carry audit
+python=3.13.5
+arithmetic=exact modular integers and fractions
+primitive_condition=64 does not divide h
+checks=carry integrality; carry-energy inequality; zero-run nonzero numerator; divisibility; exact height squeeze
+bound=h<=K^2
+K=8 h_max=64 checked=63 min_nonzero=6 argmin=40 max_zero_run=1 zero_h=40 zero_start=4
+K=12 h_max=144 checked=142 min_nonzero=9 argmin=11 max_zero_run=1 zero_h=11 zero_start=0
+K=16 h_max=256 checked=252 min_nonzero=13 argmin=166 max_zero_run=1 zero_h=1 zero_start=9
+K=20 h_max=400 checked=394 min_nonzero=17 argmin=11 max_zero_run=1 zero_h=11 zero_start=3
+K=24 h_max=576 checked=567 min_nonzero=20 argmin=78 max_zero_run=1 zero_h=7 zero_start=18
+K=32 h_max=1024 checked=1008 min_nonzero=27 argmin=433 max_zero_run=2 zero_h=417 zero_start=24
+K=40 h_max=1600 checked=1575 min_nonzero=35 argmin=1364 max_zero_run=2 zero_h=3 zero_start=3
+K=48 h_max=2304 checked=2268 min_nonzero=42 argmin=945 max_zero_run=2 zero_h=65 zero_start=41
+K=56 h_max=3136 checked=3087 min_nonzero=49 argmin=2606 max_zero_run=2 zero_h=10 zero_start=48
+K=64 h_max=4096 checked=4032 min_nonzero=57 argmin=1128 max_zero_run=2 zero_h=147 zero_start=36
+K=72 h_max=5184 checked=5103 min_nonzero=65 argmin=2566 max_zero_run=3 zero_h=4537 zero_start=18
+K=80 h_max=6400 checked=6300 min_nonzero=73 argmin=1257 max_zero_run=2 zero_h=428 zero_start=32
+results_sha256=1709c4445fef96882653d51e82cae3842e7415ad6f8b288247481f942cd7a7ae
