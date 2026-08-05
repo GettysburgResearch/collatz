@@ -1,0 +1,19 @@
+{
+  "experiment_id": "X-9607",
+  "schema_version": 2,
+  "arithmetic": "exact signed 128-bit integers",
+  "claim": "no accelerated positive cycle has exactly nine valuations different from 2",
+  "aggregates": [
+    {"type":"1^9","rows":6,"largest_gap_candidates":593995,"height_survivors":3954,"least_nonzero_circular_remainder":36472},
+    {"type":"1^8,3","rows":11,"largest_gap_candidates":5716692,"height_survivors":16938,"least_nonzero_circular_remainder":134},
+    {"type":"1^8,4","rows":13,"largest_gap_candidates":5730246,"height_survivors":3734,"least_nonzero_circular_remainder":55},
+    {"type":"1^8,5","rows":15,"largest_gap_candidates":5733198,"height_survivors":1712,"least_nonzero_circular_remainder":748},
+    {"type":"1^8,6","rows":18,"largest_gap_candidates":5733621,"height_survivors":1049,"least_nonzero_circular_remainder":228},
+    {"type":"1^7,3,3","rows":15,"largest_gap_candidates":22932792,"height_survivors":4945,"least_nonzero_circular_remainder":195},
+    {"type":"1^7,3,4","rows":18,"largest_gap_candidates":45868968,"height_survivors":4431,"least_nonzero_circular_remainder":20},
+    {"type":"1^7,3,5","rows":19,"largest_gap_candidates":5733630,"height_survivors":138,"least_nonzero_circular_remainder":547},
+    {"type":"1^6,3,3,3","rows":10,"largest_gap_candidates":160041,"height_survivors":87,"least_nonzero_circular_remainder":748}
+  ],
+  "row_fnv1a64": "7582e70da78e92b7",
+  "totals": {"finite_rows":125,"largest_gap_candidates":98203183,"height_survivors":36988,"formal_divisor_hits":0,"nontrivial_cycle_hits":0}
+}

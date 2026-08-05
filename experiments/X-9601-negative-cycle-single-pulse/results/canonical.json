@@ -1,0 +1,62 @@
+{
+  "arithmetic": "exact Python integers",
+  "experiment_id": "X-9601",
+  "families": [
+    {
+      "audit_sha256": "ffc655b1e687a3e73c5201f86db40e5a597405e4a91ed933837bef76696a8450",
+      "candidate_count": 160000,
+      "coefficients": [14, 20],
+      "hit_count": 1,
+      "hits": [
+        {
+          "delta": 1,
+          "exact_replay": true,
+          "odd_steps": 2,
+          "repeats": 1,
+          "slack": 0,
+          "start": "1",
+          "state": -5,
+          "state_index": 0,
+          "trivial": true
+        }
+      ],
+      "name": "negative_3_cycle",
+      "nontrivial_hit_count": 0,
+      "r_max": 20000,
+      "slack": 3,
+      "small_denominator_case_count": 8,
+      "small_denominator_cases": [
+        {"delta": 1, "denominator": "7", "reduced_rhs": "14", "repeats": 1, "slack": 0, "state": -5},
+        {"delta": 1, "denominator": "7", "reduced_rhs": "20", "repeats": 1, "slack": 0, "state": -7},
+        {"delta": 2, "denominator": "23", "reduced_rhs": "42", "repeats": 1, "slack": 1, "state": -5},
+        {"delta": 2, "denominator": "23", "reduced_rhs": "60", "repeats": 1, "slack": 1, "state": -7},
+        {"delta": 3, "denominator": "55", "reduced_rhs": "98", "repeats": 1, "slack": 2, "state": -5},
+        {"delta": 3, "denominator": "55", "reduced_rhs": "140", "repeats": 1, "slack": 2, "state": -7},
+        {"delta": 4, "denominator": "119", "reduced_rhs": "210", "repeats": 1, "slack": 3, "state": -5},
+        {"delta": 4, "denominator": "119", "reduced_rhs": "300", "repeats": 1, "slack": 3, "state": -7}
+      ],
+      "states": [-5, -7]
+    },
+    {
+      "audit_sha256": "f3bc975ec227c644cc02840bdee7eb2534ea731016f155722a5494df4dc3aed7",
+      "candidate_count": 560000,
+      "coefficients": [50, 74, 110, 164, 122, 182, 272],
+      "hit_count": 0,
+      "hits": [],
+      "name": "negative_11_cycle",
+      "nontrivial_hit_count": 0,
+      "r_max": 20000,
+      "slack": 3,
+      "small_denominator_case_count": 0,
+      "small_denominator_cases": [],
+      "states": [-17, -25, -37, -55, -41, -61, -91]
+    }
+  ],
+  "r_max": 20000,
+  "results_sha256": "cb97c4b0fcc5e2557b3e22ce83483d9e86f8ed4d825032925c90c4e0f6ee2ae8",
+  "slack": 3,
+  "totals": {
+    "candidate_count": 720000,
+    "nontrivial_hit_count": 0
+  }
+}
