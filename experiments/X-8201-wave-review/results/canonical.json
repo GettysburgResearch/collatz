@@ -1,0 +1,50 @@
+{
+  "frozen": {
+    "pr34": "86fa0aeb35a8b8c3dc405c4507877c3792194608",
+    "pr42": "94fcd99fe7fb71e0f5a15915ba40e9d74b167a13",
+    "pr45": "5d17926b48e29f94a935f1d433559b0c417cef55"
+  },
+  "pr45": {
+    "factors": {"all_divide_D": true, "all_prime": true, "product": 1465129870107858983},
+    "mechanical": {"base_residue": 655756015106852524, "small_lower_upper_words": 6478},
+    "real_filter": {
+      "recomputed_distance_next": "0.002471646090148989214028843745",
+      "recomputed_floor": 1791361447298439130709020,
+      "recomputed_hi": "1791361447298439130709020.9975283539098510107859711562546399767831669907701910897463476475120008538767324760660413065677992404534204762886255980560189960682315744265811368",
+      "recomputed_lo": "1791361447298439130709020.9975283539098510107859711562546399767831669907701910897463476475120008538767324760660413065677992404534204762886255980560072685470190724787376332",
+      "recomputed_width": "1.17275212125019478435036E-122",
+      "source_and_recomputed_overlap": true,
+      "source_floor": 1791361447298439130709020,
+      "source_hi": "1791361447298439130709020.99752835390985101078597115625463997678316699077019108974634764751200085455151399874064825798230",
+      "source_lo": "1791361447298439130709020.99752835390985101078597115625463997678316699077019108974634764751200085257269769107803891195190",
+      "verdict": "frozen numeric interval independently reproduced and excludes integrality"
+    },
+    "repairs": {
+      "local_minima": 1307356254653,
+      "modified_residue": 0,
+      "positions": [2,4,6,23,30,35,39,42,44,47,54,59,61,64,71,78,80,83,85,92,95,97,102,107,112,117,121,138,141,143,145,148,150,158,165,167,174,177,179,182,184,186,189],
+      "sites": 80,
+      "swaps": 43
+    },
+    "target": {
+      "A": 4992586555009,
+      "critical_error": "1.936487081868559002530826624537016793670749262045115683E-25",
+      "elementary_implied_X": "2483354273135446915035676.6673006660116534901483967290712690999143241464129254291",
+      "gcd_extra_length": 1,
+      "k": 3149971404836
+    }
+  },
+  "refund": {
+    "abstract_exact_cases": 50000,
+    "next_modulus_bits_at_first_threshold": 1361752832,
+    "pair_capacity_bits": 1024,
+    "stage_word_residue_capacity_bits": 512,
+    "thresholds": [
+      {"lookahead":1,"strict_margin":7371,"threshold":477424},{"lookahead":2,"strict_margin":15563,"threshold":955024},{"lookahead":3,"strict_margin":3275,"threshold":1432608},{"lookahead":4,"strict_margin":11467,"threshold":1910208},{"lookahead":5,"strict_margin":19659,"threshold":2387808},{"lookahead":6,"strict_margin":7371,"threshold":2865392},{"lookahead":7,"strict_margin":15563,"threshold":3342992},{"lookahead":8,"strict_margin":3275,"threshold":3820576},{"lookahead":9,"strict_margin":11467,"threshold":4298176},{"lookahead":10,"strict_margin":19659,"threshold":4775776},{"lookahead":11,"strict_margin":7371,"threshold":5253360},{"lookahead":12,"strict_margin":15563,"threshold":5730960},{"lookahead":13,"strict_margin":3275,"threshold":6208544},{"lookahead":14,"strict_margin":11467,"threshold":6686144},{"lookahead":15,"strict_margin":19659,"threshold":7163744},{"lookahead":16,"strict_margin":7371,"threshold":7641328},{"lookahead":17,"strict_margin":15563,"threshold":8118928},{"lookahead":18,"strict_margin":3275,"threshold":8596512},{"lookahead":19,"strict_margin":11467,"threshold":9074112},{"lookahead":20,"strict_margin":19659,"threshold":9551712},{"lookahead":21,"strict_margin":7371,"threshold":10029296},{"lookahead":22,"strict_margin":15563,"threshold":10506896},{"lookahead":23,"strict_margin":3275,"threshold":10984480},{"lookahead":24,"strict_margin":11467,"threshold":11462080},{"lookahead":25,"strict_margin":19659,"threshold":11939680},{"lookahead":26,"strict_margin":7371,"threshold":12417264},{"lookahead":27,"strict_margin":15563,"threshold":12894864},{"lookahead":28,"strict_margin":3275,"threshold":13372448},{"lookahead":29,"strict_margin":11467,"threshold":13850048},{"lookahead":30,"strict_margin":19659,"threshold":14327648},{"lookahead":31,"strict_margin":7371,"threshold":14805232},{"lookahead":32,"strict_margin":15563,"threshold":15282832}
+    ],
+    "two_stage": {"A":1715060480,"B":955024,"certificate":"3^A > 2^(E_next2+1) via 3^53>2^84","consequence":"k_next >= 2*k for every coherent path with k>=1","next2_E":2718208768}
+  },
+  "reviewer": "gpt56-refund-01",
+  "semantic_digest": "e53b4c404092e53b74a263c8750d89a0a19669fa7fc1118235eb29849921de75",
+  "t8601": {"all_reach_one":true,"moduli":220,"reset_levels":19,"starting_residues":24310}
+}
