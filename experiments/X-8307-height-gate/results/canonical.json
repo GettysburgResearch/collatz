@@ -1,0 +1,71 @@
+{
+  "critical_parameters": {
+    "A": 4992586555009,
+    "K": 3149971404836,
+    "M": 1465129870107858983,
+    "M_gt_2_pow_60": true
+  },
+  "experiment_id": "X-8307",
+  "height_certificate": {
+    "coarse_sufficient_M_exponent": 83209775916,
+    "difference_abs_lt_2_power": 4992586554927,
+    "log_gap_positive": true,
+    "mixed_place_condition": "B+60*J>=A-82",
+    "one_minus_multiplier_lt_2_pow_minus_41": true,
+    "range_reduced_log_sufficient_M_exponent": 82733048428,
+    "real_gap_lt_2_pow_minus_41": true,
+    "real_gap_upper_fraction": [
+      472855261523,
+      2000000000000000000000000
+    ]
+  },
+  "interpretation": {
+    "not_proved": [
+      "a replacement chart-compatible quotient",
+      "a full-denominator positive cycle",
+      "a divergent Collatz seed",
+      "the Collatz conjecture or its negation"
+    ],
+    "proved": [
+      "an exact sufficient height budget for C-ND=0",
+      "the reported N_star is outside both first chart domains",
+      "the associated physical seed reaches 1 exactly",
+      "odd-prime lifting alone is short of the height gate by trillions of bits"
+    ]
+  },
+  "ladder_budget": {
+    "coarse_bit_deficit": 4992586554507,
+    "coarse_odd_prime_bits": 420,
+    "maximum_coarse_M_bits_from_that_order": 2400,
+    "maximum_standard_binary_prouhet_order_in_fixed_chart_word": 40,
+    "nstar_dyadic_branch_bits": 0,
+    "reported_odd_prime_lift_order": 7,
+    "required_mixed_bits_at_least": 4992586554927
+  },
+  "nstar_refutation": {
+    "N_star": 110340992901879,
+    "N_star_mod_16": 7,
+    "chart_domain_compatible": false,
+    "legal_chart_residues_mod_16": [
+      0,
+      5,
+      13
+    ],
+    "maximum_shortcut_state": 1885279308409466,
+    "odd_shortcut_steps": 101,
+    "physical_seed": 220681985803759,
+    "shortcut_steps_to_1": 208,
+    "trajectory_sha256": "8bc3a42902ca549896d71533c3534a5899bc89ffadd0f217bd50d487cdcf7012"
+  },
+  "published_x8302_floor_gate": {
+    "compatible": false,
+    "floor_mod_16": 0,
+    "frozen_first_chart_symbol": 1,
+    "integer_floor": 1567441266425753353472608,
+    "required_residues_for_symbol_1_mod_16": [
+      5,
+      13
+    ]
+  },
+  "schema_version": 1
+}

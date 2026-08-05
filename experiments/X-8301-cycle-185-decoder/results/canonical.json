@@ -1,0 +1,423 @@
+{
+  "accelerated_odd_length": 185,
+  "claim_boundary": "The finite scans plus the proved 2-adic stability argument exclude odd length 185 only; they do not prove the Collatz conjecture.",
+  "classification": "EXACT_FINITE_COMPUTATION",
+  "experiment_id": "X-8301",
+  "external_input": "Hercher: every nontrivial positive cycle has at least 92 local minima",
+  "skeletons": {
+    "AA": {
+      "base_total_valuation": 277,
+      "description": "unique doubled ascent",
+      "direct_scans": [
+        {
+          "first_multiplier": 6,
+          "h": 17,
+          "last_multiplier": 539801,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 36,
+          "multipliers_scanned": 539796,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 539790,
+            "negative_remainder": 5,
+            "nonzero_terminal_remainder": 1
+          }
+        },
+        {
+          "first_multiplier": 2,
+          "h": 18,
+          "last_multiplier": 318468,
+          "maximum_decoded_depth": 16,
+          "maximum_remainder_valuation": 36,
+          "multipliers_scanned": 318467,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 318464,
+            "negative_remainder": 3
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 19,
+          "last_multiplier": 264286,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 36,
+          "multipliers_scanned": 264286,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 264286
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 20,
+          "last_multiplier": 243567,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 243567,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 243567
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 21,
+          "last_multiplier": 234379,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 234379,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 234379
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 22,
+          "last_multiplier": 230041,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 230041,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 230041
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 23,
+          "last_multiplier": 227931,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 227931,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 227931
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 24,
+          "last_multiplier": 226891,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 226891,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 226891
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 25,
+          "last_multiplier": 226374,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 226374,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 226374
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 26,
+          "last_multiplier": 226117,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 226117,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 226117
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 27,
+          "last_multiplier": 225988,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 225988,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 225988
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 28,
+          "last_multiplier": 225924,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 225924,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 225924
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 29,
+          "last_multiplier": 225892,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 225892,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 225892
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 30,
+          "last_multiplier": 225876,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 35,
+          "multipliers_scanned": 225876,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 225876
+          }
+        }
+      ],
+      "minimum_excess_h": 17,
+      "positive_suffix_valuation_max": 274,
+      "positive_suffix_valuation_min": 4,
+      "reference_scan": {
+        "first_multiplier": 1,
+        "h": 31,
+        "last_multiplier": 539801,
+        "maximum_decoded_depth": 18,
+        "maximum_remainder_valuation": 36,
+        "multipliers_scanned": 539801,
+        "solutions": [],
+        "stop_reasons": {
+          "invalid_valuation": 539801
+        }
+      },
+      "stability": {
+        "conclusion": "the same valuation choices and the same invalid-valuation failure occur for every larger h",
+        "difference_divisible_by_2_power": 308,
+        "maximum_reference_valuation": 36,
+        "reference_h": 31
+      },
+      "uniform_multiplier_max": 539801,
+      "variable_count": 92
+    },
+    "DD": {
+      "base_total_valuation": 278,
+      "description": "unique doubled descent",
+      "direct_scans": [
+        {
+          "first_multiplier": 10,
+          "h": 16,
+          "last_multiplier": 566791,
+          "maximum_decoded_depth": 16,
+          "maximum_remainder_valuation": 38,
+          "multipliers_scanned": 566782,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 566730,
+            "negative_remainder": 47,
+            "nonzero_terminal_remainder": 5
+          }
+        },
+        {
+          "first_multiplier": 3,
+          "h": 17,
+          "last_multiplier": 334392,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 36,
+          "multipliers_scanned": 334390,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 334370,
+            "negative_remainder": 20
+          }
+        },
+        {
+          "first_multiplier": 2,
+          "h": 18,
+          "last_multiplier": 277501,
+          "maximum_decoded_depth": 18,
+          "maximum_remainder_valuation": 36,
+          "multipliers_scanned": 277500,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 277496,
+            "negative_remainder": 3,
+            "nonzero_terminal_remainder": 1
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 19,
+          "last_multiplier": 255745,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 36,
+          "multipliers_scanned": 255745,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 255745
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 20,
+          "last_multiplier": 246099,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 246099,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 246099
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 21,
+          "last_multiplier": 241543,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 241543,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 241543
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 22,
+          "last_multiplier": 239328,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 239328,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 239328
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 23,
+          "last_multiplier": 238236,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 238236,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 238236
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 24,
+          "last_multiplier": 237693,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237693,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237693
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 25,
+          "last_multiplier": 237423,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237423,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237423
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 26,
+          "last_multiplier": 237288,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237288,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237288
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 27,
+          "last_multiplier": 237220,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237220,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237220
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 28,
+          "last_multiplier": 237187,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237187,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237187
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 29,
+          "last_multiplier": 237170,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237170,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237170
+          }
+        },
+        {
+          "first_multiplier": 1,
+          "h": 30,
+          "last_multiplier": 237162,
+          "maximum_decoded_depth": 17,
+          "maximum_remainder_valuation": 34,
+          "multipliers_scanned": 237162,
+          "solutions": [],
+          "stop_reasons": {
+            "invalid_valuation": 237162
+          }
+        }
+      ],
+      "minimum_excess_h": 16,
+      "positive_suffix_valuation_max": 275,
+      "positive_suffix_valuation_min": 3,
+      "reference_scan": {
+        "first_multiplier": 1,
+        "h": 31,
+        "last_multiplier": 566791,
+        "maximum_decoded_depth": 19,
+        "maximum_remainder_valuation": 38,
+        "multipliers_scanned": 566791,
+        "solutions": [],
+        "stop_reasons": {
+          "invalid_valuation": 566791
+        }
+      },
+      "stability": {
+        "conclusion": "the same valuation choices and the same invalid-valuation failure occur for every larger h",
+        "difference_divisible_by_2_power": 309,
+        "maximum_reference_valuation": 38,
+        "reference_h": 31
+      },
+      "uniform_multiplier_max": 566791,
+      "variable_count": 93
+    }
+  }
+}

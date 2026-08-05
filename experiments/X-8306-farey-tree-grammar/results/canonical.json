@@ -1,0 +1,36 @@
+{
+  "certificate": {
+    "directed_real_envelope_compiled": true,
+    "exact_modular_set_compiled": true,
+    "precision_bits": 314,
+    "real_envelope_below_modulus": true,
+    "real_envelope_positive": true,
+    "real_integer_window_nonempty": true,
+    "small_farey_orientation_checks": true,
+    "viable_quotient_residues": 0
+  },
+  "conclusion": "the full critical hierarchical Farey sibling-swap grammar contains no integral fixed point",
+  "critical_shape": {
+    "accelerated_length": 3149971404836,
+    "run_fraction": [
+      236838463643,
+      267629447755
+    ],
+    "total_valuation": 4992586555009
+  },
+  "experiment_id": "X-8306",
+  "grammar": {
+    "independent_choice_at_each_occurrence": true,
+    "internal_occurrences": 267629447754,
+    "leaf_count": 267629447755,
+    "type": "recursive Farey sibling swaps"
+  },
+  "not_proved": [
+    "the same result for arbitrary fixed-weight words",
+    "the same result for grammars changing the critical shape",
+    "the absence of positive accelerated cycles in general",
+    "the absence of an infinite negative-cycle chart path",
+    "the Collatz conjecture"
+  ],
+  "schema_version": 1
+}
