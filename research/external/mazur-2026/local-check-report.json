@@ -1,0 +1,309 @@
+{
+  "checks": [
+    {
+      "detail": "1.0",
+      "name": "schema_version",
+      "ok": true
+    },
+    {
+      "detail": 2,
+      "name": "record_count",
+      "ok": true
+    },
+    {
+      "detail": [],
+      "name": "no_pdf_binaries_committed",
+      "ok": true
+    },
+    {
+      "detail": "papers/README.md",
+      "name": "paper_index_exists",
+      "ok": true
+    },
+    {
+      "detail": "Mazur_Certified_x090_Lower_Bounds_for_Collatz_Predecessor_Sets_v2.pdf",
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_filename",
+      "ok": true
+    },
+    {
+      "detail": 16,
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_pages",
+      "ok": true
+    },
+    {
+      "detail": 170031,
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_bytes",
+      "ok": true
+    },
+    {
+      "detail": "cbae5d71ead733b380c3325503e46a7094fb4641244853a37dc220207d133a61",
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_hash_shape",
+      "ok": true
+    },
+    {
+      "detail": "Binary not committed because no redistribution license was supplied.",
+      "name": "EXT-MAZUR-2026-PRED-090:not_redistributed",
+      "ok": true
+    },
+    {
+      "detail": "Mazur_Certified_x090_Lower_Bounds_for_Collatz_Predecessor_Sets_v2.pdf",
+      "name": "EXT-MAZUR-2026-PRED-090:supplied_pdf_exists",
+      "ok": true
+    },
+    {
+      "detail": "%PDF-1.5",
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_magic",
+      "ok": true
+    },
+    {
+      "detail": "EOF marker in final 2048 bytes",
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_eof",
+      "ok": true
+    },
+    {
+      "detail": 170031,
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_size",
+      "ok": true
+    },
+    {
+      "detail": "cbae5d71ead733b380c3325503e46a7094fb4641244853a37dc220207d133a61",
+      "name": "EXT-MAZUR-2026-PRED-090:pdf_sha256",
+      "ok": true
+    },
+    {
+      "detail": "Mazur_Natural_Density_Collatz_Orbits_in_Logarithmic_Time_v2.pdf",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_filename",
+      "ok": true
+    },
+    {
+      "detail": 27,
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_pages",
+      "ok": true
+    },
+    {
+      "detail": 253981,
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_bytes",
+      "ok": true
+    },
+    {
+      "detail": "08a46dd1cdd9183beb2e09af517361f24d3b7945a6ee00db563a944a4a2373cf",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_hash_shape",
+      "ok": true
+    },
+    {
+      "detail": "Binary not committed because no redistribution license was supplied.",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:not_redistributed",
+      "ok": true
+    },
+    {
+      "detail": "Mazur_Natural_Density_Collatz_Orbits_in_Logarithmic_Time_v2.pdf",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:supplied_pdf_exists",
+      "ok": true
+    },
+    {
+      "detail": "%PDF-1.5",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_magic",
+      "ok": true
+    },
+    {
+      "detail": "EOF marker in final 2048 bytes",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_eof",
+      "ok": true
+    },
+    {
+      "detail": 253981,
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_size",
+      "ok": true
+    },
+    {
+      "detail": "08a46dd1cdd9183beb2e09af517361f24d3b7945a6ee00db563a944a4a2373cf",
+      "name": "EXT-MAZUR-2026-ND-LOGTIME:pdf_sha256",
+      "ok": true
+    },
+    {
+      "detail": "A^1000*2^1802 <= Q^1000",
+      "name": "pred:coefficient_A",
+      "ok": true
+    },
+    {
+      "detail": "B1^1000*2^1802 <= Q^1000*3^901",
+      "name": "pred:coefficient_B1",
+      "ok": true
+    },
+    {
+      "detail": "B3^1000*2^901 <= Q^1000*3^901",
+      "name": "pred:coefficient_B3",
+      "ok": true
+    },
+    {
+      "detail": {
+        "lhs": 2134179986800640,
+        "margin": 1152908343458,
+        "rhs": 2135332895144098
+      },
+      "name": "pred:appendix_row_1",
+      "ok": true
+    },
+    {
+      "detail": {
+        "lhs": 1036938517676032,
+        "margin": 1006280697897,
+        "rhs": 1037944798373929
+      },
+      "name": "pred:appendix_row_2",
+      "ok": true
+    },
+    {
+      "detail": {
+        "lhs": 1706529287831552,
+        "margin": 1178337685018,
+        "rhs": 1707707625516570
+      },
+      "name": "pred:appendix_row_3",
+      "ok": true
+    },
+    {
+      "detail": 0.24511249783653177,
+      "name": "pred:adaptive_delta_positive",
+      "ok": true
+    },
+    {
+      "detail": {
+        "family_rows": 43046721,
+        "fraction": 0.011262205081776147,
+        "nonzero": 484801
+      },
+      "name": "pred:nonzero_selector_fraction",
+      "ok": true
+    },
+    {
+      "detail": "1/28600000",
+      "name": "nd:d0_below_cap",
+      "ok": true
+    },
+    {
+      "detail": "1/28600000",
+      "name": "nd:d0_exact_margin",
+      "ok": true
+    },
+    {
+      "detail": "1509503 = 3*501501 + 5000",
+      "name": "nd:raw_clock_numerator_identity",
+      "ok": true
+    },
+    {
+      "detail": 144.70260114017123,
+      "name": "nd:C_Syr_lt_145",
+      "ok": true
+    },
+    {
+      "detail": 435.55049846140264,
+      "name": "nd:C_Coll_lt_436",
+      "ok": true
+    },
+    {
+      "detail": 435.55049846140264,
+      "name": "nd:C_Coll_identity",
+      "ok": true
+    },
+    {
+      "detail": "1/(2*(143/10)) = 5/143",
+      "name": "nd:rhin_phase_cap",
+      "ok": true
+    },
+    {
+      "detail": "EXTERNAL SOURCE-QUALIFIED",
+      "name": "doc:README.md:EXTERNAL SOURCE-QUALIFIED",
+      "ok": true
+    },
+    {
+      "detail": "0.901",
+      "name": "doc:README.md:0.901",
+      "ok": true
+    },
+    {
+      "detail": "not redistributed",
+      "name": "doc:README.md:not redistributed",
+      "ok": true
+    },
+    {
+      "detail": "MZ-BRIDGE-001",
+      "name": "doc:CLAIM_MATRIX.md:MZ-BRIDGE-001",
+      "ok": true
+    },
+    {
+      "detail": "PENDING NARROW REVIEW",
+      "name": "doc:CLAIM_MATRIX.md:PENDING NARROW REVIEW",
+      "ok": true
+    },
+    {
+      "detail": "5f76a170e74ea5b0c37c56683bd4c1e9d72e5e3f",
+      "name": "doc:predecessor-x090.md:5f76a170e74ea5b0c37c56683bd4c1e9d72e5e3f",
+      "ok": true
+    },
+    {
+      "detail": "215,233,605",
+      "name": "doc:predecessor-x090.md:215,233,605",
+      "ok": true
+    },
+    {
+      "detail": "1.13%",
+      "name": "doc:predecessor-x090.md:1.13%",
+      "ok": true
+    },
+    {
+      "detail": "ca3dd0d63920411213403092aecc6946619eb082",
+      "name": "doc:natural-density-log-time.md:ca3dd0d63920411213403092aecc6946619eb082",
+      "ok": true
+    },
+    {
+      "detail": "beta<0.901",
+      "name": "doc:natural-density-log-time.md:beta<0.901",
+      "ok": true
+    },
+    {
+      "detail": "Bridge theorem",
+      "name": "doc:synthesis-and-roadmap.md:Bridge theorem",
+      "ok": true
+    },
+    {
+      "detail": "beta<gamma",
+      "name": "doc:synthesis-and-roadmap.md:beta<gamma",
+      "ok": true
+    },
+    {
+      "detail": "not currently established",
+      "name": "doc:synthesis-and-roadmap.md:not currently established",
+      "ok": true
+    },
+    {
+      "detail": "Lech Mazur",
+      "name": "doc:NOTICE.md:Lech Mazur",
+      "ok": true
+    },
+    {
+      "detail": "not redistributed",
+      "name": "doc:NOTICE.md:not redistributed",
+      "ok": true
+    },
+    {
+      "detail": "cbae5d71",
+      "name": "doc:papers/README.md:cbae5d71",
+      "ok": true
+    },
+    {
+      "detail": "08a46dd1",
+      "name": "doc:papers/README.md:08a46dd1",
+      "ok": true
+    },
+    {
+      "detail": "--pdf-dir",
+      "name": "doc:papers/README.md:--pdf-dir",
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "pdf_replay_mode": "supplied_files",
+  "schema_version": "1.0",
+  "scope": "source metadata, optional supplied-PDF integrity, and small exact arithmetic only; no Lean or large-payload replay"
+}

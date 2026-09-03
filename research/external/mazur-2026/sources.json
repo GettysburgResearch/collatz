@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "import_id": "EXT-MAZUR-2026-COLLATZ-001",
+  "imported_at": "2026-09-03",
+  "imported_against_repository": "GettysburgResearch/collatz",
+  "imported_against_main": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+  "status": "external_source_qualified_partial_local_audit",
+  "records": [
+    {
+      "id": "EXT-MAZUR-2026-PRED-090",
+      "title": "Certified exponent-0.90 lower bounds for Collatz predecessor sets",
+      "author": "Lech Mazur",
+      "manuscript_version": "version 2",
+      "manuscript_date": "2026-07-17",
+      "canonical_page": "https://www.proofatlas.ai/collatz-predecessor-090/",
+      "source_page": "https://www.proofatlas.ai/sources/collatz-predecessor-090/",
+      "manuscript_formal_worktree_commit": "0bb368e3b51b980ef5c3b33bb86316e3001c37ac",
+      "authoritative_public_source_commit": "5f76a170e74ea5b0c37c56683bd4c1e9d72e5e3f",
+      "toolchain_reported": "Lean 4.30.0-rc2",
+      "mathlib_commit_reported": "5450b53e5ddc75d46418fabb605edbf36bd0beb6",
+      "theorem_summary": "For each fixed positive target a not divisible by 3, pi_a(x) is eventually at least x^(9/10); more strongly, pi_a(x) is eventually at least C_a x^(901/1000) for some C_a>0.",
+      "large_artifacts": [
+        {
+          "role": "level-18 LP weights",
+          "bytes": 516560652,
+          "sha256": "fc96181c552398be8bbc4c0a47482a53c4ff847059bf7fd4b9be11837ca7c34c",
+          "checks_reported": 129140163
+        },
+        {
+          "role": "adaptive termination potential",
+          "bytes": 129140163,
+          "sha256": "778584ce7635639ab2a0c7de766f81e8f551b0a52f96ca51eb2bb128c3248f52",
+          "checks_reported": 215233605
+        }
+      ],
+      "local_audit": {
+        "pdf_read_all_pages": true,
+        "pdf_visual_scan_all_pages": true,
+        "statement_and_normalization_checked": true,
+        "small_exact_arithmetic_checked": true,
+        "full_lean_build_replayed": false,
+        "large_payloads_replayed": false,
+        "independent_priority_survey_completed": false
+      },
+      "supplied_pdf": {
+        "filename": "Mazur_Certified_x090_Lower_Bounds_for_Collatz_Predecessor_Sets_v2.pdf",
+        "bytes": 170031,
+        "pages": 16,
+        "sha256": "cbae5d71ead733b380c3325503e46a7094fb4641244853a37dc220207d133a61",
+        "repository_copy": false,
+        "redistribution_note": "Binary not committed because no redistribution license was supplied.",
+        "canonical_pdf": "https://www.proofatlas.ai/papers/collatz-predecessor-090/Mazur_Certified_x090_Lower_Bounds_for_Collatz_Predecessor_Sets_v2.pdf"
+      }
+    },
+    {
+      "id": "EXT-MAZUR-2026-ND-LOGTIME",
+      "title": "Natural-density almost-bounded Collatz orbits in logarithmic time",
+      "author": "Lech Mazur",
+      "manuscript_version": "version 2",
+      "manuscript_date": "2026-07-21",
+      "canonical_page": "https://www.proofatlas.ai/formalizations/natural-density-log-time-collatz/",
+      "source_page": "https://www.proofatlas.ai/sources/natural-density-log-time-collatz/",
+      "manuscript_formal_worktree_commit": "f386357d453ac4dcf91242b76252d88a5a729906",
+      "authoritative_public_source_commit": "ca3dd0d63920411213403092aecc6946619eb082",
+      "toolchain_reported": "Lean 4.30.0-rc2",
+      "mathlib_commit_reported": "5450b53e5ddc75d46418fabb605edbf36bd0beb6",
+      "main_source_file_reported": "Erdos1135/ND/LogTime/Paper.lean",
+      "main_source_file_sha256_reported": "040eae84c87d52a042c53574a44533091e453b3d0f409d81dd5e951ba294012a",
+      "source_closure_files_reported": 599,
+      "source_closure_nonempty_lines_reported": 182625,
+      "theorem_summary": "For every threshold f tending to infinity, natural-density-one many positive starts descend below f(N) within C_Coll log N raw steps; the odd Syracuse analogue has odd-relative natural density one and a smaller explicit clock.",
+      "constants": {
+        "C_Syr_exact": "501501/(5000*log(2))",
+        "C_Syr_upper": 145,
+        "C_Coll_exact": "1509503/(5000*log(2))",
+        "C_Coll_upper": 436,
+        "fixed_target_d_open_upper": "5/143",
+        "fixed_target_d_specialization": "6993/200000",
+        "scheduled_no_hit_prefactor": 184,
+        "transport_prefactor": 384256,
+        "scheduled_no_hit_power": "1/32000"
+      },
+      "local_audit": {
+        "pdf_read_all_pages": true,
+        "pdf_visual_scan_all_pages": true,
+        "statement_and_quantifiers_checked": true,
+        "small_exact_arithmetic_checked": true,
+        "public_evidence_metadata_checked": true,
+        "full_lean_build_replayed": false,
+        "independent_line_by_line_transport_reconstruction": false,
+        "independent_priority_survey_completed": false
+      },
+      "supplied_pdf": {
+        "filename": "Mazur_Natural_Density_Collatz_Orbits_in_Logarithmic_Time_v2.pdf",
+        "bytes": 253981,
+        "pages": 27,
+        "sha256": "08a46dd1cdd9183beb2e09af517361f24d3b7945a6ee00db563a944a4a2373cf",
+        "repository_copy": false,
+        "redistribution_note": "Binary not committed because no redistribution license was supplied.",
+        "canonical_pdf": "https://www.proofatlas.ai/papers/natural-density-log-time-collatz/Mazur_Natural_Density_Collatz_Orbits_in_Logarithmic_Time_v2.pdf"
+      }
+    }
+  ]
+}

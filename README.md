@@ -10,7 +10,7 @@ This is an open research laboratory for developing, checking, refuting, and conn
 
 ## Choose a route
 
-**Learn the science.** Read the [`research map`](docs/RESEARCH_MAP.md), then open either a resident proof packet in [`research/integrated/`](research/integrated/README.md) or a source-pinned family in the [`reviewed-results catalog`](research/RESULTS_CATALOG.md).
+**Learn the science.** Read the [`research map`](docs/RESEARCH_MAP.md), then open either a resident proof packet in [`research/integrated/`](research/integrated/README.md), a source-pinned family in the [`reviewed-results catalog`](research/RESULTS_CATALOG.md), or a clearly bounded outside contribution in [`research/external/`](research/external/README.md).
 
 **Work on the project.** Agents begin with [`AGENTS.md`](AGENTS.md); human contributors use [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
@@ -26,6 +26,8 @@ The first proof-resident spine establishes narrow results about:
 - an exact refutation of an unrestricted factor-complexity screen and a separate nonconstant repair.
 
 The periodic-tail packet is **source-qualified**: its component statements were verified at exact source SHAs, while the exact integrated synthesis remains pending narrow review. The wider repository contains many additional reviewed families that are catalogued but still source-pinned.
+
+External imports remain separate from this resident spine. In particular, the [`Mazur 2026 packet`](research/external/mazur-2026/README.md) records two formally checked outside advances, exact PDF fingerprints and source routes, a partial local audit, and proposed connections without promoting them to repository-verified status.
 
 ## The five principal programs
 
@@ -47,6 +49,7 @@ Never collapse:
 - an inspected artifact into an independently replayed computation;
 - proper-factor congruences into complete-denominator divisibility;
 - a theorem reviewed at one SHA into later branch additions;
-- a refuted statement into its separately reviewed repair.
+- a refuted statement into its separately reviewed repair;
+- an outside formalization's public evidence into an independent repository replay.
 
 Historical integration evidence is indexed at [`archive/README.md`](archive/README.md). A small compatibility pointer remains at [`STATE.md`](STATE.md), but it is not part of the onboarding route.
