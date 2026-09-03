@@ -1,6 +1,6 @@
 # Claim matrix
 
-The statuses below describe this import, not the source author's internal labels.
+The statuses below describe this import and continuation, not the source author's internal labels.
 
 | ID | Statement | Source evidence | Local import status | Repository relation |
 |---|---|---|---|---|
@@ -11,6 +11,11 @@ The statuses below describe this import, not the source author's internal labels
 | `MZ-ND-002` | Odd-relative natural-density-one Syracuse descent uses `C_Syr = 501501/(5000 log 2) < 145`; for every `0<d<5/143`, the fixed-target timed bad fraction is at most `C_d (log N_0)^(-d)`. | Same source family. | **EXTERNAL SOURCE-QUALIFIED.** Exact exponent and clock arithmetic checked locally. | Supplies the forward side of a possible exponent-race program, but its present fixed-height estimate is linear in the counting endpoint. |
 | `MZ-ND-003` | On a natural-density-one set, a hit below `sqrt(N)` occurs in the raw-time window `log N/(2 log 2) < m ≤ C_Coll log N`. | Same source family. | **EXTERNAL SOURCE-QUALIFIED.** Deterministic lower inequality and clock conversion checked locally. | Shows logarithmic raw time is order-sharp for this target, not that constant `436` is sharp. |
 | `MZ-BRIDGE-001` | If fixed-target predecessor growth has exponent `γ` and fixed-height logarithmic-time non-descent has counting exponent `β<γ`, then Collatz follows. With `γ=0.901`, any such forward bound with `β<0.901` closes the conjecture. | New synthesis in this packet; elementary least-counterexample proof in `synthesis-and-roadmap.md`. | **PROPOSED CONNECTION; PENDING NARROW REVIEW.** | New direct bridge between inverse basin growth and forward exceptional-set thinning; distinct from resident `RD-BRIDGE-001` (`SC* + FC*`). |
+| `MZ-FH-001` | If `N=floor(log_2 X)`, at most `6499+2X^(19/20)` positive starts `n≤X` satisfy `T^k(n)≥n` for every `k≤N`. | New elementary proof in `fixed-height-forward-power-saving.md`; exact integer enclosure and exhaustive checks through depth 16. | **PROPOSED; LOCAL PROOF PENDING INDEPENDENT REVIEW.** | Genuine one-horizon forward power saving, but the threshold is the moving start `n`, not a fixed height `H`. |
+| `MZ-FH-002` | The one-horizon no-descent kernel below `2^N` has binary exponential rate `h_2(log 2/log 3)=0.949955...`. | New entropy/cyclic-minimum proof in the continuation note. | **PROPOSED; LOCAL PROOF PENDING INDEPENDENT REVIEW.** | Shows the parity-only one-horizon saving is intrinsically about `0.050044`, below the `0.099` saving needed to cross the imported inverse exponent. |
+| `MZ-FH-003` | Under only the generic scale-fiber bound `X^(1-r)`, repeated power descent transforms a density exponent `D` to `rD`; reaching fixed height collapses it to `O(1/log X)`. | New abstract calculation in the continuation note. | **PROPOSED METHOD-BOUNDARY LEMMA; PENDING REVIEW.** | Explains why finite intersections or repeated power-descent pullbacks do not automatically prove fixed-height power saving. |
+| `MZ-FH-004` | No positive counting inequality can improve every endpoint fiber from `X^(1-r)` to `X^(1-r-delta)` uniformly over all endpoint subsets when the descent map is defined on `X-o(X)` sources. | New mass-conservation proof in the continuation note. | **PROPOSED METHOD-BOUNDARY LEMMA; PENDING REVIEW.** | Forces any useful transfer gain to be specific to the killed survivor family or to arise through a signed/weighted operator. |
+| `MZ-FH-005` | A local exceptional saving `D` plus killed-set decorrelation gain `delta` at scale reduction `r` implies fixed-height exponent `beta>max(1-D,1-delta/(1-r))`. | New induction theorem in the continuation note. | **PROPOSED CONDITIONAL THEOREM; PENDING REVIEW.** | Gives a finite/symbolic certificate target. Crossing `0.901` requires both `D>0.099` and `delta/(1-r)>0.099`, unless a sharper joint recursion is proved. |
 
 ## Required non-claims
 
@@ -18,5 +23,8 @@ The statuses below describe this import, not the source author's internal labels
 - Natural density one is not pointwise control and does not remove a fixed exceptional source.
 - `x^0.90` or `C_a x^0.901` predecessor growth has zero possible natural density and therefore does not contradict a density-zero exceptional set by itself.
 - The fixed-target estimate `C_d (log N_0)^(-d) X` has no power saving in `X` when `N_0` is fixed.
+- `MZ-FH-001` and `MZ-FH-002` concern descent below the moving source, not entry below a fixed floor.
+- `MZ-FH-005` is conditional: no killed-set decorrelation certificate satisfying its hypotheses is supplied.
+- `MZ-FH-004` rules out a tempting transfer premise; it does not rule out dynamically conditioned or signed operator contraction.
 - Public Lean checking and source-host review are substantial evidence, but this repository import is not an independent end-to-end replay.
 - No priority claim is adopted beyond the dated and qualified language of the source records.
