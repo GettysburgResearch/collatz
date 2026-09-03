@@ -1,6 +1,6 @@
 # Research map and open frontiers
 
-> **Collatz remains unsolved.** This page is the durable scientific synthesis. It distinguishes resident proofs, source-pinned reviewed work, open obligations, and proposed connections.
+> **Collatz remains unsolved.** This page is the durable scientific synthesis. It distinguishes resident proofs, source-pinned reviewed work, external source-qualified advances, open obligations, and proposed connections.
 
 ## Central firewall
 
@@ -35,6 +35,36 @@ The resident extraction theorem says that ordinary realization occurs exactly on
 | `IC-REP-001` | separate `VERIFIED` repair, accepted with local proof | local repair proof with exact PR #16 dependencies source-pinned | import or reprove the dependencies; apply to a natural language |
 
 Read the packets at [`../research/integrated/`](../research/integrated/README.md). The first eight are a resident spine, not a complete account of the reviewed repository; see the [`results catalog`](../research/RESULTS_CATALOG.md).
+
+## External source-qualified advances: Mazur 2026
+
+The [`Mazur 2026 external packet`](../research/external/mazur-2026/README.md) imports exact PDF fingerprints, public source routes, and provenance for two outside, publicly Lean-checked theorem families. This repository performed a full-paper read, visual page audit, and small exact-arithmetic checks, but did not replay the full Lean closures or the 645.7 MB predecessor payloads. The results therefore remain **EXTERNAL SOURCE-QUALIFIED**, not resident.
+
+### Inverse predecessor growth
+
+For every fixed positive target `a` with `3 ∤ a`, the imported predecessor theorem gives
+
+\[
+\pi_a(X)\ge C_aX^{901/1000}
+\]
+
+eventually, hence the unit-coefficient lower bound `pi_a(X)≥X^(9/10)` eventually. Its key method is an adaptive level-18 Krasikov–Lagarias elimination: a bounded potential chooses a fallback lift only when every ordinary auxiliary lift is history-dominated, while time-local critical pruning separately follows actual functional minima.
+
+This is a strong inverse-tree population theorem. It does not prove `SC*`, ordinary all-depth realization, positive density, or cycle exclusion.
+
+### Forward natural-density descent
+
+For every threshold `f(N)→∞`, the imported forward theorem gives natural-density-one raw Collatz descent below `f(N)` by `C_Coll log N`, with `C_Coll<436`; the odd Syracuse form has odd-relative natural density one and `C_Syr<145`. A fixed-target form bounds the odd timed bad fraction by `C_d(log N_0)^(-d)` for every `0<d<5/143`.
+
+This improves the averaging mode and retains one explicit clock, but it permits a density-zero exceptional set, does not assert arrival at one, and gives no power saving in the counting endpoint for a fixed floor.
+
+### Proposed exponent-race bridge
+
+The packet proves the following conditional reduction, pending narrow review as a repository connection:
+
+> If predecessor sets grow as `Omega(X^gamma)` for every eligible fixed target and, for every fixed height `H`, odd starts that stay above `H` for logarithmic time are `O_H(X^beta)` with `beta<gamma`, then Collatz follows by a least-counterexample argument.
+
+The imported inverse result supplies `gamma=0.901`. Thus a new fixed-height forward bound with any `beta<0.901` would close the conjecture. The current natural-density estimate has effective endpoint exponent one, so no contradiction is yet available. See [`synthesis-and-roadmap.md`](../research/external/mazur-2026/synthesis-and-roadmap.md) for the proof and research programs.
 
 ## Program 1 — ordinary extraction and completion
 
@@ -128,6 +158,8 @@ These results do **not** rule out arbitrary regular sets, proper sublanguages, u
 
 Use **“principal proposed roadmap bridge,”** not **“established exhaustive reduction.”**
 
+The external `MZ-BRIDGE-001` exponent-race reduction is a second proposed route. It compares a lower exponent for the inverse basin of an orbit point with an upper exponent for fixed-height forward survivors. It is not part of the canonical registry and does not replace `RD-BRIDGE-001` unless its missing forward power-saving theorem is proved and reviewed.
+
 ## Proposed cross-program connections
 
 The following are useful hypotheses, not accepted theorems:
@@ -136,10 +168,13 @@ The following are useful hypotheses, not accepted theorems:
 - **PROPOSED:** a bounded-state schedule generator routes into the periodic/full-denominator packet; only seed-first unbounded state can evade that firewall.
 - **PROPOSED:** support-loss and factor-synchronization estimates may combine only if they preserve one common ordinary displacement across the complete denominator.
 - **PROPOSED:** Lane-A rank or fresh-prime escape matters only after a theorem transfers numerator complexity to ordinary source or endpoint height.
+- **PROPOSED:** natural/harmonic passage transport should be conditioned on physically realizable all-supercritical cylinders; ambient density alone cannot prove fixed-source stopping.
+- **PROPOSED:** sparse nonzero adaptive fallback states in the level-18 predecessor potential may admit a structural 3-adic description and a uniform higher-level potential family.
 
 ## Where to go next
 
 - Resident proof bodies: [`../research/integrated/`](../research/integrated/README.md)
 - Reviewed source-pinned families beyond the spine: [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md)
+- External source-qualified imports: [`../research/external/`](../research/external/README.md)
 - Agent workflow: [`../AGENTS.md`](../AGENTS.md)
 - Exact historical review and lifecycle evidence: [`../archive/README.md`](../archive/README.md)
