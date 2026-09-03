@@ -14,6 +14,8 @@ This is an open research laboratory for developing, checking, refuting, and conn
 
 **Work on the project.** Agents begin with [`AGENTS.md`](AGENTS.md); human contributors use [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
+**Consult external results.** Formally verified literature imports live in [`literature/`](literature/README.md); their exact interfaces with the open obligations, and an improvement map, live in [`research/density-interfaces/`](research/density-interfaces/README.md).
+
 ## What is resident
 
 The first proof-resident spine establishes narrow results about:

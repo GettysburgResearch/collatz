@@ -137,9 +137,24 @@ The following are useful hypotheses, not accepted theorems:
 - **PROPOSED:** support-loss and factor-synchronization estimates may combine only if they preserve one common ordinary displacement across the complete denominator.
 - **PROPOSED:** Lane-A rank or fresh-prime escape matters only after a theorem transfers numerator complexity to ordinary source or endpoint height.
 
+## External formal results and density interfaces
+
+Two 2026 preprints by Mazur, each with a Lean formalization at a frozen commit, are imported as literature packets: [natural-density almost-bounded orbits in logarithmic time](../literature/mazur-2026-natural-density-log-time/README.md) (for every `f→∞`, a natural-density-one set has an iterate below `f(N)` within `436 log N` raw steps; fixed-target bad sets have natural density `≪ (log N_0)^{-d}`, `d<5/143`) and [certified `x^{9/10}` predecessor-set lower bounds](../literature/mazur-2026-predecessor-x090/README.md) (`π_a(x) ≥ x^{9/10}` for every `a` with `3∤a`). Neither proves Collatz. Both are averaged or inverse-tree statements and sit on the far side of the central firewall from every program above; their formal proofs were **not replayed** here, their paper-exposed numerics were.
+
+Their exact interfaces are developed in [`research/density-interfaces/`](../research/density-interfaces/README.md), all `PROPOSED`:
+
+- `L-DI-001` / `T-DI-002`: a Lane-A source `n` whose surplus `D_k=q_k−αk` stays below `H` has an orbit of lower natural density `≥ 2·3^{-H}` inside the fixed-target bad set `B_{n−1}`; hence any fixed-target density bound below `2·3^{-H}` empties the bounded-surplus sub-lane of `SC*`. With the present ineffective constants this yields only `sup_k D_k ≥ d·log_3 log(n−1) − log_3 C_d`. The unbounded-surplus sub-lane, the generic case, is invisible to averaged theorems.
+- `T-DI-003`: the basin of a least counterexample `n_*` satisfies `x^{9/10} ≤ #(M∩[1,x]) ≤ 2C_d x (log(n_*−1))^{-d}`; a constraint, not a contradiction.
+- The [improvement map](../research/density-interfaces/IMPROVEMENT_MAP.md) ranks strengthenings of both papers (effective constants, clocks at the intrinsic `1/log(4/3)` rate, the exponent cap `5/143 → 1/20`, the limit `λ_k → 2` of the Krasikov–Lagarias program) and records that none of them creates a route to a full solution.
+
+### Load-bearing gap
+
+An **effective** fixed-target density bound. Without explicit constants the interface produces symbolic consequences only; with an explicit bound below `1/2` at a computationally verified target it would give the first positive-density lower bound for the basin of `1`.
+
 ## Where to go next
 
 - Resident proof bodies: [`../research/integrated/`](../research/integrated/README.md)
 - Reviewed source-pinned families beyond the spine: [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md)
+- External literature packets and their interfaces: [`../literature/`](../literature/README.md), [`../research/density-interfaces/`](../research/density-interfaces/README.md)
 - Agent workflow: [`../AGENTS.md`](../AGENTS.md)
 - Exact historical review and lifecycle evidence: [`../archive/README.md`](../archive/README.md)
