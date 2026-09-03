@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "name": "alpha_interval",
+      "ok": true,
+      "value": 0.6309297535714574
+    },
+    {
+      "name": "theta_interval",
+      "ok": true,
+      "value": 0.9499555271883305
+    },
+    {
+      "name": "rho_interval",
+      "ok": true,
+      "value": 0.792481250360578
+    },
+    {
+      "name": "pstar_interval",
+      "ok": true,
+      "value": 0.6830805152121868
+    },
+    {
+      "name": "pstar_entropy",
+      "ok": true,
+      "value": 0.9010000000000004
+    },
+    {
+      "name": "frequency_gap_interval",
+      "ok": true,
+      "value": 0.052150761640729404
+    },
+    {
+      "name": "direct_killed_pullback_delta_interval",
+      "ok": true,
+      "value": 0.02054435621430277
+    },
+    {
+      "name": "current_no_hit_exponent",
+      "ok": true,
+      "value": 3.125e-05
+    },
+    {
+      "name": "direct_exception_gap",
+      "ok": true,
+      "value": 0.09896875000000001
+    },
+    {
+      "name": "finite_entropy_tail_regression",
+      "ok": true,
+      "value": {
+        "max_k": 512,
+        "minimum_log_slack": 0.5890826248638927,
+        "worst_k": 3
+      }
+    },
+    {
+      "name": "literal_pullback_exponent_collapse",
+      "ok": true,
+      "value": {
+        "0.8": -0.04231751709497411,
+        "0.85": -0.43113441049810985,
+        "0.9": -1.2075293662849997,
+        "0.95": -3.5344412976140056,
+        "0.99": -22.142155222658644
+      }
+    }
+  ],
+  "constants": {
+    "alpha_log2_over_log3": 0.6309297535714574,
+    "binary_entropy_theta": 0.9499555271883305,
+    "current_moving_scale_no_hit_exponent": 3.125e-05,
+    "direct_beta_0_901_killed_pullback_delta": 0.02054435621430277,
+    "pstar_h2_equals_0_901": 0.6830805152121868,
+    "pstar_minus_alpha": 0.052150761640729404,
+    "rho_half_log2_3": 0.792481250360578
+  },
+  "scope": "numerical regression only; no Collatz proof",
+  "status": "pass"
+}
