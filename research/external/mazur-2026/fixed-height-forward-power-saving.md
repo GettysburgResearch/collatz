@@ -30,14 +30,14 @@ B_H(X;C)=O_H(X^\beta)
 
 for one common `C>0` and one `beta<0.901` (or, in a longer two-sided program, any `beta<1` paired with inverse exponents tending to one).
 
-The two imported Mazur papers do **not** prove this. The predecessor paper supplies the inverse exponent `0.901`. The natural-density paper supplies
+The two imported Mazur papers do **not** prove this. The predecessor paper supplies the inverse exponent `0.901`. The natural-density paper supplies, for `H>=2`,
 
 \[
 B_H(X;C_{\rm Syr})\le C_d X(\log H)^{-d}
 \qquad(0<d<5/143),
 \]
 
-whose exponent in `X` is still one for fixed `H`.
+whose exponent in `X` is still one for fixed `H`. Since every Syracuse iterate is odd, `B_1(X;C)=B_2(X;C)`, so the source theorem does apply to the decisive floor—but only with a constant multiple of `X`.
 
 ## 2. `MZ-FH-001` — one-floor counterexample lower bound
 
@@ -112,15 +112,21 @@ X^{\gamma-\beta}/\log X\longrightarrow\infty
 
 contradicts the two bounds. `□`
 
-### Monotonicity
+### Monotonicity and the source theorem's `N_0>=2` convention
 
-For every `H>=1`,
+Every Syracuse iterate is odd. Hence
+
+\[
+B_1(X;C)=B_2(X;C),
+\]
+
+and, for every `H>=1`,
 
 \[
 B_H(X;C)\le B_1(X;C).
 \]
 
-Thus `H=1` is the largest and decisive fixed-floor bad set. This is a sharper target than the earlier every-`H` bridge.
+Thus `H=1` is the largest and decisive fixed-floor bad set, while the imported fixed-target theorem may be used at its allowed endpoint `N_0=2`. Its resulting bound is still `O(X)`, not a power saving. This is a sharper target than the earlier every-`H` bridge.
 
 ## 3. `MZ-FH-002` — an unconditional entropy saving for coefficient-supercritical prefixes
 
