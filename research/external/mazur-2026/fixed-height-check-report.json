@@ -1,0 +1,57 @@
+{
+  "constants": {
+    "alpha_log2_over_log3": 0.6309297535714574,
+    "binary_entropy_eta": 0.9499555271883305,
+    "rho_log2_sqrt3": 0.792481250360578,
+    "theta_93_over_100_decay_exponent": 0.10469737866669324,
+    "theta_93_over_100_times_2_pow_1_over_10": 0.9967493201587526
+  },
+  "exact_closure_check": {
+    "inequality": "2*93^10 < 100^10",
+    "lhs": 96796461435858636498,
+    "margin": 3203538564141363502,
+    "rhs": 100000000000000000000
+  },
+  "max_rotation_length": 15,
+  "rotation_cases_checked": 11277,
+  "scope": "finite interfaces only; contraction (C) remains unproved",
+  "status": "checks_passed",
+  "word_counts": [
+    {
+      "entropy_upper": 1745.6749312801826,
+      "exact_prefix_supercritical_words": 19,
+      "length": 8,
+      "log2_count_over_length": 0.5309909391804482
+    },
+    {
+      "entropy_upper": 639573.7829247061,
+      "exact_prefix_supercritical_words": 2114,
+      "length": 16,
+      "log2_count_over_length": 0.6903599788364176
+    },
+    {
+      "entropy_upper": 46708659465.579346,
+      "exact_prefix_supercritical_words": 41347483,
+      "length": 32,
+      "log2_count_over_length": 0.7906655054124496
+    },
+    {
+      "entropy_upper": 1.3022077730913188e+20,
+      "exact_prefix_supercritical_words": 27542195013871668,
+      "length": 64,
+      "log2_count_over_length": 0.8533202040602792
+    },
+    {
+      "entropy_upper": 2.7505663423753098e+29,
+      "exact_prefix_supercritical_words": 24371952063544530046031106,
+      "length": 96,
+      "log2_count_over_length": 0.8784731685423068
+    },
+    {
+      "entropy_upper": 5.177541204133237e+38,
+      "exact_prefix_supercritical_words": 23744222584883638495407855640356220,
+      "length": 128,
+      "log2_count_over_length": 0.8921338417775454
+    }
+  ]
+}

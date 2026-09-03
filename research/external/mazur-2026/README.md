@@ -14,7 +14,8 @@ The supplied PDFs are indexed by exact fingerprint in [`papers/`](papers/); thei
 - [`CLAIM_MATRIX.md`](CLAIM_MATRIX.md) — claim-by-claim status and non-claims.
 - [`predecessor-x090.md`](predecessor-x090.md) — theorem, proof architecture, trust boundary, repository relation, and improvement program.
 - [`natural-density-log-time.md`](natural-density-log-time.md) — theorem, transport mechanism, clocks, limitations, and improvement program.
-- [`synthesis-and-roadmap.md`](synthesis-and-roadmap.md) — the exact complementarity, why the two theorems do not yet combine automatically, and a proposed exponent-race bridge that would yield a complete Collatz proof under one new forward power-saving hypothesis.
+- [`synthesis-and-roadmap.md`](synthesis-and-roadmap.md) — the exact complementarity, why the two theorems do not yet combine automatically, and a proposed exponent-race bridge.
+- [`fixed-height-power-saving-attack.md`](fixed-height-power-saving-attack.md) — a focused theorem-development pass: an endpoint-one bridge, two unconditional `X^0.949955... log X` forward sparsity theorems, exact method ceilings, and the dyadic contraction inequality that would yield `O_H(X^0.9)`.
 
 ## Import snapshot
 
@@ -22,10 +23,11 @@ The supplied PDFs are indexed by exact fingerprint in [`papers/`](papers/); thei
 - Import date: 2026-09-03.
 - Every page of both supplied PDFs was read and visually inspected.
 - A 57-check supplied-file integrity, provenance, and small-arithmetic replay passed; see [`local-check-report.json`](local-check-report.json).
+- The focused forward pass has a separate finite-interface checker and report: [`check_fixed_height_attack.py`](check_fixed_height_attack.py) and [`fixed-height-check-report.json`](fixed-height-check-report.json).
 - The full Lean builds and the 645,700,815-byte predecessor certificate payloads were **not** independently replayed in this repository import.
 
 ## Scientific placement
 
 The predecessor theorem supplies **lower growth of an inverse basin**. The natural-density theorem supplies **forward descent for a density-one population**. The repository's resident `SC*` problem instead asks for a **fixed-source all-depth stopping theorem**, while `FC*` asks for a **complete first-crossing obstruction**. None of those quantifier shifts is automatic.
 
-The most concrete combined target identified here is a fixed-threshold power-saving estimate. If the odd starts that fail to descend below a fixed height by logarithmic time could be bounded by `O_H(X^β)` for some `β < 0.901`, the predecessor theorem would contradict the existence of a least counterexample. The proof of that conditional bridge is given in the synthesis note; the needed forward power saving is open.
+The exponent-race can be sharpened to the single floor `H=1`: if eternal odd nonconvergent starts satisfy `E_1(X)=O(X^beta)` for any `beta<0.901`, the predecessor theorem gives a contradiction. The focused pass proves `beta=0.949955...` only for the all-supercritical lane and for global orbit minima, not for their inverse basins. The full fixed-height power saving remains open.
