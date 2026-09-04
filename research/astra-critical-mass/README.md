@@ -61,3 +61,25 @@ Both commands passed locally. Semantic digest:
 The verifier does not import the generator. Both implementations were authored
 in this session, so mathematical review by another contributor is still needed.
 No existing canonical record, source PR, workflow, or repository setting is changed.
+
+## Continuation: quantitative finite-dictionary obstruction
+
+[CONTINUATION.md](CONTINUATION.md) contains T-ASTRA-008 through C-ASTRA-013.
+The new strongest result is polynomial blow-up of the incoming-weight ratio at
+one ordinary endpoint simultaneously for every block length 1..B, for each
+fixed B. It covers finite affine ternary-valuation dictionaries and every
+finite full-history Green truncation, even after all even rays are included.
+One deeper history also defeats any uniform relative truncation estimate.
+These are method-class obstructions, not a Collatz proof or a refutation of
+the global Green-mass target.
+
+The continuation also makes the fixed Green target's universal logarithmic
+stopping-time burden explicit, and proves the qualitative inverse-weight
+criterion is equivalent to Collatz without prescribing that quantitative rate.
+The converse construction assumes convergence and is not an unconditional
+solution.
+
+[X-ASTRA-002](../../experiments/X-ASTRA-002-transport-closure/README.md) supplies
+63 exact simultaneous witnesses, a guarded ordinary compiler check, and five
+resealed-tampering tests. Its two implementations passed. All new claims remain
+PROPOSED; the first packet's proof text and artifacts are unchanged.
