@@ -1,0 +1,16 @@
+# Frozen evidence is byte-sensitive. Do not renormalize historical artifacts.
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+# Immutable/source-pinned packets must be checked out as stored, not converted.
+archive/** -text
+reports/prepublic-2026-09-05/** -text
+research/astra-critical-mass/** -text
+research/astra-three-routes/** -text
+research/external/mazur-2026/** -text
+experiments/** -text
+claims/followups/** -text

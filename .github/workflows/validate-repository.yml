@@ -6,7 +6,7 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# No repository writes, secrets, caches, deployments, or privileged PR events.
+# No repository writes, secrets, caches, deployments or privileged PR events.
 permissions:
   contents: read
 
@@ -21,27 +21,17 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out the complete proposed tree
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
           fetch-depth: 1
-      - name: Record exact checkout
+      - name: Test the validation driver on isolated fixtures
+        run: python3 -X utf8 -B tools/test_validation_driver.py
+      - name: Validate this exact checkout
+        run: python3 -X utf8 -B tools/validate.py --regressions --receipt "$RUNNER_TEMP/collatz-validation.json"
+      - name: Retain the exact receipt in the run log
+        if: always()
         run: |
-          git rev-parse HEAD HEAD^{tree}
-          python3 --version
-      - name: Check resident structure and frozen mathematical statuses
-        run: python3 -B tools/check_integration_state.py
-      - name: Authenticate A/B source and review preservation
-        run: |
-          python3 -B tools/check_review_integration.py
-          python3 -B tools/check_review_integration.py --self-test
-      - name: Authenticate D follow-up and corrected reading surfaces
-        run: python3 -B reports/prepublic-2026-09-05/integration-d/check_followup.py --self-test
-      - name: Replay D bounded regressions in both interpreter modes
-        run: |
-          python3 -B reports/prepublic-2026-09-05/reviewer-d/targeted_checks.py --check reports/prepublic-2026-09-05/reviewer-d/checks.json --self-test
-          python3 -O -B reports/prepublic-2026-09-05/reviewer-d/targeted_checks.py --check reports/prepublic-2026-09-05/reviewer-d/checks.json --self-test
-          python3 -B reports/prepublic-2026-09-05/reviewer-d/final_checks.py --check reports/prepublic-2026-09-05/reviewer-d/final_checks.json --self-test
-          python3 -O -B reports/prepublic-2026-09-05/reviewer-d/final_checks.py --check reports/prepublic-2026-09-05/reviewer-d/final_checks.json --self-test
-      - name: Verify that validation did not modify tracked files
-        run: git diff --exit-code HEAD
+          if [ -f "$RUNNER_TEMP/collatz-validation.json" ]; then
+            cat "$RUNNER_TEMP/collatz-validation.json"
+          fi
