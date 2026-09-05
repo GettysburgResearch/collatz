@@ -155,3 +155,28 @@ The residual pair 859 and 95 disproves a universal synchronous quotient rule:
 it merges asynchronously, not at equal times. The full basin-stability or
 merging-cover theorem remains OPEN. All new claims are PROPOSED, and all
 four earlier proof packets and experiment artifacts remain unchanged.
+
+## Sixth pass: unequal-clock reductions and an exact precision budget
+
+[CLOCK_DEFECT.md](CLOCK_DEFECT.md) contains T-ASTRA-030 through T-ASTRA-034.
+It replaces the failed fixed quotient for 859 by a different lower-rank source:
+T^16(859)=T(517)=776, lifting to an infinite progression with rank ratio below
+3/8. The same words at ternary depth at least three increase rank instead;
+that sharp depth guard is preserved.
+
+The depth-two compiler certifies 263 prefix-free sufficient rules on the
+previous residual: 192 forward and 71 unequal-clock. They cover 15980 of
+16384 relevant dyadic classes at modulus 2^18, leaving 404 binary branches,
+or 2020 classes modulo 21,233,664 after the ternary conditions are included.
+This is a reduction of one residual branch, not a complete Collatz cover.
+
+A separate all-parameter theorem proves that if 3^h(n)>=12^M, every lower-rank
+merging diagram with both clocks at most M must be exact same-clock ternary
+stripping. An ordinary family has minimum diagram clock cost Theta(h), with
+an explicit finite adaptive certificate. No bounded-depth cover is claimed.
+
+[X-ASTRA-006](../../experiments/X-ASTRA-006-clock-defect/README.md) supplies
+2104 rule replays, 5864 inverse-diagram checks, 24 adaptive-cost cases, and
+sharp higher-depth countertests. Separate implementations and eight resealed
+tamper tests pass. All new claims remain PROPOSED; Q-ASTRA-003 and the earlier
+closure targets remain OPEN. Earlier proofs and artifacts are unchanged.
