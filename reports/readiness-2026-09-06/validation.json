@@ -1,0 +1,81 @@
+{
+  "schema": "readiness-fixture-evidence/v1",
+  "baseline_main": "12eb510fb311588c2a3d6c0131b67aa642e79f91",
+  "onboarding_source": {
+    "pr": 97,
+    "commit": "b85c227d9d1ccd2989e6f657ca80dbcc9e487640"
+  },
+  "old_checker_blob": "55a083e775af693bcbfc176c6079f08d8f78bd16",
+  "new_blobs": {
+    "tools/check_review_integration.py": "166b1ad092a9904e156fa0d625e97b801e75138c",
+    "tools/validate.py": "69987b65ffb37c6a70fdeb62f2650e463205515c",
+    "tools/test_integrity_portability.py": "b74d3656b2ab33b268a88cde8d36d30bc7f34aba",
+    "tools/test_validation_driver.py": "6d4ecd8509f702c2fe51563eaff136475b8dcfb4",
+    ".gitattributes": "ec9dddcee73229cb54e3ffc526d1a26972e24fea",
+    ".github/workflows/validate-repository.yml": "1b18d6ca29cf579a7222e3cc9d690fa935de5c2c"
+  },
+  "tests": [
+    {
+      "command": ["python", "-B", "tools/check_review_integration.py", "--self-test"],
+      "exit_code": 0,
+      "stdout": "SELF-TEST PASS: 8 invalid fixtures rejected; no repository scan or mathematical verification performed\n",
+      "stderr": "",
+      "scope": "local synthetic fixtures, not full repository execution"
+    },
+    {
+      "command": ["python", "-O", "-B", "tools/check_review_integration.py", "--self-test"],
+      "exit_code": 0,
+      "stdout": "SELF-TEST PASS: 8 invalid fixtures rejected; no repository scan or mathematical verification performed\n",
+      "stderr": "",
+      "scope": "local synthetic fixtures, not full repository execution"
+    },
+    {
+      "command": ["python", "-B", "tools/test_integrity_portability.py"],
+      "exit_code": 0,
+      "stdout": "PASS: 11 real-Git mode/content/coverage controls; Windows metadata selection simulated on non-Windows; no complete repository scan\n",
+      "stderr": "",
+      "scope": "local synthetic fixtures, not full repository execution"
+    },
+    {
+      "command": ["python", "-O", "-B", "tools/test_integrity_portability.py"],
+      "exit_code": 0,
+      "stdout": "PASS: 11 real-Git mode/content/coverage controls; Windows metadata selection simulated on non-Windows; no complete repository scan\n",
+      "stderr": "",
+      "scope": "local synthetic fixtures, not full repository execution"
+    },
+    {
+      "command": ["python", "-B", "tools/test_validation_driver.py"],
+      "exit_code": 0,
+      "stdout": "PASS: 7 validation-driver fixtures; this is not a full Collatz checkout receipt\n",
+      "stderr": "",
+      "scope": "local synthetic fixtures, not full repository execution"
+    },
+    {
+      "command": ["python", "-O", "-B", "tools/test_validation_driver.py"],
+      "exit_code": 0,
+      "stdout": "PASS: 7 validation-driver fixtures; this is not a full Collatz checkout receipt\n",
+      "stderr": "",
+      "scope": "local synthetic fixtures, not full repository execution"
+    },
+    {
+      "check": "exact committed .gitattributes with core.autocrlf=true local clone",
+      "exit_code": 0,
+      "preserved_files": 14,
+      "scope": "synthetic LF/CRLF byte preservation; not a checkout of Collatz"
+    },
+    {
+      "check": "workflow YAML parsing and security configuration",
+      "exit_code": 0,
+      "scope": "static check only; no Actions execution"
+    },
+    {
+      "check": "all four new/modified Python tool bodies parse",
+      "exit_code": 0
+    }
+  ],
+  "complete_collatz_checkout_executed": false,
+  "native_windows_execution": false,
+  "github_actions_run_observed": false,
+  "external_build_or_large_replay": false,
+  "mathematical_statuses_changed": false
+}

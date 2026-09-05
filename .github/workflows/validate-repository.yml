@@ -1,0 +1,37 @@
+name: Repository integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# No repository writes, secrets, caches, deployments or privileged PR events.
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-integrity-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: Structure and bounded regressions
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the complete proposed tree
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Test the validation driver on isolated fixtures
+        run: python3 -X utf8 -B tools/test_validation_driver.py
+      - name: Validate this exact checkout
+        run: python3 -X utf8 -B tools/validate.py --regressions --receipt "$RUNNER_TEMP/collatz-validation.json"
+      - name: Retain the exact receipt in the run log
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/collatz-validation.json" ]; then
+            cat "$RUNNER_TEMP/collatz-validation.json"
+          fi

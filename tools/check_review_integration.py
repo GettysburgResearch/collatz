@@ -33,6 +33,8 @@ CURATED = [
     'research/external/mazur-2026/README.md',
     'experiments/X-ASTRA3-005-spectrum-switch/README.md',
     'reports/prepublic-2026-09-05/integration/README.md',
+    'docs/PHONE.md', 'docs/REVIEWING.md', 'docs/SECURITY_REVIEW_2026-09-05.md',
+    'reports/prepublic-2026-09-05/integration-d/README.md',
 ]
 
 
@@ -49,17 +51,57 @@ def blob_sha(raw: bytes) -> str:
     return hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
 
 
-def tree_sha(directory: Path) -> str:
+def git_index_modes(root: Path) -> dict[Path, bytes]:
+    """Read Git modes on filesystems without POSIX executable bits.
+
+    Content is NOT taken from the index: tree_sha still hashes working bytes.
+    A changed index mode, missing file, untracked file, or changed byte cannot
+    silently pass the frozen expected tree identity.
+    """
+    root = root.resolve()
+    result = subprocess.run(['git', '-C', str(root), 'ls-files', '--stage', '-z'],
+                            check=True, capture_output=True, timeout=30)
+    modes: dict[Path, bytes] = {}
+    for entry in result.stdout.split(b'\0'):
+        if not entry:
+            continue
+        metadata, raw_path = entry.split(b'\t', 1)
+        mode, oid, stage = metadata.split()
+        relative = PurePosixPath(os.fsdecode(raw_path))
+        require(not relative.is_absolute() and '..' not in relative.parts,
+                'invalid Git index path')
+        require(stage == b'0', 'unmerged Git index; finish resolving conflicts first')
+        require(mode in (b'100644', b'100755', b'120000'), 'unsupported Git index mode')
+        require(bool(SHA.fullmatch(oid.decode('ascii'))), 'invalid Git index object')
+        path = root / Path(relative)
+        require(path not in modes, 'duplicate Git index path')
+        modes[path] = mode
+    require(bool(modes), 'a complete nonempty Git checkout is required on Windows')
+    return modes
+
+
+def tree_sha(directory: Path, modes: dict[Path, bytes] | None = None) -> str:
     # Git sorts directory names as if suffixed with '/'. Ignore generated caches.
     children = [p for p in directory.iterdir()
                 if p.name != '__pycache__' and p.suffix not in ('.pyc', '.pyo')]
     children.sort(key=lambda p: os.fsencode(p.name) + (b'/' if p.is_dir() and not p.is_symlink() else b''))
     raw = bytearray()
     for child in children:
-        if child.is_symlink():
+        if child.is_dir() and not child.is_symlink():
+            require(modes is None or child not in modes, 'tracked file became a directory')
+            mode, sha = b'40000', tree_sha(child, modes)
+        elif modes is not None:
+            require(child in modes, f'untracked file in preserved subtree: {child}')
+            mode = modes[child]
+            if mode == b'120000':
+                # Git may materialize symlinks as target-text files on Windows.
+                data = os.fsencode(os.readlink(child)) if child.is_symlink() else child.read_bytes()
+            else:
+                require(not child.is_symlink(), f'regular file became a symlink: {child}')
+                data = child.read_bytes()
+            sha = blob_sha(data)
+        elif child.is_symlink():
             mode, sha = b'120000', blob_sha(os.fsencode(os.readlink(child)))
-        elif child.is_dir():
-            mode, sha = b'40000', tree_sha(child)
         else:
             mode = b'100755' if child.stat().st_mode & 0o100 else b'100644'
             sha = blob_sha(child.read_bytes())
@@ -102,7 +144,7 @@ def assemblies_valid(rows: list) -> None:
 
 
 def local_link(root: Path, source: Path, target: str) -> bool:
-    target = target.strip().split('#', 1)[0]
+    target = target.strip().split('#', 1)[0].split('?', 1)[0]
     if not target or re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target):
         return False
     target = unquote(target)
@@ -113,8 +155,8 @@ def local_link(root: Path, source: Path, target: str) -> bool:
 
 
 def check(root: Path) -> None:
-    manifest = json.loads((root / 'claims/reviewed-2026-09-05.json').read_text())
-    aliases = json.loads((root / 'claims/aliases.json').read_text())
+    manifest = json.loads((root / 'claims/reviewed-2026-09-05.json').read_text(encoding='utf-8'))
+    aliases = json.loads((root / 'claims/aliases.json').read_text(encoding='utf-8'))
     heads = manifest['source_heads']
     require(set(heads) == {'87', '88', '90', '91', '92'}, 'source scope changed')
     require(all(SHA.fullmatch(s) for s in heads.values()), 'invalid source SHA')
@@ -146,14 +188,15 @@ def check(root: Path) -> None:
     for path, expected in pins.items():
         require(bool(SHA.fullmatch(expected)), f'bad blob pin: {path}')
         require(blob_sha(safe_path(root, path).read_bytes()) == expected, f'blob changed: {path}')
+    modes = git_index_modes(root) if os.name == 'nt' else None
     for path, expected in trees.items():
-        require(tree_sha(safe_path(root, path)) == expected, f'preserved subtree changed: {path}')
+        require(tree_sha(safe_path(root, path), modes) == expected, f'preserved subtree changed: {path}')
     for path in list(CODE_PINS)[:2]:
         result = subprocess.run([sys.executable, '-O', '-B', str(root / path), '--help'],
                                 capture_output=True, text=True, timeout=10)
         require(result.returncode != 0 and 'optimized Python is unsupported' in result.stderr,
                 f'optimized legacy verifier did not fail closed: {path}')
-    sibling = (root / 'experiments/X-ASTRA3-005-spectrum-switch/README.md').read_text()
+    sibling = (root / 'experiments/X-ASTRA3-005-spectrum-switch/README.md').read_text(encoding='utf-8')
     require('astra-three-routes/pass5-spectrum-switch/README.md' in sibling, 'wrong spectrum sibling link')
     require('astra-three-routes/pass5/README.md' not in sibling, 'budget sibling mislabeled as spectrum')
     paths = {root / p for p in CURATED}

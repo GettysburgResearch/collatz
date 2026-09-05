@@ -20,6 +20,10 @@ The [integration disposition and validation receipt](../reports/prepublic-2026-0
 
 [The unchanged nine-file review](../reports/prepublic-2026-09-05/reviewer-d/FINAL_HANDOFF.md) audits the older resident spine at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`. [Pre-correction versions](reviewer-d-2026-09-05/README.md), the [separate follow-up record](../claims/followups/reviewer-d-2026-09-05.json), and the [integration receipt](../reports/prepublic-2026-09-05/integration-d/README.md) account for all six findings and the two additional qualifications. A/B's reports and disjoint-assignment contract are unchanged.
 
+## Contributor entrance and operational readiness
+
+The [readiness receipt](../reports/readiness-2026-09-06/README.md) accounts for PR97's onboarding/security contribution, portable integrity checking and the least-privilege workflow. Its fixture evidence is not a complete-checkout or public-launch clearance. Earlier review and source archives are unchanged.
+
 ## Current durable locations
 
 [Research map](../docs/RESEARCH_MAP.md), [resident packets](../research/integrated/README.md), [wider catalog](../research/RESULTS_CATALOG.md), [claim registry and aliases](../claims/README.md), and [public-launch gates](../docs/PUBLIC_RELEASE_GATES.md).

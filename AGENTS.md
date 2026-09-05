@@ -1,77 +1,33 @@
 # Agent entrypoint
 
-You are entering an **unsolved** research repository. Produce durable, correctly scoped progress; do not make the project look solved.
+This is an **unsolved** research repository. Produce durable, correctly scoped progress; do not make the project look solved.
 
-## Read before acting
+## Start with the science
 
-1. [`README.md`](README.md)
-2. [`docs/RESEARCH_MAP.md`](docs/RESEARCH_MAP.md)
-3. The relevant resident packet under [`research/integrated/`](research/integrated/README.md), or the relevant source-pinned family in [`research/RESULTS_CATALOG.md`](research/RESULTS_CATALOG.md)
-4. The active source issue, PR, or research directory
+Read [README.md](README.md), the [research map](docs/RESEARCH_MAP.md), and the relevant [resident packet](research/integrated/README.md) or [reviewed source family](research/RESULTS_CATALOG.md). Then inspect the current source issue/PR and freeze its head. Read [scoped errata](research/integrated/ERRATA.md) before reusing a corrected statement. Contributor access and peer review are explained in [CONTRIBUTING.md](CONTRIBUTING.md) and [shared review](docs/REVIEWING.md).
 
-Use [`archive/README.md`](archive/README.md) only for exact historical review, head, or lifecycle evidence.
+## Choose a mode
 
-## Choose one mode
+**Explore.** Free-form proofs, constructions, experiments, countermodels and literature connections belong in `research/`, `experiments/`, `literature/` or `reports/`. State the map, normalization, claim status, exact dependencies, evidence level and first unsupported step. Use PROPOSED, EMPIRICAL, SOURCE-QUALIFIED, REFUTED or OPEN appropriately. No registry form is required before exploration.
 
-### Explore
+**Review.** Freeze the full SHA and identify each source by `(PR, full SHA, path, claim ID)`: a single PR can reuse the same ID in different files. Reconstruct hypotheses, algebra, quantifiers, normalizations, ordinary realization, dependencies and computation coverage. Report VERIFIED, VERIFIED WITH FIXES, GAP/BLOCKED or REJECTED at the narrow claim level. Verdicts do not extend to later heads or neighboring statements. Independence means checking the argument, not merely agreeing with another agent.
 
-Unconventional proofs, constructions, analogies, computations, and literature connections are welcome. Free-form work belongs in `research/`, `experiments/`, `literature/`, or `reports/`.
+**Integrate.** Prefer a readable proof packet or qualified reference assembly to a long branch-history import. Keep statement, proof, scope, dependencies, source/review pins, failed strengthenings and the next missing lemma close together. A false original remains preserved; a repair has its own identity and review boundary. Follow [integration practice](docs/INTEGRATION_PRACTICE.md). Frozen A/B assignments and D's separate follow-up are historical evidence, not a mutable global reviewer list.
 
-Minimum discipline:
+## Mathematical safeguards
 
-- state the map, normalization, and quantifiers;
-- label the result `PROPOSED`, `EMPIRICAL`, `SOURCE-QUALIFIED`, `REFUTED`, or `OPEN`;
-- separate finite evidence from all-depth conclusions;
-- identify the first unsupported inference;
-- preserve exact code and artifacts when they matter;
-- say what remains missing.
+Ask whether a claim concerns one fixed positive ordinary integer or changing finite witnesses; an ordinary value or merely a 2-adic completion; exact finite legality or all-time legality; a complete cycle denominator or only its factors. Keep ordinary orbits separate from their predecessor basins and finite counts separate from all-depth conclusions.
 
-No registry form is required before exploration.
+Transfer arguments must state the map, source/endpoint projections, killed states, function space and input domain. Fresh-shell contraction does not automatically survive transport. Ranks and clocks from different programs are not interchangeable, and a total guard returning UNRESOLVED is not a total successful selector. Preserve failed strengthening counterexamples rather than averaging them away.
 
-### Review
+## Productive next steps
 
-Freeze the exact SHA first. Check hypotheses, algebra, quantifiers, notation, dependencies, citations, ordinary versus 2-adic realization, finite versus global scope, and artifact provenance. A verdict never extends to a later head without a delta review.
+Choose a precise [open obligation](research/open-obligations/README.md): fixed-floor survivor mass, actual unsafe-return control, complete lower-rank merging, coefficient stopping, full-denominator exclusion, or an ordinary least-root decision. All original SC*/FC*, periodic-synthesis and bridge boundaries remain explicit. An alternative architecture is welcome when its status and missing inference are clear.
 
-Use `VERIFIED`, `VERIFIED WITH FIXES`, `GAP/BLOCKED`, or `REJECTED`, with claim-level exceptions for mixed packets.
+## Validate and publish
 
-### Integrate
+In a clean complete checkout, run `python -X utf8 -B tools/validate.py`; add `--regressions` for the bounded replay bundle. [Replay policy](docs/REPLAY_POLICY.md) explains evidence tiers, Windows mode handling and exact receipts. A fixture, a source inspection, an API tree read and a complete execution are different events. Never invent command output or claim that repository integrity proves mathematics.
 
-Prefer a clean proof packet over importing a long branch history. A durable packet needs:
+Work on a branch; do not rewrite history, directly push to `main`, close another contributor's PR, or change settings, membership, visibility, licensing or workflows without explicit authority. The read-only integrity workflow is a separately authorized infrastructure addition, not permission to add privileged research automation. Do not run expensive searches merely for integration activity.
 
-- precise statement and scope;
-- readable proof or exact proof extract;
-- dependencies and notation;
-- finite/ordinary/2-adic/all-depth boundaries;
-- failed strengthenings and common misreadings;
-- exact source PR, SHA, paths, review report, and evidence state;
-- the next missing lemma.
-
-Never silently repair a source theorem. Preserve the false original and give the repair a separate identity and review boundary.
-
-For choosing source work, extracting packets, reviewing integrated wording, superseding duplicates, archiving evidence, and later closing source PRs, follow the gentle [`integration practice`](docs/INTEGRATION_PRACTICE.md). It is a lifecycle guide, not a prerequisite for exploratory research.
-
-## Nonnegotiable mathematical checks
-
-Before claiming progress toward a counterexample, ask:
-
-1. Is there one fixed positive ordinary integer, or different witnesses at each depth?
-2. Is the object ordinary, or merely in `Z_2`?
-3. Is legality proved forever, or through a finite prefix?
-4. For a cycle, is the **entire** denominator closed with exact replay?
-5. Is every external theorem used in its exact normalization?
-6. Was a computation independently replayed, merely inspected, or not run?
-
-## Highest-value targets
-
-- a fixed-source valuation bound proving SC\*;
-- a complete all-word displacement obstruction proving FC\*;
-- narrow review of the source-qualified periodic synthesis;
-- narrow review of the proposed SC\*/FC\* bridge;
-- boundedness or escape of a concrete aperiodic least-root sequence;
-- an unbounded-state mechanism that survives the known automata and rigidity barriers.
-
-## Repository safety
-
-Work on a branch. Do not rewrite history, change settings, add workflows, push directly to `main`, or close another contributor’s PR without explicit authority. Do not run expensive searches merely to produce activity.
-
-Finish by committing and pushing the result or refutation, recording the exact head, files to review, checks actually run, strongest uncertainty, and one useful handoff.
+Finish with a real commit/PR, exact head, affected files, checks actually run, strongest uncertainty and useful handoff. Re-query the remote before saying a write landed. Keep process receipts in [the archive](archive/README.md) and reports, not in a competing scientific front door.
