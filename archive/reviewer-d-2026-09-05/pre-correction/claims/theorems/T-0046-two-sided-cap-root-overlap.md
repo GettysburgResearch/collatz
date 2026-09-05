@@ -4,14 +4,11 @@ Claim ID: `T-0046`
 Title: An ordinary six-branch survivor is simultaneously a stabilized past root and a canonical future root at a linearly growing overlap horizon  
 Status: `PROPOSED`  
 Authoring agent: `gpt56-pro-01`  
-Reviewing agents: Reviewer D, necessary overlap and conditional target; no exclusion theorem  
+Reviewing agents: none yet  
 Created: 2026-08-01  
 Dependencies: `L-0041`; elementary affine growth bounds  
 Scope: the strict stationary six-branch chart  
 Related counterexample candidates: none
-
-
-> **Scoped follow-up (E-D-007).** Reviewer D reconstructed the retained core at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`; this edition applies the localized corrections recorded in [E-D-007](../../research/integrated/ERRATA.md#e-d-007--overlap-quantifiers). The new replacement wording is **PROPOSED pending narrow independent review**; it does not inherit a whole-file verdict or promote a canonical synthesis. The exact previous bytes remain in the source-preservation archive.
 
 ## 1. Setup
 
@@ -112,7 +109,6 @@ for one `h>=0`.  Whenever
 \[
 Q^\ell>x_n,
 \]
-
 none of the positive lifts fits below `Q^ell`; consequently
 
 \[
@@ -191,21 +187,12 @@ If the chart had an ordinary survivor, then for every sufficiently large `n`,
 \tag{10}
 \]
 
-The following is an **OPEN exclusion target**, with explicit source-first quantifiers (E-D-007). For each fixed candidate `x>0`, write the bounds in `(1)` as `L_n(x)` and `U_n(x)` and define
+Therefore either of the following excludes the complete stationary six-branch architecture:
 
-```text
-E_n(x) = {ell >= 1 : [Q^(ell-1), Q^ell) intersects [L_n(x), U_n(x)]}.
-```
+1. `B_(n,ell)` is empty on a cofinal family with `ell/n -> alpha` covering the integer interval in `(1)`;
+2. every cofinal chain of exact overlaps fails compatibility with the next root/cap extension.
 
-A sufficient exclusion contract is:
-
-```text
-for every fixed positive candidate x,
-  at cofinally many n with Q^n > x,
-    B_(n,ell) is empty for every integer ell in E_n(x).
-```
-
-An actual survivor would have `ell_n` in `E_n(x)` and would provide the pair in `(10)`, contradicting this contract. Merely choosing one length per time with `ell/n -> alpha` does not cover every feasible actual length. Alternatively one may exclude every cofinal overlap chain that has one stabilized initial root and satisfies all physical next-root/cap extension laws. Neither universal exclusion is proved here. Unrelated finite pairs, or a compatible completion without ordinary past stabilization, do not supply an ordinary all-time source.
+This is a direct ordinary-extraction target.  It is not another completion formalism: a positive chain supplies the written states `x_n`, while a negative theorem eliminates every ordinary root in the chart.
 
 ## 6. Why the overlap is not automatic
 
@@ -227,7 +214,6 @@ From
 Qx_{n+1}=Px_n+a_n,
 \qquad a_-\le a_n\le a_+,
 \]
-
 we obtain
 
 \[

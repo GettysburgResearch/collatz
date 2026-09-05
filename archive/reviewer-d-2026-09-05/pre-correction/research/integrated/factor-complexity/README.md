@@ -234,17 +234,7 @@ All three load-bearing dependency bodies are from PR #16 at the exact frozen sou
 900ba417c968d8a41bc56a30d3ccc941284d8ce2
 ```
 
-### Follow-up dependency qualifications (E-D-004 / E-D-005)
-
-The historical `PASSED` entries below are retained as provenance, not blanket acceptance of every sentence in those source files. Reviewer D reconstructed the clauses actually used by this packet and identified two auxiliary overstatements. These warnings apply to both the resident source pin `900ba417c968d8a41bc56a30d3ccc941284d8ce2` and catalog pin `87478352e65c7b816dfc8b3b30894b71fb50f662`: the two affected bodies are byte-identical at those pins.
-
-**T-9316:** efficient repeats exclude a nontrivial positive ordinary survivor, but appended-block nonstabilization additionally requires a **nonconstant** code. Both constant codes have efficient repeats, zero completion, and all appended blocks zero. Only the strict ordinary recurrence cone is used here; the nonconstant repair and Thue–Morse consequences survive.
-
-**L-9313:** arbitrary binary codes have the **closed** strip `|u_n|<=1/N`. The nonconstant current codes `1000...` and `0111...` attain `+1/N` and `-1/N`, respectively. Strict nonzero errors at every time hold for codes **not eventually constant**, or for separately justified positive ordinary centered orbits. Finite nonempty open cylinders need not have an infinite point: `(0,(M/N)^k/N)` has empty intersection when `0<M/N<1`; its closures meet at zero. The closed-strip series, cylinder arithmetic and the positive ordinary bridge used here remain valid. Do not replace the nonconstant hypothesis of the resident complexity screen by aperiodicity or by a restriction to non-eventually-constant codes.
-
-See [E-D-004 / E-D-005](../ERRATA.md#e-d-004--efficient-repeats-and-the-zero-completion) and [D's exact clause review](../../../reports/prepublic-2026-09-05/reviewer-d/FINAL_HANDOFF.md). No whole PR16 file or later source head is promoted.
-
-| Dependency | Exact source path | Clause used here | Historical review status (clause-limited) |
+| Dependency | Exact source path | Clause used here | Exact review status |
 |---|---|---|---|
 | `PR16:L-9313` | `research/adelic-cusp/claims/L-9313-centered-error-full-shift-cylinder.md` | eventual-zero blocks imply ordinary stabilization; the converse reconstructs the ordinary centered cylinder | `PASSED` |
 | `PR16:T-9315` | `research/adelic-cusp/claims/T-9315-centered-rational-power-equivalence.md` | a nontrivial stabilized centered cylinder corresponds to an ordinary `64→81` orbit with the itinerary | `PASSED` |

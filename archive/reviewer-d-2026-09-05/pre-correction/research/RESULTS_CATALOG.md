@@ -10,8 +10,6 @@ The frozen review wave covered 42 of 45 source PRs. PRs #67, #68, and #69 were u
 
 **Boundary.** The depth-46 minimum artifact was not independently fully replayed as a global-minimality computation; scalar EQ does not imply ordinary extraction; residue-only lassos are not positive trajectories.
 
-**Follow-up qualifications (E-D-004 / E-D-005).** At the catalog pin `87478352e65c7b816dfc8b3b30894b71fb50f662`, `research/adelic-cusp/claims/L-9313-centered-error-full-shift-cylinder.md` and `research/adelic-cusp/claims/T-9316-efficient-recurrence-thue-morse.md` are byte-identical to the resident dependency pin `900ba417c968d8a41bc56a30d3ccc941284d8ce2`. Retain the recurrence cone, ordinary bridge and nonconstant screen, not whole-file approval. Constant codes are zero-completion exceptions to unrestricted efficient-repeat nonstabilization. Arbitrary real codes have the closed strip; `1000...` and `0111...` attain the endpoints, and nested nonempty open cylinders can have empty intersection. Strict all-time statements need the non-eventually-constant or separately proved positive ordinary hypotheses. [Exact warnings and preserved scopes](integrated/ERRATA.md#e-d-004--efficient-repeats-and-the-zero-completion).
-
 **Residency.** Source-pinned, except the factor-complexity repair that uses three precisely pinned dependencies.
 
 **Relation.** Supplies representation and recurrence barriers for the ordinary-extraction program and the factor-complexity packet.
@@ -137,8 +135,6 @@ The frozen review wave covered 42 of 45 source PRs. PRs #67, #68, and #69 were u
 **Strongest surviving results.** The base finite affine/rational/semilinear packet is resident. Reviewed source branches also contain an algebraic-section extension at an older SHA and a classification of all fixed contracting two-point linear forms, including the no-all-time-two-point-descent consequence.
 
 **Boundary.** Later algebraic additions were outside the frozen verdict; no result decides the least-root sequence or excludes unbounded nonlinear state.
-
-**Previously recorded repair obligations (E-D-008).** The PR65 slice is `VERIFIED WITH FIXES`, not an unconditional approval of its printed proof: `research/six-branch-extraction/claims/T-7501-finite-algebraic-section-rigidity.md` at `2183dc7e66162684e464913a4ae1a222b41b30f3` still requires the constant-branch case, a rigorous finite-difference/derivative argument, the explicit coefficient field for semialgebraic claims, and the exact Newton--Puiseux input/reference. These conditions were already recorded by the review at `591a06ad914b63dddfd65ee658dbec36291ffbc0`; D preserved them rather than discovering or implementing a new repair. Syndetic polynomiality alone does not restore full-tail integrality, positivity, all-six-child coverage or exact section laws (E-D-006). The original narrower resident affine/rational theorem survives. [Repair boundary](integrated/ERRATA.md#e-d-008--historical-pr65-repair-boundary).
 
 **Residency.** Base packet local; extensions source-pinned and partially delta-blocked.
 

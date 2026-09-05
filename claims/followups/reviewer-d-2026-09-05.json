@@ -1,0 +1,178 @@
+{
+  "schema": "collatz-review-followup/v1",
+  "record_type": "separate_overlapping_review_and_errata",
+  "base_commit": "cd1b3689e8d37fc4232945072e2faf6bd5ee47bd",
+  "review": {
+    "pr": 98,
+    "commit": "1c7744bcb9ded9336036919ffc7a19b5576ea58e",
+    "first_commit": "0ce01f9cff107745abc3dabb8b1faa27ab6acfd4",
+    "path": "reports/prepublic-2026-09-05/reviewer-d",
+    "tree": "7f6ea329c06af44e836e7e2d88ad694654bd0d55",
+    "file_blobs": {
+      "CLAIM_MATRIX.md": "173619929f78c81fe156a316542bed86e94b6777",
+      "FINAL_HANDOFF.md": "894ab0dde5914550ac7a8681dfe9749ae3e8b886",
+      "PROOF_AUDIT.md": "c36f4620e60b69f3f7d23e714de5549397687ad8",
+      "README.md": "4ed7cbd1a5368b22601a23aa8dec4727cfcd8616",
+      "SOURCES_AND_VALIDATION.md": "835660335a8507d02e7d5f1a9358005a17233480",
+      "checks.json": "84b9e2de73b9a598724d956a458ea7a2996b9dea",
+      "final_checks.json": "edd83e61beaea9f24f80649a052e8cab42f0a3bc",
+      "final_checks.py": "44a35afafb6cb30327a6180b554e6f11b44f944a",
+      "targeted_checks.py": "37f605c074e0796479adc2e7097fa5770b3f0f69"
+    }
+  },
+  "mathematical_boundary": "Core verdicts are claim- and clause-limited. Replacement wording E-D-001..008 remains proposed pending narrow independent review; no whole-file or synthesis promotion.",
+  "unchanged_contracts": {
+    "claims/reviewed-2026-09-05.json": "ff5c2a5937f8f62935707b1c8ec67116f8b8c942",
+    "tools/check_review_integration.py": "55a083e775af693bcbfc176c6079f08d8f78bd16",
+    "tools/check_integration_state.py": "3df5f1c51c6cbd841e10a6e7091677738918cfce"
+  },
+  "affected_reading_surfaces": [
+    {
+      "path": "claims/lemmas/L-0041-six-branch-root-cap-recurrence.md",
+      "original_blob": "6b10d8818a0465ac047be34ba2cd7e6b0fb79a2f",
+      "active_blob": "9fe31e016bc56edd209acce83a7299bb8d728602",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/claims/lemmas/L-0041-six-branch-root-cap-recurrence.md"
+    },
+    {
+      "path": "claims/lemmas/L-0042-syndetic-integral-algebraic-branches.md",
+      "original_blob": "df11cdfa5b16d276e3f18845cf6af9d7ce646c14",
+      "active_blob": "b4c2ccd08653a3bf0e9b677157ee47656a96c5cc",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/claims/lemmas/L-0042-syndetic-integral-algebraic-branches.md"
+    },
+    {
+      "path": "claims/theorems/T-0046-two-sided-cap-root-overlap.md",
+      "original_blob": "58b390b2da759333e4996003b552b959a48f7ca2",
+      "active_blob": "9597debab4492f95bc524c000f84f52fc11bca44",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/claims/theorems/T-0046-two-sided-cap-root-overlap.md"
+    },
+    {
+      "path": "research/RESULTS_CATALOG.md",
+      "original_blob": "660e040b5125d776872f7631246ac4a9986ccda8",
+      "active_blob": "c868719d53bed47ccf3fe54428f68bbf03ce6247",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/research/RESULTS_CATALOG.md"
+    },
+    {
+      "path": "research/integrated/factor-complexity/README.md",
+      "original_blob": "fea936f9f202c26b9f11191b6aea83cee7047d49",
+      "active_blob": "72dcf5448e309540ad1c7f8ff589256c8c06b1da",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/research/integrated/factor-complexity/README.md"
+    },
+    {
+      "path": "research/integrated/ordinary-extraction/README.md",
+      "original_blob": "4a3346e6eac6f6697ce5783a4bf8272ac84011e2",
+      "active_blob": "dd1fb06b9d7af6ecabeff006845d6b8f4f9e4274",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/research/integrated/ordinary-extraction/README.md"
+    },
+    {
+      "path": "research/integrated/periodic-tails/README.md",
+      "original_blob": "53e499f679bc990196e0e4b3a9e07a9ddacbbeca",
+      "active_blob": "da768ee39de2ff03e241e867be0c37a3a766d60c",
+      "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/research/integrated/periodic-tails/README.md"
+    }
+  ],
+  "findings": [
+    {
+      "id": "E-D-001",
+      "review_finding": "FD-01",
+      "subject": "negative ordinary maximal-digit exception",
+      "action": "active example corrected; signed core unchanged",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-002",
+      "review_finding": "FD-02",
+      "subject": "positive realization versus nontrivial cycle; deterministic productive fixed-block controller",
+      "action": "active criterion and scope corrected; synthesis remains pending",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-003",
+      "review_finding": "FD-03",
+      "subject": "m_0=1 versus R_empty=0; value versus high-quotient increment",
+      "action": "active local arithmetic wording corrected; recurrence retained",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-004",
+      "review_finding": "FD-04",
+      "subject": "efficient repeats and constant zero completions",
+      "action": "dependency and catalog warnings applied at both exact PR16 pins",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-005",
+      "review_finding": "FD-05 / D-F02",
+      "subject": "closed strips, endpoint codes and empty open-cylinder intersection",
+      "action": "dependency and catalog warnings applied; ordinary bridge retained",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-006",
+      "review_finding": "FD-06",
+      "subject": "syndetic polynomiality does not supply full-tree rigidity hypotheses",
+      "action": "unqualified application replaced by explicit GAP-BLOCKED boundary",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-007",
+      "review_finding": "D-038",
+      "subject": "source-first exclusion over every feasible overlap length",
+      "action": "open target made explicit; no emptiness theorem claimed",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    },
+    {
+      "id": "E-D-008",
+      "review_finding": "D-F03",
+      "subject": "prior PR65 constant, difference, field and Puiseux-source repair debt",
+      "action": "catalog and lemma warnings applied; old repair obligations not promoted",
+      "replacement_status": "proposed_pending_narrow_independent_review"
+    }
+  ],
+  "dependency_warnings": [
+    {
+      "source_pr": 16,
+      "commits": [
+        "900ba417c968d8a41bc56a30d3ccc941284d8ce2",
+        "87478352e65c7b816dfc8b3b30894b71fb50f662"
+      ],
+      "path": "research/adelic-cusp/claims/T-9316-efficient-recurrence-thue-morse.md",
+      "blob": "6b8b480a2b8dee84ff91a3eb3e67f957943f88a1",
+      "warnings": [
+        "E-D-004"
+      ]
+    },
+    {
+      "source_pr": 16,
+      "commits": [
+        "900ba417c968d8a41bc56a30d3ccc941284d8ce2",
+        "87478352e65c7b816dfc8b3b30894b71fb50f662"
+      ],
+      "path": "research/adelic-cusp/claims/L-9313-centered-error-full-shift-cylinder.md",
+      "blob": "cddc4825d373ee7234e34b602a7add7feb39e324",
+      "warnings": [
+        "E-D-005"
+      ]
+    },
+    {
+      "source_pr": 65,
+      "commits": [
+        "2183dc7e66162684e464913a4ae1a222b41b30f3"
+      ],
+      "path": "research/six-branch-extraction/claims/T-7501-finite-algebraic-section-rigidity.md",
+      "blob": "f43db5aab077f2e5c809274041ac45c1e9035cb6",
+      "prior_review": "591a06ad914b63dddfd65ee658dbec36291ffbc0",
+      "warnings": [
+        "E-D-008"
+      ]
+    }
+  ],
+  "untouched_statuses": [
+    "IC-PERIODIC-001 source-qualified synthesis pending narrow review",
+    "RD-BRIDGE-001 proposed pending narrow review",
+    "RD-SC-001 open",
+    "RD-FC-001 open",
+    "E-INTEGRATION-001 and E-INTEGRATION-002 proposed",
+    "four recent assemblies accepted reference records, not verified syntheses"
+  ],
+  "launch_boundary": "No full authenticated-checkout scan, license selection, security/visibility clearance, workflow change or large external replay is implied. Issue 96 remains the launch gate; PR97 is a separate onboarding/security contribution."
+}

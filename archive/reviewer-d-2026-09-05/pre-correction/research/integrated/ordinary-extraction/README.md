@@ -9,9 +9,6 @@
 
 This packet combines two elementary reviewed results from PR #57: the signed canonical-residue criterion and the bounded-minimum criterion for nested positive survivor sets. The conjunction is editorial; no new mathematical strengthening is intended.
 
-
-> **Scoped follow-up (E-D-001).** Reviewer D reconstructed the retained core at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`; this edition applies the localized corrections recorded in [E-D-001](../ERRATA.md#e-d-001--signed-digit-example). The new replacement wording is **PROPOSED pending narrow independent review**; it does not inherit a whole-file verdict or promote a canonical synthesis. The exact previous bytes remain in the source-preservation archive.
-
 ## Setup and notation
 
 Let
@@ -161,7 +158,7 @@ For a concrete architecture, a bounded least-root theorem is already a structure
 1. `S_n={n,n+1,…}` has nonempty finite levels, `m_n=n`, and empty intersection.
 2. `S_n={7,7+K_n,7+2K_n,…}` has constant minimum `7` and an all-depth survivor.
 3. Compatible residues of a nonordinary 2-adic point produce nonempty infinite finite-depth sets while their canonical positive minima escape.
-4. A long run of zero appended blocks followed by infinitely many nonzero blocks cannot represent a **nonnegative** ordinary integer. A negative ordinary integer remains possible when the tail is eventually maximal: for `K_n=2^n`, the integer `-2^J` has residue `0` through depth `J` and residue `2^n-2^J` thereafter. Its digits are `J` zeros followed by ones. A nonordinary conclusion must exclude both eventual boundary faces (E-D-001).
+4. A long run of zero appended blocks followed by infinitely many nonzero blocks remains nonordinary.
 
 ## Provenance
 
