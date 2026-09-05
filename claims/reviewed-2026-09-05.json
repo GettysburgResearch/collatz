@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "record_type": "supplemental_reviewed_reference_assemblies",
+  "baseline_main": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+  "integration_started_utc": "2026-09-05T17:45:41Z",
+  "timezone": "Asia/Jerusalem",
+  "canonical_registry_changed": false,
+  "source_heads": {
+    "87": "e9adc409031a61f3801c4ee1e1e6deeb34188eb7",
+    "88": "c28922fb6d1c070bf86a76192f40bc9ea3edd67c",
+    "90": "78ac7c8489f1df81230402808b1f4b77b18fae73",
+    "91": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+    "92": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359"
+  },
+  "associated_open_issue": 89,
+  "reviews": [
+    {"role": "A", "pr": 93, "commit": "0137620b92afb714c19272017dbbc626d12af1ac", "source_prs": [87, 88, 90], "directory": "reports/prepublic-2026-09-05/reviewer-a", "directory_tree": "756027e7b305742b5a35f40604fa55bbde6c3774", "matrix": "reports/prepublic-2026-09-05/reviewer-a/CLAIM_MATRIX.md", "matrix_blob": "4dadbf83d163b79266650874e751106f7cb9e39b"},
+    {"role": "B", "pr": 94, "commit": "ea5faf5bcdd49a693e450dc0eeda83ace807f2f3", "source_prs": [91, 92], "directory": "reports/prepublic-2026-09-05/reviewer-b", "directory_tree": "6bfa23d9c019c099716a769c3146543225218118", "matrix": "reports/prepublic-2026-09-05/reviewer-b/CLAIM_MATRIX.md", "matrix_blob": "8d8a60b1e49fa29afc0046d7942e81408e200b9f"}
+  ],
+  "component_status_policy": {
+    "VERIFIED": "Independent verdict for the exact source claim and its stated hypotheses. Local source proof is resident; no later claim or synthesis inherits the verdict.",
+    "VERIFIED WITH FIXES": "Retained with explicit qualifications and correction record. No unrestricted promotion or retroactive verification of the original.",
+    "GAP-BLOCKED": "Retain the open claim or limited evidence with its stated missing premise/replay. Not accepted as an unconditional theorem.",
+    "REJECTED": "Retain the rejected strengthening and the separately reviewed refutation/salvage. Does not reject every claim in its branch.",
+    "external": "Source-qualified theorem/proof/computation dependency unless the exact external closure was independently verified; this integration performs no such promotion."
+  },
+  "assemblies": [
+    {"id": "IR-MASS-001", "local_packet": "research/integrated/exceptional-mass/README.md", "mathematical_status": "source-qualified", "component_mathematical_status": "mixed_exact_review_verdicts", "integrated_statement_status": "pending_narrow_review", "promotion_state": "accepted_reference_record", "proof_residency": "local_reviewed_source_files", "dependency_residency": "mixed"},
+    {"id": "IR-RENEWAL-001", "local_packet": "research/integrated/renewal-transport/README.md", "mathematical_status": "source-qualified", "component_mathematical_status": "mixed_exact_review_verdicts", "integrated_statement_status": "pending_narrow_review", "promotion_state": "accepted_reference_record", "proof_residency": "local_reviewed_source_files", "dependency_residency": "local_and_source_pinned"},
+    {"id": "IR-MERGING-001", "local_packet": "research/integrated/rank-merging/README.md", "mathematical_status": "source-qualified", "component_mathematical_status": "mixed_exact_review_verdicts", "integrated_statement_status": "pending_narrow_review", "promotion_state": "accepted_reference_record", "proof_residency": "local_reviewed_source_files", "dependency_residency": "local_and_source_pinned"},
+    {"id": "IR-ORBIT-001", "local_packet": "research/integrated/orbitwise-boundaries/README.md", "mathematical_status": "source-qualified", "component_mathematical_status": "mixed_exact_review_verdicts", "integrated_statement_status": "pending_narrow_review", "promotion_state": "accepted_reference_record", "proof_residency": "local_reviewed_source_files", "dependency_residency": "local_and_source_pinned"}
+  ],
+  "new_replacement_wording": {
+    "path": "research/integrated/ERRATA.md",
+    "ids": ["E-INTEGRATION-001", "E-INTEGRATION-002"],
+    "status": "proposed_pending_narrow_independent_review",
+    "original_proof_bytes_changed": false
+  },
+  "byte_pins": {
+    "claims/registry.json": "e6e2d83d4a6d07f2c0a2b659c8862c92d5a30c65",
+    "research/astra-three-routes/ROUTE_1_TRANSFER.md": "e16be2277b2a95c96d00525cc6fc47a33e17c3b7",
+    "research/astra-three-routes/ROUTE_2_SOURCE_HEIGHT.md": "0c1ca808c60758e9938413dca6b2d23d70818f24",
+    "research/astra-three-routes/ROUTE_3_RANK_CERTIFICATES.md": "a7c56c9086f0903d0ef6b6db612c7d994d836a1d",
+    "research/external/mazur-2026/fixed-height-forward-power-saving.md": "1a85cd98b063bf0ac76343c9da507c4f6a8b707a",
+    "archive/research-2026-09-05/pr88-source/check_fixed_height_attack.py": "bc2c9874e1126756260d7ec6b79bc929609a34f2",
+    "research/external/mazur-2026/fixed-height-forward-check-report.json": "247cee3eb8a44f91031e0148dbf84b5d1fb2c6b0",
+    "experiments/X-ASTRA-003-run-renewal/_verify_source.py": "02efa0c9e4e8f3eba85aeec87462b4ed65b49c86",
+    "experiments/X-ASTRA3-002-three-routes/_verify_source.py": "c4170d7d17df5d416d17742933b103aec3d3c2db"
+  },
+  "untouched_source_subtrees": {
+    "archive/research-2026-09-05/pr88-source": "437bb8131bacff69c554de35ea6a4da550dab7b2",
+    "research/astra-three-routes/pass2": "6b59c13b18cd4657047bbd59e7d95232dbddb700",
+    "research/astra-three-routes/pass3": "fd6699d37bcd628d82e4ee66dbf09ac6b865af46",
+    "research/astra-three-routes/pass4": "ac78e51528507b93ba4954644a2b8f5f477af1f3",
+    "research/astra-three-routes/pass5": "297b301c6219694fbb861aead3c892488ddbdc00",
+    "research/astra-three-routes/pass5-spectrum-switch": "ca6804654b3e8656bdc37f6eab6b9071db548095"
+  },
+  "source_pr_lifecycle": "left_open_for_continuing_research; frozen snapshots integrated and future deltas require review",
+  "publication_gate": "not_cleared_by_integration",
+  "scope_note": "No claim of Collatz closure, no canonical-status promotion, no large external replay, and no repository settings/workflow change."
+}

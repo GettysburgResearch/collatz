@@ -1,0 +1,70 @@
+pr,sha,path,inspection
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,README.md,CHANGED PATCH REVIEW against baseline; no canonical promotion
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,docs/RESEARCH_MAP.md,CHANGED PATCH REVIEW against baseline; no canonical promotion
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/README.md,CHANGED PATCH REVIEW against baseline; no canonical promotion
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/CLAIM_MATRIX.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/NOTICE.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/check_fixed_height_attack.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/check_import.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/fixed-height-check-report.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/fixed-height-power-saving-attack.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/local-check-report.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/natural-density-log-time.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/papers/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/predecessor-x090.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/sources.json,CONTENT REVIEW; verdict and evidence limited by claim matrix
+87,e9adc409031a61f3801c4ee1e1e6deeb34188eb7,research/external/mazur-2026/synthesis-and-roadmap.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+88,c28922fb6d1c070bf86a76192f40bc9ea3edd67c,reports/gpt56-fixed-height-01/2026-09-03-fixed-height-power-saving-attack.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+88,c28922fb6d1c070bf86a76192f40bc9ea3edd67c,research/external/mazur-2026/CLAIM_MATRIX.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+88,c28922fb6d1c070bf86a76192f40bc9ea3edd67c,research/external/mazur-2026/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+88,c28922fb6d1c070bf86a76192f40bc9ea3edd67c,research/external/mazur-2026/check_fixed_height_attack.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+88,c28922fb6d1c070bf86a76192f40bc9ea3edd67c,research/external/mazur-2026/fixed-height-check-report.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+88,c28922fb6d1c070bf86a76192f40bc9ea3edd67c,research/external/mazur-2026/fixed-height-forward-power-saving.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-001-critical-mass/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-001-critical-mass/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-001-critical-mass/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-001-critical-mass/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-002-transport-closure/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-002-transport-closure/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-002-transport-closure/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-002-transport-closure/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-003-run-renewal/README.md,NOT REVIEWED separately as ancillary content; scope inventoried from related sources
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-003-run-renewal/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-003-run-renewal/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-003-run-renewal/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-004-minimum-rank/README.md,NOT REVIEWED separately as ancillary content; scope inventoried from related sources
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-004-minimum-rank/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-004-minimum-rank/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-004-minimum-rank/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-005-remainder-cancellation/README.md,NOT REVIEWED separately as ancillary content; scope inventoried from related sources
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-005-remainder-cancellation/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-005-remainder-cancellation/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-005-remainder-cancellation/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-clock-defect/README.md,NOT REVIEWED separately as ancillary content; scope inventoried from related sources
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-clock-defect/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-clock-defect/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-clock-defect/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-boundary-fan/README.md,NOT REVIEWED separately as ancillary content; scope inventoried from related sources
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-boundary-fan/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-boundary-fan/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-ASTRA-006-boundary-fan/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-AS7-001-shadow-frontier/README.md,NOT REVIEWED separately as ancillary content; scope inventoried from related sources
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-AS7-001-shadow-frontier/results/canonical.json,NOT REVIEWED as a complete serialized artifact; no full hash or row acceptance
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-AS7-001-shadow-frontier/run.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,experiments/X-AS7-001-shadow-frontier/verify.py,STATIC CODE REVIEW; selected independent reconstructions only; upstream command NOT RUN
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,reports/astra-critical-mass-01/2026-09-05-boundary-fan.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,reports/astra-critical-mass-01/2026-09-05-shadow-frontier.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/ATTEMPT.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/BOUNDARY_FAN.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/CLOCK_DEFECT.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/CONTINUATION.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/FIRST_PASSAGE.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/INVERSE_SHADOW_FRONTIER.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/MINIMUM_RANK.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/PROOF.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/README.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/REMAINDER_CANCELLATION.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/RUN_RENEWAL.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
+90,78ac7c8489f1df81230402808b1f4b77b18fae73,research/astra-critical-mass/SOURCES.md,CONTENT REVIEW; verdict and evidence limited by claim matrix
