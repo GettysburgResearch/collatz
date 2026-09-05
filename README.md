@@ -2,51 +2,31 @@
 
 > **Status: UNSOLVED.** This repository contains no accepted proof or disproof of the Collatz conjecture, no accepted divergent positive orbit, and no accepted nontrivial positive cycle.
 
-This is an open research laboratory for developing, checking, refuting, and connecting approaches to Collatz. The durable repository has three layers:
-
-- **front door:** this README, [`AGENTS.md`](AGENTS.md), and [`CONTRIBUTING.md`](CONTRIBUTING.md);
-- **research:** readable integrated proofs plus clearly labeled source-pinned and exploratory programs;
-- **archive:** frozen review snapshots, lifecycle ledgers, and machine provenance retained for auditability.
+An open research laboratory for developing, checking, refuting and connecting approaches to Collatz. The scientific reading path is organized by mathematical question, not by contributor or research pass. Historical source text, failed strengthenings, exact reviews and computation receipts remain available behind it.
 
 ## Choose a route
 
-**Learn the science.** Read the [`research map`](docs/RESEARCH_MAP.md), then open either a resident proof packet in [`research/integrated/`](research/integrated/README.md) or a source-pinned family in the [`reviewed-results catalog`](research/RESULTS_CATALOG.md).
+**Learn the science.** Start with the [research map](docs/RESEARCH_MAP.md), then a [resident proof packet or reviewed reference assembly](research/integrated/README.md). The [wider reviewed-results catalog](research/RESULTS_CATALOG.md) preserves the older source-pinned families beyond that spine.
 
-**Work on the project.** Agents begin with [`AGENTS.md`](AGENTS.md); human contributors use [`CONTRIBUTING.md`](CONTRIBUTING.md).
+**Work on the project.** Agents begin with [AGENTS.md](AGENTS.md); human contributors use [CONTRIBUTING.md](CONTRIBUTING.md). Exploration does not require a registry form. Exact integration does require a source, scope, review and evidence boundary.
 
-## What is resident
+## What the repository establishes narrowly
 
-The first proof-resident spine establishes narrow results about:
+The accepted original spine contains ordinary extraction and completion-ghost results, fixed-source coefficient-supercritical classification, fixed-depth automata artifacts, exact six-branch representation barriers, and a refuted factor-complexity screen with a separately verified repair. The periodic-tail synthesis remains **source-qualified and pending narrow review**.
 
-- ordinary extraction from nested residue cylinders and least-root sets;
-- the explicit `(1110)^∞` 2-adic completion ghost;
-- fixed-source coefficient-supercritical divergence and the exact SC\* equivalence;
-- fixed-depth safety-automata artifacts;
-- finite affine/rational and semilinear barriers in one exact six-branch chart;
-- an exact refutation of an unrestricted factor-complexity screen and a separate nonconstant repair.
+The newly resident reviewed material develops four complementary directions:
 
-The periodic-tail packet is **source-qualified**: its component statements were verified at exact source SHAs, while the exact integrated synthesis remains pending narrow review. The wider repository contains many additional reviewed families that are catalogued but still source-pinned.
+- [Exceptional mass](research/integrated/exceptional-mass/README.md): conditional fixed-floor/critical-endpoint criteria, no-descent and entropy bounds, exact fibers and finite-time mass certificates.
+- [Renewal and transport](research/integrated/renewal-transport/README.md): complete section returns, safe-region contraction and explicit failures at unsafe transport.
+- [Rank descent and merging](research/integrated/rank-merging/README.md): computable proper ranks, physical certificates, guarded infinite families and necessary clock/peak resources.
+- [Orbitwise boundaries](research/integrated/orbitwise-boundaries/README.md): actual SC tails for non-eventually-periodic orbits, echoes, finite records and scoped method obstructions.
 
-## The five principal programs
+These are **reference assemblies with claim-level review verdicts**, not four accepted end-to-end proofs. Their proof bodies are local; external dependencies, pending corrections and unreplayed computations remain labeled. The original canonical and roadmap statuses are unchanged.
 
-1. **Ordinary extraction and completion:** distinguish finite representatives, one 2-adic completion, and one fixed positive ordinary all-time seed.
-2. **Periodic tails and cycles:** use the complete denominator `2^L-3^s` and exact physical replay; proper-factor hits are not cycle certificates.
-3. **Coefficient stopping / SC\*:** prove every fixed positive source eventually has a coefficient-subcritical prefix.
-4. **First crossing / FC\*:** exclude every complete nontrivial first-crossing realization with one common displacement and the whole denominator.
-5. **Automata, rigidity, and representation limits:** identify method classes that cannot cross the ordinary/all-depth boundary, without mistaking method failure for Collatz convergence.
+## The remaining boundary
 
-The proposed bridge `SC* + FC* => Collatz` remains **PROPOSED** pending an exact crosswalk review; SC\*, FC\*, and Collatz remain open.
+The programs still need an actual fixed-floor survivor estimate or retained-unsafe mass control, a complete terminating lower-rank selector, universal coefficient stopping, and complete ordinary first-crossing/cycle exclusion. The [open obligations](research/open-obligations/README.md) specify what is missing. `SC* + FC* => Collatz` remains a **PROPOSED** bridge pending review of its exact integrated crosswalk; neither premise is proved here.
 
-## Nonnegotiable boundaries
+Do not collapse finite compatibility into an all-depth witness, a 2-adic point into a positive ordinary integer, a bounded computation into an all-length theorem, a sparse orbit into a sparse basin, or safe exit into convergence. A theorem reviewed at one `(PR, SHA, path, claim ID)` does not certify later additions or a different statement with the same number.
 
-Never collapse:
-
-- finite compatibility into one all-depth witness;
-- a point of `Z_2` into a positive ordinary integer;
-- a bounded experiment into an all-length theorem;
-- an inspected artifact into an independently replayed computation;
-- proper-factor congruences into complete-denominator divisibility;
-- a theorem reviewed at one SHA into later branch additions;
-- a refuted statement into its separately reviewed repair.
-
-Historical integration evidence is indexed at [`archive/README.md`](archive/README.md). A small compatibility pointer remains at [`STATE.md`](STATE.md), but it is not part of the onboarding route.
+The [archive](archive/README.md) holds provenance rather than onboarding machinery. [Replay policy](docs/REPLAY_POLICY.md) states actual evidence tiers. [Public-launch gates](docs/PUBLIC_RELEASE_GATES.md) separate integration from owner licensing, security and visibility decisions.

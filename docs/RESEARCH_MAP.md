@@ -1,145 +1,51 @@
 # Research map and open frontiers
 
-> **Collatz remains unsolved.** This page is the durable scientific synthesis. It distinguishes resident proofs, source-pinned reviewed work, open obligations, and proposed connections.
+> **Collatz remains unsolved.** Separate accepted narrow proofs, reviewed source components, source-qualified imports, proposed syntheses and actual open obligations.
 
-## Central firewall
+The shortcut map is `T(n)=n/2` for even n and `(3n+1)/2` for odd n. Every finite parity prefix may have positive ordinary representatives while its compatible infinite completion has no positive ordinary realization. Finite compatibility, a point of Z_2, and one fixed positive all-time source are different objects.
 
-For the shortcut map
+## Accepted original spine — unchanged
 
-\[
-T(n)=\begin{cases}
-n/2,&n\equiv0\pmod2,\\
-(3n+1)/2,&n\equiv1\pmod2,
-\end{cases}
-\]
+| Record | Exact status and scope |
+|---|---|
+| IC-EXTRACT-001 | VERIFIED: signed residue stabilization and bounded-minimum ordinary extraction. |
+| IC-GHOST-001 | VERIFIED: finite parity cylinders and the explicit `(1110)^infinity`, `-19/11` completion ghost. |
+| IC-PERIODIC-001 | SOURCE-QUALIFIED: component proofs reviewed at exact SHAs; the exact combined synthesis remains pending narrow review. |
+| IC-SC-001 | VERIFIED: all-supercritical divergence and fixed-source SC* equivalence; universal stopping remains OPEN. |
+| IC-AUT-001 | VERIFIED: fixed-depth cofinite-tail/SCC artifacts, not an all-depth exclusion. |
+| IC-RIG-001 | VERIFIED only for the exact six-branch chart with complete-tree, full-tail, finite-control and eventual-integrality hypotheses. |
+| IC-REF-001 | Source statement REFUTED; its exact refutation is accepted with local proof. |
+| IC-REP-001 | Separate VERIFIED nonconstant repair; PR16 dependencies remain source-pinned, so it is not self-contained. |
 
-three objects must remain distinct:
+Read [the original packets](../research/integrated/README.md) or the [thirteen older reviewed families](../research/RESULTS_CATALOG.md). The 45/42 historical review snapshot and the unreviewed #67/#68/#69 boundary are not rewritten by this integration.
 
-1. every finite prefix has positive ordinary representatives;
-2. compatible prefixes determine one point of `Z_2`;
-3. one fixed positive ordinary integer realizes every prefix and the physical dynamics forever.
+## The five original programs
 
-The resident extraction theorem says that ordinary realization occurs exactly on an eventual boundary face of canonical representatives; for nested positive survivor sets, bounded least roots are exactly the missing compactness principle. The `(1110)^∞` packet gives an explicit high-drift completion ghost showing why compatibility plus conditional growth is insufficient.
+**Ordinary extraction.** For nested positive sets S_N with least elements m_N, nonempty intersection is equivalent to boundedness and eventual stabilization of m_N. A concrete architecture still needs stabilization or escape. A compact 2-adic inverse limit is not that theorem.
 
-## Status of the resident spine
+**Periodic tails and cycles.** A block of length L, weight s and affine constant C_w has periodic realizer `C_w/(2^L-3^s)`. Positive ordinary realization needs the complete denominator, correct preperiod and exact physical replay. A proper-factor congruence or bounded census does not exclude all cycles.
 
-| Record | Exact status | What is resident | What remains |
-|---|---|---|---|
-| `IC-EXTRACT-001` | `VERIFIED`, accepted with local proof | signed residue stabilization and bounded-minimum extraction | decide a concrete least-root sequence |
-| `IC-GHOST-001` | `VERIFIED`, accepted with local proof | finite parity cylinders and the `-19/11` ghost | architecture-specific ordinary extraction |
-| `IC-PERIODIC-001` | `SOURCE-QUALIFIED`; components verified at exact SHAs; synthesis pending narrow review | component proof packet for periodic fixed points, full denominator, and preperiod transfer | review the exact combined wording; then solve the nontrivial cycle problem |
-| `IC-SC-001` | `VERIFIED`, accepted with local proof | all-supercritical divergence and SC\* equivalence | prove universal fixed-source stopping |
-| `IC-AUT-001` | `VERIFIED`, accepted with local proof | fixed-depth cofinite-tail/SCC obstruction | build a sound ordinary-boundary abstraction |
-| `IC-RIG-001` | `VERIFIED`, accepted with local proof | one exact six-branch chart under complete-tree, full-tail, finite-control, eventual-integrality hypotheses | decide its least roots or use genuinely unbounded nonlinear state |
-| `IC-REF-001` | false source statement, exact refutation accepted with local proof | constant-word counterexamples | preserve the refutation |
-| `IC-REP-001` | separate `VERIFIED` repair, accepted with local proof | local repair proof with exact PR #16 dependencies source-pinned | import or reprove the dependencies; apply to a natural language |
+**Coefficient stopping / SC*.** With `C_k(n)=3^q_k(n)/2^k` and first coefficient-subcritical time tau_c, escape of the least length-N all-supercritical source is equivalent to finite tau_c for every fixed positive n. Classification of an all-supercritical survivor as divergent does not exclude it.
 
-Read the packets at [`../research/integrated/`](../research/integrated/README.md). The first eight are a resident spine, not a complete account of the reviewed repository; see the [`results catalog`](../research/RESULTS_CATALOG.md).
+**First crossing / FC*.** Retain `D=2^j-3^q>0`, `A_w=D r+2^j d=D s+3^q d`, and `s=r+d`. The required exclusion includes d=0 cycles and d>0 near-returns, all proper-prefix inequalities, the whole denominator and compatible ordinary source/end quotients. No factor may use a different displacement.
 
-## Program 1 — ordinary extraction and completion
+**Representation limits.** Finite automata, affine/rational sections, semilinear sanctuaries and factor-complexity screens have different reviewed method boundaries. Failure of one method does not prove Collatz or exclude unbounded arithmetic state.
 
-For compatible residues `r_n mod K_n`, a nonnegative ordinary point occurs exactly when the least representatives eventually stabilize; a negative ordinary point occurs when the upper co-representatives stabilize. For nested positive sets `S_n` with minima `m_n`,
+`RD-SC-001` and `RD-FC-001` remain OPEN. `RD-BRIDGE-001` remains PROPOSED with its exact least-counterexample crosswalk pending narrow review. The new SC*/eventual-periodicity component does not silently promote that older bridge or exclude nontrivial cycles.
 
-\[
-\bigcap_n S_n\ne\varnothing
-\iff \sup_n m_n<\infty
-\iff m_n\text{ eventually stabilizes}.
-\]
+## Reviewed mass and rank programs now resident
 
-### Load-bearing gap
+| Question and reading route | Strong surviving components | Exact missing step |
+|---|---|---|
+| [Exceptional mass](../research/integrated/exceptional-mass/README.md) | Native no-descent/entropy bounds, complete first-passage fibers, conditional exponent-race/critical-endpoint bridges and finite-time all-source mass enclosures. | Actual fixed-floor survivors, not just sparse roots or minima; source-qualified predecessor input retained. |
+| [Renewal and transport](../research/integrated/renewal-transport/README.md) | Total section returns, inverse fans, safe resolvents, fresh-shell drift and proved unsafe moment/weight obstructions. | An invariant domain or amortized estimate for the retained resonance/unsafe process on the actual transported distribution. |
+| [Rank descent and merging](../research/integrated/rank-merging/README.md) | Proper computable ranks, complete finite witness spaces, fixed-radius lossless pruning, guarded all-parameter repayments and all-diagram resource lower bounds. | A complete physical merging cover with a proved terminating selector; no universal time or peak cap is supplied. |
+| [Orbitwise boundaries](../research/integrated/orbitwise-boundaries/README.md) | Actual SC tails for non-eventually-periodic orbits, finite simple-path estimates, exact echoes and finite-feature obstructions. | Universal local certificates and ordinary/cycle exclusion, not a transfer from orbit sparsity to basin sparsity. |
 
-For one concrete aperiodic architecture, prove either boundedness/stabilization or escape `m_n→∞`. More finite witnesses, a compact inverse limit, entropy, refund capacity, or conditional growth do not decide this.
+These four are accepted **reference assemblies**, with exact component verdicts supplied by two independent review packets. They are not new blanket VERIFIED syntheses. Source proof bytes are resident; original author-stage labels and failed statements remain beside the later reviews. [Conventions](../research/integrated/CONVENTIONS.md) distinguish P from R_*, both safe sets, operator domains and clocks. [Errata](../research/integrated/ERRATA.md) holds the two new endpoint replacement statements pending narrow review.
 
-## Program 2 — periodic tails, cycles, and the complete denominator
+## Where to work next
 
-For a parity block `w` of length `L`, weight `s`, and affine constant `C_w`, the reviewed component arguments yield the unique periodic 2-adic realizer
+Choose one [open obligation](../research/open-obligations/README.md), its local proof and its explicit rejected strengthenings. Connecting safe tails to unsafe repayment is a PROPOSED strategy until the transported-input contract is proved; combining rank families is not complete coverage. New work remains free to explore another architecture.
 
-\[
-x_w=\frac{C_w}{2^L-3^s}.
-\]
-
-Positive ordinary realization requires the **complete** denominator and exact replay. Proper factors, local residues, or near-integrality are insufficient. The all-zero endpoint, finite preperiod, trivial cycle, and controller-to-parity compilation are included in the source-qualified synthesis but still require one narrow integrated-wording review.
-
-### Load-bearing gap
-
-Produce and replay one nontrivial positive cycle, or prove a complete all-word obstruction. Large bounded censuses remain finite evidence.
-
-## Program 3 — coefficient stopping / SC\*
-
-Let
-
-\[
-C_k(n)=\frac{3^{q_k(n)}}{2^k},
-\qquad
-\tau_c(n)=\min\{k\ge1:C_k(n)<1\}.
-\]
-
-Let `m_N^sup` be the least source whose first `N` coefficient prefixes are all supercritical. The resident theorem proves
-
-\[
-m_N^{sup}\to\infty
-\iff
-\tau_c(n)<\infty\text{ for every fixed }n>0.
-\]
-
-An ordinary orbit with all prefixes supercritical tends to `+∞`; this classifies the hypothetical survivor but does not exclude it.
-
-### Smallest missing lemma
-
-For each fixed `n`, bound the length of every all-supercritical word realized from `n`. Equivalently, beyond a source-dependent threshold prove
-
-\[
-v_2(3^{q(w)}n+A_w)<|w|.
-\]
-
-## Program 4 — first crossing / FC\*
-
-For a first coefficient crossing of length `j` and weight `q`, put
-
-\[
-D=2^j-3^q>0,
-\qquad
-A_w=Dr+2^j d=Ds+3^q d,
-\qquad s=r+d.
-\]
-
-`FC*` asks to exclude every complete nontrivial canonical realization with `d≥0`, including `d=0` cycles and `d>0` near-returns, using one common displacement, every denominator factor, all proper-prefix inequalities, compatible source/end quotients, and exact replay.
-
-### Smallest missing lemma
-
-Prove that the large complete denominator blocks cannot return the same small ordinary displacement and quotient jets in every factor. A one-factor sieve, bounded support theorem, or polynomially small candidate family is not enough.
-
-## Program 5 — automata, rigidity, and representation limits
-
-The resident method boundaries show:
-
-- a fixed-depth safe language is cofinite and its terminal SCC is a finite-horizon artifact;
-- in the exact six-branch chart, the ordinary high quotient immediately leaves the same language;
-- complete-tree finite affine control collapses to the expanding forward map;
-- complete-tree finite rational sections collapse after eventual integrality;
-- the all-depth survivor contains no infinite arithmetic progression or semilinear forward-invariant sanctuary;
-- one unrestricted factor-complexity screen is false, while its nonconstant repair is valid in the induced `64→81` model.
-
-These results do **not** rule out arbitrary regular sets, proper sublanguages, unbounded arithmetic state, pushdown mechanisms, or direct height arguments.
-
-## Proposed bridge
-
-`RD-BRIDGE-001` proposes that a least positive counterexample has exactly two coefficient lanes: no first crossing (SC\*) or a first crossing producing an FC\* witness. The reviewed ingredients include the no-descent framework, all-supercritical classification, and cycle absorption. The exact source/end normalization, repeated-state coverage, trivial-cycle treatment, and cross-PR notation still need one narrow review.
-
-Use **“principal proposed roadmap bridge,”** not **“established exhaustive reduction.”**
-
-## Proposed cross-program connections
-
-The following are useful hypotheses, not accepted theorems:
-
-- **PROPOSED:** any symbolic or automata construction should export canonical least representatives, so the extraction firewall becomes a mandatory interface rather than an after-the-fact warning.
-- **PROPOSED:** a bounded-state schedule generator routes into the periodic/full-denominator packet; only seed-first unbounded state can evade that firewall.
-- **PROPOSED:** support-loss and factor-synchronization estimates may combine only if they preserve one common ordinary displacement across the complete denominator.
-- **PROPOSED:** Lane-A rank or fresh-prime escape matters only after a theorem transfers numerator complexity to ordinary source or endpoint height.
-
-## Where to go next
-
-- Resident proof bodies: [`../research/integrated/`](../research/integrated/README.md)
-- Reviewed source-pinned families beyond the spine: [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md)
-- Agent workflow: [`../AGENTS.md`](../AGENTS.md)
-- Exact historical review and lifecycle evidence: [`../archive/README.md`](../archive/README.md)
+The [claim guide](../claims/README.md) and [integration practice](INTEGRATION_PRACTICE.md) are for exact review/extraction. [Replay policy](REPLAY_POLICY.md) records what was actually run. Historical ledgers remain in the [archive](../archive/README.md), and owner launch decisions remain in [public-release gates](PUBLIC_RELEASE_GATES.md).

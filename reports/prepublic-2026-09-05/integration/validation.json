@@ -1,0 +1,37 @@
+{
+  "scope": "integration implementation and finite replay evidence; not a Collatz proof or final public-launch clearance",
+  "fixed_height_replay": {
+    "source_blob": "bc2c9874e1126756260d7ec6b79bc929609a34f2",
+    "source_bytes": 8617,
+    "regenerated_report_blob": "247cee3eb8a44f91031e0148dbf84b5d1fb2c6b0",
+    "report_bytes": 5121,
+    "semantic_sha256": "d78c7b1e04c04aba446bff07899331cf4765eef2b85b9de9b428690fec7f3558",
+    "normal_pass": true,
+    "optimized_pass": true,
+    "resealed_mutations_rejected_per_mode": 4,
+    "fixed_floor_theorem_proved": false
+  },
+  "legacy_entry_guards": [
+    {"path": "experiments/X-ASTRA-003-run-renewal/verify.py", "blob": "4d330c3c59d468538e38f7ecbbecaf8697115b10", "refuses_O": true, "refuses_OO": true, "wrong_source_blob_rejected": true, "entire_original_corpus_replayed_in_integration": false},
+    {"path": "experiments/X-ASTRA3-002-three-routes/verify.py", "blob": "c9f2ee8ead22820938aaf9f7b7ab6b2671c67634", "refuses_O": true, "refuses_OO": true, "wrong_source_blob_rejected": true, "entire_original_corpus_replayed_in_integration": false}
+  ],
+  "structural_checker": {
+    "path": "tools/check_review_integration.py",
+    "blob": "55a083e775af693bcbfc176c6079f08d8f78bd16",
+    "normal_self_test_pass": true,
+    "optimized_self_test_pass": true,
+    "invalid_fixtures_rejected_per_mode": 8,
+    "recursive_tree_hash_compared_with_git": true,
+    "git_fixture_tree": "456205933d849afa858d19c66e1313e17bce6d65",
+    "full_final_checkout_run": false
+  },
+  "python_compilation": "passed for locally materialized source and integration programs",
+  "baseline_validator_final_checkout_run": false,
+  "external_lean_build": "not_run",
+  "external_large_payload_replay": "not_run",
+  "independent_pdf_rehash": "not_run",
+  "settings_permissions_visibility_workflows_changed": false,
+  "source_proof_bytes_changed": false,
+  "source_canonical_scientific_reports_changed": false,
+  "new_mathematical_replacement_wording": "proposed_pending_narrow_independent_review"
+}

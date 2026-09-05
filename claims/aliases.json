@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "snapshot_id": "2026-08-01-first-major-integration",
-  "rule": "Branch-local identifiers are always qualified as PR<number>:<claim-id>; repository IDs do not silently replace source IDs.",
+  "rule": "Exact source identity is (PR, full commit SHA, full repository path, claim ID). Historical PR:number aliases remain shorthand only where the canonical registry resolves them unambiguously. New colliding claims require a source namespace; repository IDs never silently replace source IDs.",
   "canonical_aliases": {
     "IC-EXTRACT-001": ["PR57:L-7601", "PR57:T-7601", "PR3:T-0043", "PR56:T-7801", "PR60:T-7401"],
     "IC-GHOST-001": ["PR57:T-7602"],
@@ -16,11 +16,31 @@
   "collisions": [
     {"bare_id": "T-7401", "qualified_ids": ["PR60:T-7401", "PR61:T-7401", "PR64:T-7401"], "disposition": "Three unrelated statements; use IC-EXTRACT-001, IC-PERIODIC-001, and IC-RIG-001 respectively."},
     {"bare_id": "T-7501", "qualified_ids": ["PR63:T-7501", "PR65:T-7501"], "disposition": "PR63 maps to IC-PERIODIC-001; PR65 remains separate and requires its own reviewed status."},
-    {"bare_id": "R-9304", "qualified_ids": ["PR16:R-9304", "PR37:R-9304"], "disposition": "Keep branch-qualified; PR37:R-9304 maps to IC-REF-001."}
+    {"bare_id": "R-9304", "qualified_ids": ["PR16:R-9304", "PR37:R-9304"], "disposition": "Keep branch-qualified; PR37:R-9304 maps to IC-REF-001."},
+    {"bare_id": "PR90:T-ASTRA-030 through 034", "namespaces": ["CM-CLOCK", "CM-FAN"], "disposition": "Different files at the same source head; use full path, not PR number alone."},
+    {"bare_id": "PR92:T-A3-1001/1002/1051/1052/1101/1102", "disposition": "Budget and spectrum-switch are distinct statements. Resolve the file-specific namespace below before citing an ID."}
   ],
   "repair_relations": [
     {"original": "PR37:T-9318", "status": "refuted", "record": "IC-REF-001", "repair": "PR37:T-9319", "repair_status": "verified", "repair_record": "IC-REP-001", "rule": "The repair is a distinct theorem and does not change the original status."},
     {"original": "PR49:T-8512 direct-read stack interpretation", "status": "refuted", "repair": "transported-residue/prepayment formulation", "repair_status": "proposed/deferred", "rule": "No canonical repair record is created here."},
-    {"original": "PR61:T-7401 and PR63 periodic clauses", "source_component_status": "verified_with_fixes", "integrated_record": "IC-PERIODIC-001", "integrated_mathematical_status": "source-qualified", "integrated_statement_status": "pending_narrow_review", "rule": "The synthesis does not retroactively change source verdicts."}
+    {"original": "PR61:T-7401 and PR63 periodic clauses", "source_component_status": "verified_with_fixes", "integrated_record": "IC-PERIODIC-001", "integrated_mathematical_status": "source-qualified", "integrated_statement_status": "pending_narrow_review", "rule": "The synthesis does not retroactively change source verdicts."},
+    {"original": "PR88@c28922fb6d1c070bf86a76192f40bc9ea3edd67c:research/external/mazur-2026/fixed-height-forward-power-saving.md:MZ-FH-005", "repair": "E-INTEGRATION-001", "repair_status": "proposed_pending_narrow_review", "path": "research/integrated/ERRATA.md", "rule": "The unrestricted nonpositive-beta timed endpoint is not accepted."},
+    {"original": "PR92@7bb6d36d3bc37dd09b52aa9a23c8e33973032359:research/astra-three-routes/pass2/SC_TAIL_AND_ECHO.md:T-A3-453", "repair": "E-INTEGRATION-002", "repair_status": "proposed_pending_narrow_review", "path": "research/integrated/ERRATA.md", "rule": "Preserve original source; handle zero affine remainder before logarithmic cutoff."}
+  ],
+  "source_namespaces": {
+    "CM-CLOCK": {"pr": 90, "commit": "78ac7c8489f1df81230402808b1f4b77b18fae73", "path": "research/astra-critical-mass/CLOCK_DEFECT.md"},
+    "CM-FAN": {"pr": 90, "commit": "78ac7c8489f1df81230402808b1f4b77b18fae73", "path": "research/astra-critical-mass/BOUNDARY_FAN.md"},
+    "A3-BUDGET-RANK": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5/RANK_MOMENTS.md"},
+    "A3-BUDGET-MERGING": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5/MERGING_BARRIERS.md"},
+    "A3-BUDGET-REPAYMENT": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5/UNSAFE_REPAYMENT.md"},
+    "A3-SPECTRUM-RANK": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5-spectrum-switch/RANK_SPECTRUM.md"},
+    "A3-SPECTRUM-PLATEAUS": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5-spectrum-switch/PLATEAUS_AND_SOURCES.md"},
+    "A3-SPECTRUM-MASS": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5-spectrum-switch/INDUCED_MASS.md"},
+    "A3-SPECTRUM-REPAYMENT": {"pr": 92, "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "path": "research/astra-three-routes/pass5-spectrum-switch/SWITCH_REPAYMENT.md"}
+  },
+  "artifact_identity_rule": "Use full source commit, full artifact path and declared schema together. A shared schema or experiment number is not an alias.",
+  "artifact_collisions": [
+    {"label": "X-ASTRA-006", "commit": "78ac7c8489f1df81230402808b1f4b77b18fae73", "paths": ["experiments/X-ASTRA-006-clock-defect/results/canonical.json", "experiments/X-ASTRA-006-boundary-fan/results/canonical.json"]},
+    {"label": "X-ASTRA3-005/v1", "commit": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359", "paths": ["experiments/X-ASTRA3-005-rank-budget/results/canonical.json", "experiments/X-ASTRA3-005-spectrum-switch/results/canonical.json"]}
   ]
 }

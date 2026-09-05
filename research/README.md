@@ -1,13 +1,7 @@
 # Research
 
-This directory contains the mathematical work of the project.
+Start with the [research map](../docs/RESEARCH_MAP.md). The [integrated index](integrated/README.md) contains the accepted narrow spine and four subject-based assemblies of newly reviewed mass/rank work. Each new guide links directly to local proof bodies, exact review verdicts and the next missing lemma.
 
-- [`integrated/`](integrated/README.md) holds readable proof packets selected as stable repository references.
-- [`RESULTS_CATALOG.md`](RESULTS_CATALOG.md) synthesizes significant exact-SHA-reviewed families whose proofs remain source-pinned or mixed.
-- Other subdirectories contain exploratory, active, or historical research with their native statuses.
+The [wider reviewed-results catalog](RESULTS_CATALOG.md) retains the older source-pinned families beyond the resident spine. The [external dossier](external/mazur-2026/README.md) is explicitly source-qualified. The [open obligations](open-obligations/README.md) distinguish actual unsolved problems from disproved strengthenings and implementation defects.
 
-“Integrated” means resident and provenance-complete for its exact scope. It does not mean “proves Collatz,” and it does not upgrade a source-qualified or refuted statement.
-
-Exploration need not use the integrated-packet format. It must still expose the map, normalization, status, evidence level, finite/all-depth boundary, and unresolved step.
-
-Start with the [`research map`](../docs/RESEARCH_MAP.md). Agents should also read [`../AGENTS.md`](../AGENTS.md).
+Chronological source programs remain readable at [critical mass/frontier](astra-critical-mass/README.md) and [arithmetic renewal/moving rank](astra-three-routes/README.md); they are not the primary onboarding route. Source-header PROPOSED labels record the author stage; later independent review applies only to the exact named source claim, not an entire branch or new synthesis.

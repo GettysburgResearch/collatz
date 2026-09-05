@@ -1,33 +1,21 @@
-# Mazur 2026 Collatz advances
+# Mazur source dossier and local fixed-height work
 
-> **Status: EXTERNAL SOURCE-QUALIFIED; LOCALLY AUDITED (PARTIAL).** Collatz remains unsolved. These works are not resident proofs of the conjecture and are not added to the canonical claim registry by this import.
+**EXTERNAL SOURCE-QUALIFIED. Collatz remains unsolved.** The external proof closures, formal builds and large certificate payloads are not independently accepted by this integration. [Reviewer A's matrix](../../../reports/prepublic-2026-09-05/reviewer-a/CLAIM_MATRIX.md) distinguishes faithful theorem transcription, narrow reconstructed implications, complete external verification not performed, and local open hypotheses.
 
-This packet imports and analyzes two complementary July 2026 works by Lech Mazur:
+## External sources and trust boundary
 
-1. **Certified exponent-0.90 lower bounds for Collatz predecessor sets** — an inverse-tree theorem for every fixed target not divisible by three.
-2. **Natural-density almost-bounded Collatz orbits in logarithmic time** — a forward typical-orbit theorem with ordinary natural density and explicit logarithmic clocks.
+Read [predecessor bounds](predecessor-x090.md), [natural density and logarithmic time](natural-density-log-time.md), [source pins](sources.json), [paper fingerprints](papers/README.md) and [notice](NOTICE.md).
 
-The supplied PDFs are indexed by exact fingerprint in [`papers/`](papers/); their binaries are not redistributed because no license was supplied. Machine-readable provenance and evidence boundaries are in [`sources.json`](sources.json); [`check_import.py`](check_import.py) verifies the recorded source metadata and small exact-arithmetic surface, and rechecks supplied PDF bytes when invoked with `--pdf-dir`.
+The predecessor statements distinguish the eventual unit-coefficient exponent 0.90 from the stronger `c_b X^0.901` with a positive target-dependent constant and cutoff. The natural-density result concerns a diverging threshold, not fixed-floor convergence; its quantitative fixed-floor logarithmic expression uses H>=2, not log(1). Raw, shortcut and odd-relative clocks are not interchangeable.
 
-## Read in this order
+PDF/build/hash receipts belong to the original source/import author unless a later reviewer expressly reproduced them. A did not rehash raw PDF bytes, rebuild the entire formal closure or replay the 645.7 MB predecessor payload. No PDF is redistributed here. Some import-checker quantities are floating diagnostics, not exact proof certificates.
 
-- [`CLAIM_MATRIX.md`](CLAIM_MATRIX.md) — claim-by-claim status and non-claims.
-- [`predecessor-x090.md`](predecessor-x090.md) — theorem, proof architecture, trust boundary, repository relation, and improvement program.
-- [`natural-density-log-time.md`](natural-density-log-time.md) — theorem, transport mechanism, clocks, limitations, and improvement program.
-- [`synthesis-and-roadmap.md`](synthesis-and-roadmap.md) — the exact complementarity, why the two theorems do not yet combine automatically, and a proposed exponent-race bridge.
-- [`fixed-height-power-saving-attack.md`](fixed-height-power-saving-attack.md) — a focused theorem-development pass: an endpoint-one bridge, two unconditional `X^0.949955... log X` forward sparsity theorems, exact method ceilings, and the dyadic contraction inequality that would yield `O_H(X^0.9)`.
+## Two local source variants, not an overwritten stack
 
-## Import snapshot
+PR87 is frozen at `e9adc409031a61f3801c4ee1e1e6deeb34188eb7`: [conditional synthesis](synthesis-and-roadmap.md) and [endpoint-one/entropy attack](fixed-height-power-saving-attack.md). Its original `check_fixed_height_attack.py` and `fixed-height-check-report.json` remain its own protocol.
 
-- Imported against `main` commit `9704bcf1ff33cc9e2b729e0c40137a1e55b95397`.
-- Import date: 2026-09-03.
-- Every page of both supplied PDFs was read and visually inspected.
-- A 57-check supplied-file integrity, provenance, and small-arithmetic replay passed; see [`local-check-report.json`](local-check-report.json).
-- The focused forward pass has a separate finite-interface checker and report: [`check_fixed_height_attack.py`](check_fixed_height_attack.py) and [`fixed-height-check-report.json`](fixed-height-check-report.json).
-- The full Lean builds and the 645,700,815-byte predecessor certificate payloads were **not** independently replayed in this repository import.
+PR88 is frozen at `c28922fb6d1c070bf86a76192f40bc9ea3edd67c`: [native no-descent/fiber argument](fixed-height-forward-power-saving.md). Its different checker, matrix, report and README are preserved together in the [complete frozen variant](../../../archive/research-2026-09-05/pr88-source/). The active report is now `fixed-height-forward-check-report.json`, and [check_fixed_height_forward.py](check_fixed_height_forward.py) performs a nonmutating replay. The old PR description's T-FHP path list is not the actual native MZ-FH file layout at this source head.
 
-## Scientific placement
+MZ-FH-001–004 have the narrow reviewed scopes in A's matrix. The unrestricted nonpositive-beta timed endpoint in MZ-FH-005 is **not accepted**; [E-INTEGRATION-001](../../integrated/ERRATA.md) proposes the positive-beta restriction without rewriting the original. A successful finite replay does not establish the missing fiber gain.
 
-The predecessor theorem supplies **lower growth of an inverse basin**. The natural-density theorem supplies **forward descent for a density-one population**. The repository's resident `SC*` problem instead asks for a **fixed-source all-depth stopping theorem**, while `FC*` asks for a **complete first-crossing obstruction**. None of those quantifier shifts is automatic.
-
-The exponent-race can be sharpened to the single floor `H=1`: if eternal odd nonconvergent starts satisfy `E_1(X)=O(X^beta)` for any `beta<0.901`, the predecessor theorem gives a contradiction. The focused pass proves `beta=0.949955...` only for the all-supercritical lane and for global orbit minima, not for their inverse basins. The full fixed-height power saving remains open.
+The [exceptional-mass guide](../../integrated/exceptional-mass/README.md) is the current mathematical entry point. [Replay policy](../../../docs/REPLAY_POLICY.md) gives exact commands and evidence ceilings. The original PR87 README and PR88 colliding files remain in the source archive; the original CLAIM_MATRIX.md records author-stage status rather than replacing the later independent review.

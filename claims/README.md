@@ -1,68 +1,33 @@
 # Claim registry and status semantics
 
-The registry is provenance infrastructure. Human mathematical exposition lives in [`../research/integrated/`](../research/integrated/README.md) and the wider source-pinned catalog is [`../research/RESULTS_CATALOG.md`](../research/RESULTS_CATALOG.md).
+The registry is provenance infrastructure. Human mathematics lives in the [integrated packets](../research/integrated/README.md), with older source-pinned families in the [wider catalog](../research/RESULTS_CATALOG.md).
 
 ## Files
 
-- [`registry.json`](registry.json) — schema, status vocabulary, and part index;
-- [`registry/canonical-1.json`](registry/canonical-1.json) and [`registry/canonical-2.json`](registry/canonical-2.json) — eight durable integrated records;
-- [`registry/roadmap.json`](registry/roadmap.json) — SC\*, FC\*, and the proposed bridge;
-- [`CANONICAL.md`](CANONICAL.md) — compact human rendering;
-- [`aliases.json`](aliases.json) — branch-qualified aliases, collisions, refutations, and repairs.
+- [registry.json](registry.json), [canonical-1.json](registry/canonical-1.json), [canonical-2.json](registry/canonical-2.json), [roadmap.json](registry/roadmap.json) and [CANONICAL.md](CANONICAL.md) retain the original eight canonical and three roadmap records unchanged.
+- [reviewed-2026-09-05.json](reviewed-2026-09-05.json) records four resident **reference assemblies**, their two immutable claim-level review matrices, source heads, proof residency, evidence policy and held replacements. It is a supplement, not a silent expansion of the canonical registry.
+- [aliases.json](aliases.json) preserves historical aliases and repair relations and adds exact file-specific namespaces for colliding new claims and artifacts.
 
-The registry does not replace proof files and does not upgrade a statement merely because it is resident.
+Residency does not verify a statement. A reference assembly does not turn all its source rows into accepted theorems.
 
 ## Independent status dimensions
 
-`mathematical_status` says whether the exact statement is verified, source-qualified, empirical, proposed, open, refuted, or superseded.
+`mathematical_status` describes the exact statement: verified, source-qualified, empirical, proposed, open, refuted or superseded. `integration_status` describes its repository role. `promotion_state` distinguishes accepted reference, accepted local proof, roadmap and retirement. `proof_residency` and `dependency_residency` separately say where proofs and load-bearing inputs reside.
 
-`integration_status` says whether the record is a resident canonical reference, roadmap obligation, reference-only item, deferred item, or quarantined item.
+`verified + accepted_with_local_proof` means an exact reviewed result has readable local proof. `source-qualified + accepted_reference_record + pending_narrow_review` preserves reviewed ingredients without accepting an unreviewed synthesis. A refutation accepted with local proof does not make its false original verified. A locally resident proof with source-pinned dependencies is not self-contained.
 
-`promotion_state` says whether the repository accepts the record as a reference, accepts it with local proof, accepts it as a roadmap, or retires it.
+For the new assemblies, the exact row in the frozen review matrix is authoritative: VERIFIED, VERIFIED WITH FIXES, GAP-BLOCKED and REJECTED remain distinct. Source-author PROPOSED headers are retained as history. The technical wrappers and proposed endpoint replacements have their own integration receipts rather than a retroactive source verdict.
 
-`proof_residency` says whether a readable proof packet is local, remains only at a frozen source, is an open obligation, or is historical.
+## Exact identifiers
 
-`dependency_residency` says whether the load-bearing dependencies are local, source-pinned, or mixed.
+The source identity is **(PR, full commit SHA, full repository path, claim ID)**. Even `PR90:T-ASTRA-030` or `PR92:T-A3-1051` is ambiguous. Use an explicit tuple or a file-specific display alias such as `CM-CLOCK:T-ASTRA-030` or `A3-SPECTRUM-PLATEAUS:T-A3-1051`, resolved through aliases.json. A display namespace is not a theorem promotion.
 
-These fields must not be collapsed. Examples:
-
-```text
-mathematical_status = verified
-promotion_state     = accepted_with_local_proof
-proof_residency     = local_proof_packet
-```
-
-means the exact reviewed result is accepted and its proof is readable locally.
-
-```text
-mathematical_status           = source-qualified
-component_mathematical_status = verified_at_exact_source_shas
-integrated_statement_status   = pending_narrow_review
-promotion_state               = accepted_reference_record
-proof_residency               = local_proof_packet
-```
-
-is the durable status of `IC-PERIODIC-001`: its component proofs are reviewed and resident, while the exact combined wording still needs one narrow review.
-
-A refutation may be `accepted_with_local_proof` while its `mathematical_status` is `refuted`; that means the refutation is an accepted result, not that the false theorem became verified.
+Older `PR<number>:<claim-id>` aliases remain usable only where the canonical record unambiguously supplies the exact source path and SHA. Source files and IDs are never silently renamed. An artifact needs its full path, source commit and schema together; a shared schema or experiment number does not identify a unique payload.
 
 ## Minimum integrated record
 
-A durable record states:
+State exact scope and exclusions, source identity, review identity and verdict, dependency normalization/residency, proof/artifact evidence, aliases/repairs, and the local destination. Keep finite versus all-depth and ordinary versus 2-adic realization explicit. New wording or conjunctions need narrow review independently of their ingredients.
 
-- exact claim and scope;
-- exclusions and finite-to-infinite boundary;
-- source PR, source SHA, source claim IDs, and source paths;
-- exact review report and verdict;
-- dependencies and dependency residency;
-- proof and artifact evidence;
-- aliases and repair/supersession relations;
-- local packet when resident.
+## Roadmap and replacement boundary
 
-## Identifier rule
-
-Never cite a colliding bare ID such as `T-7401`. Use `PR<number>:<claim-id>` or the repository record ID. Source files are not silently renamed.
-
-## Roadmap boundary
-
-`RD-SC-001` and `RD-FC-001` are accepted **open obligations**. `RD-BRIDGE-001` is an accepted **PROPOSED** roadmap record whose exact least-counterexample crosswalk remains pending narrow review. None is a proof of Collatz.
+RD-SC-001 and RD-FC-001 remain accepted **OPEN obligations**. RD-BRIDGE-001 remains **PROPOSED** and its exact crosswalk is pending review. IC-PERIODIC-001 retains its separate pending synthesis flag. E-INTEGRATION-001/002 in [ERRATA.md](../research/integrated/ERRATA.md) are new proposed replacement wording, not accepted repairs of their unrestricted originals. None is a proof of Collatz.

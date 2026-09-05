@@ -4,50 +4,26 @@ The repository supports free exploration and a narrow integration layer.
 
 ## Explore freely
 
-Broad research PRs, informal notes, experiments, countermodels, and changes of direction are welcome. Before publishing, make four things visible:
+Broad research PRs, informal notes, experiments, countermodels and changes of direction are welcome. Before publishing, make visible the exact map and normalization, each load-bearing claim's status, the finite/all-depth and ordinary/2-adic boundary, and the unresolved step. No registry form is required to explore.
 
-1. the exact map and normalization;
-2. the status of each load-bearing claim;
-3. the finite-versus-all-depth and 2-adic-versus-ordinary boundary;
-4. the unresolved step.
-
-Computation that matters should have a frozen artifact, a replay command, and an honest statement of whether it was independently replayed.
+Computation that matters needs a frozen artifact, replay command and an honest statement of whether it was independently replayed. Use the [replay policy](docs/REPLAY_POLICY.md); historical generators may overwrite reports, and optimized Python is not automatically supported.
 
 ## Request review
 
-Give the reviewer:
-
-- the exact commit to freeze;
-- the load-bearing claims and files;
-- dependencies and source-qualified inputs;
-- artifact/checker state;
-- known doubts, repairs, and supersessions.
-
-A review verdict applies only to that SHA. A branch-level verdict may contain passing and failing claims.
+Supply the exact commit, load-bearing claims/files, dependencies and source-qualified inputs, checker/artifact state, and known doubts/repairs. A verdict applies only to that SHA and exact statement; a branch may contain passing, failed, conditional and unreplayed items.
 
 ## Request integration
 
-Integration is a lightweight additional contract, not a prerequisite for exploration. Supply:
+Integration is an additional contract, not a prerequisite for exploration. Supply statement and scope; source identity; dependencies and normalization; exact review and verdict; proof/artifact residency and replay state; and refutation, repair, alias or supersession relations.
 
-```text
-statement and exact scope
-source PR, SHA, claim IDs, and paths
-dependencies and normalization
-review report and verdict
-proof/artifact residency and replay state
-refutation, repair, alias, or supersession relations
-```
-
-An integrator may extract a coherent subset rather than merge the whole PR. A repaired theorem never changes the status of the original.
-
-For clean extraction, dependency repair, supersession, archival preservation, and eventual source-PR closure, use [`docs/INTEGRATION_PRACTICE.md`](docs/INTEGRATION_PRACTICE.md). That guidance applies when work seeks durable integration or cleanup; it does not impose a submission schema on exploratory branches.
+An integrator may extract a coherent subset rather than merge a whole branch. A repaired theorem never changes the status of its false original. Follow [integration practice](docs/INTEGRATION_PRACTICE.md) for extraction, dependency repair, supersession, preservation and later closure.
 
 ## Identifiers and evidence
 
-Use branch-qualified source IDs such as `PR61:T-7401` when collisions exist. Repository IDs are aliases, not silent renames.
+Use **(PR, full SHA, full repository path, claim ID)**. PR-only qualification is insufficient for the new same-branch collisions. [aliases.json](claims/aliases.json) supplies stable display namespaces; historical short aliases remain valid only when a canonical record resolves them uniquely. Repository IDs are aliases, not silent renames.
 
-Keep these evidence states distinct: proof inspected, independently reconstructed, artifact inspected, artifact regenerated, checker run, large computation independently replayed, computation not replayed, and artifact missing.
+Keep proof inspection, independent reconstruction, artifact inspection, regeneration, checker execution, complete encoded-corpus replay, large external replay, not-replayed and missing-artifact states distinct. New wrappers, amended normalization and proposed replacements have separate receipts.
 
 ## Repository changes
 
-Use branches and reviewable PRs. Do not change visibility, permissions, branch protection, or public-release status from a research contribution. Do not add GitHub Actions without an explicit infrastructure decision.
+Use branches and reviewable PRs. Do not change visibility, permissions, branch protection or public-release status from a research contribution. Do not add GitHub Actions without an explicit infrastructure decision. [Public-launch gates](docs/PUBLIC_RELEASE_GATES.md) are owner decisions, not claims implicitly cleared by research integration.

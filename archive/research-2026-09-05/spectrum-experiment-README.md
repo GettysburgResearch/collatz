@@ -1,7 +1,7 @@
 # X-ASTRA3-005: rank spectrum, induced mass, and switch repayment
 
-**Finite exact support for reviewed scoped components; no complete Collatz proof.**
-Read [the spectrum-switch packet](../../research/astra-three-routes/pass5-spectrum-switch/README.md), not the different rank-budget sibling. Exact independent replay boundaries are in [Reviewer B](../../reports/prepublic-2026-09-05/reviewer-b/VALIDATION.md).
+**Finite exact support for proposed theorems; no complete Collatz proof.**
+Read [the fifth-pass index](../../research/astra-three-routes/pass5/README.md).
 
 Run from a checkout or from the unpacked packet root:
 
@@ -23,7 +23,7 @@ parities bit by bit, and reverses full finite trees for the merging comparison.
 Both programs use the standard library and explicit exceptions, so disabling
 Python assertions does not disable their validation. An optional `--output`
 argument writes the reconstructed report. Both outputs are byte-identical.
-The same author wrote both implementations: that fact alone is not independent review.
+The same author wrote both implementations: this is not independent review.
 
 ## Coverage and exact boundaries
 
@@ -51,6 +51,5 @@ Semantic report SHA-256:
 
     45888e331821905d73141de70258b9cbfc03df94ec58208a94b5d66f9d687aee
 
-No external large computation or workflow belongs to these programs. Source
-programs and certificates are unchanged by this README correction. The original
-README is retained in the dated source archive.
+No external large computation, workflow, or publication action belongs to
+these programs. The parent source files and previous certificates are untouched.
