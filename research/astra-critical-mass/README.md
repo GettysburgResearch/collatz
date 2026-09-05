@@ -83,3 +83,27 @@ solution.
 63 exact simultaneous witnesses, a guarded ordinary compiler check, and five
 resealed-tampering tests. Its two implementations passed. All new claims remain
 PROPOSED; the first packet's proof text and artifacts are unchanged.
+
+## Third pass: unbounded-run renewal and proved ordinary averaged drift
+
+[RUN_RENEWAL.md](RUN_RENEWAL.md) contains T-ASTRA-014 through R-ASTRA-019.
+It collapses complete odd/even runs rather than choosing a bounded step block.
+The new positive theorem gives an ordinary finite-packet height-moment
+asymptotic and an exact cofinal certificate: over every dyadic odd-source
+shell above 2^18, the mean square-root height ratio after one packet is less
+than 22/25. A two-packet certificate and an integrated infinite inverse-ray
+tail are also proved. These are averaged, not pointwise, inequalities.
+
+The closing target is now an explicitly defined **signed sublinear transported
+discrepancy budget**, liminf S_J/J=0. It requires no prescribed decay rate or
+universal logarithmic stopping bound, but remains OPEN. An all-source finite
+certificate shows that the fresh-shell contraction cannot simply be iterated
+on the actual transported full-support seed. This does not refute the weaker
+long-run signed budget or the original Green target.
+
+[X-ASTRA-003](../../experiments/X-ASTRA-003-run-renewal/README.md) supplies
+237 exact cylinders, 190 inverse sources, 40 infinite kernel enclosures,
+50 cofinal base inequalities, a direct finite-core certificate, 25 all-source
+finite-packet intervals, and six resealed-tampering tests. Both separately
+written checkers pass. All new claims remain PROPOSED pending independent
+review; both earlier proof packets and experiment artifacts remain unchanged.
