@@ -1,0 +1,90 @@
+{
+  "payload": {
+    "mass": {
+      "H": 64,
+      "all_sources": true,
+      "all_times": false,
+      "rows": [
+        {
+          "M_scaled": [
+            19729971596797591875134121173,
+            19729971596811102158633984990
+          ],
+          "Q_scaled": [
+            5376647375203087473454496212,
+            5376647375243465663211975288
+          ],
+          "k": 0,
+          "vertices": 64
+        },
+        {
+          "M_scaled": [
+            6203693514318123710229799618,
+            6203693514331633993729682218
+          ],
+          "Q_scaled": [
+            2082456866130700452214572205,
+            2082456866171078641972057543
+          ],
+          "k": 19,
+          "vertices": 18847
+        }
+      ],
+      "scale": 79228162514264337593543950336,
+      "times": [
+        0,
+        19
+      ]
+    },
+    "scope": "reviewer-authored finite regressions; no global termination inference",
+    "small": {
+      "A0_first_crossing_interval": "empty: 0<=d<0; log cutoff undefined",
+      "constants_checked": 3,
+      "rank_controls": [
+        {
+          "R": 3,
+          "Ry": 3,
+          "n": 3,
+          "nonincreasing_safe": true,
+          "quarter_safe": false,
+          "y": 4
+        },
+        {
+          "R": 12,
+          "Ry": 36,
+          "n": 7,
+          "nonincreasing_safe": false,
+          "quarter_safe": false,
+          "y": 13
+        },
+        {
+          "R": 9,
+          "Ry": 12,
+          "n": 9,
+          "nonincreasing_safe": false,
+          "quarter_safe": false,
+          "y": 7
+        },
+        {
+          "R": 81,
+          "Ry": 225,
+          "n": 81,
+          "nonincreasing_safe": false,
+          "quarter_safe": false,
+          "y": 46
+        },
+        {
+          "R": 432,
+          "Ry": 3600,
+          "n": 103,
+          "nonincreasing_safe": false,
+          "quarter_safe": false,
+          "y": 175
+        }
+      ],
+      "rational_period": 30,
+      "rational_preperiod": 13
+    }
+  },
+  "sha256": "f3d7dfb4b445b8fba1306c295d4435fa0edf3236ad21336c02c5452096edc9cd"
+}

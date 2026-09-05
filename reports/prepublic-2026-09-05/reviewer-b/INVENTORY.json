@@ -1,0 +1,804 @@
+{
+  "baseline": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+  "cutoff_utc": "2026-09-05T15:52:58Z",
+  "cutoff_local": "2026-09-05T18:52:58+03:00",
+  "final_recheck_window_utc": [
+    "2026-09-05T16:47:00Z",
+    "2026-09-05T16:51:00Z"
+  ],
+  "heads": {
+    "91": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+    "92": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359"
+  },
+  "observed_primary_head_changes_after_cutoff": [],
+  "primary_file_counts": {
+    "91": 9,
+    "92": 66,
+    "total_path_snapshots": 75,
+    "distinct_paths": 74
+  },
+  "files": [
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "experiments/X-ATR-001-three-routes/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Published semantic payload independently reconstructed and matched.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/experiments/X-ATR-001-three-routes/results/canonical.json"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "experiments/X-ATR-001-three-routes/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Original protocol replayed; see exact generator/verifier distinction in VALIDATION.md.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/experiments/X-ATR-001-three-routes/run.py"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "experiments/X-ATR-001-three-routes/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Original protocol replayed; see exact generator/verifier distinction in VALIDATION.md.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/experiments/X-ATR-001-three-routes/verify.py"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "reports/astra-three-route-01/2026-09-05-three-route-pass.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/reports/astra-three-route-01/2026-09-05-three-route-pass.md"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "research/astra-three-routes/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/research/astra-three-routes/README.md"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "research/astra-three-routes/ROUTE_1_TRANSFER.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/research/astra-three-routes/ROUTE_1_TRANSFER.md"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "research/astra-three-routes/ROUTE_2_SOURCE_HEIGHT.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/research/astra-three-routes/ROUTE_2_SOURCE_HEIGHT.md"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "research/astra-three-routes/ROUTE_3_RANK_CERTIFICATES.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/research/astra-three-routes/ROUTE_3_RANK_CERTIFICATES.md"
+    },
+    {
+      "pr": 91,
+      "sha": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "path": "research/astra-three-routes/SOURCES_AND_STATUS.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b8c88843726ee7ac11cf91323c69bf911ca50706/research/astra-three-routes/SOURCES_AND_STATUS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-001-three-routes/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-001-three-routes/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-001-three-routes/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Artifact schema, finite scope, coverage and selected entries inspected; entire numerical payload not independently reconstructed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-001-three-routes/results/canonical.json"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-001-three-routes/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-001-three-routes/run.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-001-three-routes/test_verifier.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-001-three-routes/test_verifier.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-001-three-routes/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-001-three-routes/verify.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-002-three-routes/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-002-three-routes/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-002-three-routes/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Artifact schema, finite scope, coverage and selected entries inspected; entire numerical payload not independently reconstructed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-002-three-routes/results/canonical.json"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-002-three-routes/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-002-three-routes/run.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-002-three-routes/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-002-three-routes/verify.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-003-boundary-records-shadow/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-003-boundary-records-shadow/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-003-boundary-records-shadow/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Artifact schema, finite scope, coverage and selected entries inspected; entire numerical payload not independently reconstructed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-003-boundary-records-shadow/results/canonical.json"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-003-boundary-records-shadow/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-003-boundary-records-shadow/run.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-003-boundary-records-shadow/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-003-boundary-records-shadow/verify.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-004-moving-ghost/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-004-moving-ghost/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-004-moving-ghost/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Artifact schema, finite scope, coverage and selected entries inspected; entire numerical payload not independently reconstructed.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-004-moving-ghost/results/canonical.json"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-004-moving-ghost/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-004-moving-ghost/run.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-004-moving-ghost/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Full original protocol not rerun. For first packet, independent H64 time0/19 mass and controls were checked separately.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-004-moving-ghost/verify.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-rank-budget/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-rank-budget/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-rank-budget/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Published semantic payload independently reconstructed and matched.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-rank-budget/results/canonical.json"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-rank-budget/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Original protocol replayed; see exact generator/verifier distinction in VALIDATION.md.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-rank-budget/run.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-rank-budget/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Original protocol replayed; see exact generator/verifier distinction in VALIDATION.md.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-rank-budget/verify.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-spectrum-switch/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-spectrum-switch/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-spectrum-switch/results/canonical.json",
+      "role": "artifact",
+      "evidence": "Published semantic payload independently reconstructed and matched.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-spectrum-switch/results/canonical.json"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-spectrum-switch/run.py",
+      "role": "code",
+      "evidence": "Complete code read. Original protocol replayed; see exact generator/verifier distinction in VALIDATION.md.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-spectrum-switch/run.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "experiments/X-ASTRA3-005-spectrum-switch/verify.py",
+      "role": "code",
+      "evidence": "Complete code read. Original protocol replayed; see exact generator/verifier distinction in VALIDATION.md.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/experiments/X-ASTRA3-005-spectrum-switch/verify.py"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "reports/astra-three-routes-01/2026-09-05-three-route-pass.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/reports/astra-three-routes-01/2026-09-05-three-route-pass.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "reports/astra-three-routes-02/2026-09-05-all-three-continuation.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/reports/astra-three-routes-02/2026-09-05-all-three-continuation.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "reports/astra-three-routes-03/2026-09-05-third-all-route-pass.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/reports/astra-three-routes-03/2026-09-05-third-all-route-pass.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "reports/astra-three-routes-04/2026-09-05-moving-rank-pass.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/reports/astra-three-routes-04/2026-09-05-moving-rank-pass.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "reports/astra-three-routes-05/2026-09-05-end-to-end-attempt.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/reports/astra-three-routes-05/2026-09-05-end-to-end-attempt.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "reports/astra-three-routes-05/2026-09-05-end-to-end-rank-budget.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/reports/astra-three-routes-05/2026-09-05-end-to-end-rank-budget.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/ATTEMPT.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/ATTEMPT.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/CARRY_NORMALIZATION.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/CARRY_NORMALIZATION.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/CLAIM_MATRIX.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/CLAIM_MATRIX.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/PASS5_SPECTRUM_SWITCH_IMPORT.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/PASS5_SPECTRUM_SWITCH_IMPORT.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/ROUTE1_MELLIN.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/ROUTE1_MELLIN.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/ROUTE2_RETURN_ECHO.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/ROUTE2_RETURN_ECHO.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/ROUTE3_RANKS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/ROUTE3_RANKS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/SOURCES.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/SOURCES.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass2/NONLINEAR_PROFILE_RANKS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass2/NONLINEAR_PROFILE_RANKS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass2/ORBIT_MELLIN.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass2/ORBIT_MELLIN.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass2/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass2/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass2/SC_TAIL_AND_ECHO.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass2/SC_TAIL_AND_ECHO.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass2/SOURCES_AND_REVIEW.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass2/SOURCES_AND_REVIEW.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass3/BOUNDARY_CHARGE.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass3/BOUNDARY_CHARGE.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass3/FINITE_RECORDS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass3/FINITE_RECORDS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass3/JOINT_ARITHMETIC_RANKS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass3/JOINT_ARITHMETIC_RANKS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass3/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass3/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass3/SOURCES_AND_REVIEW.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass3/SOURCES_AND_REVIEW.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass4/MOVING_GHOST_RANK.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass4/MOVING_GHOST_RANK.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass4/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass4/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass4/RENEWAL_MASS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass4/RENEWAL_MASS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass4/RESONANT_SOURCE_FAN.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass4/RESONANT_SOURCE_FAN.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass4/SOURCES_AND_REVIEW.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass4/SOURCES_AND_REVIEW.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5-spectrum-switch/ATTEMPT_AND_SOURCES.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5-spectrum-switch/ATTEMPT_AND_SOURCES.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5-spectrum-switch/INDUCED_MASS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5-spectrum-switch/INDUCED_MASS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5-spectrum-switch/PLATEAUS_AND_SOURCES.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5-spectrum-switch/PLATEAUS_AND_SOURCES.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5-spectrum-switch/RANK_SPECTRUM.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5-spectrum-switch/RANK_SPECTRUM.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5-spectrum-switch/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5-spectrum-switch/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5-spectrum-switch/SWITCH_REPAYMENT.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5-spectrum-switch/SWITCH_REPAYMENT.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5/MERGING_BARRIERS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5/MERGING_BARRIERS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5/RANK_MOMENTS.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5/RANK_MOMENTS.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5/README.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5/README.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5/SOURCES_AND_REVIEW.md",
+      "role": "text",
+      "evidence": "Complete documentation/provenance/status text read and cross-checked; author reports do not themselves verify mathematics.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5/SOURCES_AND_REVIEW.md"
+    },
+    {
+      "pr": 92,
+      "sha": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "path": "research/astra-three-routes/pass5/UNSAFE_REPAYMENT.md",
+      "role": "text",
+      "evidence": "Complete final proof body read and arguments independently reconstructed; claim-level verdict in CLAIM_MATRIX.csv.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7bb6d36d3bc37dd09b52aa9a23c8e33973032359/research/astra-three-routes/pass5/UNSAFE_REPAYMENT.md"
+    }
+  ],
+  "baseline_audited": [
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "AGENTS.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "CONTRIBUTING.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "STATE.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "research/README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "docs/RESEARCH_MAP.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "research/integrated/README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "research/RESULTS_CATALOG.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/CANONICAL.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/registry.json",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/registry/canonical-1.json",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/registry/canonical-2.json",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/registry/roadmap.json",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "claims/aliases.json",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "archive/README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "docs/integration/CURRENT.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "docs/INTEGRATION_PRACTICE.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "tools/check_integration_state.py",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "research/integrated/coefficient-stopping/README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    },
+    {
+      "sha": "9704bcf1ff33cc9e2b729e0c40137a1e55b95397",
+      "path": "research/integrated/periodic-tails/README.md",
+      "evidence": "Full active text/code or status record inspected; no full-checkout execution."
+    }
+  ],
+  "postbaseline_inventory": {
+    "search": "repo GettysburgResearch/collatz; updated:>=2026-08-02; all states; topn100; repeated near completion",
+    "returned_prs": [
+      92,
+      90,
+      91,
+      88,
+      87,
+      86,
+      85
+    ],
+    "baseline_already_contains": [
+      85,
+      86
+    ],
+    "postbaseline_source_prs": [
+      87,
+      88,
+      90,
+      91,
+      92
+    ],
+    "non_pr_workspace_issue": 89,
+    "limitations": "Search/PR/changed-path inventory, not an audit of every un-PR-ed branch, uncommitted workspace or unreachable object."
+  },
+  "other_observed_heads": {
+    "87": "e9adc409031a61f3801c4ee1e1e6deeb34188eb7",
+    "88": "c28922fb6d1c070bf86a76192f40bc9ea3edd67c",
+    "90": "78ac7c8489f1df81230402808b1f4b77b18fae73"
+  },
+  "relevant_omissions": [
+    "PR92 description and shared root index omit later spectrum-switch import at frozen head.",
+    "PR90 actual head contains boundary-fan and inverse-shadow-frontier additions absent from its stale description; inventoried, not assigned full mathematical review here.",
+    "PR88 description points to T-FHP paths rather than the actual retrieved MZ-FH file."
+  ],
+  "pass_snapshots_92": [
+    "879343c33a7dca29128891cf6e10d9c7be1ba482",
+    "48e043c2822dbeea4f91c801ac2d3fc531af1466",
+    "7d0397c92879545609aa4097f89f5497cd53026d",
+    "6266bd8f73ce2f8488c02fbe29f34fd2b4f289bc",
+    "057f34de377e7d4224f60cbd60191b2a93f373f6",
+    "a19115bbf99485b1b8ba15521df87f5fcef8946b",
+    "7bb6d36d3bc37dd09b52aa9a23c8e33973032359"
+  ],
+  "discussions": {
+    "pr91": "No comments returned by combined PR discussion fetch at review start.",
+    "pr92": [
+      {
+        "id": 5548713091,
+        "time": "2026-09-05T02:22:54Z",
+        "meaning": "Pass3 publication and tuple/list replay correction; no independent mathematical verdict."
+      },
+      {
+        "id": 5551166886,
+        "time": "2026-09-05T10:27:09Z",
+        "meaning": "Pass4 publication; wrong transcribed payload rejected before final correct canonical blob."
+      },
+      {
+        "id": 5552445351,
+        "time": "2026-09-05T14:23:16Z",
+        "meaning": "Rank-budget publication completion/readme receipt; no independent theorem approval."
+      }
+    ],
+    "boundary": "Final frozen files were reviewed; historical drafts are retained as provenance, not retroactively certified. Discussion after cutoff is not incorporated without a delta review."
+  },
+  "unreviewed": [
+    "Independent full numerical replays of PR92 protocols1-4, beyond targeted checks listed separately.",
+    "All post-cutoff primary-head changes, if published later.",
+    "Full mathematical review of PR87/88/90 and their historical dependency cones.",
+    "External Lean builds and predecessor certificate payloads.",
+    "Comprehensive external novelty/priority investigation.",
+    "Full legacy rights/secret/history and effective permissions audit.",
+    "Full-checkout structural validator execution.",
+    "Any proposed correction or combined integrated wording in this report."
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "bootstrap_algebra": {
+    "D": "3/25",
+    "beta": "89/100",
+    "crosses_0_901": true,
+    "delta": "3/50",
+    "fiber_guard": true,
+    "inverse_gamma": "901/1000",
+    "local_guard": true,
+    "r": "1/2",
+    "recursive_exponent_gap": "1/200",
+    "warning": "The parameter point is illustrative; no Collatz killed-set decorrelation certificate with these values is supplied."
+  },
+  "constants": {
+    "no_descent_small_range_cutoff": 6500,
+    "proved_finite_exponent": "19/20",
+    "slope_floor": "6309/10000"
+  },
+  "exact_inequalities": {
+    "alpha_gt_6309_over_10000": true,
+    "chernoff_base_lt_2_pow_19_over_20": true,
+    "log2_over_log_3_plus_1_over_6500_gt_6309_over_10000": true
+  },
+  "exhaustive_rows": [
+    {
+      "ballot_words": 1,
+      "cycle_lemma_classes_checked": 1,
+      "depth": 1,
+      "no_descent_roots": 1
+    },
+    {
+      "ballot_words": 1,
+      "cycle_lemma_classes_checked": 1,
+      "depth": 2,
+      "no_descent_roots": 2
+    },
+    {
+      "ballot_words": 2,
+      "cycle_lemma_classes_checked": 1,
+      "depth": 3,
+      "no_descent_roots": 3
+    },
+    {
+      "ballot_words": 3,
+      "cycle_lemma_classes_checked": 1,
+      "depth": 4,
+      "no_descent_roots": 4
+    },
+    {
+      "ballot_words": 4,
+      "cycle_lemma_classes_checked": 1,
+      "depth": 5,
+      "no_descent_roots": 5
+    },
+    {
+      "ballot_words": 8,
+      "cycle_lemma_classes_checked": 3,
+      "depth": 6,
+      "no_descent_roots": 9
+    },
+    {
+      "ballot_words": 13,
+      "cycle_lemma_classes_checked": 3,
+      "depth": 7,
+      "no_descent_roots": 14
+    },
+    {
+      "ballot_words": 19,
+      "cycle_lemma_classes_checked": 4,
+      "depth": 8,
+      "no_descent_roots": 20
+    },
+    {
+      "ballot_words": 38,
+      "cycle_lemma_classes_checked": 10,
+      "depth": 9,
+      "no_descent_roots": 39
+    },
+    {
+      "ballot_words": 64,
+      "cycle_lemma_classes_checked": 12,
+      "depth": 10,
+      "no_descent_roots": 65
+    },
+    {
+      "ballot_words": 128,
+      "cycle_lemma_classes_checked": 30,
+      "depth": 11,
+      "no_descent_roots": 129
+    },
+    {
+      "ballot_words": 226,
+      "cycle_lemma_classes_checked": 43,
+      "depth": 12,
+      "no_descent_roots": 227
+    },
+    {
+      "ballot_words": 367,
+      "cycle_lemma_classes_checked": 55,
+      "depth": 13,
+      "no_descent_roots": 368
+    },
+    {
+      "ballot_words": 734,
+      "cycle_lemma_classes_checked": 143,
+      "depth": 14,
+      "no_descent_roots": 735
+    },
+    {
+      "ballot_words": 1295,
+      "cycle_lemma_classes_checked": 201,
+      "depth": 15,
+      "no_descent_roots": 1296
+    },
+    {
+      "ballot_words": 2114,
+      "cycle_lemma_classes_checked": 273,
+      "depth": 16,
+      "no_descent_roots": 2115
+    }
+  ],
+  "finite_bound_checks": [
+    {
+      "cutoff": 2,
+      "depth": 1,
+      "exact_power_inequality": true,
+      "no_descent_count": 1
+    },
+    {
+      "cutoff": 4,
+      "depth": 2,
+      "exact_power_inequality": true,
+      "no_descent_count": 2
+    },
+    {
+      "cutoff": 8,
+      "depth": 3,
+      "exact_power_inequality": true,
+      "no_descent_count": 3
+    },
+    {
+      "cutoff": 16,
+      "depth": 4,
+      "exact_power_inequality": true,
+      "no_descent_count": 4
+    },
+    {
+      "cutoff": 32,
+      "depth": 5,
+      "exact_power_inequality": true,
+      "no_descent_count": 5
+    },
+    {
+      "cutoff": 64,
+      "depth": 6,
+      "exact_power_inequality": true,
+      "no_descent_count": 9
+    },
+    {
+      "cutoff": 128,
+      "depth": 7,
+      "exact_power_inequality": true,
+      "no_descent_count": 14
+    },
+    {
+      "cutoff": 256,
+      "depth": 8,
+      "exact_power_inequality": true,
+      "no_descent_count": 20
+    },
+    {
+      "cutoff": 512,
+      "depth": 9,
+      "exact_power_inequality": true,
+      "no_descent_count": 39
+    },
+    {
+      "cutoff": 1024,
+      "depth": 10,
+      "exact_power_inequality": true,
+      "no_descent_count": 65
+    },
+    {
+      "cutoff": 2048,
+      "depth": 11,
+      "exact_power_inequality": true,
+      "no_descent_count": 129
+    },
+    {
+      "cutoff": 4096,
+      "depth": 12,
+      "exact_power_inequality": true,
+      "no_descent_count": 227
+    },
+    {
+      "cutoff": 8192,
+      "depth": 13,
+      "exact_power_inequality": true,
+      "no_descent_count": 368
+    },
+    {
+      "cutoff": 16384,
+      "depth": 14,
+      "exact_power_inequality": true,
+      "no_descent_count": 735
+    },
+    {
+      "cutoff": 32768,
+      "depth": 15,
+      "exact_power_inequality": true,
+      "no_descent_count": 1296
+    },
+    {
+      "cutoff": 65536,
+      "depth": 16,
+      "exact_power_inequality": true,
+      "no_descent_count": 2115
+    }
+  ],
+  "scope": {
+    "does_not_prove": [
+      "fixed-height forward power saving",
+      "MZ-FH-005 killed-set decorrelation hypothesis",
+      "SC*",
+      "FC*",
+      "the Collatz conjecture"
+    ],
+    "max_exhaustive_depth": 16
+  },
+  "semantic_sha256": "d78c7b1e04c04aba446bff07899331cf4765eef2b85b9de9b428690fec7f3558",
+  "status": "finite checks passed; fixed-height power saving remains unproved"
+}

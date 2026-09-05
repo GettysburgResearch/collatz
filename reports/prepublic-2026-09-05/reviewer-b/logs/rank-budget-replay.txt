@@ -1,0 +1,5 @@
+EXACT PUBLISHED VERIFIER BLOB MATCHED: d87e438bac13f7b7c6ad0aec77625d8d4c923c86
+PUBLISHED PAYLOAD SHA-256 MATCHED: 1dc5510f205dd8b4a106a636af68ef8a7252a867fc1e4c10310d93e54567fb5d
+RESEALED TAMPER TESTS REJECTED: 10
+DURATION_SECONDS 0.357
+{"barrier_cases": 45, "safe_source_count": 1311, "switch_cases": 96, "volume": {"integer_comparisons": 3, "rows": [{"B": 1, "count": 1, "digest": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b", "maximum": 2}, {"B": 16, "count": 8, "digest": "fca44b9083f1de11b3db6e8e56188f38d3be0a87c017902f0c23c403d39635a8", "maximum": 10}, {"B": 256, "count": 39, "digest": "04703ab65e97937a877ca6865575ac8eb8e3dc861d5382b98fbc087ff5c126b7", "maximum": 244}, {"B": 4096, "count": 157, "digest": "ec8ada9cb66e13f4fdbb85f199745b0aa89214d07b2674a339ee40b63287f89a", "maximum": 2188}, {"B": 65536, "count": 635, "digest": "a28e545f181bde60a9f242a2d677667f62b6b2409426ad7c362c22216fb5ac62", "maximum": 59050}, {"B": 16777216, "count": 10195, "digest": "51e6f1d495031eed9b3a0f57acd44ee687a4e11f7f715754f5d1ec542e7b6ce8", "maximum": 14348908}]}}
