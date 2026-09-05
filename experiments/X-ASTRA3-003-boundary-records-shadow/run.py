@@ -291,7 +291,9 @@ def build():
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--output',type=Path)
     ap.add_argument('--check',type=Path); args = ap.parse_args()
-    payload = build(); report = dict(payload=payload,sha256=digest(payload))
+    # Canonical JSON uses lists; normalize the tuple-valued feature dictionaries.
+    payload = json.loads(canonical(build()))
+    report = dict(payload=payload,sha256=digest(payload))
     if args.check:
         assert json.loads(args.check.read_text()) == report, 'canonical mismatch'
     if args.output:
