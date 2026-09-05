@@ -97,3 +97,13 @@ Recommended mathematical review order: the rank coefficient-transport lemma,
 the killed odd-inverse boundary and analytic tails, and the source-versus-endpoint
 normalization in the echo sieve. Review the all-time hypotheses separately from
 the successful finite certificates.
+
+## Continuation: all three routes remain active
+
+The [second pass](pass2/README.md) extends this packet at the separately frozen
+parent `879343c33a7dca29128891cf6e10d9c7be1ba482`. It supplies explicit orbitwise
+Mellin budgets and a cofinal-time bias criterion; actual SC-infinite tail
+extraction and a complete continuation compiler; and separate fixed-block and
+adaptive-macro obstructions for arbitrary nonlinear valuation profiles. All
+new claims remain PROPOSED pending independent review. Earlier proof and
+experiment bodies above are preserved; no route is dropped.
