@@ -107,3 +107,27 @@ long-run signed budget or the original Green target.
 finite-packet intervals, and six resealed-tampering tests. Both separately
 written checkers pass. All new claims remain PROPOSED pending independent
 review; both earlier proof packets and experiment artifacts remain unchanged.
+
+## Fourth pass: minimum-rank merging and an unbounded forward-delay bypass
+
+[MINIMUM_RANK.md](MINIMUM_RANK.md) contains T-ASTRA-020 through T-ASTRA-024.
+Using PR #91's section and integer rank, it turns lower-rank merging sources
+into exact certificates, including sources larger than the current integer.
+The h=2 minimum-rank branch reduces to five residue classes modulo 1296.
+For every H>=6 and L>=1, an ordinary CRT family has a larger ancestor of rank
+less than one quarter of the endpoint's rank, reached in two reverse section
+returns, while the next L forward returns all have rank above the initial one.
+This is an all-parameter positive reduction, not a complete residual cover.
+
+A two-sided affine compiler lifts 37 finite merging diagrams to infinite
+upward progressions, checking both exact valuations and the limiting rank
+ratio. It does not assume that every finite rank drop lifts indefinitely.
+The normalizer and fixed-depth search still return unresolved cases.
+**Q-ASTRA-003**, complete lower-rank merging coverage, remains OPEN; the earlier
+Green and signed-discrepancy targets are not promoted or closed.
+
+[X-ASTRA-004](../../experiments/X-ASTRA-004-minimum-rank/README.md) checks 87,381
+section sources, 128 complete inverse fans, 70 CRT family instances, and all
+37 progression tiles. Two separately written implementations and six resealed
+tamper tests pass. All new claims remain PROPOSED pending independent review;
+all three earlier proof packets and their experiment artifacts are unchanged.
