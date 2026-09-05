@@ -129,3 +129,16 @@ all-parameter uphill rank decreases, exact all-residence mass sums, a single
 resonant inverse column, and two-sided source certificates. Global rank
 monotonicity is explicitly refuted; unsafe switching and a complete merging
 cover remain open. All claims remain PROPOSED. Earlier bodies are unchanged.
+
+## Fifth continuation: three end-to-end attempts and unsafe repayment
+
+The [fifth pass](pass5/README.md), research commit
+`057f34de377e7d4224f60cbd60191b2a93f373f6`, is directly above
+`6266bd8f73ce2f8488c02fbe29f34fd2b4f289bc`. It proves sharp square-root rank
+counting and distribution-free safe moment bounds, then exhibits an unsafe
+moment explosion and rules out the full summable monomial-weight attempt.
+It gives an all-diagram peak-rank barrier with a matching-scale repayment
+family, and a total guarded rule repaying arbitrarily many unsafe mode changes.
+The unsafe estimate, complete merging cover, and universal selector remain
+OPEN; all new theorem-level claims are PROPOSED pending independent review.
+Earlier proof and experiment bodies are preserved; all three routes continue.
