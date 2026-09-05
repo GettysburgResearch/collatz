@@ -2,6 +2,17 @@
 
 The repository supports free exploration and a narrow integration layer.
 
+## Join and start
+
+1. Read the [research map](docs/RESEARCH_MAP.md), choose a question, and check overlapping issues and PRs. You do not need permission to explore a new direction.
+2. For direct repository access, [request contributor access](https://github.com/GettysburgResearch/collatz/issues/new?template=contributor-access.md) with your GitHub username and the project you want to work on. While the repository is private, ask the maintainer who invited you instead. An owner or authorized team maintainer adds you to `polymath-contributors`; accept any GitHub invitation. No email address, biography, or research proposal is required.
+3. Work on your own branch and open a PR. Contributors have Write access; leave `main`, other people's branches, and frozen research records to the integration process. Once public, anyone can contribute through a fork and PR without joining the organization.
+4. Describe the question, result status, exact dependencies, what you ran, and the smallest remaining gap. Useful reviews, counterexamples and failed attempts are contributions.
+
+Follow the [phone tutorial](docs/PHONE.md) for the connected GitHub workflow, [AGENTS.md](AGENTS.md) for research-agent guidance, and [shared review](docs/REVIEWING.md) for reviewer and integrator responsibilities.
+
+Commit public-safe material: no credentials, private chat transcripts, personal contact details, or secret local configuration. Credit contributors by their chosen public name or GitHub username; ordinary scholarly citations are welcome.
+
 ## Explore freely
 
 Broad research PRs, informal notes, experiments, countermodels and changes of direction are welcome. Before publishing, make visible the exact map and normalization, each load-bearing claim's status, the finite/all-depth and ordinary/2-adic boundary, and the unresolved step. No registry form is required to explore.
