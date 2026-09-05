@@ -10,9 +10,6 @@
 
 The proof below is a clean extraction of the reviewed component arguments. The exact repository-level synthesis still needs one reviewer to check the all-zero endpoint, finite preperiod, complete-denominator orientation, and fixed-block controller scope together. Until then, cite the source-qualified clauses or state this qualification.
 
-
-> **Scoped follow-up (E-D-002).** Reviewer D reconstructed the retained core at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`; this edition applies the localized corrections recorded in [E-D-002](../ERRATA.md#e-d-002--positive-realization-and-controller-scope). The new replacement wording is **PROPOSED pending narrow independent review**; it does not inherit a whole-file verdict or promote a canonical synthesis. The exact previous bytes remain in the source-preservation archive.
-
 ## Setup
 
 Use the shortcut map
@@ -132,21 +129,19 @@ Then `y` is a positive ordinary integer whose complete parity tail is `w^∞`. B
 
 ### Autonomous finite-state schedule firewall
 
-An autonomous **deterministic** finite-state machine with a fixed finite emitted parity block for each transition and **infinitely productive** output emits an eventually periodic parity word. If that word is realized by a positive integer, the integer eventually cycles; otherwise the output is a signed or nonordinary completion. Such a schedule-first machine cannot certify a divergent positive orbit.
+An autonomous finite-state machine emits an eventually periodic word. If that word is realized by a positive integer, the integer eventually cycles; otherwise the output is a signed or nonordinary completion. Such a schedule-first machine cannot certify a divergent positive orbit.
 
 This does not cover a seed-first nonlinear machine whose unbounded ordinary state causally generates a genuinely aperiodic word.
 
 ### The complete denominator is mandatory
 
-The periodic class has no compactness gap left. For a nonempty word, positive ordinary realization has the finite certificate
+The periodic class has no compactness gap left. Positive ordinary realization is exactly a finite complete-denominator condition plus exact replay:
 
 ```text
-C_w > 0 and 2^L-3^s > 0
-+ the complete denominator 2^L-3^s divides C_w
+2^L-3^s divides C_w
++ the primitive positive cycle is nontrivial
 + every branch replays exactly.
 ```
-
-To certify a **nontrivial positive cycle**, additionally require that the replayed cycle is not `1→2→1`. Nontriviality is not part of the general positive-realization criterion: `10` realizes `1`, and `01` realizes `2` (E-D-002).
 
 A proper-factor hit is not enough.
 
@@ -160,7 +155,7 @@ None is a positive counterexample.
 
 ## Fixed-block controller scope
 
-The theorem applies directly to raw parity words. It applies to an accelerated or controller alphabet only after proving that each repeated controller symbol emits one fixed finite parity block. The evolution and block emissions must be deterministic and autonomous, and the eventual recurrent control cycle must emit a positive total number of parity bits. Empty individual blocks are allowed only with this productivity condition. Nondeterministic choices, external inputs, or recurrence of a coarse state label alone do not imply periodicity of the physical parity word.
+The theorem applies directly to raw parity words. It applies to an accelerated or controller alphabet only after proving that each repeated controller symbol emits one fixed finite parity block. Recurrence of a coarse state label alone does not imply periodicity of the physical parity word.
 
 ## Boundaries and common misreadings
 

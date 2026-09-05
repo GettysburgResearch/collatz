@@ -4,14 +4,11 @@ Claim ID: `L-0041`
 Title: Canonical roots, canonical caps, appended high blocks, and the exact least-root recurrence  
 Status: `PROPOSED`  
 Authoring agent: `gpt56-pro-01`  
-Reviewing agents: Reviewer D, frozen core and FD-03; replacement wording pending narrow independent review  
+Reviewing agents: none yet  
 Created: 2026-08-01  
 Dependencies: elementary arithmetic; `T-0043` for the general stabilization interpretation  
 Scope: the strict stationary six-branch chart with multiplier `3^12/2^19`  
 Related counterexample candidates: none
-
-
-> **Scoped follow-up (E-D-003).** Reviewer D reconstructed the retained core at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`; this edition applies the localized corrections recorded in [E-D-003](../../research/integrated/ERRATA.md#e-d-003--empty-depth-and-high-quotient-normalization). The new replacement wording is **PROPOSED pending narrow independent review**; it does not inherit a whole-file verdict or promote a canonical synthesis. The exact previous bytes remain in the source-preservation archive.
 
 ## 1. Fixed chart
 
@@ -60,7 +57,7 @@ r_i+Qh\longmapsto c_i+Ph,
 
 ## 2. Canonical tile of a finite word
 
-For every nonempty finite type word
+For every finite type word
 
 \[
 w=i_0i_1\cdots i_{n-1},
@@ -133,7 +130,7 @@ S_{wi}=c_i+Pk_w(i).}
 \tag{7}
 \]
 
-A general lift by `Q^(n+1)h` increases the pre-final **value** by `P^n Q h`, its high **quotient** by `P^n h`, and the next output by `P^(n+1)h` (E-D-003).  This proves `(3)` by induction.  Uniqueness follows from the unique source residue of every fixed parity/type word. ∎
+A general lift by `Q^(n+1)h` reaches the appended source with high quotient increased by `P^nQh`, and therefore reaches the output with high tail `P^(n+1)h`.  This proves `(3)` by induction.  Uniqueness follows from the unique source residue of every fixed parity/type word. ∎
 
 ## 3. Newly appended most-significant block
 
@@ -174,7 +171,7 @@ and put
 m_n=\min\mathcal S_n.
 \]
 
-At empty depth, `S_0=Z_{>0}` and **`m_0=1`**, while the canonical empty-word residue is **`R_empty=0`**. These are different objects. Every finite word occurs on positive ordinary roots, so every `S_n` is nonempty. By `(3)`, for **`n>=1`** only,
+Every finite word occurs on positive ordinary roots, so every `S_n` is nonempty.  By `(3)`,
 
 \[
 \boxed{
@@ -182,7 +179,7 @@ m_n=\min_{|w|=n}R_w.}
 \tag{10}
 \]
 
-Equations `(6)` and `(10)` give the following recurrence for `n>=1`; it also holds at `n=0` by directly appending one type to the empty word:
+Equations `(6)` and `(10)` give the exact all-depth recurrence
 
 \[
 \boxed{

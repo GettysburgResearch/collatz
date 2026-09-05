@@ -1,0 +1,82 @@
+{
+  "schema": "reviewer-d-integration-validation/v1",
+  "base_commit": "cd1b3689e8d37fc4232945072e2faf6bd5ee47bd",
+  "review_commit": "1c7744bcb9ded9336036919ffc7a19b5576ea58e",
+  "environment": "local Linux execution of authenticated file materialization; no complete authenticated repository checkout",
+  "execution_date_utc": "2026-09-05",
+  "authenticated_blobs": {
+    "reviewer-d/targeted_checks.py": "37f605c074e0796479adc2e7097fa5770b3f0f69",
+    "reviewer-d/checks.json": "84b9e2de73b9a598724d956a458ea7a2996b9dea",
+    "reviewer-d/final_checks.py": "44a35afafb6cb30327a6180b554e6f11b44f944a",
+    "reviewer-d/final_checks.json": "edd83e61beaea9f24f80649a052e8cab42f0a3bc"
+  },
+  "executions": [
+    {
+      "program": "reviewer-d/targeted_checks.py",
+      "flags": [
+        "-B"
+      ],
+      "arguments": "--check reviewer-d/checks.json --self-test",
+      "exit_code": 0,
+      "stdout": "logs/targeted_checks-normal.txt",
+      "stderr": ""
+    },
+    {
+      "program": "reviewer-d/targeted_checks.py",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "arguments": "--check reviewer-d/checks.json --self-test",
+      "exit_code": 0,
+      "stdout": "logs/targeted_checks-optimized.txt",
+      "stderr": ""
+    },
+    {
+      "program": "reviewer-d/final_checks.py",
+      "flags": [
+        "-B"
+      ],
+      "arguments": "--check reviewer-d/final_checks.json --self-test",
+      "exit_code": 0,
+      "stdout": "logs/final_checks-normal.txt",
+      "stderr": ""
+    },
+    {
+      "program": "reviewer-d/final_checks.py",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "arguments": "--check reviewer-d/final_checks.json --self-test",
+      "exit_code": 0,
+      "stdout": "logs/final_checks-optimized.txt",
+      "stderr": ""
+    },
+    {
+      "program": "integration-d/check_followup.py",
+      "flags": [
+        "-B"
+      ],
+      "arguments": "--self-test",
+      "exit_code": 0,
+      "stdout": "logs/followup-normal.txt",
+      "stderr": ""
+    },
+    {
+      "program": "integration-d/check_followup.py",
+      "flags": [
+        "-O",
+        "-B"
+      ],
+      "arguments": "--self-test",
+      "exit_code": 0,
+      "stdout": "logs/followup-optimized.txt",
+      "stderr": ""
+    }
+  ],
+  "full_checkout_original_structural_validator": "NOT RUN",
+  "full_checkout_ab_preservation_validator": "NOT RUN",
+  "large_external_replays": "NOT RUN",
+  "scientific_boundary": "Finite evidence, exact source preservation and localized review implementation; replacement wording remains pending narrow review."
+}

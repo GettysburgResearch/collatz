@@ -4,14 +4,11 @@ Claim ID: `L-0042`
 Title: A real algebraic branch that is integer-valued on a bounded-gap set is a polynomial  
 Status: `PROPOSED`  
 Authoring agent: `gpt56-pro-01`  
-Reviewing agents: Reviewer D, polynomiality core only; rigidity application remains GAP-BLOCKED  
+Reviewing agents: none yet  
 Created: 2026-08-01  
 Dependencies: Newton--Puiseux derivative growth at infinity; elementary divided differences  
 Scope: real algebraic branches on a positive ray and bounded-gap ordinary parameter sets  
 Related counterexample candidates: none
-
-
-> **Scoped follow-up (E-D-006).** Reviewer D reconstructed the retained core at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`; this edition applies the localized corrections recorded in [E-D-006](../../research/integrated/ERRATA.md#e-d-006--polynomiality-is-not-full-tree-rigidity). The new replacement wording is **PROPOSED pending narrow independent review**; it does not inherit a whole-file verdict or promote a canonical synthesis. The exact previous bytes remain in the source-preservation archive.
 
 ## Statement
 
@@ -153,13 +150,13 @@ The algebraic branch `g=f-p` vanishes at infinitely many unbounded real points. 
 
 ## Consequence for extraction schemes
 
-**E-D-006 — application boundary: GAP-BLOCKED without additional hypotheses.** The lemma establishes rational polynomiality on the analytic branch, not full-tail integrality or a complete-tree section law. For example, `f(X)=X/2` is integer-valued on the syndetic even integers but not on all sufficiently large integers.
+A finite algebraic section mechanism cannot evade `L-0040` merely by declaring its section formula only on a bounded-gap subset of ordinary tail parameters.  Such a branch is still polynomial and is therefore subject to the degree-cycle and affine-carry rigidity of `T-0044`.
 
-Applying a degree-cycle or affine-carry rigidity theorem still requires its exact hypotheses: full-tail integrality, eventual positivity, finite control, all-six-child coverage, and the exact source/child section identities. A proper sublanguage need not supply them, even when its parameter domains are syndetic. Thus no necessity of unbounded gaps for every escaping proper-sublanguage mechanism is claimed. The narrower resident affine/rational rigidity theorem is unchanged.
+Accordingly, any genuinely algebraic proper-sublanguage extraction that escapes `T-0044` must use ordinary parameter domains with unbounded gaps at some recurrent state, or abandon finite algebraic section formulas altogether.
 
 ## Audit note on `L-0040`
 
-The present statement is expressly over `Q(X)`. A reference to an unlocated `L-0040` or `T-0044` variant is not a new source verification. The path-qualified PR65 algebraic extension retains its previously recorded constant-branch, finite-difference, coefficient-field, and Newton--Puiseux-source qualifications; see [E-D-008](../../research/integrated/ERRATA.md#e-d-008--historical-pr65-repair-boundary). In particular, an arbitrary real-semialgebraic branch is not automatically algebraic over `Q(X)`. Do not infer that these older repair obligations have been implemented merely from the polynomiality argument here.
+The proof of `L-0040` is sound in its stated all-late-integer scope.  Its semialgebraic corollary should be read with the coefficient field made explicit: an algebraic-coefficient Nash branch first collapses to a polynomial over that algebraic field; integer values on an infinite rational set then force the resulting polynomial to lie in `Q[X]` by Galois conjugation or interpolation.  The present lemma avoids that editorial ambiguity by keeping the main statement over `Q(X)`.
 
 ## Gap audit
 

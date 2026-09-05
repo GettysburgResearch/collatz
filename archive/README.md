@@ -16,6 +16,10 @@ This is the single index for durable integration and review evidence. It is not 
 
 The [integration disposition and validation receipt](../reports/prepublic-2026-09-05/integration/README.md) records exact source/review heads, implemented repairs and outstanding owner/operational gates. It is not an automatic extension of either review to new mathematics.
 
+## Reviewer D follow-up
+
+[The unchanged nine-file review](../reports/prepublic-2026-09-05/reviewer-d/FINAL_HANDOFF.md) audits the older resident spine at `cd1b3689e8d37fc4232945072e2faf6bd5ee47bd`. [Pre-correction versions](reviewer-d-2026-09-05/README.md), the [separate follow-up record](../claims/followups/reviewer-d-2026-09-05.json), and the [integration receipt](../reports/prepublic-2026-09-05/integration-d/README.md) account for all six findings and the two additional qualifications. A/B's reports and disjoint-assignment contract are unchanged.
+
 ## Current durable locations
 
 [Research map](../docs/RESEARCH_MAP.md), [resident packets](../research/integrated/README.md), [wider catalog](../research/RESULTS_CATALOG.md), [claim registry and aliases](../claims/README.md), and [public-launch gates](../docs/PUBLIC_RELEASE_GATES.md).
