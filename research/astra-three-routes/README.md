@@ -118,3 +118,14 @@ JOINT finite polynomial-valuation ranks, including bounded adaptive groups of
 whole-run macros. All new claims are PROPOSED pending independent review.
 The fixed-floor signed bound, local SC certificates, cycle exclusion, and a
 complete constructive rank remain open. No earlier proof body is changed.
+
+## Fourth continuation: constructive moving-rank modules
+
+The [fourth pass](pass4/README.md), based on
+`7d0397c92879545609aa4097f89f5497cd53026d`, turns the periodic shadow into a
+maximal, total acceleration and constructs a common integer rank from an
+infinite polynomial dictionary with one input-dependent index. It proves
+all-parameter uphill rank decreases, exact all-residence mass sums, a single
+resonant inverse column, and two-sided source certificates. Global rank
+monotonicity is explicitly refuted; unsafe switching and a complete merging
+cover remain open. All claims remain PROPOSED. Earlier bodies are unchanged.
