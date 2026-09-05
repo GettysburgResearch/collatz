@@ -64,3 +64,13 @@ The next actual theorem remains all-depth signed boundary control, universal
 local SC windows plus cycle exclusion, or a total unbounded repayment/rank
 mechanism. The cross-route proposal is to use record-set or full digit memory
 to control the signed charge. No such coupling is assumed proved here.
+
+## Final publication replay repair
+
+The final post-upload generator `--check` exposed a tuple/list comparison bug:
+the in-memory feature dictionaries used tuples, while the canonical JSON
+necessarily used lists. Generating JSON reproduced the existing report and
+semantic digest exactly, and the separate verifier and eight tamper tests
+passed. The generator now normalizes its in-memory payload through canonical
+JSON before comparing. Both documented commands were rerun successfully after
+this repair. No mathematical result or canonical certificate data changed.
