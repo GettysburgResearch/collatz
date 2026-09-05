@@ -107,3 +107,14 @@ extraction and a complete continuation compiler; and separate fixed-block and
 adaptive-macro obstructions for arbitrary nonlinear valuation profiles. All
 new claims remain PROPOSED pending independent review. Earlier proof and
 experiment bodies above are preserved; no route is dropped.
+
+## Third continuation: all three routes retained
+
+The [third pass](pass3/README.md), based on
+`48e043c2822dbeea4f91c801ac2d3fc531af1466`, supplies signed survivor-cylinder
+boundary identities; finite-path coefficient-record windows and a conditional
+descent-or-repetition clock; and an ordinary-shadow obstruction for arbitrary
+JOINT finite polynomial-valuation ranks, including bounded adaptive groups of
+whole-run macros. All new claims are PROPOSED pending independent review.
+The fixed-floor signed bound, local SC certificates, cycle exclusion, and a
+complete constructive rank remain open. No earlier proof body is changed.
