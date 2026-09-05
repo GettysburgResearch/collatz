@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "scale": 12,
+      "edge_count": 65536,
+      "counts_h_1_through_11": [
+        33472,
+        17088,
+        8256,
+        3968,
+        2048,
+        832,
+        512,
+        320,
+        192,
+        128,
+        0
+      ],
+      "surviving_prefixes_mod_1024": [
+        "23122",
+        "31001"
+      ],
+      "normalized_defects_mod_8": [
+        5,
+        7
+      ]
+    },
+    {
+      "scale": 13,
+      "edge_count": 65536,
+      "counts_h_1_through_11": [
+        33728,
+        15936,
+        7040,
+        4288,
+        1856,
+        576,
+        192,
+        192,
+        128,
+        64,
+        0
+      ],
+      "surviving_prefixes_mod_1024": [
+        "02001"
+      ],
+      "normalized_defects_mod_8": [
+        3
+      ]
+    }
+  ]
+}
