@@ -131,3 +131,27 @@ section sources, 128 complete inverse fans, 70 CRT family instances, and all
 37 progression tiles. Two separately written implementations and six resealed
 tamper tests pass. All new claims remain PROPOSED pending independent review;
 all three earlier proof packets and their experiment artifacts are unchanged.
+
+## Fifth pass: shared-remainder cancellation at every ternary depth
+
+[REMAINDER_CANCELLATION.md](REMAINDER_CANCELLATION.md) contains T-ASTRA-025
+through R-ASTRA-029. The rank is extended to all positive integers, with a
+proved reduction of depth-zero witnesses back to the original section.
+Equal shifted remainders for two words whose odd counts differ by two give
+an exact lower-rank quotient x=(n-4)/9 and P(x)=P(n)/9, uniformly over every
+h(n)>=2. A seven-step pair and a ten-step pair give explicit progressions;
+the latter meets the previously unresolved depth-two residue classes.
+
+Deep initial ternary valuation also gives a universal finite forward-rank
+barrier. The seven-step merging pair bypasses arbitrarily long such barriers
+on actual CRT families, with a numerically smaller source and exact rank loss.
+This is not a single all-time exceptional source or a complete merging cover.
+
+[X-ASTRA-005](../../experiments/X-ASTRA-005-remainder-cancellation/README.md)
+reconstructs 425 prefix-free sufficient rules through length 16, 5100 ordinary
+rule replays, global normalization through 2^16, and 21 forward-barrier cases.
+Two separately implemented checkers and eight resealed tamper tests pass.
+The residual pair 859 and 95 disproves a universal synchronous quotient rule:
+it merges asynchronously, not at equal times. The full basin-stability or
+merging-cover theorem remains OPEN. All new claims are PROPOSED, and all
+four earlier proof packets and experiment artifacts remain unchanged.
