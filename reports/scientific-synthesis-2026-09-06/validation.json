@@ -1,0 +1,55 @@
+{
+  "scope": "local checks on 12 edited scientific/navigation documents and a manifest delta; not a full checkout scan, source proof review or CI run",
+  "documents": 12,
+  "retained_older_catalog_families": 13,
+  "relative_link_occurrences_normalized": 234,
+  "link_occurrences_to_edited_destinations_checked": 113,
+  "fragment_occurrences_into_edited_documents_checked": 47,
+  "external_link_occurrences": 52,
+  "mathematical_qualification_presence_checks": [
+    "signed negative face",
+    "nonconstant repair",
+    "closed strip",
+    "real endpoint",
+    "all required overlap lengths",
+    "full-tree integrality",
+    "correct Pade delay",
+    "finite artifact defect",
+    "external exponent constant",
+    "positive timed endpoint",
+    "unsupported source promotion"
+  ],
+  "manifest_delta": "one catalog active_blob and an explicit editorial-navigation note; other existing keys and values equal",
+  "document_blobs": {
+    "README.md": "ff84f4fcff5867c01d1f13a6c6f3f9d0e04f5daa",
+    "STATE.md": "c7acf0f67e514ea9cb2c2eace492569d132078ec",
+    "research/README.md": "405da610085b78dbeb8b47432ea0a0a801cbb89c",
+    "docs/RESEARCH_MAP.md": "d9127b7da910783fc937c8d68ba545651f7acf43",
+    "research/RESULTS_CATALOG.md": "c66f0decec04c330c47e62f85bf723074e7a0c81",
+    "research/integrated/README.md": "45df5ea2e42c6a233193bfe6b5cd7f4b72559046",
+    "research/integrated/exceptional-mass/README.md": "a7a5d291172b1565a9325ffa67a8c5c6a43ff9a5",
+    "research/integrated/renewal-transport/README.md": "7ba9dd79a22f72a3783d9da5cfc7fc2ff90033cf",
+    "research/integrated/rank-merging/README.md": "0463543bc70c0be0c42dd480e5e4cb315d670ff7",
+    "research/integrated/orbitwise-boundaries/README.md": "c85bc60c1e672f15cc47082cef5c2fda6321e80c",
+    "research/open-obligations/README.md": "80b45736205b07e84837cf3f5feb1c1d3d6fff35",
+    "research/integrated/CONVENTIONS.md": "e8bf7a1d7287d10d2457de32f158b0137b14c7c6"
+  },
+  "limits": [
+    "No claim that all external URLs were fetched in this test",
+    "Unchanged target files are not local materializations; only paths normalized here",
+    "No full tools/validate.py run",
+    "Keyword and anchor checks do not establish mathematics or newcomer comprehension"
+  ],
+  "baseline_commit": "9599cd4bef56102cc866617283b77c1a84f5516c",
+  "baseline_materialization_blobs": {
+    "claims/followups/reviewer-d-2026-09-05.json": "228d6b04db6850f4c5a3cbf46c57add07dee727b",
+    "archive/README.md": "a733d80acc29570e4b3e110ecc4d7fb992238fdd"
+  },
+  "local_commands": [
+    {
+      "command": "python -B /mnt/data/collatz_synthesis/check_reading_path.py",
+      "exit_code": 0,
+      "scope": "working edited-surface script, not a repository tool"
+    }
+  ]
+}
