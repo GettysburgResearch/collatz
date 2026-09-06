@@ -48,7 +48,7 @@
     {
       "path": "research/RESULTS_CATALOG.md",
       "original_blob": "660e040b5125d776872f7631246ac4a9986ccda8",
-      "active_blob": "c868719d53bed47ccf3fe54428f68bbf03ce6247",
+      "active_blob": "c66f0decec04c330c47e62f85bf723074e7a0c81",
       "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/research/RESULTS_CATALOG.md"
     },
     {
@@ -174,5 +174,13 @@
     "E-INTEGRATION-001 and E-INTEGRATION-002 proposed",
     "four recent assemblies accepted reference records, not verified syntheses"
   ],
-  "launch_boundary": "No full authenticated-checkout scan, license selection, security/visibility clearance, workflow change or large external replay is implied. Issue 96 remains the launch gate; PR97 is a separate onboarding/security contribution."
+  "launch_boundary": "No full authenticated-checkout scan, license selection, security/visibility clearance, workflow change or large external replay is implied. Issue 96 remains the launch gate; PR97 is a separate onboarding/security contribution.",
+  "editorial_navigation_update": {
+    "baseline_commit": "9599cd4bef56102cc866617283b77c1a84f5516c",
+    "path": "research/RESULTS_CATALOG.md",
+    "previous_active_blob": "c868719d53bed47ccf3fe54428f68bbf03ce6247",
+    "current_active_blob": "c66f0decec04c330c47e62f85bf723074e7a0c81",
+    "audit_path": "reports/scientific-synthesis-2026-09-06/README.md",
+    "scope": "Editorial cumulative catalog; the active fingerprint authenticates current navigation, not new D review coverage. Original review, pre-correction archive, all finding statuses and other active fingerprints are unchanged. Fields describing unchanged contracts and launch state above remain historical to the original D integration."
+  }
 }

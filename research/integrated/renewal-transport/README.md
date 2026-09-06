@@ -1,30 +1,50 @@
-# Renewal, resonance, and safe transport
+# Renewal and the transported distribution
 
-**Resident reference assembly; exact component verdicts, not blanket branch approval.** Local proofs are unchanged. [Reviewer A](../../../reports/prepublic-2026-09-05/reviewer-a/CLAIM_MATRIX.md) reviews PR90 at `78ac7c8489f1df81230402808b1f4b77b18fae73`; [Reviewer B](../../../reports/prepublic-2026-09-05/reviewer-b/CLAIM_MATRIX.md) reviews PR91 at `b8c88843726ee7ac11cf91323c69bf911ca50706` and PR92 at `7bb6d36d3bc37dd09b52aa9a23c8e33973032359`. Review pins and exact identities are in [the integration record](../../../claims/reviewed-2026-09-05.json).
+Renewal organizes a trajectory into section returns or runs so that a useful part of its transfer operator can be controlled. The central remaining question is what happens to the **actual distribution after re-entry**. This guide states existing component results and their domains, not a new combined operator theorem.
 
-## The positive result and its domain
+## Section return and resonance
 
-PR91 supplies a total first return to `H union {1}`, a complete inverse fan, a summable reciprocal rank V, and `KV(y)<=Q(y)V(y)/2`. Arrival at a nonresonant endpoint halves P. It therefore gives finite entrance into resonance **or 1**, not convergence to 1 from every input. Its effective resonance-return resolvent is valid on its stated dominated positive cone `0<=f<=CV` and retains Q(y).
+The section program uses `H={n>=4:n=1 mod 3}` and a total first positive-time return to `H union {1}`. Write that return as `F_H` and kill it at 1. Its complete inverse fan and reciprocal section-rank weight `V=1/P` give the stated bound `KV(y)<=Q(y)V(y)/2`. Nonresonant arrival halves P; the effective resonance-return resolvent acts on the dominated positive cone `0<=f<=CV`, retaining the endpoint charge `Q(y)`.
 
-PR92 supplies different safe regions for a different rank. The quarter-safe estimate contracts the p-th rank moment for any nonnegative **finite-moment safe-entry distribution**. The enlarged nonincreasing-safe set instead has a polynomial residence bound and an envelope-based mass tail. These are complementary statements, not contradictory tail estimates for the same process. All projections, norms, absorbing states and assumptions are displayed in [conventions](../CONVENTIONS.md).
+The conclusion is entrance into resonance **or 1**, not universal convergence. [Exact return, inverse fan, charge and operator definitions](../../astra-three-routes/ROUTE_1_TRANSFER.md). The companion [source-height proof](../../astra-three-routes/ROUTE_2_SOURCE_HEIGHT.md) gives actual no-descent pressure and conditional clock/jet consequences; a universal upper charge budget remains open.
 
-| Local proof | Exact reviewed result / retained limitation |
-|---|---|
-| [Section return and resonance](../../astra-three-routes/ROUTE_1_TRANSFER.md) | T-ATR-101–103 reviewed; T-ATR-104 is retained with its domain/charge qualification. The eliminated process is killed on resonance as well as 1. |
-| [Source charge and endpoint jets](../../astra-three-routes/ROUTE_2_SOURCE_HEIGHT.md) | T-ATR-201 and L-ATR-202: actual no-descent pressure, conditional prefixwise clock and frozen jets. The universal upper charge budget is OPEN. |
-| [Whole-run renewal](../../astra-critical-mass/RUN_RENEWAL.md) | Complete whole-run coding, ordinary fresh-shell asymptotics and cofinal drift. Repeated use on an arbitrary transported distribution is invalid. |
-| [Initial corridor occupation](../../astra-three-routes/pass4/RENEWAL_MASS.md) | T-A3-801 is about one initial corridor; T-A3-802 needs its safe-entry envelope on reuse. |
-| [Quarter-safe rank moments](../../astra-three-routes/pass5/RANK_MOMENTS.md) | Budget T-A3-1001–1002: square-root rank volumes and distribution-free safe moment contraction. |
-| [Enlarged-safe induced mass](../../astra-three-routes/pass5-spectrum-switch/INDUCED_MASS.md) | Spectrum T-A3-1003: polynomial tails for its own safe set, with source envelope retained. |
+## Two safe estimates, not one interchangeable safe set
 
-## Do not discard the negative results
+For the moving rank `R_*` and its acceleration A, distinguish
 
-The unsafe return sends an explicitly summable, finite-first-rank-moment distribution to one with infinite first rank moment. This is a reviewed obstruction to an invariant moment domain, not an assertion that an ordinary trajectory diverges. The monomial-weight and reciprocal-rank supersolution failures are retained next to the successful safe theorems.
+$$
+G_q=\{n\ge2:4R_*(A(n))\le R_*(n)\},\qquad
+G_{\le}=\{n\ge2:R_*(A(n))\le R_*(n)\}.
+$$
 
-The source-charge counterexamples also have different scopes: the A=1 example is already no-descent; the A=4 example begins with descent and does not refute the no-descent-only restriction. Fresh-shell averages and signed telescoping identities alone do not supply the long-run transported discrepancy budget.
+The rank, acceleration and value at 1 are defined in [conventions](../CONVENTIONS.md). With `K_XY=Pi_X K Pi_Y` (source Y, endpoint X) and `||f||_p=sum R_*(n)^p |f(n)|`, the **quarter-safe** theorem gives, for `p>0` and nonnegative finite-p-moment safe-entry input,
 
-## Evidence and next missing lemma
+$$
+\|K_{G_qG_q}f\|_p+\|K_{U_qG_q}f\|_p\le4^{-p}\|f\|_p.
+$$
 
-Reviewer B replayed PR91's full frozen payload and both alternative fifth-pass verifier payloads, including resealed mutations. Earlier PR92 protocols and PR90 complete encoded corpora have narrower inspection/reconstruction boundaries. The assertion-based legacy entry points are now fail-closed under optimization; this hardening is not a new full-corpus replay. See [policy and commands](../../../docs/REPLAY_POLICY.md).
+Here `U_q` is the surviving complement; an exit can reach it rather than 1. [Exact theorem and proof](../../astra-three-routes/pass5/RANK_MOMENTS.md).
 
-A closing theorem must control the **retained resonance/unsafe process**, or prove an amortized estimate that actually pays for each re-entry. Nothing here permits a fresh distributional assumption after every return. That is an [open obligation](../../open-obligations/README.md), not an integration defect that can be edited away.
+The **enlarged-safe** theorem instead gives residence and mass-tail bounds with its specified envelope `f<=C/R_*^p` in the source's summable parameter range. Reuse requires re-establishing that envelope; it is not a distribution-free version of the quarter-safe result. [Exact domain, constants and proof](../../astra-three-routes/pass5-spectrum-switch/INDUCED_MASS.md).
+
+## What averaging has and has not established
+
+[Whole-run renewal](../../astra-critical-mass/RUN_RENEWAL.md) supplies complete coding, fresh-shell asymptotics and cofinal drift. [Corridor occupation](../../astra-three-routes/pass4/RENEWAL_MASS.md) controls its initial corridor, and repeated use needs its stated safe-entry envelope. These claims do not authorize replacing a transported distribution by a fresh one.
+
+A reviewed unsafe-return construction takes a summable distribution with finite first rank moment to one with infinite first rank moment. This refutes the proposed invariant moment domain, not convergence of any individual source. Monomial and reciprocal-rank weight failures likewise delimit specific supersolutions. Source-charge controls also differ: a descending source is not a counterexample to a no-descent-only assertion.
+
+## How this relates to the other programs
+
+[Mass bounds](../exceptional-mass/README.md) would benefit from a valid retained-unsafe estimate. [Rank repayment](../rank-merging/README.md) may suggest amortization, but the section rank and moving rank are different functions and their clocks differ. Combining the programs needs a new proved interface; safe contraction and guarded repayment do not establish it by juxtaposition. The H-system and weighted-equidistribution results provide additional models, not an automatic transport theorem for this operator.
+
+## Next contribution and evidence
+
+[Target an invariant input class or reusable unsafe budget](../../open-obligations/README.md#unsafe-transport). State the map, killed states, projections, norm and re-entry hypothesis before proposing an estimate. Test it against the moment-explosion and fresh-versus-transported controls.
+
+Finite replay checks formulas and declared finite coverage; it does not establish arbitrary re-entry. [Replay instructions](../../../docs/REPLAY_POLICY.md).
+
+<details><summary>Exact component review and evidence limits</summary>
+
+[Section/moving-rank claim review](../../../reports/prepublic-2026-09-05/reviewer-b/CLAIM_MATRIX.md) and [whole-run claim review](../../../reports/prepublic-2026-09-05/reviewer-a/CLAIM_MATRIX.md); [source/review identities](../../../claims/reviewed-2026-09-05.json). The section payload and both alternative final rank-packet payloads have recorded replays. Earlier protocols and complete encoded corpora retain their narrower inspection/reconstruction limits. These source verdicts do not constitute a review of a new synthesis.
+
+</details>

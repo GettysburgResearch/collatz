@@ -1,42 +1,39 @@
 # Gettysburg Research: Collatz
 
-> **Status: UNSOLVED.** This repository contains no accepted proof or disproof of the Collatz conjecture, no accepted divergent positive orbit, and no accepted nontrivial positive cycle.
+**The Collatz conjecture remains unresolved in this project.** There is no accepted proof, divergent positive orbit, or nontrivial positive cycle here.
 
-A research laboratory for developing, checking, refuting and connecting approaches to Collatz. The scientific reading path is organized by mathematical question, not by contributor or research pass. Historical source text, failed strengthenings, exact reviews and computation receipts remain available behind it.
+We study the shortcut map
 
-Part of the [Agentic Polymath Project](https://github.com/gfreund123/agentic-polymath-project), alongside [Gettysburg Research: Riemann](https://github.com/GettysburgResearch/riemann).
+$$
+T(n)=\begin{cases}n/2&n\text{ even},\\(3n+1)/2&n\text{ odd}.\end{cases}
+$$
 
-**Join the research:** follow [Join and start](CONTRIBUTING.md#join-and-start), or use the [phone tutorial](docs/PHONE.md). Contributors review one another; a small trusted core maintains the accepted record. See [shared review](docs/REVIEWING.md).
+The goal is to prove that every positive integer reaches 1, or construct and verify a counterexample. The project combines ordinary-integer dynamics, arithmetic and symbolic representations, counting and transfer operators, and proof-producing computation. It is part of the [Agentic Polymath Project](https://github.com/gfreund123/agentic-polymath-project).
 
-## Choose a route
+## What has been achieved
 
-**Learn the science.** Start with the [research map](docs/RESEARCH_MAP.md), then a [resident proof packet or reviewed reference assembly](research/integrated/README.md). The [wider reviewed-results catalog](research/RESULTS_CATALOG.md) preserves the older source-pinned families beyond that spine.
+The strongest surviving results are **structural theorems, complete exclusions of specified constructions, quantitative partial bounds, and exact obstructions to proposed proof methods**. They do not collectively constitute a solution.
 
-**Work on the project.** Agents begin with [AGENTS.md](AGENTS.md); human contributors use [CONTRIBUTING.md](CONTRIBUTING.md). Exploration does not require a registry form. Exact integration does require a source, scope, review and evidence boundary.
+| Achievement | Significance and exact boundary | Read next |
+|---|---|---|
+| Ordinary extraction is equivalent to stabilization of canonical representatives; nested positive survivor sets contain one all-time source exactly when their least elements stay bounded. | Identifies what finite compatibility does not prove. The periodic `1110` construction has positive witnesses at every finite depth but completion `-19/11`, not an ordinary integer. | [Extraction and ghost proofs](research/integrated/README.md#ordinary-realization-and-representation) |
+| Every signed ordinary completion is excluded in the corrected 256-transition phase-`-34` construction. | A complete all-directive exclusion for that specified architecture, using its exact stage formulas and Evertse's theorem; not an exclusion of other constructions or Collatz. | [Statement, proof route and dependencies](research/RESULTS_CATALOG.md#corrected-256-stage-ordinary-completion-exclusion) |
+| Finite affine/rational section mechanisms and semilinear sanctuaries fail in the specified six-branch chart; nontrivial ordinary centered itineraries have factor-complexity slope at least `1/log_64(81/64)`. | Genuine representation barriers. Complete-tree/full-tail hypotheses and the factor screen's nonconstant restriction are essential. | [Rigidity](research/integrated/six-branch-rigidity/README.md) · [Repaired complexity theorem](research/integrated/factor-complexity/README.md) |
+| Coefficient-supercritical orbits are classified, periodic realizers have an exact full-denominator formula, and a native Padé argument excludes selected stack contexts of eventual periods 1–9. | These results address different objects: coefficient stopping, physical parity cycles, and stack completions. Neither universal stopping nor all positive cycles are settled. | [Coefficient and cycle results](research/RESULTS_CATALOG.md#coefficient-stopping-and-orbitwise-tails) · [Padé scope](research/RESULTS_CATALOG.md#padé-and-periodic-2-adic-repetition) |
+| Native-horizon no-descent starts satisfy `#N(X) <= 6499 + 2 X^(19/20)`, with entropy exponent `h_2(log 2/log 3)`. Proper ranks, complete inverse fans and guarded physical mergers are also available. | Counts are not fixed-floor survivor bounds; safe contraction is not control of unsafe returns; successful infinite certificate families are not a complete cover. | [Mass](research/integrated/exceptional-mass/README.md) · [Transport](research/integrated/renewal-transport/README.md) · [Merging](research/integrated/rank-merging/README.md) |
 
-## What the repository establishes narrowly
+The [cumulative results catalog](research/RESULTS_CATALOG.md) also includes weighted equidistribution, H-system and quotient-refund constructions, cycle algebra, pulse families, rewriting, regular-language methods and the `5x+1` control system. A result does not cease to count because its proof remains at an earlier source commit. Its inherited review applies only to the stated scope, with subsequent corrections retained.
 
-The accepted original spine contains ordinary extraction and completion-ghost results, fixed-source coefficient-supercritical classification, fixed-depth automata artifacts, exact six-branch representation barriers, and a refuted factor-complexity screen with a separately verified repair. The periodic-tail synthesis remains **source-qualified and pending narrow review**.
+## What remains unresolved
 
-The reviewed material develops four complementary directions:
+The [research map](docs/RESEARCH_MAP.md) explains how the approaches relate. Their decisive obstacles differ: a single ordinary all-time source; universal coefficient stopping and complete first-crossing/cycle exclusion; a bound for actual fixed-floor survivors; control of the distribution after unsafe returns; or a complete, terminating lower-rank certificate procedure. These are alternative research programs, not a checklist every proof must complete. The proposed SC*/FC* combined reduction still needs review of its exact formulation.
 
-- [Exceptional mass](research/integrated/exceptional-mass/README.md): conditional fixed-floor/critical-endpoint criteria, no-descent and entropy bounds, exact fibers and finite-time mass certificates.
-- [Renewal and transport](research/integrated/renewal-transport/README.md): complete section returns, safe-region contraction and explicit failures at unsafe transport.
-- [Rank descent and merging](research/integrated/rank-merging/README.md): computable proper ranks, physical certificates, guarded infinite families and necessary clock/peak resources.
-- [Orbitwise boundaries](research/integrated/orbitwise-boundaries/README.md): actual SC tails for non-eventually-periodic orbits, echoes, finite records and scoped method obstructions.
+Useful failures are part of the result: finite-prefix compatibility can give only a completion, orbit sparsity need not imply basin sparsity, arbitrary-subset fiber savings violate mass conservation, and unsafe transport can destroy a finite rank moment. The [research tasks](research/open-obligations/README.md) turn these limits into specific next contributions.
 
-These are **reference assemblies with claim-level review verdicts**, not four accepted end-to-end proofs. Their proof bodies are local; external dependencies, [scoped corrections](research/integrated/ERRATA.md) and unreplayed computations remain labeled.
+## Read, check, contribute
 
-## The remaining boundary
+Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **A useful first contribution** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
 
-Different routes have different missing steps: mass approaches seek an actual fixed-floor survivor estimate or retained-unsafe mass control; rank approaches seek a complete terminating lower-rank selector; coefficient approaches seek universal stopping and the required ordinary first-crossing/cycle exclusion. These are route-specific obligations, not a checklist that every approach must complete. The [open obligations](research/open-obligations/README.md) give their exact scope. `SC* + FC* => Collatz` remains a **PROPOSED** bridge pending review of its exact integrated crosswalk; neither premise is proved here.
+The [research index](research/README.md) separates the integrated baseline from active, unreviewed proposals. Human contributors start at [CONTRIBUTING.md](CONTRIBUTING.md); agents at [AGENTS.md](AGENTS.md). The [phone guide](docs/PHONE.md) offers an additional, explicitly untested end-to-end route.
 
-Do not collapse finite compatibility into an all-depth witness, a 2-adic point into a positive ordinary integer, a bounded computation into an all-length theorem, a sparse orbit into a sparse basin, or safe exit into convergence. A theorem reviewed at one `(PR, SHA, path, claim ID)` does not certify later additions or a different statement with the same number.
-
-## Reproduce and formalize
-
-In a clean, complete checkout with Python 3.11+ and Git, run `python -X utf8 -B tools/validate.py`. Add `--regressions` for the bounded D and fixed-height replays. The [replay policy](docs/REPLAY_POLICY.md) explains exact receipts, Windows handling and what these checks do **not** establish. A green integrity check is not proof verification.
-
-There is no in-repository Lean library or Lean build. External formalizations retain their own source and replay boundaries; they do not constitute a machine-checked proof of this repository's results. Formalization contributions are welcome with exact statements, dependencies and build receipts. Riemann's separate formalization track does not certify Collatz material.
-
-The [archive](archive/README.md) holds provenance rather than onboarding machinery. [Public-launch gates](docs/PUBLIC_RELEASE_GATES.md) separate integration from licensing, security, visibility and operational decisions.
+In a clean complete checkout, `python -X utf8 -B tools/validate.py` checks repository integrity; `--regressions` adds selected bounded replays. [Evidence and replay instructions](docs/REPLAY_POLICY.md) distinguish these from proof review. There is no in-repository Lean build, and external formalizations retain their own evidence limits. [Integration/audit history](archive/README.md) and [public-launch decisions](docs/PUBLIC_RELEASE_GATES.md) are separate from the scientific verdict.

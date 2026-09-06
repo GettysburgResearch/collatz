@@ -24,8 +24,12 @@ The [integration disposition and validation receipt](../reports/prepublic-2026-0
 
 The [readiness receipt](../reports/readiness-2026-09-06/README.md) accounts for PR97's onboarding/security contribution, portable integrity checking and the least-privilege workflow. Its fixture evidence is not a complete-checkout or public-launch clearance. Earlier review and source archives are unchanged.
 
+## Cumulative scientific account
+
+The [scientific-synthesis audit](../reports/scientific-synthesis-2026-09-06/README.md) records the editorial reorganization around all surviving results, current correction scopes and active research. It preserves inherited evidence and mathematical statuses; it is not a new review wave.
+
 ## Current durable locations
 
-[Research map](../docs/RESEARCH_MAP.md), [resident packets](../research/integrated/README.md), [wider catalog](../research/RESULTS_CATALOG.md), [claim registry and aliases](../claims/README.md), and [public-launch gates](../docs/PUBLIC_RELEASE_GATES.md).
+[Research map](../docs/RESEARCH_MAP.md), [resident packets](../research/integrated/README.md), [cumulative results catalog](../research/RESULTS_CATALOG.md), [claim registry and aliases](../claims/README.md), and [public-launch gates](../docs/PUBLIC_RELEASE_GATES.md).
 
 Dated directories remain stable because source reviews cite them. [CURRENT.md](../docs/integration/CURRENT.md) is only a compatibility pointer, not a second lifecycle dashboard.
