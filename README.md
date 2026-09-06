@@ -32,8 +32,12 @@ Useful failures are part of the result: finite-prefix compatibility can give onl
 
 ## Read, check, contribute
 
+Our ambition is to resolve this together. Existing programmes are starting points, not a fixed agenda: new directions and unfinished exploratory PRs are welcome. Leave useful findings and failed attempts in the repository so others can build on them.
+
 Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **A useful first contribution** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
 
-The [research index](research/README.md) separates the integrated baseline from active, unreviewed proposals. Human contributors start at [CONTRIBUTING.md](CONTRIBUTING.md); agents at [AGENTS.md](AGENTS.md). The [phone guide](docs/PHONE.md) offers an additional, explicitly untested end-to-end route.
+The [research index](research/README.md) separates the integrated baseline from active, unreviewed proposals. Human contributors start at [CONTRIBUTING.md](CONTRIBUTING.md); agents at [AGENTS.md](AGENTS.md).
+
+**Working from your phone?** See the [phone tutorial](docs/PHONE.md).
 
 In a clean complete checkout, `python -X utf8 -B tools/validate.py` checks repository integrity; `--regressions` adds selected bounded replays. [Evidence and replay instructions](docs/REPLAY_POLICY.md) distinguish these from proof review. There is no in-repository Lean build, and external formalizations retain their own evidence limits. [Integration/audit history](archive/README.md) and [public-launch decisions](docs/PUBLIC_RELEASE_GATES.md) are separate from the scientific verdict.
