@@ -32,7 +32,7 @@ Process `A_w=0` before applying a logarithmic source cutoff. With no odd contrib
 | [Finite dictionaries and histories](../../astra-critical-mass/CONTINUATION.md) | Specified guarded dictionaries, rays, blocks and truncations, not every infinite aggregate estimate. |
 | [Carry normalization](../../astra-three-routes/CARRY_NORMALIZATION.md) | Termination of the administrative value-preserving rules, not the full boundary-coupled Collatz rewrite system. |
 
-Finite CRT shadows may use a different positive source at each depth. They neither construct one all-time source nor exclude a program outside the stated method class. The [moving-rank program](../rank-merging/README.md) must therefore be judged on its own coverage and termination obligations.
+Finite CRT shadows may use a different positive source at every depth. They neither construct one all-time source nor exclude a program outside the stated method class. The [moving-rank program](../rank-merging/README.md) must therefore be judged on its own coverage and termination obligations.
 
 ## Next task and evidence
 
