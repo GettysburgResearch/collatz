@@ -16,6 +16,14 @@ This is failure to descend below the **starting value**, not failure to reach a 
 
 The [critical-mass proof](../../astra-critical-mass/PROOF.md) supplies conditional exponent/critical-endpoint and killed-weight criteria. The [first-passage proof](../../astra-critical-mass/FIRST_PASSAGE.md) retains exact arithmetic-progression integrality, every survival prefix and its endpoint interval. [Mellin identities](../../astra-three-routes/ROUTE1_MELLIN.md) and [ordinary boundary charge](../../astra-three-routes/pass3/BOUNDARY_CHARGE.md) retain actual sources, killed states and finite-horizon/transport assumptions. The independently supported `8.6140<G_256<8.9619` enclosure is finite-time evidence, not a bound uniform over all horizons.
 
+## A failed uniform residue-share bound
+
+For the fixed floor `H=64`, let `chi_k(n)` indicate that `T^j(n)>64` for every `0<=j<=k`. At Mellin exponent `s=3/2`, put `M_k=sum_n chi_k(n)n^(-3/2)` and `Q_k=sum_{y>=98, y=2 mod 3} chi_k(y)y^(-3/2)`. The endpoint cutoff is part of the killed odd-predecessor condition and must not be dropped.
+
+The proposed ceiling **`Q_k<=M_k/3` for all k is refuted**: at `k=19`, a complete inverse cone and directed rational tail bounds give `3Q_19>M_19`. This is an actual finite-time survivor-population counterexample, not evidence of a divergent orbit. It was independently reconstructed; the larger depth-36/40 numerical protocols do not inherit that replay. [Definitions, exact certificate construction and counterexample](../../astra-three-routes/ROUTE1_MELLIN.md).
+
+This failure does not rule out all aggregate contraction. The same source's sufficient eventual bound `Q_k<=(69/200)M_k` remains an **open hypothesis**, not a replacement result already established.
+
 ## The fixed-floor route remains conditional
 
 A survivor-count estimate can contradict a predecessor lower bound only for **actual eternal survivors above one certified floor** and an eligible fixed target. The [external dossier](../../external/mazur-2026/README.md) remains source-qualified: the stronger predecessor exponent is `c_b X^0.901` with positive target-dependent `c_b` and cutoff; the unit-coefficient endpoint is `0.90`. Its fixed-floor forward-density result still has counting exponent one. No complete local Lean or large external-payload replay is implied.

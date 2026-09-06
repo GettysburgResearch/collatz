@@ -28,6 +28,8 @@ The [readiness receipt](../reports/readiness-2026-09-06/README.md) accounts for 
 
 The [scientific-synthesis audit](../reports/scientific-synthesis-2026-09-06/README.md) records the editorial reorganization around all surviving results, current correction scopes and active research. It preserves inherited evidence and mathematical statuses; it is not a new review wave.
 
+The [follow-up conservation audit](../reports/scientific-synthesis-2026-09-06/CONSERVATION_AUDIT.md) checks for lost results and qualifications, restores a counterexample and proof links, and records one bounded residue-share reproduction. It does not reopen or promote the mathematical baseline.
+
 ## Current durable locations
 
 [Research map](../docs/RESEARCH_MAP.md), [resident packets](../research/integrated/README.md), [cumulative results catalog](../research/RESULTS_CATALOG.md), [claim registry and aliases](../claims/README.md), and [public-launch gates](../docs/PUBLIC_RELEASE_GATES.md).

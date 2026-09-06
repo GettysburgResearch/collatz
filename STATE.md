@@ -24,7 +24,7 @@ The mass, renewal, orbitwise and rank programs contribute reviewed component the
 
 ## Corrections that govern current use
 
-A nonzero-digit tail excludes a **nonnegative** ordinary completion, not necessarily a negative one; both signed boundary faces must be addressed. Positive periodic realization includes the trivial cycle. A deterministic autonomous fixed-block controller must keep producing parity bits before periodic-output reasoning applies.
+Infinitely many nonzero appended digits exclude a **nonnegative** ordinary completion, not necessarily a negative one; both signed boundary faces must be addressed. Positive periodic realization includes the trivial cycle. A deterministic autonomous fixed-block controller must keep producing parity bits before periodic-output reasoning applies.
 
 The centered factor-complexity screen requires **nonconstancy**, not aperiodicity. Arbitrary real binary codes have a **closed** error strip: `1000...` and `0111...` can reach its endpoints. Strict all-time error bounds need the separately stated hypotheses; nested nonempty open cylinders need not have an infinite intersection. These qualifications do not remove the nonconstant repair or its ordinary recurrence cone.
 

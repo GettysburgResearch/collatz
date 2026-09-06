@@ -12,7 +12,7 @@ This yields the source's SC*/eventual-periodicity crosswalk, not nontrivial-cycl
 
 ## First-crossing endpoint
 
-**Current proposed endpoint-safe formulation.** For a nonempty first coefficient-crossing word w of length j and odd weight q, retain `D=2^j-3^q>0`, a positive ordinary source n, displacement `d>=0`, complete prefix/source/endpoint legality, and
+**Current proposed endpoint-safe formulation.** For a nonempty first coefficient-crossing word w of length j with q odd steps (q need not itself be odd), retain `D=2^j-3^q>0`, a positive ordinary source n, displacement `d>=0`, complete prefix/source/endpoint legality, and
 
 $$
 A_w=Dn+2^j d.
