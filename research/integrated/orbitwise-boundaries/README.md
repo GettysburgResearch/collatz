@@ -32,7 +32,7 @@ Process `A_w=0` before applying a logarithmic source cutoff. With no odd contrib
 | [Finite dictionaries and histories](../../astra-critical-mass/CONTINUATION.md) | Specified guarded dictionaries, rays, blocks and truncations, not every infinite aggregate estimate. |
 | [Carry normalization](../../astra-three-routes/CARRY_NORMALIZATION.md) | Termination of the administrative value-preserving rules, not the full boundary-coupled Collatz rewrite system. |
 
-Finite CRT shadows may use a different positive source at every depth. They neither construct one all-time source nor exclude a program outside the stated method class. The [moving-rank program](../rank-merging/README.md) must therefore be judged on its own coverage and termination obligations.
+Finite CRT shadows may use a different positive source at each depth. They neither construct one all-time source nor exclude a program outside the stated method class. The [moving-rank program](../rank-merging/README.md) must therefore be judged on its own coverage and termination obligations.
 
 ## Next task and evidence
 
@@ -40,6 +40,6 @@ Finite CRT shadows may use a different positive source at every depth. They neit
 
 <details><summary>Exact component review and evidence</summary>
 
-[Orbitwise and rank-obstruction review](../../../reports/prepublic-2026-09-05/reviewer-b/CLAIM_MATRIX.md); [finite-dictionary review](../../../reports/prepublic-2026-09-05/reviewer-a/CLAIM_MATRIX.md); [source identities](../../../claims/reviewed-2026-09-05.json). Earlier finite protocols retain their partial inspection/reconstruction limits. A written universal argument, finite exact test and full-corpus replay are different evidence; see [replay policy](../../../docs/REPLAY_POLICY.md).
+[Orbitwise and rank-obstruction review](../../../reports/prepublic-2026-09-05/reviewer-b/CLAIM_MATRIX.md); [finite-dictionary review](../../../reports/prepublic-2026-09-05/reviewer-a/CLAIM_MATRIX.md); [source identities](../../../claims/reviewed-2026-09-05.json). Proof inspection and targeted reconstruction are not replays of every earlier numerical protocol. [Recorded evidence limits](../../../docs/REPLAY_POLICY.md) remain applicable.
 
 </details>
