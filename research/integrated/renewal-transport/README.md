@@ -31,7 +31,7 @@ The **enlarged-safe** theorem instead gives residence and mass-tail bounds with 
 
 [Whole-run renewal](../../astra-critical-mass/RUN_RENEWAL.md) supplies complete coding, fresh-shell asymptotics and cofinal drift. [Corridor occupation](../../astra-three-routes/pass4/RENEWAL_MASS.md) controls its initial corridor, and repeated use needs its stated safe-entry envelope. These claims do not authorize replacing a transported distribution by a fresh one.
 
-A reviewed unsafe-return construction takes a summable distribution with finite first rank moment to one with infinite first rank moment. This refutes the proposed invariant moment domain, not convergence of any individual source. Monomial and reciprocal-rank weight failures likewise delimit specific supersolutions. Source-charge controls also differ: a descending source is not a counterexample to a no-descent-only assertion.
+The [reviewed unsafe-return construction](../../astra-three-routes/pass5/RANK_MOMENTS.md) takes a summable distribution with finite first rank moment to one with infinite first rank moment. This refutes the proposed invariant moment domain, not convergence of any individual source. [Monomial-weight failures](../../astra-three-routes/pass5/RANK_MOMENTS.md) and [reciprocal-rank weight failures](../../astra-three-routes/pass5-spectrum-switch/INDUCED_MASS.md) likewise delimit specific supersolutions. Source-charge controls also differ: a descending source is not a counterexample to a no-descent-only assertion.
 
 ## How this relates to the other programs
 
