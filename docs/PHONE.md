@@ -1,48 +1,38 @@
 # Contribute from your phone
 
-Connected GitHub tools can provide a reading and authoring route without a local checkout. Actually running experiments requires an execution environment; a claim that a command ran is not an execution receipt.
+Work directly in a ChatGPT conversation from your phone, including with ChatGPT Pro. Claude and Codex offer GitHub connection options too.
 
-**Walkthrough status: awaiting a fresh-contributor end-to-end test.** Availability, button names and write actions vary by account and client. This guide does not claim every mobile connection supports every action.
+## 1. Join
 
-## Get access and connect
+[Request contributor access](../CONTRIBUTING.md#join-and-start), then accept the GitHub invitation to GettysburgResearch.
 
-Follow [Join and start](../CONTRIBUTING.md#join-and-start). For the direct organization workflow, accept the invitation and confirm that your intended GitHub account can open `GettysburgResearch/collatz`. Public reading and fork contributions, once available, do not require membership.
+## 2. Connect
 
-In ChatGPT or Claude, open the available Apps, Plugins or Connectors settings and connect GitHub using the same GitHub account. Installation selectors: [ChatGPT/Codex](https://github.com/apps/chatgpt-codex-connector/installations/select_target) · [Claude](https://github.com/apps/claude/installations/select_target). Choose GettysburgResearch if offered and follow the repository-selection prompts. Repository access, your personal connection and an organization's app approval are separate requirements; ordinary membership does not grant app-administration rights. Installation alone does not guarantee mobile read/write actions.
+In ChatGPT or Claude, install or connect the GitHub plugin/connector and sign in with the GitHub account you used to join. You can ask your assistant to help you connect it.
 
-**Owner check, separate from personal authorization:** in GettysburgResearch's GitHub **Settings → Third-party Access → GitHub Apps**, configure the relevant app's repository access and resolve pending permission requests. **OAuth application policy** is a separate control for OAuth apps; approve the relevant app if required rather than disabling restrictions globally. See [GitHub's app-access guidance](https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations) and [Claude's integration guide](https://support.claude.com/en/articles/10167454-use-the-github-integration).
+Direct connection links: [ChatGPT/Codex](https://github.com/apps/chatgpt-codex-connector/installations/select_target) · [Claude](https://github.com/apps/claude/installations/select_target).
 
-Use the official [GitHub connection instructions](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt) and [GitHub app installation guide](https://docs.github.com/en/apps/using-github-apps/installing-a-github-app-from-a-third-party) for current account-specific steps. This project does not ask you to paste access tokens into a chat, issue or research file.
+If prompted, choose GettysburgResearch. The organization's existing installation may already cover the repositories, so you may not need to select them again.
 
-## Check the connection
+## 3. Test and contribute
 
-Paste this into a new chat with GitHub tools available:
-
-```text
-Use the connected GitHub tools to open GettysburgResearch/collatz.
-Read README.md, AGENTS.md and CONTRIBUTING.md from current main.
-Tell me the exact main commit you read, summarize one research direction,
-and identify a small contribution. Do not change files yet.
-Report an unavailable read or write capability honestly.
-```
-
-A working read does not prove write or execution access. Check the connected account, repository selection and organization approval when access fails. Do not repeatedly reinstall an app without identifying the missing permission.
-
-## Make a first contribution
+Start a new chat and try:
 
 ```text
-Work on [my question] in GettysburgResearch/collatz.
-Read the relevant program files and check overlapping open PRs.
-Follow AGENTS.md and CONTRIBUTING.md. Use a new branch.
-Prepare a research note, counterexample, literature connection or review.
-State its status, scope, exact dependencies, checks actually run and first gap.
-Do not invent execution results or turn finite evidence into a universal claim.
-Open a PR against main and return its actual link and commit SHA.
-Leave main and other contributors' branches unchanged.
+Open GettysburgResearch/collatz and read README.md, AGENTS.md and
+CONTRIBUTING.md from main. Tell me which commit you read.
+Work on [my question], checking relevant work and overlapping PRs.
+Use a new branch, state the contribution's status and checks actually run,
+and open a draft PR. Return its link and commit SHA.
 ```
 
-Open the returned PR yourself. Confirm its files and author, make sure it contains no private material, and seek review using [shared review](REVIEWING.md). When the available connection cannot write, retain the proposed contribution and use an authorized GitHub authoring environment; a chat response alone is not publication.
+Open the returned PR link to check your contribution. Explore your own idea, review a result, run computations to discover mechanisms, or ask your agent to suggest a starting point. See [shared review](REVIEWING.md) when you're ready for feedback.
 
-## Maintainer acceptance test
+<details>
+<summary>Connection trouble?</summary>
 
-A fresh contributor should successfully open the repository, connect the intended account, run the reading prompt, and create a real branch/PR with the writing prompt. Record the client/account limitations and resulting commit before marking this route tested. A phone-only walkthrough does not certify local scientific execution or a complete-checkout validation run.
+Confirm you're connected with the GitHub account that joined the organization. If access needs approval, ask a maintainer to check the app's repository access under organization Settings → Third-party Access → GitHub Apps; OAuth app approval is a separate setting. A working read does not establish write access: if your connection cannot create a PR, use an authoring environment such as Codex or Claude Code with authenticated Git/GitHub CLI access.
+
+[ChatGPT plugin help](https://learn.chatgpt.com/docs/plugins) · [Claude GitHub help](https://support.claude.com/en/articles/10167454-use-the-github-integration).
+
+</details>

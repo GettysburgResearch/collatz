@@ -4,13 +4,14 @@ The repository supports free exploration and a narrow integration layer.
 
 ## Join and start
 
-Read the [research map](docs/RESEARCH_MAP.md), choose a question, and check overlapping issues and PRs. A new research direction does not need a registry entry or formal proposal.
+1. [Request contributor access](https://github.com/GettysburgResearch/collatz/issues/new?template=contributor-access.md) with your GitHub username and the project(s) you want to join.
+2. Accept the invitation to GettysburgResearch; a maintainer adds you to `polymath-contributors`.
+3. Connect your agent using the [phone tutorial](docs/PHONE.md), or work through your preferred GitHub tools.
+4. Read [README.md](README.md) and [AGENTS.md](AGENTS.md), choose your question, check overlapping work, and open a PR from your own branch.
 
-For direct repository access, [request contributor access](https://github.com/GettysburgResearch/collatz/issues/new?template=contributor-access.md) with your GitHub username and the project you want to work on. While the repository is private, contact the maintainer who invited you if you cannot open it. An owner or authorized maintainer handles team membership; accept any GitHub invitation. No private email address, biography or research proposal is required. Once public, a fork and PR provide a contribution route without joining the organization.
+Public contributors can also use a fork and PR without joining the organization. New directions and unfinished exploratory work are welcome; see the [review guide](docs/REVIEWING.md) for giving or requesting feedback.
 
-Use your own branch and open a PR. Leave `main`, other contributors' branches and frozen research records to the integration process. Follow the [phone tutorial](docs/PHONE.md), [agent guidance](AGENTS.md), and [shared review guide](docs/REVIEWING.md).
-
-Commit public-safe material: no credentials, private chat transcripts, personal contact details or secret local configuration. Credit contributors by their chosen public name or GitHub username; ordinary scholarly citations are welcome.
+Keep contributions public-safe: omit credentials and private personal information, and credit others by their chosen public name or GitHub username.
 
 ## Roles and responsibilities
 
