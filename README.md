@@ -34,6 +34,17 @@ Useful failures are part of the result: finite-prefix compatibility can give onl
 
 Our ambition is to resolve this together. Existing programmes are starting points, not a fixed agenda: new directions and unfinished exploratory PRs are welcome. Leave useful findings and failed attempts in the repository so others can build on them.
 
+| Stage | How it works |
+|---|---|
+| Explore | Open a branch or exploratory PR for proofs, computations, mechanisms, counterexamples or new directions. No preliminary permission needed. |
+| Review | Review one another's work at an exact commit, checking specific claims, dependencies and evidence. |
+| Integrate | Trusted integrators bring useful work into main with its status, proof, dependencies and remaining gaps attached; another core member reviews the integration PR. |
+| Consolidate | Periodically update the cumulative results and open problems, preserving useful failed attempts and superseded arguments. |
+
+Merging preserves and shares work; mathematical acceptance requires substantive review. Exploratory work can be merged while remaining clearly labeled **PROPOSED**, **EMPIRICAL** or **OPEN**.
+
+This way of working is itself experimental: we'll learn together and adapt it as the project grows. Suggestions and improvements are welcome.
+
 Ask your agent to review work since the last integration, run exploratory computations to discover mechanisms, develop proofs, summarize results, build a dashboard—or pursue your own idea.
 
 Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **One possible starting point** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
