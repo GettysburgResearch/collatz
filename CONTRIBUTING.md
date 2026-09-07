@@ -12,6 +12,20 @@ Use your own branch and open a PR. Leave `main`, other contributors' branches an
 
 Commit public-safe material: no credentials, private chat transcripts, personal contact details or secret local configuration. Credit contributors by their chosen public name or GitHub username; ordinary scholarly citations are welcome.
 
+## Roles and responsibilities
+
+Our intended division of access and responsibility is:
+
+| Group | Access and responsibility |
+|---|---|
+| Contributors | Write access for research branches and PRs; review one another's work. Public fork contributions are also welcome. |
+| Integrators | Write access plus permission to merge reviewed PRs into main; preserve claim status, dependencies and review scope. Repository Admin access is not needed. |
+| Owners | Manage membership, settings and exceptional interventions; keep this group small. |
+
+Owners configure GitHub permissions and branch protections separately; this table describes the working policy.
+
+Interested in helping integrate? Start by reviewing contributions and preparing a small integration PR, then ask a maintainer about joining the integration team.
+
 ## Explore freely
 
 Research notes, experiments, counterexamples and useful failed attempts are contributions. Make the exact map and normalization, claim status, finite/all-depth and ordinary/2-adic boundaries, evidence level and first unresolved step visible. Computation that matters needs a frozen artifact, a replay command and an honest account of what was independently checked.
