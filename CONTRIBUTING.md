@@ -35,3 +35,7 @@ Preserve byte-exact frozen evidence. Do not regenerate a canonical report in pla
 ## Repository changes
 
 Use branches and reviewable PRs. Changes to checkers, automation, access rules, licensing or visibility need explicit authority and review appropriate to their consequences. The integrity workflow is read-only and is not permission to run privileged contributed code. Never expose repository secrets to an untrusted research program. A new research contribution does not authorize settings, membership or public-release changes.
+
+## Contribution license
+
+By submitting a contribution, you agree to license your original contribution under the [MIT License](LICENSE). Only include material you have the right to contribute; preserve third-party licenses, notices, and attribution.

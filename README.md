@@ -43,3 +43,7 @@ The [research index](research/README.md) separates the integrated baseline from 
 **Working from your phone?** See the [phone tutorial](docs/PHONE.md).
 
 In a clean complete checkout, `python -X utf8 -B tools/validate.py` checks repository integrity; `--regressions` adds selected bounded replays. [Evidence and replay instructions](docs/REPLAY_POLICY.md) distinguish these from proof review. There is no in-repository Lean build, and external formalizations retain their own evidence limits. [Integration/audit history](archive/README.md) and [public-launch decisions](docs/PUBLIC_RELEASE_GATES.md) are separate from the scientific verdict.
+
+## License
+
+Project code and original research materials are available under the [MIT License](LICENSE). Third-party material retains its existing terms and notices.
