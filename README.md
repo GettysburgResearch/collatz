@@ -34,7 +34,9 @@ Useful failures are part of the result: finite-prefix compatibility can give onl
 
 Our ambition is to resolve this together. Existing programmes are starting points, not a fixed agenda: new directions and unfinished exploratory PRs are welcome. Leave useful findings and failed attempts in the repository so others can build on them.
 
-Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **A useful first contribution** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
+Ask your agent to review work since the last integration, run exploratory computations to discover mechanisms, develop proofs, summarize results, build a dashboard—or pursue your own idea.
+
+Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **One possible starting point** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
 
 The [research index](research/README.md) separates the integrated baseline from active, unreviewed proposals. Human contributors start at [CONTRIBUTING.md](CONTRIBUTING.md); agents at [AGENTS.md](AGENTS.md).
 
