@@ -27,6 +27,8 @@ Owners configure GitHub permissions and branch protections separately; this tabl
 
 Interested in helping integrate? After contributing research, reviews or a small integration PR, [request integrator access](https://github.com/GettysburgResearch/collatz/issues/new?template=integrator-access.md) with your GitHub username. A maintainer reviews your contribution history and grants access when you are ready.
 
+Interested in leading work on another problem? Open an issue suggesting a new repository, briefly describe the problem and offer to help maintain it; an organization owner can create it.
+
 ## Explore freely
 
 Research notes, experiments, counterexamples and useful failed attempts are contributions. Make the exact map and normalization, claim status, finite/all-depth and ordinary/2-adic boundaries, evidence level and first unresolved step visible. Computation that matters needs a frozen artifact, a replay command and an honest account of what was independently checked.
