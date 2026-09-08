@@ -1,0 +1,92 @@
+{
+  "schema": "ALF-local-validation-v1",
+  "full_repository_validation": false,
+  "runs": [
+    {
+      "name": "generator-normal",
+      "argv": [
+        "python",
+        "-B",
+        "experiments/X-ALF-001-linear-frontier/run.py",
+        "--output",
+        "experiments/X-ALF-001-linear-frontier/results/canonical.json"
+      ],
+      "started_at_utc": "2026-09-07T01:31:55.369157+00:00",
+      "seconds": 1.185,
+      "returncode": 0,
+      "stdout": "PASS bf01533bd4f63f5951faf9c308d1aa2e39999542bb819554ac7eba826758b2a9\nfamily rows 12 inverse comparisons 900\n",
+      "stderr": ""
+    },
+    {
+      "name": "verifier-normal",
+      "argv": [
+        "python",
+        "-B",
+        "experiments/X-ALF-001-linear-frontier/verify.py",
+        "experiments/X-ALF-001-linear-frontier/results/canonical.json",
+        "--self-test",
+        "--output",
+        "/mnt/data/astra_linear_frontier/verified-normal.json"
+      ],
+      "started_at_utc": "2026-09-07T01:33:54.556198+00:00",
+      "seconds": 2.124,
+      "returncode": 0,
+      "stdout": "SEPARATE RECONSTRUCTION PASS bf01533bd4f63f5951faf9c308d1aa2e39999542bb819554ac7eba826758b2a9\nRESEALED CORRUPTIONS REJECTED 12\n",
+      "stderr": ""
+    },
+    {
+      "name": "generator-optimized",
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-ALF-001-linear-frontier/run.py",
+        "--check",
+        "experiments/X-ALF-001-linear-frontier/results/canonical.json",
+        "--output",
+        "/mnt/data/astra_linear_frontier/generated-optimized.json"
+      ],
+      "started_at_utc": "2026-09-07T01:35:30.286665+00:00",
+      "seconds": 2.52,
+      "returncode": 0,
+      "stdout": "PASS bf01533bd4f63f5951faf9c308d1aa2e39999542bb819554ac7eba826758b2a9\nfamily rows 12 inverse comparisons 900\n",
+      "stderr": ""
+    },
+    {
+      "name": "verifier-optimized",
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-ALF-001-linear-frontier/verify.py",
+        "experiments/X-ALF-001-linear-frontier/results/canonical.json",
+        "--self-test",
+        "--output",
+        "/mnt/data/astra_linear_frontier/verified-optimized.json"
+      ],
+      "started_at_utc": "2026-09-07T01:35:40.493743+00:00",
+      "seconds": 3.312,
+      "returncode": 0,
+      "stdout": "SEPARATE RECONSTRUCTION PASS bf01533bd4f63f5951faf9c308d1aa2e39999542bb819554ac7eba826758b2a9\nRESEALED CORRUPTIONS REJECTED 12\n",
+      "stderr": ""
+    }
+  ],
+  "all_recorded_commands_passed": true,
+  "final_data_comparisons": {
+    "verified-normal.json": true,
+    "generated-optimized.json": true,
+    "verified-optimized.json": true
+  },
+  "syntax_and_scope_checks": {
+    "new_python_files_parsed": 2,
+    "no_removable_assertions": true,
+    "relative_links_resolved": 14,
+    "markdown_fences_balanced": true,
+    "publisher_syntax_parsed": true,
+    "publisher_executed": false
+  },
+  "final_source_sha256": {
+    "experiments/X-ALF-001-linear-frontier/verify.py": "03711a3dde1ae655a4d48de97fed42c1499d6b4509741f28e8ff98eba9188d29",
+    "experiments/X-ALF-001-linear-frontier/run.py": "396f8bda2b07ba5ceea1483eb35835196353a28e99e8160b412404ee85cc301a"
+  }
+}
