@@ -5,10 +5,38 @@
 We study the shortcut map
 
 $$
-T(n)=\begin{cases}n/2&n\text{ even},\\(3n+1)/2&n\text{ odd}.\end{cases}
+T(n)=\begin{cases}
+\dfrac{n}{2} & \text{if } n \text{ is even}, \\
+\dfrac{3n+1}{2} & \text{if } n \text{ is odd}.
+\end{cases}
 $$
 
 The goal is to prove that every positive integer reaches 1, or construct and verify a counterexample. The project combines ordinary-integer dynamics, arithmetic and symbolic representations, counting and transfer operators, and proof-producing computation. It is part of the [Agentic Polymath Project](https://github.com/gfreund123/agentic-polymath-project).
+
+## Read, check, contribute
+
+**Working from your phone?** See the [phone tutorial](docs/PHONE.md).
+
+Our ambition is to resolve this together. Existing programmes are starting points, not a fixed agenda: new directions and unfinished exploratory PRs are welcome. Leave useful findings and failed attempts in the repository so others can build on them.
+
+| Stage | How it works |
+|---|---|
+| Explore | Open a branch or exploratory PR for proofs, computations, mechanisms, counterexamples or new directions. No preliminary permission needed. |
+| Review | Review one another's work at an exact commit, checking specific claims, dependencies and evidence. |
+| Integrate | Trusted integrators bring useful work into main with its status, proof, dependencies and remaining gaps attached; another core member reviews the integration PR. |
+| Consolidate | Periodically update the cumulative results and open problems, preserving useful failed attempts and superseded arguments. |
+
+Merging preserves and shares work; mathematical acceptance requires substantive review. Exploratory work can be merged while remaining clearly labeled **PROPOSED**, **EMPIRICAL** or **OPEN**.
+
+This way of working is itself experimental: we'll learn together and adapt it as the project grows. Suggestions and improvements are welcome.
+
+Ask your agent to review work since the last integration, run exploratory computations to discover mechanisms, develop proofs, summarize results, build a dashboard—or pursue your own idea.
+
+Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **One possible starting point** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
+
+The [research index](research/README.md) separates the integrated baseline from active, unreviewed proposals. Human contributors start at [CONTRIBUTING.md](CONTRIBUTING.md); agents at [AGENTS.md](AGENTS.md).
+
+See [evidence and replay instructions](docs/REPLAY_POLICY.md) for validation and formalization limits, [integration/audit history](archive/README.md) for provenance, and [public-launch decisions](docs/PUBLIC_RELEASE_GATES.md) for release preparation.
 
 ## What has been achieved
 
@@ -31,31 +59,6 @@ The [research map](docs/RESEARCH_MAP.md) explains how the approaches relate. The
 Useful failures are part of the result: finite-prefix compatibility can give only a completion, orbit sparsity need not imply basin sparsity, arbitrary-subset fiber savings violate mass conservation, and unsafe transport can destroy a finite rank moment. The [research tasks](research/open-obligations/README.md) turn these limits into specific next contributions.
 
 **Current integration:** the September 2026 [mass/rank consolidation](reports/prepublic-2026-09-05/integration/README.md) and [reviewer-D follow-up](reports/prepublic-2026-09-05/integration-d/README.md) build on the earlier baseline; the linked records pin exact source coverage. Later branch revisions remain exploratory unless separately reviewed and integrated.
-
-## Read, check, contribute
-
-Our ambition is to resolve this together. Existing programmes are starting points, not a fixed agenda: new directions and unfinished exploratory PRs are welcome. Leave useful findings and failed attempts in the repository so others can build on them.
-
-| Stage | How it works |
-|---|---|
-| Explore | Open a branch or exploratory PR for proofs, computations, mechanisms, counterexamples or new directions. No preliminary permission needed. |
-| Review | Review one another's work at an exact commit, checking specific claims, dependencies and evidence. |
-| Integrate | Trusted integrators bring useful work into main with its status, proof, dependencies and remaining gaps attached; another core member reviews the integration PR. |
-| Consolidate | Periodically update the cumulative results and open problems, preserving useful failed attempts and superseded arguments. |
-
-Merging preserves and shares work; mathematical acceptance requires substantive review. Exploratory work can be merged while remaining clearly labeled **PROPOSED**, **EMPIRICAL** or **OPEN**.
-
-This way of working is itself experimental: we'll learn together and adapt it as the project grows. Suggestions and improvements are welcome.
-
-Ask your agent to review work since the last integration, run exploratory computations to discover mechanisms, develop proofs, summarize results, build a dashboard—or pursue your own idea.
-
-Start with [scientific status](STATE.md), then choose a [statement and proof](research/integrated/README.md). **One possible starting point** is to reconstruct the centered nonconstant factor-complexity argument from its three specified dependencies, checking the constant-code and endpoint exceptions; the [task description](research/open-obligations/README.md#centered-dependencies) states the deliverable.
-
-The [research index](research/README.md) separates the integrated baseline from active, unreviewed proposals. Human contributors start at [CONTRIBUTING.md](CONTRIBUTING.md); agents at [AGENTS.md](AGENTS.md).
-
-**Working from your phone?** See the [phone tutorial](docs/PHONE.md).
-
-See [evidence and replay instructions](docs/REPLAY_POLICY.md) for validation and formalization limits, [integration/audit history](archive/README.md) for provenance, and [public-launch decisions](docs/PUBLIC_RELEASE_GATES.md) for release preparation.
 
 ## License
 
