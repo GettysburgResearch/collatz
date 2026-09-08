@@ -1,0 +1,84 @@
+{
+  "base_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "base_tree": "1c25c17df24491de6187445f1a1d355d5a7660c3",
+  "source_heads": {
+    "105": "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe",
+    "106": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3"
+  },
+  "source_path_count": 46,
+  "numbered_claim_count": 33,
+  "source_inventory": "../post-integration-2026-09-08/inventory.json",
+  "source_subtrees_before_two_checker_fixes": {
+    "research/astra-tail-transport": "0ec2c3bea451e6463a59544cafd904bfd604fbcc",
+    "research/astra-linear-frontier": "fe938c527bfb71fc8e1881cbdd33f5a4d1dafe86",
+    "experiments/X-ATT-001-critical-tails": "25bb9982d4e241d049f428b0327e213e9fca3cf4",
+    "experiments/X-ATT-002-repeated-spikes": "6238598c7ea5573100fc0925df87c526df8b1a88",
+    "experiments/X-ATT-003-expanding-word-rank": "51b42839b93eef3470c9ae81ce0d03a578049d9c",
+    "experiments/X-ALF-001-linear-frontier": "d919ab5dfd494f9ba5a42ea1d8aa6efaa8799e06",
+    "experiments/X-ALF-002-prefix-rank": "805f9830e44786b311b33a4b49efa52364a1bec0",
+    "reports/astra-tail-transport-01": "00fb881fc64daf3ba0b2e3897ad946d554810f6f",
+    "reports/astra-tail-transport-02": "2f55c1b7a97f9c0c99977f931ce4f531515e7172",
+    "reports/astra-tail-transport-03": "c8311c16a9854660cc640163888a5c2e30be3b6f",
+    "reports/astra-linear-frontier-01": "519c2c8b43f1ed1458e30429aad0cc500a9b906b",
+    "reports/astra-linear-frontier-02": "2f4e5bfedce0adab55131af8b19f23d661966f64"
+  },
+  "review_commit": "65235530e9cf4dda1c5850421b16b7189a491f36",
+  "review_directory": "reports/post-integration-2026-09-08",
+  "review_blobs": {
+    "README.md": "2b84d2f9e21ad69befa8d49c3cfb487001b6a358",
+    "CLAIM_MATRIX.md": "aa6af0b87840fb9f6bdd30dc5c622f49297aaac6",
+    "INTEGRATION_PLAN.md": "7056f4c68b387f190ec75b9712079062c255a730",
+    "family_checks.py": "29f54f29f497b3a60146a25635ccca08b945f4b4",
+    "inventory.json": "eeb5eae5fd9d7130f3ef5126f739fd216d1ea5e5",
+    "prepare_checker_fixes.py": "9b60d858d16e4d1674f55296961c0d189e0b49b8",
+    "review_checks.py": "406ce135a00b84a1c0b20bf8adb7ede5f2faf403",
+    "validation.json": "490c2a24eb2d4dd682c74037b4e70534b9bc9984"
+  },
+  "only_source_modifications": [
+    {
+      "path": "experiments/X-ATT-001-critical-tails/verify.py",
+      "original_blob": "38588f83e8dd1a234e753bcd8fb8bd3f7d6e6902",
+      "active_blob": "41ba1085e1be5d77e29dde454a873f55a0ad3bbc",
+      "archive_path": "archive/research-2026-09-08/X-ATT-001-critical-tails/verify.py",
+      "canonical_artifact": "experiments/X-ATT-001-critical-tails/results/canonical.json",
+      "canonical_artifact_blob": "bfe1b1017642de508efa6dcb8929ff7c7107f74b",
+      "semantic_sha256": "d55d976e9aca871c5f341927d6487df8f6771ef27565706635a4ae5a76e7567e",
+      "resealed_tests": 12
+    },
+    {
+      "path": "experiments/X-ATT-003-expanding-word-rank/verify.py",
+      "original_blob": "760b5ade36c9927dfeea96cbbaafac08a99b07de",
+      "active_blob": "de49bf089d19e036fa277e4ba19b21f0dba32f42",
+      "archive_path": "archive/research-2026-09-08/X-ATT-003-expanding-word-rank/verify.py",
+      "canonical_artifact": "experiments/X-ATT-003-expanding-word-rank/results/canonical.json",
+      "canonical_artifact_blob": "ea8b2ff5127a023fc256e8b199ecdc66735e86b3",
+      "semantic_sha256": "4b4ff957e4c782695a07f3127c52c5d12646f9077c3000748ff683da94886d9a",
+      "resealed_tests": 16
+    }
+  ],
+  "reading_surface_blobs": {
+    "original": {
+      "README.md": "f238d85aeacee6bf264526a7a7e1f4aea1aaccf6",
+      "research/integrated/rank-merging/README.md": "997d387fec6f9ec9bd651d25ee51d4a26d723923",
+      "research/integrated/exceptional-mass/README.md": "08ceff7af5e45fbfcbd71b660fa3bfd04d558873",
+      "research/RESULTS_CATALOG.md": "c66f0decec04c330c47e62f85bf723074e7a0c81",
+      "STATE.md": "331d3d21418eacd73cc02ddb67e5d7158e20d7e7",
+      "research/integrated/CONVENTIONS.md": "e8bf7a1d7287d10d2457de32f158b0137b14c7c6",
+      "claims/followups/reviewer-d-2026-09-05.json": "77a896fd24b9691c447d929384d031e13ffd3d77",
+      "research/integrated/README.md": "45df5ea2e42c6a233193bfe6b5cd7f4b72559046"
+    },
+    "edited": {
+      "README.md": "c91aeb9605c3b1647cd6c97b253df014a210ac57",
+      "research/integrated/rank-merging/README.md": "6e22f4df71f8c67fc1b2addbed3aedb98b10be6a",
+      "research/integrated/exceptional-mass/README.md": "5f01b2abac9d74dc59e1eaae6ecea8456e125776",
+      "research/RESULTS_CATALOG.md": "8c97bb734d98aacf24a0989c750d5853fb458a23",
+      "STATE.md": "d2252f62c6a373d2844ae6683644d1cd354bb3b1",
+      "research/integrated/CONVENTIONS.md": "fc5fbcaea4beb9118358d68fa4c9a04510743eae",
+      "claims/followups/reviewer-d-2026-09-05.json": "b062b8c64f96b5763b3b73741b7d7fabb31f7585",
+      "research/integrated/README.md": "a60ea14af6f97ffd05ed4fcb86d19911df18e166"
+    }
+  },
+  "canonical_statuses_changed": false,
+  "proof_bodies_changed": false,
+  "scope": "Unmerged candidate; byte-identical source import except the two enumerated software predicates/self-tests. The historical review is copied unchanged. New synopses do not extend review to joint theorems."
+}

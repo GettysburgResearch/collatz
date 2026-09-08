@@ -28,6 +28,17 @@ with `R_*(1)=0`. The source proves that the minimum reduces to `R_0,R_1,R_2,R_h`
 
 In the six-branch representation chart, P and Q instead denote the constants `3^12` and `2^19`. In periodic-word formulas, L is block length and s is odd weight. Repeated letters across sources are not shared mathematical objects.
 
+## Formal-word and actual-prefix ranks
+
+The two ranks above remain in use. Two additional constructions have different candidate domains; they are not replacement names for R_* or P. For nonzero integers d, write `g(d)=d^2/3^v3(|d|)`.
+
+| Rank | Candidates off 1 | Essential convention |
+|---|---|---|
+| rho | `g(n),g(n-1),g(n+5)` and `g((3^q-2^L)n+A_w)` for every word with `4*3^q>=5*2^L`. | Formal words, potentially physically illegal; fixed 5/4 gap and unreduced forms. Set rho(1)=0. |
+| Gamma | `g(n)` and `4^k g(T^k(n)-n)` for every actual prefix with nonzero displacement. | Use raw T inside the definition, even after visiting 1; omit zero displacements. Set Gamma(1)=0 separately. |
+
+[Rho statements](../astra-tail-transport/expanding-word-rank/PROOF.md) · [Gamma statements](../astra-linear-frontier/prefix-rank/PROOF.md). The proved `rho<=R_*` inequality does not establish an ordering with Gamma or transfer any older weight/transport theorem. ALF's P is unchanged with P(1)=3; its completed-section map is absorbed at 1, not made into a new zero-valued P rank.
+
 ## Operator domains
 
 Use endpoint rows and source columns. For a deterministic map F killed at 1, `Kf(y)=sum_(F(x)=y) f(x)` on its surviving state space. Write `K_XY=Pi_X K Pi_Y`, extending inputs by zero outside Y. Nonnegative series are pointwise unless a norm-convergence statement is separately proved.
@@ -39,6 +50,14 @@ Use endpoint rows and source columns. For a deterministic map F killed at 1, `Kf
 | Enlarged-safe moving rank | `G_le={n>=2:R_*(A(n))<=R_*(n)}`; source envelope `f<=C/R_*^p` in its stated summable range. | Polynomial residence/mass-tail bounds; the entry envelope must hold again on reuse. |
 
 Here `||f||_p=sum R_*(n)^p |f(n)|`; each unsafe set is the complement of its own safe set among surviving states. The two complements differ. An infinite first rank moment is not infinite unweighted mass and not a divergent individual orbit. Fresh-shell drift need not hold for a transported ensemble. [Exact operator proofs](renewal-transport/README.md).
+
+## Source measures and induced clocks
+
+The tail/clearance papers use **only** the quarter-safe moving-rank region G_q. Their B takes one A step from its unsafe complement, then all successive G_q steps, ending at another unsafe state or 1. Their H is the killed pushforward for B, not the section H above. The clearance input is exactly `1_U/R_*^2`. Source-height tails, endpoint-rank tails, unweighted mass and summed occupation are different quantities; a positive fixed-input residual is not an l1 operator norm.
+
+Gamma instead uses `G_Gamma={n>=2:Gamma(T(n))<Gamma(n)}`. Its safe operator is killed at **both** 1 and exit into the complement; reaching that complement is not convergence. Its subsequent unsafe return starts with a raw shortcut step and then a Gamma-safe excursion, not an old A module or B return. APR-009's moment explosion is a statement about the raw killed shortcut pushforward. It is not automatically an induced-return counterexample.
+
+[Exact tail/clearance domains](../astra-tail-transport/PROOF.md) · [Gamma safe domains](../astra-linear-frontier/prefix-rank/PROOF.md) · [Exact component review](../../reports/post-integration-2026-09-08/CLAIM_MATRIX.md). New joint arguments still need their own review.
 
 ## Ordinary and finite scope
 

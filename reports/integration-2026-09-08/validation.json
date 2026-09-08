@@ -1,0 +1,146 @@
+{
+  "recorded_utc": "2026-09-08T12:21:01.234357+00:00",
+  "scope": "Scoped partial materialization and native F01 verifier execution; not a complete authenticated checkout or a new mathematical review.",
+  "python_version": "3.13.5",
+  "checks": {
+    "patched_verifier_reconstructions": [
+      {
+        "experiment": "X-ATT-001-critical-tails",
+        "original_blob": "38588f83e8dd1a234e753bcd8fb8bd3f7d6e6902",
+        "patched_blob": "41ba1085e1be5d77e29dde454a873f55a0ad3bbc",
+        "artifact_blob": "bfe1b1017642de508efa6dcb8929ff7c7107f74b",
+        "semantic": "d55d976e9aca871c5f341927d6487df8f6771ef27565706635a4ae5a76e7567e",
+        "resealed_tests": 12
+      },
+      {
+        "experiment": "X-ATT-003-expanding-word-rank",
+        "original_blob": "760b5ade36c9927dfeea96cbbaafac08a99b07de",
+        "patched_blob": "de49bf089d19e036fa277e4ba19b21f0dba32f42",
+        "artifact_blob": "ea8b2ff5127a023fc256e8b199ecdc66735e86b3",
+        "semantic": "4b4ff957e4c782695a07f3127c52c5d12646f9077c3000748ff683da94886d9a",
+        "resealed_tests": 16
+      }
+    ],
+    "command_line_runs": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "-S",
+          "experiments/X-ATT-001-critical-tails/verify.py",
+          "experiments/X-ATT-001-critical-tails/results/canonical.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "SELF-TEST PASS: 12 resealed corruptions rejected\nd55d976e9aca871c5f341927d6487df8f6771ef27565706635a4ae5a76e7567e\nVERIFIER PASS; finite interfaces, not an all-time or independent mathematical proof\n",
+        "stderr": "",
+        "stdout_sha256": "afb6e6fa801b632794a883f0e8a8095c4e429514a3e08af899e62f00b9c636ff"
+      },
+      {
+        "command": [
+          "python",
+          "-O",
+          "-B",
+          "-S",
+          "experiments/X-ATT-001-critical-tails/verify.py",
+          "experiments/X-ATT-001-critical-tails/results/canonical.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "SELF-TEST PASS: 12 resealed corruptions rejected\nd55d976e9aca871c5f341927d6487df8f6771ef27565706635a4ae5a76e7567e\nVERIFIER PASS; finite interfaces, not an all-time or independent mathematical proof\n",
+        "stderr": "",
+        "stdout_sha256": "afb6e6fa801b632794a883f0e8a8095c4e429514a3e08af899e62f00b9c636ff"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-S",
+          "experiments/X-ATT-003-expanding-word-rank/verify.py",
+          "experiments/X-ATT-003-expanding-word-rank/results/canonical.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "INDEPENDENT RECONSTRUCTION PASS 4b4ff957e4c782695a07f3127c52c5d12646f9077c3000748ff683da94886d9a\nTAMPER PASS 16 distinct resealed corruptions rejected\nFinite checks plus explicit theorem-premise checks; no all-source closure.\n",
+        "stderr": "",
+        "stdout_sha256": "b892ce4e5f79c7ab49d48bf82e7edc75a36a14f7ef55e10657d5af5db4940cda"
+      },
+      {
+        "command": [
+          "python",
+          "-O",
+          "-B",
+          "-S",
+          "experiments/X-ATT-003-expanding-word-rank/verify.py",
+          "experiments/X-ATT-003-expanding-word-rank/results/canonical.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "INDEPENDENT RECONSTRUCTION PASS 4b4ff957e4c782695a07f3127c52c5d12646f9077c3000748ff683da94886d9a\nTAMPER PASS 16 distinct resealed corruptions rejected\nFinite checks plus explicit theorem-premise checks; no all-source closure.\n",
+        "stderr": "",
+        "stdout_sha256": "b892ce4e5f79c7ab49d48bf82e7edc75a36a14f7ef55e10657d5af5db4940cda"
+      }
+    ],
+    "normal_optimized_outputs_identical": true,
+    "unchanged_reconstruction_ast": true,
+    "original_markdown_authentication": true,
+    "existing_markdown_links_retained": 190,
+    "added_markdown_link_occurrences": 40,
+    "document_checks": [
+      {
+        "path": "README.md",
+        "existing_link_occurrences": 26,
+        "added_link_occurrences": 3,
+        "headings_preserved": true
+      },
+      {
+        "path": "research/integrated/rank-merging/README.md",
+        "existing_link_occurrences": 22,
+        "added_link_occurrences": 8,
+        "headings_preserved": true
+      },
+      {
+        "path": "research/integrated/exceptional-mass/README.md",
+        "existing_link_occurrences": 17,
+        "added_link_occurrences": 6,
+        "headings_preserved": true
+      },
+      {
+        "path": "research/RESULTS_CATALOG.md",
+        "existing_link_occurrences": 75,
+        "added_link_occurrences": 12,
+        "headings_preserved": true
+      },
+      {
+        "path": "STATE.md",
+        "existing_link_occurrences": 9,
+        "added_link_occurrences": 3,
+        "headings_preserved": true
+      },
+      {
+        "path": "research/integrated/CONVENTIONS.md",
+        "existing_link_occurrences": 8,
+        "added_link_occurrences": 5,
+        "headings_preserved": true
+      },
+      {
+        "path": "research/integrated/README.md",
+        "existing_link_occurrences": 33,
+        "added_link_occurrences": 3,
+        "headings_preserved": true
+      }
+    ],
+    "catalog_original_lines_preserved_in_order": true,
+    "timed_bootstrap_block_unchanged": true,
+    "manifest_delta": "one catalog active_blob update plus separately appended provenance; all other prior JSON values unchanged",
+    "link_scope": "All existing link occurrences and headings retained. New relative links normalized within repository; anchors into materialized edited documents checked. This is not a full-tree or external-link crawl."
+  },
+  "not_run": [
+    "complete-checkout tools/validate.py",
+    "five native generator protocols",
+    "unchanged ATT-002, ALF-001 and APR native verifier protocols",
+    "remote CI",
+    "external link crawl or independent browser usability test",
+    "new exhaustive mathematical review or external priority audit"
+  ]
+}

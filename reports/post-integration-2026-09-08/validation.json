@@ -1,0 +1,328 @@
+{
+  "environment": "Python standard library on Linux; connector source reads; no authenticated full checkout",
+  "extra_family_checks": {
+    "clock_change_spike_instances": 4,
+    "compressed_modular_instances": 4,
+    "fixed_clock_power_cases": 28,
+    "ordinary_ALF_instances": 12
+  },
+  "main_modified": false,
+  "not_executed": [
+    "all five original canonical-envelope protocols",
+    "complete authenticated-checkout tools/validate.py",
+    "all source author transcript digests",
+    "exhaustive enormous rho successor-rank evaluation",
+    "materialization or literal full paths of compressed ALF sources",
+    "complete external literature/priority audit",
+    "patched native-verifier corpus runs"
+  ],
+  "preparation_main": "421d570d6ffb917c9090b9e8ca3c2aa58e26647c",
+  "programs": {
+    "family_checks.py": {
+      "bytes": 8888,
+      "git_blob": "29f54f29f497b3a60146a25635ccca08b945f4b4",
+      "sha256": "a9d39f2c3636ae95fd05f489bf9aad80a49cc68d95aca50e19403b967a43818a"
+    },
+    "prepare_checker_fixes.py": {
+      "bytes": 4828,
+      "git_blob": "9b60d858d16e4d1674f55296961c0d189e0b49b8",
+      "sha256": "dbe96ad7bd2e6340a2f4d255c006cae3b4a9de8696df0f914a15294c6c09295c"
+    },
+    "review_checks.py": {
+      "bytes": 8441,
+      "git_blob": "406ce135a00b84a1c0b20bf8adb7ede5f2faf403",
+      "sha256": "4a6e5e75a98dc252d1de5876475f842d34cdee2fc6e954cb7922990402de4774"
+    }
+  },
+  "repair_test_stdout": "PASS: 4 resealed type aliases; 8 exact-predicate rejections; 2 wrong-source refusals\nIsolated fixtures only; no original corpus or source file was executed or patched.\n",
+  "results": {
+    "family_counts": {
+      "Gamma_balls": [
+        {
+          "M": 1,
+          "count": 0,
+          "maximum": 0,
+          "sources_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "M": 4,
+          "count": 2,
+          "maximum": 3,
+          "sources_sha256": "18b058689d010062a25cd7fb949b2abfea1757d2de45ca3abdda17db956e506b"
+        },
+        {
+          "M": 16,
+          "count": 6,
+          "maximum": 9,
+          "sources_sha256": "a1e320a532e56ed1917ecd673d021e15fcb68c31341670b45b1038723d4bb0cd"
+        },
+        {
+          "M": 64,
+          "count": 16,
+          "maximum": 27,
+          "sources_sha256": "4c3cb8509bcf85bc99a66978c8c75fb75b51b4033c369dbda917ae4cc650ce30"
+        },
+        {
+          "M": 256,
+          "count": 33,
+          "maximum": 243,
+          "sources_sha256": "a5a368da7cc170dc2230808d6af684c7a3077f98f21177213e0d0992341721c7"
+        },
+        {
+          "M": 1024,
+          "count": 71,
+          "maximum": 729,
+          "sources_sha256": "19ac0734f11854f69c05d4380f7c0bfa056605c1a2191f0adc8f37a4bbd7d8df"
+        },
+        {
+          "M": 4096,
+          "count": 143,
+          "maximum": 2187,
+          "sources_sha256": "65aea8f541bf50d027951a36075d4ffde37721db498a661c333e9e0da4b45296"
+        },
+        {
+          "M": 16384,
+          "count": 293,
+          "maximum": 6561,
+          "sources_sha256": "151d26c15f018ccd8cda8b577b1b4f5820450566234be7d4bd7c5d56ed7c8cec"
+        },
+        {
+          "M": 65536,
+          "count": 587,
+          "maximum": 59049,
+          "sources_sha256": "89fe3a1f5ac5fdf7d162b801531662de867c72da848ceeb80c20492496d6deed"
+        }
+      ],
+      "periodic": {
+        "families": 64,
+        "old_unsafe_edges": 32,
+        "phase_positions": 1440
+      },
+      "rank_nonordering": [
+        [
+          7,
+          12,
+          49
+        ],
+        [
+          14,
+          75,
+          48
+        ]
+      ],
+      "rho_phases": {
+        "phase_depths": [
+          33,
+          49,
+          65
+        ],
+        "positions": 21,
+        "rows_sha256": "969de0de271254f7584f39dbe1c1eff11cd2dc74fd9655abefe5a29d3a074b4d"
+      },
+      "unsafe_shadows": {
+        "cases": 9,
+        "maximum_returns": 128,
+        "rows_sha256": "e7226d2de7561485ef68551a0ffc724ef0d4edec685e915f24eb402624114539",
+        "source_mass": 1,
+        "surviving_mass": 1
+      }
+    },
+    "forests": [
+      {
+        "B_clock": 39,
+        "T_clock": 184,
+        "ball": 10195,
+        "cycles": 0,
+        "exits": 1555,
+        "first_clock_source": 10971,
+        "first_peak_source": 590491,
+        "forest": 6940,
+        "largest_initial": 14348908,
+        "outside": 2018,
+        "peak": 839670218,
+        "power": 24,
+        "unsafe": 4922
+      },
+      {
+        "B_clock": 47,
+        "T_clock": 222,
+        "ball": 40792,
+        "cycles": 0,
+        "exits": 6208,
+        "first_clock_source": 243481,
+        "first_peak_source": 623295,
+        "forest": 27866,
+        "largest_initial": 129140164,
+        "outside": 8165,
+        "peak": 1475527256,
+        "power": 28,
+        "unsafe": 19701
+      },
+      {
+        "B_clock": 52,
+        "T_clock": 261,
+        "ball": 163168,
+        "cycles": 0,
+        "exits": 25422,
+        "first_clock_source": 156159,
+        "first_peak_source": 172186879,
+        "forest": 111763,
+        "largest_initial": 3486784402,
+        "outside": 32935,
+        "peak": 21206132666,
+        "power": 32,
+        "unsafe": 78828
+      }
+    ],
+    "power_spikes": 40,
+    "small": {
+      "inverse_comparisons": 1196,
+      "negative_budgets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          3,
+          8,
+          4
+        ],
+        [
+          4,
+          15,
+          6
+        ],
+        [
+          5,
+          32,
+          7
+        ],
+        [
+          6,
+          60,
+          13
+        ],
+        [
+          7,
+          128,
+          14
+        ],
+        [
+          8,
+          251,
+          15
+        ],
+        [
+          9,
+          494,
+          16
+        ],
+        [
+          10,
+          984,
+          19
+        ]
+      ],
+      "prefix_transcript": "68190a2d9f988fcec8e9a94499cce1f238464599dabb97c6080143dcb4d547d0",
+      "rotation_guards": 4675,
+      "source_checks": 8191,
+      "switch": [
+        [
+          1479901446144,
+          [
+            6
+          ]
+        ],
+        [
+          29265629184,
+          [
+            6
+          ]
+        ],
+        [
+          4484692426800,
+          [
+            1
+          ]
+        ]
+      ]
+    }
+  },
+  "runs": [
+    {
+      "commands": [
+        "python -B review_checks.py",
+        "python -O -B review_checks.py"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "identical_outputs": true,
+      "stdout_bytes": 4667,
+      "stdout_sha256": "e16df8fc122b987e753832b878122225d08ed061781f48415b916dcda86c056a",
+      "suite": "small"
+    },
+    {
+      "commands": [
+        "python -B review_checks.py --forest",
+        "python -O -B review_checks.py --forest"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "identical_outputs": true,
+      "stdout_bytes": 1037,
+      "stdout_sha256": "d4990b124ff671319b0eb28001d91c6faf02ac5708ed682188224d462fc3d254",
+      "suite": "forests"
+    },
+    {
+      "commands": [
+        "python -B family_checks.py",
+        "python -O -B family_checks.py"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "identical_outputs": true,
+      "stdout_bytes": 12248,
+      "stdout_sha256": "b1f69ff2b6ca4112861101bddad0c76601c744328899a9ceb949490917c2fd2e",
+      "suite": "families"
+    },
+    {
+      "commands": [
+        "python -B prepare_checker_fixes.py --self-test",
+        "python -O -B prepare_checker_fixes.py --self-test"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "identical_outputs": true,
+      "stdout_bytes": 168,
+      "stdout_sha256": "59610e6df9e2996cb0cea871a7935800336b0004cbea392a636f7579b88482ff",
+      "suite": "repair_fixtures"
+    }
+  ],
+  "schema": "collatz-independent-review-validation/v1",
+  "scope": "independent bounded mathematical reconstructions and isolated repair tests, not five native canonical-envelope replays",
+  "source_files_patched": false,
+  "source_heads": {
+    "105": "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe",
+    "106": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3"
+  },
+  "uncredited_attempt": "An optional expanded family run timed out after 200 seconds before producing output. It was not counted as a successful replay. The final harness uses incremental modular exponent lifting, caps dictionary expansion, and checks only premises at the huge rho exit rather than exhaustively evaluating its successor rank. No compressed ordinary source or complete enormous path is materialized."
+}

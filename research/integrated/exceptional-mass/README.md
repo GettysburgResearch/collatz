@@ -30,6 +30,22 @@ A survivor-count estimate can contradict a predecessor lower bound only for **ac
 
 A strictly positive summable killed-state weight satisfying the stated pointwise strict supersolution criterion would supply another route; no global such weight is constructed. Neither weighted equidistribution in the centered system nor a finite inverse cone supplies the missing survivor estimate by itself.
 
+## Source tails and clearance
+
+For the moving rank R_*, put `w(n)=1/R_*(n)^2` on n>=2. [ATT-001–006](../../astra-tail-transport/PROOF.md) establish the sharp ordinary-source tail `1/(9N^2)<=sum_(n>N)w(n)<=43/N^2`. At each fixed positive raw shortcut clock k, the transported endpoint-rank tail is `Theta_k(1/Y)`: fractional moments below one are finite, while the first moment is infinite. The weak-first constant grows at rate `(9/4)^k`; that is not a uniform-in-time tightness bound. ATT-006 separately identifies divergent-basin escape mass and nontrivial-cycle occupation mass. Both must vanish. Its optional SC* interpretation also uses the existing [actual-tail theorem](../../astra-three-routes/pass2/SC_TAIL_AND_ECHO.md), not just a change of notation.
+
+The [clearance proof](../../astra-tail-transport/repeated-spikes/PROOF.md), ATT-101–105, keeps the **fixed initial** input `w_U=1_U/R_*^2`. Here U is the quarter-unsafe set for maximal repeated-word acceleration A, and H pushes mass through one actual unsafe return, killed at 1. Complete initial rank balls and a finite forward-closed clearance forest yield
+
+$$
+\|H^j w_U\|_1\le 12/2^{48}\qquad\text{for every }j\ge52.
+$$
+
+The finite part includes 163,168 non-core rank-ball sources at `Y=2^32`, 78,828 unsafe roots and 111,763 forest vertices, including 32,935 outside the starting ball. Their largest hitting times are 52 unsafe returns and 261 raw shortcut steps. The unknown initial rank tail is bounded once by `12Y^(-3/2)`; deterministic killed transport cannot increase its unweighted mass. The same input has the corresponding bound at every raw time k>=261. This does **not** equate the two clocks.
+
+These counts were independently reconstructed in the [source review](../../../reports/post-integration-2026-09-08/README.md); [native certificate and replay contract](../../../experiments/X-ATT-002-repeated-spikes/README.md). The result is a genuine all-future bound with a **positive** residual, not an extrapolated finite-time trend, natural density, a percentage solved, or a vanishing theorem. The finite Green enclosure above remains a different result.
+
+Every finite power of H still has unweighted l1 operator norm one, so the displayed small fixed-input bound cannot be multiplied at successive blocks. A proved cofinal family of clearances, or another argument forcing the residual to zero, remains missing. Changing from R_* to rho or Gamma changes the weight and generally the return operator; the numerical bound does not transfer. [Current import and replay record](../../../reports/integration-2026-09-08/README.md).
+
 ## Current timed bootstrap
 
 **Proposed corrected formulation, pending review of this exact presentation.** This collects the existing killed-transfer criterion and its positive-beta restriction; it does not claim a new accepted theorem or verify the missing premise.

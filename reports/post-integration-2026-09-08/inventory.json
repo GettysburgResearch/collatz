@@ -1,0 +1,194 @@
+{
+  "additional_branch_checks": {
+    "agent/astra-complete-word-envelope/2026-09-07": "69b1ed57ce90fe8c9d6d7c80c69760a86eb0fd2a",
+    "agent/astra-logarithmic-returns-2026-09-07": "ba93d8def5e2b19b4c463485b4a9b1902127db9f"
+  },
+  "already_merged_nonresearch_prs": [
+    103,
+    104,
+    107,
+    108,
+    110,
+    111,
+    112,
+    113
+  ],
+  "branch_census_scope": "85 branch names inspected for post-integration candidates; both new research-named stubs checked. Not an exhaustive audit of every historical branch head or unreachable commit.",
+  "claim_count": 33,
+  "claim_matrix": "CLAIM_MATRIX.md",
+  "commits": {
+    "105": [
+      "3c7fa4a0a2c5c48792c8efd5f5e90e94e44dab0f",
+      "73572fddd9b8b3cbd8fc03c3a992eb0735d0f62c",
+      "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe"
+    ],
+    "106": [
+      "ca55b248722fd9bdeb713c6f05fdda5cbdc91f38",
+      "7b7471ea0e7b359a2ac46fb1e6aff269331509c3"
+    ]
+  },
+  "cutoff_utc": "2026-09-08T10:00:21Z",
+  "execution_limit": "No complete authenticated checkout or full native canonical-envelope replay by this reviewer. Independent bounded reconstructions and code inspection are separately recorded.",
+  "main_delta": {
+    "action": "preserve; MIT/onboarding decisions are already merged, not pending science",
+    "changed_paths": [
+      ".github/ISSUE_TEMPLATE/contributor-access.md",
+      ".github/ISSUE_TEMPLATE/integrator-access.md",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "README.md",
+      "docs/PHONE.md",
+      "docs/PUBLIC_RELEASE_GATES.md"
+    ],
+    "commits": 17
+  },
+  "main_modified": false,
+  "mathematical_promotion": false,
+  "nonresearch_issue": 109,
+  "packets": [
+    {
+      "action": "extract exact source packet; keep claims and failed completion distinct",
+      "claims": [
+        "ATT-001",
+        "ATT-002",
+        "ATT-003",
+        "ATT-004",
+        "ATT-005",
+        "ATT-006"
+      ],
+      "commit": "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe",
+      "experiment": "experiments/X-ATT-001-critical-tails",
+      "files": [
+        "research/astra-tail-transport/README.md",
+        "research/astra-tail-transport/PROOF.md",
+        "research/astra-tail-transport/SOURCES_AND_STATUS.md",
+        "experiments/X-ATT-001-critical-tails/README.md",
+        "experiments/X-ATT-001-critical-tails/results/canonical.json",
+        "experiments/X-ATT-001-critical-tails/run.py",
+        "experiments/X-ATT-001-critical-tails/verify.py",
+        "reports/astra-tail-transport-01/2026-09-07-attempt.md"
+      ],
+      "packet": "critical tails",
+      "pr": 105
+    },
+    {
+      "action": "extract exact source packet; keep claims and failed completion distinct",
+      "claims": [
+        "ATT-101",
+        "ATT-102",
+        "ATT-103",
+        "ATT-104",
+        "ATT-105"
+      ],
+      "commit": "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe",
+      "experiment": "experiments/X-ATT-002-repeated-spikes",
+      "files": [
+        "research/astra-tail-transport/repeated-spikes/README.md",
+        "research/astra-tail-transport/repeated-spikes/PROOF.md",
+        "research/astra-tail-transport/repeated-spikes/SOURCES_AND_STATUS.md",
+        "experiments/X-ATT-002-repeated-spikes/README.md",
+        "experiments/X-ATT-002-repeated-spikes/results/canonical.json",
+        "experiments/X-ATT-002-repeated-spikes/run.py",
+        "experiments/X-ATT-002-repeated-spikes/verify.py",
+        "reports/astra-tail-transport-02/2026-09-07-repeated-spikes.md"
+      ],
+      "packet": "clearance forests",
+      "pr": 105
+    },
+    {
+      "action": "extract exact source packet; keep claims and failed completion distinct",
+      "claims": [
+        "ATT-201",
+        "ATT-202",
+        "ATT-203",
+        "ATT-204",
+        "ATT-205",
+        "ATT-206"
+      ],
+      "commit": "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe",
+      "experiment": "experiments/X-ATT-003-expanding-word-rank",
+      "files": [
+        "research/astra-tail-transport/expanding-word-rank/README.md",
+        "research/astra-tail-transport/expanding-word-rank/PROOF.md",
+        "research/astra-tail-transport/expanding-word-rank/SOURCES_AND_STATUS.md",
+        "experiments/X-ATT-003-expanding-word-rank/README.md",
+        "experiments/X-ATT-003-expanding-word-rank/results/canonical.json",
+        "experiments/X-ATT-003-expanding-word-rank/run.py",
+        "experiments/X-ATT-003-expanding-word-rank/verify.py",
+        "reports/astra-tail-transport-03/2026-09-07-expanding-word-rank.md"
+      ],
+      "packet": "expanding-word rank",
+      "pr": 105
+    },
+    {
+      "action": "extract exact source packet; keep claims and failed completion distinct",
+      "claims": [
+        "ALF-001",
+        "ALF-002",
+        "ALF-003",
+        "ALF-004",
+        "ALF-005",
+        "ALF-006",
+        "ALF-007"
+      ],
+      "commit": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3",
+      "experiment": "experiments/X-ALF-001-linear-frontier",
+      "files": [
+        "research/astra-linear-frontier/README.md",
+        "research/astra-linear-frontier/LINEAR_PRECISION.md",
+        "research/astra-linear-frontier/SECTION_DEPTH_AND_REPAYMENT.md",
+        "research/astra-linear-frontier/SOURCES_AND_STATUS.md",
+        "experiments/X-ALF-001-linear-frontier/README.md",
+        "experiments/X-ALF-001-linear-frontier/results/canonical.json",
+        "experiments/X-ALF-001-linear-frontier/run.py",
+        "experiments/X-ALF-001-linear-frontier/verify.py",
+        "reports/astra-linear-frontier-01/README.md",
+        "reports/astra-linear-frontier-01/publication-status.json",
+        "reports/astra-linear-frontier-01/validation.json"
+      ],
+      "packet": "linear frontier",
+      "pr": 106
+    },
+    {
+      "action": "extract exact source packet; keep claims and failed completion distinct",
+      "claims": [
+        "APR-001",
+        "APR-002",
+        "APR-003",
+        "APR-004",
+        "APR-005",
+        "APR-006",
+        "APR-007",
+        "APR-008",
+        "APR-009"
+      ],
+      "commit": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3",
+      "experiment": "experiments/X-ALF-002-prefix-rank",
+      "files": [
+        "research/astra-linear-frontier/prefix-rank/README.md",
+        "research/astra-linear-frontier/prefix-rank/PROOF.md",
+        "research/astra-linear-frontier/prefix-rank/PERIODIC_SWITCHING.md",
+        "research/astra-linear-frontier/prefix-rank/SPIKES.md",
+        "research/astra-linear-frontier/prefix-rank/SOURCES_AND_STATUS.md",
+        "experiments/X-ALF-002-prefix-rank/README.md",
+        "experiments/X-ALF-002-prefix-rank/results/canonical.json",
+        "experiments/X-ALF-002-prefix-rank/run.py",
+        "experiments/X-ALF-002-prefix-rank/verify.py",
+        "reports/astra-linear-frontier-02/README.md",
+        "reports/astra-linear-frontier-02/validation.json"
+      ],
+      "packet": "actual-prefix rank",
+      "pr": 106
+    }
+  ],
+  "preparation_base": "421d570d6ffb917c9090b9e8ca3c2aa58e26647c",
+  "schema": "collatz-review-preparation/v1",
+  "scientific_baseline": "1ee54e2786c8da7709fa07d66bae2af85a9edb33",
+  "source_base": "69b1ed57ce90fe8c9d6d7c80c69760a86eb0fd2a",
+  "source_branches_modified": false,
+  "source_heads": {
+    "105": "912aec235fb2c5dbeac69a82454dd9c3d3a1e9fe",
+    "106": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3"
+  },
+  "timezone": "Asia/Jerusalem"
+}
