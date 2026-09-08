@@ -30,6 +30,8 @@ The [research map](docs/RESEARCH_MAP.md) explains how the approaches relate. The
 
 Useful failures are part of the result: finite-prefix compatibility can give only a completion, orbit sparsity need not imply basin sparsity, arbitrary-subset fiber savings violate mass conservation, and unsafe transport can destroy a finite rank moment. The [research tasks](research/open-obligations/README.md) turn these limits into specific next contributions.
 
+**Current integration:** the September 2026 [mass/rank consolidation](reports/prepublic-2026-09-05/integration/README.md) and [reviewer-D follow-up](reports/prepublic-2026-09-05/integration-d/README.md) build on the earlier baseline; the linked records pin exact source coverage. Later branch revisions remain exploratory unless separately reviewed and integrated.
+
 ## Read, check, contribute
 
 Our ambition is to resolve this together. Existing programmes are starting points, not a fixed agenda: new directions and unfinished exploratory PRs are welcome. Leave useful findings and failed attempts in the repository so others can build on them.
