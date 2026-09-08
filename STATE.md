@@ -12,6 +12,10 @@ The inherited reviewed record also includes the complete corrected-256-stage ord
 
 The mass, renewal, orbitwise and rank programs contribute reviewed component theorems: the native no-descent bound and entropy wall; exact fibers and inverse fans; finite-time mass enclosures; safe-region estimates; proper computable ranks; guarded lower-rank mergers; and precise counterexamples to broader claims. Their topic guides are editorial reference assemblies, **not independently accepted combined proofs**.
 
+The [source-tail and clearance results](research/integrated/exceptional-mass/README.md#source-tails-and-clearance) add sharp fixed-clock tails and an all-future **positive** mass remainder for one explicit initial measure. The [linear frontier and adaptive ranks](research/integrated/rank-merging/README.md#linear-inverse-precision-and-completed-section-clocks) add a linear precision budget, rank-specific completed-section obstructions, a summable expanding-word rank, and an actual-prefix rank with an exact finite evaluator and all-primitive-period finite-horizon selection. Their exact source claims have the [recorded component review](reports/post-integration-2026-09-08/CLAIM_MATRIX.md); original source labels and numerical replay ceilings remain attached. This does not change any earlier canonical verdict or turn the guides into accepted joint proofs.
+
+The additional global boundaries are explicit: the clearance residual is not zero; arbitrary-input repeated-block l1 contraction is false; rho may minimize an illegal word; Gamma can spike even on powers of three; and the remaining lower-rank cover and reusable unsafe-input class have not been proved. Gamma's raw moment counterexample is not automatically a theorem for its induced unsafe-return operator.
+
 ## What is conditional, proposed, or open
 
 | Status | Current interpretation |

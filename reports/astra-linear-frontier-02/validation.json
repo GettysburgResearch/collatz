@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "parent": "ca55b248722fd9bdeb713c6f05fdda5cbdc91f38",
+  "date_utc": "2026-09-07T11:32:10.648322+00:00",
+  "python": "3.13.5",
+  "scope": "local exact packet replay, not a complete repository or independent mathematical review",
+  "runs": [
+    {
+      "name": "generator-normal",
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "experiments/X-ALF-002-prefix-rank/run.py",
+        "--check",
+        "experiments/X-ALF-002-prefix-rank/results/canonical.json",
+        "--output",
+        "/tmp/apr-validation/generated-normal.json",
+        "--full-output",
+        "/tmp/apr-validation/generated-full-normal.json"
+      ],
+      "returncode": 0,
+      "seconds": 17.321,
+      "stdout": "PASS 99850a23dea01004c24ed360d9cf3b051a779f06ad06dbc93538f756e207c4ee\nfamily corpus {'cases': 64, 'phases': 1440, 'old_unsafe_edges': 32, 'rows_sha256': 'b2f7f363cb29b942d07e5d0339ae2b7feff187e0b0f5986384577132a8bce884', 'retained_indices': [0, 24, 31, 63]}\ncore {'cutoff': 8192, 'sources': 8191, 'rotation_guards': 4675, 'one_step_decreases': 5612, 'long_winners': 59, 'winner_counts': {'0': 4378, '1': 1232, '2': 1871, '3': 651, '4': 24, '5': 34, '8': 1}, 'rows_sha256': '36d8b2c9211fb94e2ce81a83516f23360162ea9bc551b2980e18943910b776b8'}\nsafe {'sources': 8191, 'maximum_steps': 13, 'reaches_one': 13, 'rows_sha256': '5282a779402b7e960ff3ad3caae16dc846efc6213a88fcdadf9f2e1cfba300dc'}\n",
+      "stderr": "",
+      "executed_utc": "2026-09-07T11:26:35.620530+00:00"
+    },
+    {
+      "name": "verifier-normal",
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "experiments/X-ALF-002-prefix-rank/verify.py",
+        "experiments/X-ALF-002-prefix-rank/results/canonical.json",
+        "--self-test",
+        "--output",
+        "/tmp/apr-validation/verified-normal.json",
+        "--full-output",
+        "/tmp/apr-validation/verified-full-normal.json"
+      ],
+      "returncode": 0,
+      "seconds": 28.59,
+      "stdout": "SEPARATE REPLAY PASS 99850a23dea01004c24ed360d9cf3b051a779f06ad06dbc93538f756e207c4ee\nRESEALED CORRUPT REPORTS REJECTED 12\n",
+      "stderr": "",
+      "executed_utc": "2026-09-07T11:27:43.821628+00:00"
+    },
+    {
+      "name": "generator-optimized",
+      "command": [
+        "python",
+        "-S",
+        "-O",
+        "-B",
+        "experiments/X-ALF-002-prefix-rank/run.py",
+        "--check",
+        "experiments/X-ALF-002-prefix-rank/results/canonical.json",
+        "--output",
+        "/tmp/apr-validation/generated-optimized.json",
+        "--full-output",
+        "/tmp/apr-validation/generated-full-optimized.json"
+      ],
+      "returncode": 0,
+      "seconds": 16.491,
+      "stdout": "PASS 99850a23dea01004c24ed360d9cf3b051a779f06ad06dbc93538f756e207c4ee\nfamily corpus {'cases': 64, 'phases': 1440, 'old_unsafe_edges': 32, 'rows_sha256': 'b2f7f363cb29b942d07e5d0339ae2b7feff187e0b0f5986384577132a8bce884', 'retained_indices': [0, 24, 31, 63]}\ncore {'cutoff': 8192, 'sources': 8191, 'rotation_guards': 4675, 'one_step_decreases': 5612, 'long_winners': 59, 'winner_counts': {'0': 4378, '1': 1232, '2': 1871, '3': 651, '4': 24, '5': 34, '8': 1}, 'rows_sha256': '36d8b2c9211fb94e2ce81a83516f23360162ea9bc551b2980e18943910b776b8'}\nsafe {'sources': 8191, 'maximum_steps': 13, 'reaches_one': 13, 'rows_sha256': '5282a779402b7e960ff3ad3caae16dc846efc6213a88fcdadf9f2e1cfba300dc'}\n",
+      "stderr": "",
+      "executed_utc": "2026-09-07T11:28:10.362530+00:00"
+    },
+    {
+      "name": "verifier-optimized",
+      "command": [
+        "python",
+        "-S",
+        "-O",
+        "-B",
+        "experiments/X-ALF-002-prefix-rank/verify.py",
+        "experiments/X-ALF-002-prefix-rank/results/canonical.json",
+        "--self-test",
+        "--output",
+        "/tmp/apr-validation/verified-optimized.json",
+        "--full-output",
+        "/tmp/apr-validation/verified-full-optimized.json"
+      ],
+      "returncode": 0,
+      "seconds": 27.6,
+      "stdout": "SEPARATE REPLAY PASS 99850a23dea01004c24ed360d9cf3b051a779f06ad06dbc93538f756e207c4ee\nRESEALED CORRUPT REPORTS REJECTED 12\n",
+      "stderr": "",
+      "executed_utc": "2026-09-07T11:29:26.672579+00:00"
+    }
+  ],
+  "compact_semantic_sha256": "99850a23dea01004c24ed360d9cf3b051a779f06ad06dbc93538f756e207c4ee",
+  "full_semantic_sha256": "28960ad9bf694a3dd9ad1f54eaa538f9b2aba5aa9b971855cfaf83833fd2a1cd",
+  "compact_normal_optimized_byte_equal": true,
+  "full_normal_optimized_byte_equal": true,
+  "resealed_mutations_per_verifier_mode": 12,
+  "python_files_compiled": 2,
+  "python_removable_assertions": 0,
+  "local_links_checked": 11,
+  "files_before_receipt": [
+    {
+      "path": "experiments/X-ALF-002-prefix-rank/README.md",
+      "bytes": 4452,
+      "git_blob": "c6208cda79f96a160f5b538e712ac17121071785",
+      "sha256": "9dcdaf905bdc262bb5a0c3215081880514e6c4bb1650c15d7859529dc927985a"
+    },
+    {
+      "path": "experiments/X-ALF-002-prefix-rank/results/canonical.json",
+      "bytes": 9990,
+      "git_blob": "458b01157bc7f243038980e96dab3b9990884b99",
+      "sha256": "028e2ef304ad4762a531a9497e83a8634c01a2ddf6152e0c79b70b9f871caac6"
+    },
+    {
+      "path": "experiments/X-ALF-002-prefix-rank/run.py",
+      "bytes": 11351,
+      "git_blob": "b4f946e7320b0b140b2760408b5700c121d87c32",
+      "sha256": "69f6ee5797965dcb27edfaccac18dbf5cf50adc1ba600a3b746ca0fa3f9104e0"
+    },
+    {
+      "path": "experiments/X-ALF-002-prefix-rank/verify.py",
+      "bytes": 13151,
+      "git_blob": "56e9ba61258d95c35ee46a6e63012bb6e00408a0",
+      "sha256": "79b2d2389b6c960bece18e4bd10eb54de8ef1dc163fcca8de45332ac0757d222"
+    },
+    {
+      "path": "reports/astra-linear-frontier-02/README.md",
+      "bytes": 3827,
+      "git_blob": "c7a477a482252d422a49b551666aa0d9bdd533e8",
+      "sha256": "4d709451718198d3acc1dbc4463e1f9f4ef4f6d1b779dcb41d14a040fa3a8809"
+    },
+    {
+      "path": "research/astra-linear-frontier/prefix-rank/PERIODIC_SWITCHING.md",
+      "bytes": 11306,
+      "git_blob": "1d07d3a1ee20a50b76c608af2abb8c121a88dce3",
+      "sha256": "4d76e811ac288f71212990ef9241bb6b92d1a8083bc383271088f0bdc83845b2"
+    },
+    {
+      "path": "research/astra-linear-frontier/prefix-rank/PROOF.md",
+      "bytes": 9313,
+      "git_blob": "4b1a3c5f22bdae7fd901d408c878361aa28c335c",
+      "sha256": "59e77e0922f418b51a9ce8663ef2c703969b22e0e6a09b2d66f7a5900d83101d"
+    },
+    {
+      "path": "research/astra-linear-frontier/prefix-rank/README.md",
+      "bytes": 5165,
+      "git_blob": "488358573773c9e393117f11c34c4a1424ad2424",
+      "sha256": "66ee54e920d3a839190a20201830da462110620a353dea250e71961738dad666"
+    },
+    {
+      "path": "research/astra-linear-frontier/prefix-rank/SOURCES_AND_STATUS.md",
+      "bytes": 5545,
+      "git_blob": "aebceb2e982d5096c867ea7c03ffcebbaecabc95",
+      "sha256": "475a2974570768fbe323d8dbe4068b021c9743d8cfd2f8f604a121a89fd2aef5"
+    },
+    {
+      "path": "research/astra-linear-frontier/prefix-rank/SPIKES.md",
+      "bytes": 4213,
+      "git_blob": "9201b63d48c3efad9a324c2430f53fa580ea4a07",
+      "sha256": "cda55f9229d87ca8d726dd7ffb2685ae1aab0b54cc683cb3cb204c85b4f24e18"
+    }
+  ],
+  "development_limits": [
+    "Two combined terminal orchestrations exceeded their wall-clock budgets; final individual runs above completed successfully.",
+    "The -S option isolates standard-library execution from unrelated site startup hooks.",
+    "Both implementations have one author; implementation independence is not independent mathematical acceptance.",
+    "No complete authenticated Collatz checkout or full-tree validator execution in this continuation.",
+    "No external Lean build, PDF proof audit, large predecessor payload replay, old heavy corpus replay, or manual workflow dispatch."
+  ],
+  "command_path_note": "Displayed input commands use repository-relative paths; displayed outputs use /tmp/apr-validation. The actual subprocesses used the corresponding /mnt/data/astra_prefix_rank materialization and output directory."
+}

@@ -48,7 +48,7 @@
     {
       "path": "research/RESULTS_CATALOG.md",
       "original_blob": "660e040b5125d776872f7631246ac4a9986ccda8",
-      "active_blob": "c66f0decec04c330c47e62f85bf723074e7a0c81",
+      "active_blob": "8c97bb734d98aacf24a0989c750d5853fb458a23",
       "archive_path": "archive/reviewer-d-2026-09-05/pre-correction/research/RESULTS_CATALOG.md"
     },
     {
@@ -182,5 +182,14 @@
     "current_active_blob": "c66f0decec04c330c47e62f85bf723074e7a0c81",
     "audit_path": "reports/scientific-synthesis-2026-09-06/README.md",
     "scope": "Editorial cumulative catalog; the active fingerprint authenticates current navigation, not new D review coverage. Original review, pre-correction archive, all finding statuses and other active fingerprints are unchanged. Fields describing unchanged contracts and launch state above remain historical to the original D integration."
+  },
+  "tail_rank_navigation_update": {
+    "baseline_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "path": "research/RESULTS_CATALOG.md",
+    "previous_active_blob": "c66f0decec04c330c47e62f85bf723074e7a0c81",
+    "current_active_blob": "8c97bb734d98aacf24a0989c750d5853fb458a23",
+    "component_review_commit": "65235530e9cf4dda1c5850421b16b7189a491f36",
+    "audit_path": "reports/integration-2026-09-08/README.md",
+    "scope": "Additive tail/rank catalog navigation. This active hash authenticates the reading surface, not expanded D review coverage or a new accepted synthesis. All prior metadata, findings, source and archive identities, pending corrections, and the other six active hashes are preserved."
   }
 }

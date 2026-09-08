@@ -30,6 +30,9 @@ Start with the [scientific verdict](../../STATE.md) and [cumulative results](../
 | [Exceptional mass and fixed-height descent](exceptional-mass/README.md) | No-descent/entropy theorems, exact fibers, finite-time mass and conditional fixed-floor criteria. |
 | [Renewal and transport](renewal-transport/README.md) | Safe estimates with explicit operator domains; actual unsafe re-entry remains unresolved. |
 | [Ranks and physical merging](rank-merging/README.md) | Proper ranks, guarded repayment families, finite inverse frontiers and necessary resources; no complete selector. |
+| [Critical tails and clearance](exceptional-mass/README.md#source-tails-and-clearance) | Sharp fixed-clock tails, one-return fractional domains and a positive all-future forest residual; no vanishing-mass or regenerated-envelope theorem. |
+| [Linear frontier and expanding-word rank](rank-merging/README.md#linear-inverse-precision-and-completed-section-clocks) | Lossless linear precision, completed-section cost families, and a distinct formal-word rho with illegal-minimizer counterexamples. |
+| [Actual-prefix rank](rank-merging/README.md#actual-prefix-rank) | Exact finite Gamma evaluator and all-primitive-period finite-horizon selection; sources vary with horizon, and compulsory spikes remain. |
 | [Finite safety automata](finite-safety-automata/README.md) | Verified fixed-depth language/SCC theorem, not an all-time sanctuary. |
 | [Regular languages, rewriting and controls](../RESULTS_CATALOG.md#regular-sanctuary-synthesis) | Additional reviewed method interfaces; the catalog keeps `5x+1` and legacy-artifact limits separate from Collatz. |
 

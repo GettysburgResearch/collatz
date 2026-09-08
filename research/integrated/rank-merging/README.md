@@ -22,6 +22,38 @@ Neither rank decreases at every step. Arbitrary mode switches need not contract,
 
 Complete inverse fans describe every source of a fixed endpoint; they need not be finite. Proper-rank cutoffs give finite candidate witness sets and spatial completeness. Neither supplies temporal meeting or a cap-free search-termination theorem.
 
+## Linear inverse precision and completed-section clocks
+
+The [linear-frontier proof](../../astra-linear-frontier/LINEAR_PRECISION.md), ALF-001–003, bounds the exact negative comparison budget by `floor(r/3)+2<=B_r<=4r+2`. At remaining inverse depth D, at most `4D-2` exits suffice to preserve the full minimum; the search has at most `2*4^D*D!` nodes. This improves the old coarse budget without rejecting its valid shield. It is a finite-radius algorithm, not a guaranteed successful merger search.
+
+[ALF-004–007](../../astra-linear-frontier/SECTION_DEPTH_AND_REPAYMENT.md) give guarded sources for every D with no cheaper P witness in the entire D-by-D box of **completed section returns**, including arbitrarily long odd runs inside each return. The specified bounded-lift repayment sequence has cost `Theta(log n)` for this interface. A separate exponent-lifted family reaches 1 by the compressed physical word `(110)^D0^L`. Its modular certificate is not a literal replay of the enormous path, and the logarithmic-cost assertion is not transferred to that different family.
+
+The same P-hard corridor has an immediate `9/64` decrease in the older component `C(n)=(n+5)^2/3^v3(n+5)`. Both `min(P,C)` and `max(P,C)` nevertheless increase on its first edge. The result motivates a justified switching rule; it does not supply one.
+
+## Expanding-word rank
+
+For a word w with affine data `T_w(n)=(3^q n+A_w)/2^L`, let `Z_w(n)=(3^q-2^L)n+A_w` and `g(z)=z^2/3^v3(|z|)` for nonzero z. The [expanding-word proof](../../astra-tail-transport/expanding-word-rank/PROOF.md), ATT-201–206, defines rho off 1 as the minimum of `g(n),g(n-1),g(n+5)` and **all unreduced** word components with `4*3^q>=5*2^L`; set `rho(1)=0`. It proves `n-1<=rho(n)<=R_*(n)<=n^2`, a strict finite length cutoff `n*2^L<4M` for candidate bound M, and `N_rho(X)<250X^(39/40)`. The 5/4 expansion gap is part of the theorem.
+
+A physically legal minimizing component gives strict decrease of the same rho. Its explicitly guarded `111010` families contract through arbitrarily long old unsafe phases, with global all-word minima proved rather than sampled. But at the even exit the unique minimizing word is illegal, with an unbounded successor-rank jump. Arbitrarily long forward-only delay is also proved; it does not exclude general two-sided diagrams. No universal activation or successful selector follows.
+
+## Actual-prefix rank
+
+With **raw shortcut T**, define for `n>=2`
+
+$$
+\Gamma(n)=\min\bigl(\{g(n)\}\cup
+\{4^k g(T^k(n)-n):k\ge1,\ T^k(n)\ne n\}\bigr),
+\qquad \Gamma(1)=0.
+$$
+
+Zero displacements are omitted. Prefix evaluation uses raw T even after a visit to 1; killing is a separate convention for mass and convergence. [APR-001–005](../../astra-linear-frontier/prefix-rank/PROOF.md) prove `n<=Gamma(n)<=n^2`, an exact evaluator using at most `floor(log_2 n)` steps, complete `O(sqrt(M) log M)` sublevels and summability of `Gamma^-s` exactly for `s>1/2`.
+
+A minimizing nonzero **even displacement** rotates to a physical next-prefix certificate, reducing Gamma by at least the factor `1/4` or `3/4`; an even minimizing baseline also gives a drop. [APR-006–008](../../astra-linear-frontier/prefix-rank/PERIODIC_SWITCHING.md) prove unique period-length selection at every phase for every primitive expanding period and every requested finite horizon, on the explicitly constructed ordinary sources. The proof controls all competing prefixes, including the unprescribed future. There is no fixed finite dictionary, no terminal-repayment requirement on this family, and no ordinary infinite-period source: the inputs depend on the horizon.
+
+[APR-009](../../astra-linear-frontier/prefix-rank/SPIKES.md) gives `Gamma(3^H)=3^H` and `Gamma(T(3^H))>(3^H)^(11/10)` for every H>=1. Every lower-Gamma merger must traverse that first spike. Its pure-power and moment counterexamples concern the **raw killed shortcut operator**, not automatically the induced unsafe return. At a hypothetical exceptional-component minimum, every minimizing nonzero displacement must be odd, and a minimizing baseline must be at an odd source. That residual is not excluded.
+
+Rho and Gamma solve different minimization problems; neither replaces P or R_* in an older theorem. The forest's fixed input `1_U/R_*^2` cannot be relabeled with another rank. The [exact source review](../../../reports/post-integration-2026-09-08/CLAIM_MATRIX.md) covers the named components; this guide is not a newly accepted conjunction. [Import and current replay record](../../../reports/integration-2026-09-08/README.md).
+
 ## Useful failures
 
 The source **121** has no universally sufficient inverse-only cheaper-ancestor explanation under the stated rank convention: its cheaper merger must first move forward at least **54 shortcut steps**. This rules out a particular universal strategy, not all merging. The control `103 -> 175` refutes an incorrectly assumed next mode. Phase mismatches and failed recursive pruning are further tests for proposed selectors. Their exact statements appear in the linked proofs.

@@ -1,0 +1,11 @@
+{
+  "observed_at_utc": "2026-09-07T01:29:13.791515+00:00",
+  "github_connector_write_actions": "No create/push actions exposed in discovery in this session",
+  "gh_cli_present": false,
+  "remote_write_performed": false,
+  "direct_git": {
+    "returncode": 128,
+    "stdout": "",
+    "stderr": "fatal: unable to access 'https://github.com/GettysburgResearch/collatz.git/': Could not resolve host: github.com\n"
+  }
+}
