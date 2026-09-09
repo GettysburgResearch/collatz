@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "date_utc": "2026-09-09T01:23:28.534861+00:00",
+  "python": "3.13.5",
+  "scope": "local packet replay, not independent mathematical review or complete-checkout validation",
+  "runs": [
+    {
+      "name": "generator-normal",
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "experiments/X-ASR-001-suffix-rotation/run.py",
+        "--check",
+        "experiments/X-ASR-001-suffix-rotation/results/canonical.json",
+        "--output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/generator-normal.json",
+        "--full-output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/generator-normal-full.json"
+      ],
+      "executed_utc": "2026-09-09T01:23:25.424146+00:00",
+      "returncode": 0,
+      "seconds": 0.525,
+      "stdout": "PASS b983c8862b763eb4834a287ac54df017202327c3e9af1102022e6b2f2b5baa03\n{\"counts\": {\"backward_only\": 303, \"forward\": 7470, \"unresolved\": 418}, \"cutoff\": 8192, \"first_unresolved\": [3, 7, 9, 15, 27, 31, 39, 63, 73, 75, 81, 91, 103, 105, 111, 127, 135, 153, 159, 175, 201, 207, 211, 219], \"length_one_sources\": 3906, \"rows_sha256\": \"87cdfab93fefdffd0789747210cb162df3ad08d48660f1460107c7be6b7ee240\", \"sources\": 8191, \"suffix_checks\": 8393}\n",
+      "stderr": ""
+    },
+    {
+      "name": "verifier-normal",
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "experiments/X-ASR-001-suffix-rotation/verify.py",
+        "experiments/X-ASR-001-suffix-rotation/results/canonical.json",
+        "--self-test",
+        "--output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/verifier-normal.json",
+        "--full-output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/verifier-normal-full.json"
+      ],
+      "executed_utc": "2026-09-09T01:23:25.949136+00:00",
+      "returncode": 0,
+      "seconds": 0.946,
+      "stdout": "SEPARATE RECONSTRUCTION PASS b983c8862b763eb4834a287ac54df017202327c3e9af1102022e6b2f2b5baa03\nRESEALED CORRUPTIONS REJECTED 12\n",
+      "stderr": ""
+    },
+    {
+      "name": "generator-optimized",
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "-O",
+        "experiments/X-ASR-001-suffix-rotation/run.py",
+        "--check",
+        "experiments/X-ASR-001-suffix-rotation/results/canonical.json",
+        "--output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/generator-optimized.json",
+        "--full-output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/generator-optimized-full.json"
+      ],
+      "executed_utc": "2026-09-09T01:23:26.894993+00:00",
+      "returncode": 0,
+      "seconds": 0.601,
+      "stdout": "PASS b983c8862b763eb4834a287ac54df017202327c3e9af1102022e6b2f2b5baa03\n{\"counts\": {\"backward_only\": 303, \"forward\": 7470, \"unresolved\": 418}, \"cutoff\": 8192, \"first_unresolved\": [3, 7, 9, 15, 27, 31, 39, 63, 73, 75, 81, 91, 103, 105, 111, 127, 135, 153, 159, 175, 201, 207, 211, 219], \"length_one_sources\": 3906, \"rows_sha256\": \"87cdfab93fefdffd0789747210cb162df3ad08d48660f1460107c7be6b7ee240\", \"sources\": 8191, \"suffix_checks\": 8393}\n",
+      "stderr": ""
+    },
+    {
+      "name": "verifier-optimized",
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "-O",
+        "experiments/X-ASR-001-suffix-rotation/verify.py",
+        "experiments/X-ASR-001-suffix-rotation/results/canonical.json",
+        "--self-test",
+        "--output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/verifier-optimized.json",
+        "--full-output",
+        "/mnt/data/collatz_suffix_rotation/validation-work/verifier-optimized-full.json"
+      ],
+      "executed_utc": "2026-09-09T01:23:27.496144+00:00",
+      "returncode": 0,
+      "seconds": 1.027,
+      "stdout": "SEPARATE RECONSTRUCTION PASS b983c8862b763eb4834a287ac54df017202327c3e9af1102022e6b2f2b5baa03\nRESEALED CORRUPTIONS REJECTED 12\n",
+      "stderr": ""
+    }
+  ],
+  "compact_semantic_sha256": "b983c8862b763eb4834a287ac54df017202327c3e9af1102022e6b2f2b5baa03",
+  "full_semantic_sha256": "19aa8e85f09ea778b9e7f3376009152732fda50fbe5971a82dd18ff19af1da76",
+  "normal_optimized_compact_bytes_identical": true,
+  "normal_optimized_full_bytes_identical": true,
+  "resealed_mutations_per_verifier_run": 12,
+  "checked_files": {
+    "experiments/X-ASR-001-suffix-rotation/run.py": {
+      "bytes": 9460,
+      "sha256": "406c975153084e45669ca7ba9e04bd55fdfc4178efe686593e374d0d0325c9a2",
+      "git_blob": "46fe5c18b33c789c14284851320355a47c3858e9"
+    },
+    "experiments/X-ASR-001-suffix-rotation/verify.py": {
+      "bytes": 11629,
+      "sha256": "04ac693a820c5fd4d2bd21b7b7557619ade3bc22e838df2e80eae9d0bf2b6f4e",
+      "git_blob": "9b0444b7f3808928c28ae862b4a3bc07302fb01d"
+    },
+    "experiments/X-ASR-001-suffix-rotation/results/canonical.json": {
+      "bytes": 3349,
+      "sha256": "0d8095dd3de87414c7f8b094014eafae020c188ffa0b05dee3d6857a0ec00f06",
+      "git_blob": "c98f97499c4a3dd69d2a28a9cd7acdcd4750b748"
+    },
+    "research/astra-suffix-rotation/PROOF.md": {
+      "bytes": 13641,
+      "sha256": "777420bd63bbcbe0c556ba819ee234495762cb6c1db41aba8ef83e1b13f6bbc0",
+      "git_blob": "f01113ea051ce50c2da7ed9cc86642d4721e1308"
+    }
+  },
+  "structural_checks": {
+    "python_parses": 2,
+    "local_markdown_links": 4,
+    "markdown_fences_balanced": true
+  },
+  "unperformed": [
+    "independent mathematical review",
+    "complete authenticated repository checkout validator",
+    "external formalization or large-payload replay",
+    "remote workflow execution"
+  ]
+}
