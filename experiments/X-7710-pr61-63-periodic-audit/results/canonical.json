@@ -1,0 +1,23 @@
+{
+  "all_zero_endpoint": {
+    "completion": "0",
+    "divisibility_holds": true,
+    "positive_realization": false,
+    "word": "0"
+  },
+  "counts": {
+    "affine_instances": 6138,
+    "canonical_residue_instances": 19317,
+    "finite_cylinder_unique": 2046,
+    "periodic_rational_replays": 2046,
+    "words": 2046
+  },
+  "experiment": "X-7710",
+  "scope": {
+    "maximum_residue_depth": 10,
+    "maximum_word_length": 10,
+    "period_repetitions": 5
+  },
+  "semantic_digest": "6c63bfdbd3ac7ea91c7f6235cd7fe1e36f368d2d0f075985f59c604a6f82f918",
+  "verdict": "PASS"
+}
