@@ -1,0 +1,28 @@
+{
+  "schema": "collatz-experiment/v1",
+  "version": "0.1.0",
+  "word": "1110",
+  "selected": 0,
+  "bookmarks": [],
+  "family": {
+    "kind": "family",
+    "seed": "2^1024+1",
+    "stride": "2",
+    "count": 32,
+    "steps": 500,
+    "map": "shortcut"
+  },
+  "inverse": null,
+  "comparison": null,
+  "provenance": {
+    "baseline": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "kind": "curated recipe; kernel is computed on replay"
+  },
+  "orbit": {
+    "kind": "orbit",
+    "seed": "2^1024+1",
+    "map": "shortcut",
+    "steps": 2000
+  },
+  "notes": "The source coordinate is an exact integer anchor plus a bounded index, not a floating-point integer. The 500-step family is deliberately censored; retain all members in the denominator."
+}
