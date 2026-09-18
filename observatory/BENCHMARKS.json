@@ -1,0 +1,126 @@
+{
+  "version": "0.3.0-preview.1",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "repeats": 3,
+  "kernel_sha256": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+  "scenarios": [
+    {
+      "name": "27-bit-perturbation",
+      "request": {
+        "kind": "pair",
+        "seed": "27",
+        "relation": "flip",
+        "max_bits": 8192,
+        "steps": 1000,
+        "raw_limit": 10000,
+        "bit": 3,
+        "map_left": "shortcut",
+        "map_right": "odd"
+      },
+      "seconds_min": 0.000752521999856981,
+      "seconds_median": 0.0010033080002358474,
+      "seconds_max": 0.0010174300000471703,
+      "serialized_result_bytes": 18771,
+      "traced_python_peak_bytes": 109381,
+      "result_sha256": "299b9623bcde7a62295f680b742d9850f917b4804340794753bb819cb102e262"
+    },
+    {
+      "name": "thousand-digit-pair",
+      "request": {
+        "kind": "pair",
+        "seed": "1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "relation": "offset",
+        "max_bits": 8192,
+        "steps": 128,
+        "raw_limit": 2000,
+        "delta": "2",
+        "map_left": "shortcut",
+        "map_right": "odd"
+      },
+      "seconds_min": 0.014926837000075466,
+      "seconds_median": 0.015152106000186905,
+      "seconds_max": 0.015690115000325022,
+      "serialized_result_bytes": 907937,
+      "traced_python_peak_bytes": 2969191,
+      "result_sha256": "700276610a2d174d96c8725dbad59b81fd83e22592fe6ba5d5ca35f60b29cc85"
+    },
+    {
+      "name": "64-source-carry-trial",
+      "request": {
+        "kind": "study",
+        "seed": "1",
+        "stride": "2",
+        "count": 64,
+        "horizon": 30,
+        "max_bits": 1024,
+        "relation": "offset",
+        "delta": "2",
+        "motif": "carry_run",
+        "value": "3",
+        "target": "merge"
+      },
+      "seconds_min": 0.003907244000401988,
+      "seconds_median": 0.00437269300027765,
+      "seconds_max": 0.00686290600015127,
+      "serialized_result_bytes": 25299,
+      "traced_python_peak_bytes": 137795,
+      "result_sha256": "63c7b41d51824d200d3b16872707c97dfd8d17350f31f81c41a22b5f44d87b60"
+    },
+    {
+      "name": "rank-module-fixture",
+      "request": {
+        "kind": "research",
+        "seed": "577363",
+        "max_bits": 1024,
+        "steps": 128,
+        "modules": 32
+      },
+      "seconds_min": 0.0020732269999825803,
+      "seconds_median": 0.002179505999720277,
+      "seconds_max": 0.002198054000018601,
+      "serialized_result_bytes": 80938,
+      "traced_python_peak_bytes": 445066,
+      "result_sha256": "1c5ee764dd9568d1220576cd4fbff8e70bcaa23b349e8f47787bb32154e620c1"
+    },
+    {
+      "name": "128-source-module-transport",
+      "request": {
+        "kind": "transport",
+        "seed": "1",
+        "stride": "1",
+        "count": 128,
+        "max_bits": 512,
+        "map": "module",
+        "floor": "1",
+        "rounds": 24,
+        "modulus": 16
+      },
+      "seconds_min": 0.005064373000095657,
+      "seconds_median": 0.0051775329998235975,
+      "seconds_max": 0.0058181360000162385,
+      "serialized_result_bytes": 17169,
+      "traced_python_peak_bytes": 184142,
+      "result_sha256": "bd7b6d36fdda09fe2488c14b2d9a5ddd8991ef3445ef122c7f3dab2140f7f3be"
+    },
+    {
+      "name": "4096-branch-composed-ghost",
+      "request": {
+        "kind": "blocks",
+        "blocks": [
+          {
+            "word": "1110",
+            "repeats": 1024
+          }
+        ]
+      },
+      "seconds_min": 0.011258261999955721,
+      "seconds_median": 0.01147567899988644,
+      "seconds_max": 0.011571804000141128,
+      "serialized_result_bytes": 13281,
+      "traced_python_peak_bytes": 40972,
+      "result_sha256": "b9d01bcce9aabb614b723f06aed6f5eb4c673f468d5abbe47981e547f98e76cf"
+    }
+  ],
+  "scope": "Observed exact-provider time incl normalization, code checks and result digest; excludes HTTP, rendering and file export. Traced peak is Python allocations in one separate replay, not total process/browser memory. Small bounded scenarios are not simultaneous maximum-workload guarantees."
+}

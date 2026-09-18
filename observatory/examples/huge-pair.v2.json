@@ -1,0 +1,45 @@
+{
+  "schema": "collatz-investigation/v2",
+  "requests": {
+    "pair": {
+      "kind": "pair",
+      "seed": "179769313486231590772930519078902473361797697894230657273430081157732675805500963132708477322407536021120113879871393357658789768814416622492847430639474124377767893424865485276302219601246094119453082952085005768838150682342462881473913110540827237163350510684586298239947245938479716304835356329624224137217",
+      "relation": "offset",
+      "max_bits": 8192,
+      "steps": 200,
+      "raw_limit": 4000,
+      "delta": "2",
+      "map_left": "shortcut",
+      "map_right": "odd"
+    }
+  },
+  "view": {
+    "tab": "pair",
+    "alignment": "raw",
+    "left": 0,
+    "right": 0,
+    "start": 0,
+    "end": 200,
+    "bitOffset": 992,
+    "bitWidth": 32,
+    "meetingIndex": 0,
+    "meetingSupport": "raw",
+    "transportTime": 0,
+    "studyIndex": 0,
+    "researchIndex": 0,
+    "rootIndex": 0,
+    "researchMetric": "coefficient",
+    "studyFilter": "all"
+  },
+  "notes": "Exact 1025-bit neighboring odd inputs. A finite step-limit outcome is not divergence. Compare literal low/high bit windows and explicit raw support, including omitted accelerated states. This recipe deliberately does not ask the 1024-bit research adapter to accept a larger source.",
+  "observations": [],
+  "provenance": {
+    "version": "0.3.0-preview.1",
+    "kernels": {
+      "pair": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd"
+    },
+    "result_digests": {
+      "pair": "2580fe2b3397dcbb5ad5b300dbad58a110455d6a8b2d5b7667fabbb3e15f4691"
+    }
+  }
+}

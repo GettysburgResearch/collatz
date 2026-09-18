@@ -66,7 +66,7 @@ def main():
             app = re.sub(r'^import .*?;\n', '', (ROOT / 'web/app.mjs').read_text(), count=1)
             page.add_script_tag(content='"use strict";\n' + helpers + '\n' + app)
         else:
-            page.goto(args.url)
+            page.goto(args.url.rstrip('/') + '/classic')
         page.wait_for_function('window.observatory?.getState().ready === true', timeout=30000)
         check(page.evaluate('window.observatory.getState().orbit.result.steps') == 70, 'boot computes shortcut orbit 27')
         check(page.evaluate('window.observatory.getState().family.result.count') == 128, 'boot populates 128-source atlas')

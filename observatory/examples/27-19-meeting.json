@@ -1,0 +1,36 @@
+{
+  "schema": "collatz-meeting/v1",
+  "request": {
+    "kind": "pair",
+    "seed": "27",
+    "relation": "flip",
+    "max_bits": 8192,
+    "steps": 1000,
+    "raw_limit": 10000,
+    "bit": 3,
+    "map_left": "shortcut",
+    "map_right": "odd"
+  },
+  "left": {
+    "seed": "27",
+    "map": "shortcut",
+    "raw": 103,
+    "step": 63,
+    "n": "40",
+    "log2": 5.321928094887363,
+    "bits": 6,
+    "parity": 0
+  },
+  "right": {
+    "seed": "19",
+    "map": "odd",
+    "raw": 12,
+    "step": null,
+    "n": "40",
+    "log2": 5.321928094887363,
+    "bits": 6,
+    "parity": 0
+  },
+  "kernel_sha256": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+  "note": "Finite meeting 27/19. Independently check with python -m observatory.verify FILE."
+}

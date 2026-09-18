@@ -1,0 +1,104 @@
+{
+  "schema": "collatz-investigation/v2",
+  "requests": {
+    "pair": {
+      "kind": "pair",
+      "seed": "127",
+      "relation": "offset",
+      "max_bits": 8,
+      "steps": 60,
+      "raw_limit": 60,
+      "delta": "2",
+      "map_left": "raw",
+      "map_right": "raw"
+    },
+    "study": {
+      "kind": "study",
+      "seed": "127",
+      "stride": "2",
+      "count": 8,
+      "horizon": 60,
+      "max_bits": 8,
+      "relation": "offset",
+      "delta": "2",
+      "motif": "carry_run",
+      "value": "1",
+      "target": "merge"
+    },
+    "research": {
+      "kind": "research",
+      "seed": "7",
+      "max_bits": 1024,
+      "steps": 40,
+      "modules": 16
+    },
+    "transport": {
+      "kind": "transport",
+      "seed": "127",
+      "stride": "1",
+      "count": 16,
+      "max_bits": 8,
+      "map": "shortcut",
+      "floor": "1",
+      "rounds": 12,
+      "modulus": 16
+    },
+    "blocks": {
+      "kind": "blocks",
+      "blocks": [
+        {
+          "word": "1110",
+          "repeats": 1024
+        }
+      ]
+    },
+    "valuations": {
+      "kind": "valuations",
+      "valuations": [
+        1,
+        2
+      ],
+      "multiplier": 3,
+      "addend": -1
+    }
+  },
+  "view": {
+    "tab": "study",
+    "alignment": "raw",
+    "left": 0,
+    "right": 0,
+    "start": 0,
+    "end": 60,
+    "bitOffset": 0,
+    "bitWidth": 32,
+    "meetingIndex": 0,
+    "meetingSupport": "raw",
+    "transportTime": 0,
+    "studyIndex": 0,
+    "researchIndex": 0,
+    "rootIndex": 0,
+    "researchMetric": "coefficient",
+    "studyFilter": "unfinished"
+  },
+  "notes": "Adversarial finite controls: an 8-bit arithmetic cap leaves trial members unfinished; no false nonmerging claim is made. R*(7)=12 increases to R*(13)=36 in one maximal module. The 4096-bit repeated ghost remains -19/11. The positive 3n-1 control cycle is a different system, not a Collatz counterexample.",
+  "observations": [],
+  "provenance": {
+    "version": "0.3.0-preview.1",
+    "kernels": {
+      "pair": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "study": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "research": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "transport": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "blocks": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "valuations": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd"
+    },
+    "result_digests": {
+      "pair": "713f40043d3ee708e00c255f9cf6799e559a0603ecdd0357d46ae887c3e30682",
+      "study": "289fe362670cd78d9baab2e38ad6dda0fa83822ed29bfc36e43d0206134ad02e",
+      "research": "c31faed75e4d6f5825a20b39b7e6d0888806cd04a2d0755188797950e09bc728",
+      "transport": "ea58f47d6674e0ae9c0aeaa6a13da625918abf255d01b77c2cc11e3bcd272e1d",
+      "blocks": "b9d01bcce9aabb614b723f06aed6f5eb4c673f468d5abbe47981e547f98e76cf",
+      "valuations": "fbb56e57d8c82a12028bb432e7e62f19abedd7fb95b1fecea29963735e4d3507"
+    }
+  }
+}
