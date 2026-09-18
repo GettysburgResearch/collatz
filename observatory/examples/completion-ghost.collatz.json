@@ -1,0 +1,21 @@
+{
+  "schema": "collatz-experiment/v1",
+  "version": "0.1.0",
+  "word": "111011101110111011101110111011101110111011101110",
+  "selected": 0,
+  "bookmarks": [],
+  "family": null,
+  "inverse": null,
+  "comparison": null,
+  "provenance": {
+    "baseline": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "kind": "curated recipe; kernel is computed on replay"
+  },
+  "orbit": {
+    "kind": "orbit",
+    "seed": "7",
+    "map": "shortcut",
+    "steps": 2000
+  },
+  "notes": "For repeated 1110, compare least-positive finite roots with the rational periodic realizer -19/11. Extending a prefix changes the finite source; no fixed positive all-time source follows."
+}
