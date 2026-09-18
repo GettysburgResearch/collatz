@@ -17,14 +17,18 @@ from urllib.parse import urlsplit
 import webbrowser
 
 try:
-    from .core import Budget, Cancelled, TimedOut, LIMITS, MAPS, VERSION, execute, normalize_request
+    from .core import Budget, Cancelled, TimedOut, LIMITS, MAPS
+    from .engine import VERSION, execute, normalize_request, capabilities
 except ImportError:
-    from core import Budget, Cancelled, TimedOut, LIMITS, MAPS, VERSION, execute, normalize_request
+    from core import Budget, Cancelled, TimedOut, LIMITS, MAPS
+    from engine import VERSION, execute, normalize_request, capabilities
 
 ROOT = Path(__file__).resolve().parent
 MAX_BODY = 32768
-ASSETS = {"/": ("index.html", "text/html"), "/app.mjs": ("app.mjs", "text/javascript"),
+ASSETS = {"/": ("lab.html", "text/html"), "/classic": ("index.html", "text/html"), "/app.mjs": ("app.mjs", "text/javascript"),
           "/view.mjs": ("view.mjs", "text/javascript"), "/style.css": ("style.css", "text/css")}
+for filename in ("lab.mjs", "workspace.mjs", "panels.mjs", "client.mjs", "lab.css"):
+    ASSETS["/" + filename] = (filename, "text/css" if filename.endswith(".css") else "text/javascript")
 
 
 class Jobs:
@@ -56,9 +60,11 @@ class Jobs:
         try:
             data = execute(config, Budget(event, progress))
             # A cooperative cancel wins even when requested immediately after computation.
-            if event.is_set():
+            if event.is_set() and not data["result"].get("interruption"):
                 raise Cancelled("Cancelled by the caller.")
-            update = {"status": "done", "data": data}
+            if len(json.dumps(data, ensure_ascii=True)) > 16000000:
+                raise ValueError("Result exceeds the 16 MB retention cap; use smaller horizons or bit limits.")
+            update = {"status": data["result"].get("interruption") or "done", "data": data}
         except Cancelled as exc:
             update = {"status": "cancelled", "error": str(exc)}
         except TimedOut as exc:
@@ -94,7 +100,7 @@ class Jobs:
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "CollatzObservatory/0.1"
+    server_version = "CollatzObservatory/0.3-preview"
 
     def setup(self):
         super().setup()
@@ -137,8 +143,7 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/health":
             self.send(200, {"version": VERSION, "token": self.server.token, "limits": LIMITS, "mode": "loopback-only"})
         elif path == "/api/capabilities":
-            self.send(200, {"schema": "collatz-api/v1", "maps": MAPS, "operations": ["orbit", "family", "word", "inverse"],
-                            "limits": LIMITS, "integer_encoding": "decimal strings", "jobs": "POST /api/jobs; GET or DELETE /api/jobs/{id}"})
+            self.send(200, capabilities())
         elif path.startswith("/api/jobs/"):
             try:
                 self.send(200, self.server.jobs.get(path.removeprefix("/api/jobs/")))

@@ -1,0 +1,105 @@
+{
+  "schema": "collatz-investigation/v2",
+  "requests": {
+    "pair": {
+      "kind": "pair",
+      "seed": "27",
+      "relation": "flip",
+      "max_bits": 8192,
+      "steps": 1000,
+      "raw_limit": 10000,
+      "bit": 3,
+      "map_left": "shortcut",
+      "map_right": "odd"
+    },
+    "study": {
+      "kind": "study",
+      "seed": "1",
+      "stride": "2",
+      "count": 64,
+      "horizon": 30,
+      "max_bits": 1024,
+      "relation": "offset",
+      "delta": "2",
+      "motif": "carry_run",
+      "value": "3",
+      "target": "merge"
+    },
+    "research": {
+      "kind": "research",
+      "seed": "577363",
+      "max_bits": 1024,
+      "steps": 128,
+      "modules": 32
+    },
+    "transport": {
+      "kind": "transport",
+      "seed": "1",
+      "stride": "1",
+      "count": 64,
+      "max_bits": 512,
+      "map": "module",
+      "floor": "1",
+      "rounds": 24,
+      "modulus": 16
+    },
+    "blocks": {
+      "kind": "blocks",
+      "blocks": [
+        {
+          "word": "1110",
+          "repeats": 16
+        }
+      ]
+    },
+    "valuations": {
+      "kind": "valuations",
+      "valuations": [
+        1,
+        1,
+        5
+      ],
+      "multiplier": 5,
+      "addend": 1
+    }
+  },
+  "view": {
+    "tab": "pair",
+    "alignment": "raw",
+    "left": 0,
+    "right": 0,
+    "start": 0,
+    "end": 120,
+    "bitOffset": 0,
+    "bitWidth": 32,
+    "meetingIndex": 0,
+    "meetingSupport": "raw",
+    "transportTime": 0,
+    "studyIndex": 0,
+    "researchIndex": 0,
+    "rootIndex": 0,
+    "researchMetric": "coefficient",
+    "studyFilter": "all"
+  },
+  "notes": "27 xor 2^3 = 19. Inspect actual carries at raw time zero; then select the first exact meeting. The bounded 64-source trial tests a carry-run implication and retains counterexamples. Explore the separate rank/transport/word laboratories, then save the whole experiment.",
+  "observations": [],
+  "provenance": {
+    "version": "0.3.0-preview.1",
+    "kernels": {
+      "pair": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "study": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "research": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "transport": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "blocks": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd",
+      "valuations": "671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd"
+    },
+    "result_digests": {
+      "pair": "299b9623bcde7a62295f680b742d9850f917b4804340794753bb819cb102e262",
+      "study": "63c7b41d51824d200d3b16872707c97dfd8d17350f31f81c41a22b5f44d87b60",
+      "research": "1c5ee764dd9568d1220576cd4fbff8e70bcaa23b349e8f47787bb32154e620c1",
+      "transport": "e3954c9242350ff9da83b97f8236e3d00cfdeb9705d117faa9bc46fc96f41aca",
+      "blocks": "ce0f963eb4fd2e7002d12fb732f728a4c0d3a9d89720bb0aab88516631e93bbe",
+      "valuations": "85235fd9c7556382780c6a5fec2cec6d4293d81e580d5297c161845e7a11ab8f"
+    }
+  }
+}

@@ -1,111 +1,138 @@
-# Collatz Observatory · v0.1
+# Collatz Observatory · 0.3.0-preview.1
 
-A runnable, local-first visual research desk for **exact finite Collatz experiments**. This is the first implementation slice of [programme #118](https://github.com/GettysburgResearch/collatz/issues/118), not a proof, an all-time search, or the complete programme.
+**A runnable local laboratory for paired-trajectory investigations and exact finite Collatz research.** Perturb a bit, inspect the actual addition carries, find exact shared states with both arrival times, challenge a motif on a bounded family, and replay the whole investigation.
 
-## Start here
+This is a substantial implementation beyond [v0.1 / PR #119](https://github.com/GettysburgResearch/collatz/pull/119), with selected v0.3 research adapters. It is **not completion of every v0.2/v0.3 roadmap item**, a proof of Collatz, or an Internet-facing service. The [delivery matrix](ROADMAP.md) distinguishes implemented capabilities from remaining work. Parent programme: [#118](https://github.com/GettysburgResearch/collatz/issues/118).
 
-**Python 3.10+ is the only runtime dependency.** No npm install, pip packages, API keys, database, cloud account, or build step. Use a modern browser with BigInt and ES modules.
+## Run it
 
-From the repository root:
+Python **3.10+** and a modern browser are the intended runtime requirements. The app has **no third-party runtime dependencies, npm build, API key, database, or account**.
+
+From the repository root (or the extracted application ZIP):
 
 ```sh
 python observatory/server.py --open
 ```
 
-On Windows, the Python launcher also works:
+Windows:
 
 ```powershell
 py -3 observatory/server.py --open
 ```
 
-On systems whose Python command is `python3`, substitute that command. Open **http://127.0.0.1:8765**. Keep the terminal open; Ctrl+C stops the server. A port conflict is resolved with `--port 8766`. `--open` is optional, including in Codex/headless environments. You can also run `python -m observatory.server` from the repository root.
+Substitute `python3` where appropriate. Open **http://127.0.0.1:8765**; keep the terminal open. Ctrl+C stops the server. Use `--port 8766` for a port conflict; omit `--open` in headless environments. The original v0.1 desk is preserved at **http://127.0.0.1:8765/classic**.
 
-First checkout of this implementation branch in an existing clone:
+The new desk starts populated, with `27` and `27 xor 2^2 = 31`. A named investigation can be saved locally in the browser, or exported to a portable JSON recipe. Export valuable work: compute jobs are not persistent across server restarts.
 
-```sh
-git fetch origin
-git switch --track origin/codex/collatz-observatory-v0.1
-python observatory/server.py --open
-```
+### Source and evidence
 
-Use `git switch codex/collatz-observatory-v0.1` when the local branch already exists. Do not discard other uncommitted work to switch branches.
+The exact source baseline, publication boundary, test receipt and known platform gaps are recorded in [VALIDATION.md](VALIDATION.md). This preview's patch is separate from the original v0.1 PR; follow the accompanying publishing handoff when landing it in a full clone.
 
-## A five-minute first investigation
+## First complete investigation
 
-1. The desk starts with **27**, its shortcut trajectory, the `1110` word, a **128-source family atlas**, and the inverse frontier of 1. Click a point in the orbit. Its exact integer, raw clock position, residues and binary row stay linked. Use the step field or arrow keys for precise selection.
-2. Click **Jump to peak**, then change clocks. The displayed peaks differ because acceleration hides intermediate states; the separate raw-segment peak does not. A raw step missing from an accelerated representation is mapped explicitly to its preceding represented state, not silently identified with another clock.
-3. Click **Beyond floating point**. Try decimal integers, `0b...`, `2^1024+1`, or `2^2048-1`. Drag the orbit to zoom, or enter a step window. Pin a trajectory, run another source under the same clock, and compare the two curves.
-4. In **Words & cycles**, compare `1110`, `10`, `1`, and `0000`. Click the least-root plot to inspect a prefix, then trace its least positive source. `1110` has rational periodic candidate `-19/11`; its finite positive source is not that infinite rational realization.
-5. Explore an arithmetic-progression family, select an atlas point or table row, and trace that source. Bookmark a selection, add a note, **Save experiment**, and **Load** the JSON. Loading recomputes the mathematics. Three ready-made recipes are in [examples](examples/).
+1. **Perturb.** In the paired desk choose source `27`, flip bit `3`, and run. The second source is `19`. Try raw, shortcut and odd-to-odd clocks independently for A and B. Odd-to-odd sources must already be odd; an even source is never silently normalized.
+2. **Inspect arithmetic.** At raw time zero, the carry table shows literal columns of `n + (n << 1) + 1` for both odd sources: input bits, shifted bits, incoming carry, outgoing carry and result. The injected `+1` is the carry entering column zero. Cropping at a nonzero bit offset still computes the actual incoming carry from lower columns. On an even state the operation is halving, not fictional `3n+1` addition.
+3. **Find the shared state.** Click the first meeting. For 27 versus 19, the stopped raw trajectories first intersect at `40`, at raw arrivals **103** and **12**. With A shortcut and B odd-to-odd, A's displayed arrival is **63** and B's is **not represented**: 40 lies inside B's accelerated transition. The inspector and exported witness preserve this distinction. Meeting alignment is retrospective, not a prospective predictor.
+4. **Challenge a motif.** In the family trial, use sources `1,3,...,127`, partner offset `2`, raw horizon `30`, carry-run threshold `3`, and target “share a computed state by the horizon.” Open a counterexample and trace both sources. Controls and bit-limited/unfinished members stay in the original denominator; a counterexample refutes only that bounded implication.
+5. **Record and replay.** Capture an observation, write down the hypothesis and a counterexample, then export the investigation. Loading recomputes every included laboratory before committing the new workspace. A failed request leaves the prior investigation intact. Changed kernel/result digests are reported; old observations are not silently re-certified.
+
+Load [paired-investigation.v2.json](examples/paired-investigation.v2.json) for a populated cross-laboratory example. [Huge paired inputs](examples/huge-pair.v2.json) and [unfinished-case controls](examples/unfinished-controls.v2.json) are included. The old example files still open in `/classic`; import into the new desk preserves the original classic recipe but only migrates its orbit/comparison into the paired workspace.
 
 ## What is implemented
 
-| Laboratory | v0.1 behavior |
+| Laboratory | Runnable behavior |
 |---|---|
-| Orbit/excursion | Raw, shortcut and odd-to-odd maps; exact states; raw cross-clock anchors; first displayed descent; displayed and hidden-raw peaks; bounded outcomes; plot brushing, window controls and one pinned comparison. |
-| Binary microscope | Linked exact bit rows; fixed low-bit or per-row high-bit alignment; bit-offset navigation; adaptive column count; explicit row/bit cropping. The arithmetic inspector shows `3n+1`, its 2-adic valuation and accelerated successors. |
-| Parity/cycle | Exact affine numerator, **whole** cycle denominator, rational candidate, independent branch replay, primitive word length, source cylinders, prefix least-positive roots, and a link back to a positive trajectory. |
-| Family atlas | Exhaustive finite arithmetic progressions, exact huge source anchors, bounded offsets on the plot, status counts that retain incomplete members, exact tables and click-to-trace. |
-| Inverse graph | Exact shortcut predecessors, distinct-state deduplication, minimum inverse-depth layout, directed edge witnesses, clickable nodes and explicit truncation. |
-| Research workflow | Exact inspector; bookmark/notes; versioned experiment JSON with viewport, alignment and comparison recipes; witness export; cancellable jobs; structured HTTP and browser-agent interfaces. |
+| Paired trajectories | Bit flip, signed neighbor offset or explicit partner; independent displayed clocks; raw/step/meeting-relative alignment; drag zoom, window controls and keyboard inspection; literal difference spacetime. |
+| Carries and physical meetings | Actual arithmetic columns and carry differences; exact intersections of raw and displayed supports; both arrival clocks, including hidden raw states; export plus a separate finite-witness checker. |
+| Bounded motif trials | Carry-run, odd-step valuation and shortcut-prefix predicates; merge-by-horizon or first-descent targets; source progression, controls, supporting examples, counterexamples, invalid partners and unfinished work. |
+| Drift, ranks and modules | Exact affine prefix identities; coefficient crossing versus physical descent; distinct section/global and moving-envelope ranks; maximal repeated-word modules with raw/shortcut costs and exact safe/nonincreasing comparisons. |
+| Transported populations | Actual source weights and endpoint multiplicities, residue histograms, exact moving-rank mass, killed/alive/unresolved accounting and module safe-membership weights. No fresh resampling after returns. |
+| Symbolic blocks and cycle controls | Composable repeated parity blocks, complete denominator and rational branch replay; bounded least-positive roots; odd-valuation cycles for separately identified `3n+1`, `3n-1`, and `5n+1` controls. |
+| Research workflow | Portable six-laboratory recipes, transactional replay, observations with witnesses, named local shelf, bounded undo/redo, code/result fingerprints, agent commands and a small trusted local panel registration contract. |
+| Preserved v0.1 desk | Original orbit, bit, family atlas, word/cylinder and finite inverse graph tools remain at `/classic`. |
 
-The workspace uses a fixed responsive panel grid, not yet a drag-and-dock window manager. The curve envelope preserves exact integer extrema and endpoints inside buckets; it does **not** preserve every motif, crossing or event order within a bucket. Statistics are never computed from the plotted subset. Binary views crop literal cells rather than inventing a coarse-cell semantic.
+Faithful published string rewriting and cellular automata are **not** implemented. The carry table is an arithmetic microscope, not relabeled as either published system. Full docking, arbitrary graph search, durable/process-isolated jobs, stable third-party plugin ABI and shared cloud compute remain future work.
 
-## Scientific conventions and limits
+## Mathematical conventions
 
-Definitions follow [the repository conventions](../research/integrated/CONVENTIONS.md), with [errata](../research/integrated/ERRATA.md) retained as boundaries. All orbit sources are positive integers. Odd-to-odd input must already be odd; it is never normalized silently.
+- **Raw:** `C(n)=n/2` for even n and `3n+1` for odd n.
+- **Shortcut:** `T(n)=n/2` for even n and `(3n+1)/2` for odd n.
+- **Odd-to-odd:** `U(n)=(3n+1)/2^v2(3n+1)` on positive odd sources.
+- **Maximal-word module:** the separately defined repeated `1^a0` shortcut block, not one odd step or an arbitrary whole-run map. See [mathematical contracts](MATHEMATICS.md).
 
-- **Raw:** `C(n)=n/2` when even, `3n+1` when odd.
-- **Shortcut:** `T(n)=n/2` when even, `(3n+1)/2` when odd.
-- **Odd-to-odd:** `U(n)=(3n+1)/2^v2(3n+1)` on positive odd integers.
+Trajectories stop at their first visit to 1, a repeated exact state, or a resource limit. A shared state may have **different arrival times**. A missing finite intersection is not a claim that the sources never merge. Research rank values are not universally decreasing; module endpoint bit limits do not bound hidden raw peaks.
 
-Trajectories stop at 1, a repeated exact state, or a resource limit. `first_descent` means the first **displayed** state strictly below the source. The raw-segment maximum includes hidden arithmetic intermediates; it is not the same observable as the displayed maximum. A budget-limited trace is **not** divergent. Family plot heights for unresolved members are observed steps, not stopping times. A finite inverse frontier is not an all-depth cover, and graph nodes count states rather than paths.
+All decisive arithmetic uses exact integers/rationals. Large integers cross JSON as decimal **strings**. Log coordinates are approximate display values, not numerical tests of divisibility or equality. Raw-aligned paired curves include computed hidden raw intermediates; displayed-step alignment uses the actual selected clocks. Envelope reduction preserves exact bucket extrema/endpoints, not every unknown motif. Difference spacetime is a literal crop; uncomputed cells are not zero. Populations and counterexamples are calculated from exact members, never from plotted samples.
 
-For a shortcut word of length L and odd weight s, the kernel constructs `T^L(n)=(3^s*n+A)/2^L`. It computes the canonical residue modulo `2^L`, the least **positive** representative (canonical zero becomes `2^L`), and periodic candidate `A/(2^L-3^s)`. Rational, negative-integer, zero and trivial positive outcomes remain separate. This is a finite calculation for one word, not an all-cycle exclusion or a new theorem.
+## Bounds and persistence
 
-Hard bounds are deliberately conservative:
+| Dimension | Current ceiling / behavior |
+|---|---|
+| Paired sources / displayed steps | 8,192-bit states and raw intermediates; 10,000 displayed transitions per side. |
+| Materialized raw support | 20,000 transitions per side, plus approximately 750,000 decimal digits; exact displayed anchors remain available outside that dense prefix. |
+| Carry view | Up to 256 literal columns by API; UI 16/32/64/128; offset through bit 8,191. |
+| Family trial | Up to 128 sources, raw horizon 4,000, `2 × count × horizon <= 300,000`; configurable bit cap up to 2,048. |
+| Rank/transport adapters | 1,024-bit cap; up to 512 shortcut prefixes, 128 modules, or 128 sources × 64 transport rounds. |
+| Symbolic work | Repeated-block expanded length <=4,096; least-root plot <=512 prefixes; whole bounded word is still replayed. |
+| Server work | Two cooperative jobs, 15-second checked compute budget, eight-job in-memory cache; result retention cap 16 MB. |
+| Partial cancellation | Trials retain completed members and mark uncomputed ones; transport retains completed frames. Other interrupted operations may have no result. |
+| Local shelf/history | Up to 12 recipes/4 MB in browser storage; five in-memory undo snapshots. Save/reload recipes recomputes results. |
 
-| Dimension | Bound |
-|---|---:|
-| Integer / raw intermediate | 8,192 bits |
-| Displayed orbit steps | 20,000 |
-| Retained trajectory decimal digits | Approximately 1,500,000, plus the last bounded row |
-| Family size / total step budget | 512 sources / 1,000,000 steps |
-| Parity word | 512 bits |
-| Inverse frontier | Depth 12; 128 nodes in UI, up to 256 via API |
-| Work | Two concurrent cooperative jobs; 15 seconds per job |
-| Cache | Eight in-memory jobs, evicted oldest-completed first |
+These are safety ceilings, not simultaneous performance guarantees. Check [BENCHMARKS.json](BENCHMARKS.json) and [VALIDATION.md](VALIDATION.md) for measured, scoped evidence. Restart the server after changing any mathematical kernel source; it rejects computations whose loaded code no longer matches the files on disk.
 
-This can explore thousand-digit inputs, but it does not promise long trajectories, giant populations and unrestricted inverse expansion simultaneously. Integer arithmetic and branch decisions are exact. Log coordinates are approximate floats computed without casting the full integer to a float. JSON encodes large integers as decimal **strings**; browser BigInt is used for exact inspection, not coerced through Number.
+## Agent and developer access
 
-## Save, replay, and agent access
+```javascript
+await window.observatory.runPair({
+  kind: 'pair', seed: '27', relation: 'flip', bit: 3,
+  map_left: 'shortcut', map_right: 'odd', steps: 1000
+});
+window.observatory.selectMeeting(0);
+const witness = window.observatory.exportMeeting();
+const recipe = window.observatory.exportExperiment();
+```
 
-An experiment contains recipes, notes, bookmarks, selected step, viewing window, bit alignment, optional comparison, and the original kernel digest. Results are recomputed on import; a changed digest is reported. Jobs and results are not durable across server restarts. Save useful experiments before closing the browser. Witness export is a finite observation record, **not** an independently certified theorem.
+The same operations run without a browser:
 
-See [API and architecture](ARCHITECTURE.md) for runnable agent examples, schemas and extension points. The UI exposes `window.observatory` with `runOrbit`, `runWord`, `runFamily`, `runInverse`, `select`, `getState`, `exportExperiment` and `loadExperiment`; these use the same jobs and kernel as the visible controls.
+```python
+from observatory.engine import execute
+result = execute({"kind": "pair", "seed": "27", "relation": "flip", "bit": 3,
+                  "map_left": "shortcut", "map_right": "odd", "steps": 1000})
+print(result["result"]["shared_raw"][0])
+```
 
-## Tests and evidence
+See [ARCHITECTURE.md](ARCHITECTURE.md) for all operation schemas and HTTP examples, and [AGENTS.md](AGENTS.md) for continuation tasks.
+
+### Independent finite meeting verification
+
+Export a meeting from the UI and run:
+
+```sh
+python -m observatory.verify collatz-meeting.json
+# Bundled example:
+python -m observatory.verify observatory/examples/27-19-meeting.json
+```
+
+This checker imports **no Observatory arithmetic kernel**. It separately replays both raw trajectories, verifies the perturbation and both displayed/hidden arrivals, and rejects inconsistent evidence. It checks a finite equality, not a theorem of convergence, completeness, or the trustworthiness of every other observable.
+
+## Tests
 
 ```sh
 python -m unittest discover -s observatory/tests -p "test_*.py" -v
-node --test observatory/tests/view.test.mjs
+python -O -m unittest discover -s observatory/tests -p "test_*.py" -v
+node --test observatory/tests/*.test.mjs
 ```
 
-Node is needed only for the optional JS tests, not for running the app. Browser interaction checks require the optional Playwright test dependency and a Chromium installation:
+Node is optional, only for JavaScript tests. For optional browser tests:
 
 ```sh
 python -m pip install playwright
 python -m playwright install chromium
-# Start the server in another terminal, then:
-python observatory/tests/browser_smoke.py --screenshots screenshots
+# Start the server in another terminal:
+python observatory/tests/lab_browser.py --screenshots screenshots/lab
+python observatory/tests/browser_smoke.py --screenshots screenshots/classic
 ```
 
-The exact recorded execution boundary, including the managed-browser limitation of the implementation session, is in [VALIDATION.md](VALIDATION.md). Do not conflate the local application tests with the full repository validator or with mathematical peer review.
+Use `--browser PATH` to select an installed Chromium executable. The test scripts default to real served-browser navigation. The recorded implementation-session tests used a narrower, explicit in-memory Chromium DOM/real-API bridge because managed browser navigation was blocked. **Windows/macOS, native browser file dialogs/storage/clipboard, browser-enforced CSP, and full-repository validation are not covered by that receipt.** Details: [VALIDATION.md](VALIDATION.md).
 
-## Extend with Codex
-
-Read [AGENTS.md](AGENTS.md), [ARCHITECTURE.md](ARCHITECTURE.md), and [ROADMAP.md](ROADMAP.md). Start with a small bounded change and retain the arithmetic fixtures. No dependency install is needed to run the app. No repository integrity/CI settings were changed for this feature.
-
-**Deployment boundary:** this server binds only to loopback, checks Host and Origin, requires a session token for mutations, serves a small fixed asset allowlist, and executes no submitted code. It is a local development/research instrument, **not an Internet-facing server**. Do not publish it by exposing the port or tunneling it to an untrusted audience. Python itself [does not recommend `http.server` for production](https://docs.python.org/3/library/http.server.html). Shared authenticated compute is a later architecture milestone.
-
-[Roadmap: v0.2 through v1.0](ROADMAP.md) · [Programme #118](https://github.com/GettysburgResearch/collatz/issues/118)
+**Local-only deployment:** loopback binding, Host/Origin/session-token checks, a fixed asset allowlist and no submitted-code execution are retained. This is not a public production server. Do not expose the port or tunnel it to untrusted users.

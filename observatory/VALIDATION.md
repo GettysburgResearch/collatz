@@ -1,47 +1,76 @@
-# v0.1 validation receipt
+# Investigation preview · validation and delivery receipt
 
-Implementation-session date: **18 September 2026**. Research baseline read through the connected GitHub API: `main @ ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. Feature branch: `codex/collatz-observatory-v0.1`. The PR/branch head identifies the complete published implementation; this file does not attempt to contain its own future commit hash.
+Implementation session: **18 September 2026**. Version: **0.3.0-preview.1**. Historical [v0.1 receipt](VALIDATION-v0.1.md) is preserved separately; its earlier test counts are not this pass's result.
 
-## What was actually run
+## Frozen source and scope
 
-Environment: Linux; Python **3.13.5**; Node **v22.16.0**; system Chromium **144.0.7559.96**. The app itself has no third-party runtime dependency. Python 3.10+ is the intended compatibility floor, not a claim that a 3.10 matrix was executed.
+Live reads confirmed main at `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a` and open, unmerged PR #119 at `f0bf47d9c4253c3a16617f4b70388a7a4ba4e1de`. The supplied v0.1 ZIP's `observatory/` directory was placed in a local snapshot repository; its Git subtree hash **exactly matched** the published v0.1 subtree:
 
-| Command / check | Observed result |
-|---|---|
-| `python -m unittest discover -s observatory/tests -p "test_*.py" -v` | **31 tests passed**. |
-| Same Python suite with `python -O` | **31 tests passed**; explicit runtime input guards do not disappear under optimization. |
-| `node --test observatory/tests/view.test.mjs` | **10 tests passed**. |
-| `node --check observatory/web/app.mjs` and `node --check observatory/web/view.mjs` | Syntax checks passed. |
-| `python observatory/tests/browser_smoke.py --in-memory --browser /usr/bin/chromium --screenshots ...` | **23 explicit checks passed**, no JavaScript page errors; desktop and 390px-wide screenshots generated. Scope below. |
-| Direct execution of all three curated example recipes | Every requested orbit/family/word/inverse operation completed as a computation. The huge-source orbit correctly returned `step_limit`, not a claim of divergence. |
-| Actual loopback server/API startup | Served assets, health/capabilities, job submission/polling and cancellation exercised. |
-
-Mathematical-kernel SHA-256 at the recorded final checks:
-
-```text
-242cd0350b35a0122e030cb16edf63e14eb518f80b95e3feb02c559104b1c579
+```
+0dea2738379fd0242fd68794a5204e1a2df45188
 ```
 
-This is `core.py` only. It is not the entire application hash, a mathematical certificate, or an independent peer-review verdict. Browser and server source identity belongs to the published Git commit.
+This was an application-subtree checkout, not the entire scientific repository. The local snapshot commit is not represented as the actual GitHub baseline commit. Existing `core.py` and the classic UI remain unchanged; the old browser test's normal URL is adjusted to `/classic`.
 
-## Arithmetic coverage
+The delivered patch changes only `observatory/`. The accompanying delivery manifest records the resulting whole-subtree hash and patch checksum. A clean application of the patch to the original subtree was checked separately during packaging. No root workflow, repository setting, license, scientific claim status, or other contributor's branch is changed.
 
-The Python tests independently reconstruct raw trajectories for sources 1–159, checking accelerated raw-clock anchors and raw maxima. The 27 fixture gives raw/shortcut/odd step counts **111/70/41**, displayed peaks **9232/4616/3077**, and shared raw peak **9232**.
+## Checks actually run
 
-Every one of the **510 binary words of lengths 1–8** is checked against independently iterated positive representatives and exact affine endpoints. Other tests cover the `1110 → -19/11` rational control, trivial positive cycles, negative integer cycles, zero outside the positive domain, repeated words through length 512, canonical zero versus the least positive source, exact huge integers, 1,000-digit sources, hidden-intermediate bit limits, retention limits, family censoring, inverse-edge legality/deduplication, truncation, cancellation and wall-time handling.
+Environment: Linux; **Python 3.13.5**, **Node v22.16.0**, **Chromium 144.0.7559.96**. Python 3.10+ is the intended compatibility floor, not an executed multi-version matrix. The application has no third-party runtime dependencies; Playwright/Node are testing tools.
 
-The HTTP tests include real requests, mutation-token and Host/Origin rejection, path allowlisting, body limits, job capacity, bounded cache retention and **real HTTP cancellation of an intentionally heavy bounded family**. One additional deterministic cancellation/capacity test uses a controlled worker fixture; it is not the sole cancellation evidence.
+| Check | Observed result |
+|---|---|
+| `python -m unittest discover -s observatory/tests -p "test_*.py" -v` | **70 tests passed**. |
+| Same suite under `python -O` | **70 tests passed**. |
+| `node --test observatory/tests/*.test.mjs` | **25 tests passed**: original views, strict recipes/history/local storage, exact selections, portable size guards, trusted observable and actual module graph linking. |
+| `node --check` on every browser `.mjs` file | Passed. |
+| New workspace browser harness | **39 explicit checks passed**; no JavaScript page errors; desktop and 390px responsive layout. Narrow scope below. |
+| Preserved classic browser harness | **23 explicit checks passed**; no JavaScript page errors. Same narrow scope. |
+| Three new portable examples | Every included request replayed to its recorded result/kernel digest; all three also loaded/replayed through the actual workspace controller. |
+| Independent meeting CLI | Bundled 27/19 witness verified: common 40, raw clocks 103/12, displayed clocks 63/null. Forged source/value/clock/relation fixtures are rejected. |
+| Published HTTP client example | Executed against the running local server; returned the exact 40 meeting with both arrival records. |
+| Bounded provider benchmarks | Six scenarios, three timed runs each plus separate traced-memory replay. [Recorded JSON](BENCHMARKS.json); scope below. |
 
-## Browser evidence boundary
+Mathematical manifest digest at the checks:
 
-The system Chromium installation's managed policy blocked direct navigation, including to loopback. No browser policy or network restriction was changed. The recorded UI run instead used the script's **explicit in-memory mode**: local HTML/CSS/JS rendered in an empty Chromium DOM, with fetch bridged by the test harness to the **real running loopback HTTP API**. ES module sources were concatenated for that harness; normal module syntax was checked separately with Node.
+```
+671694c751bc7ce06da4f7e33d0b6adebd58217c0648045b664f236a28e15ccd
+```
 
-This exercised initial loading, exact inspectors, keyboard selection, peak jumps, cross-clock selection, integers beyond `2^53`, a 1025-bit input, binary alignment, word classification, word-root → orbit linking, censored family counts, family → orbit linking, recipe/notes/bookmark replay, viewport and comparison replay, schema rejection and responsive layout. Screenshots are of this actual application DOM, not design mockups.
+It covers `core.py`, `pairs.py`, `research.py`, `symbols.py`, `engine.py`, not server/UI code or a proof certificate. The engine captures loaded-source identity and rejects subsequent mismatched disk edits until restart. Full application identity is in the delivered subtree/patch manifest.
 
-It did **not** establish normal browser HTTP navigation/module loading, real-browser enforcement of response CSP, native clipboard permissions, native file-picker/download behavior, mobile touch gestures, or Windows/macOS operation. The test script defaults to a genuine served-browser run in an ordinary local environment; that and a Windows receipt are first v0.2/readiness tasks. The 390px check is responsive desktop Chromium layout, not physical iPhone testing.
+## Arithmetic and state coverage
 
-## Repository and mathematical boundary
+The retained v0.1 fixtures include independent raw replay for sources 1–159, all 510 words of lengths 1–8, raw/shortcut/odd counts and peaks of 27, large integers, cancellation, inverse-edge legality and family censoring.
 
-A complete checkout was unavailable: direct Git transport failed on DNS resolution. The baseline was read using the authorized GitHub connector; new application files were created and tested in a local subtree. **`tools/validate.py` and the repository regression bundle were not run.** This receipt is not a full-checkout integrity claim, an audit of unrelated branches, or a review of existing proof packets.
+New checks cover all nine pairs of displayed map choices, hidden raw arrivals, exact common-state supports, raw-prefix/retained-digit limits, 1,000-digit inputs, and independent column sums/carries for small integers at multiple crop offsets. One fixture reconstructs an incoming carry after a large omitted low-bit region.
 
-No main-branch push, merge, workflow/settings change, public deployment, cloud provisioning, account creation or publication of secrets is part of this delivery. The parent programme stays open. Engineering fixtures and a working visualization do not resolve Collatz or upgrade an inherited mathematical claim.
+Motif tests independently reconstruct finite source intersections, distinguish positive/false/unknown targets, retain invalid partners and unfinished members, and exercise deterministic cancellation after completed members. The published 64-source trial has **28 supports, 24 counterexamples, 6 control passes, 6 control failures**. These are exact finite classifications, not independent samples or a global convergence claim.
+
+Rank tests compare the collapsed evaluation with a larger finite direct dictionary for sources below 2,000. Module tests independently replay legal words and maximality for sources 2–799. Tests retain the increasing/equal rank controls and the `577363 -> 649534` rank-decreasing/numerically increasing fixture. Prefix affine identities are checked exactly. Transport fixtures independently advance the weighted source population, verify killing/unresolved accounting, forbid arbitrary module floors, and check interruption at complete frames.
+
+Symbolic fixtures compare compositional summaries against literal expansion, replay a 4,096-branch repeated ghost, retain zero and full-denominator controls, and check the distinct `3n-1` and `5n+1` positive cycles. No finite fixture is represented as an all-word exclusion, a rank-selector completeness theorem, or new review of the inherited proof packets.
+
+HTTP tests use actual loopback requests for old/new operations, assets, Host/Origin/token rejection, malformed types, path restrictions and bounded job/cache behavior. A controlled worker exercises retained partial study data with final cancelled status; the original suite also includes real HTTP cancellation of a bounded heavy workload. Cooperative cancellation is not process isolation or hard real-time enforcement.
+
+## Browser scope: what passed and what did not
+
+Normal navigation in the managed Chromium environment was blocked with `net::ERR_BLOCKED_BY_ADMINISTRATOR`, including localhost. **No browser policy or network restriction was changed.** Recorded UI tests used the scripts' explicit `--in-memory` mode: the actual local HTML/CSS/JS in an empty Chromium DOM, with fetch bridged only to the **real running loopback HTTP API**.
+
+This exercised real controls and actual computation: bit perturbation, carries, mixed clocks, hidden meetings, witness export/replay, counterexample inspection, unfinished members, rank/modules, transported mass, block/cycle controls, huge inputs, full six-recipe replay, invalid-replay rollback, note safety, view restoration, undo/redo and responsive layout. Screenshots are of that running application DOM, not design mockups.
+
+The narrower harness flattens imports. To avoid treating that as module-loading evidence, a separate Node test links the **actual new and classic ES-module graphs** without evaluating a DOM, checking real import/export compatibility. Real HTTP asset responses and module syntax are tested separately. These are still **not** a normal browser-navigation/module-transport receipt.
+
+Not established here: browser enforcement of response CSP, native clipboard permissions, native file picker/download interaction, real browser-origin local-storage persistence, physical touch gestures, screen-reader usability, Windows/macOS behavior or a Python 3.10 matrix. Local-shelf behavior was checked with an explicit storage fixture; that is not a native-browser persistence claim. The scripts default to normal served-browser navigation for a follow-up on an ordinary machine.
+
+## Benchmarks
+
+`python -m observatory.benchmark --output observatory/BENCHMARKS.json` ran six named bounded scenarios: small perturbed pair, thousand-digit pair, 64-source carry trial, rank/module fixture, 128-source module transport and 4,096-branch composed word.
+
+The recorded median provider times ranged from roughly **1 to 16 ms** on this execution environment. These include exact provider work, normalization, source checks and result digest; they **exclude HTTP, rendering and file export**. Traced memory is Python allocations in a separate replay, not whole-process/browser memory. Timings do not imply that all maximum bit, horizon, family and storage ceilings can be combined, nor predict another machine's performance. Re-run the named scenarios before changing resource architecture.
+
+## Repository and publication limitations
+
+The currently exposed GitHub connector functions permitted read access only; write/create actions were absent. The installed GitHub plugin was checked, and direct `git ls-remote` failed DNS resolution for github.com. **No new remote push, branch or PR is claimed for this pass.** The tested application, exact patch, delivery manifest, PR draft and safe worktree publisher are the deliverables. A local snapshot commit, if present in packaging, must not be advertised as a GitHub commit.
+
+A complete scientific checkout was unavailable. **Root `tools/validate.py` and the full repository regression bundle were not run.** No public deployment, cloud provisioning, main push/merge, workflow/settings changes or mathematical-status changes are included. The larger programme remains open; [ROADMAP.md](ROADMAP.md) records implemented versus deferred scope rather than declaring every v0.2/v0.3 task finished.
