@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-experiment/v1",
+  "version": "0.1.0",
+  "word": "1110",
+  "selected": 40,
+  "bookmarks": [],
+  "family": {
+    "kind": "family",
+    "seed": "1",
+    "stride": "1",
+    "count": 128,
+    "steps": 1000,
+    "map": "shortcut"
+  },
+  "inverse": {
+    "kind": "inverse",
+    "seed": "1",
+    "depth": 6,
+    "nodes": 128
+  },
+  "comparison": null,
+  "provenance": {
+    "baseline": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "kind": "curated recipe; kernel is computed on replay"
+  },
+  "orbit": {
+    "kind": "orbit",
+    "seed": "27",
+    "map": "shortcut",
+    "steps": 2000
+  },
+  "notes": "Compare displayed and hidden-raw peaks. Select a step, change the clock, and inspect whether the raw anchor is represented exactly."
+}
