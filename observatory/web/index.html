@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Collatz Observatory · research desk</title>
+  <link rel="stylesheet" href="/style.css"><script type="module" src="/app.mjs"></script>
+</head>
+<body>
+<header class="masthead">
+  <a class="brand" href="/" aria-label="Collatz Observatory home"><span class="mark">C<span>↗</span></span><span>COLLATZ <strong>OBSERVATORY</strong><small>Arithmetic, seen from more than one side.</small></span></a>
+  <div class="header-actions"><span class="badge">v0.1 · LOCAL EDITION</span><button id="save">Save experiment</button><button id="load">Load</button><input id="load-file" type="file" accept=".json" hidden></div>
+</header>
+<div class="shell">
+<aside class="sidebar">
+  <p class="eyebrow">RESEARCH DESK</p>
+  <nav aria-label="Laboratories"><a href="#orbit-panel">01 <span>Orbits & excursions</span></a><a href="#binary-panel">02 <span>Binary microscope</span></a><a href="#word-panel">03 <span>Words & cycles</span></a><a href="#family-panel">04 <span>Family atlas</span></a><a href="#inverse-panel">05 <span>Inverse structure</span></a></nav>
+  <p class="eyebrow">START SOMEWHERE INTERESTING</p>
+  <div class="examples"><button data-example="27"><strong>The long way home</strong><small>27 · excursion across three clocks</small></button><button data-example="huge"><strong>Beyond floating point</strong><small>2^1024 + 1 · exact input</small></button><button data-example="ghost"><strong>The completion ghost</strong><small>1110 · finite roots, rational cycle</small></button><button data-example="121"><strong>Follow the mergers</strong><small>121 · orbit and inverse frontier</small></button></div>
+  <div class="sidebar-note"><span class="dot"></span><strong>Exact underneath.</strong><p>Integer states are exact. Plotted logs are approximate. Every experiment has a finite, visible budget.</p><p>No proof or divergence claim follows from a picture or a timeout.</p></div>
+  <details><summary>Resource budgets</summary><p>Up to 20,000 displayed steps; 8,192 bits including hidden raw peaks; 15 seconds per job; two jobs at once. Families: at most 512 sources and one million combined steps. Words: 512 bits. Inverse view: at most 128 nodes from the UI.</p><p>Trace retention also stops after 1.5 million decimal digits. Every limited result remains explicitly incomplete.</p></details>
+  <details><summary>Keyboard & agent controls</summary><p>Use the selected-step field or ← / → on the orbit canvas. Drag the plot to zoom. Every canvas has a linked exact-value inspector.</p><p>Structured API: <code>/api/capabilities</code>. Browser interface: <code>window.observatory</code>.</p></details>
+</aside>
+<main>
+  <section class="intro"><div><p class="eyebrow">AN EXACT, LINKED EXPLORATION</p><h1>Follow the structure.</h1><p>Choose a source. Trace its orbit. Read the same event in its bits, words and arithmetic.</p></div><span id="connection" class="connection">Connecting to local kernel…</span></section>
+  <form id="orbit-form" class="commandbar">
+    <label class="seed-label">Starting integer<input id="seed" value="27" spellcheck="false" autocomplete="off" placeholder="27 or 2^1024+1"></label>
+    <label>Map / displayed clock<select id="map"><option value="shortcut">Shortcut · T</option><option value="raw">Raw · C</option><option value="odd">Odd-to-odd · U</option></select></label>
+    <label>Step budget<input id="steps" type="number" value="2000" min="1" max="20000"></label>
+    <button class="primary" type="submit" id="run">Run orbit ↗</button><button type="button" id="cancel" disabled>Cancel jobs</button>
+  </form>
+  <div id="notice" role="status" aria-live="polite">Ready to explore.</div>
+  <div id="metrics" class="metrics"></div>
+  <div class="desk-grid">
+    <section id="orbit-panel" class="panel orbit-panel">
+      <div class="panel-head"><div><p class="eyebrow">01 / ORBIT & EXCURSION</p><h2>A path through the integers</h2></div><span id="clock-badge" class="badge">SHORTCUT CLOCK</span></div>
+      <div class="plot-controls"><label>Height<select id="height"><option value="log2">log₂ n</option><option value="relative">log₂(n / source)</option><option value="bits">Bit length</option></select></label><button id="peak">Jump to peak</button><button id="descent">First descent</button><button id="pin">Pin comparison</button><button id="reset-view">Full orbit</button></div>
+      <canvas id="orbit-canvas" height="310" tabindex="0" role="img" aria-label="Orbit height plot. Click to select a step; drag to zoom; use left and right arrows to move selection."></canvas>
+      <div class="range-controls"><label>From step<input id="view-start" type="number" value="0" min="0"></label><label>To step<input id="view-end" type="number" value="0" min="0"></label><button id="apply-view">Set window</button><span id="plot-caption"></span></div>
+      <p id="comparison-note" class="caption">Drag to zoom; click to inspect. Min/max envelope retains exact extrema, not all motifs.</p>
+    </section>
+    <section class="panel inspector">
+      <div class="panel-head"><div><p class="eyebrow">LINKED SELECTION</p><h2>The exact witness</h2></div><span class="badge accent">INTEGER</span></div>
+      <label>Selected displayed step<input id="selected-step" type="number" value="0" min="0"></label>
+      <input id="step-slider" type="range" min="0" max="0" value="0" aria-label="Selected trajectory step">
+      <output id="exact-value" class="exact-value">27</output>
+      <div id="inspect-meta" class="mini-grid"></div>
+      <div class="inspect-actions"><button id="copy-value">Copy exact value</button><button id="export-witness">Export witness</button><button id="selected-source">Use as source</button></div>
+      <h3>Arithmetic microscope</h3><div id="arithmetic" class="arithmetic"></div>
+      <p class="caption">An arithmetic trace, not an implementation of a published string-rewriting system.</p>
+    </section>
+    <section id="binary-panel" class="panel">
+      <div class="panel-head"><div><p class="eyebrow">02 / BINARY MICROSCOPE</p><h2>The orbit, bit by bit</h2></div><span class="badge">LINKED</span></div>
+      <div class="plot-controls"><label>Alignment<select id="bit-align"><option value="low">Low bits · powers of two</option><option value="high">High bits · per-row normalized</option></select></label><label>Bit offset<input id="bit-offset" type="number" min="0" max="8191" value="0"></label></div>
+      <canvas id="binary-canvas" height="320" role="img" tabindex="0" aria-label="Binary spacetime. Click a row to select its exact orbit state."></canvas>
+      <p id="binary-caption" class="caption"></p>
+    </section>
+    <section id="word-panel" class="panel">
+      <div class="panel-head"><div><p class="eyebrow">03 / WORDS, CYLINDERS & CYCLES</p><h2>From symbols to sources</h2></div><span class="badge">SHORTCUT ONLY</span></div>
+      <form id="word-form" class="inline-form"><label>Parity word<input id="word" value="1110" maxlength="512" pattern="[01]+" spellcheck="false"></label><button class="primary">Analyze</button><button type="button" id="use-prefix">Use orbit prefix</button></form>
+      <p id="word-status" class="caption"></p><div id="word-result"></div>
+      <canvas id="root-canvas" height="145" tabindex="0" role="img" aria-label="Least positive root versus parity-prefix length. Click a point to select an exact prefix."></canvas>
+      <div id="prefix-result" class="caption"></div>
+      <button id="use-root">Trace least positive source</button><details><summary>Exact periodic replay</summary><pre id="cycle-replay"></pre></details>
+      <p class="caption">Finite positive witnesses do not establish one all-time positive source. Rational and signed realizers are labeled separately.</p>
+    </section>
+    <section id="family-panel" class="panel full-width">
+      <div class="panel-head"><div><p class="eyebrow">04 / FAMILY ATLAS</p><h2>A neighborhood of trajectories</h2></div><span class="badge">EXACT SOURCE ANCHOR + OFFSET</span></div>
+      <form id="family-form" class="inline-form family-form"><label>First source<input id="family-seed" value="1" spellcheck="false"></label><label>Stride<input id="stride" value="1" spellcheck="false"></label><label>Count<input id="count" type="number" value="128" min="1" max="512"></label><label>Steps per source<input id="family-steps" type="number" value="1000" min="1" max="20000"></label><label>Map<select id="family-map"><option value="shortcut">Shortcut</option><option value="raw">Raw</option><option value="odd">Odd-to-odd</option></select></label><button class="primary">Explore family</button></form>
+      <div class="atlas-grid"><div><canvas id="family-canvas" height="260" tabindex="0" role="img" aria-label="Family scatter plot. Horizontal coordinate is source offset; vertical coordinate is observed steps. Click a member for exact details."></canvas><p id="family-caption" class="caption">No family computed yet. Every requested source stays in the denominator.</p></div><div><div id="family-selection" class="family-selection">Select a source in the atlas.</div><button id="trace-member" disabled>Trace selected member ↗</button><details><summary>Exact member table</summary><div class="table-wrap"><table><thead><tr><th>Offset</th><th>Source</th><th>Steps</th><th>Status</th></tr></thead><tbody id="family-table"></tbody></table></div></details></div></div>
+    </section>
+    <section id="inverse-panel" class="panel full-width">
+      <div class="panel-head"><div><p class="eyebrow">05 / INVERSE STRUCTURE</p><h2>Different paths. Shared states.</h2></div><span class="badge">EXACT EDGES · FINITE FRONTIER</span></div>
+      <form id="inverse-form" class="inline-form"><label>Root<input id="inverse-seed" value="1" spellcheck="false"></label><label>Depth<input id="depth" type="number" value="6" min="0" max="12"></label><button class="primary">Expand predecessors</button><button type="button" id="inverse-selected">Use orbit selection</button></form>
+      <div id="inverse-graph" class="inverse-graph" aria-label="Finite inverse graph"></div><p id="inverse-caption" class="caption">Shortcut predecessors are 2y and, when positive odd integral, (2y−1)/3. Select a node to trace it.</p>
+    </section>
+    <section class="panel full-width notebook">
+      <div class="panel-head"><div><p class="eyebrow">REPRODUCIBLE OBSERVATIONS</p><h2>Keep the question, not just the picture.</h2></div><button id="bookmark">Bookmark exact selection</button></div>
+      <label>Research notes<textarea id="notes" rows="3" maxlength="20000" placeholder="What caught your eye? What would distinguish a mechanism from a plotting artifact?"></textarea></label><div id="bookmarks"></div><p class="caption">Save exports recipes, notes, selections and kernel provenance. Load recomputes the mathematics; imported results are never trusted as certificates.</p>
+    </section>
+  </div>
+  <footer>Collatz Observatory / v0.1.0 <span>Exact finite computation ≠ an all-time theorem.</span><a href="https://github.com/GettysburgResearch/collatz/issues/118" target="_blank" rel="noreferrer">Programme #118 ↗</a></footer>
+</main>
+</div>
+</body>
+</html>
