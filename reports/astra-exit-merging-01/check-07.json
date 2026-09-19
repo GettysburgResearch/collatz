@@ -1,0 +1,195 @@
+{
+  "chain": [
+    {
+      "left": [
+        [
+          "1",
+          2
+        ],
+        [
+          "00",
+          1
+        ]
+      ],
+      "left_stats": {
+        "clock": 4,
+        "endpoint": 461,
+        "minimum_after_source": 461,
+        "peak": 1844
+      },
+      "partner": 409,
+      "right": [
+        [
+          "1",
+          1
+        ],
+        [
+          "01",
+          1
+        ]
+      ],
+      "right_stats": {
+        "clock": 3,
+        "endpoint": 461,
+        "minimum_after_source": 307,
+        "peak": 614
+      },
+      "rule": "odd-exit-half",
+      "source": 819
+    },
+    {
+      "left": [
+        [
+          "10",
+          1
+        ]
+      ],
+      "left_stats": {
+        "clock": 2,
+        "endpoint": 307,
+        "minimum_after_source": 307,
+        "peak": 614
+      },
+      "partner": 307,
+      "right": [],
+      "right_stats": {
+        "clock": 0,
+        "endpoint": 307,
+        "minimum_after_source": 307,
+        "peak": 307
+      },
+      "rule": "one-mod-four",
+      "source": 409
+    },
+    {
+      "left": [
+        [
+          "1",
+          2
+        ],
+        [
+          "00",
+          1
+        ]
+      ],
+      "left_stats": {
+        "clock": 4,
+        "endpoint": 173,
+        "minimum_after_source": 173,
+        "peak": 692
+      },
+      "partner": 153,
+      "right": [
+        [
+          "1",
+          1
+        ],
+        [
+          "01",
+          1
+        ]
+      ],
+      "right_stats": {
+        "clock": 3,
+        "endpoint": 173,
+        "minimum_after_source": 115,
+        "peak": 230
+      },
+      "rule": "odd-exit-half",
+      "source": 307
+    },
+    {
+      "left": [
+        [
+          "10",
+          1
+        ]
+      ],
+      "left_stats": {
+        "clock": 2,
+        "endpoint": 115,
+        "minimum_after_source": 115,
+        "peak": 230
+      },
+      "partner": 115,
+      "right": [],
+      "right_stats": {
+        "clock": 0,
+        "endpoint": 115,
+        "minimum_after_source": 115,
+        "peak": 115
+      },
+      "rule": "one-mod-four",
+      "source": 153
+    },
+    {
+      "left": [
+        [
+          "1",
+          2
+        ],
+        [
+          "00",
+          1
+        ]
+      ],
+      "left_stats": {
+        "clock": 4,
+        "endpoint": 65,
+        "minimum_after_source": 65,
+        "peak": 260
+      },
+      "partner": 57,
+      "right": [
+        [
+          "1",
+          1
+        ],
+        [
+          "01",
+          1
+        ]
+      ],
+      "right_stats": {
+        "clock": 3,
+        "endpoint": 65,
+        "minimum_after_source": 43,
+        "peak": 86
+      },
+      "rule": "odd-exit-half",
+      "source": 115
+    },
+    {
+      "left": [
+        [
+          "10",
+          1
+        ]
+      ],
+      "left_stats": {
+        "clock": 2,
+        "endpoint": 43,
+        "minimum_after_source": 43,
+        "peak": 86
+      },
+      "partner": 43,
+      "right": [],
+      "right_stats": {
+        "clock": 0,
+        "endpoint": 43,
+        "minimum_after_source": 43,
+        "peak": 43
+      },
+      "rule": "one-mod-four",
+      "source": 57
+    }
+  ],
+  "clocks": [
+    10,
+    1
+  ],
+  "meeting": 65,
+  "source": 819,
+  "status": "UNRESOLVED",
+  "terminal": 43
+}

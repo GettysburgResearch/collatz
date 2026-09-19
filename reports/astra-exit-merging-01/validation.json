@@ -1,0 +1,156 @@
+{
+  "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "comparisons": {
+    "generator_normal_optimized_output_identical": true,
+    "verifier_normal_optimized_doubleoptimized_output_identical": true
+  },
+  "files_checked": {
+    "experiments/X-AEM-001-exit-merging/README.md": {
+      "bytes": 5438,
+      "sha256": "1314e66038c26dcb63b7e1248d1fd8a30791ddecb3cb4ad4864771eac20bbdff"
+    },
+    "experiments/X-AEM-001-exit-merging/results/canonical.json": {
+      "bytes": 6923684,
+      "sha256": "5514379f001abc20d6f6c52b5c2d5c809a272b215f0ad3fdbf324b4aedd1ffbd"
+    },
+    "experiments/X-AEM-001-exit-merging/run.py": {
+      "bytes": 10056,
+      "sha256": "271e13ff713e0aaae3d6b0f0a2c3e4a99b9cbdd84a91f963478516d16cb796b3"
+    },
+    "experiments/X-AEM-001-exit-merging/verify.py": {
+      "bytes": 16300,
+      "sha256": "2966227fe9132b5709466d193b7d8f163e2f40f9a24373b0057de5d75c08b114"
+    }
+  },
+  "interrupted_attempt": {
+    "description": "A combined tool command finished its first four checks, then the tool deadline interrupted the fifth (-OO) attempt. The first four JSON outputs and reported zero exit codes survived. No completion is credited to that interrupted fifth attempt; it is rerun separately below."
+  },
+  "not_executed": [
+    "full-repository tools/validate.py",
+    "remote CI",
+    "external Lean builds",
+    "old native full protocols",
+    "Windows runtime"
+  ],
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "record_completed_utc": "2026-09-19T18:27:43.014247+00:00",
+  "remote_publication": {
+    "landed": false,
+    "reason": "GitHub connector exposes read actions only; direct Git fails DNS; no gh executable"
+  },
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/run.py",
+        "--check",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json"
+      ],
+      "completed_file_mtime_utc": "2026-09-19T18:26:25.715502+00:00",
+      "evidence": "preserved JSON output and actual console return code from combined invocation",
+      "output": "check-01.json",
+      "result_file_sha256": "58318627574a6034141b8db714ab9541a52634d53ff892c4b078f90ecf260459",
+      "returncode": 0,
+      "seconds_reported": 1.34
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/verify.py",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json",
+        "--self-test"
+      ],
+      "completed_file_mtime_utc": "2026-09-19T18:26:38.558887+00:00",
+      "evidence": "preserved JSON output and actual console return code from combined invocation",
+      "output": "check-02.json",
+      "result_file_sha256": "ec48b53852a80d5439c7a6e452d93915d83a827ec100ff2dfae1a4d010f7061d",
+      "returncode": 0,
+      "seconds_reported": 12.843
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/run.py",
+        "--check",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json"
+      ],
+      "completed_file_mtime_utc": "2026-09-19T18:26:41.308620+00:00",
+      "evidence": "preserved JSON output and actual console return code from combined invocation",
+      "output": "check-03.json",
+      "result_file_sha256": "58318627574a6034141b8db714ab9541a52634d53ff892c4b078f90ecf260459",
+      "returncode": 0,
+      "seconds_reported": 2.749
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/verify.py",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json",
+        "--self-test"
+      ],
+      "completed_file_mtime_utc": "2026-09-19T18:26:55.749495+00:00",
+      "evidence": "preserved JSON output and actual console return code from combined invocation",
+      "output": "check-04.json",
+      "result_file_sha256": "ec48b53852a80d5439c7a6e452d93915d83a827ec100ff2dfae1a4d010f7061d",
+      "returncode": 0,
+      "seconds_reported": 14.441
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/verify.py",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json",
+        "--self-test"
+      ],
+      "output": "check-05.json",
+      "result_file_sha256": "ec48b53852a80d5439c7a6e452d93915d83a827ec100ff2dfae1a4d010f7061d",
+      "returncode": 0,
+      "seconds": 14.373,
+      "started_utc": "2026-09-19T18:27:27.474398+00:00",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/run.py",
+        "--example",
+        "23",
+        "1",
+        "0"
+      ],
+      "output": "check-06.json",
+      "result_file_sha256": "46624ccdf4e3bdb36ff4bfa33155f097f1bf992194459d8c34264eda67fac438",
+      "returncode": 0,
+      "seconds": 0.574,
+      "started_utc": "2026-09-19T18:27:41.847432+00:00",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/run.py",
+        "--source",
+        "819"
+      ],
+      "output": "check-07.json",
+      "result_file_sha256": "b616b9a3800abc335b4daedb044384cd98f2e76b47e1672295a636244073efbe",
+      "returncode": 0,
+      "seconds": 0.593,
+      "started_utc": "2026-09-19T18:27:42.421132+00:00",
+      "stderr": ""
+    }
+  ],
+  "scope": "complete new-packet native corpus only; not a full repository checkout",
+  "status": "PASS"
+}

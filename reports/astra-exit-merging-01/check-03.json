@@ -1,0 +1,23 @@
+{
+  "equal_clock_third_certificates": 1084,
+  "even_mersenne_certificates": 128,
+  "normalizer": {
+    "CORE": 217,
+    "UNRESOLVED": 3878
+  },
+  "normalizer_rules": {
+    "110-ancestor": 1190,
+    "even": 8476,
+    "odd-ancestor": 2325,
+    "odd-exit-half": 1836,
+    "one-mod-four": 4944,
+    "two-exit-half": 16
+  },
+  "odd_exit_certificates": 2048,
+  "odd_exit_unresolved": 2047,
+  "semantic_sha256": "207bdb81b078c67fb18a304d0997b988e747f0dad165546e18cf6343c6783b8d",
+  "status": "PASS",
+  "two_exit_crt_cases": 1084,
+  "two_exit_grid_certificates": 96,
+  "two_exit_grid_unresolved": 2976
+}
