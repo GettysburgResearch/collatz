@@ -1,0 +1,172 @@
+{
+  "payload": {
+    "budget_fixture": {
+      "a": 6,
+      "clock_m": 16,
+      "clock_n": 18,
+      "end_m": 121635325424,
+      "end_n": 13515036158,
+      "k": 1,
+      "m": 134997928597,
+      "min_forward": 7119031391,
+      "n": 179997238131,
+      "new_direct": false,
+      "seed_label": "even_v2_ge3",
+      "sequence": [
+        [
+          8,
+          "hard"
+        ]
+      ],
+      "status": "budget",
+      "u": 22499654767,
+      "word_m": "1000001111111101",
+      "word_n": "110010100001111100"
+    },
+    "direct_no_descent": 108,
+    "family_count": 1115,
+    "family_sha256": "28fab0ff0bf82ab319134b2ad69de34f213e04d271e25c1c06c47dc882bdb5c0",
+    "family_types": {
+      "direct": 64,
+      "even_run": 257,
+      "new_h0": 64,
+      "odd_run": 257,
+      "old_entry": 64,
+      "one_eighth": 64,
+      "returns": 89,
+      "three_eighth": 256
+    },
+    "fixtures": [
+      {
+        "a": 6,
+        "clock_m": 8,
+        "clock_n": 10,
+        "end_m": 713,
+        "end_n": 713,
+        "k": 2,
+        "m": 2251,
+        "min_forward": 713,
+        "n": 3003,
+        "new_direct": true,
+        "seed_label": "even_v2_2",
+        "sequence": [],
+        "status": "merge",
+        "u": 47,
+        "word_m": "11010001",
+        "word_n": "1101100100"
+      },
+      {
+        "a": 6,
+        "clock_m": 47,
+        "clock_n": 49,
+        "end_m": 270232110874226,
+        "end_n": 270232110874226,
+        "k": 15,
+        "m": 184717953466363,
+        "min_forward": 270232110874226,
+        "n": 246290604621819,
+        "new_direct": true,
+        "seed_label": "even_v2_2",
+        "sequence": [],
+        "status": "merge",
+        "u": 7,
+        "word_m": "11011011011011011011011011011011011011011010001",
+        "word_n": "1101101101101101101101101101101101101101101100100"
+      },
+      {
+        "a": 6,
+        "clock_m": 71,
+        "clock_n": 73,
+        "end_m": 569997707820151476731933,
+        "end_n": 569997707820151476731933,
+        "k": 23,
+        "m": 151853597214777028902907,
+        "min_forward": 227780395822165543354363,
+        "n": 202471462953036038537211,
+        "new_direct": true,
+        "seed_label": "even_v2_2",
+        "sequence": [],
+        "status": "merge",
+        "u": 343,
+        "word_m": "11011011011011011011011011011011011011011011011011011011011011011010001",
+        "word_n": "1101101101101101101101101101101101101101101101101101101101101101101100100"
+      },
+      {
+        "a": 6,
+        "clock_m": 12,
+        "clock_n": 14,
+        "end_m": 47,
+        "end_n": 47,
+        "k": 1,
+        "m": 781,
+        "min_forward": 31,
+        "n": 1043,
+        "new_direct": false,
+        "seed_label": "even_run_1",
+        "sequence": [
+          [
+            3,
+            "merge"
+          ]
+        ],
+        "status": "merge",
+        "u": 131,
+        "word_m": "100100011100",
+        "word_n": "11001101000001"
+      },
+      {
+        "a": 6,
+        "clock_m": 11,
+        "clock_n": 13,
+        "end_m": 209,
+        "end_n": 209,
+        "k": 1,
+        "m": 5269,
+        "min_forward": 139,
+        "n": 7027,
+        "new_direct": false,
+        "seed_label": "even_v2_ge3",
+        "sequence": [
+          [
+            3,
+            "merge"
+          ]
+        ],
+        "status": "merge",
+        "u": 879,
+        "word_m": "10000011100",
+        "word_n": "1100101000001"
+      }
+    ],
+    "grid_by_companion": {
+      "1": {
+        "merge": 1583,
+        "outside_return": 1489
+      },
+      "3": {
+        "merge": 1588,
+        "outside_return": 1484
+      },
+      "6": {
+        "merge": 7936,
+        "outside_return": 7424
+      }
+    },
+    "grid_count": 24576,
+    "grid_counts": {
+      "merge": 11107,
+      "outside_return": 10397,
+      "outside_seed": 3072
+    },
+    "grid_sha256": "8c428e0bb9a030207e3298bfe561cdbd9f35356a975c1fd43917d913f65b2ad3",
+    "old_entry_all_direct": true,
+    "old_entry_in_grid": 1536,
+    "schema": "collatz-aac-003-v1",
+    "threshold": [
+      15,
+      true,
+      true
+    ]
+  },
+  "sha256": "4381cd1c17c8aff52e1e2dd8145001f3cf1814bdbd91bcee207c6cf80340944e"
+}
