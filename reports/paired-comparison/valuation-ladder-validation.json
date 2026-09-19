@@ -1,0 +1,45 @@
+{
+  "also_read_pr124": "1d4dfc103055648def3db73860778a383a91ea3c",
+  "base_commit": "bf0696f888442c82a4c6cdc1df36becf8550295a",
+  "base_tree": "d890627c7c8668a423343f324bc660c8c88e45df",
+  "checks": {
+    "full_rows": 65536,
+    "generator_bad_controls_rejected": 6,
+    "generator_normal": "PASS",
+    "generator_optimized_byte_comparison": "PASS",
+    "independent_mathematical_review": "NOT PERFORMED",
+    "lean": "NOT RUN",
+    "remote_CI": "NOT CLAIMED",
+    "root_validator": "NOT RUN: no complete checkout; direct Git DNS failed",
+    "separate_verifier_normal": "PASS",
+    "separate_verifier_optimized": "PASS",
+    "verifier_bad_controls_rejected": 7
+  },
+  "context_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "date_local": "2026-09-20",
+  "files": {
+    "experiments/paired-comparison/valuation-ladder/canonical.json": {
+      "bytes": 1223,
+      "git_blob": "a695d40e440b785b9387e5f303d601636c9e93eb",
+      "sha256": "8b0fad62dfe4c5e58d69283a46a3b5f7681d26f22548ec625446cf0d51057a05"
+    },
+    "experiments/paired-comparison/valuation-ladder/run.py": {
+      "bytes": 9584,
+      "git_blob": "23ae8ec16a00e05582c5645a4d1af2428e6aeed3",
+      "sha256": "9ca67764da294ec05d25725d442b7d1636d508ae0047cacdaa1f8940f640d25f"
+    },
+    "experiments/paired-comparison/valuation-ladder/verify.py": {
+      "bytes": 5620,
+      "git_blob": "21300696749e0c00dade86c17381b9565e3ee727",
+      "sha256": "7cbac4082dba0d811ddbb6a24f0db57c883a955acf0276f32809040ff8d61eb3"
+    },
+    "research/paired-comparison/valuation-ladder/PROOF.md": {
+      "bytes": 15563,
+      "git_blob": "d676392df87075c961019da6186f3ccb94f98e4b",
+      "sha256": "1560168974bf330d668f823ba4a817223ee46fe8b5c981a491438f4dc54acb34"
+    }
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "runtime_utc": "2026-09-19T21:44:07.354165+00:00",
+  "status": "PASS; bounded author replay, not mathematical acceptance"
+}
