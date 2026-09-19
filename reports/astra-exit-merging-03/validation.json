@@ -1,0 +1,127 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-003-adaptive-companions/run.py",
+        "--check",
+        "experiments/X-AEM-003-adaptive-companions/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.442,
+      "stderr": "",
+      "stdout": "{\"families\": 1115, \"grid\": {\"merge\": 11107, \"outside_return\": 10397, \"outside_seed\": 3072}, \"sha256\": \"4381cd1c17c8aff52e1e2dd8145001f3cf1814bdbd91bcee207c6cf80340944e\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-AEM-003-adaptive-companions/run.py",
+        "--check",
+        "experiments/X-AEM-003-adaptive-companions/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 4.104,
+      "stderr": "",
+      "stdout": "{\"families\": 1115, \"grid\": {\"merge\": 11107, \"outside_return\": 10397, \"outside_seed\": 3072}, \"sha256\": \"4381cd1c17c8aff52e1e2dd8145001f3cf1814bdbd91bcee207c6cf80340944e\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-003-adaptive-companions/verify.py",
+        "experiments/X-AEM-003-adaptive-companions/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 1.71,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 5, \"resealed_rejected\": 18, \"sha256\": \"4381cd1c17c8aff52e1e2dd8145001f3cf1814bdbd91bcee207c6cf80340944e\", \"status\": \"PASS\", \"symbolic_cylinders\": 257}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-AEM-003-adaptive-companions/verify.py",
+        "experiments/X-AEM-003-adaptive-companions/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.593,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 5, \"resealed_rejected\": 18, \"sha256\": \"4381cd1c17c8aff52e1e2dd8145001f3cf1814bdbd91bcee207c6cf80340944e\", \"status\": \"PASS\", \"symbolic_cylinders\": 257}"
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "experiments/X-AEM-003-adaptive-companions/verify.py",
+        "experiments/X-AEM-003-adaptive-companions/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.53,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 5, \"resealed_rejected\": 18, \"sha256\": \"4381cd1c17c8aff52e1e2dd8145001f3cf1814bdbd91bcee207c6cf80340944e\", \"status\": \"PASS\", \"symbolic_cylinders\": 257}"
+    },
+    {
+      "kind": "parent_published_corpus_crosscheck",
+      "old_family_sha256": "80eec99289cbcf811ee774d80c6f1a6ca7b8b3737f7e2e00faf82054ccc18ec8",
+      "old_rows": 635,
+      "parent_head": "bf0696f888442c82a4c6cdc1df36becf8550295a",
+      "result": "all have shorter new direct certificate with different companion",
+      "scope": "separate exact application to uploaded parent full corpus, not independent review"
+    },
+    {
+      "invalid_sources_rejected": 4,
+      "kind": "source_cli_contract",
+      "outside_source_2": "outside_burst"
+    }
+  ],
+  "direct_git": "failed DNS for github.com",
+  "files": {
+    "experiments/X-AEM-003-adaptive-companions/results/canonical.json": {
+      "bytes": 4129,
+      "git_blob": "451f5332698cd262b7066be0d31bb8fcb7a0c97f",
+      "sha256": "57d72a648dcb16ca6af04d2ca9995939c70b761e467b6ba4239360cf9e4207c9"
+    },
+    "experiments/X-AEM-003-adaptive-companions/run.py": {
+      "bytes": 9015,
+      "git_blob": "89b8190f8c1346fae453eb89b2417fb35256236c",
+      "sha256": "898832b4201b150690f1042c82463ff7a7a30c61e469ddc62dbaeec5f65df1d7"
+    },
+    "experiments/X-AEM-003-adaptive-companions/verify.py": {
+      "bytes": 11250,
+      "git_blob": "f0f1c0563d553ac21c37a40f1361d635b7549f72",
+      "sha256": "ae4bcfdf5ada622bf4e0d992f9b362c23b7639f5812c417c588c6627e6f745dd"
+    },
+    "research/astra-exit-merging/adaptive-companions/PROOF.md": {
+      "bytes": 16019,
+      "git_blob": "1e8ea0a08a5504c645946c4dbe688c1decb86d13",
+      "sha256": "a617f2e270fd1873d1d8e3e8c2e152757093f486673f891aaa24937a19128c04"
+    },
+    "research/astra-exit-merging/adaptive-companions/README.md": {
+      "bytes": 3928,
+      "git_blob": "af31ef46f688b77bb45e1180d27fb0bc2bb60728",
+      "sha256": "bddffe0abe517a9d2633b6a4275ab43f5d22d408bd59b8499666743b0aeeffe3"
+    },
+    "research/astra-exit-merging/adaptive-companions/SOURCES_AND_LIMITS.md": {
+      "bytes": 5099,
+      "git_blob": "a2cd6a58a85d60c88088f7c456cdc94b89260ee7",
+      "sha256": "f53637e3a6cea5430e48d649920b0d69af920b6a965fea79442387293f0cec67"
+    }
+  },
+  "full_checkout_validator": false,
+  "independent_mathematical_review": false,
+  "lean": false,
+  "parent_commit": "bf0696f888442c82a4c6cdc1df36becf8550295a",
+  "parent_tree": "d890627c7c8668a423343f324bc660c8c88e45df",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "remote_CI": false,
+  "scope": "new AAC packet only; parent proofs and statuses unchanged",
+  "status": "PASS"
+}
