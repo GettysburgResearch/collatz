@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-002-hard-return/run.py",
+        "--check",
+        "experiments/X-AEM-002-hard-return/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.93,
+      "stderr": "",
+      "stdout": "{\"ambient\": {\"entry_guard\": 11520, \"new_merge\": 11, \"new_outside\": 376, \"parent_good_exit\": 381}, \"families\": 635, \"grid\": {\"merge\": 2114, \"outside\": 63422}, \"sha256\": \"9f9637054acf0d01aa321c16cc502da2822022715427c3331f35a5502ec810c6\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-AEM-002-hard-return/run.py",
+        "--check",
+        "experiments/X-AEM-002-hard-return/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.216,
+      "stderr": "",
+      "stdout": "{\"ambient\": {\"entry_guard\": 11520, \"new_merge\": 11, \"new_outside\": 376, \"parent_good_exit\": 381}, \"families\": 635, \"grid\": {\"merge\": 2114, \"outside\": 63422}, \"sha256\": \"9f9637054acf0d01aa321c16cc502da2822022715427c3331f35a5502ec810c6\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "experiments/X-AEM-002-hard-return/verify.py",
+        "experiments/X-AEM-002-hard-return/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.941,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 4, \"resealed_rejected\": 16, \"sha256\": \"9f9637054acf0d01aa321c16cc502da2822022715427c3331f35a5502ec810c6\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "experiments/X-AEM-002-hard-return/verify.py",
+        "experiments/X-AEM-002-hard-return/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.287,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 4, \"resealed_rejected\": 16, \"sha256\": \"9f9637054acf0d01aa321c16cc502da2822022715427c3331f35a5502ec810c6\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "experiments/X-AEM-002-hard-return/verify.py",
+        "experiments/X-AEM-002-hard-return/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.165,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 4, \"resealed_rejected\": 16, \"sha256\": \"9f9637054acf0d01aa321c16cc502da2822022715427c3331f35a5502ec810c6\", \"status\": \"PASS\"}"
+    }
+  ],
+  "files": {
+    "experiments/X-AEM-002-hard-return/results/canonical.json": {
+      "bytes": 6965,
+      "git_blob": "5255fd8de44b86eb8f749987c39251da70dcc47f",
+      "sha256": "248c12affebefb146bc81c64699d47247dc34c3bffb96f5d8cb99a2cf6352afe"
+    },
+    "experiments/X-AEM-002-hard-return/run.py": {
+      "bytes": 6782,
+      "git_blob": "1849be194598e3de76f1bb31cbf019c0b89b605a",
+      "sha256": "82cae912329e009a5d867e990baddb1cf0b790b86d95703d7e022158f16e789c"
+    },
+    "experiments/X-AEM-002-hard-return/verify.py": {
+      "bytes": 9738,
+      "git_blob": "d591f5873b109b1b34f3a32e28109b1355091b86",
+      "sha256": "3590ce0937ca7c6e6dd59296545e6cc89ea48fcca1934fffb831bad5b20401e1"
+    },
+    "research/astra-exit-merging/hard-return/PROOF.md": {
+      "bytes": 12751,
+      "git_blob": "a869821ecb7d063c6a1027d69d4728c467e8f140",
+      "sha256": "a202433ed4ae7f9f8ec971025ba8214a380dba23f10128370971b18db9a6baf7"
+    },
+    "research/astra-exit-merging/hard-return/README.md": {
+      "bytes": 3331,
+      "git_blob": "29e408d98c6daf9eae41204d409c32dd5890640d",
+      "sha256": "d3ad4e9cd95675a941b258a8c9aafcbf075dcc2f4fae78e3f936d5e3941ecc05"
+    },
+    "research/astra-exit-merging/hard-return/SOURCES_AND_LIMITS.md": {
+      "bytes": 4038,
+      "git_blob": "ff56833c9318846a7fcc541dfa162f9dadb04478",
+      "sha256": "4896b48f86c770124d5e9cbd8e41defe1149170f7f3f5806fc71ec8be1bd7715"
+    }
+  },
+  "full_checkout_validator": false,
+  "independent_mathematical_review": false,
+  "lean": false,
+  "parent_commit": "65c91ecea97d9ebf931eb1d9284b7950182a298e",
+  "parent_tree": "851c75de9b6ad8c416f4b5023640c0d4d6fda805",
+  "prepublication_fix": "Replaced rounded x<n/3 draft comparison by exact integer 3*x<n; all final commands rerun.",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "status": "PASS"
+}
