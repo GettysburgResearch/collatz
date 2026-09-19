@@ -1,0 +1,134 @@
+{
+  "authoring_date": "2026-09-20",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-004-shadow-switching/run.py",
+        "--check",
+        "experiments/X-AEM-004-shadow-switching/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.285,
+      "stderr": "",
+      "stdout": "{\"comparison\": {\"merge -> merge\": 11107, \"outside_return -> merge\": 1489, \"outside_return -> outside_return\": 8908, \"outside_seed -> merge\": 1597, \"outside_seed -> outside_return\": 1475}, \"families\": 711, \"grid\": {\"merge\": 14193, \"outside_return\": 10383}, \"sha256\": \"32c047148186cd9b35a6f1d34d48be3af9130df28cc7a28ce070289d36293056\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-004-shadow-switching/run.py",
+        "--check",
+        "experiments/X-AEM-004-shadow-switching/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.486,
+      "stderr": "",
+      "stdout": "{\"comparison\": {\"merge -> merge\": 11107, \"outside_return -> merge\": 1489, \"outside_return -> outside_return\": 8908, \"outside_seed -> merge\": 1597, \"outside_seed -> outside_return\": 1475}, \"families\": 711, \"grid\": {\"merge\": 14193, \"outside_return\": 10383}, \"sha256\": \"32c047148186cd9b35a6f1d34d48be3af9130df28cc7a28ce070289d36293056\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-004-shadow-switching/verify.py",
+        "experiments/X-AEM-004-shadow-switching/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.093,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 6, \"resealed_rejected\": 22, \"sha256\": \"32c047148186cd9b35a6f1d34d48be3af9130df28cc7a28ce070289d36293056\", \"status\": \"PASS\", \"symbolic_cylinders\": 411}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-004-shadow-switching/verify.py",
+        "experiments/X-AEM-004-shadow-switching/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.233,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 6, \"resealed_rejected\": 22, \"sha256\": \"32c047148186cd9b35a6f1d34d48be3af9130df28cc7a28ce070289d36293056\", \"status\": \"PASS\", \"symbolic_cylinders\": 411}"
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "experiments/X-AEM-004-shadow-switching/verify.py",
+        "experiments/X-AEM-004-shadow-switching/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.417,
+      "stderr": "",
+      "stdout": "{\"direct_rejected\": 6, \"resealed_rejected\": 22, \"sha256\": \"32c047148186cd9b35a6f1d34d48be3af9130df28cc7a28ce070289d36293056\", \"status\": \"PASS\", \"symbolic_cylinders\": 411}"
+    },
+    {
+      "all_declared_fields_match": true,
+      "invalid_sources_rejected": 5,
+      "kind": "parent_published_grid_and_input_contract",
+      "outside_source_2": "outside_burst",
+      "parent": "1d4dfc103055648def3db73860778a383a91ea3c",
+      "rows": 24576
+    }
+  ],
+  "direct_git": "git ls-remote failed DNS for github.com",
+  "files": {
+    "experiments/X-AEM-004-shadow-switching/README.md": {
+      "bytes": 3012,
+      "git_blob": "1f2d54adca0e82f05b9f20cb607751fc53fae88e",
+      "sha256": "f7e26eb595f2223657a8370ffd44beb479fad530a7911db314b6cbd43589a036"
+    },
+    "experiments/X-AEM-004-shadow-switching/results/canonical.json": {
+      "bytes": 5591,
+      "git_blob": "4d5db0a15a08e01ab7858ba982e849d332808a42",
+      "sha256": "6394da814b65be38aa1ddeb9859f9859410e3a9b0e6d7c2a341bfcabfe2f03bb"
+    },
+    "experiments/X-AEM-004-shadow-switching/run.py": {
+      "bytes": 12680,
+      "git_blob": "003ea93aed447cfcb7a52eafaa76e922ca9e3df6",
+      "sha256": "35e1e06a8dff612c1a92d0a129d6e3a54bf10d32cced44380a05b9e7dae95553"
+    },
+    "experiments/X-AEM-004-shadow-switching/verify.py": {
+      "bytes": 13753,
+      "git_blob": "01f7c4f0737ebabe33b26e78f09dd6d14283fbb9",
+      "sha256": "f87ea44255f34d0c138906dd774209fc534f112a280526a2eed4548f11f050fe"
+    },
+    "research/astra-exit-merging/shadow-switching/PROOF.md": {
+      "bytes": 15665,
+      "git_blob": "2b332854d817b8a6f9a587d027043285dc38bfc4",
+      "sha256": "aa1b698dd213ef49ba2635b594a9608c83498969f14d4f86a89f4fe87c9d7dfd"
+    },
+    "research/astra-exit-merging/shadow-switching/README.md": {
+      "bytes": 4190,
+      "git_blob": "27363ae19509e012790dcdcb0ef73bf35221d254",
+      "sha256": "ed61c3ad4126290283c84c0889f366c49d973e28b1d2d468d973a8e069a24f0b"
+    },
+    "research/astra-exit-merging/shadow-switching/SOURCES_AND_LIMITS.md": {
+      "bytes": 4979,
+      "git_blob": "1c8a296438b5bfb0780c28565f5dbf224078316c",
+      "sha256": "5ec097d5f0cefbc9c85808689bd7eaf90613e63621999cee95a1311bbccd1596"
+    }
+  },
+  "full_checkout_validator": false,
+  "independent_mathematical_review": false,
+  "lean": false,
+  "main_observed": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "parent_commit": "1d4dfc103055648def3db73860778a383a91ea3c",
+  "parent_tree": "00b4625229af3d07da248a90fcdea889541a86cf",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "remote_CI": false,
+  "scope": "AES continuation only; no parent modifications or status promotions",
+  "status": "PASS"
+}
