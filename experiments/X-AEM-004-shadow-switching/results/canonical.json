@@ -1,0 +1,248 @@
+{
+  "payload": {
+    "budget_fixture": {
+      "adjacent_q": 21786538323952,
+      "clock_m": 24,
+      "clock_n": 27,
+      "end_m": 2908151813630,
+      "end_n": 26173366322672,
+      "entry": "odd_spine",
+      "k": 3,
+      "m": 10200921464895,
+      "min_forward": 1361658645247,
+      "n": 81607371719163,
+      "returns": [
+        [
+          8,
+          "hard"
+        ]
+      ],
+      "s": 1,
+      "status": "budget",
+      "t": 4,
+      "u": 159389397889,
+      "w": 806908826813,
+      "word_m": "111111000110100001111100",
+      "word_n": "110110110001000001111111101"
+    },
+    "comparison": {
+      "merge -> merge": 11107,
+      "outside_return -> merge": 1489,
+      "outside_return -> outside_return": 8908,
+      "outside_seed -> merge": 1597,
+      "outside_seed -> outside_return": 1475
+    },
+    "direct_no_descent": 40,
+    "family_count": 711,
+    "family_sha256": "da4ebe4bebd5a7b8af6cae1ef84246394f3ca148240181229abea31af979d311",
+    "fixtures": [
+      {
+        "clock_m": 0,
+        "clock_n": 5,
+        "end_m": 1,
+        "end_n": 1,
+        "entry": "core3",
+        "k": 1,
+        "m": 1,
+        "min_forward": 1,
+        "n": 3,
+        "returns": [],
+        "status": "merge",
+        "u": 1,
+        "word_m": "",
+        "word_n": "11000"
+      },
+      {
+        "clock_m": 7,
+        "clock_n": 8,
+        "end_m": 11,
+        "end_n": 11,
+        "entry": "gap4_direct",
+        "k": 1,
+        "m": 51,
+        "min_forward": 7,
+        "n": 99,
+        "returns": [],
+        "status": "merge",
+        "u": 13,
+        "word_m": "1100100",
+        "word_n": "11000001"
+      },
+      {
+        "adjacent_q": 28,
+        "clock_m": 9,
+        "clock_n": 10,
+        "end_m": 11,
+        "end_n": 11,
+        "entry": "odd_spine",
+        "k": 1,
+        "m": 67,
+        "min_forward": 7,
+        "n": 131,
+        "returns": [],
+        "s": 1,
+        "status": "merge",
+        "t": 4,
+        "u": 17,
+        "w": 1,
+        "word_m": "110001100",
+        "word_n": "1100010001"
+      },
+      {
+        "adjacent_q": 82,
+        "clock_m": 10,
+        "clock_n": 12,
+        "end_m": 47,
+        "end_n": 47,
+        "entry": "same_center",
+        "k": 1,
+        "m": 193,
+        "min_forward": 47,
+        "n": 259,
+        "returns": [],
+        "s": 2,
+        "status": "merge",
+        "t": 5,
+        "u": 33,
+        "w": 1,
+        "word_m": "1010100101",
+        "word_n": "110001011100"
+      },
+      {
+        "clock_m": 8,
+        "clock_n": 10,
+        "end_m": 713,
+        "end_n": 713,
+        "entry": "retained_AAC",
+        "k": 2,
+        "m": 2251,
+        "min_forward": 713,
+        "n": 3003,
+        "returns": [],
+        "status": "merge",
+        "u": 47,
+        "word_m": "11010001",
+        "word_n": "1101100100"
+      },
+      {
+        "adjacent_q": 165969041029510170366321940,
+        "clock_m": 59,
+        "clock_n": 85,
+        "end_m": 62238390386066313887370728,
+        "end_n": 62238390386066313887370728,
+        "entry": "odd_spine",
+        "k": 26,
+        "m": 616993148949757951,
+        "min_forward": 41492260257377542591580485,
+        "n": 41405709321801049233686523,
+        "returns": [],
+        "s": 1,
+        "status": "merge",
+        "t": 4,
+        "u": 137,
+        "w": 6147001519611487791345257,
+        "word_m": "11111111111111111111111111111111111111111111111111110001100",
+        "word_n": "1101101101101101101101101101101101101101101101101101101101101101101101101101100010001"
+      },
+      {
+        "adjacent_q": 600741024422696089908436,
+        "clock_m": 75,
+        "clock_n": 77,
+        "end_m": 225277884158511033715664,
+        "end_n": 225277884158511033715664,
+        "entry": "same_center",
+        "k": 23,
+        "m": 106695967722336046546939,
+        "min_forward": 160043951583504069820411,
+        "n": 142261290296448062062587,
+        "returns": [],
+        "s": 2,
+        "status": "merge",
+        "t": 5,
+        "u": 241,
+        "w": 7416555857070322097635,
+        "word_m": "110110110110110110110110110110110110110110110110110110110110110110101010001",
+        "word_n": "11011011011011011011011011011011011011011011011011011011011011011011000101100"
+      }
+    ],
+    "general_count": 108,
+    "general_sha256": "46cef3bfa1cd91889f3336df9ac7067c57f9a9a98e7b968980636a664dd5218f",
+    "grid_count": 24576,
+    "grid_counts": {
+      "merge": 14193,
+      "outside_return": 10383
+    },
+    "grid_sha256": "c17870059ed3ddc860c5d373fccde79d874f664a339db5ca1a8d0ec57ac9ca66",
+    "new_entry_counts": {
+      "core3": 1,
+      "gap4_direct": 1536,
+      "odd_spine": 2049,
+      "retained_AAC": 19968,
+      "same_center": 1022
+    },
+    "odd_spine_rows": 362,
+    "old_mergers_preserved": true,
+    "parent": "1d4dfc103055648def3db73860778a383a91ea3c",
+    "parent_grid_counts": {
+      "merge": 11107,
+      "outside_return": 10397,
+      "outside_seed": 3072
+    },
+    "schema": "collatz-aes-004-v1",
+    "thresholds": [
+      [
+        4,
+        26
+      ],
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        29
+      ],
+      [
+        7,
+        25
+      ],
+      [
+        8,
+        31
+      ],
+      [
+        9,
+        28
+      ],
+      [
+        10,
+        34
+      ],
+      [
+        11,
+        30
+      ],
+      [
+        12,
+        36
+      ],
+      [
+        13,
+        33
+      ],
+      [
+        14,
+        39
+      ],
+      [
+        15,
+        35
+      ],
+      [
+        16,
+        41
+      ]
+    ]
+  },
+  "sha256": "32c047148186cd9b35a6f1d34d48be3af9130df28cc7a28ce070289d36293056"
+}
