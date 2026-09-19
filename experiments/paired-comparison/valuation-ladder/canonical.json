@@ -1,0 +1,67 @@
+{
+  "bridges": 992,
+  "complete_collatz_proof": false,
+  "counts": {
+    "new": {
+      "BUDGET": 0,
+      "MERGE": 4366,
+      "OUTSIDE": 61170,
+      "admitted": 8191
+    },
+    "old": {
+      "BUDGET": 0,
+      "MERGE": 2114,
+      "OUTSIDE": 63422,
+      "admitted": 4096
+    }
+  },
+  "examples": [
+    {
+      "a": 18,
+      "b": 17,
+      "endpoint": 478505,
+      "m": 118015,
+      "minimum": 319003,
+      "n": 236031,
+      "no_descent": true
+    },
+    {
+      "a": 18,
+      "b": 17,
+      "endpoint": 641,
+      "m": 115157,
+      "minimum": 427,
+      "n": 230319,
+      "no_descent": false
+    },
+    {
+      "a": 18,
+      "b": 18,
+      "endpoint": 641,
+      "m": 76771,
+      "minimum": 427,
+      "n": 230319,
+      "no_descent": false
+    },
+    {
+      "a": 34,
+      "b": 34,
+      "endpoint": 37500596075,
+      "m": 6843356499,
+      "minimum": 25000397383,
+      "n": 20530069503,
+      "no_descent": true
+    }
+  ],
+  "first_exits": 6400,
+  "ladders": 5280,
+  "limit": 65536,
+  "phase_arrivals": [
+    53,
+    55
+  ],
+  "rejected_controls": 6,
+  "rows_sha256": "3be1da247d729144466d964884241ce4fbcc9bc43525568928d54b8ccdbb7a51",
+  "schema": "paired-valuation-ladder-v1",
+  "status": "PROPOSED"
+}
