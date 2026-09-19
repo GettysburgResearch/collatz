@@ -1,0 +1,50 @@
+{
+  "equal_clock_third_certificates": 1084,
+  "even_mersenne_certificates": 128,
+  "no_forward_descent_crt_cases": 380,
+  "normalizer_counts": {
+    "CORE": 217,
+    "UNRESOLVED": 3878
+  },
+  "odd_exit_certificates": 2048,
+  "self_test": {
+    "direct_bad_controls_rejected": 4,
+    "names": [
+      "schema",
+      "source boolean alias",
+      "integral float alias",
+      "repeat boolean alias",
+      "clock corruption",
+      "endpoint corruption",
+      "peak corruption",
+      "parity corruption",
+      "nondecreasing partner",
+      "nonpositive partner",
+      "omitted certificate",
+      "duplicated certificate",
+      "lost unresolved source",
+      "false source pin",
+      "CRT source parameter",
+      "CRT valuation length",
+      "two-exit physical word",
+      "one-third source",
+      "no-forward minimum",
+      "grid coverage omission",
+      "retracing 7->11->17",
+      "mixed-rank 11->17",
+      "equal-source zero progress",
+      "positive but illegal parity"
+    ],
+    "resealed_mutations_rejected": 20
+  },
+  "semantic_sha256": "207bdb81b078c67fb18a304d0997b988e747f0dad165546e18cf6343c6783b8d",
+  "status": "PASS",
+  "symbolic_bridge": {
+    "X": "54t+11",
+    "Y": "27t+5",
+    "cylinder": "v=7+32t, t>=0",
+    "threshold_bound": 23
+  },
+  "two_exit_crt_cases": 1084,
+  "two_exit_grid_certificates": 96
+}

@@ -1,0 +1,71 @@
+{
+  "started_utc": "2026-09-19T20:10:57.323749+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "scope": "collatz supplied packet replay; not independent mathematical review",
+  "base_head": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/run.py",
+        "--check",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1099999999860302,
+      "stdout": "{\n  \"equal_clock_third_certificates\": 1084,\n  \"even_mersenne_certificates\": 128,\n  \"normalizer\": {\n    \"CORE\": 217,\n    \"UNRESOLVED\": 3878\n  },\n  \"normalizer_rules\": {\n    \"110-ancestor\": 1190,\n    \"even\": 8476,\n    \"odd-ancestor\": 2325,\n    \"odd-exit-half\": 1836,\n    \"one-mod-four\": 4944,\n    \"two-exit-half\": 16\n  },\n  \"odd_exit_certificates\": 2048,\n  \"odd_exit_unresolved\": 2047,\n  \"semantic_sha256\": \"207bdb81b078c67fb18a304d0997b988e747f0dad165546e18cf6343c6783b8d\",\n  \"status\": \"PASS\",\n  \"two_exit_crt_cases\": 1084,\n  \"two_exit_grid_certificates\": 96,\n  \"two_exit_grid_unresolved\": 2976\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/verify.py",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 15.09299999999348,
+      "stdout": "{\n  \"equal_clock_third_certificates\": 1084,\n  \"even_mersenne_certificates\": 128,\n  \"no_forward_descent_crt_cases\": 380,\n  \"normalizer_counts\": {\n    \"CORE\": 217,\n    \"UNRESOLVED\": 3878\n  },\n  \"odd_exit_certificates\": 2048,\n  \"self_test\": {\n    \"direct_bad_controls_rejected\": 4,\n    \"names\": [\n      \"schema\",\n      \"source boolean alias\",\n      \"integral float alias\",\n      \"repeat boolean alias\",\n      \"clock corruption\",\n      \"endpoint corruption\",\n      \"peak corruption\",\n      \"parity corruption\",\n      \"nondecreasing partner\",\n      \"nonpositive partner\",\n      \"omitted certificate\",\n      \"duplicated certificate\",\n      \"lost unresolved source\",\n      \"false source pin\",\n      \"CRT source parameter\",\n      \"CRT valuation length\",\n      \"two-exit physical word\",\n      \"one-third source\",\n      \"no-forward minimum\",\n      \"grid coverage omission\",\n      \"retracing 7->11->17\",\n      \"mixed-rank 11->17\",\n      \"equal-source zero progress\",\n      \"positive but illegal parity\"\n    ],\n    \"resealed_mutations_rejected\": 20\n  },\n  \"semantic_sha256\": \"207bdb81b078c67fb18a304d0997b988e747f0dad165546e18cf6343c6783b8d\",\n  \"status\": \"PASS\",\n  \"symbolic_bridge\": {\n    \"X\": \"54t+11\",\n    \"Y\": \"27t+5\",\n    \"cylinder\": \"v=7+32t, t>=0\",\n    \"threshold_bound\": 23\n  },\n  \"two_exit_crt_cases\": 1084,\n  \"two_exit_grid_certificates\": 96\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-O",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/run.py",
+        "--check",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1410000000032596,
+      "stdout": "{\n  \"equal_clock_third_certificates\": 1084,\n  \"even_mersenne_certificates\": 128,\n  \"normalizer\": {\n    \"CORE\": 217,\n    \"UNRESOLVED\": 3878\n  },\n  \"normalizer_rules\": {\n    \"110-ancestor\": 1190,\n    \"even\": 8476,\n    \"odd-ancestor\": 2325,\n    \"odd-exit-half\": 1836,\n    \"one-mod-four\": 4944,\n    \"two-exit-half\": 16\n  },\n  \"odd_exit_certificates\": 2048,\n  \"odd_exit_unresolved\": 2047,\n  \"semantic_sha256\": \"207bdb81b078c67fb18a304d0997b988e747f0dad165546e18cf6343c6783b8d\",\n  \"status\": \"PASS\",\n  \"two_exit_crt_cases\": 1084,\n  \"two_exit_grid_certificates\": 96,\n  \"two_exit_grid_unresolved\": 2976\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-O",
+        "-B",
+        "experiments/X-AEM-001-exit-merging/verify.py",
+        "experiments/X-AEM-001-exit-merging/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 15.094000000040978,
+      "stdout": "{\n  \"equal_clock_third_certificates\": 1084,\n  \"even_mersenne_certificates\": 128,\n  \"no_forward_descent_crt_cases\": 380,\n  \"normalizer_counts\": {\n    \"CORE\": 217,\n    \"UNRESOLVED\": 3878\n  },\n  \"odd_exit_certificates\": 2048,\n  \"self_test\": {\n    \"direct_bad_controls_rejected\": 4,\n    \"names\": [\n      \"schema\",\n      \"source boolean alias\",\n      \"integral float alias\",\n      \"repeat boolean alias\",\n      \"clock corruption\",\n      \"endpoint corruption\",\n      \"peak corruption\",\n      \"parity corruption\",\n      \"nondecreasing partner\",\n      \"nonpositive partner\",\n      \"omitted certificate\",\n      \"duplicated certificate\",\n      \"lost unresolved source\",\n      \"false source pin\",\n      \"CRT source parameter\",\n      \"CRT valuation length\",\n      \"two-exit physical word\",\n      \"one-third source\",\n      \"no-forward minimum\",\n      \"grid coverage omission\",\n      \"retracing 7->11->17\",\n      \"mixed-rank 11->17\",\n      \"equal-source zero progress\",\n      \"positive but illegal parity\"\n    ],\n    \"resealed_mutations_rejected\": 20\n  },\n  \"semantic_sha256\": \"207bdb81b078c67fb18a304d0997b988e747f0dad165546e18cf6343c6783b8d\",\n  \"status\": \"PASS\",\n  \"symbolic_bridge\": {\n    \"X\": \"54t+11\",\n    \"Y\": \"27t+5\",\n    \"cylinder\": \"v=7+32t, t>=0\",\n    \"threshold_bound\": 23\n  },\n  \"two_exit_crt_cases\": 1084,\n  \"two_exit_grid_certificates\": 96\n}\n",
+      "stderr": ""
+    }
+  ]
+}
