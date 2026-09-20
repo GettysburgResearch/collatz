@@ -1,0 +1,898 @@
+{
+  "sha256_of_environment_independent_summary": "31b2c4ea38196c609383bdaa267669727df72a50074c6b2343a4355bd3486b9f",
+  "summary": {
+    "agent": "gpt56-sol-01",
+    "aggregate": {
+      "all_approximants_have_explicit_one_step_nonclosure_witnesses": true,
+      "all_sink_stripped_boundaries_are_acyclic": true,
+      "all_tail_components_have_two_states": true
+    },
+    "bit_order": "lsd_first",
+    "classification": "exact finite computation; no counterexample claim",
+    "environment": {
+      "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+      "python": "3.12.3"
+    },
+    "experiment": "X-9201",
+    "inspected_orbit_times": "0 through depth, inclusive",
+    "interpretation": [
+      "Each finite safety approximant is canonical-positive minus a finite reverse tree.",
+      "Its only recurrent input component is the universal two-state canonical tail.",
+      "Retaining that cofinite tail cannot yield a safe forward-invariant language.",
+      "Quotient learning should strip the tail and compare boundary DAGs across depths."
+    ],
+    "issue_path": "#8 safety-automata widening",
+    "limitations": [
+      "Finite-depth avoidance does not establish an infinite surviving orbit.",
+      "Acyclic boundary profiles neither prove nor disprove existence of a regular sanctuary.",
+      "This experiment does not synthesize a candidate language."
+    ],
+    "map": "shortcut 3n+1",
+    "max_depth": 32,
+    "rows": [
+      {
+        "boundary_distance_profile": {
+          "1": 2
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 2,
+        "cofinite_threshold": 3,
+        "depth": 0,
+        "dfa_sha256": "7dfc474353511f2360ecdab5bb19cedc1d1091ef614bf38632e84df72d0c6863",
+        "forbidden_count": 2,
+        "max_forbidden": 2,
+        "max_shortest_distance_to_tail": 1,
+        "minimal_states": 4,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 4,
+          "input_lsd": "001",
+          "output": 2,
+          "output_lsd": "01"
+        },
+        "raw_dfa_states": 6,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 3
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 3,
+        "cofinite_threshold": 5,
+        "depth": 1,
+        "dfa_sha256": "0b30fb5118a8afdf4b909cd0059b6be5b5bf29e20b6aad27467a3fb15d5d384b",
+        "forbidden_count": 3,
+        "max_forbidden": 4,
+        "max_shortest_distance_to_tail": 1,
+        "minimal_states": 5,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 8,
+          "input_lsd": "0001",
+          "output": 4,
+          "output_lsd": "001"
+        },
+        "raw_dfa_states": 8,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 4
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 4,
+        "cofinite_threshold": 9,
+        "depth": 2,
+        "dfa_sha256": "804a76d418641c8cc4b5cf4f52ccf7e788a028eb8ab15677413a7b74b18ff888",
+        "forbidden_count": 4,
+        "max_forbidden": 8,
+        "max_shortest_distance_to_tail": 1,
+        "minimal_states": 6,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 16,
+          "input_lsd": "00001",
+          "output": 8,
+          "output_lsd": "0001"
+        },
+        "raw_dfa_states": 10,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 5,
+          "2": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 6,
+        "cofinite_threshold": 17,
+        "depth": 3,
+        "dfa_sha256": "e9ef8a76ee30341a078b3560ca6c4c026ecfe9e468f66ff5acb56431a137594b",
+        "forbidden_count": 6,
+        "max_forbidden": 16,
+        "max_shortest_distance_to_tail": 2,
+        "minimal_states": 8,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 32,
+          "input_lsd": "000001",
+          "output": 16,
+          "output_lsd": "00001"
+        },
+        "raw_dfa_states": 14,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 5,
+          "2": 2
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 7,
+        "cofinite_threshold": 33,
+        "depth": 4,
+        "dfa_sha256": "a065e862111ba5defe8a636ac1ddb707b53a041ad4f3f9fe7063fb81861dba19",
+        "forbidden_count": 9,
+        "max_forbidden": 32,
+        "max_shortest_distance_to_tail": 2,
+        "minimal_states": 9,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 64,
+          "input_lsd": "0000001",
+          "output": 32,
+          "output_lsd": "000001"
+        },
+        "raw_dfa_states": 19,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 7,
+          "2": 3
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 10,
+        "cofinite_threshold": 65,
+        "depth": 5,
+        "dfa_sha256": "d955730e78c3bfb76c8cfa944c252a00530bbba0ff480403c13d2904d764d0e4",
+        "forbidden_count": 13,
+        "max_forbidden": 64,
+        "max_shortest_distance_to_tail": 2,
+        "minimal_states": 12,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 128,
+          "input_lsd": "00000001",
+          "output": 64,
+          "output_lsd": "0000001"
+        },
+        "raw_dfa_states": 26,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 9,
+          "2": 4
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 13,
+        "cofinite_threshold": 129,
+        "depth": 6,
+        "dfa_sha256": "5b7654fdff6937e1517ea225211345b6e32cee749e29f5ddad1513ec9ec915c7",
+        "forbidden_count": 18,
+        "max_forbidden": 128,
+        "max_shortest_distance_to_tail": 2,
+        "minimal_states": 15,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 256,
+          "input_lsd": "000000001",
+          "output": 128,
+          "output_lsd": "00000001"
+        },
+        "raw_dfa_states": 34,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 11,
+          "2": 5
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 16,
+        "cofinite_threshold": 257,
+        "depth": 7,
+        "dfa_sha256": "219823209eaa149955e303dcf0fbe718d283b0c7e3832aeed1526d755c832710",
+        "forbidden_count": 24,
+        "max_forbidden": 256,
+        "max_shortest_distance_to_tail": 2,
+        "minimal_states": 18,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 512,
+          "input_lsd": "0000000001",
+          "output": 256,
+          "output_lsd": "000000001"
+        },
+        "raw_dfa_states": 44,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 12,
+          "2": 7
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 19,
+        "cofinite_threshold": 513,
+        "depth": 8,
+        "dfa_sha256": "a9608aa6e606ae519f8e6508bf4d31c0b0c1ea1ab70eea291dda947f43af101e",
+        "forbidden_count": 32,
+        "max_forbidden": 512,
+        "max_shortest_distance_to_tail": 2,
+        "minimal_states": 21,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 1024,
+          "input_lsd": "00000000001",
+          "output": 512,
+          "output_lsd": "0000000001"
+        },
+        "raw_dfa_states": 58,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 18,
+          "2": 9,
+          "3": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 28,
+        "cofinite_threshold": 1025,
+        "depth": 9,
+        "dfa_sha256": "35525e823941c90be40955d6495b72550eeed1febeed6b20c8c88dad24ac2acd",
+        "forbidden_count": 44,
+        "max_forbidden": 1024,
+        "max_shortest_distance_to_tail": 3,
+        "minimal_states": 30,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 2048,
+          "input_lsd": "000000000001",
+          "output": 1024,
+          "output_lsd": "00000000001"
+        },
+        "raw_dfa_states": 81,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 19,
+          "2": 12,
+          "3": 2,
+          "4": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 34,
+        "cofinite_threshold": 2049,
+        "depth": 10,
+        "dfa_sha256": "ed91ddd0c5284552fb33cda30c2a668d1315714706767e5861e8fd821afe1b33",
+        "forbidden_count": 62,
+        "max_forbidden": 2048,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 36,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 4096,
+          "input_lsd": "0000000000001",
+          "output": 2048,
+          "output_lsd": "000000000001"
+        },
+        "raw_dfa_states": 116,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 21,
+          "2": 14,
+          "3": 3,
+          "4": 2
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 40,
+        "cofinite_threshold": 4097,
+        "depth": 11,
+        "dfa_sha256": "860d7c812dba5bf4f391b7456d8ddec5561fe3f54a1b91f0055dde822c0118df",
+        "forbidden_count": 86,
+        "max_forbidden": 4096,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 42,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 8192,
+          "input_lsd": "00000000000001",
+          "output": 4096,
+          "output_lsd": "0000000000001"
+        },
+        "raw_dfa_states": 164,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 22,
+          "2": 15,
+          "3": 4,
+          "4": 3
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 44,
+        "cofinite_threshold": 8193,
+        "depth": 12,
+        "dfa_sha256": "05bfc85043c75424aaaa0235e928ffa2ac1d03252232157eec69798006a88e0d",
+        "forbidden_count": 117,
+        "max_forbidden": 8192,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 46,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 16384,
+          "input_lsd": "000000000000001",
+          "output": 8192,
+          "output_lsd": "00000000000001"
+        },
+        "raw_dfa_states": 225,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 24,
+          "2": 18,
+          "3": 6,
+          "4": 4
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 52,
+        "cofinite_threshold": 16385,
+        "depth": 13,
+        "dfa_sha256": "cf13269fb505902c802227aa35a8748e53f20189d1dbe4497e7941f9f4bebb2c",
+        "forbidden_count": 156,
+        "max_forbidden": 16384,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 54,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 32768,
+          "input_lsd": "0000000000000001",
+          "output": 16384,
+          "output_lsd": "000000000000001"
+        },
+        "raw_dfa_states": 304,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 26,
+          "2": 22,
+          "3": 8,
+          "4": 5
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 61,
+        "cofinite_threshold": 32769,
+        "depth": 14,
+        "dfa_sha256": "ad9a16e6464733c4ca6d91d0bd843f03fd4d3210c0f1988439f65907dfea37bb",
+        "forbidden_count": 206,
+        "max_forbidden": 32768,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 63,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 65536,
+          "input_lsd": "00000000000000001",
+          "output": 32768,
+          "output_lsd": "0000000000000001"
+        },
+        "raw_dfa_states": 409,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 31,
+          "2": 26,
+          "3": 10,
+          "4": 6
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 73,
+        "cofinite_threshold": 65537,
+        "depth": 15,
+        "dfa_sha256": "ad3face58b276eea0aa414aa11cf790a1ba1d628bbc2d107f2b2d265a11fa000",
+        "forbidden_count": 274,
+        "max_forbidden": 65536,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 75,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 131072,
+          "input_lsd": "000000000000000001",
+          "output": 65536,
+          "output_lsd": "00000000000000001"
+        },
+        "raw_dfa_states": 554,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 39,
+          "2": 32,
+          "3": 12,
+          "4": 7
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 90,
+        "cofinite_threshold": 131073,
+        "depth": 16,
+        "dfa_sha256": "f82a1cfa38911dfe84b968d4cc85fa8ce78811a82c05fa3d67907aa541f070ff",
+        "forbidden_count": 365,
+        "max_forbidden": 131072,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 92,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 262144,
+          "input_lsd": "0000000000000000001",
+          "output": 131072,
+          "output_lsd": "000000000000000001"
+        },
+        "raw_dfa_states": 751,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 51,
+          "2": 40,
+          "3": 14,
+          "4": 9
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 114,
+        "cofinite_threshold": 262145,
+        "depth": 17,
+        "dfa_sha256": "6dad890413cb5a2c45b9b34aa44086a10f27da66b0621a98cd7b1cc5e333df44",
+        "forbidden_count": 485,
+        "max_forbidden": 262144,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 116,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 524288,
+          "input_lsd": "00000000000000000001",
+          "output": 262144,
+          "output_lsd": "0000000000000000001"
+        },
+        "raw_dfa_states": 1019,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 65,
+          "2": 48,
+          "3": 17,
+          "4": 11
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 141,
+        "cofinite_threshold": 524289,
+        "depth": 18,
+        "dfa_sha256": "45d3ce5cab01d358f90a8281db0fa88b2a18601057a329a5bd7c919bd75a9c29",
+        "forbidden_count": 644,
+        "max_forbidden": 524288,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 143,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 1048576,
+          "input_lsd": "000000000000000000001",
+          "output": 524288,
+          "output_lsd": "00000000000000000001"
+        },
+        "raw_dfa_states": 1377,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 82,
+          "2": 60,
+          "3": 22,
+          "4": 13
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 177,
+        "cofinite_threshold": 1048577,
+        "depth": 19,
+        "dfa_sha256": "0e49015e09f8abd51651577e377eb08787006124cee13cf6f4b52e67ff509591",
+        "forbidden_count": 855,
+        "max_forbidden": 1048576,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 179,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 2097152,
+          "input_lsd": "0000000000000000000001",
+          "output": 1048576,
+          "output_lsd": "000000000000000000001"
+        },
+        "raw_dfa_states": 1869,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 98,
+          "2": 73,
+          "3": 28,
+          "4": 16
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 215,
+        "cofinite_threshold": 2097153,
+        "depth": 20,
+        "dfa_sha256": "d3a86cea5852a4ceed995d50f729b05568138086ad8a0d4567a011abe0b1902b",
+        "forbidden_count": 1137,
+        "max_forbidden": 2097152,
+        "max_shortest_distance_to_tail": 4,
+        "minimal_states": 217,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 4194304,
+          "input_lsd": "00000000000000000000001",
+          "output": 2097152,
+          "output_lsd": "0000000000000000000001"
+        },
+        "raw_dfa_states": 2552,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 111,
+          "2": 92,
+          "3": 36,
+          "4": 19,
+          "5": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 259,
+        "cofinite_threshold": 4194305,
+        "depth": 21,
+        "dfa_sha256": "96eafa37afe122703d81d9584412ec0687f9af81a9b694c4b263e39de71d1464",
+        "forbidden_count": 1518,
+        "max_forbidden": 4194304,
+        "max_shortest_distance_to_tail": 5,
+        "minimal_states": 261,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 8388608,
+          "input_lsd": "000000000000000000000001",
+          "output": 4194304,
+          "output_lsd": "00000000000000000000001"
+        },
+        "raw_dfa_states": 3506,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 121,
+          "2": 115,
+          "3": 46,
+          "4": 23,
+          "5": 2
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 307,
+        "cofinite_threshold": 8388609,
+        "depth": 22,
+        "dfa_sha256": "83d38d6cc776acd6541c4933f117356690e5f124b508174a5ffa011f3e78ad14",
+        "forbidden_count": 2023,
+        "max_forbidden": 8388608,
+        "max_shortest_distance_to_tail": 5,
+        "minimal_states": 309,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 16777216,
+          "input_lsd": "0000000000000000000000001",
+          "output": 8388608,
+          "output_lsd": "000000000000000000000001"
+        },
+        "raw_dfa_states": 4819,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 143,
+          "2": 140,
+          "3": 58,
+          "4": 27,
+          "5": 3
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 371,
+        "cofinite_threshold": 16777217,
+        "depth": 23,
+        "dfa_sha256": "3c12d402218e29481af3db118a48a6c59ffa1a64aed037a17d27701a5576392d",
+        "forbidden_count": 2688,
+        "max_forbidden": 16777216,
+        "max_shortest_distance_to_tail": 5,
+        "minimal_states": 373,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 33554432,
+          "input_lsd": "00000000000000000000000001",
+          "output": 16777216,
+          "output_lsd": "0000000000000000000000001"
+        },
+        "raw_dfa_states": 6596,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 168,
+          "2": 176,
+          "3": 73,
+          "4": 31,
+          "5": 4
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 452,
+        "cofinite_threshold": 33554433,
+        "depth": 24,
+        "dfa_sha256": "ca03666cf8b5fd42589f718e1e8fb90f6c0f5fda0a28855245ee21a11b5568c3",
+        "forbidden_count": 3573,
+        "max_forbidden": 33554432,
+        "max_shortest_distance_to_tail": 5,
+        "minimal_states": 454,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 67108864,
+          "input_lsd": "000000000000000000000000001",
+          "output": 33554432,
+          "output_lsd": "00000000000000000000000001"
+        },
+        "raw_dfa_states": 9023,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 206,
+          "2": 219,
+          "3": 93,
+          "4": 36,
+          "5": 6,
+          "6": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 561,
+        "cofinite_threshold": 67108865,
+        "depth": 25,
+        "dfa_sha256": "4df8ffe013964c67a6a6a0bee50e806395408baf240bf8ad2d713a5fdff93933",
+        "forbidden_count": 4760,
+        "max_forbidden": 67108864,
+        "max_shortest_distance_to_tail": 6,
+        "minimal_states": 563,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 134217728,
+          "input_lsd": "0000000000000000000000000001",
+          "output": 67108864,
+          "output_lsd": "000000000000000000000000001"
+        },
+        "raw_dfa_states": 12395,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 252,
+          "2": 266,
+          "3": 113,
+          "4": 45,
+          "5": 8,
+          "6": 2
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 686,
+        "cofinite_threshold": 134217729,
+        "depth": 26,
+        "dfa_sha256": "802483e9463fbdf2483bc3285bee340e5d5601da5a0ac444044a15652327244e",
+        "forbidden_count": 6350,
+        "max_forbidden": 134217728,
+        "max_shortest_distance_to_tail": 6,
+        "minimal_states": 688,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 268435456,
+          "input_lsd": "00000000000000000000000000001",
+          "output": 134217728,
+          "output_lsd": "0000000000000000000000000001"
+        },
+        "raw_dfa_states": 17047,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 299,
+          "2": 328,
+          "3": 136,
+          "4": 55,
+          "5": 11,
+          "6": 4
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 833,
+        "cofinite_threshold": 268435457,
+        "depth": 27,
+        "dfa_sha256": "65a0645b335e79b376a34defaa7a20983c6f6ff916e3da2625da1522013f81dc",
+        "forbidden_count": 8472,
+        "max_forbidden": 268435456,
+        "max_shortest_distance_to_tail": 6,
+        "minimal_states": 835,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 536870912,
+          "input_lsd": "000000000000000000000000000001",
+          "output": 268435456,
+          "output_lsd": "00000000000000000000000000001"
+        },
+        "raw_dfa_states": 23420,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 358,
+          "2": 392,
+          "3": 167,
+          "4": 66,
+          "5": 15,
+          "6": 6
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 1004,
+        "cofinite_threshold": 536870913,
+        "depth": 28,
+        "dfa_sha256": "ff9c4eea4d9ec461e002ba7f00a93101d74c2553123bb98e22de84ff16d16fcd",
+        "forbidden_count": 11301,
+        "max_forbidden": 536870912,
+        "max_shortest_distance_to_tail": 6,
+        "minimal_states": 1006,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 1073741824,
+          "input_lsd": "0000000000000000000000000000001",
+          "output": 536870912,
+          "output_lsd": "000000000000000000000000000001"
+        },
+        "raw_dfa_states": 32136,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 422,
+          "2": 482,
+          "3": 203,
+          "4": 80,
+          "5": 19,
+          "6": 9,
+          "7": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 1216,
+        "cofinite_threshold": 1073741825,
+        "depth": 29,
+        "dfa_sha256": "4ab7762459c4449c627c82ae3463fc0fa883ea2ed77054262a7f5e1776fa8f11",
+        "forbidden_count": 15066,
+        "max_forbidden": 1073741824,
+        "max_shortest_distance_to_tail": 7,
+        "minimal_states": 1218,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 2147483648,
+          "input_lsd": "00000000000000000000000000000001",
+          "output": 1073741824,
+          "output_lsd": "0000000000000000000000000000001"
+        },
+        "raw_dfa_states": 44034,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 497,
+          "2": 590,
+          "3": 249,
+          "4": 96,
+          "5": 27,
+          "6": 12,
+          "7": 2,
+          "8": 1
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 1474,
+        "cofinite_threshold": 2147483649,
+        "depth": 30,
+        "dfa_sha256": "2f06a38c992b16dbf543d495f4c8daaf9362ff57a7a93b369660e19899c02b22",
+        "forbidden_count": 20080,
+        "max_forbidden": 2147483648,
+        "max_shortest_distance_to_tail": 8,
+        "minimal_states": 1476,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 4294967296,
+          "input_lsd": "000000000000000000000000000000001",
+          "output": 2147483648,
+          "output_lsd": "00000000000000000000000000000001"
+        },
+        "raw_dfa_states": 60239,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 600,
+          "2": 726,
+          "3": 302,
+          "4": 112,
+          "5": 36,
+          "6": 15,
+          "7": 3,
+          "8": 2
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 1796,
+        "cofinite_threshold": 4294967297,
+        "depth": 31,
+        "dfa_sha256": "e7cf96adff5437b6ca9d7e163486ee2ea39de3241fe5379100fa6d347d6488b0",
+        "forbidden_count": 26762,
+        "max_forbidden": 4294967296,
+        "max_shortest_distance_to_tail": 8,
+        "minimal_states": 1798,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 8589934592,
+          "input_lsd": "0000000000000000000000000000000001",
+          "output": 4294967296,
+          "output_lsd": "000000000000000000000000000000001"
+        },
+        "raw_dfa_states": 82324,
+        "tail_component_states": 2
+      },
+      {
+        "boundary_distance_profile": {
+          "1": 697,
+          "2": 886,
+          "3": 369,
+          "4": 135,
+          "5": 45,
+          "6": 19,
+          "7": 5,
+          "8": 3
+        },
+        "boundary_is_acyclic": true,
+        "boundary_states": 2159,
+        "cofinite_threshold": 8589934593,
+        "depth": 32,
+        "dfa_sha256": "32d6b65b348900deae4a4ee8610a7285cfde52773fc517c7e43411c77006df63",
+        "forbidden_count": 35664,
+        "max_forbidden": 8589934592,
+        "max_shortest_distance_to_tail": 8,
+        "minimal_states": 2161,
+        "one_step_nonclosure_verified": true,
+        "one_step_nonclosure_witness": {
+          "input": 17179869184,
+          "input_lsd": "00000000000000000000000000000000001",
+          "output": 8589934592,
+          "output_lsd": "0000000000000000000000000000000001"
+        },
+        "raw_dfa_states": 112474,
+        "tail_component_states": 2
+      }
+    ]
+  }
+}
