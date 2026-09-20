@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "core_control:control": 4,
+    "entry:H": 1023,
+    "entry:merge": 3072,
+    "example:gate": 8,
+    "example:incompatible_slopes": 1,
+    "family:gate": 380,
+    "family:incompatible_slopes": 624,
+    "type:gate": 1713
+  },
+  "max_type_length": 261,
+  "rows": 6825,
+  "rows_sha256": "7660208731d85943bd662ac2ede13e3a10b5a812b6b4a1434fc3cb360f0a6d8c",
+  "schema": "ACS-1",
+  "scope": "finite reconstruction only; no all-input convergence claim"
+}

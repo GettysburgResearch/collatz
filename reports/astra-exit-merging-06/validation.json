@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "date": "2026-09-20",
+  "parent_commit": "edd48df6e9c678fa4a65b4ed8f41421dfc92518b",
+  "parent_tree": "9152f83026b9e5f4c8bbd785bf7356f2e7fe13bd",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-006-affine-completeness/run.py",
+        "--full",
+        "/mnt/data/acs-full-final.json",
+        "--check",
+        "experiments/X-AEM-006-affine-completeness/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.326,
+      "stdout": "{\"counts\": {\"core_control:control\": 4, \"entry:H\": 1023, \"entry:merge\": 3072, \"example:gate\": 8, \"example:incompatible_slopes\": 1, \"family:gate\": 380, \"family:incompatible_slopes\": 624, \"type:gate\": 1713}, \"max_type_length\": 261, \"rows\": 6825, \"rows_sha256\": \"7660208731d85943bd662ac2ede13e3a10b5a812b6b4a1434fc3cb360f0a6d8c\", \"schema\": \"ACS-1\", \"scope\": \"finite reconstruction only; no all-input convergence claim\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-006-affine-completeness/run.py",
+        "--full",
+        "/mnt/data/acs-full-optimized.json",
+        "--check",
+        "experiments/X-AEM-006-affine-completeness/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.625,
+      "stdout": "{\"counts\": {\"core_control:control\": 4, \"entry:H\": 1023, \"entry:merge\": 3072, \"example:gate\": 8, \"example:incompatible_slopes\": 1, \"family:gate\": 380, \"family:incompatible_slopes\": 624, \"type:gate\": 1713}, \"max_type_length\": 261, \"rows\": 6825, \"rows_sha256\": \"7660208731d85943bd662ac2ede13e3a10b5a812b6b4a1434fc3cb360f0a6d8c\", \"schema\": \"ACS-1\", \"scope\": \"finite reconstruction only; no all-input convergence claim\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-006-affine-completeness/verify.py",
+        "/mnt/data/acs-full-final.json",
+        "--summary",
+        "experiments/X-AEM-006-affine-completeness/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 6.039,
+      "stdout": "{\"counts\": {\"core_control:control\": 4, \"entry:H\": 1023, \"entry:merge\": 3072, \"example:gate\": 8, \"example:incompatible_slopes\": 1, \"family:gate\": 380, \"family:incompatible_slopes\": 624, \"type:gate\": 1713}, \"max_type_length\": 261, \"resealed_rejected\": 22, \"rows\": 6825, \"rows_sha256\": \"7660208731d85943bd662ac2ede13e3a10b5a812b6b4a1434fc3cb360f0a6d8c\", \"schema\": \"ACS-1\", \"scope\": \"finite reconstruction only; no all-input convergence claim\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-006-affine-completeness/verify.py",
+        "/mnt/data/acs-full-final.json",
+        "--summary",
+        "experiments/X-AEM-006-affine-completeness/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 5.724,
+      "stdout": "{\"counts\": {\"core_control:control\": 4, \"entry:H\": 1023, \"entry:merge\": 3072, \"example:gate\": 8, \"example:incompatible_slopes\": 1, \"family:gate\": 380, \"family:incompatible_slopes\": 624, \"type:gate\": 1713}, \"max_type_length\": 261, \"resealed_rejected\": 22, \"rows\": 6825, \"rows_sha256\": \"7660208731d85943bd662ac2ede13e3a10b5a812b6b4a1434fc3cb360f0a6d8c\", \"schema\": \"ACS-1\", \"scope\": \"finite reconstruction only; no all-input convergence claim\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "experiments/X-AEM-006-affine-completeness/verify.py",
+        "/mnt/data/acs-full-final.json",
+        "--summary",
+        "experiments/X-AEM-006-affine-completeness/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 5.707,
+      "stdout": "{\"counts\": {\"core_control:control\": 4, \"entry:H\": 1023, \"entry:merge\": 3072, \"example:gate\": 8, \"example:incompatible_slopes\": 1, \"family:gate\": 380, \"family:incompatible_slopes\": 624, \"type:gate\": 1713}, \"max_type_length\": 261, \"resealed_rejected\": 22, \"rows\": 6825, \"rows_sha256\": \"7660208731d85943bd662ac2ede13e3a10b5a812b6b4a1434fc3cb360f0a6d8c\", \"schema\": \"ACS-1\", \"scope\": \"finite reconstruction only; no all-input convergence claim\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-006-affine-completeness/contract_check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.661,
+      "stdout": "{\"extra_families_sha256\": \"068c962d2d4ae143c6cc26edf2b5185412e89997c15070b3f058064859a0a746\", \"extra_family_count\": 256, \"extra_family_seed\": 20260920, \"invalid_inputs_rejected\": 17, \"phase_neighborhood\": {\"ap\": [0, 8], \"base\": 48, \"cores\": [1, 1], \"endpoint\": [27, 11], \"forms\": [[1, 2], [1, 1]], \"modulus\": 128, \"status\": \"gate\", \"words\": [\"0101100\", \"1010001\"]}, \"status\": \"PASS\"}\n",
+      "stderr": ""
+    }
+  ],
+  "files": {
+    "experiments/X-AEM-006-affine-completeness/README.md": {
+      "bytes": 4426,
+      "sha256": "68552fbace177e712d1efb54b168833b504257eecebdd88154cc496174ef6c16",
+      "git_blob": "f5e23de3ba1ca45bddbf8913dc8e675bbfb7e1a2"
+    },
+    "experiments/X-AEM-006-affine-completeness/canonical.json": {
+      "bytes": 466,
+      "sha256": "557ebb4095c2122aa0f735144cc3442116d99d1dd4e4bad06320af3873f4888d",
+      "git_blob": "48cb36da224f276b623a55174ff7d9df5769ae6d"
+    },
+    "experiments/X-AEM-006-affine-completeness/contract_check.py": {
+      "bytes": 3025,
+      "sha256": "702e427c8ce49734239823e8a2644584fe43a66c389971a64eb99b9c4e008bb9",
+      "git_blob": "b6fc999266443c63107809150591d29fea36b5d7"
+    },
+    "experiments/X-AEM-006-affine-completeness/run.py": {
+      "bytes": 14142,
+      "sha256": "c2c938b594b50a321310dc959bbbe230a8901c7aa244f0237efcc7614356a068",
+      "git_blob": "fd18320b4ff1b0e572d85d9cac9bbb9305920aac"
+    },
+    "experiments/X-AEM-006-affine-completeness/verify.py": {
+      "bytes": 15495,
+      "sha256": "031608cc31c770cac4626483b9fe44b922d59803350293952fc4807d4b898283",
+      "git_blob": "f0922fb3019bbcf1fa8d232e26782d9102ca821d"
+    },
+    "research/astra-exit-merging/affine-completeness/PROOF.md": {
+      "bytes": 21834,
+      "sha256": "e12beb69e6bc55045d8d64e408970340f4222303178f51693b3deaaef1c31e40",
+      "git_blob": "5b6e729c219680081dc44f9048a418c5b535f7c9"
+    },
+    "research/astra-exit-merging/affine-completeness/README.md": {
+      "bytes": 5989,
+      "sha256": "5700f35e619e2fefaa898ce7f8ecafd04c128351d4ff229de289b91719cc039b",
+      "git_blob": "f24d4784bf9cae50075d24ac3b10d18fdd4c8884"
+    },
+    "research/astra-exit-merging/affine-completeness/SOURCES_AND_LIMITS.md": {
+      "bytes": 5663,
+      "sha256": "22f62f16a6758757659d7a0cd661f2b5067374946fca4dc24ef6cffc92c905a3",
+      "git_blob": "7858dd1fc09e6f075c71dba618585004d305ce5b"
+    }
+  },
+  "full_corpus_bytes_equal_across_generator_modes": true,
+  "full_corpus_sha256": "f223e50100ed1e2fd262cfa97ddb7e7122103d35662696ca37709a4b8af31ba0",
+  "direct_git": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/GettysburgResearch/collatz.git",
+      "HEAD"
+    ],
+    "exit_code": 128,
+    "stdout": "",
+    "stderr": "fatal: unable to access 'https://github.com/GettysburgResearch/collatz.git/': Could not resolve host: github.com\n"
+  },
+  "full_checkout_validator": false,
+  "remote_CI": false,
+  "lean": false,
+  "independent_mathematical_review": false,
+  "prepublication_hardening": [
+    "An AP mutation that still described a valid merger was accepted by the initial semantic checker. The finite experiment now validates the exact requested AP inventory as well as mathematical certificate validity; all final self-tests were rerun. This is not a false mathematical theorem.",
+    "Removed unused explanatory join-stage metadata from the payload; the retained complete words, AP, original sources and affine endpoint are the certificate.",
+    "The separate verifier reconstructs the #125 intermediate bridge endpoint and exact exit valuation from raw trajectories."
+  ],
+  "scope": "New ACS packet only. Parent publisher receipts do not extend to this head. Whole-progression checks support finite certificate outputs, not the universal proofs."
+}
