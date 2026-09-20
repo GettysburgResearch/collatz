@@ -1,0 +1,123 @@
+{
+  "added": 1595,
+  "counts": {
+    "BUDGET": 0,
+    "MERGE": 6677,
+    "OUTSIDE": 58859
+  },
+  "first_additions": [
+    {
+      "C": 66,
+      "endpoint": 11,
+      "length": 9,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 105,
+      "endpoint": 38,
+      "length": 11,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 157,
+      "endpoint": 11,
+      "length": 15,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 194,
+      "endpoint": 47,
+      "length": 10,
+      "tags": [
+        "balanced-direct"
+      ]
+    },
+    {
+      "C": 210,
+      "endpoint": 38,
+      "length": 12,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 249,
+      "endpoint": 38,
+      "length": 17,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 258,
+      "endpoint": 47,
+      "length": 12,
+      "tags": [
+        "balanced-direct"
+      ]
+    },
+    {
+      "C": 281,
+      "endpoint": 101,
+      "length": 11,
+      "tags": [
+        "balanced-direct"
+      ]
+    },
+    {
+      "C": 420,
+      "endpoint": 38,
+      "length": 13,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 499,
+      "endpoint": 119,
+      "length": 10,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 537,
+      "endpoint": 128,
+      "length": 11,
+      "tags": [
+        "balanced-long"
+      ]
+    },
+    {
+      "C": 562,
+      "endpoint": 101,
+      "length": 12,
+      "tags": [
+        "balanced-direct"
+      ]
+    }
+  ],
+  "kinds": {
+    "comparison": 65536,
+    "dense_gate": 513,
+    "gap": 12308,
+    "lift": 42,
+    "meeting_type": 6,
+    "neighborhood": 16,
+    "shadow": 426
+  },
+  "limit": 65536,
+  "merge_mod3_2": 2223,
+  "new_gap_gates_increment": 118,
+  "old_gap_compiler_only_same_selector": 6559,
+  "parent_mergers": 5082,
+  "rows_sha256": "13a016ac35da87771b03d047b3e2e9b95575e40c5c121a7f7b0c75055f94cf45",
+  "scope": "bounded procedure evidence, not coverage of every positive source; no independent review",
+  "status": "PROPOSED"
+}
