@@ -1,0 +1,38 @@
+{
+  "additional_samples": [
+    66,
+    105,
+    157,
+    194,
+    210,
+    249,
+    258,
+    281,
+    420,
+    439,
+    498,
+    499
+  ],
+  "complete_collatz_proof": false,
+  "counts": {
+    "comparison": 65536,
+    "comparison_EG": 99,
+    "comparison_NEW": 2091,
+    "comparison_OUTSIDE": 58980,
+    "comparison_VL": 4366,
+    "core": 438,
+    "family": 93,
+    "gate": 3707,
+    "linear": 227,
+    "linear_IMPOSSIBLE_UNIFORM": 113,
+    "linear_MERGE": 114,
+    "original": 32
+  },
+  "horizon": 12,
+  "limit": 65536,
+  "parallel": "edd48df6e9c678fa4a65b4ed8f41421dfc92518b",
+  "parent": "f5e7ec9a23fa691d71a5a9f518cbff5529a5ea00",
+  "rows_sha256": "f6e280c6b1253ef7e27069e0b4ca9b2e3c9db0d26b391069dc13efdbec3af61b",
+  "schema": "ufs-v1",
+  "status": "PROPOSED"
+}
