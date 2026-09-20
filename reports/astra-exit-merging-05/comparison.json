@@ -1,0 +1,18 @@
+{
+  "combined_mergers": 18197,
+  "comparison": {
+    "merge -> MERGE": 6477,
+    "merge -> NO_CERTIFICATE": 7716,
+    "outside_return -> MERGE": 4004,
+    "outside_return -> NO_CERTIFICATE": 6379
+  },
+  "new_grid_sha256": "c66c018a58dc3eb50415a8ce148a2646d2572ceae672a9be5cc56c168eb0e4e6",
+  "old_mergers": 14193,
+  "parent": "7e996feb24cc5d8579d75b39e0b909ffc03b3bcb",
+  "parent_generator_blob": "003ea93aed447cfcb7a52eafaa76e922ca9e3df6",
+  "parent_grid_sha256": "c17870059ed3ddc860c5d373fccde79d874f664a339db5ca1a8d0ec57ac9ca66",
+  "remaining": 6379,
+  "rows": 24576,
+  "scope": "Union with the pinned AES selector only, not comparison with all project mechanisms. No code replaces the parent selector.",
+  "strict_escape_families_checked": 112
+}

@@ -1,0 +1,78 @@
+{
+  "parent": "7e996feb24cc5d8579d75b39e0b909ffc03b3bcb",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/run.py",
+        "--check",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json",
+        "--full",
+        "C:\\Users\\gideo\\AppData\\Local\\Temp\\aua-publisher-20260920\\aua-full.json"
+      ],
+      "exit_code": 0,
+      "seconds": 10.88,
+      "stdout": "{\"families\": 420, \"grid\": {\"MERGE\": 10481, \"NO_CERTIFICATE\": 14095}, \"points\": 52, \"rules\": 12270, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/verify.py",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 13.14,
+      "stdout": "{\"bad_gap_inputs_rejected\": 4, \"direct_witnesses_rejected\": 5, \"resealed_rejected\": 24, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/verify.py",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 12.833,
+      "stdout": "{\"bad_gap_inputs_rejected\": 4, \"direct_witnesses_rejected\": 5, \"resealed_rejected\": 24, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/check_finite_completeness.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.137,
+      "stdout": "{\"cap\": 10, \"max_Z\": 4095, \"meetings\": 1326, \"pairs\": 16368, \"shifts\": [-3, 4], \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/compare_parent.py",
+        "--new-full",
+        "C:\\Users\\gideo\\AppData\\Local\\Temp\\aua-publisher-20260920\\aua-full.json",
+        "--write",
+        "C:\\Users\\gideo\\AppData\\Local\\Temp\\aua-publisher-20260920\\comparison.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.711,
+      "stdout": "{\"combined_mergers\": 18197, \"comparison\": {\"merge -> MERGE\": 6477, \"merge -> NO_CERTIFICATE\": 7716, \"outside_return -> MERGE\": 4004, \"outside_return -> NO_CERTIFICATE\": 6379}, \"new_grid_sha256\": \"c66c018a58dc3eb50415a8ce148a2646d2572ceae672a9be5cc56c168eb0e4e6\", \"old_mergers\": 14193, \"parent\": \"7e996feb24cc5d8579d75b39e0b909ffc03b3bcb\", \"parent_generator_blob\": \"003ea93aed447cfcb7a52eafaa76e922ca9e3df6\", \"parent_grid_sha256\": \"c17870059ed3ddc860c5d373fccde79d874f664a339db5ca1a8d0ec57ac9ca66\", \"remaining\": 6379, \"rows\": 24576, \"scope\": \"Union with the pinned AES selector only, not comparison with all project mechanisms. No code replaces the parent selector.\", \"strict_escape_families_checked\": 112}\n",
+      "stderr": ""
+    }
+  ]
+}
