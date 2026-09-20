@@ -1,0 +1,184 @@
+{
+  "schema": "collatz-checkout-validation/v1",
+  "started_utc": "2026-09-20T07:59:08.787311+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "win32",
+  "scope": "structure, frozen identities and selected bounded regressions; not a proof of Collatz",
+  "regressions": true,
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/check_integration_state.py"
+      ],
+      "exit_code": 0,
+      "stdout": "OK: durable front door and lifecycle practice; 8 integrated records (6 verified local proofs, 1 accepted refutation, 1 source-qualified periodic synthesis), 3 roadmap records, 13 reviewed research families, 314 curated local links, frozen 45/42 PR snapshot preserved.\n",
+      "stderr": "",
+      "seconds": 0.484
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/check_review_integration.py"
+      ],
+      "exit_code": 0,
+      "stdout": "OK: 4 qualified assemblies, 9 namespaces, 14 exact blob pins, 8 exact subtree pins, 374 local links, 2 optimized guards; no mathematical verification\n",
+      "stderr": "",
+      "seconds": 1.141
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/check_review_integration.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "SELF-TEST PASS: 8 invalid fixtures rejected; no repository scan or mathematical verification performed\n",
+      "stderr": "",
+      "seconds": 0.125
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/test_integrity_portability.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 10 real-Git mode/content/coverage controls; index-mode fixtures on Windows; no complete repository scan\n",
+      "stderr": "",
+      "seconds": 0.687
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/prepublic-2026-09-05/integration-d/check_followup.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS scoped D follow-up: 7 active files / 7 exact archived originals / 8 dispositions\n{\"overlap_band_cases\": 64, \"quotient_cases\": 81, \"scope\": \"finite edge cases only; not universal Collatz proof checking\", \"signed_residues\": 1584, \"strict_strip_counterexamples\": 2}\nInvalid scoped fixtures rejected: 8\n",
+      "stderr": "",
+      "seconds": 0.203
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/prepublic-2026-09-05/reviewer-d/targeted_checks.py",
+        "--check",
+        "reports/prepublic-2026-09-05/reviewer-d/checks.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS Reviewer D bounded audit: f68f0babd04b680fe9bbd47da82cc5e6014c38ba8b54400426e437db767f6174\nResealed corruptions rejected: 8\n{\"automata\": {\"ordinary_membership_checks\": 8188, \"rows\": [{\"cyclic_sizes\": [2], \"depth\": 0, \"forbidden_count\": 2, \"maximum\": 2, \"minimal_states\": 4, \"raw_states\": 5}, {\"cyclic_sizes\": [2], \"depth\": 1, \"forbidden_count\": 3, \"maximum\": 4, \"minimal_states\": 5, \"raw_states\": 6}, {\"cyclic_sizes\": [2], \"depth\": 2, \"forbidden_count\": 4, \"maximum\": 8, \"minimal_states\": 6, \"raw_states\": 7}, {\"cyclic_sizes\": [2], \"depth\": 3, \"forbidden_count\": 6, \"maximum\": 16, \"minimal_states\": 8, \"raw_states\": 9}, {\"cyclic_sizes\": [2], \"depth\": 4, \"forbidden_count\": 9, \"maximum\": 32, \"minimal_states\": 9, \"raw_states\": 11}, {\"cyclic_sizes\": [2], \"depth\": 5, \"forbidden_count\": 13, \"maximum\": 64, \"minimal_states\": 12, \"raw_states\": 14}, {\"cyclic_sizes\": [2], \"depth\": 6, \"forbidden_count\": 18, \"maximum\": 128, \"minimal_states\": 15, \"raw_states\": 17}, {\"cyclic_sizes\": [2], \"depth\": 7, \"forbidden_count\": 24, \"maximum\": 256, \"minimal_states\": 18, \"raw_states\": 20}, {\"cyclic_sizes\": [2], \"depth\": 8, \"forbidden_count\": 32, \"maximum\": 512, \"minimal_states\": 21, \"raw_states\": 24}, {\"cyclic_sizes\": [2], \"depth\": 9, \"forbidden_count\": 44, \"maximum\": 1024, \"minimal_states\": 30, \"raw_states\": 33}, {\"cyclic_sizes\": [2], \"depth\": 10, \"forbidden_count\": 62, \"maximum\": 2048, \"minimal_states\": 36, \"raw_states\": 39}]}, \"base\": \"cd1b3689e8d37fc4232945072e2faf6bd5ee47bd\", \"centered\": {\"completion_transcript\": \"09c3607ce8f1a1c9e7e24eb2f2d03f27c8187c5e9e9470bb0031987c47ec3106\", \"constant_word_completion\": 0, \"constant_word_factor_complexity\": 1, \"finite_ordinary_paths\": 512, \"nonconstant_real_endpoint_errors\": [[1, 81], [-1, 81]], \"periodic_words\": 510, \"repeated_factor_checks\": 11260, \"thue_morse_scales\": 13}, \"coefficient\": {\"box_comparisons\": 1664, \"depths\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], \"least_sources\": [1, 1, 3, 3, 7, 7, 7, 27, 27, 27, 27, 27, 27], \"positions\": 32768, \"sources\": 512}, \"divided_differences\": {\"analytic_input\": \"convergent Puiseux expansion and divided-difference mean-value theorem; not proved by finite tests\", \"polynomial_windows\": 200, \"square_root_sparse_domain_gaps\": [3, 5, 7, 9, 11, 13, 15, 17, 19, 21]}, \"extraction\": {\"initial_zero_digits\": 12, \"mixed_radix_edges\": 2010, \"negative_integer\": -4096, \"subsequent_checked_maximal_digits\": 28, \"transcript\": \"d39153b94519d1ac7b026f214a4ea44e235e1a752a0b41bdb391ba737fbfbbf7\"}, \"periodic\": {\"kinds\": {\"negative_integer\": 35, \"negative_nonintegral\": 1732, \"positive_integer\": 12, \"positive_nonintegral\": 6399, \"zero_integer\": 12}, \"ordinary_lifts\": 24570, \"periodic_steps\": 90114, \"preperiod_pairs\": 7938, \"transcript\": \"dbdaac9b1ef59273c06dffde50f393fc31718c052852454b8bf09751b329a4ca\", \"trivial_realizers\": [1, 2], \"words\": 8190}, \"six_branch\": {\"affine_automorphisms\": [[1, 0]], \"correct_high_quotient_increment\": 531441, \"empty_depth_positive_minimum\": 1, \"empty_word_canonical_residue\": 0, \"incorrect_printed_increment\": 278628139008, \"levels\": [[1, 6, 6472], [2, 36, 1908874353], [3, 216, 44906374791168], [4, 1296, 275202518480529950784]], \"ordered_pairs\": 36, \"physical_lifts\": 4662, \"proper_sublanguage_example\": {\"endpoint\": 273836965888, \"k\": 515272, \"next_k\": 522302, \"source\": 270151221248, \"type\": 0}, \"tile_transcript\": \"c0f77b6f4eb2bac40b42a6611c315ccdfcc949d2088a90455c21d7d86293d692\", \"words\": 1554}}\n",
+      "stderr": "",
+      "seconds": 1.016
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/prepublic-2026-09-05/reviewer-d/targeted_checks.py",
+        "--check",
+        "reports/prepublic-2026-09-05/reviewer-d/checks.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS Reviewer D bounded audit: f68f0babd04b680fe9bbd47da82cc5e6014c38ba8b54400426e437db767f6174\nResealed corruptions rejected: 8\n{\"automata\": {\"ordinary_membership_checks\": 8188, \"rows\": [{\"cyclic_sizes\": [2], \"depth\": 0, \"forbidden_count\": 2, \"maximum\": 2, \"minimal_states\": 4, \"raw_states\": 5}, {\"cyclic_sizes\": [2], \"depth\": 1, \"forbidden_count\": 3, \"maximum\": 4, \"minimal_states\": 5, \"raw_states\": 6}, {\"cyclic_sizes\": [2], \"depth\": 2, \"forbidden_count\": 4, \"maximum\": 8, \"minimal_states\": 6, \"raw_states\": 7}, {\"cyclic_sizes\": [2], \"depth\": 3, \"forbidden_count\": 6, \"maximum\": 16, \"minimal_states\": 8, \"raw_states\": 9}, {\"cyclic_sizes\": [2], \"depth\": 4, \"forbidden_count\": 9, \"maximum\": 32, \"minimal_states\": 9, \"raw_states\": 11}, {\"cyclic_sizes\": [2], \"depth\": 5, \"forbidden_count\": 13, \"maximum\": 64, \"minimal_states\": 12, \"raw_states\": 14}, {\"cyclic_sizes\": [2], \"depth\": 6, \"forbidden_count\": 18, \"maximum\": 128, \"minimal_states\": 15, \"raw_states\": 17}, {\"cyclic_sizes\": [2], \"depth\": 7, \"forbidden_count\": 24, \"maximum\": 256, \"minimal_states\": 18, \"raw_states\": 20}, {\"cyclic_sizes\": [2], \"depth\": 8, \"forbidden_count\": 32, \"maximum\": 512, \"minimal_states\": 21, \"raw_states\": 24}, {\"cyclic_sizes\": [2], \"depth\": 9, \"forbidden_count\": 44, \"maximum\": 1024, \"minimal_states\": 30, \"raw_states\": 33}, {\"cyclic_sizes\": [2], \"depth\": 10, \"forbidden_count\": 62, \"maximum\": 2048, \"minimal_states\": 36, \"raw_states\": 39}]}, \"base\": \"cd1b3689e8d37fc4232945072e2faf6bd5ee47bd\", \"centered\": {\"completion_transcript\": \"09c3607ce8f1a1c9e7e24eb2f2d03f27c8187c5e9e9470bb0031987c47ec3106\", \"constant_word_completion\": 0, \"constant_word_factor_complexity\": 1, \"finite_ordinary_paths\": 512, \"nonconstant_real_endpoint_errors\": [[1, 81], [-1, 81]], \"periodic_words\": 510, \"repeated_factor_checks\": 11260, \"thue_morse_scales\": 13}, \"coefficient\": {\"box_comparisons\": 1664, \"depths\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], \"least_sources\": [1, 1, 3, 3, 7, 7, 7, 27, 27, 27, 27, 27, 27], \"positions\": 32768, \"sources\": 512}, \"divided_differences\": {\"analytic_input\": \"convergent Puiseux expansion and divided-difference mean-value theorem; not proved by finite tests\", \"polynomial_windows\": 200, \"square_root_sparse_domain_gaps\": [3, 5, 7, 9, 11, 13, 15, 17, 19, 21]}, \"extraction\": {\"initial_zero_digits\": 12, \"mixed_radix_edges\": 2010, \"negative_integer\": -4096, \"subsequent_checked_maximal_digits\": 28, \"transcript\": \"d39153b94519d1ac7b026f214a4ea44e235e1a752a0b41bdb391ba737fbfbbf7\"}, \"periodic\": {\"kinds\": {\"negative_integer\": 35, \"negative_nonintegral\": 1732, \"positive_integer\": 12, \"positive_nonintegral\": 6399, \"zero_integer\": 12}, \"ordinary_lifts\": 24570, \"periodic_steps\": 90114, \"preperiod_pairs\": 7938, \"transcript\": \"dbdaac9b1ef59273c06dffde50f393fc31718c052852454b8bf09751b329a4ca\", \"trivial_realizers\": [1, 2], \"words\": 8190}, \"six_branch\": {\"affine_automorphisms\": [[1, 0]], \"correct_high_quotient_increment\": 531441, \"empty_depth_positive_minimum\": 1, \"empty_word_canonical_residue\": 0, \"incorrect_printed_increment\": 278628139008, \"levels\": [[1, 6, 6472], [2, 36, 1908874353], [3, 216, 44906374791168], [4, 1296, 275202518480529950784]], \"ordered_pairs\": 36, \"physical_lifts\": 4662, \"proper_sublanguage_example\": {\"endpoint\": 273836965888, \"k\": 515272, \"next_k\": 522302, \"source\": 270151221248, \"type\": 0}, \"tile_transcript\": \"c0f77b6f4eb2bac40b42a6611c315ccdfcc949d2088a90455c21d7d86293d692\", \"words\": 1554}}\n",
+      "stderr": "",
+      "seconds": 0.969
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/prepublic-2026-09-05/reviewer-d/final_checks.py",
+        "--check",
+        "reports/prepublic-2026-09-05/reviewer-d/final_checks.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS Reviewer D final regressions: e0563b820b0cd7c24c6ba159af5a944209bb101693fc4d4b8584144685991ddb\nResealed corruptions rejected: 8\n{\"codes\": 8820, \"endpoint_positions\": 8400, \"parameter_pairs\": 35, \"positions\": 53760, \"zero_positions\": 17220}\n",
+      "stderr": "",
+      "seconds": 0.859
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/prepublic-2026-09-05/reviewer-d/final_checks.py",
+        "--check",
+        "reports/prepublic-2026-09-05/reviewer-d/final_checks.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS Reviewer D final regressions: e0563b820b0cd7c24c6ba159af5a944209bb101693fc4d4b8584144685991ddb\nResealed corruptions rejected: 8\n{\"codes\": 8820, \"endpoint_positions\": 8400, \"parameter_pairs\": 35, \"positions\": 53760, \"zero_positions\": 17220}\n",
+      "stderr": "",
+      "seconds": 0.859
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "research/external/mazur-2026/check_fixed_height_forward.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "RESEALED TAMPERING REJECTED 4\nNONMUTATING FINITE REPLAY PASS d78c7b1e04c04aba446bff07899331cf4765eef2b85b9de9b428690fec7f3558\n",
+      "stderr": "",
+      "seconds": 0.891
+    },
+    {
+      "argv": [
+        "C:\\Users\\gideo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/external/mazur-2026/check_fixed_height_forward.py",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "RESEALED TAMPERING REJECTED 4\nNONMUTATING FINITE REPLAY PASS d78c7b1e04c04aba446bff07899331cf4765eef2b85b9de9b428690fec7f3558\n",
+      "stderr": "",
+      "seconds": 0.891
+    }
+  ],
+  "success": true,
+  "checkout": {
+    "commit": "0e9c98f7c2972966fe961b9548e274c153048e57",
+    "tree": "38551cc592f9378d56fb1b5a924d148af7731f5c",
+    "tracked_files": 373
+  },
+  "checkout_after": {
+    "commit": "0e9c98f7c2972966fe961b9548e274c153048e57",
+    "tree": "38551cc592f9378d56fb1b5a924d148af7731f5c",
+    "tracked_files": 373
+  },
+  "finished_utc": "2026-09-20T07:59:17.425936+00:00"
+}
