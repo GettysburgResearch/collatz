@@ -1,0 +1,12 @@
+{
+  "added": 716,
+  "counts": {
+    "baseline": {"BUDGET": 0, "MERGE": 4366, "OUTSIDE": 61170, "admitted": 8191, "merge_mod3_2": 1464},
+    "extended": {"BUDGET": 0, "MERGE": 5082, "OUTSIDE": 60454, "admitted": 9440, "merge_mod3_2": 1704}
+  },
+  "limit": 65536,
+  "rows_sha256": "a45838ee24f9c05ddd81a27b8a749f7c1055ec4512a4542b8fa51d203f1c8d04",
+  "scope": "exact bounded certificate-language replay; not global convergence or independent review",
+  "status": "PROPOSED",
+  "tests": {"R_rows": 65535, "additional_ladder_examples": 2, "deep_A": 192, "deep_B": 40, "ladder_cases": 13600, "lifted_no_descent": 40, "strict_examples": 1, "symbolic_cylinders": 2}
+}
