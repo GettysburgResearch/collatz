@@ -1,0 +1,171 @@
+{
+  "authoring_date": "2026-09-20",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/run.py",
+        "--check",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 8.195,
+      "stderr": "",
+      "stdout": "{\"families\": 420, \"grid\": {\"MERGE\": 10481, \"NO_CERTIFICATE\": 14095}, \"points\": 52, \"rules\": 12270, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/run.py",
+        "--check",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 8.043,
+      "stderr": "",
+      "stdout": "{\"families\": 420, \"grid\": {\"MERGE\": 10481, \"NO_CERTIFICATE\": 14095}, \"points\": 52, \"rules\": 12270, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/verify.py",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 10.044,
+      "stderr": "",
+      "stdout": "{\"bad_gap_inputs_rejected\": 4, \"direct_witnesses_rejected\": 5, \"resealed_rejected\": 24, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/verify.py",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 9.436,
+      "stderr": "",
+      "stdout": "{\"bad_gap_inputs_rejected\": 4, \"direct_witnesses_rejected\": 5, \"resealed_rejected\": 24, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/verify.py",
+        "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 9.106,
+      "stderr": "",
+      "stdout": "{\"bad_gap_inputs_rejected\": 4, \"direct_witnesses_rejected\": 5, \"resealed_rejected\": 24, \"sha256\": \"ecc307df24e9e7efe2a745cd9a1fa36cc7fa6ebc897b3a7ce4dc6ff4db6d2183\", \"status\": \"PASS\"}"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-005-universal-shadow-atlas/check_finite_completeness.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.07,
+      "stderr": "",
+      "stdout": "{\"cap\": 10, \"max_Z\": 4095, \"meetings\": 1326, \"pairs\": 16368, \"shifts\": [-3, 4], \"status\": \"PASS\"}"
+    }
+  ],
+  "files": {
+    "experiments/X-AEM-005-universal-shadow-atlas/README.md": {
+      "bytes": 3035,
+      "git_blob": "22602943c22c6d2bf6bfc9995b2ca84fb944c60d",
+      "sha256": "27d0b66dad295f404e0ac217d319cce0b5073c0dc98705e050f66305b13235b6"
+    },
+    "experiments/X-AEM-005-universal-shadow-atlas/check_finite_completeness.py": {
+      "bytes": 1409,
+      "git_blob": "366a691b7fc04e6423ba1cf279887b204e908af2",
+      "sha256": "f542a1fee6e9529e88cdef3b6960ea60436b12b5a5455338db0893a3a549d7f3"
+    },
+    "experiments/X-AEM-005-universal-shadow-atlas/compare_parent.py": {
+      "bytes": 2688,
+      "git_blob": "54f47f2313c8888381ad6bb32c4eb47625370601",
+      "sha256": "b81a4e35f717f7cf8f2d27092365a4a69edda6526829d13f79c05e8bbb67271b"
+    },
+    "experiments/X-AEM-005-universal-shadow-atlas/kernel.py": {
+      "bytes": 7999,
+      "git_blob": "75678a4946cfbf1fc35e3da1b5fc5aa643cb8b76",
+      "sha256": "12681b75cf0f65c670e8048be8e04e22ce8b49521623c564a0bae2605619fa0f"
+    },
+    "experiments/X-AEM-005-universal-shadow-atlas/results/canonical.json": {
+      "bytes": 11341,
+      "git_blob": "ad2274ae84e6be500c69d84703f08ebe5cf0fcdd",
+      "sha256": "1194bfc25118942b6fdccb6aa1a5b4f3b985101e54da963ec130dbdcbb16d2a3"
+    },
+    "experiments/X-AEM-005-universal-shadow-atlas/run.py": {
+      "bytes": 5853,
+      "git_blob": "7676571edf6de7a590784070e7bc76d0f86ffc38",
+      "sha256": "e8ca83f5de929920d2e7d95413325573f2a702e49de587fcf8db69f9baed7130"
+    },
+    "experiments/X-AEM-005-universal-shadow-atlas/verify.py": {
+      "bytes": 13942,
+      "git_blob": "5d8a7ef58667f5bc18279b2b5e3d3f428b3bfd87",
+      "sha256": "df381f378531fc336628239e936eeffd73e6b14a383b0e21699b2f4dcea93f92"
+    },
+    "reports/astra-exit-merging-05/PR_BODY.md": {
+      "bytes": 3991,
+      "git_blob": "6eebeacabb9624b3e6440684257855536e5e2802",
+      "sha256": "0ef4c807161562fcc053358a273b41acc8149ed2db7840f354207da2dc067493"
+    },
+    "reports/astra-exit-merging-05/PUBLISH.md": {
+      "bytes": 2657,
+      "git_blob": "846f142f19b0a202b6128f3cabc87e8c745480f0",
+      "sha256": "5b4107a349f323d72dd7d0daa06a2fb28ab38f089af96c459753b9acdc39f327"
+    },
+    "reports/astra-exit-merging-05/comparison.json": {
+      "bytes": 750,
+      "git_blob": "505055bb9c1c49e201ca57a0f32a2b3a841b6205",
+      "sha256": "3682c710ab9daac6342d0c5dfdfdc157f1ed6f84bd4d161e73cff6c85511e22a"
+    },
+    "research/astra-exit-merging/universal-shadow-atlas/PROOF.md": {
+      "bytes": 19827,
+      "git_blob": "f496202ee23faba0e61b6cafff8c068f20d2ba38",
+      "sha256": "a98cc3ecfae7f284e79917282c51f27f2221712ce9854bcef87f4ac4751320ba"
+    },
+    "research/astra-exit-merging/universal-shadow-atlas/README.md": {
+      "bytes": 3974,
+      "git_blob": "13bbd6fd8642febdf068d86dcde53850fe0507f4",
+      "sha256": "fe55cc0c68cedbb272074c749c1b40ee9e156ba1c9411cac55325b3b8e71b79d"
+    },
+    "research/astra-exit-merging/universal-shadow-atlas/SOURCES_AND_LIMITS.md": {
+      "bytes": 3848,
+      "git_blob": "8ed6323f6a17b9c6019533682c7de3be215e2cfc",
+      "sha256": "4abe80214437e124a6b17d9137ae9e6d2e46ea837abbdf2511c4b3d93f96bfed"
+    }
+  },
+  "full_checkout_validator": false,
+  "independent_mathematical_review": false,
+  "interrupted_attempts": [
+    {
+      "description": "A combined six-command validation call exceeded the 45-second tool limit after the first three recorded successful commands. No result from the interrupted remainder is credited; separate reruns follow."
+    }
+  ],
+  "lean": false,
+  "parent": "7e996feb24cc5d8579d75b39e0b909ffc03b3bcb",
+  "publication": "NOT_PUBLISHED: connector exposes reads, no create/push action; direct Git failed DNS",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "remote_CI": false,
+  "scope": "All new AUA statements proposed; exact packet replay is not full-checkout validation.",
+  "status": "PASS"
+}
