@@ -1,0 +1,31 @@
+{
+  "H_counts": {
+    "isolated": 25865,
+    "phase": 26524,
+    "uniform": 13147
+  },
+  "H_grid": 65536,
+  "H_ternary_counts": {
+    "isolated": 8651,
+    "phase": 8837,
+    "uniform": 4357
+  },
+  "drift_observations": 31248,
+  "drift_sources": 1024,
+  "escape_examples": 10,
+  "families": 479,
+  "family_counts": {
+    "incompatible_slope_cores": 64,
+    "isolated_at_forced_clocks": 167,
+    "phase_blocked_at_forced_clocks": 237,
+    "uniform_at_point": 11
+  },
+  "root_counts": {
+    "infinite_family": 1130,
+    "no_hit_before_coefficient_crossing": 2965
+  },
+  "root_mine": 4095,
+  "schema": "PSS-1",
+  "scope": "finite exact corpus, not universal convergence or independent review",
+  "sha256": "ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb"
+}
