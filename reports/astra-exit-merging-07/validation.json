@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "date": "2026-09-21",
+  "parent_commit": "7687eec1ac364009d644cb8d015f1fe3b28730cc",
+  "parent_tree": "50e69780a9c5146e96d9dea4c1836dd4e918e228",
+  "main_observed": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-pointwise-signatures/run.py",
+        "--full",
+        "/mnt/data/pss-final.json",
+        "--check",
+        "experiments/X-AEM-007-pointwise-signatures/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.906,
+      "stdout": "{\"H_counts\": {\"isolated\": 25865, \"phase\": 26524, \"uniform\": 13147}, \"H_grid\": 65536, \"H_ternary_counts\": {\"isolated\": 8651, \"phase\": 8837, \"uniform\": 4357}, \"drift_observations\": 31248, \"drift_sources\": 1024, \"escape_examples\": 10, \"families\": 479, \"family_counts\": {\"incompatible_slope_cores\": 64, \"isolated_at_forced_clocks\": 167, \"phase_blocked_at_forced_clocks\": 237, \"uniform_at_point\": 11}, \"root_counts\": {\"infinite_family\": 1130, \"no_hit_before_coefficient_crossing\": 2965}, \"root_mine\": 4095, \"schema\": \"PSS-1\", \"scope\": \"finite exact corpus, not universal convergence or independent review\", \"sha256\": \"ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-pointwise-signatures/run.py",
+        "--full",
+        "/mnt/data/pss-optimized.json",
+        "--check",
+        "experiments/X-AEM-007-pointwise-signatures/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.969,
+      "stdout": "{\"H_counts\": {\"isolated\": 25865, \"phase\": 26524, \"uniform\": 13147}, \"H_grid\": 65536, \"H_ternary_counts\": {\"isolated\": 8651, \"phase\": 8837, \"uniform\": 4357}, \"drift_observations\": 31248, \"drift_sources\": 1024, \"escape_examples\": 10, \"families\": 479, \"family_counts\": {\"incompatible_slope_cores\": 64, \"isolated_at_forced_clocks\": 167, \"phase_blocked_at_forced_clocks\": 237, \"uniform_at_point\": 11}, \"root_counts\": {\"infinite_family\": 1130, \"no_hit_before_coefficient_crossing\": 2965}, \"root_mine\": 4095, \"schema\": \"PSS-1\", \"scope\": \"finite exact corpus, not universal convergence or independent review\", \"sha256\": \"ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-pointwise-signatures/verify.py",
+        "/mnt/data/pss-final.json",
+        "--summary",
+        "experiments/X-AEM-007-pointwise-signatures/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.314,
+      "stdout": "{\"H_counts\": {\"isolated\": 25865, \"phase\": 26524, \"uniform\": 13147}, \"H_grid\": 65536, \"H_ternary_counts\": {\"isolated\": 8651, \"phase\": 8837, \"uniform\": 4357}, \"drift_observations\": 31248, \"drift_sources\": 1024, \"escape_examples\": 10, \"families\": 479, \"family_counts\": {\"incompatible_slope_cores\": 64, \"isolated_at_forced_clocks\": 167, \"phase_blocked_at_forced_clocks\": 237, \"uniform_at_point\": 11}, \"root_counts\": {\"infinite_family\": 1130, \"no_hit_before_coefficient_crossing\": 2965}, \"root_mine\": 4095, \"schema\": \"PSS-1\", \"scope\": \"finite exact corpus, not universal convergence or independent review\", \"semantic_controls_rejected\": 23, \"sha256\": \"ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-pointwise-signatures/verify.py",
+        "/mnt/data/pss-final.json",
+        "--summary",
+        "experiments/X-AEM-007-pointwise-signatures/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.308,
+      "stdout": "{\"H_counts\": {\"isolated\": 25865, \"phase\": 26524, \"uniform\": 13147}, \"H_grid\": 65536, \"H_ternary_counts\": {\"isolated\": 8651, \"phase\": 8837, \"uniform\": 4357}, \"drift_observations\": 31248, \"drift_sources\": 1024, \"escape_examples\": 10, \"families\": 479, \"family_counts\": {\"incompatible_slope_cores\": 64, \"isolated_at_forced_clocks\": 167, \"phase_blocked_at_forced_clocks\": 237, \"uniform_at_point\": 11}, \"root_counts\": {\"infinite_family\": 1130, \"no_hit_before_coefficient_crossing\": 2965}, \"root_mine\": 4095, \"schema\": \"PSS-1\", \"scope\": \"finite exact corpus, not universal convergence or independent review\", \"semantic_controls_rejected\": 23, \"sha256\": \"ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-pointwise-signatures/verify.py",
+        "/mnt/data/pss-final.json",
+        "--summary",
+        "experiments/X-AEM-007-pointwise-signatures/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.34,
+      "stdout": "{\"H_counts\": {\"isolated\": 25865, \"phase\": 26524, \"uniform\": 13147}, \"H_grid\": 65536, \"H_ternary_counts\": {\"isolated\": 8651, \"phase\": 8837, \"uniform\": 4357}, \"drift_observations\": 31248, \"drift_sources\": 1024, \"escape_examples\": 10, \"families\": 479, \"family_counts\": {\"incompatible_slope_cores\": 64, \"isolated_at_forced_clocks\": 167, \"phase_blocked_at_forced_clocks\": 237, \"uniform_at_point\": 11}, \"root_counts\": {\"infinite_family\": 1130, \"no_hit_before_coefficient_crossing\": 2965}, \"root_mine\": 4095, \"schema\": \"PSS-1\", \"scope\": \"finite exact corpus, not universal convergence or independent review\", \"semantic_controls_rejected\": 23, \"sha256\": \"ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb\", \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "kind": "fresh_addition_patch_content_replay",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-pointwise-signatures/verify.py",
+        "/mnt/data/pss-final.json",
+        "--summary",
+        "experiments/X-AEM-007-pointwise-signatures/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.285,
+      "stdout": "{\"H_counts\": {\"isolated\": 25865, \"phase\": 26524, \"uniform\": 13147}, \"H_grid\": 65536, \"H_ternary_counts\": {\"isolated\": 8651, \"phase\": 8837, \"uniform\": 4357}, \"drift_observations\": 31248, \"drift_sources\": 1024, \"escape_examples\": 10, \"families\": 479, \"family_counts\": {\"incompatible_slope_cores\": 64, \"isolated_at_forced_clocks\": 167, \"phase_blocked_at_forced_clocks\": 237, \"uniform_at_point\": 11}, \"root_counts\": {\"infinite_family\": 1130, \"no_hit_before_coefficient_crossing\": 2965}, \"root_mine\": 4095, \"schema\": \"PSS-1\", \"scope\": \"finite exact corpus, not universal convergence or independent review\", \"semantic_controls_rejected\": 23, \"sha256\": \"ae729b6c0bf5031f0f97b71abc64b24dec7be48b826a4abd7a96f393f906b6fb\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "files_byte_equal": 7,
+      "scope": "seven research/experiment files; this receipt added after the content replay"
+    }
+  ],
+  "files": {
+    "experiments/X-AEM-007-pointwise-signatures/README.md": {
+      "bytes": 2545,
+      "sha256": "f38cd7d339c4a310609ddd8535d7e3869c1d25d13972e93aa25219c52e2e0bd5",
+      "git_blob": "0cfd0686d5ae3acfecd6de97c81fcb5aa194a290"
+    },
+    "experiments/X-AEM-007-pointwise-signatures/canonical.json": {
+      "bytes": 772,
+      "sha256": "b1c12ec4cba65eb46ca953dc5a064bbf1d7f7551698659bd08078747d37e7cd5",
+      "git_blob": "6f7cc19dbb958f6c4f3242ee9123b50cb9810d28"
+    },
+    "experiments/X-AEM-007-pointwise-signatures/run.py": {
+      "bytes": 8826,
+      "sha256": "6e9178a4f47ada2dba553b2a1c3053103f05ae50233808fcd09056a0611d1cb6",
+      "git_blob": "2d61bb424c447ea9e390514d6b5d514ad37b0484"
+    },
+    "experiments/X-AEM-007-pointwise-signatures/verify.py": {
+      "bytes": 11958,
+      "sha256": "a2456186f05fa8c61da653dc23a034ed2d41ce54ed86fce681a83ea42df1c10f",
+      "git_blob": "6dad315b4956990dd774fa5f353244d25fd37e74"
+    },
+    "research/astra-exit-merging/pointwise-signatures/PROOF.md": {
+      "bytes": 18809,
+      "sha256": "734b0e022495b4d688131f7c4946b10c455f0161197015ca4bd5bfafbdddb002",
+      "git_blob": "04ee74525f5b0982dfda47b04edc82669d65c3d9"
+    },
+    "research/astra-exit-merging/pointwise-signatures/README.md": {
+      "bytes": 3280,
+      "sha256": "572ffca3a916c6d1701900680726180c3a4282163a8fcc42f183fa7ca9a52208",
+      "git_blob": "89b52f1c61939a8f8dfe6fff725e63034dce1b07"
+    },
+    "research/astra-exit-merging/pointwise-signatures/SOURCES_AND_LIMITS.md": {
+      "bytes": 4396,
+      "sha256": "5f75f3c1a58255d6fdb496f80eb3684502d4ef5183a626f0e451aed7970c1c4e",
+      "git_blob": "f9a93236eaa3701d9513925da0780220de027d3e"
+    }
+  },
+  "full_corpus_bytes_equal_across_generator_modes": true,
+  "full_corpus_file_sha256": "2a22f93ae7fa616d964cf993753e1f942c87b0ac0eebd617d94d1bb9d5177b08",
+  "direct_git": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/GettysburgResearch/collatz.git",
+      "HEAD"
+    ],
+    "exit_code": 128,
+    "stdout": "",
+    "stderr": "fatal: unable to access 'https://github.com/GettysburgResearch/collatz.git/': Could not resolve host: github.com\n"
+  },
+  "root_mine_negative_and_optimality_research_independent": false,
+  "H_grid_labels_independently_classified": true,
+  "semantic_controls_not_resealed_full_corpora": true,
+  "full_checkout_validator": false,
+  "remote_CI": false,
+  "lean": false,
+  "independent_mathematical_review": false,
+  "scope": "PSS continuation only; source convergence supplied by finite literal checks; pointwise criterion not an oracle; no complete Collatz proof; parent status and file bytes unchanged."
+}
