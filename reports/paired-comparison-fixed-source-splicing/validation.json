@@ -1,0 +1,112 @@
+{
+  "byte_comparisons": "Normal/-O full corpus and summary identical; normal/-O/-OO verifier stdout identical.",
+  "canonical": {
+    "baseline_sha256": "1779b90595779a44067c7b68c6283340d67ed1b474791dd7df329d1cd63d0a44",
+    "counts": {
+      "added_BAND": 899,
+      "added_RESTART": 1345,
+      "added_SECOND_VALUATION": 442,
+      "added_VALUATION": 2135,
+      "added_strict": 1648,
+      "baseline_MERGE": 58157,
+      "baseline_OUTSIDE": 7378,
+      "final_MERGE": 62978,
+      "final_OUTSIDE": 2557,
+      "kind_RESTART_FAMILY": 160,
+      "kind_SHORT_RUN": 260,
+      "kind_SOURCE": 65535,
+      "kind_TEMPLATE": 81,
+      "kind_UNBOUNDED": 76,
+      "outside_DESCENT_OR_RETURN": 2498,
+      "outside_HORIZON": 59,
+      "rows": 66112
+    },
+    "parent_blob": "0fb8e0a5da81c4c9138e39152e4389587291a0c2",
+    "scan_horizon": 64,
+    "schema": 1,
+    "sha256": "f881b0eaeb01d4eda757c2032eee44d927ce31d7b88b77499a30ebe85782131f",
+    "source_range": [
+      2,
+      65536
+    ]
+  },
+  "executed_utc": "2026-09-21T19:41:42.493036+00:00",
+  "generator_arguments": "--parent <hash-pinned PR130 run.py> --full <output> --summary <output>",
+  "generator_modes": [
+    "python -B -S run.py",
+    "python -O -B -S run.py"
+  ],
+  "not_run": [
+    "Full-checkout tools/validate.py or repository regression bundle",
+    "Remote CI",
+    "Lean or other external formalization",
+    "Independent mathematical peer review",
+    "Windows/browser testing",
+    "Comprehensive external priority audit"
+  ],
+  "parent_files_readback_matched": {
+    "experiments/paired-comparison/universal-finite-synchronization/canonical.json": "fbda690b56d42c8253aa36497d486e6a08b79715",
+    "experiments/paired-comparison/universal-finite-synchronization/run.py": "0fb8e0a5da81c4c9138e39152e4389587291a0c2",
+    "experiments/paired-comparison/universal-finite-synchronization/verify.py": "f2e5111c2b1f5f3c65fd3dab4b7966458a2d09c5",
+    "reports/paired-comparison-universal-finite-synchronization/validation.json": "f1196db01b1ac09813b2dc60b9623a2ddd9dd675",
+    "research/paired-comparison/universal-finite-synchronization/PROOF.md": "d677ac35d38a646fda72b68c211d21f60869b75a",
+    "research/paired-comparison/universal-finite-synchronization/README.md": "c51a7919c1b58b71d6c14bc72ce88fe064f9c9de"
+  },
+  "parent_head": "53cf9b53bd568b1ab67601b00e789b464198e42b",
+  "parent_pr": 130,
+  "parent_tree": "895792dbe4a467309384c23820e3f850b7bed6cd",
+  "previous_publication": "Live PR130 draft head and all six live file blob IDs match mounted prior packet; no redundant push needed.",
+  "publication_scope": "Six additive files on child branch of PR130. No main merge, parent overwrite, status promotion, workflow, license or settings changes.",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "remaining_gap": "No proof of universal actual-source entry into an original-root-safe splice or restart. Odd C, even-valued v2(C), order failures and subsequent escapes remain.",
+  "scope": [
+    "Every N=2..65536 with old successes unchanged and all new selector decisions including outside labels reconstructed.",
+    "577 complete positive affine families checked by full numerators/denominators and every prefix; not only sampled parameter members.",
+    "Parent OUTSIDE decisions authenticated with frozen-generator baseline hash, not independently reclassified.",
+    "21 direct row/type/JSON corruptions rejected, not separately resealed full-corpus mutations.",
+    "33,150 exact band endpoint checks and two countercontrols; no assert-based guards."
+  ],
+  "source_files": {
+    "experiments/paired-comparison/fixed-source-splicing/canonical.json": {
+      "bytes": 803,
+      "git_blob": "8ff2e35e9184ff68232adfe9db3e4f9f0854e13a",
+      "sha256": "040a448095024b3f4aea75c15e28f09fe68ca3e27ca4290611fa92c7af54ccd9"
+    },
+    "experiments/paired-comparison/fixed-source-splicing/run.py": {
+      "bytes": 8156,
+      "git_blob": "56e634f6402c544cce06b6472fb4e03af73e2e4d",
+      "sha256": "4c8c53433174761e4c4e9bcc7eb3d50a88bb1df65e4ddcb760e56cee0405d36b"
+    },
+    "experiments/paired-comparison/fixed-source-splicing/verify.py": {
+      "bytes": 12979,
+      "git_blob": "5abc3dcc6395f029648f05663d92302218c5b211",
+      "sha256": "3a13adbf0f669cff7c7149692ec20185f60adace2f53838e32f64ecc40cfcdd4"
+    },
+    "research/paired-comparison/fixed-source-splicing/PROOF.md": {
+      "bytes": 15362,
+      "git_blob": "49b152799bc25ae17280db85939c02bded24eddb",
+      "sha256": "2936cc415e8f48362a87a7d2910db4696a039340bfc4373c7d4ac954e2564254"
+    },
+    "research/paired-comparison/fixed-source-splicing/README.md": {
+      "bytes": 2619,
+      "git_blob": "8920b7f8a06839d2a32566bd9379359af7deef36",
+      "sha256": "30721282b30b30829148bedad9054c1c93a91ecd31abd96017f855dcf45212f7"
+    }
+  },
+  "status": "PASS for declared local scope; PROPOSED mathematics",
+  "verifier": {
+    "additional_countercontrols": 2,
+    "annulus_pairs": 33150,
+    "parent_outside_scope": "authenticated, not independently reclassified",
+    "rejected_controls": 21,
+    "rows": 66112,
+    "sha256": "f881b0eaeb01d4eda757c2032eee44d927ce31d7b88b77499a30ebe85782131f",
+    "status": "PASS"
+  },
+  "verifier_arguments": "<full.jsonl> --summary canonical.json --self-test",
+  "verifier_modes": [
+    "python -B -S verify.py",
+    "python -O -B -S verify.py",
+    "python -OO -B -S verify.py"
+  ]
+}
