@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "cap": 9,
+    "gate": 74,
+    "log": 254,
+    "query": 130048,
+    "selected": 16380,
+    "ternary": 183,
+    "transplant": 1541
+  },
+  "rows": 148489,
+  "schema": "EPT-1",
+  "selected": {
+    "0": {
+      "MERGER": 3791,
+      "OUTSIDE": 304
+    },
+    "1": {
+      "MERGER": 3908,
+      "OUTSIDE": 187,
+      "no_forward_descent": 751,
+      "no_forward_descent_divisible_by_3": 23
+    },
+    "2": {
+      "MERGER": 3959,
+      "OUTSIDE": 136,
+      "no_forward_descent": 985,
+      "no_forward_descent_divisible_by_3": 47
+    },
+    "3": {
+      "MERGER": 3964,
+      "OUTSIDE": 131,
+      "no_forward_descent": 1019,
+      "no_forward_descent_divisible_by_3": 53
+    }
+  },
+  "sha256": "b11f41d54f7df158637f176039f602afd8d800db704afcc707cab1375fec8b74"
+}
