@@ -1,0 +1,30 @@
+{
+  "baseline_sha256": "1779b90595779a44067c7b68c6283340d67ed1b474791dd7df329d1cd63d0a44",
+  "counts": {
+    "added_BAND": 899,
+    "added_RESTART": 1345,
+    "added_SECOND_VALUATION": 442,
+    "added_VALUATION": 2135,
+    "added_strict": 1648,
+    "baseline_MERGE": 58157,
+    "baseline_OUTSIDE": 7378,
+    "final_MERGE": 62978,
+    "final_OUTSIDE": 2557,
+    "kind_RESTART_FAMILY": 160,
+    "kind_SHORT_RUN": 260,
+    "kind_SOURCE": 65535,
+    "kind_TEMPLATE": 81,
+    "kind_UNBOUNDED": 76,
+    "outside_DESCENT_OR_RETURN": 2498,
+    "outside_HORIZON": 59,
+    "rows": 66112
+  },
+  "parent_blob": "0fb8e0a5da81c4c9138e39152e4389587291a0c2",
+  "scan_horizon": 64,
+  "schema": 1,
+  "sha256": "f881b0eaeb01d4eda757c2032eee44d927ce31d7b88b77499a30ebe85782131f",
+  "source_range": [
+    2,
+    65536
+  ]
+}
