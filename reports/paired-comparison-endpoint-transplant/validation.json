@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "control_scope": "20 direct semantic row mutations and three duplicate-key/boolean/float JSON controls per verifier mode, not resealed full-corpus mutations.",
+    "examples_normal_and_OO_S": "PASS: three whole original-source cylinders; four literal predecessors of 41",
+    "full_and_summary_byte_equality": "PASS",
+    "generator_normal": "PASS",
+    "generator_python_O": "PASS",
+    "negative_outcome_scope": "All 130048 small queries and all 16380 selector rows: exhaustive forward enumeration of ALL original roots below cap, through three odd blocks; earliest endpoint selection checked.",
+    "verifier_normal_S": "PASS: 148489 rows; 23 controls rejected",
+    "verifier_python_OO_S": "PASS: 148489 rows; 23 controls rejected"
+  },
+  "counts": {
+    "cap": 9,
+    "gate": 74,
+    "log": 254,
+    "query": 130048,
+    "selected": 16380,
+    "ternary": 183,
+    "transplant": 1541
+  },
+  "date": "2026-09-21",
+  "full_rows_sha256": "b11f41d54f7df158637f176039f602afd8d800db704afcc707cab1375fec8b74",
+  "interruption": "A prepublication combined generator-plus-verifier command exceeded the 45-second execution limit. Final-byte verifier commands were subsequently run individually and passed.",
+  "main_read": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "not_run": [
+    "complete-checkout tools/validate.py",
+    "remote CI",
+    "Lean build",
+    "independent mathematical review",
+    "comprehensive external-priority audit"
+  ],
+  "parallel_proof_read": "#132 @ 7687eec1ac364009d644cb8d015f1fe3b28730cc",
+  "parent": "e092da549c8c50e8a9430f88fb721ea51fe34d91",
+  "prior_chat_confirmed_in": "#129 @ 9d362511343c97790d42808c363b090a3342b45f",
+  "publication_transport": "Direct git ls-remote failed DNS. Publish additive files by Git data API and verify remote source blob identities. No main merge, status promotion, workflow, settings or licensing change.",
+  "replay": [
+    "python -S -B experiments/paired-comparison/endpoint-transplant/run.py --full /tmp/ept.jsonl --summary /tmp/ept.json",
+    "python -S -B experiments/paired-comparison/endpoint-transplant/verify.py /tmp/ept.jsonl --summary /tmp/ept.json --self-test",
+    "python -OO -S -B experiments/paired-comparison/endpoint-transplant/verify.py /tmp/ept.jsonl --summary /tmp/ept.json --self-test",
+    "python -S -B experiments/paired-comparison/endpoint-transplant/examples.py"
+  ],
+  "row_count": 148489,
+  "source_git_blob_sha1": {
+    "PROOF.md": "2229d9f73057ec50568d694087a7323ae8ac6dfb",
+    "canonical.json": "7df2e2f462f0994b69f103c4aaa79d98a0be9c5e",
+    "examples.py": "106968b1eb0e6a5eb726210cc1163a168ff7afb5",
+    "run.py": "a890d4c0cbbc486532de951c3954256455cb6837",
+    "verify.py": "6a6d750746a9b3cd81d82c72dc5e5ba8911ac43f"
+  },
+  "status": "PROPOSED pending independent mathematical review"
+}
