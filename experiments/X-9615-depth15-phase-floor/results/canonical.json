@@ -1,0 +1,29 @@
+{
+  "experiment_id": "X-9615",
+  "status": "EXACT FINITE CERTIFICATE",
+  "depth": 15,
+  "word_count_each_side": 32768,
+  "phase_pair_count": 1073741824,
+  "minimum_boundary": "874917472129210216448",
+  "minimum_multiplicity": 1,
+  "past_suffix": "BAAABBBBBBABAAA",
+  "past_output_residue": 195256963146815,
+  "past_output_modulus": 205891132094649,
+  "future_prefix": "BBBAABAABABAAAA",
+  "future_source_residue": 920720130273280,
+  "future_source_modulus": 2251799813685248,
+  "aggregate_sum_u64": 694153015195832603,
+  "aggregate_xor_u64": 7571253252837843397,
+  "parameter_a_start": 244,
+  "parameter_a_end": 375,
+  "parameter_rows": 132,
+  "parameter_endpoint_rows": 28,
+  "parameter_digest": "d41faff63b5db9fef5ac8a4e826b6b1bd07092abbd2ba3966c6f88ac3d3ce3bc",
+  "parameter_endpoint_digest": "11f4aa4c2c893a95450f167b2189bbf24725110de9b3217aff68b6076f8e102e",
+  "first_failure_a": 376,
+  "first_failure_least_contracting_b": 77,
+  "interpretation": {
+    "proved": "the exact depth-15 boundary floor and the fixed-weight parameter inequality through a=375",
+    "not_proved": "cycle exclusion for a>=376 or an ordinary divergent seed"
+  }
+}

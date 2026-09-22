@@ -1,0 +1,15 @@
+{
+  "arithmetic": "exact Python integers",
+  "contextual_commutator_checks": 14014,
+  "denominator_bound": 100,
+  "experiment_id": "X-9610",
+  "neighbor_formula_checks": 12174,
+  "nonprimitive_power_checks": 1907,
+  "nontrivial_cycle_hits": [],
+  "primitive_full_denominator_gcd_checks": 3043,
+  "primitive_standard_factorizations": 3043,
+  "rational_mechanical_words_checked": 5150,
+  "results_sha256": "351bd0fc54889ee07109cdac8dc7b5e4b7345b717be1f3b5826e7a0760d6c4dc",
+  "semantic_sha256": "45bbd4de20d349d620f411fc31520d57bea07b19e7dc3914686ab339f684150c",
+  "upper_rotation_checks": 3043
+}

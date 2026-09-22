@@ -1,0 +1,36 @@
+{
+  "arithmetic": "exact Python integers",
+  "coverage": "all pulse sets via cyclic half-balance and both primitive rotations",
+  "experiment_id": "X-9602",
+  "family": "negative 3-cycle repeated word with distinct minimum unit pulses",
+  "hits": [
+    {
+      "pulse_positions": [
+        0
+      ],
+      "repeats": 1,
+      "rotation": 0,
+      "start": "1",
+      "trivial": true
+    },
+    {
+      "pulse_positions": [
+        1
+      ],
+      "repeats": 1,
+      "rotation": 1,
+      "start": "1",
+      "trivial": true
+    }
+  ],
+  "r_max": 45,
+  "raw_labeled_words": 508127577642,
+  "results_sha256": "d13475b2f56ea3601874eaf9f12bd2365d56c2653f6128e59e503259cb42627e",
+  "semantic_audit_sha256": "94d9ab777cafdce636b2bc7da4d4b760693d251d9e7696092b6f388936ca8a2a",
+  "totals": {
+    "balanced_representatives": 154298178405,
+    "nontrivial_hit_count": 0,
+    "outer_lookups": 3069953,
+    "trivial_hit_count": 2
+  }
+}

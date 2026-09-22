@@ -1,0 +1,15 @@
+{
+  "arithmetic": "exact Python integers",
+  "contracting_letter_max": 6,
+  "contracting_word_length_max": 5,
+  "experiment_id": "X-9604",
+  "hits": [],
+  "m_max": 1000,
+  "negative_block": "(1,2)^m",
+  "nontrivial_hit_count": 0,
+  "primitive_contracting_block_count": 9237,
+  "reduced_divisibility_rows": 761934,
+  "results_sha256": "ac745cf38fea8ddcc5811b0f31d6c1216ed352c3f1bdb8b83650f67d0a89fc63",
+  "semantic_audit_sha256": "56527a8c53041ad4ef02bdafe75edb95aa6a95cbe4c9203645b0e469cdd1854e",
+  "terminal_size_eliminations": 9237000
+}

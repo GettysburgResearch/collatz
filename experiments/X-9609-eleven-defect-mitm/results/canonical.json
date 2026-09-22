@@ -1,0 +1,38 @@
+{
+  "aggregates": [
+    {"candidates": 20628070, "left_states": 263663, "right_states": 263663, "rows": 7, "type": "1^11"},
+    {"candidates": 236560863, "left_states": 1761900, "right_states": 2055550, "rows": 12, "type": "1^10,3"},
+    {"candidates": 236958579, "left_states": 1778358, "right_states": 2074751, "rows": 14, "type": "1^10,4"},
+    {"candidates": 237065048, "left_states": 1785870, "right_states": 2083515, "rows": 17, "type": "1^10,5"},
+    {"candidates": 237072440, "left_states": 1786854, "right_states": 2084663, "rows": 19, "type": "1^10,6"},
+    {"candidates": 237073177, "left_states": 1787034, "right_states": 2084873, "rows": 21, "type": "1^10,7"},
+    {"candidates": 1185325240, "left_states": 4762320, "right_states": 6548190, "rows": 17, "type": "1^9,3,3"},
+    {"candidates": 2370724400, "left_states": 9232079, "right_states": 12805787, "rows": 19, "type": "1^9,3,4"},
+    {"candidates": 2370731770, "left_states": 9233009, "right_states": 12807077, "rows": 21, "type": "1^9,3,5"},
+    {"candidates": 1185365885, "left_states": 4765424, "right_states": 6552458, "rows": 21, "type": "1^9,4,4"},
+    {"candidates": 2370731990, "left_states": 9233071, "right_states": 12807163, "rows": 23, "type": "1^9,3,6"},
+    {"candidates": 2370731990, "left_states": 9233071, "right_states": 12807163, "rows": 23, "type": "1^9,4,5"},
+    {"candidates": 3556097655, "left_states": 7743814, "right_states": 12509238, "rows": 21, "type": "1^8,3,3,3"},
+    {"candidates": 10668293955, "left_states": 21146711, "right_states": 35145238, "rows": 23, "type": "1^8,3,3,4"}
+  ],
+  "arithmetic": "exact unsigned 64-bit residues with 128-bit products",
+  "claim": "no accelerated positive cycle has exactly eleven valuations different from 2",
+  "experiment_id": "X-9609",
+  "finite_R_ceiling_exclusive": 23,
+  "limitations": [
+    "the theorem-level contraction and R>=23 height bounds require reconstruction",
+    "finite cycle exclusion only",
+    "no divergent orbit or counterexample is supplied"
+  ],
+  "row_sha256": "d1b2a4105d0f4bcf67d9e49584c202f77b022f67d0945079ebb04bb3735c62d8",
+  "schema_version": 1,
+  "split": "5+6 normalized centered half-join",
+  "totals": {
+    "finite_rows": 258,
+    "formal_divisor_hits": 0,
+    "full_candidates_represented": 27283361062,
+    "left_states": 84513178,
+    "nontrivial_cycle_hits": 0,
+    "right_states": 122629329
+  }
+}
