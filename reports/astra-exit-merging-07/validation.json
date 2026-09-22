@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "authoring_date": "2026-09-21",
+  "publication_status": "UNPUBLISHED",
+  "parent_commit": "7687eec1ac364009d644cb8d015f1fe3b28730cc",
+  "parent_tree": "50e69780a9c5146e96d9dea4c1836dd4e918e228",
+  "parent_publication": "PR #132 re-read remotely at expected head; no republish needed",
+  "baseline_pr": 129,
+  "baseline_head": "9d362511343c97790d42808c363b090a3342b45f",
+  "baseline_source_blob": "0ba3954be102188790e05cefa3630e3cb0dbccbc",
+  "baseline_evidence": "complete source inspected; two local reconstructions, not an exact-byte import of parent file",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-escape-restarts/run.py",
+        "--full",
+        "/mnt/data/aer-full.json",
+        "--check",
+        "experiments/X-AEM-007-escape-restarts/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.884,
+      "utc_completed": "2026-09-21T20:30:04.413765+00:00",
+      "stdout": "{\"added\": 173, \"added_C_mod3_2\": 54, \"kinds\": {\"K_table\": 4095, \"control\": 4, \"family\": 386, \"grid\": 65536, \"lift\": 24, \"normalization\": 65535, \"primitive\": 4}, \"lost\": 0, \"max_normalization_stages\": 9, \"new\": {\"MERGE\": 5255, \"OUTSIDE\": 60281}, \"old\": {\"MERGE\": 5082, \"OUTSIDE\": 60454}, \"rows\": 135584, \"rows_sha256\": \"16e3e2b6910943c53a632a3ffeea2babccb23473dd21c7b609d182ee3a2eb541\", \"schema\": \"AER-1\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-escape-restarts/run.py",
+        "--full",
+        "/mnt/data/aer-full-optimized.json",
+        "--check",
+        "experiments/X-AEM-007-escape-restarts/canonical.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.984,
+      "utc_completed": "2026-09-21T20:30:17.533639+00:00",
+      "stdout": "{\"added\": 173, \"added_C_mod3_2\": 54, \"kinds\": {\"K_table\": 4095, \"control\": 4, \"family\": 386, \"grid\": 65536, \"lift\": 24, \"normalization\": 65535, \"primitive\": 4}, \"lost\": 0, \"max_normalization_stages\": 9, \"new\": {\"MERGE\": 5255, \"OUTSIDE\": 60281}, \"old\": {\"MERGE\": 5082, \"OUTSIDE\": 60454}, \"rows\": 135584, \"rows_sha256\": \"16e3e2b6910943c53a632a3ffeea2babccb23473dd21c7b609d182ee3a2eb541\", \"schema\": \"AER-1\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-escape-restarts/verify.py",
+        "/mnt/data/aer-full.json",
+        "--summary",
+        "experiments/X-AEM-007-escape-restarts/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.888,
+      "utc_completed": "2026-09-21T20:30:21.003076+00:00",
+      "stdout": "{\"added\": 173, \"added_C_mod3_2\": 54, \"core_first_arrivals\": [6, 1], \"inventory_mutations_rejected\": 4, \"json_type_controls_rejected\": 5, \"kinds\": {\"K_table\": 4095, \"control\": 4, \"family\": 386, \"grid\": 65536, \"lift\": 24, \"normalization\": 65535, \"primitive\": 4}, \"lost\": 0, \"max_normalization_stages\": 9, \"mutation_scope\": \"direct semantic rows and inventory controls, not resealed full-corpus mutations\", \"new\": {\"MERGE\": 5255, \"OUTSIDE\": 60281}, \"old\": {\"MERGE\": 5082, \"OUTSIDE\": 60454}, \"rows\": 135584, \"rows_sha256\": \"16e3e2b6910943c53a632a3ffeea2babccb23473dd21c7b609d182ee3a2eb541\", \"schema\": \"AER-1\", \"semantic_row_mutations_rejected\": 23, \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-escape-restarts/verify.py",
+        "/mnt/data/aer-full.json",
+        "--summary",
+        "experiments/X-AEM-007-escape-restarts/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 2.943,
+      "utc_completed": "2026-09-21T20:30:24.480398+00:00",
+      "stdout": "{\"added\": 173, \"added_C_mod3_2\": 54, \"core_first_arrivals\": [6, 1], \"inventory_mutations_rejected\": 4, \"json_type_controls_rejected\": 5, \"kinds\": {\"K_table\": 4095, \"control\": 4, \"family\": 386, \"grid\": 65536, \"lift\": 24, \"normalization\": 65535, \"primitive\": 4}, \"lost\": 0, \"max_normalization_stages\": 9, \"mutation_scope\": \"direct semantic rows and inventory controls, not resealed full-corpus mutations\", \"new\": {\"MERGE\": 5255, \"OUTSIDE\": 60281}, \"old\": {\"MERGE\": 5082, \"OUTSIDE\": 60454}, \"rows\": 135584, \"rows_sha256\": \"16e3e2b6910943c53a632a3ffeea2babccb23473dd21c7b609d182ee3a2eb541\", \"schema\": \"AER-1\", \"semantic_row_mutations_rejected\": 23, \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-escape-restarts/verify.py",
+        "/mnt/data/aer-full.json",
+        "--summary",
+        "experiments/X-AEM-007-escape-restarts/canonical.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "seconds": 3.189,
+      "utc_completed": "2026-09-21T20:30:52.216890+00:00",
+      "stdout": "{\"added\": 173, \"added_C_mod3_2\": 54, \"core_first_arrivals\": [6, 1], \"inventory_mutations_rejected\": 4, \"json_type_controls_rejected\": 5, \"kinds\": {\"K_table\": 4095, \"control\": 4, \"family\": 386, \"grid\": 65536, \"lift\": 24, \"normalization\": 65535, \"primitive\": 4}, \"lost\": 0, \"max_normalization_stages\": 9, \"mutation_scope\": \"direct semantic rows and inventory controls, not resealed full-corpus mutations\", \"new\": {\"MERGE\": 5255, \"OUTSIDE\": 60281}, \"old\": {\"MERGE\": 5082, \"OUTSIDE\": 60454}, \"rows\": 135584, \"rows_sha256\": \"16e3e2b6910943c53a632a3ffeea2babccb23473dd21c7b609d182ee3a2eb541\", \"schema\": \"AER-1\", \"semantic_row_mutations_rejected\": 23, \"status\": \"PASS\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "experiments/X-AEM-007-escape-restarts/contract_check.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.311,
+      "utc_completed": "2026-09-21T20:30:53.277300+00:00",
+      "stdout": "{\"exact_countdown_checks\": 6144, \"invalid_cli_inputs_rejected\": 4, \"invalid_library_inputs_rejected\": 18, \"rank_bound_replays\": 4098, \"status\": \"PASS\"}\n",
+      "stderr": ""
+    }
+  ],
+  "summary": {
+    "added": 173,
+    "added_C_mod3_2": 54,
+    "kinds": {
+      "K_table": 4095,
+      "control": 4,
+      "family": 386,
+      "grid": 65536,
+      "lift": 24,
+      "normalization": 65535,
+      "primitive": 4
+    },
+    "lost": 0,
+    "max_normalization_stages": 9,
+    "new": {
+      "MERGE": 5255,
+      "OUTSIDE": 60281
+    },
+    "old": {
+      "MERGE": 5082,
+      "OUTSIDE": 60454
+    },
+    "rows": 135584,
+    "rows_sha256": "16e3e2b6910943c53a632a3ffeea2babccb23473dd21c7b609d182ee3a2eb541",
+    "schema": "AER-1"
+  },
+  "full_corpus": {
+    "bytes": 15431358,
+    "sha256": "b6185e781de92a8034dd93b3d0141a695d7e4cb5ced208def090fbccfb274cf1",
+    "generator_mode_bytes_identical": true
+  },
+  "new_packet_link_checks": [
+    {
+      "file": "experiments/X-AEM-007-escape-restarts/README.md",
+      "target": "../../research/astra-exit-merging/escape-restarts/PROOF.md"
+    },
+    {
+      "file": "experiments/X-AEM-007-escape-restarts/README.md",
+      "target": "../../reports/astra-exit-merging-07/validation.json"
+    },
+    {
+      "file": "research/astra-exit-merging/escape-restarts/README.md",
+      "target": "PROOF.md"
+    },
+    {
+      "file": "research/astra-exit-merging/escape-restarts/README.md",
+      "target": "SOURCES_AND_LIMITS.md"
+    },
+    {
+      "file": "research/astra-exit-merging/escape-restarts/README.md",
+      "target": "../../../experiments/X-AEM-007-escape-restarts/README.md"
+    }
+  ],
+  "files_excluding_this_receipt": {
+    "experiments/X-AEM-007-escape-restarts/README.md": {
+      "bytes": 4274,
+      "sha256": "88af14f8707302b9fd248d67640a3894fdeaff757327d0c1aa2e89e5a129feca",
+      "git_blob": "e78e201da9c88e1c43df32a500fe8300fc3c4774"
+    },
+    "experiments/X-AEM-007-escape-restarts/canonical.json": {
+      "bytes": 405,
+      "sha256": "574abcc1f79322c047329f34899433111421d91752396553a4f545c90036f88a",
+      "git_blob": "6d24cee9e9a4bc0c41114846f97a61e98a3d28cc"
+    },
+    "experiments/X-AEM-007-escape-restarts/contract_check.py": {
+      "bytes": 2909,
+      "sha256": "ab90a2ba588aaa5514efb40e7528f733d1b79d40ac923141da57d3384d242ddc",
+      "git_blob": "12c8dbdad015e4605238602eacd72fe44283fe79"
+    },
+    "experiments/X-AEM-007-escape-restarts/kernel.py": {
+      "bytes": 6713,
+      "sha256": "0420439a92caf9362dc9547fbd7e7d108dbc4343b12487de4d46203aa6e13d8a",
+      "git_blob": "865c971022c23aeb3efe4b9a3c89b425d9423e2c"
+    },
+    "experiments/X-AEM-007-escape-restarts/run.py": {
+      "bytes": 3841,
+      "sha256": "7b5f380691a8e4c46c14c8ccade789e8dff954592c78f4e581393ed447e54f04",
+      "git_blob": "9cd3761cb6b25b4163165fb6ab852db6fcababe1"
+    },
+    "experiments/X-AEM-007-escape-restarts/verify.py": {
+      "bytes": 19733,
+      "sha256": "99da41e6d6f56406829adfc10d81aa197aff60f7a99d486e7cdb354ff43878ef",
+      "git_blob": "5234cfeb7b73f9b345912ac1cef282043a48855d"
+    },
+    "reports/astra-exit-merging-07/PR_DRAFT.md": {
+      "bytes": 3334,
+      "sha256": "216d869a2adf6c2bd121597725eba0048edd0268cfd9b69a91a9faee76d561bb",
+      "git_blob": "899afade7b6a083e415947b821b23d0ed6135aa4"
+    },
+    "reports/astra-exit-merging-07/PUBLISH.md": {
+      "bytes": 2891,
+      "sha256": "d1688260903f30358fa33ae6b713e12093e554cecb0ee8c57c37af8e65cf5d23",
+      "git_blob": "fdfb81c8829aa0739201eef3a03a617f8e6686b4"
+    },
+    "research/astra-exit-merging/escape-restarts/PROOF.md": {
+      "bytes": 17246,
+      "sha256": "97e28fa8b42c4e3d90ffdef0fe4cf30bfd37e3ebf3aa5780449c20201b072675",
+      "git_blob": "a73ea901891eceb36d7b504b534eb07ae7c371f1"
+    },
+    "research/astra-exit-merging/escape-restarts/README.md": {
+      "bytes": 2746,
+      "sha256": "e21812a03570ef79034f9d781b033206602866506acc28e84843fdd3687a8d5e",
+      "git_blob": "155b287801005e60ef9fb62dffe3b3a20f125e49"
+    },
+    "research/astra-exit-merging/escape-restarts/SOURCES_AND_LIMITS.md": {
+      "bytes": 4159,
+      "sha256": "b12a1a836f740f16eca5fb0d05cb457da6c7db9d2a3809f4fd2f82998e287e39",
+      "git_blob": "91df9079fc762c110a0ec81400b4a18188f56621"
+    }
+  },
+  "direct_git": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/GettysburgResearch/collatz.git",
+      "HEAD"
+    ],
+    "exit_code": 128,
+    "stdout": "",
+    "stderr": "fatal: unable to access 'https://github.com/GettysburgResearch/collatz.git/': Could not resolve host: github.com\n"
+  },
+  "github_write_action_available": false,
+  "full_checkout_validator": false,
+  "remote_CI": false,
+  "lean": false,
+  "independent_mathematical_review": false,
+  "limits": [
+    "comparison is against #129 only, not all later mechanisms",
+    "finite grid classifications are not convergence counts",
+    "semantic mutation controls are direct rows, not resealed full corpora",
+    "packet application is not a complete repository checkout"
+  ],
+  "uncredited_exploration": "Exploratory symbolic searches and initial untimed checks guided the rules; final timed replays above use the delivered code."
+}
