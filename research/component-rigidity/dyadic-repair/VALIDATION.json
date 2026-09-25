@@ -1,0 +1,115 @@
+{
+  "claim_status": "PROPOSED",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-S",
+        "/mnt/data/collatz_repair_work/research/component-rigidity/dyadic-repair/tests.py",
+        "--corpus",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/corpus.json",
+        "--summary",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/models.json"
+      ],
+      "elapsed_seconds": 1.205,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"corpus_sha256\": \"da10c464990c229c99374cf6c5c90577694b828adee36ae310092a4762286dc3\", \"counts\": {\"convergence\": 8, \"dense_assignments\": 133280, \"dense_feasible_assignments\": 10699, \"dense_problems\": 104, \"exhaustive_step_function_oracles\": 270, \"repair_rounds\": 260, \"unresolved_at_resource_cap\": 3, \"verified_other_cycle\": 3}, \"large_case\": {\"infinite_case_stats\": {\"compressed_edges\": 2043, \"marked_phases\": 3, \"quotient_vertices\": 1022, \"raw_vertices\": 1023, \"terminal_intervals\": 1023}, \"source_bits\": 513, \"stats\": {\"compressed_edges\": 1023, \"marked_phases\": 2, \"quotient_vertices\": 513, \"raw_vertices\": 513, \"terminal_intervals\": 513}, \"symbolic_height_exponent\": 521}, \"status\": \"PASS\"}"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "/mnt/data/collatz_repair_work/research/component-rigidity/dyadic-repair/tests.py",
+        "--corpus",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/corpus.optimized.json",
+        "--summary",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/models.optimized.json"
+      ],
+      "elapsed_seconds": 1.205,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"corpus_sha256\": \"da10c464990c229c99374cf6c5c90577694b828adee36ae310092a4762286dc3\", \"counts\": {\"convergence\": 8, \"dense_assignments\": 133280, \"dense_feasible_assignments\": 10699, \"dense_problems\": 104, \"exhaustive_step_function_oracles\": 270, \"repair_rounds\": 260, \"unresolved_at_resource_cap\": 3, \"verified_other_cycle\": 3}, \"large_case\": {\"infinite_case_stats\": {\"compressed_edges\": 2043, \"marked_phases\": 3, \"quotient_vertices\": 1022, \"raw_vertices\": 1023, \"terminal_intervals\": 1023}, \"source_bits\": 513, \"stats\": {\"compressed_edges\": 1023, \"marked_phases\": 2, \"quotient_vertices\": 513, \"raw_vertices\": 513, \"terminal_intervals\": 513}, \"symbolic_height_exponent\": 521}, \"status\": \"PASS\"}"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-S",
+        "/mnt/data/collatz_repair_work/research/component-rigidity/dyadic-repair/verify.py",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/corpus.json",
+        "--models",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/models.json",
+        "--self-test"
+      ],
+      "elapsed_seconds": 0.948,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"counts\": {\"additional_rotation_controls\": 12, \"convergence\": 8, \"cut_certificates\": 356, \"dense_inventory_checks\": 104, \"dyadic_terminal_intervals\": 22103, \"exhaustive_oracle_checks\": 270, \"flow_edges\": 33063, \"lookahead_checks\": 7, \"marked_odd_edge\": 170, \"mutations_rejected\": 12, \"physical_path_steps\": 202, \"physical_repair_edges\": 260, \"pin_infeasibilities\": 21, \"refinements\": 14, \"root_fair_edge\": 88, \"rotation_interval\": 2, \"unresolved_at_resource_cap\": 3, \"verified_other_cycle\": 3}, \"status\": \"PASS\"}"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "/mnt/data/collatz_repair_work/research/component-rigidity/dyadic-repair/verify.py",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/corpus.json",
+        "--models",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/models.json",
+        "--self-test"
+      ],
+      "elapsed_seconds": 1.03,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"counts\": {\"additional_rotation_controls\": 12, \"convergence\": 8, \"cut_certificates\": 356, \"dense_inventory_checks\": 104, \"dyadic_terminal_intervals\": 22103, \"exhaustive_oracle_checks\": 270, \"flow_edges\": 33063, \"lookahead_checks\": 7, \"marked_odd_edge\": 170, \"mutations_rejected\": 12, \"physical_path_steps\": 202, \"physical_repair_edges\": 260, \"pin_infeasibilities\": 21, \"refinements\": 14, \"root_fair_edge\": 88, \"rotation_interval\": 2, \"unresolved_at_resource_cap\": 3, \"verified_other_cycle\": 3}, \"status\": \"PASS\"}"
+    },
+    {
+      "argv": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "/mnt/data/collatz_repair_work/research/component-rigidity/dyadic-repair/verify.py",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/corpus.json",
+        "--models",
+        "/mnt/data/collatz_repair_work/reports/component-rigidity-dyadic-repair/models.json",
+        "--self-test"
+      ],
+      "elapsed_seconds": 1.007,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"counts\": {\"additional_rotation_controls\": 12, \"convergence\": 8, \"cut_certificates\": 356, \"dense_inventory_checks\": 104, \"dyadic_terminal_intervals\": 22103, \"exhaustive_oracle_checks\": 270, \"flow_edges\": 33063, \"lookahead_checks\": 7, \"marked_odd_edge\": 170, \"mutations_rejected\": 12, \"physical_path_steps\": 202, \"physical_repair_edges\": 260, \"pin_infeasibilities\": 21, \"refinements\": 14, \"root_fair_edge\": 88, \"rotation_interval\": 2, \"unresolved_at_resource_cap\": 3, \"verified_other_cycle\": 3}, \"status\": \"PASS\"}"
+    }
+  ],
+  "complete_checkout_validator_run": false,
+  "date_utc": "2026-09-25T07:31:23Z",
+  "external_formal_proof_build": false,
+  "independent_mathematical_review": false,
+  "limits": [
+    "Finite experiments do not prove convergence for every N.",
+    "Root fairness preserves literal forward progress; its conditional termination is not a new Collatz stopping-time result.",
+    "The infinite-network structural formula is exact; numerical minima have rational enclosures.",
+    "The selected-constraint infinite energy is not automatically a finite full-graph capacity bound.",
+    "Same-author implementation diversity is not independent mathematical review."
+  ],
+  "normal_optimized_corpus_byte_identical": true,
+  "normal_optimized_models_byte_identical": true,
+  "parent_head": "45c970ccb3d0b034f6e5696710d9a94df66b2b27",
+  "prepublication_development_note": "An early verifier trial timed out because a type guard repeatedly constructed an unnecessarily huge integer bound. That guard was replaced by a direct integer type check; every final command above was then rerun successfully.",
+  "remote_ci_run": false,
+  "repository": "GettysburgResearch/collatz",
+  "schema": "dyadic-repair-validation-v1",
+  "source_sha256": {
+    "PROOF.md": "8a31501c04597d01b961fc7db03a099fdfc23037c42b6c60452202633f6d14dc",
+    "README.md": "eb6ad760db147fec14b262ab6e3ec45e349e1093d0eae87326316f98adf3edde",
+    "RESULTS.json": "c303fa30a456306b2734cfb18fe211a9ec23a301ef6fabcdf353513a519c39b2",
+    "run.py": "8b28607b5d58f6e9fc33be701c39f86210bde7ef88cdc740b16ceec7f0d6732a",
+    "tests.py": "431cf5f3142173f1c7c016476c1175b56c6a91a1b9a68c2930f329330e0b68fd",
+    "verify.py": "539b6d637299ccf4b933bc30fd1131d43520b91388a3d95d3246c6103d7f75da"
+  },
+  "three_verifier_modes_stdout_identical": true
+}

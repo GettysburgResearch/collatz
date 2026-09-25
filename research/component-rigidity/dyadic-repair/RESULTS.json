@@ -1,0 +1,284 @@
+{
+  "corpus_sha256": "da10c464990c229c99374cf6c5c90577694b828adee36ae310092a4762286dc3",
+  "counts": {
+    "convergence": 8,
+    "dense_assignments": 133280,
+    "dense_feasible_assignments": 10699,
+    "dense_problems": 104,
+    "exhaustive_step_function_oracles": 270,
+    "repair_rounds": 260,
+    "unresolved_at_resource_cap": 3,
+    "verified_other_cycle": 3
+  },
+  "dyadic_lookahead": [
+    {
+      "K": 2,
+      "b3": 0,
+      "minimum": [
+        4,
+        9
+      ],
+      "pin_only": [
+        2,
+        9
+      ]
+    },
+    {
+      "K": 3,
+      "b3": 0,
+      "minimum": [
+        25,
+        36
+      ],
+      "pin_only": [
+        25,
+        72
+      ]
+    },
+    {
+      "K": 4,
+      "b3": 0,
+      "minimum": [
+        769,
+        900
+      ],
+      "pin_only": [
+        769,
+        1800
+      ]
+    },
+    {
+      "K": 5,
+      "b3": 0,
+      "minimum": [
+        869,
+        900
+      ],
+      "pin_only": [
+        869,
+        1800
+      ]
+    },
+    {
+      "K": 6,
+      "b3": 1,
+      "minimum": [
+        90281,
+        88200
+      ],
+      "pin_only": [
+        46181,
+        88200
+      ]
+    },
+    {
+      "K": 7,
+      "b3": 1,
+      "minimum": [
+        372149,
+        352800
+      ],
+      "pin_only": [
+        195749,
+        352800
+      ]
+    },
+    {
+      "K": 8,
+      "b3": 1,
+      "minimum": [
+        3427741,
+        3175200
+      ],
+      "pin_only": [
+        1840141,
+        3175200
+      ]
+    }
+  ],
+  "large_case": {
+    "infinite_case_stats": {
+      "compressed_edges": 2043,
+      "marked_phases": 3,
+      "quotient_vertices": 1022,
+      "raw_vertices": 1023,
+      "terminal_intervals": 1023
+    },
+    "source_bits": 513,
+    "stats": {
+      "compressed_edges": 1023,
+      "marked_phases": 2,
+      "quotient_vertices": 513,
+      "raw_vertices": 513,
+      "terminal_intervals": 513
+    },
+    "symbolic_height_exponent": 521
+  },
+  "models_sha256": "3fa6736b7d52b1a5226ce353c24381e11439db49179ae799611bad14e66d1bd7",
+  "refinements": [
+    {
+      "N": 1,
+      "cap": 0,
+      "max_phase_depth": 0,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 0,
+      "policy": "root-fair",
+      "repairs": 0
+    },
+    {
+      "N": 8,
+      "cap": 0,
+      "max_phase_depth": 0,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 3,
+      "policy": "root-fair",
+      "repairs": 0
+    },
+    {
+      "N": 26,
+      "cap": 24,
+      "max_phase_depth": 6,
+      "outcome": "VERIFIED_OTHER_CYCLE",
+      "p": 5,
+      "path_steps": 7,
+      "policy": "root-fair",
+      "repairs": 4
+    },
+    {
+      "N": 3,
+      "cap": 16,
+      "max_phase_depth": 2,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 5,
+      "policy": "root-fair",
+      "repairs": 2
+    },
+    {
+      "N": 5,
+      "cap": 16,
+      "max_phase_depth": 2,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 4,
+      "policy": "root-fair",
+      "repairs": 1
+    },
+    {
+      "N": 7,
+      "cap": 32,
+      "max_phase_depth": 4,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 11,
+      "policy": "root-fair",
+      "repairs": 5
+    },
+    {
+      "N": 9,
+      "cap": 32,
+      "max_phase_depth": 4,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 13,
+      "policy": "root-fair",
+      "repairs": 6
+    },
+    {
+      "N": 27,
+      "cap": 96,
+      "max_phase_depth": 11,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 70,
+      "policy": "root-fair",
+      "repairs": 49
+    },
+    {
+      "N": 27,
+      "cap": 64,
+      "max_phase_depth": 15,
+      "outcome": "UNRESOLVED_AT_RESOURCE_CAP",
+      "p": 3,
+      "path_steps": null,
+      "policy": "cuts-only",
+      "repairs": 64
+    },
+    {
+      "N": 97,
+      "cap": 96,
+      "max_phase_depth": 11,
+      "outcome": "CONVERGENCE",
+      "p": 3,
+      "path_steps": 75,
+      "policy": "root-fair",
+      "repairs": 57
+    },
+    {
+      "N": 871,
+      "cap": 48,
+      "max_phase_depth": 15,
+      "outcome": "UNRESOLVED_AT_RESOURCE_CAP",
+      "p": 3,
+      "path_steps": null,
+      "policy": "root-fair",
+      "repairs": 48
+    },
+    {
+      "N": 13,
+      "cap": 24,
+      "max_phase_depth": 6,
+      "outcome": "VERIFIED_OTHER_CYCLE",
+      "p": 5,
+      "path_steps": 7,
+      "policy": "root-fair",
+      "repairs": 4
+    },
+    {
+      "N": 17,
+      "cap": 24,
+      "max_phase_depth": 5,
+      "outcome": "VERIFIED_OTHER_CYCLE",
+      "p": 5,
+      "path_steps": 7,
+      "policy": "root-fair",
+      "repairs": 4
+    },
+    {
+      "N": 13,
+      "cap": 16,
+      "max_phase_depth": 8,
+      "outcome": "UNRESOLVED_AT_RESOURCE_CAP",
+      "p": 5,
+      "path_steps": null,
+      "policy": "cuts-only",
+      "repairs": 16
+    }
+  ],
+  "schema": "dyadic-repair-tests-v1",
+  "standalone_verifier": {
+    "counts": {
+      "additional_rotation_controls": 12,
+      "convergence": 8,
+      "cut_certificates": 356,
+      "dense_inventory_checks": 104,
+      "dyadic_terminal_intervals": 22103,
+      "exhaustive_oracle_checks": 270,
+      "flow_edges": 33063,
+      "lookahead_checks": 7,
+      "marked_odd_edge": 170,
+      "mutations_rejected": 12,
+      "physical_path_steps": 202,
+      "physical_repair_edges": 260,
+      "pin_infeasibilities": 21,
+      "refinements": 14,
+      "root_fair_edge": 88,
+      "rotation_interval": 2,
+      "unresolved_at_resource_cap": 3,
+      "verified_other_cycle": 3
+    },
+    "status": "PASS"
+  }
+}
