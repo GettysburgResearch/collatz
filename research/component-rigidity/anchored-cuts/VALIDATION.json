@@ -1,0 +1,31 @@
+{
+  "budget_sha256": "fa279c8a504777318ced0b1fd0025ee89024f0f1edd774dc34c90f21b4dbaa84",
+  "counts": {
+    "budget_controls": 5,
+    "coarea_checks": 122,
+    "corridors": 6,
+    "cut_cases": 48,
+    "exhaustive_assignments": 76902,
+    "exhaustive_cut_cases": 196,
+    "finite_cuts": 45,
+    "flow_edges": 7911,
+    "literal_convergence_edges": 70,
+    "semantic_mutations_rejected_per_mode": 9
+  },
+  "formal_proof_build": false,
+  "full_checkout_validator": false,
+  "independent_mathematical_review": false,
+  "normal_and_optimized": "Both replay.py runs and stdout matched; both regenerated payloads match original hashes.",
+  "parent": "2911b53930cbd31f623d3e0586ca3613854f0143",
+  "preserved_git_blobs": {
+    "PROOF.md": "172621361589eefdba3b59865326e13cab570525",
+    "certify_budget.py": "ff9b3f3784a2418a1c893ca568a2559a6c42c978",
+    "experiment.py": "ac790f1ee3a1364a1e146f55c6a8d3e3d9c47093",
+    "verify_budget.py": "eef0e4c048ec9110f242f75640d6db966248a786",
+    "verify_certificates.py": "9f469736ce20dd30c7234dcce62205c6bf118a07"
+  },
+  "remote_CI_run": false,
+  "replay_hardening": "Original budget JSON has no final newline; preservation recipe reproduces this exactly. No data differed.",
+  "results_sha256": "8c8f2c92f6f31b755de75cbe1e590273549ba888e5017ce6d820ff74a7a35369",
+  "status": "PROPOSED; replay PASS, not peer review"
+}
