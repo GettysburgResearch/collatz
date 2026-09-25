@@ -7,7 +7,17 @@ The programme studies invariant functions on the ordinary merger components, rat
 
 The universal upper-variation estimate remains OPEN. Topological density does not imply equality of components; the manuscript retains a 5x+1 control.
 
+## Pass 2: joint residue and scale geometry
+
+[The continuation](pass2/PROOF.md) constructs growing inverse ladders locked in any prescribed unit residue modulo 3^q, with logarithmic phases equidistributed modulo the matching order of two. This gives an effective all-original-source theorem: every component meets every sufficiently high relative interval in that residue. A credited finite-pattern synchronizer then places every fixed finite pattern in every sufficiently high relative interval of every component.
+
+The proof defines an explicit inverse-limit compactification in which all ordinary components are dense. This does not prove they coincide. Arbitrary invariant separators have not been shown to extend continuously or have sublinear variation. An explicit family of legal finite colorings has last-shell variation (2/9)H+O(1), refuting a boundary-free finite estimate. A 5x+1 control retains the joint density while having two disjoint positive cycles.
+
+[Replay instructions](pass2/README.md) and [executed receipt](pass2/VALIDATION.json) separate 1,008,890 literal small-grid shortcut steps from 6,272 large compressed inverse-word certificates. The normal/optimized generator and standalone checker agree. Generated JSON is reproducible from committed sources with exact hashes; it is not silently represented as stored in Git.
+
 ## First-pass publication and replay
+
+Pass 1 checkpoint: `5b0438ddeaef991e2f152add8d8782f0d6a55f02`, draft PR #137.
 
 `pass1` preserves the original manuscript, all three Python sources, README, original validation receipt and hash ledger. Statements there saying no GitHub publication was performed describe the original authoring pass; this parent page records its subsequent publication. The two large deterministic JSON outputs are regenerated rather than committed. Their exact original SHA-256 hashes are in the preserved ledger. This is a source-and-hash publication, not a claim that the original ZIP itself is stored in Git.
 

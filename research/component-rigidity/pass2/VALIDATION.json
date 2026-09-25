@@ -1,0 +1,131 @@
+{
+  "commands_executed": [
+    {
+      "command": "python -S -B experiment.py --output certificates.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python -O -S -B experiment.py --output certificates.optimized.json",
+      "result": "PASS"
+    },
+    {
+      "command": "cmp certificates.json certificates.optimized.json",
+      "result": "PASS, byte-identical"
+    },
+    {
+      "command": "python -S -B verify_certificates.py > verifier.normal.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python -O -S -B verify_certificates.py > verifier.optimized.json",
+      "result": "PASS"
+    },
+    {
+      "command": "cmp verifier.normal.json verifier.optimized.json",
+      "result": "PASS, byte-identical"
+    }
+  ],
+  "date": "2026-09-25",
+  "files": {
+    "PROOF.md": {
+      "bytes": 26612,
+      "git_blob_sha1": "ebc02032a495a4b34d1c05a6dc817c3b1712fa46",
+      "sha256": "248342a6adec521ee1e6a7e13c633c0115be281bebabee43fea10817c778abb7"
+    },
+    "README.md": {
+      "bytes": 2876,
+      "git_blob_sha1": "4ac18eb2694ff5acc643129409f89b6ba88de821",
+      "sha256": "72479afb08483c642c6b7d5dc9b739ce7187a6a9e8166cc185ee61ec4bdcb4a3"
+    },
+    "certificates.json": {
+      "bytes": 100870,
+      "git_blob_sha1": "4c0c8a6a5211bc106920c3dcad486f961b045ebe",
+      "sha256": "f9d0851705fd05958bfb6e3730b701d9514d6fc97aeaf881d55468e02667fa32"
+    },
+    "experiment.py": {
+      "bytes": 13610,
+      "git_blob_sha1": "a49c091b96ad1690e1474458565844af1bfe2b0f",
+      "sha256": "0d2e5e5e8dbc6739aeb6b34c9c45722aada79a906b39c54bde7d72d7aa0b8c9f"
+    },
+    "verifier.normal.json": {
+      "bytes": 319,
+      "git_blob_sha1": "56a63db8355631d29a3572d2c2493da509127fcd",
+      "sha256": "4412f410ccddca607f5243044dc0cf68fbb9a813feb0ca1bb2595c07a25a7914"
+    },
+    "verify_certificates.py": {
+      "bytes": 9653,
+      "git_blob_sha1": "05f699705ba14c63f040eaff96521d1d69c43272",
+      "sha256": "8be873ea3989d9acf146cfaeb29fe7986f3d03ec723d4871e4c4b8fc94947541"
+    }
+  },
+  "first_unsupported_step": "No boundary-aware global sublinear separator-variation estimate, general regularity theorem in the compactification, or macroscopic convergent-block family.",
+  "generated_not_committed": [
+    "certificates.json",
+    "certificates.optimized.json",
+    "verifier.normal.json",
+    "verifier.optimized.json"
+  ],
+  "generator_counts": {
+    "gate_families": 2,
+    "literal_inverse_edges": 42240,
+    "literal_shortcut_steps": 1008890,
+    "negative_controls": 8,
+    "open_boundary_examples": [
+      {
+        "height": 64,
+        "isolated_ones": 8,
+        "last_shell_variation": 16
+      },
+      {
+        "height": 256,
+        "isolated_ones": 29,
+        "last_shell_variation": 58
+      },
+      {
+        "height": 1024,
+        "isolated_ones": 114,
+        "last_shell_variation": 228
+      },
+      {
+        "height": 4096,
+        "isolated_ones": 456,
+        "last_shell_variation": 912
+      },
+      {
+        "height": 16384,
+        "isolated_ones": 1821,
+        "last_shell_variation": 3642
+      }
+    ],
+    "residue_types": 9678,
+    "semantic_sha256": "d17742dbac2469f9ec0eab2b7deb53cea765ce8098a1842cc2379c476cd12872"
+  },
+  "large_net_inventory": {
+    "compressed_inverse_edges": 6272,
+    "four_blocks": 8,
+    "joint_window_witnesses": 64,
+    "largest_node_bits": 1312421,
+    "source_nets": 8
+  },
+  "not_performed": [
+    "independent mathematical peer review",
+    "complete-checkout repository validation",
+    "remote CI",
+    "formal proof assistant build",
+    "comprehensive external priority audit"
+  ],
+  "python_version": "3.13.5",
+  "source_parent_commit": "5b0438ddeaef991e2f152add8d8782f0d6a55f02",
+  "standalone_checker_counts": {
+    "all_parameter_four_way_gate": true,
+    "bounded_generator_census_rerun_here": false,
+    "compressed_physical_inverse_edges": 6272,
+    "four_blocks": 8,
+    "joint_window_arms": 64,
+    "literal_four_block_shortcut_steps": 352,
+    "original_source_nets": 8,
+    "rejected_direct_mutations": 10,
+    "universal_net_inputs": 8
+  },
+  "status": "PROPOSED; executed exact checks, not independent mathematical review"
+}
