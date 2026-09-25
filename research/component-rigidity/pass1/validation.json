@@ -1,0 +1,70 @@
+{
+  "commands_executed": [
+    {
+      "command": "python -S -B experiment.py --output results.json",
+      "result": "PASS"
+    },
+    {
+      "command": "python -O -S -B experiment.py --output results.optimized.json",
+      "result": "PASS"
+    },
+    {
+      "command": "cmp results.json results.optimized.json",
+      "result": "PASS, byte-identical"
+    },
+    {
+      "command": "python -S -B build_certificates.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python -S -B verify_certificates.py",
+      "result": "PASS; 2 universal bounds, 6 source nets, 3072 inverse edges, 96 window arms, 6 mutations rejected"
+    },
+    {
+      "command": "python -O -S -B verify_certificates.py",
+      "result": "PASS; identical verdict and counts"
+    }
+  ],
+  "date": "2026-09-25",
+  "files": {
+    "PROOF.md": {
+      "bytes": 22649,
+      "sha256": "fb8ffc02c89d69127ce82d144cea08b2b36237fd665be3744ab582cd71d26445"
+    },
+    "README.md": {
+      "bytes": 2696,
+      "sha256": "02aad7c9bb7fad6244a898827f0d8dc3bdffbc00d76f9fd546126b7c48a394cc"
+    },
+    "build_certificates.py": {
+      "bytes": 1692,
+      "sha256": "304ba727a5a59bfc18fed7c4c2fa8d01afd533b96c305cdf2493a78c7b31b732"
+    },
+    "experiment.py": {
+      "bytes": 14467,
+      "sha256": "20ae8a1cf66d9ae6a978241fa61048b290259cc19d960cc6d9d215c57015880b"
+    },
+    "net_certificates.json": {
+      "bytes": 489231,
+      "sha256": "c2b91daeb0c3068610edc7495ee9ca0c8ceedd9d230f675d720b6ef6634e20fa"
+    },
+    "results.json": {
+      "bytes": 62403,
+      "sha256": "700077034ae61b92b2e51dc786acd46796d986b9ffbd152e34bd3abbe46ca29c"
+    },
+    "verify_certificates.py": {
+      "bytes": 5101,
+      "sha256": "091e9d3b9f034ffdf08fb4f62d916180ca85a35d785db865dcc96742582679bd"
+    }
+  },
+  "not_performed": [
+    "independent mathematical review",
+    "full repository validation",
+    "remote CI",
+    "Lean or other formal proof build",
+    "comprehensive literature priority audit",
+    "GitHub publication"
+  ],
+  "python": "3.13.5",
+  "status": "proposed manuscript; bounded computational checks passed",
+  "strongest_uncertainty": "No sublinear-variation theorem, equivalent birth bound, or macroscopic convergent-block construction was obtained."
+}
