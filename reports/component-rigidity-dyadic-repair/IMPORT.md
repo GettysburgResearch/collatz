@@ -1,0 +1,11 @@
+# Preservation of the previously unpushed dyadic-repair packet
+
+25 September 2026. PROPOSED, not independently reviewed. This is an import and replay receipt, not a new scientific verdict.
+
+The prior chat archive `collatz_dyadic_repair_2026-09-25.zip` supplied seven source/scientific files under `research/component-rigidity/dyadic-repair/`. This checkpoint preserves those seven files byte-for-byte, including their original validation receipt. Large deterministic outputs are regenerated, not committed.
+
+Publication parent: PR #138 at `3eb14b04cda6e87aa7daa22430cb9efacbba158f`, branch `research/anchored-cuts-constructive-20260925`. The separately published `dyadic-completion/` packet was read and remains unchanged. DR-001/002 overlap DC-001 and are not a new advance over it. DC supplies sharper symbolic infinite minima, a sharp fresh-ray repair and a complete-cutoff oracle that enumerates odd sources. DR-004 supplies a distinct constructive finite-step defect oracle; DR-005 retains root-fair and cuts-only controls. Neither packet supplies the full upper repair bound. Claim IDs and frozen histories stay separate.
+
+Fresh execution in this continuation: `tests.py` passed with `-B -S` and `-O -B -S`; `verify.py --self-test` passed with `-B -S`, `-O -B -S` and `-OO -B -S`. Normal/optimized corpus and model bytes agree; the complete corpus agrees byte-for-byte with the uploaded original. Its SHA-256 is `da10c464990c229c99374cf6c5c90577694b828adee36ae310092a4762286dc3`. The standalone checker again validated 356 cuts, 33,063 flow edges, 260 repair edges and 202 physical path steps, and rejected 12 direct semantic/schema mutations per mode. The original inventory remains 104 dense problems, 133,280 assignments, 270 finite-step oracle controls and 14 refinement runs. These are implementation checks by the same author, not independent review.
+
+Direct `git ls-remote` failed with `Could not resolve host: github.com`. Publication uses the authorized GitHub Git-data connector. No full-checkout validator, remote CI or formal build was run. Main, earlier proofs, canonical statuses, workflows, settings and licensing were not changed. A later all-height defect-counting/least-defect continuation has its own checkpoint and validation boundary.

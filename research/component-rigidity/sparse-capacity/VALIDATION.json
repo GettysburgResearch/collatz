@@ -1,0 +1,45 @@
+{
+  "corpus_bytes": 538042,
+  "corpus_sha256": "77827740bb8745443ea81ee2d8055dfa04aedbb93dae4f80bb162a7609ee8d70",
+  "counts": {
+    "capacity_cases": 42,
+    "convergence_cases": 5,
+    "convergence_control_steps": 12,
+    "corpus_cases": 47,
+    "delayed_activation_cases": 224,
+    "exhaustive_pin_line_cases": 2187,
+    "finite_full_cuts": 15,
+    "full_cut_comparisons": 18,
+    "inverse_and_anchor_steps": 71369,
+    "listed_ray_nodes": 19300,
+    "merged_full_cuts": 3,
+    "permanent_27_actual_convergence_steps": 70,
+    "rational_shells": 38406,
+    "rejected_mutations_per_mode": 15,
+    "uniform_bands": 2
+  },
+  "formal_proof_build": false,
+  "full_checkout_validator": false,
+  "independent_mathematical_review": false,
+  "largest_corpus_ambient_height": "2^6463",
+  "models_sha256": "0e91af52677af269cf5d85c404bc82fe527c5306cd8a656c601884e92dde8a22",
+  "normal_and_optimized": "Generator, standalone verifier, and model comparisons all passed. Both corpus files and each paired stdout matched byte-for-byte.",
+  "parent": "9d9f30ef199d32045b1f78a87ecbc53f824346aa",
+  "prepublication_hardening": "A manually entered core-ladder expected list was rejected; corrected to the actual clocks 3,2,5 and nodes 5,13,17,181. Generator and certificate corpus did not change.",
+  "remote_CI": false,
+  "single_example_check": "README source-13 p=5 depth-1024 command and its 15-mutation self-test passed.",
+  "source_git_blobs": {
+    "PROOF.md": "e2a49175b161e3724deb12a419d644c68b2975a0",
+    "README.md": "e0f3f5ef833b40a8de8095f1643a9066614857e5",
+    "check_models.py": "655eec8be24033f8e91d649b41cc8691364aca05",
+    "run.py": "f3e6044502a7065a0988c63f1a480301cf1f7b33",
+    "verify.py": "0b0c128885b401685a0710dd7c5dcb5f32799122"
+  },
+  "status": "PROPOSED; exact replay PASS; not independent peer review",
+  "uniform_recipe_test_heights": [
+    "2^11970",
+    "2^8946"
+  ],
+  "validation_boundary": "Ambient cutoffs are symbolic bounds certified by literal short path lists and exact phase arithmetic, not integer enumerations. Written all-time proofs are not inferred from these finite cases.",
+  "verifier_resource_guards": "depth <= 16384; shell/height exponents <= 100000; hex fields <= 100000 digits. These do not bound the theorem."
+}

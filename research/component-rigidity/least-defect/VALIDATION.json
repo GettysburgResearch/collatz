@@ -1,0 +1,188 @@
+{
+  "branch": "research/anchored-cuts-constructive-20260925",
+  "checker_stdout_identical_across_normal_O_OO_per_section": true,
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/experiment.py",
+        "--output",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--summary",
+        "/mnt/data/rigidity_continue/reports/least-defect-summary.json"
+      ],
+      "elapsed_seconds": 25.931,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "generation",
+      "stdout_sha256": "293c71f893441d769e245cd2dd6feb05f3e4d824822dcb1a2eb89475a239f926"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/experiment.py",
+        "--output",
+        "/mnt/data/rigidity_continue/reports/least-defect.O.json",
+        "--summary",
+        "/mnt/data/rigidity_continue/reports/least-defect-summary.O.json"
+      ],
+      "elapsed_seconds": 25.965,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "generation",
+      "stdout_sha256": "293c71f893441d769e245cd2dd6feb05f3e4d824822dcb1a2eb89475a239f926"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/verify.py",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--section",
+        "arithmetic",
+        "--self-test"
+      ],
+      "elapsed_seconds": 2.814,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "arithmetic",
+      "stdout_sha256": "94dc0498e06f4f1800caad44aa781091bbc326af3b67a909757d74dfcc7a6e45"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/verify.py",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--section",
+        "arithmetic",
+        "--self-test"
+      ],
+      "elapsed_seconds": 2.786,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "arithmetic",
+      "stdout_sha256": "94dc0498e06f4f1800caad44aa781091bbc326af3b67a909757d74dfcc7a6e45"
+    },
+    {
+      "argv": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/verify.py",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--section",
+        "arithmetic",
+        "--self-test"
+      ],
+      "elapsed_seconds": 2.85,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "arithmetic",
+      "stdout_sha256": "94dc0498e06f4f1800caad44aa781091bbc326af3b67a909757d74dfcc7a6e45"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/verify.py",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--section",
+        "refinements",
+        "--self-test"
+      ],
+      "elapsed_seconds": 30.333,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "refinements",
+      "stdout_sha256": "0fa230710a40f3c812c120a9928ce671c6fe14edabe23d7ec07ee2be99d3579e"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/verify.py",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--section",
+        "refinements",
+        "--self-test"
+      ],
+      "elapsed_seconds": 30.308,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "refinements",
+      "stdout_sha256": "0fa230710a40f3c812c120a9928ce671c6fe14edabe23d7ec07ee2be99d3579e"
+    },
+    {
+      "argv": [
+        "python",
+        "-OO",
+        "-B",
+        "-S",
+        "/mnt/data/rigidity_continue/research/component-rigidity/least-defect/verify.py",
+        "/mnt/data/rigidity_continue/reports/least-defect.json",
+        "--section",
+        "refinements",
+        "--self-test"
+      ],
+      "elapsed_seconds": 30.161,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_key": "refinements",
+      "stdout_sha256": "0fa230710a40f3c812c120a9928ce671c6fe14edabe23d7ec07ee2be99d3579e"
+    }
+  ],
+  "complete_checkout_validator_run": false,
+  "corpus_bytes": 30615733,
+  "corpus_sha256": "752050ec683799d171b7d9d6d9ba8c024541d38f7bcae8da0bb39266e2da32a7",
+  "date_utc": "2026-09-25T08:23:05.009994+00:00",
+  "development_failures_and_limits": [
+    "A single-edge least-defect development run for N=27 retained 192 rounds and ended at its cap. A longer 768-round exploration hit the 45-second tool limit without a completed output. These are not nonconvergence claims.",
+    "A combined optimized full-checker invocation hit the tool wall-time and produced no final receipt. The final checker was then partitioned into two complementary inventory sections; BOTH sections were fully rerun in normal, -O and -OO modes as recorded above.",
+    "The 27 batch-policy convergence is a bounded policy regression, not a new convergence family or a speed improvement over forward iteration.",
+    "The four 2^4096 examples count actual odd-equation defects of explicitly supplied step functions. They do not verify Collatz to those heights.",
+    "Only the prior hash-pinned generic cut checker is reused. New arithmetic reconstruction imports no oracle, producer or flow solver. This is same-author implementation diversity, not independent peer review.",
+    "No proof of the source-dependent uniform optimized repair-cost bound was obtained. All-height counting does not imply a finite number of repairs.",
+    "Global algorithm precision limits and unfinished finite round cases are retained, not relabeled as theorem failures or successful universal selection."
+  ],
+  "direct_git_transport": "DNS failed; authorized connector Git-data publication used; actual remote readback is recorded separately after commit creation.",
+  "external_priority_confirmation": false,
+  "final_checker_complete_inventory_covered_by_sections": [
+    "arithmetic",
+    "refinements"
+  ],
+  "formal_proof_build": false,
+  "independent_mathematical_review": false,
+  "normal_optimized_corpus_byte_identical": true,
+  "normal_optimized_summary_byte_identical": true,
+  "parent_commit": "c0e76d1e372b844c0e5911bdc035476c805dbd72",
+  "remote_CI_run": false,
+  "repository": "GettysburgResearch/collatz",
+  "schema": "least-defect-validation-v1",
+  "source_sha256": {
+    "PROOF.md": "8d689582898f631153d3b77f6b7a5df18f8e3ec25cdb310723f960635712829e",
+    "README.md": "3db7a45519fc92737a3adb7bf87d363fa48fc33365bf2ae82efc955f99970d58",
+    "experiment.py": "fa41d9a3af9bf70b3095994d53c47f4051f19798d5590e624de14ef184568225",
+    "oracle.py": "ae63b671a7b64e86f120b143df881d3539de166152aec77a5fd24e71e5a686fe",
+    "verify.py": "731cb6d1c5beb43eac3c631ae2f08db73f75b49c06158916ef3254078f13d24a"
+  },
+  "status": "PROPOSED",
+  "stdout_records": {
+    "arithmetic": "{\"corpus_sha256\": \"752050ec683799d171b7d9d6d9ba8c024541d38f7bcae8da0bb39266e2da32a7\", \"counts\": {\"arithmetic_blocks\": 21433, \"control_cycle_steps\": 12, \"cutoff_certificates\": 2764, \"least_certificates\": 276, \"literal_cutoff_checks\": 2484, \"literal_shell_sources\": 141312, \"models\": 280, \"mutations_rejected\": 22, \"recurrence_checks\": 1104, \"shell_certificates\": 5356, \"symbolic_4096_bit_cutoffs\": 4}, \"preserved_cut_checker\": {}, \"section\": \"arithmetic\", \"status\": \"PASS\"}\n",
+    "generation": "{\"corpus_sha256\": \"752050ec683799d171b7d9d6d9ba8c024541d38f7bcae8da0bb39266e2da32a7\", \"huge_count_bits\": [4095, 4094, 4094, 4092], \"huge_cutoffs\": 4, \"literal_shell_source_checks\": 141312, \"model_cases\": 276, \"recurrence_checks\": 1104, \"refinements\": [{\"N\": 1, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 0, \"largest_completion_depth\": 0, \"largest_selected\": null, \"p\": 3, \"path_steps\": 0, \"rounds\": 0, \"status\": \"CONVERGENCE\"}, {\"N\": 8, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 0, \"largest_completion_depth\": 0, \"largest_selected\": null, \"p\": 3, \"path_steps\": 3, \"rounds\": 0, \"status\": \"CONVERGENCE\"}, {\"N\": 3, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 3, \"largest_completion_depth\": 2, \"largest_selected\": 9, \"p\": 3, \"path_steps\": 5, \"rounds\": 2, \"status\": \"CONVERGENCE\"}, {\"N\": 7, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 9, \"largest_completion_depth\": 4, \"largest_selected\": 25, \"p\": 3, \"path_steps\": 11, \"rounds\": 6, \"status\": \"CONVERGENCE\"}, {\"N\": 27, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 826, \"largest_completion_depth\": 12, \"largest_selected\": 3089, \"p\": 3, \"path_steps\": 70, \"rounds\": 130, \"status\": \"CONVERGENCE\"}, {\"N\": 97, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 489, \"largest_completion_depth\": 11, \"largest_selected\": 1793, \"p\": 3, \"path_steps\": null, \"rounds\": 96, \"status\": \"UNRESOLVED_AT_ROUND_CAP\"}, {\"N\": 871, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 43, \"largest_completion_depth\": 13, \"largest_selected\": 7841, \"p\": 3, \"path_steps\": null, \"rounds\": 16, \"status\": \"UNRESOLVED_AT_ROUND_CAP\"}, {\"N\": 13, \"batch_limit\": 16, \"cutoff_bits\": null, \"inserted_edges\": 112, \"largest_completion_depth\": 12, \"largest_selected\": 2161, \"p\": 5, \"path_steps\": null, \"rounds\": 32, \"status\": \"UNRESOLVED_AT_ROUND_CAP\"}, {\"N\": 27, \"batch_limit\": 16, \"cutoff_bits\": 13, \"inserted_edges\": 821, \"largest_completion_depth\": 12, \"largest_selected\": 3077, \"p\": 3, \"path_steps\": 70, \"rounds\": 140, \"status\": \"CONVERGENCE\"}, {\"N\": 27, \"batch_limit\": 16, \"cutoff_bits\": 8, \"inserted_edges\": 33, \"largest_completion_depth\": 7, \"largest_selected\": 169, \"p\": 3, \"path_steps\": null, \"rounds\": 16, \"status\": \"FULL_FINITE_SEPARATOR\"}, {\"N\": 13, \"batch_limit\": 16, \"cutoff_bits\": 10, \"inserted_edges\": 38, \"largest_completion_depth\": 9, \"largest_selected\": 333, \"p\": 5, \"path_steps\": null, \"rounds\": 11, \"status\": \"FULL_FINITE_SEPARATOR\"}]}\n",
+    "refinements": "{\"corpus_sha256\": \"752050ec683799d171b7d9d6d9ba8c024541d38f7bcae8da0bb39266e2da32a7\", \"counts\": {\"arithmetic_blocks\": 399561, \"convergence\": 6, \"cutoff_certificates\": 169, \"full_finite_separator\": 2, \"least_certificates\": 285, \"models\": 454, \"mutations_rejected\": 22, \"path_steps\": 159, \"physical_repair_edges\": 2374, \"refinements\": 11, \"repair_rounds\": 449, \"shell_certificates\": 5845, \"unresolved_at_round_cap\": 3}, \"preserved_cut_checker\": {\"cut_certificates\": 454, \"dyadic_terminal_intervals\": 146339, \"flow_edges\": 70961, \"pin_infeasibilities\": 6}, \"section\": \"refinements\", \"status\": \"PASS\"}\n"
+  },
+  "summary_sha256": "3755be13ccc54ce5e0fde7e80383283e4748b277f2a66b7fdba2fd520e5a09d0"
+}
