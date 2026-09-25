@@ -1,0 +1,341 @@
+{
+  "branch": "research/anchored-cuts-constructive-20260925",
+  "checks_not_run": [
+    "Complete-checkout root validator",
+    "remote CI",
+    "formal proof build",
+    "independent mathematical review"
+  ],
+  "claims": "DC-001--006",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "run.py",
+        "--output",
+        "/mnt/data/pass4-evidence/corpus-normal.json"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "certificates": 46,
+        "refinements": 6,
+        "sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+        "zeta_terms": 64
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "verify.py",
+        "/mnt/data/pass4-evidence/corpus-normal.json",
+        "--self-test"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "certificates": 46,
+        "flow_edges": 2088,
+        "mutations_rejected": 17,
+        "physical_edges": 2485,
+        "refinement_flow_edges": 11724,
+        "refinement_rounds": 50,
+        "sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+        "status": "PASS"
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-S",
+        "-B",
+        "check_models.py"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "admissible_assignments": 4870,
+        "dyadic_extension_checks": 4099,
+        "enumerated_assignments": 16224,
+        "exhaustive_problems": 276,
+        "fresh_repair_cases": 176,
+        "full_graph_comparisons": 14,
+        "phase_transition_checks": 62,
+        "phase_transition_first_horizon": 29,
+        "prior_source_sha256": "0db60cf8e0704deb7bb6ddffa9f674d2aa03b3a12b18bf7c33ceb681d0cabb62",
+        "sharp_fixture": {
+          "after": [
+            4,
+            "-5197",
+            "900"
+          ],
+          "before": [
+            2,
+            "-205",
+            "72"
+          ],
+          "increment": [
+            2,
+            "-5269",
+            "1800"
+          ],
+          "shell_variation": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "status": "PASS",
+        "strictly_positive_repairs": 41,
+        "terminal_penalty_checks": 2
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-S",
+        "-B",
+        "run.py",
+        "--output",
+        "/mnt/data/pass4-evidence/corpus-optimized.json"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "certificates": 46,
+        "refinements": 6,
+        "sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+        "zeta_terms": 64
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-S",
+        "-B",
+        "verify.py",
+        "/mnt/data/pass4-evidence/corpus-optimized.json",
+        "--self-test"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "certificates": 46,
+        "flow_edges": 2088,
+        "mutations_rejected": 17,
+        "physical_edges": 2485,
+        "refinement_flow_edges": 11724,
+        "refinement_rounds": 50,
+        "sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+        "status": "PASS"
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-S",
+        "-B",
+        "check_models.py"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "admissible_assignments": 4870,
+        "dyadic_extension_checks": 4099,
+        "enumerated_assignments": 16224,
+        "exhaustive_problems": 276,
+        "fresh_repair_cases": 176,
+        "full_graph_comparisons": 14,
+        "phase_transition_checks": 62,
+        "phase_transition_first_horizon": 29,
+        "prior_source_sha256": "0db60cf8e0704deb7bb6ddffa9f674d2aa03b3a12b18bf7c33ceb681d0cabb62",
+        "sharp_fixture": {
+          "after": [
+            4,
+            "-5197",
+            "900"
+          ],
+          "before": [
+            2,
+            "-205",
+            "72"
+          ],
+          "increment": [
+            2,
+            "-5269",
+            "1800"
+          ],
+          "shell_variation": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "status": "PASS",
+        "strictly_positive_repairs": 41,
+        "terminal_penalty_checks": 2
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-S",
+        "-B",
+        "run.py",
+        "--output",
+        "/mnt/data/pass4-evidence/corpus-double_optimized.json"
+      ],
+      "result": "Completed internal checks and success summary captured by the grouped harness.",
+      "stderr": "",
+      "stdout": {
+        "certificates": 46,
+        "refinements": 6,
+        "sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+        "zeta_terms": 64
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-S",
+        "-B",
+        "verify.py",
+        "/mnt/data/pass4-evidence/corpus-double_optimized.json",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": {
+        "certificates": 46,
+        "flow_edges": 2088,
+        "mutations_rejected": 17,
+        "physical_edges": 2485,
+        "refinement_flow_edges": 11724,
+        "refinement_rounds": 50,
+        "sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+        "status": "PASS"
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-OO",
+        "-S",
+        "-B",
+        "check_models.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": {
+        "admissible_assignments": 4870,
+        "dyadic_extension_checks": 4099,
+        "enumerated_assignments": 16224,
+        "exhaustive_problems": 276,
+        "fresh_repair_cases": 176,
+        "full_graph_comparisons": 14,
+        "phase_transition_checks": 62,
+        "phase_transition_first_horizon": 29,
+        "prior_source_sha256": "0db60cf8e0704deb7bb6ddffa9f674d2aa03b3a12b18bf7c33ceb681d0cabb62",
+        "sharp_fixture": {
+          "after": [
+            4,
+            "-5197",
+            "900"
+          ],
+          "before": [
+            2,
+            "-205",
+            "72"
+          ],
+          "increment": [
+            2,
+            "-5269",
+            "1800"
+          ],
+          "shell_variation": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "status": "PASS",
+        "strictly_positive_repairs": 41,
+        "terminal_penalty_checks": 2
+      }
+    }
+  ],
+  "corpus_bytes": 785799,
+  "corpus_sha256": "2ca06c228949c80ec3742000df4978f85d7b406ee47a4d7cf7f23e765aa30660",
+  "harness_note": "Grouped execution hit tool wall-time after successful subcommand outputs; remaining -OO checks were completed separately. All retained corpora and summaries were then compared byte-for-byte.",
+  "outputs_identical_across_normal_O_OO": true,
+  "parent_commit": "45c970ccb3d0b034f6e5696710d9a94df66b2b27",
+  "prior_reference_blob": "ac790f1ee3a1364a1e146f55c6a8d3e3d9c47093",
+  "publication": "Prepublication execution receipt. Branch publication and remote hash readback are recorded separately on PR #138.",
+  "scientific_limits": [
+    "No height-uniform full-graph upper repair bound",
+    "No all-input convergence selector",
+    "Complete finite-edge oracle scans its stated cutoff; symbolic large-height examples do not",
+    "Source-7 height 2^30 transition is a retained-constraint optimization effect, not an orbit delay",
+    "The infinity-horizon coloring satisfies all halving edges and only the retained odd edges"
+  ],
+  "source_files": {
+    "PROOF.md": {
+      "bytes": 26044,
+      "git_blob": "e4319416c3b03317868c2c58d2d204ad76551f6f",
+      "sha256": "7fc6d2e3310549c21ed6fc86481a6edc455d2acdf159a21aa8a86f90ef4e0832"
+    },
+    "README.md": {
+      "bytes": 2989,
+      "git_blob": "68b769e909fbbc3da40d8bd999685aad33f8083c",
+      "sha256": "22f0db85e5242af141609c61ab632a872926421813bf437266acd963073edd44"
+    },
+    "check_models.py": {
+      "bytes": 7174,
+      "git_blob": "8e362703a4a1eea4fa3ac22bc26261e9ea8e4b52",
+      "sha256": "ea5e7f8a2b1345bf788eecb7e0a45b8d60ba078c7ebbe1335a1688d06eeaf049"
+    },
+    "run.py": {
+      "bytes": 13832,
+      "git_blob": "6e054c3b4c197896874ccc3fb4f056d8525d78a2",
+      "sha256": "848161974641ad8ac822a0a400e90b1564b619c5482f49baf47a2d1d16ec206b"
+    },
+    "verify.py": {
+      "bytes": 13222,
+      "git_blob": "987d1995f6bd279465235d6936e470dd9fc9b4b1",
+      "sha256": "a0db6d7bb8a3e88763f87e627692966579bc0d1ea972b7240e8da4fe1fea36a0"
+    }
+  },
+  "status": "PROPOSED; SAME-AUTHOR CHECKS, NOT INDEPENDENT MATHEMATICAL REVIEW",
+  "transport_attempt": {
+    "command": "git ls-remote https://github.com/GettysburgResearch/collatz.git refs/heads/research/anchored-cuts-constructive-20260925",
+    "error": "Could not resolve host: github.com",
+    "exit_code": 128
+  }
+}
