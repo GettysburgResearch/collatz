@@ -1,0 +1,119 @@
+{
+  "branches": [
+    {
+      "domain_digit": 360448,
+      "index": 0,
+      "output_digit": 365367,
+      "word": "AAAAAB"
+    },
+    {
+      "domain_digit": 471040,
+      "index": 1,
+      "output_digit": 477468,
+      "word": "AAAABA"
+    },
+    {
+      "domain_digit": 267776,
+      "index": 2,
+      "output_digit": 271431,
+      "word": "AAABAA"
+    },
+    {
+      "domain_digit": 366784,
+      "index": 3,
+      "output_digit": 371790,
+      "word": "AABAAA"
+    },
+    {
+      "domain_digit": 19416,
+      "index": 4,
+      "output_digit": 19683,
+      "word": "ABAAAA"
+    },
+    {
+      "domain_digit": 349523,
+      "index": 5,
+      "output_digit": 354294,
+      "word": "BAAAAA"
+    }
+  ],
+  "experiment_id": "X-8404",
+  "growth_matrix": [
+    [6784, 3822, 4961, 877, 754, 5979],
+    [3441, 479, 1618, 4687, 4564, 2636],
+    [3256, 294, 1433, 4502, 4379, 2451],
+    [6625, 3663, 4802, 718, 595, 5820],
+    [1473, 5664, 6803, 2719, 2596, 668],
+    [149, 4340, 5479, 1395, 1272, 6497]
+  ],
+  "interpretation": {
+    "not_proved": [
+      "a forever-defined finite quotient state",
+      "a divergent Collatz seed",
+      "a positive cycle",
+      "the Collatz conjecture or its negation"
+    ],
+    "proved_by_finite_replay": [
+      "all 36 exact ordered-pair quotient residues and successors",
+      "strict quotient growth for every ordered pair and three lift values",
+      "the complete least initial quotient through seven transitions"
+    ]
+  },
+  "maximum_rho": 498669,
+  "maximum_sigma": 505472,
+  "maximum_strict_growth": 6803,
+  "minimum_rho": 10922,
+  "minimum_sigma": 11071,
+  "minimum_strict_growth": 149,
+  "multiplier": 531441,
+  "ordered_pair_count": 36,
+  "payload_sha256": "2fdf172b751762d525dee945a93530d55fc743336a8e6aaa6ea8cd98d7676984",
+  "quotient_minima": [
+    {
+      "minimum_bits": 14,
+      "minimum_initial_quotient": 10922,
+      "transitions": 1,
+      "type_sequences": 36
+    },
+    {
+      "minimum_bits": 28,
+      "minimum_initial_quotient": 256956337,
+      "transitions": 2,
+      "type_sequences": 216
+    },
+    {
+      "minimum_bits": 44,
+      "minimum_initial_quotient": 12629214674380,
+      "transitions": 3,
+      "type_sequences": 1296
+    },
+    {
+      "minimum_bits": 62,
+      "minimum_initial_quotient": 4207230863973554386,
+      "transitions": 4,
+      "type_sequences": 7776
+    },
+    {
+      "minimum_bits": 78,
+      "minimum_initial_quotient": 285686745523546268150314,
+      "transitions": 5,
+      "type_sequences": 46656
+    },
+    {
+      "minimum_bits": 97,
+      "minimum_initial_quotient": 91711870727046848870016670378,
+      "transitions": 6,
+      "type_sequences": 279936
+    },
+    {
+      "minimum_bits": 110,
+      "minimum_initial_quotient": 1039272265886964930051342828874282,
+      "transitions": 7,
+      "type_sequences": 1679616
+    }
+  ],
+  "radix": 524288,
+  "refund": 7153,
+  "schema_version": 1,
+  "status": "EMPIRICAL / EXACT FINITE INTERFACE AUDIT"
+}

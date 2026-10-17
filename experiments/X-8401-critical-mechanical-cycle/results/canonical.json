@@ -1,0 +1,104 @@
+{
+  "block_replacement": {
+    "legal_sites_generated": 80,
+    "mask_first_40": 679923852302,
+    "mask_last_40": 1092615932587,
+    "selected_positions": [
+      2,
+      4,
+      6,
+      23,
+      30,
+      35,
+      39,
+      42,
+      44,
+      47,
+      54,
+      59,
+      61,
+      64,
+      71,
+      78,
+      80,
+      83,
+      85,
+      92,
+      95,
+      97,
+      102,
+      107,
+      112,
+      117,
+      121,
+      138,
+      141,
+      143,
+      145,
+      148,
+      150,
+      158,
+      165,
+      167,
+      174,
+      177,
+      179,
+      182,
+      184,
+      186,
+      189
+    ],
+    "selected_swap_count": 43,
+    "small_control_delta": -12
+  },
+  "certified_divisor_component": {
+    "base_mechanical_constant_mod_product": 655756015106852524,
+    "each_factor_divides_2A_minus_3K": true,
+    "factors": [
+      7,
+      191,
+      281,
+      28591,
+      136398329
+    ],
+    "modified_constant_mod_product": 0,
+    "product": 1465129870107858983
+  },
+  "completion_safe_real_filter": {
+    "conclusion": "the frozen modified word is not an integral cycle",
+    "distance_to_next_integer_lower_bound": "0.002471646090148989214028843745",
+    "fixed_point_lower": "1791361447298439130709020.99752835390985101078597115625463997678316699077019108974634764751200085257269769107803891195190",
+    "fixed_point_upper": "1791361447298439130709020.99752835390985101078597115625463997678316699077019108974634764751200085455151399874064825798230",
+    "interval_width": "1.97881630766260934603040E-72",
+    "unique_floor": 1791361447298439130709020
+  },
+  "experiment_id": "X-8401",
+  "interpretation": {
+    "not_proved": [
+      "complete factorization of the cycle denominator",
+      "a positive nontrivial cycle",
+      "a divergent Collatz orbit",
+      "the Collatz conjecture or its negation"
+    ],
+    "proved_by_exact_replay": [
+      "the Euclidean monoid summary at the frozen modulus",
+      "divisibility by the five listed denominator factors",
+      "the 43 disjoint block replacements",
+      "the directed real interval excluding integrality",
+      "the exact cyclic local-minimum count"
+    ]
+  },
+  "mechanical_compiler": {
+    "euclidean_recursion_depth_bound": "O(log k)",
+    "lower_word": true,
+    "summary_length": 3149971404836,
+    "summary_valuation": 4992586555009
+  },
+  "schema_version": 1,
+  "target": {
+    "accelerated_length": 3149971404836,
+    "extra_binary_digits": 1842615150173,
+    "local_minima_after_swaps": 1307356254653,
+    "total_valuation": 4992586555009
+  }
+}

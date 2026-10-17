@@ -1,0 +1,18 @@
+{
+  "experiment_id": "X-8402",
+  "schema_version": 1,
+  "cycle_length_limit": 50000,
+  "maximum_possible_minimum": 1447682232,
+  "maximum_certificate_length": 47468,
+  "maximum_certificate_total_valuation": 75235,
+  "nstar_admissible_length_count": 1,
+  "nstar_plus_one_admissible": false,
+  "odd_minima_tested": 723841113,
+  "nontrivial_cycle_hits": 0,
+  "maximum_first_drop_steps": 251,
+  "first_seed_attaining_maximum": 1200991791,
+  "fallen_state_for_record_seed": 1064232949,
+  "maximum_intermediate_value_bits": 62,
+  "arithmetic": "exact boost::multiprecision integers for the product window; exact uint64 accelerated replay with overflow guards",
+  "status": "EMPIRICAL / EXHAUSTIVE EXACT FINITE CERTIFICATE"
+}
