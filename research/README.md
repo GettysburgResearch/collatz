@@ -22,6 +22,7 @@ Local source collections are also available for detailed exploration:
 
 | Collection | What is there | How to interpret its status |
 |---|---|---|
+| [Fixed-source splices and restart budgets](paired-comparison/source-budget/README.md) | A sharp `4N+3` ternary splice, a common guarded companion rank, repaired ordinary families, and quantified failures of source order. | PROPOSED follow-on to exact #130/#133--136 source pins; explicit failed guards remain, with no complete Collatz proof. |
 | [Critical mass and inverse frontiers](astra-critical-mass/README.md) | Proof attempts, finite-time bounds, physical merging, inverse pruning and counterexamples. | Use the mass/rank topic guides to identify reviewed clauses; author-stage labels and failed global attempts are retained. |
 | [Section renewal and moving ranks](astra-three-routes/README.md) | Complementary operator, source-height, coefficient and rank constructions, including distinct alternative continuation packets. | A shared directory or experiment number does not identify one theorem. Use the specific path, map and rank named by the guide. |
 | [External Collatz dossier](external/mazur-2026/README.md) | External result summaries, source evidence, local analyses and proposed strengthening routes. | External source-qualified theorems, native reviewed components and open strengthening hypotheses have different statuses. |
