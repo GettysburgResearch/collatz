@@ -1,0 +1,33 @@
+{
+  "counters": {
+    "continuations": 1536,
+    "current_blocks": 384,
+    "finite_states": 48,
+    "input_affine_alphabets": 384,
+    "output_affine_alphabets": 384,
+    "slope_compatibilities": 384,
+    "symbol_identity_checks": 1536,
+    "translation_carry_checks": 384
+  },
+  "experiment": "X-8510",
+  "heights": [
+    16,
+    32,
+    48,
+    64
+  ],
+  "semantic_digest": "9a200a568909a8686c6f36436dac1bc6ef4be906b043fdba05aa5be70e2c057d",
+  "slopes": {
+    "input_by_gamma": {
+      "1": 1,
+      "2": 43,
+      "3": 57
+    },
+    "output_by_type": {
+      "0": 25,
+      "1": 51,
+      "2": 25,
+      "3": 11
+    }
+  }
+}

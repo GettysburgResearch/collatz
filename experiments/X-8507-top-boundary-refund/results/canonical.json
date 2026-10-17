@@ -1,0 +1,31 @@
+{
+  "counters": {
+    "continuations": 1536,
+    "current_blocks": 384,
+    "distinct_rho_sets": 384,
+    "exact_replays": 4608,
+    "finite_states": 48,
+    "nonnegative_sigma": 1536,
+    "type_independent_modulus": 1536,
+    "unique_ternary_matches": 1536
+  },
+  "experiment": "X-8507",
+  "heights": [
+    32,
+    64,
+    3760,
+    3776
+  ],
+  "threshold": {
+    "doubling_margin": 433,
+    "doubling_refund_height": 3776,
+    "doubling_threshold_holds_exactly": true,
+    "lower_log_certificate": "3^665 > 2^1054",
+    "previous_multiple_doubling_fails_exactly": true,
+    "previous_multiple_strict_fails_exactly": true,
+    "strict_margin": 90,
+    "strict_refund_height": 3760,
+    "strict_threshold_holds_exactly": true
+  },
+  "transition_digest": "66c03b99bb494255cc8d56f1e226c3f850f9548a60a0e3d3a036abac449cc724"
+}

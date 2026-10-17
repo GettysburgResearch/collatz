@@ -1,0 +1,226 @@
+{
+  "carry_rows": [
+    {
+      "appended_ternary_digit_bits": 178,
+      "carry_bits": 188,
+      "inverse_bits": 363,
+      "modulus_bits": 363,
+      "next_carry_bits": 367,
+      "odd_multiplier_bits": 189,
+      "reduced_carry_bits": 188,
+      "t": 16
+    },
+    {
+      "appended_ternary_digit_bits": 177,
+      "carry_bits": 367,
+      "inverse_bits": 539,
+      "modulus_bits": 539,
+      "next_carry_bits": 543,
+      "odd_multiplier_bits": 367,
+      "reduced_carry_bits": 364,
+      "t": 32
+    },
+    {
+      "appended_ternary_digit_bits": 178,
+      "carry_bits": 41548,
+      "inverse_bits": 41369,
+      "modulus_bits": 41371,
+      "next_carry_bits": 41728,
+      "odd_multiplier_bits": 41550,
+      "reduced_carry_bits": 41549,
+      "t": 3744
+    },
+    {
+      "appended_ternary_digit_bits": 178,
+      "carry_bits": 41728,
+      "inverse_bits": 41547,
+      "modulus_bits": 41547,
+      "next_carry_bits": 41905,
+      "odd_multiplier_bits": 41728,
+      "reduced_carry_bits": 41728,
+      "t": 3760
+    },
+    {
+      "appended_ternary_digit_bits": 177,
+      "carry_bits": 66580,
+      "inverse_bits": 66187,
+      "modulus_bits": 66187,
+      "next_carry_bits": 66757,
+      "odd_multiplier_bits": 66580,
+      "reduced_carry_bits": 66579,
+      "t": 6000
+    }
+  ],
+  "connector_normal_form_cases": 80,
+  "decoder_cases": 384,
+  "decoder_digest": "b3607db562e5db1cc449021f11d68283d6a4cd1c459e24104861ec137d050986",
+  "depth_rows": [
+    {
+      "cylinder_bits": 41547,
+      "deficit_bits": 41545,
+      "directive_bits": 2,
+      "length": 1
+    },
+    {
+      "cylinder_bits": 83270,
+      "deficit_bits": 83266,
+      "directive_bits": 4,
+      "length": 2
+    },
+    {
+      "cylinder_bits": 125169,
+      "deficit_bits": 125163,
+      "directive_bits": 6,
+      "length": 3
+    },
+    {
+      "cylinder_bits": 167244,
+      "deficit_bits": 167236,
+      "directive_bits": 8,
+      "length": 4
+    },
+    {
+      "cylinder_bits": 209495,
+      "deficit_bits": 209485,
+      "directive_bits": 10,
+      "length": 5
+    },
+    {
+      "cylinder_bits": 251922,
+      "deficit_bits": 251910,
+      "directive_bits": 12,
+      "length": 6
+    },
+    {
+      "cylinder_bits": 294525,
+      "deficit_bits": 294511,
+      "directive_bits": 14,
+      "length": 7
+    },
+    {
+      "cylinder_bits": 337304,
+      "deficit_bits": 337288,
+      "directive_bits": 16,
+      "length": 8
+    },
+    {
+      "cylinder_bits": 380259,
+      "deficit_bits": 380241,
+      "directive_bits": 18,
+      "length": 9
+    },
+    {
+      "cylinder_bits": 423390,
+      "deficit_bits": 423370,
+      "directive_bits": 20,
+      "length": 10
+    },
+    {
+      "cylinder_bits": 466697,
+      "deficit_bits": 466675,
+      "directive_bits": 22,
+      "length": 11
+    },
+    {
+      "cylinder_bits": 510180,
+      "deficit_bits": 510156,
+      "directive_bits": 24,
+      "length": 12
+    }
+  ],
+  "experiment": "X-8501",
+  "growth_cases": 384,
+  "payload_digest": "6328faaa680e54ab0245ba8cca41c81cebbb03ede1299b9d948d1fbf1aee41fd",
+  "periodic_cutoff": {
+    "dimension_58_square_difference": 13456,
+    "dimension_59_square_certificate": "118^2 < 13925",
+    "first_failed_dimension": 59,
+    "last_source_dimension": 58,
+    "lower_log_certificate": "2^1287 > 3^812",
+    "upper_log_certificate": "2^1298 < 3^819"
+  },
+  "phase_identity_cases": 75284,
+  "refund_rows": [
+    {
+      "53_scaled_margin": 69,
+      "current_binary_exponent": 41371,
+      "least_multiple_16_base": 3744,
+      "next_binary_exponent": 41547,
+      "odd_exponent": 26215,
+      "width": 1
+    },
+    {
+      "53_scaled_margin": 122,
+      "current_binary_exponent": 123750,
+      "least_multiple_16_base": 5600,
+      "next_binary_exponent": 124454,
+      "odd_exponent": 78526,
+      "width": 2
+    },
+    {
+      "53_scaled_margin": 180,
+      "current_binary_exponent": 411532,
+      "least_multiple_16_base": 9312,
+      "next_binary_exponent": 414348,
+      "odd_exponent": 261436,
+      "width": 4
+    },
+    {
+      "53_scaled_margin": 104,
+      "current_binary_exponent": 1479192,
+      "least_multiple_16_base": 16736,
+      "next_binary_exponent": 1490456,
+      "odd_exponent": 940408,
+      "width": 8
+    },
+    {
+      "53_scaled_margin": 464,
+      "current_binary_exponent": 5585712,
+      "least_multiple_16_base": 31600,
+      "next_binary_exponent": 5630768,
+      "odd_exponent": 3552752,
+      "width": 16
+    },
+    {
+      "53_scaled_margin": 1952,
+      "current_binary_exponent": 21680736,
+      "least_multiple_16_base": 61328,
+      "next_binary_exponent": 21860960,
+      "odd_exponent": 13793248,
+      "width": 32
+    },
+    {
+      "53_scaled_margin": 754,
+      "current_binary_exponent": 70236782,
+      "least_multiple_16_base": 109616,
+      "next_binary_exponent": 70828846,
+      "odd_exponent": 44689638,
+      "width": 58
+    },
+    {
+      "53_scaled_margin": 2880,
+      "current_binary_exponent": 85387456,
+      "least_multiple_16_base": 120768,
+      "next_binary_exponent": 86108352,
+      "odd_exponent": 54330304,
+      "width": 64
+    },
+    {
+      "53_scaled_margin": 1664,
+      "current_binary_exponent": 338878848,
+      "least_multiple_16_base": 239648,
+      "next_binary_exponent": 341762432,
+      "odd_exponent": 215635840,
+      "width": 128
+    },
+    {
+      "53_scaled_margin": 7424,
+      "current_binary_exponent": 1350218496,
+      "least_multiple_16_base": 477424,
+      "next_binary_exponent": 1361752832,
+      "odd_exponent": 859201280,
+      "width": 256
+    }
+  ],
+  "status": "EMPIRICAL / EXACT FINITE INTERFACE AUDIT"
+}

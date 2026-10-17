@@ -1,0 +1,21 @@
+{
+  "automatic_source_cells": 256,
+  "experiment": "X-8505",
+  "growth_checks": 256,
+  "heights": [
+    3744,
+    3824
+  ],
+  "high_block_divisibility": 256,
+  "intrinsic_core_transitions": 256,
+  "lifts": [
+    0,
+    1
+  ],
+  "limitations": [
+    "finite reconstruction only",
+    "no forever-defined core is supplied"
+  ],
+  "semantic_digest": "195d29ef16bb7038ac9b3da9080344dfcc450f6663a973a757e475503afcf10e",
+  "six_bit_output_decodes": 256
+}

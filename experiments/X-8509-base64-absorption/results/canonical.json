@@ -1,0 +1,30 @@
+{
+  "absorption": {
+    "canonical_eventual_limit": 234,
+    "canonical_uniform_limit": 471,
+    "factor4_margin": 321,
+    "first_factor4_multiple_16": 5632,
+    "first_preservation_multiple_16": 5616,
+    "q_5600": -1,
+    "q_5616": 0,
+    "q_5632": 2
+  },
+  "counters": {
+    "base64_replays": 2304,
+    "carry_bounds": 192,
+    "common_carries": 192,
+    "common_prefix_sets": 192,
+    "common_ternary_residues": 192,
+    "continuations": 768,
+    "current_blocks": 192,
+    "distinct_input_digits": 192,
+    "distinct_output_digits": 192,
+    "finite_states": 24
+  },
+  "experiment": "X-8509",
+  "heights": [
+    32,
+    48
+  ],
+  "semantic_digest": "b05a53257b8309fcd9da40d389ed87daa8ffdeb208b5c3837b726668ac002b91"
+}

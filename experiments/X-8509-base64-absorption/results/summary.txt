@@ -1,0 +1,17 @@
+X-8509 base-64 top-cell and absorption audit
+finite states:                    24
+current blocks:                   192
+four-way continuations:           768
+common long prefixes:             192
+distinct input digit sets:        192
+distinct output digit sets:       192
+common carry identities:          192
+base-64 exact replays:             2304
+noncanonical preservation height: 5616
+factor-4 absorption height:        5632
+semantic digest:                  b05a53257b8309fcd9da40d389ed87daa8ffdeb208b5c3837b726668ac002b91
+
+independent sample states:         4
+independent sample blocks:         8
+independent continuations:        32
+independent exact replays:        64
