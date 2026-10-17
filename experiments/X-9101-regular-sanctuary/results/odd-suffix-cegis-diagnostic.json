@@ -1,0 +1,172 @@
+{
+  "batch_history": [
+    {
+      "gate": 2,
+      "longest_full_witness_length": 6,
+      "model_number_cumulative": 1,
+      "model_number_this_run": 1,
+      "new_implications": 1,
+      "product_states": 71,
+      "relation_edges": 10,
+      "shortest_full_witness_length": 6,
+      "violating_endpoint_pairs": 1
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 11,
+      "model_number_cumulative": 2,
+      "model_number_this_run": 2,
+      "new_implications": 3,
+      "product_states": 110,
+      "relation_edges": 19,
+      "shortest_full_witness_length": 6,
+      "violating_endpoint_pairs": 3
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 9,
+      "model_number_cumulative": 3,
+      "model_number_this_run": 3,
+      "new_implications": 3,
+      "product_states": 101,
+      "relation_edges": 21,
+      "shortest_full_witness_length": 6,
+      "violating_endpoint_pairs": 3
+    },
+    {
+      "gate": 2,
+      "longest_full_witness_length": 8,
+      "model_number_cumulative": 4,
+      "model_number_this_run": 4,
+      "new_implications": 3,
+      "product_states": 97,
+      "relation_edges": 17,
+      "shortest_full_witness_length": 6,
+      "violating_endpoint_pairs": 3
+    }
+  ],
+  "batches_before_run": 0,
+  "batches_cumulative": 4,
+  "batches_this_run": 4,
+  "bounded_or_incomplete": false,
+  "candidate_requires_odd_and_lift_verification": true,
+  "config": {
+    "gate": 2,
+    "max_models": 50,
+    "odd_offset": 1,
+    "solver_seed": 0,
+    "state_count": 5,
+    "time_limit_seconds": 10.0
+  },
+  "corresponding_shortcut_lift_gate": 3,
+  "covers_shortcut_gate_zero": false,
+  "disclaimer": "solver_unsat is a solver report only for this declared odd-suffix spine/gate partition. No independently checkable UNSAT proof is emitted.",
+  "elapsed_seconds": 0.078,
+  "elapsed_seconds_cumulative": 0.078,
+  "elapsed_seconds_this_run": 0.078,
+  "independently_checkable_unsat_proof_emitted": false,
+  "last_odd_verification": {
+    "accepted_witness_lsd": "110101",
+    "closure_input_lsd": "110101",
+    "closure_output_lsd": "1000001",
+    "product_states": 97,
+    "reason": "language is not forward invariant",
+    "relation_edges": 17,
+    "valid": false
+  },
+  "last_suffix_candidate": {
+    "accepting": [
+      2
+    ],
+    "alphabet": [
+      0,
+      1
+    ],
+    "bit_order": "lsd_first",
+    "start": 0,
+    "transitions": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ]
+  },
+  "learned_implications": [
+    {
+      "input_suffix_lsd": "10001",
+      "output_suffix_lsd": "01011"
+    },
+    {
+      "input_suffix_lsd": "10011",
+      "output_suffix_lsd": "011001"
+    },
+    {
+      "input_suffix_lsd": "010011",
+      "output_suffix_lsd": "1001"
+    },
+    {
+      "input_suffix_lsd": "1000110011",
+      "output_suffix_lsd": "01010011001"
+    },
+    {
+      "input_suffix_lsd": "10111",
+      "output_suffix_lsd": "001101"
+    },
+    {
+      "input_suffix_lsd": "0010111",
+      "output_suffix_lsd": "1110101"
+    },
+    {
+      "input_suffix_lsd": "00110111",
+      "output_suffix_lsd": "10001101"
+    },
+    {
+      "input_suffix_lsd": "10101",
+      "output_suffix_lsd": "000001"
+    },
+    {
+      "input_suffix_lsd": "010101",
+      "output_suffix_lsd": ""
+    },
+    {
+      "input_suffix_lsd": "1010001",
+      "output_suffix_lsd": "0001011"
+    }
+  ],
+  "learned_implications_before_run": 0,
+  "learned_implications_cumulative": 10,
+  "learned_implications_this_run": 10,
+  "logical_signature": {
+    "gate": 2,
+    "odd_offset": 1,
+    "solver_seed": 0,
+    "state_count": 5
+  },
+  "map_classification": "standard_3n_plus_1_search",
+  "models_checked": 4,
+  "models_checked_cumulative": 4,
+  "models_checked_this_run": 4,
+  "program": "conditional-odd-suffix-floor-cegis",
+  "resume_source": null,
+  "resumed": false,
+  "schema": "x-9101-odd-suffix-cegis-v1",
+  "scope": "one conditional q-state odd-suffix spine/gate partition; at q=71 suffix gate h maps to shortcut gate h+1; this structured lift does not cover shortcut gate 0 or every generic q=72 machine; the q=71 interpretation depends on L-9111 and its external premise",
+  "status": "solver_unsat",
+  "suffix_gate": 2
+}

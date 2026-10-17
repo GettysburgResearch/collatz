@@ -1,0 +1,232 @@
+{
+  "batch_history": [
+    {
+      "gate": 0,
+      "longest_witness_length": 7,
+      "model_number_cumulative": 1,
+      "model_number_this_run": 1,
+      "new_implications": 3,
+      "product_states": 91,
+      "relation_edges": 16,
+      "shortest_witness_length": 5,
+      "violating_endpoint_pairs": 3
+    },
+    {
+      "gate": 0,
+      "longest_witness_length": 7,
+      "model_number_cumulative": 2,
+      "model_number_this_run": 2,
+      "new_implications": 2,
+      "product_states": 49,
+      "relation_edges": 13,
+      "shortest_witness_length": 5,
+      "violating_endpoint_pairs": 2
+    },
+    {
+      "gate": 0,
+      "longest_witness_length": 7,
+      "model_number_cumulative": 3,
+      "model_number_this_run": 3,
+      "new_implications": 2,
+      "product_states": 39,
+      "relation_edges": 15,
+      "shortest_witness_length": 5,
+      "violating_endpoint_pairs": 2
+    },
+    {
+      "gate": 0,
+      "longest_witness_length": 8,
+      "model_number_cumulative": 4,
+      "model_number_this_run": 4,
+      "new_implications": 4,
+      "product_states": 126,
+      "relation_edges": 25,
+      "shortest_witness_length": 6,
+      "violating_endpoint_pairs": 4
+    },
+    {
+      "gate": 0,
+      "longest_witness_length": 9,
+      "model_number_cumulative": 5,
+      "model_number_this_run": 5,
+      "new_implications": 4,
+      "product_states": 77,
+      "relation_edges": 21,
+      "shortest_witness_length": 6,
+      "violating_endpoint_pairs": 4
+    },
+    {
+      "gate": 0,
+      "longest_witness_length": 7,
+      "model_number_cumulative": 6,
+      "model_number_this_run": 6,
+      "new_implications": 3,
+      "product_states": 72,
+      "relation_edges": 16,
+      "shortest_witness_length": 5,
+      "violating_endpoint_pairs": 3
+    }
+  ],
+  "batches_before_run": 0,
+  "batches_cumulative": 6,
+  "batches_this_run": 6,
+  "bounded_or_incomplete": false,
+  "config": {
+    "force_11_prefix": true,
+    "force_zero_loop": true,
+    "gate": null,
+    "max_models": 50,
+    "solver_seed": 0,
+    "state_count": 5,
+    "time_limit_seconds": 10.0
+  },
+  "disclaimer": "solver_unsat is a solver report for this exact encoded normal-form partition. This prototype does not emit an independently checkable UNSAT proof artifact.",
+  "elapsed_seconds": 0.094,
+  "elapsed_seconds_cumulative": 0.094,
+  "elapsed_seconds_this_run": 0.094,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "z3": "4.16.0"
+  },
+  "independently_checkable_unsat_proof_emitted": false,
+  "last_candidate": {
+    "accepting": [
+      0
+    ],
+    "alphabet": [
+      0,
+      1
+    ],
+    "bit_order": "lsd_first",
+    "start": 0,
+    "transitions": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ]
+    ]
+  },
+  "last_verification": {
+    "accepted_witness_lsd": "11011",
+    "closure_input_lsd": "11011",
+    "closure_output_lsd": "100101",
+    "product_states": 72,
+    "reason": "language is not forward invariant",
+    "relation_edges": 16,
+    "valid": false
+  },
+  "learned_implications": [
+    {
+      "input_lsd": "11001",
+      "output_lsd": "10111"
+    },
+    {
+      "input_lsd": "111001",
+      "output_lsd": "110111"
+    },
+    {
+      "input_lsd": "1010101",
+      "output_lsd": "00000001"
+    },
+    {
+      "input_lsd": "11101",
+      "output_lsd": "110001"
+    },
+    {
+      "input_lsd": "1110001",
+      "output_lsd": "1101011"
+    },
+    {
+      "input_lsd": "11111",
+      "output_lsd": "111101"
+    },
+    {
+      "input_lsd": "1101111",
+      "output_lsd": "10011101"
+    },
+    {
+      "input_lsd": "101111",
+      "output_lsd": "0011101"
+    },
+    {
+      "input_lsd": "111011",
+      "output_lsd": "1100101"
+    },
+    {
+      "input_lsd": "1001111",
+      "output_lsd": "01101101"
+    },
+    {
+      "input_lsd": "10111001",
+      "output_lsd": "00110111"
+    },
+    {
+      "input_lsd": "111101",
+      "output_lsd": "1110001"
+    },
+    {
+      "input_lsd": "10011111",
+      "output_lsd": "011011101"
+    },
+    {
+      "input_lsd": "11110001",
+      "output_lsd": "11101011"
+    },
+    {
+      "input_lsd": "111100001",
+      "output_lsd": "111010011"
+    },
+    {
+      "input_lsd": "11011",
+      "output_lsd": "100101"
+    },
+    {
+      "input_lsd": "110011",
+      "output_lsd": "1011001"
+    },
+    {
+      "input_lsd": "1100101",
+      "output_lsd": "1011111"
+    }
+  ],
+  "learned_implications_before_run": 0,
+  "learned_implications_cumulative": 18,
+  "learned_implications_this_run": 18,
+  "logical_signature": {
+    "force_11_prefix": true,
+    "force_zero_loop": true,
+    "gate": null,
+    "solver_seed": 0,
+    "state_count": 5
+  },
+  "map": {
+    "bit_order": "lsd_first",
+    "name": "shortcut_3n_plus_1",
+    "transducer": "shortcut_3n+1"
+  },
+  "models_checked": 6,
+  "models_checked_cumulative": 6,
+  "models_checked_this_run": 6,
+  "program": "exact-floor-spine-cegis",
+  "resume_source": null,
+  "resumed": false,
+  "schema": "x-9101-spine-cegis-v2",
+  "status": "solver_unsat"
+}

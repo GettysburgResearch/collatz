@@ -1,0 +1,25 @@
+{
+  "dfa": {
+    "accepting": [
+      6
+    ],
+    "alphabet": [
+      0,
+      1
+    ],
+    "bit_order": "lsd_first",
+    "start": 0,
+    "transitions": [
+      [1, 2],
+      [3, 4],
+      [5, 5],
+      [3, 3],
+      [5, 3],
+      [3, 6],
+      [3, 3]
+    ]
+  },
+  "map": "shortcut_3n_minus_1",
+  "purpose": "positive_control_only_not_a_standard_collatz_certificate",
+  "schema": "regular-sanctuary-certificate-v1"
+}

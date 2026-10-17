@@ -1,0 +1,83 @@
+{
+  "sha256_of_environment_bound_summary": "0e7e23e4712600b501eb2083030e149e4b92dda35cadb87c1276acc7c988dab7",
+  "sha256_of_mathematical_results": "a06327fe24dd611b9fd2d70e24bedaa3ed2bf38242063354b7a7ede803d4cc16",
+  "summary": {
+    "bit_order": "lsd_first",
+    "classification": "finite exact computation; no counterexample claim",
+    "environment": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.10"
+    },
+    "experiment": "X-9101",
+    "limitations": [
+      "bounded skeleton failures do not imply Collatz convergence",
+      "the 72-bit guard is search pruning, not part of candidate soundness",
+      "BFS witnesses are shortest by bit length and LSD-lexicographic tie-break, not numeric order"
+    ],
+    "positive_control_3n_minus_1": {
+      "accepted_witness_lsd": "101",
+      "closure_input_lsd": null,
+      "closure_output_lsd": null,
+      "product_states": 27,
+      "reason": "nonempty, safe, and exactly forward invariant",
+      "relation_edges": 8,
+      "valid": true
+    },
+    "safety_approximants": [
+      {"depth": 0, "shortest_word_lsd": "11", "shortest_word_value": 3, "states": 4},
+      {"depth": 1, "shortest_word_lsd": "11", "shortest_word_value": 3, "states": 5},
+      {"depth": 2, "shortest_word_lsd": "11", "shortest_word_value": 3, "states": 6},
+      {"depth": 3, "shortest_word_lsd": "11", "shortest_word_value": 3, "states": 8},
+      {"depth": 4, "shortest_word_lsd": "011", "shortest_word_value": 6, "states": 9},
+      {"depth": 5, "shortest_word_lsd": "111", "shortest_word_value": 7, "states": 12},
+      {"depth": 6, "shortest_word_lsd": "111", "shortest_word_value": 7, "states": 15},
+      {"depth": 7, "shortest_word_lsd": "111", "shortest_word_value": 7, "states": 18},
+      {"depth": 8, "shortest_word_lsd": "111", "shortest_word_value": 7, "states": 21},
+      {"depth": 9, "shortest_word_lsd": "111", "shortest_word_value": 7, "states": 30},
+      {"depth": 10, "shortest_word_lsd": "0111", "shortest_word_value": 14, "states": 36},
+      {"depth": 11, "shortest_word_lsd": "1001", "shortest_word_value": 9, "states": 42},
+      {"depth": 12, "shortest_word_lsd": "01001", "shortest_word_value": 18, "states": 46},
+      {"depth": 13, "shortest_word_lsd": "10011", "shortest_word_value": 25, "states": 54},
+      {"depth": 14, "shortest_word_lsd": "10011", "shortest_word_value": 25, "states": 63},
+      {"depth": 15, "shortest_word_lsd": "11011", "shortest_word_value": 27, "states": 75},
+      {"depth": 16, "shortest_word_lsd": "11011", "shortest_word_value": 27, "states": 92},
+      {"depth": 17, "shortest_word_lsd": "11011", "shortest_word_value": 27, "states": 116},
+      {"depth": 18, "shortest_word_lsd": "11011", "shortest_word_value": 27, "states": 143},
+      {"depth": 19, "shortest_word_lsd": "11011", "shortest_word_value": 27, "states": 179},
+      {"depth": 20, "shortest_word_lsd": "11011", "shortest_word_value": 27, "states": 217}
+    ],
+    "standard_guarded_core_search": [
+      {
+        "core_states": 1,
+        "expanded_states": 73,
+        "first_candidate": null,
+        "first_witness_lsd": null,
+        "first_witness_value": null,
+        "minimum_length": 72,
+        "nonempty_kernels": 0,
+        "skeletons_checked": 1
+      },
+      {
+        "core_states": 2,
+        "expanded_states": 146,
+        "first_candidate": null,
+        "first_witness_lsd": null,
+        "first_witness_value": null,
+        "minimum_length": 72,
+        "nonempty_kernels": 0,
+        "skeletons_checked": 16
+      }
+    ],
+    "standard_small_skeleton_search": [
+      {"first_candidate": null, "first_witness_lsd": null, "first_witness_value": null, "nonempty_kernels": 0, "skeletons_checked": 1, "state_count": 1},
+      {"first_candidate": null, "first_witness_lsd": null, "first_witness_value": null, "nonempty_kernels": 0, "skeletons_checked": 16, "state_count": 2},
+      {"first_candidate": null, "first_witness_lsd": null, "first_witness_value": null, "nonempty_kernels": 0, "skeletons_checked": 729, "state_count": 3},
+      {"first_candidate": null, "first_witness_lsd": null, "first_witness_value": null, "nonempty_kernels": 0, "skeletons_checked": 65536, "state_count": 4}
+    ],
+    "transducer_direct_checks": {
+      "all_equal": true,
+      "map": "shortcut 3n+1",
+      "range": "1 <= n < 100000"
+    }
+  }
+}
