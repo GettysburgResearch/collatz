@@ -1,0 +1,596 @@
+{
+  "schema": "collatz-source-budget-validation/v1",
+  "content_commit": "cf1186fd414b365bf9fad68fc9f3b7b2a02cd3a7",
+  "content_tree": "833c6f70cf79a40a90379e746a9c1559225a302d",
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "Exact proof-byte identities, separately reconstructed scoped mathematics, bounded raw-path checks, whole affine certificate checks, and complete-checkout integrity/regressions. Not universal Collatz verification or formal project acceptance.",
+  "source_status": "PROPOSED; in-session review is recorded separately",
+  "files": [
+    {
+      "path": "research/paired-comparison/source-budget/README.md",
+      "git_blob": "a03714ba0947d2c74704764779dfbe627ad2d4b6",
+      "sha256": "46b6dd5357d89f1381274ecc66f8a749fbe1a550f99153dad43350c215a78625",
+      "bytes": 5282
+    },
+    {
+      "path": "research/paired-comparison/source-budget/RESTART_BUDGET.md",
+      "git_blob": "367f7ec96b9b51056f26570a9d33edc42624ab36",
+      "sha256": "3c68c3f16c9ef2089ba1463daaa51473757f3420655ed4386a6a50a8ee98c39b",
+      "bytes": 18229
+    },
+    {
+      "path": "research/paired-comparison/source-budget/SOURCES.json",
+      "git_blob": "2da16dacf499f140e7887bebb8155d1d47c83ae0",
+      "sha256": "11b7d6a41d46f59fc46fd87fd5efe230c155c0c69638a067875a9f1db3012a47",
+      "bytes": 2952
+    },
+    {
+      "path": "research/paired-comparison/source-budget/TERNARY_SPLICE.md",
+      "git_blob": "e970c4fcff6f925c809a81963030585b525cbde1",
+      "sha256": "62dc78af3e857c2196dd4e94c1c73c98503bb2f696bb98f93cc4f246b08ca118",
+      "bytes": 9466
+    },
+    {
+      "path": "experiments/paired-comparison/source-budget/certificates.json",
+      "git_blob": "28f69878265efc68be2da012af0235baed67c077",
+      "sha256": "1e4f889b3421dcf18956a86e76ca5e7c1e5ac9387866fb9c6b7e7bd5d3bd1883",
+      "bytes": 4350
+    },
+    {
+      "path": "experiments/paired-comparison/source-budget/check_restarts.py",
+      "git_blob": "b163ba72db6f9b414eec76d28c5f6d86bbe70746",
+      "sha256": "cb55bef887d2e4da3fbdb363ef61f1dc932f9b954165b2097cfe29c3ba68edd1",
+      "bytes": 13401
+    },
+    {
+      "path": "experiments/paired-comparison/source-budget/check_splices.py",
+      "git_blob": "b745e492f19f2f4d98408a2f3975863383bf07e9",
+      "sha256": "c080a9b82afbe9dd0fc5eb1b397570bd7dd23dbd1cdfb2b203aa2d0e0a17745b",
+      "bytes": 4597
+    },
+    {
+      "path": "experiments/paired-comparison/source-budget/independent_checks.py",
+      "git_blob": "af4bacd798b16d9d85855fc6d80f95fe6ccb879b",
+      "sha256": "b76a1a735a1411616f4eef2e5551551bfc3339f22a083f45c5fc63a7886f17cb",
+      "bytes": 11168
+    },
+    {
+      "path": "experiments/paired-comparison/source-budget/verify_certificates.py",
+      "git_blob": "204143ceeb6e3b292d638ec7c7c81ee88702e142",
+      "sha256": "f5be4187cf7b99bd3ecabeb51f15afab5b9541c2836d405b98adac1a9b53caa4",
+      "bytes": 11725
+    }
+  ],
+  "new_checks": [
+    {
+      "command": "python -S -B experiments/paired-comparison/source-budget/check_splices.py",
+      "exit_code": 0,
+      "stdout_sha256": "f6bb5d3c2a497234214ea29494b45408f9d64964a412a42be2c4747fdaac9c6a",
+      "result": {
+        "CRT_family_members": 2604,
+        "automatic_root_safe_cases": 925,
+        "bank27_first_contact": {
+          "clock": 59,
+          "state": 23
+        },
+        "complete_bank_distinct_states": 34,
+        "complete_bank_roots": 26,
+        "ordinary_switch_cases": 24996,
+        "scope": "finite literal checks; whole-family affine parity checks; no universal termination",
+        "whole_affine_families": 3
+      }
+    },
+    {
+      "command": "python -S -B -OO experiments/paired-comparison/source-budget/check_splices.py",
+      "exit_code": 0,
+      "stdout_sha256": "f6bb5d3c2a497234214ea29494b45408f9d64964a412a42be2c4747fdaac9c6a",
+      "result": {
+        "CRT_family_members": 2604,
+        "automatic_root_safe_cases": 925,
+        "bank27_first_contact": {
+          "clock": 59,
+          "state": 23
+        },
+        "complete_bank_distinct_states": 34,
+        "complete_bank_roots": 26,
+        "ordinary_switch_cases": 24996,
+        "scope": "finite literal checks; whole-family affine parity checks; no universal termination",
+        "whole_affine_families": 3
+      }
+    },
+    {
+      "command": "python -S -B experiments/paired-comparison/source-budget/check_restarts.py",
+      "exit_code": 0,
+      "stdout_sha256": "e1969aa599de4fbe55539de5bf6e2557d07807df3353d7f4074a38e91d43b850",
+      "result": {
+        "status": "PASS",
+        "canonical_stage_inputs": 20000,
+        "ledger_initial_sources": 2000,
+        "ledger_hard_steps_checked": 1008,
+        "ledger_max_steps_per_source": 30,
+        "guarded_normalizer_initial_parameters": 20000,
+        "guarded_normalizer_outcomes": {
+          "MERGE": 14697,
+          "FAILED_DEBT_GUARD": 5303
+        },
+        "guarded_normalizer_accepted_stages": 1442,
+        "guarded_normalizer_max_stages": 2,
+        "unbounded_guard_family_cases": 48,
+        "unbounded_guard_family_s_max": 24,
+        "unbounded_guard_family_max_root_bits": 127,
+        "power_family": [
+          {
+            "j": 1,
+            "s": 8,
+            "N": 5915,
+            "M0": 3327,
+            "M1": 63969,
+            "upper_steps": 14,
+            "min_upper": 6655
+          },
+          {
+            "j": 2,
+            "s": 14,
+            "N": 378651,
+            "M0": 212991,
+            "M1": 46633947,
+            "upper_steps": 20,
+            "min_upper": 425983
+          },
+          {
+            "j": 3,
+            "s": 20,
+            "N": 24233755,
+            "M0": 13631487,
+            "M1": 33996147909,
+            "upper_steps": 26,
+            "min_upper": 27262975
+          },
+          {
+            "j": 4,
+            "s": 26,
+            "N": 1550960411,
+            "M0": 872415231,
+            "M1": 24783191826207,
+            "upper_steps": 32,
+            "min_upper": 1744830463
+          },
+          {
+            "j": 5,
+            "s": 32,
+            "N": 99261466395,
+            "M0": 55834574847,
+            "M1": 18066946841305449,
+            "upper_steps": 38,
+            "min_upper": 111669149695
+          },
+          {
+            "j": 6,
+            "s": 38,
+            "N": 6352733849371,
+            "M0": 3573412790271,
+            "M1": 13170804247311672867,
+            "upper_steps": 44,
+            "min_upper": 7146825580543
+          }
+        ],
+        "expanding_family_count": 24,
+        "expanding_family_max_K": 24,
+        "expanding_family_max_root_bits": 124,
+        "fixed_source_countdown_inputs": 20000,
+        "N27_control": "15 < 27 < 45 retained",
+        "limits": "finite scoped arithmetic checks; no all-source proof or repository-wide validation"
+      }
+    },
+    {
+      "command": "python -S -B -OO experiments/paired-comparison/source-budget/check_restarts.py",
+      "exit_code": 0,
+      "stdout_sha256": "e1969aa599de4fbe55539de5bf6e2557d07807df3353d7f4074a38e91d43b850",
+      "result": {
+        "status": "PASS",
+        "canonical_stage_inputs": 20000,
+        "ledger_initial_sources": 2000,
+        "ledger_hard_steps_checked": 1008,
+        "ledger_max_steps_per_source": 30,
+        "guarded_normalizer_initial_parameters": 20000,
+        "guarded_normalizer_outcomes": {
+          "MERGE": 14697,
+          "FAILED_DEBT_GUARD": 5303
+        },
+        "guarded_normalizer_accepted_stages": 1442,
+        "guarded_normalizer_max_stages": 2,
+        "unbounded_guard_family_cases": 48,
+        "unbounded_guard_family_s_max": 24,
+        "unbounded_guard_family_max_root_bits": 127,
+        "power_family": [
+          {
+            "j": 1,
+            "s": 8,
+            "N": 5915,
+            "M0": 3327,
+            "M1": 63969,
+            "upper_steps": 14,
+            "min_upper": 6655
+          },
+          {
+            "j": 2,
+            "s": 14,
+            "N": 378651,
+            "M0": 212991,
+            "M1": 46633947,
+            "upper_steps": 20,
+            "min_upper": 425983
+          },
+          {
+            "j": 3,
+            "s": 20,
+            "N": 24233755,
+            "M0": 13631487,
+            "M1": 33996147909,
+            "upper_steps": 26,
+            "min_upper": 27262975
+          },
+          {
+            "j": 4,
+            "s": 26,
+            "N": 1550960411,
+            "M0": 872415231,
+            "M1": 24783191826207,
+            "upper_steps": 32,
+            "min_upper": 1744830463
+          },
+          {
+            "j": 5,
+            "s": 32,
+            "N": 99261466395,
+            "M0": 55834574847,
+            "M1": 18066946841305449,
+            "upper_steps": 38,
+            "min_upper": 111669149695
+          },
+          {
+            "j": 6,
+            "s": 38,
+            "N": 6352733849371,
+            "M0": 3573412790271,
+            "M1": 13170804247311672867,
+            "upper_steps": 44,
+            "min_upper": 7146825580543
+          }
+        ],
+        "expanding_family_count": 24,
+        "expanding_family_max_K": 24,
+        "expanding_family_max_root_bits": 124,
+        "fixed_source_countdown_inputs": 20000,
+        "N27_control": "15 < 27 < 45 retained",
+        "limits": "finite scoped arithmetic checks; no all-source proof or repository-wide validation"
+      }
+    },
+    {
+      "command": "python -S -B experiments/paired-comparison/source-budget/independent_checks.py",
+      "exit_code": 0,
+      "stdout_sha256": "57ed28c196cc15d068c54fdd7da9e01ef59d777706574350839fdd3b79d92aa1",
+      "result": {
+        "finite_raw_checks": {
+          "F_word_stages": 435,
+          "R_return_instances": 1999,
+          "even_valuation_instances": 2000,
+          "guarded_contractions": 1426,
+          "hard_ledger_steps": 6667,
+          "odd_valuation_instances": 2000,
+          "sharp_exponent_members": 14
+        },
+        "negative_controls": [
+          "wrong parity word rejected",
+          "old candidate larger than immutable root"
+        ],
+        "scope": "Scoped exact checks only; no global coverage or Collatz proof asserted.",
+        "status": "PASS",
+        "whole_progressions": {
+          "4Z_plus_3_CRT_families": 126,
+          "compressed_restart_countercontrol": [
+            8192,
+            27
+          ],
+          "new_companion_endpoint": [
+            57395628,
+            185348
+          ],
+          "new_companion_order_margin": [
+            284672,
+            920
+          ],
+          "old_candidate_excess": [
+            5086962,
+            16428
+          ]
+        }
+      }
+    },
+    {
+      "command": "python -S -B -OO experiments/paired-comparison/source-budget/independent_checks.py",
+      "exit_code": 0,
+      "stdout_sha256": "57ed28c196cc15d068c54fdd7da9e01ef59d777706574350839fdd3b79d92aa1",
+      "result": {
+        "finite_raw_checks": {
+          "F_word_stages": 435,
+          "R_return_instances": 1999,
+          "even_valuation_instances": 2000,
+          "guarded_contractions": 1426,
+          "hard_ledger_steps": 6667,
+          "odd_valuation_instances": 2000,
+          "sharp_exponent_members": 14
+        },
+        "negative_controls": [
+          "wrong parity word rejected",
+          "old candidate larger than immutable root"
+        ],
+        "scope": "Scoped exact checks only; no global coverage or Collatz proof asserted.",
+        "status": "PASS",
+        "whole_progressions": {
+          "4Z_plus_3_CRT_families": 126,
+          "compressed_restart_countercontrol": [
+            8192,
+            27
+          ],
+          "new_companion_endpoint": [
+            57395628,
+            185348
+          ],
+          "new_companion_order_margin": [
+            284672,
+            920
+          ],
+          "old_candidate_excess": [
+            5086962,
+            16428
+          ]
+        }
+      }
+    },
+    {
+      "command": "python -S -B experiments/paired-comparison/source-budget/verify_certificates.py experiments/paired-comparison/source-budget/certificates.json --self-test",
+      "exit_code": 0,
+      "stdout_sha256": "49d8afd7edefeaae12c2f729922034589e07fb0cd1e3490ab694b2b44dea03f2",
+      "result": {
+        "affine_families": 3,
+        "bank_roots": 26,
+        "bank_states": 34,
+        "mutation_controls_rejected": 11,
+        "root27_first_contact_clock": 59,
+        "root27_first_contact_state": 23,
+        "scope": "Whole affine certificates and one finite complete all-clock bank; no universal termination."
+      }
+    },
+    {
+      "command": "python -S -B -OO experiments/paired-comparison/source-budget/verify_certificates.py experiments/paired-comparison/source-budget/certificates.json --self-test",
+      "exit_code": 0,
+      "stdout_sha256": "49d8afd7edefeaae12c2f729922034589e07fb0cd1e3490ab694b2b44dea03f2",
+      "result": {
+        "affine_families": 3,
+        "bank_roots": 26,
+        "bank_states": 34,
+        "mutation_controls_rejected": 11,
+        "root27_first_contact_clock": 59,
+        "root27_first_contact_state": 23,
+        "scope": "Whole affine certificates and one finite complete all-clock bank; no universal termination."
+      }
+    }
+  ],
+  "normal_and_optimized_stdout_byte_equal": true,
+  "no_ast_assert_nodes_in_published_checkers": true,
+  "complete_checkout": {
+    "schema": "collatz-checkout-validation/v1",
+    "started_utc": "2026-10-17T23:11:26.313023+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "linux",
+    "scope": "structure, frozen identities and selected bounded regressions; not a proof of Collatz",
+    "regressions": true,
+    "commands": [
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "tools/check_integration_state.py"
+        ],
+        "exit_code": 0,
+        "stdout": "OK: durable front door and lifecycle practice; 8 integrated records (6 verified local proofs, 1 accepted refutation, 1 source-qualified periodic synthesis), 3 roadmap records, 13 reviewed research families, 315 curated local links, frozen 45/42 PR snapshot preserved.\n",
+        "stderr": "",
+        "seconds": 0.098
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "tools/check_review_integration.py"
+        ],
+        "exit_code": 0,
+        "stdout": "OK: 4 qualified assemblies, 9 namespaces, 14 exact blob pins, 8 exact subtree pins, 375 local links, 2 optimized guards; no mathematical verification\n",
+        "stderr": "",
+        "seconds": 0.322
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "tools/check_review_integration.py",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "SELF-TEST PASS: 8 invalid fixtures rejected; no repository scan or mathematical verification performed\n",
+        "stderr": "",
+        "seconds": 0.043
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "tools/test_integrity_portability.py"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS: 11 real-Git mode/content/coverage controls; Windows metadata selection simulated on non-Windows; no complete repository scan\n",
+        "stderr": "",
+        "seconds": 0.084
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "reports/prepublic-2026-09-05/integration-d/check_followup.py",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS scoped D follow-up: 7 active files / 7 exact archived originals / 8 dispositions\n{\"overlap_band_cases\": 64, \"quotient_cases\": 81, \"scope\": \"finite edge cases only; not universal Collatz proof checking\", \"signed_residues\": 1584, \"strict_strip_counterexamples\": 2}\nInvalid scoped fixtures rejected: 8\n",
+        "stderr": "",
+        "seconds": 0.048
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "reports/prepublic-2026-09-05/reviewer-d/targeted_checks.py",
+          "--check",
+          "reports/prepublic-2026-09-05/reviewer-d/checks.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS Reviewer D bounded audit: f68f0babd04b680fe9bbd47da82cc5e6014c38ba8b54400426e437db767f6174\nResealed corruptions rejected: 8\n{\"automata\": {\"ordinary_membership_checks\": 8188, \"rows\": [{\"cyclic_sizes\": [2], \"depth\": 0, \"forbidden_count\": 2, \"maximum\": 2, \"minimal_states\": 4, \"raw_states\": 5}, {\"cyclic_sizes\": [2], \"depth\": 1, \"forbidden_count\": 3, \"maximum\": 4, \"minimal_states\": 5, \"raw_states\": 6}, {\"cyclic_sizes\": [2], \"depth\": 2, \"forbidden_count\": 4, \"maximum\": 8, \"minimal_states\": 6, \"raw_states\": 7}, {\"cyclic_sizes\": [2], \"depth\": 3, \"forbidden_count\": 6, \"maximum\": 16, \"minimal_states\": 8, \"raw_states\": 9}, {\"cyclic_sizes\": [2], \"depth\": 4, \"forbidden_count\": 9, \"maximum\": 32, \"minimal_states\": 9, \"raw_states\": 11}, {\"cyclic_sizes\": [2], \"depth\": 5, \"forbidden_count\": 13, \"maximum\": 64, \"minimal_states\": 12, \"raw_states\": 14}, {\"cyclic_sizes\": [2], \"depth\": 6, \"forbidden_count\": 18, \"maximum\": 128, \"minimal_states\": 15, \"raw_states\": 17}, {\"cyclic_sizes\": [2], \"depth\": 7, \"forbidden_count\": 24, \"maximum\": 256, \"minimal_states\": 18, \"raw_states\": 20}, {\"cyclic_sizes\": [2], \"depth\": 8, \"forbidden_count\": 32, \"maximum\": 512, \"minimal_states\": 21, \"raw_states\": 24}, {\"cyclic_sizes\": [2], \"depth\": 9, \"forbidden_count\": 44, \"maximum\": 1024, \"minimal_states\": 30, \"raw_states\": 33}, {\"cyclic_sizes\": [2], \"depth\": 10, \"forbidden_count\": 62, \"maximum\": 2048, \"minimal_states\": 36, \"raw_states\": 39}]}, \"base\": \"cd1b3689e8d37fc4232945072e2faf6bd5ee47bd\", \"centered\": {\"completion_transcript\": \"09c3607ce8f1a1c9e7e24eb2f2d03f27c8187c5e9e9470bb0031987c47ec3106\", \"constant_word_completion\": 0, \"constant_word_factor_complexity\": 1, \"finite_ordinary_paths\": 512, \"nonconstant_real_endpoint_errors\": [[1, 81], [-1, 81]], \"periodic_words\": 510, \"repeated_factor_checks\": 11260, \"thue_morse_scales\": 13}, \"coefficient\": {\"box_comparisons\": 1664, \"depths\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], \"least_sources\": [1, 1, 3, 3, 7, 7, 7, 27, 27, 27, 27, 27, 27], \"positions\": 32768, \"sources\": 512}, \"divided_differences\": {\"analytic_input\": \"convergent Puiseux expansion and divided-difference mean-value theorem; not proved by finite tests\", \"polynomial_windows\": 200, \"square_root_sparse_domain_gaps\": [3, 5, 7, 9, 11, 13, 15, 17, 19, 21]}, \"extraction\": {\"initial_zero_digits\": 12, \"mixed_radix_edges\": 2010, \"negative_integer\": -4096, \"subsequent_checked_maximal_digits\": 28, \"transcript\": \"d39153b94519d1ac7b026f214a4ea44e235e1a752a0b41bdb391ba737fbfbbf7\"}, \"periodic\": {\"kinds\": {\"negative_integer\": 35, \"negative_nonintegral\": 1732, \"positive_integer\": 12, \"positive_nonintegral\": 6399, \"zero_integer\": 12}, \"ordinary_lifts\": 24570, \"periodic_steps\": 90114, \"preperiod_pairs\": 7938, \"transcript\": \"dbdaac9b1ef59273c06dffde50f393fc31718c052852454b8bf09751b329a4ca\", \"trivial_realizers\": [1, 2], \"words\": 8190}, \"six_branch\": {\"affine_automorphisms\": [[1, 0]], \"correct_high_quotient_increment\": 531441, \"empty_depth_positive_minimum\": 1, \"empty_word_canonical_residue\": 0, \"incorrect_printed_increment\": 278628139008, \"levels\": [[1, 6, 6472], [2, 36, 1908874353], [3, 216, 44906374791168], [4, 1296, 275202518480529950784]], \"ordered_pairs\": 36, \"physical_lifts\": 4662, \"proper_sublanguage_example\": {\"endpoint\": 273836965888, \"k\": 515272, \"next_k\": 522302, \"source\": 270151221248, \"type\": 0}, \"tile_transcript\": \"c0f77b6f4eb2bac40b42a6611c315ccdfcc949d2088a90455c21d7d86293d692\", \"words\": 1554}}\n",
+        "stderr": "",
+        "seconds": 0.834
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "-O",
+          "reports/prepublic-2026-09-05/reviewer-d/targeted_checks.py",
+          "--check",
+          "reports/prepublic-2026-09-05/reviewer-d/checks.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS Reviewer D bounded audit: f68f0babd04b680fe9bbd47da82cc5e6014c38ba8b54400426e437db767f6174\nResealed corruptions rejected: 8\n{\"automata\": {\"ordinary_membership_checks\": 8188, \"rows\": [{\"cyclic_sizes\": [2], \"depth\": 0, \"forbidden_count\": 2, \"maximum\": 2, \"minimal_states\": 4, \"raw_states\": 5}, {\"cyclic_sizes\": [2], \"depth\": 1, \"forbidden_count\": 3, \"maximum\": 4, \"minimal_states\": 5, \"raw_states\": 6}, {\"cyclic_sizes\": [2], \"depth\": 2, \"forbidden_count\": 4, \"maximum\": 8, \"minimal_states\": 6, \"raw_states\": 7}, {\"cyclic_sizes\": [2], \"depth\": 3, \"forbidden_count\": 6, \"maximum\": 16, \"minimal_states\": 8, \"raw_states\": 9}, {\"cyclic_sizes\": [2], \"depth\": 4, \"forbidden_count\": 9, \"maximum\": 32, \"minimal_states\": 9, \"raw_states\": 11}, {\"cyclic_sizes\": [2], \"depth\": 5, \"forbidden_count\": 13, \"maximum\": 64, \"minimal_states\": 12, \"raw_states\": 14}, {\"cyclic_sizes\": [2], \"depth\": 6, \"forbidden_count\": 18, \"maximum\": 128, \"minimal_states\": 15, \"raw_states\": 17}, {\"cyclic_sizes\": [2], \"depth\": 7, \"forbidden_count\": 24, \"maximum\": 256, \"minimal_states\": 18, \"raw_states\": 20}, {\"cyclic_sizes\": [2], \"depth\": 8, \"forbidden_count\": 32, \"maximum\": 512, \"minimal_states\": 21, \"raw_states\": 24}, {\"cyclic_sizes\": [2], \"depth\": 9, \"forbidden_count\": 44, \"maximum\": 1024, \"minimal_states\": 30, \"raw_states\": 33}, {\"cyclic_sizes\": [2], \"depth\": 10, \"forbidden_count\": 62, \"maximum\": 2048, \"minimal_states\": 36, \"raw_states\": 39}]}, \"base\": \"cd1b3689e8d37fc4232945072e2faf6bd5ee47bd\", \"centered\": {\"completion_transcript\": \"09c3607ce8f1a1c9e7e24eb2f2d03f27c8187c5e9e9470bb0031987c47ec3106\", \"constant_word_completion\": 0, \"constant_word_factor_complexity\": 1, \"finite_ordinary_paths\": 512, \"nonconstant_real_endpoint_errors\": [[1, 81], [-1, 81]], \"periodic_words\": 510, \"repeated_factor_checks\": 11260, \"thue_morse_scales\": 13}, \"coefficient\": {\"box_comparisons\": 1664, \"depths\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], \"least_sources\": [1, 1, 3, 3, 7, 7, 7, 27, 27, 27, 27, 27, 27], \"positions\": 32768, \"sources\": 512}, \"divided_differences\": {\"analytic_input\": \"convergent Puiseux expansion and divided-difference mean-value theorem; not proved by finite tests\", \"polynomial_windows\": 200, \"square_root_sparse_domain_gaps\": [3, 5, 7, 9, 11, 13, 15, 17, 19, 21]}, \"extraction\": {\"initial_zero_digits\": 12, \"mixed_radix_edges\": 2010, \"negative_integer\": -4096, \"subsequent_checked_maximal_digits\": 28, \"transcript\": \"d39153b94519d1ac7b026f214a4ea44e235e1a752a0b41bdb391ba737fbfbbf7\"}, \"periodic\": {\"kinds\": {\"negative_integer\": 35, \"negative_nonintegral\": 1732, \"positive_integer\": 12, \"positive_nonintegral\": 6399, \"zero_integer\": 12}, \"ordinary_lifts\": 24570, \"periodic_steps\": 90114, \"preperiod_pairs\": 7938, \"transcript\": \"dbdaac9b1ef59273c06dffde50f393fc31718c052852454b8bf09751b329a4ca\", \"trivial_realizers\": [1, 2], \"words\": 8190}, \"six_branch\": {\"affine_automorphisms\": [[1, 0]], \"correct_high_quotient_increment\": 531441, \"empty_depth_positive_minimum\": 1, \"empty_word_canonical_residue\": 0, \"incorrect_printed_increment\": 278628139008, \"levels\": [[1, 6, 6472], [2, 36, 1908874353], [3, 216, 44906374791168], [4, 1296, 275202518480529950784]], \"ordered_pairs\": 36, \"physical_lifts\": 4662, \"proper_sublanguage_example\": {\"endpoint\": 273836965888, \"k\": 515272, \"next_k\": 522302, \"source\": 270151221248, \"type\": 0}, \"tile_transcript\": \"c0f77b6f4eb2bac40b42a6611c315ccdfcc949d2088a90455c21d7d86293d692\", \"words\": 1554}}\n",
+        "stderr": "",
+        "seconds": 0.992
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "reports/prepublic-2026-09-05/reviewer-d/final_checks.py",
+          "--check",
+          "reports/prepublic-2026-09-05/reviewer-d/final_checks.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS Reviewer D final regressions: e0563b820b0cd7c24c6ba159af5a944209bb101693fc4d4b8584144685991ddb\nResealed corruptions rejected: 8\n{\"codes\": 8820, \"endpoint_positions\": 8400, \"parameter_pairs\": 35, \"positions\": 53760, \"zero_positions\": 17220}\n",
+        "stderr": "",
+        "seconds": 0.78
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "-O",
+          "reports/prepublic-2026-09-05/reviewer-d/final_checks.py",
+          "--check",
+          "reports/prepublic-2026-09-05/reviewer-d/final_checks.json",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "PASS Reviewer D final regressions: e0563b820b0cd7c24c6ba159af5a944209bb101693fc4d4b8584144685991ddb\nResealed corruptions rejected: 8\n{\"codes\": 8820, \"endpoint_positions\": 8400, \"parameter_pairs\": 35, \"positions\": 53760, \"zero_positions\": 17220}\n",
+        "stderr": "",
+        "seconds": 0.788
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "research/external/mazur-2026/check_fixed_height_forward.py",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "RESEALED TAMPERING REJECTED 4\nNONMUTATING FINITE REPLAY PASS d78c7b1e04c04aba446bff07899331cf4765eef2b85b9de9b428690fec7f3558\n",
+        "stderr": "",
+        "seconds": 0.808
+      },
+      {
+        "argv": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-X",
+          "utf8",
+          "-B",
+          "-O",
+          "research/external/mazur-2026/check_fixed_height_forward.py",
+          "--self-test"
+        ],
+        "exit_code": 0,
+        "stdout": "RESEALED TAMPERING REJECTED 4\nNONMUTATING FINITE REPLAY PASS d78c7b1e04c04aba446bff07899331cf4765eef2b85b9de9b428690fec7f3558\n",
+        "stderr": "",
+        "seconds": 0.919
+      }
+    ],
+    "success": true,
+    "checkout": {
+      "commit": "cf1186fd414b365bf9fad68fc9f3b7b2a02cd3a7",
+      "tree": "833c6f70cf79a40a90379e746a9c1559225a302d",
+      "tracked_files": 324
+    },
+    "checkout_after": {
+      "commit": "cf1186fd414b365bf9fad68fc9f3b7b2a02cd3a7",
+      "tree": "833c6f70cf79a40a90379e746a9c1559225a302d",
+      "tracked_files": 324
+    },
+    "finished_utc": "2026-10-17T23:11:32.079592+00:00"
+  },
+  "checkout_materialization": {
+    "mode": "Exact public GitHub API blob/tree/commit reconstruction; depth-one base history and complete nonsparse file tree",
+    "base_files": 315,
+    "base_unique_blobs": 301,
+    "base_tree": "1c25c17df24491de6187445f1a1d355d5a7660c3",
+    "all_original_blob_modes_and_bytes_match": true,
+    "content_tree_matches_api": true,
+    "content_commit_object_matches_api": true
+  },
+  "setup_attempts": [
+    {
+      "stage": "initial API commit reconstruction",
+      "result": "UTC-normalized API dates omitted the original Git timezone fields; initial object reconstruction rejected its own hash mismatch. No ref changed."
+    },
+    {
+      "stage": "premature validation before successful materialization",
+      "result": "Refused the dirty checkout, as intended; no child regression commands ran."
+    },
+    {
+      "stage": "exact reconstruction and final clean content validation",
+      "result": "Recovered original +0300 Git metadata by matching the full raw object SHA; complete file tree and content commit match; all required checks passed."
+    }
+  ],
+  "not_performed": [
+    "External theorem-prover build",
+    "External mathematical peer review",
+    "Exhaustive comparison against every historical selector",
+    "Global coverage proof"
+  ],
+  "publication_note": "This receipt pins the content commit. The following commit adds only this receipt and its scoped review. Later remote readback and final-head validation are reported in the PR."
+}
