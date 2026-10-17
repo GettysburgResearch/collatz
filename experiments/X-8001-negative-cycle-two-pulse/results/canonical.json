@@ -1,0 +1,75 @@
+{
+  "all_size": [
+    {
+      "audit": "93129ed4e2eb1934ab8a31c1f65b5460fc97ed397ab0ff56a372fa9fff5cc625",
+      "gaps": 2549,
+      "hits": [
+        [
+          2,
+          0,
+          -5,
+          2,
+          1,
+          1,
+          "1",
+          true,
+          true
+        ]
+      ],
+      "name": "negative_3_cycle",
+      "nontrivial": 0,
+      "r_max": 50,
+      "tested": 3510732
+    },
+    {
+      "audit": "3da4af32f4973960ebb0480ebc1729c2adf859c1a29a115e200b354fc01d2753",
+      "gaps": 5110,
+      "hits": [],
+      "name": "negative_11_cycle",
+      "nontrivial": 0,
+      "r_max": 20,
+      "tested": 12934659
+    }
+  ],
+  "experiment": "X-8001",
+  "formula_checks": 2432,
+  "near": [
+    {
+      "audit": "0fb90b0a43f667974c40a183719e2ac29451e230c64fdc0d68ba9270fb34e151",
+      "hits": [
+        [
+          2,
+          1,
+          0,
+          -5,
+          2,
+          1,
+          1,
+          "1",
+          true,
+          true
+        ]
+      ],
+      "name": "negative_3_cycle",
+      "nontrivial": 0,
+      "r_max": 5000,
+      "survivor_rows": 7,
+      "tested": 42
+    },
+    {
+      "audit": "aec90a2b8c330e62bbe5f4d2bc6b069f55e71ac8b687d3cf6c90cd592bea30d0",
+      "hits": [],
+      "name": "negative_11_cycle",
+      "nontrivial": 0,
+      "r_max": 5000,
+      "survivor_rows": 3,
+      "tested": 126
+    }
+  ],
+  "sha256": "57b6f1217221142269f3331805f8f479450ed442c8c2e34d075c63f5849ea724",
+  "totals": {
+    "all_size": 16445391,
+    "near": 168,
+    "nontrivial": 0
+  }
+}
