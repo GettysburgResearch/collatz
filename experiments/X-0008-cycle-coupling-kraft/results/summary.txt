@@ -1,0 +1,17 @@
+verified synchronous coupling and valuation acceleration
+negative-11-cycle complement basin table:
+k=0 phase=136 r=8 b=2 target=7 L0=9 a0=3 m0=341
+k=1 phase=68 r=7 b=2 target=7 L0=9 a0=3 m0=85
+k=2 phase=34 r=6 b=2 target=7 L0=9 a0=3 m0=85
+k=3 phase=17 r=5 b=3 target=7 L0=9 a0=3 m0=63
+k=4 phase=25 r=4 b=2 target=7 L0=9 a0=3 m0=21
+k=5 phase=37 r=3 b=1 target=7 L0=9 a0=3 m0=7
+k=6 phase=55 r=2 b=0 target=7 L0=9 a0=3 m0=5
+k=7 phase=82 r=5 b=2 target=34 L0=13 a0=7 m0=5
+k=8 phase=41 r=4 b=3 target=34 L0=13 a0=7 m0=15
+k=9 phase=61 r=3 b=2 target=34 L0=13 a0=7 m0=5
+k=10 phase=91 r=2 b=1 target=34 L0=13 a0=7 m0=7
+phase-136 base transfers: [341, 170, 340, 504, 336, 224, 320] [640, 3840, 2560, 7168]
+first supercritical padding levels: 45 21
+verified Collatz-Kraft identities: kraft=1 tilted=1 E[L]=7/4 E[a]=7/8
+all cycle-coupling and Kraft checks passed

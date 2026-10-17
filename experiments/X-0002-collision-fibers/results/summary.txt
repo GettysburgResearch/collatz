@@ -1,0 +1,30 @@
+verified L-0003 recursion against every direct trace through L=12
+
+maximal nontrivial supercritical collision fibers through L=22:
+L= 1: none
+L= 2: none
+L= 3: none
+L= 4: none
+L= 5: none
+L= 6: count=     4 max_cardinality= 2 first_r=14 a=4 s=20
+L= 7: count=     5 max_cardinality= 2 first_r=54 a=5 s=107
+L= 8: count=     6 max_cardinality= 2 first_r=54 a=6 s=161
+L= 9: count=    29 max_cardinality= 3 first_r=108 a=6 s=161
+L=10: count=    37 max_cardinality= 3 first_r=108 a=7 s=242
+L=11: count=   131 max_cardinality= 4 first_r=216 a=7 s=242
+L=12: count=   177 max_cardinality= 4 first_r=1016 a=8 s=1640
+L=13: count=   233 max_cardinality= 4 first_r=1272 a=9 s=3077
+L=14: count=   794 max_cardinality= 5 first_r=1352 a=9 s=1640
+L=15: count=  1093 max_cardinality= 5 first_r=1698 a=10 s=3077
+L=16: count=  1471 max_cardinality= 5 first_r=1698 a=11 s=4616
+L=17: count=  4904 max_cardinality= 8 first_r=3396 a=11 s=4616
+L=18: count=  6842 max_cardinality= 8 first_r=26948 a=12 s=54674
+L=19: count= 21338 max_cardinality=12 first_r=32324 a=12 s=32804
+L=20: count= 30687 max_cardinality=12 first_r=310624 a=13 s=472391
+L=21: count= 43247 max_cardinality=12 first_r=310624 a=14 s=708587
+L=22: count=133852 max_cardinality=18 first_r=621248 a=14 s=708587
+
+verified O-0004: depth-22 supercritical fiber of cardinality 18
+verified L-0004 carry pumping and the 512->729 two-column tile
+verified T-0004 run-length skeleton on exact stack trajectories
+verified finite truncations of T-0003's coding identity
