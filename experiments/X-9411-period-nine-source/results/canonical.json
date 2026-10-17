@@ -1,0 +1,317 @@
+{
+  "adjacent_order_optimistic_ceiling": {
+    "exact_boundary_checks": {
+      "r_10": "64^113 < 81^110",
+      "r_6": "64^45 > 81^42",
+      "r_7": "64^59 < 81^56"
+    },
+    "first_period_below_one": 7,
+    "formula": "log_81(64)*(r^2+r+3)/(r*(r+1))",
+    "last_period_above_one": 6,
+    "rows": {
+      "1": {
+        "above_one": true,
+        "max_zero_height_cost_exponent": "2.365986575892965389"
+      },
+      "10": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.972205393003291233"
+      },
+      "11": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.967903599228940386"
+      },
+      "12": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.964594527094824351"
+      },
+      "13": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.961994541846590323"
+      },
+      "14": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.959914553648003101"
+      },
+      "15": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.958224563236650983"
+      },
+      "2": {
+        "above_one": true,
+        "max_zero_height_cost_exponent": "1.419591945535779233"
+      },
+      "3": {
+        "above_one": true,
+        "max_zero_height_cost_exponent": "1.182993287946482695"
+      },
+      "4": {
+        "above_one": true,
+        "max_zero_height_cost_exponent": "1.088353824910764079"
+      },
+      "5": {
+        "above_one": true,
+        "max_zero_height_cost_exponent": "1.041034093392904771"
+      },
+      "6": {
+        "above_one": true,
+        "max_zero_height_cost_exponent": "1.013994246811270881"
+      },
+      "7": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.997094342697749700"
+      },
+      "8": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.985827739955402245"
+      },
+      "9": {
+        "above_one": false,
+        "max_zero_height_cost_exponent": "0.977941118035759028"
+      }
+    }
+  },
+  "experiment_id": "X-9411",
+  "generic_scalar_phase": {
+    "generic_scalar_tschakaloff_pade_exponent": "1.419591945535779233",
+    "greater_than_one": true
+  },
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "the Vaananen-Wallisser source theorem",
+      "the universal native period-nine corollary",
+      "the generic scalar Pade proof",
+      "period-ten special-vector irrationality",
+      "the Collatz conjecture"
+    ],
+    "proved_by_finite_computation": [
+      "the displayed exact integer endpoint inequalities",
+      "the frozen finite periodic phase decompositions",
+      "the frozen orbit-separation and numerical threshold table",
+      "the exact arithmetic in the optimistic adjacent-order ceiling table"
+    ]
+  },
+  "numerical_source_table": {
+    "gamma": "0.053605369642813844",
+    "last_dimension_passing": 9,
+    "rows": {
+      "1": {
+        "Gamma_D": "0.381966011250105152",
+        "gamma_less_than_Gamma_D": true
+      },
+      "10": {
+        "Gamma_D": "0.048750780274960714",
+        "gamma_less_than_Gamma_D": false
+      },
+      "11": {
+        "Gamma_D": "0.044422020657034523",
+        "gamma_less_than_Gamma_D": false
+      },
+      "12": {
+        "Gamma_D": "0.040798987544640511",
+        "gamma_less_than_Gamma_D": false
+      },
+      "2": {
+        "Gamma_D": "0.219223593595584863",
+        "gamma_less_than_Gamma_D": true
+      },
+      "3": {
+        "Gamma_D": "0.152872911616963385",
+        "gamma_less_than_Gamma_D": true
+      },
+      "4": {
+        "Gamma_D": "0.117217781462681293",
+        "gamma_less_than_Gamma_D": true
+      },
+      "5": {
+        "Gamma_D": "0.095012437887910973",
+        "gamma_less_than_Gamma_D": true
+      },
+      "6": {
+        "Gamma_D": "0.079867118433975377",
+        "gamma_less_than_Gamma_D": true
+      },
+      "7": {
+        "Gamma_D": "0.068880796598700026",
+        "gamma_less_than_Gamma_D": true
+      },
+      "8": {
+        "Gamma_D": "0.060548778632412665",
+        "gamma_less_than_Gamma_D": true
+      },
+      "9": {
+        "Gamma_D": "0.054013534593336307",
+        "gamma_less_than_Gamma_D": true
+      }
+    }
+  },
+  "orbit_separation": {
+    "all_distinct_mod_period": true,
+    "period_lengths": [
+      1,
+      10
+    ],
+    "phase_pairs_checked": 165
+  },
+  "periodic_phase_decomposition": {
+    "exact_identities_checked": 30,
+    "selected_records": [
+      {
+        "blocks": 3,
+        "denominator_bits": 184,
+        "fraction_sha256": "0ce58b7ffb276e35a48ee272c99c479974f0ce03f49a70ee16d868d02bf4d649",
+        "numerator_bits": 184,
+        "starting_height": 0,
+        "word": [
+          1
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 298,
+        "fraction_sha256": "5996e5e436d1aec49dd9bc36d382865d0c2dd7715a2f0a5b83345c58458fd40f",
+        "numerator_bits": 298,
+        "starting_height": 1,
+        "word": [
+          1
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 1230,
+        "fraction_sha256": "5dbe1d57b0bace194d9a2cd75feb76495ce83906ef22b56c4ff8fa8163f75893",
+        "numerator_bits": 1231,
+        "starting_height": 0,
+        "word": [
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 1516,
+        "fraction_sha256": "9e22dc1f094faaa45cc73e916aee8c4063296d40768566a7b11fdf18c6ca5d21",
+        "numerator_bits": 1516,
+        "starting_height": 1,
+        "word": [
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 2619,
+        "fraction_sha256": "2cef5464d566bf104fdd4c3dc207dacc41d0115a426770fdf4aef8389180dc94",
+        "numerator_bits": 2619,
+        "starting_height": 0,
+        "word": [
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 3075,
+        "fraction_sha256": "199b65cb6f51ccf3ba8a6f34c575cc23cc775d786e3875421ac56277cd7d34e0",
+        "numerator_bits": 3075,
+        "starting_height": 1,
+        "word": [
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 21734,
+        "fraction_sha256": "e7bf61e4b547de73292d4d9ce39a5c7a3b89c3d86521b26b1599a80e820f8c28",
+        "numerator_bits": 21734,
+        "starting_height": 0,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 23217,
+        "fraction_sha256": "634a24f2175200a22278b42194c6417fa6d601b1912bee16162e5f76dd8a80b6",
+        "numerator_bits": 23217,
+        "starting_height": 1,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 26717,
+        "fraction_sha256": "e03028b3cb31dbb133aacd62724aca49499e18df021b80d9e97d637572fe3fad",
+        "numerator_bits": 26717,
+        "starting_height": 0,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "blocks": 3,
+        "denominator_bits": 28371,
+        "fraction_sha256": "cac4260ea112a9776c8b7de9fc939e89db653c66529bbfe1f22a5c0318c32a08",
+        "numerator_bits": 28371,
+        "starting_height": 1,
+        "word": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  "research_question": "Does the Vaananen-Wallisser source condition close exactly periods through nine, and what exact period-ten interfaces remain after scalar-phase and adjacent-order audits?",
+  "schema_version": 1,
+  "source_endpoint_checks": {
+    "dimension_10": {
+      "401_minus_20_sq": 1,
+      "64_pow_20_lt_81_pow_19": true,
+      "condition_fails": true,
+      "difference_81_pow_19_minus_64_pow_20": "495572367355157254455244917576239345"
+    },
+    "dimension_9": {
+      "559_sq_minus_325_times_31_sq": 156,
+      "64_pow_93_gt_81_pow_88": true,
+      "condition_certified": true,
+      "difference_64_pow_93_minus_81_pow_88": "59023550070487568882985616894862945197336158123144089744927362762462527535065867997080160236206342618888559549677915418218316168081457614040637820610520050993867493503"
+    }
+  }
+}

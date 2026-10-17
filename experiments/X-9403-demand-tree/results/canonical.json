@@ -1,0 +1,185 @@
+{
+  "demand_tree": {
+    "depths": {
+      "1": {
+        "image_size": 4,
+        "period": 4,
+        "valuation_checks": 6
+      },
+      "2": {
+        "image_size": 256,
+        "period": 256,
+        "valuation_checks": 32640
+      },
+      "3": {
+        "image_size": 16384,
+        "period": 16384,
+        "valuation_checks": 20301
+      }
+    },
+    "lift_checks": {
+      "1_to_2": {
+        "child_period": 256,
+        "children_per_parent": 64,
+        "parents_checked": 4
+      },
+      "2_to_3": {
+        "child_period": 16384,
+        "children_per_parent": 64,
+        "parents_checked": 256
+      }
+    },
+    "total_classes": 16644,
+    "total_lift_children": 16640
+  },
+  "experiment_id": "X-9403",
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "the universal isometry theorems",
+      "nonexistence of an actively steered infinite stack tower",
+      "nonexistence of an M1 witness or Collatz counterexample",
+      "any independence claim between supply and demand streams"
+    ],
+    "proved_by_finite_computation": [
+      "the frozen demand permutations and lift tables",
+      "the frozen stationary matching roots and inverse contexts",
+      "the frozen 17/18 schedule novelty instances",
+      "the frozen negative real sign cases"
+    ]
+  },
+  "research_question": "Do the exact stack demand and stationary supply-demand matching maps form scaled 2-adic tree isometries, and what finite residue novelty follows along 17/18 stage schedules?",
+  "schedule_novelty": {
+    "depths": {
+      "1": {
+        "guaranteed_window_for_C18": 1,
+        "pair_checks": 0,
+        "stage_modulus": 4
+      },
+      "2": {
+        "guaranteed_window_for_C18": 15,
+        "pair_checks": 319488,
+        "stage_modulus": 256
+      },
+      "3": {
+        "guaranteed_window_for_C18": 911,
+        "pair_checks": 319488,
+        "stage_modulus": 16384
+      }
+    },
+    "increment_alphabet": [
+      17,
+      18
+    ],
+    "increment_word_length": 12,
+    "pair_checks": 638976,
+    "word_depth_runs": 12288,
+    "words_per_depth": 4096
+  },
+  "schema_version": 1,
+  "stationary_matching_tree": {
+    "depths": {
+      "1": {
+        "context_image_size": 4,
+        "period": 4,
+        "roots_checked": 32,
+        "valuation_checks": 6
+      },
+      "2": {
+        "context_image_size": 256,
+        "period": 256,
+        "roots_checked": 32,
+        "valuation_checks": 32640
+      },
+      "3": {
+        "context_image_size": 16384,
+        "period": 16384,
+        "roots_checked": 32,
+        "valuation_checks": 32640
+      }
+    },
+    "ghost_roots": {
+      "111": [
+        2,
+        130,
+        1922,
+        116610,
+        42059650,
+        981583746,
+        228614850434,
+        3802027640706
+      ],
+      "127": [
+        1,
+        13,
+        10765,
+        403981,
+        50735629,
+        2131110413,
+        234059344397,
+        234059344397
+      ],
+      "15": [
+        0,
+        112,
+        368,
+        868720,
+        57491824,
+        393036144,
+        219436368240,
+        4067727065456
+      ],
+      "31": [
+        3,
+        91,
+        15707,
+        32091,
+        36732251,
+        1446018395,
+        18625887579,
+        3042282863963
+      ],
+      "47": [
+        2,
+        182,
+        12726,
+        389558,
+        2486710,
+        2485514678,
+        247298650550,
+        15640461439414
+      ],
+      "63": [
+        1,
+        129,
+        2689,
+        330369,
+        40176257,
+        2523204225,
+        92717517441,
+        3941008214657
+      ],
+      "79": [
+        0,
+        188,
+        5052,
+        250812,
+        13882300,
+        4241740732,
+        274824680380,
+        16492621190076
+      ],
+      "95": [
+        3,
+        103,
+        14695,
+        457063,
+        18282855,
+        2299984231,
+        229933250919,
+        7101880924519
+      ]
+    },
+    "positive_stage_real_sign_checks": 128,
+    "total_context_valuation_pairs": 65286
+  }
+}

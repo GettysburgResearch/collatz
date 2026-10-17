@@ -1,0 +1,443 @@
+{
+  "exact_thresholds": {
+    "period_10_ceiling": {
+      "final_upper_bound": "4997/5000",
+      "log_ratio_upper_certificate": "64^20 < 81^19",
+      "positive_quadratic": "13*alpha^2-500*alpha+4880",
+      "quadratic_discriminant": -3760,
+      "shape_upper_bound": "263/250",
+      "strictly_below_one": true
+    },
+    "uniform_period_1_to_9": {
+      "conclusion": "log_81(64)*(297/281)>1",
+      "delay_ratio": "37/2",
+      "integer_margin": 3,
+      "log_ratio_lower_certificate": "64^93 > 81^88",
+      "period_shapes": {
+        "1": "1517/1373",
+        "2": "89/81",
+        "3": "1509/1381",
+        "4": "301/277",
+        "5": "1501/1389",
+        "6": "1497/1393",
+        "7": "1493/1397",
+        "8": "1489/1401",
+        "9": "297/281"
+      },
+      "shape_at_period_9": "297/281"
+    }
+  },
+  "experiment_id": "X-9413",
+  "height": {
+    "denominator_monomials_checked": 1986,
+    "numerator_monomials_checked": 47694,
+    "selected_records": [
+      {
+        "delay": 2,
+        "denominator_arg": [
+          1,
+          0
+        ],
+        "denominator_max": 2,
+        "height_lambda_bound": 2,
+        "numerator_arg": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "numerator_max": 2,
+        "order": 1,
+        "period": 1
+      },
+      {
+        "delay": 3,
+        "denominator_arg": [
+          1,
+          0
+        ],
+        "denominator_max": 3,
+        "height_lambda_bound": 4,
+        "numerator_arg": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "numerator_max": 4,
+        "order": 1,
+        "period": 1
+      },
+      {
+        "delay": 4,
+        "denominator_arg": [
+          1,
+          0
+        ],
+        "denominator_max": 4,
+        "height_lambda_bound": 7,
+        "numerator_arg": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "numerator_max": 7,
+        "order": 1,
+        "period": 1
+      },
+      {
+        "delay": 4,
+        "denominator_arg": [
+          3,
+          0
+        ],
+        "denominator_max": 6,
+        "height_lambda_bound": 6,
+        "numerator_arg": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "numerator_max": 6,
+        "order": 3,
+        "period": 1
+      },
+      {
+        "delay": 5,
+        "denominator_arg": [
+          3,
+          0
+        ],
+        "denominator_max": 9,
+        "height_lambda_bound": 9,
+        "numerator_arg": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "numerator_max": 9,
+        "order": 3,
+        "period": 1
+      },
+      {
+        "delay": 6,
+        "denominator_arg": [
+          3,
+          0
+        ],
+        "denominator_max": 12,
+        "height_lambda_bound": 13,
+        "numerator_arg": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "numerator_max": 13,
+        "order": 3,
+        "period": 1
+      },
+      {
+        "delay": 5,
+        "denominator_arg": [
+          4,
+          0
+        ],
+        "denominator_max": 22,
+        "height_lambda_bound": 42,
+        "numerator_arg": [
+          4,
+          0,
+          3,
+          0
+        ],
+        "numerator_max": 42,
+        "order": 1,
+        "period": 4
+      },
+      {
+        "delay": 6,
+        "denominator_arg": [
+          4,
+          0
+        ],
+        "denominator_max": 30,
+        "height_lambda_bound": 59,
+        "numerator_arg": [
+          4,
+          0,
+          3,
+          1
+        ],
+        "numerator_max": 59,
+        "order": 1,
+        "period": 4
+      },
+      {
+        "delay": 7,
+        "denominator_arg": [
+          4,
+          0
+        ],
+        "denominator_max": 38,
+        "height_lambda_bound": 80,
+        "numerator_arg": [
+          4,
+          0,
+          3,
+          2
+        ],
+        "numerator_max": 80,
+        "order": 1,
+        "period": 4
+      },
+      {
+        "delay": 13,
+        "denominator_arg": [
+          12,
+          0
+        ],
+        "denominator_max": 258,
+        "height_lambda_bound": 402,
+        "numerator_arg": [
+          12,
+          0,
+          3,
+          0
+        ],
+        "numerator_max": 402,
+        "order": 3,
+        "period": 4
+      },
+      {
+        "delay": 14,
+        "denominator_arg": [
+          12,
+          0
+        ],
+        "denominator_max": 282,
+        "height_lambda_bound": 455,
+        "numerator_arg": [
+          12,
+          0,
+          3,
+          1
+        ],
+        "numerator_max": 455,
+        "order": 3,
+        "period": 4
+      },
+      {
+        "delay": 15,
+        "denominator_arg": [
+          12,
+          0
+        ],
+        "denominator_max": 306,
+        "height_lambda_bound": 512,
+        "numerator_arg": [
+          12,
+          0,
+          3,
+          2
+        ],
+        "numerator_max": 512,
+        "order": 3,
+        "period": 4
+      }
+    ]
+  },
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "the universal delayed-window lemma",
+      "the universal height estimate",
+      "the source-independent period-nine irrationality theorem",
+      "irrationality at period ten",
+      "the balanced nonperiodic stack value",
+      "the Collatz conjecture"
+    ],
+    "proved_by_finite_computation": [
+      "the frozen Laurent-polynomial identities",
+      "the frozen cancellation windows",
+      "the frozen first-error and monomial-height formulas",
+      "the displayed exact period-nine and period-ten certificates"
+    ]
+  },
+  "optimized_delay": {
+    "formula": "log_81(64)*[((alpha+1)^2-r)/(alpha^2+r)]",
+    "last_period_above_one": 9,
+    "optimizer": "(2*r-1+sqrt(4*r^2+1))/2",
+    "rows": {
+      "1": {
+        "above_one": true,
+        "optimal_delay_ratio": "1.618033988749894848",
+        "optimal_shape": "1.618033988749894848",
+        "optimized_exponent": "1.531300681237308539"
+      },
+      "10": {
+        "above_one": false,
+        "optimal_delay_ratio": "19.512492197250393968",
+        "optimal_shape": "1.051249219725039397",
+        "optimized_exponent": "0.994896616714958418"
+      },
+      "11": {
+        "above_one": false,
+        "optimal_delay_ratio": "21.511898020814320299",
+        "optimal_shape": "1.046536183149359118",
+        "optimized_exponent": "0.990435607994818983"
+      },
+      "12": {
+        "above_one": false,
+        "optimal_delay_ratio": "23.511627724273593958",
+        "optimal_shape": "1.042631894128693807",
+        "optimized_exponent": "0.986740515928226489"
+      },
+      "13": {
+        "above_one": false,
+        "optimal_delay_ratio": "25.511432498974810937",
+        "optimal_shape": "1.039343865686252821",
+        "optimized_exponent": "0.983628867783728164"
+      },
+      "14": {
+        "above_one": false,
+        "optimal_delay_ratio": "27.511363811694556041",
+        "optimal_shape": "1.036538108874679717",
+        "optimized_exponent": "0.980973108899614660"
+      },
+      "15": {
+        "above_one": false,
+        "optimal_delay_ratio": "29.511300432597583764",
+        "optimal_shape": "1.034117136942828504",
+        "optimized_exponent": "0.978681433876619045"
+      },
+      "2": {
+        "above_one": true,
+        "optimal_delay_ratio": "3.561552812808830275",
+        "optimal_shape": "1.280776406404415138",
+        "optimized_exponent": "1.212119598488134246"
+      },
+      "3": {
+        "above_one": true,
+        "optimal_delay_ratio": "5.541381265149109844",
+        "optimal_shape": "1.180460421716369806",
+        "optimized_exponent": "1.117181331298503219"
+      },
+      "4": {
+        "above_one": true,
+        "optimal_delay_ratio": "7.531128874149274827",
+        "optimal_shape": "1.132782218537318707",
+        "optimized_exponent": "1.072059008987819179"
+      },
+      "5": {
+        "above_one": true,
+        "optimal_delay_ratio": "9.524937810560445136",
+        "optimal_shape": "1.104987562112089027",
+        "optimized_exponent": "1.045754767379350744"
+      },
+      "6": {
+        "above_one": true,
+        "optimal_delay_ratio": "11.520797289396148622",
+        "optimal_shape": "1.086799548232691437",
+        "optimized_exponent": "1.028541276134114902"
+      },
+      "7": {
+        "above_one": true,
+        "optimal_delay_ratio": "13.517834423809099976",
+        "optimal_shape": "1.073976346655512412",
+        "optimized_exponent": "1.016405447229619772"
+      },
+      "8": {
+        "above_one": true,
+        "optimal_delay_ratio": "15.515609770940699566",
+        "optimal_shape": "1.064451221367587446",
+        "optimized_exponent": "1.007390920179433292"
+      },
+      "9": {
+        "above_one": true,
+        "optimal_delay_ratio": "17.513878188659973023",
+        "optimal_shape": "1.057097576517774256",
+        "optimized_exponent": "1.000431470180015632"
+      }
+    }
+  },
+  "product_identity": {
+    "first_error_checks": 36,
+    "laurent_product_identities": 630,
+    "selected_records": [
+      {
+        "degree": 1,
+        "delay": 3,
+        "first_block": 4,
+        "first_lambda_exponent": 5,
+        "order": 1,
+        "period": 1,
+        "phase_minima": [
+          5
+        ]
+      },
+      {
+        "degree": 3,
+        "delay": 5,
+        "first_block": 8,
+        "first_lambda_exponent": 22,
+        "order": 3,
+        "period": 1,
+        "phase_minima": [
+          22
+        ]
+      },
+      {
+        "degree": 4,
+        "delay": 6,
+        "first_block": 7,
+        "first_lambda_exponent": 74,
+        "order": 1,
+        "period": 4,
+        "phase_minima": [
+          74,
+          77,
+          80,
+          83
+        ]
+      },
+      {
+        "degree": 12,
+        "delay": 14,
+        "first_block": 17,
+        "first_lambda_exponent": 466,
+        "order": 3,
+        "period": 4,
+        "phase_minima": [
+          466,
+          471,
+          476,
+          481
+        ]
+      }
+    ],
+    "zero_window_checks": 180
+  },
+  "ranges": {
+    "delay_offset_from_degree": [
+      1,
+      3
+    ],
+    "optimized_periods": [
+      1,
+      15
+    ],
+    "product_orders": [
+      1,
+      3
+    ],
+    "product_periods": [
+      1,
+      4
+    ]
+  },
+  "research_question": "Does an independently delayed Gaussian-binomial block-Pade window produce a source-independent period-nine theorem, and where does that family stop?",
+  "schema_version": 1
+}

@@ -1,0 +1,174 @@
+{
+  "direct_truncation_barrier": {
+    "limit": "0.946394630357186",
+    "rows": {
+      "1": {
+        "H_K": 163,
+        "H_next": 488,
+        "denominator_bits": 1034,
+        "exact_error_v2": 2928,
+        "height_bits": 1034,
+        "tau": "2.833377789045"
+      },
+      "12": {
+        "H_K": 12306,
+        "H_next": 14350,
+        "denominator_bits": 78019,
+        "exact_error_v2": 86100,
+        "height_bits": 78019,
+        "tau": "1.103588732783"
+      },
+      "16": {
+        "H_K": 21418,
+        "H_next": 24083,
+        "denominator_bits": 135787,
+        "exact_error_v2": 144498,
+        "height_bits": 135787,
+        "tau": "1.064152669852"
+      },
+      "2": {
+        "H_K": 488,
+        "H_next": 966,
+        "denominator_bits": 3094,
+        "exact_error_v2": 5796,
+        "height_bits": 3094,
+        "tau": "1.873395928125"
+      },
+      "24": {
+        "H_K": 47148,
+        "H_next": 51064,
+        "denominator_bits": 298912,
+        "exact_error_v2": 306384,
+        "height_bits": 298912,
+        "tau": "1.024999902532"
+      },
+      "3": {
+        "H_K": 966,
+        "H_next": 1597,
+        "denominator_bits": 6125,
+        "exact_error_v2": 9582,
+        "height_bits": 6125,
+        "tau": "1.564588224307"
+      },
+      "4": {
+        "H_K": 1597,
+        "H_next": 2390,
+        "denominator_bits": 10125,
+        "exact_error_v2": 14340,
+        "height_bits": 10125,
+        "tau": "1.416332602726"
+      },
+      "6": {
+        "H_K": 3336,
+        "H_next": 4444,
+        "denominator_bits": 21150,
+        "exact_error_v2": 26664,
+        "height_bits": 21150,
+        "tau": "1.260724741399"
+      },
+      "8": {
+        "H_K": 5705,
+        "H_next": 7119,
+        "denominator_bits": 36169,
+        "exact_error_v2": 42714,
+        "height_bits": 36169,
+        "tau": "1.180961152237"
+      }
+    }
+  },
+  "experiment_id": "X-9406",
+  "interpretation": {
+    "not_proved_by_finite_computation": [
+      "the universal direct-truncation theorem",
+      "the universal S-adic transfer lemma",
+      "existence of a determinant or Pade approximant crossing the barrier",
+      "p-adic irrationality or transcendence of the stack value",
+      "nonexistence of an ordinary stack context or Collatz counterexample"
+    ],
+    "proved_by_finite_computation": [
+      "frozen reduced-denominator and exact first-omitted-valuation cases",
+      "frozen finite approximation exponents",
+      "frozen transfer, concatenation, repeated-block, and standard-word identities"
+    ]
+  },
+  "research_question": "Do direct sparse truncations stay below the p-adic approximation threshold, and do the exact S-adic transfer-polynomial identities hold?",
+  "s_adic_transfer": {
+    "concatenation_checks": 516,
+    "maximum_polynomial_terms": 6,
+    "repeated_block_checks": 150,
+    "standard_words": [
+      {
+        "e": 154,
+        "index": 0,
+        "length": 1,
+        "polynomial_terms": 1,
+        "sum": 17
+      },
+      {
+        "e": 470,
+        "index": 1,
+        "length": 2,
+        "polynomial_terms": 2,
+        "sum": 35
+      },
+      {
+        "e": 939,
+        "index": 2,
+        "length": 3,
+        "polynomial_terms": 3,
+        "sum": 52
+      },
+      {
+        "e": 2345,
+        "index": 3,
+        "length": 5,
+        "polynomial_terms": 5,
+        "sum": 87
+      },
+      {
+        "e": 5633,
+        "index": 4,
+        "length": 8,
+        "polynomial_terms": 8,
+        "sum": 139
+      },
+      {
+        "e": 14233,
+        "index": 5,
+        "length": 13,
+        "polynomial_terms": 13,
+        "sum": 226
+      },
+      {
+        "e": 36138,
+        "index": 6,
+        "length": 21,
+        "polynomial_terms": 21,
+        "sum": 365
+      },
+      {
+        "e": 93076,
+        "index": 7,
+        "length": 34,
+        "polynomial_terms": 34,
+        "sum": 591
+      },
+      {
+        "e": 240913,
+        "index": 8,
+        "length": 55,
+        "polynomial_terms": 55,
+        "sum": 956
+      },
+      {
+        "e": 626525,
+        "index": 9,
+        "length": 89,
+        "polynomial_terms": 89,
+        "sum": 1547
+      }
+    ],
+    "transfer_value_checks": 1548
+  },
+  "schema_version": 1
+}
