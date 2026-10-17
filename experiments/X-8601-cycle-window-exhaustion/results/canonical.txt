@@ -1,0 +1,33 @@
+experiment=X-8601 max_m=27
+m=2 window=empty
+m=3 window=empty
+m=4 window=empty
+m=5 K=8 denominator=13 compositions=35 left_records=10 right_records=20 modular_matches=0
+m=6 window=empty
+m=7 window=empty
+m=8 K=13 denominator=1631 compositions=792 left_records=126 right_records=126 modular_matches=0
+m=9 window=empty
+m=10 K=16 denominator=6487 compositions=5005 left_records=462 right_records=462 modular_matches=0
+m=11 K=18 denominator=84997 compositions=19448 left_records=792 right_records=1716 modular_matches=0
+m=12 window=empty
+m=13 K=21 denominator=502829 compositions=125970 left_records=3003 right_records=6435 modular_matches=0
+m=14 K=23 denominator=3605639 compositions=497420 left_records=11440 right_records=11440 modular_matches=0
+m=15 K=24 denominator=2428309 compositions=817190 left_records=11440 right_records=24310 modular_matches=0
+m=16 K=26 denominator=24062143 compositions=3268760 left_records=43758 right_records=43758 modular_matches=0
+m=17 K=27 denominator=5077565 compositions=5311735 left_records=43758 right_records=92378 modular_matches=0
+m=17 K=28 denominator=139295293 compositions=13037895 left_records=75582 right_records=167960 modular_matches=0
+m=18 K=29 denominator=149450423 compositions=21474180 left_records=167960 right_records=167960 modular_matches=0
+m=19 K=31 denominator=985222181 compositions=86493225 left_records=293930 right_records=646646 modular_matches=0
+m=20 K=32 denominator=808182895 compositions=141120525 left_records=646646 right_records=646646 modular_matches=0
+m=20 K=33 denominator=5103150191 compositions=347373600 left_records=1144066 right_records=1144066 modular_matches=0
+m=21 K=34 denominator=6719515981 compositions=573166440 left_records=1144066 right_records=2496144 modular_matches=0
+m=22 K=35 denominator=2978678759 compositions=927983760 left_records=2496144 right_records=2496144 modular_matches=0
+m=22 K=36 denominator=37338417127 compositions=2319959400 left_records=4457400 right_records=4457400 modular_matches=0
+m=23 K=37 denominator=43295774645 compositions=3796297200 left_records=4457400 right_records=9657700 modular_matches=0
+m=24 K=39 denominator=267326277407 compositions=15471286560 left_records=17383860 right_records=17383860 modular_matches=0
+m=25 K=40 denominator=252223018333 compositions=25140840660 left_records=17383860 right_records=37442160 modular_matches=0
+m=25 K=41 denominator=1351734646109 compositions=62852101650 left_records=30421755 right_records=67863915 modular_matches=0
+m=26 K=42 denominator=1856180682775 compositions=103077446706 left_records=67863915 right_records=67863915 modular_matches=0
+m=27 K=43 denominator=1170495537221 compositions=166509721602 left_records=67863915 right_records=145422675 modular_matches=0
+m=27 K=44 denominator=9966588559429 compositions=421171648758 left_records=119759850 right_records=265182525 modular_matches=0
+summary tested_pairs=24 total_compositions=802459998516 total_modular_matches=0 nontrivial_cycles=0
