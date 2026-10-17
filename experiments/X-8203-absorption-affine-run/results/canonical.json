@@ -1,0 +1,39 @@
+{
+  "affine_run_tschakaloff": {
+    "R_range": "0..8",
+    "backward_identity_checks": 225,
+    "beta": "(2*sqrt(2086)-7)/79",
+    "beta_gt_16_over_15_square_margin": 3239,
+    "coefficient_checks": 1755,
+    "core_formula": "v0=-9^(-(R+1))*F_q(z)",
+    "d_range": "1..5",
+    "functional_coefficient_checks": 900,
+    "max_depth": 20,
+    "q_formula": "(8/9)^d",
+    "schedules": 45,
+    "sixteen_over_fifteen_gt_gamma_integer_margin": 13,
+    "source_conclusion": "every eventually affine positive-slope run schedule has irrational core",
+    "source_lambda": "-(2/3)*log_2(3)",
+    "z_formula": "2^(3R+3d+4)/9^(R+d+1)"
+  },
+  "agent": "gpt56-refund-01",
+  "canonical_absorption": {
+    "absorption_height": 5632,
+    "canonical_234_certificate": 593,
+    "canonical_471_certificate": 124585,
+    "nine53_minus_two168": 1565793456925113265436846423769454767917652536873,
+    "q_at_absorption": 2,
+    "stack_233_margin": "27453/36102185",
+    "stack_288_margin": "84263/63840",
+    "three665_gt_two1054": true
+  },
+  "counterexample_claimed": false,
+  "date": "2026-07-23",
+  "experiment_id": "X-8203",
+  "frozen": {
+    "pr49": "210b1e204aa82947bab086b020bf2bd53805d84e",
+    "pr51": "c7f1c75d0a71a63b32ef3e23306c23f1d0a60bfa",
+    "source": "Amou-Matala-aho-Vaananen 2007 Theorem 5.1 DOI 10.4064/aa127-4-2"
+  },
+  "semantic_digest": "f21d9538600020fbc330e3413f9bbbd09351d8574e523e05d508cec0b2f3fff7"
+}

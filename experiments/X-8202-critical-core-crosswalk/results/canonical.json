@@ -1,0 +1,51 @@
+{
+  "agent": "gpt56-refund-01",
+  "date": "2026-07-23",
+  "experiment_id": "X-8202",
+  "new_result": {
+    "common_form": "q=rho+2^H*ell; q_next=sigma+P*ell; sigma>=0",
+    "counterexample_claimed": false,
+    "pr49_top_lift_doubling_height": 5632,
+    "pr51_refund_cone": "9^(r_n+1)>2^(5+3*r_(n+3))"
+  },
+  "pr49": {
+    "critical_chain": [
+      "L-8504",
+      "L-8505",
+      "T-8507",
+      "L-8506",
+      "T-8506"
+    ],
+    "frozen_head": "3357d36c7464e036363c6579d873f19f5674adad",
+    "local_blocks": 96,
+    "local_replays": 288,
+    "local_states": 12,
+    "margin_at_5616": -22,
+    "margin_at_5632": 986,
+    "nonzero_two_block_corrections_at_3744": 384,
+    "target_independent_H": "11*(t+33)",
+    "top_lift_first_multiple_of_16": 5632,
+    "top_lift_uniform_state_checks": 12,
+    "two_block_crosswalks": 384
+  },
+  "pr51": {
+    "aperiodic_linear_schedule": "r_n=64+n",
+    "critical_chain": [
+      "O-8001",
+      "L-8002",
+      "L-8004",
+      "T-8002",
+      "L-8003"
+    ],
+    "divisible_seven_checks": 256,
+    "frozen_head": "9c0753db8543a99247ed55beefbce75ca8f2b507",
+    "linear_schedule_checks": 501,
+    "maximal_run_macros": 208,
+    "physical_chart_edges": 10001,
+    "quotient_identities": 13056,
+    "refund_cone_exact_doubling_checks": 11250,
+    "reset_chart_edges": 40412,
+    "reset_seeds": 200
+  },
+  "semantic_digest": "e22874271350a0223cc3008153ea6a3e313a013bfa542cec691ec11b038eaa1f"
+}
