@@ -1,0 +1,62 @@
+digraph OrdinaryStateFrontier {
+  graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=13, labelloc="t",
+         label="Ordinary-state counterexample frontier — pass 4", nodesep=0.42, ranksep=0.72, splines=ortho];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=9,
+        color="#666666", fillcolor="#e5e7eb", margin="0.12,0.07"];
+  edge [fontname="Arial", fontsize=8, color="#555555", arrowsize=0.7];
+
+  start [label="One finite ordinary state\n+ exact deterministic partial map", shape=oval, penwidth=2];
+  success [label="Positive orbit avoids 1", shape=doubleoctagon, penwidth=2];
+
+  subgraph cluster_refund {
+    label="PR49 linear refund"; color="#b45309"; style="rounded";
+    rstate [label="one physical n\nrecovers (t,i,k)", fillcolor="#ffd6a5", color="#b45309"];
+    rlegal [label="one divisibility test\nnext type from k mod64", fillcolor="#ffd6a5", color="#b45309"];
+    rgrow [label="legal => k' >= 2k\nfresh odd primes forever", fillcolor="#ffd6a5", color="#b45309"];
+    rmiss [label="one state defined forever?", shape=diamond];
+    rstate -> rlegal -> rmiss -> rgrow;
+  }
+
+  subgraph cluster_pulse {
+    label="Negative-three pulse chart"; color="#b45309"; style="rounded";
+    pstate [label="x>0\nfixed low-bit map", fillcolor="#ffd6a5", color="#b45309"];
+    pmap [label="x=0 mod8: 9x/8\nx=7 mod16: (9x+1)/16", fillcolor="#ffd6a5", color="#b45309"];
+    pmin [label="exact least root through depth 31\nexits at block 32", fillcolor="#fff2a8", color="#9a7b00"];
+    prenew [label="p_next=3^(2r+2)p/2^(3r+4)+1\nH-style renewal", fillcolor="#ffd6a5", color="#b45309"];
+    pmiss [label="one x defined forever?", shape=diamond];
+    pstate -> pmap -> pmiss;
+    pmap -> pmin;
+    pmap -> prenew -> pmiss;
+  }
+
+  subgraph cluster_center {
+    label="Centered 64 to 81"; color="#777777"; style="rounded";
+    cstate [label="(B,e,top)\nbounded carry + length", fillcolor="#e5e7eb"];
+    cgrow [label="legal positive step grows", fillcolor="#ffd6a5", color="#b45309"];
+    cghost [label="fixed modulus lasso = ghost", fillcolor="#ffc7c7", color="#aa1111"];
+    cadd [label="additive one-counter output periodic", fillcolor="#ffc7c7", color="#aa1111"];
+    cmiss [label="nonlinear top closure?", shape=diamond];
+    cstate -> cgrow -> cmiss;
+    cstate -> cghost; cstate -> cadd;
+  }
+
+  subgraph cluster_h {
+    label="H renewal"; color="#b45309"; style="rounded";
+    hstate [label="ordinary endpoint + macro state", fillcolor="#e5e7eb"];
+    hold [label="10/30 zero-carry macros descend", fillcolor="#ffc7c7", color="#aa1111"];
+    hmiss [label="new zero-carry macro:\nnondecrease + multiplier escape?", shape=diamond];
+    hstate -> hold;
+    hstate -> hmiss;
+  }
+
+  subgraph cluster_cross {
+    label="Cross-cycle"; color="#9a7b00"; style="rounded";
+    xstate [label="phase + quotient + top boundary", fillcolor="#e5e7eb"];
+    xph1 [label="permanent phase 1 = shifted Collatz", fillcolor="#ffc7c7", color="#aa1111"];
+    xmiss [label="repeated multi-phase return?", shape=diamond];
+    xstate -> xph1; xstate -> xmiss;
+  }
+
+  start -> rstate; start -> pstate; start -> cstate; start -> hstate; start -> xstate;
+  rgrow -> success; pmiss -> success; cmiss -> success; hmiss -> success; xmiss -> success;
+}

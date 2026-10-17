@@ -1,0 +1,24 @@
+{
+  "at_threshold_check": true,
+  "bit_lengths": {
+    "11^50001*2^17396": 190372,
+    "11^50001*2^17397": 190373,
+    "14^50001": 190372
+  },
+  "defect_total_identity": "A=B+2(k-s), B>=s",
+  "derived_exact_inequality": "14^k <= 11^k * 2^s",
+  "elementary_product_window": "2^A * 7^k <= 22^k",
+  "integer_sha256": {
+    "11^50001*2^17396": "5db8993c278b4e85b72e66ec6a0cffd21b55999d793772750350589a98c6a779",
+    "11^50001*2^17397": "7849723468028a402f40221c23fd5542b1b8172e1064a30803823ab31c6e1855",
+    "14^50001": "3d28b492166e49c950d4dab0aba1b9fe84e0037c1caa87bc373b27ccadd2cc86"
+  },
+  "interpretation": "If the proposed no-cycle-through-50000 theorem is correct, every nontrivial positive accelerated cycle has at least 17397 valuations different from 2.",
+  "minimum_support_at_k_50001": 17397,
+  "semantic_sha256": "694813ec58932ca4c6e13edd7dcb904e02d8f59e32905a0435ed3a2a3e40051a",
+  "source_cycle_floor": {
+    "minimum_odd_state_length": 50001,
+    "status": "conditional on proposed PR45/T-8401"
+  },
+  "strict_below_check": true
+}

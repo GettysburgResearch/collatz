@@ -1,0 +1,146 @@
+# Atomic equivalent-witness, transport, and shared problems
+
+## 7. Equivalent full-map witness atoms
+
+### ACL-P050 — Third binary fixed ray
+
+**Statement.** Construct a nonzero sequence \(a=(a_n)_{n\ge0}\in\{0,1\}^{\mathbb N_0}\) such that
+
+\[
+a_n=a_{T(n)}\quad\text{for every }n,
+\qquad
+a_0=a_1=0.
+\]
+
+**Full-conjecture implication.** If some \(a_N=1\), the support is a functional-graph component disjoint from \(\{0\}\) and the component of \(1\); hence \(N\) is a counterexample.
+
+**Certificate styles.** An explicit component grammar, a functional-equation solution with coefficient integrality, or a finite recursive definition with a global invariance proof.
+
+---
+
+### ACL-P051 — Non-root-of-unity unit point eigenvalue
+
+**Statement.** Prove the solution-cone point-spectrum theorem in a faithful space, and construct \(f\neq0\) with
+
+\[
+Ff=\lambda f,\qquad |\lambda|=1,
+\]
+
+where \(\lambda\) is not a root of unity and \(f\) is an actual vector, not an approximate eigenvector.
+
+**Full-conjecture implication.** Under the proposed component-spectrum trichotomy, such a point eigenvalue forces a cycle-free component and therefore a divergent orbit.
+
+**Required audit.** The function space must contain component-supported eigenvectors and exclude spectral artifacts.
+
+---
+
+### ACL-P052 — Coverage deficit certificate
+
+**Statement.** Find an integer \(x\ge1\) and prove
+
+\[
+C(x)=\#\{n\le x:T^k(n)=1\text{ for some }k\}<x.
+\]
+
+**Full-conjecture implication.** At least one \(n\le x\) never reaches \(1\).
+
+**Certificate requirement.** A global counting upper bound or a proof-producing uncovered class. Merely failing to verify all \(n\le x\) is not a proof.
+
+---
+
+### ACL-N053 — Counterexample inverse-forest multiplicity
+
+**Statement.** Assuming one counterexample exists, derive with source-exact map normalization a polynomial lower bound for the number of counterexamples up to \(x\) by embedding the full inverse tree rooted at a value coprime to \(3\).
+
+**Implication.** Reshapes search and may amplify a structural witness. It does not prove nonemptiness.
+
+**Existing seed.** Minimal-counterexample closure in `L-9911` and root-independent preimage counting in proposed `L-9914`.
+
+---
+
+### ACL-N054 — Spectral support extraction theorem
+
+**Statement.** For a precisely defined nuclear/trace-class transfer operator and quotient by the trivial cycle, prove that every certified nonzero point eigenvector outside the accounted trivial spectrum has support on a nontrivial cycle or a cycle-free functional-graph component.
+
+**Implication.** Makes the spectral program nonvacuous; pair with `ACL-P055`.
+
+**Must distinguish.** Point spectrum versus approximate spectrum, and genuine support versus smooth invariant densities.
+
+---
+
+### ACL-P055 — Certified spectral excess
+
+**Statement.** After `ACL-N054`, produce rigorous interval/Fredholm data proving a point eigenvalue or determinant zero not accounted for by the trivial cycle, with an explicit tail bound.
+
+**Full-conjecture implication.** `ACL-N054 + ACL-P055` proves existence of a counterexample component.
+
+## 8. Indirect transport atoms
+
+### ACL-P060 — Witness-preserving universality surgery
+
+**Statement.** Start from a generalized Collatz map with a certified positive divergent orbit and give a finite sequence of explicit map surgeries ending at the standard shortcut map \(T\), together with a theorem that transports a positive divergent witness through every surgery.
+
+**Full-conjecture implication.** The final transported witness is a standard Collatz counterexample.
+
+**Not sufficient.** Undecidability of a broader map family or small syntactic distance without witness preservation.
+
+---
+
+### ACL-P061 — Control-map-to-standard drift transfer
+
+**Statement.** Convert an infinite low-digit survivor of the exact \(5x+1\) base-\(5/4\) tree into a positive standard \(3x+1\) orbit through an explicit arithmetic embedding or conjugacy preserving nontermination.
+
+**Full-conjecture implication.** A control survivor would then produce a standard counterexample.
+
+**Current status.** No such transfer is known; until supplied, PR #35 remains diagnostic.
+
+## 9. Shared high-leverage atoms
+
+### ACL-N070 — Completion-criticality master lemma
+
+**Statement.** For a coprime expanding chart \(M<N\), prove one theorem that simultaneously bounds:
+
+1. equal-factor recurrence length in an ordinary itinerary;
+2. zero-carry run length in the completion recurrence;
+3. rational approximation quality of the selected completion point;
+
+with sharp slope
+
+\[
+\kappa_{M,N}=\frac{\log M}{\log(N/M)}.
+\]
+
+**Implication.** Unifies currently separate proofs and gives a reusable equality-language interface for centered, collision, and control-map charts.
+
+**Value.** Reduces dependency risk and exposes exactly what an endpoint/equality construction must evade.
+
+---
+
+### ACL-N071 — High-complexity/fresh-prime/low-height incompatibility
+
+**Statement.** Let \((x_m)\) be a positive integer sequence generated by a finite-alphabet family of affine \(S\)-arithmetic recurrences. Assume:
+
+1. canonical height \(h(x_m)\le \alpha D_m+O(m)\) with \(\alpha<1\);
+2. its symbolic directive has factor-complexity slope at least \(c>0\);
+3. endpoint prime support gains unbounded new logarithmic mass;
+4. each transition lies in one of finitely many shrinking room/residue classes.
+
+Prove that no such infinite sequence exists under explicit quantitative constants covering the collision and H parameter sets.
+
+**Implication.** Extends the fixed-width almost-\(S\)-unit template of PR #33 to architectures with growing rank or to H, or identifies the exact escape feature.
+
+**Challenge.** PR #33 already handles a fixed 258-coordinate class even with fresh endpoint primes. The new theorem must address variable width, unbounded essential rank, or a quantitatively different prime-mass regime rather than reproving that special case.
+
+---
+
+### ACL-P072 — Integer-first regenerative invariant
+
+**Statement.** Construct a nonempty explicitly described set \(X\subset\mathbb Z_{>0}\), not via an inverse-limit address, such that:
+
+1. \(T(X)\subseteq X\);
+2. \(1,2\notin X\);
+3. membership and closure admit finite or inductive exact certificates.
+
+**Full-conjecture implication.** Any member is a counterexample.
+
+**Purpose.** This abstracts the sanctuary ideal while allowing richer arithmetic state than a regular language.

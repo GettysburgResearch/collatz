@@ -1,0 +1,79 @@
+digraph CollatzPass5 {
+  graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=12, labelloc="t",
+         label="Global Collatz Counterexample Dependency Map — cartography pass 5",
+         nodesep=0.32, ranksep=0.72, compound=true, splines=ortho];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=8.3,
+        margin="0.11,0.06", color="#666666", fillcolor="#e5e7eb"];
+  edge [fontname="Arial", fontsize=7.3, color="#555555", arrowsize=0.67];
+
+  false [label="COLLATZ IS FALSE", shape=doubleoctagon, penwidth=2];
+  cycle [label="Positive nontrivial cycle", shape=oval];
+  div [label="Positive orbit avoids 1", shape=oval];
+  third [label="Third component / deficit", shape=oval];
+  cycle -> false; div -> false; third -> false;
+
+  subgraph cluster_cycle {
+    label="Positive-cycle funnel"; color="#b45309"; style="rounded";
+    ceq [label="Exact cycle equation", fillcolor="#c8f7c5", color="#267326"];
+    len [label="No cycle through 50,000\nPROPOSED", fillcolor="#ffd6a5", color="#b45309"];
+    support [label="Support layers through 17\nproposed / source-exact", fillcolor="#ffd6a5", color="#b45309"];
+    bridge [label="14^k <= 11^k 2^s\nconditional s >= 17,397", fillcolor="#fff2a8", color="#9a7b00"];
+    comp [label="Block / mechanical / half-join compilers", fillcolor="#ffd6a5", color="#b45309"];
+    cap [label="Commutator + fixed-cone resultants", fillcolor="#ffd6a5", color="#b45309"];
+    prime [label="Prime-power compatibility", fillcolor="#ffd6a5", color="#b45309"];
+    full [label="Entire denominator + exact replay", shape=diamond];
+    ceq -> len -> bridge; ceq -> support -> bridge;
+    comp -> full; cap -> full; prime -> full; bridge -> full -> cycle;
+  }
+
+  subgraph cluster_refund {
+    label="Ordinary multiplicative-refund funnel"; color="#b45309"; style="rounded";
+    common [label="q=rho+2^E ell\nq'=sigma+M ell", fillcolor="#ffd6a5", color="#b45309"];
+    six [label="PR45 fixed six-branch chart", fillcolor="#ffd6a5", color="#b45309"];
+    run [label="PR51 changing-run highway", fillcolor="#ffd6a5", color="#b45309"];
+    core [label="PR49 intrinsic changing-height core", fillcolor="#ffd6a5", color="#b45309"];
+    hctr [label="PR19 H renewal counter", fillcolor="#ffd6a5", color="#b45309"];
+    top [label="One ordinary root\ndefined forever?", shape=diamond];
+    common -> six -> top; common -> run -> top; common -> core -> top; common -> hctr -> top; top -> div;
+  }
+
+  subgraph cluster_selector {
+    label="Exact 176-bit bridge"; color="#2563a8"; style="rounded";
+    s176 [label="PR3 conditional 176-bit selector", fillcolor="#ffd6a5", color="#b45309"];
+    c176 [label="PR49 consumes 176 new top bits", fillcolor="#ffd6a5", color="#b45309"];
+    causal [label="Causal orientation\n+ top closure", shape=diamond];
+    s176 -> causal; c176 -> causal -> core;
+  }
+
+  subgraph cluster_frozen {
+    label="Frozen corrected class"; color="#267326"; style="rounded";
+    stage [label="256-transition doubling stage", fillcolor="#ffd6a5", color="#b45309"];
+    ev [label="Evertse 1984", fillcolor="#cfe8ff", color="#2563a8"];
+    t9705 [label="T-9705 independently verified", fillcolor="#c8f7c5", color="#267326"];
+    closed [label="No signed ordinary completion", shape=octagon, fillcolor="#ffc7c7", color="#aa1111"];
+    stage -> t9705 -> closed; ev -> t9705;
+  }
+
+  subgraph cluster_other {
+    label="Other direct / equivalent routes"; color="#777777"; style="rounded";
+    center [label="Centered nonlinear top boundary", shape=diamond];
+    cross [label="Repeated multi-phase return", shape=diamond];
+    dfa [label="Boundary-memory sanctuary DFA", shape=diamond];
+    cover [label="Coverage deficit C(x)<x", shape=diamond];
+    cone [label="Third binary fixed ray", shape=diamond];
+    center -> div; cross -> div; cross -> cycle; dfa -> div; cover -> third; cone -> third;
+  }
+
+  ghost [label="Fixed-modulus centered lasso\n= completion ghost", fillcolor="#ffc7c7", color="#aa1111"];
+  ph1 [label="Permanent phase 1\n= shifted Collatz", fillcolor="#ffc7c7", color="#aa1111"];
+  pulse [label="One fixed pulse cone\n= finite", fillcolor="#ffd6a5", color="#b45309"];
+  ghost -> center; ph1 -> cross; pulse -> cap;
+
+  legend_p [label="PROVED / independently verified", fillcolor="#c8f7c5", color="#267326"];
+  legend_l [label="source-inspected literature", fillcolor="#cfe8ff", color="#2563a8"];
+  legend_o [label="PROPOSED", fillcolor="#ffd6a5", color="#b45309"];
+  legend_e [label="exact finite / conditional synthesis", fillcolor="#fff2a8", color="#9a7b00"];
+  legend_r [label="closed / secret reduction", fillcolor="#ffc7c7", color="#aa1111"];
+  legend_q [label="OPEN", fillcolor="#e5e7eb", color="#666666"];
+  {rank=sink; legend_p; legend_l; legend_o; legend_e; legend_r; legend_q;}
+}

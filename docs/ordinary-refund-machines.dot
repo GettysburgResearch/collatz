@@ -1,0 +1,55 @@
+digraph RefundMachines {
+  graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=12, labelloc="t",
+         label="Ordinary Multiplicative-Refund Machines — pass 5",
+         nodesep=0.34, ranksep=0.72, splines=ortho];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=9,
+        color="#666666", fillcolor="#e5e7eb", margin="0.12,0.07"];
+  edge [fontname="Arial", fontsize=8, color="#555555", arrowsize=0.7];
+
+  common [label="Common exact edge\nq=rho_s+2^E ell\nq'=sigma_s+M_s ell", fillcolor="#cfe8ff", color="#2563a8", penwidth=2];
+  top [label="ONE ORDINARY ROOT\nDEFINED FOREVER?", shape=diamond, penwidth=2];
+  div [label="Positive Collatz orbit avoids 1", shape=doubleoctagon, penwidth=2];
+
+  subgraph cluster_fixed {
+    label="Fixed scale"; color="#b45309"; style="rounded";
+    six [label="PR45 six-branch chart\nstate (i,q)\nM=2^19, N=9^6", fillcolor="#ffd6a5", color="#b45309"];
+    sixgrow [label="every legal edge strictly grows", fillcolor="#ffd6a5", color="#b45309"];
+    six -> sixgrow;
+  }
+
+  subgraph cluster_run {
+    label="Changing run"; color="#b45309"; style="rounded";
+    run [label="PR51 negative-three run core\nstate (r,s,k)", fillcolor="#ffd6a5", color="#b45309"];
+    run5 [label="emitted run r>=5\nstrict physical growth", fillcolor="#ffd6a5", color="#b45309"];
+    reset [label="explicit reset highways\nfinite only", fillcolor="#fff2a8", color="#9a7b00"];
+    run -> run5; run -> reset;
+  }
+
+  subgraph cluster_height {
+    label="Changing height"; color="#b45309"; style="rounded";
+    core [label="PR49 intrinsic core\nstate (t,gamma,i,C)", fillcolor="#ffd6a5", color="#b45309"];
+    eight [label="8 ordinary source blocks\nper finite state", fillcolor="#ffd6a5", color="#b45309"];
+    bits [label="next modulus gains 176 bits", fillcolor="#ffd6a5", color="#b45309"];
+    refund [label="noncanonical lift > doubles\npositive lower density", fillcolor="#ffd6a5", color="#b45309"];
+    prime [label="coprime cores + globally fresh primes", fillcolor="#ffd6a5", color="#b45309"];
+    core -> eight -> bits -> refund -> prime;
+  }
+
+  subgraph cluster_h {
+    label="H renewal"; color="#b45309"; style="rounded";
+    h [label="PR19 renewal counter\nstate (a,R,b,k)", fillcolor="#ffd6a5", color="#b45309"];
+    kraft [label="exact Kraft factor 1/21\nper renewal", fillcolor="#ffd6a5", color="#b45309"];
+    scc [label="refund graph\n353,835 edges; SCC max 594", fillcolor="#fff2a8", color="#9a7b00"];
+    h -> kraft -> scc;
+  }
+
+  selector [label="PR3 conditional\n176-bit selector", fillcolor="#ffd6a5", color="#b45309"];
+  causal [label="causal orientation\nfrom current ordinary state", shape=diamond];
+  ghost [label="modular lasso / SCC / inverse-limit point\nis not an ordinary witness", fillcolor="#ffc7c7", color="#aa1111"];
+
+  common -> six; common -> run; common -> core; common -> h;
+  sixgrow -> top; run5 -> top; prime -> top; scc -> top;
+  selector -> causal -> bits;
+  ghost -> top [style=dashed];
+  top -> div;
+}
