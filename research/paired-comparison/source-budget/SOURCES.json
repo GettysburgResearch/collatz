@@ -1,0 +1,76 @@
+{
+  "schema": "collatz-source-budget-sources/v1",
+  "base": {
+    "repository": "GettysburgResearch/collatz",
+    "commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "tree": "1c25c17df24491de6187445f1a1d355d5a7660c3"
+  },
+  "new_claim_status": "PROPOSED; in-session reconstruction is not project mathematical acceptance",
+  "source_scope": "The new elementary claims are proved in full locally; these pins credit the prior interfaces and delimit inherited claims. No whole-PR mathematical verdict is imported.",
+  "sources": [
+    {
+      "pr": 125,
+      "sha": "081dd4fb8af75b3b237a5eb4cef28b84bb5329be",
+      "path": "research/paired-comparison/valuation-ladder/PROOF.md",
+      "used_for": "First hard H entrance, original-source comparisons, and credited valuation normalization"
+    },
+    {
+      "pr": 127,
+      "sha": "f5e7ec9a23fa691d71a5a9f518cbff5529a5ea00",
+      "path": "research/paired-comparison/escape-gaps/PROOF.md",
+      "used_for": "Repeated physical 01 normalization; no selected dyadic gate is asserted for an unchanged source"
+    },
+    {
+      "pr": 130,
+      "sha": "53cf9b53bd568b1ab67601b00e789b464198e42b",
+      "path": "research/paired-comparison/universal-finite-synchronization/PROOF.md",
+      "claim_ids": [
+        "UFS-005"
+      ],
+      "used_for": "Persistent original-companion clock budget and its reset/source-order limits; not a premise of the new contracting rank"
+    },
+    {
+      "pr": 133,
+      "sha": "9ad7b5b9c0eafacbecb1b185616ae52e573998cf",
+      "path": "research/astra-exit-merging/pointwise-signatures/PROOF.md",
+      "claim_ids": [
+        "PSS-002",
+        "PSS-003"
+      ],
+      "used_for": "Credited point-preserving affine lift and earlier no-descent alternative-companion mechanism"
+    },
+    {
+      "pr": 134,
+      "sha": "025f2683c19bfedc3eeff0303206b20c889c8005",
+      "path": "research/paired-comparison/endpoint-transplant/PROOF.md",
+      "claim_ids": [
+        "EPT-003",
+        "EPT-004",
+        "EPT-005"
+      ],
+      "used_for": "Complete root-capped block inverse search and distinct 8N+3 ternary switch; the 4N+3 guard does not subsume it"
+    },
+    {
+      "pr": 135,
+      "sha": "40c59116ba9a3f94565d9782e4ffe3c97cc0ce71",
+      "path": "research/paired-comparison/fixed-source-splicing/PROOF.md",
+      "claim_ids": [
+        "FSS-001",
+        "FSS-002",
+        "FSS-003",
+        "FSS-005",
+        "FSS-006"
+      ],
+      "used_for": "Odd-valuation H splice, exact original-root acceptance, and first-entry baseline; failure of this specified source does not mean failure of every old selector"
+    },
+    {
+      "pr": 136,
+      "sha": "fc55ecf265f23b263983fb7eebd95a4c4b0f0787",
+      "path": "research/astra-exit-merging/escape-restarts/PROOF.md",
+      "claim_ids": [
+        "AER-002"
+      ],
+      "used_for": "Prior distinct R-return rank D-2 and explicit failed-guard termination; no transfer of that rank to H is used"
+    }
+  ]
+}
