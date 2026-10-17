@@ -1,0 +1,219 @@
+{
+  "automatic_factor_7": {
+    "all_adjacent_run_deltas_divisible_by_7": true,
+    "canonical_numerator_mod_7": 0,
+    "denominator_mod_7": 0,
+    "expanding_weight_mod_3": 0
+  },
+  "boundaries": {
+    "not_proved": [
+      "complete denominator factorization",
+      "prime-square-compatible repair",
+      "positive cycle",
+      "infinite ordinary chart path",
+      "Collatz counterexample"
+    ],
+    "proved": [
+      "exact second Euclidean run compression",
+      "run-letter monomial commutator",
+      "automatic factor 7",
+      "46-run proper-factor repair",
+      "directed real and quotient-cylinder rejection"
+    ]
+  },
+  "critical_run_compression": {
+    "chart_blocks": 1574985702418,
+    "commutator": {
+      "factorization": "7*2^16*3^9",
+      "sign_convention": "C_01-C_10",
+      "value": 9029615616
+    },
+    "expanding_blocks": 1307356254663,
+    "run_one_summary": {
+      "chart_length": 6,
+      "constant": 1261488,
+      "dyadic_exponent": 19,
+      "odd_exponent": 12
+    },
+    "run_word_length": 267629447755,
+    "run_word_weight": 236838463643,
+    "run_zero_summary": {
+      "chart_length": 5,
+      "constant": 118320,
+      "dyadic_exponent": 16,
+      "odd_exponent": 10
+    },
+    "substitution": {
+      "0": "01111",
+      "1": "011111"
+    }
+  },
+  "experiment_id": "X-8303",
+  "order_cover": {
+    "covers_word": true,
+    "excess_window": 1842615150173,
+    "lcm": 5893756253070,
+    "orders": [
+      3,
+      95,
+      70,
+      14295,
+      3099962
+    ]
+  },
+  "run_repair": {
+    "base_numerator_mod_product": 1274355650519809298,
+    "ceil_mod_product": 1377491661032945359,
+    "conclusion": "the frozen 46-run-swap word is not an integral cycle",
+    "crt_quotient_residue": 1100378267524741582,
+    "distance_to_nearest_integer_lower_bound": "0.4154867702110835202001656649",
+    "factor_product": 1465129870107858983,
+    "fixed_point_lower": "1567441266429151808728248.4154867702110835202001656648550663160616228665661694978049322093823618472370849137924106373341918760540178859278353010050594027929720000706283796",
+    "fixed_point_upper": "1567441266429151808728248.4154867702110835202001656648550663160616228665661694978049322093823618472370849137924106373341918760540178859278353010050635719007615146833646836",
+    "floor_mod_product": 1377491661032945358,
+    "interval_width": "4.1691077895146127363040E-123",
+    "modified_numerator_mod_product": 0,
+    "modular_nonintegrality": true,
+    "quotient_rows": [
+      {
+        "C_mod_p2": 21,
+        "C_over_p_mod_p": 3,
+        "D_mod_p2": 28,
+        "D_over_p_mod_p": 4,
+        "prime": 7,
+        "quotient_mod_p": 6
+      },
+      {
+        "C_mod_p2": 5348,
+        "C_over_p_mod_p": 28,
+        "D_mod_p2": 25403,
+        "D_over_p_mod_p": 133,
+        "prime": 191,
+        "quotient_mod_p": 151
+      },
+      {
+        "C_mod_p2": 56762,
+        "C_over_p_mod_p": 202,
+        "D_mod_p2": 5058,
+        "D_over_p_mod_p": 18,
+        "prime": 281,
+        "quotient_mod_p": 261
+      },
+      {
+        "C_mod_p2": 443961048,
+        "C_over_p_mod_p": 15528,
+        "D_mod_p2": 459028505,
+        "D_over_p_mod_p": 16055,
+        "prime": 28591,
+        "quotient_mod_p": 10636
+      },
+      {
+        "C_mod_p2": 6207469266218927,
+        "C_over_p_mod_p": 45509863,
+        "D_mod_p2": 10310826674066513,
+        "D_over_p_mod_p": 75593497,
+        "prime": 136398329,
+        "quotient_mod_p": 105593704
+      }
+    ],
+    "selected_run_positions": [
+      7,
+      33,
+      42,
+      59,
+      77,
+      103,
+      111,
+      120,
+      129,
+      146,
+      155,
+      164,
+      181,
+      190,
+      207,
+      216,
+      224,
+      233,
+      242,
+      259,
+      277,
+      285,
+      294,
+      303,
+      311,
+      337,
+      346,
+      364,
+      372,
+      398,
+      407,
+      450,
+      477,
+      485,
+      503,
+      511,
+      537,
+      546,
+      555,
+      563,
+      572,
+      590,
+      607,
+      616,
+      642,
+      659
+    ],
+    "selected_site_indices": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      39,
+      40,
+      42,
+      43,
+      46,
+      47,
+      52,
+      55,
+      56,
+      58,
+      59,
+      62,
+      63,
+      64,
+      65,
+      66,
+      68,
+      70,
+      71,
+      74,
+      76
+    ],
+    "selected_swap_count": 46,
+    "unique_floor": 1567441266429151808728248
+  },
+  "schema_version": 1
+}

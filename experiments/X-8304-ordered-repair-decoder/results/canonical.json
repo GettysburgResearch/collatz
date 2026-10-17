@@ -1,0 +1,35 @@
+{
+  "certificate": {
+    "distinct_quotient_residues": 4,
+    "first_bits_enumerated": 2,
+    "future_delta_divisibility_bits": 295,
+    "prefix_masks_checked": 4,
+    "real_integer_window_nonempty": true,
+    "real_window_below_modulus": true,
+    "viable_prefixes": 0
+  },
+  "conclusion": "no subset of the complete frozen 80-site disjoint run-transposition grammar has an integral fixed point",
+  "critical_shape": {
+    "accelerated_length": 3149971404836,
+    "run_length": 267629447755,
+    "run_weight": 236838463643,
+    "total_valuation": 4992586555009
+  },
+  "experiment_id": "X-8304",
+  "grammar": {
+    "disjoint_sites": 80,
+    "first_site_positions": [
+      0,
+      7,
+      15
+    ],
+    "subset_count": "1208925819614629174706176"
+  },
+  "not_proved": [
+    "the same conclusion for later or overlapping repair sites",
+    "the absence of a positive accelerated cycle in general",
+    "the absence of an infinite negative-cycle chart path",
+    "the Collatz conjecture"
+  ],
+  "schema_version": 1
+}

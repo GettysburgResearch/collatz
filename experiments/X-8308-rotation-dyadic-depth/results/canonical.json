@@ -1,0 +1,86 @@
+{
+  "experiment_id": "X-8308",
+  "height_interpretation": {
+    "ceil_mixed_coarse_bits_B_plus_60J": 85,
+    "conclusion": "the scanned rotations remain far below the mixed-place height gate",
+    "floor_mixed_coarse_bits_B_plus_60J": 86,
+    "known_base_odd_factor_level_J": 1,
+    "required_bits_A_minus_82": 4992586554927
+  },
+  "interpretation": {
+    "not_proved": [
+      "a bound beyond the declared rotation range",
+      "a full physical cycle",
+      "a divergent Collatz seed",
+      "the Collatz conjecture or its negation"
+    ],
+    "proved": [
+      "unique outward-enclosed real floor at every scanned chart rotation",
+      "complete floor and ceiling physical-prefix census through ten million run rotations",
+      "exact replay and first failing residue for both depth-eight records"
+    ]
+  },
+  "legal_start_counts": {
+    "ceil": 6729830,
+    "floor": 6730343
+  },
+  "maximum_physical_prefix": {
+    "ceil": {
+      "chart_blocks": 8,
+      "current_x": 1520814155107999553284668,
+      "dyadic_depth": 25,
+      "failing_residue_mod_16": 12,
+      "failing_symbol": 0,
+      "kind": "ceil",
+      "physical_odd_seed": 2370914855615080352657787,
+      "physical_x_states": [
+        1185457427807540176328893,
+        1333639606283482698370005,
+        1500344557068918035666256,
+        843943813351266395062269,
+        949436790020174694445053,
+        1068116388772696531250685,
+        1201630937369283597657021,
+        1351834804540444047364149,
+        1520814155107999553284668
+      ],
+      "start_offset": 4,
+      "start_run": 6595534,
+      "start_symbol": 38814386,
+      "start_x": 1185457427807540176328893,
+      "word": "11011111"
+    },
+    "floor": {
+      "chart_blocks": 8,
+      "current_x": 810210927051465104640843,
+      "dyadic_depth": 26,
+      "failing_residue_mod_8": 3,
+      "failing_symbol": 1,
+      "kind": "floor",
+      "physical_odd_seed": 2526201004476540394706859,
+      "physical_x_states": [
+        1263100502238270197353429,
+        1420988065018053972022608,
+        799305786572655359262717,
+        899219009894237279170557,
+        1011621386131016939066877,
+        1138074059397394056450237,
+        1280333316822068313506517,
+        1440374981424826852694832,
+        810210927051465104640843
+      ],
+      "start_offset": 5,
+      "start_run": 4760645,
+      "start_symbol": 28016158,
+      "start_x": 1263100502238270197353429,
+      "word": "10111110"
+    }
+  },
+  "schema_version": 1,
+  "scope": {
+    "chart_rotations": 58849491,
+    "fixed_decimal_scale_digits": 160,
+    "repair_site_count": 65,
+    "run_rotations": 10000000
+  }
+}

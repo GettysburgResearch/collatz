@@ -1,0 +1,42 @@
+{
+  "certificate": {
+    "distinct_quotient_residues": 4,
+    "first_bits_enumerated": 2,
+    "full_real_integer_window_nonempty": true,
+    "full_real_window_below_modulus": true,
+    "full_real_window_positive": true,
+    "future_delta_divisibility_bits": 295,
+    "prefix_masks_checked": 4,
+    "viable_prefixes": 0
+  },
+  "conclusion": "the complete canonical full-word greedy disjoint run-repair grammar contains no integral fixed point",
+  "critical_shape": {
+    "accelerated_length": 3149971404836,
+    "run_length": 267629447755,
+    "run_weight": 236838463643,
+    "total_valuation": 4992586555009
+  },
+  "experiment_id": "X-8305",
+  "full_greedy_grammar": {
+    "first_delta_valuations": [
+      16,
+      146,
+      295
+    ],
+    "first_site_positions": [
+      0,
+      7,
+      15
+    ],
+    "site_count": 30790984112,
+    "subset_count": "2^30790984112"
+  },
+  "not_proved": [
+    "the same result for overlapping or noncanonical matchings",
+    "the same result for hierarchical Farey block repairs",
+    "the absence of positive accelerated cycles in general",
+    "the absence of an infinite negative-cycle chart path",
+    "the Collatz conjecture"
+  ],
+  "schema_version": 1
+}
