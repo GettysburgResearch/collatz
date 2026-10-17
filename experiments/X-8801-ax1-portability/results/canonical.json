@@ -1,0 +1,214 @@
+{
+  "claim_boundary": "No finite computation here establishes an infinite divergent orbit for 5x+1 or a counterexample to the Collatz conjecture.",
+  "classification": "EXACT_FINITE_COMPUTATION",
+  "exact_5x1_four_to_five_chart": {
+    "checks": 200000,
+    "identities": [
+      "T_5^2(4q-1)=5q-1 with parity word 10",
+      "T_5^2(4q-2)=5q-2 with parity word 01"
+    ],
+    "phases": [
+      -2,
+      -1
+    ],
+    "q_max": 100000
+  },
+  "expanding_chart_portability": {
+    "actual_5x1_chart": {
+      "U": 4,
+      "V": 5,
+      "a": 5,
+      "delta_log_U_V_minus_1": "0.160964047443681173935159714744695088",
+      "factor_complexity_slope_kappa": "6.212567439010779752004796983567149511",
+      "fair_parity_log2_drift_model": "0.160964047443681173935159714744695088",
+      "forward_multiplier": "5/4",
+      "inverse_ratio": "4/5",
+      "macro_length": 2,
+      "macro_weight": 1
+    },
+    "actual_chart_kappa_3_minus_kappa_5": "11.442280138074375900918247210767650216",
+    "actual_chart_kappa_3_over_kappa_5": "2.841795723008894616166872578104486347",
+    "interpretation": "The height/repetition proof is format-driven, but its strength is controlled by delta=log_U(V)-1. The genuine T_5 4->5 chart still has a strong complexity obstruction, while the literal length-6, weight-4 phase chart fails earlier because 5^4-2^6=561 divides none of the relevant affine corrections.",
+    "original_3x1_chart": {
+      "U": 64,
+      "V": 81,
+      "a": 3,
+      "delta_log_U_V_minus_1": "0.056641667147437454302492629298544339",
+      "factor_complexity_slope_kappa": "17.654847577085155652923044194334799727",
+      "fair_parity_log2_drift_model": "-0.207518749639421909273130528026091746",
+      "forward_multiplier": "81/64",
+      "inverse_ratio": "64/81",
+      "macro_length": 6,
+      "macro_weight": 4
+    },
+    "same_length_weight_5x1_diagnostic": {
+      "U": 64,
+      "V": 625,
+      "a": 5,
+      "delta_log_U_V_minus_1": "0.547952063258241565246879619659593451",
+      "factor_complexity_slope_kappa": "1.824977159596377031554359089971615252",
+      "fair_parity_log2_drift_model": "0.160964047443681173935159714744695088",
+      "forward_multiplier": "625/64",
+      "inverse_ratio": "64/625",
+      "macro_length": 6,
+      "macro_weight": 4
+    },
+    "same_shape_kappa_3_minus_kappa_5": "15.829870417488778621368685104363184475",
+    "same_shape_kappa_3_over_kappa_5": "9.674010156373578039196844835584248371"
+  },
+  "experiment_id": "X-8801",
+  "fixed_phase_block_census": {
+    "a3_length6_weight4": [
+      {
+        "correction": 85,
+        "identity": "T_3^6(64*q-5)=81*q-5",
+        "parity_word": "110110",
+        "phase": -5,
+        "phase_mod_2L": 59,
+        "weight": 4
+      },
+      {
+        "correction": 119,
+        "identity": "T_3^6(64*q-7)=81*q-7",
+        "parity_word": "101101",
+        "phase": -7,
+        "phase_mod_2L": 57,
+        "weight": 4
+      },
+      {
+        "correction": 170,
+        "identity": "T_3^6(64*q-10)=81*q-10",
+        "parity_word": "011011",
+        "phase": -10,
+        "phase_mod_2L": 54,
+        "weight": 4
+      }
+    ],
+    "a5_length2_weight1": [
+      {
+        "correction": 1,
+        "identity": "T_5^2(4*q-1)=5*q-1",
+        "parity_word": "10",
+        "phase": -1,
+        "phase_mod_2L": 3,
+        "weight": 1
+      },
+      {
+        "correction": 2,
+        "identity": "T_5^2(4*q-2)=5*q-2",
+        "parity_word": "01",
+        "phase": -2,
+        "phase_mod_2L": 2,
+        "weight": 1
+      }
+    ],
+    "a5_length6_weight4": []
+  },
+  "map": "T_a(n)=n/2 for even n; (a*n+1)/2 for odd n",
+  "orbit_5x1_seed_7": {
+    "a": 5,
+    "checkpoint_interval": 1000,
+    "checkpoint_values_sha256": "94d0695aa4931e1c78d4c747a9147c8be35afd153472d9bba03cd3563fecbafb",
+    "even_steps": 499907,
+    "final_bit_length": 161183,
+    "final_decimal_digits": 48521,
+    "final_value_sha256": "20c28e6919048c58f3a261769163144cf1d4d00ce69ff8435a2796d395d6d0ad",
+    "interpretation": "Exact finite observation only. It does not prove that the orbit diverges or avoids a later cycle.",
+    "last_record_high_step": 999987,
+    "last_step_at_or_below_seed": 0,
+    "maximum_bit_length": 161185,
+    "maximum_bit_length_step": 999987,
+    "minimum_value": 7,
+    "odd_steps": 500093,
+    "parity_ascii_sha256": "779311f6dfce3a55881d68e60776364d01e740f7c6b432e462e5b0b9fdef5f62",
+    "record_high_count": 131088,
+    "seed": 7,
+    "steps": 1000000
+  },
+  "positive_cycle_census": {
+    "3": [
+      {
+        "correction": 1,
+        "cycle_denominator": 1,
+        "orbit": [
+          1,
+          2
+        ],
+        "parity_word": "10",
+        "period": 2,
+        "seed": 1,
+        "weight": 1
+      }
+    ],
+    "5": [
+      {
+        "correction": 7,
+        "cycle_denominator": 7,
+        "orbit": [
+          1,
+          3,
+          8,
+          4,
+          2
+        ],
+        "parity_word": "11000",
+        "period": 5,
+        "seed": 1,
+        "weight": 2
+      },
+      {
+        "correction": 39,
+        "cycle_denominator": 3,
+        "orbit": [
+          13,
+          33,
+          83,
+          208,
+          104,
+          52,
+          26
+        ],
+        "parity_word": "1110000",
+        "period": 7,
+        "seed": 13,
+        "weight": 3
+      },
+      {
+        "correction": 51,
+        "cycle_denominator": 3,
+        "orbit": [
+          17,
+          43,
+          108,
+          54,
+          27,
+          68,
+          34
+        ],
+        "parity_word": "1100100",
+        "period": 7,
+        "seed": 17,
+        "weight": 3
+      }
+    ]
+  },
+  "scope": {
+    "affine_max_length": 12,
+    "affine_max_seed": 256,
+    "chart_max_q": 100000,
+    "cycle_word_length_max": 14,
+    "fuel_max_value": 256,
+    "orbit_steps": 1000000
+  },
+  "universal_affine_formula_checks": {
+    "checks": 12288,
+    "max_length": 12,
+    "max_seed": 256,
+    "multipliers": 4
+  },
+  "universal_one_step_fuel_loss_checks": {
+    "checks": 65024,
+    "max_value": 256,
+    "multipliers": 4
+  }
+}

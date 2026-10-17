@@ -1,0 +1,18 @@
+{
+  "experiment_id": "X-8803",
+  "classification": "EXACT_FINITE_COMPUTATION",
+  "target_depth": 50,
+  "split_depths": [25, 25],
+  "left_frontier_size": 33554432,
+  "right_frontier_size": 33554432,
+  "left_depth_least_positive_root": 175205631,
+  "least_positive_root": 4538335001132531,
+  "least_positive_A_seed": 4538335001132530,
+  "composition_quotient": 4,
+  "composition_residue": 34735373762035,
+  "verified_survival_depth": 50,
+  "bottom_digit_prefix": "10011110111001011100001001101001011101010100000010",
+  "first_forbidden_digit": 3,
+  "first_forbidden_state": 1085242780136381205,
+  "claim_boundary": "This proves termination through depth 50 below the displayed root; it does not prove global termination."
+}
