@@ -86,7 +86,8 @@ it does not enumerate the astronomically larger number of represented words.
 The root [verification program](../../experiments/ay-swarm-20261030/verify_packet.py)
 checks the cross-track invariants and the finite-fibre cost table independently.
 
-The result records retain all bounded failures. In particular, the count of
+The result records include failure counts and representative counterexamples.
+In particular, the count of
 18,510 successful rank decreases among 32,768 tested odd sources is not a
 percentage of Collatz solved. The 1,024 fully replayed frontier examples are
 implementation checks, not a new verification record or an all-input proof.

@@ -1,0 +1,80 @@
+{
+  "additive_cost_table": {
+    "cost_tuples": 3125,
+    "exact_formula_checks": 28125,
+    "scope": "finite formula checks; the all-real theorem is proved in the note"
+  },
+  "joint_microscopic_order": {
+    "counts": {
+      "auxiliary": 984,
+      "even": 156,
+      "guarded_odd": 86,
+      "rule:ad": 156,
+      "rule:ae": 86,
+      "rule:af": 86,
+      "rule:ag": 86,
+      "rule:bd": 156,
+      "rule:be": 86,
+      "rule:bf": 86,
+      "rule:bg": 86,
+      "rule:ce": 156,
+      "rule:cf": 156,
+      "rule:cg": 156,
+      "unguarded_odd_increase": 70
+    },
+    "proper_words": 781
+  },
+  "schema": "ay-swarm-verification/v1",
+  "scope": "finite independent checks and optional exact-byte replay; not a Collatz proof",
+  "source_identities": {
+    "experiments/ay-swarm-20261030/carry_geometry.py": {
+      "git_blob": "1053d6681c60d1a1da056e1c7ad3b7243ed81f0d",
+      "sha256": "67d7e8038136cd66263ca375bcdf594567dc9713f12b0ef8ee64f3b4270970ff"
+    },
+    "experiments/ay-swarm-20261030/orders.py": {
+      "git_blob": "0cc2328e6a440f1dc1192051283af9ba32894f0c",
+      "sha256": "fa396e475746e4a9252325aacd462c576d5b1601c9f01c4baa08a9785e25c545"
+    },
+    "experiments/ay-swarm-20261030/representation_dag.py": {
+      "git_blob": "4847287765f246c7d073dc49d8464ad7a894cfd4",
+      "sha256": "88e285c20261ed5f78b42b64264d07060ea7bac3147c79ab885ba9766c9d50ab"
+    },
+    "experiments/ay-swarm-20261030/srs_semantics.py": {
+      "git_blob": "c285350f0028ab76170c6e3bff6a81d1bb42e144",
+      "sha256": "b198737a6f13d037f79dcb9b4f445dd5d7a91e3e7bbc97ffab73742da3c1e1aa"
+    },
+    "experiments/ay-swarm-20261030/verify_packet.py": {
+      "git_blob": "dd77fda66229a3270bee645ab8a43a3c6f9f4bc7",
+      "sha256": "66ebc383840ef15c6cb81383dc385f41841d480c50068a776d7eb25a2f1fb9c6"
+    },
+    "research/ay-swarm-20261030/README.md": {
+      "git_blob": "b0f6b8d53cf606d356050023a5c2e4d26384ec31",
+      "sha256": "45352b7269aeefc229cd4964bdcc27154a5f70d88963e65316111e6e034d3ca4"
+    },
+    "research/ay-swarm-20261030/SOURCES.md": {
+      "git_blob": "14029c68c1950014daf09fd8cf8684c2dcb68c3f",
+      "sha256": "0c1285f4abfb5f1ad2fd84c353f5507c4869f2207128ec3f841ea82946deb9b7"
+    },
+    "research/ay-swarm-20261030/carry-geometry.md": {
+      "git_blob": "9a6a32368b4e702266adfa839234cc15d655905a",
+      "sha256": "caa7618650f2f4bf62bed38e2a64ac295454aafa62fc75eb4ea320413440b1cd"
+    },
+    "research/ay-swarm-20261030/orders.md": {
+      "git_blob": "80ffba49de277525622368a327329e34cb043133",
+      "sha256": "66d46f54e82cc4f5a9ee24fc13cd8d2717326a9f22dfee3979428cb826586e86"
+    },
+    "research/ay-swarm-20261030/representation-dag.md": {
+      "git_blob": "fca148f3ab9611141f5945a75033969f7ce0e946",
+      "sha256": "b7ac0142946668bebf91a9a51eb507760ea71df6869c19335ec42ca57a5d86ba"
+    },
+    "research/ay-swarm-20261030/srs-semantics.md": {
+      "git_blob": "077053af235dec9236a9a3bda7e54f28a406d6c1",
+      "sha256": "2924e7ae5eb0f939a12db2dcde9a8ddc23d68675265ee51253aba1bca901c60b"
+    },
+    "research/ay-swarm-20261030/synthesis.md": {
+      "git_blob": "bb66ebed63f393e074a5e6e4295659631ef3f15e",
+      "sha256": "a9baa15148ebcef155cc1135e7a2b234680c9a8a43f273919e4a40d9daf5c564"
+    }
+  },
+  "status": "PASS"
+}
