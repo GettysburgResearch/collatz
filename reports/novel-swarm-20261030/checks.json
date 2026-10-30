@@ -1,0 +1,189 @@
+{
+  "results": [
+    {
+      "cycle_exceptions": 20,
+      "negative_controls_rejected": 4,
+      "ordinary_lifts": 4092,
+      "repetition_cases": 10912,
+      "repetition_sha256": "ba30dcb08b7d4236d7a4ea9f834e03d8e9824e7860feb36f0073ba0106e61693",
+      "track": "cylinders",
+      "transcript_sha256": "54285dac0a6837be03fd1cc8813a29276f099a3672fa47b884b3096e465e8b3a",
+      "words": 1364
+    },
+    {
+      "balanced_block_models": [
+        {
+          "collision_exponent": [
+            "0.348851567398580245",
+            "0.348851567398580246"
+          ],
+          "length": 6,
+          "ones": 4,
+          "words": "15"
+        },
+        {
+          "collision_exponent": [
+            "0.254059607086085669",
+            "0.254059607086085670"
+          ],
+          "length": 12,
+          "ones": 8,
+          "words": "495"
+        },
+        {
+          "collision_exponent": [
+            "0.187987127882060525",
+            "0.187987127882060526"
+          ],
+          "length": 24,
+          "ones": 16,
+          "words": "735471"
+        },
+        {
+          "collision_exponent": [
+            "0.145079835261305912",
+            "0.145079835261305913"
+          ],
+          "length": 48,
+          "ones": 32,
+          "words": "2254848913647"
+        },
+        {
+          "collision_exponent": [
+            "0.118554685418555543",
+            "0.118554685418555544"
+          ],
+          "length": 96,
+          "ones": 64,
+          "words": "29701747773016666409906415"
+        },
+        {
+          "collision_exponent": [
+            "0.102722178402665368",
+            "0.102722178402665369"
+          ],
+          "length": 192,
+          "ones": 128,
+          "words": "7255167425905233148164780983569428433097979870294255"
+        }
+      ],
+      "certified_constants": {
+        "escape": {
+          "cost": [
+            "1.584962500721156181",
+            "1.584962500721156182"
+          ],
+          "dyadic_kappa": [
+            "0.050044472811669365",
+            "0.050044472811669366"
+          ],
+          "singular_mass_lower": [
+            "0.415037499278843818",
+            "0.415037499278843819"
+          ],
+          "valuation_KL_rate": [
+            "0.054979472810817071",
+            "0.054979472810817072"
+          ]
+        },
+        "floor_4097": {
+          "cost": [
+            "1.585079874112661264",
+            "1.585079874112661265"
+          ],
+          "dyadic_kappa": [
+            "0.050008338007577073",
+            "0.050008338007577074"
+          ],
+          "singular_mass_lower": [
+            "0.414920125887338735",
+            "0.414920125887338736"
+          ],
+          "valuation_KL_rate": [
+            "0.054943843201117968",
+            "0.054943843201117969"
+          ]
+        }
+      },
+      "rational_distributions_checked": 38,
+      "track": "entropy"
+    },
+    {
+      "joint_positive_witnesses": 9438,
+      "minimum_state": "100000000000000000000",
+      "ternary_stationary_models": [
+        {
+          "levels": [
+            {
+              "law_sha256": "26218321da26e04adeb9013353866f06ad337ef6d8d2edd8d2b224c9ef0caa63",
+              "level": 1,
+              "support": 2
+            },
+            {
+              "law_sha256": "11e1659586a4b5009141a8cc367b638968e186e47c035bb38cbd147832aafa51",
+              "level": 2,
+              "support": 6
+            },
+            {
+              "law_sha256": "23383eaeab455833b69a0b5b40d50aa1d9917e0cb47af111dad92c5600c73c5b",
+              "level": 3,
+              "support": 18
+            },
+            {
+              "law_sha256": "301d391afa42ba4e08d800b68337755563ca33ebf1dc0ba10b6a8890e3918a3f",
+              "level": 4,
+              "support": 54
+            }
+          ],
+          "odd_probability": "1/2"
+        },
+        {
+          "levels": [
+            {
+              "law_sha256": "aaaac25aaa5a4b680e1d805d532ebef0cef31fd94c37eea07c94b19c5407b983",
+              "level": 1,
+              "support": 2
+            },
+            {
+              "law_sha256": "d2e052c901599c6aafd2bf24f4746567ed897097412594f8f2b4face5c546514",
+              "level": 2,
+              "support": 6
+            },
+            {
+              "law_sha256": "2f996bcb2a1631e7f4cf1150513b35840f42fdabde74b6c5634f19b09a58f979",
+              "level": 3,
+              "support": 18
+            },
+            {
+              "law_sha256": "3f1616b630219067b510c3f75e30a3078ebd13ffa625fbf8892e96a69f15b7b9",
+              "level": 4,
+              "support": 54
+            }
+          ],
+          "odd_probability": "2/3"
+        }
+      ],
+      "track": "adelic",
+      "witness_sha256": "3fcd9201b15d88e60dd60c5318d694004e59f188d683f481f0a27358ecc7bc99"
+    },
+    {
+      "all_positive_starts_through": 4096,
+      "binary_collision_sha256": "6bbbe176b14eed547b3e8014367f2e9c7669bdd19fb690b6cc7cc7e76f8de168",
+      "binary_cylinders_checked": 12285,
+      "floor_receipt_sha256": "8df5b9f8c86acd379d06854640ba6a794aad2651336c3c66d4dc6da4e37a1fc6",
+      "max_odd_peak_and_source": [
+        425645,
+        4095
+      ],
+      "max_odd_steps_and_source": [
+        51,
+        1407
+      ],
+      "odd_induction_starts": 2047,
+      "track": "floor_and_binary"
+    }
+  ],
+  "schema": 1,
+  "scope": "standalone exact finite checks; not independent review or a Collatz proof",
+  "status": "PASS"
+}
