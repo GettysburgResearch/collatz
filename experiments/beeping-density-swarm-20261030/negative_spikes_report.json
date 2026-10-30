@@ -1,0 +1,85 @@
+{
+  "arbitrary_length_family_checked_through": 512,
+  "critical_strong_moment_approximation": 2.709511291351455,
+  "critical_tail_exponent_approximation": 1.7095112913514547,
+  "exact_annulus_checks": 21,
+  "exact_tail_checks": 21,
+  "full_Collatz_proved": false,
+  "global_clipping_target_exponent_barrier_approximation": 1.584962500721156,
+  "max_reference_level": 6,
+  "normalization": "rho_q=3^q*Pr(Y_q=y), full-group mean one",
+  "positive_fixed_depth_word_checks": {
+    "layers_checked": 2142,
+    "legal_words_checked": 1291,
+    "maximum_depth": 4,
+    "maximum_total_valuation": 12,
+    "targets": 51
+  },
+  "positive_odd_source_cap_checks": 5001,
+  "positive_pointwise_density_bound_checks": 3006,
+  "reference_laws": [
+    {
+      "exact_denominator_bits": 2,
+      "level": 1,
+      "negative_height": "2",
+      "negative_height_decimal": 2.0,
+      "proved_height_lower_bound": "3/2",
+      "residues": 3,
+      "third_moment_decimal": 3.0,
+      "third_moment_proved_lower_bound": "297/256"
+    },
+    {
+      "exact_denominator_bits": 8,
+      "level": 2,
+      "negative_height": "22/7",
+      "negative_height_decimal": 3.142857142857143,
+      "proved_height_lower_bound": "9/4",
+      "residues": 9,
+      "third_moment_decimal": 5.396501457725948,
+      "third_moment_proved_lower_bound": "2745/2048"
+    },
+    {
+      "exact_denominator_bits": 26,
+      "level": 3,
+      "negative_height": "46570/9709",
+      "negative_height_decimal": 4.796580492326707,
+      "proved_height_lower_bound": "27/8",
+      "residues": 27,
+      "third_moment_decimal": 8.849228484026346,
+      "third_moment_proved_lower_bound": "25281/16384"
+    },
+    {
+      "exact_denominator_bits": 80,
+      "level": 4,
+      "negative_height": "1616522870274070/222399981598543",
+      "negative_height_decimal": 7.268538687166242,
+      "proved_height_lower_bound": "81/16",
+      "residues": 81,
+      "third_moment_decimal": 13.838270402248137,
+      "third_moment_proved_lower_bound": "232137/131072"
+    },
+    {
+      "exact_denominator_bits": 242,
+      "level": 5,
+      "negative_height": "264099418814260408900319939328705173381982894058/24057640120673299065081231814259802792690247621",
+      "negative_height_decimal": 10.977777433261775,
+      "proved_height_lower_bound": "243/32",
+      "residues": 243,
+      "third_moment_decimal": 20.896501788221936,
+      "third_moment_proved_lower_bound": "2126097/1048576"
+    },
+    {
+      "exact_denominator_bits": 728,
+      "level": 6,
+      "negative_height": "4529434075333635818676362986132926812220965525315475939243049081267707168547851567603128622778636478076703604794304855725476323147561975630186518/274062972867247603303734187526423379379849494006252611323711996455451016851117969393277902052213286905663818370054902421548244778428601179153047",
+      "negative_height_decimal": 16.526982933691055,
+      "proved_height_lower_bound": "729/64",
+      "residues": 729,
+      "third_moment_decimal": 30.70291934012479,
+      "third_moment_proved_lower_bound": "19429785/8388608"
+    }
+  ],
+  "schema": "collatz-negative-reference-spike-v1",
+  "source_conditioned_transport_bound_proved": false,
+  "status": "EXACT_BOUNDED_REPLAY_OPEN_TRANSPORT_BUDGET"
+}

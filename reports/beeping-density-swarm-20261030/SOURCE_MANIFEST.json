@@ -1,0 +1,132 @@
+{
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "files": [
+    {
+      "bytes": 19148,
+      "path": "research/beeping-density-swarm-20261030/BEEPING_ENERGY_AND_RANKS.md",
+      "sha256": "9936bb1717f5c8b5dc2833c4c49f8a37bdfe774ad7b501f9e9d3d75a2aad0cf6"
+    },
+    {
+      "bytes": 7438,
+      "path": "research/beeping-density-swarm-20261030/NEAR_INVARIANTS.md",
+      "sha256": "8170f26181cc003fd25fd139be3e8614bcf5dadd41e323c0635ec9727c7ca83c"
+    },
+    {
+      "bytes": 13714,
+      "path": "research/beeping-density-swarm-20261030/NEGATIVE_SPIKE_BARRIER.md",
+      "sha256": "f4e95397fb54d3d7abb090608c2ce2457ed8ab3ea43e0de597f50df5ced1aee3"
+    },
+    {
+      "bytes": 7043,
+      "path": "research/beeping-density-swarm-20261030/NEGATIVE_SPIKE_REVIEW.md",
+      "sha256": "ec63913a1697ccfbb7c63bc05af372316c051c6aa9524c17fec33a5480d30c5f"
+    },
+    {
+      "bytes": 20535,
+      "path": "research/beeping-density-swarm-20261030/RANK_ENVELOPE.md",
+      "sha256": "b38f581a3518d582b70a0536df199be857fdd1bdb6940ad215152067c5a4c73f"
+    },
+    {
+      "bytes": 13290,
+      "path": "research/beeping-density-swarm-20261030/RANK_ENVELOPE_REVIEW.md",
+      "sha256": "c64a77c98ec02182bcc947e4c495427e4bbca94609d86e0ab30b03ae4d16ede4"
+    },
+    {
+      "bytes": 11475,
+      "path": "research/beeping-density-swarm-20261030/README.md",
+      "sha256": "2f9c6a725f8c0633f89344a177d6081bf01ceac7d373c23206501d962dd7faaa"
+    },
+    {
+      "bytes": 20451,
+      "path": "research/beeping-density-swarm-20261030/REGULARITY_BRIDGE.md",
+      "sha256": "4cd18bf459bee11cc4fafeeb7e3200795e5cce13ce9df208dec1f1968744749c"
+    },
+    {
+      "bytes": 14430,
+      "path": "research/beeping-density-swarm-20261030/REGULARITY_REVIEW.md",
+      "sha256": "bf7c254b7a759d078f6800caf2ca8344a9d15a519db11aeceaaae7f9df97ce40"
+    },
+    {
+      "bytes": 7512,
+      "path": "research/beeping-density-swarm-20261030/YAH_AND_NASHIDA_SOURCES.md",
+      "sha256": "b8d67bd5bf48773d9f572d34afce16857e1a20501197b8e72faf6de98073fbfa"
+    },
+    {
+      "bytes": 4958,
+      "path": "experiments/beeping-density-swarm-20261030/README.md",
+      "sha256": "6880ef19c909cab23f13f67d19659f11ab88f8741ec7a58b224cb4b68ecca34b"
+    },
+    {
+      "bytes": 4656,
+      "path": "experiments/beeping-density-swarm-20261030/beeping_evidence.json",
+      "sha256": "9bcd58d1426159f7aa72712146e7f1940863d96a5d655f8f35a53f9bfcdf01b9"
+    },
+    {
+      "bytes": 9105,
+      "path": "experiments/beeping-density-swarm-20261030/check_density_bridge.py",
+      "sha256": "f9144af82fb00104eb21d47927a5d3252e4e42068979e3fd67ce3f4b620e7d68"
+    },
+    {
+      "bytes": 9007,
+      "path": "experiments/beeping-density-swarm-20261030/check_negative_spikes.py",
+      "sha256": "1c4c1a5b23262099c22a6d4d5f8613fddebd0f57ba0ce36965c1783a6a56c38b"
+    },
+    {
+      "bytes": 8723,
+      "path": "experiments/beeping-density-swarm-20261030/check_rank_envelope.py",
+      "sha256": "fe8bc9a4e093ce6d08450a16146cb4850c0be3c8ab2409df8b6bf08aba25fb8e"
+    },
+    {
+      "bytes": 3160,
+      "path": "experiments/beeping-density-swarm-20261030/check_regularity_review.py",
+      "sha256": "b5d02f2c3fd09ead2ebaf312cc2a98102f31156d10d4c3195cf1df8c5f6c04b6"
+    },
+    {
+      "bytes": 10321,
+      "path": "experiments/beeping-density-swarm-20261030/density_bridge_report.json",
+      "sha256": "d2d91a82f3e4f54a86026444d0cd28402fdf5b5852d8e1e4b924f572e1ed7ec7"
+    },
+    {
+      "bytes": 5403,
+      "path": "experiments/beeping-density-swarm-20261030/near_invariants_evidence.json",
+      "sha256": "4cdde7744090ce6bc6b2eaf92cb0a7cdba1973a51b5a1a797ad8629d113541e9"
+    },
+    {
+      "bytes": 3218,
+      "path": "experiments/beeping-density-swarm-20261030/negative_spikes_report.json",
+      "sha256": "0d66f265aef643964571342378e5a6fed69feb29c9629b75181c4ba58940799f"
+    },
+    {
+      "bytes": 7160,
+      "path": "experiments/beeping-density-swarm-20261030/rank_envelope.py",
+      "sha256": "4319ccfafb9d6445cf741928234f8a51833b6c332a899de62b27557cbe940e2b"
+    },
+    {
+      "bytes": 16618,
+      "path": "experiments/beeping-density-swarm-20261030/rank_envelope_results.json",
+      "sha256": "46eb69745296f6f89913257da38b19037b8bb0667ab84db0736816bb0eef3482"
+    },
+    {
+      "bytes": 1545,
+      "path": "experiments/beeping-density-swarm-20261030/regularity_review_checks.json",
+      "sha256": "b0eb3d29b8af2609adb1f5a9fff29b8af6e77699fb84bb3db622a56f9feff756"
+    },
+    {
+      "bytes": 4399,
+      "path": "experiments/beeping-density-swarm-20261030/replay_packet.py",
+      "sha256": "d224cd6209de95c8fee1c2eb32c9c2edc77050f15a44b03c1ec5e2a213dd5946"
+    },
+    {
+      "bytes": 10505,
+      "path": "experiments/beeping-density-swarm-20261030/verify_beeping.py",
+      "sha256": "5fae0b214aa37bf41971a7fb80cef6fa9ff23f7c7a40f4ec9b933d3100610592"
+    },
+    {
+      "bytes": 4861,
+      "path": "experiments/beeping-density-swarm-20261030/verify_near_invariants.py",
+      "sha256": "b672467f3b2e965e59d3e084f350e0f6bbd9625fa1b2b7b535a1f1cde70666ea"
+    }
+  ],
+  "schema": "beeping-density-source-manifest/v1",
+  "scope": "final research and experiment files; reports excluded to avoid circular hashes"
+}
