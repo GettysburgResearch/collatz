@@ -1,0 +1,23 @@
+{
+  "certificates": {
+    "constant": 20,
+    "edge": 13
+  },
+  "checks_sha256": "889c4c3e897672ada9bb0b9db1631b39f136283d99e64071e4e9492b0fb8e6ee",
+  "cylinders": {
+    "ordinary_lifts": 16380,
+    "word_cases": 5460
+  },
+  "mutations_rejected": 10,
+  "profile": {
+    "odd_steps": 1195565,
+    "profile_entries": 52063,
+    "raw_steps": 2379157
+  },
+  "profile_sha256": "4a1f955ff9c636787682ad6358ca0f78cb4e14b3c6c34085798ed242e921a53e",
+  "schema": "collatz-pass3-verification-v1",
+  "transport": {
+    "cohort_memberships": 12288,
+    "ledger_entries": 296
+  }
+}

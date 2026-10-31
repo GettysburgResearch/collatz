@@ -1,0 +1,140 @@
+{
+  "byte_comparisons": {
+    "parent_matches_prior_receipt": true,
+    "producer_checks_all_three": true,
+    "producer_profile_all_three": true,
+    "verifier_both": true
+  },
+  "computational_workers": 4,
+  "files_excluding_this_receipt": [
+    {
+      "bytes": 12542,
+      "git_blob": "6fd460ea03bfa5e638e8f2fa418f391eee293d65",
+      "path": "experiments/novel-swarm-20261030/pass3/run.py",
+      "sha256": "6d2d11014b5e38f08c89788796e1a708190bdaf1a3872995fb7fdb7e53321d25"
+    },
+    {
+      "bytes": 9667,
+      "git_blob": "d2bb75b6fd1f6cd0c756bc8a7b502a43bf3e2237",
+      "path": "experiments/novel-swarm-20261030/pass3/verify.py",
+      "sha256": "5e984e2b263598ee76dfbfdccc09ca80b8a9debe57fa8072e6f9c8030aa43880"
+    },
+    {
+      "bytes": 8129,
+      "git_blob": "1dbd732b5dc8a8f336a6d27a516cffc046c736b6",
+      "path": "reports/novel-swarm-20261030/pass3/REVIEW.md",
+      "sha256": "537294bf49b6db8afdff479783c5e61f1a155900d6f14fc61fd4a64c2ed9b3a2"
+    },
+    {
+      "bytes": 567,
+      "git_blob": "c96350a8d9e3d40d11e36b7a71fe68f282414896",
+      "path": "reports/novel-swarm-20261030/pass3/verification.json",
+      "sha256": "dee650db0a17300b8fa4285a3592cbe5f288e6c7ccd3c7815852e2e8e2a15098"
+    },
+    {
+      "bytes": 6653,
+      "git_blob": "d0c2bd3cbadc70eb8de25925e4d929dd721db310",
+      "path": "research/novel-swarm-20261030/pass3/FINITE_WITNESSES.md",
+      "sha256": "a6c2fda6dbdec1c0dee39f87c506e4f7f28ccb33c7d39bbe2fc66c6ac8eaf9e3"
+    },
+    {
+      "bytes": 8590,
+      "git_blob": "d7326ecacfb1650080303cb5feedbd0189709f99",
+      "path": "research/novel-swarm-20261030/pass3/ORDINARY_BOUNDARY.md",
+      "sha256": "aaa52d2067849e35a5e6ae74287db250d1799af502bfd53fa294289442513d9f"
+    },
+    {
+      "bytes": 9411,
+      "git_blob": "2b4507c017df314997ebf7f8e3ec053e7b5388fe",
+      "path": "research/novel-swarm-20261030/pass3/PRESSURE_BRIDGE.md",
+      "sha256": "919692d42cba84e580ccc0e003a44177ef0eb52a9084f916fa7cfbd7e028fc86"
+    },
+    {
+      "bytes": 4702,
+      "git_blob": "0f4391f7e40d7e464af70f93c00970af531e2607",
+      "path": "research/novel-swarm-20261030/pass3/README.md",
+      "sha256": "05391f9d2432dab026b99ba7f12cd5581ca394537ace62eef802f1d1368763d3"
+    }
+  ],
+  "formal_proof_build": false,
+  "full_checkout_validator": false,
+  "independent_agents": false,
+  "outputs": {
+    "checks.json": {
+      "bytes": 334947,
+      "sha256": "889c4c3e897672ada9bb0b9db1631b39f136283d99e64071e4e9492b0fb8e6ee"
+    },
+    "checks.json.profile.json": {
+      "bytes": 1404271,
+      "sha256": "4a1f955ff9c636787682ad6358ca0f78cb4e14b3c6c34085798ed242e921a53e"
+    },
+    "parent_replay.json": {
+      "bytes": 48931,
+      "sha256": "55553f48298d17269068acdc3349ca9471f81c04ca9e16f7c5374f99a729ae18"
+    },
+    "verification.json": {
+      "bytes": 567,
+      "sha256": "dee650db0a17300b8fa4285a3592cbe5f288e6c7ccd3c7815852e2e8e2a15098"
+    }
+  },
+  "parent": "c8a5f1a391a10ef4927383e472bceebb2b04c5e7",
+  "parent_tree": "a3d1468e5d1cd3920595b2f4cb95a0998543c98b",
+  "python": "3.13.5",
+  "runs": [
+    {
+      "command": "python -B experiments/novel-swarm-20261030/pass2_check.py --output parent_replay.json",
+      "exit_code": 0,
+      "seconds": 11.6
+    },
+    {
+      "command": "python -B experiments/novel-swarm-20261030/pass3/run.py --output checks.json",
+      "exit_code": 0,
+      "seconds": 11.6
+    },
+    {
+      "command": "python -B experiments/novel-swarm-20261030/pass3/run.py --serial --output checks-serial.json",
+      "exit_code": 0,
+      "seconds": 19.8
+    },
+    {
+      "command": "python -OO -B experiments/novel-swarm-20261030/pass3/run.py --output checks-oo.json",
+      "exit_code": 0,
+      "seconds": 15.72
+    },
+    {
+      "command": "python -B experiments/novel-swarm-20261030/pass3/verify.py checks.json --output verification.json",
+      "exit_code": 0,
+      "seconds": 9.58
+    },
+    {
+      "command": "python -OO -B experiments/novel-swarm-20261030/pass3/verify.py checks-oo.json --output verification-oo.json",
+      "exit_code": 0,
+      "seconds": 10.42
+    }
+  ],
+  "schema": "collatz-pass3-receipt-v1",
+  "status": "PROPOSED / self-audited",
+  "summary": {
+    "certificates": {
+      "constant": 20,
+      "edge": 13
+    },
+    "checks_sha256": "889c4c3e897672ada9bb0b9db1631b39f136283d99e64071e4e9492b0fb8e6ee",
+    "cylinders": {
+      "ordinary_lifts": 16380,
+      "word_cases": 5460
+    },
+    "mutations_rejected": 10,
+    "profile": {
+      "odd_steps": 1195565,
+      "profile_entries": 52063,
+      "raw_steps": 2379157
+    },
+    "profile_sha256": "4a1f955ff9c636787682ad6358ca0f78cb4e14b3c6c34085798ed242e921a53e",
+    "schema": "collatz-pass3-verification-v1",
+    "transport": {
+      "cohort_memberships": 12288,
+      "ledger_entries": 296
+    }
+  }
+}
