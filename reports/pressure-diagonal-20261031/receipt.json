@@ -1,0 +1,125 @@
+{
+  "all_source_depth": 12,
+  "base": "41a408e5e617fb4e65142485f6f3ff3e6ef6c408",
+  "command_paths": "The commands above normalize output paths to /tmp; actual files were written under /mnt/data/work. Null duration means no separate timing was retained.",
+  "completed_commands": [
+    {
+      "command": "python -B experiments/pressure-diagonal-20261031/run.py --depth 12 --output /tmp/diagonal.json",
+      "exit_code": 0,
+      "seconds": 18.104
+    },
+    {
+      "command": "python -OO -B experiments/pressure-diagonal-20261031/run.py --depth 12 --output /tmp/diagonal-oo.json",
+      "exit_code": 0,
+      "seconds": 21.175
+    },
+    {
+      "command": "python -B experiments/pressure-diagonal-20261031/verify.py /tmp/diagonal.json --output /tmp/diagonal-verify.json",
+      "exit_code": 0,
+      "seconds": 14.501
+    },
+    {
+      "command": "python -OO -B experiments/pressure-diagonal-20261031/verify.py /tmp/diagonal-oo.json --output /tmp/diagonal-verify-oo.json",
+      "exit_code": 0,
+      "seconds": 12.962
+    },
+    {
+      "command": "python -B experiments/pressure-diagonal-20261031/dissipation.py /tmp/diagonal.json --output /tmp/diagonal-loss.json",
+      "exit_code": 0,
+      "seconds": null
+    },
+    {
+      "command": "python -OO -B experiments/pressure-diagonal-20261031/dissipation.py /tmp/diagonal.json --output /tmp/diagonal-loss-oo.json",
+      "exit_code": 0,
+      "seconds": null
+    }
+  ],
+  "dissipation_outputs_identical": true,
+  "dissipation_verification": {
+    "all_source_consecutive_pairs": 12,
+    "direct_corruptions_rejected": 5,
+    "evidence_sha256": "968f78afceb00b006320e8ef6d851bbfbbeb246ab2a92a24dd85885942979a1e",
+    "finite_bank": {
+      "inequalities": 81,
+      "rows_sha256": "5e03e7f201b99f38fbf6a29808947a23e595351859fa8ce1c23da481bc71d738",
+      "shortcut_steps": 326379,
+      "source_clock_entries": 165888
+    },
+    "ok": true,
+    "status": "finite checks of proved inequality; reciprocal-moment divergence remains OPEN"
+  },
+  "finite_bank_max_odd_clock": 80,
+  "finite_bank_odd_source_limit": 4095,
+  "grouped_timeout": "First normal producer completed; combined invocation timed out during next command. Optimized producer rerun separately; no combined success claimed.",
+  "not_run": [
+    "independent AI agents",
+    "independent mathematical review",
+    "full-checkout tools/validate.py",
+    "remote CI",
+    "external formal proof assistant",
+    "Windows replay"
+  ],
+  "platform": "Linux",
+  "producer_outputs_identical": true,
+  "producer_sha256": "968f78afceb00b006320e8ef6d851bbfbbeb246ab2a92a24dd85885942979a1e",
+  "python": "3.13.5",
+  "source_files": {
+    "experiments/pressure-diagonal-20261031/dissipation.py": {
+      "bytes": 3087,
+      "git_blob_sha1": "ae5f4eaccf455e8a8c8d5c60da4d75eda5fcfca0",
+      "sha256": "4b5033d11acf6e0b511f970754420d6d202d656ac101254aad356b0b5a290d85"
+    },
+    "experiments/pressure-diagonal-20261031/run.py": {
+      "bytes": 5076,
+      "git_blob_sha1": "afeac6b9012681417610dbb195000f4137b60f60",
+      "sha256": "7dea7a5983dc7cf9e6472f66de74680089210f989a14eef329d7701c638e57a9"
+    },
+    "experiments/pressure-diagonal-20261031/verify.py": {
+      "bytes": 7926,
+      "git_blob_sha1": "391edbc1a41ef1868d971ead2cd65c158174c8e2",
+      "sha256": "fa67451b11c98f972d1855508d8c646df6c295eb463c83d735687b2d19fa2b29"
+    },
+    "reports/pressure-diagonal-20261031/REVIEW.md": {
+      "bytes": 6597,
+      "git_blob_sha1": "ba6e42ee429f56ef5abdaefb0f386b01a95a62e6",
+      "sha256": "3b47d7eac405c6a608e7817f8dffc7619313d53f8c947c30379d436b1f4b4e05"
+    },
+    "reports/pressure-diagonal-20261031/summary.json": {
+      "bytes": 5370,
+      "git_blob_sha1": "394a518eefb0255eba3114230817fb633d5c3503",
+      "sha256": "cc4171e937550bdd4310341defe26e1b3b13c9512e478f24ad085ce652b1d3d2"
+    },
+    "research/pressure-diagonal-20261031/DISSIPATION.md": {
+      "bytes": 5920,
+      "git_blob_sha1": "d72a276dd8fc19167b169a994904ac6f0cb2935a",
+      "sha256": "7547fad22ca6d8c99499316b7abd88652f8bad2428bd0909f68f15104b182cd3"
+    },
+    "research/pressure-diagonal-20261031/PROOF.md": {
+      "bytes": 9591,
+      "git_blob_sha1": "c6fc0f9c5512f535295f752d8cba4e6bff86393e",
+      "sha256": "84e587135cf00eae6d2eb90236d3b705ca4e401c070478fcd4d5bdbd45ce30a9"
+    },
+    "research/pressure-diagonal-20261031/README.md": {
+      "bytes": 4019,
+      "git_blob_sha1": "65f80b45dee65c733d6763f35bc306ca7ab608c4",
+      "sha256": "093486f102d2d69d47852570810abe6075ff0d78da27a06a49e5300f3fc85bbd"
+    },
+    "research/pressure-diagonal-20261031/TRACE.md": {
+      "bytes": 7451,
+      "git_blob_sha1": "964b9198129711673d1653502f22b73d6eccf1cc",
+      "sha256": "277d44f1eaab4637fc49564df3bea0711853d540238f1d1b520e1b80ee1350cd"
+    }
+  },
+  "status": "PROPOSED; no pointwise pressure decay proof",
+  "verification": {
+    "all_source_trace_depth": 12,
+    "bank_source_clock_entries": 165888,
+    "direct_corruptions_rejected": 13,
+    "evidence_sha256": "968f78afceb00b006320e8ef6d851bbfbbeb246ab2a92a24dd85885942979a1e",
+    "method": "128-bit affine-cycle interval sweeps and literal shortcut replay; no producer imports",
+    "ok": true,
+    "raw_shortcut_steps": 326379,
+    "residue_entries_per_power": 797161
+  },
+  "verifier_outputs_identical": true
+}
