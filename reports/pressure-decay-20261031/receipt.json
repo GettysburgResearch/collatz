@@ -1,0 +1,117 @@
+{
+  "checks_bytes": 53559,
+  "commands": [
+    "python -B experiments/pressure-decay-20261031/run.py --output <checks.json>",
+    "python -B experiments/pressure-decay-20261031/verify.py <checks.json>",
+    "python -OO -B experiments/pressure-decay-20261031/run.py --output <checks-oo.json>",
+    "python -OO -B experiments/pressure-decay-20261031/verify.py <checks-oo.json>"
+  ],
+  "complete_checks_sha256": "fb9062f3fbbd60b5f0715ff33fcfc2663c68d7e204500eec802aac1169b461a8",
+  "complete_profile_sha256": "2f63afd4953643c9d12e2a9e64b6c1752be0d58561a52ef3a79f25a101c6de06",
+  "environment": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "executed": [
+    {
+      "mode": "normal",
+      "producer_exit": 0,
+      "verifier_exit": 0
+    },
+    {
+      "mode": "-OO",
+      "producer_exit": 0,
+      "verifier_exit": 0
+    }
+  ],
+  "local_checks": {
+    "python_ast_files": 2,
+    "relative_markdown_links": 10,
+    "whitespace": "PASS"
+  },
+  "normal_optimized_complete_payloads_equal": true,
+  "normal_optimized_verifier_output_equal": true,
+  "not_performed": [
+    "independent agent swarm",
+    "independent mathematical peer review",
+    "full repository checkout validator",
+    "remote CI",
+    "formal proof assistant build",
+    "Windows replay",
+    "exhaustive literature priority audit"
+  ],
+  "parent": "6bee3183ff7f29f2e20ca88ab94bc7745c1af602",
+  "producer_energy_decrement_checks": 81920,
+  "profile_bytes": 83866,
+  "remote_publication": "Not asserted by this source-level receipt; verify separately after commit creation.",
+  "schema": "pressure-decay-20261031/replay-v1",
+  "source_files": {
+    "experiments/pressure-decay-20261031/run.py": {
+      "bytes": 9131,
+      "git_blob_sha1": "2820155fa5bb6b6a8f33e38d22a90e063d031e5a",
+      "sha256": "308686ad78a9d42eebc090308e03af978f536a4589a6008fc89a99ff8a72c46c"
+    },
+    "experiments/pressure-decay-20261031/verify.py": {
+      "bytes": 13970,
+      "git_blob_sha1": "f0592366eeabc4a12decfd2ca61c00c71b5c367b",
+      "sha256": "aa011b6b8a5a7b1780fab2f2279c82b677fde3dcc09b9ce536a96b2c20419520"
+    },
+    "reports/pressure-decay-20261031/REVIEW.md": {
+      "bytes": 5202,
+      "git_blob_sha1": "7e5c160a00c820eb85190de86b8fcacb3070fc74",
+      "sha256": "7bc6c8571566f6885124c8e1838f3c9109ff298d2be1923f982f06a0b210201e"
+    },
+    "research/pressure-decay-20261031/ENERGY.md": {
+      "bytes": 10579,
+      "git_blob_sha1": "e75f57679065227ec85cfb8c674d0b5ed850ab4a",
+      "sha256": "c5c1a9a5ff25eac7014194a86eb354e47f420daaa10023a91d420f052b58e4d6"
+    },
+    "research/pressure-decay-20261031/PROOF.md": {
+      "bytes": 13768,
+      "git_blob_sha1": "9aaef83c37d5e613c58bbc25a972f289dd6e9645",
+      "sha256": "22b020fedc0c6f1b514ea3cca0aa18d7219a722fd3b535d9806f2d13f1c856ee"
+    },
+    "research/pressure-decay-20261031/README.md": {
+      "bytes": 3730,
+      "git_blob_sha1": "7d7e432778884a3cfa32f0dfb506d764ca9cfe56",
+      "sha256": "33c668722c02e6945c3209f6e3665675a601e0ef3c8b7845a1266c433a67da6e"
+    },
+    "research/pressure-decay-20261031/SOURCES.md": {
+      "bytes": 4601,
+      "git_blob_sha1": "d0e8ef555e795bac400c9bf5beead4fc863d5160",
+      "sha256": "b5e661762c5baefe4dea0141ab9f7f6c9cd43ccc5d6f555cf83040bf64f4ea1b"
+    }
+  },
+  "status": "FINITE_TESTS_PASS_NOT_A_GLOBAL_PROOF",
+  "verifier_summary": {
+    "energy_clocks": 41,
+    "energy_raw_steps": 159960,
+    "energy_source_clock_pairs": 83968,
+    "mutations_rejected": [
+      "shadow source",
+      "shadow target",
+      "shadow derivative",
+      "missing power row",
+      "infinite norm tail",
+      "toy pressure",
+      "cycle multiplier",
+      "false proof status",
+      "duplicate JSON key",
+      "energy clock",
+      "energy upper bound",
+      "moment excursion",
+      "missing energy row"
+    ],
+    "norm_rows": 32,
+    "power_rows": 576,
+    "replay": {
+      "dirichlet_edges": 3236,
+      "odd_records": 58346,
+      "packing_checks": 34816,
+      "profile_entries": 3236,
+      "raw_shortcut_steps": 115397
+    },
+    "shadow_rows": 768,
+    "status": "PASS"
+  }
+}
