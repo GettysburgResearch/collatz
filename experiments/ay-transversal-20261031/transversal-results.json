@@ -1,0 +1,386 @@
+{
+  "census": {
+    "budgeted": {
+      "example_certificates": [
+        {
+          "kinds": [
+            "unwrap",
+            "forced-run",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good"
+          ],
+          "odd_arm_work": 13,
+          "shortcut_stopping_time": 30,
+          "source": 5501
+        },
+        {
+          "kinds": [
+            "unwrap",
+            "forced-run",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good"
+          ],
+          "odd_arm_work": 8,
+          "shortcut_stopping_time": 22,
+          "source": 5725
+        },
+        {
+          "kinds": [
+            "unwrap",
+            "forced-run",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good"
+          ],
+          "odd_arm_work": 9,
+          "shortcut_stopping_time": 24,
+          "source": 7005
+        }
+      ],
+      "expanded_nodes": {
+        "ancestors": 8039,
+        "both": 10733,
+        "braid": 7658,
+        "forward": 5380,
+        "transverse": 5404
+      },
+      "first_unresolved": {
+        "ancestors": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "both": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "braid": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "forward": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "transverse": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ]
+      },
+      "new_braid_successes": [
+        5501,
+        5725,
+        7005
+      ],
+      "new_unwrap_successes": [
+        5501,
+        5725,
+        7005
+      ],
+      "proved": {
+        "ancestors": 139,
+        "both": 142,
+        "braid": 142,
+        "forward": 139,
+        "transverse": 142
+      },
+      "successful_certificates_replayed": 704
+    },
+    "strict": {
+      "example_certificates": [
+        {
+          "kinds": [
+            "unwrap",
+            "forced-run",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good"
+          ],
+          "odd_arm_work": 8,
+          "shortcut_stopping_time": 22,
+          "source": 5725
+        },
+        {
+          "kinds": [
+            "unwrap",
+            "forced-run",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good",
+            "first-good"
+          ],
+          "odd_arm_work": 9,
+          "shortcut_stopping_time": 24,
+          "source": 7005
+        }
+      ],
+      "expanded_nodes": {
+        "ancestors": 8033,
+        "both": 11734,
+        "braid": 8513,
+        "forward": 5382,
+        "transverse": 5406
+      },
+      "first_unresolved": {
+        "ancestors": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "both": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "braid": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "forward": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ],
+        "transverse": [
+          7,
+          9,
+          11,
+          17,
+          19,
+          25,
+          27,
+          29,
+          31,
+          33,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          55,
+          57
+        ]
+      },
+      "new_braid_successes": [
+        5725,
+        7005
+      ],
+      "new_unwrap_successes": [
+        5725,
+        7005
+      ],
+      "proved": {
+        "ancestors": 154,
+        "both": 156,
+        "braid": 156,
+        "forward": 154,
+        "transverse": 156
+      },
+      "successful_certificates_replayed": 776
+    }
+  },
+  "families": {
+    "checked": 177,
+    "examples": [
+      {
+        "endpoint": 1133,
+        "endpoint_rank": 16,
+        "h": 3,
+        "q": 1,
+        "r": 4,
+        "source": 1341,
+        "source_rank": 22,
+        "source_shortcut_clock": 5,
+        "witness": 335,
+        "witness_rank": 19,
+        "witness_shortcut_clock": 3
+      },
+      {
+        "endpoint": 13769,
+        "endpoint_rank": 29,
+        "h": 4,
+        "q": 1,
+        "r": 5,
+        "source": 10877,
+        "source_rank": 37,
+        "source_shortcut_clock": 6,
+        "witness": 2719,
+        "witness_rank": 33,
+        "witness_shortcut_clock": 4
+      }
+    ],
+    "maximum_source_bitlength": 10155
+  },
+  "seed_domain": "odd positive n <= 8191",
+  "status": "PROPOSED proof language; EMPIRICAL finite census; Collatz unresolved"
+}
