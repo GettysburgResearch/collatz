@@ -1,0 +1,189 @@
+{
+  "parent": "fe2247fcd7730c15430941a7b6e011d006d41d84",
+  "producer": {
+    "automata": 7176,
+    "bytes": 225533,
+    "delayed_witnesses": [
+      {
+        "K": 64,
+        "base": 2,
+        "source": 9223372036854775808,
+        "states_seen": 439
+      },
+      {
+        "K": 512,
+        "base": 2,
+        "source": 6703903964971298549787012499102923063739682910296196688861780721860882015036773488400937149083451713845015929093243025426876941405973284973216824503042048,
+        "states_seen": 3575
+      },
+      {
+        "K": 128,
+        "base": 3,
+        "source": 3930061525912861057173624287137506221892737197425280369698988,
+        "states_seen": 1530
+      }
+    ],
+    "infinite_domain_checks": 21528,
+    "ladder_edges": 4096,
+    "nonlinear_models": 33,
+    "sha256": "570b7ee544a2304c48f64b26012c0378e4d6f0a1fd03224373eb36ee065e2acb"
+  },
+  "producer_bytes_equal": true,
+  "runs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "experiments/novel-swarm-20261030/pass5/run.py",
+        "--output",
+        "outputs/checks.json"
+      ],
+      "elapsed_seconds": 3.133553,
+      "exit_code": 0,
+      "name": "parallel",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6f71e50730fa1f23bc3a6b802386ff1968235b8f2563207daa19dd28a4b9343d"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "experiments/novel-swarm-20261030/pass5/run.py",
+        "--serial",
+        "--output",
+        "outputs/checks-serial.json"
+      ],
+      "elapsed_seconds": 3.531048,
+      "exit_code": 0,
+      "name": "serial",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6f71e50730fa1f23bc3a6b802386ff1968235b8f2563207daa19dd28a4b9343d"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-OO",
+        "-B",
+        "experiments/novel-swarm-20261030/pass5/run.py",
+        "--output",
+        "outputs/checks-oo.json"
+      ],
+      "elapsed_seconds": 5.274693,
+      "exit_code": 0,
+      "name": "optimized",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6f71e50730fa1f23bc3a6b802386ff1968235b8f2563207daa19dd28a4b9343d"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "experiments/novel-swarm-20261030/pass5/verify.py",
+        "outputs/checks.json",
+        "--output",
+        "outputs/verification.json",
+        "--self-test"
+      ],
+      "elapsed_seconds": 1.591365,
+      "exit_code": 0,
+      "name": "verify",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "49ea01986736156f77acdf7468314aea0eeaadbc64864af0e3e896cf947d8e39"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-OO",
+        "-B",
+        "experiments/novel-swarm-20261030/pass5/verify.py",
+        "outputs/checks.json",
+        "--output",
+        "outputs/verification-oo.json",
+        "--self-test"
+      ],
+      "elapsed_seconds": 3.59108,
+      "exit_code": 0,
+      "name": "verify_optimized",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "49ea01986736156f77acdf7468314aea0eeaadbc64864af0e3e896cf947d8e39"
+    }
+  ],
+  "schema": "collatz-pass5-execution-v1",
+  "scope": {
+    "ast_parse": true,
+    "formal_proof_build": false,
+    "full_checkout": false,
+    "independent_census_reenumeration": false,
+    "mathematics": "PROPOSED; self-audited only",
+    "mutations": "13 direct controls, not resealed full-corpus mutations",
+    "remote_ci_claimed": false,
+    "root_validator": false,
+    "workers": "four computational processes, not independent AI agents"
+  },
+  "source_files": {
+    "experiments/novel-swarm-20261030/pass5/run.py": {
+      "bytes": 18960,
+      "git_blob": "48161d72c04e34cd6065e64c1d7fea5b60637d43",
+      "sha256": "2547a4a9f2d01b1afa73cbbe806d1b2a1e8a2f81f4d8dfb016872e571f033edb"
+    },
+    "experiments/novel-swarm-20261030/pass5/verify.py": {
+      "bytes": 13453,
+      "git_blob": "5bda9e13386244361d0171ca8ac233c8d0543fdd",
+      "sha256": "600c3f407f5ad0af0e388631c13310b290f498ac4809de03f0fe294112e9ff0a"
+    },
+    "research/novel-swarm-20261030/pass5/ALGEBRAIC_RIGIDITY.md": {
+      "bytes": 9621,
+      "git_blob": "07ec39220e7900358d77b43d90b6027a1b4b61d0",
+      "sha256": "0abe14aac3db83b2ec6ab490124227522855d1acddfd4abe5dabfa0b113ebd20"
+    },
+    "research/novel-swarm-20261030/pass5/CERTIFICATES.md": {
+      "bytes": 7857,
+      "git_blob": "f4ed0b27290866680e81ecf0c2da43cd39a985db",
+      "sha256": "92033560c6386f3a0f89b05ad783efb43ed9fd56b89dd1a5cd13e8b71f585d53"
+    },
+    "research/novel-swarm-20261030/pass5/FINITE_DEFECT.md": {
+      "bytes": 9960,
+      "git_blob": "11781ae8de49d1d439ab403f4b64ad279c1b2d1a",
+      "sha256": "2bcd16a8a788a94b915ffbaa89164d065f61cd332a485d2edf2f370d4965a530"
+    },
+    "research/novel-swarm-20261030/pass5/IDEAL_CERTIFICATES.md": {
+      "bytes": 6500,
+      "git_blob": "a195c4364a63c90e84804b65c5b06393cbda82e0",
+      "sha256": "c0ddd087f1d1cae0722ee64ee4961c475f02ea5855b8a24074e29ffc251bdc2c"
+    },
+    "research/novel-swarm-20261030/pass5/README.md": {
+      "bytes": 6483,
+      "git_blob": "e36f79eef170f88d5126bae49f5eaee0e85b7884",
+      "sha256": "199d7cd92fc8bce4496f86ad9deb551ff92d3359430501a0df87876deed0dbb5"
+    },
+    "research/novel-swarm-20261030/pass5/ROBUSTNESS.md": {
+      "bytes": 6394,
+      "git_blob": "89cfa16f88f6ad1acc95220e2cb1047bc421f983",
+      "sha256": "5633810a5b454798d08c583db5e82706c11ce37523923ff604a801ecbfffb2a2"
+    }
+  },
+  "verification_sha256": "49ea01986736156f77acdf7468314aea0eeaadbc64864af0e3e896cf947d8e39",
+  "verifier": {
+    "capped_edges": 4082,
+    "closed_product_edges": 5725,
+    "corpus_sha256": "570b7ee544a2304c48f64b26012c0378e4d6f0a1fd03224373eb36ee065e2acb",
+    "ideal_identity_grid_points": 64,
+    "interpolation_values": 201,
+    "ladder_raw_steps": 17659,
+    "literal_witnesses": 35,
+    "mutations_rejected": 13,
+    "polynomial_models": 33,
+    "producer_census_independently_reenumerated": false
+  },
+  "verifier_bytes_equal": true
+}
