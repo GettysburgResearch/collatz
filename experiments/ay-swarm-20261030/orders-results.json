@@ -1,0 +1,298 @@
+{
+  "administrative_frontier_edges": 18202,
+  "arbitrary_word_prefix_budgets_checked": 22781,
+  "contextual_edges": 35739,
+  "full_schedule_rule_count_comparisons": 128,
+  "initial_trace_samples": {
+    "127": [
+      {
+        "value": 2186,
+        "word": "caggggggd"
+      },
+      {
+        "value": 2186,
+        "word": "caaagggggd"
+      },
+      {
+        "value": 2186,
+        "word": "cbabaggggd"
+      },
+      {
+        "value": 2186,
+        "word": "cbagaagggd"
+      },
+      {
+        "value": 2186,
+        "word": "cabaaaagggd"
+      },
+      {
+        "value": 2186,
+        "word": "cbbbaabaggd"
+      },
+      {
+        "value": 2186,
+        "word": "cbbbaagaagd"
+      },
+      {
+        "value": 2186,
+        "word": "cabbabbaaagd"
+      },
+      {
+        "value": 1640,
+        "word": "cabbagabagd"
+      },
+      {
+        "value": 1640,
+        "word": "cagbaaabagd"
+      },
+      {
+        "value": 1640,
+        "word": "caaabaaabagd"
+      },
+      {
+        "value": 410,
+        "word": "caaabaaagd"
+      }
+    ],
+    "27": [
+      {
+        "value": 62,
+        "word": "cbaggd"
+      },
+      {
+        "value": 62,
+        "word": "cabaagd"
+      },
+      {
+        "value": 242,
+        "word": "caggggd"
+      },
+      {
+        "value": 242,
+        "word": "caaagggd"
+      },
+      {
+        "value": 242,
+        "word": "cbabaggd"
+      },
+      {
+        "value": 242,
+        "word": "cbagaagd"
+      },
+      {
+        "value": 242,
+        "word": "cabaaaagd"
+      },
+      {
+        "value": 182,
+        "word": "cbbbaagd"
+      },
+      {
+        "value": 206,
+        "word": "cabbaggd"
+      },
+      {
+        "value": 206,
+        "word": "cagbaagd"
+      },
+      {
+        "value": 206,
+        "word": "caaabaagd"
+      },
+      {
+        "value": 350,
+        "word": "cbaagggd"
+      }
+    ],
+    "3": [
+      {
+        "value": 8,
+        "word": "cagd"
+      }
+    ],
+    "31": [
+      {
+        "value": 242,
+        "word": "caggggd"
+      },
+      {
+        "value": 242,
+        "word": "caaagggd"
+      },
+      {
+        "value": 242,
+        "word": "cbabaggd"
+      },
+      {
+        "value": 242,
+        "word": "cbagaagd"
+      },
+      {
+        "value": 242,
+        "word": "cabaaaagd"
+      },
+      {
+        "value": 182,
+        "word": "cbbbaagd"
+      },
+      {
+        "value": 206,
+        "word": "cabbaggd"
+      },
+      {
+        "value": 206,
+        "word": "cagbaagd"
+      },
+      {
+        "value": 206,
+        "word": "caaabaagd"
+      },
+      {
+        "value": 350,
+        "word": "cbaagggd"
+      },
+      {
+        "value": 350,
+        "word": "caabbaggd"
+      },
+      {
+        "value": 350,
+        "word": "caagbaagd"
+      }
+    ],
+    "7": [
+      {
+        "value": 26,
+        "word": "caggd"
+      },
+      {
+        "value": 26,
+        "word": "caaagd"
+      },
+      {
+        "value": 20,
+        "word": "cbagd"
+      },
+      {
+        "value": 8,
+        "word": "cagd"
+      }
+    ],
+    "9": [
+      {
+        "value": 14,
+        "word": "caagd"
+      },
+      {
+        "value": 26,
+        "word": "caggd"
+      },
+      {
+        "value": 26,
+        "word": "caaagd"
+      },
+      {
+        "value": 20,
+        "word": "cbagd"
+      },
+      {
+        "value": 8,
+        "word": "cagd"
+      }
+    ]
+  },
+  "long_context_edges": 2000,
+  "maximum_W_steps_for_mixed_samples": 31,
+  "maximum_ag_events": {
+    "count": 139,
+    "source": 937
+  },
+  "maximum_frontier_length": {
+    "length": 18,
+    "source": 937
+  },
+  "maximum_rewrite_steps": {
+    "count": 828,
+    "source": 937
+  },
+  "parameters": {
+    "context_depth": 2,
+    "mixed_interior_depth": 4,
+    "positive_source_limit": 1024,
+    "random_seed": 20261030
+  },
+  "positive_sources_terminated_in_bounded_test": 1024,
+  "proper_mixed_words_normalized_two_ways": 781,
+  "rule_overlap_pairs_checked": 121,
+  "simple_frontier_rank_counterexamples": {
+    "barrier_count": {
+      "after": 2,
+      "after_word": "cbagaagd",
+      "before": 1,
+      "before_word": "cbabaggd",
+      "event_index": 4,
+      "source": 27
+    },
+    "binary_block_multiset": {
+      "after": [
+        3
+      ],
+      "after_word": "caaagd",
+      "before": [
+        1
+      ],
+      "before_word": "caggd",
+      "event_index": 0,
+      "source": 7
+    },
+    "binary_count": {
+      "after": 3,
+      "after_word": "caaagd",
+      "before": 1,
+      "before_word": "caggd",
+      "event_index": 0,
+      "source": 7
+    },
+    "g_count": {
+      "after": 2,
+      "after_word": "caggd",
+      "before": 1,
+      "before_word": "caagd",
+      "event_index": 0,
+      "source": 9
+    },
+    "g_run_multiset": {
+      "after": [
+        2
+      ],
+      "after_word": "caggd",
+      "before": [
+        1
+      ],
+      "before_word": "caagd",
+      "event_index": 0,
+      "source": 9
+    },
+    "length": {
+      "after": 6,
+      "after_word": "caaagd",
+      "before": 5,
+      "before_word": "caggd",
+      "event_index": 0,
+      "source": 7
+    },
+    "value": {
+      "after": 26,
+      "after_word": "caggd",
+      "before": 14,
+      "before_word": "caagd",
+      "event_index": 0,
+      "source": 9
+    }
+  },
+  "single_g_frontier_edges": 12332,
+  "source_sha256": "fa396e475746e4a9252325aacd462c576d5b1601c9f01c4baa08a9785e25c545",
+  "status": "PASS_BOUNDED_CHECKS_NOT_A_COLLATZ_PROOF",
+  "total_frontier_edges": 30534,
+  "total_full_rewrites_on_frontier_paths": 184308
+}

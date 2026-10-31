@@ -1,0 +1,88 @@
+{
+  "affine_minimum_checks": 384,
+  "complete_fibres": 1024,
+  "correlation_negative_control": {
+    "invalid_coordinate_minimum": [
+      0,
+      0
+    ],
+    "vectors": [
+      [
+        0,
+        10
+      ],
+      [
+        10,
+        0
+      ]
+    ]
+  },
+  "large_inputs": [
+    {
+      "input_bits": 64,
+      "quotient_nodes": 1166,
+      "representation_count_bits": 50,
+      "representation_count_sha256": "cb06fc4a849f39840f8832da78b9a88742972b3baa9389282f5704b8b07db072"
+    },
+    {
+      "input_bits": 256,
+      "quotient_nodes": 19794,
+      "representation_count_bits": 202,
+      "representation_count_sha256": "43a2537eb6b7026b101c5ba4650b9c0cdcc28d49f64967cc747085be3e463c95"
+    },
+    {
+      "input_bits": 1024,
+      "quotient_nodes": 326198,
+      "representation_count_bits": 807,
+      "representation_count_sha256": "e06488c2c11bd2bb8da57332dd24cdae83e5beca193174e79d2727628c31eb40"
+    },
+    {
+      "input_bits": 4096,
+      "quotient_nodes": 5265223,
+      "representation_count_bits": 3227,
+      "representation_count_sha256": "439ce1db74f1391f767fdd5782140aed6c7fca7d71a4b700ad0d9208a1ba8a0c"
+    }
+  ],
+  "literal_words": 83788,
+  "schema": "ay-representation-dag/v1",
+  "search": {
+    "best": {
+      "failures": 56,
+      "first_failure": 17,
+      "first_input_rank": [
+        0,
+        2,
+        1
+      ],
+      "first_output": 13,
+      "first_output_rank": [
+        5,
+        3,
+        1
+      ],
+      "weights": {
+        "a": 3,
+        "b": 1,
+        "e": 3,
+        "f": 3,
+        "g": 0
+      }
+    },
+    "candidates": 1023,
+    "finite_survivors": [],
+    "first_failure_histogram": {
+      "15": 19,
+      "17": 64,
+      "3": 464,
+      "7": 141,
+      "9": 335
+    },
+    "source_limit": 511,
+    "status": "EMPIRICAL bounded parameter falsification only",
+    "weight_range": [
+      0,
+      3
+    ]
+  },
+  "status": "exact bounded checks"
+}

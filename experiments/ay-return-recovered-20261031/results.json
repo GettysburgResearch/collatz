@@ -1,0 +1,38 @@
+{
+  "actual_42_section_path": [
+    42,
+    364,
+    273,
+    68,
+    51,
+    19,
+    7,
+    4,
+    3,
+    1,
+    0
+  ],
+  "carry_checks": {
+    "bad": 4668,
+    "first_good_returns": 10000,
+    "good": 5332
+  },
+  "cone_identity_checks": 2184,
+  "false_greedy_cycle": [
+    42,
+    364,
+    42
+  ],
+  "inverse_candidates": 20000,
+  "kernel_checks": 82944,
+  "kernel_density": "47/512",
+  "kernel_period": 41472,
+  "kernel_residues": 3807,
+  "micro_edges": 1296,
+  "micro_words": 781,
+  "opaque_27_basin_size": 34,
+  "opaque_27_first_meeting_shortcut_clock": 59,
+  "run_endpoint_checks": 6240,
+  "section_sources": 10000,
+  "status": "EMPIRICAL replay of reconstructed PROPOSED lemmas; not a Collatz proof"
+}

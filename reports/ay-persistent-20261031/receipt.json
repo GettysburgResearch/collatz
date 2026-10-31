@@ -1,0 +1,170 @@
+{
+  "ast_files": 3,
+  "branch": "research/ay-swarm-20261030",
+  "complete_checkout_validation": false,
+  "controls_sha256": "94d31348cc353be2f9951ce7a2cb3fcdcef50eff985c2f6fc0ca91c714dd8ea8",
+  "corresponding_stdout_byte_identical": true,
+  "independent_agents_launched": false,
+  "independent_peer_review": false,
+  "limitations": [
+    "Exploratory weight-nine attempt did not complete; theorem stops at weight eight.",
+    "Short-budget and grouped invocations hit tool wall-time; final commands below completed separately.",
+    "No external formal build or remote CI execution."
+  ],
+  "parent": "b62f56cda3ebe1f77ea843740e37199ae0685bee",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "producer_payloads_byte_identical": true,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "relative_links_checked": 9,
+  "runs": [
+    {
+      "command": [
+        "python",
+        "experiments/ay-persistent-20261031/run.py",
+        "core",
+        "--workers",
+        "4",
+        "--output",
+        "scratch/final-core.json"
+      ],
+      "elapsed_seconds": 16.227,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f6667fd33af324aee3423faea2c4bda72a818f62e1547250b606d682b3554e72",
+      "tag": "final-normal-core"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "experiments/ay-persistent-20261031/run.py",
+        "core",
+        "--workers",
+        "1",
+        "--output",
+        "scratch/optimized-core.json"
+      ],
+      "elapsed_seconds": 18.646,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f6667fd33af324aee3423faea2c4bda72a818f62e1547250b606d682b3554e72",
+      "tag": "final-optimized-core"
+    },
+    {
+      "command": [
+        "python",
+        "experiments/ay-persistent-20261031/run.py",
+        "sparse",
+        "--output",
+        "scratch/final-sparse.json"
+      ],
+      "elapsed_seconds": 14.49,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "064b2b7c9a8a9f0abf96a44071a9b0508d2aa7360d53f26bd6905c7a067cfe7e",
+      "tag": "final-normal-sparse"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "experiments/ay-persistent-20261031/run.py",
+        "sparse",
+        "--output",
+        "scratch/optimized-sparse.json"
+      ],
+      "elapsed_seconds": 16.465,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "064b2b7c9a8a9f0abf96a44071a9b0508d2aa7360d53f26bd6905c7a067cfe7e",
+      "tag": "final-optimized-sparse"
+    },
+    {
+      "command": [
+        "python",
+        "experiments/ay-persistent-20261031/verify.py",
+        "core",
+        "reports/ay-persistent-20261031/core.json"
+      ],
+      "elapsed_seconds": 13.115,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "062cbd2a2537ed2617c72d25f63917338631439e7ec62390af2295bef5dc357a",
+      "tag": "final-verify-core"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "experiments/ay-persistent-20261031/verify.py",
+        "core",
+        "reports/ay-persistent-20261031/core.json"
+      ],
+      "elapsed_seconds": 16.017,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "062cbd2a2537ed2617c72d25f63917338631439e7ec62390af2295bef5dc357a",
+      "tag": "final-verify-core-O"
+    },
+    {
+      "command": [
+        "python",
+        "experiments/ay-persistent-20261031/verify.py",
+        "sparse",
+        "reports/ay-persistent-20261031/sparse.json"
+      ],
+      "elapsed_seconds": 30.828,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "521f0091f1252def7c00e06d9114fcef0e744e785ecd6b3a842da93db9548b2b",
+      "tag": "final-verify-sparse"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "experiments/ay-persistent-20261031/verify.py",
+        "sparse",
+        "reports/ay-persistent-20261031/sparse.json"
+      ],
+      "elapsed_seconds": 28.413,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "521f0091f1252def7c00e06d9114fcef0e744e785ecd6b3a842da93db9548b2b",
+      "tag": "final-verify-sparse-O"
+    },
+    {
+      "command": [
+        "python",
+        "experiments/ay-persistent-20261031/controls.py"
+      ],
+      "elapsed_seconds": 2.862,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "94d31348cc353be2f9951ce7a2cb3fcdcef50eff985c2f6fc0ca91c714dd8ea8",
+      "tag": "final-controls"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "experiments/ay-persistent-20261031/controls.py"
+      ],
+      "elapsed_seconds": 4.089,
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "94d31348cc353be2f9951ce7a2cb3fcdcef50eff985c2f6fc0ca91c714dd8ea8",
+      "tag": "final-controls-O"
+    }
+  ],
+  "source_sha256": {
+    "experiments/ay-persistent-20261031/controls.py": "cfd202b0b799e8e3734c2cea9870a926c5678eaf3b8b001fbd78c8d5abb06684",
+    "experiments/ay-persistent-20261031/run.py": "2e1960b71564490497c36a06e0659fe0b6a4ac3681cd008d9c341120655a61c2",
+    "experiments/ay-persistent-20261031/verify.py": "042b428865dba817c48c76b4610634788e7901f37b5a74fb33ac1555f640dade",
+    "reports/ay-persistent-20261031/core.json": "31a43d3304897937c5bc6d18dfe04026c025d76d8dd11ab135779762f3a264ef",
+    "reports/ay-persistent-20261031/sparse.json": "6f133b5f6cd10af62c48e17b71b701ea04b8151bfd02d05de8447fdc3feb5d02",
+    "research/ay-persistent-20261031/PROOF.md": "5b560fb9bea5c36b66e5a7c589a5c5f1b6bbc920c3d7bf4f429d2f495ddaa25a",
+    "research/ay-persistent-20261031/README.md": "242507cd732d44a33eadb510d717d9b4a2973c890f63d3d5bec3a478469abb89"
+  },
+  "status": "PROPOSED; execution evidence, not independent mathematical acceptance"
+}

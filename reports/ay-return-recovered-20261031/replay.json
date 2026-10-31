@@ -1,0 +1,126 @@
+{
+  "finished_utc": "2026-10-31T11:00:21.987133+00:00",
+  "frozen_files": [
+    {
+      "bytes": 7729,
+      "git_blob_sha1": "1f37057ce67443355cbadb85e6025e1ace7944bc",
+      "path": "research/ay-transversal-20261031/INVERSE_CREDIT.md",
+      "sha256": "82fddcd1824f056e433e1fb127cbd10221c9ed68017ccd40a87c51dee8c7b132"
+    },
+    {
+      "bytes": 9450,
+      "git_blob_sha1": "df651ece21a65e2291daedbb1244bb8cd9ee31c1",
+      "path": "research/ay-transversal-20261031/TRANSVERSAL.md",
+      "sha256": "85d534179676fcf561639102a36972089288a1a33f6f1522140f5f0439e6d438"
+    },
+    {
+      "bytes": 3875,
+      "git_blob_sha1": "289334163d437b24324006d31a8dfec1b4e76fc3",
+      "path": "research/ay-transversal-20261031/README.md",
+      "sha256": "d754a4c6a2e4a35a667f2bb7051b2cbd7e9498039c268450647731ca69c3eb1c"
+    },
+    {
+      "bytes": 6715,
+      "git_blob_sha1": "0b49fd8e6cdc3c1d12da5acedae0170137fbe162",
+      "path": "experiments/ay-transversal-20261031/transversal-results.json",
+      "sha256": "66f950c32ced015dec8784d13d774931513f2d2c1764544dafbbc201535d6833"
+    },
+    {
+      "bytes": 9020,
+      "git_blob_sha1": "76fec8cbb0b03d9d95b0a8e06af38d8ce79040da",
+      "path": "experiments/ay-transversal-20261031/transversal.py",
+      "sha256": "6a0e095e61357b211312d182524cc01a4df907775a1e32c5f51f02b7b5685ddf"
+    },
+    {
+      "bytes": 2539,
+      "git_blob_sha1": "5869bbbc3fbfbc26d7f022032eb739ffaf251f62",
+      "path": "experiments/ay-transversal-20261031/inverse-credit-results.json",
+      "sha256": "7e383af9e92e0682d112ffae2c12e96efa19561495f9a1b5e1a8d267f4d4bf9e"
+    },
+    {
+      "bytes": 4603,
+      "git_blob_sha1": "d876d3a6b9fc6a78b4f1115e3567a0e581eeadc2",
+      "path": "experiments/ay-transversal-20261031/credit-certificate.json",
+      "sha256": "f84bf1bb4bf7b33b0a3e9e3dbae1222f748e458ebb8fc771020f7f0161b5d9db"
+    },
+    {
+      "bytes": 8418,
+      "git_blob_sha1": "a0f6b861289e911c10221b464d0bd3d9d0f238fe",
+      "path": "experiments/ay-transversal-20261031/inverse_credit.py",
+      "sha256": "3b4c1ad6d64290084a65e048333820935e36798ce5b1b56a06f29d03194be463"
+    },
+    {
+      "bytes": 9511,
+      "git_blob_sha1": "fac7d79994cb3deac403c93f3a32e86030c127cc",
+      "path": "experiments/ay-return-recovered-20261031/check_recovered.py",
+      "sha256": "50abc61d27622e6436bb08cdb366d97d40b3e4c08b7b3f39e4a06ea1bee49875"
+    },
+    {
+      "bytes": 709,
+      "git_blob_sha1": "3d2b952cd9f585cde0eca0e5a894557deaadfbd7",
+      "path": "experiments/ay-return-recovered-20261031/results.json",
+      "sha256": "3868351f2dc64b0efb178fa918290984bb0a2f05a6d9e3467008c0d6f4ab2a3f"
+    }
+  ],
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "runs": [
+    {
+      "elapsed_seconds": 3.509,
+      "matches_recorded_bytes": true,
+      "optimized": false,
+      "program": "experiments/ay-return-recovered-20261031/check_recovered.py",
+      "returncode": 0,
+      "stdout_bytes": 709,
+      "stdout_sha256": "3868351f2dc64b0efb178fa918290984bb0a2f05a6d9e3467008c0d6f4ab2a3f"
+    },
+    {
+      "elapsed_seconds": 4.735,
+      "matches_recorded_bytes": true,
+      "optimized": true,
+      "program": "experiments/ay-return-recovered-20261031/check_recovered.py",
+      "returncode": 0,
+      "stdout_bytes": 709,
+      "stdout_sha256": "3868351f2dc64b0efb178fa918290984bb0a2f05a6d9e3467008c0d6f4ab2a3f"
+    },
+    {
+      "elapsed_seconds": 3.556,
+      "matches_recorded_bytes": true,
+      "optimized": false,
+      "program": "experiments/ay-transversal-20261031/transversal.py",
+      "returncode": 0,
+      "stdout_bytes": 6715,
+      "stdout_sha256": "66f950c32ced015dec8784d13d774931513f2d2c1764544dafbbc201535d6833"
+    },
+    {
+      "elapsed_seconds": 4.535,
+      "matches_recorded_bytes": true,
+      "optimized": true,
+      "program": "experiments/ay-transversal-20261031/transversal.py",
+      "returncode": 0,
+      "stdout_bytes": 6715,
+      "stdout_sha256": "66f950c32ced015dec8784d13d774931513f2d2c1764544dafbbc201535d6833"
+    },
+    {
+      "elapsed_seconds": 1.512,
+      "matches_recorded_bytes": true,
+      "optimized": false,
+      "program": "experiments/ay-transversal-20261031/inverse_credit.py",
+      "returncode": 0,
+      "stdout_bytes": 2539,
+      "stdout_sha256": "7e383af9e92e0682d112ffae2c12e96efa19561495f9a1b5e1a8d267f4d4bf9e"
+    },
+    {
+      "elapsed_seconds": 2.819,
+      "matches_recorded_bytes": true,
+      "optimized": true,
+      "program": "experiments/ay-transversal-20261031/inverse_credit.py",
+      "returncode": 0,
+      "stdout_bytes": 2539,
+      "stdout_sha256": "7e383af9e92e0682d112ffae2c12e96efa19561495f9a1b5e1a8d267f4d4bf9e"
+    }
+  ],
+  "scope": "Three standalone programs, normal and -O; no complete-repository validation, no independent-agent review",
+  "started_utc": "2026-10-31T11:00:13.941396+00:00",
+  "status": "PASS",
+  "unchanged_during_replay": true
+}
