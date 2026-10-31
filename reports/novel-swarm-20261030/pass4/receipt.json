@@ -1,0 +1,155 @@
+{
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "experiments/novel-swarm-20261030/pass4/run.py",
+        "--output",
+        "scratch/pass4-normal.json"
+      ],
+      "started_utc": "2026-10-31T19:21:07.352179+00:00",
+      "elapsed_seconds": 1.300205,
+      "returncode": 0,
+      "stdout": "{\"output_sha256\": \"e2d1cfcba3911bfa6fb814cf98ed69d495b8e4166e7eed419dd8360fc07a6475\", \"pressure_sources\": 32768, \"record_sources\": 8191, \"status\": \"passed\", \"translated_windows\": 3200, \"words\": 8190}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "experiments/novel-swarm-20261030/pass4/run.py",
+        "--serial",
+        "--output",
+        "scratch/pass4-serial.json"
+      ],
+      "started_utc": "2026-10-31T19:21:08.655143+00:00",
+      "elapsed_seconds": 1.564113,
+      "returncode": 0,
+      "stdout": "{\"output_sha256\": \"e2d1cfcba3911bfa6fb814cf98ed69d495b8e4166e7eed419dd8360fc07a6475\", \"pressure_sources\": 32768, \"record_sources\": 8191, \"status\": \"passed\", \"translated_windows\": 3200, \"words\": 8190}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-OO",
+        "-B",
+        "experiments/novel-swarm-20261030/pass4/run.py",
+        "--output",
+        "scratch/pass4-oo.json"
+      ],
+      "started_utc": "2026-10-31T19:21:10.219688+00:00",
+      "elapsed_seconds": 2.986603,
+      "returncode": 0,
+      "stdout": "{\"output_sha256\": \"e2d1cfcba3911bfa6fb814cf98ed69d495b8e4166e7eed419dd8360fc07a6475\", \"pressure_sources\": 32768, \"record_sources\": 8191, \"status\": \"passed\", \"translated_windows\": 3200, \"words\": 8190}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "experiments/novel-swarm-20261030/pass4/verify.py",
+        "scratch/pass4-normal.json",
+        "--output",
+        "scratch/verify-normal.json"
+      ],
+      "started_utc": "2026-10-31T19:21:13.206982+00:00",
+      "elapsed_seconds": 1.946394,
+      "returncode": 0,
+      "stdout": "{\"binomial_clock_rows\": 229, \"full_simple_max_records\": 16, \"image_groups\": 14288, \"independent_mathematical_review\": false, \"input_sha256\": \"e2d1cfcba3911bfa6fb814cf98ed69d495b8e4166e7eed419dd8360fc07a6475\", \"integer_inequalities\": 9, \"no_descent_max_records\": 1, \"pressure_odd_steps\": 1195565, \"pressure_raw_steps\": 2379157, \"record_raw_steps\": 28457, \"rejected_direct_mutations\": 12, \"status\": \"passed\", \"translated_windows\": 3200, \"words\": 8190}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-OO",
+        "-B",
+        "experiments/novel-swarm-20261030/pass4/verify.py",
+        "scratch/pass4-oo.json",
+        "--output",
+        "scratch/verify-oo.json"
+      ],
+      "started_utc": "2026-10-31T19:21:15.153773+00:00",
+      "elapsed_seconds": 3.246166,
+      "returncode": 0,
+      "stdout": "{\"binomial_clock_rows\": 229, \"full_simple_max_records\": 16, \"image_groups\": 14288, \"independent_mathematical_review\": false, \"input_sha256\": \"e2d1cfcba3911bfa6fb814cf98ed69d495b8e4166e7eed419dd8360fc07a6475\", \"integer_inequalities\": 9, \"no_descent_max_records\": 1, \"pressure_odd_steps\": 1195565, \"pressure_raw_steps\": 2379157, \"record_raw_steps\": 28457, \"rejected_direct_mutations\": 12, \"status\": \"passed\", \"translated_windows\": 3200, \"words\": 8190}\n",
+      "stderr": ""
+    }
+  ],
+  "parent_commit": "6bee3183ff7f29f2e20ca88ab94bc7745c1af602",
+  "parent_tree": "9cf08ce324641da1ac118e557afea8154701eb49",
+  "branch": "research/novel-swarm-20261030",
+  "pr": 140,
+  "status": "PROPOSED self-audited",
+  "producer_outputs_identical": true,
+  "verifier_outputs_identical": true,
+  "producer_output_bytes": 579332,
+  "producer_output_sha256": "e2d1cfcba3911bfa6fb814cf98ed69d495b8e4166e7eed419dd8360fc07a6475",
+  "verifier_output_sha256": "1169e537463e09cfdd92671ebab6b5b151417caac04891b3c0ad052c04af19a7",
+  "python_ast_files": 2,
+  "relative_link_checks": 9,
+  "complete_checkout": false,
+  "root_validator_run": false,
+  "remote_ci_claimed": false,
+  "independent_agents": false,
+  "independent_mathematical_review": false,
+  "formal_proof_build": false,
+  "payload_files": [
+    {
+      "path": "research/novel-swarm-20261030/pass4/PRESSURE.md",
+      "bytes": 5496,
+      "sha256": "310c9db82bb7550fd3d5ad866c9271b8f02d6f67adb22ecce1cc53714ec1e35c",
+      "git_blob": "1d2125a91b2b2c24a63894ece0113c89d8045eb5"
+    },
+    {
+      "path": "research/novel-swarm-20261030/pass4/README.md",
+      "bytes": 4664,
+      "sha256": "330e8277f33bd5dbcca6ce4e8d44943dfd511fb6f66e286c134e8f554ceb325f",
+      "git_blob": "6a0aefd3ace44d6137685747e1607c4d2b5d9919"
+    },
+    {
+      "path": "research/novel-swarm-20261030/pass4/RECORDS.md",
+      "bytes": 5024,
+      "sha256": "286eef573bb07da4101cd08ec320cf486b48a9243955be79e7142b6a9d5cdd65",
+      "git_blob": "cbdd9e951969467a97af83e582b63d0256d65634"
+    },
+    {
+      "path": "research/novel-swarm-20261030/pass4/SOURCES.md",
+      "bytes": 4914,
+      "sha256": "697d592999c5ee4156adc014530bbedfe40ef8258d0e23ca9b1ed0ed9f641745",
+      "git_blob": "6232cb3361f1f4f973da93206c4ffcc219faece1"
+    },
+    {
+      "path": "research/novel-swarm-20261030/pass4/WINDOWS.md",
+      "bytes": 5841,
+      "sha256": "093298c20d4e93fcc11af5d22f3bb59a1b0372af038e54008ba1b1e9cebbb86d",
+      "git_blob": "b6ac911e613c0ecaaa4032b2831790e09c3a5f54"
+    },
+    {
+      "path": "experiments/novel-swarm-20261030/pass4/run.py",
+      "bytes": 11201,
+      "sha256": "a0a0573d5ff66d140cf11cc2ef7216838d939bfa5b30ddf4cbfcea10cedc3dde",
+      "git_blob": "68a28943f8cf0f4c098f7a9d1be76f60859e6813"
+    },
+    {
+      "path": "experiments/novel-swarm-20261030/pass4/verify.py",
+      "bytes": 12891,
+      "sha256": "16aa69da5deecd5b71e234e2039a206e5a75523713805351fdb157da714b276b",
+      "git_blob": "66f6572e88677104b17708700505aad1c4648621"
+    },
+    {
+      "path": "reports/novel-swarm-20261030/pass4/REVIEW.md",
+      "bytes": 6804,
+      "sha256": "6c3eacf42c5d7e2a0f518f4124015719f3cde22147cb5cb6ec085ec5f2fbfce2",
+      "git_blob": "5a8648aa1622446eca8ebb454f4532509f8c2602"
+    },
+    {
+      "path": "reports/novel-swarm-20261030/pass4/verification.json",
+      "bytes": 480,
+      "sha256": "1169e537463e09cfdd92671ebab6b5b151417caac04891b3c0ad052c04af19a7",
+      "git_blob": "7d061038f7d343aab26a6a6dc47346ded0ad9cff"
+    }
+  ]
+}
