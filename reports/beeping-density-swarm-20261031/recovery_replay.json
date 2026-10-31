@@ -1,0 +1,119 @@
+{
+  "platform": "linux",
+  "process_count": 10,
+  "program_sha256": {
+    "check_contact_review.py": "d81b1e4aa6730cfe6ca90fb6cafa026c2c30c51624df50520f7823f854bf6d9f",
+    "check_contact_transport.py": "8a829b79f555a66792432ae54e000a054e880bfd5efde2c8276c93ca4fae5d6f",
+    "check_critical_energy.py": "599398889d06befaa799d96d6c61b35f848a2a3ee41cb10e165169408d4af86c",
+    "check_harmonic_spectrum.py": "b02a5fda87cfc02720b37e3be422937467a7aedac0a45e4ebaf9bd75d1f55f60",
+    "check_inverse_green.py": "2d32750fcbf2cce478c2c2718c86752982f92718fc1de35969af2ffebb3efcbe",
+    "replay_packet.py": "731b54f042c0290caf1a38c4ed902feb67cc7f439cbf546cba7218d3ff273b60"
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "schema": "collatz-second-swarm-replay/v1",
+  "scope": "five bounded exact suites, normal and optimized; full saved-JSON equality; no Collatz proof, reachability decision, or external Lean replay",
+  "status": "PASS",
+  "suite_count": 5,
+  "suites": [
+    {
+      "arguments": [],
+      "modes": [
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "normal",
+          "semantic_sha256": "e545a80298eb36801a233289ab75939e5aca2a8324f915f5c0c118edc3061b38"
+        },
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "optimized",
+          "semantic_sha256": "e545a80298eb36801a233289ab75939e5aca2a8324f915f5c0c118edc3061b38"
+        }
+      ],
+      "name": "contact_transport",
+      "program": "check_contact_transport.py",
+      "saved_evidence": "contact_transport_checks.json"
+    },
+    {
+      "arguments": [],
+      "modes": [
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "normal",
+          "semantic_sha256": "1d6da38c799179ff97449e459595b38e5f1dc87cb66086aa3fc8f764b991797b"
+        },
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "optimized",
+          "semantic_sha256": "1d6da38c799179ff97449e459595b38e5f1dc87cb66086aa3fc8f764b991797b"
+        }
+      ],
+      "name": "independent_contact_review",
+      "program": "check_contact_review.py",
+      "saved_evidence": "contact_review_checks.json"
+    },
+    {
+      "arguments": [],
+      "modes": [
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "normal",
+          "semantic_sha256": "b8f36b70d8458d708c73ae701f788599a6e23ac6debe5cabda88385892ae7a14"
+        },
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "optimized",
+          "semantic_sha256": "b8f36b70d8458d708c73ae701f788599a6e23ac6debe5cabda88385892ae7a14"
+        }
+      ],
+      "name": "inverse_green",
+      "program": "check_inverse_green.py",
+      "saved_evidence": "inverse_green_checks.json"
+    },
+    {
+      "arguments": [],
+      "modes": [
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "normal",
+          "semantic_sha256": "c1eb67badeebe04db16159c6c2766e8531b351eee17f6e061a5880bcc69e21db"
+        },
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "optimized",
+          "semantic_sha256": "c1eb67badeebe04db16159c6c2766e8531b351eee17f6e061a5880bcc69e21db"
+        }
+      ],
+      "name": "harmonic_spectrum",
+      "program": "check_harmonic_spectrum.py",
+      "saved_evidence": "harmonic_spectrum_checks.json"
+    },
+    {
+      "arguments": [],
+      "modes": [
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "normal",
+          "semantic_sha256": "a3c536c5defc99aa1bf70a44fb3e235000556486571463d9bf6a5bb2a31b06f4"
+        },
+        {
+          "complete_saved_json_match": true,
+          "exit_code": 0,
+          "mode": "optimized",
+          "semantic_sha256": "a3c536c5defc99aa1bf70a44fb3e235000556486571463d9bf6a5bb2a31b06f4"
+        }
+      ],
+      "name": "critical_energy",
+      "program": "check_critical_energy.py",
+      "saved_evidence": "critical_energy_checks.json"
+    }
+  ]
+}

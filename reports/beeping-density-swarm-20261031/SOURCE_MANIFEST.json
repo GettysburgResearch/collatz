@@ -1,0 +1,172 @@
+{
+  "schema": "collatz-recovery-manifest/v1",
+  "base_commit": "d0f48c472d45a336e9083b37b45e1a8d39a2cf16",
+  "publication_status": "PARTIAL: 13 source files verified remotely at 3c0ce26d6021fbd700df61652d596293b661612c; remaining evidence/reports and new bridge are not published by this session.",
+  "exact_recovered_file_count": 20,
+  "exact_recovered_files": [
+    {
+      "path": "experiments/beeping-density-swarm-20261031/README.md",
+      "bytes": 4093,
+      "sha256": "b1c6450b3325108afca047753e51f9c4b190a8021fb614ec7b1397657f2cbf11",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/check_contact_review.py",
+      "bytes": 8908,
+      "sha256": "d81b1e4aa6730cfe6ca90fb6cafa026c2c30c51624df50520f7823f854bf6d9f",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/check_contact_transport.py",
+      "bytes": 14557,
+      "sha256": "8a829b79f555a66792432ae54e000a054e880bfd5efde2c8276c93ca4fae5d6f",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/check_critical_energy.py",
+      "bytes": 5392,
+      "sha256": "599398889d06befaa799d96d6c61b35f848a2a3ee41cb10e165169408d4af86c",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/check_harmonic_spectrum.py",
+      "bytes": 8872,
+      "sha256": "b02a5fda87cfc02720b37e3be422937467a7aedac0a45e4ebaf9bd75d1f55f60",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/check_inverse_green.py",
+      "bytes": 11940,
+      "sha256": "2d32750fcbf2cce478c2c2718c86752982f92718fc1de35969af2ffebb3efcbe",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/replay_packet.py",
+      "bytes": 4114,
+      "sha256": "731b54f042c0290caf1a38c4ed902feb67cc7f439cbf546cba7218d3ff273b60",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/contact_transport_checks.json",
+      "bytes": 20909,
+      "sha256": "15017b772a50d008e64cc87ae906840a423ffb6e47948abc3b0aff7e8ed2eb6c",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/contact_review_checks.json",
+      "bytes": 9468,
+      "sha256": "f7378ecb4e5c736a467b37621105609fed0af3f9eb40abc4d91c21c858b2d41f",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/inverse_green_checks.json",
+      "bytes": 12362,
+      "sha256": "482498967ecda13391859445781a664d4e691b3d75b5538c84abd69021f2da85",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/harmonic_spectrum_checks.json",
+      "bytes": 1454,
+      "sha256": "d1b466ad4cf7e795901a17ec55b9d00af2e76af381e78308e68bdd7243f3c9fa",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "experiments/beeping-density-swarm-20261031/critical_energy_checks.json",
+      "bytes": 3680,
+      "sha256": "cb3689e4678eb3b7ac43a5e06e9a3c6fd8bc6b667c69d206efe46f4895b1a9ab",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/CONTACT_REVIEW.md",
+      "bytes": 12671,
+      "sha256": "f423c0c14e165e5f8829e3e8e7bb973f5af56d762097cc60c55ad390a194c2ad",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/CONTACT_TRANSPORT.md",
+      "bytes": 19472,
+      "sha256": "5f166612880ab6d84a2f12b5898af9850d52b5d8b7d28642931e3a83f2fb6e0f",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/CRITICAL_ENERGY.md",
+      "bytes": 7391,
+      "sha256": "4d317aed62eb6687fd1d5cf7596477ad5c7f27062985ac9a04892d7a3c743614",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/CRITICAL_ENERGY_REVIEW.md",
+      "bytes": 4623,
+      "sha256": "9fca52de0d1b2c7ee1c6aa92b0545f97be20cc66d261bcfd24bc7d1314e280e4",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/HARMONIC_SPECTRUM_AND_COMPUTABILITY.md",
+      "bytes": 19947,
+      "sha256": "7a74134f85b387577feb50552f5824b498f20ae3a57c10227048251d0e750f1f",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/INVERSE_GREEN.md",
+      "bytes": 19815,
+      "sha256": "0ebca5b6f33f5df2fa3550c53d6941b50c145dedfea95afc5ccd65bcaa94faa9",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/README.md",
+      "bytes": 9410,
+      "sha256": "2dd1750bc112cecf7af92ed02ecf843b11d77f5b328c0ed73802d1741729b498",
+      "matches_prior_recorded_hash": true
+    },
+    {
+      "path": "research/beeping-density-swarm-20261031/ROOT_REVIEW.md",
+      "bytes": 8498,
+      "sha256": "005941899022a08500ddcd0626b4306b8462b5b4a9e034513be4876f91dddece",
+      "matches_prior_recorded_hash": true
+    }
+  ],
+  "provenance": "Reconstructed from retained previous-turn content and checked against its recorded SHA-256 values. This is not a remote commit or an independently archived original checkout.",
+  "original_record_bodies_not_restored": [
+    {
+      "path": "reports/beeping-density-swarm-20261031/EXTERNAL_SOURCES.md",
+      "recorded_sha256": "129c8efc38ec6fd5de6c1c9eadb336c96e006edf3c581d70a2998dc8f6d95af6",
+      "action": "New recovery source ledger replaces the unlocated record, explicitly labeled."
+    },
+    {
+      "path": "reports/beeping-density-swarm-20261031/README.md",
+      "recorded_sha256": "8db42c9e1e40ce093c36f6ade5f7be1941e543a687ea608df734b4b1dc1fde6b",
+      "action": "New recovery README replaces the unlocated record, explicitly labeled."
+    },
+    {
+      "path": "reports/beeping-density-swarm-20261031/packet_replay.json",
+      "recorded_sha256": "93c5a26796742e751e21f61d4f84cc8f6ff316901c8f1a3eaddb0dcb53db0310",
+      "action": "Not recreated as historical output. Fresh receipt is recovery_replay.json."
+    },
+    {
+      "path": "reports/beeping-density-swarm-20261031/SOURCE_MANIFEST.json",
+      "action": "New recovery manifest at this path; no claim to recover original bytes."
+    },
+    {
+      "path": "research/README.md",
+      "recorded_sha256": "099965a62797930ba926d536cc09a0333edb887401cf29b1116d25a28ecc3f6b",
+      "action": "Not overwritten; navigation row supplied separately."
+    }
+  ],
+  "fresh_validation": "Five exact evidence files regenerated with matching bytes; five original suites replayed in normal and optimized Python, complete parsed JSON equality; no complete-checkout validate.py run.",
+  "remote_verified_head": "3c0ce26d6021fbd700df61652d596293b661612c",
+  "remote_verified_source_files": {
+    "research/beeping-density-swarm-20261031/CONTACT_REVIEW.md": "32774e9568df2e44a670f9f2051be1522eb4998a",
+    "research/beeping-density-swarm-20261031/CONTACT_TRANSPORT.md": "d13a6120ca7e1716620ff53fc55370256f09efc3",
+    "research/beeping-density-swarm-20261031/CRITICAL_ENERGY.md": "f18eacb6c0d95954cd6002b8edca52a440c01420",
+    "research/beeping-density-swarm-20261031/CRITICAL_ENERGY_REVIEW.md": "ac732f50d1824a6641b0468fd507b11e3506e401",
+    "research/beeping-density-swarm-20261031/HARMONIC_SPECTRUM_AND_COMPUTABILITY.md": "0394fb6f82c19a4cfe1a7536330924fe7d5b0a21",
+    "research/beeping-density-swarm-20261031/INVERSE_GREEN.md": "0f30f3344d41a0c0ae838ecaef74de33fedcb3bf",
+    "research/beeping-density-swarm-20261031/README.md": "6b24826a895d6f988f5b437099c9ed06a8c665d0",
+    "research/beeping-density-swarm-20261031/ROOT_REVIEW.md": "f911afe1038689f391e5995db78d70a2eb48fa5c",
+    "experiments/beeping-density-swarm-20261031/check_contact_review.py": "4a00635a25d414af7d794121fdc392e33f263764",
+    "experiments/beeping-density-swarm-20261031/check_contact_transport.py": "79f8e06f388c431d23a18d1da469ec64c60cc6ab",
+    "experiments/beeping-density-swarm-20261031/check_critical_energy.py": "be1dc13e4d06512cf16a1aad2988d156c8c3c27a",
+    "experiments/beeping-density-swarm-20261031/check_harmonic_spectrum.py": "47c5be6da5e9ddc49e08d8f55c4349ba7888c6cb",
+    "experiments/beeping-density-swarm-20261031/check_inverse_green.py": "ab5d04c87e4b0e10867f1c65d1b2a0d3a3d9bf7a"
+  }
+}
