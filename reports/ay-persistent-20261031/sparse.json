@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "sparse": {
+    "clock_bound": 552,
+    "density_denominator_exponent": 552,
+    "domain_width": 552,
+    "levels": [
+      {
+        "max_bits": 1,
+        "max_value": 1,
+        "maximum_clock": 2,
+        "nodes": 1,
+        "sha256": "2e2238dfe888d019424b626f134944d351789f28ffb5e59b0001968f61e5c022",
+        "weight": 1,
+        "witness": 1
+      },
+      {
+        "max_bits": 2,
+        "max_value": 3,
+        "maximum_clock": 4,
+        "nodes": 1,
+        "sha256": "ceca31af4546dbfe78a1212cc82db76f77005e0b37693bc1342a0a2fa0ced235",
+        "weight": 2,
+        "witness": 3
+      },
+      {
+        "max_bits": 4,
+        "max_value": 11,
+        "maximum_clock": 7,
+        "nodes": 2,
+        "sha256": "a536f1508eee85db531478868e72b272e91a4767d151cc759e02d12d6075b1d3",
+        "weight": 3,
+        "witness": 7
+      },
+      {
+        "max_bits": 7,
+        "max_value": 71,
+        "maximum_clock": 59,
+        "nodes": 5,
+        "sha256": "94438f961c2cfb84e0b3837cc27c3eb76721a06b58a4dcea5d30c342ac600f73",
+        "weight": 4,
+        "witness": 27
+      },
+      {
+        "max_bits": 59,
+        "max_value": 288230376151711771,
+        "maximum_clock": 137,
+        "nodes": 103,
+        "sha256": "20a3f27ea5c590bf732f660eee8544d7ef86b2c4ce5a5e2cac5aa066e59850a7",
+        "weight": 5,
+        "witness": 549755813915
+      },
+      {
+        "max_bits": 137,
+        "max_value": 87112285931760246646623899503082417946651,
+        "maximum_clock": 214,
+        "nodes": 1786,
+        "sha256": "1b0e1de1249c0451b1147eb1095c3aa72f281578dab6969149df67258382985e",
+        "weight": 6,
+        "witness": 598134325510171
+      },
+      {
+        "max_bits": 214,
+        "max_value": 13164036458569648337239753460458804039861886925069237041114382363,
+        "maximum_clock": 365,
+        "nodes": 31207,
+        "sha256": "c30884b42b98e2c5d941fd7c46a3dc631db06c1863481dccc1f6ac2757d7b03b",
+        "weight": 7,
+        "witness": 316912650057057491661419970631
+      },
+      {
+        "max_bits": 365,
+        "max_value": 37576681324381331646231689548629392438010920782533117931316655544515344401833735412331834031213790909930930247,
+        "maximum_clock": 552,
+        "nodes": 585311,
+        "sha256": "fcae970f222c0b4d092bfbff7f7dbce4b58f6a399bea47e2350b4faaabd55ea0",
+        "weight": 8,
+        "witness": 1119872371088902105278721140284222139060822748617324767449994550481895935906993122747496238297223528519
+      }
+    ],
+    "nodes": 618416,
+    "odd_density_numerator": 13354397027373067948161483927215501688875224560624213230177897311936581372296701340533745734845600246698894753124565353534804163133156187502386135172630041271145070594,
+    "sha256": "2c6e8c02f11a7bc1d40afa160aea1a77d2524c6582e985c8b378439659f37c91",
+    "weight_cap": 8
+  }
+}
