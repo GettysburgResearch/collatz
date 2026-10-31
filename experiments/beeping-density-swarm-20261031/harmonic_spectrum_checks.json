@@ -1,0 +1,45 @@
+{
+  "circle_residual_cases": 120,
+  "disjoint_inverse_rays": 6,
+  "finite_power_norm_examples": [
+    {
+      "length": 1,
+      "power_norm": "786441/786442",
+      "source": 262147
+    },
+    {
+      "length": 2,
+      "power_norm": "943731/943732",
+      "source": 524295
+    },
+    {
+      "length": 5,
+      "power_norm": "1019231181/1019231392",
+      "source": 4194367
+    },
+    {
+      "length": 16,
+      "power_norm": "369774159966841023/369774160009822208",
+      "source": 8590065663
+    },
+    {
+      "length": 64,
+      "power_norm": "8302264734062559402057512165582600932993084179806765823/8302264734062559402057515599266421207058824763946303488",
+      "source": 2417888532717405768515583
+    }
+  ],
+  "first_hit_product_checks": 26461,
+  "interior_eigenvector_truncations": 240,
+  "inverse_ray_length": 14,
+  "largest_observed_odd_clock": 66,
+  "minimum_observed_simple_product": "1840049047529878113/2305843009213693952",
+  "odd_source_limit": 2047,
+  "open_escape_problem_decided": false,
+  "periodic_mass_checks": 64,
+  "schema": "harmonic-spectrum-bounded-replay/v1",
+  "scope": "exact finite identities and construction interfaces; no infinite-spectrum computation, reachability oracle, external formal replay, or Collatz proof",
+  "semantic_sha256_before_hash_field": "30aaabb4c82de6697539fb4d8a2284fcff33413194678becd005609190cd8348",
+  "status": "PASS",
+  "transport_cases": 12,
+  "uniform_green_computability_proved": false
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "positive-floor-replay/v1",
+  "status": "PASS",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "program_sha256": "0140817d0ec365144d56a21cd5981dbf90fe357f816dc34e0a5bba8ada3442b7",
+  "modes": [
+    {
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/mnt/data/collatz-recovery/payload/experiments/positive-floor-bridge-20261031/check_positive_floor.py",
+        "--output",
+        "/mnt/data/collatz-recovery/new-replay-normal.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.939,
+      "stdout": "{\"status\": \"PASS\", \"output\": \"/mnt/data/collatz-recovery/new-replay-normal.json\", \"finite_model_checks\": 9856}",
+      "stderr": "",
+      "saved_output_byte_match": true,
+      "output_sha256": "25b87b636f5c0c44294eeacb732aec75098ba634a13952c4d052307e53ae8fb9"
+    },
+    {
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/mnt/data/collatz-recovery/payload/experiments/positive-floor-bridge-20261031/check_positive_floor.py",
+        "--output",
+        "/mnt/data/collatz-recovery/new-replay-optimized.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.507,
+      "stdout": "{\"status\": \"PASS\", \"output\": \"/mnt/data/collatz-recovery/new-replay-optimized.json\", \"finite_model_checks\": 9856}",
+      "stderr": "",
+      "saved_output_byte_match": true,
+      "output_sha256": "25b87b636f5c0c44294eeacb732aec75098ba634a13952c4d052307e53ae8fb9"
+    }
+  ],
+  "scope": "Finite rational checks and exact killed-model resolvents; no external floor, external Lean, infinite-state convergence, or independent-agent review."
+}

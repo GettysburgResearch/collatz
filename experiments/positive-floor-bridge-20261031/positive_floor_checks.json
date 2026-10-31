@@ -1,0 +1,126 @@
+{
+  "finite_models": {
+    "floor_alpha": "1 (finite models only)",
+    "inequality_and_resolvent_checks": 9856,
+    "models": [
+      {
+        "frontiers": 96,
+        "h_at_1": "133231/16384",
+        "h_status": "Exact finite killed Green function, not the infinite canonical trace",
+        "height_cutoff": 31,
+        "inverse_tail_checks": 576,
+        "leaf_evaluations": 152,
+        "states": 16
+      },
+      {
+        "frontiers": 192,
+        "h_at_1": "596203/65536",
+        "h_status": "Exact finite killed Green function, not the infinite canonical trace",
+        "height_cutoff": 63,
+        "inverse_tail_checks": 1152,
+        "leaf_evaluations": 312,
+        "states": 32
+      },
+      {
+        "frontiers": 384,
+        "h_at_1": "20872931/2097152",
+        "h_status": "Exact finite killed Green function, not the infinite canonical trace",
+        "height_cutoff": 127,
+        "inverse_tail_checks": 2304,
+        "leaf_evaluations": 628,
+        "states": 64
+      }
+    ],
+    "rho_depths": 32
+  },
+  "first_and_dead_profiles": {
+    "checks": 1503,
+    "residue_examples": [
+      {
+        "Ld": "1/21",
+        "a0": 6,
+        "rho1": "1",
+        "t": 1
+      },
+      {
+        "Ld": "0",
+        "a0": null,
+        "rho1": "0",
+        "t": 3
+      },
+      {
+        "Ld": "32/21",
+        "a0": 1,
+        "rho1": "2",
+        "t": 5
+      },
+      {
+        "Ld": "16/21",
+        "a0": 2,
+        "rho1": "1",
+        "t": 7
+      },
+      {
+        "Ld": "0",
+        "a0": null,
+        "rho1": "0",
+        "t": 9
+      },
+      {
+        "Ld": "2/21",
+        "a0": 5,
+        "rho1": "2",
+        "t": 11
+      },
+      {
+        "Ld": "4/21",
+        "a0": 4,
+        "rho1": "1",
+        "t": 13
+      },
+      {
+        "Ld": "0",
+        "a0": null,
+        "rho1": "0",
+        "t": 15
+      },
+      {
+        "Ld": "8/21",
+        "a0": 3,
+        "rho1": "2",
+        "t": 17
+      }
+    ],
+    "tails": "Infinite geometric exponent tails summed exactly",
+    "targets": 501
+  },
+  "helper_sha256": "2d32750fcbf2cce478c2c2718c86752982f92718fc1de35969af2ffebb3efcbe",
+  "schema": 1,
+  "scope": "Exact finite identities and finite killed models; no external floor, all-depth limit, or Collatz proof verified",
+  "status": "PASS",
+  "synchronized_frontiers": {
+    "frontiers": 650,
+    "leaf_evaluations": 1980,
+    "max_inverse_letter": 6,
+    "max_total_clock": 6,
+    "overlap_control": {
+      "lhs": "53/28",
+      "rho2": "8/7",
+      "root": 1,
+      "words": [
+        [],
+        [
+          2
+        ]
+      ]
+    },
+    "strict_inequalities": 306
+  },
+  "zero_clock_control": {
+    "conclusion": "Cannot remove q(w)>=1 from the uniform-floor theorem",
+    "normalized_Abel_limit": "0, exactly since a_z(3)=1-z",
+    "positive_depths": "0",
+    "rho0": "1",
+    "root": 3
+  }
+}
