@@ -1,0 +1,114 @@
+{
+  "payload": {
+    "Collatz_proved": false,
+    "corridors": [
+      {
+        "odd_steps_to_one": 2,
+        "q": 1,
+        "source_bits": 2,
+        "terminal_valuation": 4
+      },
+      {
+        "odd_steps_to_one": 3,
+        "q": 2,
+        "source_bits": 8,
+        "terminal_valuation": 10
+      },
+      {
+        "odd_steps_to_one": 4,
+        "q": 3,
+        "source_bits": 25,
+        "terminal_valuation": 28
+      },
+      {
+        "odd_steps_to_one": 5,
+        "q": 4,
+        "source_bits": 79,
+        "terminal_valuation": 82
+      },
+      {
+        "odd_steps_to_one": 6,
+        "q": 5,
+        "source_bits": 240,
+        "terminal_valuation": 244
+      },
+      {
+        "odd_steps_to_one": 7,
+        "q": 6,
+        "source_bits": 725,
+        "terminal_valuation": 730
+      },
+      {
+        "odd_steps_to_one": 8,
+        "q": 7,
+        "source_bits": 2183,
+        "terminal_valuation": 2188
+      },
+      {
+        "odd_steps_to_one": 9,
+        "q": 8,
+        "source_bits": 6556,
+        "terminal_valuation": 6562
+      },
+      {
+        "odd_steps_to_one": 10,
+        "q": 9,
+        "source_bits": 19678,
+        "terminal_valuation": 19684
+      },
+      {
+        "odd_steps_to_one": 11,
+        "q": 10,
+        "source_bits": 59043,
+        "terminal_valuation": 59050
+      },
+      {
+        "odd_steps_to_one": 12,
+        "q": 11,
+        "source_bits": 177140,
+        "terminal_valuation": 177148
+      },
+      {
+        "odd_steps_to_one": 13,
+        "q": 12,
+        "source_bits": 531434,
+        "terminal_valuation": 531442
+      }
+    ],
+    "critical_pair_tests": 12,
+    "exact_law_residues": 363,
+    "law_rows": [
+      {
+        "energy": "5/3",
+        "q": 1,
+        "residues": 3
+      },
+      {
+        "energy": "15/7",
+        "q": 2,
+        "residues": 9
+      },
+      {
+        "energy": "177005/67963",
+        "q": 3,
+        "residues": 27
+      },
+      {
+        "energy": "6626070796594781675/2159281421340253987",
+        "q": 4,
+        "residues": 81
+      },
+      {
+        "energy": "18909241984277276232029395897907968616740391544584932826219645/5350418720142111510029542161258891403960563152740894082816203",
+        "q": 5,
+        "residues": 243
+      }
+    ],
+    "literal_corridor_steps": 90,
+    "signed_Gram_tests": 40,
+    "status": "PASS",
+    "theorem_prover_run": false,
+    "whole_vector_residual_tests": 91
+  },
+  "semantic_sha256": "5d3397eac1b08a15703c36d9e7eaf015001171f3a568ad0618b190c5bacabfe9"
+}
