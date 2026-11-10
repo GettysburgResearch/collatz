@@ -3,6 +3,7 @@
 Status: **PROPOSED**. Not reviewed by anyone else. Continues
 [`../syracuse-poisson-identity`](../syracuse-poisson-identity/README.md) (Part I); notation as there.
 Checks and data: [`experiments/X-SYR-002-critical-cascade`](../../experiments/X-SYR-002-critical-cascade/README.md).
+Continued in [`../syracuse-pair-chain`](../syracuse-pair-chain/README.md) (Part III): the pair chain on the affine group.
 
 ## 0. Summary
 
