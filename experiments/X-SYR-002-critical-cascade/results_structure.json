@@ -1,0 +1,153 @@
+{
+ "S1 cascade form f_{n+1} = c * (M f_n)(y0)": {
+  "ok": true,
+  "info": null
+ },
+ "S1 moment E sum T^p = 3^(p-1)/(2^p-1), p=1.0": {
+  "ok": true,
+  "info": 1.0
+ },
+ "S1 moment E sum T^p = 3^(p-1)/(2^p-1), p=1.5": {
+  "ok": true,
+  "info": 0.947290042
+ },
+ "S1 moment E sum T^p = 3^(p-1)/(2^p-1), p=2.0": {
+  "ok": true,
+  "info": 1.0
+ },
+ "S1 moment E sum T^p = 3^(p-1)/(2^p-1), p=2.5": {
+  "ok": true,
+  "info": 1.115807398
+ },
+ "S1 tilted drift m' = log 3 - (4/3) log 2": {
+  "ok": true,
+  "info": 0.174416048
+ },
+ "S2 L psi = sigma Psi, level 1": {
+  "ok": true,
+  "info": "2.1e-15"
+ },
+ "S2 Psi orthogonal, norm^2 5/3, level 1": {
+  "ok": true,
+  "info": null
+ },
+ "S3 flat kernel: 0 (3|s), 3/5 (s=r mod 3), 12/5 (s=-r mod 3), level 1": {
+  "ok": true,
+  "info": null
+ },
+ "S4 selection rule <Psi_r o A^j, Psi_q> != 0 iff v3(r-q) = v3(j), level 1": {
+  "ok": true,
+  "info": {
+   "0": [
+    0.666667
+   ]
+  }
+ },
+ "S2 L psi = sigma Psi, level 2": {
+  "ok": true,
+  "info": "7.4e-15"
+ },
+ "S2 Psi orthogonal, norm^2 5/3, level 2": {
+  "ok": true,
+  "info": null
+ },
+ "S3 flat kernel: 0 (3|s), 3/5 (s=r mod 3), 12/5 (s=-r mod 3), level 2": {
+  "ok": true,
+  "info": null
+ },
+ "S4 selection rule <Psi_r o A^j, Psi_q> != 0 iff v3(r-q) = v3(j), level 2": {
+  "ok": true,
+  "info": {
+   "0": [
+    0.3849
+   ],
+   "1": [
+    0.333333,
+    1.333333
+   ]
+  }
+ },
+ "S2 L psi = sigma Psi, level 3": {
+  "ok": true,
+  "info": "4.9e-14"
+ },
+ "S2 Psi orthogonal, norm^2 5/3, level 3": {
+  "ok": true,
+  "info": null
+ },
+ "S3 flat kernel: 0 (3|s), 3/5 (s=r mod 3), 12/5 (s=-r mod 3), level 3": {
+  "ok": true,
+  "info": null
+ },
+ "S4 selection rule <Psi_r o A^j, Psi_q> != 0 iff v3(r-q) = v3(j), level 3": {
+  "ok": true,
+  "info": {
+   "0": [
+    0.222222
+   ],
+   "1": [
+    0.19245,
+    0.7698
+   ],
+   "2": [
+    0.333333,
+    1.333333
+   ]
+  }
+ },
+ "S5 <Lu, (Lv) o g> = sum 3 2^-(a+b) <u, v o g'>, nine affine g": {
+  "ok": true,
+  "info": "2.0e-13"
+ },
+ "S6 |rho_n(S)| <= a_n and rho_n(S) -> a_n": {
+  "ok": true,
+  "info": [
+   {
+    "n": 6,
+    "a_n": 0.465491,
+    "rho": {
+     "0.5": -0.01191,
+     "1": 0.01816,
+     "2": 0.1011,
+     "4": 0.21268,
+     "8": 0.31669,
+     "16": 0.41745,
+     "64": 0.46549,
+     "1000000.0": 0.46549
+    }
+   },
+   {
+    "n": 8,
+    "a_n": 0.466659,
+    "rho": {
+     "0.5": -0.01112,
+     "1": 0.01754,
+     "2": 0.09702,
+     "4": 0.20974,
+     "8": 0.31034,
+     "16": 0.37758,
+     "64": 0.46666,
+     "1000000.0": 0.46666
+    }
+   },
+   {
+    "n": 10,
+    "a_n": 0.468169,
+    "rho": {
+     "0.5": -0.01027,
+     "1": 0.01774,
+     "2": 0.09265,
+     "4": 0.19802,
+     "8": 0.2972,
+     "16": 0.37179,
+     "64": 0.44,
+     "1000000.0": 0.46817
+    }
+   }
+  ]
+ },
+ "S7 no words w != w~ with phi_w~ = A^j phi_w (lengths <= 4, letters <= 6, |j| <= 3)": {
+  "ok": true,
+  "info": null
+ }
+}

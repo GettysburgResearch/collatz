@@ -1,5 +1,7 @@
 # An exact Poisson-kernel identity for the Syracuse transfer operator
 
+**Continued in** [`../syracuse-critical-cascade`](../syracuse-critical-cascade/README.md): singular value decomposition, selection rule, pair operator, renewal law, and data to level 18. With level 18 the extrapolation in section 6 below becomes $a_\infty\approx0.475$, inside the uncertainty stated there.
+
 **Status:** PROPOSED. Self-checked only; no independent review. Theorems 1–3 have complete short proofs below. Sections 5 and 6 are EMPIRICAL or conjectural and are labelled so. Nothing here proves or disproves Collatz, and nothing here controls an individual orbit.
 
 **Map and normalization:** the odd-to-odd Syracuse map, through Tao's Syracuse random variables. Let $a_1,a_2,\dots$ be i.i.d. with $P(a=k)=2^{-k}$, $k\ge1$, and
