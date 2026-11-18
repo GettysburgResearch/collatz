@@ -20,7 +20,7 @@ The projection onto C_F is mathematical and need not be decidable. An alternativ
 
 **Retaining actual cycles at finite horizons.** For a source that enters a surviving induced cycle gamma at first-return index t_0, let d be its period and W_B(gamma) the sum of w over its cycle vertices of rank at least B. For a horizon N the number of complete traversals after entry is max(0,floor((N−t_0)/d)); use zero for a source not entering a cycle by N. In the sum of weighted high-rank occupation through j=0,...,N−1, subtract this count times W_B(gamma) separately for every source and then average by f. The remainder is nonnegative and at most C||f||_1/sqrt(log B), uniformly in N: the preperiod plus the last incomplete cycle traversal uses each state at most once. This formula is valid whether or not any nontrivial positive cycle exists. It separates recurrent mass from a uniform error without claiming that the recurrent contribution vanishes.
 
-**Consequence for a hypothetical infinite return orbit.** For any epsilon>0, a constant c_epsilon>0 exists such that for all large N, at least (1−epsilon)N of its first N unsafe states have
+**Consequence for a hypothetical return orbit with infinitely many distinct states.** For any epsilon>0, a constant c_epsilon>0 exists such that for all large N, at least (1−epsilon)N of its first N unsafe states have
 
     R(x_j) > c_epsilon N^{1/beta}(log N)^{3/(2 beta)}.        (3)
 
