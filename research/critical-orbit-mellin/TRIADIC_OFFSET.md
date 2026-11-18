@@ -75,6 +75,38 @@ times the Cesàro mean of g_l(n), since the slope from n to y_j
 divided by y_j is bounded below by the simple-path correction product.
 The canonical fixed-root mean is positive, proving the converse.
 
+## One compact null carrier for every triadic phase
+
+If an escaping unit n exists, there is a single compact Lebesgue-null set
+E inside (0,1) such that liminf_Q S_Q^u(E)/Q>0 at **every** triadic
+rational u. At almost every real u one has S_Q^u(E)=0 at every depth,
+by exact coarea and countability of the depths.
+
+Indeed let K_n denote the compact null carrier of corrections from
+ordinary unit ancestors x to n, as in the [arithmetic zero-phase
+argument](OFFSET_COAREA.md), and let L_j be the correction from n
+to y_j=U^j(n). For j>=1 these give a compact countable set of values
+after adjoining their finite limit L_infty, with positive infimum.
+For the above shifted construction now require
+x>2^(k+2)(1+C_(k+1)). This still removes only finitely many retained
+depths M-j for each fixed k. Let B range over offsets of the finitely
+many length-(k+1) suffixes of exponents at most six. The set
+of numbers -log₂(1-B/x) for positive integers x satisfying this
+bound, ranging over every k>=0, is countable and compact after
+adjoining zero. At fixed k its only possible new accumulation point
+is zero, and as k increases its largest allowed value tends to zero.
+Call the resulting countable compact set D.
+
+The final shifted distortion equals 1-2^(-v), where
+v=L(x,n)+L_j-log₂(1-B/x), since the unshifted retained prefix
+has reciprocal correction product Jx/y_j=2^(-L(x,n)-L_j).
+Take E to be the image of K_n+{L_j,L_infty : j>=1}+D under this
+map, using the nonnegative carrier K_n. The sum is a compact
+countable union of translates of a null set and hence is null.
+Its positive lower endpoint and finite upper endpoint give the
+claimed interior bounds. The same linear lower count now lies
+inside E simultaneously in the stated phase-by-phase sense.
+
 ## All-depth maximal estimate at almost every real phase
 
 For fixed 0<theta<1 and every 1<p<2, the raw cone has a uniform
