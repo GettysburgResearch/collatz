@@ -45,3 +45,21 @@ For each fixed total degree bound d≥1 there is c_d>0 such that (1) is uniform 
 Indeed the same fixed-size resultant gives log max|coeff(R_w)|≤C_d(1+length(w)+log max(2,height(P))). The degree bound r is uniform in d. Choose c_d and then the short-return cutoff constant sufficiently small for the preceding exp(m/4) estimate, absorbing bounded m in the trivial bound. No union over the polynomials is asserted or needed: even the maximum single-polynomial count has the stated upper bound. Some restriction on varying coefficients is essential. The irreducible P_Q(t,X)=Qt+X−1 tracks the fixed 1→2→1 ordinary cycle modulo Q at at least half its times, for arbitrarily large Q.
 
 There is also a prediction statement at a fixed rational periodic pin ξ of odd denominator d. Measure closeness by Q dividing d(x_j−ξ). For each k≥1 the number of hits in a length-N interval whose next k bits disagree with ξ's native periodic word is O_ξ(k(1+N/(1+log Q))). Indeed, any two hits at separation between k and c_ξ log Q would force the intervening word to fix ξ by the horizontal resultant bound, contradicting a disagreement in the first k bits. Greedily select hits with spacing at least k, losing at most k−1 subsequent indices per retained hit; retained hits then have spacing at least c_ξ log Q, unless k already exceeds that scale when the stated estimate is trivial. This local statement concerns all ordinary trajectories, even when a periodic positive basin or negative rational shadow is involved.
+
+## A whole moving dictionary of rational shadows, with no cardinality loss
+
+Let F contain any rationals r=a/b in lowest terms of height at most H with b odd and coprime to Q. A hit at time j means Q divides b x_j−a. If Q>2H² there is at most one matching rational (by the cross difference). Put D=floor(log₃(Q/(3H²)))−1 and suppose D≥1. In any interval of N starting times at most
+
+    k (1+N/D)
+
+hits can have their next k≥1 parity bits disagree with the actual dyadic shortcut itinerary of their matching r. The bound is independent of |F|, even for the full dictionary and H as large as Q^(1/2−ε) with fixed ε>0. Each hit may instead be assigned an arbitrarily selected matching rational from a time-dependent subset of this dictionary.
+
+Indeed two hits r=a/b and s=c/e separated by d≤D along a word of weight w imply that Q divides
+
+    2^d b c − 3^w a e − C_word b e.
+
+This integer has absolute value at most 3·3^d H²<Q since 0≤C_word≤3^d−2^d by induction. Hence the intervening word transports r exactly to s over the rationals. Its letters are genuine dyadic parities for r: from a dyadic integer, using the wrong letter creates negative binary valuation, which decreases further under either subsequent affine branch and cannot end at the dyadic integer s. Therefore a bad hit and any later hit at gap k≤d≤D cannot coexist. Greedily keeping k-separated bad hits proves the displayed count; for k>D it follows trivially.
+
+The pins can be negative. When both endpoints are also ternary integral, the same exact transport forces the last actual height and s to agree modulo 3^w, because their difference is 3^w times the initial difference divided by 2^d. In particular for a fixed nonzero rational periodic phase the analogous backward bad-hit estimate follows by counting in reverse order: all but O_ξ(k(1+N/(1+log Q))) hits away from the first k trajectory indices have the preceding k bits of that periodic orbit. At those good hits the ternary precision is at least the number of ones in its preceding k letters.
+
+All moduli, including dyadic ones, are permitted in these finite divisibility statements. This is separate from the stationary feedback theorem: arbitrary observation of the current binary residue would disclose the current parity, while an odd-modulus register updates without new digits under division by two.
