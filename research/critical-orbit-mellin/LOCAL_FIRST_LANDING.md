@@ -120,3 +120,46 @@ $U^j n\bmod3^{k+j}$, so it determines all truncated real-word
 Stieltjes transforms at these phases up to inverse depth $k+j$.
 The resulting lower counts are on genuine ordinary convergent sources.
 No assertion about an all-depth itinerary of one fixed source follows.
+
+## Escape distortion survives simultaneous source conditioning
+
+Let $C_*$ be one hypothetical escaping component, let $V_\infty(n)$
+be its whole reciprocal distortion product, and put $V_\infty=0$ on
+periodic components. Write $D(w,r)$ for the source cylinder above,
+$\rho=2^{-A}3^{-k}$, and let $\eta<1$ be a uniform dyadic-shell
+exponent for the number of distinct points on an ordinary orbit.
+There are absolute $c,C>0$ and an onset $R_{C_*}$ such that
+$$
+ \#\{n\in[X/4,X]\cap C_*\cap D(w,r):
+          0<1-V_\infty(n)\le R^{-1}\}\ge c\rho X/R                  \tag{3}
+$$
+for $R\ge R_{C_*}$ and $X\ge C R^{1/(1-\eta)}\exp(C(A+k+1))$.
+Indeed, use the [finite-shell sibling proof](COMPONENT_STIELTJES.md)
+with (1) at each retained unit sibling $s_i$, taking $b=M=s_i$.
+The pre-entry logarithmic correction stays $O(1/s_i)$ uniformly
+over the imposed source conditions. The retained siblings have
+$s_i\ll R^{1/(1-\eta)}$, are incomparable, and have total reciprocal
+weight $\gg1/R$, giving (3). Integration in radius as in that proof
+gives a lower bound $c\rho(\log u)/u$ for the shell mean of
+$V_\infty/(1+u(1-V_\infty))$ restricted to this component and
+cylinder whenever $u$ is large and
+$X\ge C u^{1/(1-\eta)}\exp(C(A+k+1))$.
+All cylinder and scale factors are retained simultaneously.
+
+There is also a pointwise classification obstruction for any two
+distinct merger components, one of which can be the basin of 1.
+Choose one fixed unit $b_i$ in each. For every pair $a,k$ with
+$a\ge1$ and $X\ge C\max(b_1,b_2)\exp(C(a+k+1))$, condition the
+uniform odd source in $[X/4,X]$ on its two residue classes modulo
+$2^a$ and $3^k$. In **every** resulting cell, the conditional probability
+of component $i$ is at least $c/b_i$. Apply the dyadic-cylinder
+version of (1) with $b=M=b_i$. The number of odd sources in the
+cell is at most $X/(2^a3^k)+1$ by the Chinese remainder theorem,
+and $X/(2^a3^k)\gg1$ in the indicated range. Thus every classification
+rule based only on these residues misclassifies a fixed positive
+fraction of the shell when predicting membership in component 1:
+in each cell either assignment errs on one of the two selected
+components. This applies even to a different rule at every $X$.
+It distinguishes the low-digit information missing from a possible
+separating functional from the unrestricted information in the
+ordinary source itself.
