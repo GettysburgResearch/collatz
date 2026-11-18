@@ -30,7 +30,7 @@ For every inverse word of length q, B₀=β_w+A_w B_q on that word's cylinder. H
        ≤ K₀ |I| Σ_(w at t ending in C) A_w
        = K₀ |I| L^q 1_C(t).                                           (1)
 
-Each word bound uses only the original law on E; different words' real intervals may overlap. The sum over all legal positive odd inverse words can include terminal nonunits, which only enlarges the bound when C includes them. The transfer proof gives L^q 1_C(t)→(3/2)h(t)λ(C) with λ ternary Haar probability. To see this directly, apply its positive-test liminf to both 1_C and 1−1_C, whose transfers sum to g_q(t)→(3/2)h(t).
+Each word bound uses only the original law on E; different words' real intervals may overlap. In (1) the word sum is over all legal positive odd inverse words. Including terminal nonunits in that sum only enlarges the probability bound when C includes them. The transfer proof gives L^q 1_C(t)→(3/2)h(t)λ(C) with λ ternary Haar probability. To see this directly, apply its positive-test liminf to both 1_C and 1−1_C, whose transfers sum to g_q(t)→(3/2)h(t).
 
 Average (1) over q. For open I, the joint empirical law and the open-set lower bound give
 

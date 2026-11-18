@@ -72,3 +72,15 @@ Restrict the joint measure to histories on which properties 1–3 hold for every
     O_β((1+k)³ 2^(−(1−ε−β)k)).
 
 Comparing arbitrary interval lengths with the next larger dyadic length gives a Frostman upper bound of every exponent below 1−ε−β for the restricted measure. Intervals covering a Borel set of smaller Hausdorff dimension therefore show its restricted measure is zero. Let K tend to infinity, then choose ε and β arbitrarily small. This proves (1). Applied to the binary logarithm of the residue or to its exponentiation on its bounded range, the Hausdorff-dimension conclusions agree by bi-Lipschitz change of variables.
+
+## A sharper interval gauge on the typical pieces
+
+Paper 102 also supplies a timed estimate for a varying cutoff S≤B. Its Lemma 3 gives O(log B) shortcut steps on a certified descent. Summing its Lemma 4 proof, equation (18), and its initial bad-stage estimate over binary start shells up to B bounds the number of uncertified starts >S by O(B(1+log B)^3 S^(−g)). This uses the proof's bad-source bound, which includes uncertified paths that might eventually cross.
+
+For B=2^k now set S=⌊exp(D√k)⌋ and declare a landing heavy when its mass exceeds B^(−1)exp(D√k). There are at most B exp(−D√k) heavy labels. Their landing probabilities, and those of the uncertified labels above S, are summable over k by the setwise bound if the fixed D is sufficiently large. The octave argument giving (5) still applies on uniform-onset pieces. Formula (4) has only exp(O(√k)) possibilities and each remaining label has mass at most B^(−1)exp(D√k). The restricted measures consequently satisfy
+
+    mass(I) ≤ |I| exp(O(√log(1/|I|)))
+
+for sufficiently small intervals I, with onset depending on the piece. This supplies a countable full-measure union of pieces obeying that bound. It does not assert a bounded density for their sum. [Paper 102 v1, Lemmas 3 and 4](https://rstation.ai/problems/collatz/papers/102/v1)
+
+Full lower Hausdorff dimension also implies that almost every terminal residue, including conditional on any positive-mass minimum, is normal in every integer base and has irrationality exponent exactly two. For a fixed digit block and fixed positive frequency deviation, the exceptional limsup has dimension <1 by the exponential digit-count deviation estimate; take the countable union over blocks, bases and rational deviations. For irrationality exponent ≥2+ε, cover by the usual rational-approximation intervals using any slightly smaller exponent >2, giving dimension <1. The countable rational points have zero mass and Dirichlet's theorem supplies the opposite inequality. The same deductions apply to each canonical real fibre via its separate interval estimate.
