@@ -12,8 +12,9 @@ $$
 $$
 The exponent is less than $4.93$. The constant is absolute given Lau's
 constant, and the starting cutoff may depend on the escaping seed.
-This concerns arbitrarily high floors on a divergent component. A
-bounded nontrivial cycle alone gives no such implication.
+On a positive cycle with sufficiently large odd minimum $m$, the same
+bound holds at $B=m-1$. Thus a floor upper of smaller asymptotic order
+would exclude divergence and leave only finitely many positive cycles.
 
 **Tail and pollution.** Choose the odd state $t$ just after the escaping
 orbit's last odd value at most $B$. Then $B<t\le(3B+1)/2$, and all
@@ -73,6 +74,14 @@ has its entire predecessor basin in $S_B$. These basins are disjoint
 and their finite sum of lower densities is at least
 $2M D_A^{-1}(C_0Y)^{-p}$ by Lau. Substituting $r\asymp B$ and
 $M\asymp B^h$ gives the claim.
+
+For the cycle claim use $B=m-1$ and start at the cycle minimum $m$.
+Among the unit predecessors with exponents between 12 and 17, there
+are two, at most one of which is on the cycle. Choose the other as $r$.
+It is nonperiodic and its entire future stays above $B$. The argument
+for last departures and the stopping cut applies verbatim. Infinitely
+many distinct cycles would have unbounded minima since their state
+sets are disjoint.
 
 Without the finite replay, a weaker inverse-power lower follows by taking
 two increasing unit predecessors per step with $2\le a\le7$ for
