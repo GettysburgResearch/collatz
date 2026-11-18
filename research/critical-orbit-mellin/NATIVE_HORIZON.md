@@ -20,4 +20,32 @@ This locates the second source within an additive \(O(L)\) of a known dilation o
 
 As a precise open target, let \(B_L\) count the ordinary sources in this interval whose first and second blocks *both* belong to \(G_L\) with the displayed terminal weight, imposing the two prefix constraints relative to their respective starts. Does \(B_L\le C2^{(h-\epsilon)L}\) hold for some fixed \(\epsilon>0\)? The statement is weaker than controlling arbitrary terminal weights and omits source windows at unbounded translations. Even a proof would not alone exclude a positive divergent orbit.
 
+## Exact translation average and finite observations
+
+Let \(R\) be the set of representatives \(0\le r<2^L\) of the critical terminal-weight words, \(A=|R|\), and \(b_r=T^L(r)\), using \(T(0)=0\) just for the parity enumeration. For integer shell index \(j\), each \(r+j2^L\) follows the same first word and ends at \(b_r+j3^q\). Hence its two-block count is exactly
+\[
+ B_L(j)=\sum_{r\in R}\mathbf1_R((b_r+j3^q)\bmod 2^L).
+\]
+As \(j\) runs through all \(2^L\) residue classes, the odd multiplier \(3^q\) permutes the shifts. Consequently \(\sum_j B_L(j)=A^2\), whether or not different \(b_r\)'s coincide. For any \(s>0\), the proportion of shells with \(B_L(j)>sA^2/2^L\) is at most \(1/s\). This average does not give the bound for a prescribed shell.
+
+[Exact checker](check_two_blocks.py). It constructs each first word by lifting the source representative through a dyadic parity extension, then evaluates the actual second block. With the histogram flag it also accumulates every ordered pair of a first endpoint and a second residue and checks the translation sum. The independent enumeration flag tests both blocks by direct iteration of the ordinary starts.
+
+| \(L\) | First count \(A\) | \(B_L(0)\) | \(B_L(1)\) | Largest \(B_L(j)\) over every shell |
+|---:|---:|---:|---:|---:|
+| 12 | 85 | 1 | 2 | 6 |
+| 15 | 476 | 10 | 4 | 19 |
+| 18 | 2,652 | 39 | 24 | 50 |
+| 21 | 17,637 | 166 | 144 | not enumerated |
+| 24 | 108,950 | 714 | 715 | not enumerated |
+| 27 | 663,535 | 3,270 | 3,345 | not enumerated |
+
+Exact commands, run from the repository root:
+
+```sh
+python -B research/critical-orbit-mellin/check_two_blocks.py --min-length 6 --max-length 18 --histogram --check
+python -B research/critical-orbit-mellin/check_two_blocks.py --min-length 19 --max-length 27
+```
+
+At (L=27) the translation average is (663535^2/2^{27}), approximately 3280.3. These finite counts do not establish asymptotic cancellation at either fixed shell.
+
 Prior symbolic rotation argument: [fixed-height attack, Proposition 3](../external/mazur-2026/fixed-height-power-saving-attack.md).
