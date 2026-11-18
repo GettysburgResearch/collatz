@@ -74,3 +74,26 @@ A positive ordinary integer in the **dyadic projection** of \(E_\infty\) has pos
 The product is finite by the [distinct-orbit reciprocal bound](../integrated/orbitwise-boundaries/README.md). We have \(h(x)\ge x\) and \(h(Ux)=3h(x)/2^{v_2(3x+1)}\). Choose a state minimizing \((h(x),x)\) in lexicographic order over the entire component. Such a minimum exists since the height is proper. Every legal inverse word ending at any actual future state gives a positive odd ordinary source in the same component. Its relative homogeneous multiplier is the ratio of the two \(h\)-values. That ratio is at least one, and at equality the second coordinate disposes of every strictly smaller offset. The chosen ordinary state therefore lies in \(E_\infty\).
 
 Consequently the dyadic projection contains a positive odd integer exactly when a positive orbit escapes. Formula (1) determines the probability in an independent two-prime sampling law. The arithmetic question is whether that projection contains such an integer.
+
+## Certified finite bounds for unlimited incoming paths
+
+For each finite ternary depth \(Q\) compute \(M_Q\), its maximum over words of at most \(Q\) letters. A second ordinary-density enclosure follows the [residual-pressure calculation](PREDECESSOR_MINIMA.md). On a cylinder with current winning multiplier \(M_Q\), the probability that a deeper word beats it is at most
+\[
+ \frac{467}{500}\,M_Q^{-2}\sum_{|v|=Q,\ v\text{ legal}}J_v^2.
+\]
+Indeed the ternary origin beyond each legal prefix is Haar, and its residual crossing threshold is \(J_v/M_Q\le1\). The quadratic bound in FS-012 applies. For a winner of depth \(j\), multiply this error by \(M_Q\) before summing over the corresponding cylinders in (3). The upper bound simply retains the present winner. For \(j\le Q\) it cannot later gain weight by losing to a deeper word.
+
+Let \(m_Q=\mathbb E M_Q^2\). The increments \(m_{Q+1}-m_Q\) decrease to the probability in (1), hence give independently computable upper bounds. Put \(B_a=(3/2^a)M_Q(I_at)\) on legal branches and zero otherwise, and \(B=\max_a B_a\). Then \(\mathbb E\sum_aB_a^2=m_Q\), as the one-letter tilted probabilities sum to one. Consequently the increment equals \(\mathbb E(1-B^2)_+-\mathbb E(\sum_a B_a^2-B^2)\). As \(Q\) increases, the first term decreases and the second increases, since the sum of all entries except a largest is coordinatewise nondecreasing. The limiting difference is precisely the branch formula for \(2\mu c_*\) in the [minimum renewal theorem](../critical-orbit-mellin/MINIMUM_CONSTANT.md).
+
+At \(Q=16\) the exact integer calculation over all \(43,046,721\) terminal residues yields the following outward-rounded intervals. The last row concerns a different sampling law from the ordinary rows.
+
+| Event | Lower bound | Upper bound |
+|---|---:|---:|
+| Ordinary source is already its own least ancestor | 0.530153 | 0.532745 |
+| No smaller source reaches its first odd successor | 0.256594 | 0.260595 |
+| No smaller source reaches its second odd successor | 0.192113 | 0.195342 |
+| No smaller source reaches its fifth odd successor | 0.064684 | 0.067495 |
+| No smaller source reaches its tenth odd successor | 0.019835 | 0.022532 |
+| Infinite resistance under the tilted law of (1) | strictly positive by (1) | 0.194191 |
+
+Run `python -B research/fixed-floor-shells/check_bilateral_minimum.py --depth 16` for every row through 16. The checker reuses the residual calculation's upward-rounded squared-pressure recurrence. It keeps the cheapest total at each depth and compares its multiplier with the earlier winners by exact rational rank. The first row also reproduces the existing independent FS-012 enclosure. [Integer checker](check_bilateral_minimum.py)
