@@ -52,3 +52,23 @@ There is an unconditional adaptive version of (4). Define `D_B(t)` to be the lar
     q≥D_B(t)+K  implies  |(2/3)g_q(t)−h(t)| ≤ ε t.                      (4)
 
 Choose δ small so that outside S_δ the harmonic bound handles all q≥1. For its finite forward cover take B at least all the initial members. Every eventually periodic covering path has only finitely many states, handled by fixed-root convergence. On each remaining divergent path the ordinary clock j from its selected initial state is at most D_B(t). Equation (3) and `G(k)→1` give the desired bound whenever j and q−j are sufficiently large (use boundedness of h(t)/t). The finitely many earlier roots on each path are again covered by every-depth convergence. Maximize over the finite family. Neither B nor K is claimed effective. Eliminating the target-dependent arrival clock in general is exactly the escape obstruction in assertion (4) of the equivalence list.
+
+## A finite rational test that includes all ordinary targets
+
+For every odd unit t define `g^*_q(t)` by summing J over ordinary x whose *first* U-hit of t occurs at exactly q, with `g^*_0(t)=1`. No all-time cycle decision is needed in this definition. For nonperiodic t it equals g_q(t). For t on a cycle C of odd period d, it equals g_q(t) for q<d and
+
+    g^*_q(t)=g_q(t)−J_C g_(q−d)(t)     (q≥d).                           (5)
+
+Indeed the discarded sources are exactly the whole inverse `(q−d)`-level at t followed by one lap. At every fixed ordinary unit the sequence has a limit by every-depth convergence; it is `(3/2)h(t)` off cycles and `(1−J_C)(3/2)h(t)` on C.
+
+Uniformly over all cyclic targets and all q,
+
+    g^*_q(t)/t ≤ C d(P(t)),                                              (6)
+
+where d denotes ordinary predecessor density. To verify it for q≥1, first consider the nonperiodic members of a given first-hit inverse level of t. They form an antichain: a later nonperiodic member of a path cannot lie after its first arrival on the cycle, and a comparison strictly before that arrival would shorten the second member's first-hit clock. Replace its nonunit sources x by `4x+1` as before. Nonperiodic aliases remain in the same first-hit level. A cyclic alias can only be the unique cycle parent of its successor. At any fixed q the last q−1 steps after that successor determine at most one such cyclic alias: for q≤d the successor has first-hit clock q−1 on C, and for q>d there is none. At most one nonunit x thus maps to a cyclic alias. There is also at most one original cyclic source at this first-hit clock. If m_C is the cycle minimum, the reciprocal cost of these exceptions is `O(1/m_C)` (for m_C=1 use positivity of the integer sources). All other unitized sources are an antichain whose basins lie in P(t), and `J/t≤1/x`. The [linear antichain bound](SINAI_LOW_ANCESTORS.md) and the reciprocal predecessor lower bound `d(P(t))=d(P(m_C))≥c/m_C` yield (6), covering depth zero too. This lower bound is source-qualified on Wren’s theorem. In the other direction the proof of the [existing first-hit Cesàro lower bound](https://github.com/GettysburgResearch/collatz/blob/c2c25dabf3b837a223a46310d0092ef32e2119dd/research/native-pressure-20261118/ORDINARY-DENSITIES.md) counts distinct first-hit levels: a positive fraction `≥d(P(t))−o(1)` of ordinary inputs reach t in `O(log x)` steps and the distortion along their simple paths is bounded absolutely. The same argument applies to g* itself. Thus the fixed-target limit of `g^*_q(t)/t` is comparable to d(P(t)) with absolute constants on every odd unit, including cycles.
+
+As t tends to infinity through cyclic states, `d(P(t))→0`: distinct cycles have disjoint basins so only finitely many have density above any fixed threshold, and their combined states are finite. Thus (6) handles all large cyclic targets uniformly in q. Finite cyclic targets have pointwise convergence by (5). It follows from the preceding equivalences that eventual periodicity of every positive orbit is equivalent both to `sup_q g^*_q(t)/t→0` as t→∞ through *all* ordinary odd units and to the finite-sequence condition
+
+    M_q = max_{1≤t≤3^(q+1), t odd and 3∤t} |g^*_(q+1)(t)−g^*_q(t)|/t → 0.  (7)
+
+Indeed a supremum on the omitted targets costs at most `(2/3)^(q+1)` because every nonnegative g* is bounded by `g_q≤2^q`. All entries in (7) are rational and effectively computable at each finite q. The transfer folds the geometric parameters over their finite ternary period, and iterating t itself for at most q+1 steps decides whether subtraction (5) applies. A proof of convergence of (7), beyond checking any finite initial segment, is still needed to exclude escape. The criterion allows nontrivial cycles.
