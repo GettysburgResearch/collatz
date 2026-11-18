@@ -69,6 +69,10 @@ $\liminf cL_C(c)/\log c>0$ if this one component exists.
 
 ## Logarithmic finite-clock behaviour within the basin of 1
 
+The [ordinary rational-phase avoidance construction](ORDINARY_PHASE_AVOIDANCE.md)
+already places long large-trace segments in any prescribed positive basin,
+including more general valuation words than the ones used here. The
+specialization below gives an exact two-sided finite-clock transform.
 For each large integer $k$ there is a segment $y_0,\ldots,y_k=t$ of
 positive odd integers, all in the basin of 1, with $U(y_j)=y_{j+1}$,
 $y_j\equiv-1\pmod{3^j}$ and $\log y_j\asymp k$ for $k/2\le j\le k$.

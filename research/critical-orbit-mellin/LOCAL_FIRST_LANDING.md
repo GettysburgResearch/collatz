@@ -26,6 +26,10 @@ small absolute constant times $\log(X/M)$ digits. [Paper 12, Theorem 14](https:/
 already gives the first-landing conclusion with no source congruences;
 its proof controls the residue. Fixed arithmetic progression and clock
 laws are also [prior](../profinite-orbit-averages/CLOCK_CHARACTERS.md).
+[Previously routed large-trace examples](ORDINARY_PHASE_AVOIDANCE.md)
+also prescribe a subsequent positive basin using existence of modular
+words. The lower count (1) retains a uniform fraction of the source
+cylinder scale and specifies the first low value and its distortion.
 The additional ingredient for these varying source constraints is
 [paper 48, Lemma 7 and (76)](https://rstation.ai/problems/collatz/papers/48/v2).
 Only a one-sided count is asserted.
