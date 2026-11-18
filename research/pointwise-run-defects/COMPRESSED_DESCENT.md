@@ -62,3 +62,11 @@ by comparing the nonzero integer numerator of x_i−ξ_i to its ordinary size. T
 If (2) fails on simple segments, pass to a sequence with [L−(1+ε)log₂(n+1)]/(B+1)→∞. In particular B=o(L). Make exactly the same short-power absorptions and compatible-period joins as above. The retained large powers still have L_i/(B+1)→∞. The individual congruence now implies log₂(x_i+1)/(B+1)→∞ for every retained boundary, including the final retained block. Since the initial gap costs O(B+1) in log height, the same holds for n; thus B=o(log n) as well. The argument with b_i>0 and X dominant used only the boundary heights, never the minima inside the powers. It therefore applies unchanged. Its exponentially small product bound contradicts the Subspace Theorem because L>(1+ε)log₂(n+1) and B=o(L). This proves (2).
 
 At a strict future minimum on a hypothetical escaping orbit, or at any other phase of that orbit, a parity window of length at least (1+2ε)log₂(n+1) consequently has B bounded below by a positive fraction of its length in every fixed-m description. In contrast, (1) applies also to a self-intersecting segment.
+
+## Allowing the number of powers to grow
+
+For each η>0 there is C_η such that any simple segment with k powered pieces satisfies
+
+    L ≤ C_η exp(η k) (log₂(n+1)+B+1).
+
+Indeed, fix ε=1 and choose m so large that log(1+2 log₂(3/2))/m < η. Split consecutive powers into groups of m (the final group may be shorter), assigning each gap to exactly one group. For a group starting at time t, log₂(x_t+1)≤log₂(n+1)+t log₂(3/2), by the one-step bound on x+1. By (2) its length is at most 2 log₂(x_t+1)+K_m(B_group+1), taking the maximum of constants over all group sizes up to m. The successive end times therefore satisfy an affine recurrence with multiplier 1+2 log₂(3/2). Summing the geometric series and using Σ B_group=B yields the claim; a gap-only segment has L=B. In particular for every simple family with L/(log₂(n+1)+B+1)→∞, the number of powers divided by the natural logarithm of that ratio tends to infinity.
