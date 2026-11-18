@@ -12,7 +12,7 @@ This holds, in particular, under the conditional law given any minimum of positi
 
 The two estimates measure different kinds of concentration. Estimate (2) has a uniform exponent for the full measure. To obtain exponents arbitrarily close to one in (1), the proof first restricts to sets of typical landing histories.
 
-Leen's stopping-time histogram paper explicitly asks whether the terminal residue on the basin of 1 has atoms at positive values. It records that the atom at zero vanishes and reports a numerical correlation-dimension estimate near one. His Brownian theorem supplies existence of the terminal law used here. Neither (1) nor (2) resolves his question about absolute continuity. [Leen, histogram theorem and open problems](https://doi.org/10.5281/zenodo.23252397) · [Leen, Brownian motion in Collatz orbits, terminal law](https://doi.org/10.5281/zenodo.23252395)
+Leen's stopping-time histogram paper explicitly asks whether the terminal residue on the basin of 1 has atoms at positive values. It records that the atom at zero vanishes and reports a numerical correlation-dimension estimate near one. His Brownian theorem supplies existence of the terminal law used here. His question about absolute continuity is addressed in the [separate singularity argument](SINGULAR_FIBRES.md). [Leen, histogram theorem and open problems](https://doi.org/10.5281/zenodo.23252397) · [Leen, Brownian motion in Collatz orbits, terminal law](https://doi.org/10.5281/zenodo.23252395)
 
 ## Inputs at one height
 

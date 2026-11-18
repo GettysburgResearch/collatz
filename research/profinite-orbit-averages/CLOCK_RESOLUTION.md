@@ -10,7 +10,7 @@ For all large X one has Δ_X(q)≪min(1,q/D(X)). Conversely,
 
     q/D(X) → ∞    implies    Δ_X(q) → 1.                              (1)
 
-Thus the two clock residues have their uniform product law up to an error tending to zero for q=o(D(X)). Above that scale a single group character distinguishes the empirical law with probability tending to one. The bounds apply on every fixed proportional source interval of positive length. They leave the regime q comparable to D(X) open.
+Thus the two clock residues have their uniform product law up to an error tending to zero for q=o(D(X)). Above that scale a single group character distinguishes the empirical law with probability tending to one. The bounds apply on every fixed proportional source interval of positive length. The final section treats the intermediate ratios using a separate singularity result.
 
 The upper bound uses Leen's quantitative estimate on the coalescence of consecutive sources. The lower bound uses his diffusive tightness at the first global minimum, tightness of the minimum and the bounded terminal residue. His earlier histogram theorem identified continued-fraction near-periods in a single total stopping clock on the basin of 1. His Brownian theorem also proves independence of the global minimum and the diffusively rescaled descent clock. Here the events are discrete and resolve both clock coordinates modulo a growing q. [Synchronization estimates](https://doi.org/10.5281/zenodo.23268751) · [Brownian motion in Collatz orbits, main theorem, clock dictionary and terminal residue](https://doi.org/10.5281/zenodo.23252395) · [Stopping-time histogram, Theorems A–C](https://doi.org/10.5281/zenodo.23252397)
 
@@ -41,3 +41,17 @@ If q/D(X)→∞, a sequence of arcs whose angular lengths tend slowly to zero ca
 ## Extremal exponent
 
 Always D(X)≤L^(1/4). At X=⌈exp(s⁴)⌉ along the convergent denominators, D(X)∼L^(1/4). Thus the exponent 1/4 is attained along an infinite sequence of source cutoffs, with both asymptotic conclusions above. Rhin's bound gives t≪s^13.3, hence D(X)≫L^(5/143) for every X. More generally, if log₂3 has irrationality exponent two, t≤s^(1+o(1)) and D(X)=L^(1/4+o(1)) throughout. The continued-fraction statement and the two unconditional bounds require no assumption about that irrationality exponent.
+
+## The critical ratios after identifying the residue law
+
+The [singularity theorem for the natural terminal residue](../terminal-residue/SINGULAR_FIBRES.md) settles the remaining zero-distance question:
+
+    Δ_X(q(X)) → 0  if and only if  q(X)/D(X) → 0.                       (3)
+
+This does not give a closed form for the distance at a finite positive limiting ratio. To prove necessity it suffices, by (1), to pass to a subsequence with 0<ε≤q/D(X)≤C. Take a further subsequence with s/q→a and (sc−p)√L/q→b, both finite. Since D(X)→∞, q→∞. The event m=1 has positive limiting probability by ordinary predecessor positivity. On this cell, let V denote the limiting terminal residue. By Leen's joint terminal Brownian theorem, (J−L/d)/√L tends to a centered Gaussian G of strictly positive variance, independent of V. This follows also from the exact clock dictionary and the endpoint theorem since the bounded R contributes o(1) after normalization. In the same limit n/X is uniform on [0,1] and independent of (G,V): difference the cumulative laws with source cutoffs uX, first for each fixed 0<u≤1. Their logarithmic center changes by O_u(1), and their conditional cell frequency tends to the same positive value. For a fixed proportional shell the uniform variable is instead uniform on its defining real interval.
+
+For every fixed nonzero integer l the modulus of the expectation of the lth power of the detecting character conditional on m=1 thus converges to
+
+    |E exp(2πi l b G)| · |E exp(2πi l a log₂ U)| · |E exp(2πi l a V)|,
+
+where U is the corresponding uniform real variable. The deterministic phase omitted here has modulus one. The Gaussian factor is nonzero. The uniform-variable factor is also nonzero: integrating u^(iξ) gives an endpoint difference of terms with different absolute values, divided by 1+iξ. If a=0 the last factor is one. Otherwise V modulo 1/a has a singular distribution, so uniqueness of Fourier coefficients on the circle supplies some l≠0 for which the last factor is nonzero. Under the product reference, the same lth character expectation equals zero once q>|l|, since the primitive pair (s,p) gives a character of order q. The positive mass of the m=1 cell now precludes Δ_X(q)→0. The subsequence argument proves (3), and shows that for every ε>0 the distance is bounded away from zero when q≥εD(X) at sufficiently large X. [Leen, joint clock and residue theorem](https://doi.org/10.5281/zenodo.23252395) · [Positive density of the predecessor basin](../external/mazur-2026/README.md)
