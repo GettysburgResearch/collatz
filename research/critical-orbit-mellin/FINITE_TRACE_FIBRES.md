@@ -30,3 +30,27 @@ $$
  \Pr_t(E,B_q\in I,X_q\in D)\le K|I|L^q{\bf1}_D(t)\longrightarrow K|I|b(t)\lambda(D).
 $$
 Combine with (1). The joint stationary law would be dominated by a finite multiple of Lebesgue times Haar on intervals times ternary cylinders, hence on all Borel sets. This contradicts its established joint singularity. The proof transfers that singularity to each finite-trace root individually. It gives a lower bound on moving tail observations, without asserting their every-depth weak convergence.
+
+## Compact null support at finite trace
+
+For every finite-trace unit $t$, the closure of the real offsets of **all** its legal infinite codes is exactly $\operatorname{supp}F_t$; it is compact and Lebesgue-null. This extends the [positive integer support result](../terminal-residue/SUPPORT.md). Compactness follows from the uniform bound on $B_0$ at this fixed $t$. We give the mass lower bound proving the closure and nullity assertions.
+
+First $F_s([0,\varepsilon])\gg\varepsilon$ for $0<\varepsilon\le1$, uniformly at all finite-trace units $s$. Choose an exponent $a$ within six above $\max(1,\lceil\log_2((1+3C)/\varepsilon)\rceil)$ sending $s$ to a unit child. The bounded-real floor there puts mass at least $cJ_a\gg\varepsilon$ in this interval on returning to $s$.
+
+Consider any finite prefix with unit terminal phase of any legal infinite code at $t$. Write $r=\beta_w=\sum_{j=1}^kP_j/3$, $r_i=\sum_{j\le i}P_j/3$, $d_i=r-r_{i-1}$ for $i\le k+1$. For each $j\ge i$, the changed-unit sibling from the [record-pole estimate](RECORD_POLE_RIGIDITY.md) gives mass $\gg P_j$ within $O(d_i)$ of $r$, by the bounded-real floor. These departure events are disjoint. Thus $F_t([r-C_1d_i,r+C_1d_i])\gg d_i$. Given $0<\varepsilon\le1$, if $r\le\varepsilon$ use the small real floor at $t$. Otherwise choose $i$ with $d_i>\varepsilon\ge d_{i+1}$. If $d_{i+1}\ge\varepsilon/2$, the last estimate suffices. Otherwise $P_i/3=d_i-d_{i+1}>\varepsilon/2$; at the original phase after $i$ letters use its small real floor with argument $\varepsilon/P_i<1$. This contributes $\gg\varepsilon$ within $2\varepsilon$ of $r$, since $|r_i-r|\le\varepsilon$. We have proved, with absolute constants,
+$$
+ F_t([r-C_2\varepsilon,r+C_2\varepsilon])\ge c_2\varepsilon .
+$$
+The estimate extends by closure to every possible infinite offset and its closure, as the partial sums on that code converge. Hence each such point belongs to the support; the opposite inclusion follows since the law is carried by these codes' image up to null sets. Every support point has positive upper symmetric Lebesgue derivative of $F_t$, while that derivative vanishes Lebesgue-almost everywhere by the pure singularity just proved. The whole compact support has Lebesgue measure zero.
+
+## Full dimension of bounded legal offsets at every phase
+
+At **every** ternary unit $t$ there is a bounded set of real offsets of legal infinite codes of Hausdorff dimension one. At each finite-trace $t$ its compact null fibre support therefore has Hausdorff dimension one. This is a statement about the support and does not identify the lower dimension of the full probability measure at all such phases.
+
+Here are the inputs to a uniform real Cantor construction. With $q$ sufficiently large and $A=2q$, every unit phase $s$ admits at least
+$$
+ c(4/3)^q/\sqrt q
+$$
+distinct legal length-$q$ inverse words of this clock, with offset $\beta_w\le B$ and unit child, for absolute $B,c$. Indeed at the selected mark of [paper 12, Lemma 7, (39)](https://rstation.ai/problems/collatz/papers/12/v1) retain its stated bounded real offset and central total. One additional ternary digit suffices to prescribe a unit child: take the spatial target residue for $\beta_w$ equal to $s-3^q2^{-A}$ modulo $3^{q+1}$. To reach the selected mark from any unit insert one bounded outer exponent, as in the [central total spreading calculation](../native-pressure-20261118/EVERY-DEPTH.md). Its bounded clock shift keeps the remaining total within the required central range, and it changes the real cutoff by only a fixed factor. The resulting normalized word mass is $\gg\Pr(S_q=2q)\gg1/\sqrt q$; each word contributes $J=(3/4)^q$. Irrational targets obey the very same finite cylinder statement.
+
+At a fixed total, $2^A\beta_w$ is an integer and distinct words have distinct such numerators, by recovering the last exponent from its dyadic valuation after subtracting $3^{q-1}$ and then iterating. All numerators lie in the class $2^A s\bmod3^q$, so distinct offsets are separated by at least $J$. At every unit node select a fixed number $M_q\gg J^{-1}/\sqrt q$ of its available words with offsets separated by at least $(2B+2)J$, by keeping a fixed fraction of the sorted points. Repeat from each selected unit child. All continuation offsets lie in $[0,B/(1-J)]\subset[0,2B]$ for large $q$. The constructed nested sibling real intervals therefore have a gap at least $J$ in their parent's scale, contraction exactly $J$, and at least $M_q$ children independently of the node. The uniform child measure gives dimension at least $\log M_q/(-\log J)$, by the elementary mass distribution bound on these separated levels. Fix a common $B$ and let $q\to\infty$; the resulting sets are all in $[0,2B]$ and their dimensions approach one, proving the claim.
