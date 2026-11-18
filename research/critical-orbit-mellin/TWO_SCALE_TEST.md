@@ -60,3 +60,21 @@ $$
 Here $H_2$ is the binary entropy. Large cycle minima therefore have a summable total lap distortion even if there are infinitely many of them.
 
 The [period-averaged endpoint identity](CYCLE_ENDPOINT_MEAN.md) evaluates the coefficient after averaging in the logarithm of the near-one threshold. The [exact word replay](check_two_scale.py) checks all 4,330 capped words at depths one through four, including their unique target representatives and their physical forward itineraries. Those finite depths do not determine the two limits.
+
+## One sequence with a four-case limit
+
+The [explicit simple-path estimate](CYCLE_ENDPOINT_MEAN.md) permits the threshold $1-2^{-32}$. Put
+$$
+ C_Q={\bf1}_{D_Q(1-2^{-32})>0}
+       +\frac1Q\sum_{w:\,t_w>1}\frac{J_w F_w}{t_w^2},
+$$
+using the finite exponent cap in both terms. This is a finite nonnegative rational at each depth, without a threshold parameter. Its limit exists and equals
+$$
+ {\bf1}_{\{\text{a nontrivial positive cycle exists}\}}+
+ \delta\,\mathbb E\big[V_\infty(1-V_\infty)\,{\bf1}_{\rm escape}\big],
+ \qquad \delta=\tfrac12\log(4/3).
+ \tag{2}
+$$
+Here the expectation is the limiting normalized odd-source law. Universal convergence is equivalent to $\liminf C_Q=0$. More precisely, the four possible cases give values in $\{0\}$ (all reach 1), $(0,\delta/4]$ (escape only), $\{1\}$ (other cycles only), and $(1,1+\delta/4]$ (both obstructions).
+
+The explicit estimate proves that a positive first term at even a single depth certifies a repeated odd input on a nontrivial cycle. Conversely one such cycle produces a positive entry at every sufficiently large depth by following it for enough complete laps. This part of the sequence is an ordinary finite cycle search. For the second term apply the [whole-orbit cone law](HARMONIC_OFFSET_CONE.md) with the continuous test $z\mapsto z$. That law controls the normalized simple paths. The discarded repeated-path weight, summed over all targets, is $o(Q)$ by the [cycle decomposition of the raw cone](TRIADIC_OFFSET.md): for a repeated path its endpoint belongs to a cycle of period at most $Q$, whose total is bounded by $O(Qp_C)$ and is $O_C(1)$ for every fixed cycle. The term at target 1 is bounded independently of depth. The upper exponent cutoff costs at most $Q(3/4)^Q$ before normalization, since $F_w/t_w<1$. These facts give (2). Its second term is positive exactly under escape by the positive component masses and the strict inequalities $0<V_\infty<1$ on any escaping orbit. The trivial inequality $v(1-v)\le1/4$ gives the stated gap between the cycle and no-cycle ranges. Establishing that the limit takes the first of the four values remains the pointwise problem.

@@ -88,3 +88,5 @@ $$
  \le 1-\lim_X \mathbb E Z_X\le 1-p_1 .
 $$
 Thus its limiting mean equals **one exactly when all positive integers reach 1**. This is a forward finite-clock version of the two-obstruction question and requires no cycle classification to calculate the observable. A nonempty offending component has positive density by the predecessor lower bound. The formula supplies no bound forcing that limiting mean to one. In the [period-averaged endpoint coefficient](../critical-orbit-mellin/CYCLE_ENDPOINT_MEAN.md), the same $\lambda_C$ instead appears through its reciprocal weighted by the basin probability.
+
+The [replay's logarithmic mode](check_distortion_cutoff.py) gives $1.009685\le\mathbb E Z_X\le1.009686$ for the same $X=2^{22}$ shell at $q=106$. Exactly 1,024,279 of the 1,048,576 odd starts reached 1 by that clock. The bound of one in this section concerns the limiting mean; a finite shell can exceed it.
