@@ -65,7 +65,7 @@ def require(test):
         raise AssertionError("failed rational polytope certificate")
 
 
-def check(a, b, method):
+def check(a, b, method, loss=0):
     c = F(485, 306)
     require(3**306 < 2**485)
     gamma = c-1
@@ -80,7 +80,7 @@ def check(a, b, method):
     domain = [g, j, m, n, p]
     require(lower((g, j), domain) > F(1, 10))
 
-    full = 1+g+j-a*m-b*n-2*p
+    full = 1+g+j-a*m-b*n-2*p-loss
     transport = [term-2*m-p for term in (g, drop, (1+g)/c)]
     if method == "transport":
         require(lower(transport, domain) > F(1, 10))
@@ -89,7 +89,7 @@ def check(a, b, method):
         require(lower([j-2*n-2*p, j-g], domain) > F(1, 10))
         return 1
     if method == "full":
-        require(lower([full], domain) > 1)
+        require(lower([full], domain) > (F(1, 10) if loss else 1))
     else:
         margin = lower(transport, domain+[-full])
         require(margin is None or margin > F(1, 10))
@@ -114,3 +114,5 @@ if __name__ == "__main__":
     for a, b, method in ((2, 2, "full or transport"), (2, 3, "full or transport"),
                         (3, 2, "full"), (2, 4, "transport"), (4, 2, "two sums")):
         print(a, b, method, check(a, b, method))
+    for a, b, method in ((2, 3, "full or transport"), (3, 2, "full")):
+        print(a, b, "one normalized unit of gap error", check(a, b, method, loss=1))
