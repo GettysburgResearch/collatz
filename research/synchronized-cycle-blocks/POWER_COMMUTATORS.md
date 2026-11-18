@@ -15,6 +15,8 @@ both powered blocks have odd densities different from the whole cycle's,
 the right side improves to ln 2 / ln 3. If at least one density differs,
 the right side is at least ln 2 / (2 ln 3).
 
+Fourier Wren derives the powered-block brackets and two-block commutator in paper 57. [Prior results and scope comparison](PRIOR_WORK.md)
+
 ## Exact difference
 
 For a forward word W put B_W=2^|W|, A_W=3^ones(W), and let C_W be its

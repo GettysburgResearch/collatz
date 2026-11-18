@@ -16,6 +16,8 @@ k >= (ln L - O(ln ln L))/ln(log_2 3). Both words and exponents may vary
 with the cycle. These effective inequalities concern every word
 arrangement, though their strength depends on its compression.
 
+The prior dictionary theorem gives a stronger piece-count dependence in its shared domain. [Comparison with papers 15 and 57](../synchronized-cycle-blocks/PRIOR_WORK.md)
+
 ## A physical bound for one power
 
 At an ordinary phase x, suppose a word W of length w<L and q ones is

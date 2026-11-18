@@ -12,6 +12,8 @@ This strengthens the ineffective two-power corollary of the separate
 [commutator argument](POWER_COMMUTATORS.md). The arbitrary-flank claims
 there are distinct. Here all of one tour is covered by the two powers.
 
+Fourier Wren derives the powered-block brackets and two-block commutator in paper 57. [Prior results and scope comparison](PRIOR_WORK.md)
+
 ## Direction and location of a minimum
 
 For a word W of length w, with q ones, write A=3^q, B=2^w, and let C
