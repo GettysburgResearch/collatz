@@ -27,3 +27,17 @@ This proves (1), including infinite inverse levels by monotone convergence.
 Suppose `y_j=U^j(n)` is divergent. For each fixed B, eventually its future exceeds B and the set L in (1) stabilizes: the finitely many low states that ever enter the spine have all joined by some finite j, and all their subsequent low visits end after finitely many steps. For every such j, the unaccounted part of `g_q(y_j)/y_j` is at most `C_r ε(B)^θ` for all q beyond the explicitly defined D, uniformly in j. In particular it tends uniformly to zero as B grows in this order of limits. There is no estimate here allowing q≤D in (1).
 
 The finite sum itself can persist. In fact `g_{q+j}(y_j) ≥ J(n,j) g_q(n)`, and `y_j/J(n,j)=n ∏_{i<j}(1+1/(3y_i))`. This product has a finite positive limit along a divergent orbit by the reciprocal-orbit bound in [the critical Mellin proof](https://github.com/GettysburgResearch/collatz/commit/f702a03). Hence any positive limsup of `g_q(n)` propagates a linear-size subsequence of density values to every y_j. Bounding the residual in (1) supplies no decay for this inherited mass.
+
+## A sharp age threshold on a divergent spine
+
+In fact a true sublinear pointwise estimate holds before the age of the spine. For every divergent odd orbit `y_j=U^j(n)`,
+
+    lim_{K→∞} sup_{j≥q+K, q≥0} g_q(y_j)/y_j = 0.                  (2)
+
+Fix B. There are finitely many odd s≤B. For each whose orbit ever meets the spine, fix one meeting `U^h(s)=y_i`. Choose I larger than all these i, all i−h, and the indices of every visit of the spine to `[1,B]`. Enlarge I if necessary so that no point in any of the finitely many pre-meeting segments is y_j with j≥I. If j−q≥I, all of the following hold. No U-path of length q to y_j can contain a low state, since the distance of any such s to y_j is `h+j−i>q`. If a low state reaches any member of the q-level, that member must be `y_(j−q)`, since the last q steps from the low state all occur after its chosen meeting. These observations also cover all the unit aliases from the proof of (1), for q≥1. Remove the single possible unit exception from A′. Every predecessor basin remaining avoids `[1,B]` forever. The previous capacity proof now gives
+
+    g_q(y_j)/y_j ≤ 6/y_(j−q) + C_r ε(B)^θ.                         (3)
+
+For q=0 the left side is exactly `1/y_j`, so the estimate continues to hold. Since `inf_{i≥K} y_i→∞`, take K→∞ and then B→∞ to get (2).
+
+At q=j the inclusion of n in the inverse level gives `g_j(y_j)/y_j ≥ 1/[n P_∞(n)]` for all j, where `P_∞(n)` is the finite correction product above. For any fixed lag k≥0 the same argument from y_k gives `g_{j−k}(y_j)/y_j ≥ 1/[y_k P_∞(y_k)]` for j≥k. Thus diverging lag in (2) is necessary. More generally, a uniform lower bound for `g_s(y_1)` over s≥1 would give a positive lower bound on `g_{j+k}(y_j)/y_j` simultaneously for every j≥1 and every k≥0. The q=j sharpness is independent of that additional analytic input.
