@@ -1,0 +1,28 @@
+# Agreement outside finitely many narrow intervals on ordinary orbits
+
+**Proposed.** Fix $k$. Let $u=x_t$ lie on one fixed nonperiodic positive ordinary shortcut orbit and let $v$ be another positive ordinary source, with $v\to\infty$, $\log u=o(\log v)$, whose iterates never coincide at equal times with those of $u$. If the first $N$ parity letters agree outside at most $k$ intervals of total length $o(N)$, then
+$$
+\limsup N/\log v\le1/\log(4/3).
+$$
+No balance or pointwise bound on the discrepancies inside the intervals is imposed. In particular, for every $L>\log(3/2)/\log(4/3)$ and all $t=t(q)$ with $\log x_t=o(q)$, the first $N=\lfloor Lq\rfloor$ parities starting at $t,t+q$ cannot have this agreement along unbounded $q$. For each fixed $k$, the *minimum total width* of $k$ intervals covering those mismatches has positive lower limit after division by $q$ (or is infinite when no cover exists). When each interval has zero net excess of ones, the sharper constant $1/\log2$ in [the balanced-interval argument](ORDINARY_PREFIX_RETURNS.md) applies.
+
+Use the notation and telescoping equation (1) from the [ordinary return proof](ORDINARY_PREFIX_RETURNS.md) for the paths from $u,v$. Suppose $v(3/4)^N\le e^{-\epsilon N}$ for some fixed $\epsilon>0$ along a counterexample subsequence. Trim each nonempty discrepancy interval to its first and last actual disagreement. Pass to a subsequence with fixed count and convergent normalized starts $m/N$. Merge successive intervals whose starts have the same limit, including the intervening matching letters. Total width is still $o(N)$ and consecutive starts now have gaps $\gg N$. With no interval, $2^N\mid v-u$ directly contradicts the assumed height bound. By the clean-run argument of the balanced-interval proof, $\log v\gg N$ after passage to a subsequence: otherwise the initial heights are subexponential, a clean run of length $b$ requires the nonzero entering difference to be divisible by $2^b$, and finitely many clean runs and $o(N)$ exceptional letters cannot cover $N$ positions.
+
+For an interval $[m,m+b)$ write its affine maps as $(3^s x+a)/2^b$ and $(3^{s'} x+a')/2^b$, and its entering cumulative excess in the second word as $d_m=s'_m-s_m$ (here $s_m,s'_m$ are the *prefix* sums). The interior group in the telescoped return equation equals
+$$
+ Y_m=M_m(A_m x_{t+m}+B_m),\qquad
+ A_m=3^{-d_m}(1-3^{s-s'}),\qquad B_m=3^{-d_m-s'}(a'-a).
+$$
+This follows by subtracting the endpoint maps and subtracting the normalized entering difference. Its exact 2-valuation is $m$ because the first disagreement contributes a term of valuation $m$ and all later summands have higher valuation. Both $A_m,B_m$ have rational logarithmic height $o(N)$ since $|d_m|$ is bounded by the total exceptional width and $|a|,|a'|\le b3^b$. Pass to a subsequence on which the positions of the groups with $A_m=0$ are fixed. Write $G=u-v$.
+
+Use the vector $X=(G,Y_{m_1},\ldots,Y_{m_h})$ of S-integers at $S=\{2,3,\infty\}$. Its coordinate sizes have heights $O(N)$, and $|G|\asymp v$, while all $|Y_m|\le u\exp(o(N))=\exp(o(N))$ by the orbitwise reciprocal product. Thus its projective logarithmic height is $\asymp N$ by taking the ratio of $G$ to any $Y_m$. At 2 use the sum-error form $G-\sum Y_m$ of absolute value at most $2^{-N}$, along with the $Y_m$ coordinates. At 3 use coordinate forms. At infinity keep $G$, the $A_m=0$ coordinates, and, for the ordered remaining groups, their first normalized coordinate $D_m=Y_m/A_m$ followed by differences of successive $D_m$. All three local systems are bases and the moving form coefficients have rational logarithmic height $o(N)$.
+
+For $A_m=0$ the full coordinate product costs $\exp(o(N))$, by the S-unit property of $M_m$. The other groups have joint finite-place coordinate factor at most $\exp(o(N))/M_m$. At infinity $D_m=M_m(x_{t+m}+B_m/A_m)$, so the telescoping difference bound in the ordinary proof gives
+$$
+ |D_m-D_l|/M_m\le \exp(o(N))(3/2)^{m-l}.
+$$
+For the first retained group $|D_m|/M_m\le u\exp(o(N))(3/2)^m$. The Subspace Theorem product is therefore at most $v(3/4)^N\exp(o(N))$, exponentially small.
+
+Here the hyperplanes move, so use Ru–Vojta in the form of Vojta's Theorem 7.7. Its coefficient field on a coherent subsequence consists of rational functions of moving coefficient ratios with fixed rational coefficients; all of its nonzero elements have logarithmic height $o(N)$ where defined. No relation among our coordinates with such coefficients can hold on an infinite coherent subsequence. In fact ordinary size forces the coefficient on $G$ to vanish, since multiplying or dividing by a nonzero rational of height $o(N)$ costs $\exp(o(N))$. Among the remaining terms the exact 2-valuations $m_i$ are $\gg N$ apart while any coefficient has valuation $o(N)$. The smallest cannot cancel. This also rules out a local form vanishing identically along a subsequence.
+
+For clarity, apply that theorem with the collection of the three local bases as its subsets of hyperplanes. Each moving hyperplane has height $o(h(X))$. The sum of the local Weil functions for the indicated bases is at least $(h+1)h(X)+\epsilon N-o(N)$: the product of the forms is exponentially small, $\sum_{w\in S}\log\|X\|_w\ge h(X)$ for S-integers, and the sums of coefficient-norm logarithms cost only $o(N)$. This violates the theorem with a sufficiently small fixed exponent since $h(X)=O(N)$. This proves the first claim. For the shift application, the same clean-run argument gives $\log v\gg q$ from $\log u=o(q)$, so $\log u=o(\log v)$ and $\log v\le q\log(3/2)+o(q)$. [Vojta, *Nevanlinna theory and Diophantine approximation*, Theorem 7.7, pp. 553–554](https://library.slmath.org/books/Book37/files/vojta.pdf)

@@ -1,0 +1,50 @@
+{
+  "physical": {
+    "base": 6,
+    "depths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "distinct_integral_sources": 175,
+    "roots": 14
+  },
+  "renewal": [
+    {
+      "base": 32,
+      "cases": 3,
+      "min_first_crossing_floor_1e9": 259051870,
+      "min_occupation_floor_1e9": 895602857
+    },
+    {
+      "base": 64,
+      "cases": 3,
+      "min_first_crossing_floor_1e9": 272575609,
+      "min_occupation_floor_1e9": 1049263551
+    },
+    {
+      "base": 128,
+      "cases": 3,
+      "min_first_crossing_floor_1e9": 303028612,
+      "min_occupation_floor_1e9": 1265653335
+    },
+    {
+      "base": 256,
+      "cases": 6,
+      "min_first_crossing_floor_1e9": 325924992,
+      "min_occupation_floor_1e9": 1439280780
+    },
+    {
+      "base": 512,
+      "cases": 6,
+      "min_first_crossing_floor_1e9": 359450342,
+      "min_occupation_floor_1e9": 1640951623
+    }
+  ]
+}
