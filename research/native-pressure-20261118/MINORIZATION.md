@@ -107,3 +107,12 @@ positive ordinary odd target has bounded conditional means by the
 separate antichain argument.
 
 [Pointwise bounds on positive ordinary odd targets](ORDINARY-DENSITIES.md).
+
+## Prior atom theorem
+
+El Jaouhari's October 2026 Theorem A already proves the uniform unit
+atom floor and existence of the scaled least-atom limit. The prefix
+transfer argument here gives another derivation and supplies the
+essential-lower representative used for ordinary traces.
+
+[El Jaouhari, *Uniform Syracuse atoms and exact density regularity with quantitative Collatz predecessor counts*](https://doi.org/10.5281/zenodo.23377671).

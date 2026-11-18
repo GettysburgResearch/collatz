@@ -73,3 +73,9 @@ in n and a, with cost O_D(k^(−D)). Telescope through a bounded number
 n separately. This proves (1).
 
 [Tao, §6, including stopping decomposition and Corollary 6.3](https://arxiv.org/html/1909.03562v7#S6).
+
+Earlier work proves the stronger estimate summed over all valuation
+totals. The present argument records the single-slice precision used
+by the terminal construction, with the same conditioning mechanism.
+
+[Prior averaged joint-mixing statement](https://rstation.ai/problems/collatz/papers/5/v3).

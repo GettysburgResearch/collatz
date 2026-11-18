@@ -67,3 +67,10 @@ python -B experiments/native-pressure-20261118/crosscheck.py /tmp/native-collisi
 ```
 
 [Exact finite intervals and collision numerators](../../reports/native-pressure-20261118/collisions.json).
+
+El Jaouhari previously proved the sharp L^p range and quantitative
+quadratic energy bounds for the ternary laws, with alternative moment
+arguments and upper-tail asymptotics developed subsequently.
+
+[El Jaouhari, October 2026](https://doi.org/10.5281/zenodo.23377671).
+[Ternary Syracuse laws, Theorems on moment growth](https://rstation.ai/problems/collatz/papers/9/v1).

@@ -84,3 +84,12 @@ bound in (1) with c=exp(−D/3)/874.
 
 [Mazur, natural-density almost-boundedness in logarithmic time](https://www.proofatlas.ai/formalizations/natural-density-log-time-collatz/).
 [Mazur, positive lower density for fixed targets](https://proofatlas.ai/papers/positive-lower-density-collatz-predecessors/paper-v1.pdf).
+
+Valbuena's earlier canonical trace gives existence and an exact
+basin formula for the ordinary Cesàro limit. The later first-landing
+paper uses the unit atom floor to dominate all finite levels by that
+trace. The bounds here are alternate consequences with the indicated
+inputs.
+
+[Valbuena, Theorems 8, 14 and 16](https://doi.org/10.5281/zenodo.23025885).
+[First-landing bounds, known Theorem 6 and Corollary 7](https://rstation.ai/problems/collatz/papers/12).

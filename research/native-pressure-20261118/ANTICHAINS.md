@@ -89,3 +89,11 @@ below 32X. Now 1/R_a≥1/(Ca) and X may be any sufficiently large real,
 so the lower density obeys (1). Finite subsets establish the assertion
 for arbitrary A by monotonicity. In particular their harmonic sums have
 a common upper bound since every ordinary density is at most one.
+
+The individual a^(−2−ε) estimate and bounded nonperiodic seed choice are
+also present in earlier work, and the later reciprocal bound gives a
+stronger linear antichain inequality directly by disjointness. The
+maximal-function argument above is an alternate derivation.
+
+[Prior subquadratic regularity and predecessor bound](https://rstation.ai/problems/collatz/papers/9/v1).
+[Prior reciprocal bound for all X≥a](https://rstation.ai/problems/collatz/papers/10/v1).

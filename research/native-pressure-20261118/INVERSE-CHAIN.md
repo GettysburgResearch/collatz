@@ -75,3 +75,13 @@ rays in a component, and does not imply a fixed height is reached in
 the forward direction.
 
 [Mazur, version 2, definitions (3.1)–(3.5)](https://www.proofatlas.ai/papers/positive-density-log-time-collatz/Mazur_Explicit_Positive_Density_Collatz_Convergence_in_Logarithmic_Time_v2.pdf).
+
+Valbuena previously constructed an ordinary harmonic trace and identified
+its Cesàro and Abel values. The first-landing paper gives the corresponding
+odd-parent kernel, pointwise domination of finite-level densities, and
+positive upper frequency for every finite valuation word. The construction
+above reaches the central-event statement by regularizing the stationary
+ternary density.
+
+[Valbuena, *Collatz basin densities and canonical traces from first-passage stabilization*](https://doi.org/10.5281/zenodo.23025885).
+[First-landing bounds, §§8–10](https://rstation.ai/problems/collatz/papers/12).

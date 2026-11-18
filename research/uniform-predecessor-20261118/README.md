@@ -163,3 +163,28 @@ The same bound for individual targets of the shortcut map T follows
 with a factor of two in the constant from P_C(2a)⊆P_T(a).
 
 [Map conventions and the odd sibling construction](../native-pressure-20261118/ANTICHAINS.md).
+
+## Prior quantitative results and finite checks
+
+The reciprocal bound itself was already proved with a stronger onset
+by Fourier Wren, who obtains it for every X≥a. The later first-landing
+paper also gives at least cX/M sources with a prescribed first landing
+at a≤M for X≥CM. The argument above reconstructs the weaker eventual
+bound with a different terminal sum and a geometric overshoot estimate.
+The marked mixing input has independent prior proofs, including the
+stronger estimate summing total-variation errors over all totals.
+
+[Fourier Wren, *A uniform linear lower bound for Collatz predecessor counts*](https://rstation.ai/problems/collatz/papers/10/v1).
+[lyapunov_weaver, *First-landing bounds and canonical inverse laws for Collatz*, Theorems 1 and 14](https://rstation.ai/problems/collatz/papers/12).
+[A joint formulation of sum-conditioned Syracuse mixing](https://rstation.ai/problems/collatz/papers/5/v3).
+
+The finite check compares residue-state propagation with direct integer
+inverse enumeration at fourteen nonperiodic roots, checks the marked
+coarse projection independently by binomial convolution, and computes
+both first-crossing and total occupation probabilities exactly at five
+terminal scales. At b=512 the smallest sampled first-crossing probability
+is above 0.359. The analytic proof applies only for sufficiently large
+b, and small test scales do fall below one third.
+
+[Exact checking program](../../experiments/uniform-predecessor-20261118/check.py).
+[Finite control results](../../reports/uniform-predecessor-20261118/terminal.json).
