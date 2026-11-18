@@ -228,3 +228,76 @@ shows its length plus d is at least eta L. Thus all four lengths
 are eventually at least eta L/2. Dividing by the bounded exponents
 produces a rising root of width >=eta L/36 and a descending root
 of width >=eta L/10.
+
+## Four powers with a quartic or quintic minimum-containing descent
+
+In any growing family of four powers covering all but o(L) positions,
+the descent containing the global minimum has exponent at most **three**.
+Thus the descending root in the preceding conclusion actually has width
+at least eta L/6 eventually. Exact four-factor covers with a quartic or
+quintic minimum-containing descent are at most finite, ineffectively.
+
+Suppose its exponent is d=4 or 5 and normalize by its exit height H.
+The sweep gives L=O(H) since the four gaps have total length o(L).
+The two local bounds dcp<=v+H and p/H>=1/gamma+o(1) for this descent
+force its normalized entry height to be at least
+F(d)=1+d(d-1)c/gamma-d in the limit. Fewer than three rises give upper
+bound A_2²<F(4), so all other powers are rising. Label them 1,2,3
+in cyclic order after the descent, with exponents e_i, widths w_i
+and odd counts q_i. For d=5, A_2² A_3<F(5) requires all three squares.
+For d=4 both A_2² A_4 and A_2 A_3² are below F(4); only three squares
+or two squares and one cube remain. There are thus five ordered cases.
+
+Pass to limits g_i=(cq_i-w_i)/H, h_0=1, h_i=h_(i-1)+e_i g_i,
+and let m_i be the normalized logarithms of the positive integer
+multipliers M_i in the two endpoint brackets. The gain and multiplier
+bounds already proved above are
+
+    g_i>=0,    0<=m_i<=h_(i-1)-(e_i-c)g_i/gamma,    h_3>=F(d).
+
+For i<j let Q be the product of all intervening gap slopes and every
+intervening powered slope (so j=i+2 uses a complete middle power).
+For k=1 or 2 compare the following expressions at the entry to power j:
+
+    sum_(a=0)^(k-1) R_a,  R_a=Q M_i 3^((e_i-1-a)q_i) 2^(a w_i);
+    S=M_j 2^(e_j w_j)/3^(q_j).
+
+Their difference relative to the leading term is at most
+2^(-sH+o(H)), where s=min(k g_i,g_j,h_i/c). Indeed at the exit y of
+power i the leading untransported term is y(1-2^(w_i)/3^(q_i)) plus
+C_i/3^(q_i), with C_i the affine bonus. Summing k terms multiplies this
+by the first k terms of the geometric series. At the entry to j the
+analogous starting bracket gives S as that entry times
+1-2^(w_j)/3^(q_j), plus C_j/3^(q_j). The bonus bounds
+C_l/3^(q_l)<=2^(w_l-q_l) and (w_l-q_l)/H<=gamma h_(l-1)/c+o(1)
+give relative errors no greater than 2^(-(h_i/c)H+o(H)) at the two
+endpoints. Any middle ascending power has all odd states of log height
+at least (h_i/c)H-o(H), by the intermediate-state estimate of the
+three-power proof. Its physical transfer is its homogeneous multiplier
+times 1+O(2^(-(h_i/c)H+o(H))); gap offsets at the original junctions
+are of height 2^o(H). This proves the claimed relative error.
+
+A test (i,j,k) excludes any tuple on which s>k m_i+m_j, with the
+additional condition s>g_i for k=2. For k=2 the tested tuples also
+have g_i>0, as follows already from the positive margin and the stated
+gain conditions (s<=2g_i). The fixed (k+1)-coordinate Subspace
+Theorem comparison at infinity, 2 and 3 charges only M_i^k M_j.
+If it gives a linear relation then successively comparing the leading
+terms and, for k=2, the smaller term of relative scale 2^(-g_i H+o(H)),
+forces S to equal the displayed sum exactly. If the sum was already
+exact the same conclusion holds directly. The power of 2 in the
+denominator of Q from any intervening power only strengthens the
+consequence v_2(M_i)>=e_j w_j-o(H), since the sum after removing
+Q M_i is odd. But e_j w_j/H>=e_j g_j/gamma+o(1)>m_i in the cases
+where the test is used.
+
+The [exact three-variable cone certificate](check_four_power_cones.py)
+uses the outer rational bounds C=485/306, replacing c by C also in
+F(d) and h_i/c. It checks the divisibility contradiction throughout
+the feasible region for each test. For d=5, and for d=4 with one cube,
+(1,2,1) alone always applies. For d=4 and three squares, at least one
+of (1,2,2), (2,3,1), (1,3,1) applies. For each combination of failed
+margins the bounded intersection of the corresponding closed
+halfspaces has no vertex, by integer determinants. This proves the
+assertion without presupposing equal base lengths or equal rising
+slopes.
