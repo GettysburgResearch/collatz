@@ -99,3 +99,66 @@ of first-landing estimates and total ordinary probability. The original
 Collatz dynamics on the prescribed finite catalogue remain as before.
 See also the [minimum first-moment criterion](FIRST_MOMENT.md) and the
 [earlier prefix-tree model](FLOOR_CONTROL.md).
+
+## Preserving every fixed horizon of native valuation data
+
+The surgery can also preserve, simultaneously, the native odd output
+modulo any prescribed positive integer $m$, and the **entire first $H$
+accelerated valuation labels at every positive odd starting integer**
+for any prescribed finite $H$. Here an output on the ordinary odd
+step means the even integer before any halving. In fact the accelerated
+odd outputs themselves can be made congruent modulo $m$ as well.
+The construction below replaces the single edge into an anchor with a
+fixed-length native path.
+
+Write $m=2^b m_o$ with $m_o$ odd. Choose an integer
+$L\ge\max(2,H,b+1)$ and $a\in\{1,2\}$ so that $2^{-a}\equiv z\pmod3$.
+Put $N=3^{L+2}m_o$ and choose the fixed anchor scale $K\ge500N$.
+At level $j$ use every odd $u\in[K,4K)$ satisfying
+$$ 2^a4^j u\equiv 2^a-6\pmod N. $$
+These $u$ form one residue class modulo $2N$. Define
+$$
+ w=(4^ju-1)/3,\qquad v=(2^a w-1)/3,\qquad
+ r=2^L(v+1)/3^L-1.
+$$
+The congruence makes $w$ an odd integer with
+$2^aw+2\equiv0\pmod{3^{L+1}m_o}$. Hence $w\equiv z\pmod3$,
+$v$ is an odd integer, and $r\equiv-1\pmod{2^Lm_o}$ is odd.
+If $r$ happens to be divisible by 3, no edit at such a vertex is
+needed: imposing the original congruence modulo $3N$ instead, and
+choosing $K\ge1500N$, enforces $r\equiv-1\pmod3$ at every vertex.
+Use this stronger congruence throughout.
+
+The native path starting at $r$ takes $L$ steps with valuation 1
+to $v$, then one step with valuation $a$ to $w$, then one with
+valuation $2j$ to $u$. Indeed the first $i$ steps give
+$(3/2)^i(r+1)-1$, odd for $i<L$ and also odd at $i=L$ by the
+formula for $v$. Every intermediate vertex before $u$ exceeds $r$
+for all sufficiently large $j$: the first $L$ steps grow strictly,
+and $w/r\to 3^{L+1}/2^{L+a}>1$ as $j\to\infty$.
+The vertices $r$ increase in the same order as $4^ju$, since $r$
+is a positive affine function of this quantity. Using spacing $6N$
+in place of 18 and $K\ge1500N$ gives ratios below $6/5$ for adjacent
+$4^ju$; for large $j_0$ the resulting consecutive $r$ again satisfy
+$2r_{i+1}\le3r_i+1$. The finite-catalogue argument also survives:
+the $r$ in any one orbit are at the same fixed lag $L+2$ before a
+member of $D$, so only finitely many can occur. This holds whether a
+given anchor occurs once or subsequently lies on a periodic tail.
+
+Make the same replacements $r_i\mapsto2r_{i+1}$ on the ordinary
+map. Both the native odd output after halving and $r_{i+1}$ are
+$-1\bmod m$, since $L\ge b+1$. Both ordinary outputs are consequently
+$-2\bmod m$. The valuation of the actual modified output is 1.
+After arrival at an edited vertex the modified orbit has valuation
+1 forever, while its native counterpart has at least the next $L$
+valuations equal to 1. Up to first arrival the paths agree. This
+proves equality of all first $H$ valuation labels at every start.
+
+For $r_i>M\ge4K$ the native continuation stays above $M$ up to $w$
+and lands at $u\in D$, whereas the modified continuation escapes.
+A paper 12 witness hitting an edited edge before landing would
+therefore have last predecessor $w\equiv z\pmod3$, excluded by
+$\mathcal C$. These are exactly the two facts used in the first-passage
+comparison and lower-bound proofs above. Every conclusion there holds
+for this strengthened construction. The perturbation still changes
+the native affine equality on the exceptional odd updates.
