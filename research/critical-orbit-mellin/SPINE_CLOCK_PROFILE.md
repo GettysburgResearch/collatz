@@ -48,3 +48,11 @@ $$
  \sum_{j\ge k}\sum_{z\in Z_j}m(z)=m_C-m(y_k).
 $$
 The probability of following the ordinary spine backwards from $y_j$ to $y_k$ is exactly $m(y_k)/m(y_j)$. Its limit as $j\to\infty$ is $m(y_k)/m_C$, tending to one as $k\to\infty$. This shows why a backward transition law with an atom on the whole old spine is compatible with the existing lower bounds on individual sibling masses. This conclusion is conditional on the existence of a nonperiodic component; it does not construct one.
+
+Under Valbuena's prior canonical-trace theorem, the common subsequence in this construction is unnecessary. His depth density $\rho_q(v)=3^q\pi(v+3^q\mathbb Z_3)$ has the same normalization as $g_q(v)$. He proves convergence of its integer Cesàro averages, and his forward-component proposition already identifies the limit $L_C$ of the canonical trace divided by height along each divergent spine with the weighted component mean times $\log(4/3)/2$. The harmonic construction above and the existence of a component mass should therefore carry no independent priority claim. The uniform all-clock transport gives the additional identification
+$$
+ \lim_{K\to\infty}\frac1K\sum_{k=0}^{K-1}P(k)
+   =\lim_{j\to\infty}\frac{b(y_j)}{D_j}
+   =\frac{n}{r(n)}L_C .
+$$
+Indeed each fixed $P_j$ has positive-age Cesàro mean $b(y_j)/D_j$, and uniform convergence permits passage to $P$. The last equality uses $y_j/D_j\to n/r(n)$. This imports only the indicated source theorem for the identification; the uniform-profile proof above does not require it. [Valbuena, *Collatz basin densities and canonical traces from first-passage stabilization*, archived source `paper/tao-basin-densities.tex`, SHA-256 `d5c61f228ece84aae6d565c777de84089c016073df19d7b0e6974e1cfa2bb258`](https://doi.org/10.5281/zenodo.23025885)
