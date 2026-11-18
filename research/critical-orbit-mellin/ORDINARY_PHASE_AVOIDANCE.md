@@ -60,3 +60,15 @@ There are \(O(q^{2A_0+2})\) rationals of height at most \((Cq)^{A_0}\), for an a
 This refutes a pointwise sublogarithmic trace bound even after excluding very good approximations to every fixed rational shadow. It also explains why a growing finite run with high trace, forward growth and avoidance of rational phases can be witnessed unconditionally. The starting integers vary with the horizon. Establishing or excluding persistence on one fixed positive trajectory remains open.
 
 An [integer replay](check_phase_avoidance.py) constructs a target in the class of the ternary square root of 10 modulo \(3^{64}\). Its separate trajectory fixture checks the exact incoming-offset inequality at 65 consecutive ordinary states and tests all 2,506 distinct residues of rational units of height at most 64 at the stated precision. The infinite canonical trace lower bound uses the analytic fibre theorem.
+
+## Prescribing the subsequent ordinary destination
+
+**Additional source-qualified conclusion.** The preceding large-trace examples can all be chosen in the basin of **any fixed positive odd ternary unit** \(b\). In particular every prescribed initial ternary phase and every finite segment in (4) can occur on an orbit subsequently reaching 1. For the constructed trajectories that subsequent visit costs only \(O_b(\log y)\) shortcut steps. This version uses the modular inverse-routing theorem, which supplies a bounded cost as the prescribed precision grows. [Modular inverse routing, Theorem 8 and (80)–(82)](https://rstation.ai/problems/collatz/papers/48/v2)
+
+For a chosen chronological word \(w\) of length \(m\le q/16\) from either construction, prescribe the final unit class
+\[
+                    u\equiv F_w(-1)\pmod{3^{q+m}} .
+\]
+Its denominator is a power of two, and the last forward step makes it a ternary unit. Routing backwards from \(b\) gives a positive odd integer \(u\) in this class that goes forward to \(b\) with total valuation at most \(C(q+m+1)\). Hence \(u\le 2^{C(q+m+1)}b\). Now apply the reversed word from \(u\). Each step is integral by the chosen congruence and positive since it starts from a positive odd target. Its initial source \(n\) satisfies \(n\equiv-1\pmod{3^q}\): the inverse composition divides the difference from the reference by \(3^m\) and multiplies by a power of two. The resulting ordinary forward trajectory realizes every chosen letter to \(u\), then reaches \(b\).
+
+Here \(3^q-1\le n\le 2^{A(w)}u\), and every state on the displayed word is at least \(2^{-q/4}n\). Its logarithmic height is again comparable to \(q\) for sufficiently large \(q\) at fixed \(b\). The original incoming ones, the large offsets, and all ternary observations survive the extra routing. The finite destination certificate is an existence consequence of the cited routing theorem; the preceding integer replay checks the direct CRT version. Earlier work already used CRT to prescribe forward letters after a peak in a different first-landing statistic. [First-landing peaks and prescribed words, Section 14](https://rstation.ai/problems/collatz/papers/12/v1)
