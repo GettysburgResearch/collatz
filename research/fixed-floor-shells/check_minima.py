@@ -3,14 +3,15 @@
 from fractions import Fraction
 
 
-def first_crossing_counts(maximum):
+def first_crossing_counts(maximum, threshold=Fraction(1)):
     # At terminal depth j a first crossing must have total A <= floor(j log2 3).
     cap = (3**maximum).bit_length() - 1
     surviving = [0] * (cap + 1)
     surviving[0] = 1
     counts = []
     for depth in range(1, maximum + 1):
-        boundary = (3**depth).bit_length() - 1
+        scaled = 3**depth * threshold.numerator // threshold.denominator
+        boundary = scaled.bit_length() - 1
         current = [0] * (cap + 1)
         partial_sum = 0
         for total in range(1, cap + 1):
@@ -86,6 +87,16 @@ def main():
     beyond = ratio ** (depth + 1) / (1 - ratio)
     assert total + beyond < Fraction(517167, 10**6)
     print("Certified union bound through infinity: below 517167/1000000.")
+
+    split = [Fraction(2, 3), Fraction(7, 10), Fraction(3, 4), Fraction(1)]
+    for left, right in zip(split, split[1:]):
+        threshold_counts = first_crossing_counts(depth, right)
+        raw_upper = sum(
+            (Fraction(count, 3**j) for j, count in enumerate(threshold_counts, 1)),
+            beyond,
+        )
+        assert raw_upper <= Fraction(467, 500) * left**2
+    print("All ratio thresholds: Haar crossing mass <= (467/500) theta^2.")
 
     prefix_depth = 12
     hits = exact_crossing_residues(prefix_depth)

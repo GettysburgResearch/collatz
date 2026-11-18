@@ -188,7 +188,7 @@ space gives $\mu_3(H_\theta)\le\theta^2$.
 ## FS-011. Certified interval for the ordinary minimum density
 
 The relative density of odd $t$ with **no** positive predecessor strictly
-below $t$ belongs to $[0.522537,0.533554]$. In particular even after
+below $t$ belongs to $[0.530153,0.532745]$. In particular even after
 removing all ternary multiples, these minima have positive density:
 the ternary multiples contribute exactly $1/3$ of all odd targets,
 since their only shortcut predecessors are successive doublings.
@@ -214,7 +214,7 @@ $3^8<(6\cdot97/100)^5$ prove the geometric bound.
 
 The [exact checker](check_minima.py) uses $D=512$ and verifies the total
 union bound (finite sum plus geometric tail) is below $517167/10^6$.
-For the stronger displayed density interval, it counts the *union*,
+For a first enclosure, it counts the *union*,
 including overlaps, through depth 12. In each residue modulo $3^j$
 store the smallest total excess $\sum(a_i-1)$ of an integral depth-$j$
 word, capped above by $b_{12}-12$. This cap suffices because excess only
@@ -223,8 +223,8 @@ compute its inverse residue on the smaller ring and add the first excess.
 A residue counts if it hit at this or an earlier depth. The exact
 depth-12 union is $247889/531441$. Add only $\sum_{12<q\le512}N_q3^{-q}$
 and the geometric remainder to obtain an upper bound on the all-depth
-union. Directed rational rounding of its complement gives the stated
-interval. Increasing the exact-union depth makes the precision arbitrary
+union. Directed rational rounding of its complement gives the preliminary
+interval $[0.522537,0.533554]$. Increasing the exact-union depth makes the precision arbitrary
 because the proved tail tends to zero.
 
 The finite ordinary comparison enumerated all smaller odd starts for
@@ -244,6 +244,40 @@ threshold $1/D$, bounds the conditional probability of a later
 crossing along that word by $D^{-2}$. Summing gives the conditional
 upper bound $\sum_w(3^q/2^A)^2$, the usual finite-depth inverse pressure.
 The union argument needs no independence between different inverse branches.
+
+A uniform absolute improvement is
+$$
+ \mu_3(H_\theta)\le(467/500)\theta^2\qquad(0<\theta\le1).
+$$
+On the three consecutive intervals with endpoints $2/3,7/10,3/4,1$,
+the first-crossing count above, now with boundary
+$\lfloor\log_2(3^j\theta)\rfloor$, bounds the crossing mass at each
+right endpoint by $467/500$ times the square of the left endpoint.
+The checker verifies these rational inequalities through depth 512
+with the same geometric tail. Monotonicity gives the bound on the
+whole interval $[2/3,1]$. For smaller $\theta$ stop each eventual
+crossing path at its first coefficient $J=3^q2^{-A}$ reaching
+$2/(3\theta)$. Its last letter multiplies by at most $3/2$, so
+$2/3\le\theta J<1$. Later digits after the legal word are Haar on
+the predecessor. The union bound over stopped prefixes therefore costs
+at most $(467/500)\theta^2\sum 3^{-q}J^2$. The sum is at most one:
+these prefixes are disjoint for iid letters of law $3\cdot4^{-a}$,
+under which their probabilities are exactly $3^{-q}J^2$.
+
+This coefficient also sharpens the finite no-smaller enclosure. Through
+depth 16 the union has exactly $20{,}113{,}810$ residues out of
+$43{,}046{,}721$. The [integer residual checker](check_minimum_residual.py)
+sums an upper bound on the squared prefix multipliers over only the
+unhit classes. At each legal first letter $a$ the recurrence contributes
+$9\cdot4^{-a}$ times the preceding-level value at $(2^at-1)/3$.
+The integer scale is $2^{36}$. Every term is rounded upwards, and
+the omitted terms $a>24$ contribute at most $3\cdot4^{-24}$ times
+the largest preceding value. The resulting summed upper numerator
+on the unhit classes is $8{,}206{,}994{,}937{,}642{,}808$.
+Divide by $2^{36}3^{16}$ and multiply by $467/500$ to bound the
+all-depth unsigned remainder. This gives the displayed enclosure
+$[0.530153,0.532745]$ by directed rounding. The replay uses NumPy
+integer arrays and checks the fixed-width ranges.
 
 The positive ternary Haar mass of *all-depth* survivors also gives a
 direct finite-screen limitation. Modulo $3^q$ at least a fixed positive
