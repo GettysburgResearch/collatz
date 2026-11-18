@@ -229,3 +229,27 @@ small constant times $\log X$. The earlier [growing-clock result](../profinite-o
 proves an asymptotic frequency statement on shrinking intervals with
 exponent less than $5/143$. Estimate (7) is a lower bound, at shorter
 intervals and with the growing source-cylinder factor retained.
+
+The mass in (3) also localizes to the shrinking interval itself.
+For example let $\gamma=1-\eta$, take $A+k\le c_1\log X$ with $c_1$
+sufficiently small, and suppose $C(\log X)^{-d_*}\le w_0\le1$.
+Uniformly for $R\ge\max(R_{C_*},C/w_0)$ and $R\le X^{\gamma/3}$,
+the lower count (3) on $[X,(1+w_0)X]$ is $c w_0\rho X/R$.
+The retained sibling heights in its proof are $s_i\ll R^{1/\gamma}$
+and $s_i\ge y_i\ge1/S_j\gg R$, where $S_j$ was chosen of order
+$1/R$. Thus $w_0s_i$ is large and $\log(X/s_i)\asymp\log X$.
+At each sibling (5) applies with $b=M=s_i$; the prescribed $c_1$
+ensures the wide theorem's source-digit budget at every such height.
+The same disjoint summation proves the claim. In particular if
+$u\to\infty$, $u\ge C/w_0^2$ and $u\le X^{\gamma/3}$, then
+$$
+ \frac1{w_0 X}\sum_{\substack{X\le n\le(1+w_0)X\\
+              n\in C_*\cap D(w,r)}}
+       \frac{V_\infty(n)}{1+u(1-V_\infty(n))}
+       \gg \rho\,\frac{\log u}{u}.
+$$
+Indeed integrate the count for $R$ between
+$\max(R_{C_*},C/w_0)$ and $u$. Its logarithmic range is at least
+$(\log u)/2-O_{C_*}(1)$ and $V_\infty\ge1/2$ on the retained events.
+This finite physical-source conclusion is conditional on the escape
+of the specified component.
