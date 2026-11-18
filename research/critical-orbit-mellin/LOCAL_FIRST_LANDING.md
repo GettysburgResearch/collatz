@@ -167,3 +167,89 @@ components. This applies even to a different rule at every $X$.
 It distinguishes the low-digit information missing from a possible
 separating functional from the unrestricted information in the
 ordinary source itself.
+
+## Shrinking physical intervals and prescribed components
+
+Let $\tau=4.117$ and $d_*=1/(2\tau)$. Uniformly under the wide
+theorem's hypotheses, with $0<w_0\le1$ and
+$$
+         w_0\ge C(\log(X/M))^{-d_*},\qquad M w_0\ge C,                  \tag{4}
+$$
+the same controlled first landing and source constraints hold for at
+least
+$$
+            c\,w_0(X/M)2^{-A}3^{-k}                                    \tag{5}
+$$
+ordinary odd sources in $[X,(1+w_0)X]$. In particular the interval
+width can be any fixed negative power of $\log(X/M)$ with exponent
+strictly smaller than $1/8.234$, subject to the other conditions.
+
+Keep $s,H,q_0$ from the wide proof. Let $q$ run over its consecutive
+block of $N\asymp\sqrt{q_0}$ central choices. We require an integer
+$S$ with
+$$
+       1+w_0/3 \le s2^S/(3^q H)\le 1+2w_0/3 .                          \tag{6}
+$$
+This restricts $\log_2(H/s)+q\log_2 3$ modulo one to an interval of
+length $\asymp w_0$. The same central window $|S-2q|\le\sqrt q$
+holds whenever (6) is met. Uniformly in the phase, the interval is
+met at least $c w_0 N$ times. In fact use
+$\|h\log_2 3\|\gg h^{-\tau}$ for every positive integer $h$, from
+[Fan–Queffélec–Queffélec, Theorem 2.1, and the reciprocal conversion](../binary-run-occupancy/MELLIN_PHASE.md).
+For the last continued-fraction denominator $d\le N$, its successor
+$d'>N$ gives $d\gg N^{1/\tau}$. On any complete block of $d$ indices
+the rotation differs from a translated complete $1/d$ mesh by at
+most $1/d'$. It therefore gives at least a constant times $w_0d$
+hits once $w_0d$ exceeds a sufficiently large absolute constant, as
+ensured by (4). The complete blocks cover at least $N/2$ indices.
+This lower count avoids a two-sided discrepancy estimate.
+
+Now $J\le s/H$ and the combined offset in the wide proof is again
+at most $B_0+1$. Condition (4) and $s\ge DM$ ensure $B/s\le w_0/8$.
+Multiplying (6) by $1-B/s$ places the true source in $[X,(1+w_0)X]$.
+For each selected $q$ the weight bound (2), positivity, pre-entry
+correction bound and first-hit disjointness apply without change.
+Using the count of selected lengths gives (5).
+
+Let $C_*$ be any merger component containing a fixed odd unit $b_*$
+(in particular the basin of 1 is allowed). For all $M$ sufficiently
+large at least $cM/b_*$ odd units $b\le M$ lie in $C_*$: apply (1)
+at physical scale $M$ with target and threshold $b_*$, empty valuation
+word and source class $1\bmod3$. For each of these units use (5) at
+threshold $M$. Different first-landing labels give disjoint sources.
+Consequently every such interval contains at least
+$$
+              (c/b_*)\,w_0X\,2^{-A}3^{-k}                              \tag{7}
+$$
+sources in $C_*$ matching the prescribed cylinder. The same holds
+with the corresponding odd dyadic residue in place of its full word.
+For example one may take $M=\lceil w_0^{-2}\rceil$ for $w_0\to0$
+and $w_0\ge C'(\log X)^{-d_*}$, and allow $A+k$ up to a sufficiently
+small constant times $\log X$. The earlier [growing-clock result](../profinite-orbit-averages/GROWING_CLOCKS.md)
+proves an asymptotic frequency statement on shrinking intervals with
+exponent less than $5/143$. Estimate (7) is a lower bound, at shorter
+intervals and with the growing source-cylinder factor retained.
+
+The mass in (3) also localizes to the shrinking interval itself.
+For example let $\gamma=1-\eta$, take $A+k\le c_1\log X$ with $c_1$
+sufficiently small, and suppose $C(\log X)^{-d_*}\le w_0\le1$.
+Uniformly for $R\ge\max(R_{C_*},C/w_0)$ and $R\le X^{\gamma/3}$,
+the lower count (3) on $[X,(1+w_0)X]$ is $c w_0\rho X/R$.
+The retained sibling heights in its proof are $s_i\ll R^{1/\gamma}$
+and $s_i\ge y_i\ge1/S_j\gg R$, where $S_j$ was chosen of order
+$1/R$. Thus $w_0s_i$ is large and $\log(X/s_i)\asymp\log X$.
+At each sibling (5) applies with $b=M=s_i$; the prescribed $c_1$
+ensures the wide theorem's source-digit budget at every such height.
+The same disjoint summation proves the claim. In particular if
+$u\to\infty$, $u\ge C/w_0^2$ and $u\le X^{\gamma/3}$, then
+$$
+ \frac1{w_0 X}\sum_{\substack{X\le n\le(1+w_0)X\\
+              n\in C_*\cap D(w,r)}}
+       \frac{V_\infty(n)}{1+u(1-V_\infty(n))}
+       \gg \rho\,\frac{\log u}{u}.
+$$
+Indeed integrate the count for $R$ between
+$\max(R_{C_*},C/w_0)$ and $u$. Its logarithmic range is at least
+$(\log u)/2-O_{C_*}(1)$ and $V_\infty\ge1/2$ on the retained events.
+This finite physical-source conclusion is conditional on the escape
+of the specified component.
