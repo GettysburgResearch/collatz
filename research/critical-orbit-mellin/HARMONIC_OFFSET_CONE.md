@@ -30,3 +30,20 @@ $$
  f=1-d+\sum_{j\ge j_0}t_j{\bf1}_{C_j}.
 $$
 Its finite moments follow from $t_j=O(j^2)$ and exponential cylinder decay, and $\|f-f_Q\|_1\le2\sum_{Kj>Q}t_j3^{-Kj}\ll Q^2 3^{-Q}$. Every $j\le Q/K$ contributes its height $t_j$ at the sampled point $t_j$, giving a slope at least $(1-d)\log3/2+1/K>\log3/2$ for large $j_0$. This countermodel does not satisfy the Syracuse transfer; it isolates the need for arithmetic control of the sampled representatives. In particular arbitrarily good bounded-real $L^p$ estimates in isolation do not provide such control. The actual offset-cone bound $B_Q(\theta)=o(Q)$ on all ordinary targets remains open.
+
+## Recovering the whole escape mass without a signed subtraction
+
+Let $m_C=\lim_j r(y_j)b(y_j)/y_j$ be the mean-one normalized canonical mass of a nonperiodic component, so it equals $(3/2)H_C$ in the signed criterion. The full moving-clock transport gives
+$$
+ \lim_{\theta\downarrow0}\liminf_Q B_Q(\theta)/Q
+ =\lim_{\theta\downarrow0}\limsup_Q B_Q(\theta)/Q
+ =\sum_{C\ \mathrm{nonperiodic}}m_C .
+$$
+For fixed $\theta$, every marked word hits one of the finitely many low states $s\le R(\theta)$. The finitely many bounded orbits of these states contribute $O_\theta(1)$ as before. Within each of their nonperiodic components, their forward union is contained in one spine and a finite set; after the low-state hit at most $Q$ steps remain, so only the first $Q+O_\theta(1)$ vertices of that spine occur. On a spine anchored at $n$, using the notation of the [uniform profile theorem](SPINE_CLOCK_PROFILE.md),
+$$
+ \frac1Q\sum_{j=0}^{Q}g_Q(y_j)/y_j
+ =\frac1Q\sum_{j=0}^{Q}(D_j/y_j)P_j(Q-j)\longrightarrow m_C .
+$$
+Indeed the $P_j$ are uniformly bounded and converge uniformly to $P$, whose positive-age Cesàro mean is $n m_C/r(n)$; also $D_j/y_j\to r(n)/n$. Boundedly many additional terms are harmless by the ordinary uniform height bound $g_Q(y)/y\ll1$ for nonperiodic $y$. This proves the upper bound by the sum of the masses of these finitely many components.
+
+For the reverse direction choose any finite set of nonperiodic components and advance each anchor $n_C$ far enough that $r(n_C)b(n_C)/n_C$ approximates its $m_C$ from below. For $\theta\le\min_C(3n_C+1)^{-1}$ the previous lower-bound words through those anchors qualify, and targets in distinct components are disjoint. Take the lower limit in $Q$, let the anchor errors shrink, and then take the supremum over finite component families. Finiteness of the total mass follows from the signed identity or the antichain-width estimate. This double-limit formula does not assert an exchange of limits or convergence at each individual $\theta$.
