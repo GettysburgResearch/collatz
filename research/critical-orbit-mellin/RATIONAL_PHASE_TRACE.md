@@ -42,3 +42,24 @@ $$
  C_l=\sum_{u\ge0}J^{-u}h_{ud+l}.
 $$
 The tail after $u=m$, multiplied by $J^m$, is $O_{c,D}(m+1)$ since $h_k=O_{c,D}(k+1)$. Positivity follows from the first-hit cycle prefix of length $l<d$ ending at $c$. This establishes the rational classification. It does not bound the trace along a moving ordinary escaping spine.
+
+## Which point masses can the ordinary escaping orbit see?
+
+Let $y_j$ be any fixed nonperiodic positive ordinary orbit, $a_j=v_2(3y_j+1)$. A subsequential empirical limit of $(y_j,a_j)$ on $\mathbb Z_3\times\mathbb N_{>0}$ has a phase marginal invariant under the induced random transition $t=(3y+1)/2^a$: the joint marginal at the output is the input marginal by telescoping and exponent tightness, as in the [ordinary distortion analysis](HARMONIC_OFFSET_CONE.md). Its entire atomic part is a mixture of uniform distributions on finite **signed odd-rational cycles**, with the deterministic cycle exponent at every atom. In particular no irrational atom and no noncyclic rational atom are possible.
+
+Indeed disintegrate the joint law given $y$ and use the resulting stationary Markov chain on $\mathbb Z_3$. A positive-mass atom returns to itself almost surely under its conditional path law by Poincaré recurrence. Every finite return word of length $d$ and total exponent $A$ forces $(2^A-3^d)y=B$, where $B$ is positive odd by affine composition, and the denominator is odd and prime to three. Each cyclic rotation gives the same conclusion at each intermediate state. All states on a finite return word are consequently odd rational numbers with odd denominator, so $a=v_2(3y+1)$ uniquely at every step. Any returning path must therefore follow the unique ordinary-rational cycle, without any possibility of choosing a different first exponent. This proves the assertion by applying recurrence at each atom. In the simultaneous dyadic and ternary phase limit, the same atom forces the same dyadic phase conditionally: its successive valuations repeat their cycle forever, and the first $k$ accelerated valuations specify a single odd dyadic residue modulo $2^{1+a_1+\cdots+a_k}$. The only dyadic point realizing the whole infinite periodic word is the rational cycle phase itself.
+
+The mean exponent over this limiting transition law is at most $\log_2 3$, by truncating the telescoping bound on the empirical exponent mean. The signed-rational atomic classification alone permits the atom at $-1$ with constant exponent one, just as the explicit arithmetic-progression countermodel does. It concerns a necessary condition on actual orbit limits; it supplies no integer starting value with such a limit.
+
+## Obstruction to regular ordinary Lyapunov majorants
+
+Suppose $w>0$ on ordinary odds and $w(t)\ge(Lw)(t)$ for all sufficiently large odd units. Then the path of $q$ consecutive valuation-one steps from $x_q=2^{q+1}-1$ to $t_q=2\cdot3^q-1$ gives
+$$
+ w(t_q)\ge(3/2)^q w(x_q).
+$$
+Indeed its successive states are $2^{q+1-i}3^i-1$, increasing, and every endpoint after the source is a ternary unit. If $\liminf_{x\to\infty}\log w(x)/\log x\ge\alpha$ on odds, it follows that
+$$
+ \limsup_{t\to\infty}\frac{\log w(t)}{\log t}
+ \ \ge\ 1-(1-\alpha)\log_3 2 .
+$$
+The same result holds for a lower bound only on ternary units by retaining those $q$ with $x_q$ a unit. In particular an everywhere eventually superharmonic power envelope with a positive regularly varying scale of index $0\le\alpha<1$ and positive bounded distortion is impossible. This is an obstruction on actual positive integer branches, independent of the ternary Haar mean; it leaves open an irregular sublinear envelope or a genuinely different dual certificate.
