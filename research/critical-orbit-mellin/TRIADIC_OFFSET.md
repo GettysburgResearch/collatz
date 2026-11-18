@@ -74,3 +74,70 @@ the lower bound divided by Q is at least a fixed positive constant
 times the Cesàro mean of g_l(n), since the slope from n to y_j
 divided by y_j is bounded below by the simple-path correction product.
 The canonical fixed-root mean is positive, proving the converse.
+
+## All-depth maximal estimate at almost every real phase
+
+For fixed 0<theta<1 and every 1<p<2, the raw cone has a uniform
+moment over the translated grid:
+
+    sup_Q ||S_Q^u([theta,1])||_(L^p(du)) < infinity.
+
+Consequently for a p>1 (where a is the exponent in the display below),
+
+    || sup_(Q>=1) Q^(-a) S_Q^u([theta,1]) ||_p < infinity.
+
+In particular, simultaneously for every theta>0 and epsilon>0 at
+almost every phase, the whole sequence satisfies
+S_Q^u([theta,1])=o(Q^(1/2+epsilon)). The fixed triadic rational
+equivalence above is a separate pointwise statement.
+
+Here is the moment argument. Under the iid geometric exponent
+probabilities, the word probability is J_w/3^Q. Its ternary residue
+law at depth Q has Haar-normalized mass function g_Q on Z/3^Q.
+This is exactly the conditional expectation onto the depth-Q cylinders
+of the infinite ternary density, since every further term is a multiple
+of 3^Q in Z_3. For every p_0<2, p_0>=1, one therefore has uniform
+L^(p_0) bounds from the unrestricted density theorem. The norms of
+finite group functions below use uniform probability. [El Jaouhari's
+moment results and additional estimates, paper 9 v2](https://rstation.ai/problems/collatz/papers/9/v2)
+
+Let h_B be the depth-Q density restricted to F_w in [B,2B), for
+dyadic B ranging over all positive scales. For B>=1 it is at most
+g_Q pointwise, and its L¹ norm is O(B^(-1/2)). Indeed for
+J=3·2^(-a) one has E J=1 and E sqrt(J)<1 by strict concavity.
+The square root of F_w=(1/3)sum_(i<=Q) product_(h<=i) J_h is bounded
+by the sum of the square roots, so E sqrt(F_w) is bounded uniformly.
+Choose p<p_0<2. Interpolating L¹ with L^(p_0) gives
+||h_B||_p=O(B^(-delta)) for some delta>0.
+
+For B<1 the first exponent satisfies 2^(-a_1)<=F_w<2B.
+Conditional on any prescribed first exponent a, the ternary
+residue map from depth Q-1 to depth Q is
+z -> 2^(-a)(1+3z); it is a bijection onto one residue class modulo
+three. The pushed density therefore has L^p norm exactly
+3^(1-1/p)||g_(Q-1)||_p. The sum of the eligible first-letter
+probabilities is O(B), giving ||h_B||_p=O(B).
+
+For uniform u the shifted odd representatives can be written as
+t=v+2j, 0<v<=2, 0<=j<3^Q. Independently of uniform v, their
+original residue labels have a uniform cyclic displacement on
+Z/3^Q: decompose the translation Pu into its integer multiple of
+two and its remainder. Conditional on the remainder, identifying
+the new smallest positive representative changes the cyclic index
+only by a fixed carry. Since F_w/t lies in [theta,1], only
+B<=t<=2B/theta matters for this band, and 1/t<=1/B. For any such
+j its total possible coefficient mass is h_B at the corresponding
+original label because 3^Q times the word probability equals J_w.
+For B>=1 there are O_theta(B) such labels, and Minkowski over the
+cyclic displacement bounds the band norm by O_theta(||h_B||_p).
+For B<theta/2 there is only j=0, and the permissible v have
+probability O_theta(B). The band norm is then at most
+O_theta(B^(1/p-1)||h_B||_p)=O_theta(B^(1/p)). The intervening
+dyadic scales theta/2<=B<1 are finite. Both infinite tails are
+summable in norm, proving the uniform estimate.
+
+Finally the pth power of the stated maximal function is bounded by
+the sum of Q^(-ap) times the pth powers, an integrable series when
+ap>1. Its terms tend to zero almost everywhere. Taking p arbitrarily
+close to two and using a countable cofinal family of thresholds and
+exponents proves the stated simultaneous all-depth conclusion.
