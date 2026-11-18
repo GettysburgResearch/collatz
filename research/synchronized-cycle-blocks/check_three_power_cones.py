@@ -82,6 +82,20 @@ def check(a, b, method, loss=0):
 
     full = 1+g+j-a*m-b*n-2*p-loss
     transport = [term-2*m-p for term in (g, drop, (1+g)/c)]
+    if method == "seven terms":
+        require((a, b, loss) == (2, 2, 1))
+        gains = (g, drop, (1+g)/c)
+        forward = full+g/2-m
+        reverse = [full+gain-p for gain in gains]
+        require(lower((j/gamma-m, j/gamma-p), domain) > 1)
+        for reverse_margin in reverse:
+            for transport_margin in transport:
+                both_fail = domain+[-reverse_margin, -transport_margin]
+                margin = lower([forward], both_fail)
+                require(margin is None or margin > F(1, 2))
+        # The ordinary full-or-transport call separately certifies each
+        # coincident-scale ray, using the same unchanged transport test.
+        return 1
     if method == "transport":
         require(lower(transport, domain) > F(1, 10))
         return 1
@@ -116,3 +130,4 @@ if __name__ == "__main__":
         print(a, b, method, check(a, b, method))
     for a, b, method in ((2, 3, "full or transport"), (3, 2, "full")):
         print(a, b, "one normalized unit of gap error", check(a, b, method, loss=1))
+    print(2, 2, "seven terms with gaps", check(2, 2, "seven terms", loss=1))

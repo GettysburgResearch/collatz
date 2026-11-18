@@ -1,14 +1,10 @@
-# Three powers covering nearly a whole cycle must all be squares
+# Three powered factors leave a positive fraction of a cycle uncovered
 
-**PROPOSED, ineffective.** There exist eta>0 and L_0 such that, in
+**PROPOSED, ineffective.** There exist eta>0 and L_0 such that in
 any primitive positive ordinary shortcut cycle of length L>=L_0, any
-three disjoint cyclic powers of exponent at least two, at least one
-of which has exponent at least three, leave at least eta L uncovered
-positions. Both the root words and the three gaps are arbitrary.
-Equivalently, if three powers cover 1-o(1) of a sequence of growing
-cycles, eventually all three selected exponents equal two; two
-factors increase and one decreases. For three squares the argument
-does not establish a positive uncovered fraction.
+three disjoint cyclic powers of exponent at least two leave at least
+eta L uncovered positions. All three binary roots and intervening gaps
+are arbitrary. No numerical fraction or period threshold is claimed.
 
 ## Stability of the height argument
 
@@ -119,6 +115,70 @@ ray. The [rational polygon certificate](check_three_power_cones.py)
 checks these comparisons after subtracting one. For a=2,b>=4 and
 a>=4,b=2 only the undiminished tests were needed even in the exact
 proof. This excludes every nonsquare possibility from an unbounded
-family with d=o(L). Failure of the stated uniform eta,L_0 claim
-would give just such a family by choosing successive fractions 1/n
-and lower length thresholds n. The proof does not compute eta or L_0.
+family with d=o(L).
+
+## Three squares with gaps
+
+Set a=b=2. Write X_1,X_2 for the two terms of lambda_1 lambda_2 U_*,
+X_3,X_4 for those of lambda_2 W_*, and X_5=P2^v, X_6=P3^p.
+Write E for the signed sum above. Outside the coincident rays,
+the six X_i admit no fixed rational linear relation along an infinite
+subsequence. Indeed, substitute X_5 in terms of the other five and E;
+the resulting six scales are pairwise distinct, the last being exactly
+one. The preceding transport test already excludes the coincident rays.
+
+Put Q=3^(2t)/2^(2w), and let
+s=min(G,D,h_1/c). The W square carries its entry y to Qy+F,
+where F/Q has normalized logarithmic size at most h_1-h_1/c.
+This follows from the intermediate-state lower bound in the
+[exact transport proof](THREE_POWER_FINITENESS.md): the relative
+error of multiplicative transport through the square is at most
+2^(-(h_1/c)H+o(H)). The gaps have coefficients of height 2^o(H).
+Use either of the following seventh coordinates.
+
+* Forward, append R=Q X_1. Then R has scale h_2 and
+  |R-X_5|/R <= 2^(-(G/2)H+o(H)). Indeed X_1+X_2 transports to
+  the upper boundary with relative error of exponent at least
+  min(G,h_1/c), X_2/X_1 has exponent -G/2, and replacing the
+  upper boundary by X_5 costs relative error of exponent -D.
+  Both D and h_1/c exceed G/2.
+* Reverse, append R=X_5/Q. This has scale h_1 and
+  |R-X_1-X_2|/R <= 2^(-s H+o(H)). This follows by dividing
+  the upper-boundary comparison by Q; the three losses come from
+  the entry x in x+U_*, the omitted descending term X_6, and F/Q.
+  Gap offsets at the three junctions only add errors of normalized
+  size at most zero at the junction where they enter.
+
+Use E in place of X_5 at infinity, and replace R by the indicated
+comparison form at infinity. These two replacements preserve linear
+independence because E contains X_5 and the seventh comparison has
+R coefficient one. Keep the seven coordinate forms at 2 and 3.
+Writing m,n,p_0 for the multiplier scales as before, set
+B=G+J-2m-2n-2p_0. The same projective product estimate then gives
+a fixed rational linear relation on an infinite subsequence whenever
+
+    forward: B+G/2-m>0,        or        reverse: B+s-p_0>0.
+
+In fact the two archimedean gains are h_2-1=G+J and the seventh
+coordinate's stated gain. Its additional outside-prime charge is
+respectively M or P. All seven projective coordinates have logarithmic
+height O(H). If a comparison form already vanishes, it itself gives
+a relation.
+
+A relation involving the seventh coordinate is impossible even on the
+coincident rays. In the forward case every original coordinate has
+2-adic valuation at least -O(d), so the new term forces
+v_2(M)>=2w-o(H); the factor 3^q is odd. In the reverse case the
+original coordinates have 3-adic valuation at least -O(d), forcing
+v_3(P)>=2t-o(H). Since ct-w<=gamma min(t,w), each of 2w/H and
+2t/H has lower limit at least J/gamma. The rational certificate gives
+J/gamma>max(m,p_0)+1 throughout the feasible region. Hence any relation
+would use only the six originals, already impossible off the rays.
+
+Finally apply the [same rational vertex certificate](check_three_power_cones.py)
+with a=b=2. On each intersection where the three-coordinate transport
+test and the reverse seven-coordinate test both have nonpositive
+margin, the forward margin exceeds 1/2. The former test also handles
+every coincident ray. This rules out the last square configuration.
+If no positive eta and L_0 worked, choosing successive gap fractions
+1/n and period thresholds n would give the excluded sequence.
