@@ -10,6 +10,8 @@ The big-O constant is absolute. The stated exponent is explicit; the proof does 
 
 where H₂ is binary entropy. This gives the exact power of X for an ordinary growing forward clock with every reverse depth retained. It uses the fixed-depth density exponent in the [bilateral dimension theorem](BILATERAL_DIMENSION.md) and the [FS-016 all-comparable-first-hits estimate](QUANTITATIVE_PRESSURE.md).
 
+Paper 152 gives a constructive polynomial lower count through the longer horizon floor(log₃X), retaining competing depths up to the reference depth. Its rate upper bound is the ballot exponent that appears in the bilateral dimension theorem. The comparison here retains all incoming depths and obtains the exact exponential rate on the smaller physical clock above. [Paper 152 v1](https://rstation.ai/problems/collatz/papers/152/v1)
+
 ## The only forward words to consider
 
 For a forward word w of j positive exponents let A_i be its cumulative total at i, P_i=3^i/2^A_i, and t_i=U^i(n). If n∈B_j, every t_i, i≤j, is at least n, since each reaches t_j. Therefore

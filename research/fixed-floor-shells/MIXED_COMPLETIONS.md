@@ -4,6 +4,8 @@
 
 The dyadic coordinates −1, −5 and −17 all give strict pairs at **both** z=0 and z=1. In addition, the set of ternary units z giving a strict pair at **all three** dyadic coordinates has additive Haar measure greater than 0.043. The first dyadic coordinate alone admits a short proof giving at least 5/24 Haar mass among ternary nonunits. None of these dyadic coordinates represents a positive ordinary source. The pairs do imply that no finite family of lowering words or of favorable slope-one translations covers even the finite ordinary positive congruence cylinders approaching these pairs: dyadic forward valuations and ternary legality through any fixed set of word lengths persist under the Chinese remainder theorem.
 
+Paper 100 already uses the backward positive mirror tree of 1 to bound all class-uniform contracting certificates along the pure climb. It proves a positive surviving unit share for every horizon and ternary precision. Papers 149 and 152 carry the method past the pure climb and give strong all-horizon bounds on specified languages. The calculations here give individual ordinary ternary lifts and one joint screen for the three displayed signed-cycle phases. [Paper 100 v2](https://rstation.ai/problems/collatz/papers/100/v2) · [Paper 149 v1](https://rstation.ai/problems/collatz/papers/149/v1) · [Paper 152 v1](https://rstation.ai/problems/collatz/papers/152/v1)
+
 ## The all-one dyadic arm
 
 At the dyadic coordinate −1 the forward valuations are all one, so after j steps the ternary target is (3/2)^j(z+1)−1. Cancel any inverse letters that exactly retrace the last part of the arm. A proper uncancelled forward prefix has slope greater than one. An inverse continuation after complete cancellation is precisely an initial competitor at z.
