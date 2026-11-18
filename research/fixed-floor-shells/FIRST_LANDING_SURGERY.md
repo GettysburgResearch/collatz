@@ -187,3 +187,24 @@ horizon survives, as does an $O(1/\sqrt{\log X})$ exceptional
 fraction. This comparison transfers actual finite trajectories without
 requiring uniform control over the eventual effects of the sparse
 splice. [Leen, exact synchronization rates](https://doi.org/10.5281/zenodo.23268751).
+
+## Uniform control of whole infinite trajectories
+
+For any prescribed $\varepsilon>0$ the full infinite native and
+perturbed trajectories of the same source agree outside a set of
+probability at most $\varepsilon$, uniformly in **all** odd source
+windows $(X/4,X]$. Fix the anchor set $D$ first and choose an integer
+$Y>4K$ so large that $F_Y(|D|/Y+Y^{-g})\le\varepsilon$. Include
+every positive start up to $4Y$ in the finite catalogue and start
+the spine beyond $4Y$. A native trajectory that ever encounters a
+splice cannot visit $[1,Y]$ beforehand, because none of those starting
+orbits encounters a splice. Its subsequent native ramp stays above
+the splice point until it reaches its anchor in $D$. Consequently
+every changed orbit has native first landing at floor $Y$ in $D$.
+For $X\ge4Y$ paper 102 bounds the probability of the latter event
+by $\varepsilon$. For $X<4Y$ the finite catalogue covers all starts.
+The same coupling counts the entire ordinary trajectory after the
+initial odd source, and therefore applies to arbitrary joint tests
+of any collection of passage times, terminal labels and orbit minima.
+The altered component retains the positive lower density proved
+above, whose constant depends on the selected first spine point.
