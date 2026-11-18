@@ -121,3 +121,73 @@ exactly when $b>1$, by
 $\overline\Phi(t)\asymp L^{-1}(\log L)^{-(1+b)/2}$.
 This boundary concerns fast passage to the specified growing floor;
 even a fast passage need not produce an unequal-clock collision.
+
+## Sharp reciprocal order of pairs with no meeting
+
+At each positive integer $n$ use $X=2^{\lfloor\log_2n\rfloor}$
+to assign the cutoff $H_X$ above to the pair $(2n,2n+1)$. Let $B$
+contain the $n$ for which these two trajectories have no meeting at
+**any** pair of times $0\le i,j\le H_X$. For each fixed $\delta>0$,
+$$
+ \sum_{\substack{n\le N\\n\in B}}\frac1n
+       \asymp_\delta \sqrt{\log N}\qquad(N\to\infty).
+$$
+This conclusion also uses Leen's terminal clock central limit theorem,
+minimum-tail estimate and finite balanced synchronization bound.
+[Brownian motion in Collatz orbits](https://doi.org/10.5281/zenodo.23252395)
+· [Exact rates in Collatz synchronization](https://doi.org/10.5281/zenodo.23268751).
+
+For a start $x$, write $m(x)$ for its global orbit minimum and
+$\tau_*(x)$ for the first shortcut time attaining it. The minimum
+for shortcut and ordinary dynamics agrees: an omitted intermediate
+$3x+1$ exceeds the retained neighboring values. The Brownian paper's
+minimum-tail corollary gives
+$\Pr(m(W_Y)>R)\ll_A(\log R)^{-A}$ uniformly on odd octaves $Y\ge R$.
+With $R=\exp(\tfrac12 L^{1/4})$ and the same dyadic stripping as
+above, this costs $O(L^{-3})$ taking $A=12$.
+Thus, except for a set $E$ of parent indices $n$ of finite reciprocal
+mass, both sibling paths stay strictly above their own minima through
+$H_X$ and every meeting through $H_X$ is synchronous. The bounds
+use the entire octave for each arm, so the separate parity restrictions
+cost at most a factor two.
+
+On every $n\notin B\cup E$ there is therefore a common endpoint at a
+common time before either first minimum. The common future must attain
+both global minima and its remaining clock to that value is identical.
+This gives $\tau_*(2n+1)=\tau_*(2n)=1+\tau_*(n)$. The last equality
+holds for every $n$ because $T(2n)=n<2n$.
+
+Take $u$ uniform in $[1,2)$ and put $n_j=\lfloor 2^ju\rfloor$.
+The digit selecting $n_{j+1}=2n_j$ or $2n_j+1$ is fair and
+independent of $n_j$. Define $Z_j=\tau_*(n_j)-j$.
+It stays fixed at every even child and at every odd child whose
+parent lies outside $B\cup E$. By the terminal Brownian theorem
+$\tau_*(n_j)=\mu j\log2+O_{\Pr}(\sqrt j)$ on these octaves.
+Tightness on the full interval $[2,2^{j+1}]$ transfers to its
+upper octave by a factor at most three in probability; replacing
+$\log n_j$ by $j\log2$ costs $O(1)$.
+
+Put $b=\mu\log2-1>0$. Choose a fixed $M$ so large that
+$|Z_j-bj|\le M\sqrt j$ has probability at least $9/10$ at
+every sufficiently large depth. Then choose fixed $C>4M/b$ and
+$k=j+\lceil C\sqrt j\rceil$. With probability at least $4/5$
+both endpoint bounds hold, and their intervals are disjoint for
+large $j$. Hence $Z_j\ne Z_k$, requiring at least one observed
+odd child with parent in $B\cup E$. For a particular parent $n$
+at depth $i$ that observation has probability $2^{-i-1}\le1/n$.
+The probability of any such observation with parent in $E$ at
+any depth $i\ge j$ tends to zero by reciprocal summability.
+Consequently for all sufficiently large $j$,
+$$ \sum_{\substack{2^j\le n<2^k\\n\in B}}1/n\ge1/2. $$
+Take consecutive blocks of these depths. Each increment in $\sqrt j$
+is bounded above by a constant, giving $\gg\sqrt{\log N}$ completed
+blocks through $N$.
+
+For the upper estimate, a pair in $B$ has failed balanced shortcut
+coalescence by native time $j$ for $2^j\le n<2^{j+1}$, since
+$H_{2^j}\ge j$ eventually. In the full octave of adjacent starting
+positions $x\in[2^{j+1},2^{j+2})$, native balanced noncoalescence
+at time $j$ has fraction $O(j^{-1/2})$ by the complete-period
+absorption count. Keeping only $x=2n$ costs at most two.
+The reciprocal contribution is thus $O(j^{-1/2})$ per octave.
+Summing proves the matching order.
