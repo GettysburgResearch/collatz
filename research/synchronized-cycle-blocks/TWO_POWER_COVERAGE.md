@@ -80,3 +80,21 @@ s<=2 log_2 L, and Eliahou's period bound gives L>=2^24 for a nontrivial
 cycle. On this range 3410 log_2 L/L is decreasing and is at most
 3410*24/2^24<1-250/252. Equation (1) therefore implies d>=L/252.
 The stronger asymptotic constant follows directly from (1).
+
+## Independent finite checks
+
+The [exact replay](check_power_coverage.py) checks the local divisibilities,
+direction, extremal-copy minimum and height inequalities on positive
+ordinary cylinders. It also checks the arithmetic constants and a second
+route to the cited length floor. Under Barina's published ordinary
+verification through 2^68, a nontrivial minimum m exceeds 2^68. For its
+total odd count Q, the step correction gives
+0<L/Q-c<=1/(3m ln 2)<2^(-68). The fractions 16785921/10590737 and
+17087915/10781274 strictly bracket the entire interval [c,c+2^(-68)],
+as certified by rational bounds on the logarithms in the replay. Their
+cross determinant is one. Every reduced fraction strictly between them
+therefore has denominator at least 21372011. In particular L>=Q>2^24.
+This independent calculation uses the published finite range as external
+input. The local replay is bounded and separate from the proof.
+[Barina, *Improved verification limit for the convergence of the Collatz
+conjecture*, 2025](https://doi.org/10.1007/s11227-025-07337-0)
