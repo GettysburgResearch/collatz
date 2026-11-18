@@ -80,3 +80,22 @@ coefficients coexist with pointwise pressure spikes.
 of the true Collatz map preserving its exact first-hit laws off a
 sparse set. The prefix-tree control above additionally provides the
 explicit survivor upper bound, and uses a different underlying odd map.
+
+**First-landing comparison.** The same control satisfies the uniform
+counting conclusion for first *odd* landings used in
+[FS-022](FIRST_MOMENT.md). For any odd $a\le M$, choose the smallest
+$e\ge2$ with $w=2^e a+1>2M$. Then $2M<w\le4M+1$ and $w$ ends in
+$01$. Reserve $u=64w+5$ as above. Every odd extension of $u$ first
+enters $[1,M]$ at $a$ under the odd map, since its earlier odd
+states are all at least $w$. If $X\ge8u$, all extensions by
+$\lfloor\log_2(X/(2u))\rfloor$ bits lie in $(X/4,X]$ and supply
+at least $X/(8u)\gg X/M$ starts. This verifies the uniform counting
+minorant for $X\ge C M$. Its actual odd clocks belong to this
+prefix-tree map.
+
+In particular this model's empirical shell mean of the global minimum
+is of order $\log X$. The upper bound follows by summing the uniform
+floor estimate over $1\le B\le X$. For the lower bound use each spine
+vertex $m\le X/C$ as the target and threshold $a=M=m$. Its forward
+spine is increasing, so each of the $\gg X/m$ sources has exact
+minimum $m$. There are $\gg\log X$ such distinct vertices.
