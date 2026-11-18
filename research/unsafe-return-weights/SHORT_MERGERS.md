@@ -35,7 +35,7 @@ If a collision occurs, the earlier parity argument forces v=(1^a0)^k. On this wo
 
 Suppose a positive source m with R(m)<R(n) satisfies F_v(n)=F_w(m) on actual paths of lengths t,s<=M, respectively, allowing empty words. For M>=1 assume
 
-    3^H > 1000 A³ 216^M.                                    (2)
+    3^H > 1000 A³ 27^M.                                    (2)
 
 Let g=min(t,s), L=2^{s-g}3^{q_v}, B=2^{t-g}3^{q_w}, E=2^{s-g}C_v−2^{t-g}C_w. The physical merger is Bm=Ln+E. Define the virtual companion eta=(L alpha_a+E)/B, the unique rational companion whose w endpoint equals F_v(alpha_a). At any minimizing index b for m one of the following must hold:
 
@@ -45,20 +45,20 @@ Let g=min(t,s), L=2^{s-g}3^{q_v}, B=2^{t-g}3^{q_w}, E=2^{s-g}C_v−2^{t-g}C_w. T
 
 These are exhaustive necessary tests for the specified precision. For a fixed n and clock pair all claimed successes must still use ordinary positive, physically legal paths. A matching virtual equation alone would not enforce them.
 
-**Proof.** L,B<=6^M and |E|<=3^M: each scaled positive constant is at most 3^M since C_v<=3^t and 2^{s-t}3^t<=3^s for s>=t. Put P=E d_a−L c_a, so |P|<=6A6^M and B d_a m=L z_a(n)+P. From n>=3^H/A−5 we obtain n>2*3^M, n>5 and m>=n/(2*6^M)>2. Thus every |z_b(m)|>=|d_b|m/2.
+**Proof.** L,B<=3^M because 2^{s-t}3^{q_v}<=3^s when s>=t and similarly in the other ordering. Also |E|<=3^M: each scaled positive constant is at most 3^M since C_v<=3^t and 2^{s-t}3^t<=3^s for s>=t. Put P=E d_a−L c_a, so |P|<=6A3^M and B d_a m=L z_a(n)+P. From n>=3^H/A−5 we obtain n>2*3^M, n>5 and m>=n/(2*3^M)>2. Thus every |z_b(m)|>=|d_b|m/2.
 
-If eta differs from −1/2, the integer 2P+B d_a is nonzero and bounded by 13A6^M<3^H. The identity for 2m+1 gives 3^{h(m)}<=13A6^M. In particular 3^b<=13A6^M for every candidate b. Now
+If eta differs from −1/2, the integer 2P+B d_a is nonzero and bounded by 13A3^M<3^H. The identity for 2m+1 gives 3^{h(m)}<=13A3^M. In particular 3^b<=13A3^M for every candidate b. Now
 
     B d_a z_b(m)=d_b L z_a(n)+D_b,
-    D_b=d_b P+B d_a c_b,        |D_b|<=11|d_b|A6^M.
+    D_b=d_b P+B d_a c_b,        |D_b|<=11|d_b|A3^M.
 
-When |d_b|<=13A6^M the last upper bound is below 3^H by (2). Thus nonzero D_b would imply 3^{v3(z_b(m))}<=11|d_b|A6^M. This forces
+When |d_b|<=13A3^M the last upper bound is below 3^H by (2). Thus nonzero D_b would imply 3^{v3(z_b(m))}<=11|d_b|A3^M. This forces
 
-    R_b(m)>=m²/(44 A6^M)>= n²/(176 A216^M)>R(n),
+    R_b(m)>=m²/(44 A3^M)>= n²/(176 A27^M)>R(n),
 
 as R(n)<=4A²n²/3^H. Consequently a minimizing b must have D_b=0, exactly eta=alpha_b. The exact merger gives z_b(m)=(d_b/d_a)(L/B)z_a(n), proving the ratio in case 1.
 
-If eta=−1/2, every fixed candidate b=0,1,2 still has |d_b|<=13A6^M and D_b nonzero, so the same exclusion applies. Only the moving candidate remains. Now B d_a(2m+1)=2L z_a(n). The stated b and v_0 follow, with v_0 necessarily an odd positive ternary unit for an ordinary m. Substitution in z_b(m) gives z_b(m)=3^b(d_b v_0+1)/2, yielding precisely case 2.
+If eta=−1/2, every fixed candidate b=0,1,2 still has |d_b|<=13A3^M and D_b nonzero, so the same exclusion applies. Only the moving candidate remains. Now B d_a(2m+1)=2L z_a(n). The stated b and v_0 follow, with v_0 necessarily an odd positive ternary unit for an ordinary m. Substitution in z_b(m) gives z_b(m)=3^b(d_b v_0+1)/2, yielding precisely case 2.
 
 ## A positive no-descent family using the extra case
 

@@ -69,7 +69,7 @@ def two_sided_controls():
     for a in range(4):
         d, c = 3**a - 2**(a+1), 3**a - 2**a
         power = 3**65
-        require(power > 1000*abs(d)**3 * 216**max_clock, "wrong merger guard")
+        require(power > 1000*abs(d)**3 * 27**max_clock, "wrong merger guard")
         ternary = ((power-c)*pow(d, -1, 3*power)) % (3*power)
         for residue in range(2**max_clock):
             n = crt(residue, 2**max_clock, ternary, 3*power) + 2**max_clock * 3*power
@@ -119,7 +119,7 @@ def moving_family(h, extra, good):
     u3 = (-1 if good else 1) * pow(d, -1, ternary) % ternary
     u = crt(u2, dyadic, u3, ternary) + dyadic * ternary
     n, m = 1+2*power*u, (power*u-1)//2
-    require(3**h > 1000*216**18, "two-source precision too small")
+    require(3**h > 1000*27**18, "two-source precision too small")
     path = replay(n, tail)
     require(path[17] == replay(m, other)[-1], "physical arms fail to merge")
     require(min(path) > n and m < n//4+1, "wrong numerical guard")
