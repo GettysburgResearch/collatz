@@ -94,3 +94,45 @@ errors. Integrate du/(2u) in the compact spatial law. This baseline
 decays exponentially in k since E J_1^s<1 for 0<s<1. In contrast,
 the excess in (4) is order k. The proof does not give an upper bound
 on those exceptionally large ordinary trace amplitudes.
+
+## Retaining an individual component
+
+All the clock-front identities hold after restricting every root to
+one merging component C. The scalar m_f becomes
+
+    m_(C,f)=δ E[1_C (V_∞ f(1−V_∞)−f(0))].                            (5)
+
+Indeed every forward and legal inverse edge remains in the component,
+so (3) still holds and is dominated by the same summable majorant.
+For the value of the unrestricted generator, use the marked source
+occupation formula to telescope V_i f(1−V_i) along each ordinary
+source in C. Its total absolute variation is bounded uniformly for
+C¹ tests, because V_i decreases in [0,1]. Interchanging the source
+mean and the state sum is legitimate: on simple orbit portions the
+reciprocal tail above Y is O(Y^(−1/20)). For repeated labels the
+remaining variation is bounded, and components not reached from any
+of a fixed finite set of global minima have total source mass tending
+to zero. On each of the finitely many remaining cyclic components
+there are only finitely many cycle labels. This gives the same tail
+argument as the [signed mass formula](../unsafe-return-weights/SIGNED_MASS.md).
+
+On an escaping component all inverse paths are simple, so V_i is
+uniformly bounded away from zero by the reciprocal packing estimate.
+The test 1/(1−r) may consequently be boundedly continued in C¹
+outside the occurring range. This particular edge current is zero
+*exactly*, before either limit: the one-step bracket vanishes, since
+(y−B) is multiplied by precisely the same J as the fibre mass.
+Equivalently, writing d_x for the relative odd predecessor-basin
+density, one has the exact natural incidence identity
+
+    Σ_(x∈C, x≤T<U^k x) d_x = Σ_(x∈C, U^k x≤T<x) d_x.
+
+Indeed ∫(x−B)⁻¹G_x(dB)=δd_x by marked source occupation at a
+nonperiodic root. Taking smooth nonnegative cutoffs of 1/(1−r) which
+vanish near zero and exhaust its values at every positive occurring
+r, (5) gives the stronger power-tail bound in (4) with numerator
+δd_x in place of H(x)/x and lower constant δPr(C): the upward tests
+are bounded above by δd_x. Sources with H(x)≤T^ρ still cost o(1)
+since d_x≪H(x)/x by the uniform simple-path distortion bound. This
+states the full component mass forced onto the rare growing words
+in natural basin units.
