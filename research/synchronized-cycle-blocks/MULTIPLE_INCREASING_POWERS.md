@@ -151,3 +151,55 @@ physical length is at most five times its entering height, we have
 For L>=2^36 the left-to-logarithm ratio is increasing and already
 exceeds 3936000. The certified Farey floor is greater than 2^36.
 Therefore none of these three parameter regions occurs.
+
+## Quadratic amplification is necessary at growing repeat exponents
+
+The preceding logarithmic lower bound on h can be strengthened using
+the first power following the small boundary. Allow k arbitrary
+disjoint powers of minimum exponent e, with d positions uncovered.
+As e tends to infinity, if d=o(e), then their h increasing factors
+satisfy
+
+    liminf K/e² >= c/gamma,
+    h ln c >= 2 ln e + ln(c/gamma) - o(1),                          (3)
+
+where K=A_e^h and c=log₂3. This also holds for complete tours. More
+quantitatively, for any fixed delta>0, K<=(c/gamma-delta)e² forces
+d >= c_delta e - O_delta(log(e+1)), for a positive constant c_delta.
+There is no bound on the number of descending powers.
+
+Indeed in this range the margin mu in the [fragmented sweep](FRAGMENTED_COVERS.md)
+is bounded below by a positive constant depending on delta for all large
+e. With s=log₂(L+1) that proof supplies a boundary height J=O_delta(s+d):
+the factor K multiplying d in its numerator is divided by e(e-1).
+Starting at this boundary the first selected power enters at height at
+most J+d, even if there is an adjacent gap. Its length is at least e
+and at most B(J+d), hence e=O_delta(s+d). Across the whole tour
+the sum P of increasing lengths is at most (K-1)(J+d)/gamma: the
+ith increase enters at height at most A_e^(i-1)(J+d), so their
+length bounds form a geometric sum. The maximum root width and the
+total descending deficit are also O_delta(K(s+d)). Rhin's estimate
+therefore gives L<=C_delta(K(s+d))^16. As K=O(e²), taking logarithms
+gives s=O_delta(log(e+1)+log(d+1)): use s+d<=(s+1)(d+1) and absorb
+16 log₂(s+1) into s/2 for sufficiently large s. When d<=e, this yields
+d>=c_delta e-O_delta(log(e+1)); when d>e this is automatic. This proves
+the first limit. For the second, ln A_e=ln c+O(1/e); on h=O(log e)
+the replacement in h ln A_e costs o(1), and larger h already suffices.
+
+For the complete-cover special case the following numerical statement
+uses only the explicit earlier bounds:
+
+    e >= 2^20   implies   A_e^h > (5/2)e².                          (4)
+
+Otherwise gamma/c<3/8 and K<=(5/2)e² give mu>1/17 for these e.
+The single-boundary bounds above with d=0 give J<=289s using Z<=16s;
+the gap-free first power has length at least e and at most BJ<=578s.
+The complete increasing length P and largest width W are <=578Ks
+by the geometric sweep, while D<=gamma P+s<=579Ks. Thus
+L<=P+D W^15<=(1200Ks)^16. Using K<=(5/2)e² yields
+
+    s <= 193+32 log₂ e+16 log₂ s.
+
+Here s>=e/578>512, so 16 log₂ s<=s/2. It follows that
+e<=1156(193+32 log₂ e), false at 2^20 and thereafter by monotonicity
+of the ratio. This proves (4).
