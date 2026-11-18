@@ -40,3 +40,31 @@ $$
        -\mathbb E\left[\sum_a B_a^2-B^2\right].
 $$
 Indeed for a threshold $v$ the tail defect before multiplication by $v^2$ equals $\Pr(B\le v<1)-\mathbb E(\#\{a:B_a>v\}-1)_+$. Integrate against $2v\,dv$. The first term is integrable and the signed defect was just proved integrable, so Tonelli gives finite overlap cost for the second. This formula retains the actual common-target dependence among branches.
+
+## Asymptotic constants for all supercritical pressures
+
+For each $s>2$ there is $c_s\in(0,\infty)$ such that
+$$
+ \Pr(\mathcal H_s>u)\sim c_s u^{-2/s}.
+$$
+Set $p=2/s<1$, $H=\mathcal H_s$, $B_a=(3/2^a)^s H((2^a\alpha-1)/3)$ on legal branches and zero otherwise, and $B=\max_a B_a$ (zero if none are legal). Almost surely $H=1+\sum B_a<\infty$. Put $f_s(t)=e^{pt}\Pr(H>e^t)$, bounded on the line and bounded away from zero near positive infinity by the [supercritical pressure bounds](MINIMUM_SHARP.md). Define $D_s=f_s-\mathbb E f_s(\cdot-sY)$ with the same tilted letter law. This defect before multiplication by $e^{pt}$ is $\Pr(H>e^t)-\sum_a\Pr(B_a>e^t)$, since the power-$p$ tilt of each branch times legality is again $3\cdot4^{-a}$.
+
+Integrate the defect through $t=\log T$ and multiply by $p$. The result is
+$$
+ I(T)=\mathbb E[\min(H,T)^p-\min(B,T)^p]
+      -\mathbb E\left[\sum_a\min(B_a,T)^p-\min(B,T)^p\right].
+$$
+Both expectations are finite for fixed $T$, since negative-tail integrability follows as for $D$ and the clipped sum is the integral of its nonnegative marginal tails. Also $|I(T)|\le p\|f_s\|_\infty\mathbb E|sY|$ by shifting the integral from $-\infty$. Denote the nonnegative random variable in the second expectation by $V_T$.
+
+For $x\ge b\ge0$, $ (x+b)^p-x^p\le(2^p-1)b^p$ by concavity. Keep the largest summand and apply this inequality to every subsequent summand. The added constant 1 contributes at most 1 to the $p$-power. For $B<T$ this yields
+$$
+ \min(H,T)^p-\min(B,T)^p\le1+(2^p-1)V_T;
+$$
+for $B\ge T$ the left side vanishes. Hence $I(T)\le1-(2-2^p)\mathbb EV_T$. The strict inequality $2^p-1<1$ and the uniform lower bound for $I(T)$ show that $\mathbb E[\sum_a B_a^p-B^p]<\infty$ by monotone convergence (remove a maximizer before taking the increasing clipped sum). The same estimate gives $\mathbb E[H^p-B^p]<\infty$. Splitting the tail defect about $\Pr(B>e^t)$ expresses it as the difference of two integrable nonnegative functions. Thus $D_s\in L^1$.
+
+The preceding smoothed ladder argument applies with increments $sY$, of mean $s\mu$ and nonarithmetic ladder heights. Unsmoothing now uses $\int_0^x v^p\Pr(H>v)dv$ and the same monotone squeeze. The positive constant satisfies the finite difference formula
+$$
+ 2\mu c_s=\mathbb E[H^p-B^p]
+       -\mathbb E\left[\sum_a B_a^p-B^p\right].
+$$
+The strict concavity used to bound the overlap stops at $s=2$. The critical pressure still has the two-sided $1/u$ tail in the preceding packet, without a limiting constant established here.
