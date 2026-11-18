@@ -61,3 +61,27 @@ $$
  \log J-\log(1-1/G(t))\le\log G(t)-\log G(s).
 $$
 A unit target has $G(t)>1$. To integrate without assuming integrability of $\log G$, take a stationary Markov chain with this transition law on the finite part, truncate the nonnegative loss at a fixed constant, and telescope to time $N$. The right hand side divided by $N$ tends to zero in probability by stationarity and finiteness of $\log G$. The left average converges to its invariant conditional expectation by the ergodic theorem, since the exponent has finite first moment. Thus its mean is at most zero. Monotone convergence removes the loss truncation. On the infinite part bound $\log J$ above by $\log(3/2)$, proving the stated inequality; the loss is strictly positive on the finite part. This proves the positive-mass and ergodic assertions. It forces a singular component on a fixed set of dimension strictly below one in *every* empirical limit, without requiring positive exponential real growth or selecting only record times. A fixed-start proof that these laws avoid $\mathcal U$ would exclude escape. Pointwise finiteness at every ordinary state does not imply such avoidance under weak convergence.
+
+## A growing-clock lower bound directly on each exceptional source
+
+For a fixed nonperiodic positive odd source $n$ with trajectory $y_j$, uniformly for $N\ge1$ and $1\le q\le N$,
+$$
+ \frac1N\sum_{j=0}^{N-1}g_q(y_j)\gg_n q
+$$
+for all sufficiently large $N$, after dropping a possible initial nonunit by starting at $U(n)$ (or keeping it by altering the constant and finite endpoints). For $q\ge N$ the lower bound improves to $\gg_n N^{1/\eta}$ using orbit packing. In particular *every* schedule $q_N\to\infty$ yields an unbounded average tending to infinity on a nonperiodic orbit. Every eventually periodic orbit has bounded averages for all schedules by the finite ordinary trace theorem. This test is unweighted and applies also at depths much smaller than the sampled orbit age.
+
+First assume $n$ is a unit. On the ordinary path, $P_i\gg y_j/y_{j-i}$ by the universal simple-segment reciprocal bound. Using first-departure siblings from a shorter prefix of length $\min(j,q)$, still with full extension to depth $q$, gives
+$$
+ g_q(y_j)\gg\sum_{i=1}^{\min(j,q)} y_j/y_{j-i}.
+$$
+For $j\le q$ the single anchored prefix instead gives $g_q(y_j)\gg_n y_j$, since its remaining inverse depth $q-j$ has a uniform floor at $n$. For $q$ bounded the unit floor alone proves the assertion.
+
+For $4\le q\le N$ either $\sum_{j<q}y_j\ge Nq$, and the anchored estimate suffices, or this sum is smaller. For $q/4\le i\le q/2$ the ratio product over $i\le j<N$ telescopes to the product of the last $i$ values divided by the product of the first $i$ values. The numerator is at least $i!\ge(i/e)^i$ by distinctness. The denominator is at most $(Nq/i)^i$ by AM–GM. A second application of AM–GM gives
+$$
+ \frac1{N-i}\sum_{j=i}^{N-1}\frac{y_j}{y_{j-i}}
+ \ge\left(\frac{i^2}{eNq}\right)^{i/(N-i)}
+ \ge\left(\frac{q}{16eN}\right)^{q/N}\ge(16e)^{-1}.
+$$
+Summing over these $i$ proves the uniform bound. For $q\ge N$, all $N$ anchored terms are present and the smallest possible sum of $N$ distinct orbit values is $\gg N^{1+1/\eta}$ by the uniform packing estimate. A nonunit initial state is handled by applying the unit result from depth one to its $N-1$ terms; the borderline $q=N$ uses the anchored bound for that shorter orbit. No quantitative ternary equidistribution assumption enters the argument.
+
+The stationary version is immediate as well. On a stationary phase/transition extension with $E\log J\ge0$, the expected product of the preceding $i$ multipliers is at least $\exp(iE\log J)$ by Jensen. The first-departure sibling bound therefore gives $\int g_q\,d\nu\gg\sum_{i=1}^q\exp(iE\log J)$. One cannot obtain a universal positive lower bound on $\nu(\mathcal U)$ from stationarity and this drift condition alone. Take words of length $d$ and total valuation $A=\lceil d\log_2 3\rceil$. Their periodic repetitions define positive odd-rational cycles of mean log multiplier $-\varepsilon_d=(d\log3-A\log2)/d<0$, with $\varepsilon_d\to0$. Those cycles have finite trace and finite $G$. Mixing their uniform stationary law with mass $\varepsilon_d/(\log(3/2)+\varepsilon_d)$ on the fixed point $-1$ gives exactly zero mean log multiplier and $\mathcal U$-mass tending to zero. These test laws satisfy the coupled ternary branch equations; their realization by a single positive integer is open.
