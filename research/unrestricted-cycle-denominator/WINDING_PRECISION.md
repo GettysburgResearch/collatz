@@ -115,3 +115,57 @@ Even factors equal to 2 can always be represented by an even ternary
 unit. The published semigroup theorem does not ensure the added
 odd inputs are distinct or high, or that any jet balances survive.
 [Applegate and Lagarias, Theorem 1.1](https://arxiv.org/pdf/math/0411140)
+
+## Uniform sparsity on translated intervals
+
+For fixed Q,k one can additionally require
+
+    #(S∩[x,x+t]) ≤ C_(Q,k) sqrt(1+t)      (x real, t≥0),
+
+even along the sequence with superpolynomial winding precision. This
+prevents the modeled sources from clustering on translated intervals
+at the scale of an interval's length. It is compatible with the
+[known translated packing bounds for a simple ordinary orbit](../critical-orbit-mellin/PRIOR_WORK.md).
+
+Here are the modifications to the preceding construction. Call the
+points from one fixed prototype copy with one common affine slope
+a cluster; its size and diameter have a fixed bound depending only
+on the prototypes. Set h_min=ceil(θL), where the fixed θ>0 is small.
+Replace each order-r spacing ladder by h_min, 2h_min, ... up to a
+spacing between L^(1+1/r) and a constant times that quantity. The
+maximal offset within a gadget is o_s(R_0) for fixed s. The same
+derivative comparison holds in this range, by the integral formula.
+At order r the largest decrement is comparable to L^(−r−1) and
+the smallest to L^(−r−2), with constants allowed to depend on θ.
+The coarse O(L^(−4)) bound starts the induction at r=2. Sufficiently
+many gadgets per spacing implement the same geometric greedy scheme,
+delivering O_s(L^(−s−2)) after order s.
+
+Choose gadget translations first and ordinary translations afterwards.
+Require separation at least a fixed multiple of θL between same-slope
+clusters in different copies, for every allowed choice. Inside one
+gadget this follows from h_min and the bounded original intercepts.
+Each previously placed ordinary copy forbids O(1) intervals of
+translation length O(θL+1) for a new ordinary copy. The constants
+here depend only on the two fixed prototypes, not s. Gadget constraints
+total O_s(log L) such intervals for each new placement. Consequently
+the translations can be chosen in an interval of length
+C_0 θL²+o_s(L²), where C_0 is independent of s: first placing just
+the gadgets costs o_s(L²), while there are at most L ordinary copies.
+The extra internal gadget offsets still cost o_s(L²). Choose θ so
+small that the total allowed offset is a small fixed fraction of R_0.
+The bounds R_*≍R_0 follow by the same two bounding multiples argument
+and are uniform in s after increasing L. Choose that fraction below
+the fixed relative separation needed for different prototype slopes;
+it also keeps different terminal slopes separated from source slopes
+whenever they are unequal. All other rounding and noninvariance
+arguments are unchanged.
+
+At a given slope there are now only O(1+t/(θL)) clusters meeting a
+length-t interval, with uniformly bounded size. The number of slopes
+is fixed. Use this bound for t≤L² and the trivial bound L otherwise.
+The square-root constant is independent of s, so the final diagonal
+choice retains it. An [exact small first-moment fixture](check_cyclotomic_winding.py)
+uses 485 distinct states and a 306-odd coprime shape. It checks
+multiplicative winding to within 1/15097² and verifies the successor
+multiset differs; it does not implement the higher-order construction.
