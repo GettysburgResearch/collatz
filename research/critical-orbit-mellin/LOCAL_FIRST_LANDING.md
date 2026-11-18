@@ -253,3 +253,18 @@ $\max(R_{C_*},C/w_0)$ and $u$. Its logarithmic range is at least
 $(\log u)/2-O_{C_*}(1)$ and $V_\infty\ge1/2$ on the retained events.
 This finite physical-source conclusion is conditional on the escape
 of the specified component.
+
+There is a sharper unconditional subsequence of width exponents.
+Let $h$ tend to infinity along the continued-fraction denominators
+of $\log_2 3$, and set $X_h=\exp(Kh^2)$ with a sufficiently large
+absolute $K$. Uniformly for $X_h\le X\le X_h^2$, $M\le X^{1/3}$
+and the same small linear digit budget, the central length block
+has $N\ge h$. Each full block of $h$ indices yields
+$\gg w_0h$ hits of (6) as soon as $w_0h\ge C$, by the translates
+of the convergent mesh itself. Consequently (5) and (7) hold on
+these ranges at widths $w_0\ge C/h\asymp (\log X)^{-1/2}$, still
+requiring $M w_0\ge C$ and, for (7), the component onset on $M$.
+This subsequence conclusion needs no bound on the irrationality
+measure. The preceding short-interval Stieltjes bound follows in
+the same range of widths, for example with $u\le X^{\gamma/4}$ so
+every retained sibling qualifies as a threshold at most $X^{1/3}$.
