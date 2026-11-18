@@ -68,6 +68,13 @@ def main():
         margin = 1-gamma*(b+increase-1)/(b*(b-1)*close_lower)
         require(margin > Fraction(1, 1000))
     require(3936000*36 < 2**36 < 114208327604)
+    drift_gain = gamma/(1-gamma)
+    pair_gain = (6*clo/gamma-3)/2
+    require((pair_gain-drift_gain)/(1+2*drift_gain) > Fraction(13, 10))
+    require(pair_gain-drift_gain > Fraction(51, 10))
+    require(drift_gain < Fraction(142, 100) and 1+2*drift_gain < Fraction(385, 100))
+    require(1-(1/gamma-1)*Fraction(13, 10) < Fraction(9, 100))
+    require(Fraction(385,100)-(1/gamma-1)*Fraction(51, 10) < Fraction(25,100))
     require(1970+1068*1640**15 < 2**175)
     require((1970+1068*4*10**12)*512 < 2**61)
     require(1640*61 == 100040)
