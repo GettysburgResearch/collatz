@@ -72,3 +72,5 @@ $$
  \le C(b_i+1)^2(\|L^tf-g_t\|_1+\|g_t-g_{k_i}\|_1)=o_f(1).
 $$
 By positivity $L^nf\ge K_i L^t f$. This proves the fixed floor $c_0$ on that cylinder, independent of $f$ after its onset. For any unit target choose one bounded outer exponent $1\le v\le2\cdot3^h$ so $(2^v t-1)/3$ belongs to this cylinder modulo $3^h$. This is possible since $2$ generates the units modulo $3^{h+1}$. The extra step contributes at least $3\,2^{-2\cdot3^h}c_0$. This proves (2). The rest of the every-depth argument uses only (2), martingale projection, and its residual integral decomposition.
+
+The use of Proposition 1.14 above may alternatively be deduced from (3): sum out the clock, use projectivity of the spatial laws, and chain successive depth ratios between $0.9$ and $0.95$ to reach any coarse depth. The resulting geometric series is $O_A(k^{-A})$. Thus the paired renewal bound from Tao's Section 7 suffices as the single non-elementary estimate in this proof.
