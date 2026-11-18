@@ -111,7 +111,32 @@ def check_shells():
     return total, max_depth
 
 
+def check_terminal_lift():
+    total = 0
+    for precision in range(1, 5):
+        modulus = 3**precision
+        period = 2 * modulus // 3
+        exponent_to_residue = {
+            pow(2, k, 3 * modulus): k for k in range(3 * period)
+        }
+        for y in (1, 5, 7, 29, 35, 97):
+            for e in range(1, modulus):
+                if e % 3 == 0:
+                    continue
+                for prescribed in (3 * period, 3 * period + 1, 16 * period + 5):
+                    start = prescribed - 3 * period
+                    residue = ((y << prescribed) - 3 * e) % (3 * modulus)
+                    k = start + (exponent_to_residue[residue] - start) % (3 * period)
+                    z = inverse(y, prescribed - k)
+                    gate_endpoint = z << k
+                    assert gate_endpoint % modulus == e
+                    assert odd_core(3 * odd_core(gate_endpoint) + 1) == y
+                    total += 1
+    return total
+
+
 if __name__ == "__main__":
     print("FS-001 max odd recoding fiber for n<=10000:", check_recoding())
     print("FS-002 exact legal rotation steps:", check_lifts())
     print("FS-002 exact two-point shell witnesses and max depth:", check_shells())
+    print("FS-004 prescribed exponents reconstructed:", check_terminal_lift())
