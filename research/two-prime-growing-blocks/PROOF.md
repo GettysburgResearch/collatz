@@ -55,3 +55,16 @@ $$
 \rho\left(\frac23+\frac{2d+1}{6d^2}\right)+\frac{2d-1}{6d^2}>\frac23,
 $$
 which is (1). If $2^S\ge3^\ell$, the positive additional dyadic term alone gives a contradiction. This proves the assertion. With exactly two distinct block centers cycling once, $d=2$; if the block centers were equal the fixed-point differences would instead vanish, a degenerate case outside the statement.
+
+## Height of a rational source of a finite prefix
+
+Let an odd rational $y=a/b$ in lowest terms, $b>0$ odd, follow the first $K$ complete macroblocks. Write $H(y)=\max(|a|,b)$, $G=\max(2^S,3^\ell)$, and $D=4d^2+2d+1$. Then
+$$
+\log_2 H(y)\ \ge\
+\frac{SD+(2d-1)\ell\log_2 3-4d^2\log_2 G}{6D}\,K^2-O(K).
+$$
+The implicit constant depends only on the blocks. For $1^{5K}2^K$ the coefficient is $(7-(13/21)6\log_2 3)/6$.
+
+Indeed, replace $\xi$ by $y-p_1$ in the rational tails, where $p_1$ is the initial block center. Their 2-adic perturbation at the source has valuation at least $SK(K+1)/2+1$. Paper 46, Section 6.1, proves that for $N^2=d^2K^2/D+O(K)$ chosen just below the stability threshold, the determinant remains nonzero with the same dyadic valuation. Its clearing uses $h=h_0b$, where $h_0$ is a fixed odd positive integer clearing $p_1,c_i$. The upper bound on $\log_2|I_N|$ now includes $N\log_2H(y)$.
+
+At three apply the column argument to $h w_n$. Uniformly in $y$, both $h(y-p_1)$ and $hc_i$ are 3-integral. Thus $v_3(h w_t)\ge -O(N)$ uniformly for the signed range in (2), and equation (3) applies to $h^N H_N$ with its original uniform error. The other clearing factors are integers. Combining the two valuations with the upper bound and substituting $N^2$ gives the displayed inequality. [Dyadic finite-prefix stability and height clearing](https://rstation.ai/problems/collatz/papers/46/v1)
