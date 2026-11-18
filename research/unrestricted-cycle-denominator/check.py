@@ -19,6 +19,38 @@ def block(bits, odd_count, length):
     return pairs + "1" * (odd_count - len(bits)) + "0" * (length - odd_count - len(bits))
 
 
+def test_boundary_identity(word, count):
+    length = len(word) // count
+    weight = word.count("1") // count
+    blocks = [affine(word[i:i + length]) for i in range(0, len(word), length)]
+    sums = [0]
+    for i in range(0, len(word), length):
+        sums.append(sums[-1] + word[i:i + length].count("1") - weight)
+    assert sums[-1] == 0
+    peak = max(sums)
+    a, c, b = affine(word)
+    start = Fraction(c, b - a)
+    state = start
+    normalized = []
+    forcings = []
+    multiplier = Fraction(3**weight, 2**length)
+    for i, (block_a, block_c, block_b) in enumerate(blocks):
+        normalized.append(3 ** (peak - sums[i]) * state)
+        forcings.append(Fraction(3 ** (peak - sums[i + 1]) * block_c, block_b))
+        state = (block_a * state + block_c) / block_b
+    assert state == start
+    for i, z in enumerate(normalized):
+        assert normalized[(i + 1) % count] == multiplier * z + forcings[i]
+
+    mean = sum(forcings) / count
+    partial = [0]
+    for value in forcings:
+        partial.append(partial[-1] + value - mean)
+    discrepancy = max(partial) - min(partial)
+    assert max(normalized) - min(normalized) <= 2 * discrepancy
+    return discrepancy
+
+
 def check():
     odd_count, length = 41, 65
     periods = (5, 7)
@@ -50,6 +82,9 @@ def check():
         state = ((3 * state + 1) if bit == "1" else state) / 2
     assert state == predicted
 
+    assert test_boundary_identity(word, prod(periods)) < Fraction(prod(periods) - 1, 2)
+    test_boundary_identity("11100100", 2)  # unequal block weights
+    test_boundary_identity("10", 1)  # actual positive integer cycle
     for edit in ("0", "1", "011", "1011010", baseline):
         edit_a, edit_c, edit_b = affine(edit)
         new_a, new_c, new_b = affine(word + edit)
