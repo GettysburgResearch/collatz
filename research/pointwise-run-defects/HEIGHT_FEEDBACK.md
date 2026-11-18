@@ -35,3 +35,23 @@ For a rule using x_(j-r),…,x_j, refine the finite memory by storing the previo
 For all sufficiently large real j their vertical sections have endpoints on a common finite list of continuous semialgebraic real functions. This is planar semialgebraic cell decomposition. The ordering and membership between endpoints and on endpoint graphs are fixed there. Each endpoint is eventually of constant sign, and each eventually positive one has a leading Puiseux asymptotic a j^c with a>0 and rational c (including a finite nonzero limit). It is therefore polynomially bounded and has unit successive ratio. Nonpositive endpoints can be discarded for positive states. Alternatively these endpoint facts follow directly by taking real roots of each defining polynomial as a polynomial in its second variable and using its finitely many Puiseux branches at infinity. Thus a machine of the preceding kind implements the rule. If x_(j+1) is prescribed by a real semialgebraic function of time and the preceding states, comparison with x_j/2 identifies its parity branch: the two next values are distinct for positive x_j. This proves the stated corollary.
 
 An arbitrary ordinary itinerary always permits exact prediction with the integer parity test. The step from this arithmetic test to a finite real decision rule on that specific itinerary remains unproved.
+
+The same statement applies to rules definable in any fixed polynomially bounded o-minimal expansion of the real ordered field. Planar cell decomposition and eventual monotonicity replace the semialgebraic Puiseux argument. For an eventually positive definable endpoint g, both g and 1/g are polynomially bounded. The definable ratio g(t+1)/g(t) has an extended limit by monotonicity. A limit greater than one would give geometric growth along integers, and a limit less than one would do the same for 1/g, so the limit is one. These are the only additional o-minimal facts used.
+
+Ordinary integrality is essential even for a fixed constant threshold: start at 1/5 and choose the odd affine formula precisely when x≤1. This gives 1/5,4/5,17/10 and then bounded positive rationals. After the first negative binary valuation appears it decreases by exactly one at each step under either affine formula. All subsequent states are distinct. The second chosen branch disagrees with the dyadic parity of 4/5. Hence an ordinary proof cannot keep just the real recurrences and the predictor while discarding dyadic consistency.
+
+## Some thresholds above polynomial scale
+
+There is also a finite-window extension using only elementary approximation of log₃2 by continued fractions. For H≥1 suppose some
+
+    0<β<min(1/3,1/(2H))
+
+and fixed C satisfy for all sufficiently large n and every l
+
+    log⁺ g_l(n) ≤ C n^β,       |log g_l(n+1)−log g_l(n)| ≤ C n^(β−1).
+
+Then exact prediction again forces eventual periodicity. In particular the conclusion covers any finite number of quasipolynomial thresholds exp((log n)^a) with fixed real a>0, as well as a single threshold exp(n^β) for every fixed 0<β<1/3.
+
+For a simple orbit above the envelope exp(C n^β), the same autonomous finite-state excursion estimate gives a length O(log(x_entry+1))=O(n^β) after first crossing. Therefore, globally, log(x_n+1)≤C' n^β eventually. Let K be an arbitrarily large continued-fraction convergent denominator of log₃2. Any two distinct cuts i log 2−p log 3 with 0≤p≤i<K are separated by at least c/K with absolute c>0. For unequal i, use the best-approximation bound ||d log₃2||≥||q_prev log₃2||>1/(K+q_prev) for 0<d<K; equal i is immediate. Choose N of order K^(1/β), with a small enough fixed proportionality constant that x_j<2^K for N≤j≤2N. There are therefore at least N distinct K-bit words starting in this interval.
+
+The true logarithmic height at offset i≤K differs from log x_j+p log 3−i log 2 by at most E_j=Σ_(j≤v<j+K)1/(3x_v). Each globally distinct positive integer in the sum over N≤j≤2N is counted at most K times. Hence Σ_j E_j=O(K log(2N)), using only the harmonic bound for at most 2N+K distinct positive integers. Discard starts with E_j>c/(10K); at most O(K²log N)=o(N) are discarded. Each threshold's log changes by O(K N^(β−1))=o(1/K) throughout each window as β<1/3. Thus in simulating the K bits from a remaining start, the comparisons from log(x_j/g_l(j)) against the cuts are exact except in the disjoint c/(3K)-neighborhoods of the cuts. There can be at most one ambiguous time per threshold along a simulated branch. As before the possible words from these starts number O_F,H(K^(2H)), counting the cells including the cut neighborhoods. This is o(N) by 2Hβ<1, contradicting the distinct-word count. No effectiveness statement about onset is needed.
