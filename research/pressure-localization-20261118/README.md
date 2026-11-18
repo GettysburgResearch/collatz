@@ -121,3 +121,11 @@ python -B experiments/pressure-localization-20261118/check.py /tmp/pressure-trac
 ```
 
 [Exact integer endpoints](../../reports/pressure-localization-20261118/trace.json).
+
+[Signed logarithmic pressure](LOGARITHMIC.md) gives a power-moment-free
+dissipation inequality, a division-count target and polynomial-cost
+finite-clock enclosures.
+
+[Coefficient occupation](OCCUPATION.md) bounds the all-time weight of
+low multipliers on simple paths and gives a separate cycle-retaining
+telescope.
