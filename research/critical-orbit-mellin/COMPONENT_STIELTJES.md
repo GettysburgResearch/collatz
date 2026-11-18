@@ -117,3 +117,49 @@ there. These finite witnesses vary with $k$; they do not exhibit an
 infinite ordinary escaping spine. Excluding that fixed-source case,
 or finding an upper estimate on its component transform in (2),
 remains open.
+
+## Joint finite source and Stieltjes scales on a fixed escaping component
+
+Let $0<\eta<1$ be a [uniform orbit packing exponent](PRIOR_WORK.md):
+a simple odd orbit visits $[H,2H]$ at most $O(H^\eta)$ times.
+If the component $C$ escapes, there are absolute $A,b>0$ (for fixed
+packing constants) and an onset $R_C$ such that
+$$
+ \frac1X\#\{X/4<n\le X:\ n\text{ odd in }C,       0<1-V_\infty(n)\le R^{-1}\}\ge b/R                          \tag{4}
+$$
+whenever $R\ge R_C$ and $X\ge A R^{1/(1-\eta)}$.
+This controls finite shell counts at shrinking distortion radii.
+
+Indeed put $S_i=\sum_{l\ge i}1/y_l$, and at each $i$ use the unit
+sibling $s_i$ between $y_i$ and $21y_i$ from the
+[disjoint entrant construction](STIELTJES_ESCAPE_FLOOR.md).
+For $X\ge C s_i$, applying the [controlled first-landing estimate](../terminal-residue/SUPPORT.md)
+at $a=M=s_i$ gives at least $b_1 X/s_i$ odd sources entering that
+sibling with total pre-entry logarithmic correction $O(1/s_i)$.
+The proof of that estimate controls the correction **up to entry**
+regardless of the eventual minimum. The remaining correction, from
+$s_i$ along the spine, is at most $C_1 S_i$. Thus the entire
+relative distortion is at most $C_2 S_i$ for all these sources.
+The selected families are disjoint in $i$.
+
+Take the first $j$ with $C_2 S_j\le1/R$. As $S_{j-1}\le3S_j$,
+one has $S_j\gg1/R$ for large $R$. The subset of the tail at heights
+$y_i>H$ contributes at most $C_3 H^{\eta-1}$ by dyadic summation.
+Choose $H$ a sufficiently large constant times $R^{1/(1-\eta)}$.
+The retained $y_i\le H$ then contribute at least $S_j/2$. All
+the chosen siblings have $s_i\le21H$. Summing the simultaneous
+first-landing counts proves (4).
+
+For $r(n)=1-V_\infty(n)$, set
+$$
+ L_{C,X}(c)=X^{-1}\sum_{X/4<n\le X,\ n\text{ odd in }C}
+             \frac{V_\infty(n)}{1+c r(n)} .
+$$
+Integrating (4) on $1/c\le r\le1/R_C$ by the layer-cake identity
+gives $L_{C,X}(c)\gg(\log c)/c$ uniformly for large $c$ and
+$X\ge A c^{1/(1-\eta)}$ (increase $R_C$ to ensure $V_\infty\ge1/2$
+in the retained events). Consequently one joint sequence of shell
+averages over **all** odd sources below this rate in that range
+would exclude escape. Periodic sources have $V_\infty=0$ and incur
+no contribution. The proof supplies the lower estimate under escape;
+an unconditional upper estimate of that order remains unavailable.
