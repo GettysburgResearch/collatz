@@ -54,3 +54,11 @@ point by compactness, so a finite set of $h$ such points would give
 $d_{p^k}\le h$ for every $k$, contradicting the bound. The estimate
 permits unbounded but very sparse support and gives no contradiction
 with the upper estimates for first-hit pressure in FS-017.
+
+For prior work on escaping trajectories and ternary residues, rStation
+paper 150 v2, Corollary 4 gives an explicit positive singular-mass
+lower bound for every limiting empirical ternary law of an escaping
+odd orbit. FS-019 instead bounds the number of infinitely revisited
+residue classes of the entire shortcut orbit at each fixed odd modulus.
+It makes no new claim to the preceding singular-mass result.
+[Paper 150 v2](https://rstation.ai/problems/collatz/papers/150/v2).

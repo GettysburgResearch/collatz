@@ -268,3 +268,30 @@ At this full-modulus budget the inverse screen gives no additional
 exponential saving. These finite candidates can change with $X$; neither
 this statement nor the all-depth population law constructs a least
 counterexample to Collatz.
+
+## Prior inverse-minimum and fixed-depth results
+
+The versioned rStation manuscripts below precede this work. Paper 1 v3
+proves genuine matched-depth minima and sharp additional-depth exclusions
+on specified source cylinders, including arbitrarily long protected
+prefixes with a later genuine forward escape. Paper 139 v2 extends
+matched-depth minimality to balanced valuation words up to near the
+critical slope. Paper 148 v1 permits unrestricted reference letters,
+with exact cylinder tests and finite weight cutoffs for rival depths
+$1\le r\le s$ relative to the supplied reference length $s$. These
+are direct precedents for finite-word inverse-minimality tests.
+[Paper 1 v3](https://rstation.ai/problems/collatz/papers/1/v3) ·
+[Paper 139 v2](https://rstation.ai/problems/collatz/papers/139/v2) ·
+[Paper 148 v1](https://rstation.ai/problems/collatz/papers/148/v1).
+
+Paper 150 v2, Theorem 3, controls the minimum *shortcut cost* of reaching
+a prescribed odd inverse depth at a Haar ternary input, including a
+critical $3/2$ logarithmic correction and an effective deficit bound.
+Its Corollary 4 gives a quantitative rare-cylinder visit bound and a
+universal Haar-null set carrying at least $0.088551\ldots$ of any
+limiting ternary empirical law of an escaping odd orbit. The
+all-depth record argument above addresses a different limit: the least
+actual ordinary source height at an unrestricted hit, measured over
+ordinary target intervals. In particular the preceding fixed-depth
+barrier and escaping-orbit rarity are prior results.
+[Paper 150 v2](https://rstation.ai/problems/collatz/papers/150/v2).
