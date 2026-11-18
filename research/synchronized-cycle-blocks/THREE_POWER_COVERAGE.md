@@ -182,3 +182,49 @@ margin, the forward margin exceeds 1/2. The former test also handles
 every coincident ray. This rules out the last square configuration.
 If no positive eta and L_0 worked, choosing successive gap fractions
 1/n and period thresholds n would give the excluded sequence.
+
+## Two large roots of opposite signs in a four-power cover
+
+For an exact cover by four powers, the least state lies in the last
+copy of a decreasing power of exponent at most five. At least one
+increasing factor has exponent at most eighteen, and at least one of
+the four selected exponents is two. These finite exponent conclusions
+also hold eventually for four powers covering all but o(L) positions
+along an unbounded sequence. In the latter case both a rising root and
+a descending root have width bounded below by a fixed positive
+multiple of L, simultaneously.
+
+Indeed write b for the exponent of the minimum-containing descent
+and K for the product of the height amplification bounds on the at
+most three rising factors. Use the [sweep inequalities](FRAGMENTED_COVERS.md)
+with this exact b, retaining the different exponent floors for the
+other factors. Its margin is mu=1-gamma(b+K-1)/(b(b-1)c).
+If every descent has exponent >=6, or just this particular b>=6,
+take b=6 and K<=A_2^3. If every increase has exponent >=19,
+take b=2 and K<=A_19^3. If all four powers are cubes or higher,
+take b=3 and K<=A_3^3. In every case mu>1/250, as follows by
+substitution with 1054/665<c<485/306 using the lower endpoint only
+for c in the denominator of the margin. Increasing b only improves
+the margin. All three bounds have K<56.
+
+In an exact cover there is at least one descent by strict cyclic
+monotonicity, and in all cases K<64 even using three squares.
+If the least phase lies in an increase, its first-copy bound gives
+an entry height J<=4Z. Otherwise in the configurations just listed,
+the exit of its descent has J<=250(Z+s), where Z=log₂(2m+2),
+s=log₂(L+1). Each powered length is <=5KJ, so with t=log₂ L,
+Z<=16t and s<=2t, one obtains L<=5760000t. This is incompatible
+with the verified period floor L>2^36 since 2^t/t is increasing
+there. Thus the minimum is in a descent and none of the three
+configurations occurs.
+
+For d=o(L) uncovered positions, a minimum in a gap or an increase
+gives a starting boundary of height O(log L+d). Even allowing four
+rises, this bounds all four lengths by O(log L+d), impossible. For
+a minimum-containing descent, in each excluded configuration the same
+positive margin gives J=O(log L+d), again a contradiction. Finally
+remove any one of the four factors. The three-power theorem above
+shows its length plus d is at least eta L. Thus all four lengths
+are eventually at least eta L/2. Dividing by the bounded exponents
+produces a rising root of width >=eta L/36 and a descending root
+of width >=eta L/10.
