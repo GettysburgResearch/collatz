@@ -1,5 +1,6 @@
 """Exact ternary transfer for C_Q with cap 2Q, including a small-depth word audit."""
 import argparse
+from collections import deque
 from fractions import Fraction
 from itertools import product
 
@@ -34,6 +35,65 @@ def transfer(depth):
     return slopes, moments, maxima
 
 
+def sliding_transfer(depth):
+    """Evaluate two geometric sums and a weighted maximum along the unit cycle."""
+    cap = 2 * depth
+    base = 1 << cap
+    slopes, moments, maxima = [1], [0], [0]
+    previous_scale = 1
+    for _ in range(depth):
+        old_modulus = len(slopes)
+        modulus = 3 * old_modulus
+        period = 2 * old_modulus
+        new_slopes, new_moments, new_maxima = ([0] * modulus for _ in range(3))
+        history = deque()
+        leaders = deque()
+        slope_sum = moment_sum = 0
+        input_unit = output_unit = 1
+        # At the output j, the window is l=j+1,...,j+cap, including wraparound.
+        for index in range(1, period + cap):
+            input_unit = 2 * input_unit % modulus
+            slope = moment = peak = 0
+            if input_unit % 3 == 1:
+                parent = (input_unit - 1) // 3
+                slope = slopes[parent]
+                if slope:
+                    moment = previous_scale * slope + 3 * moments[parent]
+                    peak = previous_scale + 3 * maxima[parent]
+
+            slope_sum = 2 * slope_sum + slope
+            moment_sum = 4 * moment_sum + moment
+            if len(history) == cap:
+                outgoing_slope, outgoing_moment = history.popleft()
+                slope_sum -= outgoing_slope << cap
+                moment_sum -= outgoing_moment << (2 * cap)
+            history.append((slope, moment))
+
+            if leaders and leaders[0][0] <= index - cap:
+                leaders.popleft()
+            if peak:
+                # Compare peak/2**index without constructing powers with large indices.
+                while leaders:
+                    earlier, value = leaders[-1]
+                    if value << (index - earlier) > peak:
+                        break
+                    leaders.pop()
+                leaders.append((index, peak))
+
+            if index >= cap:
+                new_slopes[output_unit] = 3 * slope_sum
+                new_moments[output_unit] = 3 * moment_sum
+                if leaders:
+                    earlier, value = leaders[0]
+                    new_maxima[output_unit] = value << (index - earlier)
+                output_unit = 2 * output_unit % modulus
+        assert output_unit == 1
+        slopes, moments, maxima = new_slopes, new_moments, new_maxima
+        previous_scale *= base
+    assert sum(slopes) == (3 * (base - 1))**depth
+    return slopes, moments, maxima
+
+
 def literal(depth):
     """Form forward affine maps and resolve their odd target by congruence."""
     modulus = 3**depth
@@ -60,8 +120,10 @@ def literal(depth):
     return (slopes, moments, maxima), scalar + cycle_term
 
 
-def evaluate(depth):
-    arrays = transfer(depth)
+def evaluate(depth, sliding=False):
+    arrays = sliding_transfer(depth) if sliding else transfer(depth)
+    if sliding and depth <= 10:
+        assert arrays == transfer(depth)
     slopes, moments, maxima = arrays
     modulus = len(slopes)
     scale = 1 << (2 * depth**2)
@@ -89,9 +151,11 @@ def evaluate(depth):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("max_depth", nargs="?", type=int, default=10)
+    parser.add_argument("--sliding", action="store_true",
+                        help="use linear-time geometric windows; cross-check through depth 10")
     args = parser.parse_args()
     if args.max_depth < 1:
         parser.error("max_depth must be positive")
     print("Q cycle_term C_lower_ppm C_upper_ppm")
     for q in range(1, args.max_depth + 1):
-        print(q, *evaluate(q))
+        print(q, *evaluate(q, args.sliding))
