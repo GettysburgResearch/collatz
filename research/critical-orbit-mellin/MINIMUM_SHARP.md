@@ -1,5 +1,7 @@
 # The sharp quadratic tail of the least-predecessor law
 
+Paper 146 already proves the full tail equivalent for the stationary Syracuse density, stronger than the stationary-density corollary below. Its real-offset and delayed-overlap estimates are material methodological precedents. [Prior-work comparison](PRIOR_WORK.md)
+
 **PROPOSED.** In the notation of [the fixed-depth bound](MINIMUM_TAIL.md) and [the all-depth density transfer](../fixed-floor-shells/PREDECESSOR_MINIMA.md), there is an absolute constant $c>0$ such that
 $$
  c\theta^2\le d(\theta)\le\theta^2\qquad(0<\theta\le1).

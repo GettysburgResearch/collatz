@@ -1,5 +1,7 @@
 # Occupied states at the critical parity-entropy exponent
 
+Paper 28, v3, already implies this critical estimate and proves a stronger translated-orbit power bound. The argument here gives an elementary alternative. [Prior-work comparison](PRIOR_WORK.md)
+
 **PROPOSED.** This is a proof for ordinary positive shortcut orbits. The critical estimate below strengthens the range of exponents in [T-A3-402 and T-A3-403](../astra-three-routes/pass2/ORBIT_MELLIN.md). That source already supplies reciprocal summability and coefficient escape. We use neither a conjectured orbit law nor a simulated orbit.
 
 Let \(T(x)=x/2\) for even \(x\) and \(T(x)=(3x+1)/2\) for odd \(x\). Set

@@ -1,5 +1,7 @@
 # A positive asymptotic constant for the least-predecessor law
 
+Earlier minimum theorems compare prescribed words and depth ranges, and Paper 146 already uses dependent-branch implicit renewal for the stationary Syracuse density. [Prior-work comparison](PRIOR_WORK.md)
+
 **PROPOSED.** There is a constant $c_*\in(0,1]$ such that the relative odd natural density of targets with least predecessor below $\theta t$ satisfies
 $$
  d(\theta)\sim c_*\theta^2\quad(\theta\downarrow0).

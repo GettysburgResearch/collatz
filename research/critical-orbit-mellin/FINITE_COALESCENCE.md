@@ -1,5 +1,7 @@
 # Finite synchronous coalescence in every interval
 
+Paper 28 obtains a stronger power for labelled images at a squared-logarithmic clock. Its two-window estimate also yields a labelled logarithmic-clock refinement when a linearly growing threshold is used. [Comparison and deduction](PRIOR_WORK.md)
+
 **PROPOSED.** Throughout, \(T\) is the shortcut Collatz map and positive integers are the inputs. For \(X\ge2\), put \(L(X)=\lfloor\log_2 X\rfloor\). Set \(p=\log_3 2,\ h=H_2(p)\), and \(\kappa=\log(p/(1-p))/\log 3\). Fix \(\rho\) with
 \[
  \max(\kappa,1-h)<\rho<1 .

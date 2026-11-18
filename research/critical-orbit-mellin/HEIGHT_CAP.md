@@ -1,5 +1,7 @@
 # A height bound for finite simple trajectories at the entropy threshold
 
+The power improvement in Paper 28, v3, implies a stronger height-cap estimate. [Prior-work comparison](PRIOR_WORK.md)
+
 **PROPOSED.** Let \(x_0,\ldots,x_{m-1}\) be distinct positive integers with \(T(x_i)=x_{i+1}\) for \(i+1<m\), where \(T\) is the shortcut Collatz map. Let \(M=\max_i x_i\), \(p=\log_3 2\), and \(h=H_2(p)\). There are absolute positive constants \(c,C\) such that, for \(M\ge2\),
 \[
  m\le C M^h\exp\{-c(\log M)^{1/3}\}.                       \tag{1}

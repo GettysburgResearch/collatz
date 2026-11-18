@@ -1,5 +1,7 @@
 # The exact critical inverse-pressure tail
 
+The random variable here is the all-word Green sum. Paper 146 proves an exact quadratic tail for the distinct stationary geometric density and develops related offset and overlap techniques. [Prior-work comparison](PRIOR_WORK.md)
+
 **PROPOSED.** At a Haar ternary target, let $H=\mathcal H_2$ be the sum of $J^2$ over all integral inverse valuation words, including the empty word, where $J=3^q/2^A$. Then
 $$
  \lim_{u\to\infty}u\Pr(H>u)=\frac1{2\mu},\qquad

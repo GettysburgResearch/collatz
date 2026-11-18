@@ -1,5 +1,7 @@
 # What the native parity horizon can resolve
 
+Prior Papers 87 and 89 give stronger arithmetic and probabilistic conclusions for native and slightly longer survival clocks. [Prior-work comparison](PRIOR_WORK.md)
+
 **PROPOSED.** Keep the shortcut map and the constants \(p,h\) of the [critical window bound](CRITICAL_MOMENT.md). Let \(G_L\) consist of length-\(L\) binary words for which \(q_t\ge pt\) at every prefix. The window proof counts uncaptured words without an orbit membership test. The order of magnitude of that particular counting error is sharp:
 \[
  |G_L|\asymp 2^{hL} L^{-3/2}.
