@@ -41,3 +41,13 @@ Fix B. There are finitely many odd s≤B. For each whose orbit ever meets the sp
 For q=0 the left side is exactly `1/y_j`, so the estimate continues to hold. Since `inf_{i≥K} y_i→∞`, take K→∞ and then B→∞ to get (2).
 
 At q=j the inclusion of n in the inverse level gives `g_j(y_j)/y_j ≥ 1/[n P_∞(n)]` for all j, where `P_∞(n)` is the finite correction product above. For any fixed lag k≥0 the same argument from y_k gives `g_{j−k}(y_j)/y_j ≥ 1/[y_k P_∞(y_k)]` for j≥k. Thus diverging lag in (2) is necessary. The [uniform unit minorization at ddae6fe](https://github.com/GettysburgResearch/collatz/blob/ddae6fe/research/native-pressure-20261118/MINORIZATION.md) gives `g_s(y_1)≥c` over s≥1, since y₁ is a ternary unit. Propagation from y₁ therefore gives a positive lower bound on `g_{j+k}(y_j)/y_j` simultaneously for every j≥1 and every k≥0. The q=j sharpness is independent of that additional analytic input.
+
+Telescoping (2) against the q=j lower bound gives a necessary temporal discontinuity. There exist fixed K,c>0 for this spine such that, for every sufficiently large j, some `j−K≤s<j` satisfies `|g_(s+1)(y_j)−g_s(y_j)|≥c y_j`. Consequently uniform decay of `sup_y |g_(s+1)(y)−g_s(y)|/y` on ordinary odd units would exclude divergent orbits. A Haar integral estimate for these increments does not provide this uniform ordinary-point control.
+
+## Width of all large ordinary density values
+
+For any reachability antichain Y of nonperiodic odd targets and any independently chosen integer depths `q_y≥1`, the unitized inverse levels used above form one antichain. Indeed, if two sources from different levels were comparable, their targets would lie on the same forward orbit and would be comparable. Both unitization and the factor-six reciprocal bound operate within the chosen level of each target. The capacity bound with the union of all basins of Y now gives
+
+    Σ_{y∈Y} sup_{q≥1} g_q(y)/y ≤ C_r lower_density(⋃_{y∈Y} P(y))^θ.   (4)
+
+To handle the suprema, approximate each from below on a finite subset, then take the supremum of all such sums. In particular the set of nonperiodic targets satisfying `sup_q g_q(y)/y>δ` has reachability width at most `C_r/δ`. It is a union of at most `⌈C_r/δ⌉` chains: apply finite Dilworth to successive finite subsets, then use compactness of the finitely branching tree of compatible chain colorings. For singleton Y, (4) supplies an upper bound paired with the [lower Cesàro bound at c2c25da](https://github.com/GettysburgResearch/collatz/blob/c2c25dabf3b837a223a46310d0092ef32e2119dd/research/native-pressure-20261118/ORDINARY-DENSITIES.md), which bounds the liminf of the normalized depth averages below by a constant times the lower density of P(y).
