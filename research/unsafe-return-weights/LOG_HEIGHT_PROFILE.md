@@ -39,3 +39,15 @@ Only finitely many components are represented below R. For each retained compone
     s ↦ (1/q) Σ_(n odd≤exp(sq), n∈C) V_∞(n)/n
 
 converge uniformly on [0,ℓ] to s d_C/2, by pointwise convergence and continuity of the limit. The step test in s with values f(log y_(C,j)/q) has total variation O_(C,f)(1) by the same variation bound. Summation by parts therefore replaces the weighted source distribution by ds·d_C/2 with o(1) error. The resulting sum is δ d_C times the q-term empirical average in (1). Components not represented below R have total weighted mean at most Pr(m>R), by global minimum tightness. Taking q to infinity, then R to infinity and ε to zero, completes the comparison. The normalization uses [Valbuena's weighted basin and component formulas](https://doi.org/10.5281/zenodo.23025885).
+
+## An unconditional lower cutoff on the other side
+
+Let N(Y) uniformly bound the number of states ≤Y on any simple trajectory segment, increasing the bound to include a full cycle. Whenever N(Y_q)=o(q),
+
+    (1/q) Σ_(odd t≤Y_q) g_q(t)/t → 0.                                  (3)
+
+Indeed the uniform first-hit level estimate g*_j(t)/t≤C d(P(t)) holds also at nonperiodic t, where g*_j=g_j: their level sources form a reachability antichain with basins in P(t), with the usual unit sibling replacement at ternary nonunits. For j=0 use the prior predecessor-density lower bound; g_q(t)=0 at ternary nonunits for q≥1. See the [first-hit proof and cyclic exceptions](INVERSE_AGE_LAWS.md). Sum the densities of nonperiodic basins with t≤Y by taking expectations of their indicators, a finite sum. Each ordinary trajectory visits at most N(Y) such states before it becomes periodic or throughout its simple orbit, so these terms contribute O(N(Y)).
+
+For a cycle C of period d and basin density p_C, each unrestricted level is a sum of at most 1+q/d first-hit levels, with multipliers at most one. There are at most min(d,N(Y)) cycle vertices ≤Y. Thus the contribution of C is O((N(Y)+q)p_C). Given any ε>0, omit all but finitely many cycles of combined omitted density ≤ε, possible since cycle basins are disjoint. The retained cycle vertices contribute O_ε(1) at all depths by fixed-target domination, and the omitted ones O(ε(N(Y)+q)). Divide by q and then let ε go to zero. This proves (3).
+
+In particular take h₀=H₂(log₃2). The effective [critical packing estimate](https://github.com/GettysburgResearch/collatz/blob/f702a03/research/critical-orbit-mellin/CRITICAL_MOMENT.md) allows Y_q=q^(1/h₀), or q^(1/h₀)(log q)^b for each b<3/(2h₀). The [prior strict power saving in Paper 28, v3](https://rstation.ai/problems/collatz/papers/28/v3) further permits q^(1/h₀+κ) for some κ>0. Neither such polynomial cutoffs nor the logarithmic bands strictly above (3/2)^q can detect escape mass by themselves. Subtracting (3) from (2) gives the same exact test on the intermediate window.
