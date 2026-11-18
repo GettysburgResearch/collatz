@@ -39,3 +39,13 @@ Denote normalized odd logarithmic mean by E. The [prior canonical trace and comp
 To interchange E with the sum in (4), fix R and take M above all cycle vertices on the trajectories of the finitely many odd starts ≤R that eventually cycle. On every escaping path and every preperiodic simple prefix, vertices x>M expend at most C M^(-c) by the uniform simple-segment reciprocal tail. After the first cycle vertex the total remaining expenditure is at most one. If this cycle is not on the finite list, any trajectory in its basin has global minimum >R. Thus the expected loss from discarding x>M is at most C M^(-c)+Pr(m>R), which tends to zero by taking M then R to infinity. The same finite-root localization also permits summing E(V_∞ 1_C) over escaping components: outside components of the starts ≤R the mass is at most Pr(m>R). The canonical result gives existence of those individual means and Pr(m>R)→0. This proves (2) and (3). The simple-segment tail, global-minimum tightness and component formula are all available in the cited canonical trace paper.
 
 For a numerical truncation one can sum x≤2k·3^q at any k≥1. In each subsequent odd block of length 2·3^q the density sums to 3^q by periodicity and normalization, so the positive remaining sum is ≤(1+1/k)/(12 k 3^q). This is only a spatial truncation bound at fixed q. The unresolved bound is on the limiting depth.
+
+There is also a Cesàro version that does not require the new every-depth theorem. Put A_q=Σ_(t odd)(g_q(t)−1)/t in increasing order. Summing (1) over q telescopes to A_Q, since g_0=1. Prior pointwise Cesàro convergence and the same domination in the positive correction series prove
+
+    A_Q/Q → Σ_(escaping C) (3/2)H_C.
+
+Thus a sublinear upper bound on A_Q even along one subsequence would rule out escape. In a complete odd period the density has total mass 3^Q. Grouping all periods after the first in pairs of summands g_Q−1 against the varying reciprocal shows that replacing A_Q by its sum on t≤2·3^Q costs O(1) absolutely, independently of Q: on period number k≥1 subtract the constant 1/(2k·3^Q), use total absolute mass ≤2·3^Q and reciprocal oscillation ≤1/(2·3^Q·k(k+1)), then sum. Equivalently the ordinary finite certificate needed is
+
+    liminf_(Q→∞) [1/Q · Σ_(1≤t≤2·3^Q, t odd) g_Q(t)/t] ≤ (log 3)/2.   (5)
+
+For comparison the [directed integer replay](check_signed_mass.py) brackets S_q at depths 0 through 14. At q=0 it lies between −0.178797 and −0.178796, at q=12 between −0.008626 and −0.008625, at q=13 between 0.000668 and 0.000669, and at q=14 between 0.007317 and 0.007318. Thus the sign can change before the limit. Bounds use the positive tail above, directed dyadic quotient enclosures and the positive Taylor series atanh(1/7)=δ. None determines (5).
