@@ -1,0 +1,86 @@
+# A divergent orbit forces an inverse-power floor tail
+
+**FS-020. PROPOSED, conditional on an actual divergent positive orbit and
+the source-qualified Lau predecessor estimate from [FS-008](TIMED_BLOCKS.md).**
+Let $S_B$ comprise all positive integers whose entire ordinary Collatz
+orbit stays above $B$. Put $p=25/11$ and
+$h=H_2(\log_3 2)=0.9499555\ldots$, with $H_2$ binary entropy. If one
+positive trajectory escapes to infinity, then for every sufficiently
+large $B$,
+$$
+ \underline d(S_B)\gg B^{-p-(92/33)h}.
+$$
+The exponent is less than $4.93$. The constant is absolute given Lau's
+constant, and the starting cutoff may depend on the escaping seed.
+This concerns arbitrarily high floors on a divergent component. A
+bounded nontrivial cycle alone gives no such implication.
+
+**Tail and pollution.** Choose the odd state $t$ just after the escaping
+orbit's last odd value at most $B$. Then $B<t\le(3B+1)/2$, and all
+its later odd and intermediate even values exceed $B$. It is prime to 3.
+For every odd unit $y$, an inverse Syracuse step of exponent $a$ sends
+it to $(2^a y-1)/3$ when integral. In any six consecutive exponents,
+two give an odd unit output. Choose a single fixed-range exponent between
+12 and 17 to obtain a root $r\asymp B$ above $100 B$. Its forward tail
+also stays above the floor.
+
+Any integral seed at most $B$ whose trajectory enters this inverse tree
+and escapes has a last odd value $s\le B$. Distinct incomparable
+vertices, each with an entirely above-floor future, that admit such
+small ancestors require distinct last exits $s$. There are only
+$O(B^h)$ possible exits: $s\ge(2B-1)/3$, and the subsequent shortcut
+states exceed $B$ (including even intermediates). For
+$L=\lfloor\log_2 B\rfloor$, if the first $L$ shortcut steps have $q$
+odd inputs, then
+$$
+ B<T^L(s)\le s\,3^q2^{-L}\exp(O(L/B)).
+$$
+Thus $q\ge L\log_3 2-O(1)$. Each parity word fixes a unique residue
+modulo $2^L$, occurring at most three times below $B$; the binomial
+tail is $O(2^{hL})$ by Stirling. Write $M=\lceil C B^h\rceil$ with
+a sufficiently large universal constant to bound the number of exits.
+
+**Inverse antichain.** The [integer replay](check_floor_tree.py) checks
+the following finite inequality for every odd unit $y$. Take all blocks
+of six inverse Syracuse steps with $1\le a_i\le13$, each intermediate
+an odd unit, and $D=2^{\sum a_i}/3^6\ge11/10$. Then
+$$
+ \sum_{\rm blocks}D^{-3/5}\ge17937772/16777216>1.
+$$
+The replay enumerates the starting unit residues modulo $3^7$, since
+one factor of 3 is removed at each inverse step. It computes a lower
+integer approximation to each weight by testing fifth powers, and the
+displayed minimum is attained for the rounded sum at residue 2023.
+The endpoint is $z=Dy-e$ with $e\ge0$ bounded by an absolute constant
+over this finite dictionary. Thus for sufficiently large $B$, every
+block endpoint from $y\ge r$ is at least $1.05y$ and at most $C_0 y$.
+Intermediate steps are at least $(2/3)^6(y+1)-1>B$. All forward
+routes from these nodes through $r$ stay above the floor.
+
+Give each endpoint $z$ weight $(r/z)^{3/5}$. Its children have total
+weight at least its weight by the displayed inequality. Stop each branch
+at its first block endpoint above $Y=r(3M)^{5/3}$. This is a finite cut
+since each block expands, and every leaf lies in $(Y,C_0Y]$. Total
+weight is at least one, giving at least $3M$ leaves. Distinct leaves
+are incomparable even for their entire forward basins: a route to the
+nonperiodic root is unique, and the first-crossing stopping criterion
+makes its block paths prefix-free. If an unaligned depth were involved,
+each depth to the root is a multiple of six, so their difference is
+also a multiple of six.
+
+At most $M$ leaves admit any ancestor at most $B$. Every remaining leaf
+has its entire predecessor basin in $S_B$. These basins are disjoint
+and their finite sum of lower densities is at least
+$2M D_A^{-1}(C_0Y)^{-p}$ by Lau. Substituting $r\asymp B$ and
+$M\asymp B^h$ gives the claim.
+
+Without the finite replay, a weaker inverse-power lower follows by taking
+two increasing unit predecessors per step with $2\le a\le7$ for
+$\lceil\log_2(2B)\rceil$ steps, then discarding at most $B$ leaves.
+
+**Summability boundary.** Even summing the available *absolute* Lau
+coefficients $D_A^{-1}u^{-p}$ over every possible integer target $u>B$
+gives only $O(B^{1-p})$. A joint estimate over many tail edges using
+only additive contributions of these coefficients cannot produce an
+inverse-logarithmic floor lower. The known upper estimates of every
+fixed inverse-logarithmic order permit the polynomial lower above.
