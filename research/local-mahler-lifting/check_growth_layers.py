@@ -75,8 +75,25 @@ def check_words():
         word = "".join(RULES[letter] for letter in word)
 
 
+def check_frequency_example():
+    x_count, y_count = 1, 0
+    total_ones, total_bits = 0, 0
+    for level in range(45):
+        length = x_count + y_count
+        total_ones += 3 * x_count + 4 * y_count
+        total_bits += 4 * length
+        lower_endpoint = Fraction(total_ones, total_bits)
+        total_ones += 4 * x_count + 3 * y_count
+        total_bits += 4 * length
+        assert Fraction(total_ones, total_bits) == Fraction(7, 8)
+        if level >= 10:
+            assert Fraction(83919, 100000) < lower_endpoint < Fraction(83921, 100000)
+        x_count, y_count = 3 * x_count + y_count, x_count
+
+
 if __name__ == "__main__":
     check_orbit((1, 1, 1, 1), True)
     check_orbit((0, -1, -1, -1), False)
     check_words()
-    print("Verified 242 sampled prime vectors and 15 complete word levels.")
+    check_frequency_example()
+    print("Verified 242 sampled prime vectors, 15 complete word levels, and 45 density pairs.")
