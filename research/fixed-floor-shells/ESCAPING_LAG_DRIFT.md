@@ -27,3 +27,15 @@ The upper endpoint lies in C with probability δ+o(1). The probabilities of an a
 Choose η absolutely small so the coefficient exceeds half of μ log 2−1. Then choose c absolutely small so Markov's inequality bounds the probability that S is even this large by at most δ/4. For every sufficiently large K the probability of at least one observed odd edge with no permitted merger is at least δ/2.
 
 For each octave node n at depth i, the probability of observing its odd edge is 2^(−i−1)≤1/n. The union bound therefore gives Σ_(2^K≤n<2^(2K), n∈B)1/n≥δ/2. Taking K=2^r supplies disjoint height intervals. Their number through X is (log log X)/log 2+O(1), proving the claim.
+
+## Unconditional first-minimum clock discrepancies
+
+Set D_n=τ*(2n+1)−τ*(2n). Independently of how any orbit ends, there is an absolute c>0 such that D_n>c√(log₂ n) on a set with reciprocal mass ≫log log X through X. For every fixed p≥1 and sufficiently large K there is also the block estimate
+
+    Σ_(2^K≤n<2^(2K)) [(D_n)_+]^p / n ≫_p K^((p+1)/2).
+
+These positive clock jumps forbid any merger at lag at most c√(log₂ n) that occurs before or at each arm's respective first global minimum. From such a meeting both first minima would occur on the common suffix, forcing their clock difference to be exactly the meeting lag. This pre-minimum consequence was also obtained independently in the Gaussian-horizon investigation.
+
+Indeed τ*(2n)=τ*(n)+1 exactly. At depth i the probability that D_(n_i)≠0 is O(i^(−1/2)). To see this, use the same equal-clock balanced absorption before i shortcut steps. Unless either first minimum was already reached by i, absorption makes the two first-minimum clocks equal. The probability of either early minimum is O(i^(−2)) by Leen's fixed-interior moderate-deviation estimate for the **capped** clock: choose s=1/2, for which μs log 2>1. A first minimum by i forces the capped passage no later than i, and this early event lies below any fixed Gaussian moderate-deviation level −A√log i eventually. The population estimate transfers to the even and odd samples by restriction of the full octave. [Fixed-interior capped-clock law](https://doi.org/10.5281/zenodo.23252395)
+
+The difference τ*(n_(2K))−τ*(n_K)−K equals the sum of the observed odd-child jumps D_(n_i). By the two terminal-clock laws at the endpoints this difference is at least a fixed positive constant times K with probability 1−o(1), since μ log 2>1. The expectation of the sum of the positive jumps truncated from above at c√(i+1) is O(cK) by the preceding support estimate. Markov's inequality and the disjoint-block argument give the asserted harmonic mass for positive jumps above this threshold. For the moment estimate the expected sum of all positive jumps is ≫K while the expected number of their observed locations is O(√K). Apply Hölder on the disjoint union of the K levels with their observed-edge probabilities, then use 2^(−i−1)≤1/n to obtain the displayed bound. For p=1 the first-moment estimate suffices.
