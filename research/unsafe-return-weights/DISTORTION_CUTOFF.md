@@ -64,3 +64,27 @@ The largest shell checked was $X=2^{22}$, with all 1,048,576 odd starts in $[2^{
 | 2 | 102 | 0.038942 | 0.038943 | 1,015,422 |
 
 The [finite-shell replay](check_distortion_cutoff.py) covers the smaller powers 10, 14 and 18 by default and accepts 22 as an argument. The large case is small enough to reproduce without auxiliary data files.
+
+## The logarithm resolves the eventual cycle
+
+The finite product itself vanishes after sufficiently many laps on any periodic basin. Taking its logarithm before passing to the limit recovers the average correction per odd step. For a positive odd cycle $C$ of period $d_C$, set
+$$
+ \lambda_C=d_C^{-1}\sum_{u\in C}\log(1+1/(3u))
+          =d_C^{-1}\log(1/J_C).
+$$
+Set $\lambda=0$ on escaping basins. The variable $\Lambda=\lambda(M)$ is determined by the eventual fate of the limiting minimum. In particular $\lambda_{\{1\}}=d=\log(4/3)$. On every nontrivial cycle all the odd inputs are at least three, so $\lambda_C\le\log(10/9)<d$.
+
+For every fixed $T>1/d$ and every finite list of real $s$, jointly with the terminal clock and minimum,
+$$
+ \frac{-\log V_{\lfloor T\log X\rfloor}}{\log X}\ \Longrightarrow\ (T-1/d)\Lambda,
+ \qquad
+ \frac{-\log V_{q_X(s)}}{\sigma_J\sqrt{\log X}}\ \Longrightarrow\ (s-G)_+\Lambda .
+$$
+Indeed the preminimum log product is uniformly bounded by simple-path reciprocal summability. After the first minimum $m$, the log product over $j$ additional steps is $j\lambda(m)+O_m(1)$ on a cyclic basin, by decomposing a finite transient and whole laps. The same estimate with $\lambda(m)=0$ holds for a simple escaping tail. Therefore, on $m\le B$, $-\log V_q=(q-J_*)_+\lambda(m)+O_B(1)$ uniformly in $q$ and in the input. The Gaussian clock, independence and tightness of $m$ give the two assertions.
+
+In particular choose $T=2/d$. The single finite observable $Z_X=-\log V_{\lfloor 2\log X/d\rfloor}/\log X$ has limiting law $\Lambda/d$. It is bounded by two, since every odd factor contributes at most $d$. Its limiting mean lies in $[0,1]$, and
+$$
+ (1-p_1)\left(1-\frac{\log(10/9)}{d}\right)
+ \le 1-\lim_X \mathbb E Z_X\le 1-p_1 .
+$$
+Thus its limiting mean equals **one exactly when all positive integers reach 1**. This is a forward finite-clock version of the two-obstruction question and requires no cycle classification to calculate the observable. A nonempty offending component has positive density by the predecessor lower bound. The formula supplies no bound forcing that limiting mean to one. In the [period-averaged endpoint coefficient](../critical-orbit-mellin/CYCLE_ENDPOINT_MEAN.md), the same $\lambda_C$ instead appears through its reciprocal weighted by the basin probability.
