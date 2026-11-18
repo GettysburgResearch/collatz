@@ -158,3 +158,32 @@ $\mathcal C$. These are exactly the two facts used in the first-passage
 comparison and lower-bound proofs above. Every conclusion there holds
 for this strengthened construction. The perturbation still changes
 the native affine equality on the exceptional odd updates.
+
+## Short trajectories and relative accuracy
+
+For any fixed $0<\eta<1/4$, one may additionally require
+$(1-\eta)(3n+1)\le\widetilde C(n)\le 3n+1$ at **every** odd $n$,
+where $\widetilde C$ denotes the ordinary perturbed update. Indeed by
+increasing $K/N$ the ratios of consecutive candidates $r$ can be made
+at most $1+\eta$ for sufficiently large $j_0$. After each retained
+spine vertex take the largest candidate $r'$ at most $(3r+1)/2$.
+The next candidate exceeds that bound, so
+$2r'>(3r+1)/(1+\eta)\ge(1-\eta)(3r+1)$. The sequence increases
+strictly. The selected vertices still have the protected ramp and the
+spine has successive ratios bounded above by $(3r+1)/(2r)$.
+This thinning gives the claimed relative error without changing any
+previous conclusion.
+
+There is a separate comparison for all short shortcut paths. A native
+shortcut source at most $X$ encountering a splice by time $h$ visits
+one below $(3/2+1/2)^h X$. The shortcut has at most two predecessors
+per state, so the number of these sources is
+$O(2^h(\log(2X)+h))$. Outside them the entire shortcut prefix is
+identical for both maps. At $h=\lfloor(1-\epsilon)\log_2 X\rfloor$
+this is $O_\epsilon(X^{1-\epsilon}\log(2X))$. A union bound applies
+to each fixed number of shifted sources. In particular every
+density-one fixed-gap synchronous coalescence conclusion at this
+horizon survives, as does an $O(1/\sqrt{\log X})$ exceptional
+fraction. This comparison transfers actual finite trajectories without
+requiring uniform control over the eventual effects of the sparse
+splice. [Leen, exact synchronization rates](https://doi.org/10.5281/zenodo.23268751).
