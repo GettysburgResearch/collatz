@@ -60,3 +60,17 @@ $$
  \ \longrightarrow\ r(s)b(s)/s .
 $$
 All sources in this formula have simple paths, and the lower cutoff accounts for excluding the endpoint. This proof includes multiples of three, for which the positive-depth inverse weights vanish. For fixed $R$ it gives a finite inclusion-exclusion procedure in terms of ordinary traces. Passing to $R\to\infty$ defines a bounded positive functional on continuous functions vanishing at zero, hence a finite measure on $(0,1]$. Approximation from above and below gives convergence of cone counts at its continuity thresholds. Taking such thresholds decreasing to zero in the double-limit identity yields its total mass. The argument leaves possible atoms at individual positive thresholds.
+
+## Identification with whole-orbit distortion
+
+Let $E$ denote normalized odd logarithmic mean, $V_\infty$ the reciprocal of the whole-orbit correction product, and $\delta=\log(4/3)/2$. For continuous $\psi$ with $\psi(0)=0$,
+$$
+ \int\psi\,d\mu=\delta E[V_\infty {\bf1}_{\rm escape}\,\psi(1-V_\infty)] .
+$$
+Indeed mark every odd state visited on the **entire** escaping orbit. For a nonempty visit monomial supported on a compatible escaping chain with earliest state $s$, its integral against the weighted source mean is $\delta r(s) E[W_s]=r(s)b(s)/s$, by the [canonical visit formula](../unsafe-return-weights/SIGNED_MASS.md). Here $W_s$ is the previsit product, defined to be zero off the visit event. Other monomials have zero weighted mean. This matches every truncated polynomial above. The simple-orbit reciprocal tail controls the whole-orbit truncation uniformly, proving existence of the mean and the identity.
+
+Consequently every positive cone threshold is a continuity point. More precisely, $\mu$ is either zero or singular continuous, has lower Hausdorff dimension one when nonzero, and is supported on a compact Lebesgue-null subset of $[0,1]$. To verify this, condition the ordinary limiting source law on its global minimum $t$. Escape is then determined by the orbit of $t$. On escaping cells one has
+$$
+ -\log_2 V_\infty=R_* -\log_2 r(t)
+$$
+with $R_*$ the terminal residue up to the first hit of $t$. The all-source terminal law applies also to odd natural sampling: subtract the even subsample, whose terminal pair equals that of its halved input, from the entire interval count. Partial summation then gives the same odd logarithmic law. Minimum tightness permits summing the individual cell identities. On each escaping cell the displayed translation followed by $u\mapsto1-2^{-u}$ is bi-Lipschitz on the bounded relevant range. The pushforward therefore charges no set of dimension less than one and has compact null support, by the [terminal dimension theorem](../terminal-residue/REAL_DIMENSION.md) and [terminal support theorem](../terminal-residue/SUPPORT.md). Multiplication by the bounded positive weight $\delta V_\infty$ preserves these properties. Over escaping cells with $t\to\infty$, the whole simple trajectory stays at least $t$, so the reciprocal packing tail forces the supports uniformly toward zero. Their union with zero is thus compact and null. In particular absolute continuity of this limiting cone measure is equivalent to eventual periodicity of every positive ordinary orbit.
