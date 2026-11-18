@@ -45,3 +45,18 @@ $$
  1-J_C\le\sum_{u\in C}(3u+1)^{-1}\le d_C/(3m_C).
 $$
 Consequently each cycle contributes at least an absolute positive constant to the sum in (1). Infinitely many cycles force $D_Q(1-\epsilon)\to\infty$ at every sufficiently small fixed $\epsilon>0$. If any nontrivial cycle exists, the lower-bound lap argument gives strictly positive lower limit for **every** $0<\epsilon<1$. If there is none, $D_Q(1-\epsilon)$ is identically zero at every depth as soon as $\epsilon<c_0$. This proves condition 2 and the claimed equivalence.
+
+## A bound per cycle vertex
+
+In fact $p_C/(1-J_C)$ is bounded below absolutely. For every odd $u$ on $C$, take the off-cycle parent $s_u=4u+1$ of $U(u)$ when it is coprime to three, or $s_u=16u+5$ otherwise. In the latter case $s_u$ is a unit too. Its successor is $U(u)$, and $u<s_u\le21u$. The $s_u$ form an antichain: after its first step each stays on $C$, while the unique on-cycle parent of $U(u)$ is $u$. Since $s_u>m_C$, its own global minimum is $m_C$. Applying the [minimum-sensitive first-landing bound](../unsafe-return-weights/FIRST_LANDING_CAPACITY.md) to their disjoint predecessor families gives
+$$
+ \sum_{u\in C}1/u\ll \Pr(m=m_C)\le p_C .
+$$
+As $-\log J_C=\sum_{u\in C}\log(1+1/(3u))\le\sum_{u\in C}1/(3u)$, the lower bound in (1) is at least a constant times the **total number of nontrivial positive cycle vertices**. The same argument and the known minimum tail give
+$$
+ \sum_{C:\,m_C>B}\log(1/J_C)\ll \Pr(m>B)\ll e^{O(\sqrt{\log B})} B^{-g},\qquad
+ g=1-H_2(\log_3 2)+1/351.
+$$
+Here $H_2$ is the binary entropy. Large cycle minima therefore have a summable total lap distortion even if there are infinitely many of them.
+
+The [period-averaged endpoint identity](CYCLE_ENDPOINT_MEAN.md) evaluates the coefficient after averaging in the logarithm of the near-one threshold. The [exact word replay](check_two_scale.py) checks all 4,330 capped words at depths one through four, including their unique target representatives and their physical forward itineraries. Those finite depths do not determine the two limits.
