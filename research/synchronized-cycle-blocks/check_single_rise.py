@@ -61,6 +61,13 @@ def main():
             require((growth-1)*coefficient/(clo-1) <= p_cap)
             require(growth*coefficient/(exponent-cup) <= w_cap)
             require((growth-1)*coefficient <= d_cap)
+    close_lower = Fraction(1054, 665)
+    require(close_lower < lower)
+    for b, e1, e2 in ((4, 2, 2), (3, 2, 3), (2, 3, 4)):
+        increase = (1+gamma/(1-cup/e1))*(1+gamma/(1-cup/e2))
+        margin = 1-gamma*(b+increase-1)/(b*(b-1)*close_lower)
+        require(margin > Fraction(1, 1000))
+    require(3936000*36 < 2**36 < 114208327604)
     require(1970+1068*1640**15 < 2**175)
     require((1970+1068*4*10**12)*512 < 2**61)
     require(1640*61 == 100040)

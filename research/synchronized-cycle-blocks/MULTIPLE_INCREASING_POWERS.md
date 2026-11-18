@@ -115,3 +115,39 @@ length is at most B KJ by (1) of the single-rise proof, and at
 least e, whence e<=O(K log(2K)). Taking logarithms and using K<e
 yields ln e<=h ln c+ln ln e+O(1). This argument does not require
 finiteness of any list of root words.
+
+## Three powered factors with unequal exponents
+
+**PROPOSED.** A complete cover by exactly three powers, all exponents
+at least two, would have exactly two increasing factors. Write their
+exponents as a_1<=a_2, and b for the exponent of the decreasing factor.
+The only remaining patterns are
+
+* b=2, with a_1=2 and arbitrary a_2, or a_1=a_2=3;
+* b=3, with a_1=a_2=2.
+
+For a proof, the single-rise exclusion and cyclic monotonicity first
+give the two increases. If the least state lies in an increasing
+factor then its entry height is <=4Z as in the single-rise proof.
+At most two rises multiply this by a factor less than 16; this
+bounds all three lengths by (1) of that proof and gives L<=960Z,
+contradicting the certified length floor.
+
+Otherwise the minimum lies in the last copy of the decreasing factor.
+Set K=A_(a_1)A_(a_2), where A_j=1+gamma/(1-c/j). The sweep proof
+still works with the exact b in its minimum estimate, so now
+
+    mu=1-gamma(b+K-1)/(b(b-1)c).
+
+To cover every pattern other than those listed, it suffices to check
+(b,a_1,a_2)=(4,2,2), (3,2,3), (2,3,4). Larger exponents only improve
+the respective margins. At each of the three lower corners mu>1/1000;
+the final margin is close to 0.00155 and the check uses rational bounds
+1054/665<c<485/306. Thus H_0<=1000Z+200s. Since K<16 and each
+physical length is at most five times its entering height, we have
+
+    L <= 240(1000Z+200s) <= 3936000 log_2 L.
+
+For L>=2^36 the left-to-logarithm ratio is increasing and already
+exceeds 3936000. The certified Farey floor is greater than 2^36.
+Therefore none of these three parameter regions occurs.
