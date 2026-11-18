@@ -56,3 +56,21 @@ $$
    =\frac{n}{r(n)}L_C .
 $$
 Indeed each fixed $P_j$ has positive-age Cesàro mean $b(y_j)/D_j$, and uniform convergence permits passage to $P$. The last equality uses $y_j/D_j\to n/r(n)$. This imports only the indicated source theorem for the identification; the uniform-profile proof above does not require it. [Valbuena, *Collatz basin densities and canonical traces from first-passage stabilization*, archived source `paper/tao-basin-densities.tex`, SHA-256 `d5c61f228ece84aae6d565c777de84089c016073df19d7b0e6974e1cfa2bb258`](https://doi.org/10.5281/zenodo.23025885)
+
+## The empirical law at the age of a moving root
+
+Use the [fixed-root canonical inverse empirical theorem](../native-pressure-20261118/CANONICAL-RETURN.md) at `b7b9d59`. Write $h=(2/3)b$ for its normalization of the ordinary canonical Cesàro trace, $\rho_q=(2/3)g_q$, and $\nu$ for the invariant product law on the compact dyadic and ternary state space. Suppose $j,Q\to\infty$ on a nonperiodic spine and $Q/j\to\lambda\in(0,\infty]$. Then
+$$
+ \frac{1}{Qh(y_j)}\sum_{q<Q}\rho_q(y_j)\ \longrightarrow\ (1-1/\lambda)_+ .
+$$
+Indeed this ratio is the mean of $P_j(k)$ over $-j\le k<Q-j$, divided by $b(y_j)/D_j$. Uniform profile convergence allows $P$ in the numerator. Its negative side tends to zero, its positive side has Cesàro limit $A=(n/r(n))L_C>0$, and the denominator tends to $A$. For bounded positive $\lambda$ each side contributes its proportion of the window times its corresponding limit; the same reasoning works at $\lambda=\infty$. In particular positive lower bounds on $h(y_j)/y_j$ do not imply uniformity of (1) of the fixed-root theorem at the age $Q=j$.
+
+The moving-root empirical law itself has an explicit decomposition. Let $l=\min(j,Q)$ and start the canonical reverse chain at $y_j$. For each bounded continuous test $f$, the difference
+$$
+ \frac1Q\sum_{q<Q} f(X_q)
+ -\frac1Q\sum_{i=j-l+1}^{j} f(y_i)
+ -\left(1-\frac lQ\right)\nu(f)
+$$
+tends to zero in probability along any $Q,j\to\infty$. To see this, fix a large $K$ and couple the first $j-K$ steps to the true reversed spine by the event of following its transitions, of exact probability $m(y_K)/m(y_j)$. Its complement has probability at most $1-m(y_K)/m_C$, which tends to zero as $K\to\infty$. On this event the initial spine terms agree up to at most $K$ boundary terms. Any remaining $Q-j+K$ steps start at the fixed root $y_K$ with its canonical law by the Markov property. If that remaining length tends to infinity, apply the fixed-root empirical theorem; if it stays bounded its contribution divided by $Q$ vanishes. These alternatives suffice on every subsequence. Sending $K\to\infty$ gives the claim. Thus universal convergence is recovered at $Q/j\to\infty$. At $Q=j$ the empirical law follows the deterministic forward prefix.
+
+This distinction is visible with one bounded clopen test. Take $f(v)=\min(v_2(3v+1),3)$ with value 3 at the exceptional dyadic point. Its $\nu$ mean is $7/4$. Along a nonperiodic spine, the ordinary product formula gives $\sum_{i<j}v_2(3y_i+1)\le j\log_2 3+O_n(1)$, since $y_j\ge1$ and the correction product is bounded. Hence at $Q=j$ the reverse empirical mean is at most $\log_2 3+o(1)$ in probability, strictly below $7/4$. At ratios $Q/j\to\lambda\in[1,\infty)$ the limiting upper bound is $7/4-(7/4-\log_2 3)/\lambda$. This failure of a uniform fixed-root conclusion is a necessary consequence of an escaping orbit and is consistent with the fixed-root empirical theorem.
