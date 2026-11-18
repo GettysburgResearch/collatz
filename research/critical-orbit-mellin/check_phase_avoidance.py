@@ -55,6 +55,20 @@ def ordinary_replay(letters, q):
     return states
 
 
+def check_arrival_at_one(last, expected_odd, expected_shortcut):
+    current = last
+    shortcut_steps = 0
+    for _ in range(expected_odd):
+        assert current > 1
+        numerator = 3*current + 1
+        exponent = (numerator & -numerator).bit_length() - 1
+        current = numerator >> exponent
+        shortcut_steps += exponent
+    assert current == 1 and shortcut_steps == expected_shortcut
+    print(f'From the {last.bit_length()}-bit endpoint, reached 1 in '
+          f'{expected_odd} odd steps ({shortcut_steps} shortcut steps).')
+
+
 def main():
     q = 2048
     depth = q//32
@@ -62,6 +76,7 @@ def main():
     prescribed = word_to_target(alpha, depth)
     terminal = ordinary_replay(prescribed, q)[-1]
     assert (terminal - alpha) % (3**depth) == 0
+    check_arrival_at_one(terminal, 8280, 16473)
 
     cutoff, precision = 64, 22
     modulus = 3**precision
@@ -85,6 +100,7 @@ def main():
                 print(f'Checked prescribed irrational target modulo 3^{depth}.')
                 print(f'Checked {len(states)} consecutive ordinary states, {len(forbidden)} '
                       f'rational residues, and exact incoming offset bounds (fixture {attempt}).')
+                check_arrival_at_one(states[-1], 8035, 16186)
                 return
     raise AssertionError('fixture search exhausted')
 
