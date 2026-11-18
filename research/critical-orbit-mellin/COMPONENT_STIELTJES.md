@@ -57,7 +57,7 @@ the [minimum law](../fixed-floor-shells/FIRST_MOMENT.md).
 
 The underlying exact identity on finite-trace phases is
 $$
- K_z(t)=\sum_{a\ {m legal}} K_{(2^a z+1)/3}((2^at-1)/3).
+ K_z(t)=\sum_{a\ \mathrm{legal}} K_{(2^a z+1)/3}((2^at-1)/3).
 $$
 It follows from the canonical fibre recursion by cancellation of its
 weight $3/2^a$ with the real dilation. Thus the branch back to $y_i$
