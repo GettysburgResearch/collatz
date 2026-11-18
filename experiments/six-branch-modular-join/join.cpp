@@ -6,7 +6,11 @@
 #include <exception>
 #include <filesystem>
 #include <fstream>
-#include <set>
+#ifdef _WIN32
+#include <process.h>
+#else
+#include <unistd.h>
+#endif
 #include <string>
 #include <iostream>
 #include <limits>
@@ -98,7 +102,12 @@ class Receipt {
 public:
     void open(const std::filesystem::path& path, U begin, U end) {
         target=path;
-        temporary=target.string()+".tmp";
+        #ifdef _WIN32
+        const auto process_id=_getpid();
+        #else
+        const auto process_id=getpid();
+        #endif
+        temporary=target.string()+"."+std::to_string(process_id)+".tmp";
         file.exceptions(std::ios::badbit | std::ios::failbit);
         file.open(temporary);
         file << "range " << begin << " " << end << "\n";
@@ -110,7 +119,15 @@ public:
     void finish() {
         file << "complete " << count << "\n";
         file.close();
-        std::filesystem::rename(temporary,target);
+        // Independent runners may finish the same deterministic range.
+        if (std::filesystem::exists(target)) {
+            std::filesystem::remove(temporary);
+        } else {
+            std::error_code error;
+            std::filesystem::rename(temporary,target,error);
+            if (error && !std::filesystem::exists(target)) throw std::system_error(error);
+            if (error) std::filesystem::remove(temporary);
+        }
     }
 };
 
