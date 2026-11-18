@@ -45,3 +45,13 @@ To see this, choose an integer k→∞ and prescribe the future word (1^k 2)^(m�
     5·3^(r+1) = 2z+1 mod 2^(D+2).
 
 The even exponent indices r form one residue class modulo 2^D; choose r in [2^D,2^(D+1)). Start x=5·2^(r+1)−1. Its first run of ones has length r and leaves the odd state 2·5·3^r−1. The next letter equals two, since 5·3^(r+1)=7 mod 8, and its odd successor is (5·3^(r+1)−1)/2=z mod 2^(D+1). Hence it realizes the entire prescribed continuation. The sum of runs is r+(m−1)k and log₂(x+1)=r+1+log₂5, whereas log₂r=D+O(1). These give (3) with no asymptotic input.
+
+## Fixed numbers of even shortcut inputs
+
+For T(n)=n/2 on even inputs and (3n+1)/2 on odd inputs, let I(j,k) be the set of n≥1 for which exactly k of n,Tn,…,T^(j−1)n are even. For each fixed k≥0,
+
+    lim_(j→∞) (1/j) log₂ min I(j,k) = 1.                              (4)
+
+For the upper bound the parity-word bijection gives a representative ≤2^j for each word. For the lower bound remove up to k initial even inputs and begin at the first odd input x≤n. Any completed positive block of even inputs has length at most k and is associated with a single odd separator of valuation at most k+1. The remaining shortcut segment has at most k+1 blocks of consecutive odd inputs. All but at most the last odd input of each block are valuation-one steps. A terminal partial run can be extended to its full valuation-one length; the valuation of its eventual separator need not be bounded, as (2) uses only the interior separators. If the segment ends among a final string of even inputs, discard that final incomplete separator and its even suffix at cost at most k+1 steps. Consequently j≤Σr_i+O_k(1) for at most k+1 successive runs with bounded intervening separators. The case of one run follows by divisibility directly. The starting x must tend to infinity if j does, since no fixed integer has a final infinite all-odd run and the number of separators is bounded. Applying (2) proves (4).
+
+Rozier's Lower Bound Hypothesis predicts a polynomial loss from 2^j in this regime. His Lemma 6.1 gives the effective lower bound 2^(j/(1+log₂3))−2 for one even input. Formula (4) gives the limiting exponent one, ineffectively, for every fixed k. It does not prove the polynomial-loss estimate or cover a growing number of even inputs. The single-run trailing-ones identity is also a known elementary result. [Rozier, *The 3x+1 problem: a lower bound hypothesis*, §6](https://www.ipgp.fr/~rozier/pub/LBHv4.pdf) · [Single expansive-phase bound](https://zenodo.org/records/17785860)
