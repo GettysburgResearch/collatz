@@ -24,6 +24,15 @@ There is a direct forward test using only finitely many steps per source. For ea
 
 A second test collects inverse paths for which the accumulated affine correction changes the terminal height by a fixed fraction. Its limiting measure is zero exactly when every positive orbit is eventually periodic. Any positive part is singular continuous, is carried by a compact set of zero length, and charges no set of dimension below one. Averaging the target over a real shift gives an explicit integral. At almost every fixed real shift the time average has an exact finite limit. A single escaping orbit would instead force linear growth at every fixed ternary rational shift. The missing estimate concerns these exceptional arithmetic targets. [Relative correction and escape mass](../../research/critical-orbit-mellin/HARMONIC_OFFSET_CONE.md) · [Shifted-target integral](../../research/critical-orbit-mellin/OFFSET_COAREA.md) · [Arithmetic shifts](../../research/critical-orbit-mellin/TRIADIC_OFFSET.md) · [Typical shifts](../../research/critical-orbit-mellin/SOLENOID_PHASE.md)
 
+## A finite test for both ways the conjecture could fail
+
+At depth $Q$, enumerate the words of $Q$ inverse exponents between 1 and $2Q$. Each gives one positive odd target in the first ternary period. Omit the known odd fixed point 1 and sum slope divided by target over the words whose affine offset exceeds a fraction $\theta$ of that target (including equality). This finite sum is $D_Q(\theta)$.
+
+- At fixed thresholds approaching zero, the growth of $D_Q(\theta)/Q$ detects escaping components.
+- At thresholds sufficiently close to one, every counted path has already visited a nontrivial cycle. Each such cycle contributes positive mass in the depth limit. The logarithmic threshold average of its endpoint contribution has an exact coefficient determined by the basin density and the mean log correction per odd step.
+
+The two vanishing conditions together are equivalent to universal convergence to 1. They remain unproved. A separate forward test takes the logarithm of the distortion after $\lfloor 2\log X/\log(4/3)\rfloor$ odd steps and divides its negative by $\log X$. Its limiting mean is one exactly when every orbit reaches 1. A nontrivial periodic basin and an escaping basin both reduce that mean. [Two thresholds and exact array](../../research/critical-orbit-mellin/TWO_SCALE_TEST.md) · [Cycle endpoint coefficient](../../research/critical-orbit-mellin/CYCLE_ENDPOINT_MEAN.md) · [Forward observable](../../research/unsafe-return-weights/DISTORTION_CUTOFF.md)
+
 ## Exact finite search
 
 In the six-branch chart Qx′=Px+a, with Q=2^19, P=3^12 and six allowed digits, the exact least ordinary sources are now certified through **depth 30**. The previous independent enumeration reached 16. The depth-30 minimum has 149 digits and begins 2591645369115. Any positive source surviving forever must be at least that large. It could also be that no such source exists.
