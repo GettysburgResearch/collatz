@@ -86,3 +86,34 @@ d>=L^(10/153)/8000 on this range. For smaller L one has
 L^(10/153)<2^34 and d>=1 by the [effective exclusion of complete
 one-rise covers](ONE_INCREASING_POWER.md) (which uses Barina's
 verified initial range). This proves the second line for all L.
+
+## Improvement from a recent irrationality-exponent bound
+
+Chudnovsky's October 2026 preprint, Theorem 11.1, states that the
+irrationality exponent of log(a)/log(b) is at most three for
+multiplicatively independent positive rationals a,b. Invoking this
+additional source at a=3,b=2 gives, for every epsilon>0,
+
+    d >>_(e,r,epsilon) L^(1/4-epsilon)
+
+for all sufficiently long cycles in (2). The numerical constants in
+(1) still use only the earlier explicit Rhin estimate. We use the
+recent theorem as stated and did not rebuild its reported Lean endpoint.
+[Chudnovsky, Theorem 11.1](https://arxiv.org/html/2610.28079v1#S11)
+
+Indeed for every delta>0 one has |w-ch| >>_delta w^(-2-delta)
+uniformly for integers 0<=h<=w, with h=0 immediate. Thus
+w/(w-ch) <<_delta w^(3+delta) for a decreasing root. The same
+sweep gives L <<_(e,r,delta) (d+s)^(4+delta); choose delta small
+and absorb s=O(log L) for sufficiently large L.
+
+Two further direct applications clarify the size of this input.
+If Q is the odd count in any ordinary positive cycle, its least
+state satisfies m <= Q/(3 ln(2)(L-cQ)) <<_delta L^(3+delta).
+For consecutive convergent denominators u,v of c one has
+v <<_delta u^(2+delta), by comparing |c-p/u| with 1/(uv).
+In the joint-clock resolution scale D=max(u,sqrt(log X)/v)
+this implies D >>_delta (log X)^(1/(6+2delta)), uniformly in X.
+Indeed D>=u and D>=sqrt(log X)/(C_delta u^(2+delta)).
+These asymptotic deductions supply no replacement numerical
+threshold for the explicit period certificates.
