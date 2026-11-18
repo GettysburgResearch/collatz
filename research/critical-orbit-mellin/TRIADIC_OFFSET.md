@@ -173,3 +173,32 @@ the sum of Q^(-ap) times the pth powers, an integrable series when
 ap>1. Its terms tend to zero almost everywhere. Taking p arbitrarily
 close to two and using a countable cofinal family of thresholds and
 exponents proves the stated simultaneous all-depth conclusion.
+
+## A residual exceptional set for neighborhoods of the null carrier
+
+Assume an escaping orbit exists and take its common compact null E.
+There is a dense countable intersection of open sets of phases such
+that, for every open neighborhood O of E in (0,1) and every a<1,
+
+    limsup_Q S_Q^u(O)/Q^a = infinity.
+
+This countable intersection has Lebesgue measure zero by the preceding
+maximal estimate (use any fixed neighborhood bounded away from zero
+and 1/2<a<1). In particular it contains irrational phases. It handles
+all neighborhoods by taking a countable nested neighborhood basis of
+the compact E and all exponents by taking a sequence increasing to one.
+
+For a fixed neighborhood, exponent and positive integers M,N, every
+triadic phase admits a finite word subsum exceeding M Q^a at some
+Q>=N, using its linear lower bound on the common carrier. The words
+may be chosen from the preceding construction, with translated
+targets strictly between zero and P. Their distortions lie in E,
+inside the open neighborhood, and each summand varies continuously
+near this phase while the finite list stays marked. Thus the union
+of all such witnessing open neighborhoods of phases is open and
+dense. Intersecting these open sets proves the assertion by Baire's
+theorem. One can further require S_Q^u(E)=0 at *every* depth:
+for any fixed word the inverse image of compact nowhere dense E
+under its distortion map is nowhere dense after closure, since the
+map is strictly monotone and continuous off its one wrapping point.
+Countably many words and depths thus exclude only a meagre set.
