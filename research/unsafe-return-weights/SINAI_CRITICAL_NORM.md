@@ -43,3 +43,5 @@ The p_a sum to one. Draw independent exponents with law p_a and let `S_k=Σ log 
 The right side is bounded below by 1/12 uniformly on the finite-depth range above, by the law of large numbers applied to S_q. For fixed u, let q→∞; L¹ convergence gives `u ∫(g−u)_+ dm≥1/6`. In particular this also gives a direct proof of linear growth of E_q, even without the subcritical norm bound, by integrating `H_q(u)≫1/u` up through `exp(dq/2)` and using `∫_0^∞ H_q(u) du=E_q/2`.
 
 For either law, `H(u)≤∥g∥_r m{g>u}^(1−1/r)` with the uniform norm at the appropriate depth. Choose r<2 close enough to 2 that `r/(r−1)≤2+δ`, and apply the lower bound on H. Markov's inequality with r sufficiently close to 2 gives the other side of (4). No equality of tail constants is asserted.
+
+The [exact finite replay](check_sinai_norm.py) folds the geometric exponents over their multiplicative period modulo each ternary quotient. At depths 1 through 5 it checks normalization, the martingale projection, and (1) using rational arithmetic across all residues. Run `python -B research/unsafe-return-weights/check_sinai_norm.py`.
