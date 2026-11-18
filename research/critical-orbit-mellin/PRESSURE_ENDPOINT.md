@@ -53,3 +53,26 @@ $$
 Summing for $q\le\log(u)/(2\mu+4\eta)$ gives $O_\eta(1)$ for sufficiently large $u$. Therefore $\mathbb E\min(H,u)\ge\int_{H\le u}\sum_{q\le\log(u)/(2\mu+4\eta)} Q_q\ge\log(u)/(2\mu+4\eta)-O_\eta(1)$.
 
 For the reverse bound, words with $J^2>u$ contribute to the clipped pressure at most $u$ times the probability one exists, which is $O(1)$ by FS-010. The remaining expected squared pressure is exactly $\sum_{q\ge0}\Pr(2S_q\le\log u)$ under the tilted law. For $q>\log(u)/(2\mu-\eta)$ its tail probabilities are exponentially small in $q$ by Chernoff, while earlier terms are at most one. Letting $\eta\downarrow0$ gives $\mathbb E\min(H,u)\sim(\log u)/(2\mu)$. Integrating the already established pointwise tail asymptotic yields $c=1/(2\mu)$.
+
+## Subcritical pressures
+
+For $1<s<2$ put $a=2/s\in(1,2)$. Then $\Pr(\mathcal H_s>u)\sim c_su^{-a}$ with $0<c_s<\infty$, so the positive-moment threshold is $a$. Together with the supercritical and critical cases this yields an exact power-law equivalent for every $s>1$.
+
+Choose $a<p<2$. The annular bound and Minkowski give $\|\sum_{J\le M}J^s\|_p\ll_{s,p} M^{s-2/p}$. Take $M=u^{1/s}$, use Markov for this sum and the quadratic maximum-word tail for the rest. This proves the upper bound $O_s(u^{-a})$; the lower bound follows from a single word of weight $J^s>u$.
+
+Write $H_s=\mathcal H_s=1+\sum_i B_i$, where the legal branch terms are as in the [supercritical constant proof](MINIMUM_CONSTANT.md). For $1<r<a$, the tail upper bound gives $\mathbb E H_s^r\ll_s1/(a-r)$ as $r\uparrow a$. Each branch integrated on its legality class gives
+$$
+ \mathbb E\left[H_s^r-\sum_i B_i^r\right]
+  =\left(1-\frac{3^{sr-1}}{2^{sr}-1}\right)\mathbb E H_s^r=O_s(1).
+$$
+The parenthesis is $O_s(a-r)$ by differentiability at $sa=2$. Convexity makes the random difference nonnegative. Since $\sum B_i<\infty$ almost surely, the sums of powers converge pointwise as $r\uparrow a$ by domination using $B_i+B_i^a$. Fatou gives $\mathbb E[H_s^a-\sum_i B_i^a]<\infty$.
+
+Let $B=\max_i B_i$, or zero if there is no legal branch. Since $(x+b)^a-x^a\ge(2^a-1)b^a$ for $x\ge b\ge0$, adding the nonmaximal branches in any order gives
+$$
+ H_s^a-\sum_i B_i^a\ \ge\ (2^a-2)\left(\sum_i B_i^a-B^a\right).
+$$
+Thus both $\sum_i B_i^a-B^a$ and $H_s^a-B^a$ have finite expectation. Splitting the renewal defect about the maximum exactly as in the supercritical case proves absolute integrability. The same nonarithmetic ladder smoothing and monotone unsmoothing give the claimed equivalent, with
+$$
+ c_s=\frac{\mathbb E[H_s^a-\sum_i B_i^a]}{2\mu}.
+$$
+The critical case $s=2$ admits the same numerical expression, since its additive toll is 1, but needs the separate endpoint argument above. For $s>2$ the analogous integrable difference is the one established using strict concavity.
