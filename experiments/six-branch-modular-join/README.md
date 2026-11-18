@@ -28,3 +28,26 @@ From this directory, with a C++17 compiler and Python 3.8 or newer:
     OMP_NUM_THREADS=4 python -B search.py /tmp/collatz-modjoin --base-length 10 25 26 27
 
 The arithmetic requires no external Python package. The controls compare against physical source-cylinder lifting through depth 7 and brute-force every word for six adversarial circular joins. They exercise equality at both endpoints, word collisions, wraparound and bucket boundaries. Independent prior enumeration at commit `8fa408b843554b15f15ca1bc1c9ad6951fdfb4f7` gave depths 1 to 16. Every overlapping root and word at depths 2 through 16 agreed. The new finite calculation is separate from the proposed recognizable-set theorems.
+
+## Resumable prefix and two-digit extension search
+
+The depth-28 join uses 4,096 disjoint intervals of right-key buckets. Each worker writes its range, every candidate pair, and a terminal count to a temporary file; it closes and renames the file only after finishing every bucket in that range. The independent Python pass checks the range, footer, bucket ownership, modular filters, exact root and physical itinerary. Each compact ledger line records its partition index, candidate count, in-cap extension count, best prefix witness, best extension witness, and SHA-256 of the complete raw partition. A witness contains its exact root, the two base-six half-word indices, and its appended digits. The header binds the input and search parameters. A partial ledger explicitly says `"complete": false`; its completed parts can be reused after a restart. Full minima require every range and at least one legal in-cap witness at each certified depth. A digest authenticates the bytes against a replay; finite completeness rests on the join and the disjoint bucket cover.
+
+The 28/29 calculation uses depth-28 prefix cap $H=8192$ in $2^{64}$ key units. Every candidate under the corresponding physical cap is smaller than $M=Q^{28}$. A depth-29 or depth-30 source below such a cap must therefore equal its own least positive depth-28 residue. Reconstruct the prefix sum exactly modulo $MQ^e$, where $e$ is the number of appended digits. Every contribution from the final $e$ positions is a multiple of $M$. The high quotient of the reconstructed sum must cancel one of the $6^e$ suffix quotients modulo $Q^e$. This tests all extensions without enumerating a half-list of length $6^{15}$.
+
+For two appended digits the primary cap is widened to $H=100000000$. The fused mode also uses the per-position key $\lfloor2^{32} c_{30}/Q^{30}\rfloor$. Any physical source under the wider prefix cap has auxiliary scaled value at most $2^{32}H/(2^{64}Q^2)<1$. Its full summed auxiliary key, including suffix, lies in the circular range $[-30,1]$ modulo $2^{32}$. The C++ pass enumerates all 36 suffix sums when building that filter. Its high-16-bit test only accelerates exact membership lookup. The ensuing exact reconstruction decides which candidates lie under the physical cap. The narrower prefix output is still collected independently. Either job can have complete coverage before the other.
+
+From this directory, using separate scratch directories outside the checkout:
+
+```sh
+g++ -O3 -std=c++17 -Wall -Wextra -fopenmp join.cpp -o /tmp/collatz-modjoin
+OMP_NUM_THREADS=2 python -B check.py /tmp/collatz-modjoin
+OMP_NUM_THREADS=2 python -B check_partition.py /tmp/collatz-modjoin
+OMP_NUM_THREADS=4 python -B partition.py run /tmp/collatz-prefix --binary /tmp/collatz-modjoin --wide 100000000 --suffix-directory /tmp/collatz-30
+python -B partition.py checkpoint /tmp/collatz-prefix --archive receipts-28-29.jsonl
+python -B partition.py checkpoint /tmp/collatz-prefix --wide 100000000 --suffix-directory /tmp/collatz-30 --archive receipts-30.jsonl
+python -B partition.py finish /tmp/collatz-prefix
+python -B partition.py finish /tmp/collatz-prefix --wide 100000000 --suffix-directory /tmp/collatz-30
+```
+
+For a resumed run use `restore` in place of `checkpoint` with the ledger and matching job options before running the search. Existing verified ranges are skipped, while incomplete temporary files are overwritten. For independent full replay, start with empty scratch directories and do not restore any ledger. The controls check both filters against brute force, independent physical minima, interruption on different partitions, checkpoint restoration and refusal to certify missing coverage.
