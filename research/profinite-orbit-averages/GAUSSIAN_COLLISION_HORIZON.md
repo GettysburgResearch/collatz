@@ -191,3 +191,65 @@ at time $j$ has fraction $O(j^{-1/2})$ by the complete-period
 absorption count. Keeping only $x=2n$ costs at most two.
 The reciprocal contribution is thus $O(j^{-1/2})$ per octave.
 Summing proves the matching order.
+
+There is an explicit form of the shorter-block lower estimate. For
+each fixed $s>0$ take $k=j+\lceil s\sqrt j\rceil$. The marginals of
+$(Z_j-bj)/\sqrt j$ and $(Z_k-bj)/\sqrt j$ converge respectively
+to a centered normal of variance $\sigma^2\log2$ and its translate
+by $bs$. This follows from the terminal clock theorem by differencing
+initial intervals for the octave limit. Test both marginals at $bs/2$.
+The difference of their probabilities forces unequal endpoint labels
+with limiting lower probability $2\Phi(bs/(2\sigma\sqrt{\log2}))-1$.
+After removal of $E$ this is a lower bound for the liminf of the same
+block reciprocal sum. The number of completed blocks through binary
+depth $J$ is asymptotic to $2\sqrt J/s$, since
+$\sqrt k-\sqrt j\to s/2$. Letting $s\downarrow0$ gives
+$$
+ \liminf_{N\to\infty}
+ \frac1{\sqrt{\log N}}\sum_{\substack{n\le N\\n\in B}}\frac1n
+ \ \ge\ \frac{2(\mu\log2-1)}{\sigma\sqrt{2\pi}\log2}.
+$$
+This computation uses only the separate Gaussian marginals at the two
+depths; the two nested sources need no joint limit theorem.
+
+## A later cutoff for the reciprocal order alone
+
+The sharp order estimate admits a later horizon than the summable
+height-exception assertion. For each fixed $\delta>0$ it still holds,
+with the same displayed explicit lower coefficient, at the horizon
+$$
+ H'_X=\left\lfloor\mu L-\sigma\sqrt{L\{\log L+
+                        (-1+\delta)\log\log L\}}\right\rfloor.
+$$
+It also holds with positive lower and finite upper coefficients at
+$$
+ H''_X=\left\lfloor\mu L-\sigma\sqrt{L\{\log L-
+                                  \log\log L+C\}}\right\rfloor
+$$
+for one sufficiently large absolute constant $C$.
+
+Indeed the two-sided height sandwich above used only
+$t=O(\sqrt{\log L})$, $tL^{-1/4}=o(1)$ and
+$L^{-3}=o(\overline\Phi(t))$. It applies to both new standardized
+thresholds. At $H'_X$ the probability of crossing $z$ is
+$O(L^{-1/2}(\log L)^{-\delta/2})$. The large-minimum exception
+still costs $O(L^{-3})$. Thus each parent at a uniform depth $i$
+has probability $o(i^{-1/2})$ to violate the height and minimum
+conditions on either arm. At $H''_X$ the single-arm unconditioned
+crossing probability is
+$(1+o(1))e^{-C/2}/\sqrt{2\pi L}$ by the Mills ratio. Restricting
+to either sibling parity, shifting the octave and taking the union
+give $O(e^{-C/2}/\sqrt i)+O(i^{-3})$ for the parent, with an
+absolute implied constant and a large-depth onset depending on $C$.
+
+In each block $j\le i<j+\lceil s\sqrt j\rceil$, with $s>0$ fixed,
+the probability of observing a height or minimum exception is now
+$o(1)$ at $H'_X$ and at most $O(se^{-C/2})+o(1)$ at $H''_X$.
+The first error leaves the endpoint separation argument and its
+explicit coefficient intact. For the second fix $s=1$ and choose
+$C$ large enough that its limiting upper bound is less than half
+of $2\Phi(b/(2\sigma\sqrt{\log2}))-1$. Both block arguments then
+give the square-root lower order. The balanced native upper estimate
+is unchanged. The exceptional **height** fractions at these later
+cutoffs have divergent reciprocal sum; the proof uses their small
+total probability within one diffusive block at a time.
