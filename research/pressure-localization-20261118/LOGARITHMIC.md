@@ -76,7 +76,7 @@ moment. No converse for Collatz is asserted.
 
 Suppose a simple odd path contains at most K Y^β states at most Y.
 The parent D4 uses K=16 and β=19/20 from the proposed finite-path W2
-in [the translated packing proof](../novel-swarm-20261030/pass4/WINDOWS.md).
+in [the translated packing proof](https://github.com/GettysburgResearch/collatz/blob/fe2247fcd7730c15430941a7b6e011d006d41d84/research/novel-swarm-20261030/pass4/WINDOWS.md).
 The shortcut expansion of a simple list of odd states through its last
 odd state remains simple: any repeated even state would force a repeated
 next odd state. These constants retain their source status.

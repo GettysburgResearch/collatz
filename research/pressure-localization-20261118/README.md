@@ -3,8 +3,8 @@
 **PROPOSED.** The claims below concern the ordinary positive odd map
 `U(x)=(3x+1)/2^v₂(3x+1)`. They continue PR 144, head
 `df756794e1d8de5cabff148ef433df505e3b68b4`, specifically D1 and D4
-in [the parent proof](../pressure-diagonal-20261031/PROOF.md) and T3–T4 in
-[its trace](../pressure-diagonal-20261031/TRACE.md). All visits to positive
+in [the parent proof](https://github.com/GettysburgResearch/collatz/blob/df756794e1d8de5cabff148ef433df505e3b68b4/research/pressure-diagonal-20261031/PROOF.md) and T3–T4 in
+[its trace](https://github.com/GettysburgResearch/collatz/blob/df756794e1d8de5cabff148ef433df505e3b68b4/research/pressure-diagonal-20261031/TRACE.md). All visits to positive
 cycles are retained. The global moment bound and the conjecture remain open.
 
 For odd source x and q odd steps write t=U^q(x), A for the sum of the q

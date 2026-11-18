@@ -60,7 +60,7 @@ Multiplication along a segment x→t gives
     J_q(x)/t = (1/x) product_(0≤i<q) (1+1/(3U^i x))^(−1)
              ≥ exp(−D/3)/x.                                        (3)
 
-[Translated simple-orbit packing](../novel-swarm-20261030/pass4/WINDOWS.md).
+[Translated simple-orbit packing](https://github.com/GettysburgResearch/collatz/blob/fe2247fcd7730c15430941a7b6e011d006d41d84/research/novel-swarm-20261030/pass4/WINDOWS.md).
 
 ## Transfer of ordinary predecessor density into depth averages
 
