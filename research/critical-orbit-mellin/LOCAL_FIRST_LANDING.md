@@ -268,3 +268,36 @@ This subsequence conclusion needs no bound on the irrationality
 measure. The preceding short-interval Stieltjes bound follows in
 the same range of widths, for example with $u\le X^{\gamma/4}$ so
 every retained sibling qualifies as a threshold at most $X^{1/3}$.
+
+### Removing the lower restriction on the landing threshold
+
+In fact (5), including its clock and correction, holds for **every**
+$1\le M$ in range, without $M w_0\ge C$. Increase the absolute
+constants in the lower bounds for $X/M$ and $w_0$ if needed. Set
+$M'=D_1\max(M,1/w_0)$ with $D_1$ a sufficiently large fixed constant.
+Apply the wide theorem at physical scale $M'$, threshold $M$ and
+target $b$, with empty initial word and unit source class $1\bmod3$.
+It supplies at least $c M'/M$ distinct odd units
+$t\in[M'/4,M']$ whose first low entry at $M$ is $b$, with total
+correction between $c/M$ and $C/M$ in $O(\log(M'/M))$ odd steps.
+Use (5) with threshold $M'$ and target $t$ separately for each.
+Its original hypotheses hold because $w_0 M'\ge D_1$ and
+$\log(M'/M)\ll 1+\log(1/w_0)=O(1+\log\log(X/M))$.
+In particular $\log(X/M')\asymp\log(X/M)$, and the wide digit-budget
+condition at $M'$ follows by enlarging its absolute constant at $M$.
+
+The first labels at $M'$ are distinct across the selected source
+families. Every such source first reaches $b$ below or at $M$, its
+log corrections add to a value between $c/M$ and $C'/M$, and its
+two clock bounds sum to $O(\log(X/M))$. Multiplying the two lower
+counts cancels $M'$, giving (5) at the original $M$. The same
+argument works on the convergent scale families, taking $M\le X^{1/4}$
+to leave room for the harmless enlargement of the threshold.
+
+In particular (7) can already be obtained from fast first visits
+directly to the fixed anchor $b_*$, taking $M=b=b_*$. In the
+short-window Stieltjes conclusion the lower restriction
+$u\ge C/w_0^2$ can be dropped: the short-window count at every
+retained sibling now applies even if $w_0s_i$ is small. One may
+integrate from the fixed component onset to any $u\to\infty$ in
+the indicated upper range.
