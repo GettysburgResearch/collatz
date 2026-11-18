@@ -87,3 +87,30 @@ The normalized path identity and the bounded simple-path log correction
 give −log p_i=log X_i−log h(X_i)+O_path(1); h is bounded below.
 Taking maxima up to Q leaves an O_path(log(2+Q)) discrepancy, proving
 the uniform functional information assertion.
+
+## Restricting both clocks improves the exponent to 7/2
+
+In fact the conclusion holds for every D>7/2. Fix b between 7/2 and
+D and an arbitrarily small η>0. In (1) it suffices to count fixed-root
+depths |i−(log Y)/d|≤L^(1/2+η). Indeed the realized depths in this
+shell are comparable to L, and the all-depth pathwise clock bound gives
+|log X_i−di|=O_path(√(L log log L)); the fixed octave width and
+random constant are absorbed eventually. The number in (1) improves
+to O_t(Y L^(1/2+η−b)). This restriction on the deterministic candidate
+set is made before any proxy comparison.
+
+Independently, on the summably good actual short-source event of the
+maximal argument, uniformly for n≤N,
+log U^n z=log z−d n+O(√(L log log L)). Thus for the specified source
+and endpoint octaves T,Y, only |n−log(T/Y)/d|≤L^(1/2+η) need be
+summed in (2). The complement of this simultaneous good event was
+already included as one proxy failure, independent of the octave
+union. The resulting exponent in the probability estimate is
+
+    3/2+η − (b−1/2−η)(1−1/r).
+
+Choose r sufficiently close to two and η sufficiently small that this
+is negative. The remaining transfer and Borel–Cantelli steps are
+unchanged. The improved bound also sharpens the polylogarithmic
+Hausdorff gauge of the real fibre: substituting profile power 7/2+δ
+in its cylinder count gives r(log(1/r))^(4+ε) for every ε>0.

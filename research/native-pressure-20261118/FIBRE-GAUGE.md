@@ -78,3 +78,9 @@ absorbed into L^(ε−δ), giving the stated bound. For a gauge-null
 Borel set take interval covers of arbitrarily small total gauge;
 the restricted measures vanish there, hence so does μ_t. The same
 argument controls every set needing completion of the fibre measure.
+
+The two clock restrictions in the closing section of the
+[profile bound](PROFILE-BOUND.md) improve its exponent 5+δ to 7/2+δ.
+Using that bound in E_N and in the final prefix probability gives
+the sharper gauge r(log(1/r))^(4+ε) for every ε>0. All overshoot,
+tail-window and integer counts are identical.
