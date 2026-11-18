@@ -43,3 +43,21 @@ The past argument needs arbitrarily long legal histories for the tested values. 
 ## Missing inference
 
 These obstructions apply to recognizable sets of ordinary values. An individual orbit need not contain any infinite recognizable subset or admit a recognizable envelope inside the survivors. Neither theorem decides whether the least positive legal roots escape.
+
+## Theorem 4. Recurrence lengths and convergent significands
+
+Fix an integer base b≥2. Suppose a family of distinct positive integers z_j has canonical base-b lengths ℓ_j tending to infinity, and z_j/b^(ℓ_j−1) tends to a positive constant. If (ℓ_j) eventually satisfies a homogeneous constant-coefficient linear recurrence with rational coefficients, no single all-time ordinary chart orbit contains the entire family.
+
+**Proof.** If z_j=x_(t_j), Theorem 1 gives x_t=Cλ^t+O(1). Taking logarithms and using convergence of the significands yields
+
+    t_j = α ℓ_j + β + o(1),    α=log(b)/log(λ),
+
+for a constant β. Choose an integer polynomial F such that F(E)ℓ=0 eventually, where E shifts j forward by one. Multiplying by E−1 also kills constants. Applying (E−1)F(E) to t gives integers tending to zero, hence eventually zero. Both t and ℓ are now rational sequences satisfying the same linear recurrence. On a tail their exponential-polynomial expressions are sums of polynomials in j times ρ^j, with algebraic coefficients and algebraic nonzero roots ρ. This follows by factoring the characteristic polynomial and solving for the coefficients from finitely many rational initial values. A zero characteristic root contributes only to a finite transient.
+
+In an exponential polynomial tending to zero, every coefficient belonging to a root of absolute value at least one vanishes. To check this, isolate a root by repeatedly applying E−σ for all other roots σ with their multiplicities. Further applications of E−ρ to the isolated polynomial times ρ^j isolate its highest coefficient. All finite shift combinations still tend to zero, which precludes a nonzero multiple of ρ^j for |ρ|≥1. Since ℓ tends to infinity, it has a term at |ρ|>1 or a positive-degree term at |ρ|=1. In the expression t−αℓ−β the corresponding coefficient must vanish. Thus α is a ratio of two algebraic coefficients. But λ^α=b, and λ=P/Q has a nontrivial denominator coprime to its numerator. No rational α>0 satisfies this equation. The Gelfond–Schneider theorem rules out algebraic irrational α, giving the contradiction. ∎
+
+For affine lengths ℓ_j=uj+v, u>0, no transcendence theorem is needed: t_(j+1)−t_j would approach the irrational αu. For polynomial lengths, finite differences of the appropriate order give the same elementary argument. In particular **no infinite context-free language of canonical representations can be contained in a single chart orbit**. The context-free pumping lemma produces words uv^j wx^j y for every j with |v|+|x|>0. Their lengths are affine and their leading digit sequences converge prefixwise: the first nonempty pumped block repeated without bound determines every sufficiently late prefix after the fixed initial segment. This gives the required convergent significands. The recurrence version also covers, for example, a nested family of growing prefixes obtained by iterating a nonerasing substitution on a prolongable letter. Its lengths obey the recurrence from the integer incidence matrix.
+
+## How long a leading prefix must wait for a legal completion
+
+Let S be any subset of the all-time legal values. For X≥1 there are at most 6 X^s members up to X, with s=log(6)/log(Q). Indeed at depth m=ceil(log_Q X) each of at most 6^m residue classes has at most one representative in [1,X]; X=1 is immediate. Consequently among canonical prefixes of length k in base b, at most 6 b^(sL) can have a completion in S of total length at most L. For any fixed c<1/s, the proportion completed within floor(ck) digits decays exponentially with k. For a set containing a whole survivor orbit every prefix does have some completion by Theorem 1. This quantifies how long most prefixes must be allowed to grow in any such envelope.
