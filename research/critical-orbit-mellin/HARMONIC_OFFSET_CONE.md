@@ -88,6 +88,8 @@ Indeed for resolved $j\le Q/K$ the harmonic sum on $C_j$ equals the first term $
 
 ## Actual finite-clock mass in moderate intervals
 
+Equation (3) of the [physical log-height profile](../unsafe-return-weights/LOG_HEIGHT_PROFILE.md) already gives the polynomial exclusion at initial intervals. The following occupation-count formulation allows arbitrary translated families.
+
 Let $\eta=h-\gamma<1$ be an admissible uniform exponent in the [translated orbit-packing theorem](PRIOR_WORK.md). For every finite set $A$ of odd targets and every $Q\ge1$,
 $$
  \sum_{t\in A}g_Q(t)/t\ \le\ C\sup_{n\ {\rm odd}}\#(A\cap\{U^i n:i\ge0\}) + o(Q),
@@ -97,3 +99,18 @@ where the little-oh is independent of $A$. For the simple contribution, the unif
 A repeated word ends on a cycle of period $d\le Q$. If $p_C$ is its basin density, the lap identity $g_q=g_q^*+J_Cg_{q-d}$ at each target of the cycle and $J_C<1$ give $g_Q(t)/t\le C(1+Q/d)p_C$; the depth-zero first-hit estimate holds by $1/t\le1/\min C\ll p_C$. Summed over the cycle this costs at most $2CQp_C$. Cycle basins are disjoint, so the sum of their densities outside finite families can be made arbitrarily small. Any fixed finite family costs only $O(1)$ by the pointwise boundedness of the finite-clock densities. This proves the uniform little-oh, also for repeated-word integrals of any test of modulus at most one.
 
 In particular any union of translated intervals of widths $L_i\ge1$ with $\sum_i L_i^\eta=o(Q)$ carries $o(Q)$ unrestricted mass. This applies to the entire interval of height $Q^{1/h}$ and, in particular, to the $O(Q\log Q)$ countermodel range above. It also applies at arbitrarily large translations. It leaves open the intermediate scales between polynomial and exponential height that can support positive relative offsets.
+
+
+## Countermodels with the same translated-interval bound
+
+Fix any $b>1$ and instead set
+$$
+ t_j=1+2\cdot3^{L_j}\big(3\lfloor j^b/3^{L_j}\rfloor+1\big).
+$$
+Then $t_j=6j^b+O(\log j)$ and $t_{j+1}-t_j\asymp j^{b-1}$ eventually. The preceding fixed-cylinder anomaly formula still holds and the excess first appears on the scale $Q^b$: below $o(Q^b)$ only $o(Q)$ centers occur, whereas $C Q^b$ captures all resolved spikes for sufficiently large $C$. Distinct levels remain distinguished by $v_3(t_j-1)=L_j$. Within a level $j\le i^3$ implies $t_j<3^{Ki}$ for large $i$. The pointwise convergence, moment and martingale estimates follow without change apart from polynomial factors.
+
+For every translated ordinary interval $I$ of width $L\ge1$, uniformly in $Q$,
+$$
+ \sum_{t\in I,\ t>0\ {\rm odd}}f_Q(t)/t\ll_b 1+L^{1/b}.
+$$
+Indeed the gap lower bound gives $O_b(1+L^{1/b})$ distinct centers in $I$ by summing consecutive gaps. These account for the distinguished first representative of every resolved cylinder. Its subsequent odd representatives in $I$ contribute at most $O(t_j3^{-Kj}(1+\log(1+L)))$ per cylinder, by the harmonic bound on the progression, uniformly in its translation. For $Q/K<j\le Q^2$ and $Q$ sufficiently large, $t_j<3^Q$ and the corresponding projected height is $t_j3^{Q-Kj}$. Its distinguished representative contributes at most $3^{Q-Kj}$, summing to $O(1)$; the further representatives obey the same progression bound. The sum of projected heights for $j>Q^2$ is bounded uniformly, costing $O(1+\log(1+L))$ just as for the constant baseline. Bounded $Q$ can be absorbed in the constant. Thus any $b\ge1/\eta$ reproduces the actual interval upper bound, while still concentrating the full anomaly in one fixed limiting ternary phase. Varying $b$ shows that no fixed polynomial height cutoff detects every such countermodel.
