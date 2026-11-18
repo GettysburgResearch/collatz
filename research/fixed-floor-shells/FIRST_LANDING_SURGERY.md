@@ -113,7 +113,7 @@ fixed-length native path.
 
 Write $m=2^b m_o$ with $m_o$ odd. Choose an integer
 $L\ge\max(2,H,b+1)$ and $a\in\{1,2\}$ so that $2^{-a}\equiv z\pmod3$.
-Put $N=3^{L+2}m_o$ and choose the fixed anchor scale $K\ge500N$.
+Put $N=3^{L+3}m_o$ and choose the fixed anchor scale $K\ge500N$.
 At level $j$ use every odd $u\in[K,4K)$ satisfying
 $$ 2^a4^j u\equiv 2^a-6\pmod N. $$
 These $u$ form one residue class modulo $2N$. Define
@@ -122,12 +122,8 @@ $$
  r=2^L(v+1)/3^L-1.
 $$
 The congruence makes $w$ an odd integer with
-$2^aw+2\equiv0\pmod{3^{L+1}m_o}$. Hence $w\equiv z\pmod3$,
-$v$ is an odd integer, and $r\equiv-1\pmod{2^Lm_o}$ is odd.
-If $r$ happens to be divisible by 3, no edit at such a vertex is
-needed: imposing the original congruence modulo $3N$ instead, and
-choosing $K\ge1500N$, enforces $r\equiv-1\pmod3$ at every vertex.
-Use this stronger congruence throughout.
+$2^aw+2\equiv0\pmod{3^{L+2}m_o}$. Hence $w\equiv z\pmod3$,
+$v$ is an odd integer, and $r\equiv-1\pmod{3\cdot2^Lm_o}$ is an odd unit.
 
 The native path starting at $r$ takes $L$ steps with valuation 1
 to $v$, then one step with valuation $a$ to $w$, then one with
@@ -137,8 +133,8 @@ formula for $v$. Every intermediate vertex before $u$ exceeds $r$
 for all sufficiently large $j$: the first $L$ steps grow strictly,
 and $w/r\to 3^{L+1}/2^{L+a}>1$ as $j\to\infty$.
 The vertices $r$ increase in the same order as $4^ju$, since $r$
-is a positive affine function of this quantity. Using spacing $6N$
-in place of 18 and $K\ge1500N$ gives ratios below $6/5$ for adjacent
+is a positive affine function of this quantity. Using spacing $2N$
+in place of 18 and $K\ge500N$ gives ratios below $6/5$ for adjacent
 $4^ju$; for large $j_0$ the resulting consecutive $r$ again satisfy
 $2r_{i+1}\le3r_i+1$. The finite-catalogue argument also survives:
 the $r$ in any one orbit are at the same fixed lag $L+2$ before a
