@@ -20,7 +20,8 @@ def decode(index, size):
 def search(n, binary, base_len=9, bits=None, bound=None):
     if not 2 <= n <= 40:
         raise ValueError("supported depth is 2 through 40")
-    k = n // 2
+    # Stream the larger half; the indexed right side sets bucket memory.
+    k = (n + 1) // 2
     modulus = Q**n
     rows = [
         [(-a * Q**i * pow(P, -i-1, modulus)) % modulus for a in DIGITS]

@@ -16,7 +16,7 @@ Split the positions into two halves. The minimum is a circular nearest-pair prob
 
 Write U=2^64. Replace each c by the integer key floor(U c/M). For a word, the exact scaled root U x/M is its summed key plus an error in [0,n), reduced modulo U. Let H be a trial upper bound in key units. If U x/M≤H then the modular key lies in [0,H] or [U−n,U). The C++ join enumerates this entire enclosing set. The Python driver recomputes exact residues and accepts a minimum only after its scaled value is at most H. That candidate proves nothing smaller was omitted. At depths 23 and 24 the minimum itself needs the upper wraparound interval.
 
-The left list contains the negative of the summed left keys and the right list contains the summed right keys. Each right key z belongs to exactly one bucket [f,f+w). Its candidate mates q are visited in [f−H,f+w+n), interpreted circularly. Within the bucket the exact unsigned difference z−q is tested against both enclosing intervals. Word indices are retained for colliding keys. To generate the buckets without storing the entire half-list, the program sorts the first few positions of each half and visits translated ranges for all remaining positions. Subdivision into smaller bins inside a bucket only accelerates the range lookup.
+The left list contains the negative of the summed left keys and the right list contains the summed right keys. Each right key z belongs to exactly one bucket [f,f+w). Its candidate mates q are visited in [f−H,f+w+n), interpreted circularly. Within the bucket the exact unsigned difference z−q is tested against both enclosing intervals. Word indices are retained for colliding keys. To generate the buckets without storing the entire half-list, the program sorts the first few positions of each half and sweeps translated ranges for the remaining positions. Each worker owns consecutive buckets and retains a cyclic cursor per translation. It advances that cursor by the nonoverlapping bucket width before checking the extra boundary interval. The local bin count follows the expected right-side occupancy. Neither the sweep nor the bins discard repeated keys.
 
 ## Replay and controls
 
@@ -25,5 +25,6 @@ From this directory, with a C++17 compiler and Python 3.8 or newer:
     g++ -O3 -std=c++17 -Wall -Wextra -fopenmp join.cpp -o /tmp/collatz-modjoin
     OMP_NUM_THREADS=2 python -B check.py /tmp/collatz-modjoin
     OMP_NUM_THREADS=2 python -B search.py /tmp/collatz-modjoin 16 17 18 19 20 21 22 23 24
+    OMP_NUM_THREADS=4 python -B search.py /tmp/collatz-modjoin --base-length 10 25 26 27
 
 The arithmetic requires no external Python package. The controls compare against physical source-cylinder lifting through depth 7 and brute-force every word for six adversarial circular joins. They exercise equality at both endpoints, word collisions, wraparound and bucket boundaries. Independent prior enumeration at commit `8fa408b843554b15f15ca1bc1c9ad6951fdfb4f7` gave depths 1 to 16. Every overlapping root and word at depths 2 through 16 agreed. The new finite calculation is separate from the proposed recognizable-set theorems.

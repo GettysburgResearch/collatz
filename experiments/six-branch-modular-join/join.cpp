@@ -6,6 +6,9 @@
 #include <exception>
 #include <iostream>
 #include <limits>
+#ifdef _OPENMP
+#include <omp.h>
+#endif
 #include <vector>
 
 using U = std::uint64_t;
@@ -32,22 +35,42 @@ Side prepare(const std::vector<Row>& rows, int start, int end, int base_len) {
     std::sort(s.base.begin(),s.base.end(),[](Entry a, Entry b){return a.key<b.key;});
     return s;
 }
-// For each shift undo its rotation and binary-search the base list.
-// 'length' is the number of keys in the requested circular interval.
-template<class Fn> void visit(const Side& side, U first, U length, Fn emit) {
-    const auto& base=side.base;
-    for (auto shift : side.shifts) {
-        U lo=first-shift.key, hi=lo+length;
-        auto at=[&](U k){return std::lower_bound(base.begin(),base.end(),k,
-            [](const Entry& e,U key){return e.key<key;});};
-        auto begin=at(lo),end=at(hi);
-        auto emit_range=[&](auto a,auto b){
-            for (;a!=b;++a) emit(a->key+shift.key,a->code*side.shifts.size()+shift.code);
-        };
-        if (hi>lo) emit_range(begin,end);
-        else { emit_range(begin,base.end()); emit_range(base.begin(),end); }
+// Each worker owns consecutive buckets. For every rotation, retain the
+// position of its first base key in the next bucket, including wraparound.
+class Sweep {
+    const Side& side;
+    std::vector<std::size_t> cursors;
+public:
+    Sweep(const Side& input, U first) : side(input) {
+        for (const auto& shift : side.shifts) {
+            const auto it = std::lower_bound(side.base.begin(), side.base.end(),
+                first - shift.key, [](const Entry& entry, U key) { return entry.key < key; });
+            cursors.push_back(it == side.base.end() ? 0 : std::size_t(it - side.base.begin()));
+        }
     }
-}
+
+    template<class Emit> void visit(U first, U width, U overlap, Emit emit) {
+        const auto size = side.base.size();
+        for (std::size_t i = 0; i < side.shifts.size(); ++i) {
+            const auto shift = side.shifts[i];
+            std::size_t pos = cursors[i];
+            const std::size_t initial = pos;
+            const U start = first - shift.key;
+            auto scan = [&](U limit) {
+                while (side.base[pos].key - start < limit) {
+                    const auto entry = side.base[pos];
+                    emit(entry.key + shift.key, entry.code * side.shifts.size() + shift.code);
+                    if (++pos == size) pos = 0;
+                    if (pos == initial) return true;
+                }
+                return false;
+            };
+            const bool exhausted = scan(width);
+            cursors[i] = pos;
+            if (overlap && !exhausted) scan(width + overlap);
+        }
+    }
+};
 struct Node { U key, code; int next; };
 int main() {
     int n,k,bits,base_len; U bound;
@@ -59,34 +82,46 @@ int main() {
     Side left=prepare(rows,0,k,base_len),right=prepare(rows,k,n,base_len);
     const U width=U(1)<<(64-bits), buckets=U(1)<<bits;
     if (bound>=width/4 || U(n)>=width/4) return 2;
-    // The local table uses the next 15 key bits. Its separate chains retain
-    // every entry, including repeated truncated keys and distinct code words.
-    constexpr int sub_bits=15, bins=1<<sub_bits;
+    const U per_bucket=U(right.base.size())*right.shifts.size()/buckets+1;
+    int sub_bits=0;
+    while (sub_bits<22 && (U(1)<<sub_bits)<per_bucket) ++sub_bits;
+    const std::size_t bins=std::size_t(1)<<sub_bits;
     const int sub_shift=64-bits-sub_bits;
-    #pragma omp parallel for schedule(dynamic,8)
-    for (U bucket=0;bucket<buckets;++bucket) {
-        U first=bucket*width;
-        std::vector<int> heads(bins,-1);
+    #pragma omp parallel
+    {
+        U worker=0, workers=1;
+        #ifdef _OPENMP
+        worker=omp_get_thread_num();
+        workers=omp_get_num_threads();
+        #endif
+        const U begin=buckets*worker/workers, end=buckets*(worker+1)/workers;
+        Sweep right_sweep(right,begin*width),left_sweep(left,begin*width-bound);
+        std::vector<int> heads(bins);
         std::vector<Node> nodes;
-        visit(right,first,width,[&](U z,U code){
-            int slot=int((z-first)>>sub_shift);
-            if (nodes.size()>=std::size_t(std::numeric_limits<int>::max())) std::terminate();
-            nodes.push_back({z,code,heads[slot]});
-            heads[slot]=int(nodes.size()-1);
-        });
-        visit(left,first-bound,width+bound+n,[&](U q,U code){
-            // Convert q−first to a signed local coordinate without signed overflow.
-            const U offset=q-(first-bound);
-            const U lo=offset>bound+U(n)?offset-bound-U(n):0;
-            const U hi=std::min(width-1,offset);
-            for (int slot=int(lo>>sub_shift);slot<=int(hi>>sub_shift);++slot)
-                for (int i=heads[slot];i>=0;i=nodes[i].next) {
-                    U delta=nodes[i].key-q;
-                    if (delta<=bound || delta>=U(0)-U(n)) {
-                        #pragma omp critical
-                        std::cout<<code<<" "<<nodes[i].code<<"\n";
+        nodes.reserve(per_bucket+64);
+        for (U bucket=begin;bucket<end;++bucket) {
+            const U first=bucket*width;
+            std::fill(heads.begin(),heads.end(),-1);
+            nodes.clear();
+            right_sweep.visit(first,width,0,[&](U key,U code){
+                const int slot=int((key-first)>>sub_shift);
+                if (nodes.size()>=std::size_t(std::numeric_limits<int>::max())) std::terminate();
+                nodes.push_back({key,code,heads[slot]});
+                heads[slot]=int(nodes.size()-1);
+            });
+            left_sweep.visit(first-bound,width,bound+n,[&](U key,U code){
+                const U offset=key-(first-bound);
+                const U lo=offset>bound+U(n)?offset-bound-U(n):0;
+                const U hi=std::min(width-1,offset);
+                for (int slot=int(lo>>sub_shift);slot<=int(hi>>sub_shift);++slot)
+                    for (int i=heads[slot];i>=0;i=nodes[i].next) {
+                        const U delta=nodes[i].key-key;
+                        if (delta<=bound || delta>=U(0)-U(n)) {
+                            #pragma omp critical
+                            std::cout<<code<<" "<<nodes[i].code<<"\n";
+                        }
                     }
-                }
-        });
+            });
+        }
     }
 }
