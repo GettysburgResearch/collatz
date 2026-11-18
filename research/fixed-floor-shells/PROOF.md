@@ -131,3 +131,44 @@ $K$-blocks would suffice for Collatz, even if the total exceptional count
 were larger. No such upper bound is established. All counting here is for
 genuine positive integer sources and one fixed target. No assertion about
 uniform constants over targets or growing $K$ is used.
+
+## FS-003. A shrinking-shell estimate with elementary constants
+
+For a fixed gate, there are constants $C,H>0$ such that under the same
+predecessor hypothesis of exponent $\gamma>0$ all large $X$ satisfy
+
+$$
+ \#\{\text{disjoint gate translates in }B_b\cap
+ [X,X(1+C/\log\log X)]\}
+ \ \ge\ c_{b,\mathrm{gate}} X^\gamma
+             \exp(-H\sqrt{\log X}).
+$$
+
+Here the count is the maximum size of such a disjoint family and $\log$
+denotes the natural logarithm. The argument is uniform in shell location.
+It uses a quantitative rotation mesh and keeps the size loss from the
+$J$ legal inverse steps.
+
+**Mesh.** Put $\alpha=\log_2(3)/P$. For integer $m\ge2$, pigeonhole gives
+$1\le q\le m$ with $\beta=\|q\alpha\|\le1/m$. For a nearest integer $p$,
+$3^q$ and $2^{pP}$ are distinct positive integers, both at most
+$2^P3^m$. The mean value theorem for $\log$ yields
+$\beta\ge(2^P3^mP\log 2)^{-1}$. Multiples of $q\alpha$ from zero through
+$\lfloor1/\beta\rfloor q\alpha$ leave gaps at most $\beta$ on the unit
+circle. The same holds with the sign reversed. Thus the mesh modulo $P$
+from $0\le j\le J_m=\lceil m2^P3^mP\rceil$ has gaps at most $P/m$.
+
+Set $J=\lfloor\sqrt{\log X}\rfloor$ and
+$m=\lfloor(\log J)/(2\log 3)\rfloor$. For large $X$, $J_m\le J$.
+In the proof of FS-002 use $\delta=P/m$ and set
+$\epsilon=2^{10P/m}-1=O_P(1/\log\log X)$. For
+$N=\lceil 10m+10\rceil$, $n>N$ guarantees that the logarithmic error is
+below $\delta$ by $z_0\ge(2n-1)/3$. The interior margins for each additive
+gate offset have width at least a constant times $X/m$, which tends to
+infinity. One can take
+$a=\min(1,A/(10M))\,2^{-3P(J+1)}$. Hence $aX\to\infty$,
+$A_b(aX)\ge c_b(aX)^\gamma$, and $A_b(N)\le N=O(\log\log X)$.
+The loss from the input scale is $\exp(-O_{P,\gamma}(\sqrt{\log X}))$,
+and the additional counting divisor $6P(J+1)|D-D|$ is absorbed by slightly
+increasing $H$. This proves the displayed estimate, with constants
+independent of $b$ except for its lower coefficient and cutoff.
