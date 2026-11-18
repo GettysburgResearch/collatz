@@ -35,3 +35,29 @@ $$
  q=\left\lfloor\frac{\log t-(B+2)\log\log t}{\log(3/2)}\right\rfloor.
 $$
 The starting-height bound above ensures $q\le j$ eventually. This yields the same power of ternary approximation up to polylogarithmic factors for height records.
+
+## A real-offset Lyapunov potential for the full empirical phase law
+
+Let $F_w$ be the nonnegative real affine offset of the forward word $w$, with legality tested only in $\mathbb Z_3$ at its indicated endpoint. Define
+$$
+ G(t)=1+3\sup_{w\ {\rm legal\ at}\ t} F_w
+ =1+\sup_w \sum_{i=1}^{|w|}P_i,\qquad \mathcal U=\{G=\infty\}.
+$$
+The empty word is allowed. The equality follows by affine composition in inverse-prefix order. The function is Borel and lower semicontinuous as a supremum over locally constant truncated-word observables. For every legal forward edge $s\mapsto t=(3s+1)/2^a$ of multiplier $J=3/2^a$ it obeys
+$$
+ G(t)\ge1+J G(s).
+$$
+This inequality includes the positive additive term at *every* edge of an actual ordinary trajectory. At every positive ordinary integer $t$, even or odd, $G(t)\le1+3t$ because every legal word there has positive ordinary starting numerator. By the sibling inequality above, $G(t)\ll1+h(t)$ at every ternary phase.
+
+The set $\mathcal U$ has exactly the same ternary Hausdorff dimension $h_0$ as $K$. For the lower bound $K\subset\mathcal U$. For the upper bound, unbounded prefix sums force arbitrarily large $i$ at which some legal prefix has $P_i\ge i^{-2}$; otherwise the sum of the small terms and the finitely many exceptional depths is uniformly bounded, since $P_i\le(3/2)^i$. Such a prefix has positive valuation total at most $i\log_2 3+2\log_2 i$. There are at most $\binom{\lfloor i\log_2 3+2\log_2 i\rfloor}{i}=3^{(h_0+o(1))i}$ such words, each on one depth-$i$ ball. The limsup-cover bound gives dimension at most $h_0$. Its rational elements are exactly the poles classified in [the rational trace theorem](RATIONAL_PHASE_TRACE.md): it is contained in the pole set, every negative cycle belongs to $\mathcal U$ by its growing lap multiplier, and $\mathcal U$ is forward invariant.
+
+Every subsequential empirical ternary phase law $\nu$ of a fixed escaping ordinary positive orbit assigns **positive mass** to $\mathcal U$. If the associated stationary phase/transition process is ergodic, $\nu(\mathcal U)=1$. For a quantitative version, let $(s,a,t)$ denote a transition in any limiting empirical joint law, $J=3/2^a$. Its two phase marginals equal $\nu$ and $E\log J\ge0$: the actual exponent sum is $N\log_2 3+\log_2(y_0/y_N)+O(1)$ by the simple reciprocal-product bound, so the exponents are tight with limiting mean at most $\log_2 3$. We have
+$$
+ \log(3/2)\,\nu(\mathcal U)
+ \ \ge\ E\log J+\int_{\mathcal U^c}-\log(1-1/G(t))\,d\nu(t).
+$$
+There is no boundary flow between $\mathcal U$ and its complement by forward invariance and stationarity. On the finite part,
+$$
+ \log J-\log(1-1/G(t))\le\log G(t)-\log G(s).
+$$
+A unit target has $G(t)>1$. To integrate without assuming integrability of $\log G$, take a stationary Markov chain with this transition law on the finite part, truncate the nonnegative loss at a fixed constant, and telescope to time $N$. The right hand side divided by $N$ tends to zero in probability by stationarity and finiteness of $\log G$. The left average converges to its invariant conditional expectation by the ergodic theorem, since the exponent has finite first moment. Thus its mean is at most zero. Monotone convergence removes the loss truncation. On the infinite part bound $\log J$ above by $\log(3/2)$, proving the stated inequality; the loss is strictly positive on the finite part. This proves the positive-mass and ergodic assertions. It forces a singular component on a fixed set of dimension strictly below one in *every* empirical limit, without requiring positive exponential real growth or selecting only record times. A fixed-start proof that these laws avoid $\mathcal U$ would exclude escape. Pointwise finiteness at every ordinary state does not imply such avoidance under weak convergence.
