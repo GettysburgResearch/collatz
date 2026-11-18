@@ -2,6 +2,8 @@
 
 **Evidence level: exact finite enumeration.** Every row of [roots.jsonl](roots.jsonl) records the minimum ordinary source, its word and endpoint at the indicated depth. The positives surviving all depths form a subset of each finite level. Thus the last minimum is a lower bound for any such source. It decides neither existence nor escape.
 
+The completed partitioned run covers depths 28, 29 and 30. All 4,096 right-bucket partitions completed for each filter. The prefix filter emitted 2,737,829 pairs and gave 42 in-cap one-digit extensions. The fused two-digit filter emitted exactly 9,000 pairs, of which two gave in-cap physical extensions. A separate forward-affine verifier reproduced the minimum and extension count in every individual partition. Restoring the compact ledgers in new scratch directories reproduced all three final records byte-for-byte. The respective least sources have 138, 143 and 149 decimal digits. [Depth 28/29 ledger](receipts-28-29.jsonl) · [Depth 30 ledger](receipts-30.jsonl)
+
 ## Why two independent lists suffice
 
 With the notation of [L-0041](../../claims/lemmas/L-0041-six-branch-root-cap-recurrence.md), let M=Q^n and put
