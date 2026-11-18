@@ -52,3 +52,24 @@ $$
  |(p_i(x)-p_j(x+1))\log3-(i-j)\log2|\ll H 2^{-\epsilon h/2}+2^{-h}.
 $$
 The error sums the positive terms $\log(1+1/(3z))$ from odd inputs and the initial log ratio of $x+1$ and $x$. A nonzero linear form on the left is bounded below by a negative power of $1+H$, by the finite irrationality measure of $\log_3 2$. Thus it vanishes identically for large $h$. Unique factorization gives $i=j$ and equal odd counts, as asserted. Combined with Leen's balanced tail on the full period this proves (2) at $h$. The exceptional starts across all dyadic shells have finite reciprocal sum. Consequently the pairs failing to meet even with independent clocks through $H$ still have divergent reciprocal sum, by the all-time equal-clock obstruction above restricted to even starts. Equation (2) makes no assertion about the leading constant at the longer clock $H$. [Irrationality estimate and source](../binary-run-occupancy/MELLIN_PHASE.md)
+
+## A quantitative test that also detects a second periodic component
+
+The [shrinking-interval first-landing result](../critical-orbit-mellin/LOCAL_FIRST_LANDING.md) gives each fixed nonempty component a positive lower proportion in every interval $[Y,(1+w)Y]$ with $w\asymp(\log Y)^{-1/10}$ for sufficiently large $Y$. For all integers it suffices to count its odd members. The stated exponent is below the one in that result. It also supplies this lower bound in wider intervals by subdivision, or by its uniform range of widths.
+
+Put $K_1=2$, $K_{j+1}=2^{20K_j}$ and let $r(X)$ count the indices $j$ with $2^{K_{j+1}}\le X$. This is a specified function tending to infinity, albeit very slowly. If $P$ is proper and $D=\{n:\mathbf1_P(2n)\ne\mathbf1_P(2n+1)\}$, then
+$$
+                 \liminf_{X\to\infty} \frac{1}{r(X)}
+                 \sum_{n\le X,\ n\in D}\frac1n>0.
+$$
+Consequently even an upper bound of $o(r(X))$ on an unbounded sequence for the cumulative reciprocal sum on $B_1$ would suffice for the whole conjecture. This conclusion uses the source-qualified uniform interval floor.
+
+Indeed fix a component in the complement of $P$. Given any depth-$K$ prefix $n$ of $t$ uniform on $[1,2)$, its depth-$J$ prefix, $J=2^{20K}$, is uniform on the integers from $2^{J-K}n$ up to but excluding $2^{J-K}(n+1)$. This interval has relative length $1/n\ge2^{-K-1}$, while its lower endpoint $Y$ satisfies $(\log Y)^{-1/10}=O(2^{-2K})$. Both $P$ and the chosen second component therefore occupy at least a fixed positive fraction there, independently of $n$ for large $K$. With probability bounded below, the two endpoint labels differ. Some observed odd-child edge between the two levels then has parent in $D$. The probability of observing the odd edge at a particular parent $m\in[2^i,2^{i+1})$ is $2^{-i-1}\le1/m$. Summing over the disjoint level blocks gives the displayed lower bound. A hypothetical escaping component forces a much larger discrepancy even for growing time lags. [Escape and integer time displacement](../fixed-floor-shells/ESCAPING_LAG_DRIFT.md)
+
+## A topological statement without a density input
+
+For every nonempty ordinary merger component, the binary prefixes of a Baire-generic $t\in(1,2)$ spend upper time frequency one in that component. All components may be specified simultaneously. To see this, begin at any odd unit of the desired component and repeatedly take positive inverse odd steps $x_j=(2^{a_j}x_{j-1}-1)/3$ with $4\le a_j\le9$, choosing a unit each time. Among the three choices of the required parity, at least one has this property modulo nine. The heights increase at least fivefold. Consequently
+$$
+ \log_2 x_j=\theta+\sum_{i\le j}a_i-j\log_2 3+o(1)
+$$
+for a constant $\theta$, since the logarithms of the relative corrections are absolutely summable. The binary mantissae are dense in $(1,2)$ by irrational rotation. Any open interval thus contains a dyadic cell with arbitrarily large integer prefix in the specified component. Inside that cell append an arbitrarily long run of zero bits: each continuation is a doubling in the same component. Given a desired frequency below one and a minimum observation horizon, the levels at which this frequency is exceeded therefore contain an open dense union of prefix cells (discard their endpoints). Intersect over the countably many components, frequencies, and minimum horizons. This argument concerns category; the harmonic assertions above use Lebesgue measure on the binary rays.
