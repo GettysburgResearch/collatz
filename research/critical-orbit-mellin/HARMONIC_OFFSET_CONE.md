@@ -47,3 +47,16 @@ $$
 Indeed the $P_j$ are uniformly bounded and converge uniformly to $P$, whose positive-age Cesàro mean is $n m_C/r(n)$; also $D_j/y_j\to r(n)/n$. Boundedly many additional terms are harmless by the ordinary uniform height bound $g_Q(y)/y\ll1$ for nonperiodic $y$. This proves the upper bound by the sum of the masses of these finitely many components.
 
 For the reverse direction choose any finite set of nonperiodic components and advance each anchor $n_C$ far enough that $r(n_C)b(n_C)/n_C$ approximates its $m_C$ from below. For $\theta\le\min_C(3n_C+1)^{-1}$ the previous lower-bound words through those anchors qualify, and targets in distinct components are disjoint. Take the lower limit in $Q$, let the anchor errors shrink, and then take the supremum over finite component families. Finiteness of the total mass follows from the signed identity or the antichain-width estimate. This double-limit formula does not assert an exchange of limits or convergence at each individual $\theta$.
+
+## The limiting distribution away from zero
+
+The normalized simple-word measure on relative offset $z=F_w/t$ has a vague limit $\mu$ on $(0,1]$. In particular $B_Q(\theta)/Q\to\mu([\theta,1])$ at every continuity threshold, and $\mu((0,1])=\sum_Cm_C$. Its distribution can be reconstructed from finite ordinary traces.
+
+To see this, mark for every odd $s\le R$ whether the length-$Q$ path visits $s$ at a time strictly before its endpoint. Approximate its distortion by $z_R=1-\prod_{s\text{ marked}}(1+1/(3s))^{-1}$. On simple paths $|z-z_R|$ tends uniformly to zero with $R$ by the simple-segment reciprocal tail. The total normalized simple-word mass is bounded uniformly for large $Q$ by the signed identity applied to the unrestricted positive mass. Thus replacing a continuous observable $\psi(z)$ by $\psi(z_R)$ incurs uniformly vanishing integral error.
+
+Take $\psi(0)=0$. On the finite Boolean cube, $\psi(z_R)$ is a multilinear polynomial in the visit indicators with zero constant term. Every nonempty monomial, marking a fixed nonempty set $E$, has a limiting normalized integral. If the marked points are in periodic components, the possible endpoints form a finite set and their normalized contribution tends to zero. If no forward orbit visits them all, the monomial vanishes. Otherwise in a nonperiodic component write $s$ for the earliest marked point in their unique forward ordering and $d$ for its distance to the last marked point. With $y_j=U^js$, the normalized integral for all sufficiently large $Q$ is exactly
+$$
+ Q^{-1}\sum_{j=d+1}^Q J(s,j)g_{Q-j}(s)/y_j
+ \ \longrightarrow\ r(s)b(s)/s .
+$$
+All sources in this formula have simple paths, and the lower cutoff accounts for excluding the endpoint. This proof includes multiples of three, for which the positive-depth inverse weights vanish. For fixed $R$ it gives a finite inclusion-exclusion procedure in terms of ordinary traces. Passing to $R\to\infty$ defines a bounded positive functional on continuous functions vanishing at zero, hence a finite measure on $(0,1]$. Approximation from above and below gives convergence of cone counts at its continuity thresholds. Taking such thresholds decreasing to zero in the double-limit identity yields its total mass. The argument leaves possible atoms at individual positive thresholds.
