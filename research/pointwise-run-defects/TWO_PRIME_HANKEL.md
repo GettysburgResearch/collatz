@@ -82,6 +82,39 @@ Here r_i is nondecreasing, so the reverse permutation gives the least possible �
 
 Under (3), (5) and the two finite-place estimates imply |H_k|∞ |H_k|₂ |H_k|₃<1 for every sufficiently large k with H_k≠0. A nonzero integer cannot have this product; hence all sufficiently large principal Hankel determinants vanish. For completeness, choose the last r with H_r≠0, allowing H₀=1. Solve for the order-r monic linear recurrence matching the first r rows. If its residual sequence first has a nonzero entry at index j≥r, subtract that recurrence from columns r through j of H_(j+1), from right to left. The new upper right block vanishes, and the lower right block has first nonzero anti-diagonal equal to that residual entry. Its determinant is nonzero, contrary to the maximality of r. The recurrence must extend forever, contradicting the superexponential real growth. This proves the stated ordinary rational exclusion.
 
+## Cyclotomic factors away from 2 and 3
+
+The stronger sufficient condition is
+
+    (2/3)log(P/D) < C_h log D + (D_h+Γ_h)log P,
+    Γ_h=π^(−2) Σ_(m≥1) [((h+2)m−1)^(−2)+((h+2)m)^(−2)].
+
+For h=3 this lowers the sufficient ρ to approximately 0.69940. For example use W₁=W₂=1111, W₃=10, with an intervening fixed single even step G₁=0 and empty other gaps. All exponents are n. The cyclic pins are −1,−1,1; the single fixed step takes the first pin to −1/2, giving three nonzero centered gap constants 1/2,−2,2. Here P=3^9,D=2^10. This lies above the new threshold and below 495/688: π²<10 and the first ten terms of Γ₃ put the new threshold below 701/1000, while 2^10000>3^6309 and 2^(10·688)<3^(9·495) check the two required comparisons exactly.
+
+The antecedent is [Krattenthaler, Rochev, Väänänen and Zudilin, Proposition 4 and Lemma 3](https://arxiv.org/abs/0812.2921), where the one-forcing-term multiplicity is exactly the h=1 bound below. We include the extension and place accounting because the old Collatz-specific two-prime bound uses only places 2 and 3.
+
+Temporarily replace q in (4) by an indeterminate T, keeping u, the c_l,v_l and z₀ fixed. Then every z_n(T) for n≥0 is a polynomial. Treat the parameters as independent indeterminates first, with h distinct forcing modes. For a primitive dth root ζ, put T=ζ exp(w). Write z_(md+b)(T) in powers of w for residues 0≤b<d. The d-step recurrence at w=0 has homogeneous multiplier A=u^d ζ^(d(d−1)/2), independent of b. For each k≥0 the coefficient of w^k on each residue class is the sum of:
+
+* A^m times a polynomial in m of degree at most 2k;
+* (v_l^d)^m times polynomials in m of degree at most k, for 1≤l≤h.
+
+Indeed the d-step homogeneous multiplier is A exp((d(md+b)+d(d−1)/2)w). Its w^j coefficient has degree at most j in m. The d-step inhomogeneous terms are v_l^(md+b) times a finite sum of exponentials exp((a m+b')w) with fixed coefficients depending on the residue, hence have the same degree-j bound. Induct on k. Solving the resulting recurrence with homogeneous multiplier A raises polynomial degree by one in the A-mode and keeps it in each other mode, since A differs generically from all v_l^d. For j≥1 the propagated A-mode degree is at most j+2(k−j)≤2k−1 before solving. The arbitrary homogeneous initial term is constant times A^m. This proves the claim including k=0.
+
+Let E be forward shift. At every derivative order below t, the preceding bounds show that the monic operator
+
+    B_t=(E^d−A)^(2t−1) ∏_l(E^d−v_l^d)^t,        t≥1,
+
+kills the coefficient sequence. Thus B_t z_n(T) vanishes to order at least t at ζ; the same holds for the operator with one extra homogeneous factor. Use the identity for t=0. Set M=h+2. For row i use B_f with f=floor((i+d)/(Md)); for column j use the extra-factor operator of index g=floor(j/(Md)), interpreting any index-zero operator as the identity. These are unit triangular transformations: for the degree-b monic operator attached to row i take its combination of original rows starting at i−b, and do the same for columns. The row and column operators commute and their product is B_(f+g) or its extra-factor version when f+g>0. Every transformed entry therefore vanishes to order at least f+g. Explicitly the determinant polynomial is divisible by
+
+    ∏_(d≥1) Φ_d(T)^e(k,d),
+    e(k,d)=Σ_(i=0)^(k−1) [floor((i+d)/(Md))+floor(i/(Md))].
+
+The identity first holds over the generic parameter field. Since the divisor is monic with integer coefficients, polynomial division commutes with specializing all the parameters, including resonance or cancellation. In the orbit application u,v_l have only powers of 2 and 3 in their denominators; after the original common scaling of z_n, enlarge by another fixed integer if necessary so z₀,c_l have no other denominator. All polynomial coefficients and the quotient then belong to the integers localized at 6. At T=P/D the homogeneous integer values Φ_d(P,D)=D^φ(d)Φ_d(P/D) are all coprime with 6, by the constant and highest coefficients of Φ_d and coprimality of P,D. Accordingly their full product to the indicated powers divides H_k away from 2 and 3. The factors need not be mutually coprime, since the full product was obtained before specialization.
+
+For completeness, log|Φ_d(P,D)|=φ(d)log P+O_q(1), uniformly by Möbius inversion of P^d−D^d and convergence of Σ_(j≥1)|log(1−(D/P)^j)|. Also Σ_d e(k,d)=O(k²log k). Expanding both floors as counts gives the sum of φ(d)e(k,d) as the sum, over t=Mm−1 and t=Mm for m≥1, of Σ_(d<k/t)φ(d)(k−td). For each fixed t, the totient asymptotic Σ_(d≤x)φ(d)∼3x²/π² and partial summation give k³/(π²t²)+o(k³). The trivial φ(d)≤d bounds each contribution by O(k³/t²), allowing dominated convergence. Thus the logarithm of the certified integer divisor is Γ_h k³ log P+o(k³), independent of the two previous prime bounds. Adding all three savings to (5) proves the strengthened criterion.
+
+[Exact finite recurrence, compound divisor and threshold checks](check_hankel.py)
+
 ## Appendix. An alternative one-stage Padé proof
 
 The following is an independent derivation for the previously covered one-stage family. The rational approximation estimates are adapted from [Zudilin’s real-place proof](https://arxiv.org/abs/math/0506086). In this appendix the stage is W^(An+B) V with fixed W,V, A≥1 and B≥0.
@@ -138,34 +171,3 @@ It remains to consider λ<1 for positive rational input of odd denominator. The 
 contradicting T^N(x₀)≥1/D₀. The possibility λ=1 never occurs for a nonempty word. Finite prepending or deletion preserves the rational-source exclusion by the rational affine word map.
 
 Finally, eventually quadratic even positions have eventually positive, affine gaps between successive even letters; hence their suffix is (1) with W the odd letter and V the even letter. Equivalently the 2-adic identity −(x+1)=Σ_(j≥0)3^j(2/3)^(d_j) over even positions d_j is obtained by iterating the two affine maps on x+1. A quadratic d_j reduces that sum directly to (2).
-
-## Cyclotomic factors away from 2 and 3
-
-The stronger sufficient condition is
-
-    (2/3)log(P/D) < C_h log D + (D_h+Γ_h)log P,
-    Γ_h=π^(−2) Σ_(m≥1) [((h+2)m−1)^(−2)+((h+2)m)^(−2)].
-
-For h=3 this lowers the sufficient ρ to approximately 0.69940. For example use W₁=W₂=1111, W₃=10, with an intervening fixed single even step G₁=0 and empty other gaps. All exponents are n. The cyclic pins are −1,−1,1; the single fixed step takes the first pin to −1/2, giving three nonzero centered gap constants 1/2,−2,2. Here P=3^9,D=2^10. This lies above the new threshold and below 495/688: π²<10 and the first ten terms of Γ₃ put the new threshold below 701/1000, while 2^10000>3^6309 and 2^(10·688)<3^(9·495) check the two required comparisons exactly.
-
-The antecedent is [Krattenthaler, Rochev, Väänänen and Zudilin, Proposition 4 and Lemma 3](https://arxiv.org/abs/0812.2921), where the one-forcing-term multiplicity is exactly the h=1 bound below. We include the extension and place accounting because the old Collatz-specific two-prime bound uses only places 2 and 3.
-
-Temporarily replace q in (4) by an indeterminate T, keeping u, the c_l,v_l and z₀ fixed. Then every z_n(T) for n≥0 is a polynomial. Treat the parameters as independent indeterminates first, with h distinct forcing modes. For a primitive dth root ζ, put T=ζ exp(w). Write z_(md+b)(T) in powers of w for residues 0≤b<d. The d-step recurrence at w=0 has homogeneous multiplier A=u^d ζ^(d(d−1)/2), independent of b. For each k≥0 the coefficient of w^k on each residue class is the sum of:
-
-* A^m times a polynomial in m of degree at most 2k;
-* (v_l^d)^m times polynomials in m of degree at most k, for 1≤l≤h.
-
-Indeed the d-step homogeneous multiplier is A exp((d(md+b)+d(d−1)/2)w). Its w^j coefficient has degree at most j in m. The d-step inhomogeneous terms are v_l^(md+b) times a finite sum of exponentials exp((a m+b')w) with fixed coefficients depending on the residue, hence have the same degree-j bound. Induct on k. Solving the resulting recurrence with homogeneous multiplier A raises polynomial degree by one in the A-mode and keeps it in each other mode, since A differs generically from all v_l^d. For j≥1 the propagated A-mode degree is at most j+2(k−j)≤2k−1 before solving. The arbitrary homogeneous initial term is constant times A^m. This proves the claim including k=0.
-
-Let E be forward shift. At each l-independent derivative order below t, the preceding bounds show that the monic operator
-
-    B_t=(E^d−A)^(2t−1) ∏_l(E^d−v_l^d)^t,        t≥1,
-
-kills the coefficient sequence. Thus B_t z_n(T) vanishes to order at least t at ζ; the same holds for the operator with one extra homogeneous factor. Use the identity for t=0. Set M=h+2. For row i use B_f with f=floor((i+d)/(Md)); for column j use the extra-factor operator of index g=floor(j/(Md)), interpreting any index-zero operator as the identity. These are unit triangular transformations: for the degree-b monic operator attached to row i take its combination of original rows starting at i−b, and do the same for columns. The row and column operators commute and their product is B_(f+g) or its extra-factor version when f+g>0. Every transformed entry therefore vanishes to order at least f+g. Explicitly the determinant polynomial is divisible by
-
-    ∏_(d≥1) Φ_d(T)^e(k,d),
-    e(k,d)=Σ_(i=0)^(k−1) [floor((i+d)/(Md))+floor(i/(Md))].
-
-The identity first holds over the generic parameter field. Since the divisor is monic with integer coefficients, polynomial division commutes with specializing all the parameters, including resonance or cancellation. In the orbit application u,v_l have only powers of 2 and 3 in their denominators; after the original common scaling of z_n, enlarge by another fixed integer if necessary so z₀,c_l have no other denominator. All polynomial coefficients and the quotient then belong to the integers localized at 6. At T=P/D the homogeneous integer values Φ_d(P,D)=D^φ(d)Φ_d(P/D) are all coprime with 6, by the constant and highest coefficients of Φ_d and coprimality of P,D. Accordingly their full product to the indicated powers divides H_k away from 2 and 3. The factors need not be mutually coprime, since the full product was obtained before specialization.
-
-For completeness, log|Φ_d(P,D)|=φ(d)log P+O_q(1), uniformly by Möbius inversion of P^d−D^d and convergence of Σ_(j≥1)|log(1−(D/P)^j)|. Also Σ_d e(k,d)=O(k²log k). Expanding both floors as counts gives the sum of φ(d)e(k,d) as the sum, over t=Mm−1 and t=Mm for m≥1, of Σ_(d<k/t)φ(d)(k−td). For each fixed t, the totient asymptotic Σ_(d≤x)φ(d)∼3x²/π² and partial summation give k³/(π²t²)+o(k³). The trivial φ(d)≤d bounds each contribution by O(k³/t²), allowing dominated convergence. Thus the logarithm of the certified integer divisor is Γ_h k³ log P+o(k³), independent of the two previous prime bounds. Adding all three savings to (5) proves the strengthened criterion.

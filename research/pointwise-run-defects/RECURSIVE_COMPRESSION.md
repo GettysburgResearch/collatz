@@ -4,7 +4,7 @@
 
 1. With at most k nodes, for every ε>0 the segment satisfies L≤(1+ε)S+K_(k,ε)(B+1). The grammar, literals, exponents and trajectories are all allowed to vary.
 2. With a binary concatenation nodes and r power nodes, without any restriction on their total number,
-   
+
        S+d L ≤ 2^a c^r (S+d B).
 
 The first estimate extends the [fixed-number result for flat powers](COMPRESSED_DESCENT.md); its constants are ineffective. The second is explicit.
