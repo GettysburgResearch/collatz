@@ -107,5 +107,9 @@ $\lceil\log_2(2B)\rceil$ steps, then discarding at most $B$ leaves.
 coefficients $D_A^{-1}u^{-p}$ over every possible integer target $u>B$
 gives only $O(B^{1-p})$. A joint estimate over many tail edges using
 only additive contributions of these coefficients cannot produce an
-inverse-logarithmic floor lower. The known upper estimates of every
-fixed inverse-logarithmic order permit the polynomial lower above.
+inverse-logarithmic floor lower. The stronger source-qualified upper for failure in rStation paper 102,
+Theorem 1, is $C\exp(C\sqrt{\log B})B^{-g}$ with
+$g=1-H_2(\log_3 2)+1/351$. This permits both the polynomial lower
+above and the prior first-landing theorem's sharper reciprocal lower
+from [FS-022](FIRST_MOMENT.md).
+[Paper 102 v1](https://rstation.ai/problems/collatz/papers/102/v1).

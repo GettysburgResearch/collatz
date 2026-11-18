@@ -59,8 +59,16 @@ means but this argument does not give their growth rate.
 
 The earlier [polynomial atom argument](FLOOR_TAIL.md) only uses Lau's
 absolute predecessor coefficients, without the prior first-landing
-theorem. The known all-order inverse-logarithmic upper tails do not
-imply a finite first moment. Also Theorem 15 of the cited rStation
+theorem. A stronger prior upper is rStation paper 102 v1, Theorem 1 (2).
+It includes the *failure* atom, which is exactly $m>R$, and gives
+$C\exp(C\sqrt{\log R})R^{-g}$, uniformly in odd source octaves of
+scale at least $R$, where $g=1-H_2(\log_3 2)+1/351$. Thus the global
+minimum has every positive moment of order $s<g$, both in its limiting
+law and uniformly in ordinary finite samples. For the latter assertion
+sum the tail by layers, partition even starts according to the power of
+two stripped from their odd core, and bound any straddling octave by
+the octave beginning at $R$ after dropping its points at most $R$.
+The argument does not reach the first moment. [Paper 102 v1](https://rstation.ai/problems/collatz/papers/102/v1). Also Theorem 15 of the cited rStation
 paper precludes a uniform flat $O(1/M)$ upper on all first-landing
 atoms. A bound for arbitrary comparable-scale landings must still
 control the specific targets in $\mathcal R$. The explicit
