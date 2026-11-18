@@ -30,7 +30,7 @@ def main():
     require(gamma/(2*clo*margin) < 2)
     require(820+494*1640**15 < 2**175)
     require(2**512 > 2**175 * 512**16)
-    for width, cap in ((840000, 4*10**12), (98400, 5*10**9),
+    for width, cap in ((840000, 4*10**12), (100040, 5*10**9),
                        (12000, 14*10**6)):
         certify_ratio(width, cap, lower, upper)
     require(1640*512 <= 840000 and 1640*60 <= 98400)
@@ -49,7 +49,24 @@ def main():
     require(lo < lower < upper+Fraction(1, 2**69) < hi)
     require(hi.numerator*lo.denominator-hi.denominator*lo.numerator == 1)
     require(hi.numerator+lo.numerator == 114208327604)
-    print("R(W) certified at 840000, 98400, 12000")
+    rows = ((2, 1), (3, 3), (4, 4), (5, 5), (6, 6), (9, 7), (16, 8), (256, 9))
+    for exponent, rises in rows:
+        power_gain = 1+gamma/(1-cup/exponent)
+        growth = power_gain**rises
+        margin = 1-gamma*(exponent+growth-1)/(exponent*(exponent-1)*clo)
+        require(margin > 0)
+        j_z = max(1+1/(exponent-cup), 1/margin)
+        j_s = gamma/(exponent*(exponent-1)*clo*margin)
+        for coefficient, p_cap, w_cap, d_cap in ((j_z, 120, 100, 65), (j_s, 25, 20, 13)):
+            require((growth-1)*coefficient/(clo-1) <= p_cap)
+            require(growth*coefficient/(exponent-cup) <= w_cap)
+            require((growth-1)*coefficient <= d_cap)
+    require(1970+1068*1640**15 < 2**175)
+    require((1970+1068*4*10**12)*512 < 2**61)
+    require(1640*61 == 100040)
+    require((1970+1068*5*10**9)*61 < 2**49)
+    require(120*101+25*50+14*10**6*(65*101+14*50) < 103*10**9 < 114208327604)
+    print("eight multiple-rise rows and R(W) at 840000, 100040, 12000 certified")
     print("upper length below 48000000000; Farey lower length 114208327604")
 
 

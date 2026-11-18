@@ -6,8 +6,10 @@ binary blocks as A^u B^v. Its Theorem 1 gives an exact Davison-type gcd
 identity with the base commutator E; Lemma 5 gives the same sharp
 all-ones-at-the-end bonus bound used in this packet. Sections 3a and 5
 use the integrality brackets of a powered block and propagate boundary
-heights. These algebraic ingredients and the distinction between
-expanding and contracting blocks are prior work. Theorem 2,
+heights. Section 3a explicitly proves that a contracting block repeated twice
+must decrease, and Section 5 locates a boundary near the least phase
+using monotonicity across copies. These sign and height facts are
+prior work as well. Theorem 2,
 Proposition 3 and Corollary 4 give explicit bounds that exclude
 |A|+|B|<=4.3 times 10^10, even when one exponent is one. Proposition 7
 bounds the occupied fraction of a single power with an additive
