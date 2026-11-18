@@ -8,8 +8,10 @@ The following vague limit holds on (0,∞) × [0,∞) × ℤ₃:
     T⁻¹ Σ_(x odd positive) δ_(x/T) ⊗ G_x(dB) ⊗ δ_x
         → (du/2) ⊗ law(F,Z).                                         (1)
 
-The order of coordinates on the right is (u,B,z). In particular, the
-family is uniformly integrable against the *scaled Stieltjes kernels*
+The order of coordinates on the right is (u,B,z). One can further retain
+the odd dyadic coordinate of x, with independent normalized odd Haar
+measure in the limit. In particular, the
+family is uniformly tight after weighting by the *scaled Stieltjes kernels*
 in (7) below, including at the ends of the spatial and real ranges.
 The escape observable probes B of order x with an additional power of
 T relative to (7). Formula (1) controls the ordinary bounded-offset
@@ -114,7 +116,11 @@ valuation total exceeds 4N with exponentially small probability.
 The absolute error in any resulting physical x is at most
 (3/2)^N O(2^(4N+2)), which is o(T/L). The ternary residue at depths
 j at least the test precision is determined exactly by the last fixed
-number of iid letters, regardless of the initial integer.
+number of iid letters, regardless of the initial integer. An optional
+fixed dyadic test at x is decided by a fixed number of future letters
+(each inverse step gains at least one dyadic bit). Enlarge the bit
+budget and horizon by these fixed constants; the resulting test is
+independent of the past marks and has the odd-Haar mean.
 
 Write Δ=(a²−a)L and let j range through the integers in
 
@@ -168,5 +174,5 @@ exhaustion of compact sets with continuous cutoffs, exhausts the
 entire budget in (7). In detail the finite measures kΓ_T have total
 masses tending to δ and dominate k(du/2)law(F,Z) in the lower-limit
 test inequality. The latter measure has mass δ. Compact approximation
-now gives weak convergence of these weighted measures and uniform
-tightness, and division by k on compact sets proves (1).
+now gives weak convergence of these weighted measures and asymptotic
+uniform tightness, and division by k on compact sets proves (1).
