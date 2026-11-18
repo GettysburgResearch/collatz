@@ -33,15 +33,13 @@ comes from the disjoint logarithmic-length bounded-tail trials and
 uniform far-tail truncation in the coding proof. These statements
 also hold after a finite cycle prefix at a periodic root.
 
-Take E_N increasing with N so the displayed bounds use C≤N and the
-bounded-tail condition holds at all i≥N; also require every
-i≤N at which the displayed bounds are not imposed to satisfy J_i≥1/N
-if needed. More simply, to avoid any small-index bound, use only r
-small enough that the last index with J_i>r is at least N: this holds
-uniformly on E_N after also requiring J_N≥1/N' and taking a countable
-union over N'. Taking increasing finite unions of the resulting
-restrictions yields the asserted exhaustion. All these restrictions
-are measurable and have full union by almost-sure eventual validity.
+For a concrete increasing exhaustion require on E_N that
+h(X_i)≤N(i+2)^(5+δ), a_i≤N log(i+2) and the clock error is
+≤N √((i+1)log log(i+16)) for every i≥1, and require the bounded-tail
+visit property for every i≥N. These measurable sets have full union.
+In particular log J_N is bounded below by a finite deterministic
+constant depending on N. Taking r sufficiently small therefore ensures
+that the last index with J_i>r is at least N throughout E_N.
 
 For 0<r<1 small on a fixed restriction let n be one plus the last
 index i with J_i>r. It is finite since log J_i/i→−d. Thus J_(n−1)>r
@@ -71,9 +69,9 @@ regardless of its endpoints. Restriction to odd integers coprime to
 three only decreases the count. At fixed m each candidate X_m yields
 at most one prefix since forward iteration is deterministic, including
 at a periodic root. Any cylinder containing a qualifying path has
-h(X_m)≤m^(5+δ), so its entire probability is at most
-J_m m^(5+δ)/h(t). For a given m,S_m the aggregate mass is at most
-(K+2)r m^(5+δ)/h(t), using J_m≤r.
+h(X_m)≤N(m+2)^(5+δ), so its entire probability is at most
+N J_m (m+2)^(5+δ)/h(t). For a given m,S_m the aggregate mass is at most
+N(K+2)r (m+2)^(5+δ)/h(t), using J_m≤r.
 
 Sum over m and S_m. The factor (log(L+2))^4 √(log log(L+16)) is
 absorbed into L^(ε−δ), giving the stated bound. For a gauge-null
