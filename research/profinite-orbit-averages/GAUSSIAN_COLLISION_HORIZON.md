@@ -191,3 +191,23 @@ at time $j$ has fraction $O(j^{-1/2})$ by the complete-period
 absorption count. Keeping only $x=2n$ costs at most two.
 The reciprocal contribution is thus $O(j^{-1/2})$ per octave.
 Summing proves the matching order.
+
+There is an explicit form of the shorter-block lower estimate. For
+each fixed $s>0$ take $k=j+\lceil s\sqrt j\rceil$. The marginals of
+$(Z_j-bj)/\sqrt j$ and $(Z_k-bj)/\sqrt j$ converge respectively
+to a centered normal of variance $\sigma^2\log2$ and its translate
+by $bs$. This follows from the terminal clock theorem by differencing
+initial intervals for the octave limit. Test both marginals at $bs/2$.
+The difference of their probabilities forces unequal endpoint labels
+with limiting lower probability $2\Phi(bs/(2\sigma\sqrt{\log2}))-1$.
+After removal of $E$ this is a lower bound for the liminf of the same
+block reciprocal sum. The number of completed blocks through binary
+depth $J$ is asymptotic to $2\sqrt J/s$, since
+$\sqrt k-\sqrt j\to s/2$. Letting $s\downarrow0$ gives
+$$
+ \liminf_{N\to\infty}
+ \frac1{\sqrt{\log N}}\sum_{\substack{n\le N\\n\in B}}\frac1n
+ \ \ge\ \frac{2(\mu\log2-1)}{\sigma\sqrt{2\pi}\log2}.
+$$
+This computation uses only the separate Gaussian marginals at the two
+depths; the two nested sources need no joint limit theorem.
