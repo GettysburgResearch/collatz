@@ -49,6 +49,23 @@ def finite_kernel(word, m):
     assert common
     v = [x//common for x in v]
     assert all(sum(x*y for x, y in zip(v, row)) == 0 for row in rows)
+    # Test the two prime minimizer paths on the literal integer kernel.
+    for prime, factor, order in ((2, 6, range(M, M+n)), (3, -4, reversed(range(M, M+n)))):
+        valuations = {}
+        for k, coefficient in enumerate(v):
+            if coefficient:
+                value, multiplicity = abs(coefficient), 0
+                while value % prime == 0:
+                    multiplicity += 1
+                    value //= prime
+                valuations[k] = multiplicity
+        previous = min(valuations)
+        for j in order:
+            costs = {k: val + factor*(g[k]+E[j-k]) for k, val in valuations.items()}
+            low = min(costs.values())
+            winners = sorted(k for k, val in costs.items() if val == low)
+            assert len(winners) >= 2 and winners[0] >= previous
+            previous = winners[-1]
 
 
 def main():
@@ -61,6 +78,15 @@ def main():
     assert p_margins == [F(1469, 310), F(227, 930)]
     assert (s*s/2 - (d+F(1, 2)+s)*d + d*d/2)/19-u == F(73, 950)
     assert (endpoints[1]-endpoints[0])/18 > d
+    assert 81**94639 < 64**100000 < 81**94640
+    rho, delta, d = F(94639, 100000), F(536, 10000), F(5)
+    u = d/(4*(d-1))
+    v = u-(1+rho)/8
+    lo, hi = F(1), F(243,10)
+    for s in lo, hi:
+        assert rho*((s+d+1)**2/2-d/2) > (s+d)**2/2+d/2+u
+    assert delta*(lo+1)**2/2 > v
+    assert delta*(hi-lo)*((hi+lo)/2+F(1,2))/v > F(23731,100)
     for r in range(1, 19):
         word = [1 + ((j*j+3*j+1) % 5) for j in range(r)]
         E = exponents(word, 2, 4*r+51)
@@ -69,7 +95,7 @@ def main():
             assert all(E[s+j] == E[s]+a*s*j+E[j] for j in range(51))
         if r in (1, 10, 18):
             finite_kernel(word, 2)
-    print("3672 exact shift identities, three nonzero integer kernels and all rational margins checked")
+    print("3672 exact shift identities, three integer kernels, six prime minimizer paths and period-237 margins checked")
 
 
 if __name__ == "__main__":
