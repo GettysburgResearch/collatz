@@ -9,6 +9,8 @@
 
 The same holds simultaneously for any fixed finite list of tests. In particular the shortcut time to t from odd W_X is (2/ℓ)log X+O_P(√log X), and fixed valuation-word frequencies along the first-hit path have errors O_P(1/√log X). The assertion concerns fixed targets, including cyclic t stopped at its first visit. It gives no central limit distribution or uniform waiting bound for large targets.
 
+Leen already proved a stronger Gaussian limit for fixed-target shortcut first-hit times in natural density, the Brownian descent profile with terminal labels, and arithmetic progression transfer. In particular the clock tightness at the scale in (1) is prior. The proof below also bounds maximal cumulative errors for arbitrary fixed dyadic/ternary cylinder observables. [Leen, Invariant sets, Predecessor clocks, Terminal data, and Arithmetic progressions](https://doi.org/10.5281/zenodo.23252395)
+
 Valbuena previously proved the two-sided leading first-hit clock in logarithmic density; Inselmann previously established natural-density trajectory approximation on its linear-log horizon. Here we use the [finite-to-limiting landing domination, Corollary 16](https://rstation.ai/problems/collatz/papers/12/v1) to transfer the [stabilized shell-segment estimates](https://github.com/GettysburgResearch/collatz/blob/4695ea99ee998c8a992c0ea23c2f2d98847312a5/research/native-pressure-20261118/ITERATED-LOG-BOUND.md) to an actual uniform odd source and sum fluctuation errors in probability. [Valbuena, first-hit time law and clock conversion](https://doi.org/10.5281/zenodo.23025885) · [Inselmann, Theorem 1.10](https://arxiv.org/abs/2402.03276)
 
 ## Transport at one threshold
