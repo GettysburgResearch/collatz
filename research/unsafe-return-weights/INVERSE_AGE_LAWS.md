@@ -92,3 +92,33 @@ With the empty supremum interpreted as zero,
 For any δ>0, all nonperiodic targets outside S_δ contribute at most `C₁δ` by the uniform harmonic bound. Its finite cover contributes at most the largest of its finitely many limits (8) or zero for finite transient paths. Among all cyclic targets the supremum tends to zero by (5), (6) and disjointness of cycle basins, first removing all but finitely many via the uniform density bound. These observations prove the upper bound in (9); each component gives the reverse inequality by (8) and the exponentially small error from the finite cutoff in (7). If (9) is positive it is attained: only finitely many components have `H_C≥a` for any a>0, since a late representative per such component is an antichain of width bounded by that of `S_(a/2)`. In particular a subsequence with `M_q→0` suffices for eventual periodicity of every ordinary orbit. Formula (9) does not determine the sign of the limit.
 
 The [finite rational replay](check_first_hit_maximum.py) computes M_q and all maximizing targets for q=0,…,4, using full ternary quotient transfer and a cycle test of at most q+1 odd steps per target. These finite coefficients do not determine (9).
+
+### Certified finite maximizers through depth 14
+
+The [directed-rounding replay](check_maximum_intervals.py) certifies the following unique maximizing targets. The displayed values of the finite maximum are rounded to five decimal places.
+
+| q | maximizing target | M_q |
+|---:|---:|---:|
+|0|1|0.75000|
+|1|5|0.28571|
+|2|1|0.25793|
+|3|5|0.09291|
+|4|13|0.08629|
+|5|5|0.09556|
+|6|1|0.08840|
+|7|121|0.02854|
+|8|91|0.02656|
+|9|103|0.02629|
+|10|103|0.02585|
+|11|155|0.02596|
+|12|233|0.02589|
+|13|175|0.02586|
+|14|263|0.02578|
+
+The maximizers from q=7 to 14 lie on the forward orbit of 27. Its odd phases seven through fourteen are 121, 91, 137, 103, 155, 233, 175, 263. The maximizing target advances along this path, skipping 137 and spending two clocks at 103. This finite example explains why a bound proved for each fixed target need not control the maximum. This particular orbit ultimately reaches 1. The sign of (9) remains open.
+
+Here is the certificate. For f=g_(n-1), separate the first geometric branch and shift all remaining exponents down one. This gives the exact identity on the ternary units modulo 3^n
+
+    2 g_n(t) = g_n(2t) + 3 [2t=1 mod 3] f((2t-1)/3).
+
+The power 2 generates these units, so iterating backwards round one doubling orbit computes the entire quotient. The sum of one-step coefficients on each residue is either one or two, and consequently 0≤g_n≤2^n. Store lower bounds in units of 2^-44. Starting with zero and burning 47+n backward steps suppresses any initial error to less than one storage unit. If the previous level has error at most E storage units, the new error is at most 3E+3, by summing the propagated errors from injection and downward rounding against the geometric contraction 1/2. The bounds hold throughout the subsequent full period. Forward cycle detection and rational interval subtraction give certified first-hit masses at each target. Once the incumbent's lower bound times t exceeds 2^(q+1), every remaining contender loses since first-hit masses are nonnegative and at most their unrestricted masses. The replay checks that the winner's lower endpoint strictly exceeds every competitor's upper endpoint. The first five winners also agree with the full rational method above.
