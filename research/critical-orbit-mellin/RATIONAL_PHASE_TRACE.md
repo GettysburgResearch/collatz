@@ -63,3 +63,34 @@ $$
  \ \ge\ 1-(1-\alpha)\log_3 2 .
 $$
 The same result holds for a lower bound only on ternary units by retaining those $q$ with $x_q$ a unit. In particular an everywhere eventually superharmonic power envelope with a positive regularly varying scale of index $0\le\alpha<1$ and positive bounded distortion is impossible. This is an obstruction on actual positive integer branches, independent of the ternary Haar mean; it leaves open an irregular sublinear envelope or a genuinely different dual certificate.
+
+## All rational poles of the canonical trace
+
+Use the [pointwise convergence theorem](../native-pressure-20261118/EVERY-DEPTH.md): $g_q(t)\to(3/2)h(t)$ at every ternary phase, allowing infinity, and the limit has a positive lower bound on units. Our bounded Cesàro means therefore give a **finite** limit at every odd rational phase off the negative cycles. More generally, for every $r\in\mathbb Q\cap\mathbb Z_3$,
+$$
+ h(r)=\infty\quad\Longleftrightarrow\quad
+ r\text{ is a forward image of a negative odd-rational cycle under finitely many }F_a(y)=(3y+1)/2^a,\quad a\ge1 .
+$$
+Here images include zero-length words. After leaving the legitimate dyadic cycle the exponents in a forward image are arbitrary; for instance $-1\mapsto-1/4\mapsto1/8$ shows $h(1/8)=\infty$. Nonunits, including zero, have $g_q=0$ for $q\ge1$. All forward images are units.
+
+For the converse to the immediate transfer lower bound, first suppose $r=2^k u$ with $u$ odd rational (odd numerator and denominator), $k\ge0$. If $k>0$, a path to $r$ is exactly a path to $u$ whose last exponent $b$ is bigger than $k$, with that last exponent replaced by $b-k$ and the weight multiplied by $2^k$. Thus if $u$ is off negative cycles, the bounded limit at $u$ implies boundedness at $r$. If $u$ is on a negative cycle and its incoming cycle exponent $a_0>k$, that edge alone gives the claimed forward image. If $a_0\le k$, every retained word is a first-hit word to $u$: any earlier visit to $u$ would force the final edge on the cycle. The first-hit Cesàro bound proved above again gives a finite limit at $r$.
+
+For a dyadic denominator write $r=2^{-k}u$ with $k\ge1$, $u$ odd rational. The exact split is
+$$
+ g_q(r)=2^{-k}g_q(u)+
+ \sum_{1\le a\le k:\ x_a=(2^a r-1)/3\in\mathbb Z_3}3\,2^{-a}g_{q-1}(x_a),\qquad q\ge1 .
+$$
+When $a<k$ the dyadic denominator of $x_a$ has exponent $k-a$, and when $a=k$ its denominator is odd. This finite descent terminates. A negative cyclic $u$ reaches $r$ by increasing its incoming exponent by $k$; each pole at $x_a$ contributes via the actual edge $F_a$. This proves necessity. Sufficiency follows throughout directly by composing $g_{q+d}(r)\ge J_w g_q(v)$ along any fixed forward word from a negative cyclic $v$.
+
+For a negative cycle the first-hit coefficients in fact have a finite limit $h_q\to H_*$. To see this, group the words with $q\ge d$ by the first departure from the cycle when read backwards from $r$; $h_q$ is exactly the total weight of words departing within the first $d$ letters. At each of the finitely many cycle positions with required exponent $a_0$, the departure sum for exponents $a<a_0$ is a finite combination of $g_{q-i}$ at off-cycle odd rational predecessors. The sum for $a>a_0$ is a fixed multiple of $g_{q-i+1}(2^{a_0}u)$, where $u$ is the current cycle root and $i$ is the position of the departing letter. All these sequences have finite limits by the preceding classification, including the latter even numerator phase whose cutoff deletes the cycle edge. This also bounds the first-hit terms at all depths. Consequently the sharper negative-cycle expansion is
+$$
+ g_{md+l}(r)-C_l J^m\ \longrightarrow\ -H_* /(J-1).
+$$
+This follows from the expression for $C_l$ by dominated convergence in the discarded geometric tail.
+
+Finally let $\mu$ denote the projective geometric Syracuse offset law, whose depth-$q$ cylinder masses are $3^{-q}g_q(r)$. Its ternary local dimension exists at every rational unit. It equals one at the finite-trace points. At a pole it equals
+$$
+ 1-\log_3\Lambda(r),\qquad
+ \Lambda(r)=\max_C(3^{d_C}2^{-A_C})^{1/d_C},
+$$
+where $C$ ranges over the negative cycles reaching $r$ by arbitrary forward words. Only finitely many cycles can reach a given rational phase. Indeed the above finite backward splitting exhausts them: before the first departure from an odd cycle all transitions are deterministic; a wrong exponent sends the rational either to an even numerator or to an even denominator. From an even numerator the very next step has even denominator, and thereafter its dyadic denominator exponent increases strictly at every step. For a fixed odd target the only remaining initial possibility is its own cycle. For an even numerator target the predecessor on a cycle must be the unique odd predecessor of its odd normalization along that cycle. For an even denominator target the displayed split either normalizes to its odd part or reduces its denominator in finitely many ways. The negative-cycle expansion, the finite recursion, and positivity now give $g_q(r)\asymp_r\Lambda(r)^q$ at poles. In the even numerator case with the cycle edge retained, the removed finitely many smaller-exponent branches have finite traces, so this assertion follows by subtracting a bounded term from $2^k g_q(u)$. All rational unit dimensions are between $\log_3 2$ and one. The minimum is realized precisely by the forward images of $-1$, since an average exponent of one forces the constant valuation-one cycle.
