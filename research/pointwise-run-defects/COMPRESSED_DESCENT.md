@@ -11,6 +11,12 @@ Each W_i is a nonempty binary word, e_i≥1 is any integer, and the G_i are arbi
 
 In particular, if B is bounded and the clock exceeds the native bit horizon by a fixed proportion, the path hits a fixed finite range. If B=o(log n), the minimum is n^o(1). The base words, the intervening words and all their exponents can vary with n. The estimate is pointwise. It provides no compression bound for a general escaping parity word. The arithmetic input is the rational p-adic Subspace Theorem; the argument uses no statistical Collatz theorem. [Evertse, Theorem 1.1](https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf)
 
+In fact an ordinary segment without repeated states obeys the stronger native-horizon inequality
+
+    L ≤ (1+ε)log₂(n+1) + K′_(m,ε)(B+1).                                 (2)
+
+Thus any violation of (2) forces an actual state repetition in the tested segment and proves its ordinary source eventually periodic. If n is on an escaping orbit, (2) holds at every starting phase and every finite horizon. The sharpening follows below from the same separation proof.
+
 ## Reduction to separated large powers
 
 Suppose (1) fails along a sequence on which L>(1+ε)log₂(n+1) and the minimum log height divided by B+1 tends to infinity. In particular B=o(log n) and n tends to infinity. With m fixed, pass to a subsequence where each powered length L_i=e_i|W_i| divided by B+1 is bounded or tends to infinity. Absorb the bounded-ratio powers into the intervening words. Their total length is O(B+1) along this subsequence. At least one large power remains. The stripped initial and final gaps have total length O(B+1) and change the relevant initial log height by O(B+1), since a positive shortcut step changes log₂(x+1) by at most one. Write x_i for the actual input at the start of large power i; the retained L_i all satisfy L_i/(B+1)→∞.
@@ -44,3 +50,15 @@ Add Y, their sum, as one extra linear form. Any j among the j+1 forms are indepe
     2^O_m(B+1) b₁ b_j/Y ≤ 2^(log₂(n+1)−L+O_m(B+1)).
 
 For normalization, multiply all coordinates by a common positive integer to clear denominators at primes outside 2 and 3. One of size 2^O_m(B+1) suffices, since the unit powers create no outside denominator and all other factors have the denominator bounds above. This changes the displayed product by at most 2^O_m(B+1). The product of local norms over these three places is now at least the projective height H. The normalized product of selected forms is at most H^(−j) times 2^(−c_ε L). The height H tends to infinity (use |X/E₁|→∞) and is at most 2^O_m(L), from the formulas and the one-step positive-state height bound. The rational p-adic Subspace Theorem forces a fixed linear dependence on an infinite subsequence, contradicting the preceding separation. This proves (1). The theorem gives no computable K here.
+
+## Removing the low-state alternative on a simple segment
+
+For one retained block of length L_i=e_i|W_i| from the ordinary state x_i, the rational congruence b_i=(x_i−ξ_i)/2^L_i has odd denominator at most 2^O(|W_i|). If b_i=0, then x_i equals the fixed point of W_i. Its actual trajectory returns to x_i after |W_i| steps, a repeated state within this segment. Otherwise the congruence gives
+
+    log₂(x_i+1) ≥ L_i−O(|W_i|+1)
+
+by comparing the nonzero integer numerator of x_i−ξ_i to its ordinary size. This holds without a positivity or largeness premise on x_i−ξ_i (use |x_i−ξ_i|≤x_i+|ξ_i|). Equivalently multiply the congruence by the fixed-point denominator |2^|W_i|−3^(#ones)|: its nonzero integral numerator has absolute value at least 2^L_i and at most 2^O(|W_i|)(x_i+1).
+
+If (2) fails on simple segments, pass to a sequence with [L−(1+ε)log₂(n+1)]/(B+1)→∞. In particular B=o(L). Make exactly the same short-power absorptions and compatible-period joins as above. The retained large powers still have L_i/(B+1)→∞. The individual congruence now implies log₂(x_i+1)/(B+1)→∞ for every retained boundary, including the final retained block. Since the initial gap costs O(B+1) in log height, the same holds for n; thus B=o(log n) as well. The argument with b_i>0 and X dominant used only the boundary heights, never the minima inside the powers. It therefore applies unchanged. Its exponentially small product bound contradicts the Subspace Theorem because L>(1+ε)log₂(n+1) and B=o(L). This proves (2).
+
+At a strict future minimum on a hypothetical escaping orbit, or at any other phase of that orbit, a parity window of length at least (1+2ε)log₂(n+1) consequently has B bounded below by a positive fraction of its length in every fixed-m description. In contrast, (1) applies also to a self-intersecting segment.
