@@ -34,3 +34,20 @@ $$
 Its cubic discriminant $18AB'CD'-4(B')^3D'+(B'C)^2-4AC^3-27(AD')^2$ is negative, while $A,D'>0$. The unique real root is therefore negative. Rational arithmetic for these signs and for $l<\rho<u$ is given in the accompanying checker. This gives a strict upper ceiling, with the published period-587 parameter choice providing the matching integer lower bound.
 
 Moving the center outside the window does not improve these same estimates. For $\theta<0$ the divisor-adjusted height becomes $h(d,1/2)+1/4-\theta$, and for $\theta>1$ it becomes $h(d,1/2)+\theta-3/4$ by the same single-group rearrangement. The tail loss is $d\max(1-\theta,0)$ and denominator cost $d\max(\theta,0)$. The resulting margin increases up to zero from the left and decreases beyond one. This comparison is needed only when the chosen exponent shifts define a valid integer construction; it adds no new admissible edge cases.
+
+## Comparison with the scalar published q-difference criterion
+
+Amou, Matala-aho and Väänänen treat the equation $z^s f(qz)=a(z)Cf(z)+b(z)$ at a finite or infinite place. Our scalar shift has $s=r$, $a=1$, $q=(64/81)^{9S}$ and constant nonzero $C$. Their Theorem 5.1 requires positivity of $B(\tau)-\ell A(\tau)$ at its prescribed sample, where $\ell=\log(81)/\log(64)$. For the scalar dimension $m=1$, equations (5.2)–(5.3) and Section 9 give
+$$
+A(\tau)=r\tau^2/2+\tau+K,\quad
+B(\tau)=r\tau^2/2+(2-\delta)\tau,\quad
+K=1/2+((2-\delta)^3-1)/(6\delta),\qquad 0<\delta<1.
+$$
+[Amou, Matala-aho and Väänänen, Acta Arithmetica 127 (2007), 309–335](https://www.impan.pl/shop/en/publication/transaction/download/product/83675)
+
+For every $r\ge2$ these formulas give a negative margin at every $\tau>0$. Indeed $\ell>21/20$ by $81^{20}>64^{21}$. If $2-\delta\le\ell$ every term of the margin is nonpositive. Otherwise positivity would require $(2-\delta-\ell)^2>2rK\ell(\ell-1)$ by the quadratic discriminant. Already at $r=2$ and $\ell_0=21/20$ the opposite inequality holds. The polynomial
+$$
+1200\delta\big[4K\ell_0(\ell_0-1)-(2-\delta-\ell_0)^2\big]
+=-1242\delta^3+2532\delta^2-1461\delta+294
+$$
+has positive cubic Bernstein coefficients on both halves of the unit interval. In increasing Bernstein index they are $(294,101/2,18,165/4)$ and $(165/4,129/2,287/2,123)$. Increasing $\ell_0$ to $\ell$ strengthens the inequality in the case under consideration. Thus this direct use of the published theorem supplies no further periods.
