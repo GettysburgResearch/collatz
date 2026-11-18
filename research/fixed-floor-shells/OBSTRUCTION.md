@@ -184,3 +184,65 @@ The argument uses only finite positive paths, the elementary parity-word
 bijection, and standard probability inequalities. No unproved stopping-time
 estimate or assumption about the number of actual components enters the
 construction.
+
+## FS-007. A genuine common-target basin with a single defective edge
+
+For each fixed finite floor $H$ and any prescribed finite inspection
+height $Z$ there exist arbitrarily large disjoint pure basins $B_b,B_{b'}$
+with $b,b'>Z$, each disjoint from $[1,H]$, such that every member
+actually reaches one. Here “arbitrarily large” refers to the available
+target heights; both basins are themselves infinite. For either basin its
+indicator is exactly dyadically invariant and satisfies
+
+$$
+ 1_{B_b}(n)=1_{B_b}(T(n))\qquad\text{for every } n\ne b .
+$$
+
+The single failed equality is at $b$. Thus *actual paths to a single fixed
+target*, with the full predecessor, synchronization, and shell counts in
+FS-001–005, can all belong to a convergent population whose apparent
+eternal-survivor invariance fails at one arbitrarily distant point.
+
+Take $b_r=(4^r-1)/3$ for $r\ge2$ not divisible by three. These are odd
+ternary units, since $4^r$ cycles through $4,7,1$ modulo nine. The shortcut
+trajectory goes in one step to $2^{2r-1}$ and thereafter halves to one.
+No $b_r$ visits a distinct $b_s$. Every input has a single future, so
+the pure basins are pairwise disjoint. A fixed $m\le H$ can visit at most
+one $b_r$. Remove those finitely many exceptional indices and select any
+remaining large distinct $r,s$. Their basins avoid $[1,H]$ and consist
+entirely of sources converging to one. Since $b_r$ is odd, doubling
+preserves basin membership exactly. Away from $b_r$ itself, membership
+is equivalent to membership of the next iterate. At $b_r$ the next
+iterate never returns. This proves all assertions; the population
+lower bounds use the same separately qualified inputs as FS-001–005.
+
+This obstruction requires no conjecture about typical orbits. It isolates
+the role of the very last edge that a fixed-floor argument must control.
+A survivor upper bound *with exact invariance at that edge* would still
+distinguish an actual exceptional component.
+
+### Actual synchronized blocks in the two-color model
+
+Property 3 of FS-006 concerns monochromatic blocks of length proportional
+to $\log X$. At the smaller growing length $K(X)$ of FS-005, the same
+coloring construction can additionally count blocks whose members
+coalesce after the prescribed gate words and retain the chosen color
+through their common endpoint.
+
+Indeed for that length the explicit gate has
+$L=(\log\log X)^{o(1)}$, $M=2^L=X^{o(1)}$, and $K(L+1)=o(\log X)$.
+In $I_X$ use only candidate blocks with anchors $B+Mt$, $t\ge1$, and
+space successive $t$ by $K$ to ensure disjointness. There are
+$X^{\alpha-o(1)}$ such candidates. Each root's $L$ successive shortcut
+steps precede its common endpoint and their colors consult at most
+$O(\log X)$ marks altogether by the depth bound above (for large $X$,
+$L<\lambda\log X$). Each candidate therefore uses $O(K\log X)$ marks,
+and each mark is involved in at most $B_X$ candidates, using disjoint
+roots in $[X,2X)$. Floor edits discard at most $|S|B_X$ candidates.
+From a disjoint-mark selection of at least $X^{\alpha-\xi-o(1)}$ blocks,
+one candidate is entirely of a specified color through the merger with
+probability at least $2^{-K(L+1)}=X^{-o(1)}$. Apply the same Chernoff
+and Borel–Cantelli argument. At least $X^\gamma$ such gates of either
+color occur in every sufficiently large $I_X$ almost surely. Their common
+endpoints can differ between blocks. FS-007 supplies the separate, fully
+ordinary fixed-target obstruction.
