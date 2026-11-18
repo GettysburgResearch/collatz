@@ -48,3 +48,19 @@ $$
  c\widetilde L(c)=\frac{\log c}{\log(3/2)}\int\frac{dD(B)}{1+B}+O(1).
 $$
 For $c\alpha_i\ge1$ replace $c\alpha_i/(1+c\alpha_i(B+1))$ by $1/(B+1)$ with total bounded error from the geometric sum of $(c\alpha_i)^{-1}$. The remaining terms are bounded by the geometric sum of $c\alpha_i$. This shows sharp single-logarithm behavior for the full inward side measure in this specific lift. It supplies no positive integer orbit and no upper bound for the ordinary Stieltjes transform. Any stronger ordinary lower bound needs information beyond this elimination of nested side families.
+
+## The same mechanism at each physical target
+
+At every finite-trace ternary unit $t$ let $F_t$ denote its unnormalized canonical real fibre, and let $M(t)=\sup_{w\ {\rm legal\ at}\ t}\beta_w=(G(t)-1)/3$. Uniformly in $t$ and $T>0$,
+$$
+ F_t([0,T])\gg\min\{T,M(t)\}.
+$$
+In particular at all $s\ge1$,
+$$
+ \int\frac{F_t(dB)}{s+B}\gg \log(1+M(t)/s).
+$$
+The first estimate includes phases that are not ordinary targets. On every fixed escaping positive spine it gives the pointwise lower bound $\int(1+B)^{-1}F_{y_j}(dB)\gg_n\log y_j$, since the prefix from the fixed source has $\beta_w\gg_n y_j$ once a single source step is included. More generally, for every positive ordinary odd unit $t$ its least positive odd ancestor $m_{\leftarrow}(t)$ satisfies $M(t)\gg t/m_{\leftarrow}(t)-O(1)$: on a simple first-hit path the full multiplier is $\gg t/m_{\leftarrow}(t)$, and its contribution to $\beta_w$ is one third of that multiplier.
+
+To prove the estimates, each legal prefix at $t$ gives a sequence $P_i$ and offsets $r_i=\sum_{j\le i}P_j/3$. The unit siblings at the first changed letter $i$ give mutually disjoint contributions of mass $\gg P_i$ and real offset at most $r_{i-1}+C P_i\le C' r_i$, by the [bounded-real floor](FINITE_TRACE_FIBRES.md). For $i\ge2$ one has $P_i\le(3/2)P_{i-1}$, so $r_i/r_{i-1}\le5/2$. Also $r_1\le1/2$. For $T$ larger than a fixed constant, stop the prefix at its last $i$ with $C'r_i\le T$. Retain all contributions up to this index. Their total is $\gg\min(T,r_{\rm final})$ whether or not the next letter crosses the threshold. Take the supremum over prefixes. For smaller $T$, use the uniform small-offset floor established for the compact support theorem, adjusting constants on the intervening bounded interval. Finally integrate the distribution function against $(s+T)^{-2}$. The integral of $\min(T,M)/(s+T)^2$ on the positive half-line is exactly $\log(1+M/s)$.
+
+This proof gives a finite-depth variant at arbitrary ternary phases. At total inverse depth $q$ use the finite-word bounded-offset floor after every chosen sibling, and maximize $\beta_w$ over prefixes of length at most $q$. For $T$ above an absolute constant the same CDF lower bound applies to the truncated real-offset word mass; with boundedly many remaining letters one enlarges the fixed offset cutoff to obtain the uniform unit floor. This statement uses $\beta_w$ itself at total depth $q$, keeping the independent stationary tail out of the truncation.
