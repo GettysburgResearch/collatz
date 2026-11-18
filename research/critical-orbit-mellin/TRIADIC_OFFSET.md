@@ -202,3 +202,24 @@ for any fixed word the inverse image of compact nowhere dense E
 under its distortion map is nowhere dense after closure, since the
 map is strictly monotone and continuous off its one wrapping point.
 Countably many words and depths thus exclude only a meagre set.
+
+## Individual random phases
+
+The all-depth bound S_Q=o(Q^(1/2+epsilon)) also holds at every
+Martin-Löf random real phase, for example the halting probability
+of any fixed universal prefix-free machine. To see this, use rational
+0<theta<1, rational a>1/2 and positive rational delta. At each Q
+enumerate finite lists of valuation words and rational open intervals
+of phases on which their distortions are strictly between theta and
+one, their representatives avoid the wrapping points, and the selected
+sum exceeds delta Q^a. All these strict comparisons are computable
+on closed rational subintervals of each smooth branch: the inputs
+are rational functions with known rational coefficients, and Q^a
+is a positive algebraic number. The union over such lists and
+intervals describes the strict exceedance event away from the wrapping
+points. These open sets are uniform in Q and their measures sum to a
+finite number by choosing 1/a<p<2 with p>1. They are therefore a
+Solovay test, which a Martin-Löf random phase meets only finitely
+often. At an irrational phase no endpoint equality at theta or one
+can occur, because all of F_w,t_w,P and theta are rational. The
+countable choices of parameters and monotonicity give the assertion.
