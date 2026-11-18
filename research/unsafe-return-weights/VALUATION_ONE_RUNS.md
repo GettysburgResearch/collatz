@@ -31,3 +31,17 @@ Use the n=s+1 coordinate forms together with their sum Y. Any n of these n+1 fix
 Write c=log₂3, γ=c−1. On any fixed forward orbit y_i+1≤(y₀+1)(3/2)^i, so a run starting at time i has length ≤γ i+O_(y₀)(1). Partition its sequence of runs into consecutive disjoint groups of a fixed m≥2, charging the terminating separator after every run, including the last. If any separator in a group has a−1≥m², the group has total excess E≥m², while crude iteration of the one-run bound changes the starting index i to an ending index i'≤c^m i+O_(m,y₀)(1). Otherwise all separators are bounded by m², so (2) bounds the total run length by (1+o(1))log₂(y_i+1) as i→∞ on this escaping orbit. The m separators add only m to the time, yielding i'≤(c+o(1))i; the excess cost E is at least m.
 
 Accordingly for each fixed η>0, all sufficiently late completed groups satisfy log(i'/i)≤E(log c+η)/m. Sum from a fixed positive starting index. An incomplete last group increases its index by at most a fixed multiplicative constant using the crude one-run bound, even when its last run has not yet ended. Hence liminf_(j→∞) Σ_(i<j)(a(y_i)−1)/log j≥m/log c. Arbitrarily large fixed m give (1). The simple-orbit correction product is bounded, so the exact affine formula gives y_j≤C_(y₀)(3/2)^j 2^(−Σ(a−1)). The claimed growth and cutoff consequences follow. The proof uses positivity and ordinary realization at the separator equalities.
+
+## Ordinary near-equality with every selected run growing
+
+For each fixed m≥2 and arbitrarily large x there are m successive growing runs, all their separators equal to two, with
+
+    Σ r_i = log₂(x+1)+log₂ log₂(x+1)+O_m(1).                           (3)
+
+Here “growing” means every r_i tends to infinity along the family. Thus the leading factor in (2) is attained, and even a uniform additive o(log log x) error in it would be false. The starting integer changes with the family.
+
+To see this, choose an integer k→∞ and prescribe the future word (1^k 2)^(m−1), starting at an odd residue z modulo 2^(D+1), D=(m−1)(k+2), by the ordinary valuation-word bijection. Its first exponent one makes z=3 mod 4. Among the odd powers of 3 modulo 2^(D+2) every residue 3 mod 8 occurs: the powers of 9 generate the residues 1 mod 8 by v₂(9^(2^h)−1)=h+3. Thus choose even r with
+
+    5·3^(r+1) = 2z+1 mod 2^(D+2).
+
+The even exponent indices r form one residue class modulo 2^D; choose r in [2^D,2^(D+1)). Start x=5·2^(r+1)−1. Its first run of ones has length r and leaves the odd state 2·5·3^r−1. The next letter equals two, since 5·3^(r+1)=7 mod 8, and its odd successor is (5·3^(r+1)−1)/2=z mod 2^(D+1). Hence it realizes the entire prescribed continuation. The sum of runs is r+(m−1)k and log₂(x+1)=r+1+log₂5, whereas log₂r=D+O(1). These give (3) with no asymptotic input.
