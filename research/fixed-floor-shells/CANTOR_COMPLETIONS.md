@@ -40,3 +40,21 @@ For the remaining finite costs improve the quadratic estimate slightly. On first
 The [exact checker](check_mixed_cantor.py) enumerates all remaining y for 1≤b≤10. Their respective counts are 0,2,1,2,3,4,6,8,13,20. Including the large-b tail, the sum of their Haar costs is below 0.137394. Removing their union from the initial passing units leaves one common G of additive Haar mass exceeding 0.012.
 
 Finally the two inverse dyadic block maps contract by exactly 2^(−1) and 2^(−4). Their images are disjoint since their first valuations differ. The usual disjoint self-similar cylinder formula gives the stated dimension; explicitly one may assign the two letters masses 2^(−s) and 2^(−4s). The stopping cylinders at a dyadic radius have diameters between one sixteenth of that radius and the radius, so the mass of any ball is bounded by a constant times its radius to the power s, while the level covers give the reverse dimension inequality. The fixed initial word changes neither bound.
+
+## Ordinary least ancestors along a growing forward arm
+
+Let X grow and let k≤10^(−6) log₂ X. Fix **any** length-k prefix of a dyadic itinerary in E, of total S_k. Among the odd r in [X,2X] with exactly those forward valuations, at least cX/2^S_k have the following simultaneous property for an absolute c>0 and all sufficiently large X. For each j from zero to k, the least positive ordinary integer whose trajectory reaches U^j(r) is exactly r. The competing ancestor's depth is unrestricted. The assertion is uniform in the prescribed prefix. It produces potentially different starting integers for successive clocks.
+
+Put M=ceil(0.51 log₂ X). The ternary tests forbidding nonidentity composites of slope at most one at j≤k with inverse total valuation at most M depend only on z modulo 3^M. Indeed the forward rational map divides only by powers of two, and an inverse word with q letters is legal on one residue modulo 3^q. These tests retain Haar mass at least 0.012 by the product assertion, even after restricting to units. The fixed dyadic prefix prescribes one odd class modulo 2^(S_k+1). Counting the usable ternary classes on that dyadic progression gives at least
+
+    0.012 X/2^(S_k+1) − O(3^M)
+
+starts in the interval. The error is negligible uniformly, since S_k≤2k and 3^M 2^(2k+1)=o(X).
+
+For such an r take an actual inverse competitor at t_j=U^j(r) with total S≤M and depth q≤M. A nonidentity word has surviving relative slope ρ=3^(j−q)2^(S−S_j)>1. Its reduced numerator is at most 3^k 2^M, and thus 1−1/ρ≥1/(3^k 2^M). Its ordinary source x satisfies
+
+    x = (2^S/3^q)(P_j r+B_ref−B_w) ≥ ρ(r−(3/2)^M).
+
+Here P_j≥1, the reference offset is nonnegative, and the competing offset is at most (3/2)^q−1 by bounding each reverse multiplier by 3/2. Since 3^(k+M)<X eventually, the right side is strictly greater than r. Exact cancelled words give the same r.
+
+It remains to remove possible later first hits from a smaller source. Every target lies in [X,4X(3/2)^k] for large X, using the same offset bound on the reference. Cover this range by dyadic shells [Y,2Y], with X≤Y≤4X(3/2)^k. The [ordinary all-comparable-first-hits estimate FS-016](QUANTITATIVE_PRESSURE.md) leaves O(Y^(1−1/20000)) exceptional targets on each shell. On the others every smaller source x≤2X≤Y^(1+1/10000) reaches the target, if at all, in at most floor((log₂Y)/2)≤M shortcut steps. A smallest source can be taken odd, since any even start has a smaller odd core on its way to an odd target. For an odd source and odd target the first-hit shortcut clock equals the total inverse valuation. For each fixed forward prefix and j the ordinary map r↦t_j is injective, being an affine map of positive slope. Summing the exceptional counts over j and the O(log X) shells thus costs O((1+log X)^2 [4X(3/2)^k]^(1−1/20000)). This is o(X/2^S_k) uniformly in the given k-range, proving the claim. The absolute coarseness of the chosen clock constant allows all these comparisons without any uniform-in-word limit argument.
