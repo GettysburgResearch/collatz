@@ -74,3 +74,47 @@ truncated trace, because the stationary density has Haar mean one.
 The pointwise inequality H·1_(H>M)≥H−min(H,M) together with (3)
 proves (4). This is an unavoidable concentration of the ordinary
 trace amplitude itself on one dyadic class if any orbit escapes.
+
+## Polynomial spatial resolution on an escaping component
+
+Let C be one escaping merging component, let μ_C be its contribution,
+and restrict the current to C. Set γ=1−η>0 for any uniform simple-orbit
+shell packing exponent η<1, for example γ=1/20. For f∈C¹[0,1] with
+||f||∞≤1 and f=0 on [0,a], 0<a<1/2, one has for T≥2/a
+
+    |U_(C,T)(f)−D_(C,T)(f)−μ_C(f)|
+                 ≤ C₀ (1+||f'||∞) a^(−1/γ) T^(−γ).                    (6)
+
+All constants apart from the test and the fixed packing choice are
+absolute. By the [component generator identity](SPATIAL_CLOCK_FRONT.md),
+the error consists of its terms at x>T. A nonzero bracket requires
+B/x>a/2 on its relevant support, since a single relative offset step
+increases B/x by at most 1/(3x). On every canonical inverse path at
+such an x the entire path is simple. If all vertices of that path
+exceed R, the reciprocal packing bound gives B/x≤C₁R^(−γ), uniformly,
+by multiplying the relative correction factors. Choose R comparable
+to a^(−1/γ), with a sufficiently large constant depending only on γ.
+A positive mass of the relevant marks therefore requires an ordinary
+inverse ancestor ≤R. Consequently all contributing x belong to the
+union of the forward orbits from integers up to R, restricted to C.
+Each such orbit is simple and has total Σ_(x>T)1/x=O(T^(−γ)). Also
+H(x)≤C₂x uniformly on nonperiodic targets by natural-density source
+occupation. Summing the O((1+||f'||∞)H(x)/x²) bound proves (6).
+
+One concrete instance approximates L_C(c)=∫(1+cr)⁻¹μ_C(dr). Choose
+a power g>0 with Pr(m>M)≪M^(−g) for the ordinary global minimum,
+by the [first-passage failure estimate](https://rstation.ai/problems/collatz/papers/102).
+Since r=1−V_∞≥1/(3m+1) on an escaping orbit, μ_C((0,b])≪b^g.
+Fix a smooth cutoff χ with 0≤χ≤1, zero on [0,1] and one on [2,∞).
+With a=c^(−2/g), let f_c(r)=χ(r/a)/(1+cr). For every sufficiently
+large c one has, uniformly for T≥c^K,
+
+    U_(C,T)(f_c)−D_(C,T)(f_c)=L_C(c)+O(c⁻²),                         (7)
+
+where K is an absolute sufficiently large constant. Indeed the
+cutoff costs O(a^g), ||f'_c||∞≪c+a⁻¹, and (6) applies. In particular
+the [disjoint-sibling lower bound](https://github.com/GettysburgResearch/collatz/blob/88ee79f/research/critical-orbit-mellin/COMPONENT_STIELTJES.md)
+forces the left side of (7) to be at least a component constant times
+(log c)/c on this joint range. The lower bound now concerns a signed
+current across ordinary spatial edges with marks uniformly separated
+from the bounded-offset bulk, even when c grows as a power of height.
