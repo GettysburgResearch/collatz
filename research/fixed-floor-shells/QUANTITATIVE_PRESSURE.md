@@ -124,3 +124,57 @@ every large target would exclude such escape. FS-016 does not give one.
 Its high-excursion estimate counts a reentry once even if a positive
 density of initial sources funnels into that single reentry. A thin
 sequence of such targets is compatible with the exceptional-count bound.
+
+## FS-024. A shrinking height ratio in the ordinary predecessor minimum law
+
+Write $b(t)$ for the least positive odd ancestor of an odd target $t$,
+including $t$ itself. Let $d(\theta)=\mu_3(H_\theta)$ be the all-depth
+ternary crossing probability of [FS-010](PREDECESSOR_MINIMA.md).
+If $\theta=\theta_X\to0$ with $X^{-1/40000}=o(\theta)$, then
+$$
+ \frac{\#\{X\le t\le2X:t\text{ odd},\ b(t)<\theta t\}}
+      {\#\{X\le t\le2X:t\text{ odd}\}}
+ \sim c_*\theta^2,
+$$
+using the Haar renewal equivalent $d(u)\sim c_*u^2$ proved in the
+companion minimum-tail work. The comparison with Haar below holds
+independently of that equivalent. This is a simultaneous ordinary height
+and ratio limit. It does not reach the scale of a supplied fixed source.
+
+Put $M=\lfloor(\log_2 X)/2\rfloor$ as in FS-016, and let
+$K=\lfloor(3/10)\log_2 X\rfloor$. For an inverse word write
+$D_j=2^{a_1+\cdots+a_j}/3^j$ and $J_j=1/D_j$. At any ternary-legal
+integer target $t$, the integer at depth $i$ is exactly
+$$
+ x_i=D_i\left(t-\frac13\sum_{j=1}^i\frac1{D_j}\right).
+$$
+On a first crossing $D_i\le\theta$ with $i\le K$, every $D_j$ through
+$i$ is at least $2\theta/3$, since each step multiplies by at least
+$2/3$. Thus all the $x_j$ are positive for $\theta X>K$, and the last
+is strictly below $\theta t$. This union of finite words is a set of
+residues modulo $3^K$; the empirical odd-shell mass of any such union
+differs from its Haar mass by $O(3^K/X)$. The omitted Haar paths have a
+crossing at some $j>K$. Put $s=3/2$ and
+$\rho=3^{s-1}/(2^s-1)<1$. Summing over words of each depth gives
+$$
+ \sum_{w:|w|=j}3^{-j}J_j(w)^s=\rho^j.
+$$
+Markov's inequality and the geometric sum bound the omitted mass by
+$O(\theta^s\rho^K)$. This supplies a lower bound of
+$d(\theta)-O(3^K/X+\theta^s\rho^K)$.
+
+For the upper bound discard FS-016's $O(X^{1-1/20000})$ targets. Along
+a first-hit path from $b(t)<\theta t$ take the first backward crossing
+below $\theta t$ starting at $t$. Its new odd state $x$ is at least
+$(2\theta t-1)/3$, and each intervening odd state is at least $\theta t$.
+Because $x\le2X$, the clock from $x$ to $t$ is at most $M$ on the
+retained targets. The product correction for those at most $M$ odd steps
+gives $D_i=(x/t)\prod_u(1+1/(3u))\le\theta\exp(CM/(\theta X))$.
+With $\theta'$ the latter upper bound, the required target therefore
+lies in the at-most-$M$-letter part of $H_{\theta'}$, again a union of
+classes modulo $3^M$. This gives the upper bound
+$d(\theta')+O(3^M/X+X^{-1/20000})$. Both additive errors in this
+upper bound are $o(\theta^2)$. The lower errors are also $o(\theta^2)$:
+$3^K/X\ll X^{-1/2}$ and $\rho^K\ll X^{-1/100}$, for example.
+Finally $\theta'/\theta\to1$, so the Haar equivalent applies at both
+ratios.
