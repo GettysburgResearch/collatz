@@ -75,3 +75,16 @@ $$
  \log_2 x_j=\theta+\sum_{i\le j}a_i-j\log_2 3+o(1)
 $$
 for a constant $\theta$, since the logarithms of the relative corrections are absolutely summable. The binary mantissae are dense in $(1,2)$ by irrational rotation. Any open interval thus contains a dyadic cell with arbitrarily large integer prefix in the specified component. Inside that cell append an arbitrarily long run of zero bits: each continuation is a doubling in the same component. Given a desired frequency below one and a minimum observation horizon, the set of real inputs exceeding this frequency at some later level therefore contains an open dense union of prefix cells (discard their endpoints). Intersect over the countably many components, frequencies, and minimum horizons. This argument concerns category; the harmonic assertions above use Lebesgue measure on the binary rays.
+
+## An elementary power bound sufficient for the full conjecture
+
+The one-lag test also has a version requiring no external density or synchronization theorem. Set $\gamma=\log 2/\log(64/3)$. If $\#(B_1\cap[1,X])=o(X^\gamma)$, every positive integer reaches 1. The same conclusion follows using only the smaller set $D$ of actual crossings between $P$ and its complement.
+
+Indeed this bound makes $\sum_{D}1/n$ finite. Apply the elementary prefix argument to $\mathbf1_P$, giving a constant almost-everywhere limit. Call the side different from that constant the minority. Whenever a prefix is in the minority, almost every continuation must later cross $D$ on an odd child. Thus the minority fraction in octave $[2^k,2^{k+1})$ is at most
+$$
+ \sum_{j\ge k}2^{-j-1}\#\bigl(D\cap[2^j,2^{j+1})\bigr)
+          =o(2^{-(1-\gamma)k}).
+$$
+Multiplication by the octave size and geometric summation show that the minority has $o(X^\gamma)$ elements up to $X$.
+
+Every nonempty component has at least $c_b X^\gamma$ elements up to $X$ by an elementary inverse tree. Choose an odd ternary unit $b$ in it. At every unit target, exactly two of the three exponents of the required parity in $1,\ldots,6$ yield a positive odd unit predecessor $(2^a t-1)/3$, by reduction modulo nine. At each fixed depth $l$ this gives $2^l$ distinct sources: deterministic forward iteration recovers their entire valuation word even if a vertex lies on a cycle. All are at most $b(64/3)^l$. Take $l=\lfloor\log(X/b)/\log(64/3)\rfloor$. A nonempty minority is therefore impossible. Since $1$ belongs to $P$, the conclusion follows. Stronger positive-density information in the principal theorem is what permits merely finite reciprocal sum.
