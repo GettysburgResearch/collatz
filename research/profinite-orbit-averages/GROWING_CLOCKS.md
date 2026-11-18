@@ -1,13 +1,13 @@
 # Growing moduli for the two Collatz arrival clocks
 
 **Proposed, using Leen's finite-horizon synchronization estimate and Rhin's lower bound for a linear form in two logarithms.** Write T for the shortcut map. Count even and odd inputs separately up to the first visit to a positive target b, allowing a visit at time zero. Let P_X be the subprobability measure on (Z/qZ)² obtained by counting these two residues for the successful sources in [1,X], with weight 1/X per source. Write p_X for its total mass and u_q for the uniform probability on that group. For each fixed 0≤α<1, uniformly for integers 1≤b≤X^α,
-    
+
     ||P_X − p_X u_q||₁ ≪_α q (log X)^(−5/143).                    (1)
 
 The left side is the sum of absolute differences of point masses. In particular q may grow as any fixed power of log X strictly smaller than 5/143. For a fixed target with positive lower basin density this also gives convergence in total variation conditional on eventual arrival. The same statements apply on any fixed proportional shell, with its own observed basin mass. They also apply to the pair consisting of ordinary and shortcut first-hit times, by an invertible integer change of the two count coordinates.
 
 For any union A of complete positive merger components, put p_A(X)=X⁻¹|A∩[1,X]|. For t in a fixed compact subinterval of (0,∞),
-    
+
     |p_A(tX) − p_A(X)| ≪ (log X)^(−5/143).                         (2)
 
 The implied constant is uniform in the component union. Hence any interval [Y,Y+H] with Y comparable to X and H≫X/(log X)^η for fixed η<5/143 has component frequency p_A(X)+o(1), uniformly in its location. Equation (2) also applies to any of the above target basins.
@@ -58,7 +58,7 @@ This estimate sums the errors over *all* minimum values and clock classes simult
 To see this, first suppress sources with m(n)>X^(19/20). On all remaining sources label by the actual minimum as well as the first-arrival clock. At inputs larger than X^(19/20) the minimum, conditional on inclusion, is strictly later, so the branch identities in (4) hold for this vector label. For inputs below the cutoff, allowing an exception for *every* input costs O(X^(19/20)/Y), still negligible at our intermediate scales. In (3), a synchronized pair starting above 2^h X^(19/20) has all pre-meeting values above the cutoff. Its common future therefore determines whether either is included and, if included, their shared minimum and the equality of both clock classes. The vector proof applies verbatim with α=19/20 and its constants.
 
 The suppressed population has mass O(X^(−c)) for some c>0, by a direct binary-cylinder estimate. Take r=⌊(log₂ X)/2⌋. The first r parities on a complete modulus 2^r run through every binary word exactly once (induct on r using the invertible odd multiplier at each fixed parity). Except for at most O(X exp(−c₁r)+2^r) starts the odd count is ≤0.55r by the binomial tail bound. For such n,
-    
+
     T^r(n) ≤ X (3^0.55/2)^r + (3/2)^r ≤ X^(19/20)
 
 for sufficiently large X. The additive term bounds the affine bonus by maximizing all branches at each step. The two power exponents on the left are 1+(0.55 log₂3−1)/2 < 0.94 and (log₂3−1)/2 < 0.30. Adding back the discarded mass proves (6).
