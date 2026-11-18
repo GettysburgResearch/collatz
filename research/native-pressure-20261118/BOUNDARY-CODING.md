@@ -91,3 +91,47 @@ one. Interpolation and ε↓0 prove the claim. At a periodic root only
 finitely many initial states precede cycle exit almost surely; the
 endpoint and decoding identities above also hold directly on the
 entire path there.
+
+## Separation of alternative typical clocks
+
+Fix two distinct inverse paths from the same integer t having the
+same real B₀ and for which the empirical joint tails converge to Σ
+and its marginals as in the real-tail theorem. Then for every fixed M,
+
+    density {i : |S_i−S'_i|≤M} = 0.                                  (1)
+
+Indeed, after their first different letter their prefix maps F_w,F_v
+are distinct words of the same length. Exact stationary decoding implies
+(F_w)_*Σ and (F_v)_*Σ are mutually singular: they are the conditional
+boundary laws of disjoint positive-probability prefix events recovered
+from the joint boundary value. Thus g_*Σ and Σ are mutually singular
+for g=F_v^(−1)F_w. Both affine coordinates are acted on diagonally.
+Writing T_i=(B_i,X_i in Z₃) and using equality of the two initial
+joint points gives T'_i=g_i(T_i) with g_i=F_v^(−1)F_w. Its slope
+is 2^(S'_i−S_i) and its translation is the dyadic rational
+c_i=X'_i−2^(S'_i−S_i)X_i, by the integer coordinate identities.
+When the clock difference is bounded by M and both real B-tails are
+bounded by K, the denominator of c_i divides 2^M and its real absolute
+value is ≤(1+2^M)K by the real identities. Only finitely many g_i can
+then occur.
+
+If any fixed g in that list occurred on a positive upper density of
+these indices, take a subsequence with positive limiting mass and weak
+limits of the corresponding partial empirical measures of T_i. They
+are tight because they are dominated by the full empirical measures
+converging to Σ. Their nonzero limit is dominated by Σ, and its image
+under the fixed continuous affine g is also dominated by Σ, by the
+second path's empirical limit. This contradicts g_*Σ⊥Σ. Finally let
+K tend to infinity through continuity thresholds of the stationary real
+marginal to obtain (1).
+
+One can express this as a conditional collision identity. For almost
+every real boundary b let π_b be the conditional infinite path law
+at t given B₀=b. Then for each fixed M≥0,
+
+    lim_(q→∞) q^(−1) Σ_(i≤q) (π_b×π_b){|S_i−S'_i|≤M}
+        = Σ_(path atoms ω) π_b({ω})².
+
+Indeed both paths are typical for π_b×π_b-almost every pair by
+disintegration. Their clock-gap frequency is one when the paths
+coincide and zero otherwise. Integrate by bounded convergence.
