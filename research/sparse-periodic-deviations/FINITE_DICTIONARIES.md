@@ -70,3 +70,7 @@ Take a shortest cyclic parsing with C powers. Cutting at the minimum state adds 
     N ≤ (3^{ceil((C+3)/k)}−1) log_2 m.
 
 Since log m=O(log N), this gives liminf C/log N≥k/log 3. Sending k through the positive integers proves the claim. The conclusion is an asymptotic obstruction and supplies no finite cutoff for remaining cycles.
+
+### Earlier quantitative dictionary bounds
+
+Paper 15 proves an effective lower bound of order log t log log t on positive ordinary trajectories for a fixed dictionary of periodic valuation words, including a corresponding conclusion for long positive cycles. It also gives sharper fixed-budget estimates. A bounded number of powers of fixed shortcut words translates into a bounded number of its valuation pieces: inside each word containing an odd bit the gaps repeat, and the boundaries and all-even runs change only boundedly many gaps. Its result is stronger than the superlogarithmic piece-count corollaries above on their common domain. Our proof gives a direct changing-fixed-point derivation and states the elapsed shortcut budget and least-source asymptotic explicitly. [Earlier quantitative results](https://rstation.ai/problems/collatz/papers/15/v1)

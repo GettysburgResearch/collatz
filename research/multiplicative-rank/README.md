@@ -51,3 +51,7 @@ Indeed on any subsequence where the left side stays positive, log₂ m / log₂ 
 Neither estimate applies to arbitrary even-only strings: 2^j,2^(j−1),...,1 all lie in a rank-one group. The strict positive affine remainder for an odd input is essential. A bounded-rank model for a positive proportion of a divergent odd orbit is excluded. The actual prime support of arbitrary Collatz iterates is unconstrained by such a model.
 
 Baseline `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. The repository also uses a different S-unit theorem in the [corrected-stage exclusion](../RESULTS_CATALOG.md#corrected-256-stage-ordinary-completion-exclusion). No stage hypothesis is used here.
+
+### Prior comparison
+
+Earlier work gives quantitative sublinear bounds for visits to unions of finitely many **untranslated** cosets, with the group and representatives allowed to depend on the observed prefix. A further paper gives effective multiplicative-rank restrictions for actual cycles and trajectory heights. The finite S-unit close-pair formulation here supplies a different proof interface. The extension to a union of **additively translated** cosets, with possible affine resonance at the distinct centers, is addressed separately. [Prior moving-coset estimate, rStation 138](https://rstation.ai/problems/collatz/papers/138/v1) · [Prior rank and height estimates, rStation 137](https://rstation.ai/problems/collatz/papers/137/v1) · [Affine returns in this branch](AFFINE_RETURNS.md)
