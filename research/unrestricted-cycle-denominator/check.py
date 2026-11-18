@@ -51,7 +51,35 @@ def test_boundary_identity(word, count):
     return discrepancy
 
 
+def test_coprime_seam():
+    word = "1101010"
+    length = len(word)
+    weight = word.count("1")
+    width = pow(weight, -1, length)
+    reference = (width * weight - 1) // length
+    multiplier = Fraction(3**reference, 2**width)
+    blocks = [(word * width)[i:i + width] for i in range(0, width * length, width)]
+    excess = [0]
+    for block_word in blocks:
+        excess.append(excess[-1] + block_word.count("1") - reference)
+    peak = max(excess)
+    forcing = [Fraction(3 ** (peak - excess[i + 1]) * affine(w)[1], 2**width)
+               for i, w in enumerate(blocks)]
+    total = sum(multiplier ** (length - 1 - i) * f for i, f in enumerate(forcing))
+    start = total / (Fraction(1, 3) - multiplier**length)
+    assert start == 3**peak * Fraction(101, 47)
+    forcing[-1] += Fraction(2, 3) * start
+    trajectory = [start]
+    for f in forcing:
+        trajectory.append(multiplier * trajectory[-1] + f)
+    assert trajectory.pop() == start
+    mean = sum(trajectory) / length
+    variance = sum((v - mean) ** 2 for v in trajectory) / length
+    assert variance == Fraction(204860, 108241) < Fraction(length**2 - 1, 12)
+
+
 def check():
+    test_coprime_seam()
     odd_count, length = 41, 65
     periods = (5, 7)
     baseline = block((False, False), odd_count, length)
