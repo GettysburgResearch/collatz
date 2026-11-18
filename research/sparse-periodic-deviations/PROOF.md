@@ -72,3 +72,20 @@ Since k was arbitrary and $H_i\ge0$, this limit is zero. Also $a_i\le H_i$. The 
 For a *nonperiodic* positive orbit a contracting periodic template ($3^q<2^L$) already differs on a positive asymptotic lower density of positions: the orbitwise coefficient escape implies its actual odd count eventually exceeds $N\log_3 2$, while the template count is $(q/L)N+O(1)$. The equality case is impossible by unique factorization. [T-A3-451 and source-pinned orbitwise estimates](../integrated/orbitwise-boundaries/README.md)
 
 **Open.** The theorem does not show a positive frequency of deviations for an expanding template. For example it does not exclude $\asymp\sqrt N$ deviations. Its Subspace Theorem input gives no effective threshold here, and it does not establish universal coefficient stopping.
+
+## 4. Least positive source in a fixed Hamming neighborhood
+
+Fix an expanding word $w$ of length $L$ and an integer $h\ge0$. Let $m_h(N)$ be the least positive ordinary source whose first $N$ shortcut parities differ from the corresponding prefix of $w^\infty$ in at most $h$ positions. Then
+$$
+\lim_{N\to\infty}\frac{\log_2 m_h(N)}{N}=1 .
+$$
+
+Every length-$N$ parity word determines one residue modulo $2^N$, so the exact template has a positive representative at most $2^N$. Conversely, for every fixed positive source the number of differences tends to infinity by (1). Applying this to all sources up to any fixed bound shows $m_h(N)\to\infty$.
+
+Consider the first $\lfloor N/L\rfloor$ complete aligned blocks for the minimizing source. Their number of mismatched blocks is some $k\le h$. They consist of $a_0$ good blocks, one mismatched block, $a_1$ good blocks, and so on through $a_k$ good blocks. The last good stretch is permitted to stop before its first mismatch: (3) bounds its length by extending to that mismatch, which exists by (1). For $k=0$ use $Q^{a_0}\mid y_0$. For the finitely many possible positive $k$ use the largest threshold in (3). For every fixed $\varepsilon>0$, therefore,
+$$
+N < L\left((1+\varepsilon)\log_Q y_0 +h+1\right).
+$$
+Here $Q=2^L$ and $y_0=(P-Q)m_h(N)+C_w$, so $\log_2 y_0=\log_2 m_h(N)+O_w(1)$. Divide by $N$ and let $\varepsilon$ decrease to zero.
+
+A diagonal argument also gives an unspecified integer radius $h(N)\to\infty$ with the same limit. For each integer $j\ge2$ choose strictly increasing thresholds $N_j$ such that $m_j(N)\ge2^{(1-1/j)N}$ for all $N\ge N_j$ and use $h(N)=j$ on $[N_j,N_{j+1})$. This supplies no explicit rate of growth.
