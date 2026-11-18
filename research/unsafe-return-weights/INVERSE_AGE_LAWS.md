@@ -72,3 +72,23 @@ As t tends to infinity through cyclic states, `d(P(t))→0`: distinct cycles hav
     M_q = max_{1≤t≤3^(q+1), t odd and 3∤t} |g^*_(q+1)(t)−g^*_q(t)|/t → 0.  (7)
 
 Indeed a supremum on the omitted targets costs at most `(2/3)^(q+1)` because every nonnegative g* is bounded by `g_q≤2^q`. All entries in (7) are rational and effectively computable at each finite q. The transfer folds the geometric parameters over their finite ternary period, and iterating t itself for at most q+1 steps decides whether subtraction (5) applies. A proof of convergence of (7), beyond checking any finite initial segment, is still needed to exclude escape. The criterion allows nontrivial cycles.
+
+## The maximum has a limit even under the escape hypothesis
+
+In fact the finite rational sequence (7) always has a limit. In an escaping merger component C choose any forward unit spine, and write `H_C=lim h(y_j)/y_j`, which is H∞ since `F(y_j)/y_j→1`. This limit is independent of the chosen spine, as any two share a common tail. Changing the selected spine only shifts the integer index of its normalized scalar profile G. Put
+
+    s_C=(3/2)H_C max_{k∈Z} |G(k+1)−G(k)|.
+
+The maximum exists and is positive because G has the two different constant tail limits. Uniform boundedness of `g_q/h` also gives `s_C≤C₀H_C` absolutely. On this spine one has
+
+    lim_(q→∞) sup_{j≥0} |g_(q+1)(y_j)−g_q(y_j)|/y_j = s_C.             (8)
+
+Indeed for large j formula (3) twice approximates the signed difference uniformly in q by `(3/2)H_C [G(q−j+1)−G(q−j)]`, after dividing by y_j. Finitely many early j contribute a term tending to zero by every-depth convergence. Conversely take a maximizing k and for every large q set j=q−k. This proves both directions in (8).
+
+With the empty supremum interpreted as zero,
+
+    lim_(q→∞) M_q = sup_{escaping components C} s_C.                     (9)
+
+For any δ>0, all nonperiodic targets outside S_δ contribute at most `C₁δ` by the uniform harmonic bound. Its finite cover contributes at most the largest of its finitely many limits (8) or zero for finite transient paths. Among all cyclic targets the supremum tends to zero by (5), (6) and disjointness of cycle basins, first removing all but finitely many via the uniform density bound. These observations prove the upper bound in (9); each component gives the reverse inequality by (8) and the exponentially small error from the finite cutoff in (7). If (9) is positive it is attained: only finitely many components have `H_C≥a` for any a>0, since a late representative per such component is an antichain of width bounded by that of `S_(a/2)`. In particular a subsequence with `M_q→0` suffices for eventual periodicity of every ordinary orbit. Formula (9) does not determine the sign of the limit.
+
+The [finite rational replay](check_first_hit_maximum.py) computes M_q and all maximizing targets for q=0,…,4, using full ternary quotient transfer and a cycle test of at most q+1 odd steps per target. These finite coefficients do not determine (9).
