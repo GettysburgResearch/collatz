@@ -203,3 +203,32 @@ L<=P+D W^15<=(1200Ks)^16. Using K<=(5/2)e² yields
 Here s>=e/578>512, so 16 log₂ s<=s/2. It follows that
 e<=1156(193+32 log₂ e), false at 2^20 and thereafter by monotonicity
 of the ratio. This proves (4).
+
+## Finite exclusions using two continued-fraction bounds
+
+For complete tours the following pairs (e,r) exclude at most r rising
+powers when all repeat exponents are at least e. These replace the
+earlier more conservative uniform bounds in the opening table.
+
+| e | 2 | 3 | 4 | 5 | 6 | 8 | 9 | 12 | 16 | 20 | 32 | 64 | 128 | 256 | 512 | 1024 | 4096 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| r | 1 | 3 | 4 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 15 | 20 | 24 | 28 | 31 | 38 |
+
+In the sweep use the exact upper bound on J above, and put
+P=(K-1)J/gamma, W=KJ/(e-c), D=(K-1)J+s, rounding upward.
+One has L<=P+D R(W) and the first powered length is <=BJ. To
+bound R(N), find consecutive Farey neighbors l<1/c<u of order N
+and use R(N)<=1/(1-c l). Indeed descending h/w<1/c has denominator
+at most N and therefore h/w<=l. A second use of this same bound
+at a known period cap L<=N gives 2m+2<=R(N)+2 from the total cycle
+drift and 3 ln(2)>2. This sharpens the bound on Z for the next sweep.
+
+The [exact rational replay](check_farey_sweeps.py) brackets c in a
+400-bit dyadic interval, certifies both neighboring fractions by their
+cross determinant one and denominator sum greater than N, and tests
+the inequalities for each row separately. The initial bound L<2^1024
+follows by substituting Z<=16t and s<=2t at t=1024 in P+D W^15:
+the unrounded right side grows at most as t^16 for t>=1024, whereas
+2^t/t^16 is increasing there. The first sweep uses the older Z bound;
+subsequent ones use the computed R(N). Each row ends either at BJ<e
+or below the previously certified period floor 114208327604.
