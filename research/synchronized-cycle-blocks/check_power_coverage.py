@@ -114,6 +114,15 @@ def check_sources_and_constants():
     require(208*16+2*41 == 3410)
     require(3410*16 < 65536)
     require(Fraction(3410*24, 2**24) < 1-Fraction(250, 252))
+    upper = Fraction(485, 306)
+    require(3**306 < 2**485)
+    gap = upper-1
+    margin = 1-(upper+gap**2)/2
+    require(margin > 0)
+    require(upper**2*(1+(gap+gap**2/2)/margin) < Fraction(547, 10))
+    require(upper**3/margin+2*upper < 113)
+    require(upper**2*gap/(2*margin)+1+upper < 23)
+    require(Fraction(1854*24, 2**24) < 1-Fraction(547, 550))
     return right.denominator+left.denominator
 
 
