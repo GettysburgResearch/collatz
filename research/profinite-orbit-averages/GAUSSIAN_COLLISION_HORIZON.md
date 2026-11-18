@@ -98,3 +98,26 @@ admitting **no meeting of any two clocks** through $H_X$ also have
 divergent reciprocal sum. This last inference removes a set of
 finite reciprocal mass from the assumed divergent set. It imposes
 no restriction on later unequal-clock meetings.
+
+**Sharpness for the height test.** Keep $z=\exp(L^{1/4})$, replace
+$1+\delta$ in $H_X$ by any fixed real $b$, and write
+$t=\sqrt{2\log L+b\log\log L}$. The fraction of ordinary octave
+starts visiting $[1,z]$ by this cutoff is
+$(1+o(1))\overline\Phi(t)$. To see the reverse comparison, on a
+finite odd passage with $J_z=O(L)$ the positive residual in the
+formula for $D$ is $O(L/z)$ since each earlier odd state exceeds
+$z$. Also $P\ge1$, so the shortcut visit from $n$ is no later than
+$e+\log_2(2Y)+J_z\log_2 3+O(L/z)$. Together with the lower estimate
+above this sandwiches the event between the two finite odd-clock
+lower tails of the source theorem with standardized levels
+$t\pm C L^{-1/4}$. Indeed the centers differ by $O(L^{1/4})$,
+and the normalization changes by a relative $O(L^{-3/4})$.
+The lower-tail event used for sufficiency has $J_z=O(L)$.
+Use both sides of Leen's relative estimate with $g=1$ and $A=12$.
+The Gaussian tail ratios tend to one, since $tL^{-1/4}=o(1)$.
+The omitted large valuations cost $O(L^{-3})=o(\overline\Phi(t))$.
+Thus the reciprocal mass of these height exceptions is finite
+exactly when $b>1$, by
+$\overline\Phi(t)\asymp L^{-1}(\log L)^{-(1+b)/2}$.
+This boundary concerns fast passage to the specified growing floor;
+even a fast passage need not produce an unequal-clock collision.
