@@ -59,3 +59,19 @@ In a fixed rational linear relation the coefficient of $G$ must vanish because $
 ## Irrational circle rotations
 
 For an irrational rotation by $\alpha$ coded by a finite interval partition, take the unbounded denominators $q$ of convergents from below. If $p/q<\alpha$ is that convergent and $\eta=q\alpha-p$, a mismatch under shift $q$ can only occur within a backward arc of length $\eta$ at a partition endpoint. Visits to any such arc are separated by at least $q$ since $\|i\alpha\|>\eta$ for $0<i<q$. Thus any length-$\lfloor Lq\rfloor$ prefix has at most $(\lfloor L\rfloor+2)$ mismatches per endpoint. A change of endpoint convention affects finitely many hits. This contradicts the theorem for any nonperiodic ordinary positive parity itinerary coded in this way. The same applies after finite steering because its terminal ordinary state starts another orbit.
+
+## Moving starts and separation from other sources
+
+The same conclusion holds at starts $t=t(q)$ on the same nonperiodic orbit whenever $\log x_t=o(q)$, in particular when $t=o(q)$. More generally, for a sequence of pairs $(u,v)$ with $u=x_t$ on one fixed nonperiodic positive trajectory, $v$ any positive ordinary source, $v\to\infty$, and $\log u=o(\log v)$, a bounded Hamming distance on their first $N$ parities implies
+$$
+ \limsup \frac{N}{\log v}\le\frac1{\log(4/3)}.                 \tag{2}
+$$
+The ratio is understood along the specified sequence. In particular, about the parity itinerary of a fixed positive nonperiodic source the other unbounded sources at bounded prefix Hamming distance have size $\ge(4/3)^{N-o(N)}$.
+
+For (2), suppose $N\ge(1+\epsilon)\log v/\log(4/3)$ along an unbounded subsequence, and truncate to the ceiling of this lower bound. Use the two trajectories from $u$ and $v$ in the return argument. Formula (1) still holds for their difference because both trajectories consist of integers. There is a uniform constant $C$ with $M_j x_{t+j}\le C u$ for the relative $M_j=2^j/3^{s_{t+j}-s_t}$, by the same finite reciprocal product on every suffix of the fixed orbit. Keep the bounded-index group, if any, as one ordinary vector coordinate: its value need not be fixed when $t$ moves. All group coordinates have ordinary size $O(u)$, so $G=u-v$ dominates them as required. The 2-adic valuations still equal the first indices, mutually separated across groups, including the possible first bounded index. The coefficient and local parity choices within each group are finite and can again be made fixed. In the product bound the first normalized coordinate now costs $O(u(3/2)^m)$ before telescoping, and $|G|\le 2v$. The bound becomes
+$$
+ O((1+N)^k u v (3/4)^N),
+$$
+which is exponentially small in $N$ at the chosen truncation. Heights remain at most exponential in $N$ since both starting heights have logarithms $O(N)$. This proves (2).
+
+For the moving-start conclusion take $u=x_t$, $v=x_{t+q}$. If $\log v=o(q)$ on a subsequence of bounded Hamming distance, the two starting heights both have logarithm $o(q)$. An exact matching run of length $b$ requires divisibility of the difference between its two entering states by $2^b$, since a parity prefix determines its residue modulo $2^b$. Those states stay distinct along a nonperiodic orbit. Thus the first matching run has length $o(q)$, and both heights remain $\exp(o(q))$ after the following mismatched step by the ordinary growth bound. Iteration through the bounded number of mismatches, including the final matching run, cannot cover $\lfloor Lq\rfloor$ positions. Consequently a putative counterexample has $\log v\gg q$ after passing to a subsequence. Then $\log u=o(\log v)$ and $\log v\le q\log(3/2)+o(q)$, so (2) contradicts the asserted window length.
