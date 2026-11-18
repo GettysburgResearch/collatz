@@ -1,6 +1,7 @@
 # An exact logarithmic endpoint mean for the nontrivial cycles
 
-**Proposed, source-qualified.** Let H_Q(epsilon) be the raw phase-zero
+**Proposed, source-qualified.** This identifies the endpoint constant in the
+[two-scale ordinary test](TWO_SCALE_TEST.md). Let H_Q(epsilon) be the raw phase-zero
 sum J_w/t over odd targets 1<t<=2·3^Q whose distortion F_w/t is at
 least 1-epsilon. Let C range over the nontrivial ordinary odd cycles,
 d_C their odd periods, J_C their positive lap multipliers, and p_C the
