@@ -122,3 +122,25 @@ Here is the certificate. For f=g_(n-1), separate the first geometric branch and 
     2 g_n(t) = g_n(2t) + 3 [2t=1 mod 3] f((2t-1)/3).
 
 The power 2 generates these units, so iterating backwards round one doubling orbit computes the entire quotient. The sum of one-step coefficients on each residue is either one or two, and consequently 0≤g_n≤2^n. Store lower bounds in units of 2^-44. Starting with zero and burning 47+n backward steps suppresses any initial error to less than one storage unit. If the previous level has error at most E storage units, the new error is at most 3E+3, by summing the propagated errors from injection and downward rounding against the geometric contraction 1/2. The bounds hold throughout the subsequent full period. Forward cycle detection and rational interval subtraction give certified first-hit masses at each target. Once the incumbent's lower bound times t exceeds 2^(q+1), every remaining contender loses since first-hit masses are nonnegative and at most their unrestricted masses. The replay checks that the winner's lower endpoint strictly exceeds every competitor's upper endpoint. The first five winners also agree with the full rational method above.
+
+### Uniform depth estimates outside an intermediate height interval
+
+Put c=log₂3 and σ=log 2/log c. For each λ<σ one has at every sufficiently large depth, asymptotically,
+
+    sup_(odd unit t≥(3/2)^q q^(-λ)) |g*_(q+1)(t)−g*_q(t)|/t → 0.       (10)
+
+For the low side let Y_q be nondecreasing, and let N(Y) be any uniform bound on the number of visits of a simple segment to [1,Y]. If N(Y_Q)=o(Q), then for every ε>0,
+
+    #{q≤Q: sup_(t odd unit≤Y_q) |g*_(q+1)(t)−g*_q(t)|/t > ε}
+        = O_ε(1+N(Y_Q)).                                                (11)
+
+In particular the low supremum tends to zero on a density-one set of depths, including for a cutoff slightly larger than q^(1/h₀) by the [prior strict packing bound](LOG_HEIGHT_PROFILE.md). The joint intermediate interval still contains every hypothetical persistent maximum on a density-one set, so neither estimate establishes eventual periodicity.
+
+To prove these claims, (5), (6) and disjoint cyclic basins already give uniform decay of the increments over cyclic targets. For arbitrary ε, the finite forward cover of heavy nonperiodic points contains every target of a possible normalized jump >ε once q is large. Finite paths and bounded initial portions have vanishing increments by fixed-target convergence. On the remaining finite spines, the uniform profile (3) and its two constant tails imply that such a jump requires |j−q|≤K_ε: choose a sufficiently late start to control the uniform approximation at y_j, then use the bounded centered-age window of possible large profile increments. Each spike counted in (11) therefore assigns q to one of O_ε(1) offsets of a visit of one of these spines to [1,Y_Q]. Each spine has at most N(Y_Q) such visits up to Q+K_ε. The density-one formulation follows by the usual diagonal selection over ε decreasing to zero.
+
+For (10), on a fixed escaping spine of ordinary odd states y_j each run of consecutive a=1 starting at y_i has length at most log₂(y_i+1), since each such step replaces y+1 by 3(y+1)/2. Further y_i+1≤(y_0+1)(3/2)^i. If i is the start just after the previous defect a≥2, the next such starting index is therefore at most c i+C_(y_0). Infinite constant-one tails are impossible by the divisibility condition. Iterating yields at least (log j)/(log c)−O_(y_0)(1) defects in the first j letters, including if j ends inside a run. The affine product formula with the bounded simple-orbit correction then yields
+
+    y_j ≤ C_(y_0) (3/2)^j · 2^(−#{i<j:a(y_i)≥2})
+        ≤ C'_(y_0) (3/2)^j j^(−σ).
+
+At bounded centered offsets, each of the finite possible spines lies below the cutoff in (10) eventually.
