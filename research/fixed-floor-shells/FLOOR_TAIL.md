@@ -10,6 +10,9 @@ large $B$,
 $$
  \underline d(S_B)\gg B^{-p-(92/33)h}.
 $$
+In fact at every sufficiently large $B$ one single integer
+$u_B\in(B,(3B+1)/2]$ on that escaping orbit occurs as the exact global
+minimum of a set of starts of lower density at least the same bound.
 The exponent is less than $4.93$. The constant is absolute given Lau's
 constant, and the starting cutoff may depend on the escaping seed.
 On a positive cycle with sufficiently large odd minimum $m$, the same
@@ -74,6 +77,19 @@ has its entire predecessor basin in $S_B$. These basins are disjoint
 and their finite sum of lower densities is at least
 $2M D_A^{-1}(C_0Y)^{-p}$ by Lau. Substituting $r\asymp B$ and
 $M\asymp B^h$ gives the claim.
+
+For the atom refinement take $u_B$ to be the minimum of the odd tail
+from $t$ onward. All tree routes stay above $u_B$ before reaching $t$:
+the intermediate inverse states are at least $(2/3)^6(r+1)-1>2B$.
+The tail from $t$ attains $u_B$ and never goes below it. Count polluted
+leaves with a predecessor at most $u_B-1$ in place of $B$, using the
+last-exit argument at that floor and increasing the universal constant
+in $M$. On every remaining full basin the exact ordinary global
+minimum is $u_B$. The same argument gives the atom at the minimum of
+each sufficiently high cycle. In particular, if $p_u$ is the limiting
+minimum law, divergence or infinitely many cycles implies
+$\sum_u p_u u^{p+(92/33)h}=\infty$: infinitely many distinct atoms
+each supply a term bounded below by a fixed positive constant.
 
 For the cycle claim use $B=m-1$ and start at the cycle minimum $m$.
 Among the unit predecessors with exponents between 12 and 17, there
