@@ -97,3 +97,63 @@ words, each with at most one fixed positive starting state.
 
 The cited theorem supplies no effective upper bound on the exceptional
 lengths. [Evertse, *The p-adic Subspace Theorem*, Theorem 1.1](https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf)
+
+## A descending square and two increasing cubes
+
+**PROPOSED, ineffective.** Only finitely many primitive positive ordinary
+cycles admit a cyclic cover U³ W³ V² with U,W increasing and V decreasing.
+Consequently in any unbounded family of three-power tours the decreasing
+factor and at least one of the two increasing factors must both be squares.
+
+Use the same boundary x,y,z, normalized height H and limiting notation.
+Now k'=gamma/(3-c). For an increasing cube the same bracket shows
+2u/H<=1+g_1+o(1) and 2w/H<=h_1+g_2+o(1): the competing bonus-dominated
+case would imply 3u<=cu+1. Hence g_1<=k', g_2<=k'h_1,
+h_1=1+3g_1 and h_2=1+3(g_1+g_2). At the descending square
+2cp<=v+H, p/H>=1/gamma+o(1), so h_2>=2c/gamma-1. Put
+D_0=(2c/gamma-2)/3. The resulting constraints give
+
+    g_1+g_2 >= D_0,     0.32 < g_1 < 0.415,     g_2 > 0.72.
+
+The middle-boundary integers are now
+M=((3^q-2^u)y+C_U)/3^(3q) and N=((3^t-2^w)y+C_W)/2^(3w).
+As before the bonuses divided by 3^q and 3^t are negligible beside y.
+Therefore
+
+    limsup (log_2 M)/H <= 1-g_1/k',
+    limsup (log_2 N)/H <= h_1-g_2/k'.
+
+In particular the limiting upper bound on (log_2(M²N))/H is at most
+3+3g_1-(2g_1+g_2)/k'. This is at most 3-D_0/k'+(3-1/k')k'<0.50,
+as 3-1/k'>0. The [rational replay](check_single_rise.py) checks all
+strict numerical inequalities.
+
+Set R_0=M3^(2q), R_1=M3^q 2^u, S=N2^(3w)/3^t. Multiplying the
+identity for M by 1+2^u/3^q gives
+
+    R_0+R_1 = y(1-(2^u/3^q)^2) + (C_U/3^q)(1+2^u/3^q).
+
+The identity for N gives S=y(1-2^w/3^t)+C_W/3^t. Thus the relative
+difference |S-R_0-R_1|/R_0 is <=2^(-0.64H+o(H)): the two slope gaps
+are 2g_1 and g_2, and the two bonus-to-y gaps exceed 0.64. For example
+(u-q)/H<=gamma/(2c)+o(1) and (w-t)/H<=gamma h_1/(2c)+o(1) follow
+directly from the width bounds above. Also R_1/R_0=2^(-g_1 H+o(H))
+with g_1<0.415, so the difference is o(R_1).
+
+Use the coordinate forms at 2 and 3. At infinity replace the first
+coordinate form X_0 by X_0+X_1-Y. As in the dimension-two proof,
+the normalized product is at most
+
+    |R_0+R_1-S|/R_0 times M²N times H_*^(-3).
+
+The fixed positive gap between 0.64 and 0.50 gives a Subspace
+Theorem inequality, since log H_*=O(H). Along an infinite subsequence
+there must be a nonzero fixed rational relation
+a R_0+b R_1+d S=0, also allowing the case S=R_0+R_1 directly.
+Dividing first by R_0 gives a+d=0. Subtracting those terms and dividing
+by R_1 gives b+d=0. Hence the relation forces S=R_0+R_1. Its right
+side is M3^q(3^q+2^u), with 2-valuation exactly that of M.
+But 2^(3w) divides the numerator defining S, so 2^(3w) divides M.
+This is impossible since w/H>=g_2/gamma+o(1) and log_2 M/H<=1+o(1).
+As in the first theorem, no effective upper bound for exceptional
+lengths is obtained.

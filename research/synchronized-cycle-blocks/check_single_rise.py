@@ -75,6 +75,13 @@ def main():
     require(drift_gain < Fraction(142, 100) and 1+2*drift_gain < Fraction(385, 100))
     require(1-(1/gamma-1)*Fraction(13, 10) < Fraction(9, 100))
     require(Fraction(385,100)-(1/gamma-1)*Fraction(51, 10) < Fraction(25,100))
+    cube_factor = gamma/(3-cup)
+    minimum_sum = (2*close_lower/gamma-2)/3
+    require((minimum_sum-cube_factor)/(1+3*cube_factor) > Fraction(32, 100))
+    require(cube_factor < Fraction(415,1000))
+    require(minimum_sum-cube_factor > Fraction(72,100))
+    require(3-(3-close_lower)/(close_lower-1) > 0)
+    require(2+3*cube_factor-minimum_sum/cube_factor < Fraction(1,2))
     require(1970+1068*1640**15 < 2**175)
     require((1970+1068*4*10**12)*512 < 2**61)
     require(1640*61 == 100040)
