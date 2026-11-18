@@ -32,3 +32,19 @@ $$
  P(k)=\sum_{x:\,\mathrm{phase}(x)=k}\frac{n\,r(x)}{x\,r(n)} .
 $$
 Indeed $P_j(k)$ includes exactly the sources in that phase already joined by clock $j$; each has the displayed weight by telescoping. Coordinatewise monotone convergence gives the formula. The bounded variation above therefore proves uniform convergence of these positive harmonic sums across all phase classes, including the clocks arbitrarily far ahead of the spine.
+
+## Conservative mass and reversed transition probabilities
+
+A positive harmonic mass on all nonperiodic integer branches follows without specifying a pointwise limit of $g_q$. Choose a common increasing sequence $N_i$ along which the bounded Cesàro means $N_i^{-1}\sum_{q<N_i} g_q(y)$ converge at every nonperiodic positive odd $y$, by a countable diagonal extraction. Call the limits $b(y)$. The width bound for singletons gives boundedness for fixed $y$, and unit minorization gives $b(y)\ge c$ whenever $3\nmid y$. At three-multiples $b=0$. Averaging the positive recursion and passing to the limit gives
+$$
+ b(y)=\sum_{Uz=y}J(z,1)b(z).
+$$
+Indeed the children form an antichain, and for $q\ge1$ the sum of the termwise suprema is at most $y\sum_{Uz=y}\sup_{q\ge1}g_q(z)/z<\infty$. The depth-zero terms are summable separately. This justifies the limit over the entire infinite child set.
+
+Write $m(y)=r(y)b(y)/y$. Telescoping gives $m(y)=\sum_{Uz=y}m(z)$ exactly. For any reachability antichain of nonperiodic positive odd states, $\sum_y m(y)$ is bounded by the absolute width constant. On a nonperiodic component $C$, the numbers $m(y_j)$ therefore increase to a finite positive limit $m_C$ independent of anchor: any two anchors have a common tail, and $m(y_1)>0$. The sum of $m_C$ over all such components is bounded by the same constant, by choosing one late representative per component. These masses may depend on the common Cesàro subsequence.
+
+On each positive-mass parent use the reversed transition probabilities $m(z)/m(y)$ for $Uz=y$. The mass defect relative to the true spine is summable even before normalizing,
+$$
+ \sum_{j\ge k}\sum_{z\in Z_j}m(z)=m_C-m(y_k).
+$$
+The probability of following the ordinary spine backwards from $y_j$ to $y_k$ is exactly $m(y_k)/m(y_j)$. Its limit as $j\to\infty$ is $m(y_k)/m_C$, tending to one as $k\to\infty$. This shows why a backward transition law with an atom on the whole old spine is compatible with the existing lower bounds on individual sibling masses. This conclusion is conditional on the existence of a nonperiodic component; it does not construct one.
