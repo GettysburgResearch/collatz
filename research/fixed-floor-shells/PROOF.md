@@ -172,3 +172,9 @@ The loss from the input scale is $\exp(-O_{P,\gamma}(\sqrt{\log X}))$,
 and the additional counting divisor $6P(J+1)|D-D|$ is absorbed by slightly
 increasing $H$. This proves the displayed estimate, with constants
 independent of $b$ except for its lower coefficient and cutoff.
+
+The finite replay `python -B research/fixed-floor-shells/check.py` found a
+maximum fiber of four on inputs up to 10,000, checked 2,880 exact modular
+rotation steps, and reconstructed 303 two-source gates in shells of relative
+width 1/20. The largest selected rotation depth was 47. This checks the
+displayed constructions in those ranges only.
