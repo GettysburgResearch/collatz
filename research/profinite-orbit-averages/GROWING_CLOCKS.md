@@ -2,9 +2,9 @@
 
 **Proposed, using Leen's finite-horizon synchronization estimate and Rhin's lower bound for a linear form in two logarithms.** Write T for the shortcut map. Count even and odd inputs separately up to the first visit to a positive target b, allowing a visit at time zero. Let P_X be the subprobability measure on (Z/qZ)² obtained by counting these two residues for the successful sources in [1,X], with weight 1/X per source. Write p_X for its total mass and u_q for the uniform probability on that group. For each fixed 0≤α<1, uniformly for integers 1≤b≤X^α,
     
-    ||P_X − p_X u_q||₁ ≪_α q² (log X)^(−5/143).                    (1)
+    ||P_X − p_X u_q||₁ ≪_α q (log X)^(−5/143).                    (1)
 
-The left side is the sum of absolute differences of point masses. In particular q may grow as any fixed power of log X strictly smaller than 5/286. For a fixed target with positive lower basin density this also gives convergence in total variation conditional on eventual arrival. The same statements apply on any fixed proportional shell, with its own observed basin mass. They also apply to the pair consisting of ordinary and shortcut first-hit times, by an invertible integer change of the two count coordinates.
+The left side is the sum of absolute differences of point masses. In particular q may grow as any fixed power of log X strictly smaller than 5/143. For a fixed target with positive lower basin density this also gives convergence in total variation conditional on eventual arrival. The same statements apply on any fixed proportional shell, with its own observed basin mass. They also apply to the pair consisting of ordinary and shortcut first-hit times, by an invertible integer change of the two count coordinates.
 
 For any union A of complete positive merger components, put p_A(X)=X⁻¹|A∩[1,X]|. For t in a fixed compact subinterval of (0,∞),
     
@@ -37,12 +37,36 @@ To verify this, let p/s be the last continued-fraction convergent to log 2/log 3
 
 For (2) use z=log t and (5), then iterate (4). A path of O(H) dilations can change log Y by at most O(H). Also |F(Y')−F(Y)|≪|log(Y'/Y)|+1/min(Y,Y') for nearby positive scales. The total error is O(H/√log X+H^(−1/C)). With H=(log X)^(C/(2(C+1))) this is O((log X)^(−1/(2(C+1)))) and the exponent is 5/143.
 
-## Removing a nontrivial character
+## Averaging translations in total variation
 
-Suppose at least one of U and W is nontrivial. Choose its generator G in {2,3}. There is an integer 1≤d≤q for which the corresponding phase to power d has distance at least one from 1. Apply (5) to z=−(d/q)log G, with B=log 3. Then the real scale multiplier G^d 2^(qi)3^(qj) has logarithm O(q H^(−1/C)), while its character phase is exactly the chosen phase to power d. Iterating (4) costs O_α(q H/√log X). With H as above, the total error is O_α(q (log X)^(−5/143)). One can assume this last quantity is small since |F(X)|≤1. Then all intermediate log-scale changes are O(qH)=O(√log X) and the near-identity real-scale comparison applies. Thus every nontrivial Fourier coefficient of P_X satisfies
+Let the value of f be a point mass at the two residues on a hit and the zero measure otherwise. Use its ℓ¹ norm throughout (3) and (4). A disagreement between two labels costs at most two, the same as for scalar labels. The multipliers for dilation by 2 and 3 are now translations by g₂=(1,0) and g₃=(1,−1). Both preserve ℓ¹ distances. The two vectors form an integer basis.
 
-    |F(X)| ≪_α q (log X)^(−5/143).                                   (6)
+For any desired residue shift g, choose coefficients a,b in [0,q) with g=a g₂+b g₃ modulo q. In (5) take z=−(a log 2+b log 3)/q, which is bounded independently of q. The multiplier 2^(a+qi)3^(b+qj) has logarithm O(q H^(−1/C)), while its translation is exactly g. Iterating (4) costs O_α(q H/√log X) in ℓ¹. Take H as above. We may assume q (log X)^(−5/143) is bounded by a small constant since the total error is always ≤2. Then intermediate log-scale changes are O(qH)=O(√log X). Moving the endpoint by the remaining near-identity scale costs O(q H^(−1/C)+1/Y) in ℓ¹ by counting the affected sources. Consequently
 
-Cauchy–Schwarz and the finite-group Parseval formula bound the left side of (1) by the square root of the sum of squares of its nontrivial unnormalized Fourier coefficients. There are q²−1 such coefficients. This proves (1); in the trivial large-error regime use the absolute bound 2. At fixed nonzero proportional endpoints one can expand α slightly to handle the target cutoff; differences of the two cumulative laws and rescaling give the stated shell conclusions.
+    sup_g ||P_X − τ_g P_X||₁ ≪_α q (log X)^(−5/143).
 
-Neither conclusion requires the magnitude of p_X to converge as X grows. The cited synchronization input controls the source sampling and (5) distinguishes arrival characters through their two branch phases.
+Average over g; the average of all translations is p_X u_q. This proves (1). For shells, at each fixed nonzero endpoint one can expand α slightly to handle the cutoff, then difference and rescale the two cumulative laws. The same translation proof allows an arbitrary auxiliary label space on which translations act trivially, provided the auxiliary label agrees after the balanced meeting and satisfies its branch identities away from the small cutoff used in (3). All estimates are independent of the size of that label space.
+
+## The unrestricted global minimum and its first arrival
+
+For a uniform source n≤X, let m(n) be the smallest positive value on its whole forward orbit and record the even and odd shortcut counts up to its first visit. The minimum exists for every positive orbit, and taking the shortcut leaves its value unchanged. Write Π_X for the joint empirical probability of the minimum and both count residues, and p_X^min for the empirical distribution of the minimum itself. Then
+
+    ||Π_X − p_X^min ⊗ u_q||₁ ≪ q (log X)^(−5/143).                  (6)
+
+This estimate sums the errors over *all* minimum values and clock classes simultaneously. In particular it applies to every collection of minimum values, even one chosen afresh for each X. It describes the clock to an orbit's own minimum and imposes no hypothesis about its later orbit.
+
+To see this, first suppress sources with m(n)>X^(19/20). On all remaining sources label by the actual minimum as well as the first-arrival clock. At inputs larger than X^(19/20) the minimum, conditional on inclusion, is strictly later, so the branch identities in (4) hold for this vector label. For inputs below the cutoff, allowing an exception for *every* input costs O(X^(19/20)/Y), still negligible at our intermediate scales. In (3), a synchronized pair starting above 2^h X^(19/20) has all pre-meeting values above the cutoff. Its common future therefore determines whether either is included and, if included, their shared minimum and the equality of both clock classes. The vector proof applies verbatim with α=19/20 and its constants.
+
+The suppressed population has mass O(X^(−c)) for some c>0, by a direct binary-cylinder estimate. Take r=⌊(log₂ X)/2⌋. The first r parities on a complete modulus 2^r run through every binary word exactly once (induct on r using the invertible odd multiplier at each fixed parity). Except for at most O(X exp(−c₁r)+2^r) starts the odd count is ≤0.55r by the binomial tail bound. For such n,
+    
+    T^r(n) ≤ X (3^0.55/2)^r + (3/2)^r ≤ X^(19/20)
+
+for sufficiently large X. The additive term bounds the affine bonus by maximizing all branches at each step. The two power exponents on the left are 1+(0.55 log₂3−1)/2 < 0.94 and (log₂3−1)/2 < 0.30. Adding back the discarded mass proves (6).
+
+## A logarithmic sample
+
+If a source in [X^a,X] is instead drawn with weight proportional to 1/n for fixed 0<a<1, both (1) and (6) improve to O_a(q/√log X), with fixed targets in (1), or uniformly for targets b≤X^β with fixed β<a. Use (4) on the range [X^a,X] with a synchronization horizon that is a sufficiently small fixed multiple of log X. The full minimum vector satisfies (3) and (4) at each local scale Y regardless of the target cutoff, since suppressing minima larger than Y^(19/20) on each of [1,Y], [1,2Y] and [1,3Y] costs O(Y^(−c)) by the same binomial bound. The latter estimate uses T^r(n)≤3Y (3^0.55/2)^r+(3/2)^r at r=⌊(log₂Y)/2⌋.
+
+Average the resulting cumulative vector F(Y) with measure dY/Y on [X^a,X], dividing by (1−a)log X. A change Y↦2Y or 3Y now costs O_a(1/log X) from the endpoints. This mean differs from the normalized harmonic sample by O_a(1/log X) in ℓ¹, by partial summation. Thus each of the two translation generators changes the sample by O_a(1/√log X). Every group element uses at most 2q generator steps. Averaging its translations again gives the stated bound. In particular q=o(√log X) is allowed on these growing logarithmic windows.
+
+The cited synchronization theorem controls source sampling. The real approximation is used to distinguish arrival residues on a single proportional shell.
