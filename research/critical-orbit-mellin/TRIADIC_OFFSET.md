@@ -82,7 +82,7 @@ moment over the translated grid:
 
     sup_Q ||S_Q^u([theta,1])||_(L^p(du)) < infinity.
 
-Consequently for a p>1 (where a is the exponent in the display below),
+Consequently for every real a>1/p,
 
     || sup_(Q>=1) Q^(-a) S_Q^u([theta,1]) ||_p < infinity.
 
