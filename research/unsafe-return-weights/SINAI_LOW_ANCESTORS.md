@@ -51,3 +51,23 @@ For any reachability antichain Y of nonperiodic odd targets and any independentl
     Σ_{y∈Y} sup_{q≥1} g_q(y)/y ≤ C_r lower_density(⋃_{y∈Y} P(y))^θ.   (4)
 
 To handle the suprema, approximate each from below on a finite subset, then take the supremum of all such sums. In particular the set of nonperiodic targets satisfying `sup_q g_q(y)/y>δ` has reachability width at most `C_r/δ`. It is a union of at most `⌈C_r/δ⌉` chains: apply finite Dilworth to successive finite subsets, then use compactness of the finitely branching tree of compatible chain colorings. For singleton Y, (4) supplies an upper bound paired with the [lower Cesàro bound at c2c25da](https://github.com/GettysburgResearch/collatz/blob/c2c25dabf3b837a223a46310d0092ef32e2119dd/research/native-pressure-20261118/ORDINARY-DENSITIES.md), which bounds the liminf of the normalized depth averages below by a constant times the lower density of P(y).
+
+## Pointwise sublinearity at clocks determined by ordinary height
+
+For any nonperiodic odd y with its whole future above B≥1, and every q≥0,
+
+    g_q(y) ≤ C_r [ε(B)^θ y + B (3/2)^q].                              (5)
+
+The antichain bound gives `g_q(y)≤C_r y` for q≥1. Thus (5) holds whenever `y≤2(B+1)(3/2)^q`, as well as for q=0. Otherwise, `U(x)+1≤(3/2)(x+1)` implies that no path of length at most q from a low state reaches y. Every q-level source, including unit aliases, has `x≥(y+1)(2/3)^q−1≥y(2/3)^q/2`. An arbitrary low state can reach at most one member of the unitized inverse antichain. Discard the at most B such members: the discarded harmonic mass is at most `2B(3/2)^q/y`. Every remaining member has its complete predecessor basin avoiding B, giving (5) by capacity and the factor-six unitization argument.
+
+There is a stronger asymptotic at the leading height scale. For every fixed real A,
+
+    sup_{0≤q≤log_(3/2)(y)+A log log(3+y)} g_q(y)/y → 0                   (6)
+
+as the minimum of the full ordinary orbit of a nonperiodic odd y tends to infinity. In particular this holds on the tail of any single divergent spine. Only integer q are tested. The proof of the logarithmic extension uses the [sparse parity-deviation theorem at dfbe260](https://github.com/GettysburgResearch/collatz/blob/dfbe2609201421f582f7d2ee1298bb9b1332ca8a/research/sparse-periodic-deviations/PROOF.md). For every fixed positive odd x and every E>0 it implies
+
+    max_{0≤d≤q} U^d(x) ≪_{x,E} (3/2)^q/(1+q)^E.                        (7)
+
+For bounded orbits this holds directly. Otherwise the positive orbit escapes, its affine correction product is bounded by the simple-orbit reciprocal sum, and `U^d(x) ≪_x (3/2)^d 2^(−e_d)` where e_d counts extra halvings beyond the d odd shortcut steps. Among the first `d+e_d` shortcut steps exactly e_d parities differ from the constant word 1, so `e_d/log d→∞` by the pinned theorem. This yields (7), taking a maximum of the eventually increasing bounds for individual d.
+
+Fix B and a cutoff M>B. For sufficiently large y and every q in (6), no source x≤M can reach y in at most q steps. For odd x this follows from (7) uniformly on the finite set, applying it at the largest allowed q with `E>max(0,A log(3/2))+1`. Even x may first be halved to its odd part. Therefore all q-level paths avoid B. Of the unitized inverse antichain at most B members have any low predecessor, each such member exceeds M, and every other predecessor basin avoids B. This bounds `g_q(y)/y` by `6B/M+C_r ε(B)^θ` uniformly. The q=0 ratio tends to zero directly. Let M and then B tend to infinity. This proves (6) without choosing a common component or a common rate of escape.
