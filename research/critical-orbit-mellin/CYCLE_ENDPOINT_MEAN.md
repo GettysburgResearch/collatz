@@ -112,3 +112,58 @@ over a period is exp(v)/b. Therefore the mean at t equals
 (1/b)∫ W^(-1) dnu_t=delta p_C/b. There are d_C targets on C.
 Summing proves the formula, without requiring commensurable periods
 from different cycles.
+
+## One explicit rational threshold detects a cycle at any depth
+
+One may take epsilon=2^(-32) in the cycle test. More precisely, every
+positive entry D_Q(1-2^(-32)) in the finite array **already supplies
+an actual nontrivial positive cycle**, extractable by following its
+word. Conversely a nontrivial positive cycle makes these entries
+positive at every sufficiently large Q.
+
+For the numerical constant we reproduce the one place where finite
+simple segments differ from the [explicit two-lane packing proof,
+Section 1](../astra-three-routes/pass2/ORBIT_MELLIN.md). Write S for a
+finite ordered list of distinct positive odd inputs in an ordinary
+trajectory and N(X) for its count up to X. For each real X>=1 take
+q=floor((3/5)log₂X). Delete at most the final q members from the list.
+The images under U^q of the retained members are distinct, since
+they are distinct members of the original list. For q>=1 this is
+the only injectivity used by the two-lane proof at that X. With
+m=floor(5q/3) and 2^m<=X, its low-total cylinders contribute at most
+(3/2) X rho^q, and its high-total lane at most
+(sigma^q X+(3/2)^q)/2, where rho³=3125/3456 and sigma³=27/32<rho³.
+The integer comparison 8·3125^24<3456^24 gives rho<2^(-1/24);
+also rho>2/3. It follows that 2X rho^q<3X^(39/40) and
+(3/2)^q/2<=X^(39/40)/2. The case q=0 is immediate since X<2^(5/3).
+Restoring the deleted states gives at every X
+
+    N(X) <= 4 X^(39/40)+(3/5)log₂ X.
+
+This estimate applies to any distinct input list and to one lap of
+a cycle, without requiring injectivity beyond the end of the list.
+
+Put R=2^120. The odd integers up to R contribute at most
+1+(ln R)/2 to the reciprocal sum by the decreasing integral test.
+Above R, summation by parts and omission of the negative boundary
+term bound the sum by
+
+    ∫_R^infty N(X) dX/X²
+       <= 160 R^(-1/40) + (3/5)(ln R+1)/(R ln 2)
+       < 20+1/4.
+
+Here 160 R^(-1/40)=20 and the second term is less than 73/R.
+The elementary bounds 2/3<ln 2<25/36 follow, for example, from
+ln 2=2 sum_(j>=0) (1/3)^(2j+1)/(2j+1), bounding all denominators
+after the linear term by three. Thus the entire reciprocal sum is
+less than 1+60(25/36)+20+1/4<63. Consequently every simple input
+list has W>=exp(-sum_(u in S)1/(3u))>exp(-21)>2^(-32).
+
+A word counted at the indicated threshold must repeat an input.
+Its endpoint lies on the resulting cycle, which is nontrivial
+because the finite array omits t=1. Conversely fix a vertex t>1
+of any nontrivial cycle and follow the Q-step cycle segment ending
+there. Its distortion tends to one with Q, since each lap multiplies
+the reciprocal correction by J_C<1. Eventually t is in the sampled
+period and the fixed finite set of cyclic valuations is below the
+array cap 2Q. This gives a positive entry at every such depth.
