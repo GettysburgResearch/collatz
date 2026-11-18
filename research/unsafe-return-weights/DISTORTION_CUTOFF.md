@@ -50,3 +50,17 @@ $$
  1-\Phi(s)(p_1+p_{\rm other}).
 $$
 A completed certificate implies $q\ge J_*$, since any repeated state entails an entire cycle and the orbit has already attained its minimum. Once the minimum is reached, the delay to either available certificate is uniformly bounded over the finite set of minima at most $B$. The shrinking-strip argument applies again. At each fixed $s$, the limiting frequency of arrivals at 1 is $\Phi(s)$ exactly when every positive integer reaches 1. Indeed any other component has positive natural mass: advancing a possible odd nonunit once gives a unit, whose predecessor basin has positive density. The basin clock of 1 and its conditional Gaussian law are prior results of Leen. The weighted forward observable in (2) separately identifies the contribution from escape. [Published basin clock and stopping-time histogram](https://doi.org/10.5281/zenodo.23252397) · [Predecessor lower bound](https://rstation.ai/problems/collatz/papers/12/v1)
+
+## Finite arithmetic replay
+
+The largest shell checked was $X=2^{22}$, with all 1,048,576 odd starts in $[2^{21},2^{22}]$. Each mean below is enclosed by summing the rational identity for $V_q$ with directed integer rounding. At $s=0$ exactly 564,031 starts had reached 1 by the cutoff. The finite mean can lie below the asymptotic Gaussian baseline.
+
+| $s$ | Odd steps | Lower mean | Upper mean | Reached 1 by cutoff |
+|---:|---:|---:|---:|---:|
+| −2 | 3 | 0.999995 | 0.999996 | 17 |
+| −1 | 28 | 0.882317 | 0.882318 | 160,516 |
+| 0 | 53 | 0.499505 | 0.499506 | 564,031 |
+| 1 | 77 | 0.184510 | 0.184511 | 887,055 |
+| 2 | 102 | 0.038942 | 0.038943 | 1,015,422 |
+
+The [finite-shell replay](check_distortion_cutoff.py) covers the smaller powers 10, 14 and 18 by default and accepts 22 as an argument. The large case is small enough to reproduce without auxiliary data files.
