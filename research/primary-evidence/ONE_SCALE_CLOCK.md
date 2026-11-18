@@ -61,3 +61,27 @@ $$
  -\frac1Q\sum_{x\le e^{dQ},\ x\text{ odd}}\frac{G(V_\infty(x))}{x}\ \longrightarrow 0
 $$
 by the same order of limits as for (3). Since the first limit exists and $G$ is bounded, this proves existence of the odd logarithmic mean in (4) and its value. No natural-density or second first-passage scale is required. On an escaping orbit through a fixed unit $R$, the finite cone lower bound comes directly from the unconditioned atom floor; the cycle flag is the original finite cycle test.
+
+## Closed offset law and the high-source baseline
+
+For a general continuous $\psi$ on $[0,1]$, dropping the condition $\psi(0)=0$, the same finite harmonic statistic has limit
+$$
+ \tfrac12(\log3)\psi(0)
+   +\delta E_{\rm odd}[V_\infty\psi(1-V_\infty)]. \tag{5}
+$$
+This proves the baseline of the signed harmonic formula by direct physical-source accounting.
+
+First $E_{\rm odd}(V_\infty)$ exists. If any orbit visits an odd state $s\le H$, its full product is at most $1-1/(3H+1)$. The complementary event has upper logarithmic density tending to zero with $H$ by Tao's almost-bounded theorem. Thus the observable $v\mapsto v$ evaluated at $V_\infty$ is approximable in upper logarithmic mean error by continuous $v\psi_H(1-v)$ with $\psi_H(0)=0$, taking a cutoff equal to one on $1-v\ge1/(3H+1)$. Equation (4) gives those means. The bounded approximation then also gives existence for the source average in (5).
+
+To identify the extra term we require the position throughout the good clock, not only first passage times. On its event (5.12), Tao's displayed (5.14) bounds
+$$
+ |\log U^k N_y-\log N_y+dk|\le C(\log z)^{3/5}
+$$
+simultaneously at every $0\le k\le n_0$; on this event the crossing of $z$ occurs in that range by (5.15). Start a fresh $N_{X_{i-1}}$ with final crossing $X_{i+1}$. Subtract the position estimate at the first crossing of $X_i$ from each position through the first crossing of $X_{i+1}$. The resulting segment event bounds log displacement relative to its own initial vertex and is measurable from $P_{X_i}$. Therefore precisely the same total variation and summability argument as for (2) transfers all segment events simultaneously to the original source. The first segment uses (5.14) directly; adding discrepancies over any initial sequence of segments yields
+$$
+ \sup_{0\le k\le T_{X_J}(N_X)}|\log U^k N_X-\log N_X+dk|
+       \le C(\log X)^{3/5} \tag{6}
+$$
+outside $O((\log H)^{-c})$. No statement about positions after the last passage is used.
+
+Return to the high-log region of the proof of (4), where $Q<T_{X_J}$ by a linear margin, the path is simple, and $V_Q=1-o_H(1)$. The condition $U^Qx\le2\cdot3^Q$ there is, by (6), equivalent to $\log x\le Q\log4$ apart from an $o(Q)$-wide log strip; the factor two contributes only a bounded shift. Also $U^Qx>H$ there. Thus, up to $o_H(1)$ and the earlier central strips and exceptional fractions, these sources contribute their plain harmonic sum multiplied by $\psi(0)$. Its normalized value in the range $dQ<\log x\le Q\log4$ tends to $(\log4-d)\psi(0)/2=(\log3)\psi(0)/2$. The low-log comparison with the complete-orbit product and the $S_Q>6Q$ tail both use only boundedness of $\psi$ and $G(0)=0$, which still hold. This proves (5).
