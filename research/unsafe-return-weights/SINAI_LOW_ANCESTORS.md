@@ -71,3 +71,13 @@ as the minimum of the full ordinary orbit of a nonperiodic odd y tends to infini
 For bounded orbits this holds directly. Otherwise the positive orbit escapes, its affine correction product is bounded by the simple-orbit reciprocal sum, and `U^d(x) ≪_x (3/2)^d 2^(−e_d)` where e_d counts extra halvings beyond the d odd shortcut steps. Among the first `d+e_d` shortcut steps exactly e_d parities differ from the constant word 1, so `e_d/log d→∞` by the pinned theorem. This yields (7), taking a maximum of the eventually increasing bounds for individual d.
 
 Fix B and a cutoff M>B. For sufficiently large y and every q in (6), no source x≤M can reach y in at most q steps. For odd x this follows from (7) uniformly on the finite set, applying it at the largest allowed q with `E>max(0,A log(3/2))+1`. Even x may first be halved to its odd part. Therefore all q-level paths avoid B. Of the unitized inverse antichain at most B members have any low predecessor, each such member exceeds M, and every other predecessor basin avoids B. This bounds `g_q(y)/y` by `6B/M+C_r ε(B)^θ` uniformly. The q=0 ratio tends to zero directly. Let M and then B tend to infinity. This proves (6) without choosing a common component or a common rate of escape.
+
+## All-clock characterization by the least ordinary ancestor
+
+Write `M_q(y)=min{x positive odd: U^d(x)=y for some 0≤d≤q}` and `b(y)=min_{j≥0} U^j(y)`. For every nonperiodic odd unit y and every q≥0,
+
+    c/M_q(y) ≤ g_q(y)/y ≤ C_r [ε(B)^θ + B/M_q(y)]                    (8)
+
+for every integer `1≤B<min(b(y),M_q(y))`. The lower bound holds without a choice of B. Take a minimizing ancestor x at distance d. If 3 divides x, then d≥1 since y is a unit; replace x by its unit successor ≤2x and decrease d by one. The uniform unit minorization gives `g_(q−d)(x)≥c`, also valid at depth zero. The path to y is simple and has bounded reciprocal sum, so `J(x,d)/y≥c′/x`. Propagating this term proves the lower bound. For the other side no q-level path can meet `[1,B]`. Every member of the unitized inverse level has height at least M_q(y), and at most B of these have a low predecessor. The remaining complete predecessor basins avoid B. This proves (8) for q≥1 by the previous capacity argument, and the depth-zero bound follows from `g_0=1`.
+
+Consequently along *arbitrary* sequences of nonperiodic odd units with `b(y)→∞`, at completely unrestricted depths, `g_q(y)/y→0` if and only if `M_q(y)→∞`. For the upper implication take first a fixed B and then let B grow. Equivalently, given δ>0 there is a finite N(δ) such that every nonperiodic unit with `g_q(y)≥δ y` either reaches `[1,N(δ)]` in its future or is reached by some positive odd source in `[1,N(δ)]` within q odd steps. The assertion does not furnish an effective N(δ).
