@@ -22,6 +22,7 @@ Local source collections are also available for detailed exploration:
 
 | Collection | What is there | How to interpret its status |
 |---|---|---|
+| [Ordered prime height, physical five returns, and critical mass](closure-attacks-20261120/README.md) | A localized prime-height theorem, a compact single-multiplier proof with an actual return-rank example, and source-qualified critical boundary analysis. | Narrow claims have independent agent reviews. Concurrent PR157's stronger forward-five criterion is credited; universal physical closure, global energy transport, and unrestricted-cycle exclusion remain open. |
 | [Critical mass and inverse frontiers](astra-critical-mass/README.md) | Proof attempts, finite-time bounds, physical merging, inverse pruning and counterexamples. | Use the mass/rank topic guides to identify reviewed clauses; author-stage labels and failed global attempts are retained. |
 | [Section renewal and moving ranks](astra-three-routes/README.md) | Complementary operator, source-height, coefficient and rank constructions, including distinct alternative continuation packets. | A shared directory or experiment number does not identify one theorem. Use the specific path, map and rank named by the guide. |
 | [External Collatz dossier](external/mazur-2026/README.md) | External result summaries, source evidence, local analyses and proposed strengthening routes. | External source-qualified theorems, native reviewed components and open strengthening hypotheses have different statuses. |

@@ -1,0 +1,62 @@
+{
+  "finite_rank_controls": [
+    {
+      "initial_bits": 21,
+      "prescribed_returns": 1
+    },
+    {
+      "initial_bits": 41,
+      "prescribed_returns": 2
+    },
+    {
+      "initial_bits": 63,
+      "prescribed_returns": 3
+    },
+    {
+      "initial_bits": 83,
+      "prescribed_returns": 4
+    },
+    {
+      "initial_bits": 99,
+      "prescribed_returns": 5
+    },
+    {
+      "initial_bits": 126,
+      "prescribed_returns": 6
+    },
+    {
+      "initial_bits": 146,
+      "prescribed_returns": 7
+    },
+    {
+      "initial_bits": 167,
+      "prescribed_returns": 8
+    },
+    {
+      "initial_bits": 189,
+      "prescribed_returns": 9
+    },
+    {
+      "initial_bits": 209,
+      "prescribed_returns": 10
+    },
+    {
+      "initial_bits": 230,
+      "prescribed_returns": 11
+    },
+    {
+      "initial_bits": 252,
+      "prescribed_returns": 12
+    }
+  ],
+  "first_same_clock_return": 21,
+  "odd_count_each_arm": 15,
+  "rank": "v2(12251755*z+24340829), decreases by 21 on each repeated word",
+  "result": "first same-clock ratio-five return increases the odd unit parameter; both orientations checked",
+  "returned_progression": "39085825+86093442*u, u>=0",
+  "scope": "all-lift affine return, first-return sign checks, exact rank identity",
+  "semigroup_product": "5",
+  "source_progression": "5712553+12582912*u, u>=0",
+  "status": "PASS",
+  "unproved": "total success, arbitrary return-word switching, and general M5 mergers"
+}

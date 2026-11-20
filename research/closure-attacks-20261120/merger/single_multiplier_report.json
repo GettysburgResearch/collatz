@@ -1,0 +1,25 @@
+{
+  "abstract_path_vertex_bound": "15*n",
+  "branch_counts": {
+    "even": 160,
+    "five": 32,
+    "four_mod_five": 8,
+    "last_even": 4,
+    "last_one_mod_four": 2,
+    "last_three_mod_four": 2,
+    "one_mod_five": 8,
+    "one_mod_four": 64,
+    "seven_mod_eight": 32,
+    "three_mod_five": 8
+  },
+  "descent_bound": "q <= (27*n+23)/32 < n",
+  "growing_query_control": "n=40*k+11 in U requires p=90*k+25 > n in this path",
+  "max_M5_calls_per_stage": 3,
+  "modulus": 480,
+  "normalization": "positive shortcut Collatz; independent merger clocks",
+  "query_height_bound": "3*n",
+  "scope": "exact affine all-lift verification; M5 is an unproved supplied law",
+  "status": "PASS",
+  "ternary_unit_cells": 320,
+  "unproved": "actual M5(x) merger certificates for every fixed odd ternary unit x"
+}

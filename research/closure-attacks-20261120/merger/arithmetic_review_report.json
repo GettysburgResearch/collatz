@@ -1,0 +1,32 @@
+{
+  "abstract_states": "integer 0<=z<=x<=4; lengths 1..4; h=1/2,1,...,17/2",
+  "admissible_sequences": 19260,
+  "circulation_controls": [
+    {
+      "common_product": 62882875,
+      "sources": [
+        19,
+        25,
+        29,
+        55,
+        83
+      ]
+    },
+    {
+      "common_product": 17990175701544921875,
+      "sources": [
+        5,
+        7,
+        25,
+        55,
+        65,
+        83,
+        95
+      ]
+    }
+  ],
+  "localized_tail_checks": 327420,
+  "scope": "independent exact finite controls; universal claims reviewed in writing",
+  "source_term_omission_control": "fails as required at N=1, x0=z0=h=100",
+  "status": "PASS"
+}
