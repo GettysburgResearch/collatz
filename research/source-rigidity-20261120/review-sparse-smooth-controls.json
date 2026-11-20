@@ -1,0 +1,43 @@
+{
+  "controls": [
+    {
+      "N": 1,
+      "cores": [
+        1,
+        7
+      ],
+      "division_exponents": [
+        2
+      ],
+      "non_11_defect_edges": 1,
+      "outside_vertices_including_endpoint": 1,
+      "outside_vertices_omitting_endpoint": 0,
+      "path": [
+        17,
+        13
+      ]
+    },
+    {
+      "N": 2,
+      "cores": [
+        1,
+        7,
+        1
+      ],
+      "division_exponents": [
+        2,
+        3
+      ],
+      "non_11_defect_edges": 2,
+      "outside_vertices_including_endpoint": 1,
+      "outside_vertices_omitting_endpoint": 1,
+      "path": [
+        17,
+        13,
+        5
+      ]
+    }
+  ],
+  "scope": "Two exact local incidence controls; no infinite-frequency estimate tested computationally.",
+  "status": "PASS"
+}

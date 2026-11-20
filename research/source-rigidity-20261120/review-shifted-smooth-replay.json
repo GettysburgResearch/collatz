@@ -1,0 +1,67 @@
+{
+  "author_checker_sha256": "63ec9728012f7bd2071a1d190b04233f03d5daba075ee0b01b34ffec47f354d6",
+  "author_normal_optimized_frozen_reports_equal": true,
+  "author_report_sha256": "40deffb6517ce927fa3f55a8a8ec7997f62b5a592a735ac3ecdcaebd26a80ea2",
+  "dyadic_control_exponents": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "independent_compressed_run_cases": 109,
+  "independent_compressed_run_edges": 1221,
+  "negative_controls": [
+    "omitting successor core=1",
+    "assuming class invariance from the initial state"
+  ],
+  "proof_sha256": "e3db28e9e944a36dacd54f661cda8a1856664bfac3d248caefdf23b1a9875c60",
+  "scope": "Finite arithmetic controls and literal maps only. Universal SS1, cycle/basin deductions, and SC4 same-horizon reasoning are reconstructed in the written review; no external finiteness theorem or astronomical horizon is executed.",
+  "small_complement_cycles": [
+    [
+      1
+    ]
+  ],
+  "small_complement_sources_exiting": 113,
+  "small_complement_states": 120,
+  "status": "PASS",
+  "table_rows_reconstructed_from_actual_map": 15,
+  "valuation_control_indices": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12,
+    15,
+    16,
+    17,
+    24,
+    31,
+    32,
+    33,
+    48,
+    63,
+    64,
+    96,
+    127,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "within_class_finite_basin": [
+    1,
+    3,
+    5,
+    15,
+    23,
+    35,
+    53
+  ]
+}

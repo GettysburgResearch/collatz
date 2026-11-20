@@ -1,0 +1,95 @@
+{
+  "affine_cells": 13,
+  "affine_trace_sha256": "04cb26ded35be42aafd78721f4ca082dc2a1f3a71b6481450e4166caba2cea6a",
+  "author_module_imported": false,
+  "carry_checks": {
+    "F5_eligible_sources": 21,
+    "all_prefix_nondescent_cases": 26,
+    "odd_Mersenne_edges": 3897,
+    "parameters": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      31,
+      32,
+      47,
+      63,
+      64,
+      97
+    ],
+    "physical_target_edges": 4052
+  },
+  "convergent_controls": [
+    {
+      "five_x_first_hit": [
+        42,
+        20
+      ],
+      "five_y_first_hit": [
+        40,
+        18
+      ],
+      "literal_antecedent_paths_sha256": "d4240318f9446cdb62e96f20e32cb6be0a4b87a5974c7276256420c286295cac",
+      "reset_clock": 2,
+      "x": 227,
+      "x_first_hit": [
+        11,
+        2
+      ],
+      "y": 511,
+      "y_first_hit": [
+        41,
+        20
+      ]
+    },
+    {
+      "five_x_first_hit": [
+        235,
+        119
+      ],
+      "five_y_first_hit": [
+        185,
+        87
+      ],
+      "literal_antecedent_paths_sha256": "3348f28019286cf41918cbcd579c0d40da3429517ee5c865a2f2fcf142c1cf16",
+      "reset_clock": 50,
+      "x": 15637498706147,
+      "x_first_hit": [
+        47,
+        2
+      ],
+      "y": 25736391511831,
+      "y_first_hit": [
+        254,
+        132
+      ]
+    }
+  ],
+  "covered_residues_mod480": 120,
+  "maximum_word_length": 15,
+  "scope": "Conditional affine certificate and finite physical controls, not F5 or Collatz.",
+  "status": "independent exact reconstruction passed",
+  "universal_affine_edges": 77
+}

@@ -1,0 +1,207 @@
+{
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "exclusions": [
+    "this manifest",
+    "reports/2026-11-20-source-rigidity/README.md",
+    "later checkout validation receipts"
+  ],
+  "files": [
+    {
+      "bytes": 12714,
+      "path": "reports/2026-11-20-source-rigidity/replay-results.json",
+      "sha256": "a6a617942f504a1ad4123d17906a9dbc369cae06ee9cfa56059100e35008c5cd"
+    },
+    {
+      "bytes": 2037,
+      "path": "reports/2026-11-20-source-rigidity/source-snapshot.json",
+      "sha256": "e26611eebeb24346cd8ee2c8aebb2296434f47fbba2f293fbf64adf879e7b063"
+    },
+    {
+      "bytes": 4642,
+      "path": "research/README.md",
+      "sha256": "85aa1443f8a7a826fd1667dd2dc64ffa8ce1cb54ec9e034da2e5b020743acc69"
+    },
+    {
+      "bytes": 4261,
+      "path": "research/source-rigidity-20261120/BOUNDED_CORE_HORIZON.md",
+      "sha256": "48b87b072ebd2a8e31f6767efd300d42df3599c10efdd9c82543eae2d266dec8"
+    },
+    {
+      "bytes": 11844,
+      "path": "research/source-rigidity-20261120/CARRY_DEBT_RESET.md",
+      "sha256": "f0dacc7edab05052354250becfeb34d8ad5a2b3591bb0a622fe081d37f00afdc"
+    },
+    {
+      "bytes": 11820,
+      "path": "research/source-rigidity-20261120/CLOSURE_ATTEMPTS.md",
+      "sha256": "a81b8a9c9edb41f1dd563d5015bfb0637da85a286cdaa89053f9596aa46bc56c"
+    },
+    {
+      "bytes": 8588,
+      "path": "research/source-rigidity-20261120/CRITICAL_APPROXIMATE_INVARIANTS.md",
+      "sha256": "5dfeaaaa239f2ecb62741e1eb6925a3b9e19731f923c785c72c6c06bf6f6fee3"
+    },
+    {
+      "bytes": 10826,
+      "path": "research/source-rigidity-20261120/ENDPOINT_CAPACITY.md",
+      "sha256": "0e4479eefbb7f27f2cabca82c2414a7c9fab4d6c2c2788235ad6e997a0d1e65d"
+    },
+    {
+      "bytes": 5471,
+      "path": "research/source-rigidity-20261120/LATEST_COMPARISON.md",
+      "sha256": "23697869f12ff0f05ad016771fefbe98400d73990ae8de81f3e8c57df3eefa9d"
+    },
+    {
+      "bytes": 9458,
+      "path": "research/source-rigidity-20261120/README.md",
+      "sha256": "7421195e3a3ff9a5544eeede3aa98fb4f3d27e5067719de28f863d22d4046b04"
+    },
+    {
+      "bytes": 8644,
+      "path": "research/source-rigidity-20261120/REVIEW_CRITICAL_APPROXIMATE_INVARIANTS.md",
+      "sha256": "5e44d51ae09d3eb1851d44d4bd9f48264a1bf0f81e51961aee6e407411726a58"
+    },
+    {
+      "bytes": 10237,
+      "path": "research/source-rigidity-20261120/REVIEW_ENDPOINT_CAPACITY.md",
+      "sha256": "10a25cf4111b2556480570e846ab321954b12135b9287385b22fec594e5402c1"
+    },
+    {
+      "bytes": 13076,
+      "path": "research/source-rigidity-20261120/REVIEW_MERGER_REMAINS.md",
+      "sha256": "6fa1d71ebb1bc8ae067c9c2e78df41a260add63cd73a0d722a2b98a15e15c8c4"
+    },
+    {
+      "bytes": 8284,
+      "path": "research/source-rigidity-20261120/REVIEW_SHIFTED_CORE.md",
+      "sha256": "df781fef7de22c13094c6e4d999fcaeab7fe6cac5bce44172a2c971b51498b89"
+    },
+    {
+      "bytes": 11669,
+      "path": "research/source-rigidity-20261120/REVIEW_SHIFTED_SMOOTH_CYCLES.md",
+      "sha256": "4d0926f9f209e7aaab1f27a315e171d91ea5a13d59109b4e3a793489f64416bc"
+    },
+    {
+      "bytes": 7470,
+      "path": "research/source-rigidity-20261120/REVIEW_SPARSE_SMOOTH_EXCURSIONS.md",
+      "sha256": "e07873627d05799d7c9130cfeb0f16fc8fda11c4d482230f1d3b375d1aab01b5"
+    },
+    {
+      "bytes": 14609,
+      "path": "research/source-rigidity-20261120/SHIFTED_CORE_TRANSITIONS.md",
+      "sha256": "f53846e08e1522058797c6cab57111cf9c7ed4385f39b0e055ab05264f7acb71"
+    },
+    {
+      "bytes": 8441,
+      "path": "research/source-rigidity-20261120/SHIFTED_SMOOTH_CYCLES.md",
+      "sha256": "e3db28e9e944a36dacd54f661cda8a1856664bfac3d248caefdf23b1a9875c60"
+    },
+    {
+      "bytes": 9865,
+      "path": "research/source-rigidity-20261120/SINGLE_LAYER_FIVE.md",
+      "sha256": "b40aa8abfa9cdea66cbbf7847d2de53bd3545fbcf260bc584258a99ccad02890"
+    },
+    {
+      "bytes": 5723,
+      "path": "research/source-rigidity-20261120/SOURCES.md",
+      "sha256": "d490a4dfbb04e037448f73c485e5e16f3ae2dc7a43fdda306abb20466d0253d5"
+    },
+    {
+      "bytes": 5206,
+      "path": "research/source-rigidity-20261120/SPARSE_SMOOTH_EXCURSIONS.md",
+      "sha256": "d35f40218ff261ef2ddd58561abfe4d8d9977004edaa9c4e58ea7f89628afcba"
+    },
+    {
+      "bytes": 5863,
+      "path": "research/source-rigidity-20261120/check_critical_cutoffs.py",
+      "sha256": "889d0ab549595b54bc95a2312e09fa4d558acf982432ac33c86c35adcb984f42"
+    },
+    {
+      "bytes": 7319,
+      "path": "research/source-rigidity-20261120/check_endpoint_capacity.py",
+      "sha256": "9869f152674d8043b5c221ce9c2f8f6dde19989b58ecf0845e6a002ae76d54bb"
+    },
+    {
+      "bytes": 8528,
+      "path": "research/source-rigidity-20261120/check_merger_independent.py",
+      "sha256": "50a9673954f34111317a38c5e7ac9b4fb5f398871f326fe33d6479584f080f5a"
+    },
+    {
+      "bytes": 8844,
+      "path": "research/source-rigidity-20261120/check_merger_remains.py",
+      "sha256": "30d09430cf99b28a8f258c84eb9fc11ea2d1d8a09ac19d0c6fc5b18a27ae9dcc"
+    },
+    {
+      "bytes": 5061,
+      "path": "research/source-rigidity-20261120/check_shifted_core_review.py",
+      "sha256": "28f59efb2217812b1696173e55338b1f58ca7632d7728d5e9894a2b259640ab9"
+    },
+    {
+      "bytes": 10833,
+      "path": "research/source-rigidity-20261120/check_shifted_core_transitions.py",
+      "sha256": "c182efabeaf6a0e61cf1337732add443bee98ca519b8492296103cd42800bfa5"
+    },
+    {
+      "bytes": 4668,
+      "path": "research/source-rigidity-20261120/check_shifted_smooth_cycles.py",
+      "sha256": "63ec9728012f7bd2071a1d190b04233f03d5daba075ee0b01b34ffec47f354d6"
+    },
+    {
+      "bytes": 10503,
+      "path": "research/source-rigidity-20261120/critical-cutoffs-report.json",
+      "sha256": "16d790a0b827048c955753b262f9c1043de5a49a95881c4f6553ba291287ded5"
+    },
+    {
+      "bytes": 2629,
+      "path": "research/source-rigidity-20261120/endpoint-capacity-report.json",
+      "sha256": "647b27bc7b4da12b5d1a87bf2af0ed7ebdf8e09472955cbc1616ac371dd6049d"
+    },
+    {
+      "bytes": 1755,
+      "path": "research/source-rigidity-20261120/merger-independent-report.json",
+      "sha256": "612756bdb3c528196dd6bc54f9782707d5e7fa3fbd80b5820d0801f3ca9c54e9"
+    },
+    {
+      "bytes": 1433,
+      "path": "research/source-rigidity-20261120/merger_remains_report.json",
+      "sha256": "ad3cfc7368835fc892f654bd6c1e5fc7db31e484618aae419e9a357570771bf0"
+    },
+    {
+      "bytes": 3472,
+      "path": "research/source-rigidity-20261120/replay.py",
+      "sha256": "68c91927cfe3dfcfdfecf7e02da6ec4ec71bc554ba7a48ec4104b94c28cfbb66"
+    },
+    {
+      "bytes": 1398,
+      "path": "research/source-rigidity-20261120/review-shifted-smooth-replay.json",
+      "sha256": "ce4313a3b12120da0a0115a6245d31cebb9842f7142d8498e099793195792e1a"
+    },
+    {
+      "bytes": 775,
+      "path": "research/source-rigidity-20261120/review-sparse-smooth-controls.json",
+      "sha256": "70d9477409a37a9f7815af63c677d8812ff6268708144a152098a6f66691afa8"
+    },
+    {
+      "bytes": 6855,
+      "path": "research/source-rigidity-20261120/review_shifted_smooth_replay.py",
+      "sha256": "40e80d5199063b62609b81387e75184a447f91fc247b844d813401a906aec227"
+    },
+    {
+      "bytes": 2158,
+      "path": "research/source-rigidity-20261120/shifted-core-independent-report.json",
+      "sha256": "d036975e1735c86ca2ded180ddba54ed8d653dff28724bb29622f433d5ebe4c3"
+    },
+    {
+      "bytes": 2491,
+      "path": "research/source-rigidity-20261120/shifted-core-report.json",
+      "sha256": "557636dfb76748100aaaeb6972aafc93739aa40112dfa3521d479aa2d159263e"
+    },
+    {
+      "bytes": 2311,
+      "path": "research/source-rigidity-20261120/shifted-smooth-cycles-report.json",
+      "sha256": "40deffb6517ce927fa3f55a8a8ec7997f62b5a592a735ac3ecdcaebd26a80ea2"
+    }
+  ],
+  "schema": "collatz-source-rigidity-artifacts/v1",
+  "scope": "Exact scientific, review, replay and source-snapshot bytes; hashes establish identity, not correctness."
+}

@@ -1,0 +1,55 @@
+{
+  "observed_at_utc": "2026-11-20 20:34:12 UTC",
+  "repository": "GettysburgResearch/collatz",
+  "scope": "Latest eight updated open PRs; a source snapshot, not a review verdict",
+  "pull_requests": [
+    {
+      "number": 160,
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "head": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "updated_at": "2026-11-20T20:33:03Z"
+    },
+    {
+      "number": 159,
+      "title": "Research: prime-support peak bounds and exact directed circulation",
+      "head": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "updated_at": "2026-11-20T20:29:02Z"
+    },
+    {
+      "number": 158,
+      "title": "research: certify guarded expanding returns and exact closure boundaries",
+      "head": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "updated_at": "2026-11-20T20:27:56Z"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "e238c63a5d57f96bb063b7472498d1977df51951",
+      "updated_at": "2026-11-20T20:19:56Z"
+    },
+    {
+      "number": 157,
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "head": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "updated_at": "2026-11-20T20:01:36Z"
+    },
+    {
+      "number": 156,
+      "title": "Investigate Collatz closure with ordinary spectrum, arithmetic, and merger guards",
+      "head": "c5cb84502c7289705d59a8781a65fd845b9b6b14",
+      "updated_at": "2026-11-20T19:41:09Z"
+    },
+    {
+      "number": 150,
+      "title": "Bound sparse Collatz returns and classify local affine merger membership",
+      "head": "ef4022fa5ae43dd943ecca0b7c84d69af624c5c9",
+      "updated_at": "2026-11-20T19:35:18Z"
+    },
+    {
+      "number": 155,
+      "title": "research: ordinary Dirichlet coercivity and three-package Gemini audit",
+      "head": "92f499b9d340d1ff8cc643c3eef3477d61b477c1",
+      "updated_at": "2026-11-20T19:32:28Z"
+    }
+  ]
+}

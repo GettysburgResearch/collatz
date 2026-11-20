@@ -1,0 +1,84 @@
+{
+  "definition_and_doubling_checks": 16640,
+  "edge_failure_digest": "1df415ad2e8081d6a60188274089a6694d50089c11f8f3fbf76a24666044ce8b",
+  "exact_harmonic_norm_digest": "be01261049c8a9fdd8d8a1044627353a0c99441293b3dc419519a69bf3c26171",
+  "exact_progression_digest": "9ef9ddc85222263de4993c9b98548eb2ab9e7374cbbc0125c11e65b9a94430cf",
+  "explicit_known_convergent_odd_edge_failures": 64,
+  "fixed_function_integer_controls": 16384,
+  "harmonic_norm_rows": [
+    {
+      "cutoff": 1,
+      "defect_times_1000_floor": 2000,
+      "mass_times_1000_floor": 2000,
+      "ratio_times_1000_floor": 1000
+    },
+    {
+      "cutoff": 2,
+      "defect_times_1000_floor": 2000,
+      "mass_times_1000_floor": 2000,
+      "ratio_times_1000_floor": 1000
+    },
+    {
+      "cutoff": 3,
+      "defect_times_1000_floor": 666,
+      "mass_times_1000_floor": 2666,
+      "ratio_times_1000_floor": 4000
+    },
+    {
+      "cutoff": 4,
+      "defect_times_1000_floor": 666,
+      "mass_times_1000_floor": 2666,
+      "ratio_times_1000_floor": 4000
+    },
+    {
+      "cutoff": 7,
+      "defect_times_1000_floor": 1352,
+      "mass_times_1000_floor": 3352,
+      "ratio_times_1000_floor": 2478
+    },
+    {
+      "cutoff": 16,
+      "defect_times_1000_floor": 976,
+      "mass_times_1000_floor": 4043,
+      "ratio_times_1000_floor": 4139
+    },
+    {
+      "cutoff": 64,
+      "defect_times_1000_floor": 1067,
+      "mass_times_1000_floor": 5429,
+      "ratio_times_1000_floor": 5085
+    },
+    {
+      "cutoff": 256,
+      "defect_times_1000_floor": 1090,
+      "mass_times_1000_floor": 6815,
+      "ratio_times_1000_floor": 6248
+    },
+    {
+      "cutoff": 1024,
+      "defect_times_1000_floor": 1096,
+      "mass_times_1000_floor": 8201,
+      "ratio_times_1000_floor": 7478
+    },
+    {
+      "cutoff": 4096,
+      "defect_times_1000_floor": 1098,
+      "mass_times_1000_floor": 9588,
+      "ratio_times_1000_floor": 8731
+    }
+  ],
+  "negative_controls": [
+    "zero shell-variation constant rejected",
+    "uniform harmonic coercivity constant 3 rejected",
+    "true odd Collatz invariance rejected at explicit ordinary edges"
+  ],
+  "proof_sha256": "0e4479eefbb7f27f2cabca82c2414a7c9fab4d6c2c2788235ad6e997a0d1e65d",
+  "quarter_grid_shell_variation_checks": 33344,
+  "scope": [
+    "No Collatz-invariant nonconstant labeling is constructed.",
+    "The examples are ordinary integer functions in a larger analytic cone.",
+    "Finite checks do not prove asymptotic limits, uniform infinite bounds, or Collatz."
+  ],
+  "status": "PASS: exact finite controls only; infinite proofs are in the note",
+  "uniform_odd_progression_controls": 20
+}

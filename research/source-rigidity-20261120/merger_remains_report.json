@@ -1,0 +1,69 @@
+{
+  "affine_rows": 13,
+  "carry_family_cases": 97,
+  "carry_r_max": 96,
+  "carry_r_min": 0,
+  "conditional_graph_edges_replayed": 385,
+  "convergent_rank_controls": [
+    {
+      "five_x_first_hit": [
+        42,
+        20
+      ],
+      "five_y_first_hit": [
+        40,
+        18
+      ],
+      "name": "first_reset",
+      "reset_clock": 2,
+      "x": 227,
+      "x_first_hit": [
+        11,
+        2
+      ],
+      "y": 511,
+      "y_first_hit": [
+        41,
+        20
+      ]
+    },
+    {
+      "five_x_first_hit": [
+        235,
+        119
+      ],
+      "five_y_first_hit": [
+        185,
+        87
+      ],
+      "name": "full_spine_reset",
+      "reset_clock": 50,
+      "x": 15637498706147,
+      "x_first_hit": [
+        47,
+        2
+      ],
+      "y": 25736391511831,
+      "y_first_hit": [
+        254,
+        132
+      ]
+    }
+  ],
+  "covered_residues_mod480": 120,
+  "eligible_unit_antecedent_cases": 64,
+  "max_augmented_word_length": 15,
+  "odd_mersenne_edges": 28227,
+  "physical_carry_edges": 57324,
+  "rejected_corruptions": [
+    "wrong endpoint",
+    "wrong parity class",
+    "nonunit multiplier",
+    "empty word",
+    "nonintegral inverse",
+    "nondecreasing path"
+  ],
+  "scope": "Conditional all-lift affine cover plus exact specified carry resets and finite convergent rank controls. No proof of forward-five closure or Collatz.",
+  "status": "PASS",
+  "strict_above_source_prefix_cases": 92
+}

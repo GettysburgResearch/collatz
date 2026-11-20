@@ -1,0 +1,98 @@
+{
+  "degenerate_one_checks": 508,
+  "domain_controls": 3,
+  "largest_odd_exponent": 1026,
+  "literal_one_run_edges": 1854,
+  "new_core_family": [
+    {
+      "k": 1,
+      "new_core_bitlength": 3
+    },
+    {
+      "k": 2,
+      "new_core_bitlength": 6
+    },
+    {
+      "k": 4,
+      "new_core_bitlength": 13
+    },
+    {
+      "k": 12,
+      "new_core_bitlength": 38
+    },
+    {
+      "k": 60,
+      "new_core_bitlength": 190
+    },
+    {
+      "k": 120,
+      "new_core_bitlength": 380
+    }
+  ],
+  "nondegenerate_defect_checks": 506,
+  "ordinary_sources": 507,
+  "pool_transition_checks": 1014,
+  "prefixes": [
+    {
+      "cores_including_endpoint": 1,
+      "defects": 1,
+      "maximum_pair_multiplicity": 1,
+      "simple_edges": 2,
+      "source": 3
+    },
+    {
+      "cores_including_endpoint": 2,
+      "defects": 3,
+      "maximum_pair_multiplicity": 1,
+      "simple_edges": 5,
+      "source": 7
+    },
+    {
+      "cores_including_endpoint": 14,
+      "defects": 17,
+      "maximum_pair_multiplicity": 2,
+      "simple_edges": 41,
+      "source": 27
+    },
+    {
+      "cores_including_endpoint": 16,
+      "defects": 19,
+      "maximum_pair_multiplicity": 2,
+      "simple_edges": 43,
+      "source": 97
+    },
+    {
+      "cores_including_endpoint": 24,
+      "defects": 27,
+      "maximum_pair_multiplicity": 2,
+      "simple_edges": 65,
+      "source": 871
+    },
+    {
+      "cores_including_endpoint": 37,
+      "defects": 42,
+      "maximum_pair_multiplicity": 2,
+      "simple_edges": 96,
+      "source": 6171
+    },
+    {
+      "cores_including_endpoint": 50,
+      "defects": 53,
+      "maximum_pair_multiplicity": 1,
+      "simple_edges": 129,
+      "source": 77031
+    },
+    {
+      "cores_including_endpoint": 78,
+      "defects": 81,
+      "maximum_pair_multiplicity": 2,
+      "simple_edges": 195,
+      "source": 837799
+    }
+  ],
+  "result": "PASS",
+  "retained_core_gcd_checks": 506,
+  "schema": "collatz-shifted-core-independent/v1",
+  "scope": "independent finite literal arithmetic; no numerical verification of the S-unit bound",
+  "source_sha256": "28f59efb2217812b1696173e55338b1f58ca7632d7728d5e9894a2b259640ab9"
+}
