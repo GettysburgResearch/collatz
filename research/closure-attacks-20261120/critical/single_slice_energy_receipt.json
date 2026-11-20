@@ -1,0 +1,114 @@
+{
+  "allowed_cells": [
+    {
+      "a": [
+        45,
+        4
+      ],
+      "adjacent_residue_mod_45": 4,
+      "b": [
+        9,
+        1
+      ],
+      "m": [
+        3,
+        0
+      ],
+      "n": [
+        12,
+        1
+      ]
+    },
+    {
+      "a": [
+        45,
+        19
+      ],
+      "adjacent_residue_mod_45": 19,
+      "b": [
+        9,
+        4
+      ],
+      "m": [
+        3,
+        1
+      ],
+      "n": [
+        12,
+        5
+      ]
+    }
+  ],
+  "excluded_cell": {
+    "a": [
+      45,
+      34
+    ],
+    "m": [
+      3,
+      2
+    ],
+    "n": [
+      12,
+      9
+    ],
+    "reason": "the required M5 query is divisible by three"
+  },
+  "harmonic_constant": "23/30",
+  "normalization": "positive shortcut map; metric invariant labels",
+  "not_verified_by_this_script": [
+    "PD external positive lower density theorem",
+    "UP infinite synchronization estimate",
+    "EP limiting logarithmic profile theorem",
+    "propagation from the two adjacent classes to all adjacent edges"
+  ],
+  "oddpart_factor_at_s_one": "2",
+  "scope": "exact all-lift affine checks; no global energy or Collatz conclusion",
+  "source_hashes": {
+    "checker": "ebf49fd5aa157097afb5ff3f0c412db3967791ad856789a244b731e35623e88a",
+    "critical_note": "027e694d8c6223fe305073318043caba28b0eb00a314926620d6475db40233fa",
+    "single_slice_note": "f102fbf260c0ccdf6bc489392de3602a9e9b52f047a38f9e8ae5ed8afb796e79"
+  },
+  "sparse_target_direct": {
+    "a": [
+      270,
+      109
+    ],
+    "b": [
+      54,
+      22
+    ],
+    "j": [
+      5,
+      2
+    ],
+    "n": [
+      72,
+      29
+    ]
+  },
+  "sparse_target_transported": {
+    "a": [
+      360,
+      289
+    ],
+    "b": [
+      72,
+      58
+    ],
+    "j": [
+      5,
+      4
+    ],
+    "n": [
+      96,
+      77
+    ],
+    "old_a": [
+      270,
+      217
+    ]
+  },
+  "status": "PASS",
+  "two_quinary_classes_constant": "161/90"
+}
