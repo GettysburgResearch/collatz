@@ -1,0 +1,17 @@
+{
+  "original_replay_sha256": "c1d6801465609727308ae82a77916090482fb9716b5f1c28015347c1e75758b4",
+  "schema": "collatz-original-replay-differences/v1",
+  "scope": "Differences from the supplied v2 receipt, not changes to original source files. Both v3 output artifacts reproduced byte-for-byte.",
+  "v2_differences": [
+    {
+      "original": 0.0,
+      "path": "/verifier_results/1/output/dirichlet_identity_err_s2",
+      "replay": 1.6653345369377348e-16
+    },
+    {
+      "original": 2.220446049250313e-16,
+      "path": "/verifier_results/1/output/dirichlet_identity_err_s3",
+      "replay": 8.326672684688674e-17
+    }
+  ]
+}

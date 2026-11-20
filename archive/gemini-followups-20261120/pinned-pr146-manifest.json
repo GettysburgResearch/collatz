@@ -1,0 +1,24 @@
+{
+  "commit": "7d04c4dd756cfe495eb3eee78eba35a99085cd2a",
+  "files": [
+    {
+      "bytes": 5431,
+      "path": "research/upper-bit-mergers/TRIPLING_VARIATION.md",
+      "sha256": "1a3aef543f1ec76db6b585041108eaa105f1d4ceb0c04fe421f1b15ed47d21bb"
+    },
+    {
+      "bytes": 8036,
+      "path": "research/upper-bit-mergers/THREE_RAY_VARIATION.md",
+      "sha256": "f7f2d0b5803e9ec8c302402e5b7a53fbc06c2ec1cdf92f8d4e816a1c3de5c0d0"
+    },
+    {
+      "bytes": 6257,
+      "path": "research/upper-bit-mergers/THREE_RAY_DENSITY.md",
+      "sha256": "567ecc84a34d41d01ca9bf63a4b4074a92b350c1cbbdc77060927fb1ed72f3b5"
+    }
+  ],
+  "pr": 146,
+  "repository": "GettysburgResearch/collatz",
+  "schema": "collatz-source-dependency/v1",
+  "scope": "Byte-exact copies of the three mathematical dependency files; no other claims of PR146 are imported."
+}
