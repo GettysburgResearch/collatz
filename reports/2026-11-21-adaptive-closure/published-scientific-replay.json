@@ -1,0 +1,178 @@
+{
+  "after": {
+    "head": "7bdbfcfd52312b373e86c47538b140fa9c71d745",
+    "status": "",
+    "tracked_files": 351,
+    "tree": "991288e889ac5b4722055f5badc90b44e5be685f"
+  },
+  "before": {
+    "head": "7bdbfcfd52312b373e86c47538b140fa9c71d745",
+    "status": "",
+    "tracked_files": 351,
+    "tree": "991288e889ac5b4722055f5badc90b44e5be685f"
+  },
+  "finished_utc": "2026-11-20T23:35:01.819955+00:00",
+  "manifest_entries": 34,
+  "manifest_only": false,
+  "manifest_sha256": "37848aedebe7d902b5f3337f6eb54cfaffd89b1f20f6e6d63199f31afc4112b5",
+  "runs": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_affine_section_recurrence.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "4ec75e0cc3ba1b54b5f23514d14e91ad67648272d520f086cfe097395744fd4e",
+      "output_matches": true,
+      "seconds": 2.840908,
+      "stderr": "",
+      "stdout_sha256": "4ec75e0cc3ba1b54b5f23514d14e91ad67648272d520f086cfe097395744fd4e"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_affine_section_recurrence.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "4ec75e0cc3ba1b54b5f23514d14e91ad67648272d520f086cfe097395744fd4e",
+      "output_matches": true,
+      "seconds": 3.111991,
+      "stderr": "",
+      "stdout_sha256": "4ec75e0cc3ba1b54b5f23514d14e91ad67648272d520f086cfe097395744fd4e"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_linear_horizon_sieve.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "0d403f6c218d36c99202b4baeb5a3046b8732aa90cff19080414dbd81a7d3790",
+      "output_matches": true,
+      "seconds": 2.6539,
+      "stderr": "",
+      "stdout_sha256": "0d403f6c218d36c99202b4baeb5a3046b8732aa90cff19080414dbd81a7d3790"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_linear_horizon_sieve.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "0d403f6c218d36c99202b4baeb5a3046b8732aa90cff19080414dbd81a7d3790",
+      "output_matches": true,
+      "seconds": 2.733012,
+      "stderr": "",
+      "stdout_sha256": "0d403f6c218d36c99202b4baeb5a3046b8732aa90cff19080414dbd81a7d3790"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_simple_prefix_product_sieve.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "d5b7eaceed3ec6f8f1caede8c9fae07af27f700b827751e34f615761c9c47c5d",
+      "output_matches": true,
+      "seconds": 0.114264,
+      "stderr": "",
+      "stdout_sha256": "d5b7eaceed3ec6f8f1caede8c9fae07af27f700b827751e34f615761c9c47c5d"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_simple_prefix_product_sieve.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "d5b7eaceed3ec6f8f1caede8c9fae07af27f700b827751e34f615761c9c47c5d",
+      "output_matches": true,
+      "seconds": 0.157956,
+      "stderr": "",
+      "stdout_sha256": "d5b7eaceed3ec6f8f1caede8c9fae07af27f700b827751e34f615761c9c47c5d"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_valuation_one_transport.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "947a8e7f1ee3ae4946008ca25dbf84d9ac694e56046afb20fab6d3e2b68b2d06",
+      "output_matches": true,
+      "seconds": 0.288118,
+      "stderr": "",
+      "stdout_sha256": "947a8e7f1ee3ae4946008ca25dbf84d9ac694e56046afb20fab6d3e2b68b2d06"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_valuation_one_transport.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "947a8e7f1ee3ae4946008ca25dbf84d9ac694e56046afb20fab6d3e2b68b2d06",
+      "output_matches": true,
+      "seconds": 0.385979,
+      "stderr": "",
+      "stdout_sha256": "947a8e7f1ee3ae4946008ca25dbf84d9ac694e56046afb20fab6d3e2b68b2d06"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_valuation_one_review.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "4a5d4ca22ff2d0897529c5f6c6a532cc4d27dd34f7834c518c7f57a417747594",
+      "output_matches": true,
+      "seconds": 0.025171,
+      "stderr": "",
+      "stdout_sha256": "4a5d4ca22ff2d0897529c5f6c6a532cc4d27dd34f7834c518c7f57a417747594"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/adaptive-closure-20261121/check_valuation_one_review.py"
+      ],
+      "exit_code": 0,
+      "expected_sha256": "4a5d4ca22ff2d0897529c5f6c6a532cc4d27dd34f7834c518c7f57a417747594",
+      "output_matches": true,
+      "seconds": 0.085887,
+      "stderr": "",
+      "stdout_sha256": "4a5d4ca22ff2d0897529c5f6c6a532cc4d27dd34f7834c518c7f57a417747594"
+    }
+  ],
+  "scope": "Frozen finite exact replay and identity checks; not a proof of Collatz.",
+  "started_utc": "2026-11-20T23:34:49.390727+00:00",
+  "status": "PASS"
+}

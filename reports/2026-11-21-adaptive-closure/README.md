@@ -66,8 +66,13 @@ mathematical verification of the new or imported theorems.
 
 ## Publication receipt boundary
 
-Actual remote-head execution and clean-checkout receipts are added after
-the scientific commit is created and fetched. No preliminary local run
-is retroactively attributed to a future commit. The publication note
-will identify the exact scientific commit and any documentation-only
-child separately.
+The actual remote scientific commit
+`7bdbfcfd52312b373e86c47538b140fa9c71d745` was fetched into a clean
+complete checkout. All ten scientific executions and all eleven required
+repository validation commands passed. The
+[publication validation note](VALIDATION.md) links the exact receipts.
+Those receipts describe the scientific parent; this documentation-only
+child adds the receipts and this index update without changing any of
+the 34 frozen manifest entries. Final-child identity and repository
+checks are recorded in the PR description rather than claiming a
+self-referential commit receipt.
