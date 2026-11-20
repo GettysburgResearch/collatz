@@ -1,0 +1,143 @@
+{
+  "B2_binary_length": 3092,
+  "distinct_ordinary_sources": 1097,
+  "exact_run_formula_checks": 2946,
+  "injective_encoding_keys": 3291,
+  "maximum_observed_division_exponent": 1025,
+  "negative_controls": [
+    "a=1 has the forbidden zero subsum",
+    "repeated cycle occurrences are one distinct transition",
+    "dropping 2^a-2 breaks the shifted identity",
+    "rational coefficients can use primes outside the unit pool",
+    "the cofactor of n is not the cofactor of n+1",
+    "the final endpoint must be included in the core set",
+    "even input rejected"
+  ],
+  "outside_prime_creation_controls": [
+    {
+      "incoming_bits": 5,
+      "k": 1,
+      "outgoing_core_bits": 3,
+      "pool": [
+        2,
+        3
+      ]
+    },
+    {
+      "incoming_bits": 8,
+      "k": 2,
+      "outgoing_core_bits": 6,
+      "pool": [
+        2,
+        3
+      ]
+    },
+    {
+      "incoming_bits": 11,
+      "k": 3,
+      "outgoing_core_bits": 10,
+      "pool": [
+        2,
+        3
+      ]
+    },
+    {
+      "incoming_bits": 14,
+      "k": 4,
+      "outgoing_core_bits": 13,
+      "pool": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "incoming_bits": 27,
+      "k": 8,
+      "outgoing_core_bits": 25,
+      "pool": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "incoming_bits": 40,
+      "k": 12,
+      "outgoing_core_bits": 38,
+      "pool": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "incoming_bits": 192,
+      "k": 60,
+      "outgoing_core_bits": 190,
+      "pool": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ]
+    },
+    {
+      "incoming_bits": 382,
+      "k": 120,
+      "outgoing_core_bits": 380,
+      "pool": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ]
+    },
+    {
+      "incoming_bits": 572,
+      "k": 180,
+      "outgoing_core_bits": 571,
+      "pool": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ]
+    }
+  ],
+  "pools": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      2,
+      3,
+      5,
+      7,
+      11
+    ]
+  ],
+  "scope": "No all-time, external S-unit, or compressed-word theorem verified by computation.",
+  "simple_prefix_sources": 54,
+  "simple_prefix_totals": {
+    "defects": 372,
+    "odd_edges": 749,
+    "shortcut_edges": 1493
+  },
+  "status": "finite exact controls passed",
+  "transition_checks": 3291,
+  "transition_counts": {
+    "coefficient_outside_pool": 2944,
+    "defect": 1560,
+    "one_step": 1731
+  }
+}

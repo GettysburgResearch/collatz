@@ -1,0 +1,381 @@
+{
+  "cases": [
+    {
+      "M": 1,
+      "T_normalized_l1_residual": {
+        "lower_integer": 131646528677,
+        "scale": 1000000000000,
+        "upper_integer": 131646529144
+      },
+      "actual_T_defect": {
+        "lower_integer": 263293057355,
+        "scale": 1000000000000,
+        "upper_integer": 263293058287
+      },
+      "inward_fibers": 1,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 2000000000000,
+        "scale": 1000000000000,
+        "upper_integer": 2000000000000
+      },
+      "tripling_defect": {
+        "lower_integer": 2000000000000,
+        "scale": 1000000000000,
+        "upper_integer": 2000000000000
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 1000000000000,
+        "scale": 1000000000000,
+        "upper_integer": 1000000000000
+      }
+    },
+    {
+      "M": 2,
+      "T_normalized_l1_residual": {
+        "lower_integer": 131646528677,
+        "scale": 1000000000000,
+        "upper_integer": 131646529144
+      },
+      "actual_T_defect": {
+        "lower_integer": 263293057355,
+        "scale": 1000000000000,
+        "upper_integer": 263293058287
+      },
+      "inward_fibers": 1,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 2000000000000,
+        "scale": 1000000000000,
+        "upper_integer": 2000000000000
+      },
+      "tripling_defect": {
+        "lower_integer": 2000000000000,
+        "scale": 1000000000000,
+        "upper_integer": 2000000000000
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 1000000000000,
+        "scale": 1000000000000,
+        "upper_integer": 1000000000000
+      }
+    },
+    {
+      "M": 3,
+      "T_normalized_l1_residual": {
+        "lower_integer": 223734896508,
+        "scale": 1000000000000,
+        "upper_integer": 223734896858
+      },
+      "actual_T_defect": {
+        "lower_integer": 596626390688,
+        "scale": 1000000000000,
+        "upper_integer": 596626391620
+      },
+      "inward_fibers": 1,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 2666666666666,
+        "scale": 1000000000000,
+        "upper_integer": 2666666666667
+      },
+      "tripling_defect": {
+        "lower_integer": 666666666666,
+        "scale": 1000000000000,
+        "upper_integer": 666666666667
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 250000000000,
+        "scale": 1000000000000,
+        "upper_integer": 250000000000
+      }
+    },
+    {
+      "M": 4,
+      "T_normalized_l1_residual": {
+        "lower_integer": 223734896508,
+        "scale": 1000000000000,
+        "upper_integer": 223734896858
+      },
+      "actual_T_defect": {
+        "lower_integer": 596626390688,
+        "scale": 1000000000000,
+        "upper_integer": 596626391620
+      },
+      "inward_fibers": 1,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 2666666666666,
+        "scale": 1000000000000,
+        "upper_integer": 2666666666667
+      },
+      "tripling_defect": {
+        "lower_integer": 666666666666,
+        "scale": 1000000000000,
+        "upper_integer": 666666666667
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 250000000000,
+        "scale": 1000000000000,
+        "upper_integer": 250000000000
+      }
+    },
+    {
+      "M": 7,
+      "T_normalized_l1_residual": {
+        "lower_integer": 135808465691,
+        "scale": 1000000000000,
+        "upper_integer": 135808465845
+      },
+      "actual_T_defect": {
+        "lower_integer": 455281713556,
+        "scale": 1000000000000,
+        "upper_integer": 455281714069
+      },
+      "inward_fibers": 3,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 3352380952380,
+        "scale": 1000000000000,
+        "upper_integer": 3352380952381
+      },
+      "tripling_defect": {
+        "lower_integer": 1352380952380,
+        "scale": 1000000000000,
+        "upper_integer": 1352380952381
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 403409090909,
+        "scale": 1000000000000,
+        "upper_integer": 403409090910
+      }
+    },
+    {
+      "M": 16,
+      "T_normalized_l1_residual": {
+        "lower_integer": 100397405954,
+        "scale": 1000000000000,
+        "upper_integer": 100397406006
+      },
+      "actual_T_defect": {
+        "lower_integer": 405967035411,
+        "scale": 1000000000000,
+        "upper_integer": 405967035618
+      },
+      "inward_fibers": 5,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 4043600843600,
+        "scale": 1000000000000,
+        "upper_integer": 4043600843601
+      },
+      "tripling_defect": {
+        "lower_integer": 976934176934,
+        "scale": 1000000000000,
+        "upper_integer": 976934176935
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 241600052705,
+        "scale": 1000000000000,
+        "upper_integer": 241600052706
+      }
+    },
+    {
+      "M": 31,
+      "T_normalized_l1_residual": {
+        "lower_integer": 79164553307,
+        "scale": 1000000000000,
+        "upper_integer": 79164553330
+      },
+      "actual_T_defect": {
+        "lower_integer": 374944017892,
+        "scale": 1000000000000,
+        "upper_integer": 374944017999
+      },
+      "inward_fibers": 11,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 4736261397644,
+        "scale": 1000000000000,
+        "upper_integer": 4736261397645
+      },
+      "tripling_defect": {
+        "lower_integer": 1161658223040,
+        "scale": 1000000000000,
+        "upper_integer": 1161658223041
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 245269026667,
+        "scale": 1000000000000,
+        "upper_integer": 245269026668
+      }
+    },
+    {
+      "M": 64,
+      "T_normalized_l1_residual": {
+        "lower_integer": 66498332470,
+        "scale": 1000000000000,
+        "upper_integer": 66498332480
+      },
+      "actual_T_defect": {
+        "lower_integer": 361038506200,
+        "scale": 1000000000000,
+        "upper_integer": 361038506251
+      },
+      "inward_fibers": 21,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 5429286611975,
+        "scale": 1000000000000,
+        "upper_integer": 5429286611976
+      },
+      "tripling_defect": {
+        "lower_integer": 1067537456417,
+        "scale": 1000000000000,
+        "upper_integer": 1067537456418
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 196625732386,
+        "scale": 1000000000000,
+        "upper_integer": 196625732387
+      }
+    },
+    {
+      "M": 127,
+      "T_normalized_l1_residual": {
+        "lower_integer": 57774655477,
+        "scale": 1000000000000,
+        "upper_integer": 57774655482
+      },
+      "actual_T_defect": {
+        "lower_integer": 353719740280,
+        "scale": 1000000000000,
+        "upper_integer": 353719740306
+      },
+      "inward_fibers": 43,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 6122403281472,
+        "scale": 1000000000000,
+        "upper_integer": 6122403281473
+      },
+      "tripling_defect": {
+        "lower_integer": 1114276372938,
+        "scale": 1000000000000,
+        "upper_integer": 1114276372939
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 181999832698,
+        "scale": 1000000000000,
+        "upper_integer": 181999832699
+      }
+    },
+    {
+      "M": 256,
+      "T_normalized_l1_residual": {
+        "lower_integer": 51377174279,
+        "scale": 1000000000000,
+        "upper_integer": 51377174282
+      },
+      "actual_T_defect": {
+        "lower_integer": 350163331945,
+        "scale": 1000000000000,
+        "upper_integer": 350163331958
+      },
+      "inward_fibers": 85,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 6815542833045,
+        "scale": 1000000000000,
+        "upper_integer": 6815542833046
+      },
+      "tripling_defect": {
+        "lower_integer": 1090810158759,
+        "scale": 1000000000000,
+        "upper_integer": 1090810158760
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 160047436496,
+        "scale": 1000000000000,
+        "upper_integer": 160047436497
+      }
+    },
+    {
+      "M": 511,
+      "T_normalized_l1_residual": {
+        "lower_integer": 46394659672,
+        "scale": 1000000000000,
+        "upper_integer": 46394659674
+      },
+      "actual_T_defect": {
+        "lower_integer": 348363029280,
+        "scale": 1000000000000,
+        "upper_integer": 348363029287
+      },
+      "inward_fibers": 171,
+      "literal_source_cutoff": 4096,
+      "mass": {
+        "lower_integer": 7508688106282,
+        "scale": 1000000000000,
+        "upper_integer": 7508688106283
+      },
+      "tripling_defect": {
+        "lower_integer": 1102521056897,
+        "scale": 1000000000000,
+        "upper_integer": 1102521056898
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 146832714489,
+        "scale": 1000000000000,
+        "upper_integer": 146832714490
+      }
+    },
+    {
+      "M": 1024,
+      "T_normalized_l1_residual": {
+        "lower_integer": 42364830055,
+        "scale": 1000000000000,
+        "upper_integer": 42364830056
+      },
+      "actual_T_defect": {
+        "lower_integer": 347469337868,
+        "scale": 1000000000000,
+        "upper_integer": 347469337872
+      },
+      "inward_fibers": 341,
+      "literal_source_cutoff": 8192,
+      "mass": {
+        "lower_integer": 8201834810006,
+        "scale": 1000000000000,
+        "upper_integer": 8201834810007
+      },
+      "tripling_defect": {
+        "lower_integer": 1096659802551,
+        "scale": 1000000000000,
+        "upper_integer": 1096659802552
+      },
+      "tripling_normalized_l1_residual": {
+        "lower_integer": 133709081925,
+        "scale": 1000000000000,
+        "upper_integer": 133709081926
+      }
+    }
+  ],
+  "exact_fiber_terms": 4104,
+  "inward_fibers": 684,
+  "literal_source_checks": 53248,
+  "negative_controls": 7,
+  "result": "PASS",
+  "schema": "collatz-critical-cutoffs/v1",
+  "scope": "finite exact arithmetic and whole-source intervals at named M; no limiting proof or Collatz resolution",
+  "source_sha256": "889d0ab549595b54bc95a2312e09fa4d558acf982432ac33c86c35adcb984f42",
+  "valuation_domain_checks": 1026,
+  "valuation_sum_controls": [
+    2,
+    3,
+    4,
+    8,
+    16,
+    32
+  ]
+}
