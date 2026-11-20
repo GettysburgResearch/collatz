@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "scope": "Bounded exact arithmetic replay; no universal stopping, cycle exclusion, or instantiation of the enormous universal record window.",
+  "parameters": {
+    "source_limit": 4096,
+    "word_depth": 12
+  },
+  "words": {
+    "parity_words": 8191,
+    "ordinary_lifts": 16382,
+    "literal_steps": 180228
+  },
+  "interval_images": {
+    "translated_cohorts": 224,
+    "source_replays": 56112,
+    "image_interfaces": 576
+  },
+  "paths": {
+    "simple_paths": 4096,
+    "listed_states": 209868,
+    "translated_window_checks": 49152
+  },
+  "records": {
+    "record_paths": 260,
+    "product_edges": 8170,
+    "record_prefix_checks": 1731,
+    "no_descent_prefix_checks": 535,
+    "maximum_records": 20
+  },
+  "rejected_mutations": [
+    "repeated_cycle_counted_with_multiplicity",
+    "wrong_parity_residue",
+    "empty_record_window",
+    "omitted_odd_affine_correction"
+  ],
+  "rational_exponent_certificates": [
+    "3^1170 < 2^1856",
+    "2^9664 < 39^1170 * 25^750"
+  ],
+  "selected_exact_bounds": [
+    {
+      "width": 128,
+      "bound": 117,
+      "k": 7,
+      "h": 3
+    },
+    {
+      "width": 4096,
+      "bound": 2720,
+      "k": 12,
+      "h": 6
+    },
+    {
+      "width": 100000,
+      "bound": 63875,
+      "k": 17,
+      "h": 9
+    },
+    {
+      "width": 10000000000,
+      "bound": 3442132111,
+      "k": 31,
+      "h": 17
+    },
+    {
+      "width": 100000000000000000000,
+      "bound": 12960466033863499954,
+      "k": 63,
+      "h": 36
+    },
+    {
+      "width": 100000000000000000000000000000000000000000000000000,
+      "bound": 874203886743967423667939931850156023131023352108,
+      "k": 163,
+      "h": 97
+    }
+  ]
+}

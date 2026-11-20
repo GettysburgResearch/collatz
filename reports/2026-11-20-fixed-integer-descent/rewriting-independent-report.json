@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "Separate rule table, binary-string runs, literal odd clock, and three rewrite schedulers; does not repeat the cap-six finite core proof.",
+  "file_sha256": {
+    "research/fixed-integer-descent/rewriting.md": "1a1eed215f2602feb65f960097fd5956e404d69fb1007b63bd31664bf552cc4b",
+    "experiments/fixed_integer_rewriting.py": "502999ab238a79053bc63113006c36ada5cabc83d1092b16f3cb5afce024fc4f"
+  },
+  "proper_words_through_inner_length": 7,
+  "proper_words": 97656,
+  "all_rule_occurrences": 232421,
+  "guarded_rank_edges": 232421,
+  "rule_occurrences": {
+    "ad -> d": 19531,
+    "bd -> gd": 19531,
+    "ae -> ea": 22461,
+    "af -> eb": 22461,
+    "ag -> fa": 22461,
+    "be -> fb": 22461,
+    "bf -> ga": 22461,
+    "bg -> gb": 22461,
+    "ce -> cb": 19531,
+    "cf -> caa": 19531,
+    "cg -> cab": 19531
+  },
+  "odd_clock_values_replayed": 2197,
+  "scheduled_sequences": 3072,
+  "scheduled_rewrite_steps": 496587,
+  "maximum_scheduled_length": 524,
+  "unguarded_control": {
+    "source": 5461,
+    "destination": 8192,
+    "before_rank": [
+      0,
+      0,
+      0
+    ],
+    "after_rank": [
+      0,
+      13,
+      12
+    ]
+  }
+}

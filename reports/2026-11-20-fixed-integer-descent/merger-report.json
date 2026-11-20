@@ -1,0 +1,33 @@
+{
+  "adaptive_cases_through_100000": {
+    "F": 3125,
+    "G": 8334,
+    "H": 3123,
+    "J": 1563
+  },
+  "adjacent_cases_through_100000": 25002,
+  "affine_rows": 8,
+  "combined_excluded_odd_residues": 83,
+  "deep_valuation_stress_cases": 705,
+  "inherited_excluded_odd_residues": 48,
+  "largest_adjacent_clock": 82,
+  "largest_neighborhood_binary_depth": 137,
+  "largest_stress_input_bits": 263,
+  "limits": [
+    "The infinite adaptive families are established by the written argument, not the bounded census.",
+    "The neighborhood result inherits the source-qualified finite 81h convergence implication.",
+    "No proof that the guards cover every ordinary integer is supplied.",
+    "No proof-assistant verification is claimed."
+  ],
+  "negative_controls": 9,
+  "neighborhood_exact_coefficient": "15676011/16777216",
+  "neighborhood_ordinary_replays": 5120,
+  "neighborhood_seed_pairs": 512,
+  "new_excluded_odd_residues": 35,
+  "odd_residues": 192,
+  "residue_period": 384,
+  "source_head": "7d04c4dd756cfe495eb3eee78eba35a99085cd2a",
+  "source_pr": 146,
+  "status": "bounded exact replays passed; universal coverage remains open",
+  "total_replayed_adaptive_graph_edges": 284560
+}
