@@ -44,6 +44,13 @@ not mathematical verification.
 
 [VALIDATION.md](VALIDATION.md) distinguishes the exact execution heads,
 attached receipts, final publication head, and their evidence limits.
+The attached [scientific receipt](execution-content-science.json) records
+all 8 checks passing at content commit
+`3cd47dbdeaddf6e4f4446d795271e75a52d68c99`; the
+[repository receipt](execution-content-repository.json) records all 11
+existing validation commands passing there. The publication child retains
+all 26 manifest files unchanged. These are actual completed executions,
+not predictions about an unexecuted head.
 
 ## Scope of the finite and symbolic checks
 

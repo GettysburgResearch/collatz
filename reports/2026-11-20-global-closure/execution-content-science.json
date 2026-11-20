@@ -1,0 +1,166 @@
+{
+  "schema": "collatz-global-closure-bundle/v1",
+  "scope": "frozen content, exact symbolic certificate checks and bounded replays; not a full Collatz proof",
+  "started_utc": "2026-11-20T19:58:57.650794+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "linux",
+  "commands": [
+    {
+      "name": "production-arithmetic",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/global_closure_arithmetic.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/arithmetic-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact regeneration matches saved report\n",
+      "stderr": "",
+      "expectation": "success",
+      "seconds": 0.319,
+      "passed": true
+    },
+    {
+      "name": "production-merger",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/global_closure_merger.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/merger-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact report comparison reports/2026-11-20-global-closure/merger-report.json\n",
+      "stderr": "",
+      "expectation": "success",
+      "seconds": 0.595,
+      "passed": true
+    },
+    {
+      "name": "production-transport",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/global_closure_transport.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/transport-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"actual_replay\": {\n    \"actual_B_edges\": 3475,\n    \"largest_physical_state\": 4076810,\n    \"physical_shortcut_edges\": 25037,\n    \"physically_replayed_A_words\": 9117,\n    \"safe_A_steps_inside_B\": 2914\n  },\n  \"checker_sha256\": \"68e74e13aa3ebf7aaeef743dcbcd9a06216f349a4c65af8cf703a3eea20d3d83\",\n  \"claims\": [\n    \"GCT-001\",\n    \"GCT-002\",\n    \"GCT-003\",\n    \"GCT-004\"\n  ],\n  \"controls\": {\n    \"finite_doubling_edges\": 984,\n    \"long_chain_symbolic_margins\": 4,\n    \"nonabsorbing_squaring_reciprocal_sum_below_one\": true,\n    \"squaring_edges\": 11\n  },\n  \"evidence_scope\": \"Exact finite actual-return replay; full-source fixed-horizon enclosures via analytic tails. No all-time closing estimate.\",\n  \"finite_path_checks\": {\n    \"all_tested_sources_killed_within_horizon\": true,\n    \"exact_reciprocal_height_coboundaries\": 3475,\n    \"longest_tested_unsafe_path\": 37,\n    \"source_paths\": 2941,\n    \"translated_window_checks\": 122729\n  },\n  \"functional_enclosures\": [\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.078505334875\",\n          \"0.078505334876\"\n        ],\n        \"lower_scaled\": \"78505334875236639182138485634\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"78505334875236639182138489375\"\n      },\n      \"finite_source_carriers_at_last_observation\": 2941,\n      \"horizon\": 1,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.000073274437\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"73274436455694252356137376\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.078505334875\",\n          \"0.078578609312\"\n        ],\n        \"lower_scaled\": \"78505334875236639182138485634\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"78578609311692333434494626751\"\n      }\n    },\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.103603420049\",\n          \"0.103603420050\"\n        ],\n        \"lower_scaled\": \"103603420049896604929404490032\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"103603420049896604929404496124\"\n      },\n      \"finite_source_carriers_at_last_observation\": 1503,\n      \"horizon\": 2,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.000146548873\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"146548872911388504712274751\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.103603420049\",\n          \"0.103749968923\"\n        ],\n        \"lower_scaled\": \"103603420049896604929404490032\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"103749968922807993434116770875\"\n      }\n    },\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.120180686698\",\n          \"0.120180686699\"\n        ],\n        \"lower_scaled\": \"120180686698551270708305004415\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"120180686698551270708305013727\"\n      },\n      \"finite_source_carriers_at_last_observation\": 589,\n      \"horizon\": 4,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.000293097746\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"293097745822777009424549501\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.120180686698\",\n          \"0.120473784445\"\n        ],\n        \"lower_scaled\": \"120180686698551270708305004415\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"120473784444374047717729563228\"\n      }\n    },\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.129521120082\",\n          \"0.129521120083\"\n        ],\n        \"lower_scaled\": \"129521120082166796251864732560\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"129521120082166796251864746329\"\n      },\n      \"finite_source_carriers_at_last_observation\": 221,\n      \"horizon\": 8,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.000586195492\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"586195491645554018849099001\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.129521120082\",\n          \"0.130107315574\"\n        ],\n        \"lower_scaled\": \"129521120082166796251864732560\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"130107315573812350270713845330\"\n      }\n    },\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.140638737116\",\n          \"0.140638737117\"\n        ],\n        \"lower_scaled\": \"140638737116034919267144713613\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"140638737116034919267144731744\"\n      },\n      \"finite_source_carriers_at_last_observation\": 47,\n      \"horizon\": 16,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.001172390984\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"1172390983291108037698198001\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.140638737116\",\n          \"0.141811128100\"\n        ],\n        \"lower_scaled\": \"140638737116034919267144713613\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"141811128099326027304842929745\"\n      }\n    },\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.140870122044\",\n          \"0.140870122045\"\n        ],\n        \"lower_scaled\": \"140870122044598241814770607415\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"140870122044598241814770627035\"\n      },\n      \"finite_source_carriers_at_last_observation\": 3,\n      \"horizon\": 32,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.002344781967\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"2344781966582216075396396001\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.140870122044\",\n          \"0.143214904012\"\n        ],\n        \"lower_scaled\": \"140870122044598241814770607415\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"143214904011180457890167023036\"\n      }\n    },\n    {\n      \"finite_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.140870202043\",\n          \"0.140870202044\"\n        ],\n        \"lower_scaled\": \"140870202043330400457564631081\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"140870202043330400457564650717\"\n      },\n      \"finite_source_carriers_at_last_observation\": 0,\n      \"horizon\": 64,\n      \"omitted_original_source_tail_upper\": {\n        \"decimal_enclosure\": [\n          \"0.000000000000\",\n          \"0.004689563934\"\n        ],\n        \"lower_scaled\": \"0\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"4689563933164432150792792001\"\n      },\n      \"whole_source_G\": {\n        \"decimal_enclosure\": [\n          \"0.140870202043\",\n          \"0.145559765977\"\n        ],\n        \"lower_scaled\": \"140870202043330400457564631081\",\n        \"scale\": \"1000000000000000000000000000000\",\n        \"upper_scaled\": \"145559765976494832608357442718\"\n      }\n    }\n  ],\n  \"integer_log_crosschecks\": {\n    \"nested_log_checks\": 9,\n    \"rational_log_checks\": 11\n  },\n  \"original_source_cutoff\": 8192,\n  \"psi_star\": {\n    \"decimal_enclosure\": [\n      \"1.665729810578\",\n      \"1.665729810579\"\n    ],\n    \"lower_scaled\": \"1665729810578276409082554250598\",\n    \"scale\": \"1000000000000000000000000000000\",\n    \"upper_scaled\": \"1665729810578276409082554250769\"\n  },\n  \"return_horizon\": 64,\n  \"schema\": \"global-closure-transport-v1\",\n  \"source_pins\": {\n    \"PR152\": \"2391a9c1e4a7f77233b951d2eb6da92e76652e7c\",\n    \"PR153\": \"eb04a5d79020cefa0ba46794095b5766c5ff66a4\",\n    \"main\": \"ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a\"\n  },\n  \"status\": \"PASS\",\n  \"unsafe_original_sources\": 2941\n}\n",
+      "stderr": "",
+      "expectation": "success",
+      "seconds": 0.676,
+      "passed": true
+    },
+    {
+      "name": "review-arithmetic",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-global-closure/arithmetic-independent-check.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/arithmetic-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"block_edges\": 124, \"clock_accounting_edges\": 65536, \"complete_even_words\": 65535, \"independent_blocks\": 14, \"pair_checks\": 1044, \"recharge_edges\": 13952, \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "expectation": "success",
+      "seconds": 0.354,
+      "passed": true
+    },
+    {
+      "name": "review-merger",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-global-closure/check_merger_independent.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/merger-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS exact independent audit comparison\n",
+      "stderr": "",
+      "expectation": "success",
+      "seconds": 0.169,
+      "passed": true
+    },
+    {
+      "name": "review-closing",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-global-closure/check_closing_independent.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/closing-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact comparison reports/2026-11-20-global-closure/closing-independent-report.json\n",
+      "stderr": "",
+      "expectation": "success",
+      "seconds": 0.192,
+      "passed": true
+    },
+    {
+      "name": "review-transport",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-global-closure/arithmetic-transport-independent.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"actual_returns_compared\": 211,\n  \"exact_mass_conservation_horizons\": 32,\n  \"final_surviving_carriers\": 0,\n  \"functional_and_source_tail_checkpoints\": [\n    1,\n    2,\n    4,\n    8,\n    16,\n    32\n  ],\n  \"limitations\": [\n    \"Rank minimizer reduction remains qualified to the pinned source proof.\",\n    \"No global Green upper bound or cycle exclusion is inferred.\",\n    \"The author's logarithm routine was algebraically reviewed and reused; it is not claimed independently reimplemented here.\"\n  ],\n  \"physical_accelerations_compared\": 562,\n  \"physical_counts\": {\n    \"accepted_physical_shortcut_edges\": 1548,\n    \"accepted_safe_a_steps\": 173\n  },\n  \"rank_inputs_compared\": 565,\n  \"return_horizon\": 32,\n  \"reviewed_checker_sha256\": \"68e74e13aa3ebf7aaeef743dcbcd9a06216f349a4c65af8cf703a3eea20d3d83\",\n  \"scope\": \"independent bounded physical A/B reconstruction and exact rational original-source mass; audited author logarithm intervals reused\",\n  \"source_cutoff\": 512,\n  \"status\": \"PASS\",\n  \"unsafe_sources\": 183\n}\n",
+      "stderr": "",
+      "expectation": "json_compare",
+      "seconds": 0.222,
+      "passed": true
+    },
+    {
+      "name": "production-arithmetic-optimized-refusal",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "experiments/global_closure_arithmetic.py",
+        "--compare",
+        "reports/2026-11-20-global-closure/arithmetic-report.json"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "verification requires assertions; optimized Python is not supported\n",
+      "expectation": "expected_refusal",
+      "seconds": 0.11,
+      "passed": true
+    }
+  ],
+  "success": true,
+  "checkout": {
+    "commit": "3cd47dbdeaddf6e4f4446d795271e75a52d68c99",
+    "tree": "9af44ea668ae3afc1431625fc8d6a093b664ba9e",
+    "tracked_files": 344
+  },
+  "content_manifest_sha256": "75f68c6906d5ab5e4a34accd3a4566e90962b38fe5ba3966f5fd020d154997d4",
+  "content_files_checked": 26,
+  "checkout_after": {
+    "commit": "3cd47dbdeaddf6e4f4446d795271e75a52d68c99",
+    "tree": "9af44ea668ae3afc1431625fc8d6a093b664ba9e",
+    "tracked_files": 344
+  },
+  "finished_utc": "2026-11-20T19:59:00.333128+00:00"
+}
