@@ -1,0 +1,227 @@
+{
+  "arithmetic": "integers and fractions only; checks active under -OO",
+  "critical_products": {
+    "exact_product_checks": 7823,
+    "future_control": "formal valuation-one continuation; not asserted to be an actual orbit",
+    "maximum_odd_prefix_length": 80,
+    "ordinary_unit_sources": 333
+  },
+  "cycle_case_count": 8,
+  "cycle_cases": [
+    {
+      "AR2_diagonal_bound_checked": true,
+      "a": 43,
+      "b": 72,
+      "binary_precision": 0,
+      "binary_residue": 0,
+      "critical_lap_score": 1,
+      "denominator_bits": 114,
+      "denominator_sha256_big_endian": "cb9e18797a656fabb7dbfd27ad106a80fd04bdd09919aa36897ec52a39b7e93b",
+      "numerator_bits": 115,
+      "numerator_sha256_big_endian": "0d130f145d14e0161d395e858e631efcc3e7cd3aa5dea76cf473ef3815075aaa",
+      "odd_lap_count": 72,
+      "prefix": "",
+      "real_error": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 1
+      },
+      "shortcut_lap_length": 115,
+      "ternary_precision": 0,
+      "ternary_residue": 1
+    },
+    {
+      "AR2_diagonal_bound_checked": true,
+      "a": 77,
+      "b": 130,
+      "binary_precision": 4,
+      "binary_residue": 1,
+      "critical_lap_score": 1,
+      "denominator_bits": 211,
+      "denominator_sha256_big_endian": "dc3ea98298e77aabb7d1e89bbc5f922ca9fab3eef2624bc90425c4b63acf5cff",
+      "numerator_bits": 211,
+      "numerator_sha256_big_endian": "3a1382c0bf5610bbf4a81f34c75f73b6c92a82493158785a9a2b2f060cebee0e",
+      "odd_lap_count": 132,
+      "prefix": "1010",
+      "real_error": {
+        "denominator": 8,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 1
+      },
+      "shortcut_lap_length": 211,
+      "ternary_precision": 1,
+      "ternary_residue": 1
+    },
+    {
+      "AR2_diagonal_bound_checked": true,
+      "a": 70,
+      "b": 122,
+      "binary_precision": 6,
+      "binary_residue": 5,
+      "critical_lap_score": 2,
+      "denominator_bits": 198,
+      "denominator_sha256_big_endian": "04ae91ca9a05cf7d4a0b1197860aa15fca2c758a3e3025b4dbdc7c52c3f3ef06",
+      "numerator_bits": 200,
+      "numerator_sha256_big_endian": "d6aff4090ed368e5b0c0c1a1dde75371c7054d4fba24a2cf83925d44d7807ae7",
+      "odd_lap_count": 124,
+      "prefix": "100010",
+      "real_error": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 5
+      },
+      "shortcut_lap_length": 198,
+      "ternary_precision": 2,
+      "ternary_residue": 5
+    },
+    {
+      "AR2_diagonal_bound_checked": true,
+      "a": 263,
+      "b": 449,
+      "binary_precision": 8,
+      "binary_residue": 7,
+      "critical_lap_score": 32,
+      "denominator_bits": 719,
+      "denominator_sha256_big_endian": "7082a2077f9bf5162454b1598101fdbe8a94efd9eccfe050d195756c6c855efb",
+      "numerator_bits": 721,
+      "numerator_sha256_big_endian": "de4f0948db7d1cb97018976676c7af67827a91f1121f8bc4b3468f8d18ff3ea8",
+      "odd_lap_count": 454,
+      "prefix": "11101001",
+      "real_error": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 7
+      },
+      "shortcut_lap_length": 720,
+      "ternary_precision": 3,
+      "ternary_residue": 7
+    },
+    {
+      "AR2_diagonal_bound_checked": true,
+      "a": 449,
+      "b": 769,
+      "binary_precision": 9,
+      "binary_residue": 25,
+      "critical_lap_score": 57,
+      "denominator_bits": 1225,
+      "denominator_sha256_big_endian": "a0073cfb3ef0cf70a835c993f1f4404dbb1586aa9d57318bd41221270573d367",
+      "numerator_bits": 1229,
+      "numerator_sha256_big_endian": "545640731a354fcb8506e442c76b8ec6bb033925f281c4e20a4c2517af649283",
+      "odd_lap_count": 774,
+      "prefix": "101100110",
+      "real_error": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 25
+      },
+      "shortcut_lap_length": 1227,
+      "ternary_precision": 3,
+      "ternary_residue": 25
+    },
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 332,
+      "b": 568,
+      "binary_precision": 6,
+      "binary_residue": 5,
+      "critical_lap_score": 30,
+      "denominator_bits": 906,
+      "denominator_sha256_big_endian": "12017f118fd98fea5109920cdca11293d9d72a57f560cab8b849c66f64b679b9",
+      "numerator_bits": 907,
+      "numerator_sha256_big_endian": "9032b32e099091c1852d066386a4b9b631ee5a7cdfad56c3ec1f4a9cb6185357",
+      "odd_lap_count": 570,
+      "prefix": "100010",
+      "real_error": {
+        "denominator": 40,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 7,
+        "numerator": 13
+      },
+      "shortcut_lap_length": 906,
+      "ternary_precision": 3,
+      "ternary_residue": 2
+    },
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 300,
+      "b": 516,
+      "binary_precision": 7,
+      "binary_residue": 0,
+      "critical_lap_score": 13,
+      "denominator_bits": 823,
+      "denominator_sha256_big_endian": "b575dcd2641e3d149523e0d5af04e293bccb5f01825d69de446f157c71dd8f5e",
+      "numerator_bits": 825,
+      "numerator_sha256_big_endian": "232e04123c4c39ad643f20d5e76b1d042b2a356271bb970d8023de3d1bbfd55f",
+      "odd_lap_count": 516,
+      "prefix": "0000000",
+      "real_error": {
+        "denominator": 20,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 3,
+        "numerator": 11
+      },
+      "shortcut_lap_length": 823,
+      "ternary_precision": 2,
+      "ternary_residue": 8
+    },
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 158,
+      "b": 265,
+      "binary_precision": 5,
+      "binary_residue": 18,
+      "critical_lap_score": 4,
+      "denominator_bits": 428,
+      "denominator_sha256_big_endian": "0135b36b2ba145f61a208997e8df9c28424e50523ef197a84a03c3f8075abdbc",
+      "numerator_bits": 427,
+      "numerator_sha256_big_endian": "1a215fa65a2b2ec5afa2e9415612f58fa8ddd97dd1a41908f56c1f70dd379401",
+      "odd_lap_count": 268,
+      "prefix": "01011",
+      "real_error": {
+        "denominator": 40,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 5,
+        "numerator": 2
+      },
+      "shortcut_lap_length": 428,
+      "ternary_precision": 3,
+      "ternary_residue": 11
+    }
+  ],
+  "fixed_source_pins": {
+    "actual_return_controls": 80,
+    "completion_equation_checks": 7696,
+    "nonreturn_prefix_checks": 31523,
+    "shortcut_horizon": 80,
+    "sources": 400
+  },
+  "interfaces": {
+    "binary_residue_cases": 2047,
+    "ternary_unit_cases": 2186
+  },
+  "scope": "finite interfaces and witnesses; no claim of integer nonconvergence or global closure",
+  "status": "PASS",
+  "total_accelerated_edges": 2910,
+  "total_shortcut_edges": 4628
+}

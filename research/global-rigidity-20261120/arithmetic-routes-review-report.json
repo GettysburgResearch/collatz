@@ -1,0 +1,36 @@
+{
+  "cycle_reconstruction": {
+    "cycle_roots": 12,
+    "extra_moduli": [
+      5,
+      91,
+      35,
+      25
+    ],
+    "integer_targets": 7,
+    "shortcut_edges": 10582
+  },
+  "fixed_pins": {
+    "actual_return_controls": 40,
+    "nonreturn_pins": 4684,
+    "shortcut_horizon": 40,
+    "source_limit": 121
+  },
+  "scope": "finite replay and independent proof audit; no Collatz closure",
+  "shifted_pairs": {
+    "formal_sharpness_odd_s": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "formal_tail_is_not_an_actual_infinite_orbit": true,
+    "observed_first_defect_bounds": 1859,
+    "primitive_products": 1971,
+    "t_greater_than_j": 98,
+    "ternary_cancellations": 1249
+  },
+  "status": "PASS independent exact arithmetic checks"
+}

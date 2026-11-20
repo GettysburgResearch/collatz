@@ -1,0 +1,13 @@
+{
+  "fixed_target_inequality_checks": 51024,
+  "maximum_odd_prefix_length": 100,
+  "nontrivial_ternary_cancellations": 10747,
+  "observed_first_defect_lower_bounds": 16341,
+  "ordinary_odd_unit_sources": 667,
+  "primitive_product_checks": 17008,
+  "scope": "exact finite identities only; neither open global hypothesis is asserted",
+  "source_limit": 2000,
+  "status": "PASS",
+  "tail": "formal eventual valuation-one continuation, not an ordinary infinite orbit",
+  "ternary_valuation_greater_than_j_cases": 683
+}
