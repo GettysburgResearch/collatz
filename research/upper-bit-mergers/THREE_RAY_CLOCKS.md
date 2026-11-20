@@ -1,13 +1,13 @@
 # The time needed to merge a start with a power-of-three multiple
 
-**PROPOSED, with a source-qualified upper bound.** Use the shortcut map $T(x)=x/2$ on even positive integers and $(3x+1)/2$ on odds. For $r,h\ge1$ let a start $n$ miss the deadline if $T^i(n)\ne T^j(3^rn)$ for **every** pair $0\le i,j\le h$.
+**PROPOSED.** Use the shortcut map $T(x)=x/2$ on even positive integers and $(3x+1)/2$ on odds. For $r,h\ge1$ let a start $n$ miss the deadline if $T^i(n)\ne T^j(3^rn)$ for **every** pair $0\le i,j\le h$.
 
 In every complete block of $2^h$ positive starts lying above $6^h$, the fraction missing the deadline is between
 $$
  c\min(1,r/\sqrt h)\quad\text{and}\quad C\min(1,r/\sqrt h)
  \tag{1}
 $$
-with absolute positive constants. For $r\gg\sqrt h$ the fraction *meeting* by the deadline is at most $2\exp(-r^2/(2h))$. The lower bound and the exponential obstruction are elementary. The upper estimate uses the uniform remaining-time lemma in David Leen’s October 2026 preprint. It applies to blocks at every height.
+with absolute positive constants. For $r\gg\sqrt h$ the fraction *meeting* by the deadline is at most $2\exp(-r^2/(2h))$. The lower bound and the exponential obstruction are elementary. The upper estimate follows from the local excursion proof and also from the uniform remaining-time lemma in David Leen’s October 2026 preprint. It applies to blocks at every height. [Self-contained upper estimate](THREE_RAY_UPPER.md)
 
 In particular, in **any** interval of $N\ge2$ consecutive positive parameters, the number for which $n$ and $3^rn$ never meet is at most
 $$

@@ -1715,4 +1715,210 @@ theorem collatz_iff_clean_three_windows :
   obtain ⟨y,hy,hb,ho,hd⟩ := three_defect_in_every_window f hs x hxo d R hR
   exact hd (lift (hgood y hy hb ho))
 
+/-- Every set containing one, constant along ordinary orbits, and closed under
+the *forward* operation x ↦ 3x contains every positive integer. -/
+theorem three_forward_generates (P : ℕ → Prop)
+    (hs : ∀ n, P (step n) ↔ P n) (hm : ∀ n, 0 < n → P n → P (3*n))
+    (h1 : P 1) : ∀ n, 0 < n → P n := by
+  have it (n j : ℕ) : P (orbit n j) ↔ P n := by
+    induction j with
+    | zero => rfl
+    | succ j ih => exact (hs _).trans ih
+  have lift {a b : ℕ} (h : Meets a b) : P a ↔ P b := by
+    obtain ⟨i,j,e⟩ := h
+    exact (it a i).symm.trans (e ▸ it b j)
+  have h2 (n : ℕ) : P (2*n) ↔ P n := (lift (meets_double n)).symm
+  have mult (n k : ℕ) (hn : 0 < n) (hp : P n) : P (3^k*n) := by
+    induction k with
+    | zero => simpa using hp
+    | succ k ih =>
+      rw [show 3^(k+1)*n = 3*(3^k*n) by ring]
+      exact hm _ (by positivity) ih
+  have odd (x : ℕ) (hx : x%2=1) : P (3*x+1) ↔ P x := by
+    have he : 2*step x = 3*x+1 := by simp [step,hx]; omega
+    rw [← he]
+    exact (h2 _).trans (hs _)
+  have g23 (h : ℕ) (hh : 0<h) : P (2*h-1) ↔ P (3*h-1) := by
+    have ho := (odd (2*h-1) (by omega)).symm
+    rw [show 3*(2*h-1)+1=2*(3*h-1) by omega] at ho
+    exact ho.trans (h2 _)
+  have exch (i w : ℕ) (hw : 0<w) : P (2^i*w-1) ↔ P (3^i*w-1) := by
+    induction i generalizing w with
+    | zero => simp
+    | succ i ih =>
+      have e := g23 (2^i*w) (by positivity)
+      rw [show 2^(i+1)*w=2*(2^i*w) by ring,
+          show 3^(i+1)*w=3^i*(3*w) by ring]
+      exact e.trans (by simpa only [Nat.mul_left_comm] using ih (3*w) (by omega))
+  have g49 (h : ℕ) (hh : 0<h) : P (4*h-1) ↔ P (9*h-1) := exch 2 h hh
+  have down (h : ℕ) (hh : 0<h) (hin : P (8*h-1)) : P (4*h-1) := by
+    have htrip := hm (8*h-1) (by omega) hin
+    have ho := (odd (3*(8*h-1)) (by omega)).mpr htrip
+    rw [show 3*(3*(8*h-1))+1=8*(9*h-1) by omega] at ho
+    apply (g49 h hh).mpr
+    exact (lift (show Meets (8*(9*h-1)) (9*h-1) from ⟨3,0,strip_twos (9*h-1) 3⟩)).mp ho
+  have shift (i h : ℕ) (hh : 0<h) : P (4*(3^i*h)-1) → P (4*h-1) := by
+    induction i with
+    | zero => simp
+    | succ i ih =>
+      let z := 3^i*h
+      have hz : 0<z := by dsimp [z]; positivity
+      intro hnext
+      have hnext' : P (3*(4*z)-1) := by
+        rwa [show 3*(4*z)=4*(3^(i+1)*h) by dsimp [z]; ring]
+      have prev := (g23 (4*z) (by omega)).mpr hnext'
+      exact ih (down z hz (by simpa only [← Nat.mul_assoc] using prev))
+  have cell (y : ℕ) (hy : y%16=3 ∨ y%16=5) : P y → P (y-1) := by
+    rcases hy with e | e
+    · have h := triple_adjacent_ray 2 (y/16) (by decide) (by decide)
+      rw [show 2+16*(y/16)=y-1 by omega, show 2+1+16*(y/16)=y by omega] at h
+      exact (lift h).mpr
+    · have h := triple_adjacent_ray 4 (y/16) (by decide) (by decide)
+      rw [show 4+16*(y/16)=y-1 by omega, show 4+1+16*(y/16)=y by omega] at h
+      exact (lift h).mpr
+  have fac (n : ℕ) (hn : 0<n) : ∃ v u : ℕ, u%2=1 ∧ n=2^v*u := by
+    induction n using Nat.strong_induction_on with
+    | h n ih =>
+      by_cases ho : n%2=1
+      · exact ⟨0,n,ho,by simp⟩
+      obtain ⟨v,u,hodd,eq⟩ := ih (n/2) (by omega) (by omega)
+      exact ⟨v+1,u,hodd,by rw [show 2^(v+1)*u=2*(2^v*u) by ring, ← eq]; omega⟩
+  have descent (h : ℕ) (hh : 0<h) (ph : P h) : P (4*h-1) := by
+    obtain ⟨v,u,hu,he⟩ := fac h hh
+    have hu0 : 0<u := by omega
+    have pu := (lift (show Meets (2^v*u) u from ⟨v,0,strip_twos u v⟩)).mp (he ▸ ph)
+    let w := 3^v*u
+    have hw : 0<w := by dsimp [w]; positivity
+    have oddpow : 3^v%2=1 := by simp [Nat.pow_mod]
+    have wo : w%2≠0 := by dsimp [w]; rw [Nat.mul_mod, oddpow, hu]; decide
+    obtain ⟨j,hcell⟩ := triple_residue w wo
+    have zpos : 0<3^j*w := by positivity
+    have pz := mult w j hw (mult u v hu0 pu)
+    have py := mult (3^j*w) 2 zpos pz
+    have phigh := cell (9*(3^j*w)) hcell py
+    have pw4 := shift j w hw ((g49 (3^j*w) zpos).mpr phigh)
+    have e := exch v (4*u) (by omega)
+    have ee : P (4*h-1) ↔ P (4*w-1) := by
+      dsimp [w]; rw [he]
+      simpa only [Nat.mul_left_comm] using e
+    exact ee.mpr pw4
+  intro n hn
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+    by_cases hone : n=1
+    · simpa [hone] using h1
+    by_cases he : n%2=0
+    · have e : n=2*(n/2) := by omega
+      exact e ▸ (h2 _).mpr (ih (n/2) (by omega) (by omega))
+    by_cases hfour : n%4=1
+    · let a := (3*n+1)/4
+      have ha : 3*n+1=4*a := by dsimp [a]; omega
+      have pa := ih a (by dsimp [a]; omega) (by dsimp [a]; omega)
+      apply (odd n (by omega)).mp
+      rw [ha]
+      exact (lift (show Meets (4*a) a from ⟨2,0,strip_twos a 2⟩)).mpr pa
+    let h := (n+1)/4
+    have hh : 0<h := by dsimp [h]; omega
+    have eq : 4*h-1=n := by dsimp [h]; omega
+    exact eq ▸ descent h hh (ih h (by dsimp [h]; omega) hh)
+
+/-- To settle all positive orbits it suffices to show that tripling each
+start already known to reach 1 produces another start reaching 1. -/
+theorem collatz_iff_basin_closed_under_three :
+    (∀ n : ℕ, 0<n → ∃ j, orbit n j=1) ↔
+    (∀ n : ℕ, 0<n → (∃ j, orbit n j=1) → ∃ k, orbit (3*n) k=1) := by
+  constructor
+  · intro hall n hn _
+    exact hall (3*n) (by omega)
+  · intro h
+    let P : ℕ → Prop := fun n => Meets n 1
+    have inv (n : ℕ) : P (step n) ↔ P n :=
+      ⟨fun p => meets_trans (meets_step n) p, fun p => meets_trans (meets_symm (meets_step n)) p⟩
+    have hm (n : ℕ) (hn : 0<n) (hp : P n) : P (3*n) :=
+      (meets_one_iff _).mpr (h n hn ((meets_one_iff n).mp hp))
+    intro n hn
+    exact (meets_one_iff n).mp (three_forward_generates P inv hm ⟨0,0,rfl⟩ n hn)
+
+/-- On the class 1 modulo 64, five shortcut steps convert tripling into an
+adjacent-pair comparison, preserving both merger components. -/
+theorem triple_cell64_adjacent (k : ℕ) :
+    Meets (64*k+1) (3*(64*k+1)) ↔ Meets (54*k+1) (54*k+2) := by
+  have h1 := high_bit 1 5 (2*k)
+  have h3 := high_bit 3 5 (6*k)
+  rw [show orbit 1 5 = 2 by decide, show odds 1 5 = 3 by decide] at h1
+  rw [show orbit 3 5 = 1 by decide, show odds 3 5 = 2 by decide] at h3
+  have a : Meets (64*k+1) (54*k+2) := ⟨5,0,by change orbit _ 5 = 54*k+2; rw [show 64*k+1 = 1+2^5*(2*k) by ring, h1]; ring⟩
+  have b : Meets (3*(64*k+1)) (54*k+1) := ⟨5,0,by change orbit _ 5 = 54*k+1; rw [show 3*(64*k+1) = 3+2^5*(6*k) by ring, h3]; ring⟩
+  exact ⟨fun h => meets_trans (meets_symm b) (meets_trans (meets_symm h) a),
+    fun h => meets_trans a (meets_trans (meets_symm h) (meets_symm b))⟩
+
+/-- Two ordinary steps convert the adjacent pair starting at 4u+1 into the
+adjacent pair starting at 3u+1, on both complete affine families. -/
+theorem adjacent_three_four (u : ℕ) :
+    Meets (3*u+1) (3*u+2) ↔ Meets (4*u+1) (4*u+2) := by
+  have h1 := high_bit 1 2 u
+  have h2 := high_bit 2 2 u
+  rw [show orbit 1 2 = 1 by decide, show odds 1 2 = 1 by decide] at h1
+  rw [show orbit 2 2 = 2 by decide, show odds 2 2 = 1 by decide] at h2
+  have a : Meets (4*u+1) (3*u+1) :=
+    ⟨2,0,by change orbit _ 2 = 3*u+1; rw [show 4*u+1 = 1+2^2*u by ring, h1]; ring⟩
+  have b : Meets (4*u+2) (3*u+2) :=
+    ⟨2,0,by change orbit _ 2 = 3*u+2; rw [show 4*u+2 = 2+2^2*u by ring, h2]; ring⟩
+  exact ⟨fun h => meets_trans a (meets_trans h (meets_symm b)),
+    fun h => meets_trans (meets_symm a) (meets_trans h b)⟩
+
+theorem triple_cell64_adjacent128 (k : ℕ) :
+    Meets (64*k+1) (3*(64*k+1)) ↔ Meets (128*k+1) (128*k+2) := by
+  have h1 := adjacent_three_four (18*k)
+  have h2 := adjacent_three_four (24*k)
+  have h3 := adjacent_three_four (32*k)
+  simp only [← Nat.mul_assoc] at h1 h2 h3
+  exact (triple_cell64_adjacent k).trans (h1.trans (h2.trans h3))
+
+/-- On an odd residue class, both adjacent starts land on the corresponding
+smaller adjacent starts in exactly seven shortcut steps. -/
+theorem adjacent_odd_descent (k : ℕ) :
+    orbit (54*(128*k+19)+1) 7 = 54*(27*k+4)+1 ∧
+    orbit (54*(128*k+19)+2) 7 = 54*(27*k+4)+2 := by
+  have a := high_bit 1027 7 (54*k)
+  have b := high_bit 1028 7 (54*k)
+  rw [show orbit 1027 7 = 217 by decide, show odds 1027 7 = 3 by decide] at a
+  rw [show orbit 1028 7 = 218 by decide, show odds 1028 7 = 3 by decide] at b
+  constructor
+  · rw [show 54*(128*k+19)+1 = 1027+2^7*(54*k) by ring, a]; ring
+  · rw [show 54*(128*k+19)+2 = 1028+2^7*(54*k) by ring, b]; ring
+
+/-- A fixed pair of clock words transports the all-member test to a single
+adjacent pair per block of 2^23 positive integers. -/
+theorem triple_cell4096_adjacent_shifted (k : ℕ) :
+    Meets (4096*k+1) (3*(4096*k+1)) ↔
+    Meets (2^23*k+6464) (2^23*k+6465) := by
+  have u := high_bit 6464 23 k
+  have v := high_bit 6465 23 k
+  have a := high_bit 1 7 (27*k)
+  have b := high_bit 2 7 (27*k)
+  rw [show orbit 6464 23 = 2 by decide, show odds 6464 23 = 7 by decide] at u
+  rw [show orbit 6465 23 = 1 by decide, show odds 6465 23 = 6 by decide] at v
+  rw [show orbit 1 7 = 2 by decide, show odds 1 7 = 4 by decide] at a
+  rw [show orbit 2 7 = 1 by decide, show odds 2 7 = 3 by decide] at b
+  have h1 : Meets (2^23*k+6464) (3456*k+1) := by
+    refine ⟨23,7,?_⟩
+    rw [Nat.add_comm (2^23*k), show 3456*k+1 = 1+2^7*(27*k) by ring, u, a]; ring
+  have h2 : Meets (2^23*k+6465) (3456*k+2) := by
+    refine ⟨23,7,?_⟩
+    rw [Nat.add_comm (2^23*k), show 3456*k+2 = 2+2^7*(27*k) by ring, v, b]; ring
+  have test := triple_cell64_adjacent (64*k)
+  simp only [← Nat.mul_assoc] at test
+  exact test.trans ⟨fun h => meets_trans h1 (meets_trans h (meets_symm h2)),
+    fun h => meets_trans (meets_symm h1) (meets_trans h h2)⟩
+
+/-- The directed tripling edge at 16k+1 has the same target component as 32k+1. -/
+theorem triple_cell16_binary_extension (k : ℕ) : Meets (3*(16*k+1)) (32*k+1) := by
+  have a := high_bit 3 4 (3*k)
+  have b := high_bit 1 5 k
+  rw [show orbit 3 4 = 2 by decide, show odds 3 4 = 2 by decide] at a
+  rw [show orbit 1 5 = 2 by decide, show odds 1 5 = 3 by decide] at b
+  refine ⟨4,5,?_⟩
+  rw [show 3*(16*k+1) = 3+2^4*(3*k) by ring, show 32*k+1 = 1+2^5*k by ring, a, b]; ring
+
 end CollatzUpperBit
