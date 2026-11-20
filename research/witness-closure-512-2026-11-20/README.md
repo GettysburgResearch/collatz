@@ -12,6 +12,14 @@ or external theorem about Collatz convergence is assumed.
 
 ## Continuation results
 
+The subsequent [direct reverse-tripling packet](../witness-global-closure-20261121/README.md)
+reviews the newer repository criterion, independently reconstructs its
+equivalence with this exact 512-residue assertion, and adds complete-witness
+rewrites, least-failure bounds and conditional descending certificates.
+Its source-qualified global equivalence uses PR146's finite cover; the
+standalone integer-algebra dependencies of the original results below are
+unchanged. The full assertion remains OPEN.
+
 The following notes extend this packet without changing the OPEN status of
 the main claim:
 
