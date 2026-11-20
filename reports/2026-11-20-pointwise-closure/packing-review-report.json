@@ -1,0 +1,16 @@
+{
+  "exact_integer_checks": {
+    "2(12/7)^3 < 11": true,
+    "2640^50 < 2^608": true,
+    "3^147 < 2^233": true,
+    "3^39 > 2^60": true,
+    "3^5 < 2^8": true,
+    "5^50 < 2^119": true,
+    "Chernoff certificate": true
+  },
+  "scope": "Finite scalar certificates only; all-width induction independently reviewed in prose.",
+  "source_commit": "fe2247fcd7730c15430941a7b6e011d006d41d84",
+  "source_path": "research/novel-swarm-20261030/pass4/WINDOWS.md",
+  "source_sha256": "093298c20d4e93fcc11af5d22f3bb59a1b0372af038e54008ba1b1e9cebbb86d",
+  "status": "PASS"
+}

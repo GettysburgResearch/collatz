@@ -1,0 +1,30 @@
+{
+  "finite_occupancy": {
+    "distinct_windows": 4239,
+    "inequality_checks": 207711,
+    "odd_starts_below": 3000
+  },
+  "residue_periods": {
+    "cap_comparisons": 294,
+    "coset_states": 65532,
+    "moduli_exponents": [
+      3,
+      16
+    ],
+    "sha256": "37536110de6c5c8ff2e405ba96c1de4bc603c0870de21df93c7ae43e5ce95301"
+  },
+  "scope": "finite exact replays only; the universal and asymptotic claims have written proofs",
+  "separated_actual_windows": {
+    "actual_state_checks": 10584,
+    "caps": [
+      2,
+      8
+    ],
+    "moduli_exponents": [
+      3,
+      8
+    ],
+    "windows": 504
+  },
+  "status": "PASS"
+}

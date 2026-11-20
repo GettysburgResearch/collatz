@@ -1,0 +1,20 @@
+{
+  "checker_sha256": "ebf0fcf5c1b6aee069d4735d10ad8c3be8b0c92e548b1e522d7b8e0b96efdfe2",
+  "domain_controls": [
+    {
+      "case": "empty",
+      "rejected_by": "nonempty arm list"
+    },
+    {
+      "case": "zero_slope",
+      "rejected_by": "positive integer slope"
+    },
+    {
+      "case": "zero_residual",
+      "rejected_by": "positive integer common residual"
+    }
+  ],
+  "scope": "Narrow independent verification of final checker-domain delta.",
+  "status": "PASS",
+  "valid_zero_depth_lift_edges": 8
+}

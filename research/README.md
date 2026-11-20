@@ -22,6 +22,7 @@ Local source collections are also available for detailed exploration:
 
 | Collection | What is there | How to interpret its status |
 |---|---|---|
+| [Ordinary sparse visits and local merger membership](pointwise-closure-20261120/README.md) | Proposed sparse-return and growing-popcount bounds, an exact affine certificate membership criterion, and the stopping-time burden of the inverse potential. | Scoped written proofs and bounded replays with separate agent reconstructions; the pointwise global steps remain open. |
 | [Critical mass and inverse frontiers](astra-critical-mass/README.md) | Proof attempts, finite-time bounds, physical merging, inverse pruning and counterexamples. | Use the mass/rank topic guides to identify reviewed clauses; author-stage labels and failed global attempts are retained. |
 | [Section renewal and moving ranks](astra-three-routes/README.md) | Complementary operator, source-height, coefficient and rank constructions, including distinct alternative continuation packets. | A shared directory or experiment number does not identify one theorem. Use the specific path, map and rank named by the guide. |
 | [External Collatz dossier](external/mazur-2026/README.md) | External result summaries, source evidence, local analyses and proposed strengthening routes. | External source-qualified theorems, native reviewed components and open strengthening hypotheses have different statuses. |

@@ -1,0 +1,38 @@
+{
+  "normal_and_optimized_identical": true,
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/pointwise-closure-20261120/check_growing_complexity.py"
+      ],
+      "duration_seconds": 0.499,
+      "interpreter": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "returncode": 0,
+      "started_at": "2026-11-20T18:20:29.456074+00:00",
+      "stderr": "",
+      "stdout_sha256": "c6b3da02143e1746c5c732b0ea90fc3648fd3166ac3a6e6615f0dc687a8ed27a"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-OO",
+        "-B",
+        "research/pointwise-closure-20261120/check_growing_complexity.py"
+      ],
+      "duration_seconds": 0.565,
+      "interpreter": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "returncode": 0,
+      "started_at": "2026-11-20T18:20:29.955496+00:00",
+      "stderr": "",
+      "stdout_sha256": "c6b3da02143e1746c5c732b0ea90fc3648fd3166ac3a6e6615f0dc687a8ed27a"
+    }
+  ],
+  "script": "research/pointwise-closure-20261120/check_growing_complexity.py",
+  "script_sha256": "3ad32196e7c0d677e42c087627a8679729d8058788a19aa091acb7ea799078e1"
+}

@@ -1,0 +1,56 @@
+{
+  "carry": {
+    "cuts": 4101,
+    "largest_source_bitlength": 20000,
+    "sha256": "212cd44b2d5962fb1890036085d4d3fe43f7a4125abddbb29c51bcb78105bc01",
+    "sources": 2083,
+    "state_identity_checks": 57261
+  },
+  "controls": {
+    "invalid_strengthenings_rejected": 2,
+    "post_cut_counterexample": [
+      257,
+      193,
+      145,
+      109,
+      41
+    ],
+    "strict_cut_counterexample": [
+      5,
+      1
+    ]
+  },
+  "elementary_spectrum": {
+    "checked_pairs": 401401,
+    "input_bit_position_max": 400,
+    "positive_power_solutions": [
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        9,
+        2
+      ],
+      [
+        3,
+        9,
+        1
+      ]
+    ],
+    "power_max": 1000
+  },
+  "occupancy": {
+    "distinct_windows": 22218,
+    "inequality_checks": 757454,
+    "max_observed_counts": {
+      "2": 4,
+      "3": 12
+    },
+    "odd_starts_below": 10000
+  },
+  "scope": "finite integer replays only; external S-unit theorem not executed",
+  "status": "PASS"
+}
