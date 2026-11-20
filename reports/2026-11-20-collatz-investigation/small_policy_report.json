@@ -1,0 +1,17 @@
+{
+  "certificate_sha256": "9a9545c9cfc2e6e178b773c9ce255ef4b183e96cc3037e97bb67eb1050f9d6df",
+  "matrix_denominator": 300,
+  "maximum_bias_expression": "96857990939/50000000000",
+  "minimum_bias_expression": "145286986313/75000000000",
+  "minimum_integer_lower_margin": 47945252000,
+  "minimum_integer_upper_margin": 126027183000,
+  "policy_rows": 486,
+  "positive_fifth_matrix_power": true,
+  "scope": "Finite locally Haar stationary-cost certificate only",
+  "stationary_cells": 162,
+  "status": "PASS",
+  "strict_stationary_mean_lower": "1937/1000",
+  "strict_stationary_mean_upper": "969/500",
+  "zero_bias_mutation_rejected": "Upper drift bound failed at cell 1",
+  "zero_labels_mutation_rejected": "Illegal designated exponent at phase 1"
+}

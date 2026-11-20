@@ -1,0 +1,28 @@
+{
+  "all_rows_pass": true,
+  "amax": 10,
+  "certificate": "credit_13_6.json.gz",
+  "certificate_sha256": "9b3dcf42686e7598ea11d898bcccfbb7131609ccc49b99c4fa0dca83b918b774",
+  "digits": 12,
+  "lifts_of_selected_actions": 1062882,
+  "maximum_potential": 66,
+  "minimum_credit_slack": 0,
+  "minimum_terminal_slack": 1,
+  "modulus": 531441,
+  "p": 13,
+  "q": 6,
+  "rows": 354294,
+  "selected_action_counts": {
+    "1": 93315,
+    "2": 93315,
+    "3": 58915,
+    "4": 58915,
+    "5": 23954,
+    "6": 23954,
+    "7": 829,
+    "8": 829,
+    "9": 134,
+    "10": 134
+  },
+  "zero_potential_rejected": "No valid all-lift action at residue 5"
+}
