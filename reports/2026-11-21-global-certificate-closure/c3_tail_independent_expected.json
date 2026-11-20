@@ -1,0 +1,44 @@
+{
+  "backward_witness_splices": 40,
+  "bounded_recurrence_identity_replays": 112,
+  "independent_integer_induction_bases": [
+    {
+      "a": 1,
+      "e": 83,
+      "scaled_difference_at_w1": 8342703733783518841193320281
+    },
+    {
+      "a": 1,
+      "e": 84,
+      "scaled_difference_at_w1": 10442141145568944250345157945
+    },
+    {
+      "a": 2,
+      "e": 86,
+      "scaled_difference_at_w1": 74172229681554413854977201667
+    },
+    {
+      "a": 2,
+      "e": 87,
+      "scaled_difference_at_w1": 274770602383570219708184640411
+    }
+  ],
+  "prescribed_rank_source_constructions": 20,
+  "resource_exchange": {
+    "actual_exchange_cases": 4,
+    "checked_PQ_calls": 624,
+    "rejected_low_end_exponents": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "valid_26_call_chains": 24
+  },
+  "reviewed_sha256": {
+    "C3_ARBITRARY_TAIL_DESCENT.md": "ee2cd5973d50b88af5056be3af654d1e287ff8f0a831eaa335fef04f64552c11",
+    "check_c3_arbitrary_tail.py": "d11595cace6337f12304445a1920351c198a1dbed40bf76131e1bfb7245919e2"
+  },
+  "scope": "The guarded arbitrary-tail reduction and nonvacuity pass; universal closure is not proved",
+  "status": "PASS_SCOPED_REVIEW"
+}

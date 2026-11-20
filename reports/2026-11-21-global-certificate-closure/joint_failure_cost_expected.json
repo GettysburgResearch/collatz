@@ -1,0 +1,129 @@
+{
+  "cells": 464,
+  "words": 55,
+  "common_modulus": 1866240,
+  "covered_residues": 497664,
+  "five_queries": 219,
+  "sharp_five_query_ratio": "3669265/2239",
+  "sharp_endpoint_ratio": "13403/14119",
+  "maximizer": {
+    "ratio": "3669265/2239",
+    "word": "W17",
+    "cell": [
+      8640,
+      2239,
+      0
+    ],
+    "position": 3,
+    "antecedent": [
+      14155776,
+      3669265
+    ]
+  },
+  "bounded_execution_replays": [
+    {
+      "source": 1,
+      "levels": 0,
+      "queries": 0,
+      "max_query": 0,
+      "ordinary_replay_steps": 0
+    },
+    {
+      "source": 2,
+      "levels": 1,
+      "queries": 0,
+      "max_query": 0,
+      "ordinary_replay_steps": 1
+    },
+    {
+      "source": 5,
+      "levels": 1,
+      "queries": 1,
+      "max_query": 1,
+      "ordinary_replay_steps": 4
+    },
+    {
+      "source": 7,
+      "levels": 3,
+      "queries": 1,
+      "max_query": 1,
+      "ordinary_replay_steps": 11
+    },
+    {
+      "source": 23,
+      "levels": 4,
+      "queries": 2,
+      "max_query": 7,
+      "ordinary_replay_steps": 11
+    },
+    {
+      "source": 95,
+      "levels": 3,
+      "queries": 3,
+      "max_query": 19,
+      "ordinary_replay_steps": 67
+    },
+    {
+      "source": 239,
+      "levels": 4,
+      "queries": 3,
+      "max_query": 85,
+      "ordinary_replay_steps": 35
+    },
+    {
+      "source": 2239,
+      "levels": 9,
+      "queries": 4,
+      "max_query": 3669265,
+      "ordinary_replay_steps": 89
+    },
+    {
+      "source": 5119,
+      "levels": 9,
+      "queries": 4,
+      "max_query": 8387857,
+      "ordinary_replay_steps": 76
+    },
+    {
+      "source": 7999,
+      "levels": 15,
+      "queries": 4,
+      "max_query": 13106449,
+      "ordinary_replay_steps": 121
+    },
+    {
+      "source": 14119,
+      "levels": 8,
+      "queries": 4,
+      "max_query": 4021,
+      "ordinary_replay_steps": 79
+    },
+    {
+      "source": 299239,
+      "levels": 13,
+      "queries": 7,
+      "max_query": 31955,
+      "ordinary_replay_steps": 66
+    },
+    {
+      "source": 1000001,
+      "levels": 16,
+      "queries": 6,
+      "max_query": 506257,
+      "ordinary_replay_steps": 77
+    }
+  ],
+  "rejected_controls": [
+    "missing infinite residue cell",
+    "nonpositive inverse exponent",
+    "ternary nonunit compiler source",
+    "membership boolean in place of ordinary certificate",
+    "reversed physical-five direction",
+    "false ordinary target edge"
+  ],
+  "reverse_cost_from_PR163": "2025217/23",
+  "generic_five_to_reverse_budget": "10126085/23",
+  "hard_rank_five_two_way_budget_product": "10126085/92",
+  "global_theorem_proved": false,
+  "status": "exact conditional all-source compiler; physical five queries remain open"
+}

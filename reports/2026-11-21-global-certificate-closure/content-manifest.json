@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/c3_arbitrary_tail_expected.json",
+      "sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/c3_tail_independent_expected.json",
+      "sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_expected.json",
+      "sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_independent_expected.json",
+      "sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_expected.json",
+      "sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_independent_expected.json",
+      "sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/joint_failure_cost_expected.json",
+      "sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/joint_failure_independent_expected.json",
+      "sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_expected.json",
+      "sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_independent_expected.json",
+      "sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/smaller_five_expected.json",
+      "sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/smaller_five_independent_expected.json",
+      "sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/source_metadata_snapshot.json",
+      "sha256": "0257251c850afb43bc9256129660233a1b202938a5b6d4b9ebc9817125e0b21d"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/unbounded_first_one_expected.json",
+      "sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/unbounded_transport_independent_expected.json",
+      "sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d"
+    },
+    {
+      "path": "reports/2026-11-21-global-certificate-closure/verify_packet.py",
+      "sha256": "7237c0e63b28cc4fe150d593b50cc2d3f56d7b5ac7caf4de8337ac940478050d"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/C3_ARBITRARY_TAIL_DESCENT.md",
+      "sha256": "ee2cd5973d50b88af5056be3af654d1e287ff8f0a831eaa335fef04f64552c11"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/FIRST_TERNARY_EXIT.md",
+      "sha256": "1fda081599f16e94f6c3c2692fea949864ca4a9b0aa91a01b42b1860112ffe06"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/INVERSE_CARRY_SELECTOR.md",
+      "sha256": "b2cb40ac4cde2c7b16f4d2121bf073fac1f1b659760502a3f8e4f75d0964e7bf"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/JOINT_FAILURE_CERTIFICATE_COSTS.md",
+      "sha256": "b7cb2190fb0b726a06f061c2c8b9ca9f0aadcc2ba6b9ff686145154461ff358d"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/JOINT_FAILURE_INDEPENDENT_REVIEW.md",
+      "sha256": "97c1e35e4736bcdd40aa90444f6bf421c36c1a098e8b283481a3a33cf978d06f"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/LATEST_TRANSPORT_COMPARISON.md",
+      "sha256": "95a4b4382edeb7c40bbc600cfe3400ff164a0040ffc023b50601c44311a86a50"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/LATE_PR164_REVIEW.md",
+      "sha256": "2d40142b593b1d609899536bb26c57a60ff619f894fa08035542b13cbfcdbb09"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/NONHOMOGENEOUS_BOUNDARY.md",
+      "sha256": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/PR170_CARRY_AND_PHASE_COMPARISON.md",
+      "sha256": "454bc680c250162aed36354b6e4705d73a65e20f31e61580643b5d7e1a59691f"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/README.md",
+      "sha256": "77af3857f057b3f5e516dadb45e8709acdfae89a13ba682b01c6d7c2a68d9e3a"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/REVIEW_C3_ARBITRARY_TAIL_DESCENT.md",
+      "sha256": "16ecc3fbb390f1a162b629fb3ecf8b1f8d66bb6209c959d8de390f0f00f46cf1"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/REVIEW_FIRST_TERNARY_EXIT.md",
+      "sha256": "d89d46cac9d9fd40c5f6b6863bd910564086b55df023c5f5317a161b088bb5d9"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/REVIEW_INVERSE_CARRY_SELECTOR.md",
+      "sha256": "cba421f2ee6acc72d865b082550a0c7527ae6812b890b7ba0a56c109d915f05a"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/REVIEW_NONHOMOGENEOUS_BOUNDARY.md",
+      "sha256": "ab38176af2072d30ac2a891c0b3e9bebfcab9f1c13abc9a99a846107c8139150"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/REVIEW_SMALLER_FIVE_FAILURES.md",
+      "sha256": "2224341e8a3640fc38bca7898575598185b66f40eddbc35aebc552dc6bf2e6b0"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/REVIEW_UNBOUNDED_TRANSPORT.md",
+      "sha256": "41120e4af4400ae42e321027cfc95cc979b703565455d7dacb54ee1126693802"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/SMALLER_FIVE_FAILURES.md",
+      "sha256": "f9ee7dcac226d46816b3ac91ce88996f3932906672084a28063c284eb8e3736c"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/SOURCES.md",
+      "sha256": "f9f02af555b235c3fe8b96bd5e464a915079dfb13a5bd9afaebc5bfff6d7ea34"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/UNBOUNDED_FIRST_ONE_TRANSPORT.md",
+      "sha256": "24dfeff2089771c4ac03587bdb68a2cae6886399230dc38df2746f22092bcd23"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/base_119_ordinary_prefix.json",
+      "sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_c3_arbitrary_tail.py",
+      "sha256": "d11595cace6337f12304445a1920351c198a1dbed40bf76131e1bfb7245919e2"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_c3_tail_independent_review.py",
+      "sha256": "79b4c2d9d91eb95ba3714343ef2a188d381184d185d88860a2fd13ed80d5b053"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_first_ternary_exit.py",
+      "sha256": "26790b8c8250b3cc97352090e649ea3d4c5a0f2970552fb696af0647c548cf06"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_inverse_carry_selector.py",
+      "sha256": "6050dfbb71447b1ca01b762e8632c8ce507f85cb7da5388331a30747e04de356"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_joint_failure_costs.py",
+      "sha256": "d83caa500af3f42a0e9fd585aee932d43ded83202664cee1088fb6dfa5b4eee3"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_joint_failure_costs_independent.py",
+      "sha256": "c9dc3eb8fbdc35af70a139d746b0cb9862628ab3d5c0cb87e128547ab5f380fb"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_nonhomogeneous_boundary.py",
+      "sha256": "592f17558fc0280576fc1d13114dc4e312e680809cd54e665ff3fdd3813629a9"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_smaller_five_failures.py",
+      "sha256": "2fff9fa3c5acc6c77119379c1503a978690b5558a17e9f8a160dae370ce1739e"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/check_unbounded_first_one_transport.py",
+      "sha256": "8b5227e5579769aab6edf823fa6387c397ac17aa22f7a40ba360ddd906c1a2a4"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/directed_five_certificate.json",
+      "sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/review_first_ternary_exit.py",
+      "sha256": "ded2de6dec39d7e328d16882d9ed92f9fb2dfc0c9e5f44c5d235a0f461d9068e"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/review_inverse_carry_selector.py",
+      "sha256": "d993d44669eac5ffc5c96151df7b8890aed6fda937aaf9f3febbc0a4785bea10"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/review_nonhomogeneous_boundary.py",
+      "sha256": "794318d863084ff04978206acdc5db28fffdcb520b788e6f2002474467041dcc"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/review_smaller_five_failures.py",
+      "sha256": "184610bb2af9d9e3be726f931ce474d5e2a06c874ba2a6b53fc7a37f476392e6"
+    },
+    {
+      "path": "research/global-certificate-closure-20261121/review_unbounded_transport.py",
+      "sha256": "1648576b98a243895d9e5ccfe67b30dc195a65e5308c94feb508fedba51522ce"
+    }
+  ]
+}

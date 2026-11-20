@@ -1,0 +1,12 @@
+{
+  "independent_binary_cylinder_prefixes": 4,
+  "independent_rational_cycles": 2,
+  "input_sha256": {
+    "SMALLER_FIVE_FAILURES.md": "f9ee7dcac226d46816b3ac91ce88996f3932906672084a28063c284eb8e3736c",
+    "base_119_ordinary_prefix.json": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+    "check_smaller_five_failures.py": "2fff9fa3c5acc6c77119379c1503a978690b5558a17e9f8a160dae370ce1739e"
+  },
+  "scope": "SF1-SF4, exact paths/guards/bases; H2 imported at its stated pin; no full Collatz proof",
+  "status": "PASS",
+  "stored_base_transitions_verified": 136
+}

@@ -1,0 +1,128 @@
+{
+  "all_lift_cover": {
+    "all_lift_query_budget": "3669265/2239",
+    "cells": 464,
+    "common_modulus": 1866240,
+    "covered_residues": 497664,
+    "endpoint_maximum": "13403/14119",
+    "query_appearances": 219,
+    "sharp_witness": {
+      "cell": [
+        8640,
+        2239,
+        0
+      ],
+      "query": 3669265,
+      "source": 2239,
+      "word": "W17"
+    },
+    "words": 55
+  },
+  "conditional_queries_proved_universally": false,
+  "frozen_certificate_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+  "generic_return_cost": "10126085/23",
+  "independent_conditional_program_replays": [
+    {
+      "largest_query": 0,
+      "levels": 0,
+      "ordinary_clocks": 0,
+      "queries": 0,
+      "source": 1
+    },
+    {
+      "largest_query": 0,
+      "levels": 1,
+      "ordinary_clocks": 1,
+      "queries": 0,
+      "source": 2
+    },
+    {
+      "largest_query": 1,
+      "levels": 1,
+      "ordinary_clocks": 4,
+      "queries": 1,
+      "source": 5
+    },
+    {
+      "largest_query": 1,
+      "levels": 3,
+      "ordinary_clocks": 11,
+      "queries": 1,
+      "source": 7
+    },
+    {
+      "largest_query": 7,
+      "levels": 4,
+      "ordinary_clocks": 11,
+      "queries": 2,
+      "source": 23
+    },
+    {
+      "largest_query": 19,
+      "levels": 3,
+      "ordinary_clocks": 67,
+      "queries": 3,
+      "source": 95
+    },
+    {
+      "largest_query": 85,
+      "levels": 4,
+      "ordinary_clocks": 35,
+      "queries": 3,
+      "source": 239
+    },
+    {
+      "largest_query": 3669265,
+      "levels": 9,
+      "ordinary_clocks": 89,
+      "queries": 4,
+      "source": 2239
+    },
+    {
+      "largest_query": 8387857,
+      "levels": 9,
+      "ordinary_clocks": 76,
+      "queries": 4,
+      "source": 5119
+    },
+    {
+      "largest_query": 13106449,
+      "levels": 15,
+      "ordinary_clocks": 121,
+      "queries": 4,
+      "source": 7999
+    },
+    {
+      "largest_query": 4021,
+      "levels": 8,
+      "ordinary_clocks": 79,
+      "queries": 4,
+      "source": 14119
+    },
+    {
+      "largest_query": 31955,
+      "levels": 13,
+      "ordinary_clocks": 66,
+      "queries": 7,
+      "source": 299239
+    },
+    {
+      "largest_query": 506257,
+      "levels": 16,
+      "ordinary_clocks": 77,
+      "queries": 6,
+      "source": 1000001
+    }
+  ],
+  "inverse_cycle_padding_controls": [
+    "I2(1)=1",
+    "I1(2)=1"
+  ],
+  "new_thirteen_interface_budget_product": "10126085/299",
+  "old_forward_interface_budget_product": "10126085/92",
+  "reviewed_files": {
+    "JOINT_FAILURE_CERTIFICATE_COSTS.md": "b7cb2190fb0b726a06f061c2c8b9ca9f0aadcc2ba6b9ff686145154461ff358d",
+    "check_joint_failure_costs.py": "d83caa500af3f42a0e9fd585aee932d43ded83202664cee1088fb6dfa5b4eee3"
+  },
+  "status": "PASS; scoped independent review, no global closure"
+}
