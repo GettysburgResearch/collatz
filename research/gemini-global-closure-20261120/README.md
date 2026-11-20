@@ -143,6 +143,25 @@ lower-contact constructions, and the native partial-theta program remain open.
 
 ## Reproduce and review
 
+### Follow-up: negative seed drift reverses after actual transport
+
+The explicit fixed input `f0(u)=1/[u(u+1)]` on `U` has negative initial
+psi-drift, but its actual drift from return 9 to 10 is strictly positive.
+An exact integer-interval certificate includes every omitted original source
+through an analytic tail bound. It identifies the nonzero transport covariance
+that a fresh-source calculation would discard. The same note reduces the open
+occupation estimate to a finite triangular array of actual source histories;
+the omitted-source contribution is already `O(1)`.
+
+[Full-source drift certificate and remaining signed sum](FIXED_SOURCE_DRIFT.md)
+and [the direct global follow-up attempts](../../reports/2026-11-20-gemini-closure/FOLLOWUP.md).
+This does not rule out a different bounded corrector or an amortized bound.
+Run the additional standalone checker with
+`python -X utf8 -B research/gemini-global-closure-20261120/check_transported_drift.py`;
+the original three-checker bundle below retains its original scope.
+
+### Original packet and replays
+
 The [unmodified input archive](../../archive/gemini-proposals-20261120/README.md)
 preserves all fifteen supplied files and their hashes. Its original five
 scripts passed, and the original receipt was reproduced byte-for-byte. That

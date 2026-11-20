@@ -1,0 +1,44 @@
+{
+  "atanh_terms": 32,
+  "carrier_319_density_amplification_lower_bound": "179.503567796332",
+  "carrier_original_path": [
+    27,
+    31,
+    121,
+    91,
+    103,
+    175,
+    445,
+    334,
+    167,
+    319,
+    1822
+  ],
+  "finite_part_return_9_to_10_interval": [
+    "0.000210335930",
+    "0.000210335931"
+  ],
+  "initial_complete_drift_interval": [
+    "-0.209006853156",
+    "-0.188077839702"
+  ],
+  "initial_drift_source_cutoff": 256,
+  "initial_unsafe_states_under_larger_cutoff": 94081,
+  "input": "f0(u)=1/[u(u+1)] on U; zero elsewhere",
+  "integer_interval_scale": "100000000000000000000000000000000",
+  "return_9_distinct_retained_endpoints": 4401,
+  "return_9_retained_mass_lower_bound": "0.005363001119",
+  "return_9_to_10_complete_drift_interval": [
+    "0.000132428698",
+    "0.000217170924"
+  ],
+  "scope": "whole-source signs for the explicit fixed f0; two specified return times only; no all-time decay claim",
+  "source_sha256": {
+    "FIXED_SOURCE_DRIFT.md": "64e6e22f7a32bf975107c75158b4719af8aa7ff21b12ac35c307600603f74d98",
+    "check_transported_drift.py": "2a6aac718e199a3660a9c4d5b6b3c45107a045f916688fd95b9bbd59a2fb3312"
+  },
+  "status": "PASS",
+  "tail_proof": "sum f_tail<=1/(M+1); psi-tail<=g(M+1)/(M+1)+1/[(M+1)log(M+1)]; actual j-return additive bound",
+  "transport_covariance_lower_bound": "0.002149752028",
+  "transported_drift_source_cutoff": 262144
+}
