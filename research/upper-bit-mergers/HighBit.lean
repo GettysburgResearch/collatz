@@ -1038,4 +1038,297 @@ theorem four_step_exit (m k t u : ℕ) (hn : m + 7 = 8 ^ k * t)
   have hg := four_step_cell 8 u (Or.inl rfl)
   simp only [orbit_add, odds_add, hu, hv, hf.1, hf.2, hg.1, hg.2, ho, hl'.2, and_self]
 
+private theorem mirror_one_fixed (h : ℕ) : mirrorOrbit 1 h = 1 ∧ mirrorOdds 1 h = h := by
+  induction h with
+  | zero => simp [mirrorOrbit, mirrorOdds]
+  | succ h ih => simp [mirrorOrbit, mirrorOdds, ih.1, ih.2, mirrorStep]
+
+/-- An ordinary source from the phase at -1 can be synchronized with a
+source emerging from any number of negative-five blocks. -/
+theorem fixed_point_exit (m n k t u : ℕ) (hn : n + 5 = 8 ^ k * t)
+    (hm : m + 1 = 2 ^ (2 * k + 1) * t) (he : 9 ^ k * t = 128 * u + 9) :
+    orbit n (3 * k + 7) = 27 * u + 2 ∧
+    orbit m (2 * k + 1 + 7) = 27 * u + 2 ∧
+    odds n (3 * k + 7) = 2 * k + 3 ∧ odds m (2 * k + 1 + 7) = 2 * k + 3 := by
+  obtain ⟨hy, hyo⟩ := five_checkpoint n k t hn
+  obtain ⟨hmv, hmo⟩ := mirror_lift m 1 (2 * k + 1) t (by decide) hm
+  simp only [(mirror_one_fixed (2 * k + 1)).1, (mirror_one_fixed (2 * k + 1)).2] at hmv hmo
+  have hpow : 3 ^ (2 * k + 1) * t = 3 * (9 ^ k * t) := by
+    rw [pow_succ, pow_mul]
+    ring
+  rw [hpow, he] at hmv
+  have hupper : orbit n (3 * k) = 4 + 2 ^ 7 * u := by omega
+  have hlower : orbit m (2 * k + 1) = 26 + 2 ^ 7 * (3 * u) := by omega
+  have hab : orbit 4 7 = 2 ∧ odds 4 7 = 3 := by decide
+  have hcd : orbit 26 7 = 2 ∧ odds 26 7 = 2 := by decide
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · rw [orbit_add n (3 * k) 7, hupper, high_bit, hab.1, hab.2]
+    omega
+  · rw [orbit_add m (2 * k + 1) 7, hlower, high_bit, hcd.1, hcd.2]
+    omega
+  · rw [odds_add n (3 * k) 7, hyo, hupper, odds_high_bit, hab.2]
+  · rw [odds_add m (2 * k + 1) 7, hmo, hlower, odds_high_bit, hcd.2]
+
+theorem fixed_point_source_smaller (m n k t : ℕ) (hk : 2 ≤ k) (ht : 0 < t)
+    (hn : n + 5 = 8 ^ k * t) (hm : m + 1 = 2 ^ (2 * k + 1) * t) : m < n := by
+  obtain ⟨j, rfl⟩ := Nat.exists_eq_add_of_le hk
+  have he : 2 ^ (2 * (2 + j) + 1) = 32 * 4 ^ j := by
+    rw [show 2 * (2 + j) + 1 = 5 + 2 * j by omega, pow_add, pow_mul]
+    rfl
+  have hp : 8 ^ (2 + j) = 64 * 8 ^ j := by rw [pow_add]; rfl
+  have hh : 4 ^ j * t ≤ 8 ^ j * t := Nat.mul_le_mul_right t (Nat.pow_le_pow_left (by decide) j)
+  have hpos : 0 < 4 ^ j * t := by positivity
+  rw [he, Nat.mul_assoc] at hm
+  rw [hp, Nat.mul_assoc] at hn
+  omega
+
+theorem fixed_point_exit_k_one (n t u : ℕ) (hn : n + 5 = 8 * t)
+    (he : 9 * t = 128 * u + 9) : orbit n 4 < n := by
+  have ht : t % 2 = 1 := by omega
+  have hres : n = 3 + 2 ^ 4 * (t / 2) := by omega
+  have h0 : orbit 3 4 = 2 ∧ odds 3 4 = 2 := by decide
+  rw [hres, high_bit, h0.1, h0.2]
+  omega
+
+private theorem meets_double (x : ℕ) : Meets x (2 * x) := by
+  exact ⟨0, 1, by simp [orbit, step]⟩
+
+/-- All affine edges of the single shape t,5t+1 suffice for full Collatz.
+The iterated map on both arms is the positive 3x+1 shortcut map. -/
+theorem collatz_iff_five_ray :
+    (∀ n : ℕ, 0 < n → ∃ i, orbit n i = 1) ↔
+    (∀ t : ℕ, 0 < t → Meets t (5 * t + 1)) := by
+  constructor
+  · intro hc t ht
+    exact meets_trans ((meets_one_iff _).2 (hc t ht))
+      (meets_symm ((meets_one_iff _).2 (hc (5 * t + 1) (by omega))))
+  · intro edges n hn
+    apply (meets_one_iff n).1
+    induction n using Nat.strong_induction_on with
+    | h n ih =>
+      by_cases h1 : n = 1
+      · subst n
+        exact ⟨0, 0, rfl⟩
+      by_cases he : n % 2 = 0
+      · have hs : step n = n / 2 := by simp [step, he]
+        apply meets_trans (meets_step n)
+        rw [hs]
+        exact ih _ (by omega) (by omega)
+      have via (y : ℕ) (hy : Meets n y) (hr : y % 5 = 1) (hb : 5 < y)
+          (hlt : y / 5 < n) : Meets n 1 := by
+        have ht : 0 < y / 5 := by omega
+        have edge := meets_symm (edges (y / 5) ht)
+        rw [show 5 * (y / 5) + 1 = y by omega] at edge
+        exact meets_trans (meets_trans hy edge) (ih _ hlt ht)
+      have hs : step n = (3 * n + 1) / 2 := by simp [step, he]
+      have twice : 2 * step n = 3 * n + 1 := by rw [hs]; omega
+      have cases5 : n % 5 = 0 ∨ n % 5 = 1 ∨ n % 5 = 2 ∨ n % 5 = 3 ∨ n % 5 = 4 := by omega
+      rcases cases5 with h | h | h | h | h
+      · apply via (2 * step n) (meets_trans (meets_step n) (meets_double _)) <;> omega
+      · apply via n ⟨0, 0, rfl⟩ <;> omega
+      · apply via (step n) (meets_step n) <;> omega
+      · apply via (2 * n) (meets_double n) <;> omega
+      · apply via (2 * (2 * n)) (meets_trans (meets_double n) (meets_double _)) <;> omega
+
+
+private theorem component_multipliers {α : Type*} (f : ℕ → α)
+    (h2 : ∀ n, 0 < n → f (2 * n) = f n)
+    (hs : ∀ n, 0 < n → f (step n) = f n)
+    (N : ℕ) (hr : ∀ t, N ≤ t → 0 < t → f (5 * t + 1) = f t) :
+    (∀ n, 0 < n → f (3 * n) = f n) ∧ (∀ n, 0 < n → f (5 * n) = f n) := by
+  have powInv (b : ℕ) (hb : 0 < b) (h : ∀ n, 0 < n → f (b * n) = f n)
+      (k n : ℕ) (hn : 0 < n) : f (b^k * n) = f n := by
+    induction k with
+    | zero => simp
+    | succ k ih =>
+      rw [pow_succ, show b^k * b * n = b * (b^k * n) by ring, h _ (by positivity), ih]
+  have big (b k : ℕ) (hb : 2 ≤ b) : k < b^k := by
+    induction k with
+    | zero => simp
+    | succ k ih =>
+      rw [pow_succ]
+      have := Nat.mul_le_mul_left (b^k) hb
+      omega
+  have h3 (n : ℕ) (hn : 0 < n) : f (3*n) = f n := by
+    let u := 2^N*n
+    have hu : N < u := by
+      have := Nat.mul_le_mul_left (2^N) (show 1 ≤ n by omega)
+      dsimp [u]
+      have := big 2 N (by decide)
+      omega
+    have hhop := hs (5*(4*u)+1) (by omega)
+    have hh : step (5*(4*u)+1) = 2*(5*(3*u)+1) := by
+      rw [step, ite_eq_right (show (5*(4*u)+1)%2 ≠ 0 by omega)]
+      omega
+    rw [hh, h2 _ (by omega), hr _ (by omega) (by omega), hr _ (by omega) (by omega)] at hhop
+    have h4 : f (4*u) = f u := by
+      rw [show 4*u=2*(2*u) by ring, h2 _ (by omega), h2 _ (by omega)]
+    rw [h4] at hhop
+    change f (3*(2^N*n)) = f (2^N*n) at hhop
+    rwa [show 3*(2^N*n)=2^N*(3*n) by ring, powInv 2 (by decide) h2 N _ (by omega),
+      powInv 2 (by decide) h2 N n hn] at hhop
+  refine ⟨h3, ?_⟩
+  intro n hn
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+    by_cases he : n%2=0
+    · let a := n/2
+      have ha : n = 2*a := by dsimp [a]; omega
+      have hi := ih a (by omega) (by omega)
+      calc
+        f (5*n) = f (2*(5*a)) := by rw [ha]; ring_nf
+        _ = f (5*a) := h2 _ (by omega)
+        _ = f a := hi
+        _ = f n := (ha ▸ h2 a (by omega)).symm
+    · let u := 3^N*n
+      have hu : N < u := by
+        have := Nat.mul_le_mul_left (3^N) (show 1 ≤ n by omega)
+        dsimp [u]
+        have := big 3 N (by decide)
+        omega
+      have parity : u % 2 = 1 := by
+        have hp : 3^N % 2 = 1 := by simp [Nat.pow_mod]
+        dsimp [u]
+        rw [Nat.mul_mod, hp]
+        omega
+      have hh : 2 * step (5*u) = 5*(3*u)+1 := by
+        simp only [step]
+        have hodd : 5*u%2 ≠ 0 := by omega
+        rw [ite_eq_right hodd]
+        omega
+      have hstep := hs (5*u) (by omega)
+      have htwo := h2 (step (5*u)) (by omega)
+      rw [hh, hr _ (by omega) (by omega), h3 _ (by omega)] at htwo
+      have res := hstep.symm.trans htwo.symm
+      change f (5*(3^N*n)) = f (3^N*n) at res
+      rwa [show 5*(3^N*n)=3^N*(5*n) by ring, powInv 3 (by decide) h3 N _ (by omega),
+        powInv 3 (by decide) h3 N n hn] at res
+
+/-- An eventual single affine invariance, together with three dilations
+and the actual shortcut step, forces a function to be constant on positive inputs. -/
+theorem eventual_five_ray_constant {α : Type*} (f : ℕ → α) (N : ℕ)
+    (hstep : ∀ x : ℕ, 0 < x → f (step x) = f x)
+    (h2 : ∀ x : ℕ, 0 < x → f (2 * x) = f x)
+    (h3 : ∀ x : ℕ, 0 < x → f (3 * x) = f x)
+    (h5 : ∀ x : ℕ, 0 < x → f (5 * x) = f x)
+    (htail : ∀ t : ℕ, N ≤ t → f (5 * t + 1) = f t) :
+    ∀ n : ℕ, 0 < n → f n = f 1 := by
+  have h4 (x : ℕ) (hx : 0 < x) : f (4 * x) = f x := by
+    rw [show 4 * x = 2 * (2 * x) by ring, h2 _ (by omega), h2 _ hx]
+  have h8 (x : ℕ) (hx : 0 < x) : f (8 * x) = f x := by
+    rw [show 8 * x = 2 * (4 * x) by ring, h2 _ (by omega), h4 _ hx]
+  have odd (x : ℕ) (hx : 0 < x) (ho : x % 2 = 1) : f (3 * x + 1) = f x := by
+    have he : 2 * step x = 3 * x + 1 := by simp [step, ho]; omega
+    rw [← he, h2 _ (by omega), hstep _ hx]
+  have g23 (h : ℕ) (hh : 0 < h) : f (2 * h - 1) = f (3 * h - 1) := by
+    calc
+      _ = f (3 * (2 * h - 1) + 1) := (odd _ (by omega) (by omega)).symm
+      _ = f (2 * (3 * h - 1)) := by congr 1; omega
+      _ = _ := h2 _ (by omega)
+  have g89 (h : ℕ) (hh : 0 < h) : f (8 * h - 1) = f (9 * h - 1) := by
+    calc
+      _ = f (3 * (8 * h - 1)) := (h3 _ (by omega)).symm
+      _ = f (3 * (3 * (8 * h - 1)) + 1) := (odd _ (by omega) (by omega)).symm
+      _ = f (8 * (9 * h - 1)) := by congr 1; omega
+      _ = _ := h8 _ (by omega)
+  have g48 (h : ℕ) (hh : 0 < h) : f (4 * h - 1) = f (8 * h - 1) := by
+    calc
+      _ = f (6 * h - 1) := by simpa only [← Nat.mul_assoc] using g23 (2 * h) (by omega)
+      _ = f (9 * h - 1) := by simpa only [← Nat.mul_assoc] using g23 (3 * h) (by omega)
+      _ = _ := (g89 h hh).symm
+  have transport (h j : ℕ) (hh : 0 < h) :
+      f (4 * (2 ^ j * h) - 1) = f (4 * h - 1) ∧ f (4 * (2 ^ j * h)) = f (4 * h) := by
+    induction j with
+    | zero => simp
+    | succ j ih =>
+      have hp : 0 < 2 ^ j * h := by positivity
+      rw [show 4 * (2 ^ (j + 1) * h) = 8 * (2 ^ j * h) by ring]
+      have hs : f (8 * (2 ^ j * h)) = f (4 * (2 ^ j * h)) := by
+        simpa only [← Nat.mul_assoc] using h2 (4 * (2 ^ j * h)) (by omega)
+      exact ⟨(g48 _ hp).symm.trans ih.1, hs.trans ih.2⟩
+  have adjacent (h : ℕ) (hh : 0 < h) (hu : h % 5 ≠ 0) : f (4 * h - 1) = f (4 * h) := by
+    have big (l : ℕ) : ∃ z, 0 < z ∧ l ≤ z ∧ z % 5 = h % 5 ∧
+        f (4 * z - 1) = f (4 * h - 1) ∧ f (4 * z) = f (4 * h) := by
+      induction l with
+      | zero => exact ⟨h, hh, by omega, rfl, rfl, rfl⟩
+      | succ l ih =>
+        obtain ⟨z, hz, hl, hc, hminus, hplus⟩ := ih
+        obtain ⟨ha, hb⟩ := transport z 4 hz
+        exact ⟨16 * z, by omega, by omega, by omega, ha.trans hminus, hb.trans hplus⟩
+    obtain ⟨z, hz, hl, hc, hminus, hplus⟩ := big (5 * (N + 1))
+    have hj : ∃ j : ℕ, (4 * (2 ^ j * z)) % 5 = 1 := by
+      rcases (show z % 5 = 1 ∨ z % 5 = 2 ∨ z % 5 = 3 ∨ z % 5 = 4 by omega) with h | h | h | h
+      · exact ⟨2, by omega⟩
+      · exact ⟨1, by omega⟩
+      · exact ⟨3, by omega⟩
+      · exact ⟨0, by omega⟩
+    obtain ⟨j, hj⟩ := hj
+    have hz' : z ≤ 2 ^ j * z := by
+      have hp : 1 ≤ 2 ^ j := Nat.succ_le_of_lt (by positivity : 0 < 2 ^ j)
+      simpa using Nat.mul_le_mul_right z hp
+    obtain ⟨ha, hb⟩ := transport z j hz
+    let t := (4 * (2 ^ j * z)) / 5
+    have he : 4 * (2 ^ j * z) = 5 * t + 1 := by dsimp [t]; omega
+    calc
+      f (4 * h - 1) = f (4 * (2 ^ j * z) - 1) := (ha.trans hminus).symm
+      _ = f (5 * t) := by rw [he]; simp
+      _ = f t := h5 _ (by omega)
+      _ = f (5 * t + 1) := (htail _ (by omega)).symm
+      _ = f (4 * h) := by rw [← he]; exact hb.trans hplus
+  intro n
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+    intro hn
+    by_cases h1 : n = 1
+    · rw [h1]
+    by_cases he : n % 2 = 0
+    · have hx : n = 2 * (n / 2) := by omega
+      exact (congrArg f hx).trans ((h2 _ (by omega)).trans (ih _ (by omega) (by omega)))
+    have ho : n % 2 = 1 := by omega
+    by_cases hm : n % 4 = 1
+    · let u := (3 * n + 1) / 4
+      have hu : 3 * n + 1 = 4 * u := by dsimp [u]; omega
+      calc
+        f n = f (3 * n + 1) := (odd _ hn ho).symm
+        _ = f u := by rw [hu, h4 _ (by omega)]
+        _ = f 1 := ih _ (by omega) (by omega)
+    let w := (n + 1) / 4
+    have hw : n + 1 = 4 * w := by dsimp [w]; omega
+    by_cases hu : w % 5 ≠ 0
+    · calc
+        f n = f (4 * w - 1) := by congr 1; omega
+        _ = f (4 * w) := adjacent _ (by omega) hu
+        _ = f w := h4 _ (by omega)
+        _ = f 1 := ih _ (by omega) (by omega)
+    · let v := (4 * n - 1) / 5
+      have hv : 4 * n - 1 = 5 * v := by dsimp [v]; omega
+      calc
+        f n = f (4 * n) := (h4 _ hn).symm
+        _ = f (4 * n - 1) := (adjacent n hn (by omega)).symm
+        _ = f v := by rw [hv, h5 _ (by omega)]
+        _ = f 1 := ih _ (by omega) (by omega)
+
+/-- A finite exceptional set for the ordinary five-ray merger test can be removed.
+The two arms are both iterated by the ordinary shortcut map. -/
+theorem collatz_iff_eventual_five_ray :
+    (∀ n : ℕ, 0 < n → ∃ j, orbit n j = 1) ↔
+    (∃ N : ℕ, ∀ t : ℕ, N ≤ t → Meets t (5*t+1)) := by
+  constructor
+  · intro hall
+    exact ⟨1, fun t ht => collatz_iff_five_ray.mp hall t ht⟩
+  · rintro ⟨N, hN⟩
+    let f : ℕ → Prop := fun x => Meets x 1
+    have lifts {x y : ℕ} (h : Meets x y) : f x = f y :=
+      propext ⟨fun hx => meets_trans (meets_symm h) hx, fun hy => meets_trans h hy⟩
+    have hs (x : ℕ) (_ : 0 < x) : f (step x) = f x := (lifts (meets_step x)).symm
+    have h2 (x : ℕ) (_ : 0 < x) : f (2*x) = f x := (lifts (meets_double x)).symm
+    have hr (t : ℕ) (ht : N ≤ t) : f (5*t+1) = f t := (lifts (hN t ht)).symm
+    obtain ⟨h3, h5⟩ := component_multipliers f h2 hs N (fun t ht _ => hr t ht)
+    intro n hn
+    have he := eventual_five_ray_constant f N hs h2 h3 h5 hr n hn
+    apply (meets_one_iff n).mp
+    change f n
+    rw [he]
+    exact ⟨0, 0, rfl⟩
+
 end CollatzUpperBit

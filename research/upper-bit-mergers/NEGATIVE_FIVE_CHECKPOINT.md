@@ -26,7 +26,7 @@ $$
  2^L\ \ge\ (M/5)\,8^{q/2}. \tag{3}
 $$
 
-Set $W(8)=50$ and $W(x)=x^2$ elsewhere. On every step of this path, $4W(Sx)\ge8^{x\bmod2}W(x)$. This follows immediately for an even input. At 5 and 7 there is equality. At odd $x\ge9$ use $(3x-1)^2\ge8x^2$. Multiplying the inequalities and using $W(5)=25$ proves (3).
+Set $W(7)=50$ and $W(x)=x^2$ elsewhere. On every step of this path, $4W(Sx)\ge8^{x\bmod2}W(x)$. This follows immediately for an even input. At 5 and 7 there is equality. At odd $x\ge9$ use $(3x-1)^2\ge8x^2$. Multiplying the inequalities and using $W(5)=25$ proves (3).
 
 Take any length-$L$ path from a positive $z$ to $Y$ with $q\le2k$ odd inputs. Write its affine numerator as $3^q z+B=2^L Y$. The same word run backwards from $-5$ produces the signed integer $-M$, where
 
