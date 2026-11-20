@@ -1,0 +1,216 @@
+{
+  "files": [
+    {
+      "bytes": 3958,
+      "path": "research/deep-reverse-closure-20261120/BASIN_CRT_DENSITY.md",
+      "sha256": "20f2aad14abfac6c5a238674bb649c7b40c53465ac882c0c097a51a9d42cabbf"
+    },
+    {
+      "bytes": 10551,
+      "path": "research/deep-reverse-closure-20261120/C3_SINGLE_RUN_CERTIFICATES.md",
+      "sha256": "d9101068f5180413b5a1ef142fe25f0dc8881e0651ed8addf21ea28ab569257d"
+    },
+    {
+      "bytes": 10128,
+      "path": "research/deep-reverse-closure-20261120/CLOSING_ATTEMPTS.md",
+      "sha256": "fe6c06c541337246295e7747c606d314e45c844dba8176622b6e391b6db4d64e"
+    },
+    {
+      "bytes": 11333,
+      "path": "research/deep-reverse-closure-20261120/FIVE_SLICE_ENERGY.md",
+      "sha256": "d1d6d2708f291f4b918004e7e2705bd1ceaa3d60c7e022d0f9c7bfbe2749fbb0"
+    },
+    {
+      "bytes": 8066,
+      "path": "research/deep-reverse-closure-20261120/GUARDED_CLOCK_OBSTRUCTION.md",
+      "sha256": "6ebeea93c0be7e9848e71e9f36c0a6e554a081200be77c6509273791a91a817a"
+    },
+    {
+      "bytes": 8300,
+      "path": "research/deep-reverse-closure-20261120/LATEST_SOURCES.md",
+      "sha256": "ac6c0513c8569e4c468f3b59f4fde262221046b1e6fbd1a96328a09441dd3ff5"
+    },
+    {
+      "bytes": 9637,
+      "path": "research/deep-reverse-closure-20261120/LEAST_FAILURE_HEIGHT.md",
+      "sha256": "55e31a4ce1b52b3536c7ddf36e29be8f790deac8ef97a77b3438274fccb93254"
+    },
+    {
+      "bytes": 8040,
+      "path": "research/deep-reverse-closure-20261120/MERSENNE_WITNESS_DEPTH.md",
+      "sha256": "25f16035aece8873c0b3fd9101552b8aaafea78a90478ecd6f9caa67e999176f"
+    },
+    {
+      "bytes": 4432,
+      "path": "research/deep-reverse-closure-20261120/PURE_POWER_CORE.md",
+      "sha256": "9b18ab5664c4dfbbb8dfcd1cdcc7b172d4e8ce2a93db94c6e2f51228ff571176"
+    },
+    {
+      "bytes": 8120,
+      "path": "research/deep-reverse-closure-20261120/README.md",
+      "sha256": "4dd02c398c2019a0c193d38a8095de870a5c1a5d026f3003098b5ab34a7d2dea"
+    },
+    {
+      "bytes": 8325,
+      "path": "research/deep-reverse-closure-20261120/REVERSE_CERTIFICATE_KERNEL.md",
+      "sha256": "4bf600fce574029b03e2af1b79acb9809b5efb944c5a92296ae82149d6a2da85"
+    },
+    {
+      "bytes": 8819,
+      "path": "research/deep-reverse-closure-20261120/SHIFTED_SMOOTH_COMPLETE.md",
+      "sha256": "34117cfda702fddc423976ccf649ad1414c37772c4a146c63eeec30d5ec85ccb"
+    },
+    {
+      "bytes": 3069,
+      "path": "research/deep-reverse-closure-20261120/check_basin_crt_density.py",
+      "sha256": "4727e48b2e98937fd55fa965e73e6424e744dbb1e06c1969dcd12480b1fc71f2"
+    },
+    {
+      "bytes": 7056,
+      "path": "research/deep-reverse-closure-20261120/check_c3_single_run.py",
+      "sha256": "f8bd89de9f370867b22b8da03a77f7fbbcf3cf6feba2e191e324b2a917d18ea0"
+    },
+    {
+      "bytes": 8242,
+      "path": "research/deep-reverse-closure-20261120/check_c3_single_run_review.py",
+      "sha256": "a5f0ec8b216c76b048a7699b26716653ba47541ba9ba9ead65faf205da5496e5"
+    },
+    {
+      "bytes": 6809,
+      "path": "research/deep-reverse-closure-20261120/check_five_energy.py",
+      "sha256": "9fb5a3035b9dad6a5c731a6cb475eb92feaefd4b18561a1d3c9a7a9b4427cf5d"
+    },
+    {
+      "bytes": 6655,
+      "path": "research/deep-reverse-closure-20261120/check_five_energy_review.py",
+      "sha256": "bd0e4b9cad9ed14de6ef497e61b490397b19a197255f33c263313906e5303198"
+    },
+    {
+      "bytes": 7650,
+      "path": "research/deep-reverse-closure-20261120/check_guarded_clock.py",
+      "sha256": "dc7575b4f6373933e51cd22d811e8d195f5aa9210f44687414e6eb0942313e40"
+    },
+    {
+      "bytes": 5105,
+      "path": "research/deep-reverse-closure-20261120/check_height_review.py",
+      "sha256": "dcc5fe8eaf364366818b19bd816fab50b54a5eb322a645abad624b9b1b1d0506"
+    },
+    {
+      "bytes": 8073,
+      "path": "research/deep-reverse-closure-20261120/check_least_failure_height.py",
+      "sha256": "4d525707871fa871c6e3df07ea1dec917073a0475c47024b79ff0747cb503d18"
+    },
+    {
+      "bytes": 5328,
+      "path": "research/deep-reverse-closure-20261120/check_mersenne_depth_review.py",
+      "sha256": "62d20b76449bd5df97b93f042b5222013c65ab79cd933c7407a4366e515ac73b"
+    },
+    {
+      "bytes": 5644,
+      "path": "research/deep-reverse-closure-20261120/check_mersenne_witness_depth.py",
+      "sha256": "e1af63486483781cdd2b308a782bfe0ce26526517ead79bda922ee57d74a58b8"
+    },
+    {
+      "bytes": 4939,
+      "path": "research/deep-reverse-closure-20261120/check_packet.py",
+      "sha256": "e4621989a3c8534bd82e077191723edad1b52bf1cea936bcce3ccb82e2d8afdf"
+    },
+    {
+      "bytes": 3110,
+      "path": "research/deep-reverse-closure-20261120/check_pure_power_core.py",
+      "sha256": "47930a6996e4752dc0f4dd1f571cebe36b912d68f9e59cfce16b66582f975788"
+    },
+    {
+      "bytes": 2198,
+      "path": "research/deep-reverse-closure-20261120/check_pure_power_review.py",
+      "sha256": "b7d5b1f213b0114207a028b2636e4cebcca04c8ee5406f7a1239eaaddc1be7be"
+    },
+    {
+      "bytes": 5589,
+      "path": "research/deep-reverse-closure-20261120/check_reverse_kernel.py",
+      "sha256": "eb8e92ccf27fd1bf553b2b2653f07f4b22c9d095ffbb472356cb5dbf73254526"
+    },
+    {
+      "bytes": 6248,
+      "path": "research/deep-reverse-closure-20261120/check_reverse_kernel_review.py",
+      "sha256": "79edb2e209ffa7d9988c9aa98fc47b911cde05466370f18a2810d912a6ee8296"
+    },
+    {
+      "bytes": 6589,
+      "path": "research/deep-reverse-closure-20261120/check_shifted_smooth_complete.py",
+      "sha256": "682d02113a3181167f4f0b1ee3600ce42ae3d23c8eadaa5af1785b59b58c4410"
+    },
+    {
+      "bytes": 4267,
+      "path": "research/deep-reverse-closure-20261120/check_shifted_smooth_review.py",
+      "sha256": "93a739f9b46daacb67324e7ce4a74e328206d924f35855074752676a45b123e5"
+    },
+    {
+      "bytes": 8879,
+      "path": "research/deep-reverse-closure-20261120/deep_reverse_certificate.json",
+      "sha256": "fc15d65eabd0baa1dc5f99af47d430ce3a06b1da6414e4d3c4ae29e269b42571"
+    },
+    {
+      "bytes": 11040,
+      "path": "research/deep-reverse-closure-20261120/five_cover_candidates.json",
+      "sha256": "cae3304bb2ad571d9574655fee586fbb920a1480298e3d516aa814a74f39bb94"
+    },
+    {
+      "bytes": 5922,
+      "path": "reports/2026-11-20-deep-reverse-closure/README.md",
+      "sha256": "57aa735b21872c8f3d3bdcaa81045b43ae15a862b927c41f74e823408730702f"
+    },
+    {
+      "bytes": 8145,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_C3_SINGLE_RUN.md",
+      "sha256": "2125e0d3aef0626d2acaab1dc9ff3d9bee73b5b982d266cd7077e41cc6cfd8f3"
+    },
+    {
+      "bytes": 5747,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_FIVE_SLICE_ENERGY.md",
+      "sha256": "d1f08b1f231970470299f696a06f60ae4ef9a8550c1692494806851740a2d2b3"
+    },
+    {
+      "bytes": 10928,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_GUARDED_CLOCK.md",
+      "sha256": "542c2e721dbbf54cc5baa6b2f3da72f6c8e0d8fbbecc136ff04288312d71304f"
+    },
+    {
+      "bytes": 8191,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_LEAST_FAILURE_HEIGHT.md",
+      "sha256": "e35144fe27d551b40401f2b0864ed99234392e5825c9138e83e4de2f5b54155e"
+    },
+    {
+      "bytes": 7171,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_MERSENNE_WITNESS_DEPTH.md",
+      "sha256": "15bfd9e49b41ebafdaee0d7a3792f80e736fbb3f10103fa87b23df22d5c5bb88"
+    },
+    {
+      "bytes": 3225,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_PARTIAL_FIVE_RENEWAL.md",
+      "sha256": "d97a7e4ec91cde7ec61e995193cf3742486837685751e85bb2436ba4d3bf83a6"
+    },
+    {
+      "bytes": 2582,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_PURE_POWER_CORE.md",
+      "sha256": "d6d0c8a50ebc70f704d3ac7baa693e21cbbf3364310fdee46aed0a420ee47d3e"
+    },
+    {
+      "bytes": 4516,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_REVERSE_CERTIFICATE_KERNEL.md",
+      "sha256": "2b71e2307115436597a4ebdf60cf1e37f6acc0a538a59b5eb9db596c8bbc52a1"
+    },
+    {
+      "bytes": 4624,
+      "path": "reports/2026-11-20-deep-reverse-closure/REVIEW_SHIFTED_SMOOTH_COMPLETE.md",
+      "sha256": "d90ba4be7e3ad51ae19e9e14c90e445de66b99f5f5d9ed112025b8e2c91002a1"
+    },
+    {
+      "bytes": 42160,
+      "path": "reports/2026-11-20-deep-reverse-closure/source-audit.json",
+      "sha256": "93616b86ee489d3b396ba325964da80d43cf88da16b8d4ff2c0b29b9b0eb0e4b"
+    }
+  ],
+  "schema": "collatz-content-manifest/v1",
+  "scope": "Frozen scientific files, independent reviews and source inventory; execution receipts are appended later. The manifest excludes itself and the mutable validation record."
+}
