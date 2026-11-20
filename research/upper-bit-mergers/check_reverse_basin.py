@@ -35,12 +35,13 @@ CERTIFICATES = (
 )
 
 
-def replay(modulus, residue, word):
+def replay(modulus, residue, word, *, tripling_divisor=3, contraction=(9, 10),
+           require_unit_target=False):
     slope, offset = modulus, residue
     steps = triplings = 0
     for token in word.split():
         if token == "M":
-            if slope % 6 or offset % 6 != 3:
+            if slope % (2 * tripling_divisor) or offset % (2 * tripling_divisor) != tripling_divisor:
                 raise AssertionError(("ineligible tripling", modulus, residue, slope, offset))
             slope, offset = 3 * slope, 3 * offset
             steps += 1
@@ -72,7 +73,10 @@ def replay(modulus, residue, word):
     start_index = int(residue == 1)
     initial = modulus * start_index + residue
     terminal = slope * start_index + offset
-    if 10 * terminal > 9 * initial or 10 * slope > 9 * modulus:
+    if require_unit_target and (slope % 3 or not offset % 3):
+        raise AssertionError(("target may be divisible by three", modulus, residue, slope, offset))
+    numerator, denominator = contraction
+    if denominator * terminal > numerator * initial or denominator * slope > numerator * modulus:
         raise AssertionError(("insufficient contraction", modulus, residue, slope, offset))
     return steps, triplings
 
