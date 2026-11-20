@@ -1,0 +1,142 @@
+{
+  "arithmetic": "integers and exact fractions; checks active under -OO",
+  "case_count": 4,
+  "cases": [
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 124,
+      "a_progression_modulus": 12,
+      "b": 214,
+      "b_progression_modulus": 2,
+      "binary_precision": 8,
+      "binary_residue": 69,
+      "control_group_states_searched": 12,
+      "control_word": "001",
+      "critical_lap_score": 6,
+      "denominator_bits": 343,
+      "denominator_sha256_big_endian": "2bd9e43143829f3e9009643b74260a7f90dd48733e3a1a2e415b9e6078ae77eb",
+      "extra_modulus": 5,
+      "extra_residue": 0,
+      "numerator_bits": 345,
+      "numerator_sha256_big_endian": "0a49b0a8d080f63fdf86f22f4fd2a7d452fd078203b93448c2d7fde3ef7980da",
+      "odd_lap_count": 217,
+      "original_binary_precision": 5,
+      "original_binary_residue": 5,
+      "prefix": "10001001",
+      "real_error": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 5
+      },
+      "shortcut_lap_length": 346,
+      "ternary_precision": 2,
+      "ternary_residue": 5
+    },
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 833,
+      "a_progression_modulus": 12,
+      "b": 1428,
+      "b_progression_modulus": 12,
+      "binary_precision": 18,
+      "binary_residue": 124295,
+      "control_group_states_searched": 1817,
+      "control_word": "00000010010",
+      "critical_lap_score": 77,
+      "denominator_bits": 2279,
+      "denominator_sha256_big_endian": "a28ded1a357a49b276a1c1145ec5d4f2d4a9390799175e0295c264d3a938fe12",
+      "extra_modulus": 91,
+      "extra_residue": 7,
+      "numerator_bits": 2282,
+      "numerator_sha256_big_endian": "345bdd5256c32e866a24f6077659ab19f4da95db54deaec0bc67eeed1f675ec2",
+      "odd_lap_count": 1434,
+      "original_binary_precision": 7,
+      "original_binary_residue": 7,
+      "prefix": "111010000000010010",
+      "real_error": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 1,
+        "numerator": 7
+      },
+      "shortcut_lap_length": 2279,
+      "ternary_precision": 2,
+      "ternary_residue": 7
+    },
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 620,
+      "a_progression_modulus": 36,
+      "b": 1050,
+      "b_progression_modulus": 6,
+      "binary_precision": 15,
+      "binary_residue": 14845,
+      "control_group_states_searched": 792,
+      "control_word": "11111011111",
+      "critical_lap_score": 71,
+      "denominator_bits": 1685,
+      "denominator_sha256_big_endian": "f4b346886f1af8f8161b4153e5807d3310a8bb5223f373162418624be93db7fb",
+      "extra_modulus": 35,
+      "extra_residue": 28,
+      "numerator_bits": 1685,
+      "numerator_sha256_big_endian": "a5cb6292adcf417c05ca9c07990fcf18de8a3512e0007acbe1a302c134e6de65",
+      "odd_lap_count": 1062,
+      "original_binary_precision": 4,
+      "original_binary_residue": 13,
+      "prefix": "100111111011111",
+      "real_error": {
+        "denominator": 20,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 3,
+        "numerator": 4
+      },
+      "shortcut_lap_length": 1685,
+      "ternary_precision": 3,
+      "ternary_residue": 2
+    },
+    {
+      "AR2_diagonal_bound_checked": false,
+      "a": 602,
+      "a_progression_modulus": 60,
+      "b": 1030,
+      "b_progression_modulus": 10,
+      "binary_precision": 12,
+      "binary_residue": 1682,
+      "control_group_states_searched": 265,
+      "control_word": "1001000",
+      "critical_lap_score": 60,
+      "denominator_bits": 1644,
+      "denominator_sha256_big_endian": "202da75c6e1a1e7b8283bed881b574cf160aafd5406d3b51ab4f5aec1f6f7810",
+      "extra_modulus": 25,
+      "extra_residue": 14,
+      "numerator_bits": 1645,
+      "numerator_sha256_big_endian": "3e6f70b6022ef4aca9c0d1b53e7de7f8f380e32591d13c1605a5d54878817a33",
+      "odd_lap_count": 1035,
+      "original_binary_precision": 5,
+      "original_binary_residue": 18,
+      "prefix": "010111001000",
+      "real_error": {
+        "denominator": 20,
+        "numerator": 1
+      },
+      "real_target": {
+        "denominator": 7,
+        "numerator": 13
+      },
+      "shortcut_lap_length": 1644,
+      "ternary_precision": 2,
+      "ternary_residue": 11
+    }
+  ],
+  "scope": "finite rational-cycle witnesses; no fixed ordinary continuation or full Collatz proof",
+  "status": "PASS",
+  "total_accelerated_edges": 3748,
+  "total_shortcut_edges": 5954
+}

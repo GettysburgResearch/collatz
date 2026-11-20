@@ -1,0 +1,109 @@
+{
+  "compact_comparison": {
+    "full_columns": 6,
+    "global_tail_constant_squared_checks": 4
+  },
+  "limits": [
+    "The infinite essential-spectrum statement uses the written proof.",
+    "All certified support vertices reach1; no escape is inferred.",
+    "No all-clock D_q upper bound or extra-cycle exclusion is proved."
+  ],
+  "rejected_controls": [
+    "duplicate vertex",
+    "false ordinary parent",
+    "incorrect phase depth",
+    "missing root",
+    "empty support",
+    "even state",
+    "unsupported operator exponent",
+    "Boolean root parameter"
+  ],
+  "root_arithmetic": {
+    "exact_edges": 54,
+    "root_parameters": [
+      2,
+      10
+    ]
+  },
+  "small_full_residual": {
+    "exact_squared_ratios": [
+      {
+        "s": 1,
+        "squared_ratio": "53/170"
+      },
+      {
+        "s": 2,
+        "squared_ratio": "17879/120020"
+      }
+    ],
+    "support": [
+      3,
+      5
+    ]
+  },
+  "smoothing_boundary": {
+    "Abel_parameters": 4,
+    "finite_product_pairs": 204
+  },
+  "status": "PASS finite exact certificate checks; no Collatz closure",
+  "witnesses": [
+    {
+      "algorithm": "least-discovered-inverse-vertex-v1",
+      "all_unit_complex_phases": true,
+      "k": 6,
+      "max_depth": 40,
+      "residual_certificates": [
+        {
+          "precision_bits": 128,
+          "s": 1,
+          "squared_lower_denominator": "40444567584072285494845746587731543164191",
+          "squared_lower_numerator": "345236447046499528295298384898146163965",
+          "squared_upper_denominator": "40444567584072285494845746587731543163679",
+          "squared_upper_numerator": "345236447046499528295298384898146166011",
+          "strict_norm_upper_bound": "93/1000"
+        },
+        {
+          "precision_bits": 128,
+          "s": 2,
+          "squared_lower_denominator": "1417805610288391553312661317374376834654275",
+          "squared_lower_numerator": "340282756875207085596893962297022818970",
+          "squared_upper_denominator": "1417805610288391553312661317374376834653763",
+          "squared_upper_numerator": "340282756875207085596893962297022821016",
+          "strict_norm_upper_bound": "2/125"
+        }
+      ],
+      "root_bit_length": 243,
+      "support_sha256": "fe50677d06d0c9a39705b92049b00fb1c83b68b85aa07d4c79641e0a8f9f80d3",
+      "vertices": 512
+    },
+    {
+      "algorithm": "least-discovered-inverse-vertex-v1",
+      "all_unit_complex_phases": true,
+      "k": 8,
+      "max_depth": 43,
+      "residual_certificates": [
+        {
+          "precision_bits": 128,
+          "s": 1,
+          "squared_lower_denominator": "245338823519079855980930551337646569553079",
+          "squared_lower_numerator": "397646239992032156950410534098422222427",
+          "squared_upper_denominator": "245338823519079855980930551337646569552567",
+          "squared_upper_numerator": "397646239992032156950410534098422224473",
+          "strict_norm_upper_bound": "41/1000"
+        },
+        {
+          "precision_bits": 128,
+          "s": 2,
+          "squared_lower_denominator": "37534828915884986602195090244262997952791181",
+          "squared_lower_numerator": "340367578443610453513226889482711967531",
+          "squared_upper_denominator": "37534828915884986602195090244262997952790669",
+          "squared_upper_numerator": "340367578443610453513226889482711969577",
+          "strict_norm_upper_bound": "31/10000"
+        }
+      ],
+      "root_bit_length": 2187,
+      "support_sha256": "f862ff52c9def6336da4ec92921fdc7a10113d0634f79c26a69490e41a3afcdc",
+      "vertices": 512
+    }
+  ]
+}

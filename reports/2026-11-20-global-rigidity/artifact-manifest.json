@@ -1,0 +1,176 @@
+{
+  "scope": "Scientific packet, finite replay record, and active navigation. Excludes this manifest, the publication README, and complete-checkout receipts.",
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "entries": [
+    {
+      "path": "reports/2026-11-20-global-rigidity/replay-results.json",
+      "bytes": 7661,
+      "sha256": "764dbe57a5f4dd7a9209ff43620311dae4dbc5dbe8ee97ae9ddf9a6d767e29f1"
+    },
+    {
+      "path": "research/README.md",
+      "bytes": 4686,
+      "sha256": "8f75de9d3401011326e9f34410e505fdb73f873c30bce6885978c5d0e6094ceb"
+    },
+    {
+      "path": "research/global-rigidity-20261120/ADIC_REAL_DENSITY.md",
+      "bytes": 11250,
+      "sha256": "1bad5ff1f3e1e88dcc68fa44b8dd83b41883f556aac52f2e9e0f45e1ec73888e"
+    },
+    {
+      "path": "research/global-rigidity-20261120/FINITE_PLACES.md",
+      "bytes": 5770,
+      "sha256": "484f7e0f9b5a22e85bceec3b537336a705fc0365594303719ca8123c0d3c8c5b"
+    },
+    {
+      "path": "research/global-rigidity-20261120/FIXED_SOURCE_CLOSURE.md",
+      "bytes": 10320,
+      "sha256": "7924fbc896aaf8beceb69c66f7995e7c6cf4104a9a7929cad7cc501d775f3deb"
+    },
+    {
+      "path": "research/global-rigidity-20261120/ORDINARY_ESSENTIAL_SPECTRUM.md",
+      "bytes": 17469,
+      "sha256": "436fb7a9e6230271e1b2564e64554ca2b1bbda12f1cc5ee8eccff0562f68432c"
+    },
+    {
+      "path": "research/global-rigidity-20261120/Q_SECTION_GUARDS.md",
+      "bytes": 15726,
+      "sha256": "a8ce19689b31abf002c77d6696e351a1f6db781d35b4c17fb21f834bbf08494b"
+    },
+    {
+      "path": "research/global-rigidity-20261120/README.md",
+      "bytes": 10741,
+      "sha256": "36d777adbf693bfcb6624cf80c8786ec2be7b7c9a2e92973432ebedbca5d789a"
+    },
+    {
+      "path": "research/global-rigidity-20261120/REVIEW_ARITHMETIC_ROUTES.md",
+      "bytes": 12392,
+      "sha256": "ae33682b8371a5ff27caeabbce45be46ec1afa8135d58dc0b47111804111fdcd"
+    },
+    {
+      "path": "research/global-rigidity-20261120/REVIEW_ORDINARY_SPECTRUM.md",
+      "bytes": 12383,
+      "sha256": "0aef80d3090952e64a8513783305eda9b19f367a75266b71e75785118acab896"
+    },
+    {
+      "path": "research/global-rigidity-20261120/REVIEW_Q_SECTION_GUARDS.md",
+      "bytes": 12511,
+      "sha256": "4f4db884da93a62d1a5ca80bd762c488a8fbea7e4e01ac07f3c999b87135b70a"
+    },
+    {
+      "path": "research/global-rigidity-20261120/REVIEW_ROOT_ANNEXES.md",
+      "bytes": 9365,
+      "sha256": "0038924df1a6ffb52e1672ca2da4385c4e1019b3d08e1d3017ac4442cff028a3"
+    },
+    {
+      "path": "research/global-rigidity-20261120/SHIFTED_LINEARIZATION.md",
+      "bytes": 6726,
+      "sha256": "fb7fd7ad0643a49d06b290b3747a1f608a59a1fda941789c8ee8eca99c656cb0"
+    },
+    {
+      "path": "research/global-rigidity-20261120/SIGNED_CLOCK_FILTERS.md",
+      "bytes": 6393,
+      "sha256": "051ee11cbb58009819af5542b43bf7e9dab65f59cbbcc8771b1b46151543bf18"
+    },
+    {
+      "path": "research/global-rigidity-20261120/SMOOTHING_BOUNDARY.md",
+      "bytes": 9809,
+      "sha256": "8a5b38d517f56610e17ac02d44294c810894239d7272e98688eb672e7bbdeb3a"
+    },
+    {
+      "path": "research/global-rigidity-20261120/SOURCE_BOUNDARIES.md",
+      "bytes": 7182,
+      "sha256": "c5fa315b068ac0259e07f1fef31e65773d624c96bb437e166c3d7be5db0b1044"
+    },
+    {
+      "path": "research/global-rigidity-20261120/adic-real-density-report.json",
+      "bytes": 6844,
+      "sha256": "3b2f2c480e56295bb40235e3720cbeccad745a86798cc0fd1c2d34c6b32d2f55"
+    },
+    {
+      "path": "research/global-rigidity-20261120/arithmetic-routes-review-report.json",
+      "bytes": 761,
+      "sha256": "ba81c3d5828e11d40d10d4861ebf4289e32705411113ccb6d91557fa0e1966dc"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_adic_real_density.py",
+      "bytes": 17224,
+      "sha256": "99243f21cc5548fbbe9c2cb2201c3c4e835e6cb3c02947ccdabaf74db147c589"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_finite_places.py",
+      "bytes": 8596,
+      "sha256": "0d73b54ff12d349cb55be4ad03b0d9396d5a7fa6b3d97d5a8150f011b5e585bc"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_ordinary_spectrum.py",
+      "bytes": 13797,
+      "sha256": "395beaf29efeb7f66b88e346d04451e04b089cad63ee8b434c6ac9806feba0d4"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_ordinary_spectrum_independent.py",
+      "bytes": 5045,
+      "sha256": "1a7dbc1c157b2dfb3df92fd09175516371551d0fcf1cdfbf079b8a016a3f4e55"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_q_independent_review.py",
+      "bytes": 7809,
+      "sha256": "3b23ee4759a5d25a4a0290581923f5faa8491ec20eaaa0ccf832293c617ef7ae"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_q_section_guards.py",
+      "bytes": 11654,
+      "sha256": "449b2ace7d92b86b707a9f8d1d6882bc3b4622b286c8e9531cbd27a94c25ced1"
+    },
+    {
+      "path": "research/global-rigidity-20261120/check_shifted_linearization.py",
+      "bytes": 4046,
+      "sha256": "d23b130243d6b2ed58c841361a950af7ba8378093822957e6cbc4d9a14108e94"
+    },
+    {
+      "path": "research/global-rigidity-20261120/finite-places-report.json",
+      "bytes": 4479,
+      "sha256": "a6f2dced917991a0f0313e513baf50bfb8ae9b2688bb81e67dc927aee245d4ba"
+    },
+    {
+      "path": "research/global-rigidity-20261120/ordinary-spectrum-independent-report.json",
+      "bytes": 2337,
+      "sha256": "a9ab7014ee9a1484880e200432069e4480a92df92f6c3f41f6807314cc73309f"
+    },
+    {
+      "path": "research/global-rigidity-20261120/ordinary-spectrum-report.json",
+      "bytes": 3563,
+      "sha256": "a29f5c1ed8aa948af4ec1a32e762cdbce0997ae376c1ed940289dfc3a9734afc"
+    },
+    {
+      "path": "research/global-rigidity-20261120/q-independent-review-report.json",
+      "bytes": 807,
+      "sha256": "8d4224a8fcb7048b17b6fd4faae794a29a3835cdb94313e99015b176b4e0d6a1"
+    },
+    {
+      "path": "research/global-rigidity-20261120/q_section_guards_report.json",
+      "bytes": 1772,
+      "sha256": "3bf13c2165566af9b95019db1f27a46590bf1f3d348918cda0006c8fe7274044"
+    },
+    {
+      "path": "research/global-rigidity-20261120/review_arithmetic_routes.py",
+      "bytes": 9669,
+      "sha256": "b1b43094fcb745a2492995236a40c32757c46b36a90d741847c3d238858ac008"
+    },
+    {
+      "path": "research/global-rigidity-20261120/review_signed_clock_controls.py",
+      "bytes": 4241,
+      "sha256": "6928db229879b9d6363e8f8be7109bceb660f2173a348b3c05a5071c9e3ff066"
+    },
+    {
+      "path": "research/global-rigidity-20261120/shifted-linearization-report.json",
+      "bytes": 515,
+      "sha256": "e8da9ce53fbbb6cd32a9a09e1ea9afa3d167ef9c899b8b9652472282ff2c893e"
+    },
+    {
+      "path": "research/global-rigidity-20261120/signed-clock-review-report.json",
+      "bytes": 377,
+      "sha256": "d8a10793ebd788410e16f0015799ece2e6d66a3a2551be4e7b54c065784f96fd"
+    }
+  ]
+}

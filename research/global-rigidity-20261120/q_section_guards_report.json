@@ -1,0 +1,139 @@
+{
+  "horizon_cases": 1520,
+  "horizon_literal_edges": 296400,
+  "horizon_max": 192,
+  "horizon_min": 3,
+  "independent_clock_pairs_excluded_in_finite_replay": 19319960,
+  "isolated_positive_meeting_trace": [
+    [
+      0,
+      4,
+      11,
+      1,
+      -1,
+      false
+    ],
+    [
+      1,
+      2,
+      17,
+      2,
+      -1,
+      false
+    ],
+    [
+      2,
+      1,
+      26,
+      3,
+      -1,
+      false
+    ],
+    [
+      3,
+      2,
+      13,
+      2,
+      -5,
+      false
+    ],
+    [
+      4,
+      1,
+      20,
+      3,
+      -7,
+      false
+    ],
+    [
+      5,
+      2,
+      10,
+      2,
+      -8,
+      false
+    ],
+    [
+      6,
+      1,
+      5,
+      2,
+      -4,
+      false
+    ],
+    [
+      7,
+      2,
+      8,
+      2,
+      -10,
+      false
+    ],
+    [
+      8,
+      1,
+      4,
+      2,
+      -5,
+      false
+    ],
+    [
+      9,
+      2,
+      2,
+      1,
+      -4,
+      false
+    ],
+    [
+      10,
+      1,
+      1,
+      1,
+      -2,
+      false
+    ],
+    [
+      11,
+      2,
+      2,
+      1,
+      -4,
+      false
+    ],
+    [
+      12,
+      1,
+      1,
+      1,
+      -2,
+      false
+    ]
+  ],
+  "literal_return_edges": 6444,
+  "oddpart_guard_cases": 696,
+  "orientation_control_cases": 512,
+  "rejected_corruptions": [
+    "empty word",
+    "wrong residue",
+    "zero slope",
+    "wrong offset",
+    "wrong orientation",
+    "boolean modulus"
+  ],
+  "return_certificates": 7,
+  "scope": "Finite exact replay of QG1-QG4 interfaces and examples; the all-H theorem rests on the written proof; no Collatz proof or universal guard termination claim.",
+  "signed_states_checked": 193,
+  "smaller_tripling_cases": 512,
+  "status": "PASS",
+  "t_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    17,
+    131073,
+    131074
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "all_horizon_cases": 940,
+  "all_horizon_literal_edges": 93060,
+  "endpoint_parity_counterexample": {
+    "H": 3,
+    "Y_H": 20,
+    "a": 6,
+    "floor": 11,
+    "oddpart_Y_H": 5,
+    "t": 1
+  },
+  "horizon_max": 96,
+  "horizon_min": 3,
+  "isolated_a4_control": {
+    "first_synchronous_meeting": 9,
+    "independent_meeting": [
+      0,
+      8
+    ],
+    "specified_one_meeting": 10,
+    "state_at_clock_10": [
+      1,
+      -2
+    ]
+  },
+  "method": "literal physical iteration and affine-slope reconstruction; author's state-transition code not imported",
+  "orientation_expansion_controls": 200,
+  "parity_qualified_oddpart_cases": 438,
+  "return_word_cases": 35,
+  "scope": "finite independent interface audit; no global guard-success claim",
+  "signed_states_checked": 151,
+  "status": "PASS"
+}

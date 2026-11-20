@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "all_unit_complex_phases": true,
+      "k": 6,
+      "nonzero_external_fiber_terms": 336,
+      "s": 1,
+      "squared_residual_lower": "345236447046499528295298384898146164986/40444567584072285494845746587731543164191",
+      "squared_residual_upper": "345236447046499528295298384898146166009/40444567584072285494845746587731543163679",
+      "states": 512,
+      "strict_norm_bound": "93/1000",
+      "support_sha256": "fe50677d06d0c9a39705b92049b00fb1c83b68b85aa07d4c79641e0a8f9f80d3"
+    },
+    {
+      "all_unit_complex_phases": true,
+      "k": 6,
+      "nonzero_external_fiber_terms": 336,
+      "s": 2,
+      "squared_residual_lower": "340282756875207085596893962297022819936/1417805610288391553312661317374376834654275",
+      "squared_residual_upper": "340282756875207085596893962297022820959/1417805610288391553312661317374376834653763",
+      "states": 512,
+      "strict_norm_bound": "2/125",
+      "support_sha256": "fe50677d06d0c9a39705b92049b00fb1c83b68b85aa07d4c79641e0a8f9f80d3"
+    },
+    {
+      "all_unit_complex_phases": true,
+      "k": 8,
+      "nonzero_external_fiber_terms": 348,
+      "s": 1,
+      "squared_residual_lower": "397646239992032156950410534098422223445/245338823519079855980930551337646569553079",
+      "squared_residual_upper": "397646239992032156950410534098422224468/245338823519079855980930551337646569552567",
+      "states": 512,
+      "strict_norm_bound": "41/1000",
+      "support_sha256": "f862ff52c9def6336da4ec92921fdc7a10113d0634f79c26a69490e41a3afcdc"
+    },
+    {
+      "all_unit_complex_phases": true,
+      "k": 8,
+      "nonzero_external_fiber_terms": 348,
+      "s": 2,
+      "squared_residual_lower": "340367578443610453513226889482711968463/37534828915884986602195090244262997952791181",
+      "squared_residual_upper": "340367578443610453513226889482711969486/37534828915884986602195090244262997952790669",
+      "states": 512,
+      "strict_norm_bound": "31/10000",
+      "support_sha256": "f862ff52c9def6336da4ec92921fdc7a10113d0634f79c26a69490e41a3afcdc"
+    }
+  ],
+  "method": "positive root/internal/external decomposition with outward rational bounds",
+  "producer_reuse": "only build_tree; no author verification or residual routine is called",
+  "scope": "finite ordinary convergent supports only; no Collatz closure",
+  "status": "PASS"
+}
