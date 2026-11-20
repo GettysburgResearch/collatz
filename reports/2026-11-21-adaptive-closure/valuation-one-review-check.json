@@ -1,0 +1,12 @@
+{
+  "case_a": "1016/1085",
+  "case_b": "405749/424576",
+  "checker_sha256": "5c73bafb2c04806204fc87ed123c828c756a3810859ddc8ab4fc0c59ab260bf7",
+  "closed_family_certificates": 9,
+  "evidence": "independent bounded exact arithmetic",
+  "exact_power_comparisons": 9,
+  "paired_B_sources": 128,
+  "residual_family_forced_paths": 13,
+  "scope": "Finite checks support the independently reconstructed V1--V4 proof; no Collatz closure.",
+  "status": "PASS"
+}
