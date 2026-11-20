@@ -1,0 +1,52 @@
+{
+  "coefficient": {
+    "case_q_7_mod_27": "405749/424576",
+    "case_q_not_7_mod_27": "1016/1085",
+    "energy_factor": "424576/18827",
+    "kappa": "405749/424576"
+  },
+  "counts": {
+    "closed_first_hit_families": 13,
+    "compiled_certificates": 20,
+    "cylinder_inputs_tested": 65536,
+    "cylinder_members": 256,
+    "endpoint_partition_cases": 1998,
+    "exact_power_inequalities": 9,
+    "literal_shortcut_edges": 218082,
+    "one_then_threes_boundaries": 129,
+    "paired_B_blocks": 999,
+    "rejected_controls": 10,
+    "residual_family_cases": 33,
+    "two_antecedent_identities": 1666,
+    "unresolved_controls": 36
+  },
+  "fixture_sha256": "1b7cd934038d08c77feebc0dece923fbf23a6bf488af98bb3e78e7ce9b136f98",
+  "grh_used": false,
+  "residual_k1": {
+    "clock": 14,
+    "endpoint": 455,
+    "odd_inputs": 8,
+    "source": 227,
+    "target_start": 1135
+  },
+  "scope": "Exact finite ordinary replay and exact rational comparisons for V1--V5. V1--V3 rederive or cross-check refreshed PR167--169 results; V4--V5 are scoped residual/boundary extensions. Universal claims rest on the written proof. No full five closure, residual-energy finiteness, or Collatz proof.",
+  "status": "PASS",
+  "zero_defect_controls_clock_oddcount": {
+    "1": [
+      0,
+      0
+    ],
+    "35": [
+      10,
+      3
+    ],
+    "5": [
+      4,
+      1
+    ],
+    "7": [
+      11,
+      5
+    ]
+  }
+}

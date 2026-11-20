@@ -1,0 +1,115 @@
+{
+  "additional_discard_examples": [
+    {
+      "B": 17,
+      "clock": 22,
+      "endpoint": 4,
+      "index": 22923,
+      "odd_count": 3,
+      "source": 618922
+    },
+    {
+      "B": 17,
+      "clock": 22,
+      "endpoint": 4,
+      "index": 22957,
+      "odd_count": 3,
+      "source": 619840
+    },
+    {
+      "B": 17,
+      "clock": 22,
+      "endpoint": 4,
+      "index": 22989,
+      "odd_count": 3,
+      "source": 620704
+    },
+    {
+      "B": 17,
+      "clock": 22,
+      "endpoint": 4,
+      "index": 23013,
+      "odd_count": 3,
+      "source": 621352
+    },
+    {
+      "B": 17,
+      "clock": 22,
+      "endpoint": 5,
+      "index": 28013,
+      "odd_count": 3,
+      "source": 756352
+    },
+    {
+      "B": 17,
+      "clock": 27,
+      "endpoint": 5,
+      "index": 29933,
+      "odd_count": 6,
+      "source": 808192
+    },
+    {
+      "B": 17,
+      "clock": 24,
+      "endpoint": 4,
+      "index": 30475,
+      "odd_count": 4,
+      "source": 822826
+    },
+    {
+      "B": 17,
+      "clock": 24,
+      "endpoint": 4,
+      "index": 30683,
+      "odd_count": 4,
+      "source": 828442
+    },
+    {
+      "B": 17,
+      "clock": 27,
+      "endpoint": 5,
+      "index": 31149,
+      "odd_count": 6,
+      "source": 841024
+    },
+    {
+      "B": 17,
+      "clock": 27,
+      "endpoint": 5,
+      "index": 32493,
+      "odd_count": 6,
+      "source": 877312
+    },
+    {
+      "B": 17,
+      "clock": 27,
+      "endpoint": 5,
+      "index": 32543,
+      "odd_count": 6,
+      "source": 878662
+    },
+    {
+      "B": 17,
+      "clock": 27,
+      "endpoint": 5,
+      "index": 32869,
+      "odd_count": 6,
+      "source": 887464
+    }
+  ],
+  "checker_sha256": "b0581f10bdfffbb4264b6d991fadc86228c0ebd459313b286fc293bdb538c4ba",
+  "counts": {
+    "additional_new_discards": 125685,
+    "discarded_by_both": 1,
+    "eligible_indices": 196608,
+    "new_discarded": 125686,
+    "old_discarded": 1,
+    "retained_by_conjunction": 70922
+  },
+  "exact_height_coefficient": "3727577/49152",
+  "fixture_sha256": "0d23b07701c68c15984d773b5535b27e6dd965fcc4c0cf89a962787883395796",
+  "limit": 262144,
+  "rejected_controls": 5,
+  "scope": "Exact bounded ordinary census and first-crossing inequalities; no new asymptotic count or universal convergence claim.",
+  "status": "PASS"
+}
