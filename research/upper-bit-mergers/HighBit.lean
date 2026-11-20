@@ -506,4 +506,502 @@ theorem power_first_prefix (b h r : ℕ) (hr : indexedStart r = 2 ^ b) : FirstPr
   unfold indexedStart at hs
   omega
 
+/-- Squared magnitude with the correction that makes both odd edges of
+the signed five-cycle attain equality. -/
+def mirrorWeight (x : ℕ) : ℕ := if x = 7 then 50 else x ^ 2
+
+private theorem sq_le_mirrorWeight (x : ℕ) : x ^ 2 ≤ mirrorWeight x := by
+  by_cases h : x = 7
+  · subst x
+    decide
+  · simp [mirrorWeight, h]
+
+private theorem mirror_small {x : ℕ} (hx : x < 5) : mirrorStep x < 5 := by
+  unfold mirrorStep
+  split <;> omega
+
+private theorem mirror_weight_step (x : ℕ) (hx : 5 ≤ x) :
+    (if x % 2 = 0 then 1 else 8) * mirrorWeight x ≤ 4 * mirrorWeight (mirrorStep x) := by
+  by_cases he : x % 2 = 0
+  · have hs : 2 * mirrorStep x = x := by simp [mirrorStep, he]; omega
+    have hn : x ≠ 7 := by omega
+    simp only [he, ite_true, one_mul, mirrorWeight, ite_eq_right hn]
+    change x ^ 2 ≤ 4 * mirrorWeight (mirrorStep x)
+    calc
+      x ^ 2 = (2 * mirrorStep x) ^ 2 := congrArg (fun z : ℕ => z ^ 2) hs.symm
+      _ = 4 * (mirrorStep x) ^ 2 := by ring
+      _ ≤ _ := Nat.mul_le_mul_left _ (sq_le_mirrorWeight _)
+  · by_cases h5 : x = 5
+    · subst x
+      decide
+    by_cases h7 : x = 7
+    · subst x
+      decide
+    have hs : 2 * mirrorStep x + 1 = 3 * x := by simp [mirrorStep, he]; omega
+    have hs2 := congrArg (fun z : ℕ => z ^ 2) hs
+    have hx6 : 6 ≤ x := by omega
+    have hsq := Nat.mul_le_mul_left x hx6
+    simp only [ite_eq_right he, mirrorWeight, ite_eq_right h7]
+    change 8 * x ^ 2 ≤ 4 * mirrorWeight (mirrorStep x)
+    calc
+      8 * x ^ 2 ≤ 4 * (mirrorStep x) ^ 2 := by
+        nlinarith only [hs2, hs, hsq]
+      _ ≤ _ := Nat.mul_le_mul_left _ (sq_le_mirrorWeight _)
+
+private theorem mirror_path_weight (x h : ℕ) (hy : 5 ≤ mirrorOrbit x h) :
+    8 ^ mirrorOdds x h * mirrorWeight x ≤ 4 ^ h * mirrorWeight (mirrorOrbit x h) := by
+  induction h with
+  | zero => simp [mirrorOdds, mirrorOrbit]
+  | succ h ih =>
+    have hx : 5 ≤ mirrorOrbit x h := by
+      by_contra! hn
+      exact (Nat.not_lt_of_ge hy) (mirror_small hn)
+    have hw := mirror_weight_step (mirrorOrbit x h) hx
+    have bound := ih hx
+    by_cases he : mirrorOrbit x h % 2 = 0
+    · simp only [he, ite_true, one_mul] at hw
+      simp only [mirrorOdds, he, ite_true, mirrorOrbit, pow_succ]
+      calc
+        _ ≤ _ := bound
+        _ ≤ 4 ^ h * (4 * mirrorWeight (mirrorStep (mirrorOrbit x h))) := Nat.mul_le_mul_left _ hw
+        _ = _ := by ring
+    · simp only [ite_eq_right he] at hw
+      simp only [mirrorOdds, ite_eq_right he, mirrorOrbit, pow_succ]
+      calc
+        8 ^ mirrorOdds x h * 8 * mirrorWeight x = 8 * (8 ^ mirrorOdds x h * mirrorWeight x) := by ring
+        _ ≤ 8 * (4 ^ h * mirrorWeight (mirrorOrbit x h)) := Nat.mul_le_mul_left _ bound
+        _ = 4 ^ h * (8 * mirrorWeight (mirrorOrbit x h)) := by ring
+        _ ≤ 4 ^ h * (4 * mirrorWeight (mirrorStep (mirrorOrbit x h))) := Nat.mul_le_mul_left _ hw
+        _ = _ := by ring
+
+/-- Every actual signed predecessor of five obeys the sharp clock bound.
+The squared form uses natural numbers throughout. -/
+theorem mirror_five_cost (x h : ℕ) (he : mirrorOrbit x h = 5) :
+    8 ^ mirrorOdds x h * x ^ 2 ≤ 4 ^ h * 25 := by
+  have hw := mirror_path_weight x h (by omega)
+  rw [he] at hw
+  exact (Nat.mul_le_mul_left _ (sq_le_mirrorWeight x)).trans hw
+
+private theorem mirror_five_blocks (k : ℕ) :
+    mirrorOrbit 5 (3 * k) = 5 ∧ mirrorOdds 5 (3 * k) = 2 * k := by
+  induction k with
+  | zero => simp [mirrorOrbit, mirrorOdds]
+  | succ k ih =>
+    rw [show 3 * (k + 1) = ((3 * k + 1) + 1) + 1 by omega]
+    simp [mirrorOrbit, mirrorOdds, ih.1, ih.2, mirrorStep]
+    omega
+
+theorem five_checkpoint (n k t : ℕ) (he : n + 5 = 8 ^ k * t) :
+    orbit n (3 * k) + 5 = 9 ^ k * t ∧ odds n (3 * k) = 2 * k := by
+  have hm := mirror_lift n 5 (3 * k) t (by decide) (by simpa [pow_mul] using he)
+  simpa [mirror_five_blocks, pow_mul] using hm
+
+private theorem odds_add (x i j : ℕ) :
+    odds x (i + j) = odds x i + odds (orbit x i) j := by
+  induction j with
+  | zero => simp [odds]
+  | succ j ih =>
+    change odds x ((i + j) + 1) = odds x i + odds (orbit x i) (j + 1)
+    by_cases he : orbit (orbit x i) j % 2 = 0 <;>
+      simp [odds, ih, orbit_add, he, Nat.add_assoc]
+
+private theorem one_multiplier (h : ℕ) : 3 ^ odds 1 h ≤ 2 * 2 ^ h := by
+  let q := h / 2
+  have hd : h = 2 * q + h % 2 := by dsimp [q]; omega
+  have hp : 3 ^ q ≤ 4 ^ q := Nat.pow_le_pow_left (by decide) q
+  have hf : (2 : ℕ) ^ (2 * q) = 4 ^ q := by rw [pow_mul]; rfl
+  rcases Nat.mod_two_eq_zero_or_one h with he | ho
+  · rw [he, Nat.add_zero] at hd
+    rw [hd, (cycle_counts q).2, hf]
+    omega
+  · rw [ho] at hd
+    rw [hd, odds, (cycle_counts q).1]
+    simp only [Nat.reduceMod, Nat.one_ne_zero, ite_false, pow_succ, (cycle_counts q).2, hf]
+    omega
+
+/-- Among starts 1, 2 and 3 the only forward multiplier above two is
+the two-step prefix from 3, which reaches 8. -/
+theorem small_seed_multiplier (x h : ℕ) (hx : 0 < x) (hx' : x ≤ 3) :
+    3 ^ odds x h ≤ 2 * 2 ^ h ∨ (x = 3 ∧ h = 2 ∧ orbit x h = 8) := by
+  have from_one (z b i : ℕ) (hz : orbit z b = 1) (hb : 3 ^ odds z b ≤ 2 ^ b) :
+      3 ^ odds z (b + i) ≤ 2 * 2 ^ (b + i) := by
+    rw [odds_add, hz, pow_add, pow_add]
+    calc
+      _ ≤ 2 ^ b * (2 * 2 ^ i) := Nat.mul_le_mul hb (one_multiplier i)
+      _ = _ := by ring
+  rcases (show x = 1 ∨ x = 2 ∨ x = 3 by omega) with rfl | rfl | rfl
+  · exact Or.inl (one_multiplier h)
+  · cases h with
+    | zero => decide
+    | succ i =>
+      exact Or.inl (by simpa [Nat.add_comm] using from_one 2 1 i (by decide) (by decide))
+  · by_cases hh : 5 ≤ h
+    · obtain ⟨i, rfl⟩ := Nat.exists_eq_add_of_le hh
+      exact Or.inl (from_one 3 5 i (by decide) (by decide))
+    · rcases (show h = 0 ∨ h = 1 ∨ h = 2 ∨ h = 3 ∨ h = 4 by omega) with rfl | rfl | rfl | rfl | rfl <;> decide
+
+private theorem mirror_from_five_min (x h : ℕ) (he : mirrorOrbit x h = 5) : 5 ≤ x := by
+  have low (z j : ℕ) (hz : z < 5) : mirrorOrbit z j < 5 := by
+    induction j with
+    | zero => exact hz
+    | succ j ih => exact mirror_small ih
+  by_contra! hb
+  have := low x h hb
+  omega
+
+private theorem mirror_slope_scaled (M L q k : ℕ) (hq : q ≤ 2 * k)
+    (hw : 8 ^ q * M ^ 2 ≤ 4 ^ L * 25) :
+    M * 8 ^ k ≤ 5 * 2 ^ L * 3 ^ (2 * k - q) := by
+  let d := 2 * k - q
+  have hd : q + d = 2 * k := by dsimp [d]; omega
+  have hp : 8 ^ d ≤ 9 ^ d := Nat.pow_le_pow_left (by decide) d
+  have hs : (M * 8 ^ k) ^ 2 ≤ (5 * 2 ^ L * 3 ^ d) ^ 2 := by
+    calc
+      (M * 8 ^ k) ^ 2 = (8 ^ q * M ^ 2) * 8 ^ d := by
+        rw [mul_pow, ← pow_mul, Nat.mul_comm k 2, ← hd, pow_add]
+        ring
+      _ ≤ (4 ^ L * 25) * 9 ^ d := Nat.mul_le_mul hw hp
+      _ = (5 * 2 ^ L * 3 ^ d) ^ 2 := by
+        rw [show (4 : ℕ) ^ L = (2 ^ L) ^ 2 by rw [← pow_mul, Nat.mul_comm L 2, pow_mul]; rfl,
+          show (9 : ℕ) ^ d = (3 ^ d) ^ 2 by rw [← pow_mul, Nat.mul_comm d 2, pow_mul]; rfl]
+        ring
+  exact (Nat.pow_le_pow_iff_left (by decide : 2 ≠ 0)).mp hs
+
+/-- Lifting a competitor with at most 2k odds to the signed cycle gives
+an ordinary signed magnitude and the lower bound on its clock. -/
+theorem checkpoint_suffix (z L k t : ℕ) (he : orbit z L + 5 = 9 ^ k * t)
+    (hq : odds z L ≤ 2 * k) :
+    ∃ M, 5 ≤ M ∧ z + M = 2 ^ L * 3 ^ (2 * k - odds z L) * t ∧
+      M * 8 ^ k ≤ 5 * 2 ^ L * 3 ^ (2 * k - odds z L) := by
+  let q := odds z L
+  let d := 2 * k - q
+  let v := 3 ^ d * t
+  have hd : q + d = 2 * k := by dsimp [d, q]; omega
+  have hterm : 3 ^ q * v = 9 ^ k * t := by
+    dsimp [v]
+    rw [← Nat.mul_assoc, ← pow_add, hd, pow_mul]
+    rfl
+  have ha := affine z L
+  change 2 ^ L * orbit z L = 3 ^ q * z + offset z L at ha
+  have hdiff : 3 ^ q * z < 3 ^ q * (2 ^ L * v) := by
+    calc
+      3 ^ q * z ≤ 2 ^ L * orbit z L := by omega
+      _ < 2 ^ L * (orbit z L + 5) := Nat.mul_lt_mul_of_pos_left (by omega) (by positivity)
+      _ = _ := by rw [he, ← hterm]; ring
+  have hz := Nat.lt_of_mul_lt_mul_left hdiff
+  let M := 2 ^ L * v - z
+  have hM : 0 < M := by dsimp [M]; omega
+  have hsum : z + M = 2 ^ L * v := by dsimp [M]; omega
+  obtain ⟨hend, hodd⟩ := mirror_lift z M L v hM hsum
+  change orbit z L + mirrorOrbit M L = 3 ^ (mirrorOdds M L) * v at hend
+  rw [← hodd, hterm] at hend
+  have hm : mirrorOrbit M L = 5 := by omega
+  refine ⟨M, mirror_from_five_min _ _ hm, ?_, ?_⟩
+  · simpa only [v, d, q, Nat.mul_assoc] using hsum
+  · apply mirror_slope_scaled M L (odds z L) k hq
+    rw [hodd]
+    exact mirror_five_cost _ _ hm
+
+private theorem offset_lower (x J : ℕ) : 3 ^ odds x J ≤ offset x J + 2 ^ J := by
+  induction J with
+  | zero => simp [odds, offset]
+  | succ J ih =>
+    by_cases hp : orbit x J % 2 = 0 <;>
+      simp only [odds, offset, hp, ite_true, ite_false, pow_succ] <;> omega
+
+private theorem odds_high_bit (x h m : ℕ) : odds (x + 2 ^ h * m) h = odds x h := by
+  induction h generalizing m with
+  | zero => rfl
+  | succ h ih =>
+    have hs : x + 2 ^ (h + 1) * m = x + 2 ^ h * (2 * m) := by ring
+    rw [hs, odds, odds, ih, high_bit]
+    have hh : (orbit x h + 3 ^ odds x h * (2 * m)) % 2 = orbit x h % 2 := by
+      rw [show 3 ^ odds x h * (2 * m) = 2 * (3 ^ odds x h * m) by ring]
+      omega
+    rw [hh]
+
+private theorem zero_prefix (h : ℕ) : orbit 0 h = 0 ∧ odds 0 h = 0 := by
+  induction h with
+  | zero => simp [orbit, odds]
+  | succ h ih => simp [orbit, odds, ih.1, ih.2, step]
+
+/-- A prefix ending a multiple of its ternary scale above a nonnegative
+endpoint has a positive ordinary companion when the prefix has an odd step. -/
+private theorem positive_prefix (m J D c : ℕ) (hd : 0 < odds m J)
+    (he : orbit m J = 3 ^ odds m J * D + c) :
+    ∃ β, 0 < β ∧ m = 2 ^ J * D + β ∧ orbit β J = c ∧ odds β J = odds m J := by
+  have hm : 2 ^ J * D < m := by
+    by_contra! hle
+    by_cases h : m = 2 ^ J * D
+    · have hz : m = 0 + 2 ^ J * D := by omega
+      have ho := odds_high_bit 0 J D
+      rw [← hz, (zero_prefix J).2] at ho
+      omega
+    · let p := 2 ^ J * D - m
+      have hp : 0 < p := by dsimp [p]; omega
+      have hs : m + p = 2 ^ J * D := by dsimp [p]; omega
+      obtain ⟨hr, ho⟩ := mirror_lift m p J D hp hs
+      rw [← ho, he] at hr
+      have := mirror_positive p J hp
+      omega
+  let β := m - 2 ^ J * D
+  have hb : 0 < β := by dsimp [β]; omega
+  have hs : m = β + 2 ^ J * D := by dsimp [β]; omega
+  have ho := odds_high_bit β J D
+  have hy := high_bit β J D
+  rw [← hs] at ho hy
+  rw [← ho] at hy
+  exact ⟨β, hb, by omega, by omega, ho.symm⟩
+
+private theorem short_suffix_above (z n L k t : ℕ) (hn : n + 5 = 8 ^ k * t)
+    (he : orbit z L + 5 = 9 ^ k * t) (hq : odds z L ≤ 2 * k) : n ≤ z := by
+  obtain ⟨M, hm, hsum, hbound⟩ := checkpoint_suffix z L k t he hq
+  have hc : M * (n + 5) ≤ 5 * (z + M) := by
+    calc
+      M * (n + 5) = (M * 8 ^ k) * t := by rw [hn]; ring
+      _ ≤ _ := Nat.mul_le_mul_right t hbound
+      _ = 5 * (z + M) := by rw [hsum]; ring
+  have hm' := Nat.mul_le_mul_right n hm
+  nlinarith only [hc, hm']
+
+private theorem equal_suffix_form (z n L k t : ℕ) (hn : n + 5 = 8 ^ k * t)
+    (he : orbit z L + 5 = 9 ^ k * t) (hq : odds z L = 2 * k) :
+    ∃ b c M, 5 ≤ M ∧ c + M = 5 * 2 ^ b ∧ z = 2 ^ b * n + c := by
+  obtain ⟨M, hm, hsum, hbound⟩ := checkpoint_suffix z L k t he hq.le
+  simp only [hq, Nat.sub_self, pow_zero, Nat.mul_one] at hsum hbound
+  have hlen : 3 * k ≤ L := by
+    have hh : 5 * 8 ^ k ≤ 5 * 2 ^ L :=
+      (Nat.mul_le_mul_right _ hm).trans hbound
+    have hp : 2 ^ (3 * k) ≤ 2 ^ L := by
+      simpa [pow_mul] using Nat.le_of_mul_le_mul_left hh (by decide : 0 < 5)
+    exact (Nat.pow_le_pow_iff_right (by decide : 1 < 2)).mp hp
+  let b := L - 3 * k
+  have hb : L = 3 * k + b := by dsimp [b]; omega
+  have hpow : 2 ^ L = 8 ^ k * 2 ^ b := by rw [hb, pow_add, pow_mul]; rfl
+  have hM : M ≤ 5 * 2 ^ b := by
+    rw [hpow, ← Nat.mul_left_comm, Nat.mul_comm M (8 ^ k)] at hbound
+    exact Nat.le_of_mul_le_mul_left hbound (by positivity)
+  let c := 5 * 2 ^ b - M
+  have hc : c + M = 5 * 2 ^ b := by dsimp [c]; omega
+  refine ⟨b, c, M, hm, hc, ?_⟩
+  have hs : z + M = 2 ^ b * (n + 5) := by rw [hsum, hpow, hn]; ring
+  nlinarith only [hs, hc]
+
+private theorem ordinary_positive (x h : ℕ) (hx : 0 < x) : 0 < orbit x h := by
+  induction h with
+  | zero => exact hx
+  | succ h ih => simp only [orbit, step]; split <;> omega
+
+private theorem small_seed_bound (β J d b c M : ℕ)
+    (hodd : odds β J = d) (hy : orbit β J = c)
+    (hM : 5 ≤ M) (hc : c + M = 5 * 2 ^ b) :
+    3 ^ d * (β + 1) < 5 * (2 ^ J * 2 ^ b) := by
+  have ha := affine β J
+  have hlo := offset_lower β J
+  rw [hy, hodd] at ha
+  rw [hodd] at hlo
+  calc
+    3 ^ d * (β + 1) = 3 ^ d * β + 3 ^ d := by ring
+    _ ≤ 2 ^ J * c + 2 ^ J := by omega
+    _ = 2 ^ J * (c + 1) := by ring
+    _ < 2 ^ J * (c + M) := Nat.mul_lt_mul_of_pos_left (by omega) (by positivity)
+    _ = 5 * (2 ^ J * 2 ^ b) := by rw [hc]; ring
+
+private theorem prefix_exclusion (m n J b c M : ℕ) (hlt : m < n) (hd : 0 < odds m J)
+    (hv : 3 ^ odds m J ∣ n) (hM : 5 ≤ M) (hc : c + M = 5 * 2 ^ b)
+    (he : orbit m J = 2 ^ b * n + c) : False := by
+  obtain ⟨s, hs⟩ := hv
+  let d := odds m J
+  have hz : orbit m J = 3 ^ d * (2 ^ b * s) + c := by rw [he, hs]; dsimp [d]; ring
+  obtain ⟨β, hβ, hm, hβc, hβd⟩ := positive_prefix m J (2 ^ b * s) c hd hz
+  change odds β J = d at hβd
+  have hmul : (2 ^ J * 2 ^ b) * s < 3 ^ d * s := by
+    rw [Nat.mul_assoc, ← hs]
+    omega
+  have hsmall := Nat.lt_of_mul_lt_mul_right hmul
+  have hβs : 3 ^ d * (β + 1) < 3 ^ d * 5 := by
+    calc
+      _ < _ := small_seed_bound β J d b c M hβd hβc hM hc
+      _ < _ := by simpa [Nat.mul_comm] using Nat.mul_lt_mul_of_pos_left hsmall (by decide : 0 < 5)
+  have hβ3 : β ≤ 3 := by have := Nat.lt_of_mul_lt_mul_left hβs; omega
+  rcases small_seed_multiplier β J hβ hβ3 with hr | ⟨h3, hJ, h8⟩
+  · rw [hβd] at hr
+    have hB : 2 ^ b < 2 := by
+      apply Nat.lt_of_mul_lt_mul_left (Nat.lt_of_lt_of_le hsmall _)
+      simpa [Nat.mul_comm] using hr
+    have hp : 0 < 2 ^ b := by positivity
+    have hcp := ordinary_positive β J hβ
+    omega
+  · have hdd : d = 2 := by rw [← hβd, h3, hJ]; decide
+    rw [hJ, hdd] at hsmall
+    norm_num at hsmall
+    omega
+
+private theorem odds_hits (m H d : ℕ) (hd : d ≤ odds m H) :
+    ∃ J, J ≤ H ∧ odds m J = d := by
+  induction H with
+  | zero =>
+    have hh : d = 0 := by simpa [odds] using hd
+    exact ⟨0, le_rfl, hh.symm⟩
+  | succ H ih =>
+    by_cases h : d ≤ odds m H
+    · obtain ⟨J, hJ, ho⟩ := ih h
+      exact ⟨J, by omega, ho⟩
+    · refine ⟨H + 1, le_rfl, ?_⟩
+      simp only [odds] at hd ⊢
+      split at hd <;> split <;> omega
+
+theorem checkpoint_odd_budget (m n H k A t : ℕ) (hm : m < n)
+    (hn : n + 5 = 8 ^ k * t) (hv : 3 ^ A ∣ n) (he : orbit m H + 5 = 9 ^ k * t) :
+    2 * k + A < odds m H := by
+  by_contra! hbudget
+  by_cases low : odds m H ≤ 2 * k
+  · exact (Nat.not_le_of_gt hm) (short_suffix_above m n H k t hn he low)
+  let d := odds m H - 2 * k
+  have hd : 0 < d := by dsimp [d]; omega
+  have hdA : d ≤ A := by dsimp [d]; omega
+  obtain ⟨J, hJ, hodd⟩ := odds_hits m H d (by dsimp [d]; omega)
+  let L := H - J
+  have hL : J + L = H := by dsimp [L]; omega
+  have hq := odds_add m J L
+  rw [hL, hodd] at hq
+  have hq' : odds (orbit m J) L = 2 * k := by dsimp [d] at hq; omega
+  have ht : orbit (orbit m J) L + 5 = 9 ^ k * t := by rwa [← orbit_add, hL]
+  obtain ⟨b, c, M, hM, hc, hz⟩ := equal_suffix_form (orbit m J) n L k t hn ht hq'
+  apply prefix_exclusion m n J b c M hm (by omega) _ hM hc hz
+  rw [hodd]
+  exact dvd_trans (Nat.pow_dvd_pow 3 hdA) hv
+
+/-- Every smaller ordinary source meeting before the checkpoint has to
+spend more than A extra odd steps, with no limit on its own clock. -/
+theorem early_meeting_odd_budget (m n i j k A t : ℕ) (hm : m < n)
+    (hn : n + 5 = 8 ^ k * t) (hv : 3 ^ A ∣ n) (hi : i ≤ 3 * k)
+    (meet : orbit m j = orbit n i) : odds n i + A < odds m j := by
+  let L := 3 * k - i
+  have hL : i + L = 3 * k := by dsimp [L]; omega
+  obtain ⟨hy, hq⟩ := five_checkpoint n k t hn
+  have he : orbit m (j + L) + 5 = 9 ^ k * t := by
+    rwa [orbit_add, meet, ← orbit_add, hL]
+  have hh := checkpoint_odd_budget m n (j + L) k A t hm hn hv he
+  rw [odds_add, meet] at hh
+  have hq' := odds_add n i L
+  rw [hL, hq] at hq'
+  omega
+
+private theorem odd_growth (x h : ℕ) :
+    2 ^ odds x h * (orbit x h + 1) ≤ 3 ^ odds x h * (x + 1) := by
+  induction h with
+  | zero => simp [orbit, odds]
+  | succ h ih =>
+    by_cases he : orbit x h % 2 = 0
+    · simp only [odds, he, ite_true, orbit]
+      have hs : step (orbit x h) + 1 ≤ orbit x h + 1 := by simp [step, he]; omega
+      exact (Nat.mul_le_mul_left _ hs).trans ih
+    · have hs : 2 * (step (orbit x h) + 1) = 3 * (orbit x h + 1) := by simp [step, he]; omega
+      simp only [odds, ite_eq_right he, orbit, pow_succ]
+      calc
+        _ = 2 ^ odds x h * (3 * (orbit x h + 1)) := by rw [Nat.mul_assoc, hs]
+        _ = 3 * (2 ^ odds x h * (orbit x h + 1)) := by ring
+        _ ≤ 3 * (3 ^ odds x h * (x + 1)) := Nat.mul_le_mul_left _ ih
+        _ = _ := by ring
+
+/-- A merger only e odds beyond the ternary valuation yields a bounded
+ordinary start that realizes A odd steps with a multiplier bounded below. -/
+theorem checkpoint_small_witness (m n H k A e t : ℕ) (hm : m < n) (hA : 0 < A)
+    (hn : n + 5 = 8 ^ k * t) (hv : 3 ^ A ∣ n) (he : orbit m H + 5 = 9 ^ k * t)
+    (ho : odds m H = 2 * k + A + e) :
+    ∃ β J, 0 < β ∧ 2 ^ e * (β + 1) < 5 * 3 ^ e ∧
+      odds β J = A ∧ 2 ^ e * 2 ^ J < 3 ^ e * 3 ^ A := by
+  obtain ⟨I, hI, hIo⟩ := odds_hits m H e (by omega)
+  let v := orbit m I
+  let N := H - I
+  have hIN : I + N = H := by dsimp [N]; omega
+  have hNv := odds_add m I N
+  rw [hIN, hIo, ho] at hNv
+  have hN : odds v N = 2 * k + A := by dsimp [v]; omega
+  have hve : orbit v N + 5 = 9 ^ k * t := by unfold v; rwa [← orbit_add, hIN]
+  obtain ⟨J, hJ, hJo⟩ := odds_hits v N A (by omega)
+  let L := N - J
+  have hJL : J + L = N := by dsimp [L]; omega
+  have hLo := odds_add v J L
+  rw [hJL, hJo, hN] at hLo
+  have hz : orbit (orbit v J) L + 5 = 9 ^ k * t := by rwa [← orbit_add, hJL]
+  obtain ⟨b, c, M, hM, hc, hzc⟩ := equal_suffix_form (orbit v J) n L k t hn hz (by omega)
+  obtain ⟨s, hs⟩ := hv
+  have hzc' : orbit v J = 3 ^ odds v J * (2 ^ b * s) + c := by rw [hzc, hs, hJo]; ring
+  obtain ⟨β, hβ, hform, hβc, hβo⟩ := positive_prefix v J (2 ^ b * s) c (by omega) hzc'
+  rw [hJo] at hβo
+  have hbound := small_seed_bound β J A b c M hβo hβc hM hc
+  have hg := odd_growth m I
+  rw [hIo] at hg
+  change 2 ^ e * (v + 1) ≤ 3 ^ e * (m + 1) at hg
+  have hscale : 2 ^ e * (2 ^ J * 2 ^ b) < 3 ^ e * 3 ^ A := by
+    apply Nat.lt_of_mul_lt_mul_right (a := s)
+    calc
+      (2 ^ e * (2 ^ J * 2 ^ b)) * s = 2 ^ e * (2 ^ J * (2 ^ b * s)) := by ring
+      _ < 2 ^ e * (v + 1) := Nat.mul_lt_mul_of_pos_left (by omega) (by positivity)
+      _ ≤ _ := hg
+      _ ≤ 3 ^ e * n := Nat.mul_le_mul_left _ (by omega)
+      _ = _ := by rw [hs]; ring
+  refine ⟨β, J, hβ, ?_, hβo, ?_⟩
+  · apply Nat.lt_of_mul_lt_mul_left (a := 3 ^ A)
+    calc
+      3 ^ A * (2 ^ e * (β + 1)) = 2 ^ e * (3 ^ A * (β + 1)) := by ring
+      _ < 2 ^ e * (5 * (2 ^ J * 2 ^ b)) := Nat.mul_lt_mul_of_pos_left hbound (by positivity)
+      _ = 5 * (2 ^ e * (2 ^ J * 2 ^ b)) := by ring
+      _ < 5 * (3 ^ e * 3 ^ A) := Nat.mul_lt_mul_of_pos_left hscale (by decide)
+      _ = _ := by ring
+  · have hb : 1 ≤ 2 ^ b := Nat.succ_le_of_lt (by positivity : 0 < 2 ^ b)
+    have hJb : 2 ^ J ≤ 2 ^ J * 2 ^ b := by simpa using Nat.mul_le_mul_left (2 ^ J) hb
+    exact (Nat.mul_le_mul_left _ hJb).trans_lt hscale
+
+private theorem small_cycle_odds (y q : ℕ) (hy : y = 1 ∨ y = 2) : odds y (2 * q) = q := by
+  rcases hy with rfl | rfl
+  · exact (cycle_counts q).2
+  · have both : orbit 2 (2 * q) = 2 ∧ odds 2 (2 * q) = q := by
+      induction q with
+      | zero => simp [orbit, odds]
+      | succ q ih =>
+        rw [show 2 * (q + 1) = (2 * q + 1) + 1 by omega]
+        simp [orbit, odds, ih.1, ih.2, step]
+    exact both.2
+
+private theorem first_six_after_six (x J : ℕ) (hx : 0 < x) (hx' : x ≤ 6) (hJ : 6 ≤ J) :
+    3 * 3 ^ odds x J ≤ 2 * 2 ^ J := by
+  let b := 6 + J % 2
+  let q := (J - b) / 2
+  have hdecomp : J = b + 2 * q := by dsimp [b, q]; omega
+  have hb : b = 6 ∨ b = 7 := by dsimp [b]; omega
+  have base : (orbit x b = 1 ∨ orbit x b = 2) ∧ 3 * 3 ^ odds x b ≤ 2 * 2 ^ b := by
+    have choices : x = 1 ∨ x = 2 ∨ x = 3 ∨ x = 4 ∨ x = 5 ∨ x = 6 := by omega
+    rcases choices with rfl | rfl | rfl | rfl | rfl | rfl <;>
+      rcases hb with hb | hb <;> rw [hb] <;> decide
+  have hp : 3 ^ q ≤ 4 ^ q := Nat.pow_le_pow_left (by decide) q
+  rw [hdecomp, odds_add, small_cycle_odds _ _ base.1, pow_add, pow_add, pow_mul]
+  calc
+    _ = (3 * 3 ^ odds x b) * 3 ^ q := by ring
+    _ ≤ (2 * 2 ^ b) * 4 ^ q := Nat.mul_le_mul base.2 hp
+    _ = _ := by ring
+
+/-- When A is at least six, one extra odd step is still insufficient. -/
+theorem early_meeting_large_odd_budget (m n i j k A t : ℕ) (hm : m < n) (hA : 6 ≤ A)
+    (hn : n + 5 = 8 ^ k * t) (hv : 3 ^ A ∣ n) (hi : i ≤ 3 * k)
+    (meet : orbit m j = orbit n i) : odds n i + A + 1 < odds m j := by
+  have hlow := early_meeting_odd_budget m n i j k A t hm hn hv hi meet
+  by_contra! hupper
+  let L := 3 * k - i
+  have hL : i + L = 3 * k := by dsimp [L]; omega
+  obtain ⟨hy, hq⟩ := five_checkpoint n k t hn
+  have he : orbit m (j + L) + 5 = 9 ^ k * t := by rwa [orbit_add, meet, ← orbit_add, hL]
+  have hq' := odds_add n i L
+  rw [hL, hq] at hq'
+  have hodd : odds m (j + L) = 2 * k + A + 1 := by rw [odds_add, meet]; omega
+  obtain ⟨β, J, hβ, hb, hj, hh⟩ :=
+    checkpoint_small_witness m n (j + L) k A 1 t hm (by omega) hn hv he hodd
+  norm_num at hb hh
+  have hcounts := counts β J
+  have bound := first_six_after_six β J hβ (by omega) (by omega)
+  rw [hj] at bound
+  omega
+
 end CollatzUpperBit
