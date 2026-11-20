@@ -310,4 +310,123 @@ theorem collatz_iff_binary_mergers :
         simp only [step, ite_eq_right he]
         omega
 
+def indexedStart (w : ℕ) : ℕ := 1 + 3 * w
+
+def SamePrefix (h r v : ℕ) : Prop :=
+  odds (indexedStart r) h = odds (indexedStart v) h ∧
+  orbit (indexedStart r) h = orbit (indexedStart v) h
+
+def FirstPrefix (h r : ℕ) : Prop := ∀ v < r, ¬ SamePrefix h v r
+
+theorem indexed_tail (h r m : ℕ) :
+    orbit (indexedStart (r + 2 ^ h * m)) h =
+      orbit (indexedStart r) h + 3 ^ (odds (indexedStart r) h + 1) * m := by
+  rw [show indexedStart (r + 2 ^ h * m) = indexedStart r + 2 ^ h * (3 * m) by
+    unfold indexedStart
+    ring, high_bit, pow_succ]
+  ring
+
+theorem prefix_tail_equal {h r v : ℕ} (hp : SamePrefix h r v) (m : ℕ) :
+    orbit (indexedStart (r + 2 ^ h * m)) h = orbit (indexedStart (v + 2 ^ h * m)) h := by
+  rw [indexed_tail, indexed_tail, hp.1, hp.2]
+
+theorem indexed_endpoint_bound {h r : ℕ} (hr : r < 2 ^ h) :
+    orbit (indexedStart r) h < 4 * 3 ^ odds (indexedStart r) h := by
+  have hs : indexedStart r < 3 * 2 ^ h := by unfold indexedStart; omega
+  have hh : (0 : ℝ) < 2 ^ h := by positivity
+  have ha : (1 : ℝ) ≤ 2 ^ odds (indexedStart r) h := one_le_pow₀ (by norm_num)
+  have hg : (0 : ℝ) < 3 ^ odds (indexedStart r) h := by positivity
+  have hpos := (prefix_position (indexedStart r) h).2
+  have hleft : (indexedStart r : ℝ) / 2 ^ h < 3 := (div_lt_iff₀ hh).2 (by exact_mod_cast hs)
+  have hright : (1 : ℝ) / 2 ^ odds (indexedStart r) h ≤ 1 := by
+    apply (div_le_iff₀ (by positivity)).2
+    simpa using ha
+  have hnorm : (orbit (indexedStart r) h : ℝ) / 3 ^ odds (indexedStart r) h < 4 := by linarith
+  exact_mod_cast (div_lt_iff₀ hg).1 hnorm
+
+theorem prefix_pair_iff {h r v : ℕ} (hp : SamePrefix h r v) (m n : ℕ) :
+    Meets (indexedStart (r + 2 ^ h * m)) (indexedStart (r + 2 ^ h * n)) ↔
+    Meets (indexedStart (v + 2 ^ h * m)) (indexedStart (v + 2 ^ h * n)) := by
+  have hm : Meets (indexedStart (r + 2 ^ h * m)) (indexedStart (v + 2 ^ h * m)) :=
+    ⟨h, h, prefix_tail_equal hp m⟩
+  have hn : Meets (indexedStart (r + 2 ^ h * n)) (indexedStart (v + 2 ^ h * n)) :=
+    ⟨h, h, prefix_tail_equal hp n⟩
+  exact ⟨fun H => meets_trans (meets_symm hm) (meets_trans H hn),
+    fun H => meets_trans hm (meets_trans H (meets_symm hn))⟩
+
+/-- A single least representative per endpoint and odd count covers every
+original binary-merger obligation at that depth. -/
+theorem collatz_iff_first_representatives :
+    (∀ n : ℕ, 0 < n → ∃ i, orbit n i = 1) ↔
+    (∀ j r : ℕ, r < 2 ^ j → FirstPrefix j r →
+      Meets (indexedStart r) (indexedStart (r + 2 ^ j))) := by
+  rw [collatz_iff_binary_mergers]
+  constructor
+  · exact fun all j r hr _ => all j r hr
+  · intro roots j r hr
+    induction r using Nat.strong_induction_on with
+    | h r ih =>
+      by_cases hf : FirstPrefix j r
+      · exact roots j r hr hf
+      · unfold FirstPrefix at hf
+        push Not at hf
+        obtain ⟨v, hv, hp⟩ := hf
+        have he := prefix_pair_iff hp 0 1
+        simp only [Nat.mul_zero, Nat.add_zero, Nat.mul_one] at he
+        exact he.mp (ih v hv (lt_trans hv hr))
+
+private theorem orbit_first (x h : ℕ) : orbit x (h + 1) = orbit (step x) h := by
+  rw [Nat.add_comm h 1, orbit_add]
+  rfl
+
+theorem strip_twos (x h : ℕ) : orbit (2 ^ h * x) h = x := by
+  induction h with
+  | zero => simp [orbit]
+  | succ h ih =>
+    rw [orbit_first, show 2 ^ (h + 1) * x = 2 * (2 ^ h * x) by ring,
+      show step (2 * (2 ^ h * x)) = 2 ^ h * x by simp [step]]
+    exact ih
+
+private theorem exact_odd_block {x y e : ℕ} (he : 3 * x + 1 = 2 ^ (e + 1) * y) :
+    orbit x (e + 1) = y := by
+  have ha : 3 * x + 1 = 2 * (2 ^ e * y) := he.trans (by ring)
+  have ho : x % 2 ≠ 0 := by omega
+  rw [orbit_first, show step x = 2 ^ e * y by simp [step, ho, ha]]
+  exact strip_twos _ _
+
+/-- Blocks are listed last first. An entry e represents one odd step and
+e subsequent halvings. -/
+def routeTime : List ℕ → ℕ
+  | [] => 0
+  | e :: es => routeTime es + (e + 1)
+
+def routeNumerator (x : ℕ) : List ℕ → ℕ
+  | [] => x
+  | _ :: es => 3 * routeNumerator x es + 2 ^ routeTime es
+
+/-- An integral affine certificate forces all intermediate divisions to be
+legal and proves the claimed orbit endpoint for an arbitrary block list. -/
+theorem route_from_numerator (x : ℕ) (es : List ℕ) (t : ℕ)
+    (h : routeNumerator x es = 2 ^ routeTime es * t) : orbit x (routeTime es) = t := by
+  induction es generalizing t with
+  | nil => simpa [routeNumerator, routeTime, orbit] using h
+  | cons e es ih =>
+    have ha : 3 * routeNumerator x es + 2 ^ routeTime es =
+        2 ^ routeTime es * (2 ^ (e + 1) * t) := by
+      simpa only [routeNumerator, routeTime, pow_add, Nat.mul_assoc] using h
+    have hd : 2 ^ routeTime es ∣ 3 * routeNumerator x es :=
+      (Nat.dvd_add_iff_left (dvd_refl _)).mpr ⟨_, ha⟩
+    have hc : Nat.Coprime (2 ^ routeTime es) 3 :=
+      Nat.Coprime.pow_left _ (by decide : Nat.Coprime 2 3)
+    obtain ⟨y, hy⟩ := hc.dvd_of_dvd_mul_left hd
+    have hb : 3 * y + 1 = 2 ^ (e + 1) * t := by
+      apply Nat.eq_of_mul_eq_mul_left (show 0 < 2 ^ routeTime es by positivity)
+      calc
+        2 ^ routeTime es * (3 * y + 1) = 3 * routeNumerator x es + 2 ^ routeTime es := by
+          rw [hy]
+          ring
+        _ = _ := ha
+    rw [routeTime, orbit_add, ih y hy]
+    exact exact_odd_block hb
+
 end CollatzUpperBit
