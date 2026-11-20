@@ -11,6 +11,8 @@ $$
 $$
 Consequently eventual validity of $t\sim5t+1$, or even $\liminf_{X\to\infty} B(X)/\log_2 X<1$, is equivalent to the full conjecture. A still weaker equivalent condition is that $B(X)-\log_2 X$ be unbounded below. In the other direction full convergence gives $B(X)=0$ identically. Lean verifies the equivalence with eventual merger in `collatz_iff_eventual_five_ray`. The quantitative lower bound is a written proof about permanent failures at unrestricted clocks. [Formal source](HighBit.lean) · [All-parameter five-ray criterion](AFFINE_RAYS.md)
 
+A further written argument proves $B(X)/\log X\to\infty$ if a counterexample exists. Its proof also gives an equivalent single family with compatible slopes. [Multiplication by three and removal of the remaining exceptions](THREE_RAY.md)
+
 ## Lifting a failed multiplication by three
 
 Always $f(2x)=f(x)$. There is an exact two-step identity $T^2(4u+1)=3u+1$. Suppose $f(3x)\ne f(x)$ for some $x$. For each integer $a\ge2$ at least one of
