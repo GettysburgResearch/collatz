@@ -1,0 +1,516 @@
+{
+  "equality": [
+    {
+      "file": "check_reverse_cover.py",
+      "normal_optimized_identical": true,
+      "pass": true
+    },
+    {
+      "file": "check_direct_r_words.py",
+      "normal_optimized_identical": true,
+      "pass": true
+    },
+    {
+      "file": "check_least_r_failure.py",
+      "normal_optimized_identical": true,
+      "pass": true
+    },
+    {
+      "file": "check_r_bypass.py",
+      "normal_optimized_identical": true,
+      "pass": true
+    },
+    {
+      "file": "check_source_zero_descent.py",
+      "normal_optimized_identical": true,
+      "pass": true
+    }
+  ],
+  "finished_utc": "2026-11-20T23:37:43.366464+00:00",
+  "full_theorem": "OPEN",
+  "integer_serialization": "Python arbitrary-precision integers; no floating conversion",
+  "local_base_head": "b1503b7079c4ee549efccec6bbc77dbddfafed93",
+  "published_base_head": "5a7c86c94a9e2a7a064c0c84faa697d00d1c4d1b",
+  "records": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "research/witness-global-closure-20261121/check_reverse_cover.py"
+      ],
+      "exit_code": 0,
+      "file": "check_reverse_cover.py",
+      "optimized": false,
+      "report": {
+        "formal_verification": false,
+        "frozen_data_sha256": "fac1eb6d3f3217189c6bb9fa8b366428a02ce6bbac67379f6071dc558d95743f",
+        "full_claim": "OPEN",
+        "paired_five_seed": {
+          "clock": 71,
+          "endpoints": [
+            1215835,
+            6079175
+          ],
+          "odd_inputs_each": 37,
+          "source": 6375551795
+        },
+        "rejected_damage_controls": [
+          "missing cover row",
+          "nonunit source class",
+          "invalid class modulus",
+          "zero division exponent",
+          "nonintegral forward step",
+          "nonintegral inverse step",
+          "illegal tripling source",
+          "invalid terminal descent"
+        ],
+        "reverse_cover": {
+          "common_modulus": 62208,
+          "contraction": "24/25",
+          "covered_unit_residues": 20736,
+          "eligible_triplings": 284,
+          "expanded_graph_moves": 3974,
+          "general_positive_height_factor": "355995/23",
+          "height_equality_witness": {
+            "first_t": 0,
+            "location": "first_legal_input",
+            "modulus": 432,
+            "query_intercept": 71199,
+            "query_slope": 1327104,
+            "residue": 23,
+            "row": 22,
+            "token": 22
+          },
+          "maximum_direct_R_antecedent_ratio": "213597/23",
+          "maximum_word_moves": 198,
+          "rows": 71
+        },
+        "source_commit": "fd991063721e9c157d318e40bb20131762f7d750",
+        "status": "PASS"
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.13068452700099442
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/witness-global-closure-20261121/check_reverse_cover.py"
+      ],
+      "exit_code": 0,
+      "file": "check_reverse_cover.py",
+      "optimized": true,
+      "report": {
+        "formal_verification": false,
+        "frozen_data_sha256": "fac1eb6d3f3217189c6bb9fa8b366428a02ce6bbac67379f6071dc558d95743f",
+        "full_claim": "OPEN",
+        "paired_five_seed": {
+          "clock": 71,
+          "endpoints": [
+            1215835,
+            6079175
+          ],
+          "odd_inputs_each": 37,
+          "source": 6375551795
+        },
+        "rejected_damage_controls": [
+          "missing cover row",
+          "nonunit source class",
+          "invalid class modulus",
+          "zero division exponent",
+          "nonintegral forward step",
+          "nonintegral inverse step",
+          "illegal tripling source",
+          "invalid terminal descent"
+        ],
+        "reverse_cover": {
+          "common_modulus": 62208,
+          "contraction": "24/25",
+          "covered_unit_residues": 20736,
+          "eligible_triplings": 284,
+          "expanded_graph_moves": 3974,
+          "general_positive_height_factor": "355995/23",
+          "height_equality_witness": {
+            "first_t": 0,
+            "location": "first_legal_input",
+            "modulus": 432,
+            "query_intercept": 71199,
+            "query_slope": 1327104,
+            "residue": 23,
+            "row": 22,
+            "token": 22
+          },
+          "maximum_direct_R_antecedent_ratio": "213597/23",
+          "maximum_word_moves": 198,
+          "rows": 71
+        },
+        "source_commit": "fd991063721e9c157d318e40bb20131762f7d750",
+        "status": "PASS"
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.19219420200170134
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "research/witness-global-closure-20261121/check_direct_r_words.py"
+      ],
+      "exit_code": 0,
+      "file": "check_direct_r_words.py",
+      "optimized": false,
+      "report": {
+        "a4_complete_witness_reconstructions": 8,
+        "affine_induction_schema_identities": 6,
+        "evidence_limit": "Exact affine identities and stated finite fixtures; no all-word coverage or formal verification.",
+        "exact_height_thresholds": {
+          "even_first_letter": 60,
+          "odd_first_letter": 65
+        },
+        "full_R": "UNRESOLVED",
+        "least_failure_a1_a2_tail_valuation_max": 12,
+        "malformed_or_unsupported_inputs_rejected": 8,
+        "normal_form_fixtures": 26,
+        "normal_form_padding_reconstructions": 26,
+        "one_letter_residual_fixtures": 2,
+        "regular_language_complete_witness_reconstructions": 32,
+        "status": "PASS"
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.042186597998806974
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/witness-global-closure-20261121/check_direct_r_words.py"
+      ],
+      "exit_code": 0,
+      "file": "check_direct_r_words.py",
+      "optimized": true,
+      "report": {
+        "a4_complete_witness_reconstructions": 8,
+        "affine_induction_schema_identities": 6,
+        "evidence_limit": "Exact affine identities and stated finite fixtures; no all-word coverage or formal verification.",
+        "exact_height_thresholds": {
+          "even_first_letter": 60,
+          "odd_first_letter": 65
+        },
+        "full_R": "UNRESOLVED",
+        "least_failure_a1_a2_tail_valuation_max": 12,
+        "malformed_or_unsupported_inputs_rejected": 8,
+        "normal_form_fixtures": 26,
+        "normal_form_padding_reconstructions": 26,
+        "one_letter_residual_fixtures": 2,
+        "regular_language_complete_witness_reconstructions": 32,
+        "status": "PASS"
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.11645761099862284
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "research/witness-global-closure-20261121/check_least_r_failure.py"
+      ],
+      "exit_code": 0,
+      "file": "check_least_r_failure.py",
+      "optimized": false,
+      "report": {
+        "damaged_witnesses_rejected": 8,
+        "even_excluded_from": 60,
+        "finite_endpoint_certificates": {
+          "25": {
+            "odd_steps": 137,
+            "total_exponent": 257,
+            "x": 847288609443
+          },
+          "8": {
+            "odd_steps": 24,
+            "total_exponent": 51,
+            "x": 6561
+          }
+        },
+        "full_claim": "UNRESOLVED",
+        "general_height": "355995/23",
+        "height_bound_dependency": "RGA-003; independently replay check_reverse_cover.py",
+        "modular_orders": {
+          "243": 162,
+          "81": 54
+        },
+        "odd_excluded_from": 65,
+        "rank_two_base_margins": {
+          "a1_b184": 1127916708755960028487587856817003422024439345672964291156,
+          "a2_b68": 21216613977327659747436,
+          "a3_b118": 61129396765715944561205053526148460248
+        },
+        "rank_two_source_witness_fixtures": 6,
+        "rank_two_universal_affine_prefix_states": 12,
+        "scope": "Least global R failure only; remaining families are not proved.",
+        "status": "PASS",
+        "unit_height": "213597/23"
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.05190318200038746
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/witness-global-closure-20261121/check_least_r_failure.py"
+      ],
+      "exit_code": 0,
+      "file": "check_least_r_failure.py",
+      "optimized": true,
+      "report": {
+        "damaged_witnesses_rejected": 8,
+        "even_excluded_from": 60,
+        "finite_endpoint_certificates": {
+          "25": {
+            "odd_steps": 137,
+            "total_exponent": 257,
+            "x": 847288609443
+          },
+          "8": {
+            "odd_steps": 24,
+            "total_exponent": 51,
+            "x": 6561
+          }
+        },
+        "full_claim": "UNRESOLVED",
+        "general_height": "355995/23",
+        "height_bound_dependency": "RGA-003; independently replay check_reverse_cover.py",
+        "modular_orders": {
+          "243": 162,
+          "81": 54
+        },
+        "odd_excluded_from": 65,
+        "rank_two_base_margins": {
+          "a1_b184": 1127916708755960028487587856817003422024439345672964291156,
+          "a2_b68": 21216613977327659747436,
+          "a3_b118": 61129396765715944561205053526148460248
+        },
+        "rank_two_source_witness_fixtures": 6,
+        "rank_two_universal_affine_prefix_states": 12,
+        "scope": "Least global R failure only; remaining families are not proved.",
+        "status": "PASS",
+        "unit_height": "213597/23"
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.13825449099749676
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "research/witness-global-closure-20261121/check_r_bypass.py"
+      ],
+      "exit_code": 0,
+      "file": "check_r_bypass.py",
+      "optimized": false,
+      "report": {
+        "additional_ladder_fixture_reconstructions": 4,
+        "affine_forms_checked": 523,
+        "complete_cover": false,
+        "conditional_calls_in_certificate_words": 29,
+        "evidence_limit": "Exact infinite-cell identities and bounded fixture reconstruction only.",
+        "fixture_reconstructions": 108,
+        "full_R_theorem": "OPEN",
+        "invalid_controls_rejected": 15,
+        "missing_child_returns_unresolved": 34,
+        "nonminimal_source_fixture_reconstructions": 54,
+        "partition": {
+          "certified_cells": 27,
+          "covered_relative_density": "153468843955/1043677052928",
+          "excluded_base_parameters": 0,
+          "exhaustive_partition": true,
+          "unresolved_cells": 341
+        },
+        "status": "PASS",
+        "unbounded_ladder": {
+          "all_k_induction": "proved in R_BYPASS.md RB-004",
+          "generator_identities": "PASS"
+        },
+        "universal_affine_cells": 27
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.21181222399900435
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/witness-global-closure-20261121/check_r_bypass.py"
+      ],
+      "exit_code": 0,
+      "file": "check_r_bypass.py",
+      "optimized": true,
+      "report": {
+        "additional_ladder_fixture_reconstructions": 4,
+        "affine_forms_checked": 523,
+        "complete_cover": false,
+        "conditional_calls_in_certificate_words": 29,
+        "evidence_limit": "Exact infinite-cell identities and bounded fixture reconstruction only.",
+        "fixture_reconstructions": 108,
+        "full_R_theorem": "OPEN",
+        "invalid_controls_rejected": 15,
+        "missing_child_returns_unresolved": 34,
+        "nonminimal_source_fixture_reconstructions": 54,
+        "partition": {
+          "certified_cells": 27,
+          "covered_relative_density": "153468843955/1043677052928",
+          "excluded_base_parameters": 0,
+          "exhaustive_partition": true,
+          "unresolved_cells": 341
+        },
+        "status": "PASS",
+        "unbounded_ladder": {
+          "all_k_induction": "proved in R_BYPASS.md RB-004",
+          "generator_identities": "PASS"
+        },
+        "universal_affine_cells": 27
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.3882608500025526
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "research/witness-global-closure-20261121/check_source_zero_descent.py"
+      ],
+      "exit_code": 0,
+      "file": "check_source_zero_descent.py",
+      "optimized": false,
+      "report": {
+        "all_rank_two_exponents": "UNRESOLVED",
+        "complete_source_tuple_reconstructions": 16,
+        "complete_target_tuple_reconstructions": 16,
+        "empty_inherited_tail_fixtures": 2,
+        "evidence_limit": "Exact affine certificates, arithmetic congruences, and stated reconstruction fixtures; no universal R coverage or formal verification.",
+        "finite_exact_reference_paths": 4,
+        "full_R": "UNRESOLVED",
+        "huge_source_only_fixtures": [
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 246020,
+            "last_source_exponent": 246004,
+            "source_bit_length": 246006,
+            "source_first_exponent": 5,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          },
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 295543,
+            "last_source_exponent": 295526,
+            "source_bit_length": 295529,
+            "source_first_exponent": 6,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          }
+        ],
+        "last_valuation_normalizations": 4,
+        "malformed_or_unsupported_inputs_rejected": 10,
+        "observed_last_valuation_corrections": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "partial_affine_divisions_checked": 24,
+        "small_progression_fixtures": 4,
+        "status": "PASS",
+        "universal_ordinary_prefix_schemas": 4
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.1369259390012303
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/witness-global-closure-20261121/check_source_zero_descent.py"
+      ],
+      "exit_code": 0,
+      "file": "check_source_zero_descent.py",
+      "optimized": true,
+      "report": {
+        "all_rank_two_exponents": "UNRESOLVED",
+        "complete_source_tuple_reconstructions": 16,
+        "complete_target_tuple_reconstructions": 16,
+        "empty_inherited_tail_fixtures": 2,
+        "evidence_limit": "Exact affine certificates, arithmetic congruences, and stated reconstruction fixtures; no universal R coverage or formal verification.",
+        "finite_exact_reference_paths": 4,
+        "full_R": "UNRESOLVED",
+        "huge_source_only_fixtures": [
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 246020,
+            "last_source_exponent": 246004,
+            "source_bit_length": 246006,
+            "source_first_exponent": 5,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          },
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 295543,
+            "last_source_exponent": 295526,
+            "source_bit_length": 295529,
+            "source_first_exponent": 6,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          }
+        ],
+        "last_valuation_normalizations": 4,
+        "malformed_or_unsupported_inputs_rejected": 10,
+        "observed_last_valuation_corrections": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "partial_affine_divisions_checked": 24,
+        "small_progression_fixtures": 4,
+        "status": "PASS",
+        "universal_ordinary_prefix_schemas": 4
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.165738320996752
+    }
+  ],
+  "schema": "witness-global-closure-replay-v1",
+  "started_utc": "2026-11-20T23:37:42.973738+00:00",
+  "status": "PASS"
+}
