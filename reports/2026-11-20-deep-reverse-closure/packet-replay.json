@@ -1,0 +1,2251 @@
+{
+  "checkout": {
+    "commit": "08e5757ad778c1f18ac2f54a536907f92a510352",
+    "status": "",
+    "tracked_files": 359,
+    "tree": "a8da04559de02060bf81ea1441d05be818f0040a"
+  },
+  "checkout_after": {
+    "commit": "08e5757ad778c1f18ac2f54a536907f92a510352",
+    "status": "",
+    "tracked_files": 359,
+    "tree": "a8da04559de02060bf81ea1441d05be818f0040a"
+  },
+  "executions": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_basin_crt_density.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "certified_sources": 2480,
+        "max_prefix_odd_inputs": 4,
+        "max_source_bits": 2887,
+        "progressions": 1240,
+        "rows_sha256": "ece096e92de081a23a936ce61f0e7a9e52ecddf6c5fc9f72e889c751a48a1910",
+        "scope": "finite audit of an elementary all-parameter construction",
+        "status": "PASS"
+      },
+      "script": "check_basin_crt_density.py",
+      "seconds": 0.049,
+      "stderr": "",
+      "stdout_sha256": "a4feb8f448470ea0dff7aed53f9ba58dc5fe10eaa5c1881382e78a5d87078792"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_basin_crt_density.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "certified_sources": 2480,
+        "max_prefix_odd_inputs": 4,
+        "max_source_bits": 2887,
+        "progressions": 1240,
+        "rows_sha256": "ece096e92de081a23a936ce61f0e7a9e52ecddf6c5fc9f72e889c751a48a1910",
+        "scope": "finite audit of an elementary all-parameter construction",
+        "status": "PASS"
+      },
+      "script": "check_basin_crt_density.py",
+      "seconds": 0.147,
+      "stderr": "",
+      "stdout_sha256": "a4feb8f448470ea0dff7aed53f9ba58dc5fe10eaa5c1881382e78a5d87078792"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_c3_single_run.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "base_height_differences": {
+          "a3_e81": 5221070572784472125193957821,
+          "a4_e81": 5759691404070374176388879671
+        },
+        "compressed_cylinders": 36,
+        "cylinder_rows_sha256": "695e52ce11df4c6233ab212007381132affa12533e47b29913ecb9542af7ed51",
+        "finite_exception": {
+          "clocks": 89,
+          "odd_inputs": 46,
+          "peak": 1135052,
+          "source": 59049
+        },
+        "largest_budget": 512,
+        "literal_certificates": [
+          {
+            "a": 1,
+            "e": 21,
+            "height_excluded": false,
+            "ordinary_merger_clock": 31,
+            "source_bits": 24
+          },
+          {
+            "a": 1,
+            "e": 183,
+            "height_excluded": true,
+            "ordinary_merger_clock": 193,
+            "source_bits": 186
+          },
+          {
+            "a": 2,
+            "e": 315,
+            "height_excluded": true,
+            "ordinary_merger_clock": 326,
+            "source_bits": 317
+          },
+          {
+            "a": 3,
+            "e": 837,
+            "height_excluded": true,
+            "ordinary_merger_clock": 849,
+            "source_bits": 838
+          },
+          {
+            "a": 4,
+            "e": 2349,
+            "height_excluded": true,
+            "ordinary_merger_clock": 2362,
+            "source_bits": 2350
+          },
+          {
+            "a": 5,
+            "e": 243,
+            "height_excluded": true,
+            "ordinary_merger_clock": 257,
+            "source_bits": 243
+          }
+        ],
+        "rank_six_remaining_family_controls": [
+          {
+            "A": 340,
+            "e": 341,
+            "j": 0,
+            "lower_above_upper_at_upper_stopping_clock": true,
+            "lower_merges_to_Mersenne_at_clock": 10,
+            "upper_odd_rank": 6
+          },
+          {
+            "A": 826,
+            "e": 827,
+            "j": 1,
+            "lower_above_upper_at_upper_stopping_clock": true,
+            "lower_merges_to_Mersenne_at_clock": 10,
+            "upper_odd_rank": 6
+          },
+          {
+            "A": 1312,
+            "e": 1313,
+            "j": 2,
+            "lower_above_upper_at_upper_stopping_clock": true,
+            "lower_merges_to_Mersenne_at_clock": 10,
+            "upper_odd_rank": 6
+          }
+        ],
+        "sample_cylinders": [
+          {
+            "H": 0,
+            "a": 4,
+            "e": "116073",
+            "exponent_bits": 17,
+            "period": "118098",
+            "residual_exponent": "58036"
+          },
+          {
+            "H": 1,
+            "a": 5,
+            "e": "380781",
+            "exponent_bits": 19,
+            "period": "1062882",
+            "residual_exponent": "190390"
+          },
+          {
+            "H": 2,
+            "a": 6,
+            "e": "2431215",
+            "exponent_bits": 22,
+            "period": "9565938",
+            "residual_exponent": "1215607"
+          },
+          {
+            "H": 3,
+            "a": 7,
+            "e": "63433935",
+            "exponent_bits": 26,
+            "period": "86093442",
+            "residual_exponent": "31716967"
+          },
+          {
+            "H": 4,
+            "a": 8,
+            "e": "633234915",
+            "exponent_bits": 30,
+            "period": "774840978",
+            "residual_exponent": "316617457"
+          }
+        ],
+        "scope": "exact finite and compressed audit, not full c3 closure",
+        "small_a_complete_progressions": [
+          {
+            "a": 1,
+            "e": 21,
+            "period": 162
+          },
+          {
+            "a": 2,
+            "e": 315,
+            "period": 486
+          },
+          {
+            "a": 3,
+            "e": 837,
+            "period": 1458
+          }
+        ],
+        "status": "PASS"
+      },
+      "script": "check_c3_single_run.py",
+      "seconds": 7.7,
+      "stderr": "",
+      "stdout_sha256": "268a15d43c7ed8ddacaa0fbb0996bac683a4f2a8889f91e14a313a77635c1f61"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_c3_single_run.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "base_height_differences": {
+          "a3_e81": 5221070572784472125193957821,
+          "a4_e81": 5759691404070374176388879671
+        },
+        "compressed_cylinders": 36,
+        "cylinder_rows_sha256": "695e52ce11df4c6233ab212007381132affa12533e47b29913ecb9542af7ed51",
+        "finite_exception": {
+          "clocks": 89,
+          "odd_inputs": 46,
+          "peak": 1135052,
+          "source": 59049
+        },
+        "largest_budget": 512,
+        "literal_certificates": [
+          {
+            "a": 1,
+            "e": 21,
+            "height_excluded": false,
+            "ordinary_merger_clock": 31,
+            "source_bits": 24
+          },
+          {
+            "a": 1,
+            "e": 183,
+            "height_excluded": true,
+            "ordinary_merger_clock": 193,
+            "source_bits": 186
+          },
+          {
+            "a": 2,
+            "e": 315,
+            "height_excluded": true,
+            "ordinary_merger_clock": 326,
+            "source_bits": 317
+          },
+          {
+            "a": 3,
+            "e": 837,
+            "height_excluded": true,
+            "ordinary_merger_clock": 849,
+            "source_bits": 838
+          },
+          {
+            "a": 4,
+            "e": 2349,
+            "height_excluded": true,
+            "ordinary_merger_clock": 2362,
+            "source_bits": 2350
+          },
+          {
+            "a": 5,
+            "e": 243,
+            "height_excluded": true,
+            "ordinary_merger_clock": 257,
+            "source_bits": 243
+          }
+        ],
+        "rank_six_remaining_family_controls": [
+          {
+            "A": 340,
+            "e": 341,
+            "j": 0,
+            "lower_above_upper_at_upper_stopping_clock": true,
+            "lower_merges_to_Mersenne_at_clock": 10,
+            "upper_odd_rank": 6
+          },
+          {
+            "A": 826,
+            "e": 827,
+            "j": 1,
+            "lower_above_upper_at_upper_stopping_clock": true,
+            "lower_merges_to_Mersenne_at_clock": 10,
+            "upper_odd_rank": 6
+          },
+          {
+            "A": 1312,
+            "e": 1313,
+            "j": 2,
+            "lower_above_upper_at_upper_stopping_clock": true,
+            "lower_merges_to_Mersenne_at_clock": 10,
+            "upper_odd_rank": 6
+          }
+        ],
+        "sample_cylinders": [
+          {
+            "H": 0,
+            "a": 4,
+            "e": "116073",
+            "exponent_bits": 17,
+            "period": "118098",
+            "residual_exponent": "58036"
+          },
+          {
+            "H": 1,
+            "a": 5,
+            "e": "380781",
+            "exponent_bits": 19,
+            "period": "1062882",
+            "residual_exponent": "190390"
+          },
+          {
+            "H": 2,
+            "a": 6,
+            "e": "2431215",
+            "exponent_bits": 22,
+            "period": "9565938",
+            "residual_exponent": "1215607"
+          },
+          {
+            "H": 3,
+            "a": 7,
+            "e": "63433935",
+            "exponent_bits": 26,
+            "period": "86093442",
+            "residual_exponent": "31716967"
+          },
+          {
+            "H": 4,
+            "a": 8,
+            "e": "633234915",
+            "exponent_bits": 30,
+            "period": "774840978",
+            "residual_exponent": "316617457"
+          }
+        ],
+        "scope": "exact finite and compressed audit, not full c3 closure",
+        "small_a_complete_progressions": [
+          {
+            "a": 1,
+            "e": 21,
+            "period": 162
+          },
+          {
+            "a": 2,
+            "e": 315,
+            "period": 486
+          },
+          {
+            "a": 3,
+            "e": 837,
+            "period": 1458
+          }
+        ],
+        "status": "PASS"
+      },
+      "script": "check_c3_single_run.py",
+      "seconds": 7.771,
+      "stderr": "",
+      "stdout_sha256": "268a15d43c7ed8ddacaa0fbb0996bac683a4f2a8889f91e14a313a77635c1f61"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_c3_single_run_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "author_implementation_imported": false,
+        "comparison_recurrence_controls": 36,
+        "compressed_cylinder_examples": [
+          [
+            0,
+            4,
+            116073,
+            118098
+          ],
+          [
+            1,
+            5,
+            380781,
+            1062882
+          ],
+          [
+            2,
+            6,
+            2431215,
+            9565938
+          ],
+          [
+            3,
+            7,
+            63433935,
+            86093442
+          ],
+          [
+            4,
+            8,
+            633234915,
+            774840978
+          ],
+          [
+            5,
+            9,
+            1143562617,
+            6973568802
+          ],
+          [
+            6,
+            10,
+            13919089329,
+            62762119218
+          ],
+          [
+            7,
+            11,
+            507285057933,
+            564859072962
+          ],
+          [
+            8,
+            12,
+            54853745697,
+            5083731656658
+          ],
+          [
+            9,
+            13,
+            8978811017697,
+            45753584909922
+          ],
+          [
+            10,
+            14,
+            368058499578441,
+            411782264189298
+          ]
+        ],
+        "directly_solved_first_blocks": 61,
+        "general_block_controls": 124,
+        "literal_single_run_cases": 6,
+        "literal_upper_clocks": 4573,
+        "rank_six_exponent_classes": 1,
+        "rank_six_literal_cases": 4,
+        "rank_six_upper_clocks": 4324,
+        "scope": "independent exact controls for conditional C3S1--C3S2 and the remaining C3S3 family; not all c=3 convergence",
+        "small_exponent_classes": [
+          [
+            1,
+            21,
+            162
+          ],
+          [
+            2,
+            315,
+            486
+          ],
+          [
+            3,
+            837,
+            1458
+          ]
+        ]
+      },
+      "script": "check_c3_single_run_review.py",
+      "seconds": 0.051,
+      "stderr": "",
+      "stdout_sha256": "8f5b13a7d284014b784fb5aad5c3727373d461b1ff8b38cc2ea0adef01ef7d25"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_c3_single_run_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "author_implementation_imported": false,
+        "comparison_recurrence_controls": 36,
+        "compressed_cylinder_examples": [
+          [
+            0,
+            4,
+            116073,
+            118098
+          ],
+          [
+            1,
+            5,
+            380781,
+            1062882
+          ],
+          [
+            2,
+            6,
+            2431215,
+            9565938
+          ],
+          [
+            3,
+            7,
+            63433935,
+            86093442
+          ],
+          [
+            4,
+            8,
+            633234915,
+            774840978
+          ],
+          [
+            5,
+            9,
+            1143562617,
+            6973568802
+          ],
+          [
+            6,
+            10,
+            13919089329,
+            62762119218
+          ],
+          [
+            7,
+            11,
+            507285057933,
+            564859072962
+          ],
+          [
+            8,
+            12,
+            54853745697,
+            5083731656658
+          ],
+          [
+            9,
+            13,
+            8978811017697,
+            45753584909922
+          ],
+          [
+            10,
+            14,
+            368058499578441,
+            411782264189298
+          ]
+        ],
+        "directly_solved_first_blocks": 61,
+        "general_block_controls": 124,
+        "literal_single_run_cases": 6,
+        "literal_upper_clocks": 4573,
+        "rank_six_exponent_classes": 1,
+        "rank_six_literal_cases": 4,
+        "rank_six_upper_clocks": 4324,
+        "scope": "independent exact controls for conditional C3S1--C3S2 and the remaining C3S3 family; not all c=3 convergence",
+        "small_exponent_classes": [
+          [
+            1,
+            21,
+            162
+          ],
+          [
+            2,
+            315,
+            486
+          ],
+          [
+            3,
+            837,
+            1458
+          ]
+        ]
+      },
+      "script": "check_c3_single_run_review.py",
+      "seconds": 0.093,
+      "stderr": "",
+      "stdout_sha256": "8f5b13a7d284014b784fb5aad5c3727373d461b1ff8b38cc2ea0adef01ef7d25"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_five_energy.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "K_1": "2890739393835460424046931534118546302327/1265433188657605285832552427069681000",
+        "affine_transcript_sha256": "6fd629386cf91dbc2beb54abf56c37c6e93381886403c8a51376bb7ca8a8dfbd",
+        "cells": 109,
+        "corrupt_fixtures_rejected": 8,
+        "five_query_occurrences": 248,
+        "full_tripling_energy_factor_at_1": "2890739393835460424046931534118546302327/316358297164401321458138106767420250",
+        "literal_move_checks": 9620,
+        "max_query_to_input_ratio": "7153/21",
+        "maximum_pair_moves": 24,
+        "moves_across_word_pairs": 1172,
+        "odd_residues_covered": 1036800,
+        "odd_tripling_energy_factor_at_1": "2890739393835460424046931534118546302327/632716594328802642916276213534840500",
+        "period": 2073600,
+        "rows": 67,
+        "scope": "Universal affine paths and complete residue cover; no Collatz proof or physical multiplier-five closure",
+        "status": "PASS"
+      },
+      "script": "check_five_energy.py",
+      "seconds": 0.294,
+      "stderr": "",
+      "stdout_sha256": "90aa8c23b08accc606683bef85da442ffd3a9b391e77914fdf45bcf993629e68"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_five_energy.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "K_1": "2890739393835460424046931534118546302327/1265433188657605285832552427069681000",
+        "affine_transcript_sha256": "6fd629386cf91dbc2beb54abf56c37c6e93381886403c8a51376bb7ca8a8dfbd",
+        "cells": 109,
+        "corrupt_fixtures_rejected": 8,
+        "five_query_occurrences": 248,
+        "full_tripling_energy_factor_at_1": "2890739393835460424046931534118546302327/316358297164401321458138106767420250",
+        "literal_move_checks": 9620,
+        "max_query_to_input_ratio": "7153/21",
+        "maximum_pair_moves": 24,
+        "moves_across_word_pairs": 1172,
+        "odd_residues_covered": 1036800,
+        "odd_tripling_energy_factor_at_1": "2890739393835460424046931534118546302327/632716594328802642916276213534840500",
+        "period": 2073600,
+        "rows": 67,
+        "scope": "Universal affine paths and complete residue cover; no Collatz proof or physical multiplier-five closure",
+        "status": "PASS"
+      },
+      "script": "check_five_energy.py",
+      "seconds": 0.287,
+      "stderr": "",
+      "stdout_sha256": "90aa8c23b08accc606683bef85da442ffd3a9b391e77914fdf45bcf993629e68"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_five_energy_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "cells": 109,
+        "certificate_sha256": "cae3304bb2ad571d9574655fee586fbb920a1480298e3d516aa814a74f39bb94",
+        "global_coordinate_transcript_sha256": "463a21f7f196155c1ba036dcc7978cc34c264bd8680d25cf242ff5b617c82792",
+        "harmonic_all_source_constant": "2890739393835460424046931534118546302327/316358297164401321458138106767420250",
+        "maximum_query_ratio": "7153/21",
+        "negative_controls_rejected": 7,
+        "odd_sources_in_period": 1036800,
+        "period": 2073600,
+        "row_moves": 1172,
+        "row_queries": 248,
+        "rows": 67,
+        "scope": "Independent exact affine guard, cover, injectivity and weight reconstruction; no finite-energy upper bound or Collatz proof",
+        "status": "PASS",
+        "sum_query_ratios": "2890739393835460424046931534118546302327/1265433188657605285832552427069681000"
+      },
+      "script": "check_five_energy_review.py",
+      "seconds": 0.217,
+      "stderr": "",
+      "stdout_sha256": "1ae2b133e834b40c6e4f5a05e3b05f2f0688660178d7e09d7bf849b83c8d5169"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_five_energy_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "cells": 109,
+        "certificate_sha256": "cae3304bb2ad571d9574655fee586fbb920a1480298e3d516aa814a74f39bb94",
+        "global_coordinate_transcript_sha256": "463a21f7f196155c1ba036dcc7978cc34c264bd8680d25cf242ff5b617c82792",
+        "harmonic_all_source_constant": "2890739393835460424046931534118546302327/316358297164401321458138106767420250",
+        "maximum_query_ratio": "7153/21",
+        "negative_controls_rejected": 7,
+        "odd_sources_in_period": 1036800,
+        "period": 2073600,
+        "row_moves": 1172,
+        "row_queries": 248,
+        "rows": 67,
+        "scope": "Independent exact affine guard, cover, injectivity and weight reconstruction; no finite-energy upper bound or Collatz proof",
+        "status": "PASS",
+        "sum_query_ratios": "2890739393835460424046931534118546302327/1265433188657605285832552427069681000"
+      },
+      "script": "check_five_energy_review.py",
+      "seconds": 0.298,
+      "stderr": "",
+      "stdout_sha256": "1ae2b133e834b40c6e4f5a05e3b05f2f0688660178d7e09d7bf849b83c8d5169"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_guarded_clock.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "compressed_certified_instances": [
+          {
+            "CRT_precision_L": 7,
+            "H": 1,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "380786",
+            "power_two_order": "1062882",
+            "terminal_halvings_A": "380780",
+            "upper_odd_rank": 9,
+            "upper_total_shortcut_clocks": "380795",
+            "z_expression": {
+              "divide": "243",
+              "power_of_two_exponent": "380786",
+              "subtract": "211"
+            },
+            "z_prefix_clocks": 6,
+            "z_prefix_odd_inputs": 5
+          },
+          {
+            "CRT_precision_L": 8,
+            "H": 2,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "2431221",
+            "power_two_order": "9565938",
+            "terminal_halvings_A": "2431214",
+            "upper_odd_rank": 10,
+            "upper_total_shortcut_clocks": "2431230",
+            "z_expression": {
+              "divide": "729",
+              "power_of_two_exponent": "2431221",
+              "subtract": "665"
+            },
+            "z_prefix_clocks": 7,
+            "z_prefix_odd_inputs": 6
+          },
+          {
+            "CRT_precision_L": 10,
+            "H": 4,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "633234923",
+            "power_two_order": "774840978",
+            "terminal_halvings_A": "633234914",
+            "upper_odd_rank": 12,
+            "upper_total_shortcut_clocks": "633234932",
+            "z_expression": {
+              "divide": "6561",
+              "power_of_two_exponent": "633234923",
+              "subtract": "6305"
+            },
+            "z_prefix_clocks": 9,
+            "z_prefix_odd_inputs": 8
+          },
+          {
+            "CRT_precision_L": 14,
+            "H": 8,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "54853745709",
+            "power_two_order": "5083731656658",
+            "terminal_halvings_A": "54853745696",
+            "upper_odd_rank": 16,
+            "upper_total_shortcut_clocks": "54853745718",
+            "z_expression": {
+              "divide": "531441",
+              "power_of_two_exponent": "54853745709",
+              "subtract": "527345"
+            },
+            "z_prefix_clocks": 13,
+            "z_prefix_odd_inputs": 12
+          },
+          {
+            "CRT_precision_L": 22,
+            "H": 16,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "8119465379982947549",
+            "power_two_order": "218837978263024718418",
+            "terminal_halvings_A": "8119465379982947528",
+            "upper_odd_rank": 24,
+            "upper_total_shortcut_clocks": "8119465379982947558",
+            "z_expression": {
+              "divide": "3486784401",
+              "power_of_two_exponent": "8119465379982947549",
+              "subtract": "3485735825"
+            },
+            "z_prefix_clocks": 21,
+            "z_prefix_odd_inputs": 20
+          }
+        ],
+        "dropped_hypothesis_controls": [
+          "Dropping the ternary congruence: N=23, y=15, T(y)=N.",
+          "Dropping the binary congruence: N=28 descends to 14 in one step."
+        ],
+        "full_predecessor_tree_instances": 27,
+        "guarded_arrow_identity_checks": 14846,
+        "maximum_tree_depth": 9,
+        "predecessor_nodes_counted_with_root_and_depth": 7830,
+        "scope": "Finite exact controls and compressed genuine upper stopping certificates; no universal statement inferred from replay",
+        "status": "PASS",
+        "tree_transcript_sha256": "61113ad88ac6d196bd84edc817df9eac3bf9568e8351a54cddbb8adc36037b81"
+      },
+      "script": "check_guarded_clock.py",
+      "seconds": 0.05,
+      "stderr": "",
+      "stdout_sha256": "0e13efa5358114682e25aaafb2aecb9d3b9f139c30f4ef1d50e09ab28efbb1eb"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_guarded_clock.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "compressed_certified_instances": [
+          {
+            "CRT_precision_L": 7,
+            "H": 1,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "380786",
+            "power_two_order": "1062882",
+            "terminal_halvings_A": "380780",
+            "upper_odd_rank": 9,
+            "upper_total_shortcut_clocks": "380795",
+            "z_expression": {
+              "divide": "243",
+              "power_of_two_exponent": "380786",
+              "subtract": "211"
+            },
+            "z_prefix_clocks": 6,
+            "z_prefix_odd_inputs": 5
+          },
+          {
+            "CRT_precision_L": 8,
+            "H": 2,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "2431221",
+            "power_two_order": "9565938",
+            "terminal_halvings_A": "2431214",
+            "upper_odd_rank": 10,
+            "upper_total_shortcut_clocks": "2431230",
+            "z_expression": {
+              "divide": "729",
+              "power_of_two_exponent": "2431221",
+              "subtract": "665"
+            },
+            "z_prefix_clocks": 7,
+            "z_prefix_odd_inputs": 6
+          },
+          {
+            "CRT_precision_L": 10,
+            "H": 4,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "633234923",
+            "power_two_order": "774840978",
+            "terminal_halvings_A": "633234914",
+            "upper_odd_rank": 12,
+            "upper_total_shortcut_clocks": "633234932",
+            "z_expression": {
+              "divide": "6561",
+              "power_of_two_exponent": "633234923",
+              "subtract": "6305"
+            },
+            "z_prefix_clocks": 9,
+            "z_prefix_odd_inputs": 8
+          },
+          {
+            "CRT_precision_L": 14,
+            "H": 8,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "54853745709",
+            "power_two_order": "5083731656658",
+            "terminal_halvings_A": "54853745696",
+            "upper_odd_rank": 16,
+            "upper_total_shortcut_clocks": "54853745718",
+            "z_expression": {
+              "divide": "531441",
+              "power_of_two_exponent": "54853745709",
+              "subtract": "527345"
+            },
+            "z_prefix_clocks": 13,
+            "z_prefix_odd_inputs": 12
+          },
+          {
+            "CRT_precision_L": 22,
+            "H": 16,
+            "certificate_mode": "symbolic integer-affine prefix plus exact terminal power-of-two halving run",
+            "power_exponent_E": "8119465379982947549",
+            "power_two_order": "218837978263024718418",
+            "terminal_halvings_A": "8119465379982947528",
+            "upper_odd_rank": 24,
+            "upper_total_shortcut_clocks": "8119465379982947558",
+            "z_expression": {
+              "divide": "3486784401",
+              "power_of_two_exponent": "8119465379982947549",
+              "subtract": "3485735825"
+            },
+            "z_prefix_clocks": 21,
+            "z_prefix_odd_inputs": 20
+          }
+        ],
+        "dropped_hypothesis_controls": [
+          "Dropping the ternary congruence: N=23, y=15, T(y)=N.",
+          "Dropping the binary congruence: N=28 descends to 14 in one step."
+        ],
+        "full_predecessor_tree_instances": 27,
+        "guarded_arrow_identity_checks": 14846,
+        "maximum_tree_depth": 9,
+        "predecessor_nodes_counted_with_root_and_depth": 7830,
+        "scope": "Finite exact controls and compressed genuine upper stopping certificates; no universal statement inferred from replay",
+        "status": "PASS",
+        "tree_transcript_sha256": "61113ad88ac6d196bd84edc817df9eac3bf9568e8351a54cddbb8adc36037b81"
+      },
+      "script": "check_guarded_clock.py",
+      "seconds": 0.153,
+      "stderr": "",
+      "stdout_sha256": "0e13efa5358114682e25aaafb2aecb9d3b9f139c30f4ef1d50e09ab28efbb1eb"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_height_review.py",
+        "--certificate",
+        "research/deep-reverse-closure-20261120/deep_reverse_certificate.json"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "corrupt_cover_rejected": true,
+        "covered_unit_residues": 20736,
+        "eligible_triplings": 284,
+        "exact_peak": "2025217/23",
+        "expanded_moves": 3974,
+        "finite_controls": [
+          {
+            "clocks": 219,
+            "odd_inputs": 112,
+            "peak": 16286310253592,
+            "source": 2541865828329
+          },
+          {
+            "clocks": 89,
+            "odd_inputs": 46,
+            "peak": 1135052,
+            "source": 59049
+          }
+        ],
+        "longest_path": 198,
+        "peak_location_m_r_pos_slope_intercept": [
+          432,
+          23,
+          21,
+          1327104,
+          71199
+        ],
+        "period": 62208,
+        "positive_cutoff_differences": {
+          "coarse": 73472613839951264438662,
+          "even": 64338362311137348850935,
+          "odd": 146945227679902514612563,
+          "rank5_c1": 71818029920988665229141,
+          "rank5_c3": 12554202350266279230985313864847138776593601623775633598729
+        },
+        "rows": 71,
+        "scope": "independent exact finite source-height evidence, not a proof of reverse closure",
+        "source_certificate_sha256": "fc15d65eabd0baa1dc5f99af47d430ce3a06b1da6414e4d3c4ae29e269b42571",
+        "status": "PASS"
+      },
+      "script": "check_height_review.py",
+      "seconds": 0.101,
+      "stderr": "",
+      "stdout_sha256": "d429f2459b3215c1aed19fbcb40419bdde0f5df92b2379d5ca12046b386b543e"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_height_review.py",
+        "--certificate",
+        "research/deep-reverse-closure-20261120/deep_reverse_certificate.json"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "corrupt_cover_rejected": true,
+        "covered_unit_residues": 20736,
+        "eligible_triplings": 284,
+        "exact_peak": "2025217/23",
+        "expanded_moves": 3974,
+        "finite_controls": [
+          {
+            "clocks": 219,
+            "odd_inputs": 112,
+            "peak": 16286310253592,
+            "source": 2541865828329
+          },
+          {
+            "clocks": 89,
+            "odd_inputs": 46,
+            "peak": 1135052,
+            "source": 59049
+          }
+        ],
+        "longest_path": 198,
+        "peak_location_m_r_pos_slope_intercept": [
+          432,
+          23,
+          21,
+          1327104,
+          71199
+        ],
+        "period": 62208,
+        "positive_cutoff_differences": {
+          "coarse": 73472613839951264438662,
+          "even": 64338362311137348850935,
+          "odd": 146945227679902514612563,
+          "rank5_c1": 71818029920988665229141,
+          "rank5_c3": 12554202350266279230985313864847138776593601623775633598729
+        },
+        "rows": 71,
+        "scope": "independent exact finite source-height evidence, not a proof of reverse closure",
+        "source_certificate_sha256": "fc15d65eabd0baa1dc5f99af47d430ce3a06b1da6414e4d3c4ae29e269b42571",
+        "status": "PASS"
+      },
+      "script": "check_height_review.py",
+      "seconds": 0.173,
+      "stderr": "",
+      "stdout_sha256": "d429f2459b3215c1aed19fbcb40419bdde0f5df92b2379d5ca12046b386b543e"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_least_failure_height.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "all_source_height_bound": 176106,
+        "cutoff": {
+          "coarse_maximum_fourth_valuation": 86,
+          "even_cutoff_delta": 64338362311137348850935,
+          "even_first_excluded_c": 72,
+          "even_first_excluded_r": 34,
+          "odd_cutoff_delta": 146945227679902514612563,
+          "odd_first_excluded_c": 79,
+          "odd_first_excluded_r": 38
+        },
+        "eligible_triplings": 284,
+        "exact_peak": "2025217/23",
+        "expanded_moves": 3974,
+        "invalid_fixtures_rejected": 3,
+        "maximum_expanded_moves": 198,
+        "peak_location": {
+          "modulus": 432,
+          "residue": 23,
+          "tripling_intercept": 71199,
+          "tripling_slope": 1327104,
+          "upper_intercept": 2025217,
+          "upper_slope": 37748736,
+          "word_position_zero_based": 21
+        },
+        "rank_five_controls": {
+          "c1_cutoff_delta": 71818029920988665229141,
+          "c1_first_gap": 70,
+          "c3_cutoff_delta": 12554202350266279230985313864847138776593601623775633598729,
+          "c3_first_uniform_gap": 184,
+          "remaining_c3_clocks": 89,
+          "remaining_c3_odd_inputs": 46,
+          "remaining_c3_peak": 1135052,
+          "remaining_c3_source": 59049
+        },
+        "rank_four_control": {
+          "odd_inputs": 112,
+          "peak": 16286310253592,
+          "shortcut_clocks": 219,
+          "source": 2541865828329,
+          "trajectory_sha256": "a1a637630450bcd4398b1e2ab5fa09dec3db33a3a0921aad33d181d2edf36244"
+        },
+        "scope": "conditional least-failure height and rank exclusions; Collatz and the remaining guarded cover are unproved",
+        "source_author_implementation_imported": false,
+        "source_classes": 71,
+        "unit_height_bound": 88053,
+        "unit_residues": 20736
+      },
+      "script": "check_least_failure_height.py",
+      "seconds": 0.036,
+      "stderr": "",
+      "stdout_sha256": "a5236e33b31494350d86e248c29e61f99c8c4dd640a9ddd33d8b1c5275e6473d"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_least_failure_height.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "all_source_height_bound": 176106,
+        "cutoff": {
+          "coarse_maximum_fourth_valuation": 86,
+          "even_cutoff_delta": 64338362311137348850935,
+          "even_first_excluded_c": 72,
+          "even_first_excluded_r": 34,
+          "odd_cutoff_delta": 146945227679902514612563,
+          "odd_first_excluded_c": 79,
+          "odd_first_excluded_r": 38
+        },
+        "eligible_triplings": 284,
+        "exact_peak": "2025217/23",
+        "expanded_moves": 3974,
+        "invalid_fixtures_rejected": 3,
+        "maximum_expanded_moves": 198,
+        "peak_location": {
+          "modulus": 432,
+          "residue": 23,
+          "tripling_intercept": 71199,
+          "tripling_slope": 1327104,
+          "upper_intercept": 2025217,
+          "upper_slope": 37748736,
+          "word_position_zero_based": 21
+        },
+        "rank_five_controls": {
+          "c1_cutoff_delta": 71818029920988665229141,
+          "c1_first_gap": 70,
+          "c3_cutoff_delta": 12554202350266279230985313864847138776593601623775633598729,
+          "c3_first_uniform_gap": 184,
+          "remaining_c3_clocks": 89,
+          "remaining_c3_odd_inputs": 46,
+          "remaining_c3_peak": 1135052,
+          "remaining_c3_source": 59049
+        },
+        "rank_four_control": {
+          "odd_inputs": 112,
+          "peak": 16286310253592,
+          "shortcut_clocks": 219,
+          "source": 2541865828329,
+          "trajectory_sha256": "a1a637630450bcd4398b1e2ab5fa09dec3db33a3a0921aad33d181d2edf36244"
+        },
+        "scope": "conditional least-failure height and rank exclusions; Collatz and the remaining guarded cover are unproved",
+        "source_author_implementation_imported": false,
+        "source_classes": 71,
+        "unit_height_bound": 88053,
+        "unit_residues": 20736
+      },
+      "script": "check_least_failure_height.py",
+      "seconds": 0.11,
+      "stderr": "",
+      "stdout_sha256": "a5236e33b31494350d86e248c29e61f99c8c4dd640a9ddd33d8b1c5275e6473d"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_mersenne_depth_review.py",
+        "--manuscript",
+        "research/deep-reverse-closure-20261120/MERSENNE_WITNESS_DEPTH.md"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "bounded_center_trees": [
+          {
+            "center_nodes": 19,
+            "depth": 5,
+            "ordinary_exponent": 119,
+            "total_exponent_cap": 9,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 26,
+            "depth": 6,
+            "ordinary_exponent": 281,
+            "total_exponent_cap": 10,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 51,
+            "depth": 7,
+            "ordinary_exponent": 767,
+            "total_exponent_cap": 12,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 70,
+            "depth": 8,
+            "ordinary_exponent": 3683,
+            "total_exponent_cap": 13,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 124,
+            "depth": 9,
+            "ordinary_exponent": 3683,
+            "total_exponent_cap": 15,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "crt_lifts": [
+          {
+            "H": 5,
+            "e": 119
+          },
+          {
+            "H": 6,
+            "e": 281
+          },
+          {
+            "H": 7,
+            "e": 767
+          },
+          {
+            "H": 8,
+            "e": 3683
+          },
+          {
+            "H": 9,
+            "e": 3683
+          },
+          {
+            "H": 10,
+            "e": 16805
+          },
+          {
+            "H": 11,
+            "e": 95537
+          },
+          {
+            "H": 12,
+            "e": 331733
+          },
+          {
+            "H": 13,
+            "e": 1040321
+          },
+          {
+            "H": 14,
+            "e": 2103203
+          },
+          {
+            "H": 15,
+            "e": 5291849
+          },
+          {
+            "H": 16,
+            "e": 14857787
+          }
+        ],
+        "reviewed_manuscript_sha256": "25f16035aece8873c0b3fd9101552b8aaafea78a90478ecd6f9caa67e999176f",
+        "scope": "independent finite audit of W1--W2, not global closure",
+        "slope_separation_checks": 618,
+        "small_total_exponent_words": 510,
+        "status": "PASS",
+        "unique_eligible_center_word": {
+          "center": "1",
+          "constant": "-1165/243",
+          "upper_slope": "1024/243",
+          "word": [
+            2,
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "script": "check_mersenne_depth_review.py",
+      "seconds": 0.056,
+      "stderr": "",
+      "stdout_sha256": "dccaf1eeb76d20a64e110cad2606778c79d156d7648833bc36a7bab8f8187e0b"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_mersenne_depth_review.py",
+        "--manuscript",
+        "research/deep-reverse-closure-20261120/MERSENNE_WITNESS_DEPTH.md"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "bounded_center_trees": [
+          {
+            "center_nodes": 19,
+            "depth": 5,
+            "ordinary_exponent": 119,
+            "total_exponent_cap": 9,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 26,
+            "depth": 6,
+            "ordinary_exponent": 281,
+            "total_exponent_cap": 10,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 51,
+            "depth": 7,
+            "ordinary_exponent": 767,
+            "total_exponent_cap": 12,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 70,
+            "depth": 8,
+            "ordinary_exponent": 3683,
+            "total_exponent_cap": 13,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "center_nodes": 124,
+            "depth": 9,
+            "ordinary_exponent": 3683,
+            "total_exponent_cap": 15,
+            "unique_eligible_word": [
+              2,
+              1,
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "crt_lifts": [
+          {
+            "H": 5,
+            "e": 119
+          },
+          {
+            "H": 6,
+            "e": 281
+          },
+          {
+            "H": 7,
+            "e": 767
+          },
+          {
+            "H": 8,
+            "e": 3683
+          },
+          {
+            "H": 9,
+            "e": 3683
+          },
+          {
+            "H": 10,
+            "e": 16805
+          },
+          {
+            "H": 11,
+            "e": 95537
+          },
+          {
+            "H": 12,
+            "e": 331733
+          },
+          {
+            "H": 13,
+            "e": 1040321
+          },
+          {
+            "H": 14,
+            "e": 2103203
+          },
+          {
+            "H": 15,
+            "e": 5291849
+          },
+          {
+            "H": 16,
+            "e": 14857787
+          }
+        ],
+        "reviewed_manuscript_sha256": "25f16035aece8873c0b3fd9101552b8aaafea78a90478ecd6f9caa67e999176f",
+        "scope": "independent finite audit of W1--W2, not global closure",
+        "slope_separation_checks": 618,
+        "small_total_exponent_words": 510,
+        "status": "PASS",
+        "unique_eligible_center_word": {
+          "center": "1",
+          "constant": "-1165/243",
+          "upper_slope": "1024/243",
+          "word": [
+            2,
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "script": "check_mersenne_depth_review.py",
+      "seconds": 0.14,
+      "stderr": "",
+      "stdout_sha256": "dccaf1eeb76d20a64e110cad2606778c79d156d7648833bc36a7bab8f8187e0b"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_mersenne_witness_depth.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "bounded_inverse_nodes": 82,
+        "eligible_original_words": 5,
+        "low_total_exponent_words": 510,
+        "ordinary_congruence_lifts": [
+          [
+            5,
+            119
+          ],
+          [
+            6,
+            281
+          ],
+          [
+            7,
+            767
+          ],
+          [
+            8,
+            3683
+          ],
+          [
+            9,
+            3683
+          ],
+          [
+            10,
+            16805
+          ],
+          [
+            11,
+            95537
+          ],
+          [
+            12,
+            331733
+          ]
+        ],
+        "precision_spending_examples": 12,
+        "scope": "finite exact algebra and ordinary congruence controls for W1--W2; no all-depth witness selector",
+        "search_implementation_imported": false,
+        "strictly_cheaper_bounded_words": 0
+      },
+      "script": "check_mersenne_witness_depth.py",
+      "seconds": 0.023,
+      "stderr": "",
+      "stdout_sha256": "c14c8ed911bd512e4afd2e5134d5db52ef0e69f5e8a0b1f70f5564f2f1f43cb5"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_mersenne_witness_depth.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "bounded_inverse_nodes": 82,
+        "eligible_original_words": 5,
+        "low_total_exponent_words": 510,
+        "ordinary_congruence_lifts": [
+          [
+            5,
+            119
+          ],
+          [
+            6,
+            281
+          ],
+          [
+            7,
+            767
+          ],
+          [
+            8,
+            3683
+          ],
+          [
+            9,
+            3683
+          ],
+          [
+            10,
+            16805
+          ],
+          [
+            11,
+            95537
+          ],
+          [
+            12,
+            331733
+          ]
+        ],
+        "precision_spending_examples": 12,
+        "scope": "finite exact algebra and ordinary congruence controls for W1--W2; no all-depth witness selector",
+        "search_implementation_imported": false,
+        "strictly_cheaper_bounded_words": 0
+      },
+      "script": "check_mersenne_witness_depth.py",
+      "seconds": 0.07,
+      "stderr": "",
+      "stdout_sha256": "c14c8ed911bd512e4afd2e5134d5db52ef0e69f5e8a0b1f70f5564f2f1f43cb5"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_pure_power_core.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "finite_pool_cases": 12,
+        "maximum_source_bits": 13695,
+        "negative_controls": 6,
+        "pools": [
+          {
+            "exponent_index_modulus": 1,
+            "pool": [
+              2,
+              3
+            ]
+          },
+          {
+            "exponent_index_modulus": 4,
+            "pool": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "exponent_index_modulus": 60,
+            "pool": [
+              2,
+              3,
+              5,
+              7,
+              11
+            ]
+          },
+          {
+            "exponent_index_modulus": 720,
+            "pool": [
+              2,
+              3,
+              5,
+              7,
+              11,
+              13,
+              17,
+              19
+            ]
+          }
+        ],
+        "required_progression_cases": 33,
+        "scope": "finite exact local identities, not a fixed-source future bound",
+        "status": "PASS"
+      },
+      "script": "check_pure_power_core.py",
+      "seconds": 0.027,
+      "stderr": "",
+      "stdout_sha256": "cac514a8d27a78793165fce08016196d1658177d9f189c726b08bf3f3faed0e8"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_pure_power_core.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "finite_pool_cases": 12,
+        "maximum_source_bits": 13695,
+        "negative_controls": 6,
+        "pools": [
+          {
+            "exponent_index_modulus": 1,
+            "pool": [
+              2,
+              3
+            ]
+          },
+          {
+            "exponent_index_modulus": 4,
+            "pool": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "exponent_index_modulus": 60,
+            "pool": [
+              2,
+              3,
+              5,
+              7,
+              11
+            ]
+          },
+          {
+            "exponent_index_modulus": 720,
+            "pool": [
+              2,
+              3,
+              5,
+              7,
+              11,
+              13,
+              17,
+              19
+            ]
+          }
+        ],
+        "required_progression_cases": 33,
+        "scope": "finite exact local identities, not a fixed-source future bound",
+        "status": "PASS"
+      },
+      "script": "check_pure_power_core.py",
+      "seconds": 0.107,
+      "stderr": "",
+      "stdout_sha256": "cac514a8d27a78793165fce08016196d1658177d9f189c726b08bf3f3faed0e8"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_pure_power_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "arbitrary_pool_cases": 15,
+        "author_implementation_imported": false,
+        "incompatible_progression_control": "prime 7",
+        "required_progression_cases": 12,
+        "scope": "finite independent controls for the written elementary PP1--PP2 proofs"
+      },
+      "script": "check_pure_power_review.py",
+      "seconds": 0.016,
+      "stderr": "",
+      "stdout_sha256": "c964fce3838f69676c879cafaf0faddc06dd747bd4f704db4ef359a2f6f00654"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_pure_power_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "arbitrary_pool_cases": 15,
+        "author_implementation_imported": false,
+        "incompatible_progression_control": "prime 7",
+        "required_progression_cases": 12,
+        "scope": "finite independent controls for the written elementary PP1--PP2 proofs"
+      },
+      "script": "check_pure_power_review.py",
+      "seconds": 0.071,
+      "stderr": "",
+      "stdout_sha256": "c964fce3838f69676c879cafaf0faddc06dd747bd4f704db4ef359a2f6f00654"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_reverse_kernel.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "affine_cells": 161,
+        "endpoint_digit_checksum": 6904,
+        "invalid_fixtures_rejected": 4,
+        "rank_five_ordinary_examples": 16,
+        "scope": "exact affine family identities and finite rank-five controls; open kernel closures unproved",
+        "source_head": "e238c63a5d57f96bb063b7472498d1977df51951",
+        "source_pr": 146,
+        "upper_states_checked": 14328
+      },
+      "script": "check_reverse_kernel.py",
+      "seconds": 0.189,
+      "stderr": "",
+      "stdout_sha256": "d2da1a1fcc5327e1b13fc7a221e44c8a5d22f1e4bf2aaf13d57a4d1bbf622c72"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_reverse_kernel.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "affine_cells": 161,
+        "endpoint_digit_checksum": 6904,
+        "invalid_fixtures_rejected": 4,
+        "rank_five_ordinary_examples": 16,
+        "scope": "exact affine family identities and finite rank-five controls; open kernel closures unproved",
+        "source_head": "e238c63a5d57f96bb063b7472498d1977df51951",
+        "source_pr": 146,
+        "upper_states_checked": 14328
+      },
+      "script": "check_reverse_kernel.py",
+      "seconds": 0.22,
+      "stderr": "",
+      "stdout_sha256": "d2da1a1fcc5327e1b13fc7a221e44c8a5d22f1e4bf2aaf13d57a4d1bbf622c72"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_reverse_kernel_review.py",
+        "--proof",
+        "research/deep-reverse-closure-20261120/REVERSE_CERTIFICATE_KERNEL.md"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "allowed_fourth_gaps": 63,
+        "last_gap_residues": {
+          "1": 70,
+          "10": 158,
+          "11": 28,
+          "12": 134,
+          "13": 106,
+          "14": 74,
+          "15": 112,
+          "16": 86,
+          "17": 100,
+          "18": 116,
+          "19": 124,
+          "20": 110,
+          "21": 76,
+          "22": 14,
+          "23": 10,
+          "24": 98,
+          "25": 142,
+          "26": 146,
+          "27": 40,
+          "28": 104,
+          "29": 82,
+          "3": 22,
+          "30": 80,
+          "31": 160,
+          "32": 20,
+          "33": 4,
+          "34": 32,
+          "35": 154,
+          "36": 62,
+          "37": 16,
+          "38": 56,
+          "39": 130,
+          "4": 68,
+          "40": 122,
+          "41": 64,
+          "42": 44,
+          "43": 34,
+          "44": 92,
+          "45": 94,
+          "46": 50,
+          "47": 136,
+          "48": 26,
+          "49": 52,
+          "5": 118,
+          "50": 128,
+          "51": 58,
+          "52": 140,
+          "53": 46,
+          "54": 8,
+          "55": 70,
+          "56": 2,
+          "57": 22,
+          "58": 68,
+          "59": 118,
+          "6": 152,
+          "60": 152,
+          "61": 88,
+          "62": 38,
+          "63": 148,
+          "64": 158,
+          "7": 88,
+          "8": 38,
+          "9": 148
+        },
+        "negative_controls": 5,
+        "proof_sha256": "4bf600fce574029b03e2af1b79acb9809b5efb944c5a92296ae82149d6a2da85",
+        "rank_five_cases": 188,
+        "scope": "independent finite literal shortcut checks; no kernel closure or Collatz proof",
+        "small_pair_counts": {
+          "A": 4096,
+          "B": 683,
+          "C": 1365
+        },
+        "status": "PASS",
+        "subfamily_cases": 16
+      },
+      "script": "check_reverse_kernel_review.py",
+      "seconds": 0.069,
+      "stderr": "",
+      "stdout_sha256": "afe95b594ec87449a826c458b0edff6eb433c396e53b80d7cb2e535409c96684"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_reverse_kernel_review.py",
+        "--proof",
+        "research/deep-reverse-closure-20261120/REVERSE_CERTIFICATE_KERNEL.md"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "allowed_fourth_gaps": 63,
+        "last_gap_residues": {
+          "1": 70,
+          "10": 158,
+          "11": 28,
+          "12": 134,
+          "13": 106,
+          "14": 74,
+          "15": 112,
+          "16": 86,
+          "17": 100,
+          "18": 116,
+          "19": 124,
+          "20": 110,
+          "21": 76,
+          "22": 14,
+          "23": 10,
+          "24": 98,
+          "25": 142,
+          "26": 146,
+          "27": 40,
+          "28": 104,
+          "29": 82,
+          "3": 22,
+          "30": 80,
+          "31": 160,
+          "32": 20,
+          "33": 4,
+          "34": 32,
+          "35": 154,
+          "36": 62,
+          "37": 16,
+          "38": 56,
+          "39": 130,
+          "4": 68,
+          "40": 122,
+          "41": 64,
+          "42": 44,
+          "43": 34,
+          "44": 92,
+          "45": 94,
+          "46": 50,
+          "47": 136,
+          "48": 26,
+          "49": 52,
+          "5": 118,
+          "50": 128,
+          "51": 58,
+          "52": 140,
+          "53": 46,
+          "54": 8,
+          "55": 70,
+          "56": 2,
+          "57": 22,
+          "58": 68,
+          "59": 118,
+          "6": 152,
+          "60": 152,
+          "61": 88,
+          "62": 38,
+          "63": 148,
+          "64": 158,
+          "7": 88,
+          "8": 38,
+          "9": 148
+        },
+        "negative_controls": 5,
+        "proof_sha256": "4bf600fce574029b03e2af1b79acb9809b5efb944c5a92296ae82149d6a2da85",
+        "rank_five_cases": 188,
+        "scope": "independent finite literal shortcut checks; no kernel closure or Collatz proof",
+        "small_pair_counts": {
+          "A": 4096,
+          "B": 683,
+          "C": 1365
+        },
+        "status": "PASS",
+        "subfamily_cases": 16
+      },
+      "script": "check_reverse_kernel_review.py",
+      "seconds": 0.165,
+      "stderr": "",
+      "stdout_sha256": "afe95b594ec87449a826c458b0edff6eb433c396e53b80d7cb2e535409c96684"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_shifted_smooth_complete.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "cutoff_base_margin": "11790184577738583171517682714222634867583242455331168282114561",
+        "cutoff_ratio_margin": "76106970410619175960751674603647",
+        "extra_large_valuation_controls": 6,
+        "known_basin": [
+          1,
+          3,
+          5,
+          15,
+          23,
+          35,
+          53
+        ],
+        "known_source_free_prefixes": 10649,
+        "literal_odd_edges": 349521,
+        "negative_controls": 6,
+        "preserving_rows": [
+          {
+            "b": 1,
+            "endpoint": 1,
+            "k": 1,
+            "q": 1,
+            "s": 1,
+            "source": 1,
+            "t": 0
+          },
+          {
+            "b": 3,
+            "endpoint": 1,
+            "k": 2,
+            "q": 1,
+            "s": 1,
+            "source": 5,
+            "t": 0
+          },
+          {
+            "b": 4,
+            "endpoint": 5,
+            "k": 4,
+            "q": 1,
+            "s": 1,
+            "source": 53,
+            "t": 1
+          }
+        ],
+        "run_sources": 8128,
+        "scope": "finite complement, literal run identities and two exact induction comparisons; external logarithm theorem not re-proved",
+        "simple_prefixes": 11373,
+        "small_boundary_indices": 127,
+        "small_rows_sha256": "c6de3cd13c9ffd0433fb411e47a068b0656f8ece7305593f48e033092802e4d3",
+        "status": "PASS"
+      },
+      "script": "check_shifted_smooth_complete.py",
+      "seconds": 0.298,
+      "stderr": "",
+      "stdout_sha256": "ce5c67333e6a0752a8b85dd2adc8d53359835bf7dd85affae47cd65312986673"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_shifted_smooth_complete.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "cutoff_base_margin": "11790184577738583171517682714222634867583242455331168282114561",
+        "cutoff_ratio_margin": "76106970410619175960751674603647",
+        "extra_large_valuation_controls": 6,
+        "known_basin": [
+          1,
+          3,
+          5,
+          15,
+          23,
+          35,
+          53
+        ],
+        "known_source_free_prefixes": 10649,
+        "literal_odd_edges": 349521,
+        "negative_controls": 6,
+        "preserving_rows": [
+          {
+            "b": 1,
+            "endpoint": 1,
+            "k": 1,
+            "q": 1,
+            "s": 1,
+            "source": 1,
+            "t": 0
+          },
+          {
+            "b": 3,
+            "endpoint": 1,
+            "k": 2,
+            "q": 1,
+            "s": 1,
+            "source": 5,
+            "t": 0
+          },
+          {
+            "b": 4,
+            "endpoint": 5,
+            "k": 4,
+            "q": 1,
+            "s": 1,
+            "source": 53,
+            "t": 1
+          }
+        ],
+        "run_sources": 8128,
+        "scope": "finite complement, literal run identities and two exact induction comparisons; external logarithm theorem not re-proved",
+        "simple_prefixes": 11373,
+        "small_boundary_indices": 127,
+        "small_rows_sha256": "c6de3cd13c9ffd0433fb411e47a068b0656f8ece7305593f48e033092802e4d3",
+        "status": "PASS"
+      },
+      "script": "check_shifted_smooth_complete.py",
+      "seconds": 0.417,
+      "stderr": "",
+      "stdout_sha256": "ce5c67333e6a0752a8b85dd2adc8d53359835bf7dd85affae47cd65312986673"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/deep-reverse-closure-20261120/check_shifted_smooth_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "result": {
+        "author_implementation_imported": false,
+        "exact_defect_clock_checks": 13274,
+        "exact_first_exit_examples": 8128,
+        "finite_boundary_indices": 127,
+        "scope": "independent finite complement and arithmetic controls; universal proof conditional on quoted Lagarias Lemma 2.2(1)",
+        "simple_prefix_incidence_checks": 24688,
+        "table_sha256": "dae95039b21160cc3dc852ce159583b1c9dcc950c5824e507bcdf783ef7a7b4b"
+      },
+      "script": "check_shifted_smooth_review.py",
+      "seconds": 2.431,
+      "stderr": "",
+      "stdout_sha256": "3238220b8e902eb21aa02266bf6908dfce2b3791bb12c09af1228dce5069d922"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/deep-reverse-closure-20261120/check_shifted_smooth_review.py"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "result": {
+        "author_implementation_imported": false,
+        "exact_defect_clock_checks": 13274,
+        "exact_first_exit_examples": 8128,
+        "finite_boundary_indices": 127,
+        "scope": "independent finite complement and arithmetic controls; universal proof conditional on quoted Lagarias Lemma 2.2(1)",
+        "simple_prefix_incidence_checks": 24688,
+        "table_sha256": "dae95039b21160cc3dc852ce159583b1c9dcc950c5824e507bcdf783ef7a7b4b"
+      },
+      "script": "check_shifted_smooth_review.py",
+      "seconds": 2.267,
+      "stderr": "",
+      "stdout_sha256": "3238220b8e902eb21aa02266bf6908dfce2b3791bb12c09af1228dce5069d922"
+    }
+  ],
+  "finished_utc": "2026-11-20T21:50:52.525198+00:00",
+  "manifest_files": 42,
+  "normal_optimized_reports_identical": true,
+  "schema": "collatz-deep-reverse-replay/v1",
+  "scientific_programs": 16,
+  "scope": "content hashes and finite exact evidence, not a full Collatz proof",
+  "started_utc": "2026-11-20T21:50:44.720997+00:00",
+  "success": true,
+  "successful_executions": 32
+}
