@@ -1,0 +1,86 @@
+{
+  "candidate_recurrences_checked": 195322,
+  "full_recursive_table_widths": 4096,
+  "full_table_sha256": "52aaeeb4753255cc6b655a05f77c942b115ee04277487b41f7486c2e58b65dbb",
+  "integer_image_checks": 6720,
+  "larger_width_policy_bounds_not_full_minima": [
+    {
+      "certified_upper_bound": 55681,
+      "depth": 3,
+      "width": 100000
+    },
+    {
+      "certified_upper_bound": 2841764210,
+      "depth": 3,
+      "width": 10000000000
+    }
+  ],
+  "literal_path_states": 94470,
+  "literal_sources": 2048,
+  "literal_window_checks": 55296,
+  "policy_cache_nodes": 362,
+  "rational_power_certificates": 2,
+  "repeated_cycle_control_rejected": true,
+  "schema": "collatz-translated-interval-bootstrap-v1",
+  "scope": "uniform occupancy of one finite simple ordinary path, never a basin count",
+  "selected_exact_minima": [
+    {
+      "chosen_clock_and_cut": null,
+      "exact_recursive_minimum": 32,
+      "width": 32
+    },
+    {
+      "chosen_clock_and_cut": null,
+      "exact_recursive_minimum": 64,
+      "width": 64
+    },
+    {
+      "chosen_clock_and_cut": [
+        7,
+        3
+      ],
+      "exact_recursive_minimum": 117,
+      "width": 128
+    },
+    {
+      "chosen_clock_and_cut": [
+        8,
+        3
+      ],
+      "exact_recursive_minimum": 217,
+      "width": 256
+    },
+    {
+      "chosen_clock_and_cut": [
+        9,
+        4
+      ],
+      "exact_recursive_minimum": 397,
+      "width": 512
+    },
+    {
+      "chosen_clock_and_cut": [
+        10,
+        5
+      ],
+      "exact_recursive_minimum": 744,
+      "width": 1024
+    },
+    {
+      "chosen_clock_and_cut": [
+        11,
+        5
+      ],
+      "exact_recursive_minimum": 1383,
+      "width": 2048
+    },
+    {
+      "chosen_clock_and_cut": [
+        12,
+        6
+      ],
+      "exact_recursive_minimum": 2565,
+      "width": 4096
+    }
+  ]
+}

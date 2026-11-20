@@ -1,0 +1,112 @@
+{
+  "schema": "collatz-fixed-integer-scientific-replay-v1",
+  "commit": "c468db6fb8bd2d8393ead8b4d46e2e88b7375e43",
+  "tree": "2163c4e128bda7079a533f762c9029876aa8d503",
+  "started_utc": "2026-11-20T18:37:59.080731+00:00",
+  "scope": "six finite scientific replays; global claims require the stated written proofs; no full Collatz proof",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/fixed_integer_arithmetic.py",
+        "--max-cap",
+        "6",
+        "--compare",
+        "reports/2026-11-20-fixed-integer-descent/arithmetic-run-cores-cap6.json"
+      ],
+      "exit_code": 0,
+      "seconds": 63.649,
+      "stdout": "{\n  \"claim_scope\": \"bounded run-count orbits only; unrestricted Collatz remains open\",\n  \"core_rows\": [\n    {\n      \"canonical_dfs_replay_sha256\": \"b98ec9f6923e97abdfa2bf0921c4e64e09f51a0349ced487b11c6ed8c07ad3be\",\n      \"cap\": 1,\n      \"core_sources\": 4,\n      \"direct_replayed_odd_steps\": 3,\n      \"exits_cap\": 3,\n      \"first_clock_witness_in_dfs_order\": \"3\",\n      \"independent_inverse_edges\": 1,\n      \"largest_capped_basin_source\": \"1\",\n      \"largest_core_source\": \"15\",\n      \"max_core_bitlength\": 4,\n      \"max_core_odd_clock\": 1,\n      \"nontrivial_cycles\": 0,\n      \"reaches_one_inside_cap\": 1,\n      \"unconditional_outside_core_clock_bound\": 7\n    },\n    {\n      \"canonical_dfs_replay_sha256\": \"4eb2960c24fbedf4dd8f78b46414abefd20cd4e387c3c44fd5583b18bb682ddb\",\n      \"cap\": 2,\n      \"core_sources\": 76,\n      \"direct_replayed_odd_steps\": 149,\n      \"exits_cap\": 64,\n      \"first_clock_witness_in_dfs_order\": \"33\",\n      \"independent_inverse_edges\": 12,\n      \"largest_capped_basin_source\": \"33\",\n      \"largest_core_source\": \"8183\",\n      \"max_core_bitlength\": 13,\n      \"max_core_odd_clock\": 8,\n      \"nontrivial_cycles\": 0,\n      \"reaches_one_inside_cap\": 12,\n      \"unconditional_outside_core_clock_bound\": 31\n    },\n    {\n      \"canonical_dfs_replay_sha256\": \"b9459f30c9fc1209485086819111260c76a71aa8ef4abd7efa26e1a451d74a0c\",\n      \"cap\": 3,\n      \"core_sources\": 1268,\n      \"direct_replayed_odd_steps\": 3160,\n      \"exits_cap\": 1189,\n      \"first_clock_witness_in_dfs_order\": \"129\",\n      \"independent_inverse_edges\": 79,\n      \"largest_capped_basin_source\": \"4109\",\n      \"largest_core_source\": \"1048311\",\n      \"max_core_bitlength\": 20,\n      \"max_core_odd_clock\": 19,\n      \"nontrivial_cycles\": 0,\n      \"reaches_one_inside_cap\": 79,\n      \"unconditional_outside_core_clock_bound\": 127\n    },\n    {\n      \"canonical_dfs_replay_sha256\": \"50c3d7be76533043e46e250e069d94c5e724643f2f264b3a7e86a9ec64983664\",\n      \"cap\": 4,\n      \"core_sources\": 32620,\n      \"direct_replayed_odd_steps\": 71884,\n      \"exits_cap\": 32064,\n      \"first_clock_witness_in_dfs_order\": \"879\",\n      \"independent_inverse_edges\": 556,\n      \"largest_capped_basin_source\": \"524429\",\n      \"largest_core_source\": \"17179885687\",\n      \"max_core_bitlength\": 35,\n      \"max_core_odd_clock\": 42,\n      \"nontrivial_cycles\": 0,\n      \"reaches_one_inside_cap\": 556,\n      \"unconditional_outside_core_clock_bound\": 511\n    },\n    {\n      \"canonical_dfs_replay_sha256\": \"d3e8485b444ed7263744496cd47083743abf09d7d46db46ab686b55be6fc4221\",\n      \"cap\": 5,\n      \"core_sources\": 717326,\n      \"direct_replayed_odd_steps\": 1537214,\n      \"exits_cap\": 704762,\n      \"first_clock_witness_in_dfs_order\": \"128395\",\n      \"independent_inverse_edges\": 12564,\n      \"largest_capped_basin_source\": \"536878869\",\n      \"largest_core_source\": \"35184338542759\",\n      \"max_core_bitlength\": 45,\n      \"max_core_odd_clock\": 68,\n      \"nontrivial_cycles\": 0,\n      \"reaches_one_inside_cap\": 12564,\n      \"unconditional_outside_core_clock_bound\": 2047\n    },\n    {\n      \"canonical_dfs_replay_sha256\": \"a87526dd3d83c0d7e9dcb65ae8a370a7908f649e81d1f6f0a6671788c0da677e\",\n      \"cap\": 6,\n      \"core_sources\": 19371072,\n      \"direct_replayed_odd_steps\": 37448205,\n      \"exits_cap\": 19213344,\n      \"first_clock_witness_in_dfs_order\": \"74475\",\n      \"independent_inverse_edges\": 157728,\n      \"largest_capped_basin_source\": \"68719605301\",\n      \"largest_core_source\": \"1152921505680852855\",\n      \"max_core_bitlength\": 61,\n      \"max_core_odd_clock\": 107,\n      \"nontrivial_cycles\": 0,\n      \"reaches_one_inside_cap\": 157728,\n      \"unconditional_outside_core_clock_bound\": 8191\n    }\n  ],\n  \"implementation\": \"literal per-source forward replay and separate inverse BFS; no memoized paths\",\n  \"map\": \"U(n)=(3n+1)/2^v2(3n+1), positive odd n; stop at 1 or cap exit\",\n  \"run_definition_crosschecks\": 65536,\n  \"schema\": \"collatz-binary-runs-core-v1\",\n  \"signed_shadow_checks\": 15456\n}\n",
+      "stderr": "",
+      "script_sha256": "ad62ca23d040b067e20a8e235b61d8406e6ba8ff39da5cf49446379832c37557"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/fixed_integer_run_hitting.py",
+        "--extended",
+        "--compare",
+        "reports/2026-11-20-fixed-integer-descent/modular-run-hitting.json"
+      ],
+      "exit_code": 0,
+      "seconds": 26.199,
+      "stdout": "{\"checked_states\": 73400320, \"maxima\": [{\"bits\": 20, \"cap\": 1, \"delta\": 0, \"maximum\": 2}, {\"bits\": 20, \"cap\": 1, \"delta\": 1, \"maximum\": 3}, {\"bits\": 20, \"cap\": 2, \"delta\": 0, \"maximum\": 4}, {\"bits\": 20, \"cap\": 2, \"delta\": 1, \"maximum\": 6}, {\"bits\": 20, \"cap\": 3, \"delta\": 0, \"maximum\": 6}, {\"bits\": 20, \"cap\": 3, \"delta\": 1, \"maximum\": 7}, {\"bits\": 20, \"cap\": 4, \"delta\": 0, \"maximum\": 10}, {\"bits\": 20, \"cap\": 4, \"delta\": 1, \"maximum\": 10}, {\"bits\": 20, \"cap\": 5, \"delta\": 0, \"maximum\": 10}, {\"bits\": 20, \"cap\": 5, \"delta\": 1, \"maximum\": 20}, {\"bits\": 20, \"cap\": 6, \"delta\": 0, \"maximum\": 39}, {\"bits\": 20, \"cap\": 6, \"delta\": 1, \"maximum\": 101}, {\"bits\": 24, \"cap\": 5, \"delta\": 0, \"maximum\": 10}, {\"bits\": 24, \"cap\": 5, \"delta\": 1, \"maximum\": 13}, {\"bits\": 24, \"cap\": 6, \"delta\": 0, \"maximum\": 15}, {\"bits\": 24, \"cap\": 6, \"delta\": 1, \"maximum\": 21}, {\"bits\": 24, \"cap\": 7, \"delta\": 0, \"maximum\": 50}, {\"bits\": 24, \"cap\": 7, \"delta\": 1, \"maximum\": 117}, {\"bits\": 24, \"cap\": 8, \"delta\": 0, \"maximum\": 312}, {\"bits\": 24, \"cap\": 8, \"delta\": 1, \"maximum\": 978}]}\n",
+      "stderr": "",
+      "script_sha256": "3580ddbf945030c9981959f3ab055d994c192917c04c26eda53c031d89f803b9"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/fixed_integer_mergers.py",
+        "--compare",
+        "reports/2026-11-20-fixed-integer-descent/merger-report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.291,
+      "stdout": "{\n  \"adaptive_cases_through_100000\": {\n    \"F\": 3125,\n    \"G\": 8334,\n    \"H\": 3123,\n    \"J\": 1563\n  },\n  \"adjacent_cases_through_100000\": 25002,\n  \"affine_rows\": 8,\n  \"combined_excluded_odd_residues\": 83,\n  \"deep_valuation_stress_cases\": 705,\n  \"inherited_excluded_odd_residues\": 48,\n  \"largest_adjacent_clock\": 82,\n  \"largest_neighborhood_binary_depth\": 137,\n  \"largest_stress_input_bits\": 263,\n  \"limits\": [\n    \"The infinite adaptive families are established by the written argument, not the bounded census.\",\n    \"The neighborhood result inherits the source-qualified finite 81h convergence implication.\",\n    \"No proof that the guards cover every ordinary integer is supplied.\",\n    \"No proof-assistant verification is claimed.\"\n  ],\n  \"negative_controls\": 9,\n  \"neighborhood_exact_coefficient\": \"15676011/16777216\",\n  \"neighborhood_ordinary_replays\": 5120,\n  \"neighborhood_seed_pairs\": 512,\n  \"new_excluded_odd_residues\": 35,\n  \"odd_residues\": 192,\n  \"residue_period\": 384,\n  \"source_head\": \"7d04c4dd756cfe495eb3eee78eba35a99085cd2a\",\n  \"source_pr\": 146,\n  \"status\": \"bounded exact replays passed; universal coverage remains open\",\n  \"total_replayed_adaptive_graph_edges\": 284560\n}\n",
+      "stderr": "",
+      "script_sha256": "a3a38ff5212975150791362e78cc340ffdc0915d85f4183692a7845a17ede019"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/fixed_integer_drift.py",
+        "--compare",
+        "reports/2026-11-20-fixed-integer-descent/drift-report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.755,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"Bounded exact arithmetic replay; no universal stopping, cycle exclusion, or instantiation of the enormous universal record window.\",\n  \"parameters\": {\n    \"source_limit\": 4096,\n    \"word_depth\": 12\n  },\n  \"words\": {\n    \"parity_words\": 8191,\n    \"ordinary_lifts\": 16382,\n    \"literal_steps\": 180228\n  },\n  \"interval_images\": {\n    \"translated_cohorts\": 224,\n    \"source_replays\": 56112,\n    \"image_interfaces\": 576\n  },\n  \"paths\": {\n    \"simple_paths\": 4096,\n    \"listed_states\": 209868,\n    \"translated_window_checks\": 49152\n  },\n  \"records\": {\n    \"record_paths\": 260,\n    \"product_edges\": 8170,\n    \"record_prefix_checks\": 1731,\n    \"no_descent_prefix_checks\": 535,\n    \"maximum_records\": 20\n  },\n  \"rejected_mutations\": [\n    \"repeated_cycle_counted_with_multiplicity\",\n    \"wrong_parity_residue\",\n    \"empty_record_window\",\n    \"omitted_odd_affine_correction\"\n  ],\n  \"rational_exponent_certificates\": [\n    \"3^1170 < 2^1856\",\n    \"2^9664 < 39^1170 * 25^750\"\n  ],\n  \"selected_exact_bounds\": [\n    {\n      \"width\": 128,\n      \"bound\": 117,\n      \"k\": 7,\n      \"h\": 3\n    },\n    {\n      \"width\": 4096,\n      \"bound\": 2720,\n      \"k\": 12,\n      \"h\": 6\n    },\n    {\n      \"width\": 100000,\n      \"bound\": 63875,\n      \"k\": 17,\n      \"h\": 9\n    },\n    {\n      \"width\": 10000000000,\n      \"bound\": 3442132111,\n      \"k\": 31,\n      \"h\": 17\n    },\n    {\n      \"width\": 100000000000000000000,\n      \"bound\": 12960466033863499954,\n      \"k\": 63,\n      \"h\": 36\n    },\n    {\n      \"width\": 100000000000000000000000000000000000000000000000000,\n      \"bound\": 874203886743967423667939931850156023131023352108,\n      \"k\": 163,\n      \"h\": 97\n    }\n  ]\n}\n",
+      "stderr": "",
+      "script_sha256": "761db3f529885c5a6581801ec32d9f29522419c0d93909ae1f013cad56d6f1ac"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/fixed_integer_interval_bootstrap.py",
+        "--compare",
+        "reports/2026-11-20-fixed-integer-descent/interval-bootstrap-report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.371,
+      "stdout": "{\n  \"candidate_recurrences_checked\": 195322,\n  \"full_recursive_table_widths\": 4096,\n  \"full_table_sha256\": \"52aaeeb4753255cc6b655a05f77c942b115ee04277487b41f7486c2e58b65dbb\",\n  \"integer_image_checks\": 6720,\n  \"larger_width_policy_bounds_not_full_minima\": [\n    {\n      \"certified_upper_bound\": 55681,\n      \"depth\": 3,\n      \"width\": 100000\n    },\n    {\n      \"certified_upper_bound\": 2841764210,\n      \"depth\": 3,\n      \"width\": 10000000000\n    }\n  ],\n  \"literal_path_states\": 94470,\n  \"literal_sources\": 2048,\n  \"literal_window_checks\": 55296,\n  \"policy_cache_nodes\": 362,\n  \"rational_power_certificates\": 2,\n  \"repeated_cycle_control_rejected\": true,\n  \"schema\": \"collatz-translated-interval-bootstrap-v1\",\n  \"scope\": \"uniform occupancy of one finite simple ordinary path, never a basin count\",\n  \"selected_exact_minima\": [\n    {\n      \"chosen_clock_and_cut\": null,\n      \"exact_recursive_minimum\": 32,\n      \"width\": 32\n    },\n    {\n      \"chosen_clock_and_cut\": null,\n      \"exact_recursive_minimum\": 64,\n      \"width\": 64\n    },\n    {\n      \"chosen_clock_and_cut\": [\n        7,\n        3\n      ],\n      \"exact_recursive_minimum\": 117,\n      \"width\": 128\n    },\n    {\n      \"chosen_clock_and_cut\": [\n        8,\n        3\n      ],\n      \"exact_recursive_minimum\": 217,\n      \"width\": 256\n    },\n    {\n      \"chosen_clock_and_cut\": [\n        9,\n        4\n      ],\n      \"exact_recursive_minimum\": 397,\n      \"width\": 512\n    },\n    {\n      \"chosen_clock_and_cut\": [\n        10,\n        5\n      ],\n      \"exact_recursive_minimum\": 744,\n      \"width\": 1024\n    },\n    {\n      \"chosen_clock_and_cut\": [\n        11,\n        5\n      ],\n      \"exact_recursive_minimum\": 1383,\n      \"width\": 2048\n    },\n    {\n      \"chosen_clock_and_cut\": [\n        12,\n        6\n      ],\n      \"exact_recursive_minimum\": 2565,\n      \"width\": 4096\n    }\n  ]\n}\n",
+      "stderr": "",
+      "script_sha256": "2dc95673f0bc3689f06586740ddbe451fdc59fb31de54e3caefc2ca3a22d3fec"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/fixed_integer_rewriting.py",
+        "--compare",
+        "reports/2026-11-20-fixed-integer-descent/rewriting-report.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.163,
+      "stdout": "{\n  \"bound\": \"H + 108*(bitlength(N)-1) + 5885\",\n  \"checked_rule_occurrences\": {\n    \"ad->d\": 3906,\n    \"ae->ea\": 3711,\n    \"af->eb\": 3711,\n    \"ag->fa\": 3711,\n    \"bd->gd\": 3906,\n    \"be->fb\": 3711,\n    \"bf->ga\": 3711,\n    \"bg->gb\": 3711,\n    \"ce->cb\": 3906,\n    \"cf->caa\": 3906,\n    \"cg->cab\": 3906\n  },\n  \"complete_word_corpus_max_body_length\": 6,\n  \"complete_word_corpus_size\": 19531,\n  \"evidence_limit\": \"finite interface replay; all-source scope requires the written core and rank proofs\",\n  \"guard_failure_control\": {\n    \"after\": [\n      0,\n      13,\n      12\n    ],\n    \"before\": [\n      0,\n      0,\n      0\n    ],\n    \"source\": 5461\n  },\n  \"large_one_run_stress\": [\n    {\n      \"initial_bits\": 64,\n      \"odd_events\": 13,\n      \"terminal_one_runs\": 7\n    },\n    {\n      \"initial_bits\": 257,\n      \"odd_events\": 13,\n      \"terminal_one_runs\": 7\n    },\n    {\n      \"initial_bits\": 1024,\n      \"odd_events\": 13,\n      \"terminal_one_runs\": 7\n    },\n    {\n      \"initial_bits\": 4096,\n      \"odd_events\": 13,\n      \"terminal_one_runs\": 7\n    }\n  ],\n  \"large_source_dynamic_checks\": 52,\n  \"largest_observed_schedule_length\": 1449,\n  \"largest_observed_schedule_odd_events\": 107,\n  \"literal_guarded_schedules\": 501,\n  \"literal_rewrite_edges\": 32693,\n  \"not_claimed\": \"unrestricted AYH termination or a context-compatible reduction order\",\n  \"rejected_controls\": 4,\n  \"schema\": \"collatz-six-run-guarded-ayh-v1\",\n  \"scope\": \"all eleven rules on proper words, stopped at 1 or run-cap exit\"\n}\n",
+      "stderr": "",
+      "script_sha256": "502999ab238a79053bc63113006c36ada5cabc83d1092b16f3cb5afce024fc4f"
+    }
+  ],
+  "success": true,
+  "clean_after": true,
+  "same_identity_after": true,
+  "finished_utc": "2026-11-20T18:39:31.522276+00:00"
+}

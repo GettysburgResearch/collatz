@@ -1,0 +1,63 @@
+{
+  "bound": "H + 108*(bitlength(N)-1) + 5885",
+  "checked_rule_occurrences": {
+    "ad->d": 3906,
+    "ae->ea": 3711,
+    "af->eb": 3711,
+    "ag->fa": 3711,
+    "bd->gd": 3906,
+    "be->fb": 3711,
+    "bf->ga": 3711,
+    "bg->gb": 3711,
+    "ce->cb": 3906,
+    "cf->caa": 3906,
+    "cg->cab": 3906
+  },
+  "complete_word_corpus_max_body_length": 6,
+  "complete_word_corpus_size": 19531,
+  "evidence_limit": "finite interface replay; all-source scope requires the written core and rank proofs",
+  "guard_failure_control": {
+    "after": [
+      0,
+      13,
+      12
+    ],
+    "before": [
+      0,
+      0,
+      0
+    ],
+    "source": 5461
+  },
+  "large_one_run_stress": [
+    {
+      "initial_bits": 64,
+      "odd_events": 13,
+      "terminal_one_runs": 7
+    },
+    {
+      "initial_bits": 257,
+      "odd_events": 13,
+      "terminal_one_runs": 7
+    },
+    {
+      "initial_bits": 1024,
+      "odd_events": 13,
+      "terminal_one_runs": 7
+    },
+    {
+      "initial_bits": 4096,
+      "odd_events": 13,
+      "terminal_one_runs": 7
+    }
+  ],
+  "large_source_dynamic_checks": 52,
+  "largest_observed_schedule_length": 1449,
+  "largest_observed_schedule_odd_events": 107,
+  "literal_guarded_schedules": 501,
+  "literal_rewrite_edges": 32693,
+  "not_claimed": "unrestricted AYH termination or a context-compatible reduction order",
+  "rejected_controls": 4,
+  "schema": "collatz-six-run-guarded-ayh-v1",
+  "scope": "all eleven rules on proper words, stopped at 1 or run-cap exit"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Independent breadth-first/string-run core reconstruction and literal replay through cap four only; not a second cap-six enumeration.",
+  "file_sha256": {
+    "research/fixed-integer-descent/arithmetic.md": "df7869013ba19ebba068e9e15cda5f3c7374d9ef1cb4090d7cf26d998188a315",
+    "research/fixed-integer-descent/modular_hitting.md": "bb757b452a003969dd9dde4668cc6c57f649260fbdc68341ebb01723c9f25785",
+    "experiments/fixed_integer_arithmetic.py": "ad62ca23d040b067e20a8e235b61d8406e6ba8ff39da5cf49446379832c37557"
+  },
+  "rows": [
+    {
+      "cap": 1,
+      "complete_sources": 4,
+      "successes": 1,
+      "maximum_odd_clock": 1,
+      "literal_odd_edges": 3
+    },
+    {
+      "cap": 2,
+      "complete_sources": 76,
+      "successes": 12,
+      "maximum_odd_clock": 8,
+      "literal_odd_edges": 149
+    },
+    {
+      "cap": 3,
+      "complete_sources": 1268,
+      "successes": 79,
+      "maximum_odd_clock": 19,
+      "literal_odd_edges": 3160
+    },
+    {
+      "cap": 4,
+      "complete_sources": 32620,
+      "successes": 556,
+      "maximum_odd_clock": 42,
+      "literal_odd_edges": 71884
+    }
+  ]
+}

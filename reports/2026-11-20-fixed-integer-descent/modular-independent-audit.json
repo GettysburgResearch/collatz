@@ -1,0 +1,29 @@
+{
+  "actual_residue_states_visited": 8388608,
+  "bits": 24,
+  "cap_shift_tests": 33554432,
+  "rows": [
+    {
+      "cap": 5,
+      "delta": 0,
+      "maximum": 10
+    },
+    {
+      "cap": 5,
+      "delta": 1,
+      "maximum": 13
+    },
+    {
+      "cap": 6,
+      "delta": 0,
+      "maximum": 15
+    },
+    {
+      "cap": 6,
+      "delta": 1,
+      "maximum": 21
+    }
+  ],
+  "schema": "independent-prefix-suffix-run-audit-v1",
+  "scope": "independent maxima only; root ordered digests are not independently reproduced"
+}
