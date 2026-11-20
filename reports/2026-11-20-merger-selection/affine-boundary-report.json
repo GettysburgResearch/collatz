@@ -1,0 +1,22 @@
+{
+  "claim_ids": [
+    "AC1",
+    "AC2"
+  ],
+  "counts": {
+    "convergent_affine_instances": 1760,
+    "criterion_negative_instances": 1349,
+    "criterion_positive_instances": 411,
+    "dyadic_exception_instances": 130,
+    "mutation_rejections": 3,
+    "negative_forced_clock_checks": 52362,
+    "ordinary_prefix_checks": 4876,
+    "positive_cylinder_lifts": 1644,
+    "signed_fixed_point_checks": 129
+  },
+  "fixture_digest_sha256": "cf5a07e439fc759916ec38d6cedf943ef69bbe420e165b4388c1d1f3fc56aa51",
+  "map": "shortcut T: even n/2; odd (3n+1)/2",
+  "schema": "ordinary-merger-affine-boundary/v1",
+  "scope": "Bounded exact replay; unbounded statements require the written proofs.",
+  "status": "PASS"
+}

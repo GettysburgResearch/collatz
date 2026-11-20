@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "reviewed_note_sha256": "3c42beb093772aae23cb623174e9529d15672c9117ad5fade0f0469d32fca17c",
+  "nonempty_words_checked": 14,
+  "ordinary_parameters_checked": 28,
+  "six_step_blocks_replayed": 68,
+  "equal_length_cylinders_distinct": true,
+  "prefix_nesting_checked": true,
+  "terminal_guard_exclusion_checked": true,
+  "cases": [
+    {
+      "word": "1",
+      "m": 2,
+      "start_bits": 4,
+      "common_clock": 14
+    },
+    {
+      "word": "1",
+      "m": 29,
+      "start_bits": 58,
+      "common_clock": 68
+    },
+    {
+      "word": "2",
+      "m": 2,
+      "start_bits": 6,
+      "common_clock": 14
+    },
+    {
+      "word": "2",
+      "m": 11,
+      "start_bits": 24,
+      "common_clock": 32
+    },
+    {
+      "word": "11",
+      "m": 326,
+      "start_bits": 653,
+      "common_clock": 668
+    },
+    {
+      "word": "11",
+      "m": 1055,
+      "start_bits": 2111,
+      "common_clock": 2126
+    },
+    {
+      "word": "12",
+      "m": 56,
+      "start_bits": 115,
+      "common_clock": 128
+    },
+    {
+      "word": "12",
+      "m": 299,
+      "start_bits": 601,
+      "common_clock": 614
+    },
+    {
+      "word": "21",
+      "m": 83,
+      "start_bits": 169,
+      "common_clock": 182
+    },
+    {
+      "word": "21",
+      "m": 326,
+      "start_bits": 655,
+      "common_clock": 668
+    },
+    {
+      "word": "22",
+      "m": 56,
+      "start_bits": 117,
+      "common_clock": 128
+    },
+    {
+      "word": "22",
+      "m": 137,
+      "start_bits": 279,
+      "common_clock": 290
+    },
+    {
+      "word": "111",
+      "m": 10532,
+      "start_bits": 21067,
+      "common_clock": 21086
+    },
+    {
+      "word": "111",
+      "m": 30215,
+      "start_bits": 60433,
+      "common_clock": 60452
+    },
+    {
+      "word": "112",
+      "m": 1514,
+      "start_bits": 3032,
+      "common_clock": 3050
+    },
+    {
+      "word": "112",
+      "m": 8075,
+      "start_bits": 16154,
+      "common_clock": 16172
+    },
+    {
+      "word": "121",
+      "m": 3242,
+      "start_bits": 6488,
+      "common_clock": 6506
+    },
+    {
+      "word": "121",
+      "m": 9803,
+      "start_bits": 19610,
+      "common_clock": 19628
+    },
+    {
+      "word": "122",
+      "m": 1271,
+      "start_bits": 2548,
+      "common_clock": 2564
+    },
+    {
+      "word": "122",
+      "m": 3458,
+      "start_bits": 6922,
+      "common_clock": 6938
+    },
+    {
+      "word": "211",
+      "m": 3971,
+      "start_bits": 7946,
+      "common_clock": 7964
+    },
+    {
+      "word": "211",
+      "m": 10532,
+      "start_bits": 21068,
+      "common_clock": 21086
+    },
+    {
+      "word": "212",
+      "m": 1514,
+      "start_bits": 3034,
+      "common_clock": 3050
+    },
+    {
+      "word": "212",
+      "m": 3701,
+      "start_bits": 7408,
+      "common_clock": 7424
+    },
+    {
+      "word": "221",
+      "m": 1055,
+      "start_bits": 2116,
+      "common_clock": 2132
+    },
+    {
+      "word": "221",
+      "m": 3242,
+      "start_bits": 6490,
+      "common_clock": 6506
+    },
+    {
+      "word": "222",
+      "m": 542,
+      "start_bits": 1091,
+      "common_clock": 1106
+    },
+    {
+      "word": "222",
+      "m": 1271,
+      "start_bits": 2549,
+      "common_clock": 2564
+    }
+  ]
+}

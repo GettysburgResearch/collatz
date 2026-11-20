@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "source_note_sha256": "ff735ef39a5b7de1830d40b8a6b21cdaca2a183346ecf5129992bf659a04ff6b",
+  "independent_terminal_sets": [
+    {
+      "k": 1,
+      "size": 2,
+      "maximum": 5
+    },
+    {
+      "k": 2,
+      "size": 8,
+      "maximum": 85
+    },
+    {
+      "k": 3,
+      "size": 22,
+      "maximum": 1085
+    },
+    {
+      "k": 4,
+      "size": 54,
+      "maximum": 12325
+    },
+    {
+      "k": 5,
+      "size": 133,
+      "maximum": 131405
+    },
+    {
+      "k": 6,
+      "size": 317,
+      "maximum": 1346485
+    }
+  ],
+  "independent_small_hitting_times": {
+    "1": 0,
+    "2": 1,
+    "5": 4,
+    "7": 11,
+    "23": 11,
+    "27": 70,
+    "28": 13,
+    "85": 8
+  },
+  "scope": "Independent finite exact checks plus separate written proof review; no all-k convergence claim."
+}
