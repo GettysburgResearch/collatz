@@ -1,0 +1,29 @@
+{
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "branch": "research/gemini-dirichlet-global-20261120",
+  "published_exact_replay": {
+    "accepted_replays": 8,
+    "expected_rejections": 2,
+    "payloads_identical_to_prepublication": true,
+    "scientific_file_hashes_identical": true
+  },
+  "receipt_sha256": {
+    "published-exact-replay.json": "2d4afaad6b37629e4e360cc2643035a4408c953811bd6b0e0571803b1bf26a36",
+    "repository-validation.json": "008a2a50831bac163912be87aa07d47d8454b72c5e6996211b50b702b9f073ba"
+  },
+  "remote_scientific_ref_readback": "4937497e153c7894c42f8fbcd1bd3ec1d8487d0a",
+  "repository": "GettysburgResearch/collatz",
+  "schema": "collatz-followups-publication/v1",
+  "scientific_commit": "4937497e153c7894c42f8fbcd1bd3ec1d8487d0a",
+  "scientific_tree": "7c5f0f2211a020f1a49f8cb08efd39b34463a6f8",
+  "scope": "The tested commit is the already-published scientific parent. This subsequent commit adds evidence and updates the report only. It does not claim its own future head was validated, nor claim a remote GitHub Actions result.",
+  "validation": {
+    "clean_before_and_after": true,
+    "commands_passed": 11,
+    "complete_checkout": true,
+    "finished_utc": "2026-11-20T19:30:14.614115+00:00",
+    "regressions": true,
+    "started_utc": "2026-11-20T19:30:09.442269+00:00",
+    "tracked_files": 375
+  }
+}

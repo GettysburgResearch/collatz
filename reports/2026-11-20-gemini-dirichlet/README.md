@@ -88,9 +88,28 @@ original file was overwritten or resealed.
 
 ## Repository validation boundary
 
-The scientific content is committed and published before the repository-wide
-clean-checkout validation is run. Its actual remote commit and tree, complete
-validation output, and final publication readback are recorded in a subsequent
-documentation commit. This avoids attributing a receipt to the commit that
-contains the receipt itself. A local scoped replay, a complete-checkout
-integrity run, and a remote GitHub Actions run remain distinct events.
+The scientific commit was published and read back from the remote branch:
+
+- Commit: `4937497e153c7894c42f8fbcd1bd3ec1d8487d0a`.
+- Tree: `7c5f0f2211a020f1a49f8cb08efd39b34463a6f8`.
+- Base: `ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`.
+
+A separate clean, complete checkout of that exact commit then ran
+`python -X utf8 -B tools/validate.py --regressions --receipt PATH_OUTSIDE_CHECKOUT`.
+All **eleven commands passed**. The checkout's 375 tracked files, commit,
+and tree were unchanged afterward. The complete output is preserved in
+[repository-validation.json](repository-validation.json).
+
+The four new checkers also ran again in both interpreter modes from this
+published checkout: eight successful replays and two expected rejection
+controls. Every complete mathematical payload and every scientific-file
+hash matched the prepublication run. See
+[published-exact-replay.json](published-exact-replay.json) and the
+[publication record](publication.json).
+
+These receipts are added in a subsequent documentation commit. The tested
+revision is the scientific parent specified above; no receipt is attributed
+to the later commit containing itself. The final branch head is reported in
+the PR after remote readback. This is local execution of the repository's
+complete gate, not a claim that GitHub Actions ran successfully. No scientific
+file changes in this evidence-only follow-up.
