@@ -1,0 +1,17 @@
+{
+  "clean_after": true,
+  "clean_before": true,
+  "complete_tracked_files": 334,
+  "manifest_files_verified": 18,
+  "ordinary_optimized_outputs_byte_identical": true,
+  "packet_checkers": 6,
+  "packet_executions": 12,
+  "receipt_sha256": {
+    "packet-validation.json": "a066f27b746d6956889cc906519b98a80cfb22fd1ead571704c05a65a555d5a3",
+    "repository-validation.json": "571ab906c36948c50c9c9da5e288cac59de2379e14361d21d46a8defccfd0d51"
+  },
+  "repository_commands_passed": 11,
+  "scientific_commit": "5a178d44ea802a166c8628401cb6b42a3450b73a",
+  "scientific_tree": "71ec989ee99b0f9542880e1ba8ce590523f6b572",
+  "scope": "Actual execution in a complete clean checkout of the published scientific commit; documentation-only child may attach these receipts without changing scientific content."
+}
