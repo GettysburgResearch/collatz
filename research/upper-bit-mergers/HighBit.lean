@@ -429,4 +429,81 @@ theorem route_from_numerator (x : ℕ) (es : List ℕ) (t : ℕ)
     rw [routeTime, orbit_add, ih y hy]
     exact exact_odd_block hb
 
+private theorem cycle_counts (q : ℕ) : orbit 1 (2 * q) = 1 ∧ odds 1 (2 * q) = q := by
+  induction q with
+  | zero => simp [orbit, odds]
+  | succ q ih =>
+    rw [show 2 * (q + 1) = (2 * q + 1) + 1 by omega]
+    simp [orbit, odds, ih.1, ih.2, step]
+
+/-- Once the lower arm hits 1, every sufficiently high additional binary
+digit follows the cycle exactly until the available precision runs out. -/
+theorem after_one_tail (x d q m : ℕ) (hx : orbit x d = 1) :
+    orbit (x + 2 ^ (d + 2 * q) * m) (d + 2 * q) =
+      1 + 3 ^ (odds x d + q) * m := by
+  have ht : orbit (x + 2 ^ (d + 2 * q) * m) d =
+      1 + 2 ^ (2 * q) * (3 ^ odds x d * m) := by
+    rw [pow_add, Nat.mul_assoc, high_bit, hx]
+    ring
+  rw [orbit_add, ht, high_bit, (cycle_counts q).1, (cycle_counts q).2, pow_add]
+  ring
+
+private theorem twice_step (x : ℕ) :
+    2 * step x = if x % 2 = 0 then x else 3 * x + 1 := by
+  by_cases he : x % 2 = 0 <;> simp [step, he] <;> omega
+
+theorem source_profile_bound (x h : ℕ) :
+    2 ^ h * orbit x h ≤ 4 ^ odds x h * x := by
+  induction h with
+  | zero => simp [orbit, odds]
+  | succ h ih =>
+    rw [orbit, pow_succ, Nat.mul_assoc, twice_step]
+    by_cases he : orbit x h % 2 = 0
+    · simpa [he, odds] using ih
+    · simp only [ite_eq_right he, odds, pow_succ]
+      calc
+        2 ^ h * (3 * orbit x h + 1) ≤ 2 ^ h * (4 * orbit x h) :=
+          Nat.mul_le_mul_left _ (by omega)
+        _ = 4 * (2 ^ h * orbit x h) := by ring
+        _ ≤ 4 * (4 ^ odds x h * x) := Nat.mul_le_mul_left 4 ih
+        _ = _ := by ring
+
+private theorem stays_power (b h : ℕ) : ∃ k : ℕ, orbit (2 ^ b) h = 2 ^ k := by
+  induction h with
+  | zero => exact ⟨b, rfl⟩
+  | succ h ih =>
+    obtain ⟨k, hk⟩ := ih
+    rw [orbit, hk]
+    cases k with
+    | zero => exact ⟨1, by decide⟩
+    | succ k => exact ⟨k, by simp [pow_succ, step]⟩
+
+private theorem power_profile_eq (b h : ℕ) :
+    2 ^ h * orbit (2 ^ b) h = 4 ^ odds (2 ^ b) h * 2 ^ b := by
+  induction h with
+  | zero => simp [orbit, odds]
+  | succ h ih =>
+    rw [orbit, pow_succ, Nat.mul_assoc, twice_step]
+    by_cases he : orbit (2 ^ b) h % 2 = 0
+    · simpa [he, odds] using ih
+    · have ho : orbit (2 ^ b) h = 1 := by
+        obtain ⟨k, hk⟩ := stays_power b h
+        cases k with
+        | zero => simpa using hk
+        | succ k => simp [hk, pow_succ] at he
+      simp only [ite_eq_right he, odds, pow_succ]
+      calc
+        2 ^ h * (3 * orbit (2 ^ b) h + 1) = 4 * (2 ^ h * orbit (2 ^ b) h) := by rw [ho]; ring
+        _ = _ := by rw [ih]; ring
+
+theorem power_first_prefix (b h r : ℕ) (hr : indexedStart r = 2 ^ b) : FirstPrefix h r := by
+  intro v hv hp
+  have ha := source_profile_bound (indexedStart v) h
+  rw [hp.1, hp.2, hr, power_profile_eq] at ha
+  have hs : 2 ^ b ≤ indexedStart v :=
+    Nat.le_of_mul_le_mul_left ha (by positivity)
+  rw [← hr] at hs
+  unfold indexedStart at hs
+  omega
+
 end CollatzUpperBit

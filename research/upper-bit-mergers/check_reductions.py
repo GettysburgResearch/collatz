@@ -112,6 +112,32 @@ def check_ancestors():
     print(f"{ordinary} paths across {len(cases)} fixed clocks, {all_classes} cover every class")
 
 
+def check_tails():
+    checked = 0
+    for w in range(32):
+        x = 1 + 3 * w
+        d = a = 0
+        y = x
+        while y != 1 and d < 300:
+            a += y % 2
+            y = step(y)
+            d += 1
+        if y != 1:
+            raise AssertionError(("lower endpoint unavailable", x))
+        for q in range(5):
+            for e in (0, 1):
+                j = d + 2 * q + e
+                n = x + 3 * 2**j
+                endpoint, _ = walk(n, d + 2 * q)
+                if endpoint != 1 + 2**e * 3 ** (a + q + 1):
+                    raise AssertionError(("shifted-power endpoint", n, q, e))
+                if e == 1 and step(endpoint) != 2 + 3 ** (a + q + 2):
+                    raise AssertionError(("odd residual step", n, q))
+                checked += 1
+    print(f"{checked} exact shifted-power tail identities")
+
+
 if __name__ == "__main__":
     check_prefixes(14)
     check_ancestors()
+    check_tails()

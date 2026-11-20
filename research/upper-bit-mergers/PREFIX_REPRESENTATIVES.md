@@ -62,3 +62,47 @@ For a typical member of an aligned block of $2^h$ indices $w$ this increases the
 Start at depth zero with $(a,y)=(0,1)$ and representative $r=0$. Given a retained state, append a higher bit $b\in\{0,1\}$. Put $z=y+3^{a+1}b$. The child has pair $(a+(z\bmod2),T(z))$ and candidate representative $r+2^h b$. Keep the smallest candidate for each new pair. The update is valid by (1). Discarding larger representatives is lossless because each higher bit acts on the pair alone and preserves the order within each set of discarded ties. In particular the least representatives form a prefix-closed tree when digits are read from the least significant end.
 
 The exponential saving in (2) concerns distinct obligations. The proof supplies no bound on how long an individual remaining pair takes to meet, or whether it does.
+
+## A family the filter always retains
+
+Every power of four $x(w_m)=4^m$, with $w_m=(4^m-1)/3$, is its own least representative at **every** depth $h$ for which $w_m<2^h$. To see this, if a start $n>0$ has endpoint $z$ and odd count $a$ at time $h$, then
+
+$$
+n\ \ge\ 2^{h-2a}z. \tag{3}
+$$
+
+An even step has input exactly twice its output. At an odd step its output is at most twice its input, with equality precisely at input 1. Multiplication gives (3). Every odd step on the orbit of a power of two occurs at 1, so (3) is an equality there at every time. A smaller positive integer cannot have both the same endpoint and the same odd count. Thus even some known convergent ordinary starts survive the filter indefinitely.
+
+All the upper-bit comparisons based at these powers of four, taken together, hold if and only if every integer in the following two families reaches 1:
+
+$$
+3^a+1\quad(a\ge1),\qquad 3^a+2\quad(a\ge2). \tag{4}
+$$
+
+The row $m=0$ asks whether $1+3\cdot2^j$ reaches 1 for every $j$. Since $T^2(1+4u)=1+3u$, for $j=2q$ this start reaches $1+3^{q+1}$ in $2q$ steps. For $j=2q+1$ it reaches $1+2\cdot3^{q+1}$ in $2q$ steps and then $2+3^{q+2}$ in one odd step. These identities prove both directions for $m=0$, using the fact that a trajectory that visits 1 remains on its two-cycle thereafter. For $m\ge1$ the eligible $j$ satisfy $j\ge2m-1$. At $j=2m-1$ the upper start $4^m+3\cdot2^j$ is $5\cdot2^{2m-1}$ and reaches 1. For $j\ge2m$ it is $4^m(1+3\cdot2^{j-2m})$ and reduces by halvings to the $m=0$ row.
+
+In fact (4) settles the large-$j$ tail of **every** row whose lower start $x=1+3w$ is known to reach 1. If $T^d(x)=1$ with $a$ odd inputs through that time, write $j=d+2q+e$, $e=0$ or $1$. The common-prefix formula and the cycle at 1 give
+
+$$
+T^{d+2q}(x+3\cdot2^j)=1+2^e3^{a+q+1}.
+$$
+
+For $e=1$ one further odd step gives $2+3^{a+q+2}$. Thus (4) is equivalent to merger of all eligible comparisons in these known-to-hit rows with $j\ge d$, because the row $x=1,d=0$ is included. This leaves the convergence of (4) open here. It also leaves the pairs with $j<d$ and any genuinely nonconvergent lower start outside the tail deduction.
+
+## What can be proved for the shifted powers
+
+For every odd $a\ge1$, the two shifted powers $3^a+1$ and $3^a+2$ themselves merge after exactly three shortcut steps, at $(3^{a+1}+7)/8$. Indeed $3^a=8u+3$ and both $8u+4$ and $8u+5$ reach $3u+2$ at that clock. Since $3^a+1$ also shares its next iterate with $3^{a-1}$, both shifted powers for odd $a$ belong to the component of an explicitly smaller power of three.
+
+There is an unconditional uniform descent estimate. In **every** interval of $N$ consecutive positive exponents, outside $O(N^{\rho_*})$ exceptions, all three of $3^a,3^a+1,3^a+2$ are strictly below $3^{a-1}$ after the same $m=\lfloor\log_2 N\rfloor+2$ shortcut steps. Here $\rho_*=H_2(1/\log_2 3)$ as above.
+
+For $m\ge3$ the order of 3 modulo $2^m$ is $2^{m-2}$, since $v_2(9^{2^i}-1)=i+3$. In the prescribed exponent interval, any given residue of $3^a+c$ modulo $2^m$ therefore occurs at most twice for each fixed $c$. The count of residues whose first $m$ steps have $s>(m-3)/\lambda$ odd inputs is $O(2^{\rho_*m})$. Indeed the binomial upper tail starts within an absolute constant of $m/\lambda$, its coefficients decrease geometrically for large $m$, and changing the index by that constant changes the leading entropy estimate by a bounded factor. For every other residue the affine bound gives
+
+$$
+T^m(3^a+c)\le (3^a+c)/8+(3/2)^s.
+$$
+
+For $a\ge m+3$ and $c=0,1,2$ this is strictly below $3^{a-1}$. The $O(m)$ smaller exponents and the union of the three exceptional sets fit the asserted bound, with bounded $N$ absorbed in the constant. Descent ends at an ordinary integer that need not be another shifted power.
+
+There is also a reduction inside the power family using a specified external input. Assume the qualitative fixed-gap synchronization theorem: for gap one, the fraction of residues modulo $2^m$ on which the two starts synchronously meet with equal odd counts by depth $m$ tends to one. Such a certificate works on every lift of that residue. For a density-one set of exponents $a$, both adjacent pairs in $3^a,3^a+1,3^a+2$ then have certificates. Indeed powers of three visit a subgroup of index four modulo $2^m$ uniformly in the exponent. The upper natural density of exponents missed by either of the two tests at depth $m$ is at most eight times the bad residue fraction. Let $m$ tend to infinity. [Fixed-gap input and original sources](https://github.com/GettysburgResearch/collatz/blob/dd245a712f985909f541590e3f6c179b7ba011e4/research/profinite-orbit-averages/CLOCK_CHARACTERS.md#equal-count-synchronization-input)
+
+For every $a\ge1$, $3^a+1$ and $3^{a-1}$ already have the same next iterate. Thus at every exponent with both certificates the entire triple is in the component of the preceding power. By induction, under the stated input it suffices for (4) to decide convergence of $3^a$ and $3^a+2$ at the exceptional exponents $a\ge2$, with the finite initial cases reaching 1. This concerns a zero-density set of **exponents**. No estimate here proves it is empty or settles its members.
