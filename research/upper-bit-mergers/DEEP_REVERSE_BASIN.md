@@ -7,6 +7,8 @@
 
 Equivalently, it suffices to prove that $128k+1\in C$ implies $128k+2\in C$ at those same indices, since $128k+2$ halves to $64k+1$. The implications themselves remain open. The proof gives a bounded directed path for every class of integers prime to six. [Exact certificates and verifier](check_deep_reverse_basin.py)
 
+Lean independently checks the affine moves, the strict decrease and the residue cover, then proves the equivalence for the ordinary shortcut map as `collatz_iff_deep_reverse_binary`. The Python verifier also checks the contraction and path lengths below. [Lean proof](ReverseBasin.lean)
+
 ## Descent on ternary units
 
 Use a directed graph on positive integers. An ordinary pair $n,T(n)$ can be traversed in either direction. The extra arrows $z\to3z$ are available precisely at odd multiples of nine. Every vertex has a directed path **to** 1. To prove this, first consider an odd ternary unit $n>1$. The verifier gives a directed path of at most 198 edges from $n$ to a positive ternary unit at most $24n/25$. An even ternary unit simply halves to a smaller ternary unit. Strong induction therefore gives the path to 1 for every ternary unit. A multiple of three reaches a ternary unit by stripping factors of two and taking an odd ordinary step, since $3w+1$ is prime to three. This covers every positive start.
@@ -45,4 +47,4 @@ Indeed three successive odd-even pairs take $y$ to $54k+1>1$, using $T^2(4v+1)=3
 
 The same three odd-even pairs from $x=64k+1$ reach $27k+1=(2^{54j+1}+1)/3$. Its next odd step gives $2^{54j}+1$. During another $54j$ clocks this input follows the parities of the cycle $1,2$. At clock $i$ in that segment its exact value is $T^i(1)+2^{54j-i}3^{\lceil i/2\rceil}$, so it stays above 1 and ends at $3^{27j}+1$. Consequently $x$ belongs to $C$ precisely when this shifted power does. Its path already uses $27j+4$ odd inputs by that checkpoint.
 
-One more ordinary step identifies the question with convergence of the pure powers $3^{27j-1}$ for every $j\ge1$. Indeed the even start $3^{27j}+1$ and the odd start $3^{27j-1}$ both step to $(3^{27j}+1)/2$.
+One more ordinary step identifies the question with convergence of the pure powers $3^{27j-1}$ for every $j\ge1$. Indeed the even start $3^{27j}+1$ and the odd start $3^{27j-1}$ both step to $(3^{27j}+1)/2$. The Lean theorem `deep_rank_four_shifted_power` constructs the index for every $j\ge1$ and verifies both ordinary paths through the specified checkpoints. [Lean source](HighBit.lean)

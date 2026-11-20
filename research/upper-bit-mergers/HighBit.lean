@@ -2283,4 +2283,46 @@ theorem rank_three_all_large_mersenne (q : ℕ) (hq : 819≤q) :
   have single : v'=1 := odd_factor_two_power odd hc.symm
   omega
 
+/-- Every positive exponent index has a twice-odd witness for the directed
+64/128 comparison. Its antecedent reaches one using four odd inputs, and
+its companion reaches the specified shifted power at an explicit clock. -/
+theorem deep_rank_four_shifted_power (j : ℕ) : ∃ k : ℕ,
+    k % 4 = 2 ∧ orbit (128*k+1) (7+(54*(j+1)+1)) = 1 ∧
+    odds (128*k+1) (7+(54*(j+1)+1)) = 4 ∧
+    orbit (64*k+1) (7+54*(j+1)) = 3^(27*(j+1))+1 := by
+  have powers (n : ℕ) : ∃ v : ℕ, 81*(2*v+1)+1 = 2^(54*(n+1)) := by
+    induction n with
+    | zero => exact ⟨111199990799271, by decide⟩
+    | succ n ih =>
+      obtain ⟨v,hv⟩ := ih
+      refine ⟨2^54*v+9118399245540263, ?_⟩
+      rw [show 54*(n+1+1)=54*(n+1)+54 by ring, pow_add, ← hv]; ring
+  obtain ⟨v,hv⟩ := powers j
+  let w := 2*v+1
+  have hw : 81*w+1 = 2^(54*(j+1)) := hv
+  have pref (t : ℕ) : orbit (128*t+1) 7 = 2+81*t ∧ odds (128*t+1) 7 = 4 := by
+    have h := high_bit 1 7 t
+    have c := odds_high_bit 1 7 t
+    rw [show orbit 1 7=2 by decide, show odds 1 7=4 by decide] at h
+    rw [show odds 1 7=4 by decide] at c
+    rw [show 128*t+1=1+2^7*t by ring]
+    exact ⟨h,c⟩
+  have front := (pref (2*w)).1
+  have back := (pref w).1
+  have hp : 2+81*(2*w) = 2^(54*(j+1)+1) := by rw [pow_succ, ← hw]; ring
+  have hc : 2+81*w = 1+2^(54*(j+1)) := by omega
+  have hq := cycle_counts (27*(j+1))
+  rw [show 2*(27*(j+1))=54*(j+1) by ring] at hq
+  have lift := high_bit 1 (54*(j+1)) 1
+  rw [hq.1,hq.2] at lift
+  have halved : orbit (2^(54*(j+1)+1)) (54*(j+1)+1)=1 := by
+    simpa using strip_twos 1 (54*(j+1)+1)
+  have noOdds : odds (2^(54*(j+1)+1)) (54*(j+1)+1)=0 := by
+    simpa using (odds_high_bit 0 (54*(j+1)+1) 1).trans (zero_prefix (54*(j+1)+1)).2
+  refine ⟨2*w,by dsimp [w]; omega, ?_, ?_, ?_⟩
+  · rw [orbit_add,front,hp,halved]
+  · rw [odds_add,(pref (2*w)).2,front,hp,noOdds]
+  · rw [show 64*(2*w)+1=128*w+1 by ring,orbit_add,back,hc]
+    simpa [Nat.add_comm] using lift
+
 end CollatzUpperBit
