@@ -1,0 +1,156 @@
+{
+  "schema": "collatz-content-manifest/v1",
+  "scope": "frozen proposed proofs, code, scoped reviews, finite reports and compressed raw searches",
+  "files": [
+    {
+      "path": "research/README.md",
+      "bytes": 4677,
+      "sha256": "5be5b35e73dd87f8f6d93c71044f619a3f121dade3523eac3ccdbf02c286967d"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/FIVE_CERTIFICATE_LADDER.md",
+      "bytes": 10721,
+      "sha256": "d66dee00fb9ab089694363d2905f788f3d319c5a79ac3e8d9448efcb5cbb6dba"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/GRH_INTERFACES.md",
+      "bytes": 12424,
+      "sha256": "b78c2beca423087bbc6a130ba9af3127073ff86a48d81fd991f6dec4ae2ccba2"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/LADDER_RENEWAL.md",
+      "bytes": 6128,
+      "sha256": "dbaff460c0a3f76f6cfa4947ba52d2511fb46ffedfac051baf3904c38402fa32"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/README.md",
+      "bytes": 7423,
+      "sha256": "548b69cc5a406c5346356e881f20885d127860653dbceb4b253772311a8e5189"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/SOURCES.md",
+      "bytes": 6524,
+      "sha256": "afbc39cca4c4f4425607e0673c93f4269fa51160cec37f2f87807d47626761cd"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/UNIFORM_J_COMPLETION_ATTEMPT.md",
+      "bytes": 11010,
+      "sha256": "106f476ba879f2855c341152548257f6bc22b35fad5f9d617145136e6378eb1b"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/check_five_certificate_ladder.py",
+      "bytes": 7287,
+      "sha256": "6f45f58f996d10ae7a01dc3c8f7e3cdcbda95b5508d9249e69594fb87b2b809f"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/check_five_ladder_review.py",
+      "bytes": 8476,
+      "sha256": "524ac2dc31af00fce246a850dc51a9f1459ea570818776d232f0b4bc2e5a4053"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/check_grh_interfaces.py",
+      "bytes": 5194,
+      "sha256": "9144e66b97790f08ed5b20ae54c8c2455e449315640f1f3d9e19718e770fa22c"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/check_ladder_renewal.py",
+      "bytes": 4836,
+      "sha256": "59a06c3c43f274027856e33cb64b48614be5f867c85e71489766e237a8a7da89"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/check_packet.py",
+      "bytes": 6130,
+      "sha256": "985992798107b7f1527eacfda6cbd1b1d1aefd26e5d14615ca5d8fef1afc3130"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/check_rigidity_interfaces.py",
+      "bytes": 6380,
+      "sha256": "bc8d0940b0bfdaa4937467ac57e1f09d5275325b713c2e4367b65594bc13904c"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/level8-sample-verification.json",
+      "bytes": 6047,
+      "sha256": "b3688004cae051609e723d46740af2549b63aeb5c443d7d0f1cd37dbc832816d"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/review_grh_interfaces_independent.py",
+      "bytes": 4755,
+      "sha256": "a06ac0aad32f68a8ababf3f3fd9d695a1794f05f6e5379febdbb417a12c11016"
+    },
+    {
+      "path": "research/grh-certificate-closure-20261120/search_shifted_levels.py",
+      "bytes": 2204,
+      "sha256": "769b3e9318a0b678e00febe3856d555e8c9358c3f905e2b9c1a9c01856036261"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/REVIEW_FIVE_LADDER.md",
+      "bytes": 11217,
+      "sha256": "033a034de485fd033647ca1cc39dad6ea658d1f4fce2bdefdf55f9cab8137ec1"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/REVIEW_GRH_INTERFACES.md",
+      "bytes": 7011,
+      "sha256": "37144dd3a3422af116ba455deb50af9a3b29038996743e470dbcb9949c1afc93"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/REVIEW_LADDER_RENEWAL.md",
+      "bytes": 7023,
+      "sha256": "7a7bd71e7d46b4bc462d66ebcb9184fae099cdc0c245fda2a171b8d8639e6e90"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/REVIEW_RIGIDITY.md",
+      "bytes": 4489,
+      "sha256": "23f16ad63bdea24c4866d9ca82057fc4521b209e05c9e70189e96f5d072a8d68"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/bounded-level-search-summary.json",
+      "bytes": 3854,
+      "sha256": "1230493515ab9e215d4f8a502429475f0b196fe078d7ae6e13c871e387686973"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/five-ladder-independent-report.json",
+      "bytes": 1004,
+      "sha256": "c5f3550184ae07b87b63c975bb00663a8fd98cebb06fc4e63824dedfe584c630"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/five-ladder-report.json",
+      "bytes": 583,
+      "sha256": "4429ebb447ec81300c2086fcea0940d21f57c7abdec8a0b55fb2465980add04c"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/grh-interface-independent-report.json",
+      "bytes": 1101,
+      "sha256": "4f9a1f8f58fad9e9d0010d97c2a52785a13fb5e1510db6ce6af014ff3b7f7321"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/grh-interface-report.json",
+      "bytes": 1354,
+      "sha256": "41edc64dcbd14609fecf591acaccdb8535da23f5e58e2cc96778a6b7378c672d"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/ladder-renewal-report.json",
+      "bytes": 622,
+      "sha256": "6df45db7686f483bd92615cb01276c3064c48a9d8f1f9f293ad05cb041dca941"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/level-7.json.gz",
+      "bytes": 25130,
+      "sha256": "445bf597297abeaf42e943e75c76a71a152ce7f59254e869c90af2e0332548d3"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/level-8.json.gz",
+      "bytes": 20516,
+      "sha256": "b56c9154a44f0ccc60e0c27152a9038404b6e1bab0c4e6e81aadb9637d593a10"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/level-9.json.gz",
+      "bytes": 17525,
+      "sha256": "0606251714954f2f4f7e653a95a7bbd7d51392e464f32d1cb040838bc068e7ee"
+    },
+    {
+      "path": "reports/2026-11-20-grh-closure/rigidity-interfaces-report.json",
+      "bytes": 1355,
+      "sha256": "a5bfa62c9654225ce724c8f364d85c3c4351fa037f0f52b851b907dc3431e9e8"
+    }
+  ]
+}

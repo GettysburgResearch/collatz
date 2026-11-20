@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "compiled_certificates": 26,
+    "cylinder_inputs": 2083,
+    "first_hit_families": 18,
+    "literal_shortcut_edges": 27756,
+    "odd_edges": 10422,
+    "paired_blocks": 459,
+    "rejected_controls": 9,
+    "unresolved_controls": 3
+  },
+  "fixture_sha256": "f677ebd6510c895c1d16607fbc6cc310d6a4cbbbe9f4a503ea8126c43938080d",
+  "grh_used": false,
+  "maximum_ladder_run": 128,
+  "scope": "Exact finite ordinary replay of FL1-FL4 and the partial certificate compiler; universal claims rely on the proof. No full five closure or Collatz proof.",
+  "status": "PASS"
+}

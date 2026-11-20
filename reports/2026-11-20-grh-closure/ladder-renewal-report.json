@@ -1,0 +1,16 @@
+{
+  "checker_sha256": "59a06c3c43f274027856e33cb64b48614be5f867c85e71489766e237a8a7da89",
+  "counts": {
+    "inverse_progressions": 104,
+    "nontrivial_endpoint_bounds": 288,
+    "nonunit_members_dropped": 104,
+    "positive_geometric_comparisons": 208,
+    "source_members": 312,
+    "unit_members": 208
+  },
+  "harmonic_coefficient_bound": "16/21",
+  "scope": "Exact inverse fibers, ordinary paired endpoints and rational bounds; universal renewal relies on the written proof; no bound on the uncovered energy.",
+  "status": "PASS",
+  "subcritical_coefficient_bound": "81744/82925",
+  "subcritical_exponent": "21/25"
+}
