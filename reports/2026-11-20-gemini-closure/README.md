@@ -70,12 +70,20 @@ proof-assistant acceptance is claimed.
 
 ## Repository validation
 
-The publisher records the scientific-content commit and tree, then runs
-`python -X utf8 -B tools/validate.py --regressions` in a clean complete
-checkout of that exact published commit. The receipt is added by a subsequent
-documentation commit. See `publication.json` and `checkout-validation.json`
-for the actual pins and execution outcome. Those later files are publication
-evidence, not mathematical premises.
+The scientific-content commit is
+`a882b449ca7da4a1e7ec42392e0a436611befe9b`, tree
+`c68231b0d6e50ae2441d9135e16a1dc7eab266f8`. GitHub readback confirmed both.
+After an actual Git fetch, a separate complete clone of that exact commit ran
+`python -X utf8 -B tools/validate.py --regressions`: **all 11 commands passed**,
+and the 346-file checkout was unchanged. The receipt was written outside the
+validated checkout, then added by a subsequent documentation commit.
+
+See [publication.json](publication.json) and
+[checkout-validation.json](checkout-validation.json) for the pins, scopes,
+and actual execution outcome. This is repository integrity and bounded replay,
+not formal mathematical verification. No remote CI result is claimed. These
+later files are publication evidence, not mathematical premises, and do not
+self-certify the final receipt commit.
 
 ## Remaining obstruction
 
