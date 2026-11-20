@@ -1,0 +1,46 @@
+{
+  "candidate_odd_units": 9759,
+  "cutoff_formula": "floor_fifth_root(floor((256^N-1)/(2*243^N)))",
+  "exact_height_cutoff": 29277,
+  "first_hit_within_horizon": 9759,
+  "horizon": 1000,
+  "independent_inverse_controls": [
+    {
+      "horizon": 0,
+      "inverse_nodes": 1,
+      "potential": 0
+    },
+    {
+      "horizon": 1,
+      "inverse_nodes": 1,
+      "potential": 0
+    },
+    {
+      "horizon": 10,
+      "inverse_nodes": 3,
+      "potential": 0
+    },
+    {
+      "horizon": 20,
+      "inverse_nodes": 38,
+      "potential": 0
+    },
+    {
+      "horizon": 30,
+      "inverse_nodes": 438,
+      "potential": 0
+    },
+    {
+      "horizon": 40,
+      "inverse_nodes": 4987,
+      "potential": 0
+    }
+  ],
+  "maximum_nonroot_score": -12,
+  "maximum_nonroot_score_source": 5,
+  "maximum_score_source": 1,
+  "maximum_score_with_zero": 0,
+  "no_first_hit_within_horizon": 0,
+  "potential_at_one": 0,
+  "scope": "Exact W_N(1) for the reported finite horizon; no conclusion about W(1), escaping orbits, or Collatz"
+}

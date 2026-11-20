@@ -1,0 +1,62 @@
+{
+  "base_commit": "6ff18e4f63be8f3bece76215fcfe44d83b001d7f",
+  "files": {
+    "AUDIT.md": {
+      "bytes": 6219,
+      "git_blob_sha": "cc306fb38893a75c2a31e7e15b2cd2467307287e",
+      "sha256": "5d0ed2c4c7ef73a8a4f03ddc8f7a627a573946903489bbce33092839d41a6de8"
+    },
+    "PROOF.md": {
+      "bytes": 16482,
+      "git_blob_sha": "617e634bd97cfbc1b440f98ef6e59aa037073678",
+      "sha256": "6279992ff93a87b553fb21a904a6877004ee97ff282fe40c5a9af35941fb1071"
+    },
+    "README.md": {
+      "bytes": 6412,
+      "git_blob_sha": "b276dd8cd77c38f26e08008dc53adad99b1b0467",
+      "sha256": "5d51a118e1721ff50ea1f9711627e7313935b6a0542f3c491d15f3027acceff6"
+    },
+    "check_review.py": {
+      "bytes": 5397,
+      "git_blob_sha": "482a6104bcdf3056d3cab12ba9ae49f83cafcce4",
+      "sha256": "4ffea93b5b1eee546c6707cb9e614db94464c53a8147f4dae11c25d68a21d64c"
+    },
+    "height-1000-independent-python.json": {
+      "bytes": 1024,
+      "git_blob_sha": "2f38bcb16064eb66c3ac219b23026e37e5c72939",
+      "sha256": "18c3282968a34e8747df1de340d5787175c3773b741c4551d8e43736067e5b71"
+    },
+    "height-1500.json": {
+      "bytes": 1394,
+      "git_blob_sha": "0f4e9efed44d45cf9a39de3bd92ecdda9290c158",
+      "sha256": "ee481df52042b162e49e0211100355684edcc6653542e0cbb7cc8a3caf34087a"
+    },
+    "height-2000.json": {
+      "bytes": 883,
+      "git_blob_sha": "d4eee17d7873cf9dbfe287004bdd8718773fff4b",
+      "sha256": "fdce2304a2eea41c1fc9a4ad340f2670821fae53d28fa1fb55ae52c1e9b2f788"
+    },
+    "height_certificate.py": {
+      "bytes": 5897,
+      "git_blob_sha": "f282a64f71b7616b2f0c390d3f786c2aa9c26a50",
+      "sha256": "22b53b398de2c4abe1fd7931571079891ac251703818e53c1c2a008a96f12291"
+    },
+    "height_replay.cpp": {
+      "bytes": 5988,
+      "git_blob_sha": "90fc742eb1dc73e526546e75fe5f7948c1eda5c4",
+      "sha256": "e4407cb35c55318615f47477afdc128a65039b4ad5a1481ce59e39bf47664874"
+    },
+    "review-check.json": {
+      "bytes": 461,
+      "git_blob_sha": "280b8266d6d406da4250f7de87a115036cc2db4d",
+      "sha256": "d0c95977552b4202c6df0ad9a4007641e340d36232fef43e7a90ec148ec29889"
+    }
+  },
+  "imported_source_head": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+  "larger_receipts_inspected_not_replayed": [
+    1500,
+    2000
+  ],
+  "reviewer_replayed_horizon": 1000,
+  "scope": "Exact content snapshot before parent publication; new commit pin belongs in parent publication report"
+}
