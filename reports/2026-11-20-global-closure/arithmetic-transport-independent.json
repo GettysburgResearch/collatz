@@ -1,0 +1,30 @@
+{
+  "actual_returns_compared": 211,
+  "exact_mass_conservation_horizons": 32,
+  "final_surviving_carriers": 0,
+  "functional_and_source_tail_checkpoints": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "limitations": [
+    "Rank minimizer reduction remains qualified to the pinned source proof.",
+    "No global Green upper bound or cycle exclusion is inferred.",
+    "The author's logarithm routine was algebraically reviewed and reused; it is not claimed independently reimplemented here."
+  ],
+  "physical_accelerations_compared": 562,
+  "physical_counts": {
+    "accepted_physical_shortcut_edges": 1548,
+    "accepted_safe_a_steps": 173
+  },
+  "rank_inputs_compared": 565,
+  "return_horizon": 32,
+  "reviewed_checker_sha256": "68e74e13aa3ebf7aaeef743dcbcd9a06216f349a4c65af8cf703a3eea20d3d83",
+  "scope": "independent bounded physical A/B reconstruction and exact rational original-source mass; audited author logarithm intervals reused",
+  "source_cutoff": 512,
+  "status": "PASS",
+  "unsafe_sources": 183
+}

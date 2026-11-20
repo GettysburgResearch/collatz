@@ -1,0 +1,6437 @@
+{
+  "cells": [
+    {
+      "endpoint": [
+        1080,
+        1
+      ],
+      "min_parameter": 1,
+      "modulus": 1440,
+      "residue": 1,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        729,
+        4
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 7,
+      "word": "W15"
+    },
+    {
+      "endpoint": [
+        960,
+        7
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 11,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        108,
+        1
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 13,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        1080,
+        13
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 17,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        5
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 19,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        7
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 23,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        540,
+        11
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 29,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1152,
+        25
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 31,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        270,
+        7
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 37,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1080,
+        31
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 41,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        13
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 43,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        31
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 47,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        37
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 49,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        27,
+        1
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 53,
+      "word": "W43"
+    },
+    {
+      "endpoint": [
+        1152,
+        47
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 59,
+      "word": "W33"
+    },
+    {
+      "endpoint": [
+        540,
+        23
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 61,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        405,
+        19
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 67,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        960,
+        47
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 71,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        11
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 73,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        540,
+        29
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 77,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        25
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 83,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        67
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 89,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1152,
+        73
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 91,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        1080,
+        73
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 97,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        270,
+        19
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 101,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        432,
+        31
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 103,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        71
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 107,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        41
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 109,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        216,
+        17
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 113,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        79
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 119,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        91
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 121,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1296,
+        115
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 127,
+      "word": "W04"
+    },
+    {
+      "endpoint": [
+        405,
+        37
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 131,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        54,
+        5
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 133,
+      "word": "W44"
+    },
+    {
+      "endpoint": [
+        1080,
+        103
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 137,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        37
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 139,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        43
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 143,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        135,
+        14
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 149,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1152,
+        121
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 151,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        540,
+        59
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 157,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1080,
+        121
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 161,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        49
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 163,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        89
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 167,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        1080,
+        127
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 169,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        108,
+        13
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 173,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        960,
+        119
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 179,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        135,
+        17
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 181,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1296,
+        169
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 187,
+      "word": "W22"
+    },
+    {
+      "endpoint": [
+        960,
+        127
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 191,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        29
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 193,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        270,
+        37
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 197,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        384,
+        53
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 199,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        61
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 203,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        157
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 209,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        810,
+        119
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 211,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        1080,
+        163
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 217,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        540,
+        83
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 221,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        67
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 223,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        151
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 227,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        270,
+        43
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 229,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        216,
+        35
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 233,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        1080,
+        181
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 241,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1215,
+        209
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 247,
+      "word": "W16"
+    },
+    {
+      "endpoint": [
+        960,
+        167
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 251,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        108,
+        19
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 253,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        1080,
+        193
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 257,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        405,
+        73
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 259,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        432,
+        79
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 263,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        540,
+        101
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 269,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1152,
+        217
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 271,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        135,
+        26
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 277,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1080,
+        211
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 281,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        85
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 283,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        191
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 287,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        217
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 289,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        54,
+        11
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 293,
+      "word": "W44"
+    },
+    {
+      "endpoint": [
+        960,
+        199
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 299,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        113
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 301,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        810,
+        173
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 307,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        1215,
+        263
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 311,
+      "word": "W16"
+    },
+    {
+      "endpoint": [
+        216,
+        47
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 313,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        540,
+        119
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 317,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        384,
+        85
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 319,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        97
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 323,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        247
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 329,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1152,
+        265
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 331,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        1080,
+        253
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 337,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        135,
+        32
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 341,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        432,
+        103
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 343,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        185
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 347,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        540,
+        131
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 349,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        216,
+        53
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 353,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        239
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 359,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        271
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 361,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1296,
+        331
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 367,
+      "word": "W04"
+    },
+    {
+      "endpoint": [
+        960,
+        247
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 371,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        27,
+        7
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 373,
+      "word": "W43"
+    },
+    {
+      "endpoint": [
+        1080,
+        283
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 377,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        101
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 379,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        115
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 383,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        270,
+        73
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 389,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1152,
+        313
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 391,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        540,
+        149
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 397,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1080,
+        301
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 401,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        121
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 403,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        271
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 407,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        307
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 409,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        108,
+        31
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 413,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        405,
+        118
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 419,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        270,
+        79
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 421,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1215,
+        361
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 427,
+      "word": "W23"
+    },
+    {
+      "endpoint": [
+        960,
+        287
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 431,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        65
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 433,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        135,
+        41
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 437,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1215,
+        371
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 439,
+      "word": "W16"
+    },
+    {
+      "endpoint": [
+        432,
+        133
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 443,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        337
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 449,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        405,
+        127
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 451,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        1080,
+        343
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 457,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        540,
+        173
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 461,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        139
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 463,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        311
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 467,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        135,
+        44
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 469,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        216,
+        71
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 473,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        319
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 479,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        361
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 481,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        729,
+        247
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 487,
+      "word": "W15"
+    },
+    {
+      "endpoint": [
+        243,
+        83
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 491,
+      "word": "W24"
+    },
+    {
+      "endpoint": [
+        108,
+        37
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 493,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        1080,
+        373
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 497,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        133
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 499,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        151
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 503,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        540,
+        191
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 509,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1152,
+        409
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 511,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        270,
+        97
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 517,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1080,
+        391
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 521,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        157
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 523,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        281
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 527,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        1080,
+        397
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 529,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        27,
+        10
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 533,
+      "word": "W43"
+    },
+    {
+      "endpoint": [
+        960,
+        359
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 539,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        203
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 541,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        405,
+        154
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 547,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        960,
+        367
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 551,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        83
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 553,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        540,
+        209
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 557,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        384,
+        149
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 559,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        169
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 563,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        427
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 569,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1152,
+        457
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 571,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        1080,
+        433
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 577,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        270,
+        109
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 581,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        432,
+        175
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 583,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        391
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 587,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        221
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 589,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        216,
+        89
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 593,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        1215,
+        506
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 599,
+      "word": "W16"
+    },
+    {
+      "endpoint": [
+        1080,
+        451
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 601,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1296,
+        547
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 607,
+      "word": "W04"
+    },
+    {
+      "endpoint": [
+        960,
+        407
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 611,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        54,
+        23
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 613,
+      "word": "W44"
+    },
+    {
+      "endpoint": [
+        1080,
+        463
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 617,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1215,
+        523
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 619,
+      "word": "W23"
+    },
+    {
+      "endpoint": [
+        432,
+        187
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 623,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        135,
+        59
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 629,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1152,
+        505
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 631,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        540,
+        239
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 637,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1080,
+        481
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 641,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        193
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 643,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        431
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 647,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        487
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 649,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        108,
+        49
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 653,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        960,
+        439
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 659,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        135,
+        62
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 661,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1296,
+        601
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 667,
+      "word": "W22"
+    },
+    {
+      "endpoint": [
+        729,
+        340
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 671,
+      "word": "W38"
+    },
+    {
+      "endpoint": [
+        216,
+        101
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 673,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        270,
+        127
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 677,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        384,
+        181
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 679,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        205
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 683,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        517
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 689,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        810,
+        389
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 691,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        1080,
+        523
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 697,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        540,
+        263
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 701,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        211
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 703,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        377
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 707,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        270,
+        133
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 709,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        216,
+        107
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 713,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        479
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 719,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        541
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 721,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1215,
+        614
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 727,
+      "word": "W16"
+    },
+    {
+      "endpoint": [
+        960,
+        487
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 731,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        108,
+        55
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 733,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        1080,
+        553
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 737,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        197
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 739,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        223
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 743,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        540,
+        281
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 749,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1152,
+        601
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 751,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        135,
+        71
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 757,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1080,
+        571
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 761,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        229
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 763,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        511
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 767,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        577
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 769,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        54,
+        29
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 773,
+      "word": "W44"
+    },
+    {
+      "endpoint": [
+        1215,
+        658
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 779,
+      "word": "W23"
+    },
+    {
+      "endpoint": [
+        540,
+        293
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 781,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        810,
+        443
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 787,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        960,
+        527
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 791,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        119
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 793,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        540,
+        299
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 797,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        241
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 803,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        607
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 809,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1152,
+        649
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 811,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        1080,
+        613
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 817,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        135,
+        77
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 821,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        432,
+        247
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 823,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        551
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 827,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        311
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 829,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        216,
+        125
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 833,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        559
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 839,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        631
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 841,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1296,
+        763
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 847,
+      "word": "W04"
+    },
+    {
+      "endpoint": [
+        810,
+        479
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 851,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        27,
+        16
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 853,
+      "word": "W43"
+    },
+    {
+      "endpoint": [
+        1080,
+        643
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 857,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        229
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 859,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        259
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 863,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        270,
+        163
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 869,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1152,
+        697
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 871,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        540,
+        329
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 877,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1080,
+        661
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 881,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        265
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 883,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        473
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 887,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        1080,
+        667
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 889,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        108,
+        67
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 893,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        960,
+        599
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 899,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        270,
+        169
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 901,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1215,
+        766
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 907,
+      "word": "W23"
+    },
+    {
+      "endpoint": [
+        960,
+        607
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 911,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        137
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 913,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        135,
+        86
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 917,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        384,
+        245
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 919,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        277
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 923,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        697
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 929,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        405,
+        262
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 931,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        1080,
+        703
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 937,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        540,
+        353
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 941,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        283
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 943,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        631
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 947,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        135,
+        89
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 949,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        216,
+        143
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 953,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        1080,
+        721
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 961,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        729,
+        490
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 967,
+      "word": "W15"
+    },
+    {
+      "endpoint": [
+        960,
+        647
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 971,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        108,
+        73
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 973,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        1080,
+        733
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 977,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        810,
+        551
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 979,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        432,
+        295
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 983,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        540,
+        371
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 989,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1152,
+        793
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 991,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        270,
+        187
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 997,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1080,
+        751
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1001,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        301
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1003,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        671
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1007,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        757
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1009,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        27,
+        19
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1013,
+      "word": "W43"
+    },
+    {
+      "endpoint": [
+        960,
+        679
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1019,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        383
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1021,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        405,
+        289
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1027,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        864,
+        619
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1031,
+      "word": "W18"
+    },
+    {
+      "endpoint": [
+        216,
+        155
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1033,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        540,
+        389
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1037,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        384,
+        277
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1039,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        313
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1043,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        787
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1049,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1152,
+        841
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1051,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        1080,
+        793
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1057,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        270,
+        199
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1061,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        432,
+        319
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1063,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        569
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1067,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        540,
+        401
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1069,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        216,
+        161
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1073,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        719
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1079,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        811
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1081,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1296,
+        979
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1087,
+      "word": "W04"
+    },
+    {
+      "endpoint": [
+        960,
+        727
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1091,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        54,
+        41
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1093,
+      "word": "W44"
+    },
+    {
+      "endpoint": [
+        1080,
+        823
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1097,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        293
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1099,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        331
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1103,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        135,
+        104
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1109,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1152,
+        889
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1111,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        540,
+        419
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1117,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1080,
+        841
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1121,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        337
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1123,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        751
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1127,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        847
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1129,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        108,
+        85
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1133,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        810,
+        641
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1139,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        135,
+        107
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1141,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1296,
+        1033
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1147,
+      "word": "W22"
+    },
+    {
+      "endpoint": [
+        960,
+        767
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1151,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        173
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1153,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        270,
+        217
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1157,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        432,
+        349
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1163,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        877
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1169,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        810,
+        659
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1171,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        1080,
+        883
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1177,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        540,
+        443
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1181,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        355
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1183,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        791
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1187,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        270,
+        223
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1189,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        216,
+        179
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1193,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        799
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1199,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        901
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1201,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1215,
+        1019
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1207,
+      "word": "W16"
+    },
+    {
+      "endpoint": [
+        486,
+        409
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1211,
+      "word": "W25"
+    },
+    {
+      "endpoint": [
+        108,
+        91
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1213,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        1080,
+        913
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1217,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        384,
+        325
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1219,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        367
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1223,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        540,
+        461
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1229,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1152,
+        985
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1231,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        135,
+        116
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1237,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        1080,
+        931
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1241,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        373
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1243,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        665
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1247,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        1080,
+        937
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1249,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        54,
+        47
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1253,
+      "word": "W44"
+    },
+    {
+      "endpoint": [
+        960,
+        839
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1259,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        473
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1261,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        810,
+        713
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1267,
+      "word": "W26"
+    },
+    {
+      "endpoint": [
+        960,
+        847
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1271,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        216,
+        191
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1273,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        540,
+        479
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1277,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        384,
+        341
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1279,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        385
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1283,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        967
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1289,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1152,
+        1033
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1291,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        1080,
+        973
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1297,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        135,
+        122
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1301,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        432,
+        391
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1303,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        871
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1307,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        540,
+        491
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1309,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        216,
+        197
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1313,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        1152,
+        1055
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1319,
+      "word": "W32"
+    },
+    {
+      "endpoint": [
+        1080,
+        991
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1321,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        1296,
+        1195
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1327,
+      "word": "W04"
+    },
+    {
+      "endpoint": [
+        960,
+        887
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1331,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        27,
+        25
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1333,
+      "word": "W43"
+    },
+    {
+      "endpoint": [
+        1080,
+        1003
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1337,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        403
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1343,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        270,
+        253
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1349,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1152,
+        1081
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1351,
+      "word": "W31"
+    },
+    {
+      "endpoint": [
+        540,
+        509
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1357,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        1080,
+        1021
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1361,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        432,
+        409
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1363,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        960,
+        911
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1367,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        1080,
+        1027
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1369,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        108,
+        103
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1373,
+      "word": "W45"
+    },
+    {
+      "endpoint": [
+        960,
+        919
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1379,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        270,
+        259
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1381,
+      "word": "W41"
+    },
+    {
+      "endpoint": [
+        1215,
+        1171
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1387,
+      "word": "W23"
+    },
+    {
+      "endpoint": [
+        864,
+        835
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1391,
+      "word": "W18"
+    },
+    {
+      "endpoint": [
+        216,
+        209
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1393,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        135,
+        131
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1397,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        384,
+        373
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1399,
+      "word": "W49"
+    },
+    {
+      "endpoint": [
+        432,
+        421
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1403,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        1080,
+        1057
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1409,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        405,
+        397
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1411,
+      "word": "W27"
+    },
+    {
+      "endpoint": [
+        1080,
+        1063
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1417,
+      "word": "W39"
+    },
+    {
+      "endpoint": [
+        540,
+        533
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1421,
+      "word": "W40"
+    },
+    {
+      "endpoint": [
+        432,
+        427
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1423,
+      "word": "W47"
+    },
+    {
+      "endpoint": [
+        768,
+        761
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1427,
+      "word": "W50"
+    },
+    {
+      "endpoint": [
+        135,
+        134
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1429,
+      "word": "W42"
+    },
+    {
+      "endpoint": [
+        216,
+        215
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1433,
+      "word": "W46"
+    },
+    {
+      "endpoint": [
+        960,
+        959
+      ],
+      "min_parameter": 0,
+      "modulus": 1440,
+      "residue": 1439,
+      "word": "W48"
+    },
+    {
+      "endpoint": [
+        7290,
+        67
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 79,
+      "word": "W03"
+    },
+    {
+      "endpoint": [
+        3072,
+        85
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 239,
+      "word": "W00"
+    },
+    {
+      "endpoint": [
+        6561,
+        607
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 799,
+      "word": "W34"
+    },
+    {
+      "endpoint": [
+        5832,
+        647
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 959,
+      "word": "W53"
+    },
+    {
+      "endpoint": [
+        432,
+        67
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 1339,
+      "word": "W21"
+    },
+    {
+      "endpoint": [
+        108,
+        19
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 1519,
+      "word": "W01"
+    },
+    {
+      "endpoint": [
+        7290,
+        1417
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 1679,
+      "word": "W03"
+    },
+    {
+      "endpoint": [
+        5832,
+        1511
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 2239,
+      "word": "W17"
+    },
+    {
+      "endpoint": [
+        6561,
+        1822
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 2399,
+      "word": "W37"
+    },
+    {
+      "endpoint": [
+        216,
+        65
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 2599,
+      "word": "W11"
+    },
+    {
+      "endpoint": [
+        6561,
+        2111
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 2779,
+      "word": "W52"
+    },
+    {
+      "endpoint": [
+        7290,
+        2497
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 2959,
+      "word": "W03"
+    },
+    {
+      "endpoint": [
+        4374,
+        1579
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 3119,
+      "word": "W54"
+    },
+    {
+      "endpoint": [
+        6561,
+        2794
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 3679,
+      "word": "W34"
+    },
+    {
+      "endpoint": [
+        5832,
+        2591
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 3839,
+      "word": "W53"
+    },
+    {
+      "endpoint": [
+        216,
+        101
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 4039,
+      "word": "W13"
+    },
+    {
+      "endpoint": [
+        432,
+        211
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 4219,
+      "word": "W21"
+    },
+    {
+      "endpoint": [
+        6561,
+        3341
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 4399,
+      "word": "W02"
+    },
+    {
+      "endpoint": [
+        7290,
+        3847
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 4559,
+      "word": "W03"
+    },
+    {
+      "endpoint": [
+        5832,
+        3455
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 5119,
+      "word": "W17"
+    },
+    {
+      "endpoint": [
+        6561,
+        4009
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 5279,
+      "word": "W37"
+    },
+    {
+      "endpoint": [
+        6561,
+        4298
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 5659,
+      "word": "W52"
+    },
+    {
+      "endpoint": [
+        7290,
+        4927
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 5839,
+      "word": "W03"
+    },
+    {
+      "endpoint": [
+        4374,
+        3037
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 5999,
+      "word": "W54"
+    },
+    {
+      "endpoint": [
+        6561,
+        4981
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 6559,
+      "word": "W35"
+    },
+    {
+      "endpoint": [
+        5832,
+        4535
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 6719,
+      "word": "W36"
+    },
+    {
+      "endpoint": [
+        216,
+        173
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 6919,
+      "word": "W13"
+    },
+    {
+      "endpoint": [
+        108,
+        91
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 7279,
+      "word": "W01"
+    },
+    {
+      "endpoint": [
+        7290,
+        6277
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 7439,
+      "word": "W03"
+    },
+    {
+      "endpoint": [
+        5832,
+        5399
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 7999,
+      "word": "W17"
+    },
+    {
+      "endpoint": [
+        6561,
+        6196
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 8159,
+      "word": "W37"
+    },
+    {
+      "endpoint": [
+        216,
+        209
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 8359,
+      "word": "W11"
+    },
+    {
+      "endpoint": [
+        6561,
+        6485
+      ],
+      "min_parameter": 0,
+      "modulus": 8640,
+      "residue": 8539,
+      "word": "W52"
+    },
+    {
+      "endpoint": [
+        32805,
+        734
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 1159,
+      "word": "W14"
+    },
+    {
+      "endpoint": [
+        32805,
+        4493
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 7099,
+      "word": "W20"
+    },
+    {
+      "endpoint": [
+        19683,
+        3721
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 9799,
+      "word": "W12"
+    },
+    {
+      "endpoint": [
+        39366,
+        11953
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 15739,
+      "word": "W19"
+    },
+    {
+      "endpoint": [
+        32805,
+        11669
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 18439,
+      "word": "W14"
+    },
+    {
+      "endpoint": [
+        32805,
+        15428
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 24379,
+      "word": "W20"
+    },
+    {
+      "endpoint": [
+        19683,
+        10282
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 27079,
+      "word": "W12"
+    },
+    {
+      "endpoint": [
+        39366,
+        25075
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 33019,
+      "word": "W19"
+    },
+    {
+      "endpoint": [
+        32805,
+        22604
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 35719,
+      "word": "W14"
+    },
+    {
+      "endpoint": [
+        32805,
+        26363
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 41659,
+      "word": "W20"
+    },
+    {
+      "endpoint": [
+        19683,
+        16843
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 44359,
+      "word": "W12"
+    },
+    {
+      "endpoint": [
+        39366,
+        38197
+      ],
+      "min_parameter": 0,
+      "modulus": 51840,
+      "residue": 50299,
+      "word": "W19"
+    },
+    {
+      "endpoint": [
+        294912,
+        5195
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 5479,
+      "word": "W29"
+    },
+    {
+      "endpoint": [
+        295245,
+        13403
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 14119,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        177147,
+        12962
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 22759,
+      "word": "W30"
+    },
+    {
+      "endpoint": [
+        7776,
+        785
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 31399,
+      "word": "W10"
+    },
+    {
+      "endpoint": [
+        294912,
+        37963
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 40039,
+      "word": "W28"
+    },
+    {
+      "endpoint": [
+        295245,
+        46208
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 48679,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        294912,
+        54347
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 57319,
+      "word": "W29"
+    },
+    {
+      "endpoint": [
+        236196,
+        50089
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 65959,
+      "word": "W07"
+    },
+    {
+      "endpoint": [
+        177147,
+        42487
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 74599,
+      "word": "W51"
+    },
+    {
+      "endpoint": [
+        295245,
+        79013
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 83239,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        294912,
+        87115
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 91879,
+      "word": "W28"
+    },
+    {
+      "endpoint": [
+        236196,
+        76333
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 100519,
+      "word": "W07"
+    },
+    {
+      "endpoint": [
+        177147,
+        62170
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 109159,
+      "word": "W51"
+    },
+    {
+      "endpoint": [
+        295245,
+        111818
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 117799,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        7776,
+        3161
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 126439,
+      "word": "W09"
+    },
+    {
+      "endpoint": [
+        294912,
+        128075
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 135079,
+      "word": "W29"
+    },
+    {
+      "endpoint": [
+        177147,
+        81853
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 143719,
+      "word": "W51"
+    },
+    {
+      "endpoint": [
+        295245,
+        144623
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 152359,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        294912,
+        152651
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 160999,
+      "word": "W29"
+    },
+    {
+      "endpoint": [
+        294912,
+        160843
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 169639,
+      "word": "W28"
+    },
+    {
+      "endpoint": [
+        177147,
+        101536
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 178279,
+      "word": "W51"
+    },
+    {
+      "endpoint": [
+        295245,
+        177428
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 186919,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        294912,
+        185419
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 195559,
+      "word": "W28"
+    },
+    {
+      "endpoint": [
+        7776,
+        5105
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 204199,
+      "word": "W09"
+    },
+    {
+      "endpoint": [
+        294912,
+        201803
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 212839,
+      "word": "W29"
+    },
+    {
+      "endpoint": [
+        295245,
+        210233
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 221479,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        7776,
+        5753
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 230119,
+      "word": "W09"
+    },
+    {
+      "endpoint": [
+        294912,
+        226379
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 238759,
+      "word": "W29"
+    },
+    {
+      "endpoint": [
+        294912,
+        234571
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 247399,
+      "word": "W28"
+    },
+    {
+      "endpoint": [
+        295245,
+        243038
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 256039,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        7776,
+        6617
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 264679,
+      "word": "W10"
+    },
+    {
+      "endpoint": [
+        294912,
+        259147
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 273319,
+      "word": "W28"
+    },
+    {
+      "endpoint": [
+        177147,
+        160585
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 281959,
+      "word": "W51"
+    },
+    {
+      "endpoint": [
+        295245,
+        275843
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 290599,
+      "word": "W08"
+    },
+    {
+      "endpoint": [
+        7776,
+        7697
+      ],
+      "min_parameter": 0,
+      "modulus": 311040,
+      "residue": 307879,
+      "word": "W09"
+    },
+    {
+      "endpoint": [
+        1594323,
+        255640
+      ],
+      "min_parameter": 0,
+      "modulus": 1866240,
+      "residue": 299239,
+      "word": "W05"
+    },
+    {
+      "endpoint": [
+        1771470,
+        579289
+      ],
+      "min_parameter": 0,
+      "modulus": 1866240,
+      "residue": 610279,
+      "word": "W06"
+    },
+    {
+      "endpoint": [
+        1594323,
+        787081
+      ],
+      "min_parameter": 0,
+      "modulus": 1866240,
+      "residue": 921319,
+      "word": "W05"
+    },
+    {
+      "endpoint": [
+        1771470,
+        1169779
+      ],
+      "min_parameter": 0,
+      "modulus": 1866240,
+      "residue": 1232359,
+      "word": "W06"
+    },
+    {
+      "endpoint": [
+        1594323,
+        1318522
+      ],
+      "min_parameter": 0,
+      "modulus": 1866240,
+      "residue": 1543399,
+      "word": "W05"
+    },
+    {
+      "endpoint": [
+        1771470,
+        1760269
+      ],
+      "min_parameter": 0,
+      "modulus": 1866240,
+      "residue": 1854439,
+      "word": "W06"
+    }
+  ],
+  "parameter_domain": "n = modulus * u + residue; integer u >= min_parameter",
+  "schema": "collatz-directed-five-unit-descent-v1",
+  "status": "Exact conditional affine certificate; physical forward-five closure remains open.",
+  "step_semantics": "B: x -> 3*x+1; Ij: x -> (2**j*x-1)/3; trailing digits divide by 2 or 5. Every step has implication membership(new) -> membership(old).",
+  "word_table": [
+    {
+      "id": "W00",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ]
+      ]
+    },
+    {
+      "id": "W01",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "22222222"
+        ]
+      ]
+    },
+    {
+      "id": "W02",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I7",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "2222222"
+        ]
+      ]
+    },
+    {
+      "id": "W03",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W04",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "2222"
+        ]
+      ]
+    },
+    {
+      "id": "W05",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "25"
+        ]
+      ]
+    },
+    {
+      "id": "W06",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W07",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I9",
+          ""
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "222222"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22"
+        ]
+      ]
+    },
+    {
+      "id": "W08",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W09",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I4",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222222222"
+        ]
+      ]
+    },
+    {
+      "id": "W10",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I6",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "22222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222222222"
+        ]
+      ]
+    },
+    {
+      "id": "W11",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "2222222"
+        ]
+      ]
+    },
+    {
+      "id": "W12",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "25"
+        ]
+      ]
+    },
+    {
+      "id": "W13",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "I4",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "2222222"
+        ]
+      ]
+    },
+    {
+      "id": "W14",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W15",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "25"
+        ]
+      ]
+    },
+    {
+      "id": "W16",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W17",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I10",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "22222"
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W18",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "2222"
+        ]
+      ]
+    },
+    {
+      "id": "W19",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ]
+      ]
+    },
+    {
+      "id": "W20",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W21",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "B",
+          "222222"
+        ]
+      ]
+    },
+    {
+      "id": "W22",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          "5"
+        ]
+      ]
+    },
+    {
+      "id": "W23",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "22"
+        ]
+      ]
+    },
+    {
+      "id": "W24",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "225"
+        ]
+      ]
+    },
+    {
+      "id": "W25",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "25"
+        ]
+      ]
+    },
+    {
+      "id": "W26",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W27",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2222"
+        ]
+      ]
+    },
+    {
+      "id": "W28",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I3",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ]
+      ]
+    },
+    {
+      "id": "W29",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W30",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I6",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222222222"
+        ]
+      ]
+    },
+    {
+      "id": "W31",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I3",
+          "5"
+        ]
+      ]
+    },
+    {
+      "id": "W32",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W33",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I5",
+          ""
+        ],
+        [
+          "I2",
+          "5"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2222"
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W34",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I2",
+          ""
+        ],
+        [
+          "I6",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22222222"
+        ]
+      ]
+    },
+    {
+      "id": "W35",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I4",
+          ""
+        ],
+        [
+          "I3",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22222222"
+        ]
+      ]
+    },
+    {
+      "id": "W36",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I7",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2222222"
+        ],
+        [
+          "I1",
+          ""
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W37",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          ""
+        ],
+        [
+          "I7",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22222222"
+        ]
+      ]
+    },
+    {
+      "id": "W38",
+      "steps": [
+        [
+          "B",
+          "2"
+        ],
+        [
+          "I7",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2222"
+        ]
+      ]
+    },
+    {
+      "id": "W39",
+      "steps": [
+        [
+          "B",
+          "22"
+        ]
+      ]
+    },
+    {
+      "id": "W40",
+      "steps": [
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W41",
+      "steps": [
+        [
+          "B",
+          "2222"
+        ]
+      ]
+    },
+    {
+      "id": "W42",
+      "steps": [
+        [
+          "B",
+          "22222"
+        ]
+      ]
+    },
+    {
+      "id": "W43",
+      "steps": [
+        [
+          "B",
+          "222225"
+        ]
+      ]
+    },
+    {
+      "id": "W44",
+      "steps": [
+        [
+          "B",
+          "22225"
+        ]
+      ]
+    },
+    {
+      "id": "W45",
+      "steps": [
+        [
+          "B",
+          "2225"
+        ]
+      ]
+    },
+    {
+      "id": "W46",
+      "steps": [
+        [
+          "B",
+          "225"
+        ]
+      ]
+    },
+    {
+      "id": "W47",
+      "steps": [
+        [
+          "B",
+          "25"
+        ]
+      ]
+    },
+    {
+      "id": "W48",
+      "steps": [
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W49",
+      "steps": [
+        [
+          "I2",
+          "5"
+        ]
+      ]
+    },
+    {
+      "id": "W50",
+      "steps": [
+        [
+          "I3",
+          "5"
+        ]
+      ]
+    },
+    {
+      "id": "W51",
+      "steps": [
+        [
+          "I6",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "2222"
+        ]
+      ]
+    },
+    {
+      "id": "W52",
+      "steps": [
+        [
+          "I6",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ]
+      ]
+    },
+    {
+      "id": "W53",
+      "steps": [
+        [
+          "I9",
+          ""
+        ],
+        [
+          "I6",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2222222"
+        ],
+        [
+          "I1",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "W54",
+      "steps": [
+        [
+          "I9",
+          ""
+        ],
+        [
+          "I6",
+          "5"
+        ],
+        [
+          "B",
+          "22"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "2"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "222"
+        ],
+        [
+          "B",
+          "22222222"
+        ]
+      ]
+    }
+  ]
+}

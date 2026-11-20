@@ -1,0 +1,170 @@
+{
+  "arbitrary_source_clock_accounting_edges": 65536,
+  "complete_even_word_lengths": [
+    1,
+    16
+  ],
+  "complete_even_words": 65535,
+  "distinct_state_pair_checks": 1044,
+  "exact_entropy_checks": 63,
+  "independently_constructed_blocks": [
+    {
+      "attempts": 1,
+      "m": 2,
+      "maximum_state_bits": 35,
+      "minimum_runs": 8,
+      "mode": "linear",
+      "source_bits": 34,
+      "source_sha256": "e5f2d835e7ba11f19e1821ec2570488764c712716dc9e6a18f132d3730edff63"
+    },
+    {
+      "attempts": 1,
+      "m": 3,
+      "maximum_state_bits": 52,
+      "minimum_runs": 13,
+      "mode": "linear",
+      "source_bits": 51,
+      "source_sha256": "82023ed4463a418f8827c38e165c6f48d66dbe7c2d54b25de282108a85d8ee8f"
+    },
+    {
+      "attempts": 1,
+      "m": 4,
+      "maximum_state_bits": 70,
+      "minimum_runs": 14,
+      "mode": "linear",
+      "source_bits": 68,
+      "source_sha256": "e62a27dd87ed6b2ec513415031de9254edb973f8bf7f3d01de6e5aa4a587c213"
+    },
+    {
+      "attempts": 1,
+      "m": 7,
+      "maximum_state_bits": 122,
+      "minimum_runs": 26,
+      "mode": "linear",
+      "source_bits": 119,
+      "source_sha256": "0daa6ee7d3862fbfa6f6cf4fbf145aa0c1fd48ac52b042ef03bfa6ac0cc5921f"
+    },
+    {
+      "attempts": 1,
+      "m": 11,
+      "maximum_state_bits": 192,
+      "minimum_runs": 41,
+      "mode": "linear",
+      "source_bits": 187,
+      "source_sha256": "98c7508d676a6e77331ad2b3087bf1951608a25c989d9a68d9501d629d7ddc7a"
+    },
+    {
+      "attempts": 1,
+      "m": 17,
+      "maximum_state_bits": 298,
+      "minimum_runs": 66,
+      "mode": "linear",
+      "source_bits": 289,
+      "source_sha256": "06ca65a5599304d46a4cfb01e8161122a216f555feb16bbd9707f848e1ffc80a"
+    },
+    {
+      "attempts": 1,
+      "m": 25,
+      "maximum_state_bits": 439,
+      "minimum_runs": 95,
+      "mode": "linear",
+      "source_bits": 425,
+      "source_sha256": "bde353e5cbb062178a32da43184305e97b0d8a619926afb8e170f1a39e32b808"
+    },
+    {
+      "attempts": 1,
+      "m": 2,
+      "maximum_state_bits": 68,
+      "minimum_runs": 15,
+      "mode": "coprime",
+      "source_bits": 68,
+      "source_sha256": "047a02727af11579f514d0c5389a868001003bf4a2851ef71ce43cf7a0650f55"
+    },
+    {
+      "attempts": 1,
+      "m": 3,
+      "maximum_state_bits": 154,
+      "minimum_runs": 37,
+      "mode": "coprime",
+      "source_bits": 153,
+      "source_sha256": "ca9af9b389992da52249abe1123255e014eb72f4de2a714b552ab61d77c00d50"
+    },
+    {
+      "attempts": 1,
+      "m": 4,
+      "maximum_state_bits": 275,
+      "minimum_runs": 64,
+      "mode": "coprime",
+      "source_bits": 274,
+      "source_sha256": "99910b6e6d0bc6d86e9574b75556ac5859d55dc9402822b870d56a4d9ecd2109"
+    },
+    {
+      "attempts": 1,
+      "m": 7,
+      "maximum_state_bits": 841,
+      "minimum_runs": 197,
+      "mode": "coprime",
+      "source_bits": 837,
+      "source_sha256": "1ad7d7f5bf8deeb44aea3aca4457f2fa28432a4e3b04138d8ec8591d80bd5b1c"
+    },
+    {
+      "attempts": 1,
+      "m": 11,
+      "maximum_state_bits": 2070,
+      "minimum_runs": 489,
+      "mode": "coprime",
+      "source_bits": 2064,
+      "source_sha256": "6e47ce37ba1c4d2d2d074bcbad5efffd34d9dd6d195bbcf8d46fbbe0c60159a5"
+    },
+    {
+      "attempts": 1,
+      "m": 17,
+      "maximum_state_bits": 4924,
+      "minimum_runs": 1192,
+      "mode": "coprime",
+      "source_bits": 4915,
+      "source_sha256": "198f1048a41c35cdec261e387a1c8d94efcb6324a5835a260548ea4d9aa75365"
+    },
+    {
+      "attempts": 1,
+      "m": 25,
+      "maximum_state_bits": 10617,
+      "minimum_runs": 2592,
+      "mode": "coprime",
+      "source_bits": 10603,
+      "source_sha256": "3a93f37afa07d48e2e6c1b9673dba2450e1476b5c0407c4033edcbf4c7d5dee3"
+    }
+  ],
+  "limits": [
+    "No production code imported.",
+    "Uniform prime-set claims rest on the separately reconstructed written proof, not selected primes.",
+    "Finite ordinary sources vary with requested block length.",
+    "No all-time ordinary orbit or global convergence conclusion."
+  ],
+  "literal_block_edges": 124,
+  "literal_recharge_edges": 13952,
+  "recharge_families": 268,
+  "review_checker_sha256": "88dddc07178f8ccabb53b211d8b1f61950953da035a36b03de47391a75a1bbdd",
+  "reviewed_source_sha256": {
+    "experiments/global_closure_arithmetic.py": "5c928688397bd8b4f1d3b9b357e1646ec27cc8973c43a54abc3c714f84040269",
+    "reports/2026-11-20-global-closure/arithmetic-report.json": "8d27838b5023b399736350d7659ba49cf62273f97e4261feaee5c779fe79336a",
+    "research/global-closure-20261120/arithmetic.md": "ed2b9c627fe7b9000934ac6c0231f55f0cbafca1cbc6283b0d48b5758dc7860c"
+  },
+  "schema": "arithmetic-independent-review-v1",
+  "selected_prime_block_checks": 240,
+  "selected_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    31,
+    43,
+    211
+  ],
+  "status": "PASS"
+}
