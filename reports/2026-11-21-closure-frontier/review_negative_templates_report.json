@@ -1,0 +1,68 @@
+{
+  "complete_witness_transformations": 144,
+  "disjoint_pairs": 28,
+  "full_coverage": "OPEN",
+  "imports_author_implementation": false,
+  "ordinary_affine_tables": 32,
+  "relative_ternary_coverage": "20/2187",
+  "status": "PASS",
+  "templates": [
+    {
+      "reference": "-197/243",
+      "source_J": 2,
+      "source_reference_rank": 11,
+      "target_J": 1,
+      "target_reference_rank": 5
+    },
+    {
+      "reference": "-29/27",
+      "source_J": 2,
+      "source_reference_rank": 12,
+      "target_J": 1,
+      "target_reference_rank": 4
+    },
+    {
+      "reference": "-755/729",
+      "source_J": 2,
+      "source_reference_rank": 12,
+      "target_J": 1,
+      "target_reference_rank": 10
+    },
+    {
+      "reference": "-1039/729",
+      "source_J": 2,
+      "source_reference_rank": 13,
+      "target_J": 1,
+      "target_reference_rank": 7
+    },
+    {
+      "reference": "-3125/2187",
+      "source_J": 2,
+      "source_reference_rank": 13,
+      "target_J": 1,
+      "target_reference_rank": 7
+    },
+    {
+      "reference": "-3101/2187",
+      "source_J": 2,
+      "source_reference_rank": 13,
+      "target_J": 1,
+      "target_reference_rank": 11
+    },
+    {
+      "reference": "-3011/2187",
+      "source_J": 2,
+      "source_reference_rank": 13,
+      "target_J": 1,
+      "target_reference_rank": 7
+    },
+    {
+      "reference": "-1603/2187",
+      "source_J": 2,
+      "source_reference_rank": 13,
+      "target_J": 1,
+      "target_reference_rank": 7
+    }
+  ],
+  "zero_terminal_exception_checked": true
+}

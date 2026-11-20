@@ -1,0 +1,223 @@
+{
+  "all_unit_subset_censuses": [
+    {
+      "minimum_small_cut_ratio": "1",
+      "s": 1,
+      "unit_subsets": 4
+    },
+    {
+      "minimum_small_cut_ratio": "11/30",
+      "s": 2,
+      "unit_subsets": 64
+    }
+  ],
+  "coupling": {
+    "all_word_audits": [
+      {
+        "initial_states_each": 3,
+        "s": 1,
+        "synchronizing_words": 15,
+        "words": 16
+      },
+      {
+        "initial_states_each": 9,
+        "s": 2,
+        "synchronizing_words": 247,
+        "words": 256
+      },
+      {
+        "initial_states_each": 27,
+        "s": 3,
+        "synchronizing_words": 4017,
+        "words": 4096
+      }
+    ],
+    "exact_tail_depths": 64
+  },
+  "independent_full_linear_solves": [
+    3,
+    9,
+    27
+  ],
+  "malformed_inputs_rejected": 4,
+  "scope": "Exact finite audits; TM5 is an all-depth written proof; no Collatz proof.",
+  "stationary_levels": [
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 166666666,
+        "upper_numerator": 166666667
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 66666666,
+        "upper_numerator": 66666667
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 200000000,
+        "upper_numerator": 200000001
+      },
+      "modulus": 3,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 200000000,
+        "upper_numerator": 200000001
+      },
+      "positive_atoms": 2,
+      "s": 1
+    },
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 214285714,
+        "upper_numerator": 214285715
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 47619047,
+        "upper_numerator": 47619048
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 314285714,
+        "upper_numerator": 314285715
+      },
+      "modulus": 9,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 314285714,
+        "upper_numerator": 314285715
+      },
+      "positive_atoms": 6,
+      "s": 2
+    },
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 260443182,
+        "upper_numerator": 260443183
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 46157468,
+        "upper_numerator": 46157469
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 479658049,
+        "upper_numerator": 479658050
+      },
+      "modulus": 27,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 479658049,
+        "upper_numerator": 479658050
+      },
+      "positive_atoms": 18,
+      "s": 3
+    },
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 306864623,
+        "upper_numerator": 306864624
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 46421440,
+        "upper_numerator": 46421441
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 726853868,
+        "upper_numerator": 726853869
+      },
+      "modulus": 81,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 726853868,
+        "upper_numerator": 726853869
+      },
+      "positive_atoms": 54,
+      "s": 4
+    },
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 353416115,
+        "upper_numerator": 353416116
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 46551491,
+        "upper_numerator": 46551492
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 1097777743,
+        "upper_numerator": 1097777744
+      },
+      "modulus": 243,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 1097777743,
+        "upper_numerator": 1097777744
+      },
+      "positive_atoms": 162,
+      "s": 5
+    },
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 400032991,
+        "upper_numerator": 400032992
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 46616876,
+        "upper_numerator": 46616877
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 1652698293,
+        "upper_numerator": 1652698294
+      },
+      "modulus": 729,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 1652698293,
+        "upper_numerator": 1652698294
+      },
+      "positive_atoms": 486,
+      "s": 6
+    },
+    {
+      "energy": {
+        "denominator": 100000000,
+        "lower_numerator": 446582134,
+        "upper_numerator": 446582135
+      },
+      "energy_increment": {
+        "denominator": 100000000,
+        "lower_numerator": 46549142,
+        "upper_numerator": 46549143
+      },
+      "max_density": {
+        "denominator": 100000000,
+        "lower_numerator": 2484859933,
+        "upper_numerator": 2484859934
+      },
+      "modulus": 2187,
+      "negative_one_density": {
+        "denominator": 100000000,
+        "lower_numerator": 2484859933,
+        "upper_numerator": 2484859934
+      },
+      "positive_atoms": 1458,
+      "s": 7
+    }
+  ],
+  "status": "PASS",
+  "tao_fine_scale_theorem_replayed": false
+}

@@ -1,0 +1,209 @@
+{
+  "coprime_affine_moduli": 84,
+  "coprime_boolean_censuses": [
+    {
+      "all_boolean_labels": 32,
+      "k": 3,
+      "q": 5
+    },
+    {
+      "all_boolean_labels": 128,
+      "k": 3,
+      "q": 7
+    },
+    {
+      "all_boolean_labels": 2048,
+      "k": 4,
+      "q": 11
+    },
+    {
+      "all_boolean_labels": 8192,
+      "k": 4,
+      "q": 13
+    }
+  ],
+  "dyadic_boolean_censuses": [
+    {
+      "all_boolean_labels": 4,
+      "q": 2,
+      "r": 1
+    },
+    {
+      "all_boolean_labels": 16,
+      "q": 4,
+      "r": 2
+    },
+    {
+      "all_boolean_labels": 256,
+      "q": 8,
+      "r": 3
+    },
+    {
+      "all_boolean_labels": 65536,
+      "q": 16,
+      "r": 4
+    }
+  ],
+  "dyadic_independence": [
+    {
+      "endpoint_pairs": 4,
+      "parity_words": 2,
+      "r": 1
+    },
+    {
+      "endpoint_pairs": 16,
+      "parity_words": 4,
+      "r": 2
+    },
+    {
+      "endpoint_pairs": 64,
+      "parity_words": 8,
+      "r": 3
+    },
+    {
+      "endpoint_pairs": 256,
+      "parity_words": 16,
+      "r": 4
+    },
+    {
+      "endpoint_pairs": 1024,
+      "parity_words": 32,
+      "r": 5
+    },
+    {
+      "endpoint_pairs": 4096,
+      "parity_words": 64,
+      "r": 6
+    },
+    {
+      "endpoint_pairs": 16384,
+      "parity_words": 128,
+      "r": 7
+    },
+    {
+      "endpoint_pairs": 65536,
+      "parity_words": 256,
+      "r": 8
+    }
+  ],
+  "external_predecessor_theorem_replayed": false,
+  "finite_source_negative_controls": [
+    {
+      "N": 32,
+      "approximation_errors": 19,
+      "cutoff": 48,
+      "minority": 15,
+      "r": 1
+    },
+    {
+      "N": 64,
+      "approximation_errors": 37,
+      "cutoff": 96,
+      "minority": 25,
+      "r": 2
+    },
+    {
+      "N": 128,
+      "approximation_errors": 75,
+      "cutoff": 192,
+      "minority": 50,
+      "r": 3
+    },
+    {
+      "N": 256,
+      "approximation_errors": 146,
+      "cutoff": 384,
+      "minority": 100,
+      "r": 4
+    },
+    {
+      "N": 512,
+      "approximation_errors": 276,
+      "cutoff": 768,
+      "minority": 189,
+      "r": 5
+    },
+    {
+      "N": 1024,
+      "approximation_errors": 523,
+      "cutoff": 1536,
+      "minority": 357,
+      "r": 6
+    },
+    {
+      "N": 2048,
+      "approximation_errors": 1021,
+      "cutoff": 3072,
+      "minority": 687,
+      "r": 7
+    },
+    {
+      "N": 4096,
+      "approximation_errors": 2005,
+      "cutoff": 6144,
+      "minority": 1351,
+      "r": 8
+    }
+  ],
+  "rejected_damaged_inputs": 5,
+  "scope": "Finite exact audits only; universal claims use written proofs; no Collatz proof.",
+  "status": "PASS",
+  "tent_labels": [
+    {
+      "defect": "1/2",
+      "oscillation": "3/4",
+      "r": 2,
+      "rational_denominator": 2,
+      "variance": 2
+    },
+    {
+      "defect": "5/16",
+      "oscillation": "99/128",
+      "r": 4,
+      "rational_denominator": 4,
+      "variance": 10
+    },
+    {
+      "defect": "23/96",
+      "oscillation": "413/512",
+      "r": 6,
+      "rational_denominator": 6,
+      "variance": 28
+    },
+    {
+      "defect": "25/128",
+      "oscillation": "13569/16384",
+      "r": 8,
+      "rational_denominator": 8,
+      "variance": 60
+    },
+    {
+      "defect": "901/5632",
+      "oscillation": "2358643/2883584",
+      "r": 10,
+      "rational_denominator": 11,
+      "variance": 110
+    },
+    {
+      "defect": "123/896",
+      "oscillation": "12067579/14680064",
+      "r": 12,
+      "rational_denominator": 14,
+      "variance": 182
+    },
+    {
+      "defect": "8373/69632",
+      "oscillation": "865985/1048576",
+      "r": 14,
+      "rational_denominator": 17,
+      "variance": 280
+    },
+    {
+      "defect": "24287/229376",
+      "oscillation": "18455776999/22548578304",
+      "r": 16,
+      "rational_denominator": 21,
+      "variance": 408
+    }
+  ]
+}

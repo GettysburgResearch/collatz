@@ -1,0 +1,107 @@
+{
+  "full_claim": "OPEN",
+  "ordinary_affine_tables": 32,
+  "rejections": 88,
+  "scope": "eight infinite progressions; finite witness fixtures",
+  "status": "PASS",
+  "templates": [
+    {
+      "K": 11,
+      "a": 7,
+      "b": 5,
+      "c": -69,
+      "first_child": 154265,
+      "first_parameter": 292863,
+      "reference": "-197/243",
+      "residue": 48,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 9,
+      "b": 6,
+      "c": -271,
+      "first_child": 543705,
+      "first_parameter": 774143,
+      "reference": "-29/27",
+      "residue": 674,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 9,
+      "b": 6,
+      "c": -243,
+      "first_child": 688981,
+      "first_parameter": 980991,
+      "reference": "-755/729",
+      "residue": 486,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 11,
+      "b": 7,
+      "c": -1069,
+      "first_child": 713433,
+      "first_parameter": 761855,
+      "reference": "-1039/729",
+      "residue": 779,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 11,
+      "b": 7,
+      "c": -1077,
+      "first_child": 3795393,
+      "first_parameter": 4052991,
+      "reference": "-3125/2187",
+      "residue": 480,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 11,
+      "b": 7,
+      "c": -1053,
+      "first_child": 2938121,
+      "first_parameter": 3137535,
+      "reference": "-3101/2187",
+      "residue": 1377,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 11,
+      "b": 7,
+      "c": -963,
+      "first_child": 2869079,
+      "first_parameter": 3063807,
+      "reference": "-3011/2187",
+      "residue": 2007,
+      "source_J": 2,
+      "target_J": 1
+    },
+    {
+      "K": 11,
+      "a": 10,
+      "b": 7,
+      "c": -579,
+      "first_child": 1509335,
+      "first_parameter": 3223551,
+      "reference": "-1603/2187",
+      "residue": 2100,
+      "source_J": 2,
+      "target_J": 1
+    }
+  ],
+  "uncovered_parameter": 2047,
+  "witness_transformations": 192
+}
