@@ -1,0 +1,97 @@
+{
+  "author_imports": false,
+  "carry_branch_instances": 1000,
+  "complete_recharge_classes_checked": 513,
+  "exhaustive_modular_states": 88533,
+  "finite_exponent_lifts": [
+    {
+      "exponent": 77,
+      "group_order": 81,
+      "k": 1,
+      "literal_complete_first_hits": true,
+      "output_bits": 313,
+      "source_bits": 313
+    },
+    {
+      "exponent": 176,
+      "group_order": 243,
+      "k": 2,
+      "literal_complete_first_hits": true,
+      "output_bits": 711,
+      "source_bits": 709
+    },
+    {
+      "exponent": 392,
+      "group_order": 729,
+      "k": 3,
+      "literal_complete_first_hits": true,
+      "output_bits": 1578,
+      "source_bits": 1573
+    },
+    {
+      "exponent": 1526,
+      "group_order": 2187,
+      "k": 4,
+      "literal_complete_first_hits": true,
+      "output_bits": 6116,
+      "source_bits": 6109
+    },
+    {
+      "exponent": 2012,
+      "group_order": 6561,
+      "k": 5,
+      "literal_complete_first_hits": true,
+      "output_bits": 8062,
+      "source_bits": 8053
+    },
+    {
+      "exponent": 14405,
+      "group_order": 19683,
+      "k": 6,
+      "literal_complete_first_hits": false
+    },
+    {
+      "exponent": 5657,
+      "group_order": 59049,
+      "k": 7,
+      "literal_complete_first_hits": false
+    }
+  ],
+  "known_convergent_renewals": [
+    {
+      "exponent": 5,
+      "r": 0,
+      "source_bits": 25
+    },
+    {
+      "exponent": 734,
+      "r": 3,
+      "source_bits": 2941
+    },
+    {
+      "exponent": 1706,
+      "r": 7,
+      "source_bits": 6829
+    }
+  ],
+  "negative_controls": [
+    "clock-five transfer",
+    "nonunit exit"
+  ],
+  "quotient_convergence_tested": false,
+  "rank_two_family_parameters_checked": 7,
+  "review_checker_sha256": "8b88b52d3781deb19143f01dad95e413b6d945eb78cfe8afd504a847e9d428d4",
+  "scope": "Independent bounded reconstruction; no global closure or quotient convergence claim.",
+  "searched_unit_targets": 171,
+  "selected_unit_clock_range": [
+    6,
+    17
+  ],
+  "source_cylinder_blocks": 1024,
+  "source_sha256": {
+    "experiments/creative_five_closure.py": "c72e23840297d8eac4c988c02a08d7e83129dfc53de00fa8025363ed2141b05c",
+    "reports/2026-11-20-creative-closure/five-report.json": "0b3cfa27a941fa43f1c9daacb484b5923dcc4537886a53c7fada19e530f32c31",
+    "research/creative-closure-20261120/five_closure.md": "cde080ac777ab6673029fe8ed769f13f84500c23a59d5111075fb6e44e1261d6"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,549 @@
+{
+  "arbitrary_carry_termination_claimed": false,
+  "carry_steps_by_kind": {
+    "inverse_one": 500,
+    "nonunit_exit": 166,
+    "physical_detour": 500,
+    "unit_exit": 334
+  },
+  "checker_sha256": "c72e23840297d8eac4c988c02a08d7e83129dfc53de00fa8025363ed2141b05c",
+  "complete_physical_five_closure_claimed": false,
+  "known_convergent_complete_renewals": [
+    {
+      "a": 5,
+      "debts": [
+        0,
+        1
+      ],
+      "end_clock": [
+        40,
+        9
+      ],
+      "end_debts": [
+        0,
+        1
+      ],
+      "r": 0,
+      "source_bits": 25,
+      "start_clock": [
+        35,
+        7
+      ]
+    },
+    {
+      "a": 248,
+      "debts": [
+        0,
+        1
+      ],
+      "end_clock": [
+        1012,
+        9
+      ],
+      "end_debts": [
+        0,
+        1
+      ],
+      "r": 1,
+      "source_bits": 997,
+      "start_clock": [
+        1007,
+        7
+      ]
+    },
+    {
+      "a": 491,
+      "debts": [
+        0,
+        1
+      ],
+      "end_clock": [
+        1984,
+        9
+      ],
+      "end_debts": [
+        0,
+        1
+      ],
+      "r": 2,
+      "source_bits": 1969,
+      "start_clock": [
+        1979,
+        7
+      ]
+    },
+    {
+      "a": 734,
+      "debts": [
+        0,
+        1
+      ],
+      "end_clock": [
+        2956,
+        9
+      ],
+      "end_debts": [
+        0,
+        1
+      ],
+      "r": 3,
+      "source_bits": 2941,
+      "start_clock": [
+        2951,
+        7
+      ]
+    },
+    {
+      "a": 977,
+      "debts": [
+        0,
+        1
+      ],
+      "end_clock": [
+        3928,
+        9
+      ],
+      "end_debts": [
+        0,
+        1
+      ],
+      "r": 4,
+      "source_bits": 3913,
+      "start_clock": [
+        3923,
+        7
+      ]
+    }
+  ],
+  "known_convergent_long_expansion_runs": [
+    {
+      "a": 77,
+      "five_output_odd_clock": 9,
+      "k": 1,
+      "output_bits": 313,
+      "quotient_convergence_tested": false,
+      "source_bits": 313,
+      "source_odd_clock": 6,
+      "t_mod9": 1
+    },
+    {
+      "a": 176,
+      "five_output_odd_clock": 10,
+      "k": 2,
+      "output_bits": 711,
+      "quotient_convergence_tested": false,
+      "source_bits": 709,
+      "source_odd_clock": 6,
+      "t_mod9": 4
+    },
+    {
+      "a": 392,
+      "five_output_odd_clock": 11,
+      "k": 3,
+      "output_bits": 1578,
+      "quotient_convergence_tested": false,
+      "source_bits": 1573,
+      "source_odd_clock": 6,
+      "t_mod9": 7
+    },
+    {
+      "a": 1526,
+      "five_output_odd_clock": 12,
+      "k": 4,
+      "output_bits": 6116,
+      "quotient_convergence_tested": false,
+      "source_bits": 6109,
+      "source_odd_clock": 6,
+      "t_mod9": 1
+    },
+    {
+      "a": 2012,
+      "five_output_odd_clock": 13,
+      "k": 5,
+      "output_bits": 8062,
+      "quotient_convergence_tested": false,
+      "source_bits": 8053,
+      "source_odd_clock": 6,
+      "t_mod9": 4
+    },
+    {
+      "a": 14405,
+      "five_output_odd_clock": 14,
+      "k": 6,
+      "output_bits": 57637,
+      "quotient_convergence_tested": false,
+      "source_bits": 57625,
+      "source_odd_clock": 6,
+      "t_mod9": 7
+    }
+  ],
+  "negative_controls": [
+    "clock-five off-by-one rejected",
+    "nonunit first paired predecessor repaired by six extra halvings",
+    "nonunit quotient exit remains explicitly nonunit",
+    "expanding full renewal is retained rather than silently declared descending"
+  ],
+  "paired_block_instances": 3336,
+  "quotient_basin_membership_inferred_from_five_multiple": false,
+  "rank_two_sources_with_exact_rank_three_five_word": [
+    {
+      "five_word": [
+        5,
+        5,
+        4
+      ],
+      "r": 1,
+      "source_bits": 7,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        8
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        11,
+        4
+      ],
+      "r": 2,
+      "source_bits": 13,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        14
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        17,
+        4
+      ],
+      "r": 3,
+      "source_bits": 19,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        20
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        23,
+        4
+      ],
+      "r": 4,
+      "source_bits": 25,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        26
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        29,
+        4
+      ],
+      "r": 5,
+      "source_bits": 31,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        32
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        35,
+        4
+      ],
+      "r": 6,
+      "source_bits": 37,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        38
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        41,
+        4
+      ],
+      "r": 7,
+      "source_bits": 43,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        44
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        47,
+        4
+      ],
+      "r": 8,
+      "source_bits": 49,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        50
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        53,
+        4
+      ],
+      "r": 9,
+      "source_bits": 55,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        56
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        59,
+        4
+      ],
+      "r": 10,
+      "source_bits": 61,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        62
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        65,
+        4
+      ],
+      "r": 11,
+      "source_bits": 67,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        68
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        71,
+        4
+      ],
+      "r": 12,
+      "source_bits": 73,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        74
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        77,
+        4
+      ],
+      "r": 13,
+      "source_bits": 79,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        80
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        83,
+        4
+      ],
+      "r": 14,
+      "source_bits": 85,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        86
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        89,
+        4
+      ],
+      "r": 15,
+      "source_bits": 91,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        92
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        95,
+        4
+      ],
+      "r": 16,
+      "source_bits": 97,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        98
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        101,
+        4
+      ],
+      "r": 17,
+      "source_bits": 103,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        104
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        107,
+        4
+      ],
+      "r": 18,
+      "source_bits": 109,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        110
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        113,
+        4
+      ],
+      "r": 19,
+      "source_bits": 115,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        116
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        119,
+        4
+      ],
+      "r": 20,
+      "source_bits": 121,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        122
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        125,
+        4
+      ],
+      "r": 21,
+      "source_bits": 127,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        128
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        131,
+        4
+      ],
+      "r": 22,
+      "source_bits": 133,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        134
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        137,
+        4
+      ],
+      "r": 23,
+      "source_bits": 139,
+      "source_is_ternary_unit": false,
+      "source_word": [
+        2,
+        140
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        143,
+        4
+      ],
+      "r": 24,
+      "source_bits": 145,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        146
+      ]
+    },
+    {
+      "five_word": [
+        5,
+        149,
+        4
+      ],
+      "r": 25,
+      "source_bits": 151,
+      "source_is_ternary_unit": true,
+      "source_word": [
+        2,
+        152
+      ]
+    }
+  ],
+  "schema": "collatz-creative-five-closure-v1",
+  "selected_unit_paired_predecessors": 1001,
+  "status": "PASS: physical local identities and explicit failed ranks; forward-five closure remains OPEN",
+  "two_odd_position_solutions_through_40": [
+    [
+      2,
+      5
+    ]
+  ]
+}

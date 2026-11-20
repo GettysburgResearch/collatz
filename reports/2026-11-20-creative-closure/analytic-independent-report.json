@@ -1,0 +1,430 @@
+{
+  "antichain_roots": [
+    53,
+    277,
+    725,
+    965,
+    5141,
+    27413,
+    146197,
+    389845
+  ],
+  "counts": {
+    "antichain_disjoint_pairs": 28,
+    "candidate_macro_paths": 3801,
+    "candidate_shortcut_edges": 17130,
+    "finite_continuation_tail_checks": 14,
+    "leaf_to_root_paths": 1284,
+    "leaf_to_root_shortcut_edges": 39496,
+    "published_vector_hash_matches": 17,
+    "residual_coordinates_checked": 8720,
+    "triangular_cases": 6
+  },
+  "finite_continuation_tail_checks": [
+    {
+      "actual_added_square_energy": "122317/8192",
+      "eigenvalue": "1",
+      "from_depth": 1,
+      "infinite_tail_bound": "26",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "60877/8192",
+      "eigenvalue": "1",
+      "from_depth": 2,
+      "infinite_tail_bound": "13",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "27085/8192",
+      "eigenvalue": "1",
+      "from_depth": 3,
+      "infinite_tail_bound": "13/2",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "13517/8192",
+      "eigenvalue": "1",
+      "from_depth": 4,
+      "infinite_tail_bound": "13/4",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "6093/8192",
+      "eigenvalue": "1",
+      "from_depth": 5,
+      "infinite_tail_bound": "13/8",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "2621/8192",
+      "eigenvalue": "1",
+      "from_depth": 6,
+      "infinite_tail_bound": "13/16",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "813/8192",
+      "eigenvalue": "1",
+      "from_depth": 7,
+      "infinite_tail_bound": "13/32",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "12485998027985497080828608312604174619062153793454921155987054131312489763872675824912815713810501740054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 1,
+      "infinite_tail_bound": "951424873748690985599525772015681/336691890979751106560000000000",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "9243357971304834031560785551253886667271037281630821368579694131312489763872675824912815713810501740054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 2,
+      "infinite_tail_bound": "5205119502241536437398509277498680754435406333626761/2206543976724896851951616000000000000000000000000",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "6491699162361909460873306027709241330042750692180295065375779371560262538272675824912815713810501740054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 3,
+      "infinite_tail_bound": "28514747221742193609360576800515813803527041722447446393264292961652241/14460806605864284008950110617600000000000000000000000000000000000000",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "4547556754187092961979240838905823994179118327756461828723895503243157438601908919978415713810501740054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 4,
+      "infinite_tail_bound": "15974608027715198499761056704439336019698201462671793573992657265716964480432438931847/10301124149151323008810374450380800000000000000000000000000000000000000000000000000",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "2925781888857287029499487761156894394224212691133350580662134428947005527452756138391527716813918316054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 5,
+      "infinite_tail_bound": "1960251806938364265519471148878162396172744099358459092992793126698554268093358472959767634266819376947561/1552717286149196540822412409954359050240000000000000000000000000000000000000000000000000000000000000000",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "1730623614599502549410547137474901929742043669607573264139551856195798051572201467922605924979146454433638075145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 6,
+      "infinite_tail_bound": "157790066009401383537451713104929220693467608595393730908572725999003393378951445851956657248820284638369204359497963/158998250101677725780215030779326366744576000000000000000000000000000000000000000000000000000000000000000000000000",
+      "to_depth": 8
+    },
+    {
+      "actual_added_square_energy": "724961315766753020215814147463622271594855342219788682333605858749035283745585970622504775233525125222404672278505052566677249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "eigenvalue": "21/20",
+      "from_depth": 7,
+      "infinite_tail_bound": "412747143477500963349455115865181950708308886348149622704463190252428339928658273293197662887059065310185821884598306758989914592270801/521005465933177571836608612857696638548626636800000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "to_depth": 8
+    }
+  ],
+  "flow_cases": [
+    {
+      "certified_omitted_square_tail_upper": "26",
+      "depth": 1,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 2,
+      "nonzero_physical_coordinates": 4,
+      "norm_squared": "4",
+      "residual_norm_squared": "2",
+      "root": 5,
+      "vector_sha256": "12da38ecbf1f596d4d1d9d3ea9c7a6b09e52c4d4223ac2e5552fc3632401ad65"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13",
+      "depth": 2,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 4,
+      "nonzero_physical_coordinates": 19,
+      "norm_squared": "23/2",
+      "residual_norm_squared": "1",
+      "root": 5,
+      "vector_sha256": "f8c9bb51ecefe8e2f731a79c7a2f2f0ada20bcefcc7bb2f806d8dddc024b8300"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/2",
+      "depth": 3,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 8,
+      "nonzero_physical_coordinates": 49,
+      "norm_squared": "125/8",
+      "residual_norm_squared": "1/2",
+      "root": 5,
+      "vector_sha256": "501629c4aadb69e9350ad226bbb3eecf5b432c2b394b74f443a5c4bf10a840e7"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/4",
+      "depth": 4,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 16,
+      "nonzero_physical_coordinates": 101,
+      "norm_squared": "553/32",
+      "residual_norm_squared": "1/4",
+      "root": 5,
+      "vector_sha256": "26036ac03251fb723e43eb194746581801cbd024a7ed84984564e0cb7891a120"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 219,
+      "norm_squared": "291/16",
+      "residual_norm_squared": "1/8",
+      "root": 5,
+      "vector_sha256": "0806caa530e54ac73cd35de2f691ecd417b1798605c0f89ee9793f2c6141415e"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/16",
+      "depth": 6,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 64,
+      "nonzero_physical_coordinates": 443,
+      "norm_squared": "9529/512",
+      "residual_norm_squared": "1/16",
+      "root": 5,
+      "vector_sha256": "aade45179b15125a9c60502549019b4ffd4c9c8acb2476698b0c886c6fd239ca"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/32",
+      "depth": 7,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 128,
+      "nonzero_physical_coordinates": 891,
+      "norm_squared": "4821/256",
+      "residual_norm_squared": "1/32",
+      "root": 5,
+      "vector_sha256": "7e54100985dd1252959314dedfe817c061cb737110da43f1ebbe31e173029a17"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/64",
+      "depth": 8,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 256,
+      "nonzero_physical_coordinates": 1743,
+      "norm_squared": "155085/8192",
+      "residual_norm_squared": "1/64",
+      "root": 5,
+      "vector_sha256": "ba4f1119e5afba81b01c6ecafcac713a533d8955924aa244445b2e05b986c300"
+    },
+    {
+      "certified_omitted_square_tail_upper": "951424873748690985599525772015681/336691890979751106560000000000",
+      "depth": 1,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 2,
+      "nonzero_physical_coordinates": 4,
+      "norm_squared": "59254183442601/10240000000000",
+      "residual_norm_squared": "13407485009146641/4096000000000000",
+      "root": 5,
+      "vector_sha256": "5d6921a4073ac6d4978a12ed995236b95528b63a69579f999410f44705f82542"
+    },
+    {
+      "certified_omitted_square_tail_upper": "5205119502241536437398509277498680754435406333626761/2206543976724896851951616000000000000000000000000",
+      "depth": 2,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 4,
+      "nonzero_physical_coordinates": 19,
+      "norm_squared": "1436081727693060866978962406719281/67108864000000000000000000000000",
+      "residual_norm_squared": "73350575145414882600576319347490521/26843545600000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "97f0ba9b3ac226dc85893d2962a8a382f016991c68b4241a57c37962258c3d7e"
+    },
+    {
+      "certified_omitted_square_tail_upper": "28514747221742193609360576800515813803527041722447446393264292961652241/14460806605864284008950110617600000000000000000000000000000000000000",
+      "depth": 3,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 8,
+      "nonzero_physical_coordinates": 49,
+      "norm_squared": "15238369387552201502889947422804425180955015166618361/439804651110400000000000000000000000000000000000000",
+      "residual_norm_squared": "401829988329796167439002828255861787358015141831352801/175921860444160000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "7860997d3f4b0725f6cc6342d80cc6f9af191aa4099869037391dbb9306c38a8"
+    },
+    {
+      "certified_omitted_square_tail_upper": "15974608027715198499761056704439336019698201462671793573992657265716964480432438931847/10301124149151323008810374450380800000000000000000000000000000000000000000000000000",
+      "depth": 4,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 16,
+      "nonzero_physical_coordinates": 101,
+      "norm_squared": "317116433567714033049370711029327406108476002159021038792034671435401/7205759403792793600000000000000000000000000000000000000000000000000",
+      "residual_norm_squared": "5177628252179417215606252628664571005620880833168054036968791640851441/2882303761517117440000000000000000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "1b74f0361eaca75401c84cd258a54b393e75dd3a077ab7c46be74ee2fd9d5693"
+    },
+    {
+      "certified_omitted_square_tail_upper": "1960251806938364265519471148878162396172744099358459092992793126698554268093358472959767634266819376947561/1552717286149196540822412409954359050240000000000000000000000000000000000000000000000000000000000000000",
+      "depth": 5,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 219,
+      "norm_squared": "2447003170900861362468097364127364698153521366821580744573320703776854369702941695896081/47223664828696452136960000000000000000000000000000000000000000000000000000000000000000",
+      "residual_norm_squared": "27623880183125067702290076971086332034298704840579879893787210323925167025678529531739321/18889465931478580854784000000000000000000000000000000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "e679a12202831599af86f5cffd1ed22c1eff353d5a8a3496860954617b37a3c9"
+    },
+    {
+      "certified_omitted_square_tail_upper": "157790066009401383537451713104929220693467608595393730908572725999003393378951445851956657248820284638369204359497963/158998250101677725780215030779326366744576000000000000000000000000000000000000000000000000000000000000000000000000",
+      "depth": 6,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 64,
+      "nonzero_physical_coordinates": 443,
+      "norm_squared": "278400071726617004069503214361316698153737879820339099779899750722495180375419425708013814613953123/4835703278458516698824704000000000000000000000000000000000000000000000000000000000000000000000000",
+      "residual_norm_squared": "2223578553583320894609051715078021664958588545870301853799433226108413024981823464617862823748078043/1934281311383406679529881600000000000000000000000000000000000000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "8f1d05ba15206da920d2a1b686e76d1bd33e815960a9c9519ddfae88be8fcb8e"
+    },
+    {
+      "certified_omitted_square_tail_upper": "412747143477500963349455115865181950708308886348149622704463190252428339928658273293197662887059065310185821884598306758989914592270801/521005465933177571836608612857696638548626636800000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "depth": 7,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 128,
+      "nonzero_physical_coordinates": 891,
+      "norm_squared": "988987299463767424099341213722122735506993565920649145023609029584003790292899311392998576246412400423575399999016121/15845632502852867518708790067200000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "residual_norm_squared": "5816435213574639577486195302528800862003241513258344324767387005752337799131449980045116519863774212298310437335660961/6338253001141147007483516026880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "737e349cbd7031305e8480ee993029da3dcaa94acf5e8b857657c27b9b34d578"
+    },
+    {
+      "certified_omitted_square_tail_upper": "4201577588799350159795520852995135172489242006601578703072804087478190588174011326424288040732612999324927105038931967960136448792888387329874125636339881/6828922843079345069576796410448401380784559053864960000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "depth": 8,
+      "eigenvalue": "21/20",
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 256,
+      "nonzero_physical_coordinates": 1743,
+      "norm_squared": "13687815647298245401370699303962229390432121409454921155987054131312489763872675824912815713810501740054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "residual_norm_squared": "59208656501315569162764155607054152560315554332897119840539850110311170835102057994090664323737492880348487189020278313559477834945742841/83076749736557242056487941267521536000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "48f35df952616d27550f8c4d896bd0c6d831646a3e03243545737a7318494515"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 215,
+      "norm_squared": "2323/128",
+      "residual_norm_squared": "1/8",
+      "root": 53,
+      "vector_sha256": "ce10f77a7f1e9ac2a0bb97a7769b25f50e76b1d8a6a5130e63e8401c4363b6d1"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 221,
+      "norm_squared": "995/64",
+      "residual_norm_squared": "1/8",
+      "root": 277,
+      "vector_sha256": "9c29b600ba45d5d249a5b45b0161207a5154d709fca1f3364b943bb840b69c2a"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 201,
+      "norm_squared": "549/32",
+      "residual_norm_squared": "1/8",
+      "root": 725,
+      "vector_sha256": "345e417d9aeb31e106a57a84a6790b70f7659c892bf031d11f22c24f819ede92"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 223,
+      "norm_squared": "2771/128",
+      "residual_norm_squared": "1/8",
+      "root": 965,
+      "vector_sha256": "e5a26dca1cb4a64952afefde223e48111c679349594015a1cd194c5f503e6ae5"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 207,
+      "norm_squared": "1119/64",
+      "residual_norm_squared": "1/8",
+      "root": 5141,
+      "vector_sha256": "7622b6d101e8b7bd5e670e52334d69e499a211dceeb29414b33a6157ac43e0fb"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 211,
+      "norm_squared": "35/2",
+      "residual_norm_squared": "1/8",
+      "root": 27413,
+      "vector_sha256": "26811d793cdf2e71e0418d67a6d69e155841bb7bdef79139215579edae75f605"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 215,
+      "norm_squared": "559/32",
+      "residual_norm_squared": "1/8",
+      "root": 146197,
+      "vector_sha256": "dd783b255ba3e112ed216e6f7b96ea3defafb90cbf687e78cb36fe7a9981baec"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": "1",
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "nonzero_physical_coordinates": 215,
+      "norm_squared": "2191/128",
+      "residual_norm_squared": "1/8",
+      "root": 389845,
+      "vector_sha256": "7213d8745a19ebb8119a8a49b9b6247f6e24970eb7f35cc7ed0f2ceba859890c"
+    }
+  ],
+  "limitations": [
+    "Internal agent review, not external review or formal proof.",
+    "No Collatz proof and no novelty claim for signed eigenvectors in general."
+  ],
+  "method": "scalar rational leaf currents transported along literal forward T paths; no production import",
+  "negative_controls_rejected": [
+    "root_leakage",
+    "unlisted_exterior_source"
+  ],
+  "reviewed_sha256": {
+    "experiments/creative_analytic_flow.py": "d989cf46752581db238a629cf2ac3f16c2bd8c09d96dae095df330f401fe0e9a",
+    "reports/2026-11-20-creative-closure/analytic-flow-report.json": "8cefbc6c0aa687dfb9ffa54f4b4f284d8c4423af62fc1acb44e21c9f4b4245a2",
+    "research/creative-closure-20261120/analytic_flow.md": "6261ef1916469bc8357ee00ef07e7b55c37f668275c14af545cb8e2aa6d64bc6"
+  },
+  "schema": "collatz-creative-analytic-independent/v1",
+  "scope": "finite implementation corroboration; infinite statements were separately reconstructed in ANALYTIC_REVIEW.md",
+  "status": "PASS"
+}
