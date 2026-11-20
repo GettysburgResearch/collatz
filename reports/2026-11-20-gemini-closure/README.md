@@ -91,10 +91,17 @@ The subsequent [direct global follow-up](FOLLOWUP.md) certifies that the
 explicit fixed full-support input's negative initial drift becomes positive
 from return 9 to 10. The fourth standalone checker uses exact integer intervals
 and an analytic bound for the entire omitted input, and was run in normal and
-optimized Python. Its [receipt](drift-receipt.json) and scoped review accompany
+optimized Python. Its [receipt](drift-receipt.json) and
+[scoped review](DRIFT_REVIEW.md) accompany
 the [proof](../../research/gemini-global-closure-20261120/FIXED_SOURCE_DRIFT.md).
 The original checkout receipt above applies to the initial scientific commit;
-the follow-up has its own publication and checkout-validation records.
+the follow-up has its own [publication record](followup-publication.json)
+and [checkout-validation receipt](followup-checkout-validation.json).
+All 11 repository commands also passed on the exact published follow-up
+scientific commit `55be11c46e253d94dbbc32efef42ab59c4af1a70`, tree
+`cbc289ece00cb427076ad2a044c9364ecb5e0575`; its complete 352-file checkout
+remained unchanged. As before, this later receipt commit is not its own
+validation input.
 
 The ordinary operator preserves the new input domains, but the proved budget
 grows with the return horizon. The finite shadows force essential spectral

@@ -34,6 +34,7 @@ log-log rank gauge differs by at most `log 2` from the corresponding ordinary
 height gauge, so this target has not gained an unstated arithmetic hypothesis.
 
 See [the proof and exact certificate](../../research/gemini-global-closure-20261120/FIXED_SOURCE_DRIFT.md).
+The [scoped independent review](DRIFT_REVIEW.md) pins the proof and checker.
 The computation certifies two whole-source signs. It does not extrapolate
 them to later return times or rule out a different correction to the gauge.
 
