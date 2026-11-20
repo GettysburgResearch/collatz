@@ -88,6 +88,35 @@ outputs, exit codes and before/after state. An attached receipt covers the
 commit it names, not the later documentation commit attaching it. Any
 final-head rerun must therefore identify its own execution separately.
 
+### Published content actually executed
+
+The research content was published on branch
+`research/source-rigidity-20261120`, read back from GitHub, fetched, and
+checked in a separate clean complete worktree.
+
+- Published content commit: `cd4f439743263b698cc2fc0628b2868903e09ca7`.
+- Content tree: `232cfa60e06cbd2e1a17dda9764d129641719119`, identical to
+  the locally assembled and reviewed tree.
+- All 39 artifact-manifest entries matched the published bytes.
+- The checkout contained 355 tracked files and stayed clean, at the same
+  commit and tree, throughout validation.
+- All 11 repository validation commands passed with regressions enabled.
+- The actual run was `2026-11-20T20:38:23.482102+00:00` through
+  `2026-11-20T20:38:28.495023+00:00`.
+
+The [complete execution receipt](validation-receipt.json) has SHA-256
+`b9de855102da82de7cd097d413cd20e5e580145d7bfbf2fef03e570ffe855fd4`.
+The [manifest readback](published-manifest-check.json) independently
+identifies the same published commit and tree. This following documentation
+commit attaches those actual receipts; it does not pretend that the named
+execution validated its own later attachment. The final PR records the
+separate final-head execution and its exact identity.
+
+All 27 local Markdown links in the new packet/report entry points and the
+staged whitespace diff were checked before the content commit. The final
+source comparison changed only new explanatory notes, not the proof or
+checker bytes covered by the six scoped reviews.
+
 ## Remaining inference
 
 The shifted `{2,3}`-smooth class is closed by combining cycle exclusion
