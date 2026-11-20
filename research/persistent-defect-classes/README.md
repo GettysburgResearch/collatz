@@ -2,6 +2,18 @@
 
 **PROPOSED, unconditional except for the explicitly marked existence input in Section 5.**
 
+**Concurrent overlap identified during publication.** PR #148 at
+6ff18e4f63be8f3bece76215fcfe44d83b001d7f independently contains the same
+invariant, persistence classification, sharp product gap and nonnegative
+minimum sector in its
+[FB-001–003 proof](https://github.com/GettysburgResearch/collatz/blob/6ff18e4f63be8f3bece76215fcfe44d83b001d7f/research/forward-bridge-20261120/PROOF.md).
+Its grade is the negative of the defect used here: $g=-\kappa$.
+Sections 1–3 below are an independent reconstruction of that overlapping
+result, not a novelty claim over PR #148. The additional material here
+is the negative-class census, the separately qualified existence result,
+the Fibonacci diagonal bound, and the accompanying shifted-power
+two-word rigidity theorem.
+
 This extends the least-representative analysis in PR146 at frozen head
 `92820dd336b010215eb8a6eb4878a31b58a67656`,
 `research/upper-bit-mergers/PREFIX_REPRESENTATIVES.md`. It does not prove

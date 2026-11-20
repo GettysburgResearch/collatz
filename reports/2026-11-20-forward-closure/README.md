@@ -1,7 +1,8 @@
 # Forward Collatz closure investigation — 20 November 2026
 
-**Collatz has not been resolved by this work.** The new results classify
-ordinary representatives retained by the latest merger filter, constrain
+**Collatz has not been resolved by this work.** This packet reconstructs
+and extends the classification of ordinary representatives retained by the
+latest merger filter, constrains
 short asynchronous mergers, derive exact forward consequences of an
 all-word inverse potential, and identify why two proposed closure routes
 still lack a proof.
@@ -12,6 +13,14 @@ They are research results for review, not a claim of formal verification
 or an official institutional announcement.
 
 ## 1. Exact classification of persistent convergent rows
+
+The invariant and nonnegative classification in this section also appear
+in concurrent [PR #148](https://github.com/GettysburgResearch/collatz/pull/148),
+frozen at 6ff18e4f63be8f3bece76215fcfe44d83b001d7f and discovered during
+the final publication readback. Its convention is $g=-\kappa$.
+Our derivation is an independent reconstruction of that overlapping
+result. The negative-class results, Fibonacci diagonal bound and
+shifted-power rigidity below are separate extensions.
 
 For a source that reaches 1, let $d$ be its first-hit shortcut time, $a$
 its number of odd inputs, and $\kappa=d-2a$. Two such sources eventually
@@ -37,6 +46,11 @@ $F_{j+3}$ have already reached 1 by time $j$. Their fraction is
 $O((\varphi/2)^j)$, which tends to zero exponentially. A theorem for
 each fixed row's eventual tail does not cover the natural growing
 diagonal of rows.
+
+This diagonal limitation concerns use of the condition $j\ge d(n)$
+uniformly over growing rows. It does not contradict PR #148's treatment
+of the finitely many pre-tail exceptions within its explicitly classified
+sector.
 
 [Full classification and proof](../../research/persistent-defect-classes/README.md).
 

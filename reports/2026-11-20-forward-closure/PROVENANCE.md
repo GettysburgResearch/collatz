@@ -9,9 +9,22 @@ it does not integrate or endorse every claim on the source branches.
 | PR #146, current head inspected | 92820dd336b010215eb8a6eb4878a31b58a67656 | Binary merger pairs, least augmented-state representatives, persistent powers of four, shifted-power tails. |
 | PR #145 | dd245a712f985909f541590e3f6c179b7ba011e4 | Ordinary harmonic trace, reciprocal summability, conservative component mass, spine concentration, rational-cycle precedents and real terminal-residue support. |
 | PR #147 | b74b2d466f58844a742a6ed6bcdf06844269f361 | D3 robust-credit existence under UQ(6), and the independently verified small stationary policy. Used only for the optional existence of every negative stopping-defect class. |
+| PR #148, concurrent comparison | 6ff18e4f63be8f3bece76215fcfe44d83b001d7f | Independently contains the same invariant and nonnegative permanent-representative classification, with grade $g=-\kappa$. Found during final publication readback. |
 | Main / resident packets | ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a | Scope rules, ordinary-realization safeguards, finite-feature and rational-shadow precedents. |
 
 ## Exact repository sources
+
+Concurrent PR #148:
+
+- [FB-001–004](https://github.com/GettysburgResearch/collatz/blob/6ff18e4f63be8f3bece76215fcfe44d83b001d7f/research/forward-bridge-20261120/PROOF.md)
+  was read after PR #149 was opened. FB-001–003 overlap the present
+  persistence invariant, product gap and nonnegative-class calculation.
+  Those parts are an independent reconstruction, not an asserted
+  advancement over PR #148. FB-004 additionally handles the upper-bit
+  obligations of that classified sector. The present Fibonacci diagonal
+  theorem and two-word clock barrier have different scopes.
+  Its separate inverse certificate and powered-cycle analysis were not
+  independently replayed in this continuation.
 
 PR #146:
 
