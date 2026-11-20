@@ -98,9 +98,23 @@ without pretending to hash themselves.
 
 ## Complete-checkout validation and publication
 
-The final publication record and the clean complete-checkout receipt are
-attached after the content commit is created and fetched from GitHub.
-No repository-integrity result is claimed by this preliminary paragraph.
+The content was published to `research/global-rigidity-20261120`, fetched
+from GitHub, and checked in a separate clean complete worktree:
+
+- Published content commit: `f13f91c6875f2b3e117b6e9c64c45039dd92bf5c`.
+- Published content tree: `50e9b7d7ea72c61a0cd9281e9cb9c464d1d24a3b`.
+- All 34 artifact-manifest entries matched the fetched published bytes.
+- The checkout had 350 tracked files. Its commit, tree, and tracked state
+  were unchanged after validation.
+- All 11 child commands exited zero with regressions enabled.
+
+The [complete receipt](validation-receipt.json) records the actual run
+from `2026-11-20T19:38:33.458287+00:00` to
+`2026-11-20T19:38:38.633413+00:00`. Its SHA256 is
+`977237ee9beb25c630f225a2a4eee91f5994eb1aa7979181a0dc581fa28cdd07`.
+This receipt is attached in the following documentation commit; it covers
+the named content commit, not its own later attachment. A later final-head
+execution must identify its own exact commit separately.
 
 The required command is:
 
