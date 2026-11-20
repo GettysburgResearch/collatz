@@ -114,3 +114,30 @@ finite retained charge at its critical exponent. A strict weighted
 incoming-column estimate and a valid propagation/rigidity interface are
 still required. No finite test, localized equivalence, or decreasing
 query height is substituted for those missing statements.
+
+## Published content actually executed
+
+The branch `research/least-failure-closure-20261121` was created on GitHub,
+read back, fetched, and checked in a separate clean complete checkout.
+
+- Published content commit: `15a290db42422a2492a154786d925b712c1dc588`.
+- Content tree: `7456080d64ecd1986bf96da35292ae8632a30d8c`, identical
+  to the locally assembled tree.
+- All 48 artifact-manifest entries matched the published bytes.
+- The checkout contained 364 tracked files and remained clean at the
+  same commit and tree throughout validation.
+- All 11 complete-checkout commands passed with regressions enabled.
+- Actual execution: `2026-11-20T22:59:11.609594+00:00` through
+  `2026-11-20T22:59:16.342472+00:00` (UTC).
+
+The [complete receipt](validation-receipt.json) has SHA-256
+`7efd7a4a650dd2f63e5f2cbc4120aef6c784770d0dd550bf8e3ffd08a6af5c4c`.
+The [manifest readback](published-manifest-check.json) independently
+identifies the same published content commit and tree. This subsequent
+documentation commit attaches the actual receipts; it does not claim that
+the earlier execution validated its own later attachment. The final PR
+records a separate final-head execution with its own exact identity.
+
+Before the content commit, all 27 local Markdown links in the new packet
+and report were checked, and the staged whitespace diff was clean. The
+receipt attachment leaves every manifested scientific byte unchanged.
