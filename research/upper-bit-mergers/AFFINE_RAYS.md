@@ -133,3 +133,9 @@ $$
  0< |(p-q)\log3-(i-j)\log2-\log5|\ll m^{\rho-1}+1/t.
 $$
 The term $1/t$ bounds $\log(5+1/t)-\log5$. Nonvanishing is unique factorization. The classical theorem on linear forms in the logarithms of $2,3,5$ bounds the left side below by a constant times $(2+i+j)^{-C}$ for an absolute effective $C$. This proves the clock lower bound, with adjustment at bounded $m$. This use of Baker–Wüstholz is separate from the elementary equivalence (1). [Linear forms theorem](https://doi.org/10.1515/crll.1993.442.19)
+
+A second lower bound depends on the number of even inputs, with no restriction on either clock. Suppose the arms from $t$ and $5t+1$ meet and $B$ is the larger of their two even-step counts. Then $B\gg\log(2t)$ by elementary arithmetic for sufficiently large $t$. Using the same linear forms theorem gives
+$$
+ B\ge\log_2 t-O(\log\log(3t)).
+$$
+To see this, write the endpoint formula in the normalized form $3^p2^{-i}(t+E)$ for the first arm and likewise with $q,j,E'$ for the second. The nonnegative offsets $E,E'$ are at most $2^B$. Write $e=i-p$, $e'=j-q$, and $R=(3/2)^{p-q}2^{e'-e}$. Then $R(t+E)=5t+1+E'$. The case $2^B>t/4$ already gives the claimed bounds. Otherwise $4\le R\le7$ and $|R-5|\le (1+6\cdot 2^B)/t$. Taking logarithms bounds $|p-q|$ by $O(B+1)$ since $|e'-e|\le B$. Unique factorization gives $R\ne5$, and the rational denominator of $R$ is at most $2^{O(B+1)}$. This proves the elementary estimate. For the second bound apply the linear forms theorem to $\log(R/5)$, whose integer coefficients on $\log 2,\log 3,\log 5$ are all $O(B+1)$. It yields $|R-5|\gg(B+2)^{-C}$. If $B\le\log_2 t$, taking logarithms proves the result, and larger $B$ already suffices. [Affine offset bound](README.md#affine-identities) · [Linear forms theorem](https://doi.org/10.1515/crll.1993.442.19)
