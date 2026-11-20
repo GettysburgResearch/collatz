@@ -1,0 +1,85 @@
+{
+  "checker_sha256": "9144e66b97790f08ed5b20ae54c8c2455e449315640f1f3d9e19718e770fa22c",
+  "counts": {
+    "blocked_source_levels": 36,
+    "certified_sources": 8,
+    "growth_prefix_states": 187,
+    "periodic_quotients": 256,
+    "prime_cylinders": 254,
+    "unit_residues": 19682
+  },
+  "damaged_certificates_rejected": 3,
+  "growth_prime_examples": [
+    {
+      "H": 2,
+      "prime": 3
+    },
+    {
+      "H": 3,
+      "prime": 7
+    },
+    {
+      "H": 4,
+      "prime": 31
+    },
+    {
+      "H": 5,
+      "prime": 31
+    },
+    {
+      "H": 6,
+      "prime": 127
+    },
+    {
+      "H": 7,
+      "prime": 127
+    },
+    {
+      "H": 8,
+      "prime": 1279
+    },
+    {
+      "H": 9,
+      "prime": 3583
+    },
+    {
+      "H": 10,
+      "prime": 5119
+    },
+    {
+      "H": 11,
+      "prime": 6143
+    },
+    {
+      "H": 12,
+      "prime": 8191
+    },
+    {
+      "H": 13,
+      "prime": 8191
+    },
+    {
+      "H": 14,
+      "prime": 81919
+    },
+    {
+      "H": 15,
+      "prime": 131071
+    },
+    {
+      "H": 16,
+      "prime": 131071
+    },
+    {
+      "H": 17,
+      "prime": 131071
+    },
+    {
+      "H": 18,
+      "prime": 524287
+    }
+  ],
+  "omitting_odd_edges_components_mod7": 3,
+  "scope": "Exact bounded arithmetic; cited GRH least-prime theorem not verified by these examples; no full Collatz proof.",
+  "status": "PASS"
+}

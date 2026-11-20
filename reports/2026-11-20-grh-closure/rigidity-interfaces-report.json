@@ -1,0 +1,50 @@
+{
+  "checker_sha256": "bc8d0940b0bfdaa4937467ac57e1f09d5275325b713c2e4367b65594bc13904c",
+  "damaged_samples_rejected": [
+    "intermediate_form",
+    "endpoint",
+    "zero_exponent"
+  ],
+  "inverse_obstructions": {
+    "source5_all_solutions_a_h_core": [
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "source7_all_solutions_a_h_core": [
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "unbounded_a_branches": "excluded by complete residue periods, not a finite exponent search"
+  },
+  "raw_search_provenance_scope": "recorded hash from the exploratory run; the large raw report is not reread by this verifier",
+  "recorded_raw_search_sha256": "83fa609bc05e22f54e01a7fe2bc2bf872986254d4f2cd842e80acee7612edcdd",
+  "sample": {
+    "endpoint": [
+      648,
+      239
+    ],
+    "forward_moves": 25,
+    "high_forward_moves": 2,
+    "high_reverse_moves": 3,
+    "moves": 43,
+    "removed_factors": {
+      "2": 44,
+      "3": 39
+    },
+    "reverse_moves": 18,
+    "source": [
+      10368,
+      3823
+    ],
+    "strict_descent_for_all_nonnegative_parameters": true
+  },
+  "sample_sha256": "b3688004cae051609e723d46740af2549b63aeb5c443d7d0f1cd37dbc832816d",
+  "scope": "exact whole-affine sample and exhaustive congruence branches for n=5,7; no universal-J, S-unit implementation, or exhaustive ancestor search",
+  "status": "PASS"
+}

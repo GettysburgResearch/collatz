@@ -1,0 +1,45 @@
+{
+  "author_checker_sha256": "9144e66b97790f08ed5b20ae54c8c2455e449315640f1f3d9e19718e770fa22c",
+  "author_note_sha256": "b78c2beca423087bbc6a130ba9af3127073ff86a48d81fd991f6dec4ae2ccba2",
+  "counts": {
+    "blocked_levels": 21,
+    "certified_sources": 6,
+    "odd_period_quotients": 129,
+    "parity_lifts": 2040,
+    "prescribed_unit_classes": 2186
+  },
+  "scope": "Independent no-import bounded arithmetic for G1 parity cylinders, G2/G3 prescribed-level claims and G5 odd-period rigidity. External GRH prime bounds and Chebotarev theorem not reproved.",
+  "status": "PASS",
+  "valuation_examples": [
+    {
+      "E": 3,
+      "division_exponent": 28,
+      "v3_n_plus_1": 3
+    },
+    {
+      "E": 4,
+      "division_exponent": 82,
+      "v3_n_plus_1": 4
+    },
+    {
+      "E": 5,
+      "division_exponent": 244,
+      "v3_n_plus_1": 5
+    },
+    {
+      "E": 6,
+      "division_exponent": 730,
+      "v3_n_plus_1": 6
+    },
+    {
+      "E": 7,
+      "division_exponent": 2188,
+      "v3_n_plus_1": 7
+    },
+    {
+      "E": 8,
+      "division_exponent": 6562,
+      "v3_n_plus_1": 8
+    }
+  ]
+}
