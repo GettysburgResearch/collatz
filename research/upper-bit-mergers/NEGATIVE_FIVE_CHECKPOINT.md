@@ -125,6 +125,12 @@ is positive, divisible by $3^A$, and has $Y=2^Lu$ in (2). Indeed (8) makes $8^k(
 
 In particular, fix *any* $k,A$ and take the set of positive starts satisfying the divisibilities of the theorem that first descend at the earliest time by these consecutive halvings. The full Collatz conjecture is equivalent to convergence for every member of this set. For the reverse implication, any positive start reaches a positive unit $u$ modulo three. If needed, strip off powers of two and take one odd step. Equation (8) gives a member of the set whose orbit reaches that particular $u$. If the member reaches 1, so does $u$, since 1 lies on the cycle $1\to2\to1$. Thus even an orbit with a proven, optimally early first descent can carry any possible subsequent behavior.
 
+The four-step smaller-partner exit can likewise be prescribed in **every** component. To make its common endpoint equal $2^L u$, set $t=(16\cdot2^L u+13)/(3\cdot9^k)$. Choose $L$ from the congruence
+$$
+ 16\cdot8^k u\,2^L\equiv15\cdot9^k-13\cdot8^k\pmod{3^{2k+A+1}} .
+$$
+Both sides are units, so again there is an arithmetic progression of solutions. The congruence makes $t$ integral and $8^k t-5$ divisible by $3^A$. It also gives $9^k t\equiv15\pmod{16}$, and substitution into the four-step endpoint gives exactly $2^Lu$. Taking large $L$ makes both sources positive. Thus even for $k\ge24$, when neither direct descent of the upper start nor a shortcut through the protected segment explains this merger, the common orbit can subsequently reach any prescribed positive ternary unit.
+
 ## First descent after the checkpoint for a typical power
 
 There is an exact finite counting law for what happens after an arbitrarily long prescribed prefix. Let $D_k(J)$ be the relative natural density, among exponents $a\ge1$ with $8^k\mid3^a+5$, of powers that have fallen below their start by time $3k+J$. Put $\lambda=\log_2 3$ and $H_k=k\log_2(9/8)$. For independent fair bits $e_1,\ldots,e_J$, set $X_0=0$ and $X_j=j-\lambda\sum_{v=1}^j e_v$. Then
