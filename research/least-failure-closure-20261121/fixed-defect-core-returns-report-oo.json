@@ -1,0 +1,215 @@
+{
+  "all_subsums_evaluated": 699904,
+  "canonical_segments": 664,
+  "checker_sha256": "016695a9eefe241a952fe25af1cfaa066518ee6c24d0e66ea9eb07fe205d9093",
+  "distinct_sample_sources": 144,
+  "fixed_pool_encoding_checks": 1992,
+  "largest_division_exponent": 10,
+  "largest_initial_extension_length": 5,
+  "largest_odd_segment_length": 1025,
+  "largest_terminal_extension_length": 6,
+  "literal_shortcut_edges_in_samples": 11849,
+  "long_run_family_controls": [
+    {
+      "defects": 2,
+      "odd_steps": 2,
+      "one_run_length": 0,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 2,
+      "one_run_length": 0,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 2,
+      "one_run_length": 0,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 3,
+      "one_run_length": 1,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 3,
+      "one_run_length": 1,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 3,
+      "one_run_length": 1,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 4,
+      "one_run_length": 2,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 4,
+      "one_run_length": 2,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 4,
+      "one_run_length": 2,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 9,
+      "one_run_length": 7,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 9,
+      "one_run_length": 7,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 9,
+      "one_run_length": 7,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 33,
+      "one_run_length": 31,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 33,
+      "one_run_length": 31,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 33,
+      "one_run_length": 31,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 129,
+      "one_run_length": 127,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 129,
+      "one_run_length": 127,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 129,
+      "one_run_length": 127,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 513,
+      "one_run_length": 511,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 513,
+      "one_run_length": 511,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 513,
+      "one_run_length": 511,
+      "t": 3
+    },
+    {
+      "defects": 2,
+      "odd_steps": 1025,
+      "one_run_length": 1023,
+      "t": 1
+    },
+    {
+      "defects": 2,
+      "odd_steps": 1025,
+      "one_run_length": 1023,
+      "t": 2
+    },
+    {
+      "defects": 2,
+      "odd_steps": 1025,
+      "one_run_length": 1023,
+      "t": 3
+    }
+  ],
+  "malformed_segments_rejected": [
+    "first edge valuation one",
+    "last edge valuation one",
+    "wrong ordinary endpoint",
+    "even source",
+    "zero exponent",
+    "empty segment"
+  ],
+  "outside_excursion_controls": [
+    {
+      "defects": 2,
+      "outside_vertices": 1,
+      "values": [
+        17,
+        13,
+        5
+      ]
+    }
+  ],
+  "prime_pools": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      2,
+      3,
+      7,
+      11
+    ]
+  ],
+  "proof_sha256": "2412c6bfdcb3eeb280079235c5f04656cff49feaf091ba5421147acd1e81ba64",
+  "scope": [
+    "Every signed subsum was checked on the finite displayed sample domains.",
+    "The general nondegeneracy ladder is proved in the note, not inferred from samples.",
+    "The S-unit theorem and the astronomical uniform count are external proof input, not executed checks.",
+    "The uniform count concerns canonical paths; extension multiplicities are only proved finite.",
+    "No source-independent height bound, complete exception list, or full Collatz proof is claimed."
+  ],
+  "small_domain_defect_counts": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "small_source_range": {
+    "maximum": 509,
+    "minimum": 1,
+    "step": 4
+  },
+  "status": "PASS: finite exact controls for FD1--FD3"
+}

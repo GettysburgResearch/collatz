@@ -1,0 +1,30 @@
+{
+  "H_values_per_prefix": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "distinct_gaps_within_those_prefixes": 406,
+  "inside_blocks": 1054,
+  "negative_controls": [
+    "17->13 needs the final outside vertex",
+    "53->5 needs a split despite both endpoint cores being one",
+    "17->13->5 has one outside vertex and two boundary edges",
+    "a repeated cycle is not a simple prefix",
+    "a pool omitting 3 does not preserve the core on exponent-one edges"
+  ],
+  "ordinary_sources": 26,
+  "prime_core_families": 4,
+  "scope": "Finite exact partition, incidence and run-clock controls. No external S-unit theorem, astronomical return bound, infinite-orbit asymptotic or unrestricted Collatz conclusion is computationally verified.",
+  "simple_prefix_partition_checks": 736,
+  "source_sha256": "7d3b811f6f2a30e67f437747f31b8cc11d6cf51dd2cb95a34f480ff716bb4c49",
+  "status": "PASS",
+  "trace_sha256": "23a7e367799913fe217570c3fa5db53690611bc6536f77c1cf6e86daa7a0e9c0",
+  "vertices_in_those_checks": 23968
+}

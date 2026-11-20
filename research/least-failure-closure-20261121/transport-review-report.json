@@ -1,0 +1,155 @@
+{
+  "accepted": 95,
+  "accepted_nonunit_sources": 30,
+  "accepted_unit_sources": 65,
+  "literal_prefix_controls": 8192,
+  "maximum_odd_prefix_length": 8,
+  "proof_sha256": "f2872fad5c04e3aba9219f4b54576ef438d2922d7dcad9b0a8423974c4d2c31b",
+  "review_checker_sha256": "875366e92c165b502c710005e64323467b65eece9024bdc095c65cd716f1c1bc",
+  "scope": [
+    "The literal oracle does not import the author checker.",
+    "These are finite controls; arbitrary exponents and lengths use the written proof.",
+    "Valid unresolved prefixes make no assertion of nonconvergence."
+  ],
+  "source7_pair": [
+    [
+      1,
+      11,
+      53
+    ],
+    [
+      2,
+      17,
+      80
+    ],
+    [
+      3,
+      26,
+      40
+    ],
+    [
+      4,
+      13,
+      20
+    ],
+    [
+      5,
+      20,
+      10
+    ],
+    [
+      6,
+      10,
+      5
+    ],
+    [
+      7,
+      5,
+      8
+    ],
+    [
+      8,
+      8,
+      4
+    ],
+    [
+      9,
+      4,
+      2
+    ],
+    [
+      10,
+      2,
+      1
+    ],
+    [
+      11,
+      1,
+      2
+    ],
+    [
+      12,
+      2,
+      1
+    ],
+    [
+      13,
+      1,
+      2
+    ]
+  ],
+  "source_limit": 2047,
+  "status": "PASS: finite independent controls for the pinned written review",
+  "universal_cylinder_coefficients": [
+    {
+      "final_numerator": [
+        64,
+        43,
+        81
+      ],
+      "modulus": 512,
+      "residue": 271,
+      "three_odd_states": [
+        [
+          407,
+          768
+        ],
+        [
+          611,
+          1152
+        ],
+        [
+          917,
+          1728
+        ]
+      ]
+    },
+    {
+      "final_numerator": [
+        16,
+        43,
+        81
+      ],
+      "modulus": 256,
+      "residue": 135,
+      "three_odd_states": [
+        [
+          203,
+          384
+        ],
+        [
+          305,
+          576
+        ],
+        [
+          229,
+          432
+        ]
+      ]
+    },
+    {
+      "final_numerator": [
+        16,
+        7,
+        81
+      ],
+      "modulus": 1024,
+      "residue": 87,
+      "three_odd_states": [
+        [
+          131,
+          1536
+        ],
+        [
+          197,
+          2304
+        ],
+        [
+          37,
+          432
+        ]
+      ]
+    }
+  ],
+  "unresolved": 8097
+}

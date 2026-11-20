@@ -1,0 +1,196 @@
+{
+  "actual_paths": 1128,
+  "all_one_family_controls": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      3
+    ]
+  ],
+  "all_one_paths": 175,
+  "checker_sha256": "c36e3180590d4cfd6215a43417c9da712ae594700527421c283df961fd3a1593",
+  "defect_paths": 953,
+  "fixed_pool_vector_checks": 3384,
+  "largest_actual_division_exponent": 512,
+  "literal_shortcut_edges": 2943,
+  "malformed_paths_rejected": [
+    "even vertex",
+    "zero gap",
+    "wrong endpoint",
+    "nonpositive vertex",
+    "wrong path length"
+  ],
+  "negative_containing_subsums_evaluated": 143820,
+  "ordinary_sources": 141,
+  "outside_excursion_controls": [
+    {
+      "odd_steps": 2,
+      "outside_length": 1,
+      "values": [
+        17,
+        13,
+        5
+      ]
+    }
+  ],
+  "prefix_lengths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "prime_pools": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      2,
+      3,
+      7,
+      11
+    ]
+  ],
+  "proof_sha256": "a1f939725bb3ffc333255fb57cafa8e95ed8dace8155650b5a608ef34ba20d5b",
+  "scope": [
+    "All subsums containing the sole negative term were enumerated on the displayed finite domains.",
+    "Subsets of positive terms are handled by explicit positivity checks.",
+    "The infinite nondegeneracy classification is proved in the note, not inferred from the samples.",
+    "The S-unit theorem and the astronomical count bound are not computationally verified.",
+    "No height bound, complete exception enumeration, or full Collatz conclusion is claimed."
+  ],
+  "status": "PASS: finite exact controls for RU1--RU3",
+  "strictly_positive_terms_checked": 6204
+}
