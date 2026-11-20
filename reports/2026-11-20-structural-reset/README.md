@@ -5,6 +5,15 @@ The scientific entrance is
 Collatz remains unresolved. This is an exploratory branch with narrowly
 reviewed structural results, not a promotion to the accepted claim registry.
 
+Published as [draft PR154](https://github.com/GettysburgResearch/collatz/pull/154),
+branch `research/structural-reset-20261120`. The scientific content commit is
+[`cdb9a9197dcf7578e03d551219b3299f9f295ecb`](https://github.com/GettysburgResearch/collatz/commit/cdb9a9197dcf7578e03d551219b3299f9f295ecb),
+tree `a365c185ef72da4ec10923e97ed056fed4b49699`. The subsequent publication
+commit adds execution receipts and this source mapping without changing
+the research proofs or checkers. The final remote head and its separate
+clean-checkout verification are recorded in the PR description after
+read-back.
+
 ## Frozen baseline and work selected
 
 The publication branch starts from current main
@@ -45,6 +54,19 @@ Reviews are mathematical reconstructions by separate agents, not formal
 proof-assistant builds or human review. Their verdicts apply to exact
 file bytes and printed hypotheses. The old author-stage labels are left
 in place beside the separately recorded narrow verdicts.
+
+The complete commit-qualified review addresses are:
+
+| PR and scientific commit | Path | Narrow claim scope |
+|---|---|---|
+| PR154, `cdb9a9197dcf7578e03d551219b3299f9f295ecb` | `research/structural-reset-20261120/adelic/PRIME_HEIGHT_ESCAPE.md` | ADEL-001 through ADEL-007, reviewed at SHA-256 `3050ec6438faced2ed9bb45751e0299eb5d96778a4d0a064a8c8f7519e6868e3`. |
+| PR154, `cdb9a9197dcf7578e03d551219b3299f9f295ecb` | `research/structural-reset-20261120/component/PROOF.md` | CR-001 and CR-002, reviewed at SHA-256 `0a7d555cfa52a1b8d0de147ff2ebdf6e33e5a51d6a2a39500986ef6c206a7985`. |
+| PR154, `cdb9a9197dcf7578e03d551219b3299f9f295ecb` | `research/structural-reset-20261120/component/REDUCED_LAWS.md` | Smaller sufficient identity system, reviewed at SHA-256 `69ef4a4f56862fac521c6f6e7fe001b885929a7971503c0d4472d7767eb530fa`. |
+| PR154, `cdb9a9197dcf7578e03d551219b3299f9f295ecb` | `research/structural-reset-20261120/capacity/PAIR_COUPLING.md` | CP-001 through CP-005, reviewed at SHA-256 `428020612e96c3fffed495f605214ca88db8050b164954304f8bcf815fe353b9`. |
+
+The in-packet review documents are present at that same scientific commit.
+This mapping supplies commit addresses for their earlier precommit hash
+reviews; it does not transfer verdicts to altered mathematical bytes.
 
 ## Closing attempts and non-circularity
 

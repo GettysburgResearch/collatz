@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "commit": "cdb9a9197dcf7578e03d551219b3299f9f295ecb",
+  "tree": "a365c185ef72da4ec10923e97ed056fed4b49699",
+  "checkout": "/workspace/scratch/6c37546fb87e/collatz-review",
+  "scope": "Actual root executions at the clean published scientific commit. Repository integrity, exact arithmetic and written mathematical review remain separate evidence.",
+  "executions": [
+    {
+      "kind": "prime_height",
+      "command": "python -X utf8 -B research/structural-reset-20261120/check_prime_height.py",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.30690925,
+      "output": "{\n  \"adaptive_prime_pool\": [\n    3,\n    5,\n    7,\n    11,\n    13,\n    17,\n    19,\n    31,\n    127\n  ],\n  \"counts\": {\n    \"affine_pairs\": 4560,\n    \"finite_history_budgets\": 1440,\n    \"local_budgets\": 5700,\n    \"predecessor_controls\": 9\n  },\n  \"largest_actual_division_exponent\": 2048,\n  \"not_claimed\": [\n    \"Collatz proof\",\n    \"all prime sets tested\",\n    \"formal verification\",\n    \"any escaping orbit observed\",\n    \"any nontrivial positive cycle excluded\"\n  ],\n  \"pair_gap_at_most\": 8,\n  \"scope\": \"finite exact arithmetic regressions; universal proofs are written separately\",\n  \"seed_count\": 20,\n  \"status\": \"PASS\",\n  \"transitions_per_seed\": 32\n}\n"
+    },
+    {
+      "kind": "prime_height_optimized",
+      "command": "python -O -X utf8 -B research/structural-reset-20261120/check_prime_height.py",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.397156448,
+      "output": "{\n  \"adaptive_prime_pool\": [\n    3,\n    5,\n    7,\n    11,\n    13,\n    17,\n    19,\n    31,\n    127\n  ],\n  \"counts\": {\n    \"affine_pairs\": 4560,\n    \"finite_history_budgets\": 1440,\n    \"local_budgets\": 5700,\n    \"predecessor_controls\": 9\n  },\n  \"largest_actual_division_exponent\": 2048,\n  \"not_claimed\": [\n    \"Collatz proof\",\n    \"all prime sets tested\",\n    \"formal verification\",\n    \"any escaping orbit observed\",\n    \"any nontrivial positive cycle excluded\"\n  ],\n  \"pair_gap_at_most\": 8,\n  \"scope\": \"finite exact arithmetic regressions; universal proofs are written separately\",\n  \"seed_count\": 20,\n  \"status\": \"PASS\",\n  \"transitions_per_seed\": 32\n}\n"
+    },
+    {
+      "kind": "component",
+      "command": "python -X utf8 -B research/structural-reset-20261120/component/check_component_rigidity.py",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.000033609,
+      "output": "{\n  \"status\": \"PASS\",\n  \"claim\": \"CR-002 conditional arithmetic rigidity\",\n  \"symbolic_residue_cells\": 480,\n  \"ordinary_input_coverage\": \"Every n>1; unrestricted positive affine lifts\",\n  \"maximum_primitive_law_applications_per_reduction\": 9,\n  \"strict_descent_and_uniform_bound\": true,\n  \"branch_cell_counts\": {\n    \"factor_2\": 240,\n    \"factor_3\": 80,\n    \"factor_5\": 32,\n    \"four_mod_five\": 8,\n    \"inverse_fifteen\": 4,\n    \"last_even\": 2,\n    \"last_one_mod_four\": 1,\n    \"last_three_mod_four\": 1,\n    \"one_mod_five\": 8,\n    \"one_mod_four\": 64,\n    \"seven_mod_eight\": 32,\n    \"three_mod_five\": 8\n  },\n  \"primitive_law_counts\": {\n    \"A2\": 510,\n    \"A3\": 80,\n    \"A5\": 57,\n    \"B\": 121,\n    \"C\": 49,\n    \"D\": 4\n  },\n  \"proves_restricted_merger_hypothesis_E\": false,\n  \"proves_unconditional_Collatz\": false\n}\n"
+    },
+    {
+      "kind": "component_optimized_rejection",
+      "command": "python -O -X utf8 -B research/structural-reset-20261120/component/check_component_rigidity.py",
+      "expected_exit_code": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.000035863,
+      "output": "Run without -O: certificate checks require assertions.\n"
+    }
+  ],
+  "prime_height_normal_optimized_outputs_identical": true,
+  "all_expected_results_observed": true
+}
