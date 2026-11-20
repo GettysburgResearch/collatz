@@ -19,11 +19,18 @@
       "file": "check_r_bypass.py",
       "normal_optimized_identical": true,
       "pass": true
+    },
+    {
+      "file": "check_source_zero_descent.py",
+      "normal_optimized_identical": true,
+      "pass": true
     }
   ],
-  "finished_utc": "2026-11-20T23:22:42.092781+00:00",
+  "finished_utc": "2026-11-20T23:37:43.366464+00:00",
   "full_theorem": "OPEN",
   "integer_serialization": "Python arbitrary-precision integers; no floating conversion",
+  "local_base_head": "b1503b7079c4ee549efccec6bbc77dbddfafed93",
+  "published_base_head": "5a7c86c94a9e2a7a064c0c84faa697d00d1c4d1b",
   "records": [
     {
       "command": [
@@ -82,7 +89,7 @@
         "status": "PASS"
       },
       "stderr": "",
-      "wall_time_seconds": 0.09312127900193445
+      "wall_time_seconds": 0.13068452700099442
     },
     {
       "command": [
@@ -142,7 +149,7 @@
         "status": "PASS"
       },
       "stderr": "",
-      "wall_time_seconds": 0.13809033000143245
+      "wall_time_seconds": 0.19219420200170134
     },
     {
       "command": [
@@ -171,7 +178,7 @@
         "status": "PASS"
       },
       "stderr": "",
-      "wall_time_seconds": 0.03298024399919086
+      "wall_time_seconds": 0.042186597998806974
     },
     {
       "command": [
@@ -201,7 +208,7 @@
         "status": "PASS"
       },
       "stderr": "",
-      "wall_time_seconds": 0.08617365999816684
+      "wall_time_seconds": 0.11645761099862284
     },
     {
       "command": [
@@ -247,7 +254,7 @@
         "unit_height": "213597/23"
       },
       "stderr": "",
-      "wall_time_seconds": 0.030914570001186803
+      "wall_time_seconds": 0.05190318200038746
     },
     {
       "command": [
@@ -294,7 +301,7 @@
         "unit_height": "213597/23"
       },
       "stderr": "",
-      "wall_time_seconds": 0.1409847520008043
+      "wall_time_seconds": 0.13825449099749676
     },
     {
       "command": [
@@ -331,7 +338,7 @@
         "universal_affine_cells": 27
       },
       "stderr": "",
-      "wall_time_seconds": 0.21170158200038713
+      "wall_time_seconds": 0.21181222399900435
     },
     {
       "command": [
@@ -369,11 +376,141 @@
         "universal_affine_cells": 27
       },
       "stderr": "",
-      "wall_time_seconds": 0.35779965500114486
+      "wall_time_seconds": 0.3882608500025526
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "research/witness-global-closure-20261121/check_source_zero_descent.py"
+      ],
+      "exit_code": 0,
+      "file": "check_source_zero_descent.py",
+      "optimized": false,
+      "report": {
+        "all_rank_two_exponents": "UNRESOLVED",
+        "complete_source_tuple_reconstructions": 16,
+        "complete_target_tuple_reconstructions": 16,
+        "empty_inherited_tail_fixtures": 2,
+        "evidence_limit": "Exact affine certificates, arithmetic congruences, and stated reconstruction fixtures; no universal R coverage or formal verification.",
+        "finite_exact_reference_paths": 4,
+        "full_R": "UNRESOLVED",
+        "huge_source_only_fixtures": [
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 246020,
+            "last_source_exponent": 246004,
+            "source_bit_length": 246006,
+            "source_first_exponent": 5,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          },
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 295543,
+            "last_source_exponent": 295526,
+            "source_bit_length": 295529,
+            "source_first_exponent": 6,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          }
+        ],
+        "last_valuation_normalizations": 4,
+        "malformed_or_unsupported_inputs_rejected": 10,
+        "observed_last_valuation_corrections": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "partial_affine_divisions_checked": 24,
+        "small_progression_fixtures": 4,
+        "status": "PASS",
+        "universal_ordinary_prefix_schemas": 4
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.1369259390012303
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "research/witness-global-closure-20261121/check_source_zero_descent.py"
+      ],
+      "exit_code": 0,
+      "file": "check_source_zero_descent.py",
+      "optimized": true,
+      "report": {
+        "all_rank_two_exponents": "UNRESOLVED",
+        "complete_source_tuple_reconstructions": 16,
+        "complete_target_tuple_reconstructions": 16,
+        "empty_inherited_tail_fixtures": 2,
+        "evidence_limit": "Exact affine certificates, arithmetic congruences, and stated reconstruction fixtures; no universal R coverage or formal verification.",
+        "finite_exact_reference_paths": 4,
+        "full_R": "UNRESOLVED",
+        "huge_source_only_fixtures": [
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 246020,
+            "last_source_exponent": 246004,
+            "source_bit_length": 246006,
+            "source_first_exponent": 5,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          },
+          {
+            "child_odd_length": 9,
+            "child_total_exponent": 295543,
+            "last_source_exponent": 295526,
+            "source_bit_length": 295529,
+            "source_first_exponent": 6,
+            "source_odd_length": 2,
+            "target_orbit": "NOT_ATTEMPTED"
+          }
+        ],
+        "last_valuation_normalizations": 4,
+        "malformed_or_unsupported_inputs_rejected": 10,
+        "observed_last_valuation_corrections": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "partial_affine_divisions_checked": 24,
+        "small_progression_fixtures": 4,
+        "status": "PASS",
+        "universal_ordinary_prefix_schemas": 4
+      },
+      "stderr": "",
+      "wall_time_seconds": 0.165738320996752
     }
   ],
   "schema": "witness-global-closure-replay-v1",
-  "source_base_head": "6fa6b429870a9cd53cde0fc77ad64a3c3956199f",
-  "started_utc": "2026-11-20T23:22:41.731077+00:00",
+  "started_utc": "2026-11-20T23:37:42.973738+00:00",
   "status": "PASS"
 }

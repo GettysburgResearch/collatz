@@ -162,6 +162,43 @@ both the integer parameter and the supplied source rank decrease in
 this family. Its residue classes have total relative density `1/384`;
 they overlap the finite artifact and are not added to its density.
 
+## A further descent that permits a longer child witness
+
+The subsequent [source-zero construction](SOURCE_ZERO_DESCENT.md) gives
+another exact direct-`R` reduction:
+
+\[
+\boxed{R(m)\iff R\!\left(\frac{2048m-277}{2187}\right)
+\quad\text{when }m\equiv50063\pmod{69984}.}
+\tag{6}
+\]
+
+Writing `m=69984u+50063`, the child is
+`p=65536u+46881`, so `0<p<m` for every `u>=0`.
+A supplied parent source word converts by
+`(a,tail) -> (1,2,1,2,3,1,3,a-2,tail)`, where `a>=5` is forced.
+A returned child target word converts by
+`(2,1,1,1,1,2,2,1,1,1,c,tail) -> (1,1,2,c-2,tail)`, where `c>=3`
+is forced. The proof matches the actual positive integer endpoints and
+includes their exact remaining halvings; it does not assume that a
+partially divided common endpoint is already odd.
+
+The known child source witness is **seven odd steps longer**, with total
+exponent increased by 11. A returned child target witness reconstructs
+the parent target by removing seven steps and 11 exponent units. The
+decreasing integer `m` justifies this recursion even though source rank
+increases. Every prefix guard holds throughout the displayed infinite
+cell, and arbitrary terminal padding is preserved.
+
+In particular this reaches parts of both previously uncovered rank-two
+families: for first exponent 5 and `b=88+162j`, it applies exactly when
+`j=1518 mod2187`, equivalently `b=246004 mod354294`; for first exponent
+6 and `b=38+162j`, it applies when `j=1824 mod2187`, equivalently
+`b=295526 mod354294`. Complete source witnesses at those enormous
+exponents are reconstructed directly from the two supplied letters,
+without attempting their target orbits. The other residue classes remain
+open under this rule.
+
 ## Latest-source audit and the remaining statement
 
 [LATEST_SOURCE_REVIEW.md](LATEST_SOURCE_REVIEW.md) records the further
@@ -197,16 +234,18 @@ obligation; all the present constructions already permit them.
 | [DIRECT_R_WORDS.md](DIRECT_R_WORDS.md) | Complete first-letter normal forms and two unbounded word rewrites. |
 | [LEAST_R_FAILURE.md](LEAST_R_FAILURE.md) | Least-failure height, first-letter and rank exclusions. |
 | [R_BYPASS.md](R_BYPASS.md) | Partial affine descent atlas and unbounded conditional rank-decreasing family. |
+| [SOURCE_ZERO_DESCENT.md](SOURCE_ZERO_DESCENT.md) | Strict direct-R parameter contraction with a longer child source witness. |
 | [POSITIVE_RENEWAL.md](POSITIVE_RENEWAL.md) | Exact positive-column norm lower bound, with the nonempty-row qualification. |
 | [LATEST_SOURCE_REVIEW.md](LATEST_SOURCE_REVIEW.md) | Frozen newest-source audit and interfaces actually used. |
 
-Run the four independent standard-library replays from the repository root:
+Run the five standard-library replays from the repository root:
 
 ```sh
 python -B research/witness-global-closure-20261121/check_reverse_cover.py
 python -B research/witness-global-closure-20261121/check_direct_r_words.py
 python -B research/witness-global-closure-20261121/check_least_r_failure.py
 python -B research/witness-global-closure-20261121/check_r_bypass.py
+python -B research/witness-global-closure-20261121/check_source_zero_descent.py
 ```
 
 Repeat each command with `-O`. Explicit checks remain active with assertions

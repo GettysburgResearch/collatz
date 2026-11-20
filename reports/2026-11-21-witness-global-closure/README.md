@@ -18,7 +18,7 @@ this checkpoint.
 
 [artifact-manifest.json](artifact-manifest.json) records the SHA-256 of
 every file in the scientific packet. [replay-results.json](replay-results.json)
-records the actual eight replay commands, exit codes, output JSON,
+records the actual ten replay commands, exit codes, output JSON,
 timestamps and equality between normal and optimized execution. The
 replays are run with bytecode generation disabled and do not mutate
 their scientific inputs.
@@ -126,6 +126,54 @@ reconstructions, including 54 padded-source cases; 34 missing-child
 returns marked `UNRESOLVED`; 15 rejected invalid controls; and four
 additional padded ladder reconstructions. The root reran those commands
 and independently recomputed the first-letter fractions.
+
+### SZD-001–004: the further source-zero descent
+
+After publication of the first continuation at
+`5a7c86c94a9e2a7a064c0c84faa697d00d1c4d1b`, the root proposed a source-zero
+matching construction allowing the child source witness to grow while
+its ordinary parameter decreases. The symbolic agent found and proved
+the contraction `p=(2048m-277)/2187` on an initial progression. The
+algebra reviewer independently reconstructed all four ordinary paths,
+then doubled the binary domain by retaining possibly even partial
+endpoints and absorbing their exact remaining halvings. This strengthening
+was collaborative development, followed by independent reconstruction.
+
+The final cell is `m=69984u+50063`, `p=65536u+46881`, `u>=0`. The root,
+symbolic agent and algebra reviewer checked the exact source and target
+identities, strict decrease `m-p=4448u+3182`, the variable final valuations,
+both directions of complete-witness splicing and the differences of seven
+odd steps and eleven exponent units. Empty inherited tails and arbitrary
+terminal padding are allowed. The full source-to-child transfer retains
+every letter of the supplied tail.
+
+The root and algebra reviewer independently checked both complete
+rank-two exponent progressions, using the exact order of 2 modulo
+`3^12`: `a=5, b=246004 mod354294`, and
+`a=6, b=295526 mod354294`. These are restricted subfamilies, not complete
+coverage of either first-letter case.
+
+Verdict: **VERIFIED for SZD-001–004 on the stated ordinary progression**.
+The exact reviewed identities are:
+
+| File | SHA-256 |
+|---|---|
+| `SOURCE_ZERO_DESCENT.md` | `34dd2294996192279f894fa35d29610773e31a762c272d7da689f88af7d3813c` |
+| `check_source_zero_descent.py` | `9aaa78707aa44ab5caad92b1a52155374b0fda14f26ca208eb999945026dbc3b` |
+
+The root read both full files and executed the checker normally and with
+`-O`; both returned identical PASS JSON. The checks include four universal
+prefix schemas, 24 partial affine divisions, four exact final valuation
+normalizations, 16 source and 16 target tuple reconstructions, two
+constructed empty-tail fixtures and ten rejection controls. Two additional
+source-only fixtures inherit witnesses at last exponents 246004 and
+295526 directly from their supplied two-letter words. Neither huge target
+orbit was attempted or certified by that test.
+
+The child progression is outside the previously retained 27-cell bypass
+atlas, as an independent CRT compatibility check confirms. The new rule
+is therefore kept as a conditional descent. It does not assert that a
+known dispatcher already solves every child.
 
 ## Bounded attempts on the remaining rank-two families
 

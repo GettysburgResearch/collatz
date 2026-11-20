@@ -160,6 +160,13 @@ also require a separate exclusion of nontrivial cycles for full
 convergence. Here “nonperiodic” must mean not eventually periodic when
 no-repetition reasoning is used.
 
+Its subsequent head `6cb9bfdc828f91576066b0e4a099d47d8144e915` was also
+checked. The only changes are the concurrent-source comparison and two
+report indexes; its mathematical files are unchanged. The root read the
+complete comparison. It identifies exact overlap between the three
+five-return catalogs and realizes two restricted cells of PR168's
+separate source-zero grammar. It does not give a complete selector.
+
 ## 5. What this review changes in the current attempt
 
 The full reverse-tripling criterion is a cleaner target than separately
@@ -173,7 +180,14 @@ The latest source results do not eliminate the remaining words in
 [LEAST_R_FAILURE.md](LEAST_R_FAILURE.md). In particular the rank-two
 first-letter-5 and first-letter-6 Mersenne families were subjected to
 separate bounded whole-affine searches with exact guards; neither search
-returned a certificate. The [execution record](../../reports/2026-11-21-witness-global-closure/README.md)
+returned a certificate on its entire searched family. A later constructive
+use of the source-zero matching equations did yield the restricted
+direct-R contraction in [SOURCE_ZERO_DESCENT.md](SOURCE_ZERO_DESCENT.md).
+It deliberately permits a longer child witness while decreasing the
+ordinary integer. Its exact ternary refinement covers one class in each
+of the first-letter-5 and first-letter-6 rank-two families, not either
+full family. The
+[execution record](../../reports/2026-11-21-witness-global-closure/README.md)
 states the budgets and outcomes. Search exhaustion is not nonexistence
 of an unbounded or differently structured transformation.
 
