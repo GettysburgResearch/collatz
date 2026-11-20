@@ -1331,4 +1331,388 @@ theorem collatz_iff_eventual_five_ray :
     rw [he]
     exact ⟨0, 0, rfl⟩
 
+
+private theorem triple_adjacent_ray (r t : ℕ) (he : orbit r 4 = orbit (r + 1) 4)
+    (ho : odds r 4 = odds (r + 1) 4) : Meets (r + 16 * t) ((r + 1) + 16 * t) := by
+  have hlo := high_bit r 4 t
+  have hhi := high_bit (r + 1) 4 t
+  norm_num only [Nat.reducePow] at hlo hhi
+  rw [he, ho] at hlo
+  exact ⟨4, 4, hlo.trans hhi.symm⟩
+
+private theorem triple_residue (h : ℕ) (he : h % 2 ≠ 0) :
+    ∃ j : ℕ, (9 * (3 ^ j * h)) % 16 = 3 ∨ (9 * (3 ^ j * h)) % 16 = 5 := by
+  rcases (show h%16=1 ∨ h%16=3 ∨ h%16=5 ∨ h%16=7 ∨ h%16=9 ∨ h%16=11 ∨ h%16=13 ∨ h%16=15 by omega)
+    with r | r | r | r | r | r | r | r
+  · exact ⟨3, Or.inl (by omega)⟩
+  · exact ⟨2, Or.inl (by omega)⟩
+  · exact ⟨2, Or.inr (by omega)⟩
+  · exact ⟨3, Or.inr (by omega)⟩
+  · exact ⟨1, Or.inl (by omega)⟩
+  · exact ⟨0, Or.inl (by omega)⟩
+  · exact ⟨0, Or.inr (by omega)⟩
+  · exact ⟨1, Or.inr (by omega)⟩
+
+/-- Checking the single dilation by three on every positive source suffices.
+A fixed finite exceptional set is immaterial, since both arms admit the same
+initial binary dilation. -/
+theorem collatz_iff_eventual_three_ray :
+    (∀ n : ℕ, 0 < n → ∃ j, orbit n j = 1) ↔
+    (∃ N : ℕ, ∀ x : ℕ, N ≤ x → Meets x (3 * x)) := by
+  constructor
+  · intro hall
+    refine ⟨1, fun x hx => ?_⟩
+    exact meets_trans ((meets_one_iff x).2 (hall x hx))
+      (meets_symm ((meets_one_iff _).2 (hall _ (by omega))))
+  rintro ⟨N, hN⟩
+  let f : ℕ → Prop := fun x => Meets x 1
+  have lifts {x y : ℕ} (h : Meets x y) : f x = f y :=
+    propext ⟨fun hx => meets_trans (meets_symm h) hx, fun hy => meets_trans h hy⟩
+  have hstep (x : ℕ) (_ : 0 < x) : f (step x) = f x := (lifts (meets_step x)).symm
+  have h2 (x : ℕ) (_ : 0 < x) : f (2 * x) = f x := (lifts (meets_double x)).symm
+  have h3 (x : ℕ) (hx : 0 < x) : f (3 * x) = f x := by
+    have hp (n : ℕ) : n < 2 ^ n := by
+      induction n with
+      | zero => decide
+      | succ n ih => rw [pow_succ]; omega
+    have hbig : N ≤ 2 ^ N * x := by
+      have := Nat.mul_le_mul_left (2 ^ N) (show 1 ≤ x by omega)
+      have := hp N
+      omega
+    have res := (lifts (hN _ hbig)).symm
+    have scale (y j : ℕ) : f (2 ^ j * y) = f y :=
+      lifts (show Meets (2 ^ j * y) y from ⟨j, 0, strip_twos y j⟩)
+    rwa [show 3 * (2 ^ N * x) = 2 ^ N * (3 * x) by ring, scale, scale] at res
+  have h4 (x : ℕ) (hx : 0 < x) : f (4 * x) = f x := by
+    rw [show 4 * x = 2 * (2 * x) by ring, h2 _ (by omega), h2 _ hx]
+  have h8 (x : ℕ) (hx : 0 < x) : f (8 * x) = f x := by
+    rw [show 8 * x = 2 * (4 * x) by ring, h2 _ (by omega), h4 _ hx]
+  have odd (x : ℕ) (hx : 0 < x) (ho : x % 2 = 1) : f (3 * x + 1) = f x := by
+    have he : 2 * step x = 3 * x + 1 := by simp [step, ho]; omega
+    rw [← he, h2 _ (by omega), hstep _ hx]
+  have g23 (h : ℕ) (hh : 0 < h) : f (2 * h - 1) = f (3 * h - 1) := by
+    calc
+      _ = f (3 * (2 * h - 1) + 1) := (odd _ (by omega) (by omega)).symm
+      _ = f (2 * (3 * h - 1)) := by congr 1; omega
+      _ = _ := h2 _ (by omega)
+  have g89 (h : ℕ) (hh : 0 < h) : f (8 * h - 1) = f (9 * h - 1) := by
+    calc
+      _ = f (3 * (8 * h - 1)) := (h3 _ (by omega)).symm
+      _ = f (3 * (3 * (8 * h - 1)) + 1) := (odd _ (by omega) (by omega)).symm
+      _ = f (8 * (9 * h - 1)) := by congr 1; omega
+      _ = _ := h8 _ (by omega)
+  have g48 (h : ℕ) (hh : 0 < h) : f (4 * h - 1) = f (8 * h - 1) := by
+    calc
+      _ = f (6 * h - 1) := by simpa only [← Nat.mul_assoc] using g23 (2 * h) (by omega)
+      _ = f (9 * h - 1) := by simpa only [← Nat.mul_assoc] using g23 (3 * h) (by omega)
+      _ = _ := (g89 h hh).symm
+  have g49 (h : ℕ) (hh : 0 < h) : f (4 * h - 1) = f (9 * h - 1) := (g48 h hh).trans (g89 h hh)
+  have shift (h i : ℕ) (hh : 0 < h) :
+      f (4 * (3 ^ i * h) - 1) = f (4 * h - 1) ∧ f (3 ^ i * h) = f h := by
+    induction i with
+    | zero => simp
+    | succ i ih =>
+      let z := 3 ^ i * h
+      have hz : 0 < z := by dsimp [z]; positivity
+      have hg : f (4 * z - 1) = f (12 * z - 1) := by
+        calc
+          _ = f (8 * z - 1) := g48 z hz
+          _ = _ := by simpa only [← Nat.mul_assoc] using g23 (4 * z) (by omega)
+      rw [show 3 ^ (i + 1) * h = 3 * z by dsimp [z]; ring]
+      exact ⟨(by simpa only [← Nat.mul_assoc] using hg.symm : f (4 * (3 * z) - 1) = f (4 * z - 1)).trans ih.1,
+        (h3 z hz).trans ih.2⟩
+  have adjacent_cell (y : ℕ) (hcell : y % 16 = 3 ∨ y % 16 = 5) : f (y - 1) = f y := by
+    rcases hcell with h | h
+    · have hm := triple_adjacent_ray 2 (y / 16) (by decide) (by decide)
+      rw [show 2 + 16 * (y / 16) = y - 1 by omega, show 2+1+16*(y/16) = y by omega] at hm
+      exact lifts hm
+    · have hm := triple_adjacent_ray 4 (y / 16) (by decide) (by decide)
+      rw [show 4 + 16 * (y / 16) = y - 1 by omega, show 4+1+16*(y/16) = y by omega] at hm
+      exact lifts hm
+  have adjacent (h : ℕ) (hh : 0 < h) : f (4 * h - 1) = f (4 * h) := by
+    induction h using Nat.strong_induction_on with
+    | h h ih =>
+      by_cases he : h % 2 = 0
+      · let z := h / 2
+        have hz : h = 2 * z := by dsimp [z]; omega
+        have hi := ih z (by omega) (by omega)
+        have h8z : 4 * h = 8 * z := by omega
+        rw [h8z, ← g48 z (by omega), hi, h8 _ (by omega), h4 _ (by omega)]
+      have hj := triple_residue h he
+      obtain ⟨j, hcell⟩ := hj
+      let z := 3 ^ j * h
+      have hz : 0 < z := by dsimp [z]; positivity
+      obtain ⟨hs, hf⟩ := shift h j hh
+      calc
+        f (4 * h - 1) = f (4 * z - 1) := hs.symm
+        _ = f (9 * z - 1) := g49 z hz
+        _ = f (9 * z) := adjacent_cell _ hcell
+        _ = f z := by rw [show 9 * z = 3 * (3 * z) by ring, h3 _ (by omega), h3 _ hz]
+        _ = f h := hf
+        _ = f (4 * h) := (h4 h hh).symm
+  have all (n : ℕ) (hn : 0 < n) : f n = f 1 := by
+    induction n using Nat.strong_induction_on with
+    | h n ih =>
+      by_cases h1 : n = 1
+      · rw [h1]
+      by_cases he : n % 2 = 0
+      · have hx : n = 2 * (n / 2) := by omega
+        exact (congrArg f hx).trans ((h2 _ (by omega)).trans (ih _ (by omega) (by omega)))
+      have ho : n % 2 = 1 := by omega
+      by_cases hm : n % 4 = 1
+      · let u := (3 * n + 1) / 4
+        have hu : 3 * n + 1 = 4 * u := by dsimp [u]; omega
+        calc
+          f n = f (3 * n + 1) := (odd _ hn ho).symm
+          _ = f u := by rw [hu, h4 _ (by omega)]
+          _ = f 1 := ih _ (by omega) (by omega)
+      let w := (n + 1) / 4
+      have hw : n + 1 = 4 * w := by dsimp [w]; omega
+      calc
+        f n = f (4 * w - 1) := by congr 1; omega
+        _ = f (4 * w) := adjacent _ (by omega)
+        _ = f w := h4 _ (by omega)
+        _ = f 1 := ih _ (by omega) (by omega)
+  intro n hn
+  apply (meets_one_iff n).mp
+  change f n
+  rw [all n hn]
+  exact ⟨0, 0, rfl⟩
+
+theorem collatz_iff_three_ray :
+    (∀ n : ℕ, 0 < n → ∃ j, orbit n j = 1) ↔
+    (∀ x : ℕ, 0 < x → Meets x (3 * x)) := by
+  constructor
+  · intro hall x hx
+    exact meets_trans ((meets_one_iff x).2 (hall x hx))
+      (meets_symm ((meets_one_iff _).2 (hall _ (by omega))))
+  · intro hx
+    exact collatz_iff_eventual_three_ray.mpr ⟨1, fun x h => hx x h⟩
+
+/-- A failed multiplication by three at an odd positive input forces
+another failure, at a strictly larger odd input bounded by 27 times the first. -/
+theorem three_defect_successor {α : Type*} (f : ℕ → α)
+    (hs : ∀ n, f (step n) = f n) (x : ℕ) (hx : x % 2 = 1) (hbad : f x ≠ f (3 * x)) :
+    ∃ y : ℕ, x < y ∧ y ≤ 27 * x ∧ y % 2 = 1 ∧ f y ≠ f (3 * y) := by
+  classical
+  by_contra hnone
+  have good (y : ℕ) (hy : x < y) (hb : y ≤ 27 * x) (ho : y % 2 = 1) : f y = f (3 * y) := by
+    by_contra h
+    exact hnone ⟨y, hy, hb, ho, h⟩
+  have inv (n j : ℕ) : f (orbit n j) = f n := by
+    induction j with
+    | zero => rfl
+    | succ j ih => exact (hs _).trans ih
+  have h2 (n : ℕ) : f (2 * n) = f n := by
+    have h := hs (2 * n)
+    simpa [step] using h.symm
+  have h4 (n : ℕ) : f (4 * n) = f n := by
+    rw [show 4 * n = 2 * (2 * n) by ring, h2, h2]
+  have h8 (n : ℕ) : f (8 * n) = f n := by
+    rw [show 8 * n = 2 * (4 * n) by ring, h2, h4]
+  have odd (n : ℕ) (ho : n % 2 = 1) : f n = f (3 * n + 1) := by
+    have he : 2 * step n = 3 * n + 1 := by simp [step, ho]; omega
+    rw [← he, h2, hs]
+  have hx1 : 1 < x := by
+    have h13 := inv 3 5
+    have hv : orbit 3 5 = 1 := by decide
+    rw [hv] at h13
+    by_contra! h
+    have he : x = 1 := by omega
+    exact hbad (by simpa [he] using h13)
+  apply hbad
+  have J43 (u : ℕ) : f (4*u+1) = f (3*u+1) := by
+    calc
+      _ = f (3 * (4 * u + 1) + 1) := odd _ (by omega)
+      _ = f (4 * (3 * u + 1)) := by congr 1; ring
+      _ = _ := h4 _
+  by_cases hz3 : x % 3 = 0
+  · let s := x/3
+    have hx3 : x = 3*s := by dsimp [s]; omega
+    have join (a : ℕ) (hg : f (16*a+1) = f (3*(16*a+1))) :
+        f (9*a+1) = f (18*a+1) := by
+      have hb := high_bit 3 2 (12 * a)
+      have hv : orbit 3 2 = 8 ∧ odds 3 2 = 2 := by decide
+      rw [hv.1, hv.2] at hb
+      have hr := inv (3 + 2 ^ 2 * (12 * a)) 2
+      rw [hb] at hr
+      calc
+        _ = f (12*a+1) := by simpa only [← Nat.mul_assoc] using (J43 (3*a)).symm
+        _ = f (16*a+1) := by simpa only [← Nat.mul_assoc] using (J43 (4*a)).symm
+        _ = f (3*(16*a+1)) := hg
+        _ = f (8+3^2*(12*a)) := (congrArg f (by ring : 3*(16*a+1) = 3+2^2*(12*a))).trans hr.symm
+        _ = f (4*(27*a+2)) := by congr 1; ring
+        _ = f (27*a+2) := h4 _
+        _ = f (18*a+1) := by
+          have hh := odd (18*a+1) (by omega)
+          rw [show 3*(18*a+1)+1=2*(27*a+2) by ring, h2] at hh
+          exact hh.symm
+    have hA := join s (good _ (by omega) (by omega) (by omega))
+    have hB := join (2*s) (good _ (by omega) (by omega) (by omega))
+    have hC := J43 (9*s)
+    calc
+      f x = f (3*x+1) := odd x hx
+      _ = f (9*s+1) := by congr 1; omega
+      _ = f (18*s+1) := hA
+      _ = f (36*s+1) := by simpa only [← Nat.mul_assoc] using hB
+      _ = f (27*s+1) := by simpa only [← Nat.mul_assoc] using hC
+      _ = f (3*x) := by
+        have hh := odd (3*x) (by omega)
+        rw [show 3*(3*x)+1=27*s+1 by omega] at hh
+        exact hh.symm
+  have g23 (u : ℕ) (hu : 0 < u) : f (2*u-1) = f (3*u-1) := by
+    calc
+      _ = f (3*(2*u-1)+1) := odd _ (by omega)
+      _ = f (2*(3*u-1)) := by congr 1; omega
+      _ = _ := h2 _
+  have gp (u j : ℕ) (hu : 0 < u) : f (2^j*u-1) = f (3^j*u-1) := by
+    induction j generalizing u with
+    | zero => simp
+    | succ j ih =>
+      have hp : 0 < 2^j*u := by positivity
+      rw [show 2^(j+1)*u=2*(2^j*u) by ring, g23 _ hp,
+          show 3*(2^j*u)=2^j*(3*u) by ring, ih (3*u) (by omega), show 3^j*(3*u)=3^(j+1)*u by ring]
+  have start (M j : ℕ) (hz : 3 * ((M*x-1)/3) = M*x-1)
+      (ho : ((M*x-1)/3)%2=1) (hl : x < (M*x-1)/3) (hb : (M*x-1)/3 ≤ 27*x)
+      (hm : M = 2^j) : f x = f (3^j*x-1) := by
+    let z := (M*x-1)/3
+    have hmpos : 0 < M*x := by rw [hm]; positivity
+    have hodd := odd z ho
+    have scale (j : ℕ) : f (2^j*x) = f x :=
+      (inv (2^j*x) j).symm.trans (congrArg f (strip_twos x j))
+    calc
+      f x = f (M*x) := by rw [hm, scale]
+      _ = f z := by rw [hodd, hz]; congr 1; omega
+      _ = f (3*z) := good _ hl hb ho
+      _ = f (2^j*x-1) := by rw [hz, hm]
+      _ = _ := gp _ _ (by omega)
+  have hstart : f x = f (9*x-1) ∨ f x = f (27*x-1) := by
+    by_cases h : x%3 = 1
+    · exact Or.inl (start 4 2 (by omega) (by omega) (by omega) (by omega) (by decide))
+    · exact Or.inr (start 8 3 (by omega) (by omega) (by omega) (by omega) (by decide))
+  have bridge (Q : ℕ) (hq : 0 < Q) (hg : f (8*Q-1) = f (3*(8*Q-1))) :
+      f (9*Q-1) = f (27*Q-1) := by
+    have hodd := odd (3*(8*Q-1)) (by omega)
+    rw [show 3*(3*(8*Q-1))+1 = 8*(9*Q-1) by omega, h8] at hodd
+    exact (hg.trans hodd).symm.trans (gp Q 3 hq)
+  have A := bridge x (by omega) (good _ (by omega) (by omega) (by omega))
+  have B : f (27*x-1) = f (81*x-1) := by
+    simpa only [← Nat.mul_assoc] using bridge (3*x) (by omega) (good _ (by omega) (by omega) (by omega))
+  have S : f x = f (9*x-1) := hstart.elim id (fun h => h.trans A.symm)
+  have V : f (3*x) = f (9*x) := by
+    simpa only [← Nat.mul_assoc] using good (3*x) (by omega) (by omega) (by omega)
+  have W : f (9*x) = f (27*x) := by
+    simpa only [← Nat.mul_assoc] using good (9*x) (by omega) (by omega) (by omega)
+  have U : f (27*x) = f (81*x) := by
+    simpa only [← Nat.mul_assoc] using good (27*x) (by omega) (by omega) (by omega)
+  have pair (r h t : ℕ) (he : orbit r h = orbit (r+1) h) (ho : odds r h = odds (r+1) h) :
+      f (r+2^h*t) = f (r+1+2^h*t) := by
+    have h0 := high_bit r h t
+    have h1 := high_bit (r+1) h t
+    rw [he,ho] at h0
+    exact (inv _ h).symm.trans ((congrArg f (h0.trans h1.symm)).trans (inv _ h))
+  by_cases hxcell : x%16=1
+  · have alt := pair 5 5 (3*(x/16)) (by decide) (by decide)
+    rw [show 5+2^5*(3*(x/16))=6*x-1 by omega, show 5+1+2^5*(3*(x/16))=2*(3*x) by omega, h2] at alt
+    have exch := g23 (3*x) (by omega)
+    rw [show 3*(3*x)=9*x by ring, show 2*(3*x)=6*x by ring] at exch
+    exact S.trans (exch.symm.trans alt)
+  have cell (y : ℕ) (hc : y % 16 = 3 ∨ y % 8 = 5) : f (y-1) = f y := by
+    rcases hc with h|h
+    · have hres := pair 2 4 (y/16) (by decide) (by decide)
+      rwa [show 2+2^4*(y/16)=y-1 by omega, show 2+1+2^4*(y/16)=y by omega] at hres
+    · have hres := pair 4 3 (y/8) (by decide) (by decide)
+      rwa [show 4+2^3*(y/8)=y-1 by omega, show 4+1+2^3*(y/8)=y by omega] at hres
+  have options : (9*x%16=3 ∨ 9*x%8=5) ∨ (27*x%16=3 ∨ 27*x%8=5) ∨ (81*x%16=3 ∨ 81*x%8=5) := by
+    rcases (show x%16=3 ∨ x%16=5 ∨ x%16=7 ∨ x%16=9 ∨ x%16=11 ∨ x%16=13 ∨ x%16=15 by omega)
+      with h|h|h|h|h|h|h <;> omega
+  rcases options with h | h | h
+  · exact S.trans ((cell _ h).trans V.symm)
+  · exact (S.trans A).trans ((cell _ h).trans (V.trans W).symm)
+  · exact ((S.trans A).trans B).trans ((cell _ h).trans ((V.trans W).trans U).symm)
+
+/-- It suffices that the orbits of x and 3x meet for all sufficiently large
+odd x. -/
+theorem collatz_iff_eventual_odd_three_ray :
+    (∀ n : ℕ, 0 < n → ∃ j, orbit n j = 1) ↔
+    (∃ N : ℕ, ∀ x : ℕ, N ≤ x → x % 2 = 1 → Meets x (3*x)) := by
+  constructor
+  · intro all
+    exact ⟨1, fun x hx _ => collatz_iff_three_ray.mp all x hx⟩
+  rintro ⟨N, H⟩
+  apply collatz_iff_three_ray.mpr
+  have odd_good (x : ℕ) (hx : x % 2 = 1) : Meets x (3*x) := by
+    let f : ℕ → Prop := fun t => Meets t x
+    have lift {a b : ℕ} (hab : Meets a b) : f a = f b :=
+      propext ⟨fun ha => meets_trans (meets_symm hab) ha, fun hb => meets_trans hab hb⟩
+    have hs (n : ℕ) : f (step n) = f n := (lift (meets_step n)).symm
+    by_contra h
+    have d : f x ≠ f (3*x) := by
+      intro he
+      have hx0 : f x := ⟨0,0,rfl⟩
+      exact h (meets_symm (he ▸ hx0 : f (3*x)))
+    have climb (j : ℕ) : ∃ y : ℕ, x+j ≤ y ∧ y%2 = 1 ∧ f y ≠ f (3*y) := by
+      induction j with
+      | zero => exact ⟨x, by omega, hx, d⟩
+      | succ j ih =>
+        obtain ⟨y,hy,ho,hd⟩ := ih
+        obtain ⟨z,hz,_,hzodd,hdef⟩ := three_defect_successor f hs y ho hd
+        exact ⟨z, by omega, hzodd, hdef⟩
+    obtain ⟨y,hy,ho,hd⟩ := climb N
+    exact hd (lift (H y (by omega) ho))
+  intro n hn
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+    by_cases ho : n%2 = 1
+    · exact odd_good n ho
+    let t := n / 2
+    have he : n = 2*t := by dsimp [t]; omega
+    have ht := ih t (by omega) (by omega)
+    rw [he, show 3*(2*t) = 2*(3*t) by ring]
+    exact meets_trans (meets_symm (meets_double t)) (meets_trans ht (meets_double (3*t)))
+
+/-- A single defect puts an odd defect in every later multiplicative window. -/
+theorem three_defect_in_every_window {α : Type*} (f : ℕ → α)
+    (hs : ∀ n, f (step n) = f n) (x : ℕ) (ho : x%2=1) (hd : f x ≠ f (3*x))
+    (R : ℕ) (hR : x ≤ R) :
+    ∃ y : ℕ, R < y ∧ y ≤ 27*R ∧ y%2=1 ∧ f y ≠ f (3*y) := by
+  by_contra hnone
+  have climb (j : ℕ) : ∃ y : ℕ, x+j ≤ y ∧ y ≤ R ∧ y%2=1 ∧ f y ≠ f (3*y) := by
+    induction j with
+    | zero => exact ⟨x, by omega, hR, ho, hd⟩
+    | succ j ih =>
+      obtain ⟨y, hy, hyR, hyo, hyd⟩ := ih
+      obtain ⟨z, hz, hb, hzo, hzd⟩ := three_defect_successor f hs y hyo hyd
+      have hzR : z ≤ R := by
+        by_contra! hRz
+        exact hnone ⟨z,hRz,by omega,hzo,hzd⟩
+      exact ⟨z,by omega,hzR,hzo,hzd⟩
+  obtain ⟨_, hlow, hupp, _, _⟩ := climb (R+1)
+  omega
+
+/-- Arbitrarily far out, one clean multiplicative window of ratio 27 suffices. -/
+theorem collatz_iff_clean_three_windows :
+    (∀ n : ℕ, 0 < n → ∃ j, orbit n j = 1) ↔
+    (∀ X : ℕ, ∃ R : ℕ, X ≤ R ∧
+      ∀ y : ℕ, R < y → y ≤ 27*R → y%2=1 → Meets y (3*y)) := by
+  constructor
+  · intro all X
+    exact ⟨X, le_rfl, fun y hy _ _ => collatz_iff_three_ray.mp all y (by omega)⟩
+  intro H
+  apply collatz_iff_eventual_odd_three_ray.mpr
+  refine ⟨1, ?_⟩
+  intro x _ hxo
+  obtain ⟨R, hR, hgood⟩ := H x
+  let f : ℕ → Prop := fun n => Meets n x
+  have lift {a b : ℕ} (hab : Meets a b) : f a = f b :=
+    propext ⟨fun ha => meets_trans (meets_symm hab) ha, fun hb => meets_trans hab hb⟩
+  have hs (n : ℕ) : f (step n) = f n := (lift (meets_step n)).symm
+  by_contra h
+  have d : f x ≠ f (3*x) := by
+    intro he
+    have hxx : f x := ⟨0,0,rfl⟩
+    exact h (meets_symm (he ▸ hxx : f (3*x)))
+  obtain ⟨y,hy,hb,ho,hd⟩ := three_defect_in_every_window f hs x hxo d R hR
+  exact hd (lift (hgood y hy hb ho))
+
 end CollatzUpperBit
