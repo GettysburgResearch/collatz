@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "2 * 74^50 > 75^50": true,
+    "3125^10 < 108^10 * 2^49": true,
+    "3^30 < 2^49": true
+  },
+  "scope": "Exact scalar certificates for LOCAL_DISTORTION.md; all-path proof is written, not enumerated.",
+  "status": "PASS"
+}

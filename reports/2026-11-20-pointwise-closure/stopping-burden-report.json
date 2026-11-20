@@ -1,0 +1,58 @@
+{
+  "conditional_deadline_checks": 201,
+  "deadline_examples": [
+    {
+      "assumed_bound": 0,
+      "deadline": 55,
+      "n": 1,
+      "odd_first_hit": 0,
+      "path_score": 0
+    },
+    {
+      "assumed_bound": 0,
+      "deadline": 224,
+      "n": 5,
+      "odd_first_hit": 1,
+      "path_score": -12
+    },
+    {
+      "assumed_bound": 0,
+      "deadline": 258,
+      "n": 7,
+      "odd_first_hit": 5,
+      "path_score": -15
+    },
+    {
+      "assumed_bound": 0,
+      "deadline": 406,
+      "n": 31,
+      "odd_first_hit": 39,
+      "path_score": -23
+    },
+    {
+      "assumed_bound": 0,
+      "deadline": 518,
+      "n": 97,
+      "odd_first_hit": 43,
+      "path_score": -31
+    },
+    {
+      "assumed_bound": 0,
+      "deadline": 696,
+      "n": 601,
+      "odd_first_hit": 18,
+      "path_score": -46
+    }
+  ],
+  "direct_rational_product_checks": 257,
+  "exact_distortion_checks": 10000,
+  "independent_clock_comparisons": 10000,
+  "integer_limit": 30000,
+  "inverse_words_depth_at_most_7_gap_at_most_10": 7392,
+  "maximum_observed_first_hit_score": 0,
+  "maximum_observed_odd_first_hit": 113,
+  "positive_odd_unit_sources": 10000,
+  "scope": "Bounded exact arithmetic; no bound on W(1) is certified.",
+  "status": "PASS",
+  "unresolved": "Neither all-source W(1) finiteness nor universal convergence is tested or established."
+}

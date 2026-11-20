@@ -1,0 +1,31 @@
+{
+  "local_distortion_integer_certificates": {
+    "2 * 74**50 > 75**50": true,
+    "3**30 < 2**49": true,
+    "3125**10 < 108**10 * 2**49": true
+  },
+  "review_local_command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "reports/2026-11-20-pointwise-closure/review_local_arithmetic.py"
+  ],
+  "review_local_output_semantically_identical": true,
+  "review_local_returncode": 0,
+  "review_local_script_sha256": "58be067785d9e041d4bc4aba64ce277daeb5c8cd6178d2c0da3acb15f71351b2",
+  "review_local_stderr": "",
+  "review_local_stdout_sha256": "9e45861adcd842f5908159d7a382b502cee226788f2ef4959b8211e54322ccc2",
+  "review_sparse_command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "reports/2026-11-20-pointwise-closure/review_sparse_arithmetic.py"
+  ],
+  "review_sparse_output_semantically_identical": true,
+  "review_sparse_returncode": 0,
+  "review_sparse_script_sha256": "c2ed412fc0c5d21ddf5ba65aa0ffe96219f4636a70111f3e3a36e11caf06c168",
+  "review_sparse_stderr": "",
+  "review_sparse_stdout_sha256": "2413e8d34e60869026c7de0429a68e66c0b1decab24a640775974a97eb448e78"
+}

@@ -1,0 +1,38 @@
+{
+  "normal_and_optimized_identical": true,
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/pointwise-closure-20261120/check_sparse_returns.py"
+      ],
+      "duration_seconds": 0.935,
+      "interpreter": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "returncode": 0,
+      "started_at": "2026-11-20T18:20:29.462460+00:00",
+      "stderr": "",
+      "stdout_sha256": "e3a07ce6cba3d2bb22f7371f5a46ca4617465c902499427f8e676534bc0a3866"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-OO",
+        "-B",
+        "research/pointwise-closure-20261120/check_sparse_returns.py"
+      ],
+      "duration_seconds": 0.879,
+      "interpreter": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "returncode": 0,
+      "started_at": "2026-11-20T18:20:30.397272+00:00",
+      "stderr": "",
+      "stdout_sha256": "e3a07ce6cba3d2bb22f7371f5a46ca4617465c902499427f8e676534bc0a3866"
+    }
+  ],
+  "script": "research/pointwise-closure-20261120/check_sparse_returns.py",
+  "script_sha256": "0c7806208082ffbac729136ef3dfb77356183e943417f91ae4949a1aaeda25c7"
+}
