@@ -1,0 +1,123 @@
+{
+  "checkout": "/workspace/scratch/6c37546fb87e/collatz-review",
+  "checks": [
+    {
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/global-forcing-20261121/arithmetic/check_shifted_rank.py"
+      ],
+      "expected_report": "research/global-forcing-20261121/arithmetic/shifted-rank-report.json",
+      "expected_report_sha256": "3003ac47e06f29a0b71836884082cc6bdaff8e55107a6dc805e64a724570ec74",
+      "optimized": false,
+      "returncode": 0,
+      "seconds": 0.111935,
+      "stderr": "",
+      "stdout_sha256": "3003ac47e06f29a0b71836884082cc6bdaff8e55107a6dc805e64a724570ec74"
+    },
+    {
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/global-forcing-20261121/arithmetic/check_shifted_rank.py"
+      ],
+      "expected_report": "research/global-forcing-20261121/arithmetic/shifted-rank-report.json",
+      "expected_report_sha256": "3003ac47e06f29a0b71836884082cc6bdaff8e55107a6dc805e64a724570ec74",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 0.207797,
+      "stderr": "",
+      "stdout_sha256": "3003ac47e06f29a0b71836884082cc6bdaff8e55107a6dc805e64a724570ec74"
+    },
+    {
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/global-forcing-20261121/certificates/check_carry_compiler.py"
+      ],
+      "expected_report": "research/global-forcing-20261121/certificates/carry-compiler-report.json",
+      "expected_report_sha256": "cad16a9ff61e16907389c9278ccc9c2599a8199a3a60e9490cd5586fc7041828",
+      "optimized": false,
+      "returncode": 0,
+      "seconds": 0.049483,
+      "stderr": "",
+      "stdout_sha256": "cad16a9ff61e16907389c9278ccc9c2599a8199a3a60e9490cd5586fc7041828"
+    },
+    {
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/global-forcing-20261121/certificates/check_carry_compiler.py"
+      ],
+      "expected_report": "research/global-forcing-20261121/certificates/carry-compiler-report.json",
+      "expected_report_sha256": "cad16a9ff61e16907389c9278ccc9c2599a8199a3a60e9490cd5586fc7041828",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 0.095124,
+      "stderr": "",
+      "stdout_sha256": "cad16a9ff61e16907389c9278ccc9c2599a8199a3a60e9490cd5586fc7041828"
+    },
+    {
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/global-forcing-20261121/energy/check_renewal_phase.py"
+      ],
+      "expected_report": "research/global-forcing-20261121/energy/renewal_phase_report.json",
+      "expected_report_sha256": "cfbb20cfb6e023b3228d4927ab2684a3641572c304b7e2bc3e74df62ef21c978",
+      "optimized": false,
+      "returncode": 0,
+      "seconds": 0.073845,
+      "stderr": "",
+      "stdout_sha256": "cfbb20cfb6e023b3228d4927ab2684a3641572c304b7e2bc3e74df62ef21c978"
+    },
+    {
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/global-forcing-20261121/energy/check_renewal_phase.py"
+      ],
+      "expected_report": "research/global-forcing-20261121/energy/renewal_phase_report.json",
+      "expected_report_sha256": "cfbb20cfb6e023b3228d4927ab2684a3641572c304b7e2bc3e74df62ef21c978",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 0.140849,
+      "stderr": "",
+      "stdout_sha256": "cfbb20cfb6e023b3228d4927ab2684a3641572c304b7e2bc3e74df62ef21c978"
+    }
+  ],
+  "clean_after": true,
+  "clean_before": true,
+  "evidence_boundary": "Exact finite calculations and byte-identical frozen reports. Written arguments establish all-parameter statements; named external theorems remain external inputs. No universal Collatz proof, exhaustive cycle census, or formal proof-assistant build is claimed.",
+  "finished_at_utc": "2026-11-20T23:28:16.260305+00:00",
+  "head": "3aa75073e5d000b3ccf6ac29cbfbda1b14445c6c",
+  "manifest_sha256": "92fac502920d0f83f69d581d818fe92ff2c676358023f77f73528bfbdd770fb4",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema": "collatz-global-forcing-execution/v1",
+  "started_at_utc": "2026-11-20T23:28:15.566770+00:00",
+  "status": "PASS",
+  "tracked_files": 343,
+  "tree": "5e79c89edd930adc6ff7fc2021e872c7c021a0bd",
+  "verified_content_files": 25
+}

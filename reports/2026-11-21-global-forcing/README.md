@@ -19,7 +19,7 @@ Concurrent sources were refreshed after the initial proof freeze.
 [SOURCES.md](../../research/global-forcing-20261121/SOURCES.md) and the
 three LATEST_COMPARISON notes identify overlap, stronger neighboring
 results and the still-unproved closing inputs. The metadata
-[source-heads.json](source-heads.json) inventories105 open PRs and20
+[source-heads.json](source-heads.json) inventories 105 open PRs and 20
 recent closed PRs. It is not a verdict on every branch.
 
 ## Reproduce this packet
@@ -43,12 +43,31 @@ bundle. Its integrity checks do not certify mathematical theorems.
 
 ## Publication receipts
 
-At this scientific-content stage, clean-checkout publication executions
-have not yet been recorded in this file. The publication metadata child
-will add the actual content-commit receipts and exact identities. It
-must preserve every file in CONTENT_SHA256.json. The final PR describes
-the separately observed checks on its actual final head; a receipt
-cannot recursively contain its own future commit identity.
+The complete clean checkout at commit
+`3aa75073e5d000b3ccf6ac29cbfbda1b14445c6c`, tree
+`5e79c89edd930adc6ff7fc2021e872c7c021a0bd`, passed both commands above:
+
+- [Scientific execution](scientific-execution.json): six executions,
+  all 25 manifest files verified, every complete report byte-identical,
+  and the checkout clean before and after.
+- [Repository validation](repository-validation.json): all eleven
+  required bounded commands passed in that actual checkout.
+
+[VALIDATION.md](VALIDATION.md) records exact receipt hashes, the earlier
+orchestrator correction, and the distinction between the executed content
+commit and the later publication-metadata child. That child preserves
+all 25 manifest entries. Its own actual final-head repository execution
+and remote readback are recorded in the PR, rather than inventing a
+self-referential receipt inside its own commit.
+
+The [initial failed orchestration receipt](preliminary-scientific-failure.json)
+is preserved. The carry checker uses `success: true`; the first runner
+incorrectly expected `status: PASS` from all three programs. It stopped
+even though the carry program had returned zero with the exact frozen
+report. The runner now validates each declared schema. The scientific
+programs, reports and mathematical proofs were unchanged by that repair.
+The [initial repository run](preliminary-repository-validation.json)
+passed on its separately identified earlier head.
 
 The manifest deliberately excludes itself, this publication README,
 VALIDATION.md, and the execution receipt JSON files. It includes the
