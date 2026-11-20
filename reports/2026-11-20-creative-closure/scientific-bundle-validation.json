@@ -1,0 +1,357 @@
+{
+  "schema": "collatz-creative-closure-bundle/v1",
+  "scope": "frozen content, exact local certificates and bounded ordinary replays; not a full Collatz proof",
+  "manifest_only": false,
+  "started_utc": "2026-11-20T20:53:47.967645+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "linux",
+  "commands": [
+    {
+      "name": "analytic-production",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/creative_analytic_flow.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/analytic-flow-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"antichain_cases\": 8, \"counts\": {\"antichain_disjoint_pairs\": 28, \"finite_coercivity_cases\": 536, \"macro_edges\": 18312, \"negative_control_physical_prefix_edges\": 3, \"physical_shortcut_edges\": 82682, \"residual_coordinates_examined\": 62637, \"zero_eigenvalue_pairs\": 64}, \"flow_cases\": 17, \"negative_controls\": 5, \"report_sha256\": \"8cefbc6c0aa687dfb9ffa54f4b4f284d8c4423af62fc1acb44e21c9f4b4245a2\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 3.15,
+      "passed": true
+    },
+    {
+      "name": "analytic-production",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "experiments/creative_analytic_flow.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/analytic-flow-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"antichain_cases\": 8, \"counts\": {\"antichain_disjoint_pairs\": 28, \"finite_coercivity_cases\": 536, \"macro_edges\": 18312, \"negative_control_physical_prefix_edges\": 3, \"physical_shortcut_edges\": 82682, \"residual_coordinates_examined\": 62637, \"zero_eigenvalue_pairs\": 64}, \"flow_cases\": 17, \"negative_controls\": 5, \"report_sha256\": \"8cefbc6c0aa687dfb9ffa54f4b4f284d8c4423af62fc1acb44e21c9f4b4245a2\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 3.053,
+      "passed": true
+    },
+    {
+      "name": "analytic-independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-creative-closure/analytic-independent-check.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/analytic-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"counts\": {\"antichain_disjoint_pairs\": 28, \"candidate_macro_paths\": 3801, \"candidate_shortcut_edges\": 17130, \"finite_continuation_tail_checks\": 14, \"leaf_to_root_paths\": 1284, \"leaf_to_root_shortcut_edges\": 39496, \"published_vector_hash_matches\": 17, \"residual_coordinates_checked\": 8720, \"triangular_cases\": 6}, \"flow_cases\": 24, \"report_sha256\": \"6126e408e84795ea3571ddd17b25e3602d41c2a648048285cab741d2e3cb0a73\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 0.3,
+      "passed": true
+    },
+    {
+      "name": "analytic-independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-20-creative-closure/analytic-independent-check.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/analytic-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"counts\": {\"antichain_disjoint_pairs\": 28, \"candidate_macro_paths\": 3801, \"candidate_shortcut_edges\": 17130, \"finite_continuation_tail_checks\": 14, \"leaf_to_root_paths\": 1284, \"leaf_to_root_shortcut_edges\": 39496, \"published_vector_hash_matches\": 17, \"residual_coordinates_checked\": 8720, \"triangular_cases\": 6}, \"flow_cases\": 24, \"report_sha256\": \"6126e408e84795ea3571ddd17b25e3602d41c2a648048285cab741d2e3cb0a73\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 0.362,
+      "passed": true
+    },
+    {
+      "name": "symbolic-production",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/creative_symbolic_order.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/symbolic-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact report regeneration\n",
+      "stderr": "",
+      "seconds": 0.207,
+      "passed": true
+    },
+    {
+      "name": "symbolic-production",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "experiments/creative_symbolic_order.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/symbolic-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact report regeneration\n",
+      "stderr": "",
+      "seconds": 0.281,
+      "passed": true
+    },
+    {
+      "name": "symbolic-independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/creative_symbolic_review.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/symbolic-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"moment_checks\": 126, \"ordinary_edges\": 14, \"report_sha256\": \"6c0be9746ebc67d2c942e030d4e70c868656b4d19049b1801c07b8653e19c26a\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 0.03,
+      "passed": true
+    },
+    {
+      "name": "symbolic-independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "experiments/creative_symbolic_review.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/symbolic-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"moment_checks\": 126, \"ordinary_edges\": 14, \"report_sha256\": \"6c0be9746ebc67d2c942e030d4e70c868656b4d19049b1801c07b8653e19c26a\", \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 0.147,
+      "passed": true
+    },
+    {
+      "name": "source-rank-independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-creative-closure/source-rank-independent.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/source-rank-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"ordinary_first_hit_controls\": 18, \"pure_power_residue_controls\": 3, \"report_sha256\": \"7fb33df505f96d36f9a29a1e710126a0b24dd9f7cffba138abe8ffacb4d85a57\", \"status\": \"PASS\", \"target_convergence_tested\": false}\n",
+      "stderr": "",
+      "seconds": 0.029,
+      "passed": true
+    },
+    {
+      "name": "source-rank-independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-20-creative-closure/source-rank-independent.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/source-rank-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"ordinary_first_hit_controls\": 18, \"pure_power_residue_controls\": 3, \"report_sha256\": \"7fb33df505f96d36f9a29a1e710126a0b24dd9f7cffba138abe8ffacb4d85a57\", \"status\": \"PASS\", \"target_convergence_tested\": false}\n",
+      "stderr": "",
+      "seconds": 0.123,
+      "passed": true
+    },
+    {
+      "name": "occupation-production",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/creative_occupation.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/occupation-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"actual_B_edges\": 27771, \"capacity_sources\": 2941, \"convex_power_checks\": 10425, \"entropy_sources\": 23517, \"flow_identities\": 3475, \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 9.76,
+      "passed": true
+    },
+    {
+      "name": "occupation-production",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "experiments/creative_occupation.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/occupation-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"actual_B_edges\": 27771, \"capacity_sources\": 2941, \"convex_power_checks\": 10425, \"entropy_sources\": 23517, \"flow_identities\": 3475, \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 9.437,
+      "passed": true
+    },
+    {
+      "name": "occupation-independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-creative-closure/five-occupation-independent.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/five-occupation-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: independently reconstructed ordinary words, entropy gap, capacities, and finite repair\n",
+      "stderr": "",
+      "seconds": 4.914,
+      "passed": true
+    },
+    {
+      "name": "occupation-independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-20-creative-closure/five-occupation-independent.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/five-occupation-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: independently reconstructed ordinary words, entropy gap, capacities, and finite repair\n",
+      "stderr": "",
+      "seconds": 4.958,
+      "passed": true
+    },
+    {
+      "name": "five-production",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "experiments/creative_five_closure.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/five-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact comparison reports/2026-11-20-creative-closure/five-report.json\n",
+      "stderr": "",
+      "seconds": 1.282,
+      "passed": true
+    },
+    {
+      "name": "five-production",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "experiments/creative_five_closure.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/five-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: exact comparison reports/2026-11-20-creative-closure/five-report.json\n",
+      "stderr": "",
+      "seconds": 1.4,
+      "passed": true
+    },
+    {
+      "name": "five-independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-creative-closure/occupation-five-independent.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/occupation-five-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"modular_states\": 88533, \"paired_blocks\": 1024, \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 0.122,
+      "passed": true
+    },
+    {
+      "name": "five-independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-20-creative-closure/occupation-five-independent.py",
+        "--compare",
+        "reports/2026-11-20-creative-closure/occupation-five-independent-report.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"modular_states\": 88533, \"paired_blocks\": 1024, \"status\": \"PASS\"}\n",
+      "stderr": "",
+      "seconds": 0.22,
+      "passed": true
+    }
+  ],
+  "success": true,
+  "checkout": {
+    "commit": "4e0df37cfaa8cba74ca0baaa18217937eca0c128",
+    "tree": "28efdf8c7f14d0fc02d269dd8144e150245ce346",
+    "tracked_files": 348
+  },
+  "content_manifest_sha256": "b805fad33f205f341c7e021fca936107e4227b4a2c7ce5e365bbac1599fa9b69",
+  "content_files_checked": 31,
+  "checkout_after": {
+    "commit": "4e0df37cfaa8cba74ca0baaa18217937eca0c128",
+    "tree": "28efdf8c7f14d0fc02d269dd8144e150245ce346",
+    "tracked_files": 348
+  },
+  "finished_utc": "2026-11-20T20:54:27.791353+00:00"
+}

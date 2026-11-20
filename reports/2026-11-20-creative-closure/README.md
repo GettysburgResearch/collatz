@@ -71,8 +71,16 @@ reassigned to a different head.
 
 ## Publication evidence
 
-Complete-checkout execution evidence is attached only after it has run.
-The publication narrative will identify the exact scientific commit,
-final head, content manifest, actual commands and clean-checkout state.
-Repository integrity and successful finite replay are distinct from
+The [validation narrative](VALIDATION.md) identifies the real GitHub
+scientific commit actually executed. Its attached
+[scientific-bundle receipt](scientific-bundle-validation.json) records all
+18 successful program executions, and its
+[complete-checkout receipt](scientific-checkout-validation.json) records
+all 11 successful repository checks with regressions. Both identify the
+same complete clean 348-file checkout before and after execution.
+
+The metadata child attaches these receipts without changing any of the
+31 manifest-covered files. The exact final branch head and its separate
+content and repository readback are recorded in the publication PR.
+Repository integrity and successful finite replay remain distinct from
 mathematical acceptance of the proposed deductions.
