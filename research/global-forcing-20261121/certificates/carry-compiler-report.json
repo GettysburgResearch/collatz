@@ -1,0 +1,156 @@
+{
+  "arithmetic": "integers and Fractions; no assertion-dependent checks",
+  "carry_loop_and_exit": {
+    "exit_instances": 54,
+    "loop_inputs": 1024
+  },
+  "compiler": {
+    "empty_source_checked": true,
+    "mixed_instances": [
+      {
+        "blocks": [
+          "three_ones"
+        ],
+        "source_bits": 79,
+        "source_clock": 85,
+        "source_rank": 4,
+        "target_clock": 89,
+        "target_rank": 5
+      },
+      {
+        "blocks": [
+          "pr166_two_run",
+          "three_ones"
+        ],
+        "source_bits": 109,
+        "source_clock": 120,
+        "source_rank": 7,
+        "target_clock": 124,
+        "target_rank": 8
+      },
+      {
+        "blocks": [
+          "three_ones",
+          "carry_four",
+          "pr166_two_run"
+        ],
+        "source_bits": 15785,
+        "source_clock": 15808,
+        "source_rank": 15,
+        "target_clock": 15812,
+        "target_rank": 16
+      },
+      {
+        "blocks": [
+          "carry_four",
+          "three_ones",
+          "pr166_two_run"
+        ],
+        "source_bits": 13750,
+        "source_clock": 13778,
+        "source_rank": 18,
+        "target_clock": 13782,
+        "target_rank": 19
+      }
+    ]
+  },
+  "controls": {
+    "invalid_block_parameters_rejected": 3,
+    "malformed_first_hit_certificates_rejected": 13,
+    "target_word_mutations_rejected": 4,
+    "valid_unsupported_certificates_unresolved": 4
+  },
+  "entry": {
+    "ordinary_lifts": 65,
+    "source_states": [
+      25065,
+      18799,
+      28199,
+      42299,
+      63449,
+      47587,
+      71381,
+      1673
+    ],
+    "target_states": [
+      125325,
+      46997,
+      2203,
+      3305,
+      2479,
+      3719,
+      5579,
+      8369
+    ]
+  },
+  "rank_family": {
+    "large_integer_values_omitted": true,
+    "modular_indices": [
+      0,
+      80
+    ],
+    "ordinary_first_hit_instances": [
+      {
+        "b": 14254,
+        "r": 0,
+        "source_bits": 14258,
+        "source_clock": 14272,
+        "source_rank": 9,
+        "t": 88,
+        "target_clock": 14276,
+        "target_rank": 10
+      },
+      {
+        "b": 21382,
+        "r": 1,
+        "source_bits": 21386,
+        "source_clock": 21401,
+        "source_rank": 10,
+        "t": 44,
+        "target_clock": 21405,
+        "target_rank": 11
+      },
+      {
+        "b": 32074,
+        "r": 2,
+        "source_bits": 32077,
+        "source_clock": 32094,
+        "source_rank": 11,
+        "t": 22,
+        "target_clock": 32098,
+        "target_rank": 12
+      },
+      {
+        "b": 48112,
+        "r": 3,
+        "source_bits": 48114,
+        "source_clock": 48133,
+        "source_rank": 12,
+        "t": 11,
+        "target_clock": 48137,
+        "target_rank": 13
+      }
+    ]
+  },
+  "schema": "collatz-carry-compiler-replay/v1",
+  "scope": "exact finite replay; all-parameter proofs in CARRY_COMPILER.md; Collatz open",
+  "success": true,
+  "three_ones_block": {
+    "domain_inputs": 4096,
+    "domain_members": 16,
+    "inverse_fiber_instances": 222
+  },
+  "unbounded_ladder_finite_checks": {
+    "ordinary_pairs": 255,
+    "ordinary_run_range": [
+      0,
+      16
+    ],
+    "run_range": [
+      0,
+      64
+    ],
+    "symbolic_pairs": 325,
+    "warning": "finite indices do not establish the universal run quantifier"
+  }
+}

@@ -1,0 +1,1112 @@
+{
+  "actual_carry_blocks": {
+    "extra_exit_values": [
+      0,
+      1,
+      3
+    ],
+    "first_safe_rows": [
+      [
+        0,
+        2,
+        1466857,
+        27535
+      ],
+      [
+        0,
+        3,
+        2515433,
+        23609
+      ],
+      [
+        0,
+        5,
+        4612585,
+        10823
+      ]
+    ],
+    "safe_actual_sources": 75,
+    "safe_run_lengths": [
+      0,
+      24
+    ],
+    "safe_transcript_sha256": "db41d1aaa3ac091be2dbba2f5866ae27cde92a2c1b6452aeeaf7cd29179ff5fa",
+    "scope": "finite replay; the written formulas prove all r",
+    "unsafe_expanding_example": {
+      "b": 2,
+      "q": 17210549879311,
+      "r": 20,
+      "x": 275726295529
+    }
+  },
+  "actual_new_block": {
+    "checked_sources": 171,
+    "first_rows": [
+      [
+        271,
+        43,
+        6
+      ],
+      [
+        1295,
+        205,
+        6
+      ],
+      [
+        1807,
+        143,
+        7
+      ],
+      [
+        2831,
+        7,
+        12
+      ],
+      [
+        3343,
+        529,
+        6
+      ],
+      [
+        4367,
+        691,
+        6
+      ]
+    ],
+    "parameter_k_range": [
+      0,
+      255
+    ],
+    "transcript_sha256": "2cebb4a4b34582ce4e576d2984d69e98de02e0aa825e4509e08bbbd23d407512"
+  },
+  "block_affine_identity": {
+    "common_clock": "b+3",
+    "formal_variable": "t=2^b*q; b>=6",
+    "odd_count_each": 4,
+    "source_in_t": [
+      [
+        8,
+        81
+      ],
+      [
+        -65,
+        81
+      ]
+    ],
+    "target_in_t": [
+      [
+        40,
+        81
+      ],
+      [
+        -325,
+        81
+      ]
+    ]
+  },
+  "carry_algebra": {
+    "checked_run_lengths": [
+      0,
+      24
+    ],
+    "correction_formula": "1351*3^(r+5)+2^(r+16)",
+    "correction_transcript_sha256": "ba3372d5d13e69e6fcd7fe44b8b53e9ff4bc6bc7e1300e94246af00b8ed50905",
+    "prefix_clock": 15,
+    "prefix_corrections": [
+      3709,
+      149617
+    ],
+    "safe_height_constant": [
+      4849051,
+      98415
+    ],
+    "source_prefix": [
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      7
+    ],
+    "target_prefix": [
+      3,
+      6,
+      1,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  "endpoint_congruences": {
+    "carry_endpoint_classes": [
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        14,
+        17
+      ],
+      [
+        16,
+        12
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        19,
+        4
+      ],
+      [
+        20,
+        9
+      ],
+      [
+        22,
+        2
+      ],
+      [
+        23,
+        5
+      ],
+      [
+        25,
+        6
+      ],
+      [
+        26,
+        7
+      ]
+    ],
+    "clock_classes": [
+      [
+        1,
+        31
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        4,
+        29
+      ],
+      [
+        5,
+        62
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        10,
+        61
+      ],
+      [
+        11,
+        18
+      ],
+      [
+        13,
+        23
+      ],
+      [
+        14,
+        14
+      ],
+      [
+        16,
+        27
+      ],
+      [
+        17,
+        52
+      ],
+      [
+        19,
+        37
+      ],
+      [
+        20,
+        60
+      ],
+      [
+        22,
+        17
+      ],
+      [
+        23,
+        20
+      ],
+      [
+        25,
+        39
+      ],
+      [
+        26,
+        22
+      ],
+      [
+        28,
+        13
+      ],
+      [
+        29,
+        48
+      ],
+      [
+        31,
+        11
+      ],
+      [
+        32,
+        26
+      ],
+      [
+        34,
+        51
+      ],
+      [
+        35,
+        46
+      ],
+      [
+        37,
+        43
+      ],
+      [
+        38,
+        36
+      ],
+      [
+        40,
+        59
+      ],
+      [
+        41,
+        32
+      ],
+      [
+        43,
+        9
+      ],
+      [
+        44,
+        16
+      ],
+      [
+        46,
+        19
+      ],
+      [
+        47,
+        24
+      ],
+      [
+        49,
+        53
+      ],
+      [
+        50,
+        38
+      ],
+      [
+        52,
+        21
+      ],
+      [
+        53,
+        40
+      ],
+      [
+        55,
+        49
+      ],
+      [
+        56,
+        12
+      ],
+      [
+        58,
+        47
+      ],
+      [
+        59,
+        44
+      ],
+      [
+        61,
+        33
+      ],
+      [
+        62,
+        10
+      ],
+      [
+        64,
+        25
+      ],
+      [
+        65,
+        54
+      ],
+      [
+        67,
+        41
+      ],
+      [
+        68,
+        50
+      ],
+      [
+        70,
+        45
+      ],
+      [
+        71,
+        34
+      ],
+      [
+        73,
+        55
+      ],
+      [
+        74,
+        42
+      ],
+      [
+        76,
+        35
+      ],
+      [
+        77,
+        56
+      ],
+      [
+        79,
+        57
+      ],
+      [
+        80,
+        58
+      ]
+    ],
+    "ladder_b4_residue_mod27": 7,
+    "restricted_classes": [
+      [
+        7,
+        15
+      ],
+      [
+        34,
+        51
+      ],
+      [
+        61,
+        33
+      ]
+    ],
+    "unit_residues_mod81": 54
+  },
+  "finite_inverse_fibers": {
+    "counts": {
+      "carry": 0,
+      "ladder": 229,
+      "new": 21,
+      "zero_endpoint_sources": 1
+    },
+    "cutoff": 16384,
+    "distinct_endpoints": 170,
+    "max_harmonic_finite_fiber": [
+      6775674955410709487,
+      15789173334335401585
+    ],
+    "max_subcritical_finite_fiber_rational_upper": [
+      725094371782844255,
+      1152921504606846976
+    ],
+    "root_enclosures": "integer 25th-power comparisons, 60 binary places",
+    "scope": "finite actual fibers; not the all-source proof"
+  },
+  "independent_rank_family_review": {
+    "base_congruence_modulus": 59049,
+    "base_residue": 43255,
+    "independent_first_hit_fixture": {
+      "b": 1666492,
+      "r": 4,
+      "source_bits": 1666494,
+      "source_clock": 1666514,
+      "source_rank": 13,
+      "t": 127,
+      "target_clock": 1666518,
+      "target_rank": 14
+    },
+    "large_values_omitted": true,
+    "modular_indices": [
+      0,
+      12
+    ],
+    "modular_rows": [
+      [
+        0,
+        88,
+        14254
+      ],
+      [
+        1,
+        44,
+        21382
+      ],
+      [
+        2,
+        22,
+        32074
+      ],
+      [
+        3,
+        11,
+        48112
+      ],
+      [
+        4,
+        127,
+        1666492
+      ],
+      [
+        5,
+        185,
+        7282708
+      ],
+      [
+        6,
+        214,
+        25272970
+      ],
+      [
+        7,
+        107,
+        37909456
+      ],
+      [
+        8,
+        175,
+        186004348
+      ],
+      [
+        9,
+        209,
+        666427012
+      ],
+      [
+        10,
+        226,
+        2161901986
+      ],
+      [
+        11,
+        113,
+        3242852980
+      ],
+      [
+        12,
+        178,
+        15324632674
+      ]
+    ],
+    "scope": "independent finite fixture, not all-rank enumeration"
+  },
+  "negative_controls_rejected": [
+    "incorrect target prefix (1, 2, 4)",
+    "incorrect target prefix (1, 3, 5)",
+    "incorrect exact final source valuation",
+    "clock14 cannot serve q7 mod27",
+    "b4 cannot serve q16 mod27 at run length>=2"
+  ],
+  "phase_checks": {
+    "certified_zero_phase_family": [
+      [
+        0,
+        17,
+        72817,
+        15,
+        15
+      ],
+      [
+        1,
+        35,
+        19088743537,
+        33,
+        33
+      ],
+      [
+        2,
+        53,
+        5003999585967217,
+        51,
+        51
+      ],
+      [
+        3,
+        71,
+        1311768467463790337137,
+        69,
+        69
+      ],
+      [
+        4,
+        89,
+        343872233134827854138645617,
+        87,
+        87
+      ],
+      [
+        5,
+        107,
+        90144042682896312995321116826737,
+        105,
+        105
+      ],
+      [
+        6,
+        125,
+        23630719925065171073845458849428348017,
+        123,
+        123
+      ],
+      [
+        7,
+        143,
+        6194651444036284205982143964624544862772337,
+        141,
+        141
+      ],
+      [
+        8,
+        161,
+        1623890708145447686892983147462536688506591714417,
+        159,
+        159
+      ],
+      [
+        9,
+        179,
+        425693205796080238432874174208419217671871978384333937,
+        177,
+        177
+      ],
+      [
+        10,
+        197,
+        111592919740207658023747367523691847397375207901582835784817,
+        195,
+        195
+      ],
+      [
+        11,
+        215,
+        29253414352376996304977229912130675644137526500152530903975271537,
+        213,
+        213
+      ],
+      [
+        12,
+        233,
+        7668607051989515319371950958085583836056787746855985061291693581999217,
+        231,
+        231
+      ]
+    ],
+    "literal_seed_certificates": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        4,
+        1,
+        2
+      ],
+      [
+        25,
+        16,
+        7,
+        2
+      ]
+    ],
+    "rank_one_prefix_a_range": [
+      2,
+      40
+    ],
+    "rank_one_prefixes": 39,
+    "rank_one_transcript_sha256": "dce2b57a5455ac98c41cb1fadd8c5a338d1d64ad9536bb5ddf0f561861a0bd72",
+    "scope": "no unproved target convergence used",
+    "signed_native_edges": [
+      {
+        "grade": 1,
+        "j": 0,
+        "k": 1,
+        "kind": "forward_even",
+        "slope": [
+          1,
+          2
+        ]
+      },
+      {
+        "grade": -1,
+        "j": 1,
+        "k": 1,
+        "kind": "forward_odd",
+        "slope": [
+          3,
+          2
+        ]
+      },
+      {
+        "grade": -1,
+        "j": 0,
+        "k": -1,
+        "kind": "reverse_even",
+        "slope": [
+          2,
+          1
+        ]
+      },
+      {
+        "grade": 1,
+        "j": -1,
+        "k": -1,
+        "kind": "reverse_odd",
+        "slope": [
+          2,
+          3
+        ]
+      }
+    ],
+    "terminal_cutoff_tests": [
+      [
+        -30,
+        67
+      ],
+      [
+        -29,
+        65
+      ],
+      [
+        -28,
+        64
+      ],
+      [
+        -27,
+        61
+      ],
+      [
+        -26,
+        59
+      ],
+      [
+        -25,
+        58
+      ],
+      [
+        -24,
+        55
+      ],
+      [
+        -23,
+        53
+      ],
+      [
+        -22,
+        52
+      ],
+      [
+        -21,
+        49
+      ],
+      [
+        -20,
+        47
+      ],
+      [
+        -19,
+        46
+      ],
+      [
+        -18,
+        43
+      ],
+      [
+        -17,
+        41
+      ],
+      [
+        -16,
+        40
+      ],
+      [
+        -15,
+        37
+      ],
+      [
+        -14,
+        35
+      ],
+      [
+        -13,
+        34
+      ],
+      [
+        -12,
+        31
+      ],
+      [
+        -11,
+        29
+      ],
+      [
+        -10,
+        28
+      ],
+      [
+        -9,
+        25
+      ],
+      [
+        -8,
+        23
+      ],
+      [
+        -7,
+        22
+      ],
+      [
+        -6,
+        19
+      ],
+      [
+        -5,
+        17
+      ],
+      [
+        -4,
+        16
+      ],
+      [
+        -3,
+        13
+      ],
+      [
+        -2,
+        11
+      ],
+      [
+        -1,
+        10
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        14,
+        2
+      ],
+      [
+        15,
+        2
+      ]
+    ]
+  },
+  "rational_coefficients": {
+    "carry_rational_polynomials": [
+      {
+        "b0": 0,
+        "exact_rational_upper": [
+          11344691181790951137768572085432081395132798373504722870591859,
+          3763199545501854257802347959525869865961805497757717513776398336
+        ],
+        "strict_simple_upper": [
+          1,
+          300
+        ]
+      },
+      {
+        "b0": 6,
+        "exact_rational_upper": [
+          9942040531334871205511925232074994437074605542526848399,
+          224304172128549471962591884107939592955220073327882141696
+        ],
+        "strict_simple_upper": [
+          1,
+          8
+        ]
+      },
+      {
+        "b0": 12,
+        "exact_rational_upper": [
+          11492290193810601741005869776704968998921070961849735105079,
+          918749889038538637158776357306120572744581420351005252386816
+        ],
+        "strict_simple_upper": [
+          1,
+          8
+        ]
+      }
+    ],
+    "new_restricted_bound": [
+      32,
+      3875
+    ],
+    "power_comparisons": [
+      {
+        "base": [
+          3,
+          4
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          393,
+          500
+        ]
+      },
+      {
+        "base": [
+          15,
+          76
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          13,
+          50
+        ]
+      },
+      {
+        "base": [
+          5,
+          52
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          7,
+          50
+        ]
+      },
+      {
+        "base": [
+          81,
+          499
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          11,
+          50
+        ]
+      },
+      {
+        "base": [
+          81,
+          32755
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          1,
+          125
+        ]
+      },
+      {
+        "base": [
+          98415,
+          4849051
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          1,
+          25
+        ]
+      },
+      {
+        "base": [
+          1,
+          2
+        ],
+        "integer_test": "n^21*v^25 < d^21*u^25",
+        "passed": true,
+        "power": [
+          21,
+          25
+        ],
+        "strict_upper": [
+          9,
+          16
+        ]
+      }
+    ],
+    "three_family_harmonic_coefficient": [
+      4,
+      5
+    ],
+    "three_family_other_bound": [
+      1026910336,
+      1086897975
+    ],
+    "three_family_q16_or25_bound": [
+      81287417,
+      82925000
+    ],
+    "three_family_q7_coefficient": [
+      248549,
+      248775
+    ],
+    "three_family_subcritical_margin": [
+      226,
+      248775
+    ],
+    "two_family_harmonic_coefficient": [
+      13,
+      14
+    ],
+    "two_family_other_q_coefficient": [
+      8865224,
+      10365625
+    ],
+    "two_family_q_7_mod_27_coefficient": [
+      330293,
+      331700
+    ]
+  },
+  "schema": "collatz-coupled-renewal-phase-check/v1",
+  "scope": "exact algebra, rational inequalities and stated finite replays; not Collatz",
+  "sources": {
+    "PR146": "fd991063721e9c157d318e40bb20131762f7d750",
+    "PR157": "64361ecca770092d6c8242dc6211e38818af2e50",
+    "PR163": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+    "PR166": "5996b9f525ca50978bc34f423192c36a87765bf3"
+  },
+  "status": "PASS"
+}
