@@ -1,0 +1,29 @@
+[
+  {
+    "mode": "normal",
+    "argv": [
+      "python",
+      "-B",
+      "research/certificate-transfer-intake-20261120/check_certificates.py"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "seconds": 0.2,
+    "checker_sha256": "02f014b321a93794747ff22a4d7c899b38cf593ac579490f03c48cfe0adc62e3",
+    "receipt_sha256": "2421379cacf795a7127dbbaf1adae935a1f231c0e46abbc0159e8f40908016a2"
+  },
+  {
+    "mode": "optimized",
+    "argv": [
+      "python",
+      "-OO",
+      "-B",
+      "research/certificate-transfer-intake-20261120/check_certificates.py"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "seconds": 0.33,
+    "checker_sha256": "02f014b321a93794747ff22a4d7c899b38cf593ac579490f03c48cfe0adc62e3",
+    "receipt_sha256": "2421379cacf795a7127dbbaf1adae935a1f231c0e46abbc0159e8f40908016a2"
+  }
+]

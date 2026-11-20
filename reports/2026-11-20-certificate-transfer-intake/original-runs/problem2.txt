@@ -1,0 +1,13 @@
+1. certificates valid for odd x<4000: True
+2. merge rule (keep length, subtract 1 from the exponents after the merge): 5215 merging x with m<=20000, all output certificates valid: True
+   example x=257: [0, 2, 4, 6, 9, 11, 12, 13, 14, 15, 17, 19, 20, 22, 23, 24, 26, 27, 28, 29, 31, 34, 35, 36, 38, 39, 41, 42, 43, 44, 45, 46, 49, 50, 51, 52, 56, 58, 60, 64, 67, 68, 69, 74, 78] ->  w=129: [0, 2, 4, 6, 7, 8, 11, 12, 13, 14, 16, 18, 19, 21, 22, 23, 25, 26, 27, 28, 30, 33, 34, 35, 37, 38, 40, 41, 42, 43, 44, 45, 48, 49, 50, 51, 55, 57, 59, 63, 66, 67, 68, 73, 77]  merge after 6 triplings
+3. family x=256q+1, 27q+1=2^b u', u'=(-1)^(b+1) mod 4: 14998 cases (share 0.4999 of odd q), failures 0
+4. s=1: explicit certificate (0,2,4,6,62) valid: True; residues as required: True; 64q+1 and 3^25 share an orbit: True; (3^25 does reach 1: True)
+4. s=2: explicit certificate (0,2,4,6,116) valid: True; residues as required: True; 64q+1 and 3^52 share an orbit: True; (3^52 does reach 1: True)
+4. s=3: explicit certificate (0,2,4,6,170) valid: True; residues as required: True; 64q+1 and 3^79 share an orbit: True; (3^79 does reach 1: True)
+5. first open-type x: (x, w, triplings of x, halvings of x, triplings of w by then, lead, W*)
+   (385, 193, 9, 23, 14, 5, 233)
+   (897, 449, 22, 45, 29, 7, 1822)
+   (2305, 1153, 37, 70, 44, 7, 2051)
+   (2433, 1217, 13, 32, 18, 5, 233)
+   (2689, 1345, 23, 48, 30, 7, 2051)

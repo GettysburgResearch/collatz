@@ -1,0 +1,57 @@
+TWO ALLOWED REMAINDERS IN AN INTEGER ROUNDING MAP
+
+Set
+
+    M=274877906944,
+    K=282429536481,
+    c=5285712575.
+
+QUESTION
+
+Can there exist an infinite sequence of positive integers b_0,b_1,... and digits epsilon_n in {0,1} satisfying
+
+    M*b_{n+1}=K*b_n+c+epsilon_n  for every n>=0?              (1)
+
+Prove nonexistence, or construct an exact positive integer source with a verified infinite sequence.
+
+Because 0<c<c+1<M, the same question asks whether every positive integer orbit of
+
+    b -> ceil(K*b/M)
+
+eventually has a remainder
+
+    d(b)=M*ceil(K*b/M)-K*b
+
+outside {c,c+1}.
+
+KNOWN STRUCTURE
+
+Every finite prescribed binary word epsilon_0,...,epsilon_{h-1} has positive integer realizations. The identity
+
+    M^h*b_h = K^h*b_0
+              + sum_{j=0}^{h-1}K^{h-1-j}M^j(c+epsilon_j)
+
+selects one residue class for b_0 modulo M^h, because gcd(K,M)=1. It also forces integrality of the intermediate values. Positive representatives give positive intermediate states.
+
+No positive integer source can support an eventually periodic infinite digit schedule. For a block of length h, iteration has the form
+
+    b -> (K^h*b+B)/M^h,  B>0.
+
+Repeating it indefinitely would force the nonzero positive integer (K^h-M^h)b+B to be divisible by arbitrarily high powers of M. The same argument applies after a finite initial prefix.
+
+The open case is therefore one fixed positive integer source and an aperiodic infinite digit sequence. Positive realizations for all finite lengths may have different sources.
+
+A NECESSARY REAL CONDITION
+
+Write D=K-M=7551629537 and lambda=K/M. An infinite solution would give a real beta>0 with
+
+    beta*lambda^n-b_n in [c/D,(c+1)/D]  for every n>=0.
+
+The interval has width 1/D and lies in (0,1). This is a necessary condition; its sufficiency has not been supplied.
+
+Proposed proofs may use simultaneous real and modular information, but convergence of one series in different completions does not identify its limits. Any appeal to equidistribution of all integer rounding-map orbits needs a proved theorem with the exact hypotheses.
+
+WORK STANDARD
+
+Treat the requested assertion as an open research target, not as an established theorem. A proof, an exact counterexample, or a precisely scoped new partial result is useful. State every additional hypothesis. Keep finite computations separate from claims for all parameters. If a proposed argument fails, identify its first unsupported implication and preserve any exact obstruction you find.
+

@@ -1,0 +1,9 @@
+1. dictionary verified for k<=60000: True
+2. chain-absorption <=> D(k)=0 for k<=6000, mismatches: 0
+3. k=2+16t : 16k+1 after 11 steps = 32k+1 after 12 steps = 162t+22   brute-force ok: True
+3. k=6+32t : 16k+1 after 13 steps = 32k+1 after 14 steps = 486t+94   brute-force ok: True
+3. k=24+64t : 16k+1 after 14 steps = 32k+1 after 15 steps = 486t+184   brute-force ok: True
+3. k=30+64t : 16k+1 after 15 steps = 32k+1 after 16 steps = 1458t+688   brute-force ok: True
+3. k=8+128t : 16k+1 after 16 steps = 32k+1 after 17 steps = 1458t+94   brute-force ok: True
+3. k=105+128t : 16k+1 after 15 steps = 32k+1 after 16 steps = 486t+400   brute-force ok: True
+3. k=110+128t : 16k+1 after 17 steps = 32k+1 after 18 steps = 4374t+3766   brute-force ok: True

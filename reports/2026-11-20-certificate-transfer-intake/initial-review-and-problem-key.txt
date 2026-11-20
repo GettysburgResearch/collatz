@@ -1,0 +1,269 @@
+COLLATZ RESEARCH REVIEW AND PRIVATE PROBLEM KEY
+20 November 2026
+
+HOW TO USE THIS PACKET
+
+The six numbered text files contain self-contained research questions with the project name, repository links, and downstream implications omitted. Give an agent one numbered file. The ZIP contains only those six files. Keep this guide separate if you want the first attempt to be independent of the project's framing.
+
+The mathematical definitions are exact. Removing provenance does not make the questions easier, and a specialist may recognize their origin. None of the target assertions is supplied as proved. A negative result or a precise obstruction is a useful deliverable.
+
+REVIEW SCOPE
+
+This review inspected current PR metadata and selected actual proof manuscripts, with separate mathematical reviews of closure, analytic, and arithmetic routes. It concentrated on PR146's latest update and PR153 through PR160, including a final refresh when PR160 appeared. It was not an audit of every repository file, a fresh execution of all checkers, a new Lean build, or external referee acceptance. Current research packets are marked PROPOSED; reported formal verification in PR146 verifies the reductions it covers, not the open premise.
+
+Frozen heads:
+PR146 e238c63a5d57f96bb063b7472498d1977df51951
+PR153 eb04a5d79020cefa0ba46794095b5766c5ff66a4
+PR154 fe40bb6f88e8094290ef01207d9bf7c4798d35d0
+PR155 92f499b9d340d1ff8cc643c3eef3477d61b477c1
+PR156 c5cb84502c7289705d59a8781a65fd845b9b6b14
+PR157 64361ecca770092d6c8242dc6211e38818af2e50
+PR158 cf49a68bf93e98c97a18dc3d1a4186faf534e422
+PR159 0e7d2841b1591073c6399f91f3b6944ebcdbdbd5
+PR160 6d877e718f5ef9d57fe1830912c444359718747a
+
+OVERALL JUDGMENT
+
+The latest work improves the precision of the proof targets and establishes useful local obstructions. It has not shown that the remaining global step is small. The strongest progress is the completed reduction from a very narrow one-sided basin law, and the exact separation of an analytic trace into its difficult arithmetic head and an exponentially decaying tail.
+
+I would prioritize:
+
+1. Adaptive transformation of complete finite certificates.
+2. Arithmetic estimates for actual weighted representatives, with cycle exclusion pursued separately; retain the positive occupation estimate as an alternative that covers both failure types.
+3. Mixed functional-equation rigidity as a high-variance independent approach.
+4. Prime-support and binary-complexity methods only when they produce an actual bound on accumulated resource creation along one fixed input.
+
+The fourth route has interesting theorems, but combining necessary complexity conditions is insufficient. PR157 constructs arbitrarily long actual growing blocks satisfying several of them simultaneously. Finite prime support and bounded binary-run count are effectively alternate ways to ask for eventual periodicity once the new source theorems are applied.
+
+WHAT THE LATEST WORK CHANGES
+
+Directed closure, PR146 and PR157
+
+Let C be the positive integers whose shortcut orbit reaches 1. PR146 reduces full convergence to
+
+    128k+1 in C => 64k+1 in C  (k>0, 4 does not divide k).
+
+It also retains the earlier forward implication
+
+    16k+1 in C => 32k+1 in C  (k>=0).
+
+PR157 gives the alternative
+
+    x in C, x odd, 3 does not divide x => 5x in C.
+
+Its conditional induction has a complete cover of 464 infinite affine cells, with a smaller endpoint at most 19/20 of the input. This is a completed induction conditional on the multiplier law. The multiplier law is exactly the missing theorem.
+
+This is an attractive interface because it starts with an actual finite certificate for a known source. But the output certificate can be much longer. In PR146 even the first nonempty layer of the reverse criterion reduces to all powers 3^(27j-1). The forward criterion at low depth contains Mersenne families. Bounded depth of the input certificate is therefore not evidence that the transformation is easy.
+
+Expanding returns, PR158
+
+Two exact expanding return families survive the specified physical guards. Their two individual valuation resources can return to the same pair of values under switching. This defeats numerical descent at every surviving return and any rank depending only on that pair.
+
+The restricted two-macro rounding-map question is interesting, but its solution would not close the principal argument: the designated known arm already converges, so permanent avoidance of useful sections remains a broader gap.
+
+Prime support and circulation, PR159
+
+For an actual odd-trajectory prefix whose entire prime support has size at most s,
+
+    max n_j <= max{4^s*n_0, (s+1)^(64s)}.
+
+For a cycle with at most s primes, max n_j < (s+1)^(64s).
+
+This is a meaningful bound on the prime-support subclass. It does not give an upper bound on how many new primes an unrestricted orbit can acquire.
+
+The circulation theorem constructs one positive weighting under which inward and outward tripling defects have equal total flux whenever either relevant moment is finite. Equality of two fluxes does not make them zero. A two-vertex directed cycle already illustrates that distinction.
+
+Analytic head, PR158
+
+The all-source moment D_q splits as
+
+    D_q = P_q + R_q,
+
+with
+
+    ((zeta(2)-1)/4)*(3/5)^q <= R_q
+       <= (zeta(2)/4)*(3/5)^q.
+
+The remaining object P_q is exactly the congruence-word sum in Problem 02. Thus the tail is controlled; the unresolved part is arithmetic concentration at small endpoints.
+
+The manuscript's target O(q^2) is stronger than necessary for excluding nonperiodic orbits. This review derives the relaxation O(q^(21/10)), or even o(q^(40/19)), using PR153's path-occupancy theorem. The proof is below.
+
+The existing uniform spectral-gap strategy is excluded for the specific operators considered in PR156: approximate unit-circle spectrum already occurs on known convergent inputs. This does not exclude particular-vector growth estimates such as Problem 02.
+
+Final refresh, PR160
+
+The ordered prime-height proof improves the quantitative restriction for arbitrary histories. If x_i=log_2(n_i), xbar is their mean, and Y_p is the accumulated logarithmic contribution of prime p, it proves
+
+    Y_p <= N[2+5 ln(1+xbar)] + E(x_0),
+    E(x)=2(x-1)_+ + x ln(max{1,x}).
+
+For x=0 the logarithmic term is defined as zero. Therefore on any hypothetical escaping fixed-source orbit, every prime pool of size o(xbar/ln(1+xbar)) carries a vanishing fraction of total accumulated height. The pool may be chosen after the whole prefix, but is one common pool for that prefix. The missing opposing upper bound on prime creation is unchanged. PR159 retains sharper explicit peak bounds.
+
+Its critical-mass synthesis is explicitly conditional on a separately pinned positive-density input, along with the cited ordinary synchronization and endpoint results. A hypothetical proper invariant component would have Dirichlet mass of order 1/epsilon at exponent 1+epsilon, while its boundary is O(epsilon^(-1/2)) and still diverges at exponent one. Normalizing by the component mass makes both the boundary and every fixed ordinary atom vanish. This explains a failure of the proposed limiting argument; it supplies neither a proper component nor its exclusion. These additions do not change the six problem statements or their implications.
+
+PROBLEM KEY AND LOGICAL PAYOFF
+
+01_exponential_certificates.txt
+Full-equivalent target. A proof of its implication would prove full Collatz, using the latest PR146 reduction. It covers cycles and divergence.
+
+02_weighted_representatives.txt
+Sufficient to exclude every nonperiodic positive orbit. It does not exclude nontrivial cycles. It is not established to be necessary for full convergence.
+
+03_exponential_divisibility.txt
+Equivalent to exclusion of all nontrivial positive cycles. It does not exclude divergent orbits.
+
+02 plus 03
+Together they would give full convergence, through the source results and the explicit argument below.
+
+04_projected_functional_equation.txt
+Full-equivalent target. The functional equation encodes all component invariants. It is an exact reformulation with no demonstrated reduction in difficulty.
+
+05_four_term_family.txt
+A specific first-layer milestone for 01. Equivalent, by the explicit source paths, to convergence of 3^(27j-1) for every j>=1. It is not known here to imply full convergence.
+
+06_restricted_rounding_map.txt
+A restricted two-return arithmetic problem. It would exclude infinite positive paths through that exact subsystem. It is not sufficient for the full conjecture and does not settle permanent section avoidance.
+
+WHY PROBLEM 01 IS EXACT
+
+The representation set E is exactly the set of odd positive integers that reach 1.
+
+For an odd trajectory n_0,...,n_r=1, write a_i>=1 for its successive division exponents and A_j for their partial sums. Telescoping yields
+
+    3^r n_0 + sum_{j=0}^{r-1}3^{r-1-j}2^{A_j}=2^{A_r}.
+
+Conversely, an integer satisfying this identity produces rational suffix values through
+
+    3 n_{i-1}+1 = 2^(A_i-A_{i-1}) n_i.
+
+Each suffix's denominator divides a power of 3. If n_{i-1} is integral, coprimality with the power of 2 forces n_i integral. Positivity propagates from n_{i-1}; the explicit suffix formula makes it odd, and the final suffix is 1. The exponents are therefore exact.
+
+The residue condition x mod 512 in {129,257,385} is precisely
+
+    x=128k+1, k>0, 4 does not divide k.
+
+The requested output (x+1)/2 is 64k+1. This is PR146's reverse criterion verbatim in exponential-certificate form.
+
+Do not assign its multiplier-five variant to another agent expecting a mathematically independent subproblem. The closures are alternative full-equivalent targets. Different proof techniques could still be worth pursuing.
+
+WHY THE 2.1 MOMENT TARGET SUFFICES
+
+This is a deduction made for this review, not a claim of a new proof of the open estimate.
+
+PR153, drift.md, FID-DRIFT-005, proves that for some finite constant C and every finite simple shortcut trajectory, the number of its states in any integer interval of width X is at most C X^(19/20). The constant is uniform in the trajectory and interval location.
+
+Suppose n_j is a hypothetical nonperiodic odd trajectory. Its expansion into shortcut steps is simple: a repeated shortcut state would force eventual periodicity and repeated odd states.
+
+Dyadic summation of the occupancy bound gives a uniform reciprocal budget:
+
+    sum_j 1/n_j
+        <= C * sum_{k>=0} 2^(-k/20)
+        < infinity.
+
+Let J_q=3^q/2^(a_1+...+a_q). Exact multiplication of the odd recurrence yields
+
+    n_q = n_0 J_q product_{j<q}(1+1/(3n_j)).
+
+The reciprocal budget bounds the product by a finite constant M independent of q. The particular source n_0 contributes a term to D_q, so
+
+    D_q >= J_q^4/n_q^2 >= n_q^2/(M^4 n_0^4).
+
+If Problem 02 has the stated O(q^(21/10)) bound, the exact tail relation gives
+
+    n_q <= C_(n_0) (q+1)^(21/20).
+
+The first N odd values are distinct and all lie below C'_(n_0) N^(21/20). They occur in one finite simple shortcut prefix. Occupancy then forces
+
+    N <= C''_(n_0) N^((21/20)*(19/20))
+      = C''_(n_0) N^(399/400),
+
+which is impossible for arbitrarily large N.
+
+The source n_0 remains fixed throughout. The shortcut prefix can be longer than N; counting its N selected odd values is sufficient.
+
+More generally, P_q=o(q^(40/19)) also suffices. The maximum of the first N height bounds is o(N^(20/19)); occupancy would give N=o(N). At the boundary, P_q=O(q^(40/19)/(log q)^epsilon), epsilon>0, is a useful stronger concrete target.
+
+The reciprocal-sum bound fails on a nontrivial cycle; its distortion product grows while J_q decays geometrically. Thus this argument does not exclude cycles. That is why Problem 03 is separate.
+
+WHY PROBLEM 03 IS EXACT
+
+Set n_0=C/D when D>0 divides C. Since C and D are odd, n_0 is a positive odd integer. Iterating the prescribed affine steps gives a cycle with return equation D n_0=C. The congruence for the full word enforces each intermediate division; alternatively rotate the word, giving each cycle state as an odd numerator over the same odd denominator. Each state is positive and odd, so the prescribed exponents are exact.
+
+Every positive odd cycle supplies such a word. The trivial odd cycle at 1 has every exponent equal to 2, and every all-two word has C=D. Therefore Problem 03 is exactly arbitrary positive-cycle exclusion.
+
+The important arithmetic is complete divisibility. Showing that the unreduced denominator has many or large prime factors does not bound the reduced denominator D/gcd(C,D).
+
+WHY PROBLEM 04 IS EXACT
+
+Compare coefficients in the projected functional equation. It gives
+
+    a_(2m)=a_m  (m>=1),
+    a_(3k+2)=a_(2k+1)  (k>=0).
+
+These are exactly invariance under the shortcut map. If every positive integer reaches 1, every coefficient equals a_1=0. If any source does not reach 1, the indicator of the complement of that basin is a nonzero Boolean solution.
+
+Rationality of a finite-alphabet invariant implies eventual periodicity of coefficients, and the source gives a complete argument forcing their global constancy. The remaining rationality or boundary-continuation assertion is fully open.
+
+Bell-Lagarias already connects basin rationality with the original conjecture. This is not a new analytic resolution. Adamczewski-Bell rationality for two independent Mahler bases requires two actual equations; the single projected mixed equation does not supply them automatically.
+
+SUGGESTED FOUR-AGENT ALLOCATION
+
+Agent 1: Problem 01, complete-certificate transformation and a well-founded carry argument.
+Agent 2: Problem 02, exact weighted endpoint concentration.
+Agent 3: Problem 03, complete-denominator arithmetic across all word lengths.
+Agent 4: Problem 04, finite-alphabet functional equations and genuine new regularity.
+
+Problem 05 is a focused milestone or stress test for Agent 1. Problem 06 is an optional rational-base side project. It is lower priority for full resolution.
+
+Ask each agent for the exact strongest proved statement, its first unresolved step, and a counterexample to any failed strengthening. A finite residue census, a spectrum plot, or many successful inputs should be reported at its actual finite scope.
+
+SOURCE LINKS
+
+Latest reverse closure and four-term layer:
+https://github.com/GettysburgResearch/collatz/blob/e238c63a5d57f96bb063b7472498d1977df51951/research/upper-bit-mergers/DEEP_REVERSE_BASIN.md
+
+Forward-five criterion:
+https://github.com/GettysburgResearch/collatz/blob/64361ecca770092d6c8242dc6211e38818af2e50/research/global-closure-20261120/merger.md
+
+Positive occupation target, including cycles:
+https://github.com/GettysburgResearch/collatz/blob/64361ecca770092d6c8242dc6211e38818af2e50/research/global-closure-20261120/transport.md
+
+Primitive trace and its exact tail:
+https://github.com/GettysburgResearch/collatz/blob/cf49a68bf93e98c97a18dc3d1a4186faf534e422/research/ordinary-basin-closure-20261120/PRIMITIVE_TRACE.md
+
+Uniform finite-path occupancy:
+https://github.com/GettysburgResearch/collatz/blob/eb04a5d79020cefa0ba46794095b5766c5ff66a4/research/fixed-integer-descent/drift.md
+
+Spectrum obstruction and fixed-source distortion:
+https://github.com/GettysburgResearch/collatz/blob/c5cb84502c7289705d59a8781a65fd845b9b6b14/research/global-rigidity-20261120/ORDINARY_ESSENTIAL_SPECTRUM.md
+
+Mahler and full-integrality audit:
+https://github.com/GettysburgResearch/collatz/blob/92f499b9d340d1ff8cc643c3eef3477d61b477c1/research/gemini-dirichlet-global-20261120/MAHLER_AND_INTEGRALITY_AUDIT.md
+
+Prime-support bound:
+https://github.com/GettysburgResearch/collatz/blob/0e7d2841b1591073c6399f91f3b6944ebcdbdbd5/research/allhands-global-closure-20261120/PRIME_SUPPORT_PEAKS.md
+
+Directed circulation:
+https://github.com/GettysburgResearch/collatz/blob/0e7d2841b1591073c6399f91f3b6944ebcdbdbd5/research/allhands-global-closure-20261120/DIRECTED_BOUNDARY_CIRCULATION.md
+
+Finite growing blocks and recharge obstruction:
+https://github.com/GettysburgResearch/collatz/blob/64361ecca770092d6c8242dc6211e38818af2e50/research/global-closure-20261120/arithmetic.md
+
+Restricted rounding-map normalization:
+https://github.com/GettysburgResearch/collatz/blob/cf49a68bf93e98c97a18dc3d1a4186faf534e422/research/ordinary-basin-closure-20261120/TWO_MACRO_NORMALIZATION.md
+
+Bell and Lagarias, inverse orbit generating functions:
+https://arxiv.org/abs/1408.6884
+
+Adamczewski and Bell, separate Mahler equations:
+https://arxiv.org/abs/1303.2019
+
+Andrieu, Eliahou, and Vivion, rational-base normality conjectures:
+https://arxiv.org/abs/2510.11723
+
+PR160 ordered prime-height refinement:
+https://github.com/GettysburgResearch/collatz/blob/6d877e718f5ef9d57fe1830912c444359718747a/research/closure-attacks-20261120/arithmetic/CLOCK_HEIGHT.md
+
+PR160 critical-mass synthesis and exact source qualification:
+https://github.com/GettysburgResearch/collatz/blob/6d877e718f5ef9d57fe1830912c444359718747a/research/closure-attacks-20261120/critical/CRITICAL_SINGULARITY.md
+
