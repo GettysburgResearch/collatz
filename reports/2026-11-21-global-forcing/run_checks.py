@@ -83,12 +83,12 @@ def main():
         ),
     }
     specs = [
-        ("arithmetic/check_shifted_rank.py", "arithmetic/shifted-rank-report.json"),
-        ("certificates/check_carry_compiler.py", "certificates/carry-compiler-report.json"),
-        ("energy/check_renewal_phase.py", "energy/renewal_phase_report.json"),
+        ("arithmetic/check_shifted_rank.py", "arithmetic/shifted-rank-report.json", "status", "PASS"),
+        ("certificates/check_carry_compiler.py", "certificates/carry-compiler-report.json", "success", True),
+        ("energy/check_renewal_phase.py", "energy/renewal_phase_report.json", "status", "PASS"),
     ]
     try:
-        for script, reference in specs:
+        for script, reference, success_key, success_value in specs:
             expected = (ROOT / PACKET / reference).read_bytes()
             first = None
             for optimized in (False, True):
@@ -116,7 +116,7 @@ def main():
                         script + " failed: " + entry["stderr"])
                 require(result.stdout == expected,
                         script + " did not reproduce the full frozen report")
-                require(json.loads(result.stdout).get("status") == "PASS",
+                require(json.loads(result.stdout).get(success_key) == success_value,
                         script + " report did not pass")
                 if first is not None:
                     require(result.stdout == first, "optimization changed the report")
