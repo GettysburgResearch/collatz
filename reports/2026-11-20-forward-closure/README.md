@@ -160,9 +160,13 @@ Reports:
 [rational cycles](rational-density-report.json),
 [operator controls](operator-controls-report.json).
 
-The clean-checkout repository validation receipt is recorded in the
-publication follow-up and identifies the exact content commit. The
-later receipt commit is not represented as self-certified.
+The published content commit
+[9dcb3b35a8e407af7635469f5643e9fa2f5a1077](https://github.com/GettysburgResearch/collatz/commit/9dcb3b35a8e407af7635469f5643e9fa2f5a1077),
+with tree 755adedd59c3c5ed4a26d41689a98bad849e9398, passed all 11 commands
+of the clean-checkout validator with regressions. The
+[exact receipt](content-validation.json) was generated in a clean complete
+checkout fetched from that published commit. It is attached by this later
+documentation commit, which is not represented as self-certified.
 Repository integrity and bounded arithmetic replay do not establish
 the missing infinite pointwise assertions.
 
