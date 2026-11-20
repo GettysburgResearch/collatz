@@ -1,0 +1,501 @@
+{
+  "archived_files_authenticated": 15,
+  "collatz_proved": false,
+  "evidence_scope": "Finite exact arithmetic and semantic countercontrols in normal and optimized Python. General claims rest on the written proofs and their stated dependencies. No Lean build, full convergence theorem, or external mathematical acceptance is claimed.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runs": [
+    {
+      "optimized": false,
+      "result": {
+        "attachment_negative_coordinate_bug_reproduced": true,
+        "collatz_proved": false,
+        "complete_selector_established": false,
+        "corrupted_intercept_rejected": true,
+        "route1_affine_density": "41/256",
+        "route1_affine_leaves": 43,
+        "route1_second_arm_contraction_density": "59/128",
+        "route1_second_arm_contraction_leaves": 33,
+        "route5_forward_descent_leaves": 34,
+        "route5_forward_descent_residues_mod1024": 959,
+        "source121": {
+          "clock_source": 2,
+          "clock_witness": 0,
+          "endpoint": 91,
+          "source": 121,
+          "witness": 91
+        },
+        "source_hashes": {
+          "route_1_merger_families_pr146/verify_merger_families.py": "918bfd76af673d1ca950262dc1f5e07607ee0afeeb3056d8d02b109efac4eac9",
+          "route_5_transducer_merging_and_lean4_kernel/verify_transducer_merging.py": "bcb71c5f35614017c11daddc0ba8f184c6384c08e753a94d87ebadb7afa97066"
+        },
+        "status": "PASS_LOCAL_AUDIT_ONLY"
+      },
+      "returncode": 0,
+      "script": "check_routes_1_5.py",
+      "stderr": "",
+      "stdout_sha256": "b5a9b95a46b399cc5c41589d36eaf7de1ca404f7d9218a3d805f5a26669399a7"
+    },
+    {
+      "optimized": true,
+      "result": {
+        "attachment_negative_coordinate_bug_reproduced": true,
+        "collatz_proved": false,
+        "complete_selector_established": false,
+        "corrupted_intercept_rejected": true,
+        "route1_affine_density": "41/256",
+        "route1_affine_leaves": 43,
+        "route1_second_arm_contraction_density": "59/128",
+        "route1_second_arm_contraction_leaves": 33,
+        "route5_forward_descent_leaves": 34,
+        "route5_forward_descent_residues_mod1024": 959,
+        "source121": {
+          "clock_source": 2,
+          "clock_witness": 0,
+          "endpoint": 91,
+          "source": 121,
+          "witness": 91
+        },
+        "source_hashes": {
+          "route_1_merger_families_pr146/verify_merger_families.py": "918bfd76af673d1ca950262dc1f5e07607ee0afeeb3056d8d02b109efac4eac9",
+          "route_5_transducer_merging_and_lean4_kernel/verify_transducer_merging.py": "bcb71c5f35614017c11daddc0ba8f184c6384c08e753a94d87ebadb7afa97066"
+        },
+        "status": "PASS_LOCAL_AUDIT_ONLY"
+      },
+      "returncode": 0,
+      "script": "check_routes_1_5.py",
+      "stderr": "",
+      "stdout_sha256": "b5a9b95a46b399cc5c41589d36eaf7de1ca404f7d9218a3d805f5a26669399a7"
+    },
+    {
+      "optimized": false,
+      "result": {
+        "actual_transport": {
+          "all_p_claim_evidence": "written geometric-series proof; finite replay is supplementary",
+          "checked_return_horizons": [
+            1,
+            16
+          ],
+          "direct_unsafe_family_cases": 17,
+          "essential_spectral_boundary_shadow_cases": 48,
+          "killed_unsafe_returns": 27,
+          "largest_family_exponent": 260,
+          "largest_observed_safe_excursion": 7,
+          "source_range": [
+            2,
+            4096
+          ],
+          "square_root_input_moment_exact_upper_bound": "19683/32800",
+          "square_root_partial_output_moment": 17,
+          "unsafe_sources": 1469
+        },
+        "binary_operator": {
+          "fixed_floor_counterexample": [
+            27,
+            41,
+            62,
+            31
+          ],
+          "full_radius_formula": "(w0+w1)/2",
+          "killed_radius_formula": "w1/2",
+          "parity_shift_interfaces": [
+            {
+              "killed_rows": 1,
+              "m": 1,
+              "states": 2,
+              "unique_cyclic_window": 1
+            },
+            {
+              "killed_rows": 2,
+              "m": 2,
+              "states": 4,
+              "unique_cyclic_window": 3
+            },
+            {
+              "killed_rows": 5,
+              "m": 3,
+              "states": 8,
+              "unique_cyclic_window": 7
+            },
+            {
+              "killed_rows": 12,
+              "m": 4,
+              "states": 16,
+              "unique_cyclic_window": 15
+            },
+            {
+              "killed_rows": 27,
+              "m": 5,
+              "states": 32,
+              "unique_cyclic_window": 31
+            },
+            {
+              "killed_rows": 55,
+              "m": 6,
+              "states": 64,
+              "unique_cyclic_window": 63
+            },
+            {
+              "killed_rows": 114,
+              "m": 7,
+              "states": 128,
+              "unique_cyclic_window": 127
+            },
+            {
+              "killed_rows": 236,
+              "m": 8,
+              "states": 256,
+              "unique_cyclic_window": 255
+            },
+            {
+              "killed_rows": 473,
+              "m": 9,
+              "states": 512,
+              "unique_cyclic_window": 511
+            },
+            {
+              "killed_rows": 959,
+              "m": 10,
+              "states": 1024,
+              "unique_cyclic_window": 1023
+            }
+          ],
+          "robust_minimum_factor": "w1 for alpha>0; equals (3/2)^alpha > 1"
+        },
+        "evidence_scope": "finite exact interface replay plus stated controls; all-depth results rest on written proofs",
+        "inverse_game": {
+          "optimistic_exact_slope": 1,
+          "optimistic_potential": [
+            3,
+            2,
+            4,
+            3,
+            5,
+            3,
+            2,
+            3,
+            1,
+            4,
+            4,
+            1,
+            4,
+            1,
+            2,
+            5,
+            6,
+            0
+          ],
+          "robust_additive_eigenvector": [
+            -2,
+            -3,
+            -1,
+            -1,
+            0,
+            -2,
+            -2,
+            -2,
+            -3,
+            -1,
+            0,
+            -4,
+            -1,
+            -3,
+            -3,
+            0,
+            1,
+            -4
+          ],
+          "robust_exact_slope": 3,
+          "states": [
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            10,
+            11,
+            13,
+            14,
+            16,
+            17,
+            19,
+            20,
+            22,
+            23,
+            25,
+            26
+          ],
+          "timeout_control": {
+            "actual_stabilization_round": 251,
+            "false_negative_cutoff": 200
+          }
+        },
+        "source_sha256": {
+          "ACTUAL_TRANSPORT.md": "d4e493edf472ead85c4ca0a9db0b4167579d287c901b6e88236f206e03a4ec3b",
+          "AVERAGED_CHAIN_AUDIT.md": "bad63af13a553dd6a1ded53b88fb90c9a277a3ecb2544949def40b6781389adf",
+          "verify_inverse_transport.py": "083b6af5d3052188f2efc4af605f842621d46e25b7d74d5625c43a0d096e26ff"
+        },
+        "status": "PASS"
+      },
+      "returncode": 0,
+      "script": "verify_inverse_transport.py",
+      "stderr": "",
+      "stdout_sha256": "60da7b0dd0033dc241b15364fbed2692189185075a6ce344bae59c6fc246b7d5"
+    },
+    {
+      "optimized": true,
+      "result": {
+        "actual_transport": {
+          "all_p_claim_evidence": "written geometric-series proof; finite replay is supplementary",
+          "checked_return_horizons": [
+            1,
+            16
+          ],
+          "direct_unsafe_family_cases": 17,
+          "essential_spectral_boundary_shadow_cases": 48,
+          "killed_unsafe_returns": 27,
+          "largest_family_exponent": 260,
+          "largest_observed_safe_excursion": 7,
+          "source_range": [
+            2,
+            4096
+          ],
+          "square_root_input_moment_exact_upper_bound": "19683/32800",
+          "square_root_partial_output_moment": 17,
+          "unsafe_sources": 1469
+        },
+        "binary_operator": {
+          "fixed_floor_counterexample": [
+            27,
+            41,
+            62,
+            31
+          ],
+          "full_radius_formula": "(w0+w1)/2",
+          "killed_radius_formula": "w1/2",
+          "parity_shift_interfaces": [
+            {
+              "killed_rows": 1,
+              "m": 1,
+              "states": 2,
+              "unique_cyclic_window": 1
+            },
+            {
+              "killed_rows": 2,
+              "m": 2,
+              "states": 4,
+              "unique_cyclic_window": 3
+            },
+            {
+              "killed_rows": 5,
+              "m": 3,
+              "states": 8,
+              "unique_cyclic_window": 7
+            },
+            {
+              "killed_rows": 12,
+              "m": 4,
+              "states": 16,
+              "unique_cyclic_window": 15
+            },
+            {
+              "killed_rows": 27,
+              "m": 5,
+              "states": 32,
+              "unique_cyclic_window": 31
+            },
+            {
+              "killed_rows": 55,
+              "m": 6,
+              "states": 64,
+              "unique_cyclic_window": 63
+            },
+            {
+              "killed_rows": 114,
+              "m": 7,
+              "states": 128,
+              "unique_cyclic_window": 127
+            },
+            {
+              "killed_rows": 236,
+              "m": 8,
+              "states": 256,
+              "unique_cyclic_window": 255
+            },
+            {
+              "killed_rows": 473,
+              "m": 9,
+              "states": 512,
+              "unique_cyclic_window": 511
+            },
+            {
+              "killed_rows": 959,
+              "m": 10,
+              "states": 1024,
+              "unique_cyclic_window": 1023
+            }
+          ],
+          "robust_minimum_factor": "w1 for alpha>0; equals (3/2)^alpha > 1"
+        },
+        "evidence_scope": "finite exact interface replay plus stated controls; all-depth results rest on written proofs",
+        "inverse_game": {
+          "optimistic_exact_slope": 1,
+          "optimistic_potential": [
+            3,
+            2,
+            4,
+            3,
+            5,
+            3,
+            2,
+            3,
+            1,
+            4,
+            4,
+            1,
+            4,
+            1,
+            2,
+            5,
+            6,
+            0
+          ],
+          "robust_additive_eigenvector": [
+            -2,
+            -3,
+            -1,
+            -1,
+            0,
+            -2,
+            -2,
+            -2,
+            -3,
+            -1,
+            0,
+            -4,
+            -1,
+            -3,
+            -3,
+            0,
+            1,
+            -4
+          ],
+          "robust_exact_slope": 3,
+          "states": [
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            10,
+            11,
+            13,
+            14,
+            16,
+            17,
+            19,
+            20,
+            22,
+            23,
+            25,
+            26
+          ],
+          "timeout_control": {
+            "actual_stabilization_round": 251,
+            "false_negative_cutoff": 200
+          }
+        },
+        "source_sha256": {
+          "ACTUAL_TRANSPORT.md": "d4e493edf472ead85c4ca0a9db0b4167579d287c901b6e88236f206e03a4ec3b",
+          "AVERAGED_CHAIN_AUDIT.md": "bad63af13a553dd6a1ded53b88fb90c9a277a3ecb2544949def40b6781389adf",
+          "verify_inverse_transport.py": "083b6af5d3052188f2efc4af605f842621d46e25b7d74d5625c43a0d096e26ff"
+        },
+        "status": "PASS"
+      },
+      "returncode": 0,
+      "script": "verify_inverse_transport.py",
+      "stderr": "",
+      "stdout_sha256": "60da7b0dd0033dc241b15364fbed2692189185075a6ce344bae59c6fc246b7d5"
+    },
+    {
+      "optimized": false,
+      "result": {
+        "advertised_minus_prototype_first_nonzero_coefficient": {
+          "coefficient": 36,
+          "degree": 2
+        },
+        "all_odd_positive_prefix_lengths_checked": "1..100",
+        "arbitrary_support_positivity_cases": 511,
+        "equal_budget_cases": 36,
+        "exact_norm_checks": 414,
+        "first_crossing_cases": 1999,
+        "first_crossing_descent_checked_range": "2..2000",
+        "negative_controls": [
+          "unchanged prototype fails documented minus-series order",
+          "arbitrary subcritical endpoint at n=7,j=8 does not descend",
+          "three printed lower convergents have positive D"
+        ],
+        "scope": "Exact bounded arithmetic checks; general classification is proved in the companion note. No universal Collatz or CST verification.",
+        "status": "PASS",
+        "true_plus_prototype": "((1+z)^(1/3)-1)^8",
+        "unequal_budget_cases": 117
+      },
+      "returncode": 0,
+      "script": "check_hermite_pade_audit.py",
+      "stderr": "",
+      "stdout_sha256": "fe8657f521f33fcb3d3efbd8bab56e43c49fe516508f404c1605baafb6b3ced2"
+    },
+    {
+      "optimized": true,
+      "result": {
+        "advertised_minus_prototype_first_nonzero_coefficient": {
+          "coefficient": 36,
+          "degree": 2
+        },
+        "all_odd_positive_prefix_lengths_checked": "1..100",
+        "arbitrary_support_positivity_cases": 511,
+        "equal_budget_cases": 36,
+        "exact_norm_checks": 414,
+        "first_crossing_cases": 1999,
+        "first_crossing_descent_checked_range": "2..2000",
+        "negative_controls": [
+          "unchanged prototype fails documented minus-series order",
+          "arbitrary subcritical endpoint at n=7,j=8 does not descend",
+          "three printed lower convergents have positive D"
+        ],
+        "scope": "Exact bounded arithmetic checks; general classification is proved in the companion note. No universal Collatz or CST verification.",
+        "status": "PASS",
+        "true_plus_prototype": "((1+z)^(1/3)-1)^8",
+        "unequal_budget_cases": 117
+      },
+      "returncode": 0,
+      "script": "check_hermite_pade_audit.py",
+      "stderr": "",
+      "stdout_sha256": "fe8657f521f33fcb3d3efbd8bab56e43c49fe516508f404c1605baafb6b3ced2"
+    }
+  ],
+  "source_sha256": {
+    "ACTUAL_TRANSPORT.md": "d4e493edf472ead85c4ca0a9db0b4167579d287c901b6e88236f206e03a4ec3b",
+    "AVERAGED_CHAIN_AUDIT.md": "bad63af13a553dd6a1ded53b88fb90c9a277a3ecb2544949def40b6781389adf",
+    "HERMITE_PADE_AUDIT.md": "43a9edec6fc0f24e4a2d744460bde80a832350c53839f341c82638ae5bb61e6b",
+    "README.md": "ba87facfbcc452fd3bb808aa153c8b7e071d27e1eea354f0aa9fbe051c61d1b5",
+    "ROUTES_1_5_AUDIT.md": "2616077ac00ca918e82fceadb2a754bf8c95e7f13e758866d164813b3d26ab13",
+    "SOURCE_PERSISTENT_TARGET.md": "b604f0f7b5f70b19adda1bf9da14a7a677b059263728c2a741719b32650c4881",
+    "check_hermite_pade_audit.py": "aba46ab74e512bcef1f02dafab522c2de497a0598babf92dbc0b36d2d1c48d4d",
+    "check_routes_1_5.py": "07ba89f6273631a9dbc4be346108022aacb40491551a4adfb9b4714285326f91",
+    "run_checks.py": "f49e2cd426407bdf69b18765d7d4aee58aa0f010fda03013d29a3a9f60d37ab1",
+    "verify_inverse_transport.py": "083b6af5d3052188f2efc4af605f842621d46e25b7d74d5625c43a0d096e26ff"
+  },
+  "status": "PASS_SCOPED_ARITHMETIC",
+  "upload_replay": {
+    "executed_in_this_run": true,
+    "receipt_byte_identical": true,
+    "receipt_sha256": "b5d4cbc2744149b01849eaa352c5915c595d435717f8f0d69308534a27213d4c",
+    "returncode": 0,
+    "scope": "Reproduced the five original finite calculations; prose claims audited separately.",
+    "stderr": "",
+    "stdout": "{\n  \"overall_status\": \"PASS\",\n  \"verifiers_run\": 5\n}\n"
+  },
+  "uploaded_zip_sha256": "429db0315d3658f5888817d7b8948aba6dee079193b948a3d0a44a2fa4ae4470"
+}
