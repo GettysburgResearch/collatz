@@ -1,0 +1,22 @@
+{
+  "bit_order": "least-significant-bit-first; interleaved source indices 3j and 3j+2",
+  "digits": 17,
+  "format": "fixed-policy-bits-v1",
+  "full_int32_sha256": "e88a51546c4ccb6951164c19877675e462f108dc246eb18223f3c9aa43d52a8f",
+  "max_credit": 133,
+  "max_iterations": 202,
+  "max_selected_gap": 10,
+  "modulus": 129140163,
+  "p": 25,
+  "policy_bits": 28697814,
+  "policy_file": "policy_25_12.bits.gz",
+  "policy_sha256": "3bd8c3cc72c87bac5acc33156a296ec2c0845d87a120567fe2ad8830c3a4b07b",
+  "q": 12,
+  "reconstruction_iterations": 202,
+  "synthesis": {
+    "full_physical_iterations": 1353,
+    "reduced_minimization_iterations": 856
+  },
+  "value_order": "W(3i+2), i=0,...,3^(digits-1)-1",
+  "values_sha256": "bdf70ec223fbd08baa6ae3040dfb394185e98b08b5b388c09a5ff844d57faf33"
+}

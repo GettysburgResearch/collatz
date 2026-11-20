@@ -1,0 +1,14 @@
+{
+  "certificate_depth": 17,
+  "distinct_suffixes": 740,
+  "global_additive_numerator": 120,
+  "largest_ternary_depth": 1000,
+  "max_credit": 133,
+  "ordinary_forward_replays": 2220,
+  "p": 25,
+  "prefixes": [0, 1, 37],
+  "q": 12,
+  "scope": "Bounded ordinary replays; universal scope comes from all-lift inequalities.",
+  "status": "PASS",
+  "table_sha256": "e88a51546c4ccb6951164c19877675e462f108dc246eb18223f3c9aa43d52a8f"
+}

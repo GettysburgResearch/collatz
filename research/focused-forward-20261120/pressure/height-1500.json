@@ -1,0 +1,54 @@
+{
+  "cached_tail_edges_reused": 89624141,
+  "candidate_odd_units": 1789700,
+  "cutoff": 5369100,
+  "cutoff_formula": "floor_fifth_root(floor((256^N-1)/(2*243^N)))",
+  "direct_odd_edges_computed": 3016547,
+  "exact_height_cutoff": 5369100,
+  "executable_sha256": "74899d1cce9580e3b324ca43f9ce5ee6aa50cb2d52bd6b294149ac8732b4bc90",
+  "first_hit_within_horizon": 1789700,
+  "horizon": 1500,
+  "independent_inverse_controls": [
+    {
+      "horizon": 0,
+      "inverse_nodes": 1,
+      "potential": 0
+    },
+    {
+      "horizon": 1,
+      "inverse_nodes": 1,
+      "potential": 0
+    },
+    {
+      "horizon": 10,
+      "inverse_nodes": 3,
+      "potential": 0
+    },
+    {
+      "horizon": 20,
+      "inverse_nodes": 38,
+      "potential": 0
+    },
+    {
+      "horizon": 30,
+      "inverse_nodes": 438,
+      "potential": 0
+    },
+    {
+      "horizon": 40,
+      "inverse_nodes": 4987,
+      "potential": 0
+    }
+  ],
+  "maximum_first_hit_depth": 218,
+  "maximum_first_hit_total_exponent": 368,
+  "maximum_nonroot_score": -12,
+  "maximum_nonroot_score_source": 5,
+  "maximum_odd_state_actually_computed": "439600764977",
+  "maximum_score_source": 1,
+  "maximum_score_with_zero": 0,
+  "no_first_hit_within_horizon": 0,
+  "potential_at_one": 0,
+  "scope": "Exact W_N(1) for the reported finite horizon; no conclusion about W(1), escaping orbits, or Collatz",
+  "status": "EXACT_BOUNDED_REPLAY"
+}

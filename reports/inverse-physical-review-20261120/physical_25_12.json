@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "depth": 17,
+  "p": 25,
+  "q": 12,
+  "supplied_policy_checked": true,
+  "supplied_policy_bits": 28697814,
+  "rows": 86093442,
+  "max_credit": 133,
+  "selected_odd_rows": 22726538,
+  "physical_odd_lift_checks": 86093442,
+  "minimum_physical_slack": 0,
+  "class_one_reconstruction_checks": 43046721,
+  "maximum_terminal_refund": 12,
+  "global_compiler_additive_numerator": 120,
+  "maximum_odd_gap": 10,
+  "collapsed_lift_checks": 258280326,
+  "minimum_collapsed_slack": 0,
+  "gap_counts": {
+    "1": 22726538,
+    "2": 22726538,
+    "3": 14335933,
+    "4": 14335933,
+    "5": 5878239,
+    "6": 5878239,
+    "7": 93037,
+    "8": 93037,
+    "9": 12974,
+    "10": 12974
+  }
+}

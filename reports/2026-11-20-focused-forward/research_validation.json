@@ -1,0 +1,169 @@
+{
+  "scope": "Executed checks on a clean complete fetched scientific-content commit; finite replay and repository integrity do not establish Collatz.",
+  "executed_at_utc": "2026-11-20 18:45:21 UTC",
+  "checkout": {
+    "commit": "8f50cd6f61d59ff2cf5547604dd6a28349bd19af",
+    "tree": "88805a31ac52b45d14fa81114ade1aa5dec17417",
+    "tracked_files": 372,
+    "clean_after": true
+  },
+  "commands": [
+    {
+      "label": "compile_height_replay",
+      "command": "g++ -std=c++17 -O3 -Wall -Wextra -Wconversion research/focused-forward-20261120/pressure/height_replay.cpp -o /tmp/collatz-focused-height-replay",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.528031654,
+      "output": ""
+    },
+    {
+      "label": "three_ray",
+      "command": "python -X utf8 -B research/focused-forward-20261120/three-ray/check.py",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.126548555,
+      "output": "{\n  \"status\": \"PASS\",\n  \"scope\": \"bounded exact ordinary replay\",\n  \"universal_collatz_claim\": false,\n  \"checks\": {\n    \"grade_pairs\": 2000,\n    \"uniform_grade_pairs\": 466,\n    \"nonuniform_grade_pairs\": 1534,\n    \"pointwise_without_cylinder_controls\": 18,\n    \"aligned_pullbacks\": 1139,\n    \"initial_guard_replays\": 2048,\n    \"immediate_mergers\": 1024,\n    \"offset_reductions\": 1024,\n    \"odd_valuation_returns\": 346,\n    \"lower_input_lists\": 117,\n    \"forced_odd_valuation_replays\": 130,\n    \"prescribed_valuation_transitions\": 360,\n    \"same_valuation_growth_controls\": 13,\n    \"constant_schedule_witnesses\": 108,\n    \"periodic_schedule_witnesses\": 48,\n    \"equal_factor_divisibility_checks\": 1698,\n    \"variable_schedule_witnesses\": 16\n  }\n}\n"
+    },
+    {
+      "label": "five_ray_finite_clock",
+      "command": "python -X utf8 -B research/focused-forward-20261120/five-ray/check_finite_clock_barrier.py",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.105999927,
+      "output": "RATIONAL MARGINS {'state_floor_lower': '31/1200', 'state_floor_margin': '1/1200', 'baker_constant_upper': 9393093476352, 'effective_log_size_threshold': 1152921504606846976}\nWORD REPLAY {'affine_words': 8191, 'word_pairs': 16129, 'positive_integral_equation_candidates': 296, 'legally_realized_meeting_word_pairs': 32}\nh N joint_labels max_fiber far_unresolved shell_clock shell_unresolved\n1 2 2 1 2 1 2\n2 4 4 1 4 3 4\n3 8 8 1 8 5 7\n4 16 16 1 16 7 14\n5 32 32 1 32 8 30\n6 64 64 1 64 10 62\n7 128 127 2 128 12 124\n8 256 252 2 256 14 250\n9 512 499 3 512 15 505\n10 1024 990 3 1024 17 1011\n11 2048 1964 3 2048 19 2036\n12 4096 3893 3 4096 21 4051\nEXPLICIT FAR PARAMETERS 8190\nNATURAL SHELL PARAMETERS 8190\nPAIRED RETURN REPLAYS 256\nNEGATIVE CONTROLS {'compatible_slope_meeting': (25, 76, 1, 1), 'short_unresolved_but_later_convergent': (24, 121, 8, 61)}\nPASS: bounded exact checks only; no permanent five-ray claim\n"
+    },
+    {
+      "label": "five_ray_returns",
+      "command": "python -X utf8 -B research/focused-forward-20261120/five-ray/check_paired_returns.py",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.016159228,
+      "output": "SIX-BIT CLASSIFICATION (126, [(6, 11, 5, 3), (6, 35, 5, 2)])\nINDEPENDENT-CLOCK AFFINE COMPARISONS 100\nTARGET-GATE REGRESSIONS (65536, 391)\nGUARD REPLAYS / COVERED / PERIOD (384, 1520, 46656)\nCONDITIONAL PATHS / SCALING-MODEL REPLAYS (264, 2048)\nPASS: ordinary certificates and partial guard; universal coverage remains open\n"
+    },
+    {
+      "label": "pressure_python_1000",
+      "command": "python -X utf8 -B research/focused-forward-20261120/pressure/height_certificate.py --horizon 1000 --python --controls",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.065109266,
+      "output": "{\n  \"candidate_odd_units\": 9759,\n  \"cutoff_formula\": \"floor_fifth_root(floor((256^N-1)/(2*243^N)))\",\n  \"exact_height_cutoff\": 29277,\n  \"first_hit_within_horizon\": 9759,\n  \"horizon\": 1000,\n  \"independent_inverse_controls\": [\n    {\n      \"horizon\": 0,\n      \"inverse_nodes\": 1,\n      \"potential\": 0\n    },\n    {\n      \"horizon\": 1,\n      \"inverse_nodes\": 1,\n      \"potential\": 0\n    },\n    {\n      \"horizon\": 10,\n      \"inverse_nodes\": 3,\n      \"potential\": 0\n    },\n    {\n      \"horizon\": 20,\n      \"inverse_nodes\": 38,\n      \"potential\": 0\n    },\n    {\n      \"horizon\": 30,\n      \"inverse_nodes\": 438,\n      \"potential\": 0\n    },\n    {\n      \"horizon\": 40,\n      \"inverse_nodes\": 4987,\n      \"potential\": 0\n    }\n  ],\n  \"maximum_nonroot_score\": -12,\n  \"maximum_nonroot_score_source\": 5,\n  \"maximum_score_source\": 1,\n  \"maximum_score_with_zero\": 0,\n  \"no_first_hit_within_horizon\": 0,\n  \"potential_at_one\": 0,\n  \"scope\": \"Exact W_N(1) for the reported finite horizon; no conclusion about W(1), escaping orbits, or Collatz\"\n}\n"
+    },
+    {
+      "label": "pressure_cpp_1000",
+      "command": "python -X utf8 -B research/focused-forward-20261120/pressure/height_certificate.py --horizon 1000 --executable /tmp/collatz-focused-height-replay",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.019389615,
+      "output": "{\n  \"cached_tail_edges_reused\": 312879,\n  \"candidate_odd_units\": 9759,\n  \"cutoff\": 29277,\n  \"cutoff_formula\": \"floor_fifth_root(floor((256^N-1)/(2*243^N)))\",\n  \"direct_odd_edges_computed\": 16461,\n  \"exact_height_cutoff\": 29277,\n  \"executable_sha256\": \"74899d1cce9580e3b324ca43f9ce5ee6aa50cb2d52bd6b294149ac8732b4bc90\",\n  \"first_hit_within_horizon\": 9759,\n  \"horizon\": 1000,\n  \"maximum_first_hit_depth\": 113,\n  \"maximum_first_hit_total_exponent\": 194,\n  \"maximum_nonroot_score\": -12,\n  \"maximum_nonroot_score_source\": 5,\n  \"maximum_odd_state_actually_computed\": \"35452673\",\n  \"maximum_score_source\": 1,\n  \"maximum_score_with_zero\": 0,\n  \"no_first_hit_within_horizon\": 0,\n  \"potential_at_one\": 0,\n  \"scope\": \"Exact W_N(1) for the reported finite horizon; no conclusion about W(1), escaping orbits, or Collatz\",\n  \"status\": \"EXACT_BOUNDED_REPLAY\"\n}\n"
+    },
+    {
+      "label": "pressure_independent_checks",
+      "command": "python -X utf8 -B research/focused-forward-20261120/pressure/check_review.py --executable /tmp/collatz-focused-height-replay",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "wall_time_seconds": 0.113123665,
+      "output": "{\n  \"all_scale_coefficient_rational_lower\": \"595363245098837407663/73944117820374267578125\",\n  \"executable_sha256\": \"74899d1cce9580e3b324ca43f9ce5ee6aa50cb2d52bd6b294149ac8732b4bc90\",\n  \"independent_cpp_comparisons\": 54,\n  \"inverse_one_letters_replayed\": 10100,\n  \"local_oscillation_pairs_replayed\": 199,\n  \"ordinary_candidate_cases\": 3420,\n  \"scope\": \"Bounded arithmetic and implementation audit; no infinite-depth or Collatz conclusion\",\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "label": "research/focused-forward-20261120/three-ray/check.py/-O",
+      "command": "python -O -X utf8 -B research/focused-forward-20261120/three-ray/check.py",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.045254483,
+      "output": "Refusing optimized execution: this verifier requires assertions.\n"
+    },
+    {
+      "label": "research/focused-forward-20261120/three-ray/check.py/-OO",
+      "command": "python -OO -X utf8 -B research/focused-forward-20261120/three-ray/check.py",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.075911447,
+      "output": "Refusing optimized execution: this verifier requires assertions.\n"
+    },
+    {
+      "label": "research/focused-forward-20261120/five-ray/check_finite_clock_barrier.py/-O",
+      "command": "python -O -X utf8 -B research/focused-forward-20261120/five-ray/check_finite_clock_barrier.py",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.059158318,
+      "output": "Refusing optimized execution: exact checks require assertions\n"
+    },
+    {
+      "label": "research/focused-forward-20261120/five-ray/check_finite_clock_barrier.py/-OO",
+      "command": "python -OO -X utf8 -B research/focused-forward-20261120/five-ray/check_finite_clock_barrier.py",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.050902691,
+      "output": "Refusing optimized execution: exact checks require assertions\n"
+    },
+    {
+      "label": "research/focused-forward-20261120/five-ray/check_paired_returns.py/-O",
+      "command": "python -O -X utf8 -B research/focused-forward-20261120/five-ray/check_paired_returns.py",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.073577435,
+      "output": "Refusing optimized execution: exact checks require assertions\n"
+    },
+    {
+      "label": "research/focused-forward-20261120/five-ray/check_paired_returns.py/-OO",
+      "command": "python -OO -X utf8 -B research/focused-forward-20261120/five-ray/check_paired_returns.py",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "wall_time_seconds": 0.078561367,
+      "output": "Refusing optimized execution: exact checks require assertions\n"
+    }
+  ],
+  "supplementary_check": {
+    "command": "python - <<'PY'\nfrom pathlib import Path\nfrom fractions import Fraction\nimport csv,hashlib,json,re,subprocess\n\ndef require(ok,msg):\n    if not ok: raise ValueError(msg)\ndef sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()\ndef git(*args): return subprocess.check_output(['git',*args]).decode().strip()\nroot=Path('.')\nbase=root/'research/focused-forward-20261120'\naudit=json.loads((base/'pressure/audit-snapshot.json').read_text())\nfor name,entry in audit['files'].items():\n    p=base/'pressure'/name\n    require(sha(p)==entry['sha256'], 'pressure digest '+name)\n    require(git('hash-object',str(p))==entry['git_blob_sha'],'pressure blob '+name)\np=base/'five-ray/paired_return_cones_24.tsv'\nrows=list(csv.DictReader(p.open(),delimiter='\\t'))\ncones=[]\nfor row in rows:\n    q,r,h,start,target,expands=(int(row[key]) for key in ('q','target_residue','h','source_residue','target_at_source','inverse_expands'))\n    require(0<start<2**h,'source cell')\n    n,m=start,5*start+1\n    qn=qm=0\n    for _ in range(h):\n        qn+=n%2; qm+=m%2\n        n=(3*n+1)//2 if n%2 else n//2\n        m=(3*m+1)//2 if m%2 else m//2\n    require(n==target and m==5*target+1 and qn==qm==q,'paired witness')\n    require(n%3**q==r and 0<=r<3**q,'ternary target cell')\n    require(expands==int(2**h>3**q),'direction flag')\n    cones.append((q,r))\nfor i,(q,r) in enumerate(cones):\n    for j,(s,t) in enumerate(cones):\n        if i!=j and q<=s: require(t%3**q!=r,'cone antichain')\nmeasure=sum((Fraction(1,3**q) for q,r in cones),Fraction())\nrequire(len(rows)==178 and measure==Fraction(11842,59049),'selected cone count/measure')\npaths=git('diff','--name-only','6ff18e4f63be8f3bece76215fcfe44d83b001d7f','HEAD').splitlines()\nfiles={s:sha(root/s) for s in paths}\nlink_count=0\nfor s in paths:\n    if not s.endswith('.md'): continue\n    p=root/s\n    for target in re.findall(r'\\]\\(([^)]+)\\)',p.read_text()):\n        if re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:',target) or target.startswith('#'):continue\n        target=target.split('#')[0]\n        if not target:continue\n        require((p.parent/target).exists(),'missing link '+str(p)+' -> '+target)\n        link_count+=1\nrequire(git('status','--porcelain')=='','checkout no longer clean')\nprint(json.dumps({'commit':git('rev-parse','HEAD'),'tree':git('rev-parse','HEAD^{tree}'),'tracked_files':len(git('ls-files').splitlines()),'clean':True,'pressure_snapshot_digests_verified':len(audit['files']),'selected_witnesses_replayed':len(rows),'selected_cones_form_antichain':True,'selected_cone_measure_on_Z3':str(measure),'new_relative_file_links_checked':link_count,'new_file_sha256':files,'scope':'Selected finite witness replay, exact digests and local file links; not universal convergence or complete branch coverage'},indent=2))\nPY",
+    "exit_code": 0,
+    "results": {
+      "commit": "8f50cd6f61d59ff2cf5547604dd6a28349bd19af",
+      "tree": "88805a31ac52b45d14fa81114ade1aa5dec17417",
+      "tracked_files": 372,
+      "clean": true,
+      "pressure_snapshot_digests_verified": 10,
+      "selected_witnesses_replayed": 178,
+      "selected_cones_form_antichain": true,
+      "selected_cone_measure_on_Z3": "11842/59049",
+      "new_relative_file_links_checked": 18,
+      "new_file_sha256": {
+        "reports/2026-11-20-focused-forward/FIVE_RAY_REVIEW.md": "926b860edd66f533c799715b25aa44223bf7ca811c1937120d7d7773b1a78a05",
+        "reports/2026-11-20-focused-forward/THREE_RAY_REVIEW.md": "67b7180b4e01940ee71267149b94224fd94029685fe4204b44a710f27a549c70",
+        "research/focused-forward-20261120/five-ray/FINITE_CLOCK_BARRIER.md": "c365846083fb5ee1e1f8566092d274a7e092dfc72a47a1a24e9d43f8aa554fb0",
+        "research/focused-forward-20261120/five-ray/PAIRED_RETURNS.md": "9078e9f0b91324f112febeb74cba163ea7b65cd34a0b6c992f0d4eeb50842150",
+        "research/focused-forward-20261120/five-ray/README.md": "36f706f8795749eaf16247c2f91a3138d54705f8b1ffdf4e84055c371f7ce96e",
+        "research/focused-forward-20261120/five-ray/check_finite_clock_barrier.py": "6354edb6022243928abdb6790b093ce14da4e3cdaf5ccc208d534d64d6b01d33",
+        "research/focused-forward-20261120/five-ray/check_paired_returns.py": "e12c78fdd32dc35798d12da0fd5c58bef717668d98b5ad4720f5f5e0306c4ebf",
+        "research/focused-forward-20261120/five-ray/paired_return_cones_24.tsv": "dd1b0c1d4a0194761d630619452e7300fb4fb00d999c4746c679a1923c188c1d",
+        "research/focused-forward-20261120/five-ray/search_paired_returns.cpp": "4c6ca0701cb74bdc3e2e0ffd765d583797876023e0496d1ff7eccf25525640d5",
+        "research/focused-forward-20261120/pressure/AUDIT.md": "5d0ed2c4c7ef73a8a4f03ddc8f7a627a573946903489bbce33092839d41a6de8",
+        "research/focused-forward-20261120/pressure/PROOF.md": "6279992ff93a87b553fb21a904a6877004ee97ff282fe40c5a9af35941fb1071",
+        "research/focused-forward-20261120/pressure/README.md": "5d51a118e1721ff50ea1f9711627e7313935b6a0542f3c491d15f3027acceff6",
+        "research/focused-forward-20261120/pressure/audit-snapshot.json": "fe5ac7cf0d032389e8d47ba26d0312d05d5c536df4a7e0982175de958056f103",
+        "research/focused-forward-20261120/pressure/check_review.py": "4ffea93b5b1eee546c6707cb9e614db94464c53a8147f4dae11c25d68a21d64c",
+        "research/focused-forward-20261120/pressure/height-1000-independent-python.json": "18c3282968a34e8747df1de340d5787175c3773b741c4551d8e43736067e5b71",
+        "research/focused-forward-20261120/pressure/height-1500.json": "ee481df52042b162e49e0211100355684edcc6653542e0cbb7cc8a3caf34087a",
+        "research/focused-forward-20261120/pressure/height-2000.json": "fdce2304a2eea41c1fc9a4ad340f2670821fae53d28fa1fb55ae52c1e9b2f788",
+        "research/focused-forward-20261120/pressure/height_certificate.py": "22b53b398de2c4abe1fd7931571079891ac251703818e53c1c2a008a96f12291",
+        "research/focused-forward-20261120/pressure/height_replay.cpp": "e4407cb35c55318615f47477afdc128a65039b4ad5a1481ce59e39bf47664874",
+        "research/focused-forward-20261120/pressure/review-check.json": "d0c95977552b4202c6df0ad9a4007641e340d36232fef43e7a90ec148ec29889",
+        "research/focused-forward-20261120/three-ray/PROOF.md": "7ea7d3013e9820bd219da9ddf5294cbfbc731d68ec4195942f512e86d8666959",
+        "research/focused-forward-20261120/three-ray/README.md": "d5a1778016dddfb8470699b65c4bfccc955eed4651739e999c5ca06294281ce5",
+        "research/focused-forward-20261120/three-ray/check.py": "4b8f28464d7e2e5b92da729b8b8205f1a0a7da9e85d307a827065c71d6aec902"
+      },
+      "scope": "Selected finite witness replay, exact digests and local file links; not universal convergence or complete branch coverage"
+    }
+  },
+  "pressure_replay_comparison": {
+    "python_and_cpp_horizon": 1000,
+    "agreement": true,
+    "candidate_count": 9759,
+    "binary_sha256": "74899d1cce9580e3b324ca43f9ce5ee6aa50cb2d52bd6b294149ac8732b4bc90",
+    "larger_horizons": [
+      1500,
+      2000
+    ],
+    "larger_horizons_replayed_in_this_clean_checkout": false,
+    "larger_receipts": "Originating runs; reviewed source and same fresh binary digest, with separate smaller independent implementation checks."
+  }
+}
