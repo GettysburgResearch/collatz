@@ -48,3 +48,10 @@ gate. Passing it does not verify the mathematical universal claims.
 Publication-time receipts distinguish the scientific commit from any
 later documentation-only child; none is inferred from a tree read or
 from an earlier checkout.
+
+## Actual publication-time execution
+
+[VALIDATION.md](VALIDATION.md) identifies the exact scientific commit and
+complete checkout, with [16 scientific executions](scientific-bundle-validation.json)
+and [11 repository checks](scientific-checkout-validation.json). The final
+documentation child's separate validation is recorded in the publishing PR.

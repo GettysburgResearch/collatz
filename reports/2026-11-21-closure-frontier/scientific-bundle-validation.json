@@ -1,0 +1,286 @@
+{
+  "after": {
+    "head": "c511ff66d9321bf21fd6d0612ddfdc6c4a2da3ae",
+    "status": "",
+    "tracked_files": 346,
+    "tree": "8cb953abc785f8979a1197a22d2d6406d2829350"
+  },
+  "before": {
+    "head": "c511ff66d9321bf21fd6d0612ddfdc6c4a2da3ae",
+    "status": "",
+    "tracked_files": 346,
+    "tree": "8cb953abc785f8979a1197a22d2d6406d2829350"
+  },
+  "finished_utc": "2026-11-20T23:11:05.730285+00:00",
+  "manifest_entries": 29,
+  "manifest_only": false,
+  "manifest_sha256": "534da89ac9625806f72a0fb6965d128d6fc427947c966e21213dca50981a97e6",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-frontier-20261121/five_return_compiler.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:10:58.364104+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/five_return_report.json",
+      "started_utc": "2026-11-20T23:10:57.878689+00:00",
+      "stderr": "",
+      "stdout_sha256": "cd836cf0e13e274a22db68c23a4f9201e4d53f60d6d9e19047b5a9a83ccb414b"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/closure-frontier-20261121/five_return_compiler.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:10:58.869625+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/five_return_report.json",
+      "started_utc": "2026-11-20T23:10:58.364135+00:00",
+      "stderr": "",
+      "stdout_sha256": "cd836cf0e13e274a22db68c23a4f9201e4d53f60d6d9e19047b5a9a83ccb414b"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-21-closure-frontier/five_independent_check.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:00.143236+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/five_independent_report.json",
+      "started_utc": "2026-11-20T23:10:58.869744+00:00",
+      "stderr": "",
+      "stdout_sha256": "5d76fdc8a1c69f78269f2c043b98e94e03a47bcfa9246044ef23a6cad77e4f26"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-21-closure-frontier/five_independent_check.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:01.491502+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/five_independent_report.json",
+      "started_utc": "2026-11-20T23:11:00.143268+00:00",
+      "stderr": "",
+      "stdout_sha256": "5d76fdc8a1c69f78269f2c043b98e94e03a47bcfa9246044ef23a6cad77e4f26"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-frontier-20261121/negative_template_compiler.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:01.530022+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/negative_template_report.json",
+      "started_utc": "2026-11-20T23:11:01.491626+00:00",
+      "stderr": "",
+      "stdout_sha256": "8444c62a5bf1c63c1e109cb9d839b2d9bccda05db355304716abf2569a02777d"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/closure-frontier-20261121/negative_template_compiler.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:01.611796+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/negative_template_report.json",
+      "started_utc": "2026-11-20T23:11:01.530052+00:00",
+      "stderr": "",
+      "stdout_sha256": "8444c62a5bf1c63c1e109cb9d839b2d9bccda05db355304716abf2569a02777d"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-21-closure-frontier/review_negative_templates.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:01.640667+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/review_negative_templates_report.json",
+      "started_utc": "2026-11-20T23:11:01.611961+00:00",
+      "stderr": "",
+      "stdout_sha256": "328d739c840ece80e4701bb9e2639d30c134e2e66bce5c18a8adac181b74e482"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-21-closure-frontier/review_negative_templates.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:01.708257+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/review_negative_templates_report.json",
+      "started_utc": "2026-11-20T23:11:01.640686+00:00",
+      "stderr": "",
+      "stdout_sha256": "328d739c840ece80e4701bb9e2639d30c134e2e66bce5c18a8adac181b74e482"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-frontier-20261121/check_finite_conductor.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:02.722380+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/finite-conductor-report.json",
+      "started_utc": "2026-11-20T23:11:01.708397+00:00",
+      "stderr": "",
+      "stdout_sha256": "0717b11bd859dbccc9a94fb383125ab7ba8fb636af356d67a06fcddb1c4ceeea"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/closure-frontier-20261121/check_finite_conductor.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:03.799013+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/finite-conductor-report.json",
+      "started_utc": "2026-11-20T23:11:02.722409+00:00",
+      "stderr": "",
+      "stdout_sha256": "0717b11bd859dbccc9a94fb383125ab7ba8fb636af356d67a06fcddb1c4ceeea"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-21-closure-frontier/independent_quotient_review.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:04.083512+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/independent-quotient-report.json",
+      "started_utc": "2026-11-20T23:11:03.799138+00:00",
+      "stderr": "",
+      "stdout_sha256": "523402c81ccddfdb01b00c922f1a234ca44bd61aa7456ec4f891216842ab9066"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-21-closure-frontier/independent_quotient_review.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:04.411902+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/independent-quotient-report.json",
+      "started_utc": "2026-11-20T23:11:04.083546+00:00",
+      "stderr": "",
+      "stdout_sha256": "523402c81ccddfdb01b00c922f1a234ca44bd61aa7456ec4f891216842ab9066"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-frontier-20261121/check_ternary_stationary.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:04.905285+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/ternary-stationary-report.json",
+      "started_utc": "2026-11-20T23:11:04.412034+00:00",
+      "stderr": "",
+      "stdout_sha256": "58e1ed5c099817dff586a021b0180d39073cb24a12aa2226729ad57ecb9e8d56"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/closure-frontier-20261121/check_ternary_stationary.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:05.457044+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/ternary-stationary-report.json",
+      "started_utc": "2026-11-20T23:11:04.905323+00:00",
+      "stderr": "",
+      "stdout_sha256": "58e1ed5c099817dff586a021b0180d39073cb24a12aa2226729ad57ecb9e8d56"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-21-closure-frontier/review_ternary_independent.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:05.559365+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/ternary-independent-report.json",
+      "started_utc": "2026-11-20T23:11:05.457173+00:00",
+      "stderr": "",
+      "stdout_sha256": "774963d2c6d2f22d36bf0ebd68d30804f617618cbb104bf68e6433f7db2a0410"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "reports/2026-11-21-closure-frontier/review_ternary_independent.py"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-11-20T23:11:05.716465+00:00",
+      "matches_frozen_report": true,
+      "reference": "reports/2026-11-21-closure-frontier/ternary-independent-report.json",
+      "started_utc": "2026-11-20T23:11:05.559398+00:00",
+      "stderr": "",
+      "stdout_sha256": "774963d2c6d2f22d36bf0ebd68d30804f617618cbb104bf68e6433f7db2a0410"
+    }
+  ],
+  "started_utc": "2026-11-20T23:10:57.855299+00:00",
+  "status": "PASS"
+}
