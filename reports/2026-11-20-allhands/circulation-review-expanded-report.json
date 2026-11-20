@@ -1,0 +1,26 @@
+{
+  "author_sha256": "8e2b7ca383655a4bf60cb22584ca38812402d0d1b7b3d3f1ba6293e5ef037e33",
+  "balances": [
+    {
+      "balanced": true,
+      "power": 0,
+      "vertices": 26498
+    },
+    {
+      "balanced": true,
+      "power": 1,
+      "vertices": 26498
+    },
+    {
+      "balanced": true,
+      "power": 2,
+      "vertices": 26498
+    }
+  ],
+  "literal_edges": 388919,
+  "rational_clipping_cases": 44217,
+  "return_tripling_edges": 125977,
+  "scope": "Reused author path producer; independent literal edge, affine-source multiplicity, quotient-flow and scalar clipping checks. No independent external KL reproof.",
+  "sources": 223,
+  "status": "PASS"
+}

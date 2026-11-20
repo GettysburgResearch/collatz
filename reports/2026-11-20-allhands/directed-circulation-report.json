@@ -1,0 +1,54 @@
+{
+  "affine_form_bound": 2799922,
+  "checker_sha256": "8e2b7ca383655a4bf60cb22584ca38812402d0d1b7b3d3f1ba6293e5ef037e33",
+  "congruence_facts": {
+    "binary_cosets": [
+      {
+        "class_mod8": 1,
+        "first_hit": 50
+      },
+      {
+        "class_mod8": 3,
+        "first_hit": 0
+      },
+      {
+        "class_mod8": 5,
+        "first_hit": 0
+      },
+      {
+        "class_mod8": 7,
+        "first_hit": 2
+      }
+    ],
+    "high_cases": 8,
+    "ternary_units": 486
+  },
+  "damaged_paths_rejected": 3,
+  "designed_low_source_cases": 180,
+  "distinct_sources": 218,
+  "maximum_fixture_return_length": 1457,
+  "ordinary_or_tripling_edges": 24039,
+  "quotient_flows": [
+    {
+      "all_divergences_zero": true,
+      "exponent": 0,
+      "ordinary_quotient_vertices": 2196
+    },
+    {
+      "all_divergences_zero": true,
+      "exponent": 1,
+      "ordinary_quotient_vertices": 2196
+    },
+    {
+      "all_divergences_zero": true,
+      "exponent": 2,
+      "ordinary_quotient_vertices": 2196
+    }
+  ],
+  "return_tripling_edges": 4447,
+  "scope": "Finite literal positive paths and exact quotient circulations; universal statements use the accompanying proof and pinned source. No full Collatz proof.",
+  "source_pr": 146,
+  "source_revision": "6863d298187af8b2619efbf78cc4b0aa8e627393",
+  "status": "PASS",
+  "uniform_return_length": 93450
+}

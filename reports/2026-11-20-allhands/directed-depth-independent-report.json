@@ -1,0 +1,17 @@
+{
+  "classified_depth_two_sources": [
+    113,
+    7281
+  ],
+  "counts": {
+    "classified_sources": 6250,
+    "known_edges": 2828,
+    "odd_target_edges": 2802,
+    "parameters": 26,
+    "target_edges": 2854
+  },
+  "fixture_sha256": "021939e13bd91900af1b5ac5f5a13e69edbda641318df4b3b4726e8111f62132",
+  "limit": "No universal convergence of residual Mersenne targets.",
+  "scope": "independent bounded reconstruction, no author imports",
+  "status": "PASS"
+}
