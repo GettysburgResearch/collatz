@@ -58,7 +58,9 @@ The fetched scientific commit
 executions and all 30 complete-output comparisons in a clean complete
 369-file checkout. Its 51 frozen manifest paths were unchanged. The
 repository gate passed all 11 commands. The attached receipts and exact
-tree are in [VALIDATION.md](VALIDATION.md).
+tree are in [VALIDATION.md](VALIDATION.md). The attached records use a
+direct GitHub clone with complete reachable history and supersede the
+earlier local-clone receipts; the scientific content is unchanged.
 
 ## Publication boundary
 
