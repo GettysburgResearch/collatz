@@ -87,9 +87,15 @@ verified the exported certificate. A targeted 15/7 credit search at
 precision 13 and action cap ten did not stabilize through 2,000
 iterations. That bounded failure is not an impossibility theorem.
 
-Repository validation is recorded separately against the committed
-content snapshot. It checks repository integrity and the declared bounded
-regressions, not universal Collatz convergence.
+Repository validation with `--regressions` passed in a clean complete
+checkout at content commit
+`0934576e41d52d08012405e795f1f0f8c1a87605`, tree
+`4d5d9d82bc00aa263cf9320886f99d2fa0446a90`.
+The [unaltered driver receipt](content-validation.json) records all eleven
+commands and their outputs. The receipt was generated outside the checkout
+and added in a subsequent documentation commit. It checks repository
+integrity and the declared bounded regressions, not universal Collatz
+convergence. Relative links in the content packet were also checked to resolve.
 
 ## Directions investigated without a closure
 
