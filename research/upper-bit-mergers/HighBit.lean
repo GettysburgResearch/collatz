@@ -1921,4 +1921,366 @@ theorem triple_cell16_binary_extension (k : ℕ) : Meets (3*(16*k+1)) (32*k+1) :
   refine ⟨4,5,?_⟩
   rw [show 3*(16*k+1) = 3+2^4*(3*k) by ring, show 32*k+1 = 1+2^5*k by ring, a, b]; ring
 
+/-- A Mersenne start takes precisely h odd steps through the end of its
+initial run, giving the shifted ternary power at the same clock. -/
+theorem mersenne_forced_segment (h : ℕ) :
+    orbit (2^h-1) h = 3^h-1 ∧ odds (2^h-1) h = h := by
+  have cycle (j : ℕ) : mirrorOrbit 1 j = 1 ∧ mirrorOdds 1 j = j := by
+    induction j with
+    | zero => simp [mirrorOrbit, mirrorOdds]
+    | succ j ih => simp [mirrorOrbit, mirrorOdds, ih.1, ih.2, mirrorStep]
+  have hp : 0 < (2:ℕ)^h := by positivity
+  obtain ⟨he,ho⟩ := mirror_lift (2^h-1) 1 h 1 (by decide) (by omega)
+  rw [(cycle h).1, (cycle h).2, Nat.mul_one] at he
+  exact ⟨by omega, ho.trans (cycle h).2⟩
+
+private theorem rank_two_four (k : ℕ) :
+    orbit (16*k+1) 4 = 9*k+1 ∧ odds (16*k+1) 4 = 2 := by
+  have a := high_bit 1 4 k
+  have b := odds_high_bit 1 4 k
+  rw [show orbit 1 4 = 1 by decide, show odds 1 4 = 2 by decide] at a
+  rw [show odds 1 4 = 2 by decide] at b
+  rw [show 16*k+1 = 1+2^4*k by ring]
+  exact ⟨a.trans (by ring), b⟩
+
+private theorem rank_two_exponents (m : ℕ) : ∃ k : ℕ, 9*k+1 = 2^(6*m) := by
+  induction m with
+  | zero => exact ⟨0, rfl⟩
+  | succ m ih =>
+    obtain ⟨k,hk⟩ := ih
+    exact ⟨64*k+7, by rw [show 6*(m+1) = 6*m+6 by ring, pow_add, ← hk]; ring⟩
+
+/-- The one-sided basin implication contains a fully witnessed infinite family.
+The source reaches 1 using two odd inputs, and the other arm reaches the
+specified ternary checkpoint after a forced Mersenne run. -/
+theorem rank_two_mersenne_witness (m : ℕ) : ∃ k : ℕ,
+    9*k+1 = 2^(6*m) ∧
+    orbit (16*k+1) (4+6*m) = 1 ∧ odds (16*k+1) (4+6*m) = 2 ∧
+    orbit (32*k+1) 4 = 2^(6*m+1)-1 ∧
+    orbit (32*k+1) (4+(6*m+1)) = 3^(6*m+1)-1 ∧
+    odds (32*k+1) (4+(6*m+1)) = 2+(6*m+1) := by
+  obtain ⟨k,hk⟩ := rank_two_exponents m
+  obtain ⟨ax,ac⟩ := rank_two_four k
+  obtain ⟨ay,bc⟩ := rank_two_four (2*k)
+  rw [show 16*(2*k) = 32*k by ring] at ay bc
+  have shift : 9*(2*k)+1 = 2^(6*m+1)-1 := by rw [pow_succ, ← hk]; omega
+  rw [shift] at ay
+  have coat : odds (2^(6*m)) (6*m) = 0 := by
+    simpa using (odds_high_bit 0 (6*m) 1).trans (zero_prefix (6*m)).2
+  have land : orbit (2^(6*m)) (6*m) = 1 := by simpa using strip_twos 1 (6*m)
+  have endWord := mersenne_forced_segment (6*m+1)
+  refine ⟨k,hk,?_,?_,ay,?_,?_⟩
+  · rw [orbit_add, ax, hk, land]
+  · rw [odds_add, ax, ac, hk, coat]
+  · rw [orbit_add, ay, endWord.1]
+  · rw [odds_add, ay, bc, endWord.2]
+
+private theorem six_divides_exponent (j : ℕ) (hp : (2^j:ℕ)%9 = 1) :
+    ∃ m : ℕ, j=6*m := by
+  induction j using Nat.strong_induction_on with
+  | h j ih =>
+    by_cases small : j<6
+    · have cases : j=0 ∨ j=1 ∨ j=2 ∨ j=3 ∨ j=4 ∨ j=5 := by omega
+      rcases cases with f | f | f | f | f | f
+      · exact ⟨0, by omega⟩
+      all_goals subst j; norm_num at hp
+    · let v := j-6
+      have hv : j=v+6 := by dsimp [v]; omega
+      have pw : (2:ℕ)^j = 64*2^v := by rw [hv,pow_add]; ring
+      rw [pw] at hp
+      obtain ⟨m,hm⟩ := ih v (by omega) (by omega)
+      exact ⟨m+1, by omega⟩
+
+/-- A two-odd-step witness on the antecedent is possible exactly in the
+geometric progression parametrized by powers of 64. -/
+theorem rank_two_antecedent_iff (k : ℕ) :
+    (∃ h, orbit (16*k+1) h = 1 ∧ odds (16*k+1) h = 2) ↔
+    ∃ m : ℕ, 9*k+1 = 2^(6*m) := by
+  constructor
+  · rintro ⟨h,hy,ho⟩
+    by_cases short : h<4
+    · have bound := affine (16*k+1) h
+      rw [hy, ho] at bound
+      have low : 2^h ≤ (2:ℕ)^3 := Nat.pow_le_pow_right (by decide) (by omega)
+      exact ⟨0, by norm_num at bound low ⊢; omega⟩
+    · let t := h-4
+      have he : h=4+t := by dsimp [t]; omega
+      obtain ⟨a,b⟩ := rank_two_four k
+      rw [he, orbit_add, a] at hy
+      rw [he, odds_add, a, b] at ho
+      have odd : odds (9*k+1) t = 0 := by omega
+      have ev : evens (9*k+1) t = t := by have := counts (9*k+1) t; omega
+      have z := offset_budget (9*k+1) t
+      rw [odd,ev] at z
+      simp at z
+      have af := affine (9*k+1) t
+      rw [hy,odd,z] at af
+      simp at af
+      have md : (2^t:ℕ)%9 = 1 := by omega
+      obtain ⟨m,hm⟩ := six_divides_exponent t md
+      exact ⟨m, by rw [←hm]; omega⟩
+  · rintro ⟨m,hm⟩
+    obtain ⟨w,hw,hy,ho,_⟩ := rank_two_mersenne_witness m
+    have e : w=k := by omega
+    exact ⟨4+6*m, e ▸ hy, e ▸ ho⟩
+
+/-- Exactly the two-odd-step layer of the directed criterion is equivalent
+to convergence of every indicated shifted ternary power. -/
+theorem rank_two_directed_iff_shifted_powers :
+    (∀ k : ℕ, (∃ h, orbit (16*k+1) h = 1 ∧ odds (16*k+1) h = 2) →
+      ∃ i, orbit (32*k+1) i = 1) ↔
+    ∀ m : ℕ, ∃ i, orbit (3^(6*m+1)-1) i = 1 := by
+  constructor
+  · intro directed m
+    obtain ⟨k,_,hy,ho,_,hu,_⟩ := rank_two_mersenne_witness m
+    have link : Meets (32*k+1) (3^(6*m+1)-1) := ⟨4+(6*m+1),0,hu⟩
+    exact (meets_one_iff _).mp (meets_trans (meets_symm link)
+      ((meets_one_iff _).mpr (directed k ⟨4+6*m,hy,ho⟩)))
+  · intro powers k h
+    obtain ⟨m,hm⟩ := (rank_two_antecedent_iff k).mp h
+    obtain ⟨w,hw,_,_,_,hu,_⟩ := rank_two_mersenne_witness m
+    have e : w=k := by omega
+    have link : Meets (32*k+1) (3^(6*m+1)-1) := ⟨4+(6*m+1),0,e ▸ hu⟩
+    exact (meets_one_iff _).mp (meets_trans link ((meets_one_iff _).mpr (powers m)))
+
+/-- Both arms have a common affine endpoint after four odd inputs on each
+path, on the whole class k = 32w + 18. -/
+theorem rank_four_lifted_prefix (w : ℕ) :
+    orbit (16*(32*w+18)+1) 8 = 162*w+92 ∧ odds (16*(32*w+18)+1) 8 = 4 ∧
+    orbit (32*(32*w+18)+1) 9 = 162*w+92 ∧ odds (32*(32*w+18)+1) 9 = 4 := by
+  have a := high_bit 289 8 (2*w)
+  have b := high_bit 577 9 (2*w)
+  have c := odds_high_bit 289 8 (2*w)
+  have d := odds_high_bit 577 9 (2*w)
+  rw [show orbit 289 8 = 92 by decide, show odds 289 8 = 4 by decide] at a
+  rw [show orbit 577 9 = 92 by decide, show odds 577 9 = 4 by decide] at b
+  rw [show odds 289 8 = 4 by decide] at c
+  rw [show odds 577 9 = 4 by decide] at d
+  rw [show 16*(32*w+18)+1=289+2^8*(2*w) by ring,
+      show 32*(32*w+18)+1=577+2^9*(2*w) by ring]
+  exact ⟨a.trans (by ring),c,b.trans (by ring),d⟩
+
+/-- An infinite family of actual four-odd-step witnesses for which the
+companion is also certified with four odd inputs and one extra clock. -/
+theorem rank_four_shared_power_witness (j : ℕ) : ∃ k : ℕ,
+    orbit (16*k+1) 8 = 2^(13+54*j) ∧ orbit (32*k+1) 9 = 2^(13+54*j) ∧
+    orbit (16*k+1) (8+(13+54*j)) = 1 ∧ odds (16*k+1) (8+(13+54*j)) = 4 ∧
+    orbit (32*k+1) (9+(13+54*j)) = 1 ∧ odds (32*k+1) (9+(13+54*j)) = 4 := by
+  have powers (n : ℕ) : ∃ w : ℕ, 162*w+92 = 2^(13+54*n) := by
+    induction n with
+    | zero => exact ⟨50,by decide⟩
+    | succ n ih =>
+      obtain ⟨w,hw⟩ := ih
+      refine ⟨2^54*w+10230399153532978,?_⟩
+      rw [show 13+54*(n+1) = (13+54*n)+54 by ring,pow_add,← hw]; ring
+  obtain ⟨w,hw⟩ := powers j
+  obtain ⟨a,ac,b,bc⟩ := rank_four_lifted_prefix w
+  rw [hw] at a b
+  have land : orbit (2^(13+54*j)) (13+54*j) = 1 := by simpa using strip_twos 1 (13+54*j)
+  have count : odds (2^(13+54*j)) (13+54*j) = 0 := by
+    simpa using (odds_high_bit 0 (13+54*j) 1).trans (zero_prefix (13+54*j)).2
+  refine ⟨32*w+18,a,b,?_,?_,?_,?_⟩
+  · rw [orbit_add,a,land]
+  · rw [odds_add,a,ac,count]
+  · rw [orbit_add,b,land]
+  · rw [odds_add,b,bc,count]
+
+
+/-- Every point in this entire binary class follows the specified odd run. -/
+theorem odd_run_with_core (h w : ℕ) (hw : 0 < w) :
+    orbit (2^h*w-1) h = 3^h*w-1 ∧ odds (2^h*w-1) h = h := by
+  have cycle (i : ℕ) : mirrorOrbit 1 i = 1 ∧ mirrorOdds 1 i = i := by
+    induction i with
+    | zero => simp [mirrorOrbit, mirrorOdds]
+    | succ i ih => simp [mirrorOrbit, mirrorOdds, ih.1, ih.2, mirrorStep]
+  have hpos : 0 < 2^h*w := by positivity
+  obtain ⟨he,ho⟩ := mirror_lift (2^h*w-1) 1 h w (by decide) (by omega)
+  rw [(cycle h).1,(cycle h).2] at he
+  exact ⟨by omega, ho.trans (cycle h).2⟩
+
+private theorem exact_odd_block_count {x e y : ℕ} (he : 3*x+1=2^(e+1)*y) :
+    odds x (e+1) = 1 := by
+  have total : 3*x+1=2*(2^e*y) := he.trans (by ring)
+  have hx : x%2≠0 := by omega
+  have hx1 : odds x 1 = 1 := by simp [odds,orbit,hx]
+  have hs : orbit x 1 = 2^e*y := by simp [orbit,step,hx,total]
+  have zeros : odds (2^e*y) e = 0 := by
+    simpa using (odds_high_bit 0 e y).trans (zero_prefix e).2
+  rw [Nat.add_comm e 1, odds_add, hx1, hs, zeros]
+
+/-- A rank-three inverse certificate and a signed word sending -(3^d+1)
+to -1 give actual positive paths for both arms with explicit clock counts. -/
+theorem rank_three_signed_transport (k u v t d a H b L : ℕ)
+    (hvpos : 0 < v) (htpos : 0 < t)
+    (hx : 3*(16*k+1)+1=4*u) (hu : 3*u+1=2^(d+2)*v)
+    (hv : 3*v+1=2^(a+1)*t) (hlen : a+1=H+L)
+    (hmir : mirrorOrbit (3^d+1) H = 1) (hodd : mirrorOdds (3^d+1) H = b) :
+    orbit (16*k+1) (2+(d+2)+(a+1)) = t ∧
+    odds (16*k+1) (2+(d+2)+(a+1)) = 3 ∧
+    orbit (32*k+1) (4+(d+1)+H+L) = 3^(d+b+L)*t-1 ∧
+    Meets (32*k+1) (2^(d+b+L)*t-1) := by
+  have hxa : 3*(16*k+1)+1=2^(1+1)*u := hx
+  have hxb := exact_odd_block hxa
+  have hub := exact_odd_block (e:=d+1) hu
+  have hvb := exact_odd_block hv
+  have hpre : orbit (32*k+1) 4 = 2^(d+1)*v-1 := by
+    have h := (rank_two_four (2*k)).1
+    rw [show 16*(2*k)=32*k by ring] at h
+    rw [show 2^(d+2)*v=2*(2^(d+1)*v) by ring] at hu
+    omega
+  have hmid := (odd_run_with_core (d+1) v hvpos).1
+  have hp : 0<3^(d+1)*v := by positivity
+  have sep : (3^(d+1)*v-1)+(3^d+1) = 2^H*(2^L*(3^d*t)) := by
+    calc
+      _ = 3^(d+1)*v+3^d := by omega
+      _ = 3^d*(3*v+1) := by ring
+      _ = _ := by rw [hv,hlen,pow_add]; ring
+  have lift := (mirror_lift _ _ _ _ (by positivity) sep).1
+  rw [hmir,hodd,show 3^b*(2^L*(3^d*t)) = 2^L*(3^(d+b)*t) by ring] at lift
+  have next : orbit (3^(d+1)*v-1) H = 2^L*(3^(d+b)*t)-1 := by omega
+  have finish := (odd_run_with_core L (3^(d+b)*t) (by positivity)).1
+  have partner : orbit (32*k+1) (4+(d+1)+H+L) = 3^(d+b+L)*t-1 := by
+    rw [orbit_add,orbit_add (32*k+1) _ H,orbit_add (32*k+1) 4 (d+1), hpre,hmid,next,finish]
+    rw [show 3^L*(3^(d+b)*t)=3^(d+b+L)*t by ring]
+  refine ⟨?_,?_,partner,?_⟩
+  · rw [orbit_add,orbit_add (16*k+1) 2 (d+2),hxb,hub,hvb]
+  · rw [odds_add,odds_add (16*k+1) 2 (d+2),orbit_add (16*k+1) 2 (d+2),hxb,hub,
+        exact_odd_block_count hxa,exact_odd_block_count (e:=d+1) hu,exact_odd_block_count hv]
+  · exact ⟨4+(d+1)+H+L,d+b+L,partner.trans ((odd_run_with_core (d+b+L) t htpos).1.symm)⟩
+
+private def signedTrack (x b : ℕ) : ℕ → ℕ × ℕ
+  | 0 => (x,b)
+  | h+1 => signedTrack (mirrorStep x) (if x%2=0 then b else b+1) h
+
+private theorem signedTrack_eq (x j h : ℕ) :
+    signedTrack (mirrorOrbit x j) (mirrorOdds x j) h =
+      (mirrorOrbit x (j+h), mirrorOdds x (j+h)) := by
+  induction h generalizing j with
+  | zero => rfl
+  | succ h ih =>
+    rw [show j+(h+1)=(j+1)+h by omega]
+    exact ih (j+1)
+
+private structure ThreeRow where
+  d : ℕ
+  H : ℕ
+  b : ℕ
+  deriving DecidableEq
+
+private def threeRow : ℕ → ThreeRow
+  | 0 => ⟨39,271,132⟩ | 1 => ⟨0,1,0⟩ | 2 => ⟨63,412,197⟩
+  | 3 => ⟨1,2,0⟩ | 4 => ⟨38,271,133⟩ | 5 => ⟨57,355,167⟩
+  | 6 => ⟨62,412,198⟩ | 7 => ⟨124,1027,524⟩ | 8 => ⟨78,569,281⟩
+  | 9 => ⟨56,355,168⟩ | 10 => ⟨79,569,280⟩ | 11 => ⟨169,1298,650⟩
+  | 12 => ⟨60,412,200⟩ | 13 => ⟨6,19,6⟩ | 14 => ⟨61,412,199⟩
+  | 15 => ⟨7,19,5⟩ | 16 => ⟨81,569,278⟩ | _ => ⟨183,1298,636⟩
+
+private def baseRowData (q : ℕ) : ℕ × ℕ × ℕ × ℕ × ℕ :=
+  let row := threeRow (q%18)
+  let L := q-row.d-row.b
+  let a := row.H+L-1
+  let v := (2^(a+1)-1)/3
+  let u := (2^(row.d+2)*v-1)/3
+  let k := ((4*u-1)/3-1)/16
+  (L,a,v,u,k)
+
+private def rowConditions (q : ℕ) : Prop :=
+  let row := threeRow (q%18)
+  let (L,a,v,u,k) := baseRowData q
+  1 < v ∧ v%2=1 ∧ q=row.d+row.b+L ∧ a+1=row.H+L ∧
+    3*(16*k+1)+1=4*u ∧ 3*u+1=2^(row.d+2)*v ∧ 3*v+1=2^(a+1) ∧
+    signedTrack (3^row.d+1) 0 row.H=(1,row.b)
+
+private instance (q : ℕ) : Decidable (rowConditions q) := by
+  unfold rowConditions
+  infer_instance
+
+set_option exponentiation.threshold 10000 in
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+private theorem checked_rank_three_rows : ∀ i : Fin 18, rowConditions (819+i.val) := by decide
+
+private theorem exponent_eighteen_scale (j : ℕ) : ∃ w : ℕ, 2^(18*j)=27*w+1 := by
+  induction j with
+  | zero => exact ⟨0,rfl⟩
+  | succ j ih =>
+    obtain ⟨w,hw⟩ := ih
+    exact ⟨262144*w+9709, by rw [show 18*(j+1)=18*j+18 by ring,pow_add,hw]; ring⟩
+
+private theorem odd_factor_two_power {v d e : ℕ} (hv : v%2=1) (he : v*d=2^e) : v=1 := by
+  induction e generalizing d with
+  | zero => exact Nat.eq_one_of_mul_eq_one_right he
+  | succ e ih =>
+    have md : (v*d)%2=0 := by rw [he,pow_succ]; omega
+    rw [Nat.mul_mod,hv,Nat.one_mul] at md
+    have de : d=2*(d/2) := by omega
+    have eq : 2*(v*(d/2))=2*2^e := by
+      calc
+        _ = v*(2*(d/2)) := by ring
+        _ = v*d := by rw [←de]
+        _ = _ := by rw [he,pow_succ]; ring
+    exact ih (by omega : v*(d/2)=2^e)
+
+set_option maxRecDepth 8000 in
+set_option maxHeartbeats 1500000 in
+/-- For every sufficiently large q, an actual input in the rank-three layer
+has a partner merging with the Mersenne start at exponent q. -/
+theorem rank_three_all_large_mersenne (q : ℕ) (hq : 819≤q) :
+    ∃ k h : ℕ, orbit (16*k+1) h=1 ∧ odds (16*k+1) h=3 ∧
+      (¬ ∃ s, orbit (16*k+1) s=1 ∧ odds (16*k+1) s=2) ∧
+      Meets (32*k+1) (2^q-1) := by
+  let i : Fin 18 := ⟨(q-819)%18,Nat.mod_lt _ (by decide)⟩
+  let j := (q-819)/18
+  let n := 819+i.val
+  have qsplit : q=n+18*j := by dsimp [n,i,j]; omega
+  let row := threeRow (n%18)
+  obtain ⟨L,a,v,u,k,eqdata⟩ : ∃ L a v u k : ℕ, baseRowData n=(L,a,v,u,k) := by
+    obtain ⟨L,a,v,u,k⟩ := baseRowData n
+    exact ⟨L,a,v,u,k,rfl⟩
+  have dat : rowConditions n := checked_rank_three_rows i
+  unfold rowConditions at dat
+  rw [eqdata] at dat
+  obtain ⟨vgt,vodd,qbase,alen,hx,hu,hv,hs⟩ := dat
+  change n=row.d+row.b+L at qbase
+  change a+1=row.H+L at alen
+  change 3*u+1=2^(row.d+2)*v at hu
+  change signedTrack (3^row.d+1) 0 row.H=(1,row.b) at hs
+  have tr := signedTrack_eq (3^row.d+1) 0 row.H
+  change signedTrack (3^row.d+1) 0 row.H = _ at tr
+  simp only [Nat.zero_add] at tr
+  rw [hs] at tr
+  have hmir := (congrArg Prod.fst tr).symm
+  have hodd := (congrArg Prod.snd tr).symm
+  obtain ⟨w,hw⟩ := exponent_eighteen_scale j
+  let z := w*2^(a+1)
+  let k' := k+2^row.d*z
+  let u' := u+3*2^(row.d+2)*z
+  let v' := v+9*z
+  have hv' : 3*v'+1 = 2^(a+18*j+1)*1 := by
+    rw [show a+18*j+1=(a+1)+(18*j) by omega,pow_add,hw]
+    dsimp [v',z]
+    nlinarith only [hv]
+  have hu' : 3*u'+1=2^(row.d+2)*v' := by dsimp [u',v']; nlinarith only [hu]
+  have hx' : 3*(16*k'+1)+1=4*u' := by dsimp [k',u']; rw [pow_add]; norm_num; nlinarith only [hx]
+  have newLen : a+18*j+1=row.H+(L+18*j) := by omega
+  have idx : row.d+row.b+(L+18*j)=q := by omega
+  have good := rank_three_signed_transport k' u' v' 1 row.d (a+18*j) row.H row.b
+    (L+18*j) (by dsimp [v']; omega) (by decide) hx' hu' hv' newLen hmir hodd
+  rw [idx] at good
+  simp only [Nat.mul_one] at good
+  refine ⟨k',_,good.1,good.2.1,?_,good.2.2.2⟩
+  intro ranktwo
+  obtain ⟨m,hm⟩ := (rank_two_antecedent_iff k').mp ranktwo
+  have powerForm : 9*k'+1 = 2^row.d*v' := by
+    rw [show 2^(row.d+2)*v'=4*(2^row.d*v') by ring] at hu'
+    omega
+  have gt : 1 < v' := by dsimp [v']; omega
+  have odd : v'%2=1 := by
+    have even : 2^(a+18*j+1)*1=2*(2^(a+18*j)) := by ring
+    rw [even] at hv'; omega
+  have divPow : v' ∣ 2^(6*m) := ⟨2^row.d,by rw [←hm,powerForm]; ring⟩
+  obtain ⟨c,hc⟩ := divPow
+  have single : v'=1 := odd_factor_two_power odd hc.symm
+  omega
+
 end CollatzUpperBit

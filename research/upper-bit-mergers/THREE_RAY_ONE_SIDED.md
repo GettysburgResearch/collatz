@@ -76,3 +76,5 @@ For an ordered orbit-invariant $f$, forward monotonicity $f(x)\le f(3x)$ implies
 The last target identification has direct ordinary clocks: $T^4(3(16k+1))=T^5(32k+1)=27k+2$ for every $k$. The base paths from $3$ and $1$ have respectively two and three odd inputs, so their shifted endpoints agree. [Lean proof of the target identity](HighBit.lean)
 
 The [exact word checker](check_three_rays.py) traverses the exceptional residue certificate in its forward-tripling direction and verifies each affine quotient on the whole class.
+
+A separate [directed descent](REVERSE_BASIN.md) proves that the reverse implication between the two starts, taken by itself for every index, also suffices for full convergence.
