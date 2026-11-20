@@ -1,0 +1,114 @@
+{
+  "schema": "attachment-original-execution-transcripts/v1",
+  "transcript_origin": "Exact stdout copied from completed execution tool outputs after each run; no runtime timestamps or durations reconstructed. All large requested runs completed within their individual timeout limits.",
+  "build": "gcc -O2 -Wall -Wextra; v1 also used -Wconversion; no source modifications",
+  "runs": [
+    {
+      "stdout_file": "problem2.txt",
+      "command": [
+        "python3",
+        "-B",
+        "-u",
+        "problem2.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "0d28565cc456ea22bced1bb4911ccde8ccf40d779aa3d8f12971f4fc1ee11338",
+      "scope": "finite execution only"
+    },
+    {
+      "stdout_file": "conv-3000000.txt",
+      "command": [
+        "conv",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "70b342f096b0d9920d29817818eb2632b798ec1264aaeeeaa9bd1e5109e95c30",
+      "scope": "finite execution only"
+    },
+    {
+      "stdout_file": "conv-dfs-28.txt",
+      "command": [
+        "conv_dfs",
+        "28",
+        "9"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "7747f65dd66757551ab9487690ce6d8c07ec6d1a79e46eadd00e89ae4a9e0162",
+      "scope": "finite execution only"
+    },
+    {
+      "stdout_file": "conv-dfs-12.txt",
+      "command": [
+        "conv_dfs",
+        "12",
+        "0"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "42919b5a451ab507b300be08547b4c047da5c1d24f239f5097f516d1fe1b94b3",
+      "scope": "finite execution only"
+    },
+    {
+      "stdout_file": "conv-overflow-audit.txt",
+      "command": [
+        "conv_audit",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "5cadbec74e03e773977e000a28eba165dbf6ab7a0051ab4fb6918281b37f4970",
+      "scope": "finite execution only",
+      "instrumented_source": "conv_overflow_audit.c",
+      "instrumented_source_sha256": "8f921711faf1c5ae1098feb852a8809505a97a928c921151bce2f8d3db36ee61",
+      "compile_command": [
+        "gcc",
+        "-O2",
+        "-o",
+        "conv_audit",
+        "conv_overflow_audit.c"
+      ],
+      "timeout_seconds": 30,
+      "source_relation": "Temporary derivative of supplied conv.c, adding pre-multiplication overflow guards, exact counts and maximum-state diagnostics; supplied conv.c unchanged."
+    },
+    {
+      "stdout_file": "verify-v1.txt",
+      "command": [
+        "python3",
+        "-u",
+        "verify.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "1f8dc4f3f5649c8eb2a2162c838ec068ef965581eb1fdf08b139bbe3fed5fa1e",
+      "scope": "finite execution only"
+    },
+    {
+      "stdout_file": "research3-v1.txt",
+      "command": [
+        "python3",
+        "-u",
+        "research3.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "258a19bb2ad6dc3f4e739928b3ae4d1383a29f1008ffe96e641f5dbd36d4c6da",
+      "scope": "finite execution; original research3 reports two first-arrival-convention failures despite exit zero"
+    },
+    {
+      "stdout_file": "landing-v1-3000000.txt",
+      "command": [
+        "landing",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "1e5af48e5bf5112e22d78138645289420ee097b2054ad25cd8c053e2287afd0b",
+      "scope": "finite execution only"
+    },
+    {
+      "stdout_file": "dstat-v1-3000000.txt",
+      "command": [
+        "dstat",
+        "3000000"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "3d9b4382fee7095b3190996eac88adb2da5b1d3de87ec80a089a04daa7df0eb9",
+      "scope": "finite execution only"
+    }
+  ]
+}

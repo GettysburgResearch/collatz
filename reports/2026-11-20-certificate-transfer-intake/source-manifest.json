@@ -1,0 +1,156 @@
+{
+  "schema": "collatz-certificate-intake-sources/v1",
+  "scope": "Identity of supplied files and earlier handoff statements; not proof verification",
+  "files": [
+    {
+      "original_name": "collatz-16k1-32k1-code.zip",
+      "path": "archive/certificate-transfer-intake-20261120/code-v1.zip",
+      "sha256": "032d8ec8820811fa3838331cbcf3d5e3e0fe9e8524969f55f180995aefa9b93b",
+      "bytes": 12943
+    },
+    {
+      "original_name": "collatz-16k1-32k1-code(1).zip",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2.zip",
+      "sha256": "b96d4e38b46c7594c34ccd4c98e85d9c2e5934e147ff85294514872b0d12d5f4",
+      "bytes": 17002
+    },
+    {
+      "original_name": "Collatz certificates under x \u21a6 (x+1) 2 a density-one theorem and the open remain.pdf",
+      "path": "archive/certificate-transfer-intake-20261120/certificate-density-draft.pdf",
+      "sha256": "edd35e567658c48803b43e78011c81644f153fcd73112de42f991b6d4dbaf99e",
+      "bytes": 453316
+    },
+    {
+      "original_name": "collatz_review_and_problem_key.txt",
+      "path": "reports/2026-11-20-certificate-transfer-intake/initial-review-and-problem-key.txt",
+      "sha256": "6594378661e75930e29d511e3b2aeb89b59aca0e8d96e1658c0b0b3223ad9868",
+      "bytes": 16960
+    },
+    {
+      "archive_member": "README.md",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/README.md",
+      "sha256": "90c917d3e611cad94216d7e45798f15ce6e5b475f81860b82a055cd4e90cfcc6",
+      "bytes": 3170
+    },
+    {
+      "archive_member": "chain.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/chain.py",
+      "sha256": "52c2866605b5c12f8bb122bbde8b7c9ce5a76e292a463a87e6fc451fca887971",
+      "bytes": 2849
+    },
+    {
+      "archive_member": "merge_dfs.c",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/merge_dfs.c",
+      "sha256": "69e9eb4555afb22b992cc972c3682af40b615c5dcb60bc32eb6681f25568853a",
+      "bytes": 1403
+    },
+    {
+      "archive_member": "verify.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/verify.py",
+      "sha256": "1ce46e360e4917c21a9f1cc95c274dc8bab3fd506692f85e3f740d50ebb127cb",
+      "bytes": 2515
+    },
+    {
+      "archive_member": "research2.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/research2.py",
+      "sha256": "ee059fce3fd49bedcab05b94b2573939943a67aadad8201ec978baccb3121a8a",
+      "bytes": 1701
+    },
+    {
+      "archive_member": "research3.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/research3.py",
+      "sha256": "c6c3e84b85d6620bff73c7a9319d27579942315344f7a1a2de3d66247489f874",
+      "bytes": 3207
+    },
+    {
+      "archive_member": "research4.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/research4.py",
+      "sha256": "dd4d3625938f36d25c8dc5f4f0547b112388f40fdcfdad92310f1466014cf5bd",
+      "bytes": 1400
+    },
+    {
+      "archive_member": "drift.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/drift.py",
+      "sha256": "897c721a6fe06c01f3f9d479935a319ddadf630ede9a0a73a16f938fac79b148",
+      "bytes": 1412
+    },
+    {
+      "archive_member": "consts.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/consts.py",
+      "sha256": "0a9774a508f9e5e1be732b76b29f79191bfe5e02b342fce04a030c45ed349601",
+      "bytes": 2192
+    },
+    {
+      "archive_member": "dstat.c",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/dstat.c",
+      "sha256": "6611cd16e83c4f6f45d7744bb7d36e46f82631ea496af99bfc894680bf83f6c3",
+      "bytes": 787
+    },
+    {
+      "archive_member": "landing.c",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/landing.c",
+      "sha256": "69182113b1c181de90bcd377e9e136c12f57c5bc171ecfe10dde1e90e6915b31",
+      "bytes": 2208
+    },
+    {
+      "archive_member": "consec.c",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/consec.c",
+      "sha256": "531408171701ffac1ed61337cd7bbf22715cf8377f27c263473dff313c7d2b2c",
+      "bytes": 1038
+    },
+    {
+      "archive_member": "problem2.py",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/problem2.py",
+      "sha256": "578695eb00e6af03c1c79a530f86f1a133e314683d6ce7615e63f53777685db2",
+      "bytes": 3990
+    },
+    {
+      "archive_member": "conv.c",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/conv.c",
+      "sha256": "ef4c893ce972bfaddc8ce23ed968b8515f3a2bd4f0a294ab0b17f4e7ff4b6cee",
+      "bytes": 2005
+    },
+    {
+      "archive_member": "conv_dfs.c",
+      "path": "archive/certificate-transfer-intake-20261120/code-v2/conv_dfs.c",
+      "sha256": "55fbcac80769d8ea3dd89347eb53708b85ec0b89d784597f43a3d40bf69cffed",
+      "bytes": 1419
+    },
+    {
+      "earlier_handoff": "01_exponential_certificates.txt",
+      "path": "research/certificate-transfer-intake-20261120/questions/01_exponential_certificates.txt",
+      "sha256": "2646ba2581dc5ac66349ee18b6de268f958497ff6b843c1b6c3ef4188dad9475",
+      "bytes": 1812
+    },
+    {
+      "earlier_handoff": "02_weighted_representatives.txt",
+      "path": "research/certificate-transfer-intake-20261120/questions/02_weighted_representatives.txt",
+      "sha256": "fa1350e42caa483abb7d58563a2c7f98ee6b9d9e3aa43cbb960cd5c11d820766",
+      "bytes": 3175
+    },
+    {
+      "earlier_handoff": "03_exponential_divisibility.txt",
+      "path": "research/certificate-transfer-intake-20261120/questions/03_exponential_divisibility.txt",
+      "sha256": "7c88b325fca9baa9218ef29186bead6a5b78ab426a5a5144cd5ac44ea56f7380",
+      "bytes": 1621
+    },
+    {
+      "earlier_handoff": "04_projected_functional_equation.txt",
+      "path": "research/certificate-transfer-intake-20261120/questions/04_projected_functional_equation.txt",
+      "sha256": "33e4e798c7e5ed6284b158e24ea8669aa0dfb3d732d36637884aa17377ec65bc",
+      "bytes": 2101
+    },
+    {
+      "earlier_handoff": "05_four_term_family.txt",
+      "path": "research/certificate-transfer-intake-20261120/questions/05_four_term_family.txt",
+      "sha256": "de208c3172be275115489b18d206c4bdb1ce7f6405d97a93c9a16282e6fbd4c3",
+      "bytes": 1471
+    },
+    {
+      "earlier_handoff": "06_restricted_rounding_map.txt",
+      "path": "research/certificate-transfer-intake-20261120/questions/06_restricted_rounding_map.txt",
+      "sha256": "fd68c30f407e7c890fea0e09d3624ba4832d37a441388742223e826b8a2608f8",
+      "bytes": 2480
+    }
+  ]
+}

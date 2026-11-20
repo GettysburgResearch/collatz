@@ -1,0 +1,383 @@
+{
+  "affine_families": {
+    "all_lift_certificates": 7,
+    "clock": "standard 3n+1/halving steps",
+    "parameter_domain": "k=residue+2^exponent*t, every integer t>=0",
+    "rows": [
+      [
+        2,
+        4,
+        11,
+        12,
+        162,
+        22
+      ],
+      [
+        6,
+        5,
+        13,
+        14,
+        486,
+        94
+      ],
+      [
+        24,
+        6,
+        14,
+        15,
+        486,
+        184
+      ],
+      [
+        30,
+        6,
+        15,
+        16,
+        1458,
+        688
+      ],
+      [
+        8,
+        7,
+        16,
+        17,
+        1458,
+        94
+      ],
+      [
+        105,
+        7,
+        15,
+        16,
+        486,
+        400
+      ],
+      [
+        110,
+        7,
+        17,
+        18,
+        4374,
+        3766
+      ]
+    ]
+  },
+  "bounded_reverse_transfer": {
+    "budget": "len(source_certificate)+60 odd steps",
+    "certified": 477,
+    "eligible_sources": 1500,
+    "example_257_to_129_merge_odd_clock": 6,
+    "m_at_most": 2000,
+    "unresolved": 1023,
+    "unresolved_meaning": "no certificate emitted within this budget only"
+  },
+  "checker_sha256": "02f014b321a93794747ff22a4d7c899b38cf593ac579490f03c48cfe0adc62e3",
+  "corrected_consecutive_fixed_clocks": {
+    "continues_after_one": true,
+    "eligible_checked": 1000,
+    "odd_A_at_most": 3999,
+    "special_cases": [
+      [
+        3,
+        2,
+        5,
+        4
+      ],
+      [
+        5,
+        4,
+        3,
+        4
+      ]
+    ]
+  },
+  "density_one_scalar_constant": {
+    "C_upper_denominator": "249524139619034909446489756702273821610270147727474578274905518808794879980391238812626696595375736101439897198157875540076271819760420882248219784668944958458216031705142373941235712619996750569283482858699749154370064002386269691917269978718948374564036767325454939183772028433924466040927017284525859072840567516631975317671523513444452704573941364818683456173348629234596406128640250",
+    "C_upper_numerator": "13308227743264152160565263388361011865605434479991726348085701161461533926245850494299154524674563373113151336267834198930562419644749250022427117701835383152256307256826145507557517535238428854388557118484563528448223928969007365625631451080909709057487879340852535969870988966607328724450645247318885849935672962995196692474244124053619823499496224448479558963371391566719531169498479951",
+    "inverse_sqrt2_upper": "177/250",
+    "kappa_squared_upper": "201/250",
+    "r": "897/1000",
+    "scope": "exact finite rational expression and root enclosures only; stochastic inference uses the written proof",
+    "sqrt3_lower": "433/250",
+    "strict_rational_display_upper": "10667/200 = 53.335 < 54"
+  },
+  "forward_landing_obstruction": {
+    "rows": [
+      {
+        "d": 1,
+        "e": 7,
+        "source_halvings": 10,
+        "source_odd_count": 2,
+        "upper_endpoint": "2186",
+        "upper_halving_clock": 11,
+        "upper_lead": 7
+      },
+      {
+        "d": 2,
+        "e": 13,
+        "source_halvings": 16,
+        "source_odd_count": 2,
+        "upper_endpoint": "1594322",
+        "upper_halving_clock": 17,
+        "upper_lead": 13
+      },
+      {
+        "d": 3,
+        "e": 19,
+        "source_halvings": 22,
+        "source_odd_count": 2,
+        "upper_endpoint": "1162261466",
+        "upper_halving_clock": 23,
+        "upper_lead": 19
+      },
+      {
+        "d": 4,
+        "e": 25,
+        "source_halvings": 28,
+        "source_odd_count": 2,
+        "upper_endpoint": "847288609442",
+        "upper_halving_clock": 29,
+        "upper_lead": 25
+      },
+      {
+        "d": 5,
+        "e": 31,
+        "source_halvings": 34,
+        "source_odd_count": 2,
+        "upper_endpoint": "617673396283946",
+        "upper_halving_clock": 35,
+        "upper_lead": 31
+      },
+      {
+        "d": 6,
+        "e": 37,
+        "source_halvings": 40,
+        "source_odd_count": 2,
+        "upper_endpoint": "450283905890997362",
+        "upper_halving_clock": 41,
+        "upper_lead": 37
+      },
+      {
+        "d": 7,
+        "e": 43,
+        "source_halvings": 46,
+        "source_odd_count": 2,
+        "upper_endpoint": "328256967394537077626",
+        "upper_halving_clock": 47,
+        "upper_lead": 43
+      },
+      {
+        "d": 8,
+        "e": 49,
+        "source_halvings": 52,
+        "source_odd_count": 2,
+        "upper_endpoint": "239299329230617529590082",
+        "upper_halving_clock": 53,
+        "upper_lead": 49
+      }
+    ],
+    "scope": "eight exact fixed-clock instances; no later upper convergence assumed"
+  },
+  "invalid_certificates_rejected": 4,
+  "k1_numerical_meeting_without_structural_absorption": {
+    "D": 2,
+    "relation": [
+      1,
+      -2
+    ],
+    "shortcut_clock_from_10_29": 13,
+    "states": [
+      1,
+      1
+    ],
+    "total_odd_counts_including_initial_prefixes": [
+      7,
+      8
+    ]
+  },
+  "rank_four_and_double_transfer": {
+    "rows": [
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          62
+        ],
+        "first_companion_odd_count": 31,
+        "first_companion_pure_power_exponent": 26,
+        "first_companion_shortcut_clock": 61,
+        "s": 1,
+        "second_companion_standard_clock": 90,
+        "two_transfer_pure_power_exponent": 25
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          116
+        ],
+        "first_companion_odd_count": 58,
+        "first_companion_pure_power_exponent": 53,
+        "first_companion_shortcut_clock": 115,
+        "s": 2,
+        "second_companion_standard_clock": 171,
+        "two_transfer_pure_power_exponent": 52
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          170
+        ],
+        "first_companion_odd_count": 85,
+        "first_companion_pure_power_exponent": 80,
+        "first_companion_shortcut_clock": 169,
+        "s": 3,
+        "second_companion_standard_clock": 252,
+        "two_transfer_pure_power_exponent": 79
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          224
+        ],
+        "first_companion_odd_count": 112,
+        "first_companion_pure_power_exponent": 107,
+        "first_companion_shortcut_clock": 223,
+        "s": 4,
+        "second_companion_standard_clock": 333,
+        "two_transfer_pure_power_exponent": 106
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          278
+        ],
+        "first_companion_odd_count": 139,
+        "first_companion_pure_power_exponent": 134,
+        "first_companion_shortcut_clock": 277,
+        "s": 5,
+        "second_companion_standard_clock": 414,
+        "two_transfer_pure_power_exponent": 133
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          332
+        ],
+        "first_companion_odd_count": 166,
+        "first_companion_pure_power_exponent": 161,
+        "first_companion_shortcut_clock": 331,
+        "s": 6,
+        "second_companion_standard_clock": 495,
+        "two_transfer_pure_power_exponent": 160
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          386
+        ],
+        "first_companion_odd_count": 193,
+        "first_companion_pure_power_exponent": 188,
+        "first_companion_shortcut_clock": 385,
+        "s": 7,
+        "second_companion_standard_clock": 576,
+        "two_transfer_pure_power_exponent": 187
+      },
+      {
+        "cumulative_certificate": [
+          0,
+          2,
+          4,
+          6,
+          440
+        ],
+        "first_companion_odd_count": 220,
+        "first_companion_pure_power_exponent": 215,
+        "first_companion_shortcut_clock": 439,
+        "s": 8,
+        "second_companion_standard_clock": 657,
+        "two_transfer_pure_power_exponent": 214
+      }
+    ],
+    "s_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scope": "source certificates and fixed common-endpoint identities; no unproved transfer is executed or assumed"
+  },
+  "reverse_type_transition_checks": {
+    "initial_types_by_m_mod_4": {
+      "1": [
+        -3,
+        -1
+      ],
+      "2": [
+        1,
+        2
+      ],
+      "3": [
+        -1,
+        -2
+      ]
+    },
+    "m_bit_depth": 10,
+    "physical_arm_lift_checks": 3072,
+    "transition_checks": 7680
+  },
+  "schema": "collatz-certificate-intake-check/v1",
+  "scope": "Exact bounded replay, explicit all-lift affine certificates, and negative controls; not universal convergence, a complete merger cover, or formal proof-assistant verification.",
+  "small_complete_residue_partition": {
+    "classes": [
+      {
+        "k_mod_16": 4,
+        "matched_cells": 1,
+        "total_cells": 256
+      },
+      {
+        "k_mod_16": 8,
+        "matched_cells": 128,
+        "total_cells": 256
+      },
+      {
+        "k_mod_16": 12,
+        "matched_cells": 23,
+        "total_cells": 256
+      }
+    ],
+    "exact_arithmetic": true,
+    "k_bit_depth": 12,
+    "parameter_conversion": "k=4m; conv_dfs depth counts bits of k, two more than bits of m",
+    "reverse_m_bit_depth": 10,
+    "scope": "finite prefix coverage only"
+  },
+  "source_certificates": {
+    "odd_sources_below": 4000,
+    "validated_including_padding": 4000
+  },
+  "status": "PASS"
+}

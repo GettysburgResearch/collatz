@@ -1,0 +1,11 @@
+audit_peak=825525149213608 maxodd=360 maxhalf=599 newly_cycle_marked_nonmerge=0
+exact counts merge=887639 landed=796535 running=565826
+class0 counts 143082 419333 187585
+class1 counts 476678 96429 176893
+class2 counts 267879 280773 201348
+m<=3000000, 4 does not divide m: total 2250000
+merging: 0.3945   w already landed when x lands: 0.3540   w still running: 0.2515   (sign mismatches with D: 0)
+x=129 mod 512: merging 0.1908, landed 0.5591, running 0.2501
+x=257 mod 512: merging 0.6356, landed 0.1286, running 0.2359
+x=385 mod 512: merging 0.3572, landed 0.3744, running 0.2685
+largest lead of w among the running cases: 26 at m=1657919

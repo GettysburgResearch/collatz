@@ -1,0 +1,43 @@
+RIGIDITY OF A PROJECTED FUNCTIONAL EQUATION
+
+Let
+
+    F(z)=sum_{n>=1} a_n z^n,
+    a_n in {0,1},
+    a_1=0,
+
+and let omega=exp(2*pi*i/3). The coefficient bound makes F analytic on the open unit disk.
+
+Assume that for every complex w with |w|<1,
+
+    (1/3) sum_{j=0}^2 omega^j F(omega^j w^2)
+        = w (F(w^3)-F(w^6)).                                (1)
+
+QUESTION
+
+Is F identically zero the only such function? Prove uniqueness, or construct an exact nonzero solution and verify every hypothesis.
+
+USEFUL INTERMEDIATE TARGETS
+
+Either of the following would suffice:
+
+  A. Every function satisfying the hypotheses is rational.
+  B. Every function satisfying the hypotheses admits analytic continuation through some nonempty open arc of the unit circle.
+
+For A, the following reduction is available: a rational solution of (1) with coefficients in any finite subset of C has constant coefficients. Under a_1=0 it therefore vanishes.
+
+For B, a nonzero solution has infinitely many nonzero integer coefficients and radius of convergence exactly 1. The Pólya–Carlson theorem then makes it rational or gives the entire unit circle as a natural boundary. Thus continuation across one arc forces A.
+
+Be careful about functional-equation hypotheses. A single equation mixing arguments w^2,w^3,w^6 and a root-of-unity projection is not, by definition, a pair of separate finite-order Mahler equations in bases 2 and 3. Any theorem requiring those two equations requires their actual derivation.
+
+The ordinary Parseval identity for Boolean coefficients,
+
+    (1/(2*pi))*integral_0^{2*pi}|F(r*exp(i*theta))|^2 dtheta
+        = F(r^2),
+
+is available, but it alone supplies no boundary continuation.
+
+WORK STANDARD
+
+Treat the requested assertion as an open research target, not as an established theorem. A proof, an exact counterexample, or a precisely scoped new partial result is useful. State every additional hypothesis. Keep finite computations separate from claims for all parameters. If a proposed argument fails, identify its first unsupported implication and preserve any exact obstruction you find.
+

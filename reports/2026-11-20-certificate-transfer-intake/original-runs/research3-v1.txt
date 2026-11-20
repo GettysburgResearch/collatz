@@ -1,0 +1,13 @@
+== R3a: Lemma 5.1 (consecutive numbers) brute force ==
+   odd A<=400001 satisfying the condition: 100002 (share 0.5000); failures: 2
+== R3b: Proposition 5.2 family (k=2q) brute force ==
+   odd q<=200001 in the family: 49998 of 100000 (share 0.5000); failures: 0
+== R3c: odd family k=16t+9, t even: X_4=81t+47, Y_4=81t+46 ==
+   t even < 40000 satisfying the Lemma 5.1 condition: 10000; failures: 0
+== R2: smallest k with D(k) = -1, -2, +1, +2 and their data ==
+   D=-2: k0=55  16k0+1=881 (triplings 41, halvings 75, level 7)   32k0+1=1761 (triplings 36, halvings 68, level 4)
+   D=-1: k0=125  16k0+1=2001 (triplings 15, halvings 35, level -5)   32k0+1=4001 (triplings 12, halvings 31, level -7)
+   D=+1: k0=106  16k0+1=1697 (triplings 9, halvings 25, level -7)   32k0+1=3393 (triplings 12, halvings 31, level -7)
+   D=+2: k0=1  16k0+1=17 (triplings 3, halvings 9, level -3)   32k0+1=33 (triplings 8, halvings 18, level -2)
+== R2b: local normal form check: n0+2^S m  and  2^(S+lam(n0)) m + 1 reach a common value ==
+   failures: 0

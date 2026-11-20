@@ -1,0 +1,11 @@
+class k = 4 mod 16  (x = 129 mod 512):
+  merged share inside the class by depth 28: 0.058833
+class k = 8 mod 16  (x = 257 mod 512):
+  merging: k = 8 mod 2^7   i.e. x = 257 mod 2^12
+  merging: k = 40 mod 2^8   i.e. x = 1281 mod 2^13
+  merging: k = 488 mod 2^9   i.e. x = 15617 mod 2^14
+  merging: k = 24 mod 2^6   i.e. x = 769 mod 2^11
+  merged share inside the class by depth 28: 0.564167
+class k = 12 mod 16  (x = 385 mod 512):
+  merging: k = 140 mod 2^9   i.e. x = 4481 mod 2^14
+  merged share inside the class by depth 28: 0.220760
