@@ -1,0 +1,192 @@
+{
+  "actual_unit_domain_natural_density": "18319/1179648",
+  "binary_cylinder_density": "18319/786432",
+  "compiled_unbounded_family_examples": [
+    {
+      "b": 28,
+      "r": 3,
+      "source_bits": 25,
+      "target_word": [
+        1,
+        2,
+        5,
+        23,
+        4
+      ]
+    },
+    {
+      "b": 244,
+      "r": 5,
+      "source_bits": 240,
+      "target_word": [
+        1,
+        2,
+        1,
+        5,
+        1,
+        239,
+        4
+      ]
+    },
+    {
+      "b": 6562,
+      "r": 8,
+      "source_bits": 6556,
+      "target_word": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2,
+        6555,
+        4
+      ]
+    },
+    {
+      "b": 19684,
+      "r": 9,
+      "source_bits": 19678,
+      "target_word": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        4,
+        1,
+        2,
+        19677,
+        4
+      ]
+    }
+  ],
+  "congestion": {
+    "classes": 486,
+    "coefficient_upper": "903/1000",
+    "modulus": 729,
+    "rows_sha256": "89849460514bce3b0ee6b71dcac222901f0d95d5636ec5d6fbf0bc12739ff099",
+    "s": "21/25",
+    "worst_decimal": 0.9028890664906232,
+    "worst_ladder_first_exponents": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "worst_ones_first_exponents": [
+      30,
+      246,
+      246,
+      246
+    ],
+    "worst_qmin": 547,
+    "worst_residue": 547
+  },
+  "exhaustive_same_clock_word_oracle_checks": 4095,
+  "families": [
+    {
+      "modulus": 512,
+      "residue": 271,
+      "source_prefix": [
+        1,
+        1,
+        1,
+        6
+      ],
+      "target_prefix": [
+        1,
+        2,
+        5,
+        1
+      ]
+    },
+    {
+      "modulus": 2048,
+      "residue": 575,
+      "source_prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        6
+      ],
+      "target_prefix": [
+        1,
+        2,
+        1,
+        5,
+        1,
+        1
+      ]
+    },
+    {
+      "modulus": 65536,
+      "residue": 38399,
+      "source_prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        8
+      ],
+      "target_prefix": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "modulus": 262144,
+      "residue": 156671,
+      "source_prefix": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        9
+      ],
+      "target_prefix": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        4,
+        1,
+        2,
+        2
+      ]
+    }
+  ],
+  "finite_first_hit_compiler_successes": 1,
+  "omitted_r9_b8_column_lower_bound": "1069/1000",
+  "ordinary_cylinder_checks": 160,
+  "recognized_words": 125,
+  "relative_unit_density": "18319/393216",
+  "scope": "Exact bounded checks and an infinite-family congestion certificate; full five closure remains OPEN.",
+  "status": "PASS",
+  "symbolic_words_checked": 3906
+}

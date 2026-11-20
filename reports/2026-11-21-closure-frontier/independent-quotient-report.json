@@ -1,0 +1,51 @@
+{
+  "coprime_commutator_moduli": 99,
+  "external_predecessor_bound_replayed": false,
+  "quotient_matrix_audits": [
+    {
+      "all_initial_rows_checked": 2,
+      "matrix_states": 2,
+      "r": 1,
+      "rational_labels": 8
+    },
+    {
+      "all_initial_rows_checked": 4,
+      "matrix_states": 4,
+      "r": 2,
+      "rational_labels": 8
+    },
+    {
+      "all_initial_rows_checked": 8,
+      "matrix_states": 8,
+      "r": 3,
+      "rational_labels": 8
+    },
+    {
+      "all_initial_rows_checked": 16,
+      "matrix_states": 16,
+      "r": 4,
+      "rational_labels": 8
+    },
+    {
+      "all_initial_rows_checked": 32,
+      "matrix_states": 32,
+      "r": 5,
+      "rational_labels": 8
+    },
+    {
+      "all_initial_rows_checked": 64,
+      "matrix_states": 64,
+      "r": 6,
+      "rational_labels": 8
+    },
+    {
+      "all_initial_rows_checked": 128,
+      "matrix_states": 128,
+      "r": 7,
+      "rational_labels": 8
+    }
+  ],
+  "scope": "Independent finite algebra checks; not a Collatz proof.",
+  "status": "PASS",
+  "tent_identity_lengths": 500
+}
