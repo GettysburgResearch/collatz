@@ -1,0 +1,19 @@
+{
+  "arbitrary_positive_odd_endpoint_prefixes": 56,
+  "clock_distinction_checked": "first h-1 accelerated gaps are 1; h-th is 1+v2(E)>1",
+  "independent_first_hit_sources": 12,
+  "input_sha256": {
+    "NONHOMOGENEOUS_BOUNDARY.md": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3",
+    "check_nonhomogeneous_boundary.py": "592f17558fc0280576fc1d13114dc4e312e680809cd54e665ff3fdd3813629a9"
+  },
+  "scope": "NB1-NB3 architecture boundary only; no target convergence assertion",
+  "source_ranks_replayed": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    10
+  ],
+  "status": "PASS"
+}

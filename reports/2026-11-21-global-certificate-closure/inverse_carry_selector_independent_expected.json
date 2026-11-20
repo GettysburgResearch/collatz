@@ -1,0 +1,166 @@
+{
+  "bounded_decisions_used_as_universal_proof": false,
+  "factorization_coefficients_in_z": [
+    0,
+    -9,
+    12,
+    -8,
+    2
+  ],
+  "fivefold_targets_asserted_nonconvergent": false,
+  "full_collatz_proved": false,
+  "height_lemma_coefficient": 818476,
+  "independent_positive_returns": [
+    {
+      "b": 2,
+      "both_ordinary_arms_verified": true,
+      "q": 1159571047,
+      "r": 11,
+      "source_certificate_rank": 115,
+      "source_unit": true,
+      "strict_height_guard": true,
+      "supplied_q_rank": 95,
+      "x": 714170857
+    },
+    {
+      "b": 3,
+      "both_ordinary_arms_verified": true,
+      "q": 118247997377,
+      "r": 13,
+      "source_certificate_rank": 80,
+      "source_unit": true,
+      "strict_height_guard": true,
+      "supplied_q_rank": 58,
+      "x": 64736027113
+    },
+    {
+      "b": 4,
+      "both_ordinary_arms_verified": true,
+      "q": 492453815635,
+      "r": 16,
+      "source_certificate_rank": 165,
+      "source_unit": true,
+      "strict_height_guard": true,
+      "supplied_q_rank": 140,
+      "x": 159762178537
+    }
+  ],
+  "input_sha256": {
+    "INVERSE_CARRY_SELECTOR.md": "b2cb40ac4cde2c7b16f4d2121bf073fac1f1b659760502a3f8e4f75d0964e7bf",
+    "check_inverse_carry_selector.py": "6050dfbb71447b1ca01b762e8632c8ce507f85cb7da5388331a30747e04de356"
+  },
+  "obstruction_endpoint_controls": [
+    {
+      "H": 4,
+      "finite_complete_decision": {
+        "b_values_examined": 68,
+        "contracting_returns": 0,
+        "maximum_r": 70,
+        "minimum_b_minus_r": 25,
+        "positive_integral_noncontracting_controls": 0,
+        "source_unit_guard_imposed": false,
+        "valuation_compatible_pairs": 1
+      },
+      "first_hit_exponent": 82,
+      "forced_b": 25,
+      "forced_r": 0,
+      "q_bits": 81,
+      "v3_bracket": 2,
+      "v3_q_plus_one": 4
+    },
+    {
+      "H": 5,
+      "finite_complete_decision": {
+        "b_values_examined": 230,
+        "contracting_returns": 0,
+        "maximum_r": 232,
+        "minimum_b_minus_r": 78,
+        "positive_integral_noncontracting_controls": 0,
+        "source_unit_guard_imposed": false,
+        "valuation_compatible_pairs": 1
+      },
+      "first_hit_exponent": 244,
+      "forced_b": 79,
+      "forced_r": 1,
+      "q_bits": 243,
+      "v3_bracket": 2,
+      "v3_q_plus_one": 5
+    },
+    {
+      "H": 6,
+      "finite_complete_decision": {
+        "b_values_examined": 716,
+        "contracting_returns": 0,
+        "maximum_r": 718,
+        "minimum_b_minus_r": 79,
+        "positive_integral_noncontracting_controls": 0,
+        "source_unit_guard_imposed": false,
+        "valuation_compatible_pairs": 4
+      },
+      "first_hit_exponent": 730,
+      "forced_b": 241,
+      "forced_r": 2,
+      "q_bits": 729,
+      "v3_bracket": 2,
+      "v3_q_plus_one": 6
+    },
+    {
+      "H": 7,
+      "finite_complete_decision": {
+        "b_values_examined": 2174,
+        "contracting_returns": 0,
+        "maximum_r": 2176,
+        "minimum_b_minus_r": 79,
+        "positive_integral_noncontracting_controls": 1,
+        "source_unit_guard_imposed": false,
+        "valuation_compatible_pairs": 13
+      },
+      "first_hit_exponent": 2188,
+      "forced_b": 727,
+      "forced_r": 3,
+      "q_bits": 2187,
+      "v3_bracket": 2,
+      "v3_q_plus_one": 7
+    },
+    {
+      "H": 8,
+      "finite_complete_decision": {
+        "b_values_examined": 6548,
+        "contracting_returns": 0,
+        "maximum_r": 6550,
+        "minimum_b_minus_r": 79,
+        "positive_integral_noncontracting_controls": 1,
+        "source_unit_guard_imposed": false,
+        "valuation_compatible_pairs": 40
+      },
+      "first_hit_exponent": 6562,
+      "forced_b": 2185,
+      "forced_r": 4,
+      "q_bits": 6561,
+      "v3_bracket": 2,
+      "v3_q_plus_one": 8
+    },
+    {
+      "H": 9,
+      "finite_complete_decision": {
+        "b_values_examined": 19670,
+        "contracting_returns": 0,
+        "maximum_r": 19672,
+        "minimum_b_minus_r": 79,
+        "positive_integral_noncontracting_controls": 1,
+        "source_unit_guard_imposed": false,
+        "valuation_compatible_pairs": 121
+      },
+      "first_hit_exponent": 19684,
+      "forced_b": 6559,
+      "forced_r": 5,
+      "q_bits": 19683,
+      "v3_bracket": 2,
+      "v3_q_plus_one": 9
+    }
+  ],
+  "proof_quantifiers": "all H>=4, all r>=0, all b>=2 via the two-case valuation proof",
+  "scope": "No single completed PR170 carry inverse contracts at q_H, H>=4; no fivefold target nonconvergence assertion",
+  "source_formula_controls": 18,
+  "status": "PASS"
+}

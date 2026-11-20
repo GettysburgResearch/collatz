@@ -1,0 +1,87 @@
+{
+  "status": "PASS_SCOPED_FIRST_EXIT_LEMMA",
+  "actual_certified_source_classes": [
+    {
+      "h": 0,
+      "eta": 5,
+      "e_residue": 1415,
+      "e_modulus": 1458,
+      "D_mod9": 2,
+      "upper_bits": 1418,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": false
+    },
+    {
+      "h": 1,
+      "eta": 6,
+      "e_residue": 4169,
+      "e_modulus": 4374,
+      "D_mod9": 5,
+      "upper_bits": 4172,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": false
+    },
+    {
+      "h": 2,
+      "eta": 7,
+      "e_residue": 767,
+      "e_modulus": 13122,
+      "D_mod9": 8,
+      "upper_bits": 770,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": true
+    },
+    {
+      "h": 3,
+      "eta": 8,
+      "e_residue": 34301,
+      "e_modulus": 39366,
+      "D_mod9": 2,
+      "upper_bits": 34304,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": true
+    },
+    {
+      "h": 4,
+      "eta": 9,
+      "e_residue": 108659,
+      "e_modulus": 118098,
+      "D_mod9": 5,
+      "upper_bits": 108662,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": true
+    },
+    {
+      "h": 5,
+      "eta": 10,
+      "e_residue": 253001,
+      "e_modulus": 354294,
+      "D_mod9": 8,
+      "upper_bits": 253004,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": true
+    },
+    {
+      "h": 6,
+      "eta": 11,
+      "e_residue": 449831,
+      "e_modulus": 1062882,
+      "D_mod9": 2,
+      "upper_bits": 449834,
+      "exit_mod256": 171,
+      "exit_divisible_by_three": true,
+      "putative_upper_exceeds_original": true
+    }
+  ],
+  "all_h_claim": "for h>=2 the first I1 exit exceeds the reverse height budget and misses the binary guard",
+  "infinite_dead_end_classes": "D=2*4^(-h) mod9, for each h>=0",
+  "new169_direct_domain": "both c5 bypasses require eta=5 on the hard Mersenne family",
+  "scope": "does not exclude different earlier branches, longer adaptive words, or forward excursions",
+  "full_collatz_proved": false
+}

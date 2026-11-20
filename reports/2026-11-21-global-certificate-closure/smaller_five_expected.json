@@ -1,0 +1,263 @@
+{
+  "status": "proved least-failure reduction; no full Collatz proof",
+  "universal_claim": "q<X/13, q and 5U(q) are certified by the same global least-reverse floor, while 5q shares the Mersenne component",
+  "universal_affine_prefixes": 6,
+  "universal_rational_cycle_blocks": 2,
+  "growth_comparisons": [
+    "3<4",
+    "3<8",
+    "27<32"
+  ],
+  "induction_bases": {
+    "successor_five": {
+      "exponent": 119,
+      "left": "2488445773071741578696111817941208",
+      "right": "2800677917044761016159461789561878273"
+    },
+    "fast": {
+      "exponent": 281,
+      "left": "13833420769094892160266274000686556904508054758346",
+      "right": "16372781445589683692358263313475583213183741590036138845776591831873563687655419770625"
+    },
+    "slow": {
+      "exponent": 443,
+      "left": "2103867023497244388500741671000599505334646996520410106940342802384326482214125803377007349862170942094852078366198266234953071049687777756888396894556256697665506260268905486369248363296284588500008839728901892725816006130959366323473620920814350241642538534438734006891531593918409586577322611005117220573675315574284708813383070328186060215678834909161458426136888150063469871841146338002061859956149368436378904016909563686870236574674911858424199032026546318677250374202046123737802307970855288055834784152733295747767041178115306255797706720669605863160720052621392208891649680985305554269115515155478982361858983399520554522068492538562268674965085642208",
+      "right": "8033574230329352915620942664598627600912244321993835997374082327521191304892015174021446462041027398418573614936069842300480556024695972130467866931227825165390650726609723651434501314859755044292165874907466812503451166812463720538628742437850208503138192768244277991098569644058694079800902150073919757448569914555604655851111110952433177461770426141314413778688345564211585364296172648094872479441248519142286446514049396177251875406798781539355333149029803614849586737625961774430162549822610222713743500009579701110008753609222177006809011572170481430943655863828916952244215127411430986545627369250584990121653904200418649238177338098456680056927251544765669659393"
+    }
+  },
+  "base_119_prefix": {
+    "exponent": 119,
+    "upper": 2800677917044761016159461789561878273,
+    "five_source": 157538132833767807158969725662855653,
+    "shortcut_clock": 136,
+    "endpoint": 9900175581272098130203189984031,
+    "required_hypothesis": "this upper is the global least reverse failure"
+  },
+  "bounded_replays": [
+    {
+      "exponent": 119,
+      "family": "first_valuation_four",
+      "source_clock": 136,
+      "source_endpoint_bits": 103,
+      "upper_bits": 122
+    },
+    {
+      "exponent": 281,
+      "family": "first_valuation_three",
+      "source_clock": 286,
+      "source_endpoint_bits": 146,
+      "upper_bits": 284
+    },
+    {
+      "exponent": 443,
+      "family": "first_valuation_four",
+      "source_clock": 447,
+      "source_endpoint_bits": 419,
+      "upper_bits": 446
+    },
+    {
+      "exponent": 605,
+      "family": "first_valuation_three",
+      "source_clock": 610,
+      "source_endpoint_bits": 317,
+      "upper_bits": 608
+    },
+    {
+      "exponent": 767,
+      "family": "first_valuation_four",
+      "source_clock": 772,
+      "source_endpoint_bits": 727,
+      "upper_bits": 770
+    },
+    {
+      "exponent": 929,
+      "family": "first_valuation_three",
+      "source_clock": 934,
+      "source_endpoint_bits": 488,
+      "upper_bits": 932
+    },
+    {
+      "exponent": 1091,
+      "family": "first_valuation_four",
+      "source_clock": 1092,
+      "source_endpoint_bits": 1036,
+      "upper_bits": 1094
+    },
+    {
+      "exponent": 1253,
+      "family": "first_valuation_three",
+      "source_clock": 1258,
+      "source_endpoint_bits": 660,
+      "upper_bits": 1256
+    },
+    {
+      "exponent": 1415,
+      "family": "first_valuation_four",
+      "source_clock": 1417,
+      "source_endpoint_bits": 1344,
+      "upper_bits": 1418
+    },
+    {
+      "exponent": 1577,
+      "family": "first_valuation_three",
+      "source_clock": 1582,
+      "source_endpoint_bits": 831,
+      "upper_bits": 1580
+    },
+    {
+      "exponent": 1739,
+      "family": "first_valuation_four",
+      "source_clock": 1742,
+      "source_endpoint_bits": 1652,
+      "upper_bits": 1742
+    },
+    {
+      "exponent": 1901,
+      "family": "first_valuation_three",
+      "source_clock": 1906,
+      "source_endpoint_bits": 1002,
+      "upper_bits": 1904
+    },
+    {
+      "exponent": 2063,
+      "family": "first_valuation_four",
+      "source_clock": 2067,
+      "source_endpoint_bits": 1960,
+      "upper_bits": 2066
+    },
+    {
+      "exponent": 2225,
+      "family": "first_valuation_three",
+      "source_clock": 2230,
+      "source_endpoint_bits": 1173,
+      "upper_bits": 2228
+    },
+    {
+      "exponent": 2387,
+      "family": "first_valuation_four",
+      "source_clock": 2392,
+      "source_endpoint_bits": 2268,
+      "upper_bits": 2390
+    },
+    {
+      "exponent": 2549,
+      "family": "first_valuation_three",
+      "source_clock": 2554,
+      "source_endpoint_bits": 1344,
+      "upper_bits": 2552
+    },
+    {
+      "exponent": 2711,
+      "family": "first_valuation_four",
+      "source_clock": 2712,
+      "source_endpoint_bits": 2576,
+      "upper_bits": 2714
+    },
+    {
+      "exponent": 2873,
+      "family": "first_valuation_three",
+      "source_clock": 2878,
+      "source_endpoint_bits": 1515,
+      "upper_bits": 2876
+    },
+    {
+      "exponent": 3035,
+      "family": "first_valuation_four",
+      "source_clock": 3037,
+      "source_endpoint_bits": 2884,
+      "upper_bits": 3038
+    },
+    {
+      "exponent": 3197,
+      "family": "first_valuation_three",
+      "source_clock": 3202,
+      "source_endpoint_bits": 1687,
+      "upper_bits": 3200
+    },
+    {
+      "exponent": 3359,
+      "family": "first_valuation_four",
+      "source_clock": 3362,
+      "source_endpoint_bits": 3192,
+      "upper_bits": 3362
+    },
+    {
+      "exponent": 3521,
+      "family": "first_valuation_three",
+      "source_clock": 3526,
+      "source_endpoint_bits": 1858,
+      "upper_bits": 3524
+    },
+    {
+      "exponent": 3683,
+      "family": "first_valuation_four",
+      "source_clock": 3687,
+      "source_endpoint_bits": 3500,
+      "upper_bits": 3686
+    },
+    {
+      "exponent": 3845,
+      "family": "first_valuation_three",
+      "source_clock": 3850,
+      "source_endpoint_bits": 2029,
+      "upper_bits": 3848
+    },
+    {
+      "exponent": 4007,
+      "family": "first_valuation_four",
+      "source_clock": 4012,
+      "source_endpoint_bits": 3808,
+      "upper_bits": 4010
+    },
+    {
+      "exponent": 4169,
+      "family": "first_valuation_three",
+      "source_clock": 4174,
+      "source_endpoint_bits": 2200,
+      "upper_bits": 4172
+    },
+    {
+      "exponent": 4331,
+      "family": "first_valuation_four",
+      "source_clock": 4332,
+      "source_endpoint_bits": 4117,
+      "upper_bits": 4334
+    },
+    {
+      "exponent": 4493,
+      "family": "first_valuation_three",
+      "source_clock": 4498,
+      "source_endpoint_bits": 2371,
+      "upper_bits": 4496
+    },
+    {
+      "exponent": 4655,
+      "family": "first_valuation_four",
+      "source_clock": 4657,
+      "source_endpoint_bits": 4425,
+      "upper_bits": 4658
+    },
+    {
+      "exponent": 4817,
+      "family": "first_valuation_three",
+      "source_clock": 4822,
+      "source_endpoint_bits": 2542,
+      "upper_bits": 4820
+    },
+    {
+      "exponent": 4979,
+      "family": "first_valuation_four",
+      "source_clock": 4982,
+      "source_endpoint_bits": 4733,
+      "upper_bits": 4982
+    },
+    {
+      "exponent": 5141,
+      "family": "first_valuation_three",
+      "source_clock": 5146,
+      "source_endpoint_bits": 2714,
+      "upper_bits": 5144
+    }
+  ],
+  "full_collatz_proved": false
+}

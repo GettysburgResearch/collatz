@@ -1,0 +1,2326 @@
+{
+  "allow_dirty_preflight": false,
+  "checkout": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--show-toplevel"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.003082,
+      "exit_code": 0,
+      "id": 1,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.014849+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 61,
+      "stdout_sha256": "de0558e3eedf24cc12c753868c2a6b6f75e63947c85302da8a7552d3a739631e",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--is-bare-repository"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001926,
+      "exit_code": 0,
+      "id": 2,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.018012+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 6,
+      "stdout_sha256": "2ed27c1421e6928dbe13dbfdb5c59e1045b30341fe7ebe05700006bc5ac572c0",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--verify",
+        "HEAD^{commit}"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001825,
+      "exit_code": 0,
+      "id": 3,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.019964+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 41,
+      "stdout_sha256": "9658b7fd3d93807af5181a4a17feb7b85b555984609cf0976e8288d6e3fb71af",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--verify",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001854,
+      "exit_code": 0,
+      "id": 4,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.021812+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 41,
+      "stdout_sha256": "ead73af5fda4b489e340c88e705d2d81a6ae6c6db874aced398f6c55ce07fc60",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "config",
+        "--bool",
+        "--get",
+        "core.sparseCheckout"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001331,
+      "exit_code": 1,
+      "id": 5,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.023782+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "ls-files",
+        "--stage",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001677,
+      "exit_code": 0,
+      "id": 6,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.025135+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 39047,
+      "stdout_sha256": "69baea32982e30e5cea03eb0d59befa0aca88be987aaa22193b3328558105651",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "ls-files",
+        "-v",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.002732,
+      "exit_code": 0,
+      "id": 7,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.027329+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 21335,
+      "stdout_sha256": "0310ca48bf792b0eccc390b52aa88518f43ba0fc78b51ba98fb48e11e0597cd6",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "ls-tree",
+        "-r",
+        "--full-tree",
+        "-z",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.002069,
+      "exit_code": 0,
+      "id": 8,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.030194+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 40154,
+      "stdout_sha256": "79552d0626995089e9233bd4e5887092d385ce01770dde990b1d15ed705f7d68",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all",
+        "--ignore-submodules=none"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.01321,
+      "exit_code": 0,
+      "id": 9,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:32.035895+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_smaller_five_failures.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-01/smaller_five_expected.json",
+        "--base-certificate",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-01/base_119_ordinary_prefix.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.301051,
+      "exit_code": 0,
+      "id": 10,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_smaller_five_failures.py",
+      "started_at_utc": "2026-11-20T23:54:32.055339+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 7835,
+      "stdout_sha256": "323e63dc969bb82d28c8b213c212154320c97bed65dc35b72ebab84a047ef9bc",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_joint_failure_costs.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-02/joint_failure_cost_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.499313,
+      "exit_code": 0,
+      "id": 11,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_joint_failure_costs.py",
+      "started_at_utc": "2026-11-20T23:54:32.356753+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2698,
+      "stdout_sha256": "4c2d309020993c291b309c31f4c966a823e8d52d43b52023cbb8995436fd4c2e",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_c3_arbitrary_tail.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.043133,
+      "exit_code": 0,
+      "id": 12,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_c3_arbitrary_tail.py",
+      "started_at_utc": "2026-11-20T23:54:32.856405+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 507,
+      "stdout_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_unbounded_first_one_transport.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-04/unbounded_first_one_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.207026,
+      "exit_code": 0,
+      "id": 13,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_unbounded_first_one_transport.py",
+      "started_at_utc": "2026-11-20T23:54:32.899813+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1127,
+      "stdout_sha256": "c07ac6f1295719737c463e053595436cd120d5c7c57342e10a17debb218d6ddf",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_nonhomogeneous_boundary.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-05/nonhomogeneous_boundary_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.045515,
+      "exit_code": 0,
+      "id": 14,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_nonhomogeneous_boundary.py",
+      "started_at_utc": "2026-11-20T23:54:33.107497+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 196,
+      "stdout_sha256": "6e0b96d26485ed14295e3e09a5e10d2d74bd0511b714fa8f1b0fae595b168c06",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_smaller_five_failures.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.028459,
+      "exit_code": 0,
+      "id": 15,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "review_smaller_five_failures.py",
+      "started_at_utc": "2026-11-20T23:54:33.153237+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 584,
+      "stdout_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_c3_tail_independent_review.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-07/c3_tail_independent_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.038673,
+      "exit_code": 0,
+      "id": 16,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_c3_tail_independent_review.py",
+      "started_at_utc": "2026-11-20T23:54:33.181976+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1168,
+      "stdout_sha256": "466b8a271b3820ceca93caa417756b08aa33dd0035da9e2af4a56dd5448f3cdd",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_joint_failure_costs_independent.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-08/joint_failure_independent_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.253384,
+      "exit_code": 0,
+      "id": 17,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_joint_failure_costs_independent.py",
+      "started_at_utc": "2026-11-20T23:54:33.220895+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 309,
+      "stdout_sha256": "4088ca06043f8b5edca69fa0a6b83a3264cda1702dc8bbde1f7e844958c0f146",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_unbounded_transport.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-09/unbounded_transport_independent_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.210164,
+      "exit_code": 0,
+      "id": 18,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "review_unbounded_transport.py",
+      "started_at_utc": "2026-11-20T23:54:33.474539+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 201,
+      "stdout_sha256": "893537bda5d920667e25bbd9e9929a9a6c9667ef8f7b84548f1478b542af9012",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_nonhomogeneous_boundary.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.045943,
+      "exit_code": 0,
+      "id": 19,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "review_nonhomogeneous_boundary.py",
+      "started_at_utc": "2026-11-20T23:54:33.684972+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 590,
+      "stdout_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_first_ternary_exit.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-11/first_ternary_exit_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.053469,
+      "exit_code": 0,
+      "id": 20,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_first_ternary_exit.py",
+      "started_at_utc": "2026-11-20T23:54:33.731186+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2257,
+      "stdout_sha256": "e3bba8dfe958c387912aed1d81dd198d9448a5aed3fd590c5b6758710c49dae6",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_first_ternary_exit.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.094494,
+      "exit_code": 0,
+      "id": 21,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "review_first_ternary_exit.py",
+      "started_at_utc": "2026-11-20T23:54:33.784923+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 6120,
+      "stdout_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_inverse_carry_selector.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/normal-13/inverse_carry_selector_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.068776,
+      "exit_code": 0,
+      "id": 22,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "check_inverse_carry_selector.py",
+      "started_at_utc": "2026-11-20T23:54:33.879707+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 382,
+      "stdout_sha256": "618059583071d9d2cd094e2db6ada42a75eb7fa5aa05a63331ae26c8a25f4657",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_inverse_carry_selector.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.292334,
+      "exit_code": 0,
+      "id": 23,
+      "kind": "scientific_replay",
+      "mode": "normal",
+      "program": "review_inverse_carry_selector.py",
+      "started_at_utc": "2026-11-20T23:54:33.948752+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 4545,
+      "stdout_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_smaller_five_failures.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-01/smaller_five_expected.json",
+        "--base-certificate",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-01/base_119_ordinary_prefix.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.403257,
+      "exit_code": 0,
+      "id": 24,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_smaller_five_failures.py",
+      "started_at_utc": "2026-11-20T23:54:34.241379+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 7835,
+      "stdout_sha256": "323e63dc969bb82d28c8b213c212154320c97bed65dc35b72ebab84a047ef9bc",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_joint_failure_costs.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-02/joint_failure_cost_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.57749,
+      "exit_code": 0,
+      "id": 25,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_joint_failure_costs.py",
+      "started_at_utc": "2026-11-20T23:54:34.644995+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2698,
+      "stdout_sha256": "4c2d309020993c291b309c31f4c966a823e8d52d43b52023cbb8995436fd4c2e",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_c3_arbitrary_tail.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.0958,
+      "exit_code": 0,
+      "id": 26,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_c3_arbitrary_tail.py",
+      "started_at_utc": "2026-11-20T23:54:35.222788+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 507,
+      "stdout_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_unbounded_first_one_transport.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-04/unbounded_first_one_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.269538,
+      "exit_code": 0,
+      "id": 27,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_unbounded_first_one_transport.py",
+      "started_at_utc": "2026-11-20T23:54:35.318910+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1127,
+      "stdout_sha256": "c07ac6f1295719737c463e053595436cd120d5c7c57342e10a17debb218d6ddf",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_nonhomogeneous_boundary.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-05/nonhomogeneous_boundary_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.127395,
+      "exit_code": 0,
+      "id": 28,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_nonhomogeneous_boundary.py",
+      "started_at_utc": "2026-11-20T23:54:35.589174+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 196,
+      "stdout_sha256": "6e0b96d26485ed14295e3e09a5e10d2d74bd0511b714fa8f1b0fae595b168c06",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_smaller_five_failures.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.08652,
+      "exit_code": 0,
+      "id": 29,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "review_smaller_five_failures.py",
+      "started_at_utc": "2026-11-20T23:54:35.716909+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 584,
+      "stdout_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_c3_tail_independent_review.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-07/c3_tail_independent_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.128887,
+      "exit_code": 0,
+      "id": 30,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_c3_tail_independent_review.py",
+      "started_at_utc": "2026-11-20T23:54:35.803854+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1168,
+      "stdout_sha256": "466b8a271b3820ceca93caa417756b08aa33dd0035da9e2af4a56dd5448f3cdd",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_joint_failure_costs_independent.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-08/joint_failure_independent_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.37128,
+      "exit_code": 0,
+      "id": 31,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_joint_failure_costs_independent.py",
+      "started_at_utc": "2026-11-20T23:54:35.933044+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 309,
+      "stdout_sha256": "4088ca06043f8b5edca69fa0a6b83a3264cda1702dc8bbde1f7e844958c0f146",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_unbounded_transport.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-09/unbounded_transport_independent_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.312278,
+      "exit_code": 0,
+      "id": 32,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "review_unbounded_transport.py",
+      "started_at_utc": "2026-11-20T23:54:36.304642+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 201,
+      "stdout_sha256": "893537bda5d920667e25bbd9e9929a9a6c9667ef8f7b84548f1478b542af9012",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_nonhomogeneous_boundary.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.105357,
+      "exit_code": 0,
+      "id": 33,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "review_nonhomogeneous_boundary.py",
+      "started_at_utc": "2026-11-20T23:54:36.617215+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 590,
+      "stdout_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_first_ternary_exit.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-11/first_ternary_exit_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.128024,
+      "exit_code": 0,
+      "id": 34,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_first_ternary_exit.py",
+      "started_at_utc": "2026-11-20T23:54:36.722897+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2257,
+      "stdout_sha256": "e3bba8dfe958c387912aed1d81dd198d9448a5aed3fd590c5b6758710c49dae6",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_first_ternary_exit.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.161161,
+      "exit_code": 0,
+      "id": 35,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "review_first_ternary_exit.py",
+      "started_at_utc": "2026-11-20T23:54:36.851176+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 6120,
+      "stdout_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/check_inverse_carry_selector.py",
+        "--output",
+        "/tmp/collatz-packet-replay-b7z96o8b/optimized-13/inverse_carry_selector_expected.json"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.15596,
+      "exit_code": 0,
+      "id": 36,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "check_inverse_carry_selector.py",
+      "started_at_utc": "2026-11-20T23:54:37.012698+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 382,
+      "stdout_sha256": "618059583071d9d2cd094e2db6ada42a75eb7fa5aa05a63331ae26c8a25f4657",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/research/global-certificate-closure-20261121/review_inverse_carry_selector.py"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.362346,
+      "exit_code": 0,
+      "id": 37,
+      "kind": "scientific_replay",
+      "mode": "optimized",
+      "program": "review_inverse_carry_selector.py",
+      "started_at_utc": "2026-11-20T23:54:37.168930+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 4545,
+      "stdout_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--show-toplevel"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001922,
+      "exit_code": 0,
+      "id": 38,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.532168+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 61,
+      "stdout_sha256": "de0558e3eedf24cc12c753868c2a6b6f75e63947c85302da8a7552d3a739631e",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--is-bare-repository"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.002043,
+      "exit_code": 0,
+      "id": 39,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.534180+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 6,
+      "stdout_sha256": "2ed27c1421e6928dbe13dbfdb5c59e1045b30341fe7ebe05700006bc5ac572c0",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--verify",
+        "HEAD^{commit}"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.049738,
+      "exit_code": 0,
+      "id": 40,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.536250+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 41,
+      "stdout_sha256": "9658b7fd3d93807af5181a4a17feb7b85b555984609cf0976e8288d6e3fb71af",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "rev-parse",
+        "--verify",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001905,
+      "exit_code": 0,
+      "id": 41,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.586034+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 41,
+      "stdout_sha256": "ead73af5fda4b489e340c88e705d2d81a6ae6c6db874aced398f6c55ce07fc60",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "config",
+        "--bool",
+        "--get",
+        "core.sparseCheckout"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.0017,
+      "exit_code": 1,
+      "id": 42,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.587981+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "ls-files",
+        "--stage",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001788,
+      "exit_code": 0,
+      "id": 43,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.589705+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 39047,
+      "stdout_sha256": "69baea32982e30e5cea03eb0d59befa0aca88be987aaa22193b3328558105651",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "ls-files",
+        "-v",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.00151,
+      "exit_code": 0,
+      "id": 44,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.591723+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 21335,
+      "stdout_sha256": "0310ca48bf792b0eccc390b52aa88518f43ba0fc78b51ba98fb48e11e0597cd6",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "ls-tree",
+        "-r",
+        "--full-tree",
+        "-z",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.001965,
+      "exit_code": 0,
+      "id": 45,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.593342+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 40154,
+      "stdout_sha256": "79552d0626995089e9233bd4e5887092d385ce01770dde990b1d15ed705f7d68",
+      "timed_out": false,
+      "timeout_seconds": 180
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.fsmonitor=false",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all",
+        "--ignore-submodules=none"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify",
+      "duration_seconds": 0.002906,
+      "exit_code": 0,
+      "id": 46,
+      "kind": "git_inspection",
+      "started_at_utc": "2026-11-20T23:54:37.598146+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": false,
+      "timeout_seconds": 180
+    }
+  ],
+  "duration_seconds": 5.591609,
+  "errors": [],
+  "finished_at_utc": "2026-11-20T23:54:37.606317+00:00",
+  "git_after": {
+    "clean": true,
+    "complete_checkout": true,
+    "completeness_errors": [],
+    "head": "9acf568f44c5ca655265b888fc27c5b37f1f10db",
+    "head_tracked_count": 369,
+    "hidden_index_flags": [],
+    "index_tracked_count": 369,
+    "missing_tracked_paths": [],
+    "sparse_checkout": false,
+    "sparse_index_directories": [],
+    "status_porcelain_v1": "",
+    "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "submodule_status": "",
+    "tree": "6757a91322d9d5c0a2e20a06653eb391fe98732d",
+    "unmerged_paths": []
+  },
+  "git_before": {
+    "clean": true,
+    "complete_checkout": true,
+    "completeness_errors": [],
+    "head": "9acf568f44c5ca655265b888fc27c5b37f1f10db",
+    "head_tracked_count": 369,
+    "hidden_index_flags": [],
+    "index_tracked_count": 369,
+    "missing_tracked_paths": [],
+    "sparse_checkout": false,
+    "sparse_index_directories": [],
+    "status_porcelain_v1": "",
+    "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "submodule_status": "",
+    "tree": "6757a91322d9d5c0a2e20a06653eb391fe98732d",
+    "unmerged_paths": []
+  },
+  "manifest_after": {
+    "errors": [],
+    "files": [
+      {
+        "actual_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+        "bytes": 507,
+        "expected_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/c3_arbitrary_tail_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+        "bytes": 1167,
+        "expected_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/c3_tail_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+        "bytes": 2256,
+        "expected_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+        "bytes": 6120,
+        "expected_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+        "bytes": 5277,
+        "expected_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+        "bytes": 4545,
+        "expected_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+        "bytes": 2697,
+        "expected_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/joint_failure_cost_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+        "bytes": 2822,
+        "expected_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/joint_failure_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+        "bytes": 2495,
+        "expected_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+        "bytes": 590,
+        "expected_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+        "bytes": 7834,
+        "expected_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/smaller_five_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+        "bytes": 584,
+        "expected_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/smaller_five_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "0257251c850afb43bc9256129660233a1b202938a5b6d4b9ebc9817125e0b21d",
+        "bytes": 46446,
+        "expected_sha256": "0257251c850afb43bc9256129660233a1b202938a5b6d4b9ebc9817125e0b21d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/source_metadata_snapshot.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+        "bytes": 102552,
+        "expected_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/unbounded_first_one_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+        "bytes": 1569,
+        "expected_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/unbounded_transport_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "7237c0e63b28cc4fe150d593b50cc2d3f56d7b5ac7caf4de8337ac940478050d",
+        "bytes": 20238,
+        "expected_sha256": "7237c0e63b28cc4fe150d593b50cc2d3f56d7b5ac7caf4de8337ac940478050d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/verify_packet.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ee2cd5973d50b88af5056be3af654d1e287ff8f0a831eaa335fef04f64552c11",
+        "bytes": 11993,
+        "expected_sha256": "ee2cd5973d50b88af5056be3af654d1e287ff8f0a831eaa335fef04f64552c11",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/C3_ARBITRARY_TAIL_DESCENT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "1fda081599f16e94f6c3c2692fea949864ca4a9b0aa91a01b42b1860112ffe06",
+        "bytes": 8229,
+        "expected_sha256": "1fda081599f16e94f6c3c2692fea949864ca4a9b0aa91a01b42b1860112ffe06",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/FIRST_TERNARY_EXIT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "b2cb40ac4cde2c7b16f4d2121bf073fac1f1b659760502a3f8e4f75d0964e7bf",
+        "bytes": 6634,
+        "expected_sha256": "b2cb40ac4cde2c7b16f4d2121bf073fac1f1b659760502a3f8e4f75d0964e7bf",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/INVERSE_CARRY_SELECTOR.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "b7cb2190fb0b726a06f061c2c8b9ca9f0aadcc2ba6b9ff686145154461ff358d",
+        "bytes": 13255,
+        "expected_sha256": "b7cb2190fb0b726a06f061c2c8b9ca9f0aadcc2ba6b9ff686145154461ff358d",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/JOINT_FAILURE_CERTIFICATE_COSTS.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "97c1e35e4736bcdd40aa90444f6bf421c36c1a098e8b283481a3a33cf978d06f",
+        "bytes": 8875,
+        "expected_sha256": "97c1e35e4736bcdd40aa90444f6bf421c36c1a098e8b283481a3a33cf978d06f",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/JOINT_FAILURE_INDEPENDENT_REVIEW.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "95a4b4382edeb7c40bbc600cfe3400ff164a0040ffc023b50601c44311a86a50",
+        "bytes": 5932,
+        "expected_sha256": "95a4b4382edeb7c40bbc600cfe3400ff164a0040ffc023b50601c44311a86a50",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/LATEST_TRANSPORT_COMPARISON.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2d40142b593b1d609899536bb26c57a60ff619f894fa08035542b13cbfcdbb09",
+        "bytes": 5328,
+        "expected_sha256": "2d40142b593b1d609899536bb26c57a60ff619f894fa08035542b13cbfcdbb09",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/LATE_PR164_REVIEW.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3",
+        "bytes": 7127,
+        "expected_sha256": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/NONHOMOGENEOUS_BOUNDARY.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "454bc680c250162aed36354b6e4705d73a65e20f31e61580643b5d7e1a59691f",
+        "bytes": 6886,
+        "expected_sha256": "454bc680c250162aed36354b6e4705d73a65e20f31e61580643b5d7e1a59691f",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/PR170_CARRY_AND_PHASE_COMPARISON.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "77af3857f057b3f5e516dadb45e8709acdfae89a13ba682b01c6d7c2a68d9e3a",
+        "bytes": 10921,
+        "expected_sha256": "77af3857f057b3f5e516dadb45e8709acdfae89a13ba682b01c6d7c2a68d9e3a",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/README.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "16ecc3fbb390f1a162b629fb3ecf8b1f8d66bb6209c959d8de390f0f00f46cf1",
+        "bytes": 9460,
+        "expected_sha256": "16ecc3fbb390f1a162b629fb3ecf8b1f8d66bb6209c959d8de390f0f00f46cf1",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_C3_ARBITRARY_TAIL_DESCENT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d89d46cac9d9fd40c5f6b6863bd910564086b55df023c5f5317a161b088bb5d9",
+        "bytes": 5188,
+        "expected_sha256": "d89d46cac9d9fd40c5f6b6863bd910564086b55df023c5f5317a161b088bb5d9",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_FIRST_TERNARY_EXIT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "cba421f2ee6acc72d865b082550a0c7527ae6812b890b7ba0a56c109d915f05a",
+        "bytes": 5427,
+        "expected_sha256": "cba421f2ee6acc72d865b082550a0c7527ae6812b890b7ba0a56c109d915f05a",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_INVERSE_CARRY_SELECTOR.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ab38176af2072d30ac2a891c0b3e9bebfcab9f1c13abc9a99a846107c8139150",
+        "bytes": 6504,
+        "expected_sha256": "ab38176af2072d30ac2a891c0b3e9bebfcab9f1c13abc9a99a846107c8139150",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_NONHOMOGENEOUS_BOUNDARY.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2224341e8a3640fc38bca7898575598185b66f40eddbc35aebc552dc6bf2e6b0",
+        "bytes": 4812,
+        "expected_sha256": "2224341e8a3640fc38bca7898575598185b66f40eddbc35aebc552dc6bf2e6b0",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_SMALLER_FIVE_FAILURES.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "41120e4af4400ae42e321027cfc95cc979b703565455d7dacb54ee1126693802",
+        "bytes": 5150,
+        "expected_sha256": "41120e4af4400ae42e321027cfc95cc979b703565455d7dacb54ee1126693802",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_UNBOUNDED_TRANSPORT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "f9ee7dcac226d46816b3ac91ce88996f3932906672084a28063c284eb8e3736c",
+        "bytes": 9666,
+        "expected_sha256": "f9ee7dcac226d46816b3ac91ce88996f3932906672084a28063c284eb8e3736c",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/SMALLER_FIVE_FAILURES.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "f9f02af555b235c3fe8b96bd5e464a915079dfb13a5bd9afaebc5bfff6d7ea34",
+        "bytes": 9084,
+        "expected_sha256": "f9f02af555b235c3fe8b96bd5e464a915079dfb13a5bd9afaebc5bfff6d7ea34",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/SOURCES.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "24dfeff2089771c4ac03587bdb68a2cae6886399230dc38df2746f22092bcd23",
+        "bytes": 17195,
+        "expected_sha256": "24dfeff2089771c4ac03587bdb68a2cae6886399230dc38df2746f22092bcd23",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/UNBOUNDED_FIRST_ONE_TRANSPORT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+        "bytes": 5881,
+        "expected_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/base_119_ordinary_prefix.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d11595cace6337f12304445a1920351c198a1dbed40bf76131e1bfb7245919e2",
+        "bytes": 10909,
+        "expected_sha256": "d11595cace6337f12304445a1920351c198a1dbed40bf76131e1bfb7245919e2",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_c3_arbitrary_tail.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "79b4c2d9d91eb95ba3714343ef2a188d381184d185d88860a2fd13ed80d5b053",
+        "bytes": 11656,
+        "expected_sha256": "79b4c2d9d91eb95ba3714343ef2a188d381184d185d88860a2fd13ed80d5b053",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_c3_tail_independent_review.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "26790b8c8250b3cc97352090e649ea3d4c5a0f2970552fb696af0647c548cf06",
+        "bytes": 5000,
+        "expected_sha256": "26790b8c8250b3cc97352090e649ea3d4c5a0f2970552fb696af0647c548cf06",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_first_ternary_exit.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "6050dfbb71447b1ca01b762e8632c8ce507f85cb7da5388331a30747e04de356",
+        "bytes": 11206,
+        "expected_sha256": "6050dfbb71447b1ca01b762e8632c8ce507f85cb7da5388331a30747e04de356",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_inverse_carry_selector.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d83caa500af3f42a0e9fd585aee932d43ded83202664cee1088fb6dfa5b4eee3",
+        "bytes": 15026,
+        "expected_sha256": "d83caa500af3f42a0e9fd585aee932d43ded83202664cee1088fb6dfa5b4eee3",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_joint_failure_costs.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "c9dc3eb8fbdc35af70a139d746b0cb9862628ab3d5c0cb87e128547ab5f380fb",
+        "bytes": 12415,
+        "expected_sha256": "c9dc3eb8fbdc35af70a139d746b0cb9862628ab3d5c0cb87e128547ab5f380fb",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_joint_failure_costs_independent.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "592f17558fc0280576fc1d13114dc4e312e680809cd54e665ff3fdd3813629a9",
+        "bytes": 4435,
+        "expected_sha256": "592f17558fc0280576fc1d13114dc4e312e680809cd54e665ff3fdd3813629a9",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_nonhomogeneous_boundary.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2fff9fa3c5acc6c77119379c1503a978690b5558a17e9f8a160dae370ce1739e",
+        "bytes": 9460,
+        "expected_sha256": "2fff9fa3c5acc6c77119379c1503a978690b5558a17e9f8a160dae370ce1739e",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_smaller_five_failures.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "8b5227e5579769aab6edf823fa6387c397ac17aa22f7a40ba360ddd906c1a2a4",
+        "bytes": 17300,
+        "expected_sha256": "8b5227e5579769aab6edf823fa6387c397ac17aa22f7a40ba360ddd906c1a2a4",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_unbounded_first_one_transport.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+        "bytes": 96722,
+        "expected_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/directed_five_certificate.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ded2de6dec39d7e328d16882d9ed92f9fb2dfc0c9e5f44c5d235a0f461d9068e",
+        "bytes": 9758,
+        "expected_sha256": "ded2de6dec39d7e328d16882d9ed92f9fb2dfc0c9e5f44c5d235a0f461d9068e",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_first_ternary_exit.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d993d44669eac5ffc5c96151df7b8890aed6fda937aaf9f3febbc0a4785bea10",
+        "bytes": 8708,
+        "expected_sha256": "d993d44669eac5ffc5c96151df7b8890aed6fda937aaf9f3febbc0a4785bea10",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_inverse_carry_selector.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "794318d863084ff04978206acdc5db28fffdcb520b788e6f2002474467041dcc",
+        "bytes": 6240,
+        "expected_sha256": "794318d863084ff04978206acdc5db28fffdcb520b788e6f2002474467041dcc",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_nonhomogeneous_boundary.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "184610bb2af9d9e3be726f931ce474d5e2a06c874ba2a6b53fc7a37f476392e6",
+        "bytes": 5254,
+        "expected_sha256": "184610bb2af9d9e3be726f931ce474d5e2a06c874ba2a6b53fc7a37f476392e6",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_smaller_five_failures.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "1648576b98a243895d9e5ccfe67b30dc195a65e5308c94feb508fedba51522ce",
+        "bytes": 8783,
+        "expected_sha256": "1648576b98a243895d9e5ccfe67b30dc195a65e5308c94feb508fedba51522ce",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_unbounded_transport.py",
+        "tracked": true
+      }
+    ],
+    "files_count": 51,
+    "missing_required_paths": [],
+    "ok": true,
+    "path": "reports/2026-11-21-global-certificate-closure/content-manifest.json",
+    "sha256": "71052d28fc99c311c711c702157e0409276263344b3bec9b84545decc75e2c33"
+  },
+  "manifest_before": {
+    "errors": [],
+    "files": [
+      {
+        "actual_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+        "bytes": 507,
+        "expected_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/c3_arbitrary_tail_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+        "bytes": 1167,
+        "expected_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/c3_tail_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+        "bytes": 2256,
+        "expected_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+        "bytes": 6120,
+        "expected_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+        "bytes": 5277,
+        "expected_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+        "bytes": 4545,
+        "expected_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+        "bytes": 2697,
+        "expected_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/joint_failure_cost_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+        "bytes": 2822,
+        "expected_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/joint_failure_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+        "bytes": 2495,
+        "expected_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+        "bytes": 590,
+        "expected_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+        "bytes": 7834,
+        "expected_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/smaller_five_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+        "bytes": 584,
+        "expected_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/smaller_five_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "0257251c850afb43bc9256129660233a1b202938a5b6d4b9ebc9817125e0b21d",
+        "bytes": 46446,
+        "expected_sha256": "0257251c850afb43bc9256129660233a1b202938a5b6d4b9ebc9817125e0b21d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/source_metadata_snapshot.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+        "bytes": 102552,
+        "expected_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/unbounded_first_one_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+        "bytes": 1569,
+        "expected_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/unbounded_transport_independent_expected.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "7237c0e63b28cc4fe150d593b50cc2d3f56d7b5ac7caf4de8337ac940478050d",
+        "bytes": 20238,
+        "expected_sha256": "7237c0e63b28cc4fe150d593b50cc2d3f56d7b5ac7caf4de8337ac940478050d",
+        "matches": true,
+        "path": "reports/2026-11-21-global-certificate-closure/verify_packet.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ee2cd5973d50b88af5056be3af654d1e287ff8f0a831eaa335fef04f64552c11",
+        "bytes": 11993,
+        "expected_sha256": "ee2cd5973d50b88af5056be3af654d1e287ff8f0a831eaa335fef04f64552c11",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/C3_ARBITRARY_TAIL_DESCENT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "1fda081599f16e94f6c3c2692fea949864ca4a9b0aa91a01b42b1860112ffe06",
+        "bytes": 8229,
+        "expected_sha256": "1fda081599f16e94f6c3c2692fea949864ca4a9b0aa91a01b42b1860112ffe06",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/FIRST_TERNARY_EXIT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "b2cb40ac4cde2c7b16f4d2121bf073fac1f1b659760502a3f8e4f75d0964e7bf",
+        "bytes": 6634,
+        "expected_sha256": "b2cb40ac4cde2c7b16f4d2121bf073fac1f1b659760502a3f8e4f75d0964e7bf",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/INVERSE_CARRY_SELECTOR.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "b7cb2190fb0b726a06f061c2c8b9ca9f0aadcc2ba6b9ff686145154461ff358d",
+        "bytes": 13255,
+        "expected_sha256": "b7cb2190fb0b726a06f061c2c8b9ca9f0aadcc2ba6b9ff686145154461ff358d",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/JOINT_FAILURE_CERTIFICATE_COSTS.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "97c1e35e4736bcdd40aa90444f6bf421c36c1a098e8b283481a3a33cf978d06f",
+        "bytes": 8875,
+        "expected_sha256": "97c1e35e4736bcdd40aa90444f6bf421c36c1a098e8b283481a3a33cf978d06f",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/JOINT_FAILURE_INDEPENDENT_REVIEW.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "95a4b4382edeb7c40bbc600cfe3400ff164a0040ffc023b50601c44311a86a50",
+        "bytes": 5932,
+        "expected_sha256": "95a4b4382edeb7c40bbc600cfe3400ff164a0040ffc023b50601c44311a86a50",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/LATEST_TRANSPORT_COMPARISON.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2d40142b593b1d609899536bb26c57a60ff619f894fa08035542b13cbfcdbb09",
+        "bytes": 5328,
+        "expected_sha256": "2d40142b593b1d609899536bb26c57a60ff619f894fa08035542b13cbfcdbb09",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/LATE_PR164_REVIEW.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3",
+        "bytes": 7127,
+        "expected_sha256": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/NONHOMOGENEOUS_BOUNDARY.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "454bc680c250162aed36354b6e4705d73a65e20f31e61580643b5d7e1a59691f",
+        "bytes": 6886,
+        "expected_sha256": "454bc680c250162aed36354b6e4705d73a65e20f31e61580643b5d7e1a59691f",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/PR170_CARRY_AND_PHASE_COMPARISON.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "77af3857f057b3f5e516dadb45e8709acdfae89a13ba682b01c6d7c2a68d9e3a",
+        "bytes": 10921,
+        "expected_sha256": "77af3857f057b3f5e516dadb45e8709acdfae89a13ba682b01c6d7c2a68d9e3a",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/README.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "16ecc3fbb390f1a162b629fb3ecf8b1f8d66bb6209c959d8de390f0f00f46cf1",
+        "bytes": 9460,
+        "expected_sha256": "16ecc3fbb390f1a162b629fb3ecf8b1f8d66bb6209c959d8de390f0f00f46cf1",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_C3_ARBITRARY_TAIL_DESCENT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d89d46cac9d9fd40c5f6b6863bd910564086b55df023c5f5317a161b088bb5d9",
+        "bytes": 5188,
+        "expected_sha256": "d89d46cac9d9fd40c5f6b6863bd910564086b55df023c5f5317a161b088bb5d9",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_FIRST_TERNARY_EXIT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "cba421f2ee6acc72d865b082550a0c7527ae6812b890b7ba0a56c109d915f05a",
+        "bytes": 5427,
+        "expected_sha256": "cba421f2ee6acc72d865b082550a0c7527ae6812b890b7ba0a56c109d915f05a",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_INVERSE_CARRY_SELECTOR.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ab38176af2072d30ac2a891c0b3e9bebfcab9f1c13abc9a99a846107c8139150",
+        "bytes": 6504,
+        "expected_sha256": "ab38176af2072d30ac2a891c0b3e9bebfcab9f1c13abc9a99a846107c8139150",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_NONHOMOGENEOUS_BOUNDARY.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2224341e8a3640fc38bca7898575598185b66f40eddbc35aebc552dc6bf2e6b0",
+        "bytes": 4812,
+        "expected_sha256": "2224341e8a3640fc38bca7898575598185b66f40eddbc35aebc552dc6bf2e6b0",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_SMALLER_FIVE_FAILURES.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "41120e4af4400ae42e321027cfc95cc979b703565455d7dacb54ee1126693802",
+        "bytes": 5150,
+        "expected_sha256": "41120e4af4400ae42e321027cfc95cc979b703565455d7dacb54ee1126693802",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/REVIEW_UNBOUNDED_TRANSPORT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "f9ee7dcac226d46816b3ac91ce88996f3932906672084a28063c284eb8e3736c",
+        "bytes": 9666,
+        "expected_sha256": "f9ee7dcac226d46816b3ac91ce88996f3932906672084a28063c284eb8e3736c",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/SMALLER_FIVE_FAILURES.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "f9f02af555b235c3fe8b96bd5e464a915079dfb13a5bd9afaebc5bfff6d7ea34",
+        "bytes": 9084,
+        "expected_sha256": "f9f02af555b235c3fe8b96bd5e464a915079dfb13a5bd9afaebc5bfff6d7ea34",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/SOURCES.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "24dfeff2089771c4ac03587bdb68a2cae6886399230dc38df2746f22092bcd23",
+        "bytes": 17195,
+        "expected_sha256": "24dfeff2089771c4ac03587bdb68a2cae6886399230dc38df2746f22092bcd23",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/UNBOUNDED_FIRST_ONE_TRANSPORT.md",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+        "bytes": 5881,
+        "expected_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/base_119_ordinary_prefix.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d11595cace6337f12304445a1920351c198a1dbed40bf76131e1bfb7245919e2",
+        "bytes": 10909,
+        "expected_sha256": "d11595cace6337f12304445a1920351c198a1dbed40bf76131e1bfb7245919e2",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_c3_arbitrary_tail.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "79b4c2d9d91eb95ba3714343ef2a188d381184d185d88860a2fd13ed80d5b053",
+        "bytes": 11656,
+        "expected_sha256": "79b4c2d9d91eb95ba3714343ef2a188d381184d185d88860a2fd13ed80d5b053",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_c3_tail_independent_review.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "26790b8c8250b3cc97352090e649ea3d4c5a0f2970552fb696af0647c548cf06",
+        "bytes": 5000,
+        "expected_sha256": "26790b8c8250b3cc97352090e649ea3d4c5a0f2970552fb696af0647c548cf06",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_first_ternary_exit.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "6050dfbb71447b1ca01b762e8632c8ce507f85cb7da5388331a30747e04de356",
+        "bytes": 11206,
+        "expected_sha256": "6050dfbb71447b1ca01b762e8632c8ce507f85cb7da5388331a30747e04de356",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_inverse_carry_selector.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d83caa500af3f42a0e9fd585aee932d43ded83202664cee1088fb6dfa5b4eee3",
+        "bytes": 15026,
+        "expected_sha256": "d83caa500af3f42a0e9fd585aee932d43ded83202664cee1088fb6dfa5b4eee3",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_joint_failure_costs.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "c9dc3eb8fbdc35af70a139d746b0cb9862628ab3d5c0cb87e128547ab5f380fb",
+        "bytes": 12415,
+        "expected_sha256": "c9dc3eb8fbdc35af70a139d746b0cb9862628ab3d5c0cb87e128547ab5f380fb",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_joint_failure_costs_independent.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "592f17558fc0280576fc1d13114dc4e312e680809cd54e665ff3fdd3813629a9",
+        "bytes": 4435,
+        "expected_sha256": "592f17558fc0280576fc1d13114dc4e312e680809cd54e665ff3fdd3813629a9",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_nonhomogeneous_boundary.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "2fff9fa3c5acc6c77119379c1503a978690b5558a17e9f8a160dae370ce1739e",
+        "bytes": 9460,
+        "expected_sha256": "2fff9fa3c5acc6c77119379c1503a978690b5558a17e9f8a160dae370ce1739e",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_smaller_five_failures.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "8b5227e5579769aab6edf823fa6387c397ac17aa22f7a40ba360ddd906c1a2a4",
+        "bytes": 17300,
+        "expected_sha256": "8b5227e5579769aab6edf823fa6387c397ac17aa22f7a40ba360ddd906c1a2a4",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/check_unbounded_first_one_transport.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+        "bytes": 96722,
+        "expected_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/directed_five_certificate.json",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "ded2de6dec39d7e328d16882d9ed92f9fb2dfc0c9e5f44c5d235a0f461d9068e",
+        "bytes": 9758,
+        "expected_sha256": "ded2de6dec39d7e328d16882d9ed92f9fb2dfc0c9e5f44c5d235a0f461d9068e",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_first_ternary_exit.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "d993d44669eac5ffc5c96151df7b8890aed6fda937aaf9f3febbc0a4785bea10",
+        "bytes": 8708,
+        "expected_sha256": "d993d44669eac5ffc5c96151df7b8890aed6fda937aaf9f3febbc0a4785bea10",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_inverse_carry_selector.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "794318d863084ff04978206acdc5db28fffdcb520b788e6f2002474467041dcc",
+        "bytes": 6240,
+        "expected_sha256": "794318d863084ff04978206acdc5db28fffdcb520b788e6f2002474467041dcc",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_nonhomogeneous_boundary.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "184610bb2af9d9e3be726f931ce474d5e2a06c874ba2a6b53fc7a37f476392e6",
+        "bytes": 5254,
+        "expected_sha256": "184610bb2af9d9e3be726f931ce474d5e2a06c874ba2a6b53fc7a37f476392e6",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_smaller_five_failures.py",
+        "tracked": true
+      },
+      {
+        "actual_sha256": "1648576b98a243895d9e5ccfe67b30dc195a65e5308c94feb508fedba51522ce",
+        "bytes": 8783,
+        "expected_sha256": "1648576b98a243895d9e5ccfe67b30dc195a65e5308c94feb508fedba51522ce",
+        "matches": true,
+        "path": "research/global-certificate-closure-20261121/review_unbounded_transport.py",
+        "tracked": true
+      }
+    ],
+    "files_count": 51,
+    "missing_required_paths": [],
+    "ok": true,
+    "path": "reports/2026-11-21-global-certificate-closure/content-manifest.json",
+    "sha256": "71052d28fc99c311c711c702157e0409276263344b3bec9b84545decc75e2c33"
+  },
+  "mode": "full_replay",
+  "planned_science_executions": 28,
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "remote_ci_claim": false,
+  "report_comparisons": [
+    {
+      "command_id": 10,
+      "complete_bytes_equal": true,
+      "expected_bytes": 7834,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/smaller_five_expected.json",
+      "expected_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+      "generated_bytes": 7834,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-01/smaller_five_expected.json",
+      "generated_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+      "label": "normal:smaller_five_expected.json"
+    },
+    {
+      "command_id": 10,
+      "complete_bytes_equal": true,
+      "expected_bytes": 5881,
+      "expected_path": "research/global-certificate-closure-20261121/base_119_ordinary_prefix.json",
+      "expected_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+      "generated_bytes": 5881,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-01/base_119_ordinary_prefix.json",
+      "generated_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+      "label": "normal:base_119_ordinary_prefix.json"
+    },
+    {
+      "command_id": 11,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2697,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/joint_failure_cost_expected.json",
+      "expected_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+      "generated_bytes": 2697,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-02/joint_failure_cost_expected.json",
+      "generated_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+      "label": "normal:joint_failure_cost_expected.json"
+    },
+    {
+      "command_id": 12,
+      "complete_bytes_equal": true,
+      "expected_bytes": 507,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/c3_arbitrary_tail_expected.json",
+      "expected_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+      "generated_bytes": 507,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-03/c3_arbitrary_tail_expected.json",
+      "generated_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+      "label": "normal:c3_arbitrary_tail_expected.json"
+    },
+    {
+      "command_id": 13,
+      "complete_bytes_equal": true,
+      "expected_bytes": 102552,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/unbounded_first_one_expected.json",
+      "expected_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+      "generated_bytes": 102552,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-04/unbounded_first_one_expected.json",
+      "generated_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+      "label": "normal:unbounded_first_one_expected.json"
+    },
+    {
+      "command_id": 14,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2495,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_expected.json",
+      "expected_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+      "generated_bytes": 2495,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-05/nonhomogeneous_boundary_expected.json",
+      "generated_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+      "label": "normal:nonhomogeneous_boundary_expected.json"
+    },
+    {
+      "command_id": 15,
+      "complete_bytes_equal": true,
+      "expected_bytes": 584,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/smaller_five_independent_expected.json",
+      "expected_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+      "generated_bytes": 584,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-06/smaller_five_independent_expected.json",
+      "generated_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+      "label": "normal:smaller_five_independent_expected.json"
+    },
+    {
+      "command_id": 16,
+      "complete_bytes_equal": true,
+      "expected_bytes": 1167,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/c3_tail_independent_expected.json",
+      "expected_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+      "generated_bytes": 1167,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-07/c3_tail_independent_expected.json",
+      "generated_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+      "label": "normal:c3_tail_independent_expected.json"
+    },
+    {
+      "command_id": 17,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2822,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/joint_failure_independent_expected.json",
+      "expected_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+      "generated_bytes": 2822,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-08/joint_failure_independent_expected.json",
+      "generated_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+      "label": "normal:joint_failure_independent_expected.json"
+    },
+    {
+      "command_id": 18,
+      "complete_bytes_equal": true,
+      "expected_bytes": 1569,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/unbounded_transport_independent_expected.json",
+      "expected_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+      "generated_bytes": 1569,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-09/unbounded_transport_independent_expected.json",
+      "generated_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+      "label": "normal:unbounded_transport_independent_expected.json"
+    },
+    {
+      "command_id": 19,
+      "complete_bytes_equal": true,
+      "expected_bytes": 590,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_independent_expected.json",
+      "expected_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+      "generated_bytes": 590,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-10/nonhomogeneous_boundary_independent_expected.json",
+      "generated_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+      "label": "normal:nonhomogeneous_boundary_independent_expected.json"
+    },
+    {
+      "command_id": 20,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2256,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_expected.json",
+      "expected_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+      "generated_bytes": 2256,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-11/first_ternary_exit_expected.json",
+      "generated_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+      "label": "normal:first_ternary_exit_expected.json"
+    },
+    {
+      "command_id": 21,
+      "complete_bytes_equal": true,
+      "expected_bytes": 6120,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_independent_expected.json",
+      "expected_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+      "generated_bytes": 6120,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-12/first_ternary_exit_independent_expected.json",
+      "generated_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+      "label": "normal:first_ternary_exit_independent_expected.json"
+    },
+    {
+      "command_id": 22,
+      "complete_bytes_equal": true,
+      "expected_bytes": 5277,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_expected.json",
+      "expected_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+      "generated_bytes": 5277,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-13/inverse_carry_selector_expected.json",
+      "generated_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+      "label": "normal:inverse_carry_selector_expected.json"
+    },
+    {
+      "command_id": 23,
+      "complete_bytes_equal": true,
+      "expected_bytes": 4545,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_independent_expected.json",
+      "expected_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+      "generated_bytes": 4545,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/normal-14/inverse_carry_selector_independent_expected.json",
+      "generated_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+      "label": "normal:inverse_carry_selector_independent_expected.json"
+    },
+    {
+      "command_id": 24,
+      "complete_bytes_equal": true,
+      "expected_bytes": 7834,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/smaller_five_expected.json",
+      "expected_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+      "generated_bytes": 7834,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-01/smaller_five_expected.json",
+      "generated_sha256": "d7ff84324ef3b04fe96687955f876a5516239601ef3b23d98a5dd1d8af0d8ac7",
+      "label": "optimized:smaller_five_expected.json"
+    },
+    {
+      "command_id": 24,
+      "complete_bytes_equal": true,
+      "expected_bytes": 5881,
+      "expected_path": "research/global-certificate-closure-20261121/base_119_ordinary_prefix.json",
+      "expected_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+      "generated_bytes": 5881,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-01/base_119_ordinary_prefix.json",
+      "generated_sha256": "ed32671c008009bd15b08859196ac967cedc3172516828b6fec9150cecd80e15",
+      "label": "optimized:base_119_ordinary_prefix.json"
+    },
+    {
+      "command_id": 25,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2697,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/joint_failure_cost_expected.json",
+      "expected_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+      "generated_bytes": 2697,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-02/joint_failure_cost_expected.json",
+      "generated_sha256": "74b495c5a031f73ebbd6cfa563099b70e42ba15716017ae5c3f0c054782a74c3",
+      "label": "optimized:joint_failure_cost_expected.json"
+    },
+    {
+      "command_id": 26,
+      "complete_bytes_equal": true,
+      "expected_bytes": 507,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/c3_arbitrary_tail_expected.json",
+      "expected_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+      "generated_bytes": 507,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-03/c3_arbitrary_tail_expected.json",
+      "generated_sha256": "71dee06b014100d822e99d729e21c85ac978a54d76f1b4189965843686052c0f",
+      "label": "optimized:c3_arbitrary_tail_expected.json"
+    },
+    {
+      "command_id": 27,
+      "complete_bytes_equal": true,
+      "expected_bytes": 102552,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/unbounded_first_one_expected.json",
+      "expected_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+      "generated_bytes": 102552,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-04/unbounded_first_one_expected.json",
+      "generated_sha256": "2ba847fc1f42a6fcb23978583fa6563e2c2c3d1ec18061532134dcb66a029ece",
+      "label": "optimized:unbounded_first_one_expected.json"
+    },
+    {
+      "command_id": 28,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2495,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_expected.json",
+      "expected_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+      "generated_bytes": 2495,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-05/nonhomogeneous_boundary_expected.json",
+      "generated_sha256": "5d7d484f4a742b1e39f5ba1139220ad37d45085302d673fd17b1142d8cc5c2c5",
+      "label": "optimized:nonhomogeneous_boundary_expected.json"
+    },
+    {
+      "command_id": 29,
+      "complete_bytes_equal": true,
+      "expected_bytes": 584,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/smaller_five_independent_expected.json",
+      "expected_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+      "generated_bytes": 584,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-06/smaller_five_independent_expected.json",
+      "generated_sha256": "89a21de3d6afcf819b2ee4b8c4f3b0d59a89e3b1af54d0dbcd2032b793c07e81",
+      "label": "optimized:smaller_five_independent_expected.json"
+    },
+    {
+      "command_id": 30,
+      "complete_bytes_equal": true,
+      "expected_bytes": 1167,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/c3_tail_independent_expected.json",
+      "expected_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+      "generated_bytes": 1167,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-07/c3_tail_independent_expected.json",
+      "generated_sha256": "933d91f873294c7463171dde8370485f9bbab7398c47eb3ffbe0349627ae8177",
+      "label": "optimized:c3_tail_independent_expected.json"
+    },
+    {
+      "command_id": 31,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2822,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/joint_failure_independent_expected.json",
+      "expected_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+      "generated_bytes": 2822,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-08/joint_failure_independent_expected.json",
+      "generated_sha256": "4b6ff86109ce43b89c00d56b555167abbccf902a4c3e24d51201971f342e4933",
+      "label": "optimized:joint_failure_independent_expected.json"
+    },
+    {
+      "command_id": 32,
+      "complete_bytes_equal": true,
+      "expected_bytes": 1569,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/unbounded_transport_independent_expected.json",
+      "expected_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+      "generated_bytes": 1569,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-09/unbounded_transport_independent_expected.json",
+      "generated_sha256": "ba77bdf350173883b80df48cac3ea0468eed3f545b6cce01c40f1791141b350d",
+      "label": "optimized:unbounded_transport_independent_expected.json"
+    },
+    {
+      "command_id": 33,
+      "complete_bytes_equal": true,
+      "expected_bytes": 590,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/nonhomogeneous_boundary_independent_expected.json",
+      "expected_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+      "generated_bytes": 590,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-10/nonhomogeneous_boundary_independent_expected.json",
+      "generated_sha256": "427104fffb9f30b1b71433e6dc8c2c82ea578c9f74553ab43088a55f04af285d",
+      "label": "optimized:nonhomogeneous_boundary_independent_expected.json"
+    },
+    {
+      "command_id": 34,
+      "complete_bytes_equal": true,
+      "expected_bytes": 2256,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_expected.json",
+      "expected_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+      "generated_bytes": 2256,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-11/first_ternary_exit_expected.json",
+      "generated_sha256": "bbf53b4170a897d3f6ad00bc517acca24890a6e55c546b2f8b413177c6d43465",
+      "label": "optimized:first_ternary_exit_expected.json"
+    },
+    {
+      "command_id": 35,
+      "complete_bytes_equal": true,
+      "expected_bytes": 6120,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/first_ternary_exit_independent_expected.json",
+      "expected_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+      "generated_bytes": 6120,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-12/first_ternary_exit_independent_expected.json",
+      "generated_sha256": "b3dd5627d48fc00423bc87d43c826d61c5ebee6bb9b6693f335040ba2f9cd3ad",
+      "label": "optimized:first_ternary_exit_independent_expected.json"
+    },
+    {
+      "command_id": 36,
+      "complete_bytes_equal": true,
+      "expected_bytes": 5277,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_expected.json",
+      "expected_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+      "generated_bytes": 5277,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-13/inverse_carry_selector_expected.json",
+      "generated_sha256": "1fe4fc0b55d741538defe7fd23093c0319d93bdd51059e5540b953de06604c6b",
+      "label": "optimized:inverse_carry_selector_expected.json"
+    },
+    {
+      "command_id": 37,
+      "complete_bytes_equal": true,
+      "expected_bytes": 4545,
+      "expected_path": "reports/2026-11-21-global-certificate-closure/inverse_carry_selector_independent_expected.json",
+      "expected_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+      "generated_bytes": 4545,
+      "generated_path": "/tmp/collatz-packet-replay-b7z96o8b/optimized-14/inverse_carry_selector_independent_expected.json",
+      "generated_sha256": "5f340c8c419534ceb395af4ecd41a431727546253ecea640965764f5f158ec1f",
+      "label": "optimized:inverse_carry_selector_independent_expected.json"
+    }
+  ],
+  "runner": "/workspace/scratch/957bb0caa6f2/collatz-global-direct-verify/reports/2026-11-21-global-certificate-closure/verify_packet.py",
+  "runner_sha256": "7237c0e63b28cc4fe150d593b50cc2d3f56d7b5ac7caf4de8337ac940478050d",
+  "schema": 1,
+  "science_command_attempt_count": 28,
+  "science_execution_count": 28,
+  "science_successful_execution_count": 28,
+  "started_at_utc": "2026-11-20T23:54:32.014720+00:00",
+  "status": "PASS",
+  "subprocess_command_count": 46,
+  "temporary_report_directory": "/tmp/collatz-packet-replay-b7z96o8b",
+  "temporary_reports_removed_after_run": true,
+  "theorem_proof_claim": false
+}

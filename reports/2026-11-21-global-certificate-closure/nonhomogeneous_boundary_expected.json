@@ -1,0 +1,116 @@
+{
+  "actual_first_hit_examples": [
+    {
+      "forced_target_odd_inputs": 4,
+      "last_gap": 10,
+      "source_bits": 8,
+      "source_rank": 2
+    },
+    {
+      "forced_target_odd_inputs": 4,
+      "last_gap": 28,
+      "source_bits": 26,
+      "source_rank": 2
+    },
+    {
+      "forced_target_odd_inputs": 7,
+      "last_gap": 52,
+      "source_bits": 52,
+      "source_rank": 3
+    },
+    {
+      "forced_target_odd_inputs": 7,
+      "last_gap": 106,
+      "source_bits": 106,
+      "source_rank": 3
+    },
+    {
+      "forced_target_odd_inputs": 10,
+      "last_gap": 88,
+      "source_bits": 89,
+      "source_rank": 4
+    },
+    {
+      "forced_target_odd_inputs": 10,
+      "last_gap": 250,
+      "source_bits": 251,
+      "source_rank": 4
+    },
+    {
+      "forced_target_odd_inputs": 13,
+      "last_gap": 142,
+      "source_bits": 145,
+      "source_rank": 5
+    },
+    {
+      "forced_target_odd_inputs": 13,
+      "last_gap": 628,
+      "source_bits": 631,
+      "source_rank": 5
+    },
+    {
+      "forced_target_odd_inputs": 16,
+      "last_gap": 1438,
+      "source_bits": 1442,
+      "source_rank": 6
+    },
+    {
+      "forced_target_odd_inputs": 16,
+      "last_gap": 2896,
+      "source_bits": 2900,
+      "source_rank": 6
+    },
+    {
+      "forced_target_odd_inputs": 19,
+      "last_gap": 3382,
+      "source_bits": 3387,
+      "source_rank": 7
+    },
+    {
+      "forced_target_odd_inputs": 19,
+      "last_gap": 7756,
+      "source_bits": 7761,
+      "source_rank": 7
+    },
+    {
+      "forced_target_odd_inputs": 22,
+      "last_gap": 6298,
+      "source_bits": 6305,
+      "source_rank": 8
+    },
+    {
+      "forced_target_odd_inputs": 22,
+      "last_gap": 19420,
+      "source_bits": 19427,
+      "source_rank": 8
+    },
+    {
+      "forced_target_odd_inputs": 25,
+      "last_gap": 10672,
+      "source_bits": 10680,
+      "source_rank": 9
+    },
+    {
+      "forced_target_odd_inputs": 25,
+      "last_gap": 50038,
+      "source_bits": 50046,
+      "source_rank": 9
+    },
+    {
+      "forced_target_odd_inputs": 28,
+      "last_gap": 115648,
+      "source_bits": 115658,
+      "source_rank": 10
+    },
+    {
+      "forced_target_odd_inputs": 28,
+      "last_gap": 233746,
+      "source_bits": 233756,
+      "source_rank": 10
+    }
+  ],
+  "arbitrary_endpoint_prefix_checks": 328,
+  "full_collatz_proved": false,
+  "proof_sha256": "2fe095a83e155f80dc7ed97c306ea24e00c169e196a6570fa271a20886d686c3",
+  "status": "PASS: NB1-NB3 only; no full Collatz proof"
+}
