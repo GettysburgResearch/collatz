@@ -137,6 +137,12 @@ arguments. The parent inspected the stated logarithmic-form input and the
 p-adic Subspace Theorem, including its projective normalization. Those external
 theorems were not reproved. See the packet reviews for their precise boundaries.
 
+The complete scientific packet was fetched from GitHub at commit
+`4312e70370a89e474bc8812734760c7de9798315` and validated in a clean complete
+checkout. All eleven repository validation/regression commands and the four
+new elementary/cycle checkers passed. The fetched compressed certificate's
+digest matched the reviewed artifact. [Exact validation scope and receipts](VALIDATION.md).
+
 The pressure route from PRs #143–144 was also examined. Its needed all-clock
 bound on the actual positive-integer diagonal moment was not obtained. The
 fixed-target higher-moment vanishing already proved in PR #140 cannot be

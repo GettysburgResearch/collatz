@@ -1,0 +1,39 @@
+{
+  "scope": "Exact bounded checks and artifact identity; not a complete proof of Collatz",
+  "commit": "4312e70370a89e474bc8812734760c7de9798315",
+  "tree": "bd783a96fd9f76ec453d2e633a42384d64c62887",
+  "started_utc": "2026-11-20T17:32:20.695387+00:00",
+  "commands": [
+    {
+      "path": "research/forward-bridge-20261120/check.py",
+      "sha256": "36644e86b137b0e67f9e9d935864060d3b2f687d494918be5e75209c1d397513",
+      "exit_code": 0,
+      "stdout": "{\n  \"balanced_common_clock\": 178,\n  \"bounded_first_arrivals\": 25000,\n  \"classified_nonpositive_sources_1_mod_3\": 4857,\n  \"distinct_grades\": 43,\n  \"exact_product_checks\": 2048,\n  \"finite_upper_arm_receipts\": [\n    {\n      \"odd_inputs\": 4,\n      \"shortcut_steps\": 10,\n      \"start\": 11\n    },\n    {\n      \"odd_inputs\": 3,\n      \"shortcut_steps\": 9,\n      \"start\": 17\n    },\n    {\n      \"odd_inputs\": 5,\n      \"shortcut_steps\": 13,\n      \"start\": 29\n    },\n    {\n      \"odd_inputs\": 6,\n      \"shortcut_steps\": 14,\n      \"start\": 19\n    },\n    {\n      \"odd_inputs\": 39,\n      \"shortcut_steps\": 67,\n      \"start\": 31\n    },\n    {\n      \"odd_inputs\": 41,\n      \"shortcut_steps\": 71,\n      \"start\": 55\n    },\n    {\n      \"odd_inputs\": 31,\n      \"shortcut_steps\": 56,\n      \"start\": 103\n    },\n    {\n      \"odd_inputs\": 43,\n      \"shortcut_steps\": 76,\n      \"start\": 199\n    },\n    {\n      \"odd_inputs\": 43,\n      \"shortcut_steps\": 77,\n      \"start\": 391\n    },\n    {\n      \"odd_inputs\": 55,\n      \"shortcut_steps\": 97,\n      \"start\": 775\n    },\n    {\n      \"odd_inputs\": 38,\n      \"shortcut_steps\": 71,\n      \"start\": 1543\n    },\n    {\n      \"odd_inputs\": 55,\n      \"shortcut_steps\": 99,\n      \"start\": 3079\n    }\n  ],\n  \"high_bit_identity_checks\": 410,\n  \"negative_controls\": 2,\n  \"observed_nonpositive_grade_minima\": {\n    \"-1\": 7,\n    \"-10\": 1024,\n    \"-11\": 2560,\n    \"-12\": 4096,\n    \"-13\": 10240,\n    \"-14\": 16384,\n    \"-2\": 4,\n    \"-3\": 10,\n    \"-4\": 16,\n    \"-5\": 40,\n    \"-6\": 64,\n    \"-7\": 160,\n    \"-8\": 256,\n    \"-9\": 640,\n    \"0\": 1\n  },\n  \"scope\": \"Finite exact replay; the written proof supplies the all-family conclusions.\",\n  \"status\": \"PASS\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "path": "research/independent-attack-20261120/check_cubic_descent.py",
+      "sha256": "93ddaab395a81e26e4af2fb7ebaab1631de8941373dbc4e31bab06c506804d2e",
+      "exit_code": 0,
+      "stdout": "scalar bounds: {'extra_drop_upper': '944067/2887091', 'comparison_margin_lower': '56369617346/250642805165'}\n(2, 2, 2) covered; exact recursion nodes: 173\n(2, 2, 3) covered; exact recursion nodes: 77\n(2, 3, 2) covered; exact recursion nodes: 27\n(2, 3, 3) covered; exact recursion nodes: 8\n(3, 2, 2) covered; exact recursion nodes: 13\n(3, 2, 3) covered; exact recursion nodes: 5\n(3, 3, 2) covered; exact recursion nodes: 5\n(3, 3, 3) empty height domain\nnegative controls: square-descent witness retained; missing comparisons rejected\nordinary powered-block arithmetic replays: 378\nPASS: seven cubic-descent cones; total recursion nodes: 308\n",
+      "stderr": ""
+    },
+    {
+      "path": "research/independent-attack-20261120/check_square_obstruction.py",
+      "sha256": "2d7b6c81ff022ec24404a6d01e47edfc602d56c5104b2aaa85079850b5ba0c7a",
+      "exit_code": 0,
+      "stdout": "logarithm interval: 1054/665 < log2(3) < 485/306\ncenter: ('1/2', '1/2', '1') radius: 1/100\nstrict domain margin: 49/100\nfailed charge comparisons: 18\nweakest certified charge-failure gap: 3974/9725\nfull displacement maximum margin: -45096/9725\nnegative controls: oversized box rejected; zero-charge mutation rejected\nPASS: whole rational box survives all stated square-descent comparisons\n",
+      "stderr": ""
+    },
+    {
+      "path": "research/independent-attack-20261120/check_minimum_defect.py",
+      "sha256": "4d81686c507ddde339041db8a8ffcc2db246dabdc3d732190c7e9cfd1eeeeafe",
+      "exit_code": 0,
+      "stdout": "maximum necessary weighted-defect threshold: 11191/48500\nquarter-height defect charge margin: 467/8950\ndivisibility margin: 36043/8950\nfirst rising root even-density ceiling: 2003189/19971815\nordinary minimum-split replays: 186\nnegative control: zero-defect abstract profile not excluded\nPASS: minimum-location refinement constants and exact local identities\n",
+      "stderr": ""
+    }
+  ],
+  "published_policy_sha256": "977c546492b6882bdd3da68bb392a83945c8ebadda308c362c583312ec0c5703",
+  "local_link_targets_checked": 44,
+  "finished_utc": "2026-11-20T17:32:22.108142+00:00"
+}
