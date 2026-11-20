@@ -1,0 +1,76 @@
+{
+  "algebraic_instances": 40,
+  "complete_certificate_compilations": 28,
+  "paired_ordinary_replays": 680,
+  "pressure_certificate": {
+    "exact_cells_sha256": "8421a5802ddbd6903638903b7f600c89562813864508ccca82b720cb18659164",
+    "initial_cells": 162,
+    "initial_modulus": 243,
+    "largest_ternary_depth": 16,
+    "maximum_cell": {
+      "depth": 5,
+      "residue": 205
+    },
+    "normalized_cover_mass": "2/3",
+    "split_cells": [
+      [
+        61,
+        5
+      ],
+      [
+        547,
+        6
+      ],
+      [
+        547,
+        7
+      ],
+      [
+        4921,
+        8
+      ],
+      [
+        4921,
+        9
+      ],
+      [
+        44287,
+        10
+      ],
+      [
+        44287,
+        11
+      ],
+      [
+        398581,
+        12
+      ],
+      [
+        398581,
+        13
+      ],
+      [
+        3587227,
+        14
+      ],
+      [
+        3587227,
+        15
+      ]
+    ],
+    "strict_maximum_upper_envelope": "249/250",
+    "terminal_cells": 184
+  },
+  "rejected_malformed_controls": 4,
+  "relative_unit_density": "23/384",
+  "renewal_coefficient": "249/250",
+  "renewal_exponent": "21/25",
+  "scope": "complete residue pressure certificate; bounded ordinary replays; no full Collatz proof",
+  "status": "PASS",
+  "unresolved_valid_control": {
+    "source": 5,
+    "word": [
+      4
+    ]
+  }
+}

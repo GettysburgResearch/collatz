@@ -1,0 +1,7 @@
+{
+  "path": "research/certificate-renewal-20261121/FIXED_ENDPOINT_SUMMABILITY.md",
+  "reviewed_author_sha256": "cbd8e00d73c0da06a063e7334a96ab27145a58ffcc3bd56604a3c8370d8663bd",
+  "published_sha256": "8a5aac44693c4755dcf16287e0129b4918f3db1e204daee84fb35668db631c56",
+  "change": "Removed the single trailing ASCII space after the display delimiter on line 51. All other bytes are unchanged. The original bytes are reproduced by restoring that space.",
+  "mathematical_change": false
+}

@@ -1,0 +1,191 @@
+{
+  "checker_sha256": "a016769d8a5b34c68971e1f6096fa322ec5f05d705053056ce5e70c5ae459449",
+  "closing_statements": {
+    "BC": "OPEN",
+    "NC": "OPEN",
+    "PC": "OPEN",
+    "QC": "OPEN"
+  },
+  "damaged_inputs_rejected": 4,
+  "direct_grouping_vector_coordinates": 39,
+  "exponent_cutoff": 12,
+  "finite_simple_odd_paths": 256,
+  "fixed_source_moment_checks": 2587,
+  "max_q": 12,
+  "moment_enclosures": [
+    {
+      "P_lower_decimal": "0.520941176470",
+      "P_upper_decimal": "0.520941176471",
+      "all_odd_endpoint_representatives": 3,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 520941176470586384,
+      "omitted_exponents_allowance": "27/703687441776640",
+      "q": 1,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 3
+    },
+    {
+      "P_lower_decimal": "0.219727728185",
+      "P_upper_decimal": "0.219727728187",
+      "all_odd_endpoint_representatives": 9,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 219727728185634461,
+      "omitted_exponents_allowance": "729/1759218604441600",
+      "q": 2,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 9
+    },
+    {
+      "P_lower_decimal": "0.165136823745",
+      "P_upper_decimal": "0.165136823750",
+      "all_odd_endpoint_representatives": 27,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 165136823745653471,
+      "omitted_exponents_allowance": "59049/17592186044416000",
+      "q": 3,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 27
+    },
+    {
+      "P_lower_decimal": "0.080868544336",
+      "P_upper_decimal": "0.080868544362",
+      "all_odd_endpoint_representatives": 81,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 80868544336985967,
+      "omitted_exponents_allowance": "531441/21990232555520000",
+      "q": 4,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 81
+    },
+    {
+      "P_lower_decimal": "0.070036809814",
+      "P_upper_decimal": "0.070036809978",
+      "all_odd_endpoint_representatives": 243,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 70036809814398552,
+      "omitted_exponents_allowance": "14348907/87960930222080000",
+      "q": 5,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 243
+    },
+    {
+      "P_lower_decimal": "0.082614638405",
+      "P_upper_decimal": "0.082614639463",
+      "all_odd_endpoint_representatives": 729,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 82614638405273733,
+      "omitted_exponents_allowance": "1162261467/1099511627776000000",
+      "q": 6,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 729
+    },
+    {
+      "P_lower_decimal": "0.078945047353",
+      "P_upper_decimal": "0.078945054014",
+      "all_odd_endpoint_representatives": 2187,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 78945047353829779,
+      "omitted_exponents_allowance": "73222472421/10995116277760000000",
+      "q": 7,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 2187
+    },
+    {
+      "P_lower_decimal": "0.071161178485",
+      "P_upper_decimal": "0.071161219585",
+      "all_odd_endpoint_representatives": 6561,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 71161178485637446,
+      "omitted_exponents_allowance": "282429536481/6871947673600000000",
+      "q": 8,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 6561
+    },
+    {
+      "P_lower_decimal": "0.114005626195",
+      "P_upper_decimal": "0.114005875872",
+      "all_odd_endpoint_representatives": 19683,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 114005626195916872,
+      "omitted_exponents_allowance": "68630377364883/274877906944000000000",
+      "q": 9,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 19683
+    },
+    {
+      "P_lower_decimal": "0.128382465067",
+      "P_upper_decimal": "0.128383963123",
+      "all_odd_endpoint_representatives": 59049,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 128382465067616818,
+      "omitted_exponents_allowance": "205891132094649/137438953472000000000",
+      "q": 10,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 59049
+    },
+    {
+      "P_lower_decimal": "0.164892882317",
+      "P_upper_decimal": "0.164901780765",
+      "all_odd_endpoint_representatives": 177147,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 164892882317216548,
+      "omitted_exponents_allowance": "61149666232110753/6871947673600000000000",
+      "q": 11,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 177147
+    },
+    {
+      "P_lower_decimal": "0.235522686400",
+      "P_upper_decimal": "0.235575106347",
+      "all_odd_endpoint_representatives": 531441,
+      "lower_scale": 1000000000000000000,
+      "lower_scaled_floor_numerator": 235522686400125790,
+      "omitted_exponents_allowance": "450283905890997363/8589934592000000000000",
+      "q": 12,
+      "rounding_allowance_denominator": 1000000000000000000,
+      "rounding_allowance_numerator": 531441
+    }
+  ],
+  "ranked_occupancy_checks": 2587,
+  "scope": "Exact finite arithmetic identities and rigorous finite moment enclosures; no asymptotic or cycle-exclusion verification.",
+  "source_cylinder_lifts_replayed": 3120,
+  "status": "PASS",
+  "toy_sequence_finite_examples": [
+    {
+      "inverse_moment_sum_rational_lower": "5/2",
+      "lower_squared_at_least_square_indices_count": true,
+      "nonsquare_index_with_exponential_value_above_q_cubed": 15,
+      "square_indices_count": 4,
+      "time_horizon": 16
+    },
+    {
+      "inverse_moment_sum_rational_lower": "71/12",
+      "lower_squared_at_least_square_indices_count": true,
+      "nonsquare_index_with_exponential_value_above_q_cubed": 255,
+      "square_indices_count": 16,
+      "time_horizon": 256
+    },
+    {
+      "inverse_moment_sum_rational_lower": "3719/280",
+      "lower_squared_at_least_square_indices_count": true,
+      "nonsquare_index_with_exponential_value_above_q_cubed": 4095,
+      "square_indices_count": 64,
+      "time_horizon": 4096
+    },
+    {
+      "inverse_moment_sum_rational_lower": "20626481/720720",
+      "lower_squared_at_least_square_indices_count": true,
+      "nonsquare_index_with_exponential_value_above_q_cubed": 65535,
+      "square_indices_count": 256,
+      "time_horizon": 65536
+    },
+    {
+      "inverse_moment_sum_rational_lower": "8655766259567761/144403552893600",
+      "lower_squared_at_least_square_indices_count": true,
+      "nonsquare_index_with_exponential_value_above_q_cubed": 1048575,
+      "square_indices_count": 1024,
+      "time_horizon": 1048576
+    }
+  ],
+  "word_representatives_replayed": 780
+}

@@ -1,0 +1,118 @@
+{
+  "affine_prefix_steps": 76,
+  "bad_controls_rejected": 6,
+  "claims": "two infinite affine classes; no universal closure",
+  "fixture_conversions": 16,
+  "normalization": "shortcut T and maximal odd valuations",
+  "rules": [
+    {
+      "child_progression": [
+        524288,
+        467911
+      ],
+      "examples": [
+        {
+          "child_index": 467911,
+          "child_source_rank": 70,
+          "parent_index": 1686382,
+          "parent_source_rank": 60,
+          "t": 0
+        },
+        {
+          "child_index": 992199,
+          "child_source_rank": 58,
+          "parent_index": 3575950,
+          "parent_source_rank": 48,
+          "t": 1
+        },
+        {
+          "child_index": 1516487,
+          "child_source_rank": 45,
+          "parent_index": 5465518,
+          "parent_source_rank": 35,
+          "t": 2
+        },
+        {
+          "child_index": 4137927,
+          "child_source_rank": 68,
+          "parent_index": 14913358,
+          "parent_source_rank": 58,
+          "t": 7
+        }
+      ],
+      "exponent_progression": [
+        9565938,
+        7656401
+      ],
+      "name": "A",
+      "parent_progression": [
+        1889568,
+        1686382
+      ],
+      "physical_prefixes": 4,
+      "source_endpoint": [
+        9565938,
+        8537309
+      ],
+      "target_endpoint": [
+        57395628,
+        51223855
+      ]
+    },
+    {
+      "child_progression": [
+        1048576,
+        663969
+      ],
+      "examples": [
+        {
+          "child_index": 663969,
+          "child_source_rank": 40,
+          "parent_index": 1196494,
+          "parent_source_rank": 30,
+          "t": 0
+        },
+        {
+          "child_index": 1712545,
+          "child_source_rank": 31,
+          "parent_index": 3086062,
+          "parent_source_rank": 21,
+          "t": 1
+        },
+        {
+          "child_index": 2761121,
+          "child_source_rank": 64,
+          "parent_index": 4975630,
+          "parent_source_rank": 54,
+          "t": 2
+        },
+        {
+          "child_index": 8004001,
+          "child_source_rank": 70,
+          "parent_index": 14423470,
+          "parent_source_rank": 60,
+          "t": 7
+        }
+      ],
+      "exponent_progression": [
+        9565938,
+        4822049
+      ],
+      "name": "B",
+      "parent_progression": [
+        1889568,
+        1196494
+      ],
+      "physical_prefixes": 4,
+      "source_endpoint": [
+        9565938,
+        6057251
+      ],
+      "target_endpoint": [
+        57395628,
+        36343507
+      ]
+    }
+  ],
+  "status": "PASS"
+}

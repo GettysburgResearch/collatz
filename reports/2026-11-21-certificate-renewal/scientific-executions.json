@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "scope": "Four production checkers and a separate C5 reconstruction, each executed in normal and optimized Python. These checks do not establish universal convergence.",
+  "executions": [
+    {
+      "name": "c5-bypasses",
+      "mode": "normal",
+      "command": [
+        "python3",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_c5_certified_bypasses.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:41.830392+00:00",
+      "elapsed_seconds": 0.028603540999029065,
+      "exit_code": 0,
+      "script_sha256": "0437e87b861c17423706eca4b994181460a108f173baef121112b2004fd4b805",
+      "stdout_sha256": "95e804a841b2e34e54fce242f086cd487ab25cf83cdd3864c47f7391d7dc132a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "c5-bypasses",
+      "mode": "optimized",
+      "command": [
+        "python3",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_c5_certified_bypasses.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:41.859269+00:00",
+      "elapsed_seconds": 0.08718697800213704,
+      "exit_code": 0,
+      "script_sha256": "0437e87b861c17423706eca4b994181460a108f173baef121112b2004fd4b805",
+      "stdout_sha256": "95e804a841b2e34e54fce242f086cd487ab25cf83cdd3864c47f7391d7dc132a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "five-word",
+      "mode": "normal",
+      "command": [
+        "python3",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_five_word_extension.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:41.946883+00:00",
+      "elapsed_seconds": 0.3607995540005504,
+      "exit_code": 0,
+      "script_sha256": "7648405fc2446f3ac857e23e79bb9923fca7e8b919ca31185d4977c80e0c7232",
+      "stdout_sha256": "2fb03f2fb1865d633e0517d8ac96818732bb7c71d8e49b93cabfc537a6d21c72",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "five-word",
+      "mode": "optimized",
+      "command": [
+        "python3",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_five_word_extension.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:42.308102+00:00",
+      "elapsed_seconds": 0.39585970700136386,
+      "exit_code": 0,
+      "script_sha256": "7648405fc2446f3ac857e23e79bb9923fca7e8b919ca31185d4977c80e0c7232",
+      "stdout_sha256": "2fb03f2fb1865d633e0517d8ac96818732bb7c71d8e49b93cabfc537a6d21c72",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "moments",
+      "mode": "normal",
+      "command": [
+        "python3",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_moment_quantiles.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:42.704334+00:00",
+      "elapsed_seconds": 1.740614906000701,
+      "exit_code": 0,
+      "script_sha256": "a016769d8a5b34c68971e1f6096fa322ec5f05d705053056ce5e70c5ae459449",
+      "stdout_sha256": "1c9b9cc328efb44bca5fc459d83a87aaf5e8faadc1280f06fe154c941d0a3900",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "moments",
+      "mode": "optimized",
+      "command": [
+        "python3",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_moment_quantiles.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:44.445416+00:00",
+      "elapsed_seconds": 2.0530834210003377,
+      "exit_code": 0,
+      "script_sha256": "a016769d8a5b34c68971e1f6096fa322ec5f05d705053056ce5e70c5ae459449",
+      "stdout_sha256": "1c9b9cc328efb44bca5fc459d83a87aaf5e8faadc1280f06fe154c941d0a3900",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "endpoints",
+      "mode": "normal",
+      "command": [
+        "python3",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_endpoint_summability.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:46.499015+00:00",
+      "elapsed_seconds": 0.3653271199982555,
+      "exit_code": 0,
+      "script_sha256": "b080f05857a9a418e7eae5567a3d9539427e3581d8f5d79967172d14e9e15714",
+      "stdout_sha256": "6c2e36376511349efbef7d8dbaa2704434b06f1db806e6a10c38c3d7bf1b01da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "endpoints",
+      "mode": "optimized",
+      "command": [
+        "python3",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "research/certificate-renewal-20261121/check_endpoint_summability.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:46.864752+00:00",
+      "elapsed_seconds": 0.4344861209974624,
+      "exit_code": 0,
+      "script_sha256": "b080f05857a9a418e7eae5567a3d9539427e3581d8f5d79967172d14e9e15714",
+      "stdout_sha256": "6c2e36376511349efbef7d8dbaa2704434b06f1db806e6a10c38c3d7bf1b01da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "c5-independent",
+      "mode": "normal",
+      "command": [
+        "python3",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-21-certificate-renewal/review_c5_affine.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:47.299612+00:00",
+      "elapsed_seconds": 0.01930740999887348,
+      "exit_code": 0,
+      "script_sha256": "15fb004655f05bd519248aaa59d05893f3c0a7c6e3e20af2d0faf093a7ad2f1c",
+      "stdout_sha256": "e83601b023a4fa61e2453322619d89f1429ff98f47f06b319ac38a1548d01066",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "name": "c5-independent",
+      "mode": "optimized",
+      "command": [
+        "python3",
+        "-OO",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-21-certificate-renewal/review_c5_affine.py"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/collatz_full_theorem",
+      "started_utc": "2026-11-20T23:05:47.319124+00:00",
+      "elapsed_seconds": 0.06205844400028582,
+      "exit_code": 0,
+      "script_sha256": "15fb004655f05bd519248aaa59d05893f3c0a7c6e3e20af2d0faf093a7ad2f1c",
+      "stdout_sha256": "e83601b023a4fa61e2453322619d89f1429ff98f47f06b319ac38a1548d01066",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "observed_utc": "2026-11-20 23:06:04 UTC",
+  "base_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "repository": "GettysburgResearch/collatz",
+  "scope": "Selected live metadata and frozen manuscripts; not an audit of every open branch",
+  "pull_requests": [
+    {
+      "number": 146,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146",
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head_branch": "research/upper-bit-merger-cost-20261120",
+      "head_sha": "fd991063721e9c157d318e40bb20131762f7d750",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T22:39:07Z"
+    },
+    {
+      "number": 153,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/153",
+      "title": "Research: binary-run cores, adaptive mergers, and recursive orbit bounds",
+      "head_branch": "research/fixed-integer-descent-20261120",
+      "head_sha": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T18:43:31Z"
+    },
+    {
+      "number": 157,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/157",
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "head_branch": "research/global-closure-20261120",
+      "head_sha": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T20:01:36Z"
+    },
+    {
+      "number": 160,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/160",
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "head_branch": "research/closure-attacks-20261120",
+      "head_sha": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T20:33:03Z"
+    },
+    {
+      "number": 162,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/162",
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "head_branch": "research/creative-closure-20261120",
+      "head_sha": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T20:56:47Z"
+    },
+    {
+      "number": 163,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/163",
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "head_branch": "research/deep-reverse-closure-20261120",
+      "head_sha": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T21:53:00Z"
+    },
+    {
+      "number": 164,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/164",
+      "title": "Research: partial 512-residue witness closure with explicit certificates and descents",
+      "head_branch": "research/witness-closure-512-2026-11-20",
+      "head_sha": "6fa6b429870a9cd53cde0fc77ad64a3c3956199f",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": false,
+      "updated_at": "2026-11-20T22:36:01Z"
+    },
+    {
+      "number": 165,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/165",
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "head_branch": "research/certificate-transfer-intake-20261120",
+      "head_sha": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T22:13:11Z"
+    },
+    {
+      "number": 166,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/166",
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "head_branch": "research/grh-certificate-closure-20261120",
+      "head_sha": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "draft": true,
+      "updated_at": "2026-11-20T22:17:47Z"
+    }
+  ]
+}

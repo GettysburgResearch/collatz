@@ -1,0 +1,61 @@
+A WEIGHTED RESIDUE MOMENT OUTSIDE A MOVING THRESHOLD
+
+For q>=1 and a word w=(a_1,...,a_q) of positive integers, define
+
+  A_0=0,   A_j=a_1+...+a_j,
+  C_w=sum_{j=0}^{q-1} 3^(q-1-j) 2^A_j,
+  J_w=3^q / 2^A_q.
+
+Let r_w be the unique odd integer with 1<=r_w<2*3^q such that
+
+  2^A_q r_w = C_w  (mod 3^q).
+
+Define the nonnegative finite sums
+
+  P_q=sum_w J_w^4/r_w^2,
+  Z_q=sum_{w: r_w>q} J_w^4/r_w^2.
+
+Each sum is over all positive-exponent words of length q, without a maximum exponent. Finiteness follows from P_q <= (27/5)^q.
+
+QUESTION
+
+Prove or disprove the exact assertion
+
+  liminf_{N->infinity} N^(-59/19) sum_{q=1}^N Z_q = 0.    (1)
+
+The stronger assertion that this normalized sum tends to zero would also suffice. A uniform estimate Z_q=O(q^(21/10)) would imply (1), but is stronger than what is requested.
+
+KNOWN FACTS AVAILABLE FOR USE
+
+The following estimates hold unconditionally:
+
+  sum_{q>=1} sum_w J_w^4/r_w^5 < 512/175,                  (2)
+
+  sum_{w:r_w<=R} J_w^4/r_w^2 < 2 R^2                     (3)
+
+for every real R>=1. Thus the omitted region r_w<=q has total contribution at most 2 sum_{q<=N}q^2=O(N^3), which is o(N^(59/19)). In fact its cumulative contribution is o(N^3). The question may equivalently be asked with P_q in place of Z_q.
+
+More generally, for every beta>=0,
+
+  sum_{q>=1} q^(-3 beta) sum_{w:r_w<=q^beta} J_w^4/r_w^2
+       < 512/175.                                       (4)
+
+The difficulty in (1) is therefore not a contribution from a fixed finite set of representatives. It concerns the representatives above a growing threshold. The three-power difference between (2) and the requested second-denominator-power sum must be retained.
+
+EXACT FINITE RECURRENCE
+
+Set H_0(t)=1 on positive odd t. For q>=1 let L_q=2*3^(q-1). Then
+
+  H_q(t) = 81/(1-16^(-L_q))
+       * sum_{1<=a<=L_q, 2^a t = 1 (mod3)}
+            16^(-a) H_{q-1}((2^a t-1)/3).
+
+Evaluate H_{q-1} on the unique positive odd representative modulo 3^(q-1). Each H_q has period 2*3^q on odd arguments, and
+
+  P_q=sum_{1<=t<2*3^q, t odd} H_q(t)/t^2,
+  Z_q=sum_{q<t<2*3^q, t odd} H_q(t)/t^2,
+  sum_{1<=t<2*3^q, t odd} H_q(t)=(27/5)^q.
+
+This recurrence sums all omitted exponents through an exact geometric factor. A truncated exponent menu is a different quantity unless its tail is bounded.
+
+A proof, an exact disproof, or a precisely scoped new bound is useful. Keep the dependence between the weight J_w and the exact residue representative r_w; replacing it by an independent uniform representative changes the problem. Finite computations do not establish the asymptotic assertion.
