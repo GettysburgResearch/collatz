@@ -1,0 +1,38 @@
+{
+  "excluded_publication_files": [
+    "reports/2026-11-21-global-forcing/CONTENT_SHA256.json",
+    "reports/2026-11-21-global-forcing/README.md",
+    "reports/2026-11-21-global-forcing/VALIDATION.md",
+    "reports/2026-11-21-global-forcing/scientific-execution.json",
+    "reports/2026-11-21-global-forcing/repository-validation.json"
+  ],
+  "files": {
+    "reports/2026-11-21-global-forcing/ROOT_REVIEW.md": "85a0ca655bb92c310b484e4e59499a29853fb37b4c594aa37d6864f9a961b9a7",
+    "reports/2026-11-21-global-forcing/run_checks.py": "dfbd9e79a412a437bf1a3d5b6d2d38a06c66deede9f75e804a2d1237625f43c3",
+    "reports/2026-11-21-global-forcing/source-heads.json": "3e2a0d67aabcd85db11ea3184da804d7abfacb9affbe0b882ab84f59dc541344",
+    "research/README.md": "6898a86050f43486a08812e5e463dcdc96739926dd6dcaaff2c4a9376c6dd2f2",
+    "research/global-forcing-20261121/README.md": "111bf9cf499bdd3793a10c49cb1021b182ee328eccb556a07114ad75ca293d74",
+    "research/global-forcing-20261121/SOURCES.md": "13793a62d5d5c2374a5bc65d3ab76e4c61455642fb8277e25ad392644fc6b68d",
+    "research/global-forcing-20261121/arithmetic/CARRY_REVIEW.md": "730f6769961e9f0f67f4bd0dfb2f00faf0a7f46cefac668810f7da81160d7eb0",
+    "research/global-forcing-20261121/arithmetic/LATEST_COMPARISON.md": "295f33a1ce9d3f8956c5dcdc586c50054bd9f97a71ffbbc184c1f84d85ca6221",
+    "research/global-forcing-20261121/arithmetic/README.md": "4a9c2ef5a33b4df07c841488c93b1173df1d0349dd55c99d4ea0cc386006c990",
+    "research/global-forcing-20261121/arithmetic/SHIFTED_RANK_COMPACTNESS.md": "25af03cd100c76d2fdaff86155fecba366c1d9ae085ce38790a99ed9a0f02095",
+    "research/global-forcing-20261121/arithmetic/TERMINAL_PHASE_REVIEW.md": "7b433f32873b4bffc526b2c1856388a268bc0d27d089ee9ca90e2a5e1fe756e0",
+    "research/global-forcing-20261121/arithmetic/check_shifted_rank.py": "8cdc564c2a4f0af248f145e802814b0f3c0043c0625e8f5d66685676f4c90560",
+    "research/global-forcing-20261121/arithmetic/shifted-rank-report.json": "3003ac47e06f29a0b71836884082cc6bdaff8e55107a6dc805e64a724570ec74",
+    "research/global-forcing-20261121/certificates/CARRY_COMPILER.md": "394571cd06d55caa4465cdb7a1d76cefc1d36b29bfc41522ac5a2c136f6cf7ea",
+    "research/global-forcing-20261121/certificates/LATEST_COMPARISON.md": "40a7c455db29c601bae9204ef0a4ab69591b436a624d7371137a0e29ff9830d2",
+    "research/global-forcing-20261121/certificates/RENEWAL_REVIEW.md": "c89592b1b901ada2b77976b215a97d0c336626ab2f3b956c01884c8e17cffd8a",
+    "research/global-forcing-20261121/certificates/carry-compiler-report.json": "cad16a9ff61e16907389c9278ccc9c2599a8199a3a60e9490cd5586fc7041828",
+    "research/global-forcing-20261121/certificates/check_carry_compiler.py": "0f5f09f0621b923717bfde1780f707940256f9fcf6f46f5a1846bf23d8a4f5ca",
+    "research/global-forcing-20261121/energy/COUPLED_RENEWAL.md": "1ac74226cc170ca3000ccd24359093dc9c2d652db1a23d323211f4b4f90ada11",
+    "research/global-forcing-20261121/energy/LATEST_COMPARISON.md": "bc2d7d091933169f7934630e9ce840c14e7bb0b6cedcc42a61b748af1d439c6c",
+    "research/global-forcing-20261121/energy/README.md": "11903bfaeb84a52d56e984060075eb2bdb8bdb52f733a3a365597b9236b3f15f",
+    "research/global-forcing-20261121/energy/REVIEW_CARRY.md": "71742e02ed1a7f2ada711b74fd5c8cfd2f0c1c1aafe3841c6f1703f8bb07928a",
+    "research/global-forcing-20261121/energy/TERMINAL_PHASE.md": "a6244f942da0f2b597fa3d204300dc300fec1200f13004e43b68438c5ebd0280",
+    "research/global-forcing-20261121/energy/check_renewal_phase.py": "e317cb562598444b85d31c58a5ac3e3ad117eb5f230df57925fc29de664bc448",
+    "research/global-forcing-20261121/energy/renewal_phase_report.json": "cfbb20cfb6e023b3228d4927ab2684a3641572c304b7e2bc3e74df62ef21c978"
+  },
+  "schema": "collatz-global-forcing-content/v1",
+  "scope": "Frozen scientific material, source comparisons, review, inventory, replay driver and active index; excludes publication metadata and execution receipts."
+}

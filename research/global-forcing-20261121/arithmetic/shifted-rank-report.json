@@ -1,0 +1,56 @@
+{
+  "actual_block_edges": 13979,
+  "cycle_integer_constant_controls": 385,
+  "degenerate_family_instances": 79,
+  "edge_and_coset_reconstructions": 2208,
+  "external_inputs_not_proved_by_execution": [
+    "Evertse-Schlickewei-Schmidt Theorem 1.1",
+    "Lagarias Lemma 2.2(1) logarithmic-form estimate"
+  ],
+  "finite_coset_cover_cases": 4,
+  "group_rank_reconstructions": 5,
+  "inverse_tower": {
+    "all_edges_defects": true,
+    "first_twelve_shifted_absolute_ranks": [
+      1,
+      2,
+      3,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "first_twelve_values": [
+      1,
+      5,
+      13,
+      17,
+      181,
+      241,
+      1285,
+      6853,
+      9137,
+      24365,
+      64973,
+      173261
+    ],
+    "largest_source_bits": 198,
+    "odd_depth": 128
+  },
+  "negative_controls_rejected": 9,
+  "run_defect_blocks": 828,
+  "schema": "collatz-shifted-rank-finite-controls/v1",
+  "scope": "Exact finite algebra, domain, rank and certificate controls; no all-cycle census or Collatz proof",
+  "simple_prefix_clock_checks": 2286,
+  "status": "PASS",
+  "symbolic_constants": {
+    "B_r_binary_exponent_coefficient": 793437161472,
+    "cycle_height_log_bound": "256*d*2**d",
+    "ess_coefficient": 198359290368
+  }
+}
