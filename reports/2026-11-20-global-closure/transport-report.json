@@ -1,0 +1,272 @@
+{
+  "actual_replay": {
+    "actual_B_edges": 3475,
+    "largest_physical_state": 4076810,
+    "physical_shortcut_edges": 25037,
+    "physically_replayed_A_words": 9117,
+    "safe_A_steps_inside_B": 2914
+  },
+  "checker_sha256": "68e74e13aa3ebf7aaeef743dcbcd9a06216f349a4c65af8cf703a3eea20d3d83",
+  "claims": [
+    "GCT-001",
+    "GCT-002",
+    "GCT-003",
+    "GCT-004"
+  ],
+  "controls": {
+    "finite_doubling_edges": 984,
+    "long_chain_symbolic_margins": 4,
+    "nonabsorbing_squaring_reciprocal_sum_below_one": true,
+    "squaring_edges": 11
+  },
+  "evidence_scope": "Exact finite actual-return replay; full-source fixed-horizon enclosures via analytic tails. No all-time closing estimate.",
+  "finite_path_checks": {
+    "all_tested_sources_killed_within_horizon": true,
+    "exact_reciprocal_height_coboundaries": 3475,
+    "longest_tested_unsafe_path": 37,
+    "source_paths": 2941,
+    "translated_window_checks": 122729
+  },
+  "functional_enclosures": [
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.078505334875",
+          "0.078505334876"
+        ],
+        "lower_scaled": "78505334875236639182138485634",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "78505334875236639182138489375"
+      },
+      "finite_source_carriers_at_last_observation": 2941,
+      "horizon": 1,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.000073274437"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "73274436455694252356137376"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.078505334875",
+          "0.078578609312"
+        ],
+        "lower_scaled": "78505334875236639182138485634",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "78578609311692333434494626751"
+      }
+    },
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.103603420049",
+          "0.103603420050"
+        ],
+        "lower_scaled": "103603420049896604929404490032",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "103603420049896604929404496124"
+      },
+      "finite_source_carriers_at_last_observation": 1503,
+      "horizon": 2,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.000146548873"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "146548872911388504712274751"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.103603420049",
+          "0.103749968923"
+        ],
+        "lower_scaled": "103603420049896604929404490032",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "103749968922807993434116770875"
+      }
+    },
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.120180686698",
+          "0.120180686699"
+        ],
+        "lower_scaled": "120180686698551270708305004415",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "120180686698551270708305013727"
+      },
+      "finite_source_carriers_at_last_observation": 589,
+      "horizon": 4,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.000293097746"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "293097745822777009424549501"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.120180686698",
+          "0.120473784445"
+        ],
+        "lower_scaled": "120180686698551270708305004415",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "120473784444374047717729563228"
+      }
+    },
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.129521120082",
+          "0.129521120083"
+        ],
+        "lower_scaled": "129521120082166796251864732560",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "129521120082166796251864746329"
+      },
+      "finite_source_carriers_at_last_observation": 221,
+      "horizon": 8,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.000586195492"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "586195491645554018849099001"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.129521120082",
+          "0.130107315574"
+        ],
+        "lower_scaled": "129521120082166796251864732560",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "130107315573812350270713845330"
+      }
+    },
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.140638737116",
+          "0.140638737117"
+        ],
+        "lower_scaled": "140638737116034919267144713613",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "140638737116034919267144731744"
+      },
+      "finite_source_carriers_at_last_observation": 47,
+      "horizon": 16,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.001172390984"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "1172390983291108037698198001"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.140638737116",
+          "0.141811128100"
+        ],
+        "lower_scaled": "140638737116034919267144713613",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "141811128099326027304842929745"
+      }
+    },
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.140870122044",
+          "0.140870122045"
+        ],
+        "lower_scaled": "140870122044598241814770607415",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "140870122044598241814770627035"
+      },
+      "finite_source_carriers_at_last_observation": 3,
+      "horizon": 32,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.002344781967"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "2344781966582216075396396001"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.140870122044",
+          "0.143214904012"
+        ],
+        "lower_scaled": "140870122044598241814770607415",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "143214904011180457890167023036"
+      }
+    },
+    {
+      "finite_source_G": {
+        "decimal_enclosure": [
+          "0.140870202043",
+          "0.140870202044"
+        ],
+        "lower_scaled": "140870202043330400457564631081",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "140870202043330400457564650717"
+      },
+      "finite_source_carriers_at_last_observation": 0,
+      "horizon": 64,
+      "omitted_original_source_tail_upper": {
+        "decimal_enclosure": [
+          "0.000000000000",
+          "0.004689563934"
+        ],
+        "lower_scaled": "0",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "4689563933164432150792792001"
+      },
+      "whole_source_G": {
+        "decimal_enclosure": [
+          "0.140870202043",
+          "0.145559765977"
+        ],
+        "lower_scaled": "140870202043330400457564631081",
+        "scale": "1000000000000000000000000000000",
+        "upper_scaled": "145559765976494832608357442718"
+      }
+    }
+  ],
+  "integer_log_crosschecks": {
+    "nested_log_checks": 9,
+    "rational_log_checks": 11
+  },
+  "original_source_cutoff": 8192,
+  "psi_star": {
+    "decimal_enclosure": [
+      "1.665729810578",
+      "1.665729810579"
+    ],
+    "lower_scaled": "1665729810578276409082554250598",
+    "scale": "1000000000000000000000000000000",
+    "upper_scaled": "1665729810578276409082554250769"
+  },
+  "return_horizon": 64,
+  "schema": "global-closure-transport-v1",
+  "source_pins": {
+    "PR152": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+    "PR153": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+    "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a"
+  },
+  "status": "PASS",
+  "unsafe_original_sources": 2941
+}

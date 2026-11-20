@@ -1,0 +1,35 @@
+{
+  "J_commutators": 800,
+  "all_depth_closure_claimed": false,
+  "checker_sha256": "b9340f7a52bb2b2dbd483b409b2629beb81731da2cd193a86fc598fc8b0fc73c",
+  "common_endpoint_pairs_through_shortcut_clock_96": 3857,
+  "first_hit_product_cases_odd_units_through_5001": 1667,
+  "general_inverse_lifts_z_below_1000_g_2_through_30": 3220,
+  "maximum_finite_reciprocal_sum": [
+    106065144778938603900363149816296307423419655548803481270228,
+    153916553221974829212376323411234726362097195161854675617065
+  ],
+  "negative_root_cycle_padding_cases": 6668,
+  "propagator_progression_cases": 512,
+  "reviewed_note_sha256": "956ffcb0d70edfc9caf94cbddeada8259088cd6c187a068fdd798bbfd0da723a",
+  "shifted_power_cases_a_2_through_80": 79,
+  "status": "PASS: bounded arithmetic replay; all-depth deductions reconstructed separately in CLOSING_REVIEW.md",
+  "stopping_counts_shortcut_and_odd": {
+    "1": [
+      0,
+      0
+    ],
+    "2": [
+      1,
+      0
+    ],
+    "25": [
+      16,
+      7
+    ],
+    "5": [
+      4,
+      1
+    ]
+  }
+}

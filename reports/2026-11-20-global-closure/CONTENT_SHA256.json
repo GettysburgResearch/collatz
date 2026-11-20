@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-global-closure-content/v1",
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "Scientific manuscripts, source index, exact certificate, replay programs, deterministic reports, independent reviews and bundle runner. Report index, validation narrative, this manifest and execution receipts are excluded to permit a documentation-only receipt commit.",
+  "files": {
+    "experiments/global_closure_arithmetic.py": "5c928688397bd8b4f1d3b9b357e1646ec27cc8973c43a54abc3c714f84040269",
+    "experiments/global_closure_merger.py": "01f093ee6dd01820757bb23ae224f5d3df7b9130137980dfa96e123f1ab86c8b",
+    "experiments/global_closure_transport.py": "68e74e13aa3ebf7aaeef743dcbcd9a06216f349a4c65af8cf703a3eea20d3d83",
+    "reports/2026-11-20-global-closure/ARITHMETIC_REVIEW.md": "fa3816eb46c894a1145cc7a5ba155f7b2573cf75c60522301083fa288447cc99",
+    "reports/2026-11-20-global-closure/CLOSING_REVIEW.md": "78a8a8e4e23a02f67b9c7d54c3e7ad2eaccbd4bb2324344f64ccaa0a91091119",
+    "reports/2026-11-20-global-closure/MERGER_REVIEW.md": "24cc2367504b51ae2f4c70d6ace772c2a93faf0244bf0c4168ab051e18c46264",
+    "reports/2026-11-20-global-closure/TRANSPORT_REVIEW.md": "029f31970e65c1b88c93996692600fa121c93d8117fabb1681ffea7c516c56a4",
+    "reports/2026-11-20-global-closure/arithmetic-independent-check.py": "88dddc07178f8ccabb53b211d8b1f61950953da035a36b03de47391a75a1bbdd",
+    "reports/2026-11-20-global-closure/arithmetic-independent-report.json": "4d40719a60f0e995c27aee8dfc449ccaab9528ba6e9d5d27adba649dd053abf3",
+    "reports/2026-11-20-global-closure/arithmetic-report.json": "8d27838b5023b399736350d7659ba49cf62273f97e4261feaee5c779fe79336a",
+    "reports/2026-11-20-global-closure/arithmetic-transport-independent.json": "531b04cda9adb783f57a5774d18bb97f96a7c5fd10677a6326e6edba641f0d09",
+    "reports/2026-11-20-global-closure/arithmetic-transport-independent.py": "be9ab2a4d2023b3691a729610a102ca179f611da2e459467f3ac886123b629e3",
+    "reports/2026-11-20-global-closure/check_closing_independent.py": "b9340f7a52bb2b2dbd483b409b2629beb81731da2cd193a86fc598fc8b0fc73c",
+    "reports/2026-11-20-global-closure/check_merger_independent.py": "e919bd3ee6f590d72dc13bca342ac74b837f6ca6f714ea79c5547584798ff871",
+    "reports/2026-11-20-global-closure/closing-independent-report.json": "7faa3cff2b86dfc069f6647c95387f8e95525277447460d72b610692115f3abb",
+    "reports/2026-11-20-global-closure/merger-certificate.json": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+    "reports/2026-11-20-global-closure/merger-independent-report.json": "5acf1fac3a4cc0599388b228b707a1a4aab15dce64d917d352745fb28134fc2c",
+    "reports/2026-11-20-global-closure/merger-report.json": "2a1099beb71531fa8f447c0356fa9789b2d5e8f9f75509022ef7e4215bea9306",
+    "reports/2026-11-20-global-closure/run_bundle.py": "d9caf6126a49fd27fd5adaaaa702303deb1ca0ed058ddea198f804f133218479",
+    "reports/2026-11-20-global-closure/transport-report.json": "e4a3a274584d5656980e093946e1a61f1dc27059d7947b53143572d81a84b779",
+    "research/global-closure-20261120/README.md": "c3be864d85a6a7f9778733d16f6a714d4f2eca5949e02ff34c24911c8c98783f",
+    "research/global-closure-20261120/SOURCES.md": "0f44ab3da978de90342d4e23c255ae9fe53d60ef8bd7a90d811ca50c4daab70e",
+    "research/global-closure-20261120/arithmetic.md": "ed2b9c627fe7b9000934ac6c0231f55f0cbafca1cbc6283b0d48b5758dc7860c",
+    "research/global-closure-20261120/closing-attempts.md": "956ffcb0d70edfc9caf94cbddeada8259088cd6c187a068fdd798bbfd0da723a",
+    "research/global-closure-20261120/merger.md": "148bd92aa2c3d09e72bbc9521de8521a38f10691e53c5f6e0f780cb13bae065a",
+    "research/global-closure-20261120/transport.md": "5b1559d09ae81107416b44e97fd8b93a7a60d0f334746e3b2c94ab314d6c9649"
+  }
+}

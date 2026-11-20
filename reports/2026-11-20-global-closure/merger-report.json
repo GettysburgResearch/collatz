@@ -1,0 +1,68 @@
+{
+  "certificate_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+  "checker_sha256": "01f093ee6dd01820757bb23ae224f5d3df7b9130137980dfa96e123f1ab86c8b",
+  "negative_controls_rejected": [
+    "B must have odd inputs on the whole cell",
+    "inverse odd source must be integral",
+    "inverse source may not become divisible by three",
+    "multiplication by five is not a reverse proof primitive",
+    "division by three is unlicensed",
+    "division must hold for every lift",
+    "a missing infinite residue cell is rejected",
+    "a false terminal affine identity is rejected",
+    "a legal but nondecreasing path is rejected"
+  ],
+  "results": {
+    "affine_steps": 1284,
+    "all_lift_scope": "Exact affine guards, identities, positivity, ternary-unit preservation, strict descent, and complete residue cover.",
+    "bounded_concrete_replays": 1856,
+    "cells": 464,
+    "cells_using_five": 219,
+    "common_cover_modulus": 1866240,
+    "conditional_division_factors": [
+      5
+    ],
+    "covered_reduced_residues": 497664,
+    "distinct_words": 55,
+    "division_by_three_used": false,
+    "division_counts": {
+      "2": 1952,
+      "5": 219
+    },
+    "excluded_claim": "No physical forward-five closure or ordinary stopping-time bound was proved.",
+    "maximum_augmented_edge_cost": 73,
+    "maximum_endpoint_source_ratio": [
+      13403,
+      14119
+    ],
+    "maximum_five_uses_per_cell": 1,
+    "maximum_word_length": 19,
+    "minimum_integer_decrease": 3,
+    "modulus_cell_counts": {
+      "1440": 378,
+      "1866240": 6,
+      "311040": 35,
+      "51840": 12,
+      "8640": 33
+    },
+    "operation_counts": {
+      "B": 900,
+      "I1": 163,
+      "I10": 3,
+      "I2": 71,
+      "I3": 81,
+      "I4": 7,
+      "I5": 14,
+      "I6": 17,
+      "I7": 22,
+      "I9": 6
+    },
+    "ordinary_base_exception": 1,
+    "uniform_decrease_bound": [
+      19,
+      20
+    ]
+  },
+  "schema": "collatz-global-closure-merger-report-v1",
+  "status": "PASS: exact conditional unit descent; physical basin closure remains OPEN"
+}

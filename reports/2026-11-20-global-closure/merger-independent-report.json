@@ -1,0 +1,29 @@
+{
+  "certificate_sha256": "751523dd92445610a26302947a2f689aecc56a27eaf6fa1f9954eb2e59f5c7c1",
+  "checker_sha256": "e919bd3ee6f590d72dc13bca342ac74b837f6ca6f714ea79c5547584798ff871",
+  "corruptions_rejected": [
+    "missing cell",
+    "overlapping cells",
+    "wrong endpoint",
+    "unlicensed division"
+  ],
+  "results": {
+    "cell_transcript_sha256": "ea514eae4ed463b3f40ec2502c40d0ce31fa6d31ffe12cc99a48a4f39662ace2",
+    "cells": 464,
+    "conditional_five_uses": 219,
+    "exact_cover_density": "4/15",
+    "maximum_endpoint_ratio": "13403/14119",
+    "maximum_five_argument_cell": [
+      8640,
+      2239,
+      "W17"
+    ],
+    "maximum_five_argument_ratio": "3669265/2239",
+    "maximum_intermediate_ratio": "18346325/2239",
+    "pairwise_crt_checks": 107416,
+    "rational_primitive_checks": 3455,
+    "scope": "Complete symbolic conditional descent, not a proof of the physical five-closure premise."
+  },
+  "schema": "independent-directed-five-audit-v1",
+  "status": "PASS"
+}
