@@ -1004,4 +1004,38 @@ theorem early_meeting_large_odd_budget (m n i j k A t : ℕ) (hm : m < n) (hA : 
   rw [hj] at bound
   omega
 
+private theorem mirror_seven_blocks (k : ℕ) :
+    mirrorOrbit 7 (3 * k) = 7 ∧ mirrorOdds 7 (3 * k) = 2 * k := by
+  induction k with
+  | zero => simp [mirrorOrbit, mirrorOdds]
+  | succ k ih =>
+    rw [show 3 * (k + 1) = ((3 * k + 1) + 1) + 1 by omega]
+    simp [mirrorOrbit, mirrorOdds, ih.1, ih.2, mirrorStep]
+    omega
+
+private theorem four_step_cell (r u : ℕ) (hr : r = 8 ∨ r = 10) :
+    orbit (r + 16 * u) 4 = 3 * u + 2 ∧ odds (r + 16 * u) 4 = 1 := by
+  have hy := high_bit r 4 u
+  have hs := odds_high_bit r 4 u
+  have base : orbit r 4 = 2 ∧ odds r 4 = 1 := by rcases hr with rfl | rfl <;> decide
+  rw [base.1, base.2] at hy
+  rw [base.2] at hs
+  exact ⟨by simpa [Nat.add_comm] using hy, hs⟩
+
+/-- The two phases -5 and -7 give an ordinary smaller partner four steps
+after the checkpoint, uniformly in the number of expanding blocks. -/
+theorem four_step_exit (m k t u : ℕ) (hn : m + 7 = 8 ^ k * t)
+    (he : 9 ^ k * t = 16 * u + 15) :
+    orbit (m + 2) (3 * k + 4) = 3 * u + 2 ∧ orbit m (3 * k + 4) = 3 * u + 2 ∧
+    odds (m + 2) (3 * k + 4) = 2 * k + 1 ∧ odds m (3 * k + 4) = 2 * k + 1 := by
+  obtain ⟨hy, ho⟩ := five_checkpoint (m + 2) k t (by omega)
+  have hl := mirror_lift m 7 (3 * k) t (by decide) (by simpa [pow_mul] using hn)
+  have hl' : orbit m (3 * k) + 7 = 9 ^ k * t ∧ odds m (3 * k) = 2 * k := by
+    simpa [mirror_seven_blocks, pow_mul] using hl
+  have hu : orbit (m + 2) (3 * k) = 10 + 16 * u := by omega
+  have hv : orbit m (3 * k) = 8 + 16 * u := by omega
+  have hf := four_step_cell 10 u (Or.inr rfl)
+  have hg := four_step_cell 8 u (Or.inl rfl)
+  simp only [orbit_add, odds_add, hu, hv, hf.1, hf.2, hg.1, hg.2, ho, hl'.2, and_self]
+
 end CollatzUpperBit

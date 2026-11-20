@@ -72,6 +72,33 @@ def check_smaller_sources(limit, clock):
     return tested, meetings, witnesses
 
 
+def check_four_step_exit():
+    tested = 0
+    for k, a in product((1, 2, 5, 12, 24, 48, 96), (0, 1, 6, 12)):
+        ternary = 3**a
+        t0 = 15 * pow(9**k, -1, 16) % 16
+        # Set n = 0 modulo 3**a while retaining the prescribed four exit bits.
+        shift = (5 * pow(8**k, -1, ternary) - t0) * pow(16, -1, ternary) % ternary
+        for lift in (shift, shift + ternary):
+            t = t0 + 16 * lift
+            u = (9**k * t - 15) // 16
+            n = 8**k * t - 5
+            if n % ternary or 9**k * t != 16 * u + 15:
+                raise AssertionError(("exit cell", k, a, t))
+            x, m = n, n - 2
+            odd_x = odd_m = 0
+            for i in range(1, 3 * k + 5):
+                odd_x += x % 2
+                odd_m += m % 2
+                x, m = step(x), step(m)
+                if (x == m) != (i == 3 * k + 4) or (k >= 24 and x <= n):
+                    raise AssertionError(("exit timing", k, n, i, x, m))
+            if (x, odd_x, odd_m) != (3 * u + 2, 2 * k + 1, 2 * k + 1):
+                raise AssertionError(("exit endpoint", k, n))
+            tested += 1
+    return tested
+
+
 def check_targets():
     tested = 0
     for k, a, u in product(range(1, 4), range(3), (1, 5, 7)):
@@ -138,8 +165,10 @@ def check_density(k, horizon):
 
 if __name__ == "__main__":
     tested, meetings, witnesses = check_smaller_sources(16384, 128)
+    exits = check_four_step_exit()
     targets = check_targets()
     words = sum(check_density(k, horizon) for k in range(1, 4) for horizon in range(9))
     print(f"{tested} checkpoint positions, {meetings} with an actual earlier source")
     print(f"{witnesses} small ordinary witnesses recovered from actual mergers")
+    print(f"{exits} four-step equal-count exits")
     print(f"{targets} prescribed-target orbits, {words} exponent lifts checked against first passage")

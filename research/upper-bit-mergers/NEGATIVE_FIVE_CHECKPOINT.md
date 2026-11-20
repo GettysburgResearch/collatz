@@ -95,6 +95,14 @@ have $Y/2^r<n$. The prescription fixes one residue for $n$ modulo $2^{3k+r}$, co
 
 For a fixed $k$, any power with $8^k\mid 3^a+5$ is eligible for (1). Choosing $a$ in $[2^{3k-2},2^{3k-1})$ in the unique prescribed class gives an unbounded sequence for which the covered time $3k$ is within an absolute constant of $\log_2 a$. The signed cycle supplies finite parity words for these positive integers.
 
+### A smaller partner four steps after the checkpoint
+
+There is a uniform way through the initial obstruction even when direct descent is still arbitrarily far away. Write $n=8^k t-5$ and prescribe just four more binary digits by $9^k t\equiv15\pmod{16}$. Then $m=n-2>0$ and $n$ have the **same endpoint and the same odd count** at time $3k+4$.
+
+Indeed the lower start $8^k t-7$ follows the signed cycle starting at $-7$, a different phase of the same cycle. Its endpoint at $3k$ is $9^k t-7$ with $2k$ odd steps. Put $9^k t=16u+15$. The two endpoints are $16u+10$ and $16u+8$. Both halve, and then $8u+5$ and $8u+4$ both reach $3u+2$ in three steps with one odd input. Thus the smaller source gives a certificate of convergence if all smaller integers converge.
+
+For each $k\ge1$ the prescription holds on exactly one sixteenth of the exponent lifts satisfying $8^k\mid3^a+5$. It also allows $3^A\mid n$ for any $A$, by the Chinese remainder theorem. When $k\ge24$, $9^k>16\cdot8^k$, so the bound above rules out direct descent throughout these four additional steps. The proof therefore excludes an explicit infinite class of powers from being least counterexamples while their individual orbits are still above their starting values. As $k$ grows, the proven minimum wait for direct descent exceeds the time of this merger by an unbounded amount. [Lean identity](HighBit.lean)
+
 ### Reaching a prescribed target
 
 The obstruction also occurs on orbits known to reach 1. More generally fix $k\ge1$, $A\ge0$ and any positive target $u$ coprime to three. Choose $L$ satisfying
@@ -140,4 +148,4 @@ Earlier work analyzes smaller companions for specified exits from the same negat
 
 ## Verification
 
-Lean 4.34.1 checks (1), the stronger bound for $A\ge6$, and the small ordinary witness in (7) at the continued checkpoint. The exact exit constructions, divergence implication and density statements are written proofs. The separate checker replays 9,068 initial positions, including 4,325 with a smaller source on the tested clocks. It also reconstructs 74 small ordinary witnesses, follows 54 prescribed-target paths, and checks 1,533 exponent lifts against the finite first-passage law. Run `python -B research/upper-bit-mergers/check_checkpoint.py` from the repository root. [Lean proof](HighBit.lean) · [Exact checker](check_checkpoint.py)
+Lean 4.34.1 checks (1), the stronger bound for $A\ge6$, the small ordinary witness in (7) at the continued checkpoint, and the four-step equal-count exit. The direct-descent time, prescribed-target construction, divergence implication and density statements are written proofs. The separate checker replays 9,068 initial positions, including 4,325 with a smaller source on the tested clocks. It also reconstructs 74 small ordinary witnesses, replays 56 four-step equal-count exits and 54 prescribed-target paths, and checks 1,533 exponent lifts against the finite first-passage law. Run `python -B research/upper-bit-mergers/check_checkpoint.py` from the repository root. [Lean proof](HighBit.lean) · [Exact checker](check_checkpoint.py)
