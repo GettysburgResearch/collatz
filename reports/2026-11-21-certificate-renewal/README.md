@@ -39,6 +39,8 @@ Adding `-OO` after `python3` leaves all checks active. The moment checker bounds
 
 ## Repository and provenance
 
+The [concurrent source comparison](CONCURRENT_SOURCE_COMPARISON.md) credits PR167 and PR168, which appeared during this pass. It records exact decoder and family overlap, the two singular descent instances, and why their analytic interfaces do not yet bound the moving residue moment. This publication addendum does not alter the frozen scientific manuscripts or replay records.
+
 The [selected source snapshot](source-snapshot.json) freezes live branch metadata, and [SOURCES.md](../../research/certificate-renewal-20261121/SOURCES.md) specifies mathematical use. The latest PR146 head was included before writing the final comparison. The [content manifest](content-manifest.json) authenticates the scientific files, review records and retained finite outputs.
 
 The [validation record](VALIDATION.md) distinguishes the scientific publication parent from its documentation-only child. Complete-checkout validation and a scientific replay answer different questions. A successful repository check does not prove Collatz or discharge an open mathematical premise.

@@ -22,6 +22,8 @@ This receipt and this document are added in a documentation-only child of that r
 
 ## Scientific execution and review scope
 
+A further documentation-only publication addendum compares the concurrent PR167 and PR168 packets. It adds `CONCURRENT_SOURCE_COMPARISON.md` and updates the report navigation and this explanation. The original scientific manifest and every manifested file remain unchanged. The pull-request description attributes the final complete-checkout validation to the actual final documentation head; it does not retroactively attribute the ten scientific executions to that later head.
+
 The ten actual executions in [scientific-executions.json](scientific-executions.json) cover four production checkers and a separately implemented paired-path reconstruction, each in normal and optimized Python. All completed successfully with empty stderr, and each normal/optimized pair produced byte-identical output.
 
 The [content manifest](content-manifest.json) freezes the scientific manuscripts, checkers, source snapshot, scoped reviews and finite outputs. The sole formatting normalization from reviewed author bytes is documented exactly in [import-normalization.json](import-normalization.json). Publication validation documents are excluded from that scientific manifest to avoid self-reference.
