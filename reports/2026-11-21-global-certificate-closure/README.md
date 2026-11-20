@@ -51,6 +51,15 @@ head and tree. `--manifest-only` omits executions when checking a later
 documentation-only child. The second is the repository's required
 integrity and bounded-regression gate. Neither proves the conjecture.
 
+## Completed publication runs
+
+The fetched scientific commit
+`9acf568f44c5ca655265b888fc27c5b37f1f10db` passed all 28 scientific
+executions and all 30 complete-output comparisons in a clean complete
+369-file checkout. Its 51 frozen manifest paths were unchanged. The
+repository gate passed all 11 commands. The attached receipts and exact
+tree are in [VALIDATION.md](VALIDATION.md).
+
 ## Publication boundary
 
 [VALIDATION.md](VALIDATION.md) records the actual remote scientific commit,
