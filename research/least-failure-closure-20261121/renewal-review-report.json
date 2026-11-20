@@ -1,0 +1,182 @@
+{
+  "checker_sha256": "923a36f93af1bf2065e172a25e4ed1d06cbef9641df2d519f42382abf257afe7",
+  "endpoint_classes": 54,
+  "exact_ternary_density_controls": [
+    {
+      "endpoint_modulus": 27,
+      "legal_lifts": [
+        7,
+        16
+      ],
+      "source_mass_denominator": 64,
+      "word": [
+        2,
+        4
+      ]
+    },
+    {
+      "endpoint_modulus": 27,
+      "legal_lifts": [
+        17,
+        26
+      ],
+      "source_mass_denominator": 8192,
+      "word": [
+        2,
+        11
+      ]
+    },
+    {
+      "endpoint_modulus": 81,
+      "legal_lifts": [
+        7,
+        61
+      ],
+      "source_mass_denominator": 256,
+      "word": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "endpoint_modulus": 81,
+      "legal_lifts": [
+        26,
+        53
+      ],
+      "source_mass_denominator": 32768,
+      "word": [
+        2,
+        2,
+        11
+      ]
+    },
+    {
+      "endpoint_modulus": 243,
+      "legal_lifts": [
+        61,
+        142
+      ],
+      "source_mass_denominator": 1024,
+      "word": [
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "endpoint_modulus": 243,
+      "legal_lifts": [
+        134,
+        215
+      ],
+      "source_mass_denominator": 131072,
+      "word": [
+        2,
+        2,
+        2,
+        11
+      ]
+    },
+    {
+      "endpoint_modulus": 729,
+      "legal_lifts": [
+        61,
+        547
+      ],
+      "source_mass_denominator": 4096,
+      "word": [
+        2,
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "endpoint_modulus": 729,
+      "legal_lifts": [
+        215,
+        701
+      ],
+      "source_mass_denominator": 524288,
+      "word": [
+        2,
+        2,
+        2,
+        2,
+        11
+      ]
+    },
+    {
+      "endpoint_modulus": 243,
+      "legal_lifts": [
+        43,
+        205
+      ],
+      "source_mass_denominator": 512,
+      "word": [
+        1,
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "endpoint_modulus": 243,
+      "legal_lifts": [
+        124,
+        205
+      ],
+      "source_mass_denominator": 256,
+      "word": [
+        1,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "endpoint_modulus": 243,
+      "legal_lifts": [
+        88,
+        169
+      ],
+      "source_mass_denominator": 1024,
+      "word": [
+        1,
+        1,
+        4,
+        4
+      ]
+    }
+  ],
+  "maxima": {
+    "adjacent_bridge": {
+      "residue": 43,
+      "upper_fraction": [
+        172987263052805557285003804470230263049350161898378622212,
+        198652991702563688626734492368358466611847649566204735485
+      ]
+    },
+    "harmonic": {
+      "residue": 43,
+      "upper_fraction": [
+        538217140179353708046498483906933725251017114463866688,
+        867480313111631828064342761433879766863963535223601465
+      ]
+    },
+    "subcritical": {
+      "residue": 61,
+      "upper_fraction": [
+        110566937708617627145272874869821799887869455341633659556636541,
+        122152730047489463899178066044203293853589167480468750000000000
+      ]
+    }
+  },
+  "rational_power_grid": 1000000000000,
+  "scope": "No author checker imported. Infinite sums and invariant-label transfer require the written proof; no remainder finiteness is established.",
+  "status": "PASS: independent finite coefficient and density reconstruction"
+}

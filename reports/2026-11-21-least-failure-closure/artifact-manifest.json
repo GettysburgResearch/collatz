@@ -1,0 +1,246 @@
+{
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "files": [
+    {
+      "bytes": 13401,
+      "path": "reports/2026-11-21-least-failure-closure/replay-results.json",
+      "sha256": "1fda7d3782187c9420e322af4e655dfb774d7e10f707d66910cbe4f0c2260ca4"
+    },
+    {
+      "bytes": 4713,
+      "path": "research/README.md",
+      "sha256": "bd8dfbd2dd6dad161d056a942e678546e6be5f51f5faad686d7d14a3deb0d933"
+    },
+    {
+      "bytes": 12380,
+      "path": "research/least-failure-closure-20261121/CLOSING_ENERGY_INTERFACES.md",
+      "sha256": "7ec342f0d1d4cc325a43eb7065f5a1a6e64cdd02dfca8a816bc5b78108ef428e"
+    },
+    {
+      "bytes": 6380,
+      "path": "research/least-failure-closure-20261121/CLOSING_INTERFACES_REVIEW.md",
+      "sha256": "36af03fc55f0c544c356836b7ec77e695c0a65422a05bc7fe06a6968f31d79a7"
+    },
+    {
+      "bytes": 11904,
+      "path": "research/least-failure-closure-20261121/CORE_RETURNS_INDEPENDENT_REVIEW.md",
+      "sha256": "b051555cde2813df4dc6437bb38fddff605f7a087644a4027a69345588afde4d"
+    },
+    {
+      "bytes": 4623,
+      "path": "research/least-failure-closure-20261121/DENSITY_CONGESTION.md",
+      "sha256": "51849fd915649590157d5eac7c7336ac2f06f9d3673f306ab3def32b76a842da"
+    },
+    {
+      "bytes": 9926,
+      "path": "research/least-failure-closure-20261121/EXCURSION_FREQUENCY.md",
+      "sha256": "3e9bdc1962a449f95263adaf4745b2aa95228d5807cab479747e7eaa6fc889d1"
+    },
+    {
+      "bytes": 5297,
+      "path": "research/least-failure-closure-20261121/EXCURSION_FREQUENCY_REVIEW.md",
+      "sha256": "6cccb67ae0d36cc9558232479d37d963e0972c1e7d8a2371e6404e395274ee56"
+    },
+    {
+      "bytes": 11197,
+      "path": "research/least-failure-closure-20261121/EXPANDED_FIVE_RENEWAL.md",
+      "sha256": "3589ca1bcf2533bc7cbd427feb0d8f830cc077c3a6e90d2a7abd6eeef3ffd70b"
+    },
+    {
+      "bytes": 7371,
+      "path": "research/least-failure-closure-20261121/FIXED_DEFECT_CORE_RETURNS.md",
+      "sha256": "2412c6bfdcb3eeb280079235c5f04656cff49feaf091ba5421147acd1e81ba64"
+    },
+    {
+      "bytes": 14171,
+      "path": "research/least-failure-closure-20261121/HOMOGENEOUS_FIVE_TRANSPORT.md",
+      "sha256": "f2872fad5c04e3aba9219f4b54576ef438d2922d7dcad9b0a8423974c4d2c31b"
+    },
+    {
+      "bytes": 6940,
+      "path": "research/least-failure-closure-20261121/HOMOGENEOUS_LOCALIZATION.md",
+      "sha256": "90ad2bba3c3ee9a7c22b3369ac1b3dcc2b1d1cc536e8d670368cd0579219c775"
+    },
+    {
+      "bytes": 5423,
+      "path": "research/least-failure-closure-20261121/HOMOGENEOUS_LOCALIZATION_REVIEW.md",
+      "sha256": "3e6e0c304dd7b1abee07cd252b3fa0e451231f33a1085894a568ade8a5861f4d"
+    },
+    {
+      "bytes": 6453,
+      "path": "research/least-failure-closure-20261121/LATEST_FIVE_REDUCTION_BOUNDARY.md",
+      "sha256": "ebe5eefcc029653b87dcd7581fb3c633caadad439b67fc3a977237c13e319fef"
+    },
+    {
+      "bytes": 8968,
+      "path": "research/least-failure-closure-20261121/MULTISTEP_CORE_RETURNS.md",
+      "sha256": "a1f939725bb3ffc333255fb57cafa8e95ed8dace8155650b5a608ef34ba20d5b"
+    },
+    {
+      "bytes": 11499,
+      "path": "research/least-failure-closure-20261121/README.md",
+      "sha256": "0a6acf2c23020ba9e9dd2d5d96ba8f37a586422a662e44fbebfcde19164f3c9a"
+    },
+    {
+      "bytes": 7451,
+      "path": "research/least-failure-closure-20261121/RENEWAL_REVIEW.md",
+      "sha256": "1a6ad9c7c595b6122e5a6dc22293dc9de4db4f21c1ce1e30caea61c3bc28b748"
+    },
+    {
+      "bytes": 7629,
+      "path": "research/least-failure-closure-20261121/REVIEW_HOMOGENEOUS_FIVE_TRANSPORT.md",
+      "sha256": "0f033eece72e7b5df30663cb7c74ffcca64736bcc91131e57a1435c000bfedff"
+    },
+    {
+      "bytes": 9793,
+      "path": "research/least-failure-closure-20261121/SOURCES.md",
+      "sha256": "f86eadd136db163cb43867965cfd011fd7bdda95e8e9c7fbdc7b380dd36ffceb"
+    },
+    {
+      "bytes": 13928,
+      "path": "research/least-failure-closure-20261121/check_core_returns_independent.py",
+      "sha256": "d5adbb3851fa042dd705cf1368ca1ec79cc68c0b21b0d7380018ef37ba1a3fb6"
+    },
+    {
+      "bytes": 7596,
+      "path": "research/least-failure-closure-20261121/check_excursion_frequency.py",
+      "sha256": "7d3b811f6f2a30e67f437747f31b8cc11d6cf51dd2cb95a34f480ff716bb4c49"
+    },
+    {
+      "bytes": 8981,
+      "path": "research/least-failure-closure-20261121/check_expanded_renewal.py",
+      "sha256": "4edb327ad20391e4124db1146eddde96d7c033ed014b9ea172bcf05c92f29ad6"
+    },
+    {
+      "bytes": 11485,
+      "path": "research/least-failure-closure-20261121/check_fixed_defect_core_returns.py",
+      "sha256": "016695a9eefe241a952fe25af1cfaa066518ee6c24d0e66ea9eb07fe205d9093"
+    },
+    {
+      "bytes": 10422,
+      "path": "research/least-failure-closure-20261121/check_homogeneous_five_transport.py",
+      "sha256": "304e290bb3c0215d1cd5fe2f4f290c4ed8f3ef629912106f0c936105ab59fd97"
+    },
+    {
+      "bytes": 8689,
+      "path": "research/least-failure-closure-20261121/check_homogeneous_localization.py",
+      "sha256": "7e0bb2f9441cbe5883e3bd825920fa2a0719c15d9f8d04b75476f8bfbf4c3601"
+    },
+    {
+      "bytes": 8298,
+      "path": "research/least-failure-closure-20261121/check_multistep_core_returns.py",
+      "sha256": "c36e3180590d4cfd6215a43417c9da712ae594700527421c283df961fd3a1593"
+    },
+    {
+      "bytes": 4880,
+      "path": "research/least-failure-closure-20261121/check_renewal_review.py",
+      "sha256": "923a36f93af1bf2065e172a25e4ed1d06cbef9641df2d519f42382abf257afe7"
+    },
+    {
+      "bytes": 5243,
+      "path": "research/least-failure-closure-20261121/check_transport_review.py",
+      "sha256": "875366e92c165b502c710005e64323467b65eece9024bdc095c65cd716f1c1bc"
+    },
+    {
+      "bytes": 5981,
+      "path": "research/least-failure-closure-20261121/core-returns-independent-report-oo.json",
+      "sha256": "8644ed6c2e64b866eddf18e31346193d9e61f4be29c844181eff677ef89c6f48"
+    },
+    {
+      "bytes": 5981,
+      "path": "research/least-failure-closure-20261121/core-returns-independent-report.json",
+      "sha256": "8644ed6c2e64b866eddf18e31346193d9e61f4be29c844181eff677ef89c6f48"
+    },
+    {
+      "bytes": 1033,
+      "path": "research/least-failure-closure-20261121/excursion-frequency-report-oo.json",
+      "sha256": "751a4f93c36920a04d041d2c3a9552f73a629a13fa865e93c21b321b6ec210d1"
+    },
+    {
+      "bytes": 1033,
+      "path": "research/least-failure-closure-20261121/excursion-frequency-report.json",
+      "sha256": "751a4f93c36920a04d041d2c3a9552f73a629a13fa865e93c21b321b6ec210d1"
+    },
+    {
+      "bytes": 21985,
+      "path": "research/least-failure-closure-20261121/expanded-renewal-report-oo.json",
+      "sha256": "0269c59ed42793d9ebc918d0a0ace065a8df3dabdecde78b47006cfb953bb2f3"
+    },
+    {
+      "bytes": 21985,
+      "path": "research/least-failure-closure-20261121/expanded-renewal-report.json",
+      "sha256": "0269c59ed42793d9ebc918d0a0ace065a8df3dabdecde78b47006cfb953bb2f3"
+    },
+    {
+      "bytes": 4082,
+      "path": "research/least-failure-closure-20261121/fixed-defect-core-returns-report-oo.json",
+      "sha256": "96e259b2c3ba9ab2885b2f3961bef81f75248d6b90bb5a2896870bfea97bef52"
+    },
+    {
+      "bytes": 4082,
+      "path": "research/least-failure-closure-20261121/fixed-defect-core-returns-report.json",
+      "sha256": "96e259b2c3ba9ab2885b2f3961bef81f75248d6b90bb5a2896870bfea97bef52"
+    },
+    {
+      "bytes": 5746,
+      "path": "research/least-failure-closure-20261121/homogeneous-five-report-oo.json",
+      "sha256": "e1ea543ff91648e8e59e04b354400bd05a046b0d68553af658c9b0455a489a8d"
+    },
+    {
+      "bytes": 5746,
+      "path": "research/least-failure-closure-20261121/homogeneous-five-report.json",
+      "sha256": "e1ea543ff91648e8e59e04b354400bd05a046b0d68553af658c9b0455a489a8d"
+    },
+    {
+      "bytes": 11860,
+      "path": "research/least-failure-closure-20261121/homogeneous-localization-report-oo.json",
+      "sha256": "2c7d2f0ca68288918ef097c12d128fcdfb3af3519906dffe41956280e94e22de"
+    },
+    {
+      "bytes": 11860,
+      "path": "research/least-failure-closure-20261121/homogeneous-localization-report.json",
+      "sha256": "2c7d2f0ca68288918ef097c12d128fcdfb3af3519906dffe41956280e94e22de"
+    },
+    {
+      "bytes": 2546,
+      "path": "research/least-failure-closure-20261121/multistep-core-returns-report-oo.json",
+      "sha256": "e1eab13cea6f2d5edde5d91f8cc44fbef3bb12cd1f3e11c5d3fef3086d0cd630"
+    },
+    {
+      "bytes": 2546,
+      "path": "research/least-failure-closure-20261121/multistep-core-returns-report.json",
+      "sha256": "e1eab13cea6f2d5edde5d91f8cc44fbef3bb12cd1f3e11c5d3fef3086d0cd630"
+    },
+    {
+      "bytes": 3322,
+      "path": "research/least-failure-closure-20261121/renewal-review-report-oo.json",
+      "sha256": "fa38464b1522d5b2c50c2aaa60f000cc022071f1ec1dbe5183582c293b9403ce"
+    },
+    {
+      "bytes": 3322,
+      "path": "research/least-failure-closure-20261121/renewal-review-report.json",
+      "sha256": "fa38464b1522d5b2c50c2aaa60f000cc022071f1ec1dbe5183582c293b9403ce"
+    },
+    {
+      "bytes": 3735,
+      "path": "research/least-failure-closure-20261121/replay.py",
+      "sha256": "a1ef483f9bbcd18d6134467a7d4bf0c0c261a1286995c1a75506af797926188a"
+    },
+    {
+      "bytes": 3154,
+      "path": "research/least-failure-closure-20261121/source-snapshot.json",
+      "sha256": "8f77f426a7f4860cf177244d210222c481f5ebae9e56c36bac1f01695f970cd7"
+    },
+    {
+      "bytes": 2229,
+      "path": "research/least-failure-closure-20261121/transport-review-report-oo.json",
+      "sha256": "de08f0561941f44d7ded26cca938dd0f88f87f8f0917ebea53a8a1f2a4bd99cf"
+    },
+    {
+      "bytes": 2229,
+      "path": "research/least-failure-closure-20261121/transport-review-report.json",
+      "sha256": "de08f0561941f44d7ded26cca938dd0f88f87f8f0917ebea53a8a1f2a4bd99cf"
+    }
+  ],
+  "scope": "Scientific packet, active navigation, and actual replay receipt; identity is not proof. Publication metadata and this manifest are excluded."
+}

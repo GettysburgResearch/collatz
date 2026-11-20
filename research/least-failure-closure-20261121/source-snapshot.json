@@ -1,0 +1,73 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "client_date": "2026-11-21",
+  "base_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "initial_pr146_head": "dd2d5dbd56f9b75ee4dc0bf14f6ab02eefc9b953",
+  "initial_pr164_head": "85aad425a3bc714e27b1b8cb7e299f85c7025a05",
+  "source_prs": [
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "fd991063721e9c157d318e40bb20131762f7d750",
+      "updated_at": "2026-11-20T22:39:07Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "number": 164,
+      "title": "Research: partial 512-residue witness closure with explicit certificates and descents",
+      "head": "6fa6b429870a9cd53cde0fc77ad64a3c3956199f",
+      "updated_at": "2026-11-20T22:36:01Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/164"
+    },
+    {
+      "number": 166,
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "head": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "updated_at": "2026-11-20T22:17:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/166"
+    },
+    {
+      "number": 165,
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "head": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "updated_at": "2026-11-20T22:13:11Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/165"
+    },
+    {
+      "number": 163,
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "head": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "updated_at": "2026-11-20T21:53:00Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/163"
+    },
+    {
+      "number": 162,
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "head": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "updated_at": "2026-11-20T20:56:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/162"
+    },
+    {
+      "number": 161,
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds",
+      "head": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "updated_at": "2026-11-20T20:41:11Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/161"
+    },
+    {
+      "number": 157,
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "head": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "updated_at": "2026-11-20T20:01:36Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/157"
+    },
+    {
+      "number": 145,
+      "title": "Collatz investigation: a finite test for both obstructions, null residue support, and exact depth 30",
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "updated_at": "2026-11-18T20:22:20Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/145"
+    }
+  ],
+  "scope": "Metadata and source revisions inspected for this research pass; listed heads do not imply review of every claim in each PR."
+}
