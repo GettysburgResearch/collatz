@@ -12,6 +12,8 @@ separate from those claims.
 - [run_checks.py](run_checks.py) requires a clean complete checkout,
   verifies those hashes, and executes five fresh report comparisons.
   Its receipt must be written outside the checkout.
+- [VALIDATION.md](VALIDATION.md) identifies the actual scientific commit
+  and the attached execution receipts.
 
 The peer reviews were completed before the GitHub scientific commit
 existed. They pin exact file bytes rather than asserting an invented

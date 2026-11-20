@@ -1,0 +1,109 @@
+{
+  "checkout": "/workspace/scratch/6c37546fb87e/collatz-review",
+  "checks": [
+    {
+      "actual_report_sha256": "65f06c292749cebd0f7b068e1f141058f1cace7bed7811eaa6429d987e25e6c3",
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-attacks-20261120/merger/check_single_multiplier.py"
+      ],
+      "expected_report": "research/closure-attacks-20261120/merger/single_multiplier_report.json",
+      "expected_report_sha256": "65f06c292749cebd0f7b068e1f141058f1cace7bed7811eaa6429d987e25e6c3",
+      "report_comparison": "PASS (JSON equality)",
+      "returncode": 0,
+      "seconds": 0.036145,
+      "stderr": "",
+      "stdout_sha256": "65f06c292749cebd0f7b068e1f141058f1cace7bed7811eaa6429d987e25e6c3"
+    },
+    {
+      "actual_report_sha256": "a87b1bedaecfac2414f651ea09247a9a33b186098612d0e2549069b92ccbc7f6",
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-attacks-20261120/merger/check_physical_returns.py"
+      ],
+      "expected_report": "research/closure-attacks-20261120/merger/physical_returns_report.json",
+      "expected_report_sha256": "a87b1bedaecfac2414f651ea09247a9a33b186098612d0e2549069b92ccbc7f6",
+      "report_comparison": "PASS (JSON equality)",
+      "returncode": 0,
+      "seconds": 0.037363,
+      "stderr": "",
+      "stdout_sha256": "a87b1bedaecfac2414f651ea09247a9a33b186098612d0e2549069b92ccbc7f6"
+    },
+    {
+      "actual_report_sha256": "320d3ee9c6a7bea4da7631c8a3ebb03b0eb5a08d445a12b08234f1a568dc14c5",
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-attacks-20261120/arithmetic/check_arithmetic_closure.py",
+        "--output",
+        "/tmp/collatz-closure-checks-x7cyo82u/2.json"
+      ],
+      "expected_report": "research/closure-attacks-20261120/arithmetic/arithmetic-closure-report.json",
+      "expected_report_sha256": "320d3ee9c6a7bea4da7631c8a3ebb03b0eb5a08d445a12b08234f1a568dc14c5",
+      "report_comparison": "PASS (JSON equality)",
+      "returncode": 0,
+      "seconds": 2.401363,
+      "stderr": "",
+      "stdout_sha256": "42bf822b7cf3e323a43bcf30bb379636af7a2bd8198e19fb7de4ca6abb9cc81d"
+    },
+    {
+      "actual_report_sha256": "c98ff90ade19699ee8631327ee9827d28c4da4911ad3505c824c136cac2551a9",
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-attacks-20261120/merger/check_arithmetic_review.py"
+      ],
+      "expected_report": "research/closure-attacks-20261120/merger/arithmetic_review_report.json",
+      "expected_report_sha256": "c98ff90ade19699ee8631327ee9827d28c4da4911ad3505c824c136cac2551a9",
+      "report_comparison": "PASS (JSON equality)",
+      "returncode": 0,
+      "seconds": 0.309887,
+      "stderr": "",
+      "stdout_sha256": "c98ff90ade19699ee8631327ee9827d28c4da4911ad3505c824c136cac2551a9"
+    },
+    {
+      "actual_report_sha256": "73d2b7742109559e03cbc3d2d4439c2950d16be787928e84321ac44c685db6f1",
+      "byte_identical_report": true,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/closure-attacks-20261120/critical/check_single_slice_energy.py"
+      ],
+      "expected_report": "research/closure-attacks-20261120/critical/single_slice_energy_receipt.json",
+      "expected_report_sha256": "73d2b7742109559e03cbc3d2d4439c2950d16be787928e84321ac44c685db6f1",
+      "report_comparison": "PASS (JSON equality)",
+      "returncode": 0,
+      "seconds": 0.029606,
+      "stderr": "",
+      "stdout_sha256": "73d2b7742109559e03cbc3d2d4439c2950d16be787928e84321ac44c685db6f1"
+    }
+  ],
+  "clean_after": true,
+  "clean_before": true,
+  "evidence_boundary": "Exact report comparisons and file identities; written proofs establish universal conditional and arithmetic statements. Floating logarithms remain diagnostics. No global Collatz proof or external Lean build.",
+  "finished_at_utc": "2026-11-20T20:27:09.894694+00:00",
+  "head": "5204a6f19beb490fb7c305908188bb3f392abd2e",
+  "manifest_sha256": "71c3dd430dcdb1d05d1c6aea4a45e1c6a6fedffe8564e75df9aae08f1ec52b60",
+  "schema": 1,
+  "started_at_utc": "2026-11-20T20:27:07.068725+00:00",
+  "status": "PASS",
+  "tracked_files": 346,
+  "tree": "bb44677a39eba39792610879eb3be39759dc94b8",
+  "verified_content_files": 30
+}
