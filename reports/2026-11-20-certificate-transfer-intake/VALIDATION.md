@@ -43,10 +43,28 @@ The required command is:
 python -X utf8 -B tools/validate.py --regressions --receipt /tmp/collatz-intake-validation.json
 ```
 
-It must run in a complete clean checkout, and its receipt must be outside
-that checkout while it runs. The publication follow-up records the actual
-checked commit and tree and retains the generated receipt. This preparation
-version makes no claim that a future commit has already passed.
+The actual GitHub scientific commit was fetched into a complete clean
+checkout and the command above was executed with regressions enabled:
+
+- Commit: `b7fffad6e5513859d2878c922fccd166754787f0`.
+- Tree: `0fdb4058139e422202f9ce0a9f35afd2e1b57e44`.
+- Tracked files: 368.
+- All 11 child commands exited successfully.
+- The checkout remained clean at the same commit and tree after execution.
+- [Actual receipt](repository-checkout.json), SHA-256
+  `272d1f78c1179b526024502081a7d3041c31485523b493baaad3a1ea7c4905ec`.
+
+The remote tree is byte-for-byte identical to the locally prepared tree
+on which the new scientific checker was executed in both interpreter
+modes. The publication follow-up adds this receipt and updates this note;
+it does not change scientific files or the preserved uploads. This receipt
+covers the named parent and does not claim to self-certify its own later
+documentation commit. The pull request records the final remote-head check.
+
+All new Markdown, Python, C and JSON files passed the scoped whitespace
+check. The untouched historical question files and source stdout retain
+their original terminal blank lines or trailing spaces; preserving those
+bytes is intentional, and a blanket whitespace-clean claim is not made.
 
 ## What these checks do not claim
 
