@@ -1,0 +1,156 @@
+{
+  "schema": "collatz-grh-certificate-replay/v1",
+  "success": true,
+  "started_utc": "2026-11-20T22:14:51.172254+00:00",
+  "scope": "frozen contents, exact finite arithmetic, raw search integrity; universal statements rely on written proofs; no full Collatz proof",
+  "executions": [
+    {
+      "script": "check_five_certificate_ladder.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.115,
+      "stdout_sha256": "4429ebb447ec81300c2086fcea0940d21f57c7abdec8a0b55fb2465980add04c",
+      "reference_report": "reports/2026-11-20-grh-closure/five-ladder-report.json",
+      "reference_sha256": "4429ebb447ec81300c2086fcea0940d21f57c7abdec8a0b55fb2465980add04c",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_five_certificate_ladder.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.191,
+      "stdout_sha256": "4429ebb447ec81300c2086fcea0940d21f57c7abdec8a0b55fb2465980add04c",
+      "reference_report": "reports/2026-11-20-grh-closure/five-ladder-report.json",
+      "reference_sha256": "4429ebb447ec81300c2086fcea0940d21f57c7abdec8a0b55fb2465980add04c",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_five_ladder_review.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.185,
+      "stdout_sha256": "c5f3550184ae07b87b63c975bb00663a8fd98cebb06fc4e63824dedfe584c630",
+      "reference_report": "reports/2026-11-20-grh-closure/five-ladder-independent-report.json",
+      "reference_sha256": "c5f3550184ae07b87b63c975bb00663a8fd98cebb06fc4e63824dedfe584c630",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_five_ladder_review.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.252,
+      "stdout_sha256": "c5f3550184ae07b87b63c975bb00663a8fd98cebb06fc4e63824dedfe584c630",
+      "reference_report": "reports/2026-11-20-grh-closure/five-ladder-independent-report.json",
+      "reference_sha256": "c5f3550184ae07b87b63c975bb00663a8fd98cebb06fc4e63824dedfe584c630",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_ladder_renewal.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.043,
+      "stdout_sha256": "6df45db7686f483bd92615cb01276c3064c48a9d8f1f9f293ad05cb041dca941",
+      "reference_report": "reports/2026-11-20-grh-closure/ladder-renewal-report.json",
+      "reference_sha256": "6df45db7686f483bd92615cb01276c3064c48a9d8f1f9f293ad05cb041dca941",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_ladder_renewal.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.154,
+      "stdout_sha256": "6df45db7686f483bd92615cb01276c3064c48a9d8f1f9f293ad05cb041dca941",
+      "reference_report": "reports/2026-11-20-grh-closure/ladder-renewal-report.json",
+      "reference_sha256": "6df45db7686f483bd92615cb01276c3064c48a9d8f1f9f293ad05cb041dca941",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_grh_interfaces.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.054,
+      "stdout_sha256": "41edc64dcbd14609fecf591acaccdb8535da23f5e58e2cc96778a6b7378c672d",
+      "reference_report": "reports/2026-11-20-grh-closure/grh-interface-report.json",
+      "reference_sha256": "41edc64dcbd14609fecf591acaccdb8535da23f5e58e2cc96778a6b7378c672d",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_grh_interfaces.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.177,
+      "stdout_sha256": "41edc64dcbd14609fecf591acaccdb8535da23f5e58e2cc96778a6b7378c672d",
+      "reference_report": "reports/2026-11-20-grh-closure/grh-interface-report.json",
+      "reference_sha256": "41edc64dcbd14609fecf591acaccdb8535da23f5e58e2cc96778a6b7378c672d",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "review_grh_interfaces_independent.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.06,
+      "stdout_sha256": "4f9a1f8f58fad9e9d0010d97c2a52785a13fb5e1510db6ce6af014ff3b7f7321",
+      "reference_report": "reports/2026-11-20-grh-closure/grh-interface-independent-report.json",
+      "reference_sha256": "4f9a1f8f58fad9e9d0010d97c2a52785a13fb5e1510db6ce6af014ff3b7f7321",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "review_grh_interfaces_independent.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.123,
+      "stdout_sha256": "4f9a1f8f58fad9e9d0010d97c2a52785a13fb5e1510db6ce6af014ff3b7f7321",
+      "reference_report": "reports/2026-11-20-grh-closure/grh-interface-independent-report.json",
+      "reference_sha256": "4f9a1f8f58fad9e9d0010d97c2a52785a13fb5e1510db6ce6af014ff3b7f7321",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_rigidity_interfaces.py",
+      "optimized": false,
+      "exit_code": 0,
+      "seconds": 0.051,
+      "stdout_sha256": "a5bfa62c9654225ce724c8f364d85c3c4351fa037f0f52b851b907dc3431e9e8",
+      "reference_report": "reports/2026-11-20-grh-closure/rigidity-interfaces-report.json",
+      "reference_sha256": "a5bfa62c9654225ce724c8f364d85c3c4351fa037f0f52b851b907dc3431e9e8",
+      "reference_bytes_match": true,
+      "stderr": ""
+    },
+    {
+      "script": "check_rigidity_interfaces.py",
+      "optimized": true,
+      "exit_code": 0,
+      "seconds": 0.123,
+      "stdout_sha256": "a5bfa62c9654225ce724c8f364d85c3c4351fa037f0f52b851b907dc3431e9e8",
+      "reference_report": "reports/2026-11-20-grh-closure/rigidity-interfaces-report.json",
+      "reference_sha256": "a5bfa62c9654225ce724c8f364d85c3c4351fa037f0f52b851b907dc3431e9e8",
+      "reference_bytes_match": true,
+      "stderr": ""
+    }
+  ],
+  "checkout": {
+    "commit": "72566fabe6f6525fbdec3efbe1a588477270f8a0",
+    "tree": "6efa52ec034438f30c21805ca59e8d4d2cc6e021",
+    "tracked_dirty": false,
+    "untracked_or_dirty": false
+  },
+  "manifest_files_checked": 30,
+  "manifest_sha256": "d078e0e31803c35532e7929c3d041faa6f6fdd071b98d7215704f7fa691b0e32",
+  "raw_search_archives_checked": 3,
+  "checkout_after": {
+    "commit": "72566fabe6f6525fbdec3efbe1a588477270f8a0",
+    "tree": "6efa52ec034438f30c21805ca59e8d4d2cc6e021",
+    "tracked_dirty": false,
+    "untracked_or_dirty": false
+  },
+  "finished_utc": "2026-11-20T22:14:52.762401+00:00"
+}

@@ -67,6 +67,10 @@ deadline. No claim of exhaustive inverse search is made.
 
 ## Publication evidence
 
+The [actual publication record and receipts](PUBLICATION.md) identify the
+fetched scientific commit, twelve successful mathematical executions and
+the eleven-command complete-checkout validation.
+
 The scientific contents and frozen reference outputs are committed
 together. Actual fetched-commit validation receipts are appended in a
 documentation-only child after checking the real GitHub scientific
