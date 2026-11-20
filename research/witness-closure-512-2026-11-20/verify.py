@@ -280,7 +280,7 @@ def verify_merger_schema() -> None:
     require(Affine(2, -1) == Affine(4 * q.a, 4 * q.b + 1),
             "critical target identity fails")
     # 3J(q)+1 = 4(3q+1), independent of its eventual exact valuation.
-    require(Affine(12, 4) == Affine(4 * 3, 4 * 1), "J identity fails")
+    require(Affine(4, 1).step(2) == Affine(3, 1), "J identity fails")
 
 
 @dataclass(frozen=True)
@@ -345,6 +345,256 @@ def verify_q19_schema() -> None:
 
 
 @dataclass(frozen=True)
+class JPairNormalization:
+    """Reduce the pair (J^2(27h),54h+1) to a positive odd P/Q parameter."""
+
+    h: int
+    b: int
+    p: int
+    child_kind: str
+    child_source: Witness
+    target_quarters: int
+
+    def finish(self, child_target: Witness) -> Witness:
+        expected = 9 * self.p if self.child_kind == "Q" else 54 * self.p + 1
+        require(child_target.x == expected, "wrong normalized child target")
+        tail = jump(child_target) if self.child_kind == "Q" else child_target
+        return prepend(54 * self.h + 1, (2,) * self.target_quarters, tail)
+
+
+def normalize_j_pair(h: int, source: Witness) -> JPairNormalization:
+    """Use only exact witness algebra; no target trajectory is searched."""
+    require(is_integer(h) and h > 0, "normalization parameter must be positive")
+    require(source.x == 432 * h + 5, "normalization source is not J^2(27h)")
+    b = v2(h)
+    s = b // 2
+    odd_part = h >> b
+    p = 3 ** ((b + 1) // 2) * odd_part
+    require(p > 0 and p % 2 == 1 and 2 * p <= 3 * h,
+            "normalization parameter bound fails")
+    normalized = unjump(source)  # J(27h) is odd, even when h is even.
+    require(normalized.x == 108 * h + 1, "outer J inverse fails")
+    source_quarters = s if b % 2 == 0 else s + 1
+    prefix = (2,) * source_quarters
+    require(normalized.increments[:len(prefix)] == prefix,
+            "normalization source quarter-prefix is not exact")
+    normalized = normalized.tail(source_quarters)
+    target_endpoint = walk(54 * h + 1, (2,) * s)[-1]
+    if b % 2 == 0:
+        require(normalized.x == 108 * p + 1,
+                "even normalization source is not J(27p)")
+        require(target_endpoint == 54 * p + 1,
+                "even normalization target endpoint fails")
+        child_source = unjump(normalized)
+        require(child_source.x == 27 * p, "inner J inverse fails")
+        return JPairNormalization(h, b, p, "P", child_source, s)
+    require(normalized.x == 54 * p + 1,
+            "odd normalization source endpoint fails")
+    require(target_endpoint == 36 * p + 1,
+            "odd normalization target is not J(9p)")
+    return JPairNormalization(h, b, p, "Q", normalized, s)
+
+
+@dataclass(frozen=True)
+class JPairReduction:
+    """A checked Q95 or P1215 prefix followed by J-pair normalization."""
+
+    name: str
+    source_kind: str
+    m: int
+    target_prefix: tuple[int, ...]
+    normalization: JPairNormalization
+
+    @property
+    def p(self) -> int:
+        return self.normalization.p
+
+    @property
+    def child_kind(self) -> str:
+        return self.normalization.child_kind
+
+    @property
+    def child_source(self) -> Witness:
+        return self.normalization.child_source
+
+    def finish(self, child_target: Witness) -> Witness:
+        target = 9 * self.m if self.source_kind == "Q" else 54 * self.m + 1
+        return prepend(target, self.target_prefix, self.normalization.finish(child_target))
+
+
+def reduce_q95(m: int, source: Witness) -> JPairReduction:
+    """Q(m), m=95 mod512, to P(p) or Q(p), with 0<p<m."""
+    require(is_integer(m) and m > 0 and m % 512 == 95,
+            "Q95 requires m=95 mod512")
+    require(source.x == 54 * m + 1, "incorrect Q95 source witness")
+    h = (27 * m - 5) // 512
+    source_prefix, target_prefix = (1, 2, 3), (1, 1, 4, 2)
+    require(source.increments[:len(source_prefix)] == source_prefix,
+            "Q95 source prefix is not exact")
+    source_tail = source.tail(len(source_prefix))
+    require(source_tail.x == 432 * h + 5, "Q95 source endpoint fails")
+    require(walk(9 * m, target_prefix)[-1] == 54 * h + 1,
+            "Q95 target endpoint fails")
+    normalization = normalize_j_pair(h, source_tail)
+    require(normalization.p < m, "Q95 strict parameter descent fails")
+    return JPairReduction("Q95", "Q", m, target_prefix, normalization)
+
+
+def reduce_p1215(m: int, source: Witness) -> JPairReduction:
+    """P(m), m=1215 mod32768, to P(p) or Q(p), with 0<p<m."""
+    require(is_integer(m) and m > 0 and m % 32768 == 1215,
+            "P1215 requires m=1215 mod32768")
+    require(source.x == 27 * m, "incorrect P1215 source witness")
+    h = (243 * m - 333) // 32768
+    source_prefix, target_prefix = (4, 1, 1, 2, 3), (1, 2, 8, 2, 2)
+    require(source.increments[:len(source_prefix)] == source_prefix,
+            "P1215 source prefix is not exact")
+    source_tail = source.tail(len(source_prefix))
+    require(source_tail.x == 432 * h + 5, "P1215 source endpoint fails")
+    require(walk(54 * m + 1, target_prefix)[-1] == 54 * h + 1,
+            "P1215 target endpoint fails")
+    normalization = normalize_j_pair(h, source_tail)
+    require(normalization.p < m, "P1215 strict parameter descent fails")
+    return JPairReduction("P1215", "P", m, target_prefix, normalization)
+
+
+def verify_jpair_schemas() -> None:
+    """Universal Fraction-polynomial checks for both prefixes and normalization."""
+    # Q95: m=512t+95 and h=27t+5.
+    require(affine_walk(Affine(27648, 5131), (1, 2, 3)) == Affine(11664, 2165),
+            "Q95 universal source prefix fails")
+    require(affine_walk(Affine(4608, 855), (1, 1, 4, 2)) == Affine(1458, 271),
+            "Q95 universal target prefix fails")
+    # P1215: m=32768t+1215 and h=243t+9.
+    require(affine_walk(Affine(884736, 32805), (4, 1, 1, 2, 3))
+            == Affine(104976, 3893), "P1215 universal source prefix fails")
+    require(affine_walk(Affine(1769472, 65611), (1, 2, 8, 2, 2))
+            == Affine(13122, 487), "P1215 universal target prefix fails")
+    # For h divisible by four, both quarter steps replace h by 3h/4.
+    require(affine_walk(Affine(432, 1), (2,)) == Affine(324, 1),
+            "normalized source quarter-induction fails")
+    require(affine_walk(Affine(216, 1), (2,)) == Affine(162, 1),
+            "normalized target quarter-induction fails")
+    # The odd-b terminal step has h=2u, u=2t+1, p=3u.
+    require(affine_walk(Affine(432, 217), (2,)) == Affine(324, 163),
+            "odd-b final source quarter-step fails")
+    require(Affine(216, 109) == Affine(36 * 6, 36 * 3 + 1),
+            "odd-b target J(9p) identity fails")
+
+
+CA003_SEEDS = {
+    385: Witness(385, (0, 2, 4, 6, 7, 12, 13, 14, 19, 23)),
+    193: Witness(193, (
+        0, 2, 4, 7, 9, 10, 11, 12, 13, 15, 17, 18, 20, 21,
+        22, 24, 25, 26, 27, 29, 32, 33, 34, 36, 37, 39, 40, 41,
+        42, 43, 44, 47, 48, 49, 50, 54, 56, 58, 62, 65, 66, 67,
+        72, 76,
+    )),
+    256897: Witness(256897, (
+        0, 2, 4, 6, 7, 9, 10, 11, 13, 15, 16, 18, 22, 23,
+        24, 26, 27, 30, 31, 34, 38, 39, 41, 42, 45, 46, 47, 48,
+        53, 56, 61, 62, 63, 68, 72,
+    )),
+    128449: Witness(128449, (
+        0, 2, 4, 7, 8, 9, 13, 14, 15, 17, 18, 20, 21, 22,
+        24, 26, 29, 32, 33, 34, 39, 40, 41, 42, 44, 46, 49, 53,
+        56, 58, 59, 60, 61, 62, 64, 66, 67, 69, 70, 71, 73, 74,
+        75, 76, 78, 81, 82, 83, 85, 86, 88, 89, 90, 91, 92, 93,
+        96, 97, 98, 99, 103, 105, 107, 111, 114, 115, 116, 121, 125,
+    )),
+}
+
+
+@dataclass(frozen=True)
+class CA003Reduction:
+    """A conditional C(m)->C((m+4011)/2) call; no child target is assumed."""
+
+    m: int
+    child_m: int
+    child_source: Witness
+
+    @property
+    def status(self) -> str:
+        return "CONDITIONAL"
+
+    def finish(self, child_target: Witness) -> Witness:
+        """Strict reconstruction API: a missing or mismatched child is invalid."""
+        require(isinstance(child_target, Witness), "CA003 needs a validated child target")
+        require(child_target.x == 64 * self.child_m + 1,
+                "CA003 child target has the wrong start")
+        child_prefix = CA003_SEEDS[128449].increments
+        target_prefix = CA003_SEEDS[193].padded(68).increments
+        require(child_target.increments[:68] == child_prefix,
+                "CA003 child target prefix is not exact")
+        output = splice(child_target, 64 * self.m + 1, target_prefix, source_steps=68)
+        require(output.length == child_target.length,
+                "CA003 target replacement changed witness length")
+        require(output.A[-1] == child_target.A[-1] + 1,
+                "CA003 target exponent did not increase by one")
+        return output
+
+    def complete(self, child_target: Optional[Witness]) -> TransformResult:
+        """Safe conditional API: absent/malformed children never count as success."""
+        trace = ("CA003: C(" + str(self.m) + ")->C(" + str(self.child_m) + ")",)
+        if not isinstance(child_target, Witness):
+            return TransformResult("UNRESOLVED", None, trace + ("child target missing or invalid",))
+        try:
+            output = self.finish(child_target)
+        except WitnessError as error:
+            return TransformResult("UNRESOLVED", None,
+                                   trace + ("invalid child target: " + str(error),))
+        return TransformResult("PROVED", output, trace)
+
+
+def reduce_ca003(m: int, source: Witness) -> CA003Reduction:
+    """Apply only the proved CA-003 cylinder and its exact source splice."""
+    require(is_integer(m) and m > 3 and m % (1 << 121) == 3,
+            "CA003 requires m>3 and m=3 mod2^121")
+    require(isinstance(source, Witness) and source.x == 128 * m + 1,
+            "CA003 source witness has the wrong start")
+    child_m = (m + 4011) // 2
+    require(2 * child_m == m + 4011 and 0 < child_m < m and child_m % 4 == 3,
+            "CA003 strict parameter descent fails")
+    original_prefix = CA003_SEEDS[385].padded(34).increments
+    child_prefix = CA003_SEEDS[256897].increments
+    require(source.increments[:34] == original_prefix,
+            "CA003 supplied source prefix is not exact")
+    child_source = splice(source, 128 * child_m + 1, child_prefix, source_steps=34)
+    require(child_source.length == source.length,
+            "CA003 source replacement changed witness length")
+    require(child_source.A[-1] == source.A[-1] - 1,
+            "CA003 source exponent did not decrease by one")
+    return CA003Reduction(m, child_m, child_source)
+
+
+def verify_ca003_schema() -> None:
+    """Four finite witness identities and two universal polynomial mergers."""
+    expected_data = {385: (9, 23), 193: (43, 76), 256897: (34, 72), 128449: (68, 125)}
+    for seed, (length, total) in expected_data.items():
+        witness = CA003_SEEDS[seed]
+        require(witness.length == length and witness.A[-1] == total,
+                "CA003 seed data mismatch")
+    xb = CA003_SEEDS[385].padded(34)
+    xc = CA003_SEEDS[256897]
+    yb = CA003_SEEDS[193].padded(68)
+    yc = CA003_SEEDS[128449]
+    require(xb.A[-1] == 73 and xc.A[-1] == 72, "CA003 source padding mismatch")
+    require(yb.A[-1] == 126 and yc.A[-1] == 125, "CA003 target padding mismatch")
+    # m=3+2^121*t and child_m=2007+2^120*t. Identities hold for every t>=0;
+    # the reduction separately requires t>=1 for strict parameter descent.
+    source_endpoint = Affine(3 ** 34 * (1 << 55), 1)
+    require(affine_walk(Affine(1 << 128, 385), xb.increments) == source_endpoint,
+            "CA003 original source continuation fails")
+    require(affine_walk(Affine(1 << 127, 256897), xc.increments) == source_endpoint,
+            "CA003 child source continuation fails")
+    target_endpoint = Affine(2 * 3 ** 68, 1)
+    require(affine_walk(Affine(1 << 127, 193), yb.increments) == target_endpoint,
+            "CA003 original target continuation fails")
+    require(affine_walk(Affine(1 << 126, 128449), yc.increments) == target_endpoint,
+            "CA003 child target continuation fails")
+
+
+@dataclass(frozen=True)
 class TransformResult:
     status: str
     witness: Optional[Witness]
@@ -365,11 +615,18 @@ def _solve_bridge(kind: str, m: int, source: Witness, depth: int = 0) -> Transfo
         return TransformResult("PROVED", target, (kind + ": " + certificate.name,))
     if depth >= 128:
         return TransformResult("UNRESOLVED", None, ("recursion resource limit",))
+    reduction = None
+    reduction_name = ""
     if kind == "Q" and m % 128 == 19:
-        reduction = reduce_q19(m, source)
+        reduction, reduction_name = reduce_q19(m, source), "Q19"
+    elif kind == "Q" and m % 512 == 95:
+        reduction, reduction_name = reduce_q95(m, source), "Q95"
+    elif kind == "P" and m % 32768 == 1215:
+        reduction, reduction_name = reduce_p1215(m, source), "P1215"
+    if reduction is not None:
         child = _solve_bridge(reduction.child_kind, reduction.p,
                               reduction.child_source, depth + 1)
-        trace = ("Q19: Q(" + str(m) + ")->" + reduction.child_kind
+        trace = (reduction_name + ": " + kind + "(" + str(m) + ")->" + reduction.child_kind
                  + "(" + str(reduction.p) + ")",) + child.trace
         if child.witness is None:
             return TransformResult("UNRESOLVED", None, trace)
@@ -378,8 +635,7 @@ def _solve_bridge(kind: str, m: int, source: Witness, depth: int = 0) -> Transfo
                            ("no certificate for " + kind + "(" + str(m) + ")",))
 
 
-def transform(source: Witness) -> TransformResult:
-    """Construct the requested witness, or explicitly leave the case unresolved."""
+def _transform(source: Witness, depth: int) -> TransformResult:
     require(isinstance(source, Witness), "a validated Witness is required")
     if source.x % 128 != 1:
         return TransformResult("UNRESOLVED", None, ("input is outside requested classes",))
@@ -390,20 +646,38 @@ def transform(source: Witness) -> TransformResult:
     if certificate is not None:
         return TransformResult("PROVED", certificate.apply(source, m),
                                (certificate.name,))
+    if depth >= 128:
+        return TransformResult("UNRESOLVED", None, ("recursion resource limit",))
+    if m > 3 and m % (1 << 121) == 3:
+        reduction = reduce_ca003(m, source)
+        child = _transform(reduction.child_source, depth + 1)
+        if child.status != "PROVED" or child.witness is None:
+            incomplete = reduction.complete(None)
+            return TransformResult("UNRESOLVED", None, incomplete.trace + child.trace)
+        completed = reduction.complete(child.witness)
+        return TransformResult(completed.status, completed.witness,
+                               completed.trace + child.trace)
     if m % 2 == 1:
-        child = _solve_bridge("Q", m, source.tail(3))
+        child = _solve_bridge("Q", m, source.tail(3), depth)
         target = None if child.witness is None else prepend(
             64 * m + 1, (2, 2), jump(child.witness))
     else:
-        child = _solve_bridge("P", m // 2, unjump(source.tail(3)))
+        child = _solve_bridge("P", m // 2, unjump(source.tail(3)), depth)
         target = None if child.witness is None else prepend(
             64 * m + 1, (2, 2, 2), child.witness)
     return TransformResult(child.status, target, child.trace)
 
 
+def transform(source: Witness) -> TransformResult:
+    """Construct the requested witness, or explicitly leave the case unresolved."""
+    return _transform(source, 0)
+
+
 def self_test() -> dict[str, object]:
     verify_merger_schema()
     verify_q19_schema()
+    verify_jpair_schemas()
+    verify_ca003_schema()
     certificates = FIXED_CERTIFICATES + tuple(infinite_certificate(k) for k in range(1, 9))
     witness_checks = 0
     for certificate in certificates:
@@ -434,6 +708,75 @@ def self_test() -> dict[str, object]:
                 "recursive descent fixture was not proved")
         require(result.witness.x == 64 * m + 1, "recursive target mismatch")
         witness_checks += 1
+    jpair_reconstructions = 0
+    for kind, parameters, reducer in (
+        ("Q", (95, 607, 1119, 3679), reduce_q95),
+        ("P", (1215, 33983, 99519, 197823, 5342399), reduce_p1215),
+    ):
+        for m in parameters:
+            source_x = 54 * m + 1 if kind == "Q" else 27 * m
+            source = Witness.from_trajectory(source_x)
+            reduction = reducer(m, source)
+            child_target_x = (9 * reduction.p if reduction.child_kind == "Q"
+                              else 54 * reduction.p + 1)
+            child_target = Witness.from_trajectory(child_target_x)
+            output = reduction.finish(child_target)
+            expected_target = 9 * m if kind == "Q" else 54 * m + 1
+            require(output.x == expected_target, "J-pair reconstruction target mismatch")
+            require(reduction.child_source.length < source.length,
+                    "J-pair reduction did not shorten its known source witness")
+            s = reduction.normalization.b // 2
+            odd_b = reduction.normalization.b % 2
+            base_source_steps = 3 if kind == "Q" else 5
+            source_total_drop = 10 if kind == "Q" else 15
+            base_target_steps = 4 if kind == "Q" else 5
+            base_target_total = 8 if kind == "Q" else 15
+            require(reduction.child_source.length == source.length - base_source_steps - s - odd_b,
+                    "source witness length formula fails")
+            require(reduction.child_source.A[-1] == source.A[-1] - source_total_drop - 2 * s,
+                    "source total exponent formula fails")
+            require(output.length == child_target.length + base_target_steps + s,
+                    "target witness length formula fails")
+            require(output.A[-1] == child_target.A[-1] + base_target_total + 2 * s + 2 * odd_b,
+                    "target total exponent formula fails")
+            jpair_reconstructions += 1
+    for original_m in (1119, 3679, 2 * 197823, 2 * 5342399):
+        result = transform(Witness.from_trajectory(128 * original_m + 1))
+        require(result.status == "PROVED" and result.witness is not None,
+                "new recursive fixture was not proved")
+        require(result.witness.x == 64 * original_m + 1,
+                "new recursive fixture has wrong target")
+        witness_checks += 1
+    for original_m in (607, 2 * 1215):
+        result = transform(Witness.from_trajectory(128 * original_m + 1))
+        require(result.status == "UNRESOLVED" and result.witness is None,
+                "unsupported recursive leaf was silently proved")
+        require(len(result.trace) >= 2, "unsupported recursive fixture did not descend")
+    ca003_reconstructions = 0
+    ca003_objects = []
+    for t in (1, 2):
+        m = 3 + (1 << 121) * t
+        source = Witness.from_trajectory(128 * m + 1)
+        reduction = reduce_ca003(m, source)
+        ca003_objects.append(reduction)
+        child_target = Witness.from_trajectory(64 * reduction.child_m + 1)
+        completed = reduction.complete(child_target)
+        require(completed.status == "PROVED" and completed.witness is not None,
+                "CA003 conditional reconstruction failed")
+        require(completed.witness.x == 64 * m + 1, "CA003 final target mismatch")
+        require(reduction.status == "CONDITIONAL", "CA003 object prematurely claims success")
+        for missing_or_wrong in (None, Witness(1, (0,)), "not a witness"):
+            incomplete = reduction.complete(missing_or_wrong)
+            require(incomplete.status == "UNRESOLVED" and incomplete.witness is None,
+                    "CA003 missing or invalid child was silently proved")
+        automatic = transform(source)
+        require(automatic.status == "UNRESOLVED" and automatic.witness is None,
+                "CA003 unsupported child was silently proved")
+        require(automatic.trace[0].startswith("CA003:"), "CA003 fallback did not execute")
+        bounded = _transform(source, 128)
+        require(bounded.status == "UNRESOLVED" and bounded.witness is None,
+                "CA003 recursion depth limit did not remain unresolved")
+        ca003_reconstructions += 1
     unresolved = transform(Witness.from_trajectory(129))
     require(unresolved.status == "UNRESOLVED" and unresolved.witness is None,
             "unsupported case was silently treated as proved")
@@ -461,6 +804,39 @@ def self_test() -> dict[str, object]:
             rejected += 1
         else:
             raise WitnessError("malformed witness was accepted")
+    q19 = reduce_q19(19, Witness.from_trajectory(54 * 19 + 1))
+    q95 = reduce_q95(95, Witness.from_trajectory(54 * 95 + 1))
+    p1215 = reduce_p1215(1215, Witness.from_trajectory(27 * 1215))
+    invalid_operations = (
+        lambda: MergerCertificate("bad prefix", 16, 6, (2, 2, 2, 4),
+                                  (2, 2, 2, 2)).verify(),
+        lambda: MergerCertificate("bad residue", 16, 7, (2, 2, 2, 4),
+                                  (2, 2, 2, 1)).verify(),
+        lambda: MergerCertificate("bad identity", 16, 6, (), ()).verify(),
+        lambda: infinite_certificate(0),
+        lambda: q19.finish(one),
+        lambda: q95.finish(one),
+        lambda: p1215.finish(one),
+        lambda: normalize_j_pair(1, one),
+        lambda: reduce_q95(95, one),
+        lambda: reduce_p1215(1215, one),
+        lambda: unjump(Witness.from_trajectory(9)),
+        lambda: FIXED_CERTIFICATES[0].apply(Witness.from_trajectory(129), 6),
+        lambda: splice(one, 3, (1,)),
+        lambda: reduce_ca003(3, CA003_SEEDS[385]),
+        lambda: reduce_ca003(3 + (1 << 120), one),
+        lambda: reduce_ca003(3 + (1 << 121), one),
+        lambda: ca003_objects[0].finish(one),
+        lambda: Witness(385, CA003_SEEDS[385].A[:-1] + (24,)),
+    )
+    bad_certificates_rejected = 0
+    for operation in invalid_operations:
+        try:
+            operation()
+        except WitnessError:
+            bad_certificates_rejected += 1
+        else:
+            raise WitnessError("malformed certificate or reconstruction was accepted")
     try:
         Witness.from_trajectory(3, max_steps=0)
     except TrajectoryBoundExceeded:
@@ -474,9 +850,17 @@ def self_test() -> dict[str, object]:
         "unbounded_k_family_induction_schema": "PASS",
         "additional_affine_k_instantiations": 8,
         "q19_descent_schema": "PASS",
+        "q95_and_p1215_schemas": "PASS",
+        "j_pair_normalization_schema": "PASS",
+        "ca003_seed_and_universal_affine_certificates": "PASS",
         "transformed_fixture_witnesses": witness_checks,
         "q19_reconstruction_fixtures": descent_checks,
+        "q95_and_p1215_reconstruction_fixtures": jpair_reconstructions,
+        "ca003_conditional_reconstruction_fixtures": ca003_reconstructions,
+        "ca003_unsupported_child": "UNRESOLVED",
         "malformed_witnesses_rejected": rejected,
+        "invalid_certificates_or_reconstructions_rejected": bad_certificates_rejected,
+        "unsupported_recursive_leaves": "UNRESOLVED",
         "unsupported_case": "UNRESOLVED",
         "evidence_limit": "Exact certificate identities and stated fixtures; no exhaustive search or full proof.",
     }

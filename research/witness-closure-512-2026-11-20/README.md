@@ -10,6 +10,25 @@ The dependencies of this note are the supplied witness definition and direct
 integer algebra. No earlier research history, computational convergence bound,
 or external theorem about Collatz convergence is assumed.
 
+## Continuation results
+
+The following notes extend this packet without changing the OPEN status of
+the main claim:
+
+* [Complete-witness transfer between two seed pairs](continuation-algebra.md)
+  proves an exact smaller-parameter reduction for
+  `M > 3`, `M = 3 mod 2^121`: replace `M` by `(M+4011)/2`.
+  The supplied source witness keeps its length and loses one unit of total
+  exponent. The implementation validates both prefix identities and reconstructs
+  the original target only when the smaller target witness is available.
+* [General descent from a certified base pair](continuation-descent.md)
+  gives an explicit precision threshold and a finite list of smaller P/Q
+  premises. [The detailed parameter-one construction](continuation-lift.md)
+  gives the fifteen-call specialization near `M=1`.
+
+These are proved transfer and induction rules, not a proof that their recursive
+premises or their parameter classes cover every input.
+
 ## 1. The problem and the claim register
 
 For a positive integer \(x\), define \(x\in E\) to mean that there are integers
@@ -555,14 +574,16 @@ and implemented descending reductions. In particular:
 * The universal scopes claimed above rest on the proofs in this note. A
   finite replay is useful corroboration and an implementation check.
 
-The verifier owner reported that both replay commands completed successfully
-on 2026-11-20 and emitted identical `PASS` results. The reported checks included
-three fixed affine certificates, the algebraic induction schema for the
-\(k\)-family, eight additional \(k\)-instantiations, the Q19 descent schema,
-35 transformed fixture witnesses, five Q19 reconstruction fixtures, and
-11 rejected malformed witnesses. Both `full_claim` and the unsupported-case
-result remained `UNRESOLVED`. These counts describe that finite replay; they
-are not a convergence bound or an exhaustive coverage claim.
+The extended verifier was run independently by its author and the integrating
+agent in normal and optimized Python. Both modes returned identical `PASS`
+JSON. It checks all three fixed certificates, the k-family schema, all three
+P/Q descent schemas, the four CA-003 seed witnesses and its two universal
+affine identities. Finite reconstruction checks comprise 39 transformed
+fixtures, five Q19 cases, nine Q95/P1215 cases, and two CA-003 cases; 11
+malformed witnesses and 18 invalid certificates or reconstructions are rejected.
+Unsupported recursive children, including those of CA-003, remain `UNRESOLVED`.
+The script explicitly reports `full_claim: UNRESOLVED`. These counts are not a
+convergence bound or an exhaustive coverage claim.
 
 ## 8. The unresolved proof obligation
 
