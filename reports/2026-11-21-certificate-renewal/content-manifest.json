@@ -1,0 +1,140 @@
+{
+  "scope": "Scientific manuscript, checker, source snapshot, review, and finite-output bytes. Publication-only validation documents are excluded to avoid self-reference.",
+  "files": [
+    {
+      "path": "reports/2026-11-21-certificate-renewal/REVIEW_C5_BYPASSES.md",
+      "bytes": 4761,
+      "sha256": "8f4578bef5f496151791830b0720fb4d8d242c2bd4eb282c9752117f15d6ffcc"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/REVIEW_ENDPOINT_SUMMABILITY.md",
+      "bytes": 5338,
+      "sha256": "ace00426c2f6664b47aac1592a5f482394ce27156f0ca94d0d669234e201687b"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/REVIEW_ENDPOINT_TELESCOPE.md",
+      "bytes": 5256,
+      "sha256": "2f08f91170051a3c8cbf085c84250b31ce04cfe8c05f8224d684deb776315280"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/REVIEW_FIVE_WORD_EXTENSION.md",
+      "bytes": 5168,
+      "sha256": "d599bcfdec7af4baed3727942797fca63e56607c40e516a41f0f69bbead4fe8f"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/REVIEW_MOMENT_QUANTILES.md",
+      "bytes": 7479,
+      "sha256": "9081eddd99db9e643ad19d50a41f14a1ca2ee08d69158f2739d0146f2b4288e7"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/ROOT_REVIEW.md",
+      "bytes": 6218,
+      "sha256": "8cc417197f191032d4ced160b031d10679ff6450b8c54d7ee19f102b070ff3ca"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/c5-bypasses-report.json",
+      "bytes": 2565,
+      "sha256": "95e804a841b2e34e54fce242f086cd487ab25cf83cdd3864c47f7391d7dc132a"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/c5-independent-report.json",
+      "bytes": 522,
+      "sha256": "e83601b023a4fa61e2453322619d89f1429ff98f47f06b319ac38a1548d01066"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/endpoints-report.json",
+      "bytes": 5979,
+      "sha256": "6c2e36376511349efbef7d8dbaa2704434b06f1db806e6a10c38c3d7bf1b01da"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/five-word-report.json",
+      "bytes": 1336,
+      "sha256": "2fb03f2fb1865d633e0517d8ac96818732bb7c71d8e49b93cabfc537a6d21c72"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/import-normalization.json",
+      "bytes": 487,
+      "sha256": "a970ab0768f2612a284f351fdeaa72b52a3d57834078a61524672149bb35948f"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/moments-report.json",
+      "bytes": 7246,
+      "sha256": "1c9b9cc328efb44bca5fc459d83a87aaf5e8faadc1280f06fe154c941d0a3900"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/review_c5_affine.py",
+      "bytes": 2126,
+      "sha256": "15fb004655f05bd519248aaa59d05893f3c0a7c6e3e20af2d0faf093a7ad2f1c"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/scientific-executions.json",
+      "bytes": 7526,
+      "sha256": "e3f304da74740c4741b25d7318d6248bfeac96e631350f439497f9062643aee3"
+    },
+    {
+      "path": "reports/2026-11-21-certificate-renewal/source-snapshot.json",
+      "bytes": 4314,
+      "sha256": "0c17178dc281b5bb9885198800da194c7e3052985b2385c5314387b23e03e609"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/C5_CERTIFIED_BYPASSES.md",
+      "bytes": 13023,
+      "sha256": "dc846bbce7fa74f1235cab5049a8ac7fd269bab666abde656c51c86c977cb258"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/FIVE_WORD_EXTENSION.md",
+      "bytes": 20440,
+      "sha256": "1969be619e2fe2b42fd2cad65d0bc0a50eb0f2c008154a652dfdf4934ebb9461"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/FIXED_ENDPOINT_SUMMABILITY.md",
+      "bytes": 9217,
+      "sha256": "8a5aac44693c4755dcf16287e0129b4918f3db1e204daee84fb35668db631c56"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/FULL_THEOREM_ATTEMPT.md",
+      "bytes": 6315,
+      "sha256": "6418e9d4d3b6751e0c48acc0f2af66a9945db53766a70d4dca185d60ae579f16"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/MOMENT_QUANTILES.md",
+      "bytes": 14241,
+      "sha256": "178522c6954683f35730cc2da9b9d3aa49acf14dce59677880ded167691f0226"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/README.md",
+      "bytes": 4918,
+      "sha256": "687066dd86bb305df9a718bbb24761a95fb89f738177af57955a93172cb988f3"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/SOURCES.md",
+      "bytes": 4298,
+      "sha256": "b4c69c8be38eb7e2199f3477f3aad84c13f40d0243f0f4ba79aa9ce8ef52e8f4"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/check_c5_certified_bypasses.py",
+      "bytes": 7011,
+      "sha256": "0437e87b861c17423706eca4b994181460a108f173baef121112b2004fd4b805"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/check_endpoint_summability.py",
+      "bytes": 4073,
+      "sha256": "b080f05857a9a418e7eae5567a3d9539427e3581d8f5d79967172d14e9e15714"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/check_five_word_extension.py",
+      "bytes": 13337,
+      "sha256": "7648405fc2446f3ac857e23e79bb9923fca7e8b919ca31185d4977c80e0c7232"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/check_moment_quantiles.py",
+      "bytes": 9936,
+      "sha256": "a016769d8a5b34c68971e1f6096fa322ec5f05d705053056ce5e70c5ae459449"
+    },
+    {
+      "path": "research/certificate-renewal-20261121/question_moving_residue_moment.txt",
+      "bytes": 2583,
+      "sha256": "01bcfa252b11a28a6f32c423c6b103612556944ceb12bdaa1667a51a3bbd95a3"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "independent_affine_replay": [
+    {
+      "rule": "A",
+      "source_endpoint": [
+        9565938,
+        8537309
+      ],
+      "source_odd_steps": 14,
+      "target_endpoint": [
+        57395628,
+        51223855
+      ],
+      "target_odd_steps": 15
+    },
+    {
+      "rule": "B",
+      "source_endpoint": [
+        9565938,
+        6057251
+      ],
+      "source_odd_steps": 14,
+      "target_endpoint": [
+        57395628,
+        36343507
+      ],
+      "target_odd_steps": 15
+    }
+  ],
+  "status": "PASS"
+}
