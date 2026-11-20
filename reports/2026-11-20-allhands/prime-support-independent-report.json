@@ -1,0 +1,57 @@
+{
+  "affine_expansions": 1234,
+  "author_checker_sha256": "103c19a367e3d79afe43c80300f1ad15ac8ef199ea7a64aa5be962ac7ac9adac",
+  "author_note_sha256": "9bafb9167ae3c939d3d2d839b6ee02bde0720c0ec7492ae46ebdf15dba834edf",
+  "charged_returns": 1234,
+  "integer_inversion_points": [
+    {
+      "B": 64,
+      "s": 1
+    },
+    {
+      "B": 384,
+      "s": 3
+    },
+    {
+      "B": 1344,
+      "s": 7
+    },
+    {
+      "B": 3840,
+      "s": 15
+    },
+    {
+      "B": 9920,
+      "s": 31
+    },
+    {
+      "B": 24192,
+      "s": 63
+    },
+    {
+      "B": 56896,
+      "s": 127
+    },
+    {
+      "B": 130560,
+      "s": 255
+    }
+  ],
+  "ln2_interval": [
+    "149337754816/215448838605",
+    "10154967342503/14650521025140"
+  ],
+  "maximum_state_bits": 20,
+  "negative_controls": [
+    "actual 3->5 window fails boundary-free tail without deletion",
+    "rank-one set {15,225} has prime-support size two; not a trajectory assertion"
+  ],
+  "odd_edges": 5600,
+  "peak_windows": 1317,
+  "prime_power_tail_checks": 7968,
+  "review_checker_sha256": "504b6135872f30f1b94df629a4658f9f502d27646724c6c5dadfa65c237d5a84",
+  "scope": "Independent finite checks of P13 exact costs, maximum deletion, retained tails, source alternative and integer inversion; no imported author code and no nontrivial cycle fixture.",
+  "source_boundary_checks": 359,
+  "sources": 70,
+  "status": "PASS"
+}

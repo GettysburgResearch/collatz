@@ -1,0 +1,253 @@
+{
+  "executions": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/allhands-global-closure-20261120/check_directed_circulation.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/circulation-author-normal.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/directed-circulation-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "normal",
+      "name": "circulation-author",
+      "program_sha256": "8e2b7ca383655a4bf60cb22584ca38812402d0d1b7b3d3f1ba6293e5ef037e33",
+      "report_sha256": "d39d61b4b20137f524aef9495a409d95eb1d55f7f6e86b868a5f261661eaa639",
+      "seconds": 0.235
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/allhands-global-closure-20261120/check_directed_circulation.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/circulation-author-optimized.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/directed-circulation-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "optimized",
+      "name": "circulation-author",
+      "program_sha256": "8e2b7ca383655a4bf60cb22584ca38812402d0d1b7b3d3f1ba6293e5ef037e33",
+      "report_sha256": "d39d61b4b20137f524aef9495a409d95eb1d55f7f6e86b868a5f261661eaa639",
+      "seconds": 0.323
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/allhands-global-closure-20261120/check_prime_support_peaks.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/prime-support-author-normal.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/prime-support-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "normal",
+      "name": "prime-support-author",
+      "program_sha256": "103c19a367e3d79afe43c80300f1ad15ac8ef199ea7a64aa5be962ac7ac9adac",
+      "report_sha256": "0679bad6c39e35e8bf22273d4b0d323fded5021e4133c7217b404c9e0d848d96",
+      "seconds": 0.995
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/allhands-global-closure-20261120/check_prime_support_peaks.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/prime-support-author-optimized.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/prime-support-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "optimized",
+      "name": "prime-support-author",
+      "program_sha256": "103c19a367e3d79afe43c80300f1ad15ac8ef199ea7a64aa5be962ac7ac9adac",
+      "report_sha256": "0679bad6c39e35e8bf22273d4b0d323fded5021e4133c7217b404c9e0d848d96",
+      "seconds": 1.047
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/allhands-global-closure-20261120/check_directed_depth.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/depth-author-normal.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/directed-depth-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "normal",
+      "name": "depth-author",
+      "program_sha256": "13af137eb303778a9e5931b480cf476550c42b056adffb3d8d673d901326a0e3",
+      "report_sha256": "b086bcb0569144829ac20340b8c7ed7e40c0dd899e42597e1e97b3ab9f752b15",
+      "seconds": 0.471
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "research/allhands-global-closure-20261120/check_directed_depth.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/depth-author-optimized.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/directed-depth-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "optimized",
+      "name": "depth-author",
+      "program_sha256": "13af137eb303778a9e5931b480cf476550c42b056adffb3d8d673d901326a0e3",
+      "report_sha256": "b086bcb0569144829ac20340b8c7ed7e40c0dd899e42597e1e97b3ab9f752b15",
+      "seconds": 0.53
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-allhands/review_circulation.py",
+        "--author-path",
+        "research/allhands-global-closure-20261120/check_directed_circulation.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/circulation-review-normal.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/circulation-review-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "normal",
+      "name": "circulation-review",
+      "program_sha256": "80f752c28b9a723a9c92f1d6542351ff0df9dd04a130abb8966e07f30db03f2f",
+      "report_sha256": "ee08c73e1710d38a16ce7be668605ab659a1ad38517e9fc9090d58d83aac86c6",
+      "seconds": 0.399
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "reports/2026-11-20-allhands/review_circulation.py",
+        "--author-path",
+        "research/allhands-global-closure-20261120/check_directed_circulation.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/circulation-review-optimized.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/circulation-review-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "optimized",
+      "name": "circulation-review",
+      "program_sha256": "80f752c28b9a723a9c92f1d6542351ff0df9dd04a130abb8966e07f30db03f2f",
+      "report_sha256": "ee08c73e1710d38a16ce7be668605ab659a1ad38517e9fc9090d58d83aac86c6",
+      "seconds": 0.457
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-allhands/review_prime_support_independent.py",
+        "--source-dir",
+        "research/allhands-global-closure-20261120",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/prime-support-review-normal.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/prime-support-independent-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "normal",
+      "name": "prime-support-review",
+      "program_sha256": "504b6135872f30f1b94df629a4658f9f502d27646724c6c5dadfa65c237d5a84",
+      "report_sha256": "0ff266269219f84287797d378e9d5fb61a985f42962a679f2285aeed4ea5cd9b",
+      "seconds": 0.083
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "reports/2026-11-20-allhands/review_prime_support_independent.py",
+        "--source-dir",
+        "research/allhands-global-closure-20261120",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/prime-support-review-optimized.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/prime-support-independent-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "optimized",
+      "name": "prime-support-review",
+      "program_sha256": "504b6135872f30f1b94df629a4658f9f502d27646724c6c5dadfa65c237d5a84",
+      "report_sha256": "0ff266269219f84287797d378e9d5fb61a985f42962a679f2285aeed4ea5cd9b",
+      "seconds": 0.206
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "reports/2026-11-20-allhands/review_directed_depth_independent.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/depth-review-normal.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/directed-depth-independent-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "normal",
+      "name": "depth-review",
+      "program_sha256": "0cf8b24606e5c480d6c024fa74ee1520290f98f2897d36dbefee949709fd4df8",
+      "report_sha256": "f6b3f98685e06472f4fb8c85b1db40272b73be4b70190e328ae7ec972a71345b",
+      "seconds": 0.052
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-OO",
+        "reports/2026-11-20-allhands/review_directed_depth_independent.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/allhands-integrated-replay/depth-review-optimized.json"
+      ],
+      "canonical_report": "reports/2026-11-20-allhands/directed-depth-independent-report.json",
+      "exit_code": 0,
+      "matches_retained_report": true,
+      "mode": "optimized",
+      "name": "depth-review",
+      "program_sha256": "0cf8b24606e5c480d6c024fa74ee1520290f98f2897d36dbefee949709fd4df8",
+      "report_sha256": "f6b3f98685e06472f4fb8c85b1db40272b73be4b70190e328ae7ec972a71345b",
+      "seconds": 0.146
+    }
+  ],
+  "finished_utc": "2026-11-20T20:21:28.860819+00:00",
+  "normal_optimized_outputs_identical": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema": "collatz-allhands-replay/v1",
+  "scope": "bounded exact replays, output identity and optimization safety; not universal convergence",
+  "started_utc": "2026-11-20T20:21:27.812144+00:00",
+  "success": true
+}

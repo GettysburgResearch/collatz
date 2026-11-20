@@ -1,0 +1,65 @@
+{
+  "counts": {
+    "affine_pair_checks": 306559,
+    "deleted_tail_checks": 85170,
+    "finite_source_bounds": 1044,
+    "height_threshold_checks": 19778,
+    "largest_source": 531441,
+    "literal_odd_edges": 26301,
+    "maximum_state_bits": 29,
+    "negative_controls": 7,
+    "peak_cost_windows": 10917,
+    "prime_power_return_checks": 26005,
+    "record_peak_windows": 1864,
+    "source_boundary_checks": 2284,
+    "sources": 1045
+  },
+  "cycle_fixture": "only the actual fixed point 1; no nontrivial cycle asserted",
+  "fixture_digest": "97b4d013d63629a4e24837486422618cf81344cd74bca2ec7a53b63447aa05fd",
+  "representative_fixtures": [
+    {
+      "max": 1,
+      "source": 1,
+      "states": 1,
+      "support": 0
+    },
+    {
+      "max": 3077,
+      "source": 27,
+      "states": 42,
+      "support": 36
+    },
+    {
+      "max": 1457,
+      "source": 127,
+      "states": 16,
+      "support": 15
+    },
+    {
+      "max": 4373,
+      "source": 255,
+      "states": 16,
+      "support": 15
+    },
+    {
+      "max": 39365,
+      "source": 1023,
+      "states": 21,
+      "support": 22
+    },
+    {
+      "max": 523608245,
+      "source": 262143,
+      "states": 81,
+      "support": 116
+    },
+    {
+      "max": 531441,
+      "source": 531441,
+      "states": 45,
+      "support": 45
+    }
+  ],
+  "scope": "bounded exact-integer ordinary trajectory replay; universal proofs remain written arguments",
+  "status": "PASS"
+}
