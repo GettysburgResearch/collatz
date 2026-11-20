@@ -1,0 +1,109 @@
+{
+  "main_base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "primary_external_sources": [
+    "https://arxiv.org/abs/1408.6884",
+    "https://arxiv.org/abs/1303.2019",
+    "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf"
+  ],
+  "repository": "GettysburgResearch/collatz",
+  "repository_sources": [
+    {
+      "commit": "7d04c4dd756cfe495eb3eee78eba35a99085cd2a",
+      "files": [
+        {
+          "bytes": 5431,
+          "path": "research/upper-bit-mergers/TRIPLING_VARIATION.md",
+          "sha256": "1a3aef543f1ec76db6b585041108eaa105f1d4ceb0c04fe421f1b15ed47d21bb"
+        },
+        {
+          "bytes": 8036,
+          "path": "research/upper-bit-mergers/THREE_RAY_VARIATION.md",
+          "sha256": "f7f2d0b5803e9ec8c302402e5b7a53fbc06c2ec1cdf92f8d4e816a1c3de5c0d0"
+        },
+        {
+          "bytes": 6257,
+          "path": "research/upper-bit-mergers/THREE_RAY_DENSITY.md",
+          "sha256": "567ecc84a34d41d01ca9bf63a4b4074a92b350c1cbbdc77060927fb1ed72f3b5"
+        },
+        {
+          "bytes": 7682,
+          "path": "research/upper-bit-mergers/THREE_RAY_CLOCKS.md",
+          "sha256": "21a04add48ae90c952007dd85ea91cbb9573f9bcc1181a9810f5ebf507b1c579"
+        }
+      ],
+      "pr": 146
+    },
+    {
+      "commit": "55d8968d2ecbc23a91c9c4733929f34be9bf0d28",
+      "files": [
+        {
+          "bytes": 17770,
+          "path": "research/independent-attack-20261120/PROOF.md",
+          "sha256": "7d3a63cfd53fd0298c5beebe9fe80ee414a7d43780169a6aab3e2c3920c55bed"
+        },
+        {
+          "bytes": 4777,
+          "path": "research/independent-attack-20261120/README.md",
+          "sha256": "03c60aba11dde68a076a0603c341d9fca45ba14023498fc80447beb2b1c8e530"
+        }
+      ],
+      "pr": 148
+    },
+    {
+      "commit": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "files": [
+        {
+          "bytes": 6058,
+          "path": "research/forward-inverse-defect/CLOSURE_BOUNDARY.md",
+          "sha256": "c0932c69419859de135b9ad8e843c59dce5d3f3adbdab74bfefb28d18e12a89f"
+        }
+      ],
+      "pr": 149
+    },
+    {
+      "commit": "02a9f6ad17e5f1904cb4ff806fd0217d199e8437",
+      "files": [
+        {
+          "bytes": 7852,
+          "path": "research/ordinary-merger-selection/FIVE_RAY_RECURSION.md",
+          "sha256": "3c42beb093772aae23cb623174e9529d15672c9117ad5fade0f0469d32fca17c"
+        },
+        {
+          "bytes": 9062,
+          "path": "research/ordinary-merger-selection/AFFINE_CERTIFICATE_BOUNDARY.md",
+          "sha256": "b9b62d89675755373847bfcf47416b29e884fc98efa4df8d7d949a0c032922c6"
+        }
+      ],
+      "pr": 151
+    },
+    {
+      "commit": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+      "files": [
+        {
+          "bytes": 8646,
+          "path": "research/gemini-global-closure-20261120/AVERAGED_CHAIN_AUDIT.md",
+          "sha256": "bad63af13a553dd6a1ded53b88fb90c9a277a3ecb2544949def40b6781389adf"
+        }
+      ],
+      "pr": 152
+    },
+    {
+      "commit": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "files": [
+        {
+          "bytes": 6681,
+          "path": "research/fixed-integer-descent/README.md",
+          "sha256": "3d6fba5c7518aa76147af3f68e8c066fb2280ab4ba95847275e06f8d9a361db9"
+        },
+        {
+          "bytes": 10412,
+          "path": "research/fixed-integer-descent/mergers.md",
+          "sha256": "9e2aed5f50a66f22667443c5fc339d9001585f6e4f16ca38e883a770c880dc6a"
+        }
+      ],
+      "pr": 153
+    }
+  ],
+  "schema": "collatz-followups-source-pins/v1",
+  "scope": "Exact revisions used for theorem dependencies and comparison with existing results. Reviews are limited to the claims identified in each scientific note."
+}

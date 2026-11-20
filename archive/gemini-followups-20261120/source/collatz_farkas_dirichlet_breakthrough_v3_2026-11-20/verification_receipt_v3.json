@@ -1,0 +1,39 @@
+{
+  "package": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20",
+  "status": "PASS",
+  "non_claim_notice": "Proves exact Farkas-dual x3-defect singularity & PR #146 polynomial amplification; does NOT claim an unconditional Collatz proof.",
+  "certificates": [
+    {
+      "r": 4,
+      "modulus": 81,
+      "s": 0.84,
+      "certified_infeasible": true,
+      "independent_min_lhs_margin": 1.0,
+      "independent_rhs": -1.0,
+      "u_nnz": 19,
+      "w_norm_l2": 317893.7854
+    },
+    {
+      "r": 6,
+      "modulus": 729,
+      "s": 0.913,
+      "certified_infeasible": true,
+      "independent_min_lhs_margin": 1.0,
+      "independent_rhs": -1.0,
+      "u_nnz": 147,
+      "w_norm_l2": 156664.5609
+    }
+  ],
+  "verified_r8_boundary_crossover": {
+    "r": 8,
+    "modulus": 6561,
+    "s_crit_x3": 0.950131,
+    "exceeds_repo_19_20_native_horizon": true
+  },
+  "negative_control_s1_uniform_feasible": {
+    "s": 1.0,
+    "uniform_ub_max": -0.006172839506172839,
+    "uniform_eq_err": 2.2204743399705254e-15
+  },
+  "certificate_file_sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c"
+}

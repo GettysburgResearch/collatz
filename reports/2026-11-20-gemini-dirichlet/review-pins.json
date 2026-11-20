@@ -1,0 +1,32 @@
+{
+  "endpoint_companion_sha256": "033a47875fa6f84b2cca73f59e23635df99d244f18f79ad4ba6392ee291276d3",
+  "reviews": [
+    {
+      "review": "ORDINARY_DIRICHLET_REVIEW.md",
+      "review_sha256": "60b45941359b608d184093ad42e8ee63f68eb0f20ce15b37bf9724ecf2b9cd5b",
+      "reviewed_packet_files": {
+        "ORDINARY_DIRICHLET_COERCIVITY.md": "d5229d794b97ba4c7663f105388ed597251d34fd678cc2189c39ebf0c7b43c74"
+      },
+      "scope": "Independent analytic reconstruction of OD1 through OD4; variation source chain reviewed separately."
+    },
+    {
+      "review": "TRIPLING_VARIATION_REVIEW.md",
+      "review_sha256": "40786f9fae3435dab350c96bc4b71434c336fbf0888010e30271e192604b961b",
+      "reviewed_packet_files": {
+        "ORDINARY_DIRICHLET_COERCIVITY.md": "d5229d794b97ba4c7663f105388ed597251d34fd678cc2189c39ebf0c7b43c74"
+      },
+      "scope": "Independent reconstruction of pinned PR146 homogeneous finite variation; no other PR146 claims included."
+    },
+    {
+      "review": "FARKAS_CERTIFICATE_REVIEW.md",
+      "review_sha256": "ff7464bb2a6b1935ec6c65b2b88f3f97148298176000f69a16bb8bac0d0f4653",
+      "reviewed_packet_files": {
+        "FARKAS_DIRICHLET_AUDIT.md": "c907cfc33d842457b0173b73814f7b91644954c13398d37ef7c38ed7bc2509c7",
+        "check_farkas_and_ruelle.py": "5f26580b11b45b6ed3a1bcecce2b2c66bbaabe6f6c8a1901d6bbad7fb51f5829"
+      },
+      "scope": "Independent residual assembly, interval bounds, and contradiction sign at exactly two supplied points."
+    }
+  ],
+  "schema": "collatz-followups-proof-reviews/v1",
+  "scope": "Separate narrow mathematical reviews; no external peer-review or formal-verification claim."
+}

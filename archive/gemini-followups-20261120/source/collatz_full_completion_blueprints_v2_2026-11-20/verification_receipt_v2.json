@@ -1,0 +1,110 @@
+{
+  "package": "collatz_full_completion_blueprints_v2_2026-11-20",
+  "overall_status": "PASS",
+  "non_claim_notice": "Verified local theorems, identities, and full-completion research blueprints; does NOT claim a completed proof of Collatz.",
+  "verifier_results": [
+    {
+      "script": "blueprint_1_mahler_generating_function/verify_mahler_functional.py",
+      "status": "PASS",
+      "output": {
+        "blueprint": "blueprint_1_mahler_generating_function",
+        "status": "PASS",
+        "mahler_max_residual_f_eq_1": 2.7336071744532853e-16,
+        "boolean_parseval_error": 0.0,
+        "odd_period_transitivity_verified_up_to": 99,
+        "periodic_exclusion_verified": true,
+        "negative_control_prime_residual": 0.06034
+      }
+    },
+    {
+      "script": "blueprint_2_dirichlet_ruelle_singularity/verify_dirichlet_ruelle.py",
+      "status": "PASS",
+      "output": {
+        "blueprint": "blueprint_2_dirichlet_ruelle_singularity",
+        "status": "PASS",
+        "dirichlet_identity_err_s2": 0.0,
+        "dirichlet_identity_err_s3": 2.220446049250313e-16,
+        "forced_mod3_bias_s084": 0.313959,
+        "forced_mod3_bias_s090": 0.322212,
+        "forced_mod3_bias_s100": 0.333333,
+        "ruelle_modulus": 27,
+        "rho_L_084": 1.06171,
+        "rho_L_095": 1.015751,
+        "rho_L_100": 1.0,
+        "rho_L_110": 0.976019,
+        "negative_control_passed": true
+      }
+    },
+    {
+      "script": "blueprint_3_krasikov_lagarias_exponent_crossing/verify_exponent_crossing.py",
+      "status": "PASS",
+      "output": {
+        "blueprint": "blueprint_3_krasikov_lagarias_exponent_crossing",
+        "status": "PASS",
+        "syracuse_ideal_exponent_maxg4": 0.645543,
+        "syracuse_ideal_exponent_maxg6": 0.935516,
+        "syracuse_ideal_exponent_maxg10": 0.996541,
+        "kl_2003_published_minimax_floor": 0.84,
+        "repo_native_horizon_ceiling": 0.95,
+        "external_predecessor_ceiling": 0.901,
+        "pr146_bridge_identity_T2_20u1_verified_range": "1..500",
+        "negative_control_even_only_subpolynomial": true
+      }
+    },
+    {
+      "script": "blueprint_4_adelic_w1_and_rational_cycle_separation/verify_adelic_w1.py",
+      "status": "PASS",
+      "output": {
+        "blueprint": "blueprint_4_adelic_w1_and_rational_cycle_separation",
+        "status": "PASS",
+        "positivity_ceiling_verified_up_to": 5000,
+        "max_8k_minus_5A_from_1_in_range": 0,
+        "best_witness_in_range": null,
+        "delta_8_5": 0.075187,
+        "delta_65_41": 0.016537,
+        "corridor_squeeze_factor": 4.5465,
+        "rational_cycle_W_inf_witness_k17_A27": {
+          "g_word": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "k": 17,
+          "A": 27,
+          "mean_gap": 1.588235,
+          "8k_minus_5A_per_period": 1,
+          "root": "60888923/71515",
+          "D_red": 71515,
+          "H_denom_bits": 16.126
+        },
+        "negative_control_negative_ghost_separated": true
+      }
+    }
+  ],
+  "file_sha256": {
+    "README.md": "08c382b291e3ae6cc7c3788a8d5c4f3c4140083fe48d63d9eb527f56458a8301",
+    "blueprint_1_mahler_generating_function/BLUEPRINT.md": "a21bd3408d9eaf050511199a1d89899a47d85a0198999c91938c3b378f3ee2dc",
+    "blueprint_1_mahler_generating_function/verify_mahler_functional.py": "ee1d09cb68e5acaae9f2940af67775025251f6e32749200a785b5a55e3de4251",
+    "blueprint_2_dirichlet_ruelle_singularity/BLUEPRINT.md": "fce0d7fb3a6cd4a35ca336eb98a3ffee51ca2b4dbb88f01ccbfc88c376628faf",
+    "blueprint_2_dirichlet_ruelle_singularity/verify_dirichlet_ruelle.py": "a8e2236eeeab6a272c8e9817f6c3ad0c1ad1d491a36213e30c476f953e775e0e",
+    "blueprint_3_krasikov_lagarias_exponent_crossing/BLUEPRINT.md": "da56c16b6dea7cae68666a60425eff4108bc1f2d69e6f29d8224d5842fbdfa40",
+    "blueprint_3_krasikov_lagarias_exponent_crossing/verify_exponent_crossing.py": "98d6494788bb54e5540d0c7291174e548825c89fb994b6f4709dc58ddabd8681",
+    "blueprint_4_adelic_w1_and_rational_cycle_separation/BLUEPRINT.md": "963356bd00e04bcd9358cc718e980c1e74f050a4324e8632ba406bbab428b0c3",
+    "blueprint_4_adelic_w1_and_rational_cycle_separation/verify_adelic_w1.py": "5b580483b6213e8487a05ad4d6e254361da91d52a21745ccb4016356ef0b0cf3",
+    "run_all_v2_verifiers.py": "d31283003ba0d535ad532fd28324222129cdcb9e2e688d0e0a14eb6f490c151a"
+  }
+}

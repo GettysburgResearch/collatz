@@ -1,0 +1,1642 @@
+{
+  "accepted_replays": 8,
+  "archived_files_authenticated": 30,
+  "checks": [
+    {
+      "name": "ordinary_dirichlet",
+      "normal_optimized_payloads_identical": true,
+      "payload": {
+        "checker_sha256": "f423e8b1d163402270cfac880dcc6af04eae6c4653dbb243649f29561b8d62d6",
+        "finite_reconstruction": {
+          "chain": [
+            {
+              "divisor_exponents_2_3": [
+                1,
+                2
+              ],
+              "h_affine": [
+                1,
+                0
+              ],
+              "kind": "16h,16h+1",
+              "offsets": [
+                0,
+                18
+              ],
+              "smooth_divisor": 18
+            },
+            {
+              "divisor_exponents_2_3": [
+                1,
+                1
+              ],
+              "h_affine": [
+                12,
+                1
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                18,
+                24
+              ],
+              "smooth_divisor": 6
+            },
+            {
+              "divisor_exponents_2_3": [
+                3,
+                0
+              ],
+              "h_affine": [
+                9,
+                1
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                24,
+                32
+              ],
+              "smooth_divisor": 8
+            },
+            {
+              "divisor_exponents_2_3": [
+                0,
+                0
+              ],
+              "h_affine": [
+                18,
+                2
+              ],
+              "kind": "16h,16h+1",
+              "offsets": [
+                32,
+                33
+              ],
+              "smooth_divisor": 1
+            },
+            {
+              "divisor_exponents_2_3": [
+                0,
+                1
+              ],
+              "h_affine": [
+                24,
+                3
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                33,
+                36
+              ],
+              "smooth_divisor": 3
+            },
+            {
+              "divisor_exponents_2_3": [
+                2,
+                1
+              ],
+              "h_affine": [
+                6,
+                1
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                36,
+                48
+              ],
+              "smooth_divisor": 12
+            },
+            {
+              "divisor_exponents_2_3": [
+                4,
+                0
+              ],
+              "h_affine": [
+                6,
+                1
+              ],
+              "kind": "3h,3h+1 with h odd",
+              "offsets": [
+                48,
+                64
+              ],
+              "smooth_divisor": 16
+            },
+            {
+              "divisor_exponents_2_3": [
+                0,
+                0
+              ],
+              "h_affine": [
+                72,
+                16
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                64,
+                63
+              ],
+              "smooth_divisor": 1
+            },
+            {
+              "divisor_exponents_2_3": [
+                0,
+                2
+              ],
+              "h_affine": [
+                8,
+                2
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                63,
+                72
+              ],
+              "smooth_divisor": 9
+            },
+            {
+              "divisor_exponents_2_3": [
+                3,
+                1
+              ],
+              "h_affine": [
+                3,
+                1
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                72,
+                96
+              ],
+              "smooth_divisor": 24
+            },
+            {
+              "divisor_exponents_2_3": [
+                0,
+                1
+              ],
+              "h_affine": [
+                6,
+                2
+              ],
+              "kind": "16h,16h+1",
+              "offsets": [
+                96,
+                99
+              ],
+              "smooth_divisor": 3
+            },
+            {
+              "divisor_exponents_2_3": [
+                0,
+                2
+              ],
+              "h_affine": [
+                8,
+                3
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                99,
+                108
+              ],
+              "smooth_divisor": 9
+            },
+            {
+              "divisor_exponents_2_3": [
+                2,
+                2
+              ],
+              "h_affine": [
+                2,
+                1
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                108,
+                144
+              ],
+              "smooth_divisor": 36
+            },
+            {
+              "divisor_exponents_2_3": [
+                4,
+                1
+              ],
+              "h_affine": [
+                2,
+                1
+              ],
+              "kind": "3h,3h+1 with h odd",
+              "offsets": [
+                144,
+                192
+              ],
+              "smooth_divisor": 48
+            },
+            {
+              "divisor_exponents_2_3": [
+                1,
+                1
+              ],
+              "h_affine": [
+                3,
+                2
+              ],
+              "kind": "16h,16h+1",
+              "offsets": [
+                192,
+                198
+              ],
+              "smooth_divisor": 6
+            },
+            {
+              "divisor_exponents_2_3": [
+                1,
+                2
+              ],
+              "h_affine": [
+                4,
+                3
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                198,
+                216
+              ],
+              "smooth_divisor": 18
+            },
+            {
+              "divisor_exponents_2_3": [
+                3,
+                2
+              ],
+              "h_affine": [
+                1,
+                1
+              ],
+              "kind": "4h-1,4h",
+              "offsets": [
+                216,
+                288
+              ],
+              "smooth_divisor": 72
+            }
+          ],
+          "cylinders": [
+            {
+              "clock": 4,
+              "common_affine_endpoint": [
+                9,
+                2
+              ],
+              "left_base": 2,
+              "left_word": [
+                0,
+                1,
+                0,
+                1
+              ],
+              "modulus": 16,
+              "odd_inputs_per_arm": 2,
+              "right_base": 3,
+              "right_word": [
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "clock": 3,
+              "common_affine_endpoint": [
+                3,
+                2
+              ],
+              "left_base": 4,
+              "left_word": [
+                0,
+                0,
+                1
+              ],
+              "modulus": 8,
+              "odd_inputs_per_arm": 1,
+              "right_base": 5,
+              "right_word": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "clock": 7,
+              "common_affine_endpoint": [
+                27,
+                11
+              ],
+              "left_base": 49,
+              "left_word": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "modulus": 128,
+              "odd_inputs_per_arm": 3,
+              "right_base": 50,
+              "right_word": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "clock": 5,
+              "common_affine_endpoint": [
+                9,
+                2
+              ],
+              "left_base": 5,
+              "left_word": [
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "modulus": 32,
+              "odd_inputs_per_arm": 2,
+              "right_base": 6,
+              "right_word": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "ordinary_affine_identities": [
+            {
+              "clock": 1,
+              "input": [
+                2,
+                -1
+              ],
+              "odd_inputs": 1,
+              "output": [
+                3,
+                -1
+              ],
+              "word": [
+                1
+              ]
+            },
+            {
+              "clock": 2,
+              "input": [
+                4,
+                -1
+              ],
+              "odd_inputs": 2,
+              "output": [
+                9,
+                -1
+              ],
+              "word": [
+                1,
+                1
+              ]
+            },
+            {
+              "clock": 3,
+              "input": [
+                8,
+                -1
+              ],
+              "odd_inputs": 3,
+              "output": [
+                27,
+                -1
+              ],
+              "word": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "clock": 3,
+              "input": [
+                24,
+                -3
+              ],
+              "odd_inputs": 1,
+              "output": [
+                9,
+                -1
+              ],
+              "word": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "clock": 2,
+              "input": [
+                4,
+                1
+              ],
+              "odd_inputs": 1,
+              "output": [
+                3,
+                1
+              ],
+              "word": [
+                1,
+                0
+              ]
+            },
+            {
+              "clock": 4,
+              "input": [
+                48,
+                3
+              ],
+              "odd_inputs": 2,
+              "output": [
+                27,
+                2
+              ],
+              "word": [
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "clock": 1,
+              "input": [
+                18,
+                1
+              ],
+              "odd_inputs": 1,
+              "output": [
+                27,
+                2
+              ],
+              "word": [
+                1
+              ]
+            },
+            {
+              "clock": 2,
+              "input": [
+                20,
+                1
+              ],
+              "odd_inputs": 1,
+              "output": [
+                15,
+                1
+              ],
+              "word": [
+                1,
+                0
+              ]
+            }
+          ],
+          "residue_coverage": {
+            "minus_mod16": {
+              "1": 5,
+              "11": 2,
+              "13": 2,
+              "15": 3,
+              "3": 4,
+              "5": 4,
+              "7": 5,
+              "9": 3
+            },
+            "plus_mod128": {
+              "1": 28,
+              "101": 8,
+              "103": 5,
+              "105": 2,
+              "107": 13,
+              "109": 6,
+              "11": 21,
+              "111": 7,
+              "113": 16,
+              "115": 23,
+              "117": 4,
+              "119": 9,
+              "121": 14,
+              "123": 17,
+              "125": 2,
+              "127": 3,
+              "13": 6,
+              "15": 7,
+              "17": 8,
+              "19": 31,
+              "21": 4,
+              "23": 9,
+              "25": 6,
+              "27": 25,
+              "29": 2,
+              "3": 27,
+              "31": 3,
+              "33": 20,
+              "35": 3,
+              "37": 8,
+              "39": 5,
+              "41": 18,
+              "43": 29,
+              "45": 6,
+              "47": 7,
+              "49": 32,
+              "5": 8,
+              "51": 7,
+              "53": 4,
+              "55": 9,
+              "57": 30,
+              "59": 33,
+              "61": 2,
+              "63": 3,
+              "65": 12,
+              "67": 11,
+              "69": 8,
+              "7": 5,
+              "71": 5,
+              "73": 10,
+              "75": 5,
+              "77": 6,
+              "79": 7,
+              "81": 24,
+              "83": 15,
+              "85": 4,
+              "87": 9,
+              "89": 22,
+              "9": 26,
+              "91": 9,
+              "93": 2,
+              "95": 3,
+              "97": 4,
+              "99": 19
+            }
+          }
+        },
+        "finite_reconstruction_sha256": "910e57bc8bed1d1fff97f60619f3884a6175c2ed69cbaf302fa34af73d0dfff9",
+        "five_ray_disjointness": "For odd x, 3x is odd and 4x has v2=2; each parameter map is injective.",
+        "note_sha256": "d5229d794b97ba4c7663f105388ed597251d34fd678cc2189c39ebf0c7b43c74",
+        "scalar_kernel_checks": {
+          "full_norm_cancellation_checked": true,
+          "negative_control_odd_norm_missing_denominator": {
+            "exact_kernel": "8",
+            "incorrect_one_denominator_bound": "3",
+            "rejected": true,
+            "z": "3/4"
+          },
+          "rational_cases": 2079
+        },
+        "scope": "Exact finite path data and rational scalar-kernel replay only; infinite proofs are in ORDINARY_DIRICHLET_COERCIVITY.md; no all-level LP or Collatz proof claimed.",
+        "source_hashes": {
+          "research/upper-bit-mergers/THREE_RAY_DENSITY.md": "567ecc84a34d41d01ca9bf63a4b4074a92b350c1cbbdc77060927fb1ed72f3b5",
+          "research/upper-bit-mergers/THREE_RAY_VARIATION.md": "f7f2d0b5803e9ec8c302402e5b7a53fbc06c2ec1cdf92f8d4e816a1c3de5c0d0",
+          "research/upper-bit-mergers/TRIPLING_VARIATION.md": "1a3aef543f1ec76db6b585041108eaa105f1d4ceb0c04fe421f1b15ed47d21bb"
+        },
+        "source_revision": "7d04c4dd756cfe495eb3eee78eba35a99085cd2a",
+        "status": "PASS"
+      },
+      "payload_sha256": "c6bbce9a6e294f0e88d6a0fc7c708f6cff681e3ac9b17f8ae8beef0ae02ab2e7",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_ordinary_dirichlet.py",
+            "--source-root",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/archive/gemini-followups-20261120/pinned-pr146",
+            "--output",
+            "/tmp/collatz-dirichlet-checks-to03jnbb/ordinary_dirichlet.json"
+          ],
+          "exit_code": 0,
+          "optimized": false,
+          "stderr": "",
+          "stdout_sha256": "34c60078c5760efe78bc5e4bc47b174c7a8ac0be7748e5e0b99f2aea6e4880b6"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_ordinary_dirichlet.py",
+            "--source-root",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/archive/gemini-followups-20261120/pinned-pr146",
+            "--output",
+            "/tmp/collatz-dirichlet-checks-to03jnbb/ordinary_dirichlet-optimized.json"
+          ],
+          "exit_code": 0,
+          "optimized": true,
+          "stderr": "",
+          "stdout_sha256": "34c60078c5760efe78bc5e4bc47b174c7a8ac0be7748e5e0b99f2aea6e4880b6"
+        }
+      ]
+    },
+    {
+      "name": "farkas_and_ruelle",
+      "normal_optimized_payloads_identical": true,
+      "payload": {
+        "arithmetic": {
+          "decimal_vector_scale": 10000000000,
+          "fixed_integer_scale": 100000000000000000000000000000000000000000000000000,
+          "floating_point_used": false,
+          "log_terms": 64,
+          "outward_rounding": true,
+          "positive_exp_terms": 80,
+          "solver_used": false
+        },
+        "audit_note_sha256": "c907cfc33d842457b0173b73814f7b91644954c13398d37ef7c38ed7bc2509c7",
+        "averaged_matrix": {
+          "column_incidence_cases": [
+            {
+              "every_target_column_count": 1,
+              "gap": 1,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 2,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 3,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 4,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 5,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 6,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 7,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 8,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 9,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 10,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 11,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 12,
+              "r": 1,
+              "unit_states": 2
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 1,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 2,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 3,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 4,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 5,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 6,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 7,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 8,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 9,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 10,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 11,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 12,
+              "r": 2,
+              "unit_states": 6
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 1,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 2,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 3,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 4,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 5,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 6,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 7,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 8,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 9,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 10,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 11,
+              "r": 4,
+              "unit_states": 54
+            },
+            {
+              "every_target_column_count": 1,
+              "gap": 12,
+              "r": 4,
+              "unit_states": 54
+            }
+          ],
+          "exact_spectral_formula": "rho(L_r,G(s)) = 3^(s-1) sum_{g=1}^G 2^(-g*s)",
+          "global_monotonicity_negative_control": {
+            "G": 4,
+            "rho_at_s1": "15/16",
+            "rho_at_s3": "5265/4096",
+            "rho_s3_greater_than_rho_s1": true
+          },
+          "infinite_gap_formula": "rho(L_r,infinity(s)) = 3^(s-1)/(2^s-1)",
+          "infinite_gap_values": {
+            "s1": "1",
+            "s3": "9/7"
+          },
+          "modulus_independent": true,
+          "ordinary_source_7_gap2": {
+            "averaged_model_from_source_class_1_has_two_unit_lifts": true,
+            "endpoint_excluded_by_unit_restriction": true,
+            "inverse_endpoint": 9
+          }
+        },
+        "certificate_file_sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c",
+        "checker_sha256": "5f26580b11b45b6ed3a1bcecce2b2c66bbaabe6f6c8a1901d6bbad7fb51f5829",
+        "point_certificates": [
+          {
+            "all_u_nonnegative": true,
+            "coefficient_integer_matrix_sha256": "478bf2dba2c245aaaf5576c9c5f78f4f5be8f03742e7b30a1491f9e8f481291c",
+            "minimum_residual_exact_integer_interval": [
+              999999999412877118114405809505481964108404436137420362098002,
+              999999999412877118114405809505481964108404474706839982385162
+            ],
+            "minimum_residual_lower": "0.999999999412877118",
+            "minimum_residual_upper": "0.999999999412877119",
+            "modulus": 81,
+            "name": "r4_s0840",
+            "negative_control_same_dual_rejected_at_s1": true,
+            "normalization_multiplier_exact": "-1",
+            "r": 4,
+            "residual_coordinates": 81,
+            "residual_interval_denominator": 1000000000000000000000000000000000000000000000000000000000000,
+            "s_exact": "21/25",
+            "scope": "One supplied rational exponent only; no all-s interval or r8 claim."
+          },
+          {
+            "all_u_nonnegative": true,
+            "coefficient_integer_matrix_sha256": "9daee54cc513a6d8ce29374a01bff9182835b95d431b111e6a23b55799cce3e1",
+            "minimum_residual_exact_integer_interval": [
+              999999999270272552992849266896634583843519819377309006968709,
+              999999999270272552992849266896634583843519829436357288659437
+            ],
+            "minimum_residual_lower": "0.999999999270272552",
+            "minimum_residual_upper": "0.999999999270272553",
+            "modulus": 729,
+            "name": "r6_s0913",
+            "negative_control_same_dual_rejected_at_s1": true,
+            "normalization_multiplier_exact": "-1",
+            "r": 6,
+            "residual_coordinates": 729,
+            "residual_interval_denominator": 1000000000000000000000000000000000000000000000000000000000000,
+            "s_exact": "913/1000",
+            "scope": "One supplied rational exponent only; no all-s interval or r8 claim."
+          }
+        ],
+        "scope": "Two supplied point certificates rigorously repaired; exact v2 averaged-matrix structure and negative controls checked. No threshold scan, all-s LP theorem, or Collatz proof.",
+        "status": "PASS",
+        "uniform_primal_negative_controls": [
+          {
+            "all_equalities_exact": true,
+            "inequality_residual": "-1/162",
+            "r": 4,
+            "s": "1",
+            "uniform_entry": "1/81"
+          },
+          {
+            "all_equalities_exact": true,
+            "inequality_residual": "-1/1458",
+            "r": 6,
+            "s": "1",
+            "uniform_entry": "1/729"
+          }
+        ]
+      },
+      "payload_sha256": "1595c4898aa573908bee842d8a1100bb2bdc6fab8166400fb4d4e9f5562f762f",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py",
+            "--certificates",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/archive/gemini-followups-20261120/source/collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/farkas_certificates_r4_r6.json",
+            "--output",
+            "/tmp/collatz-dirichlet-checks-to03jnbb/farkas_and_ruelle.json"
+          ],
+          "exit_code": 0,
+          "optimized": false,
+          "stderr": "",
+          "stdout_sha256": "bfd053a658630f459f275e48dbe10da57b7d67cee16cbc67e5d2b245d34db2d6"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py",
+            "--certificates",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/archive/gemini-followups-20261120/source/collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/farkas_certificates_r4_r6.json",
+            "--output",
+            "/tmp/collatz-dirichlet-checks-to03jnbb/farkas_and_ruelle-optimized.json"
+          ],
+          "exit_code": 0,
+          "optimized": true,
+          "stderr": "",
+          "stdout_sha256": "bfd053a658630f459f275e48dbe10da57b7d67cee16cbc67e5d2b245d34db2d6"
+        }
+      ]
+    },
+    {
+      "name": "mahler_and_integrality",
+      "normal_optimized_payloads_identical": true,
+      "payload": {
+        "coefficient_equivalence_cases": 129,
+        "height_and_cycles": {
+          "height_sign_counterexamples": [
+            "5",
+            "1/5"
+          ],
+          "positive_loop_score": 1,
+          "positive_score_product": "71515/60888923",
+          "positive_score_root": "60888923/71515",
+          "repetitions_checked": 7,
+          "simple_product": "13/211",
+          "simple_root": "211/13"
+        },
+        "parseval_redundancy": {
+          "coefficient_cutoff": 1600,
+          "exact_residual_comparisons": 3,
+          "sparse_control_w10": -1
+        },
+        "periodic_residue_checks": {
+          "largest_modulus": 10935,
+          "number_of_moduli": 133
+        },
+        "positive_inverse_replays": {
+          "depth": 5,
+          "gap_cap": 8,
+          "legal_letters_replayed": 1043,
+          "roots": [
+            1,
+            5,
+            7,
+            11,
+            13
+          ]
+        },
+        "scope": "Exact finite checks and counterexamples; no global Collatz closure",
+        "status": "PASS"
+      },
+      "payload_sha256": "35e1e019c1ccf997034c1017ad522559f33e3b500e08e2350813bb0291594717",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_mahler_and_integrality.py"
+          ],
+          "exit_code": 0,
+          "optimized": false,
+          "stderr": "",
+          "stdout_sha256": "35e1e019c1ccf997034c1017ad522559f33e3b500e08e2350813bb0291594717"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_mahler_and_integrality.py"
+          ],
+          "exit_code": 0,
+          "optimized": true,
+          "stderr": "",
+          "stdout_sha256": "35e1e019c1ccf997034c1017ad522559f33e3b500e08e2350813bb0291594717"
+        }
+      ]
+    },
+    {
+      "name": "routes_bundle",
+      "normal_optimized_payloads_identical": true,
+      "payload": {
+        "checker_sha256": "3b96487945b5c45e7448c62828c723138580aad92331d20df9cdcb4714c77e5c",
+        "denominator_and_operator_controls": {
+          "cycles": [
+            {
+              "denominator": 1,
+              "orbit": [
+                "1",
+                "2"
+              ],
+              "primitive_period": 2,
+              "source": "1"
+            },
+            {
+              "denominator": 1,
+              "orbit": [
+                "-1"
+              ],
+              "primitive_period": 1,
+              "source": "-1"
+            },
+            {
+              "denominator": 1,
+              "orbit": [
+                "-5",
+                "-7",
+                "-10"
+              ],
+              "primitive_period": 3,
+              "source": "-5"
+            },
+            {
+              "denominator": 1,
+              "orbit": [
+                "-17",
+                "-25",
+                "-37",
+                "-55",
+                "-82",
+                "-41",
+                "-61",
+                "-91",
+                "-136",
+                "-68",
+                "-34"
+              ],
+              "primitive_period": 11,
+              "source": "-17"
+            },
+            {
+              "denominator": 11,
+              "orbit": [
+                "-19/11",
+                "-23/11",
+                "-29/11",
+                "-38/11"
+              ],
+              "primitive_period": 4,
+              "source": "-19/11"
+            },
+            {
+              "denominator": 5,
+              "orbit": [
+                "23/5",
+                "37/5",
+                "58/5",
+                "29/5",
+                "46/5"
+              ],
+              "primitive_period": 5,
+              "source": "23/5"
+            },
+            {
+              "denominator": 5,
+              "orbit": [
+                "19/5",
+                "31/5",
+                "49/5",
+                "76/5",
+                "38/5"
+              ],
+              "primitive_period": 5,
+              "source": "19/5"
+            },
+            {
+              "denominator": 13,
+              "orbit": [
+                "211/13",
+                "323/13",
+                "491/13",
+                "743/13",
+                "1121/13",
+                "1688/13",
+                "844/13",
+                "422/13"
+              ],
+              "primitive_period": 8,
+              "source": "211/13"
+            },
+            {
+              "denominator": 13,
+              "orbit": [
+                "259/13",
+                "395/13",
+                "599/13",
+                "905/13",
+                "1364/13",
+                "682/13",
+                "341/13",
+                "518/13"
+              ],
+              "primitive_period": 8,
+              "source": "259/13"
+            }
+          ],
+          "galerkin": {
+            "1": {
+              "all_path_counts": 1,
+              "columns_checked": 2,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "2": {
+              "all_path_counts": 1,
+              "columns_checked": 4,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "3": {
+              "all_path_counts": 1,
+              "columns_checked": 8,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "4": {
+              "all_path_counts": 1,
+              "columns_checked": 16,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "5": {
+              "all_path_counts": 1,
+              "columns_checked": 32,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "6": {
+              "all_path_counts": 1,
+              "columns_checked": 64,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "7": {
+              "all_path_counts": 1,
+              "columns_checked": 128,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "8": {
+              "all_path_counts": 1,
+              "columns_checked": 256,
+              "nonstationary_eigenvalues": "exactly zero"
+            },
+            "9": {
+              "all_path_counts": 1,
+              "columns_checked": 512,
+              "nonstationary_eigenvalues": "exactly zero"
+            }
+          },
+          "haar_pf_dual_of_cycle": {
+            "1": "1/4",
+            "1/3": "1/4",
+            "2": "1/4",
+            "4": "1/4"
+          },
+          "sector_conjugacy_control": true
+        },
+        "exact_Bellman_certificate": {
+          "H_in_increasing_unit_order": [
+            8,
+            6,
+            7,
+            6,
+            10,
+            5,
+            4,
+            8,
+            5,
+            8,
+            12,
+            5,
+            7,
+            2,
+            7,
+            12,
+            13,
+            3,
+            6,
+            6,
+            10,
+            10,
+            12,
+            9,
+            7,
+            5,
+            6,
+            8,
+            10,
+            5,
+            10,
+            6,
+            8,
+            11,
+            12,
+            7,
+            10,
+            4,
+            12,
+            6,
+            12,
+            8,
+            8,
+            7,
+            6,
+            10,
+            11,
+            3,
+            11,
+            5,
+            3,
+            11,
+            15,
+            4,
+            6,
+            7,
+            9,
+            8,
+            11,
+            6,
+            5,
+            8,
+            4,
+            7,
+            12,
+            6,
+            9,
+            4,
+            4,
+            10,
+            12,
+            0,
+            7,
+            8,
+            11,
+            8,
+            13,
+            10,
+            4,
+            6,
+            3,
+            10,
+            8,
+            4,
+            10,
+            6,
+            7,
+            9,
+            14,
+            4,
+            8,
+            3,
+            11,
+            9,
+            10,
+            6,
+            8,
+            9,
+            9,
+            12,
+            8,
+            1,
+            9,
+            4,
+            5,
+            13,
+            13,
+            0,
+            9,
+            4,
+            8,
+            7,
+            9,
+            7,
+            6,
+            6,
+            2,
+            9,
+            10,
+            4,
+            8,
+            3,
+            6,
+            12,
+            11,
+            2,
+            5,
+            7,
+            8,
+            10,
+            14,
+            8,
+            6,
+            7,
+            2,
+            11,
+            9,
+            2,
+            8,
+            4,
+            6,
+            10,
+            14,
+            6,
+            9,
+            5,
+            10,
+            8,
+            13,
+            9,
+            6,
+            8,
+            8,
+            11,
+            10,
+            2,
+            10,
+            2,
+            4,
+            12,
+            14,
+            1
+          ],
+          "H_scale": 2,
+          "H_span": 15,
+          "P": 5,
+          "all_Bellman_equalities_exact": true,
+          "alpha": "5/2",
+          "finite_integration_controls": {
+            "maximum_clock": 19,
+            "unit_tails_t1_to_t6": 728
+          },
+          "modulus": 243,
+          "policy_in_increasing_unit_order": "EOEEEOEOEEEOEOEEEOEOEEEOEEEEEOEEEEEOEOEEEOEOEEEOEOEEEOEOEEEOEEEEEOEEEEEOEOEEEOEEEEEOEOEEEOEOEEEOEOEEEOEOEEEOEOEEEOEEEEEOEOEEEOEOEEEOEEEEEOEEEEEOEOEEEOEEEEEOEOEEEO",
+          "states": 162,
+          "terminal_adjusted_clock_bound": "k <= floor((5t+23)/2)"
+        },
+        "ordinary_variation_controls": {
+          "all_17_affine_edges_exact": true,
+          "dyadic_multiplicity": "proved in TRIPLING_VARIATION_REVIEW.md, not inferred from finite tests",
+          "minus_residues_checked": 8,
+          "plus_residues_checked": 64,
+          "sum_v3_edge_scales": 19,
+          "whole_cylinder_controls": [
+            {
+              "clock": 4,
+              "endpoint_coefficients": [
+                9,
+                2
+              ],
+              "modulus": 16,
+              "residue": 3
+            },
+            {
+              "clock": 3,
+              "endpoint_coefficients": [
+                3,
+                2
+              ],
+              "modulus": 8,
+              "residue": 5
+            },
+            {
+              "clock": 7,
+              "endpoint_coefficients": [
+                27,
+                11
+              ],
+              "modulus": 128,
+              "residue": 49
+            },
+            {
+              "clock": 5,
+              "endpoint_coefficients": [
+                9,
+                2
+              ],
+              "modulus": 32,
+              "residue": 5
+            }
+          ]
+        },
+        "scope": "Exact finite controls and a complete finite Bellman certificate; no Collatz resolution",
+        "sieve": {
+          "advertised_integer_counts_match": true,
+          "coefficient_control": {
+            "coefficient_crosses": true,
+            "source": 1,
+            "strict_descent": false
+          },
+          "counts": {
+            "sibling_pairs_2n_2n1": {
+              "10": 527,
+              "11": 1067,
+              "12": 2157,
+              "3": 3,
+              "4": 7,
+              "5": 15,
+              "6": 31,
+              "7": 63,
+              "8": 128,
+              "9": 260
+            },
+            "stopping_time_drop_sieve": {
+              "10": 448,
+              "11": 896,
+              "12": 1822,
+              "13": 3729,
+              "14": 7458,
+              "3": 2,
+              "4": 5,
+              "5": 12,
+              "6": 24,
+              "7": 51,
+              "8": 109,
+              "9": 218
+            },
+            "tripling_pairs_n_3n": {
+              "10": 91,
+              "11": 194,
+              "12": 409,
+              "13": 855,
+              "3": 0,
+              "4": 0,
+              "5": 1,
+              "6": 3,
+              "7": 8,
+              "8": 19,
+              "9": 42
+            }
+          }
+        },
+        "source_sha256": {
+          "BARRIER_AUDIT.md": "b4506b95d17d060c38f9bab49358f20721386003d6ba58d9beb407700de07714",
+          "results/verified_computations.json": "9cdb9cb872c24c5485e6ffe3602b6f01ffc54f7eaee7449f3761c8b767a379ba",
+          "route1_tripling_and_sibling_mergers/PROPOSAL.md": "b7557dd7bde38b6e6f6b1db66b6be1fd7d491d4301903267970336fc4fc5cb24",
+          "route1_tripling_and_sibling_mergers/algebraic_coalescence_sieve.py": "dac2da36eec6cba602bc327342ea01786dce82d800c848fb2a5b52b2f4fa6d15",
+          "route1_tripling_and_sibling_mergers/lean4_x_min_exclusions_skeleton.lean": "3a1a7d32de7b0ad039ffc3e4e96468b42e91ebc4d50fad8d85e7204b3b60b4cd",
+          "route2_inverse_compiler_and_bellman/PROPOSAL.md": "b1b8e6269a4b9455427347b58fdf15424d2e92f9aa554c16ceb1d38a25df030a",
+          "route2_inverse_compiler_and_bellman/bellman_potential_certifier.py": "fc77ad668ca60f685e8306b3b5679b118ded9211771edbdb364e05915afb24c7",
+          "route4_adelic_spectral_operators/PROPOSAL.md": "0d68c8d6f8a78142dc06b1524ecbaa41838bfd9f709c2cecbf8626af3e4d7f16",
+          "route4_adelic_spectral_operators/transfer_operator_spectrum.py": "3df92cf64d0183b128305b9fd7a3b55607b87b355257cb1be8274bea75f7e1eb",
+          "route5_agentic_pr_roadmap/PR_BLUEPRINTS.md": "07ac5c912e1642da57158090e52b38b24302ab28a773924ec4015d4634820b78",
+          "route5_agentic_pr_roadmap/barrier_falsification_harness.py": "e9128b3d6fdb2f6824ed9280c87964dda63d55ba3d3c1e5431d60f47a71954db"
+        },
+        "status": "PASS"
+      },
+      "payload_sha256": "8fde99b82a645392d22cf83d3eedc2ae73cfd98fe83bcaf7c7db1abddf310b74",
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_routes_bundle.py",
+            "--bundle",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/archive/gemini-followups-20261120/source/collatz_routes_bundle",
+            "--output",
+            "/tmp/collatz-dirichlet-checks-to03jnbb/routes_bundle.json"
+          ],
+          "exit_code": 0,
+          "optimized": false,
+          "stderr": "",
+          "stdout_sha256": "8fde99b82a645392d22cf83d3eedc2ae73cfd98fe83bcaf7c7db1abddf310b74"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-X",
+            "utf8",
+            "-B",
+            "-O",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_routes_bundle.py",
+            "--bundle",
+            "/workspace/scratch/957bb0caa6f2/collatz-analytic/archive/gemini-followups-20261120/source/collatz_routes_bundle",
+            "--output",
+            "/tmp/collatz-dirichlet-checks-to03jnbb/routes_bundle-optimized.json"
+          ],
+          "exit_code": 0,
+          "optimized": true,
+          "stderr": "",
+          "stdout_sha256": "8fde99b82a645392d22cf83d3eedc2ae73cfd98fe83bcaf7c7db1abddf310b74"
+        }
+      ]
+    }
+  ],
+  "collatz_proved": false,
+  "dependency_commit": "7d04c4dd756cfe495eb3eee78eba35a99085cd2a",
+  "dependency_files_authenticated": 3,
+  "expected_rejections": 2,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rejection_controls": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py",
+        "--certificates",
+        "/tmp/collatz-dirichlet-checks-to03jnbb/damaged-normalization.json"
+      ],
+      "exit_code": 1,
+      "name": "broken_Farkas_normalization",
+      "optimized": false,
+      "rejected": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 280, in <module>\n    main()\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 245, in main\n    points = [check_point(name, data[name]) for name in sorted(data)]\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 147, in check_point\n    coefficients, u, w = coeffs(cert)\n                         ^^^^^^^^^^^^\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 100, in coeffs\n    require(all(v >= 0 for v in u) and w[-1] == -1, 'verification condition failed at source line 95')\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 23, in require\n    raise ValueError(message)\nValueError: verification condition failed at source line 95\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py",
+        "--certificates",
+        "/tmp/collatz-dirichlet-checks-to03jnbb/damaged-normalization.json"
+      ],
+      "exit_code": 1,
+      "name": "broken_Farkas_normalization",
+      "optimized": true,
+      "rejected": true,
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 280, in <module>\n    main()\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 245, in main\n    points = [check_point(name, data[name]) for name in sorted(data)]\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 147, in check_point\n    coefficients, u, w = coeffs(cert)\n                         ^^^^^^^^^^^^\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 100, in coeffs\n    require(all(v >= 0 for v in u) and w[-1] == -1, 'verification condition failed at source line 95')\n  File \"/workspace/scratch/957bb0caa6f2/collatz-analytic/research/gemini-dirichlet-global-20261120/check_farkas_and_ruelle.py\", line 23, in require\n    raise ValueError(message)\nValueError: verification condition failed at source line 95\n"
+    }
+  ],
+  "schema": "collatz-gemini-dirichlet-exact-replay/v1",
+  "scientific_packet_sha256": {
+    "DENOMINATOR_SECTORS.md": "08f474f9db7fd33cb1c7a676f636c4e723af8caa315e0869f4ac461b02765251",
+    "ENDPOINT_BOUNDARY.md": "033a47875fa6f84b2cca73f59e23635df99d244f18f79ad4ba6392ee291276d3",
+    "FARKAS_DIRICHLET_AUDIT.md": "c907cfc33d842457b0173b73814f7b91644954c13398d37ef7c38ed7bc2509c7",
+    "MAHLER_AND_INTEGRALITY_AUDIT.md": "639073c38d45a84fea359208a06606916c30044a6a4071aa4fe1faadd0b0ca27",
+    "ORDINARY_DIRICHLET_COERCIVITY.md": "d5229d794b97ba4c7663f105388ed597251d34fd678cc2189c39ebf0c7b43c74",
+    "README.md": "3814729a7a6f0dff783924a2e3c42c1341809e524600574b92d1e858d3aef010",
+    "ROUTES_BUNDLE_AUDIT.md": "d08f29a63321f3fb19e237d9d6010e4350ee7d48462f05916ab327031a673349",
+    "bellman-p5-certificate.json": "3ece7addaeb626cd836b6d79610f6b3b8e6a736f61babc20edd0ea1be380bbe3",
+    "check_farkas_and_ruelle.py": "5f26580b11b45b6ed3a1bcecce2b2c66bbaabe6f6c8a1901d6bbad7fb51f5829",
+    "check_mahler_and_integrality.py": "729dbb8b30eb3fb462c20c6e5735303068bf57712dccbce0fb540d0f73afe55f",
+    "check_ordinary_dirichlet.py": "f423e8b1d163402270cfac880dcc6af04eae6c4653dbb243649f29561b8d62d6",
+    "check_routes_bundle.py": "3b96487945b5c45e7448c62828c723138580aad92331d20df9cdcb4714c77e5c",
+    "replay_sources.py": "2083fea5e676b8bedb4ad0977f250055bdca6a1a48745b158debdb4428ffd1cd",
+    "run_checks.py": "befebea6d8a38f5ffa1935399d3f818f2279c05ae12d8bcbd1fae80c3fbe567f"
+  },
+  "scope": "Eight scoped exact replays and two rejection controls; written infinite proofs remain separate.",
+  "status": "PASS"
+}

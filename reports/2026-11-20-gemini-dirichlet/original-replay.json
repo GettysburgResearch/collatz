@@ -1,0 +1,956 @@
+{
+  "archived_files_authenticated": 30,
+  "collatz_proved": false,
+  "generated_receipt_comparisons": [
+    {
+      "bytes_identical": false,
+      "file": "verification_receipt_v2.json",
+      "generated_output": {
+        "file_sha256": {
+          "README.md": "08c382b291e3ae6cc7c3788a8d5c4f3c4140083fe48d63d9eb527f56458a8301",
+          "blueprint_1_mahler_generating_function/BLUEPRINT.md": "a21bd3408d9eaf050511199a1d89899a47d85a0198999c91938c3b378f3ee2dc",
+          "blueprint_1_mahler_generating_function/verify_mahler_functional.py": "ee1d09cb68e5acaae9f2940af67775025251f6e32749200a785b5a55e3de4251",
+          "blueprint_2_dirichlet_ruelle_singularity/BLUEPRINT.md": "fce0d7fb3a6cd4a35ca336eb98a3ffee51ca2b4dbb88f01ccbfc88c376628faf",
+          "blueprint_2_dirichlet_ruelle_singularity/verify_dirichlet_ruelle.py": "a8e2236eeeab6a272c8e9817f6c3ad0c1ad1d491a36213e30c476f953e775e0e",
+          "blueprint_3_krasikov_lagarias_exponent_crossing/BLUEPRINT.md": "da56c16b6dea7cae68666a60425eff4108bc1f2d69e6f29d8224d5842fbdfa40",
+          "blueprint_3_krasikov_lagarias_exponent_crossing/verify_exponent_crossing.py": "98d6494788bb54e5540d0c7291174e548825c89fb994b6f4709dc58ddabd8681",
+          "blueprint_4_adelic_w1_and_rational_cycle_separation/BLUEPRINT.md": "963356bd00e04bcd9358cc718e980c1e74f050a4324e8632ba406bbab428b0c3",
+          "blueprint_4_adelic_w1_and_rational_cycle_separation/verify_adelic_w1.py": "5b580483b6213e8487a05ad4d6e254361da91d52a21745ccb4016356ef0b0cf3",
+          "run_all_v2_verifiers.py": "d31283003ba0d535ad532fd28324222129cdcb9e2e688d0e0a14eb6f490c151a"
+        },
+        "non_claim_notice": "Verified local theorems, identities, and full-completion research blueprints; does NOT claim a completed proof of Collatz.",
+        "overall_status": "PASS",
+        "package": "collatz_full_completion_blueprints_v2_2026-11-20",
+        "verifier_results": [
+          {
+            "output": {
+              "blueprint": "blueprint_1_mahler_generating_function",
+              "boolean_parseval_error": 0.0,
+              "mahler_max_residual_f_eq_1": 2.7336071744532853e-16,
+              "negative_control_prime_residual": 0.06034,
+              "odd_period_transitivity_verified_up_to": 99,
+              "periodic_exclusion_verified": true,
+              "status": "PASS"
+            },
+            "script": "blueprint_1_mahler_generating_function/verify_mahler_functional.py",
+            "status": "PASS"
+          },
+          {
+            "output": {
+              "blueprint": "blueprint_2_dirichlet_ruelle_singularity",
+              "dirichlet_identity_err_s2": 1.6653345369377348e-16,
+              "dirichlet_identity_err_s3": 8.326672684688674e-17,
+              "forced_mod3_bias_s084": 0.313959,
+              "forced_mod3_bias_s090": 0.322212,
+              "forced_mod3_bias_s100": 0.333333,
+              "negative_control_passed": true,
+              "rho_L_084": 1.06171,
+              "rho_L_095": 1.015751,
+              "rho_L_100": 1.0,
+              "rho_L_110": 0.976019,
+              "ruelle_modulus": 27,
+              "status": "PASS"
+            },
+            "script": "blueprint_2_dirichlet_ruelle_singularity/verify_dirichlet_ruelle.py",
+            "status": "PASS"
+          },
+          {
+            "output": {
+              "blueprint": "blueprint_3_krasikov_lagarias_exponent_crossing",
+              "external_predecessor_ceiling": 0.901,
+              "kl_2003_published_minimax_floor": 0.84,
+              "negative_control_even_only_subpolynomial": true,
+              "pr146_bridge_identity_T2_20u1_verified_range": "1..500",
+              "repo_native_horizon_ceiling": 0.95,
+              "status": "PASS",
+              "syracuse_ideal_exponent_maxg10": 0.996541,
+              "syracuse_ideal_exponent_maxg4": 0.645543,
+              "syracuse_ideal_exponent_maxg6": 0.935516
+            },
+            "script": "blueprint_3_krasikov_lagarias_exponent_crossing/verify_exponent_crossing.py",
+            "status": "PASS"
+          },
+          {
+            "output": {
+              "best_witness_in_range": null,
+              "blueprint": "blueprint_4_adelic_w1_and_rational_cycle_separation",
+              "corridor_squeeze_factor": 4.5465,
+              "delta_65_41": 0.016537,
+              "delta_8_5": 0.075187,
+              "max_8k_minus_5A_from_1_in_range": 0,
+              "negative_control_negative_ghost_separated": true,
+              "positivity_ceiling_verified_up_to": 5000,
+              "rational_cycle_W_inf_witness_k17_A27": {
+                "8k_minus_5A_per_period": 1,
+                "A": 27,
+                "D_red": 71515,
+                "H_denom_bits": 16.126,
+                "g_word": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "k": 17,
+                "mean_gap": 1.588235,
+                "root": "60888923/71515"
+              },
+              "status": "PASS"
+            },
+            "script": "blueprint_4_adelic_w1_and_rational_cycle_separation/verify_adelic_w1.py",
+            "status": "PASS"
+          }
+        ]
+      },
+      "generated_sha256": "fb8994c993dd17849ae79f145d71403ad12a3376664eac682eab1375fef1b1f1",
+      "json_identical": false,
+      "original_sha256": "d74b102e4c5c6a90ab266f6200511db8bb8d0d464ddef8a73ebaee809bc74581",
+      "package": "collatz_full_completion_blueprints_v2_2026-11-20"
+    },
+    {
+      "bytes_identical": true,
+      "file": "verification_receipt_v3.json",
+      "generated_output": {
+        "certificate_file_sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c",
+        "certificates": [
+          {
+            "certified_infeasible": true,
+            "independent_min_lhs_margin": 1.0,
+            "independent_rhs": -1.0,
+            "modulus": 81,
+            "r": 4,
+            "s": 0.84,
+            "u_nnz": 19,
+            "w_norm_l2": 317893.7854
+          },
+          {
+            "certified_infeasible": true,
+            "independent_min_lhs_margin": 1.0,
+            "independent_rhs": -1.0,
+            "modulus": 729,
+            "r": 6,
+            "s": 0.913,
+            "u_nnz": 147,
+            "w_norm_l2": 156664.5609
+          }
+        ],
+        "negative_control_s1_uniform_feasible": {
+          "s": 1.0,
+          "uniform_eq_err": 2.2204743399705254e-15,
+          "uniform_ub_max": -0.006172839506172839
+        },
+        "non_claim_notice": "Proves exact Farkas-dual x3-defect singularity & PR #146 polynomial amplification; does NOT claim an unconditional Collatz proof.",
+        "package": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20",
+        "status": "PASS",
+        "verified_r8_boundary_crossover": {
+          "exceeds_repo_19_20_native_horizon": true,
+          "modulus": 6561,
+          "r": 8,
+          "s_crit_x3": 0.950131
+        }
+      },
+      "generated_sha256": "92b406bd0a15df3abb97fd7da06537ed266d5043188327907a505106a58b081c",
+      "json_identical": true,
+      "original_sha256": "92b406bd0a15df3abb97fd7da06537ed266d5043188327907a505106a58b081c",
+      "package": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20"
+    },
+    {
+      "bytes_identical": true,
+      "file": "farkas_certificates_r4_r6.json",
+      "generated_sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c",
+      "json_identical": true,
+      "original_sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c",
+      "package": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20"
+    }
+  ],
+  "leaf_scripts_reported": 10,
+  "original_scripts_succeeded": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runs": [
+    {
+      "exit_code": 0,
+      "output": {
+        "sibling_pairs_2n_2n1": {
+          "10": {
+            "box_dim_est": 0.89571,
+            "coalesced": 527,
+            "coalesced_fraction": 0.514648,
+            "survivors": 497,
+            "total_classes": 1024
+          },
+          "11": {
+            "box_dim_est": 0.90346,
+            "coalesced": 1067,
+            "coalesced_fraction": 0.520996,
+            "survivors": 981,
+            "total_classes": 2048
+          },
+          "12": {
+            "box_dim_est": 0.91009,
+            "coalesced": 2157,
+            "coalesced_fraction": 0.526611,
+            "survivors": 1939,
+            "total_classes": 4096
+          },
+          "3": {
+            "box_dim_est": 0.77398,
+            "coalesced": 3,
+            "coalesced_fraction": 0.375,
+            "survivors": 5,
+            "total_classes": 8
+          },
+          "4": {
+            "box_dim_est": 0.79248,
+            "coalesced": 7,
+            "coalesced_fraction": 0.4375,
+            "survivors": 9,
+            "total_classes": 16
+          },
+          "5": {
+            "box_dim_est": 0.81749,
+            "coalesced": 15,
+            "coalesced_fraction": 0.46875,
+            "survivors": 17,
+            "total_classes": 32
+          },
+          "6": {
+            "box_dim_est": 0.84073,
+            "coalesced": 31,
+            "coalesced_fraction": 0.484375,
+            "survivors": 33,
+            "total_classes": 64
+          },
+          "7": {
+            "box_dim_est": 0.86034,
+            "coalesced": 63,
+            "coalesced_fraction": 0.492188,
+            "survivors": 65,
+            "total_classes": 128
+          },
+          "8": {
+            "box_dim_est": 0.875,
+            "coalesced": 128,
+            "coalesced_fraction": 0.5,
+            "survivors": 128,
+            "total_classes": 256
+          },
+          "9": {
+            "box_dim_est": 0.88636,
+            "coalesced": 260,
+            "coalesced_fraction": 0.507812,
+            "survivors": 252,
+            "total_classes": 512
+          }
+        },
+        "stopping_time_drop_sieve": {
+          "10": {
+            "excluded_by_drop": 448,
+            "excluded_fraction": 0.875,
+            "odd_classes": 512,
+            "survivors": 64
+          },
+          "11": {
+            "excluded_by_drop": 896,
+            "excluded_fraction": 0.875,
+            "odd_classes": 1024,
+            "survivors": 128
+          },
+          "12": {
+            "excluded_by_drop": 1822,
+            "excluded_fraction": 0.889648,
+            "odd_classes": 2048,
+            "survivors": 226
+          },
+          "13": {
+            "excluded_by_drop": 3729,
+            "excluded_fraction": 0.9104,
+            "odd_classes": 4096,
+            "survivors": 367
+          },
+          "14": {
+            "excluded_by_drop": 7458,
+            "excluded_fraction": 0.9104,
+            "odd_classes": 8192,
+            "survivors": 734
+          },
+          "3": {
+            "excluded_by_drop": 2,
+            "excluded_fraction": 0.5,
+            "odd_classes": 4,
+            "survivors": 2
+          },
+          "4": {
+            "excluded_by_drop": 5,
+            "excluded_fraction": 0.625,
+            "odd_classes": 8,
+            "survivors": 3
+          },
+          "5": {
+            "excluded_by_drop": 12,
+            "excluded_fraction": 0.75,
+            "odd_classes": 16,
+            "survivors": 4
+          },
+          "6": {
+            "excluded_by_drop": 24,
+            "excluded_fraction": 0.75,
+            "odd_classes": 32,
+            "survivors": 8
+          },
+          "7": {
+            "excluded_by_drop": 51,
+            "excluded_fraction": 0.796875,
+            "odd_classes": 64,
+            "survivors": 13
+          },
+          "8": {
+            "excluded_by_drop": 109,
+            "excluded_fraction": 0.851562,
+            "odd_classes": 128,
+            "survivors": 19
+          },
+          "9": {
+            "excluded_by_drop": 218,
+            "excluded_fraction": 0.851562,
+            "odd_classes": 256,
+            "survivors": 38
+          }
+        },
+        "tripling_pairs_n_3n": {
+          "10": {
+            "box_dim_est": 0.96863,
+            "coalesced": 91,
+            "coalesced_fraction": 0.177734,
+            "odd_classes": 512,
+            "survivors": 421,
+            "witnesses": []
+          },
+          "11": {
+            "box_dim_est": 0.9697,
+            "coalesced": 194,
+            "coalesced_fraction": 0.189453,
+            "odd_classes": 1024,
+            "survivors": 830,
+            "witnesses": []
+          },
+          "12": {
+            "box_dim_est": 0.97078,
+            "coalesced": 409,
+            "coalesced_fraction": 0.199707,
+            "odd_classes": 2048,
+            "survivors": 1639,
+            "witnesses": []
+          },
+          "13": {
+            "box_dim_est": 0.97185,
+            "coalesced": 855,
+            "coalesced_fraction": 0.20874,
+            "odd_classes": 4096,
+            "survivors": 3241,
+            "witnesses": []
+          },
+          "3": {
+            "box_dim_est": 1.0,
+            "coalesced": 0,
+            "coalesced_fraction": 0.0,
+            "odd_classes": 4,
+            "survivors": 4,
+            "witnesses": []
+          },
+          "4": {
+            "box_dim_est": 1.0,
+            "coalesced": 0,
+            "coalesced_fraction": 0.0,
+            "odd_classes": 8,
+            "survivors": 8,
+            "witnesses": []
+          },
+          "5": {
+            "box_dim_est": 0.97672,
+            "coalesced": 1,
+            "coalesced_fraction": 0.0625,
+            "odd_classes": 16,
+            "survivors": 15,
+            "witnesses": [
+              {
+                "common_form": "(2^0*3^3)*m + 20",
+                "k_3n": 5,
+                "k_n": 5,
+                "mod": 32,
+                "r": 23
+              }
+            ]
+          },
+          "6": {
+            "box_dim_est": 0.9716,
+            "coalesced": 3,
+            "coalesced_fraction": 0.09375,
+            "odd_classes": 32,
+            "survivors": 29,
+            "witnesses": [
+              {
+                "common_form": "(2^0*3^4)*m + 20",
+                "k_3n": 6,
+                "k_n": 6,
+                "mod": 64,
+                "r": 15
+              },
+              {
+                "common_form": "(2^1*3^3)*m + 20",
+                "k_3n": 5,
+                "k_n": 5,
+                "mod": 64,
+                "r": 23
+              },
+              {
+                "common_form": "(2^1*3^3)*m + 47",
+                "k_3n": 5,
+                "k_n": 5,
+                "mod": 64,
+                "r": 55
+              }
+            ]
+          },
+          "7": {
+            "box_dim_est": 0.96789,
+            "coalesced": 8,
+            "coalesced_fraction": 0.125,
+            "odd_classes": 64,
+            "survivors": 56,
+            "witnesses": []
+          },
+          "8": {
+            "box_dim_est": 0.96688,
+            "coalesced": 19,
+            "coalesced_fraction": 0.148438,
+            "odd_classes": 128,
+            "survivors": 109,
+            "witnesses": []
+          },
+          "9": {
+            "box_dim_est": 0.96768,
+            "coalesced": 42,
+            "coalesced_fraction": 0.164062,
+            "odd_classes": 256,
+            "survivors": 214,
+            "witnesses": []
+          }
+        }
+      },
+      "package": "collatz_routes_bundle",
+      "script": "route1_tripling_and_sibling_mergers/algebraic_coalescence_sieve.py",
+      "stderr": ""
+    },
+    {
+      "exit_code": 0,
+      "output": {
+        "2": {
+          "P": 2,
+          "approx_rational": "3",
+          "certificate_verified": false,
+          "minimax_slope_upper": 3.0,
+          "num_unit_states": 6,
+          "potential_span": null
+        },
+        "3": {
+          "P": 3,
+          "approx_rational": "3",
+          "certificate_verified": true,
+          "minimax_slope_upper": 2.999997,
+          "num_unit_states": 18,
+          "potential_span": 5.0
+        },
+        "4": {
+          "P": 4,
+          "approx_rational": "8/3",
+          "certificate_verified": true,
+          "minimax_slope_upper": 2.666664,
+          "num_unit_states": 54,
+          "potential_span": 6.3333
+        },
+        "5": {
+          "P": 5,
+          "approx_rational": "5/2",
+          "certificate_verified": true,
+          "minimax_slope_upper": 2.499998,
+          "num_unit_states": 162,
+          "potential_span": 7.5
+        },
+        "6": {
+          "P": 6,
+          "approx_rational": "5/2",
+          "certificate_verified": true,
+          "minimax_slope_upper": 2.499998,
+          "num_unit_states": 486,
+          "potential_span": 9.0
+        }
+      },
+      "package": "collatz_routes_bundle",
+      "script": "route2_inverse_compiler_and_bellman/bellman_potential_certifier.py",
+      "stderr": ""
+    },
+    {
+      "exit_code": 0,
+      "output": {
+        "log2_3_convergents": [
+          {
+            "K": 2,
+            "K_over_L": 2.0,
+            "L": 1,
+            "abs_Klog2_minus_Llog3": "2.877e-01",
+            "sign_2K_minus_3L": "+"
+          },
+          {
+            "K": 3,
+            "K_over_L": 1.5,
+            "L": 2,
+            "abs_Klog2_minus_Llog3": "1.178e-01",
+            "sign_2K_minus_3L": "-"
+          },
+          {
+            "K": 8,
+            "K_over_L": 1.6,
+            "L": 5,
+            "abs_Klog2_minus_Llog3": "5.212e-02",
+            "sign_2K_minus_3L": "+"
+          },
+          {
+            "K": 19,
+            "K_over_L": 1.5833333,
+            "L": 12,
+            "abs_Klog2_minus_Llog3": "1.355e-02",
+            "sign_2K_minus_3L": "-"
+          },
+          {
+            "K": 65,
+            "K_over_L": 1.5853659,
+            "L": 41,
+            "abs_Klog2_minus_Llog3": "1.146e-02",
+            "sign_2K_minus_3L": "+"
+          },
+          {
+            "K": 84,
+            "K_over_L": 1.5849057,
+            "L": 53,
+            "abs_Klog2_minus_Llog3": "2.088e-03",
+            "sign_2K_minus_3L": "-"
+          },
+          {
+            "K": 485,
+            "K_over_L": 1.5849673,
+            "L": 306,
+            "abs_Klog2_minus_Llog3": "1.022e-03",
+            "sign_2K_minus_3L": "+"
+          },
+          {
+            "K": 1054,
+            "K_over_L": 1.5849624,
+            "L": 665,
+            "abs_Klog2_minus_Llog3": "4.365e-05",
+            "sign_2K_minus_3L": "-"
+          },
+          {
+            "K": 24727,
+            "K_over_L": 1.5849625,
+            "L": 15601,
+            "abs_Klog2_minus_Llog3": "1.819e-05",
+            "sign_2K_minus_3L": "+"
+          },
+          {
+            "K": 50508,
+            "K_over_L": 1.5849625,
+            "L": 31867,
+            "abs_Klog2_minus_Llog3": "7.265e-06",
+            "sign_2K_minus_3L": "-"
+          },
+          {
+            "K": 125743,
+            "K_over_L": 1.5849625,
+            "L": 79335,
+            "abs_Klog2_minus_Llog3": "3.665e-06",
+            "sign_2K_minus_3L": "+"
+          }
+        ],
+        "rational_cycles": [
+          {
+            "C": 1,
+            "D": 1,
+            "D_prime_factors": [],
+            "K": 2,
+            "L": 1,
+            "in_Z2_cap_Z3": true,
+            "is_integer": true,
+            "word": "10",
+            "x0": "1",
+            "x0_float": 1.0
+          },
+          {
+            "C": 19,
+            "D": -11,
+            "D_prime_factors": [
+              11
+            ],
+            "K": 4,
+            "L": 3,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "word": "1110",
+            "x0": "-19/11",
+            "x0_float": -1.72727
+          },
+          {
+            "C": 5,
+            "D": -1,
+            "D_prime_factors": [],
+            "K": 3,
+            "L": 2,
+            "in_Z2_cap_Z3": true,
+            "is_integer": true,
+            "word": "110",
+            "x0": "-5",
+            "x0_float": -5.0
+          },
+          {
+            "C": 23,
+            "D": 5,
+            "D_prime_factors": [
+              5
+            ],
+            "K": 5,
+            "L": 3,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "word": "11010",
+            "x0": "23/5",
+            "x0_float": 4.6
+          },
+          {
+            "C": 19,
+            "D": 5,
+            "D_prime_factors": [
+              5
+            ],
+            "K": 5,
+            "L": 3,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "word": "11100",
+            "x0": "19/5",
+            "x0_float": 3.8
+          },
+          {
+            "C": 211,
+            "D": 13,
+            "D_prime_factors": [
+              13
+            ],
+            "K": 8,
+            "L": 5,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "word": "11111000",
+            "x0": "211/13",
+            "x0_float": 16.23077
+          },
+          {
+            "C": 259,
+            "D": 13,
+            "D_prime_factors": [
+              13
+            ],
+            "K": 8,
+            "L": 5,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "word": "11110010",
+            "x0": "259/13",
+            "x0_float": 19.92308
+          },
+          {
+            "C": 665,
+            "D": 295,
+            "D_prime_factors": [
+              5,
+              59
+            ],
+            "K": 10,
+            "L": 6,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "word": "1111110000",
+            "x0": "133/59",
+            "x0_float": 2.25424
+          }
+        ]
+      },
+      "package": "collatz_routes_bundle",
+      "script": "route3_global_integrality_and_cube4/rational_barrier_and_diophantine.py",
+      "stderr": ""
+    },
+    {
+      "exit_code": 0,
+      "output": {
+        "esscher_tilted_operator": {
+          "lambda_1_at_0": 1.0,
+          "lambda_1_at_1": 1.0,
+          "lambda_1_at_s_star": 0.965907,
+          "s_star": 0.488077
+        },
+        "galerkin_Z_mod_2M": {
+          "4": {
+            "dim": 16,
+            "lambda_1": 1.0,
+            "lambda_2": 6e-06,
+            "spectral_gap": 0.999994
+          },
+          "6": {
+            "dim": 64,
+            "lambda_1": 1.0,
+            "lambda_2": 0.001819,
+            "spectral_gap": 0.998181
+          },
+          "8": {
+            "dim": 256,
+            "lambda_1": 1.0,
+            "lambda_2": 0.00694,
+            "spectral_gap": 0.99306
+          },
+          "9": {
+            "dim": 512,
+            "lambda_1": 1.0,
+            "lambda_2": 0.015597,
+            "spectral_gap": 0.984403
+          }
+        },
+        "state_md_entropy": {
+          "h2_p_crit": 0.949956,
+          "p_crit": 0.63093
+        }
+      },
+      "package": "collatz_routes_bundle",
+      "script": "route4_adelic_spectral_operators/transfer_operator_spectrum.py",
+      "stderr": ""
+    },
+    {
+      "exit_code": 0,
+      "output": {
+        "all_obstructions_verified": true,
+        "cases": {
+          "neg_int_cycle_1": {
+            "closes_exactly": true,
+            "expected_period": 1,
+            "in_Z2_cap_Z3": true,
+            "is_integer": true,
+            "orbit_preview": [
+              "-1",
+              "-1"
+            ],
+            "positive": false,
+            "x0": "-1"
+          },
+          "neg_int_cycle_17": {
+            "closes_exactly": true,
+            "expected_period": 11,
+            "in_Z2_cap_Z3": true,
+            "is_integer": true,
+            "orbit_preview": [
+              "-17",
+              "-25",
+              "-37",
+              "-55",
+              "-82",
+              "-41"
+            ],
+            "positive": false,
+            "x0": "-17"
+          },
+          "neg_int_cycle_5": {
+            "closes_exactly": true,
+            "expected_period": 3,
+            "in_Z2_cap_Z3": true,
+            "is_integer": true,
+            "orbit_preview": [
+              "-5",
+              "-7",
+              "-10",
+              "-5"
+            ],
+            "positive": false,
+            "x0": "-5"
+          },
+          "pr149_pos_rational_11010": {
+            "closes_exactly": true,
+            "expected_period": 5,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "orbit_preview": [
+              "23/5",
+              "37/5",
+              "58/5",
+              "29/5",
+              "46/5",
+              "23/5"
+            ],
+            "positive": true,
+            "x0": "23/5"
+          },
+          "pr149_pos_rational_11100": {
+            "closes_exactly": true,
+            "expected_period": 5,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "orbit_preview": [
+              "19/5",
+              "31/5",
+              "49/5",
+              "76/5",
+              "38/5",
+              "19/5"
+            ],
+            "positive": true,
+            "x0": "19/5"
+          },
+          "pr149_pos_rational_11110010": {
+            "closes_exactly": true,
+            "expected_period": 8,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "orbit_preview": [
+              "259/13",
+              "395/13",
+              "599/13",
+              "905/13",
+              "1364/13",
+              "682/13"
+            ],
+            "positive": true,
+            "x0": "259/13"
+          },
+          "pr149_pos_rational_11111000": {
+            "closes_exactly": true,
+            "expected_period": 8,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "orbit_preview": [
+              "211/13",
+              "323/13",
+              "491/13",
+              "743/13",
+              "1121/13",
+              "1688/13"
+            ],
+            "positive": true,
+            "x0": "211/13"
+          },
+          "state_md_1110_ghost": {
+            "closes_exactly": true,
+            "expected_period": 4,
+            "in_Z2_cap_Z3": true,
+            "is_integer": false,
+            "orbit_preview": [
+              "-19/11",
+              "-23/11",
+              "-29/11",
+              "-38/11",
+              "-19/11"
+            ],
+            "positive": false,
+            "x0": "-19/11"
+          },
+          "trivial_positive_cycle": {
+            "closes_exactly": true,
+            "expected_period": 2,
+            "in_Z2_cap_Z3": true,
+            "is_integer": true,
+            "orbit_preview": [
+              "1",
+              "2",
+              "1"
+            ],
+            "positive": true,
+            "x0": "1"
+          }
+        }
+      },
+      "package": "collatz_routes_bundle",
+      "script": "route5_agentic_pr_roadmap/barrier_falsification_harness.py",
+      "stderr": ""
+    },
+    {
+      "exit_code": 0,
+      "output": {
+        "overall_status": "PASS",
+        "verifiers_run": 4
+      },
+      "package": "collatz_full_completion_blueprints_v2_2026-11-20",
+      "script": "run_all_v2_verifiers.py",
+      "stderr": ""
+    },
+    {
+      "exit_code": 0,
+      "output": {
+        "certificate_file_sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c",
+        "certificates": [
+          {
+            "certified_infeasible": true,
+            "independent_min_lhs_margin": 1.0,
+            "independent_rhs": -1.0,
+            "modulus": 81,
+            "r": 4,
+            "s": 0.84,
+            "u_nnz": 19,
+            "w_norm_l2": 317893.7854
+          },
+          {
+            "certified_infeasible": true,
+            "independent_min_lhs_margin": 1.0,
+            "independent_rhs": -1.0,
+            "modulus": 729,
+            "r": 6,
+            "s": 0.913,
+            "u_nnz": 147,
+            "w_norm_l2": 156664.5609
+          }
+        ],
+        "negative_control_s1_uniform_feasible": {
+          "s": 1.0,
+          "uniform_eq_err": 2.2204743399705254e-15,
+          "uniform_ub_max": -0.006172839506172839
+        },
+        "non_claim_notice": "Proves exact Farkas-dual x3-defect singularity & PR #146 polynomial amplification; does NOT claim an unconditional Collatz proof.",
+        "package": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20",
+        "status": "PASS",
+        "verified_r8_boundary_crossover": {
+          "exceeds_repo_19_20_native_horizon": true,
+          "modulus": 6561,
+          "r": 8,
+          "s_crit_x3": 0.950131
+        }
+      },
+      "package": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20",
+      "script": "verify_farkas_certificates.py",
+      "stderr": ""
+    }
+  ],
+  "schema": "collatz-gemini-followups-original-replay/v1",
+  "scope": "Original script execution and byte authentication only; not acceptance of proof labels.",
+  "source_sha256": "2083fea5e676b8bedb4ad0977f250055bdca6a1a48745b158debdb4428ffd1cd",
+  "zip_sha256": {
+    "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20.zip": "49d870044cc06d8adf4d0ee3a21067b472a39d4cc9cb9e7498de99fd412aa1e4",
+    "collatz_full_completion_blueprints_v2_2026-11-20.zip": "0e35fcb9a3de4066c2ea993485569da626f6158cb265bb198b9cbf4f3130033f",
+    "gettysburg_collatz_proof_routes_2026_11_20.zip": "61a22035b4c9ce1e89e0fd109163036b576a4120e93a7d6a289fa0a488286148"
+  }
+}

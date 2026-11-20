@@ -1,0 +1,173 @@
+{
+  "schema": "collatz-gemini-followups-source/v1",
+  "archives": [
+    {
+      "archive": "gettysburg_collatz_proof_routes_2026_11_20.zip",
+      "sha256": "61a22035b4c9ce1e89e0fd109163036b576a4120e93a7d6a289fa0a488286148",
+      "files": [
+        {
+          "path": "collatz_routes_bundle/BARRIER_AUDIT.md",
+          "bytes": 4342,
+          "sha256": "b4506b95d17d060c38f9bab49358f20721386003d6ba58d9beb407700de07714"
+        },
+        {
+          "path": "collatz_routes_bundle/README.md",
+          "bytes": 5254,
+          "sha256": "24b6ef72477ef4b027b6fb886904c861405ca2f29420e09d98d946fe41f3bebd"
+        },
+        {
+          "path": "collatz_routes_bundle/results/verified_computations.json",
+          "bytes": 15244,
+          "sha256": "9cdb9cb872c24c5485e6ffe3602b6f01ffc54f7eaee7449f3761c8b767a379ba"
+        },
+        {
+          "path": "collatz_routes_bundle/route1_tripling_and_sibling_mergers/PROPOSAL.md",
+          "bytes": 4654,
+          "sha256": "b7557dd7bde38b6e6f6b1db66b6be1fd7d491d4301903267970336fc4fc5cb24"
+        },
+        {
+          "path": "collatz_routes_bundle/route1_tripling_and_sibling_mergers/algebraic_coalescence_sieve.py",
+          "bytes": 4072,
+          "sha256": "dac2da36eec6cba602bc327342ea01786dce82d800c848fb2a5b52b2f4fa6d15"
+        },
+        {
+          "path": "collatz_routes_bundle/route1_tripling_and_sibling_mergers/lean4_x_min_exclusions_skeleton.lean",
+          "bytes": 2083,
+          "sha256": "3a1a7d32de7b0ad039ffc3e4e96468b42e91ebc4d50fad8d85e7204b3b60b4cd"
+        },
+        {
+          "path": "collatz_routes_bundle/route2_inverse_compiler_and_bellman/PROPOSAL.md",
+          "bytes": 4765,
+          "sha256": "b1b8e6269a4b9455427347b58fdf15424d2e92f9aa554c16ceb1d38a25df030a"
+        },
+        {
+          "path": "collatz_routes_bundle/route2_inverse_compiler_and_bellman/bellman_potential_certifier.py",
+          "bytes": 2692,
+          "sha256": "fc77ad668ca60f685e8306b3b5679b118ded9211771edbdb364e05915afb24c7"
+        },
+        {
+          "path": "collatz_routes_bundle/route3_global_integrality_and_cube4/PROPOSAL.md",
+          "bytes": 3973,
+          "sha256": "2cd9f8f01d3455ccb47a2f1b6f2604de0723700f6e329f930124a6888ac206df"
+        },
+        {
+          "path": "collatz_routes_bundle/route3_global_integrality_and_cube4/rational_barrier_and_diophantine.py",
+          "bytes": 2130,
+          "sha256": "d6803feb7002dbd407b1739f6b929c4d9e68861044ff7aa45ccf4ad232aec29c"
+        },
+        {
+          "path": "collatz_routes_bundle/route4_adelic_spectral_operators/PROPOSAL.md",
+          "bytes": 3485,
+          "sha256": "0d68c8d6f8a78142dc06b1524ecbaa41838bfd9f709c2cecbf8626af3e4d7f16"
+        },
+        {
+          "path": "collatz_routes_bundle/route4_adelic_spectral_operators/transfer_operator_spectrum.py",
+          "bytes": 1807,
+          "sha256": "3df92cf64d0183b128305b9fd7a3b55607b87b355257cb1be8274bea75f7e1eb"
+        },
+        {
+          "path": "collatz_routes_bundle/route5_agentic_pr_roadmap/PR_BLUEPRINTS.md",
+          "bytes": 3163,
+          "sha256": "07ac5c912e1642da57158090e52b38b24302ab28a773924ec4015d4634820b78"
+        },
+        {
+          "path": "collatz_routes_bundle/route5_agentic_pr_roadmap/barrier_falsification_harness.py",
+          "bytes": 2126,
+          "sha256": "e9128b3d6fdb2f6824ed9280c87964dda63d55ba3d3c1e5431d60f47a71954db"
+        }
+      ]
+    },
+    {
+      "archive": "collatz_full_completion_blueprints_v2_2026-11-20.zip",
+      "sha256": "0e35fcb9a3de4066c2ea993485569da626f6158cb265bb198b9cbf4f3130033f",
+      "files": [
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/README.md",
+          "bytes": 4803,
+          "sha256": "08c382b291e3ae6cc7c3788a8d5c4f3c4140083fe48d63d9eb527f56458a8301"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_1_mahler_generating_function/BLUEPRINT.md",
+          "bytes": 6623,
+          "sha256": "a21bd3408d9eaf050511199a1d89899a47d85a0198999c91938c3b378f3ee2dc"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_1_mahler_generating_function/verify_mahler_functional.py",
+          "bytes": 4659,
+          "sha256": "ee1d09cb68e5acaae9f2940af67775025251f6e32749200a785b5a55e3de4251"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_2_dirichlet_ruelle_singularity/BLUEPRINT.md",
+          "bytes": 5244,
+          "sha256": "fce0d7fb3a6cd4a35ca336eb98a3ffee51ca2b4dbb88f01ccbfc88c376628faf"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_2_dirichlet_ruelle_singularity/verify_dirichlet_ruelle.py",
+          "bytes": 6996,
+          "sha256": "a8e2236eeeab6a272c8e9817f6c3ad0c1ad1d491a36213e30c476f953e775e0e"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_3_krasikov_lagarias_exponent_crossing/BLUEPRINT.md",
+          "bytes": 6442,
+          "sha256": "da56c16b6dea7cae68666a60425eff4108bc1f2d69e6f29d8224d5842fbdfa40"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_3_krasikov_lagarias_exponent_crossing/verify_exponent_crossing.py",
+          "bytes": 5705,
+          "sha256": "98d6494788bb54e5540d0c7291174e548825c89fb994b6f4709dc58ddabd8681"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_4_adelic_w1_and_rational_cycle_separation/BLUEPRINT.md",
+          "bytes": 5433,
+          "sha256": "963356bd00e04bcd9358cc718e980c1e74f050a4324e8632ba406bbab428b0c3"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/blueprint_4_adelic_w1_and_rational_cycle_separation/verify_adelic_w1.py",
+          "bytes": 5149,
+          "sha256": "5b580483b6213e8487a05ad4d6e254361da91d52a21745ccb4016356ef0b0cf3"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/run_all_v2_verifiers.py",
+          "bytes": 2451,
+          "sha256": "d31283003ba0d535ad532fd28324222129cdcb9e2e688d0e0a14eb6f490c151a"
+        },
+        {
+          "path": "collatz_full_completion_blueprints_v2_2026-11-20/verification_receipt_v2.json",
+          "bytes": 4528,
+          "sha256": "d74b102e4c5c6a90ab266f6200511db8bb8d0d464ddef8a73ebaee809bc74581"
+        }
+      ]
+    },
+    {
+      "archive": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20.zip",
+      "sha256": "49d870044cc06d8adf4d0ee3a21067b472a39d4cc9cb9e7498de99fd412aa1e4",
+      "files": [
+        {
+          "path": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/AGENT_HANDOFF_V3.md",
+          "bytes": 2017,
+          "sha256": "3a2aeb77fd7853c8e65b164e25405225180466c02105e8ba757ef2eec30de947"
+        },
+        {
+          "path": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/FARKAS_DIRICHLET_AMPLIFICATION_PAPER.md",
+          "bytes": 9943,
+          "sha256": "e9ee6491919bad251a2215c4ed00809e67582e9b343c885a60af7a1d3670ac09"
+        },
+        {
+          "path": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/farkas_certificates_r4_r6.json",
+          "bytes": 24144,
+          "sha256": "ab41ca28f00904efa2732ffbdc06f19b592ae4e874b586554c550c2f975bde5c"
+        },
+        {
+          "path": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/verification_receipt_v3.json",
+          "bytes": 1118,
+          "sha256": "92b406bd0a15df3abb97fd7da06537ed266d5043188327907a505106a58b081c"
+        },
+        {
+          "path": "collatz_farkas_dirichlet_breakthrough_v3_2026-11-20/verify_farkas_certificates.py",
+          "bytes": 7523,
+          "sha256": "e3955348a808a05e36622cad1a1a9b20e83402f642bb21d51281bfe91aa1d6f3"
+        }
+      ]
+    }
+  ]
+}
