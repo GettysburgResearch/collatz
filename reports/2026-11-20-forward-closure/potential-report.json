@@ -1,0 +1,338 @@
+{
+  "critical_height_floor": 492581209243648,
+  "critical_height_gain": "1/16 per exponent greater than one above the floor",
+  "finite_haar_profiles": [
+    {
+      "depth": 1,
+      "histogram": {
+        "0": 4,
+        "3": 2
+      },
+      "maximum": 3,
+      "modulus": 9,
+      "positive_score_words": 1,
+      "unit_residues": 6
+    },
+    {
+      "depth": 2,
+      "histogram": {
+        "0": 10,
+        "1": 2,
+        "3": 4,
+        "6": 2
+      },
+      "maximum": 6,
+      "modulus": 27,
+      "positive_score_words": 4,
+      "unit_residues": 18
+    },
+    {
+      "depth": 3,
+      "histogram": {
+        "0": 30,
+        "1": 4,
+        "3": 10,
+        "4": 4,
+        "6": 4,
+        "9": 2
+      },
+      "maximum": 9,
+      "modulus": 81,
+      "positive_score_words": 8,
+      "unit_residues": 54
+    },
+    {
+      "depth": 4,
+      "histogram": {
+        "0": 88,
+        "1": 10,
+        "2": 4,
+        "3": 30,
+        "4": 8,
+        "6": 10,
+        "7": 6,
+        "9": 4,
+        "12": 2
+      },
+      "maximum": 12,
+      "modulus": 243,
+      "positive_score_words": 23,
+      "unit_residues": 162
+    },
+    {
+      "depth": 5,
+      "histogram": {
+        "0": 264,
+        "1": 30,
+        "2": 8,
+        "3": 88,
+        "4": 20,
+        "5": 10,
+        "6": 30,
+        "7": 12,
+        "9": 10,
+        "10": 8,
+        "12": 4,
+        "15": 2
+      },
+      "maximum": 15,
+      "modulus": 729,
+      "positive_score_words": 44,
+      "unit_residues": 486
+    },
+    {
+      "depth": 6,
+      "histogram": {
+        "0": 786,
+        "1": 88,
+        "2": 20,
+        "3": 276,
+        "4": 60,
+        "5": 20,
+        "6": 88,
+        "7": 30,
+        "8": 18,
+        "9": 30,
+        "10": 16,
+        "12": 10,
+        "13": 10,
+        "15": 4,
+        "18": 2
+      },
+      "maximum": 18,
+      "modulus": 2187,
+      "positive_score_words": 128,
+      "unit_residues": 1458
+    },
+    {
+      "depth": 7,
+      "histogram": {
+        "0": 2330,
+        "1": 292,
+        "2": 60,
+        "3": 806,
+        "4": 174,
+        "5": 50,
+        "6": 302,
+        "7": 90,
+        "8": 36,
+        "9": 88,
+        "10": 40,
+        "11": 28,
+        "12": 30,
+        "13": 20,
+        "15": 10,
+        "16": 12,
+        "18": 4,
+        "21": 2
+      },
+      "maximum": 21,
+      "modulus": 6561,
+      "positive_score_words": 458,
+      "unit_residues": 4374
+    }
+  ],
+  "forward_edges_checked": 667,
+  "immediate_converger_controls": [
+    {
+      "certified_score": 3,
+      "forward_exponent": 10,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 1,
+      "root_bits": 9
+    },
+    {
+      "certified_score": 6,
+      "forward_exponent": 28,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 2,
+      "root_bits": 27
+    },
+    {
+      "certified_score": 9,
+      "forward_exponent": 82,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 3,
+      "root_bits": 81
+    },
+    {
+      "certified_score": 12,
+      "forward_exponent": 244,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 4,
+      "root_bits": 243
+    },
+    {
+      "certified_score": 15,
+      "forward_exponent": 730,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 5,
+      "root_bits": 729
+    },
+    {
+      "certified_score": 18,
+      "forward_exponent": 2188,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 6,
+      "root_bits": 2187
+    },
+    {
+      "certified_score": 21,
+      "forward_exponent": 6562,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 7,
+      "root_bits": 6561
+    },
+    {
+      "certified_score": 24,
+      "forward_exponent": 19684,
+      "forward_odd_steps_to_1": 1,
+      "inverse_ones": 8,
+      "root_bits": 19683
+    }
+  ],
+  "independent_residue_comparisons": 6558,
+  "path_nodes_visited": 42118,
+  "rejected_mutations": [
+    "omit the final ternary-unit guard",
+    "observe only N rather than N+1 ternary digits",
+    "reverse the sign of the forward exponent cost"
+  ],
+  "scope": "Exact finite arithmetic and independent truncation reconstruction; does not establish the uniform ordinary potential bound or Collatz",
+  "small_source_replays": [
+    {
+      "shortcut_steps": 0,
+      "source": 1
+    },
+    {
+      "shortcut_steps": 1,
+      "source": 2
+    },
+    {
+      "shortcut_steps": 5,
+      "source": 3
+    },
+    {
+      "shortcut_steps": 2,
+      "source": 4
+    },
+    {
+      "shortcut_steps": 4,
+      "source": 5
+    },
+    {
+      "shortcut_steps": 6,
+      "source": 6
+    },
+    {
+      "shortcut_steps": 11,
+      "source": 7
+    },
+    {
+      "shortcut_steps": 3,
+      "source": 8
+    },
+    {
+      "shortcut_steps": 13,
+      "source": 9
+    },
+    {
+      "shortcut_steps": 5,
+      "source": 10
+    },
+    {
+      "shortcut_steps": 10,
+      "source": 11
+    },
+    {
+      "shortcut_steps": 7,
+      "source": 12
+    },
+    {
+      "shortcut_steps": 7,
+      "source": 13
+    },
+    {
+      "shortcut_steps": 12,
+      "source": 14
+    },
+    {
+      "shortcut_steps": 12,
+      "source": 15
+    },
+    {
+      "shortcut_steps": 4,
+      "source": 16
+    },
+    {
+      "shortcut_steps": 9,
+      "source": 17
+    },
+    {
+      "shortcut_steps": 14,
+      "source": 18
+    },
+    {
+      "shortcut_steps": 14,
+      "source": 19
+    },
+    {
+      "shortcut_steps": 6,
+      "source": 20
+    },
+    {
+      "shortcut_steps": 6,
+      "source": 21
+    },
+    {
+      "shortcut_steps": 11,
+      "source": 22
+    },
+    {
+      "shortcut_steps": 11,
+      "source": 23
+    },
+    {
+      "shortcut_steps": 8,
+      "source": 24
+    },
+    {
+      "shortcut_steps": 16,
+      "source": 25
+    },
+    {
+      "shortcut_steps": 8,
+      "source": 26
+    },
+    {
+      "shortcut_steps": 70,
+      "source": 27
+    },
+    {
+      "shortcut_steps": 13,
+      "source": 28
+    },
+    {
+      "shortcut_steps": 13,
+      "source": 29
+    },
+    {
+      "shortcut_steps": 13,
+      "source": 30
+    },
+    {
+      "shortcut_steps": 67,
+      "source": 31
+    },
+    {
+      "shortcut_steps": 5,
+      "source": 32
+    }
+  ],
+  "status": "PASS",
+  "unseen_lift_comparisons": 480,
+  "weight_sum": {
+    "denominator": 581375,
+    "numerator": 559872
+  }
+}
