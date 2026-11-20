@@ -132,20 +132,24 @@ impossible.
 
 ## Complete-checkout gate
 
-Repository-wide validation is separate from all executions above. The
-required command is run only after committing this content in a clean,
-complete checkout:
+**PASS: all 11 commands exited zero** in a clean, complete checkout of
+published content commit `05908b1d897370d6a48845e77985cf44428424a3`.
+The [saved receipt](validation-receipt.json) records the actual command:
 
 ```bash
-python -X utf8 -B tools/validate.py --regressions --receipt ../pointwise-closure-validation.json
+python -X utf8 -B tools/validate.py --regressions --receipt ../pointwise-closure-published-validation.json
 ```
 
-The resulting receipt is attached in a subsequent report commit and names
-the exact commit and tree actually validated. A later receipt attachment
-must not be described as having validated itself. This gate checks
-repository integrity and the selected bounded regression bundle; it does
-not validate the new mathematical proofs, execute an external Lean build,
-or prove Collatz.
+It covers tree `5284a74478e411f4f70e1b97feb5ed08f098286b`, with 350 tracked
+files. The checkout identity was unchanged after execution. The receipt
+was attached in a subsequent documentation commit; it does not claim to
+cover its own later attachment. The scientific files and bounded replay
+scripts are the same reviewed bytes identified in the artifact manifest.
+
+This gate checks repository integrity and the selected bounded regression
+bundle. It does not validate the new mathematical proofs, execute an
+external Lean build, or prove Collatz. The new research checkers are
+separate actual executions recorded above.
 
 ## Handoff boundary
 

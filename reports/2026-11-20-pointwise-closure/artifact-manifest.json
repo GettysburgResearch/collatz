@@ -61,9 +61,9 @@
       "sha256": "15d9934cc5b729d8b2c234777467f25fad4c225700de2280ad1b73656522d801"
     },
     {
-      "bytes": 10710,
+      "bytes": 11015,
       "path": "reports/2026-11-20-pointwise-closure/README.md",
-      "sha256": "875b74e9527ee9613bc25be659a0b096eac69ab45e08442732d222d8d9504da3"
+      "sha256": "5ebba258e7169234c91582756c8d8d853f640b731ca847059b0f11b2a92adf8b"
     },
     {
       "bytes": 6955,
@@ -169,9 +169,14 @@
       "bytes": 1348,
       "path": "reports/2026-11-20-pointwise-closure/stopping-burden-report.json",
       "sha256": "5f8b32fa78f4a8aff7c92c2641133531fa61abe34abdc37386e300415ad69787"
+    },
+    {
+      "bytes": 13836,
+      "path": "reports/2026-11-20-pointwise-closure/validation-receipt.json",
+      "sha256": "6a141b3fe1ad4372bcfae48935467a126ba9f0f948e6364d665451c6eb145ad1"
     }
   ],
   "base_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
   "reviewed_science_hashes_match": true,
-  "scope": "Exact artifacts before attaching the complete-checkout validation receipt; hashes are identities, not proof verdicts."
+  "scope": "Final packet artifacts, excluding this manifest itself. The validation receipt names the earlier clean published content commit it covers; hashes are identities, not proof verdicts."
 }
