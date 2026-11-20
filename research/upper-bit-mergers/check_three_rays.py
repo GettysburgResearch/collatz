@@ -79,6 +79,12 @@ def verify_one_residue_rules():
     verify_affine_word(162, 67, "ODDIIDDIMOOOEEEEI", 18, 9, [(1152, 477)])
     verify_affine_word(648, 443, "DDDDIVOOOEOOEEIDI", 18, 9, [(2304, 1575)])
 
+    # Traverse the directed certificate from x to 3x. Its four extra edges
+    # all multiply positive odd multiples of three in the forward direction.
+    verify_affine_word(31104, 5831, "ODDIMMOEEIIDIDDIDDIMMOEEEEOEEEEI", 6, 3,
+                       [(124416, 23325), (373248, 69975),
+                        (1769472, 331725), (5308416, 995175)])
+
     # 144 is lcm(16, 9); z modulo 16 depends only on x modulo 48.
     # Checking the ternary valuations themselves uses the exact affine identities.
     for x in range(17, 17 + 144, 2):
@@ -136,6 +142,6 @@ def verify_offset_chain():
 
 if __name__ == "__main__":
     verify_one_residue_rules()
-    print("single-residue words, both recurrent pivot certificates and ternary transitions verified")
+    print("single-residue words, directed certificate, both recurrent pivots and ternary transitions verified")
     print(f"{verify_seeds()} common words, their affine lifts, and 64 odd residue classes replayed")
     print(f"17 symbolic edges from 288n to 288(n+1) verified: {verify_offset_chain()}")
