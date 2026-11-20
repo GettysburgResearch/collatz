@@ -7,7 +7,7 @@ They are not external mathematical acceptance or proof-assistant verification.
 
 This pass targets the point where the recent inverse and merger programs
 still stop: a conclusion about **every fixed positive ordinary integer**.
-The strongest result is a complete decision and classification for a larger
+The strongest result is a complete decision and classification for a
 bounded-complexity class of trajectories. Two further results improve the
 local merger induction and the finite record mechanism. Their remaining
 global assumptions are retained.

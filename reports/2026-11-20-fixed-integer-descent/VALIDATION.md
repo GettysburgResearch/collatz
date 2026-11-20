@@ -40,19 +40,29 @@ checker verifies maxima, not the first scanner's ordered digests.
 The [content manifest](content-sha256.json) pins 32 scientific, checker,
 report, and review files. It intentionally excludes this validation note,
 the investigation README, the manifest itself, and the subsequently
-attached execution receipts. All 32 pinned files remain byte-identical
-when these receipts are attached.
+attached execution receipts. All 32 pinned files remained byte-identical
+in the receipt-attachment child. The later wording correction described
+below changes only the overview among those 32 files; this manifest
+records its updated hash. The other 31 pinned files remain byte-identical
+to the tested content commit.
 
-## Documentation child and scope limits
+## Documentation children and scope limits
 
-The documentation-only child attaching these receipts has the exact tested
-content commit as its parent. It adds the two receipts and updates this
+The documentation-only child `9c7cebdce31f6c683e2b7228af0a46eebdffbe76`
+attaching these receipts has the exact tested content commit as its parent. It adds the two receipts and updates this
 note; it changes no mathematical statement, checker, or frozen report.
 The receipts describe executions on the content parent. An execution on a
 parent is not described as an execution on its child, and no self-referential
-final-head receipt is asserted. The publication workflow separately runs
-repository validation on the exact documentation child before creating its
-branch and draft pull request.
+final-head receipt is asserted. Repository validation separately passed all eleven commands on that exact
+receipt-attachment child, with 352 tracked files and a clean checkout.
+
+A subsequent documentation-only correction removes the ambiguous word
+"larger" from the scientific overview and updates its manifest entry.
+The six-run and prior ten-popcount guards are incomparable, as the proof
+already states. This correction changes no proof, checker, or result.
+It also updates this validation note to preserve the historical scope of
+the attached receipts. The publication workflow checks the exact corrected
+head separately before updating the branch and opening the draft PR.
 
 No proof-assistant build, external peer review, unrestricted Collatz
 termination test, or successful all-source descent selector is claimed.
