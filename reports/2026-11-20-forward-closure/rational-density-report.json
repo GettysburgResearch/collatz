@@ -1,0 +1,176 @@
+{
+  "immediate_converger_controls": [
+    {
+      "inverse_ones": 1,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 9,
+      "score_lower_bound": 3
+    },
+    {
+      "inverse_ones": 2,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 27,
+      "score_lower_bound": 6
+    },
+    {
+      "inverse_ones": 3,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 81,
+      "score_lower_bound": 9
+    },
+    {
+      "inverse_ones": 4,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 243,
+      "score_lower_bound": 12
+    },
+    {
+      "inverse_ones": 5,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 729,
+      "score_lower_bound": 15
+    },
+    {
+      "inverse_ones": 6,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 2187,
+      "score_lower_bound": 18
+    },
+    {
+      "inverse_ones": 7,
+      "ordinary_forward_odd_steps": 1,
+      "root_bits": 6561,
+      "score_lower_bound": 21
+    }
+  ],
+  "inverse_edges_checked": 1405,
+  "rational_cycles": [
+    {
+      "binary_digits": 0,
+      "floor": 1,
+      "max_gap": 2,
+      "minimum_exceeds_floor": true,
+      "n": 1,
+      "odd_cycle_word_length": 17,
+      "positive_score_per_lap": 1,
+      "reduced_denominator_bits": 23,
+      "simultaneous_modulus": 1,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 0,
+      "total_gap": 27
+    },
+    {
+      "binary_digits": 8,
+      "floor": 25,
+      "max_gap": 2,
+      "minimum_exceeds_floor": true,
+      "n": 1,
+      "odd_cycle_word_length": 94,
+      "positive_score_per_lap": 7,
+      "reduced_denominator_bits": 143,
+      "simultaneous_modulus": 1679616,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 8,
+      "total_gap": 149
+    },
+    {
+      "binary_digits": 7,
+      "floor": 20,
+      "max_gap": 4,
+      "minimum_exceeds_floor": true,
+      "n": 5,
+      "odd_cycle_word_length": 253,
+      "positive_score_per_lap": 19,
+      "reduced_denominator_bits": 393,
+      "simultaneous_modulus": 31104,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 5,
+      "total_gap": 401
+    },
+    {
+      "binary_digits": 9,
+      "floor": 10,
+      "max_gap": 4,
+      "minimum_exceeds_floor": true,
+      "n": 7,
+      "odd_cycle_word_length": 200,
+      "positive_score_per_lap": 15,
+      "reduced_denominator_bits": 310,
+      "simultaneous_modulus": 1119744,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 7,
+      "total_gap": 317
+    },
+    {
+      "binary_digits": 8,
+      "floor": 20,
+      "max_gap": 4,
+      "minimum_exceeds_floor": true,
+      "n": 13,
+      "odd_cycle_word_length": 253,
+      "positive_score_per_lap": 19,
+      "reduced_denominator_bits": 393,
+      "simultaneous_modulus": 186624,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 6,
+      "total_gap": 401
+    },
+    {
+      "binary_digits": 10,
+      "floor": 20,
+      "max_gap": 4,
+      "minimum_exceeds_floor": true,
+      "n": 25,
+      "odd_cycle_word_length": 253,
+      "positive_score_per_lap": 19,
+      "reduced_denominator_bits": 393,
+      "simultaneous_modulus": 6718464,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 8,
+      "total_gap": 401
+    },
+    {
+      "binary_digits": 8,
+      "floor": 25,
+      "max_gap": 3,
+      "minimum_exceeds_floor": true,
+      "n": 31,
+      "odd_cycle_word_length": 253,
+      "positive_score_per_lap": 19,
+      "reduced_denominator_bits": 393,
+      "simultaneous_modulus": 5038848,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 9,
+      "total_gap": 401
+    },
+    {
+      "binary_digits": 9,
+      "floor": 10,
+      "max_gap": 3,
+      "minimum_exceeds_floor": true,
+      "n": 41,
+      "odd_cycle_word_length": 41,
+      "positive_score_per_lap": 3,
+      "reduced_denominator_bits": 59,
+      "simultaneous_modulus": 124416,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 5,
+      "total_gap": 65
+    },
+    {
+      "binary_digits": 7,
+      "floor": 5,
+      "max_gap": 4,
+      "minimum_exceeds_floor": true,
+      "n": 55,
+      "odd_cycle_word_length": 41,
+      "positive_score_per_lap": 3,
+      "reduced_denominator_bits": 59,
+      "simultaneous_modulus": 279936,
+      "swapped_for_nonintegrality": false,
+      "ternary_digits": 7,
+      "total_gap": 65
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,197 @@
+{
+  "arithmetic": "fractions.Fraction and integer operations only",
+  "arithmetic_inverse_witnesses": [
+    {
+      "bernoulli_bound": "105/106",
+      "checked_edges": 2,
+      "cutoff": 0,
+      "epsilon": "1/100",
+      "n": 1,
+      "state_floor": "35",
+      "target": 53,
+      "terminal_paths": 2
+    },
+    {
+      "bernoulli_bound": "102/103",
+      "checked_edges": 6,
+      "cutoff": 0,
+      "epsilon": "1/100",
+      "n": 2,
+      "state_floor": "205/3",
+      "target": 155,
+      "terminal_paths": 4
+    },
+    {
+      "bernoulli_bound": "5407/5461",
+      "checked_edges": 30,
+      "cutoff": 0,
+      "epsilon": "1/100",
+      "n": 4,
+      "state_floor": "10895/81",
+      "target": 685,
+      "terminal_paths": 16
+    },
+    {
+      "bernoulli_bound": "290243/293159",
+      "checked_edges": 510,
+      "cutoff": 0,
+      "epsilon": "1/100",
+      "n": 8,
+      "state_floor": "585589/2187",
+      "target": 6887,
+      "terminal_paths": 256
+    },
+    {
+      "bernoulli_bound": "309/310",
+      "checked_edges": 2,
+      "cutoff": 100,
+      "epsilon": "1/100",
+      "n": 1,
+      "state_floor": "103",
+      "target": 155,
+      "terminal_paths": 2
+    },
+    {
+      "bernoulli_bound": "454/457",
+      "checked_edges": 6,
+      "cutoff": 100,
+      "epsilon": "1/100",
+      "n": 2,
+      "state_floor": "911/9",
+      "target": 229,
+      "terminal_paths": 4
+    },
+    {
+      "bernoulli_bound": "5407/5461",
+      "checked_edges": 30,
+      "cutoff": 100,
+      "epsilon": "1/100",
+      "n": 4,
+      "state_floor": "10895/81",
+      "target": 685,
+      "terminal_paths": 16
+    },
+    {
+      "bernoulli_bound": "290243/293159",
+      "checked_edges": 510,
+      "cutoff": 100,
+      "epsilon": "1/100",
+      "n": 8,
+      "state_floor": "585589/2187",
+      "target": 6887,
+      "terminal_paths": 256
+    },
+    {
+      "bernoulli_bound": "30009/30010",
+      "checked_edges": 2,
+      "cutoff": 10000,
+      "epsilon": "1/100",
+      "n": 1,
+      "state_floor": "10003",
+      "target": 15005,
+      "terminal_paths": 2
+    },
+    {
+      "bernoulli_bound": "15002/15003",
+      "checked_edges": 6,
+      "cutoff": 10000,
+      "epsilon": "1/100",
+      "n": 2,
+      "state_floor": "30005/3",
+      "target": 22505,
+      "terminal_paths": 4
+    },
+    {
+      "bernoulli_bound": "405007/405061",
+      "checked_edges": 30,
+      "cutoff": 10000,
+      "epsilon": "1/100",
+      "n": 4,
+      "state_floor": "810095/81",
+      "target": 50635,
+      "terminal_paths": 16
+    },
+    {
+      "bernoulli_bound": "10933699/10936615",
+      "checked_edges": 510,
+      "cutoff": 10000,
+      "epsilon": "1/100",
+      "n": 8,
+      "state_floor": "21872501/2187",
+      "target": 256343,
+      "terminal_paths": 256
+    }
+  ],
+  "negative_controls_rejected": [
+    "wrong telescoping endpoint",
+    "changed shared-prefix weight",
+    "reversed inverse-floor factor"
+  ],
+  "prefix_extension_identity_checks": 1188,
+  "scope": "Finite identity and witness replay; infinite limits are proved analytically in the accompanying notes. No Collatz proof.",
+  "shared_prefix_path_checks": 21,
+  "shared_prefix_retained_limit_at_zero_squared": "4225/166464",
+  "shared_prefix_vanishing_limit_at_zero_squared": "0",
+  "shift_tail_witness_samples": [
+    {
+      "cutoff": 0,
+      "family": "vanishing",
+      "n": 1,
+      "norm_squared": "40401/40804",
+      "start": 200
+    },
+    {
+      "cutoff": 0,
+      "family": "retained",
+      "n": 1,
+      "norm_squared": "1664884809/1664966416",
+      "start": 200
+    },
+    {
+      "cutoff": 0,
+      "family": "vanishing",
+      "n": 4,
+      "norm_squared": "641601/648025",
+      "start": 800
+    },
+    {
+      "cutoff": 0,
+      "family": "retained",
+      "n": 4,
+      "norm_squared": "104201776809/104203068025",
+      "start": 800
+    },
+    {
+      "cutoff": 65535,
+      "family": "vanishing",
+      "n": 16,
+      "norm_squared": "4295098369/4297195809",
+      "start": 65536
+    },
+    {
+      "cutoff": 65535,
+      "family": "retained",
+      "n": 16,
+      "norm_squared": "4614360456992850001/4614360491362550049",
+      "start": 65536
+    },
+    {
+      "cutoff": 65535,
+      "family": "vanishing",
+      "n": 64,
+      "norm_squared": "4295098369/4303491201",
+      "start": 65536
+    },
+    {
+      "cutoff": 65535,
+      "family": "retained",
+      "n": 64,
+      "norm_squared": "4621120392053064769/4621120529632530561",
+      "start": 65536
+    }
+  ],
+  "shift_tail_witnesses_checked": 32,
+  "status": "PASS",
+  "telescoping_identity_checks": 4160,
+  "total_checked_inverse_edges": 1644
+}
