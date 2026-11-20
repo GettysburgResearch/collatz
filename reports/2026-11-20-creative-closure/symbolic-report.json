@@ -1,0 +1,294 @@
+{
+  "carry_families": {
+    "Mersenne_edges": 127,
+    "largest_parameter_m": 1025,
+    "moment_identity_checks": 1806,
+    "one_run_collapse_edges": 66,
+    "run_moment_degrees": [
+      2,
+      8
+    ],
+    "zero_run_collapse_edges": 65
+  },
+  "checker_sha256": "7eec3869f0639983a4c1121c327b618ac028a30102509c3b0f3979301313a2e7",
+  "claims": [
+    "CSO-001",
+    "CSO-002",
+    "CSO-003",
+    "CSO-004",
+    "CSO-005"
+  ],
+  "controllers": {
+    "allowances": [
+      0,
+      1,
+      4
+    ],
+    "controller_runs": 774,
+    "dynamic_steps": 5059,
+    "exceptional_carry_steps": 447,
+    "literal_rewrite_steps": 11735,
+    "maximum_single_run_rewrites": 72,
+    "outcomes": {
+      "reached_one": 519,
+      "unresolved_carry_budget": 255
+    },
+    "scheduling_modes": 3,
+    "source_words": 86
+  },
+  "limitations": [
+    "A finite carry allowance may return UNRESOLVED.",
+    "No source-dependent sufficient allowance or total ordinary cost function is proved.",
+    "Finite degree and matrix menus are not the basis of the unbounded impossibility claims.",
+    "The two-dimensional ten-rule interpretation is attributed to AYH Example 4.3."
+  ],
+  "order_class_checks": {
+    "bounded_degree_and_slope_assignments": 32768,
+    "bounded_offset_assignments": 16807,
+    "constant_boundary_strictness_erasure_checked": true,
+    "degree_survivors": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "exact_zero_sum_identities": 2,
+    "first_superdiagonal_identity_checks": 600,
+    "matrix_dimensions": [
+      2,
+      9
+    ],
+    "offset_survivors": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "scope": "finite checks exercise identities; unbounded exclusions are the written proofs"
+  },
+  "rule_certificates": {
+    "all_rule_difference_matrices": {
+      "ad->d": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "ae->ea": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "af->eb": [
+        [
+          -10,
+          -27,
+          -10
+        ],
+        [
+          -15,
+          -25,
+          -7
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "ag->fa": [
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bd->gd": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "be->fb": [
+        [
+          8,
+          7,
+          2
+        ],
+        [
+          25,
+          19,
+          9
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bf->ga": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bg->gb": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "ce->cb": [
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "cf->caa": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "cg->cab": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "exceptional_rule": "af->eb",
+    "factor_25_coefficientwise_control_rejected": true,
+    "proved_multiplicative_majorant": 26,
+    "strict_rules": 10
+  },
+  "schema": "creative-symbolic-order-v1",
+  "scope": "exact symbolic local certificates and bounded replay; no total Collatz order",
+  "status": "PASS",
+  "word_checks": {
+    "administrative_rewrite_steps": 1773,
+    "all_applicable_rule_occurrences": 7421,
+    "complete_administrative_schedules": 468,
+    "maximum_interior_length": 5,
+    "occurrences_by_left_side": {
+      "ad": 781,
+      "ae": 586,
+      "af": 586,
+      "ag": 586,
+      "bd": 781,
+      "be": 586,
+      "bf": 586,
+      "bg": 586,
+      "ce": 781,
+      "cf": 781,
+      "cg": 781
+    },
+    "proper_words_in_complete_corpus": 3906,
+    "sharp_power_of_three_envelopes": 129
+  }
+}

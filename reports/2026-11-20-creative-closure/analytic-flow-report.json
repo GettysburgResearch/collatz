@@ -1,0 +1,734 @@
+{
+  "antichain_cases": [
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 30,
+      "nonzero_physical_coordinates": 215,
+      "norm_squared": "2323/128",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 53,
+      "vector_sha256": "ce10f77a7f1e9ac2a0bb97a7769b25f50e76b1d8a6a5130e63e8401c4363b6d1"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 30,
+      "nonzero_physical_coordinates": 221,
+      "norm_squared": "995/64",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 277,
+      "vector_sha256": "9c29b600ba45d5d249a5b45b0161207a5154d709fca1f3364b943bb840b69c2a"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 31,
+      "nonzero_physical_coordinates": 201,
+      "norm_squared": "549/32",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 725,
+      "vector_sha256": "345e417d9aeb31e106a57a84a6790b70f7659c892bf031d11f22c24f819ede92"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 36,
+      "nonzero_physical_coordinates": 223,
+      "norm_squared": "2771/128",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 965,
+      "vector_sha256": "e5a26dca1cb4a64952afefde223e48111c679349594015a1cd194c5f503e6ae5"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 35,
+      "nonzero_physical_coordinates": 207,
+      "norm_squared": "1119/64",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 5141,
+      "vector_sha256": "7622b6d101e8b7bd5e670e52334d69e499a211dceeb29414b33a6157ac43e0fb"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 42,
+      "nonzero_physical_coordinates": 211,
+      "norm_squared": "35/2",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 27413,
+      "vector_sha256": "26811d793cdf2e71e0418d67a6d69e155841bb7bdef79139215579edae75f605"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 39,
+      "nonzero_physical_coordinates": 215,
+      "norm_squared": "559/32",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 146197,
+      "vector_sha256": "dd783b255ba3e112ed216e6f7b96ea3defafb90cbf687e78cb36fe7a9981baec"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 40,
+      "nonzero_physical_coordinates": 215,
+      "norm_squared": "2191/128",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 389845,
+      "vector_sha256": "7213d8745a19ebb8119a8a49b9b6247f6e24970eb7f35cc7ed0f2ceba859890c"
+    }
+  ],
+  "antichain_roots": [
+    53,
+    277,
+    725,
+    965,
+    5141,
+    27413,
+    146197,
+    389845
+  ],
+  "counts": {
+    "antichain_disjoint_pairs": 28,
+    "finite_coercivity_cases": 536,
+    "macro_edges": 18312,
+    "negative_control_physical_prefix_edges": 3,
+    "physical_shortcut_edges": 82682,
+    "residual_coordinates_examined": 62637,
+    "zero_eigenvalue_pairs": 64
+  },
+  "flow_cases": [
+    {
+      "certified_omitted_square_tail_upper": "26",
+      "depth": 1,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 2,
+      "macro_edges": 2,
+      "maximum_integer_bits": 7,
+      "nonzero_physical_coordinates": 4,
+      "norm_squared": "4",
+      "odd_nodes": 2,
+      "residual_norm_squared": "2",
+      "root": 5,
+      "vector_sha256": "12da38ecbf1f596d4d1d9d3ea9c7a6b09e52c4d4223ac2e5552fc3632401ad65"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13",
+      "depth": 2,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 4,
+      "macro_edges": 6,
+      "maximum_integer_bits": 12,
+      "nonzero_physical_coordinates": 19,
+      "norm_squared": "23/2",
+      "odd_nodes": 6,
+      "residual_norm_squared": "1",
+      "root": 5,
+      "vector_sha256": "f8c9bb51ecefe8e2f731a79c7a2f2f0ada20bcefcc7bb2f806d8dddc024b8300"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/2",
+      "depth": 3,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 8,
+      "macro_edges": 14,
+      "maximum_integer_bits": 18,
+      "nonzero_physical_coordinates": 49,
+      "norm_squared": "125/8",
+      "odd_nodes": 14,
+      "residual_norm_squared": "1/2",
+      "root": 5,
+      "vector_sha256": "501629c4aadb69e9350ad226bbb3eecf5b432c2b394b74f443a5c4bf10a840e7"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/4",
+      "depth": 4,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 16,
+      "macro_edges": 30,
+      "maximum_integer_bits": 22,
+      "nonzero_physical_coordinates": 101,
+      "norm_squared": "553/32",
+      "odd_nodes": 30,
+      "residual_norm_squared": "1/4",
+      "root": 5,
+      "vector_sha256": "26036ac03251fb723e43eb194746581801cbd024a7ed84984564e0cb7891a120"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/8",
+      "depth": 5,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 32,
+      "macro_edges": 62,
+      "maximum_integer_bits": 27,
+      "nonzero_physical_coordinates": 219,
+      "norm_squared": "291/16",
+      "odd_nodes": 62,
+      "residual_norm_squared": "1/8",
+      "root": 5,
+      "vector_sha256": "0806caa530e54ac73cd35de2f691ecd417b1798605c0f89ee9793f2c6141415e"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/16",
+      "depth": 6,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 64,
+      "macro_edges": 126,
+      "maximum_integer_bits": 30,
+      "nonzero_physical_coordinates": 443,
+      "norm_squared": "9529/512",
+      "odd_nodes": 126,
+      "residual_norm_squared": "1/16",
+      "root": 5,
+      "vector_sha256": "aade45179b15125a9c60502549019b4ffd4c9c8acb2476698b0c886c6fd239ca"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/32",
+      "depth": 7,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 128,
+      "macro_edges": 254,
+      "maximum_integer_bits": 35,
+      "nonzero_physical_coordinates": 891,
+      "norm_squared": "4821/256",
+      "odd_nodes": 254,
+      "residual_norm_squared": "1/32",
+      "root": 5,
+      "vector_sha256": "7e54100985dd1252959314dedfe817c061cb737110da43f1ebbe31e173029a17"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/64",
+      "depth": 8,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 256,
+      "macro_edges": 510,
+      "maximum_integer_bits": 41,
+      "nonzero_physical_coordinates": 1743,
+      "norm_squared": "155085/8192",
+      "odd_nodes": 510,
+      "residual_norm_squared": "1/64",
+      "root": 5,
+      "vector_sha256": "ba4f1119e5afba81b01c6ecafcac713a533d8955924aa244445b2e05b986c300"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/128",
+      "depth": 9,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 512,
+      "macro_edges": 1022,
+      "maximum_integer_bits": 46,
+      "nonzero_physical_coordinates": 3459,
+      "norm_squared": "622011/32768",
+      "odd_nodes": 1022,
+      "residual_norm_squared": "1/128",
+      "root": 5,
+      "vector_sha256": "3470b8f67e72e40dea47d421a95010c280f825fdbc23805137b4d5d19c2c51cd"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/256",
+      "depth": 10,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 1024,
+      "macro_edges": 2046,
+      "maximum_integer_bits": 51,
+      "nonzero_physical_coordinates": 6947,
+      "norm_squared": "1245713/65536",
+      "odd_nodes": 2046,
+      "residual_norm_squared": "1/256",
+      "root": 5,
+      "vector_sha256": "a9a44d1f63f20c6f9d0849267743348cc27fcdb2b94e9b3661a8c1c6045d84eb"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/512",
+      "depth": 11,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 2048,
+      "macro_edges": 4094,
+      "maximum_integer_bits": 55,
+      "nonzero_physical_coordinates": 13951,
+      "norm_squared": "2493137/131072",
+      "odd_nodes": 4094,
+      "residual_norm_squared": "1/512",
+      "root": 5,
+      "vector_sha256": "e2a7a72651716d657ad3033274e9270b6d55c30cd4bfd62844db1a53e01a1f8b"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/1024",
+      "depth": 12,
+      "eigenvalue": [
+        "1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 4096,
+      "macro_edges": 8190,
+      "maximum_integer_bits": 60,
+      "nonzero_physical_coordinates": 28025,
+      "norm_squared": "9975997/524288",
+      "odd_nodes": 8190,
+      "residual_norm_squared": "1/1024",
+      "root": 5,
+      "vector_sha256": "cc980d4c1f61463692bbf0b9d259041a621807258cde22a28e4f4f8618099668"
+    },
+    {
+      "certified_omitted_square_tail_upper": "3988900680869645/628754697713201783142364789866496",
+      "depth": 7,
+      "eigenvalue": [
+        "1/2",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/32",
+      "leaf_count": 128,
+      "macro_edges": 254,
+      "maximum_integer_bits": 35,
+      "nonzero_physical_coordinates": 891,
+      "norm_squared": "6499058353418072807563275213/158456325028528675187087900672",
+      "odd_nodes": 254,
+      "residual_norm_squared": "2671735218265/633825300114114700748351602688",
+      "root": 5,
+      "vector_sha256": "7d0b8e6437cb60c756a553503a30c67ea93214775b8c6f6e952244175bc0ed7d"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/32",
+      "depth": 7,
+      "eigenvalue": [
+        "-1",
+        "0"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 128,
+      "macro_edges": 254,
+      "maximum_integer_bits": 35,
+      "nonzero_physical_coordinates": 891,
+      "norm_squared": "4821/256",
+      "odd_nodes": 254,
+      "residual_norm_squared": "1/32",
+      "root": 5,
+      "vector_sha256": "7610e3fe6b40035747d525e268174f7f3af550cc19e20a14ea08200d3b6fb580"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/32",
+      "depth": 7,
+      "eigenvalue": [
+        "0",
+        "1"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 128,
+      "macro_edges": 254,
+      "maximum_integer_bits": 35,
+      "nonzero_physical_coordinates": 891,
+      "norm_squared": "4821/256",
+      "odd_nodes": 254,
+      "residual_norm_squared": "1/32",
+      "root": 5,
+      "vector_sha256": "d77815b567be8535633817cb580e26605257c33c3eeff9f2ffa1871da30529df"
+    },
+    {
+      "certified_omitted_square_tail_upper": "13/16",
+      "depth": 6,
+      "eigenvalue": [
+        "3/5",
+        "4/5"
+      ],
+      "generation_square_bound_ratio": "1/2",
+      "leaf_count": 64,
+      "macro_edges": 126,
+      "maximum_integer_bits": 30,
+      "nonzero_physical_coordinates": 443,
+      "norm_squared": "9529/512",
+      "odd_nodes": 126,
+      "residual_norm_squared": "1/16",
+      "root": 5,
+      "vector_sha256": "439a87a84e1681fac8e308c4149a0c8f6d75ce3266dd423c7f069dec1fb5f9d4"
+    },
+    {
+      "certified_omitted_square_tail_upper": "4201577588799350159795520852995135172489242006601578703072804087478190588174011326424288040732612999324927105038931967960136448792888387329874125636339881/6828922843079345069576796410448401380784559053864960000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "depth": 8,
+      "eigenvalue": [
+        "21/20",
+        "0"
+      ],
+      "generation_square_bound_ratio": "3243919932521508681/3276800000000000000",
+      "leaf_count": 256,
+      "macro_edges": 510,
+      "maximum_integer_bits": 41,
+      "nonzero_physical_coordinates": 1743,
+      "norm_squared": "13687815647298245401370699303962229390432121409454921155987054131312489763872675824912815713810501740054292155145609153737877249581310801/207691874341393105141219853168803840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "odd_nodes": 510,
+      "residual_norm_squared": "59208656501315569162764155607054152560315554332897119840539850110311170835102057994090664323737492880348487189020278313559477834945742841/83076749736557242056487941267521536000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "root": 5,
+      "vector_sha256": "48f35df952616d27550f8c4d896bd0c6d831646a3e03243545737a7318494515"
+    }
+  ],
+  "limitations": [
+    "No Collatz proof, no new positive cycle, and no divergent ordinary source.",
+    "All eigenvector supports are constructively in the known basin of one.",
+    "Finite evidence does not by itself certify the infinite eigenspace or geometric tail.",
+    "The stated spectral disk is a sufficient inclusion, not a sharp spectral radius."
+  ],
+  "negative_controls_rejected": [
+    "interior_weight",
+    "missing_leaf",
+    "outside_support",
+    "root_leakage",
+    "wrong_physical_clock"
+  ],
+  "operator": "unweighted Hardy Q e_n=e_T(n), P=Q* on positive integer coefficients",
+  "schema": "collatz-creative-analytic-flow/v1",
+  "scope": "exact finite rational-complex flow, physical clock and complete residual checks; infinite claims use written geometric-tail proofs",
+  "status": "PASS",
+  "triangular_cases": [
+    {
+      "degree_bits": 2,
+      "h": 1,
+      "norm_squared": "1",
+      "residual_squared": "2"
+    },
+    {
+      "degree_bits": 4,
+      "h": 2,
+      "norm_squared": "6",
+      "residual_squared": "4"
+    },
+    {
+      "degree_bits": 6,
+      "h": 3,
+      "norm_squared": "19",
+      "residual_squared": "6"
+    },
+    {
+      "degree_bits": 8,
+      "h": 4,
+      "norm_squared": "44",
+      "residual_squared": "8"
+    },
+    {
+      "degree_bits": 10,
+      "h": 5,
+      "norm_squared": "85",
+      "residual_squared": "10"
+    },
+    {
+      "degree_bits": 12,
+      "h": 6,
+      "norm_squared": "146",
+      "residual_squared": "12"
+    },
+    {
+      "degree_bits": 14,
+      "h": 7,
+      "norm_squared": "231",
+      "residual_squared": "14"
+    },
+    {
+      "degree_bits": 16,
+      "h": 8,
+      "norm_squared": "344",
+      "residual_squared": "16"
+    },
+    {
+      "degree_bits": 18,
+      "h": 9,
+      "norm_squared": "489",
+      "residual_squared": "18"
+    },
+    {
+      "degree_bits": 20,
+      "h": 10,
+      "norm_squared": "670",
+      "residual_squared": "20"
+    },
+    {
+      "degree_bits": 22,
+      "h": 11,
+      "norm_squared": "891",
+      "residual_squared": "22"
+    },
+    {
+      "degree_bits": 24,
+      "h": 12,
+      "norm_squared": "1156",
+      "residual_squared": "24"
+    },
+    {
+      "degree_bits": 26,
+      "h": 13,
+      "norm_squared": "1469",
+      "residual_squared": "26"
+    },
+    {
+      "degree_bits": 28,
+      "h": 14,
+      "norm_squared": "1834",
+      "residual_squared": "28"
+    },
+    {
+      "degree_bits": 30,
+      "h": 15,
+      "norm_squared": "2255",
+      "residual_squared": "30"
+    },
+    {
+      "degree_bits": 32,
+      "h": 16,
+      "norm_squared": "2736",
+      "residual_squared": "32"
+    },
+    {
+      "degree_bits": 34,
+      "h": 17,
+      "norm_squared": "3281",
+      "residual_squared": "34"
+    },
+    {
+      "degree_bits": 36,
+      "h": 18,
+      "norm_squared": "3894",
+      "residual_squared": "36"
+    },
+    {
+      "degree_bits": 38,
+      "h": 19,
+      "norm_squared": "4579",
+      "residual_squared": "38"
+    },
+    {
+      "degree_bits": 40,
+      "h": 20,
+      "norm_squared": "5340",
+      "residual_squared": "40"
+    },
+    {
+      "degree_bits": 42,
+      "h": 21,
+      "norm_squared": "6181",
+      "residual_squared": "42"
+    },
+    {
+      "degree_bits": 44,
+      "h": 22,
+      "norm_squared": "7106",
+      "residual_squared": "44"
+    },
+    {
+      "degree_bits": 46,
+      "h": 23,
+      "norm_squared": "8119",
+      "residual_squared": "46"
+    },
+    {
+      "degree_bits": 48,
+      "h": 24,
+      "norm_squared": "9224",
+      "residual_squared": "48"
+    },
+    {
+      "degree_bits": 50,
+      "h": 25,
+      "norm_squared": "10425",
+      "residual_squared": "50"
+    },
+    {
+      "degree_bits": 52,
+      "h": 26,
+      "norm_squared": "11726",
+      "residual_squared": "52"
+    },
+    {
+      "degree_bits": 54,
+      "h": 27,
+      "norm_squared": "13131",
+      "residual_squared": "54"
+    },
+    {
+      "degree_bits": 56,
+      "h": 28,
+      "norm_squared": "14644",
+      "residual_squared": "56"
+    },
+    {
+      "degree_bits": 58,
+      "h": 29,
+      "norm_squared": "16269",
+      "residual_squared": "58"
+    },
+    {
+      "degree_bits": 60,
+      "h": 30,
+      "norm_squared": "18010",
+      "residual_squared": "60"
+    },
+    {
+      "degree_bits": 62,
+      "h": 31,
+      "norm_squared": "19871",
+      "residual_squared": "62"
+    },
+    {
+      "degree_bits": 64,
+      "h": 32,
+      "norm_squared": "21856",
+      "residual_squared": "64"
+    },
+    {
+      "degree_bits": 66,
+      "h": 33,
+      "norm_squared": "23969",
+      "residual_squared": "66"
+    },
+    {
+      "degree_bits": 68,
+      "h": 34,
+      "norm_squared": "26214",
+      "residual_squared": "68"
+    },
+    {
+      "degree_bits": 70,
+      "h": 35,
+      "norm_squared": "28595",
+      "residual_squared": "70"
+    },
+    {
+      "degree_bits": 72,
+      "h": 36,
+      "norm_squared": "31116",
+      "residual_squared": "72"
+    },
+    {
+      "degree_bits": 74,
+      "h": 37,
+      "norm_squared": "33781",
+      "residual_squared": "74"
+    },
+    {
+      "degree_bits": 76,
+      "h": 38,
+      "norm_squared": "36594",
+      "residual_squared": "76"
+    },
+    {
+      "degree_bits": 78,
+      "h": 39,
+      "norm_squared": "39559",
+      "residual_squared": "78"
+    },
+    {
+      "degree_bits": 80,
+      "h": 40,
+      "norm_squared": "42680",
+      "residual_squared": "80"
+    }
+  ]
+}

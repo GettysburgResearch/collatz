@@ -1,0 +1,53 @@
+{
+  "all_time_occupation_upper_claimed": false,
+  "arithmetic": {
+    "binary_scale_exponent": 128,
+    "rational_log_terms": 20
+  },
+  "capacity": {
+    "all_c_greater_than_one_failure": true,
+    "all_s_at_least_one_half_failure": true,
+    "exact_capacity_bounds_match_production": true,
+    "maximum_return_count": 37,
+    "original_source_cutoff": 8192,
+    "repair_mass": 1950,
+    "repair_support": 13,
+    "unsafe_sources": 2941,
+    "witness_path": [
+      31,
+      121,
+      91,
+      103,
+      175,
+      445,
+      334,
+      167,
+      319,
+      1822,
+      911,
+      244,
+      46,
+      23,
+      1
+    ]
+  },
+  "checker_sha256": "009f2b340bc381ce37cb360113138aa32ed37203e62193051195358460a6bf73",
+  "entropy": {
+    "charge_minus_drop_lower": "90231186155081932485427645197981887/340282366920938463463374607431768211456",
+    "gap_exceeds_0.000265165623": true,
+    "original_source_cutoff": 65536,
+    "return_index": 8,
+    "unsafe_sources": 23517,
+    "whole_source_charge_lower": "297256227149971152242247944991683947/170141183460469231731687303715884105728",
+    "whole_source_charge_upper": "298814768516826646450257533137403051/170141183460469231731687303715884105728",
+    "whole_source_entropy_drop_lower": "63294404758197863853359944928921371/85070591730234615865843651857942052864",
+    "whole_source_entropy_drop_upper": "504281268144860371999068244785386007/340282366920938463463374607431768211456"
+  },
+  "reviewed_sha256": {
+    "experiments/creative_occupation.py": "0bded380f847cf7bfd64ee72ffbdc062d2e7995aa3f2591ab567023ff90cf1b1",
+    "reports/2026-11-20-creative-closure/occupation-report.json": "8a901abc2d045c1a8db48362bfb0e63b09717446b0519ade9d3891859b77ec84",
+    "research/creative-closure-20261120/occupation.md": "56ea718f7541a5206f721d73f41397c269c75c016a4d652f123bf54069160077"
+  },
+  "schema": "creative-occupation-independent-five-review-v1",
+  "status": "PASS"
+}

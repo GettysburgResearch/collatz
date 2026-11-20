@@ -1,0 +1,155 @@
+{
+  "blocks": [
+    {
+      "block": "V without final one",
+      "result": [
+        "e",
+        9
+      ],
+      "start": "g"
+    },
+    {
+      "block": "W",
+      "result": [
+        "e",
+        9
+      ],
+      "start": "e"
+    },
+    {
+      "block": "W",
+      "result": [
+        "e",
+        9
+      ],
+      "start": "f"
+    },
+    {
+      "block": "W",
+      "result": [
+        "e",
+        9
+      ],
+      "start": "g"
+    }
+  ],
+  "checker_sha256": "d345578d44cc38dcafcf6c5c6a0205e29ecf4512a08eeb6f782c8f141cd2b4a0",
+  "rank_four_controls": [
+    {
+      "first_hit_clock": 62,
+      "forced_first_token_carries": 9,
+      "j": 1,
+      "odd_inputs": 4
+    },
+    {
+      "first_hit_clock": 116,
+      "forced_first_token_carries": 18,
+      "j": 2,
+      "odd_inputs": 4
+    },
+    {
+      "first_hit_clock": 170,
+      "forced_first_token_carries": 27,
+      "j": 3,
+      "odd_inputs": 4
+    },
+    {
+      "first_hit_clock": 224,
+      "forced_first_token_carries": 36,
+      "j": 4,
+      "odd_inputs": 4
+    },
+    {
+      "first_hit_clock": 278,
+      "forced_first_token_carries": 45,
+      "j": 5,
+      "odd_inputs": 4
+    },
+    {
+      "first_hit_clock": 332,
+      "forced_first_token_carries": 54,
+      "j": 6,
+      "odd_inputs": 4
+    }
+  ],
+  "rank_two_controls": [
+    {
+      "forced_first_token_carries": 1,
+      "t": 1
+    },
+    {
+      "forced_first_token_carries": 2,
+      "t": 2
+    },
+    {
+      "forced_first_token_carries": 3,
+      "t": 3
+    },
+    {
+      "forced_first_token_carries": 4,
+      "t": 4
+    },
+    {
+      "forced_first_token_carries": 5,
+      "t": 5
+    },
+    {
+      "forced_first_token_carries": 6,
+      "t": 6
+    },
+    {
+      "forced_first_token_carries": 7,
+      "t": 7
+    },
+    {
+      "forced_first_token_carries": 8,
+      "t": 8
+    },
+    {
+      "forced_first_token_carries": 9,
+      "t": 9
+    },
+    {
+      "forced_first_token_carries": 10,
+      "t": 10
+    },
+    {
+      "forced_first_token_carries": 11,
+      "t": 11
+    },
+    {
+      "forced_first_token_carries": 12,
+      "t": 12
+    }
+  ],
+  "schema": "collatz-creative-source-rank-independent/v1",
+  "scope": "fixed literal-rule block certificate and bounded ordinary first-hit controls; no pure-power convergence tested",
+  "status": "PASS",
+  "target_residue_witnesses": [
+    {
+      "convergence_tested": false,
+      "j": 55,
+      "low_bits_value": 113,
+      "modulus_bits": 7,
+      "power_of_three_exponent": 1484,
+      "t": 1
+    },
+    {
+      "convergence_tested": false,
+      "j": 2775,
+      "low_bits_value": 7281,
+      "modulus_bits": 13,
+      "power_of_three_exponent": 74924,
+      "t": 2
+    },
+    {
+      "convergence_tested": false,
+      "j": 174807,
+      "low_bits_value": 466033,
+      "modulus_bits": 19,
+      "power_of_three_exponent": 4719788,
+      "t": 3
+    }
+  ],
+  "universal_arguments": "marked-token ordering and valuation proof are in the manuscript and review"
+}
