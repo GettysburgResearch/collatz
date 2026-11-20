@@ -1,0 +1,77 @@
+{
+  "context_pr_pins": [
+    {
+      "pr": 146,
+      "sha": "7d04c4dd756cfe495eb3eee78eba35a99085cd2a",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "pr": 147,
+      "sha": "b74b2d466f58844a742a6ed6bcdf06844269f361",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/147"
+    },
+    {
+      "pr": 148,
+      "sha": "6ff18e4f63be8f3bece76215fcfe44d83b001d7f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/148"
+    },
+    {
+      "pr": 149,
+      "sha": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/149"
+    }
+  ],
+  "external_primary_context": [
+    {
+      "authors": "Olivier Rozier and Claude Terracol",
+      "scope": "Definition1.2 and the CST/first-crossing distinction; not a new proof of either conjecture",
+      "title": "Paradoxical behavior in Collatz sequences",
+      "url": "https://arxiv.org/html/2502.00948v2"
+    }
+  ],
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "resident_sources": [
+    {
+      "git_blob": "638d19a3adabf5e83dd1113473ffb3632f92553b",
+      "path": "AGENTS.md",
+      "sha256": "eb7ef98a32f21b2fda36bcd6a64a4c0b8f2cbd020454004022cc316f22e3d1ba",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/AGENTS.md"
+    },
+    {
+      "git_blob": "d9127b7da910783fc937c8d68ba545651f7acf43",
+      "path": "docs/RESEARCH_MAP.md",
+      "sha256": "10dd929f2aa90c36126ea0844b8bb9f04b5b8ded130dd7c734ac03ded38cb17b",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/docs/RESEARCH_MAP.md"
+    },
+    {
+      "git_blob": "e9b3e919a894170c88149e173fc20b846e6dba8f",
+      "path": "research/integrated/ERRATA.md",
+      "sha256": "27bb01b72bd8785e59ffafce9dfb1d208067a9cb4b59c6b8794dabac596a7c19",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/ERRATA.md"
+    },
+    {
+      "git_blob": "a3557d28e1369507e5c503020fd383cb8f08f5b1",
+      "path": "research/astra-three-routes/pass4/MOVING_GHOST_RANK.md",
+      "sha256": "12176fafa262f9273d0ca877c6afce68a7071319a9e8127e2eabedc87beaed66",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/astra-three-routes/pass4/MOVING_GHOST_RANK.md"
+    },
+    {
+      "git_blob": "d703ba2ff3a9207665fb80263499c7a3a5635f51",
+      "path": "research/astra-three-routes/pass5/RANK_MOMENTS.md",
+      "sha256": "d354b6c2769febea7429f0af9282c0e8d431f38b8a1e4f08ae09c986958287e2",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/astra-three-routes/pass5/RANK_MOMENTS.md"
+    },
+    {
+      "git_blob": "9df73b7d054083f0f95ac29c793b092703f5368c",
+      "path": "research/astra-three-routes/pass5/UNSAFE_REPAYMENT.md",
+      "sha256": "556fa614c3cb2419584717b971b7e534441245973658991a0c109dcdf94c611d",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/astra-three-routes/pass5/UNSAFE_REPAYMENT.md"
+    },
+    {
+      "git_blob": "5b0f7cc6b55ed9a7af5fe6aaf253cb6f4a73fa36",
+      "path": "research/integrated/renewal-transport/README.md",
+      "sha256": "c23ef2e0dfc7aa92f5adaaf53981150f45d4695f42b8a730e2abf559603a1ec7",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/renewal-transport/README.md"
+    }
+  ]
+}

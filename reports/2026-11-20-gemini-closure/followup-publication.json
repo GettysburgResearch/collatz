@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-gemini-followup-publication/v1",
+  "repository": "GettysburgResearch/collatz",
+  "pull_request": 152,
+  "branch": "research/gemini-global-closure-20261120",
+  "initial_scientific_commit": "a882b449ca7da4a1e7ec42392e0a436611befe9b",
+  "followup_scientific_commit": "55be11c46e253d94dbbc32efef42ab59c4af1a70",
+  "followup_scientific_tree": "cbc289ece00cb427076ad2a044c9364ecb5e0575",
+  "remote_head_verified": true,
+  "checkout_source": "Actual Git fetch of the published branch, then independent complete checkout at that exact commit.",
+  "validation": {
+    "receipt": "followup-checkout-validation.json",
+    "sha256": "cf10536bdf2ae5a67655ca296559bc6c877f75979ebd8062f183d7fc12b54d87",
+    "passed": true,
+    "command_count": 11,
+    "checkout_unchanged": true
+  },
+  "drift_certificate": {
+    "receipt": "drift-receipt.json",
+    "sha256": "42cbe571aea112d959a0aa70d450ca3b3d29882922f50c69d6759c9158aef685",
+    "normal_and_optimized_python_passed": true,
+    "outputs_byte_identical": true,
+    "source_sha256": {
+      "FIXED_SOURCE_DRIFT.md": "64e6e22f7a32bf975107c75158b4719af8aa7ff21b12ac35c307600603f74d98",
+      "check_transported_drift.py": "2a6aac718e199a3660a9c4d5b6b3c45107a045f916688fd95b9bbd59a2fb3312"
+    }
+  },
+  "evidence_boundary": "Finite physical source replay plus rigorous infinite original-source tail; exact sign certificates at returns 0 and 9 only.",
+  "receipt_publication_scope": "This later documentation commit records the exact scientific-content validation. It does not self-certify its own final commit identifier.",
+  "lean_build_performed": false,
+  "remote_ci_claimed": false,
+  "collatz_proved": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "collatz-gemini-publication/v1",
+  "repository": "GettysburgResearch/collatz",
+  "branch": "research/gemini-global-closure-20261120",
+  "base_commit": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scientific_content_commit": "a882b449ca7da4a1e7ec42392e0a436611befe9b",
+  "scientific_content_tree": "c68231b0d6e50ae2441d9135e16a1dc7eab266f8",
+  "scientific_content_remote_verified": true,
+  "checkout_source": "Actual Git fetch of the published research branch; independent complete local clone at that exact commit.",
+  "validation": {
+    "receipt": "checkout-validation.json",
+    "sha256": "074c163ea3cebc351e0253560ff1cabce0a0923079fc9cdf2040719edf58d65d",
+    "passed": true,
+    "command_count": 11,
+    "checkout_unchanged": true
+  },
+  "arithmetic_receipt": {
+    "path": "arithmetic-receipt.json",
+    "sha256": "463665b8c0e8aab2a08b40aea6b9936f125400a7a921ce82f23bcc3b9b763735"
+  },
+  "receipt_publication_scope": "This later documentation commit records execution of the scientific-content commit. It does not claim validation of its own final commit identifier.",
+  "lean_build_performed": false,
+  "remote_ci_claimed": false,
+  "collatz_proved": false
+}
