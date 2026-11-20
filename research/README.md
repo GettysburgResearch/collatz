@@ -22,6 +22,7 @@ Local source collections are also available for detailed exploration:
 
 | Collection | What is there | How to interpret its status |
 |---|---|---|
+| [Prime height and restricted merger rigidity](structural-reset-20261120/README.md) | Elementary dispersion of prime height on every hypothetical escape, and a complete conditional descent from a restricted five-ray merger statement. | Independently reviewed narrow structural claims; prime retention, the restricted mergers, and full Collatz remain open. An auxiliary physical coupling attempt includes its exact reset obstruction. |
 | [Critical mass and inverse frontiers](astra-critical-mass/README.md) | Proof attempts, finite-time bounds, physical merging, inverse pruning and counterexamples. | Use the mass/rank topic guides to identify reviewed clauses; author-stage labels and failed global attempts are retained. |
 | [Section renewal and moving ranks](astra-three-routes/README.md) | Complementary operator, source-height, coefficient and rank constructions, including distinct alternative continuation packets. | A shared directory or experiment number does not identify one theorem. Use the specific path, map and rank named by the guide. |
 | [External Collatz dossier](external/mazur-2026/README.md) | External result summaries, source evidence, local analyses and proposed strengthening routes. | External source-qualified theorems, native reviewed components and open strengthening hypotheses have different statuses. |
