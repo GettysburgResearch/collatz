@@ -1,0 +1,119 @@
+{
+  "bridge_compositions_with_individually_checked_terminals": [
+    {
+      "input": 339991624356,
+      "left_clock": 232,
+      "right_clock": 174,
+      "smaller_parameter": 254993718267
+    },
+    {
+      "input": 889747438244,
+      "left_clock": 380,
+      "right_clock": 273,
+      "smaller_parameter": 667310578683
+    },
+    {
+      "input": 1439503252132,
+      "left_clock": 193,
+      "right_clock": 170,
+      "smaller_parameter": 1079627439099
+    }
+  ],
+  "malformed_certificate_mutations_rejected": 8,
+  "mixed_guard_word_compiler_fixtures": [
+    {
+      "certificate_clock": 14,
+      "guard_word": [
+        11
+      ],
+      "source_bits": 4,
+      "source_residue": 11,
+      "terminal_power_index": 2
+    },
+    {
+      "certificate_clock": 14,
+      "guard_word": [
+        35
+      ],
+      "source_bits": 6,
+      "source_residue": 35,
+      "terminal_power_index": 2
+    },
+    {
+      "certificate_clock": 668,
+      "guard_word": [
+        11,
+        11
+      ],
+      "source_bits": 653,
+      "source_residue": 3211,
+      "terminal_power_index": 326
+    },
+    {
+      "certificate_clock": 128,
+      "guard_word": [
+        11,
+        35
+      ],
+      "source_bits": 115,
+      "source_residue": 3723,
+      "terminal_power_index": 56
+    },
+    {
+      "certificate_clock": 182,
+      "guard_word": [
+        35,
+        11
+      ],
+      "source_bits": 169,
+      "source_residue": 1443,
+      "terminal_power_index": 83
+    },
+    {
+      "certificate_clock": 128,
+      "guard_word": [
+        35,
+        35
+      ],
+      "source_bits": 117,
+      "source_residue": 2979,
+      "terminal_power_index": 56
+    }
+  ],
+  "runs_and_terminals": {
+    "six_step_run_checks": 108,
+    "successful_unbounded_family_fixtures": [
+      {
+        "certificate_clock": 14,
+        "guard_repetitions": 1,
+        "source_bits": 6,
+        "terminal_power_index": 2
+      },
+      {
+        "certificate_clock": 128,
+        "guard_repetitions": 2,
+        "source_bits": 117,
+        "terminal_power_index": 56
+      },
+      {
+        "certificate_clock": 1106,
+        "guard_repetitions": 3,
+        "source_bits": 1091,
+        "terminal_power_index": 542
+      }
+    ],
+    "symbolic_terminal_checks": 20
+  },
+  "scope": "Exact finite certificate checks. The selector terminates but returns UNRESOLVED outside its proved guards and terminals. No complete ordinary cover is asserted.",
+  "six_step_guard_instances": 258,
+  "smallest_symbolic_selector_hole": 2,
+  "status": "PASS",
+  "three_ray": {
+    "CRT_resistance_fixtures": 30,
+    "exact_ternary_valuation_max": 30,
+    "extra_horizon_max": 120,
+    "noncontracting_prefixes": 37,
+    "offset_identities": 2,
+    "ordinary_lift_pairs": 7
+  }
+}

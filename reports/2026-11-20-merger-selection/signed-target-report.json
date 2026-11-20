@@ -1,0 +1,66 @@
+{
+  "source_head": "561d48a4d3a793a59b1cdf0406062ae1a6d47515",
+  "scope": "Finite exact replay; no extrapolation to all signed complexities or escaping orbits.",
+  "terminal_sets": [
+    {
+      "k": 1,
+      "signed_inverse_states": 3,
+      "positive_targets": 2,
+      "maximum": 5
+    },
+    {
+      "k": 2,
+      "signed_inverse_states": 9,
+      "positive_targets": 8,
+      "maximum": 85
+    },
+    {
+      "k": 3,
+      "signed_inverse_states": 23,
+      "positive_targets": 22,
+      "maximum": 1085
+    },
+    {
+      "k": 4,
+      "signed_inverse_states": 55,
+      "positive_targets": 54,
+      "maximum": 12325
+    },
+    {
+      "k": 5,
+      "signed_inverse_states": 134,
+      "positive_targets": 133,
+      "maximum": 131405
+    },
+    {
+      "k": 6,
+      "signed_inverse_states": 318,
+      "positive_targets": 317,
+      "maximum": 1346485
+    }
+  ],
+  "small_terminal_hitting_times": {
+    "1": 0,
+    "2": 1,
+    "5": 4,
+    "7": 11,
+    "23": 11,
+    "27": 70,
+    "28": 13,
+    "85": 8
+  },
+  "signed_first_hit_replays": 11791,
+  "dyadic_replays": 20632,
+  "strict_descents": 10032,
+  "distinct_h_endpoint_pairs": 104,
+  "replays_by_signed_odd_count": {
+    "2": 692,
+    "4": 2672,
+    "6": 4028,
+    "8": 2970,
+    "10": 1196,
+    "12": 233
+  },
+  "exact_constant_inequalities": 3,
+  "passed": true
+}
