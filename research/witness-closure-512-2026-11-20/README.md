@@ -18,13 +18,32 @@ the main claim:
 * [Complete-witness transfer between two seed pairs](continuation-algebra.md)
   proves an exact smaller-parameter reduction for
   `M > 3`, `M = 3 mod 2^121`: replace `M` by `(M+4011)/2`.
+  [The strengthened prefix argument](continuation-j.md) lowers the required
+  modulus to `2^119`.
   The supplied source witness keeps its length and loses one unit of total
   exponent. The implementation validates both prefix identities and reconstructs
   the original target only when the smaller target witness is available.
+* [Two exact parameter contractions](continuation-negative.md) prove
+  `C(M) <=> C((128M-69)/243)` for `M = 292863 mod 497664`, and
+  `C(M) <=> C((512M-271)/729)` for `M = 774143 mod 1492992`.
+  Both child parameters are positive and strictly smaller. The proofs and
+  [standalone replay](verify_negative.py) give exact source and target witness
+  conversions for both classes. The first rule is also included in the main
+  verifier's recursive dispatcher.
+* [Removing redundant J steps](continuation-j.md) doubles the parameter
+  classes of the Q95 and P1215 descents to `m = 95 mod 256` and
+  `m = 1215 mod 16384`, respectively, and proves the stronger seed-pair
+  transfer just described.
 * [General descent from a certified base pair](continuation-descent.md)
   gives an explicit precision threshold and a finite list of smaller P/Q
   premises. [The detailed parameter-one construction](continuation-lift.md)
   gives the fifteen-call specialization near `M=1`.
+* [Global closure identities and a further merger](continuation-closure.md)
+  proves `3n in E <=> n in E` for `n = 187 mod 256`, with explicit
+  unequal-length prefixes. It also derives precise conditional consequences
+  of the full P/Q assertion and proves a separate equivalence for global
+  multiplication-by-three closure. It does not identify that stronger
+  closure with the original claim.
 
 These are proved transfer and induction rules, not a proof that their recursive
 premises or their parameter classes cover every input.
@@ -576,14 +595,25 @@ and implemented descending reductions. In particular:
 
 The extended verifier was run independently by its author and the integrating
 agent in normal and optimized Python. Both modes returned identical `PASS`
-JSON. It checks all three fixed certificates, the k-family schema, all three
-P/Q descent schemas, the four CA-003 seed witnesses and its two universal
-affine identities. Finite reconstruction checks comprise 39 transformed
-fixtures, five Q19 cases, nine Q95/P1215 cases, and two CA-003 cases; 11
-malformed witnesses and 18 invalid certificates or reconstructions are rejected.
-Unsupported recursive children, including those of CA-003, remain `UNRESOLVED`.
-The script explicitly reports `full_claim: UNRESOLVED`. These counts are not a
-convergence bound or an exhaustive coverage claim.
+JSON. It checks all three fixed certificates, the k-family schema, the original
+and strengthened P/Q descents, the four CA-003 seed witnesses, its strengthened
+J transfers, and the first contraction from `continuation-negative.md`.
+Finite reconstruction checks comprise 41 transformed fixtures, five Q19
+cases, thirteen Q95/P1215 cases, four CA-003 cases, and four negative-template
+cases. The old Q95/P1215 and CA-003 subsets are checked independently.
+Eleven malformed witnesses, 25 invalid certificates or reconstructions, and
+16 incomplete forced-prefix witnesses are rejected. Five nonminimal source
+witnesses and five nonminimal child target witnesses check terminal padding;
+two source and two target round trips check the reversible transfers.
+
+The independent [verify_negative.py](verify_negative.py) replay checks both
+contraction families. It reports sixteen complete prefix parity certificates,
+twelve source and twelve target reconstructions, and four malformed-witness
+rejections. It also passes normally and with Python assertions disabled.
+
+Unsupported recursive children remain `UNRESOLVED`, and both scripts explicitly
+report `full_claim: UNRESOLVED`. These counts are not a convergence bound or an
+exhaustive coverage claim.
 
 ## 8. The unresolved proof obligation
 
