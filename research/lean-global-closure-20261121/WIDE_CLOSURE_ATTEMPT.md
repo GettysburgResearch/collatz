@@ -7,6 +7,14 @@ with a uniform pressure-tail estimate. It did not obtain a complete recursive
 dispatcher, a smaller partner for every source, or an upper bound excluding
 all survivors.
 
+After this source checkpoint, a further live refresh found new work in
+PR177, PR180, PR183, and PR185. The subsequent
+[literature continuation](LITERATURE_CLOSURE_ATTEMPT.md) derives a new
+global weighted bound for the canonical inverse potential under its pinned
+population hypotheses, and develops a typed interval continuation. Its
+written proofs and independent review are separate from the compiled core
+packet described below; no full closing implication is claimed.
+
 ## What was examined
 
 The starting inventory contains all 143 pull requests returned by the
@@ -176,6 +184,15 @@ universal theorem.
 
 See [ASYNC_CLOSURE_ATTEMPT.md](ASYNC_CLOSURE_ATTEMPT.md) and
 [AsynchronousReset.lean](CollatzGlobalClosure/AsynchronousReset.lean).
+
+The subsequent [general dispatcher attempt](NONTERMINAL_DISPATCH_ATTEMPT.md)
+keeps an entire nested target as one recursive query, so that no newly
+returned certificate is silently reused without a rank bound. It derives
+exact positive-context rules, the remaining `(6s+1,s)` comparison, and the
+zero-context carry that still lacks a decreasing rank. The fixed general
+powered-child extension is disproved by the certified source `2^4*7`.
+These follow-on identities are written mathematics, not additional Lean
+declarations counted in the 16-unit build.
 
 ## 4. The infinite pressure tail is controlled; the core remains open
 

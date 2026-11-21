@@ -1,0 +1,116 @@
+{
+  "observed_utc": "2026-11-21T22:41:18Z",
+  "scope": "Final live refresh after scientific checkpoint; new source inspections recorded separately. Original all-PR inventory remains frozen.",
+  "previous_inventory_utc": "2026-11-21T21:50:00Z",
+  "refreshed_heads": [
+    {
+      "pr": 177,
+      "title": "Lean: alphabet-four reduction and parallel witness attacks (global cover open)",
+      "head": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "updated_at": "2026-11-21T22:38:20Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "pr": 183,
+      "title": "Lean Collatz: forced-band renewal and ordinary merger normal forms",
+      "head": "907a540943090968bc683b1b9246208e9053c1f8",
+      "updated_at": "2026-11-21T22:37:37Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "pr": 185,
+      "title": "Literature-led Collatz attack: physical word erasure and source-preserving transport",
+      "head": "6d2765ef462fb575c49d4133b54286be7ffe68ec",
+      "updated_at": "2026-11-21T22:41:10Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "pr": 180,
+      "title": "Collatz: joint clocks, natural predecessor density, and Lean descent",
+      "head": "cf91e46fa9fbadba3df7942202a5197c134d0ce0",
+      "updated_at": "2026-11-21T22:11:38Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    }
+  ],
+  "recent_listing": [
+    {
+      "pr": 177,
+      "head": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "title": "Lean: alphabet-four reduction and parallel witness attacks (global cover open)",
+      "updated_at": "2026-11-21T22:38:20Z"
+    },
+    {
+      "pr": 183,
+      "head": "907a540943090968bc683b1b9246208e9053c1f8",
+      "title": "Lean Collatz: forced-band renewal and ordinary merger normal forms",
+      "updated_at": "2026-11-21T22:37:37Z"
+    },
+    {
+      "pr": 175,
+      "head": "2055b8a311ab87d07bffc730154a7f8546fe382c",
+      "title": "Lean Collatz attack: forced-section returns, offset transfer, and rank obstructions",
+      "updated_at": "2026-11-21T22:29:34Z"
+    },
+    {
+      "pr": 185,
+      "head": "3a2341f4b909cb83f6c2a0eabe946d3d96fc6148",
+      "title": "Literature-led Collatz attack: physical word erasure and source-preserving transport",
+      "updated_at": "2026-11-21T22:27:01Z"
+    },
+    {
+      "pr": 180,
+      "head": "cf91e46fa9fbadba3df7942202a5197c134d0ce0",
+      "title": "Collatz: joint clocks, natural predecessor density, and Lean descent",
+      "updated_at": "2026-11-21T22:11:38Z"
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "title": "Lean Collatz attack: marked returns, temporal density, and common rank",
+      "updated_at": "2026-11-21T15:53:42Z"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "updated_at": "2026-11-21T15:45:03Z"
+    },
+    {
+      "pr": 182,
+      "head": "8372e302041a55057742a9e6ee9b4fa600c88fdb",
+      "title": "Lean: arbitrarily strong descents in the forced dyadic section",
+      "updated_at": "2026-11-21T15:29:06Z"
+    },
+    {
+      "pr": 176,
+      "head": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "title": "Lean: marked-band populations and finite survivor certificates",
+      "updated_at": "2026-11-21T15:28:24Z"
+    },
+    {
+      "pr": 173,
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "updated_at": "2026-11-21T14:34:32Z"
+    },
+    {
+      "pr": 174,
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "title": "research: dependency-free Lean attack \u2014 Collatz from one \u03c8-closure lemma (open)",
+      "updated_at": "2026-11-21T09:39:39Z"
+    },
+    {
+      "pr": 181,
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "updated_at": "2026-11-21T08:47:54Z"
+    }
+  ],
+  "subsequent_exact_head_inspection": {
+    "observed_utc": "2026-11-21T22:49:09Z",
+    "pr": 180,
+    "head": "d0349de2108abb7c8fb8393c086610e3372df116",
+    "title": "Collatz: Lean marked-floor criteria and canonical inverse potentials",
+    "scope": "Written potential and population sources inspected; used as explicit source-qualified hypotheses, not Lean imports."
+  }
+}

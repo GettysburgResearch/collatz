@@ -10,6 +10,16 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Compiled results
 
+The latest [literature continuation](LITERATURE_CLOSURE_ATTEMPT.md) is a
+separate written proof packet. Using the explicitly pinned PR180 population
+and canonical-potential inputs, it proves the global weighted bound
+`sum_(n<=X, nonperiodic odd unit) V(n)/n <= (5/c)*X^(39/40)` and consequently
+`sum V(n)/n^2 <= 200/c`. The deduction has an independent written review;
+it is not counted among the Lean compilations below. Its missing transfer
+to an invariant component label's multiplicative five energy is explicit.
+The same continuation records a typed certificate evaluator and exact
+interval fusion, including the unbounded terminal case that remains open.
+
 ### Whole-repository continuation
 
 The [wider attack](WIDE_CLOSURE_ATTEMPT.md) compares the current complete-witness,
@@ -43,6 +53,11 @@ All new formal sources can be compiled without Mathlib:
 python -B build_wide.py --lean /path/to/lean-4.34.1/bin/lean \
   --output /fresh/wide-build --receipt /fresh/wide-build.json
 ```
+
+The [published-checkout execution record](../../reports/lean-global-closure-20261121/wide/VALIDATION.md)
+records the successful fresh build of all 16 core units, 71 axiom reports
+using only Lean's standard axioms, and all five required repository checks
+at the exact scientific commit.
 
 The detailed [inverse](INVERSE_CARRY_CONTINUATION.md),
 [certificate](ASYNC_CLOSURE_ATTEMPT.md), and
