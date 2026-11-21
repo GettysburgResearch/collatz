@@ -49,3 +49,36 @@ proved. No theorem named `Universal` is asserted without such a hypothesis.
 Complete-checkout integrity and published-head execution results are recorded
 separately after the corresponding real executions. No receipt here is used
 as a substitute for an execution at a later commit.
+
+## Published checkpoint 1
+
+Actual remote commit `4beacbee05b5dfd07f8f7b0cdf2a98126cb6d64c`, tree
+`9d3f9a35048896d9473b798ebc818f021b134027`, was fetched into a fresh detached
+complete checkout. It contained 336 tracked files and was clean before and
+after execution. Both required executions passed:
+
+- `python -X utf8 -B tools/validate.py`: all five integrity commands passed.
+- Full sequential `check.py` replay: all twelve modules passed again; the
+  final twenty-four theorem dependency audits used only the standard axioms.
+
+The exact commit/tree/commands are in `checkpoint-1.json`; the integrity
+output is in `checkpoint-1-integrity.log`; every source/generated-source
+hash and proof-check result is in `checkpoint-1-lean.json`. These files
+record checkpoint 1, not the commit that subsequently stores its receipt.
+
+## Follow-up source-packet execution
+
+The added `LowerMarkedMerger.lean` extends the directed small-endpoint
+argument in PR183 to ordinary component mergers and proves the two marked
+induction equivalences, with their existence obligations explicit. The
+complete thirteen-module packet then passed a fresh sequential replay.
+Every new module was warning-free with warnings treated as errors; the
+final twenty-seven theorem audits use only the standard logical axioms.
+
+`lean-v2-receipt.json` identifies every checked source and generated source;
+`axioms-v2.log` is the final audit output. The related-work note is a targeted
+mathematical comparison of frozen PR180/182/183 interfaces, not a blanket
+verification of their analytic or formal packages.
+
+The final published-head execution will be recorded in the PR body after
+fetching that exact commit, avoiding a self-referential receipt commit.

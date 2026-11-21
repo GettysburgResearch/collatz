@@ -1,6 +1,7 @@
 module
 
 public import Examples
+public import LowerMarkedMerger
 public import RisingReturns
 
 @[expose] public section
@@ -31,3 +32,7 @@ public import RisingReturns
 #print axioms CollatzShell.BandExamples.reserve_283_merge
 #print axioms CollatzShell.BandExamples.seed_319_no_native_descent
 #print axioms CollatzShell.BandExamples.seed_319_smaller_merger
+
+#print axioms CollatzShell.ForwardSection.lower_marked_from_small_merger
+#print axioms CollatzShell.ForwardSection.collatz_iff_marked_merger_descent
+#print axioms CollatzShell.ForwardSection.collatz_iff_small_marked_merger_cover

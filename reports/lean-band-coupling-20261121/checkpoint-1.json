@@ -1,0 +1,37 @@
+{
+  "commit": "4beacbee05b5dfd07f8f7b0cdf2a98126cb6d64c",
+  "tree": "9d3f9a35048896d9473b798ebc818f021b134027",
+  "clean_before": true,
+  "clean_after": true,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.669
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/lean-band-coupling-20261121/check.py",
+        "--lean",
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "--mathlib",
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4",
+        "--build-dir",
+        "/workspace/scratch/c6766c1207a3/collatz_band_remote_build_20261121"
+      ],
+      "exit_code": 0,
+      "seconds": 66.025
+    }
+  ],
+  "complete": true
+}

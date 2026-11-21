@@ -23,7 +23,7 @@ import time
 MODULES = [
     "ShellCover", "ForwardSection", "SectionDynamics", "RisingReturns",
     "ClockSteering", "OffsetDescent", "OffsetHorizon", "ReturnClock",
-    "RisingMerge", "SourceBoundedMerge", "Examples", "Audit",
+    "RisingMerge", "SourceBoundedMerge", "LowerMarkedMerger", "Examples", "Audit",
 ]
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 

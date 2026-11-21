@@ -1,0 +1,33 @@
+'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.steer_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.steer_non_descending' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.no_descent_forces_height_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.binary_lift' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OffsetDescent.offset_descent_transports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.rebase_hits' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OffsetDescent.reservedRebase_hits' depends on axioms: [propext, Quot.sound]
+'CollatzShell.OffsetDescent.reservedRebase_cheaper_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.basin_of_cheaper_reservedRebase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.horizonSeed_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.OffsetDescent.horizonSeed_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.rising_smaller_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.horizon_family_smaller_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.horizon_family_basin_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.marked_return_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.eventually_long_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_source_bounded_section_merge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandExamples.reserve_283_merge' depends on axioms: [propext, Quot.sound]
+'CollatzShell.BandExamples.seed_319_no_native_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandExamples.seed_319_smaller_merger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.lower_marked_from_small_merger' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_marked_merger_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.collatz_iff_small_marked_merger_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

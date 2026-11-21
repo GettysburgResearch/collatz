@@ -234,6 +234,50 @@ the original source, or prove a well-founded rank that supplies the same
 induction.** Phase forcing and the splice algebra do not by themselves
 establish that existence statement.
 
+### A second valid route: keep induction inside the marked set
+
+The follow-up [LowerMarkedMerger.lean](lean/LowerMarkedMerger.lean) builds on
+PR183's lower-mark height estimate at frozen head
+`8659cf62ac685540cadeef320e596c852fbb0959`. Its source theorem assumes a
+small directed forward endpoint. The new extension permits a positive
+ordinary merger partner on any branch entering the same orbit.
+
+Suppose \(T^a(x)=T^b(n)\), \(x>0\), \(n>0\), and
+
+\[
+4\lfloor\sqrt x\rfloor+2\lfloor\log_2x\rfloor
+\le\lfloor\log_2n\rfloor.
+\]
+
+Then there is a marked \(y=T^t(x)<n\), with the explicit physical merger
+
+\[
+T^a(y)=T^{b+t}(n),\qquad \operatorname{Basin}(n)
+\Longleftrightarrow\operatorname{Basin}(y).
+\]
+
+This need not put \(y\) on the forward orbit of \(n\). It gives the lower
+marked component partner that strong induction on marked values actually
+requires. The module proves the exact equivalence
+
+\[
+\mathrm{Universal}\quad\Longleftrightarrow\quad
+\forall n\text{ marked},\ n>1:\quad
+\exists y<n\text{ marked},\ \exists a,b:\ T^a(y)=T^b(n).
+\]
+
+It also proves an equivalent quantitative cover: every marked \(n\ge16\)
+has an ordinary merger partner satisfying the displayed size budget. The
+positive inputs below 16 are discharged by a kernel-checked finite proof.
+The existence part of this quantitative cover remains open. The budget is
+far stronger than merely \(x<n\); it is not silently assumed for the
+partners in the earlier infinite-family theorem.
+
+[Latest connections](LATEST_CONNECTIONS.md) records the targeted combination
+attempts with simultaneous PR180, PR182 and PR183 updates. Their selected
+contraction exponents, predecessor populations, and directed descent guards
+are kept distinct from the required prescribed-source coverage.
+
 ## Exact finite search and replay
 
 [reserve_search.py](experiments/reserve_search.py) searches finite inverse

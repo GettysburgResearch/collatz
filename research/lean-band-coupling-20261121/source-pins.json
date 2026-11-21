@@ -25,5 +25,22 @@
       "upstream_path": "research/lean-shell-cover/RisingReturns.lean",
       "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a"
     }
+  ],
+  "related_work_not_imported": [
+    {
+      "pr": 180,
+      "head": "5c0b59be54d7f54351141c407f84584373a06d80",
+      "scope": "Written marked predecessor populations and explicit analytic input; not imported as a Lean axiom."
+    },
+    {
+      "pr": 182,
+      "head": "8372e302041a55057742a9e6ee9b4fa600c88fdb",
+      "scope": "Selected-exponent contractions and phase/low-bit comparison; targeted statement inspection."
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "scope": "Directed small-endpoint lower-mark estimate; credited mathematical input for the independently checked merger extension."
+    }
   ]
 }
