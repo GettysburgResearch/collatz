@@ -30,3 +30,35 @@ The original core imports above remain at their original pin.
 | PR177 | `fe58c189b619d2983940b19a50f1b12798f5651f` | Exact witness and adjacent-source normal forms. Its reported remaining odd-valuation branch retains a larger source multiplier; it does not furnish the missing complete rule selector here. |
 | PR178 | `7e40cb5e09f4ed84b96eebf1d2e3fe43fdadf862` | Exact ordinary cylinder lifting and certificate normalization; attribution and current scope were refreshed from the PR, without importing its module. |
 | PR179 | `4bf2675bcc78b42a3f17c0dd826e1dfcc4c8f35b` | `research/lean-descent-20261121/INVERSE_RETURN.md`: a contracting inverse comparison and the obstruction to an exclusively smaller-ancestor proof program. Its half-crossing budget is still an explicit unproved universal assertion. The present shared-order program permits other moves. |
+
+## Mandatory forward section: checkpoint 5
+
+The new direct dependency is **PR173 at
+`fa0c9e2a2851e6324391e39c17afcb5913185aec`**. The four files
+`ShellCover.lean`, `ForwardSection.lean`, `SectionDynamics.lean`, and
+`RisingReturns.lean`, originally under `research/lean-shell-cover/`, are
+copied unchanged into `section/lean/`. Their exact SHA256 values are in
+[section/upstream-pins.json](section/upstream-pins.json), and the replay
+script checks them before compiling. This supersedes the earlier PR173 pin
+only for this new section packet; it does not rewrite prior checkpoint
+provenance.
+
+The credited imports supply the ordinary map, its equal-clock inverse fan,
+the mandatory density-zero forward section, its first-return map, and the
+arbitrarily expanding first-return family. The new work supplies inverse
+phase steering, injective oddification of the fan, the bounded-clock marked
+population, exact finite count and population transfers, and source-weight
+transport statements. None of the new upper survivor estimates or global
+closure assertions is imported as a premise disguised as a theorem.
+
+At the start of this pass, the current PR descriptions were also refreshed at
+PR174 `c92cd473de3b85ceb945702a726d2eb7350a6af8`, PR175
+`8ba80e8cf3d243850611b477cf149dfb3dab2c01`, PR177
+`e4403209d87dff65efea5d4cf2a25cdb59556632`, PR178
+`cda78d92f404dd3219a7a4ed9322706654eddf29`, PR179
+`27a2c7414fdb92eeca57ad552a9ab5c36d8430d8`, PR180
+`f87cb69b3dd86257731ddfbab58c87bf3b5f63d6`, and PR181
+`5f03d809b4495802971211ef13ff905f741d700d`. These were scoped research
+context, not additional code imports or claims that their entire proof
+packets were replayed. The existing core and Mathlib developments retain
+their earlier frozen sources.

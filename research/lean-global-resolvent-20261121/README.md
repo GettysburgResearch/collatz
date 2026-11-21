@@ -4,6 +4,12 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
+**Latest checkpoint:** [the mandatory shrinking section](section/README.md)
+now contains exponentially many distinct ancestors of every supplied small
+ternary unit, with explicit height and clock bounds. A passing finite survivor
+count certifies an entire input range at the same observation deadline. The
+required upper survivor bound remains open.
+
 ## Checkpoint 1: exact global floor and unrestricted terminal normalization
 
 The dependency-free Lean project in [lean/](lean/) builds with Lean 4.34.1:
@@ -149,13 +155,48 @@ the lowest valuation class, and the tested shifted exit is an insertion of
 the entire old certificate. A possible marker refinement is preserved there
 as a written observation, with no additional coverage claim.
 
+## Checkpoint 5: a finite certificate inside the new mandatory band
+
+The new [section packet](section/README.md) builds on PR173 at
+`fa0c9e2a2851e6324391e39c17afcb5913185aec`. It uses precisely the marked odd
+numbers from that forward theorem, with relative width
+`70/(floor(log2 n)+1)` above powers of two.
+
+At unbounded admissible scales `Q`, every unit `a <= 2^Q` has `2^Q` distinct
+marked odd ancestors below `2^(10Q)`, each reaching `a` at an ordinary clock
+in `[7Q-5,11Q)`. Removing initial halvings from the existing inverse fan
+preserves injectivity because its raw leaves occupy a strict octave. The
+inverse steering and the entire composition are checked in Lean.
+
+Write `S_Q(t)` for marks below `2^(10Q)` that have not hit one through time
+`t`. The exact finite implication is
+
+\[
+|S_Q(t)|<2^Q\quad\Longrightarrow\quad
+\text{every unit }a\le2^Q\text{ hits one by }\max(1,t).
+\]
+
+Consequently full Collatz is equivalent to passing this count on an unbounded
+subsequence of the admissible scales. The same construction amplifies entire
+finite survivor populations by `2^Q`, with overlap loss only `4Q+5`, without
+changing the observation clock.
+
+The new source-weight transport module proves why the section's density
+bound cannot itself supply the missing upper count: both the first-visit and
+first-positive-return pushforwards preserve source mass and have unbounded
+density relative to the endpoint's fourth-power weight. The arithmetic
+offset attempt and the possible critical marked weight are recorded with
+their precise unsupported steps. No global multi-return contraction or
+survivor upper estimate was obtained.
+
 ## Continuing attacks
 
 The remaining work is to supply complete rules for the shared order, including
 the terminal multiplier states, or to prove an arithmetic survival estimate
-sensitive to both divergent trajectories and nontrivial cycles. The common
-order's applicability to the two given families is now proved; all-input
-coverage remains a separate open assertion.
+sensitive to both divergent trajectories and nontrivial cycles. The new band
+count is one explicit finite form of that survival obligation. The common
+order's applicability to the given families is proved; all-input coverage and
+the new count upper bound remain separate open assertions.
 
 This checkpoint does not rerun all earlier research packets. It compiles the new modules and the imports actually needed by them, prints the principal theorem dependencies, and runs the repository's required structural gate at the published checkpoint.
 

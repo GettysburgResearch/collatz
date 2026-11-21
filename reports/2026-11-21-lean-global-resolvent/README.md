@@ -65,3 +65,38 @@ there is no assumed interface between the two proof projects.
 The normalized-unit selector and the final different-exit obstruction are
 written arguments, explicitly distinguished from the compiled module set.
 No all-state selector or primitive-moment decay proof was obtained.
+
+## Checkpoint 5
+
+[checkpoint5-lean.json](checkpoint5-lean.json) records a fresh, complete
+replay of the new shrinking-section proof chain. All four exact PR173
+imports, all six new modules, and the complete public-theorem audit passed
+with warnings treated as errors. The build used an initially empty output
+directory and an explicit pinned Mathlib search path. All **61 public
+theorems** in the six new modules were audited; the union of dependencies
+is exactly `propext`, `Classical.choice`, and `Quot.sound`. The Lean source
+hashes were unchanged during execution.
+
+The new results are the injective marked ancestor construction with bounded
+ordinary clocks, the finite same-deadline certificate, the composed global
+count equivalence, whole-population transfer including finite survivors at
+the same clock, and exact first-visit/return source-weight transport. The
+required upper survivor estimate remains open.
+
+[checkpoint5-return-witness.json](checkpoint5-return-witness.json) records
+the separate exact Python integer check. It locates the first marked return
+of the displayed large source at shortcut clock 53 and verifies a growth
+factor exceeding `2^31`. This finite computation is distinguished from the
+universal Lean transport theorems.
+
+The arithmetic offset boundary, critical-weight summability calculation,
+and final upper-count attempt are written mathematics in the
+[section packet](../../research/lean-global-resolvent-20261121/section/README.md).
+They are explicitly distinguished from the six compiled modules. No
+uncompiled offset draft or unresolved proof placeholder is included.
+
+The required repository structural gate is executed on the complete clean
+checkpoint before publication and again on the exact published head.
+The PR records the resulting remote commit and its receipt. Older,
+unmodified research developments were not rebuilt as part of this section
+replay.
