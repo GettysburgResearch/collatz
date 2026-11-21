@@ -192,6 +192,10 @@ The [final combined attempt](GLOBAL_CLOSURE_ATTEMPT.md) applies the new
 results to least-marked induction, repeated-return budgets, temporal
 sparsity, and the integer halving surplus. It records the exact remaining
 universal implication in each route.
+Its last [weighted-rank attempt](WEIGHTED_RANK_OBSTRUCTION.md) also rules
+out a whole two-parameter rank family for the unrestricted forward/reverse
+rule union, using unbounded inputs with actual convergence certificates.
+That addendum is a separately reviewed paper proof, outside the Lean audit.
 
 ## Build, audit, and publication
 

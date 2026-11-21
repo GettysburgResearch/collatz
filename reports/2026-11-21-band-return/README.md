@@ -86,7 +86,31 @@ checkpoint. The Lean files, build script, toolchain specification, copied
 source modules, and hash manifests remain byte-identical to the checked
 commit. The added final-attempt note and navigation links are prose.
 
-The PR body records the final receipt commit and its separate complete
+The first receipt follow-up is commit
+`c78ffa9ebd1cbacd8fe0de164108406e4d9cbb5b`, tree
+`473189eaaaa633786d5c28614f7682cdfdc4babe`, with 394 tracked files.
+Its separate five-command repository gate passed in a clean complete
+checkout; the actual result is [checkpointB-repository.json](checkpointB-repository.json).
+
+The PR body records the final follow-up commit and its separate complete
 repository-gate execution. The successful Lean receipt keeps its original
 checked SHA; it is not relabeled as an execution at a later documentation
 commit. No additional Lean rebuild is claimed for the receipt-only update.
+
+## Last paper-level rank obstruction
+
+The [weighted-rank addendum](../../research/band-return-20261121/WEIGHTED_RANK_OBSTRUCTION.md)
+tests whether adding the actual odd count to the certificate rank could
+close the unrestricted mixed-rule architecture. It proves incompatibility
+for the whole positive two-parameter family, using unbounded guarded
+ordinary inputs with explicit hit-to-one certificates.
+
+This is a paper proof, **not** an additional Lean theorem in the 81-statement
+audit. The [independent review](WEIGHTED_RANK_REVIEW.md) checks the strict
+inequalities, exact modular arithmetic, ordinary parent and child
+certificate clocks, and the precise rule-set scope. A focused actual replay
+of the single frozen compiler row is preserved as
+[weighted-rank-compiler-row.json](weighted-rank-compiler-row.json). The
+compiler's broader transport contract retains its exact PR168 source pin.
+No other template row or earlier mathematical build was replayed for this
+addendum. All Lean build inputs remain unchanged.

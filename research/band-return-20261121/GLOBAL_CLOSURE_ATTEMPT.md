@@ -112,6 +112,27 @@ A-p\log_2 3=E>0,\qquad E\le p/\min_j x_j.
 The bounded band visit and finite Fourier estimates are compatible with
 these conditions. They do not exclude every positive nontrivial cycle.
 
+## 4. Adding the odd count does not rank every mixed move
+
+The final simultaneous-rank attempt used
+`R(n,d,p)=(n+1)*lambda^d*mu^p`, where `d` is an actual supplied
+hit-to-one clock and `p` is its actual odd count. Requiring every ordinary
+forward source step to decrease this rank forces
+`lambda*mu>3/2` and `lambda>1/2`. The selected guarded reverse template
+instead increases the source clock by 11 and odd count by 7; its rank
+ratio tends to
+
+\[
+(2\lambda)^4(2\lambda\mu/3)^7>1.
+\]
+
+The [weighted-rank obstruction](WEIGHTED_RANK_OBSTRUCTION.md) supplies
+unbounded guarded inputs with explicit ordinary convergence certificates,
+so this conflict occurs on actual certificate states. It is a paper-level
+result, separate from the 81-statement Lean audit. It excludes this rank
+family for the unrestricted specified rule union, not a selector that
+chooses only certain moves or a potential depending on additional state.
+
 ## Remaining full-theorem target
 
 The new first-return family discharges the actual descent obligation for
