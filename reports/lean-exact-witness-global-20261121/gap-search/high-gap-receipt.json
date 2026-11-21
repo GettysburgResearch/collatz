@@ -1,0 +1,161 @@
+{
+  "census": [
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 0,
+      "new_rules": 0,
+      "r": 1
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 0,
+      "new_rules": 0,
+      "r": 2
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 3,
+      "new_rules": 0,
+      "r": 3
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 6,
+      "new_rules": 0,
+      "r": 4
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 24,
+      "new_rules": 0,
+      "r": 5
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 96,
+      "new_rules": 0,
+      "r": 6
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 384,
+      "new_rules": 0,
+      "r": 7
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 1536,
+      "new_rules": 2,
+      "r": 8
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 6144,
+      "new_rules": 6,
+      "r": 9
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 24576,
+      "new_rules": 27,
+      "r": 10
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 98304,
+      "new_rules": 111,
+      "r": 11
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 393216,
+      "new_rules": 418,
+      "r": 12
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 1572864,
+      "new_rules": 1610,
+      "r": 13
+    },
+    {
+      "excluded_nonuniform_target_templates": 0,
+      "integral_source_words": 6291456,
+      "new_rules": 5973,
+      "r": 14
+    }
+  ],
+  "child_slope_counts": {
+    "contracting": 231,
+    "expanding": 7916
+  },
+  "energy_scope": "For each retained rule and every a>=5; inherited tail is unchanged",
+  "exponent_energy_base": 15,
+  "full_high_gap_ternary_cover": false,
+  "grammar": {
+    "child_size_contraction_required": false,
+    "child_source_alphabet": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "maximum_child_length": 14,
+    "parent_binary_guard": "m=15 mod32",
+    "parent_first_gap": "a>=5",
+    "parent_state": "Basin(27m) -> Basin(9m)",
+    "target_padding": [
+      0,
+      1
+    ]
+  },
+  "integral_suffixes": [
+    [
+      1,
+      1,
+      3,
+      3
+    ],
+    [
+      1,
+      2,
+      1,
+      3
+    ],
+    [
+      2,
+      4,
+      4,
+      1
+    ],
+    [
+      3,
+      1,
+      3,
+      3
+    ],
+    [
+      3,
+      2,
+      1,
+      3
+    ],
+    [
+      4,
+      4,
+      4,
+      1
+    ]
+  ],
+  "mathematical_records_sha256": "0d9e8db87714dfc066fb9c6a9a5a9fffc1fee8a7357d63db0b8a1fffb102b377",
+  "minimal_ternary_prefix_cells": 5532,
+  "remaining_obligations": [
+    "uncovered high-gap ternary cells",
+    "source first gaps 1 through3",
+    "any auxiliary comparison states required by a global dispatcher"
+  ],
+  "rules": 8147,
+  "separate_gap_four": "Handled by the ordinary merger in the direct-R normal forms",
+  "status": "EXACT FINITE SEARCH; UNIVERSAL CLOSURE REMAINS OPEN",
+  "ternary_cylinder_measure": "5950/531441"
+}

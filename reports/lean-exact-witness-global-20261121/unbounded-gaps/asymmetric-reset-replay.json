@@ -1,0 +1,156 @@
+{
+  "command_template": "python [-O] research/lean-exact-witness-global-20261121/gap-search/high/asymmetric_psi_reset.py --pump J --even-run E",
+  "helper_sha256": "a8251f23ff98d42b997fca9f8f24488fa1917a61a1dbb4e8dff6c7d1def39842",
+  "normal_optimized_identical": true,
+  "records": [
+    {
+      "even_run": 3,
+      "inserted_length": 13,
+      "pump": 0,
+      "source_clock_increase": 24,
+      "stdout_sha256": "3dca387f9534e9bbcca5793542a3cf48135191d765254dcb2f074d01c505d168"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 13,
+      "pump": 0,
+      "source_clock_increase": 24,
+      "stdout_sha256": "d1b17c985f95c95fa1b8ae8d99124ccc5a825bd30b89ba668cfff6241dd2ab7c"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 13,
+      "pump": 0,
+      "source_clock_increase": 24,
+      "stdout_sha256": "d947b295bed583949c4fdf76fbdcc75913e44da7e4d3e732bc127e5cb7953bcc"
+    },
+    {
+      "even_run": 3,
+      "inserted_length": 14,
+      "pump": 1,
+      "source_clock_increase": 26,
+      "stdout_sha256": "97b5c96966bf60583740ed43c505bf404676057fac108834cdcbb70fd8f8b434"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 14,
+      "pump": 1,
+      "source_clock_increase": 26,
+      "stdout_sha256": "fa41c21e6ef74be6756c7157da1c1233bbbabb8be1644e9afd319ffa2384eb65"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 14,
+      "pump": 1,
+      "source_clock_increase": 26,
+      "stdout_sha256": "bfb959848c7d6d0427bb78b7337fcce4256825b0e7b3ba0b7752db865f2e4105"
+    },
+    {
+      "even_run": 3,
+      "inserted_length": 15,
+      "pump": 2,
+      "source_clock_increase": 28,
+      "stdout_sha256": "4703f9c03567001adfa97c58aa8692ae768ccaa58eeb928d3b1fa0fe8bf33fa6"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 15,
+      "pump": 2,
+      "source_clock_increase": 28,
+      "stdout_sha256": "c034aa77ece510ad6c49af3e53db3599f71828c9b89e51b34b9f078dbcb46988"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 15,
+      "pump": 2,
+      "source_clock_increase": 28,
+      "stdout_sha256": "f008053a4da1a89bc22fdc72c605368a1ac9ea36a3e50c04d4a5c9324ba2677c"
+    },
+    {
+      "even_run": 3,
+      "inserted_length": 20,
+      "pump": 7,
+      "source_clock_increase": 38,
+      "stdout_sha256": "05c73a7f4db0c6a3dfd6e4785001933629883a73545b9c1bcb617ac4c37c0ad0"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 20,
+      "pump": 7,
+      "source_clock_increase": 38,
+      "stdout_sha256": "f6dd23449100ac0a344de8a45128ec54837f8495f55a3d826d3d43e75b726c83"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 20,
+      "pump": 7,
+      "source_clock_increase": 38,
+      "stdout_sha256": "65c2ad9a36cbda860b147446fc84ac3931c93c0307cc5a9e94dc511b52268a53"
+    },
+    {
+      "even_run": 3,
+      "inserted_length": 28,
+      "pump": 15,
+      "source_clock_increase": 54,
+      "stdout_sha256": "8be25e1ad043fd700e76492985730ae62470bd4ec6f003c0e1c78c787b65ca18"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 28,
+      "pump": 15,
+      "source_clock_increase": 54,
+      "stdout_sha256": "d529915ef92c3c330631b3a849f18f6b0039cfe1fd677e4be0decc00e1889791"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 28,
+      "pump": 15,
+      "source_clock_increase": 54,
+      "stdout_sha256": "da5b65feb833133392ae4c2c8f8689fe2960a774f076e7a5260208d46865365a"
+    },
+    {
+      "even_run": 3,
+      "inserted_length": 113,
+      "pump": 100,
+      "source_clock_increase": 224,
+      "stdout_sha256": "b98f147196f7fa9caf106de58d682b47065f332de47ec503f3ee689f525225b5"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 113,
+      "pump": 100,
+      "source_clock_increase": 224,
+      "stdout_sha256": "9ea691ec876200f1f280d0607db9ff5bcd3bd95955afc1f7e97733d4867dd17d"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 113,
+      "pump": 100,
+      "source_clock_increase": 224,
+      "stdout_sha256": "26792b9cf9dc0e243ae2b00de783503db1acc3b14a6b92251fa1cf7fea05dee6"
+    },
+    {
+      "even_run": 3,
+      "inserted_length": 1013,
+      "pump": 1000,
+      "source_clock_increase": 2024,
+      "stdout_sha256": "7b7aa8644965f4131067364505d6111aa7760c38a031ed040d57bed613ddb717"
+    },
+    {
+      "even_run": 4,
+      "inserted_length": 1013,
+      "pump": 1000,
+      "source_clock_increase": 2024,
+      "stdout_sha256": "9d622a8d64d71ec22f2d88014164a9fa1aa3adaa3e7286385a030357c8c866c7"
+    },
+    {
+      "even_run": 21,
+      "inserted_length": 1013,
+      "pump": 1000,
+      "source_clock_increase": 2024,
+      "stdout_sha256": "efe4a4b093cbbed46a7c3d7b4f3b3355616c92a3c3e5b74e147f7d29ec323a55"
+    }
+  ],
+  "source_sha256": "9f6a9aeaf93204025bfd83d1cabf8fb509b6caa9b7fa383beb1869ead3b7541c",
+  "status": "PASS: selected whole-affine replays, not universal coverage"
+}

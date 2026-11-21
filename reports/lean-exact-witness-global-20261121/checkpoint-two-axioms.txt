@@ -1,0 +1,28 @@
+CollatzWitness.e_iff_odd_basin (n : ℕ) : CollatzWitness.E n ↔ n % 2 = 1 ∧ CollatzReverseBasin.Basin n
+CollatzWitness.original_iff_collatz : CollatzWitness.ResidueImplication ↔ ∀ (n : ℕ), 0 < n → CollatzReverseBasin.Basin n
+'CollatzWitness.certificate_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.witness_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.schedule_exists' depends on axioms: [propext, Quot.sound]
+'CollatzWitness.e_iff_odd_basin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.original_iff_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzPsiCompletion.normalize_adjacent_below (n u : ℕ) (hn : CollatzPsiCompletion.InitialBasin n) (hup : 0 < u)
+  (hul : u < n) (hbad : ¬CollatzReverseBasin.Basin (2 * u + 1)) :
+  ∃ w, w % 2 = 1 ∧ w ≤ u ∧ CollatzReverseBasin.Basin w ∧ ¬CollatzReverseBasin.Basin (2 * w + 1)
+CollatzPsiCompletion.initial_basin_even_tail (n d u t : ℕ) (hn : CollatzPsiCompletion.InitialBasin n) (hu : u < n)
+  (ht : t % 2 = 1) (h : 3 * u + 1 = 4 ^ (d + 1) * t) : CollatzReverseBasin.Basin (2 * u + 1)
+'CollatzPsiCompletion.normalize_adjacent_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.adjacent_even_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.adjacent_odd_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.initial_basin_even_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.least_missing_adjacent' depends on axioms: [propext, Quot.sound]
+CollatzResetFamily.reset_family (j : ℕ) :
+  CollatzWitness.Certificate (CollatzResetFamily.source j) [3, CollatzResetFamily.exponent j] ∧
+    CollatzResetFamily.source j < CollatzResetFamily.mersenne j ∧
+      CollatzResetFamily.mersenne j < CollatzResetFamily.target j ∧
+        (CollatzReverseBasin.Basin (CollatzResetFamily.target j) ↔
+            CollatzReverseBasin.Basin (CollatzResetFamily.reset j)) ∧
+          2 ^ j * CollatzResetFamily.target j < CollatzResetFamily.reset j
+'CollatzResetFamily.reset_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResetFamily.reset_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzClosure.OpenLemma : Prop :=
+∀ (k : ℕ), k % 4 ≠ 0 → CollatzReverseBasin.Basin (3 * (27 * k + 1) - 1) → CollatzReverseBasin.Basin (27 * k + 1)

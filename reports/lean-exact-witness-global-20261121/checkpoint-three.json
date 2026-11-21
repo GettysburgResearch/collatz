@@ -1,0 +1,36 @@
+{
+  "schema": "collatz-lean-exact-witness-build/v1",
+  "lean_version": "4.34.1",
+  "commands": [
+    {
+      "command": "lake build",
+      "exit_code": 0,
+      "output": "checkpoint-three-build.txt"
+    },
+    {
+      "command": "lake env lean Audit.lean",
+      "exit_code": 0,
+      "output": "checkpoint-three-axioms.txt"
+    }
+  ],
+  "scope": "All science modules through DirectedInduction, WitnessEnergy and SourceWitness. The global conclusions retain explicit complete-cover hypotheses; no full Collatz or residue proof is claimed.",
+  "source_files_sha256": {
+    "Audit.lean": "970186b36a9565ed2aee697563a21922c31ebd282f050e982234051e112a2404",
+    "Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "Collatz.lean": "a41da29dc0b774d4a360580fe01d8cd6e87266b714061af058bbcdbac346dbf0"
+  },
+  "axioms_observed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx_observed": false
+}

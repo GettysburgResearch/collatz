@@ -1,0 +1,34 @@
+{
+  "status": "PASS_EXACT_REPLAY; GLOBAL THEOREM OPEN",
+  "mode": "fixed clock grammar",
+  "record_count": 450,
+  "classifications": {
+    "forward_consumption": 180,
+    "length_only": 180,
+    "ordinary_merger": 90
+  },
+  "maximum_energy_insertions": 0,
+  "sufficient_energy_base": 2,
+  "semantic_sha256": "1ceb6dff79098270f3513adcb7b525cc6e9777b8fce0617cc94733724de9ae3a",
+  "hitting_time": {
+    "closed_states": 90,
+    "required_surviving": 5,
+    "required_total": 80,
+    "removal_rounds": [
+      2520,
+      180,
+      90
+    ]
+  },
+  "energy": {
+    "closed_states": 90,
+    "required_surviving": 5,
+    "required_total": 80,
+    "removal_rounds": [
+      2655,
+      90,
+      45
+    ]
+  },
+  "input_sha256": "43cc31cfc504540e5c2b8873ce4098b8f1c69b6d4d4ea861b547bc6396662976"
+}

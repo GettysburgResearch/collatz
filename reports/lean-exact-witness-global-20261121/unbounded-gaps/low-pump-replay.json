@@ -1,0 +1,156 @@
+{
+  "command_template": "python [-O] research/lean-exact-witness-global-20261121/gap-search/high/unbounded_low_pump.py --pump J --second-gap B",
+  "helper_sha256": "a8251f23ff98d42b997fca9f8f24488fa1917a61a1dbb4e8dff6c7d1def39842",
+  "normal_optimized_identical": true,
+  "records": [
+    {
+      "inserted_length": 9,
+      "pump": 0,
+      "second_gap": 4,
+      "source_clock_increase": 12,
+      "stdout_sha256": "a39bc26d177713fe506c4612d3a88dfcf38ea8073841e39bd40a2c98fc276a7b"
+    },
+    {
+      "inserted_length": 9,
+      "pump": 0,
+      "second_gap": 5,
+      "source_clock_increase": 12,
+      "stdout_sha256": "480c658391daf657b8cfb11e0b00ea245d45eddaf28d409e66b953ab14134f5e"
+    },
+    {
+      "inserted_length": 9,
+      "pump": 0,
+      "second_gap": 21,
+      "source_clock_increase": 12,
+      "stdout_sha256": "ebb0c31b7da69ec58658343bc4382bd44bbbee32bdc11f8e244197e01e99ca41"
+    },
+    {
+      "inserted_length": 10,
+      "pump": 1,
+      "second_gap": 4,
+      "source_clock_increase": 14,
+      "stdout_sha256": "6c59af6ee8cc5ac6a21c7e4466b50ef88d115b6b14430e281b3be34a1e256e1e"
+    },
+    {
+      "inserted_length": 10,
+      "pump": 1,
+      "second_gap": 5,
+      "source_clock_increase": 14,
+      "stdout_sha256": "433b1c9d417cc399467eb39df36e9855d219418dca02ac7f4395d3ce4a646208"
+    },
+    {
+      "inserted_length": 10,
+      "pump": 1,
+      "second_gap": 21,
+      "source_clock_increase": 14,
+      "stdout_sha256": "96a3dbab1a567cd00eb2a1a8727b1ad155fa6443b16e26a8293084eae3d9985a"
+    },
+    {
+      "inserted_length": 11,
+      "pump": 2,
+      "second_gap": 4,
+      "source_clock_increase": 16,
+      "stdout_sha256": "276c13192265e76b573830c698f0ac1b8417a21b8a9be143eee9b68ded700f71"
+    },
+    {
+      "inserted_length": 11,
+      "pump": 2,
+      "second_gap": 5,
+      "source_clock_increase": 16,
+      "stdout_sha256": "c1c17e946a9956c077ca8b7bc5ca1f38d5a31df56913b308ffdd58b376ff1a99"
+    },
+    {
+      "inserted_length": 11,
+      "pump": 2,
+      "second_gap": 21,
+      "source_clock_increase": 16,
+      "stdout_sha256": "e4bda121c926cf31fd2865b0f959b0aafd11dc35cf9f89848b35031379b8328a"
+    },
+    {
+      "inserted_length": 16,
+      "pump": 7,
+      "second_gap": 4,
+      "source_clock_increase": 26,
+      "stdout_sha256": "6e9e83ce8c9b8c5e7a97b8c22d07635d17e01783491531a674ab96e45635e6ff"
+    },
+    {
+      "inserted_length": 16,
+      "pump": 7,
+      "second_gap": 5,
+      "source_clock_increase": 26,
+      "stdout_sha256": "b90800485c2c66196eef56e8d8af3eaf9b9880f17f64bf6976d17b367b09e3aa"
+    },
+    {
+      "inserted_length": 16,
+      "pump": 7,
+      "second_gap": 21,
+      "source_clock_increase": 26,
+      "stdout_sha256": "34409b83acf8e004a82ce38868243febffc9add919e384b922462baa3a0d8af9"
+    },
+    {
+      "inserted_length": 24,
+      "pump": 15,
+      "second_gap": 4,
+      "source_clock_increase": 42,
+      "stdout_sha256": "9f688ebd3e88e5310ccffa782d2a06b34cdebf5d9aa86a577000ec133ef97477"
+    },
+    {
+      "inserted_length": 24,
+      "pump": 15,
+      "second_gap": 5,
+      "source_clock_increase": 42,
+      "stdout_sha256": "e31af05526c15452fbd049273223ff4c02d32ce4f9b103858e221203152ad14f"
+    },
+    {
+      "inserted_length": 24,
+      "pump": 15,
+      "second_gap": 21,
+      "source_clock_increase": 42,
+      "stdout_sha256": "b5731fffc98c9a370077b65b0c85d52b3595814a7bd6c15526f53ba023a6579c"
+    },
+    {
+      "inserted_length": 109,
+      "pump": 100,
+      "second_gap": 4,
+      "source_clock_increase": 212,
+      "stdout_sha256": "f1f22bd5ba4e12f8b0865ac882452808f8d00f50497e02761b82be898fbcc4ae"
+    },
+    {
+      "inserted_length": 109,
+      "pump": 100,
+      "second_gap": 5,
+      "source_clock_increase": 212,
+      "stdout_sha256": "531cf50656e6b5b27c5803baf54e1f9c581ba6380a7c79fbe1f2aeb1eef068a8"
+    },
+    {
+      "inserted_length": 109,
+      "pump": 100,
+      "second_gap": 21,
+      "source_clock_increase": 212,
+      "stdout_sha256": "09a8802c211aaaeda5d31da79b18bc941bccff617139e1e61531c559e8bcc7bc"
+    },
+    {
+      "inserted_length": 1009,
+      "pump": 1000,
+      "second_gap": 4,
+      "source_clock_increase": 2012,
+      "stdout_sha256": "98866c7cceeb8167d565d25923bab872f30780e7721d716a1fa9acdfefb59ae1"
+    },
+    {
+      "inserted_length": 1009,
+      "pump": 1000,
+      "second_gap": 5,
+      "source_clock_increase": 2012,
+      "stdout_sha256": "2a6da781009b47b6b09b3a12bab8274f3a8cccba6e7ee2fcdf3627dd70396604"
+    },
+    {
+      "inserted_length": 1009,
+      "pump": 1000,
+      "second_gap": 21,
+      "source_clock_increase": 2012,
+      "stdout_sha256": "299026ef88cc2faaee21acbd91567d8fde30feadd8b032f9a7abec1acc5be751"
+    }
+  ],
+  "source_sha256": "e6a2af823d78077438b918a862f61e124612239766e42d4100672297d9a71e47",
+  "status": "PASS: selected whole-affine replays, not universal coverage"
+}
