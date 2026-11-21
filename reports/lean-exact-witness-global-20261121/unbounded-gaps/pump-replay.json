@@ -1,0 +1,156 @@
+{
+  "command_template": "python [-O] research/lean-exact-witness-global-20261121/gap-search/high/unbounded_pump.py --pump J --first-gap A",
+  "generator_sha256": "a8251f23ff98d42b997fca9f8f24488fa1917a61a1dbb4e8dff6c7d1def39842",
+  "normal_optimized_identical": true,
+  "records": [
+    {
+      "first_gap": 5,
+      "inserted_length": 8,
+      "pump": 0,
+      "source_clock_increase": 12,
+      "stdout_sha256": "9fc47407c47742d64ca94dfe1195907bed65aa1ee0fc1400ee736ce66c15af36"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 8,
+      "pump": 0,
+      "source_clock_increase": 12,
+      "stdout_sha256": "d51f3f5eceb9622e750ba3736697bf1868238f6f85fcef828f70f11407b380f9"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 8,
+      "pump": 0,
+      "source_clock_increase": 12,
+      "stdout_sha256": "1a35e43c1afcd3a770cb951c87a5e34ba1972a879b2cf4c190d78cb3fc2195f8"
+    },
+    {
+      "first_gap": 5,
+      "inserted_length": 9,
+      "pump": 1,
+      "source_clock_increase": 14,
+      "stdout_sha256": "a4df6e80cce1ae0d9058b66a13de3e7c845a64ad153be1cef4fbc3409d8d140f"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 9,
+      "pump": 1,
+      "source_clock_increase": 14,
+      "stdout_sha256": "1cebc78762a2bee3ec793c3bb73fab65501490b6d490b8e9f733c621475440af"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 9,
+      "pump": 1,
+      "source_clock_increase": 14,
+      "stdout_sha256": "d64edbf3ac8b71daaba44020ad65fcf8490183237027b2cb100ee00f222aebd1"
+    },
+    {
+      "first_gap": 5,
+      "inserted_length": 10,
+      "pump": 2,
+      "source_clock_increase": 16,
+      "stdout_sha256": "a05d1d67ab517191f33a91d807220769c7f7f5141c7325d5ef8761cea035fabb"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 10,
+      "pump": 2,
+      "source_clock_increase": 16,
+      "stdout_sha256": "c087e95e9a4514319f0dbe59a4cb47edcef4259160593500b52b6228a4aa683d"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 10,
+      "pump": 2,
+      "source_clock_increase": 16,
+      "stdout_sha256": "579c6598f690bd7a2cbdb1097ab4258f446fb30cde96fb5c8e97602f294dfa8a"
+    },
+    {
+      "first_gap": 5,
+      "inserted_length": 15,
+      "pump": 7,
+      "source_clock_increase": 26,
+      "stdout_sha256": "21816b8b4307e8e2f391fe48a12a4f051b08efd47c976e56eb776d34c1ffde4a"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 15,
+      "pump": 7,
+      "source_clock_increase": 26,
+      "stdout_sha256": "284128a6460a9718a26406a1c7b27c3d137f82a69d6d2c3e84384ba8803f4d9b"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 15,
+      "pump": 7,
+      "source_clock_increase": 26,
+      "stdout_sha256": "4b5952c1f6d01135e9db9acbb0a0e406ea5da516e8c8b7529226b5eb2e9b138c"
+    },
+    {
+      "first_gap": 5,
+      "inserted_length": 23,
+      "pump": 15,
+      "source_clock_increase": 42,
+      "stdout_sha256": "873c1ef1c01342dfe07b607401aa65aa913d05f355f7b8397051218fdbf0edce"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 23,
+      "pump": 15,
+      "source_clock_increase": 42,
+      "stdout_sha256": "6248900d8934915580176ecc55739802758099c87d2db7f9897415ed2904c88c"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 23,
+      "pump": 15,
+      "source_clock_increase": 42,
+      "stdout_sha256": "4da7649b2403c62a586ce69ae69129736671a90e47c732ade337b573ace6ce03"
+    },
+    {
+      "first_gap": 5,
+      "inserted_length": 108,
+      "pump": 100,
+      "source_clock_increase": 212,
+      "stdout_sha256": "ed7c64a23a297c265c7a657174b14b2fe96243eaa2802ad1e97092189db278e0"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 108,
+      "pump": 100,
+      "source_clock_increase": 212,
+      "stdout_sha256": "ead8a080c78a21d5d88869e6805d603f3609f846d01fe111377f68ab12081475"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 108,
+      "pump": 100,
+      "source_clock_increase": 212,
+      "stdout_sha256": "bfbf5106876cc7fe8a242d30168b2cd52edc3b774a67020e7574f9bd6bf1a3e2"
+    },
+    {
+      "first_gap": 5,
+      "inserted_length": 1008,
+      "pump": 1000,
+      "source_clock_increase": 2012,
+      "stdout_sha256": "afcf98a88bb126685a6c3acc6c962b67ada7b9bb03bbadd6b4df3a3625f03030"
+    },
+    {
+      "first_gap": 6,
+      "inserted_length": 1008,
+      "pump": 1000,
+      "source_clock_increase": 2012,
+      "stdout_sha256": "9b69703844eddf3bb22c6692e5d7d169a3a04be4b5f2c91257355402ba244511"
+    },
+    {
+      "first_gap": 21,
+      "inserted_length": 1008,
+      "pump": 1000,
+      "source_clock_increase": 2012,
+      "stdout_sha256": "215ebf83a3b5da0e729af48b6864c5662d1c27aad2268517220f827d40636c6a"
+    }
+  ],
+  "status": "PASS: selected exact whole-affine replays; not a global coverage claim",
+  "unbounded_proof": "CollatzHighGapPump.whole_witness_rewrite"
+}

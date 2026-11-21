@@ -39,3 +39,29 @@ import Collatz
 #print CollatzDirected.Complete
 #print CollatzSourceWitness.ClockComplete
 #print CollatzSourceWitness.EnergyComplete
+
+-- Unrestricted source-gap multisets and complete-certificate rewrites.
+#print axioms CollatzGapMultiset.less_wellFounded
+#print axioms CollatzGapMultiset.cancelled_replacement
+#print axioms CollatzGapMultiset.unbounded_high_gap_replacement
+#print axioms CollatzGapMultiset.ordinary_step
+#print axioms CollatzGapMultiset.collatz_of_complete
+#print axioms CollatzHighGapPump.prefix_basin
+#print axioms CollatzHighGapPump.whole_witness_rewrite
+#print axioms CollatzHighGapPump.rewritten_sizes
+#print axioms CollatzHighGapPump.exponential_expansion
+#print axioms CollatzHighGapPump.fixed_base_prefix_failure
+#print axioms CollatzLowGapLoops.whole_witness_rewrite
+#print axioms CollatzLowGapLoops.apply_reverse_rule
+#print axioms CollatzUnboundedGapReset.compiled_certificate_reset
+#print axioms CollatzUnboundedGapReset.low_depth_zero_reset
+#print axioms CollatzGapComparison.close
+#print axioms CollatzGapComparison.collatz_of_complete_psi
+#print axioms CollatzGapComparison.collatz_of_complete_deep
+#print axioms CollatzGapComparison.high_gap_rule
+#print axioms CollatzGapComparison.low_gap_rule
+#print axioms CollatzGapComparison.ordinary_source
+#print axioms CollatzGapComparison.compiled_reset_rule
+-- These are hypotheses of the closing theorems, not established selectors.
+#print CollatzGapMultiset.Complete
+#print CollatzGapComparison.Complete

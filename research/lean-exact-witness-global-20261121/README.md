@@ -2,12 +2,48 @@
 
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
-an all-exponent branch of a global induction, an unbounded reset family, and
-three new certificate kernels for directed comparisons and source-witness
-descent. The current searches have not supplied a complete recursive cover.
+an all-exponent branch of a global induction, and source-witness induction.
+The latest checkpoint adds an unrestricted exponent-multiset order, genuinely
+unbounded source/target rewrites, low-gap loops, and a compiler for even-source
+resets in one mixed comparison kernel. A complete recursive cover is still
+missing.
 These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
-in the new Lean module. Lean 4.34.1 is used without Mathlib or other packages.
+in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
+
+## Latest checkpoint: unbounded rewrites in one common induction
+
+The new [proof packet](UNBOUNDED_GAP_REWRITES.md) builds on the latest
+PR173 forward section and PR176 source-certificate resets. Its main changes
+are mathematical rewrites quantified over arbitrary lengths, rather than
+a larger finite search cutoff:
+
+- `GapMultiset.lean` proves well-foundedness of the highest-changed-exponent
+  order in Lean core. One exponent can be replaced by any finite number of
+  smaller exponents. A graded initial even run makes ordinary steps and
+  longer resets decrease the same complete-witness rank.
+- `HighGapPump.lean` proves an arbitrary-length guarded family with complete
+  source and target splices. The child source and its ordinary certificate
+  clock both increase; the source expansion is unbounded. It also proves
+  that no single fixed exponential energy base covers all these prefixes.
+- `LowGapLoops.lean` consumes arbitrary initial runs of exponent two and
+  exponent one before a `(3,...,4)` block, reducing the reverse comparison
+  to a forward-tripling query on the untouched witness tail.
+- `UnboundedGapReset.lean` proves a word-parametric paired-entrance compiler.
+  It removes the former loop-depth lower bound and provides a new entrance
+  that works when the source's initial even valuation is at least three.
+- `GapComparison.lean` places actual `(known source, wanted target)` pairs
+  in one well-founded induction. Its rule wrappers include all the new
+  families without conflating reverse-tripling and psi obligations.
+
+The packet states every guard. Its universal closing theorems still require
+a complete dispatcher on all activated pairs. No such dispatcher, and hence
+no proof of full Collatz or the original residue implication, is asserted.
+
+The exact source refresh is in
+[`LATEST_SOURCE_SYNTHESIS.md`](LATEST_SOURCE_SYNTHESIS.md). New build, axiom,
+generator-replay and source-hash receipts are under
+[`reports/…/unbounded-gaps/`](../../reports/lean-exact-witness-global-20261121/unbounded-gaps/).
 
 ## The target and its exact formalization
 

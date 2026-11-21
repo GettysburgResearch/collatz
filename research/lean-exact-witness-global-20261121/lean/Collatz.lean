@@ -7,3 +7,8 @@ import Collatz.ResetFamily
 import Collatz.DirectedInduction
 import Collatz.WitnessEnergy
 import Collatz.SourceWitness
+import Collatz.GapMultiset
+import Collatz.HighGapPump
+import Collatz.LowGapLoops
+import Collatz.UnboundedGapReset
+import Collatz.GapComparison
