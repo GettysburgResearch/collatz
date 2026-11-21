@@ -1,0 +1,352 @@
+{
+  "schema": "collatz-literature-closing-interfaces/v1",
+  "scope": "Finite theorems and their exact imports; full Collatz remains open",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256_before": {
+    "lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "lean/Collatz/TerminalCarry.lean": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+    "lean/Collatz/TerminalCarryClosure.lean": "e2118ccb89993f77338910f543247cb38b8606e848766426e11856b6491c72a6",
+    "lean/Collatz/TerminalExponentLift.lean": "4b65178514dfea86be7ffc8960e646b8a97c3b185f350da2ee0a491b29ab761e",
+    "lean/Collatz/CycleCarry.lean": "a858ddc55c42bf135ead4315186b98220d9f8718d5a81cb6ccae9031d7140667",
+    "lean/Collatz/CycleCarryRealization.lean": "b0a4c964972156d5d7e45a9729cc7e3bd03a60f7cec2c29c1323ceea093ac9f2",
+    "lean/Collatz/CycleCarryPins.lean": "95cb4f0bf20f4b23796b78c841955e8676e643cff4740412bd2498a8489b19dc",
+    "overview/lean/AuditCycleCarry.lean": "09bde98c6bf2106fb471669863d8e11bb5e01fee0fd2fab23f53e9d6e359ac40",
+    "overview/lean/HitPotentials.lean": "d6c95bc012051bfc9b096e381f8a970ee08b95cc28260c8f8d823ebc2364d9de",
+    "overview/lean/CriticalTrace.lean": "106c411a31ffca7d1a7fd5ea5c59075e8c41905e598d4611040b36a655a80640",
+    "overview/lean/AuditLiterature.lean": "a495081bffd16a94daf4832d03c5eb20aefa69713c1e83f69c2fdaf4f1ce4fda"
+  },
+  "fresh_output_directory": "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final",
+  "verified_dependency_mirror_files": 8608,
+  "commands": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/ReverseBasin146.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.339,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Closure",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/Closure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.477,
+      "output": ""
+    },
+    {
+      "module": "Collatz.TerminalCarry",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/TerminalCarry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.334,
+      "output": ""
+    },
+    {
+      "module": "Collatz.TerminalCarryClosure",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/TerminalCarryClosure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarryClosure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.272,
+      "output": ""
+    },
+    {
+      "module": "Collatz.TerminalExponentLift",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/TerminalExponentLift.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/TerminalExponentLift.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.908,
+      "output": ""
+    },
+    {
+      "module": "Collatz.CycleCarry",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/CycleCarry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/CycleCarry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.066,
+      "output": ""
+    },
+    {
+      "module": "Collatz.CycleCarryRealization",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/CycleCarryRealization.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/CycleCarryRealization.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.173,
+      "output": ""
+    },
+    {
+      "module": "Collatz.CycleCarryPins",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/CycleCarryPins.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/CycleCarryPins.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.988,
+      "output": ""
+    },
+    {
+      "module": "AuditCycleCarry",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/AuditCycleCarry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/AuditCycleCarry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.226,
+      "output": "'CollatzTerminalExponentLift.four_power_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalExponentLift.even_power_mod_three' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalExponentLift.lift_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalExponentLift.arbitrarily_large_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.lift_pin_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.signed_path_append' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.minus_five_cycle' does not depend on any axioms\n'CollatzCycleCarry.minus_five_cycles' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.minus_eighty_one_entrance' does not depend on any axioms\n'CollatzCycleCarry.cycle_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.total_append' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.correction_append' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.repeated_length' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.repeated_total' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.repeated_correction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.deficit_word_length' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.deficit_word_total' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.deficit_word_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.deficit_word_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.unbounded_deficit' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.positive_final_carry' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.follows_of_complete_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.follows_of_terminal_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.repeated_gaps' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarry.cycle_source_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.cycle_source_full_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.cycle_ordinary_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarry.cycle_ordinary_continuation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryRealization.terminal_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryRealization.terminal_identity_iff_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryRealization.legal_terminal_bound' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarryRealization.actual_terminal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryRealization.arbitrarily_large_complete_sources' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzCycleCarryRealization.minus_one_pin_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryRealization.minus_five_pin_exact' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarryPins.minus_seven_cycle' does not depend on any axioms\n'CollatzCycleCarryPins.minus_seven_cycles' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarryPins.minus_eighty_one_to_seven' does not depend on any axioms\n'CollatzCycleCarryPins.general_pin_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryPins.tail_coefficient_primitive' depends on axioms: [propext, Quot.sound]\n'CollatzCycleCarryPins.repeated_prefix_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryPins.repeated_prefix_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleCarryPins.minus_one_debt_localizes_to_suffix' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "HitPotentials",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/HitPotentials.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.537,
+      "output": "'CollatzHitPotentials.finite_anchor_green' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hit_killed_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hit_minimal_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.all_hit_iff_unique_bounded_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_sixteen_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_exact_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_finite_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_scale_poincare_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.predecessor_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.conditional_density_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.collatz_defect_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.surviving_source_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_exit_green' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_exit_green_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "CriticalTrace",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/CriticalTrace.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/CriticalTrace.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.648,
+      "output": ""
+    },
+    {
+      "module": "AuditLiterature",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/AuditLiterature.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/AuditLiterature.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.875,
+      "output": "'CollatzHitPotentials.orbit_succ' does not depend on any axioms\n'CollatzHitPotentials.orbit_add' depends on axioms: [propext]\n'CollatzHitPotentials.hits_self' does not depend on any axioms\n'CollatzHitPotentials.hits_iff_eq_or_next' does not depend on any axioms\n'CollatzHitPotentials.nonperiodic_not_hit_next' depends on axioms: [propext, Quot.sound]\n'CollatzHitPotentials.hit_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hit_anchor_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_anchor_green' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hit_killed_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.one_killed_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.solution_on_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hit_minimal_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.defect_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.defect_killed_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hits_next_iff_of_return' depends on axioms: [propext]\n'CollatzHitPotentials.defect_invariant_of_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.all_hit_iff_unique_bounded_solution' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.variance_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_scale_poincare_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.hits_comparable' depends on axioms: [propext, Quot.sound]\n'CollatzHitPotentials.invariant_on_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.predecessor_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.conditional_density_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.stopped_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.stopped_succ_right' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.stopped_balance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_exit_green' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.finite_exit_green_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.one_returns' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.collatz_defect_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.surviving_source_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.small_step' depends on axioms: [propext]\n'CollatzHitPotentials.small_orbit' depends on axioms: [propext]\n'CollatzHitPotentials.after_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.nonperiodic_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.nonperiodic_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_not_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.sixteen_not_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_sixteen_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_exact_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHitPotentials.five_finite_energy' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.correction_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.edge_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.propagated_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.trace_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.no_arbitrarily_small_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.ordinary_edge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.cycle_minimum_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.finite_closed_trace_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.finite_closed_below_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCriticalTrace.bounded_of_sublinear_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "recovered_attempts": [
+    {
+      "module": "Collatz.CycleCarry",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/Collatz/CycleCarry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/CycleCarry.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 2.719,
+      "output": "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/CycleCarry.lean:355:51: error: This simp argument is unused:\n  Nat.mul_div_cancel_left\n\nHint: Omit it from the simp argument list.\n  [apply] simp [powpos]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+    },
+    {
+      "module": "HitPotentials",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/HitPotentials.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 0.303,
+      "output": "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean:1:0: error: object file '/tmp/collatz-overview-deps/Mathlib/Data/Finset/Interval.olean' of module Mathlib.Data.Finset.Interval does not exist\n"
+    },
+    {
+      "module": "HitPotentials",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/HitPotentials.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 0.456,
+      "output": "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean:1:0: error: object file '/tmp/collatz-overview-deps/Mathlib/Data/Finset/Grade.olean' of module Mathlib.Data.Finset.Grade does not exist\n"
+    },
+    {
+      "module": "HitPotentials",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint7-final/HitPotentials.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 0.26,
+      "output": "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/HitPotentials.lean:1:0: error: object file '/tmp/collatz-overview-deps/Mathlib/Order/Grade.olean' of module Mathlib.Order.Grade does not exist\n"
+    }
+  ],
+  "recovery": "Removed one unused simp argument from CycleCarry; all mathematical statements unchanged. Earlier successful imports remain in this fresh output directory.",
+  "additional_verified_mirror_artifacts": [
+    {
+      "path": "Mathlib/Data/Finset/Interval.ir",
+      "sha256": "074ba538d1949c455c63fd63e596d36a59e6ead1bc9dc8204724da119614e9dc"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Interval.ir.sig",
+      "sha256": "581b69f5ff5228d7e5810f4da1dd01c0a27d231a3a3ae31716d998a8b96a7259"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Interval.olean",
+      "sha256": "f8f49121601b82b4fa77492b357f2b9858dbcf2376b583de9eaec3b492e2bee5"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Interval.olean.private",
+      "sha256": "18894ee2c1220588e3bf9ab3a868563129e07f4ba21a0c8689492bf0f87e3b0b"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Interval.olean.server",
+      "sha256": "fb2b5433c58932f930cbfac0024ede24c514eabebc527445d5f9c7cbecf74713"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Grade.ir",
+      "sha256": "16999180fddcade0c1464f0670721c7b6a19824a95e014a68ec59620a81d7afc"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Grade.ir.sig",
+      "sha256": "e529787701294d54909727c37b810253ebcb9e2dbe1ec2b0c1fb808f09b0e0f4"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Grade.olean",
+      "sha256": "9782fdd3732ca1ff7b4d720092bf815bd18219ef9e2642be591153a8df563686"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Grade.olean.private",
+      "sha256": "f2cfafc2663d7f7e0c34544bb9911abd1b08669ed60cb32a8ad84ba0d955e78d"
+    },
+    {
+      "path": "Mathlib/Data/Finset/Grade.olean.server",
+      "sha256": "0d8f6cc204cab13b8df404afab90a59d24c99530c1f91e62347964ac9707d69e"
+    },
+    {
+      "path": "Mathlib/Order/Grade.ir",
+      "sha256": "758153560f3e4eae8a97710e28caa08354543b5ddfef727130f016a16c42f416"
+    },
+    {
+      "path": "Mathlib/Order/Grade.ir.sig",
+      "sha256": "4bedbc9019f8ca0ed8a3d5e5609e16a720f107d85572b1d38e414657bd9ba01d"
+    },
+    {
+      "path": "Mathlib/Order/Grade.olean",
+      "sha256": "347d412e57417717e757f41904e9da7b953aeac171fa09ae24d82ea055d0d2ab"
+    },
+    {
+      "path": "Mathlib/Order/Grade.olean.private",
+      "sha256": "c4940c128c3e6f6a87f10be8cd6eb7e26e9dd178da9fc0af14890cea9527b176"
+    },
+    {
+      "path": "Mathlib/Order/Grade.olean.server",
+      "sha256": "7891599d2c3667f8de415e855f3fcc8f35273055bff7fa6cbdc773d8f9dfb8e8"
+    }
+  ],
+  "source_sha256_after": {
+    "lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "lean/Collatz/TerminalCarry.lean": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+    "lean/Collatz/TerminalCarryClosure.lean": "e2118ccb89993f77338910f543247cb38b8606e848766426e11856b6491c72a6",
+    "lean/Collatz/TerminalExponentLift.lean": "4b65178514dfea86be7ffc8960e646b8a97c3b185f350da2ee0a491b29ab761e",
+    "lean/Collatz/CycleCarry.lean": "a858ddc55c42bf135ead4315186b98220d9f8718d5a81cb6ccae9031d7140667",
+    "lean/Collatz/CycleCarryRealization.lean": "b0a4c964972156d5d7e45a9729cc7e3bd03a60f7cec2c29c1323ceea093ac9f2",
+    "lean/Collatz/CycleCarryPins.lean": "95cb4f0bf20f4b23796b78c841955e8676e643cff4740412bd2498a8489b19dc",
+    "overview/lean/AuditCycleCarry.lean": "09bde98c6bf2106fb471669863d8e11bb5e01fee0fd2fab23f53e9d6e359ac40",
+    "overview/lean/HitPotentials.lean": "d6c95bc012051bfc9b096e381f8a970ee08b95cc28260c8f8d823ebc2364d9de",
+    "overview/lean/CriticalTrace.lean": "106c411a31ffca7d1a7fd5ea5c59075e8c41905e598d4611040b36a655a80640",
+    "overview/lean/AuditLiterature.lean": "a495081bffd16a94daf4832d03c5eb20aefa69713c1e83f69c2fdaf4f1ce4fda"
+  },
+  "sources_unchanged": true,
+  "audited_theorems": 94,
+  "expected_audits": 94,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

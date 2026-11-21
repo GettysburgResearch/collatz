@@ -1,0 +1,176 @@
+{
+  "status": "Written analytic packet and literature provenance; Lean results have a separate 94-theorem build receipt; full Collatz open",
+  "date": "2026-11-22",
+  "files": [
+    {
+      "path": "ANCHORED_INVERSE_GREEN.md",
+      "sha256": "68f4f3870bd064d8b16881eb00a69e83fd6ca47e7b151ee862b806010f9617d2",
+      "bytes": 20397,
+      "lines": 572,
+      "exploratory_sha256": "48f0e18af6707a881f526a63bb4d04a117e18ddb580dfd993e8dbc33163f860e"
+    },
+    {
+      "path": "TRACE_HEIGHT_CLOSURE_ATTEMPT.md",
+      "sha256": "95eb29a7fdb7bc511f4fa1c8f0017e4e0732d65fe0f720f9399ef3cd94de9075",
+      "bytes": 12324,
+      "lines": 359,
+      "exploratory_sha256": "3b9dcc1dbc35ea23b9d6e01a5a2e0ffa24422196f4e45fc5ba77c77ce0b44afc"
+    },
+    {
+      "path": "ABEL_CANONICAL_COMPARISON.md",
+      "sha256": "02696028b3f0c4a81e4186b3b16de3002981a12bab0538fe25c108d0815a8361",
+      "bytes": 9367,
+      "lines": 266
+    },
+    {
+      "path": "CRITICAL_TRACE.md",
+      "sha256": "79e10d4f927116cf759ea2598b5414f82eb1a9fdf6c7c81b1c80b525f1c2bbf8",
+      "bytes": 5675,
+      "lines": 151
+    },
+    {
+      "path": "CYCLE_DEFICIT_FAMILIES.md",
+      "sha256": "345682357baebf689efde2f661e56a8be55863c9917abfe2a015822b87d9bc70",
+      "bytes": 18326,
+      "lines": 507
+    },
+    {
+      "path": "ORDINARY_ANCHORS_AND_EXIT_FLUX.md",
+      "sha256": "b7b9c3e23edaedee5924f385ac55106b503a4d06d3f4646b27fe89cc9ebe5a27",
+      "bytes": 14453,
+      "lines": 367
+    },
+    {
+      "path": "LATEST_REPO_RECONCILIATION.md",
+      "sha256": "f32e0ed098919f2f97b8fa6ceb8cd4de2d71fc9afa24a50126488f6a8c4101c2",
+      "bytes": 6391,
+      "lines": 126
+    },
+    {
+      "path": "question_critical_trace.txt",
+      "sha256": "fca102b63b70a3be48ae5f47d63d81239cd0d534620ef604412ce65ad486fa57",
+      "bytes": 2170,
+      "lines": 64
+    }
+  ],
+  "analytic_input": {
+    "repo": "GettysburgResearch/collatz",
+    "sha": "cf91e46fa9fbadba3df7942202a5197c134d0ce0",
+    "path": "research/lean-forward-band-20261121/JOINT_CLOCK_MIXING.md",
+    "claim": "CFJ, implying a uniform positive finite-level atom floor",
+    "status": "Written analytic dependency; not imported as a Lean axiom"
+  },
+  "packing_proof_source": {
+    "sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+    "path": "research/astra-three-routes/pass2/ORBIT_MELLIN.md",
+    "claim": "T-A3-401 cylinder split; present note supplies finite distinct-segment endpoint correction"
+  },
+  "primary_sources": [
+    {
+      "author": "Terence Tao",
+      "url": "https://doi.org/10.1017/fmp.2022.8",
+      "preprint": "https://arxiv.org/abs/1909.03562",
+      "use": "Source named by frozen PR180; no prescribed-orbit independence imported"
+    },
+    {
+      "author": "Sara Brofferio",
+      "url": "https://doi.org/10.5802/aif.2191",
+      "pdf": "https://www.numdam.org/article/AIF_2006__56_2_499_0.pdf",
+      "use": "Published joint real/p-adic boundary setting; theorem statement inspected"
+    },
+    {
+      "author": "Yves Guivarc'h and Emile Le Page",
+      "url": "https://doi.org/10.1214/15-AIHP668",
+      "preprint": "https://arxiv.org/abs/1204.6004",
+      "use": "Published renewal and positive-profile inspiration, no ordinary trace estimate imported"
+    },
+    {
+      "author": "Lucas Valbuena",
+      "url": "https://github.com/x1xhlol/collatz-two-coordinate-obstruction/blob/main/paper/positive-stationary-envelope.tex",
+      "use": "Primary integer-envelope and fixed-integer Cesaro statements inspected; not a Green proof dependency; external Lean not replayed"
+    },
+    {
+      "author": "Lucas Valbuena",
+      "url": "https://github.com/x1xhlol/collatz-two-coordinate-obstruction/blob/main/paper/quadratic-cylinder-energy.tex",
+      "use": "Primary finite-level Lp theorem inspected; used only for explicitly conditional native-height bridge; external Lean not replayed"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/12/v1",
+      "use": "Unreviewed primary literature lead to canonical inverse law; no theorem imported"
+    },
+    {
+      "url": "https://rstation.ai/problems/collatz/papers/19",
+      "use": "Unreviewed primary literature lead to joint law and integer fibres; no theorem imported"
+    },
+    {
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "url": "https://arxiv.org/abs/2105.14697",
+      "use": "Mixed binary/ternary rewriting inspiration; no imported termination theorem"
+    },
+    {
+      "authors": "Keenan Monks, Kenneth G. Monks, Kenneth M. Monks, Maria Monks",
+      "url": "https://arxiv.org/abs/1204.3904",
+      "use": "Sufficient sets and exact inverse arithmetic inspiration; no imported convergence theorem"
+    }
+  ],
+  "finite_integer_certificate": {
+    "inequality": "8 * 3125**24 < 3456**24",
+    "holds": true,
+    "role": "Elementary numerical certificate used in finite-segment packing; not a verification of the analytic argument"
+  },
+  "cycle_extension": {
+    "status": "Finite minimum interface compiled in CriticalTrace.lean; written short-parent bridge; priority to PR180 stronger marked-only closing theorem",
+    "two_parent_exponents_by_target_mod9": {
+      "1": [
+        2,
+        4
+      ],
+      "2": [
+        1,
+        3
+      ],
+      "4": [
+        2,
+        6
+      ],
+      "5": [
+        3,
+        5
+      ],
+      "7": [
+        4,
+        6
+      ],
+      "8": [
+        1,
+        5
+      ]
+    },
+    "cycle_ratio_floor": "h(q)/q >= 3*alpha/32 at every positive cycle vertex",
+    "extra_required_interface": "Full two-parent sum domination, not only each-edge inequalities",
+    "remaining": "Sublinear height bound, effective constants/cutoff, and the corresponding finite core certificate remain open"
+  },
+  "latest_repository_inputs": [
+    {
+      "pr": 180,
+      "sha": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "paths": [
+        "research/lean-forward-band-20261121/MINIMAL_ENVELOPE_ATOM_REMOVAL.md",
+        "research/lean-forward-band-20261121/ABEL_MARKED_UPPER_ATTACK.md",
+        "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+        "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean"
+      ],
+      "scope": "Read named statements and proofs for integration; not a fresh Lean rebuild of the source PR"
+    },
+    {
+      "pr": 177,
+      "sha": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "paths": [
+        "research/lean-exact-witness-global-20261121/BOUNDED_GAP_ATTACK.md",
+        "research/lean-exact-witness-global-20261121/lean/Collatz/BoundedGapCofinal.lean",
+        "research/lean-exact-witness-global-20261121/LOW_INTERVAL_REFINEMENT.md"
+      ],
+      "scope": "High-gap family coverage under Hyp Interval; LowIntervalStep remains open"
+    }
+  ]
+}

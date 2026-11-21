@@ -1,5 +1,11 @@
 # Whole-repository synthesis and a faster mandatory-band clock
 
+**Continuation:** [Checkpoint 7](literature/README.md) connects PR180's
+canonical envelope to the entire critical Abel family, adds 94 audited
+Lean theorems for ordinary traces, finite anchors, and complete carry
+families, and reconciles those results with the latest PR177/180 heads.
+The present page preserves the checkpoint-6 statements and evidence.
+
 **Checkpoint 6. Full Collatz remains OPEN.** This pass combines a broader
 source review with three new proof developments: a substantially faster
 entrance theorem for the existing shrinking band, an all-word lower bound

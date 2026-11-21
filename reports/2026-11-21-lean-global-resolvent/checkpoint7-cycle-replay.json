@@ -1,0 +1,98 @@
+{
+  "exact_compiler_programs": 129,
+  "arbitrary_suffix_affine_checks": 140,
+  "integer_terminal_congruences": [
+    {
+      "deficit": 0,
+      "ternary_precision": 85,
+      "terminal_exponent": "2445897239060048487841404659000911618220",
+      "terminal_exponent_digits": 40,
+      "terminal_grade_bound": 135
+    },
+    {
+      "deficit": 1,
+      "ternary_precision": 99,
+      "terminal_exponent": "79840276367785801082918378065770760841269105250",
+      "terminal_exponent_digits": 47,
+      "terminal_grade_bound": 157
+    },
+    {
+      "deficit": 2,
+      "ternary_precision": 113,
+      "terminal_exponent": "524622557067516458525356704976652778556214924023652966",
+      "terminal_exponent_digits": 54,
+      "terminal_grade_bound": 179
+    },
+    {
+      "deficit": 3,
+      "ternary_precision": 127,
+      "terminal_exponent": "579911990244722242828234653072252864626138555808298039881620",
+      "terminal_exponent_digits": 60,
+      "terminal_grade_bound": 201
+    },
+    {
+      "deficit": 4,
+      "ternary_precision": 141,
+      "terminal_exponent": "10214332667359189866703978864736497318113857813413992546435319268282",
+      "terminal_exponent_digits": 68,
+      "terminal_grade_bound": 223
+    },
+    {
+      "deficit": 5,
+      "ternary_precision": 155,
+      "terminal_exponent": "28003205477007060493510127510264095299662785482821868495031108955116215104",
+      "terminal_exponent_digits": 74,
+      "terminal_grade_bound": 245
+    },
+    {
+      "deficit": 6,
+      "ternary_precision": 169,
+      "terminal_exponent": "134271878688168523101088714911854936931488986635961941071108514445024005392977916",
+      "terminal_exponent_digits": 81,
+      "terminal_grade_bound": 267
+    },
+    {
+      "deficit": 7,
+      "ternary_precision": 183,
+      "terminal_exponent": "1106074110884090258321144204898719457829929315114278321240954745019276647455665542988052",
+      "terminal_exponent_digits": 88,
+      "terminal_grade_bound": 289
+    },
+    {
+      "deficit": 8,
+      "ternary_precision": 197,
+      "terminal_exponent": "1052082651068169335368571786207240391276487240857725056473670665380060795264409592102351419002",
+      "terminal_exponent_digits": 94,
+      "terminal_grade_bound": 311
+    },
+    {
+      "deficit": 9,
+      "ternary_precision": 211,
+      "terminal_exponent": "26069843542627271462869418217386694104719838356398923273261802821473575673017099985635416881367644460",
+      "terminal_exponent_digits": 101,
+      "terminal_grade_bound": 333
+    },
+    {
+      "deficit": 10,
+      "ternary_precision": 225,
+      "terminal_exponent": "25853269255125931926466671122904166227903946955402048388252308177264449684469641523243262727189985787384002",
+      "terminal_exponent_digits": 107,
+      "terminal_grade_bound": 355
+    },
+    {
+      "deficit": 11,
+      "ternary_precision": 239,
+      "terminal_exponent": "254263744810826346345217435385636981584549387216658999968935436968347505299175456065901285295939411241823212487326",
+      "terminal_exponent_digits": 114,
+      "terminal_grade_bound": 377
+    },
+    {
+      "deficit": 12,
+      "ternary_precision": 253,
+      "terminal_exponent": "1243786697099234978973378168392857680051926663317640962566285715333682530978967461372903812956573406682195009831453946978",
+      "terminal_exponent_digits": 121,
+      "terminal_grade_bound": 399
+    }
+  ],
+  "scope": "Finite exact compiler and congruence replay. Infinite ordinary-source statements are kernel-proved in Lean."
+}

@@ -1,0 +1,64 @@
+ARITHMETIC WORD DENSITIES IN A SHRINKING DYADIC WINDOW
+
+For k>=0 and a word a=(a_1,...,a_k) of positive integers, put
+
+  A_j=a_1+...+a_j,
+  beta(a)=sum_{j=1}^k 3^(j-1)*2^(-A_j).
+
+Each denominator of beta is a power of two, so beta has a well-defined
+residue modulo 3^k. For a positive odd integer q not divisible by three,
+define the nonnegative convergent series
+
+  rho_k(q)=3^k sum_a 2^(-A_k) [beta(a)=q (mod 3^k)],
+  rho_0(q)=1.
+
+For 0<r<1 define
+
+  H_r(q)=(1-r) sum_{k>=0} r^k rho_k(q),
+  H_*(q)=limsup_{r->1-} H_r(q).
+
+The following elementary facts may be used:
+
+* rho_k(q)<=3^k.
+* sum_{k=0}^N rho_k(q)
+    <= q(3q+1)(1+8N)+(6/5)q^u exp(-cN),
+  where u=log_2(4/3), c=8u-log(6)>0, and log is natural.
+  In particular H_r(q) is finite for each q and r<1, and H_*(q) is finite.
+
+Let d be the unique integer with 2^d<=q<2^(d+1). Restrict q to the window
+
+  (d+1)(q-2^d) <= 70*2^d.
+
+PRIMARY QUESTION
+
+Prove or refute the following assertion: for every epsilon>0 there is
+Q(epsilon) such that all positive odd q>=Q(epsilon), not divisible by
+three and satisfying the displayed window, obey
+
+  H_*(q) <= epsilon*q.
+
+Give an explicit modulus Q(epsilon) if the assertion is true. A stronger
+acceptable conclusion is an explicit C>0 and theta<1 with
+
+  H_*(q) <= C*q^theta
+
+on the same window. A bound on all positive odd units would be stronger
+than required.
+
+An alternative, stronger-in-form target avoids the Abel parameter:
+prove the same sublinear estimate for
+
+  F(q)=sup_{k>=1} rho_k(q).
+
+A bound uniform over every finite k proves the requested bound on H_*.
+No relation between k and log(q) may be assumed in this alternative.
+
+All positive letters and all depths must remain in the series. Bounds at
+a fixed r<1, finite-depth L^p bounds on residue classes, and convergence at
+each one fixed q do not by themselves establish the requested uniform
+estimate as q grows. The order of the limits is part of the question:
+first the critical limsup in r at each ordinary integer, then the height
+limit through the stated window.
+
+This is an open research question. No rate of stabilization in r or depth
+is supplied as an assumption. Keep any additional input explicit.

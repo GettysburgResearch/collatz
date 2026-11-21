@@ -4,11 +4,14 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [the mandatory shrinking section](section/README.md)
-now contains exponentially many distinct ancestors of every supplied small
-ternary unit, with explicit height and clock bounds. A passing finite survivor
-count certifies an entire input range at the same observation deadline. The
-required upper survivor bound remains open.
+**Latest checkpoint:** [the literature continuation](overview/literature/README.md)
+connects the canonical inverse envelope with every critical Abel limit,
+adds 94 audited Lean theorems, and identifies the remaining marked-height
+and low-interval obligations after the latest PR177/180 changes.
+[Checkpoint 6](overview/README.md) contains the faster mandatory-band clock
+and whole-certificate carry reduction. The earlier
+[mandatory shrinking section](section/README.md) and its finite survivor
+criterion remain available with their original evidence and open upper bound.
 
 ## Checkpoint 1: exact global floor and unrestricted terminal normalization
 
