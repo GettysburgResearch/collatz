@@ -130,6 +130,10 @@ bound has `p=2^k`, `k=25h+3`, and requires
 4((4k+1)M(p,t)+1)<2^{21h}.
 \]
 
+That stronger Lean equivalence retains `Population84` as an explicit
+hypothesis. This pass does not re-prove its published predecessor-count
+input or import it into the present Lean package.
+
 Thus it asks for a relative nonmeeting rate of order
 `p^(−0.16)/log p` or smaller on the actual five-block interval. That is a
 different and substantially less restrictive numerical target than the

@@ -125,6 +125,10 @@ followed by the complete four-module build in
 This execution proves the stated implications; it does not establish their
 open universal hypothesis.
 
+The final [clean-checkout validation record](../../reports/lean-global-closure-20261121/VALIDATION.md)
+records a fresh build of every project proof module at the published
+scientific commit and the separate five-command repository gate.
+
 ## Latest source interfaces considered
 
 These are exact investigation pins, not unproved premises imported into the
