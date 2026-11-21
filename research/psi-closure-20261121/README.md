@@ -77,6 +77,17 @@ The goal was to prove `OpenLemma`, which would finish the conjecture.
 **First unsupported step:** `OpenLemma`. Its weakest sub-instance in the unrestricted form is
 `∀ i, Basin (3^i)`.
 
+## Parallel routes (21 Nov 2026)
+
+Each route has its own directory under `routes/` with a `NOTES.md` giving a status for
+every claim. Lean files there are standalone (`import Collatz`) and were recompiled by the
+integrating session with warnings as errors; only standard axioms appear.
+
+| Route | Outcome | First statement not proved |
+|---|---|---|
+| `routes/pow3` | PARTIAL. `Pow3Families.lean`: 50 definitions and theorems. Linearity of `T^n` in the added multiple of `2^n` for any base point; `∀ i, 3^i ∈ C` ⟺ `x + 2^n ∈ C` whenever `T^n(x) = 1`; powers of three and Mersenne numbers in base-9 repunit coordinates; `3^N ~ 3^(N−1)` on explicit exponent families of unbounded depth | `3m − 1 ∈ C ⟹ m ∈ C` at `m = 3x+1`, `x = (3w+1)/8` odd, `w = 3^(s−1) q`, `3^N = 1 + 4^s q` — the reverse closure again, at explicit points |
+| `routes/literature` | nothing external closes `OpenLemma` or its first layer (search-summary evidence only) | — |
+
 ## Concurrent work (noted 21 Nov 2026, not rebuilt here)
 
 PRs #175–#181 were opened after this packet and several import its Lean core unchanged

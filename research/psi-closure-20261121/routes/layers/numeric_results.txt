@@ -1,0 +1,91 @@
+== Part 1: parametrization of ranks 0,1,2 (brute force up to 300000)
+   rank0 == {2^a}: True (19);  rank1 == {2^b y_j, j>=2}: True (72);  rank2 == {2^b (2^e y_j - 1)/3}: True (180)
+== Part 2: exact iterate identities (all asserted)
+   7350 instances checked, no failure
+== Part 3: S-orbits (3x-1 map) of the layer constants, b <= 1000
+   seed 3^b+1    : enters cycle{1}: 287, cycle{5,7,10}: 476, cycle{17,..}: 238, no known cycle within cap: 0
+      sigma/b for b>=50: min 5.85 mean 7.50 max 9.16
+      first rows (b, sigma, odd steps, entry point): (0,1,0,1) (1,2,0,1) (2,0,0,10) (3,2,0,7) (4,0,0,82) (5,2,0,61) (6,19,6,1) (7,19,5,1) (8,40,21,61) (9,40,20,61) (10,40,19,61) (11,40,18,61) (12,73,37,25) (13,73,36,25) (14,73,35,25) (15,73,34,25)
+   seed 3^b-1    : enters cycle{1}: 285, cycle{5,7,10}: 484, cycle{17,..}: 231, no known cycle within cap: 0
+      sigma/b for b>=50: min 5.75 mean 7.49 max 9.03
+      first rows (b, sigma, odd steps, entry point): (1,1,0,1) (2,3,0,1) (3,5,2,7) (4,3,0,10) (5,13,5,7) (6,3,0,91) (7,38,17,1) (8,19,4,1) (9,40,20,61) (10,40,19,61) (11,40,18,61) (12,40,17,61) (13,73,36,25) (14,73,35,25) (15,124,67,61) (16,73,33,25)
+   seed 2*3^b-1  : enters cycle{1}: 295, cycle{5,7,10}: 479, cycle{17,..}: 227, no known cycle within cap: 0
+      sigma/b for b>=50: min 5.92 mean 7.56 max 9.31
+      first rows (b, sigma, odd steps, entry point): (0,0,0,1) (1,0,0,5) (2,0,0,17) (3,12,4,1) (4,14,6,7) (5,39,19,1) (6,39,18,1) (7,26,12,34) (8,60,31,7) (9,41,20,61) (10,45,21,34) (11,45,20,34) (12,45,19,34) (13,121,66,37) (14,125,68,61) (15,77,33,1)
+   [2.1s]
+== Part 4: hypothesis H at rank 1 (box b,k <= 60, j,n <= 80; class label = first point < 2^40)
+   one-parameter members classified: 14585 (68 labels)  [3.5s]
+   two-parameter members classified: 7038  [4.2s]
+   -- family F1: 4216 members; landing constant on an S-cycle: 987; small pre-cyclic (<=40): 10; generic (not listed): 3219
+      predicted landing 3^K-c found in the same class: 977, missing: 0 [], out of range: 20
+      generic members: cost of joining a one-parameter member (merge point >= 2^40),
+      by beta = bits(landing constant c); D = bits(landing 3^K-c) - bits(merge point):
+         beta in (0,8]: members 36, merged 36, D min/median/max = 1/3/9, min(D-beta) = -7, merged with D < beta-8: 0
+         beta in (8,16]: members 361, merged 346, D min/median/max = 2/12/71, min(D-beta) = -8, merged with D < beta-8: 0
+         beta in (16,24]: members 276, merged 232, D min/median/max = 15/23/71, min(D-beta) = -5, merged with D < beta-8: 0
+         beta in (24,32]: members 172, merged 92, D min/median/max = 22/34/108, min(D-beta) = -3, merged with D < beta-8: 0
+         beta in (32,48]: members 968, merged 756, D min/median/max = 32/54/118, min(D-beta) = -3, merged with D < beta-8: 0
+         beta in (48,64]: members 737, merged 415, D min/median/max = 46/68/151, min(D-beta) = -4, merged with D < beta-8: 0
+         beta in (64,inf]: members 669, merged 172, D min/median/max = 66/89/141, min(D-beta) = -4, merged with D < beta-8: 0
+         e.g. (p,q)=(18,23) K=41 beta=19 merge(label,K',steps',steps after landing,bits)=('3^K-4', 41, 160, 160, 43) D=22
+         e.g. (p,q)=(18,25) K=44 beta=20 merge(label,K',steps',steps after landing,bits)=('3^K-28', 41, 79, 79, 47) D=23
+         e.g. (p,q)=(18,26) K=44 beta=18 merge(label,K',steps',steps after landing,bits)=('3^K-36', 41, 116, 116, 49) D=21
+         e.g. (p,q)=(18,27) K=45 beta=18 merge(label,K',steps',steps after landing,bits)=('3^K+0', 43, 194, 194, 44) D=28
+         e.g. (p,q)=(18,30) K=48 beta=17 merge(label,K',steps',steps after landing,bits)=('3^K-4', 41, 100, 100, 48) D=29
+         e.g. (p,q)=(19,23) K=41 beta=19 merge(label,K',steps',steps after landing,bits)=('3^K-4', 41, 160, 160, 43) D=22
+         e.g. (p,q)=(19,25) K=44 beta=20 merge(label,K',steps',steps after landing,bits)=('3^K-28', 41, 79, 79, 47) D=23
+         e.g. (p,q)=(19,26) K=44 beta=18 merge(label,K',steps',steps after landing,bits)=('3^K-36', 41, 116, 116, 49) D=21
+      generic members: 3219, distinct landings (K,c): 1137, distinct classes: 234, classes holding more than one landing: 124
+      parity fold F1(2n,j) ~ F1(2n+1,j): 1565 of 1565 generic pairs share a class
+      tail detector on members with beta >= 24 (orbit points == small const mod 3^25 or mod 2^40, |const| <= 200): 846802 orbit points scanned, 0 hits []
+   -- family R1a: 1382 members; landing constant on an S-cycle: 327; small pre-cyclic (<=40): 4; generic (not listed): 1051
+      predicted landing 3^K-c found in the same class: 322, missing: 0 [], out of range: 9
+      generic members: cost of joining a one-parameter member (merge point >= 2^40),
+      by beta = bits(landing constant c); D = bits(landing 3^K-c) - bits(merge point):
+         beta in (0,8]: members 11, merged 11, D min/median/max = 1/3/4, min(D-beta) = -7, merged with D < beta-8: 0
+         beta in (8,16]: members 132, merged 129, D min/median/max = 3/13/34, min(D-beta) = -6, merged with D < beta-8: 0
+         beta in (16,24]: members 87, merged 69, D min/median/max = 14/23/71, min(D-beta) = -3, merged with D < beta-8: 0
+         beta in (24,32]: members 59, merged 28, D min/median/max = 22/28/108, min(D-beta) = -3, merged with D < beta-8: 0
+         beta in (32,48]: members 307, merged 245, D min/median/max = 32/57/118, min(D-beta) = -3, merged with D < beta-8: 0
+         beta in (48,64]: members 240, merged 113, D min/median/max = 51/67/104, min(D-beta) = 0, merged with D < beta-8: 0
+         beta in (64,inf]: members 215, merged 67, D min/median/max = 66/84/126, min(D-beta) = -4, merged with D < beta-8: 0
+         e.g. (p,q)=(19,25) K=44 beta=20 merge(label,K',steps',steps after landing,bits)=('3^K-28', 41, 79, 79, 47) D=23
+         e.g. (p,q)=(20,25) K=44 beta=20 merge(label,K',steps',steps after landing,bits)=('3^K-28', 41, 79, 79, 47) D=23
+         e.g. (p,q)=(21,22) K=43 beta=25 merge(label,K',steps',steps after landing,bits)=('3^K-26', 42, 143, 143, 41) D=28
+         e.g. (p,q)=(21,28) K=48 beta=21 merge(label,K',steps',steps after landing,bits)=('3^K+0', 43, 194, 194, 44) D=33
+         e.g. (p,q)=(21,31) K=53 beta=23 merge(label,K',steps',steps after landing,bits)=('3^K-40', 49, 177, 177, 61) D=24
+         e.g. (p,q)=(21,34) K=55 beta=20 merge(label,K',steps',steps after landing,bits)=('3^K+5', 50, 141, 141, 62) D=26
+         e.g. (p,q)=(21,37) K=57 beta=17 merge(label,K',steps',steps after landing,bits)=('3^K-12', 51, 79, 79, 77) D=14
+         e.g. (p,q)=(21,40) K=61 beta=17 merge(label,K',steps',steps after landing,bits)=('3^K-20', 59, 74, 74, 79) D=18
+      generic members: 1051, distinct landings (K,c): 464, distinct classes: 114, classes holding more than one landing: 70
+      tail detector on members with beta >= 24 (orbit points == small const mod 3^25 or mod 2^40, |const| <= 200): 282836 orbit points scanned, 0 hits []
+   -- family R1b: 1440 members; landing constant on an S-cycle: 303; small pre-cyclic (<=40): 10; generic (not listed): 1127
+      predicted landing 3^K-c found in the same class: 299, missing: 0 [], out of range: 14
+      generic members: cost of joining a one-parameter member (merge point >= 2^40),
+      by beta = bits(landing constant c); D = bits(landing 3^K-c) - bits(merge point):
+         beta in (0,8]: members 8, merged 8, D min/median/max = 1/2/7, min(D-beta) = -5, merged with D < beta-8: 0
+         beta in (8,16]: members 124, merged 119, D min/median/max = 2/11/48, min(D-beta) = -8, merged with D < beta-8: 0
+         beta in (16,24]: members 96, merged 82, D min/median/max = 15/22/45, min(D-beta) = -3, merged with D < beta-8: 0
+         beta in (24,32]: members 67, merged 50, D min/median/max = 27/32/53, min(D-beta) = -1, merged with D < beta-8: 0
+         beta in (32,48]: members 303, merged 229, D min/median/max = 35/50/108, min(D-beta) = -2, merged with D < beta-8: 0
+         beta in (48,64]: members 236, merged 140, D min/median/max = 49/71/126, min(D-beta) = 0, merged with D < beta-8: 0
+         beta in (64,inf]: members 293, merged 90, D min/median/max = 66/94/136, min(D-beta) = -1, merged with D < beta-8: 0
+         e.g. (p,q)=(13,26) K=46 beta=21 merge(label,K',steps',steps after landing,bits)=('3^K-36', 41, 116, 116, 49) D=24
+         e.g. (p,q)=(13,29) K=49 beta=20 merge(label,K',steps',steps after landing,bits)=('3^K-4', 41, 100, 100, 48) D=30
+         e.g. (p,q)=(13,32) K=54 beta=22 merge(label,K',steps',steps after landing,bits)=('3^K+0', 43, 194, 194, 44) D=42
+         e.g. (p,q)=(13,35) K=58 beta=22 merge(label,K',steps',steps after landing,bits)=('3^K-22', 44, 76, 76, 66) D=26
+         e.g. (p,q)=(13,38) K=59 beta=18 merge(label,K',steps',steps after landing,bits)=('3^K-61', 55, 187, 187, 64) D=30
+         e.g. (p,q)=(13,41) K=63 beta=18 merge(label,K',steps',steps after landing,bits)=('3^K-61', 71, 235, 235, 73) D=27
+         e.g. (p,q)=(17,23) K=44 beta=24 merge(label,K',steps',steps after landing,bits)=('3^K-26', 42, 143, 143, 41) D=29
+         e.g. (p,q)=(17,26) K=49 beta=26 merge(label,K',steps',steps after landing,bits)=('3^K-4', 41, 100, 100, 48) D=30
+      generic members: 1127, distinct landings (K,c): 598, distinct classes: 121, classes holding more than one landing: 88
+      tail detector on members with beta >= 24 (orbit points == small const mod 3^25 or mod 2^40, |const| <= 200): 309381 orbit points scanned, 0 hits []
+   [160.4s]
+== Part 5: rank 2, F2(b,e,j) = 3^b 2^e y_j - (3^b+1), 2^e y_j = 1 mod 3 (box b<=30, e<=30, j<=20)
+   members: 2589; landing constant listed (one-parameter): 4; first S-stage on a cycle but landing generic (two-parameter family 3^k y_j - c): 103; generic: 2482
+   cone members with first-stage constant 1: joined to F1(k-1,j) in class table: 27, missing: 0, out of the F1 box: 24
+   generic members sharing a class with a one-parameter member: 14; with an F1 member: 523 [('F1', (6, 17, 20), [('F1', 16, 24), ('F1', 17, 24)]), ('F1', (7, 17, 20), [('F1', 16, 24), ('F1', 17, 24)]), ('F1', (8, 15, 20), [('F1', 13, 22), ('F1', 14, 22)]), ('F1', (8, 17, 20), [('F1', 20, 20), ('F1', 21, 20)]), ('F1', (8, 18, 19), [('F1', 17, 19), ('F1', 18, 19)]), ('F1', (8, 21, 20), [('F1', 13, 22), ('F1', 14, 22)])]
+   generic members: 2482, distinct classes: 549, class-size histogram: {1: 97, 2: 165, 3: 50, 4: 89, 5: 22, 6: 37, 7: 9, 8: 18, 9: 9, 10: 12, 11: 4, 12: 7, 13: 2, 14: 2, 15: 1, 16: 2, 17: 2, 18: 1, 19: 1, 20: 1, 21: 1, 22: 3, 23: 2, 24: 3, 25: 2, 27: 1, 29: 1, 30: 1, 32: 1, 36: 2, 44: 1}, classes with two different landings: 214
+   [160.7s]
+done [160.7s]
+exit=0
