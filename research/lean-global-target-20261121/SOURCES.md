@@ -30,6 +30,31 @@ at e238c63a5d57f96bb063b7472498d1977df51951 and identifies its core-only
 shim. That inherited source pin is preserved. Our own source freeze
 does not retroactively attribute its bytes to the later PR146 head.
 
+## Later source refresh during the same pass
+
+After publication of checkpoint 1, the most recently updated open-PR metadata was refreshed.
+The following later heads were fetched. Only the named interfaces relevant
+to the current closing attempts were inspected; they were not imported or
+broadly re-reviewed.
+
+| PR | Later full head | Targeted use |
+|---|---|---|
+|173|cccf14d13250d3f98ef9b01ddbd304d11294e603|Metadata for the later five-block and mixing tests; no new analytic or Lean dependency.|
+|174|011b89e5362ea89427c2704e5e6c1f434e860da0|Diff from the imported head adds only literature notes; the four copied Lean files remain unchanged.|
+|176|d2303ea3144ba652d089c1ec38ad3879c3ea5ef7|EXACT_FORWARD_FLOOR.md and MIXED_CERTIFICATE_DESCENT.md; the floor is credited to this existing development, not republished as a new theorem here.|
+|177|23bbf7383b30bff37434fe823b957759bcdf2c1f|PsiCompletion and ResetFamily normal forms for the adjacent odd-tail reset boundary.|
+|179|4bf2675bcc78b42a3f17c0dd826e1dfcc4c8f35b|Metadata for the odd-step budget and complete shadow chart; no assumed universal budget.|
+|180|995ae97b10e851e4f91f7c74395a5b28bcacfebc|LINEAR_BLOCK_ATOM_FLOOR.md and REPOSITORY_RIGIDITY_COROLLARY.md used as explicitly source-qualified analytic inputs in the floor attempt.|
+
+PR175 at 943c47a14282bcb340d1f66e4de349fea6460ccf was seen in the
+same metadata refresh; its parity-budget predicate was still open. No
+source from that head was imported or used as a proved closing lemma.
+
+The later inputs sharpen the attempted global arguments in
+[RESET_BOUNDARY.md](closure/RESET_BOUNDARY.md) and
+[FLOOR_ATTEMPT.md](global/FLOOR_ATTEMPT.md). They do not change the
+dependency graph of the new Lean theorems.
+
 The imported powers-of-four identity and one-step component facts are
 credited to PR174/PR146. The new paired profile, ordinary expanding
 cylinder, and first-return claim are separate declarations in

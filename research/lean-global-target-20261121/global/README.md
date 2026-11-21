@@ -121,12 +121,15 @@ mass. Positive reindexing yields \(BG=G-1\). Thus a legitimate additive
 potential remembering all resets does exist; the issue is its ordinary
 endpoint growth.
 
-The corresponding second-denominator identity is
+Write \(U\) for the accelerated odd map and
+\(J_j(n)=3^j/2^{A_j(n)}\), where \(A_j(n)\) is the total binary exponent
+along its first j odd steps. The corresponding second-denominator identity is
 \[
 \sum_{j\ge0}\sum_{n>0\ {\rm odd}}
 \frac{J_j(n)^4}{U^j(n)^2}
 =\sum_{m>0\ {\rm odd}}\frac{G(m)}{m^2}.
 \]
+This is an equality of nonnegative extended sums, which may be infinite.
 We did not prove an adequate bound for its right side. Substituting
 fifth-denominator summability would lose three endpoint powers.
 

@@ -28,6 +28,19 @@ import Global
 #print axioms PsiCharged.charged_failure_descends
 #print axioms PsiCharged.repaid_expanding_cylinder
 
+#check PsiUnpaid.expansion_chain_growth
+#check PsiUnpaid.expansion_multiplier_gap
+#check PsiUnpaid.unpaid_exit
+#check PsiUnpaid.unpaid_paired_return
+#check PsiUnpaid.concrete_eight_chain
+#check PsiUnpaid.concrete_unpaid_return
+#print axioms PsiUnpaid.expansion_chain_growth
+#print axioms PsiUnpaid.expansion_multiplier_gap
+#print axioms PsiUnpaid.unpaid_exit
+#print axioms PsiUnpaid.unpaid_paired_return
+#print axioms PsiUnpaid.concrete_eight_chain
+#print axioms PsiUnpaid.concrete_unpaid_return
+
 #check CollatzCorrection.arbitrary_target_equation
 #check CollatzCorrection.equation_iff_path
 #check CollatzCorrection.equation_clock_replay

@@ -1,6 +1,6 @@
 # Lean attack on global Collatz closure
 
-**Checkpoint 1: the full theorem is OPEN.** Three concurrent attacks targeted
+**Checkpoint 2: the full theorem is OPEN.** Three concurrent attacks targeted
 the missing global implication: paired reverse closure, an unbalanced
 certificate normalizer, and inverse pressure. This packet contains the
 completed Lean components and records precisely where each closing argument
@@ -66,6 +66,21 @@ The [closure route note](closure/README.md) states the exact guard.
 **Forcing a paying exit for every relevant source remains open.** Finite
 escape from one expanding cylinder does not establish that global step.
 
+The stronger first-exit claim is now refuted. The new
+[UnpaidExit.lean](lean/Closure/UnpaidExit.lean) proves that any actual chain
+with \(k\ge8\), followed by the shortest P1 exit \(8u=3q+2\), has
+\(u>m\), while preserving the literal paired paths at clock \(22k+3\).
+It supplies an explicit eight-block witness at clock 179 with 113 odd
+inputs on each arm. The [written construction](closure/UNPAID_EXIT.md)
+also gives whole ordinary progressions for every \(k\ge8\); the modular
+existence argument is expressly separated from the Lean declarations.
+
+The later [reset continuation](closure/RESET_BOUNDARY.md) uses the exact
+least-bad floor already established in PR176 and the adjacent-tail normal
+forms of PR177. The existing floor is credited there, not presented as a
+new theorem of this packet. A common well-founded order still needs sound
+replacement certificates for all its remaining reset states.
+
 ## Exact correction synthesis with arbitrary budgets
 
 [Descent/Correction.lean](lean/Descent/Correction.lean) supplies an exact
@@ -107,6 +122,12 @@ does not supply the required global negative-moment bound. Infinite sums,
 real degrees, and mixed valuation weights have a separately stated written
 proof boundary; they are not advertised as Lean theorems. See the
 [inverse-pressure note](global/README.md).
+
+The [floor-based continuation](global/FLOOR_ATTEMPT.md) also incorporates
+PR180's source-qualified predecessor-density and rigidity result. It
+identifies the remaining harmonic five-energy upper bound explicitly;
+the least-bad floor does not establish summability of the surviving shell
+charges. No new global estimate or cycle exclusion was obtained.
 
 ## Reproduce the formal checkpoint
 

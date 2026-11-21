@@ -12,9 +12,30 @@ dependency audit, and the unchanged pinned imports.
 `check_lean.py` records actual Lean execution and printed declaration axioms.
 Repository `tools/validate.py --regressions` separately checks a clean complete
 checkout's integrity and selected bounded regressions. Neither record is a
-full convergence proof. Exact published-commit executions are recorded in the
-PR body and retained here in a later checkpoint; the command must run before
-its result can be attributed to that commit.
+full convergence proof.
+
+## Published checkpoint 1 execution
+
+PR: [181](https://github.com/GettysburgResearch/collatz/pull/181).
+The remote branch was read back before its exact commit was checked out into
+a clean, complete working tree.
+
+- Commit: 352bbb78234991e332153a180de9c2d6b028868b.
+- Tree: 87fd46683b54cfb910a4fce0baad23b92511a1ad.
+- [Lean execution receipt](checkpoint1-lean.json): build and warning-as-error
+  audit passed; all 29 audited declaration dependency lists are subsets of
+  propext, Classical.choice, and Quot.sound. Imported file hashes and the
+  before/after source hashes matched.
+- [Complete-checkout receipt](checkpoint1-checkout.json): all 11 commands of
+  the required integrity and bounded-regression bundle passed; 341 tracked
+  files, with unchanged commit/tree and clean tracked files afterward.
+- The signed-debt Fraction replay also exited zero on that same checkout,
+  reproducing the three carry controls and four valuation controls recorded
+  in its adjacent note. This is bounded computational evidence.
+
+These receipts identify checkpoint 1. They do not retroactively attest to
+later documentation or source changes. The current PR body identifies any
+subsequent exact-head execution.
 
 ## Open global obligations
 

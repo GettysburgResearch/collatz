@@ -1,0 +1,248 @@
+{
+  "schema": "collatz-lean-checkpoint/v1",
+  "started_utc": "2026-11-21T08:32:04.817762+00:00",
+  "scope": "actual Lean execution and declaration dependencies; no full Collatz proof",
+  "commit": "352bbb78234991e332153a180de9c2d6b028868b",
+  "tree": "87fd46683b54cfb910a4fce0baad23b92511a1ad",
+  "tracked_clean": true,
+  "source_sha256_before": {
+    "research/lean-global-target-20261121/README.md": "d0aee84774be47188da97aa12d73577bc6b37895fca6a456652c5fa189202c4d",
+    "research/lean-global-target-20261121/SOURCES.md": "ccf1d9b59ee57dc5715dd04fe1a5e678341aff297bd3f6337c67d4c05ce5e5f6",
+    "research/lean-global-target-20261121/check_lean.py": "7cabf4356c7c6e5d81f3bffbe1d47d7c06b7264160503ccc8214348aa6fdc9bc",
+    "research/lean-global-target-20261121/closure/README.md": "495d9d5faae83a73e3b8bc52080bfd6da9a04049a634e733f76f81723fb2def0",
+    "research/lean-global-target-20261121/descent/README.md": "2dbec9a93a40c773352a8f6bacda26f1415ca17dfc83bcbd651b2732fb8e6d5b",
+    "research/lean-global-target-20261121/descent/SIGNED_DEBT_ATTEMPT.md": "aff33fc905e4029afeacf28315d5fbde1e9aafeb191b447e4d63155e755847f4",
+    "research/lean-global-target-20261121/descent/signed_debt_attempt.py": "7385e86fe7d0f5b89aa47ba87d0689347b31fa6726725f94bf5107f8244a1558",
+    "research/lean-global-target-20261121/global/README.md": "ab56cb36b5b158f3d665da93bef5756713666358530ecac9d98adf54b78f3e7d",
+    "research/lean-global-target-20261121/lean/.gitignore": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+    "research/lean-global-target-20261121/lean/CheckpointAudit.lean": "c5a170f465b44ce24333f4e38600a8fb306298f8fb40dfcf1f39e76a427f7113",
+    "research/lean-global-target-20261121/lean/Closure/Oriented.lean": "af43f06c35bc960e255c9fccc66dc347ef125e6e53321b87cccc2404e22b523e",
+    "research/lean-global-target-20261121/lean/Closure/PsiDescent.lean": "536c35499a71a3cbb416fdbb6a2f5a30fae543c3361dd60048a32b22ab3b49f9",
+    "research/lean-global-target-20261121/lean/Closure.lean": "9e00c2d70c7752a8a110f78158ee07c1442a04b99a258f693f41edf84dd27844",
+    "research/lean-global-target-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-target-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-target-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-global-target-20261121/lean/Collatz.lean": "38e5cf41c569c9fe052d540e3b5a765bb34b5fbd45be6e731d9ea5b5967f7818",
+    "research/lean-global-target-20261121/lean/Descent/Correction.lean": "6699cf6fd3d1a853ac1798fd3b3bf64259fee33826e0ba9c33d01dbf54a18775",
+    "research/lean-global-target-20261121/lean/Descent.lean": "5f8da79976199e6458c26dcca179309891e32b8695f663cedd1ad9807baca13a",
+    "research/lean-global-target-20261121/lean/Global/InversePressure.lean": "dc0b6e59e3341810d1d11984bdc8913f53ad0201630d652390b9a9fb0a362ff7",
+    "research/lean-global-target-20261121/lean/Global.lean": "28295513dfa7bf90283c48fd4cf2407503b5ad1fc8dbc42d3209964e69c3f6cb",
+    "research/lean-global-target-20261121/lean/lake-manifest.json": "31a128733e8e3f3614bd9429ab2fdd6d5de49783940f38a43055b5ee869ce3ff",
+    "research/lean-global-target-20261121/lean/lakefile.toml": "0fb7955a905e76243d230d0f18cc499348302a91323a66cf4b9e365ab23613a1",
+    "research/lean-global-target-20261121/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "research/lean-global-target-20261121/upstream-files.json": "69a80286888c1b278c844216e20e1699228a510c7adc7f52abe91c1e3417e485"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+      "stderr": "",
+      "seconds": 0.523
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2714 [2/16] Built Collatz.ReverseBasin146 (8.4s)\n\u2714 [3/16] Built Collatz.Closure (1.3s)\n\u2714 [4/16] Built Collatz.Shadow (1.6s)\n\u2139 [5/16] Built Descent.Correction (1.6s)\ninfo: Descent/Correction.lean:323:0: 'CollatzCorrection.head_forced' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:324:0: 'CollatzCorrection.equation_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:325:0: 'CollatzCorrection.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:326:0: 'CollatzCorrection.head_budget_independent' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:327:0: 'CollatzCorrection.arbitrary_target_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:328:0: 'CollatzCorrection.first_path_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:329:0: 'CollatzCorrection.prefix_budget_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Descent/Correction.lean:330:0: 'CollatzCorrection.nonnegative_rank_overhead_misses_known_pair' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: Descent/Correction.lean:331:0: 'CollatzCorrection.equation_clock_replay' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [6/16] Built Collatz (321ms)\n\u2714 [8/16] Built Descent (291ms)\n\u2139 [10/16] Built Closure.PsiDescent (2.2s)\ninfo: Closure/PsiDescent.lean:234:0: 'PsiDescent.paired_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/PsiDescent.lean:235:0: 'PsiDescent.failure_descends' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/PsiDescent.lean:236:0: 'PsiDescent.not_minimal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/PsiDescent.lean:237:0: 'PsiDescent.profile_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/PsiDescent.lean:238:0: 'PsiDescent.expanding_return' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/PsiDescent.lean:239:0: 'PsiDescent.expanding_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [11/16] Built Global.InversePressure (3.1s)\n\u2714 [12/16] Built Global (1.0s)\n\u2139 [14/16] Built Closure.Oriented (4.8s)\ninfo: Closure/Oriented.lean:212:0: 'PsiCharged.expansion_chain_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/Oriented.lean:213:0: 'PsiCharged.no_unbounded_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/Oriented.lean:214:0: 'PsiCharged.charged_exit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/Oriented.lean:215:0: 'PsiCharged.charged_paired_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/Oriented.lean:216:0: 'PsiCharged.charged_failure_descends' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: Closure/Oriented.lean:217:0: 'PsiCharged.repaid_expanding_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\n\u2714 [15/16] Built Closure (326ms)\nBuild completed successfully (16 jobs).\n",
+      "stderr": "",
+      "seconds": 17.154
+    },
+    {
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "CheckpointAudit.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "PsiDescent.paired_descent (r v m u : \u2115) (hm : 3 * m = 4 ^ (r + 1) * v + 2) (hu : 2 * u = 3 ^ r * v + 1) :\n  PsiDescent.orbit (2 * r + 3) m = u \u2227\n    PsiDescent.orbit (2 * r + 3) (3 * m - 1) = 3 * u - 1 \u2227\n      PsiDescent.oddCount (2 * r + 3) m = r + 1 \u2227 PsiDescent.oddCount (2 * r + 3) (3 * m - 1) = r + 1 \u2227 0 < u \u2227 u < m\nPsiDescent.failure_descends (r v m u : \u2115) (hm : 3 * m = 4 ^ (r + 1) * v + 2) (hu : 2 * u = 3 ^ r * v + 1) :\n  CollatzClosure.Fail 3 1 m \u2194 CollatzClosure.Fail 3 1 u\nPsiDescent.not_minimal_failure (r v m u : \u2115) (hm : 3 * m = 4 ^ (r + 1) * v + 2) (hu : 2 * u = 3 ^ r * v + 1)\n  (minimal : \u2200 (q : \u2115), 0 < q \u2192 q < m \u2192 \u00acCollatzClosure.Fail 3 1 q) : \u00acCollatzClosure.Fail 3 1 m\nPsiDescent.expanding_return (t : \u2115) :\n  PsiDescent.orbit 22 (2469887 + 4194304 * t) = 2816534 + 4782969 * t \u2227\n    PsiDescent.orbit 22 (3 * (2469887 + 4194304 * t) - 1) = 3 * (2816534 + 4782969 * t) - 1 \u2227\n      PsiDescent.oddCount 22 (2469887 + 4194304 * t) = 14 \u2227\n        PsiDescent.oddCount 22 (3 * (2469887 + 4194304 * t) - 1) = 14 \u2227 2469887 + 4194304 * t < 2816534 + 4782969 * t\nPsiDescent.expanding_first_return (t j : \u2115) (hj : 0 < j) (hl : j < 22) :\n  \u00acPsiDescent.BalancedReturn j (2469887 + 4194304 * t)\n'PsiDescent.paired_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiDescent.failure_descends' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiDescent.not_minimal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiDescent.expanding_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiDescent.expanding_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\nPsiCharged.expansion_chain_divisibility {k m q : \u2115} (h : PsiCharged.ExpansionChain k m q) :\n  4194304 ^ k \u2223 PsiCharged.expansionCharge m\nPsiCharged.expansion_chain_budget {k m q : \u2115} (h : PsiCharged.ExpansionChain k m q) :\n  4194304 ^ k \u2264 PsiCharged.expansionCharge m\nPsiCharged.no_unbounded_expansion (m : \u2115) : \u00ac\u2200 (k : \u2115), \u2203 q, PsiCharged.ExpansionChain k m q\nPsiCharged.charged_exit_bound {k r v m q u : \u2115} (h : PsiCharged.ExpansionChain k m q) (hkr : k \u2264 r)\n  (hq : 3 * q = 4 ^ (r + 1) * v + 2) (hu : 2 * u = 3 ^ r * v + 1) : 8 * u \u2264 3 * m + 40\nPsiCharged.charged_paired_descent {k r v m q u : \u2115} (h : PsiCharged.ExpansionChain k m q) (hkr : k \u2264 r) (hm : 9 \u2264 m)\n  (hq : 3 * q = 4 ^ (r + 1) * v + 2) (hu : 2 * u = 3 ^ r * v + 1) :\n  PsiDescent.orbit (22 * k + (2 * r + 3)) m = u \u2227\n    PsiDescent.orbit (22 * k + (2 * r + 3)) (3 * m - 1) = 3 * u - 1 \u2227\n      PsiDescent.oddCount (22 * k + (2 * r + 3)) m = 14 * k + r + 1 \u2227\n        PsiDescent.oddCount (22 * k + (2 * r + 3)) (3 * m - 1) = 14 * k + r + 1 \u2227 0 < u \u2227 u < m\nPsiCharged.charged_failure_descends {k r v m q u : \u2115} (h : PsiCharged.ExpansionChain k m q) (hkr : k \u2264 r) (hm : 9 \u2264 m)\n  (hq : 3 * q = 4 ^ (r + 1) * v + 2) (hu : 2 * u = 3 ^ r * v + 1) :\n  0 < u \u2227 u < m \u2227 (CollatzClosure.Fail 3 1 m \u2194 CollatzClosure.Fail 3 1 u)\nPsiCharged.repaid_expanding_cylinder (t : \u2115) :\n  PsiDescent.orbit 29 (2469887 + 536870912 * t) = 594113 + 129140163 * t \u2227\n    PsiDescent.orbit 29 (3 * (2469887 + 536870912 * t) - 1) = 3 * (594113 + 129140163 * t) - 1 \u2227\n      PsiDescent.oddCount 29 (2469887 + 536870912 * t) = 17 \u2227\n        PsiDescent.oddCount 29 (3 * (2469887 + 536870912 * t) - 1) = 17 \u2227\n          0 < 594113 + 129140163 * t \u2227 594113 + 129140163 * t < 2469887 + 536870912 * t\n'PsiCharged.expansion_chain_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiCharged.expansion_chain_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiCharged.no_unbounded_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiCharged.charged_exit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiCharged.charged_paired_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiCharged.charged_failure_descends' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PsiCharged.repaid_expanding_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\nCollatzCorrection.arbitrary_target_equation (n R A B P D C : \u2115) (source : CollatzCorrection.Equation n 1 R A B) :\n  CollatzCorrection.Equation (5 * n) 1 P D C \u2194 3 ^ R * C + 5 * 3 ^ P * 2 ^ A = 3 ^ R * 2 ^ D + 5 * 3 ^ P * B\nCollatzCorrection.equation_iff_path (w : List \u2115) (h : CollatzCorrection.Legal w) (n q : \u2115) (hq : q % 2 = 1) :\n  CollatzCorrection.Equation n q w.length (CollatzCorrection.clock w) (CollatzCorrection.correction w) \u2194\n    CollatzCorrection.Path n q w\nCollatzCorrection.equation_clock_replay (w : List \u2115) (h : CollatzCorrection.Legal w) (n q : \u2115) (hq : q % 2 = 1)\n  (enc : CollatzCorrection.Equation n q w.length (CollatzCorrection.clock w) (CollatzCorrection.correction w)) :\n  CollatzCorrection.run (CollatzCorrection.clock w) n = q\nCollatzCorrection.certificate_sound (w : List \u2115) (h : CollatzCorrection.Legal w) (n : \u2115)\n  (enc : CollatzCorrection.Equation n 1 w.length (CollatzCorrection.clock w) (CollatzCorrection.correction w)) :\n  CollatzReverseBasin.Basin n\nCollatzCorrection.head_budget_independent {n z z' r r' a a' d d' C C' : \u2115} (ha : 0 < a) (ha' : 0 < a')\n  (parity : (2 ^ d * z + C) % 2 = 1) (parity' : (2 ^ d' * z' + C') % 2 = 1)\n  (enc : CollatzCorrection.Equation n z (r + 1) (a + d) (3 ^ r + 2 ^ a * C))\n  (enc' : CollatzCorrection.Equation n z' (r' + 1) (a' + d') (3 ^ r' + 2 ^ a' * C')) : a = a'\nCollatzCorrection.prefix_budget_cancel {n q : \u2115} {w : List \u2115} (path : CollatzCorrection.Path n q w) (z r d C : \u2115) :\n  CollatzCorrection.Equation n z (w.length + r) (CollatzCorrection.clock w + d)\n      (3 ^ r * CollatzCorrection.correction w + 2 ^ CollatzCorrection.clock w * C) \u2194\n    CollatzCorrection.Equation q z r d C\nCollatzCorrection.first_path_unique {n : \u2115} {w v : List \u2115} (h : CollatzCorrection.FirstPath n w)\n  (g : CollatzCorrection.FirstPath n v) : w = v\n'CollatzCorrection.arbitrary_target_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCorrection.equation_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCorrection.equation_clock_replay' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCorrection.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCorrection.head_budget_independent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCorrection.prefix_budget_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCorrection.first_path_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\nCollatzInversePressure.partial_restored_identity (n : \u2115) (x : Rat) :\n  CollatzInversePressure.partialRestored n x =\n    3 * CollatzInversePressure.quadratic x - 3 * x ^ 2 * (1 / 4) ^ n - 9 * x * (1 / 8) ^ n - 6 * (1 / 16) ^ n\nCollatzInversePressure.partial_probability_identity (n : \u2115) (x : Rat) :\n  5 / 27 * CollatzInversePressure.partialRestored n x =\n    5 / 9 * CollatzInversePressure.quadratic x - 5 / 9 * x ^ 2 * (1 / 4) ^ n - 5 / 3 * x * (1 / 8) ^ n -\n      10 / 9 * (1 / 16) ^ n\nCollatzInversePressure.one_run_sound {k n m : \u2115} (h : CollatzInversePressure.OneRun k n m) :\n  CollatzInversePressure.iterate k n = m\nCollatzInversePressure.ordinary_one_runs (k t : \u2115) (ht : 0 < t) :\n  CollatzInversePressure.OneRun k (2 ^ (k + 1) * t - 1) (2 * 3 ^ k * t - 1)\nCollatzInversePressure.finite_period_power_counterexample (M : \u2115) (hM : 0 < M) (c : \u2115 \u2192 Rat) (hc : \u2200 (r : \u2115), 0 < c r)\n  (p : \u2115) (hp : p < 4) :\n  \u2203 n m,\n    0 < n \u2227\n      0 < m \u2227\n        n % 2 = 1 \u2227\n          m % 2 = 1 \u2227 3 * n + 1 = 2 * m \u2227 n % M = m % M \u2227 16 * (c (m % M) * \u2191m ^ p) < 81 * (c (n % M) * \u2191n ^ p)\nCollatzInversePressure.root_pressure_sum_lower (p N : \u2115) (hp : 4 \u2264 p) :\n  \u2191N * (81 / 256) \u2264 CollatzInversePressure.rootPressureSum p N\nCollatzInversePressure.root_predecessor_budget_subsequence (k : \u2115) :\n  (CollatzInversePressure.rootPredecessor (3 * k) + 1) % 4 = 2 \u2227\n    (CollatzInversePressure.rootPredecessor (3 * k) + 1) % 3 = 2\nCollatzInversePressure.reset_budget_identity (k : \u2115) :\n  0 < CollatzInversePressure.resetSource k \u2227\n    CollatzInversePressure.resetSource k % 2 = 1 \u2227\n      3 * CollatzInversePressure.resetSource k + 1 = 4 * CollatzInversePressure.resetEndpoint k \u2227\n        CollatzInversePressure.resetEndpoint k % 2 = 1 \u2227\n          (CollatzInversePressure.resetEndpoint k + 1) % 3 = 2 \u2227\n            CollatzInversePressure.resetSource k + 1 = 2 * 3 ^ (2 * k)\nCollatzInversePressure.binary_reset_budget_identity (k : \u2115) :\n  0 < CollatzInversePressure.binaryResetSource k \u2227\n    CollatzInversePressure.binaryResetSource k % 2 = 1 \u2227\n      0 < CollatzInversePressure.binaryResetEndpoint k \u2227\n        CollatzInversePressure.binaryResetEndpoint k % 2 = 1 \u2227\n          3 * CollatzInversePressure.binaryResetSource k + 1 = 4 * CollatzInversePressure.binaryResetEndpoint k \u2227\n            (CollatzInversePressure.binaryResetSource k + 1) % 4 = 2 \u2227\n              (CollatzInversePressure.binaryResetSource k + 1) % 3 = 2 \u2227\n                CollatzInversePressure.binaryResetEndpoint k + 1 = 2 ^ (6 * k + 1) \u2227\n                  (CollatzInversePressure.binaryResetEndpoint k + 1) % 3 = 2\n'CollatzInversePressure.partial_restored_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.partial_probability_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.one_run_sound' depends on axioms: [propext, Quot.sound]\n'CollatzInversePressure.ordinary_one_runs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.finite_period_power_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.root_pressure_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.root_predecessor_budget_subsequence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.reset_budget_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInversePressure.binary_reset_budget_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\nCollatzClosure.collatz_of_open_lemma (H : CollatzClosure.OpenLemma) (n : \u2115) : 0 < n \u2192 CollatzReverseBasin.Basin n\ndef CollatzClosure.OpenLemma : Prop :=\n\u2200 (k : \u2115), k % 4 \u2260 0 \u2192 CollatzReverseBasin.Basin (3 * (27 * k + 1) - 1) \u2192 CollatzReverseBasin.Basin (27 * k + 1)\n'CollatzClosure.collatz_of_open_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 0.42
+    }
+  ],
+  "success": true,
+  "upstream_pins_match": true,
+  "audited_axioms": {
+    "PsiDescent.paired_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiDescent.failure_descends": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiDescent.not_minimal_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiDescent.expanding_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiDescent.expanding_first_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.expansion_chain_divisibility": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.expansion_chain_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.no_unbounded_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.charged_exit_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.charged_paired_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.charged_failure_descends": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PsiCharged.repaid_expanding_cylinder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.arbitrary_target_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.equation_iff_path": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.equation_clock_replay": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.certificate_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.head_budget_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.prefix_budget_cancel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzCorrection.first_path_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.partial_restored_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.partial_probability_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.one_run_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.ordinary_one_runs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.finite_period_power_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.root_pressure_sum_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.root_predecessor_budget_subsequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.reset_budget_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzInversePressure.binary_reset_budget_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzClosure.collatz_of_open_lemma": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256_after": {
+    "research/lean-global-target-20261121/README.md": "d0aee84774be47188da97aa12d73577bc6b37895fca6a456652c5fa189202c4d",
+    "research/lean-global-target-20261121/SOURCES.md": "ccf1d9b59ee57dc5715dd04fe1a5e678341aff297bd3f6337c67d4c05ce5e5f6",
+    "research/lean-global-target-20261121/check_lean.py": "7cabf4356c7c6e5d81f3bffbe1d47d7c06b7264160503ccc8214348aa6fdc9bc",
+    "research/lean-global-target-20261121/closure/README.md": "495d9d5faae83a73e3b8bc52080bfd6da9a04049a634e733f76f81723fb2def0",
+    "research/lean-global-target-20261121/descent/README.md": "2dbec9a93a40c773352a8f6bacda26f1415ca17dfc83bcbd651b2732fb8e6d5b",
+    "research/lean-global-target-20261121/descent/SIGNED_DEBT_ATTEMPT.md": "aff33fc905e4029afeacf28315d5fbde1e9aafeb191b447e4d63155e755847f4",
+    "research/lean-global-target-20261121/descent/signed_debt_attempt.py": "7385e86fe7d0f5b89aa47ba87d0689347b31fa6726725f94bf5107f8244a1558",
+    "research/lean-global-target-20261121/global/README.md": "ab56cb36b5b158f3d665da93bef5756713666358530ecac9d98adf54b78f3e7d",
+    "research/lean-global-target-20261121/lean/.gitignore": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+    "research/lean-global-target-20261121/lean/CheckpointAudit.lean": "c5a170f465b44ce24333f4e38600a8fb306298f8fb40dfcf1f39e76a427f7113",
+    "research/lean-global-target-20261121/lean/Closure/Oriented.lean": "af43f06c35bc960e255c9fccc66dc347ef125e6e53321b87cccc2404e22b523e",
+    "research/lean-global-target-20261121/lean/Closure/PsiDescent.lean": "536c35499a71a3cbb416fdbb6a2f5a30fae543c3361dd60048a32b22ab3b49f9",
+    "research/lean-global-target-20261121/lean/Closure.lean": "9e00c2d70c7752a8a110f78158ee07c1442a04b99a258f693f41edf84dd27844",
+    "research/lean-global-target-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-target-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-target-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-global-target-20261121/lean/Collatz.lean": "38e5cf41c569c9fe052d540e3b5a765bb34b5fbd45be6e731d9ea5b5967f7818",
+    "research/lean-global-target-20261121/lean/Descent/Correction.lean": "6699cf6fd3d1a853ac1798fd3b3bf64259fee33826e0ba9c33d01dbf54a18775",
+    "research/lean-global-target-20261121/lean/Descent.lean": "5f8da79976199e6458c26dcca179309891e32b8695f663cedd1ad9807baca13a",
+    "research/lean-global-target-20261121/lean/Global/InversePressure.lean": "dc0b6e59e3341810d1d11984bdc8913f53ad0201630d652390b9a9fb0a362ff7",
+    "research/lean-global-target-20261121/lean/Global.lean": "28295513dfa7bf90283c48fd4cf2407503b5ad1fc8dbc42d3209964e69c3f6cb",
+    "research/lean-global-target-20261121/lean/lake-manifest.json": "31a128733e8e3f3614bd9429ab2fdd6d5de49783940f38a43055b5ee869ce3ff",
+    "research/lean-global-target-20261121/lean/lakefile.toml": "0fb7955a905e76243d230d0f18cc499348302a91323a66cf4b9e365ab23613a1",
+    "research/lean-global-target-20261121/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "research/lean-global-target-20261121/upstream-files.json": "69a80286888c1b278c844216e20e1699228a510c7adc7f52abe91c1e3417e485"
+  },
+  "finished_utc": "2026-11-21T08:32:22.945106+00:00"
+}
