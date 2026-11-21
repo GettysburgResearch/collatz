@@ -1,4 +1,4 @@
-# Arbitrarily strong descents in the forced dyadic section
+# Power-saving blocks and quantitative visits to the dyadic section
 
 **Full Collatz remains OPEN.** This packet builds on PR173 at
 `fa0c9e2a2851e6324391e39c17afcb5913185aec` and proves unbounded families of
@@ -16,6 +16,161 @@ For `d = floor(log₂ n)`, PR173 marks the odd integers satisfying
 positive marked-return map `R` total. Its `collatz_iff_return_descent` says
 that full Collatz is equivalent to eventual strict descent under `R` for
 **every** marked input above one. These are imported results, not new claims.
+
+## Latest continuation: three attacks on universal coverage
+
+The continuation develops three separate routes, with their actual ordinary
+sources and their remaining coverage obligations kept explicit. The detailed
+proof packets are [exponent coverage](EXPONENT_COVERAGE.md),
+[temporal density](TEMPORAL_DENSITY.md), and
+[original-source mergers](MERGER_DISPATCH.md).
+
+### A. Growing certificate budgets with a fixed power saving
+
+[ExponentCoverage.lean](ExponentCoverage.lean) strengthens the earlier
+selected-exponent construction. There are arbitrarily large `q` such that,
+with `H=floor(q/10)`, **every** supplied odd-offset certificate
+`T^h(r)=1`, `h<=H`, works simultaneously at **every** exponent in
+
+\[
+2q+H+1\le d\le12q-H.
+\]
+
+For `n=2^d+r`, the result supplies a positive actual marked-return index `k`
+and a marked endpoint `y=R^k(n)` with
+
+\[
+y<n,\qquad y^{120}<n^{119},\qquad
+\operatorname{Basin}(n)\ \Longleftrightarrow\ \operatorname{Basin}(y).
+\]
+
+The certificate budget grows with the chosen scale. No separate fixed
+offset-size budget is imposed: the supplied certificate itself gives
+`r<=2^h<=2^H`. A reusable coefficient guard permits an exponentially growing
+saving factor `2^(H+1)`; elementary integer powers then give the displayed
+source-scale saving. The proof uses the same positive approximants already
+constructed in this packet, without a new Diophantine assumption.
+
+On the offset-one ray, whole blocks `2q+1<=d<=12q` have this power saving.
+The exact counting theorem consequently supplies arbitrarily large cutoffs
+`M` for which **at least `5M/6` positive exponents `d<=M`** have such a
+marked-return certificate. This is an upper-density statement about
+exponents, not a density statement about all natural starting values, and
+not a claim that every cutoff has that proportion.
+
+Two gaps remain. The selected blocks are not proved to cover every prescribed
+exponent. Also, a forced-band offset can be of order `n/log n`, whereas these
+growing-budget blocks still require a short supplied certificate and imply
+`r^21<n`. An arbitrary marked source does not automatically meet that budget.
+
+### B. Uniform finite temporal bounds
+
+[AnalyticCoupling.lean](AnalyticCoupling.lean) and
+[TemporalDensity.lean](TemporalDensity.lean) apply to one actual odd orbit
+`x_j`, assuming only that its first `N` observed states are distinct. They
+prove the exact harmonic budget
+
+\[
+\sum_{j<N}\frac1{x_j}\le H_N\le1+\log N,
+\]
+
+and use it in the actual height/valuation identity and in a finite Fourier
+estimate. For every positive integer frequency `a`,
+
+\[
+|1-e^{2\pi i a\log_2 3}|
+\left|\sum_{j<N}e^{2\pi i a\log_2x_j}\right|
+\le2+4\pi a H_N.
+\]
+
+Thus the normalized phase average is `O_a(log N/N)`, with no assumed escape
+rate or random-residue model. The full valuation identity is retained too:
+if the endpoint is at least the starting value, the total halving exponent
+is at most `N log_2 3+H_N`.
+
+Combining the finite estimate with the unchanged PR178 trigonometric kernel
+gives a uniform temporal-count bound. If `V_n(N)` counts marked states among
+the first `N` odd states, then
+
+\[
+(\lfloor\log_2N\rfloor+1)V_n(N)\le196608\,N.
+\]
+
+The constant is deliberately conservative; the parameterized finite
+inequality retains sharper information. The endpoint at time `N` may repeat
+an earlier value. For an infinite orbit the all-horizon result retains the
+nonrepetition hypothesis, which actual unboundedness supplies by determinism.
+
+Sparse temporal occupation does not eliminate a surviving source or remove
+its transported mass. These estimates are compatible with PR173's infinitely
+many forced visits. That missing coupling is not assumed.
+
+### C. Smaller partners and four residual first gaps
+
+[MergerDispatch.lean](MergerDispatch.lean) works directly with the original
+ordinary source. Factor `9n+1=2^A u`, with `u` odd. Exact forward identities
+give descent for all even `A>=4` and all odd `A>=9`, in addition to the
+elementary cases `A=0,1`.
+
+For odd `A=2b+3>=9`, the explicit positive partner
+
+\[
+w=2\,3^b u+1<n
+\]
+
+satisfies `w=T^(2b+2)(n)` and `T(w)=T^(2b+3)(n)`. The smaller partner is
+itself an earlier forward iterate. Consequently every original source `n>1`
+whose orbit never drops below `n` must satisfy
+
+\[
+v_2(9n+1)\in\{2,3,5,7\}.
+\]
+
+This applies in particular to a least nonconvergent source and to the minimum
+of a nontrivial cycle. It cannot be applied indiscriminately to all later
+points of an orbit: a larger later value can descend locally while staying
+above the original floor. The four remaining classes are still unbounded
+ordinary families; a complete lower-source selector for them is not supplied.
+
+### An exact obstruction to the simplest offset induction
+
+The finite theorem `first_marked_offset_above_source` checks an actual
+ordinary source
+
+\[
+n=2^{601}-1.
+\]
+
+Its first marked shortcut iterate occurs at clock seven:
+
+\[
+x=T^7(n)=3^7 2^{594}-1
+ =2^{605}+\bigl(139\,2^{594}-1\bigr).
+\]
+
+The canonical offset at that first marked hit is **larger than the original
+source**, since
+
+\[
+\bigl(139\,2^{594}-1\bigr)-n=11\,2^{594}>0.
+\]
+
+The same kernel check verifies that none of clocks zero through six is
+marked and that all states through clock seven are odd. Thus the example
+also uses seven actual odd steps. An offset smaller than a later marked
+value need not be smaller than the original induction source. This is an
+obstruction to that proof shortcut, not a nonconvergent Collatz orbit.
+
+### Reproduction and provenance
+
+`SOURCES.json` pins the unchanged PR173 imports and the three byte-identical
+PR178 vendor modules. `replay_continuation.py` compiles the continuation with
+warnings treated as errors and audits every new public theorem. Its optional
+baseline reuse mode embeds the actual earlier successful receipt and checks
+the unchanged source hashes and compiler pins. Execution evidence is kept in
+the [continuation report](../../reports/2026-11-21-dyadic-descent/continuation/README.md).
+
+The previous checkpoint's results and their original evidence follow below.
 
 ## 1. Main new theorem: arbitrary marked-return contraction
 

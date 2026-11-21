@@ -1,0 +1,23 @@
+{
+  "scope": "Final proof sources compared to successful Lean replay; documentation is not assigned a kernel proof status.",
+  "proof_commit": "95df18ff2680a59b6ab207fccc21f3545e2883f5",
+  "proof_tree": "a220a9f006b6418463ff2092439b549c9808e600",
+  "lean_receipt_sha256": "bf3a072f146a528e3149e1f20197ec478ded954b123e85e3c43a53bf3bd77543",
+  "source_sha256": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-shell-cover/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "research/lean-shell-cover/SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+    "research/lean-dyadic-descent-20261121/OffsetDescent.lean": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+    "research/lean-dyadic-descent-20261121/MarkedOffsetReturn.lean": "e9455233935c582084e73bd5f73d17553bab8b1a76bdb774485f38b33e81ed8f",
+    "research/lean-dyadic-descent-20261121/PhaseFrequency.lean": "f0afbb1f3ef0f8cb7494963855cfb5dd7cc97d9b9da551af65a31b848bbdce95",
+    "research/lean-dyadic-descent-20261121/InfiniteDescent.lean": "e490eaf11c9dc5d5e78fd49d69a0d20c4619244185925c8d5920fabfb8c39b4f",
+    "research/lean-dyadic-descent-20261121/vendor-pr178/ReturnFourier.lean": "a758b7b8c6b1827a5f96eb8ae32196c0145a0280229b6fa22bf899c3cd348ed3",
+    "research/lean-dyadic-descent-20261121/vendor-pr178/MarkPhase.lean": "bd4cc9ef10cbaa91b8d8a8ea83f1d9dfbbf644d0235ceff77452c18abdf199d9",
+    "research/lean-dyadic-descent-20261121/vendor-pr178/MarkFrequency.lean": "7786fd2c3eccecf8dedb931233c9ae1da059a8d883fb1e8250304b6c4df84921",
+    "research/lean-dyadic-descent-20261121/ExponentCoverage.lean": "339a866a08aaba64660c984a0b17834e89a98d3bfd6b2230b63e2a9995536718",
+    "research/lean-dyadic-descent-20261121/MergerDispatch.lean": "cd34962cee9831194a95c19c13c948b14fbc3c7f4be232841cff924ff4a5720d",
+    "research/lean-dyadic-descent-20261121/AnalyticCoupling.lean": "5e0938034cf795ad65993d1ca384ebba4f967bb3267283b5166c08c4ea6f16a4",
+    "research/lean-dyadic-descent-20261121/TemporalDensity.lean": "3f78622671aaed9ee29f59c1edcadc4d5545487a873e31c6bf156b5e272bc2f6"
+  },
+  "runner_sha256": "b36621372e02cac1261a838b963106d532789c3d7a623465b00399f6c4870af0"
+}
