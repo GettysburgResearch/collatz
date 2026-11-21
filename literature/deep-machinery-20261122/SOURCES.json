@@ -1,0 +1,2486 @@
+{
+  "schema_version": "1.0",
+  "title": "Collatz deep-machinery source manifest",
+  "checked_date": "2026-11-22",
+  "unique_work_count": 57,
+  "main_unique_work_count": 56,
+  "supporting_exposition_count": 1,
+  "input_citation_record_count": 58,
+  "deduplication_note": "58 chapter citation records become 56 main unique works after merging Bernstein–Lagarias and Bell–Ghioca–Tucker duplicates. The separately consulted Vojta 1999 exposition adds one distinct supporting work, for 57 works. Corrections and versions of a work are recorded as versions/other URLs rather than counted again.",
+  "scope": "Consolidation of team-inspected primary literature and chapter-specific applicability analysis. A checked statement is not a complete proof audit, an independent formal build, or a proved Collatz bridge.",
+  "evidence_labels": {
+    "full_text_statement_read": "Full text: relevant theorem statements and hypotheses read; not a complete proof audit.",
+    "primary_indexed_statement": "Complete statement read in indexed primary-source text; direct full-file access was unavailable.",
+    "author_exposition": "Precise author exposition inspected; distinguish it from the original paper.",
+    "later_primary_statement": "Statement inspected in a later primary paper; original item checked bibliographically.",
+    "primary_abstract_statement_read": "Statement inspected in a primary publisher or official abstract; full proof not inspected.",
+    "lead_researcher_statement_inspected": "Statement or publisher abstract inspected by lead researcher; no full-proof audit claimed.",
+    "primary_introduction_lead": "Primary introduction/bibliography inspected; not an executable numerical theorem premise.",
+    "bibliographic_framework_lead": "Bibliography or general framework inspected; no specific technical theorem imported.",
+    "primary_indexed_abstract_lead": "Indexed primary abstract/metadata only; full text unavailable and no theorem imported."
+  },
+  "metadata_policy": "Publication year is preferred. Initial-preprint year is marked when no journal year was established. Version fields pin corrections and author versions. Null means not transcribed, not absent. Chapter aliases are retained verbatim; R01–R12 are crosswalk aliases for existing root-chapter tags.",
+  "original_deductions_are_not_source_theorems": [
+    "Polylogarithmic band-entry clock from effective logarithm separation.",
+    "OPEN-FLOOR exponent comparison using predecessor density.",
+    "Simple nonzero recurrence denominator eliminates the polynomial factor in the stated Corvaja–Zannier interface.",
+    "Retained-atom L^p/Hölder budget and repository-specific entropy/rigidity countermodels."
+  ],
+  "inputs": [
+    "analytic_sources.json",
+    "arithmetic_sources.json",
+    "dynamics-sources.json",
+    "05_rigidity_and_long_shots.md"
+  ],
+  "alias_index": {
+    "A01": "S001",
+    "A02": "S002",
+    "A03": "S003",
+    "A04": "S004",
+    "A05": "S005",
+    "A07": "S006",
+    "A08": "S007",
+    "A09": "S008",
+    "A10": "S009",
+    "A11": "S010",
+    "A12": "S011",
+    "A13": "S012",
+    "A14": "S013",
+    "A15": "S014",
+    "AR01": "S015",
+    "AR02": "S016",
+    "AR03": "S017",
+    "AR04": "S018",
+    "AR05": "S019",
+    "AR06": "S020",
+    "AR07": "S021",
+    "AR08": "S022",
+    "AR09": "S023",
+    "AR10": "S024",
+    "AR11": "S025",
+    "AR12": "S026",
+    "AR13": "S027",
+    "AR14": "S028",
+    "AR15": "S029",
+    "R04": "S029",
+    "BL96": "S029",
+    "AR16": "S030",
+    "R07": "S030",
+    "BGT10": "S030",
+    "D01": "S031",
+    "D02": "S032",
+    "D03": "S033",
+    "D04": "S034",
+    "D05": "S035",
+    "D06": "S036",
+    "D07": "S037",
+    "D08": "S038",
+    "D09": "S039",
+    "D10": "S040",
+    "D11": "S041",
+    "D12": "S042",
+    "D13": "S043",
+    "D14": "S044",
+    "D15": "S045",
+    "D16": "S046",
+    "R01": "S047",
+    "F67": "S047",
+    "R02": "S048",
+    "R90": "S048",
+    "R03": "S049",
+    "EL21": "S049",
+    "R05": "S050",
+    "BQ14": "S050",
+    "R06": "S051",
+    "BQ13": "S051",
+    "R08": "S052",
+    "P14": "S052",
+    "R09": "S053",
+    "BS96": "S053",
+    "R10": "S054",
+    "LLS16": "S054",
+    "R11": "S055",
+    "CMQR24": "S055",
+    "R12": "S056",
+    "KS07": "S056",
+    "AR06-EXPO": "S057"
+  },
+  "works": [
+    {
+      "aliases": [
+        "A01"
+      ],
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "authors": [
+        "Terence Tao"
+      ],
+      "year": 2022,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "arXiv:1909.03562v7, 2026-07-16; published Forum of Mathematics, Pi 10 (2022), e12",
+      "publication": null,
+      "doi": "10.1017/fmp.2022.8",
+      "primary_url": "https://arxiv.org/html/1909.03562v7",
+      "other_urls": [
+        "https://doi.org/10.1017/fmp.2022.8"
+      ],
+      "theorem_location": [
+        "Theorem 1.3",
+        "Remark 1.16",
+        "Proposition 1.17",
+        "Theorem 3.1",
+        "Sections 6-7",
+        "Lemma 7.9 corrected in v7"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Full primary paper opened; theorem, Fourier, renewal, entropy and fixed-floor passages inspected. No independent reconstruction of the full analytic proof.",
+      "evidence_status": "Established published theorem; corrected author version pinned",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Fixed-floor survivor bounds, entropy transport, renewal and ternary Fourier estimates.",
+      "repository_caveat": "Logarithmic-density almost-all control leaves individual exceptional sources; its fixed-floor decay is logarithmic, not the proposed power law.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A01"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Full primary paper opened; theorem, Fourier, renewal, entropy and fixed-floor passages inspected. No independent reconstruction of the full analytic proof."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S001"
+    },
+    {
+      "aliases": [
+        "A02"
+      ],
+      "title": "Bounds for the 3x+1 Problem using Difference Inequalities",
+      "authors": [
+        "Ilia Krasikov",
+        "Jeffrey C. Lagarias"
+      ],
+      "year": 2003,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Acta Arithmetica 109 (2003), 237-258; inspected author arXiv version",
+      "publication": null,
+      "doi": "10.4064/aa109-3-4",
+      "primary_url": "https://arxiv.org/pdf/math/0205002",
+      "other_urls": [
+        "https://doi.org/10.4064/aa109-3-4"
+      ],
+      "theorem_location": [
+        "Proposition 2.1",
+        "Theorem 2.2",
+        "Theorem 5.1",
+        "Theorem 6.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Full author paper opened; difference inequalities, feasible-certificate interface and fixed-target lower-bound quantifiers inspected. No computation replay.",
+      "evidence_status": "Established published theorem",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Inverse-tree counting through finite difference-inequality certificates.",
+      "repository_caveat": "A population of predecessors of a fixed target does not by itself cover each supplied source or retain a sufficient source atom.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A02"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Full author paper opened; difference inequalities, feasible-certificate interface and fixed-target lower-bound quantifiers inspected. No computation replay."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S002"
+    },
+    {
+      "aliases": [
+        "A03"
+      ],
+      "title": "Positive Lower Density of Collatz Predecessors",
+      "authors": [
+        "Lech Mazur"
+      ],
+      "year": 2026,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Manuscript v1.0, 2026-09-06",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://www.proofatlas.ai/papers/positive-lower-density-collatz-predecessors/paper-v1.pdf",
+      "other_urls": [
+        "https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html"
+      ],
+      "theorem_location": [
+        "Theorem 1.1",
+        "Sections 4-5",
+        "predecessors_positive_lower_density formal declaration"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Paper and exposed formal definitions inspected, including target-dependent constants and ordinary/shortcut map distinction. Reported formal build not independently rerun.",
+      "evidence_status": "SOURCE-QUALIFIED recent manuscript and source-reported formal theorem",
+      "import_policy": "source_qualified_recent_result",
+      "repository_relevance": "Positive lower density for a fixed target predecessor basin.",
+      "repository_caveat": "Recent source-qualified manuscript; target-dependent constants and reported formal build were not independently replayed.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A03"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Paper and exposed formal definitions inspected, including target-dependent constants and ordinary/shortcut map distinction. Reported formal build not independently rerun."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S003"
+    },
+    {
+      "aliases": [
+        "A04"
+      ],
+      "title": "Explicit positive lower density for the Collatz Conjecture",
+      "authors": [
+        "Kenny Lau"
+      ],
+      "year": 2026,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Hexagon 2610.00249v2, 2026-10-14; v1 not used for latest constants",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://hexagonmath.org/pdf/2610.00249v2",
+      "other_urls": [
+        "https://hexagonmath.org/2610.00249v2",
+        "https://github.com/AxiomMath/CollatzPositiveDensity"
+      ],
+      "theorem_location": [
+        "Theorem 1.3",
+        "Corollary 1.6",
+        "Section 2 overview",
+        "Sections 3 and 7 source legality/counting/seed construction"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "v2 PDF opened; exact c(t)=t^(-25/11)/D_A and every-cutoff quantifiers inspected. Source-reported Lean formalization not rebuilt. v1 has different constants and should not be conflated.",
+      "evidence_status": "SOURCE-QUALIFIED recent paper and author-reported Lean formalization",
+      "import_policy": "source_qualified_recent_result",
+      "repository_relevance": "Explicit target-dependent predecessor density for the OPEN-FLOOR comparison.",
+      "repository_caveat": "Use v2, including the exponent 25/11 and every-cutoff quantifier; the needed fixed-floor upper estimate remains open and the formal build was not replayed.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A04"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "v2 PDF opened; exact c(t)=t^(-25/11)/D_A and every-cutoff quantifiers inspected. Source-reported Lean formalization not rebuilt. v1 has different constants and should not be conflated."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S004"
+    },
+    {
+      "aliases": [
+        "A05"
+      ],
+      "title": "Polylogarithmic Descent for Almost All Collatz Orbits in Natural Density",
+      "authors": [
+        "Idris Ali Shaik"
+      ],
+      "year": 2026,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Manuscript v4.0.2, 2026-10-04",
+      "publication": null,
+      "doi": "10.5281/zenodo.23132901",
+      "primary_url": "https://shaikidris.github.io/polylog/paper/",
+      "other_urls": [
+        "https://doi.org/10.5281/zenodo.23132901"
+      ],
+      "theorem_location": [
+        "Theorem 1.1",
+        "Definition of A_FP and c_*",
+        "Abstract's original-source first-passage organization"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Full author HTML opened; exact target, time and height theorem inspected. Not a complete independent proof audit or Lean replay.",
+      "evidence_status": "SOURCE-QUALIFIED recent preprint; reported formalization not independently reproduced",
+      "import_policy": "source_qualified_recent_result",
+      "repository_relevance": "Natural-density first-passage organization as a possible source-preserving analytic design.",
+      "repository_caveat": "Recent source-qualified preprint; natural-density almost-all descent is not universal descent and its reported formalization was not replayed.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A05"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Full author HTML opened; exact target, time and height theorem inspected. Not a complete independent proof audit or Lean replay."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S005"
+    },
+    {
+      "aliases": [
+        "A07"
+      ],
+      "title": "Benford's Law for the 3x+1 Function",
+      "authors": [
+        "Jeffrey C. Lagarias",
+        "K. Soundararajan"
+      ],
+      "year": 2006,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "J. London Math. Soc. 74 (2006), 289-303; arXiv:math/0509175v2",
+      "publication": null,
+      "doi": "10.1112/S0024610706023131",
+      "primary_url": "https://arxiv.org/pdf/math/0509175",
+      "other_urls": [
+        "https://doi.org/10.1112/S0024610706023131"
+      ],
+      "theorem_location": [
+        "Theorem 2.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Full author PDF opened; X>=2^N, finite horizon and exceptional-seed quantifiers inspected.",
+      "evidence_status": "Established published theorem",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Finite-horizon leading-digit equidistribution and phase distribution.",
+      "repository_caveat": "The seed range and exceptional-seed quantifiers matter; this is not a shrinking-target theorem for every fixed orbit.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A07"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Full author PDF opened; X>=2^N, finite horizon and exceptional-seed quantifiers inspected."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S006"
+    },
+    {
+      "aliases": [
+        "A08"
+      ],
+      "title": "Stochastic Models for the 3x+1 and 5x+1 Problems",
+      "authors": [
+        "Alex V. Kontorovich",
+        "Jeffrey C. Lagarias"
+      ],
+      "year": 2010,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "The Ultimate Challenge: The 3x+1 Problem, AMS (2010), 131-188; author preprint 2009",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/0910.1944",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorem 2.1 parity-vector fact",
+        "Theorem 2.2 stopping-time density",
+        "Section 3 stochastic-model scope"
+      ],
+      "evidence_scope": "author_exposition",
+      "evidence_details": "Author paper opened; model/actual-map distinction inspected. Historical results credited to original authors in the paper; no new proof claim.",
+      "evidence_status": "Published author account and model research; model predictions remain heuristic for actual trajectories",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Parity-cylinder statistics and stochastic models as benchmarks.",
+      "repository_caveat": "Independent random parity describes a model unless comparison with actual ordinary sources is proved.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A08"
+          ],
+          "evidence_scope": "author_exposition",
+          "details": "Author paper opened; model/actual-map distinction inspected. Historical results credited to original authors in the paper; no new proof claim."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S007"
+    },
+    {
+      "aliases": [
+        "A09"
+      ],
+      "title": "On self-similar sets with overlaps and inverse theorems for entropy",
+      "authors": [
+        "Michael Hochman"
+      ],
+      "year": 2014,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Annals of Mathematics 180 (2014), 773-822; author preprint arXiv:1212.1873v6",
+      "publication": null,
+      "doi": "10.4007/annals.2014.180.2.7",
+      "primary_url": "https://arxiv.org/pdf/1212.1873",
+      "other_urls": [
+        "https://doi.org/10.4007/annals.2014.180.2.7"
+      ],
+      "theorem_location": [
+        "Theorem 2.7",
+        "Theorem 2.8",
+        "Surrounding entropy/uniformity definitions"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary PDF opened and inverse theorem inspected. Proposed Collatz application is original speculation; no finite-ring extension asserted.",
+      "evidence_status": "Established external theorem; Collatz bridge OPEN",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Diagnose low entropy growth in genuinely independent block convolutions.",
+      "repository_caveat": "The theorem is for real measures with its scale hypotheses; correlated orbit blocks and finite prime-power rings require new bridges.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A09"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary PDF opened and inverse theorem inspected. Proposed Collatz application is original speculation; no finite-ring extension asserted."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S008"
+    },
+    {
+      "aliases": [
+        "A10"
+      ],
+      "title": "The logarithmically averaged Chowla and Elliott conjectures for two-point correlations",
+      "authors": [
+        "Terence Tao"
+      ],
+      "year": 2016,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Forum of Mathematics, Pi 4 (2016), e8; arXiv:1509.05422v4",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/1509.05422",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorem 1.2",
+        "Lemma 3.2 entropy decrement"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary PDF opened; multiplicative correlation theorem and mutual-information lemma inspected. Collatz use is methodological only.",
+      "evidence_status": "Established external theorem; Collatz bridge highly speculative",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Entropy decrement as a method for finding a low-information scale.",
+      "repository_caveat": "Multiplicative-function correlation results do not directly apply to state-selected Collatz branches.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A10"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary PDF opened; multiplicative correlation theorem and mutual-information lemma inspected. Collatz use is methodological only."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S009"
+    },
+    {
+      "aliases": [
+        "A11"
+      ],
+      "title": "A sum-product estimate in finite fields, and applications",
+      "authors": [
+        "Jean Bourgain",
+        "Nets Katz",
+        "Terence Tao"
+      ],
+      "year": 2004,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "GAFA 14 (2004), 27-57; inspected author arXiv version",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/math/0301343",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorem 1.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Prime-field and intermediate-size hypotheses inspected in full primary PDF. No application to Z/3^rZ asserted.",
+      "evidence_status": "Established external theorem; direct hypothesis mismatch",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Sum-product expansion as a possible residue-packet tool.",
+      "repository_caveat": "The cited theorem concerns prime fields and intermediate set sizes, not automatically rings modulo powers of 3.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A11"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Prime-field and intermediate-size hypotheses inspected in full primary PDF. No application to Z/3^rZ asserted."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S010"
+    },
+    {
+      "aliases": [
+        "A12"
+      ],
+      "title": "Uniform expansion bounds for Cayley graphs of SL2(Fp)",
+      "authors": [
+        "Jean Bourgain",
+        "Alex Gamburd"
+      ],
+      "year": 2008,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Annals of Mathematics 167 (2008), 625-642",
+      "publication": null,
+      "doi": "10.4007/annals.2008.167.625",
+      "primary_url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v167-n2-p07.pdf",
+      "other_urls": [
+        "https://doi.org/10.4007/annals.2008.167.625"
+      ],
+      "theorem_location": [
+        "Theorem 1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Full publisher PDF opened; non-elementarity hypothesis inspected. Triangular-matrix mismatch is original algebraic analysis.",
+      "evidence_status": "Established external theorem; direct hypothesis mismatch",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Expansion as a possible tool for a newly justified arithmetic action.",
+      "repository_caveat": "The direct Collatz affine matrices are triangular and fail the required non-elementarity.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A12"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Full publisher PDF opened; non-elementarity hypothesis inspected. Triangular-matrix mismatch is original algebraic analysis."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S011"
+    },
+    {
+      "aliases": [
+        "A13"
+      ],
+      "title": "Cut-off phenomenon for the ax+b Markov chain over a finite field",
+      "authors": [
+        "Emmanuel Breuillard",
+        "Péter P. Varjú"
+      ],
+      "year": 2022,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Probability Theory and Related Fields 184 (2022), 85-113; arXiv:1909.09053v2",
+      "publication": null,
+      "doi": "10.1007/s00440-022-01161-w",
+      "primary_url": "https://arxiv.org/pdf/1909.09053",
+      "other_urls": [
+        "https://doi.org/10.1007/s00440-022-01161-w"
+      ],
+      "theorem_location": [
+        "Theorem 1",
+        "Introduction's conditional cut-off statements"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Full primary PDF opened; most-multipliers, independent-noise and GRH qualifications inspected. No specific Collatz multiplier conclusion inferred.",
+      "evidence_status": "Established published external results with their stated qualifications; Collatz bridge OPEN",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Mixing of affine random walks as a closer model than semisimple expanders.",
+      "repository_caveat": "Independent noise, multiplier qualifications and conditional assertions do not supply deterministic source-by-source control.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A13"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Full primary PDF opened; most-multipliers, independent-noise and GRH qualifications inspected. No specific Collatz multiplier conclusion inferred."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S012"
+    },
+    {
+      "aliases": [
+        "A14"
+      ],
+      "title": "Generalized Collatz Maps with Almost Bounded Orbits",
+      "authors": [
+        "Felipe Gonçalves",
+        "Rachel Greenfeld",
+        "José Madrid"
+      ],
+      "year": 2025,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Indiana University Mathematics Journal 74 (2025), no. 1; inspected arXiv:2111.06170v2 (2022)",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/2111.06170",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorem 1.3 scope",
+        "Theorem 1.9 renewal process"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary PDF opened; renewal theorem hypotheses and almost-all scope inspected. Used as modular architecture/control-map reference.",
+      "evidence_status": "Published external theorem; no pointwise Collatz conclusion",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Renewal architecture and control examples in generalized Collatz families.",
+      "repository_caveat": "Almost-all results and map hypotheses cannot be strengthened into pointwise convergence.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A14"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary PDF opened; renewal theorem hypotheses and almost-all scope inspected. Used as modular architecture/control-map reference."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S013"
+    },
+    {
+      "aliases": [
+        "A15"
+      ],
+      "title": "Ternary Residue Mixing and Natural Density Descent for the Collatz Map",
+      "authors": [
+        "Yi Den Luo",
+        "Alexander Kolpakov",
+        "Humam al-Jammas"
+      ],
+      "year": 2026,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Manuscript dated 2026-08-01, SSRN posting September 2026",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7434138",
+      "other_urls": [],
+      "theorem_location": [
+        "Abstract only; full text inaccessible in this run"
+      ],
+      "evidence_scope": "primary_indexed_abstract_lead",
+      "evidence_details": "Search indexed abstract/metadata inspected; full landing page and PDF returned HTTP403. No theorem imported.",
+      "evidence_status": "LEAD ONLY / unaudited recent preprint",
+      "import_policy": "lead_only",
+      "repository_relevance": "Possible later lead on ternary residue mixing and natural density.",
+      "repository_caveat": "Full text inaccessible; import no theorem or numerical premise from this entry.",
+      "provenance": [
+        {
+          "input": "analytic_sources.json",
+          "aliases": [
+            "A15"
+          ],
+          "evidence_scope": "primary_indexed_abstract_lead",
+          "details": "Search indexed abstract/metadata inspected; full landing page and PDF returned HTTP403. No theorem imported."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S014"
+    },
+    {
+      "aliases": [
+        "AR01"
+      ],
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "authors": [
+        "E. M. Matveev"
+      ],
+      "year": 2000,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": "10.1070/im2000v064n06ABEH000314",
+      "primary_url": "https://www.mathnet.ru/eng/im314",
+      "other_urls": [
+        "https://doi.org/10.1070/im2000v064n06ABEH000314"
+      ],
+      "theorem_location": [
+        "Section 2, Theorem 2.1 and Corollary 2.3, journal pp. 1218–1219"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full PDF inspected; explicit logarithmic lower bound depends logarithmically on coefficient bound B for fixed bases and field. No numerical exponent instantiated for log_2(3).",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Effective irrationality input for the proposed polylogarithmic band-entry clock.",
+      "repository_caveat": "The explicit exponent/constants still need instantiation and formalization; a faster hit gives no eventual smaller return.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR01"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full PDF inspected; explicit logarithmic lower bound depends logarithmically on coefficient bound B for fixed bases and field. No numerical exponent instantiated for log_2(3)."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S015"
+    },
+    {
+      "aliases": [
+        "AR02"
+      ],
+      "title": "Linear forms in two logarithms and interpolation determinants",
+      "authors": [
+        "Michel Laurent"
+      ],
+      "year": 1994,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://doi.org/10.4064/aa-66-2-181-199",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorems 1–3; publisher introduction"
+      ],
+      "evidence_scope": "primary_introduction_lead",
+      "evidence_details": "Primary publisher record and introduction inspected. Used only as a specialized-bound lead, not for an asserted numerical inequality. General clock proposal uses AR01.",
+      "evidence_status": "LEAD ONLY for specific theorem implementation.",
+      "import_policy": "lead_only",
+      "repository_relevance": "Potentially sharpen the two-logarithm constants in the entry clock.",
+      "repository_caveat": "Publisher introduction only; no numerical Laurent bound was transcribed or imported.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR02"
+          ],
+          "evidence_scope": "primary_introduction_lead",
+          "details": "Primary publisher record and introduction inspected. Used only as a specialized-bound lead, not for an asserted numerical inequality. General clock proposal uses AR01."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S016"
+    },
+    {
+      "aliases": [
+        "AR03"
+      ],
+      "title": "Theoretical and computational bounds for m-cycles of the 3n+1 problem",
+      "authors": [
+        "John Simons",
+        "Benne de Weger"
+      ],
+      "year": 2005,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Author revision 1.43, 31 July 2007",
+      "publication": null,
+      "doi": "10.4064/aa117-1-3",
+      "primary_url": "https://www.deweger.net/papers/%5B35a%5DSidW-3n%2B1-v1.43%5B2007%5D.pdf",
+      "other_urls": [
+        "https://doi.org/10.4064/aa117-1-3"
+      ],
+      "theorem_location": [
+        "Introduction, Sections 5–6, Lemma 12 and Lemma 14"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full PDF inspected. m counts local minima; polynomial logarithm-separation lower bound compared with cycle-specific upper bound; no assertion that restricted m bounds exclude all cycles.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Logarithm separation plus Diophantine reduction for restricted cycle families.",
+      "repository_caveat": "The parameter m counts local minima; bounds for fixed m do not exclude arbitrary cycles.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR03"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full PDF inspected. m counts local minima; polynomial logarithm-separation lower bound compared with cycle-specific upper bound; no assertion that restricted m bounds exclude all cycles."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S017"
+    },
+    {
+      "aliases": [
+        "AR04"
+      ],
+      "title": "There are no Collatz m-Cycles with m≤91",
+      "authors": [
+        "Christian Hercher"
+      ],
+      "year": 2023,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Includes author corrigendum dated 14 June 2026",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.html",
+      "other_urls": [
+        "https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/corrigendum.pdf"
+      ],
+      "theorem_location": [
+        "Theorem 21 correction; publisher abstract and full paper"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary paper and two-page correction retrieved. Numerical headline not independently recomputed. Used as source-qualified example of restricted cycle machinery and need to include errata.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "A corrected example of strong restricted-cycle exclusion.",
+      "repository_caveat": "Include the June 2026 corrigendum; the numerical headline was not independently recomputed and does not cover all m.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR04"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary paper and two-page correction retrieved. Numerical headline not independently recomputed. Used as source-qualified example of restricted cycle machinery and need to include errata."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S018"
+    },
+    {
+      "aliases": [
+        "AR05"
+      ],
+      "title": "On the complexity of algebraic numbers I. Expansions in integer bases",
+      "authors": [
+        "Boris Adamczewski",
+        "Yann Bugeaud"
+      ],
+      "year": 2007,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": "10.4007/annals.2007.165.547",
+      "primary_url": "https://adamczewski.perso.math.cnrs.fr/ComplexityI.pdf",
+      "other_urls": [
+        "https://doi.org/10.4007/annals.2007.165.547"
+      ],
+      "theorem_location": [
+        "Theorems 1, E, 1B and 6, journal pp. 549, 555, 561–562"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full PDF inspected. Fixed-dimensional normalized Subspace condition and digit complexity statements checked. These apply to expansions of the algebraic number itself, not an unproved algebraicity transfer through Collatz parity conjugacy.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Audit normalized Subspace products and algebraic digit-complexity restrictions.",
+      "repository_caveat": "The natural band local product is at least one; algebraicity of an ordinary source does not imply algebraicity of its parity encoding.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR05"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full PDF inspected. Fixed-dimensional normalized Subspace condition and digit complexity statements checked. These apply to expansions of the algebraic number itself, not an unproved algebraicity transfer through Collatz parity conjugacy."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S019"
+    },
+    {
+      "aliases": [
+        "AR06"
+      ],
+      "title": "Schmidt's Subspace Theorem with moving targets",
+      "authors": [
+        "Min Ru",
+        "Paul Vojta"
+      ],
+      "year": 1997,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://math.berkeley.edu/~vojta/bib.html",
+      "other_urls": [
+        "https://library.slmath.org/books/Book37/files/vojta.pdf"
+      ],
+      "theorem_location": [
+        "Vojta, Nevanlinna Theory and Diophantine Approximation (1999), Theorems 7.6–7.7"
+      ],
+      "evidence_scope": "author_exposition",
+      "evidence_details": "Author exposition inspected for slow coefficient height h(H_j(i))=o(h(x(i))), coherent-subset independence and general position. Original bibliographic record verified; no claim that moving targets overcome the repository's exact local-product cancellation.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_via_cross_reference",
+      "repository_relevance": "Check whether moving coefficients can fit a legitimate Subspace interface.",
+      "repository_caveat": "Slow coefficient height and independence remain hypotheses; movement cannot repair the exact local-product cancellation.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR06"
+          ],
+          "evidence_scope": "author_exposition",
+          "details": "Author exposition inspected for slow coefficient height h(H_j(i))=o(h(x(i))), coherent-subset independence and general position. Original bibliographic record verified; no claim that moving targets overcome the repository's exact local-product cancellation."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S057",
+          "relationship": "statement checked in author exposition"
+        }
+      ],
+      "work_id": "S020"
+    },
+    {
+      "aliases": [
+        "AR07"
+      ],
+      "title": "Linear equations in variables which lie in a multiplicative group",
+      "authors": [
+        "Jan-Hendrik Evertse",
+        "Hans Peter Schlickewei",
+        "Wolfgang M. Schmidt"
+      ],
+      "year": 2002,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/math/0409604",
+      "other_urls": [
+        "https://annals.math.princeton.edu/2002/155-3/p04"
+      ],
+      "theorem_location": [
+        "Theorem 1.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full paper inspected. Fixed dimension, finite rank multiplicative group, nondegenerate solutions and bound depending on dimension/rank. Not interpreted as an effective height bound or theorem about sums with an unbounded number of terms.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Exclude fixed-dimensional nondegenerate S-unit families.",
+      "repository_caveat": "Growing carry sums have unbounded term count; a solution-count bound is not an effective height bound.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR07"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full paper inspected. Fixed dimension, finite rank multiplicative group, nondegenerate solutions and bound depending on dimension/rank. Not interpreted as an effective height bound or theorem about sums with an unbounded number of terms."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S021"
+    },
+    {
+      "aliases": [
+        "AR08"
+      ],
+      "title": "Finiteness of integral values for the ratio of two linear recurrences",
+      "authors": [
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "year": 2002,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://doi.org/10.1007/s002220200221",
+      "other_urls": [
+        "https://oerior.uniud.it/wp-content/uploads/2018/12/CorvajaZannier2002.pdf"
+      ],
+      "theorem_location": [
+        "Theorems 1–2 and Appendix 4, complete theorem statements in indexed primary PDF text"
+      ],
+      "evidence_scope": "primary_indexed_statement",
+      "evidence_details": "Complete Theorems 1 and 2 inspected in indexed primary author-hosted PDF text, plus abstract and Appendix 4. Theorem 2: joint characteristic-root group torsion-free; F,G linear recurrences; R finitely generated subring of C; infinitely many n with G(n) nonzero and F(n)/G(n) in R imply a nonzero polynomial P such that PF/G and G/P are recurrences. Theorem 1 adds arithmetic-progression restriction without the torsion-free hypothesis. Direct full PDF retrieval returned HTTP 503 and publisher access was paywalled; full proof not inspected. Simple-denominator corollary in arithmetic.md is an original proposed deduction, not quoted from this source.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Classify integral full cycle quotients in a fixed one-parameter macro-word family.",
+      "repository_caveat": "The simple-denominator corollary is proposed analysis; quotient classification, arbitrary-word coverage and effective cutoffs remain open.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR08"
+          ],
+          "evidence_scope": "primary_indexed_statement",
+          "details": "Complete Theorems 1 and 2 inspected in indexed primary author-hosted PDF text, plus abstract and Appendix 4. Theorem 2: joint characteristic-root group torsion-free; F,G linear recurrences; R finitely generated subring of C; infinitely many n with G(n) nonzero and F(n)/G(n) in R imply a nonzero polynomial P such that PF/G and G/P are recurrences. Theorem 1 adds arithmetic-progression restriction without the torsion-free hypothesis. Direct full PDF retrieval returned HTTP 503 and publisher access was paywalled; full proof not inspected. Simple-denominator corollary in arithmetic.md is an original proposed deduction, not quoted from this source."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S022"
+    },
+    {
+      "aliases": [
+        "AR09"
+      ],
+      "title": "An upper bound for the G.C.D. of a^n−1 and b^n−1",
+      "authors": [
+        "Yann Bugeaud",
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "year": 2003,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://doi.org/10.1007/s00209-002-0449-z",
+      "other_urls": [],
+      "theorem_location": [
+        "Main gcd bound, also explicitly restated in AR10 introduction"
+      ],
+      "evidence_scope": "later_primary_statement",
+      "evidence_details": "Publisher bibliographic record and primary author restatement in AR10 verified. Multiplicative independence and sufficiently-large threshold retained; no effective threshold imported.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_via_cross_reference",
+      "repository_relevance": "Detect excessive common factors in fixed exponential families.",
+      "repository_caveat": "Multiplicative independence and sufficiently-large thresholds are essential; no effective threshold was imported.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR09"
+          ],
+          "evidence_scope": "later_primary_statement",
+          "details": "Publisher bibliographic record and primary author restatement in AR10 verified. Multiplicative independence and sufficiently-large threshold retained; no effective threshold imported."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S024",
+          "relationship": "gcd theorem explicitly restated in later primary paper"
+        }
+      ],
+      "work_id": "S023"
+    },
+    {
+      "aliases": [
+        "AR10"
+      ],
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "authors": [
+        "Pietro Corvaja",
+        "Umberto Zannier"
+      ],
+      "year": 2005,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Preprint revision dated 22 April 2004",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/math/0311030",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorem 1, Corollary 1 and Main Theorem"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full preprint inspected. Fixed polynomials, fixed finitely generated torus subgroup and exceptional translates retained. Journal year verified from author institution record.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Control rational-function heights and exceptional subtori for fixed torus families.",
+      "repository_caveat": "The polynomial pair and multiplicative group must be fixed; generic carries do not automatically fit this representation.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR10"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full preprint inspected. Fixed polynomials, fixed finitely generated torus subgroup and exceptional translates retained. Journal year verified from author institution record."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S023",
+          "relationship": "supports statement of this earlier work"
+        }
+      ],
+      "work_id": "S024"
+    },
+    {
+      "aliases": [
+        "AR11"
+      ],
+      "title": "On the base-dependence of sets of numbers recognizable by finite automata",
+      "authors": [
+        "Alan Cobham"
+      ],
+      "year": 1969,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://research.ibm.com/publications/on-the-base-dependence-of-sets-of-numbers-recognizable-by-finite-automata",
+      "other_urls": [],
+      "theorem_location": [
+        "Classical theorem; exact formulation also in AR13 Theorem 2.1"
+      ],
+      "evidence_scope": "later_primary_statement",
+      "evidence_details": "Author institution record and exact statement in AR13 read. Two multiplicatively independent bases and finite automata are essential; no assertion that reachability under a finite transducer is automatic.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_via_cross_reference",
+      "repository_relevance": "Rigidity if the same exact basin predicate has finite automata in two independent bases.",
+      "repository_caveat": "A finite one-step transducer does not make unbounded reachability automatic.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR11"
+          ],
+          "evidence_scope": "later_primary_statement",
+          "details": "Author institution record and exact statement in AR13 read. Two multiplicatively independent bases and finite automata are essential; no assertion that reachability under a finite transducer is automatic."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S027",
+          "relationship": "classical statement checked in later primary paper"
+        }
+      ],
+      "work_id": "S025"
+    },
+    {
+      "aliases": [
+        "AR12"
+      ],
+      "title": "The Presburger nature of predicates that are regular in two number systems",
+      "authors": [
+        "A. L. Semenov"
+      ],
+      "year": 1977,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://www.mathnet.ru/php/archive.phtml?jrnid=smj&option_lang=eng&paperid=3937&wshow=paper",
+      "other_urls": [],
+      "theorem_location": [
+        "Siberian Mathematical Journal 18(2), 289–300"
+      ],
+      "evidence_scope": "bibliographic_framework_lead",
+      "evidence_details": "Primary bibliographic record checked. Extension lead only; no quantitative or algorithmic variant used without transcription.",
+      "evidence_status": "LEAD ONLY for specific theorem implementation.",
+      "import_policy": "lead_only",
+      "repository_relevance": "Possible multidimensional extension of the two-base definability test.",
+      "repository_caveat": "Bibliographic lead only; transcribe the theorem before using a quantitative or algorithmic variant.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR12"
+          ],
+          "evidence_scope": "bibliographic_framework_lead",
+          "details": "Primary bibliographic record checked. Extension lead only; no quantitative or algorithmic variant used without transcription."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S026"
+    },
+    {
+      "aliases": [
+        "AR13"
+      ],
+      "title": "A problem about Mahler functions",
+      "authors": [
+        "Boris Adamczewski",
+        "Jason P. Bell"
+      ],
+      "year": 2017,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": "10.2422/2036-2145.201606_010",
+      "primary_url": "https://journals.sns.it/index.php/annaliscienze/article/download/574/560",
+      "other_urls": [
+        "https://doi.org/10.2422/2036-2145.201606_010"
+      ],
+      "theorem_location": [
+        "Definition 1.1, Theorem 1.3, Theorem 2.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full PDF inspected. Characteristic-zero formal power series, two independent bases and two finite Mahler equations imply rationality. Need actual finite closure before application to any basin series.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Rationality obstruction if one basin series satisfies two finite Mahler equations.",
+      "repository_caveat": "A finite closed functional system must be proved; a growing state system is insufficient.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR13"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full PDF inspected. Characteristic-zero formal power series, two independent bases and two finite Mahler equations imply rationality. Need actual finite closure before application to any basin series."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S025",
+          "relationship": "supports statement of this earlier work"
+        }
+      ],
+      "work_id": "S027"
+    },
+    {
+      "aliases": [
+        "AR14"
+      ],
+      "title": "Suites algébriques, automates et substitutions",
+      "authors": [
+        "Gilles Christol",
+        "Teturo Kamae",
+        "Michel Mendès France",
+        "Gérard Rauzy"
+      ],
+      "year": 1980,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": "10.24033/bsmf.1926",
+      "primary_url": "https://www.numdam.org/articles/10.24033/bsmf.1926/",
+      "other_urls": [
+        "https://doi.org/10.24033/bsmf.1926"
+      ],
+      "theorem_location": [
+        "Theorem 1"
+      ],
+      "evidence_scope": "primary_indexed_statement",
+      "evidence_details": "Primary archive record and indexed original statement read; full PDF open timed out. Used only for finite-field algebraic-series/automatic-sequence correspondence, not a characteristic-zero lifting claim.",
+      "evidence_status": "Source-qualified dictionary statement; complete transcription still needed for implementation.",
+      "import_policy": "dictionary_only_until_full_transcription",
+      "repository_relevance": "Dictionary between finite-field algebraic series and automatic coefficients.",
+      "repository_caveat": "No characteristic-zero lifting; obtain the full statement before an implementation relies on it.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR14"
+          ],
+          "evidence_scope": "primary_indexed_statement",
+          "details": "Primary archive record and indexed original statement read; full PDF open timed out. Used only for finite-field algebraic-series/automatic-sequence correspondence, not a characteristic-zero lifting claim."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S028"
+    },
+    {
+      "aliases": [
+        "AR15",
+        "R04",
+        "BL96"
+      ],
+      "title": "The 3x+1 Conjugacy Map",
+      "authors": [
+        "Daniel J. Bernstein",
+        "Jeffrey C. Lagarias"
+      ],
+      "year": 1996,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://doi.org/10.4153/CJM-1996-060-x",
+      "other_urls": [],
+      "theorem_location": [
+        "Section 1, formulas 1.5–1.6, Periodicity Conjecture",
+        "Section 1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary publisher full PDF inspected. Proven rationality preservation of inverse parity encoding separated from reverse Periodicity Conjecture; ordinary rationality does not transfer automatically to parity encoding.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Exact parity conjugacy, rationality direction, and nonordinary control examples.",
+      "repository_caveat": "The reverse rationality assertion is the Periodicity Conjecture; completion points are not automatically positive integers.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR15"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary publisher full PDF inspected. Proven rationality preservation of inverse parity encoding separated from reverse Periodicity Conjecture; ordinary rationality does not transfer automatically to parity encoding."
+        },
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R04",
+            "BL96"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter."
+        }
+      ],
+      "related_works": [],
+      "additional_repository_uses": [
+        {
+          "aliases": [
+            "R04",
+            "BL96"
+          ],
+          "relevance": "Construct nonordinary invariant-measure control examples and separate ordinary-source information.",
+          "caveat": "Positive-entropy biased parity laws exist in the completion; they have no ordinary counterexample implication."
+        }
+      ],
+      "work_id": "S029"
+    },
+    {
+      "aliases": [
+        "AR16",
+        "R07",
+        "BGT10"
+      ],
+      "title": "The dynamical Mordell–Lang problem for étale maps",
+      "authors": [
+        "Jason P. Bell",
+        "Dragos Ghioca",
+        "Thomas J. Tucker"
+      ],
+      "year": 2010,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/0808.3266",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorem 1.3 and introduction's p-adic analytic interpolation explanation",
+        "Theorem 1.3"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Primary full preprint inspected. Fixed étale endomorphism of a quasiprojective variety in characteristic zero; not an arbitrary switching affine semigroup or floor-log target.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Classify repeated coincidences in a fixed guarded algebraic family.",
+      "repository_caveat": "Requires a fixed étale map and algebraic target, not arbitrary changing parity words or a floor-log band.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR16"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Primary full preprint inspected. Fixed étale endomorphism of a quasiprojective variety in characteristic zero; not an arbitrary switching affine semigroup or floor-log target."
+        },
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R07",
+            "BGT10"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter."
+        }
+      ],
+      "related_works": [],
+      "additional_repository_uses": [
+        {
+          "aliases": [
+            "R07",
+            "BGT10"
+          ],
+          "relevance": "Classify repeated exact hits inside fixed guarded macro-word families.",
+          "caveat": "A changing parity-selected map and a size inequality are not a fixed étale map and algebraic subvariety."
+        }
+      ],
+      "work_id": "S030"
+    },
+    {
+      "aliases": [
+        "D01"
+      ],
+      "title": "Yet another look at Harris' ergodic theorem for Markov chains",
+      "authors": [
+        "Martin Hairer",
+        "Jonathan C. Mattingly"
+      ],
+      "year": 2011,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Author PDF; arXiv first posted 2008; published 2011.",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://www.hairer.org/papers/harris.pdf",
+      "other_urls": [
+        "https://arxiv.org/abs/0810.2777"
+      ],
+      "theorem_location": [
+        "Section 1, Assumptions 1-2, Theorems 1.2-1.3; PDF pp. 2-3"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Geometric drift, common minorization on a sufficiently large sublevel set, weighted supremum/total variation conclusion. Deterministic Collatz application is our separate analysis.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Identify the exact drift/minorization package needed for a weighted return operator.",
+      "repository_caveat": "For deterministic trajectories, common minorization may already contain the missing merger statement.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D01"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Geometric drift, common minorization on a sufficiently large sublevel set, weighted supremum/total variation conclusion. Deterministic Collatz application is our separate analysis."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S031"
+    },
+    {
+      "aliases": [
+        "D02"
+      ],
+      "title": "Recurrence times and rates of mixing",
+      "authors": [
+        "Lai-Sang Young"
+      ],
+      "year": 1999,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Israel Journal of Mathematics 110, 153-188",
+      "doi": null,
+      "primary_url": "https://math.nyu.edu/~lsy/papers/mixingrate.pdf",
+      "other_urls": [],
+      "theorem_location": [
+        "Sections 1.1-1.2, distortion condition (*), Theorems 1-3"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Tower setup, nonsingularity/distortion, density class C_beta^+, integrable return-time assumption, tail-based convergence results.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Organize excursions through a return tower with explicit tail budgets.",
+      "repository_caveat": "Nonsingularity, distortion, integrable returns and admissible density classes must be proved; band entry alone supplies none.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D02"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Tower setup, nonsingularity/distortion, density class C_beta^+, integrable return-time assumption, tail-based convergence results."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S032"
+    },
+    {
+      "aliases": [
+        "D03"
+      ],
+      "title": "Sharp polynomial estimates for the decay of correlations",
+      "authors": [
+        "Sebastien Gouezel"
+      ],
+      "year": 2004,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Israel Journal of Mathematics 139, 29-65",
+      "doi": null,
+      "primary_url": "https://gouezel.pages.math.cnrs.fr/webpage/articles/decay.pdf",
+      "other_urls": [
+        "https://arxiv.org/abs/math/0202147"
+      ],
+      "theorem_location": [
+        "Theorems 1.1-1.3; Section 6 for dynamical realization"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Renewal equation, summability, isolated simple eigenvalue, aperiodicity, return-operator tail and the extra big-image/distortion hypotheses in the application.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Operator renewal for the retained-source residual.",
+      "repository_caveat": "A simple isolated eigenvalue, aperiodicity and norm-tail estimates are hypotheses, not consequences of the renewal identity.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D03"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Renewal equation, summability, isolated simple eigenvalue, aperiodicity, return-operator tail and the extra big-image/distortion hypotheses in the application."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S033"
+    },
+    {
+      "aliases": [
+        "D04"
+      ],
+      "title": "Operator renewal theory and mixing rates for dynamical systems with infinite measure",
+      "authors": [
+        "Ian Melbourne",
+        "Dalia Terhesiu"
+      ],
+      "year": 2012,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Author's corrected March 2015 PDF, rather than the uncorrected file.",
+      "publication": "Inventiones Mathematicae 189, 61-110",
+      "doi": null,
+      "primary_url": "https://math-ianmelbourne.github.io/papers/oprenew_corrected.pdf",
+      "other_urls": [
+        "https://math-ianmelbourne.github.io/papers/oprenew.html"
+      ],
+      "theorem_location": [
+        "Theorem 1.1; Section 11.1, Proposition 11.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "AFN-map theorem requires invariant measure and regularly varying tails; beta>1/2 for stated full individual-iterate limit; operator assumptions are not automatic.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Infinite-measure renewal when a finite invariant measure is unavailable.",
+      "repository_caveat": "Use the corrected version and the regular-variation range; no arbitrary-orbit absorption conclusion follows.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D04"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "AFN-map theorem requires invariant measure and regularly varying tails; beta>1/2 for stated full individual-iterate limit; operator assumptions are not automatic."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S034"
+    },
+    {
+      "aliases": [
+        "D05"
+      ],
+      "title": "Thermodynamic formalism for countable Markov shifts",
+      "authors": [
+        "Omri M. Sarig"
+      ],
+      "year": 2015,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Proceedings of Symposia in Pure Mathematics 89, 81-117",
+      "doi": "10.1090/pspum/089/01485",
+      "primary_url": "https://www.weizmann.ac.il/math/sarigo/sites/math.sarigo/files/uploads/tdf-survey.pdf",
+      "other_urls": [
+        "https://doi.org/10.1090/pspum/089/01485"
+      ],
+      "theorem_location": [
+        "Theorem 4.9, Definition 4.11, Section 4.4 attribution of original results"
+      ],
+      "evidence_scope": "author_exposition",
+      "evidence_details": "Author's precise synthesis of generalized Ruelle-Perron-Frobenius theorem. Topological mixing, summable variations and finite Gurevich pressure; recurrence classification. Original 1999 PDF was fetched but garbled, so theorem wording is based on this readable author source.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Classify recurrence and escape in a countable-state model.",
+      "repository_caveat": "Finite pressure and summable variations do not prove that the coding represents all ordinary sources.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D05"
+          ],
+          "evidence_scope": "author_exposition",
+          "details": "Author's precise synthesis of generalized Ruelle-Perron-Frobenius theorem. Topological mixing, summable variations and finite Gurevich pressure; recurrence classification. Original 1999 PDF was fetched but garbled, so theorem wording is based on this readable author source."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S035"
+    },
+    {
+      "aliases": [
+        "D06"
+      ],
+      "title": "Spectral gap and transience for Ruelle operators on countable Markov shifts",
+      "authors": [
+        "Van Cyr",
+        "Omri Sarig"
+      ],
+      "year": 2009,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Communications in Mathematical Physics 292, 637-666",
+      "doi": null,
+      "primary_url": "https://www.weizmann.ac.il/math/sarigo/sites/math.sarigo/files/uploads/stability8.pdf",
+      "other_urls": [],
+      "theorem_location": [
+        "Section 2.1, Theorem 2.1 and definition of strong positive recurrence"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "For topologically mixing CMS and weakly Holder potential of finite pressure, spectral gap property iff strong positive recurrence in the paper's specified sense.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Translate strong positive recurrence into a spectral-gap question.",
+      "repository_caveat": "The specified shift, potential and pressure hypotheses must hold; escaped trajectories are not excluded by terminology.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D06"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "For topologically mixing CMS and weakly Holder potential of finite pressure, spectral gap property iff strong positive recurrence in the paper's specified sense."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S036"
+    },
+    {
+      "aliases": [
+        "D07"
+      ],
+      "title": "Exponential convergence to quasi-stationary distribution and Q-process",
+      "authors": [
+        "Nicolas Champagnat",
+        "Denis Villemonais"
+      ],
+      "year": 2016,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Probability Theory and Related Fields 164",
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/1404.1349",
+      "other_urls": [
+        "https://www.normalesup.org/~villemonais/publication/article2016/"
+      ],
+      "theorem_location": [
+        "Introduction standing assumptions, Assumption (A), Theorems 1.1 and 2.1"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Almost-surely absorbed processes, positive survival at finite times, conditional minorization, survival comparison; convergence is conditioned on nonabsorption.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Describe the distribution conditioned on survival.",
+      "repository_caveat": "Almost-sure absorption is already a standing assumption; quasi-stationarity cannot be used circularly to prove it.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D07"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Almost-surely absorbed processes, positive survival at finite times, conditional minorization, survival comparison; convergence is conditioned on nonabsorption."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S037"
+    },
+    {
+      "aliases": [
+        "D08"
+      ],
+      "title": "Rare events, escape rates and quasistationarity: some exact formulae",
+      "authors": [
+        "Gerhard Keller",
+        "Carlangelo Liverani"
+      ],
+      "year": 2009,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Journal of Statistical Physics 135, 519-534",
+      "doi": "10.1007/s10955-009-9747-8",
+      "primary_url": "https://carlangelo-liverani.github.io/Lavori/live0802.pdf",
+      "other_urls": [
+        "https://doi.org/10.1007/s10955-009-9747-8"
+      ],
+      "theorem_location": [
+        "Theorem 2.1, assumptions (A1)-(A7); Section 3 Lasota-Yorke applications"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Uniform spectral decomposition/summability and perturbation assumptions precede escape-rate formula; not a theorem establishing these hypotheses for arbitrary arithmetic maps.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Estimate escape rates for a justified small-hole perturbation.",
+      "repository_caveat": "Uniform spectral and perturbation assumptions must be established first; a finite truncation is insufficient.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D08"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Uniform spectral decomposition/summability and perturbation assumptions precede escape-rate formula; not a theorem establishing these hypotheses for arbitrary arithmetic maps."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S038"
+    },
+    {
+      "aliases": [
+        "D09"
+      ],
+      "title": "Proving Termination with Multiset Orderings",
+      "authors": [
+        "Nachum Dershowitz",
+        "Zohar Manna"
+      ],
+      "year": 1979,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Communications of the ACM 22(8), 465-476",
+      "doi": "10.1145/359138.359142",
+      "primary_url": "https://www.cs.tau.ac.il/~nachumd/term/ProvingTerminationWithMultisets.pdf",
+      "other_urls": [
+        "https://doi.org/10.1145/359138.359142"
+      ],
+      "theorem_location": [
+        "Section 2, theorem on multiset well-foundedness and subsequent nested-multiset theorem"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Well-foundedness of base order iff well-foundedness of finite-multiset extension; repeated splitting into finitely many smaller obligations is permitted.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Allow a large numeric state to split into finitely many smaller proof obligations.",
+      "repository_caveat": "An explicit well-founded base order and strict decrease for every generated obligation are still required.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D09"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Well-foundedness of base order iff well-foundedness of finite-multiset extension; repeated splitting into finitely many smaller obligations is permitted."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S039"
+    },
+    {
+      "aliases": [
+        "D10"
+      ],
+      "title": "The Size-Change Principle for Program Termination",
+      "authors": [
+        "Chin Soon Lee",
+        "Neil D. Jones",
+        "Amir M. Ben-Amram"
+      ],
+      "year": 2001,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "POPL 2001, 81-92",
+      "doi": "10.1145/360204.360210",
+      "primary_url": "https://researchprofiles.ku.dk/en/publications/the-size-change-principle-for-program-termination/",
+      "other_urls": [
+        "https://doi.org/10.1145/360204.360210"
+      ],
+      "theorem_location": [
+        "Original principle and graph-based analysis; original primary bibliographic record"
+      ],
+      "evidence_scope": "bibliographic_framework_lead",
+      "evidence_details": "Bibliographic identity verified through author's institution. ACM PDF fetch returned 403; detailed technical theorem is checked in the later primary paper D11 rather than claimed fully inspected here.",
+      "evidence_status": "LEAD ONLY for specific theorem implementation.",
+      "import_policy": "lead_only",
+      "repository_relevance": "Historical size-change termination principle.",
+      "repository_caveat": "Original paper was not fully inspected; use D11 for the checked technical formulation.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D10"
+          ],
+          "evidence_scope": "bibliographic_framework_lead",
+          "details": "Bibliographic identity verified through author's institution. ACM PDF fetch returned 403; detailed technical theorem is checked in the later primary paper D11 rather than claimed fully inspected here."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S041",
+          "relationship": "technical formulation checked in corrected later primary paper"
+        }
+      ],
+      "work_id": "S040"
+    },
+    {
+      "aliases": [
+        "D11"
+      ],
+      "title": "Size-Change Termination, Monotonicity Constraints and Ranking Functions",
+      "authors": [
+        "Amir M. Ben-Amram"
+      ],
+      "year": 2010,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Revised and corrected September 21 version.",
+      "publication": "Logical Methods in Computer Science 6(3:2)",
+      "doi": "10.2168/LMCS-6(3:2)2010",
+      "primary_url": "https://arxiv.org/pdf/1005.0253",
+      "other_urls": [
+        "https://lmcs.episciences.org/1001",
+        "https://doi.org/10.2168/LMCS-6(3:2)2010"
+      ],
+      "theorem_location": [
+        "Definitions 4.7-4.11, Theorem 4.12 and proof"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Finite closure of abstract monotonicity constraints, local termination test, infinite Ramsey extraction. Completeness is for the specified abstract system, not arbitrary concrete Collatz semantics.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Finite closure and ranking certificates for an exact guarded abstraction.",
+      "repository_caveat": "Completeness is for the abstract monotonicity system; an abstract loop may lack an ordinary realizer.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D11"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Finite closure of abstract monotonicity constraints, local termination test, infinite Ramsey extraction. Completeness is for the specified abstract system, not arbitrary concrete Collatz semantics."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S040",
+          "relationship": "supports statement of this earlier work"
+        }
+      ],
+      "work_id": "S041"
+    },
+    {
+      "aliases": [
+        "D12"
+      ],
+      "title": "Transition Invariants",
+      "authors": [
+        "Andreas Podelski",
+        "Andrey Rybalchenko"
+      ],
+      "year": 2004,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "LICS 2004, 32-41",
+      "doi": "10.1109/LICS.2004.1319598",
+      "primary_url": "https://lics.siglog.org/2004/PodelskiRybalchenko-TransitionInvariant.html",
+      "other_urls": [
+        "https://doi.org/10.1109/LICS.2004.1319598"
+      ],
+      "theorem_location": [
+        "Official conference abstract: disjunctively well-founded transition-invariant characterization"
+      ],
+      "evidence_scope": "primary_abstract_statement_read",
+      "evidence_details": "Primary official abstract explicitly specifies finite union and transitive closure. Author PDF and repository mirror fetches failed. The guide supplies its own elementary Ramsey proof of the termination implication; no uninspected algorithm detail is used.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Finite disjunctions of well-founded relations covering all reachable transition pairs.",
+      "repository_caveat": "The transitive closure must be covered; covering single-step edges alone is insufficient. Only the official abstract was inspected.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D12"
+          ],
+          "evidence_scope": "primary_abstract_statement_read",
+          "details": "Primary official abstract explicitly specifies finite union and transitive closure. Author PDF and repository mirror fetches failed. The guide supplies its own elementary Ramsey proof of the termination implication; no uninspected algorithm detail is used."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S042"
+    },
+    {
+      "aliases": [
+        "D13"
+      ],
+      "title": "Abstract interpretation: a unified lattice model for static analysis of programs by construction or approximation of fixpoints",
+      "authors": [
+        "Patrick Cousot",
+        "Radhia Cousot"
+      ],
+      "year": 1977,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "POPL 1977, 238-252",
+      "doi": "10.1145/512950.512973",
+      "primary_url": "https://cs.nyu.edu/~pcousot/COUSOTpapers/POPL77.shtml",
+      "other_urls": [
+        "https://cs.nyu.edu/~pcousot/publications.www/CousotCousot-POPL-77-ACM-p238--252-1977.pdf",
+        "https://doi.org/10.1145/512950.512973"
+      ],
+      "theorem_location": [
+        "Foundational lattice/fixpoint framework; author-hosted publication page"
+      ],
+      "evidence_scope": "bibliographic_framework_lead",
+      "evidence_details": "Bibliography and general framework only. Scanned PDF was retrieved but web text extraction returned zero lines; no specific theorem number or detailed completeness claim is attributed.",
+      "evidence_status": "LEAD ONLY for specific theorem implementation.",
+      "import_policy": "lead_only",
+      "repository_relevance": "Sound arithmetic abstractions and refinement of spurious loops.",
+      "repository_caveat": "Framework/bibliographic lead; no particular completeness theorem was audited.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D13"
+          ],
+          "evidence_scope": "bibliographic_framework_lead",
+          "details": "Bibliography and general framework only. Scanned PDF was retrieved but web text extraction returned zero lines; no specific theorem number or detailed completeness claim is attributed."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S043"
+    },
+    {
+      "aliases": [
+        "D14"
+      ],
+      "title": "Joint Spectral Radius and Path-Complete Graph Lyapunov Functions",
+      "authors": [
+        "Amir Ali Ahmadi",
+        "Raphael Jungers",
+        "Pablo A. Parrilo",
+        "Mardavij Roozbehani"
+      ],
+      "year": 2014,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "SIAM Journal on Control and Optimization 52(1)",
+      "doi": null,
+      "primary_url": "https://arxiv.org/pdf/1111.3427",
+      "other_urls": [],
+      "theorem_location": [
+        "Definition 2.2, Theorem 2.4 and proof"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Finite matrix family, path completeness, positive continuous homogeneous node functions, joint-spectral-radius bound. Guarded Collatz adaptation and affine eigenvalue-1 obstruction are our analysis.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Multiple Lyapunov functions indexed by a graph of guarded block transitions.",
+      "repository_caveat": "Path completeness and all inequalities must hold; direct affine homogenization has an eigenvalue-one obstruction.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D14"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Finite matrix family, path completeness, positive continuous homogeneous node functions, joint-spectral-radius bound. Guarded Collatz adaptation and affine eigenvalue-1 obstruction are our analysis."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S044"
+    },
+    {
+      "aliases": [
+        "D15"
+      ],
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "authors": [
+        "Emre Yolcu",
+        "Scott Aaronson",
+        "Marijn J. H. Heule"
+      ],
+      "year": 2023,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "2021 initial preprint/conference version; expanded preprint inspected, theorem numbering follows it.",
+      "publication": "Journal of Automated Reasoning 67, article 15",
+      "doi": "10.1007/s10817-022-09658-8",
+      "primary_url": "https://arxiv.org/pdf/2105.14697",
+      "other_urls": [
+        "https://link.springer.com/article/10.1007/s10817-022-09658-8",
+        "https://doi.org/10.1007/s10817-022-09658-8"
+      ],
+      "theorem_location": [
+        "Theorem 3.17 mixed-base equivalence; Theorems 3.8 and 3.10 unary natural-matrix obstructions; Section 2.3 matrix/arctic interpretations"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Actual Collatz termination equivalence and carefully scoped limitations. No assertion that all matrix interpretations or the mixed-base system are ruled out.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Published mixed-base rewriting interface equivalent to Collatz termination.",
+      "repository_caveat": "Matrix impossibility results are scoped to particular encodings and interpretations, not every possible termination proof.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D15"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Actual Collatz termination equivalence and carefully scoped limitations. No assertion that all matrix interpretations or the mixed-base system are ruled out."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S045"
+    },
+    {
+      "aliases": [
+        "D16"
+      ],
+      "title": "Pressure at infinity on countable Markov shifts",
+      "authors": [
+        "Anibal Velozo"
+      ],
+      "year": 2026,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Ergodic Theory and Dynamical Systems 46, 1043-1085; online February 18, 2026",
+      "doi": "10.1017/etds.2025.10266",
+      "primary_url": "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/pressure-at-infinity-on-countable-markov-shifts/A430E984BC7C678A70FA395B9740C1BC",
+      "other_urls": [
+        "https://arxiv.org/abs/2410.16552",
+        "https://doi.org/10.1017/etds.2025.10266"
+      ],
+      "theorem_location": [
+        "Theorems 1.1-1.3; definition of pressure at infinity"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Publisher full text; recent publication independently checked with system1 search. Theorem 1.3 is about invariant probabilities, convergence on cylinders, specified regularity and an integrability or pressure-scaling condition. Does not exclude arbitrary escaping trajectories.",
+      "evidence_status": "Published result or primary author formulation, used only within the inspected scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Pressure at infinity as a precise language for loss of invariant mass.",
+      "repository_caveat": "Theorems concern specified invariant measures and convergence modes, not the exclusion of every escaping ordinary trajectory.",
+      "provenance": [
+        {
+          "input": "dynamics-sources.json",
+          "aliases": [
+            "D16"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Publisher full text; recent publication independently checked with system1 search. Theorem 1.3 is about invariant probabilities, convergence on cylinders, specified regularity and an integrability or pressure-scaling condition. Does not exclude arbitrary escaping trajectories."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S046"
+    },
+    {
+      "aliases": [
+        "R01",
+        "F67"
+      ],
+      "title": "Disjointness in ergodic theory, minimal sets, and a problem in Diophantine approximation",
+      "authors": [
+        "Harry Furstenberg"
+      ],
+      "year": 1967,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Mathematical Systems Theory 1(1), 1–49",
+      "doi": "10.1007/BF01692494",
+      "primary_url": "https://mathweb.ucsd.edu/~asalehig/F_Disjointness.pdf",
+      "other_urls": [
+        "https://doi.org/10.1007/BF01692494"
+      ],
+      "theorem_location": [
+        "Part IV, Theorem IV.1 and following equidistribution warning"
+      ],
+      "evidence_scope": "lead_researcher_statement_inspected",
+      "evidence_details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Test whether a genuine two-scale action can be extracted from the arithmetic representation.",
+      "repository_caveat": "Density does not imply equidistribution; actual Collatz branch maps do not commute.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R01",
+            "F67"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S047"
+    },
+    {
+      "aliases": [
+        "R02",
+        "R90"
+      ],
+      "title": "×2 and ×3 invariant measures and entropy",
+      "authors": [
+        "D. J. Rudolph"
+      ],
+      "year": 1990,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": "10.1017/S0143385700005629",
+      "primary_url": "https://doi.org/10.1017/S0143385700005629",
+      "other_urls": [],
+      "theorem_location": [
+        "Publisher theorem statement on invariant ergodic measures and positive entropy"
+      ],
+      "evidence_scope": "primary_abstract_statement_read",
+      "evidence_details": "Publisher statement inspected by lead researcher; complete proof not read. Positive entropy and joint-action ergodicity retained.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Rigidity after proving two commuting invariant actions and positive entropy.",
+      "repository_caveat": "Invariance under the selected Collatz map supplies neither separate invariance nor the positive-entropy hypothesis.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R02",
+            "R90"
+          ],
+          "evidence_scope": "primary_abstract_statement_read",
+          "details": "Publisher statement inspected by lead researcher; complete proof not read. Positive entropy and joint-action ergodicity retained."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S048"
+    },
+    {
+      "aliases": [
+        "R03",
+        "EL21"
+      ],
+      "title": "Rigidity properties for commuting automorphisms on tori and solenoids",
+      "authors": [
+        "Manfred Einsiedler",
+        "Elon Lindenstrauss"
+      ],
+      "year": 2022,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Published online 8 September 2021; journal volume 2022.",
+      "publication": "Ergodic Theory and Dynamical Systems 42, 691–736",
+      "doi": "10.1017/etds.2021.74",
+      "primary_url": "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/rigidity-properties-for-commuting-automorphisms-on-tori-and-solenoids/B5B7471AB9A282B5B179E35040809159",
+      "other_urls": [
+        "https://arxiv.org/abs/2101.11120",
+        "https://doi.org/10.1017/etds.2021.74"
+      ],
+      "theorem_location": [
+        "Theorems 1.2–1.3",
+        "Section 4"
+      ],
+      "evidence_scope": "lead_researcher_statement_inspected",
+      "evidence_details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Possible higher-rank rigidity for a faithful real/binary/ternary joining.",
+      "repository_caveat": "Requires commuting algebraic automorphisms and the exact irreducibility or factor hypotheses; a zero-entropy factor can retain the open problem.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R03",
+            "EL21"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S049"
+    },
+    {
+      "aliases": [
+        "R05",
+        "BQ14"
+      ],
+      "title": "Random walks on projective spaces",
+      "authors": [
+        "Yves Benoist",
+        "Jean-François Quint"
+      ],
+      "year": 2014,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Compositio Mathematica 150(9), 1579–1606",
+      "doi": null,
+      "primary_url": "https://www.math.u-bordeaux.fr/~jquint/publications/projectivespace.pdf",
+      "other_urls": [
+        "https://www.cambridge.org/core/journals/compositio-mathematica/article/abs/random-walks-on-projective-spaces/6351F50A3867107CCFED8A327997F5AC"
+      ],
+      "theorem_location": [
+        "Theorem 1.1",
+        "Introductory semisimplicity and strong-irreducibility hypotheses"
+      ],
+      "evidence_scope": "full_text_statement_read",
+      "evidence_details": "Author PDF opened; Theorem 1.1 and its strong-irreducibility, field and semisimplicity qualifications read. Full proof not audited.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Possible stationary-law machinery for a new justified packet action.",
+      "repository_caveat": "The direct Collatz matrices have a common invariant line; independent matrix sampling also needs a comparison with actual parity.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R05",
+            "BQ14"
+          ],
+          "evidence_scope": "full_text_statement_read",
+          "details": "Author PDF opened; Theorem 1.1 and its strong-irreducibility, field and semisimplicity qualifications read. Full proof not audited."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S050"
+    },
+    {
+      "aliases": [
+        "R06",
+        "BQ13"
+      ],
+      "title": "Stationary measures and invariant subsets of homogeneous spaces (III)",
+      "authors": [
+        "Yves Benoist",
+        "Jean-François Quint"
+      ],
+      "year": 2013,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Annals of Mathematics 178(3), 1017–1059",
+      "doi": "10.4007/annals.2013.178.3.5",
+      "primary_url": "https://annals.math.princeton.edu/2013/178-3/p05",
+      "other_urls": [
+        "https://doi.org/10.4007/annals.2013.178.3.5"
+      ],
+      "theorem_location": [
+        "Publisher abstract: homogeneous orbit-closure theorem"
+      ],
+      "evidence_scope": "primary_abstract_statement_read",
+      "evidence_details": "Primary publisher abstract inspected; semisimple Zariski closure of the adjoint action and no compact factor are explicit. No full-proof audit.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Identify which algebraic-closure hypotheses a new arithmetic action would need.",
+      "repository_caveat": "The natural affine group is solvable; a semisimple adjoint closure without compact factors cannot be assumed.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R06",
+            "BQ13"
+          ],
+          "evidence_scope": "primary_abstract_statement_read",
+          "details": "Primary publisher abstract inspected; semisimple Zariski closure of the adjoint action and no compact factor are explicit. No full-proof audit."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S051"
+    },
+    {
+      "aliases": [
+        "R08",
+        "P14"
+      ],
+      "title": "p-adic interpolation of iterates",
+      "authors": [
+        "Bjorn Poonen"
+      ],
+      "year": 2014,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Bulletin of the London Mathematical Society 46(3), 525–527",
+      "doi": "10.1112/blms/bdu010",
+      "primary_url": "https://math.mit.edu/~poonen/papers/p-iteration.pdf",
+      "other_urls": [
+        "https://arxiv.org/abs/1307.5887",
+        "https://doi.org/10.1112/blms/bdu010"
+      ],
+      "theorem_location": [
+        "Theorem 1"
+      ],
+      "evidence_scope": "lead_researcher_statement_inspected",
+      "evidence_details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Interpolate iterates of an exactly guarded near-identity local analytic family.",
+      "repository_caveat": "At 2 the forward shortcut branches expand; at odd primes parity is not continuous. Branch legality needs a separate proof.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R08",
+            "P14"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S052"
+    },
+    {
+      "aliases": [
+        "R09",
+        "BS96"
+      ],
+      "title": "Explicit bounds for primes in residue classes",
+      "authors": [
+        "Eric Bach",
+        "Jonathan Sorenson"
+      ],
+      "year": 1996,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": null,
+      "doi": "10.1090/S0025-5718-96-00763-6",
+      "primary_url": "https://doi.org/10.1090/S0025-5718-96-00763-6",
+      "other_urls": [
+        "https://digitalcommons.butler.edu/facsch_papers/1121/"
+      ],
+      "theorem_location": [
+        "Conditional least-prime bound; exact theorem number not transcribed"
+      ],
+      "evidence_scope": "lead_researcher_statement_inspected",
+      "evidence_details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Construct small arithmetic representatives after a source-preserving partner encoding is established.",
+      "repository_caveat": "ERH and a reduced nonempty residue class are required; same-prefix representatives need not preserve the original predecessor basin.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R09",
+            "BS96"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. No complete proof audit claimed; see the specific hypothesis discussion in the rigidity chapter."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S053"
+    },
+    {
+      "aliases": [
+        "R10",
+        "LLS16"
+      ],
+      "title": "Conditional bounds for the least quadratic non-residue and related problems",
+      "authors": [
+        "Youness Lamzouri",
+        "Xiannan Li",
+        "Kannan Soundararajan"
+      ],
+      "year": 2015,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": "Corrected arXiv v3, 8 December 2016; original journal paper 2015; formal corrigendum 2017.",
+      "publication": "Mathematics of Computation 84(295), 2391–2412",
+      "doi": "10.1090/S0025-5718-2015-02925-1",
+      "primary_url": "https://arxiv.org/abs/1309.3595v3",
+      "other_urls": [
+        "https://doi.org/10.1090/mcom/3261",
+        "https://doi.org/10.1090/S0025-5718-2015-02925-1"
+      ],
+      "theorem_location": [
+        "Conditional least-prime results",
+        "v3 correction notice for Lemma 6.1 and affected asymptotic bounds"
+      ],
+      "evidence_scope": "lead_researcher_statement_inspected",
+      "evidence_details": "Statement or publisher abstract inspected by lead researcher. Versioned primary arXiv record and AMS corrigendum metadata checked during consolidation; no full-proof audit.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Quantitative prime selection for a separately proved ordinary-certificate representation.",
+      "repository_caveat": "GRH does not supply the source-preserving representation; use the corrected version and retain asymptotic quantifiers.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R10",
+            "LLS16"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. Versioned primary arXiv record and AMS corrigendum metadata checked during consolidation; no full-proof audit."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S054"
+    },
+    {
+      "aliases": [
+        "R11",
+        "CMQR24"
+      ],
+      "title": "Fourier optimization, the least quadratic non-residue, and the least prime in an arithmetic progression",
+      "authors": [
+        "Emanuel Carneiro",
+        "Micah B. Milinovich",
+        "Emily Quesada-Herrera",
+        "Antonio Pedro Ramos"
+      ],
+      "year": 2024,
+      "year_basis": "initial preprint year; the exact inspected version is dated in the version field",
+      "version": "Initial preprint 12 April 2024; inspected arXiv v2, 12 August 2025.",
+      "publication": null,
+      "doi": null,
+      "primary_url": "https://arxiv.org/html/2404.08380v2",
+      "other_urls": [
+        "https://arxiv.org/abs/2404.08380v2"
+      ],
+      "theorem_location": [
+        "Section 1.2"
+      ],
+      "evidence_scope": "lead_researcher_statement_inspected",
+      "evidence_details": "Statement or publisher abstract inspected by lead researcher. Primary v2 HTML and versioned arXiv metadata opened during consolidation; no full-proof audit.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Improved conditional prime-selection bounds if a faithful certificate encoding becomes available.",
+      "repository_caveat": "GRH-based asymptotic improvement cannot overcome an incompatible congruence or an unproved partner correspondence.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R11",
+            "CMQR24"
+          ],
+          "evidence_scope": "lead_researcher_statement_inspected",
+          "details": "Statement or publisher abstract inspected by lead researcher. Primary v2 HTML and versioned arXiv metadata opened during consolidation; no full-proof audit."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S055"
+    },
+    {
+      "aliases": [
+        "R12",
+        "KS07"
+      ],
+      "title": "The Undecidability of the Generalized Collatz Problem",
+      "authors": [
+        "Stuart A. Kurtz",
+        "Janos Simon"
+      ],
+      "year": 2007,
+      "year_basis": "publication year unless version field specifies otherwise",
+      "version": null,
+      "publication": "Theory and Applications of Models of Computation, LNCS 4484, 542–553",
+      "doi": "10.1007/978-3-540-72504-6_49",
+      "primary_url": "https://doi.org/10.1007/978-3-540-72504-6_49",
+      "other_urls": [],
+      "theorem_location": [
+        "Publisher statement: generalized Collatz decision problem is Π⁰₂-complete"
+      ],
+      "evidence_scope": "primary_abstract_statement_read",
+      "evidence_details": "Publisher statement inspected by lead researcher; full author PDF was inaccessible. No finer proof claim is imported.",
+      "evidence_status": "Published external theorem, or identified version, with only the stated inspection scope.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Scope safeguard for universal termination procedures and automated abstractions.",
+      "repository_caveat": "The theorem ranges over generalized maps; it proves no independence or undecidability result for the fixed 3x+1 conjecture.",
+      "provenance": [
+        {
+          "input": "05_rigidity_and_long_shots.md",
+          "aliases": [
+            "R12",
+            "KS07"
+          ],
+          "evidence_scope": "primary_abstract_statement_read",
+          "details": "Publisher statement inspected by lead researcher; full author PDF was inaccessible. No finer proof claim is imported."
+        }
+      ],
+      "related_works": [],
+      "work_id": "S056"
+    },
+    {
+      "aliases": [
+        "AR06-EXPO"
+      ],
+      "title": "Nevanlinna Theory and Diophantine Approximation",
+      "authors": [
+        "Paul Vojta"
+      ],
+      "year": 1999,
+      "year_basis": "publication year",
+      "version": "MSRI Publications, Volume 37",
+      "publication": "Several Complex Variables, MSRI Publications 37, 535–564",
+      "doi": null,
+      "primary_url": "https://library.slmath.org/books/Book37/files/vojta.pdf",
+      "other_urls": [],
+      "theorem_location": [
+        "Theorems 7.6–7.7"
+      ],
+      "evidence_scope": "author_exposition",
+      "evidence_details": "Full primary author exposition opened; moving-target theorem formulation and its slow-height and independence conditions inspected. This is a distinct work supporting AR06, not an independently inspected proof of the original 1997 paper.",
+      "evidence_status": "Published author exposition; exact formulation used with stated hypotheses.",
+      "import_policy": "checked_statement_requires_hypothesis_match",
+      "repository_relevance": "Precise moving-target hypotheses for an attempted Subspace interface.",
+      "repository_caveat": "Changing targets does not create a negative height power when the full arithmetic product is at least one.",
+      "provenance": [
+        {
+          "input": "arithmetic_sources.json",
+          "aliases": [
+            "AR06-EXPO"
+          ],
+          "evidence_scope": "author_exposition",
+          "details": "Separately identifies the author-exposition URL already recorded under AR06; title/year verified from its title page."
+        }
+      ],
+      "related_works": [
+        {
+          "work_id": "S020",
+          "relationship": "supports statement of this earlier work"
+        }
+      ],
+      "work_id": "S057"
+    }
+  ]
+}
