@@ -10,6 +10,27 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Compiled results
 
+### Exact cost of preserving a parity prefix
+
+[`CollatzGlobalClosure/SiblingRigidity.lean`](CollatzGlobalClosure/SiblingRigidity.lean)
+proves an unbounded rigidity theorem for ordinary affine mergers. If
+`x=2^a n+c` shares the first `k` parity steps of `n`, merges with its
+`k`-step endpoint at clock `k+a`, and has the same total odd count `p>0`,
+then
+
+\[
+3^p c=(2^a-1)C,\qquad 2\cdot3^{p-1}\mid a.
+\]
+
+Here `C` is the genuine prefix offset. For `a>0` and `c≥0`, the additional
+clock is at least `2·3^(p−1)` and the image is at least
+`2^(2·3^(p−1))*n`. The file proves the ordinary prefix facts, the ternary
+unit property of `C`, and the exact order implication using Mathlib's
+proved lifting-the-exponent theorem. The
+[scope and proof](SIBLING_RIGIDITY.md) specify every guard. This explains
+the exponential clock cost within that family; it does not exclude a
+construction that switches parity cells or changes odd counts.
+
 ### An obstruction valid at every finite window width
 
 [`CollatzGlobalClosure/LocalProfileObstruction.lean`](CollatzGlobalClosure/LocalProfileObstruction.lean)
@@ -52,23 +73,55 @@ quantifiers, the elementary estimates, and the first unsupported step in
 the attempted deterministic completion. No novelty claim is made for the
 elementary parity estimate.
 
+### Exact endpoint construction
+
+[`CollatzGlobalClosure/EndpointSteering.lean`](CollatzGlobalClosure/EndpointSteering.lean)
+proves the full ordinary lift identity
+
+\[
+T^k(n+2^k3^p t)=T^k(n)+3^{p+\operatorname{odds}(k,n)}t.
+\]
+
+It gives the exact inequality and divisibility condition for a prescribed
+endpoint, constructs the source from them, and proves positivity under an
+explicit positive-source guard. The [endpoint note](ENDPOINT_STEERING.md)
+and [inverse-tree attempt](INVERSE_TREE_ATTEMPT.md) explain the proposed
+adaptive construction. Its all-precision depth bound is open.
+
+## Attempts at the full closing step
+
+The [global-attempt record](GLOBAL_ATTEMPTS.md) separates the proved
+statements from the remaining universal targets. The
+[fixed-clock synthesis](FIXED_CLOCK_SYNTHESIS.md) seeks an ordinary rank
+decreasing under a fixed even iterate `T^q` at every input greater than two.
+Its finite carry transducers handle arbitrary binary lengths. An exact
+global verifier rejected candidates that passed their initial concrete
+constraints. No global rank certificate was obtained.
+
+The search code is exploratory, and the floating-point infeasibility and
+timeout results are not Lean theorems. None of the compiled results imports
+the search outputs as a proof premise.
+
 ## Build
 
 The project pins Lean **4.34.1** and mathlib commit
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. From this directory:
 
 ```sh
-lake exe cache get Mathlib/Tactic.lean Mathlib/FieldTheory/Finite/Basic.lean Mathlib/Data/Nat/Digits/Lemmas.lean
+lake exe cache get Mathlib/Tactic.lean Mathlib/FieldTheory/Finite/Basic.lean Mathlib/Data/Nat/Digits/Lemmas.lean Mathlib/NumberTheory/Multiplicity.lean
 lake build
 ```
 
-`lakefile.toml` treats warnings as errors. The relative-parity declarations
-and the two principal profile theorems print their axiom dependencies. Only Lean's standard
+`lakefile.toml` treats warnings as errors. The relative-parity, endpoint,
+and rigidity declarations and the two principal profile theorems print
+their axiom dependencies. Only Lean's standard
 `propext`, `Classical.choice`, and `Quot.sound` occur. The source contains
 no `sorry`, custom axiom, `native_decide`, or unsafe proof mechanism.
 The actual package execution is recorded in
 [`checkpoint-build.json`](../../reports/lean-global-closure-20261121/checkpoint-build.json)
-and [`checkpoint2-build.json`](../../reports/lean-global-closure-20261121/checkpoint2-build.json).
+and [`checkpoint2-build.json`](../../reports/lean-global-closure-20261121/checkpoint2-build.json),
+followed by the complete four-module build in
+[`checkpoint3-build.json`](../../reports/lean-global-closure-20261121/checkpoint3-build.json).
 This execution proves the stated implications; it does not establish their
 open universal hypothesis.
 
@@ -89,3 +142,8 @@ The active universal attempts are deterministic relative parity, adaptive
 endpoint steering for synchronized intervals, and a rank that retains
 nonlocal binary/ternary structure. An incomplete search or a conditional
 closing lemma will not be labeled a proof of the full theorem.
+
+A late source refresh also considered PR173's new five-block criterion at
+`cccf14d13250d3f98ef9b01ddbd304d11294e603` and the current descriptions of
+PRs174,176,177,179,180. These newer interfaces are recorded in
+`GLOBAL_ATTEMPTS.md`; they are not additional hypotheses of the Lean files.

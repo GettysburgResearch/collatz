@@ -1,2 +1,4 @@
 import CollatzGlobalClosure.RelativeParityBarrier
 import CollatzGlobalClosure.LocalProfileObstruction
+import CollatzGlobalClosure.EndpointSteering
+import CollatzGlobalClosure.SiblingRigidity

@@ -1,0 +1,29 @@
+{
+  "scope": "exact counterexample-verifier control, not a global rank certificate",
+  "source_sha256": "9cb4405d03c8c1a16e0c2e15f7e8252e4fe1144395e6d3a98e9f6db440c18f57",
+  "machine_source_sha256": "428379ac98179b922f51b3f2cc78702d70f4febdabe14aa552d22c6c1fefe886",
+  "candidate": {
+    "sample_count": 125,
+    "variables": 385,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "floating_common_margin": 0.3157894736842105,
+    "exact_reconstruction": "passed",
+    "scale": "315789",
+    "maximum_coefficient_bits": 20
+  },
+  "process_threads": 1,
+  "global_verifier": {
+    "outcome": "actual_counterexample",
+    "states": 262,
+    "relaxations": 228,
+    "seconds": 0.002,
+    "input_hex": "0xc5",
+    "input_bits": 8,
+    "integer_rank_difference": "1"
+  },
+  "actual_source": 197,
+  "actual_target": 28,
+  "full_collatz_proof": false,
+  "seconds": 0.014061212539672852
+}
