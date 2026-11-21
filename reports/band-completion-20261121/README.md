@@ -47,7 +47,27 @@ claim that the prepublication working tree was a clean commit checkout.
 
 ## Repository validation
 
-The complete-checkout integrity and regression gate will be run on the first
-published checkpoint. Its receipt will be added in a subsequent checkpoint.
-A passing repository gate checks the repository's declared integrity and
-bounded regressions; it does not prove universal Collatz convergence.
+The complete-checkout integrity and regression gate **passed all 11 child
+commands** at published checkpoint
+`59dfcfc48f0db641b7b66d3ead64a11d060737ae`, tree
+`f501b2cbf9322f3c271930173fcf9f606e257907`. The clean, complete checkout
+remained unchanged after execution. The exact receipt is
+[`checkpoint1-repository-validation.json`](checkpoint1-repository-validation.json).
+
+The checked proof sources in that published checkout were also hashed against
+the successful Lean replay; all three source digests matched. The subsequent
+checkpoint adds this receipt and updates documentation, with no Lean source
+changes. A final-head repository replay is reported in the PR description
+without recursively committing a receipt for its own commit.
+
+This repository gate checks declared integrity and bounded regressions; it
+does not prove universal Collatz convergence.
+
+## Focused mathematical cross-check
+
+A separate route agent reconstructed the unbounded successful offset family,
+the outer-band obstruction, and the never-entered mass bound and primitive
+coupling. No constant, quantifier, or clock error was found in those claims.
+The suggested wording was tightened to say an unbounded family of scales and
+non-strict survival through clock zero. This focused check does not certify
+the missing global return or absorption estimate.
