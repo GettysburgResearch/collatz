@@ -50,5 +50,33 @@
       "url": "https://doi.org/10.1017/S0017089508004655",
       "used": "Theorem5 parity-complexity lower bound; no upper complexity or subexponential growth assumption inferred from the band."
     }
-  ]
+  ],
+  "upstream_sources": [
+    {
+      "file": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "module": "ShellCover",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "module_port": true
+    },
+    {
+      "file": "research/lean-band-coupling-20261121/lean/ForwardSection.lean",
+      "module": "ForwardSection",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "module_port": true
+    },
+    {
+      "file": "research/lean-band-coupling-20261121/lean/SectionDynamics.lean",
+      "module": "SectionDynamics",
+      "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+      "module_port": true
+    },
+    {
+      "file": "research/lean-band-coupling-20261121/lean/OffsetDescent.lean",
+      "module": "OffsetDescent",
+      "sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+      "module_port": false
+    }
+  ],
+  "module_port_sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785",
+  "checkpoint1_head": "3a2341f4b909cb83f6c2a0eabe946d3d96fc6148"
 }

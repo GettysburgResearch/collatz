@@ -461,3 +461,42 @@ The exact route is now constructive up to one explicitly displayed
 transport estimate. The general finite theorem, resolvent, section seed,
 fiber formulas, and survivor extraction are proved. The critical
 return-specific estimate and therefore full Collatz remain open.
+
+## 8. Formalization boundary
+
+`FiniteResolvent.lean` kernel-checks the quadratic coefficient ratio, the
+exact finite geometric sum and its constant-eight bound, the finite
+convolution bound, the source-atom extraction and its denominator-cleared
+form, and the finite terminating-shift fiber obstruction. It compiled with
+Lean 4.34.1 and pinned Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`,
+with warnings treated as errors.
+
+`ExplicitSeed.lean` additionally supplies a fully explicit alternative
+spatial seed, `a(n)=1/((n+1)(n+2))`, with every atom positive and every
+finite source sum at most one. Its exact identity is
+
+\[
+               \sum_{n<N}a(n)=1-\frac1{N+1}.
+\]
+
+It also kernel-checks the unconditional finite transport baseline
+`c_0 b_k <= G_k D_k(b)` for every nonnegative incoming history. Thus the
+remaining target need not contain an unconstructed seed: this explicit
+one can be used, with `S=1`. Whether its actual Collatz fibers admit the
+required arbitrarily small relative quadratic budget remains open. A fixed
+constant-factor gain alone would not suffice, because the positive source
+atoms tend to zero.
+
+`ActualSurvivorMass.lean` now constructs the actual incoming fibers as
+suprema of finite sums of the original marked source atoms. It proves that
+one fixed surviving atom remains in its true return fiber, without any
+replacement distribution. `ExplicitClosure.lean` instantiates the seed
+above, proves the unconditional quadratic baseline on those fibers, and
+proves full Collatz under the displayed arbitrarily-small-factor uniform
+fiber estimate. The estimate itself remains an explicit hypothesis.
+
+The full countable resolvent, the logarithmic coefficient construction,
+and the operator interpretation are written proofs in this note. They are
+not hidden Lean axioms. In particular the finite module does not assert
+that the Collatz transport improvement holds, nor does it infer a global
+ordinary theorem from a finite computation.

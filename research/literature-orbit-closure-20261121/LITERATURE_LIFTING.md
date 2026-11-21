@@ -1,9 +1,11 @@
 # From wild multipliers to ordinary orbit certificates
 
 **Status.** The elementary statements below are **PROPOSED, with the stated
-Lean arithmetic and finite-certificate checks**. The Collatz conjecture remains
+Lean proofs and finite-certificate checks**. The Collatz conjecture remains
 open. The multiplier-pullback arithmetic and the new eight-step diamond were
-checked by Lean 4.34.1, using `Std` only and no additional axioms. The guided
+checked by Lean 4.34.1, using `Std` only and no additional axioms. Two further
+modules import the pinned PR184 `OffsetDescent` proof, check all 446 certificate
+rows in the kernel, and prove their infinite-progression soundness. The guided
 certificate covers 446 infinite progressions within one classical search
 branch; its other 130 progressions are explicitly unresolved.
 
@@ -260,7 +262,22 @@ and equality of their slopes,
 These conditions prove (8), while the two strict inequalities prove descent
 for all `t≥0`. There are no omitted small exceptions in these 446 rows.
 
-`verify_al27.py` independently reconstructs the literal words and affine
+`RayCertificates.lean` proves the generic all-parameter theorem from an exact
+decidable row predicate. `AL27Certificates.lean` checks all 446 literal rows
+with kernel `decide`, in 28 small chunks, and combines their proofs. It also
+proves that the 446 source residues are distinct and all lie in the specified
+branch. `certified_ray` supplies positivity, strict source reduction and the
+physical common endpoint for every nonnegative parameter. Its axiom audit is
+exactly `[propext, Quot.sound]`; no `native_decide`, `sorryAx`, or extra axiom
+is involved. `certified_induction` packages the corresponding ordinary
+strong-induction step, keeping the all-smaller-sources hypothesis explicit.
+
+`generate_al27_lean.py --check` authenticates the exact Lean data against the
+JSON; `--output` specifies the Lean file when scripts and sources are in
+separate directories. The kernel checks the actual `orbit` and `oddCount`
+functions, so correctness does not depend on trusting that generator.
+
+`verify_al27.py` separately reconstructs the literal words and affine
 numerators, without importing the search implementation. It also checks the
 entire partition, preserves all `130` unresolved progressions, and replays
 both rays at `t=0,1`. This is separately implemented checking by the same

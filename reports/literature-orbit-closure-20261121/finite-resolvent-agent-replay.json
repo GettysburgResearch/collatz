@@ -1,0 +1,36 @@
+[
+  {
+    "module": "FiniteResolvent",
+    "command": [
+      "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "-o",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/FiniteResolvent.olean",
+      "-i",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/FiniteResolvent.ilean",
+      "FiniteResolvent.lean"
+    ],
+    "seconds": 101.366,
+    "exit_code": 0,
+    "stdout": "",
+    "source_sha256": "8a358cbcf24c5278932db82a81dfdc9c8ee9de4fe8118dba1cd1ced61dc78805"
+  },
+  {
+    "module": "FiniteResolventAudit",
+    "command": [
+      "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "-o",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/FiniteResolventAudit.olean",
+      "-i",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/FiniteResolventAudit.ilean",
+      "FiniteResolventAudit.lean"
+    ],
+    "seconds": 25.194,
+    "exit_code": 0,
+    "stdout": "'CollatzFiniteResolvent.coefficient_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.geometric_growth_sum_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.geometric_growth_sum_le_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.budget_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.survivor_atom_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.survivor_atom_bound_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.excludes_transport_of_strict_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.norm_floor_of_comparable_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.coefficient_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.coefficient_shift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.terminating_shift_fiber_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "source_sha256": "aa7cd01fa6fdbfc9c890f360e057ea5f8d1181e982ec768d9d8a5d4045c8c62f"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ],
+  "modules": [
+    {
+      "module": "HarmonicTransport",
+      "source_sha256": "5173ef8676b4b8de03ccae9f1e99bb3db04e52d146ba721034b325f6fd4bc1f7",
+      "elapsed_seconds": 68.21,
+      "exit_code": 0,
+      "scope": "Actual strict development compilation; final checkout replay is separate.",
+      "compiler_log_path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/HarmonicTransport.log",
+      "compiler_log_sha256": null
+    },
+    {
+      "module": "ClockAbsorption",
+      "source_sha256": "0964d53fa66992e775460577df8984ae9d053db3b67b097184efcaceff5b8037",
+      "elapsed_seconds": 30.99,
+      "exit_code": 0,
+      "scope": "Actual strict development compilation; final checkout replay is separate.",
+      "compiler_log_path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/ClockAbsorption.log",
+      "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "BandAbsorption",
+      "source_sha256": "df279eb937e14f56277c0ac73e8861ceabfe45d8e126ee2669962f00283dbb43",
+      "elapsed_seconds": 33.97,
+      "exit_code": 0,
+      "scope": "Actual strict development compilation; final checkout replay is separate.",
+      "compiler_log_path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/BandAbsorption.log",
+      "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ActualSurvivorMass",
+      "source_sha256": "72d0015fc8ba05adaa5291f1f5f19a3766c688f985e35016e4403e9820065b98",
+      "elapsed_seconds": 12.62,
+      "exit_code": 0,
+      "scope": "Actual strict development compilation; final checkout replay is separate.",
+      "compiler_log_path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/ActualSurvivorMass.log",
+      "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "ExplicitClosure",
+      "source_sha256": "a5aba915c11ae95e7640970ec1f924a708ec873fd57b69ce9444cad67ac4dbed",
+      "elapsed_seconds": 20.71,
+      "exit_code": 0,
+      "scope": "Actual strict development compilation; final checkout replay is separate.",
+      "compiler_log_path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/ExplicitClosure.log",
+      "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
