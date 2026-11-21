@@ -1,4 +1,4 @@
-import Mathlib.Tactic.Ring
+import Init
 
 /-!
 Exact arithmetic for adaptive endpoint steering.
@@ -35,18 +35,18 @@ theorem orbit_shift (k n t : Nat) :
   induction k generalizing n t with
   | zero => simp [orbit, odds]
   | succ k ih =>
-    rw [show 2^(k+1)*t+n = 2*(2^k*t)+n by ring]
-    simp only [orbit, odds, step_shift, pow_add]
-    rw [show 3^(n%2)*(2^k*t)+step n = 2^k*(3^(n%2)*t)+step n by ring, ih]
-    ring
+    rw [show 2^(k+1)*t+n = 2*(2^k*t)+n by grind]
+    simp only [orbit, odds, step_shift, Nat.pow_add]
+    rw [show 3^(n%2)*(2^k*t)+step n = 2^k*(3^(n%2)*t)+step n by grind, ih]
+    grind [Nat.pow_add]
 
 theorem odds_shift (k n t : Nat) : odds k (2^k*t+n) = odds k n := by
   induction k generalizing n t with
   | zero => rfl
   | succ k ih =>
-    rw [show 2^(k+1)*t+n = 2*(2^k*t)+n by ring]
+    rw [show 2^(k+1)*t+n = 2*(2^k*t)+n by grind]
     simp only [odds, step_shift]
-    rw [show 3^(n%2)*(2^k*t)+step n = 2^k*(3^(n%2)*t)+step n by ring, ih]
+    rw [show 3^(n%2)*(2^k*t)+step n = 2^k*(3^(n%2)*t)+step n by grind, ih]
     congr 1
     omega
 
@@ -54,8 +54,8 @@ theorem odds_shift (k n t : Nat) : odds k (2^k*t+n) = odds k n := by
 The endpoint stride has exactly the old ternary exponent plus the new odd count. -/
 theorem ternary_precision (p k n t : Nat) :
     orbit k (n+2^k*3^p*t) = orbit k n + 3^(p+odds k n)*t := by
-  rw [show n+2^k*3^p*t = 2^k*(3^p*t)+n by ring, orbit_shift]
-  ring
+  rw [show n+2^k*3^p*t = 2^k*(3^p*t)+n by grind, orbit_shift]
+  grind [Nat.pow_add]
 
 /-- A target lies on this legal endpoint ray exactly when it is above its
 base endpoint and satisfies the full remaining ternary congruence. -/

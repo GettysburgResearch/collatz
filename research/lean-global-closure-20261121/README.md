@@ -10,6 +10,46 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Compiled results
 
+### Whole-repository continuation
+
+The [wider attack](WIDE_CLOSURE_ATTEMPT.md) compares the current complete-witness,
+ordinary-merger, and analytic routes after inventorying all 143 PRs. It adds
+an exact normalized-quotient theorem and complete inverse continuation with
+ternary carries; an iff characterizing the full canonical reserved-merger
+menu; and an asynchronous complete-certificate compiler accepting arbitrary
+actual parent-target phases. The arithmetic foundation was ported to core
+Lean without changing its statements.
+
+[MaximalReserve.lean](CollatzGlobalClosure/MaximalReserve.lean) further proves
+that a single, uniquely selected maximal ternary reserve per source clock
+retains every merger within the two source horizons. Its canonical leading
+quotient is one or two; no scan over smaller reserves is needed.
+
+The new [terminal reset](CollatzGlobalClosure/TerminalReset.lean) covers every
+power-of-two source as a recursive case of the common multiset induction,
+using the fixed certificate of three and preserving any supplied terminal
+tail. It removes that infinite terminal family from the dispatch obligations;
+the remaining nonterminal cases still need a complete selector.
+
+The analytic continuation bounds the entire ordinary pressure tail beyond
+its first positive period by `½(3/5)^q`, using the pinned PR144 population
+identities. Its rational finite weighted kernel is separately formalized in
+core Lean. The infinite trace application is a written deduction, and the
+required upper bound on the moving core remains open.
+
+All new formal sources can be compiled without Mathlib:
+
+```sh
+python -B build_wide.py --lean /path/to/lean-4.34.1/bin/lean \
+  --output /fresh/wide-build --receipt /fresh/wide-build.json
+```
+
+The detailed [inverse](INVERSE_CARRY_CONTINUATION.md),
+[certificate](ASYNC_CLOSURE_ATTEMPT.md), and
+[analytic](FULL_SOURCE_TRACE_ATTEMPT.md) notes retain exact input commits,
+proofs, failed completions, and the first unproved global step. These results
+do not supply a full Collatz proof.
+
 ### The new forced dyadic section
 
 The [band attack](BAND_ATTACK.md) builds on PR173 at

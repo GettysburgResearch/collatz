@@ -18,3 +18,11 @@ name = "CollatzGlobalClosure"
 name = "CollatzBandSource"
 srcDir = "vendor/pr173"
 roots = ["ShellCover", "ForwardSection", "SectionDynamics", "RisingReturns"]
+
+[[lean_lib]]
+name = "CollatzWitnessSource"
+srcDir = "vendor/pr177"
+roots = ["Collatz.ReverseBasin146", "Collatz.Closure", "Collatz.Witness", "Collatz.DirectedInduction", "Collatz.WitnessEnergy", "Collatz.SourceWitness", "Collatz.GapMultiset", "Collatz.UnboundedGapReset"]
+
+[[lean_lib]]
+name = "CollatzGlobalClosureCore"

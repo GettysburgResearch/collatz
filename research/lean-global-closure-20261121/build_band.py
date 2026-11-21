@@ -56,6 +56,12 @@ def main() -> int:
     for row in upstream["files"]:
         if digest(project / row["local_path"]) != row["sha256"]:
             parser.error(f"frozen upstream source changed: {row['local_path']}")
+    witness_upstream = None
+    if args.full:
+        witness_upstream = json.loads((project / "vendor/pr177/SOURCE.json").read_text())
+        for row in witness_upstream["files"]:
+            if digest(project / row["local_path"]) != row["sha256"]:
+                parser.error(f"frozen witness source changed: {row['local_path']}")
 
     modules = [("CollatzGlobalClosure.EndpointSteering", "CollatzGlobalClosure/EndpointSteering.lean")]
     if args.full:
@@ -75,6 +81,14 @@ def main() -> int:
         ]
     ]
     if args.full:
+        modules += [(f"Collatz.{name}", f"vendor/pr177/Collatz/{name}.lean") for name in [
+            "ReverseBasin146", "Closure", "Witness", "DirectedInduction",
+            "WitnessEnergy", "SourceWitness", "GapMultiset", "UnboundedGapReset"
+        ]]
+        modules += [(f"CollatzGlobalClosure.{name}", f"CollatzGlobalClosure/{name}.lean")
+                    for name in ["InverseBudget", "ReservedMergerCompleteness", "MaximalReserve",
+                                 "AsynchronousReset", "TerminalReset", "PeriodicTraceTail"]]
+        modules.append(("CollatzGlobalClosureCore", "CollatzGlobalClosureCore.lean"))
         modules.append(("CollatzGlobalClosure", "CollatzGlobalClosure.lean"))
 
     paths = [output, mathlib / ".lake/build/lib/lean"]
@@ -89,6 +103,7 @@ def main() -> int:
         "lean_version": version,
         "mathlib_head": mathlib_head,
         "upstream": upstream,
+        "witness_upstream": witness_upstream,
         "fresh_project_output": str(output),
         "LEAN_PATH": env["LEAN_PATH"],
         "commands": [],
