@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 42.892,
+  "source_sha256": "b4655e21028613d0b99e87891b6e6aae30fd30c6bf87760ad833db0e69819f72",
+  "log": "BandMass-local-output.txt",
+  "module": "research/band-completion-20261121/lean/BandMass.lean",
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "flags": [
+    "-j1",
+    "-DwarningAsError=true"
+  ]
+}

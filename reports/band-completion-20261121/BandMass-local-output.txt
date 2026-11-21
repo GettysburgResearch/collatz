@@ -1,0 +1,6 @@
+'CollatzShell.ForwardSection.BandMass.entrance_log_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.BandMass.sum_entrance_packets' depends on axioms: [propext, Classical.choice, Quot.sound]
