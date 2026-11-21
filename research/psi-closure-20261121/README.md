@@ -86,6 +86,7 @@ integrating session with warnings as errors; only standard axioms appear.
 | Route | Outcome | First statement not proved |
 |---|---|---|
 | `routes/pow3` | PARTIAL. `Pow3Families.lean`: 50 definitions and theorems. Linearity of `T^n` in the added multiple of `2^n` for any base point; `∀ i, 3^i ∈ C` ⟺ `x + 2^n ∈ C` whenever `T^n(x) = 1`; powers of three and Mersenne numbers in base-9 repunit coordinates; `3^N ~ 3^(N−1)` on explicit exponent families of unbounded depth | `3m − 1 ∈ C ⟹ m ∈ C` at `m = 3x+1`, `x = (3w+1)/8` odd, `w = 3^(s−1) q`, `3^N = 1 + 4^s q` — the reverse closure again, at explicit points |
+| `routes/cover` | OBSTRUCTION PROVED. `CoverObstruction.lean` (no imports, axioms `propext`, `Quot.sound`): `unbounded_ordinary_descent_radius` — for every `L` and `N` there is `n > N` from which no walk of at most `L` forward or backward `T`-steps ends below `n`. Witnesses: `2^L ∣ n+1` and `3^L ∣ n`. So no finite family of purely ordinary descent certificates covers all integers; a finite cover needs some non-ordinary rule, such as PR #146's conditional tripling. Written (not Lean): a description of the obstruction set in `Z_2 × Z_3`, with `(−1, 0)` and `(−5, 0)` as obstruction points | whether `(−17, 0)` is an obstruction point; which non-stopping 2-adic points have no purely 2-adic descending path |
 | `routes/literature` | nothing external closes `OpenLemma` or its first layer (search-summary evidence only) | — |
 
 ## Concurrent work (noted 21 Nov 2026, not rebuilt here)

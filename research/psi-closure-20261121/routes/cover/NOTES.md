@@ -135,7 +135,7 @@ integers; verdicts for `y0 <= 45` cross-checked against exhaustive search to dep
 
 First obstruction values: 0, 1, 3, 6, 7, 9, 12, 15, 16, 18, 19, 21, 24, 25, 27, 28, 33, 36, 37,
 39, 42, 43, 45, ... First multiples of 3 that are not: 30, 81, 108, 111, 144, 192, 273, 333, 444.
-Longest shortest-found certificate: 162 moves.
+The longest certificate kept by the scan has 162 moves.
 
 ## 6. Theorem C: `(-5, 0)` has no descending ordinary path
 
@@ -173,7 +173,8 @@ for (H2) fails (off-cycle basin values 49, 67 are below the cycle value 136).
   word `DDSSDDSDDDSSDSDSSSSSSSSSSSS`, result `w = (3n+7)/4` for every `n` in one class mod
   `2^29`, total length 56, purely 2-adic (18 odd backward steps `<=` 19 forward). Found by
   exhaustive search over all 1 619 191 admissible `00`-free words of length `<= 30` with
-  backward depth `<= 34`; exactly 3 of them carry such a descent.
+  backward depth `<= 34`; for exactly 3 of them the side tree at the end of the word contains
+  a descent (longer words inherit it from their prefix).
 
 So the 2-adic projection of `O` is a proper subset of `S_∞`, and mixed forward/backward
 certificates cover whole 2-adic cylinders that forward stopping does not.
@@ -241,8 +242,16 @@ bound). Behind it: which non-stopping `x0` have no purely 2-adic descending path
 
 ## 12. Files and replay
 
-All in `research/psi-closure-20261121/routes/cover/`. Nothing else in the repository was
-changed; nothing was committed.
+All in `research/psi-closure-20261121/routes/cover/`. This agent edited no existing file and
+made no commit. While it worked, the coordinating session swept the then-existing files of this
+directory into wip commits (`a5e384e`, `e681fbf`, `ad37dcb`, each labelled unverified). At the
+last check the branch was `claude/collatz-prs-discussion-qq2bvk` at
+`ad37dcbd99d1701a7afc5c9be1329257d0ee785f`, the tracked copies were identical to the working
+files, and `NOTES.md` was untracked.
+
+`python3 -X utf8 -B tools/validate.py` was started once and refused to run ("tracked files or
+index are dirty": a tracked file of the `layers` route, not of this route, was modified in the
+working tree). So there is no repository validation result for this state.
 
 | File | Tier | Command |
 |---|---|---|
