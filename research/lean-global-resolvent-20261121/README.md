@@ -116,6 +116,39 @@ is a self-contained arithmetic handoff without orbit terminology. The
 restricted same-family folding obstruction is recorded separately in
 [MERSENNE_FOLD_INVARIANT.md](MERSENNE_FOLD_INVARIANT.md), as a written argument.
 
+## Checkpoint 4: a composed descent for every supplied certificate
+
+[BROAD_RESET_AND_COVERAGE.md](BROAD_RESET_AND_COVERAGE.md) gives a second
+unbounded reset for arbitrary positive `P` divisible by four. It requires
+only a normalized unit condition modulo three after a sufficiently large
+ternary valuation, with its exact integer equations retained as Lean guards.
+
+The new measure records the odd source states and an even initial source.
+It decreases under whole odd-to-odd prefix consumption, initial halvings,
+and the broader reset even when an intermediate even state exceeds the old
+initial value. In the single compiled Mathlib theorem
+`CollatzOddResetPort.complete_failed_reset`, **every actual supplied parent
+certificate** gives an actual child certificate with a strictly smaller
+well-founded measure, while the failed target comparison is preserved.
+
+[OddResetCertificate.lean](mathlib/OddResetCertificate.lean) proves the
+iteration-interface equality and rechecks the exact core proof bodies before
+composing them with the multiset argument. No bridging axiom is introduced.
+Its companion files are [OddReset.lean](lean/Collatz/OddReset.lean) and
+[OddCertificateMeasure.lean](mathlib/OddCertificateMeasure.lean).
+
+The complementary unit class, low-valuation parents, and remaining relation
+states still lack an all-state selector. A tested different-root exit was
+found to prepend an ancestor of the old source, which cannot simultaneously
+be a strict replacement and a strict prefix-consumption move. The precise
+paths and scope of this obstruction are recorded in the same note.
+
+[GLOBAL_COVERAGE_BOUNDARY.md](GLOBAL_COVERAGE_BOUNDARY.md) records the final
+closing attempt: enlarging the current entrance dictionary cannot handle
+the lowest valuation class, and the tested shifted exit is an insertion of
+the entire old certificate. A possible marker refinement is preserved there
+as a written observation, with no additional coverage claim.
+
 ## Continuing attacks
 
 The remaining work is to supply complete rules for the shared order, including

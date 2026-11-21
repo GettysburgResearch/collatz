@@ -17,3 +17,8 @@ import Collatz
 #print axioms CollatzUnboundedReset.source_prefix_below
 #print axioms CollatzUnboundedReset.supplied_certificate_splice
 #print axioms CollatzUnboundedReset.failed_comparison_reset
+#print axioms CollatzOddReset.source_path
+#print axioms CollatzOddReset.target_path
+#print axioms CollatzOddReset.source_odd_prefix_below
+#print axioms CollatzOddReset.supplied_certificate_splice
+#print axioms CollatzOddReset.failed_comparison_reset

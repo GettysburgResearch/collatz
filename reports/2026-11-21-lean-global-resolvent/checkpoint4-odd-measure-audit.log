@@ -1,0 +1,5 @@
+'CollatzOddCertificate.consume_odd_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzOddCertificate.consume_initial_halving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzOddCertificate.complete_splice_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzOddCertificate.splice_one_halving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzOddCertificate.measure_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]

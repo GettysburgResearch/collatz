@@ -46,3 +46,22 @@ script before this checkpoint. It confirmed the specified fixed-loss
 counterexample using exact integers and fractions. Its analytic all-source
 tail is justified in the note; this finite replay is not a Lean proof of a
 global survival estimate.
+
+## Checkpoint 4
+
+[checkpoint4-lean.json](checkpoint4-lean.json) pins the broader core reset,
+the odd-state certificate measure, and their composed Mathlib theorem.
+The core build and audit, compilation of the odd-state module to its actual
+importable output, and compilation of the composed reset all passed with
+warnings treated as errors in the audit commands. The final two composed
+theorems depend only on `propext`, `Classical.choice`, and `Quot.sound`.
+
+The generator verifies the frozen core-source hashes. Lean then rechecks the
+extracted proof bodies and the exact equality of the two iteration
+conventions. The theorem is therefore a single checked statement about
+every complete supplied certificate under the stated arithmetic guard;
+there is no assumed interface between the two proof projects.
+
+The normalized-unit selector and the final different-exit obstruction are
+written arguments, explicitly distinguished from the compiled module set.
+No all-state selector or primitive-moment decay proof was obtained.

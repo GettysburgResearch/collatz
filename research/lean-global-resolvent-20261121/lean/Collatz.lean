@@ -5,3 +5,4 @@ import Collatz.LeastForwardFailure
 import Collatz.TerminalFive
 import Collatz.MersenneRecursion
 import Collatz.UnboundedReset
+import Collatz.OddReset
