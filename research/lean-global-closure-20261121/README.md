@@ -24,7 +24,7 @@ even after a finite exception range. A separate cofinal construction has
 distinct marked endpoints with identical binary exponent and trailing-one
 depth, while the entire intervening path stays above the cutoff. The
 [return-path composition](CollatzGlobalClosure/SectionFeatureRanks.lean)
-therefore excludes **every function of those two features** as a strict
+therefore excludes **every function of binary exponent and trailing-one depth** as a strict
 every-return rank, without a monotonicity assumption. Every fixed finite
 odd-source parity prefix also occurs cofinally inside the marked set.
 
@@ -33,6 +33,10 @@ The [reset proof](SECTION_RESET_RETURNS.md) and
 remaining obligations. Ordinary descent below a mark must not be substituted
 for descent among marked returns: the next marked visit can overshoot.
 The source's universal variable-return descent criterion remains open.
+The follow-on [segment-minimum attempt](SEGMENT_MINIMUM_ATTEMPT.md) records
+the remaining ordinary-height and certificate-window gaps. The
+[published-checkout execution record](../../reports/lean-global-closure-20261121/band/VALIDATION.md)
+records all 17 fresh compilation units and the complete repository gate.
 
 ### Exact cost of preserving a parity prefix
 
@@ -166,7 +170,7 @@ The final [clean-checkout validation record](../../reports/lean-global-closure-2
 records a fresh build of every project proof module at the published
 scientific commit and the separate five-command repository gate.
 
-## Latest source interfaces considered
+## Earlier source interfaces considered
 
 These are exact investigation pins, not unproved premises imported into the
 Lean kernel. Older work is not re-audited by this checkpoint.

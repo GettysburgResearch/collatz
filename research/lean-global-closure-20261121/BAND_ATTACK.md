@@ -245,6 +245,12 @@ it does not exclude a rank on richer state or eventual descent after a
 variable number of complete returns. That latter universal assertion is the
 remaining source criterion, and it is still open.
 
+The final [segment-minimum attempt](SEGMENT_MINIMUM_ATTEMPT.md) re-roots the
+phase estimate at an actual ordinary minimum, follows the entire supplied
+offset certificate, and examines the published inverse mesh cost. It records
+the exact missing height comparison and the scope of the written cost bound;
+no additional closing theorem is claimed there.
+
 ## Replay and evidence
 
 The package pins Lean 4.34.1 and mathlib
@@ -259,3 +265,6 @@ No search output, observed finite sample, custom axiom, `sorry`, `native_decide`
 or unsafe evaluator supplies a mathematical premise. The preserved source
 pin identifies exactly which upstream theorem this continuation builds on.
 No scholarly novelty priority is claimed without a literature comparison.
+The [actual published-checkout validation](../../reports/lean-global-closure-20261121/band/VALIDATION.md)
+records the successful fresh build of all 17 compilation units, its 96 axiom
+reports, and the separate complete-checkout repository gate.

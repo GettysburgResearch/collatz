@@ -1,5 +1,9 @@
 # Actual clean-checkout validation
 
+The later forced-section continuation has its own
+[published-checkout execution record](band/VALIDATION.md). The material below
+preserves the earlier four-module checkpoint and its exact execution boundary.
+
 The scientific checkpoint fetched directly from GitHub and checked was:
 
 - Commit: `1d207aebe504e66ecdebd4ffcaaf57f10595d0ec`.
