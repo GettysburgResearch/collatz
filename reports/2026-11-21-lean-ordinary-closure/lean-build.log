@@ -1,0 +1,27 @@
+ℹ [7/13] Replayed Collatz.SelectedWordInjectivity
+info: Collatz/SelectedWordInjectivity.lean:130:0: 'CollatzSelectedWords.word_determined_by_total_and_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/SelectedWordInjectivity.lean:131:0: 'CollatzSelectedWords.linear_block_constants' does not depend on any axioms
+ℹ [9/13] Replayed Collatz.AffineJointDescent
+info: Collatz/AffineJointDescent.lean:343:0: 'CollatzAffineJoint.collatz_of_complete_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/AffineJointDescent.lean:344:0: 'CollatzAffineJoint.collatz_of_complete_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/AffineJointDescent.lean:345:0: 'CollatzAffineJoint.psi_even_of_triple_and_larger_psi' depends on axioms: [propext, Quot.sound]
+info: Collatz/AffineJointDescent.lean:346:0: 'CollatzAffineJoint.odd_triple_iff_psi_successor' depends on axioms: [propext, Quot.sound]
+info: Collatz/AffineJointDescent.lean:347:0: 'CollatzAffineJoint.valuation_rank_even_step' depends on axioms: [propext, Quot.sound]
+info: Collatz/AffineJointDescent.lean:348:0: 'CollatzAffineJoint.reciprocal_even_psi_family' depends on axioms: [propext, Quot.sound]
+info: Collatz/AffineJointDescent.lean:349:0: 'CollatzAffineJoint.no_rank_for_both_reciprocal_arcs' depends on axioms: [propext, Quot.sound]
+ℹ [10/13] Replayed Collatz.PurePsiCertificates
+info: Collatz/PurePsiCertificates.lean:1538:0: 'CollatzAffineJoint.PurePsiCheckpoint.rules_valid' depends on axioms: [propext]
+info: Collatz/PurePsiCertificates.lean:1546:0: 'CollatzAffineJoint.PurePsiCheckpoint.residue_data_matches' does not depend on any axioms
+info: Collatz/PurePsiCertificates.lean:1547:0: 'CollatzAffineJoint.PurePsiCheckpoint.unresolved_even' does not depend on any axioms
+info: Collatz/PurePsiCertificates.lean:1557:0: 'CollatzAffineJoint.PurePsiCheckpoint.residue_accounting' does not depend on any axioms
+info: Collatz/PurePsiCertificates.lean:1558:0: 'CollatzAffineJoint.PurePsiCheckpoint.residue_covered' depends on axioms: [propext, Quot.sound]
+info: Collatz/PurePsiCertificates.lean:1559:0: 'CollatzAffineJoint.PurePsiCheckpoint.checked_row_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [11/13] Built Collatz.PsiParity (789ms)
+info: Collatz/PsiParity.lean:159:0: 'CollatzPsiParity.ordinary_even_bridge' depends on axioms: [propext, Quot.sound]
+info: Collatz/PsiParity.lean:160:0: 'CollatzPsiParity.psi_even_of_half_and_odd' depends on axioms: [propext, Quot.sound]
+info: Collatz/PsiParity.lean:161:0: 'CollatzPsiParity.collatz_iff_odd_psi' depends on axioms: [propext, Quot.sound]
+info: Collatz/PsiParity.lean:162:0: 'CollatzPsiParity.even_macro_rank_decreases' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/PsiParity.lean:163:0: 'CollatzPsiParity.parity_rank_even_queries' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/PsiParity.lean:164:0: 'CollatzPsiParity.collatz_of_odd_rank_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [12/13] Built Collatz (317ms)
+Build completed successfully (13 jobs).

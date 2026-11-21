@@ -1,0 +1,33 @@
+{
+  "status": "Exact identity between proof obligations; not a Collatz proof",
+  "parameter": "t is any nonnegative integer",
+  "obligation": "Cpsi(n) means Basin(n) iff Basin(2*n-1)",
+  "forms": {
+    "n": [6, 4],
+    "u": [8, 5]
+  },
+  "identities": [
+    "u = (4*n-1)/3",
+    "n = (3*u+1)/4"
+  ],
+  "even_valuation_row": {
+    "root": [6, 4],
+    "left": ["D", "I", "+psi"],
+    "right": ["D", "I"],
+    "endpoint": [16, 9],
+    "query_source": [8, 5],
+    "rank_justification": "u is odd, n is even, so mu(u)=u<2*n<=mu(n) for mu(x)=x*2^v2(x)"
+  },
+  "odd_linear_row": {
+    "root": [8, 5],
+    "left": ["O", "E"],
+    "right": ["O", "E", "-psi"],
+    "endpoint": [6, 4],
+    "query_source": [6, 4],
+    "rank_justification": "n<u"
+  },
+  "cycle": "Cpsi(n) requires Cpsi(u), and Cpsi(u) requires Cpsi(n)",
+  "slope_product": "(4/3)*(3/4)=1",
+  "offset_after_composition": 0,
+  "consequence": "The two separately decreasing rank covers cannot be combined without one common well-founded order or a new exit from this cycle."
+}

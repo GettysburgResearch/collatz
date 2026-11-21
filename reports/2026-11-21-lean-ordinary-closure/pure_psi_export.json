@@ -1,0 +1,18 @@
+{
+  "status": "EXACT EXPORT; LEAN COMPILATION REQUIRED; INCOMPLETE GLOBAL COVER",
+  "source_file": "pure-psi.json",
+  "source_sha256": "51d153e2921ab1d2a0085cb227b5037b7180c8bc21c5250c75079736a4aa7873",
+  "generated_sha256": "9080d69cdc61b214fe92748a418e8a053803f2d35abd8e5ad5c1d9f7e76d30db",
+  "successful_rows": 1265,
+  "unresolved_rows": 175,
+  "proof_chunk_size": 16,
+  "active_kinds": [
+    "psi"
+  ],
+  "unresolved_mod4": {
+    "0": 125,
+    "1": 0,
+    "2": 50,
+    "3": 0
+  }
+}
