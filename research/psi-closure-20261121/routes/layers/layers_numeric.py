@@ -14,8 +14,10 @@ Part 4  hypothesis H at rank 1: merge classes of the two-parameter families agai
         one-parameter exponential families (first orbit point below 2^40 as class label).
 Part 5  rank 2 (three parameters): same test against one-parameter families and rank-1 families.
 """
+import math
 import sys
 import time
+from fractions import Fraction
 from collections import defaultdict
 
 T0 = time.time()
@@ -97,6 +99,45 @@ def first_hit(n, d):
         if n < TH:
             return None
         n = n >> 1 if not n & 1 else (3 * n + 1) >> 1
+        s += 1
+
+
+def orbit_info(n):
+    """point -> (steps, odd steps before it, least odd point before it)."""
+    d = {}
+    s = 0
+    o = 0
+    mu = None
+    while True:
+        d[n] = (s, o, mu)
+        if n < TH:
+            return d
+        if n & 1:
+            o += 1
+            if mu is None or n < mu:
+                mu = n
+            n = (3 * n + 1) >> 1
+        else:
+            n >>= 1
+        s += 1
+
+
+def first_hit_info(n, d):
+    s = 0
+    o = 0
+    mu = None
+    while True:
+        if n in d:
+            return s, o, mu, d[n], n
+        if n < TH:
+            return None
+        if n & 1:
+            o += 1
+            if mu is None or n < mu:
+                mu = n
+            n = (3 * n + 1) >> 1
+        else:
+            n >>= 1
         s += 1
 
 
@@ -370,6 +411,8 @@ def part4(BB=60, JJ=80, K3MAX=230, K2MAX=420):
         stat = {bn: [] for bn in bins}
         nomerge = {bn: 0 for bn in bins}
         examples = []
+        lem_n = lem_viol = lem_sync = lem_3fam = 0
+        lem_tight = 0.0
         for m in gen:
             beta = m[5].bit_length()
             bn = next(x for x in bins if x[0] < beta <= x[1])
@@ -377,18 +420,36 @@ def part4(BB=60, JJ=80, K3MAX=230, K2MAX=420):
             best = None
             land = 3 ** m[6] - m[5]
             if ones:
-                d = orbit_dict(land)
+                d = orbit_info(land)
                 for lab, K, v in ones:
-                    h = first_hit(v, d)
-                    if h and (best is None or h[1] < best[3]):
-                        best = (lab, K, h[0], h[1], h[2].bit_length())
+                    h = first_hit_info(v, d)
+                    if h and (best is None or h[3][0] < best[3][3][0]):
+                        best = (lab, K, v, h)
             if best is None:
                 nomerge[bn] += 1
             else:
-                D = land.bit_length() - best[4]
-                stat[bn].append((D, D - beta, best[3]))
+                lab, Kp, v, (sp, op, mup, (sl, ol, mul), pt) = best
+                D = land.bit_length() - pt.bit_length()
+                stat[bn].append((D, D - beta, sl))
                 if len(examples) < 8 and beta > 16:
-                    examples.append((m[1], m[2], m[6], beta, best, D))
+                    examples.append((m[1], m[2], m[6], beta, (lab, Kp, sp, sl, pt.bit_length()), D))
+                # coalescence inequality: |ln(n/n') - (o'-o) ln 3 - (s-s') ln 2| <= max(o/(3 mu), o'/(3 mu'))
+                R = Fraction(land * 3 ** ol * 2 ** sp, v * 3 ** op * 2 ** sl)
+                x = R - 1
+                lam = abs(math.log1p(float(x))) if abs(x) < Fraction(1, 2) else abs(math.log(float(R)))
+                bound = max(ol / (3 * mul) if mul else 0.0, op / (3 * mup) if mup else 0.0)
+                lem_n += 1
+                if bound == 0.0 or lam > bound * (1 + 1e-9):
+                    lem_viol += 1
+                else:
+                    lem_tight = max(lem_tight, lam / bound)
+                if lab.startswith("3^K"):
+                    lem_3fam += 1
+                    if sl == sp and op - ol == m[6] - Kp:
+                        lem_sync += 1
+        log("      coalescence inequality on the %d merges: violations %d, max |Lambda|/bound = %.3f; "
+            "merges with a 3^K'+-c' member: %d, of which same step count and odd-count gap K-K': %d"
+            % (lem_n, lem_viol, lem_tight, lem_3fam, lem_sync))
         log("      generic members: cost of joining a one-parameter member (merge point >= 2^40),")
         log("      by beta = bits(landing constant c); D = bits(landing 3^K-c) - bits(merge point):")
         for bn in bins:

@@ -786,6 +786,93 @@ theorem fwd_two_cone (b e j y k : ℕ) (hy : 3*y + 1 = 4^(j+2))
   rw [← fwd_form k y _ hy]
   exact h
 
+theorem Sit_period (p c : ℕ) (hp : Sit p c = c) : ∀ i : ℕ, Sit (p*i) c = c := by
+  intro i
+  induction i with
+  | zero => simp [Sit]
+  | succ i ih =>
+    have e : p*(i+1) = p*i + p := Nat.mul_succ p i
+    rw [e, Sit_add, ih]
+    exact hp
+
+theorem Sodd_period (p c : ℕ) (hp : Sit p c = c) : ∀ i : ℕ, Sodd (p*i) c = i * Sodd p c := by
+  intro i
+  induction i with
+  | zero => simp [Sodd]
+  | succ i ih =>
+    have e : p*(i+1) = p*i + p := Nat.mul_succ p i
+    rw [e, Sodd_add, ih, Sit_period p c hp i, Nat.add_one_mul]
+
+/-- General cone rule: if the `3x-1` orbit of `3^b + 1` is periodic from time `s` on, with
+period `p`, then the whole `j`-family of that `b` lies in at most `p` one-parameter families
+`3^(K₀ + i·q) - c_d` with `c_d` on the cycle.  No list of cycles is assumed. -/
+theorem fwd_one_cone_cycle (b j s p i d : ℕ)
+    (hper : Sit p (Sit s (3^b+1)) = Sit s (3^b+1)) (ht : 2*(j+2) = s + p*i + d) :
+    Basin (3^b*4^(j+2) - (3^b + 1)) ↔
+      Basin (3^(b + (Sodd s (3^b+1) + i * Sodd p (Sit s (3^b+1)) + Sodd d (Sit s (3^b+1))))
+        - Sit d (Sit s (3^b+1))) := by
+  have h := fwd_one_landing b j
+  rw [ht] at h
+  rw [Sit_add (s + p*i) d, Sit_add s (p*i), Sit_period p _ hper i] at h
+  rw [Sodd_add (s + p*i) d, Sodd_add s (p*i), Sit_add s (p*i), Sit_period p _ hper i,
+    Sodd_period p _ hper i] at h
+  exact h
+
+/-- A concrete instance of the cone rule: for `b = 6` the `3x-1` orbit of `3^6 + 1 = 730`
+reaches 1 in 19 steps, 6 of them odd. -/
+theorem fwd_one_b6 (j : ℕ) (h : 19 ≤ 2*(j+2)) :
+    Basin (3^6*4^(j+2) - (3^6 + 1)) ↔ Basin (3^(6 + 6 + (2*(j+2) - 19)) - 1) := by
+  have hs : Sit 19 (3^6+1) = 1 := by decide
+  have ho : Sodd 19 (3^6+1) = 6 := by decide
+  have hc := fwd_one_cone 6 j 19 hs h
+  rw [ho] at hc
+  exact hc
+
+theorem landing_of_lt (k t c : ℕ) (hc : c < 3^k) : c < 2^t*3^k := by
+  have h1 : 1 ≤ 2^t := Nat.pow_pos (by omega)
+  have h2 : 1*3^k ≤ 2^t*3^k := Nat.mul_le_mul_right _ h1
+  generalize 2^t*3^k = Q at h2 ⊢
+  generalize 3^k = A at hc h2
+  omega
+
+theorem two_pow_double (n : ℕ) : 2^(2*n) = 4^n := Nat.pow_mul 2 2 n
+
+/-- Landing of the first reverse rank-1 family `3^k·4^n - (3^k - 1)`. -/
+theorem rev_one_a_landing (k j : ℕ) :
+    Basin (3^k*4^(j+2) - (3^k - 1)) ↔
+      Basin (3^(k + Sodd (2*(j+2)) (3^k-1)) - Sit (2*(j+2)) (3^k-1)) := by
+  have e : 3^k*4^(j+2) = 2^(2*(j+2))*3^k := by
+    rw [two_pow_double]; exact Nat.mul_comm _ _
+  have hq : 0 < 3^k := Nat.pow_pos (by omega)
+  have h := basin_landing k (2*(j+2)) (3^k-1) (landing_of_lt k _ _ (Nat.sub_lt hq (by omega)))
+  rw [← e] at h
+  exact h
+
+/-- Landing of the second reverse rank-1 family `3^k·2·4^n - (2·3^k - 1)`. -/
+theorem rev_one_b_landing (k j : ℕ) :
+    Basin (3^k*(2*4^(j+2)) - (2*3^k - 1)) ↔
+      Basin (3^(k + Sodd (2*(j+2)+1) (2*3^k-1)) - Sit (2*(j+2)+1) (2*3^k-1)) := by
+  have e0 : 2^(2*(j+2)+1) = 2^(2*(j+2))*2 := Nat.pow_succ _ _
+  have e : 3^k*(2*4^(j+2)) = 2^(2*(j+2)+1)*3^k := by
+    rw [e0, two_pow_double]; grind
+  have hq : 0 < 3^k := Nat.pow_pos (by omega)
+  have h2 : 2*3^k ≤ 2^(2*(j+2)+1)*3^k := Nat.mul_le_mul_right _ (two_le_pow_succ _)
+  have hlt : 2*3^k - 1 < 2^(2*(j+2)+1)*3^k := by
+    generalize 2^(2*(j+2)+1)*3^k = Q at h2 ⊢
+    generalize 3^k = A at hq h2 ⊢
+    omega
+  have h := basin_landing k (2*(j+2)+1) (2*3^k-1) hlt
+  rw [← e] at h
+  exact h
+
+/-- The `k = 0` slice of the second reverse rank-1 family is the odd-index Mersenne numbers.
+(On `j+2 ≡ 5 (mod 6)` this slice is the unbounded family of PR #177.) -/
+theorem rev_one_b_k0 (j : ℕ) : 3^0*(2*4^(j+2)) - (2*3^0 - 1) = 2^(2*(j+2)+1) - 1 := by
+  have e0 : 2^(2*(j+2)+1) = 2^(2*(j+2))*2 := Nat.pow_succ _ _
+  rw [e0, two_pow_double, Nat.pow_zero]
+  generalize 4^(j+2) = X
+  omega
+
 /-! ## 8. Parity fold of the forward families -/
 
 /-- For `x ≡ 3 (mod 4)`: `x - 1` and `3x - 1` are in the same component. -/
@@ -836,6 +923,45 @@ theorem fwd_one_fold (n j : ℕ) :
   rw [fwd_form (2*n) _ _ hu, fwd_form (2*n+1) _ _ hu] at hf
   exact hf
 
+theorem three_pow_even_mod_eight (n : ℕ) : 3^(2*n) % 8 = 1 := by
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+    have e : 3^(2*(n+1)) = 9*3^(2*n) := by
+      have e0 : 2*(n+1) = 2*n+1+1 := by omega
+      rw [e0, Nat.pow_succ, Nat.pow_succ]; omega
+    rw [e]; omega
+
+theorem fold_three_steps (A P : ℕ) (hA : A % 8 = 1) (hP : A ≤ P) :
+    Basin (16*P - (A+1)) ↔ Basin (18*P - (9*A-1)/8) := by
+  have h1 := basin_twice (8*P - (A+1)/2)
+  have e1 : 16*P - (A+1) = 2*(8*P - (A+1)/2) := by omega
+  have h2 := basin_step (8*P - (A+1)/2)
+  have hs2 : shortcut (8*P - (A+1)/2) = 12*P - (3*A+1)/4 := by
+    unfold shortcut; split <;> omega
+  have h3 := basin_step (12*P - (3*A+1)/4)
+  have hs3 : shortcut (12*P - (3*A+1)/4) = 18*P - (9*A-1)/8 := by
+    unfold shortcut; split <;> omega
+  rw [hs2] at h2
+  rw [hs3] at h3
+  rw [e1]
+  exact h1.trans (h2.symm.trans h3.symm)
+
+/-- The folded rank-1 family in canonical form: `F1(2n, j)` (and `F1(2n+1, j)`, by
+`fwd_one_fold`) is in the component of
+`18·9^n·4^j - (9^(n+1) - 1)/8 = 9^(n+1)·2^(2j+1) - (9^(n+1) - 1)/8`. -/
+theorem fwd_one_fold_landing (n j : ℕ) :
+    Basin (3^(2*n)*4^(j+2) - (3^(2*n) + 1)) ↔
+      Basin (18*(3^(2*n)*4^j) - (9*3^(2*n) - 1)/8) := by
+  have hA := three_pow_even_mod_eight n
+  have hp : 1 ≤ 4^j := Nat.pow_pos (by omega)
+  have hP : 3^(2*n)*1 ≤ 3^(2*n)*4^j := Nat.mul_le_mul_left _ hp
+  rw [Nat.mul_one] at hP
+  have e : 3^(2*n)*4^(j+2) = 16*(3^(2*n)*4^j) := by
+    rw [four_pow_two]; exact Nat.mul_left_comm _ _ _
+  rw [e]
+  exact fold_three_steps _ _ hA hP
+
 end CollatzLayers
 
 open CollatzLayers in
@@ -880,3 +1006,15 @@ open CollatzLayers in
 #print axioms basin_iff_exists_rank
 open CollatzLayers in
 #print axioms fwd_family_fold
+open CollatzLayers in
+#print axioms fwd_one_cone_cycle
+open CollatzLayers in
+#print axioms fwd_one_b6
+open CollatzLayers in
+#print axioms rev_one_a_landing
+open CollatzLayers in
+#print axioms rev_one_b_landing
+open CollatzLayers in
+#print axioms rev_one_b_k0
+open CollatzLayers in
+#print axioms fwd_one_fold_landing
