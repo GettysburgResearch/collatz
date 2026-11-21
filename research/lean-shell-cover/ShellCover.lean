@@ -6,6 +6,15 @@ import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Algebra.Order.Archimedean.Basic
 import Mathlib.Data.Rat.Floor
 
+/-!
+# Collatz convergence from finite survivor counts
+
+The main result is `CollatzShell.fixed_window_criterion`. The reverse implication
+uses distinct ordinary predecessors inside a single interval to certify a whole
+dyadic stage. `fixed_test_misses_at_twice_exponent` proves a lower bound for the
+observation time at the very same centers. The all-stage upper bound is open.
+-/
+
 namespace CollatzShell
 
 def step (n : Nat) : Nat := if n % 2 = 0 then n / 2 else (3*n+1)/2
@@ -673,18 +682,215 @@ theorem collatz_iff_dyadic_tests (width depth center : Nat → Nat)
     exact universal_of_units (fun q hu => blocks q q (Nat.lt_two_pow_self.le) hu)
 
 /-- Compute the next power of two above an integer bound for the shell location. -/
-def center (k : Nat) : Nat :=
-  2^((64^k*((grid k).cost*2^(k+1)+4*precision k+2)).log2+1)
+def centerExponent (k : Nat) : Nat :=
+  (64^k*((grid k).cost*2^(k+1)+4*precision k+2)).log2+1
 
-theorem fixed_window_criterion :
-    Universal ↔ ∀ k : Nat, ∃ t : Nat,
-      (survivors (precision k) (center k) (2^k+1) t).card < 2^k := by
-  apply collatz_iff_dyadic_tests precision id center (fun k => by unfold precision; omega) grid
-  intro k
+def center (k : Nat) : Nat := 2^(centerExponent k)
+
+private theorem calibrated_center (k : Nat) :
+    64^k*((grid k).cost*2^(k+1)+4*precision k+2) ≤ 3^k*center k := by
   let a := 64^k*((grid k).cost*2^(k+1)+4*precision k+2)
   have ba : a ≤ 2^(a.log2+1) := Nat.lt_log2_self.le
   have mul : center k ≤ 3^k*center k := by
     simpa using Nat.mul_le_mul_right (center k) (Nat.one_le_pow k 3 (by decide))
   exact ba.trans mul
+
+theorem fixed_window_criterion :
+    Universal ↔ ∀ k : Nat, ∃ t : Nat,
+      (survivors (precision k) (center k) (2^k+1) t).card < 2^k := by
+  exact collatz_iff_dyadic_tests precision id center (fun k => by unfold precision; omega)
+    grid calibrated_center
+
+/-- With a fixed stopping floor of two, an unbounded subsequence of passing shells suffices. -/
+theorem collatz_iff_unbounded_one_hits :
+    Universal ↔ ∀ K : Nat, ∃ k≥K, ∃ t : Nat,
+      (survivors (precision k) (center k) 2 t).card < 2^k := by
+  constructor
+  · intro all K
+    obtain ⟨t,hit⟩ := empty_survivors (h:=precision K) all (by decide : 1<2)
+      (show 0<center K by unfold center; positivity)
+    exact ⟨K,le_rfl,t,by rw [hit,Finset.card_empty]; positivity⟩
+  · intro data
+    apply universal_of_units
+    intro q unit
+    obtain ⟨k,kq,t,budget⟩ := data q
+    have qsmall : q≤2^(k+1) := kq.trans (Nat.lt_two_pow_self.le.trans
+      (Nat.pow_le_pow_right (by decide) (Nat.le_succ k)))
+    have size := (Nat.mul_le_mul_left (64^k) (show (grid k).cost*q+4*precision k+2 ≤
+      (grid k).cost*2^(k+1)+4*precision k+2 from
+      Nat.add_le_add_right (Nat.add_le_add_right (Nat.mul_le_mul_left _ qsmall) _) _)).trans
+        (calibrated_center k)
+    refine recover_floor (by unfold precision; omega) (grid k) unit size budget ?_
+    intro z hz uz
+    have e : z=1 := by omega
+    exact e ▸ ⟨0,rfl⟩
+
+private theorem odd_run (b u : Nat) (hu : 0<u) :
+    orbit b (2^b*u-1)=3^b*u-1 ∧
+    ∀ j≤b, 2^b*u-1≤orbit j (2^b*u-1) := by
+  induction b generalizing u with
+  | zero =>
+    constructor
+    · simp [orbit]
+    · intro j hj
+      have e : j=0 := by omega
+      subst j
+      rfl
+  | succ b ih =>
+    have pos : 0<2^b*u := by positivity
+    have form : step (2^(b+1)*u-1)=2^b*(3*u)-1 := by
+      rw [show 2^(b+1)*u=2*(2^b*u) by ring,show 2^b*(3*u)=3*(2^b*u) by ring]
+      simp [step,show (2*(2^b*u)-1)%2≠0 by omega]; omega
+    obtain ⟨endpt,mono⟩ := ih (3*u) (by omega)
+    constructor
+    · simp only [orbit,form]
+      rw [endpt,pow_succ,Nat.mul_assoc]
+    · intro j hj
+      cases j with
+      | zero => rfl
+      | succ j =>
+        simp only [orbit,form]
+        apply le_trans _ (mono j (by omega))
+        rw [show 2^(b+1)*u=2*(2^b*u) by ring,show 2^b*(3*u)=3*(2^b*u) by ring]; omega
+
+private theorem max_halving (j n : Nat) : n≤2^j*orbit j n := by
+  induction j generalizing n with
+  | zero => simp [orbit]
+  | succ j ih =>
+    have a : n≤2*step n := by unfold step; split <;> omega
+    have b := Nat.mul_le_mul_left 2 (ih (step n))
+    simpa only [orbit,pow_succ,Nat.mul_assoc,Nat.mul_comm,Nat.mul_left_comm] using a.trans b
+
+/-- A positive ordinary progression survives an initial run and any permitted further halvings. -/
+theorem deadline_lower_bound {h s X N b r : Nat} (hp : 0<h) (floor : N≤X)
+    (room : h*(2^b*(2^s+1))≤X)
+    (height : 2^r*N < 3^b*(X/2^b+2)) :
+    2^s ≤ (survivors h X N (b+r)).card := by
+  let P := 2^b
+  let a := X/P+2
+  have hpw : 0<P := by dsimp [P]; positivity
+  let f (i : Fin (2^s)) := P*(a+i.val)-1
+  have lo : X≤P*a-1 := by
+    have q := Nat.div_add_mod X P
+    have w := Nat.mod_lt X hpw
+    dsimp [a]; rw [Nat.mul_add]; omega
+  have cap : P*a ≤ X+2*P := by
+    have q := Nat.div_add_mod X P
+    dsimp [a]; rw [Nat.mul_add]; omega
+  have pos (i : Fin (2^s)) : 0<P*(a+i.val) := by dsimp [a]; positivity
+  have mem (i : Fin (2^s)) : f i ∈ survivors h X N (b+r) := by
+    have pi := pos i
+    have lb : X≤f i := by
+      dsimp [f]; rw [Nat.mul_add]; omega
+    have ub : f i≤X+P*(2^s+1) := by
+      have h₁ := Nat.mul_le_mul_left P (show i.val+1≤2^s from i.isLt)
+      rw [Nat.mul_add,Nat.mul_one] at h₁
+      change P*(a+i.val)-1 ≤ X+P*(2^s+1)
+      rw [Nat.mul_add P a, Nat.mul_add P (2^s), Nat.mul_one]; omega
+    have within : f i ≤ (h+1)*X/h := by
+      apply (Nat.le_div_iff_mul_le hp).mpr
+      have u := Nat.mul_le_mul_left h ub
+      change h*(P*(2^s+1))≤X at room
+      nlinarith only [u,room]
+    refine Finset.mem_filter.mpr ⟨Finset.mem_Icc.mpr ⟨lb,within⟩,?_⟩
+    intro j
+    obtain ⟨endpt,before⟩ := odd_run b (a+i.val) (by dsimp [a]; positivity)
+    by_cases early : j.val≤b
+    · exact (floor.trans lb).trans (before _ early)
+    · obtain ⟨l,eq⟩ := Nat.exists_eq_add_of_le (show b≤j.val by omega)
+      have lr : l≤r := by have := j.isLt; omega
+      rw [eq,orbit_add]
+      change N≤orbit l (orbit b (2^b*(a+i.val)-1))
+      rw [endpt]
+      have top := Nat.mul_le_mul_left (3^b) (Nat.le_add_right a i.val)
+      have need : 2^r*N ≤ 3^b*(a+i.val)-1 := by change 2^r*N<3^b*a at height; omega
+      have can := max_halving l (3^b*(a+i.val)-1)
+      have pow := Nat.mul_le_mul_right (orbit l (3^b*(a+i.val)-1))
+                    (Nat.pow_le_pow_right (by decide : 0<2) lr)
+      exact Nat.le_of_mul_le_mul_left (need.trans (can.trans pow)) (by positivity)
+  let g (i : Fin (2^s)) : survivors h X N (b+r) := ⟨f i,mem i⟩
+  have inj : Function.Injective g := by
+    intro i j eq
+    have eq' : P*(a+i.val)-1=P*(a+j.val)-1 := congrArg Subtype.val eq
+    have pi := pos i
+    have pj := pos j
+    have e := Nat.eq_of_mul_eq_mul_left hpw (show P*(a+i.val)=P*(a+j.val) by omega)
+    exact Fin.ext (by omega)
+  simpa using Fintype.card_le_of_injective g inj
+
+/-- Two binary lengths of observation still leave a full exception budget alive. -/
+theorem twice_exponent_survives (k D : Nat) (big : 8*k+19≤D) :
+    2^k ≤ (survivors (k+1) (2^D) (2^k+1) (2*D)).card := by
+  let v := (D-2*k-2)/2
+  let b := 2*v
+  let r := 2*D-b
+  have bd : b≤D := by dsimp [b,v]; omega
+  have timing : b+r = 2*D := by dsimp [r]; omega
+  have kp : k+1≤2^k := Nat.lt_two_pow_self
+  have kp' : 2^k+1≤2^(k+1) := by
+    rw [pow_succ]; have := Nat.one_le_pow k 2 (by decide); omega
+  have base : 2^k+1≤2^D := kp'.trans (Nat.pow_le_pow_right (by decide) (by omega))
+  have room : (k+1)*(2^b*(2^k+1))≤2^D := calc
+    _ ≤ 2^k*(2^b*2^(k+1)) := Nat.mul_le_mul kp (Nat.mul_le_mul_left _ kp')
+    _ = 2^(k+(b+(k+1))) := by simp only [pow_add]
+    _ ≤ 2^D := Nat.pow_le_pow_right (by decide) (by dsimp [b,v]; omega)
+  have split : 2^D/2^b = 2^(D-b) := by
+    have fact : 2^D=2^(D-b)*2^b := by rw [←pow_add,Nat.sub_add_cancel bd]
+    rw [fact, Nat.mul_div_cancel _ (by positivity)]
+  have ratio : 2^(3*v) ≤ 3^b := by
+    dsimp [b]; rw [pow_mul,pow_mul]; exact Nat.pow_le_pow_left (by decide) _
+  have expo : r+(k+1)≤3*v+(D-b) := by dsimp [r,b,v]; omega
+  have height : 2^r*(2^k+1)<3^b*(2^D/2^b+2) := calc
+    _ ≤ 2^r*2^(k+1) := Nat.mul_le_mul_left _ kp'
+    _ = 2^(r+(k+1)) := (pow_add 2 r (k+1)).symm
+    _ ≤ 2^(3*v+(D-b)) := Nat.pow_le_pow_right (by decide) expo
+    _ ≤ 3^b*2^(D-b) := by rw [pow_add]; exact Nat.mul_le_mul_right _ ratio
+    _ < _ := by rw [split]; exact Nat.mul_lt_mul_of_pos_left (by omega) (by positivity)
+  rw [←timing]
+  exact deadline_lower_bound (by omega) base room height
+
+theorem fixed_test_misses_at_twice_exponent (k : Nat) (hk : 5≤k) :
+    2^k ≤ (survivors (precision k) (center k) (2^k+1) (2*centerExponent k)).card := by
+  apply twice_exponent_survives
+  let m := grid k
+  let B := 3^m.p*2^m.d
+  have gap : B+1 ≤ 16^m.p := m.above
+  have fine : (2*(k+1))*16^m.p ≤ (2*(k+1)+1)*B := m.fine
+  have hB : 2*(k+1)≤B := by
+    have c := Nat.mul_le_mul_left (2*(k+1)) gap
+    nlinarith only [c,fine]
+  have ppos : 0<m.p := by
+    by_contra! neg
+    have e : m.p=0 := by omega
+    have a := m.above
+    rw [e] at a
+    simp at a
+  have dpos : 1≤m.d := by
+    by_contra! neg
+    have e : m.d=0 := by omega
+    obtain ⟨u,pu⟩ := Nat.exists_eq_succ_of_ne_zero (Nat.ne_of_gt ppos)
+    have pow : 3^u≤16^u := Nat.pow_le_pow_left (by decide) _
+    have more : 2*3^m.p≤16^m.p := by rw [pu,pow_succ,pow_succ]; omega
+    have c := Nat.mul_le_mul_left (2*(k+1)) more
+    dsimp [B] at fine
+    rw [e,pow_zero,Nat.mul_one] at fine
+    have pos : 0<3^m.p := by positivity
+    nlinarith only [c,fine,pos,Nat.zero_le (k*3^m.p)]
+  have expo : 4*k+4 ≤ m.d*(2*B)+(1+4*m.p) := by
+    have c := Nat.mul_le_mul_right (2*B) dpos
+    omega
+  have cost : 2^(4*k+4) ≤ m.cost := Nat.pow_le_pow_right (by decide) expo
+  let A := 64^k*(m.cost*2^(k+1)+4*precision k+2)
+  have lower : 2^(11*k+5) ≤ A := calc
+    _ = 64^k*(2^(4*k+4)*2^(k+1)) := by
+      rw [show 11*k+5=6*k+((4*k+4)+(k+1)) by omega, pow_add, pow_add 2 (4*k+4), pow_mul]
+      rfl
+    _ ≤ A := Nat.mul_le_mul_left _ ((Nat.mul_le_mul_right _ cost).trans (by omega))
+  have upper : A<2^(centerExponent k) := Nat.lt_log2_self
+  have bound : 11*k+5 < centerExponent k := by
+    by_contra! le
+    have c := Nat.pow_le_pow_right (by decide : 0<2) le
+    omega
+  omega
 
 end CollatzShell
