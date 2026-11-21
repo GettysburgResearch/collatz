@@ -40,6 +40,8 @@ def main() -> int:
     ap.add_argument("--output", type=Path, required=True)
     ap.add_argument("--dependencies-output", type=Path, required=True)
     ap.add_argument("--reuse-dependency-receipt", type=Path)
+    ap.add_argument("--reuse-module-receipt", type=Path, action="append", default=[],
+                    help="Reuse an individual successful new-module run only at identical inputs")
     ap.add_argument("--timeout", type=int, default=900)
     args = ap.parse_args()
     packet = Path(__file__).resolve().parent.parent
@@ -91,6 +93,18 @@ def main() -> int:
     library_paths += sorted((mathlib / ".lake/packages").glob("*/.lake/build/lib/lean"))
     library_paths.append(lean.parent.parent / "lib/lean")
     env["LEAN_PATH"] = os.pathsep.join(map(str, library_paths))
+    reuse = {}
+    for path in args.reuse_module_receipt:
+        record = json.loads(path.read_text())
+        name = record.get("module")
+        if name not in {m[0] for m in MODULES} or name in reuse:
+            raise RuntimeError("Unknown or duplicated reused module")
+        if record.get("schema") != "collatz-literature-individual-compile/v1":
+            raise RuntimeError("Unrecognized individual compile receipt")
+        if not record.get("success") or record.get("exit_code") != 0:
+            raise RuntimeError("The individual compilation did not succeed")
+        record["reused_receipt_sha256"] = sha(path)
+        reuse[name] = record
 
     audit_path = output / "LiteratureAudit.lean"
     audit = "module\n" + "".join("import " + name + "\n" for name, _, _ in MODULES)
@@ -116,6 +130,18 @@ def main() -> int:
     jobs = [(name, packet / rel) for name, rel, _ in MODULES] + [("LiteratureAudit", audit_path)]
     for name, source in jobs:
         cmd = [str(lean), "-j", "1", "-DwarningAsError=true", "-o", str(output / (name + ".olean")), source.name]
+        if name in reuse:
+            record = reuse[name]
+            if (record.get("argv") != cmd or record.get("cwd") != str(source.parent)
+                    or record.get("LEAN_PATH") != env["LEAN_PATH"]
+                    or record.get("source_sha256") != sha(source)
+                    or record.get("olean_sha256") != sha(output / (name + ".olean"))):
+                raise RuntimeError("Reused module inputs or compiled artifact changed: " + name)
+            receipt["commands"].append(record)
+            print("REUSE " + name + ": exact source, artifact, arguments, and import paths match", flush=True)
+            args.receipt.parent.mkdir(parents=True, exist_ok=True)
+            args.receipt.write_text(json.dumps(receipt, indent=2) + "\n")
+            continue
         print("START " + name, flush=True)
         start = time.monotonic()
         try:

@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-literature-individual-compile/v1",
+  "module": "RetainedTransport",
+  "source_path": "/workspace/scratch/6c37546fb87e/collatz-literature/research/literature-closing-20261121/lean/RetainedTransport.lean",
+  "source_sha256": "83376647faac50cf8edf20323921ce364db7a49ee385869cf8a062765cabc8d6",
+  "argv": [
+    "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/6c37546fb87e/literature-build/RetainedTransport.olean",
+    "RetainedTransport.lean"
+  ],
+  "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/literature-closing-20261121/lean",
+  "LEAN_PATH": "/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+  "config_sha256": "62cea415ba3f2a5f00839c3e53235cccfdccd6162f398d43f0ba10ba777de4a5",
+  "success": true,
+  "exit_code": 0,
+  "seconds": 8.495,
+  "output": "'CollatzShell.ForwardSection.RetainedTransport.sourceWeight_le_sixteen_step' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.RetainedTransport.step_injective_on_marked' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.RetainedTransport.fresh_return_packet_le' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.RetainedTransport.retained_atom_uniform_budget' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.RetainedTransport.retained_atom_budget' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "olean_sha256": "f6e353581d0d7aae85074a16ba39b403bd6f972bb8821ca17ed323961fc509e7"
+}

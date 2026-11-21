@@ -150,7 +150,8 @@ theorem entranceFiberTerm_double (m n : ℕ) :
   unfold entranceFiberTerm
   rw [entrance_double]
   split
-  · norm_num [Nat.cast_mul, mul_pow, mul_inv_rev] <;> ring
+  · norm_num [Nat.cast_mul, mul_pow, mul_inv_rev]
+    ring
   · ring
 
 /-- The full even-source contribution is exactly one sixteenth of the
@@ -161,7 +162,7 @@ theorem entranceMass_even_odd (m : ℕ) :
   have he : Summable (fun k => entranceFiberTerm m (2 * k)) :=
     h.comp_injective (by intro a b hab; omega)
   have ho : Summable (fun k => entranceFiberTerm m (2 * k + 1)) :=
-    h.comp_injective (by intro a b hab; omega)
+    h.comp_injective (by intro a b hab; change 2 * a + 1 = 2 * b + 1 at hab; omega)
   have split := tsum_even_add_odd he ho
   have even : (∑' k, entranceFiberTerm m (2 * k)) =
       (1 / 16 : ℝ) * entranceMass m := by
@@ -177,7 +178,8 @@ theorem entranceMass_eq_odd (m : ℕ) :
 
 theorem markedFiberTerm_summable (m : ℕ) : Summable (markedFiberTerm m) := by
   have ho : Summable (fun k => entranceFiberTerm m (2 * k + 1)) :=
-    (entranceFiberTerm_summable m).comp_injective (by intro a b hab; omega)
+    (entranceFiberTerm_summable m).comp_injective
+      (by intro a b hab; change 2 * a + 1 = 2 * b + 1 at hab; omega)
   apply Summable.of_nonneg_of_le _ _ ho
   · intro k; unfold markedFiberTerm; split <;> first | positivity | exact entranceFiberTerm_nonneg _ _
   · intro k; unfold markedFiberTerm; split
@@ -186,7 +188,8 @@ theorem markedFiberTerm_summable (m : ℕ) : Summable (markedFiberTerm m) := by
 
 theorem exceptionalFiberTerm_summable (m : ℕ) : Summable (exceptionalFiberTerm m) := by
   have ho : Summable (fun k => entranceFiberTerm m (2 * k + 1)) :=
-    (entranceFiberTerm_summable m).comp_injective (by intro a b hab; omega)
+    (entranceFiberTerm_summable m).comp_injective
+      (by intro a b hab; change 2 * a + 1 = 2 * b + 1 at hab; omega)
   apply Summable.of_nonneg_of_le _ _ ho
   · intro k; unfold exceptionalFiberTerm; split <;> first | positivity | exact entranceFiberTerm_nonneg _ _
   · intro k; unfold exceptionalFiberTerm; split
@@ -207,12 +210,15 @@ theorem markedFiberTerm_sum (m : ℕ) :
         simp [markedFiberTerm, mk, entranceFiberTerm, entrance_of_marked mk, neq]
       · simp [markedFiberTerm, mk]
   · rw [show markedSourceMass m = 0 by simp [markedSourceMass, mark]]
-    apply tsum_eq_zero
-    intro k
-    by_cases mk : Marked (2 * k + 1)
-    · have neq : 2 * k + 1 ≠ m := by intro eq; exact mark (eq ▸ mk)
-      simp [markedFiberTerm, mk, entranceFiberTerm, entrance_of_marked mk, neq]
-    · simp [markedFiberTerm, mk]
+    calc
+      (∑' k, markedFiberTerm m k) = ∑' _ : ℕ, (0 : ℝ) := by
+        apply tsum_congr
+        intro k
+        by_cases mk : Marked (2 * k + 1)
+        · have neq : 2 * k + 1 ≠ m := by intro eq; exact mark (eq ▸ mk)
+          simp [markedFiberTerm, mk, entranceFiberTerm, entrance_of_marked mk, neq]
+        · simp [markedFiberTerm, mk]
+      _ = 0 := tsum_zero
 
 theorem oddEntranceMass_decomposition (m : ℕ) :
     oddEntranceMass m = markedSourceMass m + exceptionalEntranceMass m := by

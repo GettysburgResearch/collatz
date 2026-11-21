@@ -52,11 +52,11 @@ theorem step_injective_on_marked {n m : ℕ} (hn : Marked n) (hm : Marked m)
   have hmodd := hm.1
   have hnstep : 2 * step n = 3 * n + 1 := by
     unfold step
-    simp only [show n % 2 ≠ 0 by omega, if_false]
+    simp only [show n % 2 ≠ 0 by omega, ite_false]
     omega
   have hmstep : 2 * step m = 3 * m + 1 := by
     unfold step
-    simp only [show m % 2 ≠ 0 by omega, if_false]
+    simp only [show m % 2 ≠ 0 by omega, ite_false]
     omega
   omega
 

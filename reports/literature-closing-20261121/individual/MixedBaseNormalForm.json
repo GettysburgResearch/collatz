@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-literature-individual-compile/v1",
+  "module": "MixedBaseNormalForm",
+  "source_path": "/workspace/scratch/6c37546fb87e/collatz-literature/research/literature-closing-20261121/mergers/MixedBaseNormalForm.lean",
+  "source_sha256": "41b74fb820e3523aff493c9826186d4a06e6ce222bb42ac398d6258601424a0e",
+  "argv": [
+    "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/6c37546fb87e/literature-build/MixedBaseNormalForm.olean",
+    "MixedBaseNormalForm.lean"
+  ],
+  "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/literature-closing-20261121/mergers",
+  "LEAN_PATH": "/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+  "config_sha256": "62cea415ba3f2a5f00839c3e53235cccfdccd6162f398d43f0ba10ba777de4a5",
+  "success": true,
+  "exit_code": 0,
+  "seconds": 60.052,
+  "output": "",
+  "olean_sha256": "d2f6a7c8c341c81b1839ac7fd0d41dc3c0eb0526fe48f535af8c5a2f77cbb996"
+}

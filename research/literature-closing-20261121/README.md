@@ -7,10 +7,11 @@ criterion, ordinary arithmetic constructions, and a complete mixed-base
 normalization with a concrete smaller-partner target. The unresolved premises
 are displayed alongside the results that would use them.
 
-**New Lean replay: pending at this initial checkpoint.** The proof scripts
-have complete bodies, but the earlier packet's successful compiler receipt
-does not certify these new modules. See the execution report for the current
-check boundary.
+**New Lean replay: PASSED.** All four new modules compiled with warnings
+treated as errors. The combined audit checked all **69 public theorems**;
+their only axiom dependencies are `propext`, `Classical.choice`, and
+`Quot.sound`. The exact commands, source hashes, and scope are in the
+[execution report](../../reports/literature-closing-20261121/README.md).
 
 This packet continues [PR 183's first checkpoint](../band-completion-20261121/README.md)
 at `8659cf62ac685540cadeef320e596c852fbb0959`. The latest related PR heads
@@ -143,7 +144,7 @@ binary valuation and \(B_j\) the exact affine carry. The module
 \qquad 3\nmid B_j\quad(j>0).
 \]
 
-At a marked endpoint \(U^j(n)=2^d+u>1\), the natural fixed
+At a marked endpoint \(U^j(n)=2^d+u>1\) with \(j>0\), the natural fixed
 three-coordinate local-form product for a Subspace Theorem application is
 **exactly \(u\ge1\)**. The displayed product includes every real, 2-adic,
 and 3-adic factor. Independent finite blocks multiply these positive
@@ -215,6 +216,14 @@ with such an erasure for every nonempty normal form would establish full
 Collatz by a single well-founded induction. `BlockedErasureCover` is an
 explicit unproved hypothesis, and its equivalence to `Universal` is recorded.
 
+An unbounded constructive subclass already has the required merger. For
+every mixed prefix representing \(q\), a word ending in \(f11\) has
+value \(18q+4\), and its erased partner has value \(6q+1\). Their
+shortcut images are both \(9q+2\). This is the all-prefix theorem
+`terminal_double_one_merger`; the written note extends the calculation to
+every odd-length terminal string of ternary ones. The same matrix rank
+decreases, so these are actual certificates in the proposed common induction.
+
 Normalization alone does not close the argument: restoring the omitted
 rule can raise both value and rank. The exact normal-form jump from seven
 to thirteen is included. The executable checker verifies the global affine
@@ -243,6 +252,10 @@ python research/literature-closing-20261121/lean/build.py \
 The optional `--reuse-dependency-receipt` checks an already successful
 dependency build against its source and compiled-artifact hashes. It avoids
 recompiling unchanged prior proofs while preserving their exact binding.
+An individual new-module run can likewise be reused with
+`--reuse-module-receipt` only when its source, artifact, compiler arguments,
+working directory, and import paths match exactly. The combined axiom audit
+is then run against those actual compiled modules.
 
 The central missing theorem is still global. The transport route needs a
 bound that survives actual repeated returns. The arithmetic route needs a

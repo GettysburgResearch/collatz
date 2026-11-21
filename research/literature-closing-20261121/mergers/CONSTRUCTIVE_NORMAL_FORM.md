@@ -1,10 +1,11 @@
 # A global mixed-base normal form and a concrete smaller partner
 
-**Status: constructive reduction and explicit partner inequalities PROPOSED;
-the ordinary merger needed for universal closure remains OPEN.** The new Lean
-source is `MixedBaseNormalForm.lean`; its exact execution status belongs in the
-combined build receipt. This note does not promote an uncompiled source or a
-finite trace to a checked theorem.
+**Status: the constructive reduction, explicit partner inequalities, and
+arbitrary-prefix `f11` merger compiled successfully in Lean 4.34.1; the
+ordinary merger needed for universal closure remains OPEN.** The new Lean
+source is `MixedBaseNormalForm.lean`. Its focused compile used `-j 1` and
+`-DwarningAsError=true` and completed with no diagnostics. See the combined
+build receipt for the integrated packet's separate axiom-audit status.
 
 This attack starts from every positive ordinary integer, not a finite set of
 residue cells. It produces a finite normal form on the same actual forward
@@ -212,6 +213,43 @@ The conjectural erasure cover permits choosing any one blocked pair of each
 nonterminal normal word. The rightmost pair always gives the explicit
 candidate (E). It does not posit that every erased pair automatically works.
 
+### A genuine unbounded merger class
+
+The candidate does work for every mixed prefix followed by `f11`:
+
+\[
+\texttt{L}\,p\,\texttt{f11R}
+\quad\rightsquigarrow\quad
+\texttt{L}\,p\,\texttt{f1R}.
+\]
+
+For arbitrary \(q=\operatorname{value}(p)\ge1\), the parent and partner
+are \(n=18q+4\) and \(m=6q+1\). The parent is even, the partner is odd,
+and their actual first shortcut images agree:
+
+\[
+\boxed{T(n)=9q+2=T(m).}
+\]
+
+This supplies explicit ordinary merger clocks \(a=b=1\), together with
+the already proved strict decreases in both value and rank. The new
+Lean declaration `terminal_double_one_merger` formalizes the common
+endpoint for every finite mixed prefix. It does not assume normality;
+in particular it applies to every normal word of this shape.
+
+The same paper calculation covers a rightmost ternary suffix \(v=1^k\)
+of any odd positive length. Its ternary value is
+\(r=(3^k-1)/2\), which is odd because \(3^k\equiv3\pmod4\). Thus
+
+\[
+m=2q\,3^k+\frac{3^k-1}{2}\quad\text{is odd},\qquad
+n=3^k(6q+1)+\frac{3^k-1}{2}=3m+1
+\]
+
+is even, and again \(T(n)=T(m)\). These complete all-parameter classes
+discharge genuine portions of the proposed erasure cover. Normal forms
+with other terminal ternary suffixes still need merger clocks.
+
 ### Exact closing theorem, with the open hypothesis visible
 
 `BlockedErasureCover` states that every nonempty normal form has at least one
@@ -277,7 +315,7 @@ failed minimization strategy is not silently substituted for a successful
 component descent.
 
 The unsupported step is now completely concrete: find an ordinary merger
-for at least one candidate (E) in **each actual normal form**, or construct
+for at least one blocked-erasure candidate in **each actual normal form**, or construct
 a different partner whose decrease can be checked in this one rank. The
 matrix inequalities and the normal-form grammar do not furnish those
 clocks.
@@ -316,6 +354,8 @@ python -X utf8 -B research/literature-closing-20261121/mergers/normal_form.py \
 ```
 
 The five traces are examples. The arbitrary-word scope is the written proof
-and the precisely audited Lean declarations, once the combined compilation
-receipt succeeds. No finite search over normal forms is used to assert
-universal merger coverage. Full Collatz remains open.
+and the 25 public Lean declarations, compiled in the focused run. The full
+grammar and the arbitrary odd-length all-ones suffix extension are written
+proofs; their formal coverage is the necessary suffix theorem and the
+explicit `f11` merger described above. No finite search over normal
+forms is used to assert universal merger coverage. Full Collatz remains open.

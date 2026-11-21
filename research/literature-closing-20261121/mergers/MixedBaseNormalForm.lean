@@ -134,6 +134,16 @@ theorem blocked_erasure_decreases (pre post : List Digit) :
     simp [interpret,matrix,Below]
     omega
 
+/-- A genuine unbounded class of the proposed erasures.  The prefix is any
+finite mixed word: its value q gives parent 18q+4 and partner 6q+1, whose
+first ordinary shortcut images are both 9q+2. -/
+theorem terminal_double_one_merger (pre : List Digit) :
+    orbit 1 (value (pre++[f,o,o]))=orbit 1 (value (pre++[f,o])) := by
+  have even : (3*(3*(2*eval pre 1)+1)+1)%2=0 := by omega
+  have odd : (3*(2*eval pre 1)+1)%2≠0 := by omega
+  simp only [value,eval_append,eval,num,orbit,step]
+  simp [even,odd]
+
 /-- A reduction on canonical words; the leading value one and final identity
 are implicit.  Every rule is one of the ten retained YAH rules. -/
 inductive Reduces : List Digit → List Digit → Prop where
@@ -151,15 +161,16 @@ theorem reduces_rank {w v : List Digit} (h : Reduces w v) : rank v<rank w := by
   | leading_z w => simp [rank,interpret,matrix]; omega
   | leading_o w => simp [rank,interpret,matrix]; omega
   | leading_u w => simp [rank,interpret,matrix]; omega
-  | final_f w =>
-    have h := interpret_below w (show Below (1,1) (matrix f (1,1)) from by decide)
+  | final_f =>
+    have h := interpret_below v
+      (show Below (1,1) (matrix f (1,1)) from by constructor <;> decide)
     dsimp only [rank]
     simp only [interpret_append,interpret]
     rcases h with ⟨h1,h2⟩
     omega
   | final_t w =>
     have h := interpret_below w
-      (show Below (matrix u (1,1)) (matrix t (1,1)) from by decide)
+      (show Below (matrix u (1,1)) (matrix t (1,1)) from by constructor <;> decide)
     dsimp only [rank]
     simp only [interpret_append,interpret]
     rcases h with ⟨h1,h2⟩
@@ -182,8 +193,7 @@ theorem reduces_orbit {w v : List Digit} (h : Reduces w v) :
   | final_t w =>
     refine ⟨1,by decide,?_⟩
     simp only [value,eval_append,eval,num,orbit,step]
-    have odd : (2*eval w 1+1)%2 ≠ 0 := by omega
-    simp [odd]
+    simp
     omega
 
 def Normal (w : List Digit) : Prop := ¬∃ v, Reduces w v

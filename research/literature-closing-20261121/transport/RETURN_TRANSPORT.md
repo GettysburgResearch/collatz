@@ -396,7 +396,10 @@ The paper calculations here do not establish any decay of the retained
 survivor mass, an exclusion of nontrivial positive cycles, or full Collatz.
 
 The Lean execution status and exact theorem coverage are recorded by the
-parent packet's replay receipt. The finite transfer theorem uses sixteen;
-the improvement to eight, the infinite residual identities, the dyadic
-summation and the sharpness example have the mathematical proofs above and
-are not represented as separately kernel-checked declarations here.
+parent packet's replay receipt. `RetainedTransport.lean` covers the finite
+transfer theorem with sixteen and the finite retained-atom budgets.
+`EntranceRenewal.lean` separately supplies `entranceMass_renewal`, the exact
+atomwise identity T4 with summability of all fibers. The improvement to eight,
+the residual's total-mass estimate, the infinite measure inequality T5, the
+dyadic summation and the sharpness example have the mathematical proofs above;
+they are not represented as separately kernel-checked declarations here.

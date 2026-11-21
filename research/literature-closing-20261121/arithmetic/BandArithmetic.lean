@@ -118,7 +118,6 @@ theorem marked_band_product_ge_one {n j : Nat}
   have neq : x ≠ 2 ^ x.log2 := by
     intro h
     have one := odd_power_two_eq_one mark.1 h
-    dsimp [x] at one
     omega
   have gap : 1 ≤ x - 2 ^ x.log2 := by omega
   have nonneg : (0 : ℝ) ≤ (x : ℝ) - (2 : ℝ) ^ x.log2 := by
@@ -158,7 +157,7 @@ theorem offset_parity_inside {d k : Nat} (u : Nat) (clock : k < d) :
   have dp : 0 < d-k := by omega
   obtain ⟨a, ha⟩ : ∃ a, d-k = a+1 := ⟨d-k-1, by omega⟩
   rw [ha, pow_succ]
-  omega
+  simp [Nat.add_mod, Nat.mul_mod]
 
 /-- Two distinct ordinary integers separated by less than `2^L` must have
 different parity itineraries before clock `L`.  The witness is the exact
@@ -199,9 +198,9 @@ theorem repeated_parity_requires_displacement {x y L : Nat} (ne : x ≠ y)
     2 ^ L ≤ (x-y) + (y-x) := by
   by_contra! small
   rcases lt_or_gt_of_ne ne with h | h
-  · obtain ⟨k, hk, different⟩ := parity_separates_close_sources h (by omega)
+  · obtain ⟨k, hk, different⟩ := parity_separates_close_sources (L := L) h (by omega)
     exact different (same k hk)
-  · obtain ⟨k, hk, different⟩ := parity_separates_close_sources h (by omega)
+  · obtain ⟨k, hk, different⟩ := parity_separates_close_sources (L := L) h (by omega)
     exact different (same k hk).symm
 
 /-- An exact finite certificate for equality, and hence for a cycle whenever
