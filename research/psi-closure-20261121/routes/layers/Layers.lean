@@ -512,7 +512,9 @@ theorem rev_layer_one_iff :
   · rintro ⟨A, B, C⟩
     refine ⟨?_, ?_, ?_, ?_, ?_⟩
     · intro i m hm
-      have hu : 3*(3*m-1) + 1 = 4^(i+3) := by omega
+      have hu : 3*(3*m-1) + 1 = 4^(i+3) := by
+        generalize 4^(i+3) = X at hm ⊢
+        omega
       have hu' : 3*(3*m-1) + 1 = 4^(i+1+2) := hu
       obtain ⟨hr, ho⟩ := rank_one_of_eq hu'
       have h3m : 3*m = (3*m-1) + 1 := by omega
@@ -733,6 +735,57 @@ theorem fwd_one_cone (b j s : ℕ) (hs : Sit s (3^b+1) = 1) (hle : s ≤ 2*(j+2)
   rw [e2] at h
   exact h
 
+/-- General landing law for a power-of-two multiple of a power of three. -/
+theorem basin_landing (k t c : ℕ) (hc : c < 2^t*3^k) :
+    Basin (2^t*3^k - c) ↔ Basin (3^(k + Sodd t c) - Sit t c) := by
+  have h := basin_shadow_iter t (3^k) c hc
+  have e5 : 3^(Sodd t c)*3^k = 3^(k + Sodd t c) := by
+    rw [Nat.pow_add]; exact Nat.mul_comm _ _
+  rw [e5] at h
+  exact h
+
+theorem two_le_pow_succ (e : ℕ) : 2 ≤ 2^(e+1) := by
+  have hp : 0 < 2^e := Nat.pow_pos (by omega)
+  rw [Nat.pow_succ]; omega
+
+/-- First stage of the forward rank-2 family: the `e+1` halvings of `2^(e+1)·y` move the
+constant `3^b + 1` along its `3x-1` orbit. -/
+theorem fwd_two_stage (b e y : ℕ) (hy : 1 < y) :
+    Basin (3^b*(2^(e+1)*y) - (3^b + 1)) ↔
+      Basin (3^(b + Sodd (e+1) (3^b+1))*y - Sit (e+1) (3^b+1)) := by
+  have hq : 0 < 3^b := Nat.pow_pos (by omega)
+  have h1 : 3^b*2 ≤ 3^b*y := Nat.mul_le_mul_left _ (by omega)
+  have h2 : 2*(3^b*y) ≤ 2^(e+1)*(3^b*y) := Nat.mul_le_mul_right _ (two_le_pow_succ e)
+  have hlt : 3^b + 1 < 2^(e+1)*(3^b*y) := by
+    generalize 2^(e+1)*(3^b*y) = Q at h2 ⊢
+    generalize 3^b*y = P at h1 h2
+    generalize 3^b = A at hq h1 ⊢
+    omega
+  have h := basin_shadow_iter (e+1) (3^b*y) (3^b+1) hlt
+  have e1 : 3^b*(2^(e+1)*y) = 2^(e+1)*(3^b*y) := Nat.mul_left_comm _ _ _
+  have e2 : 3^(Sodd (e+1) (3^b+1))*(3^b*y) = 3^(b + Sodd (e+1) (3^b+1))*y := by
+    rw [Nat.pow_add]; grind
+  rw [e1]
+  rw [e2] at h
+  exact h
+
+/-- Rank-2 cone: if the `3x-1` orbit of `3^b + 1` is at 1 after the `e+1` halvings, the
+rank-2 member is in the component of a member of the rank-1 family (not of a one-parameter
+family). -/
+theorem fwd_two_cone (b e j y k : ℕ) (hy : 3*y + 1 = 4^(j+2))
+    (hs : Sit (e+1) (3^b+1) = 1) (hk : b + Sodd (e+1) (3^b+1) = k+1) :
+    Basin (3^b*(2^(e+1)*y) - (3^b + 1)) ↔ Basin (3^k*4^(j+2) - (3^k + 1)) := by
+  have hy1 : 1 < y := by
+    have h16 := four_pow_two j
+    have hp : 0 < 4^j := Nat.pow_pos (by omega)
+    generalize 4^(j+2) = X at hy h16
+    generalize 4^j = Z at h16 hp
+    omega
+  have h := fwd_two_stage b e y hy1
+  rw [hs, hk] at h
+  rw [← fwd_form k y _ hy]
+  exact h
+
 /-! ## 8. Parity fold of the forward families -/
 
 /-- For `x ≡ 3 (mod 4)`: `x - 1` and `3x - 1` are in the same component. -/
@@ -817,3 +870,13 @@ open CollatzLayers in
 #print axioms fwd_one_fold
 open CollatzLayers in
 #print axioms basin_triple_form
+open CollatzLayers in
+#print axioms basin_landing
+open CollatzLayers in
+#print axioms fwd_two_stage
+open CollatzLayers in
+#print axioms fwd_two_cone
+open CollatzLayers in
+#print axioms basin_iff_exists_rank
+open CollatzLayers in
+#print axioms fwd_family_fold
