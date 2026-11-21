@@ -14,6 +14,11 @@ The [execution report](../../reports/2026-11-22-literature-reframe/README.md)
 distinguishes actual Lean execution, semantic paper reviews, and conditional
 global assertions. No open premise is installed as a Lean axiom.
 
+**Actual formal checkpoint:** `293e13c45b2c9364757378c940fc06a38745bd4d`.
+The complete build and all 11 new public-theorem axiom reports passed in
+a fresh complete checkout, as did the five-command repository gate.
+The written deductions retain their separate proof and dependency status.
+
 ## 1. The strongest global closing target from this pass
 
 Let \(U\) be the accelerated Collatz map on positive odd integers, and put
@@ -146,7 +151,28 @@ one and no first moment. This is an exact model calculation. It does not
 establish the corresponding first-moment statement about the ordinary
 minimum \(m(n)\); that is the unresolved target in section 1.
 
-## 5. Evidence map and next universal step
+## 5. A global packing bound for the same Abel envelope
+
+The [Abel-antichain addendum](ABEL_ANTICHAIN.md) improves the separate
+pointwise bound on PR180's first-power inverse envelope to one bound shared
+by an entire finite family. For positive odd unit targets that are
+nonperiodic and forward-incomparable, the same simultaneous Abel limit
+satisfies
+
+\[
+\sum_{q\in A}\frac{F(q)}q\le\log(64/3).
+\]
+
+A source cannot reach two incomparable targets, so the normalized
+contributions across all targets use one harmonic source budget. The
+upper packing argument does not require PDU or a positive atom floor;
+the existence of a uniformly positive envelope retains its separate
+source-qualified dependence. Comparable targets on one escaping forward
+ray are outside the antichain premise. The addendum records why this
+stronger global capacity bound has not yet produced uniform sublinearity
+or the critical first moment in section 1.
+
+## 6. Evidence map and next universal step
 
 | File | Evidence in this packet | First unproved global input |
 |---|---|---|
@@ -156,6 +182,7 @@ minimum \(m(n)\); that is the unresolved target in section 1.
 | `ORDINARY_RENEWAL.md` | Written source-preserving antichain, tail, and moment criteria with PDU explicit | The critical ordinary first moment or its sufficient weighted transport estimate |
 | `CRITICAL_TILT.md` | Written likelihood, stationary-law, entropy, and moment proofs; independently reviewed | An ordinary estimate after source exhaustion; random-law identities alone do not supply it |
 | `PHYSICAL_MERGERS.md` | Primary backtracing reconstruction and written marked realizations of the checked barrier | Actual merger membership within the original source's height and rank budget |
+| `ABEL_ANTICHAIN.md` | Written common-source packing bound for the same Abel limit | A bound that also controls comparable targets along one escaping ray |
 
 The current Lean entry point is `lean/LiteratureAudit.lean`; its build
 checks the two new modules and only their three necessary local imports.
