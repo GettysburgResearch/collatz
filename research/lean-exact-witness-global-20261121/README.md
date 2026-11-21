@@ -1,9 +1,10 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz and for the requested residue implication.**
-The new results in this first checkpoint are kernel-checked equivalences for
-arbitrary finite witnesses and an all-exponent branch of a global induction.
-They do not prove the implication or Collatz.
+The new results are kernel-checked equivalences for arbitrary finite witnesses,
+an all-exponent branch of a global induction, and an unbounded family showing
+that the displayed reset does not give uniform size descent. They do not prove
+the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean module. Lean 4.34.1 is used without Mathlib or other packages.
 
@@ -80,7 +81,50 @@ leave the initial interval. At `d>0`, the next adjacent source is `3^d t`,
 while the known witness is for `t`. Minimality alone does not transfer it
 through multiplication by `3^d` once the value is outside that interval.
 Neither the source value nor its witness length has been proved to decrease
-across all these transitions.
+across all these transitions. The following quantified family tests this
+specific proposed completion.
+
+### An unbounded reset from complete two-letter witnesses
+
+`lean/Collatz/ResetFamily.lean` proves the following for **every** natural `j`.
+Set
+
+\[
+b=12j+10,\qquad
+u=\frac{2^{b+3}-11}{9},\qquad
+n=2u+1,\qquad
+m=2^b-1,\qquad
+z=3\frac{3^b-1}{8}.
+\]
+
+The kernel theorem `CollatzResetFamily.reset_family` establishes
+
+\[
+\operatorname{Certificate}(u,[3,b]),\qquad
+u<m<n,\qquad
+\operatorname{Basin}(n)\iff\operatorname{Basin}(z),\qquad
+2^j n<z.
+\]
+
+| ID | Theorem | Exact scope |
+|---|---|---|
+| R1 | `source_certificate` | The source has the complete two-letter certificate `[3,12j+10]`, for every `j`. |
+| R2 | `target_reset_component` | The displayed target and reset are in the same ordinary basin component. |
+| R3 | `reset_amplification` | The reset exceeds `2^j` times the target. |
+| R4 | `reset_family` | Bundles R1–R3 with the strict intermediate inequalities. |
+
+The component equivalence passes through `2^(b+1)-1` and
+`3^(b+1)-1=2(4z+1)`. The growth bound is proved by induction from
+`8·2^(13j+10)<3^(12j+10)`. There is no target-orbit search in this proof.
+
+At `j=0`, the exact values are `u=909`, `m=1023`, `n=1819`, and `z=22143`.
+Those values illustrate the universal theorem, rather than supply its evidence.
+
+This disproves a uniform linear size bound for **this displayed reset**.
+It does not prove that a target diverges, that no other certificate conversion
+works, or that no later ordinary descendant is smaller. The equivalence is a
+component equivalence; it is not claimed that `z` itself is a forward iterate
+of `n`.
 
 The imported exact closing statement is
 
@@ -98,6 +142,9 @@ closing bound has been established in this checkpoint.
 
 The first unsupported inference remains the displayed universal implication.
 The new equivalences preserve its full strength; they do not discharge it.
+The parallel interval/moment attempts did not yield a universal survivor bound,
+a bound preventing endpoint mass from escaping, or exclusion of nontrivial
+positive cycles. None is inserted as an assumption into W1–W5, P1–P5, or R1–R4.
 
 ## Source pins and reuse boundary
 

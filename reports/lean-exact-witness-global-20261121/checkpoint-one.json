@@ -1,0 +1,51 @@
+{
+  "schema": "collatz-lean-exact-witness-checkpoint/v1",
+  "lean_version": "4.34.1",
+  "lean_compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib": false,
+  "other_packages": [],
+  "checked_local_commit": "1b8730049109db59f4beef4992484f5c0cd0ec80",
+  "checked_tree": "ddd4dd43e4e05172b3dfb7ebe849ac25b9e87b84",
+  "matching_remote_commit": "fe58c189b619d2983940b19a50f1b12798f5651f",
+  "pr": 177,
+  "scope": "First checkpoint W1-W5 and P1-P5. ResetFamily is checked in the later checkpoint. Full Collatz and the residue implication are OPEN.",
+  "foundation_source_commit": "7034109ed60a26bc49824e1ed43c239ceca81194",
+  "foundation_files": {
+    "Collatz/ReverseBasin146.lean": {
+      "source_sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+      "byte_identical": true
+    },
+    "Collatz/Closure.lean": {
+      "source_sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+      "byte_identical": true
+    },
+    "Collatz/Shadow.lean": {
+      "source_sha256": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+      "byte_identical": true
+    }
+  },
+  "commands": [
+    {
+      "command": "lake build",
+      "exit_code": 0,
+      "output": "checkpoint-one-build.txt"
+    },
+    {
+      "command": "lake env lean Audit.lean",
+      "exit_code": 0,
+      "output": "checkpoint-one-axioms.txt"
+    },
+    {
+      "command": "python -X utf8 -B tools/validate.py --regressions --receipt <outside-checkout-path>",
+      "exit_code": 0,
+      "output": "checkpoint-one-checkout.json"
+    }
+  ],
+  "axioms_observed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx_observed": false,
+  "review_scope": "New tuple/gap definitions and signatures independently checked. Copied reverse cover not broadly re-audited."
+}

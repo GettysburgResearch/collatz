@@ -14,6 +14,9 @@ import Collatz
 #print axioms CollatzPsiCompletion.adjacent_odd_tail
 #print axioms CollatzPsiCompletion.initial_basin_even_tail
 #print axioms CollatzPsiCompletion.least_missing_adjacent
+#check CollatzResetFamily.reset_family
+#print axioms CollatzResetFamily.reset_family
+#print axioms CollatzResetFamily.reset_amplification
 
 -- Keep the actual remaining universal statement visible in audit output.
 #print CollatzClosure.OpenLemma
