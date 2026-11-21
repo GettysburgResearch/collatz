@@ -84,6 +84,28 @@ The methods, exact scope of the finite search, source pins, and current
 unresolved obligations are recorded in
 [`DIRECTED_WITNESS_SEARCH.md`](DIRECTED_WITNESS_SEARCH.md).
 
+### Follow-on checkpoint: rank the exponent word itself
+
+The next search uses `sum (15^a)` over the accelerated exponents of the
+supplied source witness. This differs from the preceding rank over ordinary
+trajectory values. It admits source transformations with both larger child
+integers and longer certificates.
+
+The [high-gap construction](gap-search/high/README.md) checks 8,147 guarded
+source/target rewrites, uniformly for every first exponent `a≥5` and every
+admissible inherited tail. It covers only the ternary guard union
+`5950/531441` in its stated grammar. The
+[low-gap dispatcher](gap-search/low/LOW_GAP_DISPATCH.md) uses the same
+source-gap rank, but its fixed-cell dependency closure retains only one of
+16 required deep reverse-tripling cells. These are exact arithmetic search
+results; the splice implementations and the unfilled global dispatcher are
+not claimed as Lean-verified theorems. The general prefix-energy inequality
+used by their rank argument is proved in `Collatz.WitnessEnergy`.
+
+Both packets preserve their exact source pins, scripts and scope. Their
+execution receipts and byte identities are in
+[`reports/…/gap-search/`](../../reports/lean-exact-witness-global-20261121/gap-search/).
+
 ## Earlier interval-induction attempt
 
 The new `lean/Collatz/PsiCompletion.lean` works with the entire interval below

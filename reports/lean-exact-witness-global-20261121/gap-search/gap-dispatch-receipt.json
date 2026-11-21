@@ -1,0 +1,33 @@
+{
+  "status": "PARTIAL exact gap-multiset dispatcher; no global theorem asserted",
+  "normal_optimized_identical": true,
+  "summary": {
+    "rows": 87,
+    "states_with_rule": 71,
+    "required_with_rule": 3,
+    "inverse_nodes": 1553,
+    "max_inserted_gaps": 6
+  },
+  "verification": {
+    "all_affine_edges_replayed": 87,
+    "ordinary_mergers": 18,
+    "universal_gap_energy_polynomials_checked": 69,
+    "uniform_gap_energy_base": 7,
+    "rank_formula": "sum(base**gap); delta is the shared final two-adic valuation"
+  },
+  "closure": {
+    "closed_states": 18,
+    "required_present": 1,
+    "required_total": 16,
+    "removal_rounds": [
+      43,
+      10
+    ]
+  },
+  "sha256": {
+    "source_gap_frontier.py": "774fd45c6c10533731c01634d5a4a86262e6b1b17935a9df4c50efc8249ec4d0",
+    "gap-frontier288.json": "371b10bdf207c98793c70cc2d8c8db058b0a374d9df716d417544a7c3eb05c07",
+    "LOW_GAP_DISPATCH.md": "e9080a714d707ad823a0d74372667abb08e2efba0676c9c7a1b4d9c61d1700e6"
+  },
+  "command": "python3 source_gap_frontier.py --M 288 --out gap-frontier288.json"
+}

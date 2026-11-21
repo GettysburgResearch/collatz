@@ -216,3 +216,31 @@ receipts belong in
 [`reports/lean-exact-witness-global-20261121/`](../../reports/lean-exact-witness-global-20261121/).
 Successful repository validation is not presented as proof of any unfilled
 global hypothesis.
+
+## Follow-on exponent-word search
+
+The next checkpoint ranks accelerated source exponents instead of ordinary
+source values. Its common rank is `sum (15^a)` over the complete supplied
+source word. A high first exponent can be replaced by at most fourteen
+strictly smaller exponents; an arbitrary inherited tail cancels from the
+rank comparison. The generic inequality is an instance of
+`CollatzWitnessEnergy.prefixEnergy_replacement_lt_with_suffix`.
+
+The complete derivation and exact finite grammar are in
+[`gap-search/high/README.md`](gap-search/high/README.md). Its 8,147 rules
+include 7,916 numerically expanding child maps. Its ternary guard union is
+`5950/531441`, so it does not cover the high-first-gap branch. That fraction
+does not measure progress on the full theorem.
+
+[`gap-search/low/LOW_GAP_DISPATCH.md`](gap-search/low/LOW_GAP_DISPATCH.md)
+checks the low-gap transitions with a shared unknown final valuation. The
+rank difference is a polynomial of degree one in `15^δ`, with nonnegative
+coefficient and positive value at `δ=0`. This proves decrease for every
+`δ≥0`, not merely a list of sampled valuations. Its 87 fixed-cell rules
+leave the global state program incomplete; `n=288t+9` is one explicitly
+uncovered cell of the tested grammar.
+
+The two catalogues have a compatible source-gap rank. A complete combined
+cover, all required auxiliary states, and finite entrance cases still need
+proof. The arithmetic implementations of these source/target splices have
+not been formalized in Lean in this checkpoint.

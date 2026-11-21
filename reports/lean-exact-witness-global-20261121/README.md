@@ -50,3 +50,13 @@ the science packet's `DIRECTED_WITNESS_SEARCH.md` and `search/` directory.
 They are arithmetic search evidence, not substitute Lean proofs of global
 coverage. A complete-checkout repository regression run remains distinct
 from both those replays and the Lean kernel execution.
+
+## Source-exponent checkpoint
+
+The `gap-search/` receipts record the high-first-exponent and low-gap
+arithmetic generators. Their shared measure is over accelerated source
+exponents, not ordinary trajectory values. The repository manifest pins
+the copied files after reproduction outputs were redirected to `/tmp`.
+The original receipts retain their staging documentation hashes for
+provenance. No Lean source changed in this follow-on checkpoint, and no
+global source-gap dispatcher is asserted.
