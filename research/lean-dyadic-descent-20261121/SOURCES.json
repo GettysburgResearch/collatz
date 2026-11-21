@@ -1,0 +1,14 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "source_pr": 173,
+  "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+  "source_tree": "72b5895180fa002e162f895d6359c8c6da943c5f",
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "unchanged_dependencies": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-shell-cover/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "research/lean-shell-cover/SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+  },
+  "scope": "New modules import the pinned ordinary shortcut map, forced section, and actual first-return dynamics. No earlier global hypothesis is assumed."
+}
