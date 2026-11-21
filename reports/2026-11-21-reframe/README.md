@@ -8,6 +8,38 @@ This archive separates new Lean checking, paper-level reconstruction, exact
 finite arithmetic, and repository integrity. A source inventory or a passing
 repository gate is not a proof of the mathematical statements.
 
+## Successful exact checkpoint
+
+The complete new-packet execution concerns commit
+`75f2f9aad4d3f80aaa1f8718e229faa04ee5770e`, tree
+`6d81c9fa46c4e7d22b7b5a980798bc5bd92a8396`, with **423 tracked files**.
+It was pushed to `research/lean-global-20261121` on
+[draft PR178](https://github.com/GettysburgResearch/collatz/pull/178), and
+the remote head was read back.
+
+| Actual execution at that commit | Result | Receipt |
+|---|---|---|
+| Fresh complete build of the two pinned imports, three new Lean modules, and dedicated audit | PASS; all **25 public statements**, six Lean source invocations, each with `-j1 -DwarningAsError=true` | [proof-lean.json](proof-lean.json) |
+| Exact Green rational certificate | PASS; 21 finite unit sources plus the separately proved infinite tail bound | [proof-lean.json](proof-lean.json) |
+| Required repository gate in the same clean complete checkout | PASS; all five commands | [proof-repository.json](proof-repository.json) |
+
+The successful execution ran on 2026-11-21 from 22:39:54 to 22:41:19 UTC.
+The full Lean build command took 46.518 seconds. The checkout was clean
+before and after; every recorded source hash remained unchanged. The
+Mathlib source was clean at the pinned revision before and after.
+
+The 25 audited statements comprise nine ordinary affine-pump/first-hit
+theorems, ten marked-prefix/merger theorems, and six population/packing
+theorems. This includes supporting and credited statements; it is not a
+count of 25 independently novel results. Reported logical dependencies
+are subsets of `propext`, `Classical.choice`, and `Quot.sound`. No `sorryAx`
+or conjectural closure axiom appears in the audited dependencies.
+
+The language-theory consequences, GM1–GM3, fractional Green moments,
+Green topology, and the late PR185 composition remain paper proofs or
+explicitly source-qualified deductions. They are not included in the
+Lean theorem count.
+
 ## Frozen repository view
 
 [REPOSITORY_SNAPSHOT.json](REPOSITORY_SNAPSHOT.json) records the 143 PRs and
@@ -60,9 +92,15 @@ and after use. It records the file count, byte count, and aggregate hash;
 it does not accept an unrelated dependency cache merely because its path
 looks compatible. Ordinary builds can use the pinned cache directly.
 
-Run-specific receipts and their exact checked commit are added after the
-clean execution. Their identity will not be changed to imply a later
-documentation commit was also Lean-built.
+The successful receipts are added in a documentation follow-up to the
+checked commit. All Lean sources, the build script, toolchain file, and
+source hash manifest remain byte-identical to that commit. The receipt
+keeps its original checked SHA; it is not relabeled as a proof build at
+the later documentation head.
+
+[PUBLICATION_REFRESH.json](PUBLICATION_REFRESH.json) records the late
+metadata read; the mathematical connections and their evidence boundaries
+are in [LATE_UPDATE.md](../../research/reframe-20261121/LATE_UPDATE.md).
 
 ## Preserved initial build-path failure
 

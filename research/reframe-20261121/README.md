@@ -12,6 +12,12 @@ No missing global premise is installed as a Lean axiom. The actual execution
 boundary, exact commits, compiler output, and source hashes belong to the
 [execution report](../../reports/2026-11-21-reframe/README.md).
 
+**Actual checked checkpoint:** `75f2f9aad4d3f80aaa1f8718e229faa04ee5770e`.
+The fresh complete packet build and all 25 public-theorem axiom reports
+passed, as did the exact rational replay and the five-command repository
+gate. The language-theory and analytic deductions retain their separate
+paper-proof status.
+
 ## 1. What was reconsidered
 
 The [repository snapshot](../../reports/2026-11-21-reframe/REPOSITORY_SNAPSHOT.json)
