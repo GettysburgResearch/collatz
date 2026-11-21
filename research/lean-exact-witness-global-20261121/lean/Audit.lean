@@ -53,6 +53,8 @@ import Collatz
 #print axioms CollatzHighGapPump.fixed_base_prefix_failure
 #print axioms CollatzLowGapLoops.whole_witness_rewrite
 #print axioms CollatzLowGapLoops.apply_reverse_rule
+#print axioms CollatzLowGapPump.whole_witness_rewrite
+#print axioms CollatzLowGapPump.rewritten_sizes
 #print axioms CollatzUnboundedGapReset.compiled_certificate_reset
 #print axioms CollatzUnboundedGapReset.low_depth_zero_reset
 #print axioms CollatzGapComparison.close
@@ -60,8 +62,21 @@ import Collatz
 #print axioms CollatzGapComparison.collatz_of_complete_deep
 #print axioms CollatzGapComparison.high_gap_rule
 #print axioms CollatzGapComparison.low_gap_rule
+#print axioms CollatzGapComparison.low_gap_pump_rule
 #print axioms CollatzGapComparison.ordinary_source
 #print axioms CollatzGapComparison.compiled_reset_rule
+#print axioms CollatzLowGapToPsi.forward_to_psi
+#print axioms CollatzLowGapToPsi.low_loop_to_psi
+#print axioms CollatzGapHandoffs.reverse_high_handoff
+#print axioms CollatzGapHandoffs.hplus_gap_one
+#print axioms CollatzGapHandoffs.hplus_gap_two
+#print axioms CollatzGapHandoffs.apply_reverse_high
+#print axioms CollatzGapHandoffs.hplus_one
+#print axioms CollatzAsymmetricPsiReset.whole_witness_reset
+#print axioms CollatzAsymmetricPsiReset.apply_psi_rule
+#print axioms CollatzAsymmetricPsiReset.parent_residue
+#print axioms CollatzAsymmetricPsiReset.exponential_expansion
+#print axioms CollatzAsymmetricPsiReset.depth_zero_guard
 -- These are hypotheses of the closing theorems, not established selectors.
 #print CollatzGapMultiset.Complete
 #print CollatzGapComparison.Complete

@@ -26,6 +26,10 @@ a larger finite search cutoff:
   source and target splices. The child source and its ordinary certificate
   clock both increase; the source expansion is unbounded. It also proves
   that no single fixed exponential energy base covers all these prefixes.
+- `LowGapPump.lean`, added in the continuation after that checkpoint,
+  proves an additional arbitrary-length family for source words beginning
+  `(1,b)` for every `b≥4`, under the same exact affine guard. It preserves
+  the entire supplied tail and also admits expanding, longer children.
 - `LowGapLoops.lean` consumes arbitrary initial runs of exponent two and
   exponent one before a `(3,...,4)` block, reducing the reverse comparison
   to a forward-tripling query on the untouched witness tail.
@@ -35,6 +39,18 @@ a larger finite search cutoff:
 - `GapComparison.lean` places actual `(known source, wanted target)` pairs
   in one well-founded induction. Its rule wrappers include all the new
   families without conflating reverse-tripling and psi obligations.
+- `GapHandoffs.lean` handles every reverse-tripling first gap `a≥3`
+  without an extra congruence guard: it decreases that gap by two and
+  transfers to `Basin(p) → Basin(2p+1)`. The latter source gap-one case
+  consumes its exact suffix; gap two closes through an ordinary merger.
+- `LowGapToPsi.lean` transfers every odd forward-tripling query to a
+  psi-forward query with a strictly smaller supplied witness, handling
+  source one explicitly. It composes this with the two low-gap loops.
+- `AsymmetricPsiReset.lean` supplies an arbitrary-length reset on parent
+  sources congruent to two modulo three, the residue reached by that
+  handoff. It consumes an initial even run of length at least three,
+  preserves the entire odd tail, and permits unbounded source expansion.
+  Its nested ternary guards remain an explicit restriction on coverage.
 
 The packet states every guard. Its universal closing theorems still require
 a complete dispatcher on all activated pairs. No such dispatcher, and hence

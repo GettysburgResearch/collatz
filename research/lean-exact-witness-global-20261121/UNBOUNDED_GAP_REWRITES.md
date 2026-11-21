@@ -180,7 +180,69 @@ the actual parity and divisibility conditions at each step. The Lean
 module is `Collatz/HighGapPump.lean`; execution receipts distinguish its
 unbounded proof from the generator's selected replay indices.
 
+### Continuation: the same affine guard handles a low first gap
+
+After the first unbounded checkpoint was published, the same guard U1
+yielded a second, distinct source language. For every `j≥0,b≥4`,
+`Collatz/LowGapPump.lean` proves
+
+\[
+ \operatorname{Certificate}(27m;(1,b)\Vert w)
+ \Longrightarrow
+ \operatorname{Certificate}
+ (27p;(2^j,1,1,3,2,3,1,2,2,b-2)\Vert w),\tag{U11}
+\]
+
+where `2^j` in this word denotes `j` repetitions of the gap `2`, not one
+exponent of value `2^j`. Every inserted exponent is strictly below `b`,
+so replacing the removed pair `(1,b)` strictly decreases the same complete
+graded multiset for every length `j`. The source length increases by `j+7`
+and its total ordinary clock by `2j+12`, exactly as in the high-gap pump.
+
+For the unadjusted second gap `b=4`, the child source word has length
+`j+9`, total `2j+17`, and correction
+
+\[
+ C+3^{j+9}=155102\,4^j.
+\]
+
+The common partial source endpoint is `t=(243m+5)/32`. Parent target
+`9m` reaches `t+1` along `(2,2,1)`. At `j=0`, the child target word is
+`(3,1,1,1,1,2,2,1,4,1)`; each pump replaces its initial gap `v` by
+`(1,v+1)`. Its correction is the child source correction plus
+`2^(2j+17)`, proving the common target endpoint and all integer step
+conditions. For general `b`, extend the final child source gap by `b-4`
+and retain the entire original tail.
+
+This handles the different binary cell `m≡25 mod32`. When the second gap
+is exactly four, the odd endpoint further refines it to `m≡57 mod64`.
+The ternary guard is still U1/U7; it has not disappeared. The comparison
+wrapper `CollatzGapComparison.low_gap_pump_rule` places this family in the
+same mixed induction. The independent affine replay generator is
+[`unbounded_low_pump.py`](gap-search/high/unbounded_low_pump.py).
+
 ## 3. Arbitrary low-gap loops and an even-source reset compiler
+
+### A universal handoff for every reverse-tripling first gap at least three
+
+The continuation also obtained a rule with **no supplementary congruence
+guard**. `Collatz/GapHandoffs.lean` proves that every certificate
+`Certificate(3n,a::w)` with `a≥3` supplies an ordinary positive `p` with
+
+\[
+ 3n=4p+1,\qquad
+ \operatorname{Certificate}(p;(a-2)\Vert w),\qquad
+ \operatorname{Basin}(n)\iff\operatorname{Basin}(2p+1).
+\]
+
+The same supplied tail is retained, and replacing `a` by `a-2` strictly
+decreases the graded source multiset. This reduces the entire first-gap
+branch to the fixed comparison type
+`Hplus(p): Basin(p) → Basin(2p+1)`. It does **not** assert that all Hplus
+queries close. For that type, the module proves source one directly,
+consumes a first gap one into another Hplus query on the literal suffix,
+and closes a first gap two by an ordinary merger. Larger Hplus gaps remain
+part of the coverage obligation.
 
 ### Two unbounded low-gap loops
 
@@ -200,6 +262,21 @@ parent. The source rank decreases by consuming a nonempty prefix; `u` need
 not be smaller than the parent. Both loops and every inherited tail are
 quantified without a cutoff. Activation of that forward-tripling query is
 explicit; its universal truth is not assumed.
+
+`Collatz/LowGapToPsi.lean` removes the need to treat forward tripling as an
+unrelated auxiliary kernel. For any odd `u>1`, put
+`s=T(u)=(3u+1)/2`. Then `3u=2s-1`. One ordinary source step gives the
+actual certificate for `s`, with strictly smaller graded multiset, so
+`Basin(u) → Basin(3u)` transfers to `Basin(s) → Basin(2s-1)`.
+The source-one query is closed by the explicit certificate `[1,4]` for
+three. `low_loop_to_psi` combines this step and the loop-prefix deletion
+under the same original induction hypothesis.
+
+The newly obtained `s` is `2 mod3`, whereas U9 below forces the symmetric
+reset's parent known source `P/2` to be `1 mod3`. The asymmetric reset
+proved later in this continuation supplies a compatible residue family.
+Its guard still does not place every forward-tripling query inside a
+proved reset family.
 
 ### A compiler accepting any valid finite entrance
 
@@ -261,6 +338,74 @@ increases. The Lean theorem `low_depth_zero_reset` checks this instance;
 The exit `(3,e)` still requires `e≥3` for this rank argument. Neither the
 compiler's existence nor its two concrete entrances establishes a valid
 entrance for every parent.
+
+### An asymmetric reset on the residue reached by forward tripling
+
+`Collatz/AsymmetricPsiReset.lean` proves a further arbitrary-length family
+directly between psi-forward comparisons. Let `S=2^e q` with `e≥3` and
+retain any supplied certificate for `q`. For any `j≥0` and integer `m`
+satisfying
+
+\[
+ 3^{j+13}(m-1)=4^j(2^{24}S-75116642),\tag{U12}
+\]
+
+the child source word is
+
+\[
+ (\underbrace{2,\ldots,2}_{j},
+   1,2,2,3,1,3,2,1,2,3,2,3,e-1)\Vert tail.\tag{U13}
+\]
+
+It starts at `m` and ends at the identical `q` before continuing along the
+entire original tail. The actual last gap is `e-1≥2`. Every inserted gap
+is at most `e`, so the removed initial even-run grade `2e+1` pays for all
+of them. The new prefix has `j+13` odd steps and total ordinary clock
+`2j+e+24`.
+
+The child target `2m-1` takes the word
+
+\[
+ (\underbrace{2,\ldots,2}_{j},8,
+   \underbrace{1,\ldots,1}_{10},2,2,3)
+\]
+
+to `3S-1`. The parent target `2S-1` reaches this same endpoint in one
+odd step. These are complete ordinary prefix identities. Thus the rule
+proves
+
+\[
+ \operatorname{Basin}(2m-1)\iff\operatorname{Basin}(2S-1),
+ \qquad \Gamma(0;\text{U13})\prec\Gamma(e;tail).
+\]
+
+The source correction satisfies
+`C+3^(j+13)=75116642·4^j`; the paired target has one additional odd
+step, total `2j+25`, and correction
+`C_target+2^(2j+25)=6C+3^(j+14)`. These identities are proved for every
+`j`, and the affine identity supplies the legality of every intermediate
+division. `whole_witness_reset` and `apply_psi_rule` integrate the result
+with the same complete comparison induction. `exponential_expansion`
+proves `m>2^c S` whenever U12 holds at `j=3c`.
+
+U12 forces `S≡2 mod3`, precisely the residue reached by the
+forward-tripling handoff. A checked depth-zero guard is
+`S=20136632=8·2517079`, `m=211899691`. The theorem remains conditional
+on the supplied certificate for the odd part; this arithmetic fixture
+does not silently assume any convergence result.
+
+Coverage is explicit: for a given `j`, integrality requires
+
+\[
+ S\equiv75116642(2^{24})^{-1}\pmod{3^{j+13}}.
+\]
+
+These cells are **nested**, so increasing pump depth supplies longer
+valid rewrites but no additional parent coverage beyond the depth-zero
+cell. The generator
+[`asymmetric_psi_reset.py`](gap-search/high/asymmetric_psi_reset.py)
+combines this condition with the exact initial even valuation and
+replays the source and target identities for an entire affine progression.
 
 ## 4. Interaction with the latest forward-section work
 

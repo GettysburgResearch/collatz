@@ -8,6 +8,7 @@ multiset order. A complete sound dispatcher remains an explicit hypothesis.
 import Collatz.HighGapPump
 import Collatz.UnboundedGapReset
 import Collatz.LowGapLoops
+import Collatz.LowGapPump
 
 open CollatzReverseBasin CollatzClosure CollatzWitness CollatzGapMultiset
 
@@ -98,6 +99,19 @@ theorem high_gap_rule {active : Active} (j m p a : Nat) (tail : List Nat)
     CollatzHighGapPump.whole_witness_rewrite j m p a tail cert high guard
   have powered : PoweredCertificate (27*p) 0
       ((CollatzHighGapPump.sourceFront j ++ [3+(a-5)]) ++ tail) :=
+    ⟨27*p,by simp,childCert⟩
+  exact one_query activated powered decrease merge.mpr ih
+
+/-- The same affine guard also admits the low first-gap language (1,b,tail),
+for every b at least four. This is a separate arithmetic source splice. -/
+theorem low_gap_pump_rule {active : Active} (j m p b : Nat) (tail : List Nat)
+    (cert : Certificate (27*m) (1::b::tail)) (large : 4 ≤ b)
+    (guard : CollatzHighGapPump.Guard j m p) (activated : active (27*p) (9*p))
+    (ih : Hyp active (grades 0 (1::b::tail))) : Basin (9*m) := by
+  obtain ⟨childCert,decrease,merge⟩ :=
+    CollatzLowGapPump.whole_witness_rewrite j m p b tail cert large guard
+  have powered : PoweredCertificate (27*p) 0
+      ((CollatzLowGapPump.sourceFront j ++ [2+(b-4)]) ++ tail) :=
     ⟨27*p,by simp,childCert⟩
   exact one_query activated powered decrease merge.mpr ih
 

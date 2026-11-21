@@ -10,5 +10,9 @@ import Collatz.SourceWitness
 import Collatz.GapMultiset
 import Collatz.HighGapPump
 import Collatz.LowGapLoops
+import Collatz.LowGapPump
 import Collatz.UnboundedGapReset
 import Collatz.GapComparison
+import Collatz.LowGapToPsi
+import Collatz.GapHandoffs
+import Collatz.AsymmetricPsiReset

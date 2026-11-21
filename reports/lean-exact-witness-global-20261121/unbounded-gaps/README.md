@@ -14,6 +14,12 @@ The frozen latest-source inspection is in
   including pump depth 1000, in normal and optimized Python. These replay
   instances check the independent generator; the arbitrary-index theorem is
   the Lean proof, and neither supplies global guard coverage.
+- The follow-on `checkpoint-six.json`, `build-six.txt`, `axioms-six.txt`,
+  `low-pump-replay.json`, and `asymmetric-reset-replay.json` record the
+  additional `(1,b)` family, universal comparison handoffs, and asymmetric
+  psi reset in the same comparison kernel. They pin the subsequent
+  20-source, 21-job Lean build; the preceding checkpoint receipts remain
+  historical records of their own exact source inputs.
 
 From the owned `lean` directory, the proof commands are:
 
