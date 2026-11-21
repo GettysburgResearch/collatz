@@ -192,6 +192,49 @@ theorem first_layer_iff_pow_three :
   · intro P i m hm _
     exact (basin_jacobsthal i m hm).mpr (P i)
 
+/-! ## The `3x-1` move and its orbit of 1 -/
+
+/-- Collatz ⟺ the basin of the `3x+1` map is closed under the move `x ↦ 3x - 1`. -/
+theorem collatz_iff_three_minus_one_closure :
+    (∀ n : Nat, 0 < n → Basin n) ↔ (∀ x : Nat, 0 < x → Basin x → Basin (3*x-1)) := by
+  rw [collatz_iff_psi_forward]
+  exact ⟨fun h x hx hb => (basin_psi x hx).mp (h x hx hb),
+         fun h x hx hb => (basin_psi x hx).mpr (h x hx hb)⟩
+
+/-- The orbit of 1 under `x ↦ 3x - 1`. -/
+def ladder : Nat → Nat
+  | 0 => 1
+  | i+1 => 3 * ladder i - 1
+
+theorem ladder_spec (i : Nat) : 2 * ladder i = 3^i + 1 := by
+  induction i with
+  | zero => rfl
+  | succ i ih =>
+    rw [Nat.pow_succ]
+    show 2 * (3 * ladder i - 1) = 3^i * 3 + 1
+    generalize 3^i = X at ih ⊢
+    omega
+
+/-- Each rung above the first is one ordinary step from a power of three. -/
+theorem basin_ladder_succ (i : Nat) : Basin (ladder (i+1)) ↔ Basin (3^i) := by
+  have hodd := three_pow_odd i
+  have hs : shortcut (3^i) = ladder (i+1) := by
+    have h := ladder_spec (i+1)
+    rw [Nat.pow_succ] at h
+    unfold shortcut
+    generalize 3^i = X at h hodd ⊢
+    split <;> omega
+  rw [← hs]
+  exact basin_step _
+
+/-- The basin contains the whole `3x-1` orbit of 1 exactly when it contains every power of three. -/
+theorem ladder_iff_pow_three : (∀ i : Nat, Basin (ladder i)) ↔ (∀ i : Nat, Basin (3^i)) :=
+  ⟨fun h i => (basin_ladder_succ i).mp (h (i+1)),
+   fun h i => by
+     cases i with
+     | zero => exact ⟨0, rfl⟩
+     | succ i => exact (basin_ladder_succ i).mpr (h i)⟩
+
 /-! ## Relation calculus: transport of a closure failure
 
 `Fail a b x` says: `x` is outside the basin while `a·x - b` is inside. The open lemma is
