@@ -544,7 +544,7 @@ theorem shell_fan {h : Nat} (m : Mesh (2*h)) (s q X : Nat) (hu : q%3 ≠ 0)
       (Nat.mul_le_mul_left P (show 4*h+2≤m.cost*q+4*h+2 by omega)).trans size
     nlinarith only [u₁,u₂,u₃,u₄]
 
-private theorem avoids_small {s : Nat} (f : (Fin s → Bool) → Nat) (inj : Function.Injective f)
+theorem avoids_small {s : Nat} (f : (Fin s → Bool) → Nat) (inj : Function.Injective f)
     (E : Finset Nat) (small : E.card < 2^s) : ∃ w, f w ∉ E := by
   classical
   by_contra! bad

@@ -59,3 +59,22 @@ This applies to the fixed centers for $k\ge5$. In the mesh at precision $2(k+1)$
 PR 146 establishes qualitative occurrence of ordinary components in each fixed leading-digit interval and later constructs blocks landing together at a supplied pair. The present proof constructs equal-clock witnesses throughout each prescribed interval with explicit height control and converts their multiplicity into a finite survivor test. It uses the ordinary map directly. [Earlier leading-digit argument](https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/THREE_RAY_DIGITS.md) · [Earlier prescribed-endpoint blocks](https://github.com/GettysburgResearch/collatz/blob/f431078244e868dc699fad011044f0d5e7f76437/research/upper-bit-mergers/WHOLE_INTERVAL_SYNCHRONIZATION.md)
 
 The proof was checked with Lean 4.34.1 and mathlib at `d13f23b723b8a846827a245b89c10fc7d3f11612`. From a built mathlib environment at that pin, run `lake env lean /absolute/path/to/ShellCover.lean`. The Lean kernel reports only `propext`, `Classical.choice`, and `Quot.sound` for the main equivalence and the deadline result. The remaining task is to establish the survivor bound unconditionally at every scale. [Pinned mathlib](https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612)
+
+## 4. An exact mixing test on five copies of one octave
+
+Set $p=64^s$. In the five consecutive blocks $[p,6p)$, compare each $x$ with $p+(x\bmod p)$, the integer in the first block with the same low bits. Count a miss if their ordinary trajectories have no common value by time $t$, allowing separate clocks on the two arms. Call the count $M_s(t)$. Lean proves
+
+$$
+\mathrm{Collatz}\quad\Longleftrightarrow\quad
+\forall K\ \exists s\ge K,\ t\ge 0:\quad (24s+1)M_s(t)+1<2^s.
+$$
+
+Every comparison stays within the experiment's own set of starting values. Its common value can be anywhere. The outstanding assertion is the displayed upper bound at some finite times on an unbounded sequence of stages. [Finite test and equivalence](OctaveCriterion.lean)
+
+The proof uses an exact counting identity. For $p=2^k$ and $0\le x<p^2$, the ordered pairs $(x\bmod p,T^k(x)\bmod p)$ cover the entire $p$ by $p$ square exactly once. Fixing $r=x\bmod p$ fixes the first $k$ parities and gives $T^k(r+pu)=T^k(r)+3^a u$, where $a$ counts the odd steps. The multiplier $3^a$ permutes the residues modulo $p$. [Formal identity `endpoint_square`](DyadicMixing.lean)
+
+To transfer the identity to ordinary trajectories, give each residue a label $g(r)$ and let $D$ count the mismatches $g(n)\ne g(Tn)$ for $0\le n<2p$, evaluating $g$ periodically. Along a $k$-step path, a change of label costs at least one mismatched edge. Summing over the square gives a residue whose label differs from at most $kD$ table entries. If the table matches true component labels except at $E$ positions in $[p,6p)$, then $D\le4E$. This follows by lifting the even and odd edges to ordinary points in the interval. On $[p,2p]$ all but $(4k+1)E+1$ ordinary starts therefore have one label. The final $1$ accounts for the repeated residue at the closed right endpoint. [Quantitative inequalities](DyadicMixing.lean)
+
+Use the basin of 1 as the true label and use the reference integer's basin membership as the table entry. A successful finite meeting guarantees agreement. For each fixed ternary unit $q$, the inverse construction places $2^s$ distinct representatives of $q$ in $[p,2p]$ once $3^s\ge Cq+6$, where $C$ is the fixed mesh cost at precision two. Apply this to $1$ and $q$. If the exception budget is smaller than $2^s$, both have a representative with the common label, so $q$ reaches 1. The derivation also proves rigidity for arbitrary, possibly non-dyadic periods when each residue has enough lifts. [Arbitrary-period result](PeriodicWindow.lean)
+
+For replay in the pinned mathlib environment, add a writable directory to `LEAN_PATH` for the local `.olean` files. From this directory of sources, compile `ShellCover.lean`, `PeriodicWindow.lean` and `DyadicMixing.lean` in order with `lean -o "$out/Module.olean" Module.lean`, substituting the module name each time. Then run `lean OctaveCriterion.lean` in the same environment. The final file prints the axioms of the equivalence and both stability theorems.

@@ -11,13 +11,13 @@ structure Laws {α : Type*} (f : Nat → α) : Prop where
 
 def Period {α : Type*} (f : Nat → α) (p : Nat) : Prop := ∀ n, f (n+p) = f n
 
-private theorem shift {α : Type*} {f : Nat → α} {p : Nat} (per : Period f p) (n j : Nat) :
+theorem shift {α : Type*} {f : Nat → α} {p : Nat} (per : Period f p) (n j : Nat) :
     f (n+j*p) = f n := by
   induction j with
   | zero => simp
   | succ j ih => simpa [Nat.succ_mul, ← Nat.add_assoc] using (per (n+j*p)).trans ih
 
-private theorem reduce {α : Type*} {f : Nat → α} {p : Nat} (per : Period f p) (n : Nat) :
+theorem reduce {α : Type*} {f : Nat → α} {p : Nat} (per : Period f p) (n : Nat) :
     f n = f (n%p) := by
   have h := shift per (n%p) (n/p)
   rwa [Nat.mul_comm (n/p) p, Nat.mod_add_div] at h
