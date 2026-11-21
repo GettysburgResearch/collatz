@@ -9,3 +9,5 @@ import BandClosure
 #print axioms CollatzShell.ForwardSection.Population.universal_iff_cubic_bound
 #check CollatzShell.ForwardSection.Population.DenseBandFans
 #check CollatzShell.ForwardSection.Population.CubicSurvivorBound
+#print axioms CollatzShell.BandParityBridge.complementary_transfer_is_same_odd_psi
+#print axioms CollatzShell.BandParityBridge.solved_phase_odd_psi

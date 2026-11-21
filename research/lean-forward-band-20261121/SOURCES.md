@@ -26,6 +26,9 @@ replay report; `upstream-pins.json` records comparison with the frozen commit.
 - Invoked results: weighted residue counting (WC); retained-prefix bounds;
   a positive cylinder for the smoothed selected densities; exact affine
   word normalization and concatenation.
+- `DIVERGENT_ORBIT_PHASES.md` additionally invokes Section 6's uniform
+  lower logarithmic predecessor-density bound, with coefficient
+  `c_0/b` for every positive unit target `b`.
 - [Pinned parent proof](https://github.com/GettysburgResearch/collatz/blob/f87cb69b3dd86257731ddfbab58c87bf3b5f63d6/research/lean-ordinary-closure-20261121/LINEAR_BLOCK_ATOM_FLOOR.md).
 
 The parent note attributes the selected-density strategy and weighted
@@ -63,8 +66,13 @@ Lean. `BandPopulationCriterion.lean` therefore takes `DenseBandFans` as a
 named hypothesis; no axiom states that predicate.
 
 The exact clock-compression, marked-family component descent, restoration,
-and carry identities are unconditional Lean theorems. Their scope is their
+carry identities, and parity bridge are unconditional Lean theorems. Their scope is their
 stated identities and implications, not universal Collatz convergence.
+
+The reciprocal-summability and asymptotic-phase result is a separately
+reviewed written consequence of the uniform predecessor-density input. It
+has not been formalized in Lean. It assumes a nonrepeating odd unit orbit;
+it does not exclude an additional periodic cycle.
 
 The first missing global estimate is the unconditional cubic survivor
 bound in the README. The alternative universal clock-saving selector and

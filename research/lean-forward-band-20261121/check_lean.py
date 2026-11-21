@@ -26,7 +26,8 @@ MATHLIB_PIN = "d13f23b723b8a846827a245b89c10fc7d3f11612"
 LEAN_COMMIT = "5045d0056413266e57c625dcd7c365b10e377c52"
 MODULES = [
     "ShellCover", "ForwardSection", "SectionDynamics", "RisingReturns",
-    "CarryBlocks", "CarrySection", "BandTransport", "BandPopulationCriterion",
+    "CarryBlocks", "CarrySection", "BandTransport", "BandParityBridge",
+    "BandPopulationCriterion",
     "BandClosure", "Audit",
 ]
 STANDARD_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}

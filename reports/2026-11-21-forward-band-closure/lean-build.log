@@ -40,6 +40,18 @@ MODULE BandTransport
 'CollatzShell.BandTransport.band_family_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
 
 
+MODULE BandParityBridge
+'CollatzShell.BandParityBridge.complementary_identifications' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandParityBridge.complementary_transfer_is_same_odd_psi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandParityBridge.complementary_forward_is_reverse_same_psi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandParityBridge.complementary_query_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandParityBridge.solved_phase_odd_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
 MODULE BandPopulationCriterion
 'CollatzShell.ForwardSection.Population.predecessor_subset_survivors' depends on axioms: [propext,
  Classical.choice,
@@ -64,3 +76,7 @@ MODULE Audit
  Quot.sound]
 CollatzShell.ForwardSection.Population.DenseBandFans : Prop
 CollatzShell.ForwardSection.Population.CubicSurvivorBound : Prop
+'CollatzShell.BandParityBridge.complementary_transfer_is_same_odd_psi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandParityBridge.solved_phase_odd_psi' depends on axioms: [propext, Classical.choice, Quot.sound]

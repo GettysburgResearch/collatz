@@ -1,6 +1,7 @@
 import RisingReturns
 import CarrySection
 import BandTransport
+import BandParityBridge
 import BandPopulationCriterion
 
 /-!

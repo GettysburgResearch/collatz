@@ -91,6 +91,23 @@ The open universal selector is not introduced as an axiom.
 [Proof note and remaining phase](BAND_TRANSPORT_NOTE.md) ·
 [Lean source](lean/BandTransport.lean)
 
+A further Lean module puts this result directly into the earlier odd-psi
+comparison framework. The solved phase gives an unconditional comparison
+`Basin(n) ↔ Basin(2n−1)` for the whole block family. In the complementary
+phase, the proposed transfer is exactly that same original odd query, at
+unchanged rank. This identifies the circular step that an attempted closing
+induction would otherwise hide.
+
+[Parity bridge and exact remaining query](BAND_PARITY_BRIDGE_NOTE.md) ·
+[Lean bridge](lean/BandParityBridge.lean)
+
+A matched bounded search also tested the new rule against the entire saved
+odd-psi frontier through six binary refinements. The remaining frontiers
+were identical to the baseline. The [full-frontier check](search/PHASE_COMPLETION_CHECK.md)
+records the exact bounds, unchanged cells, and replay data; it is not a
+claim that larger searches or other proofs are impossible.
+
+
 ## 3. Carry accounting across large rising returns
 
 Write \(n+1=2^r q\) with odd \(q\), and define \(H(n)=3^r q\). Lean proves
@@ -132,7 +149,30 @@ not silently promoted to a kernel theorem. The clock may vary with the
 octave. Every sufficiently large octave must pass: an arbitrary unbounded
 subsequence would not be enough for this argument.
 
-## 5. Sources and replay
+## 5. A global restriction on any divergent orbit
+
+The final closing attempt gives another source-qualified analytic consequence
+of PR180's uniform predecessor-density bound. Any nonrepeating positive odd
+unit orbit `q_i` must satisfy
+
+\[
+\sum_i\frac1{q_i}\le\frac{22}{c_0}<\infty.
+\]
+
+The proof chooses one small inverse parent off the orbit at every step;
+their entire predecessor sets are disjoint. The density lower bounds can
+therefore be summed over every finite collection. It follows that the
+binary logarithmic phases of a divergent odd orbit approach one irrational
+rotation and are equidistributed. Its marked visits would be infinite but
+have zero frequency in odd time.
+
+This rules out nonsummable reciprocal growth of a divergent orbit. It does
+not rule out a divergent orbit with summable reciprocals or another cycle,
+and the survivor upper bound above remains open.
+
+[Disjoint-branch proof and final transport check](DIVERGENT_ORBIT_PHASES.md)
+
+## 6. Sources and replay
 
 [Source pins and evidence boundaries](SOURCES.md) lists the imported files,
 the prior analytic interface, and the published analytic input.
@@ -149,7 +189,7 @@ python research/lean-forward-band-20261121/verify_marked_cloud.py \
   --output reports/2026-11-21-forward-band-closure/marked-cloud-examples.json
 ```
 
-The first command recompiles all ten local modules into a fresh output
+The first command recompiles all eleven local modules into a fresh output
 directory, treats warnings as errors, and records source hashes and printed
 axioms. The second checks finite legal inverse clouds using exact integer
 and rational arithmetic. Those examples do not validate the analytic
