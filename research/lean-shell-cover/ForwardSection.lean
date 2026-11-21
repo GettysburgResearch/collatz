@@ -36,7 +36,7 @@ private theorem orbit_odd {n : Nat} (hn : n%2=1) (j : Nat) : oddOrbit n j%2=1 :=
   | zero => exact hn
   | succ i => exact part_odd (by omega : 0<3*oddOrbit n i+1)
 
-private theorem odd_step_hit {n : Nat} (hn : n%2=1) : Hits n (oddStep n) := by
+private theorem odd_step_clock {n : Nat} (hn : n%2=1) : orbit (twos (3*n+1)) n=oddStep n := by
   let a := twos (3*n+1)
   have eq : 2^a*oddStep n=3*n+1 := split_twos _
   have ho := part_odd (by omega : 0<3*n+1)
@@ -46,12 +46,13 @@ private theorem odd_step_hit {n : Nat} (hn : n%2=1) : Hits n (oddStep n) := by
   | succ b =>
     rw [ha,show 2^(b+1)*oddStep n=2*(2^b*oddStep n) by ring] at eq
     have st : step n=2^b*oddStep n := by simp [step,hn]; omega
-    exact ⟨b+1,by simp only [orbit,st,orbit_pad]⟩
+    change orbit a n=oddStep n
+    rw [ha]; simp only [orbit,st,orbit_pad]
 
 theorem odd_orbit_hit {n : Nat} (hn : n%2=1) (j : Nat) : Hits n (oddOrbit n j) := by
   induction j with
   | zero => exact ⟨0,rfl⟩
-  | succ j ih => exact ih.trans (odd_step_hit (orbit_odd hn j))
+  | succ j ih => exact ih.trans ⟨_,odd_step_clock (orbit_odd hn j)⟩
 
 private theorem size_step {n : Nat} (hn : n%2=1) : oddStep n≤2*n := by
   have eq := split_twos (3*n+1)
@@ -328,18 +329,96 @@ theorem descent_or_section (n : Nat) (hn : n%2=1) :
   · exact ⟨j,bound,Or.inl drop⟩
   · exact ⟨j,bound,Or.inr (section_of_phase (orbit_pos (by omega) j) (by simpa [height] using lo) (by simpa [height] using hi))⟩
 
-/-- Every individual positive forward orbit visits the section. -/
-theorem hits_section (n : Nat) (hn : 0<n) : ∃ x, 0<x ∧ InSection x ∧ Hits n x := by
+private theorem odd_orbit_add (n i j : Nat) : oddOrbit n (i+j)=oddOrbit (oddOrbit n i) j := by
+  induction j with
+  | zero => rfl
+  | succ j ih => change oddStep (oddOrbit n (i+j))=_; rw [ih]; rfl
+
+private theorem bounded_odd_visit (n : Nat) (hn : n%2=1) :
+    ∃ j<2*n.sqrt, InSection (oddOrbit n j) := by
   induction n using Nat.strong_induction_on with
   | h n ih =>
-    by_cases even : n%2=0
-    · obtain ⟨x,xp,sec,hit⟩ := ih (n/2) (by omega) (by omega)
-      exact ⟨x,xp,sec,Hits.trans (y:=n/2) ⟨1,by simp [orbit,step,even]⟩ hit⟩
-    have odd : n%2=1 := by omega
-    obtain ⟨j,_,drop | sec⟩ := descent_or_section n odd
-    · obtain ⟨x,xp,sec,hit⟩ := ih (oddOrbit n j) (by omega) (orbit_pos hn j)
-      exact ⟨x,xp,sec,(odd_orbit_hit odd j).trans hit⟩
-    · exact ⟨_,orbit_pos hn j,sec,odd_orbit_hit odd j⟩
+    obtain ⟨i,si,drop | mark⟩ := descent_or_section n hn
+    · let y := oddOrbit n i
+      have less : y<n := by change 4*y<n at drop; omega
+      obtain ⟨j,sj,mj⟩ := ih y less (orbit_odd hn i)
+      have budget : 2*y.sqrt≤n.sqrt := Nat.le_sqrt.mpr (by
+        have sq := Nat.sqrt_le y
+        change 4*y<n at drop
+        nlinarith only [sq,drop])
+      exact ⟨i+j,by omega,by rw [odd_orbit_add]; exact mj⟩
+    · exact ⟨i,by omega,mark⟩
+
+private def clock (n : Nat) : Nat → Nat
+  | 0 => 0
+  | j+1 => clock n j+twos (3*oddOrbit n j+1)
+
+private theorem clock_exact {n : Nat} (hn : n%2=1) (j : Nat) : orbit (clock n j) n=oddOrbit n j := by
+  induction j with
+  | zero => rfl
+  | succ j ih => rw [clock,orbit_add,ih,odd_step_clock (orbit_odd hn j)]; rfl
+
+private theorem clock_weight {n : Nat} (np : 0<n) (j : Nat) : 2^(clock n j)*oddOrbit n j≤4^j*n := by
+  induction j with
+  | zero => simp [clock,oddOrbit]
+  | succ j ih =>
+    let y := oddOrbit n j
+    have stepEq : 2^(twos (3*y+1))*oddStep y=3*y+1 := split_twos _
+    have up : 3*y+1≤4*y := by have : 0<y := orbit_pos np _; omega
+    calc _ = 2^(clock n j)*(3*y+1) := by
+           rw [clock,pow_add,Nat.mul_assoc]
+           exact congrArg (2^(clock n j)*·) stepEq
+         _ ≤ 2^(clock n j)*(4*y) := Nat.mul_le_mul_left _ up
+         _ = 4*(2^(clock n j)*y) := by ring
+         _ ≤ _ := by rw [show 4^(j+1)*n=4*(4^j*n) by ring]; exact Nat.mul_le_mul_left 4 ih
+
+def Marked (x : Nat) : Prop := x%2=1 ∧ InSection x
+instance (x : Nat) : Decidable (Marked x) := inferInstanceAs (Decidable (_ ∧ _))
+
+/-- The bound counts shortcut steps on the supplied integer, including every halving. -/
+theorem bounded_visit (n : Nat) (hn : 0<n) :
+    ∃ t<4*n.sqrt+n.log2, Marked (orbit t n) := by
+  let y := oddPart n
+  have yp : 0<y := part_pos hn
+  have yo : y%2=1 := part_odd hn
+  obtain ⟨j,sj,ok⟩ := bounded_odd_visit y yo
+  have splitn : 2^(twos n)*y=n := split_twos n
+  have yl : y≤n := by have h := Nat.mul_le_mul_right y (Nat.one_le_pow (twos n) 2 (by decide)); omega
+  have hit : orbit (twos n) n=y := by simpa only [splitn] using orbit_pad (twos n) y
+  let t := twos n+clock y j
+  have exactHit : orbit t n=oddOrbit y j := by rw [show t=twos n+clock y j by rfl,orbit_add,hit,clock_exact yo]
+  have upper : 2^t≤4^j*n := by
+    have min1 := Nat.mul_le_mul_left (2^(clock y j)) (orbit_pos yp j)
+    have one : 2^(clock y j)≤2^(clock y j)*oddOrbit y j := by simpa using min1
+    calc 2^t = 2^(twos n)*2^(clock y j) := pow_add _ _ _
+         _ ≤ 2^(twos n)*(4^j*y) := Nat.mul_le_mul_left _ (one.trans (clock_weight yp j))
+         _ = 4^j*(2^(twos n)*y) := by ring
+         _ = 4^j*n := by rw [splitn]
+  have bt : t<2*j+(n.log2+1) := (Nat.pow_lt_pow_iff_right (by decide : 1<2)).mp (by
+    calc 2^t ≤ 4^j*n := upper
+         _ < 4^j*2^(n.log2+1) := Nat.mul_lt_mul_of_pos_left Nat.lt_log2_self (by positivity)
+         _ = 2^(2*j+(n.log2+1)) := by rw [pow_add 2 (2*j) (n.log2+1),pow_mul]; rfl)
+  have sq := Nat.sqrt_le_sqrt yl
+  exact ⟨t,by omega,by rw [exactHit]; exact ⟨orbit_odd yo j,ok⟩⟩
+
+/-- An exact integer membership formula in the octave of `x`. -/
+theorem section_iff_offset {x : Nat} (xp : 0<x) : InSection x ↔
+    x≤2^x.log2+(70*2^x.log2)/(x.log2+1) := by
+  have low := Nat.log2_self_le xp.ne'
+  unfold InSection
+  rw [Nat.mul_comm,← Nat.le_div_iff_mul_le (by omega : 0<x.log2+1)]
+  omega
+
+theorem collatz_iff_marked : Universal ↔ ∀ n, Marked n → Basin n := by
+  constructor
+  · intro all n hn; exact all n (by have := hn.1; omega)
+  · intro cover n hn
+    obtain ⟨t,_,m⟩ := bounded_visit n hn
+    exact Hits.trans (y:=orbit t n) ⟨t,rfl⟩ (cover _ m)
+
+theorem hits_section (n : Nat) (hn : 0<n) : ∃ x, 0<x ∧ InSection x ∧ Hits n x := by
+  obtain ⟨t,_,ho,hs⟩ := bounded_visit n hn
+  exact ⟨_,by omega,hs,⟨t,rfl⟩⟩
 
 theorem collatz_iff_section : Universal ↔ ∀ n, 0<n → InSection n → Basin n := by
   constructor
@@ -347,5 +426,9 @@ theorem collatz_iff_section : Universal ↔ ∀ n, 0<n → InSection n → Basin
   · intro cover n hn
     obtain ⟨x,xp,sec,hit⟩ := hits_section n hn
     exact hit.trans (cover x xp sec)
+
+#print axioms steer
+#print axioms bounded_visit
+#print axioms collatz_iff_section
 
 end CollatzShell.ForwardSection
