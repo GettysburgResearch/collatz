@@ -88,11 +88,17 @@ pending. Its clean complete-checkout validation passed all five required
 commands and left the checkout unchanged; the full receipt is
 [`checkpoint1-validation.json`](checkpoint1-validation.json).
 
-The checked proof checkpoint and its clean complete-checkout receipt will be
-recorded in a follow-up receipt commit. The latest exact-head gate is stated
-in PR 183 after remote readback. Source binding to the formal replay is
-checked again before the final publication; an integrity gate is not a
-mathematical proof.
+The checked proof checkpoint is
+`a1167734093b5fc30f1d7b5ad57bc3e61dbf4cc0`, tree
+`449a44b99a3e0851b8522905328619771377901a`. All five required commands passed
+in its clean complete checkout, which remained unchanged. The full receipt
+is [`checked-proof-validation.json`](checked-proof-validation.json).
+
+This follow-up records that execution and the
+[exact source binding](source-binding.json); it does not change any Lean
+proof or executable. PR 183 records the latest exact-head gate after remote
+readback, separately from the committed receipt for the checked proof
+checkpoint. Repository integrity checks do not certify mathematics.
 
 ## Global boundary
 
