@@ -725,7 +725,7 @@ theorem collatz_iff_unbounded_one_hits :
     have e : z=1 := by omega
     exact e ▸ ⟨0,rfl⟩
 
-private theorem odd_run (b u : Nat) (hu : 0<u) :
+theorem odd_run (b u : Nat) (hu : 0<u) :
     orbit b (2^b*u-1)=3^b*u-1 ∧
     ∀ j≤b, 2^b*u-1≤orbit j (2^b*u-1) := by
   induction b generalizing u with
