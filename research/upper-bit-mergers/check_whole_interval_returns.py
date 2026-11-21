@@ -5,7 +5,7 @@ from math import factorial
 
 from check import step, walk
 from check_affine_rays import lift_step
-from check_five_return_classes import return_cell, state_step
+from check_five_return_classes import return_cell, return_word, state_step
 
 
 def check(condition, message):
@@ -112,6 +112,81 @@ def check_cells():
     return verified
 
 
+
+def terminal_lift(residue, h, ternary_residue):
+    """Construct an ordinary terminal with prescribed binary prefix and residue modulo 9."""
+    source, p = walk(residue, h)
+    target, q = walk(5 * residue, h)
+    level = q - p
+    offset = 3**max(0, -level) * target - 5 * 3**max(0, level) * source
+    form = (3**p, source)
+
+    def take(parity):
+        nonlocal level, offset, form, residue, h, p
+        bit = (parity - form[1]) % 2
+        residue += bit << h
+        h += 1
+        form, actual = lift_step(form, bit)
+        check(actual == parity, "illegal selected source parity")
+        level, offset = state_step(level, offset, parity)
+        check((level, offset) != (0, 0), "terminal steering touched the root")
+        p += parity
+
+    for parity in return_word(level, offset):
+        if state_step(level, offset, parity) == (0, 0):
+            break
+        take(parity)
+    if (level, offset) == (-1, -1):
+        for bit in (1, 0, 0, 0, 0, 0):
+            take(bit)
+    else:
+        check((level, offset) == (1, 5), "unexpected predecessor of the root")
+        take(0)
+    while level < 61:
+        take(0)
+    check((level, offset) == (61, 2), "universal terminal section")
+
+    # Lift the doubling exponent one ternary digit at a time. No large
+    # power of two needs to be materialized for the symbolic certificate.
+    unit = 9
+    t0 = (ternary_residue - residue) * pow(1 << h, -1, unit) % unit
+    wanted = form[1] + form[0] * t0
+    modulus, period = 3, 2
+    exponent = 0 if wanted % 3 == 1 else 1
+    while modulus < unit * form[0]:
+        modulus *= 3
+        candidates = (exponent + j * period for j in range(3))
+        exponent = next(pos for pos in candidates if pow(2, pos, modulus) == wanted % modulus)
+        period *= 3
+    lower = max(2, form[1].bit_length() + 1)
+    exponent += max(0, (lower - exponent + period - 1) // period) * period
+    check(pow(2, exponent, modulus) == wanted % modulus, "power endpoint congruence")
+    check(form[0] == 3**p, "incorrect source slope")
+    if exponent <= 1800:
+        parameter = ((1 << exponent) - form[1]) // form[0]
+        x = residue + (parameter << h)
+        check(x > 0 and x % 9 == ternary_residue, "ordinary ternary projection")
+        check(walk(x, h) == (1 << exponent, p), "ordinary power endpoint")
+        endpoint = 5 * 3**(61 + exponent // 2) + (1 if exponent % 2 else 2)
+        check(walk(5 * x, h + exponent)[0] == endpoint, "exponential companion endpoint")
+        check(root_clocks(x, h + exponent + 120) == {0: x}, "ordinary terminal lift")
+        return 1
+    return 0
+
+
+def check_terminal_prefixes():
+    h = 8
+    survivors = literals = 0
+    for residue in range(1 << h):
+        if set(root_clocks(residue, h)) != {0}:
+            continue
+        survivors += 1
+        for ternary_residue in (0, 1, 5):
+            literals += terminal_lift(residue, h, ternary_residue)
+    check(literals > 0, "missing literal ordinary witnesses")
+    return survivors, literals
+
+
 def check_martingale():
     for level in range(-4, 5):
         for offset in range(-24, 25):
@@ -132,4 +207,5 @@ if __name__ == "__main__":
     check_martingale()
     print("Odd binary representatives in renewal replay:", check_marked_renewal(13))
     print("Certified source fixtures:", check_terminals())
+    print("Terminal construction (surviving classes, literal lifts):", check_terminal_prefixes())
     print("Block certificates (size, group clock, ratio clock):", check_cells())
