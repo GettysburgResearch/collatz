@@ -13,6 +13,10 @@ are retained under `lean/vendor/`; [SOURCES.md](SOURCES.md) gives their
 Git blob identities, attribution, map convention, and dependency pins.
 The older PR178 common-rank work is not treated as a proof of global coverage.
 
+The later [repository-wide reframe](../reframe-20261121/README.md) connects
+this section to marked binary-prefix mergers, canonical certificate languages,
+and the exact ordinary/compact Green-weight boundary.
+
 ## The exact source result being used
 
 Write `T(n)=n/2` for even inputs and `(3n+1)/2` for odd inputs. An odd

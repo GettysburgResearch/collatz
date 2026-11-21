@@ -6,6 +6,10 @@ for guarded certificate transformations, and a kernel-checked infinite
 family on which the present move catalog has no applicable step. No open
 Collatz statement is introduced as an axiom or filled with `sorry`.
 
+The subsequent [repository-wide reframe](../reframe-20261121/README.md)
+compares the complete-word and marked-section work with the ordinary mass
+and spectral routes, and adds a checked fixed-block canonical-pump theorem.
+
 All clocks use the positive shortcut map `T(n)=n/2` for even `n` and
 `T(n)=(3n+1)/2` for odd `n`. Every input and orbit here is an ordinary
 natural integer.
