@@ -9,4 +9,5 @@ require mathlib from git
 
 @[default_target] lean_lib ForwardBand where
   roots := #[`ShellCover, `ForwardSection, `SectionDynamics, `RisingReturns, `CarryBlocks, `CarrySection, `BandTransport, `BandParityBridge,
-    `BandPopulationCriterion, `BandClosure, `Audit]
+    `BandPopulationCriterion, `UnitPopulationTransport, `WitnessGlobal,
+    `InverseDensityPotential, `MarkedDensityPotential, `BandClosure, `Audit]

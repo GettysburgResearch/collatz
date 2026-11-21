@@ -61,6 +61,50 @@ MODULE BandPopulationCriterion
  Quot.sound]
 
 
+MODULE UnitPopulationTransport
+'CollatzShell.UnitPopulationTransport.lift_three_clocks' depends on axioms: [propext, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE WitnessGlobal
+'CollatzShell.WitnessGlobal.low_complete_is_one' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.low_trace_to_five' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_language' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.terminal_gap_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+MODULE InverseDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_strict_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.two_short_unit_parents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.inverse_affine_clock' depends on axioms: [propext, Quot.sound]
+'CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_absorbing_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE MarkedDensityPotential
+'CollatzShell.InverseDensityPotential.normalized_segment_increases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
 MODULE BandClosure
 
 
@@ -80,3 +124,18 @@ CollatzShell.ForwardSection.Population.CubicSurvivorBound : Prop
  Classical.choice,
  Quot.sound]
 'CollatzShell.BandParityBridge.solved_phase_odd_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.UnitPopulationTransport.unitize_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.additive_transfer_of_pair_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_absorbing_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.InverseDensityPotential.finite_marked_absorbing_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.InverseDensityPotential.universal_of_marked_inverse_envelope_and_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CollatzShell.InverseDensityPotential.MarkedSublinear (F : ℕ → ℝ) : Prop

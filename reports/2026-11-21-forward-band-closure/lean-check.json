@@ -4,14 +4,14 @@
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "warnings_as_errors": true,
   "fresh_local_module_output": true,
-  "module_count": 11,
+  "module_count": 15,
   "modules": [
     {
       "module": "ShellCover",
       "source": "lean/ShellCover.lean",
       "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
       "exit_code": 0,
-      "seconds": 18.912,
+      "seconds": 21.027,
       "printed_axioms": []
     },
     {
@@ -19,7 +19,7 @@
       "source": "lean/ForwardSection.lean",
       "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
       "exit_code": 0,
-      "seconds": 10.592,
+      "seconds": 10.666,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -31,7 +31,7 @@
       "source": "lean/SectionDynamics.lean",
       "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
       "exit_code": 0,
-      "seconds": 2.74,
+      "seconds": 2.444,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -43,7 +43,7 @@
       "source": "lean/RisingReturns.lean",
       "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a",
       "exit_code": 0,
-      "seconds": 8.127,
+      "seconds": 10.508,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -55,7 +55,7 @@
       "source": "lean/CarryBlocks.lean",
       "sha256": "a7d27d23a76fef52dc1dc2e5c8556d8c66472b22b272f534e4dbfdb6436520c1",
       "exit_code": 0,
-      "seconds": 1.955,
+      "seconds": 2.407,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -67,7 +67,7 @@
       "source": "lean/CarrySection.lean",
       "sha256": "015d300a2fca0d063381d0443caea3c6cf93bf09de7c79865b8f84615464b5fc",
       "exit_code": 0,
-      "seconds": 1.871,
+      "seconds": 2.318,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -79,7 +79,7 @@
       "source": "lean/BandTransport.lean",
       "sha256": "4534e598e1f6c4ac20b105bb3060142a5eb4f7a4de2299d66511ad2cee6eb44d",
       "exit_code": 0,
-      "seconds": 6.312,
+      "seconds": 6.7,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -91,7 +91,7 @@
       "source": "lean/BandParityBridge.lean",
       "sha256": "4244b1f03c241afa0f1cd5edcd7fdc16e8253a4ab6c3177a1fb381ac614c6264",
       "exit_code": 0,
-      "seconds": 2.6,
+      "seconds": 2.959,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -103,7 +103,55 @@
       "source": "lean/BandPopulationCriterion.lean",
       "sha256": "60a12e6f23e52480296b9537331effc375cb4cc6904e6b09d16324c7176c982e",
       "exit_code": 0,
-      "seconds": 2.311,
+      "seconds": 2.235,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "UnitPopulationTransport",
+      "source": "lean/UnitPopulationTransport.lean",
+      "sha256": "76bf04550e0fcb6ed4451d3b502e4182bc6b3f9ad9a2f7a4b17ef2eba0e492c9",
+      "exit_code": 0,
+      "seconds": 2.118,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "WitnessGlobal",
+      "source": "lean/WitnessGlobal.lean",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "exit_code": 0,
+      "seconds": 5.918,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "InverseDensityPotential",
+      "source": "lean/InverseDensityPotential.lean",
+      "sha256": "f644a2e04179c3589aeb07f0f0c29ce3876348e84d90d1d87df043f1d71fec2b",
+      "exit_code": 0,
+      "seconds": 5.645,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "module": "MarkedDensityPotential",
+      "source": "lean/MarkedDensityPotential.lean",
+      "sha256": "7172d964262c91c33b72bc1b6c077e76a59557f0522c829454a0be0f61819685",
+      "exit_code": 0,
+      "seconds": 2.515,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -113,17 +161,17 @@
     {
       "module": "BandClosure",
       "source": "lean/BandClosure.lean",
-      "sha256": "2075dd1f0525065ce4f547f96c0642f6563dbbada2d6f384a4d466199a9bfdd9",
+      "sha256": "b1fe51481ad5080b56aa5adaeb1e36211178b2bb83e6e0a4b927da6356d31b4d",
       "exit_code": 0,
-      "seconds": 2.014,
+      "seconds": 1.915,
       "printed_axioms": []
     },
     {
       "module": "Audit",
       "source": "lean/Audit.lean",
-      "sha256": "a01565165d67bb78f6da30cfc24c13a3c83e5c5c0943a5cc938f14d33c88a683",
+      "sha256": "dc91ea763024d077f12f62b615fb342c7bed1054b1412de58200c23879a88013",
       "exit_code": 0,
-      "seconds": 2.057,
+      "seconds": 2.226,
       "printed_axioms": [
         "Classical.choice",
         "Quot.sound",
@@ -134,6 +182,9 @@
   "scope": "Local Lean modules and their printed axiom audits.",
   "not_formalized": [
     "The analytic controlled atom floor and marked population theorem",
+    "Joint clock mixing and uniform natural predecessor density",
+    "The Abel and harmonic ordinary inverse-envelope constructions",
+    "A sublinear upper envelope on all large marked ordinary inputs",
     "An unconditional cubic survivor upper bound",
     "Universal Collatz convergence"
   ]

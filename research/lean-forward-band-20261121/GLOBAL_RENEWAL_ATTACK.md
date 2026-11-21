@@ -374,12 +374,203 @@ bound for that killed transfer has not been established here. Dropping
 the real condition, or replacing the scalar Haar factor in (7.1) by a
 pointwise ordinary estimate, would be the first unsupported step.
 
+## 8. A finite positive inverse envelope exists on ordinary arguments
+
+The global potential route can be advanced further without proving a
+pointwise limit of the offset densities. This construction uses the
+earlier uniform atom floor from
+`LINEAR_BLOCK_ATOM_FLOOR.md`; the stronger clock floor is not necessary
+for it.
+
+For a positive integer \(q\), write
+
+\[
+ D_s(q)=\sum_{\substack{|w|=s\\\beta_w\equiv q\ (3^s)}}\omega_w,
+ \qquad\omega_w=3^s2^{-A(w)},\qquad D_0(q)=1.
+\]
+
+At positive depth, every word in this sum is an actual positive odd-source
+inverse history ending at \(q\); the empty word has source \(q\) itself.
+For an even target, the final word exponent stops at that even target,
+before any remaining halvings to its odd part. If its source is \(n\), then
+
+\[
+                  q=\omega_wn+\beta_w,
+              \qquad 0<\omega_w\le q/n.              \tag{8.1}
+\]
+
+Define the positive inverse operator by
+
+\[
+ (PF)(q)=\sum_{\substack{e\ge1\\2^eq\equiv1\ (3)}}
+              \frac3{2^e}F\left(\frac{2^eq-1}{3}\right).
+                                                               \tag{8.2}
+\]
+
+All arguments on the right are positive odd integers. The exact word
+recursion is \(D_{s+1}=PD_s\). The conclusion of this section is that
+there is a finite function \(F\) on all positive integers with
+
+\[
+ \boxed{PF\le F,\qquad F(q)\ge c_0>0\quad(3\nmid q).}           \tag{8.3}
+\]
+
+This supplies the positive pair-transfer envelope used in
+[`GLOBAL_ARITHMETIC_ATTACK.md`](GLOBAL_ARITHMETIC_ATTACK.md). It does
+**not** supply its sublinear upper bound \(F(q)/q\to0\).
+
+### 8.1 Cesaro bounds, including periodic collisions
+
+Put \(R=64/3\). At depth \(s\), first retain only words with
+\(A(w)\le6s\). Their sources satisfy
+
+\[
+                    n\le q\,2^{A(w)}/3^s\le qR^s.   \tag{8.4}
+\]
+
+If \(q\) is not periodic under \(T\), a fixed source can occur at
+only one depth: two hits of \(q\) would make \(q\) periodic. Fixed-depth
+word injectivity therefore allows the retained weights through depth
+\(S\) to be bounded by
+
+\[
+                    q H_{\lfloor qR^S\rfloor},       \tag{8.5}
+\]
+
+where \(H_N=\sum_{1\le n\le N}1/n\).
+
+If \(q\) is periodic, choose its least positive shortcut period \(E\)
+and let \(p\) be the number of odd steps in that cycle. Write
+\(\lambda=3^p2^{-E}\). Positivity in the complete affine cycle equation
+gives \(0<\lambda<1\); this applies to any hypothetical positive
+nontrivial cycle as well. For an odd source, its admissible inverse-word
+depths hitting \(q\) have the form \(h+kp\), and their weights have the
+form \(\omega_h\lambda^k\). The empty word at an even \(q\) contributes
+only once and satisfies the same bound. Their sum is at most
+\(q/(n(1-\lambda))\). Thus (8.5) remains valid after division by
+\(1-\lambda\). Periodic occurrences have been summed with their actual
+geometric weights, not incorrectly counted as distinct sources.
+
+For the discarded clocks, a geometric moment bound gives, uniformly in
+the residue \(q\),
+
+\[
+ \begin{aligned}
+  3^s\Pr(A_s>6s)
+  &\le 3^s(3/2)^{-6s}\mathbb E(3/2)^{A_s}\\
+  &=(64/81)^s,
+ \end{aligned}                                                       \tag{8.6}
+\]
+
+because \(\mathbb E(3/2)^{a_i}=3\). Their sum over positive depths is
+at most \(64/17\).
+
+Set \(\eta_q=1\) for nonperiodic \(q\), and
+\(\eta_q=1-\lambda\) for periodic \(q\). Equations (8.5)--(8.6) give
+
+\[
+ \sum_{s=0}^S D_s(q)
+ \le\frac q{\eta_q}\bigl(1+\log q+S\log R\bigr)+\frac{64}{17}.
+                                                               \tag{8.7}
+\]
+
+The constants depend on the fixed ordinary target, but are finite without
+any convergence assumption on its orbit.
+
+### 8.2 Abel averaging and diagonal extraction
+
+For \(0<\rho<1\), define
+
+\[
+                F_\rho(q)=(1-\rho)\sum_{s\ge0}\rho^sD_s(q).
+\]
+
+Positive summation by parts rewrites this as
+
+\[
+ F_\rho(q)=(1-\rho)^2\sum_{S\ge0}\rho^S
+                                \sum_{s=0}^S D_s(q).
+\]
+
+The affine bound (8.7) proves finiteness, boundedness as \(\rho\uparrow1\),
+and in particular
+
+\[
+              \limsup_{\rho\uparrow1}F_\rho(q)
+                              \le q\log R/\eta_q.     \tag{8.8}
+\]
+
+The earlier uniform atom floor gives absolute \(c_0>0,s_0\) with
+\(D_s(q)\ge c_0\) for unit \(q\) and \(s\ge s_0\). Hence
+\(F_\rho(q)\ge c_0\rho^{s_0}\).
+
+Enumerate the positive integers. Repeated bounded-subsequence
+extraction, followed by the diagonal subsequence, supplies
+\(\rho_j\uparrow1\) for which every \(F_{\rho_j}(q)\) converges to a
+finite \(F(q)\). It satisfies the upper bound (8.8) and the unit floor
+\(F(q)\ge c_0\). At multiples of three, the limit is zero, since
+\(D_s(q)=0\) for \(s\ge1\).
+
+There is also a bound that does not refer to an unknown cycle. If \(q\)
+is periodic, let \(r\le q\) be its odd part. The exact positive cycle
+product gives
+
+\[
+ \lambda=\prod_{i=0}^{p-1}\left(1+\frac1{3U^i(r)}\right)^{-1}
+          \le\left(1+\frac1{3r}\right)^{-1}
+          \le\left(1+\frac1{3q}\right)^{-1}.
+\]
+
+Hence \((1-\lambda)^{-1}\le3q+1\). In both the periodic and
+nonperiodic cases, the extracted envelope satisfies the unconditional
+polynomial bound
+
+\[
+                   F(q)\le q(3q+1)\log(64/3).        \tag{8.9}
+\]
+
+Positivity and the exact density recursion give
+
+\[
+        PF_\rho(q)=\frac{F_\rho(q)-(1-\rho)D_0(q)}\rho.
+\]
+
+Fatou's lemma for the countable nonnegative sum in (8.2) therefore gives
+
+\[
+       PF(q)\le\liminf_jPF_{\rho_j}(q)=F(q),
+\]
+
+which proves (8.3). Equality is not asserted: it would require an
+additional uniform-integrability argument for the infinitely many inverse
+parents. Superharmonicity already implies every finite two-parent
+inequality required by the companion Lean criterion.
+
+### 8.3 Exact progress toward the global envelope
+
+This construction removes the separate need to assume pointwise
+finiteness of a density limit. It gives a finite, uniformly positive
+ordinary inverse envelope directly. Its available upper estimate is
+linear in the target for nonperiodic targets and has the displayed cycle
+factor for periodic targets. A sublinear estimate has not been proved.
+
+The positive inverse inequality implies sublinearity along each fixed
+inverse-exponent ray: the nonnegative series in (8.2) is finite, so
+\(F((2^eq-1)/3)/((2^eq-1)/3)\to0\) along its legal exponents.
+Those rays are predecessor families of one fixed target. They are not
+the arbitrary forward orbit required by the absorbing-floor argument.
+Replacing this raywise conclusion by uniform decay over all large
+positive odd units would still be an unsupported step.
+
 ## Conclusion of this attack
 
 The new clock estimate supports a uniform linear population of ordinary
 predecessors at every sufficiently large scale relative to the supplied
 target, including unit sources. That statement improves the earlier
-logarithmic-density result and has a full written proof above.
+logarithmic-density result and has a full written proof above. The Abel
+construction additionally supplies a finite positive inverse-transfer
+envelope on every ordinary positive argument, without assuming a
+pointwise limit of the marginal densities.
 
 Neither survivor absorption nor finite-energy closure follows from the
 population lower bound alone. The full Collatz conclusion remains open

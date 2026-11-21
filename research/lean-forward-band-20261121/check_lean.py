@@ -28,6 +28,8 @@ MODULES = [
     "ShellCover", "ForwardSection", "SectionDynamics", "RisingReturns",
     "CarryBlocks", "CarrySection", "BandTransport", "BandParityBridge",
     "BandPopulationCriterion",
+    "UnitPopulationTransport", "WitnessGlobal",
+    "InverseDensityPotential", "MarkedDensityPotential",
     "BandClosure", "Audit",
 ]
 STANDARD_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
@@ -99,6 +101,9 @@ def main() -> None:
         "scope": "Local Lean modules and their printed axiom audits.",
         "not_formalized": [
             "The analytic controlled atom floor and marked population theorem",
+            "Joint clock mixing and uniform natural predecessor density",
+            "The Abel and harmonic ordinary inverse-envelope constructions",
+            "A sublinear upper envelope on all large marked ordinary inputs",
             "An unconditional cubic survivor upper bound",
             "Universal Collatz convergence",
         ],

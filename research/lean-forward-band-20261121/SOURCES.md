@@ -74,9 +74,11 @@ reviewed written consequence of the uniform predecessor-density input. It
 has not been formalized in Lean. It assumes a nonrepeating odd unit orbit;
 it does not exclude an additional periodic cycle.
 
-The first missing global estimate is the unconditional cubic survivor
-bound in the README. The alternative universal clock-saving selector and
-the carry-reset repayment bound are also open.
+The unconditional cubic survivor bound in the README remains open.
+The alternative universal clock-saving selector and the carry-reset
+repayment bound are also open. The new potential route isolates a different
+missing estimate: normalized potential decay on the marked odd units,
+followed by convergence of its finite marked base.
 
 ## Continuation: joint clock derivation
 
@@ -93,3 +95,54 @@ derives the uniform finite-scale ordinary predecessor count from the
 new central-total floor. These results remain written analysis. They do
 not establish the global survivor upper bound or discharge any Lean
 hypothesis by an undeclared axiom.
+
+## Continuation: ordinary potential and complete witnesses
+
+`GLOBAL_RENEWAL_ATTACK.md`, section 8, constructs a finite excessive
+envelope from complete ordinary inverse histories, with periodic collision
+weights retained. `GLOBAL_ARITHMETIC_ATTACK.md` harmonicizes this envelope
+and derives decay on each fixed dyadic and inverse-exponent ray.
+`REVIEW_JOINT_AND_ABEL.md` records a separate primary-source and arithmetic
+review. These are written analytic results. The new Lean modules
+`InverseDensityPotential` and `MarkedDensityPotential` prove arithmetic
+transfer and finite-floor implications with the upper envelope and base
+explicitly quantified; they do not formalize the analytic construction.
+
+`UnitPopulationTransport.lean` proves the exact map `n -> 4n+1`, its
+three-clock merger, its at-most-two multiplicity and finite population
+transport. It does not assert the analytic lower population estimate.
+
+`WITNESS_GLOBAL_ATTACK.md` records the complete source-word attack based on
+PR177 at `00a611094043afeb256d6532b477c0709e8ed270`, with the exact source
+paths given there. PR184's alternate-history interface was inspected at
+`366dab89ee9548084ab9b5e4e90ff82abf287a20`. The new `WitnessGlobal.lean`
+imports only this packet's foundation and proves its own complete-language
+and terminal-family statements; no theorem from those PRs is postulated.
+
+The harmonic-ray construction in `HARMONIC_RAY_OBSTRUCTION.md`, sections
+1--4, is an explicit ordinary arithmetic argument. Its cofinal marked
+variant in section 5 invokes PR176 at
+`3dbe5542fd6a5a1d63b354225d92391471c17002`, under
+`research/lean-global-resolvent-20261121/section/lean/`, specifically
+`BandSteering.lean`, `FanGeometry.lean`, and `BandCriterion.lean`.
+That dependence is source-qualified: no fresh replay of PR176 is claimed
+by this packet's local fifteen-module build. The obstruction concerns
+generic harmonic properties, not the specific Abel provenance or
+universal Collatz convergence.
+
+`MINIMAL_ENVELOPE_ATOM_REMOVAL.md` uses the constructed finite excessive
+envelope and uniform atom floor to build a canonical least majorant and
+remove all simple-ray atoms. Its fixed-target basin upper estimate also
+uses the unit-source population theorem `(PDU)` and the two-short-parent
+arithmetic. The minimality argument and the off-branch packing were
+independently checked. These results remain written analysis; the local
+Lean replay does not certify the analytic construction or the remaining
+uniformity over moving marked targets.
+
+`ABEL_MARKED_UPPER_ATTACK.md` proves a quantitative global sublinear bound
+for every fixed subcritical Abel approximant directly from exact ordinary
+word injectivity, nonnegative summation, and the geometric exponent moment.
+It includes periodic targets by discounted overcounting. It states both
+the divergent critical constants and the discounted transfer loss, so its
+upper estimate is not substituted for the open critical marked bound.
+This estimate is written analysis and is outside the local Lean replay.

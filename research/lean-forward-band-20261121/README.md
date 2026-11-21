@@ -44,6 +44,115 @@ descent remain open.
 [Joint clock proof](JOINT_CLOCK_MIXING.md) ·
 [Independent review and ordinary population theorem](GLOBAL_RENEWAL_ATTACK.md)
 
+## Continuation: a constructed potential and closure on the marked band
+
+The three parallel attacks now supply four additional Lean modules and a
+written construction of a finite positive ordinary inverse potential.
+For the actual inverse operator
+
+\[
+(PF)(q)=\sum_{\substack{e\ge1\\2^e q\equiv1\ (3)}}
+ 3\,2^{-e}F((2^e q-1)/3),
+\]
+
+the Cesaro bound on complete inverse histories, Abel averaging, and a
+diagonal limit give a finite function `F` with `PF <= F` and a uniform
+positive floor on ternary units. The decreasing sequence `P^k F` then
+converges to a finite harmonic function `G` with `PG = G`, still with a
+uniform positive floor. The construction includes periodic collisions and
+even ordinary targets. It also proves `G(2^E q)/(2^E q) -> 0` for each
+fixed positive `q`.
+
+**This construction is written analysis, independently reviewed, and is
+not formalized in Lean.** It supplies the finite pair-transfer property
+needed by the formal arithmetic; a sublinear upper bound on the marked
+section is still open.
+
+The new Lean theorem requires that upper bound only on the actual forced
+band. Write `H(n) = F(n)/n`. The contribution of a second, distinct inverse
+parent gives an absolute `c>0` and
+
+\[
+F(q)\ge 3\,2^{-e}F(n)+c,\qquad 2^e q=3n+1.
+\]
+
+There is an exact threshold barrier: `H(n)>=2c` implies `H(q)>=2c`.
+Consequently, a small final marked value forces strict increase of `H`
+through every preceding odd step in that segment. The finite-superlevel
+argument proves:
+
+- `finite_marked_absorbing_floor`: if `H(n)->0` through marked odd units,
+  every positive ordinary source physically hits one finite part of the
+  marked band.
+- `universal_of_marked_inverse_envelope_and_base`: the same upper bound,
+  together with convergence of the finite marked base, implies `Universal`.
+
+Both are **kernel-checked implications**. `MarkedSublinear` and the finite
+base remain explicit hypotheses; no axiom supplies them. The earlier
+all-ordinary version is also included. The other two new modules prove the
+finite-population unitization transport and complete-word comparison
+results: the entire terminal-gap-four language closes on sixteen sources,
+while an explicit unbounded family of complete source certificates retains
+an exact Mersenne query on the wanted side.
+
+[Potential construction and arithmetic](GLOBAL_ARITHMETIC_ATTACK.md) ·
+[Band-only Lean proof](lean/MarkedDensityPotential.lean) ·
+[Complete source-word attack](WITNESS_GLOBAL_ATTACK.md) ·
+[Unit population transport](lean/UnitPopulationTransport.lean) ·
+[Independent analytic review](REVIEW_JOINT_AND_ABEL.md)
+
+The upper-bound attempt includes two exact failed sublinear candidates and
+an actual-map harmonic obstruction. A finite harmonic function concentrated
+on one inverse ray has normalized values bounded below along that ray,
+despite eventual vanishing along every fixed dyadic ray. A source-qualified
+version includes cofinally large marked nodes. Adding it to a positive
+harmonic envelope preserves the known floor and ray-decay properties, but
+destroys the desired uniform decay. This does **not** refute the particular
+Abel-derived envelope or the existence of a better one; it shows why the
+remaining argument must use more than those generic properties.
+
+[Harmonic-ray obstruction](HARMONIC_RAY_OBSTRUCTION.md) ·
+[Exact candidate certificates](../../reports/2026-11-21-forward-band-closure/inverse-density-majorant-counterexamples.json)
+
+The closing pass goes further: it constructs the **least excessive
+majorant** `V` of the unit indicator and proves that it has no inverse-ray
+atoms. A truncated subharmonic spike could otherwise be subtracted while
+preserving both the obstacle and excessivity, contradicting leastness.
+Harmonicization preserves the positive floor and this absence of atoms.
+Combining finite heavy-cylinder trees with the uniform predecessor count
+then proves the actual upper estimate
+
+\[
+V(n)/n\longrightarrow0
+\quad\text{through all odd unit predecessors of each fixed target }q.
+\]
+
+This is uniform over the **whole fixed-target predecessor basin**, including
+its marked points. Its cutoff still depends on the target. A divergent
+forward path would move through different target basins, so this result
+does not supply the remaining bound over all marked ordinary inputs.
+It is a source-qualified written proof, independently reviewed, not a
+new Lean theorem.
+
+[Canonical atom removal and the fixed-basin upper bound](MINIMAL_ENVELOPE_ATOM_REMOVAL.md)
+
+A complementary attack proves a global upper bound for every fixed
+subcritical Abel parameter. For `1/3 < rho < 1`, with explicit constants,
+
+\[
+F_\rho(q)\le q^{\,1+\log\rho/\log3}
+                 (B_\rho+A\log q).
+\]
+
+Thus each such approximant is globally sublinear, including at unknown
+periodic targets. The estimate also gives sublinear near-critical
+diagonals. The critical limit still lacks the required uniformity:
+`B_rho` diverges, the exponent tends to one, and the discounted transfer
+has an additional negative drift term. This written estimate does not
+silently replace the undiscounted inequality required by Lean.
+
+[Quantitative Abel upper bound and exact discount loss](ABEL_MARKED_UPPER_ATTACK.md)
+
 ## 1. New population theorem inside the actual band
 
 There is an absolute constant \(\gamma>0\) such that, for every positive
@@ -219,13 +328,17 @@ python research/lean-forward-band-20261121/check_lean.py \
   --report-dir reports/2026-11-21-forward-band-closure
 python research/lean-forward-band-20261121/verify_marked_cloud.py \
   --output reports/2026-11-21-forward-band-closure/marked-cloud-examples.json
+python research/lean-forward-band-20261121/verify_inverse_density_majorants.py \
+  --output reports/2026-11-21-forward-band-closure/inverse-density-majorant-counterexamples.json
 ```
 
-The first command recompiles all eleven local modules into a fresh output
+The first command recompiles all fifteen local modules into a fresh output
 directory, treats warnings as errors, and records source hashes and printed
 axioms. The second checks finite legal inverse clouds using exact integer
-and rational arithmetic. Those examples do not validate the analytic
-asymptotic or prove Collatz.
+and rational arithmetic. The third replays exact rational counterexamples
+to the two proposed upper potentials, including the stated analytic tail
+bound. These finite checks do not validate the analytic asymptotics or
+prove Collatz.
 
 The included `lean/lakefile.lean` also pins the dependency for a conventional
 Lake environment. The recorded replay uses the explicit built-cache command
