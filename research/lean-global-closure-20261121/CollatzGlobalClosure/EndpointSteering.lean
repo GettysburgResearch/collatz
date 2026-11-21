@@ -1,4 +1,4 @@
-import Mathlib.Tactic
+import Mathlib.Tactic.Ring
 
 /-!
 Exact arithmetic for adaptive endpoint steering.

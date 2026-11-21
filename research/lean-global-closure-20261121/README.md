@@ -10,6 +10,30 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Compiled results
 
+### The new forced dyadic section
+
+The [band attack](BAND_ATTACK.md) builds on PR173 at
+`fa0c9e2a2851e6324391e39c17afcb5913185aec`, which proves that every ordinary
+positive orbit reaches a shrinking odd band above a power of two.
+The new results include exact offset-descent and certificate transfers;
+an infinite, much thinner marked family with no descent through its binary
+exponent clock; and a cofinal first-return construction that simultaneously
+increases size and trailing-one depth by arbitrary amounts. It rules out
+every coordinatewise monotone strict return rank based on those two quantities,
+even after a finite exception range. A separate cofinal construction has
+distinct marked endpoints with identical binary exponent and trailing-one
+depth, while the entire intervening path stays above the cutoff. The
+[return-path composition](CollatzGlobalClosure/SectionFeatureRanks.lean)
+therefore excludes **every function of those two features** as a strict
+every-return rank, without a monotonicity assumption. Every fixed finite
+odd-source parity prefix also occurs cofinally inside the marked set.
+
+The [reset proof](SECTION_RESET_RETURNS.md) and
+[offset attempt](BAND_OFFSET_ATTEMPT.md) give the constructions and the exact
+remaining obligations. Ordinary descent below a mark must not be substituted
+for descent among marked returns: the next marked visit can overshoot.
+The source's universal variable-return descent criterion remains open.
+
 ### Exact cost of preserving a parity prefix
 
 [`CollatzGlobalClosure/SiblingRigidity.lean`](CollatzGlobalClosure/SiblingRigidity.lean)
@@ -111,6 +135,19 @@ The project pins Lean **4.34.1** and mathlib commit
 lake exe cache get Mathlib/Tactic.lean Mathlib/FieldTheory/Finite/Basic.lean Mathlib/Data/Nat/Digits/Lemmas.lean Mathlib/NumberTheory/Multiplicity.lean
 lake build
 ```
+
+For a receipt-producing direct build of the new band continuation, including
+the exact frozen source files, use an installed Lean binary and the pinned
+mathlib checkout:
+
+```sh
+python build_band.py --lean /path/to/lean --mathlib /path/to/mathlib4 --output /tmp/collatz-band-fresh --receipt /tmp/collatz-band-build.json --full
+```
+
+The output directory must not already contain compiled project modules.
+The new dependencies include mathlib's logarithm, factorization, and
+Diophantine-approximation files; obtain their cache with `lake exe cache get`
+if it is not already present.
 
 `lakefile.toml` treats warnings as errors. The relative-parity, endpoint,
 and rigidity declarations and the two principal profile theorems print
