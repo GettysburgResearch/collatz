@@ -35,3 +35,18 @@ rather than broadly re-audited. The unbounded-reset proof was separately
 read against its exact arithmetic and component-equivalence claims. No
 review status is asserted for unproved global closure, survivor estimates,
 or endpoint uniform integrability.
+
+## Directed and source-witness checkpoint
+
+`checkpoint-three-build.txt` and `checkpoint-three-axioms.txt` record actual
+Lean execution after adding `DirectedInduction`, `WitnessEnergy`, and
+`SourceWitness`. The source hashes in `checkpoint-three.json` pin all eleven
+Lean source files in this package. The audit prints the complete-cover
+propositions as well as the conditional closing theorems; none of those
+coverage propositions has been established by the finite search.
+
+The independent prefix replay and portable search receipts are described in
+the science packet's `DIRECTED_WITNESS_SEARCH.md` and `search/` directory.
+They are arithmetic search evidence, not substitute Lean proofs of global
+coverage. A complete-checkout repository regression run remains distinct
+from both those replays and the Lean kernel execution.

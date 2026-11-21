@@ -4,3 +4,6 @@ import Collatz.Shadow
 import Collatz.Witness
 import Collatz.PsiCompletion
 import Collatz.ResetFamily
+import Collatz.DirectedInduction
+import Collatz.WitnessEnergy
+import Collatz.SourceWitness

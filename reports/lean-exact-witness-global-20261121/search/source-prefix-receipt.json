@@ -1,0 +1,34 @@
+{
+  "status": "PASS_EXACT_REPLAY; GLOBAL THEOREM OPEN",
+  "mode": "frozen accepted prefix words",
+  "record_count": 738,
+  "classifications": {
+    "forward_consumption": 188,
+    "multiset_replacement": 386,
+    "ordinary_merger": 137,
+    "length_only": 27
+  },
+  "maximum_energy_insertions": 8,
+  "sufficient_energy_base": 9,
+  "semantic_sha256": "1c8089c5b38b80cc030e2a67740b3a33d4c2fb71d2a9f7b23860316e7001e150",
+  "hitting_time": {
+    "closed_states": 90,
+    "required_surviving": 5,
+    "required_total": 80,
+    "removal_rounds": [
+      2574,
+      216
+    ]
+  },
+  "energy": {
+    "closed_states": 90,
+    "required_surviving": 5,
+    "required_total": 80,
+    "removal_rounds": [
+      2461,
+      314,
+      15
+    ]
+  },
+  "input_sha256": "ae1425c892cc4e1ab1c61509c0dd9c43ecad85c85350c89e9736dbc9a524486b"
+}

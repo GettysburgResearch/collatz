@@ -1,10 +1,11 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz and for the requested residue implication.**
-The new results are kernel-checked equivalences for arbitrary finite witnesses,
-an all-exponent branch of a global induction, and an unbounded family showing
-that the displayed reset does not give uniform size descent. They do not prove
-the implication or Collatz.
+The results include kernel-checked equivalences for arbitrary finite witnesses,
+an all-exponent branch of a global induction, an unbounded reset family, and
+three new certificate kernels for directed comparisons and source-witness
+descent. The current searches have not supplied a complete recursive cover.
+These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean module. Lean 4.34.1 is used without Mathlib or other packages.
 
@@ -58,7 +59,32 @@ For W5, `x=128k+1` has one of the three specified residues exactly when
 reverse-basin criterion have identical quantifiers. In particular the output
 witness may have any finite length and any finite exponents.
 
-## Current global proof attempt
+## Current checkpoint: directed and source-witness induction
+
+The latest pass treats the global closing obligation directly. It develops
+three sound induction systems, with separate complete-cover requirements:
+
+- `Collatz/DirectedInduction.lean`: directed multiplication comparisons and
+  convergence claims in one induction, with powers of two removed before
+  evaluating the rank. Affine proof paths have explicit query directions,
+  activation obligations and strict decrease guards.
+- `Collatz/WitnessEnergy.lean`: a natural-valued rank for complete supplied
+  witnesses. Replacing a removed peak by fewer than `C` strictly smaller
+  values decreases the sum of `C^value`, even when the new witness is longer.
+- `Collatz/SourceWitness.lean`: exact ordinary-prefix removal and insertion,
+  including the early-hit guard; separate global closing theorems for strict
+  certificate-length descent and witness-energy descent.
+
+The source-witness kernels accept the entire supplied finite witness. They do
+not require a bound on the output witness length or its exponents. Their
+global conclusions still require an actual complete family of recursive
+rules. That family is not asserted by the search output.
+
+The methods, exact scope of the finite search, source pins, and current
+unresolved obligations are recorded in
+[`DIRECTED_WITNESS_SEARCH.md`](DIRECTED_WITNESS_SEARCH.md).
+
+## Earlier interval-induction attempt
 
 The new `lean/Collatz/PsiCompletion.lean` works with the entire interval below
 a hypothetical least missing positive integer. Let `H(u)=2u+1`.
