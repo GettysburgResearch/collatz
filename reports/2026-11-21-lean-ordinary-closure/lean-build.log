@@ -1,0 +1,5 @@
+ℹ [8/10] Built Collatz.SelectedWordInjectivity (3.5s)
+info: Collatz/SelectedWordInjectivity.lean:130:0: 'CollatzSelectedWords.word_determined_by_total_and_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/SelectedWordInjectivity.lean:131:0: 'CollatzSelectedWords.linear_block_constants' does not depend on any axioms
+✔ [9/10] Built Collatz (406ms)
+Build completed successfully (10 jobs).

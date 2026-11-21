@@ -1,0 +1,19 @@
+'CollatzJoint.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzJoint.comparisons_of_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzJoint.collatz_of_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzJoint.Checkpoint.rules_valid' depends on axioms: [propext]
+'CollatzJoint.Checkpoint.every_rule_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSelectedWords.word_determined_by_total_and_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzNegativeFive.escape_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem CollatzJoint.collatz_of_complete : ∀ {w : CollatzJoint.Weights},
+  0 < w.triple → 0 < w.five → CollatzJoint.Complete w → ∀ (n : ℕ), 0 < n → CollatzReverseBasin.Basin n :=
+fun {w} hw3 hw5 hc =>
+  have all := CollatzJoint.comparisons_of_complete hw3 hw5 hc;
+  CollatzReverseBasin.reverse_generates
+    { twice := CollatzClosure.basin_twice, oddStep := CollatzClosure.basin_odd,
+      triple := fun n hn hb =>
+        have positive := Decidable.byContradiction fun a => CollatzJoint.collatz_of_complete._proof_1_1 n hn a;
+        (all CollatzJoint.Kind.triple n positive).mpr hb }
+    (have this := Exists.intro 0 rfl;
+    this)
+CollatzJoint.Checkpoint.unresolved_count : CollatzJoint.Checkpoint.unresolved.length = 437
