@@ -1,0 +1,6 @@
+name = "collatz"
+defaultTargets = ["Collatz"]
+moreLeanArgs = ["-DwarningAsError=true"]
+
+[[lean_lib]]
+name = "Collatz"
