@@ -1,0 +1,3272 @@
+{
+  "schema": "ordinary-merger-progressions-v1",
+  "map": "T(n)=n/2 for even n, (3n+1)/2 for odd n",
+  "status": "EXACT_FINITE_CERTIFICATE_WITH_UNRESOLVED_COMPLEMENT",
+  "target_residue": 27,
+  "target_modulus": 128,
+  "source_modulus": 73728,
+  "source_clock": 13,
+  "ternary_refinement": 2,
+  "search_partner_clock_limit": 21,
+  "search_node_cap": 100000,
+  "source_classes": 576,
+  "certified_classes": 446,
+  "unresolved": [
+    27,
+    667,
+    1051,
+    1179,
+    1819,
+    2715,
+    3099,
+    3355,
+    4123,
+    5403,
+    6171,
+    6811,
+    6939,
+    7323,
+    7963,
+    8859,
+    9243,
+    9883,
+    10011,
+    11035,
+    11419,
+    11547,
+    11931,
+    12315,
+    13339,
+    15003,
+    15387,
+    15643,
+    16027,
+    16155,
+    17691,
+    18075,
+    19099,
+    19227,
+    19483,
+    19611,
+    21147,
+    21531,
+    21787,
+    22299,
+    22555,
+    23707,
+    23835,
+    24219,
+    24603,
+    25243,
+    25755,
+    26395,
+    27291,
+    27675,
+    28315,
+    28699,
+    29979,
+    30747,
+    31515,
+    31771,
+    31899,
+    33435,
+    33819,
+    34075,
+    34459,
+    34587,
+    35611,
+    36123,
+    36507,
+    36891,
+    37531,
+    37915,
+    38683,
+    39579,
+    39963,
+    40219,
+    40731,
+    40987,
+    42139,
+    42267,
+    42651,
+    43675,
+    43803,
+    44187,
+    45723,
+    46107,
+    46875,
+    47131,
+    47899,
+    48283,
+    48411,
+    48795,
+    49179,
+    50203,
+    50331,
+    51867,
+    52251,
+    52507,
+    52891,
+    54555,
+    55323,
+    55963,
+    56091,
+    56347,
+    56475,
+    57115,
+    58011,
+    58395,
+    58651,
+    59163,
+    60571,
+    60699,
+    61083,
+    61467,
+    62107,
+    63259,
+    64155,
+    64539,
+    65179,
+    65307,
+    65563,
+    66715,
+    66843,
+    67227,
+    68379,
+    68635,
+    68763,
+    70299,
+    70683,
+    70939,
+    71451,
+    72475,
+    72987,
+    73371
+  ],
+  "rows": [
+    {
+      "source": 155,
+      "partner": 111,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 283,
+      "partner": 239,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 411,
+      "partner": 391,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 539,
+      "partner": 433,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 795,
+      "partner": 671,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 923,
+      "partner": 247,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 1307,
+      "partner": 871,
+      "partner_increment": 49152,
+      "source_word": "1101111110111",
+      "partner_word": "11101111110111"
+    },
+    {
+      "source": 1435,
+      "partner": 1151,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 1563,
+      "partner": 1253,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 1691,
+      "partner": 1127,
+      "partner_increment": 49152,
+      "source_word": "1101111011001",
+      "partner_word": "11101111011001"
+    },
+    {
+      "source": 1947,
+      "partner": 1561,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 2075,
+      "partner": 1663,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 2203,
+      "partner": 1766,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 2331,
+      "partner": 1868,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 2459,
+      "partner": 2335,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 2587,
+      "partner": 691,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 2843,
+      "partner": 1895,
+      "partner_increment": 49152,
+      "source_word": "1101111111010",
+      "partner_word": "11101111111010"
+    },
+    {
+      "source": 2971,
+      "partner": 794,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 3227,
+      "partner": 2151,
+      "partner_increment": 49152,
+      "source_word": "1101111010111",
+      "partner_word": "11101111010111"
+    },
+    {
+      "source": 3483,
+      "partner": 2791,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 3611,
+      "partner": 3047,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 3739,
+      "partner": 3323,
+      "partner_increment": 65536,
+      "source_word": "1101111011011",
+      "partner_word": "1101101111011011"
+    },
+    {
+      "source": 3867,
+      "partner": 3263,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 3995,
+      "partner": 1067,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 4251,
+      "partner": 3406,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 4379,
+      "partner": 3695,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 4507,
+      "partner": 3611,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 4635,
+      "partner": 3911,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 4763,
+      "partner": 3175,
+      "partner_increment": 49152,
+      "source_word": "1101111011111",
+      "partner_word": "11101111011111"
+    },
+    {
+      "source": 4891,
+      "partner": 4127,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 5019,
+      "partner": 4022,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 5147,
+      "partner": 3431,
+      "partner_increment": 49152,
+      "source_word": "1101111101110",
+      "partner_word": "11101111101110"
+    },
+    {
+      "source": 5275,
+      "partner": 4226,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 5531,
+      "partner": 1477,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 5659,
+      "partner": 4775,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 5787,
+      "partner": 4636,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 5915,
+      "partner": 3943,
+      "partner_increment": 49152,
+      "source_word": "1101111111110",
+      "partner_word": "11101111111110"
+    },
+    {
+      "source": 6043,
+      "partner": 4303,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 6299,
+      "partner": 1682,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 6427,
+      "partner": 5423,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 6555,
+      "partner": 6223,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 6683,
+      "partner": 5354,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 7067,
+      "partner": 629,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 7195,
+      "partner": 6395,
+      "partner_increment": 65536,
+      "source_word": "1101111101100",
+      "partner_word": "1101101111101100"
+    },
+    {
+      "source": 7451,
+      "partner": 4967,
+      "partner_increment": 49152,
+      "source_word": "1101111110100",
+      "partner_word": "11101111110100"
+    },
+    {
+      "source": 7579,
+      "partner": 7195,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 7707,
+      "partner": 6503,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 7835,
+      "partner": 5223,
+      "partner_increment": 49152,
+      "source_word": "1101111011010",
+      "partner_word": "11101111011010"
+    },
+    {
+      "source": 8091,
+      "partner": 6482,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 8219,
+      "partner": 5479,
+      "partner_increment": 49152,
+      "source_word": "1101111101011",
+      "partner_word": "11101111101011"
+    },
+    {
+      "source": 8347,
+      "partner": 5943,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 8475,
+      "partner": 7151,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 8603,
+      "partner": 8167,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 8731,
+      "partner": 6994,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 8987,
+      "partner": 7583,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 9115,
+      "partner": 2434,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 9371,
+      "partner": 6247,
+      "partner_increment": 49152,
+      "source_word": "1101111010101",
+      "partner_word": "11101111010101"
+    },
+    {
+      "source": 9499,
+      "partner": 8443,
+      "partner_increment": 65536,
+      "source_word": "1101111110111",
+      "partner_word": "1101101111110111"
+    },
+    {
+      "source": 9627,
+      "partner": 7712,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 9755,
+      "partner": 7814,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 10139,
+      "partner": 8122,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 10267,
+      "partner": 8224,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 10395,
+      "partner": 8327,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 10523,
+      "partner": 8429,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 10651,
+      "partner": 10111,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 10779,
+      "partner": 2878,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 10907,
+      "partner": 7271,
+      "partner_increment": 49152,
+      "source_word": "1101111011100",
+      "partner_word": "11101111011100"
+    },
+    {
+      "source": 11163,
+      "partner": 2981,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 11291,
+      "partner": 7527,
+      "partner_increment": 49152,
+      "source_word": "1101111101101",
+      "partner_word": "11101111101101"
+    },
+    {
+      "source": 11675,
+      "partner": 9352,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 11803,
+      "partner": 9959,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 12059,
+      "partner": 10175,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 12187,
+      "partner": 3254,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 12443,
+      "partner": 9967,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 12571,
+      "partner": 10607,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 12699,
+      "partner": 10172,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 12827,
+      "partner": 10823,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 12955,
+      "partner": 11515,
+      "partner_increment": 65536,
+      "source_word": "1101111011111",
+      "partner_word": "1101101111011111"
+    },
+    {
+      "source": 13083,
+      "partner": 11039,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 13211,
+      "partner": 10583,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 13467,
+      "partner": 10787,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 13595,
+      "partner": 9063,
+      "partner_increment": 49152,
+      "source_word": "1101111110110",
+      "partner_word": "11101111110110"
+    },
+    {
+      "source": 13723,
+      "partner": 3664,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 13851,
+      "partner": 11687,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 13979,
+      "partner": 11197,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 14107,
+      "partner": 12539,
+      "partner_increment": 65536,
+      "source_word": "1101111111110",
+      "partner_word": "1101101111111110"
+    },
+    {
+      "source": 14235,
+      "partner": 10135,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 14363,
+      "partner": 9575,
+      "partner_increment": 49152,
+      "source_word": "1101111101001",
+      "partner_word": "11101111101001"
+    },
+    {
+      "source": 14491,
+      "partner": 3869,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 14619,
+      "partner": 12335,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 14747,
+      "partner": 13999,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 14875,
+      "partner": 11915,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 15131,
+      "partner": 10087,
+      "partner_increment": 49152,
+      "source_word": "1101111111011",
+      "partner_word": "11101111111011"
+    },
+    {
+      "source": 15259,
+      "partner": 1358,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 15515,
+      "partner": 10343,
+      "partner_increment": 49152,
+      "source_word": "1101111010110",
+      "partner_word": "11101111010110"
+    },
+    {
+      "source": 15771,
+      "partner": 14971,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 15899,
+      "partner": 13415,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 16283,
+      "partner": 13043,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 16411,
+      "partner": 14587,
+      "partner_increment": 65536,
+      "source_word": "1101111101011",
+      "partner_word": "1101101111101011"
+    },
+    {
+      "source": 16539,
+      "partner": 11775,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 16667,
+      "partner": 14063,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 16795,
+      "partner": 15943,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 16923,
+      "partner": 13555,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 17051,
+      "partner": 11367,
+      "partner_increment": 49152,
+      "source_word": "1101111011110",
+      "partner_word": "11101111011110"
+    },
+    {
+      "source": 17179,
+      "partner": 14495,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 17307,
+      "partner": 4621,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 17435,
+      "partner": 11623,
+      "partner_increment": 49152,
+      "source_word": "1101111101111",
+      "partner_word": "11101111101111"
+    },
+    {
+      "source": 17563,
+      "partner": 15611,
+      "partner_increment": 65536,
+      "source_word": "1101111010101",
+      "partner_word": "1101101111010101"
+    },
+    {
+      "source": 17819,
+      "partner": 14273,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 17947,
+      "partner": 14375,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 18203,
+      "partner": 12135,
+      "partner_increment": 49152,
+      "source_word": "1101111111111",
+      "partner_word": "11101111111111"
+    },
+    {
+      "source": 18331,
+      "partner": 14683,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 18459,
+      "partner": 14785,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 18587,
+      "partner": 14888,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 18715,
+      "partner": 14990,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 18843,
+      "partner": 17887,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 18971,
+      "partner": 5065,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 19355,
+      "partner": 5168,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 19739,
+      "partner": 13159,
+      "partner_increment": 49152,
+      "source_word": "1101111110101",
+      "partner_word": "11101111110101"
+    },
+    {
+      "source": 19867,
+      "partner": 15913,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 19995,
+      "partner": 16871,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 20123,
+      "partner": 13415,
+      "partner_increment": 49152,
+      "source_word": "1101111011011",
+      "partner_word": "11101111011011"
+    },
+    {
+      "source": 20251,
+      "partner": 17087,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 20379,
+      "partner": 5441,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 20507,
+      "partner": 13671,
+      "partner_increment": 49152,
+      "source_word": "1101111101010",
+      "partner_word": "11101111101010"
+    },
+    {
+      "source": 20635,
+      "partner": 16528,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 20763,
+      "partner": 17519,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 20891,
+      "partner": 16733,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 21019,
+      "partner": 17735,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 21275,
+      "partner": 17951,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 21403,
+      "partner": 17144,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 21659,
+      "partner": 17348,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 21915,
+      "partner": 5851,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 22043,
+      "partner": 18599,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 22171,
+      "partner": 17758,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 22427,
+      "partner": 15967,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 22683,
+      "partner": 6056,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 22811,
+      "partner": 19247,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 22939,
+      "partner": 21775,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 23067,
+      "partner": 18476,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 23195,
+      "partner": 15463,
+      "partner_increment": 49152,
+      "source_word": "1101111011101",
+      "partner_word": "11101111011101"
+    },
+    {
+      "source": 23323,
+      "partner": 20731,
+      "partner_increment": 65536,
+      "source_word": "1101111111011",
+      "partner_word": "1101101111111011"
+    },
+    {
+      "source": 23451,
+      "partner": 2087,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 23579,
+      "partner": 15719,
+      "partner_increment": 49152,
+      "source_word": "1101111101100",
+      "partner_word": "11101111101100"
+    },
+    {
+      "source": 23963,
+      "partner": 22747,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 24091,
+      "partner": 20327,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 24347,
+      "partner": 16231,
+      "partner_increment": 49152,
+      "source_word": "1101111111101",
+      "partner_word": "11101111111101"
+    },
+    {
+      "source": 24475,
+      "partner": 19604,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 24731,
+      "partner": 17607,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 24859,
+      "partner": 20975,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 24987,
+      "partner": 23719,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 25115,
+      "partner": 20116,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 25371,
+      "partner": 21407,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 25499,
+      "partner": 6808,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 25627,
+      "partner": 22779,
+      "partner_increment": 65536,
+      "source_word": "1101111101111",
+      "partner_word": "1101101111101111"
+    },
+    {
+      "source": 25883,
+      "partner": 17255,
+      "partner_increment": 49152,
+      "source_word": "1101111110111",
+      "partner_word": "11101111110111"
+    },
+    {
+      "source": 26011,
+      "partner": 20834,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 26139,
+      "partner": 20936,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 26267,
+      "partner": 17511,
+      "partner_increment": 49152,
+      "source_word": "1101111011001",
+      "partner_word": "11101111011001"
+    },
+    {
+      "source": 26523,
+      "partner": 21244,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 26651,
+      "partner": 21346,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 26779,
+      "partner": 21449,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 26907,
+      "partner": 21551,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 27035,
+      "partner": 25663,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 27163,
+      "partner": 7252,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 27419,
+      "partner": 18279,
+      "partner_increment": 49152,
+      "source_word": "1101111111010",
+      "partner_word": "11101111111010"
+    },
+    {
+      "source": 27547,
+      "partner": 7355,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 27803,
+      "partner": 18535,
+      "partner_increment": 49152,
+      "source_word": "1101111010111",
+      "partner_word": "11101111010111"
+    },
+    {
+      "source": 27931,
+      "partner": 24827,
+      "partner_increment": 65536,
+      "source_word": "1101111110101",
+      "partner_word": "1101101111110101"
+    },
+    {
+      "source": 28059,
+      "partner": 22474,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 28187,
+      "partner": 23783,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 28443,
+      "partner": 23999,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 28571,
+      "partner": 7628,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 28827,
+      "partner": 23089,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 28955,
+      "partner": 24431,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 29083,
+      "partner": 23294,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 29211,
+      "partner": 24647,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 29339,
+      "partner": 19559,
+      "partner_increment": 49152,
+      "source_word": "1101111011111",
+      "partner_word": "11101111011111"
+    },
+    {
+      "source": 29467,
+      "partner": 24863,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 29595,
+      "partner": 23705,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 29723,
+      "partner": 19815,
+      "partner_increment": 49152,
+      "source_word": "1101111101110",
+      "partner_word": "11101111101110"
+    },
+    {
+      "source": 29851,
+      "partner": 23909,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 30107,
+      "partner": 8038,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 30235,
+      "partner": 25511,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 30363,
+      "partner": 24319,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 30491,
+      "partner": 20327,
+      "partner_increment": 49152,
+      "source_word": "1101111111110",
+      "partner_word": "11101111111110"
+    },
+    {
+      "source": 30619,
+      "partner": 21799,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 30875,
+      "partner": 8243,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 31003,
+      "partner": 26159,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 31131,
+      "partner": 29551,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 31259,
+      "partner": 25037,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 31387,
+      "partner": 27899,
+      "partner_increment": 65536,
+      "source_word": "1101111011101",
+      "partner_word": "1101101111011101"
+    },
+    {
+      "source": 31643,
+      "partner": 2816,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 32027,
+      "partner": 21351,
+      "partner_increment": 49152,
+      "source_word": "1101111110100",
+      "partner_word": "11101111110100"
+    },
+    {
+      "source": 32155,
+      "partner": 30523,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 32283,
+      "partner": 27239,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 32411,
+      "partner": 21607,
+      "partner_increment": 49152,
+      "source_word": "1101111011010",
+      "partner_word": "11101111011010"
+    },
+    {
+      "source": 32539,
+      "partner": 28923,
+      "partner_increment": 65536,
+      "source_word": "1101111111101",
+      "partner_word": "1101101111111101"
+    },
+    {
+      "source": 32667,
+      "partner": 26165,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 32795,
+      "partner": 21863,
+      "partner_increment": 49152,
+      "source_word": "1101111101011",
+      "partner_word": "11101111101011"
+    },
+    {
+      "source": 32923,
+      "partner": 23439,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 33051,
+      "partner": 27887,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 33179,
+      "partner": 31495,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 33307,
+      "partner": 26677,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 33563,
+      "partner": 28319,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 33691,
+      "partner": 8995,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 33947,
+      "partner": 22631,
+      "partner_increment": 49152,
+      "source_word": "1101111010101",
+      "partner_word": "11101111010101"
+    },
+    {
+      "source": 34203,
+      "partner": 27395,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 34331,
+      "partner": 27497,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 34715,
+      "partner": 27805,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 34843,
+      "partner": 27907,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 34971,
+      "partner": 28010,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 35099,
+      "partner": 28112,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 35227,
+      "partner": 33439,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 35355,
+      "partner": 9439,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 35483,
+      "partner": 23655,
+      "partner_increment": 49152,
+      "source_word": "1101111011100",
+      "partner_word": "11101111011100"
+    },
+    {
+      "source": 35739,
+      "partner": 9542,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 35867,
+      "partner": 23911,
+      "partner_increment": 49152,
+      "source_word": "1101111101101",
+      "partner_word": "11101111101101"
+    },
+    {
+      "source": 35995,
+      "partner": 31995,
+      "partner_increment": 65536,
+      "source_word": "1101111010111",
+      "partner_word": "1101101111010111"
+    },
+    {
+      "source": 36251,
+      "partner": 29035,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 36379,
+      "partner": 30695,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 36635,
+      "partner": 30911,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 36763,
+      "partner": 9815,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 37019,
+      "partner": 29650,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 37147,
+      "partner": 31343,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 37275,
+      "partner": 29855,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 37403,
+      "partner": 31559,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 37659,
+      "partner": 31775,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 37787,
+      "partner": 30266,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 38043,
+      "partner": 30470,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 38171,
+      "partner": 25447,
+      "partner_increment": 49152,
+      "source_word": "1101111110110",
+      "partner_word": "11101111110110"
+    },
+    {
+      "source": 38299,
+      "partner": 10225,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 38427,
+      "partner": 32423,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 38555,
+      "partner": 30880,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 38811,
+      "partner": 27631,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 38939,
+      "partner": 25959,
+      "partner_increment": 49152,
+      "source_word": "1101111101001",
+      "partner_word": "11101111101001"
+    },
+    {
+      "source": 39067,
+      "partner": 10430,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 39195,
+      "partner": 33071,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 39323,
+      "partner": 37327,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 39451,
+      "partner": 31598,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 39707,
+      "partner": 26471,
+      "partner_increment": 49152,
+      "source_word": "1101111111011",
+      "partner_word": "11101111111011"
+    },
+    {
+      "source": 39835,
+      "partner": 3545,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 40091,
+      "partner": 26727,
+      "partner_increment": 49152,
+      "source_word": "1101111010110",
+      "partner_word": "11101111010110"
+    },
+    {
+      "source": 40347,
+      "partner": 38299,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 40475,
+      "partner": 34151,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 40603,
+      "partner": 36091,
+      "partner_increment": 65536,
+      "source_word": "1101111011010",
+      "partner_word": "1101101111011010"
+    },
+    {
+      "source": 40859,
+      "partner": 32726,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 41115,
+      "partner": 29271,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 41243,
+      "partner": 34799,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 41371,
+      "partner": 39271,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 41499,
+      "partner": 33238,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 41627,
+      "partner": 27751,
+      "partner_increment": 49152,
+      "source_word": "1101111011110",
+      "partner_word": "11101111011110"
+    },
+    {
+      "source": 41755,
+      "partner": 35231,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 41883,
+      "partner": 11182,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 42011,
+      "partner": 28007,
+      "partner_increment": 49152,
+      "source_word": "1101111101111",
+      "partner_word": "11101111101111"
+    },
+    {
+      "source": 42395,
+      "partner": 33956,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 42523,
+      "partner": 34058,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 42779,
+      "partner": 28519,
+      "partner_increment": 49152,
+      "source_word": "1101111111111",
+      "partner_word": "11101111111111"
+    },
+    {
+      "source": 42907,
+      "partner": 34366,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 43035,
+      "partner": 34468,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 43163,
+      "partner": 34571,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 43291,
+      "partner": 34673,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 43419,
+      "partner": 41215,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 43547,
+      "partner": 11626,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 43931,
+      "partner": 11729,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 44059,
+      "partner": 39163,
+      "partner_increment": 65536,
+      "source_word": "1101111101101",
+      "partner_word": "1101101111101101"
+    },
+    {
+      "source": 44315,
+      "partner": 29543,
+      "partner_increment": 49152,
+      "source_word": "1101111110101",
+      "partner_word": "11101111110101"
+    },
+    {
+      "source": 44443,
+      "partner": 35596,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 44571,
+      "partner": 37607,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 44699,
+      "partner": 29799,
+      "partner_increment": 49152,
+      "source_word": "1101111011011",
+      "partner_word": "11101111011011"
+    },
+    {
+      "source": 44827,
+      "partner": 37823,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 44955,
+      "partner": 12002,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 45083,
+      "partner": 30055,
+      "partner_increment": 49152,
+      "source_word": "1101111101010",
+      "partner_word": "11101111101010"
+    },
+    {
+      "source": 45211,
+      "partner": 36211,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 45339,
+      "partner": 38255,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 45467,
+      "partner": 36416,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 45595,
+      "partner": 38471,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 45851,
+      "partner": 38687,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 45979,
+      "partner": 36827,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 46235,
+      "partner": 37031,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 46363,
+      "partner": 41211,
+      "partner_increment": 65536,
+      "source_word": "1101111110110",
+      "partner_word": "1101101111110110"
+    },
+    {
+      "source": 46491,
+      "partner": 12412,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 46619,
+      "partner": 39335,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 46747,
+      "partner": 37441,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 47003,
+      "partner": 33463,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 47259,
+      "partner": 12617,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 47387,
+      "partner": 39983,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 47515,
+      "partner": 45103,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 47643,
+      "partner": 38159,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 47771,
+      "partner": 31847,
+      "partner_increment": 49152,
+      "source_word": "1101111011101",
+      "partner_word": "11101111011101"
+    },
+    {
+      "source": 48027,
+      "partner": 4274,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 48155,
+      "partner": 32103,
+      "partner_increment": 49152,
+      "source_word": "1101111101100",
+      "partner_word": "11101111101100"
+    },
+    {
+      "source": 48539,
+      "partner": 46075,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 48667,
+      "partner": 41063,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 48923,
+      "partner": 32615,
+      "partner_increment": 49152,
+      "source_word": "1101111111101",
+      "partner_word": "11101111111101"
+    },
+    {
+      "source": 49051,
+      "partner": 39287,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 49307,
+      "partner": 35103,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 49435,
+      "partner": 41711,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 49563,
+      "partner": 47047,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 49691,
+      "partner": 39799,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 49819,
+      "partner": 44283,
+      "partner_increment": 65536,
+      "source_word": "1101111011110",
+      "partner_word": "1101101111011110"
+    },
+    {
+      "source": 49947,
+      "partner": 42143,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 50075,
+      "partner": 13369,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 50459,
+      "partner": 33639,
+      "partner_increment": 49152,
+      "source_word": "1101111110111",
+      "partner_word": "11101111110111"
+    },
+    {
+      "source": 50587,
+      "partner": 40517,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 50715,
+      "partner": 40619,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 50843,
+      "partner": 33895,
+      "partner_increment": 49152,
+      "source_word": "1101111011001",
+      "partner_word": "11101111011001"
+    },
+    {
+      "source": 50971,
+      "partner": 45307,
+      "partner_increment": 65536,
+      "source_word": "1101111111111",
+      "partner_word": "1101101111111111"
+    },
+    {
+      "source": 51099,
+      "partner": 40927,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 51227,
+      "partner": 41029,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 51355,
+      "partner": 41132,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 51483,
+      "partner": 41234,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 51611,
+      "partner": 48991,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 51739,
+      "partner": 13813,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 51995,
+      "partner": 34663,
+      "partner_increment": 49152,
+      "source_word": "1101111111010",
+      "partner_word": "11101111111010"
+    },
+    {
+      "source": 52123,
+      "partner": 13916,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 52379,
+      "partner": 34919,
+      "partner_increment": 49152,
+      "source_word": "1101111010111",
+      "partner_word": "11101111010111"
+    },
+    {
+      "source": 52635,
+      "partner": 42157,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 52763,
+      "partner": 44519,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 53019,
+      "partner": 44735,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 53147,
+      "partner": 14189,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 53275,
+      "partner": 47355,
+      "partner_increment": 65536,
+      "source_word": "1101111101010",
+      "partner_word": "1101101111101010"
+    },
+    {
+      "source": 53403,
+      "partner": 42772,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 53531,
+      "partner": 45167,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 53659,
+      "partner": 42977,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 53787,
+      "partner": 45383,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 53915,
+      "partner": 35943,
+      "partner_increment": 49152,
+      "source_word": "1101111011111",
+      "partner_word": "11101111011111"
+    },
+    {
+      "source": 54043,
+      "partner": 45599,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 54171,
+      "partner": 43388,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 54299,
+      "partner": 36199,
+      "partner_increment": 49152,
+      "source_word": "1101111101110",
+      "partner_word": "11101111101110"
+    },
+    {
+      "source": 54427,
+      "partner": 43592,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 54683,
+      "partner": 14599,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 54811,
+      "partner": 46247,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 54939,
+      "partner": 44002,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 55067,
+      "partner": 36711,
+      "partner_increment": 49152,
+      "source_word": "1101111111110",
+      "partner_word": "11101111111110"
+    },
+    {
+      "source": 55195,
+      "partner": 39295,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 55451,
+      "partner": 14804,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 55579,
+      "partner": 46895,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 55707,
+      "partner": 52879,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 55835,
+      "partner": 44720,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 56219,
+      "partner": 5003,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 56603,
+      "partner": 37735,
+      "partner_increment": 49152,
+      "source_word": "1101111110100",
+      "partner_word": "11101111110100"
+    },
+    {
+      "source": 56731,
+      "partner": 53851,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 56859,
+      "partner": 47975,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 56987,
+      "partner": 37991,
+      "partner_increment": 49152,
+      "source_word": "1101111011010",
+      "partner_word": "11101111011010"
+    },
+    {
+      "source": 57243,
+      "partner": 45848,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 57371,
+      "partner": 38247,
+      "partner_increment": 49152,
+      "source_word": "1101111101011",
+      "partner_word": "11101111101011"
+    },
+    {
+      "source": 57499,
+      "partner": 40935,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 57627,
+      "partner": 48623,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 57755,
+      "partner": 54823,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 57883,
+      "partner": 46360,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 58139,
+      "partner": 49055,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 58267,
+      "partner": 15556,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 58523,
+      "partner": 39015,
+      "partner_increment": 49152,
+      "source_word": "1101111010101",
+      "partner_word": "11101111010101"
+    },
+    {
+      "source": 58779,
+      "partner": 47078,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 58907,
+      "partner": 47180,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 59035,
+      "partner": 52475,
+      "partner_increment": 65536,
+      "source_word": "1101111011001",
+      "partner_word": "1101101111011001"
+    },
+    {
+      "source": 59291,
+      "partner": 47488,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 59419,
+      "partner": 47590,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 59547,
+      "partner": 47693,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 59675,
+      "partner": 47795,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 59803,
+      "partner": 56767,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 59931,
+      "partner": 16000,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 60059,
+      "partner": 40039,
+      "partner_increment": 49152,
+      "source_word": "1101111011100",
+      "partner_word": "11101111011100"
+    },
+    {
+      "source": 60187,
+      "partner": 53499,
+      "partner_increment": 65536,
+      "source_word": "1101111111010",
+      "partner_word": "1101101111111010"
+    },
+    {
+      "source": 60315,
+      "partner": 16103,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 60443,
+      "partner": 40295,
+      "partner_increment": 49152,
+      "source_word": "1101111101101",
+      "partner_word": "11101111101101"
+    },
+    {
+      "source": 60827,
+      "partner": 48718,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 60955,
+      "partner": 51431,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 61211,
+      "partner": 51647,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 61339,
+      "partner": 16376,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 61595,
+      "partner": 49333,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 61723,
+      "partner": 52079,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 61851,
+      "partner": 49538,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 61979,
+      "partner": 52295,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 62235,
+      "partner": 52511,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 62363,
+      "partner": 49949,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 62491,
+      "partner": 55547,
+      "partner_increment": 65536,
+      "source_word": "1101111101110",
+      "partner_word": "1101101111101110"
+    },
+    {
+      "source": 62619,
+      "partner": 50153,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 62747,
+      "partner": 41831,
+      "partner_increment": 49152,
+      "source_word": "1101111110110",
+      "partner_word": "11101111110110"
+    },
+    {
+      "source": 62875,
+      "partner": 16786,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 63003,
+      "partner": 53159,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 63131,
+      "partner": 50563,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 63387,
+      "partner": 45127,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 63515,
+      "partner": 42343,
+      "partner_increment": 49152,
+      "source_word": "1101111101001",
+      "partner_word": "11101111101001"
+    },
+    {
+      "source": 63643,
+      "partner": 16991,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 63771,
+      "partner": 53807,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 63899,
+      "partner": 60655,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 64027,
+      "partner": 51281,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 64283,
+      "partner": 42855,
+      "partner_increment": 49152,
+      "source_word": "1101111111011",
+      "partner_word": "11101111111011"
+    },
+    {
+      "source": 64411,
+      "partner": 5732,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 64667,
+      "partner": 43111,
+      "partner_increment": 49152,
+      "source_word": "1101111010110",
+      "partner_word": "11101111010110"
+    },
+    {
+      "source": 64795,
+      "partner": 57595,
+      "partner_increment": 65536,
+      "source_word": "1101111110100",
+      "partner_word": "1101101111110100"
+    },
+    {
+      "source": 64923,
+      "partner": 61627,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 65051,
+      "partner": 54887,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 65435,
+      "partner": 52409,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    },
+    {
+      "source": 65691,
+      "partner": 46767,
+      "partner_increment": 52488,
+      "source_word": "1101111010011",
+      "partner_word": "111"
+    },
+    {
+      "source": 65819,
+      "partner": 55535,
+      "partner_increment": 62208,
+      "source_word": "1101111110011",
+      "partner_word": "11110111"
+    },
+    {
+      "source": 65947,
+      "partner": 62599,
+      "partner_increment": 69984,
+      "source_word": "1101111001101",
+      "partner_word": "11101"
+    },
+    {
+      "source": 66075,
+      "partner": 52921,
+      "partner_increment": 59049,
+      "source_word": "1101111100010",
+      "partner_word": ""
+    },
+    {
+      "source": 66203,
+      "partner": 44135,
+      "partner_increment": 49152,
+      "source_word": "1101111011110",
+      "partner_word": "11101111011110"
+    },
+    {
+      "source": 66331,
+      "partner": 55967,
+      "partner_increment": 62208,
+      "source_word": "1101111111001",
+      "partner_word": "11111011"
+    },
+    {
+      "source": 66459,
+      "partner": 17743,
+      "partner_increment": 19683,
+      "source_word": "1101111000010",
+      "partner_word": ""
+    },
+    {
+      "source": 66587,
+      "partner": 44391,
+      "partner_increment": 49152,
+      "source_word": "1101111101111",
+      "partner_word": "11101111101111"
+    },
+    {
+      "source": 66971,
+      "partner": 53639,
+      "partner_increment": 59049,
+      "source_word": "1101111001001",
+      "partner_word": ""
+    },
+    {
+      "source": 67099,
+      "partner": 53741,
+      "partner_increment": 59049,
+      "source_word": "1101111100100",
+      "partner_word": ""
+    },
+    {
+      "source": 67355,
+      "partner": 44903,
+      "partner_increment": 49152,
+      "source_word": "1101111111111",
+      "partner_word": "11101111111111"
+    },
+    {
+      "source": 67483,
+      "partner": 54049,
+      "partner_increment": 59049,
+      "source_word": "1101111000110",
+      "partner_word": ""
+    },
+    {
+      "source": 67611,
+      "partner": 54151,
+      "partner_increment": 59049,
+      "source_word": "1101111101000",
+      "partner_word": ""
+    },
+    {
+      "source": 67739,
+      "partner": 54254,
+      "partner_increment": 59049,
+      "source_word": "1101111010001",
+      "partner_word": ""
+    },
+    {
+      "source": 67867,
+      "partner": 54356,
+      "partner_increment": 59049,
+      "source_word": "1101111110000",
+      "partner_word": ""
+    },
+    {
+      "source": 67995,
+      "partner": 64543,
+      "partner_increment": 69984,
+      "source_word": "1101111001111",
+      "partner_word": "11111"
+    },
+    {
+      "source": 68123,
+      "partner": 18187,
+      "partner_increment": 19683,
+      "source_word": "1101111100000",
+      "partner_word": ""
+    },
+    {
+      "source": 68251,
+      "partner": 60667,
+      "partner_increment": 65536,
+      "source_word": "1101111011100",
+      "partner_word": "1101101111011100"
+    },
+    {
+      "source": 68507,
+      "partner": 18290,
+      "partner_increment": 19683,
+      "source_word": "1101111000001",
+      "partner_word": ""
+    },
+    {
+      "source": 68891,
+      "partner": 45927,
+      "partner_increment": 49152,
+      "source_word": "1101111110101",
+      "partner_word": "11101111110101"
+    },
+    {
+      "source": 69019,
+      "partner": 55279,
+      "partner_increment": 59049,
+      "source_word": "1101111001010",
+      "partner_word": ""
+    },
+    {
+      "source": 69147,
+      "partner": 58343,
+      "partner_increment": 62208,
+      "source_word": "1101111100110",
+      "partner_word": "11101110"
+    },
+    {
+      "source": 69275,
+      "partner": 46183,
+      "partner_increment": 49152,
+      "source_word": "1101111011011",
+      "partner_word": "11101111011011"
+    },
+    {
+      "source": 69403,
+      "partner": 58559,
+      "partner_increment": 62208,
+      "source_word": "1101111111100",
+      "partner_word": "11111101"
+    },
+    {
+      "source": 69531,
+      "partner": 18563,
+      "partner_increment": 19683,
+      "source_word": "1101111000100",
+      "partner_word": ""
+    },
+    {
+      "source": 69659,
+      "partner": 46439,
+      "partner_increment": 49152,
+      "source_word": "1101111101010",
+      "partner_word": "11101111101010"
+    },
+    {
+      "source": 69787,
+      "partner": 55894,
+      "partner_increment": 59049,
+      "source_word": "1101111010010",
+      "partner_word": ""
+    },
+    {
+      "source": 69915,
+      "partner": 58991,
+      "partner_increment": 62208,
+      "source_word": "1101111110010",
+      "partner_word": "11110110"
+    },
+    {
+      "source": 70043,
+      "partner": 56099,
+      "partner_increment": 59049,
+      "source_word": "1101111001100",
+      "partner_word": ""
+    },
+    {
+      "source": 70171,
+      "partner": 59207,
+      "partner_increment": 62208,
+      "source_word": "1101111100011",
+      "partner_word": "11101011"
+    },
+    {
+      "source": 70427,
+      "partner": 59423,
+      "partner_increment": 62208,
+      "source_word": "1101111111000",
+      "partner_word": "11111010"
+    },
+    {
+      "source": 70555,
+      "partner": 56510,
+      "partner_increment": 59049,
+      "source_word": "1101111000011",
+      "partner_word": ""
+    },
+    {
+      "source": 70811,
+      "partner": 56714,
+      "partner_increment": 59049,
+      "source_word": "1101111010100",
+      "partner_word": ""
+    },
+    {
+      "source": 71067,
+      "partner": 18973,
+      "partner_increment": 19683,
+      "source_word": "1101111001000",
+      "partner_word": ""
+    },
+    {
+      "source": 71195,
+      "partner": 60071,
+      "partner_increment": 62208,
+      "source_word": "1101111100101",
+      "partner_word": "11101101"
+    },
+    {
+      "source": 71323,
+      "partner": 57124,
+      "partner_increment": 59049,
+      "source_word": "1101111011000",
+      "partner_word": ""
+    },
+    {
+      "source": 71579,
+      "partner": 50959,
+      "partner_increment": 52488,
+      "source_word": "1101111000111",
+      "partner_word": "111"
+    },
+    {
+      "source": 71707,
+      "partner": 63739,
+      "partner_increment": 65536,
+      "source_word": "1101111101001",
+      "partner_word": "1101101111101001"
+    },
+    {
+      "source": 71835,
+      "partner": 19178,
+      "partner_increment": 19683,
+      "source_word": "1101111010000",
+      "partner_word": ""
+    },
+    {
+      "source": 71963,
+      "partner": 60719,
+      "partner_increment": 62208,
+      "source_word": "1101111110001",
+      "partner_word": "11110101"
+    },
+    {
+      "source": 72091,
+      "partner": 68431,
+      "partner_increment": 69984,
+      "source_word": "1101111001110",
+      "partner_word": "11110"
+    },
+    {
+      "source": 72219,
+      "partner": 57842,
+      "partner_increment": 59049,
+      "source_word": "1101111100001",
+      "partner_word": ""
+    },
+    {
+      "source": 72347,
+      "partner": 48231,
+      "partner_increment": 49152,
+      "source_word": "1101111011101",
+      "partner_word": "11101111011101"
+    },
+    {
+      "source": 72603,
+      "partner": 6461,
+      "partner_increment": 6561,
+      "source_word": "1101111000000",
+      "partner_word": ""
+    },
+    {
+      "source": 72731,
+      "partner": 48487,
+      "partner_increment": 49152,
+      "source_word": "1101111101100",
+      "partner_word": "11101111101100"
+    },
+    {
+      "source": 72859,
+      "partner": 64763,
+      "partner_increment": 65536,
+      "source_word": "1101111010110",
+      "partner_word": "1101101111010110"
+    },
+    {
+      "source": 73115,
+      "partner": 69403,
+      "partner_increment": 69984,
+      "source_word": "1101111001011",
+      "partner_word": "11011"
+    },
+    {
+      "source": 73243,
+      "partner": 61799,
+      "partner_increment": 62208,
+      "source_word": "1101111100111",
+      "partner_word": "11101111"
+    },
+    {
+      "source": 73499,
+      "partner": 48999,
+      "partner_increment": 49152,
+      "source_word": "1101111111101",
+      "partner_word": "11101111111101"
+    },
+    {
+      "source": 73627,
+      "partner": 58970,
+      "partner_increment": 59049,
+      "source_word": "1101111000101",
+      "partner_word": ""
+    }
+  ],
+  "theorem": "For each row and every t>=0: n=source+73728*t and x=partner+partner_increment*t obey 0<x<n and T^len(partner_word)(x)=T^13(n).",
+  "scope": "No convergence assertion for unresolved classes; no universal selector. Coverage is relative to the one AL branch n=27 mod128."
+}
