@@ -1,3 +1,4 @@
+import Mathlib.Order.Interval.Finset.Nat
 import Mathlib.Tactic.Ring
 import Mathlib.Tactic.Linarith
 import Mathlib.Data.Fintype.Pigeonhole
@@ -413,24 +414,6 @@ theorem universal_of_units (all : ∀ q : Nat, q%3 ≠ 0 → Basin q) : Universa
       have unit : (step n)%3 ≠ 0 := by rw [eq]; omega
       exact (basin_at_hit (show Hits n (step n) from ⟨1,rfl⟩)).mpr (all _ unit)
 
-def Clean (h X : Nat) : Prop := ∀ y : Nat, X≤y → h*y≤(h+1)*X → Basin y
-
-/-- The precision and location may both change at every checkpoint. -/
-theorem collatz_iff_clean_shells :
-    Universal ↔ ∀ N : Nat, ∃ (h X : Nat) (m : Mesh h), 0<X ∧ m.cost*N≤X ∧ Clean h X := by
-  constructor
-  · intro all N
-    let m : Mesh 1 := ⟨1,2,by decide,by decide⟩
-    refine ⟨1,m.cost*N+1,m,by omega,by omega,?_⟩
-    exact fun _ hy _ => all _ (by omega)
-  · intro checkpoint
-    apply universal_of_units
-    intro q hu
-    obtain ⟨h,X,m,_,size,clean⟩ := checkpoint q
-    obtain ⟨y,lo,hi,_,hit⟩ := shell_hits m q X hu size
-    exact (basin_at_hit hit).mp (clean y lo hi)
-
-
 /-- Both branches use six clocks. Padding after the inverse odd step
 keeps the clock independent of the residue and of the branch. -/
 def child (bit : Bool) (q : Nat) : Nat :=
@@ -521,7 +504,7 @@ theorem fan_injective (s q : Nat) (hu : q%3≠0) :
 theorem shell_fan {h : Nat} (m : Mesh (2*h)) (s q X : Nat) (hu : q%3 ≠ 0)
     (size : 64^s*(m.cost*q+4*h+2) ≤ 3^s*X) :
     ∃ (t : Nat) (f : (Fin s → Bool) → Nat), Function.Injective f ∧
-      ∀ w, X≤f w ∧ h*f w≤(h+1)*X ∧ orbit t (f w)=q := by
+      ∀ w, X≤f w ∧ h*f w≤(h+1)*X ∧ (f w)%3≠0 ∧ orbit t (f w)=q := by
   let P := 64^s
   let D := 3^s
   let L := D*X/P+2
@@ -536,10 +519,10 @@ theorem shell_fan {h : Nat} (m : Mesh (2*h)) (s q X : Nat) (hu : q%3 ≠ 0)
   obtain ⟨z,hz,fine,uz,t,hit⟩ := shell_hits m q L hu (by dsimp [L]; omega)
   refine ⟨6*s+t,fun w => fan s w z,fan_injective s z uz,?_⟩
   intro w
-  obtain ⟨back,_,lo,hi⟩ := fan_spec s w z uz
+  obtain ⟨back,wu,lo,hi⟩ := fan_spec s w z uz
   change P*z+D≤D*fan s w z+P at lo
   change D*fan s w z≤P*z at hi
-  refine ⟨?_,?_,by rw [orbit_add,back,hit]⟩
+  refine ⟨?_,?_,wu,by rw [orbit_add,back,hit]⟩
   · change X ≤ fan s w z
     apply Nat.le_of_mul_le_mul_left (c:=D) _ hd
     have hz' := Nat.mul_le_mul_left P hz
@@ -552,28 +535,156 @@ theorem shell_fan {h : Nat} (m : Mesh (2*h)) (s q X : Nat) (hu : q%3 ≠ 0)
       (Nat.mul_le_mul_left P (show 4*h+2≤m.cost*q+4*h+2 by omega)).trans size
     nlinarith only [u₁,u₂,u₃,u₄]
 
-/-- A verifier may leave a finite, explicitly counted set of exceptions. -/
-def AlmostClean (h s X : Nat) : Prop :=
-  ∃ E : Finset Nat, E.card < 2^s ∧
-    ∀ y : Nat, X≤y → h*y≤(h+1)*X → y∉E → Basin y
-
-theorem recover {h : Nat} (m : Mesh (2*h)) {s N X : Nat}
-    (size : 64^s*(m.cost*N+4*h+2) ≤ 3^s*X) (cert : AlmostClean h s X)
-    {q : Nat} (hq : q≤N) (hu : q%3≠0) : Basin q := by
+private theorem avoids_small {s : Nat} (f : (Fin s → Bool) → Nat) (inj : Function.Injective f)
+    (E : Finset Nat) (small : E.card < 2^s) : ∃ w, f w ∉ E := by
   classical
-  have sq := (Nat.mul_le_mul_left (64^s) (show m.cost*q+4*h+2 ≤ m.cost*N+4*h+2
+  by_contra! bad
+  let g (w : Fin s → Bool) : E := ⟨f w,bad w⟩
+  have ig : Function.Injective g := fun a b eq => inj (congrArg Subtype.val eq)
+  have count := Fintype.card_le_of_injective g ig
+  simp at count
+  omega
+
+private theorem orbit_unit (k n : Nat) (h : n%3≠0) : (orbit k n)%3≠0 := by
+  induction k generalizing n with
+  | zero => exact h
+  | succ k ih => apply ih; unfold step; split <;> omega
+
+/-- This finite set uses only integer iteration and comparison. -/
+def survivors (h X N t : Nat) : Finset Nat :=
+  (Finset.Icc X ((h+1)*X/h)).filter
+    (fun y => ∀ i : Fin (t+1), N≤orbit i.val y)
+
+private theorem finite_deadline (S : Finset Nat) (N : Nat) (hN : 1<N)
+    (all : Universal) :
+    ∃ t : Nat, ∀ y ∈ S, 0<y → ∃ i≤t, orbit i y<N := by
+  induction S using Finset.induction_on with
+  | empty => exact ⟨0,by simp⟩
+  | @insert a S _ ih =>
+    obtain ⟨v,prev⟩ := ih
+    by_cases ha : 0<a
+    · obtain ⟨j,hit⟩ := all a ha
+      refine ⟨max v j,?_⟩
+      intro y hy hypos
+      rcases Finset.mem_insert.mp hy with eq|inS
+      · exact ⟨j,Nat.le_max_right _ _,eq ▸ hit ▸ hN⟩
+      · obtain ⟨i,iv,small⟩ := prev y inS hypos
+        exact ⟨i,iv.trans (Nat.le_max_left _ _),small⟩
+    · refine ⟨v,?_⟩
+      intro y hy hypos
+      rcases Finset.mem_insert.mp hy with eq|inS
+      · omega
+      · exact prev y inS hypos
+
+theorem empty_survivors (all : Universal) {N h X : Nat} (hN : 1<N) (hX : 0<X) :
+    ∃ t : Nat, survivors h X N t=∅ := by
+  obtain ⟨t,cover⟩ := finite_deadline (Finset.Icc X ((h+1)*X/h)) N hN all
+  refine ⟨t,Finset.eq_empty_iff_forall_notMem.mpr ?_⟩
+  intro y hy
+  obtain ⟨inside,nohit⟩ := Finset.mem_filter.mp hy
+  have xpos := (Finset.mem_Icc.mp inside).1
+  obtain ⟨i,le,small⟩ := cover y inside (by omega)
+  exact (Nat.not_le_of_lt small) (nohit ⟨i,by omega⟩)
+
+/-- Recover one unit from a finite list of floor crossings in its shell. -/
+theorem recover_floor {q N h s X t : Nat} (hpos : 0<h) (m : Mesh (2*h))
+    (hu : q%3≠0) (size : 64^s*(m.cost*q+4*h+2)≤3^s*X)
+    (budget : (survivors h X N t).card < 2^s)
+    (smaller : ∀ z<N, z%3≠0 → Basin z) : Basin q := by
+  obtain ⟨k,f,inj,inside⟩ := shell_fan m s q X hu size
+  obtain ⟨w,hw⟩ := avoids_small f inj _ budget
+  obtain ⟨lo,hi,unit,hit⟩ := inside w
+  have inShell : f w ∈ Finset.Icc X ((h+1)*X/h) :=
+    Finset.mem_Icc.mpr ⟨lo,(Nat.le_div_iff_mul_le hpos).mpr (by simpa [Nat.mul_comm] using hi)⟩
+  have crosses : ∃ i, i∈Finset.range (t+1) ∧ orbit i (f w) < N := by
+    by_contra! no
+    exact hw (Finset.mem_filter.mpr ⟨inShell, fun i => no i.val (Finset.mem_range.mpr i.isLt)⟩)
+  obtain ⟨i,_,low⟩ := crosses
+  have anchor := smaller _ low (orbit_unit _ _ unit)
+  have first := (basin_at_hit (show Hits (f w) (orbit i (f w)) from ⟨i,rfl⟩)).mpr anchor
+  exact (basin_at_hit (show Hits (f w) q from ⟨k,hit⟩)).mp first
+
+private def GridAt (h p : Nat) : Prop :=
+  ∃ d : Fin (4*p+1), 3^p*2^d.val < 16^p ∧ h*16^p≤(h+1)*(3^p*2^d.val)
+
+private instance (h p : Nat) : Decidable (GridAt h p) := by unfold GridAt; infer_instance
+
+/-- Search by increasing p, then by increasing d. Both comparisons are on integers. -/
+def firstMesh (h : Nat) (hh : 0<h) : Mesh h :=
+  let existsP : ∃ p, GridAt h p := by
+    obtain ⟨m⟩ := mesh_exists h hh
+    have le : 2^m.d ≤ 3^m.p*2^m.d := by
+      simpa using Nat.mul_le_mul_right (2^m.d) (Nat.one_le_pow m.p 3 (by decide))
+    have lt : 2^m.d < 2^(4*m.p) := by
+      rw [pow_mul]; exact le.trans_lt m.above
+    have bound : m.d < 4*m.p := by
+      by_contra! ge
+      exact (Nat.not_le_of_lt lt) (Nat.pow_le_pow_right (by decide) ge)
+    exact ⟨m.p,⟨m.d,by omega⟩,m.above,m.fine⟩
+  let p := Nat.find existsP
+  let existsD : ∃ d : Nat, 3^p*2^d < 16^p ∧ h*16^p ≤ (h+1)*(3^p*2^d) := by
+    obtain ⟨d,ok⟩ := (show GridAt h p from Nat.find_spec existsP)
+    exact ⟨d.val,ok⟩
+  ⟨p,Nat.find existsD,(Nat.find_spec existsD).1,(Nat.find_spec existsD).2⟩
+
+def precision (n : Nat) : Nat := n+1
+
+def grid (n : Nat) : Mesh (2*precision n) := firstMesh _ (by unfold precision; omega)
+
+/-- One finite count below the allowed budget certifies a whole new range. -/
+theorem advance {k h s X t : Nat} (hp : 0<h) (m : Mesh (2*h))
+    (size : 64^s*(m.cost*2^(k+1)+4*h+2)≤3^s*X)
+    (budget : (survivors h X (2^k+1) t).card < 2^s)
+    (prev : ∀ z≤2^k, z%3≠0 → Basin z) :
+    ∀ q≤2^(k+1), q%3≠0 → Basin q := by
+  intro q hq hu
+  have bound := (Nat.mul_le_mul_left (64^s) (show m.cost*q+4*h+2 ≤ m.cost*2^(k+1)+4*h+2
       from Nat.add_le_add_right (Nat.add_le_add_right (Nat.mul_le_mul_left _ hq) _) _)).trans size
-  obtain ⟨t,f,inj,inside⟩ := shell_fan m s q X hu sq
-  obtain ⟨E,small,clean⟩ := cert
-  have missing : ∃ w, f w ∉ E := by
-    by_contra! bad
-    let g (w : Fin s → Bool) : E := ⟨f w,bad w⟩
-    have ig : Function.Injective g := fun a b eq => inj (congrArg Subtype.val eq)
-    have count := Fintype.card_le_of_injective g ig
-    simp at count
-    omega
-  obtain ⟨w,hw⟩ := missing
-  obtain ⟨lo,hi,hit⟩ := inside w
-  exact (basin_at_hit ⟨t,hit⟩).mp (clean _ lo hi hw)
+  exact recover_floor hp m hu bound budget (fun z hz => prev z (by omega))
+
+theorem collatz_iff_dyadic_tests (width depth center : Nat → Nat)
+    (positive : ∀ k, 0<width k) (mesh : ∀ k, Mesh (2*width k))
+    (calibrated : ∀ k, 64^(depth k)*((mesh k).cost*2^(k+1)+4*width k+2) ≤ 3^(depth k)*center k) :
+    Universal ↔ ∀ k : Nat, ∃ t : Nat,
+      (survivors (width k) (center k) (2^k+1) t).card < 2^(depth k) := by
+  constructor
+  · intro all k
+    have posX : 0<center k := by
+      by_contra! hx
+      have eq : center k=0 := by omega
+      have bound := calibrated k
+      rw [eq,Nat.mul_zero] at bound
+      have bad : 0<64^(depth k)*((mesh k).cost*2^(k+1)+4*width k+2) := by positivity
+      omega
+    have hfloor : 1<2^k+1 := by have := Nat.one_le_pow k 2 (by decide); omega
+    obtain ⟨t,ok⟩ := empty_survivors (h:=width k) all hfloor posX
+    exact ⟨t, by rw [ok,Finset.card_empty]; positivity⟩
+  · intro cert
+    have blocks (k : Nat) : ∀ q≤2^k, q%3≠0 → Basin q := by
+      induction k with
+      | zero =>
+        intro q hq hu
+        simp only [pow_zero] at hq
+        have e : q=1 := by omega
+        exact e ▸ ⟨0,rfl⟩
+      | succ j prev =>
+        obtain ⟨t,limit⟩ := cert j
+        exact advance (positive j) (mesh j) (calibrated j) limit prev
+    exact universal_of_units (fun q hu => blocks q q (Nat.lt_two_pow_self.le) hu)
+
+/-- Compute the next power of two above an integer bound for the shell location. -/
+def center (k : Nat) : Nat :=
+  2^((64^k*((grid k).cost*2^(k+1)+4*precision k+2)).log2+1)
+
+theorem fixed_window_criterion :
+    Universal ↔ ∀ k : Nat, ∃ t : Nat,
+      (survivors (precision k) (center k) (2^k+1) t).card < 2^k := by
+  apply collatz_iff_dyadic_tests precision id center (fun k => by unfold precision; omega) grid
+  intro k
+  let a := 64^k*((grid k).cost*2^(k+1)+4*precision k+2)
+  have ba : a ≤ 2^(a.log2+1) := Nat.lt_log2_self.le
+  have mul : center k ≤ 3^k*center k := by
+    simpa using Nat.mul_le_mul_right (center k) (Nat.one_le_pow k 3 (by decide))
+  exact ba.trans mul
 
 end CollatzShell
