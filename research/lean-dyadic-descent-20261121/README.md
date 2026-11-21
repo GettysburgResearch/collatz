@@ -1,4 +1,4 @@
-# Power-saving blocks and quantitative visits to the dyadic section
+# Finite coefficient escape and descent in the forced dyadic section
 
 **Full Collatz remains OPEN.** This packet builds on PR173 at
 `fa0c9e2a2851e6324391e39c17afcb5913185aec` and proves unbounded families of
@@ -16,6 +16,76 @@ For `d = floor(log₂ n)`, PR173 marks the odd integers satisfying
 positive marked-return map `R` total. Its `collatz_iff_return_descent` says
 that full Collatz is equivalent to eventual strict descent under `R` for
 **every** marked input above one. These are imported results, not new claims.
+
+## Whole-repository reassessment: finite counts and complete certificates
+
+The [broader synthesis](WHOLE_REPO_SYNTHESIS.md) and
+[complete 145-PR metadata inventory](WHOLE_REPO_INVENTORY.json) step outside
+the recent band families and reconnect the older coefficient, rank, mass,
+ordinary-extraction and cycle programs. The inventory is not a claim of a
+fresh line-by-line proof review of every branch. Two concrete developments
+result, in three new Lean modules.
+
+**An unconditional finite coefficient alternative.** Put
+`C_t(n)=3^(oddCount t n)/2^t`. For every ordinary source `n` and `B>=1`, set
+
+\[
+k=70(\lfloor\log_2B\rfloor+3),\quad M=2^k,\quad
+N=n+M+1,\quad H=6B^2(n+N)+1.
+\]
+
+[CoefficientPeaks.lean](CoefficientPeaks.lean) proves
+
+\[
+\exists t\le H:\qquad C_t(n)<1\quad\text{or}\quad C_t(n)>B.
+\]
+
+It also proves
+`H<=12*B^2*n+6*2^210*B^72+6*B^2+1`. The observation time is explicit and
+coarse. [CoefficientCounting.lean](CoefficientCounting.lean) supplies the
+exact residue moment and packing estimate; the dynamics module proves its
+own finite injectivity from the provisional coefficient strip. No global
+nonperiodicity or random-parity premise is assumed. The older orbit-Mellin
+work already proves qualitative coefficient escape; the
+[new note](COEFFICIENT_PEAKS.md) credits that overlap. An upper exit remains
+possible, so this is not universal coefficient stopping.
+
+**A further complete-certificate rank decrease.**
+[CertificateBoundary.lean](CertificateBoundary.lean) treats a guarded part
+of PR177's remaining initial-even-run-two/first-odd-gap-four case. From a
+supplied complete certificate for `q=4p+1` beginning with gap four, it
+constructs a complete child source `S'=8z` with `S'>=4q+4`. Every old target
+up to `2*(4q)+1` fits unchanged inside the child's interval. The same grade
+comparison removes grade eight and inserts only grades at most seven,
+preserving the literal arbitrary suffix. The
+[precise statement](CERTIFICATE_BOUNDARY.md) retains all four guards on `p`
+and the lower-rank induction hypothesis. The source certificate may grow
+while its rank decreases; this is not ordinary descent of the target.
+
+**A separate analytic audit.**
+[PREDECESSOR_POPULATION_AUDIT.md](PREDECESSOR_POPULATION_AUDIT.md)
+independently reconstructs PR180's written joint-clock implication to
+`cX/a` actual predecessor populations. It authenticates the source bytes
+and checks the exact primary renewal estimate, weighted counting norm,
+complete-clock convolution and duplicate removal. Its scope is an audited
+written derivation, not a Lean theorem. No checked theorem in this packet
+imports that analytic claim as an axiom.
+
+**A written qualitative regularity theorem.**
+[PROFINITE_LABEL_RIGIDITY.md](PROFINITE_LABEL_RIGIDITY.md) shows that a
+nonconstant ordinary invariant Boolean label has one positive logarithmic
+mean error floor against every `[0,1]`-valued periodic function of period
+`2^a*3^b`, independent of the conductor. Thus qualitative mean approximation
+would already force constancy; no approximation rate is required. This
+separate measure-theoretic argument uses the earlier marginal atom floor
+and logarithmic population, without the later joint-clock claim. It is a
+written, source-qualified result, outside the Lean count. Constructing such
+approximants for the basin-of-one label remains open.
+
+Use [replay_reassessment.py](replay_reassessment.py) for a fresh build of
+the two pinned inputs, all three new modules and their complete public
+theorem audit. The [reassessment report](../../reports/2026-11-21-dyadic-descent/reassessment/README.md)
+records the actual checks separately from the preceding continuation.
 
 ## Latest continuation: three attacks on universal coverage
 

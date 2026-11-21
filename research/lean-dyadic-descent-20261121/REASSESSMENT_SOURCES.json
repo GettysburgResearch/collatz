@@ -1,0 +1,27 @@
+{
+  "scope": "Exact source heads used by the reassessment; only the two sources pinned in replay_reassessment.py are imported into the new Lean build. Other sources are written comparisons or analytic dependencies, with claim-level scopes in the notes.",
+  "prior_checked_checkpoint": "65ee193029bc04f5ee1b9ca25b6b96d6f1055695",
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "source_heads": {
+    "PR92": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+    "PR168": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+    "PR173": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+    "PR175": "2055b8a311ab87d07bffc730154a7f8546fe382c",
+    "PR177": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+    "PR178": "e5de8da89b3aab3cae98db3157977165f4467e3e",
+    "PR180_selected_prefix": "f87cb69b3dd86257731ddfbab58c87bf3b5f63d6",
+    "PR180_joint_clock": "d0349de2108abb7c8fb8393c086610e3372df116",
+    "PR183": "907a540943090968bc683b1b9246208e9053c1f8",
+    "PR184": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+    "PR185": "6d2765ef462fb575c49d4133b54286be7ffe68ec",
+    "PR186": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493"
+  },
+  "primary_input": {
+    "author": "Terence Tao",
+    "title": "Almost all orbits of the Collatz map attain almost bounded values",
+    "doi": "10.1017/fmp.2022.8",
+    "version": "arXiv1909.03562v7,16July2026",
+    "url": "https://arxiv.org/html/1909.03562v7",
+    "scope": "Proposition1.14, consistency, Section6 separation, and Proposition7.3 equation7.10; each use is identified in the written notes. No external theorem is imported as a Lean axiom."
+  }
+}

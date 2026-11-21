@@ -1,0 +1,22 @@
+{
+  "scope": "Proof-source hashes match the actual successful fresh replay. Written analytic notes are separately reviewed and are not Lean declarations.",
+  "lean_receipt_sha256": "de86c3dc73724f55ce3947f0adda0f6d32b4048c1f2e3959859a0306b4442fa1",
+  "source_sha256": {
+    "research/lean-shell-cover/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/lean-dyadic-descent-20261121/OffsetDescent.lean": "e0af0b1cbe4c4d90b34272bbbc45f25f6a084072dd17c2eb24be9e31641fde8b",
+    "research/lean-dyadic-descent-20261121/CoefficientCounting.lean": "070d4f0f0da69130b04033b8aac169fd1e9f763c3435ff78448ba1dbe232e51e",
+    "research/lean-dyadic-descent-20261121/CoefficientPeaks.lean": "34c522620ab742bd728db2d2ebf958b131a981fb5edd9d7c9ad160ee28d50db9",
+    "research/lean-dyadic-descent-20261121/CertificateBoundary.lean": "3cdedfd465939cf48528b8ee199d528a7d6d9f795b332470757ac0d96944d3c9"
+  },
+  "runner_sha256": "e8698d847b9ecbdbe6ba20c891c868598d25f70d46887e0dc41ef35863d6fb05",
+  "reviewed_note_sha256": {
+    "COEFFICIENT_PEAKS.md": "f0a70650278bf52fba5ecc94ee102ab710b9faef69ec08187d27683c75a1cd41",
+    "CERTIFICATE_BOUNDARY.md": "d5ad56134c36d2adc586b10227e9e4a336e0548b7a764002be49b9a81230c0b5",
+    "PREDECESSOR_POPULATION_AUDIT.md": "07cd8744f5ddd29016f976faa2fa9bb8becef3ff42e5ec7f5cba7b4fad9ec07d",
+    "PROFINITE_LABEL_RIGIDITY.md": "ec502a0e26562badfbfb615420ce80036917e1b39d6ec28be32c1a658b6cffa6",
+    "GUARD_COMPOSITION_AUDIT.md": "3dae66743d99a7ede57d6fd0fb2d20d11223e5d5681093842ada6e393587039a"
+  },
+  "checked_proof_commit": "7b0db97835afb4350cd5bad50a4b53b02b72d2c6",
+  "checked_proof_tree": "a2ce647784fc3ae4ef7f4e7c8e8e4bc0709710e3",
+  "checkout_receipt_sha256": "34a08612113320a6e7da914dcb69e6729a0609752b915ba89e3a015cb65bdf8e"
+}
