@@ -77,3 +77,19 @@ it does not exclude an additional periodic cycle.
 The first missing global estimate is the unconditional cubic survivor
 bound in the README. The alternative universal clock-saving selector and
 the carry-reset repayment bound are also open.
+
+## Continuation: joint clock derivation
+
+`JOINT_CLOCK_MIXING.md` uses an additional, stronger published interface:
+Tao's Section 7 nonnegative pair-sum envelope, Lemma 7.2 and Proposition
+7.3, equation (7.10), together with the Section 6 prefix separation proof.
+The root and a separate agent inspected these primary-source statements.
+Conditioning on the pair sums freezes the whole exponent total; the new
+derivation retains its slices through the Fourier and selected-density
+arguments. The old marginal estimate is not relabeled as a joint result.
+
+`GLOBAL_RENEWAL_ATTACK.md` records the independent interface review and
+derives the uniform finite-scale ordinary predecessor count from the
+new central-total floor. These results remain written analysis. They do
+not establish the global survivor upper bound or discharge any Lean
+hypothesis by an undeclared axiom.

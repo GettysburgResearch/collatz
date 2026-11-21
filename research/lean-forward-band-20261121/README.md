@@ -12,6 +12,38 @@ The map throughout is the ordinary shortcut map
 T(n)=\begin{cases}n/2&2\mid n,\\(3n+1)/2&2\nmid n.\end{cases}
 \]
 
+## Continuation: complete clocks and a uniform ordinary population
+
+The next analytic attack retains the **whole exponent total** in the
+Syracuse mixing argument. Starting from Tao's stronger nonnegative
+pair-sum renewal estimate, it derives joint fine-scale mixing with the
+correct clock convolution. A selected-density telescope then gives a
+controlled atom floor at **each central total** `|A-2s|<=sqrt(s)`.
+
+Its ordinary consequence is stronger than the earlier logarithmic bound:
+there are absolute constants `c,C>0` such that every positive ternary-unit
+target `a` satisfies
+
+\[
+ X\ge Ca\quad\Longrightarrow\quad
+ \#\{0<n\le X:n\text{ odd},\ \exists t,\ T^t(n)=a\}
+ \ge cX/a.
+\]
+
+The sources may also be required to be ternary units after adjusting the
+constants. This gives positive lower **natural** predecessor density and
+a uniform linear onset. The constants are not numerically evaluated.
+
+**Evidence level: written analytic derivation, independently reviewed;
+not a Lean formalization of the analytic mixing or population theorem.**
+The proof uses the published nonnegative renewal estimate, not an
+unjustified inference from the old marginal mixing statement. It supplies
+a lower population bound; the global survivor upper bound and universal
+descent remain open.
+
+[Joint clock proof](JOINT_CLOCK_MIXING.md) ·
+[Independent review and ordinary population theorem](GLOBAL_RENEWAL_ATTACK.md)
+
 ## 1. New population theorem inside the actual band
 
 There is an absolute constant \(\gamma>0\) such that, for every positive
