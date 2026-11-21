@@ -3,6 +3,7 @@ import Collatz
 -- The #check lines retain the unproved global hypothesis in the displayed type.
 #check @CollatzHalfCrossing.collatz_of_half_budget
 #check @CollatzBudgetCheck.collatz_of_universal_budget_check
+#check @CollatzUnitBudget.collatz_of_unit_budget
 #print axioms CollatzHalfCrossing.run_identity
 #print axioms CollatzHalfCrossing.run_debt
 #print axioms CollatzHalfCrossing.half_crossing_descent
@@ -10,6 +11,18 @@ import Collatz
 #print axioms CollatzBudgetCheck.witness_clock_bound
 #print axioms CollatzBudgetCheck.budgetCheck_iff
 #print axioms CollatzBudgetCheck.collatz_of_universal_budget_check
+#print axioms CollatzUnitBudget.collatz_of_unit_budget
+#print axioms CollatzBudgetTransfer.run_add_value_odds
+#print axioms CollatzBudgetTransfer.budget_of_crossing
+#print axioms CollatzBudgetTransfer.budget_inverse
+#print axioms CollatzBudgetTransfer.budget_merger
+#print axioms CollatzBudgetTransfer.budget_forward
+#print axioms CollatzTernaryLadder.ladder_path
+#print axioms CollatzTernaryLadder.ladder_prefix_expands
+#print axioms CollatzTernaryLadder.ladder_smaller
+#print axioms CollatzTernaryLadder.budget_ladder
+#print axioms CollatzTernaryLadder.budget_ladder_unit_induction
+#print axioms CollatzTernaryLadder.budget_ladder_unit_entrance
 #print axioms CollatzCrossShadow.trace_holds
 #print axioms CollatzCrossShadow.psi_terminal_counts
 #print axioms CollatzCrossShadow.psi_close_of_terminal_guard

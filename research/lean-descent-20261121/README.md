@@ -52,6 +52,9 @@ The remaining assertion is:
 This is `CollatzHalfCrossing.HalfBudget`, explicitly **OPEN**. It is a
 sufficient condition, not an asserted equivalent reformulation of Collatz.
 No proof here deduces its uniform linear budget from eventual convergence.
+The [completion attempt](HALF_BUDGET_ATTACK.md) records the precise canonical-root
+inequality tried, its ordinary-integrality requirement, and the remaining
+fixed-source branch.
 
 ### One bounded test per input
 
@@ -77,6 +80,25 @@ inputs and ordinary endpoint 10. The budget is `80<=81`. `Examples.lean`
 checks these numbers in the kernel. The base `n=1` fails this proposed budget
 and is correctly handled separately by induction. Finite fixtures do not
 establish universal acceptance.
+
+### The weaker unit-only target
+
+`UnitBudget.lean` proves that it is enough for the test to pass on `n` not
+divisible by three. The ordinary orbit stays within that domain, so the
+strict-descent induction closes there; ordinary moves then extend convergence
+to every positive integer. The strongest global theorem in this packet is
+
+```lean
+def UnitBudgetCheck : Prop :=
+  ∀ n, 1 < n → n % 3 ≠ 0 → budgetCheck n = true
+
+theorem collatz_of_unit_budget (H : UnitBudgetCheck) :
+  ∀ n, 0 < n → Basin n
+```
+
+`UnitBudgetCheck` remains OPEN. This theorem does not infer the quantitative
+budget for inputs divisible by three. In a unit-only induction, a smaller
+inverse source must itself be a unit or have a separately supplied budget.
 
 ## A complete shadow for the other global route
 
@@ -104,6 +126,59 @@ clock. Lean verifies the exact counterexample. Negative terminal debt alone
 also fails to imply descent. See [the attack and exact boundary](CROSS_SHADOW_ATTACK.md).
 
 ## Mixed forward and inverse certificates
+
+### General unequal-clock transfer
+
+`BudgetTransfer.lean` supplies one formal rule for arbitrary ordinary prefixes
+`x -> z` and `n -> z`, at possibly different clocks. Write `M,D,p` for each
+prefix's multiplier, denominator, and odd count. If the source prefix from
+`x` has not yet crossed one half, and
+
+\[
+ M_nD_x\le M_xD_n,\qquad 3x+2p_n\le3n+2p_x,
+\]
+
+then a supplied budget at `x` transfers to `n`. Lean proves the exact
+composition, cancellation, odd-cost bound, and extraction of the first
+crossing. These guards are checked on the actual ordinary paths; a basin
+equivalence alone is not treated as a budget certificate.
+
+### An unbounded inverse ladder
+
+For arbitrary natural `r,s,u` and positive `v` satisfying
+
+\[
+ 3^s v=4^r u+2,\qquad 2^{s+2r}<3^{s+r},
+\]
+
+put `x=2^s v-1` and `q=3^r u+1`. `TernaryLadder.lean` proves
+
+\[
+ T^{s+2r}(x)=q,\qquad p_{s+2r}(x)=s+r,\qquad 0<x<q.
+\]
+
+It also proves that every prefix coefficient is at least one. Thus a budget
+at the smaller source transfers to `q`, for unbounded block lengths. The
+word consists of `s` odd shortcuts followed by `r` odd/even pairs.
+
+The source-unit issue has a formal repair. Under the stronger inequality
+
+\[
+               3\,2^{s+2r}<2\,3^{s+r},\qquad s>0,
+\]
+
+spend the first odd step and use `y=2^(s-1)*(3v)-1`. This is automatically
+`2 mod 3`, is positive and smaller than `q`, and the remaining prefix still
+expands. The unit-only induction can therefore use it. For example,
+`111 -> 167 -> 251 -> 377 -> 566 -> 283` supplies the smaller unit `167`
+for `283`, despite the original source being divisible by three.
+
+The [unbounded ladder proof and domain](TERNARY_LADDER.md) explain both
+versions. **A covering construction for every remaining unit has not been
+proved.** The general merger theorem and this infinite ladder do not silently
+assert such coverage.
+
+### A paired five-return progression
 
 `InverseReturn.lean` proves, for every `t>=0`,
 
@@ -138,8 +213,21 @@ The latest source refresh for this checkpoint used:
 That project credits its reverse-basin source to PR 146 at
 `e238c63a5d57f96bb063b7472498d1977df51951`, with its documented Lean-core shim.
 The new modules are `HalfCrossing`, `BudgetCheck`, `CrossShadow`, and
-`InverseReturn`. No re-verification of older research packets is claimed.
+`InverseReturn`, followed by `BudgetTransfer`, `UnitBudget`, and
+`TernaryLadder` at checkpoint two. No re-verification of older research packets is claimed.
 No GRH hypothesis is used in these theorems.
+
+The live refresh during this pass also recorded PR 173 at
+`cccf14d13250d3f98ef9b01ddbd304d11294e603` (new octave mixing and packing
+criteria), PR 174 at `011b89e5362ea89427c2704e5e6c1f434e860da0` (the formal
+base is unchanged), PR 175 at `ad513f1ea609ed47dbcf997df0f09c16557264ee`
+(relative parity barrier), PR 176 at `bff01093f3eb073216f9ec610130d16067fcc1fd`,
+PR 177 at `fe58c189b619d2983940b19a50f1b12798f5651f`, and PR 178 at
+`7e40cb5e09f4ed84b96eebf1d2e3fe43fdadf862`. Their current interfaces were
+considered for the closing argument; no theorem from these later heads is
+imported into this Lean development. In particular, the exact dyadic square
+mixing identity is not used to assume fresh parity blocks along a fixed
+ordinary trajectory.
 
 ## Build and evidence
 
@@ -156,3 +244,7 @@ lake env lean -DwarningAsError=true Examples.lean
 hypotheses, and the axiom dependencies of the principal results. Build
 receipts and publication checkpoints are recorded in the PR description.
 Repository-integrity validation is distinct from Lean verification.
+The actual first remote checkpoint is `4bf2675bcc78b42a3f17c0dd826e1dfcc4c8f35b`;
+its [Lean receipt](../../reports/2026-11-21-lean-descent/checkpoint1-lean.json)
+and [clean-checkout receipt](../../reports/2026-11-21-lean-descent/checkpoint1-validation.json)
+are preserved. Later checkpoint validation identifies its own exact head.

@@ -1,0 +1,67 @@
+{
+  "scope": "Actual Lean build on remote checkpoint; global theorem retains explicit open hypothesis",
+  "before": {
+    "head": "4bf2675bcc78b42a3f17c0dd826e1dfcc4c8f35b",
+    "tree": "d58206f6cf480fa33b729e832c210e3d2ce769c7",
+    "status": "",
+    "tracked_files": 332
+  },
+  "commands": [
+    {
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2714 [2/10] Built Collatz.ReverseBasin146 (7.9s)\n\u2714 [3/10] Built Collatz.Closure (1.9s)\n\u2714 [4/10] Built Collatz.CrossShadow (2.2s)\n\u2714 [5/10] Built Collatz.HalfCrossing (2.3s)\n\u2714 [6/10] Built Collatz.Shadow (2.6s)\n\u2714 [7/10] Built Collatz.BudgetCheck (1.1s)\n\u2714 [8/10] Built Collatz.InverseReturn (4.6s)\n\u2714 [9/10] Built Collatz (852ms)\nBuild completed successfully (10 jobs).\n",
+      "stderr": "",
+      "seconds": 15.463
+    },
+    {
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "CollatzHalfCrossing.collatz_of_half_budget : CollatzHalfCrossing.HalfBudget \u2192\n  \u2200 (n : \u2115), 0 < n \u2192 CollatzReverseBasin.Basin n\nCollatzBudgetCheck.collatz_of_universal_budget_check : CollatzBudgetCheck.UniversalBudgetCheck \u2192\n  \u2200 (n : \u2115), 0 < n \u2192 CollatzReverseBasin.Basin n\n'CollatzHalfCrossing.run_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHalfCrossing.run_debt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHalfCrossing.half_crossing_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzHalfCrossing.collatz_of_half_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBudgetCheck.witness_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBudgetCheck.budgetCheck_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBudgetCheck.collatz_of_universal_budget_check' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCrossShadow.trace_holds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCrossShadow.psi_terminal_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCrossShadow.psi_close_of_terminal_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCrossShadow.terminal_clock_counterexample' does not depend on any axioms\n'CollatzInverseReturn.source_run' depends on axioms: [propext, Quot.sound]\n'CollatzInverseReturn.companion_run' depends on axioms: [propext, Quot.sound]\n'CollatzInverseReturn.excludes_least_failure' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "seconds": 0.49
+    },
+    {
+      "argv": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Examples.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'twenty_seven_account' does not depend on any axioms\n'twenty_seven_accepted' does not depend on any axioms\n'one_is_separate' does not depend on any axioms\n",
+      "stderr": "",
+      "seconds": 0.738
+    }
+  ],
+  "after": {
+    "head": "4bf2675bcc78b42a3f17c0dd826e1dfcc4c8f35b",
+    "tree": "d58206f6cf480fa33b729e832c210e3d2ce769c7",
+    "status": "",
+    "tracked_files": 332
+  },
+  "success": true,
+  "finished_utc": "2026-11-21T08:25:32.468052+00:00",
+  "source_sha256": {
+    "research/lean-descent-20261121/lean/Audit.lean": "aca6eb1d3fc50f28691891b57a35f192e16cb19de9f4b1930ef7024c492006dc",
+    "research/lean-descent-20261121/lean/Collatz/BudgetCheck.lean": "af235a279f1a8d0e9d378d9708fc23cfc62576d2e167465db339f93afea7dc53",
+    "research/lean-descent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-descent-20261121/lean/Collatz/CrossShadow.lean": "27b95402734cf9e75e54f9d1f27afd3a6e94558bfb7c4f6e663d59d41ecdfa91",
+    "research/lean-descent-20261121/lean/Collatz/HalfCrossing.lean": "111a158a9aec198e8e6e1217b495b0c178b1919d4cc1ae06699921d5dea98ce2",
+    "research/lean-descent-20261121/lean/Collatz/InverseReturn.lean": "ceab6f3ee0c0426e98184e9759bb6b2a2f4cd53e938eb3aa02547cc1c309d8c8",
+    "research/lean-descent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-descent-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-descent-20261121/lean/Collatz.lean": "ce892f0c951f6ecf24a12cdf49b90068db899d36eae106b2745b58cad27ffe59",
+    "research/lean-descent-20261121/lean/Examples.lean": "1a6f681e1eb8ee69275f3fd42dd03bf9cdeea0b19ac46fe8cf4f5901ce35f061"
+  }
+}

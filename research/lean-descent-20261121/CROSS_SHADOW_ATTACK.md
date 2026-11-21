@@ -117,7 +117,7 @@ Executed on Lean 4.34.1:
 
 ```
 lake env lean -DwarningAsError=true Collatz/CrossShadow.lean
-lake env lean -DwarningAsError=true CrossShadowAudit.lean
+lake env lean -DwarningAsError=true Audit.lean
 ```
 
 The audit reports only `propext`, `Classical.choice`, and `Quot.sound` for the
