@@ -13,11 +13,15 @@ NOTHING HERE PROVES THE COLLATZ CONJECTURE.  Every theorem below is an equivalen
 open statements, or an ordinary (finite-orbit) identity.
 
 Credit: `basin_pow_two_pred`, `basin_pow_four_succ`, `basin_jacobsthal`, `shadow_even` and the
-closure frame are from `research/psi-closure-20261121/lean`.  The rank-0 instance of
-`fwd_family_fold` (Mersenne / `3^a - 1` parity fold) is also in PR #176
-(`ternary_even_exponent_fold`, `mersenne_even_exponent_fold`); exact step/odd-count profiles
-of the two exponent ladders are also in PR #179 (`ones_block`, `twos_block`) and PR #181
-(`power_four_profile`).
+closure frame are from `research/psi-closure-20261121/lean`.  Concurrent work (read as source,
+not rebuilt here):
+* PR #176 (`ternary_even_exponent_fold`, `mersenne_even_exponent_fold`) is the `u = 1` instance
+  of `fwd_family_fold` below; it is not re-claimed here.
+* PR #177 (`ResetFamily.lean`): its unbounded rank-two family is the slice `k = 0`,
+  `j+2 ≡ 5 (mod 6)` of the second reverse rank-1 family (`rev_one_b_k0`).
+* PR #179 (`ones_block`, `twos_block`, `ladder_path`) and PR #181 (`power_four_profile`,
+  `paired_descent`) give exact step/odd-count profiles of the two exponent ladders used here
+  only as basin equivalences.
 -/
 import Collatz
 open CollatzReverseBasin CollatzClosure
@@ -962,6 +966,66 @@ theorem fwd_one_fold_landing (n j : ℕ) :
   rw [e]
   exact fold_three_steps _ _ hA hP
 
+/-- For `x ≡ 5 (mod 8)`: `x` and `x - 1` are in the same component. -/
+theorem basin_pred_five (x : ℕ) (h : x % 8 = 5) : Basin x ↔ Basin (x - 1) := by
+  obtain ⟨t, rfl⟩ : ∃ t, x = 8*t+5 := ⟨x/8, by omega⟩
+  have a1 := basin_step (8*t+5)
+  have hs1 : shortcut (8*t+5) = 2*(2*(3*t+2)) := by unfold shortcut; split <;> omega
+  rw [hs1] at a1
+  have a2 := basin_twice (2*(3*t+2))
+  have a3 := basin_twice (3*t+2)
+  have b1 := basin_twice (2*(2*t+1))
+  have b2 := basin_twice (2*t+1)
+  have b3 := basin_step (2*t+1)
+  have hs2 : shortcut (2*t+1) = 3*t+2 := by unfold shortcut; split <;> omega
+  rw [hs2] at b3
+  have e : 8*t+5-1 = 2*(2*(2*t+1)) := by omega
+  rw [e]
+  exact a1.symm.trans (a2.trans (a3.trans (b3.trans (b2.symm.trans b1.symm))))
+
+/-- Cross-layer identity: the first reverse rank-1 family at even exponent `2n+2` coincides
+(as components) with the forward rank-1 family at exponent `2n+1`. -/
+theorem rev_fwd_one_link (n j : ℕ) :
+    Basin (3^(2*n+2)*4^(j+2) - (3^(2*n+2) - 1)) ↔
+      Basin (3^(2*n+1)*4^(j+2) - (3^(2*n+1) + 1)) := by
+  have hmod := four_pow_mod_three (j+2)
+  have hpos : 0 < 4^(j+2) := Nat.pow_pos (by omega)
+  have hu : 3*((4^(j+2)-1)/3) + 1 = 4^(j+2) := by omega
+  obtain ⟨y, hy⟩ : ∃ y, 3*y + 1 = 4^(j+2) := ⟨_, hu⟩
+  have hy8 : y % 8 = 5 := by
+    have h16 := four_pow_two j
+    generalize 4^(j+2) = X at hy h16
+    generalize 4^j = Z at h16
+    omega
+  have ho : y % 2 = 1 := by omega
+  have hA : 3^(2*n+2) % 8 = 1 := by
+    have e : 2*n+2 = 2*(n+1) := by omega
+    rw [e]; exact three_pow_even_mod_eight (n+1)
+  have hx : (3^(2*n+2)*y) % 8 = 5 := by
+    rw [Nat.mul_mod, hA, hy8]
+  have l1 : 3^(2*n+2)*4^(j+2) - (3^(2*n+2) - 1) = 3^(2*n+2+1)*y + 1 :=
+    (rev_form_one (2*n+2) y _ hy).symm
+  have t1 := basin_triple_form (2*n+2) y ho
+  have t2 := basin_pred_five _ hx
+  have l2 : 3^(2*n+1+1)*y - 1 = 3^(2*n+1)*4^(j+2) - (3^(2*n+1) + 1) := fwd_form (2*n+1) y _ hy
+  rw [l1, ← l2]
+  exact t1.trans t2
+
+/-- Forward rank 1 in canonical folded form: the two-parameter family
+`G(n,j) = 18·9^n·4^j - (9^(n+1) - 1)/8`. -/
+theorem fwd_layer_one_iff_folded :
+    FwdLayer 1 ↔ ∀ n j : ℕ, Basin (18*(3^(2*n)*4^j) - (9*3^(2*n) - 1)/8) := by
+  rw [fwd_layer_one_iff]
+  constructor
+  · intro H n j
+    exact (fwd_one_fold_landing n j).mp (H (2*n) j)
+  · intro H b j
+    obtain ⟨n, hn | hn⟩ : ∃ n, b = 2*n ∨ b = 2*n+1 := ⟨b/2, by omega⟩
+    · subst hn
+      exact (fwd_one_fold_landing n j).mpr (H n j)
+    · subst hn
+      exact (fwd_one_fold n j).mp ((fwd_one_fold_landing n j).mpr (H n j))
+
 end CollatzLayers
 
 open CollatzLayers in
@@ -1018,3 +1082,7 @@ open CollatzLayers in
 #print axioms rev_one_b_k0
 open CollatzLayers in
 #print axioms fwd_one_fold_landing
+open CollatzLayers in
+#print axioms rev_fwd_one_link
+open CollatzLayers in
+#print axioms fwd_layer_one_iff_folded

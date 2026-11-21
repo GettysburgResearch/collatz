@@ -77,6 +77,16 @@ The goal was to prove `OpenLemma`, which would finish the conjecture.
 **First unsupported step:** `OpenLemma`. Its weakest sub-instance in the unrestricted form is
 `∀ i, Basin (3^i)`.
 
+What the parallel routes add to this picture (details in the next section):
+
+- No finite family of purely ordinary descent certificates can exist (Lean, route `cover`),
+  so any finite cover must use a non-ordinary rule; that rule is where `OpenLemma` sits.
+- The step from `3^(N−1)` to `3^N` is the reverse closure at an explicit point (Lean, route
+  `pow3`), so the powers-of-three family does not escape the lemma.
+- Layer `r` of the closure is an `(r+1)`-parameter family; layer 1 of the `3x+1` problem is
+  governed by orbits of the `3x−1` map (Lean, route `layers`). No uniform rule reducing the
+  layers to finitely many one-parameter families was found (EMPIRICAL evidence against one).
+
 ## Parallel routes (21 Nov 2026)
 
 Each route has its own directory under `routes/` with a `NOTES.md` giving a status for
@@ -87,6 +97,7 @@ integrating session with warnings as errors; only standard axioms appear.
 |---|---|---|
 | `routes/pow3` | PARTIAL. `Pow3Families.lean`: 50 definitions and theorems. Linearity of `T^n` in the added multiple of `2^n` for any base point; `∀ i, 3^i ∈ C` ⟺ `x + 2^n ∈ C` whenever `T^n(x) = 1`; powers of three and Mersenne numbers in base-9 repunit coordinates; `3^N ~ 3^(N−1)` on explicit exponent families of unbounded depth | `3m − 1 ∈ C ⟹ m ∈ C` at `m = 3x+1`, `x = (3w+1)/8` odd, `w = 3^(s−1) q`, `3^N = 1 + 4^s q` — the reverse closure again, at explicit points |
 | `routes/cover` | OBSTRUCTION PROVED. `CoverObstruction.lean` (no imports, axioms `propext`, `Quot.sound`): `unbounded_ordinary_descent_radius` — for every `L` and `N` there is `n > N` from which no walk of at most `L` forward or backward `T`-steps ends below `n`. Witnesses: `2^L ∣ n+1` and `3^L ∣ n`. So no finite family of purely ordinary descent certificates covers all integers; a finite cover needs some non-ordinary rule, such as PR #146's conditional tripling. Written (not Lean): a description of the obstruction set in `Z_2 × Z_3`, with `(−1, 0)` and `(−5, 0)` as obstruction points | whether `(−17, 0)` is an obstruction point; which non-stopping 2-adic points have no purely 2-adic descending path |
+| `routes/layers` | PARTIAL. `Layers.lean`: Collatz ⟺ every forward layer ⟺ every reverse layer, stratified by the number of odd steps of the known member (`collatz_iff_fwd_layers`, `collatz_iff_rev_layers`); forward layer 0 ⟺ every Mersenne number is in `C`; forward layer 1 ⟺ `3^b·4^(j+2) − (3^b+1) ∈ C` for all `b`, `j`; reverse layers 0–2 likewise explicit. A landing law: `2^t·w − c ~ 3^(o)·w − S^t(c)`, so the layer-1 families are the numbers `3^K − c` with `c` on the `3x−1` orbit of the seeds `3^b+1`, `3^k−1`, `2·3^k−1` | the two layer-0 families; eventual periodicity of the `3x−1` orbits of those seeds; and the part of layer 1 before the seed reaches a `3x−1` cycle, which is a genuinely two-parameter family |
 | `routes/literature` | nothing external closes `OpenLemma` or its first layer (search-summary evidence only) | — |
 
 ## Concurrent work (noted 21 Nov 2026, not rebuilt here)
