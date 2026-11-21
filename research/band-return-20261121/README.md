@@ -188,6 +188,11 @@ fixed ordinary orbit by a sequence of compatible-looking finite witnesses.
 The [joining attempt](JOINING_ATTEMPT.md) develops the real/2-adic route
 and identifies the required fixed-source exclusion.
 
+The [final combined attempt](GLOBAL_CLOSURE_ATTEMPT.md) applies the new
+results to least-marked induction, repeated-return budgets, temporal
+sparsity, and the integer halving surplus. It records the exact remaining
+universal implication in each route.
+
 ## Build, audit, and publication
 
 Use Lean 4.34.1 and Mathlib at
@@ -207,6 +212,8 @@ axioms are distinguished from a conjectural premise; no such premise or
 `sorry` supplies the open global criterion.
 
 Checkpoints are published to [PR178](https://github.com/GettysburgResearch/collatz/pull/178).
-The PR body records the exact checked commit and actual clean-checkout
-execution receipt. A compiled conditional theorem establishes exactly its
-displayed statement; it does not prove an omitted universal selector.
+The [execution report](../../reports/2026-11-21-band-return/README.md)
+preserves the exact checked commit, actual clean-checkout receipts, full
+axiom output, and focused reviews. A compiled conditional theorem
+establishes exactly its displayed statement; it does not prove an omitted
+universal selector.
