@@ -8,3 +8,16 @@ import Collatz
 #print axioms CollatzNegativeFive.escape_spec
 #print CollatzJoint.collatz_of_complete
 #check CollatzJoint.Checkpoint.unresolved_count
+#print axioms CollatzSelectedWords.linear_block_constants
+#print axioms CollatzAffineJoint.certificate_sound
+#print axioms CollatzAffineJoint.collatz_of_complete_psi
+#print axioms CollatzAffineJoint.PurePsiCheckpoint.rules_valid
+#print axioms CollatzAffineJoint.PurePsiCheckpoint.residue_accounting
+#print axioms CollatzAffineJoint.PurePsiCheckpoint.residue_covered
+#print axioms CollatzAffineJoint.PurePsiCheckpoint.checked_row_sound
+#print axioms CollatzAffineJoint.reciprocal_even_psi_family
+#print axioms CollatzAffineJoint.no_rank_for_both_reciprocal_arcs
+#print axioms CollatzPsiParity.psi_even_of_half_and_odd
+#print axioms CollatzPsiParity.collatz_iff_odd_psi
+#print axioms CollatzPsiParity.collatz_of_odd_rank_step
+#print CollatzPsiParity.OddRankStep

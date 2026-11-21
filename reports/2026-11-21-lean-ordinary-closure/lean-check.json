@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "utc": "2026-11-21T08:28:47.246259+00:00",
+  "utc": "2026-11-21T08:46:05.685844+00:00",
   "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
   "runtime_archive_sha256": "47bf4bbd78f70c2e9670598ab7124d92b6efb7330ff33e5fbb4030f6fd72e4e4",
   "commands": [
@@ -10,30 +10,37 @@
         "build"
       ],
       "exit_code": 0,
-      "output": "lean-build.log"
+      "output": "lean-build.log",
+      "output_sha256": "fdf806a14a571ed93a9d67953f13e494398a4dc1cc1784898ab862b59a049ff7"
     },
     {
       "command": [
         "lake",
         "env",
         "lean",
+        "-DwarningAsError=true",
         "JointAudit.lean"
       ],
       "exit_code": 0,
-      "output": "lean-axioms.log"
+      "output": "lean-axioms.log",
+      "output_sha256": "8e207163ce8bad29cac324bb30415adc6f09bb7be843229f3f50fadf592c8542"
     }
   ],
-  "scope": "Lean build and axiom audit; written analysis and earlier analytic interfaces are not formalized",
+  "warnings": 0,
+  "scope": "Lean build and axiom audit; analytic probability proof and pinned earlier analytic interfaces remain written mathematics",
   "source_sha256": {
     "research/lean-ordinary-closure-20261121/lean/Audit.lean": "51b0e6d3b0bf93efbcf6a444efab39d7bbfb155b44025ca42f570db3ef6d8478",
+    "research/lean-ordinary-closure-20261121/lean/Collatz/AffineJointDescent.lean": "6193e154116fc6190872270468a602a83ae76f90fe72476913be02c044c0be5b",
     "research/lean-ordinary-closure-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
     "research/lean-ordinary-closure-20261121/lean/Collatz/JointCertificates.lean": "7ea8c0871463ec6315066a33a6fdd1eda3ed35faf0bd4b6c79b08a7eeb22c917",
     "research/lean-ordinary-closure-20261121/lean/Collatz/JointDescent.lean": "f4f80511ef82039803810cb75912a28a68132cf24b31e10248fb223b5cf98e19",
     "research/lean-ordinary-closure-20261121/lean/Collatz/NegativeFiveEscape.lean": "676b7346c4649cc41937c9bbead1101de23075cd15b5b5779c7d06baf291365c",
+    "research/lean-ordinary-closure-20261121/lean/Collatz/PsiParity.lean": "284c18317fd4961a48ff99ef138f233e3c3ff067a1f1e7e2552962848ff52990",
+    "research/lean-ordinary-closure-20261121/lean/Collatz/PurePsiCertificates.lean": "9080d69cdc61b214fe92748a418e8a053803f2d35abd8e5ad5c1d9f7e76d30db",
     "research/lean-ordinary-closure-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
     "research/lean-ordinary-closure-20261121/lean/Collatz/SelectedWordInjectivity.lean": "f2674cbfb8cc5c2891d5e7121125b462ed528ff5eb2cf6e7f0003132a5cc43e6",
     "research/lean-ordinary-closure-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
-    "research/lean-ordinary-closure-20261121/lean/Collatz.lean": "e8fdc316adebc3306b65a2d5e636db9afc7058cf46157d6a57714bffe7cce9b2",
-    "research/lean-ordinary-closure-20261121/lean/JointAudit.lean": "3144454e3d2f2543356f1608f7c44df84556847ea67d7dc7da8afd299fece903"
+    "research/lean-ordinary-closure-20261121/lean/Collatz.lean": "e7c4bae1b385ac0ca785e8476f769413e78d9457e641c87e648bcb5e299fee83",
+    "research/lean-ordinary-closure-20261121/lean/JointAudit.lean": "594bc5ebcff80c173773eeb7625bfe81ef9699c60316e763a34a9572049cb84e"
   }
 }

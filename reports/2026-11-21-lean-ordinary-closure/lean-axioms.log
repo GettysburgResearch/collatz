@@ -17,3 +17,24 @@ fun {w} hw3 hw5 hc =>
     (have this := Exists.intro 0 rfl;
     this)
 CollatzJoint.Checkpoint.unresolved_count : CollatzJoint.Checkpoint.unresolved.length = 437
+'CollatzSelectedWords.linear_block_constants' does not depend on any axioms
+'CollatzAffineJoint.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffineJoint.collatz_of_complete_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffineJoint.PurePsiCheckpoint.rules_valid' depends on axioms: [propext]
+'CollatzAffineJoint.PurePsiCheckpoint.residue_accounting' does not depend on any axioms
+'CollatzAffineJoint.PurePsiCheckpoint.residue_covered' depends on axioms: [propext, Quot.sound]
+'CollatzAffineJoint.PurePsiCheckpoint.checked_row_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffineJoint.reciprocal_even_psi_family' depends on axioms: [propext, Quot.sound]
+'CollatzAffineJoint.no_rank_for_both_reciprocal_arcs' depends on axioms: [propext, Quot.sound]
+'CollatzPsiParity.psi_even_of_half_and_odd' depends on axioms: [propext, Quot.sound]
+'CollatzPsiParity.collatz_iff_odd_psi' depends on axioms: [propext, Quot.sound]
+'CollatzPsiParity.collatz_of_odd_rank_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzPsiParity.OddRankStep : Prop :=
+∀ (n : ℕ),
+  0 < n →
+    n % 2 = 1 →
+      (∀ (u : ℕ),
+          0 < u →
+            CollatzPsiParity.psiRank u < CollatzPsiParity.psiRank n →
+              CollatzAffineJoint.Comparison CollatzAffineJoint.Kind.psi u) →
+        CollatzAffineJoint.Comparison CollatzAffineJoint.Kind.psi n

@@ -48,6 +48,33 @@ At modulus 1440, there are 720 positive odd source cells for each multiplier. So
 
 The search and untrusted emitter are in [`search/`](search/). The exact unresolved cells are retained in both JSON and Lean. A residue-dependent weight experiment exposed an additional obligation: even normalization can raise a residue-dependent rank. Such experimental rows are not substituted into this fixed-weight proof.
 
+### Checkpoint 2: a single affine comparison and a uniform even rule
+
+The generalized engine in [`AffineJointDescent.lean`](lean/Collatz/AffineJointDescent.lean) supports an explicit active comparison family. The second frozen search uses **only**
+
+\[
+C_\psi(n):\;\operatorname{Basin}(n)\leftrightarrow\operatorname{Basin}(2n-1),
+\]
+
+with rank `n`, on **every positive source**, including even inputs. Its [`PurePsiCertificates.lean`](lean/Collatz/PurePsiCertificates.lean) kernel-checks 1,265 whole-progression rules modulo 1440 and retains 175 unresolved even cells. It also proves that the successful and unresolved residue lists cover the complete finite residue set. These remain conditional induction rules. Details and regeneration commands are in [`PURE_PSI_CHECKPOINT.md`](PURE_PSI_CHECKPOINT.md).
+
+The new [`PsiParity.lean`](lean/Collatz/PsiParity.lean) proves the unbounded rule
+
+\[
+C_\psi(m)\land C_\psi(4m-1)\Longrightarrow C_\psi(2m)
+\qquad(m>0).
+\]
+
+Both calls strictly decrease the common rank `R(n)=n` for odd `n` and `R(n)=2n` for even `n`. It proves that full Collatz is equivalent to **two-way** psi comparison on all positive odd sources. It also supplies a global induction theorem with the remaining odd-source rank step stated explicitly as `OddRankStep`. That step is not proved by the partial linear-rank table.
+
+The exploratory search using this common parity rank leaves 150 odd source classes at modulus 1440; that is search output, not an additional kernel-checked table. The report [`GLOBAL_SEARCH_ROUTES.md`](GLOBAL_SEARCH_ROUTES.md) records the other full-proof attempts, exact guards, source cutoffs and large ordinary excursions. It identifies an actual reciprocal family, now also proved in Lean:
+
+\[
+C_\psi(6t+4)\leftrightarrow C_\psi(8t+5).
+\]
+
+Two individually decreasing rules can select opposite directions of this relation. Their ranks therefore cannot be combined into a proof by taking the union of their covered cells. The formal result concerns those selected arcs, and does not rule out a different global proof.
+
 ## 2. The global analytic route
 
 [`LINEAR_BLOCK_ATOM_FLOOR.md`](LINEAR_BLOCK_ATOM_FLOOR.md) gives the full selected-block derivation, its external source attribution, and its precise remaining scope. The only imported analytic estimate is Tao's published Proposition 1.14, with its exact normalized counting-measure formulation. The selected-density and weighted-counting strategy is attributed to El Jaouhari through the identified primary exposition; the linear block schedule and finite-cylinder presentation are developed here.
@@ -79,7 +106,7 @@ The file also verifies an explicit failure of ordinary descent: the macro sends 
 
 The dependency-free foundation is imported from **PR174, `7034109ed60a26bc49824e1ed43c239ceca81194`**, directory `research/psi-closure-20261121/lean`. Its `ReverseBasin146.lean` identifies the original PR146 source `e238c63a5d57f96bb063b7472498d1977df51951` and the core-only shim. The imported foundation files are preserved; the package entrypoint is extended for the new modules.
 
-The current research interfaces were refreshed through PR174. In particular the working PR146 head was `f431078244e868dc699fad011044f0d5e7f76437`, PR167 was `e83cc8b35ad614c616df7c00318cc9645a174c34`, and PR173 was `a09eb47197cd99f218b3fa013c681df65ea0f69a`. No global closure claim is inherited from those branches.
+The current research interfaces were refreshed through PR174. In particular the working PR146 head was `f431078244e868dc699fad011044f0d5e7f76437`, PR167 was `e83cc8b35ad614c616df7c00318cc9645a174c34`, and PR173 was `a09eb47197cd99f218b3fa013c681df65ea0f69a`. No global closure claim is inherited from those branches. A late metadata-only interface refresh also checked PRs175–179; its full head pins and observation scope are in `reports/2026-11-21-lean-ordinary-closure/LATE_INTERFACE_REFRESH.md`.
 
 ## 5. Reproduce
 
@@ -102,4 +129,4 @@ Build and axiom receipts belong in `reports/2026-11-21-lean-ordinary-closure`. R
 
 ## Exact remaining global obligations
 
-The certificate route must eliminate every unresolved branch with actual strictly decreasing queries, or supply a different total parametric selector. The analytic route must prove the missing all-source energy estimate; predecessor mass alone does not bound that energy. Neither obligation is discharged in this checkpoint.
+The certificate route must prove the odd-source step for one common rank, or supply another total successful selector. The uniform even macro is available, but the recorded linear and parity ranks cannot be mixed without a new argument. The analytic route must prove the missing all-source energy estimate; predecessor mass alone does not bound that energy. Neither obligation is discharged in this pass. [`SIGNED_CUTSET_ATTEMPT.md`](SIGNED_CUTSET_ATTEMPT.md) records the final actual-label first-entry attempt: a single failed cut can carry unbounded predecessor occupation, so selecting first defects alone does not supply the missing congestion estimate. This does not refute the specific CI4 compiler.
