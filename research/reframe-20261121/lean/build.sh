@@ -37,8 +37,11 @@ export LEAN_PATH="$reframe_root/.build:$reframe_vendor:$reframe_root:$reframe_ov
 
 for reframe_module in ShellCover ForwardSection; do
   printf 'Checking imported %s\n' "$reframe_module"
-  lean -j1 -DwarningAsError=true -o ".build/$reframe_module.olean" \
-    "$reframe_vendor/$reframe_module.lean"
+  (
+    cd -- "$reframe_vendor"
+    lean -j1 -DwarningAsError=true -o "$reframe_root/.build/$reframe_module.olean" \
+      "$reframe_module.lean"
+  )
 done
 
 for reframe_module in DiscretePump MarkedDyadicTransport MergerPopulationPacking ReframeAudit; do

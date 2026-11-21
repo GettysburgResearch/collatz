@@ -24,6 +24,11 @@ The mathematical reading followed the main research map, integrated packets,
 scoped errata, open obligations, and the frozen source heads named in the three
 research notes.
 
+The [publication refresh](LATE_UPDATE.md) records later heads of PR175,
+PR180, and PR183, and the new PR185. Its eight-step physical word identity
+adds a further guarded marked merger in part of the complementary rising
+phase. This written composition does not change the frozen Lean inputs.
+
 | Existing route | What it already supplies | What a full proof still needs |
 |---|---|---|
 | Ordinary extraction and coefficient stopping | Exact fixed-source/least-root equivalences, with completion counterexamples retained | A bound excluding an infinite supercritical word at each fixed positive source; cycle exclusion remains separate where required |

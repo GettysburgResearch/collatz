@@ -63,3 +63,18 @@ looks compatible. Ordinary builds can use the pinned cache directly.
 Run-specific receipts and their exact checked commit are added after the
 clean execution. Their identity will not be changed to imply a later
 documentation commit was also Lean-built.
+
+## Preserved initial build-path failure
+
+The first clean execution used commit
+`c09585437b23c8b75d834872bada6b17810d2668`. Its repository gate passed, but
+the Lean build wrapper invoked the pinned import from outside Lean's chosen
+source root. Lean rejected that invocation before elaborating `ShellCover`.
+The actual failed wrapper record is preserved as
+[initial-build-path-rejection.json](initial-build-path-rejection.json).
+
+The fix changes only the imported-module invocation: it runs from the
+existing vendor directory and writes its output to this packet's ignored
+build directory. No Lean theorem, source pin, or proof hypothesis changes.
+The successful clean execution, when recorded below, has its own exact
+commit and receipt rather than relabeling this failed attempt.
