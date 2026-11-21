@@ -1,0 +1,43 @@
+# Frozen sources for the Lean global attack
+
+The snapshot was read on 2026-11-21. The worktree starts at main
+`ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a`. Newer open-PR heads are sources,
+not main-branch acceptance. Only the sources explicitly reused below become
+formal imports.
+
+| PR | Frozen head | Role |
+|---|---|---|
+| 174 | `7034109ed60a26bc49824e1ed43c239ceca81194` | Core-only Lean basin and psi-closure development; imported as specified below |
+| 173 | `a09eb47197cd99f218b3fa013c681df65ea0f69a` | Shrinking-interval global criterion; research input, not a formal import |
+| 146 | `f431078244e868dc699fad011044f0d5e7f76437` | Latest whole-interval synchronization and certified-terminal results; research input |
+| 172 | `b22d94240f3d44a04231508e5dfe9a4947a57125` | Uniform-tail witness descent and certificate compiler boundaries |
+| 171 | `2bd243b3e05eaa5543adeb2894637b053c9662ca` | Recurrent affine sections and ordinary paired-descent density |
+| 170 | `656063d5efa0f5708356ab2563a4348d39bae013` | Carry-four transport and terminal-phase boundary |
+| 169 | `6cb9bfdc828f91576066b0e4a099d47d8144e915` | Further certificate and arithmetic-moment work |
+| 168 | `e4599b32e4b1a955ac9315d46782d4ad6a5db96c` | Prior return-language, witness, conductor, and stationary-boundary pass |
+| 164 | `9582df78eb4d768eb748d3cf367ba97582308a52` | Updated reverse-tripling witness descent |
+
+The latest PR metadata and selected relevant theorem statements were read.
+This is a research-input snapshot, not a claim of a new audit of every file
+or historical PR.
+
+## Exact Lean reuse
+
+All three files below come from
+[`research/psi-closure-20261121/lean/Collatz/` at PR174](https://github.com/GettysburgResearch/collatz/tree/7034109ed60a26bc49824e1ed43c239ceca81194/research/psi-closure-20261121/lean/Collatz).
+
+- `ReverseBasin146.lean`: unchanged PR174 source, Git blob
+  `becc5a0945269756e6afdecf9444b6762df28bc7`. PR174 credits PR146's
+  reverse-basin development and replaces its Mathlib import with a core shim.
+- `Closure174.lean`: the unchanged contents of upstream `Closure.lean`,
+  Git blob `2bd11db7ce07d653376c2c0672b3441a638dac39`; local filename changed.
+- `Shadow174.lean`: upstream `Shadow.lean`, Git blob
+  `58b452fd9c85dfeabaeac0f2f56bdbd8afe4193f`; only the import is changed
+  from `Collatz.Closure` to `Collatz.Closure174`.
+
+The first new formal module is `CollatzGlobal/OrbitLift.lean`. It credits
+the existing ordinary affine-prefix identity; the contribution is its
+all-parameter Lean proof and the actual paired-failure transport interface.
+
+No claimed GRH announcement is needed as a premise. No external analytic
+theorem or unresolved Collatz closure is added to Lean as an axiom.
