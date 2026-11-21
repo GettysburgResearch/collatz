@@ -1,0 +1,14 @@
+name = "collatz"
+defaultTargets = ["Collatz", "Closure", "Descent", "Global"]
+
+[[lean_lib]]
+name = "Collatz"
+
+[[lean_lib]]
+name = "Closure"
+
+[[lean_lib]]
+name = "Descent"
+
+[[lean_lib]]
+name = "Global"

@@ -16,6 +16,12 @@ The catalog includes reviewed source-pinned work as well as resident proofs. A l
 
 ## Active research
 
+The [Lean global-target checkpoint](lean-global-target-20261121/README.md)
+contains new arbitrary-length paired descents, an exact correction kernel,
+and inverse-pressure constructions, built on pinned current PR174 definitions.
+Its full convergence target remains open; this author-stage packet is not an
+extension of the accepted baseline.
+
 The [open research PRs](https://github.com/GettysburgResearch/collatz/pulls) and [research issues](https://github.com/GettysburgResearch/collatz/issues) expose live work. They are proposals and discussions, **not extensions of the accepted baseline by default**. Consult [concrete tasks](open-obligations/README.md) for work that follows from the established results; alternative approaches are welcome.
 
 Local source collections are also available for detailed exploration:

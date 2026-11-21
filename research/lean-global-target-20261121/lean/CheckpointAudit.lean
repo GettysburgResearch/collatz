@@ -1,0 +1,68 @@
+import Closure
+import Descent
+import Global
+
+#check PsiDescent.paired_descent
+#check PsiDescent.failure_descends
+#check PsiDescent.not_minimal_failure
+#check PsiDescent.expanding_return
+#check PsiDescent.expanding_first_return
+#print axioms PsiDescent.paired_descent
+#print axioms PsiDescent.failure_descends
+#print axioms PsiDescent.not_minimal_failure
+#print axioms PsiDescent.expanding_return
+#print axioms PsiDescent.expanding_first_return
+
+#check PsiCharged.expansion_chain_divisibility
+#check PsiCharged.expansion_chain_budget
+#check PsiCharged.no_unbounded_expansion
+#check PsiCharged.charged_exit_bound
+#check PsiCharged.charged_paired_descent
+#check PsiCharged.charged_failure_descends
+#check PsiCharged.repaid_expanding_cylinder
+#print axioms PsiCharged.expansion_chain_divisibility
+#print axioms PsiCharged.expansion_chain_budget
+#print axioms PsiCharged.no_unbounded_expansion
+#print axioms PsiCharged.charged_exit_bound
+#print axioms PsiCharged.charged_paired_descent
+#print axioms PsiCharged.charged_failure_descends
+#print axioms PsiCharged.repaid_expanding_cylinder
+
+#check CollatzCorrection.arbitrary_target_equation
+#check CollatzCorrection.equation_iff_path
+#check CollatzCorrection.equation_clock_replay
+#check CollatzCorrection.certificate_sound
+#check CollatzCorrection.head_budget_independent
+#check CollatzCorrection.prefix_budget_cancel
+#check CollatzCorrection.first_path_unique
+#print axioms CollatzCorrection.arbitrary_target_equation
+#print axioms CollatzCorrection.equation_iff_path
+#print axioms CollatzCorrection.equation_clock_replay
+#print axioms CollatzCorrection.certificate_sound
+#print axioms CollatzCorrection.head_budget_independent
+#print axioms CollatzCorrection.prefix_budget_cancel
+#print axioms CollatzCorrection.first_path_unique
+
+#check CollatzInversePressure.partial_restored_identity
+#check CollatzInversePressure.partial_probability_identity
+#check CollatzInversePressure.one_run_sound
+#check CollatzInversePressure.ordinary_one_runs
+#check CollatzInversePressure.finite_period_power_counterexample
+#check CollatzInversePressure.root_pressure_sum_lower
+#check CollatzInversePressure.root_predecessor_budget_subsequence
+#check CollatzInversePressure.reset_budget_identity
+#check CollatzInversePressure.binary_reset_budget_identity
+#print axioms CollatzInversePressure.partial_restored_identity
+#print axioms CollatzInversePressure.partial_probability_identity
+#print axioms CollatzInversePressure.one_run_sound
+#print axioms CollatzInversePressure.ordinary_one_runs
+#print axioms CollatzInversePressure.finite_period_power_counterexample
+#print axioms CollatzInversePressure.root_pressure_sum_lower
+#print axioms CollatzInversePressure.root_predecessor_budget_subsequence
+#print axioms CollatzInversePressure.reset_budget_identity
+#print axioms CollatzInversePressure.binary_reset_budget_identity
+
+-- This imported global implication retains its explicit open hypothesis.
+#check CollatzClosure.collatz_of_open_lemma
+#print CollatzClosure.OpenLemma
+#print axioms CollatzClosure.collatz_of_open_lemma

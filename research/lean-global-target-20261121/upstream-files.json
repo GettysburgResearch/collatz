@@ -1,0 +1,29 @@
+{
+  "schema": "collatz-lean-imports/v1",
+  "files": [
+    {
+      "local_path": "research/lean-global-target-20261121/lean/Collatz.lean",
+      "source_commit": "7034109ed60a26bc49824e1ed43c239ceca81194",
+      "source_path": "research/psi-closure-20261121/lean/Collatz.lean",
+      "sha256": "38e5cf41c569c9fe052d540e3b5a765bb34b5fbd45be6e731d9ea5b5967f7818"
+    },
+    {
+      "local_path": "research/lean-global-target-20261121/lean/Collatz/ReverseBasin146.lean",
+      "source_commit": "7034109ed60a26bc49824e1ed43c239ceca81194",
+      "source_path": "research/psi-closure-20261121/lean/Collatz/ReverseBasin146.lean",
+      "sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91"
+    },
+    {
+      "local_path": "research/lean-global-target-20261121/lean/Collatz/Closure.lean",
+      "source_commit": "7034109ed60a26bc49824e1ed43c239ceca81194",
+      "source_path": "research/psi-closure-20261121/lean/Collatz/Closure.lean",
+      "sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40"
+    },
+    {
+      "local_path": "research/lean-global-target-20261121/lean/Collatz/Shadow.lean",
+      "source_commit": "7034109ed60a26bc49824e1ed43c239ceca81194",
+      "source_path": "research/psi-closure-20261121/lean/Collatz/Shadow.lean",
+      "sha256": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714"
+    }
+  ]
+}
