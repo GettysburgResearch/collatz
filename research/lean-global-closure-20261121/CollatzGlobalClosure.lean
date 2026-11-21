@@ -1,1 +1,2 @@
 import CollatzGlobalClosure.RelativeParityBarrier
+import CollatzGlobalClosure.LocalProfileObstruction

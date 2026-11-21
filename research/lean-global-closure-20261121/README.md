@@ -8,7 +8,28 @@ explicit hypotheses. The map is the ordinary shortcut map
 T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 \]
 
-## Compiled checkpoint
+## Compiled results
+
+### An obstruction valid at every finite window width
+
+[`CollatzGlobalClosure/LocalProfileObstruction.lean`](CollatzGlobalClosure/LocalProfileObstruction.lean)
+constructs, for **every** binary window width and **every** size threshold,
+positive odd integers `n > m > 1`, with `n` above that threshold, satisfying
+
+\[
+3n+1=4m,\qquad H_r(n)=H_r(m).
+\]
+
+Here `H_r` records the entire zero-padded binary-window histogram of width
+`r+1`. It follows that **any function** of one fixed-width histogram,
+including a nonlinear function with an arbitrary preordered codomain,
+cannot be a strict rank for every accelerated odd Collatz step. Arbitrarily
+many small exceptions do not fix this obstruction. This is a constructive
+infinite-family theorem, independent of numerical synthesis searches.
+The [construction and scope](LOCAL_PROFILE_OBSTRUCTION.md) retain the
+distinction from ranks that depend on positions or on blocks of steps.
+
+### Deterministic relative parity
 
 [`CollatzGlobalClosure/RelativeParityBarrier.lean`](CollatzGlobalClosure/RelativeParityBarrier.lean)
 proves, for every positive orbit that never hits one and every clock `t`,
@@ -37,16 +58,17 @@ The project pins Lean **4.34.1** and mathlib commit
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. From this directory:
 
 ```sh
-lake exe cache get Mathlib/Tactic.lean
+lake exe cache get Mathlib/Tactic.lean Mathlib/FieldTheory/Finite/Basic.lean Mathlib/Data/Nat/Digits/Lemmas.lean
 lake build
 ```
 
-`lakefile.toml` treats warnings as errors. Every proved declaration in the
-checkpoint prints its axiom dependencies. Only Lean's standard
+`lakefile.toml` treats warnings as errors. The relative-parity declarations
+and the two principal profile theorems print their axiom dependencies. Only Lean's standard
 `propext`, `Classical.choice`, and `Quot.sound` occur. The source contains
 no `sorry`, custom axiom, `native_decide`, or unsafe proof mechanism.
 The actual package execution is recorded in
-[`checkpoint-build.json`](../../reports/lean-global-closure-20261121/checkpoint-build.json).
+[`checkpoint-build.json`](../../reports/lean-global-closure-20261121/checkpoint-build.json)
+and [`checkpoint2-build.json`](../../reports/lean-global-closure-20261121/checkpoint2-build.json).
 This execution proves the stated implications; it does not establish their
 open universal hypothesis.
 
