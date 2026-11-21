@@ -78,5 +78,33 @@
     }
   ],
   "module_port_sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785",
-  "checkpoint1_head": "3a2341f4b909cb83f6c2a0eabe946d3d96fc6148"
+  "checkpoint1_head": "3a2341f4b909cb83f6c2a0eabe946d3d96fc6148",
+  "followup_related_heads": {
+    "176": "486b0421f34f332645c46a723033eda480718d69",
+    "180": "d0349de2108abb7c8fb8393c086610e3372df116"
+  },
+  "followup_sources": [
+    {
+      "pr": 180,
+      "head": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "path": "research/lean-forward-band-20261121/MINIMAL_ENVELOPE_ATOM_REMOVAL.md",
+      "blob_sha": "518abe231632127c28bd829caffe28f776c96e4e",
+      "scope": "Read for the subsequent analytic attack; not imported as an unconditional Lean theorem."
+    },
+    {
+      "pr": 180,
+      "head": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "path": "research/lean-forward-band-20261121/ABEL_MARKED_UPPER_ATTACK.md",
+      "blob_sha": "1df6e724738f05586a72dbf53fbb454bd31b0b88",
+      "scope": "Read for the subsequent analytic attack; not imported as an unconditional Lean theorem."
+    },
+    {
+      "pr": 180,
+      "head": "d0349de2108abb7c8fb8393c086610e3372df116",
+      "path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "blob_sha": "dcb941065ce0ade5fc08bad57c5e5f9115a1c17a",
+      "scope": "Read for the subsequent analytic attack; not imported as an unconditional Lean theorem."
+    }
+  ],
+  "followup_manifest_recorded_utc": "2026-11-21T23:14:26.382857+00:00"
 }

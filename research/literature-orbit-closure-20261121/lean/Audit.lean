@@ -1,4 +1,4 @@
-module
+-- Legacy-compatible audit entrypoint: the packet also contains two Std-only files.
 
 import HarmonicTransport
 import ClockAbsorption
@@ -15,9 +15,12 @@ import MarkedErasure
 import NewBandFamily
 import RayCertificates
 import AL27Certificates
+import ResidualPrefixErasure
+import ResidualPhaseSelector
+import AL27HalfSelector
 
 /- Every public theorem introduced by this packet is audited below.
-   Each conditional closing theorem keeps its estimate as a parameter. -/
+   Conditional closing estimates remain theorem parameters. -/
 
 -- HarmonicTransport: 6 public theorems
 #print axioms CollatzHarmonic.mass_of_distinct
@@ -159,3 +162,38 @@ import AL27Certificates
 #print axioms CollatzShell.AL27Certificates.source_branch
 #print axioms CollatzShell.AL27Certificates.certified_ray
 #print axioms CollatzShell.AL27Certificates.certified_induction
+
+-- ResidualPrefixErasure: 8 public theorems
+#print axioms CollatzShell.ResidualPrefixErasure.prefix_source_bound
+#print axioms CollatzShell.ResidualPrefixErasure.prefix_source_bound_eventually
+#print axioms CollatzShell.ResidualPrefixErasure.prefix_diamond_partner
+#print axioms CollatzShell.ResidualPrefixErasure.prefix_diamond_partner_eventually
+#print axioms CollatzShell.ResidualPrefixErasure.prefix27
+#print axioms CollatzShell.ResidualPrefixErasure.prefix27_initial_growth
+#print axioms CollatzShell.ResidualPrefixErasure.prefix27_no_descent_through_run
+#print axioms CollatzShell.ResidualPrefixErasure.prefix27_eighth_partner
+
+-- ResidualPhaseSelector: 12 public theorems
+#print axioms CollatzShell.ResidualPhaseSelector.source_endpoint
+#print axioms CollatzShell.ResidualPhaseSelector.parameter_odd
+#print axioms CollatzShell.ResidualPhaseSelector.source_progression
+#print axioms CollatzShell.ResidualPhaseSelector.source_base_bounds
+#print axioms CollatzShell.ResidualPhaseSelector.endpoint_phase
+#print axioms CollatzShell.ResidualPhaseSelector.physical_merger
+#print axioms CollatzShell.ResidualPhaseSelector.source_residue
+#print axioms CollatzShell.ResidualPhaseSelector.no_direct_descent_through_run
+#print axioms CollatzShell.ResidualPhaseSelector.no_direct_descent_thirteen
+#print axioms CollatzShell.ResidualPhaseSelector.smaller_physical_merger
+#print axioms CollatzShell.ResidualPhaseSelector.no_direct_descent_through_merger
+#print axioms CollatzShell.ResidualPhaseSelector.basin_by_smaller_induction
+
+-- AL27HalfSelector: 9 public theorems
+#print axioms CollatzShell.AL27HalfSelector.source_endpoint
+#print axioms CollatzShell.AL27HalfSelector.endpoint_phase
+#print axioms CollatzShell.AL27HalfSelector.parameter_odd
+#print axioms CollatzShell.AL27HalfSelector.source_residue
+#print axioms CollatzShell.AL27HalfSelector.source_progression
+#print axioms CollatzShell.AL27HalfSelector.source_base_bounds
+#print axioms CollatzShell.AL27HalfSelector.physical_merger
+#print axioms CollatzShell.AL27HalfSelector.no_direct_descent_through_merger
+#print axioms CollatzShell.AL27HalfSelector.basin_by_smaller_induction

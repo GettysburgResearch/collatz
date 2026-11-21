@@ -1,0 +1,812 @@
+{
+  "scope": "Actual strict combined audit after entrypoint format repair, importing the 19 modules compiled from published checkpoint2. This is not the later complete checker replay.",
+  "published_math_head": "6d2765ef462fb575c49d4133b54286be7ffe68ec",
+  "audit_source_sha256": "cf964a1a66fc39c26a70f20c82b4cbfd7f3f6337b686d1684123d8ea414572e0",
+  "exit_code": 0,
+  "elapsed_seconds": 134.66,
+  "public_theorem_audit_count": 111,
+  "audits": [
+    {
+      "theorem": "CollatzHarmonic.mass_of_distinct",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.finite_reciprocal_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.harmonic_dyadic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.finite_linear_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.not_injective_of_linear",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.not_injective_of_reciprocal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.clockLift_iterate",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.clockLift_injective_of_avoid",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.atom_of_column",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.absorption_of_linear_columns",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzHarmonic.absorption_of_reciprocal_columns",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.returns_eq_iterate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.return_iterate_hit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.collatz_of_marked_linear_columns",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.collatz_of_marked_reciprocal_columns",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.growth_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_ratio",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.geometric_growth_sum_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.geometric_growth_sum_le_eight",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.budget_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.survivor_atom_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.survivor_atom_bound_cleared",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.excludes_transport_of_strict_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.norm_floor_of_comparable_fibers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_antitone",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_shift_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.terminating_shift_fiber_floor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_telescope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_prefix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_prefix_le_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.coefficient_finiteMass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.growth_mul_coefficient",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzFiniteResolvent.quadratic_baseline",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.incomingTerm_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.incoming_finite_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.incoming_bdd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.incoming_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.source_atom_le_incoming",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.actual_survivor_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.survives_of_not_basin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.counterexample_forces_quadratic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.collatz_of_quadratic_slice_saving",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.actual_quadratic_baseline",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.collatz_of_explicit_quadratic_saving",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "WildLift.correction_iff",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "WildLift.correction_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "WildLift.pullback_identity",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "WildLift.pullback_congruence",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "WildLift.thirteen_after_one_odd",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "WildLift.thirteen_after_two_odds_impossible",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "WildLift.bridge_eight",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.rising_erase_prefix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.rising_half_source_of_diamond",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.half_source_two_clock_diamond",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.rising_half_source_partner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.endpoint_diamond_eight_affine",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.endpoint_diamond_eight",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.endpoint_diamond_chain",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.rising_quarter_source_partner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.rising_eighth_source_partner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.marked_of_dyadic_prefix_erasure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.ForwardSection.rising_erasure_marked_partner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.exponent_eq",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.seed_form",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.seed_log2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.seed_marked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.no_descent_through_run_plus_gap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.seed_no_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.seed_quarter_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.merger_inside_native_horizon",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.partner_marked",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NewBandFamily.lower_marked_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.RayCertificates.ray_certificate_sound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.RayCertificates.basin_of_valid_ray",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk00_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk01_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk02_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk03_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk04_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk05_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk06_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk07_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk08_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk09_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk10_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk11_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk12_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk13_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk14_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk15_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk16_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk17_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk18_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk19_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk20_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk21_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk22_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk23_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk24_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk25_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk26_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.chunk27_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.rows_valid_list",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.rows_valid",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.source_residues_distinct",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.certified_ray",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.certified_induction",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.rows_count",
+      "axioms": []
+    },
+    {
+      "theorem": "CollatzShell.AL27Certificates.source_branch",
+      "axioms": []
+    }
+  ],
+  "output_sha256": "24f44985fd9bd334d66072e56f2100d2d0eae8b5280d9d92f1550386d7e2ad0a"
+}

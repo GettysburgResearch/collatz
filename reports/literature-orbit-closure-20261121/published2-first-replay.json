@@ -1,0 +1,1034 @@
+{
+  "schema": "literature-orbit-closure-check-v1",
+  "complete": false,
+  "prepared_only": false,
+  "repository": "/workspace/scratch/c6766c1207a3/collatz_literature_published2",
+  "packet": "research/literature-orbit-closure-20261121",
+  "base_head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+  "build_directory": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check",
+  "started_utc": "2026-11-21T22:41:54Z",
+  "inputs": [
+    {
+      "path": "research/literature-orbit-closure-20261121/source-pins.json",
+      "sha256": "703dd839c688201f12da77c9e824b183d1edc602b19b3e990ee17fb078e239cb"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/source-pins.json",
+      "sha256": "48991c4f41a4c806433af94a2c0989e6acd5d471f8d047c2d7272baca4e2a45c"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/check.py",
+      "sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/lean/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/lean/SectionDynamics.lean",
+      "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/lean/OffsetDescent.lean",
+      "sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/HarmonicTransport.lean",
+      "sha256": "5173ef8676b4b8de03ccae9f1e99bb3db04e52d146ba721034b325f6fd4bc1f7"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/ClockAbsorption.lean",
+      "sha256": "6da228e0571bfb617a1f77476201a6f76a611677b5b9f997fc6a0bb06d4604ea"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/BandAbsorption.lean",
+      "sha256": "df279eb937e14f56277c0ac73e8861ceabfe45d8e126ee2669962f00283dbb43"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/FiniteResolvent.lean",
+      "sha256": "8a358cbcf24c5278932db82a81dfdc9c8ee9de4fe8118dba1cd1ced61dc78805"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/ExplicitSeed.lean",
+      "sha256": "c018a47358194358da3fcb4eedc5e5192a803cdbbc37b56965af769fc665d8b4"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/ActualSurvivorMass.lean",
+      "sha256": "72d0015fc8ba05adaa5291f1f5f19a3766c688f985e35016e4403e9820065b98"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/ExplicitClosure.lean",
+      "sha256": "a5aba915c11ae95e7640970ec1f924a708ec873fd57b69ce9444cad67ac4dbed"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/PullbackArithmetic.lean",
+      "sha256": "8dd33ed63b781eda467557a5cee78551b70721498351a70749dbe24718a9cb95"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/WildLift.lean",
+      "sha256": "b0d29de244c5c870243b74cbda816e786d22814862aa0fb2a5bc6011c493bd4a"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/HalfSourceMerge.lean",
+      "sha256": "a97887077575d43a9ab27739c27a693d352334ea20dce87c2ecbe72b6f7b0fd5"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/LongDiamondErasure.lean",
+      "sha256": "3cc8307078cccf47996298b1ea491722784b0dc50700f676d7f0a5b7260c3726"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/MarkedErasure.lean",
+      "sha256": "cf10a107ff5829d08f0ffc3c7b7a67ccd27e8af8a88501ef80474c408ee6493a"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/NewBandFamily.lean",
+      "sha256": "60409cdc2bd9738affe2cddb389df24c1b4540165085ea14de15ff8b6d693369"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/RayCertificates.lean",
+      "sha256": "6a484157f75d382354d5d7fdd9fdf387557dde291d5440fa094c7917c2ea6055"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/AL27Certificates.lean",
+      "sha256": "cedf0a105b8b80623fb2c06dab931e080cd0fff606f1cab38ce2b7c87c52e037"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/lean/Audit.lean",
+      "sha256": "9f1df7d1eb861c0c33ed20c08592c72ecf876e62b0d1eb1e8d9247f225bf0a70"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/certificates/al27_certificate.json",
+      "sha256": "76626a0a84195913a90d193887f931cffee1558990b76347f540dad9d390298a"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/certificates/guided_cover.py",
+      "sha256": "821a01986b9ccfc12cfb2e38afc6628e3f6462db141b088f8d20bebee5d3ad03"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/certificates/package_al27.py",
+      "sha256": "6dbadc5d4b5d782ed8311bc66044a897a87945932e62c9667b580669952177e5"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/certificates/verify_al27.py",
+      "sha256": "a40c9e14fa842dfe681f831c5f3d9c44f2d9cee0a286912caa87d84729a26a91"
+    },
+    {
+      "path": "research/literature-orbit-closure-20261121/certificates/generate_al27_lean.py",
+      "sha256": "c57c02c78710327bd094cdda55149c6030343eea875404f3f4245c74e1aba337"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d"
+    }
+  ],
+  "modules": [
+    {
+      "module": "ShellCover",
+      "source": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "source_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "compiled_source_sha256": "807cde06c02011b3aff57eb6a92e59b867551cd47fa5dba9c0e7495863dfb50d",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "ForwardSection",
+      "source": "research/lean-band-coupling-20261121/lean/ForwardSection.lean",
+      "source_sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "compiled_source_sha256": "753bab6aff32f38ac13249a0be1e48851d5e34ea64b9675e4cd4b858507467d6",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.steer",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.marked_count_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.bounded_visit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_section",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "SectionDynamics",
+      "source": "research/lean-band-coupling-20261121/lean/SectionDynamics.lean",
+      "source_sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+      "compiled_source_sha256": "5ba842571592a24afd156639949c7f8af8e381aaaf160abd1fb00e253b47e90c",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_return_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "OffsetDescent",
+      "source": "research/lean-band-coupling-20261121/lean/OffsetDescent.lean",
+      "source_sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+      "compiled_source_sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.OffsetDescent.binary_lift",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.offset_descent_transports",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.basin_of_cheaper_rebase",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.rebase_cheaper_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.reservedRebase_hits",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.basin_of_cheaper_reservedRebase",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.reservedRebase_cheaper_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "HarmonicTransport",
+      "source": "research/literature-orbit-closure-20261121/lean/HarmonicTransport.lean",
+      "source_sha256": "5173ef8676b4b8de03ccae9f1e99bb3db04e52d146ba721034b325f6fd4bc1f7",
+      "compiled_source_sha256": "5173ef8676b4b8de03ccae9f1e99bb3db04e52d146ba721034b325f6fd4bc1f7",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "ClockAbsorption",
+      "source": "research/literature-orbit-closure-20261121/lean/ClockAbsorption.lean",
+      "source_sha256": "6da228e0571bfb617a1f77476201a6f76a611677b5b9f997fc6a0bb06d4604ea",
+      "compiled_source_sha256": "6da228e0571bfb617a1f77476201a6f76a611677b5b9f997fc6a0bb06d4604ea",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "BandAbsorption",
+      "source": "research/literature-orbit-closure-20261121/lean/BandAbsorption.lean",
+      "source_sha256": "df279eb937e14f56277c0ac73e8861ceabfe45d8e126ee2669962f00283dbb43",
+      "compiled_source_sha256": "df279eb937e14f56277c0ac73e8861ceabfe45d8e126ee2669962f00283dbb43",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "FiniteResolvent",
+      "source": "research/literature-orbit-closure-20261121/lean/FiniteResolvent.lean",
+      "source_sha256": "8a358cbcf24c5278932db82a81dfdc9c8ee9de4fe8118dba1cd1ced61dc78805",
+      "compiled_source_sha256": "8a358cbcf24c5278932db82a81dfdc9c8ee9de4fe8118dba1cd1ced61dc78805",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "ExplicitSeed",
+      "source": "research/literature-orbit-closure-20261121/lean/ExplicitSeed.lean",
+      "source_sha256": "c018a47358194358da3fcb4eedc5e5192a803cdbbc37b56965af769fc665d8b4",
+      "compiled_source_sha256": "c018a47358194358da3fcb4eedc5e5192a803cdbbc37b56965af769fc665d8b4",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "ActualSurvivorMass",
+      "source": "research/literature-orbit-closure-20261121/lean/ActualSurvivorMass.lean",
+      "source_sha256": "72d0015fc8ba05adaa5291f1f5f19a3766c688f985e35016e4403e9820065b98",
+      "compiled_source_sha256": "72d0015fc8ba05adaa5291f1f5f19a3766c688f985e35016e4403e9820065b98",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "ExplicitClosure",
+      "source": "research/literature-orbit-closure-20261121/lean/ExplicitClosure.lean",
+      "source_sha256": "a5aba915c11ae95e7640970ec1f924a708ec873fd57b69ce9444cad67ac4dbed",
+      "compiled_source_sha256": "a5aba915c11ae95e7640970ec1f924a708ec873fd57b69ce9444cad67ac4dbed",
+      "axiom_audits": [],
+      "exit_code": 0
+    },
+    {
+      "module": "PullbackArithmetic",
+      "source": "research/literature-orbit-closure-20261121/lean/PullbackArithmetic.lean",
+      "source_sha256": "8dd33ed63b781eda467557a5cee78551b70721498351a70749dbe24718a9cb95",
+      "compiled_source_sha256": "8dd33ed63b781eda467557a5cee78551b70721498351a70749dbe24718a9cb95",
+      "axiom_audits": [
+        {
+          "theorem": "WildLift.correction_iff",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "WildLift.pullback_identity",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "WildLift.pullback_congruence",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "WildLift.thirteen_after_two_odds_impossible",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "WildLift",
+      "source": "research/literature-orbit-closure-20261121/lean/WildLift.lean",
+      "source_sha256": "b0d29de244c5c870243b74cbda816e786d22814862aa0fb2a5bc6011c493bd4a",
+      "compiled_source_sha256": "b0d29de244c5c870243b74cbda816e786d22814862aa0fb2a5bc6011c493bd4a",
+      "axiom_audits": [
+        {
+          "theorem": "WildLift.bridge_eight",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "HalfSourceMerge",
+      "source": "research/literature-orbit-closure-20261121/lean/HalfSourceMerge.lean",
+      "source_sha256": "a97887077575d43a9ab27739c27a693d352334ea20dce87c2ecbe72b6f7b0fd5",
+      "compiled_source_sha256": "a97887077575d43a9ab27739c27a693d352334ea20dce87c2ecbe72b6f7b0fd5",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.rising_erase_prefix",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.rising_half_source_of_diamond",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.half_source_two_clock_diamond",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.rising_half_source_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "LongDiamondErasure",
+      "source": "research/literature-orbit-closure-20261121/lean/LongDiamondErasure.lean",
+      "source_sha256": "3cc8307078cccf47996298b1ea491722784b0dc50700f676d7f0a5b7260c3726",
+      "compiled_source_sha256": "3cc8307078cccf47996298b1ea491722784b0dc50700f676d7f0a5b7260c3726",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.endpoint_diamond_eight_affine",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.endpoint_diamond_eight",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.endpoint_diamond_chain",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.rising_quarter_source_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.rising_eighth_source_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "MarkedErasure",
+      "source": "research/literature-orbit-closure-20261121/lean/MarkedErasure.lean",
+      "source_sha256": "cf10a107ff5829d08f0ffc3c7b7a67ccd27e8af8a88501ef80474c408ee6493a",
+      "compiled_source_sha256": "cf10a107ff5829d08f0ffc3c7b7a67ccd27e8af8a88501ef80474c408ee6493a",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.marked_of_dyadic_prefix_erasure",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.rising_erasure_marked_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "NewBandFamily",
+      "source": "research/literature-orbit-closure-20261121/lean/NewBandFamily.lean",
+      "source_sha256": "60409cdc2bd9738affe2cddb389df24c1b4540165085ea14de15ff8b6d693369",
+      "compiled_source_sha256": "60409cdc2bd9738affe2cddb389df24c1b4540165085ea14de15ff8b6d693369",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.NewBandFamily.seed_marked",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.NewBandFamily.no_descent_through_run_plus_gap",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.NewBandFamily.seed_no_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.NewBandFamily.seed_quarter_merger",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.NewBandFamily.merger_inside_native_horizon",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.NewBandFamily.partner_marked",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.NewBandFamily.lower_marked_merger",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "RayCertificates",
+      "source": "research/literature-orbit-closure-20261121/lean/RayCertificates.lean",
+      "source_sha256": "6a484157f75d382354d5d7fdd9fdf387557dde291d5440fa094c7917c2ea6055",
+      "compiled_source_sha256": "6a484157f75d382354d5d7fdd9fdf387557dde291d5440fa094c7917c2ea6055",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.RayCertificates.ray_certificate_sound",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.RayCertificates.basin_of_valid_ray",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "AL27Certificates",
+      "source": "research/literature-orbit-closure-20261121/lean/AL27Certificates.lean",
+      "source_sha256": "cedf0a105b8b80623fb2c06dab931e080cd0fff606f1cab38ce2b7c87c52e037",
+      "compiled_source_sha256": "cedf0a105b8b80623fb2c06dab931e080cd0fff606f1cab38ce2b7c87c52e037",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.AL27Certificates.rows_valid_list",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27Certificates.rows_valid",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27Certificates.source_residues_distinct",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27Certificates.certified_ray",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27Certificates.certified_induction",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27Certificates.source_branch",
+          "axioms": []
+        }
+      ],
+      "exit_code": 0
+    },
+    {
+      "module": "Audit",
+      "source": "research/literature-orbit-closure-20261121/lean/Audit.lean",
+      "source_sha256": "9f1df7d1eb861c0c33ed20c08592c72ecf876e62b0d1eb1e8d9247f225bf0a70",
+      "compiled_source_sha256": "9f1df7d1eb861c0c33ed20c08592c72ecf876e62b0d1eb1e8d9247f225bf0a70"
+    }
+  ],
+  "invocations": [
+    {
+      "label": "lean-version",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_literature_published2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.267,
+      "output_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/01-lean-version.log"
+    },
+    {
+      "label": "mathlib-head",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_literature_runtime",
+      "exit_code": 0,
+      "elapsed_seconds": 0.01,
+      "output_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/02-mathlib-head.log"
+    },
+    {
+      "label": "repository-head",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_literature_published2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.003,
+      "output_sha256": "8dd06251935dad459500ea168e9e7769a53f23db9590a6809b3358a8189d5ec6",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/03-repository-head.log"
+    },
+    {
+      "label": "repository-tree",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_literature_published2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.004,
+      "output_sha256": "a6be8580dbfd0a8858a719fb363108e4ad1ab3857e8c3807070c4cfd87ddcc5d",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/04-repository-tree.log"
+    },
+    {
+      "label": "tracked-files",
+      "command": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_literature_published2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.004,
+      "output_sha256": "4bdece1f85c52d1684dc21f7a8edc26f1fe5739e7bc8f42096d0061a3ca6d0f5",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/05-tracked-files.log"
+    },
+    {
+      "label": "status-before",
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_literature_published2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.02,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/06-status-before.log"
+    },
+    {
+      "label": "ShellCover",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/ShellCover.olean",
+        "ShellCover.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 25.736,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/07-ShellCover.log"
+    },
+    {
+      "label": "ForwardSection",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/ForwardSection.olean",
+        "ForwardSection.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 12.055,
+      "output_sha256": "0f5472e5eb3e8b872da6ff27b2c88e26a44b5248eb34abb9343032ac647044de",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/08-ForwardSection.log"
+    },
+    {
+      "label": "SectionDynamics",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/SectionDynamics.olean",
+        "SectionDynamics.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 2.053,
+      "output_sha256": "f54198d3ee385c116dc7fc9673bcaed25626efb7040cd3f33446672401152bf7",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/09-SectionDynamics.log"
+    },
+    {
+      "label": "OffsetDescent",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/OffsetDescent.olean",
+        "OffsetDescent.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 3.182,
+      "output_sha256": "11191ab2b84698b7152101ea919f9ae2a5a2962352bf46a2233a1001faa6238e",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/10-OffsetDescent.log"
+    },
+    {
+      "label": "HarmonicTransport",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/HarmonicTransport.olean",
+        "HarmonicTransport.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.75,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/11-HarmonicTransport.log"
+    },
+    {
+      "label": "ClockAbsorption",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/ClockAbsorption.olean",
+        "ClockAbsorption.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.038,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/12-ClockAbsorption.log"
+    },
+    {
+      "label": "BandAbsorption",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/BandAbsorption.olean",
+        "BandAbsorption.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.555,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/13-BandAbsorption.log"
+    },
+    {
+      "label": "FiniteResolvent",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/FiniteResolvent.olean",
+        "FiniteResolvent.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 2.399,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/14-FiniteResolvent.log"
+    },
+    {
+      "label": "ExplicitSeed",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/ExplicitSeed.olean",
+        "ExplicitSeed.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.242,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/15-ExplicitSeed.log"
+    },
+    {
+      "label": "ActualSurvivorMass",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/ActualSurvivorMass.olean",
+        "ActualSurvivorMass.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.965,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/16-ActualSurvivorMass.log"
+    },
+    {
+      "label": "ExplicitClosure",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/ExplicitClosure.olean",
+        "ExplicitClosure.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.961,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/17-ExplicitClosure.log"
+    },
+    {
+      "label": "PullbackArithmetic",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/PullbackArithmetic.olean",
+        "PullbackArithmetic.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.847,
+      "output_sha256": "7553f0dbaeb99ec98016e94737a3239915dbf0e6cc35b11a96c5bb650d7e9be2",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/18-PullbackArithmetic.log"
+    },
+    {
+      "label": "WildLift",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/WildLift.olean",
+        "WildLift.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 1.658,
+      "output_sha256": "9a2a3cbe45eca44433c40e854fe8be1b6a85f952fc4daf6c2f8d75d215889d7d",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/19-WildLift.log"
+    },
+    {
+      "label": "HalfSourceMerge",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/HalfSourceMerge.olean",
+        "HalfSourceMerge.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 2.316,
+      "output_sha256": "93023301ee11224904c90e20699790e6cf7e45025812a2558f4247ca4a2b37c1",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/20-HalfSourceMerge.log"
+    },
+    {
+      "label": "LongDiamondErasure",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/LongDiamondErasure.olean",
+        "LongDiamondErasure.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 3.518,
+      "output_sha256": "c3a09ee37c74b53bfadf10b805a279fbc287db3b61d8f12a92d9970c041f420d",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/21-LongDiamondErasure.log"
+    },
+    {
+      "label": "MarkedErasure",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/MarkedErasure.olean",
+        "MarkedErasure.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 16.735,
+      "output_sha256": "f758fc0ca3c4b124b73833cdc7bac7dc92fe4222a82e3d6623f9d1e838488c7f",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/22-MarkedErasure.log"
+    },
+    {
+      "label": "NewBandFamily",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/NewBandFamily.olean",
+        "NewBandFamily.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 20.313,
+      "output_sha256": "206742a9a76854ad92c2ca0405970253cfb872c137999b3ba2d5aced8a5e89d7",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/23-NewBandFamily.log"
+    },
+    {
+      "label": "RayCertificates",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/RayCertificates.olean",
+        "RayCertificates.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 11.723,
+      "output_sha256": "ff02ebb42cc9e02d5927622cd748fddbd3b6a51c026da3b13548904b9c01efee",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/24-RayCertificates.log"
+    },
+    {
+      "label": "AL27Certificates",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/AL27Certificates.olean",
+        "AL27Certificates.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 0,
+      "elapsed_seconds": 22.715,
+      "output_sha256": "1566fd7731f1836f49ebe1158e786dbb7a3a8caf3d4fcdae7984f0ba6af33bfa",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/25-AL27Certificates.log"
+    },
+    {
+      "label": "Audit",
+      "command": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib/Audit.olean",
+        "Audit.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/source",
+      "exit_code": 1,
+      "elapsed_seconds": 8.831,
+      "output_sha256": "ce95f51bacc92a517bca244c8e71393970ed664dbaa52b6fd741f8433ca9a385",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/26-Audit.log"
+    }
+  ],
+  "axiom_allowlist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "repository_head": "6d2765ef462fb575c49d4133b54286be7ffe68ec",
+  "repository_tree": "e81d669de9906540b3cc85ebdbbbff397c5ee3ef",
+  "tracked_file_count": 381,
+  "checkout_clean_before": true,
+  "lean_path": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "module_port_sha256": "8bc2a064730544a728b897e8caabd3e700f8704f6e59af1b569cf330d5fe5f30",
+  "error": "Audit failed with exit code 1; see /workspace/scratch/c6766c1207a3/collatz_work/final_published_check/logs/26-Audit.log",
+  "error_type": "RuntimeError"
+}

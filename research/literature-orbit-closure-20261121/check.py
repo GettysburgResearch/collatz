@@ -39,7 +39,8 @@ MODULES = [
     'HarmonicTransport', 'ClockAbsorption', 'BandAbsorption', 'FiniteResolvent',
     'ExplicitSeed', 'ActualSurvivorMass', 'ExplicitClosure',
     'PullbackArithmetic', 'WildLift', 'HalfSourceMerge', 'LongDiamondErasure',
-    'MarkedErasure', 'NewBandFamily', 'RayCertificates', 'AL27Certificates', 'Audit',
+    'MarkedErasure', 'NewBandFamily', 'RayCertificates', 'AL27Certificates',
+    'ResidualPrefixErasure', 'ResidualPhaseSelector', 'AL27HalfSelector', 'Audit',
 ]
 ALLOWED_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
 
@@ -195,8 +196,12 @@ def main() -> None:
 
         certificates = packet / 'certificates'
         for name in ('al27_certificate.json', 'guided_cover.py', 'package_al27.py',
-                     'verify_al27.py', 'generate_al27_lean.py'):
+                     'verify_al27.py', 'generate_al27_lean.py', 'residual_phase_analysis.py',
+                     'half_selector_overlap.py', 'affine_language_checkpoint.py',
+                     'prefix_language_search.py', 'prefix_language_rules.json'):
             input_record(certificates / name)
+        for name in ('FIXED_AFFINE_MARKED_COVER_LIMIT.md', 'SIGNED_SEED_AFFINE_TEMPLATE.md'):
+            input_record(packet / name)
         input_record(repo / 'tools/validate.py')
         if args.prepare_only:
             receipt['prepared_inputs'] = True
@@ -224,6 +229,10 @@ def main() -> None:
         run('verify-al27', python + [str(certificates / 'verify_al27.py')], repo, echo=True)
         run('regenerate-al27', python + [str(certificates / 'generate_al27_lean.py'),
             '--check', '--output', str(packet / 'lean/AL27Certificates.lean')], repo, echo=True)
+        run('residual-phase-analysis', python + [str(certificates / 'residual_phase_analysis.py')], repo, echo=True)
+        run('half-selector-overlap', python + [str(certificates / 'half_selector_overlap.py')], repo, echo=True)
+        run('signed-affine-words', python + [str(certificates / 'affine_language_checkpoint.py'),
+            '--output', str(build / 'symbolic-receipt.json')], repo, echo=True)
         run('repository-validation', python + ['tools/validate.py'], repo, echo=True)
         final_status = run('status-after', ['git', 'status', '--porcelain=v1'], repo)
         receipt['checkout_clean_after'] = not final_status.strip()
@@ -233,7 +242,7 @@ def main() -> None:
         receipt['complete'] = True
         receipt['completed_utc'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
         save()
-        print(f'All {len(MODULES)} modules, both certificate checks, and repository validation passed.')
+        print(f'All {len(MODULES)} modules, all five arithmetic checks, and repository validation passed.')
         print(f'Receipt: {build / "receipt.json"}')
     except BaseException as error:
         receipt['error'] = str(error)

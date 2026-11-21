@@ -1,0 +1,296 @@
+{
+  "schema": "collatz-residual-prefix-lean-receipt-v2",
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-21T23:19:55.103966+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependencies_lib": "/workspace/scratch/c6766c1207a3/collatz_work/final_published_check/lib",
+  "new_public_theorem_count": 29,
+  "modules": [
+    {
+      "module": "ResidualPrefixErasure",
+      "source_sha256": "b4d8ae889c458ee26c3ea8d3c362290c465a725f024d53e1f3978290c6661a9c",
+      "log_sha256": "98819a40133fd8de474dd74e1be88b607da8bba0abfd21889e7678cb0793c0a8",
+      "recorded_command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/literature_rewriting/lib/ResidualPrefixErasure.olean",
+        "ResidualPrefixErasure.lean"
+      ],
+      "recorded_cwd": "/workspace/scratch/c6766c1207a3/collatz_work/literature_rewriting",
+      "observed_exitcode": 0,
+      "observed_elapsed_seconds": 3.117713032,
+      "audit": [
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix_source_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix_source_bound_eventually",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix_diamond_partner",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix_diamond_partner_eventually",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix27",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix27_initial_growth",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix27_no_descent_through_run",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPrefixErasure.prefix27_eighth_partner",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ResidualPhaseSelector",
+      "source_sha256": "46fd0b12977611a5a39b0bd400602ca41f7b1479e01b6dee5c004f86c134b930",
+      "log_sha256": "19612f09bc03c2c96ec72b23bcebfd73a8c0d8f9cac91e4cfe15c3acf97b25b0",
+      "recorded_command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/literature_rewriting/lib/ResidualPhaseSelector.olean",
+        "ResidualPhaseSelector.lean"
+      ],
+      "recorded_cwd": "/workspace/scratch/c6766c1207a3/collatz_work/literature_rewriting",
+      "observed_exitcode": 0,
+      "observed_elapsed_seconds": 8.539940597,
+      "audit": [
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.parameter_odd",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.source_progression",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.source_base_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.source_endpoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.endpoint_phase",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.physical_merger",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.source_residue",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.no_direct_descent_through_run",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.no_direct_descent_thirteen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.smaller_physical_merger",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.no_direct_descent_through_merger",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ResidualPhaseSelector.basin_by_smaller_induction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "AL27HalfSelector",
+      "source_sha256": "75f0ca9b1b9c2b525a78323f4edb2efa57c87e4e586e07a60049dc622ee83bde",
+      "log_sha256": "b0d548760b788e79da9e5d5092bb0a78f739d7476e65cc654fc100554cec3b7b",
+      "recorded_command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/literature_rewriting/lib/AL27HalfSelector.olean",
+        "AL27HalfSelector.lean"
+      ],
+      "recorded_cwd": "/workspace/scratch/c6766c1207a3/collatz_work/literature_rewriting",
+      "observed_exitcode": 0,
+      "observed_elapsed_seconds": 7.812045054,
+      "audit": [
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.source_endpoint",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.endpoint_phase",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.parameter_odd",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.source_residue",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.source_progression",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.source_base_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.physical_merger",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.no_direct_descent_through_merger",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.AL27HalfSelector.basin_by_smaller_induction",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ],
+  "auxiliary": {
+    "RESIDUAL_PREFIX_ROUTE.md": "8f02b06da9d8e3cdc04b7ace8c0b175fc9254f47ebe8dad131ceb3caebfa3925",
+    "residual_phase_analysis.py": "20df62171d58fa20070745dceaf376f76057b0abeac87108f545f18330fb0a8d",
+    "residual_phase_analysis.json": "4f332aeb5852074f503d92cc518fecf56596aaea0c88f522abbf03640cb471c3"
+  },
+  "python_analysis_status": "PASS",
+  "scope": "Strict compilation and standard-axiom audit of general bridge, narrow stronger partner, and broad half selector; no universal Collatz theorem."
+}

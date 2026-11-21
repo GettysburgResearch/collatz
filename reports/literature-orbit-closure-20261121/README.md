@@ -50,3 +50,30 @@ transport obligation.
 No review claims novelty priority or turns the explicit uniform transport
 hypothesis into a proved estimate. The universal physical cover and uniform
 survivor improvement remain OPEN.
+
+## First complete published-packet replay attempt
+
+The actual published source at `6d2765ef462fb575c49d4133b54286be7ffe68ec`
+compiled all 19 mathematical modules (the four inherited inputs and all 15
+new mathematical modules). The combined final Audit entrypoint then failed
+because a Lean module-mode entrypoint cannot import the two legacy `Std`
+files. This was a checker integration error, not a mathematical proof failure.
+`published2-first-replay.json` deliberately records `complete: false`, the
+successful module exits, and that exact failure. The subsequent patch removes
+only the Audit entrypoint's `module` header; every theorem source is unchanged.
+A complete successful replay is recorded separately after it occurs.
+
+## Parallel continuation
+
+The additional three Lean modules have29 standard-only public theorem audits
+in `residual-agent-replay.json`. The final assembled Audit now requests140
+public theorems across18 new mathematical modules. The source review of the
+residual selector predates its two additional stronger-partner/non-descent
+theorems; those additions are separately kernel checked and reconstructed in
+the root review. The half-selector proof and the global analytic consequences
+are also covered by the scoped root reconstruction.
+
+The Python arithmetic replay scripts were made read-only by default and their
+assertions converted to explicit exceptions, so optimization cannot silently
+disable their checks. Agent receipts preserve their original source snapshots;
+the final checker records the exact published script inputs and executions.

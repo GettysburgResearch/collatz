@@ -1,0 +1,261 @@
+{
+  "status": "PASS",
+  "bounded_phase_census": {
+    "1": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47,
+      51,
+      55,
+      59,
+      63,
+      67,
+      71,
+      75,
+      79,
+      83,
+      87,
+      91,
+      95,
+      99,
+      103,
+      107,
+      111,
+      115,
+      119,
+      123,
+      127,
+      131,
+      135,
+      139,
+      143,
+      147,
+      151,
+      155,
+      159,
+      163,
+      167,
+      171,
+      175,
+      179,
+      183,
+      185,
+      187,
+      191,
+      195,
+      199,
+      203,
+      207,
+      211,
+      215,
+      219,
+      223,
+      227,
+      231,
+      235,
+      239,
+      243,
+      247,
+      251,
+      255
+    ],
+    "2": [
+      147,
+      185
+    ],
+    "3": [
+      147
+    ],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": []
+  },
+  "examples": [
+    {
+      "k": 6,
+      "w": 281,
+      "source": 255771,
+      "partner": 182087,
+      "source_clock": 21,
+      "partner_clock": 11,
+      "source_increment": 18874368
+    },
+    {
+      "k": 7,
+      "w": 12979,
+      "source": 23627547,
+      "partner": 16820783,
+      "source_clock": 22,
+      "partner_clock": 12,
+      "source_increment": 37748736
+    },
+    {
+      "k": 8,
+      "w": 14225,
+      "source": 51791643,
+      "partner": 36871199,
+      "source_clock": 23,
+      "partner_clock": 13,
+      "source_increment": 75497472
+    },
+    {
+      "k": 9,
+      "w": 2779,
+      "source": 20236059,
+      "partner": 14406335,
+      "source_clock": 24,
+      "partner_clock": 14,
+      "source_increment": 150994944
+    },
+    {
+      "k": 10,
+      "w": 17225,
+      "source": 250857243,
+      "partner": 178588799,
+      "source_clock": 25,
+      "partner_clock": 15,
+      "source_increment": 301989888
+    },
+    {
+      "k": 11,
+      "w": 10435,
+      "source": 303941403,
+      "partner": 216380159,
+      "source_clock": 26,
+      "partner_clock": 16,
+      "source_increment": 603979776
+    },
+    {
+      "k": 12,
+      "w": 16193,
+      "source": 943310619,
+      "partner": 671556095,
+      "source_clock": 27,
+      "partner_clock": 17,
+      "source_increment": 1207959552
+    },
+    {
+      "k": 13,
+      "w": 8299,
+      "source": 966903579,
+      "partner": 688352255,
+      "source_clock": 28,
+      "partner_clock": 18,
+      "source_increment": 2415919104
+    },
+    {
+      "k": 14,
+      "w": 18041,
+      "source": 4203857691,
+      "partner": 2992785407,
+      "source_clock": 29,
+      "partner_clock": 19,
+      "source_increment": 4831838208
+    }
+  ],
+  "half_examples": [
+    {
+      "k": 0,
+      "source": 411,
+      "partner": 231,
+      "source_clock": 9,
+      "partner_clock": 5
+    },
+    {
+      "k": 1,
+      "source": 539,
+      "partner": 303,
+      "source_clock": 10,
+      "partner_clock": 6
+    },
+    {
+      "k": 2,
+      "source": 283,
+      "partner": 159,
+      "source_clock": 11,
+      "partner_clock": 7
+    },
+    {
+      "k": 3,
+      "source": 795,
+      "partner": 447,
+      "source_clock": 12,
+      "partner_clock": 8
+    },
+    {
+      "k": 4,
+      "source": 3867,
+      "partner": 2175,
+      "source_clock": 13,
+      "partner_clock": 9
+    },
+    {
+      "k": 5,
+      "source": 14107,
+      "partner": 7935,
+      "source_clock": 14,
+      "partner_clock": 10
+    },
+    {
+      "k": 6,
+      "source": 26395,
+      "partner": 14847,
+      "source_clock": 15,
+      "partner_clock": 11
+    },
+    {
+      "k": 7,
+      "source": 34587,
+      "partner": 19455,
+      "source_clock": 16,
+      "partner_clock": 12
+    },
+    {
+      "k": 8,
+      "source": 18203,
+      "partner": 10239,
+      "source_clock": 17,
+      "partner_clock": 13
+    },
+    {
+      "k": 9,
+      "source": 50971,
+      "partner": 28671,
+      "source_clock": 18,
+      "partner_clock": 14
+    },
+    {
+      "k": 10,
+      "source": 247579,
+      "partner": 139263,
+      "source_clock": 19,
+      "partner_clock": 15
+    },
+    {
+      "k": 11,
+      "source": 902939,
+      "partner": 507903,
+      "source_clock": 20,
+      "partner_clock": 16
+    },
+    {
+      "k": 12,
+      "source": 1689371,
+      "partner": 950271,
+      "source_clock": 21,
+      "partner_clock": 17
+    }
+  ],
+  "scope": "Finite examples; unbounded family is proved in Lean."
+}
