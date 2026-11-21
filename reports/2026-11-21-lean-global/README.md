@@ -22,11 +22,18 @@ The Lean build and its axiom audit passed; the repository gate with all
 eleven bounded replay commands also passed. These receipts concern that
 exact checkpoint, not files added afterward.
 
-The next checkpoint adds the common rank, same-goal expanding psi family,
-finite normalizers, conjugation, global coverage and inverse obstructions,
-and the reviews below. Its exact commit and clean-checkout execution
-receipt are recorded in the PR body **after** commit creation and actual
-execution. This file does not predeclare a receipt for its own future SHA.
+The second checkpoint is
+`cda78d92f404dd3219a7a4ed9322706654eddf29`, tree
+`77d71aa1ceed34eafb84ea5c1acde24ef0863c1a`. It adds the common rank,
+same-goal expanding psi family, finite normalizers, conjugation, global
+coverage and inverse obstructions, and the reviews below. Its actual
+clean-checkout receipts are now preserved as
+[`checkpoint2-lean.json`](checkpoint2-lean.json) and
+[`checkpoint2-repository.json`](checkpoint2-repository.json), alongside
+the earlier receipt. The Lean build, 128-declaration axiom audit, four
+exact affine replays, and five-command repository gate all passed at that
+exact 359-file checkout. Later band-return work does not change the scope
+or identity of either historical execution receipt.
 
 ## Formal checking
 
