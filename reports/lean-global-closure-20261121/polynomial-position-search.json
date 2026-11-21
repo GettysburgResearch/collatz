@@ -1,0 +1,281 @@
+{
+  "scope": "Numerical synthesis attempts and finite implementation controls; no global ranking certificate found, no impossibility theorem inferred.",
+  "collected_utc": "2026-11-21T08:38:26.601136+00:00",
+  "python": "3.12.14",
+  "scipy": "1.17.0",
+  "script_sha256": "60011f198bb5e85e4abbc10f2def5e08386c435caaf544aa60ecdf0eda88fd6d",
+  "provenance": "The LP output below was captured before adding the standalone controls function. The translated LP coefficient construction is unchanged. The controls were then actually executed on the final code. Timed-out cases are undecided.",
+  "degree1": {
+    "scope": "global transducer synthesis; not a proof",
+    "results": [
+      {
+        "k": 1,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 12,
+        "variables": 30,
+        "constraints": 62,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.004
+      },
+      {
+        "k": 2,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 14,
+        "variables": 40,
+        "constraints": 76,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.002
+      },
+      {
+        "k": 3,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 22,
+        "variables": 68,
+        "constraints": 124,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.003
+      },
+      {
+        "k": 4,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 38,
+        "variables": 124,
+        "constraints": 220,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.005
+      },
+      {
+        "k": 5,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 70,
+        "variables": 236,
+        "constraints": 412,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.011
+      },
+      {
+        "k": 6,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 138,
+        "variables": 468,
+        "constraints": 816,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.03
+      },
+      {
+        "k": 7,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 274,
+        "variables": 932,
+        "constraints": 1624,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.115
+      },
+      {
+        "k": 8,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 546,
+        "variables": 1860,
+        "constraints": 3240,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.622
+      },
+      {
+        "k": 9,
+        "degree": 1,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 1090,
+        "variables": 3716,
+        "constraints": 6472,
+        "status": 1,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "seconds": 30.126
+      }
+    ]
+  },
+  "degree2": {
+    "scope": "global transducer synthesis; not a proof",
+    "results": [
+      {
+        "k": 1,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 12,
+        "variables": 45,
+        "constraints": 92,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.004
+      },
+      {
+        "k": 2,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 14,
+        "variables": 60,
+        "constraints": 113,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.004
+      },
+      {
+        "k": 3,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 22,
+        "variables": 102,
+        "constraints": 185,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.005
+      },
+      {
+        "k": 4,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 38,
+        "variables": 186,
+        "constraints": 329,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.01
+      },
+      {
+        "k": 5,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 70,
+        "variables": 354,
+        "constraints": 617,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.021
+      },
+      {
+        "k": 6,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 138,
+        "variables": 702,
+        "constraints": 1223,
+        "status": 2,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "seconds": 0.086
+      },
+      {
+        "k": 7,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 274,
+        "variables": 1398,
+        "constraints": 2435,
+        "status": 1,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "seconds": 30.035
+      },
+      {
+        "k": 8,
+        "degree": 2,
+        "signed": true,
+        "reachable_position_translation": true,
+        "states": 546,
+        "variables": 2790,
+        "constraints": 4859,
+        "status": 1,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "seconds": 30.176
+      }
+    ]
+  },
+  "implementation_controls": {
+    "scope": "global transducer synthesis; not a proof",
+    "results": [
+      {
+        "k": 1,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 2,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 3,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 4,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 5,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 6,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 7,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 8,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      },
+      {
+        "k": 9,
+        "degree": 3,
+        "control_cases": 1029,
+        "scope": "finite implementation controls only"
+      }
+    ]
+  }
+}

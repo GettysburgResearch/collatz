@@ -1,0 +1,348 @@
+{
+  "status": "PASSED",
+  "scope": "full project",
+  "driver_sha256": "efb3612dccbaf0977c6e6753296247de4b0c4c4937a6d1f132b8d6028d48f544",
+  "project": "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "upstream": {
+    "repository": "GettysburgResearch/collatz",
+    "pull_request": 173,
+    "commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+    "scope": "Exact, unmodified source files. No result in these files is claimed as a new contribution of PR175.",
+    "files": [
+      {
+        "path": "research/lean-shell-cover/ShellCover.lean",
+        "local_path": "vendor/pr173/ShellCover.lean",
+        "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+      },
+      {
+        "path": "research/lean-shell-cover/ForwardSection.lean",
+        "local_path": "vendor/pr173/ForwardSection.lean",
+        "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4"
+      },
+      {
+        "path": "research/lean-shell-cover/SectionDynamics.lean",
+        "local_path": "vendor/pr173/SectionDynamics.lean",
+        "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+      },
+      {
+        "path": "research/lean-shell-cover/RisingReturns.lean",
+        "local_path": "vendor/pr173/RisingReturns.lean",
+        "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a"
+      }
+    ]
+  },
+  "fresh_project_output": "/workspace/scratch/957bb0caa6f2/band-published-full-build",
+  "LEAN_PATH": "/workspace/scratch/957bb0caa6f2/band-published-full-build:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "commands": [
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "source": "CollatzGlobalClosure/EndpointSteering.lean",
+      "source_sha256": "42bf2d076564d7749961a2ab79634f4534176143b78a59469b32e466afd41e14",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/EndpointSteering.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/EndpointSteering.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.109,
+      "stdout": "'CollatzEndpointSteering.step_shift' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.orbit_shift' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.odds_shift' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.ternary_precision' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.target_on_ray_iff' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.construct_source' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.construct_positive_source' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.prescribed_endpoint_iff' depends on axioms: [propext, Quot.sound]\n",
+      "olean_sha256": "bd830d4d06deb06a153d342c27f3a040afce866b2333f5592a7481fca2a5655f"
+    },
+    {
+      "module": "CollatzGlobalClosure.RelativeParityBarrier",
+      "source": "CollatzGlobalClosure/RelativeParityBarrier.lean",
+      "source_sha256": "1c2406c9096d19758dccab97a307aba80a0c26ec963e8869c354ede7e919b355",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/RelativeParityBarrier.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/RelativeParityBarrier.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.085,
+      "stdout": "'CollatzRelativeParity.step_pos' depends on axioms: [propext, Quot.sound]\n'CollatzRelativeParity.orbit_pos' depends on axioms: [propext, Quot.sound]\n'CollatzRelativeParity.orbit_add' depends on axioms: [propext]\n'CollatzRelativeParity.oddCount_add' depends on axioms: [propext]\n'CollatzRelativeParity.one_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzRelativeParity.one_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzRelativeParity.certified_source_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'_private.CollatzGlobalClosure.RelativeParityBarrier.0.CollatzRelativeParity.quartic_odd_bound' depends on axioms: [propext,\n Quot.sound]\n'CollatzRelativeParity.step_quartic_bound' depends on axioms: [propext, Quot.sound]\n'CollatzRelativeParity.finite_no_hit_growth' depends on axioms: [propext, Quot.sound]\n'CollatzRelativeParity.nonconvergent_barrier' depends on axioms: [propext, Quot.sound]\n'_private.CollatzGlobalClosure.RelativeParityBarrier.0.CollatzRelativeParity.fourth_strict' depends on axioms: [propext,\n Quot.sound]\n'CollatzRelativeParity.converges_of_parity_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'_private.CollatzGlobalClosure.RelativeParityBarrier.0.CollatzRelativeParity.self_lt_two_pow' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzRelativeParity.five_converges_of_relative_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzRelativeParity.forward_five_of_relative_budget_returns' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzRelativeParity.relative_budget_returns_of_forward_five' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzRelativeParity.forward_five_iff_relative_budget_returns' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "olean_sha256": "879aa01e03920a18110b756e10768726c4022d4bcf7c50c15f2baa78750919b4"
+    },
+    {
+      "module": "CollatzGlobalClosure.LocalProfileObstruction",
+      "source": "CollatzGlobalClosure/LocalProfileObstruction.lean",
+      "source_sha256": "a391ef70a09001d7882ecf3dc1eef52c90c6db6fa149d038c9d199e747a7813f",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/LocalProfileObstruction.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/LocalProfileObstruction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.02,
+      "stdout": "'LocalProfileObstruction.exists_arbitrarily_large_profile_collision' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'LocalProfileObstruction.no_strict_profile_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "f04d044650fdbe6b5b3ea18a7e8f473660cd3135b715728fa34e807fcd7fb62e"
+    },
+    {
+      "module": "CollatzGlobalClosure.SiblingRigidity",
+      "source": "CollatzGlobalClosure/SiblingRigidity.lean",
+      "source_sha256": "7b3c9626626b70548fa0cc062e958b65fdfd1ba783ca5aeaab94e6fcbb00b72e",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/SiblingRigidity.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/SiblingRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.451,
+      "stdout": "'CollatzSiblingRigidity.step_formula' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.affine_formula' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSiblingRigidity.orbit_add' depends on axioms: [propext]\n'CollatzSiblingRigidity.odds_add' depends on axioms: [propext]\n'CollatzSiblingRigidity.no_odds_scaling' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.step_shift' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.word_shift' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.offset_zero_of_no_odds' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.offset_unit' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.affine_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSiblingRigidity.invariant_prefix_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSiblingRigidity.identity_divisibility' depends on axioms: [propext, Quot.sound]\n'CollatzSiblingRigidity.prefix_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSiblingRigidity.clock_order' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSiblingRigidity.invariant_prefix_clock_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSiblingRigidity.invariant_prefix_expansion_lower_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzSiblingRigidity.positive_sources_of_positive_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "9daed2b3d868ca93f1c5b5cbbab46989e795e6cbe43be24523e7fac95c2c9a37"
+    },
+    {
+      "module": "ShellCover",
+      "source": "vendor/pr173/ShellCover.lean",
+      "source_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/ShellCover.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/vendor/pr173/ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.791,
+      "stdout": "",
+      "olean_sha256": "0b6d174a779e344ea11dec0e0aedc30541871c124d3b097aca64cf5d0688c6ac"
+    },
+    {
+      "module": "ForwardSection",
+      "source": "vendor/pr173/ForwardSection.lean",
+      "source_sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/ForwardSection.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/vendor/pr173/ForwardSection.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.891,
+      "stdout": "'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "5b7749772e3c6447061b8c3cc3c715eaa1426fa83e54b6aea23c656d95de8b02"
+    },
+    {
+      "module": "SectionDynamics",
+      "source": "vendor/pr173/SectionDynamics.lean",
+      "source_sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/SectionDynamics.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/vendor/pr173/SectionDynamics.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.471,
+      "stdout": "'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "c50211815dfb5dad4b79d2bd7dfd52eb21a1e8ffba600ab82d32b7b1f45bfe75"
+    },
+    {
+      "module": "RisingReturns",
+      "source": "vendor/pr173/RisingReturns.lean",
+      "source_sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/RisingReturns.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/vendor/pr173/RisingReturns.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.451,
+      "stdout": "'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "deca9925a2a0c0fba7f3bc9661e053b22eeea90a0c92ad6229806fa520e3e4df"
+    },
+    {
+      "module": "CollatzGlobalClosure.BandOffset",
+      "source": "CollatzGlobalClosure/BandOffset.lean",
+      "source_sha256": "4e87232cd32ee3f82acaa942f9c1988dd352a711bb0d9a5fbf0aaa320aab1994",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/BandOffset.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/BandOffset.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.999,
+      "stdout": "'CollatzBandOffset.lift_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.band_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.band_descent_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.no_descent_through' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.thinOffset_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.thinSeed_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.thinSeed_log2' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.thinSeed_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.thinSeed_width' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.offset_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandOffset.one_offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "95c24b1359fb8f81a0ad05bba1bdb6a719e87d8267f1f8f6401add23ee6a5bc5"
+    },
+    {
+      "module": "CollatzGlobalClosure.MarkedCylinders",
+      "source": "CollatzGlobalClosure/MarkedCylinders.lean",
+      "source_sha256": "a19239d423148e918df49635bf36cccfbadf68cee9770b3e8f9246a01135e5b8",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/MarkedCylinders.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/MarkedCylinders.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.173,
+      "stdout": "'CollatzMarkedCylinders.seed_log2' depends on axioms: [propext, Quot.sound]\n'CollatzMarkedCylinders.seed_above' depends on axioms: [propext, Quot.sound]\n'CollatzMarkedCylinders.seed_marked' depends on axioms: [propext, Quot.sound]\n'CollatzMarkedCylinders.seed_residue' depends on axioms: [propext, Quot.sound]\n'CollatzMarkedCylinders.seed_prefix' depends on axioms: [propext, Quot.sound]\n'CollatzMarkedCylinders.seed_prefix_parity' depends on axioms: [propext, Quot.sound]\n'CollatzMarkedCylinders.cofinal_marked_cylinder' depends on axioms: [propext, Quot.sound]\n",
+      "olean_sha256": "8ff3973fb5a3d2c5a26f179068275983b5d7daf457a4fd5ecc346e2b5dd9eede"
+    },
+    {
+      "module": "CollatzGlobalClosure.MarkedResetWitness",
+      "source": "CollatzGlobalClosure/MarkedResetWitness.lean",
+      "source_sha256": "b6d4aed8ac0e3475dff2afd35e29723c9687eed875b5e0f30449ecc65380fda2",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/MarkedResetWitness.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/MarkedResetWitness.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.425,
+      "stdout": "'CollatzMarkedResetWitness.exact_reset_pair' does not depend on any axioms\n",
+      "olean_sha256": "6738be3bcd3c74af380db4f03f9b6ce5365adf465f5555cf5fb501cd3c60ee1d"
+    },
+    {
+      "module": "CollatzGlobalClosure.SectionResetReturns",
+      "source": "CollatzGlobalClosure/SectionResetReturns.lean",
+      "source_sha256": "22a7df5daae2452aa37e8293670b5ce735ee74b0775a216d284df9129c44dc35",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/SectionResetReturns.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/SectionResetReturns.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.782,
+      "stdout": "'CollatzShell.ForwardSection.Reset.cofinal_expanding_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Reset.no_eventual_coordinate_rank' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "olean_sha256": "becf98df3659ab6a7bcf4f7d6606ba9abc11c2501983feccac770195471ea73d"
+    },
+    {
+      "module": "CollatzGlobalClosure.BandWord",
+      "source": "CollatzGlobalClosure/BandWord.lean",
+      "source_sha256": "688c56ce58b5e3e306318d4998a481216f8a72ac77fedc7ad08d5c4cde682ac8",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/BandWord.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/BandWord.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.315,
+      "stdout": "'CollatzShell.BandWord.ray_interval' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandWord.solve_mul_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandWord.solve_affine_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandWord.simultaneous_residue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandWord.affine_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandWord.factored_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandWord.word_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandWord.section_word_in_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "25e732e8fe85a80bb39941157bb8973ca2cb28f228cf6cd6d0900205f6088aa3"
+    },
+    {
+      "module": "CollatzGlobalClosure.SectionBridge",
+      "source": "CollatzGlobalClosure/SectionBridge.lean",
+      "source_sha256": "4d17ed251676c23fc660d88076315801544b7e08efdf79a3b457abc2e97a5c9e",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/SectionBridge.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/SectionBridge.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.508,
+      "stdout": "'CollatzSectionBridge.endpoint_orbit_eq' does not depend on any axioms\n'CollatzSectionBridge.witness_orbit_eq' does not depend on any axioms\n'CollatzSectionBridge.thin_family_in_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSectionBridge.cofinal_marked_clock_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSectionBridge.exact_reset_pair' depends on axioms: [propext]\n",
+      "olean_sha256": "8643a358b3ad9c2fc4d3d0c5205b8b3d38dca9c56760072df822027b9b0fdb0f"
+    },
+    {
+      "module": "CollatzGlobalClosure.BandCollision",
+      "source": "CollatzGlobalClosure/BandCollision.lean",
+      "source_sha256": "dbd301d35b794fbc2d32c081b4edeac654969e6ae6d17cfb070316074bf588a2",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/BandCollision.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/BandCollision.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.816,
+      "stdout": "'CollatzBandCollision.ratio_of_log_close' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandCollision.power_ratio_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandCollision.usable_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandCollision.octave_padding' depends on axioms: [propext, Quot.sound]\n'CollatzBandCollision.placed_source_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandCollision.marked_of_octave_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandCollision.cofinal_equal_features' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "3e5ec343887bf1215ecaea68dc87db921fefa27790ca4aa79f25668cfc1420a5"
+    },
+    {
+      "module": "CollatzGlobalClosure.SectionFeatureRanks",
+      "source": "CollatzGlobalClosure/SectionFeatureRanks.lean",
+      "source_sha256": "ca373a546aa696f02288a8ca23fb27bb6f0d094a722e83dc0121085f35dc510c",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure/SectionFeatureRanks.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure/SectionFeatureRanks.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.887,
+      "stdout": "'CollatzSectionFeatures.depth_one_of_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSectionFeatures.rank_drop_at_marked_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSectionFeatures.orbit_halving_floor' depends on axioms: [propext, Quot.sound]\n'CollatzSectionFeatures.no_eventual_feature_rank' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "0b7add0da84e76d9cc36a34b522f29906d2d31195f1bbb7e23a5fa051ad0c69e"
+    },
+    {
+      "module": "CollatzGlobalClosure",
+      "source": "CollatzGlobalClosure.lean",
+      "source_sha256": "00829b99ac8cd1590a13e7c18f44af6f08332e3bf5005a7e5b73b60bf21ddb21",
+      "command": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/band-published-full-build/CollatzGlobalClosure.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-band-verify-20261121/research/lean-global-closure-20261121/CollatzGlobalClosure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.727,
+      "stdout": "",
+      "olean_sha256": "41eef7e69a99e02c927f81685575b235e2e57a640cf6cdf8eee3918e719de795"
+    }
+  ],
+  "module_count": 17,
+  "axiom_report_count": 96
+}
