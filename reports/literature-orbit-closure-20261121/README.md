@@ -65,9 +65,9 @@ A complete successful replay is recorded separately after it occurs.
 
 ## Parallel continuation
 
-The additional three Lean modules have29 standard-only public theorem audits
-in `residual-agent-replay.json`. The final assembled Audit now requests140
-public theorems across18 new mathematical modules. The source review of the
+The additional three Lean modules have 29 standard-only public theorem audits
+in `residual-agent-replay.json`. The final assembled Audit now requests 140
+public theorems across 18 new mathematical modules. The source review of the
 residual selector predates its two additional stronger-partner/non-descent
 theorems; those additions are separately kernel checked and reconstructed in
 the root review. The half-selector proof and the global analytic consequences
@@ -77,3 +77,32 @@ The Python arithmetic replay scripts were made read-only by default and their
 assertions converted to explicit exceptions, so optimization cannot silently
 disable their checks. Agent receipts preserve their original source snapshots;
 the final checker records the exact published script inputs and executions.
+
+## Complete successful published-source replay
+
+Actual source head: `aba029b5c146be907d89c2eba4ebbae7bfe7d5e9`.
+Actual tree: `81ccfda67cd33cc2acd79ca7f744a2e39ef336ab`.
+Started: `2026-11-21T23:24:23Z`. Completed: `2026-11-21T23:25:56Z`.
+
+`published3-complete-replay.json` records a complete successful run in a clean
+403-file checkout of that actual remote commit. All 23 modules compiled with
+Lean 4.34.1 and pinned Mathlib, using one worker and warnings as errors. The
+final Audit checked all 140 public theorem dependencies in the 18 new mathematical
+modules; only `propext`, `Classical.choice`, and `Quot.sound` occur. The four
+inherited modules and the combined Audit entrypoint account for the other 5
+compiled modules.
+
+All five arithmetic checks passed: the 446-ray certificate, exact Lean-data
+regeneration, finite endpoint-phase census/examples, exact half-selector
+coverage overlap, and signed-seed affine identities. All five required
+repository-validation commands passed. The checkout remained clean.
+
+The named `published3-*.log` files preserve the final theorem audit,
+arithmetic outputs and repository gate. `published3-module-port.patch`
+records the inherited header/visibility port. No proof body was changed.
+The initial module-format failure and its repair remain recorded separately.
+
+This final receipt continuation changes only reports. Every input hash in the
+successful source replay is unchanged, as recorded in
+`published-source-continuity.json`. Full Collatz and the explicit missing
+transport/coverage obligations remain open.

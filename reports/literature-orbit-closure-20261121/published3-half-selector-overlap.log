@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "old_complete_cells": 446,
+  "old_unresolved_cells": 130,
+  "half_selector_relative_density": "1/2",
+  "newly_partial_cells": [
+    1819,
+    10011,
+    22299,
+    26395,
+    34587,
+    38683,
+    46875,
+    59163,
+    63259,
+    71451
+  ],
+  "selected_fraction_in_each_new_partial_cell": "1/2",
+  "old_unresolved_cells_still_wholly_uncovered": 120,
+  "additional_relative_density": "5/576",
+  "combined_relative_density": "451/576",
+  "scope": "Exact finite overlap plus the written natural-density partition; no universal convergence claim."
+}

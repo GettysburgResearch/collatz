@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "certified_classes": 446,
+  "unresolved_classes": 130,
+  "source_modulus": 73728,
+  "source_clock": 13,
+  "maximum_partner_clock": 16,
+  "ray_samples_replayed": 892,
+  "trivial_smaller_predecessor_classes": 192,
+  "direct_descent_by_clock_13_classes": 207,
+  "baseline_union_classes": 330,
+  "certified_beyond_baseline_classes": 116,
+  "file_sha256": "76626a0a84195913a90d193887f931cffee1558990b76347f540dad9d390298a",
+  "scope": "Exact infinite arithmetic-progression mergers; incomplete branch cover."
+}
