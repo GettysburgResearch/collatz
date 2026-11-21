@@ -1,0 +1,29 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "pr": 173,
+  "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean": "4.34.1",
+  "sources": [
+    {
+      "file": "ShellCover.lean",
+      "upstream_path": "research/lean-shell-cover/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "file": "ForwardSection.lean",
+      "upstream_path": "research/lean-shell-cover/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4"
+    },
+    {
+      "file": "SectionDynamics.lean",
+      "upstream_path": "research/lean-shell-cover/SectionDynamics.lean",
+      "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+    },
+    {
+      "file": "RisingReturns.lean",
+      "upstream_path": "research/lean-shell-cover/RisingReturns.lean",
+      "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a"
+    }
+  ]
+}
