@@ -1,0 +1,40 @@
+{
+  "schema": "collatz-band-imports/v1",
+  "files": [
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/ShellCover.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/ForwardSection.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4"
+    },
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/SectionDynamics.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/SectionDynamics.lean",
+      "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac"
+    },
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/RisingReturns.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/RisingReturns.lean",
+      "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a"
+    }
+  ],
+  "module_transformation": {
+    "prepend": "module",
+    "imports": "prefix the initial import lines with public",
+    "declarations": "insert @[expose] public section immediately after the imports",
+    "body": "all formulas and proof bodies unchanged; other explicit private declarations retained",
+    "generated_directory": "lean/.build/generated",
+    "helper_visibility": [
+      "GridAt and its decidability instance become public-section declarations for the exposed firstMesh body",
+      "visit_exists becomes a public-section theorem for the exposed firstVisit body"
+    ]
+  }
+}
