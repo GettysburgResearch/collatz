@@ -1,0 +1,51 @@
+(a) dyadic family: pair (3^(N-1), 3^N), N = 4^t u; predicted merge step 2t+5 for u = 7 (t odd) / 5 (t even) mod 8
+  t=1  u=7 mod 8: 40/40 merge exactly at step 7;  other odd residues merged by then: 0/30
+  t=2  u=5 mod 8: 40/40 merge exactly at step 9;  other odd residues merged by then: 0/30
+  t=3  u=7 mod 8: 40/40 merge exactly at step 11;  other odd residues merged by then: 0/30
+  t=4  u=5 mod 8: 40/40 merge exactly at step 13;  other odd residues merged by then: 0/30
+  t=5  u=7 mod 8: 40/40 merge exactly at step 15;  other odd residues merged by then: 0/30
+  t=6  u=5 mod 8: 40/40 merge exactly at step 17;  other odd residues merged by then: 0/30
+  t=7  u=7 mod 8: 40/40 merge exactly at step 19;  other odd residues merged by then: 0/30
+  t=8  u=5 mod 8: 40/40 merge exactly at step 21;  other odd residues merged by then: 0/30
+  t=9  u=7 mod 8: 40/40 merge exactly at step 23;  other odd residues merged by then: 0/30
+  t=10 u=5 mod 8: 40/40 merge exactly at step 25;  other odd residues merged by then: 0/30
+  t=11 u=7 mod 8: 40/40 merge exactly at step 27;  other odd residues merged by then: 0/30
+  t=12 u=5 mod 8: 40/40 merge exactly at step 29;  other odd residues merged by then: 0/30
+  exact integers: t=1 u=7 N=28: T^7(3^N) == T^7(3^(N-1)): True
+  exact integers: t=1 u=15 N=60: T^7(3^N) == T^7(3^(N-1)): True
+  exact integers: t=2 u=5 N=80: T^9(3^N) == T^9(3^(N-1)): True
+  exact integers: t=2 u=13 N=208: T^9(3^N) == T^9(3^(N-1)): True
+  exact integers: t=3 u=7 N=448: T^11(3^N) == T^11(3^(N-1)): True
+(b) normal forms, N = 2^k u, q = (3^N - 1)/2^(k+2):
+  all 40 cases (k=1..8, u in 1,3,5,7,9) agree: True
+(c) exchange invariants: e_m = 2(o+m) - n for 3^m, f_m = 2o - n + 2m for 3^m - 1  ((n,o) = total steps, odd steps to reach 1)
+  m  :   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+  e_m:   0   1   3  18   4  16   6  13  13   8  23  23  23  23  25  35  23  33  25  18  18
+  f_m:      1   1   2   2  16  16   6   6   8   8  23  23  23  23  18  18  33  33  25  25
+  m in 1..600: e_m equals some e_m' with m' < m: 555;  e_m = f_m: 448;  f_(2j-1) = f_(2j) (Mersenne fold): 299/299
+  residues m mod 4 with e_m = f_m: [(0, 95), (1, 150), (2, 102), (3, 101)]  (m = 1 mod 4 is the proved class)
+  shadow m=1 N=2^3*1: T^5(3^(m+N)) == 1 + 3^(o+m) 2^(k+2-n) q : True
+  shadow m=1 N=2^5*3: T^5(3^(m+N)) == 1 + 3^(o+m) 2^(k+2-n) q : True
+  shadow m=2 N=2^11*1: T^13(3^(m+N)) == 1 + 3^(o+m) 2^(k+2-n) q : True
+  shadow m=4 N=2^14*1: T^16(3^(m+N)) == 1 + 3^(o+m) 2^(k+2-n) q : True
+(d) reach of bounded-depth certificates on 2000 random 64-bit exponents i (delta = 1..8)
+  depth <= 8 : 3^i ~ 3^(i-delta) for some delta: 0.081   some delta of either sign: 0.146
+  depth <= 12: 3^i ~ 3^(i-delta) for some delta: 0.166   some delta of either sign: 0.313
+  depth <= 16: 3^i ~ 3^(i-delta) for some delta: 0.219   some delta of either sign: 0.406
+  depth <= 24: 3^i ~ 3^(i-delta) for some delta: 0.294   some delta of either sign: 0.518
+  depth <= 32: 3^i ~ 3^(i-delta) for some delta: 0.344   some delta of either sign: 0.601
+  depth <= 48: 3^i ~ 3^(i-delta) for some delta: 0.441   some delta of either sign: 0.707
+  depth <= 64: 3^i ~ 3^(i-delta) for some delta: 0.511   some delta of either sign: 0.769
+(e) exponents i = 2^K u - 1 (K = 40, u odd random): earliest certificate, as depth - K
+  pair (3^i, 3^(i+1)):         [(5, 87), (6, 41), (7, 13), (8, 8), (9, 8), (10, 1), (11, 5), (12, 2), (13, 2), (14, 2), (15, 3), (16, 1), (17, 2), (18, 1), (21, 1), (24, 2), (None, 121)]
+  pairs (3^(i-delta), 3^i):    [(9, 2), (10, 4), (11, 5), (12, 1), (13, 6), (14, 2), (15, 3), (16, 4), (17, 5), (18, 4), (19, 3), (20, 3), (21, 1), (22, 2), (23, 3), (24, 1), (None, 251)]
+(f) coalescence above 2^44 is common and is NOT an identity in e: pairs (3^e, 3^(e+1)), e = 30..399
+  273/370 consecutive pairs share an orbit value >= 2^44
+(g) first tail class without a certificate (Lean: pow_three_pair_closure_form): N = 4u, q = (3^N-1)/16, w = 3q, 8x = 3w+1
+    u = 3 mod 16 gives x odd (closure pair (m, 3m-1), m = 3x+1); u = 11 mod 16 gives x even
+  N=12  u=3  (u mod 16 =  3): w mod 16 = 13, 3w+1 == 8x: True, x odd: True, T^7(3^N) == x: True, T^7(3^(N-1)) == 9x+2 == 3(3x+1)-1: True
+  N=76  u=19 (u mod 16 =  3): w mod 16 = 13, 3w+1 == 8x: True, x odd: True, T^7(3^N) == x: True, T^7(3^(N-1)) == 9x+2 == 3(3x+1)-1: True
+  N=140 u=35 (u mod 16 =  3): w mod 16 = 13, 3w+1 == 8x: True, x odd: True, T^7(3^N) == x: True, T^7(3^(N-1)) == 9x+2 == 3(3x+1)-1: True
+  N=204 u=51 (u mod 16 =  3): w mod 16 = 13, 3w+1 == 8x: True, x odd: True, T^7(3^N) == x: True, T^7(3^(N-1)) == 9x+2 == 3(3x+1)-1: True
+  N=44  u=11 (u mod 16 = 11): w mod 16 =  5, 3w+1 == 8x: True, x odd: False, T^7(3^N) == x: True, T^7(3^(N-1)) == 9x+2 == 3(3x+1)-1: True
+  N=108 u=27 (u mod 16 = 11): w mod 16 =  5, 3w+1 == 8x: True, x odd: False, T^7(3^N) == x: True, T^7(3^(N-1)) == 9x+2 == 3(3x+1)-1: True
