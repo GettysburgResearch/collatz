@@ -1,0 +1,336 @@
+{
+  "schema": "collatz-deep-literature-repo-sources/v1",
+  "as_of": "2026-11-22",
+  "repository": "GettysburgResearch/collatz",
+  "baseline_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "Frozen dependencies and reading locations, not a wholesale mathematical acceptance review. Theorem implementation files are location pointers; reading a statement or README does not constitute compiler replay or full proof audit. Claim labels below may be descriptive rather than declared Lean names.",
+  "independent_lean_replay": false,
+  "sources": [
+    {
+      "pull_request": null,
+      "full_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "status": "accepted baseline, subject to scoped errata",
+      "source_url": "https://github.com/GettysburgResearch/collatz/tree/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "claims_or_interfaces": [
+            "Explore-mode scope and publication requirements"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/AGENTS.md"
+        },
+        {
+          "path": "docs/RESEARCH_MAP.md",
+          "claims_or_interfaces": [
+            "current proof interfaces"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/docs/RESEARCH_MAP.md"
+        },
+        {
+          "path": "research/integrated/README.md",
+          "claims_or_interfaces": [
+            "accepted scoped assembly"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/README.md"
+        },
+        {
+          "path": "research/integrated/ERRATA.md",
+          "claims_or_interfaces": [
+            "ordinary realization and periodic-synthesis boundaries"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/ERRATA.md"
+        },
+        {
+          "path": "research/integrated/ordinary-extraction/README.md",
+          "claims_or_interfaces": [
+            "nested positive survivor extraction with bounded least elements"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/ordinary-extraction/README.md"
+        },
+        {
+          "path": "research/integrated/periodic-tails/README.md",
+          "claims_or_interfaces": [
+            "complete periodic denominator and physical parity"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/periodic-tails/README.md"
+        },
+        {
+          "path": "research/RESULTS_CATALOG.md",
+          "claims_or_interfaces": [
+            "reviewed source families and centered/adelic representations"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/RESULTS_CATALOG.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 173,
+      "full_sha": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "status": "source-reported formalized statements; no new Lean replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/173",
+      "files": [
+        {
+          "path": "research/lean-shell-cover/README.md",
+          "claims_or_interfaces": [
+            "band definition",
+            "density zero",
+            "bounded actual visit",
+            "return descent"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/fa0c9e2a2851e6324391e39c17afcb5913185aec/research/lean-shell-cover/README.md"
+        },
+        {
+          "path": "research/lean-shell-cover/ForwardSection.lean",
+          "claims_or_interfaces": [
+            "ForwardSection.bounded_visit"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/fa0c9e2a2851e6324391e39c17afcb5913185aec/research/lean-shell-cover/ForwardSection.lean"
+        },
+        {
+          "path": "research/lean-shell-cover/SectionDynamics.lean",
+          "claims_or_interfaces": [
+            "SectionDynamics.collatz_iff_return_descent"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/fa0c9e2a2851e6324391e39c17afcb5913185aec/research/lean-shell-cover/SectionDynamics.lean"
+        },
+        {
+          "path": "research/lean-shell-cover/RisingReturns.lean",
+          "claims_or_interfaces": [
+            "arbitrarily large first-return expansion"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/fa0c9e2a2851e6324391e39c17afcb5913185aec/research/lean-shell-cover/RisingReturns.lean"
+        }
+      ]
+    },
+    {
+      "pull_request": 175,
+      "full_sha": "06215e69346c4d32bf970af9c846a6894586c1e7",
+      "status": "source-qualified obstruction scope; no new Lean replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "files": [
+        {
+          "path": "research/lean-global-closure-20261121/BAND_ATTACK.md",
+          "claims_or_interfaces": [
+            "limits of ranks based on exponent and trailing-one depth"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/06215e69346c4d32bf970af9c846a6894586c1e7/research/lean-global-closure-20261121/BAND_ATTACK.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 176,
+      "full_sha": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "status": "source-reported formalized statements; exact section README independently inspected; no new Lean replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "files": [
+        {
+          "path": "research/lean-global-resolvent-20261121/section/README.md",
+          "claims_or_interfaces": [
+            "cofinal admissible scales",
+            "2^Q distinct marked ancestors",
+            "varying clocks",
+            "finite count criterion"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/3dbe5542fd6a5a1d63b354225d92391471c17002/research/lean-global-resolvent-20261121/section/README.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 177,
+      "full_sha": "00a611094043afeb256d6532b477c0709e8ed270",
+      "status": "source-qualified guarded certificates; completeness remains open; no new Lean replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/177",
+      "files": [
+        {
+          "path": "research/lean-exact-witness-global-20261121/UNBOUNDED_GAP_REWRITES.md",
+          "claims_or_interfaces": [
+            "well-founded gap multiset",
+            "guarded pumps",
+            "CollatzGapComparison.Complete remains open"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/00a611094043afeb256d6532b477c0709e8ed270/research/lean-exact-witness-global-20261121/UNBOUNDED_GAP_REWRITES.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 180,
+      "full_sha": "cf91e46fa9fbadba3df7942202a5197c134d0ce0",
+      "status": "written source-qualified analytic arguments; do not imply an independent Lean implementation",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "files": [
+        {
+          "path": "research/lean-forward-band-20261121/README.md",
+          "claims_or_interfaces": [
+            "uniform predecessor claim cX/a for X>=Ca",
+            "dyadic band population and survivor criterion"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cf91e46fa9fbadba3df7942202a5197c134d0ce0/research/lean-forward-band-20261121/README.md"
+        },
+        {
+          "path": "research/lean-forward-band-20261121/JOINT_CLOCK_MIXING.md",
+          "claims_or_interfaces": [
+            "selected joint clock-offset mixing via stronger nonnegative renewal estimate"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cf91e46fa9fbadba3df7942202a5197c134d0ce0/research/lean-forward-band-20261121/JOINT_CLOCK_MIXING.md"
+        },
+        {
+          "path": "research/lean-forward-band-20261121/GLOBAL_RENEWAL_ATTACK.md",
+          "claims_or_interfaces": [
+            "population versus global survivor obligation"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cf91e46fa9fbadba3df7942202a5197c134d0ce0/research/lean-forward-band-20261121/GLOBAL_RENEWAL_ATTACK.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 181,
+      "full_sha": "5f03d809b4495802971211ef13ff905f741d700d",
+      "status": "PR metadata and source-reported checkpoint 2 inspected; claimed Lean build not replayed",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/181",
+      "files": [
+        {
+          "path": "research/lean-global-target-20261121/README.md",
+          "claims_or_interfaces": [
+            "nonpaying-exit family",
+            "bounded charge does not imply paying exit",
+            "guarded repayment"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/5f03d809b4495802971211ef13ff905f741d700d/research/lean-global-target-20261121/README.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 182,
+      "full_sha": "8372e302041a55057742a9e6ee9b4fa600c88fdb",
+      "status": "source-qualified finite/infinite descent interfaces; no new Lean replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "files": [
+        {
+          "path": "research/lean-dyadic-descent-20261121/README.md",
+          "claims_or_interfaces": [
+            "dyadic descent and missing phase-frequency bridge"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/8372e302041a55057742a9e6ee9b4fa600c88fdb/research/lean-dyadic-descent-20261121/README.md"
+        },
+        {
+          "path": "research/lean-dyadic-descent-20261121/InfiniteDescent.lean",
+          "claims_or_interfaces": [
+            "unbounded return-descent interface"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/8372e302041a55057742a9e6ee9b4fa600c88fdb/research/lean-dyadic-descent-20261121/InfiniteDescent.lean"
+        },
+        {
+          "path": "research/lean-dyadic-descent-20261121/PHASE_FREQUENCY.md",
+          "claims_or_interfaces": [
+            "phase versus valuation frequency"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/8372e302041a55057742a9e6ee9b4fa600c88fdb/research/lean-dyadic-descent-20261121/PHASE_FREQUENCY.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 183,
+      "full_sha": "cc046e189366e7e876fc283b80459e64faa9c486",
+      "status": "written continuation; four new Lean scripts at this head explicitly pending compiler replay; earlier replay does not certify them",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/183",
+      "files": [
+        {
+          "path": "research/literature-closing-20261121/README.md",
+          "claims_or_interfaces": [
+            "latest written continuation status"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cc046e189366e7e876fc283b80459e64faa9c486/research/literature-closing-20261121/README.md"
+        },
+        {
+          "path": "research/literature-closing-20261121/transport/RETURN_TRANSPORT.md",
+          "claims_or_interfaces": [
+            "original-source fourth-power weights",
+            "finite fourth logarithmic moment",
+            "Q rho <= 8 rho + residual",
+            "distinct-atom recurrence envelope"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cc046e189366e7e876fc283b80459e64faa9c486/research/literature-closing-20261121/transport/RETURN_TRANSPORT.md"
+        },
+        {
+          "path": "research/literature-closing-20261121/arithmetic/ARITHMETIC_CLOSURE.md",
+          "claims_or_interfaces": [
+            "AR-2 through AR-5",
+            "complete Subspace product cancellation",
+            "parity-encoding mismatch"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cc046e189366e7e876fc283b80459e64faa9c486/research/literature-closing-20261121/arithmetic/ARITHMETIC_CLOSURE.md"
+        },
+        {
+          "path": "research/literature-closing-20261121/mergers/CONSTRUCTIVE_NORMAL_FORM.md",
+          "claims_or_interfaces": [
+            "terminating exchange-deleted normalizer",
+            "blocked grammar",
+            "ordinary erasure-merger obligation"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/cc046e189366e7e876fc283b80459e64faa9c486/research/literature-closing-20261121/mergers/CONSTRUCTIVE_NORMAL_FORM.md"
+        }
+      ]
+    },
+    {
+      "pull_request": 184,
+      "full_sha": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "status": "source-reported formalized alternatives; source README inspected; no new Lean replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/184",
+      "files": [
+        {
+          "path": "research/lean-band-coupling-20261121/README.md",
+          "claims_or_interfaces": [
+            "source-bounded merger equivalence",
+            "lower marked merger equivalence"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/366dab89ee9548084ab9b5e4e90ff82abf287a20/research/lean-band-coupling-20261121/README.md"
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/ClockSteering.lean",
+          "claims_or_interfaces": [
+            "actual inverse-word steering"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/366dab89ee9548084ab9b5e4e90ff82abf287a20/research/lean-band-coupling-20261121/lean/ClockSteering.lean"
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/SourceBoundedMerge.lean",
+          "claims_or_interfaces": [
+            "partner below original source"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/366dab89ee9548084ab9b5e4e90ff82abf287a20/research/lean-band-coupling-20261121/lean/SourceBoundedMerge.lean"
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/LowerMarkedMerger.lean",
+          "claims_or_interfaces": [
+            "smaller marked representative in same component"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/366dab89ee9548084ab9b5e4e90ff82abf287a20/research/lean-band-coupling-20261121/lean/LowerMarkedMerger.lean"
+        }
+      ]
+    },
+    {
+      "pull_request": 166,
+      "full_sha": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "status": "written interface/obstruction analysis directly inspected; no new proof-system replay",
+      "source_url": "https://github.com/GettysburgResearch/collatz/pull/166",
+      "files": [
+        {
+          "path": "research/grh-certificate-closure-20261120/GRH_INTERFACES.md",
+          "claims_or_interfaces": [
+            "finite prefix versus fixed basin",
+            "prescribed-level ternary obstruction",
+            "conductor and source-size costs"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/5996b9f525ca50978bc34f423192c36a87765bf3/research/grh-certificate-closure-20261120/GRH_INTERFACES.md"
+        },
+        {
+          "path": "research/grh-certificate-closure-20261120/SOURCES.md",
+          "claims_or_interfaces": [
+            "conditional least-prime source versions"
+          ],
+          "url": "https://github.com/GettysburgResearch/collatz/blob/5996b9f525ca50978bc34f423192c36a87765bf3/research/grh-certificate-closure-20261120/SOURCES.md"
+        }
+      ]
+    }
+  ]
+}
