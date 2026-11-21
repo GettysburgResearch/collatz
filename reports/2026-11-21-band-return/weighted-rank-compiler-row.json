@@ -1,0 +1,61 @@
+{
+  "executed_utc": "2026-11-21T15:47:14.947688+00:00",
+  "scope": "Focused actual compiler replay for one frozen row; not universal coverage or a Lean proof",
+  "source_clock_difference": 11,
+  "source_odd_difference": 7,
+  "source_sha256": "16aab6efe1294a33c88f8b2fadae9d8060e68cc242eee18425aab7cfdcdd1745",
+  "source_url": "https://raw.githubusercontent.com/GettysburgResearch/collatz/e4599b32e4b1a955ac9315d46782d4ad6a5db96c/research/closure-frontier-20261121/negative_template_compiler.py",
+  "success": true,
+  "template": {
+    "K": 11,
+    "a": 11,
+    "b": 7,
+    "c": -1069,
+    "reference": "-1039/729",
+    "residue": 779,
+    "source_J": 2,
+    "source_new": [
+      2,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      4,
+      5
+    ],
+    "source_old": [
+      2,
+      2,
+      2,
+      1,
+      2,
+      4
+    ],
+    "target_J": 1,
+    "target_new": [
+      2,
+      2,
+      4,
+      2,
+      1,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2
+    ],
+    "target_old": [
+      2,
+      2,
+      3,
+      1
+    ]
+  }
+}

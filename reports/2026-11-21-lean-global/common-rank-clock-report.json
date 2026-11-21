@@ -1,0 +1,187 @@
+{
+  "affine_prefix_tables": 32,
+  "binary_source_height_guard": true,
+  "expanding_return_score_guard": true,
+  "general_padded_templates_covered": false,
+  "inputs_sha256": "86fd0b38b65c340e69d7a1e6a25643ef3da27e42432e3b4af14390cbc86ca842",
+  "no_terminal_padding_required": true,
+  "psi_source_height_guard": true,
+  "rows": [
+    {
+      "a": 7,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 7,
+          "minimum_new": 208493,
+          "minimum_old": 3335893,
+          "slope_new": 354294,
+          "slope_old": 5668704
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 7,
+          "minimum_new": 1482619,
+          "minimum_old": 5930477,
+          "slope_new": 2519424,
+          "slope_old": 10077696
+        }
+      },
+      "b": 5,
+      "reference": "-197/243"
+    },
+    {
+      "a": 9,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 9,
+          "minimum_new": 551123,
+          "minimum_old": 8817973,
+          "slope_new": 1062882,
+          "slope_old": 17006112
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 9,
+          "minimum_new": 3919099,
+          "minimum_old": 15676397,
+          "slope_new": 7558272,
+          "slope_old": 30233088
+        }
+      },
+      "b": 6,
+      "reference": "-29/27"
+    },
+    {
+      "a": 9,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 9,
+          "minimum_new": 698381,
+          "minimum_old": 11174101,
+          "slope_new": 1062882,
+          "slope_old": 17006112
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 9,
+          "minimum_new": 4966267,
+          "minimum_old": 19865069,
+          "slope_new": 7558272,
+          "slope_old": 30233088
+        }
+      },
+      "b": 6,
+      "reference": "-755/729"
+    },
+    {
+      "a": 11,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 542375,
+          "minimum_old": 8678005,
+          "slope_new": 3188646,
+          "slope_old": 51018336
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 3856891,
+          "minimum_old": 15427565,
+          "slope_new": 22674816,
+          "slope_old": 90699264
+        }
+      },
+      "b": 7,
+      "reference": "-1039/729"
+    },
+    {
+      "a": 11,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 2885381,
+          "minimum_old": 46166101,
+          "slope_new": 3188646,
+          "slope_old": 51018336
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 20518267,
+          "minimum_old": 82073069,
+          "slope_new": 22674816,
+          "slope_old": 90699264
+        }
+      },
+      "b": 7,
+      "reference": "-3125/2187"
+    },
+    {
+      "a": 11,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 2233655,
+          "minimum_old": 35738485,
+          "slope_new": 3188646,
+          "slope_old": 51018336
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 15883771,
+          "minimum_old": 63535085,
+          "slope_new": 22674816,
+          "slope_old": 90699264
+        }
+      },
+      "b": 7,
+      "reference": "-3101/2187"
+    },
+    {
+      "a": 11,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 2181167,
+          "minimum_old": 34898677,
+          "slope_new": 3188646,
+          "slope_old": 51018336
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 11,
+          "minimum_new": 15510523,
+          "minimum_old": 62042093,
+          "slope_new": 22674816,
+          "slope_old": 90699264
+        }
+      },
+      "b": 7,
+      "reference": "-3011/2187"
+    },
+    {
+      "a": 10,
+      "arms": {
+        "source": {
+          "exact_old_to_new_clock_change": 10,
+          "minimum_new": 2294891,
+          "minimum_old": 36718261,
+          "slope_new": 3188646,
+          "slope_old": 51018336
+        },
+        "target": {
+          "exact_old_to_new_clock_change": 10,
+          "minimum_new": 16319227,
+          "minimum_old": 65276909,
+          "slope_new": 22674816,
+          "slope_old": 90699264
+        }
+      },
+      "b": 7,
+      "reference": "-1603/2187"
+    }
+  ],
+  "scope": "exact affine tables and supplied-clock guards; no global coverage",
+  "source": {
+    "head": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+    "path": "research/closure-frontier-20261121/negative_template_compiler.py",
+    "pr": 168,
+    "sha256": "16aab6efe1294a33c88f8b2fadae9d8060e68cc242eee18425aab7cfdcdd1745"
+  },
+  "status": "PASS"
+}
