@@ -1,0 +1,582 @@
+{
+  "upstream_pr": 173,
+  "upstream_head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "module_port": "Headers and listed visibility declarations only; proof bodies unchanged.",
+  "modules": [
+    {
+      "module": "ShellCover",
+      "source_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "compiled_source_sha256": "807cde06c02011b3aff57eb6a92e59b867551cd47fa5dba9c0e7495863dfb50d",
+      "exit_code": 0,
+      "elapsed_seconds": 21.211,
+      "compiler_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "axiom_audits": []
+    },
+    {
+      "module": "ForwardSection",
+      "source_sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "compiled_source_sha256": "753bab6aff32f38ac13249a0be1e48851d5e34ea64b9675e4cd4b858507467d6",
+      "exit_code": 0,
+      "elapsed_seconds": 10.223,
+      "compiler_output_sha256": "0f5472e5eb3e8b872da6ff27b2c88e26a44b5248eb34abb9343032ac647044de",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.steer",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.marked_count_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.bounded_visit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_section",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SectionDynamics",
+      "source_sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+      "compiled_source_sha256": "5ba842571592a24afd156639949c7f8af8e381aaaf160abd1fb00e253b47e90c",
+      "exit_code": 0,
+      "elapsed_seconds": 2.115,
+      "compiler_output_sha256": "f54198d3ee385c116dc7fc9673bcaed25626efb7040cd3f33446672401152bf7",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_return_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RisingReturns",
+      "source_sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a",
+      "compiled_source_sha256": "333e794aef518911cf8ffec2a3ba215455ce2634df1e572179da4e21d19185dc",
+      "exit_code": 0,
+      "elapsed_seconds": 7.845,
+      "compiler_output_sha256": "ee4760cdfcd64e727f9382f5840711495700d2f217fb0cd2172153abc8e8ac2e",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.arbitrarily_large_first_return",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ClockSteering",
+      "source_sha256": "76dd0e33be28e5871f410e7c3388f0b0c731862839c654193b6cd7f57b1d2658",
+      "compiled_source_sha256": "76dd0e33be28e5871f410e7c3388f0b0c731862839c654193b6cd7f57b1d2658",
+      "exit_code": 0,
+      "elapsed_seconds": 3.315,
+      "compiler_output_sha256": "b3687f4b1b60695c860bb61accbac5a3e28ed9e33b6d800f39c876727db027ec",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.odd_orbit_bounded_hit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.steer_window",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.steer_with_precision",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.steer_non_descending",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.positive_phase_carry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.no_descent_forces_height_gain",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "OffsetDescent",
+      "source_sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+      "compiled_source_sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+      "exit_code": 0,
+      "elapsed_seconds": 3.765,
+      "compiler_output_sha256": "11191ab2b84698b7152101ea919f9ae2a5a2962352bf46a2233a1001faa6238e",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.OffsetDescent.binary_lift",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.offset_descent_transports",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.basin_of_cheaper_rebase",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.rebase_cheaper_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.reservedRebase_hits",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.basin_of_cheaper_reservedRebase",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.reservedRebase_cheaper_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "OffsetHorizon",
+      "source_sha256": "9e41c917e29c3995a01d7ee6c8d97110a7a60563296f17c38afa18fc2f6a4b63",
+      "compiled_source_sha256": "9e41c917e29c3995a01d7ee6c8d97110a7a60563296f17c38afa18fc2f6a4b63",
+      "exit_code": 0,
+      "elapsed_seconds": 3.085,
+      "compiler_output_sha256": "6676c53a100b8ecf0d3c4efaa5f69b91ade457e1d1ed8ac8d1017e086c1c594c",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.OffsetDescent.horizonSeed_marked",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.horizonSeed_no_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.not_all_marked_descend_within_log2",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ReturnClock",
+      "source_sha256": "1e304285158d3b4be48242825e2c72bbe7f254694f3c68db2ca42118b9de7a70",
+      "compiled_source_sha256": "1e304285158d3b4be48242825e2c72bbe7f254694f3c68db2ca42118b9de7a70",
+      "exit_code": 0,
+      "elapsed_seconds": 6.461,
+      "compiler_output_sha256": "c2895f17aeb607113c715ef1fa96e62408aadcbc4a474a5036de3a6e4b4c17f0",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.marked_return_clock_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.first_return_clock_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.eventually_long_return",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "RisingMerge",
+      "source_sha256": "18e1a55e6e7efe64b96cbb7673a7bd445e73901bc786888028ab69e4b9b4b337",
+      "compiled_source_sha256": "18e1a55e6e7efe64b96cbb7673a7bd445e73901bc786888028ab69e4b9b4b337",
+      "exit_code": 0,
+      "elapsed_seconds": 3.078,
+      "compiler_output_sha256": "33825f33661aaf6132c52b6e1a35c93ae2fd5d53a4d1f17ae352f66e23d4062a",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.rising_smaller_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.horizon_family_smaller_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.horizon_family_basin_of_smaller",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "SourceBoundedMerge",
+      "source_sha256": "ce7b6ce1320a45ef534ac4eaad55f98e2f22c37f3d5fe8f583568f8f2574d68d",
+      "compiled_source_sha256": "ce7b6ce1320a45ef534ac4eaad55f98e2f22c37f3d5fe8f583568f8f2574d68d",
+      "exit_code": 0,
+      "elapsed_seconds": 1.917,
+      "compiler_output_sha256": "86d3afed46950e196b7bae21f3a7acbbc2333a49a177a08c51808a9bea383329",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.basin_of_merger_at_hit",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.basin_of_source_bounded_merger_at_hit",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_source_bounded_section_merge",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "Examples",
+      "source_sha256": "940cea2774d666b4b3416e4a908abf29a1025d174e4aa291e2ae433bb8a5ff3b",
+      "compiled_source_sha256": "940cea2774d666b4b3416e4a908abf29a1025d174e4aa291e2ae433bb8a5ff3b",
+      "exit_code": 0,
+      "elapsed_seconds": 1.633,
+      "compiler_output_sha256": "f5b710e4f6d8ebfb2777a8a18b332eb53f7005d0381dab30ea72419e702fa3ab",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.BandExamples.reserve_283_merge",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.BandExamples.seed_319_no_native_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.BandExamples.seed_319_smaller_merger",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "Audit",
+      "source_sha256": "4637fe48024c310565692910a4cd4fe82674c170020e767d067356fbce7933bd",
+      "compiled_source_sha256": "4637fe48024c310565692910a4cd4fe82674c170020e767d067356fbce7933bd",
+      "exit_code": 0,
+      "elapsed_seconds": 1.26,
+      "compiler_output_sha256": "c0ec90d062a61da70772e2ef119529cd1a1d3508ff39133a2de25ba7a1be51ee",
+      "axiom_audits": [
+        {
+          "theorem": "CollatzShell.ForwardSection.bounded_visit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.marked_count_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_return_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.arbitrarily_large_first_return",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.steer_window",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.steer_non_descending",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.no_descent_forces_height_gain",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.binary_lift",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.offset_descent_transports",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.rebase_hits",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.reservedRebase_hits",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.reservedRebase_cheaper_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.basin_of_cheaper_reservedRebase",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.horizonSeed_marked",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.OffsetDescent.horizonSeed_no_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.rising_smaller_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.horizon_family_smaller_partner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.horizon_family_basin_of_smaller",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.marked_return_clock_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.eventually_long_return",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.ForwardSection.collatz_iff_source_bounded_section_merge",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.BandExamples.reserve_283_merge",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.BandExamples.seed_319_no_native_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "theorem": "CollatzShell.BandExamples.seed_319_smaller_merger",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    }
+  ],
+  "complete": true
+}

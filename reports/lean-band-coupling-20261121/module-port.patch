@@ -1,0 +1,84 @@
+--- frozen/ShellCover.lean
++++ generated/ShellCover.lean
+@@ -1,7 +1,12 @@
+-import Mathlib.Order.Interval.Finset.Nat
+-import Mathlib.Tactic.Ring
+-import Mathlib.Tactic.Linarith
+-import Mathlib.Data.Fintype.Pigeonhole
+-import Mathlib.Data.Fintype.BigOperators
+-import Mathlib.Algebra.Order.Archimedean.Basic
+-import Mathlib.Data.Rat.Floor
++module
++
++public import Mathlib.Order.Interval.Finset.Nat
++public import Mathlib.Tactic.Ring
++public import Mathlib.Tactic.Linarith
++public import Mathlib.Data.Fintype.Pigeonhole
++public import Mathlib.Data.Fintype.BigOperators
++public import Mathlib.Algebra.Order.Archimedean.Basic
++public import Mathlib.Data.Rat.Floor
++
++@[expose] public section
++
+@@ -616 +621 @@
+-private def GridAt (h p : Nat) : Prop :=
++def GridAt (h p : Nat) : Prop :=
+@@ -619 +624 @@
+-private instance (h p : Nat) : Decidable (GridAt h p) := by unfold GridAt; infer_instance
++instance (h p : Nat) : Decidable (GridAt h p) := by unfold GridAt; infer_instance
+--- frozen/ForwardSection.lean
++++ generated/ForwardSection.lean
+@@ -1,5 +1,10 @@
+-import ShellCover
+-import Mathlib.Analysis.SpecialFunctions.Log.Base
+-import Mathlib.NumberTheory.DiophantineApproximation.Basic
+-import Mathlib.Data.Nat.Factorization.Basic
+-import Mathlib.Data.Int.ModEq
++module
++
++public import ShellCover
++public import Mathlib.Analysis.SpecialFunctions.Log.Base
++public import Mathlib.NumberTheory.DiophantineApproximation.Basic
++public import Mathlib.Data.Nat.Factorization.Basic
++public import Mathlib.Data.Int.ModEq
++
++@[expose] public section
++
+@@ -112 +117 @@
+-private theorem phase_orbit {n m : Nat} (hn : 0<n) (hm : 0<m) (j : Nat)
++theorem phase_orbit {n m : Nat} (hn : 0<n) (hm : 0<m) (j : Nat)
+@@ -212 +217 @@
+-private theorem grid_point {a q : Nat} (qp : 0<q) (cop : a.Coprime q) (y : ℝ) :
++theorem grid_point {a q : Nat} (qp : 0<q) (cop : a.Coprime q) (y : ℝ) :
+@@ -367 +372 @@
+-private def clock (n : Nat) : Nat → Nat
++def clock (n : Nat) : Nat → Nat
+@@ -371 +376 @@
+-private theorem clock_exact {n : Nat} (hn : n%2=1) (j : Nat) : orbit (clock n j) n=oddOrbit n j := by
++theorem clock_exact {n : Nat} (hn : n%2=1) (j : Nat) : orbit (clock n j) n=oddOrbit n j := by
+@@ -376 +381 @@
+-private theorem clock_weight {n : Nat} (np : 0<n) (j : Nat) : 2^(clock n j)*oddOrbit n j≤4^j*n := by
++theorem clock_weight {n : Nat} (np : 0<n) (j : Nat) : 2^(clock n j)*oddOrbit n j≤4^j*n := by
+--- frozen/SectionDynamics.lean
++++ generated/SectionDynamics.lean
+@@ -1 +1,6 @@
+-import ForwardSection
++module
++
++public import ForwardSection
++
++@[expose] public section
++
+@@ -11 +16 @@
+-private theorem visit_exists (n : Nat) (hn : 0<n) : ∃ t, Marked (orbit t n) := by
++theorem visit_exists (n : Nat) (hn : 0<n) : ∃ t, Marked (orbit t n) := by
+--- frozen/RisingReturns.lean
++++ generated/RisingReturns.lean
+@@ -1 +1,6 @@
+-import SectionDynamics
++module
++
++public import SectionDynamics
++
++@[expose] public section
++
