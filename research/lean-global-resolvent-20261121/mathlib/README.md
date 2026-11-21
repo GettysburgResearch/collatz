@@ -8,9 +8,10 @@ matching cache available:
 
 ```sh
 lake env lean -DwarningAsError=true /absolute/path/to/MixedCertificate.lean
+lake env lean -DwarningAsError=true /absolute/path/to/PrimitiveSurvival.lean
 ```
 
-The module includes its principal `#print axioms` commands. All affine
+Both modules include their principal `#print axioms` commands. All affine
 certificate checks use kernel-checked `decide`. The file is intentionally
 independent of the sibling core project, whose upstream compatibility shim
 defines a name that Mathlib already supplies.

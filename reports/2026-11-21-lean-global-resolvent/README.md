@@ -24,3 +24,25 @@ and the arithmetic repair conditions remain open.
 
 Lean: `4.34.1`, commit `5045d0056413266e57c625dcd7c365b10e377c52`.
 Mathlib: `d13f23b723b8a846827a245b89c10fc7d3f11612`.
+
+## Checkpoint 3
+
+[checkpoint3-lean.json](checkpoint3-lean.json) records the exact final sources
+and four actual Lean execution logs. The core project, its axiom audit, the
+complete-certificate Mathlib module and the primitive-source Mathlib module
+all passed. Every audit command treated warnings as errors. Principal theorem
+dependencies are only the standard Lean axioms, with no `sorryAx`.
+
+The new unbounded reset proves its full variable-length paths and strict
+bound on every source state under explicit arithmetic guards. The analytic
+module proves its source partition, exact survivor decomposition, complete
+geometric tail bound and equivalence with full ordinary convergence. It does
+not prove decay of the primitive-source sum. The valuation selector and the
+restricted-fold invariant remain written proofs with their scope stated in
+the research packet.
+
+The short `check_flux_obstruction.py` replay was executed once on the published
+script before this checkpoint. It confirmed the specified fixed-loss
+counterexample using exact integers and fractions. Its analytic all-source
+tail is justified in the note; this finite replay is not a Lean proof of a
+global survival estimate.

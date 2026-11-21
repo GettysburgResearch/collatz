@@ -72,6 +72,50 @@ and exact multiplier transport. [TERMINAL_FIVE_NORMALIZATION.md](TERMINAL_FIVE_N
 gives the component-preserving asynchronous normalization and the stronger
 rank-minimal version, with the precise two repair conditions still open.
 
+## Checkpoint 3: an unbounded reset and a complete arithmetic moment
+
+[VALUATION_RESET_GRAMMAR.md](VALUATION_RESET_GRAMMAR.md) gives a source
+replacement with an arbitrarily long middle loop. Under explicit ordinary
+integer equations, the new core module
+[UnboundedReset.lean](lean/Collatz/UnboundedReset.lean) proves
+
+\[
+T^{\ell+17}(m)=P/4,\qquad T^{\ell+16}(2m-1)=P-1,
+\qquad T^j(m)<P/2\quad(0\le j\le\ell+17).
+\]
+
+Thus the single old source step `P/2 -> P/4` can be replaced by the entire
+longer prefix, and a failed parent comparison would produce a smaller failed
+comparison. All paths, every intermediate-state bound and the arbitrary-tail
+certificate splice are checked in Lean. The power-of-two specialization has
+a valuation-selected loop length; its normalized-unit guard is not universal.
+
+The Mathlib module also now proves that its two affine replacements construct
+actual complete supplied hitting certificates with strictly smaller measures.
+This makes the common-suffix argument explicit inside the kernel.
+
+[PRIMITIVE_SURVIVAL.md](PRIMITIVE_SURVIVAL.md) and
+[PrimitiveSurvival.lean](mathlib/PrimitiveSurvival.lean) build the complete
+ordinary source partition directly from positive valuation words. With the
+precisely defined primitive-source moment `B_q`, Lean proves
+
+\[
+A_q=B_q+R_q,\qquad
+0\le R_q\le\frac{\zeta(4)}{16}\,15^{-q},\qquad
+\mathrm{FullCollatz}\iff B_q\longrightarrow0.
+\]
+
+Here `A_q` weighs the original positive odd sources that have not reached one,
+using their fixed weight `n^(-4)`. Every valuation and every higher lift is
+included. This criterion detects nontrivial cycles as well as divergent
+orbits. **The decay of `B_q` is not proved.** The attempted absorption estimate
+and the precise failed inference are in [FLUX_ATTEMPT.md](FLUX_ATTEMPT.md).
+
+[question_primitive_source_moment.txt](question_primitive_source_moment.txt)
+is a self-contained arithmetic handoff without orbit terminology. The
+restricted same-family folding obstruction is recorded separately in
+[MERSENNE_FOLD_INVARIANT.md](MERSENNE_FOLD_INVARIANT.md), as a written argument.
+
 ## Continuing attacks
 
 The remaining work is to supply complete rules for the shared order, including

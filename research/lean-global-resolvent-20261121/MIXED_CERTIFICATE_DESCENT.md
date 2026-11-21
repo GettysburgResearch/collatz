@@ -91,6 +91,14 @@ checker proves parity and the exact numerator equation at each ordinary
 step. There is no unproved bridge from Python output to a universal theorem,
 and no use of `native_decide` or an additional computation-trust axiom.
 
+The subsequent `complete_certificate_replacement` theorem makes the
+supplied-certificate operation explicit. A certificate is an actual finite
+clock with a proof that its iterate is one. The old prefix is proved not to
+hit one early, so its full length can be stripped from any such certificate.
+The replacement then reaches the same endpoint and reuses the exact suffix.
+The theorem constructs the new hitting certificate and proves the strict
+multiset comparison. Both A and B instantiate this theorem.
+
 ## What the full-proof attempt still needs
 
 The order removes a conflict between two already useful types of recursive

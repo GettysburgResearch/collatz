@@ -12,3 +12,8 @@ import Collatz
 #print axioms CollatzGlobal.ternary_even_exponent_fold
 #print axioms CollatzGlobal.mersenne_even_exponent_fold
 #print axioms CollatzTerminalFive.failure_has_async_terminal_descendant
+#print axioms CollatzUnboundedReset.source_path
+#print axioms CollatzUnboundedReset.target_path
+#print axioms CollatzUnboundedReset.source_prefix_below
+#print axioms CollatzUnboundedReset.supplied_certificate_splice
+#print axioms CollatzUnboundedReset.failed_comparison_reset

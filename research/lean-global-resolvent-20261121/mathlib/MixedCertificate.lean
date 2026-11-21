@@ -392,6 +392,107 @@ theorem b_paired_closure (t : ℕ)
   have hl := (basin_orbit 15 (64 * childIndexB t + 1)).mpr (child hc)
   rwa [bChildLower_path t] at hl
 
+/-! The finite tables also act on actual complete supplied hitting certificates. -/
+
+def prefixBag : ℕ → ℕ → Bag
+  | 0, _ => 0
+  | k + 1, n => {n} + prefixBag k (shortcut n)
+
+def HitCertificate (n : ℕ) := {k : ℕ // orbit k n = 1}
+
+def certificateMeasure {n : ℕ} (c : HitCertificate n) : Bag := prefixBag c.val n
+
+theorem prefixBag_add (a b n : ℕ) :
+    prefixBag (a + b) n = prefixBag a n + prefixBag b (orbit a n) := by
+  induction a generalizing n with
+  | zero => simp [prefixBag, orbit]
+  | succ a ih => simp [Nat.succ_add, prefixBag, orbit, ih, add_assoc]
+
+theorem orbit_mem_prefixBag {j k n : ℕ} (h : j < k) : orbit j n ∈ prefixBag k n := by
+  induction k generalizing j n with
+  | zero => omega
+  | succ k ih =>
+    cases j with
+    | zero => simp [orbit, prefixBag]
+    | succ j =>
+      have hm := ih (n := shortcut n) (j := j) (by omega)
+      simp only [orbit, prefixBag, Multiset.mem_add]
+      exact Or.inr hm
+
+theorem traceCheck_prefixBag (ps : List Affine) (z : Affine)
+    (h : TraceCheck ps z) (t : ℕ) :
+    prefixBag ps.length ((start ps z).eval t) = evalBag ps t := by
+  induction ps with
+  | nil => rfl
+  | cons p ps ih =>
+    cases ps with
+    | nil => simp [prefixBag, start, evalBag]
+    | cons q qs =>
+      have hs := stepCheck_sound h.1 t
+      have ht := ih h.2
+      simpa [prefixBag, start, evalBag, hs] using congrArg (fun b : Bag => {p.eval t} + b) ht
+
+def AboveOneCheck (ps : List Affine) : Prop := ∀ p ∈ ps, 1 < p.b
+
+instance (ps : List Affine) : Decidable (AboveOneCheck ps) :=
+  inferInstanceAs (Decidable (∀ p ∈ ps, 1 < p.b))
+
+theorem no_one_before_endpoint (ps : List Affine) (z : Affine)
+    (h : TraceCheck ps z) (hpos : AboveOneCheck ps) (t j : ℕ) (hj : j < ps.length) :
+    orbit j ((start ps z).eval t) ≠ 1 := by
+  have hm := orbit_mem_prefixBag (n := (start ps z).eval t) hj
+  rw [traceCheck_prefixBag ps z h t] at hm
+  simp only [evalBag, Multiset.mem_coe, List.mem_map] at hm
+  obtain ⟨p, hp, he⟩ := hm
+  have hb := hpos p hp
+  rw [← he]
+  dsimp [Affine.eval]
+  omega
+
+/-- Actual complete certificates can be spliced, with the precise strict measure decrease. -/
+theorem complete_certificate_replacement (old fresh : List Affine) (endpoint removed : Affine)
+    (ho : TraceCheck old endpoint) (hn : TraceCheck fresh endpoint)
+    (hp : AboveOneCheck old) (hm : removed ∈ old) (hb : BoundCheck fresh removed)
+    (t : ℕ) (c : HitCertificate ((start old endpoint).eval t)) :
+    ∃ c' : HitCertificate ((start fresh endpoint).eval t),
+      Below (certificateMeasure c') (certificateMeasure c) := by
+  have hlen : old.length ≤ c.val := by
+    by_contra! h
+    exact no_one_before_endpoint old endpoint ho hp t c.val h c.property
+  have hd : c.val = old.length + (c.val - old.length) := by omega
+  have hc : orbit (c.val - old.length) (endpoint.eval t) = 1 := by
+    have hc := c.property
+    rw [hd, orbit_add, traceCheck_sound old endpoint ho t] at hc
+    exact hc
+  let c' : HitCertificate ((start fresh endpoint).eval t) :=
+    ⟨fresh.length + (c.val - old.length), by
+      rw [orbit_add, traceCheck_sound fresh endpoint hn t]
+      exact hc⟩
+  refine ⟨c', ?_⟩
+  change Below (prefixBag (fresh.length + (c.val - old.length)) ((start fresh endpoint).eval t))
+    (prefixBag c.val ((start old endpoint).eval t))
+  rw [hd, prefixBag_add, prefixBag_add,
+    traceCheck_sound fresh endpoint hn t, traceCheck_sound old endpoint ho t,
+    traceCheck_prefixBag fresh endpoint hn t, traceCheck_prefixBag old endpoint ho t]
+  simp only [Nat.add_sub_cancel_left]
+  exact affine_replacement_decreases old fresh removed hm hb t _
+
+theorem a_complete_certificate_replacement (t : ℕ)
+    (c : HitCertificate ((start aParentUpper aUpperEnd).eval t)) :
+    ∃ c' : HitCertificate ((start aChildUpper aUpperEnd).eval t),
+      Below (certificateMeasure c') (certificateMeasure c) := by
+  exact complete_certificate_replacement aParentUpper aChildUpper aUpperEnd
+    (aParentUpper.headD aUpperEnd) (by decide) (by decide) (by decide)
+    (by decide) (by decide) t c
+
+theorem b_complete_certificate_replacement (t : ℕ)
+    (c : HitCertificate ((start bParentUpper bUpperEnd).eval t)) :
+    ∃ c' : HitCertificate ((start bChildUpper bUpperEnd).eval t),
+      Below (certificateMeasure c') (certificateMeasure c) := by
+  exact complete_certificate_replacement bParentUpper bChildUpper bUpperEnd
+    (bParentUpper.headD bUpperEnd) (by decide) (by decide) (by decide)
+    (by decide) (by decide) t c
+
 end CollatzCertificateOrder
 
 #print axioms CollatzCertificateOrder.close_of_complete_rules
@@ -400,3 +501,7 @@ end CollatzCertificateOrder
 #print axioms CollatzCertificateOrder.b_source_certificate_decreases
 #print axioms CollatzCertificateOrder.a_paired_closure
 #print axioms CollatzCertificateOrder.b_paired_closure
+
+#print axioms CollatzCertificateOrder.complete_certificate_replacement
+#print axioms CollatzCertificateOrder.a_complete_certificate_replacement
+#print axioms CollatzCertificateOrder.b_complete_certificate_replacement
