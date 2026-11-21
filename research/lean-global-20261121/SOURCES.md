@@ -41,3 +41,35 @@ all-parameter Lean proof and the actual paired-failure transport interface.
 
 No claimed GRH announcement is needed as a premise. No external analytic
 theorem or unresolved Collatz closure is added to Lean as an axiom.
+
+
+## Focused publication refresh
+
+PR173 advanced to `9ca79e54bd2ae9d9cf4c80851f867364fc3a2d3e`.
+Its updated README, comparison metadata, and new theorem statement contexts
+in `PeriodicWindow.lean`, `DyadicMixing.lean`, `OctaveCriterion.lean`, and
+`OctaveDeadline.lean` were inspected. The new sparse ordinary-meeting
+criterion and its deadline obstruction are summarized in
+[GLOBAL_FORCING.md](GLOBAL_FORCING.md); no Mathlib recompile is claimed.
+
+PR175 at `ad513f1ea609ed47dbcf997df0f09c16557264ee` was read at its
+packet README for the relative parity budget. PR176 at
+`bff01093f3eb073216f9ec610130d16067fcc1fd` was read at the relevant
+`research/lean-global-resolvent-20261121/lean/Collatz/TerminalFive.lean`
+statements. Its terminal assumed-failure construction is credited in
+[CLOSURE_ROUTE.md](CLOSURE_ROUTE.md), and distinguished from the total
+finite algorithm on an arbitrary supplied certificate here. PR177 at
+`fe58c189b619d2983940b19a50f1b12798f5651f` was inspected at metadata/body
+scope for the exact exponent-witness and adjacent-source induction work.
+None of these refreshed results is silently added as a Lean axiom.
+
+## New rank instantiation dependency
+
+The eight concrete negative-reference transformations are reused from
+PR168 `e4599b32e4b1a955ac9315d46782d4ad6a5db96c`,
+`research/closure-frontier-20261121/NEGATIVE_TEMPLATE_GRAMMAR.md`,
+NT2--NT3. The precise older PR164 credit is retained there and in
+[COMMON_RANK.md](COMMON_RANK.md). Their ordinary legality remains a
+paper-level dependency. The new exact rank guards, formal fixed-clock
+conjugation, and independent no-padding check do not constitute a claim
+that every old template proof has been translated into Lean.
