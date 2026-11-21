@@ -189,6 +189,29 @@ offset attempt and the possible critical marked weight are recorded with
 their precise unsupported steps. No global multi-return contraction or
 survivor upper estimate was obtained.
 
+## Checkpoint 6: faster band entrance and complete arithmetic languages
+
+The [whole-repository synthesis](overview/README.md) adds a uniform finite
+entrance theorem: at each admissible scale `Q`, every positive `n<=2^Q`
+reaches the original marked band in fewer than `9Q` shortcut steps, below
+`2^(10Q)`. An exact integer certificate supplies `Q=306`. Combining the
+finite theorem with a published logarithmic irrationality estimate gives
+the written polylogarithmic clock `O((1+log n)^4.117)`; the external estimate
+is not assumed by the finite Lean proof.
+
+The same checkpoint proves that every smaller merger into an initial
+all-odd ascent must pay an explicitly unbounded odd-step surplus. It also
+provides one terminating signed carry compiler for every supplied complete
+certificate prefix, exact ordinary transport within its binary horizon,
+and an if-and-only-if descent budget at the original input. A certified
+minus-one-carry handoff connects an entire accepted prefix language to the
+existing certificate order.
+
+[The global assessment](overview/GLOBAL_SYNTHESIS.md) records the selected
+source heads, the older results already present in PR145/146, and the first
+unsupported steps of the attempted global completion. No universal partner
+selector, complete rule coverage, or survivor upper bound is claimed.
+
 ## Continuing attacks
 
 The remaining work is to supply complete rules for the shared order, including

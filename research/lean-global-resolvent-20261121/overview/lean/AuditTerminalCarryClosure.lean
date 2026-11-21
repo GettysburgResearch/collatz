@@ -1,0 +1,22 @@
+import Collatz.TerminalCarryClosure
+
+#print axioms CollatzTerminalCarryClosure.counter_total
+#print axioms CollatzTerminalCarryClosure.counter_length
+#print axioms CollatzTerminalCarryClosure.counter_carry
+#print axioms CollatzTerminalCarryClosure.counter_program
+#print axioms CollatzTerminalCarryClosure.carry_prepend_one
+#print axioms CollatzTerminalCarryClosure.program_prepend_one
+#print axioms CollatzTerminalCarryClosure.padded_total
+#print axioms CollatzTerminalCarryClosure.padded_program
+#print axioms CollatzTerminalCarryClosure.padded_clock_shortfall
+#print axioms CollatzTerminalCarryClosure.padded_gaps_at_most_four
+#print axioms CollatzTerminalCarryClosure.padded_handoff_grade_increases
+#print axioms CollatzTerminalCarryClosure.concrete_terminal_identity
+#print axioms CollatzTerminalCarryClosure.concrete_source_positive
+#print axioms CollatzTerminalCarryClosure.concrete_positive_gaps
+#print axioms CollatzTerminalCarryClosure.follows_basin
+#print axioms CollatzTerminalCarryClosure.concrete_full_word
+#print axioms CollatzTerminalCarryClosure.concrete_source_basin
+#print axioms CollatzTerminalCarryClosure.deficit_normal_form
+#print axioms CollatzTerminalCarryClosure.deficit_certificate_handoff
+#print axioms CollatzTerminalCarryClosure.concrete_counterexample

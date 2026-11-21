@@ -213,6 +213,20 @@ finite residue-mixing identity do not presently supply that inference.
 at this closing estimate, the necessary observation-time bound, and a
 source-qualified alternative analytic target without importing it into Lean.
 
+## Checkpoint 6: a faster forward entrance
+
+[FastForward.lean](lean/FastForward.lean) extends this packet with the
+uniform theorem `n<=2^Q -> exists t<9Q, Marked (orbit t n)` at every
+admissible `Q`, and the height ceiling `orbit t n<2^(10Q)`. It also retains
+exact ordinary merger clocks when a sufficiently small supplied partner is
+moved into the marked band. The exact denominator `306` gives a concrete
+entrance bound of 2,754 steps through the range `n<=2^306`.
+
+The new finite proof, its analytic polylogarithmic corollary, and its
+separate replay are documented in the [checkpoint-6 guide](../overview/README.md).
+The earlier `section/check.py` remains the checkpoint-5 replay; use
+`overview/check.py` for the new chain. The survivor upper count remains open.
+
 ## Replay and evidence
 
 Use Lean **4.34.1**, compiler commit

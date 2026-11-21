@@ -100,3 +100,58 @@ checkpoint before publication and again on the exact published head.
 The PR records the resulting remote commit and its receipt. Older,
 unmodified research developments were not rebuilt as part of this section
 replay.
+
+## Checkpoint 6
+
+[checkpoint6-lean.json](checkpoint6-lean.json) records the successful
+proof chain for all five new modules and their exact required imports.
+The output directory was initially empty. Existing successful proof outputs
+were retained while resolving a missing optional-cache artifact and separating
+the core and Mathlib axiom audits; those unsuccessful setup attempts are
+preserved in the receipt. No mathematical theorem body changed during this
+final proof build. The final file hashes agree with the compiled sources.
+
+All **100 public theorem declarations** in the new modules were audited:
+57 in the core Lean environment and 43 in the Mathlib environment.
+The union of dependencies is exactly `propext`, `Classical.choice`, and
+`Quot.sound`. Warnings were treated as errors, and there is no `sorryAx`.
+The separate environments preserve the existing core project's natural-number
+notation instead of modifying its upstream source. The portable replay is
+[overview/check.py](../../research/lean-global-resolvent-20261121/overview/check.py).
+
+The modules are the finite fast-band entrance theorem and its exact merger
+transport, the integer denominator-306 certificate, the unrestricted inverse
+odd-budget theorem, the whole-prefix terminal carry compiler, and its
+counterexample/general deficit-handoff continuation. The latter's concrete
+ordinary source certificate is kernel checked, not merely a compatible
+residue word. The new [scientific guide](../../research/lean-global-resolvent-20261121/overview/README.md)
+states the exact positive conclusions and open coverage conditions.
+
+The exponent `4.117` entrance and return clocks are written analytic
+corollaries using the explicitly cited published irrationality estimate.
+That external estimate is not a Lean axiom. The marked-band CRT selection
+and the padded coefficient observation are also explicitly labeled written
+consequences rather than additional formal theorems.
+
+[checkpoint6-terminal-carry-replay.json](checkpoint6-terminal-carry-replay.json)
+records the separate exact-integer replay: 6,220 carry programs, 18,660
+complete source/target replays, and 20 Mersenne horizons. The root reran the
+published Python file and obtained exactly the independent agent's JSON.
+These checks test the implementation and examples; the unrestricted claims
+rest on the Lean proofs. The earlier independent inverse-budget receipt and
+mathematical review of the fast forward argument are preserved alongside
+the combined final receipt.
+
+[checkpoint6-pr-snapshot.md](checkpoint6-pr-snapshot.md) inventories all
+143 available PR descriptions at the initial survey. It is a metadata
+inventory, not 143 mathematical verification verdicts. The final refresh
+in [checkpoint6-late-refresh.json](checkpoint6-late-refresh.json) caught
+PR180's subsequent natural-density checkpoint; the scientific synthesis
+credits that exact new head without incorporating its written analytic
+theorems as formal assumptions.
+
+The repository structural gate is run on the clean complete checkout
+before publication and on the exact remotely published commit. Its exact
+head and receipt are recorded in PR176. The five new proof modules are the
+scientific verification scope; older unrelated research packets were not
+recompiled.

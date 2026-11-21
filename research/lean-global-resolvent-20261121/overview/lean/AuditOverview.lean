@@ -1,0 +1,47 @@
+import InverseOddBudget
+import Integer306
+import FastForward
+
+#print axioms CollatzInverseOddBudget.coeff_nil
+#print axioms CollatzInverseOddBudget.coeff_cons
+#print axioms CollatzInverseOddBudget.coeff_pos
+#print axioms CollatzInverseOddBudget.run_diff
+#print axioms CollatzInverseOddBudget.peak_ge_one
+#print axioms CollatzInverseOddBudget.peak_succ
+#print axioms CollatzInverseOddBudget.step_mono
+#print axioms CollatzInverseOddBudget.step_peak
+#print axioms CollatzInverseOddBudget.run_peak_lower
+#print axioms CollatzInverseOddBudget.run_peak_short
+#print axioms CollatzInverseOddBudget.run_neg_one
+#print axioms CollatzInverseOddBudget.run_peak_upper
+#print axioms CollatzInverseOddBudget.integralRun_last
+#print axioms CollatzInverseOddBudget.integral_difference
+#print axioms CollatzInverseOddBudget.virtual_integral
+#print axioms CollatzInverseOddBudget.virtual_positive
+#print axioms CollatzInverseOddBudget.no_smaller_inverse_word
+#print axioms CollatzInverseOddBudget.step_cancel
+#print axioms CollatzInverseOddBudget.run_trace
+#print axioms CollatzInverseOddBudget.integral_trace
+#print axioms CollatzInverseOddBudget.rising_endpoint
+#print axioms CollatzInverseOddBudget.smaller_merger_odd_surplus
+#print axioms CollatzInverseOddBudget.lift_three
+#print axioms CollatzInverseOddBudget.mersenne_center_one
+#print axioms CollatzInverseOddBudget.mersenne_positive
+#print axioms CollatzInverseOddBudget.mersenne_ternary
+#print axioms CollatzInverseOddBudget.mersenne_add_one
+#print axioms CollatzInverseOddBudget.mersenne_merger_odd_budget
+#print axioms CollatzInverseOddBudget.sharp_small_example
+#print axioms CollatzBandCertificate.small_lower_306
+#print axioms CollatzBandCertificate.small_upper_306
+#print axioms CollatzBandCertificate.small_ratio_306
+#print axioms CollatzBandCertificate.integer_bracket_306
+#print axioms CollatzShell.ForwardSection.Fast.grid_drop_or_mark
+#print axioms CollatzShell.ForwardSection.Fast.bounded_visit_of_grid
+#print axioms CollatzShell.ForwardSection.Fast.bounded_visit_of_separation
+#print axioms CollatzShell.ForwardSection.Fast.uniform_visit_at_good_scale
+#print axioms CollatzShell.ForwardSection.Fast.orbit_growth
+#print axioms CollatzShell.ForwardSection.Fast.uniform_visit_with_height
+#print axioms CollatzShell.ForwardSection.Fast.lower_marked_partner
+#print axioms CollatzShell.ForwardSection.Fast.approximation_of_power_bracket
+#print axioms CollatzShell.ForwardSection.Fast.good_scale_306
+#print axioms CollatzShell.ForwardSection.Fast.band_visit_up_to_two_pow_306

@@ -1,0 +1,23 @@
+{
+  "scope": "Final metadata refresh of the three directly used active interfaces; frozen earlier snapshot retained",
+  "sources": [
+    {
+      "pr": 177,
+      "head": "00a611094043afeb256d6532b477c0709e8ed270",
+      "updated_at": "2026-11-21T15:55:07Z",
+      "title": "Lean: unbounded witness rewrites and shared induction (global cover open)"
+    },
+    {
+      "pr": 180,
+      "head": "cf91e46fa9fbadba3df7942202a5197c134d0ce0",
+      "updated_at": "2026-11-21T22:11:38Z",
+      "title": "Collatz: joint clocks, natural predecessor density, and Lean descent"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "updated_at": "2026-11-21T15:45:03Z",
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers"
+    }
+  ]
+}

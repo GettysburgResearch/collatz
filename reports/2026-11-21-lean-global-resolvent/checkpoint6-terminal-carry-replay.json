@@ -1,0 +1,290 @@
+{
+  "programs": 6220,
+  "complete_source_target_replays": 18660,
+  "zero_carry_programs": 895,
+  "negative_carry_programs": 4869,
+  "positive_carry_programs": 456,
+  "mersenne_horizons": 20,
+  "examples": [
+    {
+      "word": [],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 1,
+      "numerator": 1,
+      "clock": 1,
+      "carry": 1,
+      "branches": "O",
+      "source": 1,
+      "target": 3,
+      "terminal_gap": 2,
+      "ordinary_endpoint": 5,
+      "compiler_clock": 1,
+      "binary_horizon": 3,
+      "strict_descent": false
+    },
+    {
+      "word": [],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 1,
+      "numerator": 1,
+      "clock": 1,
+      "carry": 1,
+      "branches": "O",
+      "source": 5,
+      "target": 11,
+      "terminal_gap": 4,
+      "ordinary_endpoint": 17,
+      "compiler_clock": 1,
+      "binary_horizon": 5,
+      "strict_descent": false
+    },
+    {
+      "word": [],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 1,
+      "numerator": 1,
+      "clock": 1,
+      "carry": 1,
+      "branches": "O",
+      "source": 21,
+      "target": 43,
+      "terminal_gap": 6,
+      "ordinary_endpoint": 65,
+      "compiler_clock": 1,
+      "binary_horizon": 7,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        1
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -1,
+      "clock": 2,
+      "carry": 1,
+      "branches": "OO",
+      "source": 3,
+      "target": 7,
+      "terminal_gap": 4,
+      "ordinary_endpoint": 17,
+      "compiler_clock": 2,
+      "binary_horizon": 6,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        1
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -1,
+      "clock": 2,
+      "carry": 1,
+      "branches": "OO",
+      "source": 227,
+      "target": 455,
+      "terminal_gap": 10,
+      "ordinary_endpoint": 1025,
+      "compiler_clock": 2,
+      "binary_horizon": 12,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        1
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -1,
+      "clock": 2,
+      "carry": 1,
+      "branches": "OO",
+      "source": 14563,
+      "target": 29127,
+      "terminal_gap": 16,
+      "ordinary_endpoint": 65537,
+      "compiler_clock": 2,
+      "binary_horizon": 18,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        2
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -5,
+      "clock": 2,
+      "carry": 0,
+      "branches": "OO",
+      "source": 1,
+      "target": 3,
+      "terminal_gap": 2,
+      "ordinary_endpoint": 8,
+      "compiler_clock": 2,
+      "binary_horizon": 5,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        2
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -5,
+      "clock": 2,
+      "carry": 0,
+      "branches": "OO",
+      "source": 113,
+      "target": 227,
+      "terminal_gap": 8,
+      "ordinary_endpoint": 512,
+      "compiler_clock": 2,
+      "binary_horizon": 11,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        2
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -5,
+      "clock": 2,
+      "carry": 0,
+      "branches": "OO",
+      "source": 7281,
+      "target": 14563,
+      "terminal_gap": 14,
+      "ordinary_endpoint": 32768,
+      "compiler_clock": 2,
+      "binary_horizon": 17,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        3
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -13,
+      "clock": 3,
+      "carry": -1,
+      "branches": "OOE",
+      "source": 13,
+      "target": 27,
+      "terminal_gap": 4,
+      "ordinary_endpoint": 31,
+      "compiler_clock": 3,
+      "binary_horizon": 8,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        3
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -13,
+      "clock": 3,
+      "carry": -1,
+      "branches": "OOE",
+      "source": 909,
+      "target": 1819,
+      "terminal_gap": 10,
+      "ordinary_endpoint": 2047,
+      "compiler_clock": 3,
+      "binary_horizon": 14,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        3
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -13,
+      "clock": 3,
+      "carry": -1,
+      "branches": "OOE",
+      "source": 58253,
+      "target": 116507,
+      "terminal_gap": 16,
+      "ordinary_endpoint": 131071,
+      "compiler_clock": 3,
+      "binary_horizon": 20,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        4
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -29,
+      "clock": 3,
+      "carry": -3,
+      "branches": "OOE",
+      "source": 5,
+      "target": 11,
+      "terminal_gap": 2,
+      "ordinary_endpoint": 13,
+      "compiler_clock": 3,
+      "binary_horizon": 7,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        4
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -29,
+      "clock": 3,
+      "carry": -3,
+      "branches": "OOE",
+      "source": 453,
+      "target": 907,
+      "terminal_gap": 8,
+      "ordinary_endpoint": 1021,
+      "compiler_clock": 3,
+      "binary_horizon": 13,
+      "strict_descent": false
+    },
+    {
+      "word": [
+        4
+      ],
+      "dyadic_exponent": 1,
+      "shift": 1,
+      "denominator_exponent": 2,
+      "numerator": -29,
+      "clock": 3,
+      "carry": -3,
+      "branches": "OOE",
+      "source": 29125,
+      "target": 58251,
+      "terminal_gap": 14,
+      "ordinary_endpoint": 65533,
+      "compiler_clock": 3,
+      "binary_horizon": 19,
+      "strict_descent": false
+    }
+  ],
+  "scope": "Finite exact replay; unbounded assertions belong to the Lean module."
+}

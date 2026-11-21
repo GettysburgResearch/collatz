@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "InverseOddBudget.olean",
+    "InverseOddBudget.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 78.84,
+  "source_sha256": "334b997b6fcea200d95cac3e26280d67e3e0b48a84d1d9ddb0d04267ec3244a3",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_version": "4.34.1",
+  "global_collatz_proved": false,
+  "log": "inverse_budget_lean.log"
+}

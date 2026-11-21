@@ -1,0 +1,51 @@
+'CollatzInverseOddBudget.coeff_nil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.coeff_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.coeff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.run_diff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.peak_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.peak_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.step_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.step_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.run_peak_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.run_peak_short' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.run_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.run_peak_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.integralRun_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.integral_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.virtual_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.virtual_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.no_smaller_inverse_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.step_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.run_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.integral_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.rising_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.smaller_merger_odd_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.lift_three' depends on axioms: [propext]
+'CollatzInverseOddBudget.mersenne_center_one' depends on axioms: [propext, Quot.sound]
+'CollatzInverseOddBudget.mersenne_positive' depends on axioms: [propext, Quot.sound]
+'CollatzInverseOddBudget.mersenne_ternary' depends on axioms: [propext, Quot.sound]
+'CollatzInverseOddBudget.mersenne_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.mersenne_merger_odd_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzInverseOddBudget.sharp_small_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBandCertificate.small_lower_306' does not depend on any axioms
+'CollatzBandCertificate.small_upper_306' does not depend on any axioms
+'CollatzBandCertificate.small_ratio_306' does not depend on any axioms
+'CollatzBandCertificate.integer_bracket_306' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Fast.grid_drop_or_mark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Fast.bounded_visit_of_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Fast.bounded_visit_of_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.Fast.uniform_visit_at_good_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.Fast.orbit_growth' depends on axioms: [propext, Quot.sound]
+'CollatzShell.ForwardSection.Fast.uniform_visit_with_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Fast.lower_marked_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Fast.approximation_of_power_bracket' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.ForwardSection.Fast.good_scale_306' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.ForwardSection.Fast.band_visit_up_to_two_pow_306' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

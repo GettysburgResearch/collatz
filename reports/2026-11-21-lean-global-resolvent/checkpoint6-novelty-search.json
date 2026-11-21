@@ -1,0 +1,377 @@
+{
+  "query": "polylog|poly.logarith|quasi.polynomial|band.{0,50}(entrance|clock|horizon)|entrance.{0,50}band|first.{0,15}return.{0,40}log",
+  "available_pr_heads": [
+    177,
+    178,
+    184,
+    180,
+    175,
+    183,
+    182,
+    176,
+    173,
+    146,
+    169,
+    168,
+    167,
+    166,
+    165,
+    163,
+    162,
+    160,
+    157,
+    155,
+    153,
+    145,
+    140,
+    143,
+    144,
+    141,
+    137
+  ],
+  "missing_pr_heads": [
+    174,
+    181,
+    179,
+    172,
+    164,
+    171,
+    170,
+    161,
+    159,
+    158,
+    156,
+    150,
+    154,
+    152,
+    148,
+    151,
+    149,
+    147,
+    142,
+    139,
+    138,
+    136,
+    135,
+    134,
+    133,
+    132,
+    131,
+    130,
+    129,
+    128,
+    125,
+    127,
+    126,
+    124,
+    123,
+    122,
+    120,
+    119,
+    117,
+    105,
+    114,
+    116,
+    112,
+    115,
+    113,
+    110,
+    108,
+    103,
+    111,
+    107,
+    104,
+    106,
+    102,
+    101,
+    100,
+    97,
+    99,
+    98,
+    95,
+    92,
+    91,
+    90,
+    88,
+    87,
+    94,
+    93,
+    86,
+    85,
+    84,
+    13,
+    80,
+    81,
+    57,
+    12,
+    11,
+    6,
+    42,
+    38,
+    37,
+    35,
+    65,
+    74,
+    72,
+    70,
+    3,
+    79,
+    34,
+    77,
+    33,
+    76,
+    32,
+    61,
+    20,
+    83,
+    19,
+    66,
+    64,
+    63,
+    62,
+    53,
+    67,
+    16,
+    50,
+    82,
+    56,
+    47,
+    68,
+    69,
+    51,
+    45,
+    60,
+    49,
+    48,
+    44,
+    14,
+    1
+  ],
+  "unique_hits": [
+    {
+      "pr": 177,
+      "head": "00a611094043afeb256d6532b477c0709e8ed270",
+      "hit": "research/external/mazur-2026/fixed-height-forward-power-saving.md:346:up to the accumulated polylogarithmic constants. This reproduces a fixed-height density coefficient, not `X^beta` with fixed `beta<1`."
+    },
+    {
+      "pr": 177,
+      "head": "00a611094043afeb256d6532b477c0709e8ed270",
+      "hit": "research/external/mazur-2026/fixed-height-power-saving-attack.md:108:   A discrepancy estimate polynomial in `W` is only polylogarithmic in `x`. Improving the"
+    },
+    {
+      "pr": 177,
+      "head": "00a611094043afeb256d6532b477c0709e8ed270",
+      "hit": "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md:30:| 184 | `366dab89ee9548084ab9b5e4e90ff82abf287a20` | `research/lean-band-coupling-20261121/lean/{ClockSteering,OffsetHorizon,ReturnClock,RisingMerge,SourceBoundedMerge,LowerMarkedMerger}.lean` and `LATEST_CONNECTIONS.md`. Gives budgeted phase steering, exact merger formulas beyond the shared-bit horizon, explicit smaller ordinary partners for an entire rising family, and a lower marked partner from a sufficiently small ordinary merger. Its source-bounded and lower-marked merger criteria are equivalent to full Collatz; their universal coverage is not established. |"
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "hit": "reports/2026-11-21-band-return/checkpointA-lean.json:154:    \"CollatzBandDescent.depth_le_horizon\": ["
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "hit": "reports/2026-11-21-band-return/checkpointA-lean.json:436:      \"stdout\": \"vendor/ShellCover.lean: OK\\nvendor/ForwardSection.lean: OK\\nvendor/SectionDynamics.lean: OK\\nvendor/RisingReturns.lean: OK\\n../../lean-global-20261121/lean/CollatzGlobal/OrbitLift.lean: OK\\n../../lean-global-20261121/lean/CollatzGlobal/Expansion.lean: OK\\nBuild completed successfully (2162 jobs).\\nChecking compatible arithmetic extraction BandCore\\nChecking imported ShellCover\\nChecking imported ForwardSection\\n'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking imported SectionDynamics\\n'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking imported RisingReturns\\n'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking new BandCertificates\\nChecking new BandDescent\\nChecking new BandSimulation\\n'CollatzShell.BandSimulation.ordinary_marked_simulation' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking new ReturnFourier\\n'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_log_cocycle' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.injective_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.fourier_averages_vanish' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\nChecking new MarkPhase\\nChecking new MarkFrequency\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_large' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_count_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.counts_vanish_of_kernel_tail' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\nChecking new BandBridge\\nChecking new BandAudit\\n'CollatzBandCore.orbit_add' depends on axioms: [propext]\\n'CollatzBandCore.step_add_even' depends on axioms: [propext, Quot.sound]\\n'CollatzBandCore.high_bit_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCore.orbit_linear_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.core_orbit_eq_shell' does not depend on any axioms\\n'CollatzBandCertificates.stopping_prefix_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.stopping_prefix_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.dyadic_offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.certified_offset_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.certified_offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.marked_of_odd_offset_le_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.unbounded_marked_certified_offsets' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.basin_of_offset_stopping_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.odd_run_survives_three_halves' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_odd_run_form' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_log2' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.depth_le_horizon' depends on axioms: [propext, Quot.sound]\\n'CollatzBandDescent.offset_survives_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_survives_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.unbounded_missing_offset_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.quotient_odd' depends on axioms: [propext]\\n'CollatzBandDescent.quotient_identity' depends on axioms: [propext, Quot.sound]\\n'CollatzBandDescent.offset_hits_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_hits_sibling' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_basin_iff_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.offset_basin_iff_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_seed_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_seed_log' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_seed_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.ordinary_marked_simulation' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_norm' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_add' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_nat' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_sub_nat' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_change' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_phase_step' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_character_step' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_log_cocycle' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.sum_coboundary' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.reciprocal_set_cutoff' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_reciprocal_cutoff' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.injective_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_alpha_ne_one' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.fourier_averages_vanish' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkPhase.marked_phase_small' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkPhase.injective_eventually_large' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkPhase.marked_phase_eventually_small' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.frequency_add' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.character_pair_re' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.simultaneous_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_large' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_sub_nat' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_count_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.counts_vanish_of_kernel_tail' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.marked_kernel_tail' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzBandBridge.return_descent_of_endpoint_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.return_descent_of_small_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.first_return_descent_of_even_prefix_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.first_return_descent_of_even_prefix_small' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.power_source_prefix' depends on axioms: [propext, Quot.sound]\\n'CollatzBandBridge.familyHalf_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_depth_split' depends on axioms: [propext, Quot.sound]\\n'CollatzBandBridge.family_offset_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_high_power' depends on axioms: [propext, Quot.sound]\\n'CollatzBandBridge.family_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_log2' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_power_source' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_even_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_endpoint_small' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_first_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.unbounded_descending_first_returns' depends on axioms: [propext, Classical.choice, Quot.sound]\\nCollatzBandBridge.family_first_return_descent (r : \\u2115) :\\n  CollatzShell.ForwardSection.next (CollatzBandBridge.familyInput r) < CollatzBandBridge.familyInput r\\nCollatzBandBridge.unbounded_descending_first_returns (B : \\u2115) :\\n  \\u2203 n, B < n \\u2227 CollatzShell.ForwardSection.Marked n \\u2227 CollatzShell.ForwardSection.next n < n\\nCollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero (n : \\u2115) (hn : n % 2 = 1)\\n  (hinj : Function.Injective (CollatzShell.ForwardSection.oddOrbit n)) (\\u03b5 : \\u211d) :\\n  0 < \\u03b5 \\u2192 \\u2203 N\\u2080, \\u2200 N \\u2265 N\\u2080, \\u2191(CollatzShell.ForwardSection.MarkFrequency.markedVisits n N) < \\u03b5 * \\u2191N\\nCollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit (n k : \\u2115) (hn : n % 2 = 1) (hk : 0 < k)\\n  (hinj : Function.Injective (CollatzShell.ForwardSection.oddOrbit n)) (\\u03b5 : \\u211d) :\\n  0 < \\u03b5 \\u2192\\n    \\u2203 N\\u2080,\\n      \\u2200 (N : \\u2115),\\n        N\\u2080 \\u2264 N \\u2192\\n          \\u2016\\u2211 j \\u2208 Finset.range N,\\n                CollatzShell.ForwardSection.ReturnFourier.character k\\n                  (CollatzShell.ForwardSection.height (CollatzShell.ForwardSection.oddOrbit n j))\\u2016 <\\n            \\u03b5 * \\u2191N\\nCollatzBandDescent.unbounded_missing_offset_prefix (B : \\u2115) :\\n  \\u2203 n,\\n    B < n \\u2227 CollatzShell.ForwardSection.Marked n \\u2227 \\u2200 t \\u2264 n.log2, n - 2 ^ n.log2 \\u2264 CollatzShell.orbit t (n - 2 ^ n.log2)\\nCollatzShell.BandSimulation.ordinary_marked_simulation (L K M : \\u2115) (hK : 0 < K) :\\n  \\u2203 n,\\n    M < n \\u2227\\n      CollatzShell.ForwardSection.Marked n \\u2227\\n        \\u2200 j \\u2264 L, n \\u2264 CollatzShell.orbit j n \\u2227 CollatzShell.orbit j n % 2 = 1 \\u2227 2 ^ K \\u2223 CollatzShell.orbit j n + 1\\nCollatzBandCertificates.basin_of_offset_stopping_floor {a t d : \\u2115} (drop : CollatzShell.orbit t a < a) (td : t \\u2264 d)\\n  (floor : \\u2200 (m : \\u2115), 0 < m \\u2192 m < 2 ^ d + a \\u2192 CollatzShell.Basin m) : CollatzShell.Basin (2 ^ d + a)\\nBand-return Lean build completed.\\n\""
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "hit": "reports/2026-11-21-band-return/checkpointA-lean.json:481:    \"CollatzBandDescent.depth_le_horizon\","
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "hit": "reports/2026-11-21-band-return/initial-receipt-parser-rejection.json:37:      \"stdout\": \"vendor/ShellCover.lean: OK\\nvendor/ForwardSection.lean: OK\\nvendor/SectionDynamics.lean: OK\\nvendor/RisingReturns.lean: OK\\n../../lean-global-20261121/lean/CollatzGlobal/OrbitLift.lean: OK\\n../../lean-global-20261121/lean/CollatzGlobal/Expansion.lean: OK\\nBuild completed successfully (2162 jobs).\\nChecking compatible arithmetic extraction BandCore\\nChecking imported ShellCover\\nChecking imported ForwardSection\\n'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking imported SectionDynamics\\n'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking imported RisingReturns\\n'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking new BandCertificates\\nChecking new BandDescent\\nChecking new BandSimulation\\n'CollatzShell.BandSimulation.ordinary_marked_simulation' depends on axioms: [propext, Classical.choice, Quot.sound]\\nChecking new ReturnFourier\\n'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_log_cocycle' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.injective_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.fourier_averages_vanish' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\nChecking new MarkPhase\\nChecking new MarkFrequency\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_large' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_count_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.counts_vanish_of_kernel_tail' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\nChecking new BandBridge\\nChecking new BandAudit\\n'CollatzBandCore.orbit_add' depends on axioms: [propext]\\n'CollatzBandCore.step_add_even' depends on axioms: [propext, Quot.sound]\\n'CollatzBandCore.high_bit_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCore.orbit_linear_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.core_orbit_eq_shell' does not depend on any axioms\\n'CollatzBandCertificates.stopping_prefix_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.stopping_prefix_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.dyadic_offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.certified_offset_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.certified_offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.marked_of_odd_offset_le_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.unbounded_marked_certified_offsets' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandCertificates.basin_of_offset_stopping_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.odd_run_survives_three_halves' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_odd_run_form' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_log2' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.depth_le_horizon' depends on axioms: [propext, Quot.sound]\\n'CollatzBandDescent.offset_survives_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_survives_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.unbounded_missing_offset_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.quotient_odd' depends on axioms: [propext]\\n'CollatzBandDescent.quotient_identity' depends on axioms: [propext, Quot.sound]\\n'CollatzBandDescent.offset_hits_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_hits_sibling' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.input_basin_iff_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandDescent.offset_basin_iff_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_seed_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_seed_log' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_seed_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.buffered_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandSimulation.ordinary_marked_simulation' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_norm' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_add' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_nat' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_sub_nat' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_change' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_phase_step' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_character_step' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.actual_log_cocycle' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.sum_coboundary' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.reciprocal_set_cutoff' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.odd_prefix_reciprocal_cutoff' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.injective_prefix_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.character_alpha_ne_one' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.fourier_averages_vanish' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkPhase.marked_phase_small' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkPhase.injective_eventually_large' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkPhase.marked_phase_eventually_small' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.frequency_add' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.character_pair_re' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.simultaneous_fourier' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_large' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_sub_nat' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.kernel_count_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.counts_vanish_of_kernel_tail' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.marked_kernel_tail' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzBandBridge.return_descent_of_endpoint_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.return_descent_of_small_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.first_return_descent_of_even_prefix_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.first_return_descent_of_even_prefix_small' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.power_source_prefix' depends on axioms: [propext, Quot.sound]\\n'CollatzBandBridge.familyHalf_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_depth_split' depends on axioms: [propext, Quot.sound]\\n'CollatzBandBridge.family_offset_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_high_power' depends on axioms: [propext, Quot.sound]\\n'CollatzBandBridge.family_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_log2' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_power_source' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_even_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_endpoint_small' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.family_first_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzBandBridge.unbounded_descending_first_returns' depends on axioms: [propext, Classical.choice, Quot.sound]\\nCollatzBandBridge.family_first_return_descent (r : \\u2115) :\\n  CollatzShell.ForwardSection.next (CollatzBandBridge.familyInput r) < CollatzBandBridge.familyInput r\\nCollatzBandBridge.unbounded_descending_first_returns (B : \\u2115) :\\n  \\u2203 n, B < n \\u2227 CollatzShell.ForwardSection.Marked n \\u2227 CollatzShell.ForwardSection.next n < n\\nCollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero (n : \\u2115) (hn : n % 2 = 1)\\n  (hinj : Function.Injective (CollatzShell.ForwardSection.oddOrbit n)) (\\u03b5 : \\u211d) :\\n  0 < \\u03b5 \\u2192 \\u2203 N\\u2080, \\u2200 N \\u2265 N\\u2080, \\u2191(CollatzShell.ForwardSection.MarkFrequency.markedVisits n N) < \\u03b5 * \\u2191N\\nCollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit (n k : \\u2115) (hn : n % 2 = 1) (hk : 0 < k)\\n  (hinj : Function.Injective (CollatzShell.ForwardSection.oddOrbit n)) (\\u03b5 : \\u211d) :\\n  0 < \\u03b5 \\u2192\\n    \\u2203 N\\u2080,\\n      \\u2200 (N : \\u2115),\\n        N\\u2080 \\u2264 N \\u2192\\n          \\u2016\\u2211 j \\u2208 Finset.range N,\\n                CollatzShell.ForwardSection.ReturnFourier.character k\\n                  (CollatzShell.ForwardSection.height (CollatzShell.ForwardSection.oddOrbit n j))\\u2016 <\\n            \\u03b5 * \\u2191N\\nCollatzBandDescent.unbounded_missing_offset_prefix (B : \\u2115) :\\n  \\u2203 n,\\n    B < n \\u2227 CollatzShell.ForwardSection.Marked n \\u2227 \\u2200 t \\u2264 n.log2, n - 2 ^ n.log2 \\u2264 CollatzShell.orbit t (n - 2 ^ n.log2)\\nCollatzShell.BandSimulation.ordinary_marked_simulation (L K M : \\u2115) (hK : 0 < K) :\\n  \\u2203 n,\\n    M < n \\u2227\\n      CollatzShell.ForwardSection.Marked n \\u2227\\n        \\u2200 j \\u2264 L, n \\u2264 CollatzShell.orbit j n \\u2227 CollatzShell.orbit j n % 2 = 1 \\u2227 2 ^ K \\u2223 CollatzShell.orbit j n + 1\\nCollatzBandCertificates.basin_of_offset_stopping_floor {a t d : \\u2115} (drop : CollatzShell.orbit t a < a) (td : t \\u2264 d)\\n  (floor : \\u2200 (m : \\u2115), 0 < m \\u2192 m < 2 ^ d + a \\u2192 CollatzShell.Basin m) : CollatzShell.Basin (2 ^ d + a)\\nBand-return Lean build completed.\\n\""
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "hit": "reports/2026-11-21-band-return/initial-receipt-parser-rejection.json:78:    \"CollatzBandDescent.depth_le_horizon\","
+    },
+    {
+      "pr": 178,
+      "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c",
+      "hit": "research/band-return-20261121/lean/BandAudit.lean:33:#print axioms CollatzBandDescent.depth_le_horizon"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "hit": "research/lean-band-coupling-20261121/README.md:5:actual-orbit band theorem from PR173 through its binary horizon. The constructive"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "hit": "research/lean-band-coupling-20261121/README.md:202:If both endpoint bands were too narrow at a fixed clock, their main dyadic"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "hit": "research/lean-band-coupling-20261121/lean/OffsetHorizon.lean:7:/-! A polynomially thin subfamily of the forced band can survive its whole binary horizon. -/"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "hit": "research/lean-band-coupling-20261121/lean/ReturnClock.lean:135:/-- The first positive return has at least logarithmic growth in the binary"
+    },
+    {
+      "pr": 180,
+      "head": "9010a8790535002b6d9ff92304f0ba289e2e98fe",
+      "hit": "research/lean-forward-band-20261121/lean/BandPopulationCriterion.lean:28:      P \u2286 band d \u2227 (\u2200 n \u2208 P, orbit clock n=q) \u2227"
+    },
+    {
+      "pr": 180,
+      "head": "9010a8790535002b6d9ff92304f0ba289e2e98fe",
+      "hit": "research/lean-forward-band-20261121/lean/BandPopulationCriterion.lean:55:  let t := (band d).sup clock"
+    },
+    {
+      "pr": 175,
+      "head": "06215e69346c4d32bf970af9c846a6894586c1e7",
+      "hit": "research/lean-global-closure-20261121/BAND_OFFSET_ATTEMPT.md:48:## A uniform thin-band obstruction to the missing clock estimate"
+    },
+    {
+      "pr": 175,
+      "head": "06215e69346c4d32bf970af9c846a6894586c1e7",
+      "hit": "research/lean-global-closure-20261121/CollatzGlobalClosure/BandOffset.lean:6:/-! Exact offset descent transfer and an unbounded thin-band clock obstruction."
+    },
+    {
+      "pr": 175,
+      "head": "06215e69346c4d32bf970af9c846a6894586c1e7",
+      "hit": "research/lean-global-closure-20261121/CollatzGlobalClosure/BandOffset.lean:58:    of the band point, at exactly that same clock. -/"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/BandMass-local-output.txt:1:'CollatzShell.ForwardSection.BandMass.entrance_log_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/BandMass-local-output.txt:2:'CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable' depends on axioms: [propext,"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/BandMass-local-output.txt:5:'CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/BandMass-local-output.txt:6:'CollatzShell.ForwardSection.BandMass.sum_entrance_packets' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:154:      \"output\": \"'CollatzShell.ForwardSection.BandMass.entrance_log_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.sum_entrance_packets' depends on axioms: [propext, Classical.choice, Quot.sound]\\n\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:171:      \"output\": \"'CollatzShell.BandDescent.prefix_lift' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.BandDescent.coefficient_lower' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.BandDescent.descent_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.descent_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.nonincrease_lift' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.BandDescent.offset_lift' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.BandDescent.offset_boundary_parity' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.BandDescent.offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.convergent_offset_eventually_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.return_descent_of_small_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.offset_endpoint_bound' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.BandDescent.offset_certificate_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.rising_survival' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.survival_of_power_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.offset_pair_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.thin_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.thin_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.thin_relative_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.thin_offset_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.thin_start_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandDescent.thin_no_quick_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.phase_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.exact_height_step' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.exact_height' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.error_sum_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.marked_height_window' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.marked_return_approx' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.nondecreasing_marked_return_late' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.BandRotation.early_marked_return_forces_descent' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.BandRotation.short_return_window_can_be_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.step_le_twice' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.orbit_le_two_pow_mul' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.orbit_pos' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.square_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.log2_le_twice_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.orbit_log2_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.firstVisit_lt_six_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entrance_log_height_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entrance_log_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.BandMass.sum_entrance_packets' depends on axioms: [propext, Classical.choice, Quot.sound]\\n\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:215:    \"CollatzShell.ForwardSection.BandMass.entrance_log_height_le\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:216:    \"CollatzShell.ForwardSection.BandMass.entrance_log_four_le\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:217:    \"CollatzShell.ForwardSection.BandMass.entranceLogTerm_bound\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:218:    \"CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:219:    \"CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le\","
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "reports/band-completion-20261121/lean-replay.json:220:    \"CollatzShell.ForwardSection.BandMass.sum_entrance_packets\""
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "research/band-completion-20261121/lean/BandMass.lean:150:#print axioms CollatzShell.ForwardSection.BandMass.entrance_log_four_le"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "research/band-completion-20261121/lean/BandMass.lean:151:#print axioms CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "research/band-completion-20261121/lean/BandMass.lean:152:#print axioms CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "research/band-completion-20261121/lean/BandMass.lean:153:#print axioms CollatzShell.ForwardSection.BandMass.sum_entrance_packets"
+    },
+    {
+      "pr": 183,
+      "head": "8659cf62ac685540cadeef320e596c852fbb0959",
+      "hit": "research/band-completion-20261121/mass/RENEWAL_ATTEMPT.md:1:# The source mass after a forced band entrance"
+    },
+    {
+      "pr": 176,
+      "head": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "hit": "reports/2026-11-21-lean-global-resolvent/checkpoint5-lean.json:106:      \"output\": \"'CollatzShell.ForwardSection.Band.goodScale_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.steered_root_with_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.steered_root' depends on axioms: [propext, Classical.choice, Quot.sound]\\n\""
+    },
+    {
+      "pr": 176,
+      "head": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "hit": "reports/2026-11-21-lean-global-resolvent/checkpoint5-lean.json:166:      \"output\": \"'CollatzShell.ForwardSection.Band.marked_ancestors_with_clocks' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.marked_ancestors' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_count_finite_certificate' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.collatz_iff_band_survivor_count' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_component_population' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_survivor_population' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_finite_survivor_population' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n\""
+    },
+    {
+      "pr": 176,
+      "head": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "hit": "reports/2026-11-21-lean-global-resolvent/checkpoint5-lean.json:196:      \"output\": \"'CollatzShell.ForwardSection.Band.goodScale_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.inverse_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.log_error' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.lift_ge' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.lift_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.lift_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.scale_error' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.steered_root_with_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.steered_root' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.HitBy.mono' does not depend on any axioms\\n'CollatzShell.ForwardSection.Band.hitBy_step' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.Band.hitBy_at_hit' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.Band.nohit_iff_not_hitBy' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.Band.mem_sectionSurvivors' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.sectionSurvivors_mono' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.recover_unit_from_section_count' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.recover_unit_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.section_count_certifies_small_units' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.counterexample_section_population' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.empty_section_survivors' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.collatz_iff_unbounded_section_counts' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.BoundedSectionFan.toSectionFan' depends on axioms: [propext]\\n'CollatzShell.ForwardSection.Band.mem_markedProperty' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.component_population_transfer' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.survivor_population_transfer' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.finite_survivor_population_transfer' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.mem_smallUnitSurvivors' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.finite_survivor_population_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.marked_ancestors_with_clocks' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.marked_ancestors' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_count_finite_certificate' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.collatz_iff_band_survivor_count' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_component_population' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_survivor_population' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Band.band_finite_survivor_population' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.bareChild_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.fan_strict_octave' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_le_raw' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.fan_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.sixteen_mul_le_pow_two' depends on axioms: [propext, Quot.sound]\\n'CollatzShell.ForwardSection.oddFan_marked_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.marked_fan_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.weight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.weight_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.sectionWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.sectionWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.sectionWeight_summable' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Transport.source_atom_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.returnMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.weight_lt_of_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.no_uniform_endpoint_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n'CollatzShell.ForwardSection.Transport.entryMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.entry_atom_le' depends on axioms: [propext, Classical.choice, Quot.sound]\\n'CollatzShell.ForwardSection.Transport.no_uniform_entry_bound' depends on axioms: [propext,\\n Classical.choice,\\n Quot.sound]\\n\""
+    },
+    {
+      "pr": 176,
+      "head": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "hit": "research/lean-global-resolvent-20261121/section/lean/Audit.lean:14:#print axioms CollatzShell.ForwardSection.Band.steered_root_with_clock"
+    },
+    {
+      "pr": 176,
+      "head": "3dbe5542fd6a5a1d63b354225d92391471c17002",
+      "hit": "research/lean-global-resolvent-20261121/section/lean/Audit.lean:41:#print axioms CollatzShell.ForwardSection.Band.marked_ancestors_with_clocks"
+    },
+    {
+      "pr": 145,
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "hit": "research/critical-orbit-mellin/CYCLE_ENDPOINT_MEAN.md:48:polylogarithmic count; inverse first-hit cylinders exhaust the natural"
+    },
+    {
+      "pr": 145,
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "hit": "research/critical-orbit-mellin/RECORD_POLE_RIGIDITY.md:37:The starting-height bound above ensures $q\\le j$ eventually. This yields the same power of ternary approximation up to polylogarithmic factors for height records."
+    },
+    {
+      "pr": 145,
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "hit": "research/native-pressure-20261118/FIBRE-GAUGE.md:1:# A polylogarithmic Hausdorff gauge for each ordinary real fibre"
+    },
+    {
+      "pr": 145,
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "hit": "research/native-pressure-20261118/PROFILE-BOUND.md:114:unchanged. The improved bound also sharpens the polylogarithmic"
+    },
+    {
+      "pr": 145,
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "hit": "research/unsafe-return-weights/PHASE_IMBALANCE.md:37:Use their finite products in place of P. Each has log correction at most `L/(3B)`. If `(1+L)/B` is bounded below by a sufficiently small fixed constant, (3) follows immediately after adjusting constants. Otherwise the form is small, its binary coefficient is `O(1+|d_u\u2212d_v|)`, and Rhin gives (3). A zero form implies both d and total valuations are equal, excluded by the arm hypothesis. This argument needs no infinite escaping extension. Thus at comparable source heights X and `B\u2265X^\u03b7` for fixed \u03b7>0, an unbalanced physical merger requires polynomial time; a polylogarithmic-time unbalanced merger must dip to at most a polylogarithmic height."
+    }
+  ]
+}
