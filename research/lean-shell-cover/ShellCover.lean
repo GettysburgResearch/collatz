@@ -136,7 +136,7 @@ theorem basin_at_hit {x q : Nat} (hit : Hits x q) : Basin x ↔ Basin q := by
       | succ j => exact ⟨j,hj⟩
   · exact fun h => hit.trans h
 
-private theorem unit_pad (b q : Nat) (hu : q%3 ≠ 0) : (2^b*q)%3 ≠ 0 := by
+theorem unit_pad (b q : Nat) (hu : q%3 ≠ 0) : (2^b*q)%3 ≠ 0 := by
   induction b with
   | zero => simpa using hu
   | succ b ih =>
@@ -144,7 +144,7 @@ private theorem unit_pad (b q : Nat) (hu : q%3 ≠ 0) : (2^b*q)%3 ≠ 0 := by
     omega
 
 /-- The entire octave from a to twice a can be selected at any higher scale. -/
-private theorem octave (a x : Nat) (ha : 0<a) (hx : a≤x) :
+theorem octave (a x : Nat) (ha : 0<a) (hx : a≤x) :
     ∃ b : Nat, 2^b*a ≤ x ∧ x < 2*(2^b*a) := by
   induction x, hx using Nat.le_induction with
   | base => exact ⟨0, by simp, by simp; omega⟩

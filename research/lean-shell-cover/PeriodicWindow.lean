@@ -22,7 +22,7 @@ theorem reduce {α : Type*} {f : Nat → α} {p : Nat} (per : Period f p) (n : N
   have h := shift per (n%p) (n/p)
   rwa [Nat.mul_comm (n/p) p, Nat.mod_add_div] at h
 
-private theorem plus_at_odd {α : Type*} {f : Nat → α} (law : Laws f) (n : Nat) (h : n%2=1) :
+theorem plus_at_odd {α : Type*} {f : Nat → α} (law : Laws f) (n : Nat) (h : n%2=1) :
     f (3*n+1) = f n := by
   let t := n/2
   have e : n=2*t+1 := by dsimp [t]; omega
@@ -166,5 +166,17 @@ theorem annulus_rigidity {α : Type*} {f g : Nat → α} (law : Laws f) {p H : N
   · intro n
     exact model_edge hp per room agree 2 1 3 2 (by decide) (by decide) (by decide)
       (by decide) (by decide) (by decide) law.odd n
+
+theorem odd_core {a d : Nat} (ha : a%2=1) (hd : d%2=1) (i j : Nat)
+    (h : 2^i*a=2^j*d) : a=d := by
+  induction i generalizing j with
+  | zero => cases j with
+    | zero => simpa using h
+    | succ j => simp only [pow_zero,one_mul,pow_succ] at h; rw [show 2^j*2*d=2*(2^j*d) by ring] at h; omega
+  | succ i ih => cases j with
+    | zero => simp only [pow_zero,one_mul,pow_succ] at h; rw [show 2^i*2*a=2*(2^i*a) by ring] at h; omega
+    | succ j =>
+      rw [show 2^(i+1)*a=2*(2^i*a) by ring,show 2^(j+1)*d=2*(2^j*d) by ring] at h
+      exact ih j (by omega)
 
 end CollatzShell.PeriodicWindow

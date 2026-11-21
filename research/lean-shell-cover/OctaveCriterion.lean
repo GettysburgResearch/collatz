@@ -33,7 +33,7 @@ private theorem finite_clock {P : Nat → Nat → Bool} (S : Finset Nat)
     · exact up _ _ _ (le_max_left _ _) ha
     · exact up _ _ _ (le_max_right _ _) (hb _ h)
 
-private theorem empty_unmatched (all : Universal) {p : Nat} (hp : 0<p) : ∃ t, unmatched p t=∅ := by
+theorem empty_unmatched (all : Universal) {p : Nat} (hp : 0<p) : ∃ t, unmatched p t=∅ := by
   let P (x t : Nat) := meetsBy t x (p+x%p)
   have each (x : Nat) (hx : x ∈ Ico p (6*p)) : ∃ t, P x t=true := by
     have xp := (mem_Ico.mp hx).1
@@ -48,7 +48,7 @@ private theorem empty_unmatched (all : Universal) {p : Nat} (hp : 0<p) : ∃ t, 
   obtain ⟨mem,no⟩ := mem_filter.mp hx
   exact Bool.noConfusion ((ht x mem).symm.trans no)
 
-private theorem basin_laws : Laws Basin := by
+theorem basin_laws : Laws Basin := by
   constructor
   · intro n; apply propext; exact basin_at_hit ⟨1,step_double n⟩
   · intro n; apply propext; apply basin_at_hit; refine ⟨1,?_⟩
@@ -59,6 +59,18 @@ private theorem labels_meet {t x y : Nat} (h : meetsBy t x y=true) : Basin x=Bas
   obtain ⟨i,j,eq⟩ := decide_eq_true_eq.mp h
   exact propext ((basin_at_hit (x:=x) ⟨i.val,rfl⟩).trans
     (by rw [eq]; exact (basin_at_hit (x:=y) ⟨j.val,rfl⟩).symm))
+
+def referenceLabel (p x : Nat) : Prop := Basin (p+x%p)
+
+theorem reference_period (p : Nat) : Period (referenceLabel p) p := by
+  intro x; simp only [referenceLabel,Nat.add_mod_right]
+
+theorem reference_fit (p t x : Nat) (lo : p≤x) (hi : x<6*p) (clear : x∉unmatched p t) :
+    Basin x=referenceLabel p x := by
+  apply labels_meet (t:=t)
+  by_cases h : meetsBy t x (p+x%p)=false
+  · exact False.elim (clear (mem_filter.mpr ⟨mem_Ico.mpr ⟨lo,hi⟩,h⟩))
+  · exact Bool.eq_true_of_not_eq_false h
 
 private theorem unit_survives_cut {p s q : Nat} (hu : q%3≠0) (S : Finset Nat) (small : S.card<2^s)
     (size : 64^s*((firstMesh 2 (by decide)).cost*q+6) ≤ 3^s*p) :
@@ -75,15 +87,10 @@ theorem recover_from_comparisons (s q t : Nat) (hu : q%3≠0)
   classical
   let p := 64^s
   have pe : 2^(6*s)=p := by dsimp [p]; rw [pow_mul]; norm_num
-  let g (x : Nat) := Basin (p+x%p)
-  have per : Period g (2^(6*s)) := by intro x; simp only [g,pe,Nat.add_mod_right]
   let E := unmatched p t
-  have fit (x : Nat) (lo : 2^(6*s)≤x) (hi : x<6*2^(6*s)) (clear : x∉E) : Basin x=g x := by
-    apply labels_meet (t:=t)
-    have mem : x ∈ Ico p (6*p) := mem_Ico.mpr ⟨pe ▸ lo,pe ▸ hi⟩
-    by_cases h : meetsBy t x (p+x%p)=false
-    · exact False.elim (clear (mem_filter.mpr ⟨mem,h⟩))
-    · exact Bool.eq_true_of_not_eq_false h
+  have fit : ∀ x, 2^(6*s)≤x → x<6*2^(6*s) → x∉E → Basin x=referenceLabel p x := by
+    rw [pe]; exact reference_fit p t
+  have per : Period (referenceLabel p) (2^(6*s)) := by rw [pe]; exact reference_period p
   obtain ⟨c,S,card,flat⟩ := octave_rigidity (6*s) basin_laws per E fit
   have small : S.card<2^s := card.trans_lt (by simpa only [E,p,show 4*(6*s)=24*s by omega] using ok)
   have sizeq : 64^s*((firstMesh 2 (by decide)).cost*q+6) ≤ 3^s*p :=

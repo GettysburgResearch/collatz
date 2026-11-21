@@ -50,18 +50,6 @@ private theorem profile (b L i u : Nat) (hu : 0<u) (hi : i≤b+L) :
              rw [← Nat.mul_assoc,← pow_add,Nat.sub_add_cancel ll]
            _ = _ := by rw [eq,pow_add,show b+L-i=L-l by omega]; ring
 
-private theorem odd_core {a d : Nat} (ha : a%2=1) (hd : d%2=1) (i j : Nat)
-    (h : 2^i*a=2^j*d) : a=d := by
-  induction i generalizing j with
-  | zero => cases j with
-    | zero => simpa using h
-    | succ j => simp only [pow_zero,one_mul,pow_succ] at h; rw [show 2^j*2*d=2*(2^j*d) by ring] at h; omega
-  | succ i ih => cases j with
-    | zero => simp only [pow_zero,one_mul,pow_succ] at h; rw [show 2^i*2*a=2*(2^i*a) by ring] at h; omega
-    | succ j =>
-      rw [show 2^(i+1)*a=2*(2^i*a) by ring,show 2^(j+1)*d=2*(2^j*d) by ring] at h
-      exact ih j (by omega)
-
 private theorem distinct_cores {u v : Nat} (uo : u%2=1) (vo : v%2=1) (uv : u<v) (gap : v<3*u)
     (i j a d : Nat) : 2^i*3^a*u ≠ 2^j*3^d*v := by
   intro eq

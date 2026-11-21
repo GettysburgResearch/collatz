@@ -2,6 +2,8 @@
 
 **Full Collatz remains open.** For the shortcut map on positive integers, Lean proves an equivalence that replaces every input in a dyadic range by one count in a prescribed, distant interval. The count can leave exponentially many inputs unresolved. The theorem is `CollatzShell.fixed_window_criterion`. [Lean source](ShellCover.lean)
 
+A second route tests whether starts in five neighboring blocks meet their partners in the first block. Exact mixing of dyadic residues supplies a stability inequality for ordinary component labels. A four-to-one transfer brings the published predecessor exponent $0.84$ into that test. See [the comparison criterion](#4-an-exact-mixing-test-on-five-copies-of-one-octave) and [the stronger error allowance](#5-the-published-predecessor-bound-increases-the-error-allowance).
+
 For each integer $k\ge0$, the construction gives a computable power of two $X_k$. In the interval
 $$
  I_k=\left[X_k,\left\lfloor X_k+\frac{X_k}{k+1}\right\rfloor\right]
@@ -84,3 +86,17 @@ For replay in the pinned mathlib environment, add a writable directory to `LEAN_
 At every $s\ge3$, at least $2^{s-1}$ comparisons still miss through time $6s+\lfloor s/2\rfloor$ on both arms. The residue square already mixes at time $6s$. For the explicit family put $b=5s$, $d=2^s$, and choose the $2^{s-1}$ odd integers $d<u<2d$. The reference is $2^b u-1$ and the comparison is $2^b(u+d)-1$. [Lean theorem `octave_deadline`](OctaveDeadline.lean)
 
 In the coordinate $x+1$, an odd step multiplies by $3/2$ and an even step sends $z$ to $(z+1)/2$. After the first $b$ rising steps and at most $L=s+\lfloor s/2\rfloor$ further steps, clear a common denominator $2^L$. At clock $i$, the result has the form $2^{b+L-i}3^a u+R$, with $a\ge\min(i,b)$ and $0\le R\le3^L$. If both indices exceed $L$, equality forces the two remainders to agree modulo $3^{L+1}$ and hence exactly. Removing powers of two then forces $3^a u=3^{a'}(u+d)$, impossible since $u<u+d<3u$. Before the turn the remainder is zero. The remaining early-to-late comparison is excluded by $2^{b+1}3^L<3^b$. This rules out intersections even at unequal clocks. For replay, build `OctaveCriterion.olean` as above and run `lean OctaveDeadline.lean`.
+
+## 5. The published predecessor bound increases the error allowance
+
+Write $p=2^{25h+3}$ and $k=25h+3$. Let $M(p,t)$ count the same missed comparisons on $[p,6p)$. Using Theorem 6.1 of Krasikov and Lagarias, full Collatz is equivalent to the existence of arbitrarily large $h$ with a finite $t$ satisfying
+
+$$
+4\big((4k+1)M(p,t)+1\big)<2^{21h}=(p/8)^{0.84}.
+$$
+
+Thus the test tolerates errors on the scale of $p^{0.84}/\log p$. The exact constant and the strict inequality are in the display. The Lean theorem `collatz_iff_population_comparisons` takes `Population84` as an explicit hypothesis. That hypothesis is the published Theorem 6.1 at $X=2^{25h}$. The encoding, cardinality transfer, stability estimate and final equivalence are checked in Lean. The earlier elementary equivalence is independent of this external theorem. [Lean source](OctavePacking.lean) · [Krasikov and Lagarias, Theorem 6.1](https://arxiv.org/abs/math/0205002)
+
+The transfer `pack_population` sends any set of positive inputs $n\le p/8$ into $[p,2p]$ with the same component labels and at most four inputs per output. Ordinary doubling alone can send many inputs to the same place. Write $n=2^a m$ with $m$ odd. Set $m'=m$ if $3$ does not divide $m$. Otherwise use $m'=4m+1$, which has the same label because $3(4m+1)+1=4(3m+1)$. Now $Q=2^a m'$ is a ternary unit and $Q\le5n$. Choose $c\in\{2,4\}$ with $cQ\equiv1\pmod3$. The odd number $y=(cQ-1)/3$ has the same label and satisfies $y\le8n$. Double $y$ into the target octave. Its odd part recovers $y$. Knowing $c$ recovers $Q$, and knowing whether the sibling was used recovers $m$ and $a$ from $Q$. These two choices give the factor four.
+
+If $q$ and $1$ had different basin labels, the published theorem would supply at least $2^{21h}$ starts of each label below $p/8$ at every sufficiently large stage. Both populations survive the four-to-one transfer. The finite stability inequality then forces the displayed test to fail at every time at those stages. To complete the proof one still needs a passing time on unbounded stages. For replay after `OctaveCriterion.olean` is built, run `lean OctavePacking.lean`.
