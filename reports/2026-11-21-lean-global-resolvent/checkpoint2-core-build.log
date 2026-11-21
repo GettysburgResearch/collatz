@@ -1,0 +1,14 @@
+✔ [6/9] Built Collatz.MersenneRecursion (1.3s)
+ℹ [7/9] Built Collatz.TerminalFive (1.8s)
+info: Collatz/TerminalFive.lean:367:0: 'CollatzTerminalFive.failure_no_late_return' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:368:0: 'CollatzTerminalFive.failure_has_async_terminal_descendant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:369:0: 'CollatzTerminalFive.failure_has_rank_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:370:0: 'CollatzTerminalFive.rank_minimal_successor_closed' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:371:0: 'CollatzTerminalFive.failure_has_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:372:0: 'CollatzTerminalFive.forward_five_iff_async_terminals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:373:0: 'CollatzTerminalFive.forward_five_iff_successor_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:374:0: 'CollatzTerminalFive.forward_five_iff_offsets' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:375:0: 'CollatzTerminalFive.five_not_async_terminal' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:376:0: 'CollatzTerminalFive.seventeen_successful_terminal' depends on axioms: [propext, Quot.sound]
+✔ [8/9] Built Collatz (611ms)
+Build completed successfully (9 jobs).

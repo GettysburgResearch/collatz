@@ -52,9 +52,33 @@ This forbids asynchronous proportional returns from the bad target to five times
 
 The same module gives an exact pair of arithmetic repair obligations equivalent to forward-five closure. Both retain two known ordinary antecedents, `u` and `5u`, before asking for `5u-1` or `5u-2` on their respective stated congruence domains. The file definitions and theorem types give the exact guards. These repair obligations remain open.
 
+## Checkpoint 2: one order for both recursive moves
+
+[MIXED_CERTIFICATE_DESCENT.md](MIXED_CERTIFICATE_DESCENT.md) and the standalone
+[Mathlib module](mathlib/MixedCertificate.lean) prove that source-prefix
+consumption and the two longer height-descending replacements of PR169
+decrease the same well-founded multiset order. Both infinite affine families
+are checked for every natural parameter, including their actual upper and
+lower ordinary paths. A finite-rule induction kernel exposes complete rule
+coverage as an explicit hypothesis; no such coverage theorem is supplied.
+
+The core project also contains a uniform exponent recursion in
+[MersenneRecursion.lean](lean/Collatz/MersenneRecursion.lean): every even
+Mersenne exponent at least two folds into the preceding odd exponent. This
+reduces part of the terminal multiplier family by actual ordinary moves.
+
+[EXACT_FORWARD_FLOOR.md](EXACT_FORWARD_FLOOR.md) records the full floor proof
+and exact multiplier transport. [TERMINAL_FIVE_NORMALIZATION.md](TERMINAL_FIVE_NORMALIZATION.md)
+gives the component-preserving asynchronous normalization and the stronger
+rank-minimal version, with the precise two repair conditions still open.
+
 ## Continuing attacks
 
-The parallel work is attempting to combine source-prefix consumption with witness transformations that increase length but decrease numerical height, and to obtain an arithmetic estimate sensitive to both divergent trajectories and nontrivial cycles. A proposed common order is the multiset order on the ordinary states of the supplied source certificate. Its applicability and all-input coverage must be proved separately; a well-founded order by itself does not furnish a rule at every state.
+The remaining work is to supply complete rules for the shared order, including
+the terminal multiplier states, or to prove an arithmetic survival estimate
+sensitive to both divergent trajectories and nontrivial cycles. The common
+order's applicability to the two given families is now proved; all-input
+coverage remains a separate open assertion.
 
 This checkpoint does not rerun all earlier research packets. It compiles the new modules and the imports actually needed by them, prints the principal theorem dependencies, and runs the repository's required structural gate at the published checkpoint.
 

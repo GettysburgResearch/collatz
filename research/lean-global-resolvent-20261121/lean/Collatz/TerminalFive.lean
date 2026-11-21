@@ -78,6 +78,22 @@ theorem five_cycle (t : Nat) : Basin (5 * orbit 1 t) := by
   · simpa [h] using basin_five
   · simpa [h] using (basin_twice 5).mpr basin_five
 
+theorem orbit_after_hit {x d : Nat} (hd : Hits x d)
+    {s : Nat} (hs : d ≤ s) : orbit x s = 1 ∨ orbit x s = 2 := by
+  have hadd : d + (s - d) = s := by omega
+  have he : orbit x s = orbit 1 (s - d) := by
+    rw [← hadd, orbit_add, (hits_iff_orbit x d).mp hd]
+    congr 1
+    omega
+  rw [he]
+  exact orbit_one_cycle (s - d)
+
+theorem five_after_hit {x d : Nat} (hd : Hits x d)
+    {s : Nat} (hs : d ≤ s) : Basin (5 * orbit x s) := by
+  rcases orbit_after_hit hd hs with h | h
+  · simpa [h] using basin_five
+  · simpa [h] using (basin_twice 5).mpr basin_five
+
 /-- The ordinary forward-five closure statement. -/
 def ForwardFive : Prop := ∀ x : Nat, 0 < x → Basin x → Basin (5 * x)
 
@@ -92,6 +108,51 @@ def SuccessorClosed (x : Nat) : Prop :=
 def AsyncTerminal (x : Nat) : Prop :=
   ∀ s : Nat, 0 < s → ∀ t : Nat,
     orbit (5 * x) t ≠ 5 * orbit x s
+
+/-- Failed comparisons have no proportional return at any source clock at
+    or after a supplied hit of one.  Target clocks are independent. -/
+theorem failure_no_late_return {x d : Nat} (hd : Hits x d)
+    (hbad : ¬ Basin (5 * x)) {s : Nat} (hs : d ≤ s) (t : Nat) :
+    orbit (5 * x) t ≠ 5 * orbit x s := by
+  intro he
+  have hb : Basin (orbit (5 * x) t) := by
+    rw [he]
+    exact five_after_hit hd hs
+  exact hbad ((basin_orbit _ _).mp hb)
+
+/-- Every failed pair has an asynchronously terminal descendant in the same
+    two ordinary components.  The remaining source certificate loses exactly
+    the consumed source clock.  No bound on target search time is asserted. -/
+theorem failure_has_async_terminal_descendant {x d : Nat}
+    (hd : Hits x d) (hbad : ¬ Basin (5 * x)) :
+    ∃ q s t e : Nat, s + e = d ∧ Hits q e ∧ AsyncTerminal q ∧
+      orbit x s = q ∧ orbit (5 * x) t = 5 * q ∧ ¬ Basin (5 * q) := by
+  induction d using Nat.strong_induction_on generalizing x with
+  | h d ih =>
+    by_cases hex : ∃ s : Nat, 0 < s ∧ ∃ t : Nat,
+        orbit (5 * x) t = 5 * orbit x s
+    · obtain ⟨s, hs, t, he⟩ := hex
+      have hsd : s < d := by
+        by_cases hle : d ≤ s
+        · exact False.elim (failure_no_late_return hd hbad hle t he)
+        · omega
+      have htail : Hits (orbit x s) (d - s) := by
+        apply (hits_iff_orbit _ _).mpr
+        rw [← orbit_add, show s + (d-s) = d by omega]
+        exact (hits_iff_orbit x d).mp hd
+      have hchild : ¬ Basin (5 * orbit x s) := by
+        intro hb
+        apply hbad
+        apply (basin_orbit _ _).mp
+        rwa [he]
+      obtain ⟨q, u, v, e, hue, hq, ht, hu, hv, hbq⟩ :=
+        ih (d-s) (by omega) htail hchild
+      refine ⟨q, s+u, t+v, e, by omega, hq, ht, ?_, ?_, hbq⟩
+      · rw [orbit_add, hu]
+      · rw [orbit_add, he, hv]
+    · refine ⟨x, 0, 0, d, by omega, hd, ?_, rfl, rfl, hbad⟩
+      intro s hs t he
+      exact hex ⟨s, hs, t, he⟩
 
 /-- Minimality here is over certificate clocks, not the numerical size of x. -/
 def RankMinimalFailure (x d : Nat) : Prop :=
@@ -265,5 +326,53 @@ theorem rank_minimal_odd {x d : Nat} (hm : RankMinimalFailure x d) : x % 2 = 1 :
     have hh : Basin (5*x) := (basin_step _).mp (by rwa [five_even_step he])
     exact False.elim (hm.2.1 hh)
   · omega
+
+/-! Small exact controls for the new terminal notion. -/
+
+/-- The source 5 is balanced-terminal in PR146's rank-one family, but it is
+    removed by asynchronous normalization: source clock 4, target clock 12. -/
+theorem five_not_async_terminal : ¬ AsyncTerminal 5 := by
+  intro h
+  exact h 4 (by omega) 12 rfl
+
+/-- The stronger terminal set is still nonempty, even among successful pairs. -/
+theorem seventeen_async_terminal : AsyncTerminal 17 := by
+  have hx : Hits 17 9 := rfl
+  have hy : Hits (5*17) 8 := rfl
+  have hfinite : ∀ s : Fin 9, 0 < s.val → ∀ t : Fin 8,
+      orbit (5*17) t.val ≠ 5 * orbit 17 s.val := by decide
+  have htail : ∀ t : Fin 8,
+      orbit (5*17) t.val ≠ 5 ∧ orbit (5*17) t.val ≠ 10 := by decide
+  intro s hs t he
+  have hpos := orbit_pos (n := 17) (by omega) s
+  by_cases ht : 8 ≤ t
+  · rcases orbit_after_hit hy ht with h | h <;> omega
+  · have hlt : t < 8 := by omega
+    by_cases hs9 : 9 ≤ s
+    · rcases orbit_after_hit hx hs9 with h | h
+      · have hh := (htail ⟨t, hlt⟩).1
+        simp only at hh
+        rw [h] at he
+        exact hh he
+      · have hh := (htail ⟨t, hlt⟩).2
+        simp only at hh
+        rw [h] at he
+        exact hh he
+    · exact hfinite ⟨s, by omega⟩ hs ⟨t, hlt⟩ he
+
+theorem seventeen_successful_terminal :
+    Basin 17 ∧ Basin (5*17) ∧ AsyncTerminal 17 :=
+  ⟨⟨9, rfl⟩, ⟨8, rfl⟩, seventeen_async_terminal⟩
+
+#print axioms failure_no_late_return
+#print axioms failure_has_async_terminal_descendant
+#print axioms failure_has_rank_minimal
+#print axioms rank_minimal_successor_closed
+#print axioms failure_has_terminal
+#print axioms forward_five_iff_async_terminals
+#print axioms forward_five_iff_successor_closed
+#print axioms forward_five_iff_offsets
+#print axioms five_not_async_terminal
+#print axioms seventeen_successful_terminal
 
 end CollatzTerminalFive

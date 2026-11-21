@@ -7,3 +7,20 @@ The [scientific guide](../../research/lean-global-resolvent-20261121/README.md) 
 The new proofs establish exact least-failure geometry, source-rank normalization and global equivalences. They do not discharge the closing assertions. Principal dependency reports contain only `propext`, `Classical.choice` and `Quot.sound`.
 
 Repository structural validation is run on the full clean published checkout. Its exact commit, result and receipt are recorded in the pull request. Scientific compilation and repository integrity are different checks; neither an equivalence nor a structural gate is a full convergence proof.
+
+## Checkpoint 2
+
+[checkpoint2-lean.json](checkpoint2-lean.json) pins the actual compiled core
+and Mathlib sources and the three execution logs. The core build and axiom
+audit passed. The standalone Mathlib module compiled with warnings treated
+as errors and printed only standard Lean axioms for its principal theorems.
+
+This checkpoint adds the common certificate-order kernel, exact universal
+checks of the two longer paired replacements, the uniform even-exponent
+Mersenne fold, and the full component-preserving asynchronous normalization.
+The six upper/lower path checks use actual natural-number arithmetic
+for every parameter; they are not a numerical sample. All-input rule coverage
+and the arithmetic repair conditions remain open.
+
+Lean: `4.34.1`, commit `5045d0056413266e57c625dcd7c365b10e377c52`.
+Mathlib: `d13f23b723b8a846827a245b89c10fc7d3f11612`.

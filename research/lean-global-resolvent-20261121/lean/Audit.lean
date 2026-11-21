@@ -9,3 +9,6 @@ import Collatz
 #print axioms CollatzTerminalFive.forward_five_iff_offsets
 #check @CollatzGlobal.collatz_iff_exact_even_gap
 #check @CollatzTerminalFive.forward_five_iff_offsets
+#print axioms CollatzGlobal.ternary_even_exponent_fold
+#print axioms CollatzGlobal.mersenne_even_exponent_fold
+#print axioms CollatzTerminalFive.failure_has_async_terminal_descendant
