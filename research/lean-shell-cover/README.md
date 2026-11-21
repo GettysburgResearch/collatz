@@ -4,6 +4,8 @@
 
 A second route tests whether starts in five neighboring blocks meet their partners in the first block. Exact mixing of dyadic residues supplies a stability inequality for ordinary component labels. A four-to-one transfer brings the published predecessor exponent $0.84$ into that test. See [the comparison criterion](#4-an-exact-mixing-test-on-five-copies-of-one-octave) and [the stronger error allowance](#5-the-published-predecessor-bound-increases-the-error-allowance).
 
+A forward-orbit theorem shows that every start reaches an explicitly defined set of natural density zero within a bounded number of shortcut steps. The induced first-return map on that set characterizes full Collatz. Some first returns increase by arbitrarily large factors. [Forward visits and the remaining descent problem](#6-a-bounded-forward-visit-to-a-set-of-density-zero)
+
 For each integer $k\ge0$, the construction gives a computable power of two $X_k$. In the interval
 $$
  I_k=\left[X_k,\left\lfloor X_k+\frac{X_k}{k+1}\right\rfloor\right]
@@ -100,3 +102,21 @@ Thus the test tolerates errors on the scale of $p^{0.84}/\log p$. The exact cons
 The transfer `pack_population` sends any set of positive inputs $n\le p/8$ into $[p,2p]$ with the same component labels and at most four inputs per output. Ordinary doubling alone can send many inputs to the same place. Write $n=2^a m$ with $m$ odd. Set $m'=m$ if $3$ does not divide $m$. Otherwise use $m'=4m+1$, which has the same label because $3(4m+1)+1=4(3m+1)$. Now $Q=2^a m'$ is a ternary unit and $Q\le5n$. Choose $c\in\{2,4\}$ with $cQ\equiv1\pmod3$. The odd number $y=(cQ-1)/3$ has the same label and satisfies $y\le8n$. Double $y$ into the target octave. Its odd part recovers $y$. Knowing $c$ recovers $Q$, and knowing whether the sibling was used recovers $m$ and $a$ from $Q$. These two choices give the factor four.
 
 If $q$ and $1$ had different basin labels, the published theorem would supply at least $2^{21h}$ starts of each label below $p/8$ at every sufficiently large stage. Both populations survive the four-to-one transfer. The finite stability inequality then forces the displayed test to fail at every time at those stages. To complete the proof one still needs a passing time on unbounded stages. For replay after `OctaveCriterion.olean` is built, run `lean OctavePacking.lean`.
+
+## 6. A bounded forward visit to a set of density zero
+
+For $x>0$ write $d=\lfloor\log_2 x\rfloor$. Mark the odd numbers satisfying
+
+$$
+2^d\le x\le 2^d+\left\lfloor\frac{70\cdot 2^d}{d+1}\right\rfloor.
+$$
+
+On the ordinary shortcut orbit of **every** $n>0$, a marked number occurs at some clock $0\le t<4\lfloor\sqrt n\rfloor+\lfloor\log_2 n\rfloor$. The clock counts every halving and uses one step for $n\mapsto(3n+1)/2$ on an odd input. The number $A(N)$ of marked integers below $N$ satisfies $(\lfloor\log_2N\rfloor+2)A(N)\le426N$ for every $N>0$. In particular, the marked set has natural density zero. [Lean statements `bounded_visit`, `section_iff_offset` and `marked_count_bound`](ForwardSection.lean)
+
+**Why the orbit has to visit.** Look at odd terms $x_j$ only. Removing all powers of two in an odd step changes the binary logarithm by an integer. Modulo one, each step adds $\alpha=\log_2 3$ and an error $\log_2(1+1/(3x_j))$ between zero and $1/x_j$. For $N=\lfloor\sqrt n\rfloor$, Dirichlet approximation supplies a reduced fraction $a/q$ with $1\le q\le N$ and $|q\alpha-a|\le1/(N+1)$. As long as the orbit stays above $n/4$, the accumulated perturbation on its first $q$ odd terms is at most $4/q$. The rational rotation visits each position of a grid spaced $1/q$ apart. Choosing the grid target just beyond any prescribed phase gives a visit within $7/q$ on its upper side. Distinct integer powers $3^q$ and $2^a$ force $N+1\le4^q$. Consequently the visiting term has fewer than $5q+1$ binary digits, giving the inverse-logarithmic width in the mark definition. When the orbit drops below $n/4$, restarting halves the remaining square-root scale. Summing these restarts and restoring the intervening halvings gives the ordinary clock bound. [Lean statements `grid_barrier`, `steer` and `bounded_visit`](ForwardSection.lean)
+
+**What would finish the proof.** Let $R(n)$ be the next marked point at a strictly positive clock. The visit theorem makes $R$ total on positive starts. Full Collatz is equivalent to the assertion that for each marked $n>1$ there is a $k\ge1$ with $R^k(n)<n$. In the forward direction the return process records the eventual visit to one. In the reverse direction strict descent gives strong induction on marked integers, and the visit theorem covers every other start. The existence of this $k$ for every marked start remains open. [Lean statement `collatz_iff_return_descent`](SectionDynamics.lean)
+
+**Why one return cannot suffice.** For every integer $C\ge1$ there is a marked $n>1$ with $R(n)>Cn$. The explicit construction takes $H=2C$, $m=2H+9$, $d=2^m$ and $n=2^{d-m}(d+8)-1$. The low bits force a long run of increasing odd steps. Throughout that run the logarithm of the $j$th value equals $d+j(\alpha-1)+e_j$ with $2/d\le e_j\le16/d$. This positive buffer and a Dirichlet approximant ensure another mark before the run ends. Conversely a mark at $j>0$ requires $j\alpha$ to lie within $156/d$ of an integer. Separation of $3^j$ from powers of two rules this out for $j\le H$. By the first positive return the accumulated growth exceeds $C$. The construction answers a question about first returns. Eventual descent can still take place later. [Lean statement `arbitrarily_large_first_return`](RisingReturns.lean)
+
+For replay, use the mathlib version pinned above and compile `ShellCover.lean`, `ForwardSection.lean`, `SectionDynamics.lean` and `RisingReturns.lean` in order, putting their outputs on `LEAN_PATH`. The three new modules depend on mathlib and the ordinary shortcut definitions. The predecessor-count hypothesis from section 5 is unnecessary here.

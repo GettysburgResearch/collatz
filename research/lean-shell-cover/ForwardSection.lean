@@ -424,6 +424,66 @@ theorem section_iff_offset {x : Nat} (xp : 0<x) : InSection x ↔
   rw [Nat.mul_comm,← Nat.le_div_iff_mul_le (by omega : 0<x.log2+1)]
   omega
 
+/-- Number of odd section points strictly below the supplied cutoff. -/
+def markedCount (N : Nat) := ((Finset.range N).filter Marked).card
+
+private theorem octave_count (d : Nat) :
+    (d+1)*(((Finset.Ico (2^d) (2^(d+1))).filter Marked).card) ≤ 71*2^d := by
+  let len := (70*2^d)/(d+1)
+  have sub : (Finset.Ico (2^d) (2^(d+1))).filter Marked ⊆ Finset.Ico (2^d) (2^d+len+1) := by
+    intro x hx
+    obtain ⟨loc,mark⟩ := Finset.mem_filter.mp hx
+    obtain ⟨lo,hi⟩ := Finset.mem_Ico.mp loc
+    have xp : 0<x := by have := mark.1; omega
+    have ld : x.log2=d := by
+      have := (Nat.le_log2 xp.ne').mpr lo
+      have := (Nat.log2_lt xp.ne').mpr hi
+      omega
+    have gap := (section_iff_offset xp).mp mark.2
+    rw [ld] at gap
+    exact Finset.mem_Ico.mpr ⟨lo,by dsimp [len]; omega⟩
+  have cnt := Finset.card_le_card sub
+  rw [Nat.card_Ico,show 2^d+len+1-2^d=len+1 by rw [Nat.add_assoc,Nat.add_sub_cancel_left]] at cnt
+  have trunc : (d+1)*len≤70*2^d := by
+    rw [Nat.mul_comm]; exact Nat.div_mul_le_self _ _
+  have scale : d+1≤2^d := Nat.lt_two_pow_self
+  calc _ ≤ (d+1)*(len+1) := Nat.mul_le_mul_left (d+1) cnt
+       _ ≤ _ := by rw [Nat.mul_add,Nat.mul_one]; omega
+
+private theorem dyadic_count (d : Nat) : (d+1)*markedCount (2^d) ≤ 213*2^d := by
+  induction d with
+  | zero => decide
+  | succ d ih =>
+    by_cases z : d=0
+    · subst d; decide
+    let P := 2^d
+    let A := (Finset.Ico P (2^(d+1))).filter Marked
+    have sub : (Finset.range (2^(d+1))).filter Marked ⊆ (Finset.range P).filter Marked ∪ A := by
+      intro x hx
+      obtain ⟨hi,m⟩ := Finset.mem_filter.mp hx
+      by_cases lo : x<P
+      · exact Finset.mem_union_left _ (Finset.mem_filter.mpr ⟨Finset.mem_range.mpr lo,m⟩)
+      · exact Finset.mem_union_right _ (Finset.mem_filter.mpr ⟨Finset.mem_Ico.mpr ⟨by omega,Finset.mem_range.mp hi⟩,m⟩)
+    have split : markedCount (2^(d+1))≤markedCount P+A.card := (Finset.card_le_card sub).trans (Finset.card_union_le _ _)
+    have bound : (d+1)*markedCount (2^(d+1))≤284*P := by
+      calc _ ≤ (d+1)*(markedCount P+A.card) := Nat.mul_le_mul_left _ split
+           _ ≤ _ := by rw [Nat.mul_add]; have al : (d+1)*A.card≤71*P := octave_count d; change (d+1)*markedCount P≤213*P at ih; omega
+    have scale := Nat.mul_le_mul_right (markedCount (2^(d+1))) (show 2*(d+2)≤3*(d+1) by omega)
+    change (d+1+1)*markedCount (2^(d+1))≤213*2^(d+1)
+    rw [pow_succ 2 d] at *
+    dsimp only [P] at bound
+    nlinarith only [bound,scale]
+
+/-- A global logarithmic density bound for the section visited by every orbit. -/
+theorem marked_count_bound (N : Nat) (hp : 0<N) : (N.log2+2)*markedCount N≤426*N := by
+  let d := N.log2
+  have inc : markedCount N≤markedCount (2^(d+1)) :=
+    Finset.card_le_card (Finset.filter_subset_filter _ (Finset.range_mono Nat.lt_log2_self.le))
+  have low : 2^d≤N := Nat.log2_self_le hp.ne'
+  calc _ ≤ (d+2)*markedCount (2^(d+1)) := Nat.mul_le_mul_left _ inc
+       _ ≤ 213*2^(d+1) := dyadic_count (d+1)
+       _ ≤ _ := by rw [pow_succ]; omega
+
 theorem collatz_iff_marked : Universal ↔ ∀ n, Marked n → Basin n := by
   constructor
   · intro all n hn; exact all n (by have := hn.1; omega)
@@ -443,6 +503,7 @@ theorem collatz_iff_section : Universal ↔ ∀ n, 0<n → InSection n → Basin
     exact hit.trans (cover x xp sec)
 
 #print axioms steer
+#print axioms marked_count_bound
 #print axioms bounded_visit
 #print axioms collatz_iff_section
 
