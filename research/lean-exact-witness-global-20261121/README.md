@@ -3,15 +3,75 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint adds an unrestricted exponent-multiset order, genuinely
-unbounded source/target rewrites, low-gap loops, and a compiler for even-source
-resets in one mixed comparison kernel. A complete recursive cover is still
+The latest checkpoint proves cofinal certified predecessors over the fixed
+gap alphabet one through four, removes every high-gap case from an interval
+comparison program, and adds suffix, denominator-clearing, and retained-even
+rewrites. A complete recursive cover of the remaining low-gap states is still
 missing.
 These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: unbounded rewrites in one common induction
+## Latest checkpoint: parallel attacks and the alphabet-four reduction
+
+The new [bounded-gap proof packet](BOUNDED_GAP_ATTACK.md) proves that every
+certified odd ternary unit has arbitrarily large certified predecessors using
+only gaps one through four before its literal supplied tail. Four is the
+sharp alphabet threshold: every complete certificate using only gaps at most
+three represents one. These are all-length Lean theorems.
+
+This construction removes an arbitrary gap at least five anywhere in the
+complete source word, or an initial even run of length at least four, while
+producing a strictly lower-ranked known source above any requested bound.
+It has no congruence entrance guard and no insertion-length cutoff. In the
+active domain `0 < target <= 2*source+1`, the remaining universal step is
+restricted to initial even runs one, two, or three; odd gaps at most four;
+and odd targets strictly above `source+1`. The word length and values are
+unbounded. `LowIntervalStep` states that remaining premise explicitly.
+
+The parallel attacks add these independent mathematical results:
+
+- [Psi suffix attack](PSI_SUFFIX_ATTACK.md): every complete source word
+  `(2 repeated j,1,2 repeated k,a,tail)` with `a>=3` transfers to a
+  strictly lower-ranked certificate for `3^k*t`, with `Basin(2n-1)`
+  equivalent to `Basin(t)`. Composing it with the asymmetric reset gives
+  an actual smaller ordinary merger partner satisfying
+  `531441*t+578545=131072*S`.
+- [Denominator and merger attack](MERGER_ATTACK.md): every reverse power
+  of three has a positive denominator-clearing word, with explicit
+  quadratic clock and gap bounds. The complete-source rewrite leaves an
+  explicit additive comparison rather than assuming it converges.
+- [Retained-even reset](MERGER_RETAINED_EVEN.md): an initial run three
+  can be replaced by a shorter initial even run and an odd prefix over
+  gaps one through three while the known source grows. The proved cover
+  includes every unit odd core except one and the two specified ternary
+  cells, and preserves every target in the old interval.
+- [Low-interval refinements](LOW_INTERVAL_REFINEMENT.md): a supplied nonempty odd prefix whose
+  linear coefficient is at least one can be consumed at the same initial
+  even run. The known source grows while the literal-prefix deletion
+  strictly decreases its grade. This includes every leading gap one.
+  A synchronized-step theorem also closes every case where the target
+  admits at least `min(first source gap, initial even run + 1)` halvings.
+  The retained-even boundary theorem closes every initial-run-one case
+  with first odd gap at least four, including both exceptional interval
+  endpoints through explicit ordinary paths.
+- [Inverse Green function attack](SECTION_MASS_ATTACK.md): a written
+  all-depth theorem proves finiteness of the inverse Jacobian Green
+  function at every positive integer for every real exponent `s>1`.
+  At `s=2`, the corresponding undiscounted ternary cylinder-density trace
+  is summable. This analytic theorem has an exact finite replay but is
+  not claimed as a Lean result or as source-mass absorption.
+
+The complete source rewrites have executable exact-integer generators.
+The new proofs and actual validation receipts are under
+[`reports/.../parallel-attacks/`](../../reports/lean-exact-witness-global-20261121/parallel-attacks/).
+The analytic replay is kept in
+[`reports/.../section-mass/`](../../reports/lean-exact-witness-global-20261121/section-mass/).
+The source refresh inspected the latest PR178 update at
+`0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c`; the precise dependency boundaries
+are in [LATEST_SOURCE_SYNTHESIS.md](LATEST_SOURCE_SYNTHESIS.md).
+
+## Previous checkpoint: unbounded rewrites in one common induction
 
 The new [proof packet](UNBOUNDED_GAP_REWRITES.md) builds on the latest
 PR173 forward section and PR176 source-certificate resets. Its main changes

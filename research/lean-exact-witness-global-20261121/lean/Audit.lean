@@ -80,3 +80,41 @@ import Collatz
 -- These are hypotheses of the closing theorems, not established selectors.
 #print CollatzGapMultiset.Complete
 #print CollatzGapComparison.Complete
+
+-- Parallel attacks: all-bound predecessor construction and exact rewrites.
+#print axioms CollatzPsiSuffix.whole_witness_handoff
+#print axioms CollatzPsiSuffix.closes_without_twos
+#print axioms CollatzPsiSuffix.asymmetric_to_reverse_nine
+#print axioms CollatzPsiSuffix.asymmetric_small_partner
+#print axioms CollatzMergerDenominatorClear.denominator_clear_bounded
+#print axioms CollatzMergerDenominatorClear.clearing_endpoint_bound
+#print axioms CollatzMergerDenominatorClear.complete_witness_additive_rewrite
+#print axioms CollatzMergerDenominatorClear.uniform_reverse_power_template
+#print axioms CollatzMergerDenominatorClear.quadratic_clock_below_order_scale
+#print axioms CollatzMergerDenominatorClear.reverse_nine_low_handoff
+#print axioms CollatzBoundedGapCofinal.cofinal_predecessors
+#print axioms CollatzBoundedGapCofinal.gaps_at_most_three
+#print axioms CollatzBoundedGapCofinal.cofinal_alphabet_iff
+#print axioms CollatzBoundedGapCofinal.high_gap_replacement
+#print axioms CollatzBoundedGapCofinal.large_even_replacement
+#print axioms CollatzBoundedGapCofinal.high_gap_powered_interval_rule
+#print axioms CollatzBoundedGapCofinal.interval_complete_of_low
+#print axioms CollatzBoundedGapCofinal.collatz_of_low_interval
+#print axioms CollatzRetainedEvenReset.doubling_prefix
+#print axioms CollatzRetainedEvenReset.retained_even_rank
+#print axioms CollatzRetainedEvenReset.whole_witness_interval_reset
+#print axioms CollatzLowIntervalRefinement.scaled_prefix_rewrite
+#print axioms CollatzLowIntervalRefinement.coefficient_interval_rule
+#print axioms CollatzLowIntervalRefinement.first_gap_one_rule
+#print axioms CollatzLowIntervalRefinement.balanced_runs_rule
+#print axioms CollatzLowIntervalRefinement.compensated_gap_rule
+#print axioms CollatzLowIntervalRefinement.terminal_even_rule
+#print axioms CollatzLowIntervalRefinement.matched_gap_rule
+#print axioms CollatzLowIntervalRefinement.shortened_gap_rank
+#print axioms CollatzLowIntervalRefinement.shortened_gap_rule
+#print axioms CollatzLowIntervalRefinement.synchronized_gap_rule
+#print axioms CollatzRetainedEvenBoundary.sibling_certificate
+#print axioms CollatzRetainedEvenBoundary.boundary_prefix
+#print axioms CollatzRetainedEvenBoundary.leading_large_gap_interval_rule
+-- This residual step is a premise of the closing theorem, not a theorem.
+#print CollatzBoundedGapCofinal.LowIntervalStep

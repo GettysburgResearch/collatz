@@ -12,8 +12,9 @@ The paths below identify the mathematical sources of the summaries. The full
 head pins delimit this inspection; later commits are outside its scope. The
 second refresh below includes the newly created PR183 and PR184 and updated
 PR175, PR176, PR178, PR180, and PR182, through the parent refresh at
-**2026-11-21 15:44:50 UTC**. PR177 is this working branch, not an imported
-source.
+**2026-11-21 15:44:50 UTC**. The subsequent parallel-attack refresh updated
+PR178 to `0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c`; the other listed heads
+were unchanged. PR177 is this working branch, not an imported source.
 
 | PR | Frozen head | Substantive interface and remaining input |
 |---|---|---|
@@ -21,7 +22,7 @@ source.
 | 174 | `c92cd473de3b85ceb945702a726d2eb7350a6af8` | `research/psi-closure-20261121/README.md` and `routes/{cover,layers,pow3}/`. Adds an unbounded ordinary-walk descent-radius obstruction, exact source-certificate layer formulas, and powers-of-three families. No universal reverse-closure input is supplied. |
 | 175 | `06215e69346c4d32bf970af9c846a6894586c1e7` | `research/lean-global-closure-20261121/CollatzGlobalClosure/{BandOffset,SectionResetReturns,BandCollision,SectionFeatureRanks}.lean`. Adds whole-cylinder descent transport, cofinal first returns increasing both height and `v2(n+1)`, and cofinal collisions excluding a strict first-return rank depending only on those two features. The arbitrary high-bit lifting and guarded merger interfaces remain available; no universal rank or coverage is supplied. |
 | 176 | `3dbe5542fd6a5a1d63b354225d92391471c17002` | `research/lean-global-resolvent-20261121/section/{README,SECTION_TRANSPORT,UPPER_COUNT_ATTEMPT}.md` and `section/lean/{BandCriterion,CountCriterion,PopulationTransfer,SectionTransport}.lean`. Adds exponentially many actual marked ancestors with controlled clocks, a finite section-survivor count certifying a whole range, and a pooled same-clock population inequality. First-visit and return transport preserve original source mass; no constant dominates the transported mass by the endpoint fourth-power weight. The upper survivor estimate remains open. The earlier reset arithmetic is reused here at its separately named historical pin. |
-| 178 | `a8a0736e2f8e98e363a37030327d884fe0d97ed6` | `research/band-return-20261121/` and its `BandBridge`, `ReturnFourier`, and `MarkFrequency` modules. Adds an unbounded explicit family with actual positive first-return descent. On each injective ordinary odd orbit, every nonzero leading-phase Fourier average vanishes and marked temporal frequency is zero. Neither conclusion controls the integer halving drift. Earlier guarded common-rank transforms and their coverage limitations remain unchanged. |
+| 178 | `0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c` | `research/band-return-20261121/` and its `BandBridge`, `ReturnFourier`, and `MarkFrequency` modules. Adds an unbounded explicit family with actual positive first-return descent. On each injective ordinary odd orbit, every nonzero leading-phase Fourier average vanishes and marked temporal frequency is zero. Neither conclusion controls the integer halving drift. The update from `a8a0736e...` adds receipts, `GLOBAL_CLOSURE_ATTEMPT.md`, and `WEIGHTED_RANK_OBSTRUCTION.md`; it changes no Lean proof input. The written obstruction concerns a fixed `(n+1)*lambda^clock*mu^oddcount` on its specified move union, not PR177's complete exponent-multiset order. |
 | 179 | `27a2c7414fdb92eeca57ad552a9ab5c36d8430d8` | `research/lean-descent-20261121/README.md` and `lean/Collatz/{HalfCrossing,BudgetTransfer,UnitBudget,TernaryLadder}.lean`. This head was unchanged. A first coefficient half-crossing with a bounded odd-step cost implies ordinary descent. Unequal-clock budget transfer and an unbounded inverse ladder are proved with explicit guards. The all-unit budget/coverage assertion remains open. |
 | 180 | `9010a8790535002b6d9ff92304f0ba289e2e98fe` | `research/lean-forward-band-20261121/{MARKED_PREDECESSOR_POPULATIONS,DIVERGENT_ORBIT_PHASES}.md` and the `DenseBandFans` interface. A source-qualified analytic predecessor bound yields marked populations of order `2^d/(d+1)^2` in arbitrarily high, target-dependent octaves, with a common clock at most `15(d+1)`. The written analytic argument also gives summable reciprocal heights on a divergent orbit from that density premise. Those analytic inputs are not silently promoted to Lean theorems. The matching eventual survivor upper bound is open. |
 | 181 | `5f03d809b4495802971211ef13ff905f741d700d` | `research/lean-global-target-20261121/closure/{UNPAID_EXIT,RESET_BOUNDARY}.md`, `global/FLOOR_ATTEMPT.md`, and `lean/Closure/UnpaidExit.lean`. Actual expanding chains can exhaust their binary charge and take a contracting exit while retaining net expansion. The least bad floor does not supply the missing source absorption or five-energy estimate. A different certificate order remains available. |
@@ -249,3 +250,27 @@ well-founded multiset order. The newly published asymmetric and low-gap
 rules enlarge its proved domain. A proof that every activated pair meets a
 legal rule remains the global obligation; the new section results identify
 additional sound interfaces for such a rule rather than discharge it.
+
+## Parallel-attack continuation
+
+The new [alphabet-four construction](BOUNDED_GAP_ATTACK.md) supplies a
+different way to remove the old high-gap entrance guards. Every certified
+unit tail has cofinal known predecessors with gaps at most four. Thus a
+removed high odd gap, or an initial even run at least four, can pay for a
+new known source above the unchanged target in the larger interval domain.
+This shifts the universal obligation to the low initial valuations and
+the bounded odd alphabet; it does not establish that residual cover.
+
+The [suffix attack](PSI_SUFFIX_ATTACK.md) connects the guarded asymmetric
+reset to a reverse-nine suffix query and a strictly smaller ordinary merger
+partner. The [denominator attack](MERGER_ATTACK.md) supplies every reverse
+power of three with an integer clearing template and an explicit additive
+handoff. Both preserve the complete source tail and the same multiset rank.
+
+The [source-mass attack](SECTION_MASS_ATTACK.md) proves an unconditional
+finite inverse Green function on every fixed positive ordinary target.
+Its exact Poisson equation keeps the affine correction. A positive finite
+potential by itself does not give the proper strict incoming inequality
+required for absorption; the note states and tests that remaining residual
+explicitly. No source-qualified analytic input is inserted into the Lean
+proofs.

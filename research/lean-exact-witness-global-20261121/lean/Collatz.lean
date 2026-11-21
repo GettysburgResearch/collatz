@@ -16,3 +16,9 @@ import Collatz.GapComparison
 import Collatz.LowGapToPsi
 import Collatz.GapHandoffs
 import Collatz.AsymmetricPsiReset
+import Collatz.PsiSuffix
+import Collatz.MergerDenominatorClear
+import Collatz.BoundedGapCofinal
+import Collatz.RetainedEvenReset
+import Collatz.LowIntervalRefinement
+import Collatz.RetainedEvenBoundary
