@@ -71,15 +71,15 @@ private theorem size_orbit {n : Nat} (hn : n%2=1) (j : Nat) : oddOrbit n j≤2^j
   | zero => simp [oddOrbit]
   | succ j ih => exact (size_step (orbit_odd hn j)).trans (by rw [show 2^(j+1)*n=2*(2^j*n) by ring]; omega)
 
-private noncomputable def alpha := logb 2 3
-private noncomputable def height (n : Nat) := logb 2 n
+noncomputable def alpha := logb 2 3
+noncomputable def height (n : Nat) := logb 2 n
 
-private theorem log_two_bounds : 1/2 ≤ log 2 ∧ log 2 ≤ 1 := by
+theorem log_two_bounds : 1/2 ≤ log 2 ∧ log 2 ≤ 1 := by
   constructor
   · have := one_sub_inv_le_log_of_pos (by norm_num : (0:ℝ)<2); linarith
   · have := log_le_sub_one_of_pos (by norm_num : (0:ℝ)<2); linarith
 
-private theorem logb_two : logb 2 2=1 := by simp [logb,(log_pos (by norm_num : (1:ℝ)<2)).ne']
+theorem logb_two : logb 2 2=1 := by simp [logb,(log_pos (by norm_num : (1:ℝ)<2)).ne']
 
 private theorem phase_step (x : Nat) (hx : 0<x) :
     ∃ e : ℝ, 0≤e ∧ e≤1/(x:ℝ) ∧
@@ -123,7 +123,7 @@ private theorem phase_orbit {n m : Nat} (hn : 0<n) (hm : 0<m) (j : Nat)
     · change height (oddStep (oddOrbit n j))=_
       rw [step,eq]; push_cast; ring
 
-private theorem rotation_bounds : 1<alpha ∧ alpha<2 := by
+theorem rotation_bounds : 1<alpha ∧ alpha<2 := by
   constructor
   · rw [← logb_two]; exact logb_lt_logb (by norm_num) (by norm_num) (by norm_num)
   · have h := logb_lt_logb (b:=2) (x:=3) (y:=2^2) (by norm_num) (by norm_num) (by norm_num)
@@ -144,9 +144,46 @@ private theorem separated_logs {X Y K : Nat} (xp : 0<X) (lt : X<Y)
     rw [← mul_one_div]; exact ma.trans ((mul_le_mul_of_nonneg_left (le_abs_self _) (by positivity)).trans small)
   exact_mod_cast (div_le_one yr).mp endpt
 
+/-- An elementary lower bound on closeness between a positive multiple of
+    the rotation angle and an integer. -/
+theorem grid_barrier {N q a : Nat} (hN : 0<N) (qpos : 0<q)
+    (err : |q*alpha-a|≤1/((N:ℝ)+1)) : N+1≤4^q := by
+  have qr : (0:ℝ)<q := by exact_mod_cast qpos
+  have nr : (0:ℝ)<N+1 := by positivity
+  have lt1 : 1/((N:ℝ)+1)<1 := (div_lt_one nr).mpr (by exact_mod_cast (by omega : 1<N+1))
+  have hi := (abs_le.mp err).2
+  have lo := (abs_le.mp err).1
+  have aa : a≤2*q := by
+    have h := mul_lt_mul_of_pos_left rotation_bounds.2 qr
+    have val : (a:ℝ)<2*(q:ℝ)+1 := by nlinarith
+    exact Nat.le_of_lt_succ (by exact_mod_cast val)
+  have ae : 0<a := by
+    have qone : (1:ℝ)≤q := by exact_mod_cast qpos
+    have h := mul_lt_mul_of_pos_left rotation_bounds.1 qr
+    exact_mod_cast (show (0:ℝ)<a by nlinarith)
+  have distinct : (3:Nat)^q≠2^a := by
+    have odd (k : Nat) : 3^k%2=1 := by induction k with | zero => rfl | succ k ih => rw [pow_succ]; omega
+    obtain ⟨b,ab⟩ := Nat.exists_eq_succ_of_ne_zero ae.ne'
+    rw [ab,pow_succ]; have := odd q; omega
+  have magnitude : ((N+1:Nat):ℝ)*|log ((3^q:Nat):ℝ)-log ((2^a:Nat):ℝ)|≤1 := by
+    have L : 0<log 2 := log_pos (by norm_num)
+    have id : log ((3^q:Nat):ℝ)-log ((2^a:Nat):ℝ)=(q*alpha-(a:ℝ))*log 2 := by
+      push_cast; rw [log_pow,log_pow]; unfold alpha logb; field_simp
+    rw [id,abs_mul,abs_of_pos L,Nat.cast_add,Nat.cast_one,← mul_assoc]
+    have u := (le_div_iff₀ nr).mp err
+    have w : ((N:ℝ)+1)*|q*alpha-(a:ℝ)|≤1 := by linarith [mul_comm ((N:ℝ)+1) |q*alpha-(a:ℝ)|]
+    exact (mul_le_mul_of_nonneg_right w L.le).trans (by simpa using log_two_bounds.2)
+  have sep : N+1≤4^q := by
+    rcases lt_or_gt_of_ne distinct with h | h
+    · have h' : ((N+1:Nat):ℝ)*|log ((2^a:Nat):ℝ)-log ((3^q:Nat):ℝ)|≤1 := by rwa [abs_sub_comm]
+      have le := separated_logs (K:=N+1) (by positivity) h h'
+      exact le.trans (by simpa only [pow_mul,show (2:Nat)^2=4 by decide] using (Nat.pow_le_pow_right (by decide : 0<2) aa))
+    · exact (separated_logs (by positivity) h magnitude).trans (Nat.pow_le_pow_left (by decide) _)
+  exact sep
+
 /-- One rational grid supplies both the precision and a lower bound on the number of turns.
     Separation of the integer powers of two and three controls the grid denominator. -/
-private theorem rotation_grid (N : Nat) (hN : 0<N) : ∃ a q : Nat,
+theorem rotation_grid (N : Nat) (hN : 0<N) : ∃ a q : Nat,
     0<q ∧ q≤N ∧ a.Coprime q ∧ N+1≤4^q ∧ |q*alpha-a|≤1/((N:ℝ)+1) := by
   obtain ⟨r,approx,den⟩ := exists_rat_abs_sub_le_and_den_le alpha hN
   let q := r.den
@@ -169,30 +206,8 @@ private theorem rotation_grid (N : Nat) (hN : 0<N) : ∃ a q : Nat,
   let a := r.num.natAbs
   have ai : (a:ℤ)=r.num := by rw [show (a:ℤ)=|r.num| from Int.natCast_natAbs _,abs_of_pos ap]
   have ar : (a:ℝ)=(r.num:ℝ) := by exact_mod_cast ai
-  have aa : a≤2*q := by
-    have h := mul_lt_mul_of_pos_left rotation_bounds.2 qr
-    have val : (a:ℝ)<2*(q:ℝ)+1 := by rw [ar]; nlinarith
-    exact Nat.le_of_lt_succ (by exact_mod_cast val)
-  have ae : 0<a := by exact_mod_cast (show (0:ℤ)<a by rwa [ai])
-  have distinct : (3:Nat)^q≠2^a := by
-    have odd (k : Nat) : 3^k%2=1 := by induction k with | zero => rfl | succ k ih => rw [pow_succ]; omega
-    obtain ⟨b,ab⟩ := Nat.exists_eq_succ_of_ne_zero ae.ne'
-    rw [ab,pow_succ]; have := odd q; omega
-  have magnitude : ((N+1:Nat):ℝ)*|log ((3^q:Nat):ℝ)-log ((2^a:Nat):ℝ)|≤1 := by
-    have L : 0<log 2 := log_pos (by norm_num)
-    have id : log ((3^q:Nat):ℝ)-log ((2^a:Nat):ℝ)=(q*alpha-r.num)*log 2 := by
-      push_cast; rw [log_pow,log_pow,← ar]; unfold alpha logb; field_simp
-    rw [id,abs_mul,abs_of_pos L,Nat.cast_add,Nat.cast_one,← mul_assoc]
-    have u := (le_div_iff₀ nr).mp err
-    have w : ((N:ℝ)+1)*|q*alpha-r.num|≤1 := by linarith [mul_comm ((N:ℝ)+1) |q*alpha-r.num|]
-    exact (mul_le_mul_of_nonneg_right w L.le).trans (by simpa using log_two_bounds.2)
-  have sep : N+1≤4^q := by
-    rcases lt_or_gt_of_ne distinct with h | h
-    · have h' : ((N+1:Nat):ℝ)*|log ((2^a:Nat):ℝ)-log ((3^q:Nat):ℝ)|≤1 := by rwa [abs_sub_comm]
-      have le := separated_logs (K:=N+1) (by positivity) h h'
-      exact le.trans (by simpa only [pow_mul,show (2:Nat)^2=4 by decide] using (Nat.pow_le_pow_right (by decide : 0<2) aa))
-    · exact (separated_logs (by positivity) h magnitude).trans (Nat.pow_le_pow_left (by decide) _)
-  exact ⟨a,q,qpos,den,r.reduced,sep,by rwa [ar]⟩
+  have near : |q*alpha-a|≤1/((N:ℝ)+1) := by rwa [ar]
+  exact ⟨a,q,qpos,den,r.reduced,grid_barrier hN qpos near,near⟩
 
 private theorem grid_point {a q : Nat} (qp : 0<q) (cop : a.Coprime q) (y : ℝ) :
     ∃ j : Nat, j<q ∧ ∃ z : ℤ,
@@ -278,7 +293,7 @@ def InSection (x : Nat) : Prop :=
 
 instance (x : Nat) : Decidable (InSection x) := inferInstanceAs (Decidable (_ ≤ _))
 
-private theorem section_of_phase {x : Nat} (xp : 0<x) {z : ℤ}
+theorem section_of_phase {x : Nat} (xp : 0<x) {z : ℤ}
     (lo : 0≤height x-z) (close : ((x.log2:ℝ)+1)*(height x-z)≤35) : InSection x := by
   let d := x.log2
   let P := 2^d
