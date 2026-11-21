@@ -1,0 +1,8 @@
+# Raw search dumps are not checked in; scripts regenerate them.
+*.tsv
+*.csv
+*.jsonl
+*.bin
+*.olean
+*.ilean
+__pycache__/
