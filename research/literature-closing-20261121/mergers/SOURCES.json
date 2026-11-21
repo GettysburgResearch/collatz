@@ -1,0 +1,52 @@
+{
+  "schema": "collatz-merger-literature-scope/v1",
+  "inspected_utc_date": "2026-11-21",
+  "sources": [
+    {
+      "id": "YAH23",
+      "authors": "Emre Yolcu, Scott Aaronson, Marijn J. H. Heule",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "version": "arXiv:2105.14697v3, 2022-12-31; journal publication 2023",
+      "url": "https://arxiv.org/html/2105.14697v3",
+      "used": "Sections 3.2 and 4.3; the eleven rules, Theorem 3.17, and the explicit Example 4.3 matrix interpretation",
+      "scope": "The source matrix and omitted-rule architecture are credited. New arbitrary-word formalization, normal-form interface and erasure proposal are stated separately. Full-system termination is not supplied by the paper."
+    },
+    {
+      "id": "PR04",
+      "authors": "Andreas Podelski, Andrey Rybalchenko",
+      "title": "Transition Invariants",
+      "version": "LICS 2004, pp. 32-41",
+      "url": "https://lics.siglog.org/2004/PodelskiRybalchenko-TransitionInvariant.html",
+      "used": "Exact need for the transitive closure to be covered by a finite union of well-founded relations",
+      "scope": "Methodological scope check only; no Collatz transitive-closure cover is claimed."
+    },
+    {
+      "id": "N26-II",
+      "authors": "Hiroyuki Nashida",
+      "title": "Dimension-free barriers for matrix interpretations of the Collatz rewriting system",
+      "repository": "harappa/collatz-matrix-interpretation-barriers",
+      "commit": "8e7d6da6319c1c1b36ce3549fe06e00d0586a025",
+      "url": "https://github.com/harappa/collatz-matrix-interpretation-barriers/blob/8e7d6da6319c1c1b36ce3549fe06e00d0586a025/README.md",
+      "doi": "10.5281/zenodo.23081491",
+      "used": "Readme's precise distinction between paper-level matrix barriers and formalized certificate/residue statements",
+      "scope": "Not imported as a mathematical premise. DOI and direct Zenodo PDF retrieval were unsuccessful in this pass. Matrix barriers are expressly not Lean formalized in the readme."
+    },
+    {
+      "id": "N26-I",
+      "authors": "Hiroyuki Nashida",
+      "title": "Expanding cycles are not enough: a dichotomy for termination certificates of generalized Collatz maps",
+      "repository": "harappa/collatz-termination-certificate-dichotomy",
+      "commit": "a138adb7c7efaec8addd06722f40f015c7f2d9be",
+      "url": "https://github.com/harappa/collatz-termination-certificate-dichotomy/blob/a138adb7c7efaec8addd06722f40f015c7f2d9be/README.md",
+      "doi": "10.5281/zenodo.23081447",
+      "used": "Readme scope check for staged valuation certificates and the matrix barrier cited by Part II",
+      "scope": "No unreviewed barrier or staged-certificate completeness theorem is imported."
+    }
+  ],
+  "repository_inputs": [
+    {"pr": 177, "head": "00a611094043afeb256d6532b477c0709e8ed270", "path": "research/lean-exact-witness-global-20261121/UNBOUNDED_GAP_REWRITES.md"},
+    {"pr": 177, "head": "00a611094043afeb256d6532b477c0709e8ed270", "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapComparison.lean"},
+    {"pr": 178, "head": "0bb13b800e4e97f9fd3091b1a3d2e98b49911b7c", "path": "research/band-return-20261121/README.md"},
+    {"pr": 184, "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20", "path": "research/lean-band-coupling-20261121/README.md"}
+  ]
+}

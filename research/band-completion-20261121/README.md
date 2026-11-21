@@ -1,5 +1,10 @@
 # Completing Collatz through the forced dyadic band
 
+**Follow-up:** the [literature-guided closing attempt](../literature-closing-20261121/README.md)
+adds exact entrance renewal, retained-source transport, ordinary arithmetic
+constructions, and a global mixed-base normal-form reduction. Its proof and
+execution boundaries are recorded separately from this original checkpoint.
+
 **Full theorem: OPEN.** This packet pursues the new global section theorem in
 PR 173 through three complementary completion attempts. The new mathematical
 results are an actual induced-return descent certificate, a short-return
@@ -19,7 +24,7 @@ remove the coverage hypotheses discussed below.
 Use the shortcut map
 
 $$
-T(n)=\begin{cases}n/2&n\equiv0\pmod2,\$3n+1)/2&n\equiv1\pmod2.\end{cases}
+T(n)=\begin{cases}n/2&n\equiv0\pmod2,\\(3n+1)/2&n\equiv1\pmod2.\end{cases}
 $$
 
 For an odd positive integer $x$, let $d_x=\lfloor\log_2x\rfloor$. The
