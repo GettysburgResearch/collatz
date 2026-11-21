@@ -1,0 +1,11 @@
+import Collatz
+#print axioms CollatzGlobal.exact_floor_of_least_forward_failure
+#print axioms CollatzGlobal.least_forward_failure_iff
+#print axioms CollatzGlobal.collatz_iff_nine_minus_one_closure
+#print axioms CollatzGlobal.collatz_iff_exact_even_gap
+#print axioms CollatzGlobal.odd_edge_forward_transport
+#print axioms CollatzTerminalFive.failure_has_terminal
+#print axioms CollatzTerminalFive.forward_five_iff_async_terminals
+#print axioms CollatzTerminalFive.forward_five_iff_offsets
+#check @CollatzGlobal.collatz_iff_exact_even_gap
+#check @CollatzTerminalFive.forward_five_iff_offsets
