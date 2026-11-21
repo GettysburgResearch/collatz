@@ -77,6 +77,22 @@ The goal was to prove `OpenLemma`, which would finish the conjecture.
 **First unsupported step:** `OpenLemma`. Its weakest sub-instance in the unrestricted form is
 `∀ i, Basin (3^i)`.
 
+## Concurrent work (noted 21 Nov 2026, not rebuilt here)
+
+PRs #175–#181 were opened after this packet and several import its Lean core unchanged
+(pinned at `7034109`). Results there that touch this route, as reported in those PRs:
+
+| PR | Result | Relation to this packet |
+|---|---|---|
+| #181 | if `3m = 4^(r+1) v + 2` and `2u = 3^r v + 1` then `(m, 3m−1)` reaches `(u, 3u−1)` in `2r+3` steps, `0 < u < m`; an expanding return on the cylinder `m = 2469887 + 2^22 t` | unbounded extension of the synchronous descent `fail_mod4_one`; the expanding cylinder shows first-return descent is not universal |
+| #179 | Collatz from a finite odd-step budget at the first half-crossing (`collatz_of_unit_budget`); ternary ladder `3^s v = 4^r u + 2`; first-member-clock descent fails at `m = 82` on the class of `OpenLemma` | a second explicit open hypothesis; the `m = 82` example matches item 5 of the attack log |
+| #176 | `Basin (2^(2r+2) − 1) ↔ Basin (2^(2r+1) − 1)`; the least failure of forward odd-child closure is the parent of the least non-convergent integer | same frame as `collatz_iff_psi_forward`; the Mersenne fold is an exponent identity of the kind sought by route `pow3` |
+| #177 | the residues `129, 257, 385 mod 512` form of the reverse criterion; an unbounded rank-two reset with `2^j n < z` | bears on the layer question (route `layers`) |
+| #180 | 1,003 conditional comparison certificates, 437 unresolved cells | conditional moves, not ordinary descent (route `cover`) |
+| #173, #175, #178 | octave criteria, a parity barrier for non-convergent orbits, high-bit lifting | independent of this route |
+
+None of these discharges `OpenLemma` or proves `∀ i, Basin (3^i)`.
+
 ## Evidence levels
 
 - Lean theorems: as listed, checked by the two commands above on this branch.
