@@ -1,0 +1,88 @@
+{
+  "schema": "collatz-lean-execution/v1",
+  "checkpoint": 4,
+  "utc": "2026-11-21T08:53:04.182500+00:00",
+  "parent_commit": "c9845a816dfd1a5cf18f5966dcc6a9ffcf84ece4",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Single kernel-checked strict descent of every complete supplied certificate under the broader reset guard, preserving failed comparison. No universal selector or primitive moment decay proof.",
+  "commands": [
+    {
+      "cwd": "research/lean-global-resolvent-20261121/lean",
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint4-core-build.log"
+    },
+    {
+      "cwd": "research/lean-global-resolvent-20261121/lean",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint4-core-audit.log"
+    },
+    {
+      "cwd": "research/lean-global-resolvent-20261121/mathlib",
+      "argv": [
+        "python",
+        "build_odd_reset_certificate.py"
+      ],
+      "exit_code": 0,
+      "scope": "verifies three frozen core hashes and generates visible source; not itself a proof check"
+    },
+    {
+      "cwd": "Mathlib checkout with its lake environment and an added output directory in LEAN_PATH",
+      "argv": [
+        "lean",
+        "-DwarningAsError=true",
+        "--root=<packet>/mathlib",
+        "-o",
+        "<scratch-output>/OddCertificateMeasure.olean",
+        "<packet>/mathlib/OddCertificateMeasure.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint4-odd-measure-audit.log"
+    },
+    {
+      "cwd": "same Mathlib environment and output directory",
+      "argv": [
+        "lean",
+        "-DwarningAsError=true",
+        "--root=<packet>/mathlib",
+        "<packet>/mathlib/OddResetCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint4-composed-reset-audit.log"
+    }
+  ],
+  "sha256": {
+    "research/lean-global-resolvent-20261121/lean/Audit.lean": "d603732ea3c32d1f7bd8ba9b8095380ca206c84e218a3c98f313a214b0d9b45a",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/lean/Collatz/LeastForwardFailure.lean": "2cf76123d418cb528b1574f0b91920c64ab848e16ce6c0eaa82ef9011f4b21ca",
+    "research/lean-global-resolvent-20261121/lean/Collatz/MersenneRecursion.lean": "99b699ca5d2ba5269a3e44c663b6eb82411f50e98b56b0b2aa4c828cd899c701",
+    "research/lean-global-resolvent-20261121/lean/Collatz/OddReset.lean": "46556cdabf11a88928cafcb1eab2bf328e8f477ce23767e93337c07eb359fa75",
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-global-resolvent-20261121/lean/Collatz/TerminalFive.lean": "369a2189d9a65b3cbe7be8dae1010b34bd53cb0107c7de3f256a0933fbdeddb4",
+    "research/lean-global-resolvent-20261121/lean/Collatz/UnboundedReset.lean": "66ec761aaffff2509e6cc2d48ce384a6ea05ca56c221c283c069807c7318dd6a",
+    "research/lean-global-resolvent-20261121/lean/Collatz.lean": "cb5a536355efbe106ddbd815534790962504a5f7d9769ef312c5260b59206133",
+    "research/lean-global-resolvent-20261121/mathlib/MixedCertificate.lean": "05cc127a39384958152374cb05fc474a0560113dc13982efa0eed8a5c61d88f2",
+    "research/lean-global-resolvent-20261121/mathlib/OddCertificateMeasure.lean": "dea6fc39d0a922c7d408f2cc3290d06695ee09314bf98c3e0365da32f4309d09",
+    "research/lean-global-resolvent-20261121/mathlib/OddResetCertificate.lean": "88f1d1603093c3b025a9bd88d4879555979d2c093b68dd7a996156701503d41d",
+    "research/lean-global-resolvent-20261121/mathlib/PrimitiveSurvival.lean": "ac63a58b8ba7a363881e535e25e4d9d2d3d9b7da9d661887a2d72b233b629273",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint4-composed-reset-audit.log": "fb7809cb1d7d89137bdae78b72b86819a723260d5fc63698e38cc950c266873b",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint4-core-audit.log": "cfd7452b57700ab960e203e6ee4a0a6340213bfbaa8e4db33b53ccd67a23d85b",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint4-core-build.log": "dfbaa2b0cab83bf1a1b6676cc027fcab87c6b76104b356d58e23062bdabcafe4",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint4-odd-measure-audit.log": "28975cf87bd8ea563c1dc099db0f0b7beeb906fd9b38e0cbd9d9650c24ef52e8",
+    "research/lean-global-resolvent-20261121/mathlib/build_odd_reset_certificate.py": "2a9fbe0193eb8dea8a2edfcea38c2d140d194759c2e112ef3f484276a990c345",
+    "research/lean-global-resolvent-20261121/BROAD_RESET_AND_COVERAGE.md": "83a027228c3376ab3b5e2548a66e5e0a575286e927539c10dc4cec5ccc92426f",
+    "research/lean-global-resolvent-20261121/GLOBAL_COVERAGE_BOUNDARY.md": "1334257de4a3643737a58671b4d5c957f701e59ead9c871d25ba177b0b610c29"
+  }
+}

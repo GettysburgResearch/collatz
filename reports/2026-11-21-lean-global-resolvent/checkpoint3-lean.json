@@ -1,0 +1,84 @@
+{
+  "schema": "collatz-lean-execution/v1",
+  "checkpoint": 3,
+  "utc": "2026-11-21T08:40:22.429833+00:00",
+  "parent_commit": "d2303ea3144ba652d089c1ec38ad3879c3ea5ef7",
+  "lean_version": "4.34.1, commit 5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "unbounded guarded ordinary reset and source-prefix bound; complete-certificate splicing; exact primitive arithmetic survivor criterion. Full convergence is not established.",
+  "commands": [
+    {
+      "cwd": "research/lean-global-resolvent-20261121/lean",
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint3-core-build.log"
+    },
+    {
+      "cwd": "research/lean-global-resolvent-20261121/lean",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint3-core-audit.log"
+    },
+    {
+      "cwd": "Mathlib checkout at pinned revision",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "research/lean-global-resolvent-20261121/mathlib/MixedCertificate.lean (absolute path)"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint3-certificate-audit.log"
+    },
+    {
+      "cwd": "Mathlib checkout at pinned revision",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "research/lean-global-resolvent-20261121/mathlib/PrimitiveSurvival.lean (absolute path)"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint3-primitive-audit.log"
+    },
+    {
+      "cwd": "repository root",
+      "argv": [
+        "python",
+        "research/lean-global-resolvent-20261121/check_flux_obstruction.py"
+      ],
+      "exit_code": 0,
+      "scope": "exact finite witness, with analytic tail supplied separately in FLUX_ATTEMPT.md"
+    }
+  ],
+  "sha256": {
+    "research/lean-global-resolvent-20261121/lean/Audit.lean": "fd9bdc1e6986e2c10d7cc9432d24642451afe606ae67882065199bd77eab5ab9",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/lean/Collatz/LeastForwardFailure.lean": "2cf76123d418cb528b1574f0b91920c64ab848e16ce6c0eaa82ef9011f4b21ca",
+    "research/lean-global-resolvent-20261121/lean/Collatz/MersenneRecursion.lean": "99b699ca5d2ba5269a3e44c663b6eb82411f50e98b56b0b2aa4c828cd899c701",
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-global-resolvent-20261121/lean/Collatz/TerminalFive.lean": "369a2189d9a65b3cbe7be8dae1010b34bd53cb0107c7de3f256a0933fbdeddb4",
+    "research/lean-global-resolvent-20261121/lean/Collatz/UnboundedReset.lean": "66ec761aaffff2509e6cc2d48ce384a6ea05ca56c221c283c069807c7318dd6a",
+    "research/lean-global-resolvent-20261121/lean/Collatz.lean": "beb1e3a0728686917c99315d758eee030e0dca931b519563917259a9bb86061b",
+    "research/lean-global-resolvent-20261121/mathlib/MixedCertificate.lean": "05cc127a39384958152374cb05fc474a0560113dc13982efa0eed8a5c61d88f2",
+    "research/lean-global-resolvent-20261121/mathlib/PrimitiveSurvival.lean": "ac63a58b8ba7a363881e535e25e4d9d2d3d9b7da9d661887a2d72b233b629273",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint3-certificate-audit.log": "e210d6b283036fae6ef6e3a837f5abd022d1639c920a71c72066468162f4800d",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint3-core-audit.log": "b4e8fc9fc21a428aacd4ef1bfebf74b4d7b7c52bf09eaa34a3750fcfea25ca81",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint3-core-build.log": "fa3b459dacf65a45759cd321a94a9dd0c7bf2482d9404a88b5bba3a89b849c2c",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint3-primitive-audit.log": "9fa5d2bc753b1778bb150e19b144ff1375548bb8e5838f4b2095b9776f76af09",
+    "research/lean-global-resolvent-20261121/check_flux_obstruction.py": "2fa4018bf456dabd86259122a25c76e75a5c2e16357c0be4337567c8a76e943f",
+    "research/lean-global-resolvent-20261121/question_primitive_source_moment.txt": "7d27ca98d248e17a94e60b7bcf722da6336b2fa5cd603301cc3010d727873152"
+  }
+}

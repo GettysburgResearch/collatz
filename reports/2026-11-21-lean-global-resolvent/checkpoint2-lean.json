@@ -1,0 +1,58 @@
+{
+  "schema": "collatz-lean-execution/v1",
+  "checkpoint": 2,
+  "utc": "2026-11-21T08:25:37.162814+00:00",
+  "parent_commit": "bff01093f3eb073216f9ec610130d16067fcc1fd",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Lean checks exact stated implications, paths, multiset decreases and exponent fold; no all-input closing assertion discharged",
+  "commands": [
+    {
+      "cwd": "research/lean-global-resolvent-20261121/lean",
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint2-core-build.log"
+    },
+    {
+      "cwd": "research/lean-global-resolvent-20261121/lean",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint2-core-audit.log"
+    },
+    {
+      "cwd": "Mathlib checkout at pinned revision",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "research/lean-global-resolvent-20261121/mathlib/MixedCertificate.lean (absolute path)"
+      ],
+      "exit_code": 0,
+      "log": "checkpoint2-mathlib-audit.log"
+    }
+  ],
+  "sha256": {
+    "research/lean-global-resolvent-20261121/lean/Audit.lean": "7ab6a799a40641c1fdbc60bf649f90cbae527179512bfddd8f502f7951c09eb6",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/lean/Collatz/LeastForwardFailure.lean": "2cf76123d418cb528b1574f0b91920c64ab848e16ce6c0eaa82ef9011f4b21ca",
+    "research/lean-global-resolvent-20261121/lean/Collatz/MersenneRecursion.lean": "99b699ca5d2ba5269a3e44c663b6eb82411f50e98b56b0b2aa4c828cd899c701",
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "research/lean-global-resolvent-20261121/lean/Collatz/TerminalFive.lean": "369a2189d9a65b3cbe7be8dae1010b34bd53cb0107c7de3f256a0933fbdeddb4",
+    "research/lean-global-resolvent-20261121/lean/Collatz.lean": "c44ec00504cfa4dc0218eb6da4c911e38a0c73d8ec4170a30cea962d804da999",
+    "research/lean-global-resolvent-20261121/mathlib/MixedCertificate.lean": "78bf9c2576eb2c3c77ff796c768456dd556c8bf20c1a45e258db850fb87a1870",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint2-core-audit.log": "2e0dad08c87498c8d79a75e7de7ab3a29994e170fe82b72d6520cdf8bc044fd0",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint2-core-build.log": "2f06008511032c3474a5ed025d228ba0ebddda920edac322946313ffff85f05b",
+    "reports/2026-11-21-lean-global-resolvent/checkpoint2-mathlib-audit.log": "ba7a085f426ec26efcf757e705a3cb148fae16edb9c30a6994473c66b3e4b4c1"
+  }
+}

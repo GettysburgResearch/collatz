@@ -1,0 +1,16 @@
+'CollatzGlobal.exact_floor_of_least_forward_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGlobal.least_forward_failure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGlobal.collatz_iff_nine_minus_one_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGlobal.collatz_iff_exact_even_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGlobal.odd_edge_forward_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalFive.failure_has_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalFive.forward_five_iff_async_terminals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalFive.forward_five_iff_offsets' depends on axioms: [propext, Quot.sound]
+CollatzGlobal.collatz_iff_exact_even_gap : (∀ (n : ℕ), 0 < n → CollatzReverseBasin.Basin n) ↔
+  ∀ (t : ℕ),
+    0 < t → (∀ (n : ℕ), 0 < n → n < 4 * t - 1 → CollatzReverseBasin.Basin n) → CollatzReverseBasin.Basin (9 * t - 1)
+CollatzTerminalFive.forward_five_iff_offsets : CollatzTerminalFive.ForwardFive ↔
+  CollatzTerminalFive.OneOffsetRepair ∧ CollatzTerminalFive.TwoOffsetRepair
+'CollatzGlobal.ternary_even_exponent_fold' depends on axioms: [propext, Quot.sound]
+'CollatzGlobal.mersenne_even_exponent_fold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalFive.failure_has_async_terminal_descendant' depends on axioms: [propext, Classical.choice, Quot.sound]
