@@ -1,0 +1,295 @@
+CollatzWitness.e_iff_odd_basin (n : ℕ) : CollatzWitness.E n ↔ n % 2 = 1 ∧ CollatzReverseBasin.Basin n
+CollatzWitness.original_iff_collatz : CollatzWitness.ResidueImplication ↔ ∀ (n : ℕ), 0 < n → CollatzReverseBasin.Basin n
+'CollatzWitness.certificate_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.witness_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.schedule_exists' depends on axioms: [propext, Quot.sound]
+'CollatzWitness.e_iff_odd_basin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWitness.original_iff_collatz' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzPsiCompletion.normalize_adjacent_below (n u : ℕ) (hn : CollatzPsiCompletion.InitialBasin n) (hup : 0 < u)
+  (hul : u < n) (hbad : ¬CollatzReverseBasin.Basin (2 * u + 1)) :
+  ∃ w, w % 2 = 1 ∧ w ≤ u ∧ CollatzReverseBasin.Basin w ∧ ¬CollatzReverseBasin.Basin (2 * w + 1)
+CollatzPsiCompletion.initial_basin_even_tail (n d u t : ℕ) (hn : CollatzPsiCompletion.InitialBasin n) (hu : u < n)
+  (ht : t % 2 = 1) (h : 3 * u + 1 = 4 ^ (d + 1) * t) : CollatzReverseBasin.Basin (2 * u + 1)
+'CollatzPsiCompletion.normalize_adjacent_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.adjacent_even_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.adjacent_odd_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.initial_basin_even_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiCompletion.least_missing_adjacent' depends on axioms: [propext, Quot.sound]
+CollatzResetFamily.reset_family (j : ℕ) :
+  CollatzWitness.Certificate (CollatzResetFamily.source j) [3, CollatzResetFamily.exponent j] ∧
+    CollatzResetFamily.source j < CollatzResetFamily.mersenne j ∧
+      CollatzResetFamily.mersenne j < CollatzResetFamily.target j ∧
+        (CollatzReverseBasin.Basin (CollatzResetFamily.target j) ↔
+            CollatzReverseBasin.Basin (CollatzResetFamily.reset j)) ∧
+          2 ^ j * CollatzResetFamily.target j < CollatzResetFamily.reset j
+'CollatzResetFamily.reset_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResetFamily.reset_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzClosure.OpenLemma : Prop :=
+∀ (k : ℕ), k % 4 ≠ 0 → CollatzReverseBasin.Basin (3 * (27 * k + 1) - 1) → CollatzReverseBasin.Basin (27 * k + 1)
+CollatzDirected.collatz_of_complete_deep {rank : CollatzDirected.Rank} {active : CollatzDirected.Active}
+  (h : CollatzDirected.Complete rank active)
+  (coverage : ∀ (n : ℕ), n % 18 = 9 → active (CollatzDirected.Kind.reverse 3) n) (n : ℕ) :
+  0 < n → CollatzReverseBasin.Basin n
+'CollatzDirected.oddCore_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDirected.certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDirected.collatz_of_complete_deep' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzWitnessEnergy.prefixEnergy_dominated_lt {c : ℕ} {removed inserted : List ℕ} (hc : 0 < c)
+  (hlen : inserted.length < c) (hne : removed ≠ []) (hdom : ∀ (x : ℕ), x ∈ inserted → ∃ y, y ∈ removed ∧ x < y) :
+  CollatzWitnessEnergy.prefixEnergy c inserted < CollatzWitnessEnergy.prefixEnergy c removed
+'CollatzWitnessEnergy.prefixEnergy_replacement_lt_with_suffix' depends on axioms: [propext, Quot.sound]
+'CollatzWitnessEnergy.prefixEnergy_cancelled_replacement_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+CollatzSourceWitness.clock_replacement {parent child join clock : ℕ} {old new : List ℕ}
+  (oldTrace : CollatzSourceWitness.Trace parent join old) (newTrace : CollatzSourceWitness.Trace child join new)
+  (notOne : ∀ (x : ℕ), x ∈ old → x ≠ 1) (shorter : new.length < old.length)
+  (hit : CollatzReverseBasin.Hits parent clock) : ∃ next, next < clock ∧ CollatzReverseBasin.Hits child next
+CollatzSourceWitness.energy_replacement {c parent child join clock : ℕ} {old new : List ℕ}
+  (oldTrace : CollatzSourceWitness.Trace parent join old) (newTrace : CollatzSourceWitness.Trace child join new)
+  (notOne : ∀ (x : ℕ), x ∈ old → x ≠ 1)
+  (decrease : CollatzWitnessEnergy.prefixEnergy c new < CollatzWitnessEnergy.prefixEnergy c old)
+  (hit : CollatzReverseBasin.Hits parent clock) :
+  ∃ next,
+    CollatzSourceWitness.witnessEnergy c child next < CollatzSourceWitness.witnessEnergy c parent clock ∧
+      CollatzReverseBasin.Hits child next
+'CollatzSourceWitness.trace_peel' depends on axioms: [propext, Quot.sound]
+'CollatzSourceWitness.clock_replacement' depends on axioms: [propext, Quot.sound]
+'CollatzSourceWitness.energy_replacement' depends on axioms: [propext, Quot.sound]
+'CollatzSourceWitness.collatz_of_clock_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceWitness.collatz_of_energy_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzDirected.Complete : CollatzDirected.Rank → CollatzDirected.Active → Prop :=
+fun rank active =>
+  ∀ (k : CollatzDirected.Kind) (n : ℕ),
+    0 < n → n % 2 = 1 → active k n → CollatzDirected.LowerHyp rank active k n → CollatzDirected.Claim k n
+def CollatzSourceWitness.ClockComplete : CollatzDirected.Active → Prop :=
+fun active =>
+  ∀ (kind : CollatzDirected.Kind) (n clock : ℕ),
+    0 < n →
+      active kind (CollatzDirected.oddCore n) →
+        CollatzReverseBasin.Hits (CollatzSourceWitness.known kind n) clock →
+          CollatzSourceWitness.ClockHyp active clock → CollatzReverseBasin.Basin (CollatzSourceWitness.wanted kind n)
+def CollatzSourceWitness.EnergyComplete : ℕ → CollatzDirected.Active → Prop :=
+fun c active =>
+  ∀ (kind : CollatzDirected.Kind) (n clock : ℕ),
+    0 < n →
+      active kind (CollatzDirected.oddCore n) →
+        CollatzReverseBasin.Hits (CollatzSourceWitness.known kind n) clock →
+          CollatzSourceWitness.EnergyHyp c active
+              (CollatzSourceWitness.witnessEnergy c (CollatzSourceWitness.known kind n) clock) →
+            CollatzReverseBasin.Basin (CollatzSourceWitness.wanted kind n)
+'CollatzGapMultiset.less_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapMultiset.cancelled_replacement' depends on axioms: [propext, Quot.sound]
+'CollatzGapMultiset.unbounded_high_gap_replacement' depends on axioms: [propext, Quot.sound]
+'CollatzGapMultiset.ordinary_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapMultiset.collatz_of_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzHighGapPump.prefix_basin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzHighGapPump.whole_witness_rewrite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzHighGapPump.rewritten_sizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzHighGapPump.exponential_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzHighGapPump.fixed_base_prefix_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapLoops.whole_witness_rewrite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapLoops.apply_reverse_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapPump.whole_witness_rewrite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapPump.rewritten_sizes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.close' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.collatz_of_complete_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.collatz_of_complete_deep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.high_gap_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.low_gap_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.low_gap_pump_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.ordinary_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapComparison.compiled_reset_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapToPsi.forward_to_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapToPsi.low_loop_to_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapHandoffs.reverse_high_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapHandoffs.hplus_gap_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapHandoffs.hplus_gap_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapHandoffs.apply_reverse_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzGapHandoffs.hplus_one' does not depend on any axioms
+'CollatzAsymmetricPsiReset.whole_witness_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAsymmetricPsiReset.apply_psi_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAsymmetricPsiReset.parent_residue' depends on axioms: [propext, Quot.sound]
+'CollatzAsymmetricPsiReset.exponential_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAsymmetricPsiReset.depth_zero_guard' does not depend on any axioms
+def CollatzGapMultiset.Complete : CollatzDirected.Active → Prop :=
+fun active =>
+  ∀ (kind : CollatzDirected.Kind) (n e : ℕ) (gaps : List ℕ),
+    0 < n →
+      active kind (CollatzDirected.oddCore n) →
+        CollatzGapMultiset.PoweredCertificate (CollatzSourceWitness.known kind n) e gaps →
+          CollatzGapMultiset.Hyp active (CollatzGapMultiset.grades e gaps) →
+            CollatzReverseBasin.Basin (CollatzSourceWitness.wanted kind n)
+def CollatzGapComparison.Complete : CollatzGapComparison.Active → Prop :=
+fun active =>
+  ∀ (source target e : ℕ) (gaps : List ℕ),
+    active source target →
+      CollatzGapMultiset.PoweredCertificate source e gaps →
+        CollatzGapComparison.Hyp active (CollatzGapMultiset.grades e gaps) → CollatzReverseBasin.Basin target
+'CollatzPsiSuffix.whole_witness_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiSuffix.closes_without_twos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiSuffix.asymmetric_to_reverse_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiSuffix.asymmetric_small_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzMergerDenominatorClear.denominator_clear_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzMergerDenominatorClear.clearing_endpoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzMergerDenominatorClear.complete_witness_additive_rewrite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzMergerDenominatorClear.uniform_reverse_power_template' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzMergerDenominatorClear.quadratic_clock_below_order_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzMergerDenominatorClear.reverse_nine_low_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.cofinal_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.gaps_at_most_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.cofinal_alphabet_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.high_gap_replacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.large_even_replacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.high_gap_powered_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.interval_complete_of_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedGapCofinal.collatz_of_low_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRetainedEvenReset.doubling_prefix' depends on axioms: [propext, Quot.sound]
+'CollatzRetainedEvenReset.retained_even_rank' depends on axioms: [propext, Quot.sound]
+'CollatzRetainedEvenReset.whole_witness_interval_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.scaled_prefix_rewrite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.coefficient_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.first_gap_one_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.balanced_runs_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.compensated_gap_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.terminal_even_rule' depends on axioms: [propext, Quot.sound]
+'CollatzLowIntervalRefinement.matched_gap_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.shortened_gap_rank' depends on axioms: [propext, Quot.sound]
+'CollatzLowIntervalRefinement.shortened_gap_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowIntervalRefinement.synchronized_gap_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRetainedEvenBoundary.sibling_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRetainedEvenBoundary.boundary_prefix' depends on axioms: [propext, Quot.sound]
+'CollatzRetainedEvenBoundary.leading_large_gap_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzBoundedGapCofinal.LowIntervalStep : Prop :=
+∀ (source target e : ℕ) (gaps : List ℕ),
+  CollatzGapMultiset.PoweredCertificate source e gaps →
+    1 ≤ e →
+      e ≤ 3 →
+        (∀ (a : ℕ), a ∈ gaps → a ≤ 4) →
+          target % 2 = 1 →
+            source + 1 < target →
+              target ≤ 2 * source + 1 →
+                CollatzGapComparison.Hyp CollatzBoundedGapCofinal.Interval (CollatzGapMultiset.grades e gaps) →
+                  CollatzReverseBasin.Basin target
+'CollatzLowGapGlobal.odd_source_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapGlobal.nine_lattice_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapGlobal.negative_nine_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapGlobal.positive_nine_first_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzLowGapGlobal.positive_nine_two_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.paired_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.funded_prefix_interval' depends on axioms: [propext, Quot.sound]
+'CollatzClockSynchronization.whole_prefix_rewrite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.prefix_order_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.funded_prefix_rank' depends on axioms: [propext, Quot.sound]
+'CollatzClockSynchronization.funded_repayment_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.first_repayment_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.delayed_stats' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.delayed_repayment_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.delayed_affine_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.two_twos_residue_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.psi_head_two_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.psi_head_two_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.psi_four_twos_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzClockSynchronization.psi_four_twos_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiValuationOne.erase_initial_even' depends on axioms: [propext, Quot.sound]
+'CollatzPsiValuationOne.lattice_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiValuationOne.psi_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.shifted_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.evenDefect_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.evenDefect_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.coefficient_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.coefficient_strict_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.coefficient_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.allOdd_count' depends on axioms: [propext, Quot.sound]
+'CollatzSourceGreenCoefficient.allOdd_shifted_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.allOdd_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.even_input_before_large_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceGreenCoefficient.state_pow_two_pred' depends on axioms: [propext, Quot.sound]
+'CollatzSourceGreenCoefficient.allOdd_pow_two_pred' depends on axioms: [propext, Quot.sound]
+'CollatzSourceGreenCoefficient.initial_ascent' depends on axioms: [propext, Quot.sound]
+'CollatzSourceGreenCoefficient.cubic_surplus' depends on axioms: [propext, Quot.sound]
+'CollatzSourceGreenCoefficient.cubic_path_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzBoundedGapCofinal.LowIntervalStep : Prop :=
+∀ (source target e : ℕ) (gaps : List ℕ),
+  CollatzGapMultiset.PoweredCertificate source e gaps →
+    1 ≤ e →
+      e ≤ 3 →
+        (∀ (a : ℕ), a ∈ gaps → a ≤ 4) →
+          target % 2 = 1 →
+            source + 1 < target →
+              target ≤ 2 * source + 1 →
+                CollatzGapComparison.Hyp CollatzBoundedGapCofinal.Interval (CollatzGapMultiset.grades e gaps) →
+                  CollatzReverseBasin.Basin target
+'CollatzPsiOddValuations.two_step_diamond' depends on axioms: [propext, Quot.sound]
+'CollatzPsiOddValuations.odd_valuation_target_merge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiOddValuations.odd_valuation_target_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiOddValuations.psi_odd_valuation_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiOddValuations.psi_valuation_three_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiEvenHeadTwo.target_prefix' depends on axioms: [propext, Quot.sound]
+'CollatzPsiEvenHeadTwo.psi_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiEvenHeadFour.head_four_target_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPsiEvenHeadFour.replaced_four_rank' depends on axioms: [propext, Quot.sound]
+'CollatzPsiEvenHeadFour.retained_four_rank' depends on axioms: [propext, Quot.sound]
+'CollatzPsiEvenHeadFour.psi_even_head_four_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.certificate_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.core_value_bound' does not depend on any axioms
+'CollatzBoundedFourNormalForm.above_core_passes_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.eleven_certificate' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedFourNormalForm.canonical_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.cofinal_eleven_prefixes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.canonical_rank_cancel' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedFourNormalForm.terminal_padding_rank' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedFourNormalForm.terminal_padding_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.terminal_core_range' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedFourNormalForm.terminal_core_interval_rule' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedFourNormalForm.low_interval_of_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.eleven_interval_of_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.low_interval_iff_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedFourNormalForm.collatz_of_eleven_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+def CollatzBoundedFourNormalForm.ElevenIntervalStep : Prop :=
+∀ (source target e q : ℕ) (front : List ℕ),
+  source = 2 ^ e * q →
+    CollatzHighGapPump.Prefix q front 11 →
+      front ≠ [] →
+        1 ≤ e →
+          e ≤ 3 →
+            (∀ (a : ℕ), a ∈ front → a ≤ 4) →
+              target % 2 = 1 →
+                source + 1 < target →
+                  target ≤ 2 * source + 1 →
+                    CollatzGapComparison.Hyp CollatzBoundedGapCofinal.Interval
+                        (CollatzGapMultiset.grades e (front ++ CollatzBoundedFourNormalForm.elevenTail)) →
+                      CollatzReverseBasin.Basin target
+'CollatzSignedShadow.source_odd' does not depend on any axioms
+'CollatzSignedShadow.endpoint_odd' does not depend on any axioms
+'CollatzSignedShadow.positive_gaps' depends on axioms: [propext, Quot.sound]
+'CollatzSignedShadow.affine_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.nat_odd_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.int_odd_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.next_signed_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.trace_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.cleared_magnitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.clock_below_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.endpoint_below_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.prefix_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.compile_signed_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.separated_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSignedShadow.separated_shadow_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.power_nine_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.binary_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.coset_reachable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.three_even_coset_reachable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.three_coset_reachable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.two_pattern_cosets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.alternating_identity' depends on axioms: [propext, Quot.sound]
+'CollatzDyadicCoset.alternating_phase' depends on axioms: [propext, Quot.sound]
+'CollatzDyadicCoset.alternating_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDyadicCoset.alternating_residue_forcing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBinaryRunForcing.ordinary_clock_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBinaryRunForcing.actual_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBinaryRunForcing.actual_pattern_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]

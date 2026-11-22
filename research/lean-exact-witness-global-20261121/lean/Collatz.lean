@@ -29,3 +29,7 @@ import Collatz.SourceGreenCoefficient
 import Collatz.PsiOddValuations
 import Collatz.PsiEvenHeadTwo
 import Collatz.PsiEvenHeadFour
+import Collatz.BoundedFourNormalForm
+import Collatz.SignedShadow
+import Collatz.DyadicCoset
+import Collatz.BinaryRunForcing

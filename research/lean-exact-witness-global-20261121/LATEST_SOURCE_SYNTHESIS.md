@@ -6,7 +6,68 @@ new commits on older PRs. It used those interfaces to construct the new
 source-gap multiset program. This is a focused research synthesis, not a fresh
 independent replay of every imported project.
 
-## Current refresh: 2026-11-22
+## Current whole-repository synthesis: 2026-11-22
+
+The current continuation starts from published PR177 head
+`9af9118a7e9af870a32a72a4efdcf77e886940ec`, tree
+`58bd01fa0f9cd86dd3d42bbab2f4373bfbe9acb0`. The complete available open-PR
+metadata inventory has 122 entries, obtained in two pages. It is preserved in
+[`SOURCE_REFRESH.json`](../../reports/lean-exact-witness-global-20261121/global-synthesis/SOURCE_REFRESH.json).
+This inventory and the mathematical reading have different scopes: no
+independent proof audit of every file or every branch is claimed.
+
+| PR | Frozen head for this continuation | Relevant current interface |
+|---|---|---|
+| 175 | `54b5a324f55d97925ecb8100aa15ce7b08a12093` | Latest canonical-potential, inverse completeness, and population qualifications. |
+| 176 | `c83a8459066d8223aefe7fc5f6b75faeea557345` | Ordinary last-contact measures, contact clocks, and unchanged source envelopes. |
+| 178 | `f464ddf2af6e340054673fdd6f5b28aba0310c10` | Independent block exponents, escaping minimum moments, bounded tail-preserving inverse selector, and the paid gap-four capture composition. |
+| 180 | `cfe70e02f246119a55fb5bf8fd573f148d746beb` | Total arbitrary-debt arithmetic and an enlarged successful source grammar; exact terminal debt still represents every positive target. |
+| 182 | `9dacd610ba7735e89e2e29e4ab01795983317980` | Canonical Green bounds, polynomial-phase rigidity, and the retained ordinary escape-label boundary. |
+| 183 | `68345f60a4f757acb42a69a4ac95910f8ce26163` | Independent cycle blocks, arbitrary debt, source-grade capture, and ordinary asynchronous harmonic channels. |
+| 185 | `7889fc680f5ee22237732eccc172b1699ef565da` | Independent bounded-power languages, unbounded carries, and finite critical spikes forcing small ancestors. |
+| 141 | `5025ef464d4b6d4f4a412a3e33c3477de68dfa8b` | Bounded-popcount finite cores and ordinary mixed-base source ranks; the antecedent to the signed binary-run extension. |
+| 186 | `1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493` | Cross-program architecture and ordinary-realization requirements. Used for orientation, with no imported external theorem. |
+
+The integrated map, scoped errata, and older rank/pressure/component programs
+were also consulted at the heads recorded in the snapshot. Peer statements
+retain their stated written, formal, and source-qualified boundaries. No peer
+analytic result is added as a Lean axiom.
+
+### What the combined attack changes
+
+The total carry compiler removes missing arithmetic transitions, but success
+of every carry run still requires a coverage argument. The complete source
+can now be normalized independently: every unbounded alphabet-four source
+has a literal prefix to 11 and the same fixed terminal word `[1,2,3,4]`.
+`low_interval_iff_eleven` proves that replacing the old residual dispatcher
+by this canonical one changes neither its scope nor its induction premise.
+All finite terminal motifs and all nonempty terminal-two padding are closed.
+The common tail cancels from the exact preexisting grade.
+
+The binary-run route supplies a separate global dynamical theorem for
+arbitrary ordinary parity words. A low-run odd source above its explicit
+core has a large signed binary gap. Powers of nine reach every residue in
+the required dyadic coset, and a signed low shadow carries the resulting
+alternating high pattern to an actual positive iterate before the original
+binary-height clock. The joined ordinary arithmetic is formalized in
+`BinaryRunForcing`; the binary combinatorics prove bounded-run periodicity
+and positive high-run occupation on every escape.
+
+The analytic continuation keeps the original source weights and ordinary
+clock. One escaping atom forces divergent run moment in its unchanged-source
+transport. Existing minimum moments, last-contact bounds, and finite-spike
+small-ancestor estimates are checked against that exact observable in
+[SOURCE_PROGRESS_AND_RUN_MASS.md](SOURCE_PROGRESS_AND_RUN_MASS.md). They do
+not prove the matching uniform upper bound. In particular, a smaller ancestor
+relative to a far-forward endpoint need not be smaller than the original
+component minimum.
+
+The two unproved full-theorem steps are stated directly: total successful
+coverage of `ElevenIntervalStep`, or an ordinary source-preserving mechanism
+that rules out the escaping occupation alternative together with all
+nontrivial cycles. None is asserted by the current checkpoint.
+
+## Previous refresh: 2026-11-22
 
 The current pass starts from published PR177 head
 `a0a0d76f91b4e3846c1b1f0706cad56cb6098317`. It reads new research interfaces

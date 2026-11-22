@@ -176,3 +176,55 @@ import Collatz
 #print axioms CollatzPsiEvenHeadFour.replaced_four_rank
 #print axioms CollatzPsiEvenHeadFour.retained_four_rank
 #print axioms CollatzPsiEvenHeadFour.psi_even_head_four_rule
+
+-- Exact canonical language for the entire residual interval obligation.
+#print axioms CollatzBoundedFourNormalForm.certificate_normal_form
+#print axioms CollatzBoundedFourNormalForm.core_value_bound
+#print axioms CollatzBoundedFourNormalForm.above_core_passes_eleven
+#print axioms CollatzBoundedFourNormalForm.eleven_certificate
+#print axioms CollatzBoundedFourNormalForm.canonical_certificate
+#print axioms CollatzBoundedFourNormalForm.cofinal_eleven_prefixes
+#print axioms CollatzBoundedFourNormalForm.canonical_rank_cancel
+#print axioms CollatzBoundedFourNormalForm.terminal_padding_rank
+#print axioms CollatzBoundedFourNormalForm.terminal_padding_interval_rule
+#print axioms CollatzBoundedFourNormalForm.terminal_core_range
+#print axioms CollatzBoundedFourNormalForm.terminal_core_interval_rule
+#print axioms CollatzBoundedFourNormalForm.low_interval_of_eleven
+#print axioms CollatzBoundedFourNormalForm.eleven_interval_of_low
+#print axioms CollatzBoundedFourNormalForm.low_interval_iff_eleven
+#print axioms CollatzBoundedFourNormalForm.collatz_of_eleven_prefix
+#print CollatzBoundedFourNormalForm.ElevenIntervalStep
+
+-- Unrestricted signed shadows and actual positive ordinary endpoints.
+#print axioms CollatzSignedShadow.source_odd
+#print axioms CollatzSignedShadow.endpoint_odd
+#print axioms CollatzSignedShadow.positive_gaps
+#print axioms CollatzSignedShadow.affine_identity
+#print axioms CollatzSignedShadow.nat_odd_factor
+#print axioms CollatzSignedShadow.int_odd_factor
+#print axioms CollatzSignedShadow.next_signed_gap
+#print axioms CollatzSignedShadow.trace_exists
+#print axioms CollatzSignedShadow.cleared_magnitude
+#print axioms CollatzSignedShadow.clock_below_separation
+#print axioms CollatzSignedShadow.endpoint_below_separation
+#print axioms CollatzSignedShadow.prefix_orbit
+#print axioms CollatzSignedShadow.compile_signed_lift
+#print axioms CollatzSignedShadow.separated_shadow
+#print axioms CollatzSignedShadow.separated_shadow_certificate
+
+-- Every dyadic coset and the explicit alternating high-block patterns.
+#print axioms CollatzDyadicCoset.power_nine_exact
+#print axioms CollatzDyadicCoset.binary_lift
+#print axioms CollatzDyadicCoset.coset_reachable
+#print axioms CollatzDyadicCoset.three_even_coset_reachable
+#print axioms CollatzDyadicCoset.three_coset_reachable
+#print axioms CollatzDyadicCoset.two_pattern_cosets
+#print axioms CollatzDyadicCoset.alternating_identity
+#print axioms CollatzDyadicCoset.alternating_phase
+#print axioms CollatzDyadicCoset.alternating_bounds
+#print axioms CollatzDyadicCoset.alternating_residue_forcing
+
+-- Joined finite arithmetic on the same actual ordinary orbit.
+#print axioms CollatzBinaryRunForcing.ordinary_clock_budget
+#print axioms CollatzBinaryRunForcing.actual_pattern
+#print axioms CollatzBinaryRunForcing.actual_pattern_of_gap

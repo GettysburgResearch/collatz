@@ -3,17 +3,85 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint closes every odd-initial-valuation psi query and the
-complete initial-valuation-two cases with first source gap two or four,
-under the original lower-rank interval hypothesis. It builds on whole-prefix
-repayment, uniform carry returns, and the cofinal alphabet-four reduction.
-The complete supplied source tails remain controlled in the same rank.
-A complete recursive cover of the remaining interval states is still missing.
+The latest checkpoint makes the whole remaining certificate language canonical:
+its unbounded part is an actual prefix ending at 11, followed by the fixed
+tail `[1,2,3,4]`. A separate global attack proves binary-run compactness and
+quantitative high-run occupation on every escaping ordinary orbit. The joined
+signed-shadow and modular-forcing arithmetic is checked in Lean; the complete
+binary combinatorics and occupation deductions have written proofs.
+A complete recursive cover of the canonical prefix states is still missing.
 These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: whole valuation branches and the remaining psi cell
+## Latest checkpoint: a canonical global source language and binary-run compactness
+
+This continuation starts from published PR177 head
+`9af9118a7e9af870a32a72a4efdcf77e886940ec`. The fresh inventory covers all
+122 open PRs in two API pages; the mathematical reading is selective, including
+the seven updated recent branches and the older binary-rank program. Exact
+source pins and the inspection boundary are in
+[LATEST_SOURCE_SYNTHESIS.md](LATEST_SOURCE_SYNTHESIS.md) and the
+[snapshot](../../reports/lean-exact-witness-global-20261121/global-synthesis/SOURCE_REFRESH.json).
+
+### One fixed tail for the full residual dispatcher
+
+[Bounded-four normal form](BOUNDED_FOUR_NORMAL_FORM.md) proves that every
+complete certificate over gaps one through four is either a finite terminal
+motif with arbitrary terminal twos, or is literally
+
+\[
+P\;\Vert\;[1,2,3,4]\;\Vert\;2^{[k]},
+\qquad \operatorname{Prefix}(q,P,11).
+\]
+
+The seven terminal source values are `1,3,5,13,17,45,69`. Nonempty terminal
+padding is removed by the existing strict whole-source rank. The residual
+`LowIntervalStep` is **equivalent** to `ElevenIntervalStep`: a nonempty
+alphabet-four prefix to 11, no arbitrary supplied suffix, and no terminal
+padding. The common fixed tail cancels exactly from the grade comparison.
+This is an all-length kernel-checked normalization of the entire interval
+obligation. The resulting global closing theorem retains
+`ElevenIntervalStep` as its explicit, unproved premise.
+
+### A full-word escape constraint from binary runs
+
+[Binary-run compactness](BINARY_RUN_COMPACTNESS.md) uses the number `R(n)` of
+maximal one-runs in the binary expansion. For every `S>=1`, put
+
+\[
+J_S=4^S-1,\qquad C_S=2^{(2S-1)(2\cdot4^S-1)}.
+\]
+
+Every odd `n>=C_S` has an actual iterate with more than `S` runs within
+`J_S` odd events and at most `floor(log_2 n)` ordinary clocks. Thus an
+eventually bounded-run orbit is eventually periodic inside an explicit
+finite core. On every escaping odd orbit, each sufficiently late block
+of `4^S` odd states contains a state with more than `S` runs. In particular,
+the Cesaro mean of `4^R` tends to infinity.
+
+This covers numbers with arbitrarily many set bits, such as `2^k-1`.
+The core is not numerically enumerated. The proof assembles a signed binary
+gap, an exact ordinary shadow, and a uniformly reachable alternating
+high-block residue. `BinaryRunForcing.actual_pattern` checks the joined
+physical conclusion in Lean. The conversion from literal bit patterns to
+run counts, the finite-core argument, and the asymptotic consequences are
+written mathematics with their formal boundary stated explicitly.
+
+[Original-source run mass](SOURCE_PROGRESS_AND_RUN_MASS.md) retains the same
+starting atom and converts the occupation estimate to the ordinary shortcut
+clock. Any unchanged-source positive atomic transport containing an escaping
+atom has divergent Cesaro run moment. The latest canonical-potential and
+contact estimates do not supply the finite-moment upper bound needed to
+exclude that alternative. Possible nontrivial cycles remain a separate
+closure obligation.
+
+The four new core-Lean modules are `BoundedFourNormalForm`, `SignedShadow`,
+`DyadicCoset`, and `BinaryRunForcing`. Source hashes, fresh compiler and axiom
+logs, exact structural replays, and the complete-checkout gate are recorded
+under [reports/global-synthesis](../../reports/lean-exact-witness-global-20261121/global-synthesis/).
+
+## Previous checkpoint: whole valuation branches and the remaining psi cell
 
 The continuation after published checkpoint eight
 (`2efabba9a341839b67ed011d6b878b23730ee51d`) adds three core-Lean modules.
