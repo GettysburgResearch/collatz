@@ -1,0 +1,112 @@
+{
+  "schema": "collatz-retained-source-files/v1",
+  "parent": "a66a44c9bf058cd7efe1018827ddda9a13297a21",
+  "scope": "All new checkpoint files except this self-referential inventory. Hashes bind actual source and review bytes.",
+  "files": [
+    {
+      "path": "reports/2026-11-22-retained-source-attacks/REVIEW_SCOPE.json",
+      "sha256": "fc78f9075060fe97ee80ab628841d5a8f8518c7946999364eb471fbb87858711",
+      "bytes": 3027
+    },
+    {
+      "path": "reports/2026-11-22-retained-source-attacks/VERIFICATION.md",
+      "sha256": "3646426c462ec22a61d9837cbfa04583db258ef8c5f3a14893ab0543845bd175",
+      "bytes": 4216
+    },
+    {
+      "path": "reports/2026-11-22-retained-source-attacks/lean-build.log",
+      "sha256": "4c1f022551a2bfd3fd2e47921d3875c82eb987941d45067a378c1ea9283f1b30",
+      "bytes": 542
+    },
+    {
+      "path": "reports/2026-11-22-retained-source-attacks/lean-check.json",
+      "sha256": "f6d520f6e53073ccafe413c6eb00a038e40589f1366248b0bf3f1dfc91e0be56",
+      "bytes": 1855
+    },
+    {
+      "path": "reports/2026-11-22-retained-source-attacks/pr-description-before.json",
+      "sha256": "5a9e00b39c667271d94d11de317a7331e51f3e98948c6273df974928fd4d55af",
+      "bytes": 10166
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/ANALYTIC_PARAMETER.md",
+      "sha256": "c4d81e33b76a2b92901365c11325aa90c1777939711c03fd833d2d91f84bad22",
+      "bytes": 9959
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/CANONICAL_CHARGE.md",
+      "sha256": "979d6be5c4345489c3a71b1e1696ce60bb675d9000bc0800a6cb4ec04557566c",
+      "bytes": 13815
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/DEPENDENCIES.json",
+      "sha256": "6e4fec7349f0392548df04fd362384616b820b5deac4963350c3c4364fb22937",
+      "bytes": 338
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/LEGAL_DESCENT.md",
+      "sha256": "32c2bf30b863fa78eafc33f3d7366b626e1382094241664e7c4cfc40802f8fb8",
+      "bytes": 9448
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/LITERATURE.json",
+      "sha256": "52603eb3f7d233b1180203eff17b86f1c972e66408dd708a522514d5b3336d46",
+      "bytes": 3146
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/README.md",
+      "sha256": "d732255cd37313fa3a2035fbdc7207a4249ef1036992e08ed368a0de601725e9",
+      "bytes": 7571
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/REVIEW_ANALYTIC_PARAMETER.md",
+      "sha256": "a833e56aad5fa19c2dd3e1b04c9782e700de423ea479f1607b9223628b929eed",
+      "bytes": 4844
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/REVIEW_CANONICAL_CHARGE.md",
+      "sha256": "ead564ea24c6d5bd5fd203f8c75dad3a9b09f37d93f8fd60c8bcdd0cb7c10e4b",
+      "bytes": 7377
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/REVIEW_LEGAL_DESCENT.md",
+      "sha256": "940a4fc6fcb096fae7499193eaf8847537c914ae20e645bbf0e3b9504e0c7df7",
+      "bytes": 3639
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/REVIEW_SIBLING_MASS.md",
+      "sha256": "ecf5f312a83a51d5ef2983fe8ab50506976aaee69ca1c91133934499b7f60959",
+      "bytes": 9650
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/SIBLING_MASS.md",
+      "sha256": "91f150e225fbe1c8c714792557714c35ffbf2328fd46094cfbba60413cfb6f8b",
+      "bytes": 16753
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/SOURCES.json",
+      "sha256": "ff5beac223d073b58748d8e4ed1b8f0143ca0dc6e95f46d2c4bd8e46f231fbf2",
+      "bytes": 38699
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/THEOREMS.json",
+      "sha256": "6f4cb2fdf9b33b1d2a568e639e335a5635811cf5dc4a3021dd8049057d225abc",
+      "bytes": 401
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/check_lean.py",
+      "sha256": "c691ec6be081b1e696a7356ef212eb24606343bc977d63156347028e0c21bb4b",
+      "bytes": 6798
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/lean/SurvivalAudit.lean",
+      "sha256": "81aaf69137c451cacac7991f51e98c5b854137892d4df7b98e2850615d704d04",
+      "bytes": 177
+    },
+    {
+      "path": "research/retained-source-attacks-20261122/lean/SurvivalCurvature.lean",
+      "sha256": "f667a8b1292126ec77ce3889ab432dae22655b1595e1a82e5da02d426bec80d0",
+      "bytes": 3127
+    }
+  ]
+}

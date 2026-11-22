@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "warnings_as_errors": true,
+  "fresh_local_module_output": true,
+  "module_count": 2,
+  "new_public_theorem_count": 2,
+  "modules": [
+    {
+      "module": "SurvivalCurvature",
+      "kind": "new",
+      "path": "research/retained-source-attacks-20261122/lean/SurvivalCurvature.lean",
+      "expected_audits": 2,
+      "sha256": "f667a8b1292126ec77ce3889ab432dae22655b1595e1a82e5da02d426bec80d0",
+      "exit_code": 0,
+      "seconds": 2.155,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 2
+    },
+    {
+      "module": "SurvivalAudit",
+      "kind": "audit",
+      "path": "research/retained-source-attacks-20261122/lean/SurvivalAudit.lean",
+      "expected_audits": 2,
+      "sha256": "81aaf69137c451cacac7991f51e98c5b854137892d4df7b98e2850615d704d04",
+      "exit_code": 0,
+      "seconds": 1.392,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 2
+    }
+  ],
+  "scope": "Pinned dependencies, all public theorems in THEOREMS.json, and a separate complete axiom audit.",
+  "not_formalized": [
+    "The imported actual-path population and canonical harmonic construction",
+    "The modular-routing count, infinite density limits, and critical-mass consumer",
+    "The canonical KL budget, whole-path law, and nonremovable pole",
+    "The entire operator growth, infinite products, and Laplace representation",
+    "The nonlocal complete-source surgery and universal target descent",
+    "Universal Collatz convergence or exclusion of nontrivial positive cycles"
+  ]
+}

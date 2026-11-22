@@ -1,0 +1,4 @@
+import SurvivalCurvature
+
+#print axioms CollatzRetained.SurvivalCurvature.survival_moment_defect
+#print axioms CollatzRetained.SurvivalCurvature.ordinary_survival_strict_defect

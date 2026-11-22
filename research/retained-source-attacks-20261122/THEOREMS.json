@@ -1,0 +1,14 @@
+{
+  "public_theorem_count": 2,
+  "modules": [
+    {
+      "module": "SurvivalCurvature",
+      "namespace": "CollatzRetained.SurvivalCurvature",
+      "theorems": [
+        "survival_moment_defect",
+        "ordinary_survival_strict_defect"
+      ]
+    }
+  ],
+  "scope": "The literal finite survival polynomial and its formal first two derivatives; not the infinite analytic or Collatz assertions."
+}

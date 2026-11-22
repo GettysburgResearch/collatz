@@ -1,0 +1,12 @@
+MODULE SurvivalCurvature
+'CollatzRetained.SurvivalCurvature.survival_moment_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRetained.SurvivalCurvature.ordinary_survival_strict_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE SurvivalAudit
+'CollatzRetained.SurvivalCurvature.survival_moment_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRetained.SurvivalCurvature.ordinary_survival_strict_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

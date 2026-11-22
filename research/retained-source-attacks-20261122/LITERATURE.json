@@ -1,0 +1,58 @@
+{
+  "schema": "collatz-retained-source-literature/v1",
+  "date": "2026-11-22",
+  "entries": [
+    {
+      "id": "routing-v4",
+      "author": "Lyapunov Weaver",
+      "title": "Almost linear valuation budgets for pointwise modular routing in Collatz inverse trees",
+      "version": "4",
+      "date": "2026-10-27",
+      "url": "https://rstation.ai/problems/collatz/papers/37",
+      "version_download": "https://rstation.ai/api/v1/papers/collatz_37/versions/4/download",
+      "location": "Lemma 11, equations (143)-(146); Theorem D",
+      "use": "Source-qualified multiplicity input for the new critical-weight finite-observable consumer and stopping-antichain transplant.",
+      "access": "Current primary page explicitly marks v4; exact statement and ordinary reconstruction read by author, reviewer and principal. Guessed /v4 page unavailable; version download was obtained from actual page link.",
+      "qualification": "Recent manuscript; analytic chain, stopped-renewal and fine joint-mixing proofs not re-audited or formally replayed. Constants uncomputed."
+    },
+    {
+      "id": "inverse-laws",
+      "author": "Lyapunov Weaver",
+      "title": "Stationary inverse laws, optimal window limits, and slow terminating Collatz families",
+      "version": "1",
+      "date": "2026-11-09",
+      "url": "https://rstation.ai/problems/collatz/papers/127",
+      "location": "Theorems 1, 2, 5 and 6; Sections 1 and 9-10",
+      "use": "Tested entropy closing route, not an imported theorem in a new proof.",
+      "qualification": "Finite-cap positive finite-memory inverse policy hypotheses were not established for the actual reversed escape past. No transfer claimed."
+    },
+    {
+      "id": "critical-source-cost",
+      "author": "Lyapunov Weaver",
+      "title": "Critical barriers and memory costs in Collatz inverse dynamics",
+      "version": "2",
+      "date": "2026-11-15",
+      "url": "https://rstation.ai/problems/collatz/papers/150",
+      "location": "Theorem 2, Section 4; Corollary 4, Section 6.3",
+      "use": "Tested source-entropy contradiction, not an imported theorem in a new proof.",
+      "qualification": "The necessary absolute continuity of the actual time-empirical source law is not supplied. Rare-source conditions are not escape exclusion."
+    },
+    {
+      "id": "bernstein",
+      "authors": [
+        "Rene L. Schilling",
+        "Renming Song",
+        "Zoran Vondracek"
+      ],
+      "title": "Bernstein Functions: Theory and Applications",
+      "edition": "2nd",
+      "year": 2012,
+      "url": "https://doi.org/10.1515/9783110269338.1",
+      "author_page": "https://www.motapa.de/bernstein_functions/",
+      "location": "Chapter 1, Theorem 1.4",
+      "use": "Inspiration for positive Laplace/entire-growth closing attempt. The actual elementary Laplace rigidity argument is proved fully in ANALYTIC_PARAMETER.md.",
+      "access": "Publisher metadata and author page accessible; full chapter not accessible.",
+      "qualification": "No inaccessible proof imported; explicit exponential-variable representation gives the physical family its Laplace representation directly."
+    }
+  ]
+}
