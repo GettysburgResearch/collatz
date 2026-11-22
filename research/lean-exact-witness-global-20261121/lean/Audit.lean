@@ -335,3 +335,42 @@ import Collatz
 #print axioms CollatzSegmentFloor.correction_forces_floor_failure
 #print axioms CollatzSegmentFloor.actual_return_below_floor
 #print axioms CollatzSegmentFloor.ratio_forces_return
+
+-- Checkpoint fourteen: BinaryRunClock; finite kernel-checked arithmetic.
+#print axioms CollatzBinaryRunClock.fromBit_zero
+#print axioms CollatzBinaryRunClock.fromBit_step
+#print axioms CollatzBinaryRunClock.runs_zero
+#print axioms CollatzBinaryRunClock.even_fromBit
+#print axioms CollatzBinaryRunClock.odd_fromBit
+#print axioms CollatzBinaryRunClock.runs_double
+#print axioms CollatzBinaryRunClock.runs_odd
+#print axioms CollatzBinaryRunClock.runs_four_one
+#print axioms CollatzBinaryRunClock.runs_mul_pow_two
+#print axioms CollatzBinaryRunClock.runs_positive_of_odd
+#print axioms CollatzBinaryRunClock.gap_bound
+#print axioms CollatzBinaryRunClock.triple_add_one_runs
+#print axioms CollatzBinaryRunClock.edge_runs
+#print axioms CollatzBinaryRunClock.prefix_clock_bound
+#print axioms CollatzBinaryRunClock.capped_prefix_clock
+#print axioms CollatzBinaryRunClock.prefix_runs_bound
+#print axioms CollatzBinaryRunClock.scaled_source_height_bound
+#print axioms CollatzBinaryRunClock.source_height_bound
+#print axioms CollatzBinaryRunClock.capped_endpoint_source_bound
+
+-- Checkpoint fourteen: ContextSurgery; finite kernel-checked arithmetic.
+#print axioms CollatzContextSurgery.carry_step_identity
+#print axioms CollatzContextSurgery.carry_word_length
+#print axioms CollatzContextSurgery.carry_word_clock
+#print axioms CollatzContextSurgery.carry_word_append
+#print axioms CollatzContextSurgery.carry_word_prefix
+#print axioms CollatzContextSurgery.carry_word_certificate
+#print axioms CollatzContextSurgery.carry_source_grows
+#print axioms CollatzContextSurgery.carry_interval_rule
+#print axioms CollatzContextSurgery.suffix_exit_rule
+#print axioms CollatzContextSurgery.dead_endpoint
+#print axioms CollatzContextSurgery.raise_gap_two
+#print axioms CollatzContextSurgery.raised_predecessor_residue
+#print axioms CollatzContextSurgery.four_one_seed
+#print axioms CollatzContextSurgery.unchanged_context_blocks_seed
+#print axioms CollatzContextSurgery.seventy_seven_predecessors
+#print axioms CollatzContextSurgery.all_length_seed_growth_failure

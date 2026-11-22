@@ -6,7 +6,46 @@ new commits on older PRs. It used those interfaces to construct the new
 source-gap multiset program. This is a focused research synthesis, not a fresh
 independent replay of every imported project.
 
-## Latest continuation: the joint minimum and a measure-level boundary bridge
+## Latest continuation: exact Green cutoffs and uniform arithmetic occupation
+
+The continuation from PR177 head
+`e4ca639326bac73da8c2a698dec8a749e5efbe68` froze the following newly advanced
+peer heads: PR175 `08fe1388ad63c758680b3695249aca319515c47d`, PR176
+`00018ce11fa657b5f3fae072e5567a1d93184c2b`, PR178
+`9d4ae09cd50ccd54036141edc3938d2cabe786fd`, PR180
+`a66a44c9bf058cd7efe1018827ddda9a13297a21`, and PR185
+`980d40fc4afeaaf8f2a9256f322acf3e4568e013`. PR183 remained at
+`68345f60a4f757acb42a69a4ac95910f8ce26163`.
+
+PR175's exact run-weight commutator retains twice the canonical escaping
+coefficient. Its earlier proposed cutoff-uniform upper bound therefore
+does not follow from the finite static forcing. The new
+[energy continuation](ENERGY_TRANSPORT_CONTINUATION.md) goes beyond that
+supremum by determining both energy signs uniformly for every relationship
+between Green depth and actual time; the omitted tail remains non-negligible.
+
+PR183 already classifies cycles in every fixed list of arbitrary repeated
+parity atoms with independent exponent counts. A comparable-exponent
+Corvaja--Zannier application was therefore not promoted as new cycle
+progress. The new [arithmetic continuation](ARITHMETIC_CYCLE_CONTINUATION.md)
+instead obtains uniform sparse-endpoint finiteness and cycle occupation
+without a fixed word schema, using the original S-unit return and a new
+kernel-checked binary-run clock bound.
+
+The new [witness continuation](WITNESS_CLOSURE_CONTINUATION.md) permits
+unbounded arithmetic carry memory, exact complete-tail preservation, and
+target-aware early exit. This respects the finite-language obstructions
+in PR175 and PR176; it does not claim a complete successful selector.
+PR178's sibling distortion and PR180's whole-source surplus retain their
+open comparison/legality steps. PR185's actual ternary entropy ceiling
+does not supply the missing entropy lower bound for the same source.
+
+Exact selected paths and hashes are in
+[SOURCES.json](../../reports/lean-exact-witness-global-20261121/parallel-closure/SOURCES.json).
+Only the relevant deltas were read; prior Lean builds were not reclassified
+as fresh executions.
+
+## Previous continuation: the joint minimum and a measure-level boundary bridge
 
 The continuation after published checkpoint eleven
 `8ef9bf0d828fc533721dee1f90c5d78fac80ad39` re-read seven relevant PR heads.

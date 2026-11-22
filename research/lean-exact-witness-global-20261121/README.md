@@ -3,16 +3,15 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint uses the published Evertse--Schlickewei--Schmidt
-S-unit theorem to prove a new written finite-core return theorem for actual
-segments with sparse binary endpoints. On every escaping odd orbit, bounded
-binary-run times have upper Banach density zero. Hence every exponential
-run weight with base greater than one has divergent orbit averages. Under
-the pinned canonical analytic inputs this also forces divergence of the
-actual terminal energy for those weights, including an interval with finite
-canonical forcing. Its remaining transport commutator is not bounded.
-The finite floor-return arithmetic, all-clock correction bound, and exact
-fixed-block valuation loss are checked in three new core-Lean modules.
+The latest checkpoint proves a binary-run bound for the entire actual
+ordinary clock, upgrades the S-unit return theorem to finiteness of sparse
+endpoint pairs, and obtains a uniform occupation bound for both escaping
+orbits and positive cycles. It also determines every finite-Green energy
+diagonal under the pinned canonical inputs, including the nonvanishing
+moving cutoff contribution. A second new Lean module carries exact source
+surgery through arbitrary contexts while retaining the supplied complete
+tail and original target. Success of that carry program on every remaining
+counterquery is unproved.
 The preceding checkpoint combines least-target induction, minimum source grade,
 maximum source value at that grade, and the original target floor in one
 canonical counterquery. Its exact remaining proposition is `FloorIntervalStep`,
@@ -32,7 +31,87 @@ These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: S-unit return separation and subcritical run weights
+## Latest checkpoint: ordinary clock, cycle occupation, and Green cutoffs
+
+This continuation starts from the published head
+`e4ca639326bac73da8c2a698dec8a749e5efbe68`. Three parallel attacks pursued
+the actual source-to-endpoint mass comparison, complete witness surgery,
+and unrestricted cycle arithmetic. The newly advanced peer heads and
+selected source hashes are recorded in
+[the checkpoint-fourteen source snapshot](../../reports/lean-exact-witness-global-20261121/parallel-closure/SOURCES.json).
+
+### Binary complexity now bounds the full physical clock
+
+[`BinaryRunClock.lean`](lean/Collatz/BinaryRunClock.lean) defines the binary
+run count recursively and proves, for every actual positive odd edge,
+
+    a <= 2*runs(n),       runs(next)+1 <= 3*runs(n).
+
+The second inequality is proved by a finite multiplication-by-three
+transducer with all carry and boundary-bit states checked in Lean. For
+every supplied positive-gap prefix of length `h`, it gives
+
+    total(word) <= runs(n)*(3^h-1),
+    3^h*n <= 2^(S*(3^h-1))*endpoint       if runs(n) <= S.
+
+The estimate has no dependence on the initial binary length. In
+[the arithmetic continuation](ARITHMETIC_CYCLE_CONTINUATION.md), it converts
+the previous S-unit finite-core return into a bound on **both** endpoints.
+For each `S`, outside the same finite exceptional set of separations, there
+are only finitely many pairs `(n,U^h(n))` with both run counts at most `S`.
+
+The resulting uniform window inequality retains every visit to a fixed
+finite core. It implies that, for every fixed `S` and `epsilon>0`, only
+finitely many positive cycles can have an `epsilon` fraction of odd states
+with at most `S` runs. Every unbounded nondecreasing run weight therefore
+has an average tending to infinity along pairwise distinct cycles, as well
+as along escaping orbits. This does not exclude one additional positive
+cycle or supply a universal upper bound on these moments.
+
+### Every Green-depth diagonal is now identified
+
+[The transport continuation](ENERGY_TRANSPORT_CONTINUATION.md) retains the
+actual canonical `nu`, the original charge `d`, and `R_M=sum_(i<M) K^i(d/nu)`.
+For each fixed truncated run weight `w=min(rho^runs,W)`, the two signs of
+the actual `N`-step energy separately satisfy
+
+    sup_(M>=1) |Q_N,M^sign(w)-W*b_infinity*min(M/N,1)| -> 0.
+
+Thus the total finite-Green energy has coefficient `2*b_infinity` when
+`M>=N`. The full potential has only the increasing contribution, with
+coefficient `b_infinity`. The omitted tail `R-R_M` retains that full
+increasing contribution uniformly over **every** finite `M`. No finite-depth
+diagonal approximates the full potential in this physical energy under
+hypothetical escape.
+
+The proof uses a summable variation budget for each original charge,
+exact pulses on actual rays, and finite-source exhaustion. It includes
+killed paths and same-component cross terms. It is a written deduction
+under the pinned canonical construction; it is not a zero-escape proof.
+
+### Exact carry propagation through the supplied witness
+
+[`ContextSurgery.lean`](lean/Collatz/ContextSurgery.lean) checks an unbounded
+backward carry with state `(d,B)` representing the changed suffix source
+`2^d*m+B`. Its exact guard constructs every intermediate integer division.
+A successful completed run preserves the literal original tail and solves
+the original interval whenever the full source grade drops. A target-aware
+early exit may discard the unprocessed prefix and change the initial even
+exponent if the new complete source captures the original target.
+
+[The witness continuation](WITNESS_CLOSURE_CONTINUATION.md) preserves the
+remaining completeness claim. It also proves an all-length boundary for
+one proposed rule: after the `[4,1]` seed at source 37, the entire
+gap-at-most-three inverse tree of the new source 77 is
+`{77,51,205,273}`. It cannot regrow the actual enclosing odd source 461.
+The broader rank-accounted carry and target-aware exit remain available.
+
+[Checkpoint-fourteen execution and review scope](../../reports/lean-exact-witness-global-20261121/parallel-closure/)
+separates the new Lean proofs from the written infinite deductions.
+`FloorIntervalStep`, the original residue implication, and full Collatz
+remain unproved.
+
+## Previous checkpoint: S-unit return separation and subcritical run weights
 
 This continuation starts from published checkpoint twelve at
 `431d858d1ac92e88f4a58f6610c0d67733dc7242`. Five active peer branches
