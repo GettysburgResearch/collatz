@@ -6,6 +6,13 @@ repository-wide research map. It develops three globally quantified
 extensions of the latest work. None of the unresolved final estimates is
 installed as a Lean axiom.
 
+**Subsequent direct closing attempt:**
+[CENTRAL_CLOSURE_ATTEMPT.md](CENTRAL_CLOSURE_ATTEMPT.md) records attacks on
+universal target descent, the canonical escape boundary, and arbitrary
+source-word coverage after the next repository refresh. No closing
+implication was obtained. It is a failed-attempt record, not an addition
+to this packet's theorem count.
+
 ## What this pass establishes
 
 | Route | New conclusion | Evidence and boundary |
