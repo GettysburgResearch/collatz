@@ -1,0 +1,22 @@
+CollatzActualPhase.actual_fourier_harmonic_bound (q gap : ℕ → ℕ) (N : ℕ) (h : ℤ) (hpos : ∀ i ≤ N, 0 < q i)
+  (hdist : ∀ i < N, ∀ j < N, q i = q j → i = j) (hedge : ∀ i < N, 2 ^ gap i * q (i + 1) = 3 * q i + 1) :
+  ‖CollatzActualPhase.unitPhase (↑h * (Real.log 3 / Real.log 2)) - 1‖ *
+      ‖∑ i ∈ Finset.range N, CollatzActualPhase.unitPhase (↑h * (Real.log ↑(q i) / Real.log 2))‖ ≤
+    2 + 2 * Real.pi * |↑h| / (3 * Real.log 2) * ↑(harmonic N)
+CollatzActualPhase.actual_fourier_log_bound (q gap : ℕ → ℕ) (N : ℕ) (h : ℤ) (hpos : ∀ i ≤ N, 0 < q i)
+  (hdist : ∀ i < N, ∀ j < N, q i = q j → i = j) (hedge : ∀ i < N, 2 ^ gap i * q (i + 1) = 3 * q i + 1) :
+  ‖CollatzActualPhase.unitPhase (↑h * (Real.log 3 / Real.log 2)) - 1‖ *
+      ‖∑ i ∈ Finset.range N, CollatzActualPhase.unitPhase (↑h * (Real.log ↑(q i) / Real.log 2))‖ ≤
+    2 + 2 * Real.pi * |↑h| / (3 * Real.log 2) * (1 + Real.log ↑N)
+'CollatzActualPhase.logError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.unitPhase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.reciprocal_finset_le_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.reciprocal_range_le_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.logError_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.logError_le_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.logError_sum_le_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.log_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.fourier_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.phase_edge_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.actual_fourier_harmonic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzActualPhase.actual_fourier_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

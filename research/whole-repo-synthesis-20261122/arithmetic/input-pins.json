@@ -1,0 +1,38 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "accessed_utc_date": "2026-11-22",
+  "inputs": [
+    {
+      "pr": 176,
+      "head": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/EFFECTIVE_RUN_OCCUPATION.md",
+      "git_blob_sha1": "9ef7051d2a0a21337a22987035e045a8e753663d",
+      "sha256": "911d73f4b1ebb18b2046b999124707e8c5566fe2853729c0bacd3e14b343cea4",
+      "access_scope": "Primary GitHub blob read at the pinned head; written theorem/source inspection only. Not compiled or included in this packet's new Lean scope."
+    },
+    {
+      "pr": 176,
+      "head": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/LOGARITHMIC_SPARSE_RETURN_DESCENT.md",
+      "git_blob_sha1": "e7a52a794d2c715da581316041dc6937a1a3ad08",
+      "sha256": "086358d37609522226c5f585a07ecb2fff3e9e82e80c8289adfcf9bb7bd2725b",
+      "access_scope": "Primary GitHub blob read at the pinned head; written theorem/source inspection only. Not compiled or included in this packet's new Lean scope."
+    },
+    {
+      "pr": 177,
+      "head": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/ARITHMETIC_CYCLE_CONTINUATION.md",
+      "git_blob_sha1": "2bce059a1e57f365a4eb10e2505265923e379911",
+      "sha256": "a3c9113198564e4dac212782d5b6d3c270635c1fc9fe9a1e33cac75e5a8b7fc8",
+      "access_scope": "Primary GitHub blob read at the pinned head; written theorem/source inspection only. Not compiled or included in this packet's new Lean scope."
+    },
+    {
+      "pr": 177,
+      "head": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BinaryRunClock.lean",
+      "git_blob_sha1": "17deffcd22c6de4b8d11cff8c932d61d605679d6",
+      "sha256": "0a3bce12fd66cd4c13040f054b60f7626c653da1e77dcc837de8977531c041e3",
+      "access_scope": "Primary GitHub blob read at the pinned head; written theorem/source inspection only. Not compiled or included in this packet's new Lean scope."
+    }
+  ]
+}

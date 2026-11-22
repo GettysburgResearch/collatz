@@ -1,0 +1,36 @@
+{
+  "scope": "Exact all-clock finite merger control for target1263; no universal Collatz claim",
+  "success": true,
+  "script_sha256": "3e4d1147dafea00cc09ad1c107913738597cdda267684e50d88d65b7bdd97aee",
+  "fixture_sha256": "2eb495294203feebf1ca956deb88ea0b21bedec753ea4caace99da071732e107",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/56e7a5765d0c/collatz_reframe/research/whole-repo-synthesis-20261122/arithmetic/check_whole_word_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"explicit checks passed; target converges; no global proof asserted\", \"target\": 1263, \"smaller_forward_closed_set_size\": 2008, \"first_merger\": {\"target_clock\": 25, \"value\": 1622, \"smaller_start\": 1081, \"smaller_clock\": 1}, \"first_descent\": {\"target_clock\": 26, \"value\": 811}}\n",
+      "stderr": "",
+      "seconds": 0.063051
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/56e7a5765d0c/collatz_reframe/research/whole-repo-synthesis-20261122/arithmetic/check_whole_word_control.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"explicit checks passed; target converges; no global proof asserted\", \"target\": 1263, \"smaller_forward_closed_set_size\": 2008, \"first_merger\": {\"target_clock\": 25, \"value\": 1622, \"smaller_start\": 1081, \"smaller_clock\": 1}, \"first_descent\": {\"target_clock\": 26, \"value\": 811}}\n",
+      "stderr": "",
+      "seconds": 0.130219
+    }
+  ],
+  "fixture_unchanged": true
+}

@@ -1,5 +1,10 @@
 # Four direct attempts to use deep machinery for Collatz closure
 
+**Continuation:** [actual-orbit phase and whole-repository synthesis](../whole-repo-synthesis-20261122/README.md)
+adds a written polynomial phase estimate, its exact-edge Lean core, and
+further source-preserving closure attempts. This earlier packet retains
+its original claims and evidence below.
+
 **22 November 2026. Full Collatz remains OPEN.** Three collaborating
 researchers and the principal researcher pursued four distinct closing
 routes against the refreshed repository. No universal descent theorem,
