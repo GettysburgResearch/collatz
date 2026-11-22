@@ -1,0 +1,633 @@
+{
+  "schema": "collatz-independent-pq-v1",
+  "scope": "All independent integers a,b >= 1; no positive ordinary cycle P^a Q^b",
+  "p_word": "11100011110",
+  "q_word": "10",
+  "logarithm_terms": 128,
+  "tail_threshold_a": 16,
+  "matveev_constant": "4294967296",
+  "block_coefficient_K": "5838",
+  "translation_bound_B": "11400",
+  "total_clock_cutoff_H": "4722397970736130105600",
+  "farey_left": [
+    "7373006092034578625129",
+    "4651848916728231124485"
+  ],
+  "farey_right": [
+    "325919355854421968365",
+    "205632218873398596256"
+  ],
+  "generator_iterations": 241,
+  "finite_rows": [
+    {
+      "a": 2,
+      "b": 1,
+      "outcome": "nonzero_remainder",
+      "remainder": "1322520"
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "outcome": "nonzero_remainder",
+      "remainder": "357123025"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "outcome": "nonzero_remainder",
+      "remainder": "14285840638"
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "outcome": "nonzero_remainder",
+      "remainder": "65918433547"
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "outcome": "nonzero_remainder",
+      "remainder": "32401263169828"
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "402252053412583"
+    },
+    {
+      "a": 5,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 5,
+      "b": 2,
+      "outcome": "nonzero_remainder",
+      "remainder": "119788071344038217"
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "599255658109298218"
+    },
+    {
+      "a": 5,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "1099997013759388209"
+    },
+    {
+      "a": 6,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 6,
+      "b": 2,
+      "outcome": "nonzero_remainder",
+      "remainder": "153091991964424940686"
+    },
+    {
+      "a": 6,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "1509519477774635881664"
+    },
+    {
+      "a": 6,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "901773928452510532230"
+    },
+    {
+      "a": 6,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "20876977442398661996027"
+    },
+    {
+      "a": 7,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 7,
+      "b": 2,
+      "outcome": "nonzero_remainder",
+      "remainder": "49534277015924209382328"
+    },
+    {
+      "a": 7,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "480139718745429980321497"
+    },
+    {
+      "a": 7,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "10464904851618073714647387"
+    },
+    {
+      "a": 7,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "30666928585627065316979835"
+    },
+    {
+      "a": 7,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "32880667461538261824599568"
+    },
+    {
+      "a": 8,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 8,
+      "b": 2,
+      "outcome": "nonzero_remainder",
+      "remainder": "135163966851574687325784632"
+    },
+    {
+      "a": 8,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "4100724168872845734130933596"
+    },
+    {
+      "a": 8,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "27657563604950076292920216365"
+    },
+    {
+      "a": 8,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "95551004895097733251765606639"
+    },
+    {
+      "a": 8,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "345134567062796625111576231401"
+    },
+    {
+      "a": 8,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "13931754554944287059532506725"
+    },
+    {
+      "a": 9,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 9,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 9,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "9136369085590667879578452958349"
+    },
+    {
+      "a": 9,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "68328252871918314316522677839094"
+    },
+    {
+      "a": 9,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "19849293446233644641958435809720"
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "1543607943520752266957851746782582"
+    },
+    {
+      "a": 9,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "7505951032652187253987831940530391"
+    },
+    {
+      "a": 9,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "4623792865907181700955787204893434"
+    },
+    {
+      "a": 10,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 10,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 10,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "3305686314617086958323130285537606"
+    },
+    {
+      "a": 10,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "83593055508068675509285308551263025"
+    },
+    {
+      "a": 10,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "42719112192922304501074155741884377"
+    },
+    {
+      "a": 10,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "1976062748232329623931736285313356020"
+    },
+    {
+      "a": 10,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "138808942715657708794197537473569379"
+    },
+    {
+      "a": 10,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "57485056686158268519992754032720508350"
+    },
+    {
+      "a": 10,
+      "b": 9,
+      "outcome": "nonzero_remainder",
+      "remainder": "123185560253692831121283858696033759183"
+    },
+    {
+      "a": 11,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 11,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 11,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "22087466412829784513879137603162246840"
+    },
+    {
+      "a": 11,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "94315398933452459448997878081369798262"
+    },
+    {
+      "a": 11,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "899946255893168258521984391636572743086"
+    },
+    {
+      "a": 11,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "3440238838590877831775942083780674247218"
+    },
+    {
+      "a": 11,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "5986798751404677664228815895740165385298"
+    },
+    {
+      "a": 11,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "84432331474676348188509586451832396470237"
+    },
+    {
+      "a": 11,
+      "b": 9,
+      "outcome": "nonzero_remainder",
+      "remainder": "560465436728474168250422835889786314304869"
+    },
+    {
+      "a": 11,
+      "b": 10,
+      "outcome": "nonzero_remainder",
+      "remainder": "2055036687710329943631985722968259968123108"
+    },
+    {
+      "a": 12,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 12,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 12,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "21717448836952436989104447445408622660389"
+    },
+    {
+      "a": 12,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "159058908562171017191771545590414482245790"
+    },
+    {
+      "a": 12,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "2643977918024367190681215017419810587110406"
+    },
+    {
+      "a": 12,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "9855278867318469879272543348085604384838392"
+    },
+    {
+      "a": 12,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "32450854271823462098660977487996072089775937"
+    },
+    {
+      "a": 12,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "129306488859469628495343819789896916159973680"
+    },
+    {
+      "a": 12,
+      "b": 9,
+      "outcome": "nonzero_remainder",
+      "remainder": "630233280254652355017038980202695040309056106"
+    },
+    {
+      "a": 12,
+      "b": 10,
+      "outcome": "nonzero_remainder",
+      "remainder": "1183734791748852358553913744770470206383810949"
+    },
+    {
+      "a": 12,
+      "b": 11,
+      "outcome": "nonzero_remainder",
+      "remainder": "7139299999025082480403275524596546421052347236"
+    },
+    {
+      "a": 13,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 13,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 13,
+      "b": 3,
+      "outcome": "nonzero_remainder",
+      "remainder": "1488346106935229865922413528612098009299546"
+    },
+    {
+      "a": 13,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "525612145906813713772943648120574800446282149"
+    },
+    {
+      "a": 13,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "1773202764255708464942267889571043127218322504"
+    },
+    {
+      "a": 13,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "8370470004714312480566812552821438380299936817"
+    },
+    {
+      "a": 13,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "1229879358937063441115741638070377222563372893"
+    },
+    {
+      "a": 13,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "229958133765943739485368739007726322016504595371"
+    },
+    {
+      "a": 13,
+      "b": 9,
+      "outcome": "nonzero_remainder",
+      "remainder": "389870178499260015485026373850077930473265013599"
+    },
+    {
+      "a": 13,
+      "b": 10,
+      "outcome": "nonzero_remainder",
+      "remainder": "6846355235091129569458421339254204273142745166647"
+    },
+    {
+      "a": 13,
+      "b": 11,
+      "outcome": "nonzero_remainder",
+      "remainder": "27592681117332510074676592511602285522356728145740"
+    },
+    {
+      "a": 13,
+      "b": 12,
+      "outcome": "nonzero_remainder",
+      "remainder": "162398955081411011051081156324977195462092964093657"
+    },
+    {
+      "a": 14,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 14,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 14,
+      "b": 3,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 14,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "1194305604720544311305125516774021884553781584890"
+    },
+    {
+      "a": 14,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "1027443193373216786896303154805869246526286273637"
+    },
+    {
+      "a": 14,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "18312295648267894952509610804433492978119342341630"
+    },
+    {
+      "a": 14,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "175476244111907098503078347675038083897217197260514"
+    },
+    {
+      "a": 14,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "520165558508020842447487657330036432619980981634050"
+    },
+    {
+      "a": 14,
+      "b": 9,
+      "outcome": "nonzero_remainder",
+      "remainder": "4165415468508714537374534574403763376172115189083285"
+    },
+    {
+      "a": 14,
+      "b": 10,
+      "outcome": "nonzero_remainder",
+      "remainder": "3128543785496038916231089176013153709807118419371598"
+    },
+    {
+      "a": 14,
+      "b": 11,
+      "outcome": "nonzero_remainder",
+      "remainder": "84878251179469812338508627890580338084401385683498564"
+    },
+    {
+      "a": 14,
+      "b": 12,
+      "outcome": "nonzero_remainder",
+      "remainder": "63072810930173329720732505277952366300861766777545420"
+    },
+    {
+      "a": 14,
+      "b": 13,
+      "outcome": "nonzero_remainder",
+      "remainder": "864168621558350807082255049654421179116594620224526201"
+    },
+    {
+      "a": 15,
+      "b": 1,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 15,
+      "b": 2,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 15,
+      "b": 3,
+      "outcome": "nonpositive_denominator"
+    },
+    {
+      "a": 15,
+      "b": 4,
+      "outcome": "nonzero_remainder",
+      "remainder": "1825844352718340737463308689512239761447548279891617"
+    },
+    {
+      "a": 15,
+      "b": 5,
+      "outcome": "nonzero_remainder",
+      "remainder": "15243271206464273585960069066526242846124783151114911"
+    },
+    {
+      "a": 15,
+      "b": 6,
+      "outcome": "nonzero_remainder",
+      "remainder": "96473900025431526476357470331815438928129738489514923"
+    },
+    {
+      "a": 15,
+      "b": 7,
+      "outcome": "nonzero_remainder",
+      "remainder": "314692249025296470265254876740754927090113776619297336"
+    },
+    {
+      "a": 15,
+      "b": 8,
+      "outcome": "nonzero_remainder",
+      "remainder": "1433172194743443479210586622716619310335347842412696921"
+    },
+    {
+      "a": 15,
+      "b": 9,
+      "outcome": "nonzero_remainder",
+      "remainder": "6099385714551461075793447670929881593494298723146900912"
+    },
+    {
+      "a": 15,
+      "b": 10,
+      "outcome": "nonzero_remainder",
+      "remainder": "28027877567760199937137106726950928839934363049992731738"
+    },
+    {
+      "a": 15,
+      "b": 11,
+      "outcome": "nonzero_remainder",
+      "remainder": "61898320358657992275446137100487292202130550538399786493"
+    },
+    {
+      "a": 15,
+      "b": 12,
+      "outcome": "nonzero_remainder",
+      "remainder": "315298453272939928088311281535604969156572643419965211844"
+    },
+    {
+      "a": 15,
+      "b": 13,
+      "outcome": "nonzero_remainder",
+      "remainder": "2315502982563886507400194552685442062636253943871698585267"
+    },
+    {
+      "a": 15,
+      "b": 14,
+      "outcome": "nonzero_remainder",
+      "remainder": "3807958079998319140282688946452492979857584109383078499353"
+    }
+  ]
+}
