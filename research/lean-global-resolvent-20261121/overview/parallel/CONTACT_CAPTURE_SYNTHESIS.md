@@ -229,3 +229,52 @@ The first unsupported global assertion is now the concrete finite-time
 capture lower bound (8). The two successful attacks supply its exact
 stopped kernel, contact set, finite numerator, and normalization. The
 arithmetic and potential proofs do not by themselves supply its rate.
+
+## 7. A more selective capture target after the final parallel pass
+
+The [generic delayed-contact model](NATIVE_CONTACT_DELAY_COUNTERMODEL.md)
+shows that even a globally bounded canonical envelope need not have a
+native logarithmic contact clock. Its operator is different from the
+one in this note, so it does not refute (8) for the actual kernel. It
+does establish that minimality, harmonicity, inverse-ray atom removal,
+component normalization, finite-density bounds and predecessor population
+alone cannot justify the missing timing inference.
+
+There is no need to demand fast contact at roots whose envelope is already
+small. Fix `epsilon=1`, so `C={unit,V<=2}`, and write
+
+\[
+K_0=\frac{16}{\log(3/2)},\qquad \ell=\log(q+2).
+\]
+
+The proved finite front bound is `V(q)p_{L(q)}(q)<=K_0 q/ell^2` at the
+large roots where the chosen depth is valid. A strictly more selective
+alternative to an all-root reciprocal-logarithmic estimate is:
+
+> Find explicit `B,c>0` with `B*c>K_0` and an effective cutoff such that,
+> for every marked unit above it,
+> `V(q)>=B*q/ell` implies `p_{L(q)}(q)>=c/ell`.
+
+Indeed, the two inequalities would force
+
+\[
+B c\,q/\ell^2\le V(q)p_{L(q)}(q)
+\le K_0 q/\ell^2,
+\]
+
+contradicting `Bc>K_0`. Thus `V(q)<B q/ell` at every sufficiently large
+marked root. Any all-root bound `p>=c/ell` implies this selective premise
+after choosing `B>K_0/c`, but the selective premise places no requirement
+on roots below the desired height threshold.
+
+Another sufficient version asks for a fixed positive capture probability
+only when `V(q)>=q/ell`. It gives the same contradiction once
+`ell>K_0/c`. This version and the reciprocal-logarithmic version should
+not be conflated: their probability thresholds differ.
+
+These are written algebraic refinements of the existing interface, not
+new Lean theorems. Both actual-kernel estimates remain **OPEN**. The
+[selective standalone question](question_large_envelope_contact.txt)
+states the first version with its constants and actual kernel. An
+effective solution would still require the finite basin certificate
+below the resulting closing threshold.

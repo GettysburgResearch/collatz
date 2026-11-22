@@ -204,3 +204,43 @@ credited to [Ternary Syracuse laws, Theorem 9 and Appendix B.2](https://rstation
 with the fixed-clock injectivity attributed there to Tao's Lemma 6.2.
 The direct proofs here specify the ordinary domain, countable sums and
 actual clocks needed by this repository.
+
+## 5. Final parallel pass: concentrate on the large-envelope states
+
+The [delayed-contact countermodel](NATIVE_CONTACT_DELAY_COUNTERMODEL.md)
+has a different, explicitly specified weighted integer kernel. Its
+canonical envelope is bounded by three, every forward orbit converges,
+the finite densities are bounded, and inverse rays have no atoms.
+Nevertheless its contact probability is zero at the proposed logarithmic
+depth along infinitely many marked-shaped roots. This refutes a deduction
+of the timing estimate from the listed qualitative properties alone.
+It is not a counterexample to the actual inverse-kernel question.
+
+The result motivates a more selective handoff. With contact threshold two,
+put `K_0=16/log(3/2)`. It suffices to find effective constants `B,c>0`
+with `Bc>K_0` such that
+
+\[
+V(q)\ge Bq/\log(q+2)
+\quad\Longrightarrow\quad
+p_{L(q)}(q)\ge c/\log(q+2)
+\]
+
+on the large marked units. The finite contact-front bound makes those
+two inequalities incompatible, proving `V(q)<Bq/log(q+2)`. No capture
+claim is needed where the height bound already holds. This selective
+estimate remains open. See
+[question_large_envelope_contact.txt](question_large_envelope_contact.txt)
+and Section 7 of the [synthesis](CONTACT_CAPTURE_SYNTHESIS.md).
+
+The [arithmetic follow-up](COFINAL_ENVELOPE_LIMITATION.md) constructs
+arbitrarily large actual complete low-gap sources for which the exact
+literal-cut envelope is only `E=S/2`. Their supplied words have no
+compensated noncontracting prefix. Corresponding Mersenne targets stay
+above that interval for an unbounded number of ordinary steps. This
+rules out bounded direct lookahead for the blanket entry selector; it
+does not rule out independent-clock mergers or other source rewrites,
+and it does not impose every retained-even dead-cell exclusion.
+
+These follow-ups are written mathematics. The formal count stays at 44,
+and the original compiled sources and execution receipt are unchanged.

@@ -39,6 +39,7 @@
     "Logarithmic-depth specialization and connection to the finite-base closing interface"
   ],
   "explicit_open_assertions": [
+    "Selective marked capture for V(q)>=B*q/log(q+2), with p>=c/log(q+2) and B*c>16/log(3/2)",
     "Effective marked contact lower bound p_L(q)*log(q+2)^2 -> infinity",
     "Finite basin certificates below its effective closing threshold",
     "LowEnvelopeMerger or LowEnvelopeEntry on every remaining complete low-word state"
@@ -74,14 +75,24 @@
   ],
   "files": [
     {
+      "path": "COFINAL_ENVELOPE_LIMITATION.md",
+      "sha256": "3213e4eb249bdee99feee7fa56d2cd7078119bc32872389efaba25f02e52dacd",
+      "bytes": 6418
+    },
+    {
       "path": "CONTACT_CAPTURE_SYNTHESIS.md",
-      "sha256": "6829df9e18753ed8408bd51280d0550a8e59f839ea4a5f01d348da9f8c1fa311",
-      "bytes": 7815
+      "sha256": "d531fe841cbd5740540e871c69d35629dd9e75197b65ae07638dcfc0c4a2a134",
+      "bytes": 9924
     },
     {
       "path": "DEPENDENCIES.json",
       "sha256": "5dac71efff4a37db62b2246ebb74d9a95b20f8cc021291eff131ca02bcc1e03e",
       "bytes": 4730
+    },
+    {
+      "path": "NATIVE_CONTACT_DELAY_COUNTERMODEL.md",
+      "sha256": "3a17fa900cffa31a339e4b4fa8ef95545f60c109bec089706938733a86a5e89c",
+      "bytes": 5977
     },
     {
       "path": "OBSTACLE_ENTRANCE_RENEWAL.md",
@@ -90,8 +101,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "789ee600a6676f1c5b817d967be5f0a0ce8ad1acc350809d0c33bc6a94c705a1",
-      "bytes": 8916
+      "sha256": "12f15d13741dadb355676896cb0489478178294352a3590ef10ce631b1e17230",
+      "bytes": 10868
     },
     {
       "path": "SOURCE_ENVELOPE.md",
@@ -147,6 +158,11 @@
       "path": "question_inverse_contact.txt",
       "sha256": "89001b926d3b9acf628ee90643b38d17b2aebb16509b82dea3c709716e02a2b2",
       "bytes": 1770
+    },
+    {
+      "path": "question_large_envelope_contact.txt",
+      "sha256": "4aae668599a9ae78a6d7526c6449e340f7475fae4620d0a5c84a05678ca6038c",
+      "bytes": 2007
     },
     {
       "path": "vendor/Collatz/BoundedGapCofinal.lean",
@@ -208,5 +224,20 @@
       "sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
       "bytes": 6096
     }
-  ]
+  ],
+  "written_followup": {
+    "parent_checkpoint": "03e40fa4d7506ad92682a49c850103b028a11dbe",
+    "formal_sources_unchanged": true,
+    "new_results": [
+      "Generic canonical-envelope model with delayed native-clock contact",
+      "Cofinal exact E=S/2 literal-cut sources and unbounded direct entry clocks",
+      "Selective reciprocal-logarithmic capture implication only above a large-envelope threshold"
+    ],
+    "limits": [
+      "Generic countermodel has a different integer kernel and obstacle; it is not a Collatz counterexample",
+      "Cofinal arithmetic family is not asserted to survive all retained-even exclusions or to obstruct independent-clock mergers",
+      "Actual-kernel selective capture and universal low-envelope mergers remain open"
+    ],
+    "independent_scope_check": "Root reconstructed the finite-depth leastness argument, shell population interval, exact source maximum and Mersenne ascent; no new formal verification claimed"
+  }
 }
