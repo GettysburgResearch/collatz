@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "warnings_as_errors": true,
+  "fresh_local_module_output": true,
+  "module_count": 7,
+  "new_public_theorem_count": 7,
+  "modules": [
+    {
+      "module": "ShellCover",
+      "path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 19.542,
+      "printed_axioms": [],
+      "printed_audit_count": 0
+    },
+    {
+      "module": "ForwardSection",
+      "path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 9.589,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 4
+    },
+    {
+      "module": "BandTransport",
+      "path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "sha256": "4534e598e1f6c4ac20b105bb3060142a5eb4f7a4de2299d66511ad2cee6eb44d",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 6.054,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 10
+    },
+    {
+      "module": "InverseDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "sha256": "f644a2e04179c3589aeb07f0f0c29ce3876348e84d90d1d87df043f1d71fec2b",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 5.057,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 6
+    },
+    {
+      "module": "CentralCurrent",
+      "kind": "new",
+      "path": "research/central-step-20261122/lean/CentralCurrent.lean",
+      "expected_audits": 3,
+      "sha256": "d2d6cbac42379e1d43d405adbf1a202861eeab74fd8424a9f83e7bb94f77c95e",
+      "exit_code": 0,
+      "seconds": 4.163,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 3
+    },
+    {
+      "module": "RationalShadowTest",
+      "kind": "new",
+      "path": "research/central-step-20261122/lean/RationalShadowTest.lean",
+      "expected_audits": 4,
+      "sha256": "45ee2b77e5daaab8b6f27b91230d1b6a4991e81b479c906db14e237b3a46d507",
+      "exit_code": 0,
+      "seconds": 2.273,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 4
+    },
+    {
+      "module": "CentralAudit",
+      "kind": "audit",
+      "path": "research/central-step-20261122/lean/CentralAudit.lean",
+      "expected_audits": 7,
+      "sha256": "8c27d191c00cb8529b6ba8833dd9bb5b96ad2b4857297456fc2b0b57f1515b96",
+      "exit_code": 0,
+      "seconds": 1.891,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 7
+    }
+  ],
+  "scope": "Pinned dependencies, all public theorems in THEOREMS.json, and a separate complete axiom audit.",
+  "not_formalized": [
+    "The imported population, canonical-envelope, and ordinary harmonic construction",
+    "The infinite moving-clock Green profile and energy-defect limits",
+    "Uniform excess-clock harmonicization under the actual stopped law",
+    "The high-linear canonical sibling lower bound or a universal target merger",
+    "Universal Collatz convergence, including exclusion of nontrivial cycles"
+  ]
+}
