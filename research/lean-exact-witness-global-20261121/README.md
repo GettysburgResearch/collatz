@@ -3,9 +3,13 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint makes the whole remaining certificate language canonical:
-its unbounded part is an actual prefix ending at 11, followed by the fixed
-tail `[1,2,3,4]`. A separate global attack proves binary-run compactness and
+The latest checkpoint supplies a new strict-grade interval rule from every
+sufficiently separated negative low block, and an unconditional canonical
+source selector for every target at least 177. The selected source's whole
+future orbit stays below half the original target, making its successful
+return cones actual original-target descents. The remaining certificate
+language has an actual prefix ending at 11 and fixed tail `[1,2,3,4]`.
+A separate global attack proves binary-run compactness and
 quantitative high-run occupation on every escaping ordinary orbit. The joined
 signed-shadow and modular-forcing arithmetic is checked in Lean; the complete
 binary combinatorics and occupation deductions have written proofs.
@@ -14,7 +18,69 @@ These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: a canonical global source language and binary-run compactness
+## Latest checkpoint: actual source progress and the original target floor
+
+This continuation starts from published checkpoint ten, PR177 head
+`46a76145ef21e93318eff25da8cf00c5342fd7d2`. The three new core-Lean modules
+prove unbounded structural statements on the same finite supplied source
+certificate. The proof and execution record is under
+[reports/source-progress](../../reports/lean-exact-witness-global-20261121/source-progress/).
+
+### A finite negative shadow that gives a strict original-grade step
+
+[Negative-shadow return](NEGATIVE_SHADOW_RETURN.md) proves that **every**
+negative odd shadow `-m`, with `m>0`, has a nonempty prefix satisfying
+
+\[
+1\le r\le3m,\qquad 2^{A_r}\le3^r,\qquad 0<A_r<2r\le6m.
+\]
+
+The proof keeps the complete affine correction. If all prefixes through
+`3m` contracted, their correction would be at least `m*3^(3m)`, contradicting
+the negative endpoint. This requires no eventual behavior of negative orbits.
+If a positive odd source satisfies `q+m=2^D*u` with `D>=6m`, the signed
+prefix lifts to an actual positive source prefix before clock `D` and ends
+at an odd `q'>q`.
+
+`SourceOrbitProgress.advance_certificate` advances the **given** complete
+witness along an arbitrary actual ordinary path. A positive clock ending
+outside the terminal cycle strictly lowers its original grade.
+`odd_growth_interval_rule` retains the same initial exponent and uses that
+strict decrease at the larger odd core. `negative_block_interval_rule`
+therefore closes the **whole original interval** under its original
+`Hyp Interval`, whenever the displayed negative-block guard holds.
+
+### A global source selector with a bound on every future state
+
+[The original target floor](ROOTED_SOURCE_FLOOR.md) proves that for every
+`t>=177`, setting `L=floor((t-1)/2)`, there is a complete source
+
+\[
+S=2^e u,\quad1\le e\le3,\quad
+\operatorname{Prefix}(u,P,11),\quad P\ne[],\quad a\le4\ (a\in P),
+\]
+
+such that `L<S<=t-1`, `t<=2S+1`, and **every ordinary state after `S` is
+at most `L`**. It is selected as a literal cut inside a gap of a supplied
+cofinal prefix to 11. The exact source clock, unused suffix, and full
+certificate are returned; target convergence is not assumed.
+
+For `t=3 mod4`, `L` is odd, and every future source state is actually below
+`L`. Thus a target return `z<=3v+2` at any later odd source endpoint `v`
+satisfies `z<t`, even if intermediate target carries exceeded `t`.
+Padding paid by the source gap just consumed has the same property, for
+arbitrary gap sizes. `target_prefix_cap_closes` consumes an actual target
+prefix and closes this return under strong induction on the original target.
+
+[The cofinal complementary domain](STRICT_PREFIX_CONTRACTION.md) supplies
+all-word written extractions: strictly coefficient-contracting complete
+alphabet-four sources are cofinal, as are known sources larger than every
+later odd state. The latter cannot admit any source-growth selector.
+The new negative-block rule is therefore an additional exact branch,
+while the original target floor supports the complementary target-return
+attack. Universal success of those returns is not asserted.
+
+## Previous checkpoint: a canonical global source language and binary-run compactness
 
 This continuation starts from published PR177 head
 `9af9118a7e9af870a32a72a4efdcf77e886940ec`. The fresh inventory covers all

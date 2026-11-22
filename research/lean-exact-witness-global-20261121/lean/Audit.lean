@@ -228,3 +228,51 @@ import Collatz
 #print axioms CollatzBinaryRunForcing.ordinary_clock_budget
 #print axioms CollatzBinaryRunForcing.actual_pattern
 #print axioms CollatzBinaryRunForcing.actual_pattern_of_gap
+
+-- Every negative shadow supplies a finite noncontracting prefix and an
+-- actual growing positive source under its explicit separation condition.
+#print axioms CollatzNegativeShadow.negative_endpoint
+#print axioms CollatzNegativeShadow.negative_correction_bound
+#print axioms CollatzNegativeShadow.correction_prefix_floor
+#print axioms CollatzNegativeShadow.split_signed_trace
+#print axioms CollatzNegativeShadow.noncontracting_prefix
+#print axioms CollatzNegativeShadow.bounded_negative_prefix
+#print axioms CollatzNegativeShadow.noncontracting_clock_bound
+#print axioms CollatzNegativeShadow.source_above_two
+#print axioms CollatzNegativeShadow.physical_negative_return
+
+-- The actual path advances the supplied certificate in its ORIGINAL grade.
+#print axioms CollatzSourceOrbitProgress.cycle_stays_small
+#print axioms CollatzSourceOrbitProgress.advance_certificate
+#print axioms CollatzSourceOrbitProgress.odd_growth_interval_rule
+#print axioms CollatzSourceOrbitProgress.negative_block_interval_rule
+
+-- A globally selected literal source preserves the original target floor.
+#print axioms CollatzRootedSourceFloor.orbit_add
+#print axioms CollatzRootedSourceFloor.orbit_pow_two
+#print axioms CollatzRootedSourceFloor.orbit_gap
+#print axioms CollatzRootedSourceFloor.prefix_clock
+#print axioms CollatzRootedSourceFloor.safe_value
+#print axioms CollatzRootedSourceFloor.safe_step
+#print axioms CollatzRootedSourceFloor.safe_orbit
+#print axioms CollatzRootedSourceFloor.safe_prefix
+#print axioms CollatzRootedSourceFloor.safe_power
+#print axioms CollatzRootedSourceFloor.safe_remove_power
+#print axioms CollatzRootedSourceFloor.eleven_safe
+#print axioms CollatzRootedSourceFloor.power_crossing
+#print axioms CollatzRootedSourceFloor.cut_ordinary_clock
+#print axioms CollatzRootedSourceFloor.cut_clock_decomposition
+#print axioms CollatzRootedSourceFloor.cut_future_bound
+#print axioms CollatzRootedSourceFloor.safe_or_cut
+#print axioms CollatzRootedSourceFloor.rooted_floor_cut
+#print axioms CollatzRootedSourceFloor.canonical_floor_source
+#print axioms CollatzRootedSourceFloor.source_for_every_target
+#print axioms CollatzRootedSourceFloor.safe_strict
+#print axioms CollatzRootedSourceFloor.safe_odd_core
+#print axioms CollatzRootedSourceFloor.residual_source_for_target
+#print axioms CollatzRootedSourceFloor.safe_interval_cap
+#print axioms CollatzRootedSourceFloor.safe_odd_source_cap
+#print axioms CollatzRootedSourceFloor.original_target_cap_descent
+#print axioms CollatzRootedSourceFloor.consumed_gap_cap_descent
+#print axioms CollatzRootedSourceFloor.orbit_positive
+#print axioms CollatzRootedSourceFloor.target_prefix_cap_closes

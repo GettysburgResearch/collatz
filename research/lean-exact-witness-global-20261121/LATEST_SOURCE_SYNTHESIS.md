@@ -6,7 +6,41 @@ new commits on older PRs. It used those interfaces to construct the new
 source-gap multiset program. This is a focused research synthesis, not a fresh
 independent replay of every imported project.
 
-## Current whole-repository synthesis: 2026-11-22
+## Continued whole-theorem attack: source progress and target floors
+
+After publishing the synthesis below as checkpoint ten at
+`46a76145ef21e93318eff25da8cf00c5342fd7d2`, three parallel attacks were
+continued on its canonical prefix-to-11 interface. The source pins below
+remain the inspection snapshot; this continuation does not relabel them as
+a second independent replay.
+
+The signed-shadow route now gives a successful rank rule. Every negative
+odd shadow `-m` has a nonempty noncontracting prefix within `3m` odd events
+and fewer than `6m` ordinary clocks. A positive source with
+`q+m=2^D*u`, `D>=6m`, follows that exact prefix to a larger odd source.
+The new `SourceOrbitProgress` module consumes its supplied complete witness
+and proves a strict drop in the original grade, preserving the entire
+original target interval. This is stronger than merely producing more
+binary runs along the source orbit.
+
+The independent global selector in `RootedSourceFloor` supplies, for every
+target `t>=177`, a canonical source above `(t-1)/2` whose **whole subsequent
+ordinary orbit** stays below `floor((t-1)/2)`. Its proof cuts an actual
+cofinal bounded-four path to 11 inside a literal source gap. For targets
+`3 mod4`, each existing odd-source-cap return and each return paid by the
+just-consumed gap is below the **original** target. Arbitrarily large
+intermediate carries do not invalidate that final strict comparison.
+
+The all-word extraction in `STRICT_PREFIX_CONTRACTION.md` identifies a
+cofinal complementary domain: complete alphabet-four sources larger than
+every later odd source. No future odd-growth rule applies there. This directs
+the combined attack to target-dependent returns, rather than treating the
+negative-shadow branch as a universal source selector. The corresponding
+global successful-return theorem remains unproved. All compiled interval
+consumers keep their induction hypotheses explicit; no analytic or carry
+coverage premise is introduced as an axiom.
+
+## Whole-repository synthesis snapshot: 2026-11-22
 
 The current continuation starts from published PR177 head
 `9af9118a7e9af870a32a72a4efdcf77e886940ec`, tree

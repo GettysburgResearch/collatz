@@ -33,3 +33,6 @@ import Collatz.BoundedFourNormalForm
 import Collatz.SignedShadow
 import Collatz.DyadicCoset
 import Collatz.BinaryRunForcing
+import Collatz.NegativeShadow
+import Collatz.SourceOrbitProgress
+import Collatz.RootedSourceFloor
