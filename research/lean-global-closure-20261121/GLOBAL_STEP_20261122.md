@@ -23,6 +23,13 @@ harmonic moment for the complete Green history. The source inventory and
 19-unit receipt below remain historical evidence for the first checkpoint;
 the late continuation preserves its own pins and execution boundary.
 
+The [literature follow-up](LITERATURE_DIRICHLET_BOUNDARY.md) subsequently
+identifies the exact surviving coefficient of the canonical potential's
+Cesàro and Abel edge energies. Its companion arithmetic and clock-filter
+arguments test the remaining transfer to invariant five-energy. These
+are written results with explicit analytic dependencies; the fresh
+21-unit Lean replay remains a separate verification event.
+
 ## 1. What the repository refresh changed
 
 The [source snapshot](../../reports/lean-global-closure-20261121/nov22/source-snapshot.json)

@@ -130,3 +130,41 @@ The remaining arithmetic step is to transfer the new ordinary global
 control to the invariant component label, or to establish a total
 successful common-rank return. A growing-clock or changing-reference
 estimate cannot be substituted for the required uniform control.
+
+## 6. Literature continuation: a sharp ordinary-edge energy limit
+
+The subsequent [Dirichlet calculation](LITERATURE_DIRICHLET_BOUNDARY.md)
+tests mean ergodic and nonreversible potential-theory results against the
+actual operators. With killed forward composition `C`, inverse adjoint
+`K=C*`, potential `R=sum K^j(d/nu)`, and actual-edge energy
+`D(f)=||(I-C)f||²`, it proves
+
+`D(R)=2 sum dR - sum dF`,
+
+where `F` is the canonical invariant escape label. Finite Green gradients
+converge weakly, so this identity does not subtract infinite square norms
+or assume that `R` is square integrable.
+
+For forward Cesàro and Abel averages the exact limits are
+
+`lim N*D(A_N R) = lim [(1+alpha)/(1-alpha)]*D(B_alpha R)`
+
+`= sum_(escaping C) D_C²/C_C`.
+
+Here `D_C=sum_(n in C) d(n)` is the original component charge and `C_C`
+its ordinary flow capacity. The imported component formula retains PR182
+credit; the sharp energy asymptotics and boundary pairing are the new
+deductions. The coefficient is zero exactly when no escaping component
+exists. The calculation establishes the `O(1/N)` bound and computes its
+coefficient; proving `o(1/N)` remains open.
+
+The [exact five-edge calculation](FIVE_EDGE_TRANSPORT.md) excludes a
+uniform bound for arbitrary finitely supported inputs, including Cesàro
+averages. Its initial functions vary with time, so it does not refute an
+estimate specific to canonical `R`. The [Følner follow-up](FOLNER_FIVE_CHANNELS.md)
+removes a genuine source-cutoff boundary cost while showing that normalized
+time filters retain actual component mismatches.
+
+These new written results have independent scoped reviews. The
+[21-unit publication replay](../../reports/lean-global-closure-20261121/nov22/late/VALIDATION.md)
+checks the unchanged Lean arithmetic separately. Full Collatz is not claimed.

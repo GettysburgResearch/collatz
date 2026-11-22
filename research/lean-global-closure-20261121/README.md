@@ -8,7 +8,42 @@ explicit hypotheses. The map is the ordinary shortcut map
 T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 \]
 
-## Compiled results
+## Results and proof status
+
+### Literature continuation: the exact surviving boundary
+
+The [new Dirichlet proof](LITERATURE_DIRICHLET_BOUNDARY.md) uses the actual
+ordinary harmonic reference to prove finite edge energy of the canonical
+Green potential and explicit Cesàro and Abel decay. It then identifies
+their exact common normalized limit:
+
+\[
+\lim_{N\to\infty}N\mathcal D(A_NR)
+=\lim_{\alpha\uparrow1}\frac{1+\alpha}{1-\alpha}
+  \mathcal D(B_\alpha R)
+=\sum_{\mathcal C\text{ escaping}}\frac{D_{\mathcal C}^2}{C_{\mathcal C}}.
+\]
+
+Every term is nonnegative; each escaping component would contribute a
+positive term. The proof retains the source-qualified harmonic construction
+and does not assert that this coefficient vanishes. It establishes an
+explicit `O(1/N)` rate; `o(1/N)` is the precise remaining escape-exclusion
+target. Nontrivial cycles remain separate.
+
+The [five-edge transport proof](FIVE_EDGE_TRANSPORT.md) shows that a generic
+uniform propagation bound is false even for finitely supported functions:
+explicit ordinary and accelerated rays give exponential energy growth after
+averaging. A constructive basin-one selector puts the accelerated examples
+inside the same killed domain as the Dirichlet calculation.
+The [clock-filter follow-up](FOLNER_FIVE_CHANNELS.md) supplies exact
+cutoffs and asynchronous lag formulas while retaining every actual
+component mismatch. These are independently reviewed written results,
+not additional Lean declarations.
+
+The [fresh published-checkout report](../../reports/lean-global-closure-20261121/nov22/late/VALIDATION.md)
+records **21 successful core Lean compilations, 141 axiom reports, and all
+five required repository commands**, with exact source hashes. This
+literature follow-up leaves those compiled sources unchanged.
 
 ### Late-source composition — 22 November 2026
 
