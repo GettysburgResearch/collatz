@@ -13,6 +13,14 @@ source-word coverage after the next repository refresh. No closing
 implication was obtained. It is a failed-attempt record, not an addition
 to this packet's theorem count.
 
+**Deep-machinery continuation:** the subsequent
+[four-route attempt](../deep-machinery-20261122/README.md) tests actual
+mode-switch termination, recurrence and affine renewal, higher-order
+dilation rigidity, and simultaneous Mahler closure. It proves an
+all-parameter obstruction to bounded repayment for the existing rank,
+and records the exact unclosed hypotheses of the other routes. It does
+not add a universal Collatz theorem or change this packet's Lean count.
+
 ## What this pass establishes
 
 | Route | New conclusion | Evidence and boundary |
