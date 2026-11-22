@@ -1,0 +1,15 @@
+{
+  "status": "PASSED",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "check_surplus_repair.py"
+  ],
+  "exit_code": 0,
+  "output_matches_frozen_control": true,
+  "script_sha256": "f3266d00bbb517389993d5fdee5c5ca172dc947e472d826464f75078dcdab9fe",
+  "stdout_sha256": "cf253c0a385e0e79ec68308fb3abaaa9c6ff55354d42d3c8dcdde587c57b1b4b",
+  "scope": "New finite splice control only; no imported all-certificate proof replay."
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "collatz.stepback22.entropy.evidence.v1",
+  "created_utc": "2026-11-22",
+  "note": {
+    "path": "FIXED_SOURCE_SHADOW_ENTROPY.md",
+    "sha256": "b61ec8fc7b1de66b58ca2355b604d1e9fb43387e251e1e0d42e2158dfba6f2db",
+    "status": "Written proof of elementary fixed-source identities; symbolic control separately identified; no Collatz closure or Lean result."
+  },
+  "repo_inputs": [
+    {
+      "role": "own checkpoint",
+      "commit": "08fe1388ad63c758680b3695249aca319515c47d"
+    },
+    {
+      "role": "actual empirical ternary entropy ceiling",
+      "pr": 185,
+      "commit": "980d40fc4afeaaf8f2a9256f322acf3e4568e013",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md"
+    },
+    {
+      "role": "actual compact joining and prior symbolic control",
+      "pr": 176,
+      "commit": "00018ce11fa657b5f3fae072e5567a1d93184c2b",
+      "path": "research/lean-global-resolvent-20261121/overview/machinery/ACTUAL_COMPACT_JOINING.md"
+    }
+  ],
+  "claims": [
+    {
+      "id": "source-shadow-identity",
+      "equation": "(3)",
+      "status": "Elementary written derivation; independent arithmetic-lane review passed on the frozen note.",
+      "statement": "D*x0-Z=2^(a+b)*(x_a-x_(a+b)) for the same original source and an eventual-periodic shadow."
+    },
+    {
+      "id": "source-shadow-separation",
+      "equations": [
+        "(4)",
+        "(5)",
+        "(6)",
+        "(7)"
+      ],
+      "status": "Written corollaries of nonzero integer divisibility; no positivity of shadow fixed point assumed."
+    },
+    {
+      "id": "entropy-bridge-scope",
+      "equation": "(10)",
+      "status": "Repository upper bound concerns empirical ternary time law; no comparison to inverse path law or binary all-factor count established."
+    },
+    {
+      "id": "quadratic-symbolic-control",
+      "equations": [
+        "(11)",
+        "(12)",
+        "(13)",
+        "(14)"
+      ],
+      "status": "Written symbolic construction using imported Subspace Theorem, not Lean and not asserted to be an ordinary Collatz orbit or full compact joining."
+    },
+    {
+      "id": "paper173-scope",
+      "status": "Read primary statements and Sections 1–4 interface only; full source proof is not independently certified."
+    },
+    {
+      "id": "nguyen-scope",
+      "status": "Read v1 author manuscript Definitions 1.1–1.2, Theorem A and Proposition 2.1. No claim about unread v2; direct coefficient small-height hypothesis fails."
+    }
+  ],
+  "primary_sources": [
+    {
+      "id": "S1",
+      "url": "https://rstation.ai/r/collatz/posts/6",
+      "read_scope": "Exact shadow formulas, source comparison, updates through 2026-11-19",
+      "kind": "author discussion with proof"
+    },
+    {
+      "id": "S2",
+      "url": "https://rstation.ai/r/collatz/posts/89",
+      "read_scope": "Section 2, especially rational separation Lemma 3",
+      "kind": "author draft"
+    },
+    {
+      "id": "S3",
+      "url": "https://adamczewski.perso.math.cnrs.fr/ComplexityI.pdf",
+      "citation": "Adamczewski–Bugeaud, Annals of Mathematics 165 (2007), 547–565",
+      "read_scope": "Theorems 1, 5 and E",
+      "import": "Subspace Theorem in symbolic control"
+    },
+    {
+      "id": "S4",
+      "url": "https://rstation.ai/problems/collatz/papers/173/v1",
+      "title": "Finite descent and superlinear factor complexity in rational Collatz dynamics",
+      "version": "v1",
+      "date": "2026-11-19",
+      "read_scope": "Statements and fixed-coordinate construction in Sections 1–4",
+      "access_note": "Direct initial open failed; accepted-paper link in S1 opened the versioned primary text."
+    },
+    {
+      "id": "S5",
+      "url": "https://arxiv.org/abs/2605.30606v1",
+      "author_manuscript_url": "https://www.researchgate.net/publication/405562550_Transcendence_and_measures_via_the_refined_Diophantine_exponent",
+      "title": "Transcendence and measures via the refined Diophantine exponent",
+      "author": "Quang-Khai Nguyen",
+      "version": "v1",
+      "date": "2026-05-28",
+      "read_scope": "Definitions 1.1–1.2, Theorem A, Proposition 2.1",
+      "access_note": "ArXiv PDF access failed; actual v1 text read in the author manuscript. v2 not substituted."
+    }
+  ],
+  "verification": {
+    "new_lean_files": 0,
+    "old_modules_rebuilt": false,
+    "finite_census_used": false,
+    "numerical_calculation": "Only arithmetic evaluation of the symbolic control's density: 0.7356716953757253; mean gap 1.3593019906648385."
+  },
+  "unresolved": "No source-retaining repetition theorem or incompatible entropy lower bound for the same actual escaping orbit.",
+  "independent_review": {
+    "reviewer": "/root/arithmetic_closure22",
+    "note_sha256": "b61ec8fc7b1de66b58ca2355b604d1e9fb43387e251e1e0d42e2158dfba6f2db",
+    "scope": "Sections 1–2, equations (3)–(7); source retention, denominator, displacement identity, both numerator sign cases, actual-height refinement.",
+    "result": "PASS; no mathematical correction requested.",
+    "excluded_scope": "Section 4 symbolic control and complete external-source proofs."
+  }
+}

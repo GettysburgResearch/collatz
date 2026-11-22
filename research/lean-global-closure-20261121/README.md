@@ -10,6 +10,20 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### Four direct attacks after the whole-repository refresh — 22 November 2026
+
+The [new closing packet](closing/README.md) takes the full-denominator zero
+atom, nonlocal source repair, actual stopping-mass transport and fixed-source
+entropy bridge as its targets. It adds a Lean-checked exact cycle-minimum
+inequality and an unrestricted zero-atom census bound, a necessary edit
+horizon for arbitrarily complicated prefix repairs, and a witness-depth
+bound for high-payoff policies on a stipulated escaping orbit. The fresh
+PR180 update at `5e29f56f6d44669a8aa9134e5617b78d65c074c2` is included in
+the source-surgery and routing comparisons. **No universal descent, escape
+exclusion or full nontrivial-cycle exclusion was obtained.** The packet
+records the precise missing inequalities; two new Lean source files were
+compiled without rebuilding the earlier project corpus.
+
 ### Parallel machinery attacks — 22 November 2026
 
 The [machinery continuation](machinery/README.md) adds three substantive

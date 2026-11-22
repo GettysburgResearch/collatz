@@ -1,0 +1,1005 @@
+{
+  "status": "PASSED",
+  "max_period": 18,
+  "parameter_pairs": 99,
+  "words_enumerated": 453148,
+  "source_sha256": "813a72a9e87a3a386e62cbe6a233866c853422cfcfe8b220e9b327e22a967915",
+  "scope": "Finite algorithm controls only; no unrestricted cycle exclusion.",
+  "parameters": [
+    {
+      "A": 2,
+      "p": 1,
+      "D": 1,
+      "word_count": 2,
+      "zero_count": 2,
+      "minimum_bound": 1,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "p": 1,
+      "D": 5,
+      "word_count": 3,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 4,
+      "p": 1,
+      "D": 13,
+      "word_count": 4,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 4,
+      "p": 2,
+      "D": 7,
+      "word_count": 6,
+      "zero_count": 2,
+      "minimum_bound": 1,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 5,
+      "p": 1,
+      "D": 29,
+      "word_count": 5,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 5,
+      "p": 2,
+      "D": 23,
+      "word_count": 10,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 5,
+      "p": 3,
+      "D": 5,
+      "word_count": 10,
+      "zero_count": 0,
+      "minimum_bound": 6,
+      "cycle_certificates": []
+    },
+    {
+      "A": 6,
+      "p": 1,
+      "D": 61,
+      "word_count": 6,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 6,
+      "p": 2,
+      "D": 55,
+      "word_count": 15,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 6,
+      "p": 3,
+      "D": 37,
+      "word_count": 20,
+      "zero_count": 2,
+      "minimum_bound": 1,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 7,
+      "p": 1,
+      "D": 125,
+      "word_count": 7,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 7,
+      "p": 2,
+      "D": 119,
+      "word_count": 21,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 7,
+      "p": 3,
+      "D": 101,
+      "word_count": 35,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 7,
+      "p": 4,
+      "D": 47,
+      "word_count": 35,
+      "zero_count": 0,
+      "minimum_bound": 3,
+      "cycle_certificates": []
+    },
+    {
+      "A": 8,
+      "p": 1,
+      "D": 253,
+      "word_count": 8,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 8,
+      "p": 2,
+      "D": 247,
+      "word_count": 28,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 8,
+      "p": 3,
+      "D": 229,
+      "word_count": 56,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 8,
+      "p": 4,
+      "D": 175,
+      "word_count": 70,
+      "zero_count": 2,
+      "minimum_bound": 1,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 8,
+      "p": 5,
+      "D": 13,
+      "word_count": 56,
+      "zero_count": 0,
+      "minimum_bound": 32,
+      "cycle_certificates": []
+    },
+    {
+      "A": 9,
+      "p": 1,
+      "D": 509,
+      "word_count": 9,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 9,
+      "p": 2,
+      "D": 503,
+      "word_count": 36,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 9,
+      "p": 3,
+      "D": 485,
+      "word_count": 84,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 9,
+      "p": 4,
+      "D": 431,
+      "word_count": 126,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 9,
+      "p": 5,
+      "D": 269,
+      "word_count": 126,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 10,
+      "p": 1,
+      "D": 1021,
+      "word_count": 10,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 10,
+      "p": 2,
+      "D": 1015,
+      "word_count": 45,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 10,
+      "p": 3,
+      "D": 997,
+      "word_count": 120,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 10,
+      "p": 4,
+      "D": 943,
+      "word_count": 210,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 10,
+      "p": 5,
+      "D": 781,
+      "word_count": 252,
+      "zero_count": 2,
+      "minimum_bound": 1,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 10,
+      "p": 6,
+      "D": 295,
+      "word_count": 210,
+      "zero_count": 0,
+      "minimum_bound": 6,
+      "cycle_certificates": []
+    },
+    {
+      "A": 11,
+      "p": 1,
+      "D": 2045,
+      "word_count": 11,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 11,
+      "p": 2,
+      "D": 2039,
+      "word_count": 55,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 11,
+      "p": 3,
+      "D": 2021,
+      "word_count": 165,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 11,
+      "p": 4,
+      "D": 1967,
+      "word_count": 330,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 11,
+      "p": 5,
+      "D": 1805,
+      "word_count": 462,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 11,
+      "p": 6,
+      "D": 1319,
+      "word_count": 462,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 12,
+      "p": 1,
+      "D": 4093,
+      "word_count": 12,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 12,
+      "p": 2,
+      "D": 4087,
+      "word_count": 66,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 12,
+      "p": 3,
+      "D": 4069,
+      "word_count": 220,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 12,
+      "p": 4,
+      "D": 4015,
+      "word_count": 495,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 12,
+      "p": 5,
+      "D": 3853,
+      "word_count": 792,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 12,
+      "p": 6,
+      "D": 3367,
+      "word_count": 924,
+      "zero_count": 2,
+      "minimum_bound": 2,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 12,
+      "p": 7,
+      "D": 1909,
+      "word_count": 792,
+      "zero_count": 0,
+      "minimum_bound": 4,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 1,
+      "D": 8189,
+      "word_count": 13,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 2,
+      "D": 8183,
+      "word_count": 78,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 3,
+      "D": 8165,
+      "word_count": 286,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 4,
+      "D": 8111,
+      "word_count": 715,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 5,
+      "D": 7949,
+      "word_count": 1287,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 6,
+      "D": 7463,
+      "word_count": 1716,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 7,
+      "D": 6005,
+      "word_count": 1716,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 13,
+      "p": 8,
+      "D": 1631,
+      "word_count": 1287,
+      "zero_count": 0,
+      "minimum_bound": 13,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 1,
+      "D": 16381,
+      "word_count": 14,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 2,
+      "D": 16375,
+      "word_count": 91,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 3,
+      "D": 16357,
+      "word_count": 364,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 4,
+      "D": 16303,
+      "word_count": 1001,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 5,
+      "D": 16141,
+      "word_count": 2002,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 6,
+      "D": 15655,
+      "word_count": 3003,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 14,
+      "p": 7,
+      "D": 14197,
+      "word_count": 3432,
+      "zero_count": 2,
+      "minimum_bound": 2,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 14,
+      "p": 8,
+      "D": 9823,
+      "word_count": 3003,
+      "zero_count": 0,
+      "minimum_bound": 4,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 1,
+      "D": 32765,
+      "word_count": 15,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 2,
+      "D": 32759,
+      "word_count": 105,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 3,
+      "D": 32741,
+      "word_count": 455,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 4,
+      "D": 32687,
+      "word_count": 1365,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 5,
+      "D": 32525,
+      "word_count": 3003,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 6,
+      "D": 32039,
+      "word_count": 5005,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 7,
+      "D": 30581,
+      "word_count": 6435,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 8,
+      "D": 26207,
+      "word_count": 6435,
+      "zero_count": 0,
+      "minimum_bound": 3,
+      "cycle_certificates": []
+    },
+    {
+      "A": 15,
+      "p": 9,
+      "D": 13085,
+      "word_count": 5005,
+      "zero_count": 0,
+      "minimum_bound": 7,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 1,
+      "D": 65533,
+      "word_count": 16,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 2,
+      "D": 65527,
+      "word_count": 120,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 3,
+      "D": 65509,
+      "word_count": 560,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 4,
+      "D": 65455,
+      "word_count": 1820,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 5,
+      "D": 65293,
+      "word_count": 4368,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 6,
+      "D": 64807,
+      "word_count": 8008,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 7,
+      "D": 63349,
+      "word_count": 11440,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 8,
+      "D": 58975,
+      "word_count": 12870,
+      "zero_count": 2,
+      "minimum_bound": 2,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 16,
+      "p": 9,
+      "D": 45853,
+      "word_count": 11440,
+      "zero_count": 0,
+      "minimum_bound": 3,
+      "cycle_certificates": []
+    },
+    {
+      "A": 16,
+      "p": 10,
+      "D": 6487,
+      "word_count": 8008,
+      "zero_count": 0,
+      "minimum_bound": 33,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 1,
+      "D": 131069,
+      "word_count": 17,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 2,
+      "D": 131063,
+      "word_count": 136,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 3,
+      "D": 131045,
+      "word_count": 680,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 4,
+      "D": 130991,
+      "word_count": 2380,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 5,
+      "D": 130829,
+      "word_count": 6188,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 6,
+      "D": 130343,
+      "word_count": 12376,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 7,
+      "D": 128885,
+      "word_count": 19448,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 8,
+      "D": 124511,
+      "word_count": 24310,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 9,
+      "D": 111389,
+      "word_count": 24310,
+      "zero_count": 0,
+      "minimum_bound": 3,
+      "cycle_certificates": []
+    },
+    {
+      "A": 17,
+      "p": 10,
+      "D": 72023,
+      "word_count": 19448,
+      "zero_count": 0,
+      "minimum_bound": 5,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 1,
+      "D": 262141,
+      "word_count": 18,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 2,
+      "D": 262135,
+      "word_count": 153,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 3,
+      "D": 262117,
+      "word_count": 816,
+      "zero_count": 0,
+      "minimum_bound": 0,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 4,
+      "D": 262063,
+      "word_count": 3060,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 5,
+      "D": 261901,
+      "word_count": 8568,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 6,
+      "D": 261415,
+      "word_count": 18564,
+      "zero_count": 0,
+      "minimum_bound": 1,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 7,
+      "D": 259957,
+      "word_count": 31824,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 8,
+      "D": 255583,
+      "word_count": 43758,
+      "zero_count": 0,
+      "minimum_bound": 2,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 9,
+      "D": 242461,
+      "word_count": 48620,
+      "zero_count": 2,
+      "minimum_bound": 2,
+      "cycle_certificates": [
+        {
+          "minimum": 1,
+          "period": 2,
+          "odd_count": 1,
+          "cycle": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "A": 18,
+      "p": 10,
+      "D": 203095,
+      "word_count": 43758,
+      "zero_count": 0,
+      "minimum_bound": 3,
+      "cycle_certificates": []
+    },
+    {
+      "A": 18,
+      "p": 11,
+      "D": 84997,
+      "word_count": 31824,
+      "zero_count": 0,
+      "minimum_bound": 10,
+      "cycle_certificates": []
+    }
+  ],
+  "large_fiber_control": {
+    "A": 27,
+    "p": 17,
+    "D": 5077565,
+    "word_count": 8436285,
+    "zero_count": 0,
+    "maximum_fiber": 19,
+    "maximizing_residues": [
+      2031026
+    ],
+    "minimum_bound": 149,
+    "cycle_certificates": []
+  },
+  "elapsed_seconds": 2.546
+}
