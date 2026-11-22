@@ -1,0 +1,33 @@
+{
+  "schema": "negative-complement-budget-v1",
+  "multiplier": 9,
+  "intercept": 2,
+  "initial_complement": 7,
+  "budget": 2,
+  "clock": 5,
+  "even_steps": 2,
+  "final_complement": 5,
+  "outcome": "paid",
+  "blocks": [
+    {
+      "before": 7,
+      "odd_steps": 1,
+      "odd_part": 3,
+      "even_endpoint": 10,
+      "after": 5
+    },
+    {
+      "before": 5,
+      "odd_steps": 2,
+      "odd_part": 1,
+      "even_endpoint": 10,
+      "after": 5
+    }
+  ],
+  "dyadic_height": 3,
+  "guaranteed_budget_condition": true,
+  "theorem_clock_bound": 9,
+  "source_endpoint_coefficient": 243,
+  "target_endpoint_coefficient": 243,
+  "identity": "For every u>=1 with A*(2^clock*u-1)+B>0, T^clock(A*(2^clock*u-1)+B)=target_endpoint_coefficient*u-final_complement."
+}

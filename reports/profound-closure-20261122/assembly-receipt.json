@@ -1,0 +1,15 @@
+{
+  "python_syntax_files": 6,
+  "valid_json_files": 17,
+  "new_files": 42,
+  "bytes": 243808,
+  "whitespace_check": [
+    "git",
+    "-c",
+    "core.whitespace=-blank-at-eol",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "whitespace_scope": "Imported Markdown preserves its reviewed two-space hard breaks. No source rewrite was performed."
+}

@@ -1,0 +1,6 @@
+'CollatzFiniteBlockTelescope.scaled_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteBlockTelescope.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteBlockTelescope.scaled_bound_on_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzFiniteBlockTelescope.scaled_bound_of_finite_hypotheses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
