@@ -103,11 +103,16 @@ to its successful compiled artifact and records the written-packet hashes,
 driver, receipts, and starting commit. It keeps the full-theorem status
 false and the written/Lean boundaries explicit.
 
-The required repository gate is run in a clean complete checkout of the
-published proof checkpoint. Its exact receipt is added in a separate
-receipt-only follow-up, and PR183 records the final head after a second
-exact-head gate and remote readback. Repository integrity validation is
-distinct from mathematical verification.
+The proof checkpoint is
+`84a76f0d81839494e17a0de5fea207ea96da5f87`, tree
+`817017ac2d93f977278e5d29dc59120ae231a63d`. Its clean complete checkout
+passed all five required commands of `python -X utf8 -B tools/validate.py`
+across 400 tracked files and remained unchanged. The actual receipt is
+[`proof-checkpoint-validation.json`](proof-checkpoint-validation.json).
+
+This receipt-only follow-up changes no proof or executable. PR183 records
+its final head after a second exact-head gate and remote readback.
+Repository integrity validation is distinct from mathematical verification.
 
 ## The remaining global step
 
