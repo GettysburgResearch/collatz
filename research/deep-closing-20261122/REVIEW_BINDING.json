@@ -1,0 +1,45 @@
+{
+  "scope": "Independent mathematical reviews at the exact bound source bytes; compiler executions are separate. Review paths preserve original author-workspace provenance inside the review text. No full Collatz or external analytic proof audit is implied.",
+  "bindings": [
+    {
+      "review": "research/deep-closing-20261122/reviews/ACTUAL_ORBIT_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/SIBLING_SMOOTHING_REVIEW.md",
+      "path": "research/deep-closing-20261122/SIBLING_SMOOTHING_ATTEMPT.md",
+      "sha256": "0ad191c13b008818558330bdcb93304f9c5c0b8874804baa85531d494e4cc1da"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/ARITHMETIC_RIGIDITY_REVIEW.md",
+      "path": "research/deep-closing-20261122/ARITHMETIC_ATTACK.md",
+      "sha256": "aebf19e35c498d4d318af7c45bce49d457bac33ba149be9f81344707a68cc520"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/ORIGINAL_SOURCE_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/ORIGINAL_SOURCE_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/CYCLE_WORD_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/lean/CycleWordEntropy.lean",
+      "sha256": "af0375fe2087f3e0d88c4bf87a67cdb283e10ce62dbb555379c855450186998d"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/CYCLE_WORD_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/GRH_AFFINE_CYCLE_ATTEMPT.md",
+      "sha256": "935578dba46414a7ba981adbd470b008d2d7a77b6972acbace148592114ae410"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/LEAN_FINITE_CORE_REVIEW.md",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    }
+  ]
+}
