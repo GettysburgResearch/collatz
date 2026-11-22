@@ -1,0 +1,28 @@
+MODULE WholeSourceBuffer
+'CollatzDeep.WholeSourceBuffer.first_hit_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.survivor_coefficient_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.short_survivor_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.complete_source_survivor_surplus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzDeep.WholeSourceBuffer.joint_source_survivor_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.complete_source_buffer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.positive_splice_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.whole_source_splice_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+MODULE DeepMachineryAudit
+'CollatzDeep.WholeSourceBuffer.first_hit_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.survivor_coefficient_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.short_survivor_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.complete_source_survivor_surplus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzDeep.WholeSourceBuffer.joint_source_survivor_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.complete_source_buffer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.positive_splice_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzDeep.WholeSourceBuffer.whole_source_splice_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

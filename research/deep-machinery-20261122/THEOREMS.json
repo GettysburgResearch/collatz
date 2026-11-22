@@ -1,0 +1,60 @@
+{
+  "schema": "collatz-deep-machinery-theorems/v1",
+  "status": "Eight finite/all-word arithmetic declarations; no universal Collatz theorem.",
+  "public_theorem_count": 8,
+  "modules": [
+    {
+      "module": "WholeSourceBuffer",
+      "namespace": "CollatzDeep.WholeSourceBuffer",
+      "theorems": [
+        "first_hit_clock_bound",
+        "survivor_coefficient_budget",
+        "short_survivor_coefficient",
+        "complete_source_survivor_surplus",
+        "joint_source_survivor_surplus",
+        "complete_source_buffer",
+        "positive_splice_impossible",
+        "whole_source_splice_impossible"
+      ],
+      "statements": [
+        {
+          "name": "first_hit_clock_bound",
+          "scope": "An actual source first hitting 1 at clock A and confined to [1,L] has A+1≤L."
+        },
+        {
+          "name": "survivor_coefficient_budget",
+          "scope": "Every actual target prefix staying above its initial t satisfies the exact finite coefficient budget."
+        },
+        {
+          "name": "short_survivor_coefficient",
+          "scope": "For 2A<t, an actual surviving target has homogeneous multiplier strictly greater than 5/6."
+        },
+        {
+          "name": "complete_source_survivor_surplus",
+          "scope": "Combines an explicit completed-source affine identity with a short actual target survivor."
+        },
+        {
+          "name": "joint_source_survivor_surplus",
+          "scope": "Derives the short-clock premise from the actual first-hit source floor, then proves 5·3^r·q<6·3^o for the target."
+        },
+        {
+          "name": "complete_source_buffer",
+          "scope": "A completed nontrivial source word has formal captured-target image below 17; actual parity legality is not asserted."
+        },
+        {
+          "name": "positive_splice_impossible",
+          "scope": "A binary modulus exceeding t prevents a positive start for the unchanged target prefix at a smaller endpoint."
+        },
+        {
+          "name": "whole_source_splice_impossible",
+          "scope": "Instantiates the exact full-prefix splice exclusion on the canonical complete-source depth and capture bounds."
+        }
+      ]
+    }
+  ],
+  "not_formalized": [
+    "The complete PR177 joint-witness selection theorem is not imported or recompiled here; its concrete premises remain explicit.",
+    "Infinite renewal, entropy, and operator calculations are written deductions.",
+    "A legal replacement word closing every joint counterquery remains unproved."
+  ]
+}

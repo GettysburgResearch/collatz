@@ -1,0 +1,10 @@
+import WholeSourceBuffer
+
+#print axioms CollatzDeep.WholeSourceBuffer.first_hit_clock_bound
+#print axioms CollatzDeep.WholeSourceBuffer.survivor_coefficient_budget
+#print axioms CollatzDeep.WholeSourceBuffer.short_survivor_coefficient
+#print axioms CollatzDeep.WholeSourceBuffer.complete_source_survivor_surplus
+#print axioms CollatzDeep.WholeSourceBuffer.joint_source_survivor_surplus
+#print axioms CollatzDeep.WholeSourceBuffer.complete_source_buffer
+#print axioms CollatzDeep.WholeSourceBuffer.positive_splice_impossible
+#print axioms CollatzDeep.WholeSourceBuffer.whole_source_splice_impossible

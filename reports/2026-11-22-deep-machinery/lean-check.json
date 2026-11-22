@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "warnings_as_errors": true,
+  "fresh_local_module_output": true,
+  "module_count": 2,
+  "new_public_theorem_count": 8,
+  "modules": [
+    {
+      "module": "WholeSourceBuffer",
+      "kind": "new",
+      "path": "research/deep-machinery-20261122/lean/WholeSourceBuffer.lean",
+      "expected_audits": 8,
+      "sha256": "08bc37d3c6d200a6600afd6df2f050d2ebc1d42675303a5a6ae4954e8130f47a",
+      "exit_code": 0,
+      "seconds": 7.162,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 8
+    },
+    {
+      "module": "DeepMachineryAudit",
+      "kind": "audit",
+      "path": "research/deep-machinery-20261122/lean/DeepMachineryAudit.lean",
+      "expected_audits": 8,
+      "sha256": "f69e3fa312fc54cf6912746a7a8d2a7e801ecc88f6c40a6b4a79501b040296b0",
+      "exit_code": 0,
+      "seconds": 1.551,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 8
+    }
+  ],
+  "scope": "Pinned dependencies, all public theorems in THEOREMS.json, and a separate complete axiom audit.",
+  "not_formalized": [
+    "The imported population, canonical-envelope, and ordinary harmonic construction",
+    "The Goldie comparison, conditional coding, and sibling singularity",
+    "Symmetric recurrence and the canonical antisymmetric-current calculation",
+    "The high-linear canonical sibling lower bound or a universal target merger",
+    "Universal Collatz convergence, including exclusion of nontrivial cycles"
+  ]
+}

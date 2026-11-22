@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-22",
+  "base_commit": "a9f471543d7fed0a76f348e6d97a9d6d44fa369e",
+  "method": "Separate agents reconstructed the displayed new deductions. Root additionally checked the arithmetic and operator/entropy interfaces. Upstream analytic theorems were not fully rebuilt.",
+  "reviews": [
+    {
+      "source": "research/deep-machinery-20261122/ARITHMETIC_RIGIDITY.md",
+      "source_sha256": "488680ca8c09bda1642c6228818a7286ab9de511687191d40b9883cce1450064",
+      "review": "research/deep-machinery-20261122/REVIEW_ARITHMETIC.md",
+      "review_sha256": "829bbb0709deb9b9964e44f37ee00e275fba5afaf7f5eeeb53652408ea7df214",
+      "reviewer": "critical_boundary",
+      "scope": "Actual complete-source first-hit clock, target survivor invariant, real buffer, positive splice exclusion, and secondary equal-depth repair bound.",
+      "verdict": "No blocking mathematical error found in the scoped deductions."
+    },
+    {
+      "source": "research/deep-machinery-20261122/RENEWAL_TRANSPORT.md",
+      "source_sha256": "feb4eacc4a02ffdbbc07ec08bb045226243c4ffd24cd1155a4b00740efd3eb69",
+      "review": "research/deep-machinery-20261122/REVIEW_RENEWAL.md",
+      "review_sha256": "322c8eca871e1fa8da4fd08dd4ceb59089038295f9b901430b7c26c5ea58bef4",
+      "reviewer": "critical_boundary",
+      "scope": "Same-source diagonal comparison, entropy coding, and actual sibling singularity.",
+      "verdict": "No blocking mathematical error found in the scoped deductions."
+    },
+    {
+      "source": "research/deep-machinery-20261122/BOUNDARY_RIGIDITY.md",
+      "source_sha256": "661dec8ba4578516d19c9ad0bf49a9cbe22d9e35ecf66b14bbc9e197842c067f",
+      "review": "research/deep-machinery-20261122/REVIEW_BOUNDARY_RIGIDITY.md",
+      "review_sha256": "2fd1cd2dc765afa482e2e05e4ff32edc87dfe120b69c0937d330eea06971fa32",
+      "reviewer": "stopped_mixing",
+      "scope": "Actual symmetric recurrence, known-basin sector obstruction, and exact canonical-current decomposition.",
+      "verdict": "No blocking mathematical error found in the scoped deductions."
+    }
+  ],
+  "lean_statement_review": {
+    "path": "research/deep-machinery-20261122/lean/WholeSourceBuffer.lean",
+    "sha256": "08bc37d3c6d200a6600afd6df2f050d2ebc1d42675303a5a6ae4954e8130f47a",
+    "review": "REVIEW_ARITHMETIC.md",
+    "compilation": "The separate root replay and audit are recorded in lean-check.json."
+  }
+}
