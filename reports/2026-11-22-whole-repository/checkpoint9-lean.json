@@ -1,0 +1,389 @@
+{
+  "schema": "collatz-whole-repository-checkpoint9-execution/v1",
+  "scope": "37 new finite theorems and their exact imports; full Collatz remains open",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256_before": {
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "research/lean-global-resolvent-20261121/overview/parallel/lean/Collatz/SourceEnvelope.lean": "757efd6082d6910ae0eb558841136bd26c63a51684cd9432288262a422777014",
+    "research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/AffineDispatcher.lean": "d59528865a8b1111e3b3d452eb1c4034930d6eb849c5e9a1a4398c7acda7542d",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/AuditAffineDispatcher.lean": "3169ec1c1f71507260ae457f7557d18945f9dcaefa4d2554a756190b41388039",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/BlockRepetitionBudget.lean": "25acb2f01cb05101aed116b986ff6d4fafd4eba7c90f3be58bf83174c82921da",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/SourceTargetInduction.lean": "fa8269cf53fc0cd8f59022242354552c93b61d0788707da6100cd7b053c16ad0",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/AuditSourceTargetInduction.lean": "02ba0ff8cd801c312c3842d9dbad1ada9a21d7ef0e73ad9766143626f9a9ff6f"
+  },
+  "fresh_output_directory": "/tmp/collatz-checkpoint9-final-fresh",
+  "verified_dependency_mirror_files": 8620,
+  "commands": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/ReverseBasin146.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.926,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Closure",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/Closure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.431,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Witness",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/Witness.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.395,
+      "output": ""
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/DirectedInduction.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.453,
+      "output": ""
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/WitnessEnergy.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.548,
+      "output": ""
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/SourceWitness.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.611,
+      "output": ""
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/GapMultiset.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.435,
+      "output": ""
+    },
+    {
+      "module": "Collatz.HighGapPump",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/HighGapPump.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.383,
+      "output": ""
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/UnboundedGapReset.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/UnboundedGapReset.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.475,
+      "output": "'CollatzUnboundedGapReset.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.complete_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.complete_failed_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.depth_zero_guard' does not depend on any axioms\n'CollatzUnboundedGapReset.word_path_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.low_entrance' depends on axioms: [propext, Quot.sound]\n'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Collatz.LowGapLoops",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/LowGapLoops.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.788,
+      "output": ""
+    },
+    {
+      "module": "Collatz.LowGapPump",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/LowGapPump.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapPump.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.344,
+      "output": ""
+    },
+    {
+      "module": "Collatz.GapComparison",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/GapComparison.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapComparison.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.539,
+      "output": ""
+    },
+    {
+      "module": "Collatz.BoundedGapCofinal",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/BoundedGapCofinal.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/BoundedGapCofinal.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.713,
+      "output": ""
+    },
+    {
+      "module": "Collatz.LowIntervalRefinement",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/LowIntervalRefinement.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowIntervalRefinement.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.347,
+      "output": ""
+    },
+    {
+      "module": "Collatz.SourceEnvelope",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/SourceEnvelope.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/Collatz/SourceEnvelope.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.576,
+      "output": ""
+    },
+    {
+      "module": "Collatz.TerminalCarry",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/TerminalCarry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.422,
+      "output": ""
+    },
+    {
+      "module": "Collatz.AffineDispatcher",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/AffineDispatcher.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/AffineDispatcher.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.996,
+      "output": ""
+    },
+    {
+      "module": "AuditAffineDispatcher",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/AuditAffineDispatcher.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean/AuditAffineDispatcher.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.281,
+      "output": "'CollatzAffineDispatcher.affine_gap_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.dispatch_exists' depends on axioms: [propext, Quot.sound]\n'CollatzAffineDispatcher.dispatch_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.signed_path_negative' depends on axioms: [propext, Quot.sound]\n'CollatzAffineDispatcher.dispatch_negative' depends on axioms: [propext, Quot.sound]\n'CollatzAffineDispatcher.complete_dispatch_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.boosted_prefix_rank' depends on axioms: [propext, Quot.sound]\n'CollatzAffineDispatcher.dispatch_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.coefficient_paid_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.dispatch_merger_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.zero_degree_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.low_target_initialization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAffineDispatcher.debt_two_gap_one' does not depend on any axioms\n"
+    },
+    {
+      "module": "BlockRepetitionBudget",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/BlockRepetitionBudget.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean/BlockRepetitionBudget.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.755,
+      "output": "'CollatzBlockBudget.edge_defect' depends on axioms: [propext, Quot.sound]\n'CollatzBlockBudget.affine_path_defect' depends on axioms: [propext, Quot.sound]\n'CollatzBlockBudget.affine_path_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBlockBudget.word_affine' depends on axioms: [propext]\n'CollatzBlockBudget.word_growth' depends on axioms: [propext, Quot.sound]\n'CollatzBlockBudget.repeat_affine_path' depends on axioms: [propext]\n'CollatzBlockBudget.repeat_growth' depends on axioms: [propext, Quot.sound]\n'CollatzBlockBudget.repeated_word_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBlockBudget.repeated_word_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBlockBudget.word_defect_bound' depends on axioms: [propext, Quot.sound]\n'CollatzBlockBudget.nonfixed_piece_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBlockBudget.full_clock_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Collatz.SourceTargetInduction",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/Collatz/SourceTargetInduction.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/SourceTargetInduction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.813,
+      "output": ""
+    },
+    {
+      "module": "AuditSourceTargetInduction",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/tmp/collatz-checkpoint9-final-fresh/AuditSourceTargetInduction.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/whole/lean/AuditSourceTargetInduction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.275,
+      "output": "'CollatzSourceTargetInduction.interval_downward' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.complete_of_joint' does not depend on any axioms\n'CollatzSourceTargetInduction.close_of_joint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceTargetInduction.collatz_of_joint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceTargetInduction.same_source_descent' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.same_source_merger' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.residue23_descent' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.residue23_mixed_witness' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.residue13_carry_paid_capture' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.mixed_witness_sound' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.joint_of_mixed_cover' depends on axioms: [propext, Quot.sound]\n'CollatzSourceTargetInduction.collatz_of_mixed_cover' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "source_sha256_after": {
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "research/lean-global-resolvent-20261121/overview/parallel/lean/Collatz/SourceEnvelope.lean": "757efd6082d6910ae0eb558841136bd26c63a51684cd9432288262a422777014",
+    "research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/AffineDispatcher.lean": "d59528865a8b1111e3b3d452eb1c4034930d6eb849c5e9a1a4398c7acda7542d",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/AuditAffineDispatcher.lean": "3169ec1c1f71507260ae457f7557d18945f9dcaefa4d2554a756190b41388039",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/BlockRepetitionBudget.lean": "25acb2f01cb05101aed116b986ff6d4fafd4eba7c90f3be58bf83174c82921da",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/SourceTargetInduction.lean": "fa8269cf53fc0cd8f59022242354552c93b61d0788707da6100cd7b053c16ad0",
+    "research/lean-global-resolvent-20261121/overview/whole/lean/AuditSourceTargetInduction.lean": "02ba0ff8cd801c312c3842d9dbad1ada9a21d7ef0e73ad9766143626f9a9ff6f"
+  },
+  "sources_unchanged": true,
+  "audit_counts": {
+    "AuditAffineDispatcher": 13,
+    "BlockRepetitionBudget": 12,
+    "AuditSourceTargetInduction": 12
+  },
+  "expected_audit_counts": {
+    "AuditAffineDispatcher": 13,
+    "BlockRepetitionBudget": 12,
+    "AuditSourceTargetInduction": 12
+  },
+  "audited_theorems": 37,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

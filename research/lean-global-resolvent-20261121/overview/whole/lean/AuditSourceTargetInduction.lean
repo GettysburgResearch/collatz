@@ -1,0 +1,14 @@
+import Collatz.SourceTargetInduction
+
+#print axioms CollatzSourceTargetInduction.interval_downward
+#print axioms CollatzSourceTargetInduction.complete_of_joint
+#print axioms CollatzSourceTargetInduction.close_of_joint
+#print axioms CollatzSourceTargetInduction.collatz_of_joint
+#print axioms CollatzSourceTargetInduction.same_source_descent
+#print axioms CollatzSourceTargetInduction.same_source_merger
+#print axioms CollatzSourceTargetInduction.residue23_descent
+#print axioms CollatzSourceTargetInduction.residue23_mixed_witness
+#print axioms CollatzSourceTargetInduction.residue13_carry_paid_capture
+#print axioms CollatzSourceTargetInduction.mixed_witness_sound
+#print axioms CollatzSourceTargetInduction.joint_of_mixed_cover
+#print axioms CollatzSourceTargetInduction.collatz_of_mixed_cover

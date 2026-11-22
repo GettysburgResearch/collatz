@@ -1,0 +1,77 @@
+{
+  "schema": "collatz-checkpoint9-examples/v1",
+  "success": true,
+  "scope": "Exact finite counterexample and symbolic affine ray; no universal coverage claim",
+  "checker_sha256": "e2d66dc873ecc8f111bf05e761fdc1876ee636b7ea713ad7b5a5b6c7f98d229f",
+  "source": 17,
+  "exponent": 1,
+  "target": 63,
+  "certificate": [
+    2,
+    3,
+    4
+  ],
+  "envelope": 26,
+  "cuts": [
+    {
+      "source": 13,
+      "clock": 2,
+      "boost": 1,
+      "paid_ceiling": 53,
+      "target": 143,
+      "degree": 4,
+      "offset": -910
+    },
+    {
+      "source": 5,
+      "clock": 5,
+      "boost": 2,
+      "paid_ceiling": 41,
+      "target": 485,
+      "degree": 6,
+      "offset": -3160
+    },
+    {
+      "source": 1,
+      "clock": 9,
+      "boost": 3,
+      "paid_ceiling": 17,
+      "target": 91,
+      "degree": 6,
+      "offset": -638
+    }
+  ],
+  "ray": {
+    "upper_input": [
+      256,
+      63
+    ],
+    "upper_clock": 8,
+    "lower_input": [
+      128,
+      31
+    ],
+    "lower_clock": 7,
+    "common_endpoint": [
+      729,
+      182
+    ],
+    "odd_count": 6
+  },
+  "ray_source": {
+    "pr": 185,
+    "commit": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "path": "research/literature-orbit-closure-20261121/certificates/prefix_language_rules.json",
+    "row": [
+      1,
+      8,
+      63,
+      31,
+      1
+    ]
+  },
+  "wrong_slope_endpoint": [
+    2187,
+    182
+  ]
+}

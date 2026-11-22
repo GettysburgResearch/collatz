@@ -1,0 +1,193 @@
+{
+  "schema": "collatz-whole-repository-checkpoint9/v1",
+  "scope": "Exact compilation closure for the three new proof modules; full Collatz remains open.",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "jobs": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "root": "research/lean-global-resolvent-20261121/lean",
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean",
+      "sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/ReverseBasin146.lean"
+    },
+    {
+      "module": "Collatz.Closure",
+      "root": "research/lean-global-resolvent-20261121/lean",
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean",
+      "sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/Closure.lean"
+    },
+    {
+      "module": "Collatz.Witness",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean",
+      "sha256": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/Witness.lean"
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean",
+      "sha256": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/DirectedInduction.lean"
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean",
+      "sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessEnergy.lean"
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean",
+      "sha256": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceWitness.lean"
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean",
+      "sha256": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapMultiset.lean"
+    },
+    {
+      "module": "Collatz.HighGapPump",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean",
+      "sha256": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/HighGapPump.lean"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/UnboundedGapReset.lean",
+      "sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/UnboundedGapReset.lean"
+    },
+    {
+      "module": "Collatz.LowGapLoops",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean",
+      "sha256": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapLoops.lean"
+    },
+    {
+      "module": "Collatz.LowGapPump",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapPump.lean",
+      "sha256": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapPump.lean"
+    },
+    {
+      "module": "Collatz.GapComparison",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapComparison.lean",
+      "sha256": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapComparison.lean"
+    },
+    {
+      "module": "Collatz.BoundedGapCofinal",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/BoundedGapCofinal.lean",
+      "sha256": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/BoundedGapCofinal.lean"
+    },
+    {
+      "module": "Collatz.LowIntervalRefinement",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/vendor",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowIntervalRefinement.lean",
+      "sha256": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+      "source_pr": 177,
+      "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowIntervalRefinement.lean"
+    },
+    {
+      "module": "Collatz.SourceEnvelope",
+      "root": "research/lean-global-resolvent-20261121/overview/parallel/lean",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/lean/Collatz/SourceEnvelope.lean",
+      "sha256": "757efd6082d6910ae0eb558841136bd26c63a51684cd9432288262a422777014",
+      "source_pr": 176,
+      "source_commit": "03e40fa4d7506ad92682a49c850103b028a11dbe",
+      "source_path": "research/lean-global-resolvent-20261121/overview/parallel/lean/Collatz/SourceEnvelope.lean"
+    },
+    {
+      "module": "Collatz.TerminalCarry",
+      "root": "research/lean-global-resolvent-20261121/lean",
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean",
+      "sha256": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+      "source_pr": 176,
+      "source_commit": "03e40fa4d7506ad92682a49c850103b028a11dbe",
+      "source_path": "research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean"
+    },
+    {
+      "module": "Collatz.AffineDispatcher",
+      "root": "research/lean-global-resolvent-20261121/overview/whole/lean",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/AffineDispatcher.lean",
+      "sha256": "d59528865a8b1111e3b3d452eb1c4034930d6eb849c5e9a1a4398c7acda7542d",
+      "role": "new proof module"
+    },
+    {
+      "module": "AuditAffineDispatcher",
+      "root": "research/lean-global-resolvent-20261121/overview/whole/lean",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/lean/AuditAffineDispatcher.lean",
+      "sha256": "3169ec1c1f71507260ae457f7557d18945f9dcaefa4d2554a756190b41388039",
+      "role": "new public audit"
+    },
+    {
+      "module": "BlockRepetitionBudget",
+      "root": "research/lean-global-resolvent-20261121/overview/whole/lean",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/lean/BlockRepetitionBudget.lean",
+      "sha256": "25acb2f01cb05101aed116b986ff6d4fafd4eba7c90f3be58bf83174c82921da",
+      "role": "new proof module"
+    },
+    {
+      "module": "Collatz.SourceTargetInduction",
+      "root": "research/lean-global-resolvent-20261121/overview/whole/lean",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/SourceTargetInduction.lean",
+      "sha256": "fa8269cf53fc0cd8f59022242354552c93b61d0788707da6100cd7b053c16ad0",
+      "role": "new proof module"
+    },
+    {
+      "module": "AuditSourceTargetInduction",
+      "root": "research/lean-global-resolvent-20261121/overview/whole/lean",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/lean/AuditSourceTargetInduction.lean",
+      "sha256": "02ba0ff8cd801c312c3842d9dbad1ada9a21d7ef0e73ad9766143626f9a9ff6f",
+      "role": "new public audit"
+    }
+  ],
+  "audit_modules": {
+    "AuditAffineDispatcher": 13,
+    "BlockRepetitionBudget": 12,
+    "AuditSourceTargetInduction": 12
+  },
+  "new_public_theorems": 37
+}

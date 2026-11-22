@@ -1,0 +1,15 @@
+import Collatz.AffineDispatcher
+
+#print axioms CollatzAffineDispatcher.affine_gap_transport
+#print axioms CollatzAffineDispatcher.dispatch_exists
+#print axioms CollatzAffineDispatcher.dispatch_transport
+#print axioms CollatzAffineDispatcher.signed_path_negative
+#print axioms CollatzAffineDispatcher.dispatch_negative
+#print axioms CollatzAffineDispatcher.complete_dispatch_normal_form
+#print axioms CollatzAffineDispatcher.boosted_prefix_rank
+#print axioms CollatzAffineDispatcher.dispatch_interval_rule
+#print axioms CollatzAffineDispatcher.coefficient_paid_interval_rule
+#print axioms CollatzAffineDispatcher.dispatch_merger_interval_rule
+#print axioms CollatzAffineDispatcher.zero_degree_interval_rule
+#print axioms CollatzAffineDispatcher.low_target_initialization
+#print axioms CollatzAffineDispatcher.debt_two_gap_one
