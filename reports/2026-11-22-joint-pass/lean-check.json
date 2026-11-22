@@ -1,0 +1,249 @@
+{
+  "status": "passed",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "warnings_as_errors": true,
+  "fresh_local_module_output": true,
+  "module_count": 15,
+  "new_public_theorem_count": 65,
+  "modules": [
+    {
+      "module": "ShellCover",
+      "path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/ShellCover.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 17.939,
+      "printed_axioms": [],
+      "printed_audit_count": 0
+    },
+    {
+      "module": "ForwardSection",
+      "path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/ForwardSection.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 11.362,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 4
+    },
+    {
+      "module": "BandTransport",
+      "path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "sha256": "4534e598e1f6c4ac20b105bb3060142a5eb4f7a4de2299d66511ad2cee6eb44d",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/BandTransport.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 6.662,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 10
+    },
+    {
+      "module": "WitnessGlobal",
+      "path": "research/lean-forward-band-20261121/lean/WitnessGlobal.lean",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/WitnessGlobal.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 5.821,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 7
+    },
+    {
+      "module": "InverseDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "sha256": "f644a2e04179c3589aeb07f0f0c29ce3876348e84d90d1d87df043f1d71fec2b",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/InverseDensityPotential.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 5.348,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 6
+    },
+    {
+      "module": "MarkedDensityPotential",
+      "path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "sha256": "7172d964262c91c33b72bc1b6c077e76a59557f0522c829454a0be0f61819685",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-forward-band-20261121/lean/MarkedDensityPotential.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 2.35,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 3
+    },
+    {
+      "module": "WitnessSynthesis",
+      "path": "research/lean-wide-pass-20261122/lean/WitnessSynthesis.lean",
+      "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "origin_path": "research/lean-wide-pass-20261122/lean/WitnessSynthesis.lean",
+      "kind": "baseline",
+      "exit_code": 0,
+      "seconds": 2.146,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 9
+    },
+    {
+      "module": "WitnessCritical",
+      "path": "research/lean-critical-20261122/lean/WitnessCritical.lean",
+      "kind": "baseline",
+      "origin_path": "research/lean-critical-20261122/lean/WitnessCritical.lean",
+      "origin_commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "sha256": "57b21967b684a27ef70410dfe9fd50148a6aae010ba24e1d8789809f3c66be25",
+      "exit_code": 0,
+      "seconds": 5.934,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 16
+    },
+    {
+      "module": "MixedCoverAttack",
+      "kind": "new",
+      "path": "research/lean-joint-20261122/lean/MixedCoverAttack.lean",
+      "expected_audits": 29,
+      "sha256": "1dea7535e58048e0f447c7f1effff26927f85bf26903e70ff992d921fbfb6f60",
+      "exit_code": 0,
+      "seconds": 20.419,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 29
+    },
+    {
+      "module": "FiniteSpikeClosure",
+      "kind": "new",
+      "path": "research/lean-joint-20261122/lean/FiniteSpikeClosure.lean",
+      "expected_audits": 8,
+      "sha256": "2034cf601b910bae54421d49db6890e80e676fad68545d49fb97541c7afc709b",
+      "exit_code": 0,
+      "seconds": 3.012,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 8
+    },
+    {
+      "module": "MixingCylinder",
+      "kind": "new",
+      "path": "research/lean-joint-20261122/lean/MixingCylinder.lean",
+      "expected_audits": 8,
+      "sha256": "f9a956c3c203c00fcc5efa4677eb60dd32b8c77fea0a4974b3b60e97f1db2447",
+      "exit_code": 0,
+      "seconds": 2.509,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 8
+    },
+    {
+      "module": "OrdinaryBoundary",
+      "kind": "new",
+      "path": "research/lean-joint-20261122/lean/OrdinaryBoundary.lean",
+      "expected_audits": 11,
+      "sha256": "c48d9047a0ecc47ad5219057e797286ed25f733f8e4b0de36783b0b91d00d7c0",
+      "exit_code": 0,
+      "seconds": 3.038,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 11
+    },
+    {
+      "module": "LayeredContact",
+      "kind": "new",
+      "path": "research/lean-joint-20261122/lean/LayeredContact.lean",
+      "expected_audits": 4,
+      "sha256": "119c5ae7c64f5435c877b515c3b9b154ec36af76c28100e6961b401906f4d629",
+      "exit_code": 0,
+      "seconds": 2.229,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 4
+    },
+    {
+      "module": "ContactClock",
+      "kind": "new",
+      "path": "research/lean-joint-20261122/lean/ContactClock.lean",
+      "expected_audits": 5,
+      "sha256": "a06f971e3ae2ca3e228e214af14408d0ecc3d9fc66eadcff5ec83934f9e7d0a3",
+      "exit_code": 0,
+      "seconds": 3.412,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 5
+    },
+    {
+      "module": "JointAudit",
+      "kind": "audit",
+      "path": "research/lean-joint-20261122/lean/JointAudit.lean",
+      "expected_audits": 65,
+      "sha256": "e605b2c9590f959d3775c503996c3eebdf4c42b4be4d7a263d2a48ea9c311e7a",
+      "exit_code": 0,
+      "seconds": 1.791,
+      "printed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "printed_audit_count": 65
+    }
+  ],
+  "scope": "Pinned dependencies, all public theorems in THEOREMS.json, and a separate complete axiom audit.",
+  "not_formalized": [
+    "The imported infinite harmonic reference, population and canonical-envelope inputs",
+    "The infinite contact layers, Green identity, Lp residues and strong convergence",
+    "Tao's marginal mixing theorem and its ordinary density application",
+    "An all-depth potential bound or early critical finite spike for every survivor",
+    "Complete resolution of the residual source families or the general interval cover",
+    "Universal Collatz convergence"
+  ]
+}

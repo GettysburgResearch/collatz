@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-joint-independent-reviews/v1",
+  "date_utc": "2026-11-22",
+  "method": "Parallel agents reconstructed the stated proofs and arithmetic independently of their owners; root integrated and inspected the frozen files. These verdicts are scoped to the exact hashes and claims below.",
+  "reviews": [
+    {
+      "reviewer": "ordinary_boundary",
+      "verdict": "PASS",
+      "claims": "Exact row normalization and full valuation-clock cutoff; finite telescope and actual-depth floor; calibrated quantifiers; bounded-domain finite obstacle sum; q>=b ancestor extraction. Independently reconstructed D2 and epsilon1=10/21, then exact cylinder floors and all six finite quartic maxima.",
+      "evidence_limit": "Independent mathematical and arithmetic reconstruction; compilation is recorded separately in the root fresh replay.",
+      "artifact_sha256": {
+        "FINITE_SPIKE_CLOSURE.md": "62bb6dfe0201875e5194ad28526c50f529a24b0bb2242305a4be6414adde86cb",
+        "lean/FiniteSpikeClosure.lean": "2034cf601b910bae54421d49db6890e80e676fad68545d49fb97541c7afc709b",
+        "finite_density_certificate.py": "45c6bebc8008727e367428f922baa5c1a48a09c565864292f420e79405f45fd3",
+        "finite-density-certificate.json": "12d93c5e06387406439d0c932c5169a252fc3e477365146e06cbb81226779991"
+      }
+    },
+    {
+      "reviewer": "finite_spikes",
+      "verdict": "PASS",
+      "claims": "Actual positive odd unit all-one cylinder; equal-mass factor two; exact error normalization; intrinsic horizon positivity/order/ceiling; finite obstacle consequence; scale boundary C8-C10.",
+      "evidence_limit": "Mathematical review of written proof and Lean statements; root compiles the frozen module.",
+      "artifact_sha256": {
+        "CYLINDER_BUDGET.md": "d74f8b79c043530da00ca8f3cfe4de3fc6eda3882da53d8e581e2f554b97da09",
+        "lean/MixingCylinder.lean": "f9a956c3c203c00fcc5efa4677eb60dd32b8c77fea0a4974b3b60e97f1db2447"
+      }
+    },
+    {
+      "reviewer": "mixed_cover and finite_spikes",
+      "verdict": "PASS",
+      "claims": "Occupation-dominated finite-Lp source theorem and all-frequency residues; complete original-label allocation; infinite immigration contact energy; all strict-future layers and antichain budget; forced inverse departure between contacts; exact Green formula; all-clock original-label domination and tails; TV and strong finite-Lp limit; p=1 transform endpoint.",
+      "evidence_limit": "Source-qualified written deductions, not a formalization of infinite measures or a proof of zero escaping mass.",
+      "artifact_sha256": {
+        "ORDINARY_BOUNDARY.md": "688fc66d5e117b4bfe08db87cefead01250d7d6282ff96daa857d4843d12a1ea"
+      }
+    },
+    {
+      "reviewer": "ordinary_boundary",
+      "verdict": "PASS",
+      "claims": "Original-root contact-atom domination from monotone layer weight and harmonic flow; finite source-collision sum; reciprocal square-root lower bound; bounded-density integer-power inequality.",
+      "evidence_limit": "Statement/proof review; root strict compile and fresh replay supply machine evidence.",
+      "artifact_sha256": {
+        "lean/LayeredContact.lean": "119c5ae7c64f5435c877b515c3b9b154ec36af76c28100e6961b401906f4d629"
+      }
+    },
+    {
+      "reviewer": "finite_spikes",
+      "verdict": "PASS",
+      "claims": "Unit-residue coverage and even lift; ordinary noncontact parent with exact valuation; two gap-one unit predecessors; positive clock-drop probability; identical law during same-clock holding; almost-sure clock transience; no finite stationary measure by bounded arctan.",
+      "evidence_limit": "Finite arithmetic has a Lean certificate. Infinite Markov arguments retain stated analytic inputs and distinguish Pi L^k from (Pi L)^k.",
+      "artifact_sha256": {
+        "CONTACT_CLOCK.md": "c82be41200a9054a6176b4405ba579d8944e5c149d680ab4de2b397215285129",
+        "lean/ContactClock.lean": "a06f971e3ae2ca3e228e214af14408d0ecc3d9fc66eadcff5ec83934f9e7d0a3"
+      }
+    },
+    {
+      "reviewer": "ordinary_boundary",
+      "verdict": "PASS",
+      "claims": "Finite source ceiling and strict natural defect decrease; fixed-grade source/target nested induction with complete dispatcher explicit; literal-tail interval surgeries; actual 13-clock descent; exhaustive low t2 cases; formal t3 frontier. Independently reconstructed the unbounded two-run q+4 permutation, j=3 mod4 deletion, j=0 mod16 written exhaustion, and j=8 mod16 high-gap exclusion.",
+      "evidence_limit": "Frozen review distinguishes 29 formal statements from written refinements and does not assert the full global dispatcher.",
+      "artifact_sha256": {
+        "MIXED_COVER.md": "e1e9abeb23da3c44f14115c1cc2c9afdb6e3b3b283d7cfc91156fdcc82ed87d9",
+        "lean/MixedCoverAttack.lean": "1dea7535e58048e0f447c7f1effff26927f85bf26903e70ff992d921fbfb6f60"
+      }
+    }
+  ]
+}

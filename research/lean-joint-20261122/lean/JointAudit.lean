@@ -1,0 +1,74 @@
+import MixedCoverAttack
+import FiniteSpikeClosure
+import MixingCylinder
+import OrdinaryBoundary
+import LayeredContact
+import ContactClock
+
+/-! Complete public-theorem axiom audit for this checkpoint. -/
+
+#print axioms CollatzShell.MixedCoverAttack.interior_grade_drop
+#print axioms CollatzShell.MixedCoverAttack.interior_splice_interval_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_one_interval_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_two_one_interval_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_four_one_interval_rule
+#print axioms CollatzShell.MixedCoverAttack.powered_source_ceiling
+#print axioms CollatzShell.MixedCoverAttack.same_grade_source_defect_drop
+#print axioms CollatzShell.MixedCoverAttack.fixed_grade_source_tie_wellFounded
+#print axioms CollatzShell.MixedCoverAttack.head_three_four_two_interval_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_valuation_one_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_valuation_large_rule
+#print axioms CollatzShell.MixedCoverAttack.close_fixed_grade_with_source_and_target
+#print axioms CollatzShell.MixedCoverAttack.head_three_prefix_four
+#print axioms CollatzShell.MixedCoverAttack.head_three_partner_smaller
+#print axioms CollatzShell.MixedCoverAttack.head_three_unbounded_merger
+#print axioms CollatzShell.MixedCoverAttack.head_three_same_source_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_residual_pair
+#print axioms CollatzShell.MixedCoverAttack.head_three_residual_equivalence
+#print axioms CollatzShell.MixedCoverAttack.head_three_cofactor_class
+#print axioms CollatzShell.MixedCoverAttack.head_three_residual_ternary
+#print axioms CollatzShell.MixedCoverAttack.residual_cofactor_classification
+#print axioms CollatzShell.MixedCoverAttack.head_three_residual_parameterization
+#print axioms CollatzShell.MixedCoverAttack.head_three_exhaustive_split
+#print axioms CollatzShell.MixedCoverAttack.head_three_of_residual_return
+#print axioms CollatzShell.MixedCoverAttack.head_three_two_family_frontier
+#print axioms CollatzShell.MixedCoverAttack.head_three_two_residue_descent
+#print axioms CollatzShell.MixedCoverAttack.head_three_two_low_family_rule
+#print axioms CollatzShell.MixedCoverAttack.head_three_three_forced_prefix
+#print axioms CollatzShell.MixedCoverAttack.head_three_low_final_frontier
+#print axioms CollatzShell.FiniteSpikeClosure.geometric_block_identity
+#print axioms CollatzShell.FiniteSpikeClosure.full_clock_tail_bound
+#print axioms CollatzShell.FiniteSpikeClosure.affine_error_budget
+#print axioms CollatzShell.FiniteSpikeClosure.quartic_calibration
+#print axioms CollatzShell.FiniteSpikeClosure.calibrated_horizon
+#print axioms CollatzShell.FiniteSpikeClosure.calibration_dominates_polynomials
+#print axioms CollatzShell.FiniteSpikeClosure.finite_obstacle_sum
+#print axioms CollatzShell.FiniteSpikeClosure.finite_floor_extraction
+#print axioms CollatzShell.MixingCylinder.ternary_power_lift
+#print axioms CollatzShell.MixingCylinder.ternary_exponent_period
+#print axioms CollatzShell.MixingCylinder.all_one_trace
+#print axioms CollatzShell.MixingCylinder.ordinary_cylinder
+#print axioms CollatzShell.MixingCylinder.zero_mass_l1
+#print axioms CollatzShell.MixingCylinder.finite_density_error_lower
+#print axioms CollatzShell.MixingCylinder.critical_error_floor
+#print axioms CollatzShell.MixingCylinder.calibration_ceiling
+#print axioms CollatzShell.OrdinaryBoundary.parents_unit
+#print axioms CollatzShell.OrdinaryBoundary.parents_equation
+#print axioms CollatzShell.OrdinaryBoundary.parents_strictMono
+#print axioms CollatzShell.OrdinaryBoundary.parents_odd_step
+#print axioms CollatzShell.OrdinaryBoundary.seventeen_in_basin
+#print axioms CollatzShell.OrdinaryBoundary.seven_eleven_seventeen
+#print axioms CollatzShell.OrdinaryBoundary.seventeen_not_contact
+#print axioms CollatzShell.OrdinaryBoundary.occupation_quadratic_bound
+#print axioms CollatzShell.OrdinaryBoundary.contact_atom_cost
+#print axioms CollatzShell.OrdinaryBoundary.finite_contact_cost
+#print axioms CollatzShell.OrdinaryBoundary.contact_cost_not_summable
+#print axioms CollatzShell.LayeredContact.contact_atom_reference_bound
+#print axioms CollatzShell.LayeredContact.original_packet_bound
+#print axioms CollatzShell.LayeredContact.reciprocal_root_weight_lower
+#print axioms CollatzShell.LayeredContact.bounded_density_power
+#print axioms CollatzShell.ContactClock.unit_residue_cover
+#print axioms CollatzShell.ContactClock.unit_exponent
+#print axioms CollatzShell.ContactClock.noncontact_parent_ladder
+#print axioms CollatzShell.ContactClock.two_gap_one_predecessors
+#print axioms CollatzShell.ContactClock.parent_above_contact

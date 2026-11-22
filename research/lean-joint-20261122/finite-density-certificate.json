@@ -1,0 +1,47 @@
+{
+  "schema": "collatz-exact-mixing-horizon/v2",
+  "scope": "exact finite rational matrices; no infinite-depth or convergence claim",
+  "max_block": 3,
+  "checks": {
+    "consistency_cells": 364,
+    "ordinary_rows": 120
+  },
+  "rows": [
+    {
+      "m": 1,
+      "epsilon": "10/21",
+      "regularized_error": "37/63",
+      "H": 1,
+      "intrinsic_H": 1,
+      "cylinder_error_lower_bound": "1/18",
+      "simple_error_lower_bound": "1/18",
+      "minimum_floor": 9,
+      "uniform_density_bound": "85/9",
+      "fine_density_sha256": "35a020a550e27cd577b0162a1aac4fd6fc7f967a580ac46ed7985b3035809245"
+    },
+    {
+      "m": 2,
+      "epsilon": "356972676597374/667199944795629",
+      "regularized_error": "9860662249727641/18014398509481983",
+      "H": 1,
+      "intrinsic_H": 1,
+      "cylinder_error_lower_bound": "17/648",
+      "simple_error_lower_bound": "1/72",
+      "minimum_floor": 81,
+      "uniform_density_bound": "761/162",
+      "fine_density_sha256": "85200bddd236691c1eed1250147587a7db75ce9ff72b0ef4868b50eca574b7b7"
+    },
+    {
+      "m": 3,
+      "epsilon": "57382152459286048204275312256339298532442839977069448312264630204865660328135579926694845019766011352750117174783407253182192639006283427824226/117455559800248972844457508939895734019935497431251119138733712766621864364764844025690529450948551530998779301452101037806390619326543362494163",
+      "regularized_error": "13983014900873259371253720047937081454723588613571626312926549710704562747858534203528744182953456942561944733239518662869208274818302387415451639/28541701031460500401203174672394663366844325875794021950712292202289113040637857098242798656580498022032703370252860552186952920496350037086081609",
+      "H": 1,
+      "intrinsic_H": 1,
+      "cylinder_error_lower_bound": "217/23328",
+      "simple_error_lower_bound": "1/288",
+      "minimum_floor": 729,
+      "uniform_density_bound": "2251/729",
+      "fine_density_sha256": "f788d5d9271cdea88d06d25d9723a5243be5442405511d524519c19b3be86874"
+    }
+  ]
+}
