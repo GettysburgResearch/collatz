@@ -3,7 +3,11 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint supplies a new strict-grade interval rule from every
+The latest checkpoint combines least-target induction, minimum source grade,
+maximum source value at that grade, and the original target floor in one
+canonical counterquery. Its exact remaining proposition is `FloorIntervalStep`,
+equivalent to full Collatz and the original residue implication. It is unproved.
+The preceding checkpoint supplies a strict-grade interval rule from every
 sufficiently separated negative low block, and an unconditional canonical
 source selector for every target at least 177. The selected source's whole
 future orbit stays below half the original target, making its successful
@@ -18,7 +22,72 @@ These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: actual source progress and the original target floor
+## Latest checkpoint: the joint minimum and the canonical terminal energy
+
+This continuation starts from published checkpoint eleven at
+`8ef9bf0d828fc533721dee1f90c5d78fac80ad39`. Four peer branches advanced
+while the attack continued; their actual new heads and selected file hashes
+are recorded in
+[the delta snapshot](../../reports/lean-exact-witness-global-20261121/joint-minimum/SOURCE_DELTA.json).
+
+### One counterquery with every legitimate induction resource
+
+[Joint minimum](JOINT_MINIMAL_COUNTEREXAMPLE.md) proves that a hypothetical
+counterexample yields one complete supplied source with all of the following
+properties simultaneously:
+
+- The target `t>1105` is least bad and satisfies `t=3 mod4`.
+- The source has minimum complete grade among sources capturing `t`, and
+  maximum numerical value at that grade. The source ceiling
+  `S<=2^(sum Gamma)` makes this maximum legitimate.
+- The original, unrestricted `Hyp Interval` holds at the selected grade.
+  A failed lower-grade child target `y` would have `t<=y`, so its source
+  would also capture `t`, contradicting the minimum.
+- Every larger source at the same grade multiset has the analogous full
+  arbitrary-target hypothesis. This incorporates PR180's source-value tie.
+- The selected word itself is `P++[1,2,3,4]`, with nonempty bounded-four
+  prefix `P` ending at 11, initial exponent one through three, and
+  `S+1<t<=2S+1`.
+- Every future ordinary source state is at most `(t-1)/2`, and every
+  nonempty literal source prefix strictly contracts its linear coefficient.
+
+No separately selected floor witness is substituted after choosing the
+minimum source. `JointMinimalCounterexample.lean` proves both
+`collatz_iff_floor_interval` and `original_residue_iff_floor_interval`.
+The theorem supplies the combined resources; it does not prove the
+remaining universal successful-return proposition `FloorIntervalStep`.
+
+### The entire terminal energy has the same original source measure
+
+[Terminal Dirichlet run mass](TERMINAL_DIRICHLET_RUN_MASS.md) is a new
+written deduction under the latest pinned canonical harmonic and Green
+inputs. Write `R` for the canonical potential, `F` for its escape label,
+`d` for its finite original charge, and `e_N` for the live endpoint
+pushforward of `N` times its Cesaro Dirichlet energy. It proves
+
+    || e_N - (1/N) sum_(j<N) L^j(dF) ||_1 -> 0.
+
+The killed-boundary remainder tends to zero by a proved overlap squeeze.
+This identifies the entire measure, beyond equality of scalar total masses.
+Using the binary-run occupation theorem with bounded truncations then gives
+
+    liminf sum min(4^runs(q),4^k) e_N(q) >= (1+3k) b_infinity,
+
+where `b_infinity=sum dF`. If an escaping component exists, the terminal
+run-weighted energy diverges. The same measure has actual contact-reset
+limit `F^2 eta_0` in total variation. No uniform higher-norm estimate is
+inferred from this limit.
+
+These analytic deductions are source-qualified written proofs. The complete
+binary combinatorics retain the same written status as in checkpoint ten.
+Neither a finite upper bound for that weighted energy nor the required
+universal arithmetic return is proved. The new Lean declarations contain
+no analytic axiom.
+
+[Checkpoint-twelve execution and scope](../../reports/lean-exact-witness-global-20261121/joint-minimum/)
+records the focused new-module compilation and expanded audit.
+
+## Previous checkpoint: actual source progress and the original target floor
 
 This continuation starts from published checkpoint ten, PR177 head
 `46a76145ef21e93318eff25da8cf00c5342fd7d2`. The three new core-Lean modules

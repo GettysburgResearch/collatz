@@ -36,3 +36,4 @@ import Collatz.BinaryRunForcing
 import Collatz.NegativeShadow
 import Collatz.SourceOrbitProgress
 import Collatz.RootedSourceFloor
+import Collatz.JointMinimalCounterexample

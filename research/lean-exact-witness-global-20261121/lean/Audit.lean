@@ -276,3 +276,23 @@ import Collatz
 #print axioms CollatzRootedSourceFloor.consumed_gap_cap_descent
 #print axioms CollatzRootedSourceFloor.orbit_positive
 #print axioms CollatzRootedSourceFloor.target_prefix_cap_closes
+
+-- A single canonical counterquery carries BOTH original induction resources,
+-- the same-grade source tie, and its own original-target floor.
+#print axioms CollatzJointMinimalCounterexample.least_bad_target
+#print axioms CollatzJointMinimalCounterexample.minimum_capturing_source
+#print axioms CollatzJointMinimalCounterexample.original_interval_hyp
+#print axioms CollatzJointMinimalCounterexample.source_grade_bound
+#print axioms CollatzJointMinimalCounterexample.maximum_source_at_grade
+#print axioms CollatzJointMinimalCounterexample.minimum_maximum_source
+#print axioms CollatzJointMinimalCounterexample.original_same_grade_hyp
+#print axioms CollatzJointMinimalCounterexample.bad_query_floor
+#print axioms CollatzJointMinimalCounterexample.least_bad_shape
+#print axioms CollatzJointMinimalCounterexample.bad_query_low_shape
+#print axioms CollatzJointMinimalCounterexample.bad_query_canonical
+#print axioms CollatzJointMinimalCounterexample.bad_query_prefix_contracts
+#print axioms CollatzJointMinimalCounterexample.joint_counterexample
+#print axioms CollatzJointMinimalCounterexample.collatz_of_floor_interval
+#print axioms CollatzJointMinimalCounterexample.collatz_iff_floor_interval
+#print axioms CollatzJointMinimalCounterexample.original_residue_iff_floor_interval
+#print CollatzJointMinimalCounterexample.FloorIntervalStep

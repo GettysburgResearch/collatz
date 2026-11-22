@@ -6,6 +6,56 @@ new commits on older PRs. It used those interfaces to construct the new
 source-gap multiset program. This is a focused research synthesis, not a fresh
 independent replay of every imported project.
 
+## Latest continuation: the joint minimum and a measure-level boundary bridge
+
+The continuation after published checkpoint eleven
+`8ef9bf0d828fc533721dee1f90c5d78fac80ad39` re-read seven relevant PR heads.
+Four had advanced. The actual heads, selected files and SHA-256 pins are in
+[the delta snapshot](../../reports/lean-exact-witness-global-20261121/joint-minimum/SOURCE_DELTA.json).
+This is a targeted delta after the complete metadata inventory below, not
+another independent replay of the entire repository.
+
+| PR | New frozen head | Interface used in this continuation |
+|---|---|---|
+| 175 | `728389c2ad4796853948250a90188b0697483d92` | Exact normalized Dirichlet boundary energy for the canonical potential, with its upstream analytic qualifications. |
+| 176 | `31c4a880ea4acf6eec4783e68bfc75e2cf8e7fe6` | Same-source smaller-target head-three mergers and the exact failed phase. |
+| 180 | `ab3973099f0d285bbe88972382ad599bb02cd460` | Finite source ceiling and larger-source same-grade tie; all valuation-two failed-phase queries closed; finite original-source contact reference and exact clock distinction. |
+| 185 | `53f01ca5b443ef57ef2160b4996dbb2cc87f7395` | Full-denominator rational shadow descent, actual contact-return contraction, strict Green correction and terminal exit accounting. |
+
+PR185's description still named an older science checkpoint. Its current
+committed tree was fetched and the new `research/multiple-attacks-20261122`
+packet was read at the actual head shown above.
+
+The new joint-minimum theorem combines the latest source-value tie with
+this branch's canonical word and floor results. Any counterexample yields
+one least bad target and one source selected by minimum grade, then maximum
+value at that grade. The same supplied certificate has the original full
+interval hypothesis, the same-grade larger-source hypothesis, the prior on
+every smaller target, its own future floor, and strict coefficient
+contraction of every literal prefix. No source reset is involved.
+`FloorIntervalStep` is equivalent to full Collatz and to the user's original
+residue implication, and remains unproved. Its universal return is the
+central arithmetic objective.
+
+The analytic continuation identifies the terminal Dirichlet measure with
+Cesaro transport of the fixed original measure `dF` in total variation.
+The proof uses the actual inverse prefix, Jensen, the pure Green tail,
+finite-component overlap and finite-source ray alignment. It proves that
+the killed remainder disappears. Binary-run occupation then forces its
+run-weighted mass to diverge if the exact canonical escape coefficient is
+positive. Its actual first-contact reset converges to `F^2 eta_0`.
+These are written deductions under the pinned analytic inputs, not Lean
+axioms. A matching upper bound for the same weighted energy is still absent.
+
+The rational-shadow compiler supplies genuine local descents under its
+physical pin and payment assumptions. After a larger intermediate carry
+`n`, paying a descent below the original target `t` requires the full
+extra debt `D(n-t)`: its exact condition is
+`(2^j-3^o)v > D(n-t)+(h_j-h)` when `Dn=2^j v+h`.
+Local contraction alone does not discharge that original-target term.
+Universal physical horizon/payment availability for arbitrary supplied
+prefixes is not inferred from a finite repetition dictionary.
+
 ## Continued whole-theorem attack: source progress and target floors
 
 After publishing the synthesis below as checkpoint ten at

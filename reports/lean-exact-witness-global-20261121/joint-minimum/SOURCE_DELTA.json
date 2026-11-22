@@ -1,0 +1,122 @@
+{
+  "metadata_note": "PR185 body still named 7889fc... when actual head was 53f01ca...; new source paths were identified from actual committed tree and read at the actual head.",
+  "parent_published_owned_head": "8ef9bf0d828fc533721dee1f90c5d78fac80ad39",
+  "proof_boundary": "Only the owned new Lean module is newly compiled here. Written Dirichlet transport deductions retain the pinned canonical harmonic, Green, boundary and contact assumptions.",
+  "records": [
+    {
+      "changed": true,
+      "head": "728389c2ad4796853948250a90188b0697483d92",
+      "pr": 175,
+      "previous_pin": "54b5a324f55d97925ecb8100aa15ce7b08a12093",
+      "selected_source_files": [
+        {
+          "bytes": 23143,
+          "path": "research/lean-global-closure-20261121/LITERATURE_DIRICHLET_BOUNDARY.md",
+          "sha256": "41b4fe328417b3feef665b4de53fff1e94fdccc37bea1e75ce99ee4c3523c504"
+        }
+      ]
+    },
+    {
+      "changed": true,
+      "head": "31c4a880ea4acf6eec4783e68bfc75e2cf8e7fe6",
+      "pr": 176,
+      "previous_pin": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+      "selected_source_files": [
+        {
+          "bytes": 10727,
+          "path": "research/lean-global-resolvent-20261121/overview/profound/HEAD_THREE_TARGET.md",
+          "sha256": "fc4b88e44809253807c6e829592bf696b410ed6752cb81e111ed07fb0dec8b4a"
+        }
+      ]
+    },
+    {
+      "changed": false,
+      "head": "f464ddf2af6e340054673fdd6f5b28aba0310c10",
+      "pr": 178,
+      "previous_pin": "f464ddf2af6e340054673fdd6f5b28aba0310c10",
+      "selected_source_files": []
+    },
+    {
+      "changed": true,
+      "head": "ab3973099f0d285bbe88972382ad599bb02cd460",
+      "pr": 180,
+      "previous_pin": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "selected_source_files": [
+        {
+          "bytes": 23166,
+          "path": "research/lean-joint-20261122/MIXED_COVER.md",
+          "sha256": "e1e9abeb23da3c44f14115c1cc2c9afdb6e3b3b283d7cfc91156fdcc82ed87d9"
+        },
+        {
+          "bytes": 27012,
+          "path": "research/lean-joint-20261122/ORDINARY_BOUNDARY.md",
+          "sha256": "688fc66d5e117b4bfe08db87cefead01250d7d6282ff96daa857d4843d12a1ea"
+        },
+        {
+          "bytes": 7231,
+          "path": "research/lean-joint-20261122/CONTACT_CLOCK.md",
+          "sha256": "c82be41200a9054a6176b4405ba579d8944e5c149d680ab4de2b397215285129"
+        }
+      ]
+    },
+    {
+      "changed": false,
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "pr": 182,
+      "previous_pin": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "selected_source_files": []
+    },
+    {
+      "changed": false,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "pr": 183,
+      "previous_pin": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "selected_source_files": []
+    },
+    {
+      "changed": true,
+      "head": "53f01ca5b443ef57ef2160b4996dbb2cc87f7395",
+      "pr": 185,
+      "previous_pin": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "selected_source_files": [
+        {
+          "bytes": 9713,
+          "path": "research/multiple-attacks-20261122/README.md",
+          "sha256": "3b946148b1f7bb58532dba29db3feafffcc817dec329854d726d5d155e222bda"
+        },
+        {
+          "bytes": 11521,
+          "path": "research/multiple-attacks-20261122/RATIONAL_SHADOW_DISPATCH.md",
+          "sha256": "6124f2dc2796400a8a70b184a23cbde7ff141ce850aaca1d4c94ae847c22fce8"
+        },
+        {
+          "bytes": 14180,
+          "path": "research/multiple-attacks-20261122/CONTACT_RETURN_FINITE_REFERENCE.md",
+          "sha256": "0794a5e718c87900f110d214e4273004d44e470554a934473a2581d07cf55736"
+        },
+        {
+          "bytes": 12523,
+          "path": "research/multiple-attacks-20261122/STRICT_GREEN_VOLTERRA.md",
+          "sha256": "4236d6206ccbedd6347259ef55f82bdb90f45338f48ab8189be78b9a848a5e90"
+        },
+        {
+          "bytes": 9148,
+          "path": "research/multiple-attacks-20261122/HARMONIC_KERNEL_FACTORIZATION.md",
+          "sha256": "013fb3c5a3a1c6fd2f18ad9d81c57e55ed04192b5ffa4c9861823a3379763b9d"
+        },
+        {
+          "bytes": 5434,
+          "path": "research/multiple-attacks-20261122/CONTACT_EXIT_ACCOUNTING.md",
+          "sha256": "1328e839d02ff758c0eba04a32d54865e8d2f32797ff392e0494ebcab7a54057"
+        },
+        {
+          "bytes": 9794,
+          "path": "research/multiple-attacks-20261122/STOPPED_MIXING_INTERFACE.md",
+          "sha256": "504c4ac79a5df90a1e5dd53fe90ad919dceed6a5f7a6cf56b396a7c21ab057b7"
+        }
+      ]
+    }
+  ],
+  "scope": "Targeted follow-up to the complete 122-open-PR metadata inventory. Seven relevant heads re-read; four advanced. Selected mathematical sources inspected by parallel lanes and coordinating lead. No independent rebuild or proof audit of peer Lean or analytic packets.",
+  "snapshot_utc": "2026-11-22T06:40:57.580161+00:00"
+}
