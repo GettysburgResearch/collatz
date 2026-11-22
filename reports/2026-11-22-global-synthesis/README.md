@@ -93,3 +93,21 @@ The publication follow-up adds these receipts and updates this report.
 All compiled sources, exact-certificate inputs, and reviewed mathematical
 notes retain their checked bytes. Earlier packet receipts retain their
 own tested heads and are not relabeled as executions of this continuation.
+
+## Separate closing refresh
+
+[LATE_SOURCE_REFRESH.json](LATE_SOURCE_REFRESH.json) pins four branch heads
+that advanced during the checked pass. The accompanying
+[reconciliation](../../research/global-synthesis-20261122/LATE_REFRESH.md)
+credits the parallel PR183 classification and records the stronger late
+analytic and carry interfaces. This source inspection does not constitute
+a replay of those branches' Lean modules. The twenty-statement count,
+compiled source hashes, and scientific-checkpoint receipts above retain
+their original scope.
+
+The separate [late review](LATE_REFRESH_REVIEW.md) covers the source-scope
+reconciliation and the new written tail-capture composition.
+[late-capture-fixtures.json](late-capture-fixtures.json) records exact
+compatible certificates and sixteen parameter controls; normal and
+optimized Python produced identical bytes. These finite controls are not
+substituted for the all-parameter proof.

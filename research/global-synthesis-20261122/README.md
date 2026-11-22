@@ -21,6 +21,17 @@ The detailed proofs are [ARITHMETIC_CLOSURE.md](ARITHMETIC_CLOSURE.md),
 separates kernel checks, rational certificate checks, written deductions,
 and imported analytic hypotheses.
 
+The separate [closing refresh](LATE_REFRESH.md) reconciles four branches
+that advanced during this execution. In particular, PR183 independently
+published an overlapping generic independent-exponent classification
+before our mathematical commit; the note records that attribution and the
+distinct concrete two-parameter exclusion here. Its new source inspection
+does not change the frozen proof inputs or add to the Lean audit count.
+The late [tail-capture composition](TAIL_CAPTURE_BRIDGE.md) supplies
+successful whole-interval rules at retained roots congruent to one modulo
+81 or 729, under the specified complete-source certificate hypotheses.
+It is a separately reviewed written proof with exact example replays.
+
 ## 1. The arithmetic enlargement is over the whole exponent lattice
 
 The preceding PR185 theorem handled one-parameter families whose block

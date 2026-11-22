@@ -1,0 +1,74 @@
+{
+  "schema": "collatz-global-synthesis-late-refresh/v1",
+  "date_utc": "2026-11-22",
+  "scope": "Four exact branch heads observed at the closing metadata refresh. Selected source inspection and written reconstruction by the synthesis team; no fresh execution of these branches' Lean modules.",
+  "own_mathematical_head": "2eb1006fba0128006f09fa4279202334f61a233a",
+  "own_receipt_head": "d06f97d955152edeeeb7acd5295d57aec9f4fb9c",
+  "original_source_pins_unchanged": true,
+  "sources": [
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "pr_url": "https://github.com/GettysburgResearch/collatz/pull/183",
+      "metadata_title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "inspected_paths": [
+        "research/profound-step-20261122/README.md",
+        "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+        "research/profound-step-20261122/mergers/ARBITRARY_DEBT.md",
+        "research/profound-step-20261122/mergers/CarryCapture.lean"
+      ]
+    },
+    {
+      "pr": 180,
+      "head": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "updated_at": "2026-11-22T05:22:21Z",
+      "pr_url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "metadata_title": "Collatz: actual return composition and Lean carry continuation",
+      "inspected_paths": [
+        "research/lean-critical-20261122/README.md",
+        "research/lean-critical-20261122/RETURN_ATTACK.md",
+        "research/lean-critical-20261122/POTENTIAL_ATTACK.md",
+        "research/lean-critical-20261122/WITNESS_ATTACK.md",
+        "research/lean-critical-20261122/lean/WitnessCritical.lean"
+      ]
+    },
+    {
+      "pr": 175,
+      "head": "75e4c3be98db839646ffbb76fc0ac33649747c99",
+      "updated_at": "2026-11-22T05:27:06Z",
+      "pr_url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "metadata_title": "Collatz: Lean inverse completeness and global canonical-potential bounds",
+      "inspected_paths": [
+        "research/lean-global-closure-20261121/ADDENDUM_ALL_EXPONENTS.md",
+        "research/lean-global-closure-20261121/FIXED_RESOLUTION_ENVELOPE_OBSTRUCTION.md"
+      ]
+    },
+    {
+      "pr": 182,
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "updated_at": "2026-11-22T05:27:54Z",
+      "pr_url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "metadata_title": "Lean: affine rigidity, sharp certificate bounds, and ordinary Fourier bridge",
+      "inspected_paths": [
+        "research/lean-dyadic-descent-20261121/INVARIANT_CORRELATION.md",
+        "research/lean-dyadic-descent-20261121/HARMONIC_CAPTURE_BRIDGE.md",
+        "research/lean-dyadic-descent-20261121/CANONICAL_ESCAPE_LABEL.md",
+        "research/lean-dyadic-descent-20261121/CONTINUED_SYNTHESIS.md"
+      ]
+    }
+  ],
+  "arithmetic_chronology": [
+    {
+      "sha": "84a76f0d81839494e17a0de5fea207ea96da5f87",
+      "committer_date": "2026-11-22T05:20:39Z",
+      "message": "Add checked independent-block, ordinary-channel, and arbitrary-carry proofs"
+    },
+    {
+      "sha": "2eb1006fba0128006f09fa4279202334f61a233a",
+      "committer_date": "2026-11-22T05:23:59Z",
+      "message": "Research: independent cycle exponents, escape moments, and bounded literal-tail selectors"
+    }
+  ],
+  "scope_boundary": "The generic independent cycle-exponent classification has a parallel overlapping derivation in PR183 with earlier recorded repository publication. No priority claim. The concrete all-a,b P^aQ^b exclusion is absent from the inspected late changes. Full Collatz remains open."
+}
