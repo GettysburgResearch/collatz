@@ -1,0 +1,16 @@
+'CollatzShell.HeadThreeNegativeCycle.negative_cycle' does not depend on any axioms
+'CollatzShell.HeadThreeNegativeCycle.negative_cycle_uniform' depends on axioms: [propext, Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.head_three_entry' depends on axioms: [propext, Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.head_three_entry_no_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.source_entry' depends on axioms: [propext, Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.source_twos' depends on axioms: [propext]
+'CollatzShell.HeadThreeNegativeCycle.source_long_prefix' depends on axioms: [propext, Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.lifted_negative_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.original_target_no_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.HeadThreeNegativeCycle.complete_cap_four_example' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
