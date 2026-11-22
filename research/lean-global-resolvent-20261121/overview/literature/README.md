@@ -1,5 +1,13 @@
 # Checkpoint 7: critical Abel limits and the remaining marked-height bound
 
+**Continuation:** [Checkpoint 8](../parallel/README.md) gives an exact
+contact-entrance representation, an explicit finite-depth density bound,
+and the maximal paid literal-cut source interval. It adds 44 audited Lean
+theorems and a more concrete finite-time capture target.
+Its [source reconciliation](../parallel/SOURCE_RECONCILIATION.md) credits
+PR180's intervening finite-depth sandwich and corrects the scope of the
+older synchronized even-run budget.
+
 **2026-11-22. Full Collatz remains OPEN.** This continuation combines
 rational-affine renewal, ordinary hitting potentials, and signed-cycle
 transport. It adds 94 audited Lean theorems and a written analytic bridge.

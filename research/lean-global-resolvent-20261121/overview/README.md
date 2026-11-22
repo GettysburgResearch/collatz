@@ -1,6 +1,9 @@
 # Whole-repository synthesis and a faster mandatory-band clock
 
-**Continuation:** [Checkpoint 7](literature/README.md) connects PR180's
+**Latest continuation:** [Checkpoint 8](parallel/README.md) combines three
+parallel attacks into a quantitative inverse-contact question and an exact
+source-envelope merger condition, with 44 new audited Lean theorems.
+[Checkpoint 7](literature/README.md) connects PR180's
 canonical envelope to the entire critical Abel family, adds 94 audited
 Lean theorems for ordinary traces, finite anchors, and complete carry
 families, and reconciles those results with the latest PR177/180 heads.

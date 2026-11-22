@@ -419,6 +419,15 @@ interval states and preserve their actual source identities.
 
 ### Final low-alphabet closure test
 
+**Checkpoint-8 correction:** the exact payable replacement exponent for a
+nonempty literal prefix is `max(e, max(a-1) over its gaps)`. The old exponent
+`e` may be retained, so the `G-1` condition displayed below is sufficient
+but is not necessary in general. The new
+[source-envelope theorem](../parallel/SOURCE_ENVELOPE.md) proves the exact
+bound and maximizes all literal cuts. It also covers the q13/t31 example
+through source 20, even though the specific synchronized construction below
+fails. The earlier checkpoint remains available at its frozen commit.
+
 Suppose every source gap is at most four, and every nonempty source prefix
 W satisfies `2^(sum W)>3^(length W)`, so the compensated-prefix rules no
 longer apply. Compare a source prefix W and an actual target prefix V with
@@ -438,8 +447,8 @@ f=e+B-C.
 \]
 
 If `G=max(e,max W)`, the consumed parent grades can pay this one new even
-grade when `f≤G−1`. Thus this direct synchronized route needs the target
-valuation inequality
+grade when `f≤G−1`. This gives the sufficient, sometimes overly restrictive,
+target valuation inequality
 
 \[
 \boxed{C\ge B+e-G+1.}

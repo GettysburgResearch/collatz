@@ -1,0 +1,27 @@
+import Collatz.SourceEnvelope
+
+#print axioms CollatzSourceEnvelope.boost_ge_initial
+#print axioms CollatzSourceEnvelope.boost_ge_gap
+#print axioms CollatzSourceEnvelope.boosted_step_rank
+#print axioms CollatzSourceEnvelope.crest_self
+#print axioms CollatzSourceEnvelope.crest_witness
+#print axioms CollatzSourceEnvelope.envelope_witness
+#print axioms CollatzSourceEnvelope.envelope_half
+#print axioms CollatzSourceEnvelope.crest_cut_bound
+#print axioms CollatzSourceEnvelope.envelope_cut_bound
+#print axioms CollatzSourceEnvelope.literal_cut_run_bound
+#print axioms CollatzSourceEnvelope.envelope_maximal
+#print axioms CollatzSourceEnvelope.literal_cut_interval_iff
+#print axioms CollatzSourceEnvelope.boost_le
+#print axioms CollatzSourceEnvelope.low_envelope_witness
+#print axioms CollatzSourceEnvelope.envelope_interval_rule
+#print axioms CollatzSourceEnvelope.run_basin
+#print axioms CollatzSourceEnvelope.envelope_merger_rule
+#print axioms CollatzSourceEnvelope.envelope_target_entry_rule
+#print axioms CollatzSourceEnvelope.hits_implies_merges
+#print axioms CollatzSourceEnvelope.entry_implies_merger
+#print axioms CollatzSourceEnvelope.low_interval_of_envelope_merger
+#print axioms CollatzSourceEnvelope.collatz_of_envelope_merger
+#print axioms CollatzSourceEnvelope.collatz_of_envelope_entry
+#print axioms CollatzSourceEnvelope.example_envelope
+#print axioms CollatzSourceEnvelope.example_interval_closes

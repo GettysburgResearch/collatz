@@ -1,0 +1,363 @@
+{
+  "schema": "collatz-parallel-global-interfaces/v1",
+  "scope": "Finite theorems and their exact imports; full Collatz remains open",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256_before": {
+    "lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "overview/parallel/vendor/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "overview/parallel/vendor/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "overview/parallel/vendor/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "overview/parallel/vendor/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "overview/parallel/vendor/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "overview/parallel/vendor/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "overview/parallel/vendor/Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "overview/parallel/vendor/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "overview/parallel/vendor/Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "overview/parallel/vendor/Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "overview/parallel/vendor/Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "overview/parallel/vendor/Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "overview/parallel/lean/Collatz/SourceEnvelope.lean": "757efd6082d6910ae0eb558841136bd26c63a51684cd9432288262a422777014",
+    "overview/parallel/lean/AuditSourceEnvelope.lean": "446770b54ae01da62d84eeccec66a50f00fb96fc9b074e21c37d1fe06afed786",
+    "overview/parallel/lean/ClockSliceBound.lean": "25a53c33a7f76cc99f2cd60afedcb958bd5e19b13fc9d5c349444930fb976537",
+    "overview/parallel/lean/MinimalObstacle.lean": "d12425abf87bb233d59d6f210fe5b2d6dfdf2e2754710456d871ba7ec910d0cd",
+    "overview/parallel/lean/ContactCapture.lean": "6f1f0a3c498364bcfa3b2360580261e8ff4eef1845deadf120cd397f68a2d958",
+    "overview/parallel/lean/AuditParallel.lean": "6ec8be8b54898c3f942fa31f47478f8a5ba32a02ace3ddee8a2fb84a367e8f55"
+  },
+  "fresh_output_directory": "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final",
+  "verified_dependency_mirror_files": 8620,
+  "commands": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/ReverseBasin146.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.197,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Closure",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/Closure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.353,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Witness",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/Witness.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.543,
+      "output": ""
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/DirectedInduction.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.583,
+      "output": ""
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/WitnessEnergy.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.464,
+      "output": ""
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/SourceWitness.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.606,
+      "output": ""
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/GapMultiset.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.275,
+      "output": ""
+    },
+    {
+      "module": "Collatz.HighGapPump",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/HighGapPump.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.102,
+      "output": ""
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/UnboundedGapReset.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/UnboundedGapReset.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 5.002,
+      "output": "'CollatzUnboundedGapReset.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.complete_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.complete_failed_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.depth_zero_guard' does not depend on any axioms\n'CollatzUnboundedGapReset.word_path_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.low_entrance' depends on axioms: [propext, Quot.sound]\n'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Collatz.LowGapLoops",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/LowGapLoops.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.413,
+      "output": ""
+    },
+    {
+      "module": "Collatz.LowGapPump",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/LowGapPump.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapPump.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.598,
+      "output": ""
+    },
+    {
+      "module": "Collatz.GapComparison",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/GapComparison.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapComparison.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.427,
+      "output": ""
+    },
+    {
+      "module": "Collatz.BoundedGapCofinal",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/BoundedGapCofinal.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/BoundedGapCofinal.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.167,
+      "output": ""
+    },
+    {
+      "module": "Collatz.LowIntervalRefinement",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/LowIntervalRefinement.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowIntervalRefinement.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.459,
+      "output": ""
+    },
+    {
+      "module": "Collatz.SourceEnvelope",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/Collatz/SourceEnvelope.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/Collatz/SourceEnvelope.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.64,
+      "output": ""
+    },
+    {
+      "module": "AuditSourceEnvelope",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/AuditSourceEnvelope.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/AuditSourceEnvelope.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.376,
+      "output": "'CollatzSourceEnvelope.boost_ge_initial' depends on axioms: [propext]\n'CollatzSourceEnvelope.boost_ge_gap' depends on axioms: [propext]\n'CollatzSourceEnvelope.boosted_step_rank' depends on axioms: [propext, Quot.sound]\n'CollatzSourceEnvelope.crest_self' depends on axioms: [propext]\n'CollatzSourceEnvelope.crest_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.envelope_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.envelope_half' depends on axioms: [propext]\n'CollatzSourceEnvelope.crest_cut_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.envelope_cut_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.literal_cut_run_bound' depends on axioms: [propext, Quot.sound]\n'CollatzSourceEnvelope.envelope_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.literal_cut_interval_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.boost_le' depends on axioms: [propext]\n'CollatzSourceEnvelope.low_envelope_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.envelope_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.run_basin' does not depend on any axioms\n'CollatzSourceEnvelope.envelope_merger_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.envelope_target_entry_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.hits_implies_merges' does not depend on any axioms\n'CollatzSourceEnvelope.entry_implies_merger' does not depend on any axioms\n'CollatzSourceEnvelope.low_interval_of_envelope_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.collatz_of_envelope_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.collatz_of_envelope_entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceEnvelope.example_envelope' does not depend on any axioms\n'CollatzSourceEnvelope.example_interval_closes' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "ClockSliceBound",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/ClockSliceBound.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/ClockSliceBound.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.092,
+      "output": "'CollatzClockSlice.numerator_mod_two' depends on axioms: [propext]\n'CollatzClockSlice.pow_two_odd_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.numerator_injective_fixed_length_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.numerator_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.numerator_lt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.fixed_clock_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.fixed_clock_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "MinimalObstacle",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/MinimalObstacle.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/MinimalObstacle.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.393,
+      "output": "'CollatzPotential.LeastMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.unitObstacle' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernelTransfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.no_slack_subharmonic' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.relative_slack_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.no_killed_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_dominated_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_least_of_summable_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_dominated_subtract' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_no_killed_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "ContactCapture",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/ContactCapture.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/ContactCapture.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.243,
+      "output": "'CollatzContactCapture.frontWeight_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.frontWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.finite_front_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.capture_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.marked_sublinear_of_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "AuditParallel",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint8-final/AuditParallel.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/lean/AuditParallel.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.516,
+      "output": "'CollatzClockSlice.numerator_mod_two' depends on axioms: [propext]\n'CollatzClockSlice.pow_two_odd_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.numerator_injective_fixed_length_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.numerator_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.numerator_lt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.fixed_clock_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClockSlice.fixed_clock_mass_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.no_slack_subharmonic' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.relative_slack_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.no_killed_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_dominated_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_least_of_summable_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_dominated_subtract' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzPotential.kernel_no_killed_fixed_point' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.frontWeight_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.frontWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.finite_front_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.capture_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzContactCapture.marked_sublinear_of_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "source_sha256_after": {
+    "lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "overview/parallel/vendor/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "overview/parallel/vendor/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "overview/parallel/vendor/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "overview/parallel/vendor/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "overview/parallel/vendor/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "overview/parallel/vendor/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "overview/parallel/vendor/Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "overview/parallel/vendor/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "overview/parallel/vendor/Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "overview/parallel/vendor/Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "overview/parallel/vendor/Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "overview/parallel/vendor/Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "overview/parallel/lean/Collatz/SourceEnvelope.lean": "757efd6082d6910ae0eb558841136bd26c63a51684cd9432288262a422777014",
+    "overview/parallel/lean/AuditSourceEnvelope.lean": "446770b54ae01da62d84eeccec66a50f00fb96fc9b074e21c37d1fe06afed786",
+    "overview/parallel/lean/ClockSliceBound.lean": "25a53c33a7f76cc99f2cd60afedcb958bd5e19b13fc9d5c349444930fb976537",
+    "overview/parallel/lean/MinimalObstacle.lean": "d12425abf87bb233d59d6f210fe5b2d6dfdf2e2754710456d871ba7ec910d0cd",
+    "overview/parallel/lean/ContactCapture.lean": "6f1f0a3c498364bcfa3b2360580261e8ff4eef1845deadf120cd397f68a2d958",
+    "overview/parallel/lean/AuditParallel.lean": "6ec8be8b54898c3f942fa31f47478f8a5ba32a02ace3ddee8a2fb84a367e8f55"
+  },
+  "sources_unchanged": true,
+  "audited_theorems": 44,
+  "expected_audits": 44,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

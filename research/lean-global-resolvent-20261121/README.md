@@ -4,10 +4,16 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [the literature continuation](overview/literature/README.md)
-connects the canonical inverse envelope with every critical Abel limit,
-adds 94 audited Lean theorems, and identifies the remaining marked-height
-and low-interval obligations after the latest PR177/180 changes.
+**Latest checkpoint:** [the parallel contact and source-envelope attack](overview/parallel/README.md)
+adds 44 audited Lean theorems, an exact inverse first-contact representation,
+an explicit finite-depth density bound, and the exact maximal interval
+paid by all literal source-prefix cuts. The combined analytic target is
+a quantitative contact probability on the forced marked band; the
+arithmetic target is its explicit remaining low-interval merger selector.
+Both global assertions remain open.
+[Checkpoint 7](overview/literature/README.md) connects the canonical
+inverse envelope with every critical Abel limit and retains its
+94 audited Lean theorems.
 [Checkpoint 6](overview/README.md) contains the faster mandatory-band clock
 and whole-certificate carry reduction. The earlier
 [mandatory shrinking section](section/README.md) and its finite survivor
