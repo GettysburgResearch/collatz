@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "independently_checked_small_b": 512,
+  "negative_cycle_prefix_checks": 551,
+  "modular_calibration_checks": 640,
+  "wraparound_calibration_checks": 81,
+  "unbounded_family_instances": [
+    {
+      "k": 2,
+      "s": 10,
+      "a": 542,
+      "H": 6,
+      "q_bits": 544
+    },
+    {
+      "k": 3,
+      "s": 43,
+      "a": 6968,
+      "H": 8,
+      "q_bits": 6970
+    },
+    {
+      "k": 4,
+      "s": 31,
+      "a": 15068,
+      "H": 10,
+      "q_bits": 15071
+    },
+    {
+      "k": 5,
+      "s": 28,
+      "a": 40826,
+      "H": 12,
+      "q_bits": 40829
+    },
+    {
+      "k": 6,
+      "s": 7,
+      "a": 30620,
+      "H": 14,
+      "q_bits": 30623
+    },
+    {
+      "k": 7,
+      "s": 22,
+      "a": 288686,
+      "H": 16,
+      "q_bits": 288690
+    },
+    {
+      "k": 8,
+      "s": 46,
+      "a": 1810838,
+      "H": 18,
+      "q_bits": 1810842
+    }
+  ],
+  "cap_four": {
+    "q": 58849709,
+    "target": 470797671,
+    "source_odd_steps": 46,
+    "source_shortcut_clock": 99,
+    "no_descent_through": 24,
+    "target_at_24": 10871688401,
+    "observed_first_descent": {
+      "clock": 64,
+      "value": 310287853
+    }
+  },
+  "lean": {
+    "exit_code": 0,
+    "seconds": 6.903132330000517,
+    "audit_count": 10,
+    "source_sha256": "cffc9b414abaa6cb2d346a433a820bd3da44be5afcc9b684a7c601f48c10df5d"
+  },
+  "scope": "New obstruction only. Arbitrarily long completed sources use a high terminal gap; the alphabet-four claim is one concrete source."
+}

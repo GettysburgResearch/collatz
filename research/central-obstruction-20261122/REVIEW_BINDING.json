@@ -1,0 +1,71 @@
+{
+  "scope": "Source binding for the finalized packet; mathematical reviews have their own explicit claim and execution scope.",
+  "reviewed_mathematics": {
+    "negative_shadow_lean": "cffc9b414abaa6cb2d346a433a820bd3da44be5afcc9b684a7c601f48c10df5d",
+    "extremal_clock_note": "e60e0744d5d9d88f2f417050aff2cd73c1f1831815ccedb365f9311912cb9ded",
+    "extremal_clock_lean": "83da6bb58074c104221e27e58c0726289bf4ef324d9cd31f50ceba1d49bd668e"
+  },
+  "integration_notes": [
+    "The negative-shadow note received the requested fixed-source-independent-clock wording clarification and a cross-link to the separately reviewed extremal-clock counterexample. Its proof was unchanged.",
+    "Cycle control assertions were changed to explicit ValueError checks and output redirected to stdout, so normal and optimized replay both retain checks without modifying the checkout.",
+    "The independent negative-shadow worksheet is archived as executed, not represented as a portable entry point."
+  ],
+  "files": [
+    {
+      "path": "research/central-obstruction-20261122/CYCLE_ATTEMPTS.md",
+      "sha256": "a2fcde5f23de883dd33d7c38c91bf4c9ae3119069f48ed4b1175ad592354c9b3"
+    },
+    {
+      "path": "research/central-obstruction-20261122/DEPENDENCIES.json",
+      "sha256": "4b594b29da6a14d1b95ce9a0511a44192f94ff50206bbdf8d7de21c38081da29"
+    },
+    {
+      "path": "research/central-obstruction-20261122/ESCAPE_ATTEMPTS.md",
+      "sha256": "9f00202cdc0229fc801c8f6ac2fa58c3500c35dd19a777cad839ab9537773f79"
+    },
+    {
+      "path": "research/central-obstruction-20261122/EXTREMAL_CLOCK_REVIEW.md",
+      "sha256": "0bf39bd63e1246ac0fe27f1edb806d9736679eb6382c897ac0798c867d96bf9b"
+    },
+    {
+      "path": "research/central-obstruction-20261122/EXTREMAL_SOURCE_CLOCK_FAILURE.md",
+      "sha256": "e60e0744d5d9d88f2f417050aff2cd73c1f1831815ccedb365f9311912cb9ded"
+    },
+    {
+      "path": "research/central-obstruction-20261122/HEAD_THREE_NEGATIVE_CYCLE.md",
+      "sha256": "f9260b683c1d16e8fe44950b4690bea61f9b8fbc6c0d1ad6b85dc48b5c9915b1"
+    },
+    {
+      "path": "research/central-obstruction-20261122/NEGATIVE_SHADOW_REVIEW.md",
+      "sha256": "b7a206fadcc9ba6fa685c064da9957ac32939e0174f325ea1cd9ab7c4683b90c"
+    },
+    {
+      "path": "research/central-obstruction-20261122/README.md",
+      "sha256": "63c0dc509a4d443c76c948e6d9e324912848d875eae51c9ff6aad09a3ed9c7ae"
+    },
+    {
+      "path": "research/central-obstruction-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "49b8e2b140b065420e3a335215612f076913c7fea100b136dd7532e3cba98449"
+    },
+    {
+      "path": "research/central-obstruction-20261122/certificates/exact_cycle_controls.py",
+      "sha256": "50feea598cec53a089a30dc7e976fc96d55007a02e60ab73946c66813aff7cf4"
+    },
+    {
+      "path": "research/central-obstruction-20261122/certificates/negative_cycle_certificate.py",
+      "sha256": "7f4cbf547b42b091360c164c7637dc6ec40e23f2c4008fa229f266871823c8be"
+    },
+    {
+      "path": "research/central-obstruction-20261122/check.py",
+      "sha256": "a5f87e4201251c2317b51494b8dc362a2bc344f8ee0473b8bbe6661c5959e9c1"
+    },
+    {
+      "path": "research/central-obstruction-20261122/lean/ExtremalSourceClock.lean",
+      "sha256": "83da6bb58074c104221e27e58c0726289bf4ef324d9cd31f50ceba1d49bd668e"
+    },
+    {
+      "path": "research/central-obstruction-20261122/lean/HeadThreeNegativeCycle.lean",
+      "sha256": "cffc9b414abaa6cb2d346a433a820bd3da44be5afcc9b684a7c601f48c10df5d"
+    }
+  ]
+}
