@@ -51,8 +51,9 @@ All odd source gaps, their count, and the target offset are unbounded.
 
 These results are conditional step rules for the existing well-founded
 induction. They do not replace its interval hypothesis by a psi-only
-hypothesis. In particular, valuation-two and valuation-three psi queries,
-and other uncovered low-gap interval queries, are not silently discharged.
+hypothesis. The later [odd-valuation theorem](PSI_ODD_VALUATIONS.md) proves
+the entire odd family, including valuation three. Valuation two and
+arbitrary non-psi interval targets require their own proved case rules.
 
 The proof is original composition of the current branch's carry return and
 complete-source rank rules. No numerical verification threshold or external

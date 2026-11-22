@@ -1,0 +1,92 @@
+{
+  "artifact_sha256": {
+    "LATEST_SOURCE_SYNTHESIS.md": "8f75ebce4ce0a9e1d696da522a9fa4fc9cd85f4b551adb2ba95dfff6b98c4cc3",
+    "PSI_EVEN_HEAD_FOUR.md": "3d387a392a2dc2f2c5e85bad3dfeb0e8fb0bd6feb3590cfa150c4fea9dd1c0e5",
+    "PSI_EVEN_HEAD_TWO.md": "9a2c220b8b6d2b21bd1b44c137ea71d7bad74c32faa68e9f78f83f6f601067c5",
+    "PSI_HEAD_THREE_FRONTIER.md": "b86f80fa1bbc244207f2c24e321fc0d95de20f16a8d05eeb933aaccc1d05d619",
+    "PSI_ODD_VALUATIONS.md": "5529661bf615d92f268541ad82361fabc0ab2dd5012e4528e61312b8934b1b4e",
+    "PSI_VALUATION_ONE.md": "c894e70c109af41982f1bb064e832851514a8c853f97a8cb5d90d5b9c01bf680",
+    "README.md": "1f63b260d877126bb7a492b7def8d17a36df5f15985a8f6df3d5005ebe6cb955"
+  },
+  "axiom_audit": {
+    "command": "lake env lean -DwarningAsError=true Audit.lean",
+    "declarations": 141,
+    "exit_code": 0,
+    "log": "checkpoint-nine-axioms.txt",
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unexpected_axioms": [],
+    "without_axioms": 2
+  },
+  "checkpoint": 9,
+  "created_at_utc": "2026-11-22T05:36:24.283472+00:00",
+  "exact_rank_witness": {
+    "receipt": "head-three-rank-witness.json",
+    "scope": "Three complete source certificates, one actual unequal-clock merger, exact inverse dead ends, and source-rank increase; no search cutoff",
+    "sha256": "b356822263397bde08ea6a350738bc78e281e6bfc538428fa93e245a0ca149d4"
+  },
+  "external_source_boundary": "The exact peer heads and analytic qualifications remain those of checkpoint8 and LATEST_SOURCE_SYNTHESIS.md; no new external theorem is imported",
+  "fresh_build": {
+    "all_source_bytes_match_fresh_build": true,
+    "command": "lake build",
+    "directory_had_no_previous_lake_outputs": true,
+    "exit_code": 0,
+    "jobs": 34,
+    "log": "checkpoint-nine-build.txt",
+    "source_files": 34
+  },
+  "global_remaining_premise": "CollatzBoundedGapCofinal.LowIntervalStep; arbitrary non-psi interval targets require coverage as well",
+  "lean_dependencies": "Lean core only",
+  "lean_source_sha256": {
+    "Audit.lean": "3283d29d26cefdc6398330c3c99dddd1785ed89b50760c0460b8ff48318c4599",
+    "AuditSourceGreenCoefficient.lean": "2a34b379d7ce95caf53720b0c9e3250e305d81bd3d57983621a83b389897ac7b",
+    "Collatz.lean": "55d0bda922955e6e17dcdac29b9e630a8dc364755f77a93812c3f6a12a4bee81",
+    "Collatz/AsymmetricPsiReset.lean": "773af3bb312aa57cdbad9e530945ff5ee44fb642ebceea9f08549ea411a25615",
+    "Collatz/BoundedGapCofinal.lean": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+    "Collatz/ClockSynchronization.lean": "64238fb906e02c311c32042963527b57a3a66622a4d2502cee4ca0ec62dc606f",
+    "Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "Collatz/GapComparison.lean": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+    "Collatz/GapHandoffs.lean": "fd4c4251ab270f803c88c66599dcd22a687a25f3f9a9f498018d93f050e2419b",
+    "Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "Collatz/LowGapGlobal.lean": "a6e7a94e2a48d42fe2767c37de92ae349df5ab7cc320bfe6fc4366970ba93e0f",
+    "Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "Collatz/LowGapPump.lean": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+    "Collatz/LowGapToPsi.lean": "8e0987e5ad506d3a9b8b764f7b35defb1cf03560450c994ebc3c2f48f913ca06",
+    "Collatz/LowIntervalRefinement.lean": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+    "Collatz/MergerDenominatorClear.lean": "cf54fed295d0869cefc1a5821481cefb7b9f3e174d7d8b7c1ef6776c7a1b429e",
+    "Collatz/PsiCompletion.lean": "c64a9095dc9267e6c3953efbcc0861e59b378ae05508e8532e1575b1ba94227b",
+    "Collatz/PsiEvenHeadFour.lean": "07d1427cfe2ea62e8866f14fe03bd013ccb4522f022c491971501d73d3ce2304",
+    "Collatz/PsiEvenHeadTwo.lean": "5946dac63e63576dc6799a4fd26ae86de5f22e4352154e1e472ee0ed363caddb",
+    "Collatz/PsiOddValuations.lean": "f7b7d0e338f9f2601e7809352849c93380d695191f8c2d50c341c01201ceaafd",
+    "Collatz/PsiSuffix.lean": "ed8bf9f6702ff2aeffefd08dfef02def97272750633e2b24e65c53b8025ddae7",
+    "Collatz/PsiValuationOne.lean": "46268f211e0bd0b0b27f13f7d1e30720ab77de994c934729a033787f91ed34c7",
+    "Collatz/ResetFamily.lean": "d9e330b940e7e82edb7bd32efbd11bb12dd2996e8a70f5e0843643f06ffb89e3",
+    "Collatz/RetainedEvenBoundary.lean": "3518b36ef6394d41bd6664060157171fc42746db6178f02e09ef64a605237e3f",
+    "Collatz/RetainedEvenReset.lean": "c94547e22613b4f0044f7c3d7eefb46de62e8aab6fcddc422db2418cb58cba57",
+    "Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "Collatz/Shadow.lean": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714",
+    "Collatz/SourceGreenCoefficient.lean": "fc36d8ddcac3e67560ffe04c30c607370cc5ade5742386f9fdacab11d117ebf1",
+    "Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "Collatz/UnboundedGapReset.lean": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+    "Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb"
+  },
+  "lean_version": "4.34.1",
+  "new_modules": [
+    "Collatz/PsiOddValuations.lean",
+    "Collatz/PsiEvenHeadTwo.lean",
+    "Collatz/PsiEvenHeadFour.lean"
+  ],
+  "new_public_theorems": 11,
+  "parent_local_commit": "5bfe33e7d2143245f254e56777f12cf37f5aa29c",
+  "parent_published_head": "2efabba9a341839b67ed011d6b878b23730ee51d",
+  "parent_tree": "c6f7789b0fc1ac66e36dde54b2461309349f5c8e",
+  "remaining_normalized_psi_case": "initial exponent2, first odd source gap3, complete word over1,2,3,4; all under Hyp Interval",
+  "repository_gate": "A separate complete clean-checkout gate is run on the final committed tree before remote publication; actual checked commit and tree are recorded on PR177.",
+  "status": "All odd-initial-exponent psi steps and complete exponent-two/head-two and head-four steps proved under original Interval IH; full theorem OPEN"
+}

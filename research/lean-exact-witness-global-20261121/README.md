@@ -3,16 +3,57 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint proves whole-prefix repayment in the original source
-rank, a uniform negative-nine carry return, and every valuation-one psi
-query under the original lower-rank interval hypothesis. It builds on the
-cofinal alphabet-four reduction and preserves every complete supplied tail.
-A complete recursive cover of the remaining low-gap states is still missing.
+The latest checkpoint closes every odd-initial-valuation psi query and the
+complete initial-valuation-two cases with first source gap two or four,
+under the original lower-rank interval hypothesis. It builds on whole-prefix
+repayment, uniform carry returns, and the cofinal alphabet-four reduction.
+The complete supplied source tails remain controlled in the same rank.
+A complete recursive cover of the remaining interval states is still missing.
 These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: whole-prefix repayment and uniform carry returns
+## Latest checkpoint: whole valuation branches and the remaining psi cell
+
+The continuation after published checkpoint eight
+(`2efabba9a341839b67ed011d6b878b23730ee51d`) adds three core-Lean modules.
+All conclusions below retain the original `Hyp Interval` induction premise.
+
+- [Every odd initial valuation](PSI_ODD_VALUATIONS.md): if `S=2^e*q` and
+  `e` is odd, the entire psi query `Basin(2S-1)` closes for every complete
+  supplied odd word. When `q=1 mod4`, there is an exact ordinary merger at
+  clocks `e+3` and `e+2` between targets `2^(e+1)*q-1` and `2^e*q-1`.
+  Halving the known source preserves its whole odd word and strictly lowers
+  its initial grade. When `q=3 mod4`, the leading source gap is one and the
+  existing source-growth rule applies. There is no bound on `e` or the word.
+- [Initial valuation two, first gap two](PSI_EVEN_HEAD_TWO.md): the target
+  reaches `27u-7` at the literal tail endpoint `u`. Its two odd residue
+  phases either permit target quartering or an actual expanding source
+  prefix. This closes every supplied tail in this branch.
+- [Initial valuation two, first gap four](PSI_EVEN_HEAD_FOUR.md): the target
+  merges with the smaller partner `27u-2`. Three exhaustive ternary cells
+  construct actual child source certificates. Two replace the old gap four;
+  the third retains it and lowers the initial even grade. The endpoint-one
+  case has an exact additional target prefix and preserves its padded tail.
+
+Combined with the existing high-gap, high-initial-valuation, empty-word,
+odd-source, and first-gap-one rules, the remaining **psi step** can only
+have initial exponent two and first source gap three, with the complete
+odd word over one through four. This is a reduction of the psi subproblem
+under the interval induction hypothesis. It is not complete coverage of
+the larger interval domain: arbitrary non-psi interval queries still need
+their own successful rules. The full theorem remains unproved.
+
+The [remaining head-three note](PSI_HEAD_THREE_FRONTIER.md) records its exact
+carry and an admissible ternary class where both immediate low-gap inverse
+chains stop. A verified smaller merger in that class increases the
+highest changed source-grade multiplicity, so numerical descent alone does
+not justify its next recursive call.
+
+Fresh combined build and axiom receipts are in
+[`reports/.../psi-branches/`](../../reports/lean-exact-witness-global-20261121/psi-branches/).
+
+## Previous checkpoint: whole-prefix repayment and uniform carry returns
 
 Three parallel attacks and the coordinating composition add four core-Lean
 modules. These are unbounded path and certificate theorems, with no larger

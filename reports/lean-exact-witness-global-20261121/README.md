@@ -4,7 +4,15 @@ Mathematical statements and exact remaining assumptions are in
 [`research/lean-exact-witness-global-20261121/README.md`](../../research/lean-exact-witness-global-20261121/README.md).
 Collatz and the user's residue implication remain OPEN.
 
-## Current checkpoint: whole-prefix repayment and uniform carry returns
+## Current checkpoint: complete psi valuation branches
+
+The [psi-branch receipts](psi-branches/README.md) record the fresh combined
+build and expanded audit after all odd initial valuations and the two
+complete exponent-two source-head cases were added. The original interval
+induction hypothesis remains explicit. The preceding published checkpoint
+and all earlier receipts retain their own exact source boundaries.
+
+## Previous checkpoint: whole-prefix repayment and uniform carry returns
 
 The [repayment receipts](repayment/README.md) record a fresh build of the
 four new modules with the complete owned package, the expanded axiom audit,

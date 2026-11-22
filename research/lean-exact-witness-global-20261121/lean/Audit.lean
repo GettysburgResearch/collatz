@@ -163,3 +163,16 @@ import Collatz
 
 -- These new step rules do not prove the remaining universal selector.
 #print CollatzBoundedGapCofinal.LowIntervalStep
+
+-- Continued whole-branch psi coverage in the original interval induction.
+#print axioms CollatzPsiOddValuations.two_step_diamond
+#print axioms CollatzPsiOddValuations.odd_valuation_target_merge
+#print axioms CollatzPsiOddValuations.odd_valuation_target_equivalence
+#print axioms CollatzPsiOddValuations.psi_odd_valuation_rule
+#print axioms CollatzPsiOddValuations.psi_valuation_three_rule
+#print axioms CollatzPsiEvenHeadTwo.target_prefix
+#print axioms CollatzPsiEvenHeadTwo.psi_rule
+#print axioms CollatzPsiEvenHeadFour.head_four_target_equivalence
+#print axioms CollatzPsiEvenHeadFour.replaced_four_rank
+#print axioms CollatzPsiEvenHeadFour.retained_four_rank
+#print axioms CollatzPsiEvenHeadFour.psi_even_head_four_rule

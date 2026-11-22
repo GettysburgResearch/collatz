@@ -68,6 +68,32 @@ component minimum through the smaller-merger alternative, so that combined
 argument has not produced the missing strict global descent. Analytic and
 Lean claims are separated in [GLOBAL_GREEN_MERGER.md](GLOBAL_GREEN_MERGER.md).
 
+### Continued whole-branch psi returns
+
+The continuation after checkpoint eight also integrates the ordinary
+two-step diamond with the complete-source rank. For every odd initial
+exponent `e` and odd core `q=1 mod4`, targets `2^(e+1)*q-1` and `2^e*q-1`
+have the same future at clocks `e+3` and `e+2`. The child halves the original
+known source and preserves its entire odd word. The other odd-core phase
+has first source gap one. This proves all odd-initial-exponent psi steps,
+including the formerly remaining exponent-three branch.
+
+The target diamond is the physical half-merger mechanism already present
+in the inspected PR184 `RisingMerge.lean` and PR185 `AL27_HALF_ROUTE.md`.
+The new theorem makes its ordinary target merger, complete source
+certificate, original-rank decrease, and child activation one Lean proof.
+The construction does not invoke the unproved universal smaller-partner
+cover from those sources.
+
+Two further complete psi cases at initial exponent two are now formalized.
+For first gap two, `3q+1=4u` gives the target carry `27u-7`, and the two
+odd residue phases of `u` exhaust the cases. For first gap four,
+`3q+1=16u` gives an actual smaller merger partner `27u-2`; the exhaustive
+cells `u mod9 = 1,4,7` produce rank-paid child sources, including an explicit
+endpoint-one transport. The remaining low-alphabet psi head is three at
+initial exponent two. This reduction does not replace complete coverage of
+the larger active interval.
+
 ## Prior frozen sources: 2026-11-21
 
 The paths below identify the mathematical sources of the summaries. The full

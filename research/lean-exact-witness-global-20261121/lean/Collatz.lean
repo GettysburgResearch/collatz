@@ -26,3 +26,6 @@ import Collatz.LowGapGlobal
 import Collatz.ClockSynchronization
 import Collatz.PsiValuationOne
 import Collatz.SourceGreenCoefficient
+import Collatz.PsiOddValuations
+import Collatz.PsiEvenHeadTwo
+import Collatz.PsiEvenHeadFour
