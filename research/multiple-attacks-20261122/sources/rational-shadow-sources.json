@@ -1,0 +1,43 @@
+{
+  "status": "General finite physical compiler and listed infinite source families checked in Lean; universal coverage remains open.",
+  "imports": [
+    {
+      "pr": 183,
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/arithmetic/CARRY_COMPRESSION_BRIDGE.md",
+      "role": "Prior 19/5 rational-shadow and relative-carry versus actual-target distinction; specifically credited, not claimed new.",
+      "sha256": "b536d131383fc6befe794daa4375845979369881a9d5462b271fe04aab1fc732"
+    },
+    {
+      "pr": 176,
+      "commit": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/SOURCE_TARGET_INDUCTION.md",
+      "role": "Joint source-grade/current-target induction consumes the new strict target descents.",
+      "sha256": "db450b1534d895274aeaacba3d3e4628b2afb452ea6aa428bd62dafc19c50ee0"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/profound-closure-20261122/NEGATIVE_CARRY.md",
+      "role": "Complementary arbitrary-gap exact signed-carry transport and finite even budgets.",
+      "sha256": "e331591c9a9fd6c141e82f41394769ded40b9c1927978e96719645d6894db8d4"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "role": "Actual supplied GapTrace and trace concatenation; inherited pinned proof bodies.",
+      "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd"
+    }
+  ],
+  "formal_modules": {
+    "RationalShadow": 15,
+    "RationalSourceBlock": 9
+  },
+  "written_scope": "An arbitrary contracting source block, its full affine constant, one certified rational prefix, a computable repetition threshold, and a separately retained integer fixed-point exception.",
+  "remaining_obligations": [
+    "Every residual changing source language needs a successful certified guard or another proven exit.",
+    "No eventual periodicity or contracting-prefix theorem is assumed for every rational shadow."
+  ],
+  "agent_frozen_manifest_sha256": "0c227f7c9e30c728116e1dffaf334d199804fa5bb31ec4a1bf087885a031c8b6"
+}
