@@ -1,0 +1,58 @@
+module
+import ClockLags
+import AsynchronousKernel
+import BlockCompression
+import AffineCarry
+import CarryCapture
+#print axioms CollatzShell.ClockLags.lag_refl
+#print axioms CollatzShell.ClockLags.lag_symm
+#print axioms CollatzShell.ClockLags.lag_trans
+#print axioms CollatzShell.ClockLags.lag_unique
+#print axioms CollatzShell.ClockLags.meets_iff_hasLag
+#print axioms CollatzShell.ClockLags.synchronous_iff_zero_lag
+#print axioms CollatzShell.ClockLags.lag_step
+#print axioms CollatzShell.ClockLags.same_lag_synchronous
+#print axioms CollatzShell.ClockLags.extend_meeting
+#print axioms CollatzShell.ClockLags.front_increasing
+#print axioms CollatzShell.AsynchronousKernel.independent_clock_weight
+#print axioms CollatzShell.AsynchronousKernel.overlap_clock_iff
+#print axioms CollatzShell.AsynchronousKernel.overlap_clock_finset
+#print axioms CollatzShell.AsynchronousKernel.finite_common_tail_geometric
+#print axioms CollatzShell.AsynchronousKernel.atom_series_summable
+#print axioms CollatzShell.AsynchronousKernel.normalized_atom_series_bound
+#print axioms CollatzShell.AsynchronousKernel.normalized_resolvent_atom_bound
+#print axioms CollatzShell.AsynchronousKernel.finite_cesaro_atom_bound
+#print axioms CollatzShell.BlockCompression.orbit_upper_dyadic
+#print axioms CollatzShell.BlockCompression.repeat_displacement
+#print axioms CollatzShell.BlockCompression.repeat_power_bound
+#print axioms CollatzShell.BlockCompression.repeat_exit_bound
+#print axioms CollatzShell.BlockCompression.short_cycle_pullback
+#print axioms CollatzShell.BlockCompression.short_cycle_or_trace_power_bound
+#print axioms CollatzShell.BlockCompression.trace_clock_bound_of_power_bound
+#print axioms CollatzShell.BlockCompression.short_cycle_or_trace_clock_bound
+#print axioms CollatzShell.BlockCompression.short_cycle_of_long_compressed_trace
+#print axioms CollatzShell.BlockCompression.orbit_period_mul
+#print axioms CollatzShell.BlockCompression.later_period_pullback
+#print axioms CollatzShell.BlockCompression.no_short_cycle_of_primitive
+#print axioms CollatzShell.BlockCompression.primitive_cycle_compression_bound
+#print axioms CollatzShell.AffineCarry.minus_step_positive
+#print axioms CollatzShell.AffineCarry.ordinary_step_positive
+#print axioms CollatzShell.AffineCarry.ordinary_orbit_positive
+#print axioms CollatzShell.AffineCarry.complement_step
+#print axioms CollatzShell.AffineCarry.complement_orbit
+#print axioms CollatzShell.AffineCarry.gap_transport
+#print axioms CollatzShell.AffineCarry.padded_capture
+#print axioms CollatzShell.AffineCarry.zero_debt_capture
+#print axioms CollatzShell.AffineCarry.debt_two_gap_one
+#print axioms CollatzShell.AffineCarry.five_ones_capture
+#print axioms CollatzShell.AffineCarry.ghost_five_clocks
+#print axioms CollatzShell.AffineCarry.ghost_periods
+#print axioms CollatzShell.AffineCarry.source_threes
+#print axioms CollatzShell.AffineCarry.ordinary_debt_amplification
+#print axioms CollatzShell.CarryCapture.carry_run_sound
+#print axioms CollatzShell.CarryCapture.prefix_pays_padding
+#print axioms CollatzShell.CarryCapture.arbitrary_debt_interval_rule
+#print axioms CollatzShell.CarryCapture.small_debt_word
+#print axioms CollatzShell.CarryCapture.shorter_language_transport
+#print axioms CollatzShell.CarryCapture.shorter_language_grade
+#print axioms CollatzShell.CarryCapture.shorter_language_interval_rule

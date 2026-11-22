@@ -1,0 +1,23 @@
+{
+  "schema": "collatz-profound-finite-execution/v1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "research/profound-step-20261122/mergers/check_arithmetic.py",
+    "--output",
+    "/workspace/scratch/6c37546fb87e/collatz-literature/reports/profound-step-20261122/finite-arithmetic.json"
+  ],
+  "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature",
+  "checker_sha256": "536a205d182dde141b7e74d892075b9d9bddb50c4b692ad45b506fdc9a395d21",
+  "exit_code": 0,
+  "seconds": 0.144051,
+  "stdout": "",
+  "stderr": "",
+  "global_collatz_proved": false,
+  "result_sha256": "3dc4758c0305043362a1b16bd68b6441c2df66bc57963e01cdf768ae269e1c27",
+  "matches_previous_root_result": true,
+  "success": true
+}

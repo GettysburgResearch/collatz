@@ -1,0 +1,720 @@
+{
+  "schema": "collatz-mixed-normal-form/v1",
+  "scope": "global affine rule certificates and exact ordinary traces; no universal merger cover",
+  "rules": [
+    {
+      "left": "fR",
+      "right": "R",
+      "difference": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "left": "tR",
+      "right": "2R",
+      "difference": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "left": "f0",
+      "right": "0f",
+      "difference": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "left": "f2",
+      "right": "1f",
+      "difference": [
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "left": "t0",
+      "right": "1t",
+      "difference": [
+        [
+          8,
+          7,
+          2
+        ],
+        [
+          25,
+          19,
+          9
+        ]
+      ]
+    },
+    {
+      "left": "t1",
+      "right": "2f",
+      "difference": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          4,
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "left": "t2",
+      "right": "2t",
+      "difference": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "left": "L0",
+      "right": "Lt",
+      "difference": [
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "left": "L1",
+      "right": "Lff",
+      "difference": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "left": "L2",
+      "right": "Lft",
+      "difference": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "normal_form_grammar": "LR or L([ft]*f1[012]*)+R",
+  "examples": [
+    {
+      "start_word": "Lf1R",
+      "start_value": 7,
+      "start_rank": 26,
+      "restored_word": "L0tR",
+      "restored_rank": 308,
+      "end": {
+        "word": "Lff1R",
+        "value": 13,
+        "rank": 40,
+        "ordinary_clock": 4,
+        "trace": [
+          {
+            "word": "L0tR",
+            "value": 7,
+            "rank": 308,
+            "clock": 0
+          },
+          {
+            "word": "LttR",
+            "value": 7,
+            "rank": 270,
+            "clock": 0,
+            "rule": "L0->Lt"
+          },
+          {
+            "word": "Lt2R",
+            "value": 11,
+            "rank": 254,
+            "clock": 1,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "L2tR",
+            "value": 11,
+            "rank": 246,
+            "clock": 1,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "LfttR",
+            "value": 11,
+            "rank": 228,
+            "clock": 1,
+            "rule": "L2->Lft"
+          },
+          {
+            "word": "Lft2R",
+            "value": 17,
+            "rank": 219,
+            "clock": 2,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lf2tR",
+            "value": 17,
+            "rank": 200,
+            "clock": 2,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "L1ftR",
+            "value": 17,
+            "rank": 122,
+            "clock": 2,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "LffftR",
+            "value": 17,
+            "rank": 121,
+            "clock": 2,
+            "rule": "L1->Lff"
+          },
+          {
+            "word": "Lfff2R",
+            "value": 26,
+            "rank": 108,
+            "clock": 3,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lff1fR",
+            "value": 26,
+            "rank": 60,
+            "clock": 3,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "Lff1R",
+            "value": 13,
+            "rank": 40,
+            "clock": 4,
+            "rule": "fR->R"
+          }
+        ]
+      },
+      "erased_partner": {
+        "word": "LfR",
+        "value": 2,
+        "rank": 7
+      }
+    },
+    {
+      "start_word": "Lff1R",
+      "start_value": 13,
+      "start_rank": 40,
+      "restored_word": "Lf0tR",
+      "restored_rank": 369,
+      "end": {
+        "word": "LR",
+        "value": 1,
+        "rank": 6,
+        "ordinary_clock": 7,
+        "trace": [
+          {
+            "word": "Lf0tR",
+            "value": 13,
+            "rank": 369,
+            "clock": 0
+          },
+          {
+            "word": "L0ftR",
+            "value": 13,
+            "rank": 363,
+            "clock": 0,
+            "rule": "f0->0f"
+          },
+          {
+            "word": "LtftR",
+            "value": 13,
+            "rank": 329,
+            "clock": 0,
+            "rule": "L0->Lt"
+          },
+          {
+            "word": "Ltf2R",
+            "value": 20,
+            "rank": 290,
+            "clock": 1,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lt1fR",
+            "value": 20,
+            "rank": 171,
+            "clock": 1,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "L2ffR",
+            "value": 20,
+            "rank": 90,
+            "clock": 1,
+            "rule": "t1->2f"
+          },
+          {
+            "word": "LftffR",
+            "value": 20,
+            "rank": 78,
+            "clock": 1,
+            "rule": "L2->Lft"
+          },
+          {
+            "word": "LftfR",
+            "value": 10,
+            "rank": 47,
+            "clock": 2,
+            "rule": "fR->R"
+          },
+          {
+            "word": "LftR",
+            "value": 5,
+            "rank": 38,
+            "clock": 3,
+            "rule": "fR->R"
+          },
+          {
+            "word": "Lf2R",
+            "value": 8,
+            "rank": 32,
+            "clock": 4,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "L1fR",
+            "value": 8,
+            "rank": 21,
+            "clock": 4,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "LfffR",
+            "value": 8,
+            "rank": 20,
+            "clock": 4,
+            "rule": "L1->Lff"
+          },
+          {
+            "word": "LffR",
+            "value": 4,
+            "rank": 13,
+            "clock": 5,
+            "rule": "fR->R"
+          },
+          {
+            "word": "LfR",
+            "value": 2,
+            "rank": 7,
+            "clock": 6,
+            "rule": "fR->R"
+          },
+          {
+            "word": "LR",
+            "value": 1,
+            "rank": 6,
+            "clock": 7,
+            "rule": "fR->R"
+          }
+        ]
+      },
+      "erased_partner": {
+        "word": "LffR",
+        "value": 4,
+        "rank": 13
+      }
+    },
+    {
+      "start_word": "Ltf1R",
+      "start_value": 19,
+      "start_rank": 194,
+      "restored_word": "Lt0tR",
+      "restored_rank": 2027,
+      "end": {
+        "word": "Lf11R",
+        "value": 22,
+        "rank": 72,
+        "ordinary_clock": 3,
+        "trace": [
+          {
+            "word": "Lt0tR",
+            "value": 19,
+            "rank": 2027,
+            "clock": 0
+          },
+          {
+            "word": "L1ttR",
+            "value": 19,
+            "rank": 499,
+            "clock": 0,
+            "rule": "t0->1t"
+          },
+          {
+            "word": "LffttR",
+            "value": 19,
+            "rank": 498,
+            "clock": 0,
+            "rule": "L1->Lff"
+          },
+          {
+            "word": "Lfft2R",
+            "value": 29,
+            "rank": 473,
+            "clock": 1,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lff2tR",
+            "value": 29,
+            "rank": 446,
+            "clock": 1,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "Lf1ftR",
+            "value": 29,
+            "rank": 210,
+            "clock": 1,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "Lf1f2R",
+            "value": 44,
+            "rank": 190,
+            "clock": 2,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lf11fR",
+            "value": 44,
+            "rank": 105,
+            "clock": 2,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "Lf11R",
+            "value": 22,
+            "rank": 72,
+            "clock": 3,
+            "rule": "fR->R"
+          }
+        ]
+      },
+      "erased_partner": {
+        "word": "LtfR",
+        "value": 6,
+        "rank": 61
+      }
+    },
+    {
+      "start_word": "Lf11R",
+      "start_value": 22,
+      "start_rank": 72,
+      "restored_word": "L0t1R",
+      "restored_rank": 761,
+      "end": {
+        "word": "Lff1R",
+        "value": 13,
+        "rank": 40,
+        "ordinary_clock": 4,
+        "trace": [
+          {
+            "word": "L0t1R",
+            "value": 22,
+            "rank": 761,
+            "clock": 0
+          },
+          {
+            "word": "Ltt1R",
+            "value": 22,
+            "rank": 665,
+            "clock": 0,
+            "rule": "L0->Lt"
+          },
+          {
+            "word": "Lt2fR",
+            "value": 22,
+            "rank": 332,
+            "clock": 0,
+            "rule": "t1->2f"
+          },
+          {
+            "word": "L2tfR",
+            "value": 22,
+            "rank": 324,
+            "clock": 0,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "LfttfR",
+            "value": 22,
+            "rank": 303,
+            "clock": 0,
+            "rule": "L2->Lft"
+          },
+          {
+            "word": "LfttR",
+            "value": 11,
+            "rank": 228,
+            "clock": 1,
+            "rule": "fR->R"
+          },
+          {
+            "word": "Lft2R",
+            "value": 17,
+            "rank": 219,
+            "clock": 2,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lf2tR",
+            "value": 17,
+            "rank": 200,
+            "clock": 2,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "L1ftR",
+            "value": 17,
+            "rank": 122,
+            "clock": 2,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "LffftR",
+            "value": 17,
+            "rank": 121,
+            "clock": 2,
+            "rule": "L1->Lff"
+          },
+          {
+            "word": "Lfff2R",
+            "value": 26,
+            "rank": 108,
+            "clock": 3,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lff1fR",
+            "value": 26,
+            "rank": 60,
+            "clock": 3,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "Lff1R",
+            "value": 13,
+            "rank": 40,
+            "clock": 4,
+            "rule": "fR->R"
+          }
+        ]
+      },
+      "erased_partner": {
+        "word": "Lf1R",
+        "value": 7,
+        "rank": 26
+      }
+    },
+    {
+      "start_word": "Lf12R",
+      "start_value": 23,
+      "start_rank": 114,
+      "restored_word": "L0t2R",
+      "restored_rank": 1715,
+      "end": {
+        "word": "Lff11R",
+        "value": 40,
+        "rank": 113,
+        "ordinary_clock": 4,
+        "trace": [
+          {
+            "word": "L0t2R",
+            "value": 23,
+            "rank": 1715,
+            "clock": 0
+          },
+          {
+            "word": "Ltt2R",
+            "value": 23,
+            "rank": 1505,
+            "clock": 0,
+            "rule": "L0->Lt"
+          },
+          {
+            "word": "Lt2tR",
+            "value": 23,
+            "rank": 1434,
+            "clock": 0,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "L2ttR",
+            "value": 23,
+            "rank": 1426,
+            "clock": 0,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "LftttR",
+            "value": 23,
+            "rank": 1333,
+            "clock": 0,
+            "rule": "L2->Lft"
+          },
+          {
+            "word": "Lftt2R",
+            "value": 35,
+            "rank": 1258,
+            "clock": 1,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lft2tR",
+            "value": 35,
+            "rank": 1209,
+            "clock": 1,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "Lf2ttR",
+            "value": 35,
+            "rank": 1190,
+            "clock": 1,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "L1fttR",
+            "value": 35,
+            "rank": 727,
+            "clock": 1,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "LfffttR",
+            "value": 35,
+            "rank": 726,
+            "clock": 1,
+            "rule": "L1->Lff"
+          },
+          {
+            "word": "Lffft2R",
+            "value": 53,
+            "rank": 692,
+            "clock": 2,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lfff2tR",
+            "value": 53,
+            "rank": 646,
+            "clock": 2,
+            "rule": "t2->2t"
+          },
+          {
+            "word": "Lff1ftR",
+            "value": 53,
+            "rank": 332,
+            "clock": 2,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "Lff1f2R",
+            "value": 80,
+            "rank": 299,
+            "clock": 3,
+            "rule": "tR->2R"
+          },
+          {
+            "word": "Lff11fR",
+            "value": 80,
+            "rank": 166,
+            "clock": 3,
+            "rule": "f2->1f"
+          },
+          {
+            "word": "Lff11R",
+            "value": 40,
+            "rank": 113,
+            "clock": 4,
+            "rule": "fR->R"
+          }
+        ]
+      },
+      "erased_partner": {
+        "word": "Lf2R",
+        "value": 8,
+        "rank": 32
+      }
+    }
+  ],
+  "first_unsupported_step": "every nonterminal normal form has a blocked-erasure partner in its ordinary component"
+}

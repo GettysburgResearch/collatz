@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact Python integers and fractions",
+  "scope": "finite identity, local-factor, shadow-depth and parity-lift regressions only",
+  "counts": {
+    "actual_odd_prefixes": 16384,
+    "nontrivial_marked_prefixes": 9206,
+    "independent_return_batches": 2846,
+    "periodic_shadow_depths": 4591,
+    "exact_periodic_shadows": 8,
+    "preperiodic_shadow_identities": 18396,
+    "binary_cylinder_sources": 2046,
+    "marked_parity_lifts": 1023,
+    "near_marked_returns_with_immediate_parity_disagreement": 350,
+    "coupled_marked_triples_with_coprime_remainders": 230
+  },
+  "near_return_examples": [
+    {
+      "q": 12,
+      "A": 19,
+      "d": 39,
+      "distinct_valuation_words_checked": 330,
+      "first_source_decimal_if_short": "549755823723",
+      "source_bits": 40,
+      "parity_at_source": [
+        1,
+        1
+      ],
+      "parity_at_return": [
+        1,
+        0
+      ]
+    },
+    {
+      "q": 53,
+      "A": 84,
+      "d": 145,
+      "distinct_valuation_words_checked": 10,
+      "first_source_decimal_if_short": null,
+      "source_bits": 146,
+      "parity_at_source": [
+        1,
+        1
+      ],
+      "parity_at_return": [
+        1,
+        0
+      ]
+    },
+    {
+      "q": 665,
+      "A": 1054,
+      "d": 1727,
+      "distinct_valuation_words_checked": 10,
+      "first_source_decimal_if_short": null,
+      "source_bits": 1728,
+      "parity_at_source": [
+        1,
+        1
+      ],
+      "parity_at_return": [
+        1,
+        0
+      ]
+    }
+  ],
+  "coupled_triple_examples": [
+    {
+      "q": 12,
+      "A": 19,
+      "d": 70,
+      "distinct_prefix_words_checked": 210,
+      "source_bits": 71,
+      "adjacent_remainder_gcd": 1,
+      "first_pair_parity_agreement_depth": 17
+    },
+    {
+      "q": 53,
+      "A": 84,
+      "d": 282,
+      "distinct_prefix_words_checked": 10,
+      "source_bits": 283,
+      "adjacent_remainder_gcd": 1,
+      "first_pair_parity_agreement_depth": 82
+    },
+    {
+      "q": 665,
+      "A": 1054,
+      "d": 3446,
+      "distinct_prefix_words_checked": 10,
+      "source_bits": 3447,
+      "adjacent_remainder_gcd": 1,
+      "first_pair_parity_agreement_depth": 1052
+    }
+  ],
+  "universal_convergence_claim": false,
+  "source_sha256": "11309c8dfa30a540d4a7973c440b458575bad2b042f7bd52ca565a94b50cc8d0"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-literature-source-binding/v1",
+  "checked_proof_commit": "a1167734093b5fc30f1d7b5ad57bc3e61dbf4cc0",
+  "checked_proof_tree": "449a44b99a3e0851b8522905328619771377901a",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "combined_replay_sha256": "25342b072041c65fa4609cd059b16b7946b0a7dae437ef3c30d2b5200b62c9ac",
+  "driver_sha256": "d5634c6de450661e99a06ba08d9d8355631d0a7011ccc523b1fe2dfe22b7c1e4",
+  "files": [
+    {
+      "module": "EntranceRenewal",
+      "path": "research/literature-closing-20261121/lean/EntranceRenewal.lean",
+      "source_sha256": "f51294f168c2283fd24edc5841d1c2c0d9c5cc2c29aedcd71c4c75bdfb3ce639",
+      "compiled_olean_sha256": "b1303802d15baf88f6f55b525032f21aa7f1365f1f6701bf52c5c4dc972b2fa9",
+      "public_theorems": 23
+    },
+    {
+      "module": "RetainedTransport",
+      "path": "research/literature-closing-20261121/lean/RetainedTransport.lean",
+      "source_sha256": "83376647faac50cf8edf20323921ce364db7a49ee385869cf8a062765cabc8d6",
+      "compiled_olean_sha256": "f6e353581d0d7aae85074a16ba39b403bd6f972bb8821ca17ed323961fc509e7",
+      "public_theorems": 7
+    },
+    {
+      "module": "BandArithmetic",
+      "path": "research/literature-closing-20261121/arithmetic/BandArithmetic.lean",
+      "source_sha256": "0a7e2bafa9e87eb8d6ba8e651b463d8cf81432fd5c6c8e93329a0a790f9d7e96",
+      "compiled_olean_sha256": "26dae4300c842907ab9475afa6e1e6d0cad1547924354adf37783eeb88c91812",
+      "public_theorems": 14
+    },
+    {
+      "module": "MixedBaseNormalForm",
+      "path": "research/literature-closing-20261121/mergers/MixedBaseNormalForm.lean",
+      "source_sha256": "41b74fb820e3523aff493c9826186d4a06e6ce222bb42ac398d6258601424a0e",
+      "compiled_olean_sha256": "d2f6a7c8c341c81b1839ac7fd0d41dc3c0eb0526fe48f535af8c5a2f77cbb996",
+      "public_theorems": 25
+    }
+  ],
+  "public_theorems": 69,
+  "all_sources_match_successful_compilation": true,
+  "global_collatz_proved": false
+}

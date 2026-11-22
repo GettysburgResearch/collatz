@@ -1,0 +1,236 @@
+{
+  "schema": "collatz-band-lean-replay/v1",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_changes": "",
+  "phase": "all",
+  "upstream": [
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/ShellCover.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "generated_sha256": "ba2c4e9026c6159716f2d90d98b55aa3b1ce2605e5a490679adcfd426ba05724"
+    },
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/ForwardSection.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/ForwardSection.lean",
+      "sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "generated_sha256": "0ac56c3370a6b082dbbd6b6f22ebfb09ea265d7f2b4bcd4699c444f5dedc8e70"
+    },
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/SectionDynamics.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/SectionDynamics.lean",
+      "sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+      "generated_sha256": "ec38c54a8374c2f7c499dd20f4188ea10e052ee7fbd47e690579d43cf1f22d4f"
+    },
+    {
+      "local_path": "research/band-completion-20261121/lean/vendor/RisingReturns.lean",
+      "source_commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "source_path": "research/lean-shell-cover/RisingReturns.lean",
+      "sha256": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a",
+      "generated_sha256": "5dbde404a2b26cc8e738a52a4ec163c74ab8f27f6a7800482df9ef7e3a448c9c"
+    }
+  ],
+  "commands": [
+    {
+      "module": "ShellCover",
+      "source_sha256": "ba2c4e9026c6159716f2d90d98b55aa3b1ce2605e5a490679adcfd426ba05724",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/ShellCover.olean",
+        "ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 65.071,
+      "output": "",
+      "olean_sha256": "6a5bbe19c65f12e5fa85f2d54698f0b7d2f829a492ef342cb2dd127eb78b2f20"
+    },
+    {
+      "module": "ForwardSection",
+      "source_sha256": "0ac56c3370a6b082dbbd6b6f22ebfb09ea265d7f2b4bcd4699c444f5dedc8e70",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/ForwardSection.olean",
+        "ForwardSection.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 799.91,
+      "output": "'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "253913187fcd756cf5570b8424dd54e87bb76ede064c826d7f31544a71ce9474"
+    },
+    {
+      "module": "SectionDynamics",
+      "source_sha256": "ec38c54a8374c2f7c499dd20f4188ea10e052ee7fbd47e690579d43cf1f22d4f",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/SectionDynamics.olean",
+        "SectionDynamics.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 284.56,
+      "output": "'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "6e484793a44261fa05cb360cf85620d0949c9b2d1100edf254619168c2314445"
+    },
+    {
+      "module": "RisingReturns",
+      "source_sha256": "5dbde404a2b26cc8e738a52a4ec163c74ab8f27f6a7800482df9ef7e3a448c9c",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/RisingReturns.olean",
+        "RisingReturns.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 196.388,
+      "output": "'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "514806dce5aa201552bf72eb272b706f28233da65851c740507a8b35ccc7ee36"
+    },
+    {
+      "module": "BandDescent",
+      "source_sha256": "4c81b6c8e1249f9d08b61ccdae3ad5ccea3abcdc63f12bcf2ff140cf3e6d20f8",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/BandDescent.olean",
+        "BandDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 77.572,
+      "output": "'CollatzShell.BandDescent.prefix_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.offset_boundary_parity' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.convergent_offset_eventually_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.offset_certificate_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.offset_pair_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_relative_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_offset_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_start_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_no_quick_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "48d82088510855526291d82a8c6b351a68e1b63598eb82bb093c3782242a0eaf"
+    },
+    {
+      "module": "BandRotation",
+      "source_sha256": "ae451eae34c9964537bc447ce973778fd01e05b404298ffdc5e20a330db18c9d",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/BandRotation.olean",
+        "BandRotation.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 84.243,
+      "output": "'CollatzShell.BandRotation.exact_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.marked_return_approx' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.nondecreasing_marked_return_late' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.early_marked_return_forces_descent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.BandRotation.short_return_window_can_be_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "0100ba6342c8119b7b8bd87d8a90043ba7270890a48ac73389323a4e513cccc4"
+    },
+    {
+      "module": "BandMass",
+      "source_sha256": "b4655e21028613d0b99e87891b6e6aae30fd30c6bf87760ad833db0e69819f72",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/BandMass.olean",
+        "BandMass.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 17.68,
+      "output": "'CollatzShell.ForwardSection.BandMass.entrance_log_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.sum_entrance_packets' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "d8ff754f1f8207c9cfd6a3df78142d4b34ca7be29d3cd5a2f2cbcb6026d3b0c9"
+    },
+    {
+      "module": "BandAudit",
+      "source_sha256": "14bd921e10d2d39afd95b2fb57af0439ec3923f1f749aa00c841def8296c240b",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/literature-prior-build/BandAudit.olean",
+        "BandAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.782,
+      "output": "'CollatzShell.BandDescent.prefix_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.coefficient_lower' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.descent_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.descent_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.nonincrease_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.offset_lift' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.offset_boundary_parity' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.offset_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.convergent_offset_eventually_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.return_descent_of_small_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.offset_endpoint_bound' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BandDescent.offset_certificate_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.rising_survival' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.survival_of_power_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.offset_pair_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_marked' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_relative_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_offset_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_start_no_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandDescent.thin_no_quick_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.phase_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.exact_height_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.exact_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.error_sum_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.marked_height_window' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.marked_return_approx' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.nondecreasing_marked_return_late' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BandRotation.early_marked_return_forces_descent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.BandRotation.short_return_window_can_be_empty' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.step_le_twice' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.orbit_le_two_pow_mul' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.orbit_pos' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.square_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.log2_le_twice_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.orbit_log2_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.firstVisit_lt_six_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entrance_log_height_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entrance_log_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.BandMass.sum_entrance_packets' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "22c7832b07b205f1c50847bd84df2081c936d911bb4cd4782a12a8699987ed2f"
+    }
+  ],
+  "success": true,
+  "scope": "The listed Lean declarations; no claim of universal Collatz convergence.",
+  "audited_declarations": [
+    "CollatzShell.BandDescent.prefix_lift",
+    "CollatzShell.BandDescent.coefficient_lower",
+    "CollatzShell.BandDescent.descent_coefficient",
+    "CollatzShell.BandDescent.descent_lift",
+    "CollatzShell.BandDescent.nonincrease_lift",
+    "CollatzShell.BandDescent.offset_lift",
+    "CollatzShell.BandDescent.offset_boundary_parity",
+    "CollatzShell.BandDescent.offset_descent",
+    "CollatzShell.BandDescent.convergent_offset_eventually_lifts",
+    "CollatzShell.BandDescent.return_descent_of_small_hit",
+    "CollatzShell.BandDescent.offset_endpoint_bound",
+    "CollatzShell.BandDescent.offset_certificate_return_descent",
+    "CollatzShell.BandDescent.rising_survival",
+    "CollatzShell.BandDescent.survival_of_power_gap",
+    "CollatzShell.BandDescent.offset_pair_no_descent",
+    "CollatzShell.BandDescent.thin_depth",
+    "CollatzShell.BandDescent.thin_marked",
+    "CollatzShell.BandDescent.thin_relative_offset",
+    "CollatzShell.BandDescent.thin_offset_no_descent",
+    "CollatzShell.BandDescent.thin_start_no_descent",
+    "CollatzShell.BandDescent.thin_no_quick_certificate",
+    "CollatzShell.BandRotation.phase_error_bounds",
+    "CollatzShell.BandRotation.exact_height_step",
+    "CollatzShell.BandRotation.exact_height",
+    "CollatzShell.BandRotation.error_sum_bounds",
+    "CollatzShell.BandRotation.marked_height_window",
+    "CollatzShell.BandRotation.marked_return_approx",
+    "CollatzShell.BandRotation.nondecreasing_marked_return_late",
+    "CollatzShell.BandRotation.early_marked_return_forces_descent",
+    "CollatzShell.BandRotation.short_return_window_can_be_empty",
+    "CollatzShell.ForwardSection.BandMass.step_le_twice",
+    "CollatzShell.ForwardSection.BandMass.orbit_le_two_pow_mul",
+    "CollatzShell.ForwardSection.BandMass.orbit_pos",
+    "CollatzShell.ForwardSection.BandMass.square_le_two_pow",
+    "CollatzShell.ForwardSection.BandMass.log2_le_twice_sqrt",
+    "CollatzShell.ForwardSection.BandMass.orbit_log2_le",
+    "CollatzShell.ForwardSection.BandMass.firstVisit_lt_six_sqrt",
+    "CollatzShell.ForwardSection.BandMass.entrance_log_height_le",
+    "CollatzShell.ForwardSection.BandMass.entrance_log_four_le",
+    "CollatzShell.ForwardSection.BandMass.entranceLogTerm_bound",
+    "CollatzShell.ForwardSection.BandMass.entranceLogTerm_summable",
+    "CollatzShell.ForwardSection.BandMass.entranceLogTerm_sum_le",
+    "CollatzShell.ForwardSection.BandMass.sum_entrance_packets"
+  ],
+  "resume_note": "After two successful unchanged dependencies, the pending SectionDynamics invocation was interrupted. Remaining commands use explicit absolute build-library paths, and runtime bin is prepended to PATH. No proof source or compiler option changed.",
+  "library_paths": [
+    "/workspace/scratch/6c37546fb87e/literature-build",
+    "/workspace/scratch/6c37546fb87e/literature-prior-build",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean"
+  ]
+}

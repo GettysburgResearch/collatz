@@ -1,0 +1,316 @@
+{
+  "schema": "collatz-profound-lean-replay/v1",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "prior_bindings": [
+    {
+      "module": "ShellCover",
+      "source_sha256": "ba2c4e9026c6159716f2d90d98b55aa3b1ce2605e5a490679adcfd426ba05724",
+      "olean_sha256": "6a5bbe19c65f12e5fa85f2d54698f0b7d2f829a492ef342cb2dd127eb78b2f20",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "ForwardSection",
+      "source_sha256": "0ac56c3370a6b082dbbd6b6f22ebfb09ea265d7f2b4bcd4699c444f5dedc8e70",
+      "olean_sha256": "253913187fcd756cf5570b8424dd54e87bb76ede064c826d7f31544a71ce9474",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "SectionDynamics",
+      "source_sha256": "ec38c54a8374c2f7c499dd20f4188ea10e052ee7fbd47e690579d43cf1f22d4f",
+      "olean_sha256": "6e484793a44261fa05cb360cf85620d0949c9b2d1100edf254619168c2314445",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "RisingReturns",
+      "source_sha256": "5dbde404a2b26cc8e738a52a4ec163c74ab8f27f6a7800482df9ef7e3a448c9c",
+      "olean_sha256": "514806dce5aa201552bf72eb272b706f28233da65851c740507a8b35ccc7ee36",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "BandDescent",
+      "source_sha256": "4c81b6c8e1249f9d08b61ccdae3ad5ccea3abcdc63f12bcf2ff140cf3e6d20f8",
+      "olean_sha256": "48d82088510855526291d82a8c6b351a68e1b63598eb82bb093c3782242a0eaf",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "BandRotation",
+      "source_sha256": "ae451eae34c9964537bc447ce973778fd01e05b404298ffdc5e20a330db18c9d",
+      "olean_sha256": "0100ba6342c8119b7b8bd87d8a90043ba7270890a48ac73389323a4e513cccc4",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "BandMass",
+      "source_sha256": "b4655e21028613d0b99e87891b6e6aae30fd30c6bf87760ad833db0e69819f72",
+      "olean_sha256": "d8ff754f1f8207c9cfd6a3df78142d4b34ca7be29d3cd5a2f2cbcb6026d3b0c9",
+      "receipt_sha256": "077feeec911257ba15740defe98347325e2aced3a21a55b34745dd8680751fec",
+      "recompiled": false
+    },
+    {
+      "module": "EntranceRenewal",
+      "source_sha256": "f51294f168c2283fd24edc5841d1c2c0d9c5cc2c29aedcd71c4c75bdfb3ce639",
+      "olean_sha256": "b1303802d15baf88f6f55b525032f21aa7f1365f1f6701bf52c5c4dc972b2fa9",
+      "receipt_sha256": "25342b072041c65fa4609cd059b16b7946b0a7dae437ef3c30d2b5200b62c9ac",
+      "recompiled": false
+    },
+    {
+      "module": "RetainedTransport",
+      "source_sha256": "83376647faac50cf8edf20323921ce364db7a49ee385869cf8a062765cabc8d6",
+      "olean_sha256": "f6e353581d0d7aae85074a16ba39b403bd6f972bb8821ca17ed323961fc509e7",
+      "receipt_sha256": "25342b072041c65fa4609cd059b16b7946b0a7dae437ef3c30d2b5200b62c9ac",
+      "recompiled": false
+    },
+    {
+      "module": "BandArithmetic",
+      "source_sha256": "0a7e2bafa9e87eb8d6ba8e651b463d8cf81432fd5c6c8e93329a0a790f9d7e96",
+      "olean_sha256": "26dae4300c842907ab9475afa6e1e6d0cad1547924354adf37783eeb88c91812",
+      "receipt_sha256": "25342b072041c65fa4609cd059b16b7946b0a7dae437ef3c30d2b5200b62c9ac",
+      "recompiled": false
+    },
+    {
+      "module": "MixedBaseNormalForm",
+      "source_sha256": "41b74fb820e3523aff493c9826186d4a06e6ce222bb42ac398d6258601424a0e",
+      "olean_sha256": "d2f6a7c8c341c81b1839ac7fd0d41dc3c0eb0526fe48f535af8c5a2f77cbb996",
+      "receipt_sha256": "25342b072041c65fa4609cd059b16b7946b0a7dae437ef3c30d2b5200b62c9ac",
+      "recompiled": false
+    }
+  ],
+  "vendor_bindings": [
+    {
+      "name": "WitnessGlobal",
+      "pr": 185,
+      "commit": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+      "blob": "477c5e6d907775e06ab78f4b491e5b76a88d6549",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "wrapper_sha256": "a53de03d2e7c3af6ad0a6c9665ee48215e7642e027f8f7e9afb4e0b380cfbdd2",
+      "transformation": "Insert module; make initial import declarations public; insert @[expose] public section. No body edits."
+    },
+    {
+      "name": "WitnessSynthesis",
+      "pr": 185,
+      "commit": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "blob": "17d0995a62860c1bc5fcbc51e0cfcaf39fe354f9",
+      "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+      "wrapper_sha256": "ddc15c0095c56b4e44463427f8413a5fa48790e2218b671b576aa635c4b4c4eb",
+      "transformation": "Insert module; make initial import declarations public; insert @[expose] public section. No body edits."
+    }
+  ],
+  "audited_declarations": [
+    "CollatzShell.ClockLags.lag_refl",
+    "CollatzShell.ClockLags.lag_symm",
+    "CollatzShell.ClockLags.lag_trans",
+    "CollatzShell.ClockLags.lag_unique",
+    "CollatzShell.ClockLags.meets_iff_hasLag",
+    "CollatzShell.ClockLags.synchronous_iff_zero_lag",
+    "CollatzShell.ClockLags.lag_step",
+    "CollatzShell.ClockLags.same_lag_synchronous",
+    "CollatzShell.ClockLags.extend_meeting",
+    "CollatzShell.ClockLags.front_increasing",
+    "CollatzShell.AsynchronousKernel.independent_clock_weight",
+    "CollatzShell.AsynchronousKernel.overlap_clock_iff",
+    "CollatzShell.AsynchronousKernel.overlap_clock_finset",
+    "CollatzShell.AsynchronousKernel.finite_common_tail_geometric",
+    "CollatzShell.AsynchronousKernel.atom_series_summable",
+    "CollatzShell.AsynchronousKernel.normalized_atom_series_bound",
+    "CollatzShell.AsynchronousKernel.normalized_resolvent_atom_bound",
+    "CollatzShell.AsynchronousKernel.finite_cesaro_atom_bound",
+    "CollatzShell.BlockCompression.orbit_upper_dyadic",
+    "CollatzShell.BlockCompression.repeat_displacement",
+    "CollatzShell.BlockCompression.repeat_power_bound",
+    "CollatzShell.BlockCompression.repeat_exit_bound",
+    "CollatzShell.BlockCompression.short_cycle_pullback",
+    "CollatzShell.BlockCompression.short_cycle_or_trace_power_bound",
+    "CollatzShell.BlockCompression.trace_clock_bound_of_power_bound",
+    "CollatzShell.BlockCompression.short_cycle_or_trace_clock_bound",
+    "CollatzShell.BlockCompression.short_cycle_of_long_compressed_trace",
+    "CollatzShell.BlockCompression.orbit_period_mul",
+    "CollatzShell.BlockCompression.later_period_pullback",
+    "CollatzShell.BlockCompression.no_short_cycle_of_primitive",
+    "CollatzShell.BlockCompression.primitive_cycle_compression_bound",
+    "CollatzShell.AffineCarry.minus_step_positive",
+    "CollatzShell.AffineCarry.ordinary_step_positive",
+    "CollatzShell.AffineCarry.ordinary_orbit_positive",
+    "CollatzShell.AffineCarry.complement_step",
+    "CollatzShell.AffineCarry.complement_orbit",
+    "CollatzShell.AffineCarry.gap_transport",
+    "CollatzShell.AffineCarry.padded_capture",
+    "CollatzShell.AffineCarry.zero_debt_capture",
+    "CollatzShell.AffineCarry.debt_two_gap_one",
+    "CollatzShell.AffineCarry.five_ones_capture",
+    "CollatzShell.AffineCarry.ghost_five_clocks",
+    "CollatzShell.AffineCarry.ghost_periods",
+    "CollatzShell.AffineCarry.source_threes",
+    "CollatzShell.AffineCarry.ordinary_debt_amplification",
+    "CollatzShell.CarryCapture.carry_run_sound",
+    "CollatzShell.CarryCapture.prefix_pays_padding",
+    "CollatzShell.CarryCapture.arbitrary_debt_interval_rule",
+    "CollatzShell.CarryCapture.small_debt_word",
+    "CollatzShell.CarryCapture.shorter_language_transport",
+    "CollatzShell.CarryCapture.shorter_language_grade",
+    "CollatzShell.CarryCapture.shorter_language_interval_rule"
+  ],
+  "commands": [
+    {
+      "module": "WitnessGlobal",
+      "source_sha256": "a53de03d2e7c3af6ad0a6c9665ee48215e7642e027f8f7e9afb4e0b380cfbdd2",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/WitnessGlobal.olean",
+        "WitnessGlobal.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/profound2-build/generated",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 14.776,
+      "output": "'CollatzShell.WitnessGlobal.low_complete_is_one' depends on axioms: [propext, Quot.sound]\n'CollatzShell.WitnessGlobal.low_trace_to_five' depends on axioms: [propext, Quot.sound]\n'CollatzShell.WitnessGlobal.single_four_language' depends on axioms: [propext, Quot.sound]\n'CollatzShell.WitnessGlobal.single_four_psi' depends on axioms: [propext, Quot.sound]\n'CollatzShell.WitnessGlobal.terminal_gap_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessGlobal.long_terminal_certificate' depends on axioms: [propext, Quot.sound]\n'CollatzShell.WitnessGlobal.long_terminal_psi_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "099b247fc796ed7e4df8035628c811a5f39870dd11e929e5bfe1cf9c1fa00893"
+    },
+    {
+      "module": "WitnessSynthesis",
+      "source_sha256": "ddc15c0095c56b4e44463427f8413a5fa48790e2218b671b576aa635c4b4c4eb",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/WitnessSynthesis.olean",
+        "WitnessSynthesis.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/profound2-build/generated",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 4.137,
+      "output": "'CollatzShell.WitnessSynthesis.powered_trace_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.source_grade_peel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.peel_powered_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.half_size_merger_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.erase_prefix_asynchronous' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.erasure_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.unresolved_endpoint_pair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure' depends on axioms: [propext, Quot.sound]\n'CollatzShell.WitnessSynthesis.seven_asynchronous_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "0624353330e1e6263bcd2d21e40cbc7e8aa7bdd3f460b48b2a627a48bf4f71b9"
+    },
+    {
+      "module": "ClockLags",
+      "source_sha256": "8ad58c572e876fac371ed7405ae7b573c79b5f49cdc134b063b0f566909ab6f9",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/ClockLags.olean",
+        "ClockLags.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/profound-step-20261122/operator",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 2.66,
+      "output": "",
+      "olean_sha256": "7b31d00d984edfa561b9bb1c728ee490c7c5677f89ae9990289031b8bebadabf"
+    },
+    {
+      "module": "AsynchronousKernel",
+      "source_sha256": "d7845d0d5726dc5fbbaacc3be80c5795fd06f0041b5a603e4002399c592c146c",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/AsynchronousKernel.olean",
+        "AsynchronousKernel.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/profound-step-20261122/transport",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 6.904,
+      "output": "",
+      "olean_sha256": "cf3d8e569a17012fab0f0546069e8f7ace22d4ae3d48c30b078af194fc02c8c0"
+    },
+    {
+      "module": "BlockCompression",
+      "source_sha256": "bf25d442c6aa1bd13ea4a01df603370469d63e54b57855df567923a7ce314305",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/BlockCompression.olean",
+        "BlockCompression.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/profound-step-20261122/arithmetic",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 8.527,
+      "output": "",
+      "olean_sha256": "b4c89a6a093097d8318980776c3a372cef06c36c8dea2daf81c221837af0a6a5"
+    },
+    {
+      "module": "AffineCarry",
+      "source_sha256": "81bdf81fa8ba6916d267e13946a10591ef4211593db9b0ed5f709f25f1396df4",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/AffineCarry.olean",
+        "AffineCarry.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/profound-step-20261122/mergers",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 16.311,
+      "output": "",
+      "olean_sha256": "c2bf82046d0aa523b76645171b307bfe2edf88a15cc057269773949f5449dcb2"
+    },
+    {
+      "module": "CarryCapture",
+      "source_sha256": "8163730658fa890765ba11d04db5318332a8380208612464e06f00b6895ad9d9",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/CarryCapture.olean",
+        "CarryCapture.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/collatz-literature/research/profound-step-20261122/mergers",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 8.695,
+      "output": "",
+      "olean_sha256": "dba99c3c6cd1a66dd62904f90b80da7970556283d1731316344d4404c50d4f0d"
+    },
+    {
+      "module": "ProfoundAudit",
+      "source_sha256": "10f9d13c83208356282a8e4c0c160c2b4723b743314dbfbe02af303cc95a62e5",
+      "argv": [
+        "/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/6c37546fb87e/profound2-build/ProfoundAudit.olean",
+        "ProfoundAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/6c37546fb87e/profound2-build",
+      "LEAN_PATH": "/workspace/scratch/6c37546fb87e/profound2-build:/workspace/scratch/6c37546fb87e/literature-build:/workspace/scratch/6c37546fb87e/literature-prior-build:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/literature-mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/6c37546fb87e/lean-4.34.1-linux/lib/lean",
+      "exit_code": 0,
+      "seconds": 23.976,
+      "output": "'CollatzShell.ClockLags.lag_refl' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.lag_symm' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.lag_trans' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.lag_unique' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.meets_iff_hasLag' does not depend on any axioms\n'CollatzShell.ClockLags.synchronous_iff_zero_lag' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.lag_step' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.same_lag_synchronous' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ClockLags.extend_meeting' does not depend on any axioms\n'CollatzShell.ClockLags.front_increasing' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AsynchronousKernel.independent_clock_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AsynchronousKernel.overlap_clock_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AsynchronousKernel.overlap_clock_finset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AsynchronousKernel.finite_common_tail_geometric' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.AsynchronousKernel.atom_series_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AsynchronousKernel.normalized_atom_series_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.AsynchronousKernel.normalized_resolvent_atom_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.AsynchronousKernel.finite_cesaro_atom_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BlockCompression.orbit_upper_dyadic' depends on axioms: [propext, Quot.sound]\n'CollatzShell.BlockCompression.repeat_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BlockCompression.repeat_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BlockCompression.repeat_exit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BlockCompression.short_cycle_pullback' depends on axioms: [propext]\n'CollatzShell.BlockCompression.short_cycle_or_trace_power_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.BlockCompression.trace_clock_bound_of_power_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.BlockCompression.short_cycle_or_trace_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.BlockCompression.short_cycle_of_long_compressed_trace' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.BlockCompression.orbit_period_mul' depends on axioms: [propext]\n'CollatzShell.BlockCompression.later_period_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BlockCompression.no_short_cycle_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.BlockCompression.primitive_cycle_compression_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.AffineCarry.minus_step_positive' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.ordinary_step_positive' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.ordinary_orbit_positive' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.complement_step' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.complement_orbit' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.gap_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineCarry.padded_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineCarry.zero_debt_capture' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineCarry.debt_two_gap_one' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.five_ones_capture' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.ghost_five_clocks' depends on axioms: [propext, Quot.sound]\n'CollatzShell.AffineCarry.ghost_periods' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineCarry.source_threes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.AffineCarry.ordinary_debt_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.carry_run_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.prefix_pays_padding' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.arbitrary_debt_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.small_debt_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.shorter_language_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.shorter_language_grade' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CarryCapture.shorter_language_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "adad0941fdb632b3eb3ee3ed765de27a6accc00d2649953f2605f6d5914b3546"
+    }
+  ],
+  "success": true,
+  "scope": "Five new modules and their transitive axioms; written analytic and Matveev arguments are not Lean theorems. Full Collatz remains open."
+}

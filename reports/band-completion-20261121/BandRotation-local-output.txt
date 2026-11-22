@@ -1,0 +1,7 @@
+'CollatzShell.BandRotation.exact_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandRotation.marked_return_approx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandRotation.nondecreasing_marked_return_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.BandRotation.early_marked_return_forces_descent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzShell.BandRotation.short_return_window_can_be_empty' depends on axioms: [propext, Classical.choice, Quot.sound]

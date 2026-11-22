@@ -1,0 +1,106 @@
+{
+  "schema": "collatz-profound-source-binding/v1",
+  "starting_commit": "907a540943090968bc683b1b9246208e9053c1f8",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "combined_replay_sha256": "fd2e3df9ab71ee7ebae7b701c5d5205cfa8f42ea4ce8af0ddc26f8d080668ba7",
+  "audit_source_sha256": "10f9d13c83208356282a8e4c0c160c2b4723b743314dbfbe02af303cc95a62e5",
+  "driver_sha256": "a0d32a49ca0d433294fe3ec066a79830b35a9d67f213047369523197db5f0e23",
+  "files": [
+    {
+      "module": "ClockLags",
+      "path": "research/profound-step-20261122/operator/ClockLags.lean",
+      "source_sha256": "8ad58c572e876fac371ed7405ae7b573c79b5f49cdc134b063b0f566909ab6f9",
+      "compiled_olean_sha256": "7b31d00d984edfa561b9bb1c728ee490c7c5677f89ae9990289031b8bebadabf",
+      "public_theorems": 10
+    },
+    {
+      "module": "AsynchronousKernel",
+      "path": "research/profound-step-20261122/transport/AsynchronousKernel.lean",
+      "source_sha256": "d7845d0d5726dc5fbbaacc3be80c5795fd06f0041b5a603e4002399c592c146c",
+      "compiled_olean_sha256": "cf3d8e569a17012fab0f0546069e8f7ace22d4ae3d48c30b078af194fc02c8c0",
+      "public_theorems": 8
+    },
+    {
+      "module": "BlockCompression",
+      "path": "research/profound-step-20261122/arithmetic/BlockCompression.lean",
+      "source_sha256": "bf25d442c6aa1bd13ea4a01df603370469d63e54b57855df567923a7ce314305",
+      "compiled_olean_sha256": "b4c89a6a093097d8318980776c3a372cef06c36c8dea2daf81c221837af0a6a5",
+      "public_theorems": 13
+    },
+    {
+      "module": "AffineCarry",
+      "path": "research/profound-step-20261122/mergers/AffineCarry.lean",
+      "source_sha256": "81bdf81fa8ba6916d267e13946a10591ef4211593db9b0ed5f709f25f1396df4",
+      "compiled_olean_sha256": "c2bf82046d0aa523b76645171b307bfe2edf88a15cc057269773949f5449dcb2",
+      "public_theorems": 14
+    },
+    {
+      "module": "CarryCapture",
+      "path": "research/profound-step-20261122/mergers/CarryCapture.lean",
+      "source_sha256": "8163730658fa890765ba11d04db5318332a8380208612464e06f00b6895ad9d9",
+      "compiled_olean_sha256": "dba99c3c6cd1a66dd62904f90b80da7970556283d1731316344d4404c50d4f0d",
+      "public_theorems": 7
+    }
+  ],
+  "public_theorems": 52,
+  "all_sources_match_successful_compilation": true,
+  "reused_prior_modules": 11,
+  "written_packet": [
+    {
+      "path": "research/profound-step-20261122/README.md",
+      "sha256": "070851590c7cbd8dfc8d17e2605346a6211b1cc4724ea4bc2aa17a6582ddee1f"
+    },
+    {
+      "path": "research/profound-step-20261122/RECONSTRUCTION_REVIEW.md",
+      "sha256": "14dfffb0f29885d0b983e74926d1bc38c50e7e17df3c81ae4ce6ad4afced616f"
+    },
+    {
+      "path": "research/profound-step-20261122/arithmetic/CARRY_COMPRESSION_BRIDGE.md",
+      "sha256": "b536d131383fc6befe794daa4375845979369881a9d5462b271fe04aab1fc732"
+    },
+    {
+      "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "sha256": "f27af626f9de6beaf07562f0a4ef4a1240f99eb5cab04c99a50789a048a4d960"
+    },
+    {
+      "path": "research/profound-step-20261122/arithmetic/SOURCES.md",
+      "sha256": "a29bd028850144cb1f3e908443c1d4b2ec0a5a875050460c6c3cf6ca3c099182"
+    },
+    {
+      "path": "research/profound-step-20261122/mergers/ARBITRARY_DEBT.md",
+      "sha256": "ba7eb6e601ea863a6d0382c2faa82a8b92a0a0b3a7b318fcf6a3e08e1407796f"
+    },
+    {
+      "path": "research/profound-step-20261122/operator/WOLD_CHANNELS.md",
+      "sha256": "bb956069797987478ef3c691115b7292d7a964ac9963c9eed212321aca8f03ce"
+    },
+    {
+      "path": "research/profound-step-20261122/transport/ASYNCHRONOUS_RESIDUE.md",
+      "sha256": "270b06633aa9ca1c749ef59c2398d196e46aed4a4fe984b09a47081c208dca80"
+    },
+    {
+      "path": "research/profound-step-20261122/transport/MERGER_REVIEW.md",
+      "sha256": "c2013861576311b0628ec7b96e50ab8c7dedfe5652ac0c17a383218530c77d2a"
+    },
+    {
+      "path": "research/profound-step-20261122/transport/OPERATOR_REVIEW.md",
+      "sha256": "bb820286cbd5d9d48b879ca4dec91aae76d9ea4eecc8139ea065bc06c81ec3b2"
+    },
+    {
+      "path": "research/profound-step-20261122/transport/SOURCES.md",
+      "sha256": "9cda4db581ef466868429f9d2d118f2a6cb548dec1a809cb79a28b0caab97df5"
+    }
+  ],
+  "source_snapshot_sha256": "543e6b2e4f1dd6798eca89971d14fb48210c9137cac41a98a02a9acc9e19664c",
+  "vendor_manifest_sha256": "2d4de8c2610a4c16ac7eaefd3adfa85a55bbb770476b954b7b9cfbff7fa0faf4",
+  "finite_execution_sha256": "9bc7a3c786a81cdae7c35d443390ffd6b5dd3f79f9e1212b39cc681a980d0376",
+  "finite_result_sha256": "3dc4758c0305043362a1b16bd68b6441c2df66bc57963e01cdf768ae269e1c27",
+  "written_transcendence_argument_formalized": false,
+  "written_full_operator_argument_formalized": false,
+  "harmonic_reference_status": "SOURCE-QUALIFIED; original population/envelope hypotheses retained",
+  "global_collatz_proved": false,
+  "checked_proof_commit": "84a76f0d81839494e17a0de5fea207ea96da5f87",
+  "checked_proof_tree": "817017ac2d93f977278e5d29dc59120ae231a63d",
+  "proof_checkout_validation_sha256": "9b4207b7005777b2d4465aba2a9a7c51fde1d8d6b7f788a1d15beede7b61b97f"
+}
