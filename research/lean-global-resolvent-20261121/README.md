@@ -4,7 +4,18 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [the direct closure attempt](overview/central/README.md)
+**Latest checkpoint:** [the parallel machinery attacks](overview/machinery/README.md)
+prove source-preserving certificate pumping and an actual finite-path
+valuation-clock bound in Lean. The written consequences exclude cofinal
+sound context-free bounded-gap certificate languages and uniform density
+bounds across the escaping-source clock regime. Separate written proofs
+construct the actual-source compact joining with an explicit zero-entropy
+control, and apply critical-network theory to the ordinary harmonic
+transport. Eight new public Lean statements are audited. The global
+closing estimates remain open; these are restrictions on proposed
+completion mechanisms, not a proof of Collatz.
+
+[Checkpoint 11](overview/central/README.md)
 proves a cofinal obstruction to unchanged-target source-only selectors and
 an exact all-depth cost for copying a fixed source prefix to sibling
 branches. Both have compiled Lean cores and written scope boundaries.

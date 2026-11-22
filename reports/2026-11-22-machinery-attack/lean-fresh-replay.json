@@ -1,0 +1,279 @@
+{
+  "schema": "collatz-machinery-checkpoint12-execution/v1",
+  "scope": "Eight audited statements: explicit certificate pumping and finite division-clock bound, with exact project imports; all infinite analytic statements are written proofs; no positive global closing estimate",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "written_note_sha256": {
+    "CONTEXT_FREE_CERTIFICATE_OBSTRUCTION.md": "c33cc4288876cd02db54249495086b3223e11d6254541aa23b40e6eb0bff5ceb",
+    "ACTUAL_LOW_CLOCK.md": "96b369f8ff4fe0f4df93828996dc2d130404b0be6028f28a8c87ba8c3adc3fbf",
+    "ACTUAL_COMPACT_JOINING.md": "031708db20aa1c99b1b46eac25d94f85425826e154b1ace4ed22780ada1e7782",
+    "CRITICAL_NETWORK.md": "47a45d89861bdc89c5219515f91884143ce240c80778acba932804d1615e81c4"
+  },
+  "direct_mathlib_sources_verified": [
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "path": "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+      "sha256": "273036de3d36eda43082685a3ebc998900735e96c3f4b18f1546b39a4f765af0"
+    },
+    {
+      "module": "Mathlib.Tactic.NormNum",
+      "path": "Mathlib/Tactic/NormNum.lean",
+      "sha256": "dca9500572c6d887000f3de17c7145b53bf35233afc1ad8026cca908cec7a2fe"
+    },
+    {
+      "module": "Mathlib.Tactic.Linarith",
+      "path": "Mathlib/Tactic/Linarith.lean",
+      "sha256": "0581fd9f80f34d728ad628e7c1fb5a93d36cb9cb48d469fbc797869e83ebe0a6"
+    },
+    {
+      "module": "Mathlib.Tactic.Ring",
+      "path": "Mathlib/Tactic/Ring.lean",
+      "sha256": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e"
+    }
+  ],
+  "source_sha256_before": {
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/Collatz/CertificateLanguage.lean": "96afea745942162df7007f0d03d9d2a60dd5d6f14f1c8508f16ad84a8dc4849a",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/AuditCertificateLanguage.lean": "a1ea578622781ee77f0bf878619e8db56b209c3097ce87b707a8624f96c50d5a",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/Collatz/LowClock.lean": "822240846635c4f56188cbe9a875daa13788115f011883f51ebd280ff1fc52db",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/AuditLowClock.lean": "24cfbb01716f30ba2f9e312121c38a3615c4faaa36f443f57b11b5bfa2cfa198"
+  },
+  "fresh_output_directory": "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean",
+  "verified_dependency_mirror_files": 0,
+  "commands": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/ReverseBasin146.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 10.072,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Closure",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/Closure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.789,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Witness",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/Witness.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.099,
+      "output": ""
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/DirectedInduction.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.171,
+      "output": ""
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/WitnessEnergy.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.911,
+      "output": ""
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/SourceWitness.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.729,
+      "output": ""
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/GapMultiset.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.602,
+      "output": ""
+    },
+    {
+      "module": "Collatz.HighGapPump",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/HighGapPump.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.59,
+      "output": ""
+    },
+    {
+      "module": "Collatz.LowGapLoops",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/LowGapLoops.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.804,
+      "output": ""
+    },
+    {
+      "module": "Collatz.CertificateLanguage",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/CertificateLanguage.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean/Collatz/CertificateLanguage.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.891,
+      "output": ""
+    },
+    {
+      "module": "AuditCertificateLanguage",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/AuditCertificateLanguage.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean/AuditCertificateLanguage.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.323,
+      "output": "CollatzCertificateLanguage.endpoint_congruence {n m y z : \u2115} {word : List \u2115} (hn : CollatzHighGapPump.Prefix n word y)\n  (hm : CollatzHighGapPump.Prefix m word z) : 3 ^ word.length \u2223 (\u2191y - \u2191z).natAbs\nCollatzCertificateLanguage.unbounded_repetition_fixed {word tail : List \u2115} (hne : word \u2260 [])\n  (all : \u2200 (k : \u2115), \u2203 n, CollatzWitness.Certificate n (CollatzCertificateLanguage.repeatWord word k ++ tail)) {x y : \u2115}\n  (hx : CollatzWitness.Certificate x (word ++ tail)) (hy : CollatzWitness.Certificate y tail) : x = y\nCollatzCertificateLanguage.pumping_erasure {u v w x y : List \u2115}\n  (all : \u2200 (k : \u2115), \u2203 n, CollatzWitness.Certificate n (CollatzCertificateLanguage.pumpedWord u v w x y k)) {k n : \u2115}\n  (hn : CollatzWitness.Certificate n (CollatzCertificateLanguage.pumpedWord u v w x y k)) :\n  CollatzWitness.Certificate n (u ++ w ++ y)\nCollatzCertificateLanguage.short_representative {L : List \u2115 \u2192 Prop} {N : \u2115}\n  (sound : \u2200 (word : List \u2115), L word \u2192 \u2203 n, CollatzWitness.Certificate n word)\n  (pumps : CollatzCertificateLanguage.PumpsAt L N) {n : \u2115} {word : List \u2115} (hw : L word)\n  (hn : CollatzWitness.Certificate n word) : \u2203 short, L short \u2227 CollatzWitness.Certificate n short \u2227 short.length < N\nCollatzCertificateLanguage.source_bound {L : List \u2115 \u2192 Prop} {M N : \u2115}\n  (sound : \u2200 (word : List \u2115), L word \u2192 \u2203 n, CollatzWitness.Certificate n word)\n  (pumps : CollatzCertificateLanguage.PumpsAt L N) (gaps : \u2200 (word : List \u2115), L word \u2192 \u2200 (a : \u2115), a \u2208 word \u2192 a \u2264 M)\n  {n : \u2115} {word : List \u2115} (hw : L word) (hn : CollatzWitness.Certificate n word) : n \u2264 2 ^ (M * N)\nCollatzCertificateLanguage.powered_source_bound {L : List \u2115 \u2192 Prop} {M N E e : \u2115}\n  (sound : \u2200 (word : List \u2115), L word \u2192 \u2203 n, CollatzWitness.Certificate n word)\n  (pumps : CollatzCertificateLanguage.PumpsAt L N) (gaps : \u2200 (word : List \u2115), L word \u2192 \u2200 (a : \u2115), a \u2208 word \u2192 a \u2264 M)\n  {n : \u2115} {word : List \u2115} (hw : L word) (hn : CollatzWitness.Certificate n word) (he : e \u2264 E) :\n  2 ^ e * n \u2264 2 ^ (E + M * N)\nCollatzCertificateLanguage.not_cofinal_sources {L : List \u2115 \u2192 Prop} {M N : \u2115}\n  (sound : \u2200 (word : List \u2115), L word \u2192 \u2203 n, CollatzWitness.Certificate n word)\n  (pumps : CollatzCertificateLanguage.PumpsAt L N) (gaps : \u2200 (word : List \u2115), L word \u2192 \u2200 (a : \u2115), a \u2208 word \u2192 a \u2264 M) :\n  \u00ac\u2200 (B : \u2115), \u2203 n word, B < n \u2227 L word \u2227 CollatzWitness.Certificate n word\n'CollatzCertificateLanguage.endpoint_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCertificateLanguage.unbounded_repetition_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCertificateLanguage.pumping_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCertificateLanguage.short_representative' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCertificateLanguage.source_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCertificateLanguage.powered_source_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCertificateLanguage.not_cofinal_sources' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Collatz.LowClock",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/Collatz/LowClock.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean/Collatz/LowClock.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.363,
+      "output": ""
+    },
+    {
+      "module": "AuditLowClock",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint12-fresh-lean/AuditLowClock.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/machinery/lean/AuditLowClock.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.994,
+      "output": "'CollatzLowClock.division_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "source_sha256_after": {
+    "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/Witness.lean": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/DirectedInduction.lean": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/WitnessEnergy.lean": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/SourceWitness.lean": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/GapMultiset.lean": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/HighGapPump.lean": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+    "research/lean-global-resolvent-20261121/overview/parallel/vendor/Collatz/LowGapLoops.lean": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/Collatz/CertificateLanguage.lean": "96afea745942162df7007f0d03d9d2a60dd5d6f14f1c8508f16ad84a8dc4849a",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/AuditCertificateLanguage.lean": "a1ea578622781ee77f0bf878619e8db56b209c3097ce87b707a8624f96c50d5a",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/Collatz/LowClock.lean": "822240846635c4f56188cbe9a875daa13788115f011883f51ebd280ff1fc52db",
+    "research/lean-global-resolvent-20261121/overview/machinery/lean/AuditLowClock.lean": "24cfbb01716f30ba2f9e312121c38a3615c4faaa36f443f57b11b5bfa2cfa198"
+  },
+  "sources_unchanged": true,
+  "audit_counts": {
+    "AuditCertificateLanguage": 7,
+    "AuditLowClock": 1
+  },
+  "expected_audit_counts": {
+    "AuditCertificateLanguage": 7,
+    "AuditLowClock": 1
+  },
+  "audited_theorems": 8,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}
