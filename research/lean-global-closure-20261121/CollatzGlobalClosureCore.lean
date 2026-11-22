@@ -5,3 +5,6 @@ import CollatzGlobalClosure.MaximalReserve
 import CollatzGlobalClosure.AsynchronousReset
 import CollatzGlobalClosure.TerminalReset
 import CollatzGlobalClosure.PeriodicTraceTail
+import CollatzGlobalClosure.SignedCarry
+import CollatzGlobalClosure.MergerClockRigidity
+import CollatzGlobalClosure.FiniteProfileDrift

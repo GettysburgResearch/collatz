@@ -1,0 +1,35 @@
+{
+  "scope": "Publication-only whitespace normalization of incoming frozen artifacts. Mathematical source content is unchanged; prior review input hashes remain historical pins.",
+  "files": [
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/ALL_EXPONENTS_REVIEW.md",
+      "input_sha256": "7cf0f7ec4140f314f0bf084deeaae40a1a7093bd049d866f7dd28b6c1fc37f04",
+      "published_sha256": "24cc80d5d334a5ec5fe67232b050e311aecaf0e2483b0f271b00544622a8742c",
+      "change": "remove line-end whitespace and terminal blank lines; preserve all non-whitespace content"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/PR175_BEFORE.md",
+      "input_sha256": "52e13054c962ee0bbabec0bd5cc81b403953444b9c768d67ab7f11238963d452",
+      "published_sha256": "a1b9d6f3f7111e56276ce7a80626efce7e91af034ac0589bafe9d3c47f558f48",
+      "change": "remove line-end whitespace and terminal blank lines; preserve all non-whitespace content"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/SIGNED_CARRY_REVIEW.md",
+      "input_sha256": "528da8de266098d0e7eb84b8d96aad47a8c6b2a41388f98012d6728fdf7be795",
+      "published_sha256": "d08b2c68d3caec19c4c36ac221fb31ba9449f9e341abaea66d5ecbae33d4cda8",
+      "change": "remove line-end whitespace and terminal blank lines; preserve all non-whitespace content"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/CollatzGlobalClosure/SignedCarry.lean",
+      "input_sha256": "a1d335151f39635e0be98a1b34ddf7bf7bdd31f4186ac23f8a5d777f3db809ad",
+      "published_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f",
+      "change": "remove line-end whitespace and terminal blank lines; preserve all non-whitespace content"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/FIXED_RESOLUTION_ENVELOPE_OBSTRUCTION.md",
+      "input_sha256": "898337c461d9a9c23ac38e99a98800a02a500d51d3660bbdbac8b73fb90509e3",
+      "published_sha256": "30dbb4f8b565bdd2308f31b5152623b1467ab8fae76d4be1ef1fb0b64f2853c2",
+      "change": "remove line-end whitespace and terminal blank lines; preserve all non-whitespace content"
+    }
+  ]
+}

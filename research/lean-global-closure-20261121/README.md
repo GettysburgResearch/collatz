@@ -10,7 +10,29 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Compiled results
 
-The latest [literature continuation](LITERATURE_CLOSURE_ATTEMPT.md) is a
+### Global continuation — 22 November 2026
+
+The [new global-step packet](GLOBAL_STEP_20261122.md) builds on the refreshed
+145-PR inventory. It adds an exact signed carry compiler for arbitrary
+supplied complete source words, and a universal affine rigidity theorem:
+one sufficiently large actual merger certifies its entire binary parameter
+class at the same two independent clocks. It also proves a pointwise clock
+lower bound for every multiplication-by-five merger.
+
+The accompanying written potential theorem and its all-exponent extension
+exclude every nonzero fixed-period regularly varying profile of an excessive
+inverse envelope, including the critical exponent one. Its finite positive-row algebra and signed-history lift have Lean
+cores; the asymptotic and modular arguments remain written mathematics.
+The complete common-rank stopping rule and the moving-target analytic
+estimate remain open. No full Collatz proof is claimed.
+
+`build_wide.py` now includes all three new modules and compiles 19 core units.
+The earlier 16-unit receipt below remains evidence for its exact older
+scientific commit, not a replay of this continuation.
+
+### Earlier literature and inverse continuation
+
+The preceding [literature continuation](LITERATURE_CLOSURE_ATTEMPT.md) is a
 separate written proof packet. Using the explicitly pinned PR180 population
 and canonical-potential inputs, it proves the global weighted bound
 `sum_(n<=X, nonperiodic odd unit) V(n)/n <= (5/c)*X^(39/40)` and consequently

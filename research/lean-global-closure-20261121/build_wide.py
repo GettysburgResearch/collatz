@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Rebuild the whole-repository continuation into fresh Lean output.
 
-The complete certificate, inverse-history, and rational finite-trace modules
-use core Lean only.  This driver never imports previously compiled project
+The complete certificate, signed carry, affine merger, finite profile and
+inverse-history modules use core Lean only. This driver never imports previously compiled project
 or vendored project objects, and does not require Mathlib.
 """
 
@@ -60,14 +60,15 @@ def main() -> int:
                 for name in ["EndpointSteering", "InverseBudget",
                              "ReservedMergerCompleteness", "MaximalReserve",
                              "AsynchronousReset", "TerminalReset",
-                             "PeriodicTraceTail"]]
+                             "PeriodicTraceTail", "SignedCarry",
+                             "MergerClockRigidity", "FiniteProfileDrift"]]
     modules.append(("CollatzGlobalClosureCore", "CollatzGlobalClosureCore.lean"))
     paths = [output]
     env = os.environ.copy()
     env["LEAN_PATH"] = os.pathsep.join(map(str, paths))
     report = {
         "status": "RUNNING",
-        "scope": "core-only complete-certificate, inverse-history, and rational finite-trace continuation",
+        "scope": "core-only complete-certificate, signed carry, affine merger, finite profile, inverse-history, and finite-trace continuation",
         "lean_version": version,
         "mathlib_required": False,
         "driver_sha256": digest(Path(__file__).resolve()),
