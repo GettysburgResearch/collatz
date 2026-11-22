@@ -118,3 +118,48 @@ import Collatz
 #print axioms CollatzRetainedEvenBoundary.leading_large_gap_interval_rule
 -- This residual step is a premise of the closing theorem, not a theorem.
 #print CollatzBoundedGapCofinal.LowIntervalStep
+
+-- Whole-prefix repayment and uniform affine carry returns.
+#print axioms CollatzLowGapGlobal.odd_source_cap
+#print axioms CollatzLowGapGlobal.nine_lattice_return
+#print axioms CollatzLowGapGlobal.negative_nine_return
+#print axioms CollatzLowGapGlobal.positive_nine_first_one
+#print axioms CollatzLowGapGlobal.positive_nine_two_one
+#print axioms CollatzClockSynchronization.paired_step
+#print axioms CollatzClockSynchronization.funded_prefix_interval
+#print axioms CollatzClockSynchronization.whole_prefix_rewrite
+#print axioms CollatzClockSynchronization.prefix_order_correction
+#print axioms CollatzClockSynchronization.funded_prefix_rank
+#print axioms CollatzClockSynchronization.funded_repayment_rule
+#print axioms CollatzClockSynchronization.first_repayment_rule
+#print axioms CollatzClockSynchronization.delayed_stats
+#print axioms CollatzClockSynchronization.delayed_repayment_rule
+#print axioms CollatzClockSynchronization.delayed_affine_rule
+#print axioms CollatzClockSynchronization.two_twos_residue_rule
+#print axioms CollatzClockSynchronization.psi_head_two_handoff
+#print axioms CollatzClockSynchronization.psi_head_two_rule
+#print axioms CollatzClockSynchronization.psi_four_twos_handoff
+#print axioms CollatzClockSynchronization.psi_four_twos_rule
+#print axioms CollatzPsiValuationOne.erase_initial_even
+#print axioms CollatzPsiValuationOne.lattice_rule
+#print axioms CollatzPsiValuationOne.psi_rule
+
+-- Exact arithmetic of retained original-source Green coefficients.
+#print axioms CollatzSourceGreenCoefficient.shifted_identity
+#print axioms CollatzSourceGreenCoefficient.evenDefect_pos_iff
+#print axioms CollatzSourceGreenCoefficient.evenDefect_zero_iff
+#print axioms CollatzSourceGreenCoefficient.coefficient_bound
+#print axioms CollatzSourceGreenCoefficient.coefficient_strict_iff
+#print axioms CollatzSourceGreenCoefficient.coefficient_eq_iff
+#print axioms CollatzSourceGreenCoefficient.allOdd_count
+#print axioms CollatzSourceGreenCoefficient.allOdd_shifted_identity
+#print axioms CollatzSourceGreenCoefficient.allOdd_divisibility
+#print axioms CollatzSourceGreenCoefficient.even_input_before_large_power
+#print axioms CollatzSourceGreenCoefficient.state_pow_two_pred
+#print axioms CollatzSourceGreenCoefficient.allOdd_pow_two_pred
+#print axioms CollatzSourceGreenCoefficient.initial_ascent
+#print axioms CollatzSourceGreenCoefficient.cubic_surplus
+#print axioms CollatzSourceGreenCoefficient.cubic_path_certificate
+
+-- These new step rules do not prove the remaining universal selector.
+#print CollatzBoundedGapCofinal.LowIntervalStep

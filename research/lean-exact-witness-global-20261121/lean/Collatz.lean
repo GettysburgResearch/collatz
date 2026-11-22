@@ -22,3 +22,7 @@ import Collatz.BoundedGapCofinal
 import Collatz.RetainedEvenReset
 import Collatz.LowIntervalRefinement
 import Collatz.RetainedEvenBoundary
+import Collatz.LowGapGlobal
+import Collatz.ClockSynchronization
+import Collatz.PsiValuationOne
+import Collatz.SourceGreenCoefficient

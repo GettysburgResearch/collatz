@@ -6,7 +6,69 @@ new commits on older PRs. It used those interfaces to construct the new
 source-gap multiset program. This is a focused research synthesis, not a fresh
 independent replay of every imported project.
 
-## Frozen current sources
+## Current refresh: 2026-11-22
+
+The current pass starts from published PR177 head
+`a0a0d76f91b4e3846c1b1f0706cad56cb6098317`. It reads new research interfaces
+at the following exact heads. This is a source inspection and mathematical
+synthesis, not an independent rebuild of the peer projects.
+
+| PR | Frozen current head | Interface used or checked in this continuation |
+|---|---|---|
+| 175 | `2bc2ad37b490a5aea63658eaf657bc048da4532e` | `research/lean-global-closure-20261121/CANONICAL_POTENTIAL_SUPERLEVELS.md` and `LITERATURE_TRANSPORT_ATTEMPT.md`. Distinguishes the unconditional injective-chain count from the population premise for canonical-potential bounds. The chain count is used only in section 3 of the new Green note; the other new deductions and Lean results do not require that analytic input. |
+| 176 | `8aeb843bba254f065743b6fa277a70906b51d520` | `research/lean-global-resolvent-20261121/overview/parallel/CONTACT_CAPTURE_SYNTHESIS.md`, `SOURCE_ENVELOPE.md`, and `COFINAL_ENVELOPE_LIMITATION.md`. Minimality gives pointwise contact capture, with a separate unresolved quantitative clock requirement. Its literal source envelope motivates retaining the original certificate in every query. |
+| 178 | `be5696cc45a95ad1903802b08ba1dc3ebba66930` | Refreshed the current branch and its global/weighted-rank analysis. No theorem from this new head is imported into the owned Lean project. Its restrictions on specified move unions are kept distinct from the complete-source multiset order. |
+| 180 | `bfba8feaefb3d0910456cdd92d2afcf9e8785b4d` | `research/lean-wide-pass-20261122/WITNESS_SYNTHESIS.md` and `ENERGY_SYNTHESIS.md`. Arbitrary actual target prefixes can be erased by an asynchronous physical merger if the child is within the paid interval. The wrong endpoint phase produces the carry `9r+2`. The energy packet retains source, resolution, and clock terms; it does not supply moving-source absorption. |
+| 182 | `45354128f890fb479f6c23b547368bcddd9cebe6` | `research/lean-dyadic-descent-20261121/LITERATURE_CERTIFICATE_BRIDGE.md` and `LITERATURE_RIGIDITY_BRIDGE.md`. An exact cofinal family limits lower-rank rewrites preserving the specified tail; every fixed target lookahead can fail on a varying parent. This does not bound arbitrary target clocks or tail consumption. The Fourier-to-basin bridge still requires an approximation input not supplied by invariance alone. |
+| 183 | `907a540943090968bc683b1b9246208e9053c1f8` | `research/literature-closing-20261121/mergers/CONSTRUCTIVE_NORMAL_FORM.md`. A constructive normal-form language records actual physical mergers. Its universal blocked-erasure cover remains an explicit premise. No completeness of that language is presumed here. |
+| 185 | `276be8154f4e867acc0230466b34d9cb224aacf5` | `research/whole-repo-closure-20261122/{CARRY_LANGUAGE,ORDINARY_HARMONIC_FLOW_AND_COLLISIONS,EFFECTIVE_FIXED_BLOCK_CYCLES}.md`. The carry language is the direct comparison for the new positive-nine return. The harmonic flow retains the original escaping atom, and fixed-block cycle classification is not a classification of all positive cycles. |
+| 186 | `1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493` | `literature/deep-machinery-20261122/` task interfaces. Read as orientation for connecting compositional ranks to actual ordinary mergers; no external theorem is imported from this packet. |
+
+The refreshed unchanged heads are PR173
+`fa0c9e2a2851e6324391e39c17afcb5913185aec`, PR174
+`c92cd473de3b85ceb945702a726d2eb7350a6af8`, PR179
+`27a2c7414fdb92eeca57ad552a9ab5c36d8430d8`, PR181
+`5f03d809b4495802971211ef13ff905f741d700d`, and PR184
+`366dab89ee9548084ab9b5e4e90ff82abf287a20`. PR146 and main retain the
+pins listed below. Older sections preserve the earlier inspection boundary;
+their historical head pins are not claims about the current branch heads.
+
+### New synthesis in the common complete-source rank
+
+PR185's supplied-source language `1 {2,3}* 2 1` closes the positive-nine
+carry by tracking a negative-one intercept at a synchronized source clock.
+The current `LowGapGlobal.lean` strengthens this to **every source word
+beginning with one**, with no restriction on its second or later gaps. It
+also closes every word beginning with `[2,1]`. The change is the uniform
+negative-nine return, which uses additional target halvings and one or two
+ordinary source steps inside the existing interval induction. The affine
+cone is stated and proved in [LOW_GAP_GLOBAL.md](LOW_GAP_GLOBAL.md).
+
+This yields an entire valuation branch: `PsiValuationOne.psi_rule` closes
+every query `known=2q, wanted=4q-1` under the original lower-rank interval
+hypothesis. The complete odd certificate remains unchanged; only its
+initial even grade is deleted. The actual two-gap target path ends at
+`9q-1`. No global psi-only induction is silently substituted for the
+interval induction.
+
+The clock attack adds a different mechanism. An arbitrary block can pass
+through larger intermediate source grades and still return below the
+**original** grade. Proper-prefix clock inequalities control corrections;
+the final cumulative clock deficit must be paid by the retained even run
+or a consumed source gap. This combines unbounded target lookahead with
+literal-tail consumption, beyond the particular restrictions of the
+PR182 obstruction. It proves successful rewrites when the repayment occurs,
+not universal occurrence of repayment.
+
+The Green attack retains literal original-source weights throughout. It
+obtains exact finite even-loss and component-capacity identities, a genuine
+component maximum for sufficiently large exponents, and negative cubic
+residuals on an explicit cofinal family. The maximum can return its original
+component minimum through the smaller-merger alternative, so that combined
+argument has not produced the missing strict global descent. Analytic and
+Lean claims are separated in [GLOBAL_GREEN_MERGER.md](GLOBAL_GREEN_MERGER.md).
+
+## Prior frozen sources: 2026-11-21
 
 The paths below identify the mathematical sources of the summaries. The full
 head pins delimit this inspection; later commits are outside its scope. The

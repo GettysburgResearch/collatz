@@ -3,16 +3,61 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint proves cofinal certified predecessors over the fixed
-gap alphabet one through four, removes every high-gap case from an interval
-comparison program, and adds suffix, denominator-clearing, and retained-even
-rewrites. A complete recursive cover of the remaining low-gap states is still
-missing.
+The latest checkpoint proves whole-prefix repayment in the original source
+rank, a uniform negative-nine carry return, and every valuation-one psi
+query under the original lower-rank interval hypothesis. It builds on the
+cofinal alphabet-four reduction and preserves every complete supplied tail.
+A complete recursive cover of the remaining low-gap states is still missing.
 These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: parallel attacks and the alphabet-four reduction
+## Latest checkpoint: whole-prefix repayment and uniform carry returns
+
+Three parallel attacks and the coordinating composition add four core-Lean
+modules. These are unbounded path and certificate theorems, with no larger
+finite verification threshold.
+
+- [Whole-prefix clock repayment](CLOCK_SYNCHRONIZATION.md) allows source
+  and target clocks to become unsynchronized across an arbitrary nonempty
+  source prefix. At a funded return, the complete child certificate is
+  strictly below the original multiset rank. Proper-prefix clock inequalities
+  control the affine corrections. A consumed source gap can fund a remaining
+  deficit; the intermediate ranks may increase. A delayed target-word family
+  works for every positive source prefix under its exact affine guard.
+- [Uniform affine carry returns](LOW_GAP_GLOBAL.md) close every positive
+  target `t <= 9q+3` with `t mod 4 = (q+3) mod 4`, for every complete odd
+  certificate at `q`, using the original interval induction. In particular
+  `9q-1` always returns. The positive-nine carry `9q+2` returns for every
+  source word beginning with `[1]` or `[2,1]`, with an arbitrary literal tail.
+- [Every valuation-one psi query](PSI_VALUATION_ONE.md) closes without
+  inspecting the odd source word. For `S=2q`, the actual target prefix
+  `[1,1]` sends `2S-1` to `9q-1`. Deleting only the initial even grade pays
+  for the uniform carry return. The result also covers every positive
+  `t=2S-1-16k`. Initial exponents two and three have an additional proved
+  four-leading-twos handoff in the clock module.
+- [Original-source Green coefficients](GLOBAL_GREEN_MERGER.md) prove an
+  exact shifted identity at every ordinary clock and characterize strict
+  coefficient loss exactly by the occurrence of an even input. The Lean
+  module also certifies an all-parameter family used in the written proof
+  of negative cubic residuals arbitrarily far out. Written deductions give
+  an exact finite loss budget, component capacity, and a component-minimum
+  maximum theorem. The real-series deductions are not imported as axioms.
+
+The global obligation remains the same `LowIntervalStep`, refined by these
+new successful rules. Whole-prefix repayment is not asserted to occur for
+every target. A source-clock decrease is not substituted for the original
+rank decrease: the carry note preserves an exact fixed-target cycle in the
+unrestricted union of those rules. Likewise, the Green maximum can return
+its original source rather than furnish a strictly smaller component minimum.
+
+The refresh includes new work on PR175, PR176, PR178, PR180, PR182, PR183,
+PR185, and PR186. Full pins and the precise input boundaries are recorded
+in [LATEST_SOURCE_SYNTHESIS.md](LATEST_SOURCE_SYNTHESIS.md). Actual build,
+axiom, source-hash, and replay receipts are in
+[`reports/.../repayment/`](../../reports/lean-exact-witness-global-20261121/repayment/).
+
+## Previous checkpoint: parallel attacks and the alphabet-four reduction
 
 The new [bounded-gap proof packet](BOUNDED_GAP_ATTACK.md) proves that every
 certified odd ternary unit has arbitrarily large certified predecessors using

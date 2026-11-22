@@ -4,6 +4,16 @@ Mathematical statements and exact remaining assumptions are in
 [`research/lean-exact-witness-global-20261121/README.md`](../../research/lean-exact-witness-global-20261121/README.md).
 Collatz and the user's residue implication remain OPEN.
 
+## Current checkpoint: whole-prefix repayment and uniform carry returns
+
+The [repayment receipts](repayment/README.md) record a fresh build of the
+four new modules with the complete owned package, the expanded axiom audit,
+and two exact replay witnesses. The corresponding source notes state each
+step rule under its original interval hypothesis. The all-parameter
+arithmetic Green results and written real-series deductions have separate
+evidence boundaries. The final complete-checkout gate and remote tree
+identity are reported on PR177.
+
 ## First checkpoint
 
 - The complete clean local checkout was `1b8730049109db59f4beef4992484f5c0cd0ec80`.
