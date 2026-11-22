@@ -1,0 +1,5 @@
+'CollatzStrictGreen.path_telescope' depends on axioms: [propext, Quot.sound]
+'CollatzStrictGreen.inverse_path_cancellation' depends on axioms: [propext, Quot.sound]
+'CollatzStrictGreen.subset_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzStrictGreen.survival_unit_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzStrictGreen.survival_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

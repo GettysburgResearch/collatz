@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "certificates": [
+    {
+      "name": "three-twos",
+      "clock": 5,
+      "minimum_scaled_descent": 91,
+      "scope": "all physical sources with the supplied repeated prefix, all tails"
+    },
+    {
+      "name": "two-threes",
+      "clock": 5,
+      "minimum_scaled_descent": 90,
+      "scope": "all physical sources with the supplied repeated prefix, all tails"
+    },
+    {
+      "name": "forty-eight-fours",
+      "clock": 192,
+      "minimum_scaled_descent": 7974637520790484193366249412109661672171357056654330743141,
+      "scope": "all physical sources with the supplied repeated prefix, all tails"
+    }
+  ],
+  "damaged_controls_rejected": 7,
+  "universal_coverage_claimed": false
+}

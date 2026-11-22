@@ -47,11 +47,42 @@ checks three complete certificates and seven damaged controls in both
 ordinary and optimized Python. It does not enumerate starting integers
 or certify universal source-language coverage.
 
-The subsequent published replay receipt, compiler logs, and repository
-gate will identify their actual science commit and tree. A source review,
-a development build using an existing dependency cache, and a fresh
-published-checkout execution are distinct evidence events. Passing the
-repository gate does not prove the written analytic hypotheses or Collatz.
+## Published-checkout execution
+
+The fresh replay completed successfully at the actual published science
+commit `bf2486d727b8e5ab141866f08b4b8f246ffdf4ed`, tree
+`c7df480ba9b3d2147facc8d24f23f91a43980adc`, in a clean complete
+566-file checkout.
+
+- **8 modules compiled:** 5 new modules and their 3 required local dependencies.
+- **56 new public theorem audits:** only `propext`, `Classical.choice`, and `Quot.sound`.
+- **29 recorded source inputs:** exact hashes retained before and after execution.
+- **20 recorded commands:** all completed with exit code zero.
+- **3 rational-shadow certificates:** exact replay passed in normal and optimized Python; 7 damaged controls rejected in each mode.
+- **Required repository gate:** all five component commands passed; checkout, commit, tree, and recorded inputs stayed unchanged.
+
+The full receipt is [`published-replay.json`](published-replay.json),
+SHA256 `8805b2a6e45d5fa3e1b70119891e32095a2b2f722357c45f0d89fecd8308084c`.
+It records the exact compiler/runtime pins, commands, source and artifact
+hashes, and per-declaration axiom sets. The complete command outputs are
+in [`published-logs/`](published-logs/); the actual header-only dependency
+port is [`published-module-port.patch`](published-module-port.patch).
+
+The prior packets' 39, 19, and 32 recorded input files were also checked
+for unchanged bytes. Their execution was not repeated or relabeled as
+new evidence; see
+[`preserved-source-continuity.json`](preserved-source-continuity.json).
+
+The reports commit adds these execution records without changing the
+29 replayed inputs. A final complete checkout checks that continuity
+and reruns the required repository gate. The published replay above
+remains a receipt for its exact science commit; it is not relabeled as
+a Lean execution at the later reports-only head.
+
+A source review, a development build using an existing dependency cache,
+and this fresh published-checkout execution are distinct events. Passing
+the repository gate does not prove the written analytic hypotheses or
+Collatz.
 
 ## Remaining mathematical boundary
 
