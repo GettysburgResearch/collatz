@@ -242,7 +242,11 @@ python -B research/lean-global-closure-20261121/build_wide.py \
   --output /fresh/core-output --receipt /outside/core-receipt.json
 ```
 
-The publication report records the actual fresh complete-checkout build and
-repository validation separately. The expanded legacy `build_band.py --full`
+The [publication report](../../reports/lean-global-closure-20261121/nov22/VALIDATION.md)
+records the actual fresh complete-checkout build: all 19 source invocations,
+126 axiom reports, and all five repository commands passed at
+`75e4c3be98db839646ffbb76fc0ac33649747c99`. The new modules contribute
+55 of those reports, whose axiom union contains only Lean's standard axioms.
+The expanded legacy `build_band.py --full`
 list is kept consistent with the core entry point; no replay of that larger
 Mathlib packet is claimed by this continuation.

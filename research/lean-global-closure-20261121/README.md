@@ -27,6 +27,9 @@ The complete common-rank stopping rule and the moving-target analytic
 estimate remain open. No full Collatz proof is claimed.
 
 `build_wide.py` now includes all three new modules and compiles 19 core units.
+The [actual published-checkout replay](../../reports/lean-global-closure-20261121/nov22/VALIDATION.md)
+passed all 19 units and 126 axiom reports, including 55 new-module reports,
+with only Lean's standard axioms. All five repository commands also passed.
 The earlier 16-unit receipt below remains evidence for its exact older
 scientific commit, not a replay of this continuation.
 
