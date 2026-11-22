@@ -4,8 +4,16 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [the whole-repository synthesis](overview/whole/README.md)
-adds 37 audited Lean theorems, an effective written classifier for independent
+**Latest checkpoint:** [the profound-step synthesis](overview/profound/README.md)
+adds 50 audited Lean statements supporting an unbounded head-three merger
+family, an all-depth first-crossing coefficient bound, an unconditional
+reciprocal survival budget, and an actual-source occupation-bin height
+bound. The written synthesis identifies the arriving potential on the
+sparse crossing boundary and a shrinking endpoint-weight window that
+retains every possible counterexample, including additional cycles.
+The needed weighted decay and complete successful merger coverage remain
+open. [Checkpoint 9](overview/whole/README.md)
+retains its 37 audited Lean theorems, an effective written classifier for independent
 block repetitions, a total signed-affine dispatcher with literal source
 handoffs, a joint source-grade/target induction, and a finite ordinary
 last-contact measure with an exact Green representation. Combining the

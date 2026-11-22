@@ -1,0 +1,15 @@
+import Collatz.HeadThreeTarget
+
+#print axioms CollatzHeadThreeTarget.mersenne_ascent
+#print axioms CollatzHeadThreeTarget.half_success
+#print axioms CollatzHeadThreeTarget.half_failure
+#print axioms CollatzHeadThreeTarget.head_three_prepare
+#print axioms CollatzHeadThreeTarget.head_three_success_merger
+#print axioms CollatzHeadThreeTarget.head_three_success_rule
+#print axioms CollatzHeadThreeTarget.head_three_failure_transport
+#print axioms CollatzHeadThreeTarget.failure_companion_basin
+#print axioms CollatzHeadThreeTarget.head_three_dichotomy
+#print axioms CollatzHeadThreeTarget.head_three_three_merger
+#print axioms CollatzHeadThreeTarget.head_three_three_mixed
+#print axioms CollatzHeadThreeTarget.head_three_source_identity
+#print axioms CollatzHeadThreeTarget.failure_large_companion

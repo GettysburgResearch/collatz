@@ -1,0 +1,27 @@
+{
+  "schema": "checkpoint10-supporting-execution/v1",
+  "native_count_integer_checks": {
+    "19501^6309 < 2^10000 * 6500^6309": true,
+    "10000^10000 < 2^9500 * 3691^3691 * 6309^6309": true
+  },
+  "native_count_scope": "Two exact integer inputs to the pinned written entropy argument; not a full Lean formalization of the native count.",
+  "moving_tilt_command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "research/lean-global-resolvent-20261121/overview/profound/certify_moving_tilt.py",
+    "--bin",
+    "4",
+    "--sources",
+    "667",
+    "--precision-bits",
+    "24",
+    "--output",
+    "reports/2026-11-22-profound-step/bin4-enclosure.json"
+  ],
+  "moving_tilt_exit_code": 0,
+  "script_sha256": "7d3181d228d77e66887bff2a14a8137c6979622980933109535e01f763acd3b2",
+  "enclosure_sha256": "04315eb2e984c74eeba2755ef76ceac1c1d87dece72d9c8a3f2bf8f4abe2adfc",
+  "scope": "One exact complete finite-bin enclosure; no empirical extrapolation or asymptotic decay claim."
+}
