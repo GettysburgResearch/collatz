@@ -4,8 +4,20 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [the parallel machinery attacks](overview/machinery/README.md)
-prove source-preserving certificate pumping and an actual finite-path
+**Latest checkpoint:** [effective sparse returns and logarithmic descent](overview/returns/README.md)
+prove a source-uniform, effective `O_S(N/log N)` bound on visits to at most
+`S` binary runs in every injective actual odd-orbit segment. A separate
+application of Evertse's small-sum theorem proves that a nonexceptional
+low-run return within any fixed multiple of `log n` forces descent below
+`n^eta`, for every fixed `0<eta<=1`, above an unspecified threshold.
+Fourteen finite dyadic-cluster and packing statements have a Lean core;
+the complete orbit theorems and published S-unit inputs are written proofs
+with independent review. The packet records the actual sibling-law and
+whole-source exchange attempts alongside these positive estimates. The
+universal return/exchange or terminal-moment closing step remains open.
+
+[Checkpoint 12](overview/machinery/README.md)
+proves source-preserving certificate pumping and an actual finite-path
 valuation-clock bound in Lean. The written consequences exclude cofinal
 sound context-free bounded-gap certificate languages and uniform density
 bounds across the escaping-source clock regime. Separate written proofs
