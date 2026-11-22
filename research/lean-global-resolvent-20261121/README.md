@@ -4,8 +4,17 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [the profound-step synthesis](overview/profound/README.md)
-adds 50 audited Lean statements supporting an unbounded head-three merger
+**Latest checkpoint:** [the direct closure attempt](overview/central/README.md)
+proves a cofinal obstruction to unchanged-target source-only selectors and
+an exact all-depth cost for copying a fixed source prefix to sibling
+branches. Both have compiled Lean cores and written scope boundaries.
+No positive global closing estimate was obtained. These results rule out
+two proposed completion mechanisms; they do not establish target descent,
+weighted survivor decay, or full Collatz. The attempted-proof record states
+where the coupled arithmetic and analytic arguments stopped.
+
+[Checkpoint 10](overview/profound/README.md)
+retains 50 audited Lean statements supporting an unbounded head-three merger
 family, an all-depth first-crossing coefficient bound, an unconditional
 reciprocal survival budget, and an actual-source occupation-bin height
 bound. The written synthesis identifies the arriving potential on the
