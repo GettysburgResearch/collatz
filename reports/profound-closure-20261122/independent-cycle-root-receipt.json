@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/c6766c1207a3/collatz_work/profound_root/lib/IndependentCyclePins.olean",
+    "IndependentCyclePins.lean"
+  ],
+  "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_root",
+  "exit_code": 0,
+  "seconds": 10.451,
+  "source_sha256": "917fe8a0f00c30806c7f2749e935d631ce0d13e0488f2abd8fafb435366dd6ca",
+  "log_sha256": "18ec9ba5c3f774543dd90cd98bddb8300fb35a1110b07975d04197c964ccdd92",
+  "stdout": "'CollatzIndependentPins.full_pin_divisibility' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentPins.independent_cross_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzIndependentPins.independent_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzIndependentPins.no_independent_cycle_of_twos_ge_pins' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzIndependentPins.independent_integer_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzIndependentPins.independent_gap_cycle_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+}

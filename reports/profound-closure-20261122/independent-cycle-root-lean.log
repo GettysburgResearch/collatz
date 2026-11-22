@@ -1,0 +1,6 @@
+'CollatzIndependentPins.full_pin_divisibility' depends on axioms: [propext, Quot.sound]
+'CollatzIndependentPins.independent_cross_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzIndependentPins.independent_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzIndependentPins.no_independent_cycle_of_twos_ge_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzIndependentPins.independent_integer_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzIndependentPins.independent_gap_cycle_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]

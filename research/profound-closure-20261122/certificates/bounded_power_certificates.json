@@ -1,0 +1,309 @@
+{
+  "format": "collatz-bounded-power-bound-v1",
+  "matveev_K": 8589934592,
+  "scope": {
+    "independent_nonnegative_exponents": true,
+    "positive_integer_cycles_only": true,
+    "full_cycle_enumeration_executed": false,
+    "external_logarithm_theorem": "Matveev 2000 II, Corollary 2.3"
+  },
+  "schemas": [
+    {
+      "name": "separate_odd_even_runs",
+      "affine_blocks": [
+        {
+          "word": "1",
+          "length": 1,
+          "odd_count": 1,
+          "a": 3,
+          "C": 1,
+          "D": -1
+        },
+        {
+          "word": "0",
+          "length": 1,
+          "odd_count": 0,
+          "a": 1,
+          "C": 0,
+          "D": 1
+        }
+      ],
+      "B": [
+        2,
+        1
+      ],
+      "max_divisibility_coefficient": 2,
+      "fixed_block_cycles": [],
+      "r": 2,
+      "b": 2,
+      "d": 1,
+      "A": 3,
+      "C_budget": 25769803780,
+      "J": 77309411340,
+      "q": 42,
+      "threshold_rhs": 3401614098960,
+      "strict_length_upper_bound": 4398046511104
+    },
+    {
+      "name": "mixed_pin_independent_exponents",
+      "affine_blocks": [
+        {
+          "word": "11100011110",
+          "length": 11,
+          "odd_count": 7,
+          "a": 2187,
+          "C": 5699,
+          "D": -139
+        },
+        {
+          "word": "10",
+          "length": 2,
+          "odd_count": 1,
+          "a": 3,
+          "C": 1,
+          "D": 1
+        }
+      ],
+      "B": [
+        84,
+        1
+      ],
+      "max_divisibility_coefficient": 5838,
+      "fixed_block_cycles": [
+        {
+          "block_index": 1,
+          "entry": 1,
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        }
+      ],
+      "r": 2,
+      "b": 7,
+      "d": 13,
+      "A": 3,
+      "C_budget": 25769803797,
+      "J": 77309411391,
+      "q": 42,
+      "threshold_rhs": 3401614101204,
+      "strict_length_upper_bound": 4398046511104
+    },
+    {
+      "name": "single_fixed_cycle_block",
+      "affine_blocks": [
+        {
+          "word": "10",
+          "length": 2,
+          "odd_count": 1,
+          "a": 3,
+          "C": 1,
+          "D": 1
+        }
+      ],
+      "B": [
+        2,
+        1
+      ],
+      "max_divisibility_coefficient": 2,
+      "fixed_block_cycles": [
+        {
+          "block_index": 0,
+          "entry": 1,
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        }
+      ],
+      "r": 1,
+      "b": 2,
+      "d": 1,
+      "A": 1,
+      "C_budget": 25769803780,
+      "J": 25769803780,
+      "q": 40,
+      "threshold_rhs": 1082331758760,
+      "strict_length_upper_bound": 1099511627776
+    },
+    {
+      "name": "rotated_and_repeated_fixed_blocks",
+      "affine_blocks": [
+        {
+          "word": "01",
+          "length": 2,
+          "odd_count": 1,
+          "a": 3,
+          "C": 2,
+          "D": 1
+        },
+        {
+          "word": "1010",
+          "length": 4,
+          "odd_count": 2,
+          "a": 9,
+          "C": 7,
+          "D": 7
+        }
+      ],
+      "B": [
+        6,
+        1
+      ],
+      "max_divisibility_coefficient": 14,
+      "fixed_block_cycles": [
+        {
+          "block_index": 0,
+          "entry": 2,
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        },
+        {
+          "block_index": 1,
+          "entry": 1,
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        }
+      ],
+      "r": 2,
+      "b": 3,
+      "d": 4,
+      "A": 3,
+      "C_budget": 25769803784,
+      "J": 77309411352,
+      "q": 42,
+      "threshold_rhs": 3401614099488,
+      "strict_length_upper_bound": 4398046511104
+    },
+    {
+      "name": "zero_odd_blocks",
+      "affine_blocks": [
+        {
+          "word": "00",
+          "length": 2,
+          "odd_count": 0,
+          "a": 1,
+          "C": 0,
+          "D": 3
+        },
+        {
+          "word": "0",
+          "length": 1,
+          "odd_count": 0,
+          "a": 1,
+          "C": 0,
+          "D": 1
+        }
+      ],
+      "B": [
+        0,
+        1
+      ],
+      "max_divisibility_coefficient": 3,
+      "fixed_block_cycles": [],
+      "r": 2,
+      "b": 0,
+      "d": 2,
+      "A": 3,
+      "C_budget": 25769803779,
+      "J": 77309411337,
+      "q": 42,
+      "threshold_rhs": 3401614098828,
+      "strict_length_upper_bound": 4398046511104
+    },
+    {
+      "name": "negative_fixed_points_only",
+      "affine_blocks": [
+        {
+          "word": "1",
+          "length": 1,
+          "odd_count": 1,
+          "a": 3,
+          "C": 1,
+          "D": -1
+        },
+        {
+          "word": "111",
+          "length": 3,
+          "odd_count": 3,
+          "a": 27,
+          "C": 19,
+          "D": -19
+        }
+      ],
+      "B": [
+        4,
+        1
+      ],
+      "max_divisibility_coefficient": 38,
+      "fixed_block_cycles": [],
+      "r": 2,
+      "b": 3,
+      "d": 6,
+      "A": 3,
+      "C_budget": 25769803786,
+      "J": 77309411358,
+      "q": 42,
+      "threshold_rhs": 3401614099752,
+      "strict_length_upper_bound": 4398046511104
+    }
+  ],
+  "uniform_bounds": [
+    {
+      "maximum_base_length": 1,
+      "B": 6,
+      "r": 1,
+      "b": 3,
+      "d": 3,
+      "A": 1,
+      "C_budget": 25769803783,
+      "J": 25769803783,
+      "q": 40,
+      "threshold_rhs": 1082331758886,
+      "strict_length_upper_bound": 1099511627776
+    },
+    {
+      "maximum_base_length": 11,
+      "B": 708588,
+      "r": 2,
+      "b": 20,
+      "d": 23,
+      "A": 3,
+      "C_budget": 25769803820,
+      "J": 77309411460,
+      "q": 42,
+      "threshold_rhs": 3401614104240,
+      "strict_length_upper_bound": 4398046511104
+    },
+    {
+      "maximum_base_length": 12,
+      "B": 4251528,
+      "r": 4,
+      "b": 23,
+      "d": 25,
+      "A": 15,
+      "C_budget": 25769803825,
+      "J": 386547057375,
+      "q": 45,
+      "threshold_rhs": 18167711696625,
+      "strict_length_upper_bound": 35184372088832
+    },
+    {
+      "maximum_base_length": 64,
+      "B": 54938941124680199754525585428496,
+      "r": 8,
+      "b": 106,
+      "d": 129,
+      "A": 255,
+      "C_budget": 25769804012,
+      "J": 6571300023060,
+      "q": 49,
+      "threshold_rhs": 335136301176060,
+      "strict_length_upper_bound": 562949953421312
+    }
+  ]
+}

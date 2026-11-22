@@ -1,0 +1,56 @@
+{
+  "date_utc": "2026-11-22",
+  "repository_baseline": {
+    "pr": 185,
+    "head": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "provenance": "supplied by coordinating agent; no remote writes performed by this agent"
+  },
+  "prior_packet": {
+    "path": "research/whole-repo-closure-20261122",
+    "fixed_schema_proof_sha256": "7c581f9a622bafd37bb0b67ab834376a65cde6e0150d8014a3c71afc77f71a63",
+    "fixed_schema_lean_sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf"
+  },
+  "primary_sources": [
+    {
+      "author": "E. M. Matveev",
+      "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+      "year": 2000,
+      "doi": "10.1070/IM2000v064n06ABEH000314",
+      "stable_url": "https://www.mathnet.ru/eng/im314",
+      "retrieved_full_pdf_url": "https://www.mathnet.ru/links/95cd0c82966e868aa656d4b19b4003ea/im314_eng.pdf",
+      "web_reference": "turn751374401view0",
+      "inspected": "Corollary 2.3 on printed p1219, parameter definitions (2.1), (2.4), B* (1.4)",
+      "specialization": {
+        "number_of_logarithms": 2,
+        "field_degree": 1,
+        "A": [
+          1,
+          2
+        ],
+        "C1_upper_bound": 4294967296,
+        "Omega": 2,
+        "resulting_K": 8589934592
+      },
+      "scope": "External published theorem; its full proof is not formalized or re-audited here."
+    },
+    {
+      "authors": [
+        "John Simons",
+        "Benne de Weger"
+      ],
+      "title": "Theoretical and computational bounds for m-cycles of the 3n+1 problem",
+      "journal_year": 2005,
+      "doi": "10.4064/aa117-1-3",
+      "retrieved_author_version": "1.43, July 31, 2007",
+      "url": "https://www.deweger.net/papers/%5B35a%5DSidW-3n%2B1-v1.43%5B2007%5D.pdf",
+      "web_reference": "turn610477040view1",
+      "inspected": "definition and introduction, Theorem 3, chain equation, linear logarithm form setup",
+      "scope": "Method comparison only; historical numerical Collatz verification bounds are not inputs."
+    }
+  ],
+  "independent_written_review": {
+    "reviewer": "/root/literature_operator",
+    "scope": "fixed-block exceptions, physical signed divisibility, rotation suffix bound, independent exponent bit budget",
+    "result": "No concrete defect found. Matveev numerical normalization was treated as the separately checked primary input."
+  }
+}

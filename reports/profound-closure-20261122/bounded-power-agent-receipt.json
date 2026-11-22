@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "seconds": 26.066,
+  "source_sha256": "3db42b807661cb5fb69b0b82a00e6bd2cf7468fc3614f1b5d04e08c98477a309",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "command": [
+    "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/c6766c1207a3/collatz_work/profound_symbolic/lib/BoundedPowerBudget.olean",
+    "/workspace/scratch/c6766c1207a3/collatz_work/profound_symbolic/BoundedPowerBudget.lean"
+  ],
+  "axiom_audit": "'CollatzBoundedPower.dyadic_duration_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedPower.local_budget_sum_add' depends on axioms: [propext, Quot.sound]\n'CollatzBoundedPower.local_budget_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedPower.threshold_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedPower.threshold_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedPower.dyadic_length_cap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedPower.bounded_power_length_cap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedPower.mixed_pin_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "proof_scope": "discrete dyadic divisor, finite block bit budget, certified infinite tail, and length cap; published Matveev height estimate remains an explicit hypothesis"
+}

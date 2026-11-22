@@ -1,0 +1,293 @@
+{
+  "schema": "collatz-independent-pin-cycle-exclusion/v1",
+  "pin_word": [
+    1,
+    1,
+    4,
+    1,
+    1,
+    1,
+    2
+  ],
+  "twos_word": [
+    2
+  ],
+  "parameters": "independent integers m>=1,n>=1",
+  "matveev_constant": 1000000000000,
+  "pin_cutoff_exclusive": 100000000000000,
+  "denominator_cutoff_exclusive": 800000000000000,
+  "log_series_terms": 96,
+  "log2": {
+    "lower": [
+      "144843113616784427742689813729366321419099825365394492915033372276659105080669918922971502424706334493661434678520471390020526059438844975920333441072018770843644144384",
+      "208964441721851582467014379260409504888755371696070583273128069590868745030635754353101992388755187928373047087858460591681803322956016342515819179241776597535691000125"
+    ],
+    "upper": [
+      "111818883712157578217356536199070800135545065182084548530405763397580829122277177408533999871888775283654463494214383451657138285434351683837686650693792360872742853424823",
+      "161320549009269421664535100789036137774119146949366490286854869724150671163650802360594738124119005080703992351826731576778352165322044616422212406374651533297553452096500"
+    ]
+  },
+  "log3": {
+    "lower": [
+      "600433802762209484717899823066061912307115294472520291390961067807594258047103755189099009463113143935143182234956280979043417227124418727",
+      "546538400266884583380830114135851342727816916328416960537180720875514406019274884361947477951146327049583897138934102891302804346896384000"
+    ],
+    "upper": [
+      "57941861966553215275277332925874974537636625916598208119227801089159818464500615954148351416880470431005375404517628062198565526145496872843",
+      "52740955625754362296250106014109654573234332425692236691837939564487140180860026340927931622285620560284846073907140929010720619475501056000"
+    ]
+  },
+  "continued_fraction": [
+    {
+      "partial_quotient": 1,
+      "p": 1,
+      "q": 1,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 2,
+      "q": 1,
+      "scale": 1,
+      "min_m": 0,
+      "min_n": 1,
+      "status": "outside-positive-parameter-cone"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 3,
+      "q": 2,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 2,
+      "p": 8,
+      "q": 5,
+      "scale": 3,
+      "min_m": 2,
+      "min_n": 1,
+      "status": "separated",
+      "dyadic_exponent": 22
+    },
+    {
+      "partial_quotient": 2,
+      "p": 19,
+      "q": 12,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 3,
+      "p": 65,
+      "q": 41,
+      "scale": 3,
+      "min_m": 17,
+      "min_n": 4,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 1,
+      "p": 84,
+      "q": 53,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 5,
+      "p": 485,
+      "q": 306,
+      "scale": 3,
+      "min_m": 127,
+      "min_n": 29,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 2,
+      "p": 1054,
+      "q": 665,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 23,
+      "p": 24727,
+      "q": 15601,
+      "scale": 3,
+      "min_m": 6475,
+      "min_n": 1478,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 2,
+      "p": 50508,
+      "q": 31867,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 2,
+      "p": 125743,
+      "q": 79335,
+      "scale": 3,
+      "min_m": 32927,
+      "min_n": 7516,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 1,
+      "p": 176251,
+      "q": 111202,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 301994,
+      "q": 190537,
+      "scale": 1,
+      "min_m": 26360,
+      "min_n": 6017,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 55,
+      "p": 16785921,
+      "q": 10590737,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 17087915,
+      "q": 10781274,
+      "scale": 3,
+      "min_m": 4474633,
+      "min_n": 1021391,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 4,
+      "p": 85137581,
+      "q": 53715833,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 3,
+      "p": 272500658,
+      "q": 171928773,
+      "scale": 3,
+      "min_m": 71356888,
+      "min_n": 16288103,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 1,
+      "p": 357638239,
+      "q": 225644606,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 630138897,
+      "q": 397573379,
+      "scale": 3,
+      "min_m": 165007861,
+      "min_n": 37665110,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 15,
+      "p": 9809721694,
+      "q": 6189245291,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 10439860591,
+      "q": 6586818670,
+      "scale": 3,
+      "min_m": 2733776749,
+      "min_n": 624018767,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 9,
+      "p": 103768467013,
+      "q": 65470613321,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 2,
+      "p": 217976794617,
+      "q": 137528045312,
+      "scale": 3,
+      "min_m": 57079296007,
+      "min_n": 13029063887,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 5,
+      "p": 1193652440098,
+      "q": 753110839881,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 7,
+      "p": 8573543875303,
+      "q": 5409303924479,
+      "scale": 1,
+      "min_m": 748354657885,
+      "min_n": 170821319284,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 1,
+      "p": 9767196315401,
+      "q": 6162414764360,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 18340740190704,
+      "q": 11571718688839,
+      "scale": 3,
+      "min_m": 4802697186974,
+      "min_n": 1096275757699,
+      "status": "separated",
+      "dyadic_exponent": 66
+    },
+    {
+      "partial_quotient": 4,
+      "p": 83130157078217,
+      "q": 52449289519716,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 8,
+      "p": 683381996816440,
+      "q": 431166034846567,
+      "scale": 3,
+      "min_m": 178950072876694,
+      "min_n": 40847594402843,
+      "status": "above-pin-cutoff"
+    },
+    {
+      "partial_quotient": 1,
+      "p": 766512153894657,
+      "q": 483615324366283,
+      "status": "lower-convergent"
+    },
+    {
+      "partial_quotient": 11,
+      "p": 9115015689657667,
+      "q": 5750934602875680,
+      "status": "terminal-denominator"
+    }
+  ],
+  "scope": "Exact finite arithmetic closure of the written Matveev and physical-legality proof; no universal Collatz claim."
+}
