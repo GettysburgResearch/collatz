@@ -3,7 +3,17 @@
 **Status: OPEN for Collatz and for the requested residue implication.**
 The results include kernel-checked equivalences for arbitrary finite witnesses,
 an all-exponent branch of a global induction, and source-witness induction.
-The latest checkpoint combines least-target induction, minimum source grade,
+The latest checkpoint uses the published Evertse--Schlickewei--Schmidt
+S-unit theorem to prove a new written finite-core return theorem for actual
+segments with sparse binary endpoints. On every escaping odd orbit, bounded
+binary-run times have upper Banach density zero. Hence every exponential
+run weight with base greater than one has divergent orbit averages. Under
+the pinned canonical analytic inputs this also forces divergence of the
+actual terminal energy for those weights, including an interval with finite
+canonical forcing. Its remaining transport commutator is not bounded.
+The finite floor-return arithmetic, all-clock correction bound, and exact
+fixed-block valuation loss are checked in three new core-Lean modules.
+The preceding checkpoint combines least-target induction, minimum source grade,
 maximum source value at that grade, and the original target floor in one
 canonical counterquery. Its exact remaining proposition is `FloorIntervalStep`,
 equivalent to full Collatz and the original residue implication. It is unproved.
@@ -22,7 +32,112 @@ These results do not prove the implication or Collatz.
 There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
 in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
 
-## Latest checkpoint: the joint minimum and the canonical terminal energy
+## Latest checkpoint: S-unit return separation and subcritical run weights
+
+This continuation starts from published checkpoint twelve at
+`431d858d1ac92e88f4a58f6610c0d67733dc7242`. Five active peer branches
+advanced. The exact newly inspected heads, files, and literature inputs are
+recorded in
+[the source snapshot](../../reports/lean-exact-witness-global-20261121/literature-closing/SOURCES.json).
+The primary literature was used to attempt closing arguments on the actual
+integer orbit and canonical measure; no literature theorem was installed
+as a conjectural Lean axiom.
+
+### Sparse endpoints force an actual finite-core return
+
+[Arithmetic return](LITERATURE_ARITHMETIC_RETURN.md) proves the following.
+For each binary run bound `S`, there is one finite set `H_S` of positive odd
+step separations. For every fixed `h` outside that set, there is a finite
+threshold `M(S,h)` such that an actual `h`-odd-step segment whose two endpoints
+have at most `S` runs must have an intervening odd input below `M(S,h)`.
+All actual valuation gaps remain unrestricted.
+
+The proof expands the two endpoints into at most `4S` signed powers of two
+and retains every term of the exact Collatz correction. The published
+S-unit theorem makes projective ratios in nondegenerate zero relations of
+each fixed length finite. An endpoint-only minimal zero relation would
+force `h` into `H_S`. Otherwise a positive correction term shares a
+nondegenerate relation with the largest initial endpoint term, giving a
+positive lower bound for the relative correction. An actual segment above
+the finite floor has a smaller relative correction, a contradiction.
+
+The exceptional set is fixed before `h` is chosen. The correction ratio
+and finite threshold may depend on `h`. Progression packing consequently
+proves that on every escaping odd orbit, times with at most `S` binary runs
+have **upper Banach density zero**. Every weight `rho^runs`, `rho>1`, has
+divergent averages, uniformly over the starting position of a long time
+window. The S-unit theorem and these density deductions have written proofs;
+they are not included in the Lean declaration count.
+
+### The finite return arithmetic is kernel checked
+
+`Collatz/SegmentFloor.lean` proves, for the actual supplied word `W`, length
+`h`, correction `C`, and initial state `n`,
+
+    M*C + 3^h*n <= 4^h*n
+
+whenever every odd input of that segment is at least `M>0`. Its theorem
+`ratio_forces_return` then proves that
+
+    3^h*n <= Q*C
+
+forces an actual ordinary iterate, at a clock strictly below `total W`,
+to be less than `Q*2^h`. This is the finite return threshold used in the
+written S-unit argument. The Lean result is uniform in the word and all
+its gaps; the deep input supplying `Q` remains explicitly outside Lean.
+
+`Collatz/ArithmeticPrecision.lean` proves at every positive ordinary clock
+of a least bad odd target that
+
+    t*2^(k+v) <= (3*t+1)*C_k,
+
+with the exact odd core reached at the actual later clock `k+v`. This is
+the checked reason the direct whole-identity small-product attempt does
+not supply the needed Diophantine estimate.
+
+`Collatz/AffineBlockPrecision.lean` proves for every actual repeated parity
+block, with multiplier `3^r`, clock `K`, and signed displacement
+`Delta(n)=3^r*n+C-2^K*n`,
+
+    2^(K*j)*|Delta(n_j)| = 3^(r*j)*|Delta(n_0)|.
+
+Thus each repetition consumes exactly `K` dyadic valuation units. Any
+expanding block cannot repeat indefinitely on a positive integer.
+[The termination analysis](LITERATURE_WITNESS_TERMINATION.md) retains the
+remaining changing-block obligation; it does not infer global termination
+from separate countdowns.
+
+### Canonical forcing is finite for newly admissible weights
+
+[Canonical energy](LITERATURE_CANONICAL_ENERGY.md) proves a finite absolute
+edge-variation budget, including killed exits, by summing each original
+charge's exact on-path and side-branch current. It also proves that the
+standard homogeneous sector condition fails on the actual predecessor tree
+of five, even though the symmetrized form on an escaping component is
+recurrent.
+
+Using the new S-unit result, for every `rho>1` and fixed truncation `L`,
+
+    sum min(rho^runs, rho^L)*e_N  ->  rho^L*b_infinity.
+
+For `rho=4^alpha`, `0<alpha<1/40`, the same actual canonical source satisfies
+
+    sum d(n)*rho^runs(n)
+      <= 5*3^(alpha-1)*(1-alpha)*A/(1/40-alpha) < infinity.
+
+This opens an interval of weights that both detect escape and have finite
+forcing. The exact finite-Green identity leaves the multiplication/forward
+transport commutator and weighted boundary drift in equations (45)--(49).
+No uniform upper bound for those terms, no zero-escape conclusion, and no
+exclusion of nontrivial cycles is claimed. The entire canonical analysis
+retains the stated predecessor-population and envelope qualifications.
+
+[Checkpoint-thirteen execution and scope](../../reports/lean-exact-witness-global-20261121/literature-closing/)
+records the three new-module compilations, 32 new public theorems, and
+the expanded axiom audit. The global proposition `FloorIntervalStep` and
+the original residue implication remain unproved.
+
+## Previous checkpoint: the joint minimum and the canonical terminal energy
 
 This continuation starts from published checkpoint eleven at
 `8ef9bf0d828fc533721dee1f90c5d78fac80ad39`. Four peer branches advanced

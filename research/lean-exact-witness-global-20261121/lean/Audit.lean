@@ -296,3 +296,42 @@ import Collatz
 #print axioms CollatzJointMinimalCounterexample.collatz_iff_floor_interval
 #print axioms CollatzJointMinimalCounterexample.original_residue_iff_floor_interval
 #print CollatzJointMinimalCounterexample.FloorIntervalStep
+
+-- Every ordinary clock retains the actual correction and exact odd core.
+#print axioms CollatzArithmeticPrecision.affine_identity
+#print axioms CollatzArithmeticPrecision.first_odd_contribution
+#print axioms CollatzArithmeticPrecision.state_add
+#print axioms CollatzArithmeticPrecision.state_pow_two
+#print axioms CollatzArithmeticPrecision.odd_core_at_later_clock
+#print axioms CollatzArithmeticPrecision.normalized_correction_bound
+#print axioms CollatzArithmeticPrecision.least_bad_odd_core
+#print axioms CollatzArithmeticPrecision.least_bad_precision_bound
+
+-- One arbitrary supplied block loses exact binary precision on repetition.
+#print axioms CollatzAffineBlockPrecision.block_affine
+#print axioms CollatzAffineBlockPrecision.block_orbit
+#print axioms CollatzAffineBlockPrecision.balance_transport
+#print axioms CollatzAffineBlockPrecision.balance_magnitude_transport
+#print axioms CollatzAffineBlockPrecision.repeated_actual_orbit
+#print axioms CollatzAffineBlockPrecision.repeated_balance
+#print axioms CollatzAffineBlockPrecision.repetition_precision
+#print axioms CollatzAffineBlockPrecision.repetition_clock_bound
+#print axioms CollatzAffineBlockPrecision.repetition_exact_precision
+#print axioms CollatzAffineBlockPrecision.no_infinite_repetition
+#print axioms CollatzAffineBlockPrecision.expanding_balance_positive
+#print axioms CollatzAffineBlockPrecision.expanding_no_infinite_repetition
+#print axioms CollatzAffineBlockPrecision.odd_even_odd_balance
+
+-- The finite floor return used by the written S-unit proof is actual.
+-- The S-unit finiteness theorem itself is NOT imported as a Lean axiom.
+#print axioms CollatzSegmentFloor.to_prefix
+#print axioms CollatzSegmentFloor.actual_orbit
+#print axioms CollatzSegmentFloor.of_bounded_orbit_floor
+#print axioms CollatzSegmentFloor.of_orbit_floor
+#print axioms CollatzSegmentFloor.product_bound
+#print axioms CollatzSegmentFloor.correction_product_bound
+#print axioms CollatzSegmentFloor.correction_bound
+#print axioms CollatzSegmentFloor.correction_sharp_bound
+#print axioms CollatzSegmentFloor.correction_forces_floor_failure
+#print axioms CollatzSegmentFloor.actual_return_below_floor
+#print axioms CollatzSegmentFloor.ratio_forces_return

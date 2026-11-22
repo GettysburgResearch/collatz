@@ -507,3 +507,40 @@ potential by itself does not give the proper strict incoming inequality
 required for absorption; the note states and tests that remaining residual
 explicitly. No source-qualified analytic input is inserted into the Lean
 proofs.
+
+## Literature closing pass, 22 November 2026
+
+The owned starting head is `431d858d1ac92e88f4a58f6610c0d67733dc7242`.
+The new read pinned PR175 at `f63204765438c83def68154e7f253ee9b660979c`,
+PR176 at `5cb67181758186b372944ef60a1bd09416b97f89`, PR178 at
+`23456d145df23ef2b412f61f7e49e38a222bc2b1`, PR180 at
+`a9f471543d7fed0a76f348e6d97a9d6d44fa369e`, and PR185 at
+`4b0c2c27812db555061f5d9006de82a87e7e364f`. PR182 and PR183 were
+unchanged at the preceding pins. The separate literature guide was inspected
+at `1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493`; its candidate applications
+were treated as proposals, not closing theorems. Exact inspected paths are
+in the new literature-closing report's `SOURCES.json`.
+
+The central mathematical addition is
+[the S-unit return argument](LITERATURE_ARITHMETIC_RETURN.md). It uses the
+published Evertse--Schlickewei--Schmidt finiteness theorem on exact signed
+endpoint identities to obtain one finite exceptional separation set for
+each run bound. The correction may have arbitrary actual valuation gaps.
+Every other fixed separation forces a visit to a finite core. Consequently
+bounded-run times on an escaping odd orbit have upper Banach density zero.
+This is a written theorem using a published deep input; it is not counted
+as a new Lean declaration.
+
+The resulting [canonical energy continuation](LITERATURE_CANONICAL_ENERGY.md)
+detects escape with every exponential run weight, including the interval
+`1<rho<4^(1/40)` with finite actual canonical forcing. It keeps the unresolved
+transport commutator and all prior analytic source qualifications. The
+[termination continuation](LITERATURE_WITNESS_TERMINATION.md) proves exact
+dyadic valuation loss for an arbitrary repeated supplied block while
+retaining the unsolved changing-block obligation.
+
+Three new Lean modules check the finite floor-return threshold, the full
+ordinary-clock correction bound, and the repeated-block precision theorem.
+No external S-unit, recurrence, or universal termination theorem is added
+as a custom Lean axiom. Neither the original residue implication nor
+`FloorIntervalStep` is claimed proved.

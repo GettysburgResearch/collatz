@@ -37,3 +37,6 @@ import Collatz.NegativeShadow
 import Collatz.SourceOrbitProgress
 import Collatz.RootedSourceFloor
 import Collatz.JointMinimalCounterexample
+import Collatz.ArithmeticPrecision
+import Collatz.AffineBlockPrecision
+import Collatz.SegmentFloor
