@@ -1,5 +1,10 @@
 # Literature-guided attempts to close the forced-band argument
 
+The next [literature-guided continuation](../profound-step-20261122/README.md)
+adds independent-exponent cycle classification, exact ordinary spectral
+residues, and an arbitrary-debt carry calculus. This earlier packet and its
+69-theorem replay remain preserved at their own evidence boundary.
+
 **Full Collatz theorem: OPEN.** This checkpoint develops three global closing
 mechanisms from the current dyadic-band work and the primary literature. It
 adds exact source-preserving renewal identities, a quantitative recurrence

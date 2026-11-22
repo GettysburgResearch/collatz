@@ -1,0 +1,22 @@
+[
+  {
+    "name": "WitnessGlobal",
+    "pr": 185,
+    "commit": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+    "blob": "477c5e6d907775e06ab78f4b491e5b76a88d6549",
+    "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+    "wrapper_sha256": "a53de03d2e7c3af6ad0a6c9665ee48215e7642e027f8f7e9afb4e0b380cfbdd2",
+    "transformation": "Insert module; make initial import declarations public; insert @[expose] public section. No body edits."
+  },
+  {
+    "name": "WitnessSynthesis",
+    "pr": 185,
+    "commit": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+    "blob": "17d0995a62860c1bc5fcbc51e0cfcaf39fe354f9",
+    "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+    "wrapper_sha256": "ddc15c0095c56b4e44463427f8413a5fa48790e2218b671b576aa635c4b4c4eb",
+    "transformation": "Insert module; make initial import declarations public; insert @[expose] public section. No body edits."
+  }
+]

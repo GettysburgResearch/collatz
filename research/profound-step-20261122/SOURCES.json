@@ -1,0 +1,97 @@
+{
+  "schema": "collatz-profound-source-snapshot/v1",
+  "date": "2026-11-22",
+  "repository": "GettysburgResearch/collatz",
+  "own_pr": 183,
+  "own_parent": "907a540943090968bc683b1b9246208e9053c1f8",
+  "accepted_main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "Metadata and selected source inspection at these frozen heads; not an independent audit or acceptance upgrade for every PR.",
+  "selected_prs": [
+    {
+      "pr": 185,
+      "sha": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "title": "Collatz: effective cycle schemas, ordinary harmonic flow, and literal-tail carry rules",
+      "updated": "2026-11-22T00:15:02Z"
+    },
+    {
+      "pr": 182,
+      "sha": "45354128f890fb479f6c23b547368bcddd9cebe6",
+      "title": "Lean: affine rigidity, sharp certificate bounds, and ordinary Fourier bridge",
+      "updated": "2026-11-22T00:12:05Z"
+    },
+    {
+      "pr": 176,
+      "sha": "8aeb843bba254f065743b6fa277a70906b51d520",
+      "title": "Lean: parallel contact capture and exact source envelopes",
+      "updated": "2026-11-22T00:10:11Z"
+    },
+    {
+      "pr": 178,
+      "sha": "be5696cc45a95ad1903802b08ba1dc3ebba66930",
+      "title": "Lean: literature-led Collatz renewal, source budgets, and mergers",
+      "updated": "2026-11-21T23:27:33Z"
+    },
+    {
+      "pr": 180,
+      "sha": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "title": "Collatz: Lean witness transport, uniform marked visits, and canonical potentials",
+      "updated": "2026-11-21T23:17:21Z"
+    },
+    {
+      "pr": 175,
+      "sha": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+      "title": "Collatz: Lean inverse completeness and global canonical-potential bounds",
+      "updated": "2026-11-21T23:11:09Z"
+    },
+    {
+      "pr": 186,
+      "sha": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "updated": "2026-11-21T22:51:35Z"
+    },
+    {
+      "pr": 177,
+      "sha": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+      "title": "Lean: alphabet-four reduction and parallel witness attacks (global cover open)",
+      "updated": "2026-11-21T22:38:20Z"
+    }
+  ],
+  "exact_imports": [
+    {
+      "pr": 185,
+      "sha": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "use": "Ordinary bounded harmonic reference, with all stated population/envelope hypotheses retained; written source-qualified input."
+    },
+    {
+      "pr": 185,
+      "sha": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "path": "research/whole-repo-closure-20261122/EFFECTIVE_FIXED_BLOCK_CYCLES.md",
+      "use": "One-parameter comparison; free-exponent proof is reconstructed independently."
+    },
+    {
+      "pr": 185,
+      "sha": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+      "use": "Byte-exact imported finite ordinary trace definitions/lemmas, separately compiled with export header only."
+    },
+    {
+      "pr": 185,
+      "sha": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "use": "Byte-exact common grade and induction interfaces, separately compiled with export header only."
+    },
+    {
+      "pr": 186,
+      "sha": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/README.md",
+      "use": "Research guidance and primary literature leads; not a theorem premise."
+    }
+  ],
+  "literature_bibliographies": [
+    "arithmetic/SOURCES.md",
+    "transport/SOURCES.md",
+    "operator/WOLD_CHANNELS.md",
+    "mergers/ARBITRARY_DEBT.md"
+  ]
+}

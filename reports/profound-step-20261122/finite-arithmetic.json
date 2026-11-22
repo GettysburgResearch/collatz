@@ -1,0 +1,205 @@
+{
+  "checker_sha256": "536a205d182dde141b7e74d892075b9d9bddb50c4b692ad45b506fdc9a395d21",
+  "composed_actual_gap_steps": 7547,
+  "global_collatz_proved": false,
+  "one_gap_instances": 39935,
+  "ordinary_ghost_families": [
+    {
+      "k": 1,
+      "ordinary_clocks": 15,
+      "source_bits": 16,
+      "ternary_exponent": 6
+    },
+    {
+      "k": 2,
+      "ordinary_clocks": 30,
+      "source_bits": 32,
+      "ternary_exponent": 10
+    },
+    {
+      "k": 3,
+      "ordinary_clocks": 45,
+      "source_bits": 48,
+      "ternary_exponent": 14
+    },
+    {
+      "k": 4,
+      "ordinary_clocks": 60,
+      "source_bits": 64,
+      "ternary_exponent": 18
+    },
+    {
+      "k": 5,
+      "ordinary_clocks": 75,
+      "source_bits": 80,
+      "ternary_exponent": 22
+    },
+    {
+      "k": 6,
+      "ordinary_clocks": 90,
+      "source_bits": 96,
+      "ternary_exponent": 26
+    },
+    {
+      "k": 7,
+      "ordinary_clocks": 105,
+      "source_bits": 112,
+      "ternary_exponent": 30
+    },
+    {
+      "k": 8,
+      "ordinary_clocks": 120,
+      "source_bits": 128,
+      "ternary_exponent": 34
+    },
+    {
+      "k": 9,
+      "ordinary_clocks": 135,
+      "source_bits": 144,
+      "ternary_exponent": 38
+    },
+    {
+      "k": 10,
+      "ordinary_clocks": 150,
+      "source_bits": 160,
+      "ternary_exponent": 42
+    },
+    {
+      "k": 11,
+      "ordinary_clocks": 165,
+      "source_bits": 176,
+      "ternary_exponent": 46
+    },
+    {
+      "k": 12,
+      "ordinary_clocks": 180,
+      "source_bits": 192,
+      "ternary_exponent": 50
+    },
+    {
+      "k": 13,
+      "ordinary_clocks": 195,
+      "source_bits": 208,
+      "ternary_exponent": 54
+    },
+    {
+      "k": 14,
+      "ordinary_clocks": 210,
+      "source_bits": 224,
+      "ternary_exponent": 58
+    },
+    {
+      "k": 15,
+      "ordinary_clocks": 225,
+      "source_bits": 240,
+      "ternary_exponent": 62
+    },
+    {
+      "k": 16,
+      "ordinary_clocks": 240,
+      "source_bits": 256,
+      "ternary_exponent": 66
+    },
+    {
+      "k": 17,
+      "ordinary_clocks": 255,
+      "source_bits": 272,
+      "ternary_exponent": 70
+    },
+    {
+      "k": 18,
+      "ordinary_clocks": 270,
+      "source_bits": 288,
+      "ternary_exponent": 74
+    },
+    {
+      "k": 19,
+      "ordinary_clocks": 285,
+      "source_bits": 304,
+      "ternary_exponent": 78
+    },
+    {
+      "k": 20,
+      "ordinary_clocks": 300,
+      "source_bits": 320,
+      "ternary_exponent": 82
+    },
+    {
+      "k": 21,
+      "ordinary_clocks": 315,
+      "source_bits": 336,
+      "ternary_exponent": 86
+    },
+    {
+      "k": 22,
+      "ordinary_clocks": 330,
+      "source_bits": 352,
+      "ternary_exponent": 90
+    },
+    {
+      "k": 23,
+      "ordinary_clocks": 345,
+      "source_bits": 368,
+      "ternary_exponent": 94
+    },
+    {
+      "k": 24,
+      "ordinary_clocks": 360,
+      "source_bits": 384,
+      "ternary_exponent": 98
+    },
+    {
+      "k": 25,
+      "ordinary_clocks": 375,
+      "source_bits": 400,
+      "ternary_exponent": 102
+    },
+    {
+      "k": 26,
+      "ordinary_clocks": 390,
+      "source_bits": 416,
+      "ternary_exponent": 106
+    },
+    {
+      "k": 27,
+      "ordinary_clocks": 405,
+      "source_bits": 432,
+      "ternary_exponent": 110
+    },
+    {
+      "k": 28,
+      "ordinary_clocks": 420,
+      "source_bits": 448,
+      "ternary_exponent": 114
+    },
+    {
+      "k": 29,
+      "ordinary_clocks": 435,
+      "source_bits": 464,
+      "ternary_exponent": 118
+    },
+    {
+      "k": 30,
+      "ordinary_clocks": 450,
+      "source_bits": 480,
+      "ternary_exponent": 122
+    },
+    {
+      "k": 31,
+      "ordinary_clocks": 465,
+      "source_bits": 496,
+      "ternary_exponent": 126
+    },
+    {
+      "k": 32,
+      "ordinary_clocks": 480,
+      "source_bits": 512,
+      "ternary_exponent": 130
+    }
+  ],
+  "scope": "finite exact ordinary regressions; no universal convergence claim",
+  "shorter_language_max_source_bits": 28,
+  "shorter_language_words": 511,
+  "status": "PASSED",
+  "zero_exponent_captures_in_bounded_sample": 285
+}
