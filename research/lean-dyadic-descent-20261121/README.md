@@ -1,4 +1,4 @@
-# Finite coefficient escape and descent in the forced dyadic section
+# Forced-band descent, coefficient escape, and invariant labels
 
 **Full Collatz remains OPEN.** This packet builds on PR173 at
 `fa0c9e2a2851e6324391e39c17afcb5913185aec` and proves unbounded families of
@@ -16,6 +16,56 @@ For `d = floor(log₂ n)`, PR173 marks the odd integers satisfying
 positive marked-return map `R` total. Its `collatz_iff_return_descent` says
 that full Collatz is equivalent to eventual strict descent under `R` for
 **every** marked input above one. These are imported results, not new claims.
+
+## Literature continuation: the ordinary-label bridge
+
+The [new synthesis](LITERATURE_SYNTHESIS.md) connects the literature to the
+remaining ordinary-source obligations. Its strongest positive result is a
+source-qualified written rigidity theorem, separate from the Lean modules:
+every bounded label satisfying `f(Tn)=f(n)` has logarithmic cancellation
+against each fixed nonconstant real exponential. A nonconstant Boolean
+label stays one fixed positive distance from every trigonometric-polynomial
+approximation, uniformly over all real frequencies. Thus qualitative
+Besicovitch almost-periodicity of the basin-of-one indicator would force
+full convergence under the retained analytic inputs. Such approximations
+have not been constructed.
+
+[LITERATURE_RIGIDITY_BRIDGE.md](LITERATURE_RIGIDITY_BRIDGE.md) gives the full
+proof through a compact affine system, exact ordinary branch changes, and
+the earlier stationary-density FLOOR and logarithmic-population LOG inputs.
+It does not use the newer joint-clock natural-density claim, does not claim
+existence of the label's logarithmic mean, and does not evaluate an arbitrary
+almost-everywhere stationary density at ordinary integers. Its explicit
+zero-entropy control shows why low complexity and approximate invariance
+alone cannot supply the missing almost-periodic regularity.
+
+[AffineRigidity.lean](AffineRigidity.lean) checks the finite harmonic,
+algebraic translation and continuous-density interfaces used by that
+argument. It keeps genuine group division and all topological hypotheses;
+it does not formalize the entire measure-theoretic proof.
+
+The certificate attack yields a sharp structural obstruction in
+[LiteratureCertificate.lean](LiteratureCertificate.lean): for supplied
+complete tails rooted at `729j+7`, every smaller-rank child retaining that
+tail, with arbitrary prefix length and initial even run, has source
+`S'<=13824j+130` while the parent is `S=15552j+148`. The sharp comparison is
+`9S'+14<=8S`. An explicit unbounded fully certified family also defeats
+every fixed direct forward-lookahead budget for this suffix-preserving
+strategy. Its large-gap suffix, changing source/target, and distinction from
+asymmetric mergers are stated in the
+[complete scope note](LITERATURE_CERTIFICATE_BRIDGE.md).
+
+The [coefficient literature audit](LITERATURE_COEFFICIENT_BRIDGE.md) records
+which candidate estimates were already known and why their density-one
+quantifiers do not prove a pointwise stopping theorem. The
+[late source ledger](LITERATURE_SOURCES.json) reconciles the branches updated
+after the preceding whole-repository snapshot without extending any review
+verdict to an unread claim.
+
+Use [replay_literature.py](replay_literature.py) for a fresh build of the
+three pinned prerequisites, both new modules and their complete public
+statement audit. Actual execution and written-review scopes are in the
+[literature-round report](../../reports/2026-11-21-dyadic-descent/literature/README.md).
 
 ## Whole-repository reassessment: finite counts and complete certificates
 
@@ -87,7 +137,7 @@ the two pinned inputs, all three new modules and their complete public
 theorem audit. The [reassessment report](../../reports/2026-11-21-dyadic-descent/reassessment/README.md)
 records the actual checks separately from the preceding continuation.
 
-## Latest continuation: three attacks on universal coverage
+## Earlier continuation: three attacks on universal coverage
 
 The continuation develops three separate routes, with their actual ordinary
 sources and their remaining coverage obligations kept explicit. The detailed

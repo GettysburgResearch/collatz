@@ -1,0 +1,194 @@
+{
+  "scope": "All26 public statements in the two literature-round Lean modules; written analytic results are outside this audit.",
+  "success": true,
+  "audit": [
+    {
+      "declaration": "CollatzShell.AffineRigidity.finite_harmonic_invariant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.affine_surjective",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.adjacent_affine_values",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.translation_invariant",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.translate_nsmul",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.cyclic_affine_constant",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.finite_cyclic_harmonic_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.continuous_affine_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.shortcut_to_affine",
+      "axioms": [
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.shortcut_translation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.continuous_shortcut_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.AffineRigidity.finite_shortcut_harmonic_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.certificate_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.prefix_of_shared_suffix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.rank_cancel_suffix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.lower_rank_alphabet",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.lower_three_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.one_four_prefix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.same_tail_source_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.same_tail_bound_attained",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.proportional_source_loss",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.no_same_tail_source_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.certified_family_root",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.family_index_unbounded",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.unbounded_certified_obstruction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.LiteratureCertificate.no_uniform_forward_lookahead",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
