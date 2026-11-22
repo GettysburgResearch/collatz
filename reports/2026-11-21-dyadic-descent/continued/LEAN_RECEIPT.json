@@ -1,0 +1,99 @@
+{
+  "scope": "Fresh two-module Lean replay and all new public theorem axiom audits; full Collatz remains open",
+  "started_utc": "2026-11-22T05:17:16.534386+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_clean": true,
+  "source_sha256": {
+    "research/lean-dyadic-descent-20261121/PolynomialLift.lean": "e487984361d2f5f613e3683a311e38231a9dfb1afd01a72e22e4e0a3466c1ac8",
+    "research/lean-dyadic-descent-20261121/HarmonicCapture.lean": "e85184f7a9bf33f82bbcc0ab36a45052252050d50682ee45caa10004f4e26bc8"
+  },
+  "runner_sha256": "5612c2f0d17513fcfe128a8342aec3797ba48fa0a477745ebd7528b8277f4797",
+  "audited_declarations": [
+    "CollatzShell.PolynomialLift.affine_comp",
+    "CollatzShell.PolynomialLift.lift_comp",
+    "CollatzShell.PolynomialLift.lift_identity",
+    "CollatzShell.PolynomialLift.lift_inverse",
+    "CollatzShell.PolynomialLift.lift_surjective",
+    "CollatzShell.PolynomialLift.lift_evaluation",
+    "CollatzShell.PolynomialLift.lift_constant",
+    "CollatzShell.PolynomialLift.lift_monomial",
+    "CollatzShell.PolynomialLift.shortcut_commutator",
+    "CollatzShell.PolynomialLift.quarter_translation_four",
+    "CollatzShell.PolynomialLift.shortcut_quarter_invariant",
+    "CollatzShell.PolynomialLift.shortcut_unit_invariant",
+    "CollatzShell.HarmonicCapture.canonical_seed_identity",
+    "CollatzShell.HarmonicCapture.canonical_seed_bounds",
+    "CollatzShell.HarmonicCapture.green_telescope",
+    "CollatzShell.HarmonicCapture.green_with_time_zero",
+    "CollatzShell.HarmonicCapture.finite_seed_green_bounds",
+    "CollatzShell.HarmonicCapture.immigration_hasSum",
+    "CollatzShell.HarmonicCapture.canonical_green_bounds",
+    "CollatzShell.HarmonicCapture.normalized_green_bound",
+    "CollatzShell.HarmonicCapture.finite_collision_green_bound",
+    "CollatzShell.HarmonicCapture.collision_green_summable"
+  ],
+  "commands": [
+    {
+      "source": "research/lean-dyadic-descent-20261121/PolynomialLift.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-continued-verified/PolynomialLift.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/PolynomialLift.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.602,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "research/lean-dyadic-descent-20261121/HarmonicCapture.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-continued-verified/HarmonicCapture.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/lean-dyadic-descent-20261121/HarmonicCapture.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.589,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "/workspace/scratch/3f23e1a583aa/lean-continued-verified/ContinuedAudit.lean",
+      "argv": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/lean-continued-verified",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/lean-continued-verified/ContinuedAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/lean-continued-verified/ContinuedAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.486,
+      "stdout": "'CollatzShell.PolynomialLift.affine_comp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_comp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_constant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.lift_monomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.shortcut_commutator' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.quarter_translation_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.shortcut_quarter_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PolynomialLift.shortcut_unit_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.canonical_seed_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.canonical_seed_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.green_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.green_with_time_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.finite_seed_green_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.immigration_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.canonical_green_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.normalized_green_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.finite_collision_green_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.HarmonicCapture.collision_green_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true,
+  "axiom_audit_complete": true,
+  "sources_unchanged": true,
+  "finished_utc": "2026-11-22T05:17:31.212806+00:00"
+}

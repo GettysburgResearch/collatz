@@ -1,0 +1,30 @@
+{
+  "scope": "Targeted fresh PR metadata and relevant source-level continuation; not a new whole-repository proof audit.",
+  "own_parent": "45354128f890fb479f6c23b547368bcddd9cebe6",
+  "new_upstream": [
+    {
+      "number": 176,
+      "head": "8aeb843bba254f065743b6fa277a70906b51d520",
+      "title": "Lean: parallel contact capture and exact source envelopes",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "updated": "2026-11-22T00:10:11Z"
+    },
+    {
+      "number": 185,
+      "head": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "title": "Collatz: effective cycle schemas, ordinary harmonic flow, and literal-tail carry rules",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "updated": "2026-11-22T00:15:02Z"
+    }
+  ],
+  "retained_analytic_input_note": {
+    "path": "LITERATURE_RIGIDITY_BRIDGE.md",
+    "sha256": "b31fd7aaa0d911eeda02345604ccc8d96661672a37cf45faf057f481f7cdce81"
+  },
+  "ordinary_harmonic_source": {
+    "pr": 185,
+    "head": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+    "blob": "9b8ed17476a6c133f3bb3710c4fe1d5de8d5a1f1"
+  }
+}

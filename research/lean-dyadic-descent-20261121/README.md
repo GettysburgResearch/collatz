@@ -17,12 +17,50 @@ positive marked-return map `R` total. Its `collatz_iff_return_descent` says
 that full Collatz is equivalent to eventual strict descent under `R` for
 **every** marked input above one. These are imported results, not new claims.
 
-## Literature continuation: the ordinary-label bridge
+## Continued attacks: polynomial rigidity and canonical-source occupation
+
+The [continued synthesis](CONTINUED_SYNTHESIS.md) builds on the published
+literature checkpoint and the newly refreshed PR176/PR185 sources. It adds
+two positive written deductions and 22 audited Lean interface statements.
+
+[INVARIANT_CORRELATION.md](INVARIANT_CORRELATION.md) extends ordinary-label
+decorrelation to every fixed real polynomial phase, with correct centering
+for rational phases. One positive approximation gap works over all finite
+degrees and coefficients. The polynomial-phase Besicovitch class is strictly
+larger than the earlier linear class; membership of an actual basin remains
+unproved. An explicit zero-entropy control now satisfies doubling exactly,
+while its averaged shortcut defect vanishes and its distance from every
+`[0,1]`-valued model with an ordinary mean remains one half.
+
+[HARMONIC_CAPTURE_BRIDGE.md](HARMONIC_CAPTURE_BRIDGE.md) computes the entire
+Green potential of the unchanged canonical source seed under actual
+ordinary transport, including time zero and source collisions. It gives a
+normalized occupation bound and a summable weighted space-time collision
+budget. The spatial weight and the whole-predecessor floor are retained;
+neither moving-root contact timing nor unweighted absorption is inferred.
+
+[CANONICAL_ESCAPE_LABEL.md](CANONICAL_ESCAPE_LABEL.md) joins the two lanes:
+the harmonic construction gives a bounded ordinary invariant label positive
+on escapes and zero on eventual cycles. The polynomial gap extends to any
+bounded complex invariant label, so polynomial-phase approximation of this
+specific function would exclude escapes. Its approximation remains unproved;
+nontrivial cycles remain a separate obligation.
+
+[PolynomialLift.lean](PolynomialLift.lean) checks the all-degree affine
+substitution and commutator interface. [HarmonicCapture.lean](HarmonicCapture.lean)
+checks the seed identity, finite and infinite Green bounds, and collision
+series core under explicit hypotheses. The measurable and actual-kernel
+applications remain separately reviewed written mathematics. Use
+[replay_continued.py](replay_continued.py) for their fresh build and complete
+public-theorem audit; actual evidence is in the
+[continued report](../../reports/2026-11-21-dyadic-descent/continued/README.md).
+
+## Earlier literature continuation: the ordinary-label bridge
 
 The [new synthesis](LITERATURE_SYNTHESIS.md) connects the literature to the
 remaining ordinary-source obligations. Its strongest positive result is a
 source-qualified written rigidity theorem, separate from the Lean modules:
-every bounded label satisfying `f(Tn)=f(n)` has logarithmic cancellation
+every ordinary Boolean label satisfying `f(Tn)=f(n)` has logarithmic cancellation
 against each fixed nonconstant real exponential. A nonconstant Boolean
 label stays one fixed positive distance from every trigonometric-polynomial
 approximation, uniformly over all real frequencies. Thus qualitative
