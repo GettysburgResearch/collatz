@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "profile_identity_controls": [
+    {
+      "m": 2,
+      "n": 3,
+      "A": 60,
+      "p": 36,
+      "polynomial_residual_degree": 24,
+      "polynomial_residual_denominator": 1203121300255,
+      "reduced_rational_denominator": 1203121300255
+    },
+    {
+      "m": 3,
+      "n": 4,
+      "A": 120,
+      "p": 72,
+      "polynomial_residual_degree": 36,
+      "polynomial_residual_denominator": 1900952107465004335,
+      "reduced_rational_denominator": 1900952107465004335
+    }
+  ],
+  "norm_control": {
+    "A": 13,
+    "p": 8,
+    "D": 1631,
+    "C": 7553,
+    "polynomial_gcd": 1,
+    "sylvester_dimension": 15,
+    "resultant": -897303938959785591522197504,
+    "resultant_factorization": "-2^71 * 7 * 233^2",
+    "full_denominator_divides_resultant": true,
+    "evaluation_gcd": 7,
+    "Q3_mod233": 97,
+    "cyclic_rotation_identities_checked": 13
+  },
+  "damaged_controls_rejected": 1,
+  "scope": "Exact controls of two structural norm obstructions; no cycle census and no unrestricted cycle exclusion."
+}

@@ -1,0 +1,8 @@
+'CollatzCanonicalRetracing.sum_increments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.capacity_ratio_failure_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.window_capacity_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.retracing_failure_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.retracing_failure_mean_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.tail_retracing_failure_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.linear_window_failure_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCanonicalRetracing.uniform_shift_failure_mean_le' depends on axioms: [propext, Classical.choice, Quot.sound]
