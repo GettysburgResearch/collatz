@@ -1,0 +1,46 @@
+{
+  "alphabet_four_signed_cycle": {
+    "regime": "contracting",
+    "cutoff": 24,
+    "identities": []
+  },
+  "trivial_cycle_identity": {
+    "regime": "contracting",
+    "cutoff": 2,
+    "identities": [
+      1
+    ]
+  },
+  "nontrivial_rotation_identity": {
+    "regime": "contracting",
+    "cutoff": 2,
+    "identities": [
+      2
+    ]
+  },
+  "expanding_finite_cycle": {
+    "regime": "expanding",
+    "cutoff": 1,
+    "identities": []
+  },
+  "constant_trivial_cycle": {
+    "regime": "constant",
+    "cutoff": null,
+    "identities": []
+  },
+  "contracting_no_odd_steps": {
+    "regime": "contracting",
+    "cutoff": 1,
+    "identities": []
+  },
+  "all_empty_constant": {
+    "regime": "constant",
+    "cutoff": null,
+    "identities": []
+  },
+  "unequal_growth_with_offsets": {
+    "regime": "contracting",
+    "cutoff": 2,
+    "identities": []
+  }
+}

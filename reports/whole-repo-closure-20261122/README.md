@@ -30,10 +30,41 @@ port patch; the original vendor proof sources are included unchanged.
 
 ## Combined replay on the published checkpoint
 
-The initial science checkpoint contains the complete fresh-replay driver.
-The combined published-checkout receipt will be appended in a separate
-reports-only checkpoint after execution; the individual receipts above do
-not stand in for that execution.
+**PASS on the actual published mathematical commit**
+`54af6f804ed432573762f1fe3d08e9909e1f5e47`, tree
+`1d83b3ccc09957412767083ba4470013111a933f`.
+
+The fresh replay ran from **00:11:47 to 00:12:24 UTC on 22 November 2026**
+in a clean, complete detached checkout with 439 tracked files. It compiled
+five modules: the three required imports `ShellCover`, `WitnessGlobal`, and
+`WitnessSynthesis`, followed by the two new modules `CarryLanguage` and
+`FixedBlockDenominator`. All **23 new public theorem audits** passed under
+the axiom allowlist above. The four private carry helpers are included
+through the public theorem dependency closures, not counted as additional
+public audits.
+
+The independent certificate checker accepted all eight supplied schemas and
+rejected all eight deliberately corrupted certificates, both under ordinary
+Python and under `python -O`. Regeneration matched the committed certificate
+bytes exactly. All five default repository validation commands passed.
+The checkout remained clean and all 19 recorded input hashes remained
+unchanged.
+
+- [Complete published replay receipt](published1-complete-replay.json).
+- [Actual command logs](published1-logs/), including the
+  [carry audit](published1-logs/10-CarryLanguage.log),
+  [cycle audit](published1-logs/11-FixedBlockDenominator.log), and
+  [repository gate](published1-logs/15-repository-validation.log).
+- [Exact generated module-header differences](published1-module-port.patch).
+- [Source continuity](published-source-continuity.json): all 19 new replay
+  inputs and all 39 inputs from the preceding published replay retain their
+  checked hashes. This evidence is appended in a reports-only checkpoint.
+
+The pre-publication integration review caught and corrected an overly broad
+cache sentinel in the new driver. The driver now checks the required
+`Mathlib/Tactic/IntervalCases.olean`, rather than requiring an unused
+top-level `Mathlib.olean`. The actual published replay above passed on its
+first execution; no unsuccessful compiler attempt is hidden by this report.
 
 From a clean, complete checkout, with the pinned built Mathlib revision
 `d13f23b723b8a846827a245b89c10fc7d3f11612`:

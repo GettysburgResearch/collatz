@@ -1,0 +1,66 @@
+{
+  "success": true,
+  "certificate_sha256": "cb7122b2e0f4bd75ef9aa7501de6272564e879d017492cbb4a5e41dd6b05c8f7",
+  "results": {
+    "alphabet_four_signed_cycle": {
+      "regime": "contracting",
+      "finite_cases": 24,
+      "candidates": 168,
+      "tail_identities": []
+    },
+    "trivial_cycle_identity": {
+      "regime": "contracting",
+      "finite_cases": 2,
+      "candidates": 3,
+      "tail_identities": [
+        1
+      ]
+    },
+    "nontrivial_rotation_identity": {
+      "regime": "contracting",
+      "finite_cases": 2,
+      "candidates": 13,
+      "tail_identities": [
+        2
+      ]
+    },
+    "expanding_finite_cycle": {
+      "regime": "expanding",
+      "finite_cases": 1,
+      "candidates": 0
+    },
+    "constant_trivial_cycle": {
+      "regime": "constant",
+      "finite_cases": 1,
+      "candidates": 0
+    },
+    "contracting_no_odd_steps": {
+      "regime": "contracting",
+      "finite_cases": 1,
+      "candidates": 0,
+      "tail_identities": []
+    },
+    "all_empty_constant": {
+      "regime": "constant",
+      "finite_cases": 1,
+      "candidates": 0
+    },
+    "unequal_growth_with_offsets": {
+      "regime": "contracting",
+      "finite_cases": 2,
+      "candidates": 21,
+      "tail_identities": []
+    }
+  },
+  "scope": "complete parameter classification for the supplied fixed block schemas; no universal Collatz conclusion",
+  "invalid_certificates_rejected": [
+    "wrong total slope",
+    "wrong candidate bound",
+    "omitted integer candidate",
+    "missing finite parameter",
+    "false cycle quotient",
+    "altered leading coefficient",
+    "uncontrolled rotated suffix",
+    "false identity physical boundary"
+  ]
+}
