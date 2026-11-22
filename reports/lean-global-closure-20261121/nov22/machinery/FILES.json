@@ -1,0 +1,125 @@
+{
+  "scope": "All new packet files except this self-manifest. No generated proof objects are committed.",
+  "files": [
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/REVIEW_BOUNDED_LANGUAGE_SOURCE_RIGIDITY.md",
+      "sha256": "ba584fcb2ebf99522e215c66850b59a3bb159a48750f8c9dc54ae90ab8c50e4a",
+      "bytes": 2982
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/REVIEW_EXACT_RUN_WEIGHT_COMMUTATOR.md",
+      "sha256": "10358beb31b79947086b5a4a7b8f45025c01d67c30f8edd22822b0c6e68044ce",
+      "bytes": 4353
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/REVIEW_FIXED_BLOCK_INTEGRAL_RIGIDITY.md",
+      "sha256": "9f06986ba4b2040bc6180ec28bbbc6c56480bc26f9d576a5e57491759a83e316",
+      "bytes": 4929
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/REVIEW_MOVING_CESARO_FIBRES.md",
+      "sha256": "b659b9e7760bdedbe19ea05ad9cb981bb09254dd207d811ce1ca1e280215006b",
+      "bytes": 9061
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/REVIEW_REGULAR_LANGUAGE_EXTENSION.md",
+      "sha256": "ee45fe42c3e7e33ac1df6991d2e7038aa8a1aa68d514c3b064688445bc5adda8",
+      "bytes": 2291
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/REVIEW_TILTED_RENEWAL_FINITE_IMMIGRATION.md",
+      "sha256": "58e88a17b91439ab9272b06559ddba3b73c84d5660c8eab0867ee19b76b7e1e7",
+      "bytes": 2259
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/SOURCES.json",
+      "sha256": "d838c58dcdc18c7ca152ead63350580597a89fc0bd2e3e9dedc43d32fc6fcbe6",
+      "bytes": 10352
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/VALIDATION.md",
+      "sha256": "c3c5ab3c353c99f9a7aa4b1e77d7e4095338892bc85dbb4bb53f51d047d0778e",
+      "bytes": 5046
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/block-compiler-controls.json",
+      "sha256": "62172df1f2e5a015f872207cbff8aa4af7d8cccd6d56c5a9d88484719dda94c9",
+      "bytes": 1492
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/bounded-language-import-closure.txt",
+      "sha256": "3ae127e51528fc785c4af3bf8aa5df562ce6eb505da0f2af808182c1b52eec12",
+      "bytes": 66989
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/legacy-identity.json",
+      "sha256": "f7a27277daab05ca3e0d77d05884b27d49305a869b314ad40a389263ea941412",
+      "bytes": 4447
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov22/machinery/source-build.json",
+      "sha256": "2d1281dbe3d3cf76503ace0b54039d2cc52cb1ed32fa292a3b282195b87854a1",
+      "bytes": 8772
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/ADAPTIVE_SIBLING_AND_HARNACK_ATTEMPT.md",
+      "sha256": "b74aede354f5f5590f6a946da0027afc46e3661cd32286a6a227e461dd9febc6",
+      "bytes": 11503
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/BOUNDED_LANGUAGE_SOURCE_RIGIDITY.md",
+      "sha256": "63af23e8fa3594d6e1355dcc35a9d3bea52040528f37891b5420a2706f7a52d8",
+      "bytes": 10545
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/BoundedLanguage.lean",
+      "sha256": "1231fdb21ba49c0d191a1fc4d54d0afa0697ea09093c9cbdcf8ebaae18ceded6",
+      "bytes": 8946
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/BoundedLanguageAudit.lean",
+      "sha256": "a3677f8bb7e6b7f77fdec3f6b6ec966aae82764fe9b4c8118da12dd662310008",
+      "bytes": 1105
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/EXACT_RUN_WEIGHT_COMMUTATOR.md",
+      "sha256": "521ed021ebfa0f010c9881e2ec40fb2603438547c383a0ff8bd6762fbc8be6b7",
+      "bytes": 11032
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/FIXED_BLOCK_INTEGRAL_RIGIDITY.md",
+      "sha256": "0fd4f41c6df82dc467c2295ecdadb0fa7fe9095ac945a9ff49142e954b76c9a4",
+      "bytes": 13364
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md",
+      "sha256": "dd959aa34c35773d20642582d0aeb7c25d2d1eee65bc969b9a35a22304cd4be5",
+      "bytes": 20115
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/README.md",
+      "sha256": "2b877071ce4850d10ca690a5845065233aa3e2e0d8aa8bff528a28ac2eabbb3a",
+      "bytes": 10145
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/REGULAR_CYCLE_LANGUAGE_COROLLARY.md",
+      "sha256": "7da8c806289ddba3a2d564853ea4072a17d78ac462926095fccc148c9bada2ac",
+      "bytes": 2091
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/TILTED_RENEWAL_FINITE_IMMIGRATION.md",
+      "sha256": "fa0c72ac7e35aa2defd0b970461acc7908f170cfe231463bbc37c87660a69551",
+      "bytes": 11226
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/build_bounded_language.py",
+      "sha256": "597fb562aa9b1d25e161d7c5707a6d717021a14847fd9a3e8552378f421ecd22",
+      "bytes": 6316
+    },
+    {
+      "path": "research/lean-global-closure-20261121/machinery/check_block_compiler.py",
+      "sha256": "1cc1e294944b6668d369eb9c2c935a61a8bfaa25b88b84ace71027ed5b7ed74c",
+      "bytes": 4345
+    }
+  ]
+}

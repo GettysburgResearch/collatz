@@ -10,6 +10,19 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### Parallel machinery attacks — 22 November 2026
+
+The [machinery continuation](machinery/README.md) adds three substantive
+deductions and a new, separately built Lean arithmetic module. It proves a
+uniform moving ordinary-fibre comparison from pinned trace/contact inputs,
+evaluates the entire run-weight commutator in the newly updated PR177,
+and proves exact integral inverse-source rigidity for independently repeated
+blocks. Corvaja–Zannier also gives a complete fixed-schema cycle
+classification. The new formal module constructs the exact finite inverse
+set and its finite-list recursion; the analytic and deep arithmetic results
+are written, source-qualified proofs. **The escaping-component charge has
+not been shown to vanish, and full Collatz remains open.**
+
 ### Direct closing pass — 22 November 2026
 
 The [direct closing attempt](central/README.md) attacks the canonical escape
