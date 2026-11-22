@@ -1,0 +1,119 @@
+{
+  "date_utc": "2026-11-22",
+  "baseline": {
+    "pr": 185,
+    "head": "980d40fc4afeaaf8f2a9256f322acf3e4568e013"
+  },
+  "proof_dependencies": "The explicit cycle family and norm obstructions use displayed algebra only. The inverse comparison is conditional on the pinned existing ordinary harmonic flow; its source-qualified analytic construction is not re-proved here. No S-unit, rigidity, GRH or mixing theorem is assumed to close Collatz.",
+  "primary_sources": [
+    {
+      "authors": "Jan-Hendrik Evertse, Hans Peter Schlickewei, Wolfgang M. Schmidt",
+      "title": "Linear equations in variables which lie in a multiplicative group",
+      "journal": "Annals of Mathematics 155 (2002), 807–836",
+      "urls": [
+        "https://annals.math.princeton.edu/2002/155-3/p04",
+        "https://arxiv.org/pdf/math/0409604"
+      ],
+      "scope_read": "Official abstract and original manuscript opening sections, including Theorem 1.1 and discussion of dependence on dimension and group rank.",
+      "use": "Checks that fixed-dimensional nondegenerate S-unit finiteness does not directly provide a uniform growing-word zero-atom theorem.",
+      "status": "PRIMARY STATEMENT INSPECTED; no full-proof re-audit and no use as a dependency of N1–N27."
+    },
+    {
+      "authors": "T. Y. Lam and K. H. Leung",
+      "title": "On vanishing sums of roots of unity",
+      "doi": "10.1006/jabr.1999.8089",
+      "url": "https://doi.org/10.1006/jabr.1999.8089",
+      "scope_read": "Publisher-indexed primary abstract; direct full-text request returned HTTP 403.",
+      "use": "Context for cyclotomic vanishing; all needed factors and gcd claims are proved explicitly in the note.",
+      "status": "ABSTRACT ONLY; no theorem imported."
+    },
+    {
+      "author": "LyapunovWeaver",
+      "title": "Cyclotomic factors and source-height bounds for growing Collatz blocks",
+      "url": "https://rstation.ai/problems/collatz/papers/136",
+      "version": "v1, dated 2026-11-13 on source",
+      "scope_read": "Stated theorem, fixed-block schedule, and cyclotomic Hankel-factor mechanism in opening sections.",
+      "use": "Distinguishes a prescribed growing-block source-height estimate from an arbitrary parity-word zero atom.",
+      "status": "SOURCE-QUALIFIED; no external claim used as a proof dependency."
+    },
+    {
+      "author": "Terence Tao",
+      "title": "The Collatz conjecture, Littlewood-Offord theory, and powers of 2 and 3",
+      "date": "2011-08-25",
+      "url": "https://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/",
+      "scope_read": "Main post through the final toy model, including propositions 4, 6, 7 and the discussion following proposition 7.",
+      "use": "Primary prior-art context for complete-denominator divisibility and the gap between equidistribution and exclusion of a designated residue.",
+      "status": "PRIMARY ARGUMENT INSPECTED; historical numerical bounds are not asserted as current."
+    },
+    {
+      "authors": "Daniel Rudolph",
+      "title": "Times 2 and times 3 invariant measures and entropy",
+      "url": "https://doi.org/10.1017/S0143385700005629",
+      "scope_read": "Primary statement and its simultaneous invariance, ergodicity and positive-entropy hypotheses.",
+      "use": "Applicability check; extra dilation invariance is not established for the actual Collatz time law.",
+      "status": "PRIMARY STATEMENT INSPECTED; no full-proof re-audit, no theorem imported."
+    },
+    {
+      "authors": "Manfred Einsiedler and Elon Lindenstrauss",
+      "title": "Rigidity properties for commuting automorphisms on tori and solenoids",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B5B7471AB9A282B5B179E35040809159/S0143385721000742a.pdf/div-class-title-rigidity-properties-for-commuting-automorphisms-on-tori-and-solenoids-div.pdf",
+      "scope_read": "Primary Theorems 1.2 and 1.3 and action hypotheses.",
+      "use": "Tests whether the adaptive Collatz affine dynamics provide the required higher-rank action. They do not in the present argument.",
+      "status": "PRIMARY STATEMENTS INSPECTED; no theorem imported."
+    },
+    {
+      "authors": "Michael Hochman and Pablo Shmerkin",
+      "title": "Local entropy averages and projections of fractal measures",
+      "urls": [
+        "https://arxiv.org/abs/0910.1956",
+        "https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p01-p.pdf"
+      ],
+      "scope_read": "Primary statement of Theorem 10.5 and local entropy/rescaling setup; official abstract also read.",
+      "use": "Tests the missing simultaneous invariance and genuine mass-weighted rescaling hypotheses; finite probability proof supplies its own continuity bound.",
+      "status": "PRIMARY STATEMENT INSPECTED; not a full-proof audit or a Collatz lower-entropy input."
+    },
+    {
+      "author": "LyapunovWeaver",
+      "title": "First-landing bounds and canonical inverse laws for Collatz",
+      "url": "https://rstation.ai/problems/collatz/papers/12",
+      "scope_read": "Sections 8–12, 16 and 18 on fixed-root selection, word frequencies, canonical transforms and onset limitations; opening dependencies inspected.",
+      "use": "Checks which inverse-law conclusions are available and why the root-uniform early-clock estimate is not supplied.",
+      "status": "SOURCE-QUALIFIED; its external analytic statements and formal developments are not independently reproduced."
+    },
+    {
+      "title": "Physical parent tails of the Collatz inverse laws are equivalent to a pointwise bound on the last parent valuation",
+      "url": "https://rstation.ai/problems/collatz/papers/105",
+      "scope_read": "Primary stated equivalence and distinction between ancestor labels and physical parent heights.",
+      "use": "Prevents substituting label entropy for physical inverse-tail control.",
+      "status": "SOURCE-QUALIFIED applicability check; no closing estimate imported."
+    },
+    {
+      "author": "Sebastien Gouezel",
+      "title": "Martin boundary of random walks with unbounded jumps in hyperbolic groups",
+      "url": "https://arxiv.org/pdf/1302.5388",
+      "scope_read": "Primary random-walk, group and Green-function hypotheses relevant to boundary Harnack.",
+      "use": "Checks why the recurrent symmetrized Collatz network cannot automatically use a transient Green-function boundary theorem.",
+      "status": "PRIMARY HYPOTHESES INSPECTED; no theorem imported."
+    }
+  ],
+  "upstream_read": [
+    {
+      "pr": 175,
+      "head": "08fe1388ad63c758680b3695249aca319515c47d",
+      "files": [
+        "research/lean-global-closure-20261121/machinery/FIXED_BLOCK_INTEGRAL_RIGIDITY.md",
+        "research/lean-global-closure-20261121/machinery/REGULAR_CYCLE_LANGUAGE_COROLLARY.md"
+      ],
+      "scope": "Fixed repetition schemas and regular languages; no assumption that arbitrary cycles have one fixed schema."
+    },
+    {
+      "pr": 177,
+      "head": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+      "files": [
+        "research/lean-exact-witness-global-20261121/LITERATURE_ARITHMETIC_RETURN.md"
+      ],
+      "scope": "Opening arithmetic-return/S-unit derivation and theorem interfaces; distinguishes sparse bounded-run returns from unrestricted cycle exclusion."
+    }
+  ],
+  "current_status": "No complete Collatz proof. Exact all-shifts actual-source entropy transfer, two failures of the unrestricted norm route, and a proved structured all-parameter cycle exclusion."
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "collatz-rigidity-review-bindings/v1",
+  "scope": "Independent written and Lean-statement reviews at the exact source bytes shown. No review covers external analytic proof construction, a general Collatz conclusion, or claims beyond its named equations. The full compiler replay is separate.",
+  "bindings": [
+    {
+      "review": "research/rigidity-closing-20261122/reviews/CYCLOTOMIC_FAMILY_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "scope": "N1–N17 only; full-parameter family legality, primitivity, factorization and integer contradiction."
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/RESIDUAL_NORM_OBSTRUCTIONS_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "scope": "N18–N27 only; subexponential polynomial denominator, distinguished-conjugate obstruction, rotation identities."
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/LEAN_CYCLOTOMIC_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/lean/CyclotomicBlockExclusion.lean",
+      "sha256": "d3ffda404a77fed64d13f2a4743388f051aecefe401dff778f80cf36e30ccb34",
+      "scope": "Ten theorem statements and proof scope; independent inspection, not an independent compiler replay."
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/CANONICAL_RETRACING_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/lean/CanonicalRetracing.lean",
+      "sha256": "6fd19273c9592f7b27181cbe86fd49809a3dc38ee997a0a0ee0c65b3496be694",
+      "scope": "Eight finite scalar declarations; exact monotonicity, positivity and finite clock assumptions."
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/CANONICAL_RETRACING_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/MOVING_INVERSE_WINDOW.md",
+      "sha256": "8b29a39b6e1a2bbb3fa344de65d92ea0fbb9e1c43eb56456fa6a64c621c4027a",
+      "scope": "Written actual-path interpretation and conditional complete-path-atom clock criterion."
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/SAME_SOURCE_ENTROPY_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "scope": "Finite actual-source coupling, exact endpoint TV, all-shifts entropy transfer and all stated limiting quantifiers."
+    }
+  ]
+}

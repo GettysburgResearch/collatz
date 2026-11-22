@@ -1,0 +1,132 @@
+{
+  "schema": "collatz-rigidity-source-snapshot/v1",
+  "date_utc": "2026-11-22",
+  "owned_pr": 185,
+  "owned_baseline_sha": "980d40fc4afeaaf8f2a9256f322acf3e4568e013",
+  "scope": "Refreshed 50 PR title/URL rows, froze eight relevant PR heads, and exported 92 changed source files from five advancing branches. Selected statements were read; no claim that every exported file or all source proofs were audited. Earlier relevant pins, including PR146, are retained in the preceding packet.",
+  "advanced_sources": [
+    {
+      "pr": 175,
+      "head": "research/lean-global-closure-20261121",
+      "sha": "08fe1388ad63c758680b3695249aca319515c47d",
+      "previous_sha": "f63204765438c83def68154e7f253ee9b660979c",
+      "changed_files": 26,
+      "selected_inspected_files": [
+        {
+          "path": "research/lean-global-closure-20261121/machinery/EXACT_RUN_WEIGHT_COMMUTATOR.md",
+          "sha256": "521ed021ebfa0f010c9881e2ec40fb2603438547c383a0ff8bd6762fbc8be6b7",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/lean-global-closure-20261121/machinery/FIXED_BLOCK_INTEGRAL_RIGIDITY.md",
+          "sha256": "0fd4f41c6df82dc467c2295ecdadb0fa7fe9095ac945a9ff49142e954b76c9a4",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md",
+          "sha256": "dd959aa34c35773d20642582d0aeb7c25d2d1eee65bc969b9a35a22304cd4be5",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/lean-global-closure-20261121/machinery/REGULAR_CYCLE_LANGUAGE_COROLLARY.md",
+          "sha256": "7da8c806289ddba3a2d564853ea4072a17d78ac462926095fccc148c9bada2ac",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        }
+      ]
+    },
+    {
+      "pr": 176,
+      "head": "research/lean-global-resolvent-20261121",
+      "sha": "00018ce11fa657b5f3fae072e5567a1d93184c2b",
+      "previous_sha": "5cb67181758186b372944ef60a1bd09416b97f89",
+      "changed_files": 15,
+      "selected_inspected_files": [
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/machinery/ACTUAL_COMPACT_JOINING.md",
+          "sha256": "031708db20aa1c99b1b46eac25d94f85425826e154b1ace4ed22780ada1e7782",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/machinery/ACTUAL_LOW_CLOCK.md",
+          "sha256": "96b369f8ff4fe0f4df93828996dc2d130404b0be6028f28a8c87ba8c3adc3fbf",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/machinery/CRITICAL_NETWORK.md",
+          "sha256": "47a45d89861bdc89c5219515f91884143ce240c80778acba932804d1615e81c4",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        }
+      ]
+    },
+    {
+      "pr": 177,
+      "head": "research/lean-exact-witness-global-20261121",
+      "sha": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+      "previous_sha": "431d858d1ac92e88f4a58f6610c0d67733dc7242",
+      "changed_files": 18,
+      "selected_inspected_files": [
+        {
+          "path": "research/lean-exact-witness-global-20261121/LITERATURE_ARITHMETIC_RETURN.md",
+          "sha256": "f530ee3644600cf73e3881dc008c99b251a644b3dd5a0f1f2fd67a540aa182e1",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        }
+      ]
+    },
+    {
+      "pr": 178,
+      "head": "research/lean-global-20261121",
+      "sha": "9d4ae09cd50ccd54036141edc3938d2cabe786fd",
+      "previous_sha": "23456d145df23ef2b412f61f7e49e38a222bc2b1",
+      "changed_files": 14,
+      "selected_inspected_files": [
+        {
+          "path": "research/deep-machinery-20261122/boundary/RECURRENCE_AND_AFFINE_BOUNDARY.md",
+          "sha256": "a3d27f6bb140f89813d9c9e6417b082413e3962acc20205547c75223c4869397",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/deep-machinery-20261122/mahler/MIXED_DILATION_ATTEMPT.md",
+          "sha256": "0889ba6abccd54186912395d04bb74f3751f4d7ec15610d2350fdff6a6b37cf0",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        },
+        {
+          "path": "research/deep-machinery-20261122/rigidity/SIBLING_REPAIR_ATTEMPT.md",
+          "sha256": "73229bb0349858c68b68cdab61bd82bd3b1db0800ff5bd1e2b048a2d371031b2",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        }
+      ]
+    },
+    {
+      "pr": 180,
+      "head": "research/lean-ordinary-closure-20261121",
+      "sha": "a66a44c9bf058cd7efe1018827ddda9a13297a21",
+      "previous_sha": "a9f471543d7fed0a76f348e6d97a9d6d44fa369e",
+      "changed_files": 19,
+      "selected_inspected_files": [
+        {
+          "path": "research/deep-machinery-20261122/BOUNDARY_RIGIDITY.md",
+          "sha256": "661dec8ba4578516d19c9ad0bf49a9cbe22d9e35ecf66b14bbc9e197842c067f",
+          "inspection": "Targeted mathematical statement and proof inspection; no source-branch build replay."
+        }
+      ]
+    }
+  ],
+  "inherited_source": "research/deep-closing-20261122/SOURCE_SNAPSHOT.json",
+  "unchanged_refreshed_metadata_heads": [
+    {
+      "pr": 182,
+      "head": "research/dyadic-band-descent-20261121",
+      "sha": "9dacd610ba7735e89e2e29e4ab01795983317980"
+    },
+    {
+      "pr": 183,
+      "head": "research/band-completion-20261121",
+      "sha": "68345f60a4f757acb42a69a4ac95910f8ce26163"
+    },
+    {
+      "pr": 186,
+      "head": "research/deep-machinery-guide-20261122",
+      "sha": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493"
+    }
+  ]
+}
