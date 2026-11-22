@@ -1,5 +1,11 @@
 # Physical word erasure and source-preserving transport
 
+**Latest continuation:** the [whole-repository attack](../whole-repo-closure-20261122/README.md)
+adds an effective classification of every supplied fixed block cycle schema,
+an all-parameter Lean cycle exclusion, ordinary harmonic collision transport,
+and a literal-tail carry rule. The original proofs and their replay below
+retain their separate source and execution boundaries.
+
 This packet continues [PR184](https://github.com/GettysburgResearch/collatz/pull/184), frozen at `366dab89ee9548084ab9b5e4e90ff82abf287a20`. The map throughout is the ordinary shortcut Collatz map
 
 \[

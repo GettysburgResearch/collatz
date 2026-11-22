@@ -1,0 +1,67 @@
+{
+  "schema": "collatz-source-ledger/v1",
+  "repository": "GettysburgResearch/collatz",
+  "scope": "Written analytic deductions, not Lean formalization; source-qualified canonical-envelope and population inputs retained",
+  "sources": [
+    {
+      "pr": 175,
+      "commit": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+      "path": "research/lean-global-closure-20261121/CANONICAL_POTENTIAL_SUPERLEVELS.md",
+      "sha256": "693c27dce232a1b3cb18b52b09c68050774fa9b4e929842b80ade545081b6319",
+      "used": "Finite stopping-cutset antichain budget; global H moments; corrected finite-chain count with theta=39/40"
+    },
+    {
+      "pr": 175,
+      "commit": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+      "path": "research/lean-global-closure-20261121/LITERATURE_TRANSPORT_ATTEMPT.md",
+      "sha256": "59092045d3923348bf1be33a88dabd61fba4c6e7e836e9ac7e95ea7e3ca501d9",
+      "used": "Reciprocal bound 200 and high-floor refinement; actual inverse Doob kernel and retained-source correction"
+    },
+    {
+      "pr": 176,
+      "commit": "41dc0ff039c13eeaf7f130c56a290212c00bcdef",
+      "path": "research/lean-global-resolvent-20261121/overview/literature/ABEL_CANONICAL_COMPARISON.md",
+      "sha256": "02696028b3f0c4a81e4186b3b16de3002981a12bab0538fe25c108d0815a8361",
+      "used": "Every finite depth D_s<=2V; every Abel approximant F_r<=(1-r)+2rV; source-qualified harmonic critical comparisons"
+    },
+    {
+      "pr": 180,
+      "commit": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "path": "research/lean-wide-pass-20261122/ENERGY_SYNTHESIS.md",
+      "sha256": "2d9e9b1c166b4010852b926de708c8f6c4afbc0b6a08d1a3731d6fba87e7a363",
+      "used": "V<=2 chi G at every ordinary point; canonical normalization and component-covariance boundary"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/04_returns_operators_and_termination.md",
+      "used": "Retained-source collision interface and the distinction between finite and sigma-finite reference measures; no imported theorem used as a missing hypothesis"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/06_agent_tasks.md",
+      "used": "T04 source-pair accounting, T05 cycle-sensitive scope, T13 tail and norm stop rules"
+    }
+  ],
+  "earlier_construction": {
+    "packet": "research/literature-orbit-closure-20261121/CANONICAL_FINITE_SPINE_CONCENTRATION.md",
+    "credit": "PR185 earlier ordinary harmonic correction and finite-spine/weighted-poset construction; reconstructed in full here"
+  },
+  "new_claims": [
+    "Comparable least ordinary harmonic majorant of G/n on nonperiodic odd units",
+    "High-floor bounded change of inverse path law with exact infinite-product density",
+    "Exact unchanged-source transport with no slope correction",
+    "Uniform actual collision-energy contraction and dissipation formula",
+    "Concrete finite source seed with collision energy at most 400/(41c)",
+    "Exact asymptotic collision energy by escaping synchronous source classes"
+  ],
+  "not_claimed": [
+    "Collatz convergence",
+    "Exclusion of nontrivial cycles",
+    "Finite total mass of the ordinary harmonic reference",
+    "Uniform marked critical upper decay",
+    "Finite-reference collision growth bound",
+    "Finite five-energy of an invariant component label"
+  ]
+}

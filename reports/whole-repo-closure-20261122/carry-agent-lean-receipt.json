@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "command": [
+    "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/c6766c1207a3/collatz_work/stepback_rewriting/lib/CarryLanguage.olean",
+    "CarryLanguage.lean"
+  ],
+  "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/stepback_rewriting",
+  "exitcode": 0,
+  "elapsed_seconds": 2.5324878279989207,
+  "source_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+  "log_sha256": "bfb698239f92b4baf4ccf4ba56602f2aa26c6f95894bf444c2c524bf0b8990c1",
+  "audits": [
+    {
+      "theorem": "CollatzShell.CarryLanguage.signed_gap_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.CarryLanguage.carry_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.CarryLanguage.small_debt_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.CarryLanguage.debt_word",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.CarryLanguage.carry_language_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.CarryLanguage.language_grade_drop",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.CarryLanguage.carry_language_interval_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "vendor": [
+    {
+      "name": "WitnessGlobal",
+      "original_sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "ported_sha256": "66b540353c8e09f0b2acadcbacf21253f70b931b92c399c4950add4ab56e82a8",
+      "header_patch_sha256": "220b598166d4e0eb63541bc897ef6ff30b84f26722678e778ae7b7a53ed18df5"
+    },
+    {
+      "name": "WitnessSynthesis",
+      "original_sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+      "ported_sha256": "9a931afa045d0af0ac7d2238ff91a992ea9361d3467cd465d013590efac9b3d8",
+      "header_patch_sha256": "0b65dda218afbe70ffff51c59ab24eff6e3389561c4b884724e63d87f54d1231"
+    }
+  ]
+}
