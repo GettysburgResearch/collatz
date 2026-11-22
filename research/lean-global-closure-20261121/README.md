@@ -10,6 +10,17 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### Direct closing pass — 22 November 2026
+
+The [direct closing attempt](central/README.md) attacks the canonical escape
+charge and original-source closure using the latest PR176, PR177, PR180,
+and PR185 inputs. **This pass obtained no vanishing theorem and no total
+successful selector.** It records the exact attempted inequalities,
+including the compensating terminal-contact influx, the unchanged weighted
+crossing atom, and the loss of contraction when the contact threshold grows.
+The existing Lean packet remains unchanged. These attempt records are not
+counted as additional closure progress or formal theorems.
+
 ### Literature continuation: the exact surviving boundary
 
 The [new Dirichlet proof](LITERATURE_DIRICHLET_BOUNDARY.md) uses the actual
