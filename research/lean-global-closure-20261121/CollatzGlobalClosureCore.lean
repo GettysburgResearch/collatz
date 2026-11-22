@@ -6,5 +6,7 @@ import CollatzGlobalClosure.AsynchronousReset
 import CollatzGlobalClosure.TerminalReset
 import CollatzGlobalClosure.PeriodicTraceTail
 import CollatzGlobalClosure.SignedCarry
+import CollatzGlobalClosure.SignedCarryReturns
 import CollatzGlobalClosure.MergerClockRigidity
+import CollatzGlobalClosure.OddReturnClock
 import CollatzGlobalClosure.FiniteProfileDrift

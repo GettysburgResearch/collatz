@@ -88,7 +88,8 @@ def main() -> int:
         modules += [(f"CollatzGlobalClosure.{name}", f"CollatzGlobalClosure/{name}.lean")
                     for name in ["InverseBudget", "ReservedMergerCompleteness", "MaximalReserve",
                                  "AsynchronousReset", "TerminalReset", "PeriodicTraceTail",
-                                 "SignedCarry", "MergerClockRigidity", "FiniteProfileDrift"]]
+                                 "SignedCarry", "SignedCarryReturns", "MergerClockRigidity",
+                                 "OddReturnClock", "FiniteProfileDrift"]]
         modules.append(("CollatzGlobalClosureCore", "CollatzGlobalClosureCore.lean"))
         modules.append(("CollatzGlobalClosure", "CollatzGlobalClosure.lean"))
 

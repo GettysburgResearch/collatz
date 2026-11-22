@@ -10,6 +10,23 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Compiled results
 
+### Late-source composition — 22 November 2026
+
+The [late synthesis](LATE_SOURCE_SYNTHESIS_20261122.md) incorporates the five
+substantial branch updates that arrived during the first build. It connects
+PR177's new uniform return cone to our actual all-word signed compiler in
+Lean, and proves an unconditional odd-count bound for every multiplicative
+return. The driver now contains 21 core compilation units.
+
+The accompanying written proof establishes finite harmonic moments of every
+positive power of the normalized Green deficit, with an explicit ordinary
+mean rate, and a complete unchanged-source occupation bound. A separate
+channel calculation identifies the correct sourcewise boundary trace and
+proves that its unsubtracted fixed-radius replacement always diverges.
+The analytic deductions retain their pinned harmonic and rigidity inputs.
+The [source snapshot and scoped reviews](../../reports/lean-global-closure-20261121/nov22/late/)
+separate the new deductions from imported results and actual executions.
+
 ### Global continuation — 22 November 2026
 
 The [new global-step packet](GLOBAL_STEP_20261122.md) builds on the refreshed
@@ -26,7 +43,7 @@ cores; the asymptotic and modular arguments remain written mathematics.
 The complete common-rank stopping rule and the moving-target analytic
 estimate remain open. No full Collatz proof is claimed.
 
-`build_wide.py` now includes all three new modules and compiles 19 core units.
+That scientific checkpoint added three modules and compiled 19 core units.
 The [actual published-checkout replay](../../reports/lean-global-closure-20261121/nov22/VALIDATION.md)
 passed all 19 units and 126 axiom reports, including 55 new-module reports,
 with only Lean's standard axioms. All five repository commands also passed.

@@ -1,0 +1,187 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "date": "2026-11-22",
+  "snapshot_scope": "20 most recently updated pull requests; continuation after the earlier 145-PR inventory",
+  "observed_utc": "2026-11-22T05:32:00Z",
+  "observation_time_precision": "rounded to minute; individual updated_at values are exact API fields",
+  "review_scope": "The five displayed deltas informed a source-qualified mathematical composition. This is not a complete independent review or replay of all branches.",
+  "deltas": [
+    {
+      "pr": 177,
+      "head": "2efabba9a341839b67ed011d6b878b23730ee51d",
+      "updated_at": "2026-11-22T05:30:36Z",
+      "title": "Lean: alphabet-four reduction and parallel witness attacks (global cover open)",
+      "previous_pin": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317"
+    },
+    {
+      "pr": 182,
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "updated_at": "2026-11-22T05:30:22Z",
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+      "previous_pin": "45354128f890fb479f6c23b547368bcddd9cebe6"
+    },
+    {
+      "pr": 178,
+      "head": "d06f97d955152edeeeb7acd5295d57aec9f4fb9c",
+      "updated_at": "2026-11-22T05:28:26Z",
+      "title": "Lean: independent cycle exponents, escape moments, and bounded tail selectors",
+      "previous_pin": "be5696cc45a95ad1903802b08ba1dc3ebba66930"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "previous_pin": "907a540943090968bc683b1b9246208e9053c1f8"
+    },
+    {
+      "pr": 180,
+      "head": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "updated_at": "2026-11-22T05:22:21Z",
+      "title": "Collatz: actual return composition and Lean carry continuation",
+      "previous_pin": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d"
+    }
+  ],
+  "recent_prs": [
+    {
+      "number": 177,
+      "title": "Lean: alphabet-four reduction and parallel witness attacks (global cover open)",
+      "head": "2efabba9a341839b67ed011d6b878b23730ee51d",
+      "updated_at": "2026-11-22T05:30:36Z",
+      "state": "open"
+    },
+    {
+      "number": 182,
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "updated_at": "2026-11-22T05:30:22Z",
+      "state": "open"
+    },
+    {
+      "number": 178,
+      "title": "Lean: independent cycle exponents, escape moments, and bounded tail selectors",
+      "head": "d06f97d955152edeeeb7acd5295d57aec9f4fb9c",
+      "updated_at": "2026-11-22T05:28:26Z",
+      "state": "open"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: Lean inverse completeness and global canonical-potential bounds",
+      "head": "75e4c3be98db839646ffbb76fc0ac33649747c99",
+      "updated_at": "2026-11-22T05:27:06Z",
+      "state": "open"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "state": "open"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: actual return composition and Lean carry continuation",
+      "head": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "updated_at": "2026-11-22T05:22:21Z",
+      "state": "open"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: effective cycle schemas, ordinary harmonic flow, and literal-tail carry rules",
+      "head": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "updated_at": "2026-11-22T00:15:02Z",
+      "state": "open"
+    },
+    {
+      "number": 176,
+      "title": "Lean: parallel contact capture and exact source envelopes",
+      "head": "8aeb843bba254f065743b6fa277a70906b51d520",
+      "updated_at": "2026-11-22T00:10:11Z",
+      "state": "open"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "state": "open"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "updated_at": "2026-11-21T15:45:03Z",
+      "state": "open"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "updated_at": "2026-11-21T14:34:32Z",
+      "state": "open"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "updated_at": "2026-11-21T09:39:39Z",
+      "state": "open"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "updated_at": "2026-11-21T08:47:54Z",
+      "state": "open"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "updated_at": "2026-11-21T08:41:05Z",
+      "state": "open"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "state": "open"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "head": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "updated_at": "2026-11-20T23:57:31Z",
+      "state": "open"
+    },
+    {
+      "number": 164,
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds",
+      "head": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "updated_at": "2026-11-20T23:39:04Z",
+      "state": "open"
+    },
+    {
+      "number": 171,
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments",
+      "head": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "updated_at": "2026-11-20T23:37:41Z",
+      "state": "open"
+    },
+    {
+      "number": 170,
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds",
+      "head": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "updated_at": "2026-11-20T23:31:14Z",
+      "state": "open"
+    },
+    {
+      "number": 169,
+      "title": "research: extend certificate descents and localize all-time arithmetic moments",
+      "head": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "updated_at": "2026-11-20T23:18:58Z",
+      "state": "open"
+    }
+  ]
+}

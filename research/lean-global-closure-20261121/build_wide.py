@@ -60,8 +60,8 @@ def main() -> int:
                 for name in ["EndpointSteering", "InverseBudget",
                              "ReservedMergerCompleteness", "MaximalReserve",
                              "AsynchronousReset", "TerminalReset",
-                             "PeriodicTraceTail", "SignedCarry",
-                             "MergerClockRigidity", "FiniteProfileDrift"]]
+                             "PeriodicTraceTail", "SignedCarry", "SignedCarryReturns",
+                             "MergerClockRigidity", "OddReturnClock", "FiniteProfileDrift"]]
     modules.append(("CollatzGlobalClosureCore", "CollatzGlobalClosureCore.lean"))
     paths = [output]
     env = os.environ.copy()

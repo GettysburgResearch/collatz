@@ -1,0 +1,27 @@
+{
+  "adapter": "CollatzGlobalClosure/SignedCarryReturns.lean",
+  "adapter_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7",
+  "sources": [
+    {
+      "pr": 177,
+      "commit": "2efabba9a341839b67ed011d6b878b23730ee51d",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapGlobal.lean",
+      "sha256": "a6e7a94e2a48d42fe2767c37de92ae349df5ab7cc320bfe6fc4366970ba93e0f",
+      "git_blob_sha": "47afb77ad45e8d42c094ae086e90cd97447ba7e7",
+      "use": "credited dependency-light proof port"
+    },
+    {
+      "pr": 177,
+      "commit": "2efabba9a341839b67ed011d6b878b23730ee51d",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapComparison.lean",
+      "sha256": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+      "git_blob_sha": "a74e18cf6fe9451f332091e33b437fde78e8dd85",
+      "use": "exact powered-source interval hypothesis body"
+    }
+  ],
+  "frozen_vendor_replaced": false,
+  "new_project_imports": [
+    "CollatzGlobalClosure.SignedCarry"
+  ],
+  "evidence": "Strict new adapter compilation; source inspection of pinned upstream files; no upstream packet replay."
+}

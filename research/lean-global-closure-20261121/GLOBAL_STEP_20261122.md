@@ -16,6 +16,13 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}),
 
 with accelerated odd map \(U(n)=(3n+1)/2^{v_2(3n+1)}\).
 
+**Late continuation:** five further branch updates arrived during the first
+build. The [late synthesis](LATE_SOURCE_SYNTHESIS_20261122.md) adds an actual
+Lean return-cone integration, an odd-count return theorem, and a new global
+harmonic moment for the complete Green history. The source inventory and
+19-unit receipt below remain historical evidence for the first checkpoint;
+the late continuation preserves its own pins and execution boundary.
+
 ## 1. What the repository refresh changed
 
 The [source snapshot](../../reports/lean-global-closure-20261121/nov22/source-snapshot.json)
@@ -233,7 +240,7 @@ respectively. Development compilations passed. Independent semantic reviews
 are preserved in the [November report directory](../../reports/lean-global-closure-20261121/nov22/).
 Their verdicts apply only to the exact recorded bytes and statements.
 
-The complete core driver now compiles 19 units from source, with unchanged
+The first checkpoint's core driver compiled 19 units from source, with unchanged
 vendored foundations and no Mathlib requirement:
 
 ```sh
