@@ -1,0 +1,124 @@
+{
+  "date_utc": "2026-11-23T04:34:57.111612+00:00",
+  "scope": "Fresh complete local dependency build and all 15 new public theorem axiom audits; finite source congruence and rational contraction/charge algebra are formal, full rational recognition and all entropy/dimension limits remain written proofs.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/3f23e1a583aa/round5-lean-fresh",
+  "source_sha256": {
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/whole-repo-round3-20261123/CarryFibers.lean": "9fd194724b6c2c101bfe837dcd198199f4618911c7cf608ff425c8bac31818e3",
+    "research/closure-round5-20261123/FixedSourcePressure.lean": "1ca906b9fbacad0b7228ce3702c63df0e5b01b9964231b7cd2f6ed0cb812a3d6",
+    "research/closure-round5-20261123/TriadicConstruction.lean": "296e622d30826fe87a63f86be63b1836497705d751c7bace5699f3755e04fc23",
+    "reports/2026-11-23-closure-round5/RoundFiveAudit.lean": "92516a994270d55c9390532b27c657cd222a863af8f7143a60a21b1efa8f1e80"
+  },
+  "new_public_declarations": [
+    "CollatzShell.FixedSourcePressure.parityPrefix_length",
+    "CollatzShell.FixedSourcePressure.shortcut_affine",
+    "CollatzShell.FixedSourcePressure.parityPrefix_affine",
+    "CollatzShell.FixedSourcePressure.same_prefix_source_mod",
+    "CollatzShell.FixedSourcePressure.source_eq_of_prefix_of_height",
+    "CollatzShell.FixedSourcePressure.prefix_image_card",
+    "CollatzShell.FixedSourcePressure.prefix_fiber_card_le",
+    "Collatz.ClosureRoundFive.RationalAccounting.large_step_nonincrease",
+    "Collatz.ClosureRoundFive.RationalAccounting.odd_step_five_sixths",
+    "Collatz.ClosureRoundFive.RationalAccounting.very_large_step_seven_eighths",
+    "Collatz.ClosureRoundFive.RationalAccounting.large_two_step_seven_eighths",
+    "Collatz.ClosureRoundFive.RationalAccounting.nonzero_step_charge",
+    "Collatz.ClosureRoundFive.RationalAccounting.distinct_charge_product",
+    "Collatz.ClosureRoundFive.RationalAccounting.signed_distinct_charge_bound",
+    "Collatz.ClosureRoundFive.RationalAccounting.global_charge_contradiction"
+  ],
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round5-lean-fresh/CycleWordAlgebra.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/CycleWordAlgebra.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 2.624,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round5-lean-fresh/CarryFibers.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123/CarryFibers.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.94,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round5-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round5-lean-fresh/FixedSourcePressure.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round5-20261123/FixedSourcePressure.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.34,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round5-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round5-lean-fresh/TriadicConstruction.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round5-20261123/TriadicConstruction.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 8.46,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-closure-round5",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round5-lean-fresh/RoundFiveAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-closure-round5/RoundFiveAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.876,
+      "stdout": "'CollatzShell.FixedSourcePressure.parityPrefix_length' depends on axioms: [propext]\n'CollatzShell.FixedSourcePressure.shortcut_affine' depends on axioms: [propext, Quot.sound]\n'CollatzShell.FixedSourcePressure.parityPrefix_affine' depends on axioms: [propext, Quot.sound]\n'CollatzShell.FixedSourcePressure.same_prefix_source_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.FixedSourcePressure.source_eq_of_prefix_of_height' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.FixedSourcePressure.prefix_image_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.FixedSourcePressure.prefix_fiber_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.large_step_nonincrease' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.odd_step_five_sixths' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.very_large_step_seven_eighths' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.large_two_step_seven_eighths' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.nonzero_step_charge' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.distinct_charge_product' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.signed_distinct_charge_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundFive.RationalAccounting.global_charge_contradiction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,333 @@
+{
+  "carry_cycle": {
+    "bounded_cycles": {
+      "complete_rotated_carries": 482,
+      "filter": "D > 0 and C/D > 1",
+      "greatest_full_gcd": 65,
+      "h_range_inclusive": [
+        1,
+        24
+      ],
+      "least_positive_ordinary_residue_descents": 22,
+      "legal_primitive_rational_cycles": 22,
+      "literal_ordinary_edges": 482,
+      "literal_rational_edges": 482,
+      "nontrivial_full_gcd_cases": 4,
+      "p_range_inclusive": [
+        2,
+        24
+      ],
+      "proper_prefix_coefficients": 460
+    },
+    "gap_carries": {
+      "bounded_fibre_checks": 7126,
+      "complete_carry_formula_comparisons": 6884,
+      "fixed_length_total_carry_distinct_keys": 6884,
+      "fixed_total_residue_fibres": 1934,
+      "largest_fixed_total_residue_fibre": 14,
+      "max_gap_word_length": 5,
+      "max_total_clock": 16,
+      "omitted_quotient_witness": {
+        "first_gaps": [
+          1,
+          7
+        ],
+        "length": 2,
+        "residue": 8,
+        "second_gaps": [
+          7,
+          1
+        ],
+        "total": 8
+      },
+      "omitted_total_witness": {
+        "carry_quotient": 0,
+        "first_gaps": [
+          1
+        ],
+        "length": 1,
+        "residue": 2,
+        "second_gaps": [
+          3
+        ]
+      },
+      "positive_compositions": 6884,
+      "residue_fibres": 242,
+      "residue_formula_comparisons": 6884,
+      "residue_total_full_quotient_distinct_keys": 6884,
+      "words_by_length": {
+        "1": 16,
+        "2": 120,
+        "3": 560,
+        "4": 1820,
+        "5": 4368
+      }
+    },
+    "large_closed_form_cycles": {
+      "fixtures": [
+        {
+          "A": 65,
+          "B": 10,
+          "Q": 100,
+          "full_gcd": 1,
+          "fully_reduced_denominator_bits": 59,
+          "minimum_gap_floor": 43,
+          "minimum_state_floor": 86,
+          "ordinary_endpoint_bits": 62,
+          "ordinary_residue_closed_form_descent": true,
+          "ordinary_source_bits": 62,
+          "p": 41
+        },
+        {
+          "A": 485,
+          "B": 100,
+          "Q": 1000000,
+          "full_gcd": 1,
+          "fully_reduced_denominator_bits": 476,
+          "minimum_gap_floor": 489,
+          "minimum_state_floor": 977,
+          "ordinary_endpoint_bits": 485,
+          "ordinary_residue_closed_form_descent": true,
+          "ordinary_source_bits": 485,
+          "p": 306
+        },
+        {
+          "A": 22619,
+          "B": 1000,
+          "Q": 1000000000,
+          "full_gcd": 1,
+          "fully_reduced_denominator_bits": 22606,
+          "minimum_gap_floor": 4739,
+          "minimum_state_floor": 9477,
+          "ordinary_endpoint_bits": 22619,
+          "ordinary_residue_closed_form_descent": true,
+          "ordinary_source_bits": 22619,
+          "p": 14271
+        },
+        {
+          "A": 75235,
+          "B": 10000,
+          "Q": 1000000000000,
+          "full_gcd": 1,
+          "fully_reduced_denominator_bits": 75219,
+          "minimum_gap_floor": 45747,
+          "minimum_state_floor": 91493,
+          "ordinary_endpoint_bits": 75234,
+          "ordinary_residue_closed_form_descent": true,
+          "ordinary_source_bits": 75234,
+          "p": 47468
+        }
+      ],
+      "long_rotated_carry_lists_enumerated": false,
+      "long_state_trajectories_enumerated": false,
+      "method": "exact closed forms, complete numerical gcd, and whole-run divisibility"
+    },
+    "scope": "finite exact arithmetic controls; no asymptotic or Collatz proof",
+    "status": "pass"
+  },
+  "rational": {
+    "bounded_grid": {
+      "checks": 31680,
+      "numerators": [
+        -16,
+        16
+      ],
+      "odd_denominators": [
+        1,
+        15
+      ],
+      "sources": [
+        1,
+        40
+      ]
+    },
+    "central_binomial_product_checks": 64,
+    "checker_sha256": "a62cf4579f4588996085f2f3d4594d6f98b6b3e8cff973ae635df98c271df887",
+    "decision_counts": {
+      "accepted": 3144,
+      "rejected": 33357
+    },
+    "event_counts": {
+      "ordinary_one_exact_comparison": 3965,
+      "parity_mismatch": 31349,
+      "repeated_small_numerator": 998,
+      "triadic_stopping_budget_exhausted": 189
+    },
+    "invalid_inputs_rejected": 12,
+    "known_exact_unreduced_perturbed_checks": 4635,
+    "large_single_step_checks": 56432,
+    "large_two_step_checks": 23576,
+    "largest_observed_oracle_stopping_time": 329,
+    "late_perturbation_numerator_increment": 256,
+    "method_counts": {
+      "general": 17079,
+      "mixed": 12915,
+      "triadic": 6507
+    },
+    "mixed_three_exhaustions_checked": 360,
+    "nontriadic_pullbacks": {
+      "candidates": 60,
+      "decisions": 180,
+      "prescribed_prefix_edges": 651,
+      "residual_denominators": [
+        5,
+        7
+      ]
+    },
+    "nontrivial_ordinary_repeated_pair_acceptance_exercised": false,
+    "oracle_sources": 515,
+    "oracle_step_cap": 10000,
+    "original_one_countercontrols": [
+      {
+        "q": 3,
+        "two_step_ratio": "9/10"
+      },
+      {
+        "q": 5,
+        "two_step_ratio": "13/14"
+      },
+      {
+        "q": 7,
+        "two_step_ratio": "17/18"
+      },
+      {
+        "q": 9,
+        "two_step_ratio": "21/22"
+      },
+      {
+        "q": 11,
+        "two_step_ratio": "25/26"
+      },
+      {
+        "q": 13,
+        "two_step_ratio": "29/30"
+      },
+      {
+        "q": 15,
+        "two_step_ratio": "33/34"
+      },
+      {
+        "q": 17,
+        "two_step_ratio": "37/38"
+      },
+      {
+        "q": 19,
+        "two_step_ratio": "41/42"
+      },
+      {
+        "q": 21,
+        "two_step_ratio": "45/46"
+      },
+      {
+        "q": 23,
+        "two_step_ratio": "49/50"
+      },
+      {
+        "q": 25,
+        "two_step_ratio": "53/54"
+      },
+      {
+        "q": 27,
+        "two_step_ratio": "57/58"
+      },
+      {
+        "q": 29,
+        "two_step_ratio": "61/62"
+      },
+      {
+        "q": 31,
+        "two_step_ratio": "65/66"
+      }
+    ],
+    "paired_trace_edges": 2115,
+    "repeated_small_rejections": [
+      {
+        "denominator": 1,
+        "earlier_ordinary": 3,
+        "event_clock": 1,
+        "later_ordinary": 5,
+        "numerator": 0,
+        "source": 3,
+        "strategy": "auto"
+      },
+      {
+        "denominator": 1,
+        "earlier_ordinary": 3,
+        "event_clock": 1,
+        "later_ordinary": 5,
+        "numerator": 0,
+        "source": 3,
+        "strategy": "general"
+      },
+      {
+        "denominator": 1,
+        "earlier_ordinary": 3,
+        "event_clock": 1,
+        "later_ordinary": 5,
+        "numerator": 0,
+        "source": 3,
+        "strategy": "mixed"
+      },
+      {
+        "denominator": 1,
+        "earlier_ordinary": 10,
+        "event_clock": 2,
+        "later_ordinary": 8,
+        "numerator": 1,
+        "source": 10,
+        "strategy": "auto"
+      },
+      {
+        "denominator": 1,
+        "earlier_ordinary": 10,
+        "event_clock": 2,
+        "later_ordinary": 8,
+        "numerator": 1,
+        "source": 10,
+        "strategy": "general"
+      },
+      {
+        "denominator": 1,
+        "earlier_ordinary": 10,
+        "event_clock": 2,
+        "later_ordinary": 8,
+        "numerator": 1,
+        "source": 10,
+        "strategy": "mixed"
+      }
+    ],
+    "schema": "collatz-round5-rational-replay/v1",
+    "scope": "bounded exact controls with a separate known-convergent backward oracle",
+    "success": true,
+    "verifier_sha256": "91e79761fe43e092e69a2be2f9224d62c4015c4b9aed8ccf77205b4bc83091b0"
+  },
+  "schema": "collatz-closure-round5-exact/v1",
+  "scope": "Exact bounded controls only. Full Collatz, the infinite stationary conclusions and collision upper are not established by execution.",
+  "source_pressure": {
+    "counts": {
+      "exact_growing_window_inequalities": 3594,
+      "good_unique_gap_words": 5175,
+      "literal_affine_words": 77686,
+      "literal_odd_edges": 4203,
+      "long_word_uniform_laws": 616,
+      "odd_complete_source_words": 12869,
+      "ordinary_sources": 259,
+      "source_word_fibres": 44055
+    },
+    "scope": "Finite actual prefixes, complete source congruences, exact endpoint averaging; no entropy-limit execution.",
+    "source_range": "1..256, plus 6171, 77031 and 837799; through first ordinary one"
+  },
+  "source_sha256": {
+    "CYCLE_EXCLUSION.md": "53ca400b528fa55047cb78e8c056e243932256dcd3e3c7d0fa0afd129d97ebbb",
+    "FIXED_SOURCE_PRESSURE.md": "09b9cb3a1bd7daf1bc77b70e5010c8591b3d1fa7965e59a63dff6efc1dbe5c76",
+    "FixedSourcePressure.lean": "1ca906b9fbacad0b7228ce3702c63df0e5b01b9964231b7cd2f6ed0cb812a3d6",
+    "TERNARY_INFORMATION.md": "e254b24b199c94ac5832a095dc6c428eee2d8a6628dff05546bdc855287073f4",
+    "TRIADIC_CONSTRUCTION.md": "40fde45d454b19a97f208aef9950a2fd6fbf0fd15cef1995b37fbf5099b8b562",
+    "TriadicConstruction.lean": "296e622d30826fe87a63f86be63b1836497705d751c7bace5699f3755e04fc23",
+    "exact_replay.py": "6c14e08098142e1106db99cbe2cf3bcda3e56133ad13788da8c9f770a28c035b",
+    "replay_carry_cycle.py": "b4cccf0fd73870ecca5298482732e81f481b269696adc4751fc505576edbeafd",
+    "replay_rational.py": "a62cf4579f4588996085f2f3d4594d6f98b6b3e8cff973ae635df98c271df887",
+    "verify_rational.py": "91e79761fe43e092e69a2be2f9224d62c4015c4b9aed8ccf77205b4bc83091b0"
+  },
+  "success": true
+}
