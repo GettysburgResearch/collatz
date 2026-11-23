@@ -1,0 +1,20 @@
+'CollatzTriadicDual.TriadicStep' depends on axioms: [propext]
+'CollatzTriadicDual.step_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.no_all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.zero_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.numerator_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.energy' depends on axioms: [propext]
+'CollatzTriadicDual.step_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.triadic_pair_reaches_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.shortcut' does not depend on any axioms
+'CollatzTriadicDual.orbit' does not depend on any axioms
+'CollatzTriadicDual.State' does not depend on any axioms
+'CollatzTriadicDual.next' depends on axioms: [propext]
+'CollatzTriadicDual.trajectory' depends on axioms: [propext]
+'CollatzTriadicDual.compatible' does not depend on any axioms
+'CollatzTriadicDual.next_x' depends on axioms: [propext]
+'CollatzTriadicDual.trajectory_x' depends on axioms: [propext]
+'CollatzTriadicDual.shortcut_pos' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicDual.orbit_pos' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicDual.next_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicDual.alltime_triadic_candidate_reaches_one' depends on axioms: [propext, Classical.choice, Quot.sound]

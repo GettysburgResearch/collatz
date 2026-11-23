@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-23",
+  "repository": "GettysburgResearch/collatz",
+  "reader": "closure_collision",
+  "own_baseline": "2169884b64871b448cda16c7d74a0d5914ed870b",
+  "sources": [
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "git_blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "git_blob": "c430b45adf356b11bd5d4f7aeb7026212ecf4183",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "git_blob": "9b8ed17476a6c133f3bb3710c4fe1d5de8d5a1f1",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 177,
+      "head": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "git_blob": "314fce3965adf36775fac9b5f2097c0181e830de",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 175,
+      "head": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md",
+      "git_blob": "de700cdfa214391fa138d38a8930140a265ff3c1",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 175,
+      "head": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md",
+      "git_blob": "17554f9c37b67366771c5ae42f238fe5d5dbd8ce",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 180,
+      "head": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "git_blob": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "scope": "Complete named note read; inherited analytic hypotheses remain source-qualified."
+    },
+    {
+      "pr": 178,
+      "head": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/global-synthesis-20261122/ARITHMETIC_CLOSURE.md",
+      "git_blob": "26b4d5d94e71ad3c9f5648dea5c84e40e71110dd",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/global-synthesis-20261122/ARITHMETIC_CLOSURE.md",
+      "scope": "Section 3 repeated-block source divisibility and its existing finite Lean consumer. Reused, not claimed as new mathematics."
+    },
+    {
+      "pr": 178,
+      "head": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/global-synthesis-20261122/lean/IndependentBlockBudget.lean",
+      "git_blob": "740c38df591db61c519d25e6fe7cd414babc67a0",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/global-synthesis-20261122/lean/IndependentBlockBudget.lean",
+      "scope": "Section 3 repeated-block source divisibility and its existing finite Lean consumer. Reused, not claimed as new mathematics."
+    }
+  ]
+}
