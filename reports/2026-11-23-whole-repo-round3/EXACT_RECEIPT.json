@@ -1,0 +1,40 @@
+{
+  "date_utc": "2026-11-23T02:59:01.222223+00:00",
+  "scope": "Bounded exact controls, not an infinite-orbit or convergence proof",
+  "checker_sha256": "82a038962c076fbb3282cd53af1e98fbb7fcc27248ca182b8d4aa7b505323170",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 0.629,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-whole-repo-round3/EXACT_CONTROLS.json",
+      "output_sha256": "e43c4aa49c6c6a037b1a90dafdf4ee9de42f00f6933149ee81ff3141c527837b"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/whole-repo-round3-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 0.759,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-whole-repo-round3/EXACT_CONTROLS_OPTIMIZED.json",
+      "output_sha256": "e43c4aa49c6c6a037b1a90dafdf4ee9de42f00f6933149ee81ff3141c527837b"
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "success": true
+}
