@@ -1,0 +1,156 @@
+{
+  "arithmetic": "integer/Fraction only",
+  "assumed_gap_upper_bound_at_large_candidates": "2^-152",
+  "claim": "uniform reduced factor gap beyond the explicit (2,1) exception",
+  "common_cf_partials": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    3,
+    1,
+    5,
+    2,
+    23,
+    2,
+    2,
+    1,
+    1,
+    55,
+    1,
+    4,
+    3,
+    1,
+    1,
+    15,
+    1,
+    9,
+    2,
+    5,
+    7
+  ],
+  "direct_large_check": [
+    65,
+    41
+  ],
+  "external_coverage": [
+    "Matveev real two-logarithm theorem",
+    "Legendre criterion",
+    "written root and cyclotomic arguments"
+  ],
+  "first_denominator_above_cutoff": 5409303924479,
+  "linear_form_candidate_count": 9,
+  "linear_form_lower_bound": "2^-100",
+  "log_interval_sha256": "11fb143a539564862da316b1d331374b0c438cb9733ac013be8f444ff63b6ce3",
+  "log_series_terms": 128,
+  "malformed_inputs_rejected": 7,
+  "matveev_constant": 10000000000,
+  "scope": "exact finite component; not a Lean proof or integer-gcd bound",
+  "small_least_admissible_pairs_a_b": [
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      11,
+      6
+    ],
+    [
+      12,
+      7
+    ],
+    [
+      13,
+      8
+    ],
+    [
+      16,
+      9
+    ],
+    [
+      17,
+      10
+    ],
+    [
+      18,
+      11
+    ],
+    [
+      23,
+      12
+    ],
+    [
+      21,
+      13
+    ]
+  ],
+  "status": "PASS",
+  "tail_cutoff": 1000000000000,
+  "upper_convergents_below_cutoff": [
+    [
+      2,
+      1
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      65,
+      41
+    ],
+    [
+      485,
+      306
+    ],
+    [
+      24727,
+      15601
+    ],
+    [
+      125743,
+      79335
+    ],
+    [
+      301994,
+      190537
+    ],
+    [
+      17087915,
+      10781274
+    ],
+    [
+      272500658,
+      171928773
+    ],
+    [
+      630138897,
+      397573379
+    ],
+    [
+      10439860591,
+      6586818670
+    ],
+    [
+      217976794617,
+      137528045312
+    ]
+  ]
+}
