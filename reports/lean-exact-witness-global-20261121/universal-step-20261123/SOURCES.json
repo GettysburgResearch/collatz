@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-23",
+  "repository": "GettysburgResearch/collatz",
+  "owned_pr": 177,
+  "parent": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+  "scope": "Selected current peer interfaces inspected to guide new work; not a whole-PR mathematical audit. Prior frozen literature and source ledgers remain unchanged.",
+  "peers": [
+    {
+      "pr": 176,
+      "head": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "title": "Collatz checkpoint 17: finite-candidate rigidity and parallel closure attacks",
+      "access": "current GitHub PR body and selected scientific source files; detailed claim scopes appear in lane sources and reviews"
+    },
+    {
+      "pr": 178,
+      "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "title": "Collatz: finite rational certificates and fast ordinary flows",
+      "access": "current GitHub PR body and selected scientific source files; detailed claim scopes appear in lane sources and reviews"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "title": "Collatz: actual fibre density, critical renewal, and complementary denominators",
+      "access": "current GitHub PR body and selected scientific source files; detailed claim scopes appear in lane sources and reviews"
+    },
+    {
+      "pr": 182,
+      "head": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "title": "Collatz: triadic stopping rigidity and finite collision obstruction",
+      "access": "current GitHub PR body and selected scientific source files; detailed claim scopes appear in lane sources and reviews"
+    }
+  ],
+  "other_refreshed_metadata": [
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "access": "PR metadata refreshed; no new complete proof audit"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "access": "PR metadata refreshed; no new complete proof audit"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "access": "PR metadata refreshed; no new complete proof audit"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "access": "PR metadata refreshed; no new complete proof audit"
+    },
+    {
+      "pr": 175,
+      "head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "access": "PR metadata refreshed; no new complete proof audit"
+    }
+  ],
+  "root_read_files": [
+    {
+      "pr": 176,
+      "head": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/INFINITE_OPTIMAL_RAY_ATTEMPT.md",
+      "scope": "fixed-source real/2-adic/3-adic product and source-dependent merger boundary; no imported new theorem"
+    },
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "scope": "arithmetic recurrence consumer and unproved recurrence-construction boundary; no theorem assumed"
+    }
+  ],
+  "lane_source_ledgers": [
+    "candidate/SOURCES.json",
+    "escape/SOURCES.json"
+  ],
+  "primary_literature_scope": "See lane notes and source ledgers. The new arithmetic proofs are self-contained apart from explicitly pinned prior triadic and pressure interfaces. No external theorem is introduced as a Lean axiom.",
+  "universal_candidate_construction": "OPEN",
+  "unrestricted_cycle_exclusion": "OPEN",
+  "ordinary_escape_exclusion": "OPEN"
+}

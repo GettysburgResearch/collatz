@@ -1,0 +1,8 @@
+'CollatzBlockMixture.geometric_alternate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.path_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.geometric_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.carry_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.no_mixed_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.geometric_coprime_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.no_smooth_mixed_collatz_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBlockMixture.no_smooth_closed_path' depends on axioms: [propext, Classical.choice, Quot.sound]

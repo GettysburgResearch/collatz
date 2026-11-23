@@ -1,0 +1,57 @@
+{
+  "documentation_scope_clarification": "The written note explicitly restricts integer-cycle wording to positive integer states; Lean source and checker are unchanged.",
+  "input_sha256": {
+    "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/BLOCK_CARRY_CAPACITY.md": "1998aac23dad7772f335f82d2c236175e923fbe40e091de6ae33c3d7c85795fb",
+    "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/BlockMixture.lean": "4f7dc5cc1673df8088a3345f62e9f705de61c3fc1eb0166b58b77e5d29f2ec3d",
+    "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/block_carry_capacity_check.py": "f11207fa0ed4a2e9c444bd8cafebdf5f442643c9b903967b8949f26ceb467aa9"
+  },
+  "lean_axioms_only": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "lean_public_axiom_audits": 8,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "python_output_byte_identical": true,
+  "runs": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-DwarningAsError=true",
+        "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/BlockMixture.lean"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_file": "lean-audit.log",
+      "stdout_sha256": "1ca1480516e45f2fcfbf298916fe0290f5f9b529b23e6d9a28865d092fe838a8"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/block_carry_capacity_check.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_file": "normal.json",
+      "stdout_sha256": "24bfed60c4b09720459c850715d1bc2a36903c648c83df818c782afd08c153e1"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-B",
+        "research/lean-exact-witness-global-20261121/universal-step-20261123/cycles/block_carry_capacity_check.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_file": "optimized.json",
+      "stdout_sha256": "24bfed60c4b09720459c850715d1bc2a36903c648c83df818c782afd08c153e1"
+    }
+  ],
+  "scope": "Eight finite/all-length Lean declarations and exact bounded arithmetic controls; not unrestricted Collatz or all-cycle exclusion",
+  "status": "PASS",
+  "utc": "2026-11-23T04:27:10.502555+00:00"
+}

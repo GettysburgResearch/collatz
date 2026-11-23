@@ -1,0 +1,141 @@
+{
+  "fixture_sha256": "c4b08fe3e65d866cc75e6028916c7d1fbbcf02aa422a6694ad7019f7038a779e",
+  "fixtures": [
+    {
+      "a": 2,
+      "budget": 2,
+      "clock": 0,
+      "n": 1,
+      "negative_steps": 0,
+      "r": 0
+    },
+    {
+      "a": 1,
+      "budget": 1,
+      "clock": 1,
+      "n": 2,
+      "negative_steps": 0,
+      "r": 0
+    },
+    {
+      "a": -4,
+      "budget": 3,
+      "clock": 5,
+      "n": 3,
+      "negative_steps": 3,
+      "r": 2
+    },
+    {
+      "a": 1,
+      "budget": 1,
+      "clock": 2,
+      "n": 4,
+      "negative_steps": 0,
+      "r": 1
+    },
+    {
+      "a": -2,
+      "budget": 2,
+      "clock": 4,
+      "n": 5,
+      "negative_steps": 2,
+      "r": 2
+    },
+    {
+      "a": -2344,
+      "budget": 12,
+      "clock": 11,
+      "n": 7,
+      "negative_steps": 9,
+      "r": 5
+    },
+    {
+      "a": -1,
+      "budget": 1,
+      "clock": 3,
+      "n": 8,
+      "negative_steps": 1,
+      "r": 2
+    },
+    {
+      "a": -11,
+      "budget": 4,
+      "clock": 4,
+      "n": 16,
+      "negative_steps": 2,
+      "r": 3
+    },
+    {
+      "a": -6378476857984674337772,
+      "budget": 73,
+      "clock": 70,
+      "n": 27,
+      "negative_steps": 68,
+      "r": 28
+    },
+    {
+      "a": -839662,
+      "budget": 20,
+      "clock": 19,
+      "n": 65,
+      "negative_steps": 17,
+      "r": 10
+    },
+    {
+      "a": -816445058517909889489534,
+      "budget": 80,
+      "clock": 77,
+      "n": 129,
+      "negative_steps": 75,
+      "r": 32
+    },
+    {
+      "a": -408222525453781799736254,
+      "budget": 79,
+      "clock": 76,
+      "n": 193,
+      "negative_steps": 74,
+      "r": 32
+    },
+    {
+      "a": -1632890105521167576648698,
+      "budget": 81,
+      "clock": 78,
+      "n": 257,
+      "negative_steps": 76,
+      "r": 33
+    },
+    {
+      "a": -150060814,
+      "budget": 28,
+      "clock": 25,
+      "n": 513,
+      "negative_steps": 23,
+      "r": 14
+    },
+    {
+      "a": -20990663060480,
+      "budget": 45,
+      "clock": 42,
+      "n": 1023,
+      "negative_steps": 40,
+      "r": 21
+    },
+    {
+      "a": -252677512582657298584618224896613346085895782455660,
+      "budget": 168,
+      "clock": 165,
+      "n": 6171,
+      "negative_steps": 163,
+      "r": 68
+    }
+  ],
+  "giant_exponent_controls": 1,
+  "scope": "finite new-recognizer controls only",
+  "sharp_equality_family_controls": 16,
+  "status": "PASS",
+  "true_fixtures": 16,
+  "unreduced_fixtures": 16,
+  "wrong_candidates": 64,
+  "wrong_crossings": 2
+}

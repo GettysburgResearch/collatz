@@ -1,13 +1,13 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz, the requested residue-512 implication, and
-`FloorIntervalStep`.** The latest continuation attacks complete-witness
-transport, the ordinary escape remainder, and full-denominator cycle
-integrality in parallel, after refreshing the latest selected peer work
-and primary literature. It gives a written finite exact-recognition theorem
-for the complementary point, twelve new finite core-Lean declarations,
-an ordinary renewal/Haar theorem retaining the actual endpoint, and an
-exact obstruction to one complete-cycle local-energy mechanism.
+`FloorIntervalStep`.** The latest continuation attacks candidate
+construction, ordinary escape, and complete cycle integrality in parallel.
+It gives exact candidate recognition in the numerator's binary length,
+all-period block-language cycle exclusions using the whole denominator,
+an unequal-block dictionary extension, and a complete ordinary inverse-tree
+compiler with its signed cost retained. Twenty-one new core-Lean
+declarations certify the stated finite and all-length specializations.
 No successful universal certificate transformer or exclusion of all
 escaping or cyclic components is claimed.
 
@@ -17,7 +17,26 @@ remain available below. There is no input exponent or witness-length bound,
 `sorry`, or conjectural axiom in the new Lean modules. The project uses
 Lean 4.34.1 with core libraries only.
 
-## Latest checkpoint: exact dual recognition and source-preserving closure attacks
+## Latest checkpoint: numerator recognition and complete block-cycle exclusion
+
+The [new universal-step packet](universal-step-20261123/README.md) starts
+from published head `f47a5ec51aa5853f104013a6d5046d6220ff7423` and refreshes
+the changed interfaces in PR176, PR178, PR180, and PR182. A supplied
+negative triadic candidate is now recognized in polynomial bit complexity
+using at most its reduced numerator's binary length of paired transitions.
+Exact first-crossing acceptance emits an actual ordinary hit and the full
+tuple for an odd input. Candidate existence remains open.
+
+The whole cycle denominator forces an ordinary lattice and a minimum-edge
+carry cost, excluding arbitrary mixtures in unbounded families of blocks.
+The coordinating theorem permits unequal block lengths and odd counts.
+The escape lane proves summability of actual sibling Green ratios and
+constructs a complete inverse-tree bijection; the missing amortized cost
+estimate is kept explicit. The [execution and review report](../../reports/lean-exact-witness-global-20261121/universal-step-20261123/README.md)
+separates 21 new Lean declarations, written theorems, four exact checkers,
+and internal source-bound reconstructions.
+
+## Previous checkpoint: exact dual recognition and source-preserving closure attacks
 
 The [new packet](literature-closure/README.md) starts from published head
 `aaa132e904e4e6d0b438e963f76d72d79e2c7f34`. A supplied triadic candidate
