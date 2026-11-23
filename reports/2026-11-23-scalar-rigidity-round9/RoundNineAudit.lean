@@ -1,0 +1,47 @@
+import ArithmeticRigidity
+import CarryReturn
+import MaximumGate
+
+/-! Fresh dependency audit of every new public declaration. -/
+
+#print axioms Collatz.Round9ArithmeticRigidity.scalarPrefix
+#print axioms Collatz.Round9ArithmeticRigidity.blocks
+#print axioms Collatz.Round9ArithmeticRigidity.block_charges
+#print axioms Collatz.Round9ArithmeticRigidity.block_length
+#print axioms Collatz.Round9ArithmeticRigidity.arbitrary_word_scalar
+#print axioms Collatz.Round9ArithmeticRigidity.prefix_tail_difference
+#print axioms Collatz.Round9ArithmeticRigidity.arbitrary_word_shadow
+#print axioms Collatz.Round9ArithmeticRigidity.candidate_block_states
+#print axioms Collatz.Round9ArithmeticRigidity.coupled_equation_iff
+
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.highFive
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.highSeven
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.highPair
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.entry
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.lowFinish
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.paid
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.pairRun
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.normalized_physical_step
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.unit_carry_domination
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.high_pair_identity
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.paired_high_domination
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.high_pair_shift
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.high_pair_bounds
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.pair_run_bounds
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.pair_run_succ_upper
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.variable_pair_path_bound
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.direct_paid_identity
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.long_paid_identity
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.even_paid_envelope
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.odd_paid_envelope
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.paid_third
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.short_prefix_descent
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.ten_prefix_descent
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.exact_threshold_values
+#print axioms Collatz.ScalarRigidityRoundNine.CarryReturn.carry_charge_telescope
+
+#print axioms Collatz.ScalarRigidityRoundNine.MaximumGate.coefficient_identity
+#print axioms Collatz.ScalarRigidityRoundNine.MaximumGate.seven_pair_obstruction
+#print axioms Collatz.ScalarRigidityRoundNine.MaximumGate.rational_return_gate
+#print axioms Collatz.ScalarRigidityRoundNine.MaximumGate.complete_clock_gate
+#print axioms Collatz.ScalarRigidityRoundNine.MaximumGate.shifted_valuation_gate

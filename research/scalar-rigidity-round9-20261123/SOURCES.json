@@ -1,0 +1,87 @@
+{
+  "schema": "collatz-round9-sources/v1",
+  "published_parent": "6352608dd6c04735e1f8bd86fef4ebc97b1aeacb",
+  "repository_inputs": [
+    {
+      "pr": 182,
+      "commit": "6352608dd6c04735e1f8bd86fef4ebc97b1aeacb",
+      "path": "research/repo-synthesis-round8-20261123/GERM_BRIDGE.md",
+      "claims": "R8-G1--R8-G4",
+      "blob": "540110f09cf68e3309fd83fea9c7ae497536ded4"
+    },
+    {
+      "pr": 182,
+      "commit": "6352608dd6c04735e1f8bd86fef4ebc97b1aeacb",
+      "path": "research/repo-synthesis-round8-20261123/PRESSURE_CONSTRUCTION.md",
+      "claims": "R8-P1--R8-P5",
+      "blob": "7ef222d23f59a2dffd936dbfa93765df064db166"
+    },
+    {
+      "pr": 182,
+      "commit": "6352608dd6c04735e1f8bd86fef4ebc97b1aeacb",
+      "path": "research/repo-synthesis-round8-20261123/ORDINARY_SELECTOR.md",
+      "claims": "R8-O1--R8-O5",
+      "blob": "27ac47ee345d3197bcd85d5128419c601da6ebe3"
+    },
+    {
+      "pr": 182,
+      "commit": "3954c775ba74e1f40776ff38cb4282698d4a334a",
+      "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+      "claims": "selection (1)--(3), forward (6), actual escaping component only",
+      "blob": "9346c3b93fbd2e336a4e1c2e80d7b92ff5f34162"
+    }
+  ],
+  "literature": [
+    {
+      "authors": "Terence Tao",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-all-orbits-of-the-collatz-map-attain-almost-bounded-values/1008CC2DF91AF87F66D190C5E01C907F",
+      "inspected": "Definition 1.7, Proposition 1.9 and Section 4 proof",
+      "use": "finite actual valuation cylinders; full source-law argument supplied in this packet"
+    },
+    {
+      "authors": "Boris Solomyak",
+      "title": "Notes on Bernoulli convolutions",
+      "url": "https://u.math.biu.ac.il/~solomyb/RESEARCH/Bernotes.pdf",
+      "inspected": "Section 2, Theorems 2.1 and 2.4 and accompanying proofs",
+      "use": "method inspiration; pure type and nondecay proved directly for the countable geometric affine law"
+    },
+    {
+      "authors": "Boris Adamczewski and Yann Bugeaud",
+      "title": "On the complexity of algebraic numbers I",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v165-n2-p04.pdf",
+      "inspected": "Condition (*), Theorems 5 and 5A",
+      "use": "hypothesis boundary; no raw-gap periodicity imported"
+    },
+    {
+      "authors": "Pietro Corvaja and Umberto Zannier",
+      "title": "Some New Applications of the Subspace Theorem",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F6BB76838F610EB90B204764335ABCA/S0010437X02000258a.pdf/div-class-title-some-new-applications-of-the-subspace-theorem-div.pdf",
+      "inspected": "Theorems 1, 3 and 4 by the arithmetic author and independent reviewer",
+      "use": "height and nonvanishing hypotheses audited; no closure theorem imported"
+    },
+    {
+      "authors": "Par Kurlberg",
+      "title": "Bounds on exponential sums over small multiplicative subgroups",
+      "url": "https://people.kth.se/~kurlberg/eprints/short_expsum.pdf",
+      "inspected": "Section 1 complete Gauss-sum bound",
+      "use": "qualified complete prime-coset estimate in R9-P6; stronger small-subgroup theorem not used"
+    },
+    {
+      "authors": "Riho Terras",
+      "title": "A stopping time problem on the positive integers",
+      "url": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/30/3/101028/a-stopping-time-problem-on-the-positive-integers",
+      "inspected": "publisher record and indexed opening by the carry lane; both PDF downloads returned403",
+      "use": "stopping-target motivation only; no later theorem imported"
+    },
+    {
+      "authors": "Borge Jessen and Aurel Wintner",
+      "title": "Distribution functions and the Riemann zeta function",
+      "url": "https://www.ams.org/tran/1935-038-01/S0002-9947-1935-1501802-5/S0002-9947-1935-1501802-5.pdf",
+      "inspected": false,
+      "retrieval": "HTTP403 at both located AMS PDF URLs",
+      "use": "discovery only; direct pure-type argument supplied instead"
+    }
+  ],
+  "claim_status": "written results and finite Lean cores; universal Collatz arithmetic remains open"
+}

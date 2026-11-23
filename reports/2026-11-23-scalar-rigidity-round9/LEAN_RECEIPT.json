@@ -1,0 +1,96 @@
+{
+  "schema": "collatz-round9-lean-execution/v1",
+  "recorded_utc": "2026-11-23T14:03:49.154963+00:00",
+  "success": true,
+  "compiler_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "compiler_archive_verified_in_parent": "reports/2026-11-23-repo-synthesis-round8/LEAN_RECEIPT.json",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/collatz-round8-20261123/lean-fresh-round9",
+  "output_directory_initially_empty": true,
+  "source_sha256": {
+    "research/scalar-rigidity-round9-20261123/ArithmeticRigidity.lean": "4eece1db14104297ff26491dd496f754c37da60cdaaf0849cce8de36608fecb8",
+    "research/scalar-rigidity-round9-20261123/CarryReturn.lean": "e1151b7c0148a12138a43f5c54c0349617711d0474459e5d1dcac9d626dfd1f0",
+    "research/scalar-rigidity-round9-20261123/MaximumGate.lean": "812cb007aec7ddc494198153721026e56a11dada5f5ad8db18e9eadd92ff54aa",
+    "reports/2026-11-23-scalar-rigidity-round9/RoundNineAudit.lean": "51f1548043c1bc3e4a7c599bb689090e207f252a61b07c565c7317d0f9571d6c"
+  },
+  "lean_path": "/workspace/scratch/collatz-round8-20261123/lean-fresh-round9:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/Cli/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/mathlib/.lake/build/lib/lean:/workspace/scratch/collatz-round8-20261123/lean-4.34.1-linux/lib/lean",
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/collatz-round8-20261123/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round9/ArithmeticRigidity.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123/ArithmeticRigidity.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 8.036
+    },
+    {
+      "argv": [
+        "/workspace/scratch/collatz-round8-20261123/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round9/CarryReturn.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123/CarryReturn.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 6.2
+    },
+    {
+      "argv": [
+        "/workspace/scratch/collatz-round8-20261123/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round9/MaximumGate.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123/MaximumGate.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 4.861
+    },
+    {
+      "argv": [
+        "/workspace/scratch/collatz-round8-20261123/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/collatz-round8-20261123/collatz/reports/2026-11-23-scalar-rigidity-round9",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/collatz-round8-20261123/lean-fresh-round9/RoundNineAudit.olean",
+        "/workspace/scratch/collatz-round8-20261123/collatz/reports/2026-11-23-scalar-rigidity-round9/RoundNineAudit.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.Round9ArithmeticRigidity.scalarPrefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.blocks' does not depend on any axioms\n'Collatz.Round9ArithmeticRigidity.block_charges' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.block_length' depends on axioms: [propext, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.arbitrary_word_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.prefix_tail_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.arbitrary_word_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.candidate_block_states' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.Round9ArithmeticRigidity.coupled_equation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.highFive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.highSeven' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.highPair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.entry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.lowFinish' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.pairRun' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.normalized_physical_step' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.unit_carry_domination' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.high_pair_identity' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.paired_high_domination' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.high_pair_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.high_pair_bounds' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.pair_run_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.pair_run_succ_upper' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.variable_pair_path_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.direct_paid_identity' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.long_paid_identity' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.even_paid_envelope' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.odd_paid_envelope' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.paid_third' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.short_prefix_descent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.ten_prefix_descent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.exact_threshold_values' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.CarryReturn.carry_charge_telescope' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.MaximumGate.coefficient_identity' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.MaximumGate.seven_pair_obstruction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.MaximumGate.rational_return_gate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.MaximumGate.complete_clock_gate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ScalarRigidityRoundNine.MaximumGate.shifted_valuation_gate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": "",
+      "seconds": 4.727
+    }
+  ],
+  "audited_declarations": 39,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms_or_admitted_proofs": false,
+  "scope": "30 finite theorems and nine definitions; actual scalar/probability/group arguments remain written"
+}

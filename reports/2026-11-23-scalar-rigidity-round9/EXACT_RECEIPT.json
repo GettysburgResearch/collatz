@@ -1,0 +1,61 @@
+{
+  "schema": "collatz-round9-exact-execution/v1",
+  "recorded_utc": "2026-11-23T14:03:31.004317+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "success": true,
+  "byte_identical": true,
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123/run_exact_controls.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "seconds": 5.673,
+      "output": {
+        "path": "reports/2026-11-23-scalar-rigidity-round9/EXACT_CONTROLS.json",
+        "bytes": 37442,
+        "sha256": "2e34eb481b94e71e0df56ed0715340c7daa779b7e3be5cd998b990a66c0a7251"
+      },
+      "explicit_checks": 559934,
+      "scientific_inputs": 15,
+      "lane_checks": {
+        "actual_source_law": 490569,
+        "arithmetic_rigidity": 26856,
+        "complete_denominator_rigidity": 14768,
+        "ordinary_carry_return": 27741
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/collatz-round8-20261123/collatz/research/scalar-rigidity-round9-20261123/run_exact_controls.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "seconds": 4.512,
+      "output": {
+        "path": "reports/2026-11-23-scalar-rigidity-round9/EXACT_CONTROLS_OPTIMIZED.json",
+        "bytes": 37442,
+        "sha256": "2e34eb481b94e71e0df56ed0715340c7daa779b7e3be5cd998b990a66c0a7251"
+      },
+      "explicit_checks": 559934,
+      "scientific_inputs": 15,
+      "lane_checks": {
+        "actual_source_law": 490569,
+        "arithmetic_rigidity": 26856,
+        "complete_denominator_rigidity": 14768,
+        "ordinary_carry_return": 27741
+      }
+    }
+  ],
+  "scope": "bounded controls, not an all-time Collatz proof"
+}
