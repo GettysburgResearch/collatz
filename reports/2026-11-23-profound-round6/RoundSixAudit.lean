@@ -1,0 +1,21 @@
+import RationalSelection
+import CycleArithmetic
+import CollisionClosure
+
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.ones_append
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.carryPolynomial_append
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.carry_eval_nonneg
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.carry_eval_pos
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.periodic_numerator_eval
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.periodic_numerator_positive
+#print axioms Collatz.ProfoundRoundSix.RationalSelection.no_cancellation_at_positive_root
+#print axioms Collatz.ProfoundRoundSix.CycleArithmetic.two_pow_eq_three_pow_add_one
+#print axioms Collatz.ProfoundRoundSix.CycleArithmetic.cycle_product
+#print axioms Collatz.ProfoundRoundSix.CycleArithmetic.cycle_clock_positive
+#print axioms Collatz.ProfoundRoundSix.CycleArithmetic.cycle_clock_two_rigidity
+#print axioms Collatz.ProfoundRoundSix.CycleArithmetic.reduced_clock_positive
+#print axioms Collatz.ProfoundRoundSix.CycleArithmetic.nontrivial_cycle_reduced_clock_prime
+#print axioms CollatzShell.CollisionClosure.source_eq_of_residue_and_quotient
+#print axioms CollatzShell.CollisionClosure.orderedResidueCollisions_card_le
+#print axioms CollatzShell.CollisionClosure.residueCollision_le_of_height
+#print axioms CollatzShell.CollisionClosure.orderedResidueCollisions_eq_diagonal

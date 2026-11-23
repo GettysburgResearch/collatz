@@ -1,0 +1,150 @@
+{
+  "date_utc": "2026-11-23T06:05:43.115816+00:00",
+  "scope": "Fresh complete local dependency build and all 17 new public theorem axiom audits; chronological polynomial noncancellation, positive-cycle prime arithmetic, and full finite collision packing are formal. Binomial irreducibility, Taylor-radius/denominator growth, the source-qualified arithmetic-germ consumer, and stationary asymptotics remain written mathematics.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/3f23e1a583aa/round6-lean-fresh",
+  "source_sha256": {
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/closure-round2-20261123/CycleCancellation.lean": "7d9118b6a8efeefc6e6b3229b95420771f88291ed2583f259c00ae665648724d",
+    "research/profound-round6-20261123/RationalSelection.lean": "da6bba30cbec4c9232d9c67fa310e49bfb3d82c55cad13e2e6ea1b3189fdb6e3",
+    "research/profound-round6-20261123/CycleArithmetic.lean": "80c89fba5c1fd4e3ef0bd34686874594348d407b03027d1f0dfc563c7ff65892",
+    "research/profound-round6-20261123/CollisionClosure.lean": "7c6dd6ed0d61478afcc65bbc07dda2778677da46e0a112277a0570b4b64d44f0",
+    "reports/2026-11-23-profound-round6/RoundSixAudit.lean": "7b723eb68f71ba63af90388a7705dd1cce333fbd690e25977cab7775b8fdc00a"
+  },
+  "new_public_declarations": [
+    "Collatz.ProfoundRoundSix.RationalSelection.ones_append",
+    "Collatz.ProfoundRoundSix.RationalSelection.carryPolynomial_append",
+    "Collatz.ProfoundRoundSix.RationalSelection.carry_eval_nonneg",
+    "Collatz.ProfoundRoundSix.RationalSelection.carry_eval_pos",
+    "Collatz.ProfoundRoundSix.RationalSelection.periodic_numerator_eval",
+    "Collatz.ProfoundRoundSix.RationalSelection.periodic_numerator_positive",
+    "Collatz.ProfoundRoundSix.RationalSelection.no_cancellation_at_positive_root",
+    "Collatz.ProfoundRoundSix.CycleArithmetic.two_pow_eq_three_pow_add_one",
+    "Collatz.ProfoundRoundSix.CycleArithmetic.cycle_product",
+    "Collatz.ProfoundRoundSix.CycleArithmetic.cycle_clock_positive",
+    "Collatz.ProfoundRoundSix.CycleArithmetic.cycle_clock_two_rigidity",
+    "Collatz.ProfoundRoundSix.CycleArithmetic.reduced_clock_positive",
+    "Collatz.ProfoundRoundSix.CycleArithmetic.nontrivial_cycle_reduced_clock_prime",
+    "CollatzShell.CollisionClosure.source_eq_of_residue_and_quotient",
+    "CollatzShell.CollisionClosure.orderedResidueCollisions_card_le",
+    "CollatzShell.CollisionClosure.residueCollision_le_of_height",
+    "CollatzShell.CollisionClosure.orderedResidueCollisions_eq_diagonal"
+  ],
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round6-lean-fresh/CycleWordAlgebra.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/CycleWordAlgebra.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 2.832,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round6-lean-fresh/CycleCancellation.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round2-20261123/CycleCancellation.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.364,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round6-lean-fresh/RationalSelection.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123/RationalSelection.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 4.912,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round6-lean-fresh/CycleArithmetic.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123/CycleArithmetic.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.498,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round6-lean-fresh/CollisionClosure.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/profound-round6-20261123/CollisionClosure.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.143,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-profound-round6",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round6-lean-fresh/RoundSixAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-profound-round6/RoundSixAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.97,
+      "stdout": "'Collatz.ProfoundRoundSix.RationalSelection.ones_append' depends on axioms: [propext]\n'Collatz.ProfoundRoundSix.RationalSelection.carryPolynomial_append' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.RationalSelection.carry_eval_nonneg' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.RationalSelection.carry_eval_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ProfoundRoundSix.RationalSelection.periodic_numerator_eval' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.RationalSelection.periodic_numerator_positive' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.RationalSelection.no_cancellation_at_positive_root' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.CycleArithmetic.two_pow_eq_three_pow_add_one' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.CycleArithmetic.cycle_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ProfoundRoundSix.CycleArithmetic.cycle_clock_positive' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.CycleArithmetic.cycle_clock_two_rigidity' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ProfoundRoundSix.CycleArithmetic.reduced_clock_positive' depends on axioms: [propext, Quot.sound]\n'Collatz.ProfoundRoundSix.CycleArithmetic.nontrivial_cycle_reduced_clock_prime' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.CollisionClosure.source_eq_of_residue_and_quotient' depends on axioms: [propext]\n'CollatzShell.CollisionClosure.orderedResidueCollisions_card_le' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.CollisionClosure.residueCollision_le_of_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.CollisionClosure.orderedResidueCollisions_eq_diagonal' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}
