@@ -1,0 +1,143 @@
+{
+  "date_utc": "2026-11-23",
+  "parent": "e4367dd2c4406c1041e66d82dfba822908747fa3",
+  "scope": "Selected source refresh during round seven. Metadata is not a proof audit. Only the named full texts and their stated claims are used.",
+  "upstream_snapshot": [
+    {
+      "pr": 182,
+      "head": "e4367dd2c4406c1041e66d82dfba822908747fa3",
+      "title": "Collatz: arithmetic-germ cycle obstruction and source collisions",
+      "updated_at": "2026-11-23T06:17:32Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "pr": 177,
+      "head": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "title": "Collatz: ordinary entrance laws and adaptive integer descent",
+      "updated_at": "2026-11-23T06:10:57Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "pr": 175,
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "title": "Collatz: unconditional cycle budgets and fixed-source arithmetic",
+      "updated_at": "2026-11-23T05:42:14Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "pr": 178,
+      "head": "398b3a04da071e96362005792417bd5cf8cc6497",
+      "title": "Collatz: prove full gcd bounds for unbounded cycle families",
+      "updated_at": "2026-11-23T05:27:44Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "pr": 176,
+      "head": "81095581a1dccb8b5d89ee2ea3e9ba4a7b447e0a",
+      "title": "Collatz checkpoint 18: finite ordinary repairs and all-gap collisions",
+      "updated_at": "2026-11-23T04:36:00Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "pr": 180,
+      "head": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "title": "Collatz: complete-carry bounds and sharp affine-model regularity",
+      "updated_at": "2026-11-23T04:29:06Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "pr": 185,
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "updated_at": "2026-11-23T01:18:35Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    }
+  ],
+  "full_text_inputs": [
+    {
+      "pr": 182,
+      "head": "e4367dd2c4406c1041e66d82dfba822908747fa3",
+      "path": "research/profound-round6-20261123/RATIONAL_SELECTION.md",
+      "git_blob": "54d7949ac80ec6b8286f0d03d579f9f6e0efe95f",
+      "claims": "R6-SEL-1 through R6-SEL-4, actual binary germ, reduced-clock noncancellation and nonstandard-cycle prime",
+      "scope": "Written noncancellation and finite ordinary-cycle inputs; no new invocation of the analytic rationality consumer."
+    },
+    {
+      "pr": 182,
+      "head": "e4367dd2c4406c1041e66d82dfba822908747fa3",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "git_blob": "6881dc864f3b586958bd46d5c38b1c2524008565",
+      "claims": "Entire injective odd-orbit count F(X)<=C X^theta/sqrt(1+log X)",
+      "scope": "Same forward orbit, not inverse basin density."
+    },
+    {
+      "pr": 177,
+      "head": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/pressure/ORDINARY_ENTRANCE_LAW.md",
+      "git_blob": "5779df91e1b5daa5a47e56a668424d106823340c",
+      "claims": "EL1--EL5: terminal-source law, nested predecessor sets, retained positive normalizer, ordinary limit",
+      "scope": "Source-qualified full inverse law on a hypothetical escaping component. No forward empirical-law convergence supplied."
+    },
+    {
+      "pr": 177,
+      "head": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/escape/BALANCED_INVERSE_TRANSPORT.md",
+      "git_blob": "8eb631c4c7718c0013027b8cbab72a5bc76f1dda",
+      "claims": "Canonical parent-colour/exponent-lift compiler",
+      "scope": "Periodic ordinary control only; no escaping-ray counterexample."
+    },
+    {
+      "pr": 177,
+      "head": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/arithmetic/ADAPTIVE_LATTICE_DESCENT.md",
+      "claims": "Paid cross-carry rank and first unresolved universal block choice",
+      "scope": "Context for ordinary attack, not an imported universal descent theorem."
+    },
+    {
+      "pr": 177,
+      "head": "3124c03a6a672cb70cdd5604eaf2d4eb19a467e3",
+      "path": "research/lean-exact-witness-global-20261121/profound-step-20261123/repair/ADELIC_INTEGER_REPAIR.md",
+      "claims": "Canonical fixed-source repair and small-product boundary",
+      "scope": "Retains the specified-form obstruction; does not exclude different constructions."
+    },
+    {
+      "pr": 175,
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "path": "research/lean-global-closure-20261121/risk26/README.md",
+      "claims": "Current cycle-budget and fixed-source roadmap",
+      "scope": "Full overview inspected, not every neighboring proof."
+    },
+    {
+      "pr": 175,
+      "head": "67664c6bf555bf7f7fcec987acb79500071dce4b",
+      "path": "research/lean-global-closure-20261121/risk26/triadic/FIXED_SOURCE_GLUING_BOUNDARY.md",
+      "claims": "Distinct-completion gluing and specified Subspace-product boundary",
+      "scope": "Direct construction context; no universal no-go theorem inferred."
+    }
+  ],
+  "literature_discovery_only": [
+    {
+      "url": "https://www.ias.edu/sites/default/files/RationalityNotes.pdf",
+      "topic": "Pólya--Bertrandias rationality",
+      "inspection": "search excerpt only; no new theorem imported"
+    },
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A66CC2C3756073527FE62A3624FF5BF0/S0008414X00041675a.pdf/on_arithmetic_properties_of_the_taylor_series_of_rational_functions.pdf",
+      "topic": "D. G. Cantor, arithmetic properties of Taylor series of rational functions",
+      "inspection": "search/abstract discovery only; the finite resultant proof here is self-contained"
+    },
+    {
+      "url": "https://epubs.siam.org/doi/full/10.1137/25M1806776",
+      "topic": "Arithmetic holonomy and Diophantine approximation",
+      "inspection": "search excerpt only; no new holonomy estimate used"
+    }
+  ],
+  "first_unsupported_global_step": "Construct the needed actual rational arithmetic germ for one arbitrary positive ordinary source, or a universal paid ordinary descent selector. No new route closes this step."
+}

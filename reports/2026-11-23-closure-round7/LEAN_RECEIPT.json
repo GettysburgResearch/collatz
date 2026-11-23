@@ -1,0 +1,64 @@
+{
+  "date_utc": "2026-11-23T06:56:34.683280+00:00",
+  "scope": "Seven public arithmetic finite-jet transport theorems, freshly compiled with their full local dependency graph (no older repository modules imported). Existing Mathlib objects reused. Actual analytic attachment, exact valuation equality, resultant bound, delayed-prime family, ordinary-shadow theorem and source-law asymptotics remain written mathematics.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "output_directory": "/workspace/scratch/3f23e1a583aa/round7-lean-fresh",
+  "source_sha256": {
+    "research/closure-round7-20261123/GermConstruction.lean": "e57b0ebd48825e5cf214dc458e697d957f86affeb064f46a2e49b52420ab698a",
+    "reports/2026-11-23-closure-round7/RoundSevenAudit.lean": "d2d8fc03cbf2fe2dad88790f3d84469d1a96cc8978baa1da453d3d2adf0ed5fe"
+  },
+  "new_public_declarations": [
+    "Collatz.ClosureRoundSeven.GermConstruction.binaryIntegral_int_mul",
+    "Collatz.ClosureRoundSeven.GermConstruction.integral_of_double",
+    "Collatz.ClosureRoundSeven.GermConstruction.triangular_integrality",
+    "Collatz.ClosureRoundSeven.GermConstruction.even_step_cleared",
+    "Collatz.ClosureRoundSeven.GermConstruction.odd_step_cleared",
+    "Collatz.ClosureRoundSeven.GermConstruction.odd_step_integral",
+    "Collatz.ClosureRoundSeven.GermConstruction.jet_subring_iff"
+  ],
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round7-20261123",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round7-lean-fresh/GermConstruction.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/closure-round7-20261123/GermConstruction.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 5.189,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-closure-round7",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/round7-lean-fresh/RoundSevenAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/reports/2026-11-23-closure-round7/RoundSevenAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 1.937,
+      "stdout": "'Collatz.ClosureRoundSeven.GermConstruction.binaryIntegral_int_mul' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundSeven.GermConstruction.integral_of_double' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundSeven.GermConstruction.triangular_integrality' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundSeven.GermConstruction.even_step_cleared' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundSeven.GermConstruction.odd_step_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.ClosureRoundSeven.GermConstruction.odd_step_integral' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Collatz.ClosureRoundSeven.GermConstruction.jet_subring_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}

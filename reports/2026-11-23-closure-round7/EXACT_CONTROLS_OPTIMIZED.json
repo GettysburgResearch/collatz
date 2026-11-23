@@ -1,0 +1,432 @@
+{
+  "descent": {
+    "arithmetic": "exact integers and fractions; no optimization-sensitive assertions",
+    "convergent_ordinary_shadows": [
+      {
+        "binary_jet_difference_lower_bounds": [
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5
+        ],
+        "binary_jet_difference_valuations": [
+          12,
+          13,
+          11,
+          11,
+          8,
+          12,
+          8,
+          10
+        ],
+        "changing_ordinary_witness": true,
+        "checked_ordinary_coefficients_in_Z_one_third": 8,
+        "literal_steps_through_hit_one": 48,
+        "ordinary_source": 3474999712461,
+        "ordinary_source_bits": 42,
+        "power_of_two_endpoint_exponent": 36,
+        "prefix_length": 12,
+        "prefix_odd_steps": 4
+      },
+      {
+        "binary_jet_difference_lower_bounds": [
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17
+        ],
+        "binary_jet_difference_valuations": [
+          24,
+          28,
+          24,
+          26,
+          21,
+          22,
+          20,
+          20
+        ],
+        "changing_ordinary_witness": true,
+        "checked_ordinary_coefficients_in_Z_one_third": 8,
+        "literal_steps_through_hit_one": 2544,
+        "ordinary_source": null,
+        "ordinary_source_bits": 2532,
+        "power_of_two_endpoint_exponent": 2520,
+        "prefix_length": 24,
+        "prefix_odd_steps": 8
+      }
+    ],
+    "family_controls": [
+      {
+        "A": 3,
+        "all_literal_cycle_steps_checked": 12,
+        "checked_denominator_five_exponents": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "first_denominator_five_order": 1,
+        "full_denominator_bits": 12,
+        "m": 4,
+        "minimum_greater_than": "1/10",
+        "odd_steps": 4,
+        "ordinary_integer_source": false,
+        "p": 1,
+        "primitive_word": true,
+        "reduced_source_denominator_bits": 10,
+        "word_length": 12
+      },
+      {
+        "A": 3,
+        "all_literal_cycle_steps_checked": 42,
+        "checked_denominator_five_exponents": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "first_denominator_five_order": 2,
+        "full_denominator_bits": 42,
+        "m": 14,
+        "minimum_greater_than": "1/10",
+        "odd_steps": 14,
+        "ordinary_integer_source": false,
+        "p": 1,
+        "primitive_word": true,
+        "reduced_source_denominator_bits": 40,
+        "word_length": 42
+      },
+      {
+        "A": 3,
+        "all_literal_cycle_steps_checked": 117,
+        "checked_denominator_five_exponents": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "first_denominator_five_order": 3,
+        "full_denominator_bits": 117,
+        "m": 39,
+        "minimum_greater_than": "1/10",
+        "odd_steps": 39,
+        "ordinary_integer_source": false,
+        "p": 1,
+        "primitive_word": true,
+        "reduced_source_denominator_bits": 115,
+        "word_length": 117
+      },
+      {
+        "A": 3,
+        "all_literal_cycle_steps_checked": 1242,
+        "checked_denominator_five_exponents": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "first_denominator_five_order": 4,
+        "full_denominator_bits": 1242,
+        "m": 414,
+        "minimum_greater_than": "1/10",
+        "odd_steps": 414,
+        "ordinary_integer_source": false,
+        "p": 1,
+        "primitive_word": true,
+        "reduced_source_denominator_bits": 1240,
+        "word_length": 1242
+      },
+      {
+        "A": 6183,
+        "all_literal_cycle_steps_checked": 24732,
+        "checked_denominator_five_exponents": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "first_denominator_five_order": 1,
+        "full_denominator_bits": 24730,
+        "m": 4,
+        "minimum_greater_than": 11,
+        "odd_steps": 15604,
+        "ordinary_integer_source": false,
+        "p": 3901,
+        "primitive_word": true,
+        "reduced_source_denominator_bits": 24728,
+        "word_length": 24732
+      }
+    ],
+    "scope": {
+      "all_order_delay_proof_is_written_mathematics": true,
+      "delay_concerns_only_prime_five": true,
+      "finite_jet_replay_is_not_an_all_order_computation": true,
+      "ordinary_collatz_conjecture_proved": false,
+      "ordinary_shadow_source_changes_with_prefix": true,
+      "rational_family_has_other_source_denominator_primes": true
+    },
+    "status": "PASS"
+  },
+  "detector": {
+    "certificates": [
+      {
+        "first_forbidden_order": 0,
+        "length": 3,
+        "odd_count": 1,
+        "period_only_count": 9,
+        "prime": 5,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 1,
+        "length": 6,
+        "odd_count": 2,
+        "period_only_count": 27,
+        "prime": 5,
+        "resultant_bound": 3
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 6,
+        "odd_count": 2,
+        "period_only_count": 27,
+        "prime": 5,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 8,
+        "odd_count": 3,
+        "period_only_count": 320,
+        "prime": 229,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 5,
+        "odd_count": 1,
+        "period_only_count": 25,
+        "prime": 29,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 8,
+        "odd_count": 3,
+        "period_only_count": 320,
+        "prime": 229,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 12,
+        "odd_count": 3,
+        "period_only_count": 80,
+        "prime": 13,
+        "resultant_bound": 4
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 9,
+        "odd_count": 3,
+        "period_only_count": 45,
+        "prime": 5,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 11,
+        "odd_count": 4,
+        "period_only_count": 847,
+        "prime": 7,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 0,
+        "length": 11,
+        "odd_count": 4,
+        "period_only_count": 847,
+        "prime": 281,
+        "resultant_bound": 0
+      },
+      {
+        "first_forbidden_order": 1,
+        "length": 12,
+        "odd_count": 4,
+        "period_only_count": 63,
+        "prime": 5,
+        "resultant_bound": 3
+      },
+      {
+        "first_forbidden_order": 2,
+        "length": 42,
+        "odd_count": 14,
+        "period_only_count": 243,
+        "prime": 5,
+        "resultant_bound": 6
+      },
+      {
+        "first_forbidden_order": 3,
+        "length": 117,
+        "odd_count": 39,
+        "period_only_count": 693,
+        "prime": 5,
+        "resultant_bound": 9
+      }
+    ],
+    "scope": "selected exact rational cycles and positive rational preperiods",
+    "status": "pass",
+    "totals": {
+      "cycle_words": 15,
+      "independent_determinants": 12,
+      "literal_rational_steps": 247,
+      "positive_preperiods": 15,
+      "prefix_coefficient_comparisons": 97,
+      "prefix_prime_order_checks": 13,
+      "prime_certificates": 13
+    },
+    "unproved": "construction of the actual rational germ and eventual periodicity for every ordinary source"
+  },
+  "germ": {
+    "derivative_zero_countercontrol": {
+      "c1": "0",
+      "source": 85
+    },
+    "scope": "finite exact replay on explicitly convergent ordinary sources",
+    "status": "pass",
+    "totals": {
+      "actual_prefixes": 1950,
+      "coefficient_prefix_identities": 23400,
+      "coefficient_step_identities": 22584,
+      "direct_carry_identities": 3180,
+      "exact_denominator_clock_checks": 23400,
+      "integral_tail_coefficients_checked": 23515,
+      "jet_order": 11,
+      "maximum_initial_ternary_exponent": 195,
+      "maximum_shortcut_steps": 329,
+      "sources": 68
+    },
+    "unproved": "rationality of the actual Taylor germ for an arbitrary positive source"
+  },
+  "scope": "selected exact finite controls, not a universal Collatz proof or an all-order computation",
+  "source_sha256": {
+    "FINITE_JET_BOUND.md": "7878da102eb28ebcb441c6a2392d5424370409cb0cb4d9582ecf9bf792f414b6",
+    "GERM_CONSTRUCTION.md": "90a1decd0e248788bb04ead0769e5ab17bf1d4e2b20f92ec44fb5fea99048e83",
+    "GermConstruction.lean": "e57b0ebd48825e5cf214dc458e697d957f86affeb064f46a2e49b52420ab698a",
+    "ORDINARY_DESCENT.md": "613188d23cf7bdaa15eb5f64563e5d6af1de8bf239d1ddbd9c7d59cfe0d946a6",
+    "SOURCE_TRANSFER.md": "4fe8f26247ca0beeeb5822a6654871247ea77a58b027032ec4dd01dbcfedb502",
+    "descent_controls.py": "3cbf78515a1324c63141eb1f66f5c01b811dfa54e35a1cbfa8130388ffc7223d",
+    "detector_controls.py": "8fa15d75462a23cb4854fe45d17f8d46622bacb2ece62b29979766545dfb6616",
+    "exact_replay.py": "f16b04efe5246e5926dd5d2f1cb13c03b8e26eb2247ba80bd6d7fa940accaea6",
+    "germ_controls.py": "58af0296144179eecf5a98b15c45f5af9f0b8834deedd58dffb9630b45c26dec",
+    "transfer_controls.py": "d6183a9900f8c3b336bbc245b824d103a4050a8e3b3c4c7724aca5216b07564a"
+  },
+  "success": true,
+  "transfer": {
+    "arithmetic": "integers and fractions only; no assertions or floating point",
+    "checks_by_category": {
+      "actual transported ordinary source": 128,
+      "compiler all-depth lower bound at checked depth": 129,
+      "compiler induction step": 128,
+      "complete ordinary-quotient packing": 210,
+      "exact finite normalizers": 35,
+      "exact ordinary overlap": 35,
+      "exact projected separation lower bound": 733,
+      "exponentiated exact relative-entropy identity": 35,
+      "exponentiated relative-entropy lower bound": 35,
+      "finite exact layer-cake identity": 12,
+      "finite inverse law is normalized": 35,
+      "forward residue-set packing": 733,
+      "forward trial lies in actual ancestor domain": 35,
+      "height retains distinct sources": 18,
+      "injective finite forward prefix": 3,
+      "integer predecessor": 128,
+      "literal inverse edge and exact valuation": 128,
+      "nested actual ancestor sets": 35,
+      "ordinary event lower bound": 733,
+      "ordinary integer tail bound": 733,
+      "ordinary low sources survive projection": 733,
+      "periodic original root": 129,
+      "positive odd ternary unit": 391,
+      "potential parent present": 385,
+      "retained original-source normalizer": 3,
+      "retained parent colour": 128,
+      "retained-quotient scale": 210,
+      "same ordinary source has same potential": 385,
+      "same ordinary source has same trajectory": 391,
+      "same-forward-support envelope": 35,
+      "stopped potential edge identity": 385,
+      "stopped potential ordinary upper bound": 385
+    },
+    "compiler": {
+      "canonical_exponent_counts": {
+        "2": 40,
+        "4": 38,
+        "6": 50
+      },
+      "depth": 128,
+      "final_value_bits": 336,
+      "first_transported_values": [
+        85,
+        1813,
+        38677,
+        825109,
+        4400581,
+        93879061,
+        500688325,
+        667584433,
+        890112577
+      ],
+      "scope": "periodic ordinary control; not an escaping counterexample",
+      "signed_displacement": 276
+    },
+    "exact_checks": 7621,
+    "finite_source": {
+      "distinct_ordinary_sources": 237,
+      "finite_inverse_laws_checked": 35,
+      "infinite_escape_or_asymptotic_claim": false,
+      "projected_cutoff_cases_checked": 733,
+      "scope": "finite stopped-potential laws on enumerated ordinary ancestors",
+      "seeds": [
+        7,
+        31,
+        47,
+        97,
+        871,
+        837799
+      ]
+    },
+    "not_checked": [
+      "existence of an escaping ordinary component",
+      "infinite inverse entrance-law construction",
+      "whole-orbit sparse counting theorem",
+      "asymptotic total-variation and relative-entropy rates",
+      "missing sibling-pressure lower or forward collision transfer"
+    ],
+    "status": "PASS"
+  }
+}
