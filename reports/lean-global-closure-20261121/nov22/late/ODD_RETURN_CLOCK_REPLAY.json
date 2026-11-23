@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "time_utc": "2026-11-22T05:48:02.236263+00:00",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "source": "/workspace/scratch/957bb0caa6f2/agent22_merger/OddReturnClock.lean",
+  "source_sha256": "f532f89fb9042e7073e992bf26e0049f28829171075e23e87edfa50fd66439ac",
+  "command": [
+    "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-DautoImplicit=false",
+    "-o",
+    "/workspace/scratch/957bb0caa6f2/agent22_merger/return-clock-build/OddReturnClock.olean",
+    "/workspace/scratch/957bb0caa6f2/agent22_merger/OddReturnClock.lean"
+  ],
+  "cwd": "/workspace/scratch/957bb0caa6f2/agent22_merger",
+  "LEAN_PATH": "/workspace/scratch/957bb0caa6f2/agent22_merger/return-clock-build",
+  "exit_code": 0,
+  "seconds": 0.935,
+  "stdout": "'CollatzOddReturnClock.return_odd_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzOddReturnClock.coprime_factor_return_odd_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzOddReturnClock.five_return_odd_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzOddReturnClock.no_five_return_within_odd_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "public_audit_count": 4,
+  "fresh_dependencies": [
+    {
+      "source": "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/CollatzGlobalClosure/EndpointSteering.lean",
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/agent22_merger/return-clock-build/CollatzGlobalClosure/EndpointSteering.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/CollatzGlobalClosure/EndpointSteering.lean"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121",
+      "exit_code": 0,
+      "seconds": 1.407,
+      "stdout": "'CollatzEndpointSteering.step_shift' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.orbit_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.odds_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.ternary_precision' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.target_on_ray_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.construct_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.construct_positive_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.prescribed_endpoint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "source": "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/CollatzGlobalClosure/InverseBudget.lean",
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/agent22_merger/return-clock-build/CollatzGlobalClosure/InverseBudget.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/CollatzGlobalClosure/InverseBudget.lean"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121",
+      "exit_code": 0,
+      "seconds": 1.059,
+      "stdout": "'CollatzInverseBudget.quotient_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.normalized_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.ancestor_horizon_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.ancestor_padding_preserves_late' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.short_source_iff_small_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.extract_endpoint_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.extract_reserved_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.carry_partition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.extract_inverse_with_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.carried_endpoint_lt' depends on axioms: [propext, Quot.sound]\n'CollatzInverseBudget.extract_inverse_with_canonical_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.retained_coefficient_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.retained_coefficient_positive_iff' depends on axioms: [propext, Quot.sound]\n'CollatzInverseBudget.carried_rebase_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.complete_carried_rebase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.long_inverse_exhausts_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.reserved_shadow_unique' depends on axioms: [propext, Quot.sound]\n'CollatzInverseBudget.reserved_inverse_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.affordable_inverse_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.affordable_inverse_clock_log' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.smaller_affordable_inverse_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.long_smaller_inverse_exceeds_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "source": "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/CollatzGlobalClosure/MergerClockRigidity.lean",
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/agent22_merger/return-clock-build/CollatzGlobalClosure/MergerClockRigidity.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/CollatzGlobalClosure/MergerClockRigidity.lean"
+      ],
+      "cwd": "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121",
+      "exit_code": 0,
+      "seconds": 1.31,
+      "stdout": "'CollatzMergerClockRigidity.odds_le_clock' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.actual_affine_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.correction_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.padded_correction_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.padded_affine_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.large_source_merger_slopes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.nonresonant_merger_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.nonsmooth_multiplier_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.padded_slope_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.affine_offset_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.large_affine_pair_merger_slopes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.nonresonant_affine_pair_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.nonsmooth_affine_pair_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.affine_parameter_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.affine_merger_ray_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.large_merger_propagates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.large_merger_covers_residue_class' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.multiplier_not_resonant_of_coprime_divisor' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.coprime_factor_multiplier_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.five_merger_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.affine_not_resonant_of_coprime_divisor' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.coprime_factor_affine_pair_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    }
+  ],
+  "scope": "New ordinary finite arithmetic only. No analytic harmonic-reference, Wold, finite-energy-rigidity, or Collatz theorem is a Lean dependency."
+}

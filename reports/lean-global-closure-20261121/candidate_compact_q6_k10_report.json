@@ -1,0 +1,22 @@
+{
+  "scope": "sample constraints generate candidates only; only exact global exhaustion can certify all lengths",
+  "source_sha256": "10d3443f320b133db7ef8e1647d4f2418cf57070662d6de0715b20f5f5573e73",
+  "machine_source_sha256": "a3d438b483947eb7ad61c925adcf6c0be4be9d352adfa814770d4b9261fc8727",
+  "q": 6,
+  "k": 10,
+  "period": 1,
+  "iterations": [
+    {
+      "iteration": 0,
+      "candidate": {
+        "sample_count": 8545,
+        "variables": 1537,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "floating_common_margin": -0.0,
+        "candidate_result": "no_positive_margin_found"
+      },
+      "total_seconds": 53.925
+    }
+  ]
+}

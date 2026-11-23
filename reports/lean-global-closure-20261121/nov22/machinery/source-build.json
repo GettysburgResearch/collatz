@@ -1,0 +1,83 @@
+{
+  "status": "PASSED",
+  "scope": "Exact affine repetition divisibility, finite inverse sources, and exact finite-list recursion.",
+  "excluded_scope": "Binary-word compilation and physicality, sharp valuation cutoff, zero-run and automata deductions, Corvaja-Zannier, and analytic theorems remain written proofs.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_source_worktree_clean": true,
+  "dependency_scope": "Reused installed compiled Mathlib and package dependencies; only the two named project sources were freshly compiled.",
+  "LEAN_PATH": "/workspace/scratch/957bb0caa6f2/nov22-evidence/machinery-lean-clean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/build/lib/lean:/tmp/collatz-180-fast/deps",
+  "source_sha256": {
+    "BoundedLanguage.lean": "1231fdb21ba49c0d191a1fc4d54d0afa0697ea09093c9cbdcf8ebaae18ceded6",
+    "BoundedLanguageAudit.lean": "a3677f8bb7e6b7f77fdec3f6b6ec966aae82764fe9b4c8118da12dd662310008",
+    "build_bounded_language.py": "597fb562aa9b1d25e161d7c5707a6d717021a14847fd9a3e8552378f421ecd22"
+  },
+  "commands": [
+    {
+      "module": "BoundedLanguage",
+      "command": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/machinery-lean-clean/BoundedLanguage.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/machinery/BoundedLanguage.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.603,
+      "stdout_without_import_listing": "",
+      "full_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "65b202e76cc0590ff05f67205729df7f7e3c1a73eeff090471bdb6e0065cdba8"
+    },
+    {
+      "module": "BoundedLanguageAudit",
+      "command": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/machinery-lean-clean/BoundedLanguageAudit.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/machinery/BoundedLanguageAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.125,
+      "stdout_without_import_listing": "CollatzBoundedLanguage.correction_identity (u v c : \u2124) (e : \u2115) : (v - u) * correction u v c e = c * (v ^ e - u ^ e)\nCollatzBoundedLanguage.defect_identity {u v c q m : \u2124} {e : \u2115} (h : Reaches u v c e q m) :\n  u ^ e * ((v - u) * q - c) = v ^ e * ((v - u) * m - c)\nCollatzBoundedLanguage.numerator_defect_identity (u v c m : \u2124) (e : \u2115) :\n  (v - u) * (v ^ e * m - correction u v c e) = v ^ e * ((v - u) * m - c) + c * u ^ e\nCollatzBoundedLanguage.exists_reaches_iff_dvd {u v c m : \u2124} (hc : IsCoprime u v) (e : \u2115) :\n  (\u2203 q, Reaches u v c e q m) \u2194 u ^ e \u2223 (v - u) * m - c\nCollatzBoundedLanguage.Block.ofCounts (s L : \u2115) (c : \u2124) (hs : 0 < s) : Block\nCollatzBoundedLanguage.Block.reaches_unique (b : Block) {e : \u2115} {q\u2081 q\u2082 m : \u2124} (h\u2081 : Reaches (\u2191b.u) b.v b.c e q\u2081 m)\n  (h\u2082 : Reaches (\u2191b.u) b.v b.c e q\u2082 m) : q\u2081 = q\u2082\nCollatzBoundedLanguage.Block.preimage_reaches_iff_dvd (b : Block) (e : \u2115) (m : \u2124) :\n  Reaches (\u2191b.u) b.v b.c e (b.preimage e m) m \u2194 \u2191b.u ^ e \u2223 b.defect m\nCollatzBoundedLanguage.Block.zero_defect_source (b : Block) {m q : \u2124} {e : \u2115} (hm : b.defect m = 0)\n  (hq : Reaches (\u2191b.u) b.v b.c e q m) : q = m\nCollatzBoundedLanguage.Block.exponent_lt_defect (b : Block) {m q : \u2124} {e : \u2115} (hm : b.defect m \u2260 0)\n  (hq : Reaches (\u2191b.u) b.v b.c e q m) : e < (b.defect m).natAbs\nCollatzBoundedLanguage.Block.sources_finite (b : Block) (m : \u2124) : (b.Sources m).Finite\nCollatzBoundedLanguage.Block.mem_inverseFinset (b : Block) (q m : \u2124) : q \u2208 b.inverseFinset m \u2194 q \u2208 b.Sources m\nCollatzBoundedLanguage.sources_finite (bs : List Block) (m : \u2124) : (Sources bs m).Finite\nCollatzBoundedLanguage.mem_inverseFinset (bs : List Block) (q m : \u2124) : q \u2208 inverseFinset bs m \u2194 q \u2208 Sources bs m\n'CollatzBoundedLanguage.correction_identity' depends on axioms: [propext, Quot.sound]\n'CollatzBoundedLanguage.defect_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.numerator_defect_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.exists_reaches_iff_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.ofCounts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.u_ne_zero' depends on axioms: [propext, Quot.sound]\n'CollatzBoundedLanguage.Block.slope_ne' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.reaches_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.preimage_eq_of_reaches' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.preimage_reaches_iff_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.zero_defect_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.exponent_lt_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.sources_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.Block.mem_inverseFinset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.sources_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBoundedLanguage.mem_inverseFinset' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "full_stdout_sha256": "02de349f8aec2bb7e15ab8118f9c8e8e1155461f202b59256d2a020309bb6da1",
+      "olean_sha256": "861e2cea90b50a8095de35f52a16f8233ed6e62068dd48607f2371242ac0e30e"
+    }
+  ],
+  "fresh_project_source_count": 2,
+  "audited_declaration_count": 16,
+  "audited_axioms": [
+    "'CollatzBoundedLanguage.correction_identity' depends on axioms: [propext, Quot.sound]",
+    "'CollatzBoundedLanguage.defect_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.numerator_defect_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.exists_reaches_iff_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.ofCounts' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.u_ne_zero' depends on axioms: [propext, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.slope_ne' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.reaches_unique' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.preimage_eq_of_reaches' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.preimage_reaches_iff_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.zero_defect_source' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.exponent_lt_defect' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.sources_finite' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.Block.mem_inverseFinset' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.sources_finite' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzBoundedLanguage.mem_inverseFinset' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "direct_imports": [
+    "Mathlib.RingTheory.Coprime.Lemmas",
+    "Mathlib.Data.Set.Finite.Lattice",
+    "Mathlib.Data.Set.Finite.Range",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "import_name_count_including_checked_module": 2450,
+  "import_name_manifest": "bounded-language-import-closure.txt",
+  "import_name_manifest_sha256": "3ae127e51528fc785c4af3bf8aa5df562ce6eb505da0f2af808182c1b52eec12",
+  "import_manifest_scope": "Names in the loaded environment, not a claim of a dependency source rebuild."
+}

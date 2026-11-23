@@ -1,0 +1,428 @@
+{
+  "status": "PASSED",
+  "scope": "core-only complete-certificate, signed carry, affine merger, finite profile, inverse-history, and finite-trace continuation",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_required": false,
+  "driver_sha256": "39aed366dd095961de4a6ea0c074a1186369f2a438053390d5991690acb32183",
+  "upstream": {
+    "copied_without_source_edits": true,
+    "files": [
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/Closure.lean",
+        "sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+        "git_blob_sha": "2bd11db7ce07d653376c2c0672b3441a638dac39",
+        "local_path": "vendor/pr177/Collatz/Closure.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/DirectedInduction.lean",
+        "sha256": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+        "git_blob_sha": "e9d4cf89bb7fbad035b3b297e6effc642520782c",
+        "local_path": "vendor/pr177/Collatz/DirectedInduction.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapMultiset.lean",
+        "sha256": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+        "git_blob_sha": "5298352d883a66289244a34d818ef7974224a3d7",
+        "local_path": "vendor/pr177/Collatz/GapMultiset.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/ReverseBasin146.lean",
+        "sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+        "git_blob_sha": "becc5a0945269756e6afdecf9444b6762df28bc7",
+        "local_path": "vendor/pr177/Collatz/ReverseBasin146.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceWitness.lean",
+        "sha256": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+        "git_blob_sha": "f39435a82d3e484a1673fa182ca12b7b2d5865f8",
+        "local_path": "vendor/pr177/Collatz/SourceWitness.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/UnboundedGapReset.lean",
+        "sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+        "git_blob_sha": "fad5f34014a785e38ccb5ecf84bf982f0078b0de",
+        "local_path": "vendor/pr177/Collatz/UnboundedGapReset.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/Witness.lean",
+        "sha256": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+        "git_blob_sha": "901bfe8d758c16897e8194b97b347bb5f691c08a",
+        "local_path": "vendor/pr177/Collatz/Witness.lean"
+      },
+      {
+        "source_pr": 177,
+        "source_head": "00a611094043afeb256d6532b477c0709e8ed270",
+        "source_path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessEnergy.lean",
+        "sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+        "git_blob_sha": "85ebe22d5d8ae0cbcc657d322b944f204e8b81b2",
+        "local_path": "vendor/pr177/Collatz/WitnessEnergy.lean"
+      }
+    ],
+    "repository": "GettysburgResearch/collatz",
+    "pr": 177,
+    "head": "00a611094043afeb256d6532b477c0709e8ed270"
+  },
+  "project": "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121",
+  "fresh_output": "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b",
+  "LEAN_PATH": "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b",
+  "commands": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "source": "vendor/pr177/Collatz/ReverseBasin146.lean",
+      "source_sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/ReverseBasin146.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/ReverseBasin146.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.21,
+      "stdout": "",
+      "olean_sha256": "8c4183655572b5cd1147a5870b48e59ac7f12a2322e6373ccea726f2f8c3c8db"
+    },
+    {
+      "module": "Collatz.Closure",
+      "source": "vendor/pr177/Collatz/Closure.lean",
+      "source_sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/Closure.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/Closure.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.085,
+      "stdout": "",
+      "olean_sha256": "91d1b91019611646f277b72f18d753162efe2ee4a96b072a89cb598b2be7b034"
+    },
+    {
+      "module": "Collatz.Witness",
+      "source": "vendor/pr177/Collatz/Witness.lean",
+      "source_sha256": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/Witness.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/Witness.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.404,
+      "stdout": "",
+      "olean_sha256": "4ee7ccc347738783b794d13af92ce24ae1014fa0ca1e9f9e246f8003fc5ae55a"
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "source": "vendor/pr177/Collatz/DirectedInduction.lean",
+      "source_sha256": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/DirectedInduction.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/DirectedInduction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.645,
+      "stdout": "",
+      "olean_sha256": "f1eda97b6e100259719ae875934b3f4236381ab8c5d25a792638462f13a1190a"
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "source": "vendor/pr177/Collatz/WitnessEnergy.lean",
+      "source_sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/WitnessEnergy.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/WitnessEnergy.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.429,
+      "stdout": "",
+      "olean_sha256": "f7c4357ef6b320650e55f23f3e8efd27cfe3cd9488da46bf6f8348bd4f540419"
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "source": "vendor/pr177/Collatz/SourceWitness.lean",
+      "source_sha256": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/SourceWitness.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/SourceWitness.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.506,
+      "stdout": "",
+      "olean_sha256": "cafdf45e7af3405e92ebf03dad2fcc35e813b99ea6c87635545703b1e0d9aceb"
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "source": "vendor/pr177/Collatz/GapMultiset.lean",
+      "source_sha256": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/GapMultiset.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/GapMultiset.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.15,
+      "stdout": "",
+      "olean_sha256": "d955b166ff175981e3f525018f4cdf049d7f6f4587a5a4e7d2d6155deef90c0d"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "source": "vendor/pr177/Collatz/UnboundedGapReset.lean",
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/Collatz/UnboundedGapReset.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/vendor/pr177/Collatz/UnboundedGapReset.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.653,
+      "stdout": "'CollatzUnboundedGapReset.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.complete_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.complete_failed_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.depth_zero_guard' does not depend on any axioms\n'CollatzUnboundedGapReset.word_path_of_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.compiled_certificate_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzUnboundedGapReset.low_entrance' depends on axioms: [propext, Quot.sound]\n'CollatzUnboundedGapReset.low_depth_zero_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "1ff2e17419f789d60f4767e00829f08bf9da45dd86045c9dffc320f401aaf559"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "source": "CollatzGlobalClosure/EndpointSteering.lean",
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/EndpointSteering.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/EndpointSteering.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.813,
+      "stdout": "'CollatzEndpointSteering.step_shift' depends on axioms: [propext, Quot.sound]\n'CollatzEndpointSteering.orbit_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.odds_shift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.ternary_precision' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.target_on_ray_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.construct_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.construct_positive_source' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzEndpointSteering.prescribed_endpoint_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "6049f40fdfe6b077d5423e85570defdfa33f65170797d5f8d6673346f48617e2"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "source": "CollatzGlobalClosure/InverseBudget.lean",
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/InverseBudget.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/InverseBudget.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.244,
+      "stdout": "'CollatzInverseBudget.quotient_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.normalized_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.ancestor_horizon_exact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.ancestor_padding_preserves_late' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.short_source_iff_small_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.extract_endpoint_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.extract_reserved_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.carry_partition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.extract_inverse_with_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.carried_endpoint_lt' depends on axioms: [propext, Quot.sound]\n'CollatzInverseBudget.extract_inverse_with_canonical_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.retained_coefficient_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.retained_coefficient_positive_iff' depends on axioms: [propext, Quot.sound]\n'CollatzInverseBudget.carried_rebase_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.complete_carried_rebase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.long_inverse_exhausts_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.reserved_shadow_unique' depends on axioms: [propext, Quot.sound]\n'CollatzInverseBudget.reserved_inverse_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.affordable_inverse_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.affordable_inverse_clock_log' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.smaller_affordable_inverse_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseBudget.long_smaller_inverse_exceeds_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "eaa871c9fa0c63fb32322b7d4d3417890fc1c169e24aa93275220105d369366f"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "source": "CollatzGlobalClosure/ReservedMergerCompleteness.lean",
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/ReservedMergerCompleteness.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/ReservedMergerCompleteness.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.919,
+      "stdout": "'CollatzReservedMerger.short_merger_to_reserved' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzReservedMerger.short_merger_to_canonical' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzReservedMerger.canonical_to_reserved' does not depend on any axioms\n'CollatzReservedMerger.reserved_to_short_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzReservedMerger.reserved_splice_iff_short_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzReservedMerger.canonical_reserved_splice_iff_short_merger' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "olean_sha256": "763e3baedeffb98466a73a67d2cdcdae984d147af50dabbb0fc56c171b65af8a"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "source": "CollatzGlobalClosure/MaximalReserve.lean",
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/MaximalReserve.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/MaximalReserve.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.64,
+      "stdout": "'CollatzMaximalReserve.maximal_power_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMaximalReserve.maximal_power_unique' depends on axioms: [propext, Quot.sound]\n'CollatzMaximalReserve.endpoint_ternary_shell' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMaximalReserve.maximal_quotient_one_or_two' depends on axioms: [propext, Quot.sound]\n'CollatzMaximalReserve.maximal_reserve_iff_short_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMaximalReserve.single_reserve_complete' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "87d8b2fca31c70a3215be61d36b5e18c6b0a4c393ea028c1302331a4998ca7a9"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "source": "CollatzGlobalClosure/AsynchronousReset.lean",
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/AsynchronousReset.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/AsynchronousReset.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.255,
+      "stdout": "'CollatzAsynchronousReset.target_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.parent_target_component' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.whole_witness_reset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.example_compatible' depends on axioms: [propext, Quot.sound]\n'CollatzAsynchronousReset.example_whole_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.bounded_three_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.no_first_run_reset_for_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.word_path_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.three_word_target_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.three_word_whole_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzAsynchronousReset.beyond_first_run_compatible' depends on axioms: [propext, Quot.sound]\n'CollatzAsynchronousReset.beyond_first_run_whole_witness' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "8d89bc19bbc192e82bfaf49247e8c1d1256b769737d90152c4e40630b4f9bed2"
+    },
+    {
+      "module": "CollatzGlobalClosure.TerminalReset",
+      "source": "CollatzGlobalClosure/TerminalReset.lean",
+      "source_sha256": "fdc444a4f8e82a0a90ed3a0c86e1339f5de162c4707da56333ad22f041d445f4",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/TerminalReset.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/TerminalReset.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.52,
+      "stdout": "'CollatzTerminalReset.power_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalReset.three_seed' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalReset.all_large_powers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalReset.terminal_case' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "a1a963da53f745ad5945153826cec8710a79132684bb295d6655a48b92da7478"
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "source": "CollatzGlobalClosure/PeriodicTraceTail.lean",
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/PeriodicTraceTail.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/PeriodicTraceTail.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.765,
+      "stdout": "'CollatzGlobalClosure.PeriodicTraceTailCore.reciprocal_square_telescope' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzGlobalClosure.PeriodicTraceTailCore.weightedTail_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobalClosure.PeriodicTraceTailCore.collatz_period_tail_scale' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzGlobalClosure.PeriodicTraceTailCore.collatz_fourth_tail_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzGlobalClosure.PeriodicTraceTailCore.collatz_half_period_tail_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "olean_sha256": "3fc87646f4550c77a276cec55f6c929665056e3550012d62af921cf3f3991553"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "source": "CollatzGlobalClosure/SignedCarry.lean",
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/SignedCarry.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/SignedCarry.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.139,
+      "stdout": "'CollatzSignedCarry.signedStep_nat' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.signedOrbit_nat' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.one_step_complement' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.complement_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.ordinary_complement_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.source_gap_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.signedOdds_nat' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.complement_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.ordinary_complement_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.finite_signed_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.source_gap_odds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.orbit_add' depends on axioms: [propext]\n'CollatzSignedCarry.odds_add' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.complete_word_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.complete_word_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.maximal_enabled_prefix' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.negativeStep_nonnegative' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.negativeOrbit_nonnegative' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.run_debt_nonnegative' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.negative_one' depends on axioms: [propext]\n'CollatzSignedCarry.initial_carry' depends on axioms: [propext]\n'CollatzSignedCarry.initial_carry_debt' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.orbit_positive' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.consumed_prefix_rank' depends on axioms: [propext, Quot.sound]\n'CollatzSignedCarry.zero_power_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.initial_complete_compiler' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.orbit_basin' does not depend on any axioms\n'CollatzSignedCarry.interval_query_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.zero_power_query_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.terminal_one_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSignedCarry.terminal_two_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "olean_sha256": "72a97cac93fb44e663bd363a20e89f258cfd9b4362c3e24eca3a390688a1369d"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "source": "CollatzGlobalClosure/MergerClockRigidity.lean",
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/MergerClockRigidity.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/MergerClockRigidity.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.222,
+      "stdout": "'CollatzMergerClockRigidity.odds_le_clock' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.actual_affine_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.correction_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.padded_correction_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.padded_affine_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.large_source_merger_slopes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.nonresonant_merger_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.nonsmooth_multiplier_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.padded_slope_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.affine_offset_bound' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.large_affine_pair_merger_slopes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.nonresonant_affine_pair_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.nonsmooth_affine_pair_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.affine_parameter_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.affine_merger_ray_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.large_merger_propagates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.large_merger_covers_residue_class' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.multiplier_not_resonant_of_coprime_divisor' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.coprime_factor_multiplier_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzMergerClockRigidity.five_merger_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzMergerClockRigidity.affine_not_resonant_of_coprime_divisor' depends on axioms: [propext, Quot.sound]\n'CollatzMergerClockRigidity.coprime_factor_affine_pair_clock_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "olean_sha256": "34c3f5b763c5e4db90b1b218bf196f60ad62f396bbeeb60281eeb3ec0c5a0079"
+    },
+    {
+      "module": "CollatzGlobalClosure.FiniteProfileDrift",
+      "source": "CollatzGlobalClosure/FiniteProfileDrift.lean",
+      "source_sha256": "055d9d3fa252d3287c1eb8fa11e4fcd76c517008772596af37b9271ebc220d74",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosure/FiniteProfileDrift.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosure/FiniteProfileDrift.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.69,
+      "stdout": "'CollatzGlobalClosure.FiniteProfileDrift.excessive_positive_row_zero' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzGlobalClosure.FiniteProfileDrift.quantitative_row_drift' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "olean_sha256": "1a33a26c4838d4b2b26ae56bff5c313737c4eab72ccf1fbd0a1f9816e5f4e046"
+    },
+    {
+      "module": "CollatzGlobalClosureCore",
+      "source": "CollatzGlobalClosureCore.lean",
+      "source_sha256": "f29c598e3c9117bd8da9815bc8489c9170171f85ecdd52680d265099ef889813",
+      "command": [
+        "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/core-build-75e4c3b/CollatzGlobalClosureCore.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide-verify/research/lean-global-closure-20261121/CollatzGlobalClosureCore.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.214,
+      "stdout": "",
+      "olean_sha256": "8e5d6950161b24f01e646f31c6213ad2e7c73facd9b62a97cc466591cbf7b042"
+    }
+  ],
+  "module_count": 19,
+  "axiom_report_count": 126
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "collatz-risk24-file-manifest/v1",
+  "publication_parent": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+  "scope": "new risk24 science, new reports and modified parent README; manifest excludes itself",
+  "files": [
+    {
+      "path": "research/lean-global-closure-20261121/README.md",
+      "sha256": "3c70fd0beb759f3ec0f31590ecd46cb2fa23149eef0933a6c43f4a48d7e043af",
+      "bytes": 21239
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/DISTINGUISHED_GCD_CONTINUATION.md",
+      "sha256": "924f21d610ea9bc63242411ac5a31bdcbd3a01e57b042c50c2bf7574dc08e6c0",
+      "bytes": 9382
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/README.md",
+      "sha256": "670ed3d8f95d35293c58439b4ac495c0b4c3bd96e6584d5eb1ed0dd4b715065b",
+      "bytes": 10346
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/RECURRENT_ARITHMETIC_NETWORK.md",
+      "sha256": "883b99c1476f9a8fc5298a366f62faac6cc6d45d8fcedc4870503802f87a49ab",
+      "bytes": 17715
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/SIBLING_CONE_TRANSPORT.md",
+      "sha256": "da7416d0573ba46c2dee9b895e15a63477e57cd609e4e6229dd3aaf68743e5b2",
+      "bytes": 12137
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/SUPERPOLYNOMIAL_RESIDUAL_DENOMINATOR.md",
+      "sha256": "b7531892e0d62d74107c6446171587e83cf79b83b6b967061499b7e6b92959c9",
+      "bytes": 10346
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/SiblingSourceSeparation.lean",
+      "sha256": "f02e0e0585331f3f64addd545e2e584c0de74ef507c8eace33d9d8a77caa75c4",
+      "bytes": 2718
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/TRIADIC_AUTOCONJUGACY_ATTACK.md",
+      "sha256": "d968258905f08c32842fd5930ba0cd0bd5de511b2538d5b66582fd2158d664de",
+      "bytes": 13844
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/TriadicDual.lean",
+      "sha256": "0679708717d056df2dc6ef224fefc56a6276020d84525a5a69d10da53bea12fb",
+      "bytes": 12674
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/verify_risk24.py",
+      "sha256": "158f15388834c6ce1ced7b521e4f1da4337a38977dee182b5f8705500c8b66bc",
+      "bytes": 4960
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/README.md",
+      "sha256": "7269137533058cfcefe056a3054d396250e57eba105bc6ac4e1e794923fc7681",
+      "bytes": 6691
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/new-source-checks.json",
+      "sha256": "859f198dff9f66ad148c9d14fda1c7d694cd1855b40d23db39b28bc5d8c6da83",
+      "bytes": 6665
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/previous-pr-description.json",
+      "sha256": "e2ae995ca538d65b002bcd9730bc99c3291fd9b61169ccffd18fd9df30ffb908",
+      "bytes": 14586
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/repo-refresh.json",
+      "sha256": "5d85b0cc7d697301dc247e98fc75df08d3d8f0b5cf1db54f685673a7c2bf6903",
+      "bytes": 72691
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/review-scope.json",
+      "sha256": "b18e4242fb763ccda75a7648dbcd70d1b1467a34647a7a676a6722435e7257bb",
+      "bytes": 7590
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "sample constraints generate candidates only; only exact global exhaustion can certify all lengths",
+  "source_sha256": "10d3443f320b133db7ef8e1647d4f2418cf57070662d6de0715b20f5f5573e73",
+  "machine_source_sha256": "a3d438b483947eb7ad61c925adcf6c0be4be9d352adfa814770d4b9261fc8727",
+  "q": 6,
+  "k": 12,
+  "period": 1,
+  "iterations": [
+    {
+      "iteration": 0,
+      "candidate": {
+        "sample_count": 3545,
+        "variables": 6145,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "floating_common_margin": 0.003073199221485653,
+        "exact_reconstruction": "passed",
+        "scale": "3060",
+        "maximum_coefficient_bits": 20
+      },
+      "global_verifier": {
+        "outcome": "actual_counterexample",
+        "states": 390,
+        "relaxations": 326,
+        "seconds": 0.008,
+        "input_hex": "0x81",
+        "input_bits": 8,
+        "integer_rank_difference": "5352"
+      },
+      "total_seconds": 24.332
+    },
+    {
+      "iteration": 1,
+      "candidate": {
+        "sample_count": 3546,
+        "variables": 6145,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "floating_common_margin": 0.0030685069533786216,
+        "exact_reconstruction": "passed",
+        "scale": "3058",
+        "maximum_coefficient_bits": 20
+      },
+      "global_verifier": {
+        "outcome": "actual_counterexample",
+        "states": 402,
+        "relaxations": 338,
+        "seconds": 0.01,
+        "input_hex": "0x83",
+        "input_bits": 8,
+        "integer_rank_difference": "2937"
+      },
+      "total_seconds": 21.932
+    }
+  ]
+}

@@ -1,0 +1,1313 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "description": "Read-only pull-request inventory at the start of risk25. Frozen inputs are chosen separately in the scientific notes; later heads are not covered.",
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "own_head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+  "pull_requests": [
+    {
+      "number": 182,
+      "title": "Collatz: exact source boxes and global orbit-count reconstruction",
+      "state": "open",
+      "updated_at": "2026-11-23T03:07:58Z",
+      "head": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "ref": "research/dyadic-band-descent-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "state": "open",
+      "updated_at": "2026-11-23T02:58:58Z",
+      "head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "ref": "research/lean-global-closure-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: triadic construction, coalescence clocks, and carry controls",
+      "state": "open",
+      "updated_at": "2026-11-23T02:54:13Z",
+      "head": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "ref": "research/lean-global-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: strict stationary collision gaps and finite minimum-source flux",
+      "state": "open",
+      "updated_at": "2026-11-23T02:47:23Z",
+      "head": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "ref": "research/lean-ordinary-closure-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "number": 176,
+      "title": "Collatz: finite triadic height certificate and direct closure attacks",
+      "state": "open",
+      "updated_at": "2026-11-23T02:47:06Z",
+      "head": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "ref": "research/lean-global-resolvent-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: funded witnesses, pressure barriers, and a triadic bridge",
+      "state": "open",
+      "updated_at": "2026-11-23T02:32:28Z",
+      "head": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+      "ref": "research/lean-exact-witness-global-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "state": "open",
+      "updated_at": "2026-11-23T01:18:35Z",
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "ref": "research/literature-orbit-closure-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "state": "open",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "ref": "research/band-completion-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "state": "open",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "ref": "research/deep-machinery-guide-20261122",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "state": "open",
+      "updated_at": "2026-11-21T15:45:03Z",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "ref": "research/lean-band-coupling-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "state": "open",
+      "updated_at": "2026-11-21T14:34:32Z",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "ref": "research/lean-universal-basin-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "state": "open",
+      "updated_at": "2026-11-21T09:39:39Z",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "ref": "claude/collatz-prs-discussion-qq2bvk",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "state": "open",
+      "updated_at": "2026-11-21T08:47:54Z",
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "ref": "research/lean-global-target-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "state": "open",
+      "updated_at": "2026-11-21T08:41:05Z",
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "ref": "research/lean-descent-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "state": "open",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "ref": "research/upper-bit-merger-cost-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "state": "open",
+      "updated_at": "2026-11-20T23:57:31Z",
+      "head": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "ref": "research/global-certificate-closure-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/172"
+    },
+    {
+      "number": 164,
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds",
+      "state": "open",
+      "updated_at": "2026-11-20T23:39:04Z",
+      "head": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "ref": "research/witness-closure-512-2026-11-20",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/164"
+    },
+    {
+      "number": 171,
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments",
+      "state": "open",
+      "updated_at": "2026-11-20T23:37:41Z",
+      "head": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "ref": "research/adaptive-closure-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/171"
+    },
+    {
+      "number": 170,
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds",
+      "state": "open",
+      "updated_at": "2026-11-20T23:31:14Z",
+      "head": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "ref": "research/global-forcing-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/170"
+    },
+    {
+      "number": 169,
+      "title": "research: extend certificate descents and localize all-time arithmetic moments",
+      "state": "open",
+      "updated_at": "2026-11-20T23:18:58Z",
+      "head": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "ref": "research/certificate-renewal-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/169"
+    },
+    {
+      "number": 168,
+      "title": "Research: balanced return languages, witness descent, and stationary regularity",
+      "state": "open",
+      "updated_at": "2026-11-20T23:12:52Z",
+      "head": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+      "ref": "research/closure-frontier-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/168"
+    },
+    {
+      "number": 167,
+      "title": "research: fixed-defect returns, stronger excursion bounds, and five closure interfaces",
+      "state": "open",
+      "updated_at": "2026-11-20T23:01:36Z",
+      "head": "e83cc8b35ad614c616df7c00318cc9645a174c34",
+      "ref": "research/least-failure-closure-20261121",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/167"
+    },
+    {
+      "number": 166,
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "state": "open",
+      "updated_at": "2026-11-20T22:17:47Z",
+      "head": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "ref": "research/grh-certificate-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/166"
+    },
+    {
+      "number": 165,
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "state": "open",
+      "updated_at": "2026-11-20T22:13:11Z",
+      "head": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "ref": "research/certificate-transfer-intake-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/165"
+    },
+    {
+      "number": 163,
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "state": "open",
+      "updated_at": "2026-11-20T21:53:00Z",
+      "head": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "ref": "research/deep-reverse-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/163"
+    },
+    {
+      "number": 162,
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "state": "open",
+      "updated_at": "2026-11-20T20:56:47Z",
+      "head": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "ref": "research/creative-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/162"
+    },
+    {
+      "number": 161,
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds",
+      "state": "open",
+      "updated_at": "2026-11-20T20:41:11Z",
+      "head": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "ref": "research/source-rigidity-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/161"
+    },
+    {
+      "number": 160,
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "state": "open",
+      "updated_at": "2026-11-20T20:33:03Z",
+      "head": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "ref": "research/closure-attacks-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/160"
+    },
+    {
+      "number": 159,
+      "title": "Research: prime-support peak bounds and exact directed circulation",
+      "state": "open",
+      "updated_at": "2026-11-20T20:29:02Z",
+      "head": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "ref": "research/allhands-global-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/159"
+    },
+    {
+      "number": 158,
+      "title": "research: certify guarded expanding returns and exact closure boundaries",
+      "state": "open",
+      "updated_at": "2026-11-20T20:27:56Z",
+      "head": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "ref": "research/ordinary-basin-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/158"
+    },
+    {
+      "number": 157,
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "state": "open",
+      "updated_at": "2026-11-20T20:01:36Z",
+      "head": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "ref": "research/global-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/157"
+    },
+    {
+      "number": 156,
+      "title": "Investigate Collatz closure with ordinary spectrum, arithmetic, and merger guards",
+      "state": "open",
+      "updated_at": "2026-11-20T19:41:09Z",
+      "head": "c5cb84502c7289705d59a8781a65fd845b9b6b14",
+      "ref": "research/global-rigidity-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/156"
+    },
+    {
+      "number": 150,
+      "title": "Bound sparse Collatz returns and classify local affine merger membership",
+      "state": "open",
+      "updated_at": "2026-11-20T19:35:18Z",
+      "head": "ef4022fa5ae43dd943ecca0b7c84d69af624c5c9",
+      "ref": "research/pointwise-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/150"
+    },
+    {
+      "number": 155,
+      "title": "research: ordinary Dirichlet coercivity and three-package Gemini audit",
+      "state": "open",
+      "updated_at": "2026-11-20T19:32:28Z",
+      "head": "92f499b9d340d1ff8cc643c3eef3477d61b477c1",
+      "ref": "research/gemini-dirichlet-global-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/155"
+    },
+    {
+      "number": 154,
+      "title": "Research: prime-height dispersion and restricted five-ray rigidity",
+      "state": "open",
+      "updated_at": "2026-11-20T19:26:04Z",
+      "head": "fe40bb6f88e8094290ef01207d9bf7c4798d35d0",
+      "ref": "research/structural-reset-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/154"
+    },
+    {
+      "number": 152,
+      "title": "Audit Gemini routes: actual transport domains, spectral boundary, and radical Padé classification",
+      "state": "open",
+      "updated_at": "2026-11-20T18:55:04Z",
+      "head": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+      "ref": "research/gemini-global-closure-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/152"
+    },
+    {
+      "number": 148,
+      "title": "Research: ordinary merger guards, inverse certificates, and cycle refinements",
+      "state": "open",
+      "updated_at": "2026-11-20T18:48:11Z",
+      "head": "55d8968d2ecbc23a91c9c4733929f34be9bf0d28",
+      "ref": "research/ordinary-bridge-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/148"
+    },
+    {
+      "number": 153,
+      "title": "Research: binary-run cores, adaptive mergers, and recursive orbit bounds",
+      "state": "open",
+      "updated_at": "2026-11-20T18:43:31Z",
+      "head": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "ref": "research/fixed-integer-descent-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/153"
+    },
+    {
+      "number": 151,
+      "title": "Construct recursive ordinary merger certificates and reduce signed targets",
+      "state": "open",
+      "updated_at": "2026-11-20T18:41:36Z",
+      "head": "02a9f6ad17e5f1904cb4ff806fd0217d199e8437",
+      "ref": "research/ordinary-merger-selection-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/151"
+    },
+    {
+      "number": 149,
+      "title": "Extend merger-clock analysis and audit forward Collatz closure bounds",
+      "state": "open",
+      "updated_at": "2026-11-20T17:41:36Z",
+      "head": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "ref": "research/forward-inverse-defect-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/149"
+    },
+    {
+      "number": 147,
+      "title": "Certify a 13/6 inverse compiler and derive robust finite-credit completeness",
+      "state": "open",
+      "updated_at": "2026-11-20T16:52:49Z",
+      "head": "b74b2d466f58844a742a6ed6bcdf06844269f361",
+      "ref": "research/robust-inverse-credit-20261120",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/147"
+    },
+    {
+      "number": 145,
+      "title": "Collatz investigation: a finite test for both obstructions, null residue support, and exact depth 30",
+      "state": "open",
+      "updated_at": "2026-11-18T20:22:20Z",
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "ref": "research/six-branch-prefix-obstruction-20261118",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/145"
+    },
+    {
+      "number": 140,
+      "title": "research: polynomial invariant rigidity, finite defects, and algebraic certificates",
+      "state": "open",
+      "updated_at": "2026-10-31T20:41:55Z",
+      "head": "1092737688b0bbc159820d7095722ad680f1fa1d",
+      "ref": "research/novel-swarm-20261030",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/140"
+    },
+    {
+      "number": 143,
+      "title": "research: finite-clock pressure energy and a quadratic-moment route to decay",
+      "state": "open",
+      "updated_at": "2026-10-31T20:38:06Z",
+      "head": "41a408e5e617fb4e65142485f6f3ff3e6ef6c408",
+      "ref": "research/pressure-decay-20261031",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/143"
+    },
+    {
+      "number": 144,
+      "title": "research: direct pressure dissipation and collision-free moment coercivity",
+      "state": "open",
+      "updated_at": "2026-10-31T20:37:33Z",
+      "head": "df756794e1d8de5cabff148ef433df505e3b68b4",
+      "ref": "research/pressure-diagonal-coercivity-20261031",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/144"
+    },
+    {
+      "number": 142,
+      "title": "Research swarm: positive inverse-density bounds, contact fans, and beeping clocks",
+      "state": "open",
+      "updated_at": "2026-10-31T19:36:49Z",
+      "head": "b21f94f5772df5cfcaa5f5afd073d5889e75d294",
+      "ref": "research/beeping-density-swarm-20261030",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/142"
+    },
+    {
+      "number": 141,
+      "title": "AYH orders: finite Hamming cores and source-persistent sparse descent",
+      "state": "open",
+      "updated_at": "2026-10-31T19:30:48Z",
+      "head": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "ref": "research/ay-swarm-20261030",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/141"
+    },
+    {
+      "number": 139,
+      "title": "research: fixed-source ternary splices and a common H restart budget",
+      "state": "open",
+      "updated_at": "2026-10-17T23:14:22Z",
+      "head": "c0e51c5bd90eb16fdf1caa294b6b74e972c58d1a",
+      "ref": "research/source-budget-20261018",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/139"
+    },
+    {
+      "number": 138,
+      "title": "research: anchored capacities, exact dyadic completion, and odd-edge repair",
+      "state": "open",
+      "updated_at": "2026-09-25T08:31:41Z",
+      "head": "a3f006a1281939156b2068c5be5248bcf3c61dd1",
+      "ref": "research/anchored-cuts-constructive-20260925",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/138"
+    },
+    {
+      "number": 137,
+      "title": "research: arithmetic component rigidity and residue-locked inverse geometry",
+      "state": "open",
+      "updated_at": "2026-09-25T04:48:57Z",
+      "head": "2911b53930cbd31f623d3e0586ca3613854f0143",
+      "ref": "research/component-rigidity-20260925",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/137"
+    },
+    {
+      "number": 136,
+      "title": "research: escape restarts with whole-cylinder return certificates",
+      "state": "open",
+      "updated_at": "2026-09-22T00:54:26Z",
+      "head": "fc55ecf265f23b263983fb7eebd95a4c4b0f0787",
+      "ref": "research/astra-escape-restarts-20260921",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/136"
+    },
+    {
+      "number": 135,
+      "title": "research: fixed-source splicing, whole valuation strata, and consecutive escape types",
+      "state": "open",
+      "updated_at": "2026-09-21T19:50:21Z",
+      "head": "40c59116ba9a3f94565d9782e4ffe3c97cc0ce71",
+      "ref": "research/fixed-source-splicing-20260921",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/135"
+    },
+    {
+      "number": 134,
+      "title": "research: thick predecessor basins for every ternary-unit target and complete root-capped block inverses",
+      "state": "open",
+      "updated_at": "2026-09-21T19:45:41Z",
+      "head": "025f2683c19bfedc3eeff0303206b20c889c8005",
+      "ref": "research/endpoint-transplant-root-blocks-20260921",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/134"
+    },
+    {
+      "number": 133,
+      "title": "research: pointwise shadow obstructions, rooted escape lifts and derivative escape",
+      "state": "open",
+      "updated_at": "2026-09-21T19:45:09Z",
+      "head": "9ad7b5b9c0eafacbecb1b185616ae52e573998cf",
+      "ref": "research/astra-pointwise-signatures-20260921",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/133"
+    },
+    {
+      "number": 132,
+      "title": "research: finite least-source escapes and complete affine-shadow classification",
+      "state": "open",
+      "updated_at": "2026-09-20T08:46:32Z",
+      "head": "7687eec1ac364009d644cb8d015f1fe3b28730cc",
+      "ref": "research/astra-affine-completeness-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/132"
+    },
+    {
+      "number": 131,
+      "title": "research: merger subcells in every dyadic cell, all-intercept shadows, and isolated-point rigidity",
+      "state": "open",
+      "updated_at": "2026-09-20T08:43:00Z",
+      "head": "e092da549c8c50e8a9430f88fb721ea51fe34d91",
+      "ref": "research/delayed-shadow-density-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/131"
+    },
+    {
+      "number": 130,
+      "title": "research: complete affine-merger classification and persistent-companion return budgets",
+      "state": "open",
+      "updated_at": "2026-09-20T08:38:41Z",
+      "head": "53cf9b53bd568b1ab67601b00e789b464198e42b",
+      "ref": "research/universal-finite-synchronization-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/130"
+    },
+    {
+      "number": 129,
+      "title": "research: anchored returns, two R bridges, and compressed original companions",
+      "state": "open",
+      "updated_at": "2026-09-20T08:14:26Z",
+      "head": "9d362511343c97790d42808c363b090a3342b45f",
+      "ref": "research/anchored-r-bridges-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/129"
+    },
+    {
+      "number": 128,
+      "title": "research: universal shadow atlas and strict escape families",
+      "state": "open",
+      "updated_at": "2026-09-20T08:00:04Z",
+      "head": "edd48df6e9c678fa4a65b4ed8f41421dfc92518b",
+      "ref": "research/astra-universal-shadow-atlas-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/128"
+    },
+    {
+      "number": 125,
+      "title": "research: forced comparison entry, valuation bridges and companion ladder",
+      "state": "open",
+      "updated_at": "2026-09-20T01:53:31Z",
+      "head": "081dd4fb8af75b3b237a5eb4cef28b84bb5329be",
+      "ref": "research/paired-valuation-ladder-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/125"
+    },
+    {
+      "number": 127,
+      "title": "research: all-gap merger compiler and successive escape-type gates",
+      "state": "open",
+      "updated_at": "2026-09-20T01:51:42Z",
+      "head": "f5e7ec9a23fa691d71a5a9f518cbff5529a5ea00",
+      "ref": "research/paired-escape-gaps-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/127"
+    },
+    {
+      "number": 126,
+      "title": "research: shadow switching completes the missing seed entry",
+      "state": "open",
+      "updated_at": "2026-09-19T22:02:40Z",
+      "head": "7e996feb24cc5d8579d75b39e0b909ffc03b3bcb",
+      "ref": "research/astra-shadow-switching-20260920",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/126"
+    },
+    {
+      "number": 124,
+      "title": "research: adaptive companions remove the second-exit restriction",
+      "state": "open",
+      "updated_at": "2026-09-19T21:05:47Z",
+      "head": "1d4dfc103055648def3db73860778a383a91ea3c",
+      "ref": "research/astra-adaptive-companions-20260919",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/124"
+    },
+    {
+      "number": 123,
+      "title": "research: reusable hard-exit returns and arbitrary finite paired compositions",
+      "state": "open",
+      "updated_at": "2026-09-19T20:33:01Z",
+      "head": "bf0696f888442c82a4c6cdc1df36becf8550295a",
+      "ref": "research/astra-hard-return-20260919",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/123"
+    },
+    {
+      "number": 122,
+      "title": "research: proposed two-exit lower-source merging with exact certificates",
+      "state": "open",
+      "updated_at": "2026-09-19T20:13:33Z",
+      "head": "65c91ecea97d9ebf931eb1d9284b7950182a298e",
+      "ref": "research/astra-exit-merging-20260919",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/122"
+    },
+    {
+      "number": 120,
+      "title": "feat: Collatz Observatory v0.3 paired investigations and research adapters",
+      "state": "open",
+      "updated_at": "2026-09-18T20:07:34Z",
+      "head": "af36459bc34e2f57a363545261ddcf59a92b0196",
+      "ref": "codex/collatz-observatory-v0.3-investigations",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/120"
+    },
+    {
+      "number": 119,
+      "title": "feat: Collatz Observatory v0.1 — runnable exact visual research desk",
+      "state": "open",
+      "updated_at": "2026-09-18T12:13:39Z",
+      "head": "f0bf47d9c4253c3a16617f4b70388a7a4ba4e1de",
+      "ref": "codex/collatz-observatory-v0.1",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/119"
+    },
+    {
+      "number": 117,
+      "title": "theory: backward prefix rotation, common-rank merging and an exact coverage obstruction",
+      "state": "open",
+      "updated_at": "2026-09-09T01:28:08Z",
+      "head": "d414cffc3a4119767df30f5ee0d5ee5856c5050f",
+      "ref": "research/astra-suffix-rotation-2026-09-09",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/117"
+    },
+    {
+      "number": 105,
+      "title": "Research: low word ranks give physical ancestors; sharp square-root spectrum",
+      "state": "open",
+      "updated_at": "2026-09-09T00:18:49Z",
+      "head": "423a0180a0f6a89da7adc1ab4bad950a6dc79ef6",
+      "ref": "agent/astra-tail-transport-01/critical-tails",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/105"
+    },
+    {
+      "number": 114,
+      "title": "Review post-integration research: tails, clearance, linear frontiers and actual-prefix ranks",
+      "state": "open",
+      "updated_at": "2026-09-08T12:33:43Z",
+      "head": "65235530e9cf4dda1c5850421b16b7189a491f36",
+      "ref": "review/post-integration-2026-09-08",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/114"
+    },
+    {
+      "number": 116,
+      "title": "Integration candidate: reviewed tails, clearance and adaptive ranks",
+      "state": "open",
+      "updated_at": "2026-09-08T12:33:11Z",
+      "head": "30439f73267c5cdc69365975856b6692dc5b2979",
+      "ref": "integration/tails-ranks-2026-09-08",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/116"
+    },
+    {
+      "number": 112,
+      "title": "docs: simplify contributor and integrator access requests",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:46Z",
+      "head": "e5cd723f50de88734b97082bdefc8e4cc98f7cbf",
+      "ref": "codex/username-only-access",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/112"
+    },
+    {
+      "number": 115,
+      "title": "docs: invite proposals for new problem repositories",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:45Z",
+      "head": "40d7cd6a640e65200383fcd3613bf9900f8515a5",
+      "ref": "codex/new-problem-invitation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/115"
+    },
+    {
+      "number": 113,
+      "title": "docs: prioritize contribution and fix Collatz equation layout",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:45Z",
+      "head": "dd755c92aca925bedab78217fd1a5a6f81c0555d",
+      "ref": "codex/readme-reader-order",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/113"
+    },
+    {
+      "number": 110,
+      "title": "docs: simplify phone onboarding",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:45Z",
+      "head": "4ddc321669d1d224db8880c82dd3dbc0669a6b5d",
+      "ref": "codex/simple-phone-guide",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/110"
+    },
+    {
+      "number": 108,
+      "title": "docs: explain research cycle and contributor roles",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:45Z",
+      "head": "5f976f9c336ed96e58236f1691320a5075d52462",
+      "ref": "codex/research-cycle",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/108"
+    },
+    {
+      "number": 103,
+      "title": "Welcome exploratory contributions and highlight phone tutorial",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:45Z",
+      "head": "1201b0f1b1cb3931a285d636dc8913dc329c26de",
+      "ref": "codex/readme-open-invitation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/103"
+    },
+    {
+      "number": 111,
+      "title": "docs: identify current scientific integration baseline",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:44Z",
+      "head": "e9fdd381619a9da6dd3aa8cf7e1a87340683f831",
+      "ref": "codex/integration-marker",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/111"
+    },
+    {
+      "number": 107,
+      "title": "docs: adopt MIT license",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:44Z",
+      "head": "4cceb376e6f397f6fd95391a594e4d9cf745b5af",
+      "ref": "codex/mit-license",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/107"
+    },
+    {
+      "number": 104,
+      "title": "Clarify connector access and broaden contribution starting points",
+      "state": "closed",
+      "updated_at": "2026-09-08T11:16:44Z",
+      "head": "aa7f7e1ef84f9188f37cb156fa98b49b62a4bd62",
+      "ref": "codex/contributor-options-and-connectors",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/104"
+    },
+    {
+      "number": 106,
+      "title": "theory: linear frontier and automatic actual-prefix ranks",
+      "state": "open",
+      "updated_at": "2026-09-08T10:55:57Z",
+      "head": "7b7471ea0e7b359a2ac46fb1e6aff269331509c3",
+      "ref": "research/astra-linear-frontier-2026-09-07",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/106"
+    },
+    {
+      "number": 102,
+      "title": "Preserve scientific scope and restore omitted counterexample/proof routes",
+      "state": "closed",
+      "updated_at": "2026-09-06T21:04:55Z",
+      "head": "9078170e6e1d13988f38301c3202c8c5aa0cef28",
+      "ref": "integration/scientific-account-conservation-2026-09-06",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/102"
+    },
+    {
+      "number": 101,
+      "title": "Cumulative scientific account: results, limits, proof routes and research tasks",
+      "state": "closed",
+      "updated_at": "2026-09-06T20:27:42Z",
+      "head": "10119b71ba80448fab52280d64a96bf75e5905a9",
+      "ref": "integration/cumulative-scientific-account-2026-09-06",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/101"
+    },
+    {
+      "number": 100,
+      "title": "Final readiness: contributor entrance, portable integrity checks and prepared CI",
+      "state": "closed",
+      "updated_at": "2026-09-05T22:04:52Z",
+      "head": "63f365443c7c9f6189a87b6b2f92511972918452",
+      "ref": "integration/final-readiness-2026-09-06",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/100"
+    },
+    {
+      "number": 97,
+      "title": "docs: public onboarding, shared review, and bounded security receipt",
+      "state": "closed",
+      "updated_at": "2026-09-05T22:04:13Z",
+      "head": "b85c227d9d1ccd2989e6f657ca80dbcc9e487640",
+      "ref": "codex/collatz-launch-docs-20260905",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/97"
+    },
+    {
+      "number": 99,
+      "title": "Integrate Reviewer D: scoped proof corrections, dependency warnings and preserved audit",
+      "state": "closed",
+      "updated_at": "2026-09-05T21:30:45Z",
+      "head": "72953510cb7e2cb12e7fd39425201643ad2d8b4e",
+      "ref": "integration/reviewer-d-final-2026-09-05",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/99"
+    },
+    {
+      "number": 98,
+      "title": "review: Reviewer D final integrated-main audit and integrator handoff",
+      "state": "closed",
+      "updated_at": "2026-09-05T21:30:11Z",
+      "head": "1c7744bcb9ded9336036919ffc7a19b5576ea58e",
+      "ref": "reviewer-d/2026-09-05-integrated-main-audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/98"
+    },
+    {
+      "number": 95,
+      "title": "Integrate post-August reviews: resident mass/rank references, exact identities and replay repairs",
+      "state": "closed",
+      "updated_at": "2026-09-05T18:32:39Z",
+      "head": "c1a986cfa2aab5819fa3232577622dc1f1f5a1f7",
+      "ref": "integration/prepublic-2026-09-05",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/95"
+    },
+    {
+      "number": 92,
+      "title": "theory: fifth three-route attack — unsafe repayment, rank moments, and compulsory excursions",
+      "state": "open",
+      "updated_at": "2026-09-05T18:31:50Z",
+      "head": "7bb6d36d3bc37dd09b52aa9a23c8e33973032359",
+      "ref": "agent/astra-three-routes-01/three-route-offense",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/92"
+    },
+    {
+      "number": 91,
+      "title": "theory: three-route arithmetic renewal, source charge, and unbounded rank repayment",
+      "state": "open",
+      "updated_at": "2026-09-05T18:31:34Z",
+      "head": "b8c88843726ee7ac11cf91323c69bf911ca50706",
+      "ref": "agent/astra-three-route-01/2026-09-05-arithmetic-renewal",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/91"
+    },
+    {
+      "number": 90,
+      "title": "theory: Astra unequal-clock reductions and ternary precision budget",
+      "state": "open",
+      "updated_at": "2026-09-05T18:31:25Z",
+      "head": "78ac7c8489f1df81230402808b1f4b77b18fae73",
+      "ref": "agent/astra-critical-mass-01/89-end-to-end-attempt",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/90"
+    },
+    {
+      "number": 88,
+      "title": "theory: isolate fixed-height power-saving bottleneck and entropy wall",
+      "state": "open",
+      "updated_at": "2026-09-05T18:31:13Z",
+      "head": "c28922fb6d1c070bf86a76192f40bc9ea3edd67c",
+      "ref": "agent/fixed-height-power-saving-attack",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/88"
+    },
+    {
+      "number": 87,
+      "title": "Import Mazur 2026 Collatz advances and fixed-height exponent-race attack",
+      "state": "open",
+      "updated_at": "2026-09-05T18:31:00Z",
+      "head": "e9adc409031a61f3801c4ee1e1e6deeb34188eb7",
+      "ref": "agent/mazur-2026-collatz-import",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/87"
+    },
+    {
+      "number": 94,
+      "title": "review: pre-public integration B - PR91/92 mathematics and public reading path",
+      "state": "closed",
+      "updated_at": "2026-09-05T18:30:48Z",
+      "head": "ea5faf5bcdd49a693e450dc0eeda83ace807f2f3",
+      "ref": "codex/review-prepublic-20260905-b",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/94"
+    },
+    {
+      "number": 93,
+      "title": "review: pre-public integration A — PRs #87, #88, #90 and issue #89",
+      "state": "closed",
+      "updated_at": "2026-09-05T18:30:30Z",
+      "head": "0137620b92afb714c19272017dbbc626d12af1ac",
+      "ref": "review/prepublic-2026-09-05/reviewer-a",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/93"
+    },
+    {
+      "number": 86,
+      "title": "Integration follow-up: durable lifecycle guidance",
+      "state": "closed",
+      "updated_at": "2026-08-02T13:01:16Z",
+      "head": "295a2811ba6573b576562f7f58fbe311775dacf0",
+      "ref": "agent/integration-guidance-durability",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/86"
+    },
+    {
+      "number": 85,
+      "title": "Integration refinement: durable front door, proof residency, and research catalog",
+      "state": "closed",
+      "updated_at": "2026-08-02T07:09:15Z",
+      "head": "c99d1602665cea1c2b9c88d5d9cbd817eac871fe",
+      "ref": "agent/integration-front-door-round1",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/85"
+    },
+    {
+      "number": 84,
+      "title": "First major integration snapshot and operational PR lifecycle system",
+      "state": "closed",
+      "updated_at": "2026-08-01T23:45:00Z",
+      "head": "eb8c4bed3d94c6060aa3b7d3bc28be67541fba29",
+      "ref": "agent/gpt56-integrator-01/first-major-integration-pass",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/84"
+    },
+    {
+      "number": 13,
+      "title": "docs: build citation-critical literature and verified-floor fixed-support pulse closure",
+      "state": "open",
+      "updated_at": "2026-08-01T20:00:41Z",
+      "head": "3d2b0a3c7e873388c42f00c5cbb4f09cf9897391",
+      "ref": "agent/gpt56-pro-03/4-literature-audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/13"
+    },
+    {
+      "number": 80,
+      "title": "theory: force Lane-A multiplicative-rank escape and isolate the second-form blocker",
+      "state": "open",
+      "updated_at": "2026-08-01T19:58:55Z",
+      "head": "33bbbaa03923a9adfd37a41f4af42f7ebcb0beaa",
+      "ref": "agent/gpt56-positive-02/least-counterexample-global",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/80"
+    },
+    {
+      "number": 81,
+      "title": "theory: subtract forced support from the final Collatz coefficient envelope",
+      "state": "open",
+      "updated_at": "2026-08-01T19:57:35Z",
+      "head": "09d6f9086d4ead63a5102f05458441939c29f4f5",
+      "ref": "agent/gpt56-positive-entropy-01/75-supercritical-entropy",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/81"
+    },
+    {
+      "number": 57,
+      "title": "proof: isolate ordinary extraction and a supercritical completion ghost",
+      "state": "open",
+      "updated_at": "2026-08-01T19:56:43Z",
+      "head": "b8eb3f3f917452eb6151b71038d5722381ad87cc",
+      "ref": "agent/gpt56-global-01/55-ordinary-extraction-blocker",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/57"
+    },
+    {
+      "number": 12,
+      "title": "Build exact regular-sanctuary verifier and exact-floor synthesis",
+      "state": "open",
+      "updated_at": "2026-08-01T19:52:06Z",
+      "head": "7ea63c56c423f09b856818fc8a051c9d064d8eae",
+      "ref": "agent/gpt56-regular-01/10-regular-sanctuary",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/12"
+    },
+    {
+      "number": 11,
+      "title": "Affine ping-pong Schottky packet: obstructions L-0101–L-0105 + direction handoffs",
+      "state": "open",
+      "updated_at": "2026-08-01T19:51:53Z",
+      "head": "7950713cbb6ba0af0a424806cc36ce01ad24cf9e",
+      "ref": "cursor/affine-pingpong-schottky-a643",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/11"
+    },
+    {
+      "number": 6,
+      "title": "report: port audited termination and obstruction frontier",
+      "state": "open",
+      "updated_at": "2026-08-01T19:51:38Z",
+      "head": "4810a0771da61a1cb609ef8707dfcf7f0f6e666f",
+      "ref": "agent/gpt56-termination-01/5-termination-frontier-port",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/6"
+    },
+    {
+      "number": 42,
+      "title": "proof: derive a 72-billion-state signed-charge cycle floor",
+      "state": "open",
+      "updated_at": "2026-08-01T19:50:56Z",
+      "head": "ada763dcc9ca317b65691ec6d9129f514b54fd07",
+      "ref": "agent/gpt56-cycle-01/9-compressed-cycle-synthesis",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/42"
+    },
+    {
+      "number": 38,
+      "title": "docs: map all counterexample paths and atomic blockers",
+      "state": "open",
+      "updated_at": "2026-08-01T19:50:39Z",
+      "head": "591a06ad914b63dddfd65ee658dbec36291ffbc0",
+      "ref": "agent/gpt56-cartographer-01/36-global-counterexample-map",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/38"
+    },
+    {
+      "number": 37,
+      "title": "verification: audit centered recurrence and repair T-9318",
+      "state": "open",
+      "updated_at": "2026-08-01T19:50:24Z",
+      "head": "a518db7feece37513ddcda729553e8b8c4c4d657",
+      "ref": "agent/gpt56-review-9315-01/15-centered-recurrence-audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/37"
+    },
+    {
+      "number": 35,
+      "title": "proof: isolate exact 5/4 frontier, certify depth 50, and audit bounded-state certificates",
+      "state": "open",
+      "updated_at": "2026-08-01T19:50:05Z",
+      "head": "eaba69839c07cb83794b711ecdce62c75ce765f9",
+      "ref": "agent/gpt56-drift-01/26-5x1-portability",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/35"
+    },
+    {
+      "number": 65,
+      "title": "verification: close finite algebraic extraction in the six-branch chart",
+      "state": "open",
+      "updated_at": "2026-08-01T19:49:38Z",
+      "head": "64a4a53f1c5c9ec5f8b7b4b1118eb08f368f37fc",
+      "ref": "agent/gpt56-breakthrough-01/58-algebraic-section-rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/65"
+    },
+    {
+      "number": 74,
+      "title": "organization: establish lean Agentic Polymath #1 public baseline",
+      "state": "open",
+      "updated_at": "2026-08-01T19:49:18Z",
+      "head": "e6427ff254cfcf97770dc5303e4311baf9def3de",
+      "ref": "integration/public-v0",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/74"
+    },
+    {
+      "number": 72,
+      "title": "verification: audit Claude Opus Fable claims and repair global gaps",
+      "state": "open",
+      "updated_at": "2026-08-01T19:48:56Z",
+      "head": "e85a9bb709da369852d2b0044a76005082a82897",
+      "ref": "agent/gpt56-crossmodel-audit-01/71-claude-fable-audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/72"
+    },
+    {
+      "number": 70,
+      "title": "experiment: audit all-repetition three-pulse lifts",
+      "state": "open",
+      "updated_at": "2026-08-01T19:48:32Z",
+      "head": "673cf234839faa9be31a5ecfa2302438560cf996",
+      "ref": "cursor/three-pulse-exclusion-8f0f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/70"
+    },
+    {
+      "number": 3,
+      "title": "Isolate ordinary extraction and exclude finite algebraic recursion",
+      "state": "open",
+      "updated_at": "2026-08-01T19:47:42Z",
+      "head": "f3a9144b1fde22f6ba4511347dee040c1aa18c90",
+      "ref": "agent/gpt56-pro-01/2-collision-rewrite-bootstrap",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/3"
+    },
+    {
+      "number": 79,
+      "title": "proof: add preimage-amplified crossing and supercritical packing",
+      "state": "open",
+      "updated_at": "2026-08-01T19:47:28Z",
+      "head": "8a23f4ea9f37ec1dd6096454b8e77789a6222c97",
+      "ref": "agent/gpt56-pro-56/78-preimage-packing",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/79"
+    },
+    {
+      "number": 34,
+      "title": "proof: add audited cross-direction and period-four quotient lemmas",
+      "state": "open",
+      "updated_at": "2026-08-01T19:47:14Z",
+      "head": "b7eec65ffb13c5a89415a888c0153f36a52f23e3",
+      "ref": "agent/gpt56-synthesis-01/29-cross-direction-lemmas",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/34"
+    },
+    {
+      "number": 77,
+      "title": "verification: pass T-6708 and strengthen to full divergence",
+      "state": "open",
+      "updated_at": "2026-08-01T19:47:06Z",
+      "head": "1c25b5e4be25a7c73b78e80b505c54879f02d8f1",
+      "ref": "agent/gpt56-positive-review-01/75-verify-supercritical",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/77"
+    },
+    {
+      "number": 33,
+      "title": "proof: exclude all ordinary completions in the corrected 256-stage class",
+      "state": "open",
+      "updated_at": "2026-08-01T19:46:58Z",
+      "head": "c9d62bce3e93f5785f72e4520bc576863d9379eb",
+      "ref": "agent/gpt56-cylinder-01/31-residue-cylinder-dichotomy",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/33"
+    },
+    {
+      "number": 76,
+      "title": "proof: force a 217,976,794,617-step coefficient gate",
+      "state": "open",
+      "updated_at": "2026-08-01T19:46:50Z",
+      "head": "2ee4a6cb04b23cc0c602e5bd3d18908fe7b97dcf",
+      "ref": "agent/gpt56-positive-01/75-positive-coefficient-gate",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/76"
+    },
+    {
+      "number": 32,
+      "title": "verification: independently reconstruct ADEL 9309–9312 chains",
+      "state": "open",
+      "updated_at": "2026-08-01T19:46:35Z",
+      "head": "bc397f0f4c80cb001493beaebb170ea880f4a114",
+      "ref": "agent/gpt56-review-9309-01/15-audit-adel-chain",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/32"
+    },
+    {
+      "number": 61,
+      "title": "proof: classify eventually periodic Collatz itineraries by full-denominator divisibility",
+      "state": "open",
+      "updated_at": "2026-08-01T19:46:33Z",
+      "head": "046eeda2268b4ac1b90a9618a4ed2460a111a0e5",
+      "ref": "agent/gpt56-complexity-01/59-periodic-extraction-dichotomy",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/61"
+    },
+    {
+      "number": 20,
+      "title": "proof: native delayed-window Padé closes periods 1–9 and isolates period 10",
+      "state": "open",
+      "updated_at": "2026-08-01T19:46:16Z",
+      "head": "82ca2f932438a9fe0897704ba62959ca23ec830f",
+      "ref": "agent/gpt56-complexity-01/18-padic-repetition-rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/20"
+    },
+    {
+      "number": 83,
+      "title": "proof: isolate complete-factor jet synchronization for FC*",
+      "state": "open",
+      "updated_at": "2026-08-01T19:44:29Z",
+      "head": "8283cff0a2b695d08d659b5dadbb1679cdb6c874",
+      "ref": "agent/gpt56-positive-tangent-01/75-coefficient-envelope",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/83"
+    },
+    {
+      "number": 19,
+      "title": "report: consolidate H exact cylinders, macro barriers, and counterexample frontier",
+      "state": "open",
+      "updated_at": "2026-08-01T19:41:11Z",
+      "head": "c71826d24f21d22a2e13749fb65cc1573e516ffd",
+      "ref": "agent/gpt56-h-01/17-h-exact-frontier",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/19"
+    },
+    {
+      "number": 66,
+      "title": "proof: classify all contracting two-point descents in the six-branch chart",
+      "state": "open",
+      "updated_at": "2026-08-01T19:31:53Z",
+      "head": "1b30e854913e8c5dfb4d0c70879789884b356aa1",
+      "ref": "agent/gpt56-cycle-01/58-increment-descent-offense",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/66"
+    },
+    {
+      "number": 64,
+      "title": "theory: rule out finite rational extraction and semilinear sanctuaries",
+      "state": "open",
+      "updated_at": "2026-08-01T19:31:02Z",
+      "head": "88884c3e590b08aeb2018872987e71e14de1fe7b",
+      "ref": "agent/gpt56-extraction-01/58-six-branch-least-root",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/64"
+    },
+    {
+      "number": 63,
+      "title": "verification: audit ordinary extraction and close periodic schedules",
+      "state": "open",
+      "updated_at": "2026-08-01T19:31:00Z",
+      "head": "3011e6a78bd572c0c15a5b6112904f9c492ef29a",
+      "ref": "agent/gpt56-cycle-01/55-ordinary-extraction-review",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/63"
+    },
+    {
+      "number": 62,
+      "title": "verification: reconstruct extraction blocker and close finite-state schedule escapes",
+      "state": "open",
+      "updated_at": "2026-08-01T19:30:39Z",
+      "head": "20a4d5d7ba9d9a2b5e7a4dfecb83f6220bb7da36",
+      "ref": "agent/gpt56-global-review-01/55-extraction-firewall-review",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/62"
+    },
+    {
+      "number": 53,
+      "title": "proof: close one- and two-pulse lifts over every native repetition",
+      "state": "open",
+      "updated_at": "2026-07-31T22:23:23Z",
+      "head": "8b63eb7dda864430ad64c46ae6f8f58d399ef7b8",
+      "ref": "agent/gpt56-outlier-01/52-outlier-bridge-audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/53"
+    },
+    {
+      "number": 67,
+      "title": "experiment: compile exact centered height-renewal atlas",
+      "state": "open",
+      "updated_at": "2026-07-31T18:06:17Z",
+      "head": "8538af0fd883539f7be7bc2cf3c4b15219432545",
+      "ref": "cursor/centered-height-renewal-8f0f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/67"
+    },
+    {
+      "number": 16,
+      "title": "theory: prove all-depth EQ and exclude Thue–Morse centered-cylinder stabilization",
+      "state": "open",
+      "updated_at": "2026-07-31T18:06:00Z",
+      "head": "87478352e65c7b816dfc8b3b30894b71fb50f662",
+      "ref": "agent/gpt56-pro-04/15-adelic-cusp-fourier",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/16"
+    },
+    {
+      "number": 50,
+      "title": "proof: build critical chart cycle compilers and derive mixed-place height gate",
+      "state": "open",
+      "updated_at": "2026-07-31T13:18:23Z",
+      "head": "1cba8c76a3b20eeafdfa6941c9847b77105e6ae4",
+      "ref": "agent/gpt56-cycle-02/9-factor-guided-cycle",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/50"
+    },
+    {
+      "number": 82,
+      "title": "SUPERSEDED: colliding 66xx coefficient-tangent draft",
+      "state": "closed",
+      "updated_at": "2026-07-31T12:47:37Z",
+      "head": "e2a0e8dd6a797c3da92d9efdd83e1024f2bd4378",
+      "ref": "agent/gpt56-positive-tangent-01/75-wave-minimum-tangent",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/82"
+    },
+    {
+      "number": 56,
+      "title": "theory: isolate the ordinary-extraction blocker and refute compactness-plus-refund",
+      "state": "open",
+      "updated_at": "2026-07-27T18:05:48Z",
+      "head": "53ed4e49be522052405e6aa2c11b2b810a01bf2a",
+      "ref": "agent/gpt56-global-01/54-ordinary-extraction-audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/56"
+    },
+    {
+      "number": 47,
+      "title": "proof: close fixed-weight negative-three pulse cycles through 375 A letters",
+      "state": "open",
+      "updated_at": "2026-07-26T12:11:02Z",
+      "head": "42f7c9076e0c48608ab1eeec67150fe60ea60126",
+      "ref": "agent/gpt56-pro-04/46-integer-first-counterexample-offense",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/47"
+    },
+    {
+      "number": 68,
+      "title": "experiment: certify 512-bit transported run-core closure",
+      "state": "open",
+      "updated_at": "2026-07-26T07:00:08Z",
+      "head": "72b2f578569bb96cf4f303bba522ced7c87e0d46",
+      "ref": "cursor/transported-height-closure-8f0f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/68"
+    },
+    {
+      "number": 69,
+      "title": "experiment: classify every q=71 reset-pattern spine",
+      "state": "open",
+      "updated_at": "2026-07-26T07:00:07Z",
+      "head": "838129c611f6e32cbc28108bfacb6d63c2b81b7f",
+      "ref": "cursor/parametric-reset-spine-8f0f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/69"
+    },
+    {
+      "number": 51,
+      "title": "proof: reduce negative-cycle pulses and isolate an ordinary run-five highway",
+      "state": "open",
+      "updated_at": "2026-07-26T06:48:42Z",
+      "head": "bf00552e5054fd8e5d1692648911b377c5624e56",
+      "ref": "agent/gpt56-pulse-01/46-two-pulse-offense",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/51"
+    },
+    {
+      "number": 45,
+      "title": "research: isolate an intrinsic pulse-chart top boundary and its existence barrier",
+      "state": "open",
+      "updated_at": "2026-07-25T17:08:24Z",
+      "head": "a7846473b10aa5caf8c9c57b0a612db0b8db402a",
+      "ref": "agent/gpt56-complexity-01/41-smooth-cycle-synthesis",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/45"
+    },
+    {
+      "number": 60,
+      "title": "verification: isolate Archimedean extraction and build an entropic Collatz ghost forest",
+      "state": "open",
+      "updated_at": "2026-07-25T16:50:55Z",
+      "head": "1221ef5639bd89b56a0583a58f0b2fc63af52931",
+      "ref": "agent/gpt56-outlier-01/55-entropic-extraction-firewall",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/60"
+    },
+    {
+      "number": 49,
+      "title": "construction: force permanent refund and a causally generated ordinary stack",
+      "state": "open",
+      "updated_at": "2026-07-25T16:47:23Z",
+      "head": "cb0401d19e69f531d32ede58a158a80cc9872d7c",
+      "ref": "agent/gpt56-cylinder-01/43-linear-quotient-refund",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/49"
+    },
+    {
+      "number": 48,
+      "title": "verification: reconstruct intrinsic cores and prove moving-boundary refund growth",
+      "state": "open",
+      "updated_at": "2026-07-23T11:21:35Z",
+      "head": "738b230c22d6475095945998ca89662714973d72",
+      "ref": "agent/gpt56-refund-01/43-linear-refund-invariant",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/48"
+    },
+    {
+      "number": 44,
+      "title": "verification: audit PR33 and expose centered PDR ghost boundary",
+      "state": "open",
+      "updated_at": "2026-07-22T19:35:56Z",
+      "head": "efafd32b0d99c4d02adda19c7d932bcb0e3f05fd",
+      "ref": "agent/gpt56-pdr-01/40-centered-forced-tail-pdr",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/44"
+    },
+    {
+      "number": 14,
+      "title": "Analyze sink-stripped finite safety automata",
+      "state": "open",
+      "updated_at": "2026-07-21T15:11:51Z",
+      "head": "9e3d90f50a6bf908401d2a2556513077daca3eb4",
+      "ref": "cursor/sink-stripped-pdr-8f0f",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/14"
+    },
+    {
+      "number": 1,
+      "title": "Define multi-agent Collatz counterexample research protocol",
+      "state": "closed",
+      "updated_at": "2026-07-21T07:01:49Z",
+      "head": "a332b517397eaedd98fc4b5bee8e98494d2cfbb2",
+      "ref": "agent/counterexample-research-readme",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/1"
+    }
+  ]
+}

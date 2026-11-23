@@ -1,0 +1,47 @@
+{
+  "schema": "collatz-risk24-literature-file-manifest/v1",
+  "parent_commit": "e5313208c09e5c47bb8592189975825842b19158",
+  "scope": "new literature continuation only; excludes this manifest",
+  "files": [
+    {
+      "path": "research/lean-global-closure-20261121/risk24/literature/BOREL_DWORK_ACTUAL_PARITY_ATTEMPT.md",
+      "bytes": 11244,
+      "sha256": "daa17bfe27a75c53361bfcbd204ec6417c9337f99ef0b05d695ee012f08dbf6e"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "bytes": 11650,
+      "sha256": "0eb90860f675e1d6484f30770f543ae8a01a9a6de1c5cc3b47d64c040f7d549c"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/literature/HIGHER_RANK_BOUNDARY_ATTACK.md",
+      "bytes": 19202,
+      "sha256": "9cee71eaa78069c3c377adab69795f223dd6abdd3b9010d1bf3dffbc26620ab2"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/literature/README.md",
+      "bytes": 6146,
+      "sha256": "76f747f0f2544cae0c3e8271197c38d2fcf7c999408f36a51fb194038b315a0f"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/literature/verify_hankel_control.py",
+      "bytes": 4172,
+      "sha256": "e517dd410f012ca80e7aefc323a873652a12013f28e7f7bd5255eed87bfd6ec9"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/literature/README.md",
+      "bytes": 5303,
+      "sha256": "037579a7d90acbdaf1e0b08601d63863c26ec16446419cc661af752bde1ee835"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/literature/hankel-control.json",
+      "bytes": 2578,
+      "sha256": "ad78a6048624f3eafd5f8cf2db7b7be05184b41c3137cf1e9908cf812d683b07"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk24/literature/previous-pr-description.json",
+      "bytes": 12551,
+      "sha256": "f55aac291ce555aa007c76c01c8c000a181562d3024e3f7393ac15e97e96fb34"
+    }
+  ]
+}

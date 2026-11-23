@@ -1,0 +1,17 @@
+{
+  "schema": "collatz-risk25-root-lean/v1",
+  "started_utc": "2026-11-23T03:48:25.617206+00:00",
+  "finished_utc": "2026-11-23T03:48:27.027903+00:00",
+  "command": [
+    "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+    "/workspace/scratch/957bb0caa6f2/collatz-risk23/research/lean-global-closure-20261121/risk25/SourceAwareTails.lean"
+  ],
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "source_path": "research/lean-global-closure-20261121/risk25/SourceAwareTails.lean",
+  "source_sha256": "3a4b7e06a852348e9d1537c467dfabb4a33f104f5109292a6fbced2584f6f8c5",
+  "exit_code": 0,
+  "stdout": "'Collatz.SourceAwareTails.good_trace' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.negativeNumerator_trace_unit' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.affineNumerator_unit' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.calibrated_anchor_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_pair01' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_pair10' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.block011_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.block100_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_block011_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_block100_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.actualTrace_identity' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.actual_negative_anchor_unit' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Independent root execution of the new finite carry and actual-source Lean module only. No universal Collatz or triadic witness existence theorem; no re-execution of older Lean modules."
+}

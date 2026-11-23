@@ -1,0 +1,100 @@
+{
+  "schema": "collatz-risk24-hankel-control/v1",
+  "scope": "one prescribed rational cycle; shifts 0 and 1; three border values; no census or universal proof",
+  "started_utc": "2026-11-23T02:49:20.016053+00:00",
+  "driver_sha256": "e517dd410f012ca80e7aefc323a873652a12013f28e7f7bd5255eed87bfd6ec9",
+  "checks": [
+    {
+      "label": "D",
+      "actual": "1631",
+      "expected": "1631",
+      "passed": true
+    },
+    {
+      "label": "C",
+      "actual": "7553",
+      "expected": "7553",
+      "passed": true
+    },
+    {
+      "label": "gcd(C,D)",
+      "actual": "7",
+      "expected": "7",
+      "passed": true
+    },
+    {
+      "label": "nonintegral closing value",
+      "actual": "1079/233",
+      "expected": "1079/233",
+      "passed": true
+    },
+    {
+      "label": "Q(3) modulo 7",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "label": "Q(-3) modulo 233",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "label": "Q(3) modulo 233",
+      "actual": "97",
+      "expected": "97",
+      "passed": true
+    },
+    {
+      "label": "full-rank forcing determinant",
+      "actual": "-897303938959785591522197504",
+      "expected": "-897303938959785591522197504",
+      "passed": true
+    },
+    {
+      "label": "weighted-state determinant at shift 0",
+      "actual": "550155695254313667395584",
+      "expected": "550155695254313667395584",
+      "passed": true
+    },
+    {
+      "label": "filtered determinant identity at shift 0",
+      "actual": "-897303938959785591522197504",
+      "expected": "-897303938959785591522197504",
+      "passed": true
+    },
+    {
+      "label": "weighted-state determinant at shift 1",
+      "actual": "-4506875455523337563304624128",
+      "expected": "-4506875455523337563304624128",
+      "passed": true
+    },
+    {
+      "label": "filtered determinant identity at shift 1",
+      "actual": "7350713867958563565749841952768",
+      "expected": "7350713867958563565749841952768",
+      "passed": true
+    },
+    {
+      "label": "border at t=0",
+      "actual": "-6777336650963260572767157747712",
+      "expected": "-6777336650963260572767157747712",
+      "passed": true
+    },
+    {
+      "label": "border at t=1",
+      "actual": "-5313833926519850272994453618688",
+      "expected": "-5313833926519850272994453618688",
+      "passed": true
+    },
+    {
+      "label": "border at t=1079/233",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-23T02:49:20.018223+00:00"
+}

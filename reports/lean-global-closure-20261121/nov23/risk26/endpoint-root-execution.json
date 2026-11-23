@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "/workspace/scratch/957bb0caa6f2/collatz-risk23/research/lean-global-closure-20261121/risk26/endpoint/check_endpoint_machinery.py"
+  ],
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "returncode": 0,
+  "scope": "Fresh root execution of new exact finite controls only",
+  "source": "/workspace/scratch/957bb0caa6f2/collatz-risk23/research/lean-global-closure-20261121/risk26/endpoint/check_endpoint_machinery.py",
+  "source_sha256": "3e0998280a4b03bea126994ae0275d4d3338eea04ea1f50df7cd1d8d033bea39",
+  "stderr": "",
+  "stdout": "{\n  \"exact_repeat_moment_factorizations\": 20,\n  \"largest_source_bits\": 331,\n  \"ordinary_CRT_collisions\": 172,\n  \"same_source_sieve_controls\": 6,\n  \"status\": \"PASS\"\n}\n"
+}

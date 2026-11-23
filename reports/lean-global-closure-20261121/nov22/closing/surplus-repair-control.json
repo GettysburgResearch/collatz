@@ -1,0 +1,426 @@
+{
+  "source": {
+    "S": 1092,
+    "q": 273,
+    "initial_even_exponent": 2,
+    "word": [
+      2,
+      3,
+      3,
+      3,
+      1,
+      2,
+      3,
+      4
+    ],
+    "ordinary_clock_from_q": 21,
+    "odd_count": 8,
+    "correction": 305999
+  },
+  "target": {
+    "t": 2047,
+    "at_source_clock": 378350,
+    "odd_count": 18,
+    "correction": 407718217,
+    "no_descent_through_source_clock": true
+  },
+  "exact_surplus": [
+    2324522934,
+    10485760,
+    8955765
+  ],
+  "all_positive_safe_endpoint_copied_tail_repairs": [
+    {
+      "cut_clock": 18,
+      "target_odd_events_before_cut": 15,
+      "copied_tail_clock": 3,
+      "copied_tail_odd_events": 3,
+      "current_target": 112103,
+      "new_tail_source": 7,
+      "certified_endpoint": 26
+    },
+    {
+      "cut_clock": 19,
+      "target_odd_events_before_cut": 16,
+      "copied_tail_clock": 2,
+      "copied_tail_odd_events": 2,
+      "current_target": 168155,
+      "new_tail_source": 3,
+      "certified_endpoint": 8
+    },
+    {
+      "cut_clock": 19,
+      "target_odd_events_before_cut": 16,
+      "copied_tail_clock": 2,
+      "copied_tail_odd_events": 2,
+      "current_target": 168155,
+      "new_tail_source": 7,
+      "certified_endpoint": 17
+    },
+    {
+      "cut_clock": 19,
+      "target_odd_events_before_cut": 16,
+      "copied_tail_clock": 2,
+      "copied_tail_odd_events": 2,
+      "current_target": 168155,
+      "new_tail_source": 11,
+      "certified_endpoint": 26
+    },
+    {
+      "cut_clock": 19,
+      "target_odd_events_before_cut": 16,
+      "copied_tail_clock": 2,
+      "copied_tail_odd_events": 2,
+      "current_target": 168155,
+      "new_tail_source": 19,
+      "certified_endpoint": 44
+    },
+    {
+      "cut_clock": 19,
+      "target_odd_events_before_cut": 16,
+      "copied_tail_clock": 2,
+      "copied_tail_odd_events": 2,
+      "current_target": 168155,
+      "new_tail_source": 51,
+      "certified_endpoint": 116
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 1,
+      "certified_endpoint": 2
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 3,
+      "certified_endpoint": 5
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 5,
+      "certified_endpoint": 8
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 7,
+      "certified_endpoint": 11
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 11,
+      "certified_endpoint": 17
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 13,
+      "certified_endpoint": 20
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 17,
+      "certified_endpoint": 26
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 19,
+      "certified_endpoint": 29
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 29,
+      "certified_endpoint": 44
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 51,
+      "certified_endpoint": 77
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 77,
+      "certified_endpoint": 116
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 205,
+      "certified_endpoint": 308
+    },
+    {
+      "cut_clock": 20,
+      "target_odd_events_before_cut": 17,
+      "copied_tail_clock": 1,
+      "copied_tail_odd_events": 1,
+      "current_target": 252233,
+      "new_tail_source": 273,
+      "certified_endpoint": 410
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 1,
+      "certified_endpoint": 1
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 2,
+      "certified_endpoint": 2
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 4,
+      "certified_endpoint": 4
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 5,
+      "certified_endpoint": 5
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 8,
+      "certified_endpoint": 8
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 10,
+      "certified_endpoint": 10
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 11,
+      "certified_endpoint": 11
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 13,
+      "certified_endpoint": 13
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 17,
+      "certified_endpoint": 17
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 20,
+      "certified_endpoint": 20
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 22,
+      "certified_endpoint": 22
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 26,
+      "certified_endpoint": 26
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 29,
+      "certified_endpoint": 29
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 44,
+      "certified_endpoint": 44
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 58,
+      "certified_endpoint": 58
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 77,
+      "certified_endpoint": 77
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 116,
+      "certified_endpoint": 116
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 154,
+      "certified_endpoint": 154
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 205,
+      "certified_endpoint": 205
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 273,
+      "certified_endpoint": 273
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 308,
+      "certified_endpoint": 308
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 410,
+      "certified_endpoint": 410
+    },
+    {
+      "cut_clock": 21,
+      "target_odd_events_before_cut": 18,
+      "copied_tail_clock": 0,
+      "copied_tail_odd_events": 0,
+      "current_target": 378350,
+      "new_tail_source": 546,
+      "certified_endpoint": 546
+    }
+  ],
+  "first_repair": [
+    {
+      "cut_clock": 18,
+      "target_odd_events_before_cut": 15,
+      "copied_tail_clock": 3,
+      "copied_tail_odd_events": 3,
+      "current_target": 112103,
+      "new_tail_source": 7,
+      "certified_endpoint": 26
+    }
+  ],
+  "first_repair_paid_source": 28,
+  "first_repair_paid_interval_ceiling": 57,
+  "scope": "Finite arithmetic control only. Does not establish all-certificate maximality, a universal repair selector, or Collatz."
+}

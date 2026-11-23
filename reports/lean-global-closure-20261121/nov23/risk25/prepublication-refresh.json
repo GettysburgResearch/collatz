@@ -1,0 +1,62 @@
+{
+  "scope": "Second refresh of the eight most recently updated open PRs; new mathematical dependencies remain pinned to the earlier exact commits unless explicitly stated. Five newly advanced heads were fetched for a narrow closing-step comparison.",
+  "pulls": [
+    {
+      "number": 182,
+      "title": "Collatz: exact source boxes and global orbit-count reconstruction",
+      "updated_at": "2026-11-23T03:49:08Z",
+      "head_sha": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "branch": "research/dyadic-band-descent-20261121"
+    },
+    {
+      "number": 176,
+      "title": "Collatz checkpoint 17: finite-candidate rigidity and parallel closure attacks",
+      "updated_at": "2026-11-23T03:44:17Z",
+      "head_sha": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "branch": "research/lean-global-resolvent-20261121"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: finite rational certificates and fast ordinary flows",
+      "updated_at": "2026-11-23T03:44:15Z",
+      "head_sha": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "branch": "research/lean-global-20261121"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: exact dual recognition and ordinary endpoint retention",
+      "updated_at": "2026-11-23T03:43:36Z",
+      "head_sha": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "branch": "research/lean-exact-witness-global-20261121"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: actual fibre density, critical renewal, and complementary denominators",
+      "updated_at": "2026-11-23T03:42:23Z",
+      "head_sha": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "branch": "research/lean-ordinary-closure-20261121"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "updated_at": "2026-11-23T02:58:58Z",
+      "head_sha": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "branch": "research/lean-global-closure-20261121"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "updated_at": "2026-11-23T01:18:35Z",
+      "head_sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "branch": "research/literature-orbit-closure-20261121"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "head_sha": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "branch": "research/band-completion-20261121"
+    }
+  ],
+  "recorded_utc": "2026-11-23 03:55:09 UTC"
+}

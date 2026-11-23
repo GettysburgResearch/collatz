@@ -1,0 +1,71 @@
+{
+  "scope": "11 exact compiler and parity controls; no global cycle search",
+  "results": [
+    {
+      "case": "single trivial loop",
+      "retained_parameters": 5,
+      "constant": "1",
+      "passed": true
+    },
+    {
+      "case": "common fixed blocks",
+      "retained_parameters": 6,
+      "constant": "1",
+      "passed": true
+    },
+    {
+      "case": "fixed phase connectors",
+      "retained_parameters": 6,
+      "constant": "1",
+      "passed": true
+    },
+    {
+      "case": "negative fixed point",
+      "retained_parameters": 6,
+      "constant": "-1",
+      "passed": true
+    },
+    {
+      "case": "zero fixed point",
+      "retained_parameters": 6,
+      "constant": "0",
+      "passed": true
+    },
+    {
+      "case": "rational noninteger",
+      "retained_parameters": 6,
+      "constant": "1/5",
+      "passed": true
+    },
+    {
+      "case": "different fixed blocks",
+      "retained_parameters": 5,
+      "constant": null,
+      "passed": true
+    },
+    {
+      "case": "mixed block data",
+      "retained_parameters": 6,
+      "constant": null,
+      "passed": true
+    },
+    {
+      "case": "all slopes zero",
+      "retained_parameters": 6,
+      "constant": "1",
+      "passed": true
+    },
+    {
+      "case": "empty block deletion",
+      "retained_parameters": 5,
+      "constant": "1",
+      "passed": true
+    },
+    {
+      "case": "zero repetition deletion",
+      "retained_parameters": 5,
+      "constant": "2",
+      "passed": true
+    }
+  ]
+}

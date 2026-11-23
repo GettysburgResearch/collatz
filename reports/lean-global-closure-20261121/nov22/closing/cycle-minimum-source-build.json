@@ -1,0 +1,73 @@
+{
+  "status": "PASSED",
+  "scope": "Exact product deficit, whole finite-cycle product identity, and natural-number minimum bound using the full denominator.",
+  "excluded_scope": "Parity-word realization, zero-atom counting and the census algorithm are written proofs; Matveev is an external source-qualified dependency; no full cycle exclusion.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_source_worktree_clean": true,
+  "dependency_scope": "Reused installed compiled Mathlib and package dependencies; only the two named project sources were freshly compiled.",
+  "LEAN_PATH": "/workspace/scratch/957bb0caa6f2/nov22-evidence/closing-lean-clean:/workspace/scratch/957bb0caa6f2/lean-runtime/mathlib4/.lake/build/lib/lean:/tmp/collatz-180-fast/deps",
+  "source_sha256": {
+    "CycleMinimum.lean": "4838c491fc1aed041f429628f2db8f498a49d35b46e4bff0a352c0cde5544ced",
+    "CycleMinimumAudit.lean": "6039a60b6ee8d62b39e88c3c5893d089dd0ce0235adda2a6d504952e17eb0f85",
+    "build_cycle_minimum.py": "997f0ca14da00b45d39971d0851a1bdba0265abb875e1e45ed7659cfcf769503"
+  },
+  "commands": [
+    {
+      "module": "CycleMinimum",
+      "command": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/closing-lean-clean/CycleMinimum.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/closing/CycleMinimum.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.652,
+      "stdout_without_import_listing": "",
+      "full_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "7ff426fb5550b099b9f3fd4c3570be03fa094827aceb21d1ca503bb4548f9e26"
+    },
+    {
+      "module": "CycleMinimumAudit",
+      "command": [
+        "/workspace/scratch/06005805ecd5/collatz_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-DautoImplicit=false",
+        "-o",
+        "/workspace/scratch/957bb0caa6f2/nov22-evidence/closing-lean-clean/CycleMinimumAudit.olean",
+        "/workspace/scratch/957bb0caa6f2/collatz-wide/research/lean-global-closure-20261121/closing/CycleMinimumAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.563,
+      "stdout_without_import_listing": "CollatzCycleMinimum.whole_cycle_minimum_nat {p : \u2115} (x a : Fin p \u2192 \u2115) (next : Equiv.Perm (Fin p)) (m D : \u2115) (hm : 0 < m)\n  (hmin : \u2200 (i : Fin p), m \u2264 x i) (hedge : \u2200 (i : Fin p), 2 ^ a i * x (next i) = 3 * x i + 1)\n  (hD : D + 3 ^ p = 2 ^ \u2211 i, a i) : D * (3 * m + 1) \u2264 p * 2 ^ \u2211 i, a i\n'CollatzCycleMinimum.product_deficit_le_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleMinimum.minimum_product_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleMinimum.whole_cycle_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleMinimum.whole_cycle_minimum_rat' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzCycleMinimum.whole_cycle_minimum_nat' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "full_stdout_sha256": "f6fb7489113478d27ab031185c08e1ac17b6a316db0a4b38e128bd4f418b41cd",
+      "olean_sha256": "69f40d37e28f8cae462fa993a2939f7d8e0bce6c8aed4f12c8646bdd9d7be25a"
+    }
+  ],
+  "fresh_project_source_count": 2,
+  "audited_declaration_count": 5,
+  "audited_axioms": [
+    "'CollatzCycleMinimum.product_deficit_le_sum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzCycleMinimum.minimum_product_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzCycleMinimum.whole_cycle_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzCycleMinimum.whole_cycle_minimum_rat' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'CollatzCycleMinimum.whole_cycle_minimum_nat' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "direct_imports": [
+    "Mathlib.Algebra.BigOperators.Field",
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Data.Rat.Lemmas",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "import_name_count_including_checked_module": 2456,
+  "import_name_manifest": "cycle-minimum-import-closure.txt",
+  "import_name_manifest_sha256": "e132963762e2826f68d4f86a7123bd40490a83514f424921943667d682e2a9cb",
+  "import_manifest_scope": "Names in the loaded environment, not a claim of a dependency source rebuild."
+}

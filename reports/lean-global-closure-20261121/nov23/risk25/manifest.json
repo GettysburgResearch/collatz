@@ -1,0 +1,196 @@
+{
+  "schema": "collatz-risk25-manifest/v1",
+  "baseline_commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+  "baseline_tree": "5214ad5e6640deff40fd97beeb610d93d7b5be06",
+  "status": "Reviewed written necessary conditions and finite Lean arithmetic; full Collatz open.",
+  "scope": "Exact new packet, integration overview, scoped reviews and executed finite-control receipts. Manifest excludes itself. Exact final-commit checkout gate is recorded after execution in PR175.",
+  "frozen_scientific_hashes_verified": 10,
+  "files": [
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/LATE_CYCLE_SOURCE_COMPARISON.md",
+      "bytes": 6939,
+      "sha256": "fc8969d47d401d3cb8c29963345e5aa614bc9657efc53b96a6de25e69713d481",
+      "git_blob": "281f41cf11add8d390815e487cf64326a8b74c7d"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/PREPUBLICATION_COMPARISON.md",
+      "bytes": 6651,
+      "sha256": "364a3401e3b78d9eda1493fca74711981a3ea2792d88dd2123135b550a053d62",
+      "git_blob": "dcc314ec98a6e18da676cc74553bcf8cabab98aa"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/README.md",
+      "bytes": 5455,
+      "sha256": "161aded7eaef089c550d893e851e352dedd1dc9180831af4a3d05ca114692de9",
+      "git_blob": "50bf170ceca8b1d9c3c7330fcd0aefeba742944d"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/REVIEW_CYCLOTOMIC_VALUE_SEPARATION.md",
+      "bytes": 8992,
+      "sha256": "c72674ee45b694a7e5e80620b579ceb34d67b873d07385edd50f15fe8e7633b2",
+      "git_blob": "cfecb1ab411992224589a47f594502d543802e98"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/REVIEW_ENDPOINT.md",
+      "bytes": 7301,
+      "sha256": "b5f58a361bac0e26e940eadc589f42ad05f36438e2330aa39726f15b741ddc99",
+      "git_blob": "edb587ce59334a28bc678e76508bc7a602f7e054"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/REVIEW_INTEGER_RESIDUAL_DEGREE.md",
+      "bytes": 8189,
+      "sha256": "12d1916272fd3d565fac2fe9300cb6ed79c59e77cde241547465565694b2b063",
+      "git_blob": "7fa7e288d76437d9f4d82dc74853750ee0ff301d"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/ROOT_CYCLE_REVIEW.md",
+      "bytes": 6754,
+      "sha256": "2fb1af8e5cde6a00ea7b8d31d5e476561a5d779632f0d303958b0334d6a1ca6d",
+      "git_blob": "26abd608bd418e233d2eb304c0cb967d21e3d04a"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/ROOT_CYCLOTOMIC_REVIEW.md",
+      "bytes": 3727,
+      "sha256": "9808d2fd99efd22bf99b8e42be9db841c27159bbce5280a3215b3fd017444cdf",
+      "git_blob": "69bdae524988fcdc0a735499c60ae6fcf45895a3"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/ROOT_ENDPOINT_TRIADIC_REVIEW.md",
+      "bytes": 9598,
+      "sha256": "33c8f16f21bb3c3dca0509fd204029b7163be40d6958a4189d7f08685242ec87",
+      "git_blob": "e6d8f567134e5e63174149758fd6b4215d10d929"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/critical-carry-checks.json",
+      "bytes": 2551,
+      "sha256": "6df0d5e652754fbf95180b6e17ddbe53399bce642be1ceef0af88fde0178abe8",
+      "git_blob": "8c977e0853e24bc0d924da8d0e216ec6aec3aa9b"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/critical-carry-receipt.json",
+      "bytes": 2785,
+      "sha256": "cea4819b4b1be9bdc553b2bc35f40d968f55736cb9c1f39e60922e4741b20f0c",
+      "git_blob": "87dea5ed6b5579657ada3faec7addf2ea75a6653"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/cycle-control-results.json",
+      "bytes": 2398,
+      "sha256": "534b867ddc442677f8c40ddd9c4a2a7914e1ffc2c4fd660894099a0f3397ea5c",
+      "git_blob": "ecb5bf37e9b957ccfe5f7aaf7f323db097ab0301"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/cycle-validation-receipt.json",
+      "bytes": 853,
+      "sha256": "15519a0912d23954132b9aa6721246144a65a678c2070f60a7a64e09e90ba7a4",
+      "git_blob": "d2d5f2751aa25748669ad1ffce8edc7d9286c174"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/prepublication-refresh.json",
+      "bytes": 2598,
+      "sha256": "efd342a0fa0875406e5b0c54b4695166a4e348a30ce6193425305319e08063d5",
+      "git_blob": "2387678b26944f6553aecf4de8c3737fbe5e7817"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/previous-pr-description.json",
+      "bytes": 14419,
+      "sha256": "2f7ee3d6e0a1be6f9ab0bb5aae5e051c782790a585ae2b7bf38b3ab5c80630ac",
+      "git_blob": "98e66975c9698cbec8496ea7e46d95fd0d14febd"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/root-lean-receipt.json",
+      "bytes": 2095,
+      "sha256": "8ccf1c13f3fc6360203320df77ef994266d3b27b33e2125b65b2188330c4c224",
+      "git_blob": "2a0f39f50f0761aef42382d22a70c8810b1840c2"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/source-aware-lean-receipt.json",
+      "bytes": 2487,
+      "sha256": "beec9ebe9de009df707b78de04a085d5f111e6ab20c41373a74e3cdc61488f42",
+      "git_blob": "b9c1b8e8d409c864d30d2926ce409e412ef23453"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/source-bindings.json",
+      "bytes": 15983,
+      "sha256": "d5ea6b86e56b61f49117b09ac0babf7df02aafcb0238d4ce81bc6f089844e496",
+      "git_blob": "796ef66ad9a2606fe9db0c7f6dce79d94363c6ae"
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk25/source-refresh.json",
+      "bytes": 54922,
+      "sha256": "81df3ca4f9292365fb4c2e882bad2a3b47189717809e46c4b8d63739c260bd39",
+      "git_blob": "0f307053ed48ccc0b7c98a0675f6616d23151947"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/README.md",
+      "bytes": 22123,
+      "sha256": "013dee29255a5c7629f234b05feee4d109d6c0aec24793b1a7253fe8a588752f",
+      "git_blob": "cdb447c1cd3c2fe42b31296fe507efbf702abdc2"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/CRITICAL_CARRY_TRANSFER.md",
+      "bytes": 18262,
+      "sha256": "cc45bcd43a450405b7b7cd12dd67fab45d43ac32caac3d875f5fdc5dca04b03d",
+      "git_blob": "59816d3870a8c2b53c4d6af56b9fd0ecbd6f101c"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/CYCLOTOMIC_VALUE_SEPARATION_PROPOSED.md",
+      "bytes": 9228,
+      "sha256": "a65775e58fff641dba07d36e622d38979e1a93268ddea0e5dd8e339ffc35021b",
+      "git_blob": "e3ebc88a0da4ddf112a58a45f70bebe304c138ff"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/FIXED_CLOCK_EXTENSION.md",
+      "bytes": 8573,
+      "sha256": "ac6006a24fbafe5fc7fd2be9817e0c029e631252d2a9f85a26c864b389fd8fca",
+      "git_blob": "ca388e072cf2cb6fa7254077f09b2b7bc1da3b56"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/HIGHER_DIGIT_INTERPOLATION.md",
+      "bytes": 10067,
+      "sha256": "efb8c9ec2ebca67fd1d9d9f8381bfe4e5e6e96c4b3ef78c6c6e98ff00a74d79a",
+      "git_blob": "7d5585b6e5c5d20e122534cb3a9e47ad77b557d8"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/INTEGER_RESIDUAL_DEGREE.md",
+      "bytes": 13624,
+      "sha256": "d92b1dd9c6da48459dad86a918b1a639f98c43aac8b6610157efd956b7a84b2a",
+      "git_blob": "5f6395e64980939f4a87de1ae4b658c6190d246b"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/README.md",
+      "bytes": 9243,
+      "sha256": "a14e7ad6ae17538a3219fbd25d1b202a02d587f2c66d6739ae0e846d28c73373",
+      "git_blob": "a90bc1c60bb30d40d6243fc857962233b53356fb"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/RESIDUAL_RECURRENCE_LATTICE.md",
+      "bytes": 9466,
+      "sha256": "9f1f08ecd36e84cfd3cdc3021591cd47d9cb4c3cc5e6ce51401cf4686d51aba5",
+      "git_blob": "2f4649f17266342031d37276f091c3d335e29d71"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/SOURCE_AWARE_TRIADIC_CONSTRUCTION.md",
+      "bytes": 15574,
+      "sha256": "ae7f16ca337ed1505f66248eb82ce21e6ae5b20b2bebf305add62a7f723801ad",
+      "git_blob": "4ad6fe8bca58c104ea71fcbf2c0762b945b20259"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/SourceAwareTails.lean",
+      "bytes": 13462,
+      "sha256": "3a4b7e06a852348e9d1537c467dfabb4a33f104f5109292a6fbced2584f6f8c5",
+      "git_blob": "6857fc10c25a48282a0bb96cb0ba7edeb365355f"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/check_critical_carry.py",
+      "bytes": 6644,
+      "sha256": "59b452a69a819e4ede292a5ba46c8ba3658cf28dc0d9eb4696efa18f5dc32a55",
+      "git_blob": "629d47be339169fb287c701b28b4b6479a5d2a7a"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk25/check_integer_residual_degree.py",
+      "bytes": 7511,
+      "sha256": "015d407de25f6cc2f120b8b2bb7b1300ffa588611f8261f8f64d8ce9a451b290",
+      "git_blob": "7140ec818ffd4099a991bd70910e6a165a545d2c"
+    }
+  ]
+}

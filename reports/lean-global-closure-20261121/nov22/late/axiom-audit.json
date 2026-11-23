@@ -1,0 +1,1380 @@
+{
+  "commit": "360e20ce3430a3d1124c34f0a6ba8e8be26c57c4",
+  "tree": "3e19c55c1b6a4861086e7bae9548e070aa506fe6",
+  "source_count": 21,
+  "reported_declarations": 141,
+  "new_continuation_declarations": 70,
+  "late_module_declarations": 15,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "no_axiom_declarations": 3,
+  "all_source_hashes_match": true,
+  "mathlib_required": false,
+  "compiler_seconds": 35.803,
+  "reports": [
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.target_path",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.complete_certificate_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.complete_failed_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.depth_zero_guard",
+      "axioms": [],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.word_path_of_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.compiled_certificate_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.low_entrance",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "declaration": "CollatzUnboundedGapReset.low_depth_zero_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.step_shift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.orbit_shift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.odds_shift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.ternary_precision",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.target_on_ray_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.construct_source",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.construct_positive_source",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "declaration": "CollatzEndpointSteering.prescribed_endpoint_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.quotient_threshold",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.normalized_quotient",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.ancestor_horizon_exact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.ancestor_padding_preserves_late",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.short_source_iff_small_endpoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.extract_endpoint_block",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.extract_reserved_inverse",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.carry_partition",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.extract_inverse_with_carry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.carried_endpoint_lt",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.extract_inverse_with_canonical_carry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.retained_coefficient_clock",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.retained_coefficient_positive_iff",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.carried_rebase_hits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.complete_carried_rebase",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.long_inverse_exhausts_carry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.reserved_shadow_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.reserved_inverse_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.affordable_inverse_clock",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.affordable_inverse_clock_log",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.smaller_affordable_inverse_clock",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "declaration": "CollatzInverseBudget.long_smaller_inverse_exceeds_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "declaration": "CollatzReservedMerger.short_merger_to_reserved",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "declaration": "CollatzReservedMerger.short_merger_to_canonical",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "declaration": "CollatzReservedMerger.canonical_to_reserved",
+      "axioms": [],
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "declaration": "CollatzReservedMerger.reserved_to_short_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "declaration": "CollatzReservedMerger.reserved_splice_iff_short_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba"
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "declaration": "CollatzReservedMerger.canonical_reserved_splice_iff_short_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "declaration": "CollatzMaximalReserve.maximal_power_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "declaration": "CollatzMaximalReserve.maximal_power_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "declaration": "CollatzMaximalReserve.endpoint_ternary_shell",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "declaration": "CollatzMaximalReserve.maximal_quotient_one_or_two",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "declaration": "CollatzMaximalReserve.maximal_reserve_iff_short_merger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640"
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "declaration": "CollatzMaximalReserve.single_reserve_complete",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.target_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.parent_target_component",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.whole_witness_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.example_compatible",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.example_whole_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.bounded_three_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.no_first_run_reset_for_eight",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.word_path_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.three_word_target_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.three_word_whole_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.beyond_first_run_compatible",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "declaration": "CollatzAsynchronousReset.beyond_first_run_whole_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07"
+    },
+    {
+      "module": "CollatzGlobalClosure.TerminalReset",
+      "declaration": "CollatzTerminalReset.power_transfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fdc444a4f8e82a0a90ed3a0c86e1339f5de162c4707da56333ad22f041d445f4"
+    },
+    {
+      "module": "CollatzGlobalClosure.TerminalReset",
+      "declaration": "CollatzTerminalReset.three_seed",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "fdc444a4f8e82a0a90ed3a0c86e1339f5de162c4707da56333ad22f041d445f4"
+    },
+    {
+      "module": "CollatzGlobalClosure.TerminalReset",
+      "declaration": "CollatzTerminalReset.all_large_powers",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fdc444a4f8e82a0a90ed3a0c86e1339f5de162c4707da56333ad22f041d445f4"
+    },
+    {
+      "module": "CollatzGlobalClosure.TerminalReset",
+      "declaration": "CollatzTerminalReset.terminal_case",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fdc444a4f8e82a0a90ed3a0c86e1339f5de162c4707da56333ad22f041d445f4"
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.reciprocal_square_telescope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a"
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.weightedTail_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a"
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.collatz_period_tail_scale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a"
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.collatz_fourth_tail_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a"
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.collatz_half_period_tail_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.signedStep_nat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.signedOrbit_nat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.one_step_complement",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.complement_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.ordinary_complement_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.source_gap_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.signedOdds_nat",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.complement_odds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.ordinary_complement_odds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.finite_signed_lift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.source_gap_odds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.orbit_add",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.odds_add",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.complete_word_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.complete_word_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.maximal_enabled_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.negativeStep_nonnegative",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.negativeOrbit_nonnegative",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.run_debt_nonnegative",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.negative_one",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.initial_carry",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.initial_carry_debt",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.orbit_positive",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.consumed_prefix_rank",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.zero_power_interval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.initial_complete_compiler",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.orbit_basin",
+      "axioms": [],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.interval_query_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.zero_power_query_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.terminal_one_fixed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "declaration": "CollatzSignedCarry.terminal_two_fixed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.restrict_hyp",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.odd_source_cap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.nine_lattice_return",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.negative_nine_return",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.absorbing_return",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.compiled_return_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.positive_nine_compiled_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.positive_nine_first_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.positive_nine_two_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.valuation_one_psi",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarryReturns",
+      "declaration": "CollatzSignedCarryReturns.cap_four_guard_not_total",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.odds_le_clock",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.actual_affine_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.correction_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.padded_correction_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.padded_affine_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.large_source_merger_slopes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.nonresonant_merger_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.nonsmooth_multiplier_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.padded_slope_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.affine_offset_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.large_affine_pair_merger_slopes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.nonresonant_affine_pair_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.nonsmooth_affine_pair_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.affine_parameter_lift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.affine_merger_ray_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.large_merger_propagates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.large_merger_covers_residue_class",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.multiplier_not_resonant_of_coprime_divisor",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.coprime_factor_multiplier_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.five_merger_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.affine_not_resonant_of_coprime_divisor",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "declaration": "CollatzMergerClockRigidity.coprime_factor_affine_pair_clock_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+    },
+    {
+      "module": "CollatzGlobalClosure.OddReturnClock",
+      "declaration": "CollatzOddReturnClock.return_odd_count_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f532f89fb9042e7073e992bf26e0049f28829171075e23e87edfa50fd66439ac"
+    },
+    {
+      "module": "CollatzGlobalClosure.OddReturnClock",
+      "declaration": "CollatzOddReturnClock.coprime_factor_return_odd_count_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f532f89fb9042e7073e992bf26e0049f28829171075e23e87edfa50fd66439ac"
+    },
+    {
+      "module": "CollatzGlobalClosure.OddReturnClock",
+      "declaration": "CollatzOddReturnClock.five_return_odd_count_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f532f89fb9042e7073e992bf26e0049f28829171075e23e87edfa50fd66439ac"
+    },
+    {
+      "module": "CollatzGlobalClosure.OddReturnClock",
+      "declaration": "CollatzOddReturnClock.no_five_return_within_odd_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f532f89fb9042e7073e992bf26e0049f28829171075e23e87edfa50fd66439ac"
+    },
+    {
+      "module": "CollatzGlobalClosure.FiniteProfileDrift",
+      "declaration": "CollatzGlobalClosure.FiniteProfileDrift.excessive_positive_row_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "055d9d3fa252d3287c1eb8fa11e4fcd76c517008772596af37b9271ebc220d74"
+    },
+    {
+      "module": "CollatzGlobalClosure.FiniteProfileDrift",
+      "declaration": "CollatzGlobalClosure.FiniteProfileDrift.quantitative_row_drift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "055d9d3fa252d3287c1eb8fa11e4fcd76c517008772596af37b9271ebc220d74"
+    }
+  ]
+}

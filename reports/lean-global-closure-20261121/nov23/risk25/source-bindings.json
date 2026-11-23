@@ -1,0 +1,355 @@
+{
+  "schema": "collatz-risk25-source-bindings/v1",
+  "scope": "Exact repository source identities and read roles; not an audit of every source claim.",
+  "sources": [
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/TRIADIC_AUTOCONJUGACY_ATTACK.md",
+      "blob": "eb87a75ae69969f6b93bb7acdae1926f295193cf",
+      "sha256": "d968258905f08c32842fd5930ba0cd0bd5de511b2538d5b66582fd2158d664de",
+      "bytes": 13844,
+      "phase": "frozen-input",
+      "role": "Prior triadic equivalence and source normalization; retained written scope."
+    },
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/TriadicDual.lean",
+      "blob": "bd8b09e4bf3dec92d114c136b6ecbb5b8a619674",
+      "sha256": "0679708717d056df2dc6ef224fefc56a6276020d84525a5a69d10da53bea12fb",
+      "bytes": 12674,
+      "phase": "frozen-input",
+      "role": "Existing finite signed-triadic verifier and termination rank; not rebuilt."
+    },
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "blob": "5069b91e9b5fb954c4d079bd76a34004efb3f85f",
+      "sha256": "0eb90860f675e1d6484f30770f543ae8a01a9a6de1c5cc3b47d64c040f7d549c",
+      "bytes": 11650,
+      "phase": "frozen-input",
+      "role": "Minimal residual recurrence interface used in RL1--RL3."
+    },
+    {
+      "pr": 175,
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HIGHER_RANK_BOUNDARY_ATTACK.md",
+      "blob": "21ab6c80f12ca54002d7ed0286ca4416336e9d4a",
+      "sha256": "9cee71eaa78069c3c377adab69795f223dd6abdd3b9010d1bf3dffbc26620ab2",
+      "bytes": 19202,
+      "phase": "frozen-input",
+      "role": "Prior compact-boundary attempt; ordinary carry distinction."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "blob": "918e6d20adea7847deec9f6809e5c1966b65e649",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b",
+      "bytes": 9204,
+      "phase": "frozen-input",
+      "role": "Section 1 factor radius and degree divisibility, reconstructed in the new papers."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "blob": "54b6f161d8a8ce81c32fed6c6166807d5c9f8445",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "bytes": 12131,
+      "phase": "frozen-input",
+      "role": "Support lemma reconstructed; older factor-gap consequence retains source qualification and is not needed for CV1."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "blob": "c430b45adf356b11bd5d4f7aeb7026212ecf4183",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "bytes": 12985,
+      "phase": "frozen-input",
+      "role": "Sections 1--2 source-qualified ordinary harmonic flow and exact retained atoms."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da",
+      "bytes": 15723,
+      "phase": "frozen-input",
+      "role": "Theorem 3 finite critical lower bound; no historical certificate replay."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "blob": "6881dc864f3b586958bd46d5c38b1c2524008565",
+      "sha256": "bee22c362de8adcbb6a0360f48240ad276fdf6122f6383273eb10dee8e29271d",
+      "bytes": 10738,
+      "phase": "frozen-input",
+      "role": "Sections 1--5 actual injective forward-invariant counting theorem, independently reconstructed for the cycle consumer."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/ACTUAL_COLLISION.md",
+      "blob": "118af095616dbe5544b39f117fd2f465dac4a10b",
+      "sha256": "eb8a352d3ad072e601637c0d2beff2992317252ff4ca58b830100074a1b17709",
+      "bytes": 17662,
+      "phase": "frozen-input",
+      "role": "Sections 2--6 complete carry decoder and same-source weighted fiber accounting."
+    },
+    {
+      "pr": 182,
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/TRIADIC_CLOSURE.md",
+      "blob": "3c6e297ccbb6fc5d9ad5abcffdab371cf64ebba9",
+      "sha256": "31164e32797d3868f06cf1f2b9b771e912335f096d7fc92e53a1e29355dbba36",
+      "bytes": 17730,
+      "phase": "frozen-input",
+      "role": "Triadic construction comparison; exact source and horizon retained."
+    },
+    {
+      "pr": 180,
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "bytes": 18476,
+      "phase": "frozen-input",
+      "role": "Sections 3--7 actual stationary backward-gap lift and strict process-dependent collision gap."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/dynamics/COALESCENCE_AND_CRITICAL_COLLISIONS.md",
+      "blob": "e5616bff76f62a259a6a67741ec00dd3dca59ca9",
+      "sha256": "60d0f00f1f6360ae452d0d098bb3f244ae75ef69e130ae005e5466e1e5366acb",
+      "bytes": 17208,
+      "phase": "frozen-input",
+      "role": "Equations 5a--5b asymptotically full actual high-profile mass; comparison only."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+      "blob": "f7c43e643036304ff12b01679cc7b0a9d84a0f57",
+      "sha256": "92228f5a376d7c6af08ad256fb14ed1f09e155c9c514c49b94568e9d0dadc093",
+      "bytes": 14333,
+      "phase": "frozen-input",
+      "role": "Earlier construction attempts inspected, not revalidated wholesale."
+    },
+    {
+      "pr": 178,
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/arithmetic/FAILURE_POSITION_RESETS.md",
+      "blob": "d0bde1a3c4c9d61f65e3ae1aefbf165c602deae8",
+      "sha256": "28406b5165f1cba6d8317456920654d13f3204846104f289d68e13b1978c825a",
+      "bytes": 5348,
+      "phase": "frozen-input",
+      "role": "Earlier denominator reset comparison."
+    },
+    {
+      "pr": 176,
+      "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md",
+      "blob": "94c2760f09813bc2b4feea1428a10d28c2054a3d",
+      "sha256": "8249811440526b15587d345179769db54297910afb34eb3bc84084b1f41dd02f",
+      "bytes": 8451,
+      "phase": "frozen-input",
+      "role": "Existing amortized finite horizon; retained source qualification."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "blob": "2b875987b32ce8ee515c714fa330da77cc6cddde",
+      "sha256": "a57e7aef865315ef3471a25e0fee18de4d6db75cf40455a0d658912666783e08",
+      "bytes": 17345,
+      "phase": "late-comparison",
+      "role": "Late narrow read: finite changing-source realizations and missing cross-source aggregation."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "blob": "c44ba6d3f8ed50f04b531d14befef7355f792390",
+      "sha256": "9ab24369fe171a003ae318db808f1af78e949beeb868765673bcc632d1d78630",
+      "bytes": 16578,
+      "phase": "late-comparison",
+      "role": "Late narrow read: full-D integral gap multiples; not a gcd upper bound."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/TRIADIC_RIGIDITY.md",
+      "blob": "70fa89b909782afb36e8994d952e0ce33eb4bfb6",
+      "sha256": "b7f33d95c9b8caac1b1d7457189ad451220198c84f4e89f7af3ed935823fe05b",
+      "bytes": 22479,
+      "phase": "late-comparison",
+      "role": "Late construction and rigidity comparison; no new existence premise imported."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "blob": "4530ed36c4f3ff6c9cf21149989e97cb94eb1714",
+      "sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6",
+      "bytes": 27635,
+      "phase": "late-comparison",
+      "role": "Late narrow read: fixed-clock product extension and actual tail density, not an actual energy upper."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "blob": "c1fed85a4090ade76f73e23efed6548dc2fcff8d",
+      "sha256": "972e16e87bbef21867fd3e7d7ede31575596cdb69807e776d3b29c76428414ed",
+      "bytes": 12012,
+      "phase": "late-comparison",
+      "role": "Late narrow arithmetic comparison: different companion denominator retained."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4",
+      "bytes": 20257,
+      "phase": "late-comparison",
+      "role": "Root late read: real-series renewal and finite moving-height residual, no source identification."
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "blob": "39ccf195e42ee17121ff856c45541e70e05d393f",
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "bytes": 15801,
+      "phase": "late-comparison",
+      "role": "Root late read: fixed bounded flow change and O(1/N) full endpoint comparison; no word-energy upper."
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "blob": "97c3b1342bad9fbc7b9a1cd3a45aff031e1c124d",
+      "sha256": "7bcf9b6dcb275795d5f53f171098614bd30f0b65d0462a3c90b3b9399ee4ef0e",
+      "bytes": 10335,
+      "phase": "late-comparison",
+      "role": "Late narrow cycle comparison: companion bounds do not estimate the distinguished gcd."
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "blob": "d5fc4e7a3b5cd8b27cac696ef6561b8b12aa8dfd",
+      "sha256": "f75d052b925c7b1bfbf439bb44c9d2770c1865596cebbd095b7dc4575b82fb92",
+      "bytes": 12307,
+      "phase": "late-comparison",
+      "role": "Late narrow comparison: finite recognition and separable-weight limits."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CARRY_CONSTRUCTION_ATTACK.md",
+      "blob": "5e7b58c1395289676f75241108600ba6f40e5ae9",
+      "sha256": "cd2edcd77dec25f0d67948a715faf1071cb4dd39c3c2fb003b58ed8cfcdad0b3",
+      "bytes": 9954,
+      "phase": "late-comparison",
+      "role": "Late construction comparison, not a new successful candidate theorem."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/EXACT_CANDIDATE_RIGIDITY.md",
+      "blob": "11bb852f9416024ec5b3ac772e5c6f76fd87b92f",
+      "sha256": "3362a3efbefe945b0e4167f9db714d15bdf650df57c031d877105308f53ccee7",
+      "bytes": 7540,
+      "phase": "late-comparison",
+      "role": "Late exact-recognition comparison; universal successful candidate still needed."
+    },
+    {
+      "pr": 176,
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/INFINITE_OPTIMAL_RAY_ATTEMPT.md",
+      "blob": "0808df3fa851b209b19f29367943e6c531475f3a",
+      "sha256": "d6e147e27e61d57d7b4fdac74e7cfad70116a1c0fda8b1b50e1764130f7cdf0f",
+      "bytes": 9987,
+      "phase": "late-comparison",
+      "role": "Late optimum-ray comparison; no Mahler endpoint cancellation supplied."
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/README.md",
+      "blob": "ff533a3174a9a6df7aa2947102311851a2779228",
+      "sha256": "a630baa2ca4b0e741e40f97f297c1a36ac2f5bc7a576d7657ac04bad04b6fc4c",
+      "bytes": 7678,
+      "phase": "late-comparison",
+      "role": "Root read of new packet summary only; no verification of all announced results claimed."
+    }
+  ],
+  "primary_quantitative_input": {
+    "author": "E. M. Matveev",
+    "title": "An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II",
+    "year": 2000,
+    "locator": "Corollary 2.3, printed page 1219",
+    "url": "https://www.mathnet.ru/eng/im314",
+    "full_text": "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=314&what=fullteng",
+    "checked_scope": "Primary statement and fixed-field two-logarithm specialization; proof not reconstructed or formalized."
+  },
+  "frozen_input_retention_at_later_heads": [
+    {
+      "pr": 182,
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "later_commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "same_blob": true
+    },
+    {
+      "pr": 182,
+      "path": "research/whole-repo-round3-20261123/ACTUAL_COLLISION.md",
+      "later_commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "same_blob": true
+    },
+    {
+      "pr": 182,
+      "path": "research/whole-repo-round3-20261123/TRIADIC_CLOSURE.md",
+      "later_commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "same_blob": true
+    },
+    {
+      "pr": 180,
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "later_commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "same_blob": true
+    },
+    {
+      "pr": 178,
+      "path": "research/profound-step-20261123/dynamics/COALESCENCE_AND_CRITICAL_COLLISIONS.md",
+      "later_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "same_blob": true
+    },
+    {
+      "pr": 178,
+      "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+      "later_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "same_blob": true
+    },
+    {
+      "pr": 178,
+      "path": "research/profound-step-20261123/arithmetic/FAILURE_POSITION_RESETS.md",
+      "later_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "same_blob": true
+    },
+    {
+      "pr": 176,
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md",
+      "later_commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "same_blob": true
+    }
+  ]
+}

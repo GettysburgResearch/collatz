@@ -1,0 +1,1268 @@
+{
+  "status": "PASSED",
+  "commit": "75e4c3be98db839646ffbb76fc0ac33649747c99",
+  "tree": "c3346d334a17877e5f54fd2f5f7663656227d54b",
+  "checkout_clean_after": true,
+  "tracked_files": 430,
+  "module_count": 19,
+  "axiom_report_count": 126,
+  "new_axiom_report_count": 55,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_modules": [
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "source": "CollatzGlobalClosure/SignedCarry.lean",
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f",
+      "audit_count": 31,
+      "elapsed_seconds": 2.139
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "source": "CollatzGlobalClosure/MergerClockRigidity.lean",
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497",
+      "audit_count": 22,
+      "elapsed_seconds": 1.222
+    },
+    {
+      "module": "CollatzGlobalClosure.FiniteProfileDrift",
+      "source": "CollatzGlobalClosure/FiniteProfileDrift.lean",
+      "source_sha256": "055d9d3fa252d3287c1eb8fa11e4fcd76c517008772596af37b9271ebc220d74",
+      "audit_count": 2,
+      "elapsed_seconds": 0.69
+    }
+  ],
+  "modules": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "source": "vendor/pr177/Collatz/ReverseBasin146.lean",
+      "source_sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+      "audit_count": 0,
+      "elapsed_seconds": 8.21
+    },
+    {
+      "module": "Collatz.Closure",
+      "source": "vendor/pr177/Collatz/Closure.lean",
+      "source_sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+      "audit_count": 0,
+      "elapsed_seconds": 2.085
+    },
+    {
+      "module": "Collatz.Witness",
+      "source": "vendor/pr177/Collatz/Witness.lean",
+      "source_sha256": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+      "audit_count": 0,
+      "elapsed_seconds": 1.404
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "source": "vendor/pr177/Collatz/DirectedInduction.lean",
+      "source_sha256": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+      "audit_count": 0,
+      "elapsed_seconds": 1.645
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "source": "vendor/pr177/Collatz/WitnessEnergy.lean",
+      "source_sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+      "audit_count": 0,
+      "elapsed_seconds": 0.429
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "source": "vendor/pr177/Collatz/SourceWitness.lean",
+      "source_sha256": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+      "audit_count": 0,
+      "elapsed_seconds": 0.506
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "source": "vendor/pr177/Collatz/GapMultiset.lean",
+      "source_sha256": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+      "audit_count": 0,
+      "elapsed_seconds": 1.15
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "source": "vendor/pr177/Collatz/UnboundedGapReset.lean",
+      "source_sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+      "audit_count": 8,
+      "elapsed_seconds": 4.653
+    },
+    {
+      "module": "CollatzGlobalClosure.EndpointSteering",
+      "source": "CollatzGlobalClosure/EndpointSteering.lean",
+      "source_sha256": "b4f87c7b9eb38cd015f31a9f7ae60b0eaef6aeba77d496c5d586090e2da65416",
+      "audit_count": 8,
+      "elapsed_seconds": 0.813
+    },
+    {
+      "module": "CollatzGlobalClosure.InverseBudget",
+      "source": "CollatzGlobalClosure/InverseBudget.lean",
+      "source_sha256": "b266822dd285abf43e087b1d343bcf284f78388e1d8cc281bfbb0e4f3643a204",
+      "audit_count": 22,
+      "elapsed_seconds": 1.244
+    },
+    {
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness",
+      "source": "CollatzGlobalClosure/ReservedMergerCompleteness.lean",
+      "source_sha256": "b362cc5869fe646a413526ecddf37b6545762d5477ec4cea45fa653b061bfdba",
+      "audit_count": 6,
+      "elapsed_seconds": 0.919
+    },
+    {
+      "module": "CollatzGlobalClosure.MaximalReserve",
+      "source": "CollatzGlobalClosure/MaximalReserve.lean",
+      "source_sha256": "44069d071186e5228cc86142dcf02e9dc7d8745244c6fcb832dc31aa9b8ab640",
+      "audit_count": 6,
+      "elapsed_seconds": 0.64
+    },
+    {
+      "module": "CollatzGlobalClosure.AsynchronousReset",
+      "source": "CollatzGlobalClosure/AsynchronousReset.lean",
+      "source_sha256": "5d849e563fc94043cc30bb26f77fab3df7fa9b672214301c0fff4de0c65e3d07",
+      "audit_count": 12,
+      "elapsed_seconds": 2.255
+    },
+    {
+      "module": "CollatzGlobalClosure.TerminalReset",
+      "source": "CollatzGlobalClosure/TerminalReset.lean",
+      "source_sha256": "fdc444a4f8e82a0a90ed3a0c86e1339f5de162c4707da56333ad22f041d445f4",
+      "audit_count": 4,
+      "elapsed_seconds": 0.52
+    },
+    {
+      "module": "CollatzGlobalClosure.PeriodicTraceTail",
+      "source": "CollatzGlobalClosure/PeriodicTraceTail.lean",
+      "source_sha256": "6ea834644bc0a2ed898d64d4e98942d85ee41d6f25fbf72151ccecebf4a1434a",
+      "audit_count": 5,
+      "elapsed_seconds": 1.765
+    },
+    {
+      "module": "CollatzGlobalClosure.SignedCarry",
+      "source": "CollatzGlobalClosure/SignedCarry.lean",
+      "source_sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f",
+      "audit_count": 31,
+      "elapsed_seconds": 2.139
+    },
+    {
+      "module": "CollatzGlobalClosure.MergerClockRigidity",
+      "source": "CollatzGlobalClosure/MergerClockRigidity.lean",
+      "source_sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497",
+      "audit_count": 22,
+      "elapsed_seconds": 1.222
+    },
+    {
+      "module": "CollatzGlobalClosure.FiniteProfileDrift",
+      "source": "CollatzGlobalClosure/FiniteProfileDrift.lean",
+      "source_sha256": "055d9d3fa252d3287c1eb8fa11e4fcd76c517008772596af37b9271ebc220d74",
+      "audit_count": 2,
+      "elapsed_seconds": 0.69
+    },
+    {
+      "module": "CollatzGlobalClosureCore",
+      "source": "CollatzGlobalClosureCore.lean",
+      "source_sha256": "f29c598e3c9117bd8da9815bc8489c9170171f85ecdd52680d265099ef889813",
+      "audit_count": 0,
+      "elapsed_seconds": 0.214
+    }
+  ],
+  "axiom_reports": [
+    {
+      "declaration": "CollatzUnboundedGapReset.target_path",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.complete_certificate_reset",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.complete_failed_reset",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.word_path_of_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.compiled_certificate_reset",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.low_entrance",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.low_depth_zero_reset",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzUnboundedGapReset.depth_zero_guard",
+      "axioms": [],
+      "module": "Collatz.UnboundedGapReset"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.step_shift",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.orbit_shift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.odds_shift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.ternary_precision",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.target_on_ray_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.construct_source",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.construct_positive_source",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzEndpointSteering.prescribed_endpoint_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.EndpointSteering"
+    },
+    {
+      "declaration": "CollatzInverseBudget.quotient_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.normalized_quotient",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.ancestor_horizon_exact",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.ancestor_padding_preserves_late",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.short_source_iff_small_endpoint",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.extract_endpoint_block",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.extract_reserved_inverse",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.carry_partition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.extract_inverse_with_carry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.carried_endpoint_lt",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.extract_inverse_with_canonical_carry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.retained_coefficient_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.retained_coefficient_positive_iff",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.carried_rebase_hits",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.complete_carried_rebase",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.long_inverse_exhausts_carry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.reserved_shadow_unique",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.reserved_inverse_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.affordable_inverse_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.affordable_inverse_clock_log",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.smaller_affordable_inverse_clock",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzInverseBudget.long_smaller_inverse_exceeds_budget",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.InverseBudget"
+    },
+    {
+      "declaration": "CollatzReservedMerger.short_merger_to_reserved",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness"
+    },
+    {
+      "declaration": "CollatzReservedMerger.short_merger_to_canonical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness"
+    },
+    {
+      "declaration": "CollatzReservedMerger.reserved_to_short_merger",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness"
+    },
+    {
+      "declaration": "CollatzReservedMerger.reserved_splice_iff_short_merger",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness"
+    },
+    {
+      "declaration": "CollatzReservedMerger.canonical_reserved_splice_iff_short_merger",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness"
+    },
+    {
+      "declaration": "CollatzReservedMerger.canonical_to_reserved",
+      "axioms": [],
+      "module": "CollatzGlobalClosure.ReservedMergerCompleteness"
+    },
+    {
+      "declaration": "CollatzMaximalReserve.maximal_power_exists",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MaximalReserve"
+    },
+    {
+      "declaration": "CollatzMaximalReserve.maximal_power_unique",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MaximalReserve"
+    },
+    {
+      "declaration": "CollatzMaximalReserve.endpoint_ternary_shell",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MaximalReserve"
+    },
+    {
+      "declaration": "CollatzMaximalReserve.maximal_quotient_one_or_two",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MaximalReserve"
+    },
+    {
+      "declaration": "CollatzMaximalReserve.maximal_reserve_iff_short_merger",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MaximalReserve"
+    },
+    {
+      "declaration": "CollatzMaximalReserve.single_reserve_complete",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MaximalReserve"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.target_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.parent_target_component",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.whole_witness_reset",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.example_compatible",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.example_whole_witness",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.bounded_three_certificate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.no_first_run_reset_for_eight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.word_path_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.three_word_target_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.three_word_whole_witness",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.beyond_first_run_compatible",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzAsynchronousReset.beyond_first_run_whole_witness",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.AsynchronousReset"
+    },
+    {
+      "declaration": "CollatzTerminalReset.power_transfer",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.TerminalReset"
+    },
+    {
+      "declaration": "CollatzTerminalReset.three_seed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.TerminalReset"
+    },
+    {
+      "declaration": "CollatzTerminalReset.all_large_powers",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.TerminalReset"
+    },
+    {
+      "declaration": "CollatzTerminalReset.terminal_case",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.TerminalReset"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.reciprocal_square_telescope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.PeriodicTraceTail"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.weightedTail_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.PeriodicTraceTail"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.collatz_period_tail_scale",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.PeriodicTraceTail"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.collatz_fourth_tail_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.PeriodicTraceTail"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.PeriodicTraceTailCore.collatz_half_period_tail_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.PeriodicTraceTail"
+    },
+    {
+      "declaration": "CollatzSignedCarry.signedStep_nat",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.signedOrbit_nat",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.one_step_complement",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.complement_transport",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.ordinary_complement_transport",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.source_gap_transport",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.signedOdds_nat",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.complement_odds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.ordinary_complement_odds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.finite_signed_lift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.source_gap_odds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.orbit_add",
+      "axioms": [
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.odds_add",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.complete_word_transport",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.complete_word_budget",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.maximal_enabled_prefix",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.negativeStep_nonnegative",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.negativeOrbit_nonnegative",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.run_debt_nonnegative",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.negative_one",
+      "axioms": [
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.initial_carry",
+      "axioms": [
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.initial_carry_debt",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.orbit_positive",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.consumed_prefix_rank",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.zero_power_interval",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.initial_complete_compiler",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.interval_query_rule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.zero_power_query_rule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.terminal_one_fixed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.terminal_two_fixed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzSignedCarry.orbit_basin",
+      "axioms": [],
+      "module": "CollatzGlobalClosure.SignedCarry"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.odds_le_clock",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.actual_affine_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.correction_bound",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.padded_correction_bound",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.padded_affine_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.large_source_merger_slopes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.nonresonant_merger_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.nonsmooth_multiplier_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.padded_slope_bound",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.affine_offset_bound",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.large_affine_pair_merger_slopes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.nonresonant_affine_pair_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.nonsmooth_affine_pair_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.affine_parameter_lift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.affine_merger_ray_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.large_merger_propagates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.large_merger_covers_residue_class",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.multiplier_not_resonant_of_coprime_divisor",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.coprime_factor_multiplier_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.five_merger_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.affine_not_resonant_of_coprime_divisor",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzMergerClockRigidity.coprime_factor_affine_pair_clock_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.MergerClockRigidity"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.FiniteProfileDrift.excessive_positive_row_zero",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.FiniteProfileDrift"
+    },
+    {
+      "declaration": "CollatzGlobalClosure.FiniteProfileDrift.quantitative_row_drift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "module": "CollatzGlobalClosure.FiniteProfileDrift"
+    }
+  ],
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_required": false,
+  "total_compiler_seconds": 32.503,
+  "source_build_receipt_sha256": "c5af309502421c0d6e187cf57ca75b2ecd667d6800c33e1b1a6b124098fc781f",
+  "repository_receipt_sha256": "574dc639406b4cfd2fd4f5d7c457c59918113b5b59e66a41cd7a3b7866836dd0",
+  "scope": "Actual fresh core-source replay and axiom inspection; written asymptotic theorems have separate semantic reviews."
+}
