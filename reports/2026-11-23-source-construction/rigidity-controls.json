@@ -1,0 +1,620 @@
+{
+  "accepted": [
+    {
+      "binary_budget": 2,
+      "budget": "2",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 0,
+      "extra_factors": 0,
+      "first_hit": 0,
+      "horizon": 19,
+      "n": 1,
+      "numerator": "2"
+    },
+    {
+      "binary_budget": 4,
+      "budget": "12",
+      "exact_hit_state": [
+        1,
+        6,
+        1
+      ],
+      "exponent": 1,
+      "extra_factors": 1,
+      "first_hit": 0,
+      "horizon": 37,
+      "n": 1,
+      "numerator": "6"
+    },
+    {
+      "binary_budget": 13,
+      "budget": "4320",
+      "exact_hit_state": [
+        1,
+        54,
+        3
+      ],
+      "exponent": 3,
+      "extra_factors": 3,
+      "first_hit": 0,
+      "horizon": 118,
+      "n": 1,
+      "numerator": "54"
+    },
+    {
+      "binary_budget": 2,
+      "budget": "2",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 0,
+      "extra_factors": 0,
+      "first_hit": 1,
+      "horizon": 19,
+      "n": 2,
+      "numerator": "1"
+    },
+    {
+      "binary_budget": 4,
+      "budget": "12",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 1,
+      "extra_factors": 1,
+      "first_hit": 1,
+      "horizon": 37,
+      "n": 2,
+      "numerator": "3"
+    },
+    {
+      "binary_budget": 13,
+      "budget": "4320",
+      "exact_hit_state": [
+        1,
+        18,
+        2
+      ],
+      "exponent": 3,
+      "extra_factors": 3,
+      "first_hit": 1,
+      "horizon": 118,
+      "n": 2,
+      "numerator": "27"
+    },
+    {
+      "binary_budget": 7,
+      "budget": "96",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 2,
+      "extra_factors": 0,
+      "first_hit": 5,
+      "horizon": 64,
+      "n": 3,
+      "numerator": "-4"
+    },
+    {
+      "binary_budget": 12,
+      "budget": "2880",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 3,
+      "extra_factors": 1,
+      "first_hit": 5,
+      "horizon": 109,
+      "n": 3,
+      "numerator": "-12"
+    },
+    {
+      "binary_budget": 26,
+      "budget": "59512320",
+      "exact_hit_state": [
+        1,
+        18,
+        2
+      ],
+      "exponent": 5,
+      "extra_factors": 3,
+      "first_hit": 5,
+      "horizon": 235,
+      "n": 3,
+      "numerator": "-108"
+    },
+    {
+      "binary_budget": 4,
+      "budget": "8",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 1,
+      "extra_factors": 0,
+      "first_hit": 2,
+      "horizon": 37,
+      "n": 4,
+      "numerator": "1"
+    },
+    {
+      "binary_budget": 7,
+      "budget": "96",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 2,
+      "extra_factors": 1,
+      "first_hit": 2,
+      "horizon": 64,
+      "n": 4,
+      "numerator": "3"
+    },
+    {
+      "binary_budget": 18,
+      "budget": "241920",
+      "exact_hit_state": [
+        1,
+        18,
+        2
+      ],
+      "exponent": 4,
+      "extra_factors": 3,
+      "first_hit": 2,
+      "horizon": 163,
+      "n": 4,
+      "numerator": "27"
+    },
+    {
+      "binary_budget": 32,
+      "budget": "3013821440",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 5,
+      "extra_factors": 0,
+      "first_hit": 11,
+      "horizon": 289,
+      "n": 7,
+      "numerator": "-2344"
+    },
+    {
+      "binary_budget": 42,
+      "budget": "2206117294080",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 6,
+      "extra_factors": 1,
+      "first_hit": 11,
+      "horizon": 379,
+      "n": 7,
+      "numerator": "-7032"
+    },
+    {
+      "binary_budget": 65,
+      "budget": "31713289081167052800",
+      "exact_hit_state": [
+        1,
+        18,
+        2
+      ],
+      "exponent": 8,
+      "extra_factors": 3,
+      "first_hit": 11,
+      "horizon": 586,
+      "n": 7,
+      "numerator": "-63288"
+    },
+    {
+      "binary_budget": 678,
+      "budget": "1211828213426127485408488865446576582534985358219044398169665926212109764022094618998877781074905282350837915682353191332126146261668566933937750235332395710457729007790062947614392138094337431961600000000",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 28,
+      "extra_factors": 0,
+      "first_hit": 70,
+      "horizon": 6103,
+      "n": 27,
+      "numerator": "-6378476857984674337772"
+    },
+    {
+      "binary_budget": 724,
+      "budget": "83168227588850740457852543476662692376087203718913733045236516750527996222049273386530361840118732792327341275041955469948076201909635402561078607439510970291393325574546863684991891766475529221426865721940377600000000",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 29,
+      "extra_factors": 1,
+      "first_hit": 70,
+      "horizon": 6517,
+      "n": 27,
+      "numerator": "-19135430573954023013316"
+    },
+    {
+      "binary_budget": 821,
+      "budget": "10576792497564729364752756593266269055966245056403740518184520258741380410345285436182956919063358573712863532394634496093227820281078177529238896841135551539541567483807914173376086409063791619870001120213466453403491675781318143157207040000000000",
+      "exact_hit_state": [
+        1,
+        18,
+        2
+      ],
+      "exponent": 31,
+      "extra_factors": 3,
+      "first_hit": 70,
+      "horizon": 7390,
+      "n": 27,
+      "numerator": "-172218875165586207119844"
+    },
+    {
+      "binary_budget": 823,
+      "budget": "45034793820267563511959539848722761672723300196218405221956142211619520569824652786436231909616398699789360283664628302802562072786524171571106404897181482416172238497335652882499959152036069034869831434531638864088472691818489206905241600000000000",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 31,
+      "extra_factors": 0,
+      "first_hit": 75,
+      "horizon": 7408,
+      "n": 97,
+      "numerator": "-204111264320640774230410"
+    },
+    {
+      "binary_budget": 874,
+      "budget": "83450382149736057656265209151155405657564316395916373065796823546621947796881164113638501831377963661381907487259330688087336130969100390601999742178396915590168838328035573333957208111938492429682486791283783828398497492566943863744950807784409425510400000000000",
+      "exact_hit_state": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 32,
+      "extra_factors": 1,
+      "first_hit": 75,
+      "horizon": 7867,
+      "n": 97,
+      "numerator": "-612333792961922322691230"
+    },
+    {
+      "binary_budget": 980,
+      "budget": "7736640128588952087844368694706197894103331033142601346870509542942269648609064425847249828732205309323784072014838513169018234570768949265413900297401453537087489036180444466857454837582786318332559643040347950518013604676637344996072909761064783055639852454829434754533866087435468800000000000",
+      "exact_hit_state": [
+        1,
+        18,
+        2
+      ],
+      "exponent": 34,
+      "extra_factors": 3,
+      "first_hit": 75,
+      "horizon": 8821,
+      "n": 97,
+      "numerator": "-5511004136657300904221070"
+    }
+  ],
+  "counts": {
+    "accepted": 21,
+    "defects": 36,
+    "stale": 1,
+    "zeros": 4
+  },
+  "cycle_defects": [
+    {
+      "exponent": 0,
+      "first_failure": 0,
+      "numerator": "1",
+      "sign": -1,
+      "valuation": 0
+    },
+    {
+      "exponent": 0,
+      "first_failure": 0,
+      "numerator": "3",
+      "sign": 1,
+      "valuation": 0
+    },
+    {
+      "exponent": 0,
+      "first_failure": 1,
+      "numerator": "0",
+      "sign": -1,
+      "valuation": 1
+    },
+    {
+      "exponent": 0,
+      "first_failure": 1,
+      "numerator": "4",
+      "sign": 1,
+      "valuation": 1
+    },
+    {
+      "exponent": 0,
+      "first_failure": 2,
+      "numerator": "-2",
+      "sign": -1,
+      "valuation": 2
+    },
+    {
+      "exponent": 0,
+      "first_failure": 2,
+      "numerator": "6",
+      "sign": 1,
+      "valuation": 2
+    },
+    {
+      "exponent": 0,
+      "first_failure": 5,
+      "numerator": "-30",
+      "sign": -1,
+      "valuation": 5
+    },
+    {
+      "exponent": 0,
+      "first_failure": 5,
+      "numerator": "34",
+      "sign": 1,
+      "valuation": 5
+    },
+    {
+      "exponent": 0,
+      "first_failure": 17,
+      "numerator": "-131070",
+      "sign": -1,
+      "valuation": 17
+    },
+    {
+      "exponent": 0,
+      "first_failure": 17,
+      "numerator": "131074",
+      "sign": 1,
+      "valuation": 17
+    },
+    {
+      "exponent": 0,
+      "first_failure": 64,
+      "numerator": "-18446744073709551614",
+      "sign": -1,
+      "valuation": 64
+    },
+    {
+      "exponent": 0,
+      "first_failure": 64,
+      "numerator": "18446744073709551618",
+      "sign": 1,
+      "valuation": 64
+    },
+    {
+      "exponent": 1,
+      "first_failure": 0,
+      "numerator": "5",
+      "sign": -1,
+      "valuation": 0
+    },
+    {
+      "exponent": 1,
+      "first_failure": 0,
+      "numerator": "7",
+      "sign": 1,
+      "valuation": 0
+    },
+    {
+      "exponent": 1,
+      "first_failure": 1,
+      "numerator": "4",
+      "sign": -1,
+      "valuation": 1
+    },
+    {
+      "exponent": 1,
+      "first_failure": 1,
+      "numerator": "8",
+      "sign": 1,
+      "valuation": 1
+    },
+    {
+      "exponent": 1,
+      "first_failure": 2,
+      "numerator": "2",
+      "sign": -1,
+      "valuation": 2
+    },
+    {
+      "exponent": 1,
+      "first_failure": 2,
+      "numerator": "10",
+      "sign": 1,
+      "valuation": 2
+    },
+    {
+      "exponent": 1,
+      "first_failure": 5,
+      "numerator": "-26",
+      "sign": -1,
+      "valuation": 5
+    },
+    {
+      "exponent": 1,
+      "first_failure": 5,
+      "numerator": "38",
+      "sign": 1,
+      "valuation": 5
+    },
+    {
+      "exponent": 1,
+      "first_failure": 17,
+      "numerator": "-131066",
+      "sign": -1,
+      "valuation": 17
+    },
+    {
+      "exponent": 1,
+      "first_failure": 17,
+      "numerator": "131078",
+      "sign": 1,
+      "valuation": 17
+    },
+    {
+      "exponent": 1,
+      "first_failure": 64,
+      "numerator": "-18446744073709551610",
+      "sign": -1,
+      "valuation": 64
+    },
+    {
+      "exponent": 1,
+      "first_failure": 64,
+      "numerator": "18446744073709551622",
+      "sign": 1,
+      "valuation": 64
+    },
+    {
+      "exponent": 7,
+      "first_failure": 0,
+      "numerator": "4373",
+      "sign": -1,
+      "valuation": 0
+    },
+    {
+      "exponent": 7,
+      "first_failure": 0,
+      "numerator": "4375",
+      "sign": 1,
+      "valuation": 0
+    },
+    {
+      "exponent": 7,
+      "first_failure": 1,
+      "numerator": "4372",
+      "sign": -1,
+      "valuation": 1
+    },
+    {
+      "exponent": 7,
+      "first_failure": 1,
+      "numerator": "4376",
+      "sign": 1,
+      "valuation": 1
+    },
+    {
+      "exponent": 7,
+      "first_failure": 2,
+      "numerator": "4370",
+      "sign": -1,
+      "valuation": 2
+    },
+    {
+      "exponent": 7,
+      "first_failure": 2,
+      "numerator": "4378",
+      "sign": 1,
+      "valuation": 2
+    },
+    {
+      "exponent": 7,
+      "first_failure": 5,
+      "numerator": "4342",
+      "sign": -1,
+      "valuation": 5
+    },
+    {
+      "exponent": 7,
+      "first_failure": 5,
+      "numerator": "4406",
+      "sign": 1,
+      "valuation": 5
+    },
+    {
+      "exponent": 7,
+      "first_failure": 17,
+      "numerator": "-126698",
+      "sign": -1,
+      "valuation": 17
+    },
+    {
+      "exponent": 7,
+      "first_failure": 17,
+      "numerator": "135446",
+      "sign": 1,
+      "valuation": 17
+    },
+    {
+      "exponent": 7,
+      "first_failure": 64,
+      "numerator": "-18446744073709547242",
+      "sign": -1,
+      "valuation": 64
+    },
+    {
+      "exponent": 7,
+      "first_failure": 64,
+      "numerator": "18446744073709555990",
+      "sign": 1,
+      "valuation": 64
+    }
+  ],
+  "schema": "collatz-exact-candidate-controls/v1",
+  "scope": "Selected exact finite controls for the new rigidity theorem; no universal candidate construction.",
+  "source_hashes": {
+    "EXACT_CANDIDATE_RIGIDITY.md": "3362a3efbefe945b0e4167f9db714d15bdf650df57c031d877105308f53ccee7",
+    "lean/TriadicCertificateRigidity.lean": "d1696a47a85525a242dbe100d594dfec9487d1cc40d25090bdf119f49712d958"
+  },
+  "stale_horizon": {
+    "altered_numerator": "18446744073709551612",
+    "exponent": 2,
+    "first_failure": 64,
+    "n": 3,
+    "new_horizon": 622,
+    "old_horizon": 64,
+    "original_numerator": "-4"
+  },
+  "zero_rejections": [
+    {
+      "exponent": 2,
+      "first_failure": 1,
+      "horizon": 37,
+      "n": 1
+    },
+    {
+      "exponent": 2,
+      "first_failure": 0,
+      "horizon": 46,
+      "n": 2
+    },
+    {
+      "exponent": 2,
+      "first_failure": 2,
+      "horizon": 46,
+      "n": 3
+    },
+    {
+      "exponent": 2,
+      "first_failure": 3,
+      "horizon": 55,
+      "n": 7
+    }
+  ]
+}

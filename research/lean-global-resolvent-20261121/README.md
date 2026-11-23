@@ -4,16 +4,27 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [one amortized triadic height budget](overview/triadic-height/README.md)
-proves a finite candidate-to-convergence theorem in Lean, with a literal
-computed horizon and all signed/zero cases included. The new integer
-potential removes the multiplication of candidate numerator height by its
-denominator exponent. Universal candidate construction remains open.
-Parallel direct attacks retain the actual boundary law and complete cycle
-denominator; an exact all-depth ordinary optimizer shows why balanced-word
-extremality cannot be inferred from those optimizer properties. The packet
-includes a standalone finite two-carry construction question, 22 new
-theorem declarations and four definitions, and independent reconstruction.
+**Latest checkpoint:** [finite candidate exactness](overview/source-construction/README.md)
+strengthens the same finite premise: an accepted candidate reaches the
+exact complementary cycle by `8E` and remains compatible at every later
+clock. Lean proves finite/all-time equivalence for that unchanged candidate,
+with all signed, zero, and unreduced-denominator cases included. Written
+corollaries give the exact reduced denominator count and a linear bound on
+the first-hit clock in that exponent. Parallel attacks test fixed-source
+Subspace-Theorem forms, higher-rank boundary rigidity with the ordinary
+label retained, and complete-cycle product expansion. A new written theorem
+constructs arbitrarily high, arbitrarily long rational cycles with maximal
+multiplicative product sets. The new module has 15 theorem declarations
+and two definitions, all audited and independently replayed. Universal
+candidate construction and the other closing estimates remain open.
+
+[Checkpoint 16: one amortized triadic height budget](overview/triadic-height/README.md)
+proves the preceding finite candidate-to-convergence theorem in Lean. Its
+single integer potential removes the multiplication of numerator height
+by denominator exponent. The packet retains the standalone finite
+two-carry construction question and the exact unbalanced all-depth
+ordinary optimizer control, with 22 theorem declarations and four
+definitions and independent reconstruction.
 
 [Checkpoint 15: ordinary integer fibres and direct closing attacks](overview/integer-boundary/README.md)
 proves a corrected simultaneous real/3-adic integer-value classification,

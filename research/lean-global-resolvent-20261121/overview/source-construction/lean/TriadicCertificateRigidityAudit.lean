@@ -1,0 +1,19 @@
+import TriadicCertificateRigidity
+
+#print axioms CollatzTriadicRigidity.weight_mono
+#print axioms CollatzTriadicRigidity.weight_covers_power
+#print axioms CollatzTriadicRigidity.step_exponent_le
+#print axioms CollatzTriadicRigidity.finite_early_hit
+#print axioms CollatzTriadicRigidity.cycleDefect
+#print axioms CollatzTriadicRigidity.cycle_step_defect
+#print axioms CollatzTriadicRigidity.finite_cycle_divisibility
+#print axioms CollatzTriadicRigidity.cycle_defect_bound
+#print axioms CollatzTriadicRigidity.int_zero_of_dvd_of_abs_lt
+#print axioms CollatzTriadicRigidity.finite_paired_rigidity
+#print axioms CollatzTriadicRigidity.initial_two_tests_budget
+#print axioms CollatzTriadicRigidity.finite_triadic_exact_pair
+#print axioms CollatzTriadicRigidity.exactCycle
+#print axioms CollatzTriadicRigidity.exactCycle_compatible
+#print axioms CollatzTriadicRigidity.exactCycle_next
+#print axioms CollatzTriadicRigidity.finite_certificate_alltime
+#print axioms CollatzTriadicRigidity.finite_certificate_iff_alltime

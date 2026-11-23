@@ -1,0 +1,91 @@
+{
+  "schema": "collatz-independent-triadic-rigidity-replay/v1",
+  "started_utc": "2026-11-23T03:33:15.729084+00:00",
+  "source_hashes": {
+    "TriadicDualClosure.lean": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+    "TriadicAmortizedBudget.lean": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+    "TriadicCertificateRigidity.lean": "d1696a47a85525a242dbe100d594dfec9487d1cc40d25090bdf119f49712d958"
+  },
+  "written_proof_sha256": "3362a3efbefe945b0e4167f9db714d15bdf650df57c031d877105308f53ccee7",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_status": "",
+  "declarations": [
+    "weight_mono",
+    "weight_covers_power",
+    "step_exponent_le",
+    "finite_early_hit",
+    "cycleDefect",
+    "cycle_step_defect",
+    "finite_cycle_divisibility",
+    "cycle_defect_bound",
+    "int_zero_of_dvd_of_abs_lt",
+    "finite_paired_rigidity",
+    "initial_two_tests_budget",
+    "finite_triadic_exact_pair",
+    "exactCycle",
+    "exactCycle_compatible",
+    "exactCycle_next",
+    "finite_certificate_alltime",
+    "finite_certificate_iff_alltime"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "TriadicDualClosure.olean",
+        "TriadicDualClosure.lean"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/overview_work/checkpoint17_optimizer/lean_rigidity_review",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "TriadicAmortizedBudget.olean",
+        "TriadicAmortizedBudget.lean"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/overview_work/checkpoint17_optimizer/lean_rigidity_review",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "TriadicCertificateRigidity.olean",
+        "TriadicCertificateRigidity.lean"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/overview_work/checkpoint17_optimizer/lean_rigidity_review",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "IndependentRigidityAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/06005805ecd5/overview_work/checkpoint17_optimizer/lean_rigidity_review",
+      "exit_code": 0,
+      "stdout": "'CollatzTriadicRigidity.weight_mono' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.weight_covers_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.step_exponent_le' depends on axioms: [propext, Quot.sound]\n'CollatzTriadicRigidity.finite_early_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.cycleDefect' depends on axioms: [propext]\n'CollatzTriadicRigidity.cycle_step_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.finite_cycle_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.cycle_defect_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.int_zero_of_dvd_of_abs_lt' depends on axioms: [propext, Quot.sound]\n'CollatzTriadicRigidity.finite_paired_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.initial_two_tests_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.finite_triadic_exact_pair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.exactCycle' depends on axioms: [propext]\n'CollatzTriadicRigidity.exactCycle_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.exactCycle_next' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.finite_certificate_alltime' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicRigidity.finite_certificate_iff_alltime' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-23T03:33:26.171362+00:00",
+  "success": true
+}
