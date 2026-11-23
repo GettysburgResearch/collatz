@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "arithmetic": "exact Python integers and fractions; no floating-point entropy",
+  "scope": "finite identities, finite inequalities and negative controls only",
+  "not_verified": [
+    "an infinite escaping orbit",
+    "stationary extraction inputs",
+    "asymptotic entropy occupation",
+    "critical collision upper bound",
+    "Collatz conjecture"
+  ],
+  "fixtures": [
+    {
+      "source": 5,
+      "distinct_states": 2,
+      "maximum_state": 5
+    },
+    {
+      "source": 7,
+      "distinct_states": 6,
+      "maximum_state": 17
+    },
+    {
+      "source": 41,
+      "distinct_states": 41,
+      "maximum_state": 3077
+    },
+    {
+      "source": 703,
+      "distinct_states": 63,
+      "maximum_state": 83501
+    },
+    {
+      "source": 871,
+      "distinct_states": 64,
+      "maximum_state": 63665
+    },
+    {
+      "source": 9257,
+      "distinct_states": 64,
+      "maximum_state": 325133
+    }
+  ],
+  "checks": {
+    "all_gap_affine_and_valuation_identity": 6821,
+    "all_gap_decomposition_and_short_gap_bound": 312,
+    "backward_window_endpoint_residue": 6656,
+    "collision_entropy_lower_bound": 325,
+    "exact_height_occupation_entropy": 1120,
+    "exact_sliding_block_entropy": 7476,
+    "exact_word_and_return_crt": 1360,
+    "reduced_anchor_joint_divisibility": 13557
+  },
+  "reduced_anchor_example": {
+    "source_index": 0,
+    "end_index": 2,
+    "p": 7,
+    "q": 17,
+    "A": 2,
+    "C": 5,
+    "D": -5,
+    "gcd": 5
+  },
+  "negative_controls": {
+    "omitting_window_boundary_factor": "rejected exactly",
+    "wrong_anchor_denominator_sign": "rejected exactly",
+    "forgetting_gcd_on_reduced_rhs": "rejected exactly",
+    "discarding_complete_carry": "rejected exactly"
+  }
+}

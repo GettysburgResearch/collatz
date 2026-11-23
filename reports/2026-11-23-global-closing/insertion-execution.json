@@ -1,0 +1,47 @@
+{
+  "status": "normal and optimized executions passed with byte-identical stdout",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "checker_assert_ast_nodes": 0,
+  "explicit_conditions_per_execution": 100318,
+  "normal_optimized_stdout_identical": true,
+  "checker_directory_entries_unchanged_during_execution": true,
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "check_finite_gap_one_insertions.py"
+      ],
+      "started_utc": "2026-11-23T04:27:14.987216+00:00",
+      "finished_utc": "2026-11-23T04:27:16.444707+00:00",
+      "duration_seconds": 1.457566,
+      "exit_code": 0,
+      "stdout_sha256": "6c0d3a6022c98f58fa8dca66bdfc8d12d78bbec7be38958989e446dd617d559c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2957,
+      "stderr_bytes": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "check_finite_gap_one_insertions.py"
+      ],
+      "started_utc": "2026-11-23T04:27:14.987468+00:00",
+      "finished_utc": "2026-11-23T04:27:16.555161+00:00",
+      "duration_seconds": 1.567708,
+      "exit_code": 0,
+      "stdout_sha256": "6c0d3a6022c98f58fa8dca66bdfc8d12d78bbec7be38958989e446dd617d559c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2957,
+      "stderr_bytes": 0
+    }
+  ],
+  "sha256": {
+    "check_finite_gap_one_insertions.py": "ce7aba78bdc24263e180639df1432cb62bcd8de81e29b94536b926b89637fcb2",
+    "FINITE_GAP_ONE_INSERTIONS.md": "2501d3a849aca8582d8a1f623c85e668fedee90058dc1fe80df39c02855f39ab",
+    "SOURCES.json": "350630abf07de9211b5b2eed682bf5479933530d5d025ae901d6a1bd462f6abe",
+    "CHECK_RESULT.json": "6c0d3a6022c98f58fa8dca66bdfc8d12d78bbec7be38958989e446dd617d559c"
+  },
+  "claim_boundary": "Execution provenance for finite exact diagnostics, not a universal proof or Lean certificate."
+}

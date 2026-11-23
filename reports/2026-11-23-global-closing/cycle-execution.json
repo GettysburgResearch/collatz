@@ -1,0 +1,35 @@
+{
+  "canonical_json_encoding": "UTF-8; JSON sort_keys=True, separators=(comma,colon), ensure_ascii=False; no final newline",
+  "commands": [
+    "python check_paired_tensor_controls.py",
+    "python -O check_paired_tensor_controls.py"
+  ],
+  "controls": 6,
+  "date": "2026-11-23",
+  "files": {
+    "PAIRED_TENSOR_CLOSURE_ATTEMPT.md": {
+      "bytes": 10582,
+      "sha256": "b828c5c0155c3baa3377c1d56f7c284602762b2dec149cff772bba8b1a42016e"
+    },
+    "PAIRED_TENSOR_CONTROLS.json": {
+      "bytes": 7143,
+      "canonical_json_sha256": "e0a7cf8c9f5b709ccf7eecea14fc4532e3eb2d206797c16967ac326491109045",
+      "sha256": "aee4fa14f25c591c2fb37c958fe7762e6267cf61689ec8e08f8842967c5d8283"
+    },
+    "SOURCES.json": {
+      "bytes": 4772,
+      "canonical_json_sha256": "a0db01e6519123ee79e5592f6ef241af8573e70f2b3f8ddac1a00199c600cae2",
+      "sha256": "84c836dca5e2f6b8523256609ff4ecbdaabbd31d0bf9475043746aea2e595bd8"
+    },
+    "check_paired_tensor_controls.py": {
+      "bytes": 5519,
+      "sha256": "e8ec79eff5496241266e60876e650f9f43176ecbe029eb1c25460f615370942f"
+    }
+  },
+  "literal_paired_steps": 13589,
+  "normal_and_optimized_outputs_byte_identical": true,
+  "proof_and_checker_embedded_hashes_match": true,
+  "schema": "collatz-checkpoint18-cycles-verification-v1",
+  "scope": "Exact finite controls only; no new Lean compilation or universal cycle exclusion.",
+  "status": "passed"
+}

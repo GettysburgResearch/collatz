@@ -1,0 +1,85 @@
+{
+  "schema": "collatz-critical-generic-ray-sources/v1",
+  "repository_sources": [
+    {
+      "pr": 180,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "git_blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4",
+      "scope": "Read full stationary/individual-clock distinction; critical real-series and finite seam arguments source-qualified."
+    },
+    {
+      "pr": 180,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "git_blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "scope": "Stationary reversed gap law, maximum-Shannon geometric branch, exact critical mean and collision consumer."
+    },
+    {
+      "pr": 182,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "git_blob": "2b875987b32ce8ee515c714fa330da77cc6cddde",
+      "sha256": "a57e7aef865315ef3471a25e0fee18de4d6db75cf40455a0d658912666783e08",
+      "scope": "Earlier finite ordinary changing-source controls; the new construction is an infinite nonordinary control with a different scope."
+    },
+    {
+      "pr": 186,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md",
+      "git_blob": "8b7a6471f014be065f1dc3decc0027ba112cfd33",
+      "sha256": "bef18043b6b30a3b435a140098a3bb7528cc3fc6d2f6a9a27565892bbbf2347d",
+      "scope": "Read rigidity, interpolation, source/atom and deep-machinery applicability boundaries."
+    },
+    {
+      "pr": 186,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/06_agent_tasks.md",
+      "git_blob": "758080b836dc878760042dc2019238cf42732046",
+      "sha256": "ab2b2cb1dcfe82d41ff0b0bfa2b9d4d7af38354e17a6ba38d1592d05e7fe5955",
+      "scope": "Read all14 task cards and source/coverage requirements."
+    },
+    {
+      "pr": 177,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/witness/MULTIPLIER_TRANSPORT.md",
+      "git_blob": "7c2295e83e6ad7495432ae665fbfff0ca0a1af1b",
+      "sha256": "dec49df0c881ee560ce9bcd3d1da076301b9686c762a1929eda1e9d368984cd4",
+      "scope": "Read full source-dependent multiplier compiler boundary as an alternative route."
+    },
+    {
+      "pr": 180,
+      "repository": "GettysburgResearch/collatz",
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "git_blob": "01a5d159730960894e903cd91e04550b05ba1d64",
+      "sha256": "474c5e54492ebe7f69d79e5bd858c44fa1fd3d7737350439d63e534ba81e6149",
+      "scope": "Read full actual-series recurrence consumer and missing construction, including equality of arithmetic capacity radii."
+    }
+  ],
+  "literature": [
+    {
+      "author": "Giles Atkinson",
+      "title": "Recurrence of Co-Cycles and Random Walks",
+      "url": "https://wrap.warwick.ac.uk/id/eprint/136838/1/WRAP_Theses_Atkinson_1976.pdf",
+      "scope": "Primary1976 article reproduced in AppendixA; theorem hypotheses inspected. Used only to identify the stationary-a.e. applicability boundary; the insertion proof is elementary."
+    },
+    {
+      "authors": [
+        "Jean Bertoin",
+        "Ron Doney"
+      ],
+      "title": "On conditioning random walks in an exponential family to stay nonnegative",
+      "url": "https://archive.numdam.org/item/SPS_1994__28__116_0.pdf",
+      "scope": "Indexed primary opening statement inspected; direct PDF open returned502. Motivational lead only; no conditioned-walk theorem imported."
+    }
+  ]
+}

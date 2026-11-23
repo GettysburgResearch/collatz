@@ -1,0 +1,82 @@
+{
+  "checkpoint": 18,
+  "date": "2026-11-23",
+  "source_quantifier": "One fixed positive odd ternary-unit source and its actual injective odd orbit; no source changes with horizon.",
+  "finite_results": [
+    "Exact sliding-block entropy with N-m/N-k boundary correction",
+    "Low ordinary endpoint occupation entropy",
+    "Reduced rational-anchor joint divisibility and height payment",
+    "Complete word CRT return class",
+    "Full pair-gap collision decomposition and short-gap count"
+  ],
+  "written_asymptotic_results": [
+    "Fixed-block entropy occupation along its same actual subsequence",
+    "Strict-deficit collision mass beyond every o(N^beta) gap range"
+  ],
+  "unproved": [
+    "All-gap critical collision upper bound",
+    "Critical iid equality-branch exclusion",
+    "Collatz conjecture"
+  ],
+  "formal_status": "Written proofs with exact finite controls; no Lean formalization claimed.",
+  "sources": [
+    {
+      "source": "PR180",
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "scope": "Source-qualified actual stationary extraction, fixed-block entropy convergence, strict deficit/iid dichotomy; no upper collision bound imported."
+    },
+    {
+      "source": "PR178",
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "scope": "Actual equivalent harmonic flow and simultaneous total-variation/collision comparison."
+    },
+    {
+      "source": "PR180",
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4",
+      "scope": "Actual critical renewal and minimum-source law; inspected comparison only."
+    },
+    {
+      "source": "PR180",
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6",
+      "scope": "Actual fibre density and fixed-resolution phase law; inspected comparison only."
+    },
+    {
+      "source": "PR182",
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "sha256": "a57e7aef865315ef3471a25e0fee18de4d6db75cf40455a0d658912666783e08",
+      "scope": "Changing-source finite obstruction and its source-height payment; inspected comparison only."
+    },
+    {
+      "source": "PR176 checkpoint17",
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/HAAR_AND_ORDINARY_LABELS.md",
+      "sha256": "36ad8ee0dba9f628aaa7661917f8f722ec7fd18412be295fa95617b1bf1059c7",
+      "scope": "Physical representative, retained endpoint law and mixed-phase identity; inspected comparison only."
+    }
+  ],
+  "literature": [
+    {
+      "author": "Lyapunov Weaver",
+      "title": "A power improvement for uniform Collatz interval compression",
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "version": "v3",
+      "inspected": "Sections 7.10--7.11 and introductory statement",
+      "retrieved": "2026-11-23",
+      "scope": "Comparison only. Its iid canonical cross-coordinate concentration is not imported as an actual fixed-source endpoint bound."
+    }
+  ],
+  "local_artifact_sha256": {
+    "ACTUAL_ALL_GAP_COLLISIONS.md": "82b0bf20b7a315e0102692eddae3058f84d8ec74a983be057669c0b55f795caa",
+    "check_all_gap_collisions.py": "fc1957cc6c71dc541447d80596f250d7d15a517dd52189b1ae55003cf2bd671d",
+    "all-gap-collision-controls.json": "8c9bee680b369e9d726dd25a9e157e65a9282f589009cecc37383333a084bce4"
+  }
+}

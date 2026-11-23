@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "date": "2026-11-23",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Exact finite controls only; no asymptotic or global theorem verified by execution.",
+  "runtime_checks": "Explicit require/raise conditions; AST confirms zero assert statements.",
+  "output_contract": "Checker prints JSON only to stdout; runner separately saves the result. No adjacent files changed in either execution.",
+  "normal_and_optimized_stdout_identical": true,
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint18_collision/check_all_gap_collisions.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.251077,
+      "stdout_sha256": "8c9bee680b369e9d726dd25a9e157e65a9282f589009cecc37383333a084bce4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adjacent_files_unchanged": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint18_collision/check_all_gap_collisions.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.336844,
+      "stdout_sha256": "8c9bee680b369e9d726dd25a9e157e65a9282f589009cecc37383333a084bce4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adjacent_files_unchanged": true
+    }
+  ],
+  "checked_artifact_sha256": {
+    "ACTUAL_ALL_GAP_COLLISIONS.md": "82b0bf20b7a315e0102692eddae3058f84d8ec74a983be057669c0b55f795caa",
+    "check_all_gap_collisions.py": "fc1957cc6c71dc541447d80596f250d7d15a517dd52189b1ae55003cf2bd671d",
+    "all-gap-collision-controls.json": "8c9bee680b369e9d726dd25a9e157e65a9282f589009cecc37383333a084bce4",
+    "SOURCES.json": "a84f063ac601ad523f3e76ff71bd25243adcdd641c43d8d8de620bed21076e4d"
+  },
+  "total_recorded_finite_checks": 37627,
+  "negative_control_count": 4
+}

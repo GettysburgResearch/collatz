@@ -1,0 +1,175 @@
+{
+  "schema": "collatz-checkpoint18-scoped-execution/v1",
+  "started_utc": "2026-11-23T04:32:36.329358+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "scope": "Frozen-file integrity and four new finite exact checkers; not a Lean replay, proof of asymptotic statements, or Collatz proof.",
+  "success": true,
+  "checks": [
+    {
+      "script": "check_generic_ray_controls.py",
+      "optimized": false,
+      "exit_code": 0,
+      "stdout_sha256": "37928c786559a419f43e43452969d9cf919ff70b7ae5dfb84d5637a5e57a4d3f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_generic_ray_controls.py",
+      "optimized": true,
+      "exit_code": 0,
+      "stdout_sha256": "37928c786559a419f43e43452969d9cf919ff70b7ae5dfb84d5637a5e57a4d3f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_finite_gap_one_insertions.py",
+      "optimized": false,
+      "exit_code": 0,
+      "stdout_sha256": "6c0d3a6022c98f58fa8dca66bdfc8d12d78bbec7be38958989e446dd617d559c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_finite_gap_one_insertions.py",
+      "optimized": true,
+      "exit_code": 0,
+      "stdout_sha256": "6c0d3a6022c98f58fa8dca66bdfc8d12d78bbec7be38958989e446dd617d559c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_all_gap_collisions.py",
+      "optimized": false,
+      "exit_code": 0,
+      "stdout_sha256": "8c9bee680b369e9d726dd25a9e157e65a9282f589009cecc37383333a084bce4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_all_gap_collisions.py",
+      "optimized": true,
+      "exit_code": 0,
+      "stdout_sha256": "8c9bee680b369e9d726dd25a9e157e65a9282f589009cecc37383333a084bce4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_paired_tensor_controls.py",
+      "optimized": false,
+      "exit_code": 0,
+      "stdout_sha256": "aee4fa14f25c591c2fb37c958fe7762e6267cf61689ec8e08f8842967c5d8283",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "check_paired_tensor_controls.py",
+      "optimized": true,
+      "exit_code": 0,
+      "stdout_sha256": "aee4fa14f25c591c2fb37c958fe7762e6267cf61689ec8e08f8842967c5d8283",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sources": [
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/06_agent_tasks.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/witness/MULTIPLIER_TRANSPORT.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCE_TAIL_TRANSPORT.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/TRIADIC_RIGIDITY.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/HAAR_AND_ORDINARY_LABELS.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CYCLE_PRODUCT_TRANSFER_ATTEMPT.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    },
+    {
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "status": "not verified: original ledger was metadata-only and had no content hash"
+    },
+    {
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/03_arithmetic_and_logic.md",
+      "status": "content hash matched; mathematical read scope is separately recorded"
+    }
+  ],
+  "manifest_sha256": "3a694984546ab29851a48890b5faba11826c0c9663d70bbf390d25bd01d6d478",
+  "frozen_files_checked": 30,
+  "finished_utc": "2026-11-23T04:33:05.322646+00:00"
+}

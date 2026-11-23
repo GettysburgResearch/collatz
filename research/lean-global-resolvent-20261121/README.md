@@ -4,7 +4,18 @@
 
 Use the ordinary shortcut map `T(n)=n/2` for even `n` and `(3n+1)/2` for odd `n`. `Basin n` means that an actual finite iterate reaches one. All sources are ordinary positive integers.
 
-**Latest checkpoint:** [finite candidate exactness](overview/source-construction/README.md)
+**Latest checkpoint:** [ordinary-source constraints on the closing routes](overview/global-closing/README.md)
+adds a finite last-edit bound for every successful same-endpoint gap-one
+insertion repair, and an entropy bound on polynomial-height occupation
+by one fixed injective ordinary orbit. A consistent infinite nonordinary
+ray preserves all critical iid gap frequencies while its pressure escapes;
+the proof keeps the forward inverse and reversed real series distinct.
+A complete paired-cycle calculation identifies the exact dependence of
+all polynomial moment closures on the two scalar equations. These are
+written, internally reviewed results with new exact controls; no new Lean
+formalization or universal closure is claimed in this checkpoint.
+
+[Checkpoint 17: finite candidate exactness](overview/source-construction/README.md)
 strengthens the same finite premise: an accepted candidate reaches the
 exact complementary cycle by `8E` and remains compatible at every later
 clock. Lean proves finite/all-time equivalence for that unchanged candidate,
