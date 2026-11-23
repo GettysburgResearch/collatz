@@ -1,0 +1,26 @@
+DEPENDENCY Mathlib.MeasureTheory.OuterMeasure.Defs
+
+DEPENDENCY Mathlib.MeasureTheory.OuterMeasure.Basic
+
+DEPENDENCY Mathlib.MeasureTheory.OuterMeasure.AE
+
+DEPENDENCY Mathlib.MeasureTheory.OuterMeasure.BorelCantelli
+
+MODULE BoundaryMass
+
+MODULE BoundaryBorelCantelli
+
+MODULE BoundaryAudit
+'CollatzSourceClock.BoundaryMass.cone_floor_of_path_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceClock.BoundaryMass.selected_prefix_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceClock.BoundaryMass.cylinder_multiplier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceClock.BoundaryMass.heavy_cell_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzSourceClock.BoundaryBorelCantelli.ae_frequently_good_avoiding_bad' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzSourceClock.BoundaryBorelCantelli.ae_exists_good_subsequence_avoiding_bad' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzSourceClock.BoundaryBorelCantelli.ae_arbitrarily_small_real_ball_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

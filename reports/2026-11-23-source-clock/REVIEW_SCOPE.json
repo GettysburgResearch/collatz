@@ -1,0 +1,63 @@
+{
+  "schema": "collatz-scoped-review-bindings/v1",
+  "base_commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+  "qualification": "Independent in-session reconstruction of exact new sources. Imported analytic constructions remain qualified; no broad external proof audit is claimed.",
+  "bindings": [
+    {
+      "artifact": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "artifact_sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "review": "research/source-clock-20261123/reviews/EARLY_TRACE_BOUNDARY_REVIEW.md",
+      "review_sha256": "c306922a32b7a651bb013a175d66ef77a9d4d110733e3e647d40b09dfd190e5f",
+      "scope": "Upper local dimension and real nonatomicity, conditional on retained inputs"
+    },
+    {
+      "artifact": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "artifact_sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "review": "research/source-clock-20261123/reviews/TARGET_BOUNDARY_REVIEW.md",
+      "review_sha256": "4c4adef5d54cb265360184beb50b490c241cc44aa13759d61cc7de34a0e0f096",
+      "scope": "Actual fixed-total geometry and countable-root transfer"
+    },
+    {
+      "artifact": "research/source-clock-20261123/lean/BoundaryMass.lean",
+      "artifact_sha256": "e2ff0677e2df2f20e2fcf9376dd881787479d886349a3fadf644a92903ea48e3",
+      "review": "research/source-clock-20261123/reviews/TARGET_BOUNDARY_REVIEW.md",
+      "review_sha256": "4c4adef5d54cb265360184beb50b490c241cc44aa13759d61cc7de34a0e0f096",
+      "scope": "All four finite Lean statement matches"
+    },
+    {
+      "artifact": "research/source-clock-20261123/EXTENSIONS.md",
+      "artifact_sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "review": "research/source-clock-20261123/reviews/TARGET_EXTENSION_REVIEW.md",
+      "review_sha256": "90c766529fe845524eff2e65a81b6be7756128e2e39addc898cd0bf7ba8db6b6",
+      "scope": "Clock bound, lower information dimension, arbitrary fixed AC law, component mixture"
+    },
+    {
+      "artifact": "research/source-clock-20261123/EARLY_TRACE.md",
+      "artifact_sha256": "6faae3c0d510a6d2603c07f1fb34f6b9a144d918b38f05b198623a0eca80d16d",
+      "review": "research/source-clock-20261123/reviews/ROOT_TRACE_TARGET_REVIEW.md",
+      "review_sha256": "9d80d6eb7336379c845a3c751bf7cf6b84378fce41dcc6a4b55e6fb6c07c2d46",
+      "scope": "Adaptive stopping-line inequality and conditional entropy cost"
+    },
+    {
+      "artifact": "research/source-clock-20261123/TARGET_DESCENT.md",
+      "artifact_sha256": "ba1656edb83aa127e514b94b1adcfb7f28c4c97e28e17312e2d12f7a3d5f87cb",
+      "review": "research/source-clock-20261123/reviews/ROOT_TRACE_TARGET_REVIEW.md",
+      "review_sha256": "9d80d6eb7336379c845a3c751bf7cf6b84378fce41dcc6a4b55e6fb6c07c2d46",
+      "scope": "Semigroup discrepancy and rigidity TD1--TD3"
+    },
+    {
+      "artifact": "research/source-clock-20261123/COLLISION_TRANSFER.md",
+      "artifact_sha256": "4f6494baa8fd85e936e69367c45a27ab774a8a0aa6ee188919e49f44371b7fe9",
+      "review": "research/source-clock-20261123/reviews/ROOT_COLLISION_REVIEW.md",
+      "review_sha256": "9cfcac8bb6e62b74a69cf5962c78e9d77cd9d25bf01b91a295ff93282e476056",
+      "scope": "Exact probability model and source-qualified retained high-profile mass"
+    },
+    {
+      "artifact": "research/source-clock-20261123/lean/BoundaryBorelCantelli.lean",
+      "artifact_sha256": "e4825c20e2c5c2d5d2b8d0bc1d3a5a4402cc4ce648a5812bea88f404126e68f4",
+      "review": "research/source-clock-20261123/reviews/ROOT_BOREL_CANTELLI_REVIEW.md",
+      "review_sha256": "830636519ae4570e5c87567a5ba2ae9b677d03d669c405eb751703d3884dd8ef",
+      "scope": "Three conditional infinite probability declarations and intended application"
+    }
+  ]
+}
