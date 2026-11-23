@@ -1,0 +1,335 @@
+{
+  "schema": "collatz-integer-boundary-checks/v1",
+  "started_utc": "2026-11-23T01:50:24.779802+00:00",
+  "scope": "new Lean real-separation bridge and three finite arithmetic controls; not full Collatz or an end-to-end formalization of the written infinite classification",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_status": "",
+  "dependencies": "existing Mathlib and package objects reused; no historical project Lean modules rebuilt",
+  "source_hashes": {
+    "lean/InverseRealSeparation.lean": "7a6d060f2dd8920f5c97642309a1273aa6ca53d94140c5296ad40491b7120b50",
+    "lean/AuditInverseRealSeparation.lean": "f286137428afae9d58c7e9d925af4707e0ac406c413f73d42e0c3a8a57053375",
+    "verify_integer_boundary.py": "05bcbd529a79b802299210c87bdff8292c6e5919d124432f84aa491972432bed",
+    "check_pressure_wiener.py": "84171e1740beccd024256bce551989190744836309878f61b884cce1baade3b0",
+    "check_numen_inverse_fiber.py": "316165b27f8832d3d80e320978a88ab7af1c3ba4bef41a810d490bee869592b5",
+    "check_band_remainder.py": "54866782515cc2fd8090386cc01272bd432ae6d282c9a3272e09b70de59052ed"
+  },
+  "declarations": [
+    "multiplier",
+    "partialSum",
+    "correction",
+    "multiplier_pos",
+    "affine_telescope",
+    "product_telescope",
+    "correction_le_exp",
+    "partial_separation",
+    "partial_monotone",
+    "exists_real_limit_with_gap",
+    "multiplier_pow_two",
+    "partialSum_pow_two",
+    "ordinary_inverse_numen_separated"
+  ],
+  "finite_controls": [
+    {
+      "file": "check_pressure_wiener.py",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "output_sha256": "2bc9db56b31f84363333343c85bcbeeb18c9647cdda7fee9c73d27e931ab63dc",
+      "result": {
+        "filter_cases": 2814,
+        "operator_coefficients_compared": 24008,
+        "scope": "exact finite controls only; infinite spectral claims are written proofs",
+        "success": true,
+        "trajectory_family": [
+          {
+            "gap_one_source_weight_s2": "9/4",
+            "k": 1,
+            "root_bits": 9,
+            "root_final_gap": 10,
+            "source_bits": 8
+          },
+          {
+            "gap_one_source_weight_s2": "81/16",
+            "k": 2,
+            "root_bits": 27,
+            "root_final_gap": 28,
+            "source_bits": 26
+          },
+          {
+            "gap_one_source_weight_s2": "729/64",
+            "k": 3,
+            "root_bits": 81,
+            "root_final_gap": 82,
+            "source_bits": 79
+          },
+          {
+            "gap_one_source_weight_s2": "6561/256",
+            "k": 4,
+            "root_bits": 243,
+            "root_final_gap": 244,
+            "source_bits": 241
+          },
+          {
+            "gap_one_source_weight_s2": "59049/1024",
+            "k": 5,
+            "root_bits": 729,
+            "root_final_gap": 730,
+            "source_bits": 726
+          },
+          {
+            "gap_one_source_weight_s2": "531441/4096",
+            "k": 6,
+            "root_bits": 2187,
+            "root_final_gap": 2188,
+            "source_bits": 2183
+          }
+        ]
+      }
+    },
+    {
+      "file": "check_numen_inverse_fiber.py",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "output_sha256": "005a7ef01957a4201d75d0eb8c0dfa9b48769ee219b0a82f61488fc04266e5d4",
+      "result": {
+        "damaged_prefixes_rejected": [
+          "altered_state",
+          "altered_clock",
+          "altered_code"
+        ],
+        "forward_orbit_of_7": [
+          7,
+          11,
+          17,
+          26,
+          13,
+          20,
+          10,
+          5,
+          8,
+          4,
+          2,
+          1
+        ],
+        "prefixes": 512,
+        "rays": [
+          {
+            "bit_clock": 596,
+            "initial_states": [
+              1,
+              5,
+              13,
+              277,
+              1477,
+              7877,
+              21005,
+              224053,
+              1194949
+            ],
+            "last_state_digits": 119,
+            "odd_depth": 128,
+            "root": 1,
+            "selector": "smaller"
+          },
+          {
+            "bit_clock": 715,
+            "initial_states": [
+              1,
+              5,
+              53,
+              565,
+              12053,
+              32141,
+              1371349,
+              7313861,
+              312058069
+            ],
+            "last_state_digits": 155,
+            "odd_depth": 128,
+            "root": 1,
+            "selector": "alternating"
+          },
+          {
+            "bit_clock": 553,
+            "initial_states": [
+              7,
+              37,
+              197,
+              2101,
+              44821,
+              239045,
+              637453,
+              3399749,
+              36263989
+            ],
+            "last_state_digits": 107,
+            "odd_depth": 128,
+            "root": 7,
+            "selector": "smaller"
+          },
+          {
+            "bit_clock": 681,
+            "initial_states": [
+              7,
+              37,
+              3157,
+              16837,
+              359189,
+              3831349,
+              326941781,
+              871844749,
+              18599354645
+            ],
+            "last_state_digits": 145,
+            "odd_depth": 128,
+            "root": 7,
+            "selector": "alternating"
+          }
+        ],
+        "residue_classes": 6,
+        "scope": "finite arithmetic controls only; infinite claims are written"
+      }
+    },
+    {
+      "file": "check_band_remainder.py",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "output_sha256": "490cddf27d41c08e4ba17e4e73708062f02456dfca9476602e25004dabc5674b",
+      "result": {
+        "scope": "127 exact finite horizon controls, eight finite convergent pairs; not a global convergence proof",
+        "source_sha256": "54866782515cc2fd8090386cc01272bd432ae6d282c9a3272e09b70de59052ed",
+        "all_horizon_controls_passed": 127,
+        "max_k": 128,
+        "convergent_controls": [
+          {
+            "k": 2,
+            "q": 95,
+            "r": 31,
+            "q_first_descent": 8,
+            "q_first_hit_one": 67,
+            "r_first_descent": 56,
+            "r_first_hit_one": 67
+          },
+          {
+            "k": 3,
+            "q": 639,
+            "r": 127,
+            "q_first_descent": 23,
+            "q_first_hit_one": 84,
+            "r_first_descent": 15,
+            "r_first_hit_one": 31
+          },
+          {
+            "k": 4,
+            "q": 4607,
+            "r": 511,
+            "q_first_descent": 48,
+            "q_first_hit_one": 98,
+            "r_first_descent": 18,
+            "r_first_hit_one": 41
+          },
+          {
+            "k": 5,
+            "q": 34815,
+            "r": 2047,
+            "q_first_descent": 27,
+            "q_first_hit_one": 74,
+            "r_first_descent": 58,
+            "r_first_hit_one": 100
+          },
+          {
+            "k": 6,
+            "q": 270335,
+            "r": 8191,
+            "q_first_descent": 45,
+            "q_first_hit_one": 145,
+            "r_first_descent": 43,
+            "r_first_hit_one": 102
+          },
+          {
+            "k": 7,
+            "q": 2129919,
+            "r": 32767,
+            "q_first_descent": 42,
+            "q_first_hit_one": 194,
+            "r_first_descent": 51,
+            "r_first_hit_one": 85
+          },
+          {
+            "k": 8,
+            "q": 16908287,
+            "r": 131071,
+            "q_first_descent": 61,
+            "q_first_hit_one": 159,
+            "r_first_descent": 100,
+            "r_first_hit_one": 144
+          },
+          {
+            "k": 9,
+            "q": 134742015,
+            "r": 524287,
+            "q_first_descent": 58,
+            "q_first_hit_one": 192,
+            "r_first_descent": 56,
+            "r_first_hit_one": 116
+          }
+        ],
+        "smallest_horizon_control": {
+          "k": 2,
+          "a": 6,
+          "h": 5,
+          "q": 95,
+          "r": 31,
+          "q_at_a": 364,
+          "r_at_a": 121,
+          "odd_count": 5,
+          "minimum_positive_clock_through_a": 143
+        },
+        "largest_horizon_control": {
+          "k": 128,
+          "a": 384,
+          "h": 257,
+          "q": 39402006196394479212279040100143613805311323448940079058795435374263097587203750580745547382963830808822454249586687,
+          "r": 231584178474632390847141970017375815706539969331281128078915168015826259279871,
+          "q_at_a": 1431933221433912343459435510743493220757090706180467159842068637805783515388365434354307132921027420654387897316063601769599440131502361942775849412039737,
+          "r_at_a": 8416147062751618291811813368467554746815008976806816518306285932122675831552711548480193085635433098770814916788534,
+          "odd_count": 321,
+          "minimum_positive_clock_through_a": 59103009294591718818418560150215420707966985173410118588193153061394646380805625871118321074445746213233681374380031
+        }
+      }
+    }
+  ],
+  "lean_compile": {
+    "argv": [
+      "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+      "-DwarningAsError=true",
+      "-o",
+      "InverseRealSeparation.olean",
+      "InverseRealSeparation.lean"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "lean_audit": {
+    "argv": [
+      "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+      "-DwarningAsError=true",
+      "AuditInverseRealSeparation.lean"
+    ],
+    "exit_code": 0,
+    "stdout": "'CollatzInverseReal.multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.partialSum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.correction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.multiplier_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.affine_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.product_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.correction_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.partial_separation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.partial_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.exists_real_limit_with_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.multiplier_pow_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.partialSum_pow_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseReal.ordinary_inverse_numen_separated' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "stderr": ""
+  },
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-11-23T01:50:30.061269+00:00",
+  "success": true
+}

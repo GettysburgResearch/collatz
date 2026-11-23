@@ -1,0 +1,10 @@
+import SquaredSurvivalBudget
+
+#print axioms CollatzSquaredSurvival.hazard_identity
+#print axioms CollatzSquaredSurvival.hazard_lower
+#print axioms CollatzSquaredSurvival.squared_step
+#print axioms CollatzSquaredSurvival.finite_budget_with_remainder
+#print axioms CollatzSquaredSurvival.finite_budget
+#print axioms CollatzSquaredSurvival.reciprocal_cost_summable
+#print axioms CollatzSquaredSurvival.complete_budget
+#print axioms CollatzSquaredSurvival.unit_initial_budget

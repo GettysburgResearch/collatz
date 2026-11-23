@@ -1,0 +1,139 @@
+{
+  "schema": "collatz-checkpoint13-horizon-control/v1",
+  "scope": "Exact finite control; not a counterexample to FloorIntervalStep",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/returns/check_horizon.py"
+  ],
+  "source_sha256": "03f57bef7a6765e11b9cc0a5e74c057e0caa4dd840da34db7137f15f7feb89a9",
+  "exit_code": 0,
+  "seconds": 0.036,
+  "stderr": "",
+  "output": {
+    "target": 3711,
+    "source": 2184,
+    "odd_source": 273,
+    "initial_halvings": 3,
+    "word": [
+      2,
+      3,
+      3,
+      3,
+      1,
+      2,
+      3,
+      4
+    ],
+    "grade": [
+      8,
+      7,
+      6,
+      6,
+      6,
+      6,
+      4,
+      4,
+      2
+    ],
+    "odd_source_clock": 21,
+    "powered_source_clock": 24,
+    "lower_grade_maximum": 1640,
+    "target_at_source_clock": 76196,
+    "target_at_powered_source_clock": 28574,
+    "first_descent_clock": 37,
+    "first_descent_value": 2543,
+    "source_odd_count": 8,
+    "target_odd_count": 16,
+    "terminal_multiplier": 6561,
+    "terminal_debt": 69635,
+    "one_four_inverse_edges": {
+      "5": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "3": [],
+      "13": [
+        [
+          2,
+          17
+        ]
+      ],
+      "17": [
+        [
+          1,
+          11
+        ],
+        [
+          3,
+          45
+        ]
+      ],
+      "11": [
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          29
+        ]
+      ],
+      "45": [],
+      "7": [
+        [
+          2,
+          9
+        ]
+      ],
+      "29": [
+        [
+          1,
+          19
+        ],
+        [
+          3,
+          77
+        ]
+      ],
+      "9": [],
+      "19": [
+        [
+          2,
+          25
+        ]
+      ],
+      "77": [
+        [
+          1,
+          51
+        ],
+        [
+          3,
+          205
+        ]
+      ],
+      "25": [
+        [
+          2,
+          33
+        ]
+      ],
+      "51": [],
+      "205": [
+        [
+          2,
+          273
+        ]
+      ],
+      "33": [],
+      "273": []
+    },
+    "status": "Finite horizon control only; not a counterexample to FloorIntervalStep."
+  }
+}

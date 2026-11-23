@@ -1,0 +1,19 @@
+{
+  "schema": "collatz-checkpoint9-late-integration/v1",
+  "source_pr": 183,
+  "source_commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+  "prior_reviewed_commit": "907a540943090968bc683b1b9246208e9053c1f8",
+  "scope": "Written mathematical combinations with the just-published 52-theorem PR183 continuation; its own modules were not recompiled here.",
+  "supplements": [
+    {
+      "file": "SHARPER_BLOCK_CUTOFF.md",
+      "reviewed_source_sha256": "f9d9641d85001875e2769ebec8e93813cb0fa95b287fe329b9a6255fdc80e062",
+      "integrated_sha256": "f9d9641d85001875e2769ebec8e93813cb0fa95b287fe329b9a6255fdc80e062"
+    },
+    {
+      "file": "LAST_CONTACT_CHANNEL_INTEGRATION.md",
+      "reviewed_source_sha256": "19a2493e86cbca61f33e69b9423c14e1a69152e7b5e0a070f7d4c8672ff7d111",
+      "integrated_sha256": "b0936e44724ca810a89a80267707d46903f05464482ca0a859745dc7c2c79589"
+    }
+  ]
+}

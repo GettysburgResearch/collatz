@@ -1,0 +1,121 @@
+{
+  "schema": "collatz-checkpoint10-source-pins/v1",
+  "starting_pr176_head": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+  "main_snapshot": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "refreshed_heads": {
+    "175": "54b5a324f55d97925ecb8100aa15ce7b08a12093",
+    "177": "9af9118a7e9af870a32a72a4efdcf77e886940ec",
+    "178": "f464ddf2af6e340054673fdd6f5b28aba0310c10",
+    "180": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+    "182": "9dacd610ba7735e89e2e29e4ab01795983317980",
+    "185": "7889fc680f5ee22237732eccc172b1699ef565da"
+  },
+  "consumed_claim_sources": [
+    {
+      "pr": 175,
+      "commit": "54b5a324f55d97925ecb8100aa15ce7b08a12093",
+      "path": "research/lean-global-closure-20261121/CANONICAL_POTENTIAL_SUPERLEVELS.md",
+      "claim": "Sections 1 and 3; PG=G and global finite-forward-orbit superlevel cover",
+      "git_blob": "520a2df716248ec3fe0c7412b5502a4027ecd631",
+      "sha256": "693c27dce232a1b3cb18b52b09c68050774fa9b4e929842b80ade545081b6319",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 175,
+      "commit": "54b5a324f55d97925ecb8100aa15ce7b08a12093",
+      "path": "research/lean-global-closure-20261121/FIXED_RESOLUTION_ENVELOPE_OBSTRUCTION.md",
+      "claim": "Fixed-resolution regular-profile obstruction; comparison only",
+      "git_blob": "f27448f348db6d188fcbee6279d237f591558fe3",
+      "sha256": "30dbb4f8b565bdd2308f31b5152623b1467ab8fae76d4be1ef1fb0b64f2853c2",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 177,
+      "commit": "9af9118a7e9af870a32a72a4efdcf77e886940ec",
+      "path": "research/lean-exact-witness-global-20261121/PSI_HEAD_THREE_FRONTIER.md",
+      "claim": "Sections 1 and 4; exact head-three query and source-rank obstruction",
+      "git_blob": "b729ba17023659bfc867a936043f1614cba01f19",
+      "sha256": "b86f80fa1bbc244207f2c24e321fc0d95de20f16a8d05eeb933aaccc1d05d619",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 177,
+      "commit": "9af9118a7e9af870a32a72a4efdcf77e886940ec",
+      "path": "research/lean-exact-witness-global-20261121/PSI_ODD_VALUATIONS.md",
+      "claim": "Ordinary half-merger attribution; no refreshed import",
+      "git_blob": "61b8d08da411a0c5391ed562c0eda806b1b497b8",
+      "sha256": "5529661bf615d92f268541ad82361fabc0ab2dd5012e4528e61312b8934b1b4e",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 180,
+      "commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "path": "research/lean-critical-20261122/WITNESS_ATTACK.md",
+      "claim": "Actual carry continuation and unresolved terminal debt",
+      "git_blob": "9e195c762f9120de6ba43054c3d0affdbd3ddcda",
+      "sha256": "69891fdc96861009c7680dd40dbf1327e4f67fda73db6e1c2a7c3cdf300bb934",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 182,
+      "commit": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "path": "research/lean-dyadic-descent-20261121/HARMONIC_CAPTURE_BRIDGE.md",
+      "claim": "Complete unchanged-source Green budget",
+      "git_blob": "8d1d13c229acade95bcf853e4993f43015fbb260",
+      "sha256": "686e7038e2182a5953573630b248215127878de378ee0f7d7a32703a873787fa",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 182,
+      "commit": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "path": "research/lean-dyadic-descent-20261121/CANONICAL_ESCAPE_LABEL.md",
+      "claim": "Exact escape label and explicit unproved approximation",
+      "git_blob": "4f472817324699dd9d1ed42709351c7284c5e57f",
+      "sha256": "c434c6bfaa46994f28612ecc2f256cca41e2b8871157433fc2067ef60aadc04f",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "claim": "Ordinary harmonic reference, correction-product comparison, and moments",
+      "git_blob": "9b8ed17476a6c133f3bb3710c4fe1d5de8d5a1f1",
+      "sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/profound-closure-20261122/NEGATIVE_CARRY.md",
+      "claim": "Literal credit condition; comparison only",
+      "git_blob": "ebb9bdbafe5ae062664860bee66499d535957d43",
+      "sha256": "e331591c9a9fd6c141e82f41394769ded40b9c1927978e96719645d6894db8d4",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/profound-closure-20261122/FINITE_SPIKES_FORCE_SMALL_ANCESTORS.md",
+      "claim": "Late finite-certificate birth; comparison only",
+      "git_blob": "666b3b96516910b86dafcd900b1496b44aeb94c5",
+      "sha256": "130219761341f3ac612da557ece5d1a96a674cf72a4da18d5883eff16f5823b7",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    },
+    {
+      "pr": 176,
+      "commit": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+      "path": "research/external/mazur-2026/fixed-height-forward-power-saving.md",
+      "claim": "MZ-FH-001; written native no-descent count",
+      "git_blob": "1a85cd98b063bf0ac76343c9da507c4f6a8b707a",
+      "sha256": "1aadc58255951e6e5ca9d0f7e810e9b2af2c3d720ebae18361ea436bc00f59d3",
+      "status": "written/source-qualified unless otherwise specified; no whole-PR acceptance"
+    }
+  ],
+  "primary_supplement": {
+    "url": "https://rstation.ai/api/v1/comments/_g51rkPiOsuGdiQo/attachment?revision=2",
+    "zip_sha256": "f1963dc677142faa1d50f9e5ed562a48775e576bdc9ebe39757a76951ae2936a",
+    "manuscript_sha256": "4e74899a247595ad56782ee705d7074ab3e4b777142d23bce4e7805cb1b4dc47",
+    "scripts_executed": false,
+    "scope": "definitions and explicitly reconstructed bin/source facts; recent manuscript, not a full Collatz proof"
+  }
+}

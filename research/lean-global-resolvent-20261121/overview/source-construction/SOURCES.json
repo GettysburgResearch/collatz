@@ -1,0 +1,292 @@
+{
+  "schema": "collatz-source-construction-sources/v1",
+  "date": "2026-11-23",
+  "scope": "Frozen source pins for checkpoint17; access and reconstruction scope remain lane-specific.",
+  "lanes": [
+    {
+      "lane": "carry",
+      "repository_sources": [
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md",
+          "git_blob": "94c2760f09813bc2b4feea1428a10d28c2054a3d",
+          "sha256": "8249811440526b15587d345179769db54297910afb34eb3bc84084b1f41dd02f"
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TWO_CARRY_CONSTRUCTION_QUESTION.txt",
+          "git_blob": "9c44271fea3b00e1cd0c669c5bba28f174220705",
+          "sha256": "8027ce5d3b8f5edf960baddbc5d2d85c707aa7311fa0edd4e97361ae4df0a8c0"
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+          "path": "research/profound-step-20261123/arithmetic/TRIADIC_CONSTRUCTION_ATTEMPT.md",
+          "git_blob": "f7c43e643036304ff12b01679cc7b0a9d84a0f57",
+          "sha256": "92228f5a376d7c6af08ad256fb14ed1f09e155c9c514c49b94568e9d0dadc093"
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+          "path": "research/whole-repo-round3-20261123/TRIADIC_CLOSURE.md",
+          "git_blob": "3c6e297ccbb6fc5d9ad5abcffdab371cf64ebba9",
+          "sha256": "31164e32797d3868f06cf1f2b9b771e912335f096d7fc92e53a1e29355dbba36"
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/triadic-height/lean/TriadicDualClosure.lean",
+          "git_blob": "8eed815f2dc89b16da80d759c965244513082ac4",
+          "sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+          "role": "unchanged Lean dependency"
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/triadic-height/lean/TriadicAmortizedBudget.lean",
+          "git_blob": "c76bc9a5d7e20576662aee774a22b8c6fa0e60cb",
+          "sha256": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+          "role": "unchanged Lean dependency"
+        }
+      ],
+      "literature": [
+        {
+          "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+          "scope": "Read definition of Omega, inverse parity formula and Theorem 2.1."
+        },
+        {
+          "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+          "scope": "Read characteristic-two setup, Theorem 5 and polynomiality conjecture; no transfer proved."
+        }
+      ]
+    },
+    {
+      "lane": "optimizer",
+      "schema": "collatz-infinite-optimizer-sources/v1",
+      "date": "2026-11-23",
+      "repository_sources": [
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/triadic-height/OPTIMAL_ANCESTOR_BALANCE.md",
+          "git_blob": "1bd8d04d8fe1f41b9f72165b83664ec18008b7fa",
+          "sha256": "a0b25892d094b3d53cec3490b5e5774aef861049ca012fd6fb43e59919e9e380",
+          "role": "Read complete note; finite automatic-balance implication already refuted."
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+          "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+          "git_blob": "9346c3b93fbd2e336a4e1c2e80d7b92ff5f34162",
+          "sha256": "50b9ebe3fe972c4c7fbbdd3697bb36917cc010f85335fb527330f2244c669f76",
+          "role": "Read complete unit-domain common pressure maximum and product input."
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+          "path": "research/whole-source-20261123/ARITHMETIC_MINIMUM.md",
+          "git_blob": "dcfbf0b9f3151fa89922e9a32ead543283f2222d",
+          "sha256": "931dfa3e20e3a77093f011d39d108996d63c7459569cacbd9b751d5689e13343",
+          "role": "Read complete all-positive-odd maximum and same-clock repair bound."
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+          "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+          "git_blob": "34b437972096ae409568842e655509a8233a8087",
+          "sha256": "4b48bb2cff2c80ebe59c5b363c1e1c90c52395ddf0069284e44f246d8a465738",
+          "role": "Read complete minimum-source decomposition and unit-domain harmonic law."
+        },
+        {
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/longshot/ADELIC_MIXING_ATTEMPT.md",
+          "git_blob": "7c859eecf55f7abe1c8645b3aa25bfa20f5ab2e1",
+          "sha256": "53f53c7cfe8fa8cc513dd154e106971cdb2d7f3d4d545ad7cad3ff58d3d63351",
+          "role": "Read final simultaneous-Diophantine-product section; earlier inverse formulation credited."
+        }
+      ],
+      "literature": [
+        {
+          "title": "The p-adic Subspace Theorem",
+          "author": "Jan-Hendrik Evertse",
+          "url": "https://pub.math.leidenuniv.nl/~evertsejh/dio2011-padicsubspace.pdf",
+          "scope": "Primary PDF: Theorem 1.1 and two-variable application on pages 2-3 inspected; no new application claimed."
+        },
+        {
+          "title": "Bounded terminal words and eventual exact minima in Collatz inverse trees",
+          "author": "Lyapunov Weaver",
+          "url": "https://rstation.ai/problems/collatz/papers/108",
+          "scope": "Primary v1 statement and setup read, Theorem 1 and original-depth correspondence; complete proof not independently reconstructed or imported."
+        }
+      ]
+    },
+    {
+      "lane": "cycles",
+      "schema": "collatz-checkpoint17-cycle-sources/v1",
+      "date": "2026-11-23",
+      "repository_sources": [
+        {
+          "pr": 176,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+          "path": "research/lean-global-resolvent-20261121/overview/triadic-height/FULL_CYCLE_LITERATURE_ATTEMPT.md",
+          "git_blob": "6c325df903646173962db1776f3c59eeed0e10a0",
+          "sha256": "b40936e9e65889594a244988b846fccf8c634492e116e58b91f83ffbb0b653e6",
+          "scope": "preceding unclosed full-denominator literature attempt"
+        },
+        {
+          "pr": 182,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+          "path": "research/closure-round2-20261123/CYCLE_CANCELLATION.md",
+          "git_blob": "b0b0fc74431af6d4dbfa4170598ec5be78ff8b55",
+          "sha256": "b77eb45c9c7852dba80f24aed88901f2720122a781ce05f4e24437306cadff5f",
+          "scope": "complete cycle carry and zero-fibre target; read in full"
+        },
+        {
+          "pr": 182,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+          "path": "research/whole-repo-round3-20261123/COMPLETE_CYCLE.md",
+          "git_blob": "f5114ef4dcccedeee5ccb429bd2f1663bb6de01e",
+          "sha256": "67222af04ed277cc0ffb27521b081661afefb9446e9d19b7737cabc87a410ff5",
+          "scope": "exact conditioned split and residual numerical counting gap; read in full"
+        },
+        {
+          "pr": 175,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+          "path": "research/lean-global-closure-20261121/risk24/SUPERPOLYNOMIAL_RESIDUAL_DENOMINATOR.md",
+          "git_blob": "4be4dc131ea5c26577a3b95e0feeae216b9fb6b1",
+          "sha256": "b7531892e0d62d74107c6446171587e83cf79b83b6b967061499b7e6b92959c9",
+          "scope": "new degree/denominator comparison; source-qualified input, not newly reverified"
+        },
+        {
+          "pr": 175,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+          "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+          "git_blob": "5069b91e9b5fb954c4d079bd76a34004efb3f85f",
+          "sha256": "0eb90860f675e1d6484f30770f543ae8a01a9a6de1c5cc3b47d64c040f7d549c",
+          "scope": "distinguished-fibre and maximum-height costs; read in full"
+        },
+        {
+          "pr": 178,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+          "path": "research/profound-step-20261123/cycles/UNIT_EQUATION_HEIGHT_ATTACK.md",
+          "git_blob": "ea033b2d9225ab12327d970015327d91aeee5ad8",
+          "sha256": "4d243d3724c9812d450d5a086f118d0025030563d78bc9e8066aa455c027bd36",
+          "scope": "rank-dependent unit equation and all-place height gap; read in full"
+        },
+        {
+          "pr": 185,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+          "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+          "git_blob": "c749ad8f97cd9585a9b251129a79a880ff46d965",
+          "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36",
+          "scope": "principal-component distinction; read in full"
+        },
+        {
+          "pr": 185,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+          "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+          "git_blob": "54b6f161d8a8ce81c32fed6c6166807d5c9f8445",
+          "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+          "scope": "polynomial-versus-numerical denominator distinction; read in full"
+        }
+      ],
+      "literature": [
+        {
+          "author": "Lyapunov Weaver",
+          "title": "Polynomial multiplicative expansion in Collatz orbit sets",
+          "version": "rStation Paper 144/v1, 14 November 2026",
+          "url": "https://rstation.ai/problems/collatz/papers/144",
+          "inspection": "Read the primary manuscript through its stated energy consequence. Independently reconstructed fixed-class incidence and cycle specialization. Did not independently reconstruct full energy proof or supplements. The new all-period high rational Sidon control is separately proved in this packet."
+        },
+        {
+          "author": "Lyapunov Weaver",
+          "title": "Multiplicative rank, height, and energy of odd Collatz trajectories",
+          "version": "rStation Paper 137/v1, 13 November 2026",
+          "url": "https://rstation.ai/problems/collatz/papers/137",
+          "inspection": "Read elementary gcd, rank/height, and cycle-counting arguments as exploratory lead. No quantitative rank exclusion or numerical computation imported into the new theorem."
+        },
+        {
+          "authors": [
+            "Lorenz Halbeisen",
+            "Norbert Hungerbuehler"
+          ],
+          "title": "Optimal bounds for the length of rational Collatz cycles",
+          "url": "https://people.math.ethz.ch/~halorenz/publications/pdf/collatz.pdf",
+          "inspection": "Read opening definitions, rational cycle formula, and extremal setup. New one-rise rational legality and high-floor construction are proved directly here, with no imported cycle-length bound."
+        }
+      ]
+    },
+    {
+      "lane": "boundary",
+      "repository_sources": [
+        {
+          "pr": 175,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+          "path": "research/lean-global-closure-20261121/risk24/literature/HIGHER_RANK_BOUNDARY_ATTACK.md",
+          "git_blob": "21ab6c80f12ca54002d7ed0286ca4416336e9d4a",
+          "sha256": "9cee71eaa78069c3c377adab69795f223dd6abdd3b9010d1bf3dffbc26620ab2",
+          "scope": "Read full note, inspected higher-rank rigidity theorem hypotheses; new clock erasure and phase analysis proved separately here."
+        },
+        {
+          "pr": 180,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+          "path": "research/whole-source-20261123/COLLISION_CORE.md",
+          "git_blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+          "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+          "scope": "Read full actual stationary collision-gap note; upstream hypotheses retained."
+        },
+        {
+          "pr": 180,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+          "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+          "git_blob": "34b437972096ae409568842e655509a8233a8087",
+          "sha256": "4b48bb2cff2c80ebe59c5b363c1e1c90c52395ddf0069284e44f246d8a465738",
+          "scope": "Read full minimum-source decomposition and actual unit-domain law."
+        },
+        {
+          "pr": 182,
+          "repository": "GettysburgResearch/collatz",
+          "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+          "path": "research/whole-repo-round3-20261123/ACTUAL_COLLISION.md",
+          "git_blob": "118af095616dbe5544b39f117fd2f465dac4a10b",
+          "sha256": "eb8a352d3ad072e601637c0d2beff2992317252ff4ca58b830100074a1b17709",
+          "scope": "Read full source-box and cross-box calculation; no cross-box estimate supplied here."
+        }
+      ],
+      "literature": [
+        {
+          "title": "Rigidity properties for commuting automorphisms on tori and solenoids",
+          "authors": [
+            "Manfred Einsiedler",
+            "Elon Lindenstrauss"
+          ],
+          "url": "https://arxiv.org/pdf/2101.11120",
+          "scope": "Primary theorem statement and relative-entropy formulation inspected; no independent reconstruction of full published proof."
+        },
+        {
+          "title": "Equidistribution from fractal measures",
+          "authors": [
+            "Michael Hochman",
+            "Pablo Shmerkin"
+          ],
+          "url": "https://math.huji.ac.il/~mhochman/preprints/normality.pdf",
+          "scope": "Primary Theorem 1.1 and scenery/spectral hypotheses inspected; no actual scenery hypothesis established for this source."
+        }
+      ]
+    }
+  ]
+}

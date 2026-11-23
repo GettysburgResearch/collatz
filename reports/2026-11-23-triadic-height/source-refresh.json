@@ -1,0 +1,78 @@
+{
+  "schema": "collatz-source-refresh/v1",
+  "access_utc": "2026-11-23T02:21:09Z",
+  "baseline": "../2026-11-23-integer-boundary/pr-inventory.json",
+  "scope": "Delta refresh of seven active PR heads and descriptions against checkpoint 15's 145-record inventory; selected mathematical files read at pinned heads, not a new audit of the complete repository.",
+  "prs": [
+    {
+      "number": 175,
+      "title": "Collatz: Hardy inverse-tree spectrum and direct closing attempts",
+      "head": "research/lean-global-closure-20261121",
+      "head_sha": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T01:27:51Z",
+      "draft": true
+    },
+    {
+      "number": 176,
+      "title": "Collatz: integer fibres, real separation, and positive pressure quasimodes",
+      "head": "research/lean-global-resolvent-20261121",
+      "head_sha": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T01:58:41Z",
+      "draft": true
+    },
+    {
+      "number": 177,
+      "title": "Collatz: finite witness boundary and ordinary atomic pressure",
+      "head": "research/lean-exact-witness-global-20261121",
+      "head_sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T01:17:55Z",
+      "draft": true
+    },
+    {
+      "number": 178,
+      "title": "Collatz: triadic convergence rank and pressure collision bounds",
+      "head": "research/lean-global-20261121",
+      "head_sha": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:09:59Z",
+      "draft": true
+    },
+    {
+      "number": 180,
+      "title": "Collatz: actual boundary dimension and source-clock estimates",
+      "head": "research/lean-ordinary-closure-20261121",
+      "head_sha": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:03:59Z",
+      "draft": true
+    },
+    {
+      "number": 182,
+      "title": "Collatz: one pressure maximum for both directions; full numerical cancellation",
+      "head": "research/dyadic-band-descent-20261121",
+      "head_sha": "b78819e95ee7d39f02022de991b42217821e7590",
+      "base": "research/lean-universal-basin-20261121",
+      "base_sha": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "updated_at": "2026-11-23T02:06:01Z",
+      "draft": true
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "head": "research/literature-orbit-closure-20261121",
+      "head_sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "base": "research/lean-band-coupling-20261121",
+      "base_sha": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "updated_at": "2026-11-23T01:18:35Z",
+      "draft": true
+    }
+  ]
+}

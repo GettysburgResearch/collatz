@@ -1,0 +1,222 @@
+{
+  "schema": "collatz-marked-population-lean-replay/v1",
+  "scope": "Pinned imports and new partial theorem types; not a proof of Collatz",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "upstream": {
+    "pr": 173,
+    "commit": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+    "source_directory": "research/lean-shell-cover",
+    "sha256": {
+      "ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+      "SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+      "RisingReturns.lean": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a"
+    }
+  },
+  "source_sha256_before": {
+    "Audit.lean": "d3aae257831eca2d07d8e0f5e2d9bbe52c83ae8f6412a10f7da89df250dfbd21",
+    "BandCriterion.lean": "b7ad50e2d9a462a726958525d146812731b27569bd5c17aff49fa633a0f8bfd8",
+    "BandSteering.lean": "4e1083c63893308887325a461cdefc0b99731ead8e631421caa5fc939bcc830e",
+    "CountCriterion.lean": "4ae9194c68587c514611a6c3c866d591bcbb6b0287b5ca846cb81d20597ba54c",
+    "FanGeometry.lean": "45475ebe62d364818f1577f1a832c8e3f4e417b8ecd6d16d2deba37d9699522f",
+    "ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "PopulationTransfer.lean": "1fbbb03c1c0708bfb934ffc6f5792fbb6ef45edba8d562fe8c42bb6c5f278fc9",
+    "RisingReturns.lean": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a",
+    "SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+    "SectionTransport.lean": "a30eb911ced8fb9cf7a409bda93886c614fc5f6007fdcb999c3d8776f045c646",
+    "ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+  },
+  "fresh_output_directory": "/workspace/scratch/06005805ecd5/band_work/final-build",
+  "commands": [
+    {
+      "module": "ShellCover",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/ShellCover.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 23.86,
+      "output": ""
+    },
+    {
+      "module": "ForwardSection",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/ForwardSection.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/ForwardSection.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 12.672,
+      "output": "'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "SectionDynamics",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/SectionDynamics.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/SectionDynamics.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.945,
+      "output": "'CollatzShell.ForwardSection.collatz_iff_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "RisingReturns",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/RisingReturns.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/RisingReturns.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 14.62,
+      "output": "'CollatzShell.ForwardSection.arbitrarily_large_first_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "BandSteering",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/BandSteering.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/BandSteering.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 28.994,
+      "output": "'CollatzShell.ForwardSection.Band.goodScale_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.steered_root_with_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.steered_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FanGeometry",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/FanGeometry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/FanGeometry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 8.899,
+      "output": "'CollatzShell.ForwardSection.marked_fan_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "CountCriterion",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/CountCriterion.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/CountCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.264,
+      "output": "'CollatzShell.ForwardSection.Band.recover_unit_from_section_count' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.hitBy_at_hit' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.Band.section_count_certifies_small_units' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.counterexample_section_population' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.collatz_iff_unbounded_section_counts' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    },
+    {
+      "module": "PopulationTransfer",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/PopulationTransfer.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/PopulationTransfer.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.676,
+      "output": "'CollatzShell.ForwardSection.Band.component_population_transfer' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.survivor_population_transfer' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.finite_survivor_population_transfer' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.finite_survivor_population_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    },
+    {
+      "module": "BandCriterion",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/BandCriterion.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/BandCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.425,
+      "output": "'CollatzShell.ForwardSection.Band.marked_ancestors_with_clocks' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.marked_ancestors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.band_count_finite_certificate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.collatz_iff_band_survivor_count' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.band_component_population' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.band_survivor_population' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.band_finite_survivor_population' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    },
+    {
+      "module": "SectionTransport",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/SectionTransport.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/SectionTransport.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.045,
+      "output": "'CollatzShell.ForwardSection.Transport.returnMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.no_uniform_endpoint_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Transport.entryMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.no_uniform_entry_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    },
+    {
+      "module": "Audit",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/band_work/final-build/Audit.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/Audit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.979,
+      "output": "'CollatzShell.ForwardSection.Band.goodScale_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.inverse_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.log_error' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.lift_ge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.lift_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.lift_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.scale_error' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.steered_root_with_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.steered_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.HitBy.mono' does not depend on any axioms\n'CollatzShell.ForwardSection.Band.hitBy_step' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.Band.hitBy_at_hit' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.Band.nohit_iff_not_hitBy' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.Band.mem_sectionSurvivors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.sectionSurvivors_mono' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.recover_unit_from_section_count' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.recover_unit_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.section_count_certifies_small_units' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.counterexample_section_population' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.empty_section_survivors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.collatz_iff_unbounded_section_counts' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.BoundedSectionFan.toSectionFan' depends on axioms: [propext]\n'CollatzShell.ForwardSection.Band.mem_markedProperty' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.component_population_transfer' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.survivor_population_transfer' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.finite_survivor_population_transfer' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.mem_smallUnitSurvivors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.finite_survivor_population_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.marked_ancestors_with_clocks' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.marked_ancestors' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.band_count_finite_certificate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.collatz_iff_band_survivor_count' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Band.band_component_population' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.band_survivor_population' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.band_finite_survivor_population' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.bareChild_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_hit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.fan_strict_octave' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_le_raw' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.fan_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.sixteen_mul_le_pow_two' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.oddFan_marked_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_fan_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.weight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.weight_summable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.sectionWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.sectionWeight_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.sectionWeight_summable' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Transport.source_atom_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.returnMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.weight_lt_of_growth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.no_uniform_endpoint_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Transport.entryMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.entry_atom_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Transport.no_uniform_entry_bound' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "source_sha256_after": {
+    "Audit.lean": "d3aae257831eca2d07d8e0f5e2d9bbe52c83ae8f6412a10f7da89df250dfbd21",
+    "BandCriterion.lean": "b7ad50e2d9a462a726958525d146812731b27569bd5c17aff49fa633a0f8bfd8",
+    "BandSteering.lean": "4e1083c63893308887325a461cdefc0b99731ead8e631421caa5fc939bcc830e",
+    "CountCriterion.lean": "4ae9194c68587c514611a6c3c866d591bcbb6b0287b5ca846cb81d20597ba54c",
+    "FanGeometry.lean": "45475ebe62d364818f1577f1a832c8e3f4e417b8ecd6d16d2deba37d9699522f",
+    "ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "PopulationTransfer.lean": "1fbbb03c1c0708bfb934ffc6f5792fbb6ef45edba8d562fe8c42bb6c5f278fc9",
+    "RisingReturns.lean": "e179465e1b66359f9fa492f73bcba18221a0d4d4767e06f26a025e057c0a0b5a",
+    "SectionDynamics.lean": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+    "SectionTransport.lean": "a30eb911ced8fb9cf7a409bda93886c614fc5f6007fdcb999c3d8776f045c646",
+    "ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+  },
+  "sources_unchanged": true,
+  "audited_public_theorems": 61,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axioms_standard_only": true,
+  "all_public_theorems_audited": true
+}

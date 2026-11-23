@@ -1,0 +1,830 @@
+{
+  "schema": "collatz-checkpoint13-repository-survey/v1",
+  "scope": "Union of two 100-result PR inventories (most recently updated and oldest created), plus exact-head metadata on twelve selected active research PRs; targeted proof reading, not independent verification of all historical claims.",
+  "survey_date_utc": "2026-11-22",
+  "inventory": [
+    {
+      "number": 1,
+      "title": "Define multi-agent Collatz counterexample research protocol",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/1"
+    },
+    {
+      "number": 3,
+      "title": "Isolate ordinary extraction and exclude finite algebraic recursion",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/3"
+    },
+    {
+      "number": 6,
+      "title": "report: port audited termination and obstruction frontier",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/6"
+    },
+    {
+      "number": 11,
+      "title": "Affine ping-pong Schottky packet: obstructions L-0101–L-0105 + direction handoffs",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/11"
+    },
+    {
+      "number": 12,
+      "title": "Build exact regular-sanctuary verifier and exact-floor synthesis",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/12"
+    },
+    {
+      "number": 13,
+      "title": "docs: build citation-critical literature and verified-floor fixed-support pulse closure",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/13"
+    },
+    {
+      "number": 14,
+      "title": "Analyze sink-stripped finite safety automata",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/14"
+    },
+    {
+      "number": 16,
+      "title": "theory: prove all-depth EQ and exclude Thue–Morse centered-cylinder stabilization",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/16"
+    },
+    {
+      "number": 19,
+      "title": "report: consolidate H exact cylinders, macro barriers, and counterexample frontier",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/19"
+    },
+    {
+      "number": 20,
+      "title": "proof: native delayed-window Padé closes periods 1–9 and isolates period 10",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/20"
+    },
+    {
+      "number": 32,
+      "title": "verification: independently reconstruct ADEL 9309–9312 chains",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/32"
+    },
+    {
+      "number": 33,
+      "title": "proof: exclude all ordinary completions in the corrected 256-stage class",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/33"
+    },
+    {
+      "number": 34,
+      "title": "proof: add audited cross-direction and period-four quotient lemmas",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/34"
+    },
+    {
+      "number": 35,
+      "title": "proof: isolate exact 5/4 frontier, certify depth 50, and audit bounded-state certificates",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/35"
+    },
+    {
+      "number": 37,
+      "title": "verification: audit centered recurrence and repair T-9318",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/37"
+    },
+    {
+      "number": 38,
+      "title": "docs: map all counterexample paths and atomic blockers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/38"
+    },
+    {
+      "number": 42,
+      "title": "proof: derive a 72-billion-state signed-charge cycle floor",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/42"
+    },
+    {
+      "number": 44,
+      "title": "verification: audit PR33 and expose centered PDR ghost boundary",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/44"
+    },
+    {
+      "number": 45,
+      "title": "research: isolate an intrinsic pulse-chart top boundary and its existence barrier",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/45"
+    },
+    {
+      "number": 47,
+      "title": "proof: close fixed-weight negative-three pulse cycles through 375 A letters",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/47"
+    },
+    {
+      "number": 48,
+      "title": "verification: reconstruct intrinsic cores and prove moving-boundary refund growth",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/48"
+    },
+    {
+      "number": 49,
+      "title": "construction: force permanent refund and a causally generated ordinary stack",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/49"
+    },
+    {
+      "number": 50,
+      "title": "proof: build critical chart cycle compilers and derive mixed-place height gate",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/50"
+    },
+    {
+      "number": 51,
+      "title": "proof: reduce negative-cycle pulses and isolate an ordinary run-five highway",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/51"
+    },
+    {
+      "number": 53,
+      "title": "proof: close one- and two-pulse lifts over every native repetition",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/53"
+    },
+    {
+      "number": 56,
+      "title": "theory: isolate the ordinary-extraction blocker and refute compactness-plus-refund",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/56"
+    },
+    {
+      "number": 57,
+      "title": "proof: isolate ordinary extraction and a supercritical completion ghost",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/57"
+    },
+    {
+      "number": 60,
+      "title": "verification: isolate Archimedean extraction and build an entropic Collatz ghost forest",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/60"
+    },
+    {
+      "number": 61,
+      "title": "proof: classify eventually periodic Collatz itineraries by full-denominator divisibility",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/61"
+    },
+    {
+      "number": 62,
+      "title": "verification: reconstruct extraction blocker and close finite-state schedule escapes",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/62"
+    },
+    {
+      "number": 63,
+      "title": "verification: audit ordinary extraction and close periodic schedules",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/63"
+    },
+    {
+      "number": 64,
+      "title": "theory: rule out finite rational extraction and semilinear sanctuaries",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/64"
+    },
+    {
+      "number": 65,
+      "title": "verification: close finite algebraic extraction in the six-branch chart",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/65"
+    },
+    {
+      "number": 66,
+      "title": "proof: classify all contracting two-point descents in the six-branch chart",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/66"
+    },
+    {
+      "number": 67,
+      "title": "experiment: compile exact centered height-renewal atlas",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/67"
+    },
+    {
+      "number": 68,
+      "title": "experiment: certify 512-bit transported run-core closure",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/68"
+    },
+    {
+      "number": 69,
+      "title": "experiment: classify every q=71 reset-pattern spine",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/69"
+    },
+    {
+      "number": 70,
+      "title": "experiment: audit all-repetition three-pulse lifts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/70"
+    },
+    {
+      "number": 72,
+      "title": "verification: audit Claude Opus Fable claims and repair global gaps",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/72"
+    },
+    {
+      "number": 74,
+      "title": "organization: establish lean Agentic Polymath #1 public baseline",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/74"
+    },
+    {
+      "number": 76,
+      "title": "proof: force a 217,976,794,617-step coefficient gate",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/76"
+    },
+    {
+      "number": 77,
+      "title": "verification: pass T-6708 and strengthen to full divergence",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/77"
+    },
+    {
+      "number": 79,
+      "title": "proof: add preimage-amplified crossing and supercritical packing",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/79"
+    },
+    {
+      "number": 80,
+      "title": "theory: force Lane-A multiplicative-rank escape and isolate the second-form blocker",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/80"
+    },
+    {
+      "number": 81,
+      "title": "theory: subtract forced support from the final Collatz coefficient envelope",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/81"
+    },
+    {
+      "number": 82,
+      "title": "SUPERSEDED: colliding 66xx coefficient-tangent draft",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/82"
+    },
+    {
+      "number": 83,
+      "title": "proof: isolate complete-factor jet synchronization for FC*",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/83"
+    },
+    {
+      "number": 84,
+      "title": "First major integration snapshot and operational PR lifecycle system",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/84"
+    },
+    {
+      "number": 85,
+      "title": "Integration refinement: durable front door, proof residency, and research catalog",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/85"
+    },
+    {
+      "number": 86,
+      "title": "Integration follow-up: durable lifecycle guidance",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/86"
+    },
+    {
+      "number": 87,
+      "title": "Import Mazur 2026 Collatz advances and fixed-height exponent-race attack",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/87"
+    },
+    {
+      "number": 88,
+      "title": "theory: isolate fixed-height power-saving bottleneck and entropy wall",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/88"
+    },
+    {
+      "number": 90,
+      "title": "theory: Astra unequal-clock reductions and ternary precision budget",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/90"
+    },
+    {
+      "number": 91,
+      "title": "theory: three-route arithmetic renewal, source charge, and unbounded rank repayment",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/91"
+    },
+    {
+      "number": 92,
+      "title": "theory: fifth three-route attack — unsafe repayment, rank moments, and compulsory excursions",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/92"
+    },
+    {
+      "number": 93,
+      "title": "review: pre-public integration A — PRs #87, #88, #90 and issue #89",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/93"
+    },
+    {
+      "number": 94,
+      "title": "review: pre-public integration B - PR91/92 mathematics and public reading path",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/94"
+    },
+    {
+      "number": 95,
+      "title": "Integrate post-August reviews: resident mass/rank references, exact identities and replay repairs",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/95"
+    },
+    {
+      "number": 97,
+      "title": "docs: public onboarding, shared review, and bounded security receipt",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/97"
+    },
+    {
+      "number": 98,
+      "title": "review: Reviewer D final integrated-main audit and integrator handoff",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/98"
+    },
+    {
+      "number": 99,
+      "title": "Integrate Reviewer D: scoped proof corrections, dependency warnings and preserved audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/99"
+    },
+    {
+      "number": 100,
+      "title": "Final readiness: contributor entrance, portable integrity checks and prepared CI",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/100"
+    },
+    {
+      "number": 101,
+      "title": "Cumulative scientific account: results, limits, proof routes and research tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/101"
+    },
+    {
+      "number": 102,
+      "title": "Preserve scientific scope and restore omitted counterexample/proof routes",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/102"
+    },
+    {
+      "number": 103,
+      "title": "Welcome exploratory contributions and highlight phone tutorial",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/103"
+    },
+    {
+      "number": 104,
+      "title": "Clarify connector access and broaden contribution starting points",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/104"
+    },
+    {
+      "number": 105,
+      "title": "Research: low word ranks give physical ancestors; sharp square-root spectrum",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/105"
+    },
+    {
+      "number": 106,
+      "title": "theory: linear frontier and automatic actual-prefix ranks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/106"
+    },
+    {
+      "number": 107,
+      "title": "docs: adopt MIT license",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/107"
+    },
+    {
+      "number": 108,
+      "title": "docs: explain research cycle and contributor roles",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/108"
+    },
+    {
+      "number": 110,
+      "title": "docs: simplify phone onboarding",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/110"
+    },
+    {
+      "number": 111,
+      "title": "docs: identify current scientific integration baseline",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/111"
+    },
+    {
+      "number": 112,
+      "title": "docs: simplify contributor and integrator access requests",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/112"
+    },
+    {
+      "number": 113,
+      "title": "docs: prioritize contribution and fix Collatz equation layout",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/113"
+    },
+    {
+      "number": 114,
+      "title": "Review post-integration research: tails, clearance, linear frontiers and actual-prefix ranks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/114"
+    },
+    {
+      "number": 115,
+      "title": "docs: invite proposals for new problem repositories",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/115"
+    },
+    {
+      "number": 116,
+      "title": "Integration candidate: reviewed tails, clearance and adaptive ranks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/116"
+    },
+    {
+      "number": 117,
+      "title": "theory: backward prefix rotation, common-rank merging and an exact coverage obstruction",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/117"
+    },
+    {
+      "number": 119,
+      "title": "feat: Collatz Observatory v0.1 — runnable exact visual research desk",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/119"
+    },
+    {
+      "number": 120,
+      "title": "feat: Collatz Observatory v0.3 paired investigations and research adapters",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/120"
+    },
+    {
+      "number": 122,
+      "title": "research: proposed two-exit lower-source merging with exact certificates",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/122"
+    },
+    {
+      "number": 123,
+      "title": "research: reusable hard-exit returns and arbitrary finite paired compositions",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/123"
+    },
+    {
+      "number": 124,
+      "title": "research: adaptive companions remove the second-exit restriction",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/124"
+    },
+    {
+      "number": 125,
+      "title": "research: forced comparison entry, valuation bridges and companion ladder",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/125"
+    },
+    {
+      "number": 126,
+      "title": "research: shadow switching completes the missing seed entry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/126"
+    },
+    {
+      "number": 127,
+      "title": "research: all-gap merger compiler and successive escape-type gates",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/127"
+    },
+    {
+      "number": 128,
+      "title": "research: universal shadow atlas and strict escape families",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/128"
+    },
+    {
+      "number": 129,
+      "title": "research: anchored returns, two R bridges, and compressed original companions",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/129"
+    },
+    {
+      "number": 130,
+      "title": "research: complete affine-merger classification and persistent-companion return budgets",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/130"
+    },
+    {
+      "number": 131,
+      "title": "research: merger subcells in every dyadic cell, all-intercept shadows, and isolated-point rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/131"
+    },
+    {
+      "number": 132,
+      "title": "research: finite least-source escapes and complete affine-shadow classification",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/132"
+    },
+    {
+      "number": 133,
+      "title": "research: pointwise shadow obstructions, rooted escape lifts and derivative escape",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/133"
+    },
+    {
+      "number": 134,
+      "title": "research: thick predecessor basins for every ternary-unit target and complete root-capped block inverses",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/134"
+    },
+    {
+      "number": 135,
+      "title": "research: fixed-source splicing, whole valuation strata, and consecutive escape types",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/135"
+    },
+    {
+      "number": 136,
+      "title": "research: escape restarts with whole-cylinder return certificates",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/136"
+    },
+    {
+      "number": 137,
+      "title": "research: arithmetic component rigidity and residue-locked inverse geometry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/137"
+    },
+    {
+      "number": 138,
+      "title": "research: anchored capacities, exact dyadic completion, and odd-edge repair",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/138"
+    },
+    {
+      "number": 139,
+      "title": "research: fixed-source ternary splices and a common H restart budget",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/139"
+    },
+    {
+      "number": 140,
+      "title": "research: polynomial invariant rigidity, finite defects, and algebraic certificates",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/140"
+    },
+    {
+      "number": 141,
+      "title": "AYH orders: finite Hamming cores and source-persistent sparse descent",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/141"
+    },
+    {
+      "number": 142,
+      "title": "Research swarm: positive inverse-density bounds, contact fans, and beeping clocks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/142"
+    },
+    {
+      "number": 143,
+      "title": "research: finite-clock pressure energy and a quadratic-moment route to decay",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/143"
+    },
+    {
+      "number": 144,
+      "title": "research: direct pressure dissipation and collision-free moment coercivity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/144"
+    },
+    {
+      "number": 145,
+      "title": "Collatz investigation: a finite test for both obstructions, null residue support, and exact depth 30",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/145"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "number": 147,
+      "title": "Certify a 13/6 inverse compiler and derive robust finite-credit completeness",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/147"
+    },
+    {
+      "number": 148,
+      "title": "Research: ordinary merger guards, inverse certificates, and cycle refinements",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/148"
+    },
+    {
+      "number": 149,
+      "title": "Extend merger-clock analysis and audit forward Collatz closure bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/149"
+    },
+    {
+      "number": 150,
+      "title": "Bound sparse Collatz returns and classify local affine merger membership",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/150"
+    },
+    {
+      "number": 151,
+      "title": "Construct recursive ordinary merger certificates and reduce signed targets",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/151"
+    },
+    {
+      "number": 152,
+      "title": "Audit Gemini routes: actual transport domains, spectral boundary, and radical Padé classification",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/152"
+    },
+    {
+      "number": 153,
+      "title": "Research: binary-run cores, adaptive mergers, and recursive orbit bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/153"
+    },
+    {
+      "number": 154,
+      "title": "Research: prime-height dispersion and restricted five-ray rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/154"
+    },
+    {
+      "number": 155,
+      "title": "research: ordinary Dirichlet coercivity and three-package Gemini audit",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/155"
+    },
+    {
+      "number": 156,
+      "title": "Investigate Collatz closure with ordinary spectrum, arithmetic, and merger guards",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/156"
+    },
+    {
+      "number": 157,
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/157"
+    },
+    {
+      "number": 158,
+      "title": "research: certify guarded expanding returns and exact closure boundaries",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/158"
+    },
+    {
+      "number": 159,
+      "title": "Research: prime-support peak bounds and exact directed circulation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/159"
+    },
+    {
+      "number": 160,
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/160"
+    },
+    {
+      "number": 161,
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/161"
+    },
+    {
+      "number": 162,
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/162"
+    },
+    {
+      "number": 163,
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/163"
+    },
+    {
+      "number": 164,
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/164"
+    },
+    {
+      "number": 165,
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/165"
+    },
+    {
+      "number": 166,
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/166"
+    },
+    {
+      "number": 167,
+      "title": "research: fixed-defect returns, stronger excursion bounds, and five closure interfaces",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/167"
+    },
+    {
+      "number": 168,
+      "title": "Research: balanced return languages, witness descent, and stationary regularity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/168"
+    },
+    {
+      "number": 169,
+      "title": "research: extend certificate descents and localize all-time arithmetic moments",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/169"
+    },
+    {
+      "number": 170,
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/170"
+    },
+    {
+      "number": 171,
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/171"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/172"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: exact run-weight commutator, moving fibres, and Lean block rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "number": 176,
+      "title": "Lean: certificate pumping rigidity and actual escape clocks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: S-unit return separation and Lean finite-core bridge",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: direct closure attempts using deep machinery",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: whole-source Lean bounds and literature-driven closure attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181"
+    },
+    {
+      "number": 182,
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: entropy of actual orbits and direct closing attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    }
+  ],
+  "selected_heads": [
+    {
+      "number": 175,
+      "title": "Collatz: exact run-weight commutator, moving fibres, and Lean block rigidity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "head": "08fe1388ad63c758680b3695249aca319515c47d",
+      "branch": "research/lean-global-closure-20261121",
+      "updated_at": "2026-11-22T08:22:41Z"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: entropy of actual orbits and direct closing attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "head": "980d40fc4afeaaf8f2a9256f322acf3e4568e013",
+      "branch": "research/literature-orbit-closure-20261121",
+      "updated_at": "2026-11-22T08:17:48Z"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: whole-source Lean bounds and literature-driven closure attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "head": "a66a44c9bf058cd7efe1018827ddda9a13297a21",
+      "branch": "research/lean-ordinary-closure-20261121",
+      "updated_at": "2026-11-22T08:16:47Z"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: direct closure attempts using deep machinery",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "head": "9d4ae09cd50ccd54036141edc3938d2cabe786fd",
+      "branch": "research/lean-global-20261121",
+      "updated_at": "2026-11-22T08:11:46Z"
+    },
+    {
+      "number": 176,
+      "title": "Lean: certificate pumping rigidity and actual escape clocks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "head": "00018ce11fa657b5f3fae072e5567a1d93184c2b",
+      "branch": "research/lean-global-resolvent-20261121",
+      "updated_at": "2026-11-22T08:10:52Z"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: S-unit return separation and Lean finite-core bridge",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177",
+      "head": "e4ca639326bac73da8c2a698dec8a749e5efbe68",
+      "branch": "research/lean-exact-witness-global-20261121",
+      "updated_at": "2026-11-22T08:04:40Z"
+    },
+    {
+      "number": 182,
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "branch": "research/dyadic-band-descent-20261121",
+      "updated_at": "2026-11-22T05:30:22Z"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "branch": "research/band-completion-20261121",
+      "updated_at": "2026-11-22T05:23:43Z"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "branch": "research/deep-machinery-guide-20261122",
+      "updated_at": "2026-11-21T22:51:35Z"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "branch": "research/lean-band-coupling-20261121",
+      "updated_at": "2026-11-21T15:45:03Z"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "branch": "research/lean-universal-basin-20261121",
+      "updated_at": "2026-11-21T14:34:32Z"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "branch": "claude/collatz-prs-discussion-qq2bvk",
+      "updated_at": "2026-11-21T09:39:39Z"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+'CollatzTerminalCarry.program_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.program_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.program_clock_lower' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarry.iterate_add' depends on axioms: [propext]
+'CollatzTerminalCarry.iterate_basin' does not depend on any axioms
+'CollatzTerminalCarry.program_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.uniform_integer_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.descent_iff_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.iterate_positive' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarry.basin_of_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.basin_power_two' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarry.basin_power_two_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.basin_of_zero_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.signed_path_exists' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarry.signed_path_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.continued_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.continued_descent_iff_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.basin_of_continued_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.total_append_last' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarry.correction_append_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.carry_unit' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarry.terminal_of_complete_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.terminal_target_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.terminal_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.dyadicCarry_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.terminal_dyadic_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.terminal_dyadic_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.minus_one_psi_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.terminal_handoff_grade_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.three_gap_program' does not depend on any axioms
+'CollatzTerminalCarry.three_gap_mersenne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.three_gap_expands' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.minus_one_path' does not depend on any axioms
+'CollatzTerminalCarry.three_gap_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.three_gap_horizon_expands' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.three_gap_no_descent_through_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarry.example_27' does not depend on any axioms
+'CollatzTerminalCarryClosure.counter_total' does not depend on any axioms
+'CollatzTerminalCarryClosure.counter_length' does not depend on any axioms
+'CollatzTerminalCarryClosure.counter_carry' does not depend on any axioms
+'CollatzTerminalCarryClosure.counter_program' does not depend on any axioms
+'CollatzTerminalCarryClosure.carry_prepend_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.program_prepend_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.padded_total' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarryClosure.padded_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.padded_clock_shortfall' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarryClosure.padded_gaps_at_most_four' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarryClosure.padded_handoff_grade_increases' depends on axioms: [propext, Quot.sound]
+'CollatzTerminalCarryClosure.concrete_terminal_identity' does not depend on any axioms
+'CollatzTerminalCarryClosure.concrete_source_positive' does not depend on any axioms
+'CollatzTerminalCarryClosure.concrete_positive_gaps' does not depend on any axioms
+'CollatzTerminalCarryClosure.follows_basin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.concrete_full_word' does not depend on any axioms
+'CollatzTerminalCarryClosure.concrete_source_basin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.deficit_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.deficit_certificate_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTerminalCarryClosure.concrete_counterexample' does not depend on any axioms

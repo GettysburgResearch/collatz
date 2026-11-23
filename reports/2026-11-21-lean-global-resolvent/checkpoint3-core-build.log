@@ -1,0 +1,23 @@
+ℹ [6/10] Replayed Collatz.TerminalFive
+info: Collatz/TerminalFive.lean:367:0: 'CollatzTerminalFive.failure_no_late_return' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:368:0: 'CollatzTerminalFive.failure_has_async_terminal_descendant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:369:0: 'CollatzTerminalFive.failure_has_rank_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:370:0: 'CollatzTerminalFive.rank_minimal_successor_closed' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:371:0: 'CollatzTerminalFive.failure_has_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:372:0: 'CollatzTerminalFive.forward_five_iff_async_terminals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:373:0: 'CollatzTerminalFive.forward_five_iff_successor_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Collatz/TerminalFive.lean:374:0: 'CollatzTerminalFive.forward_five_iff_offsets' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:375:0: 'CollatzTerminalFive.five_not_async_terminal' depends on axioms: [propext, Quot.sound]
+info: Collatz/TerminalFive.lean:376:0: 'CollatzTerminalFive.seventeen_successful_terminal' depends on axioms: [propext, Quot.sound]
+ℹ [8/10] Built Collatz.UnboundedReset (26s)
+info: Collatz/UnboundedReset.lean:339:0: 'CollatzUnboundedReset.odd_run' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:340:0: 'CollatzUnboundedReset.entry_parameter' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:341:0: 'CollatzUnboundedReset.source_path' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:342:0: 'CollatzUnboundedReset.target_path' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:343:0: 'CollatzUnboundedReset.source_prefix_below' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:344:0: 'CollatzUnboundedReset.source_basin_transfer' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:345:0: 'CollatzUnboundedReset.target_basin_transfer' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:346:0: 'CollatzUnboundedReset.supplied_certificate_splice' depends on axioms: [propext, Quot.sound]
+info: Collatz/UnboundedReset.lean:347:0: 'CollatzUnboundedReset.failed_comparison_reset' depends on axioms: [propext, Quot.sound]
+✔ [9/10] Built Collatz (581ms)
+Build completed successfully (10 jobs).

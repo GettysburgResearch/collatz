@@ -1,0 +1,201 @@
+{
+  "schema": "collatz-checkpoint17-manifest/v1",
+  "scope": "Final source-construction packet, internal scoped reviews and exact author controls. No universal construction or full Collatz proof.",
+  "parent": "fb402404deb810bd8e32e596993739bb5a6967d1",
+  "excluded": [
+    "reports/2026-11-23-source-construction/manifest.json",
+    "reports/2026-11-23-source-construction/integration-execution.json"
+  ],
+  "files": [
+    {
+      "path": "research/lean-global-resolvent-20261121/README.md",
+      "sha256": "a16e51328218864daeb8d6da46f67540a870b1c4636b01b48aa1dc031eeb76e0",
+      "bytes": 18929
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CARRY_CONSTRUCTION_ATTACK.md",
+      "sha256": "cd2edcd77dec25f0d67948a715faf1071cb4dd39c3c2fb003b58ed8cfcdad0b3",
+      "bytes": 9954
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CYCLE_PRODUCT_TRANSFER_ATTEMPT.md",
+      "sha256": "61e24999019cde59a10bed34ded33b2b4b7647b5d6d42ba28398b94e911d01a9",
+      "bytes": 9656
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/EXACT_CANDIDATE_RIGIDITY.md",
+      "sha256": "3362a3efbefe945b0e4167f9db714d15bdf650df57c031d877105308f53ccee7",
+      "bytes": 7540
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/FORMAL_SCOPE.md",
+      "sha256": "8a625c04efe6398d142e0b6e32c73dc2a603b3d657b1b7c0ccdb346a9977873e",
+      "bytes": 2388
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/HAAR_AND_ORDINARY_LABELS.md",
+      "sha256": "36ad8ee0dba9f628aaa7661917f8f722ec7fd18412be295fa95617b1bf1059c7",
+      "bytes": 9181
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/INFINITE_OPTIMAL_RAY_ATTEMPT.md",
+      "sha256": "d6e147e27e61d57d7b4fdac74e7cfad70116a1c0fda8b1b50e1764130f7cdf0f",
+      "bytes": 9987
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/README.md",
+      "sha256": "329ab982ae3e9330c7c6ee03d956b8847f8c275963ad991cc211cb733986b29b",
+      "bytes": 8736
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/RIGIDITY_THEOREMS.json",
+      "sha256": "e7f0de0bd573047256a6be5f1cc4b0ae698ffbff2082cce2bf74a51df6206524",
+      "bytes": 2293
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/SOURCES.json",
+      "sha256": "f89a0a8594b9e2ef42225b15b13b2c41ecab5630aceee9e4bbab40e47484f76d",
+      "bytes": 15113
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/check_carry_construction.py",
+      "sha256": "adeded33c66f07eaa619f042100ae1ebb9fb7a678c4002c7b9cbd4228e5bccb1",
+      "bytes": 5471
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/check_cycle_product_control.py",
+      "sha256": "66023c1ab8f014f3d85a445ad02fc110ded7922462981d468fb831e6fd6d562a",
+      "bytes": 6030
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/check_exact_rigidity.py",
+      "sha256": "5a18f0a5db4b54cab9ba1084972d94259b25b51683516856ba19733071a2bde0",
+      "bytes": 4320
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/check_optimal_ray.py",
+      "sha256": "58820c38539c36992c0f6e9453a85d93b1ca72f380a607bf374d4c0ec3995085",
+      "bytes": 4388
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/lean/TriadicAmortizedBudget.lean",
+      "sha256": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+      "bytes": 16257
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/lean/TriadicCertificateRigidity.lean",
+      "sha256": "d1696a47a85525a242dbe100d594dfec9487d1cc40d25090bdf119f49712d958",
+      "bytes": 14240
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/lean/TriadicCertificateRigidityAudit.lean",
+      "sha256": "90962971835e2cfa898ae9d3a6e2083ee89d2cec4aace16cef56123c137a45b9",
+      "bytes": 1012
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/lean/TriadicDualClosure.lean",
+      "sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+      "bytes": 11600
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/verify_candidate_rigidity.py",
+      "sha256": "b16e4d1aa3f3346eef63402e8252f776917cb72266376e4f49d2116588bbe1e8",
+      "bytes": 6232
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/verify_checkpoint17.py",
+      "sha256": "b6595be864dc0c352cd80dfddd57bf9fdf106b2fb217868ef2d882eb9d8ea9ca",
+      "bytes": 6901
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/CARRY_CONSTRUCTION_WRITTEN_REVIEW.md",
+      "sha256": "ec904be970227c011e9ec5b0a9738ccf6b755fd3f5469fb3fe3cf8b4f53b9d4d",
+      "bytes": 8806
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/README.md",
+      "sha256": "233601231fb7392854f1ad21238e4b661fcd37b4b58dc2519588a488ffc639a8",
+      "bytes": 5893
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/REVIEW_CYCLE_PRODUCT_CONTROL.md",
+      "sha256": "1181e69a6cc4e7947d644da39bf000f9f4ad36862fcc071c50f9f4eb91dd30fb",
+      "bytes": 4496
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/REVIEW_EXACT_CANDIDATE_RIGIDITY.md",
+      "sha256": "82c60258b209b5b85d440bc5c04b2d12fb5ac2e3d2a3fe1617f878b3c0f3fe5a",
+      "bytes": 7047
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/REVIEW_HAAR_AND_ORDINARY_LABELS.md",
+      "sha256": "649893f0fea76716aaf34abe24493c6c7eb7cf0506e747ffc889ff2b8c9997e8",
+      "bytes": 4473
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/ROOT_REVIEW.md",
+      "sha256": "08be659e7ab6663b1c87913ebc2194c5bd947b8dbf7818fa7278463f562b7db6",
+      "bytes": 6467
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/carry-written-review-controls.json",
+      "sha256": "c59782e0ae11df810f2e80adfb5fc5fd9a929d11056755b522ab30f312e4f50a",
+      "bytes": 2084
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/check_carry_written_review.py",
+      "sha256": "6c4e401cf66fbb6c444a30b5e5df0b12066296ad1136a4573b104d168da47e5c",
+      "bytes": 5296
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/construction-author-receipt.json",
+      "sha256": "d72c6bfcd05b9512f7bdfba5dea93ff9b67e5da5faf0b1a1112a61914abf26bd",
+      "bytes": 928
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/construction-controls.json",
+      "sha256": "510d5c2e8ebc78b7549b7ad366cf948be581273c02bdf27ad41ae7d9ee03323d",
+      "bytes": 50977
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/cycle-author-receipt.json",
+      "sha256": "2a4d2cb528d4b4aa08c558762657239c8dc60abca286a8c083d4a9a97a08b5bc",
+      "bytes": 2379
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/cycle-controls.json",
+      "sha256": "c3395191bf66c3d0a39daaf9232852f916ba538c84678213b3a66be24880b736",
+      "bytes": 39970
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/independent-lean-replay.json",
+      "sha256": "ba101e9b87e1da7ec134b7ed06fc6c908483fb7340324dbc841b05da82ea3ea2",
+      "bytes": 4784
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/optimizer-controls.json",
+      "sha256": "91363780c1c1468399381e3435966913454d507122b0c0dc1146f572b45ca54b",
+      "bytes": 1080
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/previous-pr-description.json",
+      "sha256": "0dfa56eb46308a6683c1b1a46a51578a54a7f57b28d91c630951d157e397cfd1",
+      "bytes": 15036
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/rigidity-author-receipt.json",
+      "sha256": "b57931d564533b237afd29c26493a3500a0c0a7d432c1967de42fe7c3cc3e499",
+      "bytes": 88623
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/rigidity-controls.json",
+      "sha256": "2438093188392d06cda8c62e055b2c8976f5c661b13dc040ac7e9dae17d422de",
+      "bytes": 12891
+    },
+    {
+      "path": "reports/2026-11-23-source-construction/source-refresh.json",
+      "sha256": "a988d420d9c154a2eec873c2c37ee03bbb39ebf9b6dd3fe1dee05f5838d725f9",
+      "bytes": 3356
+    }
+  ]
+}

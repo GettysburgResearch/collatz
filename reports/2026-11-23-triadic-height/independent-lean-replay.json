@@ -1,0 +1,55 @@
+{
+  "schema": "collatz-independent-lean-review/v1",
+  "reviewer": "/root/boundary_rigidity",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Fresh independent compilation of exact paired-state dependency, new full finite certificate module, and all 26 authored declaration axiom outputs. Dependency objects of Mathlib reused; no entire historical research corpus replay.",
+  "records": [
+    {
+      "source": "TriadicDualClosure.lean",
+      "sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint16_boundary/lean_review/build/TriadicDualClosure.olean",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint16_boundary/lean_review/TriadicDualClosure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.051,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "TriadicAmortizedBudget.lean",
+      "sha256": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint16_boundary/lean_review/build/TriadicAmortizedBudget.olean",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint16_boundary/lean_review/TriadicAmortizedBudget.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.937,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "TriadicAmortizedAudit.lean",
+      "sha256": "8e0d499dfa45f625d46686c5cf3fe705b7e210714ba1f300905587cb7207e9f5",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint16_boundary/lean_review/build/TriadicAmortizedAudit.olean",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint16_boundary/lean_review/TriadicAmortizedAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.585,
+      "stdout": "'CollatzTriadicBudget.weight' depends on axioms: [propext]\n'CollatzTriadicBudget.potential' depends on axioms: [propext]\n'CollatzTriadicBudget.initialBudget' depends on axioms: [propext]\n'CollatzTriadicBudget.binaryBudget' depends on axioms: [propext]\n'CollatzTriadicBudget.weight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.weight_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.potential_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.potential_ge_x' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.denominator_numerator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.denominator_potential_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.step_contract_or_tie' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.step_nonincrease' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.step_nonincrease_allow_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.two_step_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.zero_entry_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.eight_step_half' depends on axioms: [propext, Quot.sound]\n'CollatzTriadicBudget.finite_nonzero_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_odd_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_zero_persistence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_paired_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_candidate_reaches_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.initialBudget_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.initialBudget_ge_n' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.initialBudget_ge_potential' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.binaryBudget_covers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_triadic_height_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true
+}

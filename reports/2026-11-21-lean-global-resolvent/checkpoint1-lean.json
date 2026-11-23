@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "New core Lean modules and required pinned imports; no full Collatz theorem proved",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "executions": [
+    {
+      "label": "build",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "build"
+      ],
+      "started_utc": "2026-11-21T08:12:48.649028+00:00",
+      "finished_utc": "2026-11-21T08:12:50.803863+00:00",
+      "exit_code": 0,
+      "stdout": "\u2714 [5/8] Built Collatz.TerminalFive (1.1s)\n\u2714 [6/8] Built Collatz.LeastForwardFailure (1.6s)\n\u2714 [7/8] Built Collatz (499ms)\nBuild completed successfully (8 jobs).\n",
+      "stderr": ""
+    },
+    {
+      "label": "audit",
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "started_utc": "2026-11-21T08:12:50.803901+00:00",
+      "finished_utc": "2026-11-21T08:12:51.144175+00:00",
+      "exit_code": 0,
+      "stdout": "'CollatzGlobal.exact_floor_of_least_forward_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.least_forward_failure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.collatz_iff_nine_minus_one_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.collatz_iff_exact_even_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.odd_edge_forward_transport' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalFive.failure_has_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalFive.forward_five_iff_async_terminals' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalFive.forward_five_iff_offsets' depends on axioms: [propext, Quot.sound]\nCollatzGlobal.collatz_iff_exact_even_gap : (\u2200 (n : \u2115), 0 < n \u2192 CollatzReverseBasin.Basin n) \u2194\n  \u2200 (t : \u2115),\n    0 < t \u2192 (\u2200 (n : \u2115), 0 < n \u2192 n < 4 * t - 1 \u2192 CollatzReverseBasin.Basin n) \u2192 CollatzReverseBasin.Basin (9 * t - 1)\nCollatzTerminalFive.forward_five_iff_offsets : CollatzTerminalFive.ForwardFive \u2194\n  CollatzTerminalFive.OneOffsetRepair \u2227 CollatzTerminalFive.TwoOffsetRepair\n",
+      "stderr": ""
+    }
+  ],
+  "files": [
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Audit.lean",
+      "sha256": "b418709132a51877c79266a017a2e81efbeac91bad4fa90b67af96a6396fe076"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean",
+      "sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/LeastForwardFailure.lean",
+      "sha256": "2cf76123d418cb528b1574f0b91920c64ab848e16ce6c0eaa82ef9011f4b21ca"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean",
+      "sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/Shadow.lean",
+      "sha256": "faaff1611b9d91aa4d306e33e7f0d71cd23681ad893a24647247c0189bf41714"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz/TerminalFive.lean",
+      "sha256": "f85c932eba7c22070e2e6eac2b18fa1dd78121fecff39143c80ca90178225ac0"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/lean/Collatz.lean",
+      "sha256": "6627de2934b377d441892bf6d0c03fed44bf675aab41f65f75cafd70f7676f73"
+    }
+  ]
+}

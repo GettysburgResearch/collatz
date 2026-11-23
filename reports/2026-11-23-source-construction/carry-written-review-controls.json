@@ -1,0 +1,96 @@
+{
+  "all_target_examples": 168,
+  "checker_sha256": "6c4e401cf66fbb6c444a30b5e5df0b12066296ad1136a4573b104d168da47e5c",
+  "chosen_continuation_examples": 35,
+  "complete_reset_examples": 320,
+  "reviewed_source_sha256": "cd2edcd77dec25f0d67948a715faf1071cb4dd39c3c2fb003b58ed8cfcdad0b3",
+  "scope": "Independent finite examples for written lift, true-dual denominator, negative product and reset telescope; no universal construction or Lean review.",
+  "success": true,
+  "true_dual_examples": [
+    {
+      "dual": "2",
+      "even_count": 0,
+      "first_hit": 0,
+      "n": 1,
+      "reduced_exponent": 0
+    },
+    {
+      "dual": "1",
+      "even_count": 1,
+      "first_hit": 1,
+      "n": 2,
+      "reduced_exponent": 0
+    },
+    {
+      "dual": "-4/9",
+      "even_count": 3,
+      "first_hit": 5,
+      "n": 3,
+      "reduced_exponent": 2
+    },
+    {
+      "dual": "1/3",
+      "even_count": 2,
+      "first_hit": 2,
+      "n": 4,
+      "reduced_exponent": 1
+    },
+    {
+      "dual": "-17/27",
+      "even_count": 4,
+      "first_hit": 6,
+      "n": 6,
+      "reduced_exponent": 3
+    },
+    {
+      "dual": "-2344/243",
+      "even_count": 6,
+      "first_hit": 11,
+      "n": 7,
+      "reduced_exponent": 5
+    },
+    {
+      "dual": "-1/9",
+      "even_count": 3,
+      "first_hit": 3,
+      "n": 8,
+      "reduced_exponent": 2
+    },
+    {
+      "dual": "-11/27",
+      "even_count": 4,
+      "first_hit": 4,
+      "n": 16,
+      "reduced_exponent": 3
+    },
+    {
+      "dual": "-6378476857984674337772/22876792454961",
+      "even_count": 29,
+      "first_hit": 70,
+      "n": 27,
+      "reduced_exponent": 28
+    },
+    {
+      "dual": "-49/81",
+      "even_count": 5,
+      "first_hit": 5,
+      "n": 32,
+      "reduced_exponent": 4
+    },
+    {
+      "dual": "-204111264320640774230410/617673396283947",
+      "even_count": 32,
+      "first_hit": 75,
+      "n": 97,
+      "reduced_exponent": 31
+    },
+    {
+      "dual": "-601/729",
+      "even_count": 7,
+      "first_hit": 7,
+      "n": 128,
+      "reduced_exponent": 6
+    }
+  ],
+  "unit_reset_levels": 40
+}

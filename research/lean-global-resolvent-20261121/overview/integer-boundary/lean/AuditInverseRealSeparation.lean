@@ -1,0 +1,15 @@
+import InverseRealSeparation
+
+#print axioms CollatzInverseReal.multiplier
+#print axioms CollatzInverseReal.partialSum
+#print axioms CollatzInverseReal.correction
+#print axioms CollatzInverseReal.multiplier_pos
+#print axioms CollatzInverseReal.affine_telescope
+#print axioms CollatzInverseReal.product_telescope
+#print axioms CollatzInverseReal.correction_le_exp
+#print axioms CollatzInverseReal.partial_separation
+#print axioms CollatzInverseReal.partial_monotone
+#print axioms CollatzInverseReal.exists_real_limit_with_gap
+#print axioms CollatzInverseReal.multiplier_pow_two
+#print axioms CollatzInverseReal.partialSum_pow_two
+#print axioms CollatzInverseReal.ordinary_inverse_numen_separated

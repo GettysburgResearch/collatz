@@ -1,0 +1,23 @@
+import ClockSliceBound
+import MinimalObstacle
+import ContactCapture
+
+#print axioms CollatzClockSlice.numerator_mod_two
+#print axioms CollatzClockSlice.pow_two_odd_cancel
+#print axioms CollatzClockSlice.numerator_injective_fixed_length_sum
+#print axioms CollatzClockSlice.numerator_clock_bound
+#print axioms CollatzClockSlice.numerator_lt
+#print axioms CollatzClockSlice.fixed_clock_card_bound
+#print axioms CollatzClockSlice.fixed_clock_mass_bound
+#print axioms CollatzPotential.no_slack_subharmonic
+#print axioms CollatzPotential.relative_slack_bound
+#print axioms CollatzPotential.no_killed_fixed_point
+#print axioms CollatzPotential.kernel_dominated_summable
+#print axioms CollatzPotential.kernel_least_of_summable_minimal
+#print axioms CollatzPotential.kernel_dominated_subtract
+#print axioms CollatzPotential.kernel_no_killed_fixed_point
+#print axioms CollatzContactCapture.frontWeight_exact
+#print axioms CollatzContactCapture.frontWeight_le
+#print axioms CollatzContactCapture.finite_front_le
+#print axioms CollatzContactCapture.capture_ratio_bound
+#print axioms CollatzContactCapture.marked_sublinear_of_capture

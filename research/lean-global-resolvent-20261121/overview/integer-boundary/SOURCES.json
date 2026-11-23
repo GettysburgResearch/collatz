@@ -1,0 +1,159 @@
+{
+  "schema": "collatz-integer-boundary-sources/v1",
+  "parent": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "scope": "targeted source reading across current branches, not full mathematical audit of all PRs",
+  "sources": [
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/README.md",
+      "blob": "123998d878672725b43208d9c00310d762653833",
+      "sha256": "9cf56437d8708c1c8f42a1f54df1689556a4a3ba2ab3ef07335ca46180e99abd",
+      "role": "current operator and source-scope comparison"
+    },
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/HARDY_INVERSE_TREE.md",
+      "blob": "de700cdfa214391fa138d38a8930140a265ff3c1",
+      "sha256": "44511e0ab026ca922296ca97bad817321f950d93545f8d8e284e8fd3d850bb18",
+      "role": "distinct unweighted pushforward spectrum; inverse branching attribution"
+    },
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/InverseBranching.lean",
+      "blob": "333d13d406ee4134bfb835e0f13755c2c7a16570",
+      "sha256": "57e5e27e3774e5bc9dffead23ee37f5493e7f8b3c14dd85ac261d15dd8181cee",
+      "role": "existing bounded inverse branching arithmetic; not rebuilt"
+    },
+    {
+      "pr": 175,
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md",
+      "blob": "49749009c168a18bd9a608fb195759fc0db25c7f",
+      "sha256": "53565910ef15a2cf87ab066b187fbff9b83b187468f24c3c4348d6568248db1c",
+      "role": "distinguish prior basin-indicator Fourier attempt"
+    },
+    {
+      "pr": 177,
+      "commit": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "blob": "314fce3965adf36775fac9b5f2097c0181e830de",
+      "sha256": "d47a77884d979d99a0580d6d34f1f8ebc1e2e62a92fa3833f8fd3ce06f080cfc",
+      "role": "elementary orbit-cylinder count, source Green formula, atomic eigenspace classification"
+    },
+    {
+      "pr": 177,
+      "commit": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "blob": "f3143fc4c63c3eff749ceb2d18ce7326a184a5c1",
+      "sha256": "ba5042f969cf787e6ec5ff44e521890ccbfc9bea04e6126353745c9f8c385634",
+      "role": "unrestricted finite source optimizer and record laws"
+    },
+    {
+      "pr": 178,
+      "commit": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/entropy/COARSE_DIGIT_MEMORY_AND_TRACE_FRONT.md",
+      "blob": "af3d266ad694b6ffe47174dfe2df6d607e5c1e3c",
+      "sha256": "63e80adb5334027afc9b99eb499e7e7f4c4454eae26a6be6076319fb32264d24",
+      "role": "actual one-digit log-odds and original-clock trace comparison"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "blob": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "role": "actual common boundary support versus canonical measure"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ENTROPY_RIGIDITY.md",
+      "blob": "e55303bef9bc564b72c586cb4983cd203459125f",
+      "sha256": "5165d1dc167432bbefc7c758e50323ca7412c835930c59fc9aa16164b2edfc80",
+      "role": "same-path conditioning and original integer-diagonal cost"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md",
+      "blob": "400cdfc4bba491488247a744996e8555e131abf7",
+      "sha256": "de581110256ab48080e66b150eb0d633e225234d56de89a5f8a178d33c111e60",
+      "role": "all-length complete cheap-source language"
+    },
+    {
+      "pr": 182,
+      "commit": "aa12c13601cacec2c8496f1349b4947457dc1b45",
+      "path": "research/high-variance-20261123/CYCLE_IDEAL.md",
+      "blob": "f90a68d9655e60ee988f6bc587ad836c74ed7c78",
+      "sha256": "373de11d5e0a9bd4b9678f58b711a2ae1aba5c02592d41b8cffe3a832416f392",
+      "role": "fixed-modulus high rational controls; full-D cancellation remains distinct"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da",
+      "role": "same-source critical collision lower bound"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "blob": "54b6f161d8a8ce81c32fed6c6166807d5c9f8445",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "role": "residual polynomial growth without numerical cancellation exclusion"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/RESIDUAL_UNIT_EXCLUSION.md",
+      "blob": "d05f9b9a32beb1efa6cebcad750493af02597040",
+      "sha256": "012f012d063fe5a4f08015da3a5d022cf580e3c630625ee81c174a7f657940ca",
+      "role": "polynomial residual-unit boundary"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "blob": "918e6d20adea7847deec9f6809e5c1966b65e649",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b",
+      "role": "primitive residual degree bound"
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "blob": "c749ad8f97cd9585a9b251129a79a880ff46d965",
+      "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36",
+      "role": "principal-factor-only failure"
+    }
+  ],
+  "primary_literature": [
+    {
+      "author": "Maxwell Charles Siegel",
+      "title": "(p,q)-adic Analysis and the Collatz Conjecture",
+      "version": "arXiv:2412.02902v1, 3 December 2024",
+      "url": "https://arxiv.org/pdf/2412.02902",
+      "inspected": "series normalization; Corollary2.3 printedp73; Theorem2.7 printedp76; Theorem3.38; Theorem4.6 printedp277",
+      "use": "one exact converse tested and corrected; no thesis-wide review"
+    },
+    {
+      "authors": "Reinhard Schaefke and Michael Singer",
+      "title": "Mahler equations and rationality",
+      "url": "https://singer.math.ncsu.edu/papers/vshort2-5.pdf",
+      "use": "separate independent dilation equations required; not inferred from one mixed equation"
+    },
+    {
+      "author": "Maxwell Charles Siegel",
+      "title": "Conservation of Singularities in Functional Equations Associated to Collatz-Type Dynamical Systems; or, Dreamcatchers for Hydra Maps",
+      "url": "https://arxiv.org/abs/1909.09733",
+      "inspected": "primary abstract only",
+      "use": "no finite-singularity-support theorem instantiated"
+    }
+  ]
+}

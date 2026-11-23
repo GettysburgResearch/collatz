@@ -1,0 +1,127 @@
+{
+  "schema": "collatz-checkpoint-manifest/v1",
+  "parent": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+  "scope": "new and updated checkpoint15 files; manifest excludes itself",
+  "files": [
+    {
+      "path": "research/lean-global-resolvent-20261121/README.md",
+      "sha256": "fc578c6aa92e42a7109ab9a12c28c060130d41aa584b4b3c4f66386d28a7ad06",
+      "bytes": 17491
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/PRESSURE_REVIEW.md",
+      "sha256": "d6b1ff56dba746036b08a1e8f195e0c04d5cd724c773fb29817687eb22a4d2cd",
+      "bytes": 5300
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/README.md",
+      "sha256": "464125ca7c42a5701bd245a8a62fa9992fcdb9dd979e7078e93158d9e4ce3f03",
+      "bytes": 3921
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/REVIEW_NUMEN.md",
+      "sha256": "270f583e2fbac42484e06e47469d2516a4992650579b98f77068c3fd0c968450",
+      "bytes": 7472
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/REVIEW_REAL_BRIDGE.md",
+      "sha256": "b8288bdd1b6fe4a41a36aaecffb560e710a628a753dd0c5777015b6a8f5bb1c0",
+      "bytes": 4930
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/ROOT_REVIEW.md",
+      "sha256": "038f3864ac2f4fedf612dd76827e018a6b1d433a566f6c116eb1e848f806dedf",
+      "bytes": 5450
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/band-source-pins.json",
+      "sha256": "28dafd077a393b0c7927aa2bf0fbbf4e4e92d8c8ceaf5b0b249a2638d10ad78a",
+      "bytes": 1454
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/new-source-checks.json",
+      "sha256": "608c70ab240dcd9ac3faedca039afe37492dc8ea1085b577ac0f211089783b5e",
+      "bytes": 11337
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/pr-inventory.json",
+      "sha256": "6a30140844043bcf12bd01816157779523b405084342d15be55e722a3b2bcabf",
+      "bytes": 52717
+    },
+    {
+      "path": "reports/2026-11-23-integer-boundary/previous-pr-description.json",
+      "sha256": "9e6ee25f96257b152989603776d6fb76a25f24d54ebd6d04a8fb802d363afff5",
+      "bytes": 8028
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/BAND_REMAINDER_CLOSURE_ATTEMPT.md",
+      "sha256": "3ffb42f735a138853a878f9c96c37b3804441e16a6ecc23ec8a78df70700cf20",
+      "bytes": 8306
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/INDEPENDENT_KERNEL_ATTACK.md",
+      "sha256": "fb6479c13b0fd4563259758d4245e18dfd398706c9f6ae3e3f596b6838b8e6d5",
+      "bytes": 10703
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/NUMEN_INVERSE_FIBER.md",
+      "sha256": "0d51c889a7cf9b80310ff1d524d9c8d49f23b2de26adfdfb2d904475c1347b5c",
+      "bytes": 8132
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/PRESSURE_WIENER_ATTACK.md",
+      "sha256": "4b73c35aabe57a44d96c08c30a4990ee0aecec64f7e9200738cd20b5b4ea2bcd",
+      "bytes": 12888
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/README.md",
+      "sha256": "e7ba95574f8309990a8815036f92557af5429b9c9cb28a13ff32397df4decb21",
+      "bytes": 10815
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/SOURCES.json",
+      "sha256": "cc2af2d40ff45d179cd58bdc7eb87c908e859f7e41a08a3c1f52e127262977fa",
+      "bytes": 7519
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/TWO_PLACE_NUMEN_CLASSIFICATION.md",
+      "sha256": "ed208f5ad73cf2f566973d72a5a75b2addfc487973978a4c7cc5e3c7b093d9d7",
+      "bytes": 8096
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/WEIGHTED_FUNCTIONAL_QUESTION.txt",
+      "sha256": "0beb1494e788ab9ee9e8b9082d67b42b19644c94722de5f7343a6d2805cb9a78",
+      "bytes": 888
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/check_band_remainder.py",
+      "sha256": "54866782515cc2fd8090386cc01272bd432ae6d282c9a3272e09b70de59052ed",
+      "bytes": 3096
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/check_numen_inverse_fiber.py",
+      "sha256": "316165b27f8832d3d80e320978a88ab7af1c3ba4bef41a810d490bee869592b5",
+      "bytes": 4433
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/check_pressure_wiener.py",
+      "sha256": "84171e1740beccd024256bce551989190744836309878f61b884cce1baade3b0",
+      "bytes": 3589
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/lean/AuditInverseRealSeparation.lean",
+      "sha256": "f286137428afae9d58c7e9d925af4707e0ac406c413f73d42e0c3a8a57053375",
+      "bytes": 694
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/lean/InverseRealSeparation.lean",
+      "sha256": "7a6d060f2dd8920f5c97642309a1273aa6ca53d94140c5296ad40491b7120b50",
+      "bytes": 7359
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/verify_integer_boundary.py",
+      "sha256": "05bcbd529a79b802299210c87bdff8292c6e5919d124432f84aa491972432bed",
+      "bytes": 5890
+    }
+  ]
+}

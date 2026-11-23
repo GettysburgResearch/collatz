@@ -1,0 +1,225 @@
+{
+  "cases": [
+    {
+      "all_clock_barriers": true,
+      "block_count_lengths_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finite_realizer": {
+        "all_states_distinct": true,
+        "code_matches_carry_residue": true,
+        "exact_gap_valuations": true,
+        "floor": 1000,
+        "minimum_state": "33621540863",
+        "prefix_length": 24,
+        "source": "33621540863",
+        "source_bits": 35,
+        "total_gap": 24
+      },
+      "fixture": "spikes",
+      "inserted": 90,
+      "output_length": 102,
+      "output_total_gap": 150,
+      "raw_length": 12,
+      "raw_total_gap": 60,
+      "record_minimality": true,
+      "series_orientation": {
+        "real_affine_identity": true,
+        "tested_length": 24,
+        "two_series_distinguished": true
+      },
+      "sign": 1
+    },
+    {
+      "all_clock_barriers": true,
+      "block_count_lengths_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finite_realizer": {
+        "all_states_distinct": true,
+        "code_matches_carry_residue": true,
+        "exact_gap_valuations": true,
+        "floor": 1000,
+        "minimum_state": "9307432527143",
+        "prefix_length": 21,
+        "source": "605070148577861040663429121",
+        "source_bits": 89,
+        "total_gap": 78
+      },
+      "fixture": "spikes",
+      "inserted": 9,
+      "output_length": 21,
+      "output_total_gap": 78,
+      "raw_length": 12,
+      "raw_total_gap": 60,
+      "record_minimality": true,
+      "series_orientation": {
+        "real_affine_identity": true,
+        "tested_length": 21,
+        "two_series_distinguished": true
+      },
+      "sign": -1
+    },
+    {
+      "all_clock_barriers": true,
+      "block_count_lengths_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finite_realizer": {
+        "all_states_distinct": true,
+        "code_matches_carry_residue": true,
+        "exact_gap_valuations": true,
+        "floor": 1000,
+        "minimum_state": "537773186047",
+        "prefix_length": 24,
+        "source": "537773186047",
+        "source_bits": 39,
+        "total_gap": 28
+      },
+      "fixture": "alternating",
+      "inserted": 22,
+      "output_length": 150,
+      "output_total_gap": 214,
+      "raw_length": 128,
+      "raw_total_gap": 192,
+      "record_minimality": true,
+      "series_orientation": {
+        "real_affine_identity": true,
+        "tested_length": 24,
+        "two_series_distinguished": true
+      },
+      "sign": 1
+    },
+    {
+      "all_clock_barriers": true,
+      "block_count_lengths_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finite_realizer": {
+        "all_states_distinct": true,
+        "code_matches_carry_residue": true,
+        "exact_gap_valuations": true,
+        "floor": 1000,
+        "minimum_state": "565553408930191",
+        "prefix_length": 24,
+        "source": "140910485665480705",
+        "source_bits": 57,
+        "total_gap": 46
+      },
+      "fixture": "alternating",
+      "inserted": 78,
+      "output_length": 206,
+      "output_total_gap": 348,
+      "raw_length": 128,
+      "raw_total_gap": 192,
+      "record_minimality": true,
+      "series_orientation": {
+        "real_affine_identity": true,
+        "tested_length": 24,
+        "two_series_distinguished": true
+      },
+      "sign": -1
+    },
+    {
+      "all_clock_barriers": true,
+      "block_count_lengths_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finite_realizer": {
+        "all_states_distinct": true,
+        "code_matches_carry_residue": true,
+        "exact_gap_valuations": true,
+        "floor": 1000,
+        "minimum_state": "537669430911",
+        "prefix_length": 24,
+        "source": "537669430911",
+        "source_bits": 39,
+        "total_gap": 28
+      },
+      "fixture": "finite_rational_sampler",
+      "inserted": 53,
+      "output_length": 309,
+      "output_total_gap": 454,
+      "raw_length": 256,
+      "raw_total_gap": 401,
+      "record_minimality": true,
+      "series_orientation": {
+        "real_affine_identity": true,
+        "tested_length": 24,
+        "two_series_distinguished": true
+      },
+      "sign": 1
+    },
+    {
+      "all_clock_barriers": true,
+      "block_count_lengths_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finite_realizer": {
+        "all_states_distinct": true,
+        "code_matches_carry_residue": true,
+        "exact_gap_valuations": true,
+        "floor": 1000,
+        "minimum_state": "377098704909703",
+        "prefix_length": 24,
+        "source": "140934067800506369",
+        "source_bits": 57,
+        "total_gap": 46
+      },
+      "fixture": "finite_rational_sampler",
+      "inserted": 72,
+      "output_length": 328,
+      "output_total_gap": 545,
+      "raw_length": 256,
+      "raw_total_gap": 401,
+      "record_minimality": true,
+      "series_orientation": {
+        "real_affine_identity": true,
+        "tested_length": 24,
+        "two_series_distinguished": true
+      },
+      "sign": -1
+    }
+  ],
+  "checker_sha256": "bf52556e132647391f42dcc5fae9d8d8ec373f313fc9ff1dc73fc654bcf833e6",
+  "damaged_controls_rejected": [
+    "wrong inserted gap",
+    "missing needed insertion",
+    "swapped pressure sign",
+    "wrong ordinary realizer"
+  ],
+  "nonatomic_margin": {
+    "left": "285311670611",
+    "right": "576650390625",
+    "strict": true
+  },
+  "proof_sha256": "a6189cb6e635c234bab815fb26370763bc3c30f3a1e4acfc2a9369819a5c1e14",
+  "raw_fixture_warning": "Finite rational sampler is not the critical iid theorem law.",
+  "schema": "collatz-generic-ray-finite-controls/v1",
+  "scope": "Finite exact algebra only; asymptotic theorem is the written proof.",
+  "status": "PASS"
+}

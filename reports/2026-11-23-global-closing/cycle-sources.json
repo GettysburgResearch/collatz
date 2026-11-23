@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-23",
+  "execution_scope": {
+    "controls": "Integer core, one non-one-rise positive rational word, four one-rise controls above floors 1, 10, 100, and 1000.",
+    "language": "Python standard-library exact integer and Fraction arithmetic",
+    "lean": "No Lean source added or compilation claimed.",
+    "unbounded_claims": "Proved in prose, not inferred from the finite controls."
+  },
+  "primary_literature": [
+    {
+      "authors": "Pietro Corvaja and Umberto Zannier",
+      "scope": "Primary PDF introduction, Theorem 1, main theorem and proof setup inspected. Used to identify fixed-polynomial and height-saving requirements; no application to an unrestricted carry family is claimed.",
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "url": "https://arxiv.org/pdf/math/0311030"
+    },
+    {
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "scope": "Primary author PDF, introductory theorem statements and parity-complement construction inspected. The two-variable tensor identities are derived independently in this note; no historical novelty is claimed.",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf"
+    },
+    {
+      "authors": "u/murmuration_collatz",
+      "date": "2026-11-22",
+      "retrieval_confirmation": "2026-11-23: direct open again unavailable; indexed primary author-post retrieval independently reconfirmed section 6 and the explicit missing forced-supply implication. Original full indexed retrieval included all six sections. This is a post, not Paper 107.",
+      "scope": "Complete author-post text returned by indexed web retrieval; direct open unavailable. Read all six sections, including explicit statement that no new cycle exclusion is supplied. The present note does not import an unverified forced-content theorem.",
+      "title": "Cofactor budgets and complementary-word capacity in integer Collatz cycles",
+      "url": "https://rstation.ai/r/collatz/posts/107"
+    }
+  ],
+  "repository_sources": [
+    {
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "pr": 178,
+      "scope": "Complete written proof read: full complementary reduced denominator q>A/2 and its sharper asymptotic coefficient; no upper bound supplied.",
+      "sha": "c91b80a3156e640ad471cf30c47721145ae21eb1"
+    },
+    {
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "pr": 180,
+      "scope": "Full complementary reduced denominator lower bound q>3(2p-A), exact negative-cycle control, and the stated missing forced cancellation.",
+      "sha": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161"
+    },
+    {
+      "path": "research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "pr": 182,
+      "scope": "Full rotated-carry identities, gap conditions, gcd identity, and exactly neutral least-root count.",
+      "sha": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CYCLE_PRODUCT_TRANSFER_ATTEMPT.md",
+      "pr": 176,
+      "scope": "Full one-rise rational-cycle construction, all-floor density argument, original full nonintegrality, and valuation Sidon criterion. This checkpoint adds full complementary reduction and the combined tensor test, not a new discovery of that family.",
+      "sha": "4171e1fe40e41842af9f800bd821084b724cf8f9"
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "pr": 175,
+      "scope": "Full written Hankel/resultant attempt and height budget; examined to avoid repeating the residual-rank normalization route.",
+      "sha": "53ba1e1ffc46bf022433c2124a62682ad8dd4739"
+    },
+    {
+      "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "pr": 183,
+      "scope": "PR body only: reported fixed-atom/free-exponent classification and source-height bounds. The git object was unavailable in the shared checkout; underlying source proof and Lean files were not independently reread. No theorem from this PR is used in the new proof.",
+      "sha": "68345f60a4f757acb42a69a4ac95910f8ce26163"
+    },
+    {
+      "path": "literature/deep-machinery-20261122/03_arithmetic_and_logic.md",
+      "pr": 186,
+      "scope": "Full machinery guide read, especially fixed-family recurrence quotient, torus gcd, fixed-rank unit-equation, and moving-height limitations.",
+      "sha": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493"
+    }
+  ],
+  "result_status": "Written exact tensor cancellation and all-period full-companion controls. No unrestricted integer-cycle exclusion; no new Lean theorem."
+}

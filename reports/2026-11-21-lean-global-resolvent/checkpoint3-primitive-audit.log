@@ -1,0 +1,6 @@
+'CollatzPrimitiveSurvival.cylinderMap_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPrimitiveSurvival.aliveMass_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPrimitiveSurvival.liftRemainder_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPrimitiveSurvival.fullCollatz_iff_primitiveMoment_tendsto_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,28 @@
+import TriadicAmortizedBudget
+
+#print axioms CollatzTriadicBudget.weight
+#print axioms CollatzTriadicBudget.potential
+#print axioms CollatzTriadicBudget.initialBudget
+#print axioms CollatzTriadicBudget.binaryBudget
+#print axioms CollatzTriadicBudget.weight_pos
+#print axioms CollatzTriadicBudget.weight_ge_one
+#print axioms CollatzTriadicBudget.potential_pos
+#print axioms CollatzTriadicBudget.potential_ge_x
+#print axioms CollatzTriadicBudget.denominator_numerator_bound
+#print axioms CollatzTriadicBudget.denominator_potential_quarter
+#print axioms CollatzTriadicBudget.step_contract_or_tie
+#print axioms CollatzTriadicBudget.step_nonincrease
+#print axioms CollatzTriadicBudget.step_nonincrease_allow_zero
+#print axioms CollatzTriadicBudget.two_step_contraction
+#print axioms CollatzTriadicBudget.zero_entry_bound
+#print axioms CollatzTriadicBudget.eight_step_half
+#print axioms CollatzTriadicBudget.finite_nonzero_budget
+#print axioms CollatzTriadicBudget.finite_odd_divisibility
+#print axioms CollatzTriadicBudget.finite_zero_persistence
+#print axioms CollatzTriadicBudget.finite_paired_horizon
+#print axioms CollatzTriadicBudget.finite_candidate_reaches_one
+#print axioms CollatzTriadicBudget.initialBudget_pos
+#print axioms CollatzTriadicBudget.initialBudget_ge_n
+#print axioms CollatzTriadicBudget.initialBudget_ge_potential
+#print axioms CollatzTriadicBudget.binaryBudget_covers
+#print axioms CollatzTriadicBudget.finite_triadic_height_certificate

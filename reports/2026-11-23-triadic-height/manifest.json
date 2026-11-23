@@ -1,0 +1,164 @@
+{
+  "schema": "collatz-checkpoint16-manifest/v1",
+  "date": "2026-11-23",
+  "scope": "Exact delivered packet and report bytes; manifest excludes itself. Hashes and repository validation are integrity checks, not a universal convergence proof.",
+  "base_commit": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+  "files": [
+    {
+      "path": "research/lean-global-resolvent-20261121/README.md",
+      "sha256": "d7bc7786206b38a4a495ea39d942fa1c3a864b80c1e291fe0b8daf92393e99a7",
+      "bytes": 18233,
+      "git_blob": "e6e43d886df5814f4ea063db96f1b1baece96796"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/BOUNDARY_RIGIDITY_ATTEMPT.md",
+      "sha256": "5bac99b3e04dee0ede82e4ec961e84481d79273ada33fc72a610a323e842e0f8",
+      "bytes": 11649,
+      "git_blob": "39ac19e99661631d3342af3bc33ecf501f4536c1"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/FULL_CYCLE_LITERATURE_ATTEMPT.md",
+      "sha256": "b40936e9e65889594a244988b846fccf8c634492e116e58b91f83ffbb0b653e6",
+      "bytes": 4372,
+      "git_blob": "6c325df903646173962db1776f3c59eeed0e10a0"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/LEAN_SCOPE.md",
+      "sha256": "5a2f3852d88e7c750b22931205a9124430de8630f581c3540003357a927c8808",
+      "bytes": 2325,
+      "git_blob": "c32f7cd48b0bb06525c1a06ba9ed32a3faf941c6"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/OPTIMAL_ANCESTOR_BALANCE.md",
+      "sha256": "a0b25892d094b3d53cec3490b5e5774aef861049ca012fd6fb43e59919e9e380",
+      "bytes": 6705,
+      "git_blob": "1bd8d04d8fe1f41b9f72165b83664ec18008b7fa"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/README.md",
+      "sha256": "6fb3803a1d870ec54b714ce9fa64f95ec5de1f149cf68b530e9d59bd3bad8b4c",
+      "bytes": 7913,
+      "git_blob": "5c3d1a080b18e08c1226b789f7c4bebac00cd024"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/SOURCES.json",
+      "sha256": "4204f8cdb33f86160df323269e14fc3116bfc7ccdb879f44484e2fff0c390c2a",
+      "bytes": 10382,
+      "git_blob": "42a138ced8abed10c65b381875522472e8c69a93"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/THEOREMS.json",
+      "sha256": "c774e491dd3fa5589b4fe903db8cfdec32574410ceca3d7951630d3020c88cb0",
+      "bytes": 2908,
+      "git_blob": "a07dd0b470326908e6d319958258101160aa7187"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md",
+      "sha256": "8249811440526b15587d345179769db54297910afb34eb3bc84084b1f41dd02f",
+      "bytes": 8451,
+      "git_blob": "94c2760f09813bc2b4feea1428a10d28c2054a3d"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TWO_CARRY_CONSTRUCTION_QUESTION.txt",
+      "sha256": "8027ce5d3b8f5edf960baddbc5d2d85c707aa7311fa0edd4e97361ae4df0a8c0",
+      "bytes": 1521,
+      "git_blob": "9c44271fea3b00e1cd0c669c5bba28f174220705"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/check_optimal_ancestor.py",
+      "sha256": "7f48f72353b767bc86e14406678248886ac9b7673a0a848c0714fde16ebebf63",
+      "bytes": 4708,
+      "git_blob": "97e722b8a7d646edd67e12d7ca40133316d5a834"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/check_triadic_budget.py",
+      "sha256": "d7163f45f54d1a742d431ebb797a7a5373b8dfdf13942897051bca40612bffbb",
+      "bytes": 5105,
+      "git_blob": "da0e01b2034a9f63ee597bf2a4e7840f144d6865"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/check_triadic_review.py",
+      "sha256": "77fa23295e338818c4664b70b99984d31092d2bf317001805af7137dcff9583c",
+      "bytes": 4149,
+      "git_blob": "58a2ed48eee75055cc4ed0ff10e66c03f517bddd"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/lean/TriadicAmortizedAudit.lean",
+      "sha256": "8e0d499dfa45f625d46686c5cf3fe705b7e210714ba1f300905587cb7207e9f5",
+      "bytes": 1456,
+      "git_blob": "136fd81d313f8587c02bf838db8d9c53b358c30e"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/lean/TriadicAmortizedBudget.lean",
+      "sha256": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+      "bytes": 16257,
+      "git_blob": "c76bc9a5d7e20576662aee774a22b8c6fa0e60cb"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/lean/TriadicDualClosure.lean",
+      "sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+      "bytes": 11600,
+      "git_blob": "8eed815f2dc89b16da80d759c965244513082ac4"
+    },
+    {
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/verify_triadic_height.py",
+      "sha256": "e5446b0ba1fdde8a2cf5f50925f078505b1861a5d7735e91af2d6030571087ee",
+      "bytes": 6751,
+      "git_blob": "5a4869ed036717d9b604934cdfc665c4f44f6b57"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/INTEGRATION_REVIEW_CONTROLS.json",
+      "sha256": "02517ab8d397a6c85356075c7bf20207924dfecbb6b2f8969939bdaba6ab5145",
+      "bytes": 1518,
+      "git_blob": "a11e32781748a0f00ed3c82a7cc59be19e77fc5d"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/README.md",
+      "sha256": "12f3929a6ffa6adbd82c1441d144ee7942dccd35c39589c879974b2e99367e9b",
+      "bytes": 4663,
+      "git_blob": "5679256775c242467d7352a68ad3c0d7f2db99cf"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/ROOT_INTEGRATION_REVIEW.md",
+      "sha256": "d89b25b9621bd548a0f8951495f6b9bad32f73cabaf74f8e0c70da9aedda38b5",
+      "bytes": 5139,
+      "git_blob": "91fbbd98d824c4f70e61c6298741c972eb9b7313"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/ROOT_REVIEW.md",
+      "sha256": "f504dc8a2d0adbf92be003b2b051230e11364cc497d78dbccd514411a19201fa",
+      "bytes": 5790,
+      "git_blob": "59b42eca5c6776305fb49de21012084a004a2c7b"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/TRIADIC_INDEPENDENT_REVIEW.md",
+      "sha256": "d7e847b3e0203fc8429fc076f90abffa8b309678c39032ddcf1d7482e442bd81",
+      "bytes": 8028,
+      "git_blob": "7e587937e270ab7ba32e8e942caa91bedf6647d0"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/independent-lean-replay.json",
+      "sha256": "c92cccdc630bad98a530a7f14fbe5f81126cc3c3ea4cc0ed3826a9e8cc8e529f",
+      "bytes": 5013,
+      "git_blob": "1a877e02e7b2029ef1727d224ea88d993153d529"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/new-source-checks.json",
+      "sha256": "d2f76e7a4a5d45f2baac052ad9ceba868bd64a2a8f27c621d5ad526afbcf0764",
+      "bytes": 20822,
+      "git_blob": "7c884afdcdb9336f979e784f620816e33c8ced0c"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/previous-pr-description.json",
+      "sha256": "a591811125274df94665f3f22f092cb0a82c3c2b247f58f02e4712f404d0682c",
+      "bytes": 13955,
+      "git_blob": "44738b33c1601eb7317cd73e03537afe62cf2104"
+    },
+    {
+      "path": "reports/2026-11-23-triadic-height/source-refresh.json",
+      "sha256": "2b7b1228221b2a1eeb927ed96541c893347bce0ea9fbd6f78841f6687ea7a666",
+      "bytes": 3141,
+      "git_blob": "d5b6a4ff44bc06e30604af604af2e7f17e771488"
+    }
+  ]
+}

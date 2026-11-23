@@ -1,0 +1,401 @@
+{
+  "schema": "collatz-checkpoint18-source-union/v1",
+  "date": "2026-11-23",
+  "own_parent": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+  "scope": "Frozen source identities and declared read windows; a hash check is not verification of every source theorem.",
+  "repository_sources": [
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 180,
+          "scope": "Read full stationary/individual-clock distinction; critical real-series and finite seam arguments source-qualified."
+        },
+        {
+          "lane": "collision",
+          "pr": "PR180",
+          "scope": "Actual critical renewal and minimum-source law; inspected comparison only."
+        }
+      ],
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4",
+      "git_blob": "2dacbd99dc90ca4b7dc324a59c492f42eb963a1e",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 180,
+          "scope": "Stationary reversed gap law, maximum-Shannon geometric branch, exact critical mean and collision consumer."
+        },
+        {
+          "lane": "collision",
+          "pr": "PR180",
+          "scope": "Source-qualified actual stationary extraction, fixed-block entropy convergence, strict deficit/iid dichotomy; no upper collision bound imported."
+        }
+      ],
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "git_blob": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 182,
+          "scope": "Earlier finite ordinary changing-source controls; the new construction is an infinite nonordinary control with a different scope."
+        },
+        {
+          "lane": "collision",
+          "pr": "PR182",
+          "scope": "Changing-source finite obstruction and its source-height payment; inspected comparison only."
+        }
+      ],
+      "sha256": "a57e7aef865315ef3471a25e0fee18de4d6db75cf40455a0d658912666783e08",
+      "git_blob": "2b875987b32ce8ee515c714fa330da77cc6cddde",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 186,
+          "scope": "Read rigidity, interpolation, source/atom and deep-machinery applicability boundaries."
+        }
+      ],
+      "sha256": "bef18043b6b30a3b435a140098a3bb7528cc3fc6d2f6a9a27565892bbbf2347d",
+      "git_blob": "8b7a6471f014be065f1dc3decc0027ba112cfd33",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/06_agent_tasks.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 186,
+          "scope": "Read all14 task cards and source/coverage requirements."
+        },
+        {
+          "lane": "construction",
+          "pr": 186,
+          "scope": "Machinery guide and same-source conversion tasks; no theorem from this file used in the finite insertion proof"
+        }
+      ],
+      "sha256": "ab2b2cb1dcfe82d41ff0b0bfa2b9d4d7af38354e17a6ba38d1592d05e7fe5955",
+      "git_blob": "758080b836dc878760042dc2019238cf42732046",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/witness/MULTIPLIER_TRANSPORT.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 177,
+          "scope": "Read full source-dependent multiplier compiler boundary as an alternative route."
+        },
+        {
+          "lane": "construction",
+          "pr": 177,
+          "scope": "Existing distinction between semigroup membership and literal merger; existing bounded-clock merger obstruction. Related context, not an imported theorem in the new proof"
+        }
+      ],
+      "sha256": "dec49df0c881ee560ce9bcd3d1da076301b9686c762a1929eda1e9d368984cd4",
+      "git_blob": "7c2295e83e6ad7495432ae665fbfff0ca0a1af1b",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "read_scopes": [
+        {
+          "lane": "root",
+          "pr": 180,
+          "scope": "Read full actual-series recurrence consumer and missing construction, including equality of arithmetic capacity radii."
+        }
+      ],
+      "sha256": "474c5e54492ebe7f69d79e5bd858c44fa1fd3d7737350439d63e534ba81e6149",
+      "git_blob": "01a5d159730960894e903cd91e04550b05ba1d64",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCE_TAIL_TRANSPORT.md",
+      "read_scopes": [
+        {
+          "lane": "construction",
+          "pr": 177,
+          "scope": "Known-source tail pullback candidates retain too much reduced denominator to fund the finite verifier; not used as a proof ingredient here"
+        }
+      ],
+      "sha256": "f9b97f4945e3adeaf7b7eb2d1bfc9e50bb59fb0d166db398c55f2f40011c2f8f",
+      "git_blob": "5850899458f9bc2fe402697f9dfc42d2b4af75f2",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "read_scopes": [
+        {
+          "lane": "construction",
+          "pr": 178,
+          "scope": "Exact selector cost and weighted-selector barrier; the universal constructive selector remains absent"
+        }
+      ],
+      "sha256": "f75d052b925c7b1bfbf439bb44c9d2770c1865596cebbd095b7dc4575b82fb92",
+      "git_blob": "d5fc4e7a3b5cd8b27cac696ef6561b8b12aa8dfd",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "read_scopes": [
+        {
+          "lane": "construction",
+          "pr": 178,
+          "scope": "Arbitrary odd-denominator finite certificate; no same-source candidate construction supplied"
+        }
+      ],
+      "sha256": "990dbdff54e440791c1144e824beedb6681a78d614300b6faa9596ccdc93ad55",
+      "git_blob": "598fbfcb64545247d355c5ca7aee4e40f63e0e1e",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/TRIADIC_RIGIDITY.md",
+      "read_scopes": [
+        {
+          "lane": "construction",
+          "pr": 182,
+          "scope": "Reduced triadic depth equals even-count before first 2; tau<3(r+1) and n<=2^(r+1). Exact recognition, not universal construction"
+        }
+      ],
+      "sha256": "b7f33d95c9b8caac1b1d7457189ad451220198c84f4e89f7af3ed935823fe05b",
+      "git_blob": "70fa89b909782afb36e8994d952e0ce33eb4bfb6",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "read_scopes": [
+        {
+          "lane": "collision",
+          "pr": "PR178",
+          "scope": "Actual equivalent harmonic flow and simultaneous total-variation/collision comparison."
+        }
+      ],
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "git_blob": "39ccf195e42ee17121ff856c45541e70e05d393f",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "read_scopes": [
+        {
+          "lane": "collision",
+          "pr": "PR180",
+          "scope": "Actual fibre density and fixed-resolution phase law; inspected comparison only."
+        }
+      ],
+      "sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6",
+      "git_blob": "4530ed36c4f3ff6c9cf21149989e97cb94eb1714",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/HAAR_AND_ORDINARY_LABELS.md",
+      "read_scopes": [
+        {
+          "lane": "collision",
+          "pr": "PR176 checkpoint17",
+          "scope": "Physical representative, retained endpoint law and mixed-phase identity; inspected comparison only."
+        }
+      ],
+      "sha256": "36ad8ee0dba9f628aaa7661917f8f722ec7fd18412be295fa95617b1bf1059c7",
+      "git_blob": "93ac48ef09e58e33a8589137f977920e9b55676e",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 178,
+          "scope": "Complete written proof read: full complementary reduced denominator q>A/2 and its sharper asymptotic coefficient; no upper bound supplied."
+        }
+      ],
+      "sha256": "7bcf9b6dcb275795d5f53f171098614bd30f0b65d0462a3c90b3b9399ee4ef0e",
+      "git_blob": "97c3b1342bad9fbc7b9a1cd3a45aff031e1c124d",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 180,
+          "scope": "Full complementary reduced denominator lower bound q>3(2p-A), exact negative-cycle control, and the stated missing forced cancellation."
+        }
+      ],
+      "sha256": "972e16e87bbef21867fd3e7d7ede31575596cdb69807e776d3b29c76428414ed",
+      "git_blob": "c1fed85a4090ade76f73e23efed6548dc2fcff8d",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 182,
+          "scope": "Full rotated-carry identities, gap conditions, gcd identity, and exactly neutral least-root count."
+        }
+      ],
+      "sha256": "9ab24369fe171a003ae318db808f1af78e949beeb868765673bcc632d1d78630",
+      "git_blob": "c44ba6d3f8ed50f04b531d14befef7355f792390",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CYCLE_PRODUCT_TRANSFER_ATTEMPT.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 176,
+          "scope": "Full one-rise rational-cycle construction, all-floor density argument, original full nonintegrality, and valuation Sidon criterion. This checkpoint adds full complementary reduction and the combined tensor test, not a new discovery of that family."
+        }
+      ],
+      "sha256": "61e24999019cde59a10bed34ded33b2b4b7647b5d6d42ba28398b94e911d01a9",
+      "git_blob": "39887a83f37ab2b2524a587e9573adf50ae02647",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 175,
+          "scope": "Full written Hankel/resultant attempt and height budget; examined to avoid repeating the residual-rank normalization route."
+        }
+      ],
+      "sha256": "0eb90860f675e1d6484f30770f543ae8a01a9a6de1c5cc3b47d64c040f7d549c",
+      "git_blob": "5069b91e9b5fb954c4d079bd76a34004efb3f85f",
+      "source_available_in_integration_checkout": true
+    },
+    {
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 183,
+          "scope": "PR body only: reported fixed-atom/free-exponent classification and source-height bounds. The git object was unavailable in the shared checkout; underlying source proof and Lean files were not independently reread. No theorem from this PR is used in the new proof."
+        }
+      ],
+      "source_available_in_integration_checkout": false,
+      "verification_scope": "Source body not read or hashed in this integration; retain the lane-specific limited inspection scope."
+    },
+    {
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/03_arithmetic_and_logic.md",
+      "read_scopes": [
+        {
+          "lane": "cycles",
+          "pr": 186,
+          "scope": "Full machinery guide read, especially fixed-family recurrence quotient, torus gcd, fixed-rank unit-equation, and moving-height limitations."
+        }
+      ],
+      "sha256": "c26775e5f6c9aabb2bfcb117b7223fd5aec79e3bdedb3d07f9cded8283cde4f5",
+      "git_blob": "e3db572abcc9a504ec5110437a02cfec693d4af1",
+      "source_available_in_integration_checkout": true
+    }
+  ],
+  "literature": [
+    {
+      "lane": "root",
+      "author": "Giles Atkinson",
+      "title": "Recurrence of Co-Cycles and Random Walks",
+      "url": "https://wrap.warwick.ac.uk/id/eprint/136838/1/WRAP_Theses_Atkinson_1976.pdf",
+      "scope": "Primary1976 article reproduced in AppendixA; theorem hypotheses inspected. Used only to identify the stationary-a.e. applicability boundary; the insertion proof is elementary."
+    },
+    {
+      "lane": "root",
+      "authors": [
+        "Jean Bertoin",
+        "Ron Doney"
+      ],
+      "title": "On conditioning random walks in an exponential family to stay nonnegative",
+      "url": "https://archive.numdam.org/item/SPS_1994__28__116_0.pdf",
+      "scope": "Indexed primary opening statement inspected; direct PDF open returned502. Motivational lead only; no conditioned-walk theorem imported."
+    },
+    {
+      "lane": "construction",
+      "author": "Kenneth G. Monks",
+      "title": "On q-Analogs of the 3x+1 Dynamical System",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "role": "Explored a polynomial lift. No universal polynomiality/source-preserving conversion was extracted. Not used in the new theorem"
+    },
+    {
+      "lane": "construction",
+      "authors": [
+        "Angelot Behajaina",
+        "Elad Paran"
+      ],
+      "title": "The Collatz map analogue in polynomial rings and in completions",
+      "url": "https://arxiv.org/pdf/2312.00390",
+      "role": "Positive-characteristic periodicity does not directly specialize to the ordinary +1 map; no imported closure theorem. Not used in the new theorem"
+    },
+    {
+      "lane": "collision",
+      "author": "Lyapunov Weaver",
+      "title": "A power improvement for uniform Collatz interval compression",
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "version": "v3",
+      "inspected": "Sections 7.10--7.11 and introductory statement",
+      "retrieved": "2026-11-23",
+      "scope": "Comparison only. Its iid canonical cross-coordinate concentration is not imported as an actual fixed-source endpoint bound."
+    },
+    {
+      "lane": "cycles",
+      "authors": "Pietro Corvaja and Umberto Zannier",
+      "scope": "Primary PDF introduction, Theorem 1, main theorem and proof setup inspected. Used to identify fixed-polynomial and height-saving requirements; no application to an unrestricted carry family is claimed.",
+      "title": "A lower bound for the height of a rational function at S-unit points",
+      "url": "https://arxiv.org/pdf/math/0311030"
+    },
+    {
+      "lane": "cycles",
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "scope": "Primary author PDF, introductory theorem statements and parity-complement construction inspected. The two-variable tensor identities are derived independently in this note; no historical novelty is claimed.",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf"
+    },
+    {
+      "lane": "cycles",
+      "authors": "u/murmuration_collatz",
+      "date": "2026-11-22",
+      "retrieval_confirmation": "2026-11-23: direct open again unavailable; indexed primary author-post retrieval independently reconfirmed section 6 and the explicit missing forced-supply implication. Original full indexed retrieval included all six sections. This is a post, not Paper 107.",
+      "scope": "Complete author-post text returned by indexed web retrieval; direct open unavailable. Read all six sections, including explicit statement that no new cycle exclusion is supplied. The present note does not import an unverified forced-content theorem.",
+      "title": "Cofactor budgets and complementary-word capacity in integer Collatz cycles",
+      "url": "https://rstation.ai/r/collatz/posts/107"
+    }
+  ],
+  "individual_source_windows": {
+    "root": "../../../../reports/2026-11-23-global-closing/generic-ray-sources.json",
+    "construction": "../../../../reports/2026-11-23-global-closing/insertion-sources.json",
+    "collision": "../../../../reports/2026-11-23-global-closing/collision-sources.json",
+    "cycles": "../../../../reports/2026-11-23-global-closing/cycle-sources.json"
+  }
+}

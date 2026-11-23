@@ -1,0 +1,54 @@
+{
+  "schema": "collatz-research-input-snapshot/v1",
+  "date": "2026-11-23",
+  "own_parent_sha": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+  "own_pr": 176,
+  "scope": "latest-title refresh and five active mathematical heads; continues the preceding whole-repository inventory",
+  "inputs": [
+    {
+      "pr": 175,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "head_sha": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "branch": "research/lean-global-closure-20261121",
+      "title": "Collatz: full-denominator count, nonlocal repair, and actual stopping mass",
+      "updated_at": "2026-11-22T09:03:34Z",
+      "status": "source-qualified; selected new claims inspected, not a complete re-audit"
+    },
+    {
+      "pr": 177,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177",
+      "head_sha": "0444986571f09f302cb3687b4bba3552600e4119",
+      "branch": "research/lean-exact-witness-global-20261121",
+      "title": "Collatz: binary-run clocks, cycle occupation, and exact Green cutoffs",
+      "updated_at": "2026-11-22T08:57:20Z",
+      "status": "source-qualified; selected new claims inspected, not a complete re-audit"
+    },
+    {
+      "pr": 178,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "head_sha": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "branch": "research/lean-global-20261121",
+      "title": "Collatz: polynomial phase bounds, actual inverse windows, and whole-word attacks",
+      "updated_at": "2026-11-22T09:16:41Z",
+      "status": "source-qualified; selected new claims inspected, not a complete re-audit"
+    },
+    {
+      "pr": 180,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "head_sha": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "branch": "research/lean-ordinary-closure-20261121",
+      "title": "Collatz: source surgery, weighted routing, and canonical entropy",
+      "updated_at": "2026-11-22T08:50:19Z",
+      "status": "source-qualified; selected new claims inspected, not a complete re-audit"
+    },
+    {
+      "pr": 185,
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "head_sha": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "branch": "research/literature-orbit-closure-20261121",
+      "title": "Collatz: actual inverse laws and the distinguished cycle ideal",
+      "updated_at": "2026-11-22T09:11:53Z",
+      "status": "source-qualified; selected new claims inspected, not a complete re-audit"
+    }
+  ]
+}

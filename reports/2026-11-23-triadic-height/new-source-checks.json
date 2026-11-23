@@ -1,0 +1,728 @@
+{
+  "schema": "collatz-triadic-height-checks/v1",
+  "started_utc": "2026-11-23T02:44:39.886398+00:00",
+  "scope": "New finite paired-certificate theorem and exact arithmetic controls; no universal candidate construction or full Collatz proof. The complete-carry congruence consumer remains written mathematics.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_status": "",
+  "dependencies": "Existing Mathlib/package objects reused; copied paired-state dependency and new module freshly compiled; no historical corpus replay.",
+  "source_hashes": {
+    "lean/TriadicDualClosure.lean": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+    "lean/TriadicAmortizedBudget.lean": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+    "lean/TriadicAmortizedAudit.lean": "8e0d499dfa45f625d46686c5cf3fe705b7e210714ba1f300905587cb7207e9f5",
+    "verify_triadic_height.py": "e5446b0ba1fdde8a2cf5f50925f078505b1861a5d7735e91af2d6030571087ee",
+    "THEOREMS.json": "c774e491dd3fa5589b4fe903db8cfdec32574410ceca3d7951630d3020c88cb0",
+    "check_triadic_budget.py": "d7163f45f54d1a742d431ebb797a7a5373b8dfdf13942897051bca40612bffbb",
+    "check_triadic_review.py": "77fa23295e338818c4664b70b99984d31092d2bf317001805af7137dcff9583c",
+    "check_optimal_ancestor.py": "7f48f72353b767bc86e14406678248886ac9b7673a0a848c0714fde16ebebf63"
+  },
+  "declarations": [
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.weight"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.potential"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.initialBudget"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.binaryBudget"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.weight_pos"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.weight_ge_one"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.potential_pos"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.potential_ge_x"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.denominator_numerator_bound"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.denominator_potential_quarter"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.step_contract_or_tie"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.step_nonincrease"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.step_nonincrease_allow_zero"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.two_step_contraction"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.zero_entry_bound"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.eight_step_half"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_nonzero_budget"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_odd_divisibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_zero_persistence"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_paired_horizon"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_candidate_reaches_one"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.initialBudget_pos"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.initialBudget_ge_n"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.initialBudget_ge_potential"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.binaryBudget_covers"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_triadic_height_certificate"
+    }
+  ],
+  "finite_controls": [
+    {
+      "file": "check_triadic_budget.py",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "output_sha256": "eb5e81c37b9af3e976791423b35cda8f20e33516588489d88cebb7bc1ad792ed",
+      "result": {
+        "accepted_known_controls": [
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 0,
+            "known_first_hit": 0,
+            "n": 1,
+            "new_horizon": 19,
+            "numerator": "2",
+            "previous_horizon": 26
+          },
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 0,
+            "known_first_hit": 1,
+            "n": 2,
+            "new_horizon": 19,
+            "numerator": "1",
+            "previous_horizon": 26
+          },
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 2,
+            "known_first_hit": 5,
+            "n": 3,
+            "new_horizon": 64,
+            "numerator": "-4",
+            "previous_horizon": 122
+          },
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 1,
+            "known_first_hit": 2,
+            "n": 4,
+            "new_horizon": 37,
+            "numerator": "1",
+            "previous_horizon": 60
+          },
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 5,
+            "known_first_hit": 11,
+            "n": 7,
+            "new_horizon": 289,
+            "numerator": "-2344",
+            "previous_horizon": 662
+          },
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 28,
+            "known_first_hit": 70,
+            "n": 27,
+            "new_horizon": 6103,
+            "numerator": "-6378476857984674337772",
+            "previous_horizon": 19022
+          },
+          {
+            "all_tests_passed": true,
+            "complete_congruence": true,
+            "denominator_exponent": 31,
+            "known_first_hit": 75,
+            "n": 97,
+            "new_horizon": 7408,
+            "numerator": "-204111264320640774230410",
+            "previous_horizon": 22444
+          }
+        ],
+        "control_source_sha256": "d7163f45f54d1a742d431ebb797a7a5373b8dfdf13942897051bca40612bffbb",
+        "numerator_heavy_comparisons": [
+          {
+            "denominator_exponent": 2,
+            "n": 3,
+            "new_horizon": 36910,
+            "numerator_bits": 4097,
+            "previous_horizon": 106540,
+            "scope": "height comparison only; no accepted candidate"
+          },
+          {
+            "denominator_exponent": 10,
+            "n": 3,
+            "new_horizon": 37540,
+            "numerator_bits": 4097,
+            "previous_horizon": 401524,
+            "scope": "height comparison only; no accepted candidate"
+          },
+          {
+            "denominator_exponent": 20,
+            "n": 3,
+            "new_horizon": 39610,
+            "numerator_bits": 4097,
+            "previous_horizon": 770254,
+            "scope": "height comparison only; no accepted candidate"
+          }
+        ],
+        "rejected_mutations": 22,
+        "schema": "collatz-triadic-amortized-controls/v1",
+        "scope": "exact finite controls; no universal candidate construction",
+        "stale_clock_control": {
+          "first_failure": 64,
+          "old_clock": 64,
+          "own_clock": 649
+        }
+      }
+    },
+    {
+      "file": "check_triadic_review.py",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "output_sha256": "8bf5b83040df5df22429ab86f7d91a377070005a6d16ada0cde08f58502871a0",
+      "result": {
+        "checker_sha256": "77fa23295e338818c4664b70b99984d31092d2bf317001805af7137dcff9583c",
+        "counts": {
+          "compatible": 95540,
+          "positive_drop": 42500,
+          "tie": 50,
+          "two_step": 47117,
+          "zero_entry": 350
+        },
+        "range": "2<=x<=100; 0<=r<=7; w in [-120,120] plus signed 3^r and 3^max(0,r-1); compatible nonzero starts only.",
+        "reviewed_source_name": "TRIADIC_AMORTIZED_BUDGET.md",
+        "reviewed_source_sha256": "8249811440526b15587d345179769db54297910afb34eb3bc84084b1f41dd02f",
+        "scope": "Independent bounded arithmetic check of written one/two-step inequalities and rational state meaning; not a universal certificate construction or formal proof."
+      }
+    },
+    {
+      "file": "check_optimal_ancestor.py",
+      "normal_exit_code": 0,
+      "optimized_exit_code": 0,
+      "identical_output": true,
+      "output_sha256": "e190162afc60cfa173505f1ed07b4ff4f1fe846f2d137a57cf7916c28360f1c9",
+      "result": {
+        "all_depth_cutoffs": [
+          {
+            "cutoff_times_three_power": 32,
+            "odd_clock": 0,
+            "target": 31,
+            "target_times_two_power": 31,
+            "total_gap": 0
+          },
+          {
+            "cutoff_times_three_power": 96,
+            "odd_clock": 1,
+            "target": 47,
+            "target_times_two_power": 94,
+            "total_gap": 1
+          },
+          {
+            "cutoff_times_three_power": 288,
+            "odd_clock": 2,
+            "target": 71,
+            "target_times_two_power": 284,
+            "total_gap": 2
+          },
+          {
+            "cutoff_times_three_power": 864,
+            "odd_clock": 3,
+            "target": 107,
+            "target_times_two_power": 856,
+            "total_gap": 3
+          },
+          {
+            "cutoff_times_three_power": 2592,
+            "odd_clock": 4,
+            "target": 161,
+            "target_times_two_power": 2576,
+            "total_gap": 4
+          },
+          {
+            "cutoff_times_three_power": 7776,
+            "odd_clock": 5,
+            "target": 121,
+            "target_times_two_power": 7744,
+            "total_gap": 6
+          },
+          {
+            "cutoff_times_three_power": 23328,
+            "odd_clock": 6,
+            "target": 91,
+            "target_times_two_power": 23296,
+            "total_gap": 8
+          }
+        ],
+        "fixed_target_fibre": [
+          {
+            "carry": 19,
+            "gaps": [
+              1,
+              1,
+              4
+            ],
+            "input": "301/27",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 23,
+            "gaps": [
+              1,
+              2,
+              3
+            ],
+            "input": "11",
+            "ordinary_unit_ancestor": true
+          },
+          {
+            "carry": 31,
+            "gaps": [
+              1,
+              3,
+              2
+            ],
+            "input": "289/27",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 47,
+            "gaps": [
+              1,
+              4,
+              1
+            ],
+            "input": "91/9",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 29,
+            "gaps": [
+              2,
+              1,
+              3
+            ],
+            "input": "97/9",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 37,
+            "gaps": [
+              2,
+              2,
+              2
+            ],
+            "input": "283/27",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 53,
+            "gaps": [
+              2,
+              3,
+              1
+            ],
+            "input": "89/9",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 49,
+            "gaps": [
+              3,
+              1,
+              2
+            ],
+            "input": "271/27",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 65,
+            "gaps": [
+              3,
+              2,
+              1
+            ],
+            "input": "85/9",
+            "ordinary_unit_ancestor": false
+          },
+          {
+            "carry": 89,
+            "gaps": [
+              4,
+              1,
+              1
+            ],
+            "input": "77/9",
+            "ordinary_unit_ancestor": false
+          }
+        ],
+        "length_four_windows": [
+          "1111",
+          "1111",
+          "1110",
+          "1101",
+          "1010",
+          "0101",
+          "1011",
+          "0111"
+        ],
+        "low_source_count": 10,
+        "low_source_paths": {
+          "1": {
+            "gaps": [],
+            "states": [
+              1
+            ]
+          },
+          "11": {
+            "gaps": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "states": [
+              11,
+              17,
+              13,
+              5,
+              1
+            ]
+          },
+          "13": {
+            "gaps": [
+              3,
+              4
+            ],
+            "states": [
+              13,
+              5,
+              1
+            ]
+          },
+          "17": {
+            "gaps": [
+              2,
+              3,
+              4
+            ],
+            "states": [
+              17,
+              13,
+              5,
+              1
+            ]
+          },
+          "19": {
+            "gaps": [
+              1,
+              3,
+              1,
+              2,
+              3,
+              4
+            ],
+            "states": [
+              19,
+              29,
+              11,
+              17,
+              13,
+              5,
+              1
+            ]
+          },
+          "23": {
+            "gaps": [
+              1,
+              1,
+              5,
+              4
+            ],
+            "states": [
+              23,
+              35,
+              53,
+              5,
+              1
+            ]
+          },
+          "25": {
+            "gaps": [
+              2,
+              1,
+              3,
+              1,
+              2,
+              3,
+              4
+            ],
+            "states": [
+              25,
+              19,
+              29,
+              11,
+              17,
+              13,
+              5,
+              1
+            ]
+          },
+          "29": {
+            "gaps": [
+              3,
+              1,
+              2,
+              3,
+              4
+            ],
+            "states": [
+              29,
+              11,
+              17,
+              13,
+              5,
+              1
+            ]
+          },
+          "5": {
+            "gaps": [
+              4
+            ],
+            "states": [
+              5,
+              1
+            ]
+          },
+          "7": {
+            "gaps": [
+              1,
+              1,
+              2,
+              3,
+              4
+            ],
+            "states": [
+              7,
+              11,
+              17,
+              13,
+              5,
+              1
+            ]
+          }
+        },
+        "original_path_to_one": {
+          "gaps": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1,
+            4,
+            2,
+            2,
+            4,
+            3,
+            1,
+            1,
+            5,
+            4
+          ],
+          "states": [
+            31,
+            47,
+            71,
+            107,
+            161,
+            121,
+            91,
+            137,
+            103,
+            155,
+            233,
+            175,
+            263,
+            395,
+            593,
+            445,
+            167,
+            251,
+            377,
+            283,
+            425,
+            319,
+            479,
+            719,
+            1079,
+            1619,
+            2429,
+            911,
+            1367,
+            2051,
+            3077,
+            577,
+            433,
+            325,
+            61,
+            23,
+            35,
+            53,
+            5,
+            1
+          ]
+        },
+        "schema": "collatz-optimal-ancestor-control/v1",
+        "scope": "finite certificates for an all-depth written bound; not Collatz closure",
+        "success": true,
+        "unbalanced_word": "11111010",
+        "window_ones_counts": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "lean_commands": [
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "TriadicDualClosure.olean",
+        "TriadicDualClosure.lean"
+      ],
+      "cwd": "/tmp/collatz-triadic-height-okij6tgo",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "TriadicAmortizedBudget.olean",
+        "TriadicAmortizedBudget.lean"
+      ],
+      "cwd": "/tmp/collatz-triadic-height-okij6tgo",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "TriadicAmortizedAudit.lean"
+      ],
+      "cwd": "/tmp/collatz-triadic-height-okij6tgo",
+      "exit_code": 0,
+      "stdout": "'CollatzTriadicBudget.weight' depends on axioms: [propext]\n'CollatzTriadicBudget.potential' depends on axioms: [propext]\n'CollatzTriadicBudget.initialBudget' depends on axioms: [propext]\n'CollatzTriadicBudget.binaryBudget' depends on axioms: [propext]\n'CollatzTriadicBudget.weight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.weight_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.potential_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.potential_ge_x' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.denominator_numerator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.denominator_potential_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.step_contract_or_tie' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.step_nonincrease' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.step_nonincrease_allow_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.two_step_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.zero_entry_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.eight_step_half' depends on axioms: [propext, Quot.sound]\n'CollatzTriadicBudget.finite_nonzero_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_odd_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_zero_persistence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_paired_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_candidate_reaches_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.initialBudget_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.initialBudget_ge_n' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.initialBudget_ge_potential' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.binaryBudget_covers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTriadicBudget.finite_triadic_height_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "success": true,
+  "finished_utc": "2026-11-23T02:44:49.742678+00:00"
+}

@@ -1,0 +1,76 @@
+{
+  "checkpoint": 18,
+  "topic": "Universal denominator construction and finite gap-one insertion repair",
+  "new_result": {
+    "file": "FINITE_GAP_ONE_INSERTIONS.md",
+    "status": "Self-contained mathematical proof plus finite exact arithmetic diagnostic; not Lean formalized",
+    "ingredients": ["Inverse affine gap maps", "Positive aligned trajectory difference", "Power-of-two divisibility of a common gap block"],
+    "boundary": "No universal repair-existence theorem; no Collatz proof; only insertion-only same-endpoint surgery is bounded"
+  },
+  "repository": "GettysburgResearch/collatz",
+  "context_read": [
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCE_TAIL_TRANSPORT.md",
+      "role": "Known-source tail pullback candidates retain too much reduced denominator to fund the finite verifier; not used as a proof ingredient here"
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/witness/MULTIPLIER_TRANSPORT.md",
+      "role": "Existing distinction between semigroup membership and literal merger; existing bounded-clock merger obstruction. Related context, not an imported theorem in the new proof"
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "role": "Exact selector cost and weighted-selector barrier; the universal constructive selector remains absent"
+    },
+    {
+      "pr": 178,
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "role": "Arbitrary odd-denominator finite certificate; no same-source candidate construction supplied"
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/TRIADIC_RIGIDITY.md",
+      "role": "Reduced triadic depth equals even-count before first 2; tau<3(r+1) and n<=2^(r+1). Exact recognition, not universal construction"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/06_agent_tasks.md",
+      "role": "Machinery guide and same-source conversion tasks; no theorem from this file used in the finite insertion proof"
+    }
+  ],
+  "primary_literature_considered": [
+    {
+      "author": "Kenneth G. Monks",
+      "title": "On q-Analogs of the 3x+1 Dynamical System",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "role": "Explored a polynomial lift. No universal polynomiality/source-preserving conversion was extracted. Not used in the new theorem"
+    },
+    {
+      "authors": ["Angelot Behajaina", "Elad Paran"],
+      "title": "The Collatz map analogue in polynomial rings and in completions",
+      "url": "https://arxiv.org/pdf/2312.00390",
+      "role": "Positive-characteristic periodicity does not directly specialize to the ordinary +1 map; no imported closure theorem. Not used in the new theorem"
+    }
+  ],
+  "parent_work": {
+    "own_checkpoint17_commit": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+    "checkpoint18_infinite_insertion_route": "Parent is writing a separate symbolic infinite-ray construction; this note addresses finite ordinary-source legalization only"
+  },
+  "validation": {
+    "checker": "check_finite_gap_one_insertions.py",
+    "result": "CHECK_RESULT.json",
+    "execution_metadata": "EXECUTION_METADATA.json",
+    "guard_policy": "Every condition uses explicit require/raise; no assert statements; all checks remain active with python -O",
+    "output_policy": "Checker emits JSON to stdout and performs no file writes",
+    "comparison": "Normal and optimized executions must have zero exit status, empty stderr, and byte-identical stdout including checks_executed",
+    "hash_binding": "Execution metadata records SHA-256 of the checker, proof note, source ledger, and recorded result"
+  }
+}

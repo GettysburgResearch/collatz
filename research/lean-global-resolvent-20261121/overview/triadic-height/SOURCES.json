@@ -1,0 +1,193 @@
+{
+  "schema": "collatz-triadic-height-sources/v1",
+  "date": "2026-11-23",
+  "scope": "Exact source files read for this checkpoint; not a new audit of all prior proofs.",
+  "repository_sources": [
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/duality/TRIADIC_RANK.md",
+      "sha256": "e4ad2b13c40b7f8906862143edc8c836def4b8f8c359bfec50d3c94146e2d120",
+      "role": "read prior proof / construction boundary",
+      "git_blob": "ab60fd248086bd8a2b753ea12a7b41387ea5c2de"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/duality/lean/TriadicDualClosure.lean",
+      "sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+      "role": "dependency copied unchanged",
+      "git_blob": "8eed815f2dc89b16da80d759c965244513082ac4"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/ORDER_CONSTRUCTION_ATTEMPT.md",
+      "sha256": "89dbbfd7009b869fae54a60ac7cf1db999e05bf809a12bf2614e2096d0a03f0e",
+      "role": "read prior proof / construction boundary",
+      "git_blob": "c8b1ff140abdb577d391604a0d252c077d349227"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md",
+      "sha256": "71aeff76e8983a9f703229d8c07a7cc9b734f3e07b82a85c8d3576b337787d05",
+      "role": "read prior proof / construction boundary",
+      "git_blob": "972c606bd732862a52e6918d7e08c1ac5da4f55e"
+    },
+    {
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "git_blob": "041d15c84ec5d826b2fdd197a5e9f4424f541e32",
+      "sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/EXTENSIONS.md",
+      "git_blob": "a34c0e993ccd190d47235c4285e53d6145660ea2",
+      "sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/COLLISION_TRANSFER.md",
+      "git_blob": "9d856db99fd806ca519e072b866dda749c71ec40",
+      "sha256": "4f6494baa8fd85e936e69367c45a27ab774a8a0aa6ee188919e49f44371b7fe9",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ENTROPY_RIGIDITY.md",
+      "git_blob": "e55303bef9bc564b72c586cb4983cd203459125f",
+      "sha256": "5165d1dc167432bbefc7c758e50323ca7412c835930c59fc9aa16164b2edfc80",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "git_blob": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "git_blob": "803d6ba2a3827c6ef94cb31fb838e3d416b92090",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "commit": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/RENORMALIZED_FIBRE_ENTROPY_ATTACK.md",
+      "git_blob": "17554f9c37b67366771c5ae42f238fe5d5dbd8ce",
+      "sha256": "850ac21d509b017d28ee3a90b6398a70f5f9ae4528995b4654a68a1f0038d5a7",
+      "scope": "Read complete source file; inherited qualifications retained, no replay of its external proof.",
+      "repository": "GettysburgResearch/collatz"
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+      "git_blob": "9346c3b93fbd2e336a4e1c2e80d7b92ff5f34162",
+      "sha256": "50b9ebe3fe972c4c7fbbdd3697bb36917cc010f85335fb527330f2244c669f76",
+      "scope": "Read for the current direct closing attempt; inherited proof qualifications retained."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/CYCLE_CANCELLATION.md",
+      "git_blob": "b0b0fc74431af6d4dbfa4170598ec5be78ff8b55",
+      "sha256": "b77eb45c9c7852dba80f24aed88901f2720122a781ce05f4e24437306cadff5f",
+      "scope": "Read for the current direct closing attempt; inherited proof qualifications retained."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/ESCAPE_CLOSURE.md",
+      "git_blob": "364611325bba005a086992d1447bbfbfd2977f80",
+      "sha256": "607228e47b1370435747e1843c3ed7b572ffcf3ef834647c18a1ca98575c57bf",
+      "scope": "Read for the current direct closing attempt; inherited proof qualifications retained."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "git_blob": "54b6f161d8a8ce81c32fed6c6166807d5c9f8445",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "scope": "Read for the current direct closing attempt; inherited proof qualifications retained."
+    },
+    {
+      "repository": "GettysburgResearch/collatz",
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "git_blob": "c749ad8f97cd9585a9b251129a79a880ff46d965",
+      "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36",
+      "scope": "Read for the current direct closing attempt; inherited proof qualifications retained."
+    }
+  ],
+  "literature": [
+    {
+      "title": "The autoconjugacy of the 3x+1 function",
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "published": "Discrete Mathematics275(2004),219\u2013236",
+      "read_scope": "Theorem2.1, parity definition, positive pair and self-conjugacy context",
+      "proof_role": "prior complementary-parity framework; no universal rationality assumed"
+    },
+    {
+      "title": "On q-Analogs of the 3x+1 Dynamical System",
+      "author": "Kenneth G. Monks",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Monks/monks6.pdf",
+      "published": "Journal of Integer Sequences28(2025),Article25.6.8",
+      "read_scope": "Theorem5, Conjecture6, polynomial degree proof and tables; other displayed conjugacy setup",
+      "proof_role": "motivated unsuccessful polynomial construction; not an input to new weighted potential"
+    },
+    {
+      "title": "The autoconjugacy of a generalized Collatz map",
+      "author": "Alec Edgington",
+      "url": "https://arxiv.org/pdf/1206.0553",
+      "read_scope": "initial framework and Section4 real-limit theorem",
+      "proof_role": "consulted; not used as proof premise"
+    },
+    {
+      "title": "Automatic, primitive, and nonprimitive parity in rational Collatz dynamics",
+      "author": "u/lyapunov_weaver",
+      "url": "https://rstation.ai/problems/collatz/papers/16",
+      "version": "v3,27October2026",
+      "read_scope": "statements, source qualifications and beginning of local coherence argument; not full independent reconstruction",
+      "proof_role": "consulted claimed structured-word rigidity; not imported as a theorem or proof premise"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1212.1873",
+      "version": "v6",
+      "scope": "Definition of self-similarity and Theorems 2.7-2.8 inspected; no complete proof reconstruction."
+    },
+    {
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p01-p.pdf",
+      "scope": "Theorem1.3 and CP-chain hypotheses around Theorems1.10-1.13 inspected; no complete proof reconstruction."
+    },
+    {
+      "url": "https://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/",
+      "read_scope": "Propositions 6 and 7, dependent cube setup and the following limitation; no closing pointwise estimate imported."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0012365X25004200",
+      "read_scope": "Cycle agent read publisher abstract/introduction; full HAL text unavailable; root publisher open failed; no complete proof reconstruction."
+    },
+    {
+      "url": "https://arxiv.org/html/2607.24844v1",
+      "read_scope": "Fixed-count extremal objective, definitions and Theorem 7.3; not used as an unrestricted integer-fibre theorem."
+    },
+    {
+      "url": "https://ora.ox.ac.uk/objects/uuid%3Ad49495ed-7750-48f1-844e-76eb91a6910b/files/s2f75rb26g",
+      "read_scope": "Cycle agent read primary PDF abstract/opening setup; root open failed; hypotheses checked, no proof imported."
+    }
+  ]
+}

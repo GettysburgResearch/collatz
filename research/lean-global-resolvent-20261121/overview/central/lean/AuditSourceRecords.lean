@@ -1,0 +1,6 @@
+import Collatz.SourceRecords
+
+#print axioms CollatzSourceRecords.cofinal_records
+#print axioms CollatzSourceRecords.record_low_domain
+#print axioms CollatzSourceRecords.record_no_source_only_psi
+#print axioms CollatzSourceRecords.cofinal_source_only_obstruction

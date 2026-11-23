@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/check_return_transport.py"
+  ],
+  "exit_code": 0,
+  "source_sha256": "1464a97507d0d70f0290ada04051c21ba9eae591c30e5080e2dd05ef3370e735",
+  "result": {
+    "source": "2^8179 * 8200 - 1",
+    "first_positive_return_clock": 53,
+    "endpoint": "3^53 * 2^8126 * 8200 - 1",
+    "source_and_endpoint_marked": true,
+    "earlier_positive_clocks_marked": false,
+    "endpoint_over_source_exceeds": "2^31",
+    "transported_atom_over_endpoint_fourth_power_weight_exceeds": "2^124",
+    "ordinary_source_convergence_assumed": false,
+    "verification": "exact Python integers; independent finite computation"
+  }
+}

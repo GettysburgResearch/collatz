@@ -1,0 +1,2308 @@
+{
+  "counts": {
+    "lifts": 54,
+    "positive_resets": 30,
+    "true_duals": 12
+  },
+  "lifts": [
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "4",
+      "lift_steps": 2,
+      "own_horizon": 55,
+      "passed_prefix": 2,
+      "target": 1,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 3,
+      "own_horizon": 64,
+      "passed_prefix": 4,
+      "target": 1,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 3,
+      "own_horizon": 64,
+      "passed_prefix": 5,
+      "target": 1,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 3,
+      "own_horizon": 64,
+      "passed_prefix": 8,
+      "target": 1,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 3,
+      "own_horizon": 64,
+      "passed_prefix": 16,
+      "target": 1,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 3,
+      "own_horizon": 64,
+      "passed_prefix": 67,
+      "target": 1,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 2,
+      "target": 2,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 3,
+      "target": 2,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 4,
+      "target": 2,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 7,
+      "target": 2,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 15,
+      "target": 2,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-1/9",
+      "initial_n": "8",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 66,
+      "target": 2,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "12",
+      "lift_steps": 2,
+      "own_horizon": 64,
+      "passed_prefix": 2,
+      "target": 3,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "24",
+      "lift_steps": 3,
+      "own_horizon": 73,
+      "passed_prefix": 4,
+      "target": 3,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/81",
+      "initial_n": "48",
+      "lift_steps": 4,
+      "own_horizon": 154,
+      "passed_prefix": 6,
+      "target": 3,
+      "terminal_integer": "4"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-4835/19683",
+      "initial_n": "1536",
+      "lift_steps": 9,
+      "own_horizon": 739,
+      "passed_prefix": 14,
+      "target": 3,
+      "terminal_integer": "28"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-69177673/387420489",
+      "initial_n": "1572864",
+      "lift_steps": 19,
+      "own_horizon": 2620,
+      "passed_prefix": 32,
+      "target": 3,
+      "terminal_integer": "1820"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-832136863778923812710965685635967872042098361081427/10144175740568179028790664417176723510595582355545683",
+      "initial_n": "1947111321950560360698936123457536",
+      "lift_steps": 109,
+      "own_horizon": 86500,
+      "passed_prefix": 173,
+      "target": 3,
+      "terminal_integer": "14347467612885206812"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "16",
+      "lift_steps": 2,
+      "own_horizon": 73,
+      "passed_prefix": 2,
+      "target": 4,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "16",
+      "lift_steps": 2,
+      "own_horizon": 73,
+      "passed_prefix": 3,
+      "target": 4,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-17/81",
+      "initial_n": "64",
+      "lift_steps": 4,
+      "own_horizon": 199,
+      "passed_prefix": 6,
+      "target": 4,
+      "terminal_integer": "3"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-217/729",
+      "initial_n": "512",
+      "lift_steps": 7,
+      "own_horizon": 388,
+      "passed_prefix": 12,
+      "target": 4,
+      "terminal_integer": "11"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-622074769/3486784401",
+      "initial_n": "4194304",
+      "lift_steps": 20,
+      "own_horizon": 3196,
+      "passed_prefix": 33,
+      "target": 4,
+      "terminal_integer": "2731"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-240269792432408284145432315668117619388100004366971/1127130637840908780976740490797413723399509150616187",
+      "initial_n": "2596148429267413814265248164610048",
+      "lift_steps": 109,
+      "own_horizon": 83422,
+      "passed_prefix": 173,
+      "target": 4,
+      "terminal_integer": "12297829382473034411"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "28",
+      "lift_steps": 2,
+      "own_horizon": 73,
+      "passed_prefix": 2,
+      "target": 7,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "56",
+      "lift_steps": 3,
+      "own_horizon": 82,
+      "passed_prefix": 4,
+      "target": 7,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/81",
+      "initial_n": "112",
+      "lift_steps": 4,
+      "own_horizon": 163,
+      "passed_prefix": 6,
+      "target": 7,
+      "terminal_integer": "4"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-17/81",
+      "initial_n": "448",
+      "lift_steps": 6,
+      "own_horizon": 226,
+      "passed_prefix": 11,
+      "target": 7,
+      "terminal_integer": "8"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-710465/43046721",
+      "initial_n": "917504",
+      "lift_steps": 17,
+      "own_horizon": 2089,
+      "passed_prefix": 30,
+      "target": 7,
+      "terminal_integer": "968"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-2704398648530202645124057231503179234433402480074323/10144175740568179028790664417176723510595582355545683",
+      "initial_n": "4543259751217974174964184288067584",
+      "lift_steps": 109,
+      "own_horizon": 86527,
+      "passed_prefix": 173,
+      "target": 7,
+      "terminal_integer": "11462791584897704904"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "32",
+      "lift_steps": 2,
+      "own_horizon": 82,
+      "passed_prefix": 2,
+      "target": 8,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "32",
+      "lift_steps": 2,
+      "own_horizon": 82,
+      "passed_prefix": 3,
+      "target": 8,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-17/81",
+      "initial_n": "128",
+      "lift_steps": 4,
+      "own_horizon": 208,
+      "passed_prefix": 6,
+      "target": 8,
+      "terminal_integer": "3"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-217/729",
+      "initial_n": "512",
+      "lift_steps": 6,
+      "own_horizon": 388,
+      "passed_prefix": 11,
+      "target": 8,
+      "terminal_integer": "7"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-914117299/10460353203",
+      "initial_n": "16777216",
+      "lift_steps": 21,
+      "own_horizon": 3502,
+      "passed_prefix": 34,
+      "target": 8,
+      "terminal_integer": "4551"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-240269792432408284145432315668117619388100004366971/1127130637840908780976740490797413723399509150616187",
+      "initial_n": "2596148429267413814265248164610048",
+      "lift_steps": 108,
+      "own_horizon": 83422,
+      "passed_prefix": 172,
+      "target": 8,
+      "terminal_integer": "8198552921648689607"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "108",
+      "lift_steps": 2,
+      "own_horizon": 91,
+      "passed_prefix": 2,
+      "target": 27,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "216",
+      "lift_steps": 3,
+      "own_horizon": 100,
+      "passed_prefix": 4,
+      "target": 27,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/81",
+      "initial_n": "432",
+      "lift_steps": 4,
+      "own_horizon": 181,
+      "passed_prefix": 6,
+      "target": 27,
+      "terminal_integer": "4"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-395/2187",
+      "initial_n": "6912",
+      "lift_steps": 8,
+      "own_horizon": 514,
+      "passed_prefix": 13,
+      "target": 27,
+      "terminal_integer": "20"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-1692160691/10460353203",
+      "initial_n": "56623104",
+      "lift_steps": 21,
+      "own_horizon": 3520,
+      "passed_prefix": 34,
+      "target": 27,
+      "terminal_integer": "4180"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-8523164626857123561671363030936802904977493126732537/30432527221704537086371993251530170531786747066637049",
+      "initial_n": "35048003795110086492580850222235648",
+      "lift_steps": 110,
+      "own_horizon": 88120,
+      "passed_prefix": 174,
+      "target": 27,
+      "terminal_integer": "16878358993541705812"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "388",
+      "lift_steps": 2,
+      "own_horizon": 109,
+      "passed_prefix": 2,
+      "target": 97,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "776",
+      "lift_steps": 3,
+      "own_horizon": 118,
+      "passed_prefix": 4,
+      "target": 97,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/9",
+      "initial_n": "776",
+      "lift_steps": 3,
+      "own_horizon": 118,
+      "passed_prefix": 5,
+      "target": 97,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-1/9",
+      "initial_n": "776",
+      "lift_steps": 3,
+      "own_horizon": 118,
+      "passed_prefix": 8,
+      "target": 97,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-9629399065/31381059609",
+      "initial_n": "813694976",
+      "lift_steps": 23,
+      "own_horizon": 3880,
+      "passed_prefix": 36,
+      "target": 97,
+      "terminal_integer": "7778"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-433177901225349137185692224155837026200818631827313/3381391913522726342930221472392241170198527451848561",
+      "initial_n": "62956599409734784995932267991793664",
+      "lift_steps": 109,
+      "own_horizon": 84997,
+      "passed_prefix": 173,
+      "target": 97,
+      "terminal_integer": "13627328756989337186"
+    },
+    {
+      "extra_prefix": 0,
+      "initial_dual": "-1/9",
+      "initial_n": "3484",
+      "lift_steps": 2,
+      "own_horizon": 136,
+      "passed_prefix": 2,
+      "target": 871,
+      "terminal_integer": "1"
+    },
+    {
+      "extra_prefix": 1,
+      "initial_dual": "-1/9",
+      "initial_n": "6968",
+      "lift_steps": 3,
+      "own_horizon": 145,
+      "passed_prefix": 4,
+      "target": 871,
+      "terminal_integer": "2"
+    },
+    {
+      "extra_prefix": 2,
+      "initial_dual": "-1/81",
+      "initial_n": "13936",
+      "lift_steps": 4,
+      "own_horizon": 226,
+      "passed_prefix": 6,
+      "target": 871,
+      "terminal_integer": "4"
+    },
+    {
+      "extra_prefix": 5,
+      "initial_dual": "-17/81",
+      "initial_n": "55744",
+      "lift_steps": 6,
+      "own_horizon": 280,
+      "passed_prefix": 11,
+      "target": 871,
+      "terminal_integer": "8"
+    },
+    {
+      "extra_prefix": 13,
+      "initial_dual": "-268350427/1162261467",
+      "initial_n": "456654848",
+      "lift_steps": 19,
+      "own_horizon": 2971,
+      "passed_prefix": 32,
+      "target": 871,
+      "terminal_integer": "1704"
+    },
+    {
+      "extra_prefix": 64,
+      "initial_dual": "-2686841090769381037511673258498644869165923075595859/10144175740568179028790664417176723510595582355545683",
+      "initial_n": "565311320472979358056257787843837952",
+      "lift_steps": 109,
+      "own_horizon": 86590,
+      "passed_prefix": 173,
+      "target": 871,
+      "terminal_integer": "11489843285891204776"
+    }
+  ],
+  "note_sha256": "cd2edcd77dec25f0d67948a715faf1071cb4dd39c3c2fb003b58ed8cfcdad0b3",
+  "positive_resets": [
+    {
+      "a": 1,
+      "blocks": [
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 1,
+      "initial_halves": 0,
+      "r": 1,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 1,
+      "blocks": [
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 3,
+      "initial_halves": 0,
+      "r": 2,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 1,
+      "blocks": [
+        {
+          "exponent": 5,
+          "next_numerator": "41",
+          "numerator": "1",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "17",
+          "numerator": "41",
+          "steps": 2
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "13",
+          "numerator": "17",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "13",
+          "steps": 4
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 9,
+      "initial_halves": 0,
+      "r": 5,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 1,
+      "blocks": [
+        {
+          "exponent": 10,
+          "next_numerator": "4921",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "5741",
+          "numerator": "4921",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "991",
+          "numerator": "5741",
+          "steps": 3
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "215",
+          "numerator": "991",
+          "steps": 3
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "229",
+          "numerator": "215",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "155",
+          "numerator": "229",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "91",
+          "numerator": "155",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "25",
+          "numerator": "91",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "7",
+          "numerator": "25",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "7",
+          "steps": 3
+        }
+      ],
+      "compressed_clock": 19,
+      "initial_halves": 0,
+      "r": 10,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 1,
+      "blocks": [
+        {
+          "exponent": 20,
+          "next_numerator": "290565367",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 19,
+          "next_numerator": "10593529",
+          "numerator": "290565367",
+          "steps": 6
+        },
+        {
+          "exponent": 18,
+          "next_numerator": "34933423",
+          "numerator": "10593529",
+          "steps": 2
+        },
+        {
+          "exponent": 17,
+          "next_numerator": "4873759",
+          "numerator": "34933423",
+          "steps": 4
+        },
+        {
+          "exponent": 16,
+          "next_numerator": "9611333",
+          "numerator": "4873759",
+          "steps": 1
+        },
+        {
+          "exponent": 15,
+          "next_numerator": "7197151",
+          "numerator": "9611333",
+          "steps": 1
+        },
+        {
+          "exponent": 14,
+          "next_numerator": "4395737",
+          "numerator": "7197151",
+          "steps": 1
+        },
+        {
+          "exponent": 13,
+          "next_numerator": "2463589",
+          "numerator": "4395737",
+          "steps": 1
+        },
+        {
+          "exponent": 12,
+          "next_numerator": "82523",
+          "numerator": "2463589",
+          "steps": 5
+        },
+        {
+          "exponent": 11,
+          "next_numerator": "35393",
+          "numerator": "82523",
+          "steps": 2
+        },
+        {
+          "exponent": 10,
+          "next_numerator": "13769",
+          "numerator": "35393",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "10165",
+          "numerator": "13769",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "193",
+          "numerator": "10165",
+          "steps": 6
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "461",
+          "numerator": "193",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "11",
+          "numerator": "461",
+          "steps": 6
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "23",
+          "numerator": "11",
+          "steps": 2
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "25",
+          "numerator": "23",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "17",
+          "numerator": "25",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "5",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 48,
+      "initial_halves": 0,
+      "r": 20,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 2,
+      "blocks": [
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 1,
+      "initial_halves": 1,
+      "r": 1,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 2,
+      "blocks": [
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 3,
+      "initial_halves": 1,
+      "r": 2,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 2,
+      "blocks": [
+        {
+          "exponent": 5,
+          "next_numerator": "41",
+          "numerator": "1",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "17",
+          "numerator": "41",
+          "steps": 2
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "13",
+          "numerator": "17",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "13",
+          "steps": 4
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 9,
+      "initial_halves": 1,
+      "r": 5,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 2,
+      "blocks": [
+        {
+          "exponent": 10,
+          "next_numerator": "4921",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "5741",
+          "numerator": "4921",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "991",
+          "numerator": "5741",
+          "steps": 3
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "215",
+          "numerator": "991",
+          "steps": 3
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "229",
+          "numerator": "215",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "155",
+          "numerator": "229",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "91",
+          "numerator": "155",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "25",
+          "numerator": "91",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "7",
+          "numerator": "25",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "7",
+          "steps": 3
+        }
+      ],
+      "compressed_clock": 19,
+      "initial_halves": 1,
+      "r": 10,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 2,
+      "blocks": [
+        {
+          "exponent": 20,
+          "next_numerator": "290565367",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 19,
+          "next_numerator": "10593529",
+          "numerator": "290565367",
+          "steps": 6
+        },
+        {
+          "exponent": 18,
+          "next_numerator": "34933423",
+          "numerator": "10593529",
+          "steps": 2
+        },
+        {
+          "exponent": 17,
+          "next_numerator": "4873759",
+          "numerator": "34933423",
+          "steps": 4
+        },
+        {
+          "exponent": 16,
+          "next_numerator": "9611333",
+          "numerator": "4873759",
+          "steps": 1
+        },
+        {
+          "exponent": 15,
+          "next_numerator": "7197151",
+          "numerator": "9611333",
+          "steps": 1
+        },
+        {
+          "exponent": 14,
+          "next_numerator": "4395737",
+          "numerator": "7197151",
+          "steps": 1
+        },
+        {
+          "exponent": 13,
+          "next_numerator": "2463589",
+          "numerator": "4395737",
+          "steps": 1
+        },
+        {
+          "exponent": 12,
+          "next_numerator": "82523",
+          "numerator": "2463589",
+          "steps": 5
+        },
+        {
+          "exponent": 11,
+          "next_numerator": "35393",
+          "numerator": "82523",
+          "steps": 2
+        },
+        {
+          "exponent": 10,
+          "next_numerator": "13769",
+          "numerator": "35393",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "10165",
+          "numerator": "13769",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "193",
+          "numerator": "10165",
+          "steps": 6
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "461",
+          "numerator": "193",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "11",
+          "numerator": "461",
+          "steps": 6
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "23",
+          "numerator": "11",
+          "steps": 2
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "25",
+          "numerator": "23",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "17",
+          "numerator": "25",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "5",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 48,
+      "initial_halves": 1,
+      "r": 20,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 5,
+      "blocks": [
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 1,
+      "initial_halves": 0,
+      "r": 1,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 5,
+      "blocks": [
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "5",
+          "steps": 3
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 4,
+      "initial_halves": 0,
+      "r": 2,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 5,
+      "blocks": [
+        {
+          "exponent": 5,
+          "next_numerator": "43",
+          "numerator": "5",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "35",
+          "numerator": "43",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "11",
+          "numerator": "35",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "7",
+          "numerator": "11",
+          "steps": 1
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "7",
+          "steps": 3
+        }
+      ],
+      "compressed_clock": 8,
+      "initial_halves": 0,
+      "r": 5,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 5,
+      "blocks": [
+        {
+          "exponent": 10,
+          "next_numerator": "2461",
+          "numerator": "5",
+          "steps": 3
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "4511",
+          "numerator": "2461",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "3349",
+          "numerator": "4511",
+          "steps": 1
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "2039",
+          "numerator": "3349",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "1141",
+          "numerator": "2039",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "611",
+          "numerator": "1141",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "319",
+          "numerator": "611",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "41",
+          "numerator": "319",
+          "steps": 3
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "11",
+          "numerator": "41",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "11",
+          "steps": 2
+        }
+      ],
+      "compressed_clock": 16,
+      "initial_halves": 0,
+      "r": 10,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 5,
+      "blocks": [
+        {
+          "exponent": 20,
+          "next_numerator": "36320671",
+          "numerator": "5",
+          "steps": 5
+        },
+        {
+          "exponent": 19,
+          "next_numerator": "52967645",
+          "numerator": "36320671",
+          "steps": 3
+        },
+        {
+          "exponent": 18,
+          "next_numerator": "5690869",
+          "numerator": "52967645",
+          "steps": 5
+        },
+        {
+          "exponent": 17,
+          "next_numerator": "24368795",
+          "numerator": "5690869",
+          "steps": 1
+        },
+        {
+          "exponent": 16,
+          "next_numerator": "19358851",
+          "numerator": "24368795",
+          "steps": 1
+        },
+        {
+          "exponent": 15,
+          "next_numerator": "6035455",
+          "numerator": "19358851",
+          "steps": 2
+        },
+        {
+          "exponent": 14,
+          "next_numerator": "3814889",
+          "numerator": "6035455",
+          "steps": 1
+        },
+        {
+          "exponent": 13,
+          "next_numerator": "2173165",
+          "numerator": "3814889",
+          "steps": 1
+        },
+        {
+          "exponent": 12,
+          "next_numerator": "293789",
+          "numerator": "2173165",
+          "steps": 3
+        },
+        {
+          "exponent": 11,
+          "next_numerator": "176419",
+          "numerator": "293789",
+          "steps": 1
+        },
+        {
+          "exponent": 10,
+          "next_numerator": "98051",
+          "numerator": "176419",
+          "steps": 1
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "26153",
+          "numerator": "98051",
+          "steps": 2
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "7085",
+          "numerator": "26153",
+          "steps": 2
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "3907",
+          "numerator": "7085",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "2075",
+          "numerator": "3907",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "539",
+          "numerator": "2075",
+          "steps": 2
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "283",
+          "numerator": "539",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "73",
+          "numerator": "283",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "19",
+          "numerator": "73",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "5",
+          "numerator": "19",
+          "steps": 2
+        }
+      ],
+      "compressed_clock": 39,
+      "initial_halves": 0,
+      "r": 20,
+      "terminal_odd_integer": "5"
+    },
+    {
+      "a": 8,
+      "blocks": [
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 1,
+      "initial_halves": 3,
+      "r": 1,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 8,
+      "blocks": [
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 3,
+      "initial_halves": 3,
+      "r": 2,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 8,
+      "blocks": [
+        {
+          "exponent": 5,
+          "next_numerator": "41",
+          "numerator": "1",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "17",
+          "numerator": "41",
+          "steps": 2
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "13",
+          "numerator": "17",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "13",
+          "steps": 4
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 9,
+      "initial_halves": 3,
+      "r": 5,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 8,
+      "blocks": [
+        {
+          "exponent": 10,
+          "next_numerator": "4921",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "5741",
+          "numerator": "4921",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "991",
+          "numerator": "5741",
+          "steps": 3
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "215",
+          "numerator": "991",
+          "steps": 3
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "229",
+          "numerator": "215",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "155",
+          "numerator": "229",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "91",
+          "numerator": "155",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "25",
+          "numerator": "91",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "7",
+          "numerator": "25",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "7",
+          "steps": 3
+        }
+      ],
+      "compressed_clock": 19,
+      "initial_halves": 3,
+      "r": 10,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 8,
+      "blocks": [
+        {
+          "exponent": 20,
+          "next_numerator": "290565367",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 19,
+          "next_numerator": "10593529",
+          "numerator": "290565367",
+          "steps": 6
+        },
+        {
+          "exponent": 18,
+          "next_numerator": "34933423",
+          "numerator": "10593529",
+          "steps": 2
+        },
+        {
+          "exponent": 17,
+          "next_numerator": "4873759",
+          "numerator": "34933423",
+          "steps": 4
+        },
+        {
+          "exponent": 16,
+          "next_numerator": "9611333",
+          "numerator": "4873759",
+          "steps": 1
+        },
+        {
+          "exponent": 15,
+          "next_numerator": "7197151",
+          "numerator": "9611333",
+          "steps": 1
+        },
+        {
+          "exponent": 14,
+          "next_numerator": "4395737",
+          "numerator": "7197151",
+          "steps": 1
+        },
+        {
+          "exponent": 13,
+          "next_numerator": "2463589",
+          "numerator": "4395737",
+          "steps": 1
+        },
+        {
+          "exponent": 12,
+          "next_numerator": "82523",
+          "numerator": "2463589",
+          "steps": 5
+        },
+        {
+          "exponent": 11,
+          "next_numerator": "35393",
+          "numerator": "82523",
+          "steps": 2
+        },
+        {
+          "exponent": 10,
+          "next_numerator": "13769",
+          "numerator": "35393",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "10165",
+          "numerator": "13769",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "193",
+          "numerator": "10165",
+          "steps": 6
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "461",
+          "numerator": "193",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "11",
+          "numerator": "461",
+          "steps": 6
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "23",
+          "numerator": "11",
+          "steps": 2
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "25",
+          "numerator": "23",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "17",
+          "numerator": "25",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "5",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 48,
+      "initial_halves": 3,
+      "r": 20,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 17,
+      "blocks": [
+        {
+          "exponent": 1,
+          "next_numerator": "9",
+          "numerator": "17",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 1,
+      "initial_halves": 0,
+      "r": 1,
+      "terminal_odd_integer": "9"
+    },
+    {
+      "a": 17,
+      "blocks": [
+        {
+          "exponent": 2,
+          "next_numerator": "5",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 3,
+      "initial_halves": 0,
+      "r": 2,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 17,
+      "blocks": [
+        {
+          "exponent": 5,
+          "next_numerator": "49",
+          "numerator": "17",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "19",
+          "numerator": "49",
+          "steps": 2
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "7",
+          "numerator": "19",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "5",
+          "numerator": "7",
+          "steps": 1
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 7,
+      "initial_halves": 0,
+      "r": 5,
+      "terminal_odd_integer": "3"
+    },
+    {
+      "a": 17,
+      "blocks": [
+        {
+          "exponent": 10,
+          "next_numerator": "4925",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "5743",
+          "numerator": "4925",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "3965",
+          "numerator": "5743",
+          "steps": 1
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "2347",
+          "numerator": "3965",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "1295",
+          "numerator": "2347",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "43",
+          "numerator": "1295",
+          "steps": 5
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "35",
+          "numerator": "43",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "11",
+          "numerator": "35",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "7",
+          "numerator": "11",
+          "steps": 1
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "7",
+          "steps": 3
+        }
+      ],
+      "compressed_clock": 18,
+      "initial_halves": 0,
+      "r": 10,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 17,
+      "blocks": [
+        {
+          "exponent": 20,
+          "next_numerator": "290565371",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 19,
+          "next_numerator": "169496465",
+          "numerator": "290565371",
+          "steps": 2
+        },
+        {
+          "exponent": 18,
+          "next_numerator": "74659157",
+          "numerator": "169496465",
+          "steps": 2
+        },
+        {
+          "exponent": 17,
+          "next_numerator": "58852939",
+          "numerator": "74659157",
+          "steps": 1
+        },
+        {
+          "exponent": 16,
+          "next_numerator": "36600923",
+          "numerator": "58852939",
+          "steps": 1
+        },
+        {
+          "exponent": 15,
+          "next_numerator": "10345973",
+          "numerator": "36600923",
+          "steps": 2
+        },
+        {
+          "exponent": 14,
+          "next_numerator": "1492537",
+          "numerator": "10345973",
+          "steps": 3
+        },
+        {
+          "exponent": 13,
+          "next_numerator": "1011989",
+          "numerator": "1492537",
+          "steps": 1
+        },
+        {
+          "exponent": 12,
+          "next_numerator": "74321",
+          "numerator": "1011989",
+          "steps": 4
+        },
+        {
+          "exponent": 11,
+          "next_numerator": "66685",
+          "numerator": "74321",
+          "steps": 1
+        },
+        {
+          "exponent": 10,
+          "next_numerator": "2699",
+          "numerator": "66685",
+          "steps": 5
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "2315",
+          "numerator": "2699",
+          "steps": 2
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "2251",
+          "numerator": "2315",
+          "steps": 1
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "745",
+          "numerator": "2251",
+          "steps": 2
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "247",
+          "numerator": "745",
+          "steps": 2
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "41",
+          "numerator": "247",
+          "steps": 3
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "17",
+          "numerator": "41",
+          "steps": 2
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "13",
+          "numerator": "17",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "13",
+          "steps": 4
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 42,
+      "initial_halves": 0,
+      "r": 20,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 64,
+      "blocks": [
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 1,
+      "initial_halves": 6,
+      "r": 1,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 64,
+      "blocks": [
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 3,
+      "initial_halves": 6,
+      "r": 2,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 64,
+      "blocks": [
+        {
+          "exponent": 5,
+          "next_numerator": "41",
+          "numerator": "1",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "17",
+          "numerator": "41",
+          "steps": 2
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "13",
+          "numerator": "17",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "1",
+          "numerator": "13",
+          "steps": 4
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "1",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 9,
+      "initial_halves": 6,
+      "r": 5,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 64,
+      "blocks": [
+        {
+          "exponent": 10,
+          "next_numerator": "4921",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "5741",
+          "numerator": "4921",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "991",
+          "numerator": "5741",
+          "steps": 3
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "215",
+          "numerator": "991",
+          "steps": 3
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "229",
+          "numerator": "215",
+          "steps": 1
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "155",
+          "numerator": "229",
+          "steps": 1
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "91",
+          "numerator": "155",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "25",
+          "numerator": "91",
+          "steps": 2
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "7",
+          "numerator": "25",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "1",
+          "numerator": "7",
+          "steps": 3
+        }
+      ],
+      "compressed_clock": 19,
+      "initial_halves": 6,
+      "r": 10,
+      "terminal_odd_integer": "1"
+    },
+    {
+      "a": 64,
+      "blocks": [
+        {
+          "exponent": 20,
+          "next_numerator": "290565367",
+          "numerator": "1",
+          "steps": 2
+        },
+        {
+          "exponent": 19,
+          "next_numerator": "10593529",
+          "numerator": "290565367",
+          "steps": 6
+        },
+        {
+          "exponent": 18,
+          "next_numerator": "34933423",
+          "numerator": "10593529",
+          "steps": 2
+        },
+        {
+          "exponent": 17,
+          "next_numerator": "4873759",
+          "numerator": "34933423",
+          "steps": 4
+        },
+        {
+          "exponent": 16,
+          "next_numerator": "9611333",
+          "numerator": "4873759",
+          "steps": 1
+        },
+        {
+          "exponent": 15,
+          "next_numerator": "7197151",
+          "numerator": "9611333",
+          "steps": 1
+        },
+        {
+          "exponent": 14,
+          "next_numerator": "4395737",
+          "numerator": "7197151",
+          "steps": 1
+        },
+        {
+          "exponent": 13,
+          "next_numerator": "2463589",
+          "numerator": "4395737",
+          "steps": 1
+        },
+        {
+          "exponent": 12,
+          "next_numerator": "82523",
+          "numerator": "2463589",
+          "steps": 5
+        },
+        {
+          "exponent": 11,
+          "next_numerator": "35393",
+          "numerator": "82523",
+          "steps": 2
+        },
+        {
+          "exponent": 10,
+          "next_numerator": "13769",
+          "numerator": "35393",
+          "steps": 2
+        },
+        {
+          "exponent": 9,
+          "next_numerator": "10165",
+          "numerator": "13769",
+          "steps": 1
+        },
+        {
+          "exponent": 8,
+          "next_numerator": "193",
+          "numerator": "10165",
+          "steps": 6
+        },
+        {
+          "exponent": 7,
+          "next_numerator": "461",
+          "numerator": "193",
+          "steps": 1
+        },
+        {
+          "exponent": 6,
+          "next_numerator": "11",
+          "numerator": "461",
+          "steps": 6
+        },
+        {
+          "exponent": 5,
+          "next_numerator": "23",
+          "numerator": "11",
+          "steps": 2
+        },
+        {
+          "exponent": 4,
+          "next_numerator": "25",
+          "numerator": "23",
+          "steps": 1
+        },
+        {
+          "exponent": 3,
+          "next_numerator": "17",
+          "numerator": "25",
+          "steps": 1
+        },
+        {
+          "exponent": 2,
+          "next_numerator": "5",
+          "numerator": "17",
+          "steps": 2
+        },
+        {
+          "exponent": 1,
+          "next_numerator": "3",
+          "numerator": "5",
+          "steps": 1
+        }
+      ],
+      "compressed_clock": 48,
+      "initial_halves": 6,
+      "r": 20,
+      "terminal_odd_integer": "3"
+    }
+  ],
+  "schema": "collatz-carry-construction-controls/v1",
+  "scope": "Selected exact finite controls for symbolic scope results; no universal certificate search.",
+  "short_control": [
+    [
+      16,
+      "-1/9"
+    ],
+    [
+      8,
+      "1/3"
+    ],
+    [
+      4,
+      "1"
+    ],
+    [
+      2,
+      "2"
+    ]
+  ],
+  "true_duals": [
+    {
+      "dual": "2",
+      "even_count": 0,
+      "first_hit": 0,
+      "n": 1,
+      "numerator": "2",
+      "reduced_exponent": 0
+    },
+    {
+      "dual": "1",
+      "even_count": 1,
+      "first_hit": 1,
+      "n": 2,
+      "numerator": "1",
+      "reduced_exponent": 0
+    },
+    {
+      "dual": "-4/9",
+      "even_count": 3,
+      "first_hit": 5,
+      "n": 3,
+      "numerator": "-4",
+      "reduced_exponent": 2
+    },
+    {
+      "dual": "1/3",
+      "even_count": 2,
+      "first_hit": 2,
+      "n": 4,
+      "numerator": "1",
+      "reduced_exponent": 1
+    },
+    {
+      "dual": "-2/9",
+      "even_count": 3,
+      "first_hit": 4,
+      "n": 5,
+      "numerator": "-2",
+      "reduced_exponent": 2
+    },
+    {
+      "dual": "-2344/243",
+      "even_count": 6,
+      "first_hit": 11,
+      "n": 7,
+      "numerator": "-2344",
+      "reduced_exponent": 5
+    },
+    {
+      "dual": "-1/9",
+      "even_count": 3,
+      "first_hit": 3,
+      "n": 8,
+      "numerator": "-1",
+      "reduced_exponent": 2
+    },
+    {
+      "dual": "-11/27",
+      "even_count": 4,
+      "first_hit": 4,
+      "n": 16,
+      "numerator": "-11",
+      "reduced_exponent": 3
+    },
+    {
+      "dual": "-6378476857984674337772/22876792454961",
+      "even_count": 29,
+      "first_hit": 70,
+      "n": 27,
+      "numerator": "-6378476857984674337772",
+      "reduced_exponent": 28
+    },
+    {
+      "dual": "-204111264320640774230410/617673396283947",
+      "even_count": 32,
+      "first_hit": 75,
+      "n": 97,
+      "numerator": "-204111264320640774230410",
+      "reduced_exponent": 31
+    },
+    {
+      "dual": "-56105705760010964410255142325550024/26588814358957503287787",
+      "even_count": 48,
+      "first_hit": 113,
+      "n": 871,
+      "numerator": "-56105705760010964410255142325550024",
+      "reduced_exponent": 47
+    },
+    {
+      "dual": "-252677512582657298584618224896613346085895782455660/278128389443693511257285776231761",
+      "even_count": 69,
+      "first_hit": 165,
+      "n": 6171,
+      "numerator": "-252677512582657298584618224896613346085895782455660",
+      "reduced_exponent": 68
+    }
+  ]
+}

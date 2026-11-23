@@ -1,0 +1,82 @@
+{
+  "schema": "collatz-exact-candidate-inventory/v1",
+  "new_source_sha256": "d1696a47a85525a242dbe100d594dfec9487d1cc40d25090bdf119f49712d958",
+  "declarations": [
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.weight_mono"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.weight_covers_power"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.step_exponent_le"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.finite_early_hit"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicRigidity.cycleDefect"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.cycle_step_defect"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.finite_cycle_divisibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.cycle_defect_bound"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.int_zero_of_dvd_of_abs_lt"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.finite_paired_rigidity"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.initial_two_tests_budget"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.finite_triadic_exact_pair"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicRigidity.exactCycle"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.exactCycle_compatible"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.exactCycle_next"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.finite_certificate_alltime"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicRigidity.finite_certificate_iff_alltime"
+    }
+  ],
+  "definitions": 2,
+  "theorems": 15,
+  "main_theorems": [
+    "CollatzTriadicRigidity.finite_triadic_exact_pair",
+    "CollatzTriadicRigidity.finite_certificate_alltime",
+    "CollatzTriadicRigidity.finite_certificate_iff_alltime"
+  ],
+  "scope": "Computed finite own-height premise forces exact paired-cycle hit and all-time compatibility of the same candidate. No universal candidate constructed. The reduced denominator and logarithmic first-hit bound remain written."
+}

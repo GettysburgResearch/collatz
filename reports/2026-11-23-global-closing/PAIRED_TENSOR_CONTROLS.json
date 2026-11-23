@@ -1,0 +1,141 @@
+{
+  "checker_sha256": "e8ec79eff5496241266e60876e650f9f43176ecbe029eb1c25460f615370942f",
+  "generic_controls": [
+    {
+      "complementary_full_carry_sha256": "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986",
+      "complementary_full_denominator_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+      "complementary_odd_steps": 1,
+      "complementary_reduced_denominator_bits": 1,
+      "complementary_reduced_denominator_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+      "full_gcd_and_tensor_checks_passed": true,
+      "label": "integer core",
+      "literal_paired_steps_checked": 2,
+      "original_full_carry_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+      "original_full_denominator_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+      "original_is_integral": true,
+      "original_odd_steps": 1,
+      "original_reduced_denominator_bits": 1,
+      "shortcut_period": 2
+    },
+    {
+      "complementary_full_carry_sha256": "a8d5dd63fba471ebcb1f3e8f7c1e1879b7152a6e7298a91ce119a63400ade7c5",
+      "complementary_full_denominator_sha256": "ab61ba11a38b007ff98baa3ab20e2a584e15269fd428db3c857e2a2d568b5725",
+      "complementary_odd_steps": 3,
+      "complementary_reduced_denominator_bits": 8,
+      "complementary_reduced_denominator_sha256": "ab61ba11a38b007ff98baa3ab20e2a584e15269fd428db3c857e2a2d568b5725",
+      "full_gcd_and_tensor_checks_passed": true,
+      "label": "positive non-one-rise rational control",
+      "literal_paired_steps_checked": 8,
+      "original_full_carry_sha256": "b317dbeddf90f0f35bb88ea4ba4bd76b137568b277a355c9ed0615070d7ddbca",
+      "original_full_denominator_sha256": "9d1e0e2d9459d06523ad13e28a4093c2316baafe7aec5b25f30eba2e113599c4",
+      "original_is_integral": false,
+      "original_odd_steps": 5,
+      "original_reduced_denominator_bits": 4,
+      "shortcut_period": 8
+    }
+  ],
+  "high_controls": [
+    {
+      "both_new_linear_companion_bounds_passed": true,
+      "complementary_denominator_exceeds_3_power_excess_minus_1": true,
+      "complementary_full_carry_sha256": "f07a414aa33a73b73168213afb74b50d0cde4aa572eb362edfbd941aad5f9284",
+      "complementary_full_denominator_sha256": "9690d72044be9eada3c0adf84323fee56b0e53a4888cf723216e197545123fe3",
+      "complementary_odd_steps": 7,
+      "complementary_reduced_denominator_bits": 18,
+      "complementary_reduced_denominator_sha256": "9690d72044be9eada3c0adf84323fee56b0e53a4888cf723216e197545123fe3",
+      "excess_original_odd_over_even": 4,
+      "full_gcd_and_tensor_checks_passed": true,
+      "label": "high floor 1",
+      "literal_paired_steps_checked": 18,
+      "minimum": "175099/84997",
+      "minimum_open_interval": [
+        1,
+        4
+      ],
+      "original_full_carry_sha256": "da2095435da4112f49dc9d06517bf3781ac24fc2e44b0a41f554781074371ec7",
+      "original_full_denominator_sha256": "b1c385ba2ab42f4261fc8f92d4d2ee50d9a47688e898765f3a02676d36a1ad36",
+      "original_is_integral": false,
+      "original_odd_steps": 11,
+      "original_reduced_denominator_bits": 17,
+      "prescribed_floor": 1,
+      "shortcut_period": 18
+    },
+    {
+      "both_new_linear_companion_bounds_passed": true,
+      "complementary_denominator_exceeds_3_power_excess_minus_1": true,
+      "complementary_full_carry_sha256": "e5d64ffd6de851d23faab61bac524b2aff1d5213954022ec1e52c84a52a6771f",
+      "complementary_full_denominator_sha256": "b231bcddf89613e4bc9238a4b98e935444fc50108cda630ac6c8aaa71b7ee892",
+      "complementary_odd_steps": 10,
+      "complementary_reduced_denominator_bits": 27,
+      "complementary_reduced_denominator_sha256": "b231bcddf89613e4bc9238a4b98e935444fc50108cda630ac6c8aaa71b7ee892",
+      "excess_original_odd_over_even": 7,
+      "full_gcd_and_tensor_checks_passed": true,
+      "label": "high floor 10",
+      "literal_paired_steps_checked": 27,
+      "minimum": "129009091/5077565",
+      "minimum_open_interval": [
+        10,
+        40
+      ],
+      "original_full_carry_sha256": "c09effcbb6595b0cf2f909e1b3d13a9e38c025676bc8157bde7b32c4b52e3529",
+      "original_full_denominator_sha256": "9b39612dd380bd974c73a843b2dc59a18019306bfdd65715e89438f27b29caaa",
+      "original_is_integral": false,
+      "original_odd_steps": 17,
+      "original_reduced_denominator_bits": 23,
+      "prescribed_floor": 10,
+      "shortcut_period": 27
+    },
+    {
+      "both_new_linear_companion_bounds_passed": true,
+      "complementary_denominator_exceeds_3_power_excess_minus_1": true,
+      "complementary_full_carry_sha256": "3bb43af02e6a3668707fc85d08f8b2a7a66529542530621335c3180cdf62c771",
+      "complementary_full_denominator_sha256": "d0534854c373f41007ea35e1360f020309e7189507422a3a5e9c5ae0ceaefc66",
+      "complementary_odd_steps": 148,
+      "complementary_reduced_denominator_bits": 401,
+      "complementary_reduced_denominator_sha256": "d0534854c373f41007ea35e1360f020309e7189507422a3a5e9c5ae0ceaefc66",
+      "excess_original_odd_over_even": 105,
+      "full_gcd_and_tensor_checks_passed": true,
+      "label": "high floor 100",
+      "literal_paired_steps_checked": 401,
+      "minimum": "exact interval certified",
+      "minimum_open_interval": [
+        100,
+        400
+      ],
+      "original_full_carry_sha256": "611217184c059df63e4f116143e91c1f80043030b2c4ebda73db6796d655ecf6",
+      "original_full_denominator_sha256": "2a4658f969a71e7e70aa1e6fef9df63953f7d7db8b13e882f31d1d33bbc6e0a1",
+      "original_is_integral": false,
+      "original_odd_steps": 253,
+      "original_reduced_denominator_bits": 393,
+      "prescribed_floor": 100,
+      "shortcut_period": 401
+    },
+    {
+      "both_new_linear_companion_bounds_passed": true,
+      "complementary_denominator_exceeds_3_power_excess_minus_1": true,
+      "complementary_full_carry_sha256": "ad8d4b6b9e5aac2186338037282d8e4e4ebf365478a4cb9f6055191c2f865cb8",
+      "complementary_full_denominator_sha256": "035e8113e7910f204f810fecd3e368a4c336e59cea1b9a6240cd9bb5c1710ad3",
+      "complementary_odd_steps": 4847,
+      "complementary_reduced_denominator_bits": 13133,
+      "complementary_reduced_denominator_sha256": "035e8113e7910f204f810fecd3e368a4c336e59cea1b9a6240cd9bb5c1710ad3",
+      "excess_original_odd_over_even": 3439,
+      "full_gcd_and_tensor_checks_passed": true,
+      "label": "high floor 1000",
+      "literal_paired_steps_checked": 13133,
+      "minimum": "exact interval certified",
+      "minimum_open_interval": [
+        1000,
+        4000
+      ],
+      "original_full_carry_sha256": "6f61c738e22dadca3fbe74e30dd8b4f5a225333e4e19954ad1afc27c5babfbbd",
+      "original_full_denominator_sha256": "039c916d33800ec2ee8764b85c250044c27029d8206f0df634c32ba55878f6fc",
+      "original_is_integral": false,
+      "original_odd_steps": 8286,
+      "original_reduced_denominator_bits": 13123,
+      "prescribed_floor": 1000,
+      "shortcut_period": 13133
+    }
+  ],
+  "proof_sha256": "b828c5c0155c3baa3377c1d56f7c284602762b2dec149cff772bba8b1a42016e",
+  "scope": "Six exact finite paired-cycle controls, not integer-cycle exclusion or a cycle census."
+}

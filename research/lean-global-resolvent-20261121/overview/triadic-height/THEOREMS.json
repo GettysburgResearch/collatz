@@ -1,0 +1,114 @@
+{
+  "schema": "collatz-triadic-amortized-declarations/v1",
+  "new_source_sha256": "fe2411d3fe1d8063e9a788433fbf86f69f7a18c0f64b995521a7d7256746d759",
+  "definitions": 4,
+  "theorems": 22,
+  "declarations": [
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.weight"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.potential"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.initialBudget"
+    },
+    {
+      "kind": "def",
+      "name": "CollatzTriadicBudget.binaryBudget"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.weight_pos"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.weight_ge_one"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.potential_pos"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.potential_ge_x"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.denominator_numerator_bound"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.denominator_potential_quarter"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.step_contract_or_tie"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.step_nonincrease"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.step_nonincrease_allow_zero"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.two_step_contraction"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.zero_entry_bound"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.eight_step_half"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_nonzero_budget"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_odd_divisibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_zero_persistence"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_paired_horizon"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_candidate_reaches_one"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.initialBudget_pos"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.initialBudget_ge_n"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.initialBudget_ge_potential"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.binaryBudget_covers"
+    },
+    {
+      "kind": "theorem",
+      "name": "CollatzTriadicBudget.finite_triadic_height_certificate"
+    }
+  ],
+  "main_theorem": "CollatzTriadicBudget.finite_triadic_height_certificate",
+  "scope_note": "Fully explicit finite actual paired trajectory theorem; complete congruence-to-parity prefix bridge remains written; no universal candidate existence."
+}

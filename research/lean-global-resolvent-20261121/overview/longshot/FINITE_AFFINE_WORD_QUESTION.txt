@@ -1,0 +1,63 @@
+FINITE AFFINE-WORD QUESTION
+
+Status: open research target. A proof or a counterexample is requested.
+
+Let A and p be integers with A>=3, 1<=p<A, and D=2^A-3^p>0.
+For each increasing p-tuple
+
+    0<=d_0<d_1<...<d_(p-1)<A,
+
+define
+
+    C(d)=sum_(i=0)^(p-1) 2^(d_i) 3^(p-1-i).
+
+Let N_r(A,p) be the number of these tuples for which C(d) is congruent
+to r modulo the full integer D.
+
+PRIMARY QUESTION
+
+Prove that N_0(A,p)<A for every admissible pair (A,p).
+
+A stronger possible route is to prove max_r N_r(A,p)<A. This stronger
+statement is also unproved. A counterexample to the stronger statement
+would not by itself answer the primary question.
+
+EXACT OPERATOR FORM
+
+On Z/DZ let P0 and P1 be the permutation matrices induced by
+
+    x -> 2^(-1)x,             x -> 2^(-1)(3x+1).
+
+Both 2 and 3 are units modulo D. For the unnormalized matrices,
+
+    [z^p] trace((P0+z P1)^A)=D N_0(A,p).
+
+Thus the primary question is the coefficient bound <A D.
+
+KNOWN DIAGNOSTICS
+
+1. The restriction A>=3 matters: A=2,p=1,D=1 gives N_0=2.
+2. When A=2p, two alternating binary words lie in the zero fiber.
+3. At A=8,p=5,D=13, the maximum fiber is 7=A-1 and the zero fiber is empty.
+4. Fibers are not generally antichains in the coordinatewise order on
+   the d_i, even for residues coprime to D. For A=35,p=22,D=2978678759,
+   the two tuples
+
+   u=(0,2,3,4,5,8,9,10,11,12,14,16,17,20,22,23,24,25,26,30,31,32),
+   v=(1,2,5,6,10,11,12,14,15,16,17,18,19,20,22,24,25,26,29,31,32,34)
+
+   satisfy u_i<=v_i for every i and
+
+   C(u)=2209100811+44D,
+   C(v)=2209100811+233D,
+   gcd(2209100811,D)=1.
+
+5. Rotation of a word sends its residue r to 3^b r/2 when its first
+   bit is b. Both branches fix zero. Rotation balance alone therefore
+   does not bound N_0.
+
+The target concerns the exact zero residue at every full D. An estimate
+for most moduli, a proper divisor of D, or an exponentially large error
+does not establish it. Do not assume independent word digits after
+conditioning on their total count p. No application of this question
+is needed to attempt its proof.

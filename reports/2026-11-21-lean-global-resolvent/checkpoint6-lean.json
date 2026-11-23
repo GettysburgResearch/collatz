@@ -1,0 +1,274 @@
+{
+  "schema": "collatz-whole-repository-new-proofs/v1",
+  "scope": "Finite theorems and their exact imports; full Collatz remains open",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_sha256_before": {
+    "lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "lean/Collatz/TerminalCarry.lean": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+    "lean/Collatz/TerminalCarryClosure.lean": "e2118ccb89993f77338910f543247cb38b8606e848766426e11856b6491c72a6",
+    "section/lean/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "section/lean/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "section/lean/BandSteering.lean": "4e1083c63893308887325a461cdefc0b99731ead8e631421caa5fc939bcc830e",
+    "section/lean/Integer306.lean": "f28bcd087b55f6e770370cc9350da6f962ca8391a95b985b381448b74af37fb0",
+    "section/lean/FastForward.lean": "fb7057e03d8054f02bf6d1676142bb21f5a42215c9ecbdad35598f9c56d1a58c",
+    "overview/lean/InverseOddBudget.lean": "334b997b6fcea200d95cac3e26280d67e3e0b48a84d1d9ddb0d04267ec3244a3",
+    "overview/lean/AuditCoreOverview.lean": "b4940e112dfdcc8c769d57287dd41200a7c9078b1f698d53943422716d7e5908",
+    "overview/lean/AuditOverview.lean": "0a157f4903c1b4fc01ebe96e6ddbffde0a9bbb94776ec4e98c6e53b555179b4f"
+  },
+  "fresh_output_directory": "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final",
+  "verified_dependency_mirror_files": 8600,
+  "commands": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/Collatz/ReverseBasin146.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/ReverseBasin146.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 9.907,
+      "output": ""
+    },
+    {
+      "module": "Collatz.Closure",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/Collatz/Closure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/Closure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.602,
+      "output": ""
+    },
+    {
+      "module": "Collatz.TerminalCarry",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/Collatz/TerminalCarry.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarry.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.027,
+      "output": ""
+    },
+    {
+      "module": "Collatz.TerminalCarryClosure",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/Collatz/TerminalCarryClosure.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/lean/Collatz/TerminalCarryClosure.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.331,
+      "output": ""
+    },
+    {
+      "module": "ShellCover",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/ShellCover.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/ShellCover.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 20.636,
+      "output": ""
+    },
+    {
+      "module": "ForwardSection",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/ForwardSection.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/ForwardSection.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 9.485,
+      "output": "'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "BandSteering",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/BandSteering.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/BandSteering.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 6.077,
+      "output": "'CollatzShell.ForwardSection.Band.goodScale_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.steered_root_with_clock' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Band.steered_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "Integer306",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/Integer306.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/Integer306.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.363,
+      "output": "'CollatzBandCertificate.small_lower_306' does not depend on any axioms\n'CollatzBandCertificate.small_upper_306' does not depend on any axioms\n'CollatzBandCertificate.small_ratio_306' does not depend on any axioms\n'CollatzBandCertificate.integer_bracket_306' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "FastForward",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/FastForward.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/section/lean/FastForward.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 8.9,
+      "output": "'CollatzShell.ForwardSection.Fast.grid_drop_or_mark' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.bounded_visit_of_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.bounded_visit_of_separation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Fast.uniform_visit_at_good_scale' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Fast.orbit_growth' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.Fast.uniform_visit_with_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.lower_marked_partner' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.approximation_of_power_bracket' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Fast.good_scale_306' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.band_visit_up_to_two_pow_306' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    },
+    {
+      "module": "InverseOddBudget",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/InverseOddBudget.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/InverseOddBudget.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.698,
+      "output": "'CollatzInverseOddBudget.no_smaller_inverse_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.smaller_merger_odd_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.mersenne_merger_odd_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    {
+      "module": "AuditCoreOverview",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/AuditCoreOverview.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/AuditCoreOverview.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.354,
+      "output": "'CollatzTerminalCarry.program_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.program_clock_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.program_clock_lower' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarry.iterate_add' depends on axioms: [propext]\n'CollatzTerminalCarry.iterate_basin' does not depend on any axioms\n'CollatzTerminalCarry.program_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.uniform_integer_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.descent_iff_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.iterate_positive' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarry.basin_of_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.basin_power_two' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarry.basin_power_two_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.basin_of_zero_carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.signed_path_exists' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarry.signed_path_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.continued_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.continued_descent_iff_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.basin_of_continued_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.total_append_last' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarry.correction_append_last' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.carry_unit' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarry.terminal_of_complete_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.terminal_target_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.terminal_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.dyadicCarry_unit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.terminal_dyadic_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.terminal_dyadic_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.minus_one_psi_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.terminal_handoff_grade_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.three_gap_program' does not depend on any axioms\n'CollatzTerminalCarry.three_gap_mersenne' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.three_gap_expands' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.minus_one_path' does not depend on any axioms\n'CollatzTerminalCarry.three_gap_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.three_gap_horizon_expands' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.three_gap_no_descent_through_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarry.example_27' does not depend on any axioms\n'CollatzTerminalCarryClosure.counter_total' does not depend on any axioms\n'CollatzTerminalCarryClosure.counter_length' does not depend on any axioms\n'CollatzTerminalCarryClosure.counter_carry' does not depend on any axioms\n'CollatzTerminalCarryClosure.counter_program' does not depend on any axioms\n'CollatzTerminalCarryClosure.carry_prepend_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.program_prepend_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.padded_total' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarryClosure.padded_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.padded_clock_shortfall' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarryClosure.padded_gaps_at_most_four' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarryClosure.padded_handoff_grade_increases' depends on axioms: [propext, Quot.sound]\n'CollatzTerminalCarryClosure.concrete_terminal_identity' does not depend on any axioms\n'CollatzTerminalCarryClosure.concrete_source_positive' does not depend on any axioms\n'CollatzTerminalCarryClosure.concrete_positive_gaps' does not depend on any axioms\n'CollatzTerminalCarryClosure.follows_basin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.concrete_full_word' does not depend on any axioms\n'CollatzTerminalCarryClosure.concrete_source_basin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.deficit_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.deficit_certificate_handoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzTerminalCarryClosure.concrete_counterexample' does not depend on any axioms\n"
+    },
+    {
+      "module": "AuditOverview",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/AuditOverview.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/AuditOverview.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.671,
+      "output": "'CollatzInverseOddBudget.coeff_nil' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.coeff_cons' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.coeff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.run_diff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.peak_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.peak_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.step_mono' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.step_peak' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.run_peak_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.run_peak_short' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.run_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.run_peak_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.integralRun_last' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.integral_difference' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.virtual_integral' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.virtual_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.no_smaller_inverse_word' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.step_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.run_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.integral_trace' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.rising_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.smaller_merger_odd_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.lift_three' depends on axioms: [propext]\n'CollatzInverseOddBudget.mersenne_center_one' depends on axioms: [propext, Quot.sound]\n'CollatzInverseOddBudget.mersenne_positive' depends on axioms: [propext, Quot.sound]\n'CollatzInverseOddBudget.mersenne_ternary' depends on axioms: [propext, Quot.sound]\n'CollatzInverseOddBudget.mersenne_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.mersenne_merger_odd_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzInverseOddBudget.sharp_small_example' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBandCertificate.small_lower_306' does not depend on any axioms\n'CollatzBandCertificate.small_upper_306' does not depend on any axioms\n'CollatzBandCertificate.small_ratio_306' does not depend on any axioms\n'CollatzBandCertificate.integer_bracket_306' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.grid_drop_or_mark' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.bounded_visit_of_grid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.bounded_visit_of_separation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Fast.uniform_visit_at_good_scale' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Fast.orbit_growth' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForwardSection.Fast.uniform_visit_with_height' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.lower_marked_partner' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.approximation_of_power_bracket' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForwardSection.Fast.good_scale_306' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.Fast.band_visit_up_to_two_pow_306' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n"
+    }
+  ],
+  "success": true,
+  "recovered_attempts": [
+    {
+      "module": "InverseOddBudget",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/InverseOddBudget.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/InverseOddBudget.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 0.386,
+      "output": "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/InverseOddBudget.lean:1:0: error: object file '/tmp/collatz-180-fast/deps/Mathlib/Tactic/Positivity.olean' of module Mathlib.Tactic.Positivity does not exist\n"
+    },
+    {
+      "module": "AuditOverview",
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "-j1",
+        "--root=/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/06005805ecd5/overview_work/checkpoint6-final/AuditOverview.olean",
+        "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/AuditOverview.lean"
+      ],
+      "exit_code": 1,
+      "seconds": 0.681,
+      "output": "/workspace/scratch/06005805ecd5/collatz_lean_global/research/lean-global-resolvent-20261121/overview/lean/AuditOverview.lean:1:0: error: import Mathlib.Data.Nat.Notation failed, environment already contains 'term\u2115' from Collatz.ReverseBasin146\n"
+    }
+  ],
+  "recovery": "The optional dependency mirror lacked Positivity. Its exact pinned dependency closure was added in a separate mirror. Successful proof outputs were retained; no Lean source changed.",
+  "additional_verified_mirror_artifacts": [
+    "Mathlib/Tactic/Positivity.olean",
+    "Mathlib/Tactic/Positivity.olean.private",
+    "Mathlib/Tactic/Positivity.olean.server",
+    "Mathlib/Tactic/Positivity.ir",
+    "Mathlib/Tactic/Positivity.ir.sig",
+    "Mathlib/Tactic/Positivity/Finset.olean",
+    "Mathlib/Tactic/Positivity/Finset.olean.private",
+    "Mathlib/Tactic/Positivity/Finset.olean.server",
+    "Mathlib/Tactic/Positivity/Finset.ir",
+    "Mathlib/Tactic/Positivity/Finset.ir.sig"
+  ],
+  "audit_environment_note": "The core import defines its own natural-number notation. Core and Mathlib declarations are therefore audited in separate Lean environments; no theorem body changed.",
+  "superseded_audit_source_sha256": "48538dd106b5e804882ee375737ee2f0f902c520425e835871b96888624f09ed",
+  "source_sha256_after": {
+    "lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "lean/Collatz/Closure.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "lean/Collatz/TerminalCarry.lean": "8d568b3f7352944eec59203a0a41da0f46f20a4bf55f7296da92265b48852226",
+    "lean/Collatz/TerminalCarryClosure.lean": "e2118ccb89993f77338910f543247cb38b8606e848766426e11856b6491c72a6",
+    "section/lean/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "section/lean/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "section/lean/BandSteering.lean": "4e1083c63893308887325a461cdefc0b99731ead8e631421caa5fc939bcc830e",
+    "section/lean/Integer306.lean": "f28bcd087b55f6e770370cc9350da6f962ca8391a95b985b381448b74af37fb0",
+    "section/lean/FastForward.lean": "fb7057e03d8054f02bf6d1676142bb21f5a42215c9ecbdad35598f9c56d1a58c",
+    "overview/lean/InverseOddBudget.lean": "334b997b6fcea200d95cac3e26280d67e3e0b48a84d1d9ddb0d04267ec3244a3",
+    "overview/lean/AuditCoreOverview.lean": "b4940e112dfdcc8c769d57287dd41200a7c9078b1f698d53943422716d7e5908",
+    "overview/lean/AuditOverview.lean": "0a157f4903c1b4fc01ebe96e6ddbffde0a9bbb94776ec4e98c6e53b555179b4f"
+  },
+  "sources_unchanged": true,
+  "audited_theorems": 100,
+  "expected_audits": 100,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

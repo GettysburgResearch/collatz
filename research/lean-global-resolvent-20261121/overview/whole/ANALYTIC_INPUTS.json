@@ -1,0 +1,36 @@
+{
+  "file": "ORDINARY_LAST_CONTACT_MEASURE.md",
+  "sha256": "4e386ff4b6c09be474515a609e47ae8ad483f191fd3fb3cceacf1c90acc37819",
+  "status": "source-qualified written analytic deduction; not Lean formalized",
+  "frozen_inputs": {
+    "pr185": "276be8154f4e867acc0230466b34d9cb224aacf5",
+    "pr176": "8aeb843bba254f065743b6fa277a70906b51d520",
+    "pr175": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+    "pr180": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d"
+  },
+  "new_results": [
+    "Finite global ordinary last-contact source measure eta",
+    "Exact Green representation sum_j L^j eta = nu times the post-contact sector indicator",
+    "Total escaping-component capacity equals total eta mass and is bounded by A",
+    "Exact total-variation convergence of the contact endpoint law on each escaping spine",
+    "Deterministic native-clock source-tail bound and vanishing short-contact probabilities along a hypothetical escape",
+    "Source-wise transfer of the prior finite critical contact-front bound to the ordinary flow"
+  ],
+  "not_claimed": [
+    "Effective recognition of escaping components or last contacts",
+    "A quantitative lower contact-probability bound",
+    "Finite total ordinary occupation or an invariant probability on ordinary states",
+    "Exclusion of any cycle or escaping orbit",
+    "A full Collatz proof"
+  ],
+  "review_correction": "Retain prior finite-front O(log^-2) bound along escaping spines; qualitative p->0 alone is weaker.",
+  "source_name": "CANONICAL_LAST_CONTACT_MEASURE.md",
+  "review": "Root mathematical read plus independent arithmetic-agent reconstruction; source-qualified input boundary retained.",
+  "reviewed_mathematical_source_sha256": "1a79316d7416d5936d1db2446025af39508bd73885e86b1f13bc6207b36daba0",
+  "integration_edit": "Added the exact checkpoint 8 finite-front source paths to the provenance row; mathematical text unchanged.",
+  "first_contact_input_paths": [
+    "research/lean-global-resolvent-20261121/overview/parallel/OBSTACLE_ENTRANCE_RENEWAL.md",
+    "research/lean-global-resolvent-20261121/overview/parallel/CONTACT_CAPTURE_SYNTHESIS.md",
+    "research/lean-global-resolvent-20261121/overview/parallel/WORD_DENSITY_ENVELOPE.md"
+  ]
+}

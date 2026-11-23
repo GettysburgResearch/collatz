@@ -1,0 +1,40 @@
+{
+  "schema": "collatz-high-variance-focused-replay/v1",
+  "date": "2026-11-23",
+  "scope": "exact finite witness recovery, recorded arithmetic ranges, and file integrity; no universal cycle or escape theorem",
+  "executor": "primary agent; fresh replay of small verifiers only",
+  "large_enumerations": "executed once by the parallel cycle lane; retained outputs and source inspected, not repeated by the primary agent",
+  "success": true,
+  "commands": [
+    {
+      "command": "python -X utf8 -B research/lean-global-resolvent-20261121/overview/longshot/cycles/verify_witnesses.py --complete-fiber",
+      "workdir": ".",
+      "exit_code": 0,
+      "output": "Complete selected fiber recovered from 86,283 exact numerator candidates.\nVerified nine distinct unit-residue witnesses and the coordinatewise comparable pair.\n",
+      "wall_time_seconds": 0.279888987
+    },
+    {
+      "command": "python -X utf8 -B research/lean-global-resolvent-20261121/overview/longshot/cycles/validate_recorded_parameters.py",
+      "workdir": ".",
+      "exit_code": 0,
+      "output": "Validated slice A=46, p=29, d=39409, bound=15407792, 128-bit range.\nValidated slice A=65, p=41, d=551, bound=660519, 128-bit range.\nValidated slice A=149, p=94, d=343, bound=1151678, 128-bit range.\nValidated slice A=233, p=147, d=5, bound=33744, 128-bit range.\nValidated both full-word counts and their 64-bit numerator ranges.\n",
+      "wall_time_seconds": 2.5218e-05
+    },
+    {
+      "command": "sha256sum -c MANIFEST.sha256",
+      "workdir": "research/lean-global-resolvent-20261121/overview/longshot/cycles",
+      "exit_code": 0,
+      "output": "IDENTITY_ATOM_ATTEMPT.md: OK\nRUNS.md: OK\nfiber_8_5.py: OK\nfiber_8_5.txt: OK\nfull_32_20.txt: OK\nfull_35_22.txt: OK\nfull_fibers.cpp: OK\nmaxfiber_35_22.json: OK\nrational_slice.cpp: OK\nslice_149_94_343.txt: OK\nslice_233_147_5.txt: OK\nslice_46_29_39409.txt: OK\nslice_65_41_551.txt: OK\nvalidate_recorded_parameters.py: OK\nvalidate_recorded_parameters.txt: OK\nverify_witnesses.py: OK\nverify_witnesses.txt: OK\n",
+      "wall_time_seconds": 2.2995e-05
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_sha256": {
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/fiber_8_5.py": "26a06ab2a14d9106ae465e95df4e21c556db18c5d7efb6be55674772eaffc44c",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/full_fibers.cpp": "31cba2476afa99904574ac47af7c4db96b46b6101cb7b7fb4988eabd39e69425",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/maxfiber_35_22.json": "c962004a8c9c64bd9a43f6c2f3b49c2b6d3171ced8910a059d44242e27e34723",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/rational_slice.cpp": "fc97aab0795445b18c6415ae49601f0f7a9aa697065e0fd370094d8761d005b6",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/validate_recorded_parameters.py": "919e9016925b053f1ea1a1f685327cef0cf043773ffa3e7dc4f94d1a592769ea",
+    "research/lean-global-resolvent-20261121/overview/longshot/cycles/verify_witnesses.py": "e597ec2732d49d7b43c2a01717bf6430f6a3189811ede5885e8621229b6f6a88"
+  }
+}

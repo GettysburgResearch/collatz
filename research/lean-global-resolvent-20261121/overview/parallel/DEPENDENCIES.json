@@ -1,0 +1,112 @@
+{
+  "source_pr": 177,
+  "source_commit": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+  "dependency_modules": [
+    {
+      "module": "Collatz.ReverseBasin146",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ReverseBasin146.lean",
+      "sha256": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+      "local_path": "../../lean/Collatz/ReverseBasin146.lean"
+    },
+    {
+      "module": "Collatz.Closure",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/Closure.lean",
+      "sha256": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+      "local_path": "../../lean/Collatz/Closure.lean"
+    },
+    {
+      "module": "Collatz.Witness",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/Witness.lean",
+      "sha256": "5bdf16ad454994bfe07d8371f7939d0b1bc2673363a00269f088cb5349d6f0cc",
+      "local_path": "vendor/Collatz/Witness.lean"
+    },
+    {
+      "module": "Collatz.DirectedInduction",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/DirectedInduction.lean",
+      "sha256": "23c7f9dc940cc0fd209f6c793aff5403acec009e6c1be58def45055f4cf96170",
+      "local_path": "vendor/Collatz/DirectedInduction.lean"
+    },
+    {
+      "module": "Collatz.WitnessEnergy",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessEnergy.lean",
+      "sha256": "74269de751c6a0a4bdb981feb4d0ac11875e333c51b6d976c242ac7d206749fb",
+      "local_path": "vendor/Collatz/WitnessEnergy.lean"
+    },
+    {
+      "module": "Collatz.SourceWitness",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceWitness.lean",
+      "sha256": "686bb35426797c80bf816c3c36a805bbcdf2887370867aaed8a91a017f83c209",
+      "local_path": "vendor/Collatz/SourceWitness.lean"
+    },
+    {
+      "module": "Collatz.GapMultiset",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapMultiset.lean",
+      "sha256": "45a76cf399891cf91afafa8cda81eabef68fd33a9fe0665c45be047cdd39afbf",
+      "local_path": "vendor/Collatz/GapMultiset.lean"
+    },
+    {
+      "module": "Collatz.HighGapPump",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/HighGapPump.lean",
+      "sha256": "19c09facc27c7752fd93cd4f5414956d47017f7ab9ef9e5e372a30f0e4a17654",
+      "local_path": "vendor/Collatz/HighGapPump.lean"
+    },
+    {
+      "module": "Collatz.UnboundedGapReset",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/UnboundedGapReset.lean",
+      "sha256": "8c82b45894daf19ffb18480236a8d2ef20d3f53de83667dabab801ef1fc04e73",
+      "local_path": "vendor/Collatz/UnboundedGapReset.lean"
+    },
+    {
+      "module": "Collatz.LowGapLoops",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapLoops.lean",
+      "sha256": "5a3221ca4f05afc2b1823c245cc2d8120a447ea0654f32d9e91340d471d09531",
+      "local_path": "vendor/Collatz/LowGapLoops.lean"
+    },
+    {
+      "module": "Collatz.LowGapPump",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapPump.lean",
+      "sha256": "7528eeb72de368dc09ee935862ade9043ed6b88d5d50706d9204a4fd358aa6f2",
+      "local_path": "vendor/Collatz/LowGapPump.lean"
+    },
+    {
+      "module": "Collatz.GapComparison",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/GapComparison.lean",
+      "sha256": "b0eb0f1ca76bbd94be6001db1eab7f00dcf5eca90da81630b429e235758cf6ea",
+      "local_path": "vendor/Collatz/GapComparison.lean"
+    },
+    {
+      "module": "Collatz.BoundedGapCofinal",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BoundedGapCofinal.lean",
+      "sha256": "7024b36ba8f0a045a762b16c2278c08c2627238a6fb710bb0b7878c008f28fb6",
+      "local_path": "vendor/Collatz/BoundedGapCofinal.lean"
+    },
+    {
+      "module": "Collatz.LowIntervalRefinement",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowIntervalRefinement.lean",
+      "sha256": "699cea728e0b3339ec741df1caec2c215d5abd22c7b38ee71e12eb28a24a1b01",
+      "local_path": "vendor/Collatz/LowIntervalRefinement.lean"
+    }
+  ],
+  "core_imports": [
+    "Init.Data.Nat.Coprime"
+  ],
+  "new_module": "Collatz.SourceEnvelope",
+  "public_theorem_count": 25,
+  "build_order": [
+    "Collatz.ReverseBasin146",
+    "Collatz.Closure",
+    "Collatz.Witness",
+    "Collatz.DirectedInduction",
+    "Collatz.WitnessEnergy",
+    "Collatz.SourceWitness",
+    "Collatz.GapMultiset",
+    "Collatz.HighGapPump",
+    "Collatz.UnboundedGapReset",
+    "Collatz.LowGapLoops",
+    "Collatz.LowGapPump",
+    "Collatz.GapComparison",
+    "Collatz.BoundedGapCofinal",
+    "Collatz.LowIntervalRefinement",
+    "Collatz.SourceEnvelope"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "collatz-checkpoint17-cycle-execution/v1",
+  "started_utc": "2026-11-23T03:33:38.418130+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "normal_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "check_cycle_product_control.py"
+  ],
+  "normal_exit_code": 0,
+  "normal_output_file": "EXACT_CONTROLS.json",
+  "optimized_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "-O",
+    "/workspace/scratch/06005805ecd5/overview_work/checkpoint17_cycles/check_cycle_product_control.py"
+  ],
+  "optimized_exit_code": 0,
+  "optimized_seconds": 2.906649204000132,
+  "identical_output": true,
+  "output_sha256": "c3395191bf66c3d0a39daaf9232852f916ba538c84678213b3a66be24880b736",
+  "scope": "Finite exact controls for a written all-period rational Sidon theorem; not an integer-cycle exclusion or a large cycle census.",
+  "source_hashes": {
+    "CYCLE_PRODUCT_TRANSFER_ATTEMPT.md": "61e24999019cde59a10bed34ded33b2b4b7647b5d6d42ba28398b94e911d01a9",
+    "check_cycle_product_control.py": "66023c1ab8f014f3d85a445ad02fc110ded7922462981d468fb831e6fd6d562a",
+    "SOURCES.json": "9a9e032c1a646ff48c0a946d003f85917fca21923e8c1b8922948dd3beb5039b"
+  },
+  "small_controls": 62,
+  "damaged_inputs_rejected": [
+    "wrong full denominator",
+    "wrong complete carry",
+    "wrong word clock"
+  ],
+  "high_control_summary": [
+    {
+      "prescribed_floor": 1,
+      "odd_period": 11,
+      "shortcut_period": 18,
+      "denominator_bits": 17,
+      "valuation_ladder_states_checked": 11,
+      "integral": false
+    },
+    {
+      "prescribed_floor": 10,
+      "odd_period": 17,
+      "shortcut_period": 27,
+      "denominator_bits": 23,
+      "valuation_ladder_states_checked": 17,
+      "integral": false
+    },
+    {
+      "prescribed_floor": 100,
+      "odd_period": 253,
+      "shortcut_period": 401,
+      "denominator_bits": 393,
+      "valuation_ladder_states_checked": 253,
+      "integral": false
+    },
+    {
+      "prescribed_floor": 1000,
+      "odd_period": 8286,
+      "shortcut_period": 13133,
+      "denominator_bits": 13123,
+      "valuation_ladder_states_checked": 8286,
+      "integral": false
+    }
+  ],
+  "success": true,
+  "finished_utc": "2026-11-23T03:33:41.324965+00:00"
+}

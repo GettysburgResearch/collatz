@@ -1,0 +1,17 @@
+import Collatz.CertificateLanguage
+
+#check CollatzCertificateLanguage.endpoint_congruence
+#check CollatzCertificateLanguage.unbounded_repetition_fixed
+#check CollatzCertificateLanguage.pumping_erasure
+#check CollatzCertificateLanguage.short_representative
+#check CollatzCertificateLanguage.source_bound
+#check CollatzCertificateLanguage.powered_source_bound
+#check CollatzCertificateLanguage.not_cofinal_sources
+
+#print axioms CollatzCertificateLanguage.endpoint_congruence
+#print axioms CollatzCertificateLanguage.unbounded_repetition_fixed
+#print axioms CollatzCertificateLanguage.pumping_erasure
+#print axioms CollatzCertificateLanguage.short_representative
+#print axioms CollatzCertificateLanguage.source_bound
+#print axioms CollatzCertificateLanguage.powered_source_bound
+#print axioms CollatzCertificateLanguage.not_cofinal_sources
