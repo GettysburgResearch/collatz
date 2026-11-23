@@ -10,6 +10,22 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### Unconditional cycle boundaries and fixed-source arithmetic — 23 November 2026
+
+The [new continuation](risk26/README.md) applies the existing global
+injective-set count to all positive periodic points simultaneously,
+removing the predecessor-density premise from the grouped cycle-pole
+construction and providing a uniform tail by cycle minimum. Six new
+Std-only Lean theorems retain the full prefix gcd and the same original
+integer, deriving the carry identity from actual edges. The written
+source analysis computes the exact periodic-shadow height and local
+products; a separate algebraic-function argument proves whole-sequence
+transcendence for the autoconjugacy. Complete-cycle, critical-iid and
+triadic construction attacks retain their exact failed closing steps.
+The late PR177 and PR178 updates are compared at full frozen SHAs.
+**General positive-cycle exclusion, escape exclusion and universal
+successful witness construction remain open.**
+
 ### Integer residual growth and parallel source attacks — 23 November 2026
 
 The [new continuation](risk25/README.md) proves a power-law lower bound

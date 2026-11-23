@@ -1,0 +1,162 @@
+{
+  "schema": "collatz-risk26-checkpoint-manifest/v1",
+  "base_commit": "bfbe3fe1e4d4d63aec866dcd8fdf97fdd0e51e17",
+  "scope": "File identity, not a proof verdict; this manifest excludes itself. Exact-commit checkout gate is recorded externally in the publication body.",
+  "files": [
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/AGENT_ALGEBRAIC_SECTION_REVIEW.md",
+      "sha256": "89747ee7a1901e60b9285e7f95b4fcfb5da6fadfc1c74ea8a565894907c207c9",
+      "bytes": 7884
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/AGENT_CYCLE_BOUNDARY_REVIEW.md",
+      "sha256": "b550ed87c4f107664bfeb2062c319fb9d3c335029a806a7da8b99331db27608a",
+      "bytes": 6752
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/AGENT_FIXED_SOURCE_REVIEW.md",
+      "sha256": "46884429ca854218db205313469ab7b9647d92f5645c811d02ccfbe2af9c563f",
+      "bytes": 6235
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/LATE_PR177_COMPARISON.md",
+      "sha256": "0c8c9ab381e472377e7788590873477936c10e739914b4355bc0715a29a70eac",
+      "bytes": 11728
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/LATE_PR178_COMPARISON.md",
+      "sha256": "145438d3e59b6ddfe653e955a19c16684fa4a6caef2d4b3c160136296634dd04",
+      "bytes": 8155
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/README.md",
+      "sha256": "035af5e2a7f09d96487fab717d49f586745fb08ca04ecf352786cc324b996242",
+      "bytes": 5118
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/ROOT_ALGEBRAIC_SECTION_REVIEW.md",
+      "sha256": "94a67c0a8978aed9015cf17b33bf4bb05c3e7a3aa7ea84924062810a0f58d647",
+      "bytes": 4165
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/ROOT_CYCLE_FIBER_REVIEW.md",
+      "sha256": "c4f0c7d5bcc41ccaf5797e61e457672fba208272086945165d89a1e9ca43e850",
+      "bytes": 5437
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/ROOT_ENDPOINT_MACHINERY_REVIEW.md",
+      "sha256": "3bd59beb697687cdf2963e458c9c3ce9fd200db0600d2038c2075ec73704a0fe",
+      "bytes": 4763
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/ROOT_GLUING_REVIEW.md",
+      "sha256": "61bdd5238399aeb261e288504450d1d130da076c00d029faf510a84a1cec2bc9",
+      "bytes": 3208
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/ROOT_OPERATOR_IMPORT_REVIEW.md",
+      "sha256": "18a97ba931519c5770cf93be47c5288440d26a771b8882e1406f33f5b5278d74",
+      "bytes": 3766
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/cycle-root-execution.json",
+      "sha256": "e18d9750c11f4cebf4bc29d338633eb25aca55ddf5b39f6dab81aac2195f9dd3",
+      "bytes": 2188
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/endpoint-root-execution.json",
+      "sha256": "81177a5b3d7562921963e508888310cfd0c3b1232746a66e92a0e399dd5a393f",
+      "bytes": 883
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/lean-root-execution.json",
+      "sha256": "5e843d60d67c107256d0f834cf2b5508acffa7d3312d74a718a60efe9a2f9e17",
+      "bytes": 2299
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/previous-pr175-body.md",
+      "sha256": "48b7bff32b6057786fa033aef96667db16015562b02b6bb6a002fcf642c1d23d",
+      "bytes": 12983
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/source-bindings.json",
+      "sha256": "5e286a29cab05885373a8a9dca0c12ce6c7411e9e2e97d49917454f47b955d7e",
+      "bytes": 16609
+    },
+    {
+      "path": "reports/lean-global-closure-20261121/nov23/risk26/source-refresh.json",
+      "sha256": "07195ea55d5d199e9bca2f057433ac3f65eb953cc63b529ee4cf851e444736ab",
+      "bytes": 56238
+    },
+    {
+      "path": "research/lean-global-closure-20261121/README.md",
+      "sha256": "92de3b780aedd599fa1aa27c0ff0b4b64526dd00a0c1b02ec084d2857a4025e5",
+      "bytes": 23083
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/README.md",
+      "sha256": "3d8164e25d4199827ee2daf5a6740fea8fc4ada98a5c9b0a12a99e81500c5622",
+      "bytes": 11540
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/cycles/FULL_FIBER_INTEGER_NUMERATOR_ATTACK.md",
+      "sha256": "4098ccd0481ce93fcef5c6e4fb4fcc37408495eb45102589b501db06d5047a9d",
+      "bytes": 18037
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/cycles/POSITIVE_GAP_FULL_FIBER.md",
+      "sha256": "6a6cbaba0e0c55b035dfb152934e7c21baedd34001c4d08bfca36cccc57a8736",
+      "bytes": 10742
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/cycles/check_positive_numerator_models.py",
+      "sha256": "48c968f3a978c5047137a0b79f49b1796047659d82641e41b0b92c95e96d59b6",
+      "bytes": 4144
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/endpoint/FIXED_SOURCE_PREFIX_SHADOWS.md",
+      "sha256": "b81ea465055a95621afa5b0221facab52400fcc660a1a70308849d0a00aa0e5a",
+      "bytes": 10350
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/endpoint/FixedSourcePrefixGcd.lean",
+      "sha256": "c7865b8483ab131a3c0387927ccd1b08a947bdf45ab2653094015725422005e6",
+      "bytes": 3807
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/endpoint/REPETITION_ENTROPY_BOUNDARY.md",
+      "sha256": "1ab94394f4a06a5fb1dc919c8194d4536d7c4a0f9127b605021cecdac7c5100e",
+      "bytes": 11322
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/endpoint/SIEVE_AND_SUBSPACE_SOURCE_PRODUCT.md",
+      "sha256": "06a47e76581557a3e1ecdb7ef92a27f4153a2688c0ff5e46e84ee4bf3ead8fd9",
+      "bytes": 12380
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/endpoint/check_endpoint_machinery.py",
+      "sha256": "3e0998280a4b03bea126994ae0275d4d3338eea04ea1f50df7cd1d8d033bea39",
+      "bytes": 5896
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/endpoint/check_fixed_source_lean.py",
+      "sha256": "9a3382b09acc5f0841af00176abf4f9312f016913f640a149208e51e761ac6d3",
+      "bytes": 3793
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/root/UNCONDITIONAL_CYCLE_BOUNDARY.md",
+      "sha256": "8e9c1d89a7cb797b9a880c35e1f9dddcc7ad0e670ff51bd3ee49fbddbafa35cd",
+      "bytes": 9766
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/triadic/ALGEBRAIC_SECTION_RIGIDITY.md",
+      "sha256": "aba3681326833e8a4e035affbb5e8e016615ec294b6a70932b83546fccbbf1e8",
+      "bytes": 13412
+    },
+    {
+      "path": "research/lean-global-closure-20261121/risk26/triadic/FIXED_SOURCE_GLUING_BOUNDARY.md",
+      "sha256": "8e50804b4cec6c3141d7eb956be2cbdd9473f0c86461984f962d41caa0619204",
+      "bytes": 9437
+    }
+  ]
+}

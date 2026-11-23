@@ -1,0 +1,48 @@
+{
+  "axioms": {
+    "FixedSourcePrefixGcd.affine_gcd_dvd_displacement": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedSourcePrefixGcd.affine_gcd_exact": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedSourcePrefixGcd.all_prefix_gcd_le_displacement": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedSourcePrefixGcd.collatz_prefix_gcd_exact": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedSourcePrefixGcd.collatz_prefix_gcd_le_displacement": [
+      "Quot.sound",
+      "propext"
+    ],
+    "FixedSourcePrefixGcd.prefix_affine_from_edges": [
+      "propext"
+    ]
+  },
+  "checker_sha256": "9a3382b09acc5f0841af00176abf4f9312f016913f640a149208e51e761ac6d3",
+  "command": [
+    "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+    "-DwarningAsError=true",
+    "-o",
+    "/tmp/collatz-prefix-gcd-ov33n575/FixedSourcePrefixGcd.olean",
+    "/workspace/scratch/957bb0caa6f2/risk26/endpoint/FixedSourcePrefixGcd.lean"
+  ],
+  "compiler": "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+  "compiler_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "compiler_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "fresh_olean_emitted": true,
+  "mathlib_used": false,
+  "olean_sha256": "c922d777d99028aff93da920cdfdb2d5e488a7a69d0d8b3b7b07e237aa88c386",
+  "returncode": 0,
+  "scope": "six finite arithmetic theorems; no asymptotic or Collatz closure theorem",
+  "source": "/workspace/scratch/957bb0caa6f2/risk26/endpoint/FixedSourcePrefixGcd.lean",
+  "source_sha256": "c7865b8483ab131a3c0387927ccd1b08a947bdf45ab2653094015725422005e6",
+  "status": "PASS",
+  "stderr": "",
+  "stdout": "'FixedSourcePrefixGcd.affine_gcd_exact' depends on axioms: [propext, Quot.sound]\n'FixedSourcePrefixGcd.affine_gcd_dvd_displacement' depends on axioms: [propext, Quot.sound]\n'FixedSourcePrefixGcd.collatz_prefix_gcd_exact' depends on axioms: [propext, Quot.sound]\n'FixedSourcePrefixGcd.collatz_prefix_gcd_le_displacement' depends on axioms: [propext, Quot.sound]\n'FixedSourcePrefixGcd.prefix_affine_from_edges' depends on axioms: [propext]\n'FixedSourcePrefixGcd.all_prefix_gcd_le_displacement' depends on axioms: [propext, Quot.sound]\n"
+}

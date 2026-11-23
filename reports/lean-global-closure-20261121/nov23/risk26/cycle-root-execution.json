@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-X",
+    "utf8",
+    "-B",
+    "/workspace/scratch/957bb0caa6f2/collatz-risk23/research/lean-global-closure-20261121/risk26/cycles/check_positive_numerator_models.py"
+  ],
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "returncode": 0,
+  "scope": "Fresh root execution of new exact finite controls only",
+  "source": "/workspace/scratch/957bb0caa6f2/collatz-risk23/research/lean-global-closure-20261121/risk26/cycles/check_positive_numerator_models.py",
+  "source_sha256": "48c968f3a978c5047137a0b79f49b1796047659d82641e41b0b92c95e96d59b6",
+  "stderr": "",
+  "stdout": "{\n  \"scope\": \"new exact positive-numerator polynomial models only\",\n  \"models\": [\n    {\n      \"A\": 401,\n      \"d\": 253,\n      \"m\": 1351,\n      \"D_bits\": 393,\n      \"floor_log2_D_over_M\": 234,\n      \"adjacent_root_certificates\": 252,\n      \"full_numerical_gcd\": \"D\",\n      \"first_six_carry_exponents\": [\n        0,\n        1,\n        2,\n        4,\n        5,\n        5\n      ],\n      \"status\": \"PASS: polynomial model; NOT a positive-gap Collatz word\"\n    },\n    {\n      \"A\": 485,\n      \"d\": 306,\n      \"m\": 4039,\n      \"D_bits\": 476,\n      \"floor_log2_D_over_M\": 284,\n      \"adjacent_root_certificates\": 305,\n      \"full_numerical_gcd\": \"D\",\n      \"first_six_carry_exponents\": [\n        0,\n        1,\n        2,\n        4,\n        5,\n        5\n      ],\n      \"status\": \"PASS: polynomial model; NOT a positive-gap Collatz word\"\n    },\n    {\n      \"A\": 886,\n      \"d\": 559,\n      \"m\": 967,\n      \"D_bits\": 879,\n      \"floor_log2_D_over_M\": 541,\n      \"adjacent_root_certificates\": 558,\n      \"full_numerical_gcd\": \"D\",\n      \"first_six_carry_exponents\": [\n        0,\n        1,\n        2,\n        4,\n        5,\n        5\n      ],\n      \"status\": \"PASS: polynomial model; NOT a positive-gap Collatz word\"\n    }\n  ],\n  \"total_adjacent_root_certificates\": 1115,\n  \"assert_statements_used\": false,\n  \"cycle_search_or_old_control_replay\": false\n}\n"
+}
