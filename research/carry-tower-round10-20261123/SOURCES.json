@@ -1,0 +1,54 @@
+{
+  "schema": "collatz-round10-sources/v1",
+  "published_parent": "c369ae3c426ec6aaf9a280ec9578b9910c2147d5",
+  "repository_inputs": [
+    {
+      "pr": 182,
+      "commit": "c369ae3c426ec6aaf9a280ec9578b9910c2147d5",
+      "path": "research/repo-synthesis-round8-20261123/GERM_BRIDGE.md",
+      "claims": "R8-G1--G4; actual real scalar and criterion",
+      "blob": "540110f09cf68e3309fd83fea9c7ae497536ded4"
+    },
+    {
+      "pr": 182,
+      "commit": "c369ae3c426ec6aaf9a280ec9578b9910c2147d5",
+      "path": "research/scalar-rigidity-round9-20261123/CARRY_RETURN.md",
+      "claims": "R9-C1--C4; full actual paid return, zero-carry length and least-source gate",
+      "blob": "0b0d2ff63339522689f9984aad1bae3ab63d9e08"
+    },
+    {
+      "pr": 182,
+      "commit": "c369ae3c426ec6aaf9a280ec9578b9910c2147d5",
+      "path": "research/scalar-rigidity-round9-20261123/PHASE_RIGIDITY.md",
+      "claims": "R9-P1--P5; complete rational tripling phases and sharp 1456 family",
+      "blob": "0fe27307dd075284bc03ac93ce9c40925b45f2bc"
+    },
+    {
+      "pr": 182,
+      "commit": "c369ae3c426ec6aaf9a280ec9578b9910c2147d5",
+      "path": "research/scalar-rigidity-round9-20261123/ARITHMETIC_RIGIDITY.md",
+      "claims": "R9-A1--A3; complete cylinder realization, actual tail and symbolic block scripts",
+      "blob": "2c872eb9818be062e9444fde91555ba4e1e7230f"
+    }
+  ],
+  "literature": [
+    {
+      "authors": "Kurt Mahler",
+      "title": "An unsolved problem on the powers of 3/2",
+      "year": 1968,
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6416420BFE33A5DDC3DAB6EA358C2B0B/S1446788700005371a.pdf/div-class-title-an-unsolved-problem-on-the-powers-of-3-2-a-href-fn01-ref-type-fn-a-div.pdf",
+      "inspected": "Sections 2--3, equations (7)--(10), and Section 6, by the arithmetic author and root",
+      "use": "Separate real and 2-adic values and necessary versus sufficient infinite criteria; no Z-number or Mahler transcendence theorem imported"
+    },
+    {
+      "authors": "Shalom Eliahou and Jean-Louis Verger-Gaugry",
+      "title": "The number system in rational base 3/2 and the 3x+1 problem",
+      "year": 2025,
+      "version": "arXiv:2504.13716v1, 18 April 2025",
+      "url": "https://arxiv.org/html/2504.13716v1",
+      "inspected": "Proposition 3.1, Corollary 3.2, and Section 4 by the arithmetic author and root",
+      "use": "Primary rational-base context; no identification of redundant scalar carries with normalized digits or import of a global periodicity theorem"
+    }
+  ],
+  "claim_status": "actual scalar and convergence criterion formally proved; other complete arguments written with finite Lean cores; universal triadic arithmetic and Collatz remain open"
+}
