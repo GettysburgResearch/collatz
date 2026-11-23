@@ -1,0 +1,813 @@
+{
+  "germ_bridge": {
+    "additional_polynomial_cases": 1967,
+    "candidate_decisions": 1812,
+    "checks_by_category": {
+      "actual integer-stage three-quarter contraction": 12,
+      "actual scalar recurrence": 2715,
+      "actual stopping time within scalar denominator budget": 140,
+      "candidate decision respects finite budget": 1812,
+      "complete actual positive-source clock bound": 2855,
+      "exact scalar denominator clock": 2855,
+      "exact three-step binary contraction": 1,
+      "explicit integral scalar source family": 11,
+      "finite candidate decision agrees with independent exact scalar": 1812,
+      "finite real enclosure lower": 2855,
+      "finite real enclosure upper": 2855,
+      "independent actual center-one derivative identity": 140,
+      "literal actual odd transition": 2715,
+      "literal polynomial contraction for positive integer candidate": 1967,
+      "nonterminal integer-stage positive potential": 12,
+      "nonterminal integral scalar guard": 12,
+      "same-source exact discounted tail identity": 2855,
+      "unconditional exact bitlength upper": 2855,
+      "unconditional scalar lower": 2855
+    },
+    "exact_checks": 31334,
+    "fixtures": [
+      {
+        "actual_odd_steps_to_one": 0,
+        "candidate_budget": 3,
+        "h": "1",
+        "reduced_ternary_exponent": 0,
+        "source": 1
+      },
+      {
+        "actual_odd_steps_to_one": 2,
+        "candidate_budget": 14,
+        "h": "8/9",
+        "reduced_ternary_exponent": 2,
+        "source": 3
+      },
+      {
+        "actual_odd_steps_to_one": 1,
+        "candidate_budget": 13,
+        "h": "5/3",
+        "reduced_ternary_exponent": 1,
+        "source": 5
+      },
+      {
+        "actual_odd_steps_to_one": 5,
+        "candidate_budget": 29,
+        "h": "140/243",
+        "reduced_ternary_exponent": 5,
+        "source": 7
+      },
+      {
+        "actual_odd_steps_to_one": 41,
+        "candidate_budget": 179,
+        "h": "22311930608650515881/36472996377170786403",
+        "reduced_ternary_exponent": 41,
+        "source": 27
+      },
+      {
+        "actual_odd_steps_to_one": 1,
+        "candidate_budget": 21,
+        "h": "3",
+        "reduced_ternary_exponent": 0,
+        "source": 85
+      },
+      {
+        "actual_odd_steps_to_one": 1,
+        "candidate_budget": 39,
+        "h": "5",
+        "reduced_ternary_exponent": 0,
+        "source": 5461
+      },
+      {
+        "actual_odd_steps_to_one": 195,
+        "candidate_budget": 840,
+        "h": "591568362239924845777154762428256725213208813889587101483511511192176259784591039563578107940/1093061682616768598101980749118434678309602685816438255039403134728775682721408160470718926107",
+        "reduced_ternary_exponent": 195,
+        "source": 837799
+      }
+    ],
+    "literal_odd_steps": 2715,
+    "maximum_candidate_transitions": 195,
+    "scope": "exact finite controls on explicitly convergent ordinary sources and supplied candidates",
+    "sources": 140,
+    "status": "PASS",
+    "unproved": "triadic rationality of the actual center-one derivative for every fixed ordinary source"
+  },
+  "pressure": {
+    "checks_by_category": {
+      "all claimed two-power phases contract": 22,
+      "all odd sources through 31 explicitly reach one": 16,
+      "complete finite-table minimum mean": 7,
+      "complete finite-table tripling orbit count": 7,
+      "complete ordinary finite-floor transition": 131,
+      "complete periodic charge telescoping": 156,
+      "complete two-power phase mean formula": 13,
+      "complete two-power residue coset": 18,
+      "every ordinary residue fiber retained": 306,
+      "every reduced numerator in finite table covered": 7,
+      "every tested high odd-prime-power phase contracts": 60,
+      "exact finite pressure clock upper bound": 7,
+      "exact finite-floor contraction for every listed phase": 22,
+      "exact logarithmic rational comparisons": 1,
+      "exact negative-cycle scalar phases": 1,
+      "exact odd-prime-power fiber mean identity": 60,
+      "exact order for every two-power coset": 20,
+      "exact rational block-factor exponent": 156,
+      "exact worst two-power block factor": 1,
+      "exceptional eleven-square low phase retained": 1,
+      "explicit doubled negative-one lift": 18,
+      "explicit prime-power negative-one lift": 18,
+      "explicit quadrupled seven-power lift": 6,
+      "first six exact pressure clock floors": 1,
+      "forty-term exact pressure decimal enclosure": 1,
+      "full reduction onto one base orbit": 60,
+      "half of each two-power coset below one half": 18,
+      "half-period translation preserves complete coset": 18,
+      "integer canonical phase charges": 29232,
+      "literal negative denominator-eight cycle": 1,
+      "odd-prime-power binomial order formula": 12,
+      "positive ordinary finite-floor domain": 131,
+      "pressure ceiling does not exclude five eighths": 1,
+      "strict minimum-lift endpoints": 29232,
+      "strict odd-prime-power phase lower mean": 60,
+      "unconditional seven-eighths phase threshold": 1,
+      "unresolved denominator-eight phase retained": 1,
+      "verified-floor four-fifths phase threshold": 1
+    },
+    "exact_checks": 59824,
+    "excluded_finite_denominators": [
+      {
+        "denominator": 11,
+        "minimum_mean": "4/5",
+        "orbits": 2
+      },
+      {
+        "denominator": 26,
+        "minimum_mean": "5/6",
+        "orbits": 4
+      },
+      {
+        "denominator": 35,
+        "minimum_mean": "5/6",
+        "orbits": 2
+      },
+      {
+        "denominator": 46,
+        "minimum_mean": "19/22",
+        "orbits": 2
+      },
+      {
+        "denominator": 52,
+        "minimum_mean": "5/6",
+        "orbits": 4
+      },
+      {
+        "denominator": 85,
+        "minimum_mean": "13/16",
+        "orbits": 4
+      },
+      {
+        "denominator": 109,
+        "minimum_mean": "23/27",
+        "orbits": 4
+      }
+    ],
+    "finite_floor_certificates": [
+      {
+        "binary_clock": 0,
+        "maximum_odd_state": 1,
+        "odd_steps": 0,
+        "source": 1
+      },
+      {
+        "binary_clock": 5,
+        "maximum_odd_state": 5,
+        "odd_steps": 2,
+        "source": 3
+      },
+      {
+        "binary_clock": 4,
+        "maximum_odd_state": 5,
+        "odd_steps": 1,
+        "source": 5
+      },
+      {
+        "binary_clock": 11,
+        "maximum_odd_state": 17,
+        "odd_steps": 5,
+        "source": 7
+      },
+      {
+        "binary_clock": 13,
+        "maximum_odd_state": 17,
+        "odd_steps": 6,
+        "source": 9
+      },
+      {
+        "binary_clock": 10,
+        "maximum_odd_state": 17,
+        "odd_steps": 4,
+        "source": 11
+      },
+      {
+        "binary_clock": 7,
+        "maximum_odd_state": 13,
+        "odd_steps": 2,
+        "source": 13
+      },
+      {
+        "binary_clock": 12,
+        "maximum_odd_state": 53,
+        "odd_steps": 5,
+        "source": 15
+      },
+      {
+        "binary_clock": 9,
+        "maximum_odd_state": 17,
+        "odd_steps": 3,
+        "source": 17
+      },
+      {
+        "binary_clock": 14,
+        "maximum_odd_state": 29,
+        "odd_steps": 6,
+        "source": 19
+      },
+      {
+        "binary_clock": 6,
+        "maximum_odd_state": 21,
+        "odd_steps": 1,
+        "source": 21
+      },
+      {
+        "binary_clock": 11,
+        "maximum_odd_state": 53,
+        "odd_steps": 4,
+        "source": 23
+      },
+      {
+        "binary_clock": 16,
+        "maximum_odd_state": 29,
+        "odd_steps": 7,
+        "source": 25
+      },
+      {
+        "binary_clock": 70,
+        "maximum_odd_state": 3077,
+        "odd_steps": 41,
+        "source": 27
+      },
+      {
+        "binary_clock": 13,
+        "maximum_odd_state": 29,
+        "odd_steps": 5,
+        "source": 29
+      },
+      {
+        "binary_clock": 67,
+        "maximum_odd_state": 3077,
+        "odd_steps": 39,
+        "source": 31
+      }
+    ],
+    "forty_term_upper_bound": "114040910592111046952/182364981885853932015",
+    "odd_prime_power_rows": [
+      {
+        "base_order": 4,
+        "base_valuation": 1,
+        "exponent": 2,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 5
+      },
+      {
+        "base_order": 4,
+        "base_valuation": 1,
+        "exponent": 3,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 5
+      },
+      {
+        "base_order": 4,
+        "base_valuation": 1,
+        "exponent": 4,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 5
+      },
+      {
+        "base_order": 6,
+        "base_valuation": 1,
+        "exponent": 2,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 7
+      },
+      {
+        "base_order": 6,
+        "base_valuation": 1,
+        "exponent": 3,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 7
+      },
+      {
+        "base_order": 6,
+        "base_valuation": 1,
+        "exponent": 4,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 7
+      },
+      {
+        "base_order": 5,
+        "base_valuation": 2,
+        "exponent": 3,
+        "minimum_mean": "53/55",
+        "orbits": 22,
+        "prime": 11
+      },
+      {
+        "base_order": 5,
+        "base_valuation": 2,
+        "exponent": 4,
+        "minimum_mean": "603/605",
+        "orbits": 22,
+        "prime": 11
+      },
+      {
+        "base_order": 3,
+        "base_valuation": 1,
+        "exponent": 2,
+        "minimum_mean": "38/39",
+        "orbits": 4,
+        "prime": 13
+      },
+      {
+        "base_order": 3,
+        "base_valuation": 1,
+        "exponent": 3,
+        "minimum_mean": "506/507",
+        "orbits": 4,
+        "prime": 13
+      },
+      {
+        "base_order": 16,
+        "base_valuation": 1,
+        "exponent": 2,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 17
+      },
+      {
+        "base_order": 16,
+        "base_valuation": 1,
+        "exponent": 3,
+        "minimum_mean": "1",
+        "orbits": 1,
+        "prime": 17
+      }
+    ],
+    "pressure_clock_upper_bounds": {
+      "1": "2/3",
+      "2": "88/135",
+      "20": "32706613742/52301766015",
+      "3": "256/405",
+      "4": "764/1215",
+      "5": "2282/3645",
+      "6": "152/243"
+    },
+    "scope": "exact finite ordinary certificates, complete listed modular domains, and rational pressure clock bounds",
+    "status": "PASS",
+    "two_power_rows": [
+      {
+        "denominator": 1,
+        "exponent": 0,
+        "means": [
+          "1"
+        ]
+      },
+      {
+        "denominator": 2,
+        "exponent": 1,
+        "means": [
+          "3/2"
+        ]
+      },
+      {
+        "denominator": 4,
+        "exponent": 2,
+        "means": [
+          "1"
+        ]
+      },
+      {
+        "denominator": 8,
+        "exponent": 3,
+        "means": [
+          "3/4",
+          "5/4"
+        ]
+      },
+      {
+        "denominator": 16,
+        "exponent": 4,
+        "means": [
+          "7/8",
+          "9/8"
+        ]
+      },
+      {
+        "denominator": 32,
+        "exponent": 5,
+        "means": [
+          "15/16",
+          "17/16"
+        ]
+      },
+      {
+        "denominator": 64,
+        "exponent": 6,
+        "means": [
+          "31/32",
+          "33/32"
+        ]
+      },
+      {
+        "denominator": 128,
+        "exponent": 7,
+        "means": [
+          "63/64",
+          "65/64"
+        ]
+      },
+      {
+        "denominator": 256,
+        "exponent": 8,
+        "means": [
+          "127/128",
+          "129/128"
+        ]
+      },
+      {
+        "denominator": 512,
+        "exponent": 9,
+        "means": [
+          "255/256",
+          "257/256"
+        ]
+      },
+      {
+        "denominator": 1024,
+        "exponent": 10,
+        "means": [
+          "511/512",
+          "513/512"
+        ]
+      },
+      {
+        "denominator": 2048,
+        "exponent": 11,
+        "means": [
+          "1023/1024",
+          "1025/1024"
+        ]
+      },
+      {
+        "denominator": 4096,
+        "exponent": 12,
+        "means": [
+          "2047/2048",
+          "2049/2048"
+        ]
+      }
+    ],
+    "unproved": "arithmetic rigidity of the actual scalar for every positive ordinary source, including surviving low phases and irrational values",
+    "verified_ordinary_floor": 31
+  },
+  "scalar": {
+    "candidate_decisions": 2932,
+    "candidate_trace_transitions": 12870,
+    "checks_by_category": {
+      "candidate equality on known ordinary source": 2932,
+      "complete discounted sum at eleven": 1,
+      "complete discounted sum at seven": 1,
+      "decision occurs before exhausted budget": 12870,
+      "endpoint mismatch lattice margin": 350,
+      "exact discrepancy transport": 15802,
+      "exact literature potential correction": 1,
+      "independent candidate budget": 2932,
+      "independent decision clock agrees": 2932,
+      "literal literature counterexample orbit": 1,
+      "literal source retained in candidate trace": 12870,
+      "lower rejection lattice margin": 1526,
+      "source-specific triadic separation": 2613,
+      "strict positive rational lower bound for claimed descent": 1,
+      "transported denominator exponent within budget": 2613,
+      "unreduced candidate lattice": 15802,
+      "upper rejection lattice margin": 737
+    },
+    "decisions_by_kind": {
+      "endpoint": 669,
+      "lower": 1526,
+      "upper": 737
+    },
+    "exact_checks": 73984,
+    "incorrect_candidates": 2613,
+    "literature_counterexample": {
+      "certified_positive_lower_bound": "1963/14080",
+      "discounted_sum_at_source": "553/384",
+      "discounted_sum_at_successor": "169/96",
+      "logarithmic_change": "log(11/7)-287/1280",
+      "source": 7,
+      "successor": 11
+    },
+    "scope": "bounded exact scalar-separation controls and one actual counterexample to an external uniform-descent lemma",
+    "sources": 128,
+    "status": "PASS",
+    "unproved": "a successful triadic approximation satisfying the sufficient precision bound for every ordinary source"
+  },
+  "scope": "exact finite ordinary and modular controls, not a universal Collatz proof or an all-depth computation",
+  "selector": {
+    "cases": [
+      {
+        "a": 6,
+        "completed_odd_steps": 64,
+        "endpoint_bits": 13,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 4,
+        "m": 1,
+        "potential_ratio_floor": 0,
+        "prefix_odd_steps": 4,
+        "source_bits": 15,
+        "tail_maximum_bits": 17
+      },
+      {
+        "a": 7,
+        "completed_odd_steps": 60,
+        "endpoint_bits": 17,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 6,
+        "m": 2,
+        "potential_ratio_floor": 0,
+        "prefix_odd_steps": 6,
+        "source_bits": 18,
+        "tail_maximum_bits": 20
+      },
+      {
+        "a": 8,
+        "completed_odd_steps": 91,
+        "endpoint_bits": 22,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 8,
+        "m": 3,
+        "potential_ratio_floor": 0,
+        "prefix_odd_steps": 8,
+        "source_bits": 23,
+        "tail_maximum_bits": 26
+      },
+      {
+        "a": 9,
+        "completed_odd_steps": 92,
+        "endpoint_bits": 25,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 10,
+        "m": 4,
+        "potential_ratio_floor": 0,
+        "prefix_odd_steps": 10,
+        "source_bits": 27,
+        "tail_maximum_bits": 33
+      },
+      {
+        "a": 10,
+        "completed_odd_steps": 125,
+        "endpoint_bits": 29,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 12,
+        "m": 5,
+        "potential_ratio_floor": 0,
+        "prefix_odd_steps": 12,
+        "source_bits": 30,
+        "tail_maximum_bits": 34
+      },
+      {
+        "a": 11,
+        "completed_odd_steps": 111,
+        "endpoint_bits": 35,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 14,
+        "m": 6,
+        "potential_ratio_floor": 0,
+        "prefix_odd_steps": 14,
+        "source_bits": 35,
+        "tail_maximum_bits": 43
+      },
+      {
+        "a": 12,
+        "completed_odd_steps": 204,
+        "endpoint_bits": 38,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 16,
+        "m": 7,
+        "potential_ratio_floor": 1,
+        "prefix_odd_steps": 16,
+        "source_bits": 39,
+        "tail_maximum_bits": 47
+      },
+      {
+        "a": 13,
+        "completed_odd_steps": 112,
+        "endpoint_bits": 42,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 18,
+        "m": 8,
+        "potential_ratio_floor": 1,
+        "prefix_odd_steps": 18,
+        "source_bits": 43,
+        "tail_maximum_bits": 49
+      },
+      {
+        "a": 14,
+        "completed_odd_steps": 184,
+        "endpoint_bits": 45,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 20,
+        "m": 9,
+        "potential_ratio_floor": 1,
+        "prefix_odd_steps": 20,
+        "source_bits": 46,
+        "tail_maximum_bits": 53
+      },
+      {
+        "a": 15,
+        "completed_odd_steps": 129,
+        "endpoint_bits": 51,
+        "endpoint_source_ratio_floor": 0,
+        "high_scalar_states": 1,
+        "low_scalar_states": 22,
+        "m": 10,
+        "potential_ratio_floor": 1,
+        "prefix_odd_steps": 22,
+        "source_bits": 51,
+        "tail_maximum_bits": 59
+      },
+      {
+        "a": 16,
+        "completed_odd_steps": 183,
+        "endpoint_bits": 55,
+        "endpoint_source_ratio_floor": 1,
+        "high_scalar_states": 1,
+        "low_scalar_states": 24,
+        "m": 11,
+        "potential_ratio_floor": 1,
+        "prefix_odd_steps": 24,
+        "source_bits": 55,
+        "tail_maximum_bits": 66
+      },
+      {
+        "a": 17,
+        "completed_odd_steps": 168,
+        "endpoint_bits": 59,
+        "endpoint_source_ratio_floor": 1,
+        "high_scalar_states": 1,
+        "low_scalar_states": 26,
+        "m": 12,
+        "potential_ratio_floor": 2,
+        "prefix_odd_steps": 26,
+        "source_bits": 59,
+        "tail_maximum_bits": 69
+      },
+      {
+        "a": 18,
+        "completed_odd_steps": 340,
+        "endpoint_bits": 63,
+        "endpoint_source_ratio_floor": 1,
+        "high_scalar_states": 1,
+        "low_scalar_states": 28,
+        "m": 13,
+        "potential_ratio_floor": 2,
+        "prefix_odd_steps": 28,
+        "source_bits": 62,
+        "tail_maximum_bits": 74
+      },
+      {
+        "a": 19,
+        "completed_odd_steps": 253,
+        "endpoint_bits": 68,
+        "endpoint_source_ratio_floor": 1,
+        "high_scalar_states": 1,
+        "low_scalar_states": 30,
+        "m": 14,
+        "potential_ratio_floor": 2,
+        "prefix_odd_steps": 30,
+        "source_bits": 67,
+        "tail_maximum_bits": 78
+      },
+      {
+        "a": 20,
+        "completed_odd_steps": 306,
+        "endpoint_bits": 72,
+        "endpoint_source_ratio_floor": 1,
+        "high_scalar_states": 1,
+        "low_scalar_states": 32,
+        "m": 15,
+        "potential_ratio_floor": 2,
+        "prefix_odd_steps": 32,
+        "source_bits": 71,
+        "tail_maximum_bits": 83
+      },
+      {
+        "a": 21,
+        "completed_odd_steps": 308,
+        "endpoint_bits": 76,
+        "endpoint_source_ratio_floor": 1,
+        "high_scalar_states": 1,
+        "low_scalar_states": 34,
+        "m": 16,
+        "potential_ratio_floor": 3,
+        "prefix_odd_steps": 34,
+        "source_bits": 75,
+        "tail_maximum_bits": 88
+      },
+      {
+        "a": 29,
+        "completed_odd_steps": 398,
+        "endpoint_bits": 108,
+        "endpoint_source_ratio_floor": 4,
+        "high_scalar_states": 1,
+        "low_scalar_states": 50,
+        "m": 24,
+        "potential_ratio_floor": 8,
+        "prefix_odd_steps": 50,
+        "source_bits": 106,
+        "tail_maximum_bits": 124
+      },
+      {
+        "a": 37,
+        "completed_odd_steps": 379,
+        "endpoint_bits": 139,
+        "endpoint_source_ratio_floor": 12,
+        "high_scalar_states": 1,
+        "low_scalar_states": 66,
+        "m": 32,
+        "potential_ratio_floor": 21,
+        "prefix_odd_steps": 66,
+        "source_bits": 136,
+        "tail_maximum_bits": 161
+      },
+      {
+        "a": 69,
+        "completed_odd_steps": 1043,
+        "endpoint_bits": 276,
+        "endpoint_source_ratio_floor": 528,
+        "high_scalar_states": 1,
+        "low_scalar_states": 130,
+        "m": 64,
+        "potential_ratio_floor": 924,
+        "prefix_odd_steps": 130,
+        "source_bits": 267,
+        "tail_maximum_bits": 316
+      },
+      {
+        "a": 133,
+        "completed_odd_steps": 1901,
+        "endpoint_bits": 543,
+        "endpoint_source_ratio_floor": 992236,
+        "high_scalar_states": 1,
+        "low_scalar_states": 258,
+        "m": 128,
+        "potential_ratio_floor": 1736414,
+        "prefix_odd_steps": 258,
+        "source_bits": 523,
+        "tail_maximum_bits": 622
+      }
+    ],
+    "checks": 18480,
+    "scope": "selected exact ordinary constructions; no universal termination inference",
+    "status": "PASS"
+  },
+  "source_sha256": {
+    "GERM_BRIDGE.md": "7c3de361cb2ff683b487ec537225e55d3713a7aa0a1956e16c2860f4d29980cb",
+    "GermBridge.lean": "d696be05c72e75b0da31a8f2f62c089d1e7346fb7aa0f0aa7c7417fe87f25a3e",
+    "LITERATURE_BOUNDARY.md": "806993c8aabd7e2b4be5e70451994b671d75aee7bfa69799c6a6fb1e82e7b991",
+    "ORDINARY_SELECTOR.md": "78ff6c1742cd4d1799fb2fddea016e299444837a56bb17ee95e4ae4d25237208",
+    "OrdinarySelector.lean": "240732a9b7cd101ca035b2ea9b66cb83d9cbadb11dce54a983b34f72f8364dce",
+    "PRESSURE_CONSTRUCTION.md": "533514adbb08dabada8fdb6fc911e4cf703e163005f517ee2445289a74abe030",
+    "README.md": "c30cc9cfd693ae0dc0503f649de66ff6b748b6cfa3c44079df8e38fceefa1942",
+    "REPO_SYNTHESIS.md": "30a68fef4853976a7a16208a6f52889146bae2834b8d0fc7a61b86f1ea7830b3",
+    "SCALAR_SEPARATION.md": "c17c580d4d3cf14deec7997b09d0230c4142a8fd6226056da6de83b42592dfa5",
+    "SOURCES.json": "d53c8e2ecf151df1afbe88f9cfcf5aedb1db6aa2aa5539f8f250dbbc1ce800c6",
+    "exact_replay.py": "c4664510e22f2be7567f4ebd382b2f417bd227b051dbb565197709aeba933db2",
+    "germ_bridge_controls.py": "8733a0d74cd3f7934454201715c327888c970ec1180d4187f13e2313441cdb03",
+    "pressure_controls.py": "8f8ac57346b7c351431ae15b7a8733694373aa5b51e7f5a33b99bbf2ce8bd9f5",
+    "scalar_controls.py": "7cb76827b0f3c87ecb23b2241ebeee18a3a7ac2bc98fd283a07fca3511efb5d1",
+    "selector_controls.py": "de51e5d8c738d7eb8ac7bf812ae050cb0dc1636a02cea65aa547524e285e295e"
+  },
+  "success": true
+}
