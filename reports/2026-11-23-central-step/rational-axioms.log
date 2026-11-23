@@ -1,0 +1,7 @@
+'CollatzRationalExcursions.abs_numerator_bounds' depends on axioms: [propext, Quot.sound]
+'CollatzRationalExcursions.large_even_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalExcursions.large_odd_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalExcursions.small_step_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalExcursions.block_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalExcursions.geometric_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRationalExcursions.no_long_high_run' depends on axioms: [propext, Classical.choice, Quot.sound]

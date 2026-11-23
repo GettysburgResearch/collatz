@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-23",
+  "author": "cycle_symmetry",
+  "base_commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+  "scope": "New written full complementary-denominator capacity proof. Prior cycle routes were inspected to avoid importing unsupported rotation, norm or mixing inferences; they are not theorem dependencies of the new elementary inequality.",
+  "repository_sources": [
+    {
+      "pr": 182,
+      "sha": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/COMPLETE_CYCLE.md",
+      "scope": "Inspected full-word matching and its conditioned-dependence boundary; no estimate from that attempt is imported.",
+      "source_sha256": "67222af04ed277cc0ffb27521b081661afefb9446e9d19b7737cabc87a410ff5",
+      "git_blob_sha": "f5114ef4dcccedeee5ccb429bd2f1663bb6de01e"
+    },
+    {
+      "pr": 176,
+      "sha": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/FULL_CYCLE_LITERATURE_ATTEMPT.md",
+      "scope": "Read the full numerical cancellation and rotation/independence limitations; no external mixing theorem imported.",
+      "source_sha256": "b40936e9e65889594a244988b846fccf8c634492e116e58b91f83ffbb0b653e6",
+      "git_blob_sha": "6c325df903646173962db1776f3c59eeed0e10a0"
+    },
+    {
+      "pr": 175,
+      "sha": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/SUPERPOLYNOMIAL_RESIDUAL_DENOMINATOR.md",
+      "scope": "Inspected the residual-degree statement and the explicit polynomial-versus-integer-gcd boundary; not a new audit of the factor-gap dependency.",
+      "source_sha256": "b7531892e0d62d74107c6446171587e83cf79b83b6b967061499b7e6b92959c9",
+      "git_blob_sha": "4be4dc131ea5c26577a3b95e0feeae216b9fb6b1"
+    },
+    {
+      "pr": 175,
+      "sha": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HANKEL_AND_HOLONOMICITY_ATTACK.md",
+      "scope": "Read the determinant identities and the distinguished-fiber limitation, including the failed positive-moment and minimum-height bridges; no arithmetic-holonomicity theorem imported.",
+      "source_sha256": "0eb90860f675e1d6484f30770f543ae8a01a9a6de1c5cc3b47d64c040f7d549c",
+      "git_blob_sha": "5069b91e9b5fb954c4d079bd76a34004efb3f85f"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "locations": "Sections 1–3, Theorems 2.3–2.5, Example 5",
+      "inspection": "Primary author PDF directly read at parity coding, autoconjugacy, self-conjugate cycles and the signed control. No complete external proof audit claimed.",
+      "use": "Classical framework and credited negative-cycle control. The new capacity inequality is proved directly from finite cycle equations."
+    }
+  ],
+  "formal_scope": "No new Lean theorem; real-integral and finite-cycle deductions are written proofs.",
+  "historical_novelty_claim": false,
+  "open_claim": "An upper bound on the full complementary denominator sufficient to exclude a nontrivial integer cycle, or a universal rational-dual construction, is not proved."
+}

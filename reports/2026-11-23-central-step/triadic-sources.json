@@ -1,0 +1,39 @@
+{
+  "retrieval": "GitHub exact-file fetch at each listed immutable commit, during this research turn. Hashes computed from returned decoded text bytes.",
+  "source_base_commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+  "inputs": [
+    {
+      "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/TRIADIC_AMORTIZED_BUDGET.md",
+      "bytes": 8451,
+      "sha256": "8249811440526b15587d345179769db54297910afb34eb3bc84084b1f41dd02f",
+      "git_blob_sha1": "94c2760f09813bc2b4feea1428a10d28c2054a3d",
+      "role": "Direct written dependency: improved triadic horizon and weight."
+    },
+    {
+      "commit": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "path": "research/lean-global-resolvent-20261121/overview/triadic-height/OPTIMAL_ANCESTOR_BALANCE.md",
+      "bytes": 6705,
+      "sha256": "a0b25892d094b3d53cec3490b5e5774aef861049ca012fd6fb43e59919e9e380",
+      "git_blob_sha1": "1bd8d04d8fe1f41b9f72165b83664ec18008b7fa",
+      "role": "Inspected background: ordinary all-depth maximizers are not universally balanced. Not a dependency of the new arithmetic lemmas."
+    },
+    {
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/TRIADIC_CLOSURE.md",
+      "bytes": 17730,
+      "sha256": "31164e32797d3868f06cf1f2b9b771e912335f096d7fc92e53a1e29355dbba36",
+      "git_blob_sha1": "3c6e297ccbb6fc5d9ad5abcffdab371cf64ebba9",
+      "role": "Direct written dependency: exact fixed-denominator residue classes and initial-grid qualification."
+    },
+    {
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/BOREL_DWORK_ACTUAL_PARITY_ATTEMPT.md",
+      "bytes": 11244,
+      "sha256": "daa17bfe27a75c53361bfcbd204ec6417c9337f99ef0b05d695ee012f08dbf6e",
+      "git_blob_sha1": "c10dd81668f05ef895a9e88277efbdf4e745a047",
+      "role": "Inspected attempted analytic route; no additional continuation or algebraicity assumed."
+    }
+  ],
+  "verification_scope": "The new five finite arithmetic lemmas were built. These pinned prior source modules and their earlier dependency trees were not rebuilt."
+}

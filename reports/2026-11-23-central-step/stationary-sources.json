@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-23",
+  "lane": "stationary_rigidity",
+  "base_commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+  "scope": "Written constructive flow regularization and finite collision consumer. No new Lean result or Collatz closure.",
+  "repository_sources": [
+    {
+      "commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "path": "research/profound-step-20261123/dynamics/COALESCENCE_AND_CRITICAL_COLLISIONS.md",
+      "sha256": "60d0f00f1f6360ae452d0d098bb3f244ae75ef69e130ae005e5466e1e5366acb",
+      "git_blob_sha": "e5616bff76f62a259a6a67741ec00dd3dca59ca9",
+      "bytes": 17208,
+      "access": "Sections 1--4 and the fixed-change-of-law scope read in the complete checkout",
+      "use": "Exact variation identity, coalescence meaning, root-collision inequality, and retained path hypotheses"
+    },
+    {
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/COLLISION_CORE.md",
+      "sha256": "12d5f897b830c9d4deff794c3d42f99cf330244be4eafe6a4c716fd5db353e7c",
+      "git_blob_sha": "d94a3c4153c7d02802f50bd3a1136c71f6936dca",
+      "bytes": 18476,
+      "access": "Sections 1--10 read directly at the frozen GitHub raw source",
+      "use": "Actual stationary lift and strict collision gap; no matching upper imported",
+      "qualification": "SOURCE-QUALIFIED; not a complete dependency audit"
+    },
+    {
+      "commit": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "path": "research/whole-source-20261123/BOUNDARY_DESCENT.md",
+      "sha256": "4b48bb2cff2c80ebe59c5b363c1e1c90c52395ddf0069284e44f246d8a465738",
+      "git_blob_sha": "34b437972096ae409568842e655509a8233a8087",
+      "bytes": 15236,
+      "access": "Sections 1--6 read directly at the frozen GitHub raw source",
+      "use": "Minimum-source and occupation constructions, with the height factor retained",
+      "qualification": "SOURCE-QUALIFIED; not a complete dependency audit"
+    },
+    {
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/ACTUAL_COLLISION.md",
+      "sha256": "eb8a352d3ad072e601637c0d2beff2992317252ff4ca58b830100074a1b17709",
+      "git_blob_sha": "118af095616dbe5544b39f117fd2f465dac4a10b",
+      "bytes": 17662,
+      "access": "Sections 1--8 read directly at the frozen GitHub raw source",
+      "use": "Theorem 2, equations (15) and (20)--(21): exact box injection and weighted consumer",
+      "qualification": "SOURCE-QUALIFIED; not a complete dependency audit"
+    },
+    {
+      "commit": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "path": "research/whole-repo-round3-20261123/GLOBAL_ORBIT_COUNT.md",
+      "sha256": "bee22c362de8adcbb6a0360f48240ad276fdf6122f6383273eb10dee8e29271d",
+      "git_blob_sha": "6881dc864f3b586958bd46d5c38b1c2524008565",
+      "bytes": 10738,
+      "access": "Sections 1--8 read directly at the frozen GitHub raw source",
+      "use": "Theorem (1) and domain: pathwise uniform critical count; no global source-density inference",
+      "qualification": "SOURCE-QUALIFIED; not a complete dependency audit"
+    },
+    {
+      "commit": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "path": "research/lean-global-closure-20261121/risk24/literature/HIGHER_RANK_BOUNDARY_ATTACK.md",
+      "sha256": "9cee71eaa78069c3c377adab69795f223dd6abdd3b9010d1bf3dffbc26620ab2",
+      "git_blob_sha": "21ab6c80f12ca54002d7ed0286ca4416336e9d4a",
+      "bytes": 19202,
+      "access": "Sections 1--3 and 6--8 read directly at the frozen GitHub raw source",
+      "use": "Dyadic thickening changes the averaging and compact observable; no Haar component transferred to ordinary endpoints",
+      "qualification": "SOURCE-QUALIFIED; not a complete dependency audit"
+    }
+  ],
+  "retained_analytic_input": {
+    "pr": 180,
+    "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+    "path": "research/source-clock-20261123/EXTENSIONS.md",
+    "claims": "E13--E15: fixed absolutely continuous changes of law",
+    "access": "Retained through the reviewed PR178 baseline; not freshly re-audited in this pass"
+  },
+  "literature_consulted_not_imported": [
+    {
+      "author": "Lyapunov Weaver",
+      "title": "A power improvement for uniform Collatz interval compression",
+      "version": "v3, 26 October 2026",
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "access": "Primary author page Sections 1--6 directly inspected, including Theorem 1 and consequences (24)--(25a)",
+      "scope": "The stronger translated count and critical zeta summability were considered. No external result from this paper is used in the new flow construction or asserted as a same-source collision upper."
+    }
+  ]
+}

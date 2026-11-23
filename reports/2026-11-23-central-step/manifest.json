@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-23T03:41:09.583617+00:00",
+  "source_base_commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+  "coverage": [
+    "research/central-step-20261123",
+    "reports/2026-11-23-central-step"
+  ],
+  "excluded": [
+    "reports/2026-11-23-central-step/manifest.json"
+  ],
+  "scope": "Exact new packet bytes; not a proof of Collatz. Twelve finite Lean lemmas; complete rational, flow and cycle theorems have independently reviewed written-proof scope.",
+  "audited_theorem_counts": {
+    "rational": 7,
+    "triadic": 5
+  },
+  "files": [
+    {
+      "path": "reports/2026-11-23-central-step/PR178-before.json",
+      "bytes": 15390,
+      "sha256": "f2bdf8e21dee2fab5930bd8ec144327ea2a12fdfb910a924733b94f0df439a8e",
+      "git_blob_sha1": "c7229e42bfe04811850abc42045ad68a98ebfdc9"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/PR178-before.md",
+      "bytes": 15006,
+      "sha256": "725f5d6452385bb97e1edbcb3b6468add1f0ff6fed6cebf848485c42d707ae28",
+      "git_blob_sha1": "795a04e7dea72168ffcad5c609e30f91fb8f8983"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/README.md",
+      "bytes": 3768,
+      "sha256": "2d9aa301758f3c9cddba8ebd8e488d5bbff50019f8cd57d53adc85cb915bd30a",
+      "git_blob_sha1": "8b3004fc52bd2018165d6476461915a87b42c04d"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/cycles-review-triadic.md",
+      "bytes": 9827,
+      "sha256": "f04060291698aaea14e36f5dc1f91c64267a3f161234dcaa1ffce370381572d7",
+      "git_blob_sha1": "c8391711a211a774c1957ecb68a3df37c4ad6da1"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/cycles-selector-axioms.log",
+      "bytes": 451,
+      "sha256": "fcb8017cd936bfd9fe645042d8f28ff3b15b5f10fcfbe7bccfacb89e73890aa0",
+      "git_blob_sha1": "c77eff224161676b616f234762ddd5dd8414267b"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/cycles-selector-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/cycles-selector-lean-receipt.json",
+      "bytes": 3357,
+      "sha256": "b634977e8fa29f1656bc1ab7d1fe89567ea29acc4204e61f527329023f4a3ee1",
+      "git_blob_sha1": "39ab99ef62fa39d410204bcaa290abba293c0dbb"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/cycles-sources.json",
+      "bytes": 3323,
+      "sha256": "d3deee40e66f54e6a58aad273814709e0616f1e102d2f136d0a3d307e77c8d5e",
+      "git_blob_sha1": "b04437e143a66d2fd3bd5517944aa572a7977ed4"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-axioms.log",
+      "bytes": 719,
+      "sha256": "828154284a6bdc7438e970273a8c9e11b0ce0c497482a0d169a51a0502dab59a",
+      "git_blob_sha1": "0f2383e9435ad26f488893ed4a7e9c339866539b"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-lean-receipt.json",
+      "bytes": 3162,
+      "sha256": "80ba9073ee0ca323c364880b21a740c8aa552866fbbdd35bbd0d827d72d20208",
+      "git_blob_sha1": "4403d9a53412fa45030d74e26826a71197bad72a"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-review-axioms.log",
+      "bytes": 719,
+      "sha256": "828154284a6bdc7438e970273a8c9e11b0ce0c497482a0d169a51a0502dab59a",
+      "git_blob_sha1": "0f2383e9435ad26f488893ed4a7e9c339866539b"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-review-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-review-receipt.json",
+      "bytes": 4701,
+      "sha256": "c3ffcedc07ec865b992ab71d299b1a3ee319fd41ce546a4dd1297f5799f20002",
+      "git_blob_sha1": "d70337bd27d72b19672cb2bad2b8eb8ee44c3ee2"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-review.md",
+      "bytes": 8780,
+      "sha256": "81018f7547a986ae75bfd2cfc33c563057952e6f236d5930c4fa9ee1a3ee78e0",
+      "git_blob_sha1": "bc299b8dbff7ce7b5ec9e9adbcd3da5edb62108d"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-sources.json",
+      "bytes": 2374,
+      "sha256": "95a55b0e902b2beec6b418c53959b45f1fe5650ad4870c1663a6aa255946d988",
+      "git_blob_sha1": "55fbb413e94106f7d3e87e8eacaa9db209f8878d"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/source-snapshot.json",
+      "bytes": 11948,
+      "sha256": "77a0f93be65310b92a13c8bcf051721437eeb81832de3a7a84f31a49554ae0ba",
+      "git_blob_sha1": "41e7ee315ca10a4b41b041aca7890cbdb7b0b93b"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/stationary-review-cycles.md",
+      "bytes": 9107,
+      "sha256": "7afca3ddf6d90540e8ce2744150fd383b0ac07c062bd1c9473361be6879e160e",
+      "git_blob_sha1": "3df7f0009dc7c950af2509727de7ac77adce32aa"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/stationary-review.md",
+      "bytes": 6912,
+      "sha256": "856c32320c81847d5308456e439377cab0b15e809d7442aae6283c02725ae7a8",
+      "git_blob_sha1": "1285b9f75a5b95f046c8a98cbc3036276937d5a3"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/stationary-sources.json",
+      "bytes": 4695,
+      "sha256": "a7d0a2fbacfc3082f982b2cfa2f81f81e2693589ebb895ab7b292efbdf52a5f6",
+      "git_blob_sha1": "bb7467441915a2a5eea72f2424fc80b1639e124d"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/triadic-axioms.log",
+      "bytes": 451,
+      "sha256": "fcb8017cd936bfd9fe645042d8f28ff3b15b5f10fcfbe7bccfacb89e73890aa0",
+      "git_blob_sha1": "c77eff224161676b616f234762ddd5dd8414267b"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/triadic-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/triadic-lean-receipt.json",
+      "bytes": 2869,
+      "sha256": "835f8a4b5f286ac53810f36b2b829d83e9cf6af65e1e1f17facc1c6e8680fe8e",
+      "git_blob_sha1": "3390db0964bdc4fa3ce78c096ac88545a2f6f80b"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/triadic-sources.json",
+      "bytes": 2231,
+      "sha256": "e259dac025ae537ec240b106c413d3868e499b35dfdd35ef5ae823b2c108db72",
+      "git_blob_sha1": "8e329fabb0c80d53a72912eb56666e4e10c3850f"
+    },
+    {
+      "path": "research/central-step-20261123/README.md",
+      "bytes": 8913,
+      "sha256": "d602dab66de2355147529c2470687de67baf176faac6f9986f0c1ff88895a313",
+      "git_blob_sha1": "0852cc3c92761f8f9719c954f55c8f97f49c3d31"
+    },
+    {
+      "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+      "bytes": 10335,
+      "sha256": "7bcf9b6dcb275795d5f53f171098614bd30f0b65d0462a3c90b3b9399ee4ef0e",
+      "git_blob_sha1": "97c3b1342bad9fbc7b9a1cd3a45aff031e1c124d"
+    },
+    {
+      "path": "research/central-step-20261123/cycles/README.md",
+      "bytes": 1073,
+      "sha256": "d2c2219eb30df65547cc1972afd53422b66aa7168fb8c6ace1328924e614d2bc",
+      "git_blob_sha1": "3e5059b4da523be32a392a96b3c58b3b151126c9"
+    },
+    {
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "bytes": 9918,
+      "sha256": "990dbdff54e440791c1144e824beedb6681a78d614300b6faa9596ccdc93ad55",
+      "git_blob_sha1": "598fbfcb64545247d355c5ca7aee4e40f63e0e1e"
+    },
+    {
+      "path": "research/central-step-20261123/rational/README.md",
+      "bytes": 978,
+      "sha256": "659d89f1cceb4bef958e8096f6309495275adb4d6b1870e75994a197de8ca946",
+      "git_blob_sha1": "5194f32aa1ca9da9373e1ce10135dee9631b9496"
+    },
+    {
+      "path": "research/central-step-20261123/rational/lean/RationalExcursions.lean",
+      "bytes": 4756,
+      "sha256": "6720a520e9f510ce5c45c1499eed4c1bbb7c412b6cf641795775e0d9a78b6ed3",
+      "git_blob_sha1": "e08a06f2c011699f5fde3a33223f0f93350a56f6"
+    },
+    {
+      "path": "research/central-step-20261123/rational/lean/RationalExcursionsAudit.lean",
+      "bytes": 435,
+      "sha256": "7a7c6c4b56a51ca1eeabb67296d6d44484682c04e366d3016c4d5f7d27c4a966",
+      "git_blob_sha1": "a78409084beb182ed0602a60493d875d5c72ee9f"
+    },
+    {
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "bytes": 15801,
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "git_blob_sha1": "39ccf195e42ee17121ff856c45541e70e05d393f"
+    },
+    {
+      "path": "research/central-step-20261123/stationary/README.md",
+      "bytes": 1685,
+      "sha256": "79fcede53430e4cdb3118165f436f3996565c1100682d5c4b6e381d5ab273321",
+      "git_blob_sha1": "c03e682d4f825faab06e45a4cb2a65ee8fcbc83e"
+    },
+    {
+      "path": "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md",
+      "bytes": 12307,
+      "sha256": "f75d052b925c7b1bfbf439bb44c9d2770c1865596cebbd095b7dc4575b82fb92",
+      "git_blob_sha1": "d5fc4e7a3b5cd8b27cac696ef6561b8b12aa8dfd"
+    },
+    {
+      "path": "research/central-step-20261123/triadic/README.md",
+      "bytes": 2153,
+      "sha256": "6500c4064b1573e225f92e598e35ad6b81d9987bddc25d740c3cac833849d919",
+      "git_blob_sha1": "b2e00f88db18340f8e617c1ba31c64efb3f81e82"
+    },
+    {
+      "path": "research/central-step-20261123/triadic/lean/WeightedSelector.lean",
+      "bytes": 3747,
+      "sha256": "affb4c0336e5763680ffbb2cc1f17b727d404f225580f2826f5ffac159174fb0",
+      "git_blob_sha1": "65bc2f198224bb31919fc0ed200f1876262ed772"
+    },
+    {
+      "path": "research/central-step-20261123/triadic/lean/WeightedSelectorAudit.lean",
+      "bytes": 301,
+      "sha256": "7bbbf45e0a34d113cabdcedf3575f577cbbed920743018f08d9e6fae8d42f654",
+      "git_blob_sha1": "3ff73d4c9c6ae7b42fa855f056e4bbbe1261562b"
+    }
+  ]
+}

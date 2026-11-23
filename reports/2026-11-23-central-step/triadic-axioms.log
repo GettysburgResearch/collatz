@@ -1,0 +1,5 @@
+'CollatzWeightedSelector.weight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWeightedSelector.power_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWeightedSelector.rational_gap' depends on axioms: [propext]
+'CollatzWeightedSelector.weighted_rational_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWeightedSelector.forced_weight_growth' depends on axioms: [propext]

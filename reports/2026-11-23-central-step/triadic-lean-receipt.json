@@ -1,0 +1,40 @@
+{
+  "scope": "Five finite arithmetic lemmas only. The selector, asymptotic classification and universal candidate construction are not formalized; the last remains open.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "LEAN_PATH": "/workspace/scratch/56e7a5765d0c/central-triadic-lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "modules": [
+    {
+      "module": "WeightedSelector",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/central-triadic-lean/WeightedSelector.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/triadic/lean/WeightedSelector.lean"
+      ],
+      "exit_code": 0,
+      "source": "research/central-step-20261123/triadic/lean/WeightedSelector.lean",
+      "source_sha256": "affb4c0336e5763680ffbb2cc1f17b727d404f225580f2826f5ffac159174fb0",
+      "log": "reports/2026-11-23-central-step/triadic-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "WeightedSelectorAudit",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/central-triadic-lean/WeightedSelectorAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/triadic/lean/WeightedSelectorAudit.lean"
+      ],
+      "exit_code": 0,
+      "source": "research/central-step-20261123/triadic/lean/WeightedSelectorAudit.lean",
+      "source_sha256": "7bbbf45e0a34d113cabdcedf3575f577cbbed920743018f08d9e6fae8d42f654",
+      "log": "reports/2026-11-23-central-step/triadic-axioms.log",
+      "log_sha256": "fcb8017cd936bfd9fe645042d8f28ff3b15b5f10fcfbe7bccfacb89e73890aa0"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-11-23T03:36:32.291575+00:00",
+  "reviewer": "/root/triadic_selector",
+  "scope": "Fresh strict build of only the two new rational modules. All seven authored finite numerical theorems audited. Complete certificate and congruence equivalence reviewed as written mathematics, separately from the Lean core.",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "LEAN_PATH": "/workspace/scratch/56e7a5765d0c/central-rational-independent-review:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "fresh_output_directory": "/workspace/scratch/56e7a5765d0c/central-rational-independent-review",
+  "source_hashes_before_and_after": [
+    {
+      "path": "research/central-step-20261123/rational/FINITE_RATIONAL_CERTIFICATE.md",
+      "sha256": "990dbdff54e440791c1144e824beedb6681a78d614300b6faa9596ccdc93ad55"
+    },
+    {
+      "path": "research/central-step-20261123/rational/README.md",
+      "sha256": "659d89f1cceb4bef958e8096f6309495275adb4d6b1870e75994a197de8ca946"
+    },
+    {
+      "path": "research/central-step-20261123/rational/lean/RationalExcursions.lean",
+      "sha256": "6720a520e9f510ce5c45c1499eed4c1bbb7c412b6cf641795775e0d9a78b6ed3"
+    },
+    {
+      "path": "research/central-step-20261123/rational/lean/RationalExcursionsAudit.lean",
+      "sha256": "7a7c6c4b56a51ca1eeabb67296d6d44484682c04e366d3016c4d5f7d27c4a966"
+    },
+    {
+      "path": "reports/2026-11-23-central-step/rational-lean-receipt.json",
+      "sha256": "80ba9073ee0ca323c364880b21a740c8aa552866fbbdd35bbd0d827d72d20208"
+    }
+  ],
+  "modules": [
+    {
+      "module": "RationalExcursions",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/central-rational-independent-review/RationalExcursions.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/rational/lean/RationalExcursions.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.455,
+      "source": "research/central-step-20261123/rational/lean/RationalExcursions.lean",
+      "source_sha256": "6720a520e9f510ce5c45c1499eed4c1bbb7c412b6cf641795775e0d9a78b6ed3",
+      "log": "reports/2026-11-23-central-step/rational-review-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "RationalExcursionsAudit",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/central-rational-independent-review/RationalExcursionsAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/rational/lean/RationalExcursionsAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.789,
+      "source": "research/central-step-20261123/rational/lean/RationalExcursionsAudit.lean",
+      "source_sha256": "7a7c6c4b56a51ca1eeabb67296d6d44484682c04e366d3016c4d5f7d27c4a966",
+      "log": "reports/2026-11-23-central-step/rational-review-axioms.log",
+      "log_sha256": "828154284a6bdc7438e970273a8c9e11b0ce0c497482a0d169a51a0502dab59a"
+    }
+  ],
+  "additional_metadata_review_after_build": {
+    "date_utc": "2026-11-23T03:37:50.937603+00:00",
+    "path": "reports/2026-11-23-central-step/rational-sources.json",
+    "sha256": "95a55b0e902b2beec6b418c53959b45f1fe5650ad4870c1663a6aa255946d988",
+    "checks": [
+      "local capacity hash matches current file",
+      "PR176 comparative source matches triadic exact-source ledger",
+      "dependency and formal-scope distinctions retained"
+    ],
+    "mathematical_sources_changed": false
+  }
+}
