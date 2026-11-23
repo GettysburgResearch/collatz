@@ -1,0 +1,101 @@
+{
+  "scope": "Fresh two-module Lean replay and all new public theorem axiom audits; full Collatz remains open",
+  "started_utc": "2026-11-23T01:00:11.144317+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_clean": true,
+  "source_sha256": {
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/high-variance-20261123/ForcedRoute.lean": "1ec27b82a10b58427f854e8d178ffe7b304d13d3ca6ac253e17fa8e11ba9736a"
+  },
+  "runner_sha256": "0c5324028d99518c574425c9b40e3cafea49e8c38cc77c08bd44d0c6507b16b8",
+  "audited_declarations": [
+    "Collatz.HighVariance.CycleWordAlgebra.ones_append",
+    "Collatz.HighVariance.CycleWordAlgebra.carry_append",
+    "Collatz.HighVariance.CycleWordAlgebra.adjacent_swap",
+    "Collatz.HighVariance.CycleWordAlgebra.marked_swap",
+    "Collatz.HighVariance.CycleWordAlgebra.repeat_length",
+    "Collatz.HighVariance.CycleWordAlgebra.repeat_ones",
+    "Collatz.HighVariance.CycleWordAlgebra.repeat_carry_cast",
+    "Collatz.HighVariance.CycleWordAlgebra.two_block_carry_cast",
+    "Collatz.HighVariance.CycleWordAlgebra.two_block_denominator_cast",
+    "Collatz.HighVariance.CycleWordAlgebra.fixed_modulus_payment",
+    "Collatz.HighVariance.CycleWordAlgebra.two_choice_nonzero",
+    "Collatz.HighVariance.CycleWordAlgebra.scaled_two_choice_nonzero",
+    "CollatzShell.ForcedRoute.value_add_one",
+    "CollatzShell.ForcedRoute.value_positive",
+    "CollatzShell.ForcedRoute.value_residues",
+    "CollatzShell.ForcedRoute.unit_gap_is_one",
+    "CollatzShell.ForcedRoute.value_step",
+    "CollatzShell.ForcedRoute.value_edge",
+    "CollatzShell.ForcedRoute.value_route",
+    "CollatzShell.ForcedRoute.value_edge_unique",
+    "CollatzShell.ForcedRoute.route_is_forced",
+    "CollatzShell.ForcedRoute.no_target_through_depth",
+    "CollatzShell.ForcedRoute.initial_value",
+    "CollatzShell.ForcedRoute.arbitrary_depth_control"
+  ],
+  "commands": [
+    {
+      "source": "research/high-variance-20261123/CycleWordAlgebra.lean",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/high-variance-lean-final/CycleWordAlgebra.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/CycleWordAlgebra.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.501,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "research/high-variance-20261123/ForcedRoute.lean",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/high-variance-lean-final/ForcedRoute.olean",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/ForcedRoute.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.02,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "/workspace/scratch/3f23e1a583aa/high-variance-lean-final/HighVarianceAudit.lean",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-R",
+        "/workspace/scratch/3f23e1a583aa/high-variance-lean-final",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/3f23e1a583aa/high-variance-lean-final/HighVarianceAudit.olean",
+        "/workspace/scratch/3f23e1a583aa/high-variance-lean-final/HighVarianceAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.405,
+      "stdout": "'Collatz.HighVariance.CycleWordAlgebra.ones_append' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.carry_append' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.adjacent_swap' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.marked_swap' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.repeat_length' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.repeat_ones' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.repeat_carry_cast' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.two_block_carry_cast' depends on axioms: [propext]\n'Collatz.HighVariance.CycleWordAlgebra.two_block_denominator_cast' depends on axioms: [propext, Quot.sound]\n'Collatz.HighVariance.CycleWordAlgebra.fixed_modulus_payment' depends on axioms: [propext, Quot.sound]\n'Collatz.HighVariance.CycleWordAlgebra.two_choice_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Collatz.HighVariance.CycleWordAlgebra.scaled_two_choice_nonzero' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.ForcedRoute.value_add_one' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForcedRoute.value_positive' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForcedRoute.value_residues' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForcedRoute.unit_gap_is_one' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForcedRoute.value_step' depends on axioms: [propext, Quot.sound]\n'CollatzShell.ForcedRoute.value_edge' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForcedRoute.value_route' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForcedRoute.value_edge_unique' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForcedRoute.route_is_forced' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForcedRoute.no_target_through_depth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForcedRoute.initial_value' depends on axioms: [propext]\n'CollatzShell.ForcedRoute.arbitrary_depth_control' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "success": true,
+  "axiom_audit_complete": true,
+  "sources_unchanged": true,
+  "finished_utc": "2026-11-23T01:00:17.071321+00:00"
+}

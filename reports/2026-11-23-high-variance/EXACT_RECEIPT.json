@@ -1,0 +1,43 @@
+{
+  "schema": "collatz-high-variance-exact-replay/v1",
+  "started_utc": "2026-11-23T00:57:46.242695+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source": "research/high-variance-20261123/cycle_ideal_control.py",
+  "source_sha256": "d5f53019433b2551ed996103d2c163ca9a9f43c8cca2280e22eca68cda96df1b",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/cycle_ideal_control.py",
+        "--output",
+        "/workspace/scratch/3f23e1a583aa/high-variance-exact-fresh/normal.json"
+      ],
+      "exit_code": 0,
+      "seconds": 22.811,
+      "stdout_log": "normal.log",
+      "stdout_sha256": "9e8cb7ad402fa4393d587d6de5c7c764b786eaa33d1e815fa814e9a66b1c53ea"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/high-variance-20261123/cycle_ideal_control.py",
+        "--output",
+        "/workspace/scratch/3f23e1a583aa/high-variance-exact-fresh/optimized.json"
+      ],
+      "exit_code": 0,
+      "seconds": 23.267,
+      "stdout_log": "optimized.log",
+      "stdout_sha256": "473591df117a4e9216bbc4a003ffaa4a2305f9067d3214dd0168374b62d122a1"
+    }
+  ],
+  "success": true,
+  "source_unchanged": true,
+  "finished_utc": "2026-11-23T00:58:32.323086+00:00"
+}

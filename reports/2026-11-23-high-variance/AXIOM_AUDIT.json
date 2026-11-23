@@ -1,0 +1,173 @@
+{
+  "count": 24,
+  "declarations": [
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.ones_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.carry_append",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.adjacent_swap",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.marked_swap",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.repeat_length",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.repeat_ones",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.repeat_carry_cast",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.two_block_carry_cast",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.two_block_denominator_cast",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.fixed_modulus_payment",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.two_choice_nonzero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Collatz.HighVariance.CycleWordAlgebra.scaled_two_choice_nonzero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_add_one",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_positive",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_residues",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.unit_gap_is_one",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_step",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_edge",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_route",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.value_edge_unique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.route_is_forced",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.no_target_through_depth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.initial_value",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "CollatzShell.ForcedRoute.arbitrary_depth_control",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

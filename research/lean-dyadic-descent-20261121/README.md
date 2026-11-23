@@ -1,5 +1,23 @@
 # Forced-band descent, coefficient escape, and invariant labels
 
+## 23 November continuation: high-variance closing attacks
+
+The [new scientific packet](../high-variance-20261123/README.md) constructs
+primitive high positive rational cycles passing every prescribed finite
+congruence precision while retaining an explicit bad denominator prime.
+For each fixed modulus it gives infinitely many examples with minimum at
+least a positive constant times the square of their least period. It also
+proves an all-horizons obstruction to uniform bounded cap-four inverse
+routing on actual integers, and records the attempted canonical-entropy
+completion. Full Collatz remains open.
+
+Two fresh Lean modules check 24 finite statements, with exact source-bound
+cycle controls and scoped independent reconstruction reviews. The
+[execution packet](../../reports/2026-11-23-high-variance/README.md) keeps the
+formal and written scopes separate. The earlier results below retain their
+original receipts.
+
+
 **Full Collatz remains OPEN.** This packet builds on PR173 at
 `fa0c9e2a2851e6324391e39c17afcb5913185aec` and proves unbounded families of
 actual marked-to-marked descents in Lean. It does not assume convergence of

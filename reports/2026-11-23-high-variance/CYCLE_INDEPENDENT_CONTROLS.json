@@ -1,0 +1,54 @@
+{
+  "scope": "Independent Fraction replay, each rotation, final checker bytes",
+  "checker_sha256": "d5f53019433b2551ed996103d2c163ca9a9f43c8cca2280e22eca68cda96df1b",
+  "cases": [
+    {
+      "M": 1,
+      "q": 12,
+      "ell": 5,
+      "B": 1,
+      "L": 160,
+      "k": 1,
+      "minimum_floor": 4,
+      "all_rotations_checked": 160,
+      "reduced_denominator_ell": 0,
+      "PASS": true
+    },
+    {
+      "M": 1,
+      "q": 17,
+      "ell": 5,
+      "B": 1,
+      "L": 324,
+      "k": 2,
+      "minimum_floor": 107,
+      "all_rotations_checked": 324,
+      "reduced_denominator_ell": 0,
+      "PASS": true
+    },
+    {
+      "M": 5,
+      "q": 12,
+      "ell": 7,
+      "B": 1,
+      "L": 2400,
+      "k": 1,
+      "minimum_floor": 4,
+      "all_rotations_checked": 2400,
+      "reduced_denominator_ell": 0,
+      "PASS": true
+    },
+    {
+      "M": 1,
+      "q": 41,
+      "ell": 5,
+      "B": 41,
+      "L": 520,
+      "k": 1,
+      "minimum_floor": 865,
+      "all_rotations_checked": 520,
+      "reduced_denominator_ell": 0,
+      "PASS": true
+    }
+  ]
+}

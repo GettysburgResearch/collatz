@@ -1,0 +1,40 @@
+{
+  "schema": "collatz-high-variance-source-binding/v1",
+  "parent_published_head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+  "scientific_checkpoint": {
+    "commit": "4cc3c13a8f14f162d36dc2de5dc41f343598abaa",
+    "tree": "34c9d3a3a2612461280030934b947fe96e3ec021",
+    "tracked_files": 438
+  },
+  "scope": "Fresh two-module Lean replay, exact complete-word controls and scoped written reviews; no full Collatz proof",
+  "proof_source_sha256": {
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/high-variance-20261123/ForcedRoute.lean": "1ec27b82a10b58427f854e8d178ffe7b304d13d3ca6ac253e17fa8e11ba9736a"
+  },
+  "files": {
+    "research/high-variance-20261123/CYCLE_IDEAL.md": "373de11d5e0a9bd4b9678f58b711a2ae1aba5c02592d41b8cffe3a832416f392",
+    "research/high-variance-20261123/CycleWordAlgebra.lean": "fc42bf2a602592c7f7ebbe42ca3c21bb96b58f7ce2dc93aed2cafdbac47f984e",
+    "research/high-variance-20261123/ESCAPE_RIGIDITY.md": "12394f74ace03beb3cc6e5a4afd4ee20c7826f9bd4f21355d9abbb085c245580",
+    "research/high-variance-20261123/ForcedRoute.lean": "1ec27b82a10b58427f854e8d178ffe7b304d13d3ca6ac253e17fa8e11ba9736a",
+    "research/high-variance-20261123/README.md": "c2c7534051eb8ca6740e511dbe6839f76057b39f8eb740c3af2524de2f116618",
+    "research/high-variance-20261123/SOURCES.json": "6e668461a0dcd91b3b0d9c34f618bef5d6847aec50907f3bd14cd8c048b168d6",
+    "research/high-variance-20261123/SOURCE_SURGERY.md": "47e2b45ce7a96b7d1e031e5dc294336c53e39e2c4762dbfd8a8b33573a9a8b63",
+    "research/high-variance-20261123/cycle_ideal_control.py": "d5f53019433b2551ed996103d2c163ca9a9f43c8cca2280e22eca68cda96df1b",
+    "research/high-variance-20261123/replay.py": "0c5324028d99518c574425c9b40e3cafea49e8c38cc77c08bd44d0c6507b16b8",
+    "reports/2026-11-23-high-variance/AXIOM_AUDIT.json": "9752d59a2a58a217f602203f647f4c19f29a37da806dbbc3f8a354c65c2f20db",
+    "reports/2026-11-23-high-variance/CYCLE_CONTROLS.json": "9e8cb7ad402fa4393d587d6de5c7c764b786eaa33d1e815fa814e9a66b1c53ea",
+    "reports/2026-11-23-high-variance/CYCLE_CONTROLS_OPTIMIZED.json": "473591df117a4e9216bbc4a003ffaa4a2305f9067d3214dd0168374b62d122a1",
+    "reports/2026-11-23-high-variance/CYCLE_INDEPENDENT_CONTROLS.json": "135eeea27575ac49d960eee2e1848bf41d54c0f13bab7de5bd3bcead757ee360",
+    "reports/2026-11-23-high-variance/CYCLE_REVIEW.md": "2aeb4a7b3d5fda570e1c133937aa80a9a19a70be6ef8b718a22986e943c13ea4",
+    "reports/2026-11-23-high-variance/EXACT_RECEIPT.json": "635e66e6db5d4f1f8920c55d3354072528376d25a577db71814b8f9588c82cc9",
+    "reports/2026-11-23-high-variance/HighVarianceAudit.lean": "928f771d4d407091324a6431a3290159a78d881bfe216b5ba31ca7d7a04a083d",
+    "reports/2026-11-23-high-variance/LEAN_RECEIPT.json": "2dd0844be9c94e0c8676c7f2d81bd2448749a8a9ab321cdb2003c75a53b109b7",
+    "reports/2026-11-23-high-variance/PR182_BEFORE.json": "3f0bb20d765ff81fdf36d0690775da4933d6f99930a614b2dac2f2784d185d45",
+    "reports/2026-11-23-high-variance/README.md": "9363732691f1e684c1996a63c654e9ca61a26bd2da00a6189eec9362c76b04d4",
+    "reports/2026-11-23-high-variance/REVIEW_CYCLE_WORD_ALGEBRA.md": "18288d1d7c473711f50457f48a00b10e2328dcc8057d54f865bd198a28e9c595",
+    "reports/2026-11-23-high-variance/SECOND_SELECTOR_CONTROL.json": "87937170a4104844b627fa2b72d1776337ee701db549fab19de043628371aeb3",
+    "reports/2026-11-23-high-variance/SEMANTIC_REVIEW.md": "76782cf62dcd3c064a27fc3d98b5d0b9936506e25fe65cd00c5bec7c7192e1ef",
+    "reports/2026-11-23-high-variance/SOURCE_ROUTE_REVIEW.md": "7619b6c449c771a6e283d8c6996b212fdf73691ffb20c90cd0a0efad1cdfeddb"
+  },
+  "checkout_receipt_sha256": "ddd15182886dd1eac11efb4442724dc260e29e1550d57e1ba6f74b239e9a7a58"
+}
