@@ -1,0 +1,321 @@
+{
+  "checker_sha256": "ccf0cae72418f7d8250e6cc9125a2190f100522668460e09f3e3826d97aa6791",
+  "cycle_controls": {
+    "cut_determinants": 81924,
+    "large_gap_control": {
+      "full_denominator": 13,
+      "integral": false,
+      "minimum_root_gap": 48,
+      "word": "11011010"
+    },
+    "necklace_weight_classes": 43,
+    "primitive_positive_integral_roots": 1,
+    "primitive_positive_rational_roots": 585,
+    "rational_control": {
+      "carry": 89,
+      "cut_5_gap": 14,
+      "denominator": 47,
+      "suffix_barrier_rotations": [
+        0,
+        5
+      ],
+      "word": "1110010"
+    },
+    "root_ballot_counts": [
+      35,
+      5,
+      7
+    ],
+    "word_lengths_through": 12
+  },
+  "invalid_inferences_rejected": [
+    "omit the final odd bit in ordinary gap realization",
+    "delete cross-source-box collision pairs",
+    "infer whole-window independence from finitely many exact product marginals",
+    "retain one positive source while extending its periodic template indefinitely",
+    "replace full numerical cycle divisibility by the suffix coefficient barrier",
+    "multiply the zero-residue probability by a second necklace-root factor"
+  ],
+  "ordinary_periodic_shadow_controls": [
+    {
+      "avoided_lifts": 0,
+      "canonical_harmonic_weights": false,
+      "carry_constant": "243/64",
+      "collision": "1/2",
+      "distinct_states": 14,
+      "first_lift_bits": 20,
+      "fixed_source_first_gap_mismatch": 13,
+      "full_denominator": 2465,
+      "gap_period": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "labels": [
+        1,
+        2
+      ],
+      "local_order": 3,
+      "local_product_equalities": 28,
+      "nonproduct_control_depth": 4,
+      "ordinary_diagonal": "1/8",
+      "period": 8,
+      "phase_residues": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "precision": 1,
+      "residue_classes": 2,
+      "sample_size": 8,
+      "source_bits": 20,
+      "source_boxes": 8,
+      "source_sha256": "3e39f59ff6d7b4377c914a3dd34e9e52eabd6f4b406344644c016ca68fdcbec4",
+      "telescope_checks": 14,
+      "total_binary_clock": 18,
+      "total_odd_steps": 13,
+      "v2_source_invariant": 19,
+      "warmup": 3
+    },
+    {
+      "avoided_lifts": 0,
+      "canonical_harmonic_weights": false,
+      "carry_constant": "3/2",
+      "collision": "1/2",
+      "distinct_states": 134,
+      "first_lift_bits": 202,
+      "fixed_source_first_gap_mismatch": 133,
+      "full_denominator": 1,
+      "gap_period": [
+        1,
+        2
+      ],
+      "labels": [
+        1,
+        2
+      ],
+      "local_order": 1,
+      "local_product_equalities": 4,
+      "nonproduct_control_depth": 2,
+      "ordinary_diagonal": "1/128",
+      "period": 2,
+      "phase_residues": [
+        238,
+        236
+      ],
+      "precision": 5,
+      "residue_classes": 2,
+      "sample_size": 128,
+      "source_bits": 202,
+      "source_boxes": 128,
+      "source_sha256": "f5b95ef96688464c3647ae3abde48a8a5a0f7e43fc12b0a22d8bdda016faa987",
+      "telescope_checks": 9,
+      "total_binary_clock": 199,
+      "total_odd_steps": 133,
+      "v2_source_invariant": 200,
+      "warmup": 5
+    },
+    {
+      "avoided_lifts": 0,
+      "canonical_harmonic_weights": false,
+      "carry_constant": "9/4",
+      "collision": "1/4",
+      "distinct_states": 4106,
+      "first_lift_bits": 6156,
+      "fixed_source_first_gap_mismatch": 4105,
+      "full_denominator": 17,
+      "gap_period": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "labels": [
+        1,
+        2
+      ],
+      "local_order": 2,
+      "local_product_equalities": 12,
+      "nonproduct_control_depth": 3,
+      "ordinary_diagonal": "1/4096",
+      "period": 4,
+      "phase_residues": [
+        4627,
+        380,
+        3851,
+        6169
+      ],
+      "precision": 8,
+      "residue_classes": 4,
+      "sample_size": 4096,
+      "source_bits": 6156,
+      "source_boxes": 4096,
+      "source_sha256": "ef71aa54cb8a8b43db842e4baabfcc4eb5a23b8057f835f91f3e85c132d56f5c",
+      "telescope_checks": 12,
+      "total_binary_clock": 6157,
+      "total_odd_steps": 4105,
+      "v2_source_invariant": 6158,
+      "warmup": 8
+    },
+    {
+      "avoided_lifts": 0,
+      "canonical_harmonic_weights": false,
+      "carry_constant": "243/64",
+      "collision": "1/8",
+      "distinct_states": 1034,
+      "first_lift_bits": 1552,
+      "fixed_source_first_gap_mismatch": 1033,
+      "full_denominator": 2465,
+      "gap_period": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "labels": [
+        1,
+        2
+      ],
+      "local_order": 3,
+      "local_product_equalities": 28,
+      "nonproduct_control_depth": 4,
+      "ordinary_diagonal": "1/1024",
+      "period": 8,
+      "phase_residues": [
+        1000,
+        407,
+        611,
+        917,
+        688,
+        2126,
+        1048,
+        1333
+      ],
+      "precision": 7,
+      "residue_classes": 8,
+      "sample_size": 1024,
+      "source_bits": 1552,
+      "source_boxes": 1024,
+      "source_sha256": "4f40c08f75efc9ebf9e1c38f29300791daf708b961d667a96d5633f83b363912",
+      "telescope_checks": 20,
+      "total_binary_clock": 1549,
+      "total_odd_steps": 1033,
+      "v2_source_invariant": 1550,
+      "warmup": 7
+    },
+    {
+      "avoided_lifts": 0,
+      "canonical_harmonic_weights": false,
+      "carry_constant": "2187/256",
+      "collision": "1/9",
+      "distinct_states": 737,
+      "first_lift_bits": 980,
+      "fixed_source_first_gap_mismatch": 737,
+      "full_denominator": 15587,
+      "gap_period": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "labels": [
+        1,
+        1,
+        2
+      ],
+      "local_order": 2,
+      "local_product_equalities": 12,
+      "nonproduct_control_depth": 4,
+      "ordinary_diagonal": "1/729",
+      "period": 9,
+      "phase_residues": [
+        496,
+        380,
+        206,
+        674,
+        647,
+        121,
+        182,
+        638,
+        661
+      ],
+      "precision": 6,
+      "residue_classes": 9,
+      "sample_size": 729,
+      "source_bits": 980,
+      "source_boxes": 729,
+      "source_sha256": "55ed994d3c2198cbf74fc13ad2bbd17932511e2b0dd3f68bbb39ff707cd8ef79",
+      "telescope_checks": 22,
+      "total_binary_clock": 980,
+      "total_odd_steps": 736,
+      "v2_source_invariant": 983,
+      "warmup": 6
+    }
+  ],
+  "schema": "collatz-literature-round4-exact/v1",
+  "scope": "bounded exact controls, not a universal proof or a canonical-law sample",
+  "success": true,
+  "triadic_controls": {
+    "convergent_sources": 1027,
+    "linear_verifier_checks": 4106,
+    "maxima": {
+      "denominator_exponent": 133,
+      "shortcut_steps": 329
+    },
+    "power_examples": [
+      {
+        "k": 1,
+        "old_own_height_horizon": 26,
+        "ordinary_steps_to_one": 1,
+        "reduced_denominator_exponent": 0
+      },
+      {
+        "k": 2,
+        "old_own_height_horizon": 60,
+        "ordinary_steps_to_one": 2,
+        "reduced_denominator_exponent": 1
+      },
+      {
+        "k": 8,
+        "old_own_height_horizon": 926,
+        "ordinary_steps_to_one": 8,
+        "reduced_denominator_exponent": 7
+      },
+      {
+        "k": 32,
+        "old_own_height_horizon": 14616,
+        "ordinary_steps_to_one": 32,
+        "reduced_denominator_exponent": 31
+      },
+      {
+        "k": 128,
+        "old_own_height_horizon": 233536,
+        "ordinary_steps_to_one": 128,
+        "reduced_denominator_exponent": 127
+      }
+    ],
+    "power_of_two_cases": 128,
+    "scope": "known finite trajectories; all-time classification is a written theorem, not inferred from this census",
+    "short_parity_prefix_false_candidates": 9
+  },
+  "verifier_sha256": "0470da316c8e5cadb1c0b5a51452a5e9cfe2adcfb3f5b442f7cce2729fe48327"
+}

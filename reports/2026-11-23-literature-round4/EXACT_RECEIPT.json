@@ -1,0 +1,41 @@
+{
+  "date_utc": "2026-11-23T03:36:38.854412+00:00",
+  "scope": "Bounded exact controls, not an infinite-orbit or convergence proof",
+  "checker_sha256": "ccf0cae72418f7d8250e6cc9125a2190f100522668460e09f3e3826d97aa6791",
+  "verifier_sha256": "0470da316c8e5cadb1c0b5a51452a5e9cfe2adcfb3f5b442f7cce2729fe48327",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 0.9,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-literature-round4/EXACT_CONTROLS.json",
+      "output_sha256": "6adc0d92c3ec2e825ac0c20b04c60fa7e48739c2b3dd0d384b7dd5e21153e15c"
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/3f23e1a583aa/collatz/research/literature-round4-20261123/exact_replay.py"
+      ],
+      "cwd": "/workspace/scratch/3f23e1a583aa/collatz",
+      "exit_code": 0,
+      "seconds": 0.899,
+      "stderr": "",
+      "output_path": "reports/2026-11-23-literature-round4/EXACT_CONTROLS_OPTIMIZED.json",
+      "output_sha256": "6adc0d92c3ec2e825ac0c20b04c60fa7e48739c2b3dd0d384b7dd5e21153e15c"
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "success": true
+}

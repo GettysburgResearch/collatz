@@ -1,0 +1,29 @@
+import ActualLawRigidity
+import TriadicRigidity
+import CycleRigidity
+
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.gapCarry_append
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.rotated_gap_carry
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.period_shadow_step
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.actual_shadow_step
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_telescope
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_ternary_divisibility
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.shadow_binary_divisibility
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.source_height_payment
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.same_shadow_phase_residue
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.phase_residue_card
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.phase_collision_lower
+#print axioms Collatz.LiteratureRoundFour.ActualLawRigidity.affine_coincidence_unique
+#print axioms CollatzShell.TriadicRigidity.step_positive
+#print axioms CollatzShell.TriadicRigidity.step_nonzero
+#print axioms CollatzShell.TriadicRigidity.cycle_of_step
+#print axioms CollatzShell.TriadicRigidity.step_energy
+#print axioms CollatzShell.TriadicRigidity.finite_pair_rigidity
+#print axioms CollatzShell.TriadicRigidity.alltime_integral_pair_rigidity
+#print axioms CollatzShell.TriadicRigidity.odd_count_lt_twice_even_count
+#print axioms CollatzShell.TriadicRigidity.clock_lt_three_even_count
+#print axioms Collatz.HighVariance.CycleRigidity.cut_determinant
+#print axioms Collatz.HighVariance.CycleRigidity.rotation_transport
+#print axioms Collatz.HighVariance.CycleRigidity.full_denominator_rotation_dvd
+#print axioms Collatz.HighVariance.CycleRigidity.least_rotation_full_denominator_gap
+#print axioms Collatz.HighVariance.CycleRigidity.least_rotation_suffix_contracts
