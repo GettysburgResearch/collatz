@@ -1,14 +1,15 @@
 # Exact witnesses and the global Lean closure attack
 
 **Status: OPEN for Collatz, the requested residue-512 implication, and
-`FloorIntervalStep`.** The current continuation attacks complete-witness
+`FloorIntervalStep`.** The latest continuation attacks complete-witness
 transport, the ordinary escape remainder, and full-denominator cycle
-integrality in parallel. It removes the signed normalizer funding obstacle
-by a finite padding theorem, adds nine core-Lean theorems, and gives a written
-classification of continuous power-logarithm barriers, and exact controls
-that reject two proposed cycle-fiber arguments. No successful universal
-certificate transformer or exclusion of all escaping or cyclic components
-is claimed.
+integrality in parallel, after refreshing the latest selected peer work
+and primary literature. It gives a written finite exact-recognition theorem
+for the complementary point, twelve new finite core-Lean declarations,
+an ordinary renewal/Haar theorem retaining the actual endpoint, and an
+exact obstruction to one complete-cycle local-energy mechanism.
+No successful universal certificate transformer or exclusion of all
+escaping or cyclic components is claimed.
 
 The earlier formal equivalences, unrestricted source-witness reductions,
 finite boundary optimizer, and ordinary atomic eigenmeasure classification
@@ -16,7 +17,25 @@ remain available below. There is no input exponent or witness-length bound,
 `sorry`, or conjectural axiom in the new Lean modules. The project uses
 Lean 4.34.1 with core libraries only.
 
-## Latest checkpoint: unrestricted witness costs and the global escape remainder
+## Latest checkpoint: exact dual recognition and source-preserving closure attacks
+
+The [new packet](literature-closure/README.md) starts from published head
+`aaa132e904e4e6d0b438e963f76d72d79e2c7f34`. A supplied triadic candidate
+passing the known height-dependent finite test is now proved, in written
+mathematics, to be exactly the complementary point: both trajectories
+arrive at `(1,2)` by clock `8E`, where the tested horizon is `9E+1`.
+Constructing such a candidate for every positive input remains open.
+
+The explicit construction from an arbitrary complete convergent source
+has an exact uncancelled denominator, and every noncycle-tail transplant
+fails the paid horizon. The other lanes derive conditional Haar while
+retaining the ordinary endpoint, quantify its source reweighting cost,
+and certify the failure of a specified all-word positive-carry potential.
+The [execution and review report](../../reports/lean-exact-witness-global-20261121/literature-closure/README.md)
+records the twelve new finite Lean audits, exact carry replay, source pins,
+and written-proof boundaries. Earlier frozen proof packets are unchanged.
+
+## Checkpoint sixteen: unrestricted witness costs and the global escape remainder
 
 This continuation starts at published head
 `6de3e304bb49a93a6c5ef0e5563137e75c7defb4` and retains the original target.

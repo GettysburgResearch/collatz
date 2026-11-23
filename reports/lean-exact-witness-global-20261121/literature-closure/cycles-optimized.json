@@ -1,0 +1,55 @@
+{
+  "certificate_sha256": "7bff33ef7e3ae184f84b8cef06f0236228df770e6b7bc1d603bdcc082abbaa56",
+  "coefficient_identity": "2 delta_11 + 3 delta_01 + 3 delta_10",
+  "family_controls": [
+    {
+      "full_denominator_bits": 4,
+      "full_gcd": 1,
+      "k": 1,
+      "length": 8,
+      "minimum": "283/13",
+      "weight": 5
+    },
+    {
+      "full_denominator_bits": 13,
+      "full_gcd": 1,
+      "k": 2,
+      "length": 16,
+      "minimum": "149965/6487",
+      "weight": 10
+    },
+    {
+      "full_denominator_bits": 55,
+      "full_gcd": 13,
+      "k": 7,
+      "length": 56,
+      "minimum": "40796327351582947/1694311456840633",
+      "weight": 35
+    },
+    {
+      "full_denominator_bits": 103,
+      "full_gcd": 1,
+      "k": 13,
+      "length": 104,
+      "minimum": "242074959037559439032910231772303/9981358142774132969973704018173",
+      "weight": 65
+    },
+    {
+      "full_denominator_bits": 160,
+      "full_gcd": 13,
+      "k": 20,
+      "length": 160,
+      "minimum": "1770069736771011002420137573410956463804506982313/72778778199914737474401823303897057457986540075",
+      "weight": 100
+    }
+  ],
+  "flux_cancels": true,
+  "local_transitions": 34,
+  "mutation_rejections": [
+    "weight",
+    "witness",
+    "output"
+  ],
+  "scope": "exact local-potential obstruction; no cycle-exclusion theorem",
+  "weight_sum": 40
+}

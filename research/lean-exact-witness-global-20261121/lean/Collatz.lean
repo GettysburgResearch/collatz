@@ -45,3 +45,4 @@ import Collatz.ContextSurgery
 import Collatz.FiniteSourceBoundary
 import Collatz.NegativeCycleExtension
 import Collatz.WitnessLengthSeparation
+import Collatz.MultiplierTransport

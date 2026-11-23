@@ -392,3 +392,7 @@ import Collatz
 #print axioms CollatzWitnessLengthSeparation.output_length_lower_bound
 #print axioms CollatzWitnessLengthSeparation.tuple_length_lower_bound
 #print axioms CollatzWitnessLengthSeparation.no_input_length_bound
+
+-- Literature closure: necessary actual clocks for semigroup multiplier lifts.
+#print axioms CollatzMultiplierTransport.merger_clock_budget
+#print axioms CollatzMultiplierTransport.no_uniform_merger_clock

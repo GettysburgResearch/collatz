@@ -1,0 +1,152 @@
+{
+  "schema": "collatz-literature-closure-files/v1",
+  "base_commit": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+  "scope": "All new or modified continuation files except this manifest; unchanged inherited proof files retain their prior receipts.",
+  "files": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/README.md",
+      "bytes": 4850,
+      "sha256": "0e31902fdc8a5d57262406f95b7ac362604aa83f9c1f6576ad388fcdf89d7771"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/REVIEW_ATOMIC_RENEWAL.md",
+      "bytes": 3216,
+      "sha256": "9503d4f5d490d3a6570c752c9f7004b2bb0ec1d9f6129ce68d6b0ccd0f0bb963"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/REVIEW_COORDINATING.md",
+      "bytes": 5871,
+      "sha256": "bcd26ee652b70d1838d60c608c91ce065dd209bd23a323f2b56c22b8ed583a88"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/REVIEW_SOURCE_TAIL_TRANSPORT.md",
+      "bytes": 3214,
+      "sha256": "a78e06bab32a5b969630cc71c368d81723e5bb2ab9baf87bb00b19739d3a4dd8"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/SOURCES.json",
+      "bytes": 4352,
+      "sha256": "7fe6d7e3b602dff2e88ff369fc8493d2614cb01cbf577a2a945275698e3f5fb9"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/cycles-normal.json",
+      "bytes": 1343,
+      "sha256": "57caff84203c7b50710bc7905af2f7c8aa572b902208d6c38033ede451be41a3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/cycles-optimized.json",
+      "bytes": 1343,
+      "sha256": "57caff84203c7b50710bc7905af2f7c8aa572b902208d6c38033ede451be41a3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/cycles-replay.json",
+      "bytes": 1934,
+      "sha256": "f57ed38b6ea3d4d1440a7d43f9b4785a8215e1029037366c87c80d3ffbbacd99"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/lean-replay.json",
+      "bytes": 4720,
+      "sha256": "e363cd7d4fa2899e55e3d6bf73690cc9cc79e76840ff4d33660100f4d4fff2e1"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/multiplier-audit.log",
+      "bytes": 220,
+      "sha256": "8ba739ee86473f54cc1e8dac29b3e0d64ad2245bd5a592d9adaa9afaa8f23668"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/multiplier-strict.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/literature-closure/source-tail-strict-audit.log",
+      "bytes": 1028,
+      "sha256": "e1fc0c49e1025bfdca9a64f1960932aab063681c696b14e85f93dfa5960063fa"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "bytes": 56900,
+      "sha256": "ba9d619d93cb52be34b896af0a18cd9856f29caa6cba26f4bfeae61c5209b84d"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+      "bytes": 22017,
+      "sha256": "8868a24af48ac2aa2e4a42225b5c673b57666c757a155337542cbec10ca293d8"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditMultiplierTransport.lean",
+      "bytes": 162,
+      "sha256": "294d2b9937104b3b605f903aa4470dc25ef5de70a98c26bee34afef094c19b66"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+      "bytes": 1502,
+      "sha256": "ba0ce4ab818e4fd70e520fe8e586567f1b0877511ac4ed0515c4b7c5ba1a14d2"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/MultiplierTransport.lean",
+      "bytes": 4811,
+      "sha256": "317dc5f78d75a25605032a2cb327a1e28193c79919342ce58a445512ef66f725"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/README.md",
+      "bytes": 7678,
+      "sha256": "a630baa2ca4b0e741e40f97f297c1a36ac2f5bc7a576d7657ac04bad04b6fc4c"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/atomic/ORDINARY_RENEWAL_AND_RETAINED_ENDPOINT.md",
+      "bytes": 18285,
+      "sha256": "c5dc5eb08a9666c7e780db1b9ae599a7d58ad6895172159a4db91458119c16b6"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/CHECK_RESULT.json",
+      "bytes": 1343,
+      "sha256": "57caff84203c7b50710bc7905af2f7c8aa572b902208d6c38033ede451be41a3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/POSITIVE_CARRY_CLOSURE_ATTEMPT.md",
+      "bytes": 9761,
+      "sha256": "81a35de37fac925c58fe399fc8644b33e756d55085b74011bdcded1beb6a5a4c"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/SOURCES.md",
+      "bytes": 6234,
+      "sha256": "63e739093b2296afbfcb954f73465c188fcaccd24febf781de77b79136f5c175"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/positive_carry_dual.json",
+      "bytes": 15766,
+      "sha256": "7bff33ef7e3ae184f84b8cef06f0236228df770e6b7bc1d603bdcc082abbaa56"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/positive_carry_dual_check.py",
+      "bytes": 6529,
+      "sha256": "15d4f20ce793cd67a41b404c3fcf55538327f7dd7baeb1c1ac646ba2199329d0"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/FINITE_DUAL_RECOGNITION.md",
+      "bytes": 10447,
+      "sha256": "29a7e0cbfc5ed68479985829b87ae48f15aa7361132b17e8d84e0a422aeb799e"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCES.json",
+      "bytes": 2656,
+      "sha256": "f01c67fb584abd31316b293bf1df05f13f0d2f846ebd03bbfabfb08881ed9b1a"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SOURCE_TAIL_TRANSPORT.md",
+      "bytes": 12275,
+      "sha256": "f9b97f4945e3adeaf7b7eb2d1bfc9e50bb59fb0d166db398c55f2f40011c2f8f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/triadic/SourceTailPullback.lean",
+      "bytes": 5983,
+      "sha256": "06fd6dd82aef57efdbbef8e602c408c633d645edfcf1d72afc7025a360ff78fb"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/witness/MULTIPLIER_TRANSPORT.md",
+      "bytes": 6109,
+      "sha256": "dec49df0c881ee560ce9bcd3d1da076301b9686c762a1929eda1e9d368984cd4"
+    }
+  ]
+}
