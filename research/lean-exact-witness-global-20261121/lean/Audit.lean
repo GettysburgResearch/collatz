@@ -381,3 +381,14 @@ import Collatz
 #print axioms CollatzFiniteSourceBoundary.minimum_on_boundary
 #print axioms CollatzFiniteSourceBoundary.boundary_minimum_iff
 #print axioms CollatzFiniteSourceBoundary.boundary_maximum_iff
+
+-- Checkpoint sixteen: full-word cycle guards and unrestricted witness-length separation.
+#print axioms CollatzNegativeCycleExtension.extension_data
+#print axioms CollatzNegativeCycleExtension.extension_binary_guard
+#print axioms CollatzNegativeCycleExtension.extension_ternary_guard
+#print axioms CollatzWitnessLengthSeparation.four_step_input
+#print axioms CollatzWitnessLengthSeparation.exact_clocks
+#print axioms CollatzWitnessLengthSeparation.output_prefix_and_tail
+#print axioms CollatzWitnessLengthSeparation.output_length_lower_bound
+#print axioms CollatzWitnessLengthSeparation.tuple_length_lower_bound
+#print axioms CollatzWitnessLengthSeparation.no_input_length_bound

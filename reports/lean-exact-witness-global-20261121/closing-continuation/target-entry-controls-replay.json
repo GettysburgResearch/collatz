@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-exact-control-replay/v1",
+  "created_utc": "2026-11-23T02:05:23.817560+00:00",
+  "script": "research/lean-exact-witness-global-20261121/target_entry_controls.py",
+  "script_sha256": "88fffd4c92be8e6a86bae7fcc8aca5f448badf31ed72faffa2b334d4e89595af",
+  "records": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/target_entry_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.058,
+      "output": "reports/lean-exact-witness-global-20261121/closing-continuation/target-entry-controls-normal.json",
+      "stdout_sha256": "33f3dec6b1a86df64d4a3a8e0b49ec67afd202f2db9956f645425504457cd6b4",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/target_entry_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.102,
+      "output": "reports/lean-exact-witness-global-20261121/closing-continuation/target-entry-controls-optimized.json",
+      "stdout_sha256": "33f3dec6b1a86df64d4a3a8e0b49ec67afd202f2db9956f645425504457cd6b4",
+      "stderr": ""
+    }
+  ],
+  "normal_and_optimized_identical": true,
+  "scope": "Targeted finite exact controls, not a universal convergence proof or large census."
+}

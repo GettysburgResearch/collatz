@@ -1,0 +1,208 @@
+{
+  "schema": "collatz-checkpoint-file-manifest/v1",
+  "checkpoint": 16,
+  "parent_sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+  "scope": "Changed scientific and evidence files in this checkpoint. This manifest excludes itself. Future follow-up files are outside this binding.",
+  "files": [
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/OPEN_PR_HEADS.json",
+      "bytes": 38019,
+      "sha256": "0886bff9ca976efa992b28db82a9163f4431b74821b4cacfc7c1c49688fb95e7"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/README.md",
+      "bytes": 6868,
+      "sha256": "b86f239b41013a4a23bcc85afd990a4c10977c6ebf6c08e181bba89f6e64dd9f"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_ATOMIC_PROFILE.md",
+      "bytes": 16669,
+      "sha256": "5e070e71b0f831d3f10f846cafd648ffe8c609c33b5ba3fe157f02e4a24060e0"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_COORDINATING.md",
+      "bytes": 5364,
+      "sha256": "990042c6069aaabdbac88ff5e4be34958df673c5a7f0530a560c23fa3d941a38"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_CYCLE_CONTROLS.md",
+      "bytes": 5838,
+      "sha256": "fff214465ea9fe63702c2597d21d06b38a61a7b3c8d38bf722d26f593a1bfc61"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_EXTENSION.md",
+      "bytes": 4388,
+      "sha256": "43d893e034eb79a90da29e22b3316e2b0a51a79a117f9180ad8b580c0f5f28ec"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_MAXIMUM_ATOM_TEST.md",
+      "bytes": 3746,
+      "sha256": "28fe6051a6a54fffef557dab5b031e139265ec7996249fdf95605757d3a919cb"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_TARGET.md",
+      "bytes": 6753,
+      "sha256": "b23104b21f133d660ff1bd25dd7cd3af48163c34db61d629a4a7d4e0f5b01b36"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/REVIEW_TARGET_PADDING.md",
+      "bytes": 5459,
+      "sha256": "5ab0bfcd53d3f885eb98268fa24893e3159120d383dde4870ac4358dc94b0360"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/SOURCES.json",
+      "bytes": 13812,
+      "sha256": "d2ea9e632e3ffb5445746f547cf519c54fd42f37e347e5396c4d93cd03dda42b"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/atomic-cycle-controls-normal.json",
+      "bytes": 19622,
+      "sha256": "9d834d870fda7b248ce2244eee50346fa8c92864c3b969e688e0c1b6316e4599"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/atomic-cycle-controls-optimized.json",
+      "bytes": 19622,
+      "sha256": "9d834d870fda7b248ce2244eee50346fa8c92864c3b969e688e0c1b6316e4599"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/atomic-cycle-controls-replay.json",
+      "bytes": 1611,
+      "sha256": "a90f621cd1f7acf7c6a7e78b9e2c781a85582859c4bb9465ecc91117c2da057c"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-axioms-extension.txt",
+      "bytes": 406,
+      "sha256": "cf34d37c8a3c9c721dca108f19d0b3a75ab6dd96707d335b9fee66b9bba6b024"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-axioms-length.txt",
+      "bytes": 749,
+      "sha256": "02df4cbf4b1d81131b4637f92ae9bf06422c361cb0e88390c68fc1696040ab05"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-build.txt",
+      "bytes": 1374,
+      "sha256": "1f51f8bacf4f6a5151e8b5bdb47f712583c4c9da6bfa7f3a390f6fc6616b3fe3"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-strict-extension.txt",
+      "bytes": 74,
+      "sha256": "da83dca465741d0c5125ccc9959041d76ed57b69604c15ee12c8b87d29aeb908"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen-strict-length.txt",
+      "bytes": 75,
+      "sha256": "28915026ae79a0ac6b179ed1585a8a7bf7d9b7398d9e887df12cf182d540abbe"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/checkpoint-sixteen.json",
+      "bytes": 14800,
+      "sha256": "f5a48993925b46e2d15a3aaba3f466d23bb7c0cad684579f54a01cfe5ae36783"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/cycle-fiber-controls-normal.json",
+      "bytes": 5666,
+      "sha256": "8ab300068e0bc3e87925df330d75ae1c1d1838cb15df4d0f71c6bfcf4a2697e9"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/cycle-fiber-controls-optimized.json",
+      "bytes": 5666,
+      "sha256": "8ab300068e0bc3e87925df330d75ae1c1d1838cb15df4d0f71c6bfcf4a2697e9"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/cycle-fiber-controls-replay.json",
+      "bytes": 1620,
+      "sha256": "457325bffaa8e6606343bff0de2135ca532bf7eeff103682702f44a5a79897c2"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/target-entry-controls-normal.json",
+      "bytes": 9658,
+      "sha256": "33f3dec6b1a86df64d4a3a8e0b49ec67afd202f2db9956f645425504457cd6b4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/target-entry-controls-optimized.json",
+      "bytes": 9658,
+      "sha256": "33f3dec6b1a86df64d4a3a8e0b49ec67afd202f2db9956f645425504457cd6b4"
+    },
+    {
+      "path": "reports/lean-exact-witness-global-20261121/closing-continuation/target-entry-controls-replay.json",
+      "bytes": 1611,
+      "sha256": "5161f34615a7c4b58706c3bc2e757e972ba23f196a1418ef9866c3aa108268e3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/ATOMIC_EXCLUSION_CONTINUATION.md",
+      "bytes": 27606,
+      "sha256": "c4d2c2124f51d4cd8dd59e9169197da7a79d45b4f290d2379151185c501db16a"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/CYCLE_EXCLUSION_CONTINUATION.md",
+      "bytes": 11536,
+      "sha256": "4c16065f7439800b50e429c28ed1b2e64facad4d8df8a01650908d30aea0dcb4"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/MAXIMUM_ATOM_TEST.md",
+      "bytes": 4627,
+      "sha256": "c6c800ae9e98065e1c4915cf39a1c8fbcd96d04bf88be295e822bbfeb0bc729f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/README.md",
+      "bytes": 55686,
+      "sha256": "d1845960c00f9c4efacfafabef33832466fd8f7c17f1418237ef0b8c60d019b5"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/TARGET_ENTRY_CONTINUATION.md",
+      "bytes": 14231,
+      "sha256": "a1d0142df4803f0091e373dfe749cc02887a4fb0891e95e935c428c91fee9cb0"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/TARGET_PADDING_CONTINUATION.md",
+      "bytes": 9148,
+      "sha256": "ea71e2142b4ae3e85f868e92e89fe7786364af90380a17ac06a7bc11e2dc0512"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/atomic_cycle_controls.py",
+      "bytes": 8404,
+      "sha256": "0a3de3f1d20d65cfa712916ad9966f069ba96ae669715a7096b34ba06f245fbb"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/cycle_fiber_controls.py",
+      "bytes": 6661,
+      "sha256": "98eacffe0ef3bd2f02e8044764a8dd443c49dbf0bf04a5e9c5b3eeba31e0e24e"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+      "bytes": 21811,
+      "sha256": "bf31fd8898ff0944834def75be8ca327bf8c5a34e139c681d181d666145f77ea"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditNegativeCycleExtension.lean",
+      "bytes": 305,
+      "sha256": "bb02a5e564bfda8b912ec0c16956a1180f1d87e07379d084c69f37cd144efdc3"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/AuditWitnessLengthSeparation.lean",
+      "bytes": 435,
+      "sha256": "50e5e06adab104a95a966c1f7a89812b8c02e5b23722e798c4a3674006569a2e"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+      "bytes": 1467,
+      "sha256": "ce6f912d36e9e6dfc55f3718d58c48b6281ee2b1e1190e87425dec17fd91cc0f"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/NegativeCycleExtension.lean",
+      "bytes": 4557,
+      "sha256": "f69070cfc0767d24a1e8305e431574e9aed62b7158b80694b7787df7e3330012"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/WitnessLengthSeparation.lean",
+      "bytes": 12919,
+      "sha256": "03bcc009632fed5696438f5b4a9c7288b239f2f1f5810bc61ffe92bb6a41da41"
+    },
+    {
+      "path": "research/lean-exact-witness-global-20261121/target_entry_controls.py",
+      "bytes": 8015,
+      "sha256": "88fffd4c92be8e6a86bae7fcc8aca5f448badf31ed72faffa2b334d4e89595af"
+    }
+  ]
+}

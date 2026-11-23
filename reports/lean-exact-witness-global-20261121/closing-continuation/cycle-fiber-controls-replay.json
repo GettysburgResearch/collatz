@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-exact-control-replay/v1",
+  "created_utc": "2026-11-23T02:06:51.041389+00:00",
+  "script": "research/lean-exact-witness-global-20261121/cycle_fiber_controls.py",
+  "script_sha256": "98eacffe0ef3bd2f02e8044764a8dd443c49dbf0bf04a5e9c5b3eeba31e0e24e",
+  "records": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/cycle_fiber_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.051,
+      "output": "reports/lean-exact-witness-global-20261121/closing-continuation/cycle-fiber-controls-normal.json",
+      "stdout_sha256": "8ab300068e0bc3e87925df330d75ae1c1d1838cb15df4d0f71c6bfcf4a2697e9",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/cycle_fiber_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.101,
+      "output": "reports/lean-exact-witness-global-20261121/closing-continuation/cycle-fiber-controls-optimized.json",
+      "stdout_sha256": "8ab300068e0bc3e87925df330d75ae1c1d1838cb15df4d0f71c6bfcf4a2697e9",
+      "stderr": ""
+    }
+  ],
+  "normal_and_optimized_identical": true,
+  "scope": "Specified rational cycles and carry controls; not an all-word census or integer-cycle exclusion."
+}

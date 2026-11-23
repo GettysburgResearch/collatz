@@ -1,49 +1,187 @@
 # Exact witnesses and the global Lean closure attack
 
-**Status: OPEN for Collatz and for the requested residue implication.**
-The current checkpoint replaces an unbounded source-witness search by an
-exact finite ordinary boundary, with five new core-Lean theorems and an
-executable all-certificate optimizer. A separate analytic attack classifies
-all finite positive ordinary atomic eigenmeasures of a new inverse-pressure
-operator: its nonzero extreme rays correspond exactly to escaping ordinary
-components. This characterization uses an elementary orbit count, without
-the earlier canonical-envelope or predecessor-population hypotheses.
-The cycle attack proves a discrepancy bound in terms of the actual cycle
-minimum and retains the complete denominator in a bounded integer carry
-system and an M-matrix class. None of these results establishes the remaining
-target entry, eliminates the atomic cone, or excludes every nontrivial cycle.
+**Status: OPEN for Collatz, the requested residue-512 implication, and
+`FloorIntervalStep`.** The current continuation attacks complete-witness
+transport, the ordinary escape remainder, and full-denominator cycle
+integrality in parallel. It removes the signed normalizer funding obstacle
+by a finite padding theorem, adds nine core-Lean theorems, and gives a written
+classification of continuous power-logarithm barriers, and exact controls
+that reject two proposed cycle-fiber arguments. No successful universal
+certificate transformer or exclusion of all escaping or cyclic components
+is claimed.
 
-The results include kernel-checked equivalences for arbitrary finite witnesses,
-an all-exponent branch of a global induction, and source-witness induction.
-The preceding checkpoint proves a binary-run bound for the entire actual
-ordinary clock, upgrades the S-unit return theorem to finiteness of sparse
-endpoint pairs, and obtains a uniform occupation bound for both escaping
-orbits and positive cycles. It also determines every finite-Green energy
-diagonal under the pinned canonical inputs, including the nonvanishing
-moving cutoff contribution. A second new Lean module carries exact source
-surgery through arbitrary contexts while retaining the supplied complete
-tail and original target. Success of that carry program on every remaining
-counterquery is unproved.
-The preceding checkpoint combines least-target induction, minimum source grade,
-maximum source value at that grade, and the original target floor in one
-canonical counterquery. Its exact remaining proposition is `FloorIntervalStep`,
-equivalent to full Collatz and the original residue implication. It is unproved.
-The preceding checkpoint supplies a strict-grade interval rule from every
-sufficiently separated negative low block, and an unconditional canonical
-source selector for every target at least 177. The selected source's whole
-future orbit stays below half the original target, making its successful
-return cones actual original-target descents. The remaining certificate
-language has an actual prefix ending at 11 and fixed tail `[1,2,3,4]`.
-A separate global attack proves binary-run compactness and
-quantitative high-run occupation on every escaping ordinary orbit. The joined
-signed-shadow and modular-forcing arithmetic is checked in Lean; the complete
-binary combinatorics and occupation deductions have written proofs.
-A complete recursive cover of the canonical prefix states is still missing.
-These results do not prove the implication or Collatz.
-There is no exponent bound, witness-length bound, `sorry`, or conjectural axiom
-in the new Lean modules. Lean 4.34.1 is used without Mathlib or other packages.
+The earlier formal equivalences, unrestricted source-witness reductions,
+finite boundary optimizer, and ordinary atomic eigenmeasure classification
+remain available below. There is no input exponent or witness-length bound,
+`sorry`, or conjectural axiom in the new Lean modules. The project uses
+Lean 4.34.1 with core libraries only.
 
-## Latest checkpoint: finite source boundary and ordinary atomic pressure
+## Latest checkpoint: unrestricted witness costs and the global escape remainder
+
+This continuation starts at published head
+`6de3e304bb49a93a6c5ef0e5563137e75c7defb4` and retains the original target.
+The [source snapshot](../../reports/lean-exact-witness-global-20261121/closing-continuation/SOURCES.json)
+pins the refreshed peer heads and the particular source files read.
+The [execution and review report](../../reports/lean-exact-witness-global-20261121/closing-continuation/README.md)
+distinguishes written proofs, Lean results, targeted controls, and open steps.
+
+### Four input odd steps force arbitrarily long possible output witnesses
+
+For `m=27h`, `h>=1`, put
+
+    K=(4^m-1)/81,  x=256K+1,  y=(x+1)/2=128K+1.
+
+Every x is an actual input in residue 257 with complete word
+`[2,2,2,2m+2]`. Every possible complete witness for y must contain
+
+    [2,2,2,1] ++ [2]^(m-1)
+
+and a nonempty complete tail. Its length is therefore at least `m+4`.
+This applies to the original increasing tuple, preserving its supplied
+length. For every proposed bound, a four-step input has no output witness
+of length at most that bound. The theorem does not assume or establish
+that the outputs have complete witnesses.
+
+The two exact ordinary clocks are also retained:
+
+    T^(2m+8)(x)=1,    T^(2m+7)(y)=3^m+1<y.
+
+Thus these outputs cannot be least positive counterexamples, even though
+their possible complete witnesses have unbounded length. This does not
+supply convergence of every smaller integer.
+
+[`WitnessLengthSeparation.lean`](lean/Collatz/WitnessLengthSeparation.lean)
+proves six public results, including consumption of the forced prefix
+from every complete output witness and transfer to the original tuple.
+[The complete-witness note](TARGET_ENTRY_CONTINUATION.md) also gives a
+terminating signed normalizer for an arbitrary source word. Its exact
+ordinary compilation requires that its finite clock fit inside the
+source's available binary precision. The literal first-hit source 129
+shows why that condition cannot be dropped.
+
+The [padding continuation](TARGET_PADDING_CONTINUATION.md) then removes
+that funding obstacle uniformly. For a complete source of length r and
+clock A, append exactly r-1 terminal gap-two steps. By clock A+2r-3,
+either the original target has reached one or the padded normalizer has
+completed with its compilation fully funded. This is a written all-witness
+finite theorem, separately from the six Lean results. It still leaves the
+positive ordinary endpoint `2^d+K` to be certified. Its exact negative carry
+and relative decay do not imply the required absolute descent.
+
+A second explicit family has six input odd steps and
+
+    a=340+486h,  x=(2^(a+12)-7207)/729,  x mod512=257.
+
+Its actual output reaches `2^(a+1)-1` at clock ten, then `3^(a+1)-1`
+at clock `a+11`, one clock before the input reaches one. This forced
+excursion exceeds every fixed multiple of the entire source trajectory's
+peak. The remaining Mersenne tail is unproved. This written family is
+not counted among the six Lean results and does not exclude all
+polynomial bounds in the numerical input size.
+
+### The exact global remainder, and a complete classification of one barrier class
+
+On positive odd ternary units, define `U(n)=(3n+1)/2^a(n)` and
+`lambda(n)=3n/(3n+1)`. For the preceding inverse-pressure operator P_s,
+`s>1`, the explicit finite measures
+
+    H_s = sum n^(-s) delta_n,
+    D_s = sum n^(-s)(1-lambda(n)^s) delta_n
+
+satisfy `H_s P_s=H_s-D_s` and the total-variation decomposition
+
+    H_s = sum_(j>=0) D_s P_s^j + R_s.
+
+Here R_s is exactly the sum of the component measures of every hypothetical
+escaping ordinary component. The defect Green integral is finite by
+explicit telescoping, and
+
+    integral Z_s dD_s = H_s(X)-R_s(X).
+
+In particular `R_2(X)=pi^2/9-integral Z_2 dD_2`. The integral has not
+been independently evaluated as `pi^2/9`; writing the remainder exactly
+does not make it vanish.
+
+The next attack seeks arithmetic barriers satisfying the actual edge rule
+
+    3v(n) <= 1 + 2^a(n) v(U(n)).
+
+[The written proof](ATOMIC_EXCLUSION_CONTINUATION.md) classifies all nonzero
+continuous binary/ternary leading profiles of the form
+
+    v(n)=n^beta (log n)^delta F(n,n)+o(n^beta (log n)^delta),
+    beta>0,  F>=0 continuous on Z_2^units x Z_3^units,
+
+with uniform error and the edge rule outside a finite set. Necessarily
+
+    beta=1,  delta=0,  F is a positive constant.
+
+The proof constructs positive and negative rational cycles in every joint
+product cylinder, uses actual arbitrarily large positive CRT realizations
+of each finite word, and then uses two unbounded families of ordinary
+gap-one and gap-two blocks. The surviving linear barrier is sharp, but
+it cannot provide the required sublinearity on an escaping ray.
+Arbitrary slowly varying factors and discontinuous arithmetic barriers
+are not classified.
+
+[`NegativeCycleExtension.lean`](lean/Collatz/NegativeCycleExtension.lean)
+checks three finite, all-word identities: the appended whole-word
+correction and its exact binary and ternary guards. It does not formalize
+the infinite density or profile classification. The constructive
+[controls](atomic_cycle_controls.py) replay both signs, every displayed
+rotation, positive CRT realizations, and ordinary cylinder bridges.
+
+A further product-space transfer test gives an exact conditional closing
+criterion: an ordinary-positive integrable right eigenfunction would create
+a forbidden finite invariant measure on an escaping component. The same
+dense negative rational cycles rule out a nonzero continuous eigenfunction.
+The inspected Sarig and Tao results do not supply the required pointwise
+ordinary eigenfunction or atomic integrability; Tao's density is also at
+the different parameter `s=1`. No escape exclusion follows from this test.
+
+The late [maximum-atom test](MAXIMUM_ATOM_TEST.md) uses PR182's newly
+selected ordinary root maximizing every pressure weight. Even there a
+finite ray test has a boundary contribution exactly equal to the original
+maximum atom at every depth. The local row deficit is at most 20/21, but
+it cannot discard that boundary. This comparison is made on the ordinary
+operator domain and retains the actual finite measure.
+
+### Full-denominator cycle attempts retain exact failures
+
+[The cycle continuation](CYCLE_EXCLUSION_CONTINUATION.md) gives a uniform
+finite carry alphabet for an entire shortcut parity word and its
+complement, retaining their complete numerical denominators. It also
+reconstructs a coupled moment identity and the exact integer separation
+at equal-odd-count returns.
+
+Those identities did not force complementary integrality or the needed
+zero-residue fiber bound. Targeted positive rational cycles demonstrate:
+
+- Two distinct primitive cycle minima can have the same fractional part,
+  with every state in both cycles greater than twelve.
+- Two primitive positive cycles with the same fractional part can reverse
+  their order at a return with equal elapsed clocks and equal odd counts,
+  even though every state in both cycles is greater than three.
+
+[The exact replay](cycle_fiber_controls.py) retains full periods, numerators,
+denominators, minima, and all actual rational edge identities. These are
+controls of proposed proof mechanisms, not integer Collatz counterexamples.
+
+### Verification and remaining conclusion
+
+All nine new public Lean statements passed focused strict compilation and
+axiom audits; only `propext`, `Classical.choice`, and `Quot.sound` occur.
+The three new Python control programs passed in normal and optimized modes
+with identical outputs. Scoped independent internal reconstructions are
+hash-bound in the report. The historical aggregate Lean audit and unrelated
+experiments were not repeated.
+
+The full theorem would follow from the original-target entry theorem, or
+from both elimination of ordinary escape and exclusion of nontrivial
+integer cycles. None of these open inferences is inserted as a Lean assumption or presented
+as a consequence of the finite controls.
+
+## Checkpoint fifteen: finite source boundary and ordinary atomic pressure
 
 This continuation starts from published head
 `0444986571f09f302cb3687b4bba3552600e4119`. Three parallel attacks pursue

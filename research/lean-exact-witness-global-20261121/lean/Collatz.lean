@@ -43,3 +43,5 @@ import Collatz.SegmentFloor
 import Collatz.BinaryRunClock
 import Collatz.ContextSurgery
 import Collatz.FiniteSourceBoundary
+import Collatz.NegativeCycleExtension
+import Collatz.WitnessLengthSeparation

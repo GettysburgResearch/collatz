@@ -1,0 +1,39 @@
+{
+  "schema": "collatz-exact-control-replay/v1",
+  "created_utc": "2026-11-23T02:05:23.657436+00:00",
+  "script": "research/lean-exact-witness-global-20261121/atomic_cycle_controls.py",
+  "script_sha256": "0a3de3f1d20d65cfa712916ad9966f069ba96ae669715a7096b34ba06f245fbb",
+  "records": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/atomic_cycle_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.033,
+      "output": "reports/lean-exact-witness-global-20261121/closing-continuation/atomic-cycle-controls-normal.json",
+      "stdout_sha256": "9d834d870fda7b248ce2244eee50346fa8c92864c3b969e688e0c1b6316e4599",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "/workspace/scratch/e15c6f8bf5c3/collatz-lean-global/research/lean-exact-witness-global-20261121/atomic_cycle_controls.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.077,
+      "output": "reports/lean-exact-witness-global-20261121/closing-continuation/atomic-cycle-controls-optimized.json",
+      "stdout_sha256": "9d834d870fda7b248ce2244eee50346fa8c92864c3b969e688e0c1b6316e4599",
+      "stderr": ""
+    }
+  ],
+  "normal_and_optimized_identical": true,
+  "scope": "Targeted finite exact controls, not a universal convergence proof or large census."
+}

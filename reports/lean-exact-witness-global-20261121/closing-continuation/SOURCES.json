@@ -1,0 +1,224 @@
+{
+  "schema": "collatz-source-snapshot/v1",
+  "created_utc": "2026-11-23T02:19:32.884027+00:00",
+  "owned_parent": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+  "metadata_inventory": "OPEN_PR_HEADS.json",
+  "scope": "Particular mathematical files read, at exact revisions. Complete open-PR metadata is separately inventoried; no claim to audit every file or peer proof. Later revisions do not inherit review verdicts.",
+  "sources": [
+    {
+      "pr": 177,
+      "sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md",
+      "sha256": "d47a77884d979d99a0580d6d34f1f8ebc1e2e62a92fa3833f8fd3ce06f080cfc",
+      "read_scope": "Inherited escape-product and component classification; retained dependency, not replayed here.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ESCAPE.md"
+    },
+    {
+      "pr": 177,
+      "sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md",
+      "sha256": "ba5042f969cf787e6ec5ff44e521890ccbfc9bea04e6126353745c9f8c385634",
+      "read_scope": "Inherited finite-boundary interface.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_WITNESS.md"
+    },
+    {
+      "pr": 177,
+      "sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": "research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ARITHMETIC.md",
+      "sha256": "9d9d2fa408c68e497c7497477befcc2ff5414ff1214d7d6381129e374db448c2",
+      "read_scope": "Inherited whole-denominator carry context.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/6de3e304bb49a93a6c5ef0e5563137e75c7defb4/research/lean-exact-witness-global-20261121/HIGH_VARIANCE_ARITHMETIC.md"
+    },
+    {
+      "pr": 175,
+      "sha": "8870528daa6a13cc941d602e578e35c8bfa4bf4f",
+      "path": "research/lean-global-closure-20261121/risk23/FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md",
+      "sha256": "53565910ef15a2cf87ab066b187fbff9b83b187468f24c3c4348d6568248db1c",
+      "read_scope": "Selected current analytic closing attempt; not an assumed input.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8870528daa6a13cc941d602e578e35c8bfa4bf4f/research/lean-global-closure-20261121/risk23/FOURIER_IDEMPOTENT_CLOSURE_ATTEMPT.md"
+    },
+    {
+      "pr": 176,
+      "sha": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+      "path": "research/lean-global-resolvent-20261121/overview/longshot/ADELIC_MIXING_ATTEMPT.md",
+      "sha256": "53f53c7cfe8fa8cc513dd154e106971cdb2d7f3d4d545ad7cad3ff58d3d63351",
+      "read_scope": "First refresh; selected closing context.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ff3e068fa44eb85bb918580b2e10e18c027a18e6/research/lean-global-resolvent-20261121/overview/longshot/ADELIC_MIXING_ATTEMPT.md"
+    },
+    {
+      "pr": 176,
+      "sha": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+      "path": "research/lean-global-resolvent-20261121/overview/longshot/cycles/IDENTITY_ATOM_ATTEMPT.md",
+      "sha256": "1046195b819bbea9ffc3f14da938a84762824443722d5cfd67f2d95d1abae22b",
+      "read_scope": "Full residue-fiber target; larger enumeration not repeated.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ff3e068fa44eb85bb918580b2e10e18c027a18e6/research/lean-global-resolvent-20261121/overview/longshot/cycles/IDENTITY_ATOM_ATTEMPT.md"
+    },
+    {
+      "pr": 178,
+      "sha": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md",
+      "sha256": "71aeff76e8983a9f703229d8c07a7cc9b734f3e07b82a85c8d3576b337787d05",
+      "read_scope": "Whole-denominator and complementary-carry comparison.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md"
+    },
+    {
+      "pr": 178,
+      "sha": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/adelic/TWO_PLACE_AND_RENEWAL_ATTEMPT.md",
+      "sha256": "eb8983e9d61503e7941eece1d5857a829260160f2afb683a678a0666336dddb3",
+      "read_scope": "Selected simultaneous-completion attempt.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2169884b64871b448cda16c7d74a0d5914ed870b/research/high-variance-20261123/adelic/TWO_PLACE_AND_RENEWAL_ATTEMPT.md"
+    },
+    {
+      "pr": 180,
+      "sha": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "read_scope": "First refresh; canonical analytic inputs not imported into new unconditional arguments.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2/research/high-variance-20261123/ANALYTIC_GLUING.md"
+    },
+    {
+      "pr": 185,
+      "sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "read_scope": "Polynomial cancellation and full numerical denominator boundary.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md"
+    },
+    {
+      "pr": 185,
+      "sha": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36",
+      "read_scope": "Full principal-fiber target.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d/research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md"
+    },
+    {
+      "pr": 180,
+      "sha": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/README.md",
+      "sha256": "5cdb2d345893d9f54829d0d5deccd90fc3c04b5271c6fc2d49fe25553b6f36ea",
+      "read_scope": "Late refresh; source-qualified actual-boundary dimension conclusions.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fcdcdbadc6172e414f7282442a8a6b85587d7e70/research/source-clock-20261123/README.md"
+    },
+    {
+      "pr": 180,
+      "sha": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/TARGET_DESCENT.md",
+      "sha256": "ba1656edb83aa127e514b94b1adcfb7f28c4c97e28e17312e2d12f7a3d5f87cb",
+      "read_scope": "Actual-parity semigroup discrepancy and endpoint-one rigidity.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fcdcdbadc6172e414f7282442a8a6b85587d7e70/research/source-clock-20261123/TARGET_DESCENT.md"
+    },
+    {
+      "pr": 180,
+      "sha": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/EARLY_TRACE.md",
+      "sha256": "6faae3c0d510a6d2603c07f1fb34f6b9a144d918b38f05b198623a0eca80d16d",
+      "read_scope": "Source-qualified adaptive stopping-line boundary.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fcdcdbadc6172e414f7282442a8a6b85587d7e70/research/source-clock-20261123/EARLY_TRACE.md"
+    },
+    {
+      "pr": 182,
+      "sha": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/README.md",
+      "sha256": "e6919ca07492cb59678e1e598bff1adbe46a20fa219fa7bdcbbb71e04cb5588b",
+      "read_scope": "Late refresh; common pressure maximum overview.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b78819e95ee7d39f02022de991b42217821e7590/research/closure-round2-20261123/README.md"
+    },
+    {
+      "pr": 182,
+      "sha": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+      "sha256": "50b9ebe3fe972c4c7fbbdd3697bb36917cc010f85335fb527330f2244c669f76",
+      "read_scope": "Actual common maximizing root and simultaneous path restrictions.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b78819e95ee7d39f02022de991b42217821e7590/research/closure-round2-20261123/SOURCE_CLOSURE.md"
+    },
+    {
+      "pr": 182,
+      "sha": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/ESCAPE_CLOSURE.md",
+      "sha256": "607228e47b1370435747e1843c3ed7b572ffcf3ef834647c18a1ca98575c57bf",
+      "read_scope": "Complete ordinary pressure-loss calculation.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/b78819e95ee7d39f02022de991b42217821e7590/research/closure-round2-20261123/ESCAPE_CLOSURE.md"
+    },
+    {
+      "pr": null,
+      "sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "path": "docs/RESEARCH_MAP.md",
+      "sha256": "10dd929f2aa90c36126ea0844b8bb9f04b5b8ded130dd7c734ac03ded38cb17b",
+      "read_scope": "Repository-wide research-map and qualification refresh; no re-audit of its imported proofs.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/docs/RESEARCH_MAP.md"
+    },
+    {
+      "pr": null,
+      "sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "path": "research/open-obligations/README.md",
+      "sha256": "b053d2602611f4ec68650aa61d370ff87abd7f789e66bec925c57b51c55e2b88",
+      "read_scope": "Repository-wide research-map and qualification refresh; no re-audit of its imported proofs.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/open-obligations/README.md"
+    },
+    {
+      "pr": null,
+      "sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "path": "research/integrated/ERRATA.md",
+      "sha256": "27bb01b72bd8785e59ffafce9dfb1d208067a9cb4b59c6b8794dabac596a7c19",
+      "read_scope": "Repository-wide research-map and qualification refresh; no re-audit of its imported proofs.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a/research/integrated/ERRATA.md"
+    },
+    {
+      "pr": 176,
+      "sha": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/README.md",
+      "sha256": "e7ba95574f8309990a8815036f92557af5429b9c9cb28a13ff32397df4decb21",
+      "read_scope": "Late target-lane reading and exact comparison with signed normalizer; not an audit of peer Lean or execution records.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c82e3c1be894f655b40dcb61bf6d309a8f664e67/research/lean-global-resolvent-20261121/overview/integer-boundary/README.md"
+    },
+    {
+      "pr": 176,
+      "sha": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/TWO_PLACE_NUMEN_CLASSIFICATION.md",
+      "sha256": "ed208f5ad73cf2f566973d72a5a75b2addfc487973978a4c7cc5e3c7b093d9d7",
+      "read_scope": "Late target-lane reading and exact comparison with signed normalizer; not an audit of peer Lean or execution records.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c82e3c1be894f655b40dcb61bf6d309a8f664e67/research/lean-global-resolvent-20261121/overview/integer-boundary/TWO_PLACE_NUMEN_CLASSIFICATION.md"
+    },
+    {
+      "pr": 176,
+      "sha": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/PRESSURE_WIENER_ATTACK.md",
+      "sha256": "4b73c35aabe57a44d96c08c30a4990ee0aecec64f7e9200738cd20b5b4ea2bcd",
+      "read_scope": "Late target-lane reading and exact comparison with signed normalizer; not an audit of peer Lean or execution records.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c82e3c1be894f655b40dcb61bf6d309a8f664e67/research/lean-global-resolvent-20261121/overview/integer-boundary/PRESSURE_WIENER_ATTACK.md"
+    },
+    {
+      "pr": 176,
+      "sha": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "path": "research/lean-global-resolvent-20261121/overview/integer-boundary/INDEPENDENT_KERNEL_ATTACK.md",
+      "sha256": "fb6479c13b0fd4563259758d4245e18dfd398706c9f6ae3e3f596b6838b8e6d5",
+      "read_scope": "Late target-lane reading and exact comparison with signed normalizer; not an audit of peer Lean or execution records.",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/c82e3c1be894f655b40dcb61bf6d309a8f664e67/research/lean-global-resolvent-20261121/overview/integer-boundary/INDEPENDENT_KERNEL_ATTACK.md"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "Thermodynamic formalism for countable Markov shifts",
+      "author": "Omri M. Sarig",
+      "url": "https://www.weizmann.ac.il/math/sarigo/sites/math.sarigo/files/uploads/tdf-survey.pdf",
+      "scope": "Theorem 4.9; positive recurrence and conservative conformal-measure hypotheses."
+    },
+    {
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "author": "Terence Tao",
+      "url": "https://arxiv.org/pdf/1909.03562v7",
+      "scope": "Remark 1.13 and Proposition 1.14; L1 stationary-density consequence and its parameter/a.e. limitations."
+    },
+    {
+      "title": "The autoconjugacy of the 3x+1 function",
+      "authors": [
+        "Kenneth G. Monks",
+        "Jonathan Yazinski"
+      ],
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "scope": "Sections 1-2, Theorems 2.1 and 2.3-2.5; complementary finite cycles, not the general rationality conjecture."
+    }
+  ]
+}
