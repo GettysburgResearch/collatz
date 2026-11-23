@@ -10,6 +10,22 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### Triadic certificates and superpolynomial primitive denominators — 23 November 2026
+
+The [continuation](risk24/README.md) provides a total core/Std Lean verifier
+for every proposed signed triadic complementary orbit, with a complete
+lexicographic termination rank and a finite convergence certificate. Its
+22 public theorems and executable stopping clock were audited. The written
+cycle argument proves residual polynomial degree
+`n > (log p)^2 / (72 log(2 log p))` for every primitive word with `p>=10`.
+Combined with PR185's qualified factor-gap theorem, this forces the
+residual polynomial denominator to grow faster than every fixed power of
+the odd period. On any hypothetical escaping component, an explicit path
+mixture gives an auxiliary null-recurrence theorem without predecessor-density
+assumptions, together with an exact drift calculation. Universal
+triadic-witness existence, the final integer gcd, and escape exclusion
+remain open; none is supplied by these new results.
+
 ### High-variance attacks and the Hardy inverse-tree theorem — 23 November 2026
 
 The [new packet](risk23/README.md) proves that every `|lambda|<2^(1/16)` is

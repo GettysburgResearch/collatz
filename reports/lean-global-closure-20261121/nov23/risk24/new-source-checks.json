@@ -1,0 +1,82 @@
+{
+  "schema": "collatz-risk24-formal-evidence/v1",
+  "started_utc": "2026-11-23T02:20:36.212947+00:00",
+  "scope": "two new Lean core/Std modules; no universal witness construction or infinite analytic formalization",
+  "source_sha256": {
+    "TriadicDual.lean": "0679708717d056df2dc6ef224fefc56a6276020d84525a5a69d10da53bea12fb",
+    "SiblingSourceSeparation.lean": "f02e0e0585331f3f64addd545e2e584c0de74ef507c8eace33d9d8a77caa75c4"
+  },
+  "driver_sha256": "158f15388834c6ce1ced7b521e4f1da4337a38977dee182b5f8705500c8b66bc",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "TriadicDual.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "TriadicDual.lean:89:25: warning: This simp argument is unused:\n  Nat.mul_left_comm\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Nat.mul_assoc, Nat.mul_comm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nTriadicDual.lean:102:25: warning: This simp argument is unused:\n  Nat.mul_left_comm\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Nat.mul_assoc, Nat.mul_comm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nTriadicDual.lean:252:17: warning: This simp argument is unused:\n  rank\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [next, denominatorStep, hmod, \u2193reduceIte]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'Collatz.TriadicDual.rank_step' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.stopClock_spec' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.finite_valid_triadic_reaches_one' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.valid_triadic_reaches_one' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.prefixNumerator_mod_three' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.step_pos' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.trailingZeros_three_mul' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.oddRank_step' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.intStep_ne_zero' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.product_drop_odd' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.product_drop_even_positive' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.product_drop_even_negative' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.energy_of_product_drop' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.energy_step' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.intRank_step' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.numeratorStep_zero' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.three_pow_odd' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.three_pow_mod_three' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.denominator_drop_identity' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.reduced_denominator_drop' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.rank_step' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.run_x' does not depend on any axioms\n'Collatz.TriadicDual.stopClock_spec' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.finite_valid_triadic_reaches_one' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.valid_triadic_reaches_one' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.four_pow_mod_three' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.prefixNumerator_mod_three' depends on axioms: [propext, Quot.sound]\n'Collatz.TriadicDual.stopClock' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source": "TriadicDual.lean",
+      "theorems_audited": [
+        "Collatz.TriadicDual.step_pos",
+        "Collatz.TriadicDual.trailingZeros_three_mul",
+        "Collatz.TriadicDual.oddRank_step",
+        "Collatz.TriadicDual.intStep_ne_zero",
+        "Collatz.TriadicDual.product_drop_odd",
+        "Collatz.TriadicDual.product_drop_even_positive",
+        "Collatz.TriadicDual.product_drop_even_negative",
+        "Collatz.TriadicDual.energy_of_product_drop",
+        "Collatz.TriadicDual.energy_step",
+        "Collatz.TriadicDual.intRank_step",
+        "Collatz.TriadicDual.numeratorStep_zero",
+        "Collatz.TriadicDual.three_pow_odd",
+        "Collatz.TriadicDual.three_pow_mod_three",
+        "Collatz.TriadicDual.denominator_drop_identity",
+        "Collatz.TriadicDual.reduced_denominator_drop",
+        "Collatz.TriadicDual.rank_step",
+        "Collatz.TriadicDual.run_x",
+        "Collatz.TriadicDual.stopClock_spec",
+        "Collatz.TriadicDual.finite_valid_triadic_reaches_one",
+        "Collatz.TriadicDual.valid_triadic_reaches_one",
+        "Collatz.TriadicDual.four_pow_mod_three",
+        "Collatz.TriadicDual.prefixNumerator_mod_three"
+      ],
+      "definitions_audited": [
+        "Collatz.TriadicDual.stopClock"
+      ],
+      "unexpected_axioms": [],
+      "audit_complete": true
+    },
+    {
+      "argv": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "SiblingSourceSeparation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'Collatz.SiblingTransport.sources_injective' depends on axioms: [propext, Quot.sound]\n'Collatz.SiblingTransport.forward_add' depends on axioms: [propext]\n'Collatz.SiblingTransport.forward_step' depends on axioms: [propext]\n'Collatz.SiblingTransport.unequal_sources_of_lt' depends on axioms: [propext, Quot.sound]\n'Collatz.SiblingTransport.sources_injective' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "source": "SiblingSourceSeparation.lean",
+      "theorems_audited": [
+        "Collatz.SiblingTransport.forward_add",
+        "Collatz.SiblingTransport.forward_step",
+        "Collatz.SiblingTransport.unequal_sources_of_lt",
+        "Collatz.SiblingTransport.sources_injective"
+      ],
+      "definitions_audited": [],
+      "unexpected_axioms": [],
+      "audit_complete": true
+    }
+  ],
+  "version": {
+    "argv": [
+      "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+    "stderr": ""
+  },
+  "success": true,
+  "finished_utc": "2026-11-23T02:20:39.694563+00:00"
+}

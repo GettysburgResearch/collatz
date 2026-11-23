@@ -1,0 +1,137 @@
+{
+  "schema": "collatz-risk24-review-scope/v1",
+  "date": "2026-11-23",
+  "review_kind": "Internal mathematical reconstruction by collaborating agents; not external peer review",
+  "formal_receipt": "new-source-checks.json",
+  "reviews": [
+    {
+      "file": "TriadicDual.lean",
+      "sha256": "0679708717d056df2dc6ef224fefc56a6276020d84525a5a69d10da53bea12fb",
+      "status": "VERIFIED",
+      "method": "Lean 4.34.1 compilation plus all public theorem and stopClock axiom queries; root source reconstruction",
+      "scope": "22 public theorems: exact signed discrete updates, lexicographic rank, total stopping clock, finite/all-time certificate consumers, prefix congruence",
+      "not_proved": [
+        "Universal successful certificate existence",
+        "Construction of 2-adic Omega"
+      ]
+    },
+    {
+      "file": "TRIADIC_AUTOCONJUGACY_ATTACK.md",
+      "sha256": "d968258905f08c32842fd5930ba0cd0bd5de511b2538d5b66582fd2158d664de",
+      "status": "VERIFIED",
+      "method": "Root reconstructed written proof; primary Monks-Yazinski definitions and Theorem 2.1 inspected",
+      "scope": "Pointwise triadic equivalence, reverse reconstruction, reduced denominator behavior and raw-prefix counterexample",
+      "not_proved": [
+        "Universal triadicity",
+        "Any novelty priority for the equivalence or concurrent signed rank"
+      ]
+    },
+    {
+      "file": "SUPERPOLYNOMIAL_RESIDUAL_DENOMINATOR.md",
+      "sha256": "b7531892e0d62d74107c6446171587e83cf79b83b6b967061499b7e6b92959c9",
+      "status": "VERIFIED degree proof; SOURCE-QUALIFIED denominator consequence",
+      "method": "Root reconstructed Sections 2-5; PR185 finite Fourier structure read at e04daab0a0ddd59c80f5d16a51b9943fd5149e6c",
+      "scope": "Maximal-prime-power totient budget, elementary Chebyshev bound, n>(log p)^2/(72 log(2 log p)), and uniform superpolynomial consequence using inherited factor gap",
+      "not_proved": [
+        "Final integer-gcd nondivisibility",
+        "Fresh execution of PR185 continued-fraction certificate",
+        "Lean formalization of degree theorem"
+      ]
+    },
+    {
+      "file": "DISTINGUISHED_GCD_CONTINUATION.md",
+      "sha256": "924f21d610ea9bc63242411ac5a31bdcbd3a01e57b042c50c2bf7574dc08e6c0",
+      "status": "VERIFIED",
+      "method": "Root reconstructed the exact encodings, coefficient-height count, binary-word injection and carry-group identity; primary Grieve-Wang and Corvaja-Zannier hypotheses inspected",
+      "scope": "Three specific failed gcd encodings; counting obstruction only for the stated uniform all-word literal encoding; carry clock classes 2^(-t)[1]",
+      "not_proved": [
+        "A no-go theorem for all Diophantine approaches",
+        "Compression obstruction for a special family of integral words",
+        "Uniform distinguished-fiber gcd bound"
+      ]
+    },
+    {
+      "file": "RECURRENT_ARITHMETIC_NETWORK.md",
+      "sha256": "883b99c1476f9a8fc5298a366f62faac6cc6d45d8fcedc4870503802f87a49ab",
+      "status": "VERIFIED",
+      "method": "Authored by root; independently reconstructed by risk23_compact_escape and risk23_global_order at the listed hash; standard capacity criterion inspected",
+      "scope": "From a hypothetical escaping component: atomless full-support path mixture, finite reciprocal moment, critical harmonic G, auxiliary null recurrence, drift, weighted exact mean and pointwise/moving-spine distinction",
+      "not_proved": [
+        "Existence of an escaping component",
+        "Recurrence of deterministic U",
+        "Canonical trace identification or uniform positive floor",
+        "Escape exclusion"
+      ]
+    },
+    {
+      "file": "SIBLING_CONE_TRANSPORT.md",
+      "sha256": "da7416d0573ba46c2dee9b895e15a63477e57cd609e4e6229dd3aaf68743e5b2",
+      "status": "VERIFIED",
+      "method": "Root reconstructed sibling arithmetic, cone identity, source separation, physical telescoping, factorial lower bound and directed relative-entropy identity",
+      "scope": "Equal-depth sibling transport with distinct actual sources; total gap excess at least log2(N!)-O_p(N)",
+      "not_proved": [
+        "Bounds for unequal-depth or weighted transports",
+        "Normalized pressure-path product bound",
+        "Actual same-source collision upper bound"
+      ]
+    },
+    {
+      "file": "SiblingSourceSeparation.lean",
+      "sha256": "f02e0e0585331f3f64addd545e2e584c0de74ef507c8eace33d9d8a77caa75c4",
+      "status": "VERIFIED",
+      "method": "Lean 4.34.1 compilation and all four public theorem axiom queries; root source inspection",
+      "scope": "Pairwise distinct sources for an arbitrary deterministic map with exact specified merger clocks",
+      "not_proved": [
+        "Factorial logarithmic estimate",
+        "Infinite probability estimates"
+      ]
+    }
+  ],
+  "late_head_reviews": [
+    {
+      "pr": 178,
+      "head": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "reviewer": "risk23_global_order",
+      "paths": [
+        "research/global-closure-20261123/duality/TRIADIC_RANK.md",
+        "research/global-closure-20261123/duality/lean/TriadicDualClosure.lean"
+      ],
+      "finding": "Concurrent same triadic criterion and signed rank, explicitly cross-credited. New written bit-length horizon and single carry congruence. Universal small-residue construction remains open. Our distinct addition is a total core/Std stopping clock and formal finite-check consumer.",
+      "scope": "Written delta inspection; no recompile of other contributor's Lean"
+    },
+    {
+      "pr": 180,
+      "head": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "reviewer": "risk23_compact_escape",
+      "paths": [
+        "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+        "research/source-clock-20261123/EXTENSIONS.md",
+        "research/source-clock-20261123/EARLY_TRACE.md",
+        "research/source-clock-20261123/COLLISION_TRANSFER.md"
+      ],
+      "finding": "Canonical real-boundary local/information dimension improves; retains canonical floor and full-event selection. Does not identify our constructed G. Common-Z information does not remove actual integer-lift entropy; adaptive endpoint and entire-law collision gaps remain.",
+      "scope": "Relevant new written delta, not all PR claims"
+    },
+    {
+      "pr": 182,
+      "head": "b78819e95ee7d39f02022de991b42217821e7590",
+      "reviewer": "risk23_cycle_ideal",
+      "paths": [
+        "research/closure-round2-20261123/CYCLE_CANCELLATION.md"
+      ],
+      "finding": "Exact adjacent-swap gcd transport, disjoint-neighborhood and window-reconstruction bounds; full numerical cancellation remains open. Independent moving-target gcd interface checks agree with the first two boundaries in our companion.",
+      "scope": "Relevant written cycle delta, not a fresh Lean execution"
+    },
+    {
+      "pr": 176,
+      "head": "c82e3c1be894f655b40dcb61bf6d309a8f664e67",
+      "reviewer": "risk23_cycle_ideal",
+      "paths": [
+        "research/lean-global-resolvent-20261121/overview/integer-boundary/TWO_PLACE_NUMEN_CLASSIFICATION.md",
+        "research/lean-global-resolvent-20261121/overview/integer-boundary/NUMEN_INVERSE_FIBER.md"
+      ],
+      "finding": "Real/3-adic equality classifies a path staying on the root's cycle; nonperiodic separation permits additional integer cycles as equality cases. Irrational inverse fibers do not assert forward escape. Weighted ordinary pullback quasimodes differ from our earlier unweighted Hardy pushforward.",
+      "scope": "Relevant written arithmetic delta; no broad claim about the cited literature"
+    }
+  ]
+}
