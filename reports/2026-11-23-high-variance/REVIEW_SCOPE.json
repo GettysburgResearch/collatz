@@ -1,0 +1,70 @@
+{
+  "schema": "collatz-high-variance-reviews/v1",
+  "date": "2026-11-23",
+  "bindings": [
+    {
+      "source": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "source_sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "review": "research/high-variance-20261123/REVIEW_ANALYTIC_GLUING.md",
+      "review_sha256": "23f5581ac08741fd0f4295bddf1110322c4c7ba8021569c6af39e6515e40784a",
+      "reviewer": "global_source_synthesis",
+      "verdict": "VERIFIED within stated written, source-qualified scope",
+      "original_reconstruction_sha256": "5bc9aaedb1d9e97f1a93a3cbbef1de9f48e93b6fb90e991fc733a7e2b52949b3",
+      "editorial_carry_forward": "Principal researcher checked that the only source change is final whitespace or a displayed TeX spacing command; mathematical statements and arguments unchanged."
+    },
+    {
+      "source": "research/high-variance-20261123/ENTROPY_RIGIDITY.md",
+      "source_sha256": "5165d1dc167432bbefc7c758e50323ca7412c835930c59fc9aa16164b2edfc80",
+      "review": "reports/2026-11-23-high-variance/REVIEW_ENTROPY_RIGIDITY.md",
+      "review_sha256": "c6a5b74ec0abe463cb7e9c770213688629865d459b5b71e84d079550cd9c59e3",
+      "reviewer": "analytic_gluing",
+      "verdict": "VERIFIED within stated written, source-qualified scope"
+    },
+    {
+      "source": "research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md",
+      "source_sha256": "de581110256ab48080e66b150eb0d633e225234d56de89a5f8a178d33c111e60",
+      "review": "reports/2026-11-23-high-variance/REVIEW_GLOBAL_SOURCE.md",
+      "review_sha256": "a8767b9a8cfed607dcfea49928a10de51bdf7715233a110f992442ddc81b64e8",
+      "reviewer": "root",
+      "verdict": "VERIFIED WITH FIXES: explicit unit-root premise; no badness claimed for control",
+      "original_reconstruction_sha256": "ce4cbab5620c6a3bc97191b75ad11aae85234b2da5fceaf6c59e41d2dcc21578",
+      "editorial_carry_forward": "Principal researcher checked that the only source change is final whitespace or a displayed TeX spacing command; mathematical statements and arguments unchanged."
+    },
+    {
+      "source": "research/high-variance-20261123/lean/FibreReconstruction.lean",
+      "source_sha256": "d81acc83862914d097261ef92753ef1455bded005e291db3088a0b1c46a71cec",
+      "review": "reports/2026-11-23-high-variance/REVIEW_FIBRE_LEAN.md",
+      "review_sha256": "5e73b3e6632f90d488be7af325c79c65e52fa1b7a740b9c27fce805dd4b763f0",
+      "reviewer": "analytic_gluing",
+      "verdict": "VERIFIED finite real algebra; execution recorded separately"
+    }
+  ],
+  "new_lean_modules": [
+    {
+      "module": "FibreReconstruction",
+      "path": "research/high-variance-20261123/lean/FibreReconstruction.lean",
+      "sha256": "d81acc83862914d097261ef92753ef1455bded005e291db3088a0b1c46a71cec",
+      "exit_code": 0,
+      "seconds": 1.441,
+      "axioms": [],
+      "audited_declarations": []
+    },
+    {
+      "module": "FibreAudit",
+      "path": "research/high-variance-20261123/lean/FibreAudit.lean",
+      "sha256": "91af2030f41f788084fdc5bbc503f00e7238e71679caea63c73b01d4f5c65076",
+      "exit_code": 0,
+      "seconds": 0.975,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audited_declarations": [
+        "CollatzHighVariance.FibreReconstruction.coherent_edge_increment",
+        "CollatzHighVariance.FibreReconstruction.finite_fibre_reconstruction"
+      ]
+    }
+  ],
+  "qualification": "Independent in-session reconstruction. Upstream sources and recent manuscripts retain stated qualifications. Finite Lean algebra, exact finite integer replay and infinite written arguments are distinct evidence levels."
+}

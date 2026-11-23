@@ -1,0 +1,15 @@
+{
+  "schema": "collatz-formal-theorem-inventory/v1",
+  "public_theorem_count": 2,
+  "modules": [
+    {
+      "module": "FibreReconstruction",
+      "theorems": [
+        "coherent_edge_increment",
+        "finite_fibre_reconstruction"
+      ]
+    }
+  ],
+  "audit_module": "FibreAudit",
+  "scope": "Finite real algebra only: the literal coherent-edge increment and exact finite size-bias normalization, reciprocal moment and variance identity. Canonical measure existence, infinite limits, dimension, entropy and Collatz convergence are not formalized."
+}

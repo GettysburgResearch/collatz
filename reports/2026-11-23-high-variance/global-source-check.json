@@ -1,0 +1,33 @@
+{
+  "schema": "collatz-exact-integer-replay/v1",
+  "date": "2026-11-23",
+  "source_path": "research/high-variance-20261123/check_global_source.py",
+  "source_sha256": "75b239f0492954b9cc90ad9fa1959d14446f6200e390d88d1db1c057a8c00355",
+  "runs": [
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "-B",
+        "research/high-variance-20261123/check_global_source.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "9f3803d814688f026bb2d40d1a4f55d65668f6827c03d87968aa50972343d7df",
+      "matches_frozen_output": true
+    },
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "-B",
+        "-O",
+        "research/high-variance-20261123/check_global_source.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "9f3803d814688f026bb2d40d1a4f55d65668f6827c03d87968aa50972343d7df",
+      "matches_frozen_output": true
+    }
+  ],
+  "success": true,
+  "scope": "Complete 1371-source grade control, exact finite cluster closure and ordinary replays; not a universal Collatz proof."
+}

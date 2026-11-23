@@ -1,0 +1,300 @@
+{
+  "schema": "collatz-research-sources/v1",
+  "date": "2026-11-23",
+  "starting_pr180_head": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+  "main_head_at_refresh": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "open_pr_metadata_snapshot": "SOURCE_SNAPSHOT.json",
+  "scope": "Targeted inspected files, with source-qualified dependencies retained. Metadata for all 122 open PRs is a refresh, not an audit of every branch. No historical Lean module was recompiled.",
+  "files": [
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/CANONICAL_CHARGE.md",
+      "blob": "51627668ea0773bb0ac2255e7dd63037798cb1f8",
+      "sha256": "979d6be5c4345489c3a71b1e1696ce60bb675d9000bc0800a6cb4ec04557566c",
+      "role": "used",
+      "location_and_use": "Sections1--4, actual two-sided path law and canonical functions",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5e29f56f6d44669a8aa9134e5617b78d65c074c2/research/retained-source-attacks-20261122/CANONICAL_CHARGE.md"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/ANALYTIC_PARAMETER.md",
+      "blob": "e4576c120b8463368f445e22f4dd36dfadc8105f",
+      "sha256": "c4d81e33b76a2b92901365c11325aa90c1777939711c03fd833d2d91f84bad22",
+      "role": "context",
+      "location_and_use": "Sections2--4, distinct parameter families and actual path sparsity",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5e29f56f6d44669a8aa9134e5617b78d65c074c2/research/retained-source-attacks-20261122/ANALYTIC_PARAMETER.md"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/SIBLING_MASS.md",
+      "blob": "bd6f03ca4d545bc0e1877bd71bb84c4640068f99",
+      "sha256": "91f150e225fbe1c8c714792557714c35ffbf2328fd46094cfbba60413cfb6f8b",
+      "role": "used",
+      "location_and_use": "S2--S5, Paper 37 v4 route multiplicity and full ordinary legality",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5e29f56f6d44669a8aa9134e5617b78d65c074c2/research/retained-source-attacks-20261122/SIBLING_MASS.md"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/retained-source-attacks-20261122/LEGAL_DESCENT.md",
+      "blob": "1b249ebb1bd8b43ef14d139277661f9280e8b597",
+      "sha256": "32c2bf30b863fa78eafc33f3d7366b626e1382094241664e7c4cfc40802f8fb8",
+      "role": "used",
+      "location_and_use": "Complete source grade and prior nonlocal source surgery",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5e29f56f6d44669a8aa9134e5617b78d65c074c2/research/retained-source-attacks-20261122/LEGAL_DESCENT.md"
+    },
+    {
+      "pr": 180,
+      "commit": "5e29f56f6d44669a8aa9134e5617b78d65c074c2",
+      "path": "research/deep-machinery-20261122/RENEWAL_TRANSPORT.md",
+      "blob": "1527f3823dce6e651d47a4dce0db6fdefdd35cce",
+      "sha256": "feb4eacc4a02ffdbbc07ec08bb045226243c4ffd24cd1155a4b00740efd3eb69",
+      "role": "used",
+      "location_and_use": "Section1 equation2, qualified Kesten--Goldie real-tail consequence",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/5e29f56f6d44669a8aa9134e5617b78d65c074c2/research/deep-machinery-20261122/RENEWAL_TRANSPORT.md"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "blob": "9b8ed17476a6c133f3bb3710c4fe1d5de8d5a1f1",
+      "sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b",
+      "role": "used",
+      "location_and_use": "Sections1--2 canonical comparison/path count; Section7 fixed-basin vanishing",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39ba48e6a8af781193e28c679ea8ab64663c3aa6/research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "blob": "c430b45adf356b11bd5d4f7aeb7026212ecf4183",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "role": "used",
+      "location_and_use": "Sections1--4, actual retracing and actual time entropy ceiling",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39ba48e6a8af781193e28c679ea8ab64663c3aa6/research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/rigidity-closing-20261122/MOVING_INVERSE_WINDOW.md",
+      "blob": "db0eee1d50bd3ac8e3003dd2daf3e4a83e616c1c",
+      "sha256": "8b29a39b6e1a2bbb3fa344de65d92ea0fbb9e1c43eb56456fa6a64c621c4027a",
+      "role": "used",
+      "location_and_use": "Uniform-depth same-time inverse window comparison",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39ba48e6a8af781193e28c679ea8ab64663c3aa6/research/rigidity-closing-20261122/MOVING_INVERSE_WINDOW.md"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "blob": "5c9deff8147211d88794471fc1d6b6ab57d54069",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "role": "context",
+      "location_and_use": "Current complete-cycle exclusion scope and retained obstruction",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39ba48e6a8af781193e28c679ea8ab64663c3aa6/research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md"
+    },
+    {
+      "pr": 185,
+      "commit": "39ba48e6a8af781193e28c679ea8ab64663c3aa6",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "blob": "339b2b728170595a618fe550b0c7a7a14b01033e",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98",
+      "role": "used",
+      "location_and_use": "Actual ternary time entropy ceiling and quantifiers",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/39ba48e6a8af781193e28c679ea8ab64663c3aa6/research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md"
+    },
+    {
+      "pr": 178,
+      "commit": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "path": "research/whole-repo-synthesis-20261122/entropy/CANONICAL_TIME_ENTROPY_ATTEMPT.md",
+      "blob": "7c44438cd5e020ccaf2c06c4ce7d068dc2c34e28",
+      "sha256": "7879c03d9df135e715e9b1bba517f1f6bde3a546245332569774232eb0f277ac",
+      "role": "used",
+      "location_and_use": "Sections2--6, trace kernel, exact retracing and moving normalized real fibre",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7e4569476e152f6b8537bdc1711df595ec1ffd89/research/whole-repo-synthesis-20261122/entropy/CANONICAL_TIME_ENTROPY_ATTEMPT.md"
+    },
+    {
+      "pr": 178,
+      "commit": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "path": "research/whole-repo-synthesis-20261122/arithmetic/WHOLE_WORD_MERGER_ATTEMPT.md",
+      "blob": "e1bb12c75e07eaabbed297a346306fb5f03fa899",
+      "sha256": "4a976194fdc02ec705cc12003d8231edf6ea5b0d367c3559933fe91b2c5ee8f5",
+      "role": "used",
+      "location_and_use": "Full legal lower-grade reservoir; no universal coverage",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7e4569476e152f6b8537bdc1711df595ec1ffd89/research/whole-repo-synthesis-20261122/arithmetic/WHOLE_WORD_MERGER_ATTEMPT.md"
+    },
+    {
+      "pr": 178,
+      "commit": "7e4569476e152f6b8537bdc1711df595ec1ffd89",
+      "path": "research/whole-repo-synthesis-20261122/phase/EFFECTIVE_PHASE_AND_RUNS.md",
+      "blob": "5d1be28f75013f3ad64ccbb2a3472052d38ee009",
+      "sha256": "41aa50e507b490f14c1c483237f37a76e5b55a955f8e100c135f5d03edea273f",
+      "role": "context",
+      "location_and_use": "Effective actual phase and run results; no same-source mass conclusion",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7e4569476e152f6b8537bdc1711df595ec1ffd89/research/whole-repo-synthesis-20261122/phase/EFFECTIVE_PHASE_AND_RUNS.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md",
+      "blob": "2a0bfeb5574cf140c192ff393b6fba4a686ba13a",
+      "sha256": "dd959aa34c35773d20642582d0aeb7c25d2d1eee65bc969b9a35a22304cd4be5",
+      "role": "used",
+      "location_and_use": "Theorems1--2, uniform scalar and joint moving Cesaro trace",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73/research/lean-global-closure-20261121/machinery/MOVING_CESARO_FIBRES.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/UNEQUAL_DEPTH_SIBLING_ATTEMPT.md",
+      "blob": "c518f8f98313642009ef5bf56f76e4d6e40a8a32",
+      "sha256": "50ee651b7cf783acccb6ea877a776a3b90302eb9966ecdcad36f65cce9dc34cb",
+      "role": "context",
+      "location_and_use": "Depth cost for an actual high-payoff sibling witness",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73/research/lean-global-closure-20261121/closing/UNEQUAL_DEPTH_SIBLING_ATTEMPT.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/NONLOCAL_SURPLUS_REPAIR_ATTEMPT.md",
+      "blob": "fd241e11f85888109d0511cbe2b6e950f7b5d93b",
+      "sha256": "4e47174309ed0253458c7c1ad9e5ae20befd83e9c587616c6a3b2a048e31fb42",
+      "role": "context",
+      "location_and_use": "Late original-source repair bound and source budget",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73/research/lean-global-closure-20261121/closing/NONLOCAL_SURPLUS_REPAIR_ATTEMPT.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/ZERO_ATOM_CLOSING_ATTEMPT.md",
+      "blob": "2e96c55e7c3edcc69a0dcc56b4d6adb573fd9a51",
+      "sha256": "7bada4db374c4150e59421bf36b9a829f58cd172a4e6211af5ef2faba39cadb6",
+      "role": "context",
+      "location_and_use": "Current all-word cycle count boundary",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73/research/lean-global-closure-20261121/closing/ZERO_ATOM_CLOSING_ATTEMPT.md"
+    },
+    {
+      "pr": 175,
+      "commit": "8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73",
+      "path": "research/lean-global-closure-20261121/closing/FIXED_SOURCE_SHADOW_ENTROPY.md",
+      "blob": "659b8b58cda5f9297e165234557c16cb98f7bcf1",
+      "sha256": "b61ec8fc7b1de66b58ca2355b604d1e9fb43387e251e1e0d42e2158dfba6f2db",
+      "role": "context",
+      "location_and_use": "Actual shadow repetition versus entropy",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/8a8b1eea6c9fdfbce7b0bbf0af4eb771791e3a73/research/lean-global-closure-20261121/closing/FIXED_SOURCE_SHADOW_ENTROPY.md"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/WHOLE_SOURCE_DEBT_ATTEMPT.md",
+      "blob": "95db4ebf1cd16fa6e91ace46a1774d6b27605cbc",
+      "sha256": "2c3ae41c57d5a1eb24e88cdd6343171224f08495abfb325ed9f42fa1582cb0de",
+      "role": "used",
+      "location_and_use": "Full source debt and permission at unchanged target",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fdcb137214f4be8ac30dbb025d6eeb6568e22e2a/research/lean-global-resolvent-20261121/overview/returns/WHOLE_SOURCE_DEBT_ATTEMPT.md"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/EFFECTIVE_RUN_OCCUPATION.md",
+      "blob": "9ef7051d2a0a21337a22987035e045a8e753663d",
+      "sha256": "911d73f4b1ebb18b2046b999124707e8c5566fe2853729c0bacd3e14b343cea4",
+      "role": "context",
+      "location_and_use": "Uniform effective bounded-run occupation",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fdcb137214f4be8ac30dbb025d6eeb6568e22e2a/research/lean-global-resolvent-20261121/overview/returns/EFFECTIVE_RUN_OCCUPATION.md"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/LOGARITHMIC_SPARSE_RETURN_DESCENT.md",
+      "blob": "e7a52a794d2c715da581316041dc6937a1a3ad08",
+      "sha256": "086358d37609522226c5f585a07ecb2fff3e9e82e80c8289adfcf9bb7bd2725b",
+      "role": "context",
+      "location_and_use": "Logarithmic bounded-run endpoint criterion and unproved return",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fdcb137214f4be8ac30dbb025d6eeb6568e22e2a/research/lean-global-resolvent-20261121/overview/returns/LOGARITHMIC_SPARSE_RETURN_DESCENT.md"
+    },
+    {
+      "pr": 176,
+      "commit": "fdcb137214f4be8ac30dbb025d6eeb6568e22e2a",
+      "path": "research/lean-global-resolvent-20261121/overview/returns/STOPPING_TREE_TRANSPORT_ATTEMPT.md",
+      "blob": "2d9196a4cd6fe178498ed63f1a3ff5e3cd9f0401",
+      "sha256": "4a6f5af51dca6b3dded76aaad5bfb7c2d7bfde3597c8725f94f6fcaa443a7fa0",
+      "role": "context",
+      "location_and_use": "Complete stopping tree and source cost",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/fdcb137214f4be8ac30dbb025d6eeb6568e22e2a/research/lean-global-resolvent-20261121/overview/returns/STOPPING_TREE_TRANSPORT_ATTEMPT.md"
+    },
+    {
+      "pr": 177,
+      "commit": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/JOINT_MINIMAL_COUNTEREXAMPLE.md",
+      "blob": "00414b03880118a458a6c5666f3170949a9746d7",
+      "sha256": "1a815ad6f1cf3f73c7538f16af91308fd8c7af610e6a6da51b5f3a23d966692e",
+      "role": "used",
+      "location_and_use": "Full arbitrary-target lower-grade and larger-same-grade hypotheses",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0444986571f09f302cb3687b4bba3552600e4119/research/lean-exact-witness-global-20261121/JOINT_MINIMAL_COUNTEREXAMPLE.md"
+    },
+    {
+      "pr": 177,
+      "commit": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/WITNESS_CLOSURE_CONTINUATION.md",
+      "blob": "d45b34eeb5ca8418a056d2a34ffc31d23f866d5b",
+      "sha256": "08c0da9935c70f090eb759652e6dae890e31e3da6e1f1144bd401dda6448dde9",
+      "role": "used",
+      "location_and_use": "Arbitrary carry length and target-dependent suffix exits",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0444986571f09f302cb3687b4bba3552600e4119/research/lean-exact-witness-global-20261121/WITNESS_CLOSURE_CONTINUATION.md"
+    },
+    {
+      "pr": 177,
+      "commit": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/MERGER_RETAINED_EVEN.md",
+      "blob": "060bc2c7c7dbe631775cb57e2487e9a37e5ed0c9",
+      "sha256": "ffe877d8fe88c4cccd7425b91a9fa543386126ac9158b1997b822bf2bcf75d11",
+      "role": "context",
+      "location_and_use": "Prior reset cells; no new priority claimed for modulo9 obstruction",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0444986571f09f302cb3687b4bba3552600e4119/research/lean-exact-witness-global-20261121/MERGER_RETAINED_EVEN.md"
+    },
+    {
+      "pr": 177,
+      "commit": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/lean/Collatz/RetainedEvenReset.lean",
+      "blob": "2eaf32078f9043764a35c25744bf75eba908417b",
+      "sha256": "c94547e22613b4f0044f7c3d7eefb46de62e8aab6fcddc422db2418cb58cba57",
+      "role": "context",
+      "location_and_use": "Existing reset declarations and scope only; not recompiled",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0444986571f09f302cb3687b4bba3552600e4119/research/lean-exact-witness-global-20261121/lean/Collatz/RetainedEvenReset.lean"
+    },
+    {
+      "pr": 177,
+      "commit": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/ARITHMETIC_CYCLE_CONTINUATION.md",
+      "blob": "2bce059a1e57f365a4eb10e2505265923e379911",
+      "sha256": "a3c9113198564e4dac212782d5b6d3c270635c1fc9fe9a1e33cac75e5a8b7fc8",
+      "role": "context",
+      "location_and_use": "Latest cycle low-run properness boundary",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0444986571f09f302cb3687b4bba3552600e4119/research/lean-exact-witness-global-20261121/ARITHMETIC_CYCLE_CONTINUATION.md"
+    },
+    {
+      "pr": 177,
+      "commit": "0444986571f09f302cb3687b4bba3552600e4119",
+      "path": "research/lean-exact-witness-global-20261121/ENERGY_TRANSPORT_CONTINUATION.md",
+      "blob": "c68a958e7cff36420fef04ca163672f98477f312",
+      "sha256": "d1ae599da67c9fb8d0a3930a7aee09f20cbe4b5f8dff23326efef7e8e885b1a0",
+      "role": "context",
+      "location_and_use": "Exact finite Green cutoff retaining escape coefficient",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/0444986571f09f302cb3687b4bba3552600e4119/research/lean-exact-witness-global-20261121/ENERGY_TRANSPORT_CONTINUATION.md"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md",
+      "blob": "8b7a6471f014be065f1dc3decc0027ba112cfd33",
+      "sha256": "bef18043b6b30a3b435a140098a3bb7528cc3fc6d2f6a9a27565892bbbf2347d",
+      "role": "context",
+      "location_and_use": "Contemporary rigidity directions and source-preserving limits",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493/literature/deep-machinery-20261122/05_rigidity_and_long_shots.md"
+    }
+  ]
+}
