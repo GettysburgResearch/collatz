@@ -1,0 +1,27 @@
+{
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_modules": [
+    {
+      "module": "CanonicalRetracing",
+      "path": "research/rigidity-closing-20261122/lean/CanonicalRetracing.lean",
+      "sha256": "6fd19273c9592f7b27181cbe86fd49809a3dc38ee997a0a0ee0c65b3496be694"
+    },
+    {
+      "module": "CyclotomicBlockExclusion",
+      "path": "research/rigidity-closing-20261122/lean/CyclotomicBlockExclusion.lean",
+      "sha256": "d3ffda404a77fed64d13f2a4743388f051aecefe401dff778f80cf36e30ccb34"
+    }
+  ],
+  "local_theorem_dependencies": [
+    {
+      "module": "OriginalSourceEntropy",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "used_theorem": "CollatzOriginalEntropy.sliding_window_cost_le",
+      "scope": "An existing finite window-count inequality. The 21 public audits of its complete byte-exact module are inherited, never counted as new."
+    }
+  ],
+  "scope": "Two new scalar/algebra modules. No probability-law, harmonic-flow construction, general Collatz, GRH, mixing-onset or ideal-membership axiom is assumed. Written all-parameter word correspondence and entropy limits have separate scopes in FORMALIZATION.md."
+}

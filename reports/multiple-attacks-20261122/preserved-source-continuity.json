@@ -1,0 +1,30 @@
+{
+  "schema": "collatz-preserved-source-continuity/v1",
+  "head": "bf2486d727b8e5ab141866f08b4b8f246ffdf4ed",
+  "tree": "c7df480ba9b3d2147facc8d24f23f91a43980adc",
+  "prior_packets": [
+    {
+      "receipt": "reports/literature-orbit-closure-20261121/published3-complete-replay.json",
+      "receipt_sha256": "ad6e93e61d3f20aa1a6c8d4722cceb3a94b6997fa63a244d6ac7f2ee89daba3d",
+      "recorded_inputs": 39,
+      "matching_inputs": 39,
+      "reexecuted": false
+    },
+    {
+      "receipt": "reports/whole-repo-closure-20261122/published1-complete-replay.json",
+      "receipt_sha256": "633b6e449d00ee616d4d034b1fb248197226e4c367d9ba0bdb77d0746dbf1426",
+      "recorded_inputs": 19,
+      "matching_inputs": 19,
+      "reexecuted": false
+    },
+    {
+      "receipt": "reports/profound-closure-20261122/published1-complete-replay.json",
+      "receipt_sha256": "8d974e489ca90d632ed66b3011ff023f9017d78983f0c89c7af8d6294d2628d8",
+      "recorded_inputs": 32,
+      "matching_inputs": 32,
+      "reexecuted": false
+    }
+  ],
+  "status": "PASS",
+  "scope": "Byte-identity checks only. Older mathematical or executable evidence is not claimed as a new replay."
+}

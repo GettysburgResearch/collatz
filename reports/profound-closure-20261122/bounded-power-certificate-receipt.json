@@ -1,0 +1,28 @@
+{
+  "certificate_sha256": "1c4e7a939c53df81a13e53a81bacc425940ddbecdfb3f62dc4ae4e29bfee872d",
+  "producer_sha256": "76141f2a31631a6d320083ad95a51c8be9c828f2b785432483b1ebc1d3c7b605",
+  "verifier_sha256": "05789b167827badd231061a05e7905fcd0ad49cb56ba809466ee9131da686a0c",
+  "observed_runs": [
+    {
+      "command": [
+        "python",
+        "bounded_power_verify.py",
+        "--rejection-controls"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "bounded_power_verify.py",
+        "--rejection-controls"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "schemas": 6,
+  "uniform_bounds": 4,
+  "damaged_certificates_rejected_per_run": 4,
+  "scope": "Exact block data, actual fixed-block cycles, rational constants, and certified integer threshold. No full enumeration at the analytic cutoff was executed."
+}

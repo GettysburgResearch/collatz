@@ -1,0 +1,21 @@
+{
+  "date_utc": "2026-11-21",
+  "verdict": "VERIFIED",
+  "sha256": {
+    "block_schema_certify.py": "f896e6a9e69e9e08edf97ee5bfe1ce04486050c16241ba8fe1f031f720aa010f",
+    "block_schema_verify.py": "963e76fedde87eb0ffd69efbb9dfee51594ce750caf25efcb4f7425e4a76a73f",
+    "block_schema_certificates.json": "cb7122b2e0f4bd75ef9aa7501de6272564e879d017492cbb4a5e41dd6b05c8f7"
+  },
+  "independent_execution": {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/c6766c1207a3/collatz_work/stepback_root/block_schema_verify.py",
+      "/workspace/scratch/c6766c1207a3/collatz_work/stepback_root/block_schema_certificates.json"
+    ],
+    "exit_code": 0,
+    "schemas_accepted": 8,
+    "artifact_sha256": "cb7122b2e0f4bd75ef9aa7501de6272564e879d017492cbb4a5e41dd6b05c8f7"
+  },
+  "scope": "substantive mathematical/code review and one independent checker execution; no exhaustive code QA"
+}

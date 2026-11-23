@@ -1,0 +1,71 @@
+{
+  "schema": "rational-shadow-descent/v1",
+  "certificates": [
+    {
+      "name": "three-twos",
+      "source_block": [
+        2
+      ],
+      "source_a": 3,
+      "source_b": 4,
+      "source_c": 1,
+      "denominator": 1,
+      "target_A": 9,
+      "target_B": 2,
+      "source_repetitions": 3,
+      "source_horizon": 6,
+      "shadow_numerator": 11,
+      "target_clock": 5,
+      "target_odd_count": 3,
+      "shadow_endpoint": 10,
+      "target_parity": "11010",
+      "minimum_scaled_descent": 91,
+      "fixed_source_exception": 1,
+      "exception_target_endpoint": 10
+    },
+    {
+      "name": "two-threes",
+      "source_block": [
+        3
+      ],
+      "source_a": 3,
+      "source_b": 8,
+      "source_c": 1,
+      "denominator": 5,
+      "target_A": 9,
+      "target_B": 2,
+      "source_repetitions": 2,
+      "source_horizon": 6,
+      "shadow_numerator": 19,
+      "target_clock": 5,
+      "target_odd_count": 3,
+      "shadow_endpoint": 19,
+      "target_parity": "11100",
+      "minimum_scaled_descent": 90,
+      "fixed_source_exception": null,
+      "exception_target_endpoint": null
+    },
+    {
+      "name": "forty-eight-fours",
+      "source_block": [
+        4
+      ],
+      "source_a": 3,
+      "source_b": 16,
+      "source_c": 1,
+      "denominator": 13,
+      "target_A": 9,
+      "target_B": 2,
+      "source_repetitions": 48,
+      "source_horizon": 192,
+      "shadow_numerator": 35,
+      "target_clock": 192,
+      "target_odd_count": 121,
+      "shadow_endpoint": 131,
+      "target_parity": "111101111111011011010000111100111111011011010000111100111111011011010000111100111111011011010000111100111111011011010000111100111111011011010000111100111111011011010000111100111111011011010000",
+      "minimum_scaled_descent": 7974637520790484193366249412109661672171357056654330743141,
+      "fixed_source_exception": null,
+      "exception_target_endpoint": null
+    }
+  ]
+}

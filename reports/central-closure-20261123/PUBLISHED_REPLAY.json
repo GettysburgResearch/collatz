@@ -1,0 +1,701 @@
+{
+  "schema": "collatz-central-closure-replay/v1",
+  "complete": true,
+  "started_utc": "2026-11-23T01:12:01Z",
+  "repository": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+  "packet": "research/central-closure-20261123",
+  "inputs": [
+    {
+      "path": "research/central-closure-20261123/DEPENDENCIES.json",
+      "sha256": "e98b6836aaf2662c3bf01416f122f55bae64d80f6c2bf3d7cdbee0f87c11c867"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2"
+    },
+    {
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98"
+    },
+    {
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd"
+    },
+    {
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6"
+    },
+    {
+      "path": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54"
+    },
+    {
+      "path": "research/central-closure-20261123/REVIEW_BINDING.json",
+      "sha256": "ae4682e2658beb3f346108442f7269b651ca51aa0c0f8f96c712fdf501711a04"
+    },
+    {
+      "path": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "path": "research/central-closure-20261123/RESIDUAL_UNIT_EXCLUSION.md",
+      "sha256": "012f012d063fe5a4f08015da3a5d022cf580e3c630625ee81c174a7f657940ca"
+    },
+    {
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b"
+    },
+    {
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430"
+    },
+    {
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36"
+    },
+    {
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da"
+    },
+    {
+      "path": "research/central-closure-20261123/certificates/check_collision_budget.py",
+      "sha256": "5e48eb3cfad0a0fb934d87f9c1736414c39d16cd9db4da560d07bd5de8227ecb"
+    },
+    {
+      "path": "research/central-closure-20261123/certificates/check_factor_growth_gap.py",
+      "sha256": "ce0461731035a067b03b1a1e155aa8c07d0b29ac46c2fc5790cb3cd898238d43"
+    },
+    {
+      "path": "research/central-closure-20261123/certificates/check_principal_fiber_control.py",
+      "sha256": "7c6fd1e7bf36cee9c7140de8296c745823212a5bd9c73a1af5a829ca1070d6ba"
+    },
+    {
+      "path": "research/central-closure-20261123/reviews/LEAN_RESIDUAL_WORD_REVIEW.md",
+      "sha256": "5ddbc5ab94edbbc3cc85a9f2b9dc313f4d9c068549a6f1e1421c0769b2fdfd86"
+    },
+    {
+      "path": "research/central-closure-20261123/reviews/RESIDUAL_WORD_REVIEW.md",
+      "sha256": "62034b0a2cf29bf501c8ca7e522418bbf3f27bc09c6d127a1faef652ad61f065"
+    },
+    {
+      "path": "research/central-closure-20261123/reviews/COLLISION_GAIN_REVIEW.md",
+      "sha256": "1ad9ac5d37307f90b8c4d2fc2bda0a56f4fd2265eec0c2c3c10bad836afc53af"
+    },
+    {
+      "path": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "sha256": "0948fa7c3c6468bf17af4a47bbcae1093f9a1c2b2e3dbb62731374188bbe24b8"
+    },
+    {
+      "path": "research/central-closure-20261123/certificates/factor-growth-gap-certificate.json",
+      "sha256": "4e6f116d47c09806265b19b353d3d488cd57a4c3f04b9fa7b04fe49e7680e554"
+    },
+    {
+      "path": "research/central-closure-20261123/COLLISION_SOURCES.json",
+      "sha256": "6e15bbe1227bbb1deb6bb7f5d1228c0be18dd4d9b8a3e528fe3b1d4699215735"
+    },
+    {
+      "path": "research/central-closure-20261123/FORMALIZATION.md",
+      "sha256": "1bf677053a9a7c36c704d0188610b0a7f1e75e4ac2e8de1eca69b51dff3dd43c"
+    },
+    {
+      "path": "research/central-closure-20261123/PIN_DENSITY_GAP.md",
+      "sha256": "c2aef05c4bd1c307b6bc1c33d45e9b214f327b168929a5363ca6fd646a0054ef"
+    },
+    {
+      "path": "research/central-closure-20261123/README.md",
+      "sha256": "60943da86fc897ca5fee70a79232a8d33cabf2edf0d706d3af7d687f5439205b"
+    },
+    {
+      "path": "research/central-closure-20261123/SOURCES.json",
+      "sha256": "f6e51eb9c3c699ec3d308ee0c80e7e75d664df985ca83b57cc08fabbe0a8e820"
+    },
+    {
+      "path": "research/central-closure-20261123/SOURCE_FILES.json",
+      "sha256": "a0c835cd729ddff20914bf418b636a31756815c71ed825f8b8259eade8ee321d"
+    },
+    {
+      "path": "research/central-closure-20261123/SOURCE_SNAPSHOT.json",
+      "sha256": "29848cf0633050ad119de5a7093c3d85a251e7f32ba364ace9cc881b5dcc68a8"
+    },
+    {
+      "path": "research/central-closure-20261123/certificates/principal-fiber-control.json",
+      "sha256": "60db1f8abf063d907d94bf24dc291355d3f9b1732760edef46bac5c7a28d5dac"
+    },
+    {
+      "path": "research/central-closure-20261123/check.py",
+      "sha256": "e553a6e61454a717d3f4b9eeb8d975cd7f9eddcab1b6b96acb4b7e3e2f220fff"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d"
+    }
+  ],
+  "commands": [
+    {
+      "label": "head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/01-head.log",
+      "log_sha256": "2fc73aa195d99f9acd7917278178c4dc5727ba92ceeaf2a26b7b20e4ac1eba36"
+    },
+    {
+      "label": "tree",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/02-tree.log",
+      "log_sha256": "daa16a8e28069d0a2c9441bcc3ed042d5119a29432a8e8c0ef20ebafe06a3a50"
+    },
+    {
+      "label": "status-before",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.025,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/03-status-before.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tracked-files",
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/04-tracked-files.log",
+      "log_sha256": "a75c8c76f5610ee0d919b60534a915afe5da2de6f688997e3f239aff928fa47e"
+    },
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.042,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/05-lean-version.log",
+      "log_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680"
+    },
+    {
+      "label": "mathlib-head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/06-mathlib-head.log",
+      "log_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "label": "ResidualWord",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/lib/ResidualWord.olean",
+        "ResidualWord.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/source",
+      "exit_code": 0,
+      "seconds": 2.954,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/07-ResidualWord.log",
+      "log_sha256": "39c9849be9d9da23264863c0fe643f9f98a5a34cdea8380df998e62401c3b061"
+    },
+    {
+      "label": "DistinctWordBudget",
+      "argv": [
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/lib/DistinctWordBudget.olean",
+        "DistinctWordBudget.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/source",
+      "exit_code": 0,
+      "seconds": 2.891,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/08-DistinctWordBudget.log",
+      "log_sha256": "20a55375066d28b6a5f4b40a9d97164c8f3050165dc8b9af4fc71f948f554784"
+    },
+    {
+      "label": "normal-factor_growth_gap",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_nov23_published/research/central-closure-20261123/certificates/check_factor_growth_gap.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.026,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/09-normal-factor_growth_gap.log",
+      "log_sha256": "4e6f116d47c09806265b19b353d3d488cd57a4c3f04b9fa7b04fe49e7680e554"
+    },
+    {
+      "label": "normal-principal_fiber_control",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_nov23_published/research/central-closure-20261123/certificates/check_principal_fiber_control.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.028,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/10-normal-principal_fiber_control.log",
+      "log_sha256": "60db1f8abf063d907d94bf24dc291355d3f9b1732760edef46bac5c7a28d5dac"
+    },
+    {
+      "label": "normal-collision_budget",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_nov23_published/research/central-closure-20261123/certificates/check_collision_budget.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.086,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/11-normal-collision_budget.log",
+      "log_sha256": "db8bcb90a37df8629d2e9625fca1df1405d4301377cf2a79092e8cee74eb8cc4"
+    },
+    {
+      "label": "optimized-factor_growth_gap",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_nov23_published/research/central-closure-20261123/certificates/check_factor_growth_gap.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.064,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/12-optimized-factor_growth_gap.log",
+      "log_sha256": "4e6f116d47c09806265b19b353d3d488cd57a4c3f04b9fa7b04fe49e7680e554"
+    },
+    {
+      "label": "optimized-principal_fiber_control",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_nov23_published/research/central-closure-20261123/certificates/check_principal_fiber_control.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.068,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/13-optimized-principal_fiber_control.log",
+      "log_sha256": "60db1f8abf063d907d94bf24dc291355d3f9b1732760edef46bac5c7a28d5dac"
+    },
+    {
+      "label": "optimized-collision_budget",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_nov23_published/research/central-closure-20261123/certificates/check_collision_budget.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.123,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/14-optimized-collision_budget.log",
+      "log_sha256": "db8bcb90a37df8629d2e9625fca1df1405d4301377cf2a79092e8cee74eb8cc4"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.479,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/15-repository-validation.log",
+      "log_sha256": "d39a006f7d743d9036a2ccf29d0bd00807e3eace6afe86b295bcdb4a50d1c4a9"
+    },
+    {
+      "label": "status-after",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.004,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/16-status-after.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "head-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.001,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/17-head-after.log",
+      "log_sha256": "2fc73aa195d99f9acd7917278178c4dc5727ba92ceeaf2a26b7b20e4ac1eba36"
+    },
+    {
+      "label": "tree-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_nov23_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/logs/18-tree-after.log",
+      "log_sha256": "daa16a8e28069d0a2c9441bcc3ed042d5119a29432a8e8c0ef20ebafe06a3a50"
+    }
+  ],
+  "modules": [
+    {
+      "module": "ResidualWord",
+      "source": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "new": true,
+      "source_sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6",
+      "compiled_source_sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6",
+      "axioms": [
+        {
+          "declaration": "CollatzResidualWord.numerator_coefficient",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.alternating_coefficient",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.alternating_factorization",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.numerator_of_quotient_divides",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.exponents_of_alternating_quotient",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.phase_of_alternating_quotient",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.numerator_positive",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.principal_factor_survives",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.quotient_of_linear_residual",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.alternating_profile_of_linear_residual",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.alternating_evaluation",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzResidualWord.ordinary_realizer_of_linear_residual",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "5ad96cea549c6524eac04ebe1e15cfd4053bf24be1bf9251c0b71dcb0890d2e0"
+    },
+    {
+      "module": "DistinctWordBudget",
+      "source": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "new": true,
+      "source_sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54",
+      "compiled_source_sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54",
+      "axioms": [
+        {
+          "declaration": "CollatzDistinctWordBudget.choose_prefix_sum",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.weighted_choose_sum",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.squared_weighted_choose_sum",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.histogram_deficit_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.histogram_cost_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.histogram_squared_deficit_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.finite_collision_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.mean_cost_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzDistinctWordBudget.count_le_choose_of_mean",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "fc7895f9a26bf247d14675ef83484aab383dda4c1610a26fdf02307f69ebf0fd"
+    }
+  ],
+  "review_bindings": [
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/RESIDUAL_UNIT_EXCLUSION.md",
+      "sha256": "012f012d063fe5a4f08015da3a5d022cf580e3c630625ee81c174a7f657940ca",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_collision_budget.py",
+      "sha256": "5e48eb3cfad0a0fb934d87f9c1736414c39d16cd9db4da560d07bd5de8227ecb",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_factor_growth_gap.py",
+      "sha256": "ce0461731035a067b03b1a1e155aa8c07d0b29ac46c2fc5790cb3cd898238d43",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_principal_fiber_control.py",
+      "sha256": "7c6fd1e7bf36cee9c7140de8296c745823212a5bd9c73a1af5a829ca1070d6ba",
+      "review_sha256": "f4558b1176a7dc44d366b11ad50332eda014d41fbef8956353fc08b91fe6793e"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/LEAN_RESIDUAL_WORD_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6",
+      "review_sha256": "5ddbc5ab94edbbc3cc85a9f2b9dc313f4d9c068549a6f1e1421c0769b2fdfd86"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/RESIDUAL_WORD_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6",
+      "review_sha256": "62034b0a2cf29bf501c8ca7e522418bbf3f27bc09c6d127a1faef652ad61f065"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/COLLISION_GAIN_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54",
+      "review_sha256": "1ad9ac5d37307f90b8c4d2fc2bda0a56f4fd2265eec0c2c3c10bad836afc53af"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430",
+      "review_sha256": "0948fa7c3c6468bf17af4a47bbcae1093f9a1c2b2e3dbb62731374188bbe24b8"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b",
+      "review_sha256": "0948fa7c3c6468bf17af4a47bbcae1093f9a1c2b2e3dbb62731374188bbe24b8"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_factor_growth_gap.py",
+      "sha256": "ce0461731035a067b03b1a1e155aa8c07d0b29ac46c2fc5790cb3cd898238d43",
+      "review_sha256": "0948fa7c3c6468bf17af4a47bbcae1093f9a1c2b2e3dbb62731374188bbe24b8"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/factor-growth-gap-certificate.json",
+      "sha256": "4e6f116d47c09806265b19b353d3d488cd57a4c3f04b9fa7b04fe49e7680e554",
+      "review_sha256": "0948fa7c3c6468bf17af4a47bbcae1093f9a1c2b2e3dbb62731374188bbe24b8"
+    }
+  ],
+  "source_ports": false,
+  "head": "e04daab0a0ddd59c80f5d16a51b9943fd5149e6c",
+  "tree": "95ff707b2c8560760b7af57ab7d4f8dd1e53a75b",
+  "tracked_files": 736,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "review_scope": "Exact current-source review bindings. Original child review hashes and the reference/presentation-only integration changes are distinguished in ROOT_REVIEW.md. Written proofs and finite Lean cores have separate scopes.",
+  "lean_path": "/workspace/scratch/c6766c1207a3/collatz_work/nov23_published_replay/lib:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "new_theorem_audits": 21,
+  "inherited_theorem_audits": 0,
+  "checkout_clean_after": true,
+  "finished_utc": "2026-11-23T01:12:08Z"
+}

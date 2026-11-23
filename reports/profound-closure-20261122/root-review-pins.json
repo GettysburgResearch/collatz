@@ -1,0 +1,90 @@
+{
+  "reviewer": "coordinating researcher",
+  "scope": "Written deduction and physical interface review, with separate agent cross-reviews; external Matveev and analytic source theorems are qualified inputs. Runtime replay is separately recorded.",
+  "files": [
+    {
+      "path": "research/profound-closure-20261122/BOUNDED_POWER_LANGUAGES.md",
+      "sha256": "cabaf79863a492e907e18e5cc67c47bb23c486b2a0302357f923106f3ea6a7ce"
+    },
+    {
+      "path": "research/profound-closure-20261122/DEPENDENCIES.json",
+      "sha256": "b8aeb513b9f2e62e264aa46b8d4eb3e4bb36a00604d4a357f8145fb380512b98"
+    },
+    {
+      "path": "research/profound-closure-20261122/FINITE_SPIKES_FORCE_SMALL_ANCESTORS.md",
+      "sha256": "130219761341f3ac612da557ece5d1a96a674cf72a4da18d5883eff16f5823b7"
+    },
+    {
+      "path": "research/profound-closure-20261122/INDEPENDENT_PIN_CYCLES.md",
+      "sha256": "cd0299d9f9989b8a9c1b55b1e63c38de310cd959cc948295264986e0e65caa09"
+    },
+    {
+      "path": "research/profound-closure-20261122/NEGATIVE_CARRY.md",
+      "sha256": "e331591c9a9fd6c141e82f41394769ded40b9c1927978e96719645d6894db8d4"
+    },
+    {
+      "path": "research/profound-closure-20261122/POLYLOGARITHMIC_INVERSE_HORIZONS.md",
+      "sha256": "d4c5b9758f0e8ee1cb8f73d40f63ce8d5da642b48612b47842fd5b049bbd3824"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/bounded_power_certificate.py",
+      "sha256": "76141f2a31631a6d320083ad95a51c8be9c828f2b785432483b1ebc1d3c7b605"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/bounded_power_certificates.json",
+      "sha256": "1c4e7a939c53df81a13e53a81bacc425940ddbecdfb3f62dc4ae4e29bfee872d"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/bounded_power_verify.py",
+      "sha256": "05789b167827badd231061a05e7905fcd0ad49cb56ba809466ee9131da686a0c"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/independent_pin_certificate.json",
+      "sha256": "e573e0c9b9bb93bf4f72d403524dbb5f103ea23778dc1b1371b739f19b072e49"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/independent_pin_certify.py",
+      "sha256": "b527764c5567caecff3ff4d4f7da14b1172b8e06f9793e4cbbea4dfcdf602c7d"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/independent_pin_verify.py",
+      "sha256": "0edea7040209022b8a57ef498793f7dcbcc00a337fb392be7a328ddc0005dae7"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/negative_budget.py",
+      "sha256": "722789839ae2c4e960bf7cf540332137de4e9015a78a7ab4bebcc245471e2e43"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/negative_budget_examples.json",
+      "sha256": "d85129bfd5faf5b11d914703d3f9a60d5cddaa8c839df1df2803c4860f849de7"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/BoundedPowerBudget.lean",
+      "sha256": "3db42b807661cb5fb69b0b82a00e6bd2cf7468fc3614f1b5d04e08c98477a309"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/FiniteBlockTelescope.lean",
+      "sha256": "31f0e0093ab541a0b851ee7478b947fcb82428727ee8177ac9fc6955dd7c8d65"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/IndependentCyclePins.lean",
+      "sha256": "917fe8a0f00c30806c7f2749e935d631ce0d13e0488f2abd8fafb435366dd6ca"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/NegativeCarry.lean",
+      "sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08"
+    },
+    {
+      "path": "research/profound-closure-20261122/sources/bounded-power-sources.json",
+      "sha256": "14360b7dd51c4d78248c62d7f3c047425d8646e2f99a132c0f46431423bddb50"
+    },
+    {
+      "path": "research/profound-closure-20261122/sources/finite-inverse-sources.json",
+      "sha256": "c4287f077b0a7faeb87a3f41e9cd9db87cef3bf5132589fdfc8ca65fdaf8cb42"
+    },
+    {
+      "path": "research/profound-closure-20261122/sources/negative-carry-sources.json",
+      "sha256": "44421b48e95ac4ad2d945c62325a5c0407723d0b78bd14c703f916a669afd8c0"
+    }
+  ]
+}

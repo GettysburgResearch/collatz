@@ -1,0 +1,7 @@
+'CollatzShell.CarryLanguage.signed_gap_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryLanguage.carry_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryLanguage.small_debt_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryLanguage.debt_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryLanguage.carry_language_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzShell.CarryLanguage.language_grade_drop' depends on axioms: [propext, Quot.sound]
+'CollatzShell.CarryLanguage.carry_language_interval_rule' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,90 @@
+{
+  "scope": "Exact current-source review bindings. Original child review hashes and the reference/presentation-only integration changes are distinguished in ROOT_REVIEW.md. Written proofs and finite Lean cores have separate scopes.",
+  "bindings": [
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/RESIDUAL_UNIT_EXCLUSION.md",
+      "sha256": "012f012d063fe5a4f08015da3a5d022cf580e3c630625ee81c174a7f657940ca"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "sha256": "1d395d9c0dff61736f03a5628abb0fe2ffbadb87f83b359530888200b8dafb36"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "sha256": "d25d348e2af2b5439e8e28aa87d28a1b9b2c901722e1e6a3eeeaa93965def0da"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_collision_budget.py",
+      "sha256": "5e48eb3cfad0a0fb934d87f9c1736414c39d16cd9db4da560d07bd5de8227ecb"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_factor_growth_gap.py",
+      "sha256": "ce0461731035a067b03b1a1e155aa8c07d0b29ac46c2fc5790cb3cd898238d43"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/ROOT_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_principal_fiber_control.py",
+      "sha256": "7c6fd1e7bf36cee9c7140de8296c745823212a5bd9c73a1af5a829ca1070d6ba"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/LEAN_RESIDUAL_WORD_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/RESIDUAL_WORD_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/ResidualWord.lean",
+      "sha256": "420d1eb7976dca248cc4e85846586e253751379907739bc6a2bd816aca3f79e6"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/COLLISION_GAIN_REVIEW.md",
+      "path": "research/central-closure-20261123/lean/DistinctWordBudget.lean",
+      "sha256": "2b5c3d9e4ccc96f9923c33bf38feb9670810da87ae08bbe33cf54d5dd126eb54"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_DENOMINATOR_GROWTH.md",
+      "sha256": "e0921fe30a77472cc6c17477f8e6b9edbc042c5d80ce37b09840310a969b0430"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/PRIMITIVE_RESIDUAL_DEGREE.md",
+      "sha256": "ef823ecb00302060890f0858e1713ac967c11cbfd31723a8fe47f43402ab5b7b"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/check_factor_growth_gap.py",
+      "sha256": "ce0461731035a067b03b1a1e155aa8c07d0b29ac46c2fc5790cb3cd898238d43"
+    },
+    {
+      "review": "research/central-closure-20261123/reviews/PRIMITIVE_DENOMINATOR_REVIEW.md",
+      "path": "research/central-closure-20261123/certificates/factor-growth-gap-certificate.json",
+      "sha256": "4e6f116d47c09806265b19b353d3d488cd57a4c3f04b9fa7b04fe49e7680e554"
+    }
+  ]
+}

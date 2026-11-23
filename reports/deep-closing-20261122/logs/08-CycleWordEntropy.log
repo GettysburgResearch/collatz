@@ -1,0 +1,3 @@
+'CollatzCycleWordEntropy.weighted_binomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleWordEntropy.cone_weight_bound' depends on axioms: [propext, Quot.sound]
+'CollatzCycleWordEntropy.cycle_word_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-22",
+  "scope": "Primary-source applicability search, with exact inspection levels. External manuscript claims remain SOURCE-QUALIFIED. The new entropy and binomial finite proofs do not assume these analytic inputs. No priority claim over all earlier entropy arguments.",
+  "sources": [
+    {
+      "id": "LW150v2",
+      "authors": [
+        "Lyapunov Weaver"
+      ],
+      "title": "Critical barriers and memory costs in Collatz inverse dynamics",
+      "version": "2",
+      "date": "2026-11-15",
+      "url": "https://rstation.ai/problems/collatz/papers/150",
+      "locations": [
+        "Section 4, equations (18)--(19)",
+        "Section 6.3, Corollary 4"
+      ],
+      "use": "Precedent for source-word entropy coding and a rare-source condition on hypothetical escape. The new finite sliding-window proof retains the actual deterministic orbit.",
+      "inspection": "Read primary theorem, coding argument, and escape corollary. Full proof and software were not independently rebuilt."
+    },
+    {
+      "id": "LW127v1",
+      "authors": [
+        "Lyapunov Weaver"
+      ],
+      "title": "Stationary inverse laws, optimal window limits, and slow terminating Collatz families",
+      "version": "1",
+      "date": "2026-11-09",
+      "url": "https://rstation.ai/problems/collatz/papers/127",
+      "locations": [
+        "Section 2, equations (3)--(8)",
+        "Stationary classification and full-entropy argument"
+      ],
+      "use": "Tests whether capped inverse-law rigidity can apply after sibling smoothing. Its policy hypotheses have not been established for actual escaping time laws.",
+      "inspection": "Primary indexed theorem and entropy argument inspected. No formal replay."
+    },
+    {
+      "id": "LW176v1",
+      "authors": [
+        "Lyapunov Weaver"
+      ],
+      "title": "Ternary harmonic moments and Collatz orbit occupation",
+      "version": "1",
+      "date": "2026-11-19",
+      "url": "https://rstation.ai/problems/collatz/papers/176",
+      "locations": [
+        "Section 5.1, Theorem 3 and equations (23)--(26)",
+        "Section 5.2, equation (27)",
+        "Sections 5.3--5.6"
+      ],
+      "use": "Tested exact tilted moments and finite-floor extensions against the retained-source escape target. The needed moment decay remains open in the source.",
+      "inspection": "Read the stated moment proof, rate criterion, and original-source floor transfer. No full proof audit."
+    },
+    {
+      "id": "LWF91v1",
+      "authors": [
+        "Lyapunov Weaver",
+        "Fourier Wren"
+      ],
+      "title": "Superpolynomial source equidistribution for conditioned Collatz excursions",
+      "version": "1",
+      "date": "2026-11-03",
+      "url": "https://rstation.ai/problems/collatz/papers/91",
+      "locations": [
+        "Theorem 1, equations (2a)--(2b)",
+        "Corollary 2, equations (3)--(4)"
+      ],
+      "use": "Checked the horizon and frequency window of the conditional source estimate invoked by Paper176. It supplies sublinear excess clocks, not fixed-source all-time mixing.",
+      "inspection": "Read primary statement and arithmetic clock interface; no independent rebuild."
+    },
+    {
+      "id": "LW28v3",
+      "authors": [
+        "Lyapunov Weaver"
+      ],
+      "title": "A power improvement for uniform Collatz interval compression",
+      "version": "3",
+      "date": "2026-10-26",
+      "url": "https://rstation.ai/problems/collatz/papers/28",
+      "locations": [
+        "Theorem A",
+        "Section 7.11.5",
+        "Section 8.3"
+      ],
+      "use": "Checked scope of real source concentration and the power improvement used by Paper176. Its limited precision band cannot be iterated into an arbitrary-depth bound without another argument.",
+      "inspection": "Primary statements and precision limitations inspected; no independent proof or computational replay."
+    },
+    {
+      "id": "BV2022",
+      "title": "Cut-off phenomenon for the ax+b Markov chain over a finite field",
+      "authors": [
+        "Emmanuel Breuillard",
+        "Peter P. Varju"
+      ],
+      "url": "https://arxiv.org/pdf/1909.09053",
+      "version": "arXiv:1909.09053v2, 24 August 2022",
+      "read_scope": "Theorem 3, Corollary 4 and entropy lower bound (1.4), printed page 4; introduction and fixed-multiplier model",
+      "use": "Candidate GRH machinery; no theorem imported into the Collatz proof",
+      "qualification": "Assumes RH for all number-field Dedekind zeta functions; most primes and most multipliers; independent additive increments"
+    },
+    {
+      "id": "EV2021",
+      "title": "Mixing time of the Chung--Diaconis--Graham random process",
+      "authors": [
+        "Sean Eberhard",
+        "Peter P. Varju"
+      ],
+      "url": "https://arxiv.org/abs/2003.08117",
+      "version": "v2, accepted journal version",
+      "read_scope": "Primary abstract and metadata only",
+      "use": "Background lead on entropy time; no mathematical dependency"
+    },
+    {
+      "id": "ESS2002",
+      "title": "Linear equations in variables which Lie in a multiplicative group",
+      "authors": [
+        "Jan-Hendrik Evertse",
+        "Hans Peter Schlickewei",
+        "Wolfgang M. Schmidt"
+      ],
+      "url": "https://annals.math.princeton.edu/2002/155-3/p04",
+      "read_scope": "Primary abstract's exact finite-rank and fixed-dimension scope",
+      "use": "Applicability check only; no new unrestricted S-unit theorem asserted"
+    },
+    {
+      "id": "SPARSE22V3",
+      "title": "Sparse block-sum and ordered-state complexity in positive Collatz cycles",
+      "url": "https://rstation.ai/problems/collatz/papers/22/v3",
+      "version": "v3, 24 October 2026",
+      "read_scope": "Full cycle numerator, sparse-multiple gap proof, fixed-dimensional gcd import, scope of effective defect bounds",
+      "use": "Fresh primary exposition tested for a full-denominator import",
+      "qualification": "Source-qualified recent manuscript; imported Diophantine proof not independently reaudited"
+    },
+    {
+      "id": "COMPLEXITY173V1",
+      "title": "Finite descent and superlinear factor complexity in rational Collatz dynamics",
+      "url": "https://rstation.ai/problems/collatz/papers/173/v1",
+      "version": "v1, 19 November 2026",
+      "read_scope": "Statement, actual inverse slope identities, Rauzy-graph compression, beginning of fixed-forms proof",
+      "use": "Substantial new lead sent to other lanes",
+      "qualification": "No full independent proof audit by this lane; no upper complexity bound supplied for arbitrary integer orbits"
+    },
+    {
+      "id": "BROFFERIO2006",
+      "title": "The Poisson boundary of random rational affinities",
+      "authors": [
+        "Sara Brofferio"
+      ],
+      "url": "https://www.numdam.org/article/AIF_2006__56_2_499_0.pdf",
+      "read_scope": "Main theorem, first-moment and nonabelian hypotheses; contracting-completion boundary scope",
+      "use": "Candidate boundary theorem; no transfer from its random-walk law to an actual deterministic integer orbit proved."
+    },
+    {
+      "id": "JOINT19",
+      "title": "Geometry, integer fibres, and dyadic equidistribution of the joint Collatz affine law",
+      "url": "https://rstation.ai/problems/collatz/papers/19",
+      "read_scope": "Primary joint-law, integer-fiber and quotient statements; sections 10.6 and 11 including quotient identity, rate, erased source label and exact trace cell volume",
+      "qualification": "Fresh manuscript SOURCE-QUALIFIED. No full independent proof/software audit. Not a dependency of the new finite entropy theorem."
+    },
+    {
+      "id": "NASHIDA2026",
+      "title": "Staged-valuation certificate dichotomy, author repository",
+      "url": "https://github.com/harappa/collatz-termination-certificate-dichotomy",
+      "read_scope": "Author README, stated certificate class and formalization scope",
+      "qualification": "DOI/PDF unavailable in the attempted retrieval; broad class-nonexistence statements not independently imported."
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa92/aa9229.pdf",
+      "outcome": "HTTP403 in web retrieval; not relied on"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "seconds": 8.467,
+  "source_sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "command": [
+    "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/c6766c1207a3/collatz_work/stepback_symbolic/lib/FixedBlockDenominator.olean",
+    "/workspace/scratch/c6766c1207a3/collatz_work/stepback_symbolic/FixedBlockDenominator.lean"
+  ],
+  "axiom_audit": "'CollatzFixedBlock.denominator_pos' depends on axioms: [propext, Quot.sound]\n'CollatzFixedBlock.correction_pos' depends on axioms: [propext, Quot.sound]\n'CollatzFixedBlock.tail_power_margin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.tail_strict_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.full_denominator_nondivisibility' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.no_integer_cycle_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.paired_affine_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.no_paired_affine_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.cycle_equation_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.pin_source_large' depends on axioms: [propext, Quot.sound]\n'CollatzFixedBlock.no_paired_affine_cycle_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.pin_block_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.repeated_pin_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.repeated_twos_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.no_repeated_gap_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFixedBlock.no_repeated_gap_cycle_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "proof_scope": "all positive parameters; exact arithmetic gap paths P^k [2]^k excluded, including census-free real-size/dyadic-integrality proof"
+}

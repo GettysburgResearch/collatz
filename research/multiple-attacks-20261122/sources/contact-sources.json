@@ -1,0 +1,104 @@
+{
+  "status": "SOURCE-QUALIFIED written analytic deductions; strict checked finite Lean core; no full Collatz convergence claim",
+  "map": "U(n)=(3n+1)/2^v_2(3n+1)",
+  "domain": "Positive odd ternary units not themselves periodic; forward transport killed on first periodic entry.",
+  "imports": [
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "claim_ids": [
+        "(5)-(8)",
+        "(12)-(15)",
+        "(24)"
+      ],
+      "role": "Source-qualified ordinary harmonic flow, positive reciprocal floor, canonical contact upper bound, actual-path product correction, and bounded comparison with the critical inverse law.",
+      "sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b"
+    },
+    {
+      "pr": 176,
+      "commit": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+      "path": "research/lean-global-resolvent-20261121/overview/parallel/OBSTACLE_ENTRANCE_RENEWAL.md",
+      "claim_ids": [
+        "(8)",
+        "(14)-(16)"
+      ],
+      "role": "Almost-sure inverse contact entrance for every fixed threshold M>1; used only for infinite return-law interpretation, not for the finite-reference contraction.",
+      "sha256": "3282a797044b54690e6ff40977aaa2e73c013bda17d66809a281089cd00ba78d"
+    },
+    {
+      "pr": 176,
+      "commit": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+      "path": "research/lean-global-resolvent-20261121/overview/whole/ORDINARY_LAST_CONTACT_MEASURE.md",
+      "claim_ids": [
+        "(8)",
+        "(10)-(13)"
+      ],
+      "role": "Finite escaping last-contact measure on unchanged original sources, exact post-contact Green representation, and component capacities.",
+      "sha256": "4e386ff4b6c09be474515a609e47ae8ad483f191fd3fb3cceacf1c90acc37819"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "claim_ids": [],
+      "role": "Local Lean import furnishing arithmetic tactics and existing Mathlib imports. No CollatzShell theorem is used by the new module.",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    }
+  ],
+  "companion": {
+    "path": "STRICT_GREEN_VOLTERRA.md",
+    "status": "Companion written theorem in the same research packet; this hash freezes the integrated note.",
+    "sha256": "4236d6206ccbedd6347259ef55f82bdb90f45338f48ab8189be78b9a848a5e90",
+    "claim_ids": [
+      "(2)",
+      "(3)",
+      "(11)",
+      "(13)"
+    ],
+    "role": "Bounded strict-Green correction K=SLD and its entire inverse on X_s; used only in EXCURSION_RESOLVENT_INTERFACE.md."
+  },
+  "new_written_claims": [
+    "Every proper ancestor of a contact target has harmonic mass at most rho times the target mass.",
+    "The actual next-contact transport has finite strictly subinvariant reference sigma=nu^2 1_C.",
+    "Its original-source energy and total retained source mass contract geometrically in contact time.",
+    "Forward contact heights decay and inverse contact heights grow geometrically; logarithmic inverse-contact costs are summable.",
+    "For every finite nonnegative original source eta, R(1)S eta=S_T eta lies between delta S eta and S eta.",
+    "Tao marginal L1 mixing and density consistency imply a clipped maximal Haar L1 estimate; transfer to the actual stopped contact endpoint law remains OPEN.",
+    "Under the actual critical inverse law, D_(t-k)(X_k)/G(X_k) is a bounded martingale while its remaining density horizon is positive; stopping at tau wedge (s-m) gives the normalized comparison (6) with a displayed 4 chi entrance-tail term."
+  ],
+  "public_theorems": [
+    "CollatzContactReturn.square_reference_row",
+    "CollatzContactReturn.fiber_energy_bound",
+    "CollatzContactReturn.finite_source_energy_contraction",
+    "CollatzContactReturn.geometric_energy_bound",
+    "CollatzContactReturn.forward_contact_mass",
+    "CollatzContactReturn.forward_contact_height",
+    "CollatzContactReturn.inverse_contact_height"
+  ],
+  "formal_scope": "Finite weighted row algebra, finite disjoint source fibers, geometric iteration, and finite height inequalities. Analytic constructions, countable sums, inverse contact recurrence, and logarithmic series are written rather than formalized.",
+  "remaining_obligations": [
+    "Control the full ordinary excursion durations and terminal escaping source mass.",
+    "Do not infer absorption from killing at the last contact or from decay in a height-weighted norm.",
+    "Periodic states and possible nontrivial cycles are outside this domain.",
+    "Prove the normalized stopped correlation estimate SM+ and separately control initial entrance and the last-contact eta boundary; the Haar maximal estimate is insufficient by itself."
+  ],
+  "literature": [
+    {
+      "author": "Terence Tao",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "version": "arXiv:1909.03562v7, 16 July 2026",
+      "url": "https://arxiv.org/html/1909.03562v7",
+      "claim_ids": [
+        "(1.23)",
+        "Proposition 1.14, (1.26)-(1.27)",
+        "Proposition 1.11, (1.19)-(1.20)"
+      ],
+      "role": "Marginal Haar L1 mixing and consistency are used in the written maximal estimate; the first-passage statement is checked only to preserve its logarithmic-source law. No stopped contact-law mixing is imported."
+    }
+  ],
+  "independent_reviews": {
+    "HARMONIC_KERNEL_REVIEW.md": "174a857fb84e3edc5006b11bec6ffd352100ab81356cebf6fe004701be3da069",
+    "RATIONAL_SHADOW_REVIEW.md": "2655c66a5daf6b88c0d69cefa668d3ffa20db0960ccd5d385389b32e4bc34379"
+  }
+}

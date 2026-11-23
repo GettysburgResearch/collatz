@@ -1,0 +1,36 @@
+[
+  {
+    "module": "ExplicitSeed",
+    "command": [
+      "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "-o",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/ExplicitSeed.olean",
+      "-i",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/ExplicitSeed.ilean",
+      "ExplicitSeed.lean"
+    ],
+    "seconds": 3.24,
+    "exit_code": 0,
+    "stdout": "",
+    "source_sha256": "c018a47358194358da3fcb4eedc5e5192a803cdbbc37b56965af769fc665d8b4"
+  },
+  {
+    "module": "ExplicitSeedAudit",
+    "command": [
+      "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+      "-j1",
+      "-DwarningAsError=true",
+      "-o",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/ExplicitSeedAudit.olean",
+      "-i",
+      "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/lib/ExplicitSeedAudit.ilean",
+      "ExplicitSeedAudit.lean"
+    ],
+    "seconds": 1.08,
+    "exit_code": 0,
+    "stdout": "'CollatzFiniteResolvent.coefficient_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.coefficient_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.coefficient_prefix_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.coefficient_finiteMass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.growth_mul_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzFiniteResolvent.quadratic_baseline' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "source_sha256": "991a19d5c21107a6cf242b99f4192b56f54631c75269cb24b754b0984a28828c"
+  }
+]

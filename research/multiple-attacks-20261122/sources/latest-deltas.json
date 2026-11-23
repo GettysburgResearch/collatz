@@ -1,0 +1,731 @@
+[
+  {
+    "number": 183,
+    "old": "907a540943090968bc683b1b9246208e9053c1f8",
+    "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+    "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+    "branch": "research/band-completion-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/literature-closing-20261121/README.md",
+        "sha256": "3e3f3ceaadd72e2b37ea334bbcb1b0b78671f5865c072c0fa3fbacf55928657b"
+      },
+      {
+        "path": "research/profound-step-20261122/README.md",
+        "sha256": "070851590c7cbd8dfc8d17e2605346a6211b1cc4724ea4bc2aa17a6582ddee1f"
+      },
+      {
+        "path": "research/profound-step-20261122/RECONSTRUCTION_REVIEW.md",
+        "sha256": "14dfffb0f29885d0b983e74926d1bc38c50e7e17df3c81ae4ce6ad4afced616f"
+      },
+      {
+        "path": "research/profound-step-20261122/SOURCES.json",
+        "sha256": "543e6b2e4f1dd6798eca89971d14fb48210c9137cac41a98a02a9acc9e19664c"
+      },
+      {
+        "path": "research/profound-step-20261122/arithmetic/BlockCompression.lean",
+        "sha256": "bf25d442c6aa1bd13ea4a01df603370469d63e54b57855df567923a7ce314305"
+      },
+      {
+        "path": "research/profound-step-20261122/arithmetic/CARRY_COMPRESSION_BRIDGE.md",
+        "sha256": "b536d131383fc6befe794daa4375845979369881a9d5462b271fe04aab1fc732"
+      },
+      {
+        "path": "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+        "sha256": "f27af626f9de6beaf07562f0a4ef4a1240f99eb5cab04c99a50789a048a4d960"
+      },
+      {
+        "path": "research/profound-step-20261122/arithmetic/SOURCES.md",
+        "sha256": "a29bd028850144cb1f3e908443c1d4b2ec0a5a875050460c6c3cf6ca3c099182"
+      },
+      {
+        "path": "research/profound-step-20261122/check_lean.py",
+        "sha256": "a0d32a49ca0d433294fe3ec066a79830b35a9d67f213047369523197db5f0e23"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/ARBITRARY_DEBT.md",
+        "sha256": "ba7eb6e601ea863a6d0382c2faa82a8b92a0a0b3a7b318fcf6a3e08e1407796f"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/AffineCarry.lean",
+        "sha256": "81bdf81fa8ba6916d267e13946a10591ef4211593db9b0ed5f709f25f1396df4"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/CarryCapture.lean",
+        "sha256": "8163730658fa890765ba11d04db5318332a8380208612464e06f00b6895ad9d9"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/DEPENDENCIES.json",
+        "sha256": "2d4de8c2610a4c16ac7eaefd3adfa85a55bbb770476b954b7b9cfbff7fa0faf4"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/build.py",
+        "sha256": "2c28ad0fa659e0516169efd78e26a47311fc3a6c7dac0c8f7cf10c4a5fffc0ce"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/check_arithmetic.py",
+        "sha256": "536a205d182dde141b7e74d892075b9d9bddb50c4b692ad45b506fdc9a395d21"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/vendor/WitnessGlobal.lean",
+        "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6"
+      },
+      {
+        "path": "research/profound-step-20261122/mergers/vendor/WitnessSynthesis.lean",
+        "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd"
+      },
+      {
+        "path": "research/profound-step-20261122/operator/ClockLags.lean",
+        "sha256": "8ad58c572e876fac371ed7405ae7b573c79b5f49cdc134b063b0f566909ab6f9"
+      },
+      {
+        "path": "research/profound-step-20261122/operator/WOLD_CHANNELS.md",
+        "sha256": "bb956069797987478ef3c691115b7292d7a964ac9963c9eed212321aca8f03ce"
+      },
+      {
+        "path": "research/profound-step-20261122/transport/ASYNCHRONOUS_RESIDUE.md",
+        "sha256": "270b06633aa9ca1c749ef59c2398d196e46aed4a4fe984b09a47081c208dca80"
+      },
+      {
+        "path": "research/profound-step-20261122/transport/AsynchronousKernel.lean",
+        "sha256": "d7845d0d5726dc5fbbaacc3be80c5795fd06f0041b5a603e4002399c592c146c"
+      },
+      {
+        "path": "research/profound-step-20261122/transport/MERGER_REVIEW.md",
+        "sha256": "c2013861576311b0628ec7b96e50ab8c7dedfe5652ac0c17a383218530c77d2a"
+      },
+      {
+        "path": "research/profound-step-20261122/transport/OPERATOR_REVIEW.md",
+        "sha256": "bb820286cbd5d9d48b879ca4dec91aae76d9ea4eecc8139ea065bc06c81ec3b2"
+      },
+      {
+        "path": "research/profound-step-20261122/transport/SOURCES.md",
+        "sha256": "9cda4db581ef466868429f9d2d118f2a6cb548dec1a809cb79a28b0caab97df5"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/profound-step-20261122/ProfoundAudit.lean",
+      "reports/profound-step-20261122/README.md",
+      "reports/profound-step-20261122/finite-arithmetic.json",
+      "reports/profound-step-20261122/finite-execution.json",
+      "reports/profound-step-20261122/lean-replay.json",
+      "reports/profound-step-20261122/proof-checkpoint-validation.json",
+      "reports/profound-step-20261122/source-binding.json",
+      "research/literature-closing-20261121/README.md",
+      "research/profound-step-20261122/README.md",
+      "research/profound-step-20261122/RECONSTRUCTION_REVIEW.md",
+      "research/profound-step-20261122/SOURCES.json",
+      "research/profound-step-20261122/arithmetic/BlockCompression.lean",
+      "research/profound-step-20261122/arithmetic/CARRY_COMPRESSION_BRIDGE.md",
+      "research/profound-step-20261122/arithmetic/FREE_EXPONENT_CYCLES.md",
+      "research/profound-step-20261122/arithmetic/SOURCES.md",
+      "research/profound-step-20261122/check_lean.py",
+      "research/profound-step-20261122/mergers/ARBITRARY_DEBT.md",
+      "research/profound-step-20261122/mergers/AffineCarry.lean",
+      "research/profound-step-20261122/mergers/CarryCapture.lean",
+      "research/profound-step-20261122/mergers/DEPENDENCIES.json",
+      "research/profound-step-20261122/mergers/build.py",
+      "research/profound-step-20261122/mergers/check_arithmetic.py",
+      "research/profound-step-20261122/mergers/vendor/WitnessGlobal.lean",
+      "research/profound-step-20261122/mergers/vendor/WitnessSynthesis.lean",
+      "research/profound-step-20261122/operator/ClockLags.lean",
+      "research/profound-step-20261122/operator/WOLD_CHANNELS.md",
+      "research/profound-step-20261122/transport/ASYNCHRONOUS_RESIDUE.md",
+      "research/profound-step-20261122/transport/AsynchronousKernel.lean",
+      "research/profound-step-20261122/transport/MERGER_REVIEW.md",
+      "research/profound-step-20261122/transport/OPERATOR_REVIEW.md",
+      "research/profound-step-20261122/transport/SOURCES.md"
+    ]
+  },
+  {
+    "number": 182,
+    "old": "45354128f890fb479f6c23b547368bcddd9cebe6",
+    "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+    "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+    "branch": "research/dyadic-band-descent-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/lean-dyadic-descent-20261121/CANONICAL_ESCAPE_LABEL.md",
+        "sha256": "c434c6bfaa46994f28612ecc2f256cca41e2b8871157433fc2067ef60aadc04f"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/CONTINUED_SOURCES.json",
+        "sha256": "aa2025c65944b514295259582579d4b506c610283de82ce53c9a794fa3e711bc"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/CONTINUED_SYNTHESIS.md",
+        "sha256": "77f6d5b23664d20ce338866636619faa11a155d1d62ffc82463d5945fd74dd43"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/HARMONIC_CAPTURE_BRIDGE.md",
+        "sha256": "686e7038e2182a5953573630b248215127878de378ee0f7d7a32703a873787fa"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/HarmonicCapture.lean",
+        "sha256": "e85184f7a9bf33f82bbcc0ab36a45052252050d50682ee45caa10004f4e26bc8"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/INVARIANT_CORRELATION.md",
+        "sha256": "6dea7ffa0fa67df75c2d221ee547228a9d3842fa9a498981078e4e73e300dc2c"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/PolynomialLift.lean",
+        "sha256": "e487984361d2f5f613e3683a311e38231a9dfb1afd01a72e22e4e0a3466c1ac8"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/README.md",
+        "sha256": "232d0f2dde9e5de89d01bcb77163a16c55d2cc1097b2a7a685bb825de0c734cb"
+      },
+      {
+        "path": "research/lean-dyadic-descent-20261121/replay_continued.py",
+        "sha256": "5612c2f0d17513fcfe128a8342aec3797ba48fa0a477745ebd7528b8277f4797"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/2026-11-21-dyadic-descent/continued/AXIOM_AUDIT.json",
+      "reports/2026-11-21-dyadic-descent/continued/CHECKOUT_VALIDATION.json",
+      "reports/2026-11-21-dyadic-descent/continued/ContinuedAudit.lean",
+      "reports/2026-11-21-dyadic-descent/continued/LEAN_RECEIPT.json",
+      "reports/2026-11-21-dyadic-descent/continued/PR182_BEFORE.json",
+      "reports/2026-11-21-dyadic-descent/continued/README.md",
+      "reports/2026-11-21-dyadic-descent/continued/SEMANTIC_REVIEW.md",
+      "reports/2026-11-21-dyadic-descent/continued/SOURCE_BINDING.json",
+      "research/lean-dyadic-descent-20261121/CANONICAL_ESCAPE_LABEL.md",
+      "research/lean-dyadic-descent-20261121/CONTINUED_SOURCES.json",
+      "research/lean-dyadic-descent-20261121/CONTINUED_SYNTHESIS.md",
+      "research/lean-dyadic-descent-20261121/HARMONIC_CAPTURE_BRIDGE.md",
+      "research/lean-dyadic-descent-20261121/HarmonicCapture.lean",
+      "research/lean-dyadic-descent-20261121/INVARIANT_CORRELATION.md",
+      "research/lean-dyadic-descent-20261121/PolynomialLift.lean",
+      "research/lean-dyadic-descent-20261121/README.md",
+      "research/lean-dyadic-descent-20261121/replay_continued.py"
+    ]
+  },
+  {
+    "number": 180,
+    "old": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+    "head": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+    "title": "Collatz: actual return composition and Lean carry continuation",
+    "branch": "research/lean-ordinary-closure-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/lean-critical-20261122/DEPENDENCIES.json",
+        "sha256": "0ca1554bf4668cfb63395a7cc1171403c82888181a6cbf79e4ce7ff59b633108"
+      },
+      {
+        "path": "research/lean-critical-20261122/POTENTIAL_ATTACK.md",
+        "sha256": "6c67d1aedf1010560ddc4266de7ef042c3d259899ab6927e5f3fb78f02cedddb"
+      },
+      {
+        "path": "research/lean-critical-20261122/README.md",
+        "sha256": "cb46b9ebf1d4e8ed99ca832a93e69978f42e64488b7f4984d7d48bbe359b2ccd"
+      },
+      {
+        "path": "research/lean-critical-20261122/RETURN_ATTACK.md",
+        "sha256": "83c4c7ba2fa96f1a19b7c7bf0cbdf83a5f1ce89f6078ed655e09dfbcaad57c41"
+      },
+      {
+        "path": "research/lean-critical-20261122/REVIEW.md",
+        "sha256": "95f1b6bc10ced03a26345659033e68f73fdf4ed99e1bea2c568a3372485ee21f"
+      },
+      {
+        "path": "research/lean-critical-20261122/SOURCE_SNAPSHOT.json",
+        "sha256": "0d4352855be6f0c0e533c836c4434d66f977a77cb3f247db40d0611b72e9e33b"
+      },
+      {
+        "path": "research/lean-critical-20261122/WITNESS_ATTACK.md",
+        "sha256": "69891fdc96861009c7680dd40dbf1327e4f67fda73db6e1c2a7c3cdf300bb934"
+      },
+      {
+        "path": "research/lean-critical-20261122/check_lean.py",
+        "sha256": "e5b02f26ed18f44094c59d7e3e44c6a4e130caea57971776f8037d6f9b445681"
+      },
+      {
+        "path": "research/lean-critical-20261122/lean/CriticalAudit.lean",
+        "sha256": "52eb64893176c1b000f6c1f8dec985f75ef82fe2eb632483b651f25f22f6bf88"
+      },
+      {
+        "path": "research/lean-critical-20261122/lean/LognormalClock.lean",
+        "sha256": "d1b6042c5ed771f5bbea0857da639c4e92aa8bd0e6143cfd51aa6d0507c47b33"
+      },
+      {
+        "path": "research/lean-critical-20261122/lean/PotentialCritical.lean",
+        "sha256": "7b87e094d7b6e40824fb1bf18492aaf16094874f98ecd8fa3eba80f5927a429c"
+      },
+      {
+        "path": "research/lean-critical-20261122/lean/ReturnCritical.lean",
+        "sha256": "a0f00a5b71b4b48a41ec471c064899c8670c090799c06e70b05233582931f775"
+      },
+      {
+        "path": "research/lean-critical-20261122/lean/WitnessCritical.lean",
+        "sha256": "57b21967b684a27ef70410dfe9fd50148a6aae010ba24e1d8789809f3c66be25"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/2026-11-22-critical-pass/lean-build.log",
+      "reports/2026-11-22-critical-pass/lean-check.json",
+      "research/lean-critical-20261122/DEPENDENCIES.json",
+      "research/lean-critical-20261122/POTENTIAL_ATTACK.md",
+      "research/lean-critical-20261122/README.md",
+      "research/lean-critical-20261122/RETURN_ATTACK.md",
+      "research/lean-critical-20261122/REVIEW.md",
+      "research/lean-critical-20261122/SOURCE_SNAPSHOT.json",
+      "research/lean-critical-20261122/WITNESS_ATTACK.md",
+      "research/lean-critical-20261122/check_lean.py",
+      "research/lean-critical-20261122/lean/CriticalAudit.lean",
+      "research/lean-critical-20261122/lean/LognormalClock.lean",
+      "research/lean-critical-20261122/lean/PotentialCritical.lean",
+      "research/lean-critical-20261122/lean/ReturnCritical.lean",
+      "research/lean-critical-20261122/lean/WitnessCritical.lean"
+    ]
+  },
+  {
+    "number": 178,
+    "old": "be5696cc45a95ad1903802b08ba1dc3ebba66930",
+    "head": "f464ddf2af6e340054673fdd6f5b28aba0310c10",
+    "title": "Lean: independent cycle exponents, escape moments, and bounded tail selectors",
+    "branch": "research/lean-global-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/global-synthesis-20261122/ARITHMETIC_CLOSURE.md",
+        "sha256": "b40923eb93eb7984a62616dae756a467331beee02e41d4a290105bce39c602e6"
+      },
+      {
+        "path": "research/global-synthesis-20261122/GLOBAL_MERGERS.md",
+        "sha256": "5349c6c4fa33c356340b1da3746b86abf68c0ea643d4d965b02d272610fa7633"
+      },
+      {
+        "path": "research/global-synthesis-20261122/LATE_REFRESH.md",
+        "sha256": "256df74b16e68ef8f29cc7ebdd0a29555074655f33816d4150014d9b3783345c"
+      },
+      {
+        "path": "research/global-synthesis-20261122/ORDINARY_MASS.md",
+        "sha256": "9a37d90dd3de5333b44473cb0df038029dd33adff935ce10db11926dd1fa306d"
+      },
+      {
+        "path": "research/global-synthesis-20261122/README.md",
+        "sha256": "056f1bbb2abe2691b6fc233177e80ba25dcc3c74912223bea89c904ab0cce263"
+      },
+      {
+        "path": "research/global-synthesis-20261122/TAIL_CAPTURE_BRIDGE.md",
+        "sha256": "96fbaf71e5760636bf619e27f2be8ca3a84a3c3a5b836f292d27bc0417e371c8"
+      },
+      {
+        "path": "research/global-synthesis-20261122/certificates/independent_pq_certificate.json",
+        "sha256": "e94699ef87e6a6b338f290af9a64f9e15f8126e29c35b75ec02de75c63f4b7a7"
+      },
+      {
+        "path": "research/global-synthesis-20261122/certificates/independent_pq_generate.py",
+        "sha256": "6de8c151be741e1fa8a42c1bcd6232baa59ec4a31bdd1e40e7655e8da44c4bd0"
+      },
+      {
+        "path": "research/global-synthesis-20261122/certificates/independent_pq_verify.py",
+        "sha256": "4b4982d97b0304ad11b242846b85c32e8fdb56abc3f7588b0405e495f670e105"
+      },
+      {
+        "path": "research/global-synthesis-20261122/inverse_alphabet_selector.py",
+        "sha256": "605f3b6d896836cfe1ec8601fab9006ba94ee0b0b4120b145d33d844ac69db24"
+      },
+      {
+        "path": "research/global-synthesis-20261122/lean/AuditQuantitativeInverseSelector.lean",
+        "sha256": "e4616dc039cf98029d9af16b854d62b450e7d184d4c77e9eaafeccf64c219ceb"
+      },
+      {
+        "path": "research/global-synthesis-20261122/lean/GlobalSynthesisAudit.lean",
+        "sha256": "9a03c6a0d65344c0449a97e014ccc1cb28198294f5fb1e58cab8e2a4bdbc32c5"
+      },
+      {
+        "path": "research/global-synthesis-20261122/lean/IndependentBlockBudget.lean",
+        "sha256": "742adda9044e981b7cfe59032cb6c2975b95d88140654d7ab3542f71b7bd4628"
+      },
+      {
+        "path": "research/global-synthesis-20261122/lean/IndependentPQCertificate.lean",
+        "sha256": "9e24fdb7e8a6b9890cd8ddda476ac248c5f52f71108f905b64f9e6e385bcd435"
+      },
+      {
+        "path": "research/global-synthesis-20261122/lean/OrdinaryBasinMoments.lean",
+        "sha256": "05a2375e5fef1566cd6214cc059fd8d895d901601064b261b03d423896cd10dc"
+      },
+      {
+        "path": "research/global-synthesis-20261122/lean/QuantitativeInverseSelector.lean",
+        "sha256": "132f0cd8318e20271456a4f776a90621407bc0a69dce805382b5860a08a13048"
+      },
+      {
+        "path": "research/global-synthesis-20261122/tail_capture_replay.py",
+        "sha256": "fe7d47227f883777567344bcf05af8db9c538589fa7a0172538c3a85ce3bb773"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/2026-11-22-global-synthesis/ARITHMETIC_REVIEW.md",
+      "reports/2026-11-22-global-synthesis/LATE_REFRESH_REVIEW.md",
+      "reports/2026-11-22-global-synthesis/LATE_SOURCE_REFRESH.json",
+      "reports/2026-11-22-global-synthesis/MERGER_REVIEW.md",
+      "reports/2026-11-22-global-synthesis/MERGER_SOURCE_ASSUMPTIONS.md",
+      "reports/2026-11-22-global-synthesis/ORDINARY_MASS_REVIEW.md",
+      "reports/2026-11-22-global-synthesis/README.md",
+      "reports/2026-11-22-global-synthesis/SOURCE_REFRESH.json",
+      "reports/2026-11-22-global-synthesis/late-capture-fixtures.json",
+      "reports/2026-11-22-global-synthesis/proof-artifacts.json",
+      "reports/2026-11-22-global-synthesis/proof-lean.json",
+      "reports/2026-11-22-global-synthesis/proof-repository.json",
+      "reports/2026-11-22-global-synthesis/validate_synthesis.py",
+      "research/global-synthesis-20261122/ARITHMETIC_CLOSURE.md",
+      "research/global-synthesis-20261122/GLOBAL_MERGERS.md",
+      "research/global-synthesis-20261122/LATE_REFRESH.md",
+      "research/global-synthesis-20261122/ORDINARY_MASS.md",
+      "research/global-synthesis-20261122/README.md",
+      "research/global-synthesis-20261122/TAIL_CAPTURE_BRIDGE.md",
+      "research/global-synthesis-20261122/certificates/independent_pq_certificate.json",
+      "research/global-synthesis-20261122/certificates/independent_pq_generate.py",
+      "research/global-synthesis-20261122/certificates/independent_pq_verify.py",
+      "research/global-synthesis-20261122/inverse_alphabet_selector.py",
+      "research/global-synthesis-20261122/lean/.gitignore",
+      "research/global-synthesis-20261122/lean/AuditQuantitativeInverseSelector.lean",
+      "research/global-synthesis-20261122/lean/GlobalSynthesisAudit.lean",
+      "research/global-synthesis-20261122/lean/IndependentBlockBudget.lean",
+      "research/global-synthesis-20261122/lean/IndependentPQCertificate.lean",
+      "research/global-synthesis-20261122/lean/OrdinaryBasinMoments.lean",
+      "research/global-synthesis-20261122/lean/QuantitativeInverseSelector.lean",
+      "research/global-synthesis-20261122/lean/build.sh",
+      "research/global-synthesis-20261122/lean/imports.sha256",
+      "research/global-synthesis-20261122/lean/lean-toolchain",
+      "research/global-synthesis-20261122/tail_capture_replay.py"
+    ]
+  },
+  {
+    "number": 177,
+    "old": "a0a0d76f91b4e3846c1b1f0706cad56cb6098317",
+    "head": "9af9118a7e9af870a32a72a4efdcf77e886940ec",
+    "title": "Lean: complete odd-valuation psi branches and funded returns (global cover open)",
+    "branch": "research/lean-exact-witness-global-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/lean-exact-witness-global-20261121/CLOCK_SYNCHRONIZATION.md",
+        "sha256": "7431deb1505d65216ef67f0f00db3d09831692f2001c75f32b48e84c01d22eb7"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/GLOBAL_GREEN_MERGER.md",
+        "sha256": "7c002f66a4c5e8b0e58b5645dbf8b6794d53f8ef83654ad2aa1cd3d0d8e9d6a2"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md",
+        "sha256": "8f75ebce4ce0a9e1d696da522a9fa4fc9cd85f4b551adb2ba95dfff6b98c4cc3"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/LOW_GAP_GLOBAL.md",
+        "sha256": "4a5c58b5f99d3293e43b17ce8a8a74f3c07727026d6da92b9d2dc5e4c5d86dda"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/PSI_EVEN_HEAD_FOUR.md",
+        "sha256": "3d387a392a2dc2f2c5e85bad3dfeb0e8fb0bd6feb3590cfa150c4fea9dd1c0e5"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/PSI_EVEN_HEAD_TWO.md",
+        "sha256": "9a2c220b8b6d2b21bd1b44c137ea71d7bad74c32faa68e9f78f83f6f601067c5"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/PSI_HEAD_THREE_FRONTIER.md",
+        "sha256": "b86f80fa1bbc244207f2c24e321fc0d95de20f16a8d05eeb933aaccc1d05d619"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/PSI_ODD_VALUATIONS.md",
+        "sha256": "5529661bf615d92f268541ad82361fabc0ab2dd5012e4528e61312b8934b1b4e"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/PSI_VALUATION_ONE.md",
+        "sha256": "c894e70c109af41982f1bb064e832851514a8c853f97a8cb5d90d5b9c01bf680"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/README.md",
+        "sha256": "1f63b260d877126bb7a492b7def8d17a36df5f15985a8f6df3d5005ebe6cb955"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/gap-search/high/clock_rank_cycle.py",
+        "sha256": "b62d57e8ab6e488aea48178d2116dd1dbc7fb2497b34e1c526f2b4e4a4de3923"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/gap-search/high/repayment_obstruction.py",
+        "sha256": "7dcf7beb8158ad1cd348712c8b94195ddde70559d43abb1fc7eca2293e1e1218"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+        "sha256": "3283d29d26cefdc6398330c3c99dddd1785ed89b50760c0460b8ff48318c4599"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/AuditSourceGreenCoefficient.lean",
+        "sha256": "2a34b379d7ce95caf53720b0c9e3250e305d81bd3d57983621a83b389897ac7b"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+        "sha256": "55d0bda922955e6e17dcdac29b9e630a8dc364755f77a93812c3f6a12a4bee81"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/ClockSynchronization.lean",
+        "sha256": "64238fb906e02c311c32042963527b57a3a66622a4d2502cee4ca0ec62dc606f"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapGlobal.lean",
+        "sha256": "a6e7a94e2a48d42fe2767c37de92ae349df5ab7cc320bfe6fc4366970ba93e0f"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiEvenHeadFour.lean",
+        "sha256": "07d1427cfe2ea62e8866f14fe03bd013ccb4522f022c491971501d73d3ce2304"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiEvenHeadTwo.lean",
+        "sha256": "5946dac63e63576dc6799a4fd26ae86de5f22e4352154e1e472ee0ed363caddb"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiOddValuations.lean",
+        "sha256": "f7b7d0e338f9f2601e7809352849c93380d695191f8c2d50c341c01201ceaafd"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/PsiValuationOne.lean",
+        "sha256": "46268f211e0bd0b0b27f13f7d1e30720ab77de994c934729a033787f91ed34c7"
+      },
+      {
+        "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceGreenCoefficient.lean",
+        "sha256": "fc36d8ddcac3e67560ffe04c30c607370cc5ade5742386f9fdacab11d117ebf1"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/lean-exact-witness-global-20261121/README.md",
+      "reports/lean-exact-witness-global-20261121/psi-branches/README.md",
+      "reports/lean-exact-witness-global-20261121/psi-branches/checkpoint-nine-axioms.txt",
+      "reports/lean-exact-witness-global-20261121/psi-branches/checkpoint-nine-build.txt",
+      "reports/lean-exact-witness-global-20261121/psi-branches/checkpoint-nine.json",
+      "reports/lean-exact-witness-global-20261121/psi-branches/head-three-rank-witness.json",
+      "reports/lean-exact-witness-global-20261121/repayment/README.md",
+      "reports/lean-exact-witness-global-20261121/repayment/checkpoint-eight-axioms.txt",
+      "reports/lean-exact-witness-global-20261121/repayment/checkpoint-eight-build.txt",
+      "reports/lean-exact-witness-global-20261121/repayment/checkpoint-eight.json",
+      "reports/lean-exact-witness-global-20261121/repayment/clock-rank-cycle-replay.json",
+      "reports/lean-exact-witness-global-20261121/repayment/repayment-obstruction-replay.json",
+      "reports/lean-exact-witness-global-20261121/section-mass/global-green-merger.json",
+      "research/lean-exact-witness-global-20261121/CLOCK_SYNCHRONIZATION.md",
+      "research/lean-exact-witness-global-20261121/GLOBAL_GREEN_MERGER.md",
+      "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md",
+      "research/lean-exact-witness-global-20261121/LOW_GAP_GLOBAL.md",
+      "research/lean-exact-witness-global-20261121/PSI_EVEN_HEAD_FOUR.md",
+      "research/lean-exact-witness-global-20261121/PSI_EVEN_HEAD_TWO.md",
+      "research/lean-exact-witness-global-20261121/PSI_HEAD_THREE_FRONTIER.md",
+      "research/lean-exact-witness-global-20261121/PSI_ODD_VALUATIONS.md",
+      "research/lean-exact-witness-global-20261121/PSI_VALUATION_ONE.md",
+      "research/lean-exact-witness-global-20261121/README.md",
+      "research/lean-exact-witness-global-20261121/gap-search/high/clock_rank_cycle.py",
+      "research/lean-exact-witness-global-20261121/gap-search/high/repayment_obstruction.py",
+      "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+      "research/lean-exact-witness-global-20261121/lean/AuditSourceGreenCoefficient.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/ClockSynchronization.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/LowGapGlobal.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/PsiEvenHeadFour.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/PsiEvenHeadTwo.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/PsiOddValuations.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/PsiValuationOne.lean",
+      "research/lean-exact-witness-global-20261121/lean/Collatz/SourceGreenCoefficient.lean"
+    ]
+  },
+  {
+    "number": 176,
+    "old": "8aeb843bba254f065743b6fa277a70906b51d520",
+    "head": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+    "title": "Lean: joint descent, block cycles, and ordinary contact mass",
+    "branch": "research/lean-global-resolvent-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/lean-global-resolvent-20261121/README.md",
+        "sha256": "7a61c92874279d02a3d660c3055e422764caecbee3c9f709404837cdcde7c253"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/AFFINE_DISPATCHER.md",
+        "sha256": "bc019f93ab7210f6e37791b003771be6a792fc5abae07c0b5e822d70daa0d8c6"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/ANALYTIC_INPUTS.json",
+        "sha256": "057058294b281ed5985b9e4c678c823ec2e04c5dd5ff801f30670cd736f18725"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/DEPENDENCIES.json",
+        "sha256": "48c82a6698deb755a90ed710e8eee792068ff6b9b3f7e49894d8407b1f1f9d08"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/GLOBAL_SYNTHESIS.md",
+        "sha256": "50fb56bd13dfcee108c5b571c1b05a0e8655e320c7193f2ec361b2504f3a31e4"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/INDEPENDENT_BLOCK_CLASSIFICATION.md",
+        "sha256": "5ca7d2c124102721c9b00649929c484da196fd8061ec4f19ff2081334107d7bd"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/LAST_CONTACT_CHANNEL_INTEGRATION.md",
+        "sha256": "b0936e44724ca810a89a80267707d46903f05464482ca0a859745dc7c2c79589"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/LATEST_HEAD_INTEGRATION.md",
+        "sha256": "9173948c39296889225483379eec332ac99feb6ab896a976b16007e8cf3f3322"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/LATE_INTEGRATION_SOURCES.json",
+        "sha256": "d4c87f24f4c906c9236d3c9b38f350767bfbdb95083aa4ef1f0d84a4b3bc81d0"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/ORDINARY_LAST_CONTACT_MEASURE.md",
+        "sha256": "4e386ff4b6c09be474515a609e47ae8ad483f191fd3fb3cceacf1c90acc37819"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/README.md",
+        "sha256": "bd1867043e9115091359c44e8d0b4137f5bdc49b754006ca8f7d864887a971d0"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/SHARPER_BLOCK_CUTOFF.md",
+        "sha256": "f9d9641d85001875e2769ebec8e93813cb0fa95b287fe329b9a6255fdc80e062"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/SOURCES_AND_REVIEW.md",
+        "sha256": "eface9a09779fd8971c18859570d2c770af84ed05d7c63b6b46fced0ec6ccb1d"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/SOURCE_TARGET_INDUCTION.md",
+        "sha256": "db450b1534d895274aeaacba3d3e4628b2afb452ea6aa428bd62dafc19c50ee0"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/check_examples.py",
+        "sha256": "e2d66dc873ecc8f111bf05e761fdc1876ee636b7ea713ad7b5a5b6c7f98d229f"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/check_whole.py",
+        "sha256": "a7c398baac15ce353269caee5b297f14c5cf50b5195b2f2fef6aa56f0eee2be2"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/lean/AuditAffineDispatcher.lean",
+        "sha256": "3169ec1c1f71507260ae457f7557d18945f9dcaefa4d2554a756190b41388039"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/lean/AuditSourceTargetInduction.lean",
+        "sha256": "02ba0ff8cd801c312c3842d9dbad1ada9a21d7ef0e73ad9766143626f9a9ff6f"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/lean/BlockRepetitionBudget.lean",
+        "sha256": "25acb2f01cb05101aed116b986ff6d4fafd4eba7c90f3be58bf83174c82921da"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/AffineDispatcher.lean",
+        "sha256": "d59528865a8b1111e3b3d452eb1c4034930d6eb849c5e9a1a4398c7acda7542d"
+      },
+      {
+        "path": "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/SourceTargetInduction.lean",
+        "sha256": "fa8269cf53fc0cd8f59022242354552c93b61d0788707da6100cd7b053c16ad0"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/2026-11-22-whole-repository/README.md",
+      "reports/2026-11-22-whole-repository/checkpoint9-examples.json",
+      "reports/2026-11-22-whole-repository/checkpoint9-lean.json",
+      "reports/2026-11-22-whole-repository/pr-snapshot.json",
+      "research/lean-global-resolvent-20261121/README.md",
+      "research/lean-global-resolvent-20261121/overview/whole/AFFINE_DISPATCHER.md",
+      "research/lean-global-resolvent-20261121/overview/whole/ANALYTIC_INPUTS.json",
+      "research/lean-global-resolvent-20261121/overview/whole/DEPENDENCIES.json",
+      "research/lean-global-resolvent-20261121/overview/whole/GLOBAL_SYNTHESIS.md",
+      "research/lean-global-resolvent-20261121/overview/whole/INDEPENDENT_BLOCK_CLASSIFICATION.md",
+      "research/lean-global-resolvent-20261121/overview/whole/LAST_CONTACT_CHANNEL_INTEGRATION.md",
+      "research/lean-global-resolvent-20261121/overview/whole/LATEST_HEAD_INTEGRATION.md",
+      "research/lean-global-resolvent-20261121/overview/whole/LATE_INTEGRATION_SOURCES.json",
+      "research/lean-global-resolvent-20261121/overview/whole/ORDINARY_LAST_CONTACT_MEASURE.md",
+      "research/lean-global-resolvent-20261121/overview/whole/README.md",
+      "research/lean-global-resolvent-20261121/overview/whole/SHARPER_BLOCK_CUTOFF.md",
+      "research/lean-global-resolvent-20261121/overview/whole/SOURCES_AND_REVIEW.md",
+      "research/lean-global-resolvent-20261121/overview/whole/SOURCE_TARGET_INDUCTION.md",
+      "research/lean-global-resolvent-20261121/overview/whole/check_examples.py",
+      "research/lean-global-resolvent-20261121/overview/whole/check_whole.py",
+      "research/lean-global-resolvent-20261121/overview/whole/lean/AuditAffineDispatcher.lean",
+      "research/lean-global-resolvent-20261121/overview/whole/lean/AuditSourceTargetInduction.lean",
+      "research/lean-global-resolvent-20261121/overview/whole/lean/BlockRepetitionBudget.lean",
+      "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/AffineDispatcher.lean",
+      "research/lean-global-resolvent-20261121/overview/whole/lean/Collatz/SourceTargetInduction.lean"
+    ]
+  },
+  {
+    "number": 175,
+    "old": "2bc2ad37b490a5aea63658eaf657bc048da4532e",
+    "head": "54b5a324f55d97925ecb8100aa15ce7b08a12093",
+    "title": "Collatz: Lean inverse completeness and global canonical-potential bounds",
+    "branch": "research/lean-global-closure-20261121",
+    "changed_research_files": [
+      {
+        "path": "research/lean-global-closure-20261121/ADDENDUM_ALL_EXPONENTS.md",
+        "sha256": "856b86ce24a4bcd345d83bf5dce267690a21bd9adcbc09d1a2cbe1bce22d2ad3"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/AFFINE_MERGER_RIGIDITY.md",
+        "sha256": "9369df6adef51506620cc39e1206290f4620db057a142273589c1816d90e87f2"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/CollatzGlobalClosure/FiniteProfileDrift.lean",
+        "sha256": "055d9d3fa252d3287c1eb8fa11e4fcd76c517008772596af37b9271ebc220d74"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/CollatzGlobalClosure/MergerClockRigidity.lean",
+        "sha256": "4f7bff5ea23a750a3c784e12012c1ace0b862daac1f1301a4c1af1065355b497"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/CollatzGlobalClosure/SignedCarry.lean",
+        "sha256": "0729e2be27118d2f3c325b1f485a18c01da09b0e360d84b40effd851a2b0379f"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/CollatzGlobalClosureCore.lean",
+        "sha256": "f29c598e3c9117bd8da9815bc8489c9170171f85ecdd52680d265099ef889813"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/FIXED_RESOLUTION_ENVELOPE_OBSTRUCTION.md",
+        "sha256": "30dbb4f8b565bdd2308f31b5152623b1467ab8fae76d4be1ef1fb0b64f2853c2"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/GLOBAL_STEP_20261122.md",
+        "sha256": "1c764e564ad287fb4a0c1bb53eb678ef8f406ebc284c3d9a0079df2852a11268"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/README.md",
+        "sha256": "26383bae54467ac2dbb5db6b2037bf8d55059562b6d98c49a92aa332e090b0b3"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/SIGNED_CARRY_CALCULUS.md",
+        "sha256": "6118298a6f97757f68457ece7bae717141a4371f3e722f92be43b2f70b3d64bd"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/build_band.py",
+        "sha256": "94c360cc244a96ef124f2cf19e30c95adfd67f828482df6076828ea1130e685f"
+      },
+      {
+        "path": "research/lean-global-closure-20261121/build_wide.py",
+        "sha256": "39aed366dd095961de4a6ea0c074a1186369f2a438053390d5991690acb32183"
+      }
+    ],
+    "all_changed_paths": [
+      "reports/lean-global-closure-20261121/nov22/ALL_EXPONENTS_REVIEW.md",
+      "reports/lean-global-closure-20261121/nov22/ENVELOPE_REVIEW.md",
+      "reports/lean-global-closure-20261121/nov22/MERGER_RIGIDITY_REVIEW.md",
+      "reports/lean-global-closure-20261121/nov22/PR175_BEFORE.md",
+      "reports/lean-global-closure-20261121/nov22/PUBLICATION_NORMALIZATION.json",
+      "reports/lean-global-closure-20261121/nov22/SIGNED_CARRY_REVIEW.md",
+      "reports/lean-global-closure-20261121/nov22/VALIDATION.md",
+      "reports/lean-global-closure-20261121/nov22/axiom-audit.json",
+      "reports/lean-global-closure-20261121/nov22/repository.json",
+      "reports/lean-global-closure-20261121/nov22/source-build.json",
+      "reports/lean-global-closure-20261121/nov22/source-snapshot.json",
+      "research/lean-global-closure-20261121/ADDENDUM_ALL_EXPONENTS.md",
+      "research/lean-global-closure-20261121/AFFINE_MERGER_RIGIDITY.md",
+      "research/lean-global-closure-20261121/CollatzGlobalClosure/FiniteProfileDrift.lean",
+      "research/lean-global-closure-20261121/CollatzGlobalClosure/MergerClockRigidity.lean",
+      "research/lean-global-closure-20261121/CollatzGlobalClosure/SignedCarry.lean",
+      "research/lean-global-closure-20261121/CollatzGlobalClosureCore.lean",
+      "research/lean-global-closure-20261121/FIXED_RESOLUTION_ENVELOPE_OBSTRUCTION.md",
+      "research/lean-global-closure-20261121/GLOBAL_STEP_20261122.md",
+      "research/lean-global-closure-20261121/README.md",
+      "research/lean-global-closure-20261121/SIGNED_CARRY_CALCULUS.md",
+      "research/lean-global-closure-20261121/build_band.py",
+      "research/lean-global-closure-20261121/build_wide.py"
+    ]
+  }
+]

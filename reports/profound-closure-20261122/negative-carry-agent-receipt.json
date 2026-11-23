@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "command": [
+    "/tmp/collatz-lean-runtime/lean-4.34.1-linux/bin/lean",
+    "-j1",
+    "-DwarningAsError=true",
+    "-o",
+    "/workspace/scratch/c6766c1207a3/collatz_work/profound_rewriting/lib/NegativeCarry.olean",
+    "NegativeCarry.lean"
+  ],
+  "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_rewriting",
+  "exitcode": 0,
+  "elapsed_seconds": 13.33260795300157,
+  "source_sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08",
+  "log_sha256": "9997f4479b1aeda294bb0594a35202dfdf591f4c8cdf146bf63712f1717a92c7",
+  "audits": [
+    {
+      "theorem": "CollatzShell.NegativeCarry.negativeStep_positive",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.negativeOrbit_positive",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.evenCount_le",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.negativeOrbit_add",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.evenCount_add",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.complement_step",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.complement_lift",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.negative_odd_run",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.negative_even_block",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.finite_even_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.bounded_even_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.budget_or_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.evenCount_mono",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.paid_complement_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.arbitrary_debt_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.explicit_debt_reset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.one_prefix_grade_drop",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.paid_debt_interval_rule",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.gap_carry_transport",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.negative_one",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CollatzShell.NegativeCarry.unit_complement_overshoot",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "Lean": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "imports": [
+    {
+      "name": "CarryLanguage",
+      "source_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9"
+    },
+    {
+      "name": "Mathlib.Data.Nat.Factorization.Basic",
+      "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+    }
+  ]
+}

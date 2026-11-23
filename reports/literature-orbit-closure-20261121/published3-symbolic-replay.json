@@ -1,0 +1,68 @@
+{
+  "date_utc": "2026-11-21",
+  "scope": "Exact finite integer affine certificates and written no-cover proof; no Lean build.",
+  "negative_seed": {
+    "seed": -53,
+    "steps": 12,
+    "odd_count": 4,
+    "word": "110100010000",
+    "trajectory": [
+      -53,
+      -79,
+      -118,
+      -59,
+      -88,
+      -44,
+      -22,
+      -11,
+      -16,
+      -8,
+      -4,
+      -2,
+      -1
+    ]
+  },
+  "source": {
+    "coefficient": 32768,
+    "constant": 24523,
+    "clock": 15,
+    "word": "110100010000100"
+  },
+  "partner": {
+    "coefficient": 16384,
+    "constant": 12235,
+    "clock": 14,
+    "word": "11010001000001"
+  },
+  "common_endpoint": {
+    "coefficient": 243,
+    "constant": 182
+  },
+  "source_after_12": {
+    "coefficient": 648,
+    "constant": 485
+  },
+  "six_bit_closed_language": {
+    "source": [
+      256,
+      227
+    ],
+    "source_clock": 8,
+    "partner": [
+      4,
+      3
+    ],
+    "partner_clock": 2,
+    "endpoint": [
+      9,
+      8
+    ]
+  },
+  "sha256": {
+    "FIXED_AFFINE_MARKED_COVER_LIMIT.md": "b950bd5e74d0ac0f4beeac7427bbb448c6731178391730b74dea1d6ffbecba54",
+    "SIGNED_SEED_AFFINE_TEMPLATE.md": "9e56e289e88f9871a01158d2231f26760d0c3002b7fd5f632cb2407bbcc2e9ef",
+    "certificates/prefix_language_search.py": "9e78ae4833395949f397d14e1a317cca742c2e86c9db6c6ee9661ad9cf78a51e",
+    "certificates/prefix_language_rules.json": "82a31f32edb7d27fdb4d5f0088e104979be18087f1005108ef2b43a582e84944",
+    "certificates/affine_language_checkpoint.py": "0ba9736988d53c62314d385a6162ebc0c3cc673b151a46aaf831e252c1a9c749"
+  }
+}

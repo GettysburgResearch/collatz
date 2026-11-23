@@ -1,0 +1,734 @@
+{
+  "schema": "collatz-rigidity-closing-replay/v1",
+  "complete": true,
+  "started_utc": "2026-11-22T09:08:55Z",
+  "repository": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+  "packet": "research/rigidity-closing-20261122",
+  "inputs": [
+    {
+      "path": "research/rigidity-closing-20261122/DEPENDENCIES.json",
+      "sha256": "08ba6be7f0bc60c494d8161fd8afd91cef0323de9c0bceb713c24aa977d4ca34"
+    },
+    {
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/lean/CanonicalRetracing.lean",
+      "sha256": "6fd19273c9592f7b27181cbe86fd49809a3dc38ee997a0a0ee0c65b3496be694"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/lean/CyclotomicBlockExclusion.lean",
+      "sha256": "d3ffda404a77fed64d13f2a4743388f051aecefe401dff778f80cf36e30ccb34"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/REVIEW_BINDING.json",
+      "sha256": "31270d2996296d3c1bcffb96a72b8357e9c0937e3dcc6644f64bb690f2d39c59"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/reviews/CYCLOTOMIC_FAMILY_REVIEW.md",
+      "sha256": "d7e70fd5e6bd2dbcadcc7e95556439f2e88df7c2ca4df12eaf1f1108943f2c48"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/reviews/RESIDUAL_NORM_OBSTRUCTIONS_REVIEW.md",
+      "sha256": "a395010a8c7b8c0523ad9ae7a3e940bd1b60330e6a440132ce8dc62e79061efe"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/reviews/LEAN_CYCLOTOMIC_REVIEW.md",
+      "sha256": "489bef3658e6d182ddfebc4a7dc286c030d5766de3d5a5264beaa74d17a19e3e"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/reviews/CANONICAL_RETRACING_REVIEW.md",
+      "sha256": "80377b6226fb16aed18e16d047d7aa97831457bd856ec3f07fed1f79c06a87c6"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/MOVING_INVERSE_WINDOW.md",
+      "sha256": "8b29a39b6e1a2bbb3fa344de65d92ea0fbb9e1c43eb56456fa6a64c621c4027a"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/reviews/SAME_SOURCE_ENTROPY_REVIEW.md",
+      "sha256": "ada7a95d638754b26d020a7e628e897d5ea1cac7d31f9394d281a8206eecf4fe"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/FORMALIZATION.md",
+      "sha256": "0274380b75591d16ebf488a7eac22421fd649ccc542092cf874935af23b9b425"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/README.md",
+      "sha256": "83a3e0ccd0f58d8d264fe2d0877b6fc043edccc414b91b486547e3df405773aa"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/SOURCES.json",
+      "sha256": "1aa65a8d52c334bba9813cd31859c42048af356147f621494cbdd9a812a370f2"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "e6e0b87d07e6fce34ed20582ef02383cea0d9561dd1acfcb919d8469e5c7ec16"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/certificates/check_cyclotomic_zero_fiber.py",
+      "sha256": "0f5f6868b66a6281289233b5fa1ce73f12c35a691825ad964d136d0181a614e4"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/certificates/check_residual_norm_obstructions.py",
+      "sha256": "cf60a8e20c9b787e533509123a73c1bf07f52ae02088b95dc43962f672453342"
+    },
+    {
+      "path": "research/rigidity-closing-20261122/check.py",
+      "sha256": "6dd1b435da57db1b8dddb8729e17da04f51d15e91029640ffb44a8d5edffb86b"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d"
+    }
+  ],
+  "commands": [
+    {
+      "label": "head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/01-head.log",
+      "log_sha256": "7f3f9e8ab84d2d5030ca3f4b6593c19e21f041e9b59329fd28af244c6c43c0d5"
+    },
+    {
+      "label": "tree",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/02-tree.log",
+      "log_sha256": "ee3992fe513059aeaacc7ce29faf5e4d75ca0c459b933ff144b9724112255076"
+    },
+    {
+      "label": "status-before",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.039,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/03-status-before.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tracked-files",
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/04-tracked-files.log",
+      "log_sha256": "722efceb129983ec37edc62d10b6c3b73773f5eaf701fa14e3c06a282f1b1903"
+    },
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.279,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/05-lean-version.log",
+      "log_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680"
+    },
+    {
+      "label": "mathlib-head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_literature_runtime",
+      "exit_code": 0,
+      "seconds": 0.005,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/06-mathlib-head.log",
+      "log_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "label": "OriginalSourceEntropy",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/lib/OriginalSourceEntropy.olean",
+        "OriginalSourceEntropy.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/source",
+      "exit_code": 0,
+      "seconds": 18.155,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/07-OriginalSourceEntropy.log",
+      "log_sha256": "dfbda3804dc920a831fd5f3c78a519f2a91b4025c4da61dcbce6588b1b3c7985"
+    },
+    {
+      "label": "CanonicalRetracing",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/lib/CanonicalRetracing.olean",
+        "CanonicalRetracing.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/source",
+      "exit_code": 0,
+      "seconds": 3.086,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/08-CanonicalRetracing.log",
+      "log_sha256": "96c2c52f10a28dc43c2c471bb1f6e7b284fc51d032c9ae9cea90cdfdaa418b2e"
+    },
+    {
+      "label": "CyclotomicBlockExclusion",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/lib/CyclotomicBlockExclusion.olean",
+        "CyclotomicBlockExclusion.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/source",
+      "exit_code": 0,
+      "seconds": 3.258,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/09-CyclotomicBlockExclusion.log",
+      "log_sha256": "660cfaf4b38b463115fbc107c9edfea4180ec9f09cef7087773075a7e65dc0b1"
+    },
+    {
+      "label": "normal-cyclotomic",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_rigidity_published/research/rigidity-closing-20261122/certificates/check_cyclotomic_zero_fiber.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.026,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/10-normal-cyclotomic.log",
+      "log_sha256": "96841af65411439ce268137c213377b550d361dc17f89c74df523138eb5d2693"
+    },
+    {
+      "label": "normal-norm-obstructions",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_rigidity_published/research/rigidity-closing-20261122/certificates/check_residual_norm_obstructions.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.035,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/11-normal-norm-obstructions.log",
+      "log_sha256": "483adb9c86dff39c5ab5e520d753ad1b734bc926c3a3967b9382318da15bffd6"
+    },
+    {
+      "label": "optimized-cyclotomic",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_rigidity_published/research/rigidity-closing-20261122/certificates/check_cyclotomic_zero_fiber.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.067,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/12-optimized-cyclotomic.log",
+      "log_sha256": "96841af65411439ce268137c213377b550d361dc17f89c74df523138eb5d2693"
+    },
+    {
+      "label": "optimized-norm-obstructions",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_rigidity_published/research/rigidity-closing-20261122/certificates/check_residual_norm_obstructions.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.076,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/13-optimized-norm-obstructions.log",
+      "log_sha256": "483adb9c86dff39c5ab5e520d753ad1b734bc926c3a3967b9382318da15bffd6"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.919,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/14-repository-validation.log",
+      "log_sha256": "5aac79b9eaefa3fafe16b684649d40f3772c640142ccc4d5185b151d61dd6e2b"
+    },
+    {
+      "label": "status-after",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.007,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/15-status-after.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "head-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/16-head-after.log",
+      "log_sha256": "7f3f9e8ab84d2d5030ca3f4b6593c19e21f041e9b59329fd28af244c6c43c0d5"
+    },
+    {
+      "label": "tree-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_rigidity_published",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/logs/17-tree-after.log",
+      "log_sha256": "ee3992fe513059aeaacc7ce29faf5e4d75ca0c459b933ff144b9724112255076"
+    }
+  ],
+  "modules": [
+    {
+      "module": "OriginalSourceEntropy",
+      "source": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "new": false,
+      "source_sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "compiled_source_sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "axioms": [
+        {
+          "declaration": "CollatzOriginalEntropy.entropy_le_crossEntropy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.push_nonneg",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.le_push",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.push_sum",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.sum_push_mul",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.push_comp",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.entropy_push_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.geometric_mass",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.codeProb_pos",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.codeProb_sum_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.log_codeProb",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_word_entropy_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.gapPath_affine",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.same_word_same_ternary_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.endpoint_eq_code",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.physical_endpoint_code",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_original_source_entropy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_original_source_entropy_of_mean",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.sliding_window_cost_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.single_gap_log_identity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_gap_log_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "eba6b4c64837e8e7654528d48da49d9bb696e72da37d8208025f105720223e82"
+    },
+    {
+      "module": "CanonicalRetracing",
+      "source": "research/rigidity-closing-20261122/lean/CanonicalRetracing.lean",
+      "new": true,
+      "source_sha256": "6fd19273c9592f7b27181cbe86fd49809a3dc38ee997a0a0ee0c65b3496be694",
+      "compiled_source_sha256": "6fd19273c9592f7b27181cbe86fd49809a3dc38ee997a0a0ee0c65b3496be694",
+      "axioms": [
+        {
+          "declaration": "CollatzCanonicalRetracing.sum_increments",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.capacity_ratio_failure_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.window_capacity_sum_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.retracing_failure_sum_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.retracing_failure_mean_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.tail_retracing_failure_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.linear_window_failure_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCanonicalRetracing.uniform_shift_failure_mean_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "01c74c3d45728baf32f6b44317a5d26d946d64edf37201c7e7e0055a94032c51"
+    },
+    {
+      "module": "CyclotomicBlockExclusion",
+      "source": "research/rigidity-closing-20261122/lean/CyclotomicBlockExclusion.lean",
+      "new": true,
+      "source_sha256": "d3ffda404a77fed64d13f2a4743388f051aecefe401dff778f80cf36e30ccb34",
+      "compiled_source_sha256": "d3ffda404a77fed64d13f2a4743388f051aecefe401dff778f80cf36e30ccb34",
+      "axioms": [
+        {
+          "declaration": "CollatzCyclotomicBlock.complete_denominator_factorization",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.integer_bezout_805",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.residual_coprime",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.reduced_divisibility",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.residual_lower_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.residual_exceeds_805",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.residual_nondivisibility",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.common_factor_pos",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.complete_nondivisibility",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCyclotomicBlock.twelve_block_power_nondivisibility",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "d3f28b51959a4f740ea19319bfd3d2d19cdff15cf9f70cc9112d7c80dc67d668"
+    }
+  ],
+  "review_bindings": [
+    {
+      "review": "research/rigidity-closing-20261122/reviews/CYCLOTOMIC_FAMILY_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "scope": "N1\u2013N17 only; full-parameter family legality, primitivity, factorization and integer contradiction.",
+      "review_sha256": "d7e70fd5e6bd2dbcadcc7e95556439f2e88df7c2ca4df12eaf1f1108943f2c48"
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/RESIDUAL_NORM_OBSTRUCTIONS_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/CYCLOTOMIC_ZERO_FIBER.md",
+      "sha256": "045844e3e89a36dd0480ed495f5635df52a9b16342dec0fbc20ae18735cf2bbd",
+      "scope": "N18\u2013N27 only; subexponential polynomial denominator, distinguished-conjugate obstruction, rotation identities.",
+      "review_sha256": "a395010a8c7b8c0523ad9ae7a3e940bd1b60330e6a440132ce8dc62e79061efe"
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/LEAN_CYCLOTOMIC_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/lean/CyclotomicBlockExclusion.lean",
+      "sha256": "d3ffda404a77fed64d13f2a4743388f051aecefe401dff778f80cf36e30ccb34",
+      "scope": "Ten theorem statements and proof scope; independent inspection, not an independent compiler replay.",
+      "review_sha256": "489bef3658e6d182ddfebc4a7dc286c030d5766de3d5a5264beaa74d17a19e3e"
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/CANONICAL_RETRACING_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/lean/CanonicalRetracing.lean",
+      "sha256": "6fd19273c9592f7b27181cbe86fd49809a3dc38ee997a0a0ee0c65b3496be694",
+      "scope": "Eight finite scalar declarations; exact monotonicity, positivity and finite clock assumptions.",
+      "review_sha256": "80377b6226fb16aed18e16d047d7aa97831457bd856ec3f07fed1f79c06a87c6"
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/CANONICAL_RETRACING_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/MOVING_INVERSE_WINDOW.md",
+      "sha256": "8b29a39b6e1a2bbb3fa344de65d92ea0fbb9e1c43eb56456fa6a64c621c4027a",
+      "scope": "Written actual-path interpretation and conditional complete-path-atom clock criterion.",
+      "review_sha256": "80377b6226fb16aed18e16d047d7aa97831457bd856ec3f07fed1f79c06a87c6"
+    },
+    {
+      "review": "research/rigidity-closing-20261122/reviews/SAME_SOURCE_ENTROPY_REVIEW.md",
+      "path": "research/rigidity-closing-20261122/SAME_SOURCE_INVERSE_ENTROPY.md",
+      "sha256": "cacbb6d3f2ab8e8bc54c15d215806ce79eeabdc9d291593565b93cc9a166f7e2",
+      "scope": "Finite actual-source coupling, exact endpoint TV, all-shifts entropy transfer and all stated limiting quantifiers.",
+      "review_sha256": "ada7a95d638754b26d020a7e628e897d5ea1cac7d31f9394d281a8206eecf4fe"
+    }
+  ],
+  "source_ports": false,
+  "head": "e05cda51a2c04f08c9ba11bc1ec9fd797e953c42",
+  "tree": "7d7adb511efb96ec71a4d3b493abbdf5720546ae",
+  "tracked_files": 690,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "review_scope": "Independent written and Lean-statement reviews at the exact source bytes shown. No review covers external analytic proof construction, a general Collatz conclusion, or claims beyond its named equations. The full compiler replay is separate.",
+  "lean_path": "/workspace/scratch/c6766c1207a3/collatz_work/rigidity_published_replay/lib:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "inherited_theorem_audits": 21,
+  "new_theorem_audits": 18,
+  "checkout_clean_after": true,
+  "finished_utc": "2026-11-22T09:09:21Z"
+}

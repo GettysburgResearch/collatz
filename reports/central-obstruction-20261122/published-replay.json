@@ -1,0 +1,932 @@
+{
+  "schema": "collatz-central-obstruction-replay/v1",
+  "complete": true,
+  "started_utc": "2026-11-22T07:23:13Z",
+  "repository": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+  "inputs": [
+    {
+      "path": "research/lean-band-coupling-20261121/check.py",
+      "sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785"
+    },
+    {
+      "path": "research/central-obstruction-20261122/DEPENDENCIES.json",
+      "sha256": "4b594b29da6a14d1b95ce9a0511a44192f94ff50206bbdf8d7de21c38081da29"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/DEPENDENCIES.json",
+      "sha256": "1444cd9cbf287dfa7cb4e4b05b12674e569764883881da571b22c7b0e921a25f"
+    },
+    {
+      "path": "research/central-obstruction-20261122/lean/HeadThreeNegativeCycle.lean",
+      "sha256": "cffc9b414abaa6cb2d346a433a820bd3da44be5afcc9b684a7c601f48c10df5d"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/NegativeCarry.lean",
+      "sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/CarryLanguage.lean",
+      "sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "path": "research/central-obstruction-20261122/lean/ExtremalSourceClock.lean",
+      "sha256": "83da6bb58074c104221e27e58c0726289bf4ef324d9cd31f50ceba1d49bd668e"
+    },
+    {
+      "path": "research/central-obstruction-20261122/CYCLE_ATTEMPTS.md",
+      "sha256": "a2fcde5f23de883dd33d7c38c91bf4c9ae3119069f48ed4b1175ad592354c9b3"
+    },
+    {
+      "path": "research/central-obstruction-20261122/ESCAPE_ATTEMPTS.md",
+      "sha256": "9f00202cdc0229fc801c8f6ac2fa58c3500c35dd19a777cad839ab9537773f79"
+    },
+    {
+      "path": "research/central-obstruction-20261122/EXTREMAL_CLOCK_REVIEW.md",
+      "sha256": "0bf39bd63e1246ac0fe27f1edb806d9736679eb6382c897ac0798c867d96bf9b"
+    },
+    {
+      "path": "research/central-obstruction-20261122/EXTREMAL_SOURCE_CLOCK_FAILURE.md",
+      "sha256": "e60e0744d5d9d88f2f417050aff2cd73c1f1831815ccedb365f9311912cb9ded"
+    },
+    {
+      "path": "research/central-obstruction-20261122/HEAD_THREE_NEGATIVE_CYCLE.md",
+      "sha256": "f9260b683c1d16e8fe44950b4690bea61f9b8fbc6c0d1ad6b85dc48b5c9915b1"
+    },
+    {
+      "path": "research/central-obstruction-20261122/NEGATIVE_SHADOW_REVIEW.md",
+      "sha256": "b7a206fadcc9ba6fa685c064da9957ac32939e0174f325ea1cd9ab7c4683b90c"
+    },
+    {
+      "path": "research/central-obstruction-20261122/README.md",
+      "sha256": "63c0dc509a4d443c76c948e6d9e324912848d875eae51c9ff6aad09a3ed9c7ae"
+    },
+    {
+      "path": "research/central-obstruction-20261122/REVIEW_BINDING.json",
+      "sha256": "d55bf53abcc8aae682ecfe5e78aa1a5d61da92b08741b3dee6081dc6bc419f55"
+    },
+    {
+      "path": "research/central-obstruction-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "49b8e2b140b065420e3a335215612f076913c7fea100b136dd7532e3cba98449"
+    },
+    {
+      "path": "research/central-obstruction-20261122/certificates/exact_cycle_controls.py",
+      "sha256": "50feea598cec53a089a30dc7e976fc96d55007a02e60ab73946c66813aff7cf4"
+    },
+    {
+      "path": "research/central-obstruction-20261122/certificates/negative_cycle_certificate.py",
+      "sha256": "7f4cbf547b42b091360c164c7637dc6ec40e23f2c4008fa229f266871823c8be"
+    },
+    {
+      "path": "research/central-obstruction-20261122/check.py",
+      "sha256": "a5f87e4201251c2317b51494b8dc362a2bc344f8ee0473b8bbe6661c5959e9c1"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d"
+    }
+  ],
+  "commands": [
+    {
+      "label": "head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/01-head.log",
+      "log_sha256": "c36af5f168ed165b56127cf8417efa21fce04832be3ae61b43af068787a9933f"
+    },
+    {
+      "label": "tree",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/02-tree.log",
+      "log_sha256": "5ca4396720cfda0fa756f1d71977e96be5ef6a9ad6ec819664c2344a2786cd82"
+    },
+    {
+      "label": "status-before",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.011,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/03-status-before.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tracked-files",
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/04-tracked-files.log",
+      "log_sha256": "1f79bb65aff8097650cb162b655e9e71b8f11d0141460c853958fee1463e2617"
+    },
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.188,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/05-lean-version.log",
+      "log_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680"
+    },
+    {
+      "label": "mathlib-head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_literature_runtime",
+      "exit_code": 0,
+      "seconds": 0.004,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/06-mathlib-head.log",
+      "log_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "label": "ShellCover",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/ShellCover.olean",
+        "ShellCover.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 19.586,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/07-ShellCover.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "WitnessGlobal",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/WitnessGlobal.olean",
+        "WitnessGlobal.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 5.441,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/08-WitnessGlobal.log",
+      "log_sha256": "6a2884f9f4c5c5da03f470dadf4a8bbb2650f8d1c3797c5725881a66e155ffdf"
+    },
+    {
+      "label": "WitnessSynthesis",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/WitnessSynthesis.olean",
+        "WitnessSynthesis.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 1.767,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/09-WitnessSynthesis.log",
+      "log_sha256": "f7ea6b4fe957d99b08ba9e4594119e9789ae50f0cfa2cf828ffddb6e51b57251"
+    },
+    {
+      "label": "CarryLanguage",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/CarryLanguage.olean",
+        "CarryLanguage.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 2.67,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/10-CarryLanguage.log",
+      "log_sha256": "bfb698239f92b4baf4ccf4ba56602f2aa26c6f95894bf444c2c524bf0b8990c1"
+    },
+    {
+      "label": "NegativeCarry",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/NegativeCarry.olean",
+        "NegativeCarry.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 8.563,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/11-NegativeCarry.log",
+      "log_sha256": "9997f4479b1aeda294bb0594a35202dfdf591f4c8cdf146bf63712f1717a92c7"
+    },
+    {
+      "label": "HeadThreeNegativeCycle",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/HeadThreeNegativeCycle.olean",
+        "HeadThreeNegativeCycle.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 6.683,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/12-HeadThreeNegativeCycle.log",
+      "log_sha256": "ae1e1f9aca0418f96faeaff382e24eb9aa3dd361aff09cb75bfd7cbfe4f4398e"
+    },
+    {
+      "label": "ExtremalSourceClock",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib/ExtremalSourceClock.olean",
+        "ExtremalSourceClock.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/source",
+      "exit_code": 0,
+      "seconds": 2.636,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/13-ExtremalSourceClock.log",
+      "log_sha256": "163b2fd2b9575e7fac959683a90d90fc6af281a46383aa7e9c103e0c273fa626"
+    },
+    {
+      "label": "normal-negative-cycle",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_central_published1/research/central-obstruction-20261122/certificates/negative_cycle_certificate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.039,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/14-normal-negative-cycle.log",
+      "log_sha256": "a72363cffa06d9b8187a85000f44c804f2115be5e76b4fb53ed55d0237e24dca"
+    },
+    {
+      "label": "normal-full-cycle-controls",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_central_published1/research/central-obstruction-20261122/certificates/exact_cycle_controls.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.028,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/15-normal-full-cycle-controls.log",
+      "log_sha256": "849907bb2e8b63fa2add9cd0a15aac194936bc1dd91032ae07fe3a4ac51bffeb"
+    },
+    {
+      "label": "optimized-negative-cycle",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_central_published1/research/central-obstruction-20261122/certificates/negative_cycle_certificate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.137,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/16-optimized-negative-cycle.log",
+      "log_sha256": "a72363cffa06d9b8187a85000f44c804f2115be5e76b4fb53ed55d0237e24dca"
+    },
+    {
+      "label": "optimized-full-cycle-controls",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_central_published1/research/central-obstruction-20261122/certificates/exact_cycle_controls.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.09,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/17-optimized-full-cycle-controls.log",
+      "log_sha256": "849907bb2e8b63fa2add9cd0a15aac194936bc1dd91032ae07fe3a4ac51bffeb"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.6,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/18-repository-validation.log",
+      "log_sha256": "0285ec65dde7dcdf7f4733a8c686fd2c7e290771a2cda0078d76a8b7f09c396c"
+    },
+    {
+      "label": "status-after",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.005,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/19-status-after.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "head-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.001,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/20-head-after.log",
+      "log_sha256": "c36af5f168ed165b56127cf8417efa21fce04832be3ae61b43af068787a9933f"
+    },
+    {
+      "label": "tree-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_central_published1",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/logs/21-tree-after.log",
+      "log_sha256": "5ca4396720cfda0fa756f1d71977e96be5ef6a9ad6ec819664c2344a2786cd82"
+    }
+  ],
+  "modules": [
+    {
+      "module": "ShellCover",
+      "new": false,
+      "source": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "source_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "compiled_source_sha256": "807cde06c02011b3aff57eb6a92e59b867551cd47fa5dba9c0e7495863dfb50d",
+      "axioms": [],
+      "artifact_sha256": "6a5bbe19c65f12e5fa85f2d54698f0b7d2f829a492ef342cb2dd127eb78b2f20"
+    },
+    {
+      "module": "WitnessGlobal",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+      "source_sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "compiled_source_sha256": "a53de03d2e7c3af6ad0a6c9665ee48215e7642e027f8f7e9afb4e0b380cfbdd2",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.WitnessGlobal.low_complete_is_one",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.low_trace_to_five",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.single_four_language",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.single_four_psi",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.terminal_gap_psi_boundary",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.long_terminal_certificate",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.long_terminal_psi_boundary",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "099b247fc796ed7e4df8035628c811a5f39870dd11e929e5bfe1cf9c1fa00893"
+    },
+    {
+      "module": "WitnessSynthesis",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "source_sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+      "compiled_source_sha256": "ddc15c0095c56b4e44463427f8413a5fa48790e2218b671b576aa635c4b4c4eb",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.powered_trace_hit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.source_grade_peel",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.peel_powered_source",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.half_size_merger_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.erase_prefix_asynchronous",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.erasure_interval_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.unresolved_endpoint_pair",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.seven_asynchronous_erasure",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "0624353330e1e6263bcd2d21e40cbc7e8aa7bdd3f460b48b2a627a48bf4f71b9"
+    },
+    {
+      "module": "CarryLanguage",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/CarryLanguage.lean",
+      "source_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+      "compiled_source_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.CarryLanguage.signed_gap_transport",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.carry_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.small_debt_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.debt_word",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.carry_language_transport",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.language_grade_drop",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.carry_language_interval_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "9c72bc1a3ad16c9262f71ac82d86e0907a7948fa1578667c2f9c644570d84820"
+    },
+    {
+      "module": "NegativeCarry",
+      "new": false,
+      "source": "research/profound-closure-20261122/lean/NegativeCarry.lean",
+      "source_sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08",
+      "compiled_source_sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.NegativeCarry.negativeStep_positive",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negativeOrbit_positive",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.evenCount_le",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negativeOrbit_add",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.evenCount_add",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.complement_step",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.complement_lift",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negative_odd_run",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negative_even_block",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.finite_even_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.bounded_even_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.budget_or_one",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.evenCount_mono",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.paid_complement_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.arbitrary_debt_reset",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.explicit_debt_reset",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.one_prefix_grade_drop",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.paid_debt_interval_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.gap_carry_transport",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negative_one",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.unit_complement_overshoot",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "67bbf9ba173443d340078c765d745754c0b07a8f8e5329863a1baae940660b2d"
+    },
+    {
+      "module": "HeadThreeNegativeCycle",
+      "new": true,
+      "source": "research/central-obstruction-20261122/lean/HeadThreeNegativeCycle.lean",
+      "source_sha256": "cffc9b414abaa6cb2d346a433a820bd3da44be5afcc9b684a7c601f48c10df5d",
+      "compiled_source_sha256": "cffc9b414abaa6cb2d346a433a820bd3da44be5afcc9b684a7c601f48c10df5d",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.negative_cycle_uniform",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.head_three_entry",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.head_three_entry_no_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.source_entry",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.source_twos",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.source_long_prefix",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.lifted_negative_window",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.original_target_no_descent",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.complete_cap_four_example",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.HeadThreeNegativeCycle.negative_cycle",
+          "axioms": []
+        }
+      ],
+      "artifact_sha256": "213407ede630edac45238070c73012e531be0d4525848fa199a689f9e4d5978e"
+    },
+    {
+      "module": "ExtremalSourceClock",
+      "new": true,
+      "source": "research/central-obstruction-20261122/lean/ExtremalSourceClock.lean",
+      "source_sha256": "83da6bb58074c104221e27e58c0726289bf4ef324d9cd31f50ceba1d49bd668e",
+      "compiled_source_sha256": "83da6bb58074c104221e27e58c0726289bf4ef324d9cd31f50ceba1d49bd668e",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.source_1092_complete",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.source_820_complete",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.source_820_grade_drop",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.source_1092_clock",
+          "axioms": []
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.target_2047_is_new",
+          "axioms": []
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.target_2047_at_source_clock",
+          "axioms": []
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.target_2047_no_descent_before_58",
+          "axioms": []
+        },
+        {
+          "declaration": "CollatzShell.ExtremalSourceClock.target_2047_at_58",
+          "axioms": []
+        }
+      ],
+      "artifact_sha256": "b0c09bbcc518002a855c4ff3183f275eb5b0a541bdd6d604102f193eff8f8f67"
+    }
+  ],
+  "head": "082a9d4be6717d1bb956394bacf6a63c8d4ed8e4",
+  "tree": "b95794eaa39a640eda5b924eceb9ec063b7662df",
+  "tracked_files": 608,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_path": "/workspace/scratch/c6766c1207a3/collatz_work/central_published_check1/lib:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "module_port_sha256": "42161671fd7e8f752f031580147a0ca105aff1e203a192a9c9abbb4efcd7a404",
+  "new_theorem_audits": 18,
+  "checkout_clean_after": true,
+  "finished_utc": "2026-11-22T07:24:01Z"
+}

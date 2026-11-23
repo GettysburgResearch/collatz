@@ -1,0 +1,23 @@
+{
+  "date_utc": "2026-11-22",
+  "files": {
+    "reviewed_corollary": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_operator/FINITE_SPIKES_FORCE_SMALL_ANCESTORS.md",
+      "sha256": "130219761341f3ac612da557ece5d1a96a674cf72a4da18d5883eff16f5823b7"
+    },
+    "horizon_note": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_operator/POLYLOGARITHMIC_INVERSE_HORIZONS.md",
+      "sha256": "d4c5b9758f0e8ee1cb8f73d40f63ce8d5da642b48612b47842fd5b049bbd3824"
+    },
+    "previous_source_review": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_symbolic/REVIEW_POLYLOG_INVERSE_FLOORS.md",
+      "sha256": "3d07f27773942da7da4d371ac6fa3af330450889426c43a6553c221ec1f589ce"
+    },
+    "review": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_symbolic/REVIEW_FINITE_SPIKE_ANCESTORS.md",
+      "sha256": "e3e43c36837616c56024e6bf499034a7c0366b0d0b33e2028fcc433218e37edd"
+    }
+  },
+  "finding": "Sound source-qualified deduction. The predecessor floor is used only at the finite prefix endpoint; the suffix density needs no deeper floor. The stretched-log scale and j<=k+1 extraction are valid.",
+  "execution_scope": "Read-only mathematical review, no builds or prior computations rerun."
+}

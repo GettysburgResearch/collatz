@@ -1,0 +1,19 @@
+{
+  "lean_version": "4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_modules": [
+    {
+      "module": "OriginalSourceEntropy",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    },
+    {
+      "module": "CycleWordEntropy",
+      "path": "research/deep-closing-20261122/lean/CycleWordEntropy.lean",
+      "sha256": "af0375fe2087f3e0d88c4bf87a67cdb283e10ce62dbb555379c855450186998d"
+    }
+  ],
+  "local_theorem_dependencies": [],
+  "scope": "Both new modules import only Mathlib. The geometric reference is not an independence premise. No Collatz, GRH, Matveev, potential, population-density or entropy-lower-bound axiom is imported. Written asymptotic and analytic deductions have the separate scopes in FORMALIZATION.md."
+}

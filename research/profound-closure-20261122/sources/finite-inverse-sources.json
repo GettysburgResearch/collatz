@@ -1,0 +1,150 @@
+{
+  "packet": "Finite inverse horizons and small ordinary ancestors",
+  "date_utc": "2026-11-22",
+  "repository_baseline": {
+    "pull_request": 185,
+    "sha": "276be8154f4e867acc0230466b34d9cb224aacf5"
+  },
+  "status": "Source-qualified written analytic deductions plus a strict Lean check of the finite block telescope; no Collatz closure claim.",
+  "artifacts": [
+    {
+      "file": "README.md",
+      "sha256": "81161415209f17d0994ce9d41544e80cda37ee6548a540f2c38ca7904724d45a"
+    },
+    {
+      "file": "POLYLOGARITHMIC_INVERSE_HORIZONS.md",
+      "sha256": "d4c5b9758f0e8ee1cb8f73d40f63ce8d5da642b48612b47842fd5b049bbd3824"
+    },
+    {
+      "file": "FINITE_SPIKES_FORCE_SMALL_ANCESTORS.md",
+      "sha256": "130219761341f3ac612da557ece5d1a96a674cf72a4da18d5883eff16f5823b7"
+    },
+    {
+      "file": "FiniteBlockTelescope.lean",
+      "sha256": "31f0e0093ab541a0b851ee7478b947fcb82428727ee8177ac9fc6955dd7c8d65"
+    },
+    {
+      "file": "FiniteBlockTelescope.build.log",
+      "sha256": "a8b1c30c08eb269ae51aa404f3c2b3735836c17f5202ca8d333ebe31473496f4"
+    }
+  ],
+  "new_written_results": [
+    {
+      "id": "finite_horizon_bound",
+      "statement": "If every unit predecessor of q through depth K is at least b and 3^(4m)<=b, then max_{s<=K} D_s(q)/q <= b^(-1/2)+C_A K(K+2)m^(-A-1).",
+      "dependencies": [
+        "tao_marginal_mixing",
+        "pr180_full_clock_counting"
+      ]
+    },
+    {
+      "id": "polylogarithmic_horizon",
+      "statement": "For every fixed B,R>0, sup_{s<=log(b)^B} D_s(q)/q = O_{B,R}(log(b)^(-R)), uniformly under the stated predecessor floor.",
+      "dependencies": [
+        "finite_horizon_bound"
+      ]
+    },
+    {
+      "id": "finite_obstacle_bound",
+      "statement": "The same uniform horizon bound holds for V_k by V_k<=kappa D_{k+1}.",
+      "dependencies": [
+        "polylogarithmic_horizon",
+        "pr180_finite_obstacle_comparison"
+      ]
+    },
+    {
+      "id": "contact_delay_at_critical_minima",
+      "statement": "For hypothetical least-unit q with V(q)>=eta q/log(q+2), p_L(q)=O_R(log(q)^(-R)) uniformly for L<=log(q)^B, for each fixed B,R.",
+      "dependencies": [
+        "polylogarithmic_horizon",
+        "pr176_contact_representation"
+      ]
+    },
+    {
+      "id": "finite_spike_small_ancestor",
+      "statement": "A certificate V_k(q)>=eta q/log(q+2) with k<=log(q)^B forces a positive odd unit n<exp(log(q)^gamma)<q, with U^j(n)=q and 1<=j<=k+1, for any fixed gamma in (0,1) and all sufficiently large q.",
+      "dependencies": [
+        "finite_horizon_bound",
+        "pr180_finite_obstacle_comparison"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tao_marginal_mixing",
+      "author": "Terence Tao",
+      "title": "Almost all orbits of the Collatz map attain almost bounded values",
+      "publication": "Forum of Mathematics, Pi 10 (2022), e12",
+      "version_inspected": "arXiv v7, 16 July 2026",
+      "url": "https://arxiv.org/html/1909.03562v7",
+      "exact_statement": "Proposition 1.14, equations (1.26)-(1.27), and consistency (1.23)",
+      "scope": "Marginal L1 mixing for each fixed exponent, not conditional-clock mixing or fixed-orbit geometric valuations."
+    },
+    {
+      "id": "pr180_full_clock_counting",
+      "pr": 180,
+      "sha": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "file": "research/lean-wide-pass-20261122/ENERGY_SYNTHESIS.md",
+      "file_sha256": "2d9e9b1c166b4010852b926de708c8f6c4afbc0b6a08d1a3731d6fba87e7a363",
+      "exact_statement": "Theorem E4, (E14)-(E16)",
+      "evidence": "Written analytic derivation; not formalized in the new Lean file."
+    },
+    {
+      "id": "pr180_finite_obstacle_comparison",
+      "pr": 180,
+      "sha": "bfba8feaefb3d0910456cdd92d2afcf9e8785b4d",
+      "file": "research/lean-wide-pass-20261122/ENERGY_SYNTHESIS.md",
+      "file_sha256": "2d9e9b1c166b4010852b926de708c8f6c4afbc0b6a08d1a3731d6fba87e7a363",
+      "exact_statement": "Theorem E2, (E8), finite cylinder comparison V_k(q)<=kappa D_s(q) for s>=k+1",
+      "evidence": "Written finite-cylinder deduction from separately qualified marginal analytic inputs."
+    },
+    {
+      "id": "pr176_contact_representation",
+      "pr": 176,
+      "sha": "8aeb843bba254f065743b6fa277a70906b51d520",
+      "file": "research/lean-global-resolvent-20261121/overview/parallel/OBSTACLE_ENTRANCE_RENEWAL.md",
+      "file_sha256": "3282a797044b54690e6ff40977aaa2e73c013bda17d66809a281089cd00ba78d",
+      "exact_statement": "F_L=sum_{j<L}Q^j(1_C V), p_L=F_L/V with tau<L",
+      "evidence": "Written canonical contact representation; used only for contact corollary."
+    },
+    {
+      "id": "previous_ordinary_harmonic_flow",
+      "pr": 185,
+      "sha": "276be8154f4e867acc0230466b34d9cb224aacf5",
+      "file": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "file_sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b",
+      "exact_statement": "Ordinary harmonic inverse kernel and power-weighted path occupation",
+      "scope": "Explains the adaptive-path limitation, not an extra input to finite horizon theorem."
+    }
+  ],
+  "lean_verification": {
+    "status": "PASS",
+    "compiler": "Lean 4.34.1",
+    "warnings_as_errors": true,
+    "mathlib_sha": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "imports": [
+      "ShellCover",
+      "Mathlib.Basic.Real.Basic"
+    ],
+    "shellcover_ported_source_sha256": "807cde06c02011b3aff57eb6a92e59b867551cd47fa5dba9c0e7495863dfb50d",
+    "public_theorems": [
+      "CollatzFiniteBlockTelescope.scaled_bound",
+      "CollatzFiniteBlockTelescope.bound",
+      "CollatzFiniteBlockTelescope.scaled_bound_on_horizon",
+      "CollatzFiniteBlockTelescope.scaled_bound_of_finite_hypotheses"
+    ],
+    "axioms_per_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_sorryAx": true,
+    "interpretation": "For f_s=D_s(q)/q, base=b^(-1/2), and epsilon=C_A*m^(-A), the checked algebra gives the accumulated quadratic error. The analytic hypotheses themselves are explicit, unformalized inputs.",
+    "log": {
+      "file": "FiniteBlockTelescope.build.log",
+      "sha256": "a8b1c30c08eb269ae51aa404f3c2b3735836c17f5202ca8d333ebe31473496f4"
+    },
+    "finite_hypothesis_scope": "scaled_bound_of_finite_hypotheses assumes the base and local recurrence only through the supplied finite horizon K."
+  },
+  "remaining_gap": "No bound yet puts every critical infinite-depth canonical value into a fixed polylogarithmic finite certificate horizon. The actual-kernel drift needed to sum adaptive logarithmic errors has not been proved."
+}

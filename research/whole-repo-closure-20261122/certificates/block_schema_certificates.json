@@ -1,0 +1,5352 @@
+{
+  "schema": "collatz-fixed-block-cycle-suite/v1",
+  "certificates": {
+    "alphabet_four_signed_cycle": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "11100011110",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "word": "10",
+          "a": 1,
+          "b": 0
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "6561/8192",
+      "prefactor": "1/1",
+      "regime": "contracting",
+      "rotation": 0,
+      "suffix_prefactors": [
+        "1/1",
+        "1/1",
+        "1/1"
+      ],
+      "suffix_growth": [
+        "6561/8192",
+        "3/4",
+        "1/1"
+      ],
+      "numerator": [
+        {
+          "root": "3/4",
+          "coefficient": "-42/1"
+        },
+        {
+          "root": "6561/8192",
+          "coefficient": "41/1"
+        },
+        {
+          "root": "1/1",
+          "coefficient": "1/1"
+        }
+      ],
+      "numerator_bound": "84/1",
+      "half_slope_cutoff": 4,
+      "candidate_bound": 168,
+      "candidates": [
+        {
+          "value": 1,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "42/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "6561/8192",
+            "leading_coefficient": "42/1",
+            "other_absolute_sum": "42/1",
+            "root_ratio": "2048/2187",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 2,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "43/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-1/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-1/1",
+            "other_absolute_sum": "85/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 24
+          }
+        },
+        {
+          "value": 3,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "44/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-2/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-2/1",
+            "other_absolute_sum": "86/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 21
+          }
+        },
+        {
+          "value": 4,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "45/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-3/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-3/1",
+            "other_absolute_sum": "87/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 19
+          }
+        },
+        {
+          "value": 5,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "46/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-4/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-4/1",
+            "other_absolute_sum": "88/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 18
+          }
+        },
+        {
+          "value": 6,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "47/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-5/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-5/1",
+            "other_absolute_sum": "89/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 17
+          }
+        },
+        {
+          "value": 7,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "48/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-6/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-6/1",
+            "other_absolute_sum": "90/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 16
+          }
+        },
+        {
+          "value": 8,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "49/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-7/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-7/1",
+            "other_absolute_sum": "91/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 15
+          }
+        },
+        {
+          "value": 9,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "50/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-8/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-8/1",
+            "other_absolute_sum": "92/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 15
+          }
+        },
+        {
+          "value": 10,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "51/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-9/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-9/1",
+            "other_absolute_sum": "93/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 14
+          }
+        },
+        {
+          "value": 11,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "52/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-10/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-10/1",
+            "other_absolute_sum": "94/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 14
+          }
+        },
+        {
+          "value": 12,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "53/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-11/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-11/1",
+            "other_absolute_sum": "95/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 13
+          }
+        },
+        {
+          "value": 13,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "54/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-12/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-12/1",
+            "other_absolute_sum": "96/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 13
+          }
+        },
+        {
+          "value": 14,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "55/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-13/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-13/1",
+            "other_absolute_sum": "97/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 13
+          }
+        },
+        {
+          "value": 15,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "56/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-14/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-14/1",
+            "other_absolute_sum": "98/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 12
+          }
+        },
+        {
+          "value": 16,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "57/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-15/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-15/1",
+            "other_absolute_sum": "99/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 12
+          }
+        },
+        {
+          "value": 17,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "58/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-16/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-16/1",
+            "other_absolute_sum": "100/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 12
+          }
+        },
+        {
+          "value": 18,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "59/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-17/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-17/1",
+            "other_absolute_sum": "101/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 12
+          }
+        },
+        {
+          "value": 19,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "60/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-18/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-18/1",
+            "other_absolute_sum": "102/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 20,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "61/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-19/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-19/1",
+            "other_absolute_sum": "103/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 21,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "62/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-20/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-20/1",
+            "other_absolute_sum": "104/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 22,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "63/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-21/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-21/1",
+            "other_absolute_sum": "105/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 23,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "64/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-22/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-22/1",
+            "other_absolute_sum": "106/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 24,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "65/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-23/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-23/1",
+            "other_absolute_sum": "107/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 11
+          }
+        },
+        {
+          "value": 25,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "66/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-24/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-24/1",
+            "other_absolute_sum": "108/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 26,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "67/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-25/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-25/1",
+            "other_absolute_sum": "109/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 27,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "68/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-26/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-26/1",
+            "other_absolute_sum": "110/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 28,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "69/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-27/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-27/1",
+            "other_absolute_sum": "111/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 29,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "70/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-28/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-28/1",
+            "other_absolute_sum": "112/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 30,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "71/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-29/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-29/1",
+            "other_absolute_sum": "113/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 31,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "72/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-30/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-30/1",
+            "other_absolute_sum": "114/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 32,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "73/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-31/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-31/1",
+            "other_absolute_sum": "115/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 10
+          }
+        },
+        {
+          "value": 33,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "74/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-32/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-32/1",
+            "other_absolute_sum": "116/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 34,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "75/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-33/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-33/1",
+            "other_absolute_sum": "117/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 35,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "76/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-34/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-34/1",
+            "other_absolute_sum": "118/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 36,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "77/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-35/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-35/1",
+            "other_absolute_sum": "119/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 37,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "78/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-36/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-36/1",
+            "other_absolute_sum": "120/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 38,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "79/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-37/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-37/1",
+            "other_absolute_sum": "121/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 39,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "80/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-38/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-38/1",
+            "other_absolute_sum": "122/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 40,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "81/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-39/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-39/1",
+            "other_absolute_sum": "123/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 41,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "82/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-40/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-40/1",
+            "other_absolute_sum": "124/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 42,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "83/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-41/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-41/1",
+            "other_absolute_sum": "125/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 43,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "84/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-42/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-42/1",
+            "other_absolute_sum": "126/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 44,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "85/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-43/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-43/1",
+            "other_absolute_sum": "127/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 9
+          }
+        },
+        {
+          "value": 45,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "86/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-44/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-44/1",
+            "other_absolute_sum": "128/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 46,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "87/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-45/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-45/1",
+            "other_absolute_sum": "129/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 47,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "88/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-46/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-46/1",
+            "other_absolute_sum": "130/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 48,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "89/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-47/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-47/1",
+            "other_absolute_sum": "131/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 49,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "90/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-48/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-48/1",
+            "other_absolute_sum": "132/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 50,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "91/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-49/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-49/1",
+            "other_absolute_sum": "133/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 51,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "92/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-50/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-50/1",
+            "other_absolute_sum": "134/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 52,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "93/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-51/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-51/1",
+            "other_absolute_sum": "135/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 53,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "94/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-52/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-52/1",
+            "other_absolute_sum": "136/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 54,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "95/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-53/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-53/1",
+            "other_absolute_sum": "137/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 55,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "96/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-54/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-54/1",
+            "other_absolute_sum": "138/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 56,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "97/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-55/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-55/1",
+            "other_absolute_sum": "139/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 57,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "98/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-56/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-56/1",
+            "other_absolute_sum": "140/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 58,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "99/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-57/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-57/1",
+            "other_absolute_sum": "141/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 59,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "100/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-58/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-58/1",
+            "other_absolute_sum": "142/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 60,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "101/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-59/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-59/1",
+            "other_absolute_sum": "143/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 61,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "102/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-60/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-60/1",
+            "other_absolute_sum": "144/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 62,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "103/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-61/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-61/1",
+            "other_absolute_sum": "145/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 8
+          }
+        },
+        {
+          "value": 63,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "104/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-62/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-62/1",
+            "other_absolute_sum": "146/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 64,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "105/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-63/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-63/1",
+            "other_absolute_sum": "147/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 65,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "106/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-64/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-64/1",
+            "other_absolute_sum": "148/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 66,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "107/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-65/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-65/1",
+            "other_absolute_sum": "149/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 67,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "108/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-66/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-66/1",
+            "other_absolute_sum": "150/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 68,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "109/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-67/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-67/1",
+            "other_absolute_sum": "151/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 69,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "110/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-68/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-68/1",
+            "other_absolute_sum": "152/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 70,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "111/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-69/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-69/1",
+            "other_absolute_sum": "153/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 71,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "112/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-70/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-70/1",
+            "other_absolute_sum": "154/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 72,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "113/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-71/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-71/1",
+            "other_absolute_sum": "155/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 73,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "114/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-72/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-72/1",
+            "other_absolute_sum": "156/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 74,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "115/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-73/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-73/1",
+            "other_absolute_sum": "157/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 75,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "116/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-74/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-74/1",
+            "other_absolute_sum": "158/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 76,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "117/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-75/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-75/1",
+            "other_absolute_sum": "159/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 77,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "118/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-76/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-76/1",
+            "other_absolute_sum": "160/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 78,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "119/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-77/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-77/1",
+            "other_absolute_sum": "161/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 79,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "120/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-78/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-78/1",
+            "other_absolute_sum": "162/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 80,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "121/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-79/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-79/1",
+            "other_absolute_sum": "163/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 81,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "122/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-80/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-80/1",
+            "other_absolute_sum": "164/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 82,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "123/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-81/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-81/1",
+            "other_absolute_sum": "165/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 83,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "124/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-82/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-82/1",
+            "other_absolute_sum": "166/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 84,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "125/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-83/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-83/1",
+            "other_absolute_sum": "167/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 85,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "126/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-84/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-84/1",
+            "other_absolute_sum": "168/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 86,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "127/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-85/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-85/1",
+            "other_absolute_sum": "169/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 87,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "128/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-86/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-86/1",
+            "other_absolute_sum": "170/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 88,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "129/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-87/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-87/1",
+            "other_absolute_sum": "171/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 89,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "130/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-88/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-88/1",
+            "other_absolute_sum": "172/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 90,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "131/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-89/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-89/1",
+            "other_absolute_sum": "173/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 91,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "132/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-90/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-90/1",
+            "other_absolute_sum": "174/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 92,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "133/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-91/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-91/1",
+            "other_absolute_sum": "175/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 93,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "134/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-92/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-92/1",
+            "other_absolute_sum": "176/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 94,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "135/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-93/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-93/1",
+            "other_absolute_sum": "177/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 7
+          }
+        },
+        {
+          "value": 95,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "136/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-94/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-94/1",
+            "other_absolute_sum": "178/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 96,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "137/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-95/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-95/1",
+            "other_absolute_sum": "179/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 97,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "138/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-96/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-96/1",
+            "other_absolute_sum": "180/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 98,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "139/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-97/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-97/1",
+            "other_absolute_sum": "181/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 99,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "140/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-98/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-98/1",
+            "other_absolute_sum": "182/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 100,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "141/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-99/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-99/1",
+            "other_absolute_sum": "183/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 101,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "142/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-100/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-100/1",
+            "other_absolute_sum": "184/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 102,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "143/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-101/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-101/1",
+            "other_absolute_sum": "185/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 103,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "144/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-102/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-102/1",
+            "other_absolute_sum": "186/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 104,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "145/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-103/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-103/1",
+            "other_absolute_sum": "187/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 105,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "146/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-104/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-104/1",
+            "other_absolute_sum": "188/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 106,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "147/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-105/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-105/1",
+            "other_absolute_sum": "189/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 107,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "148/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-106/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-106/1",
+            "other_absolute_sum": "190/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 108,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "149/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-107/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-107/1",
+            "other_absolute_sum": "191/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 109,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "150/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-108/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-108/1",
+            "other_absolute_sum": "192/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 110,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "151/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-109/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-109/1",
+            "other_absolute_sum": "193/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 111,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "152/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-110/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-110/1",
+            "other_absolute_sum": "194/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 112,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "153/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-111/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-111/1",
+            "other_absolute_sum": "195/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 113,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "154/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-112/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-112/1",
+            "other_absolute_sum": "196/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 114,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "155/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-113/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-113/1",
+            "other_absolute_sum": "197/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 115,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "156/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-114/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-114/1",
+            "other_absolute_sum": "198/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 116,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "157/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-115/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-115/1",
+            "other_absolute_sum": "199/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 117,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "158/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-116/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-116/1",
+            "other_absolute_sum": "200/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 118,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "159/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-117/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-117/1",
+            "other_absolute_sum": "201/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 119,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "160/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-118/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-118/1",
+            "other_absolute_sum": "202/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 120,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "161/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-119/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-119/1",
+            "other_absolute_sum": "203/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 121,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "162/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-120/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-120/1",
+            "other_absolute_sum": "204/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 122,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "163/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-121/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-121/1",
+            "other_absolute_sum": "205/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 123,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "164/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-122/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-122/1",
+            "other_absolute_sum": "206/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 124,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "165/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-123/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-123/1",
+            "other_absolute_sum": "207/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 125,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "166/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-124/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-124/1",
+            "other_absolute_sum": "208/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 126,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "167/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-125/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-125/1",
+            "other_absolute_sum": "209/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 127,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "168/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-126/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-126/1",
+            "other_absolute_sum": "210/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 128,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "169/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-127/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-127/1",
+            "other_absolute_sum": "211/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 129,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "170/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-128/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-128/1",
+            "other_absolute_sum": "212/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 130,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "171/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-129/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-129/1",
+            "other_absolute_sum": "213/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 131,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "172/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-130/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-130/1",
+            "other_absolute_sum": "214/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 132,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "173/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-131/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-131/1",
+            "other_absolute_sum": "215/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 133,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "174/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-132/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-132/1",
+            "other_absolute_sum": "216/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 134,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "175/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-133/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-133/1",
+            "other_absolute_sum": "217/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 135,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "176/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-134/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-134/1",
+            "other_absolute_sum": "218/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 136,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "177/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-135/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-135/1",
+            "other_absolute_sum": "219/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 137,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "178/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-136/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-136/1",
+            "other_absolute_sum": "220/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 138,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "179/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-137/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-137/1",
+            "other_absolute_sum": "221/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 139,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "180/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-138/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-138/1",
+            "other_absolute_sum": "222/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 140,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "181/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-139/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-139/1",
+            "other_absolute_sum": "223/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 141,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "182/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-140/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-140/1",
+            "other_absolute_sum": "224/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 142,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "183/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-141/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-141/1",
+            "other_absolute_sum": "225/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 143,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "184/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-142/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-142/1",
+            "other_absolute_sum": "226/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 144,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "185/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-143/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-143/1",
+            "other_absolute_sum": "227/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 145,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "186/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-144/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-144/1",
+            "other_absolute_sum": "228/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 146,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "187/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-145/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-145/1",
+            "other_absolute_sum": "229/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 147,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "188/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-146/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-146/1",
+            "other_absolute_sum": "230/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 148,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "189/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-147/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-147/1",
+            "other_absolute_sum": "231/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 149,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "190/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-148/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-148/1",
+            "other_absolute_sum": "232/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 150,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "191/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-149/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-149/1",
+            "other_absolute_sum": "233/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 151,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "192/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-150/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-150/1",
+            "other_absolute_sum": "234/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 152,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "193/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-151/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-151/1",
+            "other_absolute_sum": "235/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 153,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "194/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-152/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-152/1",
+            "other_absolute_sum": "236/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 154,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "195/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-153/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-153/1",
+            "other_absolute_sum": "237/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 155,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "196/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-154/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-154/1",
+            "other_absolute_sum": "238/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 156,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "197/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-155/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-155/1",
+            "other_absolute_sum": "239/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 157,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "198/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-156/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-156/1",
+            "other_absolute_sum": "240/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 158,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "199/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-157/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-157/1",
+            "other_absolute_sum": "241/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 159,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "200/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-158/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-158/1",
+            "other_absolute_sum": "242/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 160,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "201/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-159/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-159/1",
+            "other_absolute_sum": "243/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 161,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "202/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-160/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-160/1",
+            "other_absolute_sum": "244/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 162,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "203/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-161/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-161/1",
+            "other_absolute_sum": "245/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 163,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "204/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-162/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-162/1",
+            "other_absolute_sum": "246/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 6
+          }
+        },
+        {
+          "value": 164,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "205/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-163/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-163/1",
+            "other_absolute_sum": "247/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 5
+          }
+        },
+        {
+          "value": 165,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "206/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-164/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-164/1",
+            "other_absolute_sum": "248/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 5
+          }
+        },
+        {
+          "value": 166,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "207/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-165/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-165/1",
+            "other_absolute_sum": "249/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 5
+          }
+        },
+        {
+          "value": 167,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "208/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-166/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-166/1",
+            "other_absolute_sum": "250/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 5
+          }
+        },
+        {
+          "value": 168,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-42/1"
+            },
+            {
+              "root": "6561/8192",
+              "coefficient": "209/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-167/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-167/1",
+            "other_absolute_sum": "251/1",
+            "root_ratio": "6561/8192",
+            "cutoff": 5
+          }
+        }
+      ],
+      "cutoff": 24,
+      "finite_cases": [
+        {
+          "k": 0,
+          "status": "empty_word"
+        },
+        {
+          "k": 1,
+          "fixed_point": "2735/233",
+          "status": "nonintegral"
+        },
+        {
+          "k": 2,
+          "fixed_point": "35225359/3437449",
+          "status": "nonintegral"
+        },
+        {
+          "k": 3,
+          "fixed_point": "341197283183/38189468201",
+          "status": "nonintegral"
+        },
+        {
+          "k": 4,
+          "fixed_point": "589394584205507/75730841100533",
+          "status": "nonintegral"
+        },
+        {
+          "k": 5,
+          "fixed_point": "23949695656172418095/3533688955480310633",
+          "status": "nonintegral"
+        },
+        {
+          "k": 6,
+          "fixed_point": "187635140122867713222799/31780715975254969116169",
+          "status": "nonintegral"
+        },
+        {
+          "k": 7,
+          "fixed_point": "1436078429047467721267083503/278933206506200001797819561",
+          "status": "nonintegral"
+        },
+        {
+          "k": 8,
+          "fixed_point": "2165175370264434070485169902659/481392165238833083979697205621",
+          "status": "nonintegral"
+        },
+        {
+          "k": 9,
+          "fixed_point": "80834768395069087070795736054427055/20517871418310758528733676380038633",
+          "status": "nonintegral"
+        },
+        {
+          "k": 10,
+          "fixed_point": "54571326403583049676927125089292919949/15757410886615687409576821032736227899",
+          "status": "nonintegral"
+        },
+        {
+          "k": 11,
+          "fixed_point": "193364722807029179808603348964117946212201/63233533350793714086279734125218012033727",
+          "status": "nonintegral"
+        },
+        {
+          "k": 12,
+          "fixed_point": "13702968488661776141081740148386887935356451/5047886361273863381601156714121125898283669",
+          "status": "nonintegral"
+        },
+        {
+          "k": 13,
+          "fixed_point": "244744453419162316033691196580955789402893290317615/100934751304875625186619040405674511853566678960233",
+          "status": "nonintegral"
+        },
+        {
+          "k": 14,
+          "fixed_point": "260656921647869240044908131846691525573648903444067897/119512028948330910197062044272193167340589301329279087",
+          "status": "nonintegral"
+        },
+        {
+          "k": 15,
+          "fixed_point": "13672753990797089384817537015035085526506111042224288066543/6917114797597002128610447936593103755583909704024917856681",
+          "status": "nonintegral"
+        },
+        {
+          "k": 16,
+          "fixed_point": "1212782056414140551766978725037964844117117401865706828556819/671573033197584751877683063492311105176480260195158192820261",
+          "status": "nonintegral"
+        },
+        {
+          "k": 17,
+          "fixed_point": "782516889580871340335763624332531515931474984349994297785044377775/470376847482755304306432634147675185605589758080092823803023731433",
+          "status": "nonintegral"
+        },
+        {
+          "k": 18,
+          "fixed_point": "314878030263385845110402039197426695901784892600372430210963824983701/203755312790269470293377964581702296638313486003683325814935860549491",
+          "status": "nonintegral"
+        },
+        {
+          "k": 19,
+          "fixed_point": "46074219701985872310832343432447542075726225644246602318883878333183313263/31832361132331007347191396150432614318319954413795959982175562016819942441",
+          "status": "nonintegral"
+        },
+        {
+          "k": 20,
+          "fixed_point": "1299563447298744556230339662273062565577568117686539206149741322276465643477/951078429996997358001509144745982488576494911452122739091173257235297216563",
+          "status": "nonintegral"
+        },
+        {
+          "k": 21,
+          "fixed_point": "2791142548224782960760502689233182141481061907809948545760774790092828863578495535/2147679942959547184647245544248946075053345859193786777812824501879716032711888233",
+          "status": "nonintegral"
+        },
+        {
+          "k": 22,
+          "fixed_point": "953881143570353638153717887601308605221560547315545163114610881539601279699316930633/766399677114662457733854826873131389485761233973153598761244840605898525968926295263",
+          "status": "nonintegral"
+        },
+        {
+          "k": 23,
+          "fixed_point": "3690797949445310573859134614403330672784695348371141640329490790989869337317079012973889/3077044446734127250318359806259328936243008473919070256484577805020817999261041571465383",
+          "status": "nonintegral"
+        }
+      ],
+      "tail_identities": [],
+      "tail": "only the displayed fixed-cycle identities; no other positive cycles"
+    },
+    "trivial_cycle_identity": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "10",
+          "a": 1,
+          "b": 1
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "3/4",
+      "prefactor": "3/4",
+      "regime": "contracting",
+      "rotation": 0,
+      "suffix_prefactors": [
+        "3/4",
+        "1/1"
+      ],
+      "suffix_growth": [
+        "3/4",
+        "1/1"
+      ],
+      "numerator": [
+        {
+          "root": "3/4",
+          "coefficient": "-3/4"
+        },
+        {
+          "root": "1/1",
+          "coefficient": "1/1"
+        }
+      ],
+      "numerator_bound": "7/4",
+      "half_slope_cutoff": 2,
+      "candidate_bound": 3,
+      "candidates": [
+        {
+          "value": 1,
+          "power_sum": [],
+          "identity": {
+            "value": 1,
+            "blocks": [
+              {
+                "entry": 1,
+                "exit": 1,
+                "varying": true
+              }
+            ],
+            "primitive_cycle": [
+              1,
+              2
+            ],
+            "original_value": 1
+          }
+        },
+        {
+          "value": 2,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "3/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-1/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-1/1",
+            "other_absolute_sum": "3/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 3,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "3/2"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-2/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-2/1",
+            "other_absolute_sum": "3/2",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        }
+      ],
+      "cutoff": 2,
+      "finite_cases": [
+        {
+          "k": 0,
+          "fixed_point": "1/1",
+          "status": "positive_cycle",
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        },
+        {
+          "k": 1,
+          "fixed_point": "1/1",
+          "status": "positive_cycle",
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        }
+      ],
+      "tail_identities": [
+        1
+      ],
+      "tail": "only the displayed fixed-cycle identities; no other positive cycles"
+    },
+    "nontrivial_rotation_identity": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "1",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "word": "01",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "word": "0",
+          "a": 0,
+          "b": 1
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "3/4",
+      "prefactor": "3/4",
+      "regime": "contracting",
+      "rotation": 2,
+      "suffix_prefactors": [
+        "3/4",
+        "3/2",
+        "1/1",
+        "1/1"
+      ],
+      "suffix_growth": [
+        "3/4",
+        "3/4",
+        "3/4",
+        "1/1"
+      ],
+      "numerator": [
+        {
+          "root": "3/4",
+          "coefficient": "-3/2"
+        },
+        {
+          "root": "1/1",
+          "coefficient": "2/1"
+        }
+      ],
+      "numerator_bound": "13/2",
+      "half_slope_cutoff": 2,
+      "candidate_bound": 13,
+      "candidates": [
+        {
+          "value": 1,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "-3/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "1/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "1/1",
+            "other_absolute_sum": "3/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 2,
+          "power_sum": [],
+          "identity": {
+            "value": 2,
+            "blocks": [
+              {
+                "entry": 2,
+                "exit": 1,
+                "varying": false
+              },
+              {
+                "entry": 1,
+                "exit": 2,
+                "varying": false
+              },
+              {
+                "entry": 2,
+                "exit": 2,
+                "varying": true
+              }
+            ],
+            "primitive_cycle": [
+              2,
+              1
+            ],
+            "original_value": 1
+          }
+        },
+        {
+          "value": 3,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "3/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-1/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-1/1",
+            "other_absolute_sum": "3/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 4,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "3/2"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-2/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-2/1",
+            "other_absolute_sum": "3/2",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 5,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "9/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-3/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-3/1",
+            "other_absolute_sum": "9/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 6,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "3/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-4/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-4/1",
+            "other_absolute_sum": "3/1",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 7,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "15/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-5/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-5/1",
+            "other_absolute_sum": "15/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 8,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "9/2"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-6/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-6/1",
+            "other_absolute_sum": "9/2",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 9,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "21/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-7/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-7/1",
+            "other_absolute_sum": "21/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 10,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "6/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-8/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-8/1",
+            "other_absolute_sum": "6/1",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 11,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "27/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-9/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-9/1",
+            "other_absolute_sum": "27/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 12,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "15/2"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-10/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-10/1",
+            "other_absolute_sum": "15/2",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 13,
+          "power_sum": [
+            {
+              "root": "3/4",
+              "coefficient": "33/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-11/1"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-11/1",
+            "other_absolute_sum": "33/4",
+            "root_ratio": "3/4",
+            "cutoff": 2
+          }
+        }
+      ],
+      "cutoff": 2,
+      "finite_cases": [
+        {
+          "k": 0,
+          "fixed_point": "1/1",
+          "status": "positive_cycle",
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        },
+        {
+          "k": 1,
+          "fixed_point": "1/1",
+          "status": "positive_cycle",
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        }
+      ],
+      "tail_identities": [
+        2
+      ],
+      "tail": "only the displayed fixed-cycle identities; no other positive cycles"
+    },
+    "expanding_finite_cycle": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "1",
+          "a": 1,
+          "b": 1
+        },
+        {
+          "word": "0",
+          "a": 0,
+          "b": 1
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "3/2",
+      "prefactor": "3/4",
+      "regime": "expanding",
+      "cutoff": 1,
+      "finite_cases": [
+        {
+          "k": 0,
+          "fixed_point": "1/1",
+          "status": "positive_cycle",
+          "primitive_cycle": [
+            1,
+            2
+          ]
+        }
+      ],
+      "tail": "no positive cycles: complete slope >= 1"
+    },
+    "constant_trivial_cycle": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "10",
+          "a": 0,
+          "b": 3
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "1/1",
+      "prefactor": "27/64",
+      "regime": "constant",
+      "constant_case": {
+        "k": 0,
+        "fixed_point": "1/1",
+        "status": "positive_cycle",
+        "primitive_cycle": [
+          1,
+          2
+        ]
+      }
+    },
+    "contracting_no_odd_steps": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "0",
+          "a": 1,
+          "b": 0
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "1/2",
+      "prefactor": "1/1",
+      "regime": "contracting",
+      "rotation": 0,
+      "suffix_prefactors": [
+        "1/1",
+        "1/1"
+      ],
+      "suffix_growth": [
+        "1/2",
+        "1/1"
+      ],
+      "numerator": [],
+      "numerator_bound": "0/1",
+      "half_slope_cutoff": 1,
+      "candidate_bound": 0,
+      "candidates": [],
+      "cutoff": 1,
+      "finite_cases": [
+        {
+          "k": 0,
+          "status": "empty_word"
+        }
+      ],
+      "tail_identities": [],
+      "tail": "only the displayed fixed-cycle identities; no other positive cycles"
+    },
+    "all_empty_constant": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "10",
+          "a": 0,
+          "b": 0
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "1/1",
+      "prefactor": "1/1",
+      "regime": "constant",
+      "constant_case": {
+        "k": 0,
+        "status": "empty_word"
+      }
+    },
+    "unequal_growth_with_offsets": {
+      "schema": "collatz-fixed-block-cycle-certificate/v1",
+      "blocks": [
+        {
+          "word": "110",
+          "a": 1,
+          "b": 1
+        },
+        {
+          "word": "1000",
+          "a": 2,
+          "b": 0
+        }
+      ],
+      "parameter_domain": "integers k >= 0; empty words excluded",
+      "growth": "81/2048",
+      "prefactor": "9/8",
+      "regime": "contracting",
+      "rotation": 0,
+      "suffix_prefactors": [
+        "9/8",
+        "1/1",
+        "1/1"
+      ],
+      "suffix_growth": [
+        "81/2048",
+        "9/256",
+        "1/1"
+      ],
+      "numerator": [
+        {
+          "root": "9/256",
+          "coefficient": "-66/13"
+        },
+        {
+          "root": "81/2048",
+          "coefficient": "45/8"
+        },
+        {
+          "root": "1/1",
+          "coefficient": "1/13"
+        }
+      ],
+      "numerator_bound": "1121/104",
+      "half_slope_cutoff": 1,
+      "candidate_bound": 21,
+      "candidates": [
+        {
+          "value": 1,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "27/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-12/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-12/13",
+            "other_absolute_sum": "615/52",
+            "root_ratio": "81/2048",
+            "cutoff": 2
+          }
+        },
+        {
+          "value": 2,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "63/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-25/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-25/13",
+            "other_absolute_sum": "1347/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 3,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "9/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-38/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-38/13",
+            "other_absolute_sum": "183/13",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 4,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "81/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-51/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-51/13",
+            "other_absolute_sum": "1581/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 5,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "45/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-64/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-64/13",
+            "other_absolute_sum": "849/52",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 6,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "99/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-77/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-77/13",
+            "other_absolute_sum": "1815/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 7,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "27/2"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-90/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-90/13",
+            "other_absolute_sum": "483/26",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 8,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "117/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-103/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-103/13",
+            "other_absolute_sum": "2049/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 9,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "63/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-116/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-116/13",
+            "other_absolute_sum": "1083/52",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 10,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "135/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-129/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-129/13",
+            "other_absolute_sum": "2283/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 11,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "18/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-142/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-142/13",
+            "other_absolute_sum": "300/13",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 12,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "153/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-155/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-155/13",
+            "other_absolute_sum": "2517/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 13,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "81/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-168/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-168/13",
+            "other_absolute_sum": "1317/52",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 14,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "171/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-181/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-181/13",
+            "other_absolute_sum": "2751/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 15,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "45/2"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-194/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-194/13",
+            "other_absolute_sum": "717/26",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 16,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "189/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-207/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-207/13",
+            "other_absolute_sum": "2985/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 17,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "99/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-220/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-220/13",
+            "other_absolute_sum": "1551/52",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 18,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "207/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-233/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-233/13",
+            "other_absolute_sum": "3219/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 19,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "27/1"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-246/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-246/13",
+            "other_absolute_sum": "417/13",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 20,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "225/8"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-259/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-259/13",
+            "other_absolute_sum": "3453/104",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        },
+        {
+          "value": 21,
+          "power_sum": [
+            {
+              "root": "9/256",
+              "coefficient": "-66/13"
+            },
+            {
+              "root": "81/2048",
+              "coefficient": "117/4"
+            },
+            {
+              "root": "1/1",
+              "coefficient": "-272/13"
+            }
+          ],
+          "dominance": {
+            "largest_root": "1/1",
+            "leading_coefficient": "-272/13",
+            "other_absolute_sum": "1785/52",
+            "root_ratio": "81/2048",
+            "cutoff": 1
+          }
+        }
+      ],
+      "cutoff": 2,
+      "finite_cases": [
+        {
+          "k": 0,
+          "fixed_point": "-5/1",
+          "status": "nonpositive"
+        },
+        {
+          "k": 1,
+          "fixed_point": "1981/15655",
+          "status": "nonintegral"
+        }
+      ],
+      "tail_identities": [],
+      "tail": "only the displayed fixed-cycle identities; no other positive cycles"
+    }
+  }
+}

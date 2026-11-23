@@ -1,0 +1,1362 @@
+{
+  "schema": "collatz-profound-closure-replay/v1",
+  "complete": true,
+  "started_utc": "2026-11-22T05:33:36Z",
+  "repository": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+  "inputs": [
+    {
+      "path": "research/lean-band-coupling-20261121/check.py",
+      "sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785"
+    },
+    {
+      "path": "research/profound-closure-20261122/DEPENDENCIES.json",
+      "sha256": "b8aeb513b9f2e62e264aa46b8d4eb3e4bb36a00604d4a357f8145fb380512b98"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/DEPENDENCIES.json",
+      "sha256": "1444cd9cbf287dfa7cb4e4b05b12674e569764883881da571b22c7b0e921a25f"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/BoundedPowerBudget.lean",
+      "sha256": "3db42b807661cb5fb69b0b82a00e6bd2cf7468fc3614f1b5d04e08c98477a309"
+    },
+    {
+      "path": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/IndependentCyclePins.lean",
+      "sha256": "917fe8a0f00c30806c7f2749e935d631ce0d13e0488f2abd8fafb435366dd6ca"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/FixedBlockDenominator.lean",
+      "sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/NegativeCarry.lean",
+      "sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/CarryLanguage.lean",
+      "sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd"
+    },
+    {
+      "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+      "sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6"
+    },
+    {
+      "path": "research/profound-closure-20261122/lean/FiniteBlockTelescope.lean",
+      "sha256": "31f0e0093ab541a0b851ee7478b947fcb82428727ee8177ac9fc6955dd7c8d65"
+    },
+    {
+      "path": "research/profound-closure-20261122/BOUNDED_POWER_LANGUAGES.md",
+      "sha256": "cabaf79863a492e907e18e5cc67c47bb23c486b2a0302357f923106f3ea6a7ce"
+    },
+    {
+      "path": "research/profound-closure-20261122/FINITE_SPIKES_FORCE_SMALL_ANCESTORS.md",
+      "sha256": "130219761341f3ac612da557ece5d1a96a674cf72a4da18d5883eff16f5823b7"
+    },
+    {
+      "path": "research/profound-closure-20261122/INDEPENDENT_PIN_CYCLES.md",
+      "sha256": "cd0299d9f9989b8a9c1b55b1e63c38de310cd959cc948295264986e0e65caa09"
+    },
+    {
+      "path": "research/profound-closure-20261122/NEGATIVE_CARRY.md",
+      "sha256": "e331591c9a9fd6c141e82f41394769ded40b9c1927978e96719645d6894db8d4"
+    },
+    {
+      "path": "research/profound-closure-20261122/POLYLOGARITHMIC_INVERSE_HORIZONS.md",
+      "sha256": "d4c5b9758f0e8ee1cb8f73d40f63ce8d5da642b48612b47842fd5b049bbd3824"
+    },
+    {
+      "path": "research/profound-closure-20261122/README.md",
+      "sha256": "44d3447796707e8fea9dae97704567ec9af3d5dca729677e3f7cb828de8c552c"
+    },
+    {
+      "path": "research/profound-closure-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "36c5bfa7458fc3bfee027febb9961a04dbd9564f67cb357eb59d63b50e4c28a9"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/bounded_power_certificate.py",
+      "sha256": "76141f2a31631a6d320083ad95a51c8be9c828f2b785432483b1ebc1d3c7b605"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/bounded_power_certificates.json",
+      "sha256": "1c4e7a939c53df81a13e53a81bacc425940ddbecdfb3f62dc4ae4e29bfee872d"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/bounded_power_verify.py",
+      "sha256": "05789b167827badd231061a05e7905fcd0ad49cb56ba809466ee9131da686a0c"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/independent_pin_certificate.json",
+      "sha256": "e573e0c9b9bb93bf4f72d403524dbb5f103ea23778dc1b1371b739f19b072e49"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/independent_pin_certify.py",
+      "sha256": "b527764c5567caecff3ff4d4f7da14b1172b8e06f9793e4cbbea4dfcdf602c7d"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/independent_pin_verify.py",
+      "sha256": "0edea7040209022b8a57ef498793f7dcbcc00a337fb392be7a328ddc0005dae7"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/negative_budget.py",
+      "sha256": "722789839ae2c4e960bf7cf540332137de4e9015a78a7ab4bebcc245471e2e43"
+    },
+    {
+      "path": "research/profound-closure-20261122/certificates/negative_budget_examples.json",
+      "sha256": "d85129bfd5faf5b11d914703d3f9a60d5cddaa8c839df1df2803c4860f849de7"
+    },
+    {
+      "path": "research/profound-closure-20261122/check.py",
+      "sha256": "ad86f9cce07d417bf690e2764b7e467db517d46cb6febdf0ee7f6f82e542e8f3"
+    },
+    {
+      "path": "research/profound-closure-20261122/sources/bounded-power-sources.json",
+      "sha256": "14360b7dd51c4d78248c62d7f3c047425d8646e2f99a132c0f46431423bddb50"
+    },
+    {
+      "path": "research/profound-closure-20261122/sources/finite-inverse-sources.json",
+      "sha256": "c4287f077b0a7faeb87a3f41e9cd9db87cef3bf5132589fdfc8ca65fdaf8cb42"
+    },
+    {
+      "path": "research/profound-closure-20261122/sources/negative-carry-sources.json",
+      "sha256": "44421b48e95ac4ad2d945c62325a5c0407723d0b78bd14c703f916a669afd8c0"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d"
+    }
+  ],
+  "commands": [
+    {
+      "label": "head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/01-head.log",
+      "log_sha256": "817360eadacc4a2f77494add72de6afaaa6c98ae5d3024638fee3b341c720cb5"
+    },
+    {
+      "label": "tree",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/02-tree.log",
+      "log_sha256": "76bfe47a9a870cd3c62b62b0778fc87f674f53ab67c19269398eb30d4a9658e8"
+    },
+    {
+      "label": "status-before",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.018,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/03-status-before.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tracked-files",
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/04-tracked-files.log",
+      "log_sha256": "93b922f0aa31ee9c0104ee89156764cee003e87c1da13e952af3a6478d7de351"
+    },
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.157,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/05-lean-version.log",
+      "log_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680"
+    },
+    {
+      "label": "mathlib-head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_literature_runtime",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/06-mathlib-head.log",
+      "log_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "label": "ShellCover",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/ShellCover.olean",
+        "ShellCover.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 22.093,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/07-ShellCover.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "BoundedPowerBudget",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/BoundedPowerBudget.olean",
+        "BoundedPowerBudget.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 4.61,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/08-BoundedPowerBudget.log",
+      "log_sha256": "bd775c8859eb5eaf7bb970453f4b05993412201d72481dd3ee16b31bba68f5a6"
+    },
+    {
+      "label": "FixedBlockDenominator",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/FixedBlockDenominator.olean",
+        "FixedBlockDenominator.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 6.78,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/09-FixedBlockDenominator.log",
+      "log_sha256": "7fab45ca92ff5068eabdc3251a626d6409a86910bc78be63c33e0c0ba12c33f8"
+    },
+    {
+      "label": "IndependentCyclePins",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/IndependentCyclePins.olean",
+        "IndependentCyclePins.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 3.903,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/10-IndependentCyclePins.log",
+      "log_sha256": "18ec9ba5c3f774543dd90cd98bddb8300fb35a1110b07975d04197c964ccdd92"
+    },
+    {
+      "label": "WitnessGlobal",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/WitnessGlobal.olean",
+        "WitnessGlobal.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 6.146,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/11-WitnessGlobal.log",
+      "log_sha256": "6a2884f9f4c5c5da03f470dadf4a8bbb2650f8d1c3797c5725881a66e155ffdf"
+    },
+    {
+      "label": "WitnessSynthesis",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/WitnessSynthesis.olean",
+        "WitnessSynthesis.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 2.04,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/12-WitnessSynthesis.log",
+      "log_sha256": "f7ea6b4fe957d99b08ba9e4594119e9789ae50f0cfa2cf828ffddb6e51b57251"
+    },
+    {
+      "label": "CarryLanguage",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/CarryLanguage.olean",
+        "CarryLanguage.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 2.507,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/13-CarryLanguage.log",
+      "log_sha256": "bfb698239f92b4baf4ccf4ba56602f2aa26c6f95894bf444c2c524bf0b8990c1"
+    },
+    {
+      "label": "NegativeCarry",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/NegativeCarry.olean",
+        "NegativeCarry.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 9.097,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/14-NegativeCarry.log",
+      "log_sha256": "9997f4479b1aeda294bb0594a35202dfdf591f4c8cdf146bf63712f1717a92c7"
+    },
+    {
+      "label": "FiniteBlockTelescope",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib/FiniteBlockTelescope.olean",
+        "FiniteBlockTelescope.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/source",
+      "exit_code": 0,
+      "seconds": 1.736,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/15-FiniteBlockTelescope.log",
+      "log_sha256": "a8b1c30c08eb269ae51aa404f3c2b3735836c17f5202ca8d333ebe31473496f4"
+    },
+    {
+      "label": "normal-independent-pin",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/independent_pin_verify.py",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/independent_pin_certificate.json",
+        "--self-test"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.048,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/16-normal-independent-pin.log",
+      "log_sha256": "d7dab4f90d70d617abf53d9a5e88c56186525a1104810409a41f10601ad8b755"
+    },
+    {
+      "label": "normal-bounded-power",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/bounded_power_verify.py",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/bounded_power_certificates.json",
+        "--rejection-controls"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.045,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/17-normal-bounded-power.log",
+      "log_sha256": "288c73a29b7eac1afdaa78599dce6e93385a74a4ba6266ff92466a620d993321"
+    },
+    {
+      "label": "normal-negative-replay",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--check",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget_examples.json"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.028,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/18-normal-negative-replay.log",
+      "log_sha256": "28cca299f43280b9c4bf646fc440395e600b55d400c35897d0c1a1abdc851ef9"
+    },
+    {
+      "label": "normal-negative-controls",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--self-test"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.027,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/19-normal-negative-controls.log",
+      "log_sha256": "bb9e25fb717d4a3d2be83116cc98db6e8ccb8564089911e9d1a94a7ff0b40255"
+    },
+    {
+      "label": "optimized-independent-pin",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/independent_pin_verify.py",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/independent_pin_certificate.json",
+        "--self-test"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.141,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/20-optimized-independent-pin.log",
+      "log_sha256": "d7dab4f90d70d617abf53d9a5e88c56186525a1104810409a41f10601ad8b755"
+    },
+    {
+      "label": "optimized-bounded-power",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/bounded_power_verify.py",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/bounded_power_certificates.json",
+        "--rejection-controls"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.129,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/21-optimized-bounded-power.log",
+      "log_sha256": "288c73a29b7eac1afdaa78599dce6e93385a74a4ba6266ff92466a620d993321"
+    },
+    {
+      "label": "optimized-negative-replay",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--check",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget_examples.json"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.123,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/22-optimized-negative-replay.log",
+      "log_sha256": "28cca299f43280b9c4bf646fc440395e600b55d400c35897d0c1a1abdc851ef9"
+    },
+    {
+      "label": "optimized-negative-controls",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--self-test"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.114,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/23-optimized-negative-controls.log",
+      "log_sha256": "bb9e25fb717d4a3d2be83116cc98db6e8ccb8564089911e9d1a94a7ff0b40255"
+    },
+    {
+      "label": "regenerate-independent-pin",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/independent_pin_certify.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/regenerated-independent_pin_certificate.json"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.032,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/24-regenerate-independent-pin.log",
+      "log_sha256": "07946b07696ca98e11ca8a72cfc739b6469a476f13d2993ab78ed93038484f92"
+    },
+    {
+      "label": "regenerate-bounded-power",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/bounded_power_certificate.py",
+        "--output",
+        "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/regenerated-bounded_power_certificates.json"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.029,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/25-regenerate-bounded-power.log",
+      "log_sha256": "2b62fa60d861d1605f8aa555f76e7ac9f8e73c31c8f912e6873d05519cc7e7e6"
+    },
+    {
+      "label": "regenerate-negative-1",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--multiplier",
+        "9",
+        "--intercept",
+        "2"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.03,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/26-regenerate-negative-1.log",
+      "log_sha256": "ca0eade03a956c7101b59fdf61bfeaf09e210983fe1e592940aab58d54dd3367"
+    },
+    {
+      "label": "regenerate-negative-2",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--multiplier",
+        "27",
+        "--intercept",
+        "-1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.025,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/27-regenerate-negative-2.log",
+      "log_sha256": "6c53cf099603f813c678a42e50473125c57fd157edc69f3f2f228fc58c935b20"
+    },
+    {
+      "label": "regenerate-negative-3",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_profound_published1/research/profound-closure-20261122/certificates/negative_budget.py",
+        "--multiplier",
+        "9",
+        "--intercept",
+        "8"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.031,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/28-regenerate-negative-3.log",
+      "log_sha256": "cafd78d8b540c67c1da551aaaaa3df525cbcaa38cf1b83f1292b9c09a4d81745"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.616,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/29-repository-validation.log",
+      "log_sha256": "83cfff09b4ad961a68786f98284c6068d5c128e57362d37f2a290b1d571b0020"
+    },
+    {
+      "label": "status-after",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.004,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/30-status-after.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "head-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/31-head-after.log",
+      "log_sha256": "817360eadacc4a2f77494add72de6afaaa6c98ae5d3024638fee3b341c720cb5"
+    },
+    {
+      "label": "tree-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_profound_published1",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/logs/32-tree-after.log",
+      "log_sha256": "76bfe47a9a870cd3c62b62b0778fc87f674f53ab67c19269398eb30d4a9658e8"
+    }
+  ],
+  "modules": [
+    {
+      "module": "ShellCover",
+      "new": false,
+      "source": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+      "source_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+      "compiled_source_sha256": "807cde06c02011b3aff57eb6a92e59b867551cd47fa5dba9c0e7495863dfb50d",
+      "axioms": [],
+      "artifact_sha256": "6a5bbe19c65f12e5fa85f2d54698f0b7d2f829a492ef342cb2dd127eb78b2f20"
+    },
+    {
+      "module": "BoundedPowerBudget",
+      "new": true,
+      "source": "research/profound-closure-20261122/lean/BoundedPowerBudget.lean",
+      "source_sha256": "3db42b807661cb5fb69b0b82a00e6bd2cf7468fc3614f1b5d04e08c98477a309",
+      "compiled_source_sha256": "3db42b807661cb5fb69b0b82a00e6bd2cf7468fc3614f1b5d04e08c98477a309",
+      "axioms": [
+        {
+          "declaration": "CollatzBoundedPower.dyadic_duration_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.local_budget_sum_add",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.local_budget_sum",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.threshold_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.threshold_of_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.dyadic_length_cap",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.bounded_power_length_cap",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzBoundedPower.mixed_pin_threshold",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "fa09f1bd8ebb3443795ba9d4dfee3f4b7661294b79f6e0e4b1d1f6c4ef752df4"
+    },
+    {
+      "module": "FixedBlockDenominator",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/FixedBlockDenominator.lean",
+      "source_sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf",
+      "compiled_source_sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf",
+      "axioms": [
+        {
+          "declaration": "CollatzFixedBlock.denominator_pos",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.correction_pos",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.tail_power_margin",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.tail_strict_interval",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.full_denominator_nondivisibility",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.no_integer_cycle_equation",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.paired_affine_equation",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.no_paired_affine_cycle",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.cycle_equation_small",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.pin_source_large",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.no_paired_affine_cycle_uniform",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.pin_block_identity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.repeated_pin_identity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.repeated_twos_identity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.no_repeated_gap_cycle",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFixedBlock.no_repeated_gap_cycle_uniform",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "696e3319efc180fbb72150eb2be3fe320f982ccacf157fc6cacda24108f4eb07"
+    },
+    {
+      "module": "IndependentCyclePins",
+      "new": true,
+      "source": "research/profound-closure-20261122/lean/IndependentCyclePins.lean",
+      "source_sha256": "917fe8a0f00c30806c7f2749e935d631ce0d13e0488f2abd8fafb435366dd6ca",
+      "compiled_source_sha256": "917fe8a0f00c30806c7f2749e935d631ce0d13e0488f2abd8fafb435366dd6ca",
+      "axioms": [
+        {
+          "declaration": "CollatzIndependentPins.full_pin_divisibility",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzIndependentPins.independent_cross_identity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzIndependentPins.independent_ratio_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzIndependentPins.no_independent_cycle_of_twos_ge_pins",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzIndependentPins.independent_integer_quotient",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzIndependentPins.independent_gap_cycle_necessary",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "a8b917d78b45364d0924f918a1982231ed80c9a54f4b575cc4cf94bcf8d6365d"
+    },
+    {
+      "module": "WitnessGlobal",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+      "source_sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+      "compiled_source_sha256": "a53de03d2e7c3af6ad0a6c9665ee48215e7642e027f8f7e9afb4e0b380cfbdd2",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.WitnessGlobal.low_complete_is_one",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.low_trace_to_five",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.single_four_language",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.single_four_psi",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.terminal_gap_psi_boundary",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.long_terminal_certificate",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessGlobal.long_terminal_psi_boundary",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "099b247fc796ed7e4df8035628c811a5f39870dd11e929e5bfe1cf9c1fa00893"
+    },
+    {
+      "module": "WitnessSynthesis",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+      "source_sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+      "compiled_source_sha256": "ddc15c0095c56b4e44463427f8413a5fa48790e2218b671b576aa635c4b4c4eb",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.powered_trace_hit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.source_grade_peel",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.peel_powered_source",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.half_size_merger_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.erase_prefix_asynchronous",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.erasure_interval_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.unresolved_endpoint_pair",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.seven_has_no_synchronous_endpoint_erasure",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.WitnessSynthesis.seven_asynchronous_erasure",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "0624353330e1e6263bcd2d21e40cbc7e8aa7bdd3f460b48b2a627a48bf4f71b9"
+    },
+    {
+      "module": "CarryLanguage",
+      "new": false,
+      "source": "research/whole-repo-closure-20261122/lean/CarryLanguage.lean",
+      "source_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+      "compiled_source_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.CarryLanguage.signed_gap_transport",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.carry_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.small_debt_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.debt_word",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.carry_language_transport",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.language_grade_drop",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.CarryLanguage.carry_language_interval_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "9c72bc1a3ad16c9262f71ac82d86e0907a7948fa1578667c2f9c644570d84820"
+    },
+    {
+      "module": "NegativeCarry",
+      "new": true,
+      "source": "research/profound-closure-20261122/lean/NegativeCarry.lean",
+      "source_sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08",
+      "compiled_source_sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08",
+      "axioms": [
+        {
+          "declaration": "CollatzShell.NegativeCarry.negativeStep_positive",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negativeOrbit_positive",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.evenCount_le",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negativeOrbit_add",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.evenCount_add",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.complement_step",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.complement_lift",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negative_odd_run",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negative_even_block",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.finite_even_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.bounded_even_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.budget_or_one",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.evenCount_mono",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.paid_complement_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.arbitrary_debt_reset",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.explicit_debt_reset",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.one_prefix_grade_drop",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.paid_debt_interval_rule",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.gap_carry_transport",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.negative_one",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzShell.NegativeCarry.unit_complement_overshoot",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "67bbf9ba173443d340078c765d745754c0b07a8f8e5329863a1baae940660b2d"
+    },
+    {
+      "module": "FiniteBlockTelescope",
+      "new": true,
+      "source": "research/profound-closure-20261122/lean/FiniteBlockTelescope.lean",
+      "source_sha256": "31f0e0093ab541a0b851ee7478b947fcb82428727ee8177ac9fc6955dd7c8d65",
+      "compiled_source_sha256": "31f0e0093ab541a0b851ee7478b947fcb82428727ee8177ac9fc6955dd7c8d65",
+      "axioms": [
+        {
+          "declaration": "CollatzFiniteBlockTelescope.scaled_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFiniteBlockTelescope.bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFiniteBlockTelescope.scaled_bound_on_horizon",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzFiniteBlockTelescope.scaled_bound_of_finite_hypotheses",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "96653d34fc231a6d2fc549ee13ac021243729d6cb651de7dc3e2d690565b8860"
+    }
+  ],
+  "head": "868530d258a947bd54888511f21834cc59660761",
+  "tree": "a9ecef96247af3e6da03a6e5554b89a904f8627e",
+  "tracked_files": 500,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/lib:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "module_port_sha256": "42161671fd7e8f752f031580147a0ca105aff1e203a192a9c9abbb4efcd7a404",
+  "new_theorem_audits": 39,
+  "regenerated_certificates": [
+    {
+      "certificate": "research/profound-closure-20261122/certificates/independent_pin_certificate.json",
+      "output": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/regenerated-independent_pin_certificate.json",
+      "sha256": "e573e0c9b9bb93bf4f72d403524dbb5f103ea23778dc1b1371b739f19b072e49"
+    },
+    {
+      "certificate": "research/profound-closure-20261122/certificates/bounded_power_certificates.json",
+      "output": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/regenerated-bounded_power_certificates.json",
+      "sha256": "1c4e7a939c53df81a13e53a81bacc425940ddbecdfb3f62dc4ae4e29bfee872d"
+    },
+    {
+      "certificate": "research/profound-closure-20261122/certificates/negative_budget_examples.json",
+      "output": "/workspace/scratch/c6766c1207a3/collatz_work/profound_published_check1/regenerated-negative_budget_examples.json",
+      "sha256": "d85129bfd5faf5b11d914703d3f9a60d5cddaa8c839df1df2803c4860f849de7"
+    }
+  ],
+  "checkout_clean_after": true,
+  "finished_utc": "2026-11-22T05:34:37Z"
+}

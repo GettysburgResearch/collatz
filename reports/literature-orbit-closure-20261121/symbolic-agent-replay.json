@@ -1,0 +1,41 @@
+{
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "modules": [
+    {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/HalfSourceMerge.lean",
+      "sha256": "a97887077575d43a9ab27739c27a693d352334ea20dce87c2ecbe72b6f7b0fd5",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/HalfSourceMerge.log",
+      "has_sorry_in_success_log": false
+    },
+    {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/LongDiamondErasure.lean",
+      "sha256": "3cc8307078cccf47996298b1ea491722784b0dc50700f676d7f0a5b7260c3726",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/LongDiamondErasure.log",
+      "has_sorry_in_success_log": false
+    },
+    {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/MarkedErasure.lean",
+      "sha256": "cf10a107ff5829d08f0ffc3c7b7a67ccd27e8af8a88501ef80474c408ee6493a",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/MarkedErasure.log",
+      "has_sorry_in_success_log": false
+    },
+    {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/NewBandFamily.lean",
+      "sha256": "60409cdc2bd9738affe2cddb389df24c1b4540165085ea14de15ff8b6d693369",
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/literature_symbolic/NewBandFamily.log",
+      "has_sorry_in_success_log": false
+    }
+  ],
+  "new_band_family_exit_code": 0,
+  "upstream_sources": [
+    {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/source/ShellCover.lean",
+      "sha256": "807cde06c02011b3aff57eb6a92e59b867551cd47fa5dba9c0e7495863dfb50d"
+    },
+    {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/literature_build/source/ForwardSection.lean",
+      "sha256": "753bab6aff32f38ac13249a0be1e48851d5e34ea64b9675e4cd4b858507467d6"
+    }
+  ],
+  "scope": "Each listed module compiled successfully in this working environment. This is not a complete repository validation or a proof of universal Collatz."
+}

@@ -1,0 +1,602 @@
+{
+  "schema": "collatz-deep-closing-replay/v1",
+  "complete": true,
+  "started_utc": "2026-11-22T08:15:39Z",
+  "repository": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+  "packet": "research/deep-closing-20261122",
+  "inputs": [
+    {
+      "path": "research/deep-closing-20261122/DEPENDENCIES.json",
+      "sha256": "b0e148e798d3bc666572869813790ce18eb67d853d282ca20c268a5f10dd2fac"
+    },
+    {
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea"
+    },
+    {
+      "path": "research/deep-closing-20261122/lean/CycleWordEntropy.lean",
+      "sha256": "af0375fe2087f3e0d88c4bf87a67cdb283e10ce62dbb555379c855450186998d"
+    },
+    {
+      "path": "research/deep-closing-20261122/REVIEW_BINDING.json",
+      "sha256": "592a6f5e7313b1084c6e854942589b9af79442ed721267fd855f91bd79ee5d4d"
+    },
+    {
+      "path": "research/deep-closing-20261122/reviews/ACTUAL_ORBIT_ENTROPY_REVIEW.md",
+      "sha256": "78ec3fedbb7a7aa334708530e7e84062058bdd299bc6647f1342274756e0ed62"
+    },
+    {
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98"
+    },
+    {
+      "path": "research/deep-closing-20261122/reviews/SIBLING_SMOOTHING_REVIEW.md",
+      "sha256": "93984b8be35d3ce69a76a5a30b0cc76520e84c9434d04320384f479adb49bb8c"
+    },
+    {
+      "path": "research/deep-closing-20261122/SIBLING_SMOOTHING_ATTEMPT.md",
+      "sha256": "0ad191c13b008818558330bdcb93304f9c5c0b8874804baa85531d494e4cc1da"
+    },
+    {
+      "path": "research/deep-closing-20261122/reviews/ARITHMETIC_RIGIDITY_REVIEW.md",
+      "sha256": "3d2f2a329313cd8f5bc61d3d6954eb00e6eb137d37a0c4ad8c63f77f13c0831c"
+    },
+    {
+      "path": "research/deep-closing-20261122/ARITHMETIC_ATTACK.md",
+      "sha256": "aebf19e35c498d4d318af7c45bce49d457bac33ba149be9f81344707a68cc520"
+    },
+    {
+      "path": "research/deep-closing-20261122/reviews/ORIGINAL_SOURCE_ENTROPY_REVIEW.md",
+      "sha256": "f272549b2be1993de6f2746f42843eecfdf7ed06d21084b90abc8b3d66df6942"
+    },
+    {
+      "path": "research/deep-closing-20261122/reviews/CYCLE_WORD_ENTROPY_REVIEW.md",
+      "sha256": "1bbd3a49184be63dac083a7f486124a9399c621532b6146b9929b7770a58ef78"
+    },
+    {
+      "path": "research/deep-closing-20261122/GRH_AFFINE_CYCLE_ATTEMPT.md",
+      "sha256": "935578dba46414a7ba981adbd470b008d2d7a77b6972acbace148592114ae410"
+    },
+    {
+      "path": "research/deep-closing-20261122/reviews/LEAN_FINITE_CORE_REVIEW.md",
+      "sha256": "7ea94987a1d0590d15bcc06808aa60c34142dfd1dc863930bf8b91dcb4c450b5"
+    },
+    {
+      "path": "research/deep-closing-20261122/FORMALIZATION.md",
+      "sha256": "9ee8745ed087c23da0cbac0f2a8afc017a29db8759f4582f5600733bdadc3fe5"
+    },
+    {
+      "path": "research/deep-closing-20261122/JOINT_BOUNDARY_ATTEMPT.md",
+      "sha256": "b515e121142e12f00f87e63bdc95142affc7433219e0b053239fd565bef823ed"
+    },
+    {
+      "path": "research/deep-closing-20261122/README.md",
+      "sha256": "7eddf1e35b15360d625cf8e9ddf6f70cebbad8d4e87a000528d628d929b8e55e"
+    },
+    {
+      "path": "research/deep-closing-20261122/SOURCES.json",
+      "sha256": "e88888a71c48b29db8f5ec6a6726fcbcb4ecf2144ce7a15400e82292b706fe2f"
+    },
+    {
+      "path": "research/deep-closing-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "b2c991bde0bc53230f5e5e8c9bf511456a352769b3fa97da9de3e5b4da2b7ef0"
+    },
+    {
+      "path": "research/deep-closing-20261122/certificates/check_arithmetic.py",
+      "sha256": "7c8f74fe7c6459dda693932f19bae004f6e8734a99b84368b90f81e390313d9a"
+    },
+    {
+      "path": "research/deep-closing-20261122/certificates/cycle_law_controls.py",
+      "sha256": "b9c6c82b0bbf274ba3174dbc177b40f56456ddb82a0f1fa3495cbf85cb954f1c"
+    },
+    {
+      "path": "research/deep-closing-20261122/check.py",
+      "sha256": "b175ae8349eb4fc24efc5be5687b74114da8b21fd85a52f574964007b216e3a2"
+    },
+    {
+      "path": "tools/validate.py",
+      "sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d"
+    }
+  ],
+  "commands": [
+    {
+      "label": "head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/01-head.log",
+      "log_sha256": "720fff80ce6ecadc8ce43706660f3fdc617d7cef5d8aaf7cae70731321145156"
+    },
+    {
+      "label": "tree",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/02-tree.log",
+      "log_sha256": "3fde2bf449e283f280063367be68f2e9bd8f41759822ec70abd8a3181f22f25d"
+    },
+    {
+      "label": "status-before",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.024,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/03-status-before.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "tracked-files",
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/04-tracked-files.log",
+      "log_sha256": "148c24dbf7cf320be31f29e81b1a9e433060c97fd980efda7f60b94d72b3ad83"
+    },
+    {
+      "label": "lean-version",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.221,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/05-lean-version.log",
+      "log_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680"
+    },
+    {
+      "label": "mathlib-head",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/mathlib_literature_runtime",
+      "exit_code": 0,
+      "seconds": 0.004,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/06-mathlib-head.log",
+      "log_sha256": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe"
+    },
+    {
+      "label": "OriginalSourceEntropy",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/lib/OriginalSourceEntropy.olean",
+        "OriginalSourceEntropy.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/source",
+      "exit_code": 0,
+      "seconds": 17.62,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/07-OriginalSourceEntropy.log",
+      "log_sha256": "dfbda3804dc920a831fd5f3c78a519f2a91b4025c4da61dcbce6588b1b3c7985"
+    },
+    {
+      "label": "CycleWordEntropy",
+      "argv": [
+        "/workspace/scratch/46eba7b29f50/lean-runtime-next/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/lib/CycleWordEntropy.olean",
+        "CycleWordEntropy.lean"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/source",
+      "exit_code": 0,
+      "seconds": 1.443,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/08-CycleWordEntropy.log",
+      "log_sha256": "4e4c0ff14e1aee895e225a63aea58ec0cb37929e5277601ce85057e3b109e02b"
+    },
+    {
+      "label": "normal-arithmetic",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_deep_published/research/deep-closing-20261122/certificates/check_arithmetic.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.023,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/09-normal-arithmetic.log",
+      "log_sha256": "e43d7d262aeefbdda27cfb1dc3a223eb7d41d143198e6320eddfd0314851933f"
+    },
+    {
+      "label": "normal-cycle-law",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_deep_published/research/deep-closing-20261122/certificates/cycle_law_controls.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.163,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/10-normal-cycle-law.log",
+      "log_sha256": "4f70f95ae4f1e787563e789471cf90c1090eb9942e33af37ecde109a5cae7106"
+    },
+    {
+      "label": "optimized-arithmetic",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_deep_published/research/deep-closing-20261122/certificates/check_arithmetic.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.244,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/11-optimized-arithmetic.log",
+      "log_sha256": "e43d7d262aeefbdda27cfb1dc3a223eb7d41d143198e6320eddfd0314851933f"
+    },
+    {
+      "label": "optimized-cycle-law",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "/workspace/scratch/c6766c1207a3/collatz_deep_published/research/deep-closing-20261122/certificates/cycle_law_controls.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.256,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/12-optimized-cycle-law.log",
+      "log_sha256": "4f70f95ae4f1e787563e789471cf90c1090eb9942e33af37ecde109a5cae7106"
+    },
+    {
+      "label": "repository-validation",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-X",
+        "utf8",
+        "-B",
+        "tools/validate.py"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.664,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/13-repository-validation.log",
+      "log_sha256": "34016f2dca1c79897f944cb916cac56c47f084620c8ba8035a2e8a989c731077"
+    },
+    {
+      "label": "status-after",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.022,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/14-status-after.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "head-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.003,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/15-head-after.log",
+      "log_sha256": "720fff80ce6ecadc8ce43706660f3fdc617d7cef5d8aaf7cae70731321145156"
+    },
+    {
+      "label": "tree-after",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/c6766c1207a3/collatz_deep_published",
+      "exit_code": 0,
+      "seconds": 0.002,
+      "log": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/logs/16-tree-after.log",
+      "log_sha256": "3fde2bf449e283f280063367be68f2e9bd8f41759822ec70abd8a3181f22f25d"
+    }
+  ],
+  "modules": [
+    {
+      "module": "OriginalSourceEntropy",
+      "source": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "new": true,
+      "source_sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "compiled_source_sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "axioms": [
+        {
+          "declaration": "CollatzOriginalEntropy.entropy_le_crossEntropy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.push_nonneg",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.le_push",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.push_sum",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.sum_push_mul",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.push_comp",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.entropy_push_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.geometric_mass",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.codeProb_pos",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.codeProb_sum_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.log_codeProb",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_word_entropy_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.gapPath_affine",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.same_word_same_ternary_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.endpoint_eq_code",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.physical_endpoint_code",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_original_source_entropy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_original_source_entropy_of_mean",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.sliding_window_cost_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.single_gap_log_identity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzOriginalEntropy.finite_gap_log_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "eba6b4c64837e8e7654528d48da49d9bb696e72da37d8208025f105720223e82"
+    },
+    {
+      "module": "CycleWordEntropy",
+      "source": "research/deep-closing-20261122/lean/CycleWordEntropy.lean",
+      "new": true,
+      "source_sha256": "af0375fe2087f3e0d88c4bf87a67cdb283e10ce62dbb555379c855450186998d",
+      "compiled_source_sha256": "af0375fe2087f3e0d88c4bf87a67cdb283e10ce62dbb555379c855450186998d",
+      "axioms": [
+        {
+          "declaration": "CollatzCycleWordEntropy.weighted_binomial_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCycleWordEntropy.cone_weight_bound",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "CollatzCycleWordEntropy.cycle_word_count_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "artifact_sha256": "233f556e7b82c2ea1fcec937a7baae11dcdf1519c982ddf5ae260c4ad7e4e262"
+    }
+  ],
+  "review_bindings": [
+    {
+      "review": "research/deep-closing-20261122/reviews/ACTUAL_ORBIT_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98",
+      "review_sha256": "78ec3fedbb7a7aa334708530e7e84062058bdd299bc6647f1342274756e0ed62"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/SIBLING_SMOOTHING_REVIEW.md",
+      "path": "research/deep-closing-20261122/SIBLING_SMOOTHING_ATTEMPT.md",
+      "sha256": "0ad191c13b008818558330bdcb93304f9c5c0b8874804baa85531d494e4cc1da",
+      "review_sha256": "93984b8be35d3ce69a76a5a30b0cc76520e84c9434d04320384f479adb49bb8c"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/ARITHMETIC_RIGIDITY_REVIEW.md",
+      "path": "research/deep-closing-20261122/ARITHMETIC_ATTACK.md",
+      "sha256": "aebf19e35c498d4d318af7c45bce49d457bac33ba149be9f81344707a68cc520",
+      "review_sha256": "3d2f2a329313cd8f5bc61d3d6954eb00e6eb137d37a0c4ad8c63f77f13c0831c"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/ORIGINAL_SOURCE_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "review_sha256": "f272549b2be1993de6f2746f42843eecfdf7ed06d21084b90abc8b3d66df6942"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/ORIGINAL_SOURCE_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/ACTUAL_ORBIT_ENTROPY.md",
+      "sha256": "958344f44fdd06acb771e8abd8af3b70f6c47c7069f035f8eb13f0209ca28d98",
+      "review_sha256": "f272549b2be1993de6f2746f42843eecfdf7ed06d21084b90abc8b3d66df6942"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/CYCLE_WORD_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/lean/CycleWordEntropy.lean",
+      "sha256": "af0375fe2087f3e0d88c4bf87a67cdb283e10ce62dbb555379c855450186998d",
+      "review_sha256": "1bbd3a49184be63dac083a7f486124a9399c621532b6146b9929b7770a58ef78"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/CYCLE_WORD_ENTROPY_REVIEW.md",
+      "path": "research/deep-closing-20261122/GRH_AFFINE_CYCLE_ATTEMPT.md",
+      "sha256": "935578dba46414a7ba981adbd470b008d2d7a77b6972acbace148592114ae410",
+      "review_sha256": "1bbd3a49184be63dac083a7f486124a9399c621532b6146b9929b7770a58ef78"
+    },
+    {
+      "review": "research/deep-closing-20261122/reviews/LEAN_FINITE_CORE_REVIEW.md",
+      "path": "research/deep-closing-20261122/lean/OriginalSourceEntropy.lean",
+      "sha256": "4b40c2c433751eeb72c3ceceb1c32df149d70dc7e99cf60ca7a066642be492ea",
+      "review_sha256": "7ea94987a1d0590d15bcc06808aa60c34142dfd1dc863930bf8b91dcb4c450b5"
+    }
+  ],
+  "source_ports": false,
+  "head": "81c4de6f77c7b9bf6c72cd1e137f28733ed6be39",
+  "tree": "ac34ecdc38c536569bffebf963be86a0b0817905",
+  "tracked_files": 653,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "review_scope": "Independent mathematical reviews at the exact bound source bytes; compiler executions are separate. Review paths preserve original author-workspace provenance inside the review text. No full Collatz or external analytic proof audit is implied.",
+  "lean_path": "/workspace/scratch/c6766c1207a3/collatz_work/deep_published_replay/lib:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_literature_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "new_theorem_audits": 24,
+  "checkout_clean_after": true,
+  "finished_utc": "2026-11-22T08:15:59Z"
+}

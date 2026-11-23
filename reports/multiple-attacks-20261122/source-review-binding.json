@@ -1,0 +1,123 @@
+{
+  "schema": "collatz-multiple-attacks-review-binding/v1",
+  "scope": "Independent within-session reconstruction of the new claims; imported source qualifications retained.",
+  "files": [
+    {
+      "path": "research/multiple-attacks-20261122/CONTACT_EXIT_ACCOUNTING.md",
+      "sha256": "1328e839d02ff758c0eba04a32d54865e8d2f32797ff392e0494ebcab7a54057"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/CONTACT_RETURN_FINITE_REFERENCE.md",
+      "sha256": "0794a5e718c87900f110d214e4273004d44e470554a934473a2581d07cf55736"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/CYCLE_ATTEMPT_LEDGER.md",
+      "sha256": "b6c62e789a6ec14c3ba555c27aee4e9e9cf0ade3ce87018a3ad06ee05463c3b9"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/DEPENDENCIES.json",
+      "sha256": "a8f9e601ea26988133763d8979bd8c91a6d0b62f5abe0c46b2fb5cd96aa88e8d"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/EXCURSION_RESOLVENT_INTERFACE.md",
+      "sha256": "603e0067e02a1092bb55217681f9b27263b8623f4b9bcfbc31db04a3deec2bcc"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/HARMONIC_KERNEL_FACTORIZATION.md",
+      "sha256": "013fb3c5a3a1c6fd2f18ad9d81c57e55ed04192b5ffa4c9861823a3379763b9d"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/RATIONAL_SHADOW_DISPATCH.md",
+      "sha256": "6124f2dc2796400a8a70b184a23cbde7ff141ce850aaca1d4c94ae847c22fce8"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/README.md",
+      "sha256": "3b946148b1f7bb58532dba29db3feafffcc817dec329854d726d5d155e222bda"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "1bd34ea818146e27395202ab3963a1b2456a5978edd582f99face4e3510fa441"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/STOPPED_MIXING_INTERFACE.md",
+      "sha256": "504c4ac79a5df90a1e5dd53fe90ad919dceed6a5f7a6cf56b396a7c21ab057b7"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/STRICT_GREEN_VOLTERRA.md",
+      "sha256": "4236d6206ccbedd6347259ef55f82bdb90f45338f48ab8189be78b9a848a5e90"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/certificates/rational_shadow_certificates.json",
+      "sha256": "37d36b987d710f254425f5a53566b11766bbefe09bb7303bc8be18f848d1e0a7"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/certificates/verify_rational_shadow.py",
+      "sha256": "ddf9dda01805496135733c236382e19deac3eee36f49d181c0281b61674f3d58"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/check.py",
+      "sha256": "036fec0892460824856bcf54fc96c93f8e1897a5cb1cbcba294d9556ea41305a"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/lean/ContactReturnContraction.lean",
+      "sha256": "03565f96229a00136ee914f9bf90f9cb52dfe2a2e0bc28abe4f3de0efaad7262"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/lean/OddDepthLadder.lean",
+      "sha256": "2271cd44e463e6dd282e204733ef91a08af1899aaf2a89844d49321e36c7517d"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/lean/RationalShadow.lean",
+      "sha256": "a8b69dbc0c1c3749568a77c3ea4934f7a6060cb2c468985f1994cffddb4eac69"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/lean/RationalSourceBlock.lean",
+      "sha256": "3f60b9ce66e8c1139560b3cac50a9e644e196aafcd6c57f972259393fbec8d73"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/lean/StrictGreenKernel.lean",
+      "sha256": "ffb974f28ed93f39a751a397687aa00e1931b4373640516009bf3ca6c46d9140"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/sources/contact-sources.json",
+      "sha256": "0498ddee3b01e24b7c2de732f42857a6e17de5f2c695f99b1fb1d337e022cc3b"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/sources/latest-deltas.json",
+      "sha256": "660866764bf2a0962d5863baf4c11803512239b9e7d744466d166a5d5a9a9818"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/sources/rational-shadow-sources.json",
+      "sha256": "422fdc3f312d2a9e607b9ce7aa64fa1a4c0a2b9b404f9b679605456863b4dfb7"
+    },
+    {
+      "path": "research/multiple-attacks-20261122/sources/strict-green-sources.json",
+      "sha256": "ceb00d3da4c1d6aaa6e5f56c15d6940b13559d754c7236bea3b73b540b397c83"
+    },
+    {
+      "path": "reports/multiple-attacks-20261122/reviews/CONTACT_RETURN_REVIEW.md",
+      "sha256": "1438526ec1528cf5dcab9046b77ebb5c62fe9f36be426b3dca8c479d26b60603"
+    },
+    {
+      "path": "reports/multiple-attacks-20261122/reviews/HARMONIC_KERNEL_REVIEW.md",
+      "sha256": "174a857fb84e3edc5006b11bec6ffd352100ab81356cebf6fe004701be3da069"
+    },
+    {
+      "path": "reports/multiple-attacks-20261122/reviews/RATIONAL_SHADOW_REVIEW.md",
+      "sha256": "2655c66a5daf6b88c0d69cefa668d3ffa20db0960ccd5d385389b32e4bc34379"
+    },
+    {
+      "path": "reports/multiple-attacks-20261122/reviews/STOPPED_MIXING_REVIEW.md",
+      "sha256": "ef51dc84513bafcbb3b4f176993aef3bb44c3ebff061eb0d2b5625d788d4b9f8"
+    },
+    {
+      "path": "reports/multiple-attacks-20261122/reviews/STRICT_GREEN_REVIEW.md",
+      "sha256": "4ef1c82a35ec9f5ce0d30df4a7eb0b3a7ba6e6def269f4f42deca0e6ea1a03e8"
+    }
+  ],
+  "integration_edits": [
+    "Contact-note evidence paths were editorially updated; the seven Lean statements are unchanged.",
+    "Strict-Green unweighted norm notation and sum rendering were repaired; formal scope now includes the checked unit-interval survival lemma and points to the independently reviewed harmonic-kernel factorization.",
+    "The stopped martingale was restricted to positive remaining density horizons before final review; the stopped comparison never uses the omitted endpoint."
+  ]
+}

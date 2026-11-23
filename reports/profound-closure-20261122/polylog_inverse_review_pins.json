@@ -1,0 +1,29 @@
+{
+  "date_utc": "2026-11-22",
+  "files": {
+    "reviewed_note": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_operator/POLYLOGARITHMIC_INVERSE_HORIZONS.md",
+      "sha256": "d4c5b9758f0e8ee1cb8f73d40f63ce8d5da642b48612b47842fd5b049bbd3824"
+    },
+    "ordinary_counting_and_cylinder_input": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/stepback_sources/pr180/research/lean-wide-pass-20261122/ENERGY_SYNTHESIS.md",
+      "sha256": "2d9e9b1c166b4010852b926de708c8f6c4afbc0b6a08d1a3731d6fba87e7a363"
+    },
+    "contact_input": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_sources/pr176/research/lean-global-resolvent-20261121/overview/parallel/OBSTACLE_ENTRANCE_RENEWAL.md",
+      "sha256": "3282a797044b54690e6ff40977aaa2e73c013bda17d66809a281089cd00ba78d"
+    },
+    "review": {
+      "path": "/workspace/scratch/c6766c1207a3/collatz_work/profound_symbolic/REVIEW_POLYLOG_INVERSE_FLOORS.md",
+      "sha256": "3d07f27773942da7da4d371ac6fa3af330450889426c43a6553c221ec1f589ce"
+    }
+  },
+  "primary_input": {
+    "url": "https://arxiv.org/html/1909.03562v7",
+    "version": "v7, 16 July 2026",
+    "web_reference": "turn945094467view0",
+    "checked": "Proposition 1.14, equations (1.26)-(1.27), and consistency (1.23); normalization to the average L1 norm of finite densities"
+  },
+  "finding": "No gap found in the finite telescope or its source-qualified corollaries. The final note includes the two requested domain clarifications. No infinite-horizon conclusion is inferred.",
+  "verification_scope": "Read-only mathematical review; no builds or prior computations rerun."
+}

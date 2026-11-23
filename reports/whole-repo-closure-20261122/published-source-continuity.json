@@ -1,0 +1,373 @@
+{
+  "schema": "collatz-published-source-continuity/v1",
+  "checked_utc": "2026-11-22T00:13:16Z",
+  "local_science_commit": "26264e07a61f0cc7b4fb0ed9d3dc85fd2be5d663",
+  "local_science_tree": "1d83b3ccc09957412767083ba4470013111a933f",
+  "scope": "Hash continuity only. The new 5-module replay and prior 23-module replay remain separate actual executions at their recorded commits.",
+  "checks": [
+    {
+      "packet": "new-continuation",
+      "actual_replay_head": "54af6f804ed432573762f1fe3d08e9909e1f5e47",
+      "input_count": 19,
+      "all_match": true,
+      "inputs": [
+        {
+          "path": "research/lean-band-coupling-20261121/check.py",
+          "recorded_sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785",
+          "current_sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/DEPENDENCIES.json",
+          "recorded_sha256": "1444cd9cbf287dfa7cb4e4b05b12674e569764883881da571b22c7b0e921a25f",
+          "current_sha256": "1444cd9cbf287dfa7cb4e4b05b12674e569764883881da571b22c7b0e921a25f",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/lean/CarryLanguage.lean",
+          "recorded_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+          "current_sha256": "c83659bf485972720924241a3003472ca6572e3b9061a84b0279955389a672f9",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessSynthesis.lean",
+          "recorded_sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+          "current_sha256": "8bee9e1caa0c914d77f0a37f86bbd6caa5dbd27be607c7d03783e7463219cadd",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/lean/vendor/WitnessGlobal.lean",
+          "recorded_sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+          "current_sha256": "37cc56085ad5d9e3a313af3f9e7dd3d041a697cda199db42eb452e321164a4e6",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+          "recorded_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+          "current_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/lean/FixedBlockDenominator.lean",
+          "recorded_sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf",
+          "current_sha256": "e890b5a12b106b95acaed66012f841f30703e5978a4643e847a16f24a751dedf",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/CARRY_LANGUAGE.md",
+          "recorded_sha256": "c1854938a1140990c3d1cf2fa4bbb020b76a446d4a52edf79d71c3f04b16fba9",
+          "current_sha256": "c1854938a1140990c3d1cf2fa4bbb020b76a446d4a52edf79d71c3f04b16fba9",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/EFFECTIVE_FIXED_BLOCK_CYCLES.md",
+          "recorded_sha256": "7c581f9a622bafd37bb0b67ab834376a65cde6e0150d8014a3c71afc77f71a63",
+          "current_sha256": "7c581f9a622bafd37bb0b67ab834376a65cde6e0150d8014a3c71afc77f71a63",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+          "recorded_sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b",
+          "current_sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/README.md",
+          "recorded_sha256": "6b9c63e9070bbc569369d98a27c620859ddb80de57c28211066a2821e3ec84cf",
+          "current_sha256": "6b9c63e9070bbc569369d98a27c620859ddb80de57c28211066a2821e3ec84cf",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/REPO_SYNTHESIS.md",
+          "recorded_sha256": "f337059152fcc7ec78ad818ab9318efd7d6dd4bfeb2c5f14e3f3e8cb5e85a6d0",
+          "current_sha256": "f337059152fcc7ec78ad818ab9318efd7d6dd4bfeb2c5f14e3f3e8cb5e85a6d0",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/SOURCES.json",
+          "recorded_sha256": "daaadeaf1bdd27783a069d0c65664ba4c10bd06463104f880c408519d3c43224",
+          "current_sha256": "daaadeaf1bdd27783a069d0c65664ba4c10bd06463104f880c408519d3c43224",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/SOURCE_SNAPSHOT.json",
+          "recorded_sha256": "d43d4fc96c576c0aeb1b74f363c82e34a92d8c4cbb5d3038dce7a9e56bfd95e1",
+          "current_sha256": "d43d4fc96c576c0aeb1b74f363c82e34a92d8c4cbb5d3038dce7a9e56bfd95e1",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/certificates/block_schema_certificates.json",
+          "recorded_sha256": "cb7122b2e0f4bd75ef9aa7501de6272564e879d017492cbb4a5e41dd6b05c8f7",
+          "current_sha256": "cb7122b2e0f4bd75ef9aa7501de6272564e879d017492cbb4a5e41dd6b05c8f7",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/certificates/block_schema_certify.py",
+          "recorded_sha256": "f896e6a9e69e9e08edf97ee5bfe1ce04486050c16241ba8fe1f031f720aa010f",
+          "current_sha256": "f896e6a9e69e9e08edf97ee5bfe1ce04486050c16241ba8fe1f031f720aa010f",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/certificates/block_schema_verify.py",
+          "recorded_sha256": "963e76fedde87eb0ffd69efbb9dfee51594ce750caf25efcb4f7425e4a76a73f",
+          "current_sha256": "963e76fedde87eb0ffd69efbb9dfee51594ce750caf25efcb4f7425e4a76a73f",
+          "match": true
+        },
+        {
+          "path": "research/whole-repo-closure-20261122/check.py",
+          "recorded_sha256": "3a2d482f6c430c6bf8c8a06fe640c5c7fb815117ed773b09c8c0128db32d8046",
+          "current_sha256": "3a2d482f6c430c6bf8c8a06fe640c5c7fb815117ed773b09c8c0128db32d8046",
+          "match": true
+        },
+        {
+          "path": "tools/validate.py",
+          "recorded_sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d",
+          "current_sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d",
+          "match": true
+        }
+      ]
+    },
+    {
+      "packet": "preceding-packet",
+      "actual_replay_head": "aba029b5c146be907d89c2eba4ebbae7bfe7d5e9",
+      "input_count": 39,
+      "all_match": true,
+      "inputs": [
+        {
+          "path": "research/literature-orbit-closure-20261121/source-pins.json",
+          "recorded_sha256": "b8a3261743321e092247c309240a8625eb86420a1855f34a9896575894b62dbc",
+          "current_sha256": "b8a3261743321e092247c309240a8625eb86420a1855f34a9896575894b62dbc",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/source-pins.json",
+          "recorded_sha256": "48991c4f41a4c806433af94a2c0989e6acd5d471f8d047c2d7272baca4e2a45c",
+          "current_sha256": "48991c4f41a4c806433af94a2c0989e6acd5d471f8d047c2d7272baca4e2a45c",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/check.py",
+          "recorded_sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785",
+          "current_sha256": "2d0a4df167bd6f5c920283584ae9c12370ea3621bc75fcfcf4bebbf5ebcbb785",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/ShellCover.lean",
+          "recorded_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+          "current_sha256": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/ForwardSection.lean",
+          "recorded_sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+          "current_sha256": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/SectionDynamics.lean",
+          "recorded_sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+          "current_sha256": "94c05e9cfc738b319acb52e9c6f07b0344dc87cb31ed4ed49cb2540fde51c9ac",
+          "match": true
+        },
+        {
+          "path": "research/lean-band-coupling-20261121/lean/OffsetDescent.lean",
+          "recorded_sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+          "current_sha256": "6524d349cdb69cd86c3f8cbf54c6fb94b10c70f0f3e040d816e5fc6a5f00c9de",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/HarmonicTransport.lean",
+          "recorded_sha256": "5173ef8676b4b8de03ccae9f1e99bb3db04e52d146ba721034b325f6fd4bc1f7",
+          "current_sha256": "5173ef8676b4b8de03ccae9f1e99bb3db04e52d146ba721034b325f6fd4bc1f7",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/ClockAbsorption.lean",
+          "recorded_sha256": "6da228e0571bfb617a1f77476201a6f76a611677b5b9f997fc6a0bb06d4604ea",
+          "current_sha256": "6da228e0571bfb617a1f77476201a6f76a611677b5b9f997fc6a0bb06d4604ea",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/BandAbsorption.lean",
+          "recorded_sha256": "df279eb937e14f56277c0ac73e8861ceabfe45d8e126ee2669962f00283dbb43",
+          "current_sha256": "df279eb937e14f56277c0ac73e8861ceabfe45d8e126ee2669962f00283dbb43",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/FiniteResolvent.lean",
+          "recorded_sha256": "8a358cbcf24c5278932db82a81dfdc9c8ee9de4fe8118dba1cd1ced61dc78805",
+          "current_sha256": "8a358cbcf24c5278932db82a81dfdc9c8ee9de4fe8118dba1cd1ced61dc78805",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/ExplicitSeed.lean",
+          "recorded_sha256": "c018a47358194358da3fcb4eedc5e5192a803cdbbc37b56965af769fc665d8b4",
+          "current_sha256": "c018a47358194358da3fcb4eedc5e5192a803cdbbc37b56965af769fc665d8b4",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/ActualSurvivorMass.lean",
+          "recorded_sha256": "72d0015fc8ba05adaa5291f1f5f19a3766c688f985e35016e4403e9820065b98",
+          "current_sha256": "72d0015fc8ba05adaa5291f1f5f19a3766c688f985e35016e4403e9820065b98",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/ExplicitClosure.lean",
+          "recorded_sha256": "a5aba915c11ae95e7640970ec1f924a708ec873fd57b69ce9444cad67ac4dbed",
+          "current_sha256": "a5aba915c11ae95e7640970ec1f924a708ec873fd57b69ce9444cad67ac4dbed",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/PullbackArithmetic.lean",
+          "recorded_sha256": "8dd33ed63b781eda467557a5cee78551b70721498351a70749dbe24718a9cb95",
+          "current_sha256": "8dd33ed63b781eda467557a5cee78551b70721498351a70749dbe24718a9cb95",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/WildLift.lean",
+          "recorded_sha256": "b0d29de244c5c870243b74cbda816e786d22814862aa0fb2a5bc6011c493bd4a",
+          "current_sha256": "b0d29de244c5c870243b74cbda816e786d22814862aa0fb2a5bc6011c493bd4a",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/HalfSourceMerge.lean",
+          "recorded_sha256": "a97887077575d43a9ab27739c27a693d352334ea20dce87c2ecbe72b6f7b0fd5",
+          "current_sha256": "a97887077575d43a9ab27739c27a693d352334ea20dce87c2ecbe72b6f7b0fd5",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/LongDiamondErasure.lean",
+          "recorded_sha256": "3cc8307078cccf47996298b1ea491722784b0dc50700f676d7f0a5b7260c3726",
+          "current_sha256": "3cc8307078cccf47996298b1ea491722784b0dc50700f676d7f0a5b7260c3726",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/MarkedErasure.lean",
+          "recorded_sha256": "cf10a107ff5829d08f0ffc3c7b7a67ccd27e8af8a88501ef80474c408ee6493a",
+          "current_sha256": "cf10a107ff5829d08f0ffc3c7b7a67ccd27e8af8a88501ef80474c408ee6493a",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/NewBandFamily.lean",
+          "recorded_sha256": "60409cdc2bd9738affe2cddb389df24c1b4540165085ea14de15ff8b6d693369",
+          "current_sha256": "60409cdc2bd9738affe2cddb389df24c1b4540165085ea14de15ff8b6d693369",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/RayCertificates.lean",
+          "recorded_sha256": "6a484157f75d382354d5d7fdd9fdf387557dde291d5440fa094c7917c2ea6055",
+          "current_sha256": "6a484157f75d382354d5d7fdd9fdf387557dde291d5440fa094c7917c2ea6055",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/AL27Certificates.lean",
+          "recorded_sha256": "cedf0a105b8b80623fb2c06dab931e080cd0fff606f1cab38ce2b7c87c52e037",
+          "current_sha256": "cedf0a105b8b80623fb2c06dab931e080cd0fff606f1cab38ce2b7c87c52e037",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/ResidualPrefixErasure.lean",
+          "recorded_sha256": "b4d8ae889c458ee26c3ea8d3c362290c465a725f024d53e1f3978290c6661a9c",
+          "current_sha256": "b4d8ae889c458ee26c3ea8d3c362290c465a725f024d53e1f3978290c6661a9c",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/ResidualPhaseSelector.lean",
+          "recorded_sha256": "46fd0b12977611a5a39b0bd400602ca41f7b1479e01b6dee5c004f86c134b930",
+          "current_sha256": "46fd0b12977611a5a39b0bd400602ca41f7b1479e01b6dee5c004f86c134b930",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/AL27HalfSelector.lean",
+          "recorded_sha256": "75f0ca9b1b9c2b525a78323f4edb2efa57c87e4e586e07a60049dc622ee83bde",
+          "current_sha256": "75f0ca9b1b9c2b525a78323f4edb2efa57c87e4e586e07a60049dc622ee83bde",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/lean/Audit.lean",
+          "recorded_sha256": "de21af0b57dc2e4337cbd2e1646c9c279dae75758d3f00cd493f09c7b7905b69",
+          "current_sha256": "de21af0b57dc2e4337cbd2e1646c9c279dae75758d3f00cd493f09c7b7905b69",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/al27_certificate.json",
+          "recorded_sha256": "76626a0a84195913a90d193887f931cffee1558990b76347f540dad9d390298a",
+          "current_sha256": "76626a0a84195913a90d193887f931cffee1558990b76347f540dad9d390298a",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/guided_cover.py",
+          "recorded_sha256": "821a01986b9ccfc12cfb2e38afc6628e3f6462db141b088f8d20bebee5d3ad03",
+          "current_sha256": "821a01986b9ccfc12cfb2e38afc6628e3f6462db141b088f8d20bebee5d3ad03",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/package_al27.py",
+          "recorded_sha256": "6dbadc5d4b5d782ed8311bc66044a897a87945932e62c9667b580669952177e5",
+          "current_sha256": "6dbadc5d4b5d782ed8311bc66044a897a87945932e62c9667b580669952177e5",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/verify_al27.py",
+          "recorded_sha256": "a40c9e14fa842dfe681f831c5f3d9c44f2d9cee0a286912caa87d84729a26a91",
+          "current_sha256": "a40c9e14fa842dfe681f831c5f3d9c44f2d9cee0a286912caa87d84729a26a91",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/generate_al27_lean.py",
+          "recorded_sha256": "c57c02c78710327bd094cdda55149c6030343eea875404f3f4245c74e1aba337",
+          "current_sha256": "c57c02c78710327bd094cdda55149c6030343eea875404f3f4245c74e1aba337",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/residual_phase_analysis.py",
+          "recorded_sha256": "70711d57cd3c955ba2488f1280102a9d39423fc2d0e77cc5f03376817b092323",
+          "current_sha256": "70711d57cd3c955ba2488f1280102a9d39423fc2d0e77cc5f03376817b092323",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/half_selector_overlap.py",
+          "recorded_sha256": "0f1c812340116a69f20aaf244896c9ae79d1b17204e4b31c00166fb401507663",
+          "current_sha256": "0f1c812340116a69f20aaf244896c9ae79d1b17204e4b31c00166fb401507663",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/affine_language_checkpoint.py",
+          "recorded_sha256": "0ba9736988d53c62314d385a6162ebc0c3cc673b151a46aaf831e252c1a9c749",
+          "current_sha256": "0ba9736988d53c62314d385a6162ebc0c3cc673b151a46aaf831e252c1a9c749",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/prefix_language_search.py",
+          "recorded_sha256": "9e78ae4833395949f397d14e1a317cca742c2e86c9db6c6ee9661ad9cf78a51e",
+          "current_sha256": "9e78ae4833395949f397d14e1a317cca742c2e86c9db6c6ee9661ad9cf78a51e",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/certificates/prefix_language_rules.json",
+          "recorded_sha256": "82a31f32edb7d27fdb4d5f0088e104979be18087f1005108ef2b43a582e84944",
+          "current_sha256": "82a31f32edb7d27fdb4d5f0088e104979be18087f1005108ef2b43a582e84944",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/FIXED_AFFINE_MARKED_COVER_LIMIT.md",
+          "recorded_sha256": "b950bd5e74d0ac0f4beeac7427bbb448c6731178391730b74dea1d6ffbecba54",
+          "current_sha256": "b950bd5e74d0ac0f4beeac7427bbb448c6731178391730b74dea1d6ffbecba54",
+          "match": true
+        },
+        {
+          "path": "research/literature-orbit-closure-20261121/SIGNED_SEED_AFFINE_TEMPLATE.md",
+          "recorded_sha256": "9e56e289e88f9871a01158d2231f26760d0c3002b7fd5f632cb2407bbcc2e9ef",
+          "current_sha256": "9e56e289e88f9871a01158d2231f26760d0c3002b7fd5f632cb2407bbcc2e9ef",
+          "match": true
+        },
+        {
+          "path": "tools/validate.py",
+          "recorded_sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d",
+          "current_sha256": "9aff18a0cd197553be872d025483613dbd7603e625dec8e6359cd16c4d479b9d",
+          "match": true
+        }
+      ]
+    }
+  ]
+}

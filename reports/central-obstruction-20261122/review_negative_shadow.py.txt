@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+"""Independent arithmetic review; no imports of the author's checker."""
+from fractions import Fraction
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import time
+
+HERE = Path(__file__).resolve().parent
+AUTHOR = HERE.parent / "central_dispatch"
+
+
+def T(x):
+    assert x > 0
+    return (3*x + 1)//2 if x % 2 else x//2
+
+
+def v2(x):
+    assert x > 0
+    return (x & -x).bit_length() - 1
+
+
+def trace(x, word):
+    states = [x]
+    for a in word:
+        assert x > 0 and x % 2
+        z = 3*x + 1
+        assert v2(z) == a
+        x = z // (2**a)
+        states.append(x)
+    return states
+
+
+def target_window(b, H):
+    assert (486*b + 102) % 2**H == 0
+    x = n = 16384*b + 3431
+    for j in range(1, 14+H):
+        x = T(x)
+        assert x > n, (b, H, j)
+    return x
+
+
+entry = [(16384,3431),(24576,5147),(36864,7721),(55296,11582),
+         (27648,5791),(41472,8687),(62208,13031),(93312,19547),
+         (139968,29321),(209952,43982),(104976,21991),
+         (157464,32987),(236196,49481),(354294,74222)]
+for b in range(512):
+    n = 16384*b + 3431
+    x = n
+    for j, (A, B) in enumerate(entry):
+        assert x == A*b+B
+        if j:
+            assert x > n
+        x = T(x)
+    assert trace(2048*b+429,[3,2,2,1,2])[-1] == 486*b+103
+    for H in range(v2(486*b+102)+1):
+        target_window(b,H)
+
+cycle = []
+c, odds = 136, 0
+for j in range(551):
+    assert c <= 136 and 2**j <= 8*3**odds
+    if j < 11:
+        cycle.append(c)
+    odds += c % 2
+    c = (3*c-1)//2 if c%2 else c//2
+assert cycle == [136,68,34,17,25,37,55,82,41,61,91]
+
+# Independent small-modulus verification of the all-m calibration lemma.
+assert ((4**27 - 1)//27) % 243 == 48
+for m in range(3,11):
+    for s in range(1,81):
+        quotient = (pow(4,3**m*s,3**(m+5))-1)//3**m
+        assert quotient % 243 == 48*s % 243
+
+for k in range(2,83):
+    # Includes k>24, so subtraction here is integer subtraction before mod27.
+    s = 34*pow(4,(24-k)%27,81)%81
+    assert 0<s<81 and s%3
+    assert pow(4,k+3,81)*s%81 == 34
+
+family = []
+for k in range(2,9):
+    s = 34*pow(4,(24-k)%27,81)%81
+    assert 0<s<81 and s%3
+    assert pow(4,k+3,81)*s%81 == 34
+    a = 2+2*3**(k+1)*s
+    u = (2**a-1)//3
+    assert 3*u+1 == 2**a and u%2
+    tau = (2**a-4)//3**(k+1)
+    assert tau*3**(k+1) == 2**a-4
+    assert v2(tau) == 2
+    r = 1+4**k*tau
+    assert r >= 103 and r%486 == 103
+    assert v2(r-1) == 2*k+2
+    b = (r-103)//486
+    q, H = 2048*b+429, 2*k+2
+    actual = trace(q,[3,2,2,1,2]+[2]*k+[a])
+    assert actual[5] == r and actual[-2] == u and actual[-1] == 1
+    target_window(b,H)
+    family.append({"k":k,"s":s,"a":a,"H":H,"q_bits":q.bit_length()})
+
+hard = [3,2,2,1,2,2,2,2,2,2,1,3,2,3,1,4,2,2,2,2,2,2,4,2,
+        1,2,2,1,2,2,4,3,2,1,2,3,1,2,1,4,1,3,1,2,3,4]
+assert trace(58849709,hard)[-1] == 1 and max(hard) == 4 and sum(hard) == 99
+assert 486*28735+102 == 2**11*6819
+endpoint = target_window(28735,11)
+assert endpoint == 10871688401
+first_descent = None
+x = n = 470797671
+for clock in range(1,10001):
+    x = T(x)
+    if x<n:
+        first_descent = {"clock":clock,"value":x}
+        break
+assert first_descent is not None and first_descent["clock"]>24
+
+# Compile only the new module, against the already replayed dependencies.
+receipt = json.loads((AUTHOR/"lean-receipt.json").read_text())
+lib = HERE/"review_lib"
+lib.mkdir(exist_ok=True)
+cmd = list(receipt["command"])
+cmd[cmd.index("-o")+1] = str(lib/"HeadThreeNegativeCycle.olean")
+env = os.environ.copy()
+env["LEAN_PATH"] = ":".join([str(lib)]+receipt["lean_path"][1:])
+t0 = time.monotonic()
+proc = subprocess.run(cmd,cwd=AUTHOR,env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
+(HERE/"negative-shadow-review-lean.log").write_text(proc.stdout)
+assert proc.returncode == 0, proc.stdout
+assert "sorryAx" not in proc.stdout
+assert proc.stdout.count("CollatzShell.HeadThreeNegativeCycle.") == 10
+result = {
+    "status":"PASS",
+    "independently_checked_small_b":512,
+    "negative_cycle_prefix_checks":551,
+    "modular_calibration_checks":640,
+    "wraparound_calibration_checks":81,
+    "unbounded_family_instances":family,
+    "cap_four":{"q":58849709,"target":470797671,"source_odd_steps":len(hard),
+                "source_shortcut_clock":99,"no_descent_through":24,
+                "target_at_24":endpoint,"observed_first_descent":first_descent},
+    "lean":{"exit_code":proc.returncode,"seconds":time.monotonic()-t0,
+            "audit_count":10,"source_sha256":hashlib.sha256((AUTHOR/"HeadThreeNegativeCycle.lean").read_bytes()).hexdigest()},
+    "scope":"New obstruction only. Arbitrarily long completed sources use a high terminal gap; the alphabet-four claim is one concrete source."
+}
+(HERE/"negative-shadow-independent-review.json").write_text(json.dumps(result,indent=2)+"\n")
+print(json.dumps(result,indent=2))

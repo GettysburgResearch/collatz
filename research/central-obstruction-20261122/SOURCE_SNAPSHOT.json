@@ -1,0 +1,1125 @@
+{
+  "captured_utc": "2026-11-22T06:48:29Z",
+  "repository": "GettysburgResearch/collatz",
+  "baseline_pr": 185,
+  "baseline_head": "53f01ca5b443ef57ef2160b4996dbb2cc87f7395",
+  "main_head": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "inventory_scope": "50 most recently updated pull requests; not an independent review of every body",
+  "prs": [
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "head": "research/deep-machinery-guide-20261122",
+      "head_sha": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: contact contraction, rational-shadow descent, and harmonic factorization",
+      "head": "research/literature-orbit-closure-20261121",
+      "head_sha": "53f01ca5b443ef57ef2160b4996dbb2cc87f7395",
+      "base": "research/lean-band-coupling-20261121",
+      "base_sha": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "updated_at": "2026-11-22T06:36:35Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "head": "research/lean-band-coupling-20261121",
+      "head_sha": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T15:45:03Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "head": "research/band-completion-20261121",
+      "head_sha": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "number": 182,
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+      "head": "research/dyadic-band-descent-20261121",
+      "head_sha": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "base": "research/lean-universal-basin-20261121",
+      "base_sha": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "updated_at": "2026-11-22T05:30:22Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "head": "research/lean-global-target-20261121",
+      "head_sha": "5f03d809b4495802971211ef13ff905f741d700d",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T08:47:54Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: source induction, intrinsic horizons, and contact layers",
+      "head": "research/lean-ordinary-closure-20261121",
+      "head_sha": "ab3973099f0d285bbe88972382ad599bb02cd460",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T06:32:21Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "head": "research/lean-descent-20261121",
+      "head_sha": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T08:41:05Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179"
+    },
+    {
+      "number": 178,
+      "title": "Lean: independent cycle exponents, escape moments, and bounded tail selectors",
+      "head": "research/lean-global-20261121",
+      "head_sha": "f464ddf2af6e340054673fdd6f5b28aba0310c10",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T05:43:55Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "number": 177,
+      "title": "Lean: signed source progress and global target floors",
+      "head": "research/lean-exact-witness-global-20261121",
+      "head_sha": "8ef9bf0d828fc533721dee1f90c5d78fac80ad39",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T06:30:28Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "number": 176,
+      "title": "Lean: head-three mergers, all-depth crossings, and critical endpoint window",
+      "head": "research/lean-global-resolvent-20261121",
+      "head_sha": "31c4a880ea4acf6eec4783e68bfc75e2cf8e7fe6",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T06:18:52Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: Lean carry returns, merger rigidity, and sharp Green boundary energy",
+      "head": "research/lean-global-closure-20261121",
+      "head_sha": "728389c2ad4796853948250a90188b0697483d92",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T06:14:49Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack \u2014 Collatz from one \u03c8-closure lemma (open)",
+      "head": "claude/collatz-prs-discussion-qq2bvk",
+      "head_sha": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T09:39:39Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "head": "research/lean-universal-basin-20261121",
+      "head_sha": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T14:34:32Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "head": "research/global-certificate-closure-20261121",
+      "head_sha": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:57:31Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/172"
+    },
+    {
+      "number": 171,
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments",
+      "head": "research/adaptive-closure-20261121",
+      "head_sha": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:37:41Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/171"
+    },
+    {
+      "number": 170,
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds",
+      "head": "research/global-forcing-20261121",
+      "head_sha": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:31:14Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/170"
+    },
+    {
+      "number": 169,
+      "title": "research: extend certificate descents and localize all-time arithmetic moments",
+      "head": "research/certificate-renewal-20261121",
+      "head_sha": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:18:58Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/169"
+    },
+    {
+      "number": 168,
+      "title": "Research: balanced return languages, witness descent, and stationary regularity",
+      "head": "research/closure-frontier-20261121",
+      "head_sha": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:12:52Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/168"
+    },
+    {
+      "number": 167,
+      "title": "research: fixed-defect returns, stronger excursion bounds, and five closure interfaces",
+      "head": "research/least-failure-closure-20261121",
+      "head_sha": "e83cc8b35ad614c616df7c00318cc9645a174c34",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:01:36Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/167"
+    },
+    {
+      "number": 166,
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "head": "research/grh-certificate-closure-20261120",
+      "head_sha": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T22:17:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/166"
+    },
+    {
+      "number": 165,
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "head": "research/certificate-transfer-intake-20261120",
+      "head_sha": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T22:13:11Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/165"
+    },
+    {
+      "number": 164,
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds",
+      "head": "research/witness-closure-512-2026-11-20",
+      "head_sha": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:39:04Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/164"
+    },
+    {
+      "number": 163,
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "head": "research/deep-reverse-closure-20261120",
+      "head_sha": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T21:53:00Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/163"
+    },
+    {
+      "number": 162,
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "head": "research/creative-closure-20261120",
+      "head_sha": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:56:47Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/162"
+    },
+    {
+      "number": 161,
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds",
+      "head": "research/source-rigidity-20261120",
+      "head_sha": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:41:11Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/161"
+    },
+    {
+      "number": 160,
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "head": "research/closure-attacks-20261120",
+      "head_sha": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:33:03Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/160"
+    },
+    {
+      "number": 159,
+      "title": "Research: prime-support peak bounds and exact directed circulation",
+      "head": "research/allhands-global-closure-20261120",
+      "head_sha": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:29:02Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/159"
+    },
+    {
+      "number": 158,
+      "title": "research: certify guarded expanding returns and exact closure boundaries",
+      "head": "research/ordinary-basin-closure-20261120",
+      "head_sha": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:27:56Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/158"
+    },
+    {
+      "number": 157,
+      "title": "research: forward-five basin criterion and positive occupation bounds",
+      "head": "research/global-closure-20261120",
+      "head_sha": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:01:36Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/157"
+    },
+    {
+      "number": 156,
+      "title": "Investigate Collatz closure with ordinary spectrum, arithmetic, and merger guards",
+      "head": "research/global-rigidity-20261120",
+      "head_sha": "c5cb84502c7289705d59a8781a65fd845b9b6b14",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T19:41:09Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/156"
+    },
+    {
+      "number": 155,
+      "title": "research: ordinary Dirichlet coercivity and three-package Gemini audit",
+      "head": "research/gemini-dirichlet-global-20261120",
+      "head_sha": "92f499b9d340d1ff8cc643c3eef3477d61b477c1",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T19:32:28Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/155"
+    },
+    {
+      "number": 154,
+      "title": "Research: prime-height dispersion and restricted five-ray rigidity",
+      "head": "research/structural-reset-20261120",
+      "head_sha": "fe40bb6f88e8094290ef01207d9bf7c4798d35d0",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T19:26:04Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/154"
+    },
+    {
+      "number": 153,
+      "title": "Research: binary-run cores, adaptive mergers, and recursive orbit bounds",
+      "head": "research/fixed-integer-descent-20261120",
+      "head_sha": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T18:43:31Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/153"
+    },
+    {
+      "number": 152,
+      "title": "Audit Gemini routes: actual transport domains, spectral boundary, and radical Pad\u00e9 classification",
+      "head": "research/gemini-global-closure-20261120",
+      "head_sha": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T18:55:04Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/152"
+    },
+    {
+      "number": 151,
+      "title": "Construct recursive ordinary merger certificates and reduce signed targets",
+      "head": "research/ordinary-merger-selection-20261120",
+      "head_sha": "02a9f6ad17e5f1904cb4ff806fd0217d199e8437",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T18:41:36Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/151"
+    },
+    {
+      "number": 150,
+      "title": "Bound sparse Collatz returns and classify local affine merger membership",
+      "head": "research/pointwise-closure-20261120",
+      "head_sha": "ef4022fa5ae43dd943ecca0b7c84d69af624c5c9",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T19:35:18Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/150"
+    },
+    {
+      "number": 149,
+      "title": "Extend merger-clock analysis and audit forward Collatz closure bounds",
+      "head": "research/forward-inverse-defect-20261120",
+      "head_sha": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T17:41:36Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/149"
+    },
+    {
+      "number": 148,
+      "title": "Research: ordinary merger guards, inverse certificates, and cycle refinements",
+      "head": "research/ordinary-bridge-20261120",
+      "head_sha": "55d8968d2ecbc23a91c9c4733929f34be9bf0d28",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T18:48:11Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/148"
+    },
+    {
+      "number": 147,
+      "title": "Certify a 13/6 inverse compiler and derive robust finite-credit completeness",
+      "head": "research/robust-inverse-credit-20261120",
+      "head_sha": "b74b2d466f58844a742a6ed6bcdf06844269f361",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T16:52:49Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/147"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "head": "research/upper-bit-merger-cost-20261120",
+      "head_sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146"
+    },
+    {
+      "number": 145,
+      "title": "Collatz investigation: a finite test for both obstructions, null residue support, and exact depth 30",
+      "head": "research/six-branch-prefix-obstruction-20261118",
+      "head_sha": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-18T20:22:20Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/145"
+    },
+    {
+      "number": 144,
+      "title": "research: direct pressure dissipation and collision-free moment coercivity",
+      "head": "research/pressure-diagonal-coercivity-20261031",
+      "head_sha": "df756794e1d8de5cabff148ef433df505e3b68b4",
+      "base": "research/pressure-decay-20261031",
+      "base_sha": "41a408e5e617fb4e65142485f6f3ff3e6ef6c408",
+      "updated_at": "2026-10-31T20:37:33Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/144"
+    },
+    {
+      "number": 143,
+      "title": "research: finite-clock pressure energy and a quadratic-moment route to decay",
+      "head": "research/pressure-decay-20261031",
+      "head_sha": "41a408e5e617fb4e65142485f6f3ff3e6ef6c408",
+      "base": "research/novel-swarm-20261030",
+      "base_sha": "fe2247fcd7730c15430941a7b6e011d006d41d84",
+      "updated_at": "2026-10-31T20:38:06Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/143"
+    },
+    {
+      "number": 142,
+      "title": "Research swarm: positive inverse-density bounds, contact fans, and beeping clocks",
+      "head": "research/beeping-density-swarm-20261030",
+      "head_sha": "b21f94f5772df5cfcaa5f5afd073d5889e75d294",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-10-31T19:36:49Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/142"
+    },
+    {
+      "number": 141,
+      "title": "AYH orders: finite Hamming cores and source-persistent sparse descent",
+      "head": "research/ay-swarm-20261030",
+      "head_sha": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-10-31T19:30:48Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/141"
+    },
+    {
+      "number": 140,
+      "title": "research: polynomial invariant rigidity, finite defects, and algebraic certificates",
+      "head": "research/novel-swarm-20261030",
+      "head_sha": "1092737688b0bbc159820d7095722ad680f1fa1d",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-10-31T20:41:55Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/140"
+    },
+    {
+      "number": 139,
+      "title": "research: fixed-source ternary splices and a common H restart budget",
+      "head": "research/source-budget-20261018",
+      "head_sha": "c0e51c5bd90eb16fdf1caa294b6b74e972c58d1a",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-10-17T23:14:22Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/139"
+    },
+    {
+      "number": 138,
+      "title": "research: anchored capacities, exact dyadic completion, and odd-edge repair",
+      "head": "research/anchored-cuts-constructive-20260925",
+      "head_sha": "a3f006a1281939156b2068c5be5248bcf3c61dd1",
+      "base": "research/component-rigidity-20260925",
+      "base_sha": "2911b53930cbd31f623d3e0586ca3613854f0143",
+      "updated_at": "2026-09-25T08:31:41Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/138"
+    },
+    {
+      "number": 137,
+      "title": "research: arithmetic component rigidity and residue-locked inverse geometry",
+      "head": "research/component-rigidity-20260925",
+      "head_sha": "2911b53930cbd31f623d3e0586ca3613854f0143",
+      "base": "main",
+      "base_sha": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-09-25T04:48:57Z",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/137"
+    }
+  ],
+  "new_upstream_deltas": [
+    {
+      "pr": 175,
+      "old_head": "54b5a324f55d97925ecb8100aa15ce7b08a12093",
+      "head": "728389c2ad4796853948250a90188b0697483d92",
+      "files": [
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/CHANNEL_TRACE_INDEPENDENT_REVIEW.md",
+          "sha256": "b876016850e43d8e66334027cbc896015ba1e009d1e2433c18852a520d1ff02e",
+          "size": 3889
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/DIRICHLET_BOUNDARY_INTEGRATION_REVIEW.md",
+          "sha256": "b307d8e56a83b989f68510048e119a797f7bf9b409c146fb7318e04866b0cde1",
+          "size": 5747
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/DIRICHLET_BOUNDARY_REVIEW.md",
+          "sha256": "02397b95edd7c48aa858ae71130a48fd62688e1f28a5f2ee4029eaa9bd0e5f0d",
+          "size": 10343
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/FIVE_EDGE_TRANSPORT_INTEGRATION_REVIEW.md",
+          "sha256": "5b81b9df4176b460c927d3bdbe5840e2e8c1709789e204b520bb6b71a7f876e4",
+          "size": 6188
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/FIVE_EDGE_TRANSPORT_REVIEW.md",
+          "sha256": "da2ae7304a0311ea96f80201ae6a4a844241fce144b8a861c4ca2226eb0d9a82",
+          "size": 6974
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/FOLNER_CHANNEL_REVIEW.md",
+          "sha256": "b376f81b9ae8f7d1727772f6513e88addd34d303aab73c356fe761fd3b083b59",
+          "size": 4409
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/GREEN_HARMONIC_MOMENT_REVIEW.md",
+          "sha256": "abdd35a55890b5d3ad35fba607ee056c5d05679946f0b06476c8f9741259e3f4",
+          "size": 7886
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/ODD_RETURN_CHANNEL_REVIEW.md",
+          "sha256": "b094c420ffbefb6934b6cb877d1a6ab679f5455715bb8a50c082e5143fba8759",
+          "size": 2734
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/ODD_RETURN_CLOCK_REPLAY.json",
+          "sha256": "4667b53c26bc3ba4277efeeb2f0872de497eb2504f55d1ae8e69bc943c26290b",
+          "size": 9762
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/PUBLICATION_NORMALIZATION.json",
+          "sha256": "f647d40f84eecb8f4193fb3b491bd17a280a6467e121b88796a1602d087dfcd0",
+          "size": 862
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/SIGNED_CARRY_RETURNS_REVIEW.md",
+          "sha256": "15a3f4e76591374c41f2608802c25a49469521b0b77231a7cfc4821e3e98abbb",
+          "size": 2810
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/VALIDATION.md",
+          "sha256": "cb3726fa4f739e6f6d99296f4841c2d3fde412fc67f2d3f76083c7a5c7e7dbd2",
+          "size": 5801
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/axiom-audit.json",
+          "sha256": "2954873dd3c0c50db866a1dfc0a7c53858db13ed52841c0a4056949d39949f09",
+          "size": 45007
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/repository.json",
+          "sha256": "f257675bbd6a097b999a8960e52b1c1df333771615cd26eb5f0b7c91dc0caa17",
+          "size": 3260
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/signed-carry-returns-sources.json",
+          "sha256": "1cbadf83ddbb92e0d1191002a96db04e51b00e8a03a452a80303f14f483b8e8c",
+          "size": 1175
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/source-build.json",
+          "sha256": "2fbd2ac180812be0393f04a0e358804eb9a1bba045b9f1a0fc28509ddd574380",
+          "size": 36247
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/late/source-snapshot.json",
+          "sha256": "c28abd0b99133cd78e09e2aa20e9685ec3a924f6519b0ff281593dd4713ec5d3",
+          "size": 7007
+        },
+        {
+          "path": "research/lean-global-closure-20261121/CollatzGlobalClosure/OddReturnClock.lean",
+          "sha256": "f532f89fb9042e7073e992bf26e0049f28829171075e23e87edfa50fd66439ac",
+          "size": 4369
+        },
+        {
+          "path": "research/lean-global-closure-20261121/CollatzGlobalClosure/SignedCarryReturns.lean",
+          "sha256": "0af50217b1da102d8fdaf7f9d61fedcdaad75cbf059452d02dcd8b82b59fe5d7",
+          "size": 10838
+        },
+        {
+          "path": "research/lean-global-closure-20261121/CollatzGlobalClosureCore.lean",
+          "sha256": "25836b437c43af93179b7a2a64f0f91b81881ce3571c194e7654da3ebaaaef21",
+          "size": 544
+        },
+        {
+          "path": "research/lean-global-closure-20261121/FIVE_EDGE_TRANSPORT.md",
+          "sha256": "0ffaa8cc0a361aa1b9ad69c3c55a5ca4009350eaa97aa07262a0195096118c40",
+          "size": 16560
+        },
+        {
+          "path": "research/lean-global-closure-20261121/FOLNER_FIVE_CHANNELS.md",
+          "sha256": "c539067d4cb4a0bb3ceaca062389940865dfa74f0ef0c1fd532961cee7de16eb",
+          "size": 9400
+        },
+        {
+          "path": "research/lean-global-closure-20261121/GLOBAL_STEP_20261122.md",
+          "sha256": "1d3b9d87864d3f84fc4f1e168497bd411889eff5d031afb7c9d37ba144250395",
+          "size": 13000
+        },
+        {
+          "path": "research/lean-global-closure-20261121/LATE_CARRY_RETURN_COMPOSITION.md",
+          "sha256": "611fb5a828b96858079543ad9eeec1e06c475212158d66fa3e2efa7ec94d1953",
+          "size": 12983
+        },
+        {
+          "path": "research/lean-global-closure-20261121/LATE_CHANNEL_FIVE_TRACE.md",
+          "sha256": "0944ffde4461deb623a8157435e3dc8a55d99b28c6d65bb62593c6c97c6f7c43",
+          "size": 15117
+        },
+        {
+          "path": "research/lean-global-closure-20261121/LATE_GREEN_HARMONIC_MOMENT.md",
+          "sha256": "43bb5901b3b3ec613e6eb3e25e7565b98a7e4312427a54ab91ab5debe33c9598",
+          "size": 14070
+        },
+        {
+          "path": "research/lean-global-closure-20261121/LATE_SOURCE_SYNTHESIS_20261122.md",
+          "sha256": "5af9acc5a80641ef409c2c8815cd0c74e376ea7b81cf1a4fc58a445fb2016763",
+          "size": 8616
+        },
+        {
+          "path": "research/lean-global-closure-20261121/LITERATURE_DIRICHLET_BOUNDARY.md",
+          "sha256": "41b4fe328417b3feef665b4de53fff1e94fdccc37bea1e75ce99ee4c3523c504",
+          "size": 23143
+        },
+        {
+          "path": "research/lean-global-closure-20261121/README.md",
+          "sha256": "dab23df77f974c4519c757ed905d2a4490ee7b56f583a1e69f256df567a1cd62",
+          "size": 17112
+        },
+        {
+          "path": "research/lean-global-closure-20261121/build_band.py",
+          "sha256": "26e2de545f96c7a467758500719547e30eddd5c0c35d1653424d96b58971b238",
+          "size": 6905
+        },
+        {
+          "path": "research/lean-global-closure-20261121/build_wide.py",
+          "sha256": "656758ba7635abacaae30a5118ddaddf9873181faa687218ecf4cfc59275392c",
+          "size": 5266
+        }
+      ]
+    },
+    {
+      "pr": 176,
+      "old_head": "c83a8459066d8223aefe7fc5f6b75faeea557345",
+      "head": "31c4a880ea4acf6eec4783e68bfc75e2cf8e7fe6",
+      "files": [
+        {
+          "path": "reports/2026-11-22-profound-step/README.md",
+          "sha256": "881022cd69a110b09bc128756bb11819ab4830bcf0a49b567f21733630fb148d",
+          "size": 4057
+        },
+        {
+          "path": "reports/2026-11-22-profound-step/bin4-enclosure.json",
+          "sha256": "04315eb2e984c74eeba2755ef76ceac1c1d87dece72d9c8a3f2bf8f4abe2adfc",
+          "size": 7225
+        },
+        {
+          "path": "reports/2026-11-22-profound-step/checkpoint10-lean.json",
+          "sha256": "5a0ec47ad725fa865e12e5890ddbc354baa5233b400e78a8bd1a10abd913685e",
+          "size": 30808
+        },
+        {
+          "path": "reports/2026-11-22-profound-step/supporting-execution.json",
+          "sha256": "f4fa72b69fb66297d8b9bbb676d214068d3f06c0b2f17eeb98befb442db2e437",
+          "size": 982
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/README.md",
+          "sha256": "e86d4cca2869b683811cb93c1be2ba20bb924ca0d3a4f123ded16325389e51ff",
+          "size": 14182
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/ALL_DEPTH_FIRST_CROSSING.md",
+          "sha256": "d44cc85e70f58cd7eb371e0f1e1492b0999d3f90c170dc2d4b0042bb8542ad30",
+          "size": 9132
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/DEPENDENCIES.json",
+          "sha256": "0998a464c175bc8eea6463fedcef091f4ca4163be9bbe4c7d2f6b1a0a2dbc1b0",
+          "size": 11905
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/ENDPOINT_TILT_CRITICALITY.md",
+          "sha256": "71e0975b2d7d9b28f6c537b15b8ebb746ba713e9430740a1a60df7a14cddf0ca",
+          "size": 10666
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/FROZEN_SOURCES.json",
+          "sha256": "73480c317d866260242f908dd825b3b5a56f67606590a97e7ec928fae52e8061",
+          "size": 6389
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/HEAD_THREE_TARGET.md",
+          "sha256": "fc4b88e44809253807c6e829592bf696b410ed6752cb81e111ed07fb0dec8b4a",
+          "size": 10727
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/MOVING_TILT_WINDOW.md",
+          "sha256": "0d3667f8dda27d33880057b93961fe1c02d65866563c509045599fd3862ed73c",
+          "size": 10578
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/README.md",
+          "sha256": "036e4997ae627aec9521ae133273eadd9c480c1ef7613998bc1c450f0e944fa5",
+          "size": 8323
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/SOURCES_AND_REVIEW.md",
+          "sha256": "4360fd5924a7cb27ec97de04fae0eee886a476b01ac49d1be7f3d426955e6fa3",
+          "size": 9105
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/SPARSE_BOUNDARY_MASS.md",
+          "sha256": "2b465664ca2d00c471469ba3b3072f7ba22020c628dbe4810ff53b23298fe261",
+          "size": 7197
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/STANDALONE_TARGETS.md",
+          "sha256": "380eef8281dec417cec6b01f79e9bf08019850f666ab91e5c8d791d4e6932841",
+          "size": 3969
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/certify_moving_tilt.py",
+          "sha256": "7d3181d228d77e66887bff2a14a8137c6979622980933109535e01f763acd3b2",
+          "size": 6328
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/check_profound.py",
+          "sha256": "84efd107faaedec2ad006e368e560b4ccc1dd40f38684a8f66e83b640c7aacd0",
+          "size": 5719
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/AuditBinHeight.lean",
+          "sha256": "d3adc014393f2217a4d773d4c529e2624263c0af34796508c0a2ae6d2b0d0d5a",
+          "size": 416
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/AuditHeadThreeTarget.lean",
+          "sha256": "873975370bceb00d8bee6e85fff35159272494eb58e509144867dd230d477dd2",
+          "size": 796
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/AuditSquaredSurvivalBudget.lean",
+          "sha256": "b8911a8d741018ad7b04322eebacf453bf6e6f053cf96fd52c0fcea1e6f76c43",
+          "size": 472
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/BinHeight.lean",
+          "sha256": "f22235af981ef82bc4e029377f52964f6fd5a689ba590660a542120cb32e8907",
+          "size": 3560
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/Collatz/HeadThreeTarget.lean",
+          "sha256": "aea6463ac56f740040f880dcea41da51f8855b415a5e4d4466a08fceaee974a8",
+          "size": 13708
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/FirstCrossingBound.lean",
+          "sha256": "38d9bc0a09aa58ca24edbd19114035e72cfbd879ceec41314719bb407e562621",
+          "size": 13186
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/profound/lean/SquaredSurvivalBudget.lean",
+          "sha256": "7ea136171776bafc40ddf427f4f513644023db424368a427ac730bbe7cd43132",
+          "size": 3271
+        }
+      ]
+    },
+    {
+      "pr": 177,
+      "old_head": "9af9118a7e9af870a32a72a4efdcf77e886940ec",
+      "head": "8ef9bf0d828fc533721dee1f90c5d78fac80ad39",
+      "files": [
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/README.md",
+          "sha256": "9e163b8cf71db0ea7f200af6c4cc78fa88b1390dc8335d29b0199401fa84b52a",
+          "size": 5176
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/SOURCE_REFRESH.json",
+          "sha256": "00586d924ecfda232d2b0a068b9200a519008286bef3d115d26e28337b99544d",
+          "size": 41785
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/binary-run-cases.json",
+          "sha256": "122b1a5dcf373ed128f57f261d1669975073be4360b6d610d55cf01e2b69ff55",
+          "size": 65346
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-axioms.txt",
+          "sha256": "3a15934542ca621d2ad64d98f6499366a21cabe25df7fd43c13cfba6eb08d0dc",
+          "size": 25275
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-build.txt",
+          "sha256": "5eb699a4d098481d05c77c020b76830ae9a5f2e6e58f42f2597dd64f8607b3fc",
+          "size": 2914
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-cases-optimized.txt",
+          "sha256": "42118d9ebe93a3dec9dc77ce0c43e045344017c4cd7a2caecb9623a733d15a0c",
+          "size": 49
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-cases.txt",
+          "sha256": "42118d9ebe93a3dec9dc77ce0c43e045344017c4cd7a2caecb9623a733d15a0c",
+          "size": 49
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-strict-BinaryRunForcing.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-strict-BoundedFourNormalForm.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-strict-DyadicCoset.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten-strict-SignedShadow.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/global-synthesis/checkpoint-ten.json",
+          "sha256": "fb7e0ac4afdb3dca901eab2a96234dc6ee7bd4800f163cce4dd1e74f68980d0f",
+          "size": 9247
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/README.md",
+          "sha256": "e0622d22867d77bf12a090155de7a92920b005e60b507927c4950f44f8e9fe0a",
+          "size": 4211
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/checkpoint-eleven-axioms.txt",
+          "sha256": "e12b720028ed192542e9368a756bec69a031d10173b9b21b5df59ee7056c7d9f",
+          "size": 29115
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/checkpoint-eleven-build.txt",
+          "sha256": "e05bb3943d98b0432b53cc88e2c03c9a3fecf1ed866942375901ca209581d213",
+          "size": 1641
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/checkpoint-eleven-strict-NegativeShadow.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/checkpoint-eleven-strict-RootedSourceFloor.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/checkpoint-eleven-strict-SourceOrbitProgress.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/source-progress/checkpoint-eleven.json",
+          "sha256": "6074fbca62576f2a77d42ce843ce930a2d740bc7aa1e3ccae46fbbca6284e29e",
+          "size": 10380
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/BINARY_RUN_COMPACTNESS.md",
+          "sha256": "ec83b3d08773121230347fe703bcd4e1cd99a48b51481aea9ab7deac361abbb2",
+          "size": 17439
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/BOUNDED_FOUR_NORMAL_FORM.md",
+          "sha256": "9c69fb3f331fe06a6319aa73e29206671724782ed1dfda5d79711474fc67a046",
+          "size": 8348
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md",
+          "sha256": "3a9903595721823017dbb95aef815517748d3e396063ad020d7cc91f1cf843a0",
+          "size": 32553
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/NEGATIVE_SHADOW_RETURN.md",
+          "sha256": "844b2d32e47a95c59dab50e0b4e894db1c83bba5d5e782d0eec0c23d310f989c",
+          "size": 10660
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/README.md",
+          "sha256": "eebad38c4d32e61bf7d10fc4c21f26214f8221bb2d01587c8d3a7f490dd57daa",
+          "size": 30759
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/ROOTED_SOURCE_FLOOR.md",
+          "sha256": "c4d58e1a4ee3a08aaba760216be3cfbca3e7f74740042755f438e8eeafa63317",
+          "size": 6637
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/SOURCE_PROGRESS_AND_RUN_MASS.md",
+          "sha256": "87ced476f3c9029cf9c3b462f13b07775a5e60fb19887d1acbf957baf5aec3d9",
+          "size": 18052
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/STRICT_PREFIX_CONTRACTION.md",
+          "sha256": "7f76de6cd36074f3311e32c13c62a565adeca60406654ccb989b1afc3c848bd1",
+          "size": 10127
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+          "sha256": "93c8ec7f4bd900e82a6256f2f8ca59a8e9a47cd570e0687711578330510f3435",
+          "size": 15158
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+          "sha256": "58c49aa80133ba3517d9449df4a4e5fc3f092899e01279832e1bec35273e9459",
+          "size": 1153
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BinaryRunForcing.lean",
+          "sha256": "f720ef163c41c7a88ba0995a5836640586cde2e01a23f7f9311b32f303d473a7",
+          "size": 4112
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/BoundedFourNormalForm.lean",
+          "sha256": "916738b33f17df9b9481e68951d03f18d6d6ca91ca4924dcc1fca29952ffe4b7",
+          "size": 13204
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/DyadicCoset.lean",
+          "sha256": "c282dee9ff69f966bbe700f8b48c33426f42f9a2efb8d59e1ebcc76bb1434bff",
+          "size": 8523
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/NegativeShadow.lean",
+          "sha256": "b5cfdf34ebb56651b36ac3a4908f9295e31da64d787b43b070cab3488f4b402d",
+          "size": 9950
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/RootedSourceFloor.lean",
+          "sha256": "b23f59ce7d6261208d0dbc6a7793c839bb8214dbf7ed6cca3e7b42e4ae057c03",
+          "size": 17585
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SignedShadow.lean",
+          "sha256": "72e61feb3a40fecff48bcf15a20cc296db807e7ab929963b9ca94f6bada46ff0",
+          "size": 11379
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/SourceOrbitProgress.lean",
+          "sha256": "1d1b08d4b231f4f37011bb298bb68f36d929e145f3ca33bdf943a7e57359a411",
+          "size": 5083
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/run-search/verify_binary_run_forcing.py",
+          "sha256": "5c64e962e56d221620b89d09f338634df99c612973e35270f1c6683f6ad972c6",
+          "size": 14651
+        }
+      ]
+    },
+    {
+      "pr": 180,
+      "old_head": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "head": "ab3973099f0d285bbe88972382ad599bb02cd460",
+      "files": [
+        {
+          "path": "reports/2026-11-22-joint-pass/finite-check.json",
+          "sha256": "685922f7328782b63d33aa82f56f27a98d661c2faf3b3a9d1baedf6e2898d4f6",
+          "size": 1647
+        },
+        {
+          "path": "reports/2026-11-22-joint-pass/independent-review.json",
+          "sha256": "0c02525fe46c11e364c721d6c80f622278386c0558c8392c01542cc204341ed2",
+          "size": 4863
+        },
+        {
+          "path": "reports/2026-11-22-joint-pass/lean-build.log",
+          "sha256": "a1feb8cec774ece46fbd1c7b3f05a075129021d4d1e7b95ad1d1a5a92f5dd798",
+          "size": 20685
+        },
+        {
+          "path": "reports/2026-11-22-joint-pass/lean-check.json",
+          "sha256": "dcf5211d497aea8ce54b6ebdbb0bd7f862597473d06a7c453d3786f378a66316",
+          "size": 8479
+        },
+        {
+          "path": "reports/2026-11-22-joint-pass/pr-description-before.json",
+          "sha256": "e1e24e7b29fe180f102b7e1b38c586caa039381588b763fea47fa65217c5094e",
+          "size": 62365
+        },
+        {
+          "path": "reports/2026-11-22-joint-pass/source-manifest.json",
+          "sha256": "d991037d0f08db71f85d727b4e62dd68bc254cf5faaf4d0bdda7d5f102f4c310",
+          "size": 3642
+        },
+        {
+          "path": "research/lean-joint-20261122/CONTACT_CLOCK.md",
+          "sha256": "c82be41200a9054a6176b4405ba579d8944e5c149d680ab4de2b397215285129",
+          "size": 7231
+        },
+        {
+          "path": "research/lean-joint-20261122/CYLINDER_BUDGET.md",
+          "sha256": "d74f8b79c043530da00ca8f3cfe4de3fc6eda3882da53d8e581e2f554b97da09",
+          "size": 7696
+        },
+        {
+          "path": "research/lean-joint-20261122/DEPENDENCIES.json",
+          "sha256": "fd2c1cf0a02c458730e2c32dbc6ec37983d4704bdce24d28b336980a4c8ad65c",
+          "size": 3339
+        },
+        {
+          "path": "research/lean-joint-20261122/FINITE_SPIKE_CLOSURE.md",
+          "sha256": "62bb6dfe0201875e5194ad28526c50f529a24b0bb2242305a4be6414adde86cb",
+          "size": 16879
+        },
+        {
+          "path": "research/lean-joint-20261122/MIXED_COVER.md",
+          "sha256": "e1e9abeb23da3c44f14115c1cc2c9afdb6e3b3b283d7cfc91156fdcc82ed87d9",
+          "size": 23166
+        },
+        {
+          "path": "research/lean-joint-20261122/ORDINARY_BOUNDARY.md",
+          "sha256": "688fc66d5e117b4bfe08db87cefead01250d7d6282ff96daa857d4843d12a1ea",
+          "size": 27012
+        },
+        {
+          "path": "research/lean-joint-20261122/README.md",
+          "sha256": "58e444b087f6a6790409b61a11b70a803e8b42412aa5b4d7cba3e948fb8b4634",
+          "size": 15838
+        },
+        {
+          "path": "research/lean-joint-20261122/SOURCE_SNAPSHOT.json",
+          "sha256": "8ff81c9ebbf1b8809653a72f0cb1fe6056c1c391040542bdd0fd568cc8767d37",
+          "size": 54857
+        },
+        {
+          "path": "research/lean-joint-20261122/THEOREMS.json",
+          "sha256": "1f3af6cbe97a9ff21e1e5f0e3f84b71f34ba81e4ab0728989e0a272e432d7855",
+          "size": 3208
+        },
+        {
+          "path": "research/lean-joint-20261122/check_lean.py",
+          "sha256": "707f5e60b19b2d5dec8de9b255692d71f10dd238fe81360f219f37ce60212a5d",
+          "size": 6776
+        },
+        {
+          "path": "research/lean-joint-20261122/finite-density-certificate.json",
+          "sha256": "12d93c5e06387406439d0c932c5169a252fc3e477365146e06cbb81226779991",
+          "size": 2009
+        },
+        {
+          "path": "research/lean-joint-20261122/finite_density_certificate.py",
+          "sha256": "45c6bebc8008727e367428f922baa5c1a48a09c565864292f420e79405f45fd3",
+          "size": 7906
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/ContactClock.lean",
+          "sha256": "a06f971e3ae2ca3e228e214af14408d0ecc3d9fc66eadcff5ec83934f9e7d0a3",
+          "size": 3259
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/FiniteSpikeClosure.lean",
+          "sha256": "2034cf601b910bae54421d49db6890e80e676fad68545d49fb97541c7afc709b",
+          "size": 9917
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/JointAudit.lean",
+          "sha256": "e605b2c9590f959d3775c503996c3eebdf4c42b4be4d7a263d2a48ea9c311e7a",
+          "size": 4673
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/LayeredContact.lean",
+          "sha256": "119c5ae7c64f5435c877b515c3b9b154ec36af76c28100e6961b401906f4d629",
+          "size": 4193
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/MixedCoverAttack.lean",
+          "sha256": "1dea7535e58048e0f447c7f1effff26927f85bf26903e70ff992d921fbfb6f60",
+          "size": 39365
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/MixingCylinder.lean",
+          "sha256": "f9a956c3c203c00fcc5efa4677eb60dd32b8c77fea0a4974b3b60e97f1db2447",
+          "size": 6195
+        },
+        {
+          "path": "research/lean-joint-20261122/lean/OrdinaryBoundary.lean",
+          "sha256": "c48d9047a0ecc47ad5219057e797286ed25f733f8e4b0de36783b0b91d00d7c0",
+          "size": 5568
+        }
+      ]
+    }
+  ]
+}

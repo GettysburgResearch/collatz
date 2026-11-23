@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "identity_cases": 1944,
+  "actual_word_windows": 2758,
+  "distinct_word_height_cases": 940,
+  "source_range": "positive odd starts 1..511",
+  "max_odd_steps": 256,
+  "arithmetic": "exact integers and rational numbers",
+  "scope": "finite identities, original-source word indexing and collision projection; no asymptotic or escape certification"
+}

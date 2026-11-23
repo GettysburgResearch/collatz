@@ -1,0 +1,612 @@
+{
+  "repository": "GettysburgResearch/collatz",
+  "cutoff_utc": "2026-11-22T07:40:00Z",
+  "owned_pr": 185,
+  "baseline_head": "4b0c2c27812db555061f5d9006de82a87e7e364f",
+  "baseline_tree": "e8296b2bb17a0b8f179e427c7a8dae621836b6b1",
+  "main_head": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "refresh_scope": "Research map, scoped errata, contribution/review policy, latest 50 PR metadata entries, and five advanced mathematical source heads. This is not an assertion that every proof in the historical repository was reread.",
+  "latest_pr_metadata": [
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks"
+    },
+    {
+      "pr": 185,
+      "head": "4b0c2c27812db555061f5d9006de82a87e7e364f",
+      "title": "Collatz: direct closure attempts and two checked obstructions"
+    },
+    {
+      "pr": 184,
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry"
+    },
+    {
+      "pr": 182,
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels"
+    },
+    {
+      "pr": 181,
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "title": "Lean: unbounded charged descents and global closure attempts"
+    },
+    {
+      "pr": 180,
+      "head": "a9f471543d7fed0a76f348e6d97a9d6d44fa369e",
+      "title": "Collatz: exact escape boundary and direct arithmetic closure attempts"
+    },
+    {
+      "pr": 179,
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers"
+    },
+    {
+      "pr": 178,
+      "head": "23456d145df23ef2b412f61f7e49e38a222bc2b1",
+      "title": "Collatz: direct closure attempts and checked Lean research"
+    },
+    {
+      "pr": 177,
+      "head": "431d858d1ac92e88f4a58f6610c0d67733dc7242",
+      "title": "Lean: joint source-target minimum and terminal energy transport"
+    },
+    {
+      "pr": 176,
+      "head": "5cb67181758186b372944ef60a1bd09416b97f89",
+      "title": "Lean: source-only closure obstruction and sibling lift costs"
+    },
+    {
+      "pr": 175,
+      "head": "f63204765438c83def68154e7f253ee9b660979c",
+      "title": "Collatz: Lean carry returns, merger rigidity, and sharp Green boundary energy"
+    },
+    {
+      "pr": 174,
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "title": "research: dependency-free Lean attack \u2014 Collatz from one \u03c8-closure lemma (open)"
+    },
+    {
+      "pr": 173,
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria"
+    },
+    {
+      "pr": 172,
+      "head": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "title": "Uniform tail descent, smaller five failures, and compiler limits"
+    },
+    {
+      "pr": 171,
+      "head": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments"
+    },
+    {
+      "pr": 170,
+      "head": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds"
+    },
+    {
+      "pr": 169,
+      "head": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "title": "research: extend certificate descents and localize all-time arithmetic moments"
+    },
+    {
+      "pr": 168,
+      "head": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+      "title": "Research: balanced return languages, witness descent, and stationary regularity"
+    },
+    {
+      "pr": 167,
+      "head": "e83cc8b35ad614c616df7c00318cc9645a174c34",
+      "title": "research: fixed-defect returns, stronger excursion bounds, and five closure interfaces"
+    },
+    {
+      "pr": 166,
+      "head": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces"
+    },
+    {
+      "pr": 165,
+      "head": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "title": "research: certificate-transfer audit and explicit exceptional family"
+    },
+    {
+      "pr": 164,
+      "head": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds"
+    },
+    {
+      "pr": 163,
+      "head": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "title": "research: least-failure reductions and complete five-energy propagation"
+    },
+    {
+      "pr": 162,
+      "head": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "title": "Research: physical five blocks, Hardy flows, and carry limits"
+    },
+    {
+      "pr": 161,
+      "head": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds"
+    },
+    {
+      "pr": 160,
+      "head": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "title": "research: ordered prime height, physical five returns, and critical mass"
+    },
+    {
+      "pr": 159,
+      "head": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "title": "Research: prime-support peak bounds and exact directed circulation"
+    },
+    {
+      "pr": 158,
+      "head": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "title": "research: certify guarded expanding returns and exact closure boundaries"
+    },
+    {
+      "pr": 157,
+      "head": "64361ecca770092d6c8242dc6211e38818af2e50",
+      "title": "research: forward-five basin criterion and positive occupation bounds"
+    },
+    {
+      "pr": 156,
+      "head": "c5cb84502c7289705d59a8781a65fd845b9b6b14",
+      "title": "Investigate Collatz closure with ordinary spectrum, arithmetic, and merger guards"
+    },
+    {
+      "pr": 155,
+      "head": "92f499b9d340d1ff8cc643c3eef3477d61b477c1",
+      "title": "research: ordinary Dirichlet coercivity and three-package Gemini audit"
+    },
+    {
+      "pr": 154,
+      "head": "fe40bb6f88e8094290ef01207d9bf7c4798d35d0",
+      "title": "Research: prime-height dispersion and restricted five-ray rigidity"
+    },
+    {
+      "pr": 153,
+      "head": "eb04a5d79020cefa0ba46794095b5766c5ff66a4",
+      "title": "Research: binary-run cores, adaptive mergers, and recursive orbit bounds"
+    },
+    {
+      "pr": 152,
+      "head": "2391a9c1e4a7f77233b951d2eb6da92e76652e7c",
+      "title": "Audit Gemini routes: actual transport domains, spectral boundary, and radical Pad\u00e9 classification"
+    },
+    {
+      "pr": 151,
+      "head": "02a9f6ad17e5f1904cb4ff806fd0217d199e8437",
+      "title": "Construct recursive ordinary merger certificates and reduce signed targets"
+    },
+    {
+      "pr": 150,
+      "head": "ef4022fa5ae43dd943ecca0b7c84d69af624c5c9",
+      "title": "Bound sparse Collatz returns and classify local affine merger membership"
+    },
+    {
+      "pr": 149,
+      "head": "92c0129e794dde3ec55ceec470a12d51ba3f7e2f",
+      "title": "Extend merger-clock analysis and audit forward Collatz closure bounds"
+    },
+    {
+      "pr": 148,
+      "head": "55d8968d2ecbc23a91c9c4733929f34be9bf0d28",
+      "title": "Research: ordinary merger guards, inverse certificates, and cycle refinements"
+    },
+    {
+      "pr": 147,
+      "head": "b74b2d466f58844a742a6ed6bcdf06844269f361",
+      "title": "Certify a 13/6 inverse compiler and derive robust finite-credit completeness"
+    },
+    {
+      "pr": 146,
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three"
+    },
+    {
+      "pr": 145,
+      "head": "dd245a712f985909f541590e3f6c179b7ba011e4",
+      "title": "Collatz investigation: a finite test for both obstructions, null residue support, and exact depth 30"
+    },
+    {
+      "pr": 144,
+      "head": "df756794e1d8de5cabff148ef433df505e3b68b4",
+      "title": "research: direct pressure dissipation and collision-free moment coercivity"
+    },
+    {
+      "pr": 143,
+      "head": "41a408e5e617fb4e65142485f6f3ff3e6ef6c408",
+      "title": "research: finite-clock pressure energy and a quadratic-moment route to decay"
+    },
+    {
+      "pr": 142,
+      "head": "b21f94f5772df5cfcaa5f5afd073d5889e75d294",
+      "title": "Research swarm: positive inverse-density bounds, contact fans, and beeping clocks"
+    },
+    {
+      "pr": 141,
+      "head": "5025ef464d4b6d4f4a412a3e33c3477de68dfa8b",
+      "title": "AYH orders: finite Hamming cores and source-persistent sparse descent"
+    },
+    {
+      "pr": 140,
+      "head": "1092737688b0bbc159820d7095722ad680f1fa1d",
+      "title": "research: polynomial invariant rigidity, finite defects, and algebraic certificates"
+    },
+    {
+      "pr": 139,
+      "head": "c0e51c5bd90eb16fdf1caa294b6b74e972c58d1a",
+      "title": "research: fixed-source ternary splices and a common H restart budget"
+    },
+    {
+      "pr": 138,
+      "head": "a3f006a1281939156b2068c5be5248bcf3c61dd1",
+      "title": "research: anchored capacities, exact dyadic completion, and odd-edge repair"
+    },
+    {
+      "pr": 137,
+      "head": "2911b53930cbd31f623d3e0586ca3613854f0143",
+      "title": "research: arithmetic component rigidity and residue-locked inverse geometry"
+    }
+  ],
+  "advanced_sources": [
+    {
+      "pr": 175,
+      "previous_head": "728389c2ad4796853948250a90188b0697483d92",
+      "head": "f63204765438c83def68154e7f253ee9b660979c",
+      "changed_files": [
+        "reports/lean-global-closure-20261121/nov22/central/README.md",
+        "reports/lean-global-closure-20261121/nov22/central/REVIEW_ACTUAL_CAPACITY_CLOSURE_ATTEMPT.md",
+        "reports/lean-global-closure-20261121/nov22/central/REVIEW_DIRECT_CANONICAL_CHARGE_ATTEMPT.md",
+        "reports/lean-global-closure-20261121/nov22/central/REVIEW_ORIGINAL_RANK_SELECTOR_ATTEMPT.md",
+        "research/lean-global-closure-20261121/README.md",
+        "research/lean-global-closure-20261121/central/ACTUAL_CAPACITY_CLOSURE_ATTEMPT.md",
+        "research/lean-global-closure-20261121/central/DIRECT_CANONICAL_CHARGE_ATTEMPT.md",
+        "research/lean-global-closure-20261121/central/ORIGINAL_RANK_SELECTOR_ATTEMPT.md",
+        "research/lean-global-closure-20261121/central/README.md",
+        "research/lean-global-closure-20261121/central/SOURCE_SNAPSHOT.json"
+      ],
+      "exported_inputs": [
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/central/README.md",
+          "sha256": "5c5f5d7c9b051a77c690bf32c1b8d41ecc4349efb1f40266e0280792ac093907"
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/central/REVIEW_ACTUAL_CAPACITY_CLOSURE_ATTEMPT.md",
+          "sha256": "d11d39586940a4990048274bb91cb1f9b74bc533b55f8c72f8d746d4e0dca3cc"
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/central/REVIEW_DIRECT_CANONICAL_CHARGE_ATTEMPT.md",
+          "sha256": "165cf5859f01b37f66e4f90ea69ddb69ab190e6934fc89abd3bd29151eb78944"
+        },
+        {
+          "path": "reports/lean-global-closure-20261121/nov22/central/REVIEW_ORIGINAL_RANK_SELECTOR_ATTEMPT.md",
+          "sha256": "171c667c68cfba2cb07107fd5ce6c74ebf1dc4f96aa1b0221b126cfc85f5ee17"
+        },
+        {
+          "path": "research/lean-global-closure-20261121/README.md",
+          "sha256": "a754b79ce54201e8281f83f96c75f6979b40f99695b8e57d0c280efae73896ae"
+        },
+        {
+          "path": "research/lean-global-closure-20261121/central/ACTUAL_CAPACITY_CLOSURE_ATTEMPT.md",
+          "sha256": "452d5c10183681e47c8acf09a6f96fd93e828de110e2a207d7b9273084eb4b9f"
+        },
+        {
+          "path": "research/lean-global-closure-20261121/central/DIRECT_CANONICAL_CHARGE_ATTEMPT.md",
+          "sha256": "32dca808c0a7e01e1bebf2968b0ee340e56a76c096760c45225f16f233b01727"
+        },
+        {
+          "path": "research/lean-global-closure-20261121/central/ORIGINAL_RANK_SELECTOR_ATTEMPT.md",
+          "sha256": "3b08d87f8eb0b403cef7f4d40ae961260c19f79b6a6feac9efe2560ba2640c93"
+        },
+        {
+          "path": "research/lean-global-closure-20261121/central/README.md",
+          "sha256": "614eda3b19dde8bf12b09c6f5188246e0f5b81bc9e5c42812e9e51bbb262fcb5"
+        },
+        {
+          "path": "research/lean-global-closure-20261121/central/SOURCE_SNAPSHOT.json",
+          "sha256": "678f4aaa1cb768aecd23ba875553edf6027d6fed185c8efd27fb5a119e711c77"
+        }
+      ],
+      "scope": "Targeted theorem-bearing delta and related review inspection by the three attack lanes; not a full independent replay of this branch."
+    },
+    {
+      "pr": 176,
+      "previous_head": "31c4a880ea4acf6eec4783e68bfc75e2cf8e7fe6",
+      "head": "5cb67181758186b372944ef60a1bd09416b97f89",
+      "changed_files": [
+        "reports/2026-11-22-central-attempt/README.md",
+        "reports/2026-11-22-central-attempt/checkpoint11-lean.json",
+        "research/lean-global-resolvent-20261121/README.md",
+        "research/lean-global-resolvent-20261121/overview/central/DEPENDENCIES.json",
+        "research/lean-global-resolvent-20261121/overview/central/DIRECT_FLOW_ATTEMPTS.md",
+        "research/lean-global-resolvent-20261121/overview/central/FIXED_SOURCE_SIBLING_LIFTS.md",
+        "research/lean-global-resolvent-20261121/overview/central/README.md",
+        "research/lean-global-resolvent-20261121/overview/central/SOURCES_AND_REVIEW.md",
+        "research/lean-global-resolvent-20261121/overview/central/SOURCE_RECORDS.md",
+        "research/lean-global-resolvent-20261121/overview/central/check_central.py",
+        "research/lean-global-resolvent-20261121/overview/central/lean/AuditSourceRecords.lean",
+        "research/lean-global-resolvent-20261121/overview/central/lean/Collatz/SourceRecords.lean",
+        "research/lean-global-resolvent-20261121/overview/central/lean/SiblingPrefixLift.lean"
+      ],
+      "exported_inputs": [
+        {
+          "path": "reports/2026-11-22-central-attempt/README.md",
+          "sha256": "043d108779348f331bd49765776c030f58371d58f8536e22bbee7abe7ef1ddb2"
+        },
+        {
+          "path": "reports/2026-11-22-central-attempt/checkpoint11-lean.json",
+          "sha256": "02a4d9b0d58db5c573e108552ae2d2ecb858347b56069154f332ad54b8bf29bc"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/README.md",
+          "sha256": "1f4487f1f3c0e7dfa6b5501bb65206e6edcbd9763b07a1ec66beec2f02ad5d80"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/DEPENDENCIES.json",
+          "sha256": "10db20dde49e7b128955f6d4d1e82b0b3f9110141c5c8c967c806bec34832b45"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/DIRECT_FLOW_ATTEMPTS.md",
+          "sha256": "0bf5ab18f75cf70cf06083fa4827b12fa39cd04e74cdf9e6164cf4d685c00c30"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/FIXED_SOURCE_SIBLING_LIFTS.md",
+          "sha256": "96d8e66d57a88faf1787fff7d0854598bfbf62aae5e8058202d17be10a829913"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/README.md",
+          "sha256": "2ea28691c238c31b44bec0e7e2b0dc6c2963c2dbb4fda93874b1259c8b6b169d"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/SOURCES_AND_REVIEW.md",
+          "sha256": "e31d99041842565a83c24fd398ef9afd78a40f939e99f8c0c0e7e03aa3b30287"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/SOURCE_RECORDS.md",
+          "sha256": "404a98808aa849e4734c97c4af5c25eeab1885cb91a25a695192bcac6e4ee106"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/check_central.py",
+          "sha256": "6f80e081069269ce68af2ce454cb68f4266817114a3089a0e271c37ee665a0a4"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/lean/AuditSourceRecords.lean",
+          "sha256": "f745bacb9b0ca54b783387d043d30621be6379811caacca3f2c12fd710924dfb"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/lean/Collatz/SourceRecords.lean",
+          "sha256": "e2042e116b9a03f2ed872262bc909441471daad6c1f7e1546e00f96af64e82fc"
+        },
+        {
+          "path": "research/lean-global-resolvent-20261121/overview/central/lean/SiblingPrefixLift.lean",
+          "sha256": "419a972456767cd95af4ffc3fb3e8fd4dc69143de5f6818ba9116a21e26b2f45"
+        }
+      ],
+      "scope": "Targeted theorem-bearing delta and related review inspection by the three attack lanes; not a full independent replay of this branch."
+    },
+    {
+      "pr": 177,
+      "previous_head": "8ef9bf0d828fc533721dee1f90c5d78fac80ad39",
+      "head": "431d858d1ac92e88f4a58f6610c0d67733dc7242",
+      "changed_files": [
+        "reports/lean-exact-witness-global-20261121/joint-minimum/README.md",
+        "reports/lean-exact-witness-global-20261121/joint-minimum/SOURCE_DELTA.json",
+        "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve-axioms.txt",
+        "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve-build.txt",
+        "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve-strict-JointMinimalCounterexample.txt",
+        "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve.json",
+        "research/lean-exact-witness-global-20261121/JOINT_MINIMAL_COUNTEREXAMPLE.md",
+        "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md",
+        "research/lean-exact-witness-global-20261121/README.md",
+        "research/lean-exact-witness-global-20261121/TERMINAL_DIRICHLET_RUN_MASS.md",
+        "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+        "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+        "research/lean-exact-witness-global-20261121/lean/Collatz/JointMinimalCounterexample.lean"
+      ],
+      "exported_inputs": [
+        {
+          "path": "reports/lean-exact-witness-global-20261121/joint-minimum/README.md",
+          "sha256": "79744806711a6fadd978693f28c2d4909f2296e7aa5dde2c0d8cce794fcd2299"
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/joint-minimum/SOURCE_DELTA.json",
+          "sha256": "f6f04647a3e35b36d3e26bc021f6374adadaa442c89263597bf3372331737bcf"
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve-axioms.txt",
+          "sha256": "b883b07991f613c02156339e9817bb2d175693db714c46b5620d8cc85833c328"
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve-build.txt",
+          "sha256": "d48f1549f759ed18a606f4fcb30ff7fed4b84d679903ed710b6e94dd98c64405"
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve-strict-JointMinimalCounterexample.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reports/lean-exact-witness-global-20261121/joint-minimum/checkpoint-twelve.json",
+          "sha256": "0a24734f2db2714221352d3ecbdb942bd248942c13313a0dc96d943f17b72b68"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/JOINT_MINIMAL_COUNTEREXAMPLE.md",
+          "sha256": "1a815ad6f1cf3f73c7538f16af91308fd8c7af610e6a6da51b5f3a23d966692e"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/LATEST_SOURCE_SYNTHESIS.md",
+          "sha256": "bd70eb9ece5d23af102d82b3cd7634b0a382549bb4a982c28b435ccea6e3581f"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/README.md",
+          "sha256": "9d6e2729f509749d22f5e089f57e0bee0025001edb881a8624dbf96c7c91ce73"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/TERMINAL_DIRICHLET_RUN_MASS.md",
+          "sha256": "79689a66e03f7268423626e335cebd5f535027fd9aebf94bfdb2e5c66e44ad66"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Audit.lean",
+          "sha256": "a1fc4fdf180fdcff1ee08c30c08176c4df02bf071a15dff57ccdaa7e1f515e8f"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz/JointMinimalCounterexample.lean",
+          "sha256": "a91c248f26049707df8d6c3da9b6cc82f616ecbfcf35a09c14fea156ab5c4432"
+        },
+        {
+          "path": "research/lean-exact-witness-global-20261121/lean/Collatz.lean",
+          "sha256": "4ee9c20b01ea51cfb29e702c2a9866e0b0b6ef639604f0e00ddda337e43f447c"
+        }
+      ],
+      "scope": "Targeted theorem-bearing delta and related review inspection by the three attack lanes; not a full independent replay of this branch."
+    },
+    {
+      "pr": 178,
+      "previous_head": "f464ddf2af6e340054673fdd6f5b28aba0310c10",
+      "head": "23456d145df23ef2b412f61f7e49e38a222bc2b1",
+      "changed_files": [
+        "reports/2026-11-22-global-synthesis/central-attempt-control.json",
+        "research/global-synthesis-20261122/CENTRAL_CLOSURE_ATTEMPT.md",
+        "research/global-synthesis-20261122/README.md"
+      ],
+      "exported_inputs": [
+        {
+          "path": "reports/2026-11-22-global-synthesis/central-attempt-control.json",
+          "sha256": "55cba5dd2bb97d891d1c2bd57b9dd696faf739fe592455da11b2663918fa7300"
+        },
+        {
+          "path": "research/global-synthesis-20261122/CENTRAL_CLOSURE_ATTEMPT.md",
+          "sha256": "92132b224bce85bbbcc441b0f23fd5434ebb6841f32dfc86ad0f0966a4225b48"
+        },
+        {
+          "path": "research/global-synthesis-20261122/README.md",
+          "sha256": "f4a98e57fed9ec57ceb48b97b2edf7e9f470c68c7a6bd05cc423e68783ec1a27"
+        }
+      ],
+      "scope": "Targeted theorem-bearing delta and related review inspection by the three attack lanes; not a full independent replay of this branch."
+    },
+    {
+      "pr": 180,
+      "previous_head": "ab3973099f0d285bbe88972382ad599bb02cd460",
+      "head": "a9f471543d7fed0a76f348e6d97a9d6d44fa369e",
+      "changed_files": [
+        "reports/2026-11-22-central-step/lean-build.log",
+        "reports/2026-11-22-central-step/lean-check.json",
+        "reports/2026-11-22-central-step/pr-description-before.json",
+        "reports/2026-11-22-central-step/source-manifest.json",
+        "reports/2026-11-22-central-step/stopped-arithmetic.json",
+        "research/central-step-20261122/CRITICAL_BOUNDARY.md",
+        "research/central-step-20261122/DEPENDENCIES.json",
+        "research/central-step-20261122/README.md",
+        "research/central-step-20261122/REVIEW_BOUNDARY.md",
+        "research/central-step-20261122/REVIEW_SOURCE.md",
+        "research/central-step-20261122/REVIEW_STOPPED.md",
+        "research/central-step-20261122/SOURCES.json",
+        "research/central-step-20261122/STOPPED_MIXING.md",
+        "research/central-step-20261122/THEOREMS.json",
+        "research/central-step-20261122/UNIVERSAL_SOURCE.md",
+        "research/central-step-20261122/check_lean.py",
+        "research/central-step-20261122/lean/CentralAudit.lean",
+        "research/central-step-20261122/lean/CentralCurrent.lean",
+        "research/central-step-20261122/lean/RationalShadowTest.lean",
+        "research/central-step-20261122/verify_stopped_arithmetic.py"
+      ],
+      "exported_inputs": [
+        {
+          "path": "reports/2026-11-22-central-step/lean-build.log",
+          "sha256": "0a171a7e47965cb588b87d45c8f3adfcc3b75fb06c5800751cb20baa9d366532"
+        },
+        {
+          "path": "reports/2026-11-22-central-step/lean-check.json",
+          "sha256": "070ec699cb512f4213635fab15787b1e616a537ded5424f33787bf4a9a352695"
+        },
+        {
+          "path": "reports/2026-11-22-central-step/pr-description-before.json",
+          "sha256": "c2ac170a8de7058e781fb6bb9ffdeb82ed528828a2e4ab64c9aab12857e50eaf"
+        },
+        {
+          "path": "reports/2026-11-22-central-step/source-manifest.json",
+          "sha256": "c9bf26263f6c92357be8e1945e9626d63058cf8bb069d9cca7659d65c78780e1"
+        },
+        {
+          "path": "reports/2026-11-22-central-step/stopped-arithmetic.json",
+          "sha256": "ed5b52558cc47040eaf6256896fa45acd67e3448cddfa89ca0f41e9b964f21f2"
+        },
+        {
+          "path": "research/central-step-20261122/CRITICAL_BOUNDARY.md",
+          "sha256": "2eb0f804d3e422a5a2ca6aafd6cdf725d47dea51f01e432096019162809949b4"
+        },
+        {
+          "path": "research/central-step-20261122/DEPENDENCIES.json",
+          "sha256": "c38b2ee311ed678dbff7534921f5c971b49f8dd33fb14064f2b453825d6c1faf"
+        },
+        {
+          "path": "research/central-step-20261122/README.md",
+          "sha256": "9b3a0bb5ab4ce718b03e61ccc1cb80b290a2b09b71917bbee04af928f6cf8b61"
+        },
+        {
+          "path": "research/central-step-20261122/REVIEW_BOUNDARY.md",
+          "sha256": "f41fb7130d49787bdfe65848e07d315a3b8c46d53c2ed35b19c306c808acd488"
+        },
+        {
+          "path": "research/central-step-20261122/REVIEW_SOURCE.md",
+          "sha256": "442834adac936acbb8cd7aa24add20e03bb08ce106993813198968712d22cb73"
+        },
+        {
+          "path": "research/central-step-20261122/REVIEW_STOPPED.md",
+          "sha256": "8e8edde560af4c1caf5c468719fd2b6f6b26305f9d38cd3fcae74b4aa807dfbc"
+        },
+        {
+          "path": "research/central-step-20261122/SOURCES.json",
+          "sha256": "c4f1f04948024969f4c86a775dbc43e701707741c9f42396a4d947449791528c"
+        },
+        {
+          "path": "research/central-step-20261122/STOPPED_MIXING.md",
+          "sha256": "2df3b2b8687579b1ed842e71d6230d6b3ca2d5915ea47e79d4cd60166215d3c7"
+        },
+        {
+          "path": "research/central-step-20261122/THEOREMS.json",
+          "sha256": "7b81e5991237c9387a02d256da61daad2b328dd3cd36885cecb0fbb330f213f9"
+        },
+        {
+          "path": "research/central-step-20261122/UNIVERSAL_SOURCE.md",
+          "sha256": "569c8fc4603335b24f15c476ea9a0cb4df0d8028156708eb1ca827dc4868a814"
+        },
+        {
+          "path": "research/central-step-20261122/check_lean.py",
+          "sha256": "7cbb9d80e59224e4ef9344336b9504e38eff562ae1a55b65e438e0a163a713a4"
+        },
+        {
+          "path": "research/central-step-20261122/lean/CentralAudit.lean",
+          "sha256": "8c27d191c00cb8529b6ba8833dd9bb5b96ad2b4857297456fc2b0b57f1515b96"
+        },
+        {
+          "path": "research/central-step-20261122/lean/CentralCurrent.lean",
+          "sha256": "d2d6cbac42379e1d43d405adbf1a202861eeab74fd8424a9f83e7bb94f77c95e"
+        },
+        {
+          "path": "research/central-step-20261122/lean/RationalShadowTest.lean",
+          "sha256": "45ee2b77e5daaab8b6f27b91230d1b6a4991e81b479c906db14e237b3a46d507"
+        },
+        {
+          "path": "research/central-step-20261122/verify_stopped_arithmetic.py",
+          "sha256": "1ee26dd6b73a3bc14e42554d00ecb45d39b19bb939f332865d770eaad878829c"
+        }
+      ],
+      "scope": "Targeted theorem-bearing delta and related review inspection by the three attack lanes; not a full independent replay of this branch."
+    }
+  ],
+  "retained_request_146": {
+    "head": "f431078244e868dc699fad011044f0d5e7f76437",
+    "scope": "Unchanged relative to the earlier PR185 intake; inherited one-sided merger criterion retained."
+  }
+}

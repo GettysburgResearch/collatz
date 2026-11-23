@@ -1,0 +1,15 @@
+module
+
+public import FiniteResolvent
+
+#print axioms CollatzFiniteResolvent.coefficient_ratio
+#print axioms CollatzFiniteResolvent.geometric_growth_sum_exact
+#print axioms CollatzFiniteResolvent.geometric_growth_sum_le_eight
+#print axioms CollatzFiniteResolvent.budget_le
+#print axioms CollatzFiniteResolvent.survivor_atom_bound
+#print axioms CollatzFiniteResolvent.survivor_atom_bound_cleared
+#print axioms CollatzFiniteResolvent.excludes_transport_of_strict_budget
+#print axioms CollatzFiniteResolvent.norm_floor_of_comparable_fibers
+#print axioms CollatzFiniteResolvent.coefficient_antitone
+#print axioms CollatzFiniteResolvent.coefficient_shift_bound
+#print axioms CollatzFiniteResolvent.terminating_shift_fiber_floor

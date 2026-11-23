@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "script_sha256": "722789839ae2c4e960bf7cf540332137de4e9015a78a7ab4bebcc245471e2e43",
+  "lean_unchanged_sha256": "011a50ca04eebf2efb5c9ddb402ad0f89d9af77077a52483ddb573d662235e08",
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "negative_budget.py",
+        "--self-test"
+      ],
+      "exitcode": 0,
+      "stdout": "{\"status\": \"PASS\", \"valid_certificates\": 3, \"rejected_damaged_certificates\": [\"missing_block\", \"wrong_endpoint\", \"wrong_clock\", \"false_payment\"], \"rejected_invalid_inputs\": 3}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "negative_budget.py",
+        "--check",
+        "negative_budget_examples.json"
+      ],
+      "exitcode": 0,
+      "stdout": "{\"status\": \"PASS\", \"certificates\": 3}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "negative_budget.py",
+        "--self-test"
+      ],
+      "exitcode": 0,
+      "stdout": "{\"status\": \"PASS\", \"valid_certificates\": 3, \"rejected_damaged_certificates\": [\"missing_block\", \"wrong_endpoint\", \"wrong_clock\", \"false_payment\"], \"rejected_invalid_inputs\": 3}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "negative_budget.py",
+        "--check",
+        "negative_budget_examples.json"
+      ],
+      "exitcode": 0,
+      "stdout": "{\"status\": \"PASS\", \"certificates\": 3}\n",
+      "stderr": ""
+    }
+  ]
+}

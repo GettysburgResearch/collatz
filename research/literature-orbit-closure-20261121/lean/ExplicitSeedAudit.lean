@@ -1,0 +1,10 @@
+module
+
+public import ExplicitSeed
+
+#print axioms CollatzFiniteResolvent.coefficient_telescope
+#print axioms CollatzFiniteResolvent.coefficient_prefix
+#print axioms CollatzFiniteResolvent.coefficient_prefix_le_one
+#print axioms CollatzFiniteResolvent.coefficient_finiteMass
+#print axioms CollatzFiniteResolvent.growth_mul_coefficient
+#print axioms CollatzFiniteResolvent.quadratic_baseline

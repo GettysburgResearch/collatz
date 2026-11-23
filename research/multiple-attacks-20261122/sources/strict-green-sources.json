@@ -1,0 +1,51 @@
+{
+  "status": "SOURCE-QUALIFIED written operator theorem; finite path and physical arithmetic core checked in Lean",
+  "imports": [
+    {
+      "pr": 180,
+      "commit": "cfe70e02f246119a55fb5bf8fd573f148d746beb",
+      "path": "research/lean-critical-20261122/POTENTIAL_ATTACK.md",
+      "claim_ids": [
+        "P3-P8"
+      ],
+      "role": "Actual retained-path counting and Green compactness inputs; preserved source-qualified evidence.",
+      "sha256": "6c67d1aedf1010560ddc4266de7ef042c3d259899ab6927e5f3fb78f02cedddb"
+    },
+    {
+      "pr": 185,
+      "commit": "7889fc680f5ee22237732eccc172b1699ef565da",
+      "path": "research/whole-repo-closure-20261122/ORDINARY_HARMONIC_FLOW_AND_COLLISIONS.md",
+      "claim_ids": [
+        "(7)-(15)",
+        "Section 3"
+      ],
+      "role": "Ordinary harmonic correction identity and global moments.",
+      "sha256": "34340b2dafc1b37cf07ab2a401cccf2f7481af8dc6265ba521e4cce4a154454b"
+    },
+    {
+      "pr": 183,
+      "commit": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "path": "research/profound-step-20261122/operator/WOLD_CHANNELS.md",
+      "claim_ids": [
+        "Sections 2-5"
+      ],
+      "role": "Comparison with unsmoothed ordinary transport and surviving bilateral channels; not an extra hypothesis for the factorial bound.",
+      "sha256": "bb956069797987478ef3c691115b7292d7a964ac9963c9eed212321aca8f03ce"
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "F. Leon-Saavedra and A. Piqueras-Lerena",
+      "title": "Cyclic properties of Volterra operator",
+      "year": 2003,
+      "url": "https://msp.org/pjm/2003/211-1/pjm-v211-n1-p09-p.pdf",
+      "use": "Section 2 provides the classical Volterra factorial/quasinilpotent analogy. The new discrete operator proof is direct."
+    }
+  ],
+  "formal_scope": {
+    "StrictGreenKernel": "Five finite path polynomial, cancellation, unit-interval survival, and absolute majorant statements.",
+    "OddDepthLadder": "Twenty exact physical parent, growth, first hitting, and ordinary basin statements."
+  },
+  "remaining_obligation": "The entire correction resolvent does not force ordinary escaping mass to vanish; periodic states are outside its domain.",
+  "additional_written_claim": "Exact maximal-domain right factorization and order isomorphism of the positive harmonic cones in HARMONIC_KERNEL_FACTORIZATION.md."
+}
