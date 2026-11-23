@@ -1,0 +1,45 @@
+{
+  "timestamp_utc": "2026-11-23T03:45:00.276343+00:00",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "command": [
+    "lean",
+    "SourceAwareTails.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'Collatz.SourceAwareTails.good_trace' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.negativeNumerator_trace_unit' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.affineNumerator_unit' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.calibrated_anchor_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_pair01' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_pair10' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.block011_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.block100_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_block011_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.reflection_block100_reset' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.actualTrace_identity' depends on axioms: [propext, Quot.sound]\n'Collatz.SourceAwareTails.actual_negative_anchor_unit' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "theorem_count": 26,
+  "theorem_declarations": [
+    "good_initial",
+    "good_advance",
+    "good_run",
+    "good_trace",
+    "negative_anchor_identity",
+    "negativeNumerator_unit",
+    "negativeNumerator_trace_unit",
+    "affine_anchor_identity",
+    "affineNumerator_unit",
+    "reflection_anchor_identity",
+    "reflection_pair01",
+    "reflection_pair10",
+    "calibrated_anchor_reset",
+    "block011_carry_sum",
+    "block100_carry_sum",
+    "block011_reset",
+    "block100_reset",
+    "reflection_block011_reset",
+    "reflection_block100_reset",
+    "actualAdvance_good",
+    "actualAdvance_identity",
+    "actualRun_good",
+    "actualRun_identity",
+    "actualTrace_good",
+    "actualTrace_identity",
+    "actual_negative_anchor_unit"
+  ],
+  "sha256": {
+    "SourceAwareTails.lean": "3a4b7e06a852348e9d1537c467dfabb4a33f104f5109292a6fbced2584f6f8c5",
+    "SOURCE_AWARE_TRIADIC_CONSTRUCTION.md": "ae7f16ca337ed1505f66248eb82ce21e6ae5b20b2bebf305add62a7f723801ad"
+  },
+  "scope": "Core/Std finite carry and actual-source anchor arithmetic. No universal Collatz or triadic witness existence theorem."
+}

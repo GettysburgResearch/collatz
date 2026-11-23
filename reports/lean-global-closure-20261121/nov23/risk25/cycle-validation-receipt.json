@@ -1,0 +1,31 @@
+{
+  "all_rotations_checked": 76,
+  "commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-X",
+      "utf8",
+      "-B",
+      "/workspace/scratch/957bb0caa6f2/risk25/cycles/check_integer_residual_degree.py"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "-X",
+      "utf8",
+      "-B",
+      "/workspace/scratch/957bb0caa6f2/risk25/cycles/check_integer_residual_degree.py"
+    ]
+  ],
+  "controls": 6,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "normal_optimized_identical": true,
+  "python": "3.12.14",
+  "scope": "Exact finite controls only; no external theorem, all-cycle census, or Lean proof verified.",
+  "script_sha256": "015d407de25f6cc2f120b8b2bb7b1300ffa588611f8261f8f64d8ce9a451b290",
+  "status": "PASS",
+  "sympy": "1.14.0"
+}

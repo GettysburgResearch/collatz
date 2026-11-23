@@ -10,6 +10,21 @@ T(n)=n/2\quad(n\text{ even}),\qquad T(n)=(3n+1)/2\quad(n\text{ odd}).
 
 ## Results and proof status
 
+### Integer residual growth and parallel source attacks — 23 November 2026
+
+The [new continuation](risk25/README.md) proves a power-law lower bound
+on residual degree for every hypothetical primitive positive integer
+cycle. A separate cyclotomic calculation makes its residual polynomial
+denominator exponentially larger than its maximum state, subject to the
+stated logarithm and ordinary-count inputs. The numerical gcd remains
+uncontrolled. The endpoint attack gives a critical full-carry reference
+bound and an exact transfer inequality retaining the actual repeated-word
+energy and all omitted mass. A new core/Std Lean module certifies
+source-aware triadic carry identities and universal finite reset blocks;
+its actual integer iteration supplies the required source identity.
+**Full cycle exclusion, the actual collision upper and universal witness
+existence remain open.**
+
 ### Triadic certificates and superpolynomial primitive denominators — 23 November 2026
 
 The [continuation](risk24/README.md) provides a total core/Std Lean verifier
