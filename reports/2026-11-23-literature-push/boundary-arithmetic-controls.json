@@ -1,0 +1,132 @@
+{
+  "reviewer": "/root/actual_collision",
+  "scope": "Independent exact finite controls; not an all-parameter enumeration proof.",
+  "script_sha256": "bb88953ed77c010bcd6ef75b6832d9470f0b33cd66af0a70f46e1ea66bd5b570",
+  "status": "PASS",
+  "cases": [
+    {
+      "parameters": {
+        "a": 4,
+        "b": 2,
+        "r": 2,
+        "periods": [
+          5,
+          2
+        ],
+        "offsets": [
+          0,
+          1
+        ]
+      },
+      "word_length": 80,
+      "odd_count": 40,
+      "full_binary_primitive_period": 80,
+      "rational_orbit_and_ordinary_realizer": "PASS",
+      "complete_numerical_gcd": "5",
+      "reduced_denominator_bits": 47,
+      "polynomial_gcd_degree": 16,
+      "shared_five_prime_power": {
+        "K": 2,
+        "R": 1,
+        "Y_minus_V": 1,
+        "gcd": 1,
+        "reduced_denominator": 2
+      }
+    },
+    {
+      "parameters": {
+        "a": 3,
+        "b": 1,
+        "r": 4,
+        "periods": [
+          2,
+          3,
+          5
+        ],
+        "offsets": [
+          3,
+          0,
+          2
+        ]
+      },
+      "word_length": 360,
+      "odd_count": 120,
+      "full_binary_primitive_period": 360,
+      "rational_orbit_and_ordinary_realizer": "PASS",
+      "complete_numerical_gcd": "1",
+      "reduced_denominator_bits": 97,
+      "polynomial_gcd_degree": 88,
+      "shared_five_prime_power": {
+        "K": 1,
+        "R": 1,
+        "Y_minus_V": 0,
+        "gcd": 0,
+        "reduced_denominator": 2
+      }
+    },
+    {
+      "parameters": {
+        "a": 3,
+        "b": 1,
+        "r": 5,
+        "periods": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "offsets": [
+          4,
+          1,
+          3,
+          0
+        ]
+      },
+      "word_length": 3150,
+      "odd_count": 1050,
+      "full_binary_primitive_period": 3150,
+      "rational_orbit_and_ordinary_realizer": "PASS",
+      "complete_numerical_gcd": "1",
+      "reduced_denominator_bits": 211,
+      "polynomial_gcd_degree": null,
+      "shared_five_prime_power": {
+        "K": 2,
+        "R": 1,
+        "Y_minus_V": 0,
+        "gcd": 0,
+        "reduced_denominator": 3
+      }
+    },
+    {
+      "parameters": {
+        "a": 8,
+        "b": 5,
+        "r": 3,
+        "periods": [
+          2,
+          3,
+          5
+        ],
+        "offsets": [
+          2,
+          0,
+          1
+        ]
+      },
+      "word_length": 720,
+      "odd_count": 450,
+      "full_binary_primitive_period": 720,
+      "rational_orbit_and_ordinary_realizer": "PASS",
+      "complete_numerical_gcd": "1",
+      "reduced_denominator_bits": 194,
+      "polynomial_gcd_degree": null,
+      "shared_five_prime_power": {
+        "K": 0,
+        "R": 0,
+        "Y_minus_V": 0,
+        "gcd": 0,
+        "reduced_denominator": 0
+      }
+    }
+  ]
+}

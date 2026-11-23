@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-23",
+  "lane": "actual_orbit_rigidity",
+  "base_commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+  "scope": "Written deductions from explicitly retained actual-path hypotheses. No Lean result or full Collatz theorem.",
+  "repository_sources": [
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ANALYTIC_GLUING.md",
+      "scope": "Sections 1–4: actual whole-path law, affine boundary and equivalent conditional laws.",
+      "sha256": "99f7c7249141006d94a18af8db13a546ebea7081c980360c78bcfff189e4be85",
+      "git_blob_sha": "31793fb8a1d39445d95090aaf2644b6f76a9e6ed",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 180,
+      "commit": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/ENTROPY_RIGIDITY.md",
+      "scope": "Sections 2–3: exact conditioning and decoupling; fixed-basin qualification retained.",
+      "sha256": "5165d1dc167432bbefc7c758e50323ca7412c835930c59fc9aa16164b2edfc80",
+      "git_blob_sha": "e55303bef9bc564b72c586cb4983cd203459125f",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/BOUNDARY_OVERLAP.md",
+      "scope": "Read full new proof; use arbitrary-reference conclusion (21) and common-law transfer.",
+      "sha256": "086640abba47b80e1c6d9baee8b2e6bb003e8fd320fe5afb2cd202e7b10838c4",
+      "git_blob_sha": "041d15c84ec5d826b2fdd197a5e9f4424f541e32",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/EXTENSIONS.md",
+      "scope": "Read full new proof; use fixed AC reweighting (E13)–(E15).",
+      "sha256": "0681b6a52408ee704f584110381ed5a259fb6d4a65d238631549069010b32b1b",
+      "git_blob_sha": "a34c0e993ccd190d47235c4285e53d6145660ea2",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 180,
+      "commit": "fcdcdbadc6172e414f7282442a8a6b85587d7e70",
+      "path": "research/source-clock-20261123/COLLISION_TRANSFER.md",
+      "scope": "Read the explicit model and actual high-profile-law boundary; no closing estimate imported.",
+      "sha256": "4f6494baa8fd85e936e69367c45a27ab774a8a0aa6ee188919e49f44371b7fe9",
+      "git_blob_sha": "9d856db99fd806ca519e072b866dda749c71ec40",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 182,
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/SOURCE_CLOSURE.md",
+      "scope": "Read common pressure maximum and full all-depth restrictions; no inconsistency inferred.",
+      "sha256": "50b9ebe3fe972c4c7fbbdd3697bb36917cc010f85335fb527330f2244c669f76",
+      "git_blob_sha": "9346c3b93fbd2e336a4e1c2e80d7b92ff5f34162",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 182,
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/ESCAPE_CLOSURE.md",
+      "scope": "Read complete ordinary loss/retained measure identities; no coalescence rate supplied.",
+      "sha256": "607228e47b1370435747e1843c3ed7b572ffcf3ef834647c18a1ca98575c57bf",
+      "git_blob_sha": "364611325bba005a086992d1447bbfbfd2977f80",
+      "access": "Exact GitHub raw source read; not a complete dependency audit",
+      "qualification": "SOURCE-QUALIFIED"
+    },
+    {
+      "pr": 178,
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/escape/PRESSURE_COLLISION_ATTACK.md",
+      "scope": "Current owned base proof read directly from complete checkout; Sections 1–4 reused.",
+      "qualification": "Its upstream flow hypotheses remain SOURCE-QUALIFIED",
+      "sha256": "cad066fc49bf987f198e9c1ad3098f05f2575d6f7cb74efa91e1c4483523c8be",
+      "git_blob_sha": "019aa6a468c40e76720fa786939b076ab2e6ab61"
+    },
+    {
+      "pr": 186,
+      "commit": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "path": "literature/deep-machinery-20261122/05_rigidity_and_long_shots.md",
+      "scope": "Read rigidity/higher-rank/selected-branch hypothesis boundaries as a guide; no external rigidity theorem imported."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "David Aldous and James Allen Fill",
+      "title": "Reversible Markov Chains and Random Walks on Graphs",
+      "url": "https://www.stat.berkeley.edu/users/aldous/RWG/Book_Ralph/Ch12.S1.html",
+      "location": "Chapter 12, Sections 12.1.1–12.1.2, equation (12.3)",
+      "access": "Author text read directly",
+      "use": "Coupling methodology; exact calculations here are self-contained, without the finite-state/reversible-chain application assumptions."
+    }
+  ],
+  "indirect_source": [
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/COLLISION_LOGARITHMIC_GAIN.md",
+      "scope": "Critical lower reused through PR178 baseline, not freshly audited."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+import BandCertificates
+import BandDescent
+import BandSimulation
+import ReturnFourier
+import MarkPhase
+import MarkFrequency
+import BandBridge
+
+/-! Complete public-theorem axiom audit for the marked-band development. -/
+
+-- BandCore
+#print axioms CollatzBandCore.orbit_add
+#print axioms CollatzBandCore.step_add_even
+#print axioms CollatzBandCore.high_bit_lift
+#print axioms CollatzBandCore.orbit_linear_lower
+
+-- BandCertificates
+#print axioms CollatzBandCertificates.core_orbit_eq_shell
+#print axioms CollatzBandCertificates.stopping_prefix_multiplier
+#print axioms CollatzBandCertificates.stopping_prefix_cylinder
+#print axioms CollatzBandCertificates.dyadic_offset_descent
+#print axioms CollatzBandCertificates.certified_offset_endpoint
+#print axioms CollatzBandCertificates.certified_offset_descent
+#print axioms CollatzBandCertificates.marked_of_odd_offset_le_depth
+#print axioms CollatzBandCertificates.unbounded_marked_certified_offsets
+#print axioms CollatzBandCertificates.basin_of_offset_stopping_floor
+
+-- BandDescent
+#print axioms CollatzBandDescent.odd_run_survives_three_halves
+#print axioms CollatzBandDescent.input_odd_run_form
+#print axioms CollatzBandDescent.input_log2
+#print axioms CollatzBandDescent.input_marked
+#print axioms CollatzBandDescent.depth_le_horizon
+#print axioms CollatzBandDescent.offset_survives_depth
+#print axioms CollatzBandDescent.input_survives_depth
+#print axioms CollatzBandDescent.unbounded_missing_offset_prefix
+#print axioms CollatzBandDescent.quotient_odd
+#print axioms CollatzBandDescent.quotient_identity
+#print axioms CollatzBandDescent.offset_hits_quotient
+#print axioms CollatzBandDescent.input_hits_sibling
+#print axioms CollatzBandDescent.input_basin_iff_multiplier
+#print axioms CollatzBandDescent.offset_basin_iff_quotient
+
+-- BandSimulation
+#print axioms CollatzShell.BandSimulation.buffered_seed_bounds
+#print axioms CollatzShell.BandSimulation.buffered_seed_log
+#print axioms CollatzShell.BandSimulation.buffered_seed_marked
+#print axioms CollatzShell.BandSimulation.buffered_prefix
+#print axioms CollatzShell.BandSimulation.ordinary_marked_simulation
+
+-- ReturnFourier
+#print axioms CollatzShell.ForwardSection.ReturnFourier.character_norm
+#print axioms CollatzShell.ForwardSection.ReturnFourier.character_add
+#print axioms CollatzShell.ForwardSection.ReturnFourier.character_nat
+#print axioms CollatzShell.ForwardSection.ReturnFourier.character_sub_nat
+#print axioms CollatzShell.ForwardSection.ReturnFourier.character_change
+#print axioms CollatzShell.ForwardSection.ReturnFourier.actual_phase_step
+#print axioms CollatzShell.ForwardSection.ReturnFourier.actual_character_step
+#print axioms CollatzShell.ForwardSection.ReturnFourier.actual_log_cocycle
+#print axioms CollatzShell.ForwardSection.ReturnFourier.sum_coboundary
+#print axioms CollatzShell.ForwardSection.ReturnFourier.odd_prefix_fourier
+#print axioms CollatzShell.ForwardSection.ReturnFourier.reciprocal_set_cutoff
+#print axioms CollatzShell.ForwardSection.ReturnFourier.odd_prefix_reciprocal_cutoff
+#print axioms CollatzShell.ForwardSection.ReturnFourier.injective_prefix_fourier
+#print axioms CollatzShell.ForwardSection.ReturnFourier.character_alpha_ne_one
+#print axioms CollatzShell.ForwardSection.ReturnFourier.fourier_averages_vanish
+#print axioms CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit
+
+-- MarkPhase
+#print axioms CollatzShell.ForwardSection.MarkPhase.marked_phase_small
+#print axioms CollatzShell.ForwardSection.MarkPhase.injective_eventually_large
+#print axioms CollatzShell.ForwardSection.MarkPhase.marked_phase_eventually_small
+
+-- MarkFrequency
+#print axioms CollatzShell.ForwardSection.MarkFrequency.kernel_nonneg
+#print axioms CollatzShell.ForwardSection.MarkFrequency.frequency_add
+#print axioms CollatzShell.ForwardSection.MarkFrequency.character_pair_re
+#print axioms CollatzShell.ForwardSection.MarkFrequency.kernel_succ
+#print axioms CollatzShell.ForwardSection.MarkFrequency.simultaneous_fourier
+#print axioms CollatzShell.ForwardSection.MarkFrequency.kernel_sum_bound
+#print axioms CollatzShell.ForwardSection.MarkFrequency.kernel_large
+#print axioms CollatzShell.ForwardSection.MarkFrequency.kernel_sub_nat
+#print axioms CollatzShell.ForwardSection.MarkFrequency.kernel_count_bound
+#print axioms CollatzShell.ForwardSection.MarkFrequency.counts_vanish_of_kernel_tail
+#print axioms CollatzShell.ForwardSection.MarkFrequency.marked_kernel_tail
+#print axioms CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero
+
+-- BandBridge
+#print axioms CollatzBandBridge.return_descent_of_endpoint_guard
+#print axioms CollatzBandBridge.return_descent_of_small_endpoint
+#print axioms CollatzBandBridge.first_return_descent_of_even_prefix_guard
+#print axioms CollatzBandBridge.first_return_descent_of_even_prefix_small
+#print axioms CollatzBandBridge.power_source_prefix
+#print axioms CollatzBandBridge.familyHalf_positive
+#print axioms CollatzBandBridge.family_depth_split
+#print axioms CollatzBandBridge.family_offset_identity
+#print axioms CollatzBandBridge.family_high_power
+#print axioms CollatzBandBridge.family_odd
+#print axioms CollatzBandBridge.family_log2
+#print axioms CollatzBandBridge.family_marked
+#print axioms CollatzBandBridge.family_power_source
+#print axioms CollatzBandBridge.family_endpoint
+#print axioms CollatzBandBridge.family_even_prefix
+#print axioms CollatzBandBridge.family_endpoint_small
+#print axioms CollatzBandBridge.family_first_return_descent
+#print axioms CollatzBandBridge.unbounded_descending_first_returns
+
+#check CollatzBandBridge.family_first_return_descent
+#check CollatzBandBridge.unbounded_descending_first_returns
+#check CollatzShell.ForwardSection.MarkFrequency.marked_visits_density_zero
+#check CollatzShell.ForwardSection.ReturnFourier.ordinary_odd_fourier_limit
+#check CollatzBandDescent.unbounded_missing_offset_prefix
+#check CollatzShell.BandSimulation.ordinary_marked_simulation
+#check CollatzBandCertificates.basin_of_offset_stopping_floor

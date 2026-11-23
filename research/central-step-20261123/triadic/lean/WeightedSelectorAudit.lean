@@ -1,0 +1,7 @@
+import WeightedSelector
+
+#print axioms CollatzWeightedSelector.weight_pos
+#print axioms CollatzWeightedSelector.power_weight_bound
+#print axioms CollatzWeightedSelector.rational_gap
+#print axioms CollatzWeightedSelector.weighted_rational_gap
+#print axioms CollatzWeightedSelector.forced_weight_growth

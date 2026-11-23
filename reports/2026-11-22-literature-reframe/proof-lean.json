@@ -1,0 +1,157 @@
+{
+  "after": {
+    "head": "293e13c45b2c9364757378c940fc06a38745bd4d",
+    "status": "",
+    "tracked_files": 445,
+    "tree": "4d088f6d4e96b02155a1cddd7e9532ec0f5abca1"
+  },
+  "axiom_dependencies": {
+    "CollatzShell.PhysicalTailBarrier.bounded_erasure_no_meeting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.PhysicalTailBarrier.bounded_tail_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.PhysicalTailBarrier.maximal_tail_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.PhysicalTailBarrier.shifted_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.doubled_prefix_forces_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.no_distinct_collision": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.orbit_height": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.orbit_height_at": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.parity_prefix_divisibility": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.parity_prefix_separation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzSourceCollision.source_collision_budget": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "before": {
+    "head": "293e13c45b2c9364757378c940fc06a38745bd4d",
+    "status": "",
+    "tracked_files": 445,
+    "tree": "4d088f6d4e96b02155a1cddd7e9532ec0f5abca1"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_literature_checked",
+      "exit_code": 0,
+      "seconds": 0.035,
+      "stderr": "",
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n"
+    },
+    {
+      "argv": [
+        "bash",
+        "research/literature-reframe-20261122/lean/build.sh"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_literature_checked",
+      "exit_code": 0,
+      "seconds": 50.538,
+      "stderr": "",
+      "stdout": "../../band-return-20261121/lean/vendor/ShellCover.lean: OK\n../../band-return-20261121/lean/vendor/ForwardSection.lean: OK\n../../reframe-20261121/lean/MarkedDyadicTransport.lean: OK\nChecking imported ShellCover\nChecking imported ForwardSection\n'CollatzShell.ForwardSection.steer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.marked_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.bounded_visit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.ForwardSection.collatz_iff_section' depends on axioms: [propext, Classical.choice, Quot.sound]\nChecking imported MarkedDyadicTransport\n'CollatzShell.MarkedDyadicTransport.marked_dyadic_extract' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedDyadicTransport.marked_odd_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedDyadicTransport.marked_half_of_three_mod_four' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.MarkedDyadicTransport.marked_odd_ceil_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedDyadicTransport.marked_upper_half_of_one_mod_four' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.MarkedDyadicTransport.merge_basin_iff' depends on axioms: [propext]\n'CollatzShell.MarkedDyadicTransport.rising_phase_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedDyadicTransport.solved_phase_marked_descent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.MarkedDyadicTransport.dyadic_marked_merger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.MarkedDyadicTransport.collatz_iff_dyadic_marked_cover' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nChecking new SourceCollision\n'CollatzSourceCollision.parity_prefix_divisibility' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.parity_prefix_separation' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.orbit_height' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.orbit_height_at' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.source_collision_budget' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.no_distinct_collision' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceCollision.doubled_prefix_forces_return' depends on axioms: [propext, Classical.choice, Quot.sound]\nChecking new PhysicalTailBarrier\n'CollatzShell.PhysicalTailBarrier.shifted_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.maximal_tail_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.bounded_tail_separation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.bounded_erasure_no_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]\nChecking new LiteratureAudit\n'CollatzSourceCollision.parity_prefix_divisibility' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.parity_prefix_separation' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.orbit_height' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.orbit_height_at' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.source_collision_budget' depends on axioms: [propext, Quot.sound]\n'CollatzSourceCollision.no_distinct_collision' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzSourceCollision.doubled_prefix_forces_return' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.shifted_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.maximal_tail_affine' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.bounded_tail_separation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.PhysicalTailBarrier.bounded_erasure_no_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]\nLiterature Lean build completed.\n"
+    }
+  ],
+  "fast_copy_after": {
+    "aggregate_sha256": "876e0375974c208a001c7a11d87f44ad4970950991ddf91caec4a7605633b2b6",
+    "bytes": 4120285704,
+    "files": 24419,
+    "root": "/tmp/collatz-180-fast",
+    "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux"
+  },
+  "fast_copy_before": {
+    "aggregate_sha256": "876e0375974c208a001c7a11d87f44ad4970950991ddf91caec4a7605633b2b6",
+    "bytes": 4120285704,
+    "files": 24419,
+    "root": "/tmp/collatz-180-fast",
+    "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux"
+  },
+  "finished_utc": "2026-11-21T23:20:35.916807+00:00",
+  "mathlib_after": {
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_changes": false
+  },
+  "mathlib_before": {
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_changes": false
+  },
+  "public_theorem_count": 11,
+  "public_theorems": [
+    "CollatzShell.PhysicalTailBarrier.bounded_erasure_no_meeting",
+    "CollatzShell.PhysicalTailBarrier.bounded_tail_separation",
+    "CollatzShell.PhysicalTailBarrier.maximal_tail_affine",
+    "CollatzShell.PhysicalTailBarrier.shifted_affine",
+    "CollatzSourceCollision.doubled_prefix_forces_return",
+    "CollatzSourceCollision.no_distinct_collision",
+    "CollatzSourceCollision.orbit_height",
+    "CollatzSourceCollision.orbit_height_at",
+    "CollatzSourceCollision.parity_prefix_divisibility",
+    "CollatzSourceCollision.parity_prefix_separation",
+    "CollatzSourceCollision.source_collision_budget"
+  ],
+  "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux",
+  "scope": "New literature Lean packet and complete public-theorem axiom audit; the written analytic arguments are not formalized, and full Collatz remains open.",
+  "selected_runtime": "/tmp/collatz-180-fast",
+  "source_sha256": {
+    "reports/2026-11-22-literature-reframe/ARITHMETIC_REVIEW.md": "3e1eba9a825f95d3968f894fd5c0ea823482fb7015eb3645de5970f4a0b96474",
+    "reports/2026-11-22-literature-reframe/CRITICAL_TILT_REVIEW.md": "342f07ed3455630746fe6002445108a39ea3a8f23e07c1bebd492aeefc457808",
+    "reports/2026-11-22-literature-reframe/ORDINARY_RENEWAL_REVIEW.md": "d841737535ac0f32b8762411ccae5818eae86f6517b6f491f8b05eaf382344a6",
+    "reports/2026-11-22-literature-reframe/PHYSICAL_MERGERS_REVIEW.md": "1bb15e34ad301423a3c5f3a628758f0acb8c1c906f2f73f7a379948259b2d0ed",
+    "reports/2026-11-22-literature-reframe/README.md": "881d9cc23e260eb5a4fc29770bc630785ba83cd6f864539447556a53c9a6722b",
+    "reports/2026-11-22-literature-reframe/SOURCE_REFRESH.json": "f392ecc389f4416c88085415385c198f57d17961734a80942ce11e999ce91945",
+    "reports/2026-11-22-literature-reframe/validate_literature.py": "fbf7a589f5064e63761422701f313a80754884605fdbd031cedf46faddfad718",
+    "research/band-return-20261121/lean/vendor/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "research/band-return-20261121/lean/vendor/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/literature-reframe-20261122/ARITHMETIC_WORDS.md": "06d0984a2be9c49dde162140d35a3023020dffb9a265760a4279d890d8e8d9ce",
+    "research/literature-reframe-20261122/CRITICAL_TILT.md": "5837337aa29c6c67776a62d21accf216513b0e6da8d358870e6f5b79ebdf4e71",
+    "research/literature-reframe-20261122/ORDINARY_RENEWAL.md": "519f3e5ade92d0d39158a08b7a47bd1e83e292a9bab77ae0bbf94c6bafbe5139",
+    "research/literature-reframe-20261122/PHYSICAL_MERGERS.md": "bc31a74ea3797b5968e36652444eb45c88c902f0e17d662210a174f56bf6c0ff",
+    "research/literature-reframe-20261122/README.md": "e56c33ab289af969a7fea7a50e48d13470690515db14a0fd429dfd19c4ec1189",
+    "research/literature-reframe-20261122/lean/.gitignore": "20af0ea19640b59af6ab264ff8d359809a527b4940efc1a4c8b48903cbb653d5",
+    "research/literature-reframe-20261122/lean/LiteratureAudit.lean": "bbcc380999463321ee760ecccd99fbafc3fd000b2951e65d1beed5736a74de0a",
+    "research/literature-reframe-20261122/lean/PhysicalTailBarrier.lean": "5a127bd32a9dd451696ccccd8bd963d1ea965a020a0f3cfee738f21d302293ec",
+    "research/literature-reframe-20261122/lean/SourceCollision.lean": "b8edb0f0388e3e8d785233343e06bb2376dab079e0a7c2e3d2e6c0df2d4327a7",
+    "research/literature-reframe-20261122/lean/build.sh": "12f77d749ef9ba5148dac1dc13fea68c9df9e1cacff0531d2ef5d3d19a81c175",
+    "research/literature-reframe-20261122/lean/imports.sha256": "901c13aca667cc503ce4aa7a918d65047d32c11ed642f486dc7566f4ce3c3e17",
+    "research/literature-reframe-20261122/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "research/reframe-20261121/lean/MarkedDyadicTransport.lean": "3d4f84900ddb2f5d6f2ad72448bddb0606853214749987b5ad32ccb886d7a521"
+  },
+  "started_utc": "2026-11-21T23:19:06.446599+00:00",
+  "success": true,
+  "validator_sha256": "fbf7a589f5064e63761422701f313a80754884605fdbd031cedf46faddfad718"
+}

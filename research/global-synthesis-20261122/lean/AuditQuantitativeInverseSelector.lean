@@ -1,0 +1,13 @@
+import QuantitativeInverseSelector
+
+#print axioms CollatzShell.QuantitativeInverseSelector.selected_spec
+#print axioms CollatzShell.QuantitativeInverseSelector.odd_gap_path
+#print axioms CollatzShell.QuantitativeInverseSelector.odd_gap_nonterminal
+#print axioms CollatzShell.QuantitativeInverseSelector.firstTime_increases
+#print axioms CollatzShell.QuantitativeInverseSelector.GapPath.append
+#print axioms CollatzShell.QuantitativeInverseSelector.GapPath.run
+#print axioms CollatzShell.QuantitativeInverseSelector.GapPath.start_odd
+#print axioms CollatzShell.QuantitativeInverseSelector.walk_path
+#print axioms CollatzShell.QuantitativeInverseSelector.walk_injective
+#print axioms CollatzShell.QuantitativeInverseSelector.crosses_within_window_card
+#print axioms CollatzShell.QuantitativeInverseSelector.bounded_window_literal_tail

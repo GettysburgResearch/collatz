@@ -1,0 +1,4 @@
+'CollatzReassessment.FiniteClock.floor_along_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzReassessment.FiniteClock.finite_normalization_forces_summable_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,10 @@
+'CollatzTriadicBoundary.original_boundary_recurrence' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicBoundary.dual_boundary_recurrence' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicBoundary.defect_zero_iff' does not depend on any axioms
+'CollatzTriadicBoundary.defect_square' depends on axioms: [propext]
+'CollatzTriadicBoundary.not_three_dvd_twice' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicBoundary.not_three_dvd_backward_odd' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicBoundary.backward_even_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicBoundary.backward_odd_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzTriadicBoundary.alternating_carry_closed' depends on axioms: [propext, Quot.sound]
+'CollatzTriadicBoundary.alternating_residual' depends on axioms: [propext, Quot.sound]

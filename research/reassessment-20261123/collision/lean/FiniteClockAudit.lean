@@ -1,0 +1,4 @@
+import FiniteClock
+
+#print axioms CollatzReassessment.FiniteClock.floor_along_orbit
+#print axioms CollatzReassessment.FiniteClock.finite_normalization_forces_summable_clock

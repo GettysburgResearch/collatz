@@ -1,0 +1,737 @@
+{
+  "coverage": "OPEN",
+  "expanding_return": {
+    "clock": 30,
+    "endpoint": 21091,
+    "guard_margin": 1650039693032667072077843727761779032809215218763591452697176891458523484,
+    "rank_ratio": {
+      "denominator": 6074350561210166768019460931940444758202303804690897863174294222864630871,
+      "numerator": 5661840637952000000000000000000000000000000000000000000000000000000000000
+    },
+    "source": 19483
+  },
+  "lambda": {
+    "denominator": 200,
+    "numerator": 201
+  },
+  "rows": [
+    {
+      "a": 7,
+      "b": 5,
+      "binary_offset_margin": 4301,
+      "c": -69,
+      "coefficient_guard_margin": 1413788636052300672,
+      "coefficient_ratio": {
+        "denominator": 100000000000000,
+        "numerator": 54546404447907
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 239913382400000000000000,
+        "numerator": 130863889284472199258361
+      },
+      "first_child_parameter": 154265,
+      "first_parameter": 292863,
+      "first_psi_source_rank_ratio": {
+        "denominator": 25303366400000000000000,
+        "numerator": 13802052738701061605889
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 3,
+          "numerator": 16373
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 1748,
+      "reference": "-197/243",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          4,
+          5
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          4,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 48,
+      "source_clock_increment_without_padding": 7
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "binary_offset_margin": 17127,
+      "c": -271,
+      "coefficient_guard_margin": 99068817140595997797888,
+      "coefficient_ratio": {
+        "denominator": 1000000000000000000,
+        "numerator": 734576428699963569
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 2818568704000000000000000000,
+        "numerator": 2070452734730860905492872769
+      },
+      "first_child_parameter": 543705,
+      "first_parameter": 774143,
+      "first_psi_source_rank_ratio": {
+        "denominator": 2675438336000000000000000000,
+        "numerator": 1965312634192692231870646209
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 9,
+          "numerator": 65491
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 7100,
+      "reference": "-29/27",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          4,
+          5
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          4,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 674,
+      "source_clock_increment_without_padding": 9
+    },
+    {
+      "a": 9,
+      "b": 6,
+      "binary_offset_margin": 15335,
+      "c": -243,
+      "coefficient_guard_margin": 99068817140595997797888,
+      "coefficient_ratio": {
+        "denominator": 1000000000000000000,
+        "numerator": 734576428699963569
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 6429022720000000000000000000,
+        "numerator": 4722606296742619025485021557
+      },
+      "first_child_parameter": 688981,
+      "first_parameter": 980991,
+      "first_psi_source_rank_ratio": {
+        "denominator": 1695152512000000000000000000,
+        "numerator": 1245218495847624179227725111
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 27,
+          "numerator": 130981
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 6344,
+      "reference": "-755/729",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          3,
+          3,
+          7
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 486,
+      "source_clock_increment_without_padding": 9
+    },
+    {
+      "a": 11,
+      "b": 7,
+      "binary_offset_margin": 68277,
+      "c": -1069,
+      "coefficient_guard_margin": 481307333188875628129892352,
+      "coefficient_ratio": {
+        "denominator": 10000000000000000000000,
+        "numerator": 9892540765302409383723
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 30259957760000000000000000000000,
+        "numerator": 29934766102046054747083546231161
+      },
+      "first_child_parameter": 713433,
+      "first_parameter": 761855,
+      "first_psi_source_rank_ratio": {
+        "denominator": 105318840320000000000000000000000,
+        "numerator": 104187021083662269402957439896273
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 1,
+          "numerator": 8187
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 28724,
+      "reference": "-1039/729",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          4,
+          5
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          4,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 779,
+      "source_clock_increment_without_padding": 11
+    },
+    {
+      "a": 11,
+      "b": 7,
+      "binary_offset_margin": 68789,
+      "c": -1077,
+      "coefficient_guard_margin": 481307333188875628129892352,
+      "coefficient_ratio": {
+        "denominator": 10000000000000000000000,
+        "numerator": 9892540765302409383723
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 5312336384000000000000000000000000,
+        "numerator": 5255249743273932708814031930841753
+      },
+      "first_child_parameter": 3795393,
+      "first_parameter": 4052991,
+      "first_psi_source_rank_ratio": {
+        "denominator": 560285480960000000000000000000000,
+        "numerator": 554264624487854255177673933805503
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 3,
+          "numerator": 16373
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 28940,
+      "reference": "-3125/2187",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1,
+          2,
+          4,
+          5
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          4,
+          1,
+          1,
+          4,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 480,
+      "source_clock_increment_without_padding": 11
+    },
+    {
+      "a": 11,
+      "b": 7,
+      "binary_offset_margin": 67253,
+      "c": -1053,
+      "coefficient_guard_margin": 481307333188875628129892352,
+      "coefficient_ratio": {
+        "denominator": 10000000000000000000000,
+        "numerator": 9892540765302409383723
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 822485979136000000000000000000000,
+        "numerator": 813647474688645877934544942895749
+      },
+      "first_child_parameter": 2938121,
+      "first_parameter": 3137535,
+      "first_psi_source_rank_ratio": {
+        "denominator": 433732843520000000000000000000000,
+        "numerator": 429071913607272264486989188329717
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 27,
+          "numerator": 130981
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 28292,
+      "reference": "-3101/2187",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          4,
+          1,
+          2,
+          4,
+          5
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          4,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 1377,
+      "source_clock_increment_without_padding": 11
+    },
+    {
+      "a": 11,
+      "b": 7,
+      "binary_offset_margin": 61493,
+      "c": -963,
+      "coefficient_guard_margin": 481307333188875628129892352,
+      "coefficient_ratio": {
+        "denominator": 10000000000000000000000,
+        "numerator": 9892540765302409383723
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 4015793131520000000000000000000000,
+        "numerator": 3972639117536292713145141715346457
+      },
+      "first_child_parameter": 2869079,
+      "first_parameter": 3063807,
+      "first_psi_source_rank_ratio": {
+        "denominator": 847081369600000000000000000000000,
+        "numerator": 837978570109175073768941337779967
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 3,
+          "numerator": 16373
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 25862,
+      "reference": "-3011/2187",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          3,
+          3,
+          7
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          3,
+          1,
+          1,
+          5,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 2007,
+      "source_clock_increment_without_padding": 11
+    },
+    {
+      "a": 10,
+      "b": 7,
+      "binary_offset_margin": 35893,
+      "c": -579,
+      "coefficient_guard_margin": 113728768490519591114750976,
+      "coefficient_ratio": {
+        "denominator": 100000000000000000000,
+        "numerator": 49216620722897559123
+      },
+      "first_binary_source_rank_ratio": {
+        "denominator": 21125863936000000000000000000000,
+        "numerator": 10397434561284350330028045279441
+      },
+      "first_child_parameter": 1509335,
+      "first_parameter": 3223551,
+      "first_psi_source_rank_ratio": {
+        "denominator": 4456236953600000000000000000000,
+        "numerator": 2193208883884665556147693822023
+      },
+      "prefix_lower_bounds_for_all_h_ge_one": {
+        "source_new": {
+          "denominator": 1,
+          "numerator": 1457
+        },
+        "source_old": {
+          "denominator": 1,
+          "numerator": 23317
+        },
+        "target_new": {
+          "denominator": 3,
+          "numerator": 16373
+        },
+        "target_old": {
+          "denominator": 1,
+          "numerator": 27635
+        }
+      },
+      "psi_offset_margin": 14470,
+      "reference": "-1603/2187",
+      "retained_words": {
+        "source_new": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          4,
+          5
+        ],
+        "source_old": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          4
+        ],
+        "target_new": [
+          2,
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "target_old": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      "rho": 2100,
+      "source_clock_increment_without_padding": 10
+    }
+  ],
+  "scope": "Exact common-rank coefficient, affine-offset, all-h prefix lower-bound, and no-padding clock checks; old ordinary template legality remains a pinned dependency.",
+  "source": {
+    "claims": [
+      "NT2",
+      "NT3",
+      "Eight exact instances"
+    ],
+    "head": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+    "path": "research/closure-frontier-20261121/NEGATIVE_TEMPLATE_GRAMMAR.md",
+    "pr": 168
+  },
+  "status": "PASS",
+  "symbolic_retained_endpoints_in_h": {
+    "source_new": [
+      1458,
+      -1
+    ],
+    "source_old": [
+      23328,
+      -11
+    ],
+    "target_new": [
+      10368,
+      -5
+    ],
+    "target_old": [
+      41472,
+      -19
+    ]
+  }
+}

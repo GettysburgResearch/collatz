@@ -1,0 +1,8 @@
+'CollatzRealAdicControl.denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRealAdicControl.denominator_succ' depends on axioms: [propext]
+'CollatzRealAdicControl.denominator_even' depends on axioms: [propext]
+'CollatzRealAdicControl.bounded_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRealAdicControl.digit_zero_one' depends on axioms: [propext]
+'CollatzRealAdicControl.no_two_zeroes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRealAdicControl.finite_bernstein' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRealAdicControl.residual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

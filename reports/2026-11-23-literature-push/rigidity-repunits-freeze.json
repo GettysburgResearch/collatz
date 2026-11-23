@@ -1,0 +1,44 @@
+{
+  "status": "FROZEN FOR INDEPENDENT REVIEW; strict Lean build and all-theorem axiom audit PASS",
+  "date_utc": "2026-11-23T05:14:12.966327+00:00",
+  "author": "/root/source_construction",
+  "base_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "files": [
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+      "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc",
+      "bytes": 5065
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean",
+      "sha256": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86",
+      "bytes": 1249
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/README.md",
+      "sha256": "bab5bbf3c86605d5218bf14bb3791080bcc9dcadaf29c06afc67eaa7a7c3f507",
+      "bytes": 2417
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-proof.md",
+      "sha256": "e162eea2679132b0973982f2ecc1d782641064d0c9778b76cf669d087bfeea59",
+      "bytes": 2555
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-lean-receipt.json",
+      "sha256": "6fcf29112b6781938f236c6216a1fb5ca085f1b6da45c1d10e359e5cc8703a31",
+      "bytes": 4104
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-repunits-axioms.log",
+      "sha256": "53e8606fd403ac12cd2da27ab3d98ba687ff57c1195009c344e0276d14ea7bf0",
+      "bytes": 1823
+    }
+  ],
+  "scope": "17 theorems: full homogeneous-repunit gcd and exact numerical interfaces. Complete packet numerator gcd is not included in this freeze."
+}

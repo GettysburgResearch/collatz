@@ -1,0 +1,105 @@
+{
+  "before": {
+    "head": "c09585437b23c8b75d834872bada6b17810d2668",
+    "status": "",
+    "tracked_files": 421,
+    "tree": "9301c15d2d7647cb83b05c82da97a34f9a4c6daa"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_reframe_checkA",
+      "exit_code": 0,
+      "seconds": 0.035,
+      "stderr": "",
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n"
+    },
+    {
+      "argv": [
+        "bash",
+        "research/reframe-20261121/lean/build.sh"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_reframe_checkA",
+      "exit_code": 1,
+      "seconds": 1.176,
+      "stderr": "input file '/workspace/scratch/56e7a5765d0c/collatz_reframe_checkA/research/band-return-20261121/lean/vendor/ShellCover.lean' must be contained in root directory (/workspace/scratch/56e7a5765d0c/collatz_reframe_checkA/research/reframe-20261121/lean/)\n",
+      "stdout": "../../band-return-20261121/lean/vendor/ShellCover.lean: OK\n../../band-return-20261121/lean/vendor/ForwardSection.lean: OK\nChecking imported ShellCover\n"
+    }
+  ],
+  "error": "Command failed: ['bash', 'research/reframe-20261121/lean/build.sh']",
+  "fast_copy_before": {
+    "aggregate_sha256": "9c79814a6eb502263a04d033a37966333d856ff9d9e2f942241b664d11e2d80d",
+    "bytes": 3929243208,
+    "files": 23349,
+    "root": "/tmp/collatz-180-fast",
+    "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux"
+  },
+  "finished_utc": "2026-11-21T22:37:17.520131+00:00",
+  "mathlib_before": {
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_changes": false
+  },
+  "public_theorems": [
+    "CollatzDiscretePump.defect_iter",
+    "CollatzDiscretePump.defect_step",
+    "CollatzDiscretePump.first_hit_unique",
+    "CollatzDiscretePump.infinite_chain_constant",
+    "CollatzDiscretePump.infinite_chain_fixed",
+    "CollatzDiscretePump.infinite_chain_fixed_equation",
+    "CollatzDiscretePump.loop_budget",
+    "CollatzDiscretePump.loop_divisibility",
+    "CollatzDiscretePump.no_canonical_affine_pump",
+    "CollatzShell.MarkedDyadicTransport.collatz_iff_dyadic_marked_cover",
+    "CollatzShell.MarkedDyadicTransport.dyadic_marked_merger",
+    "CollatzShell.MarkedDyadicTransport.marked_dyadic_extract",
+    "CollatzShell.MarkedDyadicTransport.marked_half_of_three_mod_four",
+    "CollatzShell.MarkedDyadicTransport.marked_odd_ceil_prefix",
+    "CollatzShell.MarkedDyadicTransport.marked_odd_prefix",
+    "CollatzShell.MarkedDyadicTransport.marked_upper_half_of_one_mod_four",
+    "CollatzShell.MarkedDyadicTransport.merge_basin_iff",
+    "CollatzShell.MarkedDyadicTransport.rising_phase_merger",
+    "CollatzShell.MarkedDyadicTransport.solved_phase_marked_descent",
+    "CollatzShell.MergerPopulationPacking.first_hit_common_predecessor",
+    "CollatzShell.MergerPopulationPacking.first_hit_no_advance",
+    "CollatzShell.MergerPopulationPacking.marked_octave_capacity",
+    "CollatzShell.MergerPopulationPacking.marked_population_density_packing",
+    "CollatzShell.MergerPopulationPacking.marked_population_packing",
+    "CollatzShell.MergerPopulationPacking.marked_population_sum"
+  ],
+  "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux",
+  "scope": "New reframe Lean packet, all-public-theorem axiom audit, and exact Green arithmetic replay; full Collatz remains open.",
+  "selected_runtime": "/tmp/collatz-180-fast",
+  "source_sha256": {
+    "reports/2026-11-21-reframe/DISCRETE_REVIEW.md": "26f1e24add4e06990cdc019a39af122014e91e5bce05e588ef42518562ba5324",
+    "reports/2026-11-21-reframe/GLOBAL_MASS_REVIEW.md": "801795d14782d6769e49075aa49c754c443fb3d9c31bd1e955296cb94105639e",
+    "reports/2026-11-21-reframe/GREEN_FRACTIONAL_MOMENTS_REVIEW.md": "2318aa9fca6776e4fb503c62cff2d40f98c72246810be18c62f00e4a366081d6",
+    "reports/2026-11-21-reframe/GREEN_TOPOLOGY_REVIEW.md": "0a09346db26477301c45daea5d782ed05bd60e3b29aa02ab31d651e5c8d0bb95",
+    "reports/2026-11-21-reframe/MERGER_REVIEW.md": "230e5b7138eb6b897bfaf5fa3d09f6dee9ef49cf2176d4db27f51dccebbe1c45",
+    "reports/2026-11-21-reframe/README.md": "243c84be1c3f36083b6e8b7ec69f54a8c668cac361661312ae9e20ffd193dfcf",
+    "reports/2026-11-21-reframe/REPOSITORY_SNAPSHOT.json": "b61fbae5c4f1e17b74850b7cbf3dcf9753444f884a5b6f703bd4ef18723c22b2",
+    "reports/2026-11-21-reframe/validate_reframe.py": "ee69fd77daa6037c1ca3a4df528aeb219a4e63eec86514b6079f3dc117b2905e",
+    "research/band-return-20261121/lean/vendor/ForwardSection.lean": "f134020b95f79c3b90cfe104c7d4234ee8d162c97acaa02c6aefc6ec86d19ae4",
+    "research/band-return-20261121/lean/vendor/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/reframe-20261121/DISCRETE_CLOSURE.md": "e3dd7d63c47e7d32a73b7e381af5a5b234eb223ed6ce87d900d94e1438382113",
+    "research/reframe-20261121/GLOBAL_MASS.md": "212999316311aa1e6b79b764b4686828fc36b5e49e6c211f5cc6931791fb1472",
+    "research/reframe-20261121/GREEN_FRACTIONAL_MOMENTS.md": "b54169b4ee8f2530688984d9816872eebff88cc668a34710506bbc4ad7caaf6b",
+    "research/reframe-20261121/GREEN_TOPOLOGY.md": "5e3242f7d6aaf4233e5313a34fa628b67b8461fb2c85de8504743c05baa79b57",
+    "research/reframe-20261121/README.md": "5c3060130f08e29a6f6650e39de6db8347fabbeea6789c423a055796eb70175a",
+    "research/reframe-20261121/UNIVERSAL_MERGERS.md": "f14f5b3fce434d90b5531cb73ceec5b5564b5dbc9f89526e19f6f0580380c645",
+    "research/reframe-20261121/global_mass_green_certificate.py": "4ba23fd51bc07a4f7bc54957046f4499aa9386b8cef203f3f64f1af4f539ea50",
+    "research/reframe-20261121/lean/.gitignore": "a9e258e426862914b3debe82a2ec0e95fc5519557e6e660ad229d3260808fc49",
+    "research/reframe-20261121/lean/DiscretePump.lean": "d7985c9dd16f6b5eb986b7d75e13a53852615b3f063534cb3a7e9dfa1ea2098f",
+    "research/reframe-20261121/lean/MarkedDyadicTransport.lean": "3d4f84900ddb2f5d6f2ad72448bddb0606853214749987b5ad32ccb886d7a521",
+    "research/reframe-20261121/lean/MergerPopulationPacking.lean": "57ac88e6ace8379db791bf68086d52078d099930df780affdeb5626ab6c052cc",
+    "research/reframe-20261121/lean/ReframeAudit.lean": "a1ddedf47bed3c3f45c53af8ac662da1274d6825ad61a28eb9fecd190488dcf8",
+    "research/reframe-20261121/lean/build.sh": "802f913c650b042730498f5a23f2c7eeb3acde581f162a1a249956b19bd1e5d3",
+    "research/reframe-20261121/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "research/reframe-20261121/lean/source173.sha256": "85d496fb72d9d15d13ff56eed7623fdc233f2ca17407fd11f718c17e3da91eed"
+  },
+  "started_utc": "2026-11-21T22:36:58.966696+00:00",
+  "success": false,
+  "validator_sha256": "ee69fd77daa6037c1ca3a4df528aeb219a4e63eec86514b6079f3dc117b2905e"
+}

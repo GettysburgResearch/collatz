@@ -1,0 +1,44 @@
+{
+  "date_utc": "2026-11-23T04:30:21.288572+00:00",
+  "author": "/root/actual_collision",
+  "status": "FROZEN FOR INDEPENDENT REVIEW",
+  "base_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+  "files": [
+    {
+      "path": "research/reassessment-20261123/collision/FINITE_CLOCK_AND_FIXED_SOURCE.md",
+      "sha256": "45d7be3b4a5b3fbef2d9481120c38de635d3c52f4157856790ba99b20c7a762b",
+      "bytes": 14076
+    },
+    {
+      "path": "research/reassessment-20261123/collision/lean/FiniteClock.lean",
+      "sha256": "dfce17c2af78df947ac865ed47832e3265d077be407cb928ccb68d9c3936c3f4",
+      "bytes": 2591
+    },
+    {
+      "path": "research/reassessment-20261123/collision/lean/FiniteClockAudit.lean",
+      "sha256": "4d8d936a95131018e8bb392c07302aba6cfad62098efd04de53e9e7fa9260918",
+      "bytes": 173
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-axioms.log",
+      "sha256": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec",
+      "bytes": 249
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-lean-receipt.json",
+      "sha256": "e4159469ebb2430c183836dc58d2e0f82e35ef6822f0195dbf0adbae9ecf01b6",
+      "bytes": 3199
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/collision-sources.json",
+      "sha256": "c4da4cd0e857d995b767dce81688fddf423d706d40ecd5744a42b94bd6a0e51f",
+      "bytes": 4821
+    }
+  ],
+  "review_correction": "Equation (18) explicitly retains the no-cycle alternative at the later window source; source_construction requested the scope clarification."
+}

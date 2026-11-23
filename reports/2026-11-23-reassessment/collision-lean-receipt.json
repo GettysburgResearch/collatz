@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-11-23T04:28:52.276770+00:00",
+  "author": "/root/actual_collision",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_path": [
+    "/workspace/scratch/56e7a5765d0c/reassessment-collision-lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "modules": [
+    {
+      "module": "FiniteClock",
+      "source": "research/reassessment-20261123/collision/lean/FiniteClock.lean",
+      "source_sha256": "dfce17c2af78df947ac865ed47832e3265d077be407cb928ccb68d9c3936c3f4",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reassessment-collision-lean/FiniteClock.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reassessment_nov23/research/reassessment-20261123/collision/lean/FiniteClock.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.985,
+      "log": "reports/2026-11-23-reassessment/collision-compile.log",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "FiniteClockAudit",
+      "source": "research/reassessment-20261123/collision/lean/FiniteClockAudit.lean",
+      "source_sha256": "4d8d936a95131018e8bb392c07302aba6cfad62098efd04de53e9e7fa9260918",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reassessment-collision-lean/FiniteClockAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reassessment_nov23/research/reassessment-20261123/collision/lean/FiniteClockAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.171,
+      "log": "reports/2026-11-23-reassessment/collision-axioms.log",
+      "output_sha256": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec"
+    }
+  ],
+  "authored_theorem_count": 2,
+  "scope": "Infinite-series bound on reciprocal rates of an injective orbit only. Harmonic-flow existence, exponential CTMC construction, generator flux, and fixed-word budget are not formalized here.",
+  "dependency_objects_reused": true
+}

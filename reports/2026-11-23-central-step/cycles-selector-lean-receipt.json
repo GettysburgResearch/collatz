@@ -1,0 +1,46 @@
+{
+  "reviewer": "cycle_symmetry",
+  "scope": "Independent fresh strict rebuild and all-five-authored-theorem axiom audit; no universal selector assertion.",
+  "source_base_commit": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+  "source_sha256": {
+    "research/central-step-20261123/triadic/OPTIMAL_SELECTOR_AND_HEIGHT.md": "f75d052b925c7b1bfbf439bb44c9d2770c1865596cebbd095b7dc4575b82fb92",
+    "research/central-step-20261123/triadic/README.md": "6500c4064b1573e225f92e598e35ad6b81d9987bddc25d740c3cac833849d919",
+    "research/central-step-20261123/triadic/lean/WeightedSelector.lean": "affb4c0336e5763680ffbb2cc1f17b727d404f225580f2826f5ffac159174fb0",
+    "research/central-step-20261123/triadic/lean/WeightedSelectorAudit.lean": "7bbbf45e0a34d113cabdcedf3575f577cbbed920743018f08d9e6fae8d42f654",
+    "reports/2026-11-23-central-step/triadic-lean-receipt.json": "835f8a4b5f286ac53810f36b2b829d83e9cf6af65e1e1f17facc1c6e8680fe8e"
+  },
+  "LEAN_PATH": "/workspace/scratch/56e7a5765d0c/nov23d-cycle-triadic-review:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "modules": [
+    {
+      "module": "WeightedSelector",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23d-cycle-triadic-review/WeightedSelector.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/triadic/lean/WeightedSelector.lean"
+      ],
+      "exit_code": 0,
+      "log": "reports/2026-11-23-central-step/cycles-selector-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "WeightedSelectorAudit",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23d-cycle-triadic-review/WeightedSelectorAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/triadic/lean/WeightedSelectorAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "reports/2026-11-23-central-step/cycles-selector-axioms.log",
+      "log_sha256": "fcb8017cd936bfd9fe645042d8f28ff3b15b5f10fcfbe7bccfacb89e73890aa0"
+    }
+  ],
+  "sources_unchanged_after_build": true,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+}

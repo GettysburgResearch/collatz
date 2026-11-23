@@ -1,0 +1,80 @@
+{
+  "generated_utc": "2026-11-23T01:56:53.426255+00:00",
+  "status": "PASS",
+  "compiler": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_path": "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_read_only": true,
+  "reused_dependency_objects": true,
+  "strict_warning_as_error": true,
+  "fresh_local_modules": [
+    {
+      "module": "TriadicDualClosure",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-duality-lean/TriadicDualClosure.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_global_nov23/research/global-closure-20261123/duality/lean/TriadicDualClosure.lean"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_global_nov23/research/global-closure-20261123/duality/lean",
+      "exit_code": 0,
+      "log": "duality-lean-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "research/global-closure-20261123/duality/lean/TriadicDualClosure.lean",
+      "source_sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7"
+    },
+    {
+      "module": "TriadicDualAudit",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23-duality-lean/TriadicDualAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_global_nov23/research/global-closure-20261123/duality/lean/TriadicDualAudit.lean"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_global_nov23/research/global-closure-20261123/duality/lean",
+      "exit_code": 0,
+      "log": "duality-lean-axioms.log",
+      "log_sha256": "31ac681ced5730b74316fd8998cef2d8557668b670f6557bb000336ecfed0e46",
+      "source": "research/global-closure-20261123/duality/lean/TriadicDualAudit.lean",
+      "source_sha256": "6bbfb6fa7bd6465e3e8702dbf3e0fd29e40d704a24d8fa46f39835416f7c5986"
+    }
+  ],
+  "authored_public_declarations": [
+    "TriadicStep",
+    "step_rational",
+    "no_all_odd",
+    "zero_step",
+    "numerator_ne_zero",
+    "energy",
+    "step_rank",
+    "triadic_pair_reaches_one",
+    "shortcut",
+    "orbit",
+    "State",
+    "next",
+    "trajectory",
+    "compatible",
+    "next_x",
+    "trajectory_x",
+    "shortcut_pos",
+    "orbit_pos",
+    "next_step",
+    "alltime_triadic_candidate_reaches_one"
+  ],
+  "authored_public_declaration_count": 20,
+  "theorem_count": 12,
+  "definition_count": 6,
+  "inductive_or_structure_count": 2,
+  "additional_audited_constructors_and_projections": [
+    "TriadicStep.odd",
+    "TriadicStep.evenDen",
+    "TriadicStep.evenInt",
+    "State.mk",
+    "State.x",
+    "State.w",
+    "State.r"
+  ],
+  "scope": "All-time compatibility of one concrete finite triadic candidate implies ordinary convergence. The finite H certificate has written-proof scope. Universal candidate existence is OPEN."
+}

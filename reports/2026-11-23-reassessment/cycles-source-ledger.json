@@ -1,0 +1,76 @@
+{
+  "date_utc": "2026-11-23T04:28:29.743940+00:00",
+  "checkout_base": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+  "peer_sources": [
+    {
+      "pr": 180,
+      "head": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161/research/profound-step-20261123/ARITHMETIC_CLOSURE.md",
+      "sha256_returned_utf8_content": "972e16e87bbef21867fd3e7d7ede31575596cdb69807e776d3b29c76428414ed",
+      "returned_character_count": 12001,
+      "read_scope": "Sections 1\u20133: exact numerical denominator, numerator budget, remaining upper-bound obligation.",
+      "status": "CONSULTED; not an independent acceptance of the entire PR"
+    },
+    {
+      "pr": 182,
+      "head": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c/research/literature-round4-20261123/CYCLE_RIGIDITY.md",
+      "sha256_returned_utf8_content": "9ab24369fe171a003ae318db808f1af78e949beeb868765673bcc632d1d78630",
+      "returned_character_count": 16549,
+      "read_scope": "Complete-cut equations, least-root count neutrality, all-gap gcd, and stated full zero-fibre boundary.",
+      "status": "CONSULTED; not an independent acceptance of the entire PR"
+    },
+    {
+      "pr": 176,
+      "head": "4171e1fe40e41842af9f800bd821084b724cf8f9",
+      "path": "research/lean-global-resolvent-20261121/overview/source-construction/CYCLE_PRODUCT_TRANSFER_ATTEMPT.md",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/4171e1fe40e41842af9f800bd821084b724cf8f9/research/lean-global-resolvent-20261121/overview/source-construction/CYCLE_PRODUCT_TRANSFER_ATTEMPT.md",
+      "sha256_returned_utf8_content": "61e24999019cde59a10bed34ded33b2b4b7647b5d6d42ba28398b94e911d01a9",
+      "returned_character_count": 9654,
+      "read_scope": "Sections 1\u20133 and arbitrary-floor statement in Section 4; not an independent review of every claim.",
+      "status": "CONSULTED; not an independent acceptance of the entire PR"
+    },
+    {
+      "pr": 177,
+      "head": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/cycles/POSITIVE_CARRY_CLOSURE_ATTEMPT.md",
+      "url": "https://github.com/GettysburgResearch/collatz/blob/f47a5ec51aa5853f104013a6d5046d6220ff7423/research/lean-exact-witness-global-20261121/literature-closure/cycles/POSITIVE_CARRY_CLOSURE_ATTEMPT.md",
+      "sha256_returned_utf8_content": "81a35de37fac925c58fe399fc8644b33e756d55085b74011bdcded1beb6a5a4c",
+      "returned_character_count": 9761,
+      "read_scope": "Whole-carry digit system, local-energy scope, and all-parameter rational gcd control; not a new general review.",
+      "status": "CONSULTED; not an independent acceptance of the entire PR"
+    }
+  ],
+  "retained_local_source": {
+    "head": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+    "path": "research/central-step-20261123/cycles/COMPLEMENTARY_DENOMINATOR_CAPACITY.md",
+    "sha256": "7bcf9b6dcb275795d5f53f171098614bd30f0b65d0462a3c90b3b9399ee4ef0e",
+    "use": "Retained written theorem q>K/2 for a nontrivial positive integer shortcut cycle, with full reduced complementary denominator."
+  },
+  "primary_literature": [
+    {
+      "authors": [
+        "David Applegate",
+        "Jeffrey C. Lagarias"
+      ],
+      "title": "The 3x+1 semigroup",
+      "version": "arXiv math/0411140v2, 4 May 2005",
+      "url": "https://arxiv.org/pdf/math/0411140v2",
+      "journal": "Journal of Number Theory 117 (2006), 146\u2013159",
+      "use": "Theorem 1.1 and the inverse semigroup definition in Section 1; primary theorem statement inspected. Source-qualified mathematical input, not independently re-proved or Lean-formalized here.",
+      "scope_excluded": "No lower bound on generator source sizes, no ordinary chronological concatenation of a semigroup representation, and no tail-generator classification."
+    }
+  ],
+  "other_literature_consulted_not_used": [
+    {
+      "authors": [
+        "Ana Caraiani"
+      ],
+      "title": "Multiplicative semigroups related to the 3x+1 problem",
+      "url": "https://www.ma.imperial.ac.uk/~acaraian/papers/semigroups.pdf",
+      "reason": "Introduction and general semigroup statements did not supply the required deleted-initial-generators theorem; no theorem from this source is invoked."
+    }
+  ]
+}

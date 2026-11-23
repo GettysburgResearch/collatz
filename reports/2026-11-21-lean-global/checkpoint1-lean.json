@@ -1,0 +1,64 @@
+{
+  "after": {
+    "head": "7e40cb5e09f4ed84b96eebf1d2e3fe43fdadf862",
+    "status": "",
+    "tracked_files": 327,
+    "tree": "16d1f890246755cd80e1243ef90a687b5646dfa4"
+  },
+  "before": {
+    "head": "7e40cb5e09f4ed84b96eebf1d2e3fe43fdadf862",
+    "status": "",
+    "tracked_files": 327,
+    "tree": "16d1f890246755cd80e1243ef90a687b5646dfa4"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.053,
+      "stderr": "",
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n"
+    },
+    {
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 9.792,
+      "stderr": "",
+      "stdout": "\u2714 [2/7] Built Collatz.ReverseBasin146 (7.1s)\n\u2714 [3/7] Built Collatz.Closure174 (1.3s)\n\u2714 [4/7] Built CollatzGlobal.OrbitLift (807ms)\n\u2714 [5/7] Built Collatz.Shadow174 (995ms)\n\u2714 [6/7] Built CollatzGlobal (280ms)\nBuild completed successfully (7 jobs).\n"
+    },
+    {
+      "argv": [
+        "/workspace/scratch/957bb0caa6f2/lean-runtime/lean-4.34.1-linux/bin/lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "CheckpointAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.308,
+      "stderr": "",
+      "stdout": "'CollatzGlobal.high_bit_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.basin_high_bit_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.balanced_five_lift' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzGlobal.five_failure_return' depends on axioms: [propext]\n'CollatzGlobal.five_failure_cylinder' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzClosure.collatz_of_open_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]\nCollatzClosure.collatz_of_open_lemma (H : CollatzClosure.OpenLemma) (n : \u2115) : 0 < n \u2192 CollatzReverseBasin.Basin n\n"
+    }
+  ],
+  "finished_utc": "2026-11-21T08:12:59.687909+00:00",
+  "scope": "Actual Lean build and axiom inspection; no claim of full Collatz proof.",
+  "source_sha256": {
+    "research/lean-global-20261121/lean/CheckpointAudit.lean": "02589a202280d0c04cf962469c98e16a99df819d7891b68376bd71d2068ceb7d",
+    "research/lean-global-20261121/lean/Collatz/Closure174.lean": "5f56e42b31c6a559b5533bd0cdafefe7c3a2825a4754a275da182ed0da660e40",
+    "research/lean-global-20261121/lean/Collatz/ReverseBasin146.lean": "37ba405fe6400aba1a50985ec03f759b8c382f3354bc5029475e2cd0d86a4c91",
+    "research/lean-global-20261121/lean/Collatz/Shadow174.lean": "3a1fb1504fd9b589e1aae960a47fc162d12859c9a40e9050a0a98a176769c951",
+    "research/lean-global-20261121/lean/CollatzGlobal.lean": "b3911e28456bb98cb15f010d979f5058e2c815e550170693071f26149a79c46e",
+    "research/lean-global-20261121/lean/CollatzGlobal/OrbitLift.lean": "7e878efd729252de6ca0aa983f1fe0fea85cf775bc9973ef823aeafdf7edba42",
+    "research/lean-global-20261121/lean/lake-manifest.json": "f62174fbb9c1a601de8a54ff90d00a68474e363a3e23d014d93d2b856e68c582",
+    "research/lean-global-20261121/lean/lakefile.toml": "599dc711268ecff944d59cb931d7b7eccaa1a5a2f06216b98ec430a7954de2c8",
+    "research/lean-global-20261121/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "started_utc": "2026-11-21T08:12:49.394004+00:00",
+  "success": true
+}

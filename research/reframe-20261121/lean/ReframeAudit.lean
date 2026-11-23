@@ -1,0 +1,31 @@
+import DiscretePump
+import MarkedDyadicTransport
+import MergerPopulationPacking
+
+/-! Dedicated audit of every public theorem in the three new modules. -/
+
+#print axioms CollatzDiscretePump.defect_step
+#print axioms CollatzDiscretePump.defect_iter
+#print axioms CollatzDiscretePump.loop_divisibility
+#print axioms CollatzDiscretePump.loop_budget
+#print axioms CollatzDiscretePump.infinite_chain_fixed
+#print axioms CollatzDiscretePump.infinite_chain_fixed_equation
+#print axioms CollatzDiscretePump.infinite_chain_constant
+#print axioms CollatzDiscretePump.first_hit_unique
+#print axioms CollatzDiscretePump.no_canonical_affine_pump
+#print axioms CollatzShell.MarkedDyadicTransport.marked_dyadic_extract
+#print axioms CollatzShell.MarkedDyadicTransport.marked_odd_prefix
+#print axioms CollatzShell.MarkedDyadicTransport.marked_half_of_three_mod_four
+#print axioms CollatzShell.MarkedDyadicTransport.marked_odd_ceil_prefix
+#print axioms CollatzShell.MarkedDyadicTransport.marked_upper_half_of_one_mod_four
+#print axioms CollatzShell.MarkedDyadicTransport.merge_basin_iff
+#print axioms CollatzShell.MarkedDyadicTransport.rising_phase_merger
+#print axioms CollatzShell.MarkedDyadicTransport.solved_phase_marked_descent
+#print axioms CollatzShell.MarkedDyadicTransport.dyadic_marked_merger
+#print axioms CollatzShell.MarkedDyadicTransport.collatz_iff_dyadic_marked_cover
+#print axioms CollatzShell.MergerPopulationPacking.first_hit_no_advance
+#print axioms CollatzShell.MergerPopulationPacking.first_hit_common_predecessor
+#print axioms CollatzShell.MergerPopulationPacking.marked_octave_capacity
+#print axioms CollatzShell.MergerPopulationPacking.marked_population_sum
+#print axioms CollatzShell.MergerPopulationPacking.marked_population_packing
+#print axioms CollatzShell.MergerPopulationPacking.marked_population_density_packing

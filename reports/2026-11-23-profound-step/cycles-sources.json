@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-23",
+  "author_lane": "cycle_arithmetic",
+  "base_commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+  "status": "Written deductions with source-qualified external unit-equation bounds; unrestricted cycle exclusion remains OPEN.",
+  "repository_sources": [
+    {
+      "pr": 178,
+      "commit": "4e204f54136c79cf8c9393b34e3330594f99ae0a",
+      "path": "research/global-closure-20261123/cycles/INTEGRAL_MAHLER_CLOSURE_ATTEMPT.md",
+      "scope": "Read complete note; retains all-word D|C target, natural-Mahler failure and full reduced degree. No old proof replay."
+    },
+    {
+      "pr": 182,
+      "commit": "b78819e95ee7d39f02022de991b42217821e7590",
+      "path": "research/closure-round2-20261123/CYCLE_CANCELLATION.md",
+      "scope": "Read complete note, especially complete numerical cancellation, zero-fibre injections, and fixed-data limitations of moving-target gcd encodings. No upstream Lean replay or independent review verdict."
+    },
+    {
+      "pr": 185,
+      "commit": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "path": "research/central-closure-20261123/PRINCIPAL_FIBER_CONTROL.md",
+      "scope": "Read Sections 1-4: full principal 5-primary absorption at X=3 and explicit rational nonintegrality. No census replay or claimed integer-cycle control."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "F. Beukers and H. P. Schlickewei",
+      "title": "The equation x+y=1 in finitely generated groups",
+      "year": 1996,
+      "doi": "10.4064/aa-78-2-189-199",
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa78/aa7826.pdf",
+      "publisher": "https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/78/2/109078/the-equation-x-y-1-in-finitely-generated-groups",
+      "statement": "Theorem 1.1, printed p. 189: at most 2^(8r+8) solutions of x+y=1 in the divisible closure of a rank-r subgroup of (C*)^2.",
+      "inspection": "The primary-PDF indexed text containing the full theorem statement and introduction was read; the live PDF and publisher download returned HTTP 403. Publisher metadata was opened. The full proof was not read or reconstructed.",
+      "use": "Source-qualified counting input for p<=2^(16t+24)."
+    },
+    {
+      "authors": "J.-H. Evertse, H. P. Schlickewei and W. M. Schmidt",
+      "title": "Linear equations in variables which lie in a multiplicative group",
+      "year": 2002,
+      "url": "https://arxiv.org/pdf/math/0409604",
+      "journal": "https://annals.math.princeton.edu/2002/155-3/p04",
+      "statement": "Theorem 1.1 and rank discussion; absolute affine-vector height (2.3)-(2.4); near-group condition (2.10) and Theorem 2.1.",
+      "inspection": "Primary author PDF opened and the named statements read directly, including printed pp. 814-815. No reconstruction of the full external proof.",
+      "use": "Exact near-group application target; the new height-gap deduction shows why its small-height premise is false for the proposed fixed group."
+    }
+  ],
+  "execution_scope": {
+    "lean": "No new Lean module or theorem is claimed.",
+    "experiments": "No new cycle census or numerical extrapolation.",
+    "validation": "Own-file whitespace, local-link and frozen-hash checks only; final complete-checkout gate belongs to the coordinating agent."
+  }
+}

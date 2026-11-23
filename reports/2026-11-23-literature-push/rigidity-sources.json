@@ -1,0 +1,109 @@
+{
+  "repository_sources": [
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/GLOBAL_CONSTRUCTION.md",
+      "claim": "Actual B_n, complete identity (19), meromorphic construction, scalar/ uniform-family boundary distinction.",
+      "scope": "Read in full. The operator theorems are contextual pinned inputs, not revalidated or used as an unproved scalar continuation.",
+      "sha256": "6293818c1de954c12ed04031680d43a807ff9544f083a29ba4568518f260c0b5",
+      "git_blob_sha1": "f233be2efa4547bdfb47b0b92bef6d0475ae654d",
+      "bytes": 20338,
+      "access": "Exact raw GitHub file fetched at full commit; decoded UTF-8 bytes hashed."
+    },
+    {
+      "pr": 180,
+      "commit": "7cfd911d35382d9d3bc988060ba88ade78a4267e",
+      "path": "research/closing-step-20261123/CYCLE_RESOLVENT_BRIDGE.md",
+      "claim": "Finite rational cycle factors, conditional infinite Blaschke product and interior-only pole cancellation.",
+      "scope": "Read in full. The qualified predecessor-density input and all-cycle defect budget are not imported into our theorems.",
+      "sha256": "a6161661ad69c730fd90c72f0ad91b3dacad9977b9818f19d4ac9beb54a64173",
+      "git_blob_sha1": "362d4943e70f76189191f43b14be54defc335d2f",
+      "bytes": 7390,
+      "access": "Exact raw GitHub file fetched at full commit; decoded UTF-8 bytes hashed."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/HOLONOMICITY.md",
+      "claim": "Sections 2-4: finite-window recurrence, rationality/eventual parity periodicity, complete-denominator ordinary consumer; Section 5 actual tail/state identities.",
+      "scope": "Read in full; credited inherited consumers and finite-window device. No recurrence existence is imported.",
+      "sha256": "474c5e54492ebe7f69d79e5bd858c44fa1fd3d7737350439d63e534ba81e6149",
+      "git_blob_sha1": "01a5d159730960894e903cd91e04550b05ba1d64",
+      "bytes": 11059,
+      "access": "Exact raw GitHub file fetched at full commit; decoded UTF-8 bytes hashed."
+    },
+    {
+      "pr": 177,
+      "commit": "2fbc5706d2caff5d1485247e5291374ff4885041",
+      "path": "research/lean-exact-witness-global-20261121/universal-step-20261123/candidate/NEGATIVE_NUMERATOR_RECOGNITION.md",
+      "claim": "Exact supplied-candidate numerator clock and full-source first-crossing boundary.",
+      "scope": "Read in full as latest context. No recognition theorem is a premise of our analytic deductions and no universal candidate is inferred.",
+      "sha256": "ff00acf44c7b99eef45baec24a59c76c71777e610c8f103f1dbe997d1176d2eb",
+      "git_blob_sha1": "908f7e92a29750fc5e2e854f08cec92791058f4f",
+      "bytes": 12222,
+      "access": "Exact raw GitHub file fetched at full commit; decoded UTF-8 bytes hashed."
+    },
+    {
+      "pr": 182,
+      "commit": "afe6f4d1a661b377c9daa4623bdd732ba478386b",
+      "path": "research/closure-round5-20261123/TRIADIC_CONSTRUCTION.md",
+      "claim": "Sections 1-6 and exact decision (15a): linear-denominator supplied rational recognition.",
+      "scope": "Read through the exact decision subsection as latest context. No old corpus replay or full-file mathematical audit claimed; no theorem from this file is needed for our deductions.",
+      "sha256": "40fde45d454b19a97f208aef9950a2fd6fbf0fd15cef1995b37fbf5099b8b562",
+      "git_blob_sha1": "1ceadd11ddde96e01bfa1a0523322f770aa14211",
+      "bytes": 17597,
+      "access": "Exact raw GitHub file fetched at full commit; decoded UTF-8 bytes hashed."
+    }
+  ],
+  "literature": [
+    {
+      "authors": "Jean-Benoit Bost; Antoine Chambert-Loir",
+      "title": "Analytic curves in algebraic varieties over number fields",
+      "version": "arXiv:math/0702593v3, 2 October 2008; published 2009",
+      "url": "https://webusers.imj-prg.fr/~marco.maculan/java/2016/files/BostChambertLoir.pdf",
+      "arxiv": "https://arxiv.org/abs/math/0702593v3",
+      "read": "Definition 3.7 as discussed in introduction; Theorems 7.8 and 7.9; following sufficient integral-model condition 2'; Example 7.10. Primary PDF parsed directly.",
+      "used": "Theorem 7.9 with a strict positive capacitary degree; the source's algebraicity-only equality theorem is not applied.",
+      "web_refs": [
+        "turn558441634view2",
+        "turn206333197view0",
+        "turn206333197view1",
+        "turn206333197view2"
+      ],
+      "byte_hash_scope": "PDF was read through web extraction; no independent binary-byte hash claimed."
+    },
+    {
+      "authors": "Antoine Chambert-Loir; Camille Nous",
+      "title": "Potentiel et rationalite",
+      "version": "arXiv:2305.17210v2, 31 August 2026, as displayed in the retrieved PDF header",
+      "url": "https://arxiv.org/pdf/2305.17210",
+      "arxiv": "https://arxiv.org/abs/2305.17210v2",
+      "read": "Sections 2.1-2.8, Remark 2.9(3), and Sections 4.1-4.3, including full arithmetic-germ and compatible-local-realization hypotheses. Primary PDF parsed directly.",
+      "used": "Theorem 4.3 under the explicit finite-prime integral model and all local domains constructed in Theorem 3. Disconnected local domains are retained, with one connected binary disc realizing both full germs.",
+      "web_refs": [
+        "turn801474418view0",
+        "turn164865269view0",
+        "turn164865269view1"
+      ],
+      "byte_hash_scope": "Unversioned PDF URL returned a header explicitly identifying v2; no independent binary-byte hash claimed."
+    },
+    {
+      "authors": "Jason P. Bell; Keira Gunn; Khoa D. Nguyen; J. C. Saunders",
+      "title": "A general criterion for the Polya-Carlson dichotomy and application",
+      "version": "arXiv:2206.00862v1, 2 June 2022; published 2023",
+      "url": "https://arxiv.org/pdf/2206.00862",
+      "arxiv": "https://arxiv.org/abs/2206.00862v1",
+      "read": "Theorems 1.1, 1.2, and 1.6; Remark 1.3; introductory Hankel-denominator explanation. Primary PDF parsed directly.",
+      "used": "Exact subexponential common-denominator and sparse-exception hypotheses tested in FINITE_FILTER_TEST.md; no unproved applicability to an actual source is asserted.",
+      "web_refs": [
+        "turn558441634view1"
+      ],
+      "byte_hash_scope": "PDF was read through web extraction; no independent binary-byte hash claimed."
+    }
+  ],
+  "date_utc": "2026-11-23T05:09:10.951057+00:00",
+  "author": "/root/source_construction",
+  "base_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "scope": "Written scalar boundary, exact binary-value deflation radii, conditional strict two-center arithmetic-jet consumer, and finite rational filter denominator test. No universal jet/candidate or Collatz closure."
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "collatz-checkpoint-files/v1",
+  "scope": "All checkpoint files except this manifest, plus previous-packet continuation link",
+  "files": [
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/README.md",
+      "sha256": "33b89bd79ad0b96c8058b215abf133640a3b43b0e32902abac50553ad94991dd",
+      "bytes": 5220
+    },
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/REVIEW_SCOPE.json",
+      "sha256": "6ac87a65eb51894c92c21c4807ccf3dc1f2bf11ce7a418a65341002818155d8a",
+      "bytes": 3918
+    },
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/arithmetic-check.json",
+      "sha256": "5fd1cd516cf8621b8957fc2cab7d252a7af1e3997a7c9de3d4568f88dee78724",
+      "bytes": 1759
+    },
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/lean-audit.log",
+      "sha256": "59867783e5cf9cf8d875f67ef2c346bf046530fa3b0f4f9ce803609dbdcc5b87",
+      "bytes": 2182
+    },
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/lean-build.json",
+      "sha256": "5aedc269ebca278ec71afad51293ae3360d2d5b8b289f569e85f5269e7b74e31",
+      "bytes": 4415
+    },
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/lean-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/2026-11-22-whole-repo-synthesis/pr-description-before.json",
+      "sha256": "29526b8de096f775967185acaa285d830350d051715d0b449f2a36c4bec36c85",
+      "bytes": 15007
+    },
+    {
+      "path": "research/deep-machinery-20261122/README.md",
+      "sha256": "7a677048f9f30458452184af7f65cf387a4084ab0decc7e2140f8a4ffb4f0455",
+      "bytes": 8813
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/README.md",
+      "sha256": "3aaa834d31feb7890d7284480b7ebb58514ced3aae283326b14b01d6382df2f3",
+      "bytes": 12475
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "32dab02f102a16d8479f84f6050f0ef97246a84bd7bac4ce51d16bae1065ff73",
+      "bytes": 62315
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/arithmetic/WHOLE_WORD_MERGER_ATTEMPT.md",
+      "sha256": "4a976194fdc02ec705cc12003d8231edf6ea5b0d367c3559933fe91b2c5ee8f5",
+      "bytes": 14869
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/arithmetic/check_whole_word_control.py",
+      "sha256": "3e4d1147dafea00cc09ad1c107913738597cdda267684e50d88d65b7bdd97aee",
+      "bytes": 6178
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/arithmetic/input-pins.json",
+      "sha256": "cfe54ee1ed11fe714dd49d79bca945d5e01da4053d754e692747ef547e7f0b10",
+      "bytes": 2129
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/arithmetic/whole-word-control.json",
+      "sha256": "2eb495294203feebf1ca956deb88ea0b21bedec753ea4caace99da071732e107",
+      "bytes": 20752
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/entropy/CANONICAL_TIME_ENTROPY_ATTEMPT.md",
+      "sha256": "7879c03d9df135e715e9b1bba517f1f6bde3a546245332569774232eb0f277ac",
+      "bytes": 14818
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/EFFECTIVE_PHASE_AND_RUNS.md",
+      "sha256": "41aa50e507b490f14c1c483237f37a76e5b55a955f8e100c135f5d03edea273f",
+      "bytes": 16889
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/lean/ActualPhaseEstimate.lean",
+      "sha256": "7aed3eb35627204f1f6282195f4fae29433b940805e6fb842a807ba143c9235a",
+      "bytes": 12464
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/lean/AuditActualPhaseEstimate.lean",
+      "sha256": "a22bb70aa253b5aa2c567b21bb9f28e7cb6cf397c613bb3d83f57c15154f6e38",
+      "bytes": 773
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/lean/README.md",
+      "sha256": "0c4cbc39f88845e3b736dfdfd4044bcae846c16b9b4e332368599dff59d7cf47",
+      "bytes": 2675
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/lean/build.py",
+      "sha256": "fe4b8610dbd5b2d1f4b7c3421d5cdd6629344990b5bc3206ab5ba18b98041d8b",
+      "bytes": 5743
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/lean/imports.sha256",
+      "sha256": "3940f7705e498753e8d4db5e3b21f8e29627cba7d2f7ebc609445cdebaf5e505",
+      "bytes": 415
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/phase/lean/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "bytes": 25
+    },
+    {
+      "path": "research/whole-repo-synthesis-20261122/sibling/HIGH_SPIKE_SECTOR.md",
+      "sha256": "2f90d5383783f2ff6f1e3bbdb39facc9f9bbc524985b0eb171f9e9b6ae40805e",
+      "bytes": 10896
+    }
+  ]
+}

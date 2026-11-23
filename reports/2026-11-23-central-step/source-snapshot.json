@@ -1,0 +1,283 @@
+{
+  "date_utc": "2026-11-23",
+  "scope": "Initial refresh for this research pass: 30 most recently updated open pull requests, plus PR178 and main. Changed direct dependencies were inspected at immutable heads; this is not a new audit of every historical PR.",
+  "owned_pr": {
+    "number": 178,
+    "head": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+    "title": "Collatz: triadic construction, coalescence clocks, and carry controls",
+    "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+  },
+  "main": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+  "pull_requests": [
+    {
+      "number": 182,
+      "title": "Collatz: exact source boxes and global orbit-count reconstruction",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182",
+      "head": "a7fd3ac9e5bff7412858df23d776bb847e9c1371",
+      "base": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "updated_at": "2026-11-23T03:07:58Z",
+      "state": "open"
+    },
+    {
+      "number": 175,
+      "title": "Collatz: boundary rigidity, triadic certificates, and residual denominators",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175",
+      "head": "53ba1e1ffc46bf022433c2124a62682ad8dd4739",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:58:58Z",
+      "state": "open"
+    },
+    {
+      "number": 178,
+      "title": "Collatz: triadic construction, coalescence clocks, and carry controls",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178",
+      "head": "e6ed7f1429ced4b58b85ca9006edd9a3a12ca193",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:54:13Z",
+      "state": "open"
+    },
+    {
+      "number": 180,
+      "title": "Collatz: strict stationary collision gaps and finite minimum-source flux",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180",
+      "head": "a436db7b85f37abafea25f42d6f34afed02a29c0",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:47:23Z",
+      "state": "open"
+    },
+    {
+      "number": 176,
+      "title": "Collatz: finite triadic height certificate and direct closure attacks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176",
+      "head": "fb402404deb810bd8e32e596993739bb5a6967d1",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:47:06Z",
+      "state": "open"
+    },
+    {
+      "number": 177,
+      "title": "Collatz: funded witnesses, pressure barriers, and a triadic bridge",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177",
+      "head": "aaa132e904e4e6d0b438e963f76d72d79e2c7f34",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-23T02:32:28Z",
+      "state": "open"
+    },
+    {
+      "number": 185,
+      "title": "Collatz: residual denominator growth and critical collision bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185",
+      "head": "2ac1f63b5f8d51ab4b472307b52cc89c9ef6df9d",
+      "base": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "updated_at": "2026-11-23T01:18:35Z",
+      "state": "open"
+    },
+    {
+      "number": 183,
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183",
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "state": "open"
+    },
+    {
+      "number": 186,
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186",
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "state": "open"
+    },
+    {
+      "number": 184,
+      "title": "Lean: couple forced dyadic bands to exact smaller-source mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/184",
+      "head": "366dab89ee9548084ab9b5e4e90ff82abf287a20",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T15:45:03Z",
+      "state": "open"
+    },
+    {
+      "number": 173,
+      "title": "Lean: bounded visits to a density-zero Collatz section and exact descent criteria",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/173",
+      "head": "fa0c9e2a2851e6324391e39c17afcb5913185aec",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T14:34:32Z",
+      "state": "open"
+    },
+    {
+      "number": 174,
+      "title": "research: dependency-free Lean attack — Collatz from one ψ-closure lemma (open)",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/174",
+      "head": "c92cd473de3b85ceb945702a726d2eb7350a6af8",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T09:39:39Z",
+      "state": "open"
+    },
+    {
+      "number": 181,
+      "title": "Lean: unbounded charged descents and global closure attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/181",
+      "head": "5f03d809b4495802971211ef13ff905f741d700d",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T08:47:54Z",
+      "state": "open"
+    },
+    {
+      "number": 179,
+      "title": "Lean: finite-budget descent, unbounded inverse ladders, and mixed mergers",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/179",
+      "head": "27a2c7414fdb92eeca57ad552a9ab5c36d8430d8",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T08:41:05Z",
+      "state": "open"
+    },
+    {
+      "number": 146,
+      "title": "Verify a one-sided adjacent-pair criterion for Collatz and reductions to powers of two and three",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/146",
+      "head": "f431078244e868dc699fad011044f0d5e7f76437",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-21T07:06:20Z",
+      "state": "open"
+    },
+    {
+      "number": 172,
+      "title": "Uniform tail descent, smaller five failures, and compiler limits",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/172",
+      "head": "b22d94240f3d44a04231508e5dfe9a4947a57125",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:57:31Z",
+      "state": "open"
+    },
+    {
+      "number": 164,
+      "title": "Research: direct reverse-tripling witness descents and least-failure bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/164",
+      "head": "9582df78eb4d768eb748d3cf367ba97582308a52",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:39:04Z",
+      "state": "open"
+    },
+    {
+      "number": 171,
+      "title": "Research: recurrent five sections, ordinary descent density, and critical moments",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/171",
+      "head": "2bd243b3e05eaa5543adeb2894637b053c9662ca",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:37:41Z",
+      "state": "open"
+    },
+    {
+      "number": 170,
+      "title": "research: carry-four transport, joint renewal, and shifted-rank cycle bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/170",
+      "head": "656063d5efa0f5708356ab2563a4348d39bae013",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:31:14Z",
+      "state": "open"
+    },
+    {
+      "number": 169,
+      "title": "research: extend certificate descents and localize all-time arithmetic moments",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/169",
+      "head": "6cb9bfdc828f91576066b0e4a099d47d8144e915",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:18:58Z",
+      "state": "open"
+    },
+    {
+      "number": 168,
+      "title": "Research: balanced return languages, witness descent, and stationary regularity",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/168",
+      "head": "e4599b32e4b1a955ac9315d46782d4ad6a5db96c",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:12:52Z",
+      "state": "open"
+    },
+    {
+      "number": 167,
+      "title": "research: fixed-defect returns, stronger excursion bounds, and five closure interfaces",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/167",
+      "head": "e83cc8b35ad614c616df7c00318cc9645a174c34",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T23:01:36Z",
+      "state": "open"
+    },
+    {
+      "number": 166,
+      "title": "research: unbounded five-certificate transport and precise GRH interfaces",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/166",
+      "head": "5996b9f525ca50978bc34f423192c36a87765bf3",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T22:17:47Z",
+      "state": "open"
+    },
+    {
+      "number": 165,
+      "title": "research: certificate-transfer audit and explicit exceptional family",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/165",
+      "head": "78bdb31ccba608de3d089b751a0ab59a52007408",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T22:13:11Z",
+      "state": "open"
+    },
+    {
+      "number": 163,
+      "title": "research: least-failure reductions and complete five-energy propagation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/163",
+      "head": "051237135a34ae7d4b973ee5fcf5da04ded6f0fc",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T21:53:00Z",
+      "state": "open"
+    },
+    {
+      "number": 162,
+      "title": "Research: physical five blocks, Hardy flows, and carry limits",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/162",
+      "head": "2279da37ac612dbe049777354cdedb3c0aa03282",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:56:47Z",
+      "state": "open"
+    },
+    {
+      "number": 161,
+      "title": "research: shifted-smooth cycle exclusion and quantitative escape bounds",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/161",
+      "head": "4a0536b587fc91ee0c7bb1b160c06dda16ddbf23",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:41:11Z",
+      "state": "open"
+    },
+    {
+      "number": 160,
+      "title": "research: ordered prime height, physical five returns, and critical mass",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/160",
+      "head": "6d877e718f5ef9d57fe1830912c444359718747a",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:33:03Z",
+      "state": "open"
+    },
+    {
+      "number": 159,
+      "title": "Research: prime-support peak bounds and exact directed circulation",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/159",
+      "head": "0e7d2841b1591073c6399f91f3b6944ebcdbdbd5",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:29:02Z",
+      "state": "open"
+    },
+    {
+      "number": 158,
+      "title": "research: certify guarded expanding returns and exact closure boundaries",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/158",
+      "head": "cf49a68bf93e98c97a18dc3d1a4186faf534e422",
+      "base": "ab7a62cbbb83860ea9436c5d3cf6cf7ce501066a",
+      "updated_at": "2026-11-20T20:27:56Z",
+      "state": "open"
+    }
+  ]
+}

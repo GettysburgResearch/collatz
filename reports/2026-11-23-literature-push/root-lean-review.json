@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "reviewer": "/root",
+  "date_utc": "2026-11-23T05:17:32.617492+00:00",
+  "parent_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "fresh_output_directory": "/workspace/scratch/56e7a5765d0c/nov23f-independent-lean-6tpnscgj",
+  "lean_path": [
+    "/workspace/scratch/56e7a5765d0c/nov23f-independent-lean-6tpnscgj",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "modules": [
+    {
+      "module": "HomogeneousRepunits",
+      "source": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+      "source_sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23f-independent-lean-6tpnscgj/HomogeneousRepunits.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.332,
+      "log": "reports/2026-11-23-literature-push/root-HomogeneousRepunits-review.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PacketGCD",
+      "source": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+      "source_sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23f-independent-lean-6tpnscgj/PacketGCD.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/rigidity/lean/PacketGCD.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.976,
+      "log": "reports/2026-11-23-literature-push/root-PacketGCD-review.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "HomogeneousRepunitsAudit",
+      "source": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean",
+      "source_sha256": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23f-independent-lean-6tpnscgj/HomogeneousRepunitsAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.912,
+      "log": "reports/2026-11-23-literature-push/root-HomogeneousRepunitsAudit-review.log",
+      "log_sha256": "53e8606fd403ac12cd2da27ab3d98ba687ff57c1195009c344e0276d14ea7bf0"
+    },
+    {
+      "module": "PacketGCDAudit",
+      "source": "research/literature-push-20261123/rigidity/lean/PacketGCDAudit.lean",
+      "source_sha256": "9ec16723516018decb7defcd8c24f6a8300cf2f7b40d38715eec9b75f704d811",
+      "source_unchanged": true,
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/nov23f-independent-lean-6tpnscgj/PacketGCDAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/rigidity/lean/PacketGCDAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.027,
+      "log": "reports/2026-11-23-literature-push/root-PacketGCDAudit-review.log",
+      "log_sha256": "5266f1f5181c55d1b02c12fcedde09c9675fac8db339b559c00cb651dd698437"
+    }
+  ],
+  "authored_theorem_count": 22,
+  "authored_theorems": [
+    "CollatzLiterature.HomogeneousRepunits.repunit_zero",
+    "CollatzLiterature.HomogeneousRepunits.repunit_succ",
+    "CollatzLiterature.HomogeneousRepunits.repunit_one",
+    "CollatzLiterature.HomogeneousRepunits.repunit_eq_sum",
+    "CollatzLiterature.HomogeneousRepunits.repunit_symm",
+    "CollatzLiterature.HomogeneousRepunits.repunit_add",
+    "CollatzLiterature.HomogeneousRepunits.coprime_base_left",
+    "CollatzLiterature.HomogeneousRepunits.coprime_base_product",
+    "CollatzLiterature.HomogeneousRepunits.gcd_add_right",
+    "CollatzLiterature.HomogeneousRepunits.gcd_mul_add_right",
+    "CollatzLiterature.HomogeneousRepunits.gcd_repunit",
+    "CollatzLiterature.HomogeneousRepunits.coprime_repunit",
+    "CollatzLiterature.HomogeneousRepunits.repunit_mul_sub",
+    "CollatzLiterature.HomogeneousRepunits.repunit_eq_div",
+    "CollatzLiterature.HomogeneousRepunits.gcd_pow_sub_pow",
+    "CollatzLiterature.HomogeneousRepunits.coprime_powered_repunit",
+    "CollatzLiterature.HomogeneousRepunits.powered_repunit_coprime_base",
+    "CollatzLiterature.PacketGCD.packet_numerator_coprime",
+    "CollatzLiterature.PacketGCD.gcd_divides_small_factors",
+    "CollatzLiterature.PacketGCD.repunit_packet_numerator_coprime",
+    "CollatzLiterature.PacketGCD.repunit_packet_gcd_dvd",
+    "CollatzLiterature.PacketGCD.full_numerical_gcd_dvd"
+  ],
+  "definitions_also_audited": [
+    "CollatzLiterature.HomogeneousRepunits.repunit",
+    "CollatzLiterature.PacketGCD.packetProduct",
+    "CollatzLiterature.PacketGCD.packetNumerator",
+    "CollatzLiterature.PacketGCD.repunitFactor",
+    "CollatzLiterature.PacketGCD.packetCoefficient",
+    "CollatzLiterature.PacketGCD.repunitPacketNumerator"
+  ],
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "dependency_objects_reused": "Mathlib dependencies only; all local proof/audit modules freshly compiled in an independent empty output directory.",
+  "scope": "Full homogeneous-repunit gcd identity and arbitrary-finite-packet full numerical gcd. This is not a formalization of Collatz word construction, cyclotomic gcd, capacity theory, renewal theory or full Collatz."
+}

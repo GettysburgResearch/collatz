@@ -1,0 +1,10 @@
+import RealAdicControl
+
+#print axioms CollatzRealAdicControl.denominator_pos
+#print axioms CollatzRealAdicControl.denominator_succ
+#print axioms CollatzRealAdicControl.denominator_even
+#print axioms CollatzRealAdicControl.bounded_odd
+#print axioms CollatzRealAdicControl.digit_zero_one
+#print axioms CollatzRealAdicControl.no_two_zeroes
+#print axioms CollatzRealAdicControl.finite_bernstein
+#print axioms CollatzRealAdicControl.residual_bound

@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-11-23T03:32:57.607950+00:00",
+  "author": "/root",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_path": [
+    "/workspace/scratch/56e7a5765d0c/central-rational-lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "modules": [
+    {
+      "module": "RationalExcursions",
+      "source": "research/central-step-20261123/rational/lean/RationalExcursions.lean",
+      "source_sha256": "6720a520e9f510ce5c45c1499eed4c1bbb7c412b6cf641795775e0d9a78b6ed3",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/central-rational-lean/RationalExcursions.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/rational/lean/RationalExcursions.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.39,
+      "log": "reports/2026-11-23-central-step/rational-compile.log",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "RationalExcursionsAudit",
+      "source": "research/central-step-20261123/rational/lean/RationalExcursionsAudit.lean",
+      "source_sha256": "7a7c6c4b56a51ca1eeabb67296d6d44484682c04e366d3016c4d5f7d27c4a966",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/central-rational-lean/RationalExcursionsAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_central_nov23/research/central-step-20261123/rational/lean/RationalExcursionsAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.854,
+      "log": "reports/2026-11-23-central-step/rational-axioms.log",
+      "output_sha256": "828154284a6bdc7438e970273a8c9e11b0ce0c497482a0d169a51a0502dab59a"
+    }
+  ],
+  "public_theorem_count": 7,
+  "scope": "Finite numerical excursion lemmas only. The complete rational certificate, visit counting, parity coding and cycle consumer have written-proof scope.",
+  "dependency_objects_reused": true
+}

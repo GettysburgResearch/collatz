@@ -1,0 +1,32 @@
+{
+  "date_utc": "2026-11-23T04:33:50.168084+00:00",
+  "reviewer": "/root/source_construction",
+  "status": "FROZEN; VERIFIED WITH FIXES at narrow reviewed claims",
+  "files": [
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-review.md",
+      "sha256": "fcdce5858426c0dbbeb347b2032d9a6d9299128f1ae54a0bd4d56eebad3f639a",
+      "bytes": 8971
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-lean-review.json",
+      "sha256": "fa9a06fb5c01554e9eac1f2b57ceec4ae96d96020451e7e4891c8f3eac594dfe",
+      "bytes": 3967
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-compile-review.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/2026-11-23-reassessment/construction-collision-axioms-review.log",
+      "sha256": "7bd0658d09ac19a25bf25c2a62a55b01339cb4f1857ab75b83a2d159d18045ec",
+      "bytes": 249
+    }
+  ],
+  "reviewed_written_packet": {
+    "path": "research/reassessment-20261123/collision/FINITE_CLOCK_AND_FIXED_SOURCE.md",
+    "sha256": "45d7be3b4a5b3fbef2d9481120c38de635d3c52f4157856790ba99b20c7a762b"
+  },
+  "original_construction_packet_unchanged": true
+}

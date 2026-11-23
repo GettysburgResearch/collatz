@@ -1,0 +1,8 @@
+name = "collatzGlobal"
+defaultTargets = ["CollatzGlobal"]
+
+[[lean_lib]]
+name = "CollatzGlobal"
+
+[[lean_lib]]
+name = "Collatz"

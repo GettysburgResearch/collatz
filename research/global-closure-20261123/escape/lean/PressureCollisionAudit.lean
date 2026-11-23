@@ -1,0 +1,12 @@
+import PressureCollisionCore
+
+#print axioms CollatzPressureCollision.bounded_density_pair
+#print axioms CollatzPressureCollision.bounded_density_pair_sum
+#print axioms CollatzPressureCollision.retained_density_cost
+#print axioms CollatzPressureCollision.affine_repeat_telescope
+#print axioms CollatzPressureCollision.affine_repeat_divisibility
+#print axioms CollatzPressureCollision.collatz_repeat_divisibility
+#print axioms CollatzPressureCollision.collatz_repeat_displacement_bound
+#print axioms CollatzPressureCollision.common_source_replay
+#print axioms CollatzPressureCollision.common_source_distinct_units
+#print axioms CollatzPressureCollision.critical_word_collision

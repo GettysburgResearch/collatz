@@ -1,0 +1,72 @@
+{
+  "schema": "collatz-source-manifest-v1",
+  "parent_commit": "23456d145df23ef2b412f61f7e49e38a222bc2b1",
+  "scope": "Exact written research and finite-checker source bytes; no claim of a full proof or new Lean execution. This manifest excludes itself.",
+  "files": [
+    {
+      "path": "reports/2026-11-22-deep-machinery-attempts/INDEPENDENT_REVIEW.md",
+      "sha256": "0d050e01e3eba16b15512eb742beac3e7b7624230429847967b60a74375d7ed2",
+      "bytes": 5024
+    },
+    {
+      "path": "reports/2026-11-22-deep-machinery-attempts/README.md",
+      "sha256": "08a384582dbf510a3869a43bf2da726bc8b5b51292f6b4fa1fd82f8c92c48fb4",
+      "bytes": 5504
+    },
+    {
+      "path": "reports/2026-11-22-deep-machinery-attempts/previous-pr-description.json",
+      "sha256": "74d0de48cd1d9198aae0395afabc2cef79a36b5e5c52335b6064096358bf1506",
+      "bytes": 18579
+    },
+    {
+      "path": "research/deep-machinery-20261122/README.md",
+      "sha256": "a49c871ea3e2c1b9cbc5fcbfe61747f906cefa13fbec7cfaa0fbe8a27015fcde",
+      "bytes": 8514
+    },
+    {
+      "path": "research/deep-machinery-20261122/SOURCE_SNAPSHOT.json",
+      "sha256": "b0efe0f2e2750a57d7ac0d3e2c3785e10fe5a0acc9e8be97e304102ea85d4ec4",
+      "bytes": 3720
+    },
+    {
+      "path": "research/deep-machinery-20261122/boundary/RECURRENCE_AND_AFFINE_BOUNDARY.md",
+      "sha256": "a3d27f6bb140f89813d9c9e6417b082413e3962acc20205547c75223c4869397",
+      "bytes": 16435
+    },
+    {
+      "path": "research/deep-machinery-20261122/mahler/MIXED_DILATION_ATTEMPT.md",
+      "sha256": "0889ba6abccd54186912395d04bb74f3751f4d7ec15610d2350fdff6a6b37cf0",
+      "bytes": 10805
+    },
+    {
+      "path": "research/deep-machinery-20261122/rigidity/GUARDED_DILATION_ATTEMPT.md",
+      "sha256": "2ade62f1dc48cafecd0b3ff75fee7eda99a2b01356df906e7f0baed77d0b596a",
+      "bytes": 14199
+    },
+    {
+      "path": "research/deep-machinery-20261122/rigidity/SIBLING_REPAIR_ATTEMPT.md",
+      "sha256": "73229bb0349858c68b68cdab61bd82bd3b1db0800ff5bd1e2b048a2d371031b2",
+      "bytes": 7013
+    },
+    {
+      "path": "research/deep-machinery-20261122/termination/MODE_REFINEMENT_ATTEMPT.md",
+      "sha256": "5540863b8b80df8820659c381b7c38deb12afedff2777f19caec90fcedf3dba4",
+      "bytes": 12368
+    },
+    {
+      "path": "research/deep-machinery-20261122/termination/check_mode_refinement.py",
+      "sha256": "3b512ed25923dcbd11c0927033f74bf00776f820f2907b4694c3597cacd56665",
+      "bytes": 6965
+    },
+    {
+      "path": "research/deep-machinery-20261122/termination/mode-refinement-fixture.json",
+      "sha256": "8ca7109c4c03a127218d0ba549b8bdef8ab740edc76a9050eeb62b14e169fdd4",
+      "bytes": 88714
+    },
+    {
+      "path": "research/global-synthesis-20261122/README.md",
+      "sha256": "59f7893c54822b84fc14a61ed6334796f07d2c8b0f435e5dae88fbbb5cb883af",
+      "bytes": 12246
+    }
+  ]
+}

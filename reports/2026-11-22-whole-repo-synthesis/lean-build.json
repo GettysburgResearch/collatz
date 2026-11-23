@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "scope": "Finite actual-edge phase estimate and public-declaration axiom audit only",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "lean_binary_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "mathlib_tracked_clean": true,
+  "direct_import_source_sha256": {
+    "Mathlib/Analysis/SpecialFunctions/Trigonometric/Bounds.lean": "41a1146e01a0721b1a535cea4c0cc0c940e76aa30661039e1c6aa017b5634cd1",
+    "Mathlib/NumberTheory/Harmonic/Bounds.lean": "c5f418513f5ca500c0c02527ebf65fe2554c22b47c39e7e7b28e6f1402bdf848",
+    "Mathlib/Data/Finset/Max.lean": "f9381a30f98377e15faa35c02d19d3fa0d6576c1709460ed699f4616e4d2539e",
+    "Mathlib/Tactic.lean": "f45622ca1381833c77e9659a0b2ec07e5b667d0d4667cb2a28a58e9540634e85"
+  },
+  "source_sha256": {
+    "ActualPhaseEstimate.lean": "7aed3eb35627204f1f6282195f4fae29433b940805e6fb842a807ba143c9235a",
+    "AuditActualPhaseEstimate.lean": "a22bb70aa253b5aa2c567b21bb9f28e7cb6cf397c613bb3d83f57c15154f6e38",
+    "build.py": "fe4b8610dbd5b2d1f4b7c3421d5cdd6629344990b5bc3206ab5ba18b98041d8b"
+  },
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reframe-publication/whole-repo-synthesis/lean-development/oleans/ActualPhaseEstimate.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reframe/research/whole-repo-synthesis-20261122/phase/lean/ActualPhaseEstimate.lean"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux/bin/lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/reframe-publication/whole-repo-synthesis/lean-development/oleans/AuditActualPhaseEstimate.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_reframe/research/whole-repo-synthesis-20261122/phase/lean/AuditActualPhaseEstimate.lean"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "public_declarations": [
+    "CollatzActualPhase.actual_fourier_harmonic_bound",
+    "CollatzActualPhase.actual_fourier_log_bound",
+    "CollatzActualPhase.fourier_telescope",
+    "CollatzActualPhase.logError",
+    "CollatzActualPhase.logError_le_reciprocal",
+    "CollatzActualPhase.logError_nonneg",
+    "CollatzActualPhase.logError_sum_le_harmonic",
+    "CollatzActualPhase.log_edge",
+    "CollatzActualPhase.phase_edge_error",
+    "CollatzActualPhase.reciprocal_finset_le_harmonic",
+    "CollatzActualPhase.reciprocal_range_le_harmonic",
+    "CollatzActualPhase.unitPhase"
+  ],
+  "axiom_dependencies": {
+    "CollatzActualPhase.logError": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.unitPhase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.reciprocal_finset_le_harmonic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.reciprocal_range_le_harmonic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.logError_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.logError_le_reciprocal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.logError_sum_le_harmonic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.log_edge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.fourier_telescope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.phase_edge_error": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.actual_fourier_harmonic_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollatzActualPhase.actual_fourier_log_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "downloads_performed": false
+}

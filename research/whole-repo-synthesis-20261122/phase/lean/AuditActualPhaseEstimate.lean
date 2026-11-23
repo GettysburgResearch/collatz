@@ -1,0 +1,17 @@
+import ActualPhaseEstimate
+
+#check CollatzActualPhase.actual_fourier_harmonic_bound
+#check CollatzActualPhase.actual_fourier_log_bound
+
+#print axioms CollatzActualPhase.logError
+#print axioms CollatzActualPhase.unitPhase
+#print axioms CollatzActualPhase.reciprocal_finset_le_harmonic
+#print axioms CollatzActualPhase.reciprocal_range_le_harmonic
+#print axioms CollatzActualPhase.logError_nonneg
+#print axioms CollatzActualPhase.logError_le_reciprocal
+#print axioms CollatzActualPhase.logError_sum_le_harmonic
+#print axioms CollatzActualPhase.log_edge
+#print axioms CollatzActualPhase.fourier_telescope
+#print axioms CollatzActualPhase.phase_edge_error
+#print axioms CollatzActualPhase.actual_fourier_harmonic_bound
+#print axioms CollatzActualPhase.actual_fourier_log_bound

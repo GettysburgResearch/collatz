@@ -1,0 +1,211 @@
+{
+  "generated_utc": "2026-11-23T02:07:34.331814+00:00",
+  "base_commit": "2169884b64871b448cda16c7d74a0d5914ed870b",
+  "scope": "All newly added scientific packet and report files; this manifest excludes itself.",
+  "files": [
+    {
+      "path": "reports/2026-11-23-global-closure/README.md",
+      "bytes": 7699,
+      "sha256": "a5ac7ce66245a9f123dbbf3db6d5f79861466d0035260be4af7b4dc9e72ac94f",
+      "git_blob_sha": "b42b988a6330468b9f532319d5e245505927e1a5"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/archive/pr178-before-global-closure.md",
+      "bytes": 10212,
+      "sha256": "2099503efe0ad6df47e2fe847dc42340c117a0d0acc0a705c730acad26f27016",
+      "git_blob_sha": "94ad2b174379660252a70469f583320c5f19c964"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/cycles-review.md",
+      "bytes": 6484,
+      "sha256": "c2883fd10d25095d6323183a5990b93b1d5190d07f6dd1bb665445951cae25c0",
+      "git_blob_sha": "8e74aa566a5b3be28ec5a7b122b68ee5b7025a6e"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/cycles-sources.md",
+      "bytes": 5019,
+      "sha256": "ca1b1e174d4a9e1184c1dfc5426a1b68d7fd4a0871c3884c4d441dfa09104cfb",
+      "git_blob_sha": "111651fe95ea5d261ab32c68f4c3862a4940bb88"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-lean-axioms.log",
+      "bytes": 1958,
+      "sha256": "31ac681ced5730b74316fd8998cef2d8557668b670f6557bb000336ecfed0e46",
+      "git_blob_sha": "ce05dda1fb5749396af9777967ab5fe88a5be196"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-lean-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-lean-receipt.json",
+      "bytes": 3179,
+      "sha256": "111c82868460af9efeda1fe23f862ce3446d2315ca562206edd6f28b71cec553",
+      "git_blob_sha": "f233275e1e488b7db91dc038cc30315bd66f79c0"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-replay.md",
+      "bytes": 3043,
+      "sha256": "b14f02189bb09ffeed0320105bf3600e6a5e7486d9447989fb032c3e47c5e171",
+      "git_blob_sha": "25f208258566e3c8b0200f7b8eaffe6188da247e"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-review-audit.lean",
+      "bytes": 932,
+      "sha256": "6ff4c94eb6df1923396dea04c69be7219e6b3540ce495e1723e9b88445a395ad",
+      "git_blob_sha": "2f2ac8022f56a6e5077e5ce6d5585e1b0e7a287f"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-review-axioms.log",
+      "bytes": 1514,
+      "sha256": "e8b6590368fe511ccaad5b39083ca8fbbd69496269c1706140abce5a59f01c01",
+      "git_blob_sha": "b904ab3fedddf2b4957122545a382d08536bccec"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-review-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-review-replay.json",
+      "bytes": 2404,
+      "sha256": "4448aa3a26236888048e6595ba61e194968dcabc74375f2da0a7cac84ff6a5cd",
+      "git_blob_sha": "f548fbeba12eb8ba786eb86d03909f0f404087c5"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-review.md",
+      "bytes": 9750,
+      "sha256": "f08aa58a8c98da38a02cf2ef8e01ccb9c1df2310667b71bcefb01134dd8f88cf",
+      "git_blob_sha": "0a34bc6b6eb9119bc5b0c931675704694f970ce2"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/duality-sources.json",
+      "bytes": 2401,
+      "sha256": "c249cc0ecf36e128598014e718c98374b01861dc6279b2966b7e09f0de5fad79",
+      "git_blob_sha": "e152b0ccc8f777eab309c1c170a62651c5a6b6c6"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/escape-lean-audit.log",
+      "bytes": 1008,
+      "sha256": "7fdeb7b8e5488f19340b304fc487c31f5dca6ba993fc03ac15f2b79166cbf2a7",
+      "git_blob_sha": "f0df04f398cbbb1b603d71915d846c2448e0edcc"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/escape-lean-build.json",
+      "bytes": 2390,
+      "sha256": "7d281768089451b990a5885302a954e81d53a47b74763b9f50ddcaeb20882c1f",
+      "git_blob_sha": "bf573b2be24513d4d22434b94ce632e9a1b3e783"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/escape-review-execution.json",
+      "bytes": 1567,
+      "sha256": "09f47b08f91df6cd26a10722a65d45141bbb8d0d2faf6beb57a3d17677d30d9b",
+      "git_blob_sha": "bd8744901961d9ba6487e1aa69bf67562d66efae"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/escape-review-lean.log",
+      "bytes": 1068,
+      "sha256": "b018b95fa5eed5b895db97be138bbda7ac51a8cab5a914a55f63251318311b20",
+      "git_blob_sha": "bf302d1bf5ce4dd939ecb720b058352d18e42998"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/escape-review.md",
+      "bytes": 9759,
+      "sha256": "e8eae1c4dfdb28712064f36fd13b9a255b75849ae9d2d9d728b0afb40a89f3ef",
+      "git_blob_sha": "bdb50ba1454a02bf9f80e5ad761362394f3a9941"
+    },
+    {
+      "path": "reports/2026-11-23-global-closure/order-review.md",
+      "bytes": 3510,
+      "sha256": "916ea853fbbe7fcca1aada16754906de53953a55237ef0c18643ffe1eec708df",
+      "git_blob_sha": "6e83c67401b145f8f0f169736b42a01b439d8d68"
+    },
+    {
+      "path": "research/global-closure-20261123/LATE_REFRESH.md",
+      "bytes": 3062,
+      "sha256": "55c9531f0e3d7eaeb5783a0f4d46ab5d7b2b20e9607fbb65ee5c2f29499ab0c5",
+      "git_blob_sha": "69bd75212289ef01d99b10694920a63717d92bb3"
+    },
+    {
+      "path": "research/global-closure-20261123/ORDER_CONSTRUCTION_ATTEMPT.md",
+      "bytes": 6445,
+      "sha256": "89dbbfd7009b869fae54a60ac7cf1db999e05bf809a12bf2614e2096d0a03f0e",
+      "git_blob_sha": "c8b1ff140abdb577d391604a0d252c077d349227"
+    },
+    {
+      "path": "research/global-closure-20261123/README.md",
+      "bytes": 11148,
+      "sha256": "a68ca2d811750180708f32e8c0fcce4a7e332f1a1ffc10f3bef8321df52edcff",
+      "git_blob_sha": "a7f2b4e51bc8c24a9c63b2c0e48c18a2466d567e"
+    },
+    {
+      "path": "research/global-closure-20261123/SOURCE_SNAPSHOT.json",
+      "bytes": 46630,
+      "sha256": "ee71cd917b4b651d76df49140f3959597254a9536a2a7f47cea8f7c0dc541f85",
+      "git_blob_sha": "6d3b0c209cc40101ae5cd6e3fbc418ce4a1dab3d"
+    },
+    {
+      "path": "research/global-closure-20261123/cycles/INTEGRAL_MAHLER_CLOSURE_ATTEMPT.md",
+      "bytes": 14475,
+      "sha256": "3361b2a3d1e2fc9bbbbd92f5d5618125abbaecd3e641aa03169dc9105b5c488a",
+      "git_blob_sha": "6a2564f313ac0ccc506cbe32c4fa2a6c67a137a9"
+    },
+    {
+      "path": "research/global-closure-20261123/cycles/README.md",
+      "bytes": 2384,
+      "sha256": "e6019b067b4af7bd24aecf68bb4db740cef76528ee8d4f6fb3a5e958f7235422",
+      "git_blob_sha": "a9d56c67ff51e4877c2875f1ce8eb76672c2c592"
+    },
+    {
+      "path": "research/global-closure-20261123/duality/TRIADIC_RANK.md",
+      "bytes": 16901,
+      "sha256": "e4ad2b13c40b7f8906862143edc8c836def4b8f8c359bfec50d3c94146e2d120",
+      "git_blob_sha": "ab60fd248086bd8a2b753ea12a7b41387ea5c2de"
+    },
+    {
+      "path": "research/global-closure-20261123/duality/lean/TriadicDualAudit.lean",
+      "bytes": 1383,
+      "sha256": "6bbfb6fa7bd6465e3e8702dbf3e0fd29e40d704a24d8fa46f39835416f7c5986",
+      "git_blob_sha": "8426635288fbe6ec4e95205cbd341760fd48019c"
+    },
+    {
+      "path": "research/global-closure-20261123/duality/lean/TriadicDualClosure.lean",
+      "bytes": 11600,
+      "sha256": "62a3d8a9541080864deb4887ba8c014a82222892869b14597c3b6385538913c7",
+      "git_blob_sha": "8eed815f2dc89b16da80d759c965244513082ac4"
+    },
+    {
+      "path": "research/global-closure-20261123/escape/PRESSURE_COLLISION_ATTACK.md",
+      "bytes": 19573,
+      "sha256": "cad066fc49bf987f198e9c1ad3098f05f2575d6f7cb74efa91e1c4483523c8be",
+      "git_blob_sha": "019aa6a468c40e76720fa786939b076ab2e6ab61"
+    },
+    {
+      "path": "research/global-closure-20261123/escape/README.md",
+      "bytes": 2859,
+      "sha256": "f5f2438551fb6bc7a1aba907330cc88e6fcdbb7a4be0aab9c605630141ba77cf",
+      "git_blob_sha": "2ba18c98d2bbeb9af47485c4a0ca21594318e83e"
+    },
+    {
+      "path": "research/global-closure-20261123/escape/SOURCES.json",
+      "bytes": 4832,
+      "sha256": "db7116f866f0e9724e6cc491bd7248de9a9898ac2916737b0f32ee81a849fd2b",
+      "git_blob_sha": "6a3812ecc0b50ae1cc440709fbe6efcee4fc2b87"
+    },
+    {
+      "path": "research/global-closure-20261123/escape/lean/PressureCollisionAudit.lean",
+      "bytes": 675,
+      "sha256": "0aa261103ca7863f397af4a41050088cfb597aa8f624319bae75e6c562486acc",
+      "git_blob_sha": "d61dafdcace50b596769f69b2547d9a512f1058d"
+    },
+    {
+      "path": "research/global-closure-20261123/escape/lean/PressureCollisionCore.lean",
+      "bytes": 6995,
+      "sha256": "a75ca7c479c687b0a4a6c1c3c86979043d7f57111c6372b38162bdf61e5bd3c0",
+      "git_blob_sha": "3c87250649d85d00f2077a17a15d597ff17c30d3"
+    }
+  ]
+}

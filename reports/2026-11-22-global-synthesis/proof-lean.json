@@ -1,0 +1,201 @@
+{
+  "after": {
+    "head": "2eb1006fba0128006f09fa4279202334f61a233a",
+    "status": "",
+    "tracked_files": 474,
+    "tree": "66184e17a49e8eb2054d1ba73deac14710949420"
+  },
+  "axiom_dependencies": {
+    "CollatzIndependentBlockBudget.independent_block_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzIndependentBlockBudget.nonfixed_block_cap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzIndependentBlockBudget.ordinary_segment_quadratic": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzIndependentBlockBudget.source_clock_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzIndependentPQCertificate.small_full_denominator_exclusion": [],
+    "CollatzIndependentPQCertificate.small_natural_exponent_exclusion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzIndependentPQCertificate.tail_farey_obstruction": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzOrdinaryBasinMoments.disjoint_basin_minimum_moment": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzOrdinaryBasinMoments.retained_source_accounting": [
+      "propext"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.GapPath.append": [
+      "propext"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.GapPath.run": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.GapPath.start_odd": [
+      "propext"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.bounded_window_literal_tail": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.crosses_within_window_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.firstTime_increases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.odd_gap_nonterminal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.odd_gap_path": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.selected_spec": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.walk_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzShell.QuantitativeInverseSelector.walk_path": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "before": {
+    "head": "2eb1006fba0128006f09fa4279202334f61a233a",
+    "status": "",
+    "tracked_files": 474,
+    "tree": "66184e17a49e8eb2054d1ba73deac14710949420"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/tmp/collatz-180-fast/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_synthesis_checked",
+      "exit_code": 0,
+      "seconds": 0.124,
+      "stderr": "",
+      "stdout": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n"
+    },
+    {
+      "argv": [
+        "bash",
+        "research/global-synthesis-20261122/lean/build.sh"
+      ],
+      "cwd": "/workspace/scratch/56e7a5765d0c/collatz_synthesis_checked",
+      "exit_code": 0,
+      "seconds": 29.897,
+      "stderr": "",
+      "stdout": "../../band-return-20261121/lean/vendor/ShellCover.lean: OK\nChecking imported ShellCover\nChecking new IndependentBlockBudget\n'CollatzIndependentBlockBudget.nonfixed_block_cap' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentBlockBudget.ordinary_segment_quadratic' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentBlockBudget.source_clock_budget' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentBlockBudget.independent_block_budget' depends on axioms: [propext, Quot.sound]\nChecking new IndependentPQCertificate\n'CollatzIndependentPQCertificate.tail_farey_obstruction' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentPQCertificate.small_full_denominator_exclusion' does not depend on any axioms\n'CollatzIndependentPQCertificate.small_natural_exponent_exclusion' depends on axioms: [propext, Quot.sound]\nChecking new OrdinaryBasinMoments\n'CollatzOrdinaryBasinMoments.retained_source_accounting' depends on axioms: [propext]\n'CollatzOrdinaryBasinMoments.disjoint_basin_minimum_moment' depends on axioms: [propext, Quot.sound]\nChecking new QuantitativeInverseSelector\nChecking new AuditQuantitativeInverseSelector\n'CollatzShell.QuantitativeInverseSelector.selected_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.odd_gap_path' depends on axioms: [propext, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.odd_gap_nonterminal' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.firstTime_increases' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.GapPath.append' depends on axioms: [propext]\n'CollatzShell.QuantitativeInverseSelector.GapPath.run' depends on axioms: [propext, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.GapPath.start_odd' depends on axioms: [propext]\n'CollatzShell.QuantitativeInverseSelector.walk_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.walk_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.crosses_within_window_card' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.bounded_window_literal_tail' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nChecking new GlobalSynthesisAudit\n'CollatzIndependentBlockBudget.nonfixed_block_cap' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentBlockBudget.ordinary_segment_quadratic' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentBlockBudget.source_clock_budget' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentBlockBudget.independent_block_budget' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentPQCertificate.tail_farey_obstruction' depends on axioms: [propext, Quot.sound]\n'CollatzIndependentPQCertificate.small_full_denominator_exclusion' does not depend on any axioms\n'CollatzIndependentPQCertificate.small_natural_exponent_exclusion' depends on axioms: [propext, Quot.sound]\n'CollatzOrdinaryBasinMoments.retained_source_accounting' depends on axioms: [propext]\n'CollatzOrdinaryBasinMoments.disjoint_basin_minimum_moment' depends on axioms: [propext, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.selected_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.odd_gap_path' depends on axioms: [propext, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.odd_gap_nonterminal' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.firstTime_increases' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.GapPath.append' depends on axioms: [propext]\n'CollatzShell.QuantitativeInverseSelector.GapPath.run' depends on axioms: [propext, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.GapPath.start_odd' depends on axioms: [propext]\n'CollatzShell.QuantitativeInverseSelector.walk_path' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.walk_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.crosses_within_window_card' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'CollatzShell.QuantitativeInverseSelector.bounded_window_literal_tail' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nGlobal synthesis Lean build completed.\n"
+    }
+  ],
+  "fast_copy_after": {
+    "aggregate_sha256": "62fde6b8859f945a0b397376b08baf856753f6db05d85731fa84e0f30ba7dcaa",
+    "bytes": 4230630328,
+    "files": 26343,
+    "root": "/tmp/collatz-180-fast",
+    "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux"
+  },
+  "fast_copy_before": {
+    "aggregate_sha256": "62fde6b8859f945a0b397376b08baf856753f6db05d85731fa84e0f30ba7dcaa",
+    "bytes": 4230630328,
+    "files": 26343,
+    "root": "/tmp/collatz-180-fast",
+    "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux"
+  },
+  "finished_utc": "2026-11-22T05:25:41.443399+00:00",
+  "mathlib_after": {
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_changes": false
+  },
+  "mathlib_before": {
+    "head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "tracked_changes": false
+  },
+  "public_theorem_count": 20,
+  "public_theorems": [
+    "CollatzIndependentBlockBudget.independent_block_budget",
+    "CollatzIndependentBlockBudget.nonfixed_block_cap",
+    "CollatzIndependentBlockBudget.ordinary_segment_quadratic",
+    "CollatzIndependentBlockBudget.source_clock_budget",
+    "CollatzIndependentPQCertificate.small_full_denominator_exclusion",
+    "CollatzIndependentPQCertificate.small_natural_exponent_exclusion",
+    "CollatzIndependentPQCertificate.tail_farey_obstruction",
+    "CollatzOrdinaryBasinMoments.disjoint_basin_minimum_moment",
+    "CollatzOrdinaryBasinMoments.retained_source_accounting",
+    "CollatzShell.QuantitativeInverseSelector.GapPath.append",
+    "CollatzShell.QuantitativeInverseSelector.GapPath.run",
+    "CollatzShell.QuantitativeInverseSelector.GapPath.start_odd",
+    "CollatzShell.QuantitativeInverseSelector.bounded_window_literal_tail",
+    "CollatzShell.QuantitativeInverseSelector.crosses_within_window_card",
+    "CollatzShell.QuantitativeInverseSelector.firstTime_increases",
+    "CollatzShell.QuantitativeInverseSelector.odd_gap_nonterminal",
+    "CollatzShell.QuantitativeInverseSelector.odd_gap_path",
+    "CollatzShell.QuantitativeInverseSelector.selected_spec",
+    "CollatzShell.QuantitativeInverseSelector.walk_injective",
+    "CollatzShell.QuantitativeInverseSelector.walk_path"
+  ],
+  "runtime_origin": "/workspace/scratch/56e7a5765d0c/reframe-runtime/lean-4.34.1-linux",
+  "scope": "New global-synthesis Lean packet and complete public-theorem axiom audit; the written analytic arguments are not formalized, and full Collatz remains open.",
+  "selected_runtime": "/tmp/collatz-180-fast",
+  "source_sha256": {
+    "reports/2026-11-22-global-synthesis/ARITHMETIC_REVIEW.md": "02eeda7d66deed41090cffcf7d05acd73331ff16e8b74793015ad48894a66f26",
+    "reports/2026-11-22-global-synthesis/MERGER_REVIEW.md": "5db63f95df8ce42ca7be657cd77e12e0e05352f996d9ba8085933276fcef0cb9",
+    "reports/2026-11-22-global-synthesis/MERGER_SOURCE_ASSUMPTIONS.md": "93edd3fba7ac809b862001b8f557cbb9c2ad48a90037f21cb53601baa61dd257",
+    "reports/2026-11-22-global-synthesis/ORDINARY_MASS_REVIEW.md": "1b92e92150e6ba120def33bca04f3a2c3d7ecae034bb96bf0db276c30ea9bd56",
+    "reports/2026-11-22-global-synthesis/README.md": "0fc44c16cd25b0c94c2e8252c85903f73b73e4ae7511f6826f32f4e482ae11ff",
+    "reports/2026-11-22-global-synthesis/SOURCE_REFRESH.json": "2e2ca2ce1e54e31f684df6cb37e4d3560cd08c317eb50c1476df419875bffa3d",
+    "reports/2026-11-22-global-synthesis/validate_synthesis.py": "b5fb11bfe213b9688435f5f747c6055cdf67c4aca57fb54be04cfd697b20267c",
+    "research/band-return-20261121/lean/vendor/ShellCover.lean": "76477e195c733e8b8c9fdf523d954d85375b3ac244ee0590127192743bffc88c",
+    "research/global-synthesis-20261122/ARITHMETIC_CLOSURE.md": "b40923eb93eb7984a62616dae756a467331beee02e41d4a290105bce39c602e6",
+    "research/global-synthesis-20261122/GLOBAL_MERGERS.md": "5349c6c4fa33c356340b1da3746b86abf68c0ea643d4d965b02d272610fa7633",
+    "research/global-synthesis-20261122/ORDINARY_MASS.md": "9a37d90dd3de5333b44473cb0df038029dd33adff935ce10db11926dd1fa306d",
+    "research/global-synthesis-20261122/README.md": "187a166245274324c6736fb9a3774be7a4e646fdd43c6e32cf2570529eb0d227",
+    "research/global-synthesis-20261122/certificates/independent_pq_certificate.json": "e94699ef87e6a6b338f290af9a64f9e15f8126e29c35b75ec02de75c63f4b7a7",
+    "research/global-synthesis-20261122/certificates/independent_pq_generate.py": "6de8c151be741e1fa8a42c1bcd6232baa59ec4a31bdd1e40e7655e8da44c4bd0",
+    "research/global-synthesis-20261122/certificates/independent_pq_verify.py": "4b4982d97b0304ad11b242846b85c32e8fdb56abc3f7588b0405e495f670e105",
+    "research/global-synthesis-20261122/inverse_alphabet_selector.py": "605f3b6d896836cfe1ec8601fab9006ba94ee0b0b4120b145d33d844ac69db24",
+    "research/global-synthesis-20261122/lean/.gitignore": "99921edb369e12a35a87d768ae481f8c944573626abd4b8f3a1fe78846f30ba7",
+    "research/global-synthesis-20261122/lean/AuditQuantitativeInverseSelector.lean": "e4616dc039cf98029d9af16b854d62b450e7d184d4c77e9eaafeccf64c219ceb",
+    "research/global-synthesis-20261122/lean/GlobalSynthesisAudit.lean": "9a03c6a0d65344c0449a97e014ccc1cb28198294f5fb1e58cab8e2a4bdbc32c5",
+    "research/global-synthesis-20261122/lean/IndependentBlockBudget.lean": "742adda9044e981b7cfe59032cb6c2975b95d88140654d7ab3542f71b7bd4628",
+    "research/global-synthesis-20261122/lean/IndependentPQCertificate.lean": "9e24fdb7e8a6b9890cd8ddda476ac248c5f52f71108f905b64f9e6e385bcd435",
+    "research/global-synthesis-20261122/lean/OrdinaryBasinMoments.lean": "05a2375e5fef1566cd6214cc059fd8d895d901601064b261b03d423896cd10dc",
+    "research/global-synthesis-20261122/lean/QuantitativeInverseSelector.lean": "132f0cd8318e20271456a4f776a90621407bc0a69dce805382b5860a08a13048",
+    "research/global-synthesis-20261122/lean/build.sh": "6b111391812707aff9d375ef367674e1ba3f064b1ab17144136b42f47fd93fa0",
+    "research/global-synthesis-20261122/lean/imports.sha256": "f307c768c2a1e856c257ae2a40eca0f8e9305c21acbebfff49b6c0ad95946306",
+    "research/global-synthesis-20261122/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "started_utc": "2026-11-22T05:24:30.304036+00:00",
+  "success": true,
+  "validator_sha256": "b5fb11bfe213b9688435f5f747c6055cdf67c4aca57fb54be04cfd697b20267c"
+}

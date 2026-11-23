@@ -1,0 +1,42 @@
+{
+  "controls": [
+    {
+      "A": 156,
+      "D_bits": 156,
+      "D_sha256": "a8bdbf251ee569cf8442375f1289530a4be3cac5b89bfeafd40a6d76d3802ce7",
+      "L": 2,
+      "all_checks_passed": true,
+      "all_rotations_checked": 97,
+      "full_denominator_everywhere": true,
+      "minimum_state_integer_part": 14,
+      "orbit_numerator_sha256": "d8c7374adb2870ac2001fab924541856110cf417ab02288663a0ccf16130d068",
+      "p": 97,
+      "primes": [
+        2,
+        3
+      ],
+      "requested_floor": 1,
+      "shortcut_period": 156
+    },
+    {
+      "A": 4900,
+      "D_bits": 4900,
+      "D_sha256": "29dbdfcd292a77642771dc78faa81466c0ab014cef56d9135f9b334c70ede577",
+      "L": 4,
+      "all_checks_passed": true,
+      "all_rotations_checked": 3089,
+      "full_denominator_everywhere": true,
+      "minimum_state_integer_part": 264,
+      "orbit_numerator_sha256": "11ce6bc7d53ae2cd2f0820cebb4955a3a9988030940e62f3039a294002adf93d",
+      "p": 3089,
+      "primes": [
+        2,
+        3,
+        5
+      ],
+      "requested_floor": 2,
+      "shortcut_period": 4900
+    }
+  ],
+  "scope": "Two exact construction controls; the general theorem is written mathematics"
+}

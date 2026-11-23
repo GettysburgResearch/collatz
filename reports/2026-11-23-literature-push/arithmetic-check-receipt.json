@@ -1,0 +1,52 @@
+{
+  "author": "/root/cycle_closure",
+  "case_count": 9,
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "-B",
+        "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py"
+      ],
+      "exit_code": 0,
+      "output": {
+        "bytes": 9028,
+        "path": "reports/2026-11-23-literature-push/arithmetic-check-normal.json",
+        "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-O",
+        "-X",
+        "utf8",
+        "-B",
+        "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py"
+      ],
+      "exit_code": 0,
+      "output": {
+        "bytes": 9028,
+        "path": "reports/2026-11-23-literature-push/arithmetic-check-optimized.json",
+        "sha256": "e3d37abf854a0c9bbbb4643329bddbc2c218c883a134b38d2139efc02d56f75c"
+      }
+    }
+  ],
+  "date_utc": "2026-11-23T05:19:55.204285+00:00",
+  "literal_polynomial_gcd_cases": 3,
+  "ordinary_finite_realizer_steps": 6268,
+  "outputs_byte_identical": true,
+  "python_version": "3.12.14",
+  "rational_steps": 6268,
+  "scope": "Exact finite controls only; all-parameter theorem is the written proof; substantive Lean numerical core has separate author and independent review receipts.",
+  "source": {
+    "bytes": 11054,
+    "path": "research/literature-push-20261123/arithmetic/check_full_numerical_separation.py",
+    "sha256": "7ba0f8fc163628b833cd5e083d7d2248215aec0aed65fdc70b830d06d01a3f1a"
+  },
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "working_directory": "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23"
+}

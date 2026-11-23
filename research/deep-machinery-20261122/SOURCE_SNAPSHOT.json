@@ -1,0 +1,82 @@
+{
+  "schema": "collatz-deep-machinery-inputs/v1",
+  "date": "2026-11-22",
+  "own_parent": "23456d145df23ef2b412f61f7e49e38a222bc2b1",
+  "own_pr": 178,
+  "scope": "Pinned repository inputs inspected for four direct closing attempts. Metadata or source inspection does not upgrade inherited proof or compiler status. Each mathematical note identifies the dependencies it actually uses.",
+  "repositories": [
+    {
+      "pr": 175,
+      "head": "f63204765438c83def68154e7f253ee9b660979c",
+      "branch": "research/lean-global-closure-20261121",
+      "updated_at": "2026-11-22T07:14:39Z",
+      "title": "Collatz: Lean carry returns, merger rigidity, and sharp Green boundary energy",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/175"
+    },
+    {
+      "pr": 176,
+      "head": "5cb67181758186b372944ef60a1bd09416b97f89",
+      "branch": "research/lean-global-resolvent-20261121",
+      "updated_at": "2026-11-22T07:13:13Z",
+      "title": "Lean: source-only closure obstruction and sibling lift costs",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/176"
+    },
+    {
+      "pr": 177,
+      "head": "431d858d1ac92e88f4a58f6610c0d67733dc7242",
+      "branch": "research/lean-exact-witness-global-20261121",
+      "updated_at": "2026-11-22T06:59:38Z",
+      "title": "Lean: joint source-target minimum and terminal energy transport",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/177"
+    },
+    {
+      "pr": 178,
+      "head": "23456d145df23ef2b412f61f7e49e38a222bc2b1",
+      "branch": "research/lean-global-20261121",
+      "updated_at": "2026-11-22T07:04:01Z",
+      "title": "Collatz: direct closure attempts and checked Lean research",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/178"
+    },
+    {
+      "pr": 180,
+      "head": "a9f471543d7fed0a76f348e6d97a9d6d44fa369e",
+      "branch": "research/lean-ordinary-closure-20261121",
+      "updated_at": "2026-11-22T07:16:35Z",
+      "title": "Collatz: exact escape boundary and direct arithmetic closure attempts",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/180"
+    },
+    {
+      "pr": 182,
+      "head": "9dacd610ba7735e89e2e29e4ab01795983317980",
+      "branch": "research/dyadic-band-descent-20261121",
+      "updated_at": "2026-11-22T05:30:22Z",
+      "title": "Lean: polynomial-phase rigidity, canonical Green bounds, and escape labels",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/182"
+    },
+    {
+      "pr": 183,
+      "head": "68345f60a4f757acb42a69a4ac95910f8ce26163",
+      "branch": "research/band-completion-20261121",
+      "updated_at": "2026-11-22T05:23:43Z",
+      "title": "Lean Collatz: independent cycle blocks, ordinary channels, arbitrary carry",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/183"
+    },
+    {
+      "pr": 185,
+      "head": "4b0c2c27812db555061f5d9006de82a87e7e364f",
+      "branch": "research/literature-orbit-closure-20261121",
+      "updated_at": "2026-11-22T07:27:12Z",
+      "title": "Collatz: direct closure attempts and two checked obstructions",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/185"
+    },
+    {
+      "pr": 186,
+      "head": "1a57a3bf3c83ba2fa87d3b2216cfaff970f7a493",
+      "branch": "research/deep-machinery-guide-20261122",
+      "updated_at": "2026-11-21T22:51:35Z",
+      "title": "Literature: deep machinery, exact Collatz interfaces, and 14 agent tasks",
+      "url": "https://github.com/GettysburgResearch/collatz/pull/186"
+    }
+  ],
+  "literature_status": "Established primary theorem statements are distinguished from recent source-qualified manuscripts in the individual notes; no full audit of all cited proofs is claimed."
+}

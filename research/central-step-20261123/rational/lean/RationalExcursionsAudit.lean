@@ -1,0 +1,9 @@
+import RationalExcursions
+
+#print axioms CollatzRationalExcursions.abs_numerator_bounds
+#print axioms CollatzRationalExcursions.large_even_contraction
+#print axioms CollatzRationalExcursions.large_odd_contraction
+#print axioms CollatzRationalExcursions.small_step_growth
+#print axioms CollatzRationalExcursions.block_half
+#print axioms CollatzRationalExcursions.geometric_decay
+#print axioms CollatzRationalExcursions.no_long_high_run

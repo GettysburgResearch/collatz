@@ -1,0 +1,53 @@
+{
+  "status": "FROZEN FOR INDEPENDENT REVIEW; strict build and all-new-declaration audit PASS",
+  "date_utc": "2026-11-23T05:17:47.270523+00:00",
+  "author": "/root/source_construction",
+  "base_commit": "a9b23dcee61a4b65a63aa4e7ca653d875a405037",
+  "files": [
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCD.lean",
+      "sha256": "cabc44a642841ef376734fed131a708897fca3b5e36c1d571d45f191b8ce892e",
+      "bytes": 4572
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PacketGCDAudit.lean",
+      "sha256": "9ec16723516018decb7defcd8c24f6a8300cf2f7b40d38715eec9b75f704d811",
+      "bytes": 653
+    },
+    {
+      "path": "research/literature-push-20261123/rigidity/lean/PACKET_GCD.md",
+      "sha256": "15bfa0e2e73353b031f9db9a8fd30168cfe70eb16e05a2c9ca86c80718cf2e43",
+      "bytes": 3065
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-proof.md",
+      "sha256": "8d15d69f2d5a4c36bc508521f3377a978266ec51eac8fe85ed90ca40a2f23048",
+      "bytes": 1647
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-lean-receipt.json",
+      "sha256": "07f4fc8a191ea8a869d354113af66b54684e03fafc16eabc1f863c65d7337da7",
+      "bytes": 5032
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-dependency-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/2026-11-23-literature-push/rigidity-packet-axioms.log",
+      "sha256": "5266f1f5181c55d1b02c12fcedde09c9675fac8db339b559c00cb651dd698437",
+      "bytes": 1011
+    }
+  ],
+  "unchanged_dependency": {
+    "path": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+    "sha256": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc"
+  },
+  "scope": "Five new theorems: complete arbitrary-finite-packet numerator coprimality and full numerical gcd divisibility from actual powered-repunit base/index hypotheses. Finite Collatz realization remains separate written scope."
+}

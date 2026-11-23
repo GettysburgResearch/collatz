@@ -1,0 +1,10 @@
+'CollatzPressureCollision.bounded_density_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPressureCollision.bounded_density_pair_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPressureCollision.retained_density_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPressureCollision.affine_repeat_telescope' depends on axioms: [propext, Quot.sound]
+'CollatzPressureCollision.affine_repeat_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPressureCollision.collatz_repeat_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPressureCollision.collatz_repeat_displacement_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPressureCollision.common_source_replay' depends on axioms: [propext]
+'CollatzPressureCollision.common_source_distinct_units' does not depend on any axioms
+'CollatzPressureCollision.critical_word_collision' depends on axioms: [propext]

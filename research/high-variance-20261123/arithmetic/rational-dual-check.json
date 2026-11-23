@@ -1,0 +1,177 @@
+{
+  "status": "all exact assertions passed",
+  "scope": "finite implementation checks, not a Collatz proof",
+  "generated_true_duals": 100,
+  "prescribed_prefix_rejections": 100,
+  "signed_grid_cases": 2500,
+  "additional_named_zero_case": 1,
+  "totals_excluding_additional_named_zero_case": {
+    "accepted": 113,
+    "cases": 2700,
+    "observed_parity_failure": 2348,
+    "rejected": 2587,
+    "repeated_numerator_unequal_integer": 38,
+    "standard_pair_cycle": 113,
+    "wrong_dual_at_one": 131,
+    "zero_numerator": 70
+  },
+  "verified_local_inequalities": {
+    "negative_contraction": 2801,
+    "negative_to_positive_crossing": 183,
+    "negative_to_zero_crossing": 59,
+    "positive_large_contraction": 930,
+    "positive_small_expansion": 772
+  },
+  "examples": [
+    {
+      "n": 1,
+      "a": 2,
+      "d": 1,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 0,
+      "period": 2,
+      "cycle_state": [
+        1,
+        2
+      ],
+      "local_inequalities": {}
+    },
+    {
+      "n": 2,
+      "a": 1,
+      "d": 1,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 1,
+      "period": 2,
+      "cycle_state": [
+        1,
+        2
+      ],
+      "local_inequalities": {
+        "positive_small_expansion": 1
+      }
+    },
+    {
+      "n": 3,
+      "a": -4,
+      "d": 9,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 5,
+      "period": 2,
+      "cycle_state": [
+        1,
+        18
+      ],
+      "local_inequalities": {
+        "negative_contraction": 2,
+        "negative_to_positive_crossing": 1,
+        "positive_small_expansion": 2
+      }
+    },
+    {
+      "n": 4,
+      "a": 1,
+      "d": 3,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 2,
+      "period": 2,
+      "cycle_state": [
+        1,
+        6
+      ],
+      "local_inequalities": {
+        "positive_small_expansion": 2
+      }
+    },
+    {
+      "n": 5,
+      "a": -2,
+      "d": 9,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 4,
+      "period": 2,
+      "cycle_state": [
+        1,
+        18
+      ],
+      "local_inequalities": {
+        "negative_contraction": 1,
+        "negative_to_positive_crossing": 1,
+        "positive_small_expansion": 2
+      }
+    },
+    {
+      "n": 7,
+      "a": -2344,
+      "d": 243,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 11,
+      "period": 2,
+      "cycle_state": [
+        1,
+        486
+      ],
+      "local_inequalities": {
+        "negative_contraction": 8,
+        "negative_to_positive_crossing": 1,
+        "positive_small_expansion": 2
+      }
+    },
+    {
+      "n": 8,
+      "a": -1,
+      "d": 9,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 3,
+      "period": 2,
+      "cycle_state": [
+        1,
+        18
+      ],
+      "local_inequalities": {
+        "negative_to_positive_crossing": 1,
+        "positive_small_expansion": 2
+      }
+    },
+    {
+      "n": 27,
+      "a": -6378476857984674337772,
+      "d": 22876792454961,
+      "accepted": true,
+      "reason": "standard_pair_cycle",
+      "cycle_entry": 70,
+      "period": 2,
+      "cycle_state": [
+        1,
+        45753584909922
+      ],
+      "local_inequalities": {
+        "negative_contraction": 67,
+        "negative_to_positive_crossing": 1,
+        "positive_small_expansion": 2
+      }
+    },
+    {
+      "n": 6,
+      "a": -5,
+      "d": 15,
+      "accepted": false,
+      "reason": "zero_numerator",
+      "failure_index": 3,
+      "failure_state": [
+        8,
+        0
+      ],
+      "local_inequalities": {
+        "negative_to_zero_crossing": 1
+      }
+    }
+  ]
+}

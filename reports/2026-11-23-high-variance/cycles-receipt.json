@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-23",
+  "claim": "Balanced full-denominator coprimality; written all-finite-prime/all-real-floor rational cycles",
+  "full_collatz_proved": false,
+  "unrestricted_positive_cycle_exclusion_proved": false,
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "warning_as_error": true,
+  "fresh_local_module_and_audit_exit_codes": [
+    0,
+    0
+  ],
+  "public_definitions": 1,
+  "public_theorems": 8,
+  "audited_declarations": [
+    "carry",
+    "balanced_exponent",
+    "sum_mul_mod",
+    "carry_factor",
+    "geom_sum_isUnit",
+    "carry_isUnit_of_root",
+    "exists_coprime_root",
+    "balanced_carry_coprime",
+    "balanced_denominator_not_dvd"
+  ],
+  "audit_allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_audit_output": "'CollatzBalancedCycle.carry' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.balanced_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.sum_mul_mod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.carry_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.geom_sum_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.carry_isUnit_of_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.exists_coprime_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.balanced_carry_coprime' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollatzBalancedCycle.balanced_denominator_not_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "normal_and_optimized_python_identical": true,
+  "control_count": 2,
+  "independent_written_review": {
+    "reviewer": "nov23_global_merger",
+    "scope": "MOVING_PRIME_CYCLE_ATTEMPT.md Sections 1\u20134",
+    "sha256": "a6e8585f188899c08fd450d50fbbf85b53382bb5a4f6fea6440367d8c36bb3b1",
+    "result": "PASS"
+  },
+  "source_sha256": {
+    "MOVING_PRIME_CYCLE_ATTEMPT.md": "a6e8585f188899c08fd450d50fbbf85b53382bb5a4f6fea6440367d8c36bb3b1",
+    "README.md": "8b0135d29f97b645c3b0f7f074a97e3a7ca82dc117c275c962311f14fcf0b8c4",
+    "check_moving_prime_controls.py": "a5f6a2d3ed5ab36fe110c716a926b797e6bbad7be61b80ad13850a3ad727486a",
+    "lean/BalancedCycleAudit.lean": "8f98f4bae32ca0c23f213b38097f7214e8263b155ec9f8dab8038c08851ff5e6",
+    "lean/BalancedCycleUnit.lean": "9231cf4ab54f3674ca89001a9b3a3ab84aabbcde89f61dc2151eb332be6d63f6",
+    "lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "lean/mathlib-revision": "d26684ea790064f49bcb150415b3a062ec30b5e646b207927aa3fc5fcbb43fbe",
+    "moving_prime_controls.json": "72a3cea52cfaad7feb4f6f4b5b325375122f25926c38847fe809d198c515680d"
+  },
+  "external_build_path": "/workspace/scratch/56e7a5765d0c/nov23-cycle-lean-check",
+  "independent_lean_semantic_review": {
+    "reviewer": "nov23_global_merger",
+    "result": "PASS",
+    "source": "lean/BalancedCycleUnit.lean",
+    "sha256": "9231cf4ab54f3674ca89001a9b3a3ab84aabbcde89f61dc2151eb332be6d63f6",
+    "scope": "Read every declaration, literal floor carry, full ZMod denominator, derived root/permutation, and top theorem hypotheses; no additional compilation"
+  }
+}

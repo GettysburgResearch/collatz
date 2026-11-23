@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-11-23T05:13:48.334738+00:00",
+  "author": "/root/source_construction",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "fresh_output_directory": "/workspace/scratch/56e7a5765d0c/rigidity-repunits-final-kar33l0g",
+  "lean_path": [
+    "/workspace/scratch/56e7a5765d0c/rigidity-repunits-final-kar33l0g",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/c6766c1207a3/mathlib_nov23_runtime/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "modules": [
+    {
+      "module": "HomogeneousRepunits",
+      "source": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean",
+      "source_sha256_before": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc",
+      "source_sha256_after": "b94a7e0ce4223116dced184d4cb08d3b60572e2eac313154513177ff890488dc",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/rigidity-repunits-final-kar33l0g/HomogeneousRepunits.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/rigidity/lean/HomogeneousRepunits.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.206,
+      "log": "reports/2026-11-23-literature-push/rigidity-repunits-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "HomogeneousRepunitsAudit",
+      "source": "research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean",
+      "source_sha256_before": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86",
+      "source_sha256_after": "068dcd1d5d3c2e7d17ef476104d7e9daabab379bee2669c0b5f887e951951a86",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/rigidity-repunits-final-kar33l0g/HomogeneousRepunitsAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_literature_push_nov23/research/literature-push-20261123/rigidity/lean/HomogeneousRepunitsAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.153,
+      "log": "reports/2026-11-23-literature-push/rigidity-repunits-axioms.log",
+      "log_sha256": "53e8606fd403ac12cd2da27ab3d98ba687ff57c1195009c344e0276d14ea7bf0"
+    }
+  ],
+  "authored_theorem_count": 17,
+  "authored_theorems": [
+    "repunit_zero",
+    "repunit_succ",
+    "repunit_one",
+    "repunit_eq_sum",
+    "repunit_symm",
+    "repunit_add",
+    "coprime_base_left",
+    "coprime_base_product",
+    "gcd_add_right",
+    "gcd_mul_add_right",
+    "gcd_repunit",
+    "coprime_repunit",
+    "repunit_mul_sub",
+    "repunit_eq_div",
+    "gcd_pow_sub_pow",
+    "coprime_powered_repunit",
+    "powered_repunit_coprime_base"
+  ],
+  "definition_also_audited": "repunit",
+  "dependency_objects_reused": true,
+  "scope": "Full homogeneous-repunit gcd identity, sum and quotient interfaces, coprimality of actual powered repunits and original bases. No Collatz dynamics or full packet carry is formalized in this core."
+}

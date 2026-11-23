@@ -1,0 +1,51 @@
+{
+  "date_utc": "2026-11-23T01:55:52.418782+00:00",
+  "own_baseline": "2169884b64871b448cda16c7d74a0d5914ed870b",
+  "lean_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "mathlib_head": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "strict_options": [
+    "-DautoImplicit=false",
+    "-DwarningAsError=true"
+  ],
+  "dependency_objects": "Installed Mathlib and package objects reused; no historical proof corpus rebuilt.",
+  "modules": [
+    {
+      "source": "research/global-closure-20261123/escape/lean/PressureCollisionCore.lean",
+      "source_sha256": "a75ca7c479c687b0a4a6c1c3c86979043d7f57111c6372b38162bdf61e5bd3c0",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/global-escape-lean-check/PressureCollisionCore.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_global_nov23/research/global-closure-20261123/escape/lean/PressureCollisionCore.lean"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0
+    },
+    {
+      "source": "research/global-closure-20261123/escape/lean/PressureCollisionAudit.lean",
+      "source_sha256": "0aa261103ca7863f397af4a41050088cfb597aa8f624319bae75e6c562486acc",
+      "command": [
+        "/workspace/scratch/56e7a5765d0c/nov23-runtime/lean-4.34.1-linux/bin/lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "/workspace/scratch/56e7a5765d0c/global-escape-lean-check/PressureCollisionAudit.olean",
+        "/workspace/scratch/56e7a5765d0c/collatz_global_nov23/research/global-closure-20261123/escape/lean/PressureCollisionAudit.lean"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "7fdeb7b8e5488f19340b304fc487c31f5dca6ba993fc03ac15f2b79166cbf2a7",
+      "stdout_bytes": 1008
+    }
+  ],
+  "public_theorem_count": 10,
+  "axiom_union": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorryAx_in_audit": true,
+  "scope": "Finite pair-density comparison, retained-atom cost, exact repeated affine-word integrality, and one exact common-source residue collision. Infinite pressure and collision arguments are written mathematics."
+}

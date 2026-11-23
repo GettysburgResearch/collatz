@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-23",
+  "author": "/root/actual_collision",
+  "base_commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+  "scope": "Finite-normalization explosion, exact finite-capacity spine flux, and fixed-source repeated-word budget. Theorems 1-3 are elementary deductions from stated hypotheses; only the infinite-series core of Theorem 1 is Lean-checked. No Collatz closure.",
+  "repository_sources": [
+    {
+      "commit": "c91b80a3156e640ad471cf30c47721145ae21eb1",
+      "path": "research/central-step-20261123/stationary/FAST_EQUIVALENT_FLOW.md",
+      "sha256": "97b4fe781a9c6b4922f5d8b6de970056005805595f9b2886f8f6926e695c5724",
+      "claim": "(1), (12), (14)-(17): positive harmonic finite-capacity graph, whole-path occupation identity, complete source-box consumer",
+      "role": "Read in complete worktree. The existence of the hypothetical ordinary harmonic flow and any imported path-count bound remain SOURCE-QUALIFIED; Theorems 1-2 are conditional on their explicitly stated flow assumptions."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/ENTROPY_ARITHMETIC.md",
+      "sha256": "b2906cada26d3bfbc3412423fb2b4ce4f0398c8d23518dcfd894f72ec58ff2f6",
+      "bytes": 27635,
+      "claim": "Actual nonzero-boundary compact-fibre tail density; fixed-clock independence in the critical iid equality case; final actual collision target",
+      "role": "Read source; used only to delimit the proposed law comparison. No entropy or scenery theorem is imported into Theorems 1-3.",
+      "access": "Fetched exact GitHub raw source at pinned commit and read; decoded UTF-8 byte hash recorded."
+    },
+    {
+      "pr": 180,
+      "commit": "7d4ad9f11d3d7a54c67b0c6cff4f13a2ab967161",
+      "path": "research/profound-step-20261123/STATIONARY_REAL.md",
+      "sha256": "0e2d6b1a718e46d5baf1acc60c1aebadc43826e642c8d2601e9b8c947479bad4",
+      "bytes": 20257,
+      "claim": "Critical stationary real-renewal divergence and the minimum-source occupation boundary",
+      "role": "SOURCE-QUALIFIED motivation and missing consumer. The universal rate and flux theorems do not use its analytic claims.",
+      "access": "Fetched exact GitHub raw source at pinned commit and read; decoded UTF-8 byte hash recorded."
+    },
+    {
+      "pr": 182,
+      "commit": "cb1ae1bb4af0c8d082e9ff466b9fe0c84932301c",
+      "path": "research/literature-round4-20261123/ACTUAL_LAW_RIGIDITY.md",
+      "sha256": "a57e7aef865315ef3471a25e0fee18de4d6db75cf40455a0d658912666783e08",
+      "bytes": 17345,
+      "claim": "Sections 2-6: exact periodic-shadow identities, ordinary de Bruijn realization, source-height payment, and cross-box concentration",
+      "role": "Read frozen finite construction. Theorem 3 supplies a separate elementary uniform-over-template deduction; no infinite escape inference imported.",
+      "access": "Fetched exact GitHub raw source at pinned commit and read; decoded UTF-8 byte hash recorded."
+    },
+    {
+      "pr": 177,
+      "commit": "f47a5ec51aa5853f104013a6d5046d6220ff7423",
+      "path": "research/lean-exact-witness-global-20261121/literature-closure/atomic/ORDINARY_RENEWAL_AND_RETAINED_ENDPOINT.md",
+      "sha256": "c5dc5eb08a9666c7e780db1b9ae599a7d58ad6895172159a4db91458119c16b6",
+      "bytes": 18285,
+      "claim": "Sections 2-5: same-successor ordinary conditional laws; retained endpoint Haar joining and exact phase graph",
+      "role": "SOURCE-QUALIFIED comparison of observables; retained endpoint U_*mu is not replaced by Haar.",
+      "access": "Fetched exact GitHub raw source at pinned commit and read; decoded UTF-8 byte hash recorded."
+    }
+  ],
+  "literature_consulted_not_imported": [
+    {
+      "authors": "David F. Anderson, Daniele Cappelletti, Masanori Koyama, Thomas G. Kurtz",
+      "title": "Non-explosivity of stochastically modeled reaction networks that are complex balanced",
+      "version": "Author preprint dated 2017-08-28",
+      "url": "https://people.math.wisc.edu/~dfanderson/papers/ACKK_ExplosionsAugust28.pdf",
+      "access": "Primary author-hosted PDF directly opened and Section 3, Condition 1 and Theorem 2 inspected.",
+      "use": "Comparison of coordinate balance, minimal-process explosion and possible conservative stationary extensions. No theorem applied; our finite-clock proof is direct. The paper's finite-mean-activity sufficient condition fails here, and its additional incoming-rate hypotheses are not asserted."
+    }
+  ],
+  "first_open_implication": "For one fixed escaping source and the same actual ternary subsequential limit, prove the effective complete-box mass premise in (21), or show persistent cross-box collisions force exact word repeats violating their retained preperiod/source-height budget. Neither is proved."
+}

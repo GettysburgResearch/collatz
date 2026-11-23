@@ -1,0 +1,55 @@
+{
+  "scope": "Exact sources consulted by the duality lane. Reading does not confer review approval on an entire PR.",
+  "sources": [
+    {
+      "kind": "repository",
+      "pr": 178,
+      "sha": "2169884b64871b448cda16c7d74a0d5914ed870b",
+      "path": "research/high-variance-20261123/arithmetic/RATIONAL_DUAL_CERTIFICATE.md",
+      "access": "local exact-base file",
+      "use": "Prior rational-candidate verifier and published Monks-Yazinski attribution; no census extension."
+    },
+    {
+      "kind": "repository",
+      "pr": 176,
+      "sha": "ff3e068fa44eb85bb918580b2e10e18c027a18e6",
+      "path": "research/lean-global-resolvent-20261121/overview/longshot/MAHLER_RIGIDITY_ATTEMPT.md",
+      "access": "GitHub connector raw file",
+      "use": "Avoid assuming a finite extraction space or a pair of separate Mahler equations."
+    },
+    {
+      "kind": "repository",
+      "pr": 180,
+      "sha": "04572b94c8a58f964ba9b2b1b1bccfe7e9b12ae2",
+      "path": "research/high-variance-20261123/GLOBAL_SOURCE_SYNTHESIS.md",
+      "access": "GitHub connector raw file",
+      "use": "Latest all-length original-source cut attempt; no claim that it constructs a triadic dual."
+    },
+    {
+      "kind": "pull_request_metadata",
+      "pr": 177,
+      "sha": "6de3e304bb49a93a6c5ef0e5563137e75c7defb4",
+      "path": null,
+      "access": "GitHub PR body",
+      "use": "Current finite-witness-boundary overview; not an independent verification of its source theorem."
+    },
+    {
+      "kind": "pull_request_metadata",
+      "pr": 146,
+      "sha": "f431078244e868dc699fad011044f0d5e7f76437",
+      "path": null,
+      "access": "GitHub PR body",
+      "use": "Current adjacent-pair/five-comparison overview; no theorem imported into the duality proof."
+    },
+    {
+      "kind": "primary_literature",
+      "authors": "Kenneth G. Monks and Jonathan Yazinski",
+      "title": "The autoconjugacy of the 3x+1 function",
+      "publication": "Discrete Mathematics 275 (2004), 219-236",
+      "doi": "10.1016/S0012-365X(03)00125-0",
+      "url": "https://monks.scranton.edu/files/pubs/AutoConjV13.pdf",
+      "access": "Search-service PDF text, including definitions, Theorem2.1 and Example2",
+      "use": "Definition and uniqueness of the parity-complementing involution; rationality versus divergence; published example Omega(3)=-4/9. No universal rationality theorem is claimed."
+    }
+  ]
+}
